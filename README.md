@@ -34,4 +34,5 @@ preview repo svg?)">
 
 ```bash
 make or make start # port is 8099 default
+make generate # generate puglic/index.html
 ```
