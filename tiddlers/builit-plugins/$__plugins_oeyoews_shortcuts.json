@@ -1,0 +1,216 @@
+{"tiddlers": {
+"$:/plugins/oeyoews/shortcuts/control": {
+    "title": "$:/plugins/oeyoews/shortcuts/control",
+    "caption": "Settings",
+    "created": "20220521112527584",
+    "key": "((control))",
+    "modified": "20220823060500800",
+    "tags": "$:/tags/KeyboardShortcut",
+    "type": "text/vnd.tiddlywiki",
+    "text": "<$navigator story=\"$:/StoryList\" history=\"$:/HistoryList\">\n  <$action-navigate $to=\"$:/ControlPanel\" $scroll=\"yes\"/>\n</$navigator>",
+    "revision": "0",
+    "bag": "default"
+},
+
+"$:/plugins/oeyoews/shortcuts/get-plugins": {
+    "title": "$:/plugins/oeyoews/shortcuts/get-plugins",
+    "caption": "search-filter",
+    "created": "20220824022714506",
+    "key": "((get-plugins))",
+    "modified": "20220824022757138",
+    "tags": "$:/tags/KeyboardShortcut",
+    "type": "text/vnd.tiddlywiki",
+    "text": "<$navigator story=\"$:/StoryList\" history=\"$:/HistoryList\">\n  <$action-navigate $to=\"$:/core/ui/ControlPanel/Plugins\" $scroll=\"yes\"/>\n</$navigator>",
+    "revision": "0",
+    "bag": "default"
+},
+
+"$:/plugins/oeyoews/shortcuts/home-page": {
+    "created": "20220602002311627",
+    "text": "<$navigator story=\"$:/StoryList\" history=\"$:/HistoryList\">\n<$action-sendmessage $message=\"tm-close-all-tiddlers\"/>\n<$action-sendmessage $message=\"tm-home\"/>\n</$navigator>",
+    "title": "$:/plugins/oeyoews/shortcuts/home-page",
+    "code-body": "yes",
+    "key": "((home-page))",
+    "modified": "20220824131238961",
+    "tags": "$:/tags/KeyboardShortcut",
+    "type": "text/vnd.tiddlywiki",
+    "revision": "0",
+    "bag": "default"
+},
+
+"$:/plugins/oeyoews/shortcuts/icon": {
+    "title": "$:/plugins/oeyoews/shortcuts/icon",
+    "text": "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",
+    "type": "image/png",
+    "created": "20220521121808838",
+    "modified": "20220521121810449",
+    "revision": "0",
+    "bag": "default"
+},
+
+"$:/plugins/oeyoews/shortcuts/newword": {
+    "title": "$:/plugins/oeyoews/shortcuts/newword",
+    "code-body": "yes",
+    "created": "20220531011547769",
+    "key": "((newword))",
+    "modified": "20220531015613522",
+    "tags": "$:/tags/KeyboardShortcut",
+    "type": "text/vnd.tiddlywiki",
+    "text": "<$navigator story=\"$:/StoryList\" history=\"$:/HistoryList\">\n<$action-sendmessage $message=\"tm-new-tiddler\" text='<<<\n\"\"\"\n\n\"\"\"\n<<<' tags=\"EnglishWord\"/>\n  \n</$navigator>",
+    "revision": "0",
+    "bag": "default"
+},
+
+"$:/plugins/oeyoews/shortcuts/readme": {
+    "title": "$:/plugins/oeyoews/shortcuts/readme",
+    "created": "20220521120542562",
+    "modified": "20220602004056011",
+    "tags": "",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Customized shortcuts with `🔑` at the beginning of description in [[shortcuts|$:/core/ui/ControlPanel/KeyboardShortcuts]]\n\n!! TODO\n\n* add tip for repeat press this shortcut\n* can't scroll to determined tiddler repreat\n* another usage is if your tiddlywiki get bad, you can't find any buttons because of install some stanger plugins(even enable safemode), now you can press <kbd>ctrl I</kbd> to call setting\n* add system image for tips use class",
+    "revision": "0",
+    "bag": "default"
+},
+
+"$:/plugins/oeyoews/shortcuts/search-filter": {
+    "title": "$:/plugins/oeyoews/shortcuts/search-filter",
+    "caption": "search-filter",
+    "created": "20220823054724273",
+    "key": "((search-filter))",
+    "modified": "20220823060150632",
+    "tags": "$:/tags/KeyboardShortcut",
+    "type": "text/vnd.tiddlywiki",
+    "text": "<$navigator story=\"$:/StoryList\" history=\"$:/HistoryList\">\n  <$action-navigate $to=\"$:/AdvancedSearch\" $scroll=\"yes\"/>\n</$navigator>",
+    "revision": "0",
+    "bag": "default"
+},
+
+"$:/config/shortcuts/search-filter": {
+    "title": "$:/config/shortcuts/search-filter",
+    "created": "20220823054646329",
+    "modified": "20220823054657830",
+    "tags": "",
+    "type": "text/vnd.tiddlywiki",
+    "text": "ctrl-k",
+    "revision": "0",
+    "bag": "default"
+},
+
+"$:/config/shortcuts/home-page": {
+    "created": "20220602002527245",
+    "text": "ctrl-h",
+    "title": "$:/config/shortcuts/home-page",
+    "modified": "20220824131310818",
+    "tags": "",
+    "type": "text/vnd.tiddlywiki",
+    "revision": "0",
+    "bag": "default"
+},
+
+"$:/config/ShortcutInfo/home-page": {
+    "created": "20220602002623580",
+    "text": "🔑 Close all tiddlers",
+    "title": "$:/config/ShortcutInfo/home-page",
+    "modified": "20220824131254664",
+    "tags": "",
+    "type": "text/vnd.tiddlywiki",
+    "revision": "0",
+    "bag": "default"
+},
+
+"$:/config/ShortcutInfo/get-plugins": {
+    "title": "$:/config/ShortcutInfo/get-plugins",
+    "created": "20220824023018416",
+    "modified": "20220824023034676",
+    "tags": "",
+    "type": "text/vnd.tiddlywiki",
+    "text": "🔑 Jump to get-plugins",
+    "revision": "0",
+    "bag": "default"
+},
+
+"$:/config/shortcuts/get-plugins": {
+    "title": "$:/config/shortcuts/get-plugins",
+    "created": "20220824022802729",
+    "modified": "20220824022959725",
+    "tags": "",
+    "type": "text/vnd.tiddlywiki",
+    "text": "ctrl-g",
+    "revision": "0",
+    "bag": "default"
+},
+
+"$:/config/ShortcutInfo/search-filter": {
+    "title": "$:/config/ShortcutInfo/search-filter",
+    "created": "20220823054556412",
+    "modified": "20220823054621296",
+    "tags": "",
+    "type": "text/vnd.tiddlywiki",
+    "text": "🔑 Jump to search filter",
+    "revision": "0",
+    "bag": "default"
+},
+
+"$:/config/shortcuts/newword": {
+    "title": "$:/config/shortcuts/newword",
+    "created": "20220531011807540",
+    "modified": "20220531015639256",
+    "type": "text/vnd.tiddlywiki",
+    "text": "alt-W",
+    "revision": "0",
+    "bag": "default"
+},
+
+"oeyoews/shortcuts": {
+    "title": "oeyoews/shortcuts",
+    "cpl.author": "oeyoews",
+    "cpl.core-version": ">=5.2.2",
+    "cpl.description": "some shortcuts",
+    "cpl.documentation": "https://twms.vercel.app/",
+    "cpl.name": "Shortcuts",
+    "cpl.plugin-type": "plugin",
+    "cpl.readme": "some shortcuts",
+    "cpl.source": "https://twms.vercel.app/",
+    "cpl.title": "$:/plugins/oeyoews/shortcuts",
+    "cpl.uri": "https://twms.vercel.app/index.html",
+    "created": "20220521121915156",
+    "icon": "🏑",
+    "modified": "20220521122047274",
+    "page-cover": "https://images.unsplash.com/photo-1560762484-813fc97650a0?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8a2V5Ym9hcmR8ZW58MHx8MHx8&auto=format&fit=crop&w=500",
+    "tags": "$:/tags/PluginWiki",
+    "type": "text/vnd.tiddlywiki",
+    "revision": "0",
+    "bag": "default"
+},
+
+"$:/config/ShortcutInfo/newword": {
+    "title": "$:/config/ShortcutInfo/newword",
+    "created": "20220531011656472",
+    "modified": "20220602003740783",
+    "tags": "",
+    "type": "text/vnd.tiddlywiki",
+    "text": "🔑 Creat new word",
+    "revision": "0",
+    "bag": "default"
+},
+
+"$:/config/ShortcutInfo/control": {
+    "title": "$:/config/ShortcutInfo/control",
+    "created": "20220521113419766",
+    "modified": "20220823055437621",
+    "type": "text/vnd.tiddlywiki",
+    "text": "🔑 Jump to Setting",
+    "revision": "0",
+    "bag": "default"
+},
+
+"$:/config/shortcuts/control": {
+    "title": "$:/config/shortcuts/control",
+    "created": "20220521113501548",
+    "modified": "20220823055443746",
+    "type": "text/vnd.tiddlywiki",
+    "text": "ctrl-I",
+    "revision": "0",
+    "bag": "default"
+}}
+}

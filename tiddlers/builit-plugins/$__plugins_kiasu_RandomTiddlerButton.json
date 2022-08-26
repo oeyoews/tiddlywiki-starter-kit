@@ -1,0 +1,52 @@
+{
+    "tiddlers": {
+        "$:/language/Buttons/RandomSelection/Hint": {
+            "text": "Open a random tiddler",
+            "title": "$:/language/Buttons/RandomSelection/Hint",
+            "tags": "",
+            "modified": "20210725102851778",
+            "created": "20210725102837447"
+        },
+        "$:/language/Buttons/RandomSelection/Caption": {
+            "created": "20210808072830993",
+            "text": "random selection",
+            "title": "$:/language/Buttons/RandomSelection/Caption",
+            "modified": "20210808072844786",
+            "tags": "",
+            "type": "text/vnd.tiddlywiki"
+        },
+        "$:/core/ui/Buttons/RandomSelection": {
+            "created": "20210725102642198",
+            "text": "\\whitespace trim\n\\define randomselectionButton()\n<$button tooltip={{$:/language/Buttons/RandomSelection/Hint}} aria-label={{$:/language/Buttons/RandomSelection/Caption}} class=<<tv-config-toolbar-class>> actions={{$:/core/ui/Actions/RandomSelection}}>\n<$list filter=\"[<tv-config-toolbar-icons>match[yes]]\">\n{{$:/core/images/randomselection.svg}}\n</$list>\n<$list filter=\"[<tv-config-toolbar-text>match[yes]]\">\n<span class=\"tc-btn-text\"><$text text={{$:/language/Buttons/RandomSelection/Caption}}/></span>\n</$list>\n</$button>\n\\end\n<<randomselectionButton>>",
+            "title": "$:/core/ui/Buttons/RandomSelection",
+            "tags": "$:/tags/PageControls",
+            "modified": "20210808094557580",
+            "description": "{{$:/language/Buttons/RandomSelection/Hint}}",
+            "caption": "{{$:/core/images/randomselection}} {{$:/language/Buttons/RandomSelection/Caption}}"
+        },
+        "$:/core/ui/Actions/RandomSelection": {
+            "created": "20210725102925324",
+            "text": "\\define navigateTo(link)\n<$action-navigate $to=\"$link$\" />\n\\end\n\n<$macrocall $name=\"navigateTo\" link={{{ [!is[system]random[1]] }}} />",
+            "title": "$:/core/ui/Actions/RandomSelection",
+            "tags": "$:/tags/Actions",
+            "modified": "20210808074924225",
+            "abstract": "Navigate to a random tiddler"
+        },
+        "$:/core/images/randomselection.svg": {
+            "created": "20210725102334343",
+            "text": "<svg xmlns=\"http://www.w3.org/2000/svg\"  width=\"18pt\" height=\"18pt\" viewBox=\"0 0 640 512\"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d=\"M592 192H473.26c12.69 29.59 7.12 65.2-17 89.32L320 417.58V464c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48V240c0-26.51-21.49-48-48-48zM480 376c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24zm-46.37-186.7L258.7 14.37c-19.16-19.16-50.23-19.16-69.39 0L14.37 189.3c-19.16 19.16-19.16 50.23 0 69.39L189.3 433.63c19.16 19.16 50.23 19.16 69.39 0L433.63 258.7c19.16-19.17 19.16-50.24 0-69.4zM96 248c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24zm128 128c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24zm0-128c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24zm0-128c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24zm128 128c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24z\"/></svg>",
+            "title": "$:/core/images/randomselection.svg",
+            "tags": "$:/tags/Image",
+            "modified": "20210808094647631",
+            "type": "text/vnd.tiddlywiki"
+        },
+        "$:/plugins/kiasu/RandomTiddlerButton/readme": {
+            "created": "20210808094912103",
+            "text": "RandomTiddlerButton simply adds a random tiddler button to TiddlyWiki's page toolbar.\n\nYou can override the filter behaviour at [[$:/core/ui/Actions/RandomSelection]]. It currently opens one random non-system tiddler when clicked (i.e. ``[!is[system]random[1]]``).\n\nRequires [[Tobibeer's random plugin|https://tobibeer.github.io/tw5-plugins/#random]] to work.\n\nFor more information:\n\n* [[Live instance/documentation|https://sonephetr2.github.io/RandomTiddlerButton/]].\n* [[GitHub|https://github.com/SonephetR2/TW5RandomTiddlerButton]].",
+            "title": "$:/plugins/kiasu/RandomTiddlerButton/readme",
+            "type": "text/vnd.tiddlywiki",
+            "tags": "",
+            "modified": "20210808095450953"
+        }
+    }
+}

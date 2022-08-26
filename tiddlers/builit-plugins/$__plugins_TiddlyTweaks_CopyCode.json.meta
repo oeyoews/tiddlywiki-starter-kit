@@ -1,0 +1,18 @@
+author: Telumire
+core-version: >=5.1.23
+created: 20220208001000533
+creator: Télumire
+dependents: $:/plugins/tiddlywiki/highlight
+description: QOL (Quality Of Life) tweak adding support for blocs of code with a copy-to-clipboard button.
+extra-tiddlers: $:/plugins/TiddlyTweaks/CodeUtilities/Macro $:/plugins/TiddlyTweaks/CodeUtilities/Macro/examples $:/plugins/TiddlyTweaks/CodeUtilities/Macro/shortcuts/full $:/plugins/TiddlyTweaks/CodeUtilities/Macro/shortcuts/short $:/plugins/TiddlyTweaks/CodeUtilities/Macro/style $:/plugins/TiddlyTweaks/CodeUtilities/Stylesheet/Style $:/plugins/TiddlyTweaks/CodeUtilities/Stylesheet/ViewTemplate
+modified: 20220208003308874
+modifier: Télumire
+name: QOL Tweak - CopyCode
+plugin-draft: plugin
+plugin-priority: 
+plugin-type: plugin
+source: https://telumire.github.io/TiddlyTweaks/
+tags: 
+title: $:/plugins/TiddlyTweaks/CopyCode
+type: application/json
+version: 0.0.1

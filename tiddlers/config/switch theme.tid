@@ -1,0 +1,7 @@
+created: 20220826134238489
+modified: 20220826135025368
+tags: 
+title: switch theme
+type: text/vnd.tiddlywiki
+
+{{$:/plugins/PublisherName/switch-palette/core/switch-palette}}

@@ -1,0 +1,39 @@
+created: 20220826140521100
+modified: 20220826145153322
+tags: $:/tags/Stylesheet
+title: stylesheet
+type: text/vnd.tiddlywiki
+
+<!-- remove border -->
+
+button {
+border-radius: 3px;
+}
+
+.tc-editor-toolbar button, .tc-editor-toolbar button.tc-btn-invisible {
+border: 0;
+}
+
+.tc-edit-tags {
+border: 0;
+}
+
+.tc-tiddler-frame input.tc-edit-texteditor {
+border: 0;
+}
+
+.tc-tiddler-frame input.tc-edit-texteditor:focus {
+box-shadow: 0 0 0 0 transparent;
+}
+
+.CodeMirror {
+border: 0;
+}
+
+span.tc-tag-label {
+border-radius: 3px;
+}
+
+.nc-bar input[type="search"]:focus {
+    box-shadow: 0 0 0 0 transparent;
+}

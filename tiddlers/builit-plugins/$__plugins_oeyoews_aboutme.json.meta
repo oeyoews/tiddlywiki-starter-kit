@@ -1,0 +1,14 @@
+author: oeyoews
+created: 20220728150221011
+creator: oey
+description: shout your custom info
+list: readme
+modified: 20220826051626583
+modifier: oey
+name: About You
+packaged-by: Gatha on 26th August 2022, 13:16:32
+plugin-type: plugin
+tags: 
+title: $:/plugins/oeyoews/aboutme
+type: application/json
+version: v0.1.9

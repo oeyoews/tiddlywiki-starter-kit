@@ -1,0 +1,14 @@
+{
+    "tiddlers": {
+        "$:/plugins/tobibeer/random/filter.js": {
+            "title": "$:/plugins/tobibeer/random/filter.js",
+            "text": "/*\\\ntitle: $:/plugins/tobibeer/random/filter.js\ntype: application/javascript\nmodule-type: filteroperator\n\na filter to...\n\n@preserve\n\\*/\n(function(){\"use strict\";exports.random=function(n,t,r){var e,o=[],a=[],i=parseInt(t.operand||\"1\");if(isNaN(i)){i=1}n(function(n,t){a.push(t)});while(i&&a.length){e=Math.floor(Math.random()*a.length);o.push(a[e]);a.splice(e,1);i--}return o}})();",
+            "type": "application/javascript",
+            "module-type": "filteroperator"
+        },
+        "$:/plugins/tobibeer/random/readme": {
+            "title": "$:/plugins/tobibeer/random/readme",
+            "text": "The plugin $:/plugins/tobibeer/random provides:\n\n; random[]\r\n: a filter retrieving one or more random titles from the input set\r\n: `[tag[Plugins]random[3]]` — returns three titles tagged [[Plugins]]\n\n<br>\n\n; documentation / examples / demos...\r\n: http://tobibeer.github.io/tw5-plugins#random"
+        }
+    }
+}

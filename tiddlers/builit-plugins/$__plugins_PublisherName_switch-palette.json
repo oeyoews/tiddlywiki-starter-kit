@@ -1,0 +1,9 @@
+{"tiddlers": {
+"$:/plugins/PublisherName/switch-palette/core/switch-palette": {
+    "created": "20220826052059730",
+    "text": "\\define switch-palette()\n<$select tiddler='$:/palette' default=\"choose avatar\">\n<$list filter='[all[shadows+tiddlers]tag[$:/tags/Palette]sort[name]]'>\n<option value={{{[<currentTiddler>addprefix[]addsuffix[]]}}}><$view field='name'/></option>\n</$list>\n</$select>\n\\end\n\n<div align=\"right\">\n\n|>| change palette  |h\n| [[palette |$:/palette]] | <<switch-palette>>|\n\n</div>\n",
+    "tags": "",
+    "title": "$:/plugins/PublisherName/switch-palette/core/switch-palette",
+    "modified": "20220826054411160"
+}}
+}

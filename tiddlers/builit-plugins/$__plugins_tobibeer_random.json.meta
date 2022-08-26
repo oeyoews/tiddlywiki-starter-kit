@@ -1,0 +1,15 @@
+author: Tobias Beer
+core-version: >=5.1.9
+created: 20210926172904104
+dependents: 
+description: A filter to return one or more random titles
+documentation: https://tobibeer.github.io/tw5-random
+list: readme
+modified: 20220310164023548
+modifier: @oeyoews
+plugin-type: plugin
+requires: 
+source: https://github.com/tobibeer/tw5-random
+title: $:/plugins/tobibeer/random
+type: application/json
+version: 0.1.0

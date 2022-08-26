@@ -1,0 +1,22 @@
+{
+    "tiddlers": {
+        "$:/plugins/felixhayashi/respawn/respawn.js": {
+            "title": "$:/plugins/felixhayashi/respawn/respawn.js",
+            "text": "/*\\\n\ntitle: $:/plugins/felixhayashi/respawn/respawn.js\ntype: application/javascript\nmodule-type: startup\n\n@preserve\n\n\\*/\n\n(function(){\n  \n  /*jslint node: true, browser: true */\n  /*global $tw: false */\n  \"use strict\";\n  \n  var configTRef = \"$:/plugins/felixhayashi/respawn/config\";\n  \n  var changeListener = function(changedTiddlers) {\n    \n    if(!changedTiddlers[\"$:/StoryList\"]) return;\n    \n    var tObj = $tw.wiki.getTiddler(\"$:/StoryList\");\n    if(tObj && !tObj.fields[\"list\"].length) {\n      \n      var confTObj = $tw.wiki.getTiddler(configTRef);\n      var config = confTObj ? confTObj.fields : {};\n      \n      window.setTimeout(function() {\n        $tw.rootWidget.dispatchEvent({\n          type: \"tm-home\"\n        });\n      }, parseInt(config.delay) || 500);\n    }\n    \n  };\n  \n  exports.name = \"respawn\";\n  exports.platforms = [\"browser\"];\n  exports.after = [\"story\"];\n  exports.synchronous = true;\n  \n  exports.startup = function() {\n        \n    $tw.wiki.addEventListener(\"change\", changeListener);\n    \n  };\n\n})();\n",
+            "type": "application/javascript",
+            "module-type": "startup"
+        },
+        "$:/plugins/felixhayashi/respawn/Configuration": {
+            "title": "$:/plugins/felixhayashi/respawn/Configuration",
+            "text": "<!-- The config output is not written to this tiddler! -->\n\nPlease see the [[GitHub page|https://github.com/felixhayashi/TW5-Respawn]] for more information on the options.\n\nYou may have to save and reload the wiki to activate changes.\n\n<table>\n  <tr>\n    <th align=\"left\">Delay (seconds):</th>\n    <td>\n      <$edit-text\n          tiddler=\"$:/plugins/felixhayashi/respawn/config\"\n          field=\"delay\"\n          tag=\"input\"\n          default=\"500\" />\n    </td>\n  </tr>\n</table>"
+        },
+        "$:/plugins/felixhayashi/respawn/License": {
+            "title": "$:/plugins/felixhayashi/respawn/License",
+            "text": "This code is released under the BSD license. For the exact terms visit:\n\nhttps://github.com/felixhayashi/TW5-Respawn/blob/master/LICENSE"
+        },
+        "$:/plugins/felixhayashi/respawn/Readme": {
+            "title": "$:/plugins/felixhayashi/respawn/Readme",
+            "text": "Please visit the [[GitHub page|https://github.com/felixhayashi/TW5-Respawn]] for more information."
+        }
+    }
+}

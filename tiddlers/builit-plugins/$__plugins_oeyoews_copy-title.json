@@ -1,0 +1,70 @@
+{"tiddlers": {
+"$:/plugins/oeyoews/copy-title/copybutton": {
+    "created": "20200419143537510",
+    "text": "\\whitespace trim\n<$button message=\"tm-copy-to-clipboard\" param={{!!title}} tooltip=\"copy current title\" class=<<tv-config-toolbar-class>>>\n\t<$list filter=\"[<tv-config-toolbar-icons>match[yes]]\">\n\t{{$:/core/images/copy-clipboard}}\n\t</$list>\n\t<$list filter=\"[<tv-config-toolbar-text>match[yes]]\">\n\t<span class=\"tc-btn-text\">\n\t<$text text=\"Demo\"/>\n\t</span>\n\t</$list>\n</$button>",
+    "title": "$:/plugins/oeyoews/copy-title/copybutton",
+    "caption": "Copy Tiddler Title",
+    "creator": "soren",
+    "description": "Copy the name of this tiddler to the clipboard",
+    "modified": "20220519050611811",
+    "modifier": "@oeyoews",
+    "tags": "$:/tags/ViewToolbar",
+    "type": "text/vnd.tiddlywiki",
+    "revision": "0",
+    "bag": "default"
+},
+
+"$:/plugins/oeyoews/copy-title/icon": {
+    "title": "$:/plugins/oeyoews/copy-title/icon",
+    "text": "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",
+    "type": "image/png",
+    "created": "20220517020126574",
+    "modified": "20220517091720085",
+    "tags": "$:/tags/Image",
+    "revision": "0",
+    "bag": "default"
+},
+
+"$:/plugins/oeyoews/copy-title/readme": {
+    "title": "$:/plugins/oeyoews/copy-title/readme",
+    "created": "20220517023307450",
+    "modified": "20220517091720085",
+    "type": "text/vnd.tiddlywiki",
+    "text": "<!-- short description -->",
+    "revision": "0",
+    "bag": "default"
+},
+
+"$:/plugins/oeyoews/copy-title/version": {
+    "title": "$:/plugins/oeyoews/copy-title/version",
+    "created": "20220517023423595",
+    "modified": "20220517091720085",
+    "type": "text/vnd.tiddlywiki",
+    "text": "{{$:/plugins/oeyoews/copy-title!!version}}",
+    "revision": "0",
+    "bag": "default"
+},
+
+"oeyoews/copy-title": {
+    "created": "20220519050716542",
+    "text": "",
+    "title": "oeyoews/copy-title",
+    "cpl.author": "oeyoews",
+    "cpl.core-version": ">=5.2.2",
+    "cpl.description": "copy title to clipboard",
+    "cpl.documentation": "https://twms.vercel.app/",
+    "cpl.name": "Copy TiddlyWiki Title",
+    "cpl.plugin-type": "plugin",
+    "cpl.readme": "copy title to clipboard",
+    "cpl.source": "https://twms.vercel.app/",
+    "cpl.title": "$:/plugins/oeyoews/copy-title",
+    "cpl.uri": "https://twms.vercel.app/index.html",
+    "icon": "📋",
+    "modified": "20220519050949183",
+    "tags": "$:/tags/PluginWiki",
+    "type": "text/vnd.tiddlywiki",
+    "revision": "0",
+    "bag": "default",
+    "page-cover": "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29weXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500"
+}}
+}

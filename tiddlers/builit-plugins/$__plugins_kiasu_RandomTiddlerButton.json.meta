@@ -1,0 +1,14 @@
+aliases: RandomTiddler
+author: SonephetR2
+core-version: >= 5.1.23
+created: 20210725105755380
+creator: phil
+dependents: tobibeer's Random plugin
+description: Adds a random tiddler button to TiddlyWiki's page toolbar
+modified: 20220310164023542
+modifier: @oeyoews
+name: RandomTiddlerButton
+plugin-type: plugin
+title: $:/plugins/kiasu/RandomTiddlerButton
+type: application/json
+version: 1.0

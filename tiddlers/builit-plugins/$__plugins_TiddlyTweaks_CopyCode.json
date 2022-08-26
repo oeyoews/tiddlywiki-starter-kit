@@ -1,0 +1,87 @@
+{"tiddlers": {
+"$:/plugins/TiddlyTweaks/CodeUtilities/Macro": {
+    "created": "20210527202956234",
+    "text": "\\define copy-code(language:\"\" code:\"\" title:\"\" display-language:\"show\")\n<dl class=\"copy-code\">\n\t<dt><<__title__>></dt>\n\t<dd>\n\t\t<$macrocall $name=\"copy-to-clipboard\" src=<<__code__>>/> \n\t\t<$codeblock code=<<__code__>> language=<<__language__>>/>\n\t\t<small class=<<__display-language__>>><<__language__>></small>\n\t</dd>\n</dl>\n<span>\n</span>\n\\end",
+    "title": "$:/plugins/TiddlyTweaks/CodeUtilities/Macro",
+    "type": "text/vnd.tiddlywiki",
+    "creator": "user",
+    "list": "",
+    "modified": "20220208000305105",
+    "modifier": "user",
+    "tags": "$:/showInfo $:/tags/Macro $:/plugins/TiddlyTweaks/CodeUtilities/Macro",
+    "tagging": "after"
+},
+
+"$:/plugins/TiddlyTweaks/CodeUtilities/Macro/examples": {
+    "created": "20210527204100789",
+    "creator": "user",
+    "text": ";Default code block (without copy-to-clipboard) (syntax coloring provided by [[highlight.js|$:/plugins/tiddlywiki/highlight]])\n\n```html\n<ul>\n <li>Without title</li>\n</ul>\n```\n\n;Basic macro call copy-code-to-clipboard <kbd>alt-m</kbd>\n\n<<copy-code html\n\"<ul>\n <li>Without title</li>\n</ul>\">>\n\n<<copy-code html\n\"<ul>\n <li>Without language indicator</li>\n</ul>\" \"\" hide>>\n\n<<copy-code \"html\"\n\"<ul>\n <li>default parameter order</li>\n</ul>\"\n\n\"Now with a title !\">>\n\n<<copy-code \ntitle:\"Code sample\"\nlanguage:html\ncode:\"<ul>\n <li>Specific parameter order</li>\n</ul>\"\n>>\n\n\n;Full macrocall notation <kbd>alt-shift-m</kbd>\n\n<$macrocall $name=\"copy-code\"\ntitle=\"Hello {{$:/status/UserName}}\"\nlanguage=html\ndisplay-language=show\ncode={{{ \"<ul> <li>today is \"[<now>]\"</li> </ul> \"+[join[]] }}}\n/>",
+    "title": "$:/plugins/TiddlyTweaks/CodeUtilities/Macro/examples",
+    "modified": "20220208002119647",
+    "modifier": "Télumire",
+    "tags": "$:/plugins/TiddlyTweaks/CodeUtilities/Macro",
+    "code": "<ul>  <li>This works !</li> </ul>"
+},
+
+"$:/plugins/TiddlyTweaks/CodeUtilities/Macro/shortcuts/full": {
+    "created": "20210528014602259",
+    "text": "<$action-sendmessage\n    $message=\"tm-edit-text-operation\"\n    $param=\"wrap-selection\"\n    prefix='<$macrocall $name=\"copy-code\"\ntitle=\"\"\nlanguage=\"\"\ndisplay-language=\"show\"\ncode=\"\"\"'\n\nsuffix='\"\"\"/>'\n/>",
+    "title": "$:/plugins/TiddlyTweaks/CodeUtilities/Macro/shortcuts/full",
+    "caption": "shortcut copy code button with full macrocall syntax",
+    "condition": "[<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]]",
+    "creator": "user",
+    "description": "Transform the selection into a code bloc with a copy to clipboard button - allow double angle brackets",
+    "icon": "$:/core/images/copy-clipboard",
+    "modified": "20220208000304881",
+    "modifier": "user",
+    "shortcuts": "alt-shift-m",
+    "tags": "$:/tags/EditorToolbar $:/plugins/TiddlyTweaks/CodeUtilities/Macro"
+},
+
+"$:/plugins/TiddlyTweaks/CodeUtilities/Macro/shortcuts/short": {
+    "created": "20210527212751871",
+    "text": "<$action-sendmessage\n    $message=\"tm-edit-text-operation\"\n    $param=\"wrap-selection\"\n    prefix='<<copy-code html \"\"\"'\n    suffix='\"\"\">>'\n/>",
+    "title": "$:/plugins/TiddlyTweaks/CodeUtilities/Macro/shortcuts/short",
+    "caption": "shortcut copy code button",
+    "condition": "[<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]]",
+    "creator": "user",
+    "description": "Transform the selection into a code bloc with a copy to clipboard button",
+    "icon": "$:/core/images/copy-clipboard",
+    "modified": "20220208000304959",
+    "modifier": "user",
+    "shortcuts": "alt-m",
+    "tags": "$:/tags/EditorToolbar $:/plugins/TiddlyTweaks/CodeUtilities/Macro"
+},
+
+"$:/plugins/TiddlyTweaks/CodeUtilities/Macro/style": {
+    "created": "20210527214847395",
+    "text": ".copy-code{\n    font-family: Consolas;\n}\n\n.copy-code dt{\n    background: <<color pre-background>>;\n    border: solid 1px <<color pre-border>>;\n    border-bottom:unset;\n    padding: 0.5em;\n    border-radius: 3px 3px 0 0;\n    font-size: 1.1em;\n}\n\n.copy-code dt:empty, .copy-code dd small.hide{\n    display: none;\n}\n\n.copy-code dd{\n    margin: 0;\n}\n\n.copy-code dd>pre{\n    border-radius: 3px;\n    background-color:<<color tiddler-editor-background>>\n}\n\n.copy-code dt:not(:empty)+dd>pre{\n    border-radius: 0 0 3px 3px;\n    margin-top: 0em;\n}\n\n.copy-code dd{\n    position: relative;\n    display: block;\n}\n\n.copy-code dd :is(button, small) {\n    position: absolute;\n    opacity: 0.3;\n    padding: 5px;\n}\n\n.copy-code dd button:hover{\n    transition: opacity 150ms ease-in-out;\n    opacity: 1;\n}\n\n.copy-code dd button {\n    font-size: 0;\n    right:0;\n    display: flex;\n    align-items:flex-start;\n    justify-content:flex-end;\n    pointer-events:none;\n}\n\n.copy-code dd button svg {\n    width: 20px;\n    height: auto;\n    pointer-events:all;\n}\n\n.copy-code dd small {\n    inset: auto 0 0 auto;\n    text-transform: uppercase;\n    font-weight: bold;\n    font-size: 1em;\n}",
+    "title": "$:/plugins/TiddlyTweaks/CodeUtilities/Macro/style",
+    "type": "text/vnd.tiddlywiki",
+    "creator": "user",
+    "modified": "20220208000305032",
+    "modifier": "user",
+    "tags": "$:/plugins/TiddlyTweaks/CodeUtilities/Macro $:/tags/Stylesheet",
+    "comment": "<<copy-code html \"\"\"test\"\"\" \"title\">>"
+},
+
+"$:/plugins/TiddlyTweaks/CodeUtilities/Stylesheet/Style": {
+    "created": "20211027143252536",
+    "text": "\\rules only\n:is([data-tags*=\"$:/tags/Stylesheet\"],[data-tags*=\"$:/tags/ViewTemplate\"],[data-tags*=\"$:/tags/Macro\"]) .tc-tiddler-body{\ndisplay:none;\n}",
+    "tags": "$:/plugins/TiddlyTweaks/CodeUtilities/Stylesheet/ViewTemplate $:/showInfo/macro/copy-code/style $:/plugins/TiddlyTweaks/CodeUtilities/Macro $:/tags/Stylesheet",
+    "title": "$:/plugins/TiddlyTweaks/CodeUtilities/Stylesheet/Style",
+    "modified": "20220208000405072",
+    "hide-body": "yes",
+    "description": "remember to add the field `hide-body:yes` for better performances"
+},
+
+"$:/plugins/TiddlyTweaks/CodeUtilities/Stylesheet/ViewTemplate": {
+    "created": "20211027134000011",
+    "text": "<$list filter=\"[{!!title}tag[$:/tags/Stylesheet]][{!!title}type[text/css]]\">\n<$reveal type=nomatch stateTitle=<<folded-state>> text=hide>\n<$macrocall $name=copy-code language=css display-language=show code={{!!text}}/>\n</$reveal>\n</$list>\n<$list filter=\"[{!!title}tag[$:/tags/Macro]][{!!title}tag[$:/tags/ViewTemplate]][{!!title}tag[$:/tags/EditorToolbar]]\">\n<$reveal type=nomatch stateTitle=<<folded-state>> text=hide>\n<$macrocall $name=copy-code language=html display-language=hide code={{!!text}}/>\n</$reveal>\n</$list>",
+    "tags": "$:/plugins/TiddlyTweaks/CodeUtilities/Macro $:/tags/ViewTemplate bookmark",
+    "title": "$:/plugins/TiddlyTweaks/CodeUtilities/Stylesheet/ViewTemplate",
+    "modified": "20220208000405069",
+    "type": "",
+    "list-before": "$:/core/ui/ViewTemplate/body"
+}}
+}

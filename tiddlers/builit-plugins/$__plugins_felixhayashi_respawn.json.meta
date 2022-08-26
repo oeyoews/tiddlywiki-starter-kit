@@ -1,0 +1,11 @@
+author: Felix Küppers
+core-version: >=5.1.5
+dependents: 
+description: Respawn – Open default tiddlers when river is empty
+list: Configuration License Readme
+plugin-type: plugin
+released: 
+source: https://github.com/felixhayashi/TW5-respawn
+title: $:/plugins/felixhayashi/respawn
+type: application/json
+version: 0.0.3
