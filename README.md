@@ -8,7 +8,8 @@
 
 <div align="center">
 
-<img src="./images/white-vanilla.svg" height=128 alt="cat">
+<img src="./images/white-vanilla.svg" height=128 alt="cat(gitlab not support
+preview repo svg?)">
 
 </div>
 
@@ -16,4 +17,21 @@
 
 > It's [tw5](https://oeyoew.fun) lite
 
-## Coming
+> compare with tw5, `neotw` remove vercel deploy and related deploy, no pwa, image optimize, no mobile
+> optimize etc, but it's simplify, still worth trying
+
+## FileStruct
+
+```bash
+📁 neotw
+├──📁tiddlers
+│   ├──📁builit-plugins
+│   └──📁config
+└── tiddlywiki.info
+```
+
+## Run
+
+```bash
+make or make start # port is 8099 default
+```
