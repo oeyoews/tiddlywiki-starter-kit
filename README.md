@@ -18,7 +18,7 @@ preview repo svg?)">
 > It's [tw5](https://oeyoew.fun) lite
 
 > compare with tw5, `neotw` remove vercel deploy and related deploy, no pwa, image optimize, no mobile
-> optimize etc, just for local, so it's more simplify, still worth trying
+> optimize, not subwiki(private notes) etc, just for local, so it's more simplify, still worth trying
 
 ## FileStruct
 
