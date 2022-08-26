@@ -1,27 +1,16 @@
 {"tiddlers": {
-"$:/plugins/oeyoews/gh-repo-btn/config": {
-    "title": "$:/plugins/oeyoews/gh-repo-btn/config",
-    "created": "20220722071303628",
-    "modified": "20220722071312041",
-    "tags": "",
-    "type": "text/vnd.tiddlywiki",
-    "text": "<!-- short description -->",
-    "revision": "0",
-    "bag": "default"
-},
-
 "$:/plugins/oeyoews/gh-repo-btn/core": {
-    "created": "20220722065118691",
-    "text": "\\whitespace trim\n<$button tooltip=\"🏡 jump github repo\" aria-label=\"GRB\" class=<<tv-config-toolbar-class>>>\n{{$:/plugins/oeyoews/gh-repo-btn/link-to-img}}\n<!--\n<$list filter=\"[<tv-config-toolbar-text>match[yes]]\">\n<span class=\"tc-btn-text\"><$text text=\"🏡 github button\"/></span>\n</$list>\n-->\n</$button>",
     "title": "$:/plugins/oeyoews/gh-repo-btn/core",
+    "caption": "{{$:/core/images/github}} github button",
+    "created": "20220722065118691",
+    "description": "github repo button",
+    "list-after": "",
     "modified": "20220722112407230",
     "tags": "$:/tags/PageControls",
     "type": "text/vnd.tiddlywiki",
-    "bag": "default",
-    "list-after": "",
-    "description": "github repo button",
-    "caption": "{{$:/core/images/github}} github button",
-    "revision": "12"
+    "text": "\\whitespace trim\n<$button tooltip=\"🏡 jump github repo\" aria-label=\"GRB\" class=<<tv-config-toolbar-class>>>\n{{$:/plugins/oeyoews/gh-repo-btn/link-to-img}}\n<!--\n<$list filter=\"[<tv-config-toolbar-text>match[yes]]\">\n<span class=\"tc-btn-text\"><$text text=\"🏡 github button\"/></span>\n</$list>\n-->\n</$button>",
+    "revision": "0",
+    "bag": "default"
 },
 
 "$:/plugins/oeyoews/gh-repo-btn/docs/preview": {
@@ -32,6 +21,17 @@
     "modified": "20220722084200128",
     "revision": "0",
     "bag": "default"
+},
+
+"$:/plugins/oeyoews/gh-repo-btn/github-address": {
+    "created": "20220825150915828",
+    "creator": "oey",
+    "text": "",
+    "title": "$:/plugins/oeyoews/gh-repo-btn/github-address",
+    "modified": "20220825161723583",
+    "type": "text/vnd.tiddlywiki",
+    "tags": "",
+    "modifier": "oey"
 },
 
 "$:/plugins/oeyoews/gh-repo-btn/icon": {
@@ -47,25 +47,29 @@
 
 "$:/plugins/oeyoews/gh-repo-btn/link-to-img": {
     "created": "20220722065923656",
-    "text": "<a href=\"https://github.com/oeyoews/tw5\" target=\"_blank\">\n{{$:/core/images/github}}</a>",
+    "creator": "oey",
+    "text": "<a href={{{[[$:/plugins/oeyoews/gh-repo-btn/github-address]get[text]else[https://github.com/oeyoews/tw5]]}}} target=\"_blank\">\n{{$:/core/images/github}}</a>",
     "title": "$:/plugins/oeyoews/gh-repo-btn/link-to-img",
-    "modified": "20220722112347524",
+    "modified": "20220825161705155",
     "tags": "",
     "type": "text/vnd.tiddlywiki",
+    "revision": "0",
     "bag": "default",
-    "revision": "1"
+    "modifier": "oey"
 },
 
 "$:/plugins/oeyoews/gh-repo-btn/readme": {
-    "title": "$:/plugins/oeyoews/gh-repo-btn/readme",
     "created": "20220722071635110",
+    "creator": "oey",
+    "text": "!! Configuration\n\n[[Address|$:/plugins/oeyoews/gh-repo-btn/github-address]]: <$edit-text tiddler=\"$:/plugins/oeyoews/gh-repo-btn/github-address\" tag=\"input\" placeholder=\"https://github.com/username/reponame\"   /> \n\n!! Preview\n\n[img width=512 [$:/plugins/oeyoews/gh-repo-btn/docs/preview]]",
+    "title": "$:/plugins/oeyoews/gh-repo-btn/readme",
     "icon": "$:/core/images/github",
-    "modified": "20220722101416178",
+    "modified": "20220825161146194",
     "tags": "",
     "type": "text/vnd.tiddlywiki",
-    "text": "!! WIP\n\n!! Preview\n\n[img width=512 [$:/plugins/oeyoews/gh-repo-btn/docs/preview]]",
     "revision": "0",
-    "bag": "default"
+    "bag": "default",
+    "modifier": "oey"
 },
 
 "oeyoews/grb": {
