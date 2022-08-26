@@ -27,7 +27,7 @@ preview repo svg?)">
 ├──📁tiddlers
 │   ├──📁builit-plugins
 │   └──📁config
-└── tiddlywiki.info
+└─ 📝tiddlywiki.info
 ```
 
 ## Run
@@ -39,4 +39,4 @@ make generate # generate puglic/index.html
 
 ## Preview
 
-- Demo: https://neotw.tiddlyhost.com/
+- Demo: https://neotw.tiddlyhost.com
