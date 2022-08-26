@@ -8,7 +8,7 @@
 
 <div align="center">
 
-<img src="./images/white-vanilla.svg" height=128 alt="cat(gitlab not support
+<img src="./images/white-vanilla.png" height=128 alt="cat(gitlab not support
 preview repo svg?)">
 
 </div>
