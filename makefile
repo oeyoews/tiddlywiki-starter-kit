@@ -29,3 +29,5 @@ generate2html:
 .PHONY: clean
 clean:
 	-rm -rf $(OUTPUTDIR)
+clean-trash:
+	-rm tiddlers/*__trashbin*
