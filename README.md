@@ -15,9 +15,9 @@ preview repo svg?)">
 
 ## What's the neotw
 
-> It's [tw5](https://oeyoew.fun) lite
+> It's the [tw5](https://oeyoew.fun) lite
 
-> compare with tw5, `neotw` remove vercel deploy and related deploy, no pwa, image optimize, no mobile
+> Compare to tw5, `neotw` remove vercel deploy and related deploy, no pwa, image optimize, no mobile
 > optimize, not subwiki(private notes) etc, just for local, so it's more simplify, still worth trying
 
 ## FileStruct
@@ -40,6 +40,46 @@ make generate # generate puglic/index.html
 ## Configuration
 
 The [makefile](makefile) file is used as the centeral configuration for `neotw`
+with this syntax:
+
+<details>
+  <summary>makefile</summary>
+
+```makefile
+# options
+PACKAGE = "TiddlyWiki5"
+CMD = @tiddlywiki
+OUTPUTDIR = public
+PORT = 8099
+USERNAME = $(USER)
+HOST = "0.0.0.0"
+
+# adjust os, just test on linux
+ifeq ($(shell uname),Linux)
+	PLATFORM="🐧 Linux"
+else
+	PLATFORM="😭 Not supported"
+endif
+
+# startup tiddlywiki
+start:
+	@echo "Your current OS is $(PLATFORM) and 🚀 startup $(PACKAGE)"
+	$(CMD) --listen port=$(PORT) anon-username=$(USERNAME)
+start-to-the-world:
+	@echo "👋 startup $(PACKAGE) to the world"
+	$(CMD) --listen port=$(PORT) anon-username=$(USERNAME) host=$(HOST)
+# generate index.html
+generate2html:
+	$(CMD) --output $(OUTPUTDIR) --build index
+	@echo "🎉 generated index.html"
+
+# clean public/ folder
+.PHONY: clean
+clean:
+	-rm -rf $(OUTPUTDIR)
+```
+
+</details>
 
 ## Preview
 
