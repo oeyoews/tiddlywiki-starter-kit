@@ -25,7 +25,7 @@ start-to-the-world:
 # generate index.html
 build:
 	$(CMD) --output $(OUTPUTDIR) --build index
-	@echo "🎉 generated index.html"
+	@echo "🎉 generated $(OUTPUTDIR)/index.html"
 
 # clean public/ folder
 .PHONY: clean
