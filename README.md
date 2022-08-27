@@ -51,6 +51,8 @@ make or make start # port is 8099 default
 make generate # generate puglic/index.html
 ```
 
+> more usage please check [makefile](makefile)
+
 ## Configuration
 
 The [makefile](makefile) file is used as the centeral configuration for `neotw`
