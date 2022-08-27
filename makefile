@@ -17,6 +17,7 @@ endif
 start:
 	@echo "Your current OS is $(PLATFORM) and 🚀 startup $(PACKAGE)"
 	$(CMD) --listen port=$(PORT) anon-username=$(USERNAME)
+# startup to the world
 start-to-the-world:
 	@echo "👋 startup $(PACKAGE) to the world"
 	$(CMD) --listen port=$(PORT) anon-username=$(USERNAME) host=$(HOST)
