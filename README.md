@@ -41,7 +41,7 @@ git clone --depth 1 https://gitlab.com/oeyoews/neotw
 vanilla
 
 ```bash
-tiddlywiki --listen`
+tiddlywiki --listen
 ```
 
 make
