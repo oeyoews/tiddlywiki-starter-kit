@@ -15,14 +15,15 @@ endif
 
 # startup tiddlywiki
 start:
-	@echo "Your current OS is $(PLATFORM) and 🚀 startup $(PACKAGE)"
+	@echo "ℹ️  Your current OS is $(PLATFORM) \
+		🚀 startup $(PACKAGE)"
 	$(CMD) --listen port=$(PORT) anon-username=$(USERNAME)
 # startup to the world
 start-to-the-world:
 	@echo "👋 startup $(PACKAGE) to the world"
 	$(CMD) --listen port=$(PORT) anon-username=$(USERNAME) host=$(HOST)
 # generate index.html
-generate2html:
+build:
 	$(CMD) --output $(OUTPUTDIR) --build index
 	@echo "🎉 generated index.html"
 
@@ -31,4 +32,4 @@ generate2html:
 clean:
 	-rm -rf $(OUTPUTDIR)
 clean-trash:
-	-rm tiddlers/*__trashbin*
+	rm -rf tiddlers/*__trashbin*
