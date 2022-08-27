@@ -30,6 +30,12 @@ preview repo svg?)">
 └─ 📝tiddlywiki.info
 ```
 
+## Install
+
+```bash
+git clone --depth 1 https://gitlab.com/oeyoews/neotw
+```
+
 ## Run
 
 vanilla
