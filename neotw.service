@@ -1,0 +1,9 @@
+[Unit]
+Description=NeoTw Service
+
+[Service]
+WorkingDirectory=/home/oeyoews/REPOS/neotw
+ExecStart=/usr/bin/tiddlywiki --listen port=8099 anon-username=oeyoews use-browser-cache=yes gzip=yes
+
+[Install]
+WantedBy=default.target
