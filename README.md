@@ -47,8 +47,8 @@ tiddlywiki --listen`
 make
 
 ```bash
-make or make start # port is 8099 default
-make generate # generate puglic/index.html
+make or make run # port is 8099 default
+make build # generate puglic/index.html
 ```
 
 > more usage please check [makefile](makefile)
