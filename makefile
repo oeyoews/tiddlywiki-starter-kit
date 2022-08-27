@@ -35,6 +35,9 @@ build:
 install:
 	@cp $(SERVICEFILE) $(SERVICETARGETFILE)
 	@echo "🎉 $(SERVICETARGETFILE) file has installed"
+# changed
+reload:
+	$(SERVICECMD) --user daemon-reload
 # service
 # use hight color
 # maybe should start byhand firstly
