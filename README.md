@@ -17,6 +17,7 @@ preview repo svg?)">
 
 - [What's the neotw](#whats-the-neotw)
 - [Features](#features)
+- [ShowCases](#showcases)
 - [FileStruct](#filestruct)
 - [Install](#install)
 - [Run](#run)
@@ -35,6 +36,10 @@ preview repo svg?)">
 ## Features
 
 > No longer listed specifically, waiting for your exploration and discovery
+
+## ShowCases
+
+<img src="images/01.png"/>
 
 ## FileStruct
 
