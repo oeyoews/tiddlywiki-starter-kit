@@ -1,10 +1,12 @@
 caption: cib-visual-studio-code
 collection: Brand
+created: 20220827072739299
+creator: oeyoews
 library: CoreUI Icons
 library_version: 2.0.1
-modified: 20220311041834048
-modifier: @oeyoews
-tags: $:/tags/Image Icons Images SVG
+modified: 20220827072745833
+modifier: oeyoews
+tags: $:/tags/Image
 title: $:/images/coreui-icons/brand/cib-visual-studio-code
 type: text/vnd.tiddlywiki
 

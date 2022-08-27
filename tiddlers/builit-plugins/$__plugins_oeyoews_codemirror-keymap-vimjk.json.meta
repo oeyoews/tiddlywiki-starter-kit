@@ -1,13 +1,15 @@
 author: oeyoews
 created: 20220824143236555
+creator: oeyoews-dev
 dependents: $:/plugins/tiddlywiki/codemirror-search-replace $:/plugins/tiddlywiki/codemirror-closebrackets
 description: Keymap compatible with Vim for CodeMirror
 list: readme
-modified: 20220824145707581
+modified: 20220827072555898
+modifier: oeyoews-dev
 name: CodeMirror Keymap VimJK
-packaged-by: Gatha on 24th August 2022, 22:57:10
+packaged-by: Gatha on 27th August 2022, 15:25:58
 parent-plugin: $:/plugins/tiddlywiki/codemirror
 plugin-type: plugin
 title: $:/plugins/oeyoews/codemirror-keymap-vimjk
 type: application/json
-version: v0.1.1
+version: v0.1.2
