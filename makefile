@@ -61,14 +61,14 @@ restart:
 stop:
 	$(SERVICECMD) stop --user $(SERVICEFILE)
 	@echo $(SERVICEFILE) has stopped
+uninstall:
+	rm -i $(NEOTWBIN)
+	@echo "👋 $(NEOTWBIN) file has uninstalled"
 # uninstall service
 uninstall-service:
 	# Uninstall service
 	@rm -f -i $(SERVICETARGETFILE);
 	@echo "👋 $(SERVICETARGETFILE) file has removed"
-uninstall:
-	rm -i $(NEOTWBIN)
-	@echo "👋 $(NEOTWBIN) file has uninstalled"
 
 # clean
 .PHONY: clean
