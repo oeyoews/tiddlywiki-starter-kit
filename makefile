@@ -63,5 +63,8 @@ uninstall:
 .PHONY: clean
 clean:
 	-rm -rf $(OUTPUTDIR)
-clean-trash:
-	rm -rf tiddlers/*__trashbin* tiddlers/Draft*
+trash:
+	-rm -rf \
+		tiddlers/*__trashbin* \
+		tiddlers/Draft* \
+		tiddlers/*__StoryList*.tid
