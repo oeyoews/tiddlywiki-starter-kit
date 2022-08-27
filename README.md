@@ -4,9 +4,7 @@
 
 <img src="https://img.shields.io/badge/status-ing-blueviolet.svg?style=flat-square&logo=Chakra-Ui&color=90E59A&logoColor=green" alt="status" >
 
-</div>
-
-<div align="center">
+<hr>
 
 <img src="./images/white-vanilla.png" height=128 alt="cat(gitlab not support
 preview repo svg?)">
