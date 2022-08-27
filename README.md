@@ -11,6 +11,20 @@ preview repo svg?)">
 
 </div>
 
+# TOC
+
+<!-- toc -->
+
+- [What's the neotw](#whats-the-neotw)
+- [Features](#features)
+- [FileStruct](#filestruct)
+- [Install](#install)
+- [Run](#run)
+- [Configuration](#configuration)
+- [Preview](#preview)
+
+<!-- tocstop -->
+
 ## What's the neotw
 
 > It's the [tw5](https://oeyoew.fun) lite
