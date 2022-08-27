@@ -1,6 +1,6 @@
 created: 20220826140521100
 creator: oeyoews
-modified: 20220827065408860
+modified: 20220827065552956
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: stylesheet
@@ -40,11 +40,11 @@ button {
     fill: #ffffff;
     background: #7f4bca;
     border-bottom: 0;
-		border-radius: 5px;
+		border-radius: 3px;
 }
 
 .nc-sidebar .section .label {
-		border-radius: 5px;
+		border-radius: 3px;
 }
 
 .tc-tiddler-preview-preview {
