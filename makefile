@@ -1,4 +1,5 @@
 # options
+PACKAGE = "TiddlyWiki5"
 CMD = @tiddlywiki
 OUTPUTDIR = public
 PORT = 8099
@@ -14,13 +15,13 @@ endif
 
 # startup tiddlywiki
 start:
-	@echo "$(PLATFORM) 🚀 startup tiddlywiki"
+	@echo "Your current OS is $(PLATFORM) and 🚀 startup $(PACKAGE)"
 	$(CMD) --listen port=$(PORT) anon-username=$(USERNAME)
 start-to-the-world:
-	@echo "👋 startup tiddlywiki to the world"
+	@echo "👋 startup $(PACKAGE) to the world"
 	$(CMD) --listen port=$(PORT) anon-username=$(USERNAME) host=$(HOST)
 # generate index.html
-generate:
+generate2html:
 	$(CMD) --output $(OUTPUTDIR) --build index
 	@echo "🎉 generated index.html"
 
