@@ -1,10 +1,23 @@
 created: 20220826140521100
 creator: oeyoews
-modified: 20220827063520014
+modified: 20220827065408860
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: stylesheet
 type: text/vnd.tiddlywiki
+
+<!-- remove more border -->
+.tc-tab-content.tc-vertical {
+    border-left: 0;
+}
+
+.tc-more-sidebar > .tc-tab-set > .tc-tab-buttons > button.tc-tab-selected {
+  border: none;
+}
+
+.tc-more-sidebar > .tc-tab-set > .tc-tab-buttons > button {
+  border: none;
+}
 
 <!-- break change -->
 hr {
