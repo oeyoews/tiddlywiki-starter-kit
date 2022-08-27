@@ -1,8 +1,27 @@
 created: 20220826140521100
-modified: 20220826163718246
+creator: oeyoews
+modified: 20220827062454776
+modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: stylesheet
 type: text/vnd.tiddlywiki
+
+<!-- remove notebook sidebar border-->
+.nc-sidebar .segment {
+	border-bottom: 0px;
+}
+
+.nc-sidebar .section.open .label {
+    color: #ffffff;
+    fill: #ffffff;
+    background: #7f4bca;
+    border-bottom: 0;
+		border-radius: 5px;
+}
+
+.nc-sidebar .section .label {
+		border-radius: 5px;
+}
 
 .tc-tiddler-preview-preview {
     float: right;
@@ -12,7 +31,7 @@ type: text/vnd.tiddlywiki
     padding: 3px 3px 3px 3px;
     border-radius: 3px;
 }
-		
+
 <!-- remove border -->
 
 button {
