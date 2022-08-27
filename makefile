@@ -8,6 +8,7 @@ HOST = "0.0.0.0"
 SERVICECMD = "systemctl"
 SERVICEFILE = "neotw.service"
 SERVICETARGETFILE = "$(HOME)/.config/systemd/user/$(SERVICEFILE)"
+NEOTWBIN = "$(HOME)/.local/bin/neotw"
 
 # adjust os, just test on linux
 ifeq ($(shell uname),Linux)
@@ -33,6 +34,10 @@ build:
 # how to work `;`
 # install service
 install:
+	@echo "tiddlywiki --listen anon-username='anonymous'" > $(NEOTWBIN)
+	@chmod +x ~/.local/bin/neotw
+	@echo "restart terminal"
+install-service:
 	@cp $(SERVICEFILE) $(SERVICETARGETFILE)
 	@echo "🎉 $(SERVICETARGETFILE) file has installed"
 # changed
@@ -57,10 +62,13 @@ stop:
 	$(SERVICECMD) stop --user $(SERVICEFILE)
 	@echo $(SERVICEFILE) has stopped
 # uninstall service
-uninstall:
+uninstall-service:
 	# Uninstall service
 	@rm -f -i $(SERVICETARGETFILE);
 	@echo "👋 $(SERVICETARGETFILE) file has removed"
+uninstall:
+	rm -i $(NEOTWBIN)
+	@echo "👋 $(NEOTWBIN) file has uninstalled"
 
 # clean
 .PHONY: clean
