@@ -1,0 +1,6 @@
+.tc-notification {
+    color: black;
+    border-radius: 5px;
+		border: 0;
+    /* background: linear-gradient(45deg, #7f7fd5, #86a8e7, #91eae4); */
+}

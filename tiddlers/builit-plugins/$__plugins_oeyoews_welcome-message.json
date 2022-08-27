@@ -1,0 +1,60 @@
+{"tiddlers": {
+"$:/plugins/oeyoews/welcome-message/after-action": {
+    "title": "$:/plugins/oeyoews/welcome-message/after-action",
+    "code-body": "yes",
+    "created": "20220521173026064",
+    "creator": "oeyoews",
+    "modified": "20220528062535474",
+    "modifier": "oeyoews",
+    "tags": "$:/tags/StartupAction/PostRender",
+    "type": "text/vnd.tiddlywiki",
+    "text": "<$action-sendmessage $message=\"tm-notify\" $param=\"$:/plugins/oeyoews/welcome-message/Hello-TiddlyWiki5\"/>",
+    "revision": "0",
+    "bag": "default"
+},
+
+"$:/plugins/oeyoews/welcome-message/bell": {
+    "created": "20220731051943649",
+    "text": "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",
+    "title": "$:/plugins/oeyoews/welcome-message/bell",
+    "type": "image/png",
+    "modified": "20220731052008907",
+    "revision": "0",
+    "bag": "default",
+    "tags": ""
+},
+
+"$:/plugins/oeyoews/welcome-message/Hello-TiddlyWiki5": {
+    "created": "20220521173616898",
+    "text": "[img width=22  [$:/plugins/oeyoews/welcome-message/bell]] Welcom to Here {{$:/plugins/oeyoews/welcome-message/icon}}",
+    "title": "$:/plugins/oeyoews/welcome-message/Hello-TiddlyWiki5",
+    "creator": "oeyoews",
+    "modified": "20220731052108047",
+    "modifier": "oeyoews",
+    "tags": "",
+    "type": "text/vnd.tiddlywiki",
+    "bag": "default",
+    "revision": "1"
+},
+
+"$:/plugins/oeyoews/welcome-message/icon": {
+    "created": "20220528063015709",
+    "text": "🏡",
+    "title": "$:/plugins/oeyoews/welcome-message/icon",
+    "modified": "20220731051712730",
+    "type": "text/vnd.tiddlywiki",
+    "bag": "default",
+    "revision": "2"
+},
+
+"$:/plugins/oeyoews/welcome-message/readme": {
+    "title": "$:/plugins/oeyoews/welcome-message/readme",
+    "created": "20220528061647436",
+    "modified": "20220603095011741",
+    "tags": "",
+    "type": "text/vnd.tiddlywiki",
+    "text": "!! config\n\n* You can edit this tiddler [[Hello|$:/plugins/oeyoews/welcome-message/Hello-TiddlyWiki5]] to customize welcome message",
+    "revision": "0",
+    "bag": "default"
+}}
+}

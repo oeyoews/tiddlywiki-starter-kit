@@ -1,0 +1,12 @@
+author: oeyoews
+created: 20220528061538437
+description: show welcom message
+list: readme
+modified: 20220731052127482
+name: Welcome Message
+packaged-by: Gatha on 31st July 2022, 13:21:35
+plugin-type: plugin
+tags: 
+title: $:/plugins/oeyoews/welcome-message
+type: application/json
+version: v0.0.7
