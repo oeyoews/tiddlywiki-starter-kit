@@ -32,4 +32,4 @@ build:
 clean:
 	-rm -rf $(OUTPUTDIR)
 clean-trash:
-	rm -rf tiddlers/*__trashbin*
+	rm -rf tiddlers/*__trashbin* tiddlers/Draft*
