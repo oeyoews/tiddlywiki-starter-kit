@@ -1,6 +1,6 @@
 created: 20220828011107715
 creator: oeyoews
-modified: 20220828124822610
+modified: 20220828130818330
 modifier: oeyoews
 tags: 
 title: NeoTw Configuration
@@ -11,7 +11,7 @@ type: text/vnd.tiddlywiki
 \end
 
 !! WIP
-
+<<countplugins>>
 * <$checkbox tiddler="$:/config/oeyoews/settings.json" index="name" checked="neotw" unchecked="tiddlywiki" default="neotw"> 
 project name is
 </$checkbox> __{{$:/config/oeyoews/settings.json##name}}__
