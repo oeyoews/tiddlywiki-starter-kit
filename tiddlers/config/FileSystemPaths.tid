@@ -1,0 +1,22 @@
+caption: File Manager
+created: 20220228060333093
+creator: oeyoews
+modified: 20220828040413540
+modifier: oeyoews
+tags: 
+title: $:/config/FileSystemPaths
+type: text/vnd.tiddlywiki
+
+[tag[$:/tags/trashbin]removeprefix[$:/]]
+
+[tag[$:/tags/Image]removeprefix[$:/]addprefix[icons/]]
+
+[tag[$:/tags/TextEditor/Snippet]addprefix[snippets/]]
+
+[prefix[$:/plugins]removeprefix[$:/]addprefix[]]
+
+[prefix[$:/config/]removeprefix[$:/]]
+
+[prefix[New Tiddler]addprefix[NewTiddlers/]]
+
+[prefix[$:/themes]remove[$:/]]

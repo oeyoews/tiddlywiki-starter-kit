@@ -1,5 +1,6 @@
 \$__Import.tid
 \$__StoryList*.tid
 \$__trashbin*
+trashbin/
 /public/
 Draft*

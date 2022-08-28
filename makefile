@@ -76,6 +76,6 @@ clean:
 	-rm -rf $(OUTPUTDIR)
 trash:
 	@rm -rf \
-		tiddlers/*__trashbin* \
 		tiddlers/Draft* \
 		tiddlers/*__StoryList*.tid
+		# tiddlers/*__trashbin* \
