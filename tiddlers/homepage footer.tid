@@ -1,6 +1,6 @@
 created: 20220821045909565
 creator: oeyoews
-modified: 20220828155323363
+modified: 20220828233438367
 modifier: oeyoews
 tags: 
 title: homepage footer
@@ -15,12 +15,16 @@ type: text/vnd.tiddlywiki
 <$count filter="[!has[draft.of]plugin-type[plugin]]"/>
 \end
 
+\define subwiki-private() 
+<$count filter="[!has[draft.of]tag[private]]"/>
+\end
+
 \define totaltiddlers()
 <$count filter="[!is[system]sort[title]]"/> 
 \end
 
 <div style="font-weight: regular; border-radius: 4px;background:;font-size:60%; padding: 2px 5px 2px;user-select: none;text-align:center;">
 
-Updated ''<<updatedtime>>'' and have ''<<totaltiddlers>>'' user tiddlers , ''<<totalplugins>>'' plugins.
+Updated ''<<updatedtime>>'' and have ''<<totaltiddlers>>''(<<subwiki-private>>) user tiddlers , ''<<totalplugins>>'' plugins.
  
 </div>
