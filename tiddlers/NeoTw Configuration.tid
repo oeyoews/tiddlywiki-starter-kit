@@ -1,0 +1,17 @@
+created: 20220828011107715
+creator: oeyoews
+modified: 20220828021731631
+modifier: oeyoews
+tags: 
+title: NeoTw Configuration
+type: text/vnd.tiddlywiki
+
+!! WIP
+
+* <$checkbox tiddler="$:/config/oeyoews/settings.json" index="name" checked="neotw" unchecked="tiddlywiki" default="neotw"> 
+project name is
+</$checkbox> __{{$:/config/oeyoews/settings.json##name}}__
+
+* <$checkbox tiddler="$:/config/oeyoews/settings.json" index="username"  checked="oeyoews" unchecked="anonymous" default="anonymous"> 
+username is __{{$:/config/oeyoews/settings.json##username}}__
+</$checkbox>

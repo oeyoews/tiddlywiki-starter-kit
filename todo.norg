@@ -1,0 +1,16 @@
+@document.meta
+title: todo
+description:
+authors: oeyoews
+categories:
+created: 2022-08-28
+version: 0.0.12
+@end
+
+** TODO
+   - [ ] markdown
+   - [ ] checkbox
+   - [ ] checkbox break
+   - [ ] use json config
+   - [ ] modify codemirror highlight
+   - [ ] remove shadow json value
