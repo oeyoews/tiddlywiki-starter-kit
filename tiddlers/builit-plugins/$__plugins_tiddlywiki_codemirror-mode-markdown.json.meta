@@ -1,0 +1,11 @@
+dependents: $:/plugins/tiddlywiki/codemirror-mode-xml
+description: Markdown highlighting mode for CodeMirror
+list: readme
+modified: 20220310164023546
+modifier: @oeyoews
+name: CodeMirror Mode Markdown
+parent-plugin: $:/plugins/tiddlywiki/codemirror
+plugin-type: plugin
+title: $:/plugins/tiddlywiki/codemirror-mode-markdown
+type: application/json
+version: 5.2.1

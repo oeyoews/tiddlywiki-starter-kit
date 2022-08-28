@@ -8,9 +8,11 @@ version: 0.0.12
 @end
 
 ** TODO
-   - [ ] markdown
-   - [ ] checkbox
-   - [ ] checkbox break
-   - [ ] use json config
-   - [ ] modify codemirror highlight
-   - [ ] remove shadow json value
+   - [x] markdown
+   - [x] checkbox
+   - [x] checkbox break
+   - [x] use json config
+   - [x] modify codemirror highlight
+   - [x] remove shadow json value
+   - [x] put switch to bg
+   - [x]  support highlight

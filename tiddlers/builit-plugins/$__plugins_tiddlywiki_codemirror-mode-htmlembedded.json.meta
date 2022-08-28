@@ -1,0 +1,11 @@
+dependents: $:/plugins/tiddlywiki/codemirror-mode-htmlmixed $:/plugins/tiddlywiki/codemirror-mode-javascript $:/plugins/tiddlywiki/codemirror-mode-css $:/plugins/tiddlywiki/codemirror-mode-xml
+description: Embedded HTML highlighting mode for CodeMirror
+list: readme
+modified: 20220310164023546
+modifier: @oeyoews
+name: CodeMirror Mode HTML Embedded
+parent-plugin: $:/plugins/tiddlywiki/codemirror
+plugin-type: plugin
+title: $:/plugins/tiddlywiki/codemirror-mode-htmlembedded
+type: application/json
+version: 5.2.1

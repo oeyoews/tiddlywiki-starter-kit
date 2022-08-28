@@ -1,0 +1,12 @@
+author: cdaven
+created: 20220513060030443
+dependents: 
+description: Markdown export of tiddlers
+list: readme license
+modified: 20220607072114828
+name: Markdown Export
+plugin-type: plugin
+tags: 
+title: $:/plugins/cdaven/markdown-export
+type: application/json
+version: 0.3.0
