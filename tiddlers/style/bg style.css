@@ -1,0 +1,79 @@
+.gk0wk-caticon img { fill: #0A84FF; }
+
+.gk0wk-rotate-infinite { 
+	animation: move 15s ease-in infinite; 
+}
+
+@keyframes move
+{
+	from {left:0px;}
+	to {
+	left: 400px;
+	}
+}
+
+@keyframes rotate{ 
+	from {
+		transform: rotate(0deg)
+	}
+	to {
+		transform: rotate(360deg)
+	} 
+}
+
+.bg1 {
+    position: absolute;
+    bottom: 0px;
+    height: 300px;
+    width: 100%;
+    background: url(image/bg1.png) repeat-x;
+    animation: change_bg 5s linear infinite;
+  }
+
+  .bg2 {
+    position: absolute;
+    bottom: 0px;
+    height: 300px;
+    width: 100%;
+    z-index: 1;
+    background: url(image/bg2.png) repeat-x;
+    animation: change_bg 5s linear infinite;
+  }
+
+  .polarbear {
+    position: fixed;
+    bottom: 10px;
+    height: 100px;
+    width: 200px;
+    z-index: 2;
+    background: url(image/bear.png);
+    animation: bear 0.4s steps(8) infinite, change_pos 2s forwards;
+  }
+
+  @keyframes bear {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: -1600px 0;
+    }
+  }
+
+  @keyframes change_pos {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+
+  @keyframes change_bg {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: -3840px 0;
+    }
+  }
