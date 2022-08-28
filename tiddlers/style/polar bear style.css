@@ -1,4 +1,10 @@
-  .polarbear {
+.gk0wk-caticon img { fill: #0A84FF; }
+
+.gk0wk-rotate-infinite { 
+	animation: move 600s linear infinite; 
+}
+
+.polarbear {
     position: fixed;
     bottom: 10px;
     height: 100px;
@@ -26,3 +32,18 @@
       transform: translate(-50%, 0);
     }
   }
+
+@keyframes move
+{
+	from {left:0px;}
+	to { left: 400px;}
+}
+
+@keyframes rotate{ 
+	from {
+		transform: rotate(0deg)
+	}
+	to {
+		transform: rotate(360deg)
+	} 
+}
