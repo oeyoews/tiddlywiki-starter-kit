@@ -5,3 +5,5 @@ tiddlers/trashbin/
 /public/
 Draft*
 tiddlers/subwiki/
+output/
+dist/

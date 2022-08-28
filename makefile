@@ -29,16 +29,15 @@ run:
 run-to-the-world:
 	@echo "👋 startup $(PACKAGE) to the world"
 	$(CMD) --listen port=$(PORT) anon-username=$(USERNAME) host=$(HOST)
-# generate index.html
+# generate index.html(support subwiki, but not build html no include subwiki)
 build:
 	@make clean
 	@echo 🛺 cleaned StoryList
 	@mkdir public
-	cp tiddlers/ tiddlywiki.info makefile public/ && cd public
-	$(CMD) --output $(OUTPUTDIR) --build index
-	@echo "🎉 generated $(OUTPUTDIR)/index.html"
-# TODO adjust exist dir
-# how to work `;`
+	@cp -r tiddlers/ tiddlywiki.info public/
+	@rm  -rf public/tiddlers/subwiki
+	$(CMD) public --output dist/ --build index
+	@echo "🎉 generated index.html"
 # install service
 install:
 	@echo "tiddlywiki --listen anon-username='anonymous'" > $(NEOTWBIN)
@@ -50,7 +49,7 @@ install-service:
 	@mv $(SERVICEFILE) $(SERVICETARGETFILE)
 	@echo "🎉 $(SERVICETARGETFILE) file has installed"
 # changed
-reload:
+reload-service:
 	$(SERVICECMD) --user daemon-reload
 # use hight color
 # maybe should start byhand firstly
@@ -83,6 +82,5 @@ uninstall-service:
 .PHONY: clean
 clean:
 	@rm -rf \
-	$(OUTPUTDIR)
-		tiddlers/Draft* \
+		$(OUTPUTDIR) \
 		tiddlers/*__StoryList*.tid
