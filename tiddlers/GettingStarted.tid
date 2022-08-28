@@ -1,17 +1,17 @@
 caption: Step 1<br>Syncing
 created: 20220828120245453
 creator: oeyoews
-modified: 20220828155048873
+modified: 20220828160103430
 modifier: oeyoews
 tags: $:/tags/GettingStarted
 title: GettingStarted
 type: text/vnd.tiddlywiki
 
-Welcome to ~TiddlyWiki and the ~TiddlyWiki community
+! Welcome to NeoTw
 
-Visit https://tiddlywiki.com/ to find out more about ~TiddlyWiki and what it can do.
+Visit https://tiddlywiki.com/ to find out more about TiddlyWiki and what it can do.
 
-! Syncing Changes to the Server
+!! Syncing Changes to the Server
 
 Before you can start storing important information in ~TiddlyWiki it is important to make sure that your changes are being reliably saved by the server.
 
@@ -20,5 +20,8 @@ Before you can start storing important information in ~TiddlyWiki it is importan
 # Check the ~TiddlyWiki command line for a message confirming the tiddler has been saved
 # Refresh the page in the browser to and verify that the new tiddler has been correctly saved
 
+!! Web Status 
+
+* Click this [[https://oeyoews.github.io/upptime]] to check
+
 <<reuse-tiddler "homepage footer">>
-{{test}}"
