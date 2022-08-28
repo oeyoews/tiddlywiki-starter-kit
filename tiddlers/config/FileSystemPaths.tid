@@ -1,11 +1,16 @@
 caption: File Manager
 created: 20220228060333093
 creator: oeyoews
-modified: 20220828043309148
+modified: 20220828151330169
 modifier: oeyoews
 title: $:/config/FileSystemPaths
 type: text/vnd.tiddlywiki
 
+[tag[private]addprefix[subwiki/private/]]
+[tag[todo]addprefix[subwiki/todo/]]
+[tag[Project]addprefix[subwiki/Project/]]
+[tag[Journal]addprefix[subwiki/Journal/]]
+[tag[books]addprefix[subwiki/books/]]
 [tag[$:/tags/trashbin]removeprefix[$:/]]
 
 [tag[$:/tags/Image]removeprefix[$:/]addprefix[icons/]]
@@ -25,3 +30,4 @@ type: text/vnd.tiddlywiki
 [prefix[$:/tags]removeprefix[$:/]]
 
 [tag[$:/tags/Stylesheet]addprefix[style/]]
+

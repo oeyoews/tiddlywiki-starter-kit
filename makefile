@@ -31,8 +31,10 @@ run-to-the-world:
 	$(CMD) --listen port=$(PORT) anon-username=$(USERNAME) host=$(HOST)
 # generate index.html
 build:
-	@make trash
+	@make clean
 	@echo 🛺 cleaned StoryList
+	@mkdir public
+	cp tiddlers/ tiddlywiki.info makefile public/ && cd public
 	$(CMD) --output $(OUTPUTDIR) --build index
 	@echo "🎉 generated $(OUTPUTDIR)/index.html"
 # TODO adjust exist dir
@@ -80,8 +82,7 @@ uninstall-service:
 # clean
 .PHONY: clean
 clean:
-	-rm -rf $(OUTPUTDIR)
-trash:
 	@rm -rf \
+	$(OUTPUTDIR)
 		tiddlers/Draft* \
 		tiddlers/*__StoryList*.tid
