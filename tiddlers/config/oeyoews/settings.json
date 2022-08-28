@@ -4,6 +4,6 @@
     "username": "oeyoews",
     "name": "neotw",
     "theme": "notebook",
-    "palette": "notebok",
-    "neotw-version": "<$view field=\"created\" format=\"date\" template=\"YYYY0MM0DD\"/>"
+    "palette": "notebook",
+    "neotw-version": "<$view field=\"modified\" format=\"date\" template=\"YYYY0MM0DD0hh0mm\"/>"
 }
