@@ -11,7 +11,7 @@
     width: 200px;
     z-index: 2;
     background: url(https://gitlab.com/oeyoews/neotw/-/raw/main/images/bear.png);
-    animation: bear 0.4s steps(8) infinite, change_pos 2s forwards;
+    animation: bear 0.5s steps(8) infinite, change_pos 4s forwards;
   }
 
   @keyframes bear {
@@ -28,7 +28,7 @@
       left: 0;
     }
     100% {
-      left: 50%;
+      left: 80%;
       transform: translate(-50%, 0);
     }
   }
