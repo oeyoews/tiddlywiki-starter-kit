@@ -1,0 +1,16 @@
+caption: {{$:/xp/images/plugin}} PLUGINS
+color: #bbb
+created: 20220828001717749
+creator: oeyoews
+icon: $:/xp/images/plugin
+modified: 20220828002113649
+modifier: oeyoews
+title: PLUGINS
+type: text/vnd.tiddlywiki
+
+<$macrocall
+  $name="tabs"
+  tabsList="$:/plugins-currently-installed"
+  default="$:/plugins-currently-installed"
+  state="$:/state/tab/plugins"
+/>

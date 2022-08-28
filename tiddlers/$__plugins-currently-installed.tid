@@ -1,0 +1,57 @@
+caption: Installed Plugins
+created: 20220828002233623
+creator: oeyoews
+modified: 20220828002414822
+modifier: oeyoews
+title: $:/plugins-currently-installed
+type: text/vnd.tiddlywiki
+
+\define lingo-base() $:/language/ControlPanel/Plugins/
+\define statusTid() $:/config/xp/aggregation-plugins/installed-plugins/View
+\define storeTitle() $:/temp/search/plugins-currently-installed
+\define search-tips()
+<$reveal state=<<statusTid>> type="nomatch" text="rewritten" default="table">
+Search all fields except text
+</$reveal>
+<$reveal state=<<statusTid>> type="match" text="rewritten">
+Search title/plugin-type
+</$reveal>
+\end
+\define cancel-search-actions() <$action-deletetiddler $filter=<<storeTitle>>/><$action-sendmessage $message="tm-focus-selector" $param=""".xp-search-installed-plugins input"""/>
+
+<$tiddler tiddler=<<statusTid>>>
+<$radio field="text" value="table" default="table"> Default View </$radio>&ensp;
+<$radio field="text" value="list"> List View </$radio>&ensp;
+<$radio field="text" value="rewritten"> Shadows </$radio>
+</$tiddler>
+
+<div class="xp-search xp-search-installed-plugins">
+<<search-tips>>&ensp;<$macrocall $name="keyboard-driven-input" tiddler=<<storeTitle>>
+    type="search" tag="input" focus={{$:/config/Search/AutoFocus}}
+    inputCancelActions=<<cancel-search-actions>>/>
+<$reveal state=<<storeTitle>> type="nomatch" text="">
+<$button class="tc-btn-invisible">
+<<cancel-search-actions>>
+{{$:/core/images/close-button}}
+</$button>
+</$reveal>
+</div>
+
+<$vars userInput={{{ [<storeTitle>get[text]] }}}>
+
+<!-- 默认视图 -->
+<$reveal state=<<statusTid>> type="match" text="table" default="table" animate="yes">
+{{$:/plugins-currently-installed/DefaultView}}
+</$reveal>
+
+<!-- 列表视图 -->
+<$reveal state=<<statusTid>> type="match" text="list" animate="yes">
+{{$:/plugins-currently-installed/ListView}}
+</$reveal>
+
+<!-- 改写条目 -->
+<$reveal state=<<statusTid>> type="match" text="rewritten" animate="yes">
+{{$:/plugins-currently-installed/RewrittenTiddlers}}
+</$reveal>
+
+</$vars>
