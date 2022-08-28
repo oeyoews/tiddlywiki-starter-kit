@@ -1,0 +1,12 @@
+author: oeyoews
+created: 20220528030219154
+description: open sidebar in startup
+list: readme
+modified: 20220528030340842
+name: NotebookSOA
+packaged-by: Gatha on 28th May 2022, 11:05:41
+plugin-type: plugin
+tags: 
+title: $:/plugins/oeyoews/notebook-soa
+type: application/json
+version: v0.0.1
