@@ -1,0 +1,11 @@
+author: Joao Bolila
+dependents: 
+description: Highlight.js syntax highlighting
+list: readme usage license
+modified: 20220828040555086
+modifier: oeyoews
+name: Highlight
+plugin-type: plugin
+title: $:/plugins/tiddlywiki/highlight
+type: application/json
+version: 5.2.3

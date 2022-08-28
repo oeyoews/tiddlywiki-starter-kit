@@ -1,0 +1,11 @@
+author: oeyoews
+created: 20220517015726043
+description: Copy tiddlywiki title to clipboard
+modified: 20220828040555085
+modifier: oeyoews
+name: CopyTitle
+packaged-by: Gatha on 19th May 2022, 13:10:44
+plugin-type: plugin
+title: $:/plugins/oeyoews/copy-title
+type: application/json
+version: v0.0.3

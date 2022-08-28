@@ -1,9 +1,0 @@
-author: kl
-dependents: $:/plugins/xp/aggregation
-description: Manage your TiddlyWiki plugins
-name: Plugins
-parent-plugin: $:/plugins/xp/aggregation
-plugin-type: plugin
-title: $:/plugins/xp/aggregation-plugins
-type: application/json
-version: 0.2.1

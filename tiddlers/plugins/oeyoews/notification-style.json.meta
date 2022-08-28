@@ -1,0 +1,12 @@
+author: oeyoews
+created: 20220517034334515
+description: notification style
+list: readme
+modified: 20220828040555085
+modifier: oeyoews
+name: Notification Style
+packaged-by: Gatha on 25th July 2022, 02:06:52
+plugin-type: plugin
+title: $:/plugins/oeyoews/notification-style
+type: application/json
+version: v0.0.5

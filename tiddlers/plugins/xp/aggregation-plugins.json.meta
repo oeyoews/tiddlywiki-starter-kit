@@ -1,0 +1,11 @@
+author: kl
+dependents: $:/plugins/xp/aggregation
+description: Manage your TiddlyWiki plugins
+modified: 20220828040555086
+modifier: oeyoews
+name: Plugins
+parent-plugin: $:/plugins/xp/aggregation
+plugin-type: plugin
+title: $:/plugins/xp/aggregation-plugins
+type: application/json
+version: 0.2.1
