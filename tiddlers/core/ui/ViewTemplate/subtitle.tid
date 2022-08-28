@@ -1,0 +1,31 @@
+caption: Subtitle Template
+created: 20210611015734693
+creator: @oeyoews
+modified: 20220814031748024
+modifier: oeyoews
+tags: $:/tags/ViewTemplate
+title: $:/core/ui/ViewTemplate/subtitle
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+
+<$reveal type="nomatch" stateTitle=<<folded-state>> text="hide" tag="div" retain="yes" animate="yes">
+<div class="tc-subtitle">
+<$list filter="[!is[system]all[current]has[modifier]]">
+🚀 &ensp; 
+<$view field="modifier"/> &ensp; &ensp;
+</$list>
+<$list filter="[all[current]has[created]]">
+📖 &ensp;Created &nbsp;<$view field="created" format="date" template="YYYY-0MM-0DD"/> &ensp; &ensp;
+</$list>
+<$list filter="[all[current]has[modified]]">
+🔓 &ensp;Updated &nbsp;<$view field="modified" format="date" template="YYYY-0MM-0DD 0hh:0mm:0ss" />&ensp; &ensp;
+</$list>
+<$list filter="[all[current]has[lapses]]">
+🥤 &ensp;ForgetTimes &nbsp;<$view field="lapses"/> &ensp; &ensp;
+</$list>
+<$list filter="[all[current]has[description]]">
+🎉 &ensp;{{!!description}}
+</$list>
+</div>
+</$reveal>
