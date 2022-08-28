@@ -1,6 +1,6 @@
-.gk0wk-caticon img { fill: #0A84FF; }
+.caticon img { fill: #0A84FF; }
 
-.gk0wk-rotate-infinite { 
+.cat-move { 
 	animation: move 600s linear infinite; 
 }
 
