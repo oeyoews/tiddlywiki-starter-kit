@@ -1,5 +1,6 @@
 created: 20220826140222762
 list: $:/core/ui/Buttons/more-tiddler-actions $:/plugins/kookma/trashbin/ui/toolbar-button $:/core/ui/Buttons/info $:/core/ui/Buttons/new-here $:/core/ui/Buttons/new-journal-here $:/core/ui/Buttons/clone $:/core/ui/Buttons/export-tiddler $:/core/ui/Buttons/delete $:/core/ui/Buttons/permalink $:/core/ui/Buttons/permaview $:/core/ui/Buttons/open-window $:/core/ui/Buttons/close-others $:/core/ui/Buttons/fold-others $:/core/ui/Buttons/fold $:/core/ui/Buttons/fold-bar $:/plugins/oeyoews/copy-title/copybutton $:/core/ui/Buttons/edit $:/core/ui/Buttons/close
-modified: 20220826141741779
+modified: 20220828042012264
+modifier: oeyoews
 title: $:/tags/ViewToolbar
 type: text/vnd.tiddlywiki

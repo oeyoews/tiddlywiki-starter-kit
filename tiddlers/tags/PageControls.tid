@@ -1,5 +1,6 @@
 created: 20220826135411688
 list: $:/core/ui/Buttons/home $:/core/ui/Buttons/control-panel $:/core/ui/Buttons/close-all $:/core/ui/Buttons/fold-all $:/core/ui/Buttons/unfold-all $:/core/ui/Buttons/permaview $:/core/ui/Buttons/new-tiddler $:/core/ui/Buttons/new-journal $:/core/ui/Buttons/new-image $:/core/ui/Buttons/import $:/core/ui/Buttons/export-page $:/core/ui/Buttons/advanced-search $:/core/ui/Buttons/manager $:/core/ui/Buttons/tag-manager $:/core/ui/Buttons/language $:/core/ui/Buttons/palette $:/core/ui/Buttons/theme $:/core/ui/Buttons/storyview $:/core/ui/Buttons/encryption $:/core/ui/Buttons/timestamp $:/core/ui/Buttons/full-screen $:/core/ui/Buttons/print $:/core/ui/Buttons/save-wiki $:/core/ui/Buttons/refresh $:/core/ui/Buttons/more-page-actions $:/core/ui/Buttons/RandomSelection $:/plugins/oeyoews/gh-repo-btn/core $:/plugins/oeyoews/aboutme/core
-modified: 20220826135411688
+modified: 20220828042012264
+modifier: oeyoews
 title: $:/tags/PageControls
 type: text/vnd.tiddlywiki
