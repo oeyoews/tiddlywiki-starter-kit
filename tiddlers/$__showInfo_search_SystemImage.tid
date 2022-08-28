@@ -1,0 +1,24 @@
+caption: Images
+created: 20210911212256922
+creator: oeyoews
+icon: 
+modified: 20220828161928640
+modifier: oeyoews
+page-cover: 
+tags: $:/tags/SideBar $:/showInfo/search $:/showInfo
+title: $:/showInfo/search/SystemImage
+type: text/vnd.tiddlywiki
+
+<$vars
+
+search-list="[[$:/tags/Image]tagging[]]"
+
+item-template="$:/showInfo/search/img"
+
+list-class=""""""
+list-style="""margin: 3px;padding:3px;border: 2px solid; border-radius:5px;"""
+>
+{{{[<item-template>is[blank]then[$:/showInfo/search/list/titles]else<item-template>]}}}
+{{$:/showInfo/search/template}}
+
+</$vars>
