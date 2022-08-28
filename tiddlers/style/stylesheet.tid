@@ -1,12 +1,10 @@
 created: 20220826140521100
 creator: oeyoews
-modified: 20220828043043933
+modified: 20220828234515333
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: stylesheet
 type: text/vnd.tiddlywiki
-
-<$checkbox tag="$:/tags/Stylesheet"> enable custom stylesheet </$checkbox>
 
 .tc-editor-toolbar button, .tc-editor-toolbar button.tc-btn-invisible {
     border-radius: 3px;
