@@ -6,9 +6,11 @@ PORT = 8099
 USERNAME = $(USER)
 HOST = "0.0.0.0"
 SERVICECMD = "systemctl"
-SERVICEFILE = "neotw.service"
+SERVICETEMPLATEFILE = "neotw-template.service"
+SERVICEFILE = "neotw-user.service"
 SERVICETARGETFILE = "$(HOME)/.config/systemd/user/$(SERVICEFILE)"
 NEOTWBIN = "$(HOME)/.local/bin/neotw"
+neotwdir-user= "$(PWD)"
 
 # adjust os, just test on linux
 ifeq ($(shell uname),Linux)
@@ -38,7 +40,9 @@ install:
 	@chmod +x ~/.local/bin/neotw
 	@echo "restart terminal"
 install-service:
-	@cp $(SERVICEFILE) $(SERVICETARGETFILE)
+	@cp $(SERVICETEMPLATEFILE) $(SERVICEFILE)
+	@sed -i "s#neotwdir#$(neotwdir-user)#" $(SERVICEFILE)
+	@mv $(SERVICEFILE) $(SERVICETARGETFILE)
 	@echo "🎉 $(SERVICETARGETFILE) file has installed"
 # changed
 reload:
@@ -69,6 +73,8 @@ uninstall-service:
 	# Uninstall service
 	@rm -f -i $(SERVICETARGETFILE);
 	@echo "👋 $(SERVICETARGETFILE) file has removed"
+test:
+	@echo "${PWD}"
 
 # clean
 .PHONY: clean
