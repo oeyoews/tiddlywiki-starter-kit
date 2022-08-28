@@ -1,0 +1,47 @@
+caption: {{$:/plugins/kookma/trashbin/images/trash-alt}}&nbsp;{{$:/language/Buttons/Trashbin/Caption/Move}}
+created: 20190623140751496
+creator: Mohammad
+description: <$list filter="[all[current]tag[$:/tags/trashbin]prefix[$:/trashbin/]]" emptyMessage={{$:/language/Buttons/Trashbin/Hint/Move}}>{{$:/language/Buttons/Trashbin/Hint/Recycle}}</$list>
+modified: 20220828040555085
+modifier: oeyoews
+tags: $:/tags/ViewToolbar $:/tags/EditToolbar
+title: $:/plugins/kookma/trashbin/ui/toolbar-button
+type: text/vnd.tiddlywiki
+
+\import $:/plugins/kookma/trashbin/macros/move-to-trashbin
+\import $:/plugins/kookma/trashbin/macros/restore
+\whitespace trim
+
+<!-- move to trashbin -->
+<$list filter="[all[current]!tag[$:/tags/trashbin]!prefix[$:/trashbin/]]">
+<$button 
+ aria-label={{$:/language/Buttons/Trashbin/Caption/Move}}
+ tooltip={{$:/language/Buttons/Trashbin/Hint/Move}} class=<<tv-config-toolbar-class>> >
+  <$macrocall $name="move-to-trashbin" tiddler=<<currentTiddler>> />	
+  <$list filter="[<tv-config-toolbar-icons>prefix[yes]]">
+    {{$:/plugins/kookma/trashbin/images/trash-alt}}
+  </$list>
+  <$list filter="[<tv-config-toolbar-text>prefix[yes]]">
+    <span class="tc-btn-text">
+		  &nbsp;<$text text={{$:/language/Buttons/Trashbin/Caption/Move}}/>
+    </span>
+  </$list>
+</$button>
+</$list>
+
+<!-- recycle from trashbin -->
+<$list filter="[all[current]tag[$:/tags/trashbin]prefix[$:/trashbin/]]">
+<$button
+ aria-label={{$:/language/Buttons/Trashbin/Caption/Recycle}}
+ tooltip={{$:/language/Buttons/Trashbin/Hint/Recycle}} class=<<tv-config-toolbar-class>> >
+  <$macrocall $name="restore" tiddler=<<currentTiddler>>  />
+  <$list filter="[<tv-config-toolbar-icons>prefix[yes]]">
+    {{$:/plugins/kookma/trashbin/images/recycle}}
+  </$list>
+  <$list filter="[<tv-config-toolbar-text>prefix[yes]]">
+    <span class="tc-btn-text">&nbsp;
+      <$text text={{$:/language/Buttons/Trashbin/Caption/Recycle}}/>
+   </span>
+  </$list>
+</$button>
+</$list>
