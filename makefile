@@ -31,7 +31,7 @@ run-to-the-world:
 	$(CMD) --listen port=$(PORT) anon-username=$(USERNAME) host=$(HOST)
 # generate index.html
 build:
-	@rm -rf tiddlers/\$__StoryList*.tid
+	@make trash
 	@echo 🛺 cleaned StoryList
 	$(CMD) --output $(OUTPUTDIR) --build index
 	@echo "🎉 generated $(OUTPUTDIR)/index.html"
@@ -50,7 +50,6 @@ install-service:
 # changed
 reload:
 	$(SERVICECMD) --user daemon-reload
-# service
 # use hight color
 # maybe should start byhand firstly
 enable:
@@ -62,9 +61,11 @@ status:
 start:
 	$(SERVICECMD) start --user $(SERVICEFILE)
 	@echo "$(SERVICEFILE) has started, Click this address https://127.0.0.1:$(PORT) to open"
+	@make status
 restart:
 	$(SERVICECMD) restart --user $(SERVICEFILE)
 	@echo "$(SERVICEFILE) has restared, Click this address https://127.0.0.1:$(PORT) to open"
+	@make status
 stop:
 	$(SERVICECMD) stop --user $(SERVICEFILE)
 	@echo $(SERVICEFILE) has stopped
@@ -73,11 +74,8 @@ uninstall:
 	@echo "👋 $(NEOTWBIN) file has uninstalled"
 # uninstall service
 uninstall-service:
-	# Uninstall service
 	@rm -f -i $(SERVICETARGETFILE);
 	@echo "👋 $(SERVICETARGETFILE) file has removed"
-test:
-	@echo "${PWD}"
 
 # clean
 .PHONY: clean
@@ -87,4 +85,3 @@ trash:
 	@rm -rf \
 		tiddlers/Draft* \
 		tiddlers/*__StoryList*.tid
-		# tiddlers/*__trashbin* \
