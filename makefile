@@ -30,6 +30,8 @@ run-to-the-world:
 	$(CMD) --listen port=$(PORT) anon-username=$(USERNAME) host=$(HOST)
 # generate index.html
 build:
+	@rm -rf tiddlers/\$__StoryList*.tid
+	@echo 🛺 cleaned StoryList
 	$(CMD) --output $(OUTPUTDIR) --build index
 	@echo "🎉 generated $(OUTPUTDIR)/index.html"
 # TODO adjust exist dir
