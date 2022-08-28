@@ -35,7 +35,7 @@ build:
 	@echo 🛺 cleaned StoryList
 	@mkdir public
 	@cp -r tiddlers/ tiddlywiki.info public/
-	@rm  -rf public/tiddlers/subwiki
+	@rm  -rf public/tiddlers/subwiki public/tiddlers/gtd/ public/tiddlers/trashbin
 	$(CMD) public --output dist/ --build index
 	@echo "🎉 generated index.html"
 # install service
