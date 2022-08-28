@@ -1,0 +1,13 @@
+author: NicolasPetton
+core-version: >=5.1.22
+dependents: 
+description: Simple project management for TiddlyWiki
+list: doc/Help changelog LICENSE
+modified: 20220310164023544
+modifier: @oeyoews
+name: Projectify
+plugin-type: plugin
+source: https://github.com/NicolasPetton/Projectify
+title: $:/plugins/nico/projectify
+type: application/json
+version: 0.14.0

@@ -1,0 +1,10 @@
+author: kl
+dependents: $:/plugins/nico/projectify $:/plugins/kookma/todolist $:/plugins/xp/aggregation
+description: Getting Things Done
+list: readme
+name: GTD
+parent-plugin: $:/plugins/xp/aggregation
+plugin-type: plugin
+title: $:/plugins/xp/aggregation-gtd
+type: application/json
+version: 0.2.2
