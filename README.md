@@ -31,7 +31,7 @@ preview repo svg?)">
 > It's the [tw5](https://oeyoew.fun) lite
 
 > Compare to `tw5`, `neotw` remove github pages deploy and related deploy, no pwa, image optimize, no mobile
-> optimize, not subwiki(private notes), and Maximize keep vanilla configuration etc, just for local, so it's more simplify, still worth trying
+> optimize, and Maximize keep vanilla configuration etc, just for local, so it's more simplify, still worth trying
 
 ## Features
 
