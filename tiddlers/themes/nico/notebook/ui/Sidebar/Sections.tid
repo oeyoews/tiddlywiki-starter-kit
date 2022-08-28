@@ -1,6 +1,7 @@
+caption: notebook sidebar
 created: 20200429163239707
 creator: oeyoews
-modified: 20220828041017516
+modified: 20220828060316862
 modifier: oeyoews
 tags: $:/themes/nico/notebook/tags/Sidebar
 title: $:/themes/nico/notebook/ui/Sidebar/Sections
@@ -10,4 +11,4 @@ type: text/vnd.tiddlywiki
   {{||$:/themes/nico/notebook/ui/Sidebar/SectionTemplate}}
 </$list>
 
-{{flask rotate}}
+{{polar bear}}

@@ -1,9 +1,9 @@
 caption: Recently added
 created: 20220828022145583
 creator: oeyoews
-list: white-vanilla.png $:/config/FileSystemPaths [[switch theme]] [[ICONS WEBSITES]] PLUGINS stylesheet [[NeoTw Configuration]]
+list: $:/themes/nico/notebook/ui/Sidebar/Sections [[polar bear]] white-vanilla.png $:/config/FileSystemPaths [[switch theme]] [[ICONS WEBSITES]] PLUGINS stylesheet [[NeoTw Configuration]]
 list-before: 
-modified: 20220828050201781
+modified: 20220828060241733
 modifier: oeyoews
 tags: $:/tags/Favorites/Folder
 title: $:/favorites/folders/recent
