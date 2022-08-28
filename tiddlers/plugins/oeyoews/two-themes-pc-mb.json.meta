@@ -1,0 +1,12 @@
+author: oeyoews
+created: 20220521174759846
+description: Switch Theme in mobile and pc automatically
+list: readme
+modified: 20220522061059490
+name: Switch Theme
+packaged-by: Gatha on 22nd May 2022, 14:11:02
+plugin-type: plugin
+tags: 
+title: $:/plugins/oeyoews/two-themes-pc-mb
+type: application/json
+version: v0.0.5
