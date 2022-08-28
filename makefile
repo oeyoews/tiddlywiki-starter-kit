@@ -1,5 +1,6 @@
 # options
 PACKAGE = "TiddlyWiki5"
+PKGNAME = "neotw"
 CMD = @tiddlywiki
 OUTPUTDIR = public
 PORT = 8099
@@ -9,7 +10,7 @@ SERVICECMD = "systemctl"
 SERVICETEMPLATEFILE = "neotw-template.service"
 SERVICEFILE = "neotw-user.service"
 SERVICETARGETFILE = "$(HOME)/.config/systemd/user/$(SERVICEFILE)"
-NEOTWBIN = "$(HOME)/.local/bin/neotw"
+NEOTWBIN = "$(HOME)/.local/bin/$(PKGNAME)"
 neotwdir-user= "$(PWD)"
 
 # adjust os, just test on linux
@@ -39,8 +40,8 @@ build:
 # install service
 install:
 	@echo "tiddlywiki --listen anon-username='anonymous'" > $(NEOTWBIN)
-	@chmod +x ~/.local/bin/neotw
-	@echo "restart terminal"
+	@chmod +x ~/.local/bin/$(PKGNAME)
+	@echo "🎉 installed neotw"
 install-service:
 	@cp $(SERVICETEMPLATEFILE) $(SERVICEFILE)
 	@sed -i "s#neotwdir#$(neotwdir-user)#" $(SERVICEFILE)
