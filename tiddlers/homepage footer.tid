@@ -1,12 +1,13 @@
 created: 20220821045909565
 creator: oeyoews
-modified: 20220828130858530
+modified: 20220828155323363
 modifier: oeyoews
 tags: 
 title: homepage footer
 type: text/vnd.tiddlywiki
 
 \define updatedtime()
+<$list filter="[!is[system]!has[draft.of]!sort[modified]limit[1]]">
 <$view field="modified" format="relativedate"/>
 \end
 
