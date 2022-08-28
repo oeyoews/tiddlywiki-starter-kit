@@ -1,0 +1,11 @@
+created: 20220828031920001
+creator: oeyoews
+modified: 20220828033607237
+modifier: oeyoews
+tags: $:/tags/SideBarSegment
+title: flask rotate
+type: text/vnd.tiddlywiki
+
+<div style="position:absolute;opacity:0.55;user-select:none;pointer-events:none;width:10%;bottom:10%;right:50%;" class="gk0wk-caticon gk0wk-rotate-infinite">
+{{flask-22-icon}}
+</div>
