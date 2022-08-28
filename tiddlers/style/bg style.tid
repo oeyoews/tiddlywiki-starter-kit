@@ -1,6 +1,6 @@
 created: 20220828031857346
 creator: oeyoews
-modified: 20220828043043933
+modified: 20220828051952991
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: bg style
@@ -8,6 +8,23 @@ type: text/vnd.tiddlywiki
 
 .gk0wk-caticon img { fill: #0A84FF; }
 
-.gk0wk-rotate-infinite { animation: rotate 10s linear infinite; }
+.gk0wk-rotate-infinite { 
+	animation: move 15s ease-in infinite; 
+}
 
-@keyframes rotate{ from{transform: rotate(0deg)} to{transform: rotate(360deg)} }
+@keyframes move
+{
+	from {left:0px;}
+	to {
+	left: 400px;
+	}
+}
+
+@keyframes rotate{ 
+	from {
+		transform: rotate(0deg)
+	}
+	to {
+		transform: rotate(360deg)
+	} 
+}
