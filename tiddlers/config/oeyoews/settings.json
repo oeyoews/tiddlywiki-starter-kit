@@ -2,5 +2,8 @@
     "nddemoum": "d",
     "username-1": "anonymous",
     "username": "oeyoews",
-    "name": "neotw"
+    "name": "neotw",
+    "theme": "notebook",
+    "palette": "notebok",
+    "neotw-version": "<$view field=\"created\" format=\"date\" template=\"YYYY0MM0DD\"/>"
 }

@@ -1,10 +1,14 @@
 created: 20220828011107715
 creator: oeyoews
-modified: 20220828021731631
+modified: 20220828124822610
 modifier: oeyoews
 tags: 
 title: NeoTw Configuration
 type: text/vnd.tiddlywiki
+
+\define time() 
+<$view field="created" format="date" template="YYYY0MM0DD"/>
+\end
 
 !! WIP
 
@@ -14,4 +18,16 @@ project name is
 
 * <$checkbox tiddler="$:/config/oeyoews/settings.json" index="username"  checked="oeyoews" unchecked="anonymous" default="anonymous"> 
 username is __{{$:/config/oeyoews/settings.json##username}}__
+</$checkbox>
+
+* <$checkbox tiddler="$:/config/oeyoews/settings.json" index="theme"  checked="notebook" unchecked="vanilla" default="notebook"> 
+current tiddlywiki theme is __{{$:/config/oeyoews/settings.json##theme}}__
+</$checkbox>
+
+* <$checkbox tiddler="$:/config/oeyoews/settings.json" index="palette"  checked="notebok" unchecked="vanilla" default="notebook"> 
+current tiddlywiki palette is __{{$:/config/oeyoews/settings.json##palette}}__
+</$checkbox>
+
+* <$checkbox tiddler="$:/config/oeyoews/settings.json" index="neotw-version"  checked=<<time>> unchecked="v1.0.0" default="v1.0.0"> 
+current neotw version is __{{$:/config/oeyoews/settings.json##neotw-version}}__
 </$checkbox>
