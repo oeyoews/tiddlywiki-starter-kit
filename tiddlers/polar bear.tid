@@ -1,9 +1,13 @@
 created: 20220828031920001
 creator: oeyoews
-modified: 20220828060133582
+modified: 20220828062327654
 modifier: oeyoews
 tags: $:/tags/SideBarSegment
 title: polar bear
 type: text/vnd.tiddlywiki
 
 <div class="polarbear"></div>
+
+<div style="position:absolute;opacity:0.99;user-select:none;pointer-events:none;width:10%;bottom:0%;right:15%;">
+{{left-cat}}
+</div>

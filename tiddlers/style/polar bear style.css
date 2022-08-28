@@ -1,0 +1,28 @@
+  .polarbear {
+    position: fixed;
+    bottom: 10px;
+    height: 100px;
+    width: 200px;
+    z-index: 2;
+    background: url(https://gitlab.com/oeyoews/neotw/-/raw/main/images/bear.png);
+    animation: bear 0.4s steps(8) infinite, change_pos 2s forwards;
+  }
+
+  @keyframes bear {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: -1600px 0;
+    }
+  }
+
+  @keyframes change_pos {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
