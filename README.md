@@ -177,7 +177,9 @@ clean:
 
 ## Preview
 
-- Demo: https://neotw.tiddlyhost.com or https://oeyoews.github.io/neotw
+- gh-pages: https://oeyoews.github.io/neotw
+- vercel: https://neotw.vercel.app
+- tiddlyhost: https://neotw.tiddlyhost.com
 
 ## License
 
