@@ -2,7 +2,7 @@
 
 <h1>neotw</h1>
 
-<img src="https://img.shields.io/badge/status-ing-blueviolet.svg?style=flat-square&logo=Chakra-Ui&color=90E59A&logoColor=green" alt="status" >
+<img src="https://img.shields.io/badge/Status-Ing-blueviolet.svg?style=flat-square&logo=Chakra-Ui&color=90E59A&logoColor=green" alt="status" >
 
 <hr>
 
