@@ -28,7 +28,7 @@ preview repo svg?)">
 
 ## What's the neotw
 
-> It's the [tw5](https://oeyoew.fun) lite
+> A modern style notebook, is v2 of the [tw5](https://oeyoew.fun) repository
 
 > Compare to `tw5`, `neotw` remove github pages deploy and related deploy, no pwa, image optimize, no mobile
 > optimize, and Maximize keep vanilla configuration etc, just for local, so it's more simplify, still worth trying
@@ -69,7 +69,7 @@ make
 
 ```bash
 make or make run # port is 8099 default
-make build # generate puglic/index.html
+make build # generate dist/index.html
 ```
 
 > more usage please check [makefile](makefile)
@@ -85,11 +85,18 @@ with this syntax:
 ```makefile
 # options
 PACKAGE = "TiddlyWiki5"
+PKGNAME = "neotw"
 CMD = @tiddlywiki
 OUTPUTDIR = public
 PORT = 8099
 USERNAME = $(USER)
 HOST = "0.0.0.0"
+SERVICECMD = "systemctl"
+SERVICETEMPLATEFILE = "neotw-template.service"
+SERVICEFILE = "neotw-user.service"
+SERVICETARGETFILE = "$(HOME)/.config/systemd/user/$(SERVICEFILE)"
+NEOTWBIN = "$(HOME)/.local/bin/$(PKGNAME)"
+neotwdir-user= "$(PWD)"
 
 # adjust os, just test on linux
 ifeq ($(shell uname),Linux)
@@ -99,21 +106,70 @@ else
 endif
 
 # startup tiddlywiki
-start:
-	@echo "Your current OS is $(PLATFORM) and 🚀 startup $(PACKAGE)"
-	$(CMD) --listen port=$(PORT) anon-username=$(USERNAME)
-start-to-the-world:
+run:
+	@echo "ℹ️  Your current OS is $(PLATFORM) \
+		🚀 startup $(PACKAGE)"
+	$(CMD) --listen port=$(PORT) anon-username=$(USERNAME) 2>&1 &
+# startup to the world
+run-to-the-world:
 	@echo "👋 startup $(PACKAGE) to the world"
 	$(CMD) --listen port=$(PORT) anon-username=$(USERNAME) host=$(HOST)
-# generate index.html
-generate2html:
-	$(CMD) --output $(OUTPUTDIR) --build index
+# generate index.html(support subwiki, but not build html no include subwiki)
+# note: because use make, so can't read this `tiddlywiki` cmd from current project, recommend install tiddlywiki global, likw `yarn global add tiddlywiki`
+build:
+	@make clean
+	@echo 🛺 cleaned StoryList
+	@mkdir public
+	@cp -r tiddlers/ tiddlywiki.info public/
+	@rm  -rf public/tiddlers/subwiki public/tiddlers/gtd/ public/tiddlers/trashbin
+	$(CMD) public --output dist/ --build index
 	@echo "🎉 generated index.html"
+# install service
+install:
+	@echo "tiddlywiki --listen anon-username='anonymous'" > $(NEOTWBIN)
+	@chmod +x ~/.local/bin/$(PKGNAME)
+	@echo "🎉 installed neotw"
+install-service:
+	@cp $(SERVICETEMPLATEFILE) $(SERVICEFILE)
+	@sed -i "s#neotwdir#$(neotwdir-user)#" $(SERVICEFILE)
+	@mv $(SERVICEFILE) $(SERVICETARGETFILE)
+	@echo "🎉 $(SERVICETARGETFILE) file has installed"
+# changed
+reload-service:
+	$(SERVICECMD) --user daemon-reload
+# use hight color
+# maybe should start byhand firstly
+enable:
+	$(SERVICECMD) enable --user $(SERVICEFILE)
+disable:
+	$(SERVICECMD) disable --user $(SERVICEFILE)
+status:
+	$(SERVICECMD) status --user $(SERVICEFILE)
+start:
+	$(SERVICECMD) start --user $(SERVICEFILE)
+	@echo "$(SERVICEFILE) has started, Click this address https://127.0.0.1:$(PORT) to open"
+	@make status
+restart:
+	$(SERVICECMD) restart --user $(SERVICEFILE)
+	@echo "$(SERVICEFILE) has restared, Click this address https://127.0.0.1:$(PORT) to open"
+	@make status
+stop:
+	$(SERVICECMD) stop --user $(SERVICEFILE)
+	@echo $(SERVICEFILE) has stopped
+uninstall:
+	rm -i $(NEOTWBIN)
+	@echo "👋 $(NEOTWBIN) file has uninstalled"
+# uninstall service
+uninstall-service:
+	@rm -f -i $(SERVICETARGETFILE);
+	@echo "👋 $(SERVICETARGETFILE) file has removed"
 
-# clean public/ folder
+# clean
 .PHONY: clean
 clean:
-	-rm -rf $(OUTPUTDIR)
+	@rm -rf \
+		$(OUTPUTDIR) \
+		tiddlers/*__StoryList*.tid
 ```
 
 </details>
