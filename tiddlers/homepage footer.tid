@@ -1,6 +1,6 @@
 created: 20220821045909565
 creator: oeyoews
-modified: 20220829100928877
+modified: 20220829144530140
 modifier: oeyoews
 tags: 
 title: homepage footer
@@ -38,13 +38,14 @@ type: text/vnd.tiddlywiki
 <$count filter="[!is[system]sort[title]]"/> 
 \end
 
+<hr>
 <div style="font-weight: regular; border-radius: 4px;background:;font-size:60%; padding: 2px 5px 2px;user-select: none;text-align:center;">
 
-<<shield "doy" "<<doy>>" red>> 
-<<shield "time" "<<now2>>" time>> 
-<<shield "started" "<<starttime>>" info>> 
-<<shield "updated" "<<updatedtime>>">> 
-<<shield plugins "<<totalplugins>>" blue>>
-<<shield tiddlers "<<totaltiddlers>>(<<subwiki-private>>)" purple>>
+<<shield "Doy" "<<doy>>" red>> 
+<<shield "Time" "<<now2>>" time>> 
+<<shield "Started" "<<starttime>>" info>> 
+<<shield "Updated" "<<updatedtime>>">> 
+<<shield Plugins "<<totalplugins>>" blue>>
+<<shield Tiddlers "<<totaltiddlers>>(<<subwiki-private>>)" purple>>
 
 </div>

@@ -1,6 +1,6 @@
 created: 20220826140521100
 creator: oeyoews
-modified: 20220829000140212
+modified: 20220829144457976
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: stylesheet
@@ -38,7 +38,7 @@ type: text/vnd.tiddlywiki
 <!-- break change -->
 hr {
 	background: #7f4bca;
-	height: 2px;
+	height: 1px;
 	border: 0;
 }
 
