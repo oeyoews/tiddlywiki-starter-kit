@@ -30,6 +30,7 @@ run-to-the-world:
 	@echo "👋 startup $(PACKAGE) to the world"
 	$(CMD) --listen port=$(PORT) anon-username=$(USERNAME) host=$(HOST)
 # generate index.html(support subwiki, but not build html no include subwiki)
+# note: because use make, so can't read this `tiddlywiki` cmd from current project, recommend install tiddlywiki global, likw `yarn global add tiddlywiki`
 build:
 	@make clean
 	@echo 🛺 cleaned StoryList
