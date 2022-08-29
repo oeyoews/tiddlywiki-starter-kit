@@ -1,0 +1,47 @@
+created: 20201215172003456
+creator: oeyoews
+modified: 20220829084458990
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: $:/plugins/nico/shields/stylesheet
+type: text/vnd.tiddlywiki
+
+\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
+.shield {
+  font-weight: normal;
+  display: inline-block;
+  color: white;
+  font-size: .8em;
+}
+
+.shield:hover {
+  text-decoration: none;
+}
+
+.shield .label {
+  background: #555;
+	border-radius: 3px 0 0 3px;
+  padding: 3px 6px;
+}
+
+.shield .status {
+  background: #40ba12;
+	border-radius: 0 3px 3px 0;
+  padding: 3px 6px;
+}
+
+.shield.shield-purple .status {
+  background: #923293;
+}
+
+.shield.shield-red .status {
+  background: #cc5640;
+}
+
+.shield.shield-blue .status {
+  background: #0e7fbf;
+}
+
+.shield.shield-info .status {
+  background: #5BC0DE;
+}

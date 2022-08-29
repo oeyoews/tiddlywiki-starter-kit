@@ -1,6 +1,6 @@
 created: 20220821045909565
 creator: oeyoews
-modified: 20220829074458442
+modified: 20220829083954693
 modifier: oeyoews
 tags: 
 title: homepage footer
@@ -36,7 +36,7 @@ type: text/vnd.tiddlywiki
 Updated ''<<updatedtime>>'' and have ''<<totaltiddlers>>''(<<subwiki-private>>) public user tiddlers , ''<<totalplugins>>'' plugins
 -->
 
-<<shield "started" "<<starttime>>">> 
+<<shield "started" "<<starttime>>" info>> 
 <<shield "updated" "<<updatedtime>>">> 
 <<shield plugins "<<totalplugins>>" blue>>
 <<shield tiddlers "<<totaltiddlers>>(<<subwiki-private>>)" purple>>
