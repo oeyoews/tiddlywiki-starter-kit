@@ -1,10 +1,18 @@
 created: 20220821045909565
 creator: oeyoews
-modified: 20220829083954693
+modified: 20220829100657840
 modifier: oeyoews
 tags: 
 title: homepage footer
 type: text/vnd.tiddlywiki
+
+\define doy() 
+<<now "ddddd">>
+\end
+
+\define now2()
+<<now "YY/0MM/0DD/ 0hh:0mm">>
+\end
 
 \define starttime()
 <$list filter="[!is[system]has[created]!sort[created]!limit[1]]">
@@ -32,10 +40,8 @@ type: text/vnd.tiddlywiki
 
 <div style="font-weight: regular; border-radius: 4px;background:;font-size:60%; padding: 2px 5px 2px;user-select: none;text-align:center;">
 
-<!-- use shield replace
-Updated ''<<updatedtime>>'' and have ''<<totaltiddlers>>''(<<subwiki-private>>) public user tiddlers , ''<<totalplugins>>'' plugins
--->
-
+<<shield "doy" "<<doy>>" red>> 
+<<shield "time" "<<now2>>" time>> 
 <<shield "started" "<<starttime>>" info>> 
 <<shield "updated" "<<updatedtime>>">> 
 <<shield plugins "<<totalplugins>>" blue>>
