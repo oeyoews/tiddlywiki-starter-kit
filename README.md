@@ -23,6 +23,7 @@ preview repo svg?)">
 - [Run](#run)
 - [Configuration](#configuration)
 - [Preview](#preview)
+- [License](#license)
 
 <!-- tocstop -->
 
@@ -177,3 +178,7 @@ clean:
 ## Preview
 
 - Demo: https://neotw.tiddlyhost.com or https://oeyoews.github.io/neotw
+
+## License
+
+<img src="https://img.shields.io/badge/License-MIT-blueviolet.svg?style=flat-square&color=blue" alt="project-license">
