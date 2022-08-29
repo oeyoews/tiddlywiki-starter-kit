@@ -1,10 +1,15 @@
 created: 20220821045909565
 creator: oeyoews
-modified: 20220829004333549
+modified: 20220829044346044
 modifier: oeyoews
 tags: 
 title: homepage footer
 type: text/vnd.tiddlywiki
+
+\define starttime()
+<$list filter="[!is[system]has[created]!sort[created]!limit[1]]">
+<$view field="created" format="relativedate"/>
+\end
 
 \define updatedtime()
 <$list filter="[!is[system]!has[draft.of]!sort[modified]limit[1]]">
@@ -29,6 +34,7 @@ type: text/vnd.tiddlywiki
 Updated ''<<updatedtime>>'' and have ''<<totaltiddlers>>''(<<subwiki-private>>) public user tiddlers , ''<<totalplugins>>'' plugins
 -->
 
+<<shield "started" "<<starttime>>">> 
 <<shield "updated" "<<updatedtime>>">> 
 <<shield plugins "<<totalplugins>>" blue>>
 <<shield tiddlers "<<totaltiddlers>>(<<subwiki-private>>)" purple>>
