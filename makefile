@@ -7,7 +7,7 @@ PORT = 8099
 USERNAME = $(USER)
 HOST = "0.0.0.0"
 SERVICECMD = "systemctl"
-SERVICETEMPLATEFILE = "neotw-template.service"
+SERVICETEMPLATEFILE = "src/neotw-template.service"
 SERVICEFILE = "neotw-user.service"
 SERVICETARGETFILE = "$(HOME)/.config/systemd/user/$(SERVICEFILE)"
 NEOTWBIN = "$(HOME)/.local/bin/$(PKGNAME)"
@@ -54,7 +54,7 @@ install:
 install-service:
 	@cp $(SERVICETEMPLATEFILE) $(SERVICEFILE)
 	@sed -i "s#neotwdir#$(neotwdir-user)#" $(SERVICEFILE)
-	@mv $(SERVICEFILE) $(SERVICETARGETFILE)
+	@mv -i $(SERVICEFILE) $(SERVICETARGETFILE)
 	@echo "🎉 $(SERVICETARGETFILE) file has installed"
 
 # changed
