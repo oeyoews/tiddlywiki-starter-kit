@@ -38,6 +38,7 @@ build:
 	@cp -r tiddlers/ tiddlywiki.info public/
 	@rm  -rf public/tiddlers/subwiki public/tiddlers/gtd/ public/tiddlers/trashbin
 	$(CMD) public --output dist/ --build index
+	@cp vercel.json dist/
 	@echo "🎉 generated index.html"
 # install service
 install:
