@@ -1,0 +1,14 @@
+author: Tony Grosinger
+core-version: >=5.0.9
+created: 20220310155525489
+creator: @oeyoews
+dependents: 
+description: Checklist Plugin
+list: readme Usage Configuration
+modified: 20220310164023546
+modifier: @oeyoews
+plugin-type: plugin
+source: https://github.com/tgrosinger/tw5-checklist
+title: $:/plugins/tgrosinger/tw5-checklist
+type: application/json
+version: 0.0.15
