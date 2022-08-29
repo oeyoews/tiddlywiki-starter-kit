@@ -37,7 +37,7 @@ build:
 	@make clean; echo 🛺 cleaned StoryList
 	@mkdir public
 	@cp -r tiddlers/ tiddlywiki.info public/
-	@cp src/readonlyview.json public/tiddlers/
+	@cp src/readonlyview.json public/tiddlers/  # enable readonlyview
 	@rm -rf \
 		public/tiddlers/subwiki \
 		public/tiddlers/gtd/ \
