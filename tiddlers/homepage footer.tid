@@ -1,13 +1,13 @@
 created: 20220821045909565
 creator: oeyoews
-modified: 20220829100657840
+modified: 20220829100928877
 modifier: oeyoews
 tags: 
 title: homepage footer
 type: text/vnd.tiddlywiki
 
 \define doy() 
-<<now "ddddd">>
+<<now "ddddd days">>
 \end
 
 \define now2()
