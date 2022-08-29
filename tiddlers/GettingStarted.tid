@@ -1,13 +1,15 @@
 caption: Step 1<br>Syncing
 created: 20220828120245453
 creator: oeyoews
-modified: 20220828160103430
+modified: 20220829000226594
 modifier: oeyoews
 tags: $:/tags/GettingStarted
 title: GettingStarted
 type: text/vnd.tiddlywiki
 
 ! Welcome to NeoTw
+
+{{$:/plugins/PublisherName/switch-palette/core/switch-palette}}
 
 Visit https://tiddlywiki.com/ to find out more about TiddlyWiki and what it can do.
 

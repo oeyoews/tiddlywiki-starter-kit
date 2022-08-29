@@ -1,9 +1,0 @@
-created: 20220826134238489
-creator: oeyoews
-modified: 20220828023004376
-modifier: oeyoews
-tags: 
-title: switch theme
-type: text/vnd.tiddlywiki
-
-{{$:/plugins/PublisherName/switch-palette/core/switch-palette}}
