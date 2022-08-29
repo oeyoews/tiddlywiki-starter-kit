@@ -120,4 +120,4 @@ clean:
 
 ## Preview
 
-- Demo: https://neotw.tiddlyhost.com
+- Demo: https://neotw.tiddlyhost.com or https://oeyoews.github.io/neotw
