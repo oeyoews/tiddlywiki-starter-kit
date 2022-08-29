@@ -25,36 +25,43 @@ run:
 	@echo "ℹ️  Your current OS is $(PLATFORM) \
 		🚀 startup $(PACKAGE)"
 	$(CMD) --listen port=$(PORT) anon-username=$(USERNAME) 2>&1 &
+
 # startup to the world
 run-to-the-world:
 	@echo "👋 startup $(PACKAGE) to the world"
 	$(CMD) --listen port=$(PORT) anon-username=$(USERNAME) host=$(HOST)
+
 # generate index.html(support subwiki, but not build html no include subwiki)
 # note: because use make, so can't read this `tiddlywiki` cmd from current project, recommend install tiddlywiki global, likw `yarn global add tiddlywiki`
 build:
-	@make clean
-	@echo 🛺 cleaned StoryList
+	@make clean; echo 🛺 cleaned StoryList
 	@mkdir public
 	@cp -r tiddlers/ tiddlywiki.info public/
-	@rm  -rf public/tiddlers/subwiki public/tiddlers/gtd/ public/tiddlers/trashbin
-	$(CMD) public --output dist/ --build index
-	@cp vercel.json dist/
-	@echo "🎉 generated index.html"
+	@cp src/readonlyview.json public/tiddlers/
+	@rm -rf \
+		public/tiddlers/subwiki \
+		public/tiddlers/gtd/ \
+		public/tiddlers/trashbin # remove subwiki
+	$(CMD) public --output dist/ --build index  # build
+	@cp src/vercel.json dist/; echo "🎉 generated index.html" # patch
+
 # install service
 install:
 	@echo "tiddlywiki --listen anon-username='anonymous'" > $(NEOTWBIN)
 	@chmod +x ~/.local/bin/$(PKGNAME)
 	@echo "🎉 installed neotw"
+
 install-service:
 	@cp $(SERVICETEMPLATEFILE) $(SERVICEFILE)
 	@sed -i "s#neotwdir#$(neotwdir-user)#" $(SERVICEFILE)
 	@mv $(SERVICEFILE) $(SERVICETARGETFILE)
 	@echo "🎉 $(SERVICETARGETFILE) file has installed"
+
 # changed
 reload-service:
 	$(SERVICECMD) --user daemon-reload
-# use hight color
-# maybe should start byhand firstly
+	# use hight color
+	# maybe should start byhand firstly
 enable:
 	$(SERVICECMD) enable --user $(SERVICEFILE)
 disable:
@@ -75,7 +82,7 @@ stop:
 uninstall:
 	rm -i $(NEOTWBIN)
 	@echo "👋 $(NEOTWBIN) file has uninstalled"
-# uninstall service
+	# uninstall service
 uninstall-service:
 	@rm -f -i $(SERVICETARGETFILE);
 	@echo "👋 $(SERVICETARGETFILE) file has removed"
