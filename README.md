@@ -28,7 +28,7 @@ preview repo svg?)">
 
 ## What's the neotw
 
-> A modern style notebook, is v2 of the [tw5](https://oeyoew.fun) repository
+> A modern style notebook, is v2 of the [tw5](https://github.com/oeyoews/tw5) repository
 
 > Compare to `tw5`, `neotw` remove github pages deploy and related deploy, no pwa, image optimize, no mobile
 > optimize, and Maximize keep vanilla configuration etc, just for local, so it's more simplify, still worth trying
