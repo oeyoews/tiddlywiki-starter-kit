@@ -1,7 +1,7 @@
 name: github-pages
 on:
   schedule:
-    # - cron: "04 16 * * *"
+    - cron: "* * * * 1"
   push:
     branches: ["main"]
   workflow_dispatch:
