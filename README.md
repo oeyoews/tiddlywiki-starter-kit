@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1>NeoTw</h1>
+<h1>neotw</h1>
 
 <img src="https://img.shields.io/badge/status-ing-blueviolet.svg?style=flat-square&logo=Chakra-Ui&color=90E59A&logoColor=green" alt="status" >
 
