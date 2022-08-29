@@ -1,8 +1,8 @@
 created: 20220521173616898
 creator: oeyoews
-modified: 20220828040555085
+modified: 20220829080718691
 modifier: oeyoews
 title: $:/plugins/oeyoews/welcome-message/Hello-TiddlyWiki5
 type: text/vnd.tiddlywiki
 
-Welcom to NeoTw {{$:/plugins/oeyoews/welcome-message/icon}}
+Welcom to NeoTw [img width=22 [$:/favicon.ico]]
