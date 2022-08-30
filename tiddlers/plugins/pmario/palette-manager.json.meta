@@ -1,7 +1,8 @@
 created: 20220830020232603
-modified: 20220830020531862
-packaged-by: Gatha on 30th August 2022, 10:05:44
+modified: 20220830024822307
+packaged-by: Gatha on 30th August 2022, 10:48:25
 plugin-type: plugin
 tags: 
 title: $:/plugins/pmario/palette-manager
 type: application/json
+version: 0.0.2
