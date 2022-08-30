@@ -1,6 +1,6 @@
 created: 20220830054857671
 creator: oeyoews
-modified: 20220830103000040
+modified: 20220830152915960
 modifier: oeyoews
 tags: 
 title: neotw/switch-tip
@@ -17,6 +17,8 @@ type: text/vnd.tiddlywiki
 <div class="tr-contextual-help">
 
 {{$:/plugins/oeyoews/switch-palette/switch-palette}}
+<hr>
+{{neotw/heatmap}}
 
 <div style="text-align: right;">
 <$button actions=<<help-seen "takeaways">> class="tc-btn-invisible tc-tiddlylink"> Dismiss it
