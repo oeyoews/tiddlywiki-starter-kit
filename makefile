@@ -51,6 +51,9 @@ install:
 	@chmod +x ~/.local/bin/$(PKGNAME)
 	@echo "🎉 installed neotw"
 
+install-tidgi:
+	cd tidgi; makepkg; sudo pacman -U *.zst
+
 install-service:
 	@cp $(SERVICETEMPLATEFILE) $(SERVICEFILE)
 	@sed -i "s#neotwdir#$(neotwdir-user)#" $(SERVICEFILE)
