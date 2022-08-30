@@ -1,9 +1,9 @@
 created: 20220830054857671
 creator: oeyoews
-modified: 20220830090534535
+modified: 20220830103000040
 modifier: oeyoews
 tags: 
-title: switch tip
+title: neotw/switch-tip
 type: text/vnd.tiddlywiki
 
 \define help-wanted(key) [[$:/state/seen/$key$]is[tiddler]then[]else[yes]!is[blank]] -[<renderingStatic>match[yes]]

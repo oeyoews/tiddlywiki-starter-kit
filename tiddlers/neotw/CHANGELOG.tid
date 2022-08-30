@@ -1,0 +1,10 @@
+created: 20220830102023755
+creator: oeyoews
+modified: 20220830102711446
+modifier: oeyoews
+tags: 
+title: neotw/CHANGELOG
+type: text/vnd.tiddlywiki
+
+* use `shift esc` replace `esc` for escape editing tiddler
+* use vim keymap
