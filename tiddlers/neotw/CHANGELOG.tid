@@ -1,10 +1,19 @@
 created: 20220830102023755
 creator: oeyoews
-modified: 20220830102711446
+modified: 20220830165232418
 modifier: oeyoews
 tags: 
 title: neotw/CHANGELOG
 type: text/vnd.tiddlywiki
 
+!!! break changes
+
 * use `shift esc` replace `esc` for escape editing tiddler
 * use vim keymap
+* add echarts plugin
+
+!!! changelog
+
+* ''23:58, 30th August 2022'' add echarts(not support export html), and timestamp plugins 
+* ''00:48, 31st August 2022'' add label color to `#00000008`, note this not fit for others themes, even you can use palette to manage it
+* ''2022/08/31 00:52:15'' add timestamp format

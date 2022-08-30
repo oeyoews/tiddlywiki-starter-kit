@@ -1,0 +1,15 @@
+author: TonGerner
+core-version: >=5.1.13
+created: 20170511203457093
+creator: TonGerner
+dependents: 
+description: Timestamp button
+list: readme
+modified: 20191230195515305
+modifier: TonGerner
+name: Timestamp button
+plugin-type: plugin
+source: http://tongerner.tiddlyspot.com/
+title: $:/plugins/tg/timestamp-button
+type: application/json
+version: 0.0.13

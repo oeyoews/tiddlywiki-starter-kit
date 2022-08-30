@@ -1,0 +1,39 @@
+{
+    "tiddlers": {
+        "$:/config/ShortcutInfo/timestamp": {
+            "title": "$:/config/ShortcutInfo/timestamp",
+            "text": "{{$:/language/Buttons/TimeStamp/Hint}}"
+        },
+        "$:/config/shortcuts/timestamp": {
+            "title": "$:/config/shortcuts/timestamp",
+            "text": "ctrl+D"
+        },
+        "$:/core/images/timestamp": {
+            "title": "$:/core/images/timestamp",
+            "tags": "$:/tags/Image",
+            "text": "<svg class=\"tgc-timestamp tc-image-button\"height=\"20pt\" width=\"20pt\" viewBox=\"0 0 20 20\"><path d=\"M10,0 C4.5,0 0,4.5 0,10 C0,15.5 4.5,20 10,20 C15.5,20 20,15.5 20,10 C20,4.5 15.5,0 10,0 L10,0 Z M10,18 C5.6,18 2,14.4 2,10 C2,5.6 5.6,2 10,2 C14.4,2 18,5.6 18,10 C18,14.4 14.4,18 10,18 Z M10.5,5 L9,5 L9,11 L14.2,14.2 L15,12.9 L10.5,10.2 L10.5,5 Z\"></svg>"
+        },
+        "$:/core/ui/EditorToolbar/timestamp": {
+            "title": "$:/core/ui/EditorToolbar/timestamp",
+            "caption": "{{$:/language/Buttons/TimeStamp/Caption}}",
+            "condition": "[<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]]",
+            "description": "{{$:/language/Buttons/TimeStamp/Hint}}",
+            "icon": "$:/core/images/timestamp",
+            "shortcuts": "((timestamp))",
+            "tags": "$:/tags/EditorToolbar",
+            "text": "<$action-sendmessage\n\t$message=\"tm-edit-text-operation\"\n\t$param=\"replace-selection\"\n\ttext=<<now>>\n/>"
+        },
+        "$:/language/Buttons/TimeStamp/Caption": {
+            "title": "$:/language/Buttons/TimeStamp/Caption",
+            "text": "insert timestamp"
+        },
+        "$:/language/Buttons/TimeStamp/Hint": {
+            "title": "$:/language/Buttons/TimeStamp/Hint",
+            "text": "Insert timestamp"
+        },
+        "$:/plugins/tg/timestamp-button/readme": {
+            "title": "$:/plugins/tg/timestamp-button/readme",
+            "text": "A button ({{$:/core/images/timestamp}}) for the Editor toolbar that inserts a timestamp.<br>Adapt the date/time format - `<<now [format]>>` in $:/core/ui/EditorToolbar/timestamp - to your liking.<br>\nAssigned shortcut: {{$:/config/shortcuts/timestamp}}\n\n\n\n"
+        }
+    }
+}

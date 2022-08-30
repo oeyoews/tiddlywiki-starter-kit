@@ -1,0 +1,18 @@
+caption: {{$:/language/Buttons/TimeStamp/Caption}}
+condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]]
+created: 20220830165022300
+creator: oeyoews
+description: {{$:/language/Buttons/TimeStamp/Hint}}
+icon: $:/core/images/timestamp
+modified: 20220830165104721
+modifier: oeyoews
+shortcuts: ((timestamp))
+tags: $:/tags/EditorToolbar
+title: $:/core/ui/EditorToolbar/timestamp
+type: text/vnd.tiddlywiki
+
+<$action-sendmessage
+	$message="tm-edit-text-operation"
+	$param="replace-selection"
+	text=<<now "YYYY/0MM/0DD 0hh:0mm:0ss">>
+/>

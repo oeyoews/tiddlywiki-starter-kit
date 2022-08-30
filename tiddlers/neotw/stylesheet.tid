@@ -1,6 +1,6 @@
 created: 20220826140521100
 creator: oeyoews
-modified: 20220830144405749
+modified: 20220830164705750
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/stylesheet
@@ -109,7 +109,8 @@ border: 0;
 }
 
 span.tc-tag-label {
-border-radius: 3px;
+	border-radius: 3px;
+	background: #00000008;
 }
 
 .nc-bar input[type="search"]:focus {
