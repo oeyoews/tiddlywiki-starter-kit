@@ -1,11 +1,12 @@
 created: 20220827234622723
 creator: oeyoews
-modified: 20220828132451037
+modified: 20220830074556426
 modifier: oeyoews
-tags: icon
-title: ICONS WEBSITES
+tags: 
+title: some websites
 type: text/vnd.tiddlywiki
 
 * svg: https://www.svgrepo.com
 * png: https://www.flaticon.com
-* fa: http://fa5-free-svg.tiddlyspot.com
+* fontawesome: http://fa5-free-svg.tiddlyspot.com
+* tutorial: https://groktiddlywiki.com/read
