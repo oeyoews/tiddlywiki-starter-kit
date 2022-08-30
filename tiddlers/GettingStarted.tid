@@ -1,13 +1,13 @@
 caption: Step 1<br>Syncing
 created: 20220828120245453
 creator: oeyoews
-modified: 20220830032648207
+modified: 20220830055001936
 modifier: oeyoews
 tags: 
 title: GettingStarted
 type: text/vnd.tiddlywiki
 
-{{$:/plugins/oeyoews/switch-palette/readme}}
+{{switch tip}}
 
 !!! Welcome to {{$:/SiteTitle}} !
 
