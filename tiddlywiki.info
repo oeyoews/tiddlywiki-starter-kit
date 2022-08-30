@@ -19,8 +19,7 @@
         "tiddlywiki/codemirror-mode-htmlembedded"
     ],
     "themes": [
-        "tiddlywiki/vanilla",
-        "tiddlywiki/snowwhite"
+        "tiddlywiki/vanilla"
     ],
     "build": {
         "index": [
