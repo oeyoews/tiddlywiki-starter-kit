@@ -1,9 +1,9 @@
 caption: Recently added
 created: 20220828022145583
 creator: oeyoews
-list: neotw/add-css-font [[some websites]] [[schedule sum]] $:/plugins/nico/projectify/ui/dashboard/InboxAndProjects $:/core/ui/ViewTemplate/subtitle $:/themes/nico/notebook/ui/Sidebar/Sections [[polar bear]] white-vanilla.png $:/config/FileSystemPaths PLUGINS stylesheet [[NeoTw Configuration]]
+list: neotw/stylesheet neotw/add-css-font [[some websites]] [[schedule sum]] $:/plugins/nico/projectify/ui/dashboard/InboxAndProjects $:/core/ui/ViewTemplate/subtitle $:/themes/nico/notebook/ui/Sidebar/Sections [[neotw/polar bear]] white-vanilla.png $:/config/FileSystemPaths PLUGINS [[NeoTw Configuration]]
 list-before: 
-modified: 20220830102810165
+modified: 20220830124105081
 modifier: oeyoews
 tags: $:/tags/Favorites/Folder
 title: $:/favorites/folders/recent
