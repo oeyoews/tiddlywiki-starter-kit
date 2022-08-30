@@ -1,11 +1,15 @@
 created: 20220826140521100
 creator: oeyoews
-modified: 20220830123954534
+modified: 20220830132037296
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/stylesheet
 type: text/vnd.tiddlywiki
 
+.tc-tiddler-frame {
+	border:0;
+}
+	
 .tc-block-tags-dropdown > .tc-btn-invisible:hover {
     background-color: #00000008;
 }
