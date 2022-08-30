@@ -1,10 +1,15 @@
 created: 20220821045909565
 creator: oeyoews
-modified: 20220829144530140
+modified: 20220830030346778
 modifier: oeyoews
 tags: 
 title: homepage footer
 type: text/vnd.tiddlywiki
+
+\define neotwstatus()
+<$text text=
+{{{[[$:/plugins/tiddlywiki/tiddlyweb]get[name]else[Online]]}}} >
+\end
 
 \define doy() 
 <<now "ddddd days">>
@@ -41,8 +46,8 @@ type: text/vnd.tiddlywiki
 <hr>
 <div style="font-weight: regular; border-radius: 4px;background:;font-size:60%; padding: 2px 5px 2px;user-select: none;text-align:center;">
 
+<<shield "Status" "<<neotwstatus>>">> 
 <<shield "Doy" "<<doy>>" red>> 
-<<shield "Time" "<<now2>>" time>> 
 <<shield "Started" "<<starttime>>" info>> 
 <<shield "Updated" "<<updatedtime>>">> 
 <<shield Plugins "<<totalplugins>>" blue>>
