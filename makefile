@@ -96,4 +96,5 @@ uninstall-service:
 clean:
 	@rm -rf \
 		$(OUTPUTDIR) \
-		tiddlers/*__StoryList*.tid
+		tiddlers/*__StoryList*.tid \
+		dist/
