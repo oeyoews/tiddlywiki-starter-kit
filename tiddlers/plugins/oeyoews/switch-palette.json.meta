@@ -1,10 +1,12 @@
 created: 20220826053220691
+creator: TidGiUser
 list: readme
-modified: 20220830032817339
+modified: 20220830084952731
+modifier: TidGiUser
 name: switch theme and palette
-packaged-by: Gatha on 30th August 2022, 11:28:20
+packaged-by: Gatha on 30th August 2022, 16:49:55
 plugin-type: plugin
 tags: 
 title: $:/plugins/oeyoews/switch-palette
 type: application/json
-version: v0.0.2
+version: v0.0.3

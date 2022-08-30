@@ -1,6 +1,6 @@
 created: 20220830054857671
 creator: oeyoews
-modified: 20220830054953116
+modified: 20220830085127912
 modifier: oeyoews
 tags: 
 title: switch tip
@@ -16,7 +16,7 @@ type: text/vnd.tiddlywiki
 <$list filter=<<help-wanted "takeaways">> variable=_>
 <div class="tr-contextual-help">
 
-{{$:/plugins/oeyoews/switch-palette/readme}}
+{{$:/plugins/oeyoews/switch-palette/switch-palette}}
 
 <div style="text-align: right;">
 <$button actions=<<help-seen "takeaways">> class="tc-btn-invisible tc-tiddlylink">
