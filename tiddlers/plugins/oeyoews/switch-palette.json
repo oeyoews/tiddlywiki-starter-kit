@@ -13,13 +13,13 @@
 "$:/plugins/oeyoews/switch-palette/switch-palette": {
     "created": "20220826052059730",
     "creator": "TidGiUser",
-    "text": "\\define switch-theme()\n<$select tiddler='$:/theme' default=\"choose avatar\">\n<$list filter='[plugin-type[theme]sort[title]]'>\n<option value={{{[<currentTiddler>addprefix[]addsuffix[]]}}}><$view field='name'/></option>\n</$list>\n</$select>\n\\end\n\n\\define switch-palette()\n<$select tiddler='$:/palette' default=\"choose avatar\">\n<$list filter='[all[shadows+tiddlers]tag[$:/tags/Palette]sort[name]]'>\n<option value={{{[<currentTiddler>addprefix[]addsuffix[]]}}}><$view field='name'/></option>\n</$list>\n</$select>\n\\end\n\n|>| Change theme and palette  |h\n| [[Palette |$:/palette]] | <<switch-palette>>|\n| [[Theme |$:/core/ui/ControlPanel/Theme]] | <<switch-theme>>|",
+    "text": "\\define switch-theme()\n<$select tiddler='$:/theme' default=\"choose avatar\">\n<$list filter='[plugin-type[theme]sort[title]]'>\n<option value={{{[<currentTiddler>addprefix[]addsuffix[]]}}}><$view field='name'/></option>\n</$list>\n</$select>\n\\end\n\n\\define switch-palette()\n<$select tiddler='$:/palette' default=\"choose avatar\">\n<$list filter='[all[shadows+tiddlers]tag[$:/tags/Palette]sort[name]]'>\n<option value={{{[<currentTiddler>addprefix[]addsuffix[]]}}}><$view field='name'/></option>\n</$list>\n</$select>\n\\end\n\n|>| Change theme and palette |<|<|h\n| [[Palette |$:/palette]] | <<switch-palette>>| [[Theme |$:/core/ui/ControlPanel/Theme]] | <<switch-theme>>|",
     "title": "$:/plugins/oeyoews/switch-palette/switch-palette",
-    "modified": "20220830084943567",
+    "modified": "20220830085647387",
+    "modifier": "TidGiUser",
     "tags": "",
     "type": "text/vnd.tiddlywiki",
     "revision": "0",
-    "bag": "default",
-    "modifier": "TidGiUser"
+    "bag": "default"
 }}
 }
