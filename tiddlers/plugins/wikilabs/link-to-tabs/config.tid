@@ -1,0 +1,19 @@
+created: 20190712133008077
+creator: oeyoews
+initial-opacity: 0
+modified: 20220830093342864
+modifier: oeyoews
+show-all-links: none
+show-single-link: inline-block
+title: $:/plugins/wikilabs/link-to-tabs/config
+transition: 0.3
+type: text/vnd.tiddlywiki
+
+This tiddler is used to configure the "Link-to-tabs" plugin behaviour. 
+
+There are 4 fields, which are used by [[$:/plugins/wikilabs/link-to-tabs/styles]] enable and disable the internal links. 
+
+* show-all-links: {{!!show-all-links}}
+* show-single-link: {{!!show-single-link}}
+* initial-opacity: {{!!initial-opacity}}
+* transition time in seconds: {{!!transition}}
