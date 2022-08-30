@@ -1,9 +1,9 @@
 created: 20220828011107715
 creator: oeyoews
-modified: 20220828162851835
+modified: 20220830145952239
 modifier: oeyoews
 tags: 
-title: NeoTw Configuration
+title: neotw/configuration
 type: text/vnd.tiddlywiki
 
 \define time() 

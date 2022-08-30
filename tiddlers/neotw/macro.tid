@@ -1,0 +1,13 @@
+created: 20220830150031545
+creator: oeyoews
+modified: 20220830150807081
+modifier: oeyoews
+tags: $:/tags/Macro
+title: neotw/macro
+type: text/vnd.tiddlywiki
+
+\define neotw-align(align:"center", tiddler)
+	<div align="$align">
+	{{$tiddler$}}
+	</div> // todo: how to parse table
+\end

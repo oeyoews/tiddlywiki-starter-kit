@@ -1,0 +1,11 @@
+created: 20220830145547698
+creator: oeyoews
+modified: 20220830145929015
+modifier: oeyoews
+tags: 
+title: neotw/config-table
+type: text/vnd.tiddlywiki
+
+|''project''|{{$:/config/oeyoews/settings.json##name}}|
+|''username''|{{$:/config/oeyoews/settings.json##username}}|
+|''theme''|{{$:/config/oeyoews/settings.json##theme}}|

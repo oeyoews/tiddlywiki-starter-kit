@@ -1,14 +1,12 @@
 created: 20220728150554607
 creator: oeyoews
-modified: 20220828125610529
+modified: 20220830150748193
 modifier: oeyoews
 tags: 
 title: oeyoews
 type: text/vnd.tiddlywiki
 
-<<reuse-tiddler "NeoTw Configuration">>
----
-<img src="https://cdn.jsdelivr.net/gh/oeyoews/oeyoews@main/profile-3d-contrib/profile-night-rainbow.svg" />
+{{neotw/config-table}}
 
 <!-- badges -->
 <div align="center">
