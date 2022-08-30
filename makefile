@@ -51,6 +51,7 @@ install:
 	@chmod +x ~/.local/bin/$(PKGNAME)
 	@echo "🎉 installed neotw"
 
+# or yay tidgi directly
 install-tidgi:
 	cd tidgi; makepkg; sudo pacman -U *.zst
 
