@@ -1,7 +1,7 @@
 caption: Subtitle Template
 created: 20210611015734693
 creator: @oeyoews
-modified: 20220831023658290
+modified: 20220831052852567
 modifier: oeyoews
 tags: $:/tags/ViewTemplate
 title: $:/core/ui/ViewTemplate/subtitle
@@ -16,10 +16,10 @@ type: text/vnd.tiddlywiki
 <$view field="modifier"/> &ensp; &ensp;
 </$list>
 <$list filter="[all[current]has[created]]">
-📖 &ensp;Created &nbsp;<$view field="created" format="date" template="YYYY-0MM-0DD"/> &ensp; &ensp;
+📖 &ensp;Created &nbsp;<$view field="created" format="date" template="YYYY/0MM/0DD"/> &ensp; &ensp;
 </$list>
 <$list filter="[all[current]has[modified]]">
-🔓 &ensp;Updated &nbsp;<$view field="modified" format="date" template="YYYY-0MM-0DD 0hh:0mm:0ss" />&ensp; &ensp;
+🔓 &ensp;Updated &nbsp;<$view field="modified" format="date" template="YYYY/0MM/0DD 0hh:0mm" />&ensp; &ensp;
 </$list>
 <$list filter="[all[current]has[lapses]]">
 🥤 &ensp;ForgetTimes &nbsp;<$view field="lapses"/> &ensp; &ensp;
