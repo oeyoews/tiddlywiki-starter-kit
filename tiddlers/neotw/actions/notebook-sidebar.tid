@@ -1,9 +1,9 @@
 code-body: yes
 created: 20220518173618961
 creator: oeyoews
-modified: 20220831055818334
+modified: 20220831055928390
 modifier: oeyoews
-tags: $:/actions/StartupActions $:/tags/StartupAction
+tags: $:/tags/StartupAction/Browser
 title: neotw/actions/notebook-sidebar
 type: text/vnd.tiddlywiki
 
