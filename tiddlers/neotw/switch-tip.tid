@@ -1,6 +1,6 @@
 created: 20220830054857671
 creator: oeyoews
-modified: 20220831040442288
+modified: 20220831072318020
 modifier: oeyoews
 tags: 
 title: neotw/switch-tip
@@ -18,6 +18,7 @@ type: text/vnd.tiddlywiki
 
 {{neotw/change-theme-palette}}
 {{neotw/heatmap}}
+{{neotw/mobile-warning}}
 
 <div style="text-align: right;">
 <$button actions=<<help-seen "takeaways">> class="tc-btn-invisible tc-tiddlylink"> 

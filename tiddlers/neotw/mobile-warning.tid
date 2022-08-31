@@ -1,0 +1,13 @@
+created: 20220831070237469
+creator: oeyoews
+modified: 20220831072605974
+modifier: oeyoews
+tags: 
+title: neotw/mobile-warning
+type: text/vnd.tiddlywiki
+
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]"> 
+
+<<.warning
+"If you see this message, that's improve you are look it on mobile; Mobile not support all functions, please open this website on pc" >>
+</$list>
