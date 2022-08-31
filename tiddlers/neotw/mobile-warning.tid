@@ -1,6 +1,6 @@
 created: 20220831070237469
 creator: oeyoews
-modified: 20220831084534205
+modified: 20220831095322230
 modifier: oeyoews
 tags: 
 title: neotw/mobile-warning
@@ -16,6 +16,7 @@ If you see this warning message, it means that you are browsing this website on 
 <div align="right">
 --- @oeyoews
 </div>
+{{neotw/polar-bear}}
 </$list>
 
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]"> 
