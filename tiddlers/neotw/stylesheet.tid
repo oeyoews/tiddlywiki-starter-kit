@@ -1,10 +1,17 @@
 created: 20220826140521100
 creator: oeyoews
-modified: 20220831121539937
+modified: 20220831130158608
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/stylesheet
 type: text/vnd.tiddlywiki
+
+.tc-powered-by-tiddlywiki-banner {
+	position: fixed;
+	right: 1em;
+	bottom: 5px;
+   z-index: 2000;
+}
 
 @media (max-width: 960px) {
 
@@ -21,12 +28,12 @@ type: text/vnd.tiddlywiki
 
 .polarbear {
     position: fixed;
-    bottom: 10px;
+    bottom: 0px;
     height: 100px;
     width: 200px;
     z-index: 2;
     background: url(https://gitlab.com/oeyoews/neotw/raw/main/images/bear.png);
-    animation: bear 0.5s steps(8) infinite, change_pos 4s forwards;
+    animation: bear 0.5s steps(8) infinite, change_pos 8s forwards;
   }
 
   @keyframes bear {
