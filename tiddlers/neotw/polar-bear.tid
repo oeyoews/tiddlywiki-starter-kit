@@ -1,6 +1,6 @@
 created: 20220828031920001
 creator: oeyoews
-modified: 20220831133041453
+modified: 20220831232200713
 modifier: oeyoews
 tags: $:/tags/SideBarSegment
 title: neotw/polar-bear
@@ -12,4 +12,4 @@ type: text/vnd.tiddlywiki
 </div>
 -->
 <div class="polarbear"></div>
-[img width="40px" class="tc-powered-by-tiddlywiki-banner" [neotw/polarsfish]]
+[img width="40px" class="tc-powered-by-tiddlywiki-banner" [$:/favicon.ico]]
