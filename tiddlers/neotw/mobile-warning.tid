@@ -1,6 +1,6 @@
 created: 20220831070237469
 creator: oeyoews
-modified: 20220831095322230
+modified: 20220831114413914
 modifier: oeyoews
 tags: 
 title: neotw/mobile-warning
@@ -22,6 +22,6 @@ If you see this warning message, it means that you are browsing this website on 
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]"> 
 
 {{neotw/change-theme-palette}}
-{{neotw/heatmap}}
+<!-- {{neotw/heatmap}} -->
 
 </$list>

@@ -1,9 +1,9 @@
 caption: Recently added
 created: 20220828022145583
 creator: oeyoews
-list: neotw/iphone-css-not-supported $:/core/ui/ViewTemplate/subtitle neotw/stylesheet [[some websites]] [[schedule sum]] $:/plugins/nico/projectify/ui/dashboard/InboxAndProjects neotw/polar-bear white-vanilla.png $:/config/FileSystemPaths
+list: neotw/awesome-tiddlywiki neotw/iphone-css-not-supported $:/core/ui/ViewTemplate/subtitle neotw/stylesheet [[some websites]] [[schedule sum]] $:/plugins/nico/projectify/ui/dashboard/InboxAndProjects neotw/polar-bear white-vanilla.png $:/config/FileSystemPaths
 list-before: 
-modified: 20220831094631060
+modified: 20220831113746515
 modifier: oeyoews
 tags: $:/tags/Favorites/Folder
 title: $:/favorites/folders/recent
