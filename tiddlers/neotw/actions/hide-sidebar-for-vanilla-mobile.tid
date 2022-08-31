@@ -1,0 +1,13 @@
+created: 20220521171656845
+creator: oeyoews
+modified: 20220831080352561
+modifier: oeyoews
+tags: $:/tags/StartupAction
+title: neotw/actions/hide-sidebar-for-vanilla-mobile
+type: text/vnd.tiddlywiki
+
+<$reveal type="lt" state="$:/info/browser/screen/width" text=690>
+<$action-setfield $tiddler="$:/state/sidebar"
+        $field="text"
+        $value="no"/>
+</$reveal>
