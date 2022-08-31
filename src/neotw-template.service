@@ -3,7 +3,7 @@ Description=NeoTw Service
 
 [Service]
 WorkingDirectory=neotwdir
-ExecStart=/usr/bin/tiddlywiki --listen port=8099 anon-username=oeyoews use-browser-cache=no gzip=yes
+ExecStart=/usr/bin/tiddlywiki --listen port=8099 anon-username=oeyoews use-browser-cache=no gzip=yes root-tiddler=$:/core/save/lazy-all
 
 [Install]
 WantedBy=default.target
