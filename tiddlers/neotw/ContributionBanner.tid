@@ -1,14 +1,14 @@
 created: 20220831034341295
 creator: oeyoews
 list-after: $:/core/ui/EditTemplate/title
-modified: 20220831044410274
+modified: 20220831044513923
 modifier: oeyoews
 tags: $:/tags/EditTemplate
 title: neotw/ContributionBanner
 type: text/vnd.tiddlywiki
 
 \define base-github()
-https://githlab.com/oeyoews/neotw/edit/main/tiddlers/
+https://gitlab.com/oeyoews/neotw/edit/main/tiddlers/
 \end
 
 <$set name="draft-of" value={{{ [<currentTiddler>get[draft.of]] }}}>
