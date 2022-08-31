@@ -1,7 +1,7 @@
 caption: Step 1<br>Syncing
 created: 20220828120245453
 creator: oeyoews
-modified: 20220831040444574
+modified: 20220831053148024
 modifier: oeyoews
 tags: 
 title: GettingStarted
@@ -15,6 +15,6 @@ Visit https://tiddlywiki.com/ to find out more about TiddlyWiki and what it can 
 
 !!! Web Status 
 
-* Click this [[https://oeyoews.github.io/upptime]] to check
+* [[https://oeyoews.github.io/upptime]]
 
 <<reuse-tiddler "homepage footer">>
