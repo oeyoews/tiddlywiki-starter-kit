@@ -1,13 +1,13 @@
 code-body: yes
 created: 20220518173618961
 creator: oeyoews
-modified: 20220831060237110
+modified: 20220831062928619
 modifier: oeyoews
-tags: $:/tags/StartupAction/Browser
+tags: $:/tags/StartupAction/PostRender
 title: neotw/actions/notebook-sidebar
 type: text/vnd.tiddlywiki
 
 \import [[$:/core/ui/PageMacros]] [all[shadows+tiddlers]tag[$:/tags/Macro]!has[draft.of]]
 
-<$reveal type="gteq" state="$:/info/browser/screen/width" text={{{ [{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}removesuffix[px]] }}}>
+<$reveal type="gteq" state="$:/info/browser/screen/width" text="960px">
 <$action-setfield $tiddler="$:/state/notebook-sidebar" $value="yes"/></$reveal>
