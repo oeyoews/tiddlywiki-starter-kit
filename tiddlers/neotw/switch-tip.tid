@@ -1,6 +1,6 @@
 created: 20220830054857671
 creator: oeyoews
-modified: 20220831022254207
+modified: 20220831023251279
 modifier: oeyoews
 tags: 
 title: neotw/switch-tip
@@ -21,7 +21,9 @@ type: text/vnd.tiddlywiki
 {{neotw/heatmap}}
 
 <div style="text-align: right;">
-<$button actions=<<help-seen "takeaways">> class="tc-btn-invisible tc-tiddlylink"> ✅ Dismiss it
+<$button actions=<<help-seen "takeaways">> class="tc-btn-invisible tc-tiddlylink"> 
+{{neotw/checkbox}}
+Dismiss That
 </$button>
 </div>
 

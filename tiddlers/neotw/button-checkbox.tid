@@ -1,0 +1,21 @@
+caption: dismiss
+created: 20220831023753434
+creator: oeyoews
+description: wait des
+modified: 20220831023806501
+modifier: oeyoews
+tags: 
+title: neotw/button-checkbox
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+<$button message="tm-message" tooltip={{$:/language/Buttons/Home/Hint}} aria-label={{$:/language/Buttons/Home/Caption}} class=<<tv-config-toolbar-class>>>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+{{neotw/checkbox}}
+</$list>
+<$list filter="[<tv-config-toolbar-text>match[yes]]">
+<span class="tc-btn-text">
+<$text text={{$:/language/Buttons/Home/Caption}}/>
+</span>
+</$list>
+</$button>
