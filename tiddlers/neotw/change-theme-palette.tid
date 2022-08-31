@@ -1,0 +1,27 @@
+created: 20220826052059730
+creator: TidGiUser
+modified: 20220831020049384
+modifier: oeyoews
+tags: 
+title: neotw/change-theme-palette
+type: text/vnd.tiddlywiki
+
+\define switch-theme()
+<$select tiddler='$:/theme' default="choose avatar">
+<$list filter='[plugin-type[theme]sort[title]]'>
+<option value={{{[<currentTiddler>addprefix[]addsuffix[]]}}}><$view field='name'/></option>
+</$list>
+</$select>
+\end
+
+\define switch-palette()
+<$select tiddler='$:/palette' default="choose avatar">
+<$list filter='[all[shadows+tiddlers]tag[$:/tags/Palette]sort[name]]'>
+<option value={{{[<currentTiddler>addprefix[]addsuffix[]]}}}><$view field='name'/></option>
+</$list>
+</$select>
+\end
+
+|>| Change theme and palette |h
+|[[Palette |$:/palette]]| <<switch-palette>> |
+|[[Theme |$:/core/ui/ControlPanel/Theme]]| <<switch-theme>>|

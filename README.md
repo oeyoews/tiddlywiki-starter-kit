@@ -178,8 +178,9 @@ clean:
 ## Preview
 
 - gh-pages: https://oeyoews.github.io/neotw
-- vercel: https://neotw.vercel.app
 - tiddlyhost: https://neotw.tiddlyhost.com
+- vercel: https://neotw.vercel.app
+- netlify: https://neotw.netlify.app/
 
 ## License
 

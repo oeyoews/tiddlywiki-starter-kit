@@ -1,0 +1,21 @@
+caption: Copy Tiddler Title
+created: 20200419143537510
+creator: soren
+description: Copy the name of this tiddler to the clipboard
+modified: 20220831020227300
+modifier: oeyoews
+tags: $:/tags/ViewToolbar
+title: neotw/copy-title
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+<$button message="tm-copy-to-clipboard" param={{!!title}} tooltip="copy current title" class=<<tv-config-toolbar-class>>>
+	<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+	{{$:/core/images/copy-clipboard}}
+	</$list>
+	<$list filter="[<tv-config-toolbar-text>match[yes]]">
+	<span class="tc-btn-text">
+	<$text text="Demo"/>
+	</span>
+	</$list>
+</$button>
