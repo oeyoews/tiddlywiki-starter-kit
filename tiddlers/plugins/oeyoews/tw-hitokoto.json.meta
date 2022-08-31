@@ -1,12 +1,11 @@
 author: oeyoews
-created: 20220516151359837
-description: Hitokoto TW
-list: readme
-modified: 20220828040555085
-modifier: oeyoews
-name: TW Hitokoto
-packaged-by: Gatha on 26th August 2022, 21:16:03
+created: 20220831025826185
+description: hitokoto for tiddlywiki5
+modified: 20220831030600748
+name: TWH
+packaged-by: Gatha on 31st August 2022, 11:06:02
 plugin-type: plugin
+tags: 
 title: $:/plugins/oeyoews/tw-hitokoto
 type: application/json
-version: v0.0.5
+version: v0.0.7

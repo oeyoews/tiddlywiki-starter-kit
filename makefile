@@ -34,7 +34,7 @@ run-to-the-world:
 # generate index.html(support subwiki, but not build html no include subwiki)
 # note: because use make, so can't read this `tiddlywiki` cmd from current project, recommend install tiddlywiki global, likw `yarn global add tiddlywiki`
 build:
-	@make clean; echo 🛺 cleaned StoryList
+	@make clean; echo 🛺 Cleaning finished
 	@mkdir public
 	@cp -r tiddlers/ tiddlywiki.info public/
 	@cp src/readonlyview.json public/tiddlers/  # enable readonlyview
@@ -43,13 +43,13 @@ build:
 		public/tiddlers/gtd/ \
 		public/tiddlers/trashbin # remove subwiki
 	$(CMD) public --output dist/ --build index  # build
-	@cp src/vercel.json dist/; echo "🎉 generated index.html" # patch
+	@cp src/vercel.json dist/; echo "🎉 Generated index.html" # patch
 
 # install service
 install:
 	@echo "tiddlywiki --listen anon-username='anonymous'" > $(NEOTWBIN)
 	@chmod +x ~/.local/bin/$(PKGNAME)
-	@echo "🎉 installed neotw"
+	@echo "🎉 Installed neotw"
 
 # or yay tidgi directly
 install-tidgi:
