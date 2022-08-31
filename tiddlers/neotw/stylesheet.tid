@@ -1,10 +1,17 @@
 created: 20220826140521100
 creator: oeyoews
-modified: 20220830164705750
+modified: 20220831005140930
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/stylesheet
 type: text/vnd.tiddlywiki
+
+.tc-notification {
+    color: black;
+    border-radius: 5px;
+		/** background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59); */
+		border: 0; 
+}
 
 blockquote {
 	border-left: 3px solid #dfdfdf;
