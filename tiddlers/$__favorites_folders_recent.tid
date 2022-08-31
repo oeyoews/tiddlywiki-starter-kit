@@ -1,9 +1,9 @@
 caption: Recently added
 created: 20220828022145583
 creator: oeyoews
-list: neotw/actions/hide-sidebar-for-vanilla-mobile neotw/style/polar-bear $:/core/ui/ViewTemplate/subtitle neotw/stylesheet [[some websites]] [[schedule sum]] $:/plugins/nico/projectify/ui/dashboard/InboxAndProjects neotw/polar-bear white-vanilla.png $:/config/FileSystemPaths
+list: neotw/style/polar-bear $:/core/ui/ViewTemplate/subtitle neotw/stylesheet [[some websites]] [[schedule sum]] $:/plugins/nico/projectify/ui/dashboard/InboxAndProjects neotw/polar-bear white-vanilla.png $:/config/FileSystemPaths
 list-before: 
-modified: 20220831040912047
+modified: 20220831065122201
 modifier: oeyoews
 tags: $:/tags/Favorites/Folder
 title: $:/favorites/folders/recent

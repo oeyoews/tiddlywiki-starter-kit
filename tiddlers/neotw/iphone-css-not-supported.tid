@@ -1,0 +1,13 @@
+created: 20220831064100653
+creator: oeyoews
+modified: 20220831065516607
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: neotw/iphone-css-not-supported
+type: text/vnd.tiddlywiki
+
+@media only screen and (max-width: 500px) {
+	.nc-bar.nc-bottombar {
+			display: none;
+	}
+}
