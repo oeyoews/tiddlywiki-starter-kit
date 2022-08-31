@@ -1,10 +1,14 @@
 created: 20220821045909565
 creator: oeyoews
-modified: 20220831122019129
+modified: 20220831122840875
 modifier: oeyoews
 tags: 
 title: homepage footer
 type: text/vnd.tiddlywiki
+
+\define url()
+{{$:/info/url/hostname}}: {{$:/info/url/port}}
+\end
 
 \define neotwstatus()
 <$text text=
@@ -51,6 +55,7 @@ type: text/vnd.tiddlywiki
 <hr>
 <div style="font-weight: regular; border-radius: 4px;background:;font-size:60%; padding: 2px 5px 2px;user-select: none;text-align:left;">
 
+<<shield "Url" "<<url>>" red>> 
 <<shield "Screen" "<<screen>>" blue>> 
 <<shield "Status" "<<neotwstatus>>">> 
 <<shield "Doy" "<<doy>>" red>> 
