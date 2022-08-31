@@ -6,6 +6,7 @@
         "tiddlywiki/highlight",
         "tiddlywiki/markdown",
         "tiddlywiki/katex",
+        "tiddlywiki/browser-sniff",
         "tiddlywiki/codemirror",
         "tiddlywiki/codemirror-mode-xml",
         "tiddlywiki/codemirror-mode-markdown",
