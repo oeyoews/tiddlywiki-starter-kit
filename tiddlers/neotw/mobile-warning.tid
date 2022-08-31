@@ -1,6 +1,6 @@
 created: 20220831070237469
 creator: oeyoews
-modified: 20220831114413914
+modified: 20220831115811179
 modifier: oeyoews
 tags: 
 title: neotw/mobile-warning
@@ -13,9 +13,7 @@ type: text/vnd.tiddlywiki
 If you see this warning message, it means that you are browsing this website on your mobile phone; Unfortunately, Due to various reasons such as time, convenience, etc, I will only maintain for pc, so show part of the content here, more For more details, please go to pc to browse this website
 """
 >>
-<div align="right">
---- @oeyoews
-</div>
+<div align="right"> --- @oeyoews </div>
 {{neotw/polar-bear}}
 </$list>
 

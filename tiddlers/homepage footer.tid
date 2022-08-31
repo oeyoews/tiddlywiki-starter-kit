@@ -1,6 +1,6 @@
 created: 20220821045909565
 creator: oeyoews
-modified: 20220831023954852
+modified: 20220831122019129
 modifier: oeyoews
 tags: 
 title: homepage footer
@@ -9,6 +9,11 @@ type: text/vnd.tiddlywiki
 \define neotwstatus()
 <$text text=
 {{{[[$:/plugins/tiddlywiki/tiddlyweb]get[name]else[Online]]}}} >
+\end
+
+\define screen()
+{{$:/info/browser/screen/width}} x
+{{$:/info/browser/screen/height}}
 \end
 
 \define doy() 
@@ -44,8 +49,9 @@ type: text/vnd.tiddlywiki
 \end
 
 <hr>
-<div style="font-weight: regular; border-radius: 4px;background:;font-size:60%; padding: 2px 5px 2px;user-select: none;text-align:center;">
+<div style="font-weight: regular; border-radius: 4px;background:;font-size:60%; padding: 2px 5px 2px;user-select: none;text-align:left;">
 
+<<shield "Screen" "<<screen>>" blue>> 
 <<shield "Status" "<<neotwstatus>>">> 
 <<shield "Doy" "<<doy>>" red>> 
 <<shield "Started" "<<starttime>>" info>> 

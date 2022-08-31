@@ -1,6 +1,6 @@
 created: 20220826052059730
 creator: TidGiUser
-modified: 20220831020049384
+modified: 20220831115826483
 modifier: oeyoews
 tags: 
 title: neotw/change-theme-palette
@@ -23,5 +23,5 @@ type: text/vnd.tiddlywiki
 \end
 
 |>| Change theme and palette |h
-|[[Palette |$:/palette]]| <<switch-palette>> |
+|[[Palette |$:/core/ui/ControlPanel/Palette]]| <<switch-palette>> |
 |[[Theme |$:/core/ui/ControlPanel/Theme]]| <<switch-theme>>|

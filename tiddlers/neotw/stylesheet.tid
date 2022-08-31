@@ -1,10 +1,17 @@
 created: 20220826140521100
 creator: oeyoews
-modified: 20220831094619035
+modified: 20220831121539937
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/stylesheet
 type: text/vnd.tiddlywiki
+
+@media (max-width: 960px) {
+
+.nc-bar.nc-bottombar { display: none; }
+.nc-sidebar { display: none;} 
+
+}
 
 .caticon img { fill: #0A84FF; }
 
