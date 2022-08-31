@@ -1,0 +1,49 @@
+caption: {{$:/plugins/kookma/favorites/images/heart}}{{$:/language/Buttons/Favorites/Caption/Add}}
+created: 20220831020458809
+creator: oeyoews
+description: {{$:/language/Buttons/Favorites/Hint/Add}}
+modified: 20220831020458809
+modifier: oeyoews
+tags: $:/tags/ViewToolbar
+title: $:/plugins/kookma/favorites/ui/buttons/add-remove
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+\import [[$:/plugins/kookma/favorites/macros/definition]]
+
+\define add-this-tiddler() [[$(currentTiddler)$]]+[putfirst[]]
+\define remove-this-tiddler() -[[$(currentTiddler)$]]
+
+\define show-favorites-button(class)
+<$list filter='[<tv-config-toolbar-icons>match[yes]]'>
+<span class="$class$">{{$:/plugins/kookma/favorites/images/heart}}</span>
+</$list>
+<$list filter='[<tv-config-toolbar-text>match[yes]]'>
+<span class='tc-btn-text'><$text text={{$:/language/Buttons/Favorites/Caption/Add}}/></span>
+</$list>
+\end
+
+
+\define add-to-favorites-button()
+ <$button 
+   tooltip={{$:/language/Buttons/Favorites/Hint/Add}} aria-label={{$:/language/Buttons/Favorites/Caption/Add}} 
+   class=<<tv-config-toolbar-class>>>
+     <$action-listops $tiddler=<<recentlyAdded>> $field='list'  $subfilter=<<add-this-tiddler>>/>
+		 <$macrocall $name="show-favorites-button" class="notselected"/>
+ </$button>
+\end 
+
+\define remove-from-favorites-button()
+ <$button 
+   tooltip={{$:/language/Buttons/Favorites/Hint/Remove}} aria-label={{$:/language/Buttons/Favorites/Caption/Remove}} 
+   class=<<tv-config-toolbar-class>> >
+     <$action-listops $tiddler={{{[subfilter<folders>contains<currentTiddler>limit[1]]}}} $field='list' $subfilter=<<remove-this-tiddler>>/>
+		 <$macrocall $name="show-favorites-button" class="selected"/>
+ </$button>
+\end 
+
+<!-- if tiddler is in favorites list, remove it, if tiddler is not in favorites list, add it -->
+<$list filter="[all[current]listed[]tag<foldertagTid>limit[1]]" variable=null 
+       emptyMessage=<<add-to-favorites-button>> >
+<<remove-from-favorites-button>>
+</$list>
