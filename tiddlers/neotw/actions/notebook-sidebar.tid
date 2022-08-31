@@ -1,0 +1,20 @@
+code-body: yes
+created: 20220518173618961
+creator: oeyoews
+modified: 20220831055818334
+modifier: oeyoews
+tags: $:/actions/StartupActions $:/tags/StartupAction
+title: neotw/actions/notebook-sidebar
+type: text/vnd.tiddlywiki
+
+\import [[$:/core/ui/PageMacros]] [all[shadows+tiddlers]tag[$:/tags/Macro]!has[draft.of]]
+
+<$action-sendmessage $message="tm-notify" $param="FishingZenMode"/>
+
+<!-- bug: just only open or close sidebar in phone -->
+<$reveal type="lt" state="$:/info/browser/screen/width" text={{{ [{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}removesuffix[px]] }}}>
+<$action-setfield $tiddler="$:/state/notebook-sidebar" $field="text" $value="no"/>
+</$reveal>
+
+<$reveal type="gteq" state="$:/info/browser/screen/width" text={{{ [{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}removesuffix[px]] }}}>
+<$action-setfield $tiddler="$:/state/notebook-sidebar" $value="yes"/></$reveal>
