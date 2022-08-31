@@ -1,12 +1,12 @@
 created: 20220828031920001
 creator: oeyoews
-modified: 20220830154239260
+modified: 20220831035756952
 modifier: oeyoews
 tags: $:/tags/SideBarSegment
 title: neotw/polar-bear
 type: text/vnd.tiddlywiki
 
 <div style="position:absolute;opacity:0.15;user-select:none;pointer-events:none;width:10%;bottom:0%;right:50%;"class="caticon cat-move">
-	{{left-cat}}
+[img width=128 [white-vanilla.png]]
 </div>
 <div class="polarbear"></div>

@@ -1,10 +1,10 @@
 caption: Scrollbar
 created: 20220212200401023
 creator: oeyoews
-modified: 20220830061424509
+modified: 20220831040030941
 modifier: oeyoews
 tags: $:/tags/Stylesheet
-title: $:/plugins/oeyoews/tw-scrollbar/styles
+title: neotw/scrollbar
 type: text/vnd.tiddlywiki
 
 \rules only filteredtranscludeinline transcludeinline macrodef macrocallinline html
