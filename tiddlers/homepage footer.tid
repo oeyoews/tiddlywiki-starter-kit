@@ -1,13 +1,13 @@
 created: 20220821045909565
 creator: oeyoews
-modified: 20220831122840875
+modified: 20220831124251868
 modifier: oeyoews
 tags: 
 title: homepage footer
 type: text/vnd.tiddlywiki
 
 \define url()
-{{$:/info/url/hostname}}: {{$:/info/url/port}}
+{{$:/info/url/full}}
 \end
 
 \define neotwstatus()
