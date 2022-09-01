@@ -1,6 +1,6 @@
 created: 20220831235345221
 creator: oeyoews
-modified: 20220901001901412
+modified: 20220901034904768
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/style/chatbox
@@ -11,9 +11,10 @@ type: text/vnd.tiddlywiki
         position: relative;
         left: 10px;
         display: table;
-        text-align: center;
+        text-align: left;
         border-radius: 7px;
         background-color: #fc3;
+				padding: 10px;
       }
       .neotw-right {
         /*使左右的对话框分开*/
