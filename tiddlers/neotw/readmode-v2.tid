@@ -1,0 +1,32 @@
+created: 20220901132657061
+creator: vanilla
+modified: 20220901232546023
+modifier: oeyoews
+tags: 
+title: neotw/readmode-v2
+type: text/vnd.tiddlywiki
+
+\define help-wanted(key) [[$:/state/$key$]is[tiddler]then[]else[yes]is[blank]]
+\define help-seen(key) <$action-setfield $tiddler="$:/state/$key$" text=""/>
+\define help-delete(key) <$action-deletetiddler $tiddler="$:/state/$key$" />
+
+
+<$list filter="[]" >
+<$list filter="[]" variable=_>
+<$fieldmangler tiddler="neotw/readonly">
+<$button actions=<<help-seen "readmode">> >
+<<symbol "disable readmode" "dot-off">>
+<$action-sendmessage $message="tm-remove-tag" $param="$:/tags/Stylesheet"/>
+</$button>
+</$fieldmangler>
+</$list>
+</$list>
+
+<$list filter=<<help-wanted "readmode">> variable=_>
+<$fieldmangler tiddler="neotw/readonly">
+<$button actions=<<help-delete "readmode">> >
+<<symbol "enable readmode" "dot-online">>
+<$action-sendmessage $message="tm-add-tag" $param="$:/tags/Stylesheet"/>
+</$button>
+</$fieldmangler>
+</$list>
