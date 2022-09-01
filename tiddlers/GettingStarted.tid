@@ -1,7 +1,7 @@
 caption: Step 1<br>Syncing
 created: 20220828120245453
 creator: oeyoews
-modified: 20220901083747082
+modified: 20220901084636504
 modifier: oeyoews
 tags: 
 title: GettingStarted
@@ -14,5 +14,6 @@ type: text/vnd.tiddlywiki
 <<symbol "Visit https://tiddlywiki.com/ to find out more about TiddlyWiki and what it can do.">>
 !!! Web Status 
 
-<<symbol "[[https://oeyoews.github.io/upptime]]">>
+<<symbol "https://oeyoews.github.io/upptime" arrowright>>
+
 {{homepage footer}}
