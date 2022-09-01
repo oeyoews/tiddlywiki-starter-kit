@@ -1,6 +1,6 @@
 created: 20220830102023755
 creator: oeyoews
-modified: 20220831151620184
+modified: 20220901024740546
 modifier: oeyoews
 tags: 
 title: neotw/CHANGELOG
@@ -19,3 +19,4 @@ type: text/vnd.tiddlywiki
 * ''2022/08/31 00:52:15'' add timestamp format
 * ''2022/08/31 15:47:13'' not support mobile style, add warning
 * ''2022/08/31 23:15:56'' use lazy-load, util now, this reuse-tiddler macro not work
+* ''2022/09/01 10:47:32'' add tiddlywiki-bullets
