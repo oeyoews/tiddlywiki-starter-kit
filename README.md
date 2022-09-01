@@ -6,7 +6,7 @@
 
 <hr>
 
-<img src="./images/white-vanilla.png" height=128 alt="cat(gitlab not support
+<img src="./img/white-vanilla.png" height=128 alt="cat(gitlab not support
 preview repo svg?)">
 
 </div>
@@ -40,7 +40,7 @@ preview repo svg?)">
 
 ## ShowCases
 
-<img src="images/02.png"/>
+<img src="img/02.png"/>
 
 ## FileStruct
 
