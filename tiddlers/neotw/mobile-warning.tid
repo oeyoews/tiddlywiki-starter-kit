@@ -1,29 +1,39 @@
 created: 20220831070237469
 creator: oeyoews
-modified: 20220901034644050
+modified: 20220901053138334
 modifier: oeyoews
-tags: 
+tags: $:/tags/StartupAction
 title: neotw/mobile-warning
 type: text/vnd.tiddlywiki
 
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]"> 
 
 <div class="neotw-left">
+
 <div style="color:#999" align="right">
 <<now "YYYY-0MM-0DD 0hh:0mm:0ss">> {{neotw/username}}
 </div>
+
 """<<symbol "If you see this warning message, it means that you are browsing this website on your mobile phone; Unfortunately, Due to various reasons such as time, convenience, etc, I will only maintain for pc, so show part of the content here, For more details, please go pc to browse this website
 " "dot-status" >> """
+
 <div align="right">  
-{{$:/UserPanel}}
+	{{$:/UserPanel}}
 </div>
+
 </div>
+
 {{neotw/polar-bear}}
+
+<$action-setfield $tiddler="$:/themes/nico/notebook/options/stickytitles" text="no"/>
+
 </$list>
 
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]"> 
 
 {{neotw/change-theme-palette}}
-<!-- {{neotw/heatmap}} -->
+<!-- {{neotw/heatmap}} 
+<$action-setfield $tiddler="$:/themes/nico/notebook/options/stickytitles" text="yes"/>
+-->
 
 </$list>
