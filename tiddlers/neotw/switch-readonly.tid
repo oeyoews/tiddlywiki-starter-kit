@@ -1,0 +1,12 @@
+created: 20220901115424623
+creator: oeyoews
+modified: 20220901120723937
+modifier: oeyoews
+tags: 
+title: neotw/switch-readonly
+type: text/vnd.tiddlywiki
+
+<$fieldmangler tiddler="neotw/readonly">
+<$button message="tm-add-tag" param="$:/tags/Stylesheet"><<symbol "enable readmode">></$button>
+<$button message="tm-remove-tag" param="$:/tags/Stylesheet"><<symbol "disable readmode" "dot-status">></$button>
+</$fieldmangler>
