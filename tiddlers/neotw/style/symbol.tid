@@ -1,52 +1,57 @@
 created: 20220901012627097
 creator: oeyoews
-modified: 20220901025908536
+modified: 20220901084331846
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/style/symbol
 type: text/vnd.tiddlywiki
 
 .neotw-dot-status:before {
-		content: "●";
+		content: "● ";
 		color: orange;
 }
 
 .neotw-dot-list:before {
-		content: "●";
+		content: "● ";
 		color: #7d7dfc;
 }
 
 .neotw-bingo:before {
-		content: "✓";
+		content: "✓ ";
 		color: #008000;
 }
 
 .neotw-error:before {
-		content: "𝗫";
+		content: "𝗫 ";
 		color: #e5534b;
 }
 
 .neotw-snow:before {
-		content: "✿";
+		content: "✿ ";
 		color: #2AC2DE;
 }
 
 .neotw-bicycle:before {
-		content: "◉";
+		content: "◉ ";
 		color: #7DCFFF;
 }
 
-.neotw-test:before {
-		content: "☷";
+.neotw-six:before {
+		content: "☷ ";
 		color: #7DCFFF;
 }
 
-.neotw-dot-right:before {
-		content: "»";
+.neotw-arrowright:before {
+		content: "» ";
 		color: #7d7dfc;
 }
 
-.neotw-dot-left:before {
-		content: "«";
+.neotw-arrowleft:before {
+		content: "« ";
 		color: #7d7dfc;
+}
+
+.neotw-menu:before {
+		content: "☰ ";
+		color: #0ea6ff;
 }

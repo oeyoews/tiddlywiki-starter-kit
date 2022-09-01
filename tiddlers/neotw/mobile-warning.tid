@@ -1,6 +1,6 @@
 created: 20220831070237469
 creator: oeyoews
-modified: 20220901082534275
+modified: 20220901083633609
 modifier: oeyoews
 tags: $:/tags/StartupAction
 title: neotw/mobile-warning
@@ -12,8 +12,8 @@ type: text/vnd.tiddlywiki
 <<now "YYYY-0MM-0DD 0hh:0mm:0ss">> {{neotw/username}}
 </div>
 
-"""<<symbol "If you see this warning message, it means that you are browsing this website on your mobile phone; Unfortunately, Due to various reasons such as time, convenience, etc, I will only maintain for pc, so show part of the content here, For more details, please go pc to browse this website
-" "dot-status" >> """
+<<symbol "If you see this warning message, it means that you are browsing this website on your mobile phone; Unfortunately, Due to various reasons such as time, convenience, etc, I will only maintain for pc, so show part of the content here, For more details, please go pc to browse this website
+" "dot-status" >> 
 
 <<layout {{$:/plugins/oeyoews/aboutme/core}} right>>
 

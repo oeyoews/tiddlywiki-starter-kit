@@ -1,6 +1,6 @@
 created: 20220901020012643
 creator: oeyoews
-modified: 20220901055652436
+modified: 20220901084159390
 modifier: oeyoews
 tags: 
 title: neotw/bullets
@@ -24,8 +24,9 @@ type: text/vnd.tiddlywiki
 
 !!! test
 
-# <<symbol "test" test>>
-# <<symbol "right" dot-right>>
+# <<symbol "test" six>>
+# <<symbol "right" arrowright>>
+# <<symbol "menu" menu>>
 
 ---
 Inspired by [[org-superstar|https://github.com/integral-dw/org-superstar-mode/blob/master/DEMO.org]] [[neorg|https://github.com/nvim-neorg/neorg]]
