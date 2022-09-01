@@ -1,6 +1,6 @@
 created: 20220831070237469
 creator: oeyoews
-modified: 20220901001829626
+modified: 20220901002309395
 modifier: oeyoews
 tags: 
 title: neotw/mobile-warning
@@ -14,7 +14,7 @@ type: text/vnd.tiddlywiki
 </div>
 <<.warning
 """
-If you see this warning message, it means that you are browsing this website on your mobile phone; Unfortunately, Due to various reasons such as time, convenience, etc, I will only maintain for pc, so show part of the content here, more For more details, please go to pc to browse this website
+If you see this warning message, it means that you are browsing this website on your mobile phone; Unfortunately, Due to various reasons such as time, convenience, etc, I will only maintain for pc, so show part of the content here, For more details, please go pc to browse this website
 """
 >>
 <div align="right">  
