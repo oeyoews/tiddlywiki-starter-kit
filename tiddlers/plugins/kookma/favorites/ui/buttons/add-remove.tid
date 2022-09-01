@@ -1,8 +1,8 @@
 caption: {{$:/plugins/kookma/favorites/images/heart}}{{$:/language/Buttons/Favorites/Caption/Add}}
-created: 20220831020458809
-creator: oeyoews
+created: 20220901031443054
+creator: vanilla
 description: {{$:/language/Buttons/Favorites/Hint/Add}}
-modified: 20220831020458809
+modified: 20220901031715142
 modifier: oeyoews
 tags: $:/tags/ViewToolbar
 title: $:/plugins/kookma/favorites/ui/buttons/add-remove
@@ -30,6 +30,7 @@ type: text/vnd.tiddlywiki
    class=<<tv-config-toolbar-class>>>
      <$action-listops $tiddler=<<recentlyAdded>> $field='list'  $subfilter=<<add-this-tiddler>>/>
 		 <$macrocall $name="show-favorites-button" class="notselected"/>
+		 <$action-sendmessage $message="tm-notify" $param="$:/language/Buttons/Favorites/Hint/Add"/>
  </$button>
 \end 
 
@@ -39,6 +40,7 @@ type: text/vnd.tiddlywiki
    class=<<tv-config-toolbar-class>> >
      <$action-listops $tiddler={{{[subfilter<folders>contains<currentTiddler>limit[1]]}}} $field='list' $subfilter=<<remove-this-tiddler>>/>
 		 <$macrocall $name="show-favorites-button" class="selected"/>
+		 <$action-sendmessage $message="tm-notify" $param="$:/language/Buttons/Favorites/Hint/Remove"/>
  </$button>
 \end 
 
