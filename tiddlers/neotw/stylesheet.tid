@@ -1,6 +1,6 @@
 created: 20220826140521100
 creator: oeyoews
-modified: 20220831130158608
+modified: 20220901101131475
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/stylesheet
@@ -32,7 +32,7 @@ type: text/vnd.tiddlywiki
     height: 100px;
     width: 200px;
     z-index: 2;
-    background: url(https://gitlab.com/oeyoews/neotw/raw/main/images/bear.png);
+    background: url(https://gitlab.com/oeyoews/neotw/raw/main/static/bear.png);
     animation: bear 0.5s steps(8) infinite, change_pos 8s forwards;
   }
 
