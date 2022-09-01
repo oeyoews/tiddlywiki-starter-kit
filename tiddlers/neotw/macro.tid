@@ -1,6 +1,6 @@
 created: 20220830150031545
 creator: oeyoews
-modified: 20220830150807081
+modified: 20220901102140502
 modifier: oeyoews
 tags: $:/tags/Macro
 title: neotw/macro
@@ -9,5 +9,12 @@ type: text/vnd.tiddlywiki
 \define neotw-align(align:"center", tiddler)
 	<div align="$align">
 	{{$tiddler$}}
-	</div> // todo: how to parse table
+	</div> 
+\end
+
+\define details(text:"", summary:"details")
+<details>
+<summary>$summary$</summary>
+$text$
+</details>
 \end

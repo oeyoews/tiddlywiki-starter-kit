@@ -1,6 +1,6 @@
 created: 20220901020012643
 creator: oeyoews
-modified: 20220901090056969
+modified: 20220901102256550
 modifier: oeyoews
 tags: 
 title: neotw/bullets
@@ -37,4 +37,8 @@ type: text/vnd.tiddlywiki
 <<symbol demo "trigram">>
 
 ---
+!!! showcases
+
+<<details "[img [https://gitlab.com/oeyoews/neotw/raw/main/static/neorg-bullets.png]]" "neorg-example"
+>>
 Inspired by [[org-superstar|https://github.com/integral-dw/org-superstar-mode/blob/master/DEMO.org]] [[neorg|https://github.com/nvim-neorg/neorg]]
