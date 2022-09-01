@@ -1,0 +1,13 @@
+created: 20220901022255643
+creator: oeyoews
+modified: 20220901022755128
+modifier: oeyoews
+tags: $:/tags/Macro
+title: neotw/macro/layout
+type: text/vnd.tiddlywiki
+
+\define layout(text, layout:center)
+	<div style="text-align:$layout$">
+	$text$
+	</div>
+\end

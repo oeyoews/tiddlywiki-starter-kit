@@ -1,0 +1,30 @@
+created: 20220901020012643
+creator: oeyoews
+modified: 20220901023343442
+modifier: oeyoews
+tags: 
+title: neotw/bullets
+type: text/vnd.tiddlywiki
+
+!! tiddlywiki-bullets
+
+# <<symbol "There are no two identical snowflakes in the world, No two snowflakes are exactly the same" snow>>
+# <<symbol  bicycle "bingo">>
+
+---
+!! tiddlywiki-status
+
+# <<symbol error "error">>
+# <<symbol "show status" dot-status>>
+# <<symbol  "This is a bingo" "bingo">>
+
+!! tiddlywiki-list
+
+# <<symbol "This is a default list">>
+
+!!! test
+
+# <<symbol "test" test>>
+
+---
+Inspired by [[org-superstar|https://github.com/integral-dw/org-superstar-mode/blob/master/DEMO.org]] [[neorg|https://github.com/nvim-neorg/neorg]]
