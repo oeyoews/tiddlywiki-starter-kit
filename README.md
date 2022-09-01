@@ -50,6 +50,7 @@ preview repo svg?)">
 │   ├──📁builit-plugins
 │   └──📁config
 └─ 📝tiddlywiki.info
+# This structure may not be up to date
 ```
 
 ## Install
@@ -138,7 +139,7 @@ install-service:
 # changed
 reload-service:
 	$(SERVICECMD) --user daemon-reload
-# use hight color
+# use highlight color
 # maybe should start byhand firstly
 enable:
 	$(SERVICECMD) enable --user $(SERVICEFILE)

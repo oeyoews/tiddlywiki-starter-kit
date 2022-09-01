@@ -1,0 +1,16 @@
+caption: repo button
+created: 20220722065118691
+creator: oeyoews
+description: repo button
+list-after: 
+modified: 20220901112702302
+modifier: oeyoews
+tags: $:/tags/PageControls
+title: neotw/repo-button
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+<$button tooltip="🏡 jump to repo" aria-label="GRB" class=<<tv-config-toolbar-class>>>
+<a href="https://gitlab.com/oeyoews/neotw" target="_blank">
+{{$:/images/gitlab}}</a>
+</$button>

@@ -1,9 +1,0 @@
-created: 20220722065923656
-creator: oey
-modified: 20220828040555085
-modifier: oeyoews
-title: $:/plugins/oeyoews/gh-repo-btn/link-to-img
-type: text/vnd.tiddlywiki
-
-<a href={{{[[$:/plugins/oeyoews/gh-repo-btn/github-address]get[text]else[https://github.com/oeyoews/tw5]]}}} target="_blank">
-{{$:/images/gitlab}}</a>

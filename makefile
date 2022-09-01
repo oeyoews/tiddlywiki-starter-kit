@@ -61,7 +61,7 @@ install-service:
 	@mv -i $(SERVICEFILE) $(SERVICETARGETFILE)
 	@echo "🎉 $(SERVICETARGETFILE) file has installed"
 
-# use hight color
+# use highlight color
 # maybe should start byhand firstly
 reload-service:
 	$(SERVICECMD) --user daemon-reload
