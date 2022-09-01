@@ -1,6 +1,6 @@
 created: 20220901132657061
 creator: vanilla
-modified: 20220901232546023
+modified: 20220901232743412
 modifier: oeyoews
 tags: 
 title: neotw/readmode-v2
@@ -21,7 +21,6 @@ type: text/vnd.tiddlywiki
 </$fieldmangler>
 </$list>
 </$list>
-
 <$list filter=<<help-wanted "readmode">> variable=_>
 <$fieldmangler tiddler="neotw/readonly">
 <$button actions=<<help-delete "readmode">> >
