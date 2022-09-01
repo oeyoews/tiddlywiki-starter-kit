@@ -1,6 +1,6 @@
 created: 20220830054857671
 creator: oeyoews
-modified: 20220901052915519
+modified: 20220901055623846
 modifier: oeyoews
 tags: 
 title: neotw/switch-tip
@@ -20,7 +20,7 @@ type: text/vnd.tiddlywiki
 
 <div style="text-align: right;">
 <$button actions=<<help-seen "takeaways">> class="tc-btn-invisible tc-tiddlylink"> 
-<<symbol "Dismiss That" dot-status>>
+<<symbol "Dismiss That" bingo>>
 </$button>
 </div>
 
