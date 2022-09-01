@@ -1,7 +1,7 @@
 caption: Step 1<br>Syncing
 created: 20220828120245453
 creator: oeyoews
-modified: 20220901121854695
+modified: 20220901161648235
 modifier: oeyoews
 tags: 
 title: GettingStarted
@@ -10,8 +10,6 @@ type: text/vnd.tiddlywiki
 {{neotw/switch-tip}}
 
 !!! <<.tip "Welcome to {{$:/SiteTitle}}" >> 
-
-<<symbol "Visit https://tiddlywiki.com/ to find out more about TiddlyWiki and what it can do.">>
 
 !!! Web Status 
 
