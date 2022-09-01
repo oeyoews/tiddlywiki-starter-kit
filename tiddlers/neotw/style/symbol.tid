@@ -1,13 +1,34 @@
 created: 20220901012627097
 creator: oeyoews
-modified: 20220901084331846
+modified: 20220901085918435
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/style/symbol
 type: text/vnd.tiddlywiki
 
+.neotw-type:before {
+		content: "⁋ ";
+		color: orange;
+}
+
+.neotw-trigram:before {
+		content: "☯ ";
+		color: orange;
+}
+
 .neotw-dot-status:before {
 		content: "● ";
+		color: orange;
+}
+
+.neotw-star:before {
+		content: "✯ ";
+		color: red;
+}
+
+
+.neotw-edit:before {
+		content: "✎ ";
 		color: orange;
 }
 
@@ -28,6 +49,11 @@ type: text/vnd.tiddlywiki
 
 .neotw-snow:before {
 		content: "✿ ";
+		color: #2AC2DE;
+}
+
+.neotw-snow-virtual:before {
+		content: "❀ ";
 		color: #2AC2DE;
 }
 
