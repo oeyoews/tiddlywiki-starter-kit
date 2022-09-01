@@ -36,7 +36,6 @@ run-to-the-world:
 build:
 	@mkdir public
 	@cp -r tiddlers/ tiddlywiki.info public/
-	@cp src/readonlyview.json public/tiddlers/  # enable readonlyview
 	@rm -rf \
 		public/tiddlers/subwiki \
 		public/tiddlers/gtd/ \

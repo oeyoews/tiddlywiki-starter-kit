@@ -1,9 +1,9 @@
 created: 20220901062635687
 creator: oeyoews
-modified: 20220901063851039
+modified: 20220901064300909
 modifier: oeyoews
 tags: $:/tags/Stylesheet
-title: New Tiddler 2
+title: neotw/readonly
 type: text/vnd.tiddlywiki
 
 <$list filter="[{$:/info/url/protocol}prefix[https]]">
