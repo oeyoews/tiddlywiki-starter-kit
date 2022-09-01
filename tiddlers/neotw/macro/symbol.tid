@@ -1,12 +1,13 @@
 created: 20220901014316770
 creator: oeyoews
-modified: 20220901023312570
+modified: 20220901083007750
 modifier: oeyoews
 tags: $:/tags/Macro
 title: neotw/macro/symbol
 type: text/vnd.tiddlywiki
 
 \define symbol(text, symbol:dot-list)
+\whitespace trim
 	<div class="neotw-$symbol$">
 		$text$
 	</div>

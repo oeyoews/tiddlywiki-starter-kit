@@ -1,6 +1,6 @@
 created: 20220831070237469
 creator: oeyoews
-modified: 20220901065309197
+modified: 20220901082534275
 modifier: oeyoews
 tags: $:/tags/StartupAction
 title: neotw/mobile-warning
@@ -22,6 +22,7 @@ type: text/vnd.tiddlywiki
 {{neotw/polar-bear}}
 
 <$action-setfield $tiddler="$:/themes/nico/notebook/options/stickytitles" text="no"/>
+
 <$action-setfield $tiddler="$:/config/Tiddlers/TitleLinks" text="no"/>
 
 </$list>
