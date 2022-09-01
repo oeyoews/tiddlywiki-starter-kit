@@ -1,0 +1,50 @@
+created: 20220831235345221
+creator: oeyoews
+modified: 20220901000803336
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: neotw/style/chatbox
+type: text/vnd.tiddlywiki
+
+.neotw-left, .neotw-right {
+        min-height: 60px;
+        position: relative;
+        left: 10px;
+        display: table;
+        text-align: center;
+        border-radius: 7px;
+        background-color: #fc3;
+      }
+      .neotw-right {
+        /*使左右的对话框分开*/
+        top: 20px;
+        left: 150px;
+        background-color: #9eea6a;
+      }
+      .neotw-left > p,
+      .neotw-right > p {
+        /*使内容居中*/
+        display: table-cell;
+        vertical-align: middle;
+        padding: 0 10px;
+      }
+      .neotw-left:before,
+      .neotw-right:after {
+        /*用伪类写出小三角形*/
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border: 16px solid transparent;
+        position: absolute;
+        top: 11px;
+      }
+      /*分别给左右两边的小三角形定位*/
+      .neotw-left:before {
+        border-right: 16px solid #fc3;
+        left: -30px;
+      }
+      .neotw-right:after {
+        border-left: 16px solid #9eea6a;
+        right: -30px;
+      }
