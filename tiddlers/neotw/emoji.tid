@@ -1,6 +1,6 @@
 created: 20220902155534733
 creator: oeyoews
-modified: 20220902160704047
+modified: 20220902161910376
 modifier: oeyoews
 tags: 
 title: neotw/emoji
@@ -12,6 +12,12 @@ type: text/vnd.tiddlywiki
 
 ; rocket 
 <<emoji>> default is rocket
+
+; shower 
+<<emoji shower>> default is rocket
+
+; traffic 
+<<emoji traffic>> default is rocket
 
 ; tada
 <<emoji tada>> this is a tada emoji

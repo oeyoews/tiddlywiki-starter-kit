@@ -1,35 +1,47 @@
 created: 20220902154818583
 creator: oeyoews
-modified: 20220902155723402
+modified: 20220902161841858
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/style/emoji
 type: text/vnd.tiddlywiki
 
-.neotw-trigram:before {
-		content: "☯ ";
-}
-
 .neotw-rocket:before {
-		content: "🚀 ";
+		content: "🚀";
 }
 
-.neotw-danger:before {
-		content: "☠ ";
+.neotw-shower:before {
+		content: "🚿";
 }
 
-.neotw-warn:before {
-		content: "⚠ ";
+.neotw-helicopter:before {
+		content: "🚁";
+}
+
+.neotw-trigram:before {
+		content: "☯";
+}
+
+.neotw-traffic:before {
+		content: "🚦";
 }
 
 .neotw-hourglass:before {
-		content: "⌛ ";
-}
-
-.neotw-keyboard:before {
-		content: "⌨ ";
+		content: "⌛";
 }
 
 .neotw-tada:before {
-		content: "🎉 ";
+		content: "🎉";
+}
+
+.neotw-keyboard:before {
+		content: "⌨";
+}
+
+.neotw-danger:before {
+		content: "☠";
+}
+
+.neotw-warn:before {
+		content: "⚠";
 }
