@@ -1,7 +1,7 @@
 caption: Step 1<br>Syncing
 created: 20220828120245453
 creator: oeyoews
-modified: 20220902020315633
+modified: 20220902033413309
 modifier: oeyoews
 tags: 
 title: GettingStarted
@@ -15,4 +15,5 @@ type: text/vnd.tiddlywiki
 
 <<symbol "https://oeyoews.github.io/upptime" arrowright>>
 
+{{neotw/restore-button}}
 {{homepage footer}}

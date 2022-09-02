@@ -1,0 +1,18 @@
+created: 20220902031815530
+creator: oeyoews
+modified: 20220902033115829
+modifier: oeyoews
+tags: 
+title: neotw/restore-button
+type: text/vnd.tiddlywiki
+
+\define help-delete(key) <$action-deletetiddler $tiddler="$:/state/seen/$key$" />
+
+\define restore-button()
+<$fieldmangler tiddler="neotw/style/readonly"> <$button actions=<<help-delete "takeaways">> >
+<<symbol "restore button" "dot-status">> 
+</$button>
+</$fieldmangler>
+\end
+
+<<layout "<<restore-button>>" "right" >>
