@@ -1,12 +1,18 @@
 created: 20220831070237469
 creator: oeyoews
-modified: 20220901083633609
+modified: 20220902001240610
 modifier: oeyoews
-tags: $:/tags/StartupAction
+tags: $:/tags/StartupAction $:/tags/Stylesheet
 title: neotw/mobile-warning
 type: text/vnd.tiddlywiki
 
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]"> 
+
+.nc-bar.nc-bottombar { display: none; }
+.nc-sidebar { display: none;} 
+
+}
+
 <div class="neotw-left">
 <div style="color:red" align="right">
 <<now "YYYY-0MM-0DD 0hh:0mm:0ss">> {{neotw/username}}
@@ -26,7 +32,6 @@ type: text/vnd.tiddlywiki
 <$action-setfield $tiddler="$:/config/Tiddlers/TitleLinks" text="no"/>
 
 </$list>
-
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]"> 
 
 {{neotw/change-theme-palette}}
