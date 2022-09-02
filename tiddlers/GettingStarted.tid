@@ -1,13 +1,15 @@
 caption: Step 1<br>Syncing
 created: 20220828120245453
 creator: oeyoews
-modified: 20220902033413309
+modified: 20220902034838088
 modifier: oeyoews
 tags: 
 title: GettingStarted
 type: text/vnd.tiddlywiki
 
 {{neotw/switch-tip}}
+
+{{$:/info/url/protocol}}
 
 !!! <<.tip "Welcome to {{$:/SiteTitle}}" >> 
 
