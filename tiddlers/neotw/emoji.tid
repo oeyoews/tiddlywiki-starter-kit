@@ -1,0 +1,28 @@
+created: 20220902155534733
+creator: oeyoews
+modified: 20220902160251844
+modifier: oeyoews
+tags: 
+title: neotw/emoji
+type: text/vnd.tiddlywiki
+
+<<.preamble """<<emoji tada>> this is a new, just resolve copy emoji trouble""">>
+
+!! example
+
+; rocket 
+<<emoji>> default is rocket
+
+; tada
+<<emoji tada>> this is a tada emoji
+
+<<emoji hourglass>> bingo
+
+; list
+<<emoji dot-list>> still can use bullets for symbol macro
+
+<<emoji dot-status>> status
+
+<<emoji bingo>> bingo
+
+<<emoji menu>> menu

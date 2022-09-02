@@ -1,6 +1,6 @@
 created: 20220901014316770
 creator: oeyoews
-modified: 20220901161425303
+modified: 20220902155007265
 modifier: oeyoews
 tags: $:/tags/Macro
 title: neotw/macro/symbol
@@ -12,3 +12,4 @@ type: text/vnd.tiddlywiki
 		$text$
 	</div>
 \end
+

@@ -1,0 +1,12 @@
+created: 20220902154919557
+creator: oeyoews
+modified: 20220902154953863
+modifier: oeyoews
+tags: $:/tags/Macro
+title: neotw/macro/emoji
+type: text/vnd.tiddlywiki
+
+\define emoji(symbol:rocket)
+\whitespace trim
+	<span class="neotw-$symbol$"></span>
+\end

@@ -1,0 +1,35 @@
+created: 20220902154818583
+creator: oeyoews
+modified: 20220902155723402
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: neotw/style/emoji
+type: text/vnd.tiddlywiki
+
+.neotw-trigram:before {
+		content: "☯ ";
+}
+
+.neotw-rocket:before {
+		content: "🚀 ";
+}
+
+.neotw-danger:before {
+		content: "☠ ";
+}
+
+.neotw-warn:before {
+		content: "⚠ ";
+}
+
+.neotw-hourglass:before {
+		content: "⌛ ";
+}
+
+.neotw-keyboard:before {
+		content: "⌨ ";
+}
+
+.neotw-tada:before {
+		content: "🎉 ";
+}

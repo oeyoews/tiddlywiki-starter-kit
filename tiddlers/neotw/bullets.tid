@@ -1,10 +1,12 @@
 created: 20220901020012643
 creator: oeyoews
-modified: 20220902034159756
+modified: 20220902155531517
 modifier: oeyoews
 tags: 
 title: neotw/bullets
 type: text/vnd.tiddlywiki
+
+<<.preamble "<<emoji warn>> this bullet have deprecated, but still keep, new bullets substitle is emoji here">>
 
 !! tiddlywiki-bullets
 
@@ -24,18 +26,24 @@ type: text/vnd.tiddlywiki
 
 !!! test
 
-# <<symbol "test" six>>
-# <<symbol "right" arrowright>>
-# <<symbol "menu" menu>>
-
-!!! more
-
-<<symbol demo "snow-virtual">>
-<<symbol demo "edit">>
-<<symbol demo "star">>
-<<symbol demo "type">>
-<<symbol demo "trigram">>
-<<symbol demo "restore">>
+<<details """
+	<<symbol "test" six>>
+	<<symbol "right" arrowright>>
+	<<symbol "menu" menu>>
+	<<symbol demo "keyboard">>
+	<<symbol demo "snow-virtual">>
+	<<symbol demo "edit">>
+	<<symbol demo "star">>
+	<<symbol demo "type">>
+	<<symbol demo "trigram">>
+	<<symbol demo "restore">>
+	<<symbol demo "warn">>
+	<<symbol demo "music">>
+	<<symbol demo "danger">>
+	<<symbol demo "circle">>
+	<<symbol demo "square-circle">>
+	<<symbol demo "hourglass">>
+""" more>>
 
 ---
 !!! showcases
