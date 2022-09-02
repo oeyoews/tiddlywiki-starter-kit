@@ -1,0 +1,13 @@
+created: 20220902171128350
+creator: oeyoews
+modified: 20220902171445932
+modifier: oeyoews
+tags: $:/tags/Macro
+title: neoto/macro/tiddlywiki
+type: text/vnd.tiddlywiki
+
+\define TiddlyWiki5(width:128)
+[img width=$width$ [white-vanilla.png]]
+\end
+
+<<TiddlyWiki5 256>>

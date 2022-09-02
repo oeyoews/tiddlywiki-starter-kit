@@ -1,6 +1,6 @@
 created: 20220830054857671
 creator: oeyoews
-modified: 20220902054128208
+modified: 20220902171731108
 modifier: oeyoews
 tags: 
 title: neotw/switch-tip
@@ -18,6 +18,8 @@ type: text/vnd.tiddlywiki
 
 {{neotw/mobile-warning}}
 {{neotw/readmode-v2}}
+
+<<layout "<<TiddlyWiki5 118>>" "right">>
 
 <div style="text-align: right;">
 <$button actions=<<help-seen "takeaways">> > 
