@@ -1,6 +1,6 @@
 created: 20220830054857671
 creator: oeyoews
-modified: 20220901232659490
+modified: 20220902020304420
 modifier: oeyoews
 tags: 
 title: neotw/switch-tip
@@ -20,7 +20,7 @@ type: text/vnd.tiddlywiki
 {{neotw/readmode-v2}}
 
 <div style="text-align: right;">
-<$button actions=<<help-seen "takeaways">> class="tc-btn-invisible tc-tiddlylink"> 
+<$button actions=<<help-seen "takeaways">> > 
 <<symbol "Dismiss All" bingo>>
 </$button>
 </div>
