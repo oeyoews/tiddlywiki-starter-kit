@@ -1,6 +1,6 @@
 created: 20220902031815530
 creator: oeyoews
-modified: 20220902033115829
+modified: 20220902034331714
 modifier: oeyoews
 tags: 
 title: neotw/restore-button
@@ -10,7 +10,7 @@ type: text/vnd.tiddlywiki
 
 \define restore-button()
 <$fieldmangler tiddler="neotw/style/readonly"> <$button actions=<<help-delete "takeaways">> >
-<<symbol "restore button" "dot-status">> 
+<<symbol "Restore Dismiss" "restore">> 
 </$button>
 </$fieldmangler>
 \end

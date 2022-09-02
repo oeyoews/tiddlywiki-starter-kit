@@ -1,6 +1,6 @@
 created: 20220901012627097
 creator: oeyoews
-modified: 20220901124639336
+modified: 20220902034140491
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/style/symbol
@@ -8,6 +8,11 @@ type: text/vnd.tiddlywiki
 
 .neotw-type:before {
 		content: "⁋ ";
+		color: orange;
+}
+
+.neotw-restore:before {
+		content: "⟳ ";
 		color: orange;
 }
 

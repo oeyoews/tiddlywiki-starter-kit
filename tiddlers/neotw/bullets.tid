@@ -1,6 +1,6 @@
 created: 20220901020012643
 creator: oeyoews
-modified: 20220901102256550
+modified: 20220902034159756
 modifier: oeyoews
 tags: 
 title: neotw/bullets
@@ -35,6 +35,7 @@ type: text/vnd.tiddlywiki
 <<symbol demo "star">>
 <<symbol demo "type">>
 <<symbol demo "trigram">>
+<<symbol demo "restore">>
 
 ---
 !!! showcases
