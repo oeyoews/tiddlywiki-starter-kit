@@ -56,7 +56,7 @@ preview repo svg?)">
 ## Install
 
 ```bash
-git clone --depth 1 https://gitlab.com/oeyoews/neotw
+git clone --depth 1 https://gitlab.com/oeyoews/neotw # or git clone --depth 1 https://github.com/oeyoews/neotw
 ```
 
 ## Run
