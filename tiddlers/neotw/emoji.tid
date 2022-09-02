@@ -1,12 +1,12 @@
 created: 20220902155534733
 creator: oeyoews
-modified: 20220902160251844
+modified: 20220902160704047
 modifier: oeyoews
 tags: 
 title: neotw/emoji
 type: text/vnd.tiddlywiki
 
-<<.preamble """<<emoji tada>> this is a new, just resolve copy emoji trouble""">>
+<<.preamble """<<emoji tada>> this is a new, just resolve copy emoji(WIP) trouble""">>
 
 !! example
 
@@ -26,3 +26,5 @@ type: text/vnd.tiddlywiki
 <<emoji bingo>> bingo
 
 <<emoji menu>> menu
+
+Inspired by latex emoji package [[latex-emoji|https://github.com/stone-zeng/latex-emoji]] and [[neotw/bullets]]
