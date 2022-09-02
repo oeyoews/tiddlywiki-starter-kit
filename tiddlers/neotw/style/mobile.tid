@@ -1,0 +1,16 @@
+created: 20220902004154922
+creator: oeyoews
+modified: 20220902004227180
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: neotw/style/mobile
+type: text/vnd.tiddlywiki
+
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]"> 
+
+.nc-bar.nc-bottombar { display: none; }
+.nc-sidebar { display: none;} 
+
+}
+
+<$/list>

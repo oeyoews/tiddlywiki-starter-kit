@@ -1,17 +1,12 @@
 created: 20220831070237469
 creator: oeyoews
-modified: 20220902001240610
+modified: 20220902004333567
 modifier: oeyoews
-tags: $:/tags/StartupAction $:/tags/Stylesheet
+tags: $:/tags/StartupAction
 title: neotw/mobile-warning
 type: text/vnd.tiddlywiki
 
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]"> 
-
-.nc-bar.nc-bottombar { display: none; }
-.nc-sidebar { display: none;} 
-
-}
 
 <div class="neotw-left">
 <div style="color:red" align="right">
