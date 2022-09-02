@@ -1,10 +1,17 @@
 created: 20220826140521100
 creator: oeyoews
-modified: 20220902051912187
+modified: 20220902170615105
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/stylesheet
 type: text/vnd.tiddlywiki
+
+<!-- note: this change li globally for wikitext, this # no list number 
+ul::marker {
+		content: "● ";
+		color: #7d7dfc;
+}
+-->
 
 .tc-powered-by-tiddlywiki-banner {
 	position: fixed;

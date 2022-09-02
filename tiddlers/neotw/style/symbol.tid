@@ -1,15 +1,10 @@
 created: 20220901012627097
 creator: oeyoews
-modified: 20220902154908325
+modified: 20220902170419634
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/style/symbol
 type: text/vnd.tiddlywiki
-
-.neotw-square-circle:before {
-		content: "▣ ";
-		color: orange;
-}
 
 .neotw-circle:before {
 		content: "◍ ";
@@ -50,7 +45,6 @@ type: text/vnd.tiddlywiki
 		content: "✯ ";
 		color: red;
 }
-
 
 .neotw-edit:before {
 		content: "✎ ";
