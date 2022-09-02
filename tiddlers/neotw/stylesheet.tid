@@ -1,6 +1,6 @@
 created: 20220826140521100
 creator: oeyoews
-modified: 20220902030250597
+modified: 20220902051912187
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/stylesheet
@@ -109,6 +109,7 @@ blockquote {
 }
 
 <!-- break change -->
+
 hr {
 	background: #7f4bca;
 	height: 1px;
@@ -117,7 +118,12 @@ hr {
 
 button {
 	border: 0;
+	border-radius: 3px;
 	background: #00000008;
+}
+
+div>button:hover {
+	background: #eeeeee;
 }
 
 <!-- remove notebook sidebar border-->
@@ -147,10 +153,6 @@ button {
 }
 
 <!-- remove border -->
-
-button {
-border-radius: 3px;
-}
 
 .tc-editor-toolbar button, .tc-editor-toolbar button.tc-btn-invisible {
 border: 0;
