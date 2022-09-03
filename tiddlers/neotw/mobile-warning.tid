@@ -1,6 +1,6 @@
 created: 20220831070237469
 creator: oeyoews
-modified: 20220903150120003
+modified: 20220903153945738
 modifier: oeyoews
 tags: $:/tags/StartupAction
 title: neotw/mobile-warning
@@ -30,4 +30,5 @@ type: text/vnd.tiddlywiki
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]"> 
 
 {{neotw/change-theme-palette}}
+
 </$list>

@@ -1,0 +1,73 @@
+created: 20220903154521999
+creator: oeyoews
+modified: 20220903161218073
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: neotw/style/polar
+type: text/vnd.tiddlywiki
+
+.tc-powered-by-tiddlywiki-banner {
+	position: fixed;
+	right: 1em;
+	bottom: 5px;
+   z-index: 2;
+}
+
+.bg22 {
+        position: absolute;
+        bottom: 0px;
+        height: 200px;
+        width: 100%;
+        background: url(https://gitlab.com/oeyoews/neotw/-/raw/main/img/bg1.png)
+          repeat-x;
+        animation: change_bg 5s linear infinite;
+      }
+
+.bg22 {
+        position: absolute;
+        bottom: 0px;
+        height: 200px;
+        width: 100%;
+        z-index: 3000;
+        background: url(https://gitlab.com/oeyoews/neotw/-/raw/main/img/bg2.png)
+          repeat-x;
+        animation: change_bg 5s linear infinite;
+      }
+			
+.polarbear {
+    position: fixed;
+    bottom: 0px;
+    height: 100px;
+    width: 200px;
+    z-index: 3001;
+    background: url(https://gitlab.com/oeyoews/neotw/raw/main/static/bear.png);
+    animation: bear 0.5s steps(8) infinite, change_pos 8s forwards;
+  }
+
+  @keyframes bear {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: -1600px 0;
+    }
+  }
+
+  @keyframes change_pos {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 80%;
+      transform: translate(-50%, 0);
+    }
+  }
+
+@keyframes change_bg {
+        0% {
+          background-position: 0 0;
+        }
+        100% {
+          background-position: -3840px 0;
+        }
+      }

@@ -1,6 +1,6 @@
 created: 20220826140521100
 creator: oeyoews
-modified: 20220903153358456
+modified: 20220903154733779
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/stylesheet
@@ -17,64 +17,6 @@ ul li::marker {
 h3:hover::after {
 		content: " ###";
 		color: #cccccc;
-}
-
-
-.tc-powered-by-tiddlywiki-banner {
-	position: fixed;
-	right: 1em;
-	bottom: 5px;
-   z-index: 2;
-}
-
-.caticon img { fill: #0A84FF; }
-
-.cat-move { 
-	animation: move 600s linear infinite; 
-}
-
-.polarbear {
-    position: fixed;
-    bottom: 0px;
-    height: 100px;
-    width: 200px;
-    z-index: 2;
-    background: url(https://gitlab.com/oeyoews/neotw/raw/main/static/bear.png);
-    animation: bear 0.5s steps(8) infinite, change_pos 8s forwards;
-  }
-
-  @keyframes bear {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: -1600px 0;
-    }
-  }
-
-  @keyframes change_pos {
-    0% {
-      left: 0;
-    }
-    100% {
-      left: 80%;
-      transform: translate(-50%, 0);
-    }
-  }
-
-@keyframes move
-{
-	from {left:0px;}
-	to { left: 400px;}
-}
-
-@keyframes rotate{ 
-	from {
-		transform: rotate(0deg)
-	}
-	to {
-		transform: rotate(360deg)
-	} 
 }
 
 
