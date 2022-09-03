@@ -1,6 +1,6 @@
 created: 20220901132657061
 creator: vanilla
-modified: 20220902054555135
+modified: 20220903163632575
 modifier: oeyoews
 tags: 
 title: neotw/readmode-v2
@@ -15,7 +15,7 @@ type: text/vnd.tiddlywiki
 <$list filter="[]" variable=_>
 <$fieldmangler tiddler="neotw/style/readonly">
 <$button actions=<<help-seen "readmode">> >
-<<symbol "disable readmode" "dot-off">>
+<<symbol "Editmode" "dot-off">>
 <$action-sendmessage $message="tm-remove-tag" $param="$:/tags/Stylesheet"/>
 </$button>
 </$fieldmangler>
@@ -24,7 +24,7 @@ type: text/vnd.tiddlywiki
 <$list filter=<<help-wanted "readmode">> variable=_>
 <$fieldmangler tiddler="neotw/style/readonly">
 <$button actions=<<help-delete "readmode">> >
-<<symbol "enable readmode" "dot-online">>
+<<symbol "Readmode" "dot-online">>
 <$action-sendmessage $message="tm-add-tag" $param="$:/tags/Stylesheet"/>
 </$button>
 </$fieldmangler>
