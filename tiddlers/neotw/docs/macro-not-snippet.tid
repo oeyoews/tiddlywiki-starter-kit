@@ -1,0 +1,9 @@
+created: 20220903034039812
+creator: oeyoews
+modified: 20220903034328254
+modifier: oeyoews
+tags: 
+title: neotw/docs/macro-not-snippet
+type: text/vnd.tiddlywiki
+
+In neovim, use snippets, even in tiddlywiki still can use snippet depend codemirror-enhanced, but I prefer to use macro replace snippets, it's more simplify and tiny. an the time, it keep kiss tiddlywiki principle 
