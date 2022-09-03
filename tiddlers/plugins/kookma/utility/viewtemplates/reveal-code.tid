@@ -1,9 +1,9 @@
 created: 20211202063626412
 creator: oeyoews
 list-after: $:/core/ui/ViewTemplate/body
-modified: 20220903150409437
+modified: 20220903163351466
 modifier: oeyoews
-tags: $:/tags/ViewTemplate
+tags: 
 title: $:/plugins/kookma/utility/viewtemplates/reveal-code
 type: text/vnd.tiddlywiki
 
