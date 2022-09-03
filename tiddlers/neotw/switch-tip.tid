@@ -1,6 +1,6 @@
 created: 20220830054857671
 creator: oeyoews
-modified: 20220903005952612
+modified: 20220903041354596
 modifier: oeyoews
 tags: 
 title: neotw/switch-tip
@@ -12,10 +12,10 @@ type: text/vnd.tiddlywiki
 
 <$list filter="[<renderingStatic>!match[yes]]" >
 
-
 <$list filter=<<help-wanted "takeaways">> variable=_>
 <div class="tr-contextual-help">
 
+<<.preamble "<<emoji type>> Message @neotw" >>
 {{neotw/mobile-warning}}
 <$list filter="[{$:/info/url/protocol}prefix[https]]">
 {{neotw/readmode-v2}}
