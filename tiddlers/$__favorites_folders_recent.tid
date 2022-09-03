@@ -1,9 +1,9 @@
 caption: Recently added
 created: 20220828022145583
 creator: oeyoews
-list: neotw/awesome-tiddlywiki $:/core/ui/ViewTemplate/subtitle neotw/stylesheet [[schedule sum]] $:/plugins/nico/projectify/ui/dashboard/InboxAndProjects neotw/polar-bear white-vanilla.png $:/config/FileSystemPaths
+list: neotw/awesome-tiddlywiki $:/core/ui/ViewTemplate/subtitle neotw/stylesheet [[schedule sum]] $:/plugins/nico/projectify/ui/dashboard/InboxAndProjects neotw/polar-bear neotw/images/white-vanilla.png $:/config/FileSystemPaths
 list-before: 
-modified: 20220901090651592
+modified: 20220903005550619
 modifier: oeyoews
 tags: $:/tags/Favorites/Folder
 title: $:/favorites/folders/recent
