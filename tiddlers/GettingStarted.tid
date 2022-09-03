@@ -1,7 +1,7 @@
 caption: Step 1<br>Syncing
 created: 20220828120245453
 creator: oeyoews
-modified: 20220903005957064
+modified: 20220903030259654
 modifier: oeyoews
 tags: 
 title: GettingStarted
@@ -9,10 +9,10 @@ type: text/vnd.tiddlywiki
 
 {{neotw/switch-tip}}
 
-!!! <<.tip "Welcome to {{$:/SiteTitle}}" >> 
+!! <<.tip "Welcome to {{$:/SiteTitle}}" >> 
 
 
-!!! Web Status 
+!! Web Status 
 
 <<symbol "https://oeyoews.github.io/upptime" arrowright>>
 
