@@ -1,6 +1,6 @@
 created: 20220830150031545
 creator: oeyoews
-modified: 20220901102140502
+modified: 20220903032904895
 modifier: oeyoews
 tags: $:/tags/Macro
 title: neotw/macro
@@ -17,4 +17,8 @@ type: text/vnd.tiddlywiki
 <summary>$summary$</summary>
 $text$
 </details>
+\end
+
+\define lorem()
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 \end
