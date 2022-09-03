@@ -1,6 +1,6 @@
 created: 20220826140521100
 creator: oeyoews
-modified: 20220903030200055
+modified: 20220903153358456
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/stylesheet
@@ -8,15 +8,17 @@ type: text/vnd.tiddlywiki
 
 <!-- note: this change li globally for wikitext, this # no list number 
 -->
-h3:hover::after {
-		content: " ###";
-		color: #cccccc;
-}
 
 ul li::marker {
 		content: "● ";
 		color: #7d7dfc;
 }
+
+h3:hover::after {
+		content: " ###";
+		color: #cccccc;
+}
+
 
 .tc-powered-by-tiddlywiki-banner {
 	position: fixed;
@@ -132,10 +134,6 @@ button {
 	border: 0;
 	border-radius: 3px;
 	background: #00000008;
-}
-
-div>button:hover {
-	background: #eeeeee;
 }
 
 <!-- remove notebook sidebar border-->

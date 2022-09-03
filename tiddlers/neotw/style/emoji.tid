@@ -1,10 +1,14 @@
 created: 20220902154818583
 creator: oeyoews
-modified: 20220903040533964
+modified: 20220903150913802
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/style/emoji
 type: text/vnd.tiddlywiki
+
+.neotw-msg:before {
+		content: "💬";
+}
 
 .neotw-rocket:before {
 		content: "🚀";
