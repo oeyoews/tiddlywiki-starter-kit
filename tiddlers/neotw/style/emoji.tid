@@ -1,6 +1,6 @@
 created: 20220902154818583
 creator: oeyoews
-modified: 20220902161841858
+modified: 20220903040533964
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/style/emoji
@@ -8,6 +8,10 @@ type: text/vnd.tiddlywiki
 
 .neotw-rocket:before {
 		content: "🚀";
+}
+
+.neotw-book:before {
+		content: "📖";
 }
 
 .neotw-shower:before {

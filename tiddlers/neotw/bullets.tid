@@ -1,6 +1,6 @@
 created: 20220901020012643
 creator: oeyoews
-modified: 20220902155531517
+modified: 20220903040635710
 modifier: oeyoews
 tags: 
 title: neotw/bullets
@@ -41,7 +41,6 @@ type: text/vnd.tiddlywiki
 	<<symbol demo "music">>
 	<<symbol demo "danger">>
 	<<symbol demo "circle">>
-	<<symbol demo "square-circle">>
 	<<symbol demo "hourglass">>
 """ more>>
 
