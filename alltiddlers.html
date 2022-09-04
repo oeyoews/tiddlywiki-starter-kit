@@ -5171,7 +5171,7 @@ li.CodeMirror-hint-active {
 }button.tc-tag-label, span.tc-tag-label {
   padding: 0.3em 1em !important;
 }/* Fonts */html, body {
-  font-family: "Segoe UI",Helvetica,Arial,sans-serif, "Twemoji Mozilla", "Noto Emoji", "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: "Segoe UI",Helvetica,Arial,sans-serif, "Twemoji Mozilla",  "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }.tc-tiddler-frame input.tc-edit-texteditor,
 .tc-tiddler-frame textarea.tc-edit-texteditor,
 .tc-tiddler-frame iframe.tc-edit-texteditor {
@@ -6329,6 +6329,74 @@ border: 0;
 </div><div class=" tc-reveal">
 </div>
 </div>
+</a><a name="confetti">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="confetti" role="article"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><button aria-label="trashbin" class="tc-btn-invisible tc-btn-%24%3A%2Fplugins%2Fkookma%2Ftrashbin%2Fui%2Ftoolbar-button" title="Move this tiddler to Trashbin"> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</button><button aria-expanded="false" aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"></button><div class=" tc-reveal" hidden="true"></div><button aria-label="favorites" class="tc-btn-invisible tc-btn-%24%3A%2Fplugins%2Fkookma%2Ffavorites%2Fui%2Fbuttons%2Fadd-remove" title="Add to favorites">
+     
+		 
+
+		 
+ </button><button aria-label="close others" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose-others" title="Close other tiddlers"></button><span class=" tc-reveal"><button aria-label="fold tiddler" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Ffold" title="Fold the body of this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><button class="tc-btn-invisible tc-btn-neotw%2Fviewbar%2Fcopy-title" title="copy current title"></button><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button><button class="tc-btn-invisible tc-btn-neotw%2Fcopy-text" title="copy current title"></button><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span><h2 class="tc-title">confetti</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle">🚀 oeyoews  📖 Created 2022/09/04  🔓 Updated 2022/09/04 16:02:28  </div></div><div class=" tc-reveal"><div class="tc-tags-wrapper"></div></div>
+
+
+
+<div class="kk-ut-viewfields tc-reveal" hidden="true"></div>
+
+<div class=" tc-reveal">
+</div><div class="tc-tiddler-body tc-reveal"><pre class="hljs"><code class="html hljs"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span><span class="language-javascript">
+      <span class="hljs-keyword">var</span> myCanvas = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">&quot;canvas&quot;</span>);
+      <span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-title function_">appendChild</span>(myCanvas);
+
+      <span class="hljs-keyword">var</span> myConfetti = confetti.<span class="hljs-title function_">create</span>(myCanvas, { <span class="hljs-attr">resize</span>: <span class="hljs-literal">true</span> });
+
+      <span class="hljs-title function_">myConfetti</span>();
+
+      <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
+        myConfetti.<span class="hljs-title function_">reset</span>();
+      }, <span class="hljs-number">100</span>);
+      <span class="hljs-title function_">confetti</span>();
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre></div>
+<div class=" tc-reveal">
+
+</div><div class=" tc-reveal">
+</div>
+</div>
 </a><a name="confilict 01">
 <div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="confilict 01" role="article"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><button aria-label="trashbin" class="tc-btn-invisible tc-btn-%24%3A%2Fplugins%2Fkookma%2Ftrashbin%2Fui%2Ftoolbar-button" title="Move this tiddler to Trashbin"> 
 
@@ -6539,7 +6607,7 @@ border: 0;
 2 minutes ago
 </span></div> 
 <div class="shield shield-blue"><span class="label">Plugins</span><span class="status">48</span></div>
-<div class="shield shield-purple"><span class="label">Tiddlers</span><span class="status">62 (0)</span></div></p></div>
+<div class="shield shield-purple"><span class="label">Tiddlers</span><span class="status">63 (0)</span></div></p></div>
 
 </details></p><h3 class="">welcome to <img class=" tc-image-loading" src="data:image/png;base64,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" width="22"> neotw</h3><ul><li><span class="neotw-book"></span> <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#neotw%2Fdocs">documention</a>  </li><li><div class="neotw-arrowright"><a class="tc-tiddlylink-external" href="https://oeyoews.github.io/upptime" rel="noopener noreferrer" target="_blank">web status</a></div></li></ul></div>
 <div class=" tc-reveal">
@@ -6599,7 +6667,7 @@ border: 0;
 2 minutes ago
 </span></div> 
 <div class="shield shield-blue"><span class="label">Plugins</span><span class="status">48</span></div>
-<div class="shield shield-purple"><span class="label">Tiddlers</span><span class="status">62 (0)</span></div></p></div></div>
+<div class="shield shield-purple"><span class="label">Tiddlers</span><span class="status">63 (0)</span></div></p></div></div>
 <div class=" tc-reveal">
 
 </div><div class=" tc-reveal">
@@ -6713,53 +6781,6 @@ color:#3F3B3B;">$:/tags/StartupAction</span><span class="tc-drop-down tc-reveal"
 </div><div class="tc-tiddler-body tc-reveal"><p></p><p> 
   
 </p></div>
-<div class=" tc-reveal">
-
-</div><div class=" tc-reveal">
-</div>
-</div>
-</a><a name="neotw/add-css-font">
-<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists  tc-tagged-%24%3A%2Ftags%2FRawMarkup" data-tags="$:/tags/RawMarkup" data-tiddler-title="neotw/add-css-font" role="article"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><button aria-label="trashbin" class="tc-btn-invisible tc-btn-%24%3A%2Fplugins%2Fkookma%2Ftrashbin%2Fui%2Ftoolbar-button" title="Move this tiddler to Trashbin"> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</button><button aria-expanded="false" aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"></button><div class=" tc-reveal" hidden="true"></div><button aria-label="favorites" class="tc-btn-invisible tc-btn-%24%3A%2Fplugins%2Fkookma%2Ffavorites%2Fui%2Fbuttons%2Fadd-remove" title="Add to favorites">
-     
-		 
-
-		 
- </button><button aria-label="close others" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose-others" title="Close other tiddlers"></button><span class=" tc-reveal"><button aria-label="fold tiddler" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Ffold" title="Fold the body of this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><button class="tc-btn-invisible tc-btn-neotw%2Fviewbar%2Fcopy-title" title="copy current title"></button><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button><button class="tc-btn-invisible tc-btn-neotw%2Fcopy-text" title="copy current title"></button><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span><h2 class="tc-title">neotw/add-css-font</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
-<div class=" tc-reveal"><div class="tc-subtitle">🚀 oeyoews  📖 Created 2022/08/14  🔓 Updated 2022/08/30 10:30:14  </div></div><div class=" tc-reveal"><div class="tc-tags-wrapper"><span class="tc-tag-list-item" data-tag-title="$:/tags/RawMarkup"><span aria-expanded="false" class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
-fill:#3F3B3B;
-color:#3F3B3B;">$:/tags/RawMarkup</span><span class="tc-drop-down tc-reveal" hidden="true"></span></span></div></div>
-
-
-
-<div class="kk-ut-viewfields tc-reveal" hidden="true"></div>
-
-<div class=" tc-reveal">
-</div><div class="tc-tiddler-body tc-reveal"></div>
 <div class=" tc-reveal">
 
 </div><div class=" tc-reveal">
@@ -7021,6 +7042,51 @@ color:#3F3B3B;">$:/tags/RawMarkup</span><span class="tc-drop-down tc-reveal" hid
 </div><div class=" tc-reveal">
 </div>
 </div>
+</a><a name="neotw/canvas/confetti">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="neotw/canvas/confetti" role="article"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><button aria-label="trashbin" class="tc-btn-invisible tc-btn-%24%3A%2Fplugins%2Fkookma%2Ftrashbin%2Fui%2Ftoolbar-button" title="Move this tiddler to Trashbin"> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</button><button aria-expanded="false" aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"></button><div class=" tc-reveal" hidden="true"></div><button aria-label="favorites" class="tc-btn-invisible tc-btn-%24%3A%2Fplugins%2Fkookma%2Ffavorites%2Fui%2Fbuttons%2Fadd-remove" title="Add to favorites">
+     
+		 
+
+		 
+ </button><button aria-label="close others" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose-others" title="Close other tiddlers"></button><span class=" tc-reveal"><button aria-label="fold tiddler" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Ffold" title="Fold the body of this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><button class="tc-btn-invisible tc-btn-neotw%2Fviewbar%2Fcopy-title" title="copy current title"></button><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button><button class="tc-btn-invisible tc-btn-neotw%2Fcopy-text" title="copy current title"></button><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span><h2 class="tc-title">neotw/canvas/confetti</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle">🚀 oeyoews  📖 Created 2022/09/04  🔓 Updated 2022/09/04 16:02:01  </div></div><div class=" tc-reveal"><div class="tc-tags-wrapper"></div></div>
+
+
+
+<div class="kk-ut-viewfields tc-reveal" hidden="true"></div>
+
+<div class=" tc-reveal">
+</div><div class="tc-tiddler-body tc-reveal"><p><safe-script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></safe-script></p></div>
+<div class=" tc-reveal">
+
+</div><div class=" tc-reveal">
+</div>
+</div>
 </a><a name="neotw/change-theme-palette">
 <div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="neotw/change-theme-palette" role="article"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><button aria-label="trashbin" class="tc-btn-invisible tc-btn-%24%3A%2Fplugins%2Fkookma%2Ftrashbin%2Fui%2Ftoolbar-button" title="Move this tiddler to Trashbin"> 
 
@@ -7148,14 +7214,14 @@ color:#3F3B3B;">$:/tags/RawMarkup</span><span class="tc-drop-down tc-reveal" hid
 
 		 
  </button><button aria-label="close others" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose-others" title="Close other tiddlers"></button><span class=" tc-reveal"><button aria-label="fold tiddler" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Ffold" title="Fold the body of this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><button class="tc-btn-invisible tc-btn-neotw%2Fviewbar%2Fcopy-title" title="copy current title"></button><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button><button class="tc-btn-invisible tc-btn-neotw%2Fcopy-text" title="copy current title"></button><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span><h2 class="tc-title">neotw/CHANGELOG</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
-<div class=" tc-reveal"><div class="tc-subtitle">🚀 oeyoews  📖 Created 2022/08/30  🔓 Updated 2022/09/04 01:56:34  </div></div><div class=" tc-reveal"><div class="tc-tags-wrapper"></div></div>
+<div class=" tc-reveal"><div class="tc-subtitle">🚀 oeyoews  📖 Created 2022/08/30  🔓 Updated 2022/09/04 15:35:11  </div></div><div class=" tc-reveal"><div class="tc-tags-wrapper"></div></div>
 
 
 
 <div class="kk-ut-viewfields tc-reveal" hidden="true"></div>
 
 <div class=" tc-reveal">
-</div><div class="tc-tiddler-body tc-reveal"><h3 class="">break changes</h3><ul><li>use <code>shift esc</code> replace <code>esc</code> for escape editing tiddler</li><li>use vim keymap</li><li>add echarts plugin</li></ul><h3 class="">changelog</h3><ul><li><strong>23:58, 30th August 2022</strong> add echarts(not support export html), and timestamp plugins </li><li><strong>00:48, 31st August 2022</strong> add label color to <code>#00000008</code>, note this not fit for others themes, even you can use palette to manage it</li><li><strong>2022/08/31 00:52:15</strong> add timestamp format</li><li><strong>2022/08/31 15:47:13</strong> not support mobile style, add warning</li><li><strong>2022/08/31 23:15:56</strong> use lazy-load, util now, this reuse-tiddler macro not work</li><li><strong>2022/09/01 10:47:32</strong> add tiddlywiki-bullets</li><li><strong>2022/09/01 10:57:00</strong> remove lazy, this macro not work</li><li><strong>2022/09/01 20:17:49</strong> add readonly mode, support disable</li></ul><hr><ul><li><a class="doc-link-badge" href="" rel="noopener noreferrer" style="background-color:#ffe246;" target="_blank">added</a> add render static</li></ul></div>
+</div><div class="tc-tiddler-body tc-reveal"><h3 class="">break changes</h3><ul><li>use <code>shift esc</code> replace <code>esc</code> for escape editing tiddler</li><li>use vim keymap</li><li>add echarts plugin</li></ul><h3 class="">changelog</h3><ul><li><strong>23:58, 30th August 2022</strong> add echarts(not support export html), and timestamp plugins </li><li><strong>00:48, 31st August 2022</strong> add label color to <code>#00000008</code>, note this not fit for others themes, even you can use palette to manage it</li><li><strong>2022/08/31 00:52:15</strong> add timestamp format</li><li><strong>2022/08/31 15:47:13</strong> not support mobile style, add warning</li><li><strong>2022/08/31 23:15:56</strong> use lazy-load, util now, this reuse-tiddler macro not work</li><li><strong>2022/09/01 10:47:32</strong> add tiddlywiki-bullets</li><li><strong>2022/09/01 10:57:00</strong> remove lazy, this macro not work</li><li><strong>2022/09/01 20:17:49</strong> add readonly mode, support disable</li></ul><hr><ul><li><a class="doc-link-badge" href="" rel="noopener noreferrer" style="background-color:#ffe246;" target="_blank">added</a> add render static</li><li><a class="doc-link-badge" href="" rel="noopener noreferrer" style="background-color:#ffe246;" target="_blank">added</a> add twemoji</li></ul></div>
 <div class=" tc-reveal">
 
 </div><div class=" tc-reveal">
@@ -8132,6 +8198,73 @@ color:#3F3B3B;">$:/tags/Macro</span><span class="tc-drop-down tc-reveal" hidden=
 
 <div class=" tc-reveal">
 </div><div class="tc-tiddler-body tc-reveal"></div>
+<div class=" tc-reveal">
+
+</div><div class=" tc-reveal">
+</div>
+</div>
+</a><a name="neotw/macro/img-shield">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists  tc-tagged-%24%3A%2Ftags%2FMacro" data-tags="$:/tags/Macro" data-tiddler-title="neotw/macro/img-shield" role="article"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><button aria-label="trashbin" class="tc-btn-invisible tc-btn-%24%3A%2Fplugins%2Fkookma%2Ftrashbin%2Fui%2Ftoolbar-button" title="Move this tiddler to Trashbin"> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</button><button aria-expanded="false" aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"></button><div class=" tc-reveal" hidden="true"></div><button aria-label="favorites" class="tc-btn-invisible tc-btn-%24%3A%2Fplugins%2Fkookma%2Ffavorites%2Fui%2Fbuttons%2Fadd-remove" title="Add to favorites">
+     
+		 
+
+		 
+ </button><button aria-label="close others" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose-others" title="Close other tiddlers"></button><span class=" tc-reveal"><button aria-label="fold tiddler" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Ffold" title="Fold the body of this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><button class="tc-btn-invisible tc-btn-neotw%2Fviewbar%2Fcopy-title" title="copy current title"></button><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button><button class="tc-btn-invisible tc-btn-neotw%2Fcopy-text" title="copy current title"></button><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span><h2 class="tc-title">neotw/macro/img-shield</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle">🚀 oeyoews  📖 Created 2022/09/04  🔓 Updated 2022/09/04 15:59:10  </div></div><div class=" tc-reveal"><div class="tc-tags-wrapper"><span class="tc-tag-list-item" data-tag-title="$:/tags/Macro"><span aria-expanded="false" class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
+fill:#3F3B3B;
+color:#3F3B3B;">$:/tags/Macro</span><span class="tc-drop-down tc-reveal" hidden="true"></span></span></div></div>
+
+
+
+
+<span class=" tc-reveal">
+<dl class="copy-code">
+	<dt></dt>
+	<dd>
+		<button class="tc-btn-invisible" title="Copy this text to the clipboard"><svg class="tc-image-copy-clipboard tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt"><g fill-rule="evenodd"><rect height="8" rx="4" width="33" x="40" y="40"></rect><rect height="8" rx="4" width="17" x="40" y="82"></rect><rect height="8" rx="4" width="17" x="40" y="54"></rect><rect height="8" rx="4" width="33" x="40" y="96"></rect><rect height="8" rx="4" width="12" x="40" y="68"></rect><path d="M40 16H24c-4.419 0-8 3.59-8 8a8.031 8.031 0 000 .01v95.98a8.03 8.03 0 000 .01c0 4.41 3.581 8 8 8h80a7.975 7.975 0 005.652-2.34 7.958 7.958 0 002.348-5.652v-16.016c0-4.414-3.582-7.992-8-7.992-4.41 0-8 3.578-8 7.992V112H32V32h64v8.008C96 44.422 99.582 48 104 48c4.41 0 8-3.578 8-7.992V23.992a7.963 7.963 0 00-2.343-5.651A7.995 7.995 0 00104.001 16H88c0-4.41-3.585-8-8.007-8H48.007C43.588 8 40 11.582 40 16zm4-1.004A4.001 4.001 0 0148 11h32c2.21 0 4 1.797 4 3.996v4.008A4.001 4.001 0 0180 23H48c-2.21 0-4-1.797-4-3.996v-4.008z"></path><rect height="16" rx="8" width="66" x="62" y="64"></rect><path d="M84.657 82.343l-16-16v11.314l16-16a8 8 0 10-11.314-11.314l-16 16a8 8 0 000 11.314l16 16a8 8 0 1011.314-11.314z"></path></g></svg> copy to clipboard</button> 
+		<pre class="hljs"><code class="html hljs">\define base-shield() https://img.shields.io/badge/
+\define target() Maintain-Yes-blueviolet.svg?style=flat-square&amp;logo=Chakra-Ui&amp;color=90E59A&amp;logoColor=green
+
+\define neotw-shield
+{{{[<span class="hljs-tag">&lt;<span class="hljs-name">target</span>&gt;</span>addprefix<span class="hljs-tag">&lt;<span class="hljs-name">base-shield</span>&gt;</span>]}}}
+\end</code></pre>
+		<small class="hide">html</small>
+	</dd>
+</dl>
+<span>
+</span>
+</span>
+<div class="kk-ut-viewfields tc-reveal" hidden="true"></div>
+
+<div class=" tc-reveal">
+</div><div class="tc-tiddler-body tc-reveal"><p>\define neotw-shield
+<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#https%3A%2F%2Fimg.shields.io%2Fbadge%2FMaintain-Yes-blueviolet.svg%3Fstyle%3Dflat-square%26logo%3DChakra-Ui%26color%3D90E59A%26logoColor%3Dgreen">https://img.shields.io/badge/Maintain-Yes-blueviolet.svg?style=flat-square&amp;logo=Chakra-Ui&amp;color=90E59A&amp;logoColor=green</a></span>
+\end</p></div>
 <div class=" tc-reveal">
 
 </div><div class=" tc-reveal">
@@ -10520,51 +10653,6 @@ color:#3F3B3B;">$:/tags/Image</span><span class="tc-drop-down tc-reveal" hidden=
 </div><div class="tc-tiddler-body tc-reveal"><p><svg aria-hidden="true" class="tc-image-home-button tc-image-button" height="22pt" viewBox="0 0 16 16" width="22pt">
     <path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z" fill-rule="evenodd"></path>
 </svg></p></div>
-<div class=" tc-reveal">
-
-</div><div class=" tc-reveal">
-</div>
-</div>
-</a><a name="New Tiddler 2">
-<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="New Tiddler 2" role="article"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><button aria-label="trashbin" class="tc-btn-invisible tc-btn-%24%3A%2Fplugins%2Fkookma%2Ftrashbin%2Fui%2Ftoolbar-button" title="Move this tiddler to Trashbin"> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</button><button aria-expanded="false" aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"></button><div class=" tc-reveal" hidden="true"></div><button aria-label="favorites" class="tc-btn-invisible tc-btn-%24%3A%2Fplugins%2Fkookma%2Ffavorites%2Fui%2Fbuttons%2Fadd-remove" title="Add to favorites">
-     
-		 
-
-		 
- </button><button aria-label="close others" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose-others" title="Close other tiddlers"></button><span class=" tc-reveal"><button aria-label="fold tiddler" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Ffold" title="Fold the body of this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><button class="tc-btn-invisible tc-btn-neotw%2Fviewbar%2Fcopy-title" title="copy current title"></button><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button><button class="tc-btn-invisible tc-btn-neotw%2Fcopy-text" title="copy current title"></button><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span><h2 class="tc-title">New Tiddler 2</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
-<div class=" tc-reveal"><div class="tc-subtitle">🚀 oeyoews  📖 Created 2022/09/04  🔓 Updated 2022/09/04 15:28:28  </div></div><div class=" tc-reveal"><div class="tc-tags-wrapper"></div></div>
-
-
-
-<div class="kk-ut-viewfields tc-reveal" hidden="true"></div>
-
-<div class=" tc-reveal">
-</div><div class="tc-tiddler-body tc-reveal"><p><div style="font-family:twemoji mozilla"> demo 🚀 </div></p></div>
 <div class=" tc-reveal">
 
 </div><div class=" tc-reveal">
