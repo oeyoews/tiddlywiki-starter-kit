@@ -5158,13 +5158,13 @@ li.CodeMirror-hint-active {
 }button.tc-tag-label, span.tc-tag-label {
   padding: 0.3em 1em !important;
 }/* Fonts */html, body {
-  font-family: "Maple Mono", "Segoe UI",Helvetica,Arial,sans-serif, "Twemoji Mozilla", "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: "Segoe UI",Helvetica,Arial,sans-serif, "Twemoji Mozilla", "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }.tc-tiddler-frame input.tc-edit-texteditor,
 .tc-tiddler-frame textarea.tc-edit-texteditor,
 .tc-tiddler-frame iframe.tc-edit-texteditor {
-  font-family: "Maple Mono", "Fira Code";
+  font-family: "Fira Code";
 }pre, code {
-  font-family: "Maple Mono", "Fira Code", "Liberation Mono",Menlo,Courier,monospace;
+  font-family: "Fira Code", "Liberation Mono",Menlo,Courier,monospace;
 }.tc-titlebar, .tc-site-title {
   font-size: 28px !important;
   line-height: 34px !important;
@@ -5974,6 +5974,22 @@ ol.doc-github-contributors li {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+}ul>li::marker {
+		content: "☰ ";
+		color: #7d7dfc;
+}ul>li>ul>li::marker {
+		content: "✿ ";
+		color: #7d7dfc;
+}ul>li>ul>li>ul>li::marker {
+		content: "◉ ";
+		color: #7d7dfc;
+}ul>li>ul>li>ul>li>ul>li::marker {
+		content: "◍ ";
+		color: #7d7dfc;
+}ul>li>ul>li>ul>li>ul>li>ul>li::marker {
+		content: "● ";
+		color: #7d7dfc;
+		
 }@font-face {
 	font-family: "Maple Mono";
 	src: url("files/fonts/Maple_Mono_Regular.ttf");
@@ -6191,9 +6207,6 @@ ol.doc-github-contributors li {
 }.neotw-menu:before {
 		content: "☰ ";
 		color: #0ea6ff;
-}ul li::marker {
-		content: "● ";
-		color: #7d7dfc;
 }h3:hover::after {
 		content: " ###";
 		color: #cccccc;
