@@ -1,0 +1,13 @@
+created: 20220904001017364
+creator: oeyoews
+modified: 20220904005217090
+modifier: oeyoews
+tags: 
+title: neotw/twitter-button
+type: text/vnd.tiddlywiki
+
+\define twitterFollowButton(username)
+<iframe allowtransparency="true" frameborder="0" scrolling="no" src="https://platform.twitter.com/widgets/follow_button.html?screen_name=$username$" style="width:300px; height:20px;"></iframe>
+\end
+
+<<twitterFollowButton oeyoews>>
