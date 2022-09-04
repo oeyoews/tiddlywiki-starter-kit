@@ -1,0 +1,12 @@
+created: 20220904145052945
+creator: oeyoews
+modified: 20220904152759985
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: neotw/fonts/twemoji
+type: text/vnd.tiddlywiki
+
+@font-face {
+	font-family: "Twemoji Mozilla";
+	src: url("files/fonts/Twemoji_Mozilla_Regular.ttf");
+}
