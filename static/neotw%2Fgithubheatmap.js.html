@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="generator" content="TiddlyWiki" />
+<meta name="tiddlywiki-version" content="5.2.3" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no">
+<link id="faviconLink" rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="static.css">
+<title>neotw/githubheatmap.js:  neotw — A modern tiddlywiki demonstration</title>
+</head>
+<body class="tc-body">
+
+<section class="tc-story-river tc-static-story-river">
+<p><div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="neotw/githubheatmap.js" role="article"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><button aria-label="trashbin" class="tc-btn-invisible tc-btn-%24%3A%2Fplugins%2Fkookma%2Ftrashbin%2Fui%2Ftoolbar-button" title="Move this tiddler to Trashbin"> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</button><button aria-expanded="false" aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"></button><div class=" tc-reveal" hidden="true"></div><button aria-label="favorites" class="tc-btn-invisible tc-btn-%24%3A%2Fplugins%2Fkookma%2Ffavorites%2Fui%2Fbuttons%2Fadd-remove" title="Add to favorites">
+     
+		 
+
+		 
+ </button><button aria-label="close others" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose-others" title="Close other tiddlers"></button><span class=" tc-reveal"><button aria-label="fold tiddler" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Ffold" title="Fold the body of this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><button class="tc-btn-invisible tc-btn-neotw%2Fviewbar%2Fcopy-title" title="copy current title"></button><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><a class="tc-tiddlylink tc-tiddlylink-resolves" href="neotw%252Fgithubheatmap.js.html"><h2 class="tc-title">neotw/githubheatmap.js</h2></a></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"></div></div><div class=" tc-reveal"><div class="tc-tags-wrapper"></div></div>
+
+
+
+<div class="kk-ut-viewfields tc-reveal" hidden="true"></div>
+
+<div class=" tc-reveal">
+</div><div class="tc-tiddler-body tc-reveal"><pre class="hljs"><code class="javascript hljs"><span class="hljs-comment">/* Written by Gk0Wk(https://github.com/Gk0Wk) */</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">getFilterByDate</span> = (<span class="hljs-params">date, subfilter</span>) =&gt; {
+  <span class="hljs-keyword">return</span> <span class="hljs-string">`[all[tiddlers]<span class="hljs-subst">${subfilter}</span>sameday:created[<span class="hljs-subst">${date}</span>]][all[tiddlers]<span class="hljs-subst">${subfilter}</span>sameday:modified[<span class="hljs-subst">${date}</span>]]+[sort[]]`</span>;
+};
+<span class="hljs-keyword">const</span> yearDates = {};
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">getData</span> = (<span class="hljs-params">year, subfilter</span>) =&gt; {
+  <span class="hljs-keyword">if</span> (!yearDates[year]) {
+    <span class="hljs-keyword">const</span> startDate = +echarts.<span class="hljs-property">number</span>.<span class="hljs-title function_">parseDate</span>(<span class="hljs-string">`<span class="hljs-subst">${year}</span>-01-01`</span>);
+    <span class="hljs-keyword">const</span> endDate = +echarts.<span class="hljs-property">number</span>.<span class="hljs-title function_">parseDate</span>(<span class="hljs-string">`<span class="hljs-subst">${year + <span class="hljs-number">1</span>}</span>-01-01`</span>);
+    <span class="hljs-keyword">const</span> dayTime = <span class="hljs-number">3600</span> * <span class="hljs-number">24</span> * <span class="hljs-number">1000</span>;
+    <span class="hljs-keyword">const</span> dates = [];
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> time = startDate; time &lt; endDate; time += dayTime) {
+      <span class="hljs-keyword">const</span> timeFmt = echarts.<span class="hljs-property">format</span>.<span class="hljs-title function_">formatTime</span>(<span class="hljs-string">&quot;yyyy-MM-dd&quot;</span>, time);
+      <span class="hljs-keyword">const</span> timeTW = timeFmt.<span class="hljs-title function_">replace</span>(<span class="hljs-regexp">/-/g</span>, <span class="hljs-string">&quot;&quot;</span>);
+      dates.<span class="hljs-title function_">push</span>([timeFmt, timeTW]);
+    }
+    yearDates[year] = dates;
+  }
+  <span class="hljs-keyword">let</span> total = <span class="hljs-number">0</span>;
+  <span class="hljs-keyword">return</span> [
+    yearDates[year].<span class="hljs-title function_">map</span>(<span class="hljs-function">(<span class="hljs-params">[timeFmt, timeTW]</span>) =&gt;</span> {
+      <span class="hljs-keyword">const</span> count = $tw.<span class="hljs-property">wiki</span>.<span class="hljs-title function_">filterTiddlers</span>(<span class="hljs-title function_">getFilterByDate</span>(timeTW, subfilter)).<span class="hljs-property">length</span>;
+      total += count;
+      <span class="hljs-keyword">return</span> [timeFmt, count];
+    }),
+    total,
+  ];
+};
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">getPlatteColor</span> = (<span class="hljs-params">name</span>) =&gt;
+  $tw.<span class="hljs-property">wiki</span>.<span class="hljs-title function_">renderText</span>(
+    <span class="hljs-string">&quot;text/plain&quot;</span>,
+    <span class="hljs-string">&quot;text/vnd.tiddlywiki&quot;</span>,
+    <span class="hljs-string">`&lt;$transclude tiddler={{$:/palette}} index=&quot;<span class="hljs-subst">${name}</span>&quot;&gt;&lt;$transclude tiddler=&quot;$:/palettes/Vanilla&quot; index=&quot;<span class="hljs-subst">${name}</span>&quot;&gt;&lt;$transclude tiddler=&quot;$:/config/DefaultColourMappings/<span class="hljs-subst">${name}</span>&quot;/&gt;&lt;/$transclude&gt;&lt;/$transclude&gt;`</span>,
+    {}
+  );
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">checkIfChinese</span> = (<span class="hljs-params"></span>) =&gt;
+  $tw.<span class="hljs-property">wiki</span>.<span class="hljs-title function_">getTiddlerText</span>(<span class="hljs-string">&quot;$:/language&quot;</span>).<span class="hljs-title function_">indexOf</span>(<span class="hljs-string">&quot;zh&quot;</span>) !== -<span class="hljs-number">1</span>;
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">checkIfDarkMode</span> = (<span class="hljs-params"></span>) =&gt;
+  $tw.<span class="hljs-property">wiki</span>.<span class="hljs-title function_">getTiddler</span>($tw.<span class="hljs-property">wiki</span>.<span class="hljs-title function_">getTiddlerText</span>(<span class="hljs-string">&quot;$:/palette&quot;</span>)).<span class="hljs-property">fields</span>[
+    <span class="hljs-string">&quot;color-scheme&quot;</span>
+  ] === <span class="hljs-string">&quot;dark&quot;</span>;
+
+<span class="hljs-built_in">exports</span>.<span class="hljs-property">onMount</span> = <span class="hljs-function">() =&gt;</span> {
+  <span class="hljs-keyword">return</span> {};
+};
+
+<span class="hljs-built_in">exports</span>.<span class="hljs-property">shouldUpdate</span> = <span class="hljs-function">(<span class="hljs-params">_, changedTiddlers</span>) =&gt;</span> {
+  <span class="hljs-keyword">return</span> $tw.<span class="hljs-property">utils</span>.<span class="hljs-title function_">count</span>(changedTiddlers) &gt; <span class="hljs-number">0</span>;
+};
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">tooltipFormatter</span> = (<span class="hljs-params">subfilter</span>) =&gt; <span class="hljs-function">(<span class="hljs-params">{ value }</span>) =&gt;</span> {
+    <span class="hljs-keyword">const</span> [dateValue, count] = value;
+    <span class="hljs-keyword">if</span> (count === <span class="hljs-number">0</span>)
+      <span class="hljs-keyword">return</span> <span class="hljs-title function_">checkIfChinese</span>()
+        ? <span class="hljs-string">`<span class="hljs-subst">${echarts.format.formatTime(<span class="hljs-string">&quot;yyyy年M月d日&quot;</span>, dateValue)}</span> 无条目。`</span>
+        : <span class="hljs-string">`<span class="hljs-subst">${$tw.utils.formatDateString(
+            $tw.utils.parseDate(dateValue.replace(/-/g, <span class="hljs-string">&quot;&quot;</span>)),
+            <span class="hljs-string">&quot;MMM DDD, YYYY&quot;</span>
+          )}</span> no tiddler.`</span>;
+    <span class="hljs-keyword">const</span> p = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">&quot;p&quot;</span>);
+    p.<span class="hljs-property">innerText</span> = <span class="hljs-title function_">checkIfChinese</span>()
+      ? <span class="hljs-string">`<span class="hljs-subst">${echarts.format.formatTime(
+          <span class="hljs-string">&quot;yyyy年M月d日&quot;</span>,
+          dateValue
+        )}</span> 共有 <span class="hljs-subst">${count}</span> 篇:`</span>
+      : <span class="hljs-string">`<span class="hljs-subst">${$tw.utils.formatDateString(
+          $tw.utils.parseDate(dateValue.replace(/-/g, <span class="hljs-string">&quot;&quot;</span>)),
+          <span class="hljs-string">&quot;MMM DDD, YYYY&quot;</span>
+        )}</span> <span class="hljs-subst">${count}</span> tiddler<span class="hljs-subst">${count &gt; <span class="hljs-number">1</span> ? <span class="hljs-string">&quot;s&quot;</span> : <span class="hljs-string">&quot;&quot;</span>}</span>.`</span>;
+    <span class="hljs-keyword">const</span> ul = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">&quot;ul&quot;</span>);
+    <span class="hljs-keyword">const</span> tiddlers = $tw.<span class="hljs-property">wiki</span>.<span class="hljs-title function_">filterTiddlers</span>(
+      <span class="hljs-title function_">getFilterByDate</span>(dateValue.<span class="hljs-title function_">replace</span>(<span class="hljs-regexp">/-/g</span>, <span class="hljs-string">&quot;&quot;</span>), subfilter)
+    );
+    <span class="hljs-keyword">const</span> len = tiddlers.<span class="hljs-property">length</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; len; i++) {
+      <span class="hljs-keyword">const</span> tiddler = tiddlers[i];
+      <span class="hljs-keyword">const</span> li = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">&quot;li&quot;</span>);
+      <span class="hljs-keyword">const</span> a = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">&quot;a&quot;</span>);
+      a.<span class="hljs-property">innerText</span> = tiddler;
+      a.<span class="hljs-property">className</span> =
+        <span class="hljs-string">&quot;tc-tiddlylink tc-tiddlylink-resolves tc-popup-handle tc-popup-absolute&quot;</span>;
+      a.<span class="hljs-property">style</span>.<span class="hljs-property">cursor</span> = <span class="hljs-string">&quot;pointer&quot;</span>;
+      a.<span class="hljs-property">onclick</span> = <span class="hljs-function">() =&gt;</span> <span class="hljs-keyword">new</span> $tw.<span class="hljs-title class_">Story</span>().<span class="hljs-title function_">navigateTiddler</span>(tiddler);
+      li.<span class="hljs-title function_">appendChild</span>(a);
+      ul.<span class="hljs-title function_">appendChild</span>(li);
+    }
+    <span class="hljs-keyword">return</span> [p, ul];
+  };
+
+<span class="hljs-built_in">exports</span>.<span class="hljs-property">onUpdate</span> = <span class="hljs-function">(<span class="hljs-params">myChart, _state, addonAttributes</span>) =&gt;</span> {
+  <span class="hljs-keyword">const</span> year = <span class="hljs-built_in">parseInt</span>(addonAttributes.<span class="hljs-property">year</span>, <span class="hljs-number">10</span>) || <span class="hljs-keyword">new</span> <span class="hljs-title class_">Date</span>().<span class="hljs-title function_">getFullYear</span>();
+  <span class="hljs-keyword">const</span> subfilter = addonAttributes.<span class="hljs-property">subfilter</span> || <span class="hljs-string">&#x27;!is[shadow]!prefix[$:/]&#x27;</span>;
+  <span class="hljs-keyword">const</span> [data, total] = <span class="hljs-title function_">getData</span>(year, subfilter);
+  myChart.<span class="hljs-title function_">setOption</span>({
+    <span class="hljs-attr">title</span>: {
+      <span class="hljs-attr">top</span>: <span class="hljs-number">0</span>,
+      <span class="hljs-attr">left</span>: <span class="hljs-string">&quot;center&quot;</span>,
+      <span class="hljs-attr">text</span>: <span class="hljs-title function_">checkIfChinese</span>()
+        ? <span class="hljs-string">`今年产出 <span class="hljs-subst">${total}</span> 篇文章`</span>
+        : <span class="hljs-string">`Produced <span class="hljs-subst">${total}</span> tiddlers this year`</span>,
+    },
+    <span class="hljs-attr">tooltip</span>: {
+      <span class="hljs-attr">position</span>: <span class="hljs-string">&quot;top&quot;</span>,
+      <span class="hljs-attr">formatter</span>: <span class="hljs-title function_">tooltipFormatter</span>(subfilter),
+      <span class="hljs-attr">triggerOn</span>: <span class="hljs-string">&quot;mousemove|click&quot;</span>,
+      <span class="hljs-attr">enterable</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">hideDelay</span>: <span class="hljs-number">400</span>,
+      <span class="hljs-attr">backgroundColor</span>: <span class="hljs-title function_">getPlatteColor</span>(<span class="hljs-string">&quot;page-background&quot;</span>),
+      <span class="hljs-attr">borderColor</span>: <span class="hljs-title function_">getPlatteColor</span>(<span class="hljs-string">&quot;very-muted-foreground&quot;</span>),
+    },
+    <span class="hljs-attr">visualMap</span>: {
+      <span class="hljs-attr">type</span>: <span class="hljs-string">&quot;piecewise&quot;</span>,
+      <span class="hljs-attr">orient</span>: <span class="hljs-string">&quot;horizontal&quot;</span>,
+      <span class="hljs-attr">calculable</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">showLabel</span>: <span class="hljs-literal">false</span>,
+      <span class="hljs-attr">right</span>: <span class="hljs-number">0</span>,
+      <span class="hljs-attr">top</span>: <span class="hljs-number">175</span>,
+      <span class="hljs-attr">pieces</span>: [
+        <span class="hljs-comment">// 设置分段范围</span>
+        { <span class="hljs-attr">lte</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">color</span>: <span class="hljs-title function_">checkIfDarkMode</span>() ? <span class="hljs-string">&quot;#161B22&quot;</span> : <span class="hljs-string">&quot;#EBEDF0&quot;</span> },
+        { <span class="hljs-attr">gt</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">lte</span>: <span class="hljs-number">3</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">&quot;#0E4429&quot;</span> },
+        { <span class="hljs-attr">gt</span>: <span class="hljs-number">3</span>, <span class="hljs-attr">lte</span>: <span class="hljs-number">7</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">&quot;#006D32&quot;</span> },
+        { <span class="hljs-attr">gt</span>: <span class="hljs-number">7</span>, <span class="hljs-attr">lte</span>: <span class="hljs-number">15</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">&quot;#26A641&quot;</span> },
+        { <span class="hljs-attr">gt</span>: <span class="hljs-number">15</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">&quot;#39D353&quot;</span> },
+      ],
+    },
+    <span class="hljs-attr">calendar</span>: {
+      <span class="hljs-attr">top</span>: <span class="hljs-number">60</span>,
+      <span class="hljs-attr">cellSize</span>: <span class="hljs-number">15</span>,
+      <span class="hljs-attr">orient</span>: <span class="hljs-string">&quot;horizontal&quot;</span>,
+      <span class="hljs-attr">range</span>: year,
+      <span class="hljs-attr">itemStyle</span>: {
+        <span class="hljs-attr">borderWidth</span>: <span class="hljs-number">3</span>,
+        <span class="hljs-attr">borderCap</span>: <span class="hljs-string">&quot;round&quot;</span>,
+        <span class="hljs-attr">borderJoin</span>: <span class="hljs-string">&quot;round&quot;</span>,
+        <span class="hljs-attr">borderColor</span>: <span class="hljs-title function_">getPlatteColor</span>(<span class="hljs-string">&quot;background&quot;</span>),
+      },
+      <span class="hljs-attr">splitLine</span>: {
+        <span class="hljs-attr">show</span>: <span class="hljs-literal">false</span>,
+      },
+      <span class="hljs-attr">dayLabel</span>: {
+        <span class="hljs-attr">show</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">nameMap</span>: <span class="hljs-title function_">checkIfChinese</span>() ? <span class="hljs-string">&quot;ZH&quot;</span> : <span class="hljs-string">&quot;EN&quot;</span>,
+      },
+      <span class="hljs-attr">monthLabel</span>: {
+        <span class="hljs-attr">show</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">nameMap</span>: <span class="hljs-title function_">checkIfChinese</span>() ? <span class="hljs-string">&quot;ZH&quot;</span> : <span class="hljs-string">&quot;EN&quot;</span>,
+      },
+      <span class="hljs-attr">yearLabel</span>: { <span class="hljs-attr">show</span>: <span class="hljs-literal">true</span> },
+    },
+    <span class="hljs-attr">series</span>: {
+      <span class="hljs-attr">type</span>: <span class="hljs-string">&quot;heatmap&quot;</span>,
+      <span class="hljs-attr">coordinateSystem</span>: <span class="hljs-string">&quot;calendar&quot;</span>,
+      <span class="hljs-attr">calendarIndex</span>: <span class="hljs-number">0</span>,
+      <span class="hljs-attr">data</span>: data,
+    },
+  });
+};</code></pre></div>
+<div class=" tc-reveal">
+
+</div><div class=" tc-reveal">
+</div>
+</div></p>
+</section>
+</body>
+</html>
+
