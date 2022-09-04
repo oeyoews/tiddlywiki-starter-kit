@@ -1,7 +1,8 @@
 created: 20210101213404232
-modified: 20220828041017516
+creator: oeyoews
+modified: 20220904164004019
 modifier: oeyoews
 title: $:/themes/nico/notebook/settings/codefontfamily
 type: text/vnd.tiddlywiki
 
-"Fira Code", "Liberation Mono",Menlo,Courier,monospace
+"Maple Mono", "Fira Code", "Liberation Mono",Menlo,Courier,monospace

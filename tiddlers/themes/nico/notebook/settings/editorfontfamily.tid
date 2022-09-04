@@ -1,7 +1,8 @@
 created: 20220826145756563
-modified: 20220828041017516
+creator: oeyoews
+modified: 20220904164026165
 modifier: oeyoews
 title: $:/themes/nico/notebook/settings/editorfontfamily
 type: text/vnd.tiddlywiki
 
-"Fira Code"
+"Maple Mono", "Fira Code"
