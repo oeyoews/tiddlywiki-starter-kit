@@ -1,15 +1,18 @@
 created: 20220904170228442
 creator: oeyoews
-modified: 20220904171926174
+modified: 20220904233410431
 modifier: oeyoews
 tags: 
 title: neotw/example/bullets-level
 type: text/vnd.tiddlywiki
 
-* dmeo 
+<<.preamble """<<emoji warn>> not use `@@` in wikitext, modify list style directly
+""">>
+
+!! neotw bullets-level
+
+* dmeo only configurate five level
 ** dmo
-** dmo
-*** dmeo <<.lorem>>
 *** dmeo <<.lorem>>
 **** demo
 ***** dmeo <<.lorem>>
