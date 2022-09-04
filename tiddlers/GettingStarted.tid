@@ -1,12 +1,12 @@
 created: 20220828120245453
 creator: oeyoews
-modified: 20220904044325797
+modified: 20220904044413486
 modifier: oeyoews
 tags: 
 title: GettingStarted
 type: text/vnd.tiddlywiki
 
-<<details "{{neotw/switch-tip}}" "<<emoji msg>>" >>
+<<details "{{neotw/switch-tip}} {{neotw/restore-button}}" "<<emoji msg>>" >>
 
 <<details "
 {{homepage footer}}
@@ -16,6 +16,3 @@ type: text/vnd.tiddlywiki
 
 * <<emoji book>> [[documention|neotw/docs]]  
 * <<symbol "[[web status|https://oeyoews.github.io/upptime]]" arrowright>>
-
-{{neotw/restore-button}}
-
