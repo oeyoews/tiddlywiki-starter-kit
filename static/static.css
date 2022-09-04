@@ -5158,13 +5158,13 @@ li.CodeMirror-hint-active {
 }button.tc-tag-label, span.tc-tag-label {
   padding: 0.3em 1em !important;
 }/* Fonts */html, body {
-  font-family: "Segoe UI",Helvetica,Arial,sans-serif, "Twemoji Mozilla", "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: "Maple Mono", "Segoe UI",Helvetica,Arial,sans-serif, "Twemoji Mozilla", "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }.tc-tiddler-frame input.tc-edit-texteditor,
 .tc-tiddler-frame textarea.tc-edit-texteditor,
 .tc-tiddler-frame iframe.tc-edit-texteditor {
-  font-family: "Fira Code";
+  font-family: "Maple Mono", "Fira Code";
 }pre, code {
-  font-family: "Fira Code", "Liberation Mono",Menlo,Courier,monospace;
+  font-family: "Maple Mono", "Fira Code", "Liberation Mono",Menlo,Courier,monospace;
 }.tc-titlebar, .tc-site-title {
   font-size: 28px !important;
   line-height: 34px !important;
@@ -5974,6 +5974,9 @@ ol.doc-github-contributors li {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+}@font-face {
+	font-family: "Maple Mono";
+	src: url("files/fonts/Maple_Mono_Regular.ttf");
 }html {
   --scrollbarBG: #f5f5ee;
   --thumbBG: #888888;
