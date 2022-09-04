@@ -5974,6 +5974,9 @@ ol.doc-github-contributors li {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+}@font-face {
+	font-family: "Twemoji Mozilla";
+	src: url("files/fonts/Twemoji_Mozilla_Regular.ttf");
 }html {
   --scrollbarBG: #f5f5ee;
   --thumbBG: #888888;
