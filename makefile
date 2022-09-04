@@ -43,6 +43,7 @@ build:
 		tiddlers/trashbin \
 	 	tiddlers/\$$__StoryLis*.tid
 	$(CMD) public --output dist/ --build index >> /tmp/neotw.log 2>&1  # build
+	$(CMD) public --output dist/ --build static >> /tmp/neotw.log 2>&1  # build
 	@cp src/vercel.json dist/; echo -e "🎉 `ls  -sh dist/index.html`" # patch
 
 # install service
@@ -93,4 +94,4 @@ uninstall-service:
 # clean
 .PHONY: clean
 clean:
-	@rm -rf $(OUTPUTDIR)
+	@rm -rf $(OUTPUTDIR) output dist
