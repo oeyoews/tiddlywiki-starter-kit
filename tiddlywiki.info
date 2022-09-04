@@ -47,6 +47,11 @@
             "$:/core/templates/static.template.css",
             "static/static.css",
             "text/plain"
+        ],
+        "favicon": [
+            "--savetiddler",
+            "$:/favicon.ico",
+            "favicon.ico"
         ]
     },
     "config": {
