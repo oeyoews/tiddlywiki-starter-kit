@@ -1,0 +1,9 @@
+created: 20220904154541107
+creator: oeyoews
+modified: 20220904160201729
+modifier: oeyoews
+tags: 
+title: neotw/canvas/confetti
+type: text/vnd.tiddlywiki
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>

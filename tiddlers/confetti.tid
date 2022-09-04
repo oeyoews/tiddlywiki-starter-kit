@@ -1,0 +1,34 @@
+created: 20220904160205315
+creator: oeyoews
+modified: 20220904160228986
+modifier: oeyoews
+tags: 
+title: confetti
+type: text/vnd.tiddlywiki
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <script charset="utf-8">
+      var myCanvas = document.createElement("canvas");
+      document.body.appendChild(myCanvas);
+
+      var myConfetti = confetti.create(myCanvas, { resize: true });
+
+      myConfetti();
+
+      setTimeout(() => {
+        myConfetti.reset();
+      }, 100);
+      confetti();
+    </script>
+  </body>
+</html>
+```
