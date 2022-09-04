@@ -5974,22 +5974,6 @@ ol.doc-github-contributors li {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-}ul>li::marker {
-		content: "☰ ";
-		color: #7d7dfc;
-}ul>li>ul>li::marker {
-		content: "✿ ";
-		color: #7d7dfc;
-}ul>li>ul>li>ul>li::marker {
-		content: "◉ ";
-		color: #7d7dfc;
-}ul>li>ul>li>ul>li>ul>li::marker {
-		content: "◍ ";
-		color: #7d7dfc;
-}ul>li>ul>li>ul>li>ul>li>ul>li::marker {
-		content: "● ";
-		color: #7d7dfc;
-		
 }@font-face {
 	font-family: "Maple Mono";
 	src: url("files/fonts/Maple_Mono_Regular.ttf");
@@ -6019,6 +6003,21 @@ ol.doc-github-contributors li {
     background: linear-gradient(to top, #12c2e9, #c471ed, #f64f59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
 }::-webkit-scrollbar-thumb:hover {
 	background: linear-gradient(45deg, #00f260, #3AC9E1);
+}ul>li::marker {
+		content: "◉  ";
+		color: #7d7dfc;
+}ul>li>ul>li::marker {
+		content: "✿ ";
+		color: #7d7dfc;
+}ul>li>ul>li>ul>li::marker {
+		content: "☰ ";
+		color: #7d7dfc;
+}ul>li>ul>li>ul>li>ul>li::marker {
+		content: "◍ ";
+		color: #7d7dfc;
+}ul>li>ul>li>ul>li>ul>li>ul>li::marker {
+		content: "● ";
+		color: #7d7dfc;
 }.neotw-left, .neotw-right {
         min-height: 60px;
         position: relative;
