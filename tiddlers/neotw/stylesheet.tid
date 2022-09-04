@@ -1,18 +1,18 @@
 created: 20220826140521100
 creator: oeyoews
-modified: 20220903154733779
+modified: 20220904171721364
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/stylesheet
 type: text/vnd.tiddlywiki
 
 <!-- note: this change li globally for wikitext, this # no list number 
--->
-
 ul li::marker {
 		content: "● ";
 		color: #7d7dfc;
 }
+-->
+
 
 h3:hover::after {
 		content: " ###";
