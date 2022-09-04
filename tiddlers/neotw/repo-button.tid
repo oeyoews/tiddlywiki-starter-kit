@@ -3,14 +3,18 @@ created: 20220722065118691
 creator: oeyoews
 description: repo button
 list-after: 
-modified: 20220903151841221
+modified: 20220904021303170
 modifier: oeyoews
 tags: $:/tags/PageControls
 title: neotw/repo-button
 type: text/vnd.tiddlywiki
 
 \whitespace trim
+
+\define base-repo() https://gitlab.com/
+\define target() oeyoews/neotw
+
 <$button tooltip="Jump to repo" aria-label="GRB" class=<<tv-config-toolbar-class>>>
-<a href="https://gitlab.com/oeyoews/neotw" target="_blank">
+<a href={{{ [<target>addprefix<base-repo>]}}} target="_blank">
 {{$:/images/gitlab}}</a>
 </$button>
