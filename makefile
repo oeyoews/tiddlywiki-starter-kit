@@ -45,7 +45,7 @@ build:
 	$(CMD) public --output dist/ --build index >> /tmp/neotw.log 2>&1  # build
 	$(CMD) public --output dist/ --build static >> /tmp/neotw.log 2>&1  # static
 	$(CMD) public --output dist/ --build favicon >> /tmp/neotw.log 2>&1  # favicon
-	@cp -r src/vercel.json files/ dist/; echo -e "🎉 `ls  -sh dist/index.html`" # patch
+	@cp -r src/vercel.json dist/; echo -e "🎉 `ls  -sh dist/index.html`" # patch
 
 # install service
 install:
