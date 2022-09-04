@@ -6042,7 +6042,17 @@ ol.doc-github-contributors li {
       .neotw-right:after {
         border-left: 16px solid #9eea6a;
         right: -30px;
-      }.neotw-msg:before {
+      }details:not([open]) summary::marker {
+	content: "» ";
+	color: #7d7dfc;
+}details summary::marker {
+	content: "⍖ ";
+	color: #7d7dfc;
+}details summary {
+	padding: 5px;
+  background-color: #f0f0f0;
+	border-radius: 5px;
+}.neotw-msg:before {
 		content: "💬";
 }.neotw-rocket:before {
 		content: "🚀";
