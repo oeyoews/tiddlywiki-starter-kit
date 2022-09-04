@@ -1,7 +1,7 @@
 created: 20220826140222762
 creator: oeyoews
-list: $:/plugins/kookma/trashbin/ui/toolbar-button $:/core/ui/Buttons/more-tiddler-actions $:/core/ui/Buttons/info $:/plugins/kookma/favorites/ui/buttons/add-remove $:/core/ui/Buttons/new-here $:/core/ui/Buttons/new-journal-here $:/core/ui/Buttons/clone $:/core/ui/Buttons/export-tiddler $:/core/ui/Buttons/delete $:/core/ui/Buttons/permalink $:/core/ui/Buttons/permaview $:/core/ui/Buttons/open-window $:/core/ui/Buttons/close-others $:/core/ui/Buttons/fold-others $:/core/ui/Buttons/fold neotw/viewbar/copy-title $:/core/ui/Buttons/fold-bar $:/core/ui/Buttons/edit $:/core/ui/Buttons/close
-modified: 20220831024353347
+list: $:/plugins/kookma/trashbin/ui/toolbar-button $:/core/ui/Buttons/more-tiddler-actions $:/core/ui/Buttons/info $:/plugins/kookma/favorites/ui/buttons/add-remove $:/core/ui/Buttons/new-here $:/core/ui/Buttons/new-journal-here $:/core/ui/Buttons/clone $:/core/ui/Buttons/export-tiddler $:/core/ui/Buttons/delete $:/core/ui/Buttons/permalink $:/core/ui/Buttons/permaview $:/core/ui/Buttons/open-window $:/core/ui/Buttons/close-others $:/core/ui/Buttons/fold-others $:/core/ui/Buttons/fold neotw/viewbar/copy-title $:/core/ui/Buttons/fold-bar $:/core/ui/Buttons/edit neotw/copy-text $:/core/ui/Buttons/close
+modified: 20220904024459088
 modifier: oeyoews
 title: $:/tags/ViewToolbar
 type: text/vnd.tiddlywiki
