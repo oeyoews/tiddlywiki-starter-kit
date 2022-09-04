@@ -1126,7 +1126,7 @@ a.tc-tiddlylink:hover {
 	padding: 3px 3px 3px 3px;
 	border: 1px solid rgba(0,0,0,.2);
 	line-height: 1.3em;
-	font-family: "Fira Code";
+	font-family: "Maple Monn", "Fira Code";
 }.tc-tiddler-frame input.tc-edit-texteditor,
 .tc-tiddler-frame textarea.tc-edit-texteditor,
 .tc-tiddler-frame iframe.tc-edit-texteditor {
@@ -4071,7 +4071,7 @@ button.checklist-remove:focus {
 	height: auto;
 	border: 1px solid rgba(0,0,0,.2);
 	line-height: 1.5;
-	font-family: "Fira Code";
+	font-family: "Maple Monn", "Fira Code";
 	font-size: 15px;
 }.CodeMirror-scroll {
 	overflow-x: auto;
