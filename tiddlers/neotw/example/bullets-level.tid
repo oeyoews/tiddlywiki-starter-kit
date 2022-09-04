@@ -1,6 +1,6 @@
 created: 20220904170228442
 creator: oeyoews
-modified: 20220904233410431
+modified: 20220904233950692
 modifier: oeyoews
 tags: 
 title: neotw/example/bullets-level
@@ -16,3 +16,12 @@ type: text/vnd.tiddlywiki
 *** dmeo <<.lorem>>
 **** demo
 ***** dmeo <<.lorem>>
+
+!! configuration
+
+level 1: <$edit-text tiddler="neotw/style/bullets-level" field="b1" />
+
+level 2: <$edit-text tiddler="neotw/style/bullets-level" field="b2" />
+
+<!-- todo: use visual color operator -->
+level color: <$edit-text tiddler="neotw/style/bullets-level" field="bcolor" />

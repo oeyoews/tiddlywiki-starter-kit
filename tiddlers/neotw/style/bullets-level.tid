@@ -1,0 +1,38 @@
+b1: ◉
+b2: ✿
+b3: ☰
+b4: ◍
+b5: ●
+bcolor: #7d7dfc
+created: 20220904170152607
+creator: oeyoews
+modified: 20220904233801171
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: neotw/style/bullets-level
+type: text/vnd.tiddlywiki
+
+ul>li::marker {
+		content: "{{!!b1}} ";
+		color: {{!!bcolor}};
+}
+
+ul>li>ul>li::marker {
+		content: "{{!!b2}} ";
+		color: {{!!bcolor}};
+}
+
+ul>li>ul>li>ul>li::marker {
+		content: "{{!!b3}} ";
+		color: {{!!bcolor}};
+}
+
+ul>li>ul>li>ul>li>ul>li::marker {
+		content: "{{!!b4}} ";
+		color: {{!!bcolor}};
+}
+
+ul>li>ul>li>ul>li>ul>li>ul>li::marker {
+		content: "{{!!b5}} ";
+		color: {{!!bcolor}};
+}
