@@ -1,0 +1,23 @@
+created: 20220904041225238
+creator: oeyoews
+modified: 20220904043627829
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: neotw/style/details
+type: text/vnd.tiddlywiki
+
+details:not([open]) summary::marker {
+	content: "» ";
+	color: #7d7dfc;
+}
+
+details summary::marker {
+	content: "⍖ ";
+	color: #7d7dfc;
+}
+
+details summary {
+	padding: 5px;
+  background-color: #f0f0f0;
+	border-radius: 5px;
+}
