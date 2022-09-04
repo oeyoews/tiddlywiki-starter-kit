@@ -6004,7 +6004,7 @@ ol.doc-github-contributors li {
 }::-webkit-scrollbar-thumb:hover {
 	background: linear-gradient(45deg, #00f260, #3AC9E1);
 }ul>li::marker {
-		content: "◉  ";
+		content: "◉ ";
 		color: #7d7dfc;
 }ul>li>ul>li::marker {
 		content: "✿ ";
