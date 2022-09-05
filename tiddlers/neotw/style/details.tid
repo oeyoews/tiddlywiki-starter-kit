@@ -1,6 +1,6 @@
 created: 20220904041225238
 creator: oeyoews
-modified: 20220904043627829
+modified: 20220905024531292
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/style/details
@@ -18,6 +18,18 @@ details summary::marker {
 
 details summary {
 	padding: 5px;
+	font-weight: bold;
   background-color: #f0f0f0;
 	border-radius: 5px;
+}
+
+details[open] {
+	font-weight: bold;
+	padding: 5px;
+  background-color: #f0f0f0;
+	border-radius: 5px;
+}
+
+details[open] summary {
+  background-color: #00000008;
 }
