@@ -1,12 +1,12 @@
 created: 20220904170228442
 creator: oeyoews
-modified: 20220905004253762
+modified: 20220905004819549
 modifier: oeyoews
 tags: 
 title: neotw/example/bullets-level
 type: text/vnd.tiddlywiki
 
-<<.preamble """<<emoji warn>> not use `@@` in wikitext, modify list style directly;for ios, not support this style seemingly, weirdly
+<<.preamble """<<emoji warn>> not use `@@` in wikitext, modify list style directly;for ios(safari), not support this marker entirly [[mdn|https://github.com/mdn/content/issues/984]]
 """
 >>
 
