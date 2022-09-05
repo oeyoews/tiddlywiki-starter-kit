@@ -1,6 +1,6 @@
 created: 20220904170228442
 creator: oeyoews
-modified: 20220905004819549
+modified: 20220905014953939
 modifier: oeyoews
 tags: 
 title: neotw/example/bullets-level
@@ -16,6 +16,10 @@ type: text/vnd.tiddlywiki
 ** dmo
 *** dmeo <<.lorem>>
 **** demo
+**** demo
+**** demo
+***** dmeo <<.lorem>>
+***** dmeo <<.lorem>>
 ***** dmeo <<.lorem>>
 
 !! configuration
