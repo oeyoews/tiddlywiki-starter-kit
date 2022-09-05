@@ -1,0 +1,13 @@
+caption: {{$:/language/projectify/Projects}}
+created: 20200430123440360
+creator: oeyoews
+list-before: $:/plugins/nico/notebook/Sidebar/Open
+modified: 20220905164009074
+modifier: oeyoews
+tags: $:/themes/nico/notebook/tags/SidebarSection
+title: $:/plugins/nico/projectify/ui/sidebar/Projects
+type: text/vnd.tiddlywiki
+
+<div class="py-sidebar-section">
+  {{$:/plugins/nico/projectify/ui/dashboard/ProjectList}}
+</div>
