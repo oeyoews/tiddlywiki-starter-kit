@@ -1,0 +1,13 @@
+created: 20220905034322040
+creator: oeyoews
+modified: 20220905034442274
+modifier: oeyoews
+tags: $:/tags/Macro
+title: neotw/macro/gradient
+type: text/vnd.tiddlywiki
+
+\define neotw-gradient(text:"")
+<span class="neotw-gradient">
+$text$
+</span>
+\end
