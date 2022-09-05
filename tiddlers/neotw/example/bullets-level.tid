@@ -1,6 +1,6 @@
 created: 20220904170228442
 creator: oeyoews
-modified: 20220905014953939
+modified: 20220905021820174
 modifier: oeyoews
 tags: 
 title: neotw/example/bullets-level
@@ -30,3 +30,5 @@ level 2: <$edit-text tiddler="neotw/style/bullets-level" field="b2" />
 
 <!-- todo: use visual color operator -->
 level color: <$edit-text tiddler="neotw/style/bullets-level" field="bcolor" />
+
+<!-- todo how to use edit text to modify dict value, like palette -->

@@ -1,15 +1,14 @@
-b1: ◉
 b2: 🞊
 b3: 🞅
 b4: ◍
 b5: ✿
 bcolor: #7d7dfc
-created: 20220905005033958
+created: 20220905021248595
 creator: oeyoews
-modified: 20220905021449753
+modified: 20220905021710239
 modifier: oeyoews
-tags: 
-title: neotw/style/bullets-level-v2
+tags: $:/tags/Stylesheet
+title: neotw/style/bullets-level-v3
 type: text/vnd.tiddlywiki
 
 ul li {
@@ -17,18 +16,18 @@ ul li {
 }
 
 ul>li::before {
-		content: "{{!!b1}} ";
-		color: {{!!bcolor}};
+		content: "{{neotw/bullet.dict##b1}} ";
+		color: {{neotw/bullet.dict##bcolor}};
 }
 
 ul>li>ul>li::before {
-		content: "{{!!b2}} ";
-		color: {{!!bcolor}};
+		content: "{{neotw/bullet.dict##b2}} ";
+		color: {{neotw/bullet.dict##bcolor}};
 }
 
 ul>li>ul>li>ul>li::before {
-		content: "{{!!b3}} ";
-		color: {{!!bcolor}};
+		content: "{{neotw/bullet.dict##b3}} ";
+		color: {{neotw/bullet.dict##bcolor}};
 }
 
 ul>li>ul>li>ul>li>ul>li::before {
