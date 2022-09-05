@@ -1,6 +1,6 @@
 created: 20220905034322040
 creator: oeyoews
-modified: 20220905034442274
+modified: 20220905042822744
 modifier: oeyoews
 tags: $:/tags/Macro
 title: neotw/macro/gradient
@@ -10,4 +10,14 @@ type: text/vnd.tiddlywiki
 <span class="neotw-gradient">
 $text$
 </span>
+\end
+
+\define neotw-gradient-link-info(link:"neotw-link" text:"link")
+<a class="neotw-gradient" href=$link$ target="_blank">
+$text$</a>
+\end
+
+\define neotw-gradient-link(link:"neotw-link" text:"link")
+<a class="neotw-gradient" href="$link$" target="_blank">
+$text$</a>
 \end
