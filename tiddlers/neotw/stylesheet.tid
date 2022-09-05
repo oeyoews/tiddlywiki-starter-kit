@@ -1,6 +1,6 @@
 created: 20220826140521100
 creator: oeyoews
-modified: 20220904171721364
+modified: 20220905025501935
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/stylesheet
@@ -24,7 +24,8 @@ h3:hover::after {
     color: black;
     border-radius: 5px;
 		/** background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59); */
-		border: 0; 
+		border: 2px; 
+		box-shadow: 0 5px 20px rgb(0 0 0 / 12%);
 }
 
 blockquote {

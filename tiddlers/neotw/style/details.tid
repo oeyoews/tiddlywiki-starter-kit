@@ -1,8 +1,8 @@
 created: 20220904041225238
 creator: oeyoews
-modified: 20220905025123736
+modified: 20220905030630475
 modifier: oeyoews
-tags: $:/tags/Stylesheet
+tags: 
 title: neotw/style/details
 type: text/vnd.tiddlywiki
 
@@ -24,14 +24,12 @@ details summary {
 }
 
 details[open] {
-	font-weight: bold;
   background-color: #f0f0f0;
 	border-radius: 5px;
 }
 
 details[open] summary {
 	padding: 5px;
-	font-weight: bold;
 	border-radius: 5px;
 	background-color: #00000008;
 }

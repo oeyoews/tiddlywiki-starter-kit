@@ -1,6 +1,6 @@
 created: 20220830150031545
 creator: oeyoews
-modified: 20220904013137189
+modified: 20220905030006083
 modifier: oeyoews
 tags: $:/tags/Macro
 title: neotw/macro
@@ -16,8 +16,8 @@ $username$
 	</div> 
 \end
 
-\define details(text:"", summary:"details")
-<details>
+\define details(text:"", summary:"details" open:"")
+<details $open$>
 <summary>$summary$</summary>
 $text$
 </details>

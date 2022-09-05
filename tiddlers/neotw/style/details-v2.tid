@@ -1,0 +1,29 @@
+created: 20220905030634388
+creator: oeyoews
+modified: 20220905031722207
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: neotw/style/details-v2
+type: text/vnd.tiddlywiki
+
+details {
+  background-color: #f0f0f0;
+	padding: 3px;
+	border-radius: 3px;
+}
+
+details summary {
+	padding: 5px;
+	font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+details:not([open]) summary::after {
+	content: "";
+	color: #7d7dfc;
+}
+
+details[open] summary::after {
+	content: " open";
+	color: #7d7dfc;
+}
