@@ -6016,19 +6016,7 @@ ol.doc-github-contributors li {
     background: linear-gradient(to top, #12c2e9, #c471ed, #f64f59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
 }::-webkit-scrollbar-thumb:hover {
 	background: linear-gradient(45deg, #00f260, #3AC9E1);
-}ul>li::marker {
-		content: "◉ ";
-		color: #7d7dfc;
-}ul>li>ul>li::marker {
-		content: "✿ ";
-		color: #7d7dfc;
-}ul>li>ul>li>ul>li::marker {
-		content: "☰ ";
-		color: #7d7dfc;
-}ul>li>ul>li>ul>li>ul>li::marker {
-		content: "◍ ";
-		color: #7d7dfc;
-}ul>li>ul>li>ul>li>ul>li>ul>li::marker {
+}ul.neotw-list li::marker {
 		content: "● ";
 		color: #7d7dfc;
 }.neotw-left, .neotw-right {
@@ -6107,7 +6095,46 @@ ol.doc-github-contributors li {
 		content: "☠";
 }.neotw-warn:before {
 		content: "⚠";
-}.tc-powered-by-tiddlywiki-banner {
+}
+.list-tree, .list-tree ul, .list-tree li { position: relative; }
+
+.list-tree li { list-style: none; }
+
+.list-tree ul { padding: 0 0 0 2em; }
+
+.list-tree li::before, .list-tree li::after {
+    content: "";
+    position: absolute;
+    left: -1em;
+}
+
+/* horizontal line */
+.list-tree li::before {
+    border-bottom: 2px solid #7d7dfc;
+    top: .6em; 
+    width: 7px;
+}
+
+/* vertical line */
+.list-tree ul li::after {
+    border-left: 2px solid #7d7dfc;
+    height: 100%;
+    top: .1em;
+}
+
+.list-tree ul > li:last-child::after { height: .5em; }
+
+/* top-level: Lines if multiple top elements. No lines if single top element. */
+
+.list-tree > li:last-of-type:before { display:none; }
+
+.list-tree > li:first-of-type:before { border-top: 2px solid #7d7dfc; }
+
+.list-tree > li:before {
+    border-left: 2px solid #7d7dfc;
+    height: 100%;
+}
+.tc-powered-by-tiddlywiki-banner {
 	position: fixed;
 	right: 1em;
 	bottom: 5px;
@@ -6611,15 +6638,15 @@ border: 0;
 <div class="shield shield-blue"><span class="label">Screen</span><span class="status"> x
 </span></div> 
 <div class="shield shield-"><span class="label">Status</span><span class="status">TiddlyWeb</span></div> 
-<div class="shield shield-red"><span class="label">Doy</span><span class="status">247 days</span></div> 
+<div class="shield shield-red"><span class="label">Doy</span><span class="status">248 days</span></div> 
 <div class="shield shield-info"><span class="label">Started</span><span class="status">
 6 months ago
 </span></div> 
 <div class="shield shield-"><span class="label">Updated</span><span class="status">
-17 minutes ago
+34 seconds ago
 </span></div> 
 <div class="shield shield-blue"><span class="label">Plugins</span><span class="status">48</span></div>
-<div class="shield shield-purple"><span class="label">Tiddlers</span><span class="status">69 (0)</span></div></p></div></div>
+<div class="shield shield-purple"><span class="label">Tiddlers</span><span class="status">72 (0)</span></div></p></div></div>
 <div class=" tc-reveal">
 
 </div><div class=" tc-reveal">
@@ -6669,15 +6696,15 @@ border: 0;
 <div class="shield shield-blue"><span class="label">Screen</span><span class="status"> x
 </span></div> 
 <div class="shield shield-"><span class="label">Status</span><span class="status">TiddlyWeb</span></div> 
-<div class="shield shield-red"><span class="label">Doy</span><span class="status">247 days</span></div> 
+<div class="shield shield-red"><span class="label">Doy</span><span class="status">248 days</span></div> 
 <div class="shield shield-info"><span class="label">Started</span><span class="status">
 6 months ago
 </span></div> 
 <div class="shield shield-"><span class="label">Updated</span><span class="status">
-17 minutes ago
+34 seconds ago
 </span></div> 
 <div class="shield shield-blue"><span class="label">Plugins</span><span class="status">48</span></div>
-<div class="shield shield-purple"><span class="label">Tiddlers</span><span class="status">69 (0)</span></div></p></div></div>
+<div class="shield shield-purple"><span class="label">Tiddlers</span><span class="status">72 (0)</span></div></p></div></div>
 <div class=" tc-reveal">
 
 </div><div class=" tc-reveal">
@@ -7224,14 +7251,14 @@ color:#3F3B3B;">$:/tags/StartupAction</span><span class="tc-drop-down tc-reveal"
 
 		 
  </button><button aria-label="close others" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose-others" title="Close other tiddlers"></button><span class=" tc-reveal"><button aria-label="fold tiddler" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Ffold" title="Fold the body of this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><button class="tc-btn-invisible tc-btn-neotw%2Fviewbar%2Fcopy-title" title="copy current title"></button><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button><button class="tc-btn-invisible tc-btn-neotw%2Fcopy-text" title="copy current title"></button><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span><h2 class="tc-title">neotw/CHANGELOG</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
-<div class=" tc-reveal"><div class="tc-subtitle">🚀 oeyoews  📖 Created 2022/08/30  🔓 Updated 2022/09/04 16:55:46  </div></div><div class=" tc-reveal"><div class="tc-tags-wrapper"></div></div>
+<div class=" tc-reveal"><div class="tc-subtitle">🚀 oeyoews  📖 Created 2022/08/30  🔓 Updated 2022/09/05 00:10:19  </div></div><div class=" tc-reveal"><div class="tc-tags-wrapper"></div></div>
 
 
 
 <div class="kk-ut-viewfields tc-reveal" hidden="true"></div>
 
 <div class=" tc-reveal">
-</div><div class="tc-tiddler-body tc-reveal"><h3 class="">break changes</h3><ul><li>use <code>shift esc</code> replace <code>esc</code> for escape editing tiddler</li><li>use vim keymap</li><li>add echarts plugin</li></ul><h3 class="">changelog</h3><ul><li><strong>23:58, 30th August 2022</strong> add echarts(not support export html), and timestamp plugins </li><li><strong>00:48, 31st August 2022</strong> add label color to <code>#00000008</code>, note this not fit for others themes, even you can use palette to manage it</li><li><strong>2022/08/31 00:52:15</strong> add timestamp format</li><li><strong>2022/08/31 15:47:13</strong> not support mobile style, add warning</li><li><strong>2022/08/31 23:15:56</strong> use lazy-load, util now, this reuse-tiddler macro not work</li><li><strong>2022/09/01 10:47:32</strong> add tiddlywiki-bullets</li><li><strong>2022/09/01 10:57:00</strong> remove lazy, this macro not work</li><li><strong>2022/09/01 20:17:49</strong> add readonly mode, support disable</li></ul><hr><ul><li><a class="doc-link-badge" href="" rel="noopener noreferrer" style="background-color:#ffe246;" target="_blank">added</a> add render static</li><li><a class="doc-link-badge" href="" rel="noopener noreferrer" style="background-color:#ffe246;" target="_blank">added</a> add twemoji</li><li><a class="doc-link-badge" href="" rel="noopener noreferrer" style="background-color:#ffe246;" target="_blank">added</a> remove twemoji, but keep tid, add maple mono font</li></ul></div>
+</div><div class="tc-tiddler-body tc-reveal"><h3 class="">break changes</h3><ul><li>use <code>shift esc</code> replace <code>esc</code> for escape editing tiddler</li><li>use vim keymap</li><li>add echarts plugin</li></ul><h3 class="">changelog</h3><ul><li><strong>23:58, 30th August 2022</strong> add echarts(not support export html), and timestamp plugins </li><li><strong>00:48, 31st August 2022</strong> add label color to <code>#00000008</code>, note this not fit for others themes, even you can use palette to manage it</li><li><strong>2022/08/31 00:52:15</strong> add timestamp format</li><li><strong>2022/08/31 15:47:13</strong> not support mobile style, add warning</li><li><strong>2022/08/31 23:15:56</strong> use lazy-load, util now, this reuse-tiddler macro not work</li><li><strong>2022/09/01 10:47:32</strong> add tiddlywiki-bullets</li><li><strong>2022/09/01 10:57:00</strong> remove lazy, this macro not work</li><li><strong>2022/09/01 20:17:49</strong> add readonly mode, support disable</li></ul><hr><ul><li><a class="doc-link-badge" href="" rel="noopener noreferrer" style="background-color:#ffe246;" target="_blank">added</a> add render static</li><li><a class="doc-link-badge" href="" rel="noopener noreferrer" style="background-color:#ffe246;" target="_blank">added</a> add twemoji</li><li><a class="doc-link-badge" href="" rel="noopener noreferrer" style="background-color:#7f99c9;" target="_blank">modified</a> remove twemoji, but keep tid, add maple mono font</li><li><a class="doc-link-badge" href="" rel="noopener noreferrer" style="background-color:#f9a344;" target="_blank">extended</a> add field configuration</li></ul></div>
 <div class=" tc-reveal">
 
 </div><div class=" tc-reveal">
@@ -7753,14 +7780,14 @@ color:#3F3B3B;">$:/tags/ViewToolbar</span><span class="tc-drop-down tc-reveal" h
 
 		 
  </button><button aria-label="close others" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose-others" title="Close other tiddlers"></button><span class=" tc-reveal"><button aria-label="fold tiddler" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Ffold" title="Fold the body of this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><button class="tc-btn-invisible tc-btn-neotw%2Fviewbar%2Fcopy-title" title="copy current title"></button><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button><button class="tc-btn-invisible tc-btn-neotw%2Fcopy-text" title="copy current title"></button><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span><h2 class="tc-title">neotw/example/bullets-level</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
-<div class=" tc-reveal"><div class="tc-subtitle">🚀 oeyoews  📖 Created 2022/09/04  🔓 Updated 2022/09/04 23:39:50  </div></div><div class=" tc-reveal"><div class="tc-tags-wrapper"></div></div>
+<div class=" tc-reveal"><div class="tc-subtitle">🚀 oeyoews  📖 Created 2022/09/04  🔓 Updated 2022/09/05 00:42:53  </div></div><div class=" tc-reveal"><div class="tc-tags-wrapper"></div></div>
 
 
 
 <div class="kk-ut-viewfields tc-reveal" hidden="true"></div>
 
 <div class=" tc-reveal">
-</div><div class="tc-tiddler-body tc-reveal"><dl><dd class="doc-preamble"><span class="neotw-warn"></span> not use <code>@@</code> in wikitext, modify list style directly</dd></dl><h2 class="">neotw bullets-level</h2><ul><li>dmeo only configurate five level<ul><li>dmo<ul><li>dmeo Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<ul><li>demo<ul><li>dmeo Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li></ul></li></ul></li></ul></li></ul></li></ul><h2 class="">configuration</h2><p>level 1: <input type="text" value="◉"></p><p>level 2: <input type="text" value="✿"></p><p>level color: <input type="text" value="#7d7dfc"></p></div>
+</div><div class="tc-tiddler-body tc-reveal"><dl><dd class="doc-preamble"><span class="neotw-warn"></span> not use <code>@@</code> in wikitext, modify list style directly;for ios, not support this style seemingly, weirdly</dd></dl><h2 class="">neotw bullets-level</h2><ul><li>dmeo only configurate five level<ul><li>dmo<ul><li>dmeo Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<ul><li>demo<ul><li>dmeo Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li></ul></li></ul></li></ul></li></ul></li></ul><h2 class="">configuration</h2><p>level 1: <input type="text" value="◉"></p><p>level 2: <input type="text" value="✿"></p><p>level color: <input type="text" value="#7d7dfc"></p></div>
 <div class=" tc-reveal">
 
 </div><div class=" tc-reveal">
@@ -9388,7 +9415,7 @@ color:#3F3B3B;">$:/themes/nico/notebook/tags/SidebarSection</span><span class="t
 
 		 
  </button><button aria-label="close others" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose-others" title="Close other tiddlers"></button><span class=" tc-reveal"><button aria-label="fold tiddler" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Ffold" title="Fold the body of this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><button class="tc-btn-invisible tc-btn-neotw%2Fviewbar%2Fcopy-title" title="copy current title"></button><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button><button class="tc-btn-invisible tc-btn-neotw%2Fcopy-text" title="copy current title"></button><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span><h2 class="tc-title">neotw/style/bullets-level</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
-<div class=" tc-reveal"><div class="tc-subtitle">🚀 oeyoews  📖 Created 2022/09/04  🔓 Updated 2022/09/04 23:38:01  </div></div><div class=" tc-reveal"><div class="tc-tags-wrapper"><span class="tc-tag-list-item" data-tag-title="$:/tags/Stylesheet"><span aria-expanded="false" class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
+<div class=" tc-reveal"><div class="tc-subtitle">🚀 oeyoews  📖 Created 2022/09/04  🔓 Updated 2022/09/05 00:41:22  </div></div><div class=" tc-reveal"><div class="tc-tags-wrapper"><span class="tc-tag-list-item" data-tag-title="$:/tags/Stylesheet"><span aria-expanded="false" class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
 fill:#3F3B3B;
 color:#3F3B3B;">$:/tags/Stylesheet</span><span class="tc-drop-down tc-reveal" hidden="true"></span></span></div></div>
 
@@ -9399,8 +9426,14 @@ color:#3F3B3B;">$:/tags/Stylesheet</span><span class="tc-drop-down tc-reveal" hi
 	<dt></dt>
 	<dd>
 		<button class="tc-btn-invisible" title="Copy this text to the clipboard"><svg class="tc-image-copy-clipboard tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt"><g fill-rule="evenodd"><rect height="8" rx="4" width="33" x="40" y="40"></rect><rect height="8" rx="4" width="17" x="40" y="82"></rect><rect height="8" rx="4" width="17" x="40" y="54"></rect><rect height="8" rx="4" width="33" x="40" y="96"></rect><rect height="8" rx="4" width="12" x="40" y="68"></rect><path d="M40 16H24c-4.419 0-8 3.59-8 8a8.031 8.031 0 000 .01v95.98a8.03 8.03 0 000 .01c0 4.41 3.581 8 8 8h80a7.975 7.975 0 005.652-2.34 7.958 7.958 0 002.348-5.652v-16.016c0-4.414-3.582-7.992-8-7.992-4.41 0-8 3.578-8 7.992V112H32V32h64v8.008C96 44.422 99.582 48 104 48c4.41 0 8-3.578 8-7.992V23.992a7.963 7.963 0 00-2.343-5.651A7.995 7.995 0 00104.001 16H88c0-4.41-3.585-8-8.007-8H48.007C43.588 8 40 11.582 40 16zm4-1.004A4.001 4.001 0 0148 11h32c2.21 0 4 1.797 4 3.996v4.008A4.001 4.001 0 0180 23H48c-2.21 0-4-1.797-4-3.996v-4.008z"></path><rect height="16" rx="8" width="66" x="62" y="64"></rect><path d="M84.657 82.343l-16-16v11.314l16-16a8 8 0 10-11.314-11.314l-16 16a8 8 0 000 11.314l16 16a8 8 0 1011.314-11.314z"></path></g></svg> copy to clipboard</button> 
-		<pre class="hljs"><code class="css hljs"><span class="hljs-selector-tag">ul</span>&gt;<span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">::marker</span> {
-		<span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;{{!!b1}} &quot;</span>;
+		<pre class="hljs"><code class="css hljs"><span class="hljs-selector-tag">ul</span><span class="hljs-selector-class">.neotw-list</span> <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">::marker</span> {
+		<span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;{{!!b5}} &quot;</span>;
+		<span class="hljs-attribute">color</span>: {{!!bcolor}};
+}
+
+&lt;!--
+<span class="hljs-selector-tag">ul</span>&gt;<span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">::marker</span> {
+		<span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;{{!!b5}} &quot;</span>;
 		<span class="hljs-attribute">color</span>: {{!!bcolor}};
 }
 
@@ -9422,7 +9455,8 @@ color:#3F3B3B;">$:/tags/Stylesheet</span><span class="tc-drop-down tc-reveal" hi
 <span class="hljs-selector-tag">ul</span>&gt;<span class="hljs-selector-tag">li</span>&gt;<span class="hljs-selector-tag">ul</span>&gt;<span class="hljs-selector-tag">li</span>&gt;<span class="hljs-selector-tag">ul</span>&gt;<span class="hljs-selector-tag">li</span>&gt;<span class="hljs-selector-tag">ul</span>&gt;<span class="hljs-selector-tag">li</span>&gt;<span class="hljs-selector-tag">ul</span>&gt;<span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">::marker</span> {
 		<span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;{{!!b5}} &quot;</span>;
 		<span class="hljs-attribute">color</span>: {{!!bcolor}};
-}</code></pre>
+}
+--&gt;</code></pre>
 		<small class="show">css</small>
 	</dd>
 </dl>
@@ -9433,19 +9467,7 @@ color:#3F3B3B;">$:/tags/Stylesheet</span><span class="tc-drop-down tc-reveal" hi
 <div class="kk-ut-viewfields tc-reveal" hidden="true"></div>
 
 <div class=" tc-reveal">
-</div><div class="tc-tiddler-body tc-reveal"><p><pre class="hljs"><code class="css hljs"><span class="hljs-selector-tag">ul</span>&gt;<span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">::marker</span> {
-		<span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;◉ &quot;</span>;
-		<span class="hljs-attribute">color</span>: <span class="hljs-number">#7d7dfc</span>;
-}<span class="hljs-selector-tag">ul</span>&gt;<span class="hljs-selector-tag">li</span>&gt;<span class="hljs-selector-tag">ul</span>&gt;<span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">::marker</span> {
-		<span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;✿ &quot;</span>;
-		<span class="hljs-attribute">color</span>: <span class="hljs-number">#7d7dfc</span>;
-}<span class="hljs-selector-tag">ul</span>&gt;<span class="hljs-selector-tag">li</span>&gt;<span class="hljs-selector-tag">ul</span>&gt;<span class="hljs-selector-tag">li</span>&gt;<span class="hljs-selector-tag">ul</span>&gt;<span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">::marker</span> {
-		<span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;☰ &quot;</span>;
-		<span class="hljs-attribute">color</span>: <span class="hljs-number">#7d7dfc</span>;
-}<span class="hljs-selector-tag">ul</span>&gt;<span class="hljs-selector-tag">li</span>&gt;<span class="hljs-selector-tag">ul</span>&gt;<span class="hljs-selector-tag">li</span>&gt;<span class="hljs-selector-tag">ul</span>&gt;<span class="hljs-selector-tag">li</span>&gt;<span class="hljs-selector-tag">ul</span>&gt;<span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">::marker</span> {
-		<span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;◍ &quot;</span>;
-		<span class="hljs-attribute">color</span>: <span class="hljs-number">#7d7dfc</span>;
-}<span class="hljs-selector-tag">ul</span>&gt;<span class="hljs-selector-tag">li</span>&gt;<span class="hljs-selector-tag">ul</span>&gt;<span class="hljs-selector-tag">li</span>&gt;<span class="hljs-selector-tag">ul</span>&gt;<span class="hljs-selector-tag">li</span>&gt;<span class="hljs-selector-tag">ul</span>&gt;<span class="hljs-selector-tag">li</span>&gt;<span class="hljs-selector-tag">ul</span>&gt;<span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">::marker</span> {
+</div><div class="tc-tiddler-body tc-reveal"><p><pre class="hljs"><code class="css hljs"><span class="hljs-selector-tag">ul</span><span class="hljs-selector-class">.neotw-list</span> <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">::marker</span> {
 		<span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;● &quot;</span>;
 		<span class="hljs-attribute">color</span>: <span class="hljs-number">#7d7dfc</span>;
 }</code></pre></p></div>
@@ -9807,6 +9829,148 @@ color:#3F3B3B;">$:/tags/Stylesheet</span><span class="tc-drop-down tc-reveal" hi
 }<span class="hljs-selector-class">.neotw-warn</span><span class="hljs-selector-pseudo">:before</span> {
 		<span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;⚠&quot;</span>;
 }</code></pre></p></div>
+<div class=" tc-reveal">
+
+</div><div class=" tc-reveal">
+</div>
+</div>
+</a><a name="neotw/style/listtree">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists  tc-tagged-%24%3A%2Ftags%2FStylesheet" data-tags="$:/tags/Stylesheet" data-tiddler-title="neotw/style/listtree" role="article"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><button aria-label="trashbin" class="tc-btn-invisible tc-btn-%24%3A%2Fplugins%2Fkookma%2Ftrashbin%2Fui%2Ftoolbar-button" title="Move this tiddler to Trashbin"> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</button><button aria-expanded="false" aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"></button><div class=" tc-reveal" hidden="true"></div><button aria-label="favorites" class="tc-btn-invisible tc-btn-%24%3A%2Fplugins%2Fkookma%2Ffavorites%2Fui%2Fbuttons%2Fadd-remove" title="Add to favorites">
+     
+		 
+
+		 
+ </button><button aria-label="close others" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose-others" title="Close other tiddlers"></button><span class=" tc-reveal"><button aria-label="fold tiddler" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Ffold" title="Fold the body of this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><button class="tc-btn-invisible tc-btn-neotw%2Fviewbar%2Fcopy-title" title="copy current title"></button><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button><button class="tc-btn-invisible tc-btn-neotw%2Fcopy-text" title="copy current title"></button><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span><h2 class="tc-title">neotw/style/listtree</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle">🚀 oeyoews  📖 Created 2022/09/05  🔓 Updated 2022/09/05 00:42:36  </div></div><div class=" tc-reveal"><div class="tc-tags-wrapper"><span class="tc-tag-list-item" data-tag-title="$:/tags/Stylesheet"><span aria-expanded="false" class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
+fill:#3F3B3B;
+color:#3F3B3B;">$:/tags/Stylesheet</span><span class="tc-drop-down tc-reveal" hidden="true"></span></span></div></div>
+
+
+
+<span class=" tc-reveal">
+<dl class="copy-code">
+	<dt></dt>
+	<dd>
+		<button class="tc-btn-invisible" title="Copy this text to the clipboard"><svg class="tc-image-copy-clipboard tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt"><g fill-rule="evenodd"><rect height="8" rx="4" width="33" x="40" y="40"></rect><rect height="8" rx="4" width="17" x="40" y="82"></rect><rect height="8" rx="4" width="17" x="40" y="54"></rect><rect height="8" rx="4" width="33" x="40" y="96"></rect><rect height="8" rx="4" width="12" x="40" y="68"></rect><path d="M40 16H24c-4.419 0-8 3.59-8 8a8.031 8.031 0 000 .01v95.98a8.03 8.03 0 000 .01c0 4.41 3.581 8 8 8h80a7.975 7.975 0 005.652-2.34 7.958 7.958 0 002.348-5.652v-16.016c0-4.414-3.582-7.992-8-7.992-4.41 0-8 3.578-8 7.992V112H32V32h64v8.008C96 44.422 99.582 48 104 48c4.41 0 8-3.578 8-7.992V23.992a7.963 7.963 0 00-2.343-5.651A7.995 7.995 0 00104.001 16H88c0-4.41-3.585-8-8.007-8H48.007C43.588 8 40 11.582 40 16zm4-1.004A4.001 4.001 0 0148 11h32c2.21 0 4 1.797 4 3.996v4.008A4.001 4.001 0 0180 23H48c-2.21 0-4-1.797-4-3.996v-4.008z"></path><rect height="16" rx="8" width="66" x="62" y="64"></rect><path d="M84.657 82.343l-16-16v11.314l16-16a8 8 0 10-11.314-11.314l-16 16a8 8 0 000 11.314l16 16a8 8 0 1011.314-11.314z"></path></g></svg> copy to clipboard</button> 
+		<pre class="hljs"><code class="css hljs">&lt;pre&gt;
+<span class="hljs-selector-class">.list-tree</span>, <span class="hljs-selector-class">.list-tree</span> <span class="hljs-selector-tag">ul</span>, <span class="hljs-selector-class">.list-tree</span> <span class="hljs-selector-tag">li</span> { <span class="hljs-attribute">position</span>: relative; }
+
+<span class="hljs-selector-class">.list-tree</span> <span class="hljs-selector-tag">li</span> { <span class="hljs-attribute">list-style</span>: none; }
+
+<span class="hljs-selector-class">.list-tree</span> <span class="hljs-selector-tag">ul</span> { <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">2em</span>; }
+
+<span class="hljs-selector-class">.list-tree</span> <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">::before</span>, <span class="hljs-selector-class">.list-tree</span> <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">::after</span> {
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;&quot;</span>;
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">left</span>: -<span class="hljs-number">1em</span>;
+}
+
+<span class="hljs-comment">/* horizontal line */</span>
+<span class="hljs-selector-class">.list-tree</span> <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">::before</span> {
+    <span class="hljs-attribute">border-bottom</span>: {{!!list-tree-thickness}} solid {{!!list-tree-<span class="hljs-attribute">color</span>}};
+    <span class="hljs-attribute">top</span>: .<span class="hljs-number">6em</span>; 
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">7px</span>;
+}
+
+<span class="hljs-comment">/* vertical line */</span>
+<span class="hljs-selector-class">.list-tree</span> <span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">::after</span> {
+    <span class="hljs-attribute">border-left</span>: {{!!list-tree-thickness}} solid {{!!list-tree-<span class="hljs-attribute">color</span>}};
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">top</span>: .<span class="hljs-number">1em</span>;
+}
+
+<span class="hljs-selector-class">.list-tree</span> <span class="hljs-selector-tag">ul</span> &gt; <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:last-child</span><span class="hljs-selector-pseudo">::after</span> { <span class="hljs-attribute">height</span>: .<span class="hljs-number">5em</span>; }
+
+<span class="hljs-comment">/* top-level: Lines if multiple top elements. No lines if single top element. */</span>
+
+<span class="hljs-selector-class">.list-tree</span> &gt; <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:last-of-type</span><span class="hljs-selector-pseudo">:before</span> { <span class="hljs-attribute">display</span>:none; }
+
+<span class="hljs-selector-class">.list-tree</span> &gt; <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:first</span>-of-type<span class="hljs-selector-pseudo">:before</span> { <span class="hljs-attribute">border-top</span>: {{!!list-tree-thickness}} solid {{!!list-tree-<span class="hljs-attribute">color</span>}}; }
+
+<span class="hljs-selector-class">.list-tree</span> &gt; <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:before</span> {
+    <span class="hljs-attribute">border-left</span>: {{!!list-tree-thickness}} solid {{!!list-tree-<span class="hljs-attribute">color</span>}};
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+}
+&lt;/pre&gt;</code></pre>
+		<small class="show">css</small>
+	</dd>
+</dl>
+<span>
+</span>
+</span>
+
+<div class="kk-ut-viewfields tc-reveal" hidden="true"></div>
+
+<div class=" tc-reveal">
+</div><div class="tc-tiddler-body tc-reveal"><p><pre class="hljs"><code class="css hljs">
+<span class="hljs-selector-class">.list-tree</span>, <span class="hljs-selector-class">.list-tree</span> <span class="hljs-selector-tag">ul</span>, <span class="hljs-selector-class">.list-tree</span> <span class="hljs-selector-tag">li</span> { <span class="hljs-attribute">position</span>: relative; }
+
+<span class="hljs-selector-class">.list-tree</span> <span class="hljs-selector-tag">li</span> { <span class="hljs-attribute">list-style</span>: none; }
+
+<span class="hljs-selector-class">.list-tree</span> <span class="hljs-selector-tag">ul</span> { <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">2em</span>; }
+
+<span class="hljs-selector-class">.list-tree</span> <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">::before</span>, <span class="hljs-selector-class">.list-tree</span> <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">::after</span> {
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;&quot;</span>;
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">left</span>: -<span class="hljs-number">1em</span>;
+}
+
+<span class="hljs-comment">/* horizontal line */</span>
+<span class="hljs-selector-class">.list-tree</span> <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">::before</span> {
+    <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">2px</span> solid <span class="hljs-number">#7d7dfc</span>;
+    <span class="hljs-attribute">top</span>: .<span class="hljs-number">6em</span>; 
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">7px</span>;
+}
+
+<span class="hljs-comment">/* vertical line */</span>
+<span class="hljs-selector-class">.list-tree</span> <span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">::after</span> {
+    <span class="hljs-attribute">border-left</span>: <span class="hljs-number">2px</span> solid <span class="hljs-number">#7d7dfc</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">top</span>: .<span class="hljs-number">1em</span>;
+}
+
+<span class="hljs-selector-class">.list-tree</span> <span class="hljs-selector-tag">ul</span> &gt; <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:last-child</span><span class="hljs-selector-pseudo">::after</span> { <span class="hljs-attribute">height</span>: .<span class="hljs-number">5em</span>; }
+
+<span class="hljs-comment">/* top-level: Lines if multiple top elements. No lines if single top element. */</span>
+
+<span class="hljs-selector-class">.list-tree</span> &gt; <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:last-of-type</span><span class="hljs-selector-pseudo">:before</span> { <span class="hljs-attribute">display</span>:none; }
+
+<span class="hljs-selector-class">.list-tree</span> &gt; <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:first</span>-of-type<span class="hljs-selector-pseudo">:before</span> { <span class="hljs-attribute">border-top</span>: <span class="hljs-number">2px</span> solid <span class="hljs-number">#7d7dfc</span>; }
+
+<span class="hljs-selector-class">.list-tree</span> &gt; <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:before</span> {
+    <span class="hljs-attribute">border-left</span>: <span class="hljs-number">2px</span> solid <span class="hljs-number">#7d7dfc</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+}
+</code></pre></p></div>
 <div class=" tc-reveal">
 
 </div><div class=" tc-reveal">
@@ -10998,6 +11162,96 @@ color:#3F3B3B;">$:/tags/Image</span><span class="tc-drop-down tc-reveal" hidden=
 
 <div class=" tc-reveal">
 </div><div class="tc-tiddler-body tc-reveal"><p>[TODO) test –&gt; ==&gt; # @ </p></div>
+<div class=" tc-reveal">
+
+</div><div class=" tc-reveal">
+</div>
+</div>
+</a><a name="New Tiddler 2">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="New Tiddler 2" role="article"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><button aria-label="trashbin" class="tc-btn-invisible tc-btn-%24%3A%2Fplugins%2Fkookma%2Ftrashbin%2Fui%2Ftoolbar-button" title="Move this tiddler to Trashbin"> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</button><button aria-expanded="false" aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"></button><div class=" tc-reveal" hidden="true"></div><button aria-label="favorites" class="tc-btn-invisible tc-btn-%24%3A%2Fplugins%2Fkookma%2Ffavorites%2Fui%2Fbuttons%2Fadd-remove" title="Add to favorites">
+     
+		 
+
+		 
+ </button><button aria-label="close others" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose-others" title="Close other tiddlers"></button><span class=" tc-reveal"><button aria-label="fold tiddler" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Ffold" title="Fold the body of this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><button class="tc-btn-invisible tc-btn-neotw%2Fviewbar%2Fcopy-title" title="copy current title"></button><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button><button class="tc-btn-invisible tc-btn-neotw%2Fcopy-text" title="copy current title"></button><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span><h2 class="tc-title">New Tiddler 2</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle">🚀 oeyoews  📖 Created 2022/09/05  🔓 Updated 2022/09/05 00:38:40  </div></div><div class=" tc-reveal"><div class="tc-tags-wrapper"></div></div>
+
+
+
+<div class="kk-ut-viewfields tc-reveal" hidden="true"></div>
+
+<div class=" tc-reveal">
+</div><div class="tc-tiddler-body tc-reveal"><ul class="list-tree"><li>dmeo<ul><li>dmeo<ul><li>dmeo for </li></ul></li></ul></li><li>dmeom</li><li>dmeo<ul><li>dmeothis </li><li>dmeo</li><li>dmeo</li></ul></li></ul></div>
+<div class=" tc-reveal">
+
+</div><div class=" tc-reveal">
+</div>
+</div>
+</a><a name="New Tiddler 3">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="New Tiddler 3" role="article"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><button aria-label="trashbin" class="tc-btn-invisible tc-btn-%24%3A%2Fplugins%2Fkookma%2Ftrashbin%2Fui%2Ftoolbar-button" title="Move this tiddler to Trashbin"> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</button><button aria-expanded="false" aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"></button><div class=" tc-reveal" hidden="true"></div><button aria-label="favorites" class="tc-btn-invisible tc-btn-%24%3A%2Fplugins%2Fkookma%2Ffavorites%2Fui%2Fbuttons%2Fadd-remove" title="Add to favorites">
+     
+		 
+
+		 
+ </button><button aria-label="close others" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose-others" title="Close other tiddlers"></button><span class=" tc-reveal"><button aria-label="fold tiddler" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Ffold" title="Fold the body of this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><button class="tc-btn-invisible tc-btn-neotw%2Fviewbar%2Fcopy-title" title="copy current title"></button><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button><button class="tc-btn-invisible tc-btn-neotw%2Fcopy-text" title="copy current title"></button><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span><h2 class="tc-title">New Tiddler 3</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle">🚀 oeyoews  📖 Created 2022/09/05  🔓 Updated 2022/09/05 00:41:48  </div></div><div class=" tc-reveal"><div class="tc-tags-wrapper"></div></div>
+
+
+
+<div class="kk-ut-viewfields tc-reveal" hidden="true"></div>
+
+<div class=" tc-reveal">
+</div><div class="tc-tiddler-body tc-reveal"><ul class="neotw-list"><li>dmeo<ul><li>dmeo<ul><li>dmeo</li><li>dmeo</li></ul></li></ul></li></ul></div>
 <div class=" tc-reveal">
 
 </div><div class=" tc-reveal">

@@ -6003,19 +6003,7 @@ ol.doc-github-contributors li {
     background: linear-gradient(to top, #12c2e9, #c471ed, #f64f59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
 }::-webkit-scrollbar-thumb:hover {
 	background: linear-gradient(45deg, #00f260, #3AC9E1);
-}ul>li::marker {
-		content: "◉ ";
-		color: #7d7dfc;
-}ul>li>ul>li::marker {
-		content: "✿ ";
-		color: #7d7dfc;
-}ul>li>ul>li>ul>li::marker {
-		content: "☰ ";
-		color: #7d7dfc;
-}ul>li>ul>li>ul>li>ul>li::marker {
-		content: "◍ ";
-		color: #7d7dfc;
-}ul>li>ul>li>ul>li>ul>li>ul>li::marker {
+}ul.neotw-list li::marker {
 		content: "● ";
 		color: #7d7dfc;
 }.neotw-left, .neotw-right {
@@ -6094,7 +6082,46 @@ ol.doc-github-contributors li {
 		content: "☠";
 }.neotw-warn:before {
 		content: "⚠";
-}.tc-powered-by-tiddlywiki-banner {
+}
+.list-tree, .list-tree ul, .list-tree li { position: relative; }
+
+.list-tree li { list-style: none; }
+
+.list-tree ul { padding: 0 0 0 2em; }
+
+.list-tree li::before, .list-tree li::after {
+    content: "";
+    position: absolute;
+    left: -1em;
+}
+
+/* horizontal line */
+.list-tree li::before {
+    border-bottom: 2px solid #7d7dfc;
+    top: .6em; 
+    width: 7px;
+}
+
+/* vertical line */
+.list-tree ul li::after {
+    border-left: 2px solid #7d7dfc;
+    height: 100%;
+    top: .1em;
+}
+
+.list-tree ul > li:last-child::after { height: .5em; }
+
+/* top-level: Lines if multiple top elements. No lines if single top element. */
+
+.list-tree > li:last-of-type:before { display:none; }
+
+.list-tree > li:first-of-type:before { border-top: 2px solid #7d7dfc; }
+
+.list-tree > li:before {
+    border-left: 2px solid #7d7dfc;
+    height: 100%;
+}
+.tc-powered-by-tiddlywiki-banner {
 	position: fixed;
 	right: 1em;
 	bottom: 5px;
