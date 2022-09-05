@@ -46,8 +46,6 @@ neotw — A modern tiddlywiki demonstration</title>
 
 
 
-<div class="kk-ut-viewfields tc-reveal" hidden="true"></div>
-
 <div class="tc-tiddler-body tc-reveal"><pre class="hljs"><code class="javascript hljs"><span class="hljs-comment">/* Written by Gk0Wk(https://github.com/Gk0Wk) */</span>
 <span class="hljs-keyword">const</span> <span class="hljs-title function_">getFilterByDate</span> = (<span class="hljs-params">date, subfilter</span>) =&gt; {
   <span class="hljs-keyword">return</span> <span class="hljs-string">`[all[tiddlers]<span class="hljs-subst">${subfilter}</span>sameday:created[<span class="hljs-subst">${date}</span>]][all[tiddlers]<span class="hljs-subst">${subfilter}</span>sameday:modified[<span class="hljs-subst">${date}</span>]]+[sort[]]`</span>;

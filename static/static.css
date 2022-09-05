@@ -2925,74 +2925,7 @@ padding-left:0;
  display:none;
 }
 /* set style for trashed tiddlers */
-[data-tags ~="$:/tags/trashbin"] { border: 1px solid crimson; }figure.kk-utility-fig {
-	/* for future use*/
-	margin-left:0;
-	margin-right:0;
-}
-
-/*figcaption structure */
-figure.kk-utility-fig figcaption {
-	padding: 4.5px 7.5px 7.5px 7.5px;;
-	border-top-left-radius:  3px;
-	border-top-right-radius: 3px;
-	margin-bottom: -3px;
-}
-
-/* figcaption skin: colors */
-figure.kk-utility-fig figcaption{
-	opacity: 0.7;
-	background-color:black;
-	color:white;
-}
-
-/* correct the style of codeblock pre element  */
-figure.kk-utility-fig pre{
-	margin-top:0;
-	/*	used to have inner top border straight */
-	/*	border-top-left-radius:  0;  
-	border-top-right-radius: 0; */
-}
-
-
-/* the code block and copy-to-clipboard button */
-.kk-utility-code{
-	position:  relative;
-}
-
-.kk-utility-copy-btn{
-	position: absolute;
-	top: 3px;
-	right: 5px;
-}.kk-doc svg{
-width: 1.2em;
-height: 1.2em;
-vertical-align: middle;}
-
-.kk-ut-txt{
-min-width:50%}/* view feilds area */
-.kk-ut-viewfields { /* prevents overlapping with other elements */
-	margin-top: 12px;
-	margin-bottom: 12px;
-}
-details.kk-utility-details summary {
-	opacity:0.2;
-	font-size:0.9em;
-	display: inline;
-	cursor: pointer;
-	padding: 10px;
-	transition: 0.3s;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-details.kk-utility-details summary:hover{
-
-}
-details.kk-utility-details[open] > summary {
-	opacity:1;
-}.doc-example { margin: 1em 0; padding: 0.8em 0; } .doc-example:hover { background-color: #f7f7f9; } .doc-example ul { margin-bottom: 0; padding-bottom: 0; margin-top: 0.2em; } .doc-example pre:first-child { margin-top: 0; } .doc-example-result { border-left: 5px solid #bbb; border-right: 5px solid #bbb; margin-left: 0; margin-right: 0; padding: 0 10px; } .doc-example-result ul { margin-left: 0; padding-left: 10px; } .doc-example-result ol { margin-left: 0; padding-left: 20px; }/*!
+[data-tags ~="$:/tags/trashbin"] { border: 1px solid crimson; }/*!
  * Pikaday
  * Copyright © 2014 David Bushell | BSD & MIT license | https://dbushell.com/
  */
