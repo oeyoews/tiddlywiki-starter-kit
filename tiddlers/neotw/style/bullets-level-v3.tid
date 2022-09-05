@@ -1,31 +1,36 @@
 created: 20220905021248595
 creator: oeyoews
-modified: 20220905023115139
+modified: 20220905162500965
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/style/bullets-level-v3
 type: text/vnd.tiddlywiki
 
-ul li {
+ul li::marker {
+	 content: "● ";
+	 color: #7d7dfc; 
+}
+
+ul.bullets li {
 	list-style: none;
 }
 
-ul>li::before {
+ul.bullets>li::before {
 		content: "{{neotw/bullet.dict##b1}} ";
 		color: {{neotw/bullet.dict##bcolor}};
 }
 
-ul>li>ul>li::before {
+ul.bullets>li>ul>li::before {
 		content: "{{neotw/bullet.dict##b2}} ";
 		color: {{neotw/bullet.dict##bcolor}};
 }
 
-ul>li>ul>li>ul>li::before {
+ul.bullets>li>ul>li>ul>li::before {
 		content: "{{neotw/bullet.dict##b3}} ";
 		color: {{neotw/bullet.dict##bcolor}};
 }
 
-ul>li>ul>li>ul>li>ul>li li::before {
+ul.bullets>li>ul>li>ul>li>ul>li::before {
 		content: "{{neotw/bullet.dict##b4}} ";
 		color: {{neotw/bullet.dict##bcolor}};
 }
