@@ -6072,11 +6072,13 @@ ol.doc-github-contributors li {
 	border-radius: 5px;
 }details[open] {
 	font-weight: bold;
-	padding: 5px;
   background-color: #f0f0f0;
 	border-radius: 5px;
 }details[open] summary {
-  background-color: #00000008;
+	padding: 5px;
+	font-weight: bold;
+	border-radius: 5px;
+	background-color: #00000008;
 }.neotw-smile:before {
 		content: "😃";
 }.neotw-checkbox:before {
