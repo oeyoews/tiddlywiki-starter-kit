@@ -1,10 +1,15 @@
+checkbox: ✅
 created: 20220902154818583
 creator: oeyoews
-modified: 20220903150913802
+modified: 20220905015831322
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/style/emoji
 type: text/vnd.tiddlywiki
+
+.neotw-checkbox:before {
+		content: "{{!!checkbox}}";
+}
 
 .neotw-msg:before {
 		content: "💬";
