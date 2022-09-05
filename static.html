@@ -3896,42 +3896,7 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   background: #5BC0DE;
 }.shield.shield-time .status {
   background: #7f4bca;
-}.btc-user-panel-avatar { position: relative; max-width: 22px; max-height: 22px; }.btc-user-panel-avatar img { width: 100%; height: auto; max-width: 22px; max-height: 22px; border-radius: 50%; aspect-ratio: 1 / 1; }.search-list-img :is(svg , img) {
-
-font-size: 2em;
-margin:5px;
-
-
-}
-
-
-.search-list-img img {
-object-fit: contain;
-width: 2em;
-height: auto;
-}
-.search-list-container {
-display:flex;
-align-items: center;
-}
-
-.search-list-container button {
-padding:.5em;
-}
-
-.system-image-search svg {
-
-fill:#3F3B3B;
-
-}
-
-.tc-edit-texteditor {
-  width:100%;
-	padding: 3px 3px 3px 3px;
-	border: 0px solid cyan;
-	line-height: 1.3em;
-	-webkit-appearance: none;
-}footer {
+}.btc-user-panel-avatar { position: relative; max-width: 22px; max-height: 22px; }.btc-user-panel-avatar img { width: 100%; height: auto; max-width: 22px; max-height: 22px; border-radius: 50%; aspect-ratio: 1 / 1; }footer {
 	flex: 1 1 auto;
 	display:flex !important;
 	justify-content:center;
@@ -6020,18 +5985,21 @@ ol.doc-github-contributors li {
     background: linear-gradient(to top, #12c2e9, #c471ed, #f64f59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
 }::-webkit-scrollbar-thumb:hover {
 	background: linear-gradient(45deg, #00f260, #3AC9E1);
-}ul li {
+}ul li::marker {
+	 content: "● ";
+	 color: #7d7dfc; 
+}ul.bullets li {
 	list-style: none;
-}ul>li::before {
+}ul.bullets>li::before {
 		content: "◉ ";
 		color: #7d7dfc;
-}ul>li>ul>li::before {
+}ul.bullets>li>ul>li::before {
 		content: "◍ ";
 		color: #7d7dfc;
-}ul>li>ul>li>ul>li::before {
+}ul.bullets>li>ul>li>ul>li::before {
 		content: "✿ ";
 		color: #7d7dfc;
-}ul>li>ul>li>ul>li>ul>li li::before {
+}ul.bullets>li>ul>li>ul>li>ul>li::before {
 		content: "• ";
 		color: #7d7dfc;
 }.neotw-left, .neotw-right {
@@ -6163,32 +6131,13 @@ ol.doc-github-contributors li {
 	right: 1em;
 	bottom: 5px;
    z-index: 2;
-}.bg22 {
-        position: absolute;
-        bottom: 0px;
-        height: 200px;
-        width: 100%;
-        background: url(https://gitlab.com/oeyoews/neotw/-/raw/main/img/bg1.png)
-          repeat-x;
-        animation: change_bg 5s linear infinite;
-      }.bg22 {
-        position: absolute;
-        bottom: 0px;
-        height: 200px;
-        width: 100%;
-        z-index: 3000;
-        background: url(https://gitlab.com/oeyoews/neotw/-/raw/main/img/bg2.png)
-          repeat-x;
-        animation: change_bg 5s linear infinite;
-      }
-			
-.polarbear {
+}.polarbear {
     position: fixed;
     bottom: 0px;
     height: 100px;
     width: 200px;
     z-index: 3001;
-    background: url(https://gitlab.com/oeyoews/neotw/raw/main/static/bear.png);
+    background: url("files/images/bear.png");
     animation: bear 0.5s steps(8) infinite, change_pos 8s forwards;
   }@keyframes bear {
     0% {
@@ -6205,14 +6154,7 @@ ol.doc-github-contributors li {
       left: 80%;
       transform: translate(-50%, 0);
     }
-  }@keyframes change_bg {
-        0% {
-          background-position: 0 0;
-        }
-        100% {
-          background-position: -3840px 0;
-        }
-      }
+  }
 .neotw-circle:before {
 		content: "◍ ";
 		color: orange;
@@ -6419,10 +6361,10 @@ neotw</a></h3><ul><li><span class="neotw-book"></span> <a class="tc-tiddlylink t
 6 months ago
 </span></div> 
 <div class="shield shield-"><span class="label">Updated</span><span class="status">
-3 minutes ago
+6 minutes ago
 </span></div> 
-<div class="shield shield-blue"><span class="label">Plugins</span><span class="status">48</span></div>
-<div class="shield shield-purple"><span class="label">Tiddlers</span><span class="status">80 (0)</span></div></p></div></div>
+<div class="shield shield-blue"><span class="label">Plugins</span><span class="status">47</span></div>
+<div class="shield shield-purple"><span class="label">Tiddlers</span><span class="status">81 (0)</span></div></p></div></div>
 <div class=" tc-reveal">
 
 </div><div class=" tc-reveal">
@@ -6581,7 +6523,7 @@ neotw</a>
   <div class="segment section">
     <button class="tc-btn-invisible label">
       
-  Images
+  Things
 
       <span class="caret"><svg viewBox="0 0 192 512" width="4pt" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>
 </span>
@@ -6595,7 +6537,7 @@ neotw</a>
   <div class="segment section">
     <button class="tc-btn-invisible label">
       
-  Things
+  Images
 
       <span class="caret"><svg viewBox="0 0 192 512" width="4pt" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>
 </span>

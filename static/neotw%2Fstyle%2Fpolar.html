@@ -48,7 +48,7 @@ neotw — A modern tiddlywiki demonstration</title>
 
 		 
  </button><button aria-label="close others" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose-others" title="Close other tiddlers"></button><span class=" tc-reveal"><button aria-label="fold tiddler" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Ffold" title="Fold the body of this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><button class="tc-btn-invisible tc-btn-neotw%2Fviewbar%2Fcopy-title" title="copy current title"></button><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button><button class="tc-btn-invisible tc-btn-neotw%2Fcopy-text" title="copy current title"></button><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span><h2 class="tc-title">neotw/style/polar</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
-<div class=" tc-reveal"><div class="tc-subtitle">🚀 oeyoews  📖 Created 2022/09/03  🔓 Updated 2022/09/03 16:12:18  </div></div><div class=" tc-reveal"><div class="tc-tags-wrapper"><span class="tc-tag-list-item" data-tag-title="$:/tags/Stylesheet"><span aria-expanded="false" class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
+<div class=" tc-reveal"><div class="tc-subtitle">🚀 oeyoews  📖 Created 2022/09/03  🔓 Updated 2022/09/05 16:15:30  </div></div><div class=" tc-reveal"><div class="tc-tags-wrapper"><span class="tc-tag-list-item" data-tag-title="$:/tags/Stylesheet"><span aria-expanded="false" class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
 fill:#3F3B3B;
 color:#3F3B3B;">$:/tags/Stylesheet</span><span class="tc-drop-down tc-reveal" hidden="true"></span></span></div></div>
 
@@ -66,34 +66,13 @@ color:#3F3B3B;">$:/tags/Stylesheet</span><span class="tc-drop-down tc-reveal" hi
    <span class="hljs-attribute">z-index</span>: <span class="hljs-number">2</span>;
 }
 
-<span class="hljs-selector-class">.bg22</span> {
-        <span class="hljs-attribute">position</span>: absolute;
-        <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0px</span>;
-        <span class="hljs-attribute">height</span>: <span class="hljs-number">200px</span>;
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-        <span class="hljs-attribute">background</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">https://gitlab.com/oeyoews/neotw/-/raw/main/img/bg1.png</span>)
-          repeat-x;
-        <span class="hljs-attribute">animation</span>: change_bg <span class="hljs-number">5s</span> linear infinite;
-      }
-
-<span class="hljs-selector-class">.bg22</span> {
-        <span class="hljs-attribute">position</span>: absolute;
-        <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0px</span>;
-        <span class="hljs-attribute">height</span>: <span class="hljs-number">200px</span>;
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-        <span class="hljs-attribute">z-index</span>: <span class="hljs-number">3000</span>;
-        <span class="hljs-attribute">background</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">https://gitlab.com/oeyoews/neotw/-/raw/main/img/bg2.png</span>)
-          repeat-x;
-        <span class="hljs-attribute">animation</span>: change_bg <span class="hljs-number">5s</span> linear infinite;
-      }
-			
 <span class="hljs-selector-class">.polarbear</span> {
     <span class="hljs-attribute">position</span>: fixed;
     <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0px</span>;
     <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;
     <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
     <span class="hljs-attribute">z-index</span>: <span class="hljs-number">3001</span>;
-    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">https://gitlab.com/oeyoews/neotw/raw/main/static/bear.png</span>);
+    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">&quot;files/images/bear.png&quot;</span>);
     <span class="hljs-attribute">animation</span>: bear <span class="hljs-number">0.5s</span> <span class="hljs-built_in">steps</span>(<span class="hljs-number">8</span>) infinite, change_pos <span class="hljs-number">8s</span> forwards;
   }
 
@@ -114,16 +93,7 @@ color:#3F3B3B;">$:/tags/Stylesheet</span><span class="tc-drop-down tc-reveal" hi
       <span class="hljs-attribute">left</span>: <span class="hljs-number">80%</span>;
       <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translate</span>(-<span class="hljs-number">50%</span>, <span class="hljs-number">0</span>);
     }
-  }
-
-<span class="hljs-keyword">@keyframes</span> change_bg {
-        <span class="hljs-number">0%</span> {
-          <span class="hljs-attribute">background-position</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span>;
-        }
-        <span class="hljs-number">100%</span> {
-          <span class="hljs-attribute">background-position</span>: -<span class="hljs-number">3840px</span> <span class="hljs-number">0</span>;
-        }
-      }</code></pre>
+  }</code></pre>
 		<small class="show">css</small>
 	</dd>
 </dl>
@@ -139,32 +109,13 @@ color:#3F3B3B;">$:/tags/Stylesheet</span><span class="tc-drop-down tc-reveal" hi
 	<span class="hljs-attribute">right</span>: <span class="hljs-number">1em</span>;
 	<span class="hljs-attribute">bottom</span>: <span class="hljs-number">5px</span>;
    <span class="hljs-attribute">z-index</span>: <span class="hljs-number">2</span>;
-}<span class="hljs-selector-class">.bg22</span> {
-        <span class="hljs-attribute">position</span>: absolute;
-        <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0px</span>;
-        <span class="hljs-attribute">height</span>: <span class="hljs-number">200px</span>;
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-        <span class="hljs-attribute">background</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">https://gitlab.com/oeyoews/neotw/-/raw/main/img/bg1.png</span>)
-          repeat-x;
-        <span class="hljs-attribute">animation</span>: change_bg <span class="hljs-number">5s</span> linear infinite;
-      }<span class="hljs-selector-class">.bg22</span> {
-        <span class="hljs-attribute">position</span>: absolute;
-        <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0px</span>;
-        <span class="hljs-attribute">height</span>: <span class="hljs-number">200px</span>;
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-        <span class="hljs-attribute">z-index</span>: <span class="hljs-number">3000</span>;
-        <span class="hljs-attribute">background</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">https://gitlab.com/oeyoews/neotw/-/raw/main/img/bg2.png</span>)
-          repeat-x;
-        <span class="hljs-attribute">animation</span>: change_bg <span class="hljs-number">5s</span> linear infinite;
-      }
-			
-<span class="hljs-selector-class">.polarbear</span> {
+}<span class="hljs-selector-class">.polarbear</span> {
     <span class="hljs-attribute">position</span>: fixed;
     <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0px</span>;
     <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;
     <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
     <span class="hljs-attribute">z-index</span>: <span class="hljs-number">3001</span>;
-    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">https://gitlab.com/oeyoews/neotw/raw/main/static/bear.png</span>);
+    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">&quot;files/images/bear.png&quot;</span>);
     <span class="hljs-attribute">animation</span>: bear <span class="hljs-number">0.5s</span> <span class="hljs-built_in">steps</span>(<span class="hljs-number">8</span>) infinite, change_pos <span class="hljs-number">8s</span> forwards;
   }<span class="hljs-keyword">@keyframes</span> bear {
     <span class="hljs-number">0%</span> {
@@ -181,14 +132,7 @@ color:#3F3B3B;">$:/tags/Stylesheet</span><span class="tc-drop-down tc-reveal" hi
       <span class="hljs-attribute">left</span>: <span class="hljs-number">80%</span>;
       <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translate</span>(-<span class="hljs-number">50%</span>, <span class="hljs-number">0</span>);
     }
-  }<span class="hljs-keyword">@keyframes</span> change_bg {
-        <span class="hljs-number">0%</span> {
-          <span class="hljs-attribute">background-position</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span>;
-        }
-        <span class="hljs-number">100%</span> {
-          <span class="hljs-attribute">background-position</span>: -<span class="hljs-number">3840px</span> <span class="hljs-number">0</span>;
-        }
-      }</code></pre></p></div>
+  }</code></pre></p></div>
 <div class=" tc-reveal">
 
 </div><div class=" tc-reveal">
