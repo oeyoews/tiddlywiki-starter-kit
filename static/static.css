@@ -6011,11 +6011,13 @@ ol.doc-github-contributors li {
 }ul>li>ul>li::before {
 		content: "◍ ";
 		color: #7d7dfc;
-}ul>li>ul>li>ul>li li::before {
+}ul>li>ul>li>ul>li::before {
 		content: "✿ ";
 		color: #7d7dfc;
-}
-.neotw-left, .neotw-right {
+}ul>li>ul>li>ul>li>ul>li li::before {
+		content: "• ";
+		color: #7d7dfc;
+}.neotw-left, .neotw-right {
         min-height: 60px;
         position: relative;
         left: 10px;
