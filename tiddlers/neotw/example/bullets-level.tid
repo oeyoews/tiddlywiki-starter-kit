@@ -1,13 +1,14 @@
 created: 20220904170228442
 creator: oeyoews
-modified: 20220904233950692
+modified: 20220905004253762
 modifier: oeyoews
 tags: 
 title: neotw/example/bullets-level
 type: text/vnd.tiddlywiki
 
-<<.preamble """<<emoji warn>> not use `@@` in wikitext, modify list style directly
-""">>
+<<.preamble """<<emoji warn>> not use `@@` in wikitext, modify list style directly;for ios, not support this style seemingly, weirdly
+"""
+>>
 
 !! neotw bullets-level
 
