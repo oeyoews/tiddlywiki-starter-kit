@@ -6003,7 +6003,21 @@ ol.doc-github-contributors li {
     background: linear-gradient(to top, #12c2e9, #c471ed, #f64f59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
 }::-webkit-scrollbar-thumb:hover {
 	background: linear-gradient(45deg, #00f260, #3AC9E1);
-}ul.neotw-list li::marker {
+}ul li {
+	list-style: none;
+}ul>li::before {
+		content: "◉ ";
+		color: #7d7dfc;
+}ul>li>ul>li::before {
+		content: "✿ ";
+		color: #7d7dfc;
+}ul>li>ul>li>ul>li::before {
+		content: "☰ ";
+		color: #7d7dfc;
+}ul>li>ul>li>ul>li>ul>li::before {
+		content: "◍ ";
+		color: #7d7dfc;
+}ul>li>ul>li>ul>li>ul>li>ul>li::before {
 		content: "● ";
 		color: #7d7dfc;
 }.neotw-left, .neotw-right {
