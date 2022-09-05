@@ -6067,9 +6067,6 @@ ol.doc-github-contributors li {
 	padding: 5px;
 	font-weight: bold;
   background-color: #f0f0f0;
-}details:not([open]) summary::after {
-	content: "";
-	color: #7d7dfc;
 }details[open] summary::after {
 	content: " open";
 	color: #7d7dfc;
