@@ -6009,16 +6009,16 @@ ol.doc-github-contributors li {
 		content: "◉ ";
 		color: #7d7dfc;
 }ul>li>ul>li::before {
-		content: "✿ ";
+		content: "🞊 ";
 		color: #7d7dfc;
 }ul>li>ul>li>ul>li::before {
-		content: "☰ ";
+		content: "🞅 ";
 		color: #7d7dfc;
 }ul>li>ul>li>ul>li>ul>li::before {
 		content: "◍ ";
 		color: #7d7dfc;
-}ul>li>ul>li>ul>li>ul>li>ul>li::before {
-		content: "● ";
+}ul>li>ul>li>ul>li>ul>li li::before {
+		content: "✿ ";
 		color: #7d7dfc;
 }.neotw-left, .neotw-right {
         min-height: 60px;
