@@ -6098,6 +6098,10 @@ ol.doc-github-contributors li {
 		content: "☠";
 }.neotw-warn:before {
 		content: "⚠";
+}.neotw-gradient {
+	background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+	-webkit-background-clip: text; 
+	color: transparent;
 }
 .list-tree, .list-tree ul, .list-tree li { position: relative; }
 
