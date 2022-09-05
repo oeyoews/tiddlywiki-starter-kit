@@ -1,11 +1,6 @@
-b2: 🞊
-b3: 🞅
-b4: ◍
-b5: ✿
-bcolor: #7d7dfc
 created: 20220905021248595
 creator: oeyoews
-modified: 20220905022640096
+modified: 20220905023115139
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/style/bullets-level-v3
@@ -25,7 +20,12 @@ ul>li>ul>li::before {
 		color: {{neotw/bullet.dict##bcolor}};
 }
 
-ul>li>ul>li>ul>li li::before {
+ul>li>ul>li>ul>li::before {
 		content: "{{neotw/bullet.dict##b3}} ";
+		color: {{neotw/bullet.dict##bcolor}};
+}
+
+ul>li>ul>li>ul>li>ul>li li::before {
+		content: "{{neotw/bullet.dict##b4}} ";
 		color: {{neotw/bullet.dict##bcolor}};
 }
