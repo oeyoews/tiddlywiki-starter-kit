@@ -1,6 +1,6 @@
 created: 20220905030634388
 creator: oeyoews
-modified: 20220905032139489
+modified: 20220906145902540
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/style/details-v2
@@ -15,7 +15,6 @@ details {
 details summary {
 	padding: 5px;
 	font-weight: bold;
-  background-color: #f0f0f0;
 }
 
 details[open] summary::after {

@@ -1,0 +1,11 @@
+created: 20220822092900418
+creator: oeyoews
+modified: 20220906150555742
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: neotw/style/avatar
+type: text/vnd.tiddlywiki
+
+.user-panel-avatar { position: relative; max-width: 22px; max-height: 22px; }
+
+.user-panel-avatar img { width: 100%; height: auto; max-width: 22px; max-height: 22px; border-radius: 50%; aspect-ratio: 1 / 1; }

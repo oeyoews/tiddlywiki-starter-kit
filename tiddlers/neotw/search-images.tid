@@ -1,7 +1,7 @@
 caption: Images
 created: 20220905160110300
 creator: oeyoews
-modified: 20220905160208500
+modified: 20220906151808365
 modifier: oeyoews
 tags: $:/tags/SideBar
 title: neotw/search-images
@@ -36,7 +36,7 @@ type: text/vnd.tiddlywiki
 <span class="tc-search-results"><<lingo System/Matches>></span>
 </$reveal>
 
-<div class="tc-image-chooser" style="padding-top:10px;">
+<div class="tc-image-chooser" style="padding-top:5px;">
 <$macrocall $name="image-picker-list" filter=<<searchFilter>> actions=<<copyActions>> />
 </div>
 

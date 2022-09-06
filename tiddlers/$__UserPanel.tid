@@ -1,8 +1,10 @@
 created: 20220826051347607
 creator: oeyoews
-modified: 20220828040059934
+modified: 20220906150317158
 modifier: oeyoews
 title: $:/UserPanel
 type: text/vnd.tiddlywiki
 
-<div class="btc-user-panel-avatar">{{$:/plugins/oeyoews/aboutme/avatar}}</div>
+<div class="user-panel-avatar">
+{{neotw/gavatar}}
+</div>
