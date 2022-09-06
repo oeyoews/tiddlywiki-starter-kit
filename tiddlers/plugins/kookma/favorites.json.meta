@@ -1,12 +1,11 @@
 author: Mohammad Rahmani
-core-version: >=5.1.23
-description: Create favorites, organize in folders
+core-version: >=5.2.3
+dependents: 
+description: Create bookmarks, shortcuts and favorite items as flat and structured lists
 list: readme license history
-modified: 20220828040555084
-modifier: oeyoews
 name: Favorites
 plugin-type: plugin
 source: https://github.com/kookma/TW-Favorites
 title: $:/plugins/kookma/favorites
 type: application/json
-version: 4.7.2
+version: 4.7.3
