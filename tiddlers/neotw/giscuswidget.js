@@ -17,9 +17,9 @@
         scriptNode.setAttribute("src", "https://giscus.app/client.js");
         scriptNode.setAttribute("data-repo", "oeyoews/neotw");
         scriptNode.setAttribute("data-repo-id", "R_kgDOH5A5OA");
-        scriptNode.setAttribute("data-category", "feedback");
+        scriptNode.setAttribute("data-category", "General");
         scriptNode.setAttribute("data-category-id", "DIC_kwDOH5A5OM4CRFEE");
-        scriptNode.setAttribute("data-mapping", "specific");
+        scriptNode.setAttribute("data-mapping", "pathname");
         scriptNode.setAttribute("data-term", id);
         scriptNode.setAttribute("data-reactions-enabled", "1");
         scriptNode.setAttribute("data-emit-metadata", "0");
