@@ -22,12 +22,6 @@
     "themes": [
         "tiddlywiki/vanilla"
     ],
-    "includeWikis": [
-        {
-            "path": "./vim-tiddlywiki",
-            "readonly": true
-        }
-    ],
     "build": {
         "index": [
             "--rendertiddler",

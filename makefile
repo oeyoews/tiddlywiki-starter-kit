@@ -38,13 +38,14 @@ build:
 	@make clean;
 	@mkdir public
 	@cp -r tiddlers/ files/ tiddlywiki.info public/
+	@cp src/tiddlywiki.info public/
 	@cd public/; rm -rf \
 		tiddlers/subwiki \
 		tiddlers/trashbin \
 	 	tiddlers/\$$__StoryLis*.tid
 	$(CMD) public --output dist/ --build index >> /tmp/neotw.log 2>&1  # build
-# $(CMD) public --output dist/ --build static >> /tmp/neotw.log 2>&1  # static giscus have a error
 	$(CMD) public --output dist/ --build favicon >> /tmp/neotw.log 2>&1  # favicon
+# $(CMD) public --output dist/ --build static >> /tmp/neotw.log 2>&1  # static giscus have a error
 	@cp -r src/vercel.json files/ dist/; echo -e "🎉 `ls  -sh dist/index.html`" # patch
 
 # view

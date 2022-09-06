@@ -3,30 +3,10 @@
     "plugins": [
         "tiddlywiki/tiddlyweb",
         "tiddlywiki/filesystem",
-        "tiddlywiki/highlight",
-        "tiddlywiki/markdown",
-        "tiddlywiki/katex",
-        "tiddlywiki/browser-sniff",
-        "tiddlywiki/codemirror",
-        "tiddlywiki/codemirror-mode-xml",
-        "tiddlywiki/codemirror-mode-markdown",
-        "tiddlywiki/codemirror-mode-css",
-        "tiddlywiki/codemirror-mode-javascript",
-        "tiddlywiki/codemirror-autocomplete",
-        "tiddlywiki/codemirror-search-replace",
-        "tiddlywiki/codemirror-closebrackets",
-        "tiddlywiki/codemirror-closetag",
-        "tiddlywiki/codemirror-mode-htmlmixed",
-        "tiddlywiki/codemirror-mode-htmlembedded"
+        "tiddlywiki/highlight"
     ],
     "themes": [
         "tiddlywiki/vanilla"
-    ],
-    "includeWikis": [
-        {
-            "path": "./vim-tiddlywiki",
-            "readonly": true
-        }
     ],
     "build": {
         "index": [
@@ -53,14 +33,6 @@
             "$:/core/templates/static.template.css",
             "static/static.css",
             "text/plain"
-        ],
-        "favicon": [
-            "--savetiddler",
-            "$:/favicon.ico",
-            "favicon.ico"
         ]
-    },
-    "config": {
-        "retain-original-tiddler-path": true
     }
 }
