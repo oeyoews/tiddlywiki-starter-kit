@@ -1,0 +1,11 @@
+created: 20220906040807529
+creator: oeyoews
+modified: 20220906042528351
+modifier: oeyoews
+tags: $:/tags/Macro
+title: neotw/macro/shield-online
+type: text/vnd.tiddlywiki
+
+\define neotw-shield(label:"label", msg:"msg", style:"plastic", color:"blue",  logo:"")
+<img src="https://img.shields.io/badge/$label$-$msg$-$color$?style=$style$&logo=$logo$" alt="project-status" >
+\end
