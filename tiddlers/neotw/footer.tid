@@ -1,9 +1,9 @@
 created: 20220821045909565
 creator: oeyoews
-modified: 20220903040203770
+modified: 20220906005206355
 modifier: oeyoews
 tags: 
-title: homepage footer
+title: neotw/footer
 type: text/vnd.tiddlywiki
 
 \define url()
@@ -55,7 +55,6 @@ type: text/vnd.tiddlywiki
 <div style="font-weight: regular; border-radius: 4px;background:;font-size:60%; padding: 2px 5px 2px;user-select: none;text-align:left;">
 
 <<shield "Version" "<<version>>">> 
-<<shield "Url" "<<url>>" red>> 
 <<shield "Screen" "<<screen>>" blue>> 
 <<shield "Status" "<<neotwstatus>>">> 
 <<shield "Doy" "<<doy>>" red>> 
@@ -63,5 +62,7 @@ type: text/vnd.tiddlywiki
 <<shield "Updated" "<<updatedtime>>">> 
 <<shield Plugins "<<totalplugins>>" blue>>
 <<shield Tiddlers "<<totaltiddlers>>(<<subwiki-private>>)" purple>>
+
+<<details """<<shield "Url" "<<url>>" red>>""" "url" >>
 
 </div>

@@ -1,6 +1,6 @@
 created: 20220828120245453
 creator: oeyoews
-modified: 20220905041853035
+modified: 20220906005211075
 modifier: oeyoews
 tags: 
 title: GettingStarted
@@ -18,4 +18,4 @@ type: text/vnd.tiddlywiki
 * <<emoji book>> [[documention|neotw/docs]]  
 * <<emoji arrowright>> [[web status|https://oeyoews.github.io/upptime]]
 
-{{homepage footer}}
+{{neotw/footer}}
