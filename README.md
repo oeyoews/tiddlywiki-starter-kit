@@ -40,7 +40,7 @@ preview repo svg?)">
 
 ## ShowCases
 
-<img src="img/02.png"/>
+<img src="img/03.png"/>
 
 ## FileStruct
 
@@ -74,11 +74,11 @@ make or make run # port is 8099 default
 make build # generate dist/index.html
 ```
 
-> more usage please check [makefile](makefile)
-
 ## Configuration
 
 The [makefile](makefile) file is used as the centeral configuration for `neotw`
+
+> more usage please check [makefile](makefile)
 
 ## Preview
 
