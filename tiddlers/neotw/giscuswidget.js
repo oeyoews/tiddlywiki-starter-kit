@@ -19,8 +19,8 @@
         scriptNode.setAttribute("data-repo-id", "R_kgDOH5A5OA");
         scriptNode.setAttribute("data-category", "General");
         scriptNode.setAttribute("data-category-id", "DIC_kwDOH5A5OM4CRFEE");
-        scriptNode.setAttribute("data-mapping", "pathname");
-        scriptNode.setAttribute("data-term", id);
+        scriptNode.setAttribute("data-mapping", "specific");
+        scriptNode.setAttribute("data-term", "GettingStarted");
         scriptNode.setAttribute("data-reactions-enabled", "1");
         scriptNode.setAttribute("data-emit-metadata", "0");
         scriptNode.setAttribute("data-theme", theme);

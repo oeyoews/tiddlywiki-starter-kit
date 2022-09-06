@@ -1,13 +1,13 @@
 created: 20220906001146990
 creator: oeyoews
-modified: 20220906004805075
+modified: 20220906011057868
 modifier: oeyoews
 tags: $:/tags/ViewTemplate
 title: neotw/viewtemplate/giscus
 type: text/vnd.tiddlywiki
 
 <$list filter="[all[current]prefix[GettingStarted]!is[draft]]" variable="plugin">
-<$list filter="[{$:/info/url/protocol}prefix[https]]">
+<$list filter="[{$:/info/url/protocol}prefix[http]]">
 <$list filter="[[$:/language]get[text]removeprefix[$:/languages/]else[en-GB]]" variable="lang">
 <$list filter="[<lang>search[zh]]">
 <h2>评论区</h2>
