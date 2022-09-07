@@ -1,6 +1,6 @@
 created: 20220830054857671
 creator: oeyoews
-modified: 20220907042529968
+modified: 20220907052729298
 modifier: oeyoews
 tags: 
 title: neotw/switch-tip
@@ -10,17 +10,23 @@ type: text/vnd.tiddlywiki
 
 \define help-seen(key) <$action-setfield $tiddler="$:/state/seen/$key$" text=""/>
 
+\define help-delete(key) <$action-deletetiddler $tiddler="$:/state/seen/$key$" />
+
+\define restore-button()
+<$fieldmangler tiddler="neotw/style/readonly"> <$button actions=<<help-delete "takeaways">> >
+<<symbol "Restore Dismiss" "restore">> 
+</$button>
+</$fieldmangler>
+\end
+
 <$list filter="[<renderingStatic>!match[yes]]" >
 
 <$list filter=<<help-wanted "takeaways">> variable=_>
 <div class="tr-contextual-help">
 
-{{neotw/mobile-warning}}
 <$list filter="[{$:/info/url/protocol}prefix[https]]">
 {{neotw/readmode-v2}}
 </$list>
-
-<<layout "<<TiddlyWiki5 118>>" "right">>
 
 <div style="text-align: right;">
 <$button actions=<<help-seen "takeaways">> > 
@@ -32,3 +38,5 @@ type: text/vnd.tiddlywiki
 </$list>
 
 </$list>
+
+<<layout "<<restore-button>>" right>>

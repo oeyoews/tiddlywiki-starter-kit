@@ -1,6 +1,6 @@
 created: 20220828120245453
 creator: oeyoews
-modified: 20220907042457677
+modified: 20220907052938420
 modifier: oeyoews
 tags: 
 title: Index
@@ -10,12 +10,10 @@ type: text/vnd.tiddlywiki
 """
 >>
 
+{{neotw/mobile-warning}}
+
 * <<emoji book>> [[neotw documention|neotw/docs]]
 
 {{neotw/footer}}
 
-<<details  """
-{{neotw/switch-tip}}
-{{neotw/restore-button}}
-"""
-"<<emoji msg>>" >>
+{{neotw/readmode-v2}}

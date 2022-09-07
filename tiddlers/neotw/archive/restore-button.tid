@@ -1,9 +1,9 @@
 created: 20220902031815530
 creator: oeyoews
-modified: 20220902034331714
+modified: 20220907052813082
 modifier: oeyoews
 tags: 
-title: neotw/restore-button
+title: neotw/archive/restore-button
 type: text/vnd.tiddlywiki
 
 \define help-delete(key) <$action-deletetiddler $tiddler="$:/state/seen/$key$" />
@@ -15,4 +15,8 @@ type: text/vnd.tiddlywiki
 </$fieldmangler>
 \end
 
-<<layout "<<restore-button>>" "right" >>
+<div style="text-align: right;">
+<$button actions=<<help-seen "takeaways">> > 
+<<symbol "Dismiss All" bingo>>
+</$button>
+</div>

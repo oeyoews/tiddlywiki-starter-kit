@@ -1,23 +1,14 @@
 created: 20220831070237469
 creator: oeyoews
-modified: 20220903164636369
+modified: 20220907051937937
 modifier: oeyoews
-tags: $:/tags/StartupAction
+tags: 
 title: neotw/mobile-warning
 type: text/vnd.tiddlywiki
 
 \define mobile-msg()
-<<.preamble "<<emoji warn>> If you see this warning message, it means that you are browsing this website on your mobile phone; Unfortunately, Due to various reasons such as time, convenience, etc, I will only maintain for pc, so show part of the content here, For more details, please go pc to browse this website <<layout {{$:/plugins/oeyoews/aboutme/core}} right>> ">>
-\end
+<<.preamble """<<emoji warn>> If you see this warning message, it means that you are browsing this website on your mobile phone; Unfortunately, Due to various reasons such as time, convenience, etc, I will only maintain for pc, so show part of the content here, For more details, please go pc to browse this website <<layout {{neotw/user-info}} right>> """>>
 
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]"> 
-
 <<mobile-msg>>
-
-{{neotw/polar-bear}}
-
-<$action-setfield $tiddler="$:/themes/nico/notebook/options/stickytitles" text="no"/>
-
-<$action-setfield $tiddler="$:/config/Tiddlers/TitleLinks" text="no"/>
-
 </$list>
