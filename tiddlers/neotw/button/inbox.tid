@@ -1,0 +1,19 @@
+created: 20220806081632787
+creator: oeyoews
+description: bells
+modified: 20220907025736247
+modifier: oeyoews
+tags: $:/tags/PageControls
+title: neotw/button/inbox
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+<$button tooltip="🧑 show your info" aria-label="show info" class=<<tv-config-toolbar-class>>> 
+{{neotw/image/bell}}
+<$list filter="[<tv-config-toolbar-text>match[yes]]">
+<span class="tc-btn-text">
+<$text text="show your bells"/>
+</span>
+</$list>
+<$action-navigate $to="neotw/INBOX"/>
+</$button>

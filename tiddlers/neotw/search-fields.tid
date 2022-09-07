@@ -1,0 +1,64 @@
+caption: In Fields
+created: 20220907024317772
+creator: oeyoews
+modified: 20220907024354124
+modifier: oeyoews
+tags: $:/tags/AdvancedSearch
+title: neotw/search-fields
+type: text/vnd.tiddlywiki
+
+\define selectedFields() title caption tags keywords responder
+\define searchInField(field, for, ci)
+<$list filter="[!is[shadow]!is[system]regexp:$field$[$for$$ci$]limit[1]]">
+<dt>$field$</dt>
+</$list>
+
+<$list filter="[!is[shadow]!is[system]regexp:$field$[$for$$ci$]]">
+<dd><$link><$view field="title"/></$link></dd>
+</$list>
+\end
+
+<style>.tc-advanced-search-check input {width:auto !important;}</style>
+
+Search in fields... &nbsp; <span class="tc-advanced-search-check"><$checkbox field="case-insensitive" tiddler="$:/temp/infieldsearch" checked="(?i)"> case insensitive</$checkbox></span>
+
+<div class="tc-search">
+<$edit-text tiddler="$:/temp/infieldsearch" type="search" tag="input" placeholder="search terms" default=""/> <$select field="field" tiddler="$:/temp/infieldsearch" default="*">
+<optgroup label='Selected'>
+<$list filter=<<selectedFields>> variable="field">
+<option value=<<field>>><<field>></option>
+</$list>
+</optgroup>
+<optgroup label='Other'>
+<option value="">*any</option>
+<$list filter="[!is[shadow]!is[system]fields[]sort[]] -[enlist<selectedFields>]" variable="field">
+<option value=<<field>>><<field>></option>
+</$list>
+</optgroup>
+</$select>
+<$reveal state="$:/temp/infieldsearch" type="nomatch" text="">
+<$button class="tc-btn-invisible">
+<$action-setfield $tiddler="$:/temp/infieldsearch" $field="text" $value=""/>
+{{$:/core/images/close-button}}
+</$button>
+</$reveal>
+</div>
+
+<$reveal state="$:/temp/infieldsearch" type="nomatch" text="">
+<$reveal state="$:/temp/infieldsearch!!field" type="match" text="">
+<dl>
+<$list filter="[!is[shadow]!is[system]fields[]]" variable="field">
+
+<$reveal type=nomatch text=text default=<<field>>>
+<$macrocall $name="searchInField" field=<<field>> for={{$:/temp/infieldsearch}} ci={{$:/temp/infieldsearch!!case-insensitive}}/>
+</$reveal>
+</$list>
+</dl>
+</$reveal>
+<$reveal state="$:/temp/infieldsearch!!field" type="nomatch" text="">
+
+<dl>
+<$macrocall $name="searchInField" field={{$:/temp/infieldsearch!!field}} for={{$:/temp/infieldsearch}} ci={{$:/temp/infieldsearch!!case-insensitive}}/>
+</dl>
+</$reveal>
+</$reveal>
