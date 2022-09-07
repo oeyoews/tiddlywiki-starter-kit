@@ -1,0 +1,14 @@
+author: Mohammad Rahmani
+core-version: >=5.2.1
+created: 20220128111316283
+dependents: $:/plugins/tiddlywiki/jszip
+description: Creating and distributing plugins, editions, contents in browser
+list: readme license history
+modified: 20220218123021821
+name: Gatha Studio Workspace
+plugin-type: plugin
+source: https://github.com/kookma/TW-Gatha
+tags: 
+title: $:/plugins/kookma/gatha
+type: application/json
+version: 1.0.0
