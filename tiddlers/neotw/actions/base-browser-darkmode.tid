@@ -1,9 +1,9 @@
 created: 20220907175050683
 creator: oeyoews
-modified: 20220907175350186
+modified: 20220907180907637
 modifier: oeyoews
-tags: $:/tags/StartupAction
-title: neotw/actions/darkmode
+tags: 
+title: neotw/actions/base-browser-darkmode
 type: text/vnd.tiddlywiki
 
 <$list filter="[[$:/info/darkmode]get[text]else[no]match[yes]]"> 

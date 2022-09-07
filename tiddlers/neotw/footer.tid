@@ -1,14 +1,14 @@
 created: 20220821045909565
 creator: oeyoews
-modified: 20220907042106244
+modified: 20220907180104530
 modifier: oeyoews
 tags: 
 title: neotw/footer
 type: text/vnd.tiddlywiki
 
-\define url()
-{{$:/info/url/full}}
-\end
+\define darkmode() {{$:/info/darkmode}}
+
+\define url() {{$:/info/url/full}}
 
 \define neotwstatus()
 <$text text=
@@ -16,17 +16,12 @@ type: text/vnd.tiddlywiki
 \end
 
 \define screen()
-{{$:/info/browser/screen/width}} x
-{{$:/info/browser/screen/height}}
+{{$:/info/browser/screen/width}} x {{$:/info/browser/screen/height}}
 \end
 
-\define doy() 
-<<now "ddddd days">>
-\end
+\define doy()  <<now "ddddd days">>
 
-\define now2()
-<<now "YY/0MM/0DD/ 0hh:0mm">>
-\end
+\define now2() <<now "YY/0MM/0DD/ 0hh:0mm">>
 
 \define starttime()
 <$list filter="[!is[system]has[created]!sort[created]!limit[1]]">
@@ -40,20 +35,16 @@ type: text/vnd.tiddlywiki
 </$list>
 \end
 
-\define totalplugins() 
-<$count filter="[!has[draft.of]plugin-type[plugin]]"/>
-\end
+\define totalplugins()  <$count filter="[!has[draft.of]plugin-type[plugin]]"/>
 
-\define subwiki-private() 
-<$count filter="[!has[draft.of]tag[private]]"/>
-\end
+\define subwiki-private()  <$count filter="[!has[draft.of]tag[private]]"/>
 
-\define totaltiddlers()
-<$count filter="[!is[system]sort[title]]"/> 
-\end
+\define totaltiddlers() <$count filter="[!is[system]sort[title]]"/> 
+
 
 <div style="font-weight: regular; border-radius: 4px;background:;font-size:60%; padding: 2px 5px 2px;user-select: none;text-align:left;">
 
+<<shield "darkmode" "<<darkmode>>">> 
 <<shield "Version" "<<version>>">> 
 <<shield "Screen" "<<screen>>" blue>> 
 <<shield "Status" "<<neotwstatus>>">> 
