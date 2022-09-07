@@ -1,0 +1,13 @@
+created: 20220907175050683
+creator: oeyoews
+modified: 20220907175350186
+modifier: oeyoews
+tags: $:/tags/StartupAction
+title: neotw/actions/darkmode
+type: text/vnd.tiddlywiki
+
+<$list filter="[[$:/info/darkmode]get[text]else[no]match[yes]]"> 
+  <$action-setfield $tiddler="$:/palette"
+          $field="text"
+          $value="$:/palettes/CupertinoDark"/>
+</$list>

@@ -1,0 +1,9 @@
+created: 20220907173854556
+creator: oeyoews
+modified: 20220907173959150
+modifier: oeyoews
+tags: $:/tags/Macro
+title: neotw/macro/neotw
+type: text/vnd.tiddlywiki
+
+\define neotw() {{$:/SiteTitle}}

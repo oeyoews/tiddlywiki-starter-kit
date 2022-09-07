@@ -1,6 +1,6 @@
 created: 20220902171128350
 creator: oeyoews
-modified: 20220903005550619
+modified: 20220907174030309
 modifier: oeyoews
 tags: $:/tags/Macro
 title: neoto/macro/tiddlywiki
@@ -8,6 +8,3 @@ type: text/vnd.tiddlywiki
 
 \define TiddlyWiki5(width:128)
 [img width=$width$ [neotw/images/white-vanilla.png]]
-\end
-
-<<TiddlyWiki5 256>>
