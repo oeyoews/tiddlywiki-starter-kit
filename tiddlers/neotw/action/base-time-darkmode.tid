@@ -1,11 +1,12 @@
 created: 20220906164418486
 creator: oeyoews
-modified: 20220907232314289
+modified: 20220907233447689
 modifier: oeyoews
 tags: $:/tags/StartupAction
 title: neotw/action/base-time-darkmode
 type: text/vnd.tiddlywiki
 
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]"> 
 <$vars
   currentTime=<<now "hhmm">>
   nightStart="2000"
@@ -17,3 +18,4 @@ type: text/vnd.tiddlywiki
           $value="$:/palettes/CupertinoDark"/>
 </$list>
 </$vars>
+</$list>

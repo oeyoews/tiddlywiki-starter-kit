@@ -1,13 +1,15 @@
 created: 20220907175050683
 creator: oeyoews
-modified: 20220907180907637
+modified: 20220907233438526
 modifier: oeyoews
-tags: 
+tags: $:/tags/StartupAction
 title: neotw/actions/base-browser-darkmode
 type: text/vnd.tiddlywiki
 
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]"> 
 <$list filter="[[$:/info/darkmode]get[text]else[no]match[yes]]"> 
   <$action-setfield $tiddler="$:/palette"
           $field="text"
           $value="$:/palettes/CupertinoDark"/>
+</$list>
 </$list>

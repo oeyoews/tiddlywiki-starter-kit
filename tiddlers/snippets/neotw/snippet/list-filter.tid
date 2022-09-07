@@ -1,12 +1,12 @@
 caption: mobile adjust
 created: 20220907175629549
 creator: oeyoews
-modified: 20220907175707877
+modified: 20220907233402259
 modifier: oeyoews
 tags: $:/tags/TextEditor/Snippet
 title: neotw/snippet/list-filter
 type: text/vnd.tiddlywiki
 
-<$list filter="[[$:/info/darkmode]get[text]else[no]match[yes]]"> 
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]"> 
 $1
 </$list>
