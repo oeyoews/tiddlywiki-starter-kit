@@ -1,0 +1,9 @@
+created: 20220907182725230
+creator: oeyoews
+modified: 20220907183416447
+modifier: oeyoews
+tags: $:/tags/Macro
+title: neotw/macro/gitlab-image
+type: text/vnd.tiddlywiki
+
+\define gitlab-image(path) [img[https://gitlab.com/oeyoews/neotw/raw/main/$path$]]

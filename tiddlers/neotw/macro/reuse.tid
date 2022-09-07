@@ -1,10 +1,10 @@
 code-body: yes
 created: 20220828120635207
 creator: oeyoews
-modified: 20220828121620490
+modified: 20220907183526557
 modifier: oeyoews
 tags: $:/tags/Macro
-title: reuse macro
+title: neotw/macro/reuse
 type: text/vnd.tiddlywiki
 
 \define reuse-pane(content)
