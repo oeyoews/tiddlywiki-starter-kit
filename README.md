@@ -40,7 +40,7 @@ preview repo svg?)">
 
 ## ShowCases
 
-<img src="img/s03.png"/>
+<img src="img/s4.svg"/>
 
 ## FileStruct
 
