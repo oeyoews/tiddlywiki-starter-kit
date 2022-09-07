@@ -1,0 +1,11 @@
+author: kl
+created: 20220724121721079
+dependents: $:/plugins/felixhayashi/hotzone $:/plugins/felixhayashi/tiddlymap $:/plugins/felixhayashi/topstoryview $:/plugins/felixhayashi/vis $:/plugins/ihm/tidgraph $:/plugins/kookma/refnotes $:/plugins/kookma/shiraz $:/plugins/nico/projectify $:/plugins/nico/projectify-zh-Hans $:/plugins/tobibeer/inc $:/plugins/xp/aggregation $:/plugins/xp/aggregation-gtd $:/plugins/xp/aggregation-people $:/xp
+description: Show information about tiddler at the bottom
+list: readme settings
+modified: 20220724121722661
+name: Tiddler Tail
+plugin-type: plugin
+title: $:/plugins/xp/tiddlertail
+type: application/json
+version: 0.0.2

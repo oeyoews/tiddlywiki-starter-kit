@@ -1,0 +1,12 @@
+author: ihm4u
+core-version: >=5.1.9
+created: 20210620023856439
+dependents: 
+description: Tidgraph - Easy tiddler graphs for TW5
+list: readme changelog documentation
+modified: 20210620023856439
+plugin-type: plugin
+source: https://ihm4u.github.io/tw5plugs
+title: $:/plugins/ihm/tidgraph
+type: application/json
+version: 0.9.6
