@@ -1,6 +1,6 @@
 created: 20220907022139318
 creator: oeyoews
-modified: 20220907023043214
+modified: 20220907024057824
 modifier: oeyoews
 tags: 
 title: New Tiddler 6
@@ -8,13 +8,13 @@ type: text/vnd.tiddlywiki
 
 Use the slider to show more levels!
 
-Depth: {{$:/Range 12}}
+Depth: {{$:/state/Range 12}}
 
- <$range tiddler="$:/Range 12" min="1" max="5" default="1" increment="1"/>
-<$set name="depth" value={{$:/Range 12}}>
+ <$range tiddler="$:/state/Range 12" min="1" max="5" default="1" increment="1"/>
+<$set name="depth" value={{$:/state/Range 12}}>
 <$tidgraph start="Worked Examples" maxdepth=<<depth>> />
 </$set>
 
-<$range tiddler="$:/_RangeDemo/2" min="0" max="1" default=".01" increment=".01"/> {{$:/_RangeDemo/2}}
+<$range tiddler="$:/state/_RangeDemo/2" min="0" max="1" default=".01" increment=".01"/> {{$:/state/_RangeDemo/2}}
 
 https://bramchen.github.io/tw5-docs/zh-Hans/
