@@ -38,7 +38,6 @@ build:
 	@make clean;
 	@mkdir public
 	@cp -r tiddlers/ files/ tiddlywiki.info public/
-	@cp src/tiddlywiki.info public/
 	@cd public/; rm -rf \
 		tiddlers/subwiki \
 		tiddlers/trashbin \
