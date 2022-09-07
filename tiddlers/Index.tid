@@ -1,22 +1,21 @@
 created: 20220828120245453
 creator: oeyoews
-modified: 20220907010234748
+modified: 20220907042457677
 modifier: oeyoews
 tags: 
 title: Index
 type: text/vnd.tiddlywiki
 
-<<details 
+<<.preamble  """<<emoji arrowright>> welcome to {{$:/SiteTitle}}
 """
-{{neotw/switch-tip}}
-{{neotw/restore-button}}
-""" 
-"<<emoji msg>>" >>
+>>
 
-<<emoji arrowright>> welcome to {{$:/SiteTitle}}
-
-* <<emoji book>> [[documention|neotw/docs]]  
-
-<<emoji arrowright>> [[web status|https://oeyoews.github.io/upptime]]
+* <<emoji book>> [[neotw documention|neotw/docs]]
 
 {{neotw/footer}}
+
+<<details  """
+{{neotw/switch-tip}}
+{{neotw/restore-button}}
+"""
+"<<emoji msg>>" >>

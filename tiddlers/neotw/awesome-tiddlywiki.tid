@@ -1,6 +1,6 @@
 created: 20220830130512773
 creator: oeyoews
-modified: 20220907015130737
+modified: 20220907041521434
 modifier: oeyoews
 tags: 
 title: neotw/awesome-tiddlywiki
@@ -10,7 +10,14 @@ type: text/vnd.tiddlywiki
 * svg: https://www.svgrepo.com
 * png: https://www.flaticon.com
 * fontawesome: http://fa5-free-svg.tiddlyspot.com
-* tutorial: https://groktiddlywiki.com/read
+* cn: https://bramchen.github.io/tw5-docs/zh-Hans
 * symbol: https://www.htmlsymbols.xyz/
 * img: https://unsplash.com/
 * imgtailor: https://deviceshots.com/
+
+
+<<emoji arrowright>> ''tutorial'': https://groktiddlywiki.com/read
+
+* ''grok video'' https://www.youtube.com/watch?v=uf5XV99YqMc
+
+* ''notebook '' https://nicolas.petton.fr/tw/notebook.html

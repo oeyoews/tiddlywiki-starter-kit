@@ -1,6 +1,6 @@
 created: 20220903040646600
 creator: oeyoews
-modified: 20220904010216838
+modified: 20220907041609696
 modifier: oeyoews
 tags: 
 title: neotw/docs
@@ -8,6 +8,9 @@ type: text/vnd.tiddlywiki
 
 <<.preamble "<<emoji book>> This is neotw documention <<emoji hourglass>>" >>
 
+* [[awesome list|neotw/awesome-tiddlywiki]]
+
+---
 <<.link-badge-updated "">> coming
 
 <<.contributors "oeyoews">>
