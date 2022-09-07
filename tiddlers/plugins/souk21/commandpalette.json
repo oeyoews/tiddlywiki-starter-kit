@@ -1,0 +1,595 @@
+{
+    "tiddlers": {
+        "$:/config/ShortcutInfo/insert-command-palette-result": {
+            "title": "$:/config/ShortcutInfo/insert-command-palette-result",
+            "created": "20200604175511112",
+            "modified": "20200604175520378",
+            "tags": "",
+            "type": "text/vnd.tiddlywiki",
+            "text": "Insert the current result in the previously focused element"
+        },
+        "$:/config/ShortcutInfo/open-command-palette-command-mode": {
+            "title": "$:/config/ShortcutInfo/open-command-palette-command-mode",
+            "created": "20200604175511112",
+            "modified": "20200604175520378",
+            "tags": "",
+            "type": "text/vnd.tiddlywiki",
+            "text": "Open the command palette in command mode"
+        },
+        "$:/config/ShortcutInfo/open-command-palette-selection": {
+            "title": "$:/config/ShortcutInfo/open-command-palette-selection",
+            "created": "20200604175511112",
+            "modified": "20200604175520378",
+            "tags": "",
+            "type": "text/vnd.tiddlywiki",
+            "text": "Open the command palette with current selection"
+        },
+        "$:/config/ShortcutInfo/open-command-palette": {
+            "title": "$:/config/ShortcutInfo/open-command-palette",
+            "created": "20200531223953066",
+            "modified": "20200531224011568",
+            "tags": "",
+            "type": "text/vnd.tiddlywiki",
+            "text": "Open the command palette"
+        },
+        "$:/config/shortcuts/insert-command-palette-result": {
+            "title": "$:/config/shortcuts/insert-command-palette-result",
+            "created": "20200604175539239",
+            "modified": "20200604175658624",
+            "type": "text/vnd.tiddlywiki",
+            "text": "ctrl+shift+I"
+        },
+        "$:/config/shortcuts/open-command-palette-command-mode": {
+            "title": "$:/config/shortcuts/open-command-palette-command-mode",
+            "created": "20200604175539239",
+            "modified": "20200604175658624",
+            "type": "text/vnd.tiddlywiki",
+            "text": "ctrl-shift-P"
+        },
+        "$:/config/shortcuts/open-command-palette-selection": {
+            "title": "$:/config/shortcuts/open-command-palette-selection",
+            "created": "20200604175539239",
+            "modified": "20200604175658624",
+            "type": "text/vnd.tiddlywiki",
+            "text": ""
+        },
+        "$:/config/shortcuts/open-command-palette": {
+            "title": "$:/config/shortcuts/open-command-palette",
+            "created": "20200531223906490",
+            "modified": "20200604175559200",
+            "tags": "",
+            "type": "text/vnd.tiddlywiki",
+            "text": "ctrl-P"
+        },
+        "$:/plugins/souk21/commandpalette/Browser Refresh": {
+            "title": "$:/plugins/souk21/commandpalette/Browser Refresh",
+            "command-palette-name": "Browser Refresh",
+            "command-palette-type": "message",
+            "created": "20200604212446283",
+            "modified": "20200604212453363",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "tm-browser-refresh\n"
+        },
+        "$:/plugins/souk21/commandpalette/Cancel Tiddler": {
+            "title": "$:/plugins/souk21/commandpalette/Cancel Tiddler",
+            "command-palette-mode": "drafts",
+            "command-palette-name": "Cancel Tiddler",
+            "command-palette-type": "history",
+            "command-palette-hint": "Choose Draft to cancel",
+            "created": "20200605221333412",
+            "modified": "20200605221425246",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "tm-cancel-tiddler\n"
+        },
+        "$:/plugins/souk21/commandpalette/Clone Tiddler": {
+            "title": "$:/plugins/souk21/commandpalette/Clone Tiddler",
+            "command-palette-name": "Clone Tiddler",
+            "command-palette-type": "history",
+            "command-palette-hint": "Chose tiddler to clone",
+            "created": "20200605211432310",
+            "modified": "20200605211434831",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "tm-new-tiddler\n"
+        },
+        "$:/plugins/souk21/commandpalette/Close All Tiddlers": {
+            "title": "$:/plugins/souk21/commandpalette/Close All Tiddlers",
+            "command-palette-name": "Close All Tiddlers",
+            "command-palette-type": "message",
+            "created": "20200604001529132",
+            "modified": "20200610112248371",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "tm-close-all-tiddlers\n"
+        },
+        "$:/plugins/souk21/commandpalette/Close Tiddler": {
+            "title": "$:/plugins/souk21/commandpalette/Close Tiddler",
+            "command-palette-name": "Close Tiddler",
+            "command-palette-type": "history",
+            "command-palette-hint": "Choose tiddler to close",
+            "created": "20200605211324321",
+            "modified": "20200605211327367",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "tm-close-tiddler\n"
+        },
+        "$:/plugins/souk21/commandpalette/Close other Tiddlers": {
+            "title": "$:/plugins/souk21/commandpalette/Close other Tiddlers",
+            "command-palette-name": "Close other Tiddlers",
+            "command-palette-type": "history",
+            "command-palette-hint": "Choose tiddler to keep",
+            "created": "20200605211357951",
+            "modified": "20200605211404900",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "tm-close-other-tiddlers\n"
+        },
+        "$:/plugins/souk21/commandpalette/Command Palette Settings": {
+            "title": "$:/plugins/souk21/commandpalette/Command Palette Settings",
+            "command-palette-name": "Command Palette Settings",
+            "command-palette-type": "prompt",
+            "created": "20200604001529132",
+            "modified": "20200610112433842",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "|\n"
+        },
+        "$:/core/ui/KeyboardShortcuts/CommandPalette": {
+            "title": "$:/core/ui/KeyboardShortcuts/CommandPalette",
+            "created": "20200531223354098",
+            "key": "((open-command-palette))",
+            "modified": "20200604175332730",
+            "tags": "$:/tags/KeyboardShortcut",
+            "type": "text/vnd.tiddlywiki",
+            "text": "<$action-sendmessage $message=\"open-command-palette\"/>"
+        },
+        "$:/plugins/souk21/commandpalette/CommandPaletteCommandMode": {
+            "title": "$:/plugins/souk21/commandpalette/CommandPaletteCommandMode",
+            "created": "20200604175339522",
+            "key": "((open-command-palette-command-mode))",
+            "modified": "20200604175716862",
+            "tags": "$:/tags/KeyboardShortcut",
+            "type": "text/vnd.tiddlywiki",
+            "text": "<$action-sendmessage $message=\"open-command-palette\" $param=\">\"/>"
+        },
+        "$:/plugins/souk21/commandpalette/CommandPaletteHistory": {
+            "text": "{\n    \"history\": [\n        \"Explorer\",\n        \"Clone Tiddler\",\n        \"See Drafts\",\n        \"Refresh Server\",\n        \"Permaview\",\n        \"See Themes\",\n        \"Refresh Command Palette\",\n        \"See Shadows Tiddlers\",\n        \"See Orphans Tiddlers\",\n        \"Remove tag\",\n        \"Add tag to tiddler\",\n        \"Delete Tiddler\",\n        \"Close Tiddler\",\n        \"Recent Tiddlers\",\n        \"New Task with Title\",\n        \"Edit Tiddler\",\n        \"See Mising Tiddlers\",\n        \"Show CommandTiddlers\",\n        \"See untagged Tiddlers\",\n        \"See Languages\",\n        \"See Plugins\",\n        \"New Command Wizard\",\n        \"Cancel Tiddler\",\n        \"Save Tiddler\",\n        \"Close other Tiddlers\",\n        \"Permalink\",\n        \"Create Command\",\n        \"Unfold All Tiddlers\",\n        \"Fold All Tiddlers\",\n        \"Print\",\n        \"Close All Tiddlers\",\n        \"Save Wiki\",\n        \"Home\",\n        \"Toggle Fullscreen\",\n        \"New Tiddler\"\n    ]\n}",
+            "type": "application/json",
+            "created": "20200603153247010",
+            "modified": "20200610112340290",
+            "title": "$:/plugins/souk21/commandpalette/CommandPaletteHistory"
+        },
+        "$:/plugins/souk21/commandpalette/CommandPaletteSearchSteps": {
+            "text": "{\n    \"steps\": [\n          {\"filter\": \"[!is[system]search:title[]]\", \"hint\": \"in title\", \"caret\": \"25\"},\n          {\"filter\": \"[all[system+shadows]search:title[]]\", \"hint\": \"in title (system)\", \"caret\": \"33\"},\n          {\"filter\": \"[search[]]\", \"hint\": \"all\", \"caret\": \"8\"},\n          {\"filter\": \"[all[shadows]search[]]\", \"hint\": \"shadows\", \"caret\": \"20\"}\n    ]\n}",
+            "type": "application/json",
+            "created": "20200604123820982",
+            "modified": "20200610112355489",
+            "title": "$:/plugins/souk21/commandpalette/CommandPaletteSearchSteps"
+        },
+        "$:/plugins/souk21/commandpalette/CommandPaletteSelection": {
+            "title": "$:/plugins/souk21/commandpalette/CommandPaletteSelection",
+            "created": "20200604175339522",
+            "key": "((open-command-palette-selection))",
+            "modified": "20200604175716862",
+            "tags": "$:/tags/KeyboardShortcut",
+            "type": "text/vnd.tiddlywiki",
+            "text": "<$action-sendmessage $message=\"open-command-palette-selection\"/>"
+        },
+        "$:/plugins/souk21/commandpalette/CommandPaletteSettings": {
+            "text": "{\n    \"maxResults\": \"30\",\n    \"maxResultHintSize\": 45,\n    \"neverBasic\": \"false\",\n    \"smoothScroll\": \"false\"\n}",
+            "type": "application/json",
+            "created": "20200604160432063",
+            "modified": "20200610112626066",
+            "title": "$:/plugins/souk21/commandpalette/CommandPaletteSettings"
+        },
+        "$:/plugins/souk21/commandpalette/Compact.css": {
+            "title": "$:/plugins/souk21/commandpalette/Compact.css",
+            "created": "20200603190000307",
+            "modified": "20200623022617588",
+            "tags": "$:/tags/CommandPaletteTheme $:/tags/Stylesheet",
+            "type": "text/vnd.tiddlywiki",
+            "text": "\n\\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline html\n:root {\n    --palette-radius: 5px;\n}\n.commandpalette {\n    position: fixed;\n    background: <<colour background>>;\n    z-index: 9999999;\n    left: 50%;\n    top: 10%;\n    transform: translate(-50%, 0%);\n    width: 500px;\n    display: none;\n    flex-direction: column;\n    font-size: 21px;\n    border-radius: var(--palette-radius);\n    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 14px;\n    border: 2px solid <<colour page-background>>;\n}\n.inputhintwrapper {\n    display: flex;\n    align-items: center;\n    border-bottom: 1px solid <<colour page-background>>;\n}\n.commandpalette input {\n    border: 0;\n    background: 0;\n    height: 40px;\n    color: <<colour foreground>>;\n    border-radius: var(--palette-radius) var(--palette-radius) 0px 0px;\n    outline: 0;\n    min-width: 50px;\n    flex: 1;\n    padding-left: 7px;\n}\n.commandpalettehint {\n    color:  <<colour foreground>>;\n    font-size: 13px;\n    text-align: right;\n    flex-shrink: 0;\n    padding-right: 7px;\n    opacity: 0.6;\n}\n.commandpaletteresultselected>.commandpalettehint {\n    color: <<colour background>>;\n    opacity: 1;\n}\n.commandpalettehintmain {\n\n}\n.commandpaletteresult {\n    background: <<colour background>>;\n    font-size: 15px;\n    color: <<colour foreground>>;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    padding-left: 6px;\n    padding-top: 4px;\n    padding-bottom: 4px;\n    cursor: pointer;\n}\n.commandpaletteresult:not(:last-child) {\n    border-bottom: <<colour page-background>> solid 1px;\n}\n.commandpaletteresult:hover:not(.commandpaletteresultselected) {\n    background: <<colour page-background>>;\n}\n.commandpaletteresultselected {\n    background: <<colour primary>>;\n    color: <<colour page-background>>;\n}\n.cp-scroll{\n    max-height: 50vh;\n    overflow-y: auto;\n    position: relative;\n    border-radius: 0px 0px var(--palette-radius) var(--palette-radius);\n}"
+        },
+        "$:/plugins/souk21/commandpalette/ControlPanel Command": {
+            "title": "$:/plugins/souk21/commandpalette/ControlPanel Command",
+            "command-palette-name": "Show Control Panel",
+            "command-palette-type": "actionString",
+            "created": "20200604143925638",
+            "modified": "20200610112527794",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "<$action-navigate $to=\"$:/ControlPanel\"/>"
+        },
+        "$:/plugins/souk21/commandpalette/Delete Tiddler": {
+            "title": "$:/plugins/souk21/commandpalette/Delete Tiddler",
+            "command-palette-name": "Delete Tiddler",
+            "command-palette-type": "history",
+            "command-palette-hint": "Choose tiddler to delete",
+            "created": "20200605211241408",
+            "modified": "20200605211244812",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "tm-delete-tiddler\n"
+        },
+        "$:/plugins/souk21/commandpalette/Edit Tiddler": {
+            "title": "$:/plugins/souk21/commandpalette/Edit Tiddler",
+            "command-palette-name": "Edit Tiddler",
+            "command-palette-type": "history",
+            "command-palette-hint": "Choose tiddler to edit",
+            "created": "20200605211111710",
+            "modified": "20200605211127693",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "tm-edit-tiddler\n"
+        },
+        "$:/plugins/souk21/commandpalette/Filter operation": {
+            "title": "$:/plugins/souk21/commandpalette/Filter operation",
+            "command-palette-name": "Filter operation",
+            "command-palette-type": "prompt",
+            "created": "20200604001529132",
+            "modified": "20200610112604366",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "[\n"
+        },
+        "$:/plugins/souk21/commandpalette/Fold All Tiddlers": {
+            "title": "$:/plugins/souk21/commandpalette/Fold All Tiddlers",
+            "command-palette-name": "Fold All Tiddlers",
+            "command-palette-type": "message",
+            "created": "20200604212356931",
+            "modified": "20200604212403497",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "tm-fold-all-tiddlers\n"
+        },
+        "$:/plugins/souk21/commandpalette/Home": {
+            "title": "$:/plugins/souk21/commandpalette/Home",
+            "command-palette-name": "Home",
+            "command-palette-type": "message",
+            "created": "20200604212243502",
+            "modified": "20200604212247135",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "tm-home\n"
+        },
+        "$:/plugins/souk21/commandpalette/InsertCommandPaletteResult": {
+            "title": "$:/plugins/souk21/commandpalette/InsertCommandPaletteResult",
+            "created": "20200604175339522",
+            "key": "((insert-command-palette-result))",
+            "modified": "20200604175716862",
+            "tags": "$:/tags/KeyboardShortcut",
+            "type": "text/vnd.tiddlywiki",
+            "text": "<$action-sendmessage $message=\"insert-command-palette-result\"/>"
+        },
+        "$:/plugins/souk21/commandpalette/New Journal Command": {
+            "title": "$:/plugins/souk21/commandpalette/New Journal Command",
+            "command-palette-name": "New Journal",
+            "command-palette-type": "actionString",
+            "created": "20200604143925638",
+            "modified": "20200610112527794",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "{{$:/core/ui/Actions/new-journal}}\n"
+        },
+        "$:/plugins/souk21/commandpalette/New Tiddler with title": {
+            "title": "$:/plugins/souk21/commandpalette/New Tiddler with title",
+            "command-palette-name": "New Tiddler with title",
+            "command-palette-type": "prompt",
+            "created": "20200604000707983",
+            "modified": "20200610112449264",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "+\n"
+        },
+        "$:/plugins/souk21/commandpalette/New Tiddler": {
+            "title": "$:/plugins/souk21/commandpalette/New Tiddler",
+            "command-palette-name": "New Tiddler",
+            "command-palette-type": "message",
+            "created": "20200604211924196",
+            "modified": "20200604212110424",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "tm-new-tiddler\n"
+        },
+        "$:/plugins/souk21/commandpalette/Original.css": {
+            "title": "$:/plugins/souk21/commandpalette/Original.css",
+            "created": "20200603190000307",
+            "modified": "20200623022617588",
+            "tags": "$:/tags/CommandPaletteTheme",
+            "type": "text/vnd.tiddlywiki",
+            "text": "\n\\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline html\n:root {\n    --palette-radius: 5px;\n}\n.commandpalette {\n    position: fixed;\n    background:<<colour page-background>>;\n    z-index: 9999999;\n    left: 50%;\n    top: 10%;\n    transform: translate(-50%, 0%);\n    width: 500px;\n    display: none;\n    flex-direction: column;\n    font-size: 21px;\n    border-radius: var(--palette-radius);\n    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 14px;\n    border: 4px solid rgba(0, 0, 0, 0);\n}\n.commandpalette input {\n    border: 0;\n    height: 40px;\n    color: <<colour foreground>>;\n    border-radius: var(--palette-radius) var(--palette-radius) 0px 0px;\n    padding-left: 11px;\n    padding-right: 11px;\n    width: 100%;\n    outline: 0;\n}\n.commandpalettehint {\n    color:  <<colour foreground>>;\n    font-size: 13px;\n    text-align: right;\n    flex-shrink: 0;\n    padding-right: 7px;\n    opacity: 0.6;\n}\n.commandpaletteresultselected>.commandpalettehint {\n    color: <<colour background>>;\n    opacity: 1;\n}\n.commandpalettehintmain {\n}\n.commandpaletteresult {\n    background: <<colour background>>;\n    font-size: 15px;\n    color: <<colour foreground>>;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    padding-left: 6px;\n    padding-top: 4px;\n    padding-bottom: 4px;\n    cursor: pointer;\n}\n.commandpaletteresult:not(:last-child) {\n    border-bottom: <<colour page-background>> solid 1px;\n}\n.commandpaletteresult:hover:not(.commandpaletteresultselected) {\n    background: <<colour page-background>>;\n}\n.commandpaletteresultselected {\n    background: <<colour primary>>;\n    color: <<colour page-background>>;\n}\n.cp-scroll{\n    max-height: 50vh;\n    overflow-y: auto;\n    position: relative;\n    border-radius: 0px 0px var(--palette-radius) var(--palette-radius);\n}"
+        },
+        "$:/plugins/souk21/commandpalette/Permalink": {
+            "title": "$:/plugins/souk21/commandpalette/Permalink",
+            "command-palette-name": "Permalink",
+            "command-palette-type": "history",
+            "command-palette-hint": "Choose tiddler to permaling",
+            "created": "20200605211220042",
+            "modified": "20200605211221257",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "tm-permalink\n"
+        },
+        "$:/plugins/souk21/commandpalette/Permaview": {
+            "title": "$:/plugins/souk21/commandpalette/Permaview",
+            "command-palette-name": "Permaview",
+            "command-palette-type": "message",
+            "created": "20200604212411320",
+            "modified": "20200604212415435",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "tm-permaview\n"
+        },
+        "$:/plugins/souk21/commandpalette/Print": {
+            "title": "$:/plugins/souk21/commandpalette/Print",
+            "command-palette-name": "Print",
+            "command-palette-type": "message",
+            "created": "20200604212424040",
+            "modified": "20200604212427027",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "tm-print\n"
+        },
+        "$:/plugins/souk21/commandpalette/Recent Tiddlers Command": {
+            "title": "$:/plugins/souk21/commandpalette/Recent Tiddlers Command",
+            "command-palette-caret": "33",
+            "command-palette-name": "Recent Tiddlers",
+            "command-palette-type": "prompt-basic",
+            "command-palette-hint": "Recent",
+            "created": "20200604001529132",
+            "modified": "20200610112702585",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "[!is[system]!sort[created]search[]]\n"
+        },
+        "$:/plugins/souk21/commandpalette/Refresh Server": {
+            "title": "$:/plugins/souk21/commandpalette/Refresh Server",
+            "command-palette-name": "Refresh Server",
+            "command-palette-type": "message",
+            "created": "20200604212332329",
+            "modified": "20200604212339404",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "tm-server-refresh\n"
+        },
+        "$:/plugins/souk21/commandpalette/Save Tiddler": {
+            "title": "$:/plugins/souk21/commandpalette/Save Tiddler",
+            "command-palette-mode": "drafts",
+            "command-palette-name": "Save Tiddler",
+            "command-palette-type": "history",
+            "command-palette-hint": "Choose Draft to save",
+            "created": "20200605221150599",
+            "modified": "20200605221400754",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "tm-save-tiddler\n"
+        },
+        "$:/plugins/souk21/commandpalette/Save Wiki": {
+            "title": "$:/plugins/souk21/commandpalette/Save Wiki",
+            "command-palette-name": "Save Wiki",
+            "command-palette-type": "message",
+            "created": "20200604212312470",
+            "modified": "20200604212316943",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "tm-save-wiki\n"
+        },
+        "$:/plugins/souk21/commandpalette/Search Tags": {
+            "title": "$:/plugins/souk21/commandpalette/Search Tags",
+            "command-palette-name": "Search Tags",
+            "command-palette-type": "prompt",
+            "created": "20200604001529132",
+            "modified": "20200610112728489",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "#\n"
+        },
+        "$:/plugins/souk21/commandpalette/Search fields": {
+            "title": "$:/plugins/souk21/commandpalette/Search fields",
+            "command-palette-caret": "16",
+            "command-palette-name": "Search fields",
+            "command-palette-type": "prompt-basic",
+            "created": "20200604023259497",
+            "modified": "20200610112923528",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "[fields[]search[]]\n"
+        },
+        "$:/plugins/souk21/commandpalette/Search tiddlers with tag": {
+            "title": "$:/plugins/souk21/commandpalette/Search tiddlers with tag",
+            "command-palette-name": "Search tiddlers with tag",
+            "command-palette-type": "prompt",
+            "created": "20200604001529132",
+            "modified": "20200610112742356",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "@\n"
+        },
+        "$:/plugins/souk21/commandpalette/Search": {
+            "title": "$:/plugins/souk21/commandpalette/Search",
+            "command-palette-name": "Search",
+            "command-palette-type": "prompt",
+            "created": "20200604001529132",
+            "modified": "20200610112649578",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki"
+        },
+        "$:/plugins/souk21/commandpalette/See Drafts": {
+            "title": "$:/plugins/souk21/commandpalette/See Drafts",
+            "command-palette-caret": "27",
+            "command-palette-name": "See Drafts",
+            "command-palette-type": "prompt-basic",
+            "created": "20200604001529132",
+            "modified": "20200610112802828",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "[has:field[draft.of]search[]]\n"
+        },
+        "$:/plugins/souk21/commandpalette/See Languages": {
+            "title": "$:/plugins/souk21/commandpalette/See Languages",
+            "command-palette-caret": "43",
+            "command-palette-name": "See Languages",
+            "command-palette-type": "prompt-basic",
+            "created": "20200606102156692",
+            "modified": "20200606102215081",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "[!has[draft.of]plugin-type[language]search[]]\n"
+        },
+        "$:/plugins/souk21/commandpalette/See Missing Tiddlers": {
+            "title": "$:/plugins/souk21/commandpalette/See Missing Tiddlers",
+            "command-palette-caret": "20",
+            "command-palette-name": "See Mising Tiddlers",
+            "command-palette-type": "prompt-basic",
+            "created": "20200604203347766",
+            "modified": "20200610112812369",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "[all[missing]search[]]\n"
+        },
+        "$:/plugins/souk21/commandpalette/See Orphans Tiddlers": {
+            "title": "$:/plugins/souk21/commandpalette/See Orphans Tiddlers",
+            "command-palette-caret": "20",
+            "command-palette-name": "See Orphans Tiddlers",
+            "command-palette-type": "prompt-basic",
+            "created": "20200604203457770",
+            "modified": "20200610112820353",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "[all[orphans]search[]]\n"
+        },
+        "$:/plugins/souk21/commandpalette/See Plugins": {
+            "title": "$:/plugins/souk21/commandpalette/See Plugins",
+            "command-palette-caret": "41",
+            "command-palette-name": "See Plugins",
+            "command-palette-type": "prompt-basic",
+            "created": "20200606101904501",
+            "modified": "20200606101924380",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "[!has[draft.of]plugin-type[plugin]search[]]\n"
+        },
+        "$:/plugins/souk21/commandpalette/See Shadows Tiddlers": {
+            "title": "$:/plugins/souk21/commandpalette/See Shadows Tiddlers",
+            "command-palette-caret": "20",
+            "command-palette-name": "See Shadows Tiddlers",
+            "command-palette-type": "prompt-basic",
+            "created": "20200604203634770",
+            "modified": "20200610112829887",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "[all[shadows]search[]]\n"
+        },
+        "$:/plugins/souk21/commandpalette/See Story List": {
+            "title": "$:/plugins/souk21/commandpalette/See Story List",
+            "command-palette-caret": "26",
+            "command-palette-name": "See Story List",
+            "command-palette-type": "prompt-basic",
+            "created": "20200604203347766",
+            "modified": "20200610112812369",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "[list[$:/StoryList]search[]]"
+        },
+        "$:/plugins/souk21/commandpalette/See Themes": {
+            "title": "$:/plugins/souk21/commandpalette/See Themes",
+            "command-palette-caret": "40",
+            "command-palette-name": "See Themes",
+            "command-palette-type": "prompt-basic",
+            "created": "20200606102041205",
+            "modified": "20200606102101828",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "[!has[draft.of]plugin-type[theme]search[]]\n"
+        },
+        "$:/plugins/souk21/commandpalette/See all content-types": {
+            "title": "$:/plugins/souk21/commandpalette/See all content-types",
+            "command-palette-caret": "48",
+            "command-palette-name": "See all content-type",
+            "command-palette-type": "prompt-basic",
+            "created": "20200604201605853",
+            "modified": "20200610112751272",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "[all[tiddlers+shadows]each[type]get[type]search[]]\n"
+        },
+        "$:/plugins/souk21/commandpalette/See untagged tiddlers": {
+            "title": "$:/plugins/souk21/commandpalette/See untagged tiddlers",
+            "command-palette-caret": "29",
+            "command-palette-name": "See untagged Tiddlers",
+            "command-palette-type": "prompt-basic",
+            "created": "20200604020335070",
+            "modified": "20200610112839898",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "[untagged[]!is[system]search[]]\n"
+        },
+        "$:/plugins/souk21/commandpalette/Show help": {
+            "title": "$:/plugins/souk21/commandpalette/Show help",
+            "command-palette-name": "Show help",
+            "command-palette-type": "prompt",
+            "created": "20200604001529132",
+            "modified": "20200610112849596",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "?\n"
+        },
+        "$:/plugins/souk21/commandpalette/Toggle Fullscreen": {
+            "title": "$:/plugins/souk21/commandpalette/Toggle Fullscreen",
+            "command-palette-name": "Toggle Fullscreen",
+            "command-palette-type": "message",
+            "created": "20200604212224319",
+            "modified": "20200604212229222",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "tm-full-screen\n"
+        },
+        "$:/plugins/souk21/commandpalette/Unfold All Tiddlers": {
+            "title": "$:/plugins/souk21/commandpalette/Unfold All Tiddlers",
+            "command-palette-name": "Unfold All Tiddlers",
+            "command-palette-type": "actionString",
+            "created": "20200605205037837",
+            "modified": "20200605205546285",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "<$action-sendmessage $message=\"tm-unfold-all-tiddlers\" foldedStatePrefix=\"$:/state/folded/\"/>\n"
+        },
+        "$:/plugins/souk21/commandpalette/Version": {
+            "title": "$:/plugins/souk21/commandpalette/Version",
+            "command-palette-caret": "49",
+            "command-palette-name": "Version",
+            "command-palette-type": "prompt-basic",
+            "created": "20200604001529132",
+            "modified": "20200610112802828",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "[[$:/plugins/souk21/commandpalette]get[version]]"
+        },
+        "$:/plugins/souk21/commandpalette/View": {
+            "title": "$:/plugins/souk21/commandpalette/View",
+            "created": "20200601134627220",
+            "modified": "20200606112407150",
+            "tags": "$:/tags/AboveStory",
+            "type": "text/vnd.tiddlywiki",
+            "text": "<$commandpalettewidget/>\n"
+        },
+        "$:/plugins/souk21/commandpalette/show tiddler commands": {
+            "title": "$:/plugins/souk21/commandpalette/show tiddler commands",
+            "command-palette-name": "Show CommandTiddlers",
+            "command-palette-type": "prompt",
+            "created": "20200603235441202",
+            "modified": "20200610112900184",
+            "tags": "$:/tags/CommandPaletteCommand",
+            "type": "text/vnd.tiddlywiki",
+            "text": "@$:/tags/CommandPaletteCommand\n"
+        },
+        "$:/core/modules/widgets/commandpalettewidget.js": {
+            "title": "$:/core/modules/widgets/commandpalettewidget.js",
+            "text": "/*\\\ntitle: $:/core/modules/widgets/commandpalettewidget.js\ntype: application/javascript\nmodule-type: widget\n\nCommand Palette Widget\n\n\\*/\n(function () {\n\n\t/*jslint node: true, browser: true */\n\t/*global $tw: false */\n\t'use strict';\n\n\tvar Widget = require('$:/core/modules/widgets/widget.js').widget;\n\n\tclass CommandPaletteWidget extends Widget {\n\t\tconstructor(parseTreeNode, options) {\n\t\t\tsuper(parseTreeNode, options);\n\t\t\tthis.initialise(parseTreeNode, options);\n\t\t\tthis.currentSelection = 0; //0 is nothing selected, 1 is first result,...\n\t\t\tthis.symbolProviders = {};\n\t\t\tthis.actions = [];\n\t\t\tthis.triggers = [];\n\t\t\tthis.blockProviderChange = false;\n\t\t\tthis.defaultSettings = {\n\t\t\t\tmaxResults: 15,\n\t\t\t\tmaxResultHintSize: 45,\n\t\t\t\tneverBasic: false,\n\t\t\t\tshowHistoryOnOpen: true,\n\t\t\t\tescapeGoesBack: true,\n\t\t\t\talwaysPassSelection: true,\n\t\t\t\ttheme: '$:/plugins/souk21/commandpalette/Compact.css',\n\t\t\t};\n\t\t\tthis.settings = {};\n\t\t\tthis.commandHistoryPath = '$:/plugins/souk21/commandpalette/CommandPaletteHistory';\n\t\t\tthis.settingsPath = '$:/plugins/souk21/commandpalette/CommandPaletteSettings';\n\t\t\tthis.searchStepsPath = '$:/plugins/souk21/commandpalette/CommandPaletteSearchSteps';\n\t\t\tthis.customCommandsTag = '$:/tags/CommandPaletteCommand';\n\t\t\tthis.themesTag = '$:/tags/CommandPaletteTheme';\n\t\t\tthis.typeField = 'command-palette-type';\n\t\t\tthis.nameField = 'command-palette-name';\n\t\t\tthis.hintField = 'command-palette-hint';\n\t\t\tthis.modeField = 'command-palette-mode';\n\t\t\tthis.userInputField = 'command-palette-user-input';\n\t\t\tthis.caretField = 'command-palette-caret';\n\t\t\tthis.immediateField = 'command-palette-immediate';\n\t\t\tthis.triggerField = 'command-palette-trigger';\n\t\t}\n\n\t\tactionStringBuilder(text) {\n\t\t\treturn (e) => this.invokeActionString(text, this, e);\n\t\t}\n\n\t\tactionStringInput(action, hint, e) {\n\t\t\tthis.blockProviderChange = true;\n\t\t\tthis.allowInputFieldSelection = true;\n\t\t\tthis.hint.innerText = hint;\n\t\t\tthis.input.value = '';\n\t\t\tthis.currentProvider = () => { };\n\t\t\tthis.currentResolver = (e) => {\n\t\t\t\tthis.invokeActionString(action, this, e, { 'commandpaletteinput': this.input.value });\n\t\t\t\tthis.closePalette();\n\t\t\t}\n\t\t\tthis.showResults([]);\n\t\t\tthis.onInput(this.input.value);\n\t\t}\n\n\t\tinvokeFieldMangler(tiddler, message, param, e) {\n\t\t\tlet action = `<$fieldmangler tiddler=\"${tiddler}\">\n\t\t\t<$action-sendmessage $message=\"${message}\" $param=\"${param}\"/>\n\t\t\t</$fieldmangler>`;\n\t\t\tthis.invokeActionString(action, this, e);\n\t\t}\n\n\t\t//filter = (tiddler, terms) => [tiddlers]\n\t\ttagOperation(e, hintTiddler, hintTag, filter, allowNoSelection, message) {\n\t\t\tthis.blockProviderChange = true;\n\t\t\tif (allowNoSelection) this.allowInputFieldSelection = true;\n\t\t\tthis.currentProvider = this.historyProviderBuilder(hintTiddler);\n\t\t\tthis.currentResolver = (e) => {\n\t\t\t\tif (this.currentSelection === 0) return;\n\t\t\t\tlet tiddler = this.currentResults[this.currentSelection - 1].result.name;\n\t\t\t\tthis.currentProvider = (terms) => {\n\t\t\t\t\tthis.currentSelection = 0;\n\t\t\t\t\tthis.hint.innerText = hintTag;\n\t\t\t\t\tlet searches = filter(tiddler, terms);\n\t\t\t\t\tsearches = searches.map(s => { return { name: s }; });\n\t\t\t\t\tthis.showResults(searches);\n\t\t\t\t}\n\t\t\t\tthis.input.value = \"\";\n\t\t\t\tthis.onInput(this.input.value);\n\t\t\t\tthis.currentResolver = (e) => {\n\t\t\t\t\tif (!allowNoSelection && this.currentSelection === 0) return;\n\t\t\t\t\tlet tag = this.input.value;\n\t\t\t\t\tif (this.currentSelection !== 0) {\n\t\t\t\t\t\ttag = this.currentResults[this.currentSelection - 1].result.name;\n\t\t\t\t\t}\n\t\t\t\t\tthis.invokeFieldMangler(tiddler, message, tag, e);\n\t\t\t\t\tif (!e.getModifierState('Shift')) {\n\t\t\t\t\t\tthis.closePalette();\n\t\t\t\t\t} else {\n\t\t\t\t\t\tthis.onInput(this.input.value);\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t\tthis.input.value = \"\";\n\t\t\tthis.onInput(this.input.value);\n\t\t}\n\n\t\trefreshThemes(e) {\n\t\t\tthis.themes = this.getTiddlersWithTag(this.themesTag);\n\t\t\tlet found = false;\n\t\t\tfor (let theme of this.themes) {\n\t\t\t\tlet themeName = theme.fields.title;\n\t\t\t\tif (themeName === this.settings.theme) {\n\t\t\t\t\tfound = true;\n\t\t\t\t\tthis.addTagIfNecessary(themeName, '$:/tags/Stylesheet', e);\n\t\t\t\t} else {\n\t\t\t\t\tthis.invokeFieldMangler(themeName, 'tm-remove-tag', '$:/tags/Stylesheet', e);\n\t\t\t\t}\n\t\t\t}\n\t\t\tif (found) return;\n\t\t\tthis.addTagIfNecessary(this.defaultSettings.theme, '$:/tags/Stylesheet', e);\n\t\t}\n\n\t\t//Re-adding an existing tag changes modification date\n\t\taddTagIfNecessary(tiddler, tag, e) {\n\t\t\tif (this.hasTag(tiddler, tag)) return;\n\t\t\tthis.invokeFieldMangler(tiddler, 'tm-add-tag', tag, e);\n\t\t}\n\n\t\thasTag(tiddler, tag) {\n\t\t\treturn $tw.wiki.getTiddler(tiddler).fields.tags.includes(tag);\n\t\t}\n\n\t\trefreshCommands() {\n\t\t\tthis.actions = [];\n\t\t\tthis.actions.push({ name: \"Refresh Command Palette\", action: (e) => { this.refreshCommandPalette(); this.promptCommand('') }, keepPalette: true });\n\t\t\tthis.actions.push({ name: \"Explorer\", action: (e) => this.explorer(e), keepPalette: true });\n\t\t\tthis.actions.push({ name: \"See History\", action: (e) => this.showHistory(e), keepPalette: true });\n\t\t\tthis.actions.push({ name: \"New Command Wizard\", action: (e) => this.newCommandWizard(e), keepPalette: true });\n\t\t\tthis.actions.push({\n\t\t\t\tname: \"Add tag to tiddler\",\n\t\t\t\taction: (e) => this.tagOperation(e, 'Pick tiddler to tag', 'Pick tag to add (⇧⏎ to add multiple)',\n\t\t\t\t\t(tiddler, terms) => $tw.wiki.filterTiddlers(`[!is[system]tags[]] [is[system]tags[]] -[[${tiddler}]tags[]] +[search[${terms}]]`),\n\t\t\t\t\ttrue,\n\t\t\t\t\t'tm-add-tag'),\n\t\t\t\tkeepPalette: true\n\t\t\t});\n\t\t\tthis.actions.push({\n\t\t\t\tname: \"Remove tag\",\n\t\t\t\taction: (e) => this.tagOperation(e, 'Pick tiddler to untag', 'Pick tag to remove (⇧⏎ to remove multiple)',\n\t\t\t\t\t(tiddler, terms) => $tw.wiki.filterTiddlers(`[[${tiddler}]tags[]] +[search[${terms}]]`),\n\t\t\t\t\tfalse,\n\t\t\t\t\t'tm-remove-tag'),\n\t\t\t\tkeepPalette: true\n\t\t\t});\n\n\t\t\tlet commandTiddlers = this.getTiddlersWithTag(this.customCommandsTag);\n\t\t\tfor (let tiddler of commandTiddlers) {\n\t\t\t\tif (!tiddler.fields[this.typeField] === undefined) continue;\n\t\t\t\tlet name = tiddler.fields[this.nameField];\n\t\t\t\tlet type = tiddler.fields[this.typeField];\n\t\t\t\tlet text = tiddler.fields.text;\n\t\t\t\tif (text === undefined) text = '';\n\t\t\t\tlet textFirstLine = text.match(/^.*/)[0];\n\t\t\t\tlet hint = tiddler.fields[this.hintField];\n\t\t\t\tif (hint === undefined) hint = tiddler.fields[this.nameField];\n\t\t\t\tif (hint === undefined) hint = '';\n\t\t\t\tif (type === 'shortcut') {\n\t\t\t\t\tlet trigger = tiddler.fields[this.triggerField];\n\t\t\t\t\tif (trigger === undefined) continue;\n\t\t\t\t\tthis.triggers.push({ name, trigger, text, hint });\n\t\t\t\t\tcontinue;\n\t\t\t\t}\n\t\t\t\tif (!tiddler.fields[this.nameField] === undefined) continue;\n\t\t\t\tif (type === 'prompt') {\n\t\t\t\t\tlet immediate = !!tiddler.fields[this.immediateField];\n\t\t\t\t\tlet caret = tiddler.fields[this.caretField];\n\t\t\t\t\tlet action = { name: name, action: () => this.promptCommand(textFirstLine, caret), keepPalette: !immediate, immediate: immediate };\n\t\t\t\t\tthis.actions.push(action);\n\t\t\t\t\tcontinue;\n\t\t\t\t}\n\t\t\t\tif (type === 'prompt-basic') {\n\t\t\t\t\tlet caret = tiddler.fields[this.caretField];\n\t\t\t\t\tlet action = { name: name, action: () => this.promptCommandBasic(textFirstLine, caret, hint), keepPalette: true };\n\t\t\t\t\tthis.actions.push(action);\n\t\t\t\t\tcontinue;\n\t\t\t\t}\n\t\t\t\tif (type === 'message') {\n\t\t\t\t\tthis.actions.push({ name: name, action: (e) => this.tmMessageBuilder(textFirstLine)(e) });\n\t\t\t\t\tcontinue;\n\t\t\t\t}\n\t\t\t\tif (type === 'actionString') {\n\t\t\t\t\tlet userInput = tiddler.fields[this.userInputField] !== undefined && tiddler.fields[this.userInputField] === 'true';\n\t\t\t\t\tif (userInput) {\n\t\t\t\t\t\tthis.actions.push({ name: name, action: (e) => this.actionStringInput(text, hint, e), keepPalette: true });\n\t\t\t\t\t} else {\n\t\t\t\t\t\tthis.actions.push({ name: name, action: (e) => this.actionStringBuilder(text)(e) });\n\t\t\t\t\t}\n\t\t\t\t\tcontinue;\n\t\t\t\t}\n\t\t\t\tif (type === 'history') {\n\t\t\t\t\tlet mode = tiddler.fields[this.modeField];\n\t\t\t\t\tthis.actions.push({ name: name, action: (e) => this.commandWithHistoryPicker(textFirstLine, hint, mode).handler(e), keepPalette: true });\n\t\t\t\t\tcontinue;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\n\t\tnewCommandWizard() {\n\t\t\tthis.blockProviderChange = true;\n\t\t\tthis.input.value = '';\n\t\t\tthis.hint.innerText = 'Command Name';\n\t\t\tlet name = '';\n\t\t\tlet type = '';\n\t\t\tlet hint = '';\n\n\t\t\tlet messageStep = () => {\n\t\t\t\tthis.input.value = '';\n\t\t\t\tthis.hint.innerText = 'Enter Message';\n\t\t\t\tthis.currentResolver = (e) => {\n\t\t\t\t\tthis.tmMessageBuilder('tm-new-tiddler',\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\ttitle: '$:/' + name,\n\t\t\t\t\t\t\ttags: this.customCommandsTag,\n\t\t\t\t\t\t\t[this.typeField]: type,\n\t\t\t\t\t\t\t[this.nameField]: name,\n\t\t\t\t\t\t\t[this.hintField]: hint,\n\t\t\t\t\t\t\ttext: this.input.value\n\t\t\t\t\t\t})(e);\n\t\t\t\t\tthis.closePalette();\n\t\t\t\t}\n\t\t\t}\n\n\t\t\tlet hintStep = () => {\n\t\t\t\tthis.input.value = '';\n\t\t\t\tthis.hint.innerText = 'Enter hint';\n\t\t\t\tthis.currentResolver = (e) => {\n\t\t\t\t\thint = this.input.value;\n\t\t\t\t\tmessageStep();\n\t\t\t\t}\n\t\t\t}\n\n\n\t\t\tlet typeStep = () => {\n\t\t\t\tthis.input.value = '';\n\t\t\t\tthis.hint.innerText = 'Enter type (prompt, prompt-basic, message, actionString, history)'\n\t\t\t\tthis.currentResolver = (e) => {\n\t\t\t\t\ttype = this.input.value;\n\t\t\t\t\tif (type === 'history') {\n\t\t\t\t\t\thintStep();\n\t\t\t\t\t} else {\n\t\t\t\t\t\tthis.tmMessageBuilder('tm-new-tiddler',\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\ttitle: '$:/' + name,\n\t\t\t\t\t\t\t\ttags: this.customCommandsTag,\n\t\t\t\t\t\t\t\t[this.typeField]: type,\n\t\t\t\t\t\t\t\t[this.nameField]: name\n\t\t\t\t\t\t\t})(e);\n\t\t\t\t\t\tthis.closePalette();\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\n\t\t\tthis.currentProvider = (terms) => { }\n\t\t\tthis.currentResolver = (e) => {\n\t\t\t\tif (this.input.value.length === 0) return;\n\t\t\t\tname = this.input.value;\n\t\t\t\ttypeStep();\n\t\t\t}\n\t\t\tthis.showResults([]);\n\t\t}\n\n\t\texplorer(e) {\n\t\t\tthis.blockProviderChange = true;\n\t\t\tthis.input.value = '$:/';\n\t\t\tthis.lastExplorerInput = '$:/';\n\t\t\tthis.hint.innerText = 'Explorer (⇧⏎ to add multiple)';\n\t\t\tthis.currentProvider = (terms) => this.explorerProvider('$:/', terms);\n\t\t\tthis.currentResolver = (e) => {\n\t\t\t\tif (this.currentSelection === 0) return;\n\t\t\t\tthis.currentResults[this.currentSelection - 1].result.action(e);\n\t\t\t}\n\t\t\tthis.onInput();\n\t\t}\n\n\t\texplorerProvider(url, terms) {\n\t\t\tlet switchFolder = (url) => {\n\t\t\t\tthis.input.value = url;\n\t\t\t\tthis.lastExplorerInput = this.input.value;\n\t\t\t\tthis.currentProvider = (terms) => this.explorerProvider(url, terms);\n\t\t\t\tthis.onInput();\n\t\t\t};\n\t\t\tif (!this.input.value.startsWith(url)) {\n\t\t\t\tthis.input.value = this.lastExplorerInput;\n\t\t\t}\n\t\t\tthis.lastExplorerInput = this.input.value;\n\t\t\tthis.currentSelection = 0;\n\t\t\tlet search = this.input.value.substr(url.length);\n\t\t\tlet tiddlers = $tw.wiki.filterTiddlers(`[removeprefix[${url}]splitbefore[/]sort[]search[${search}]]`);\n\t\t\tlet folders = [];\n\t\t\tlet files = [];\n\t\t\tfor (let tiddler of tiddlers) {\n\t\t\t\tif (tiddler.endsWith('/')) {\n\t\t\t\t\tfolders.push({ name: tiddler, action: (e) => switchFolder(`${url}${tiddler}`) });\n\t\t\t\t} else {\n\t\t\t\t\tfiles.push({\n\t\t\t\t\t\tname: tiddler, action: (e) => {\n\t\t\t\t\t\t\tthis.navigateTo(`${url}${tiddler}`);\n\t\t\t\t\t\t\tif (!e.getModifierState('Shift')) {\n\t\t\t\t\t\t\t\tthis.closePalette();\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t});\n\t\t\t\t}\n\t\t\t}\n\t\t\tlet topResult;\n\t\t\tif (url !== '$:/') {\n\t\t\t\tlet splits = url.split('/');\n\t\t\t\tsplits.splice(splits.length - 2);\n\t\t\t\tlet parent = splits.join('/') + '/';\n\t\t\t\ttopResult = { name: '..', action: (e) => switchFolder(parent) };\n\t\t\t\tthis.showResults([topResult, ...folders, ...files]);\n\t\t\t\treturn;\n\t\t\t}\n\t\t\tthis.showResults([...folders, ...files]);\n\t\t}\n\n\t\tsetSetting(name, value) {\n\t\t\t//doing the validation here too (it's also done in refreshSettings, so you can load you own settings with a json file)\n\t\t\tif (typeof value === 'string') {\n\t\t\t\tif (value === 'true') value = true;\n\t\t\t\tif (value === 'false') value = false;\n\t\t\t}\n\t\t\tthis.settings[name] = value;\n\t\t\t$tw.wiki.setTiddlerData(this.settingsPath, this.settings);\n\t\t}\n\n\t\t//loadSettings?\n\t\trefreshSettings() {\n\t\t\t//get user or default settings\n\t\t\tthis.settings = $tw.wiki.getTiddlerData(this.settingsPath, { ...this.defaultSettings });\n\t\t\t//Adding eventual missing properties to current user settings\n\t\t\tfor (let prop in this.defaultSettings) {\n\t\t\t\tif (!this.defaultSettings.hasOwnProperty(prop)) continue;\n\t\t\t\tif (this.settings[prop] === undefined) {\n\t\t\t\t\tthis.settings[prop] = this.defaultSettings[prop];\n\t\t\t\t}\n\t\t\t}\n\t\t\t//cast all booleans\n\t\t\tfor (let prop in this.settings) {\n\t\t\t\tif (!this.settings.hasOwnProperty(prop)) continue;\n\t\t\t\tif (typeof this.settings[prop] !== 'string') continue;\n\t\t\t\tif (this.settings[prop].toLowerCase() === 'true') this.settings[prop] = true;\n\t\t\t\tif (this.settings[prop].toLowerCase() === 'false') this.settings[prop] = false;\n\t\t\t}\n\t\t}\n\n\t\t//helper function to retrieve all tiddlers (+ their fields) with a tag\n\t\tgetTiddlersWithTag(tag) {\n\t\t\tlet tiddlers = $tw.wiki.getTiddlersWithTag(tag);\n\t\t\treturn tiddlers.map(t => $tw.wiki.getTiddler(t));\n\t\t}\n\n\t\trender(parent, nextSibling) {\n\t\t\tthis.parentDomNode = parent;\n\t\t\tthis.execute();\n\t\t\tthis.history = $tw.wiki.getTiddlerData(this.commandHistoryPath, { history: [] }).history;\n\n\t\t\t$tw.rootWidget.addEventListener('open-command-palette', (e) => this.openPalette(e));\n\t\t\t$tw.rootWidget.addEventListener('open-command-palette-selection', (e) => this.openPaletteSelection(e));\n\t\t\t$tw.rootWidget.addEventListener('insert-command-palette-result', (e) => this.insertSelectedResult(e));\n\n\t\t\tlet inputAndMainHintWrapper = this.createElement('div', { className: 'inputhintwrapper' });\n\t\t\tthis.div = this.createElement('div', { className: 'commandpalette' }, { display: 'none' });\n\t\t\tthis.input = this.createElement('input', { type: 'text' });\n\t\t\tthis.hint = this.createElement('div', { className: 'commandpalettehint commandpalettehintmain' });\n\t\t\tinputAndMainHintWrapper.append(this.input, this.hint);\n\t\t\tthis.scrollDiv = this.createElement('div', { className: 'cp-scroll' });\n\t\t\tthis.div.append(inputAndMainHintWrapper, this.scrollDiv);\n\t\t\tthis.input.addEventListener('keydown', (e) => this.onKeyDown(e));\n\t\t\tthis.input.addEventListener('input', () => this.onInput(this.input.value));\n\t\t\twindow.addEventListener('click', (e) => this.onClick(e));\n\t\t\tparent.insertBefore(this.div, nextSibling);\n\n\t\t\tthis.refreshCommandPalette();\n\n\t\t\tthis.symbolProviders['>'] = { searcher: (terms) => this.actionProvider(terms), resolver: (e) => this.actionResolver(e) };\n\t\t\tthis.symbolProviders['#'] = { searcher: (terms) => this.tagListProvider(terms), resolver: (e) => this.tagListResolver(e) };\n\t\t\tthis.symbolProviders['@'] = { searcher: (terms) => this.tagProvider(terms), resolver: (e) => this.defaultResolver(e) };\n\t\t\tthis.symbolProviders['?'] = { searcher: (terms) => this.helpProvider(terms), resolver: (e) => this.helpResolver(e) };\n\t\t\tthis.symbolProviders['['] = { searcher: (terms, hint) => this.filterProvider(terms, hint), resolver: (e) => this.filterResolver(e) };\n\t\t\tthis.symbolProviders['+'] = { searcher: (terms) => this.createTiddlerProvider(terms), resolver: (e) => this.createTiddlerResolver() };\n\t\t\tthis.symbolProviders['|'] = { searcher: (terms) => this.settingsProvider(terms), resolver: (e) => this.settingsResolver() };\n\t\t\tthis.currentResults = [];\n\t\t\tthis.currentProvider = {};\n\t\t}\n\n\t\trefreshSearchSteps() {\n\t\t\tthis.searchSteps = [];\n\t\t\tlet steps = $tw.wiki.getTiddlerData(this.searchStepsPath);\n\t\t\tsteps = steps.steps;\n\t\t\tfor (let step of steps) {\n\t\t\t\tthis.searchSteps.push(this.searchStepBuilder(step.filter, step.caret, step.hint));\n\t\t\t}\n\t\t}\n\n\t\trefreshCommandPalette() {\n\t\t\tthis.refreshSettings();\n\t\t\tthis.refreshThemes();\n\t\t\tthis.refreshCommands();\n\t\t\tthis.refreshSearchSteps();\n\t\t}\n\n\t\tupdateCommandHistory(command) {\n\t\t\tthis.history = Array.from(new Set([command.name, ...this.history]));\n\t\t\t$tw.wiki.setTiddlerData(this.commandHistoryPath, { history: this.history });\n\t\t}\n\n\t\thistoryProviderBuilder(hint, mode) {\n\t\t\treturn (terms) => {\n\t\t\t\tthis.currentSelection = 0;\n\t\t\t\tthis.hint.innerText = hint;\n\t\t\t\tlet results;\n\t\t\t\tif (mode !== undefined && mode === 'drafts') {\n\t\t\t\t\tresults = $tw.wiki.filterTiddlers('[has:field[draft.of]]');\n\t\t\t\t} else if (mode !== undefined && mode === 'story') {\n\t\t\t\t\tresults = $tw.wiki.filterTiddlers('[list[$:/StoryList]]');\n\t\t\t\t} else {\n\t\t\t\t\tresults = this.getHistory();\n\t\t\t\t}\n\t\t\t\tresults = results.map(r => { return { name: r } });\n\t\t\t\tthis.showResults(results);\n\t\t\t};\n\t\t}\n\n\t\tcommandWithHistoryPicker(message, hint, mode) {\n\t\t\tlet handler = (e) => {\n\t\t\t\tthis.blockProviderChange = true;\n\t\t\t\tthis.allowInputFieldSelection = true;\n\t\t\t\tthis.currentProvider = provider;\n\t\t\t\tthis.currentResolver = resolver;\n\t\t\t\tthis.input.value = '';\n\t\t\t\tthis.onInput(this.input.value);\n\t\t\t}\n\t\t\tlet provider = this.historyProviderBuilder(hint, mode);\n\t\t\tlet resolver = (e) => {\n\t\t\t\tif (this.currentSelection === 0) return;\n\t\t\t\tlet title = this.currentResults[this.currentSelection - 1].result.name;\n\t\t\t\tthis.parentWidget.dispatchEvent({\n\t\t\t\t\ttype: message,\n\t\t\t\t\tparam: title,\n\t\t\t\t\ttiddlerTitle: title,\n\t\t\t\t});\n\t\t\t\tthis.closePalette();\n\t\t\t}\n\t\t\treturn {\n\t\t\t\thandler,\n\t\t\t\tprovider,\n\t\t\t\tresolver\n\t\t\t}\n\t\t}\n\t\tonInput(text) {\n\t\t\tif (this.blockProviderChange) { //prevent provider changes\n\t\t\t\tthis.currentProvider(text);\n\t\t\t\tthis.setSelectionToFirst();\n\t\t\t\treturn;\n\t\t\t}\n\t\t\tlet { resolver, provider, terms } = this.parseCommand(text);\n\t\t\tthis.currentResolver = resolver;\n\t\t\tthis.currentProvider = provider;\n\t\t\tthis.currentProvider(terms);\n\t\t\tthis.setSelectionToFirst();\n\t\t}\n\t\tparseCommand(text) {\n\t\t\tlet terms = \"\";\n\t\t\tlet prefix = text.substr(0, 1);\n\t\t\tlet resolver;\n\t\t\tlet provider;\n\t\t\tlet shortcut = this.triggers.find(t => text.startsWith(t.trigger));\n\t\t\tif (shortcut !== undefined) {\n\t\t\t\tresolver = (e) => {\n\t\t\t\t\tlet inputWithoutShortcut = this.input.value.substr(shortcut.trigger.length);\n\t\t\t\t\tthis.invokeActionString(shortcut.text, this, e, { 'commandpaletteinput': inputWithoutShortcut });\n\t\t\t\t\tthis.closePalette();\n\t\t\t\t}\n\t\t\t\tprovider = (terms) => {\n\t\t\t\t\tthis.hint.innerText = shortcut.hint;\n\t\t\t\t\tthis.showResults([]);\n\t\t\t\t}\n\t\t\t} else {\n\t\t\t\tlet providerSymbol = Object.keys(this.symbolProviders).find(p => p === prefix);\n\t\t\t\tif (providerSymbol === undefined) {\n\t\t\t\t\tresolver = this.defaultResolver;\n\t\t\t\t\tprovider = this.defaultProvider;\n\t\t\t\t\tterms = text;\n\t\t\t\t}\n\t\t\t\telse {\n\t\t\t\t\tprovider = this.symbolProviders[providerSymbol].searcher;\n\t\t\t\t\tresolver = this.symbolProviders[providerSymbol].resolver;\n\t\t\t\t\tterms = text.substring(1);\n\t\t\t\t}\n\t\t\t}\n\t\t\treturn { resolver, provider, terms }\n\t\t}\n\t\tonClick(e) {\n\t\t\tif (this.isOpened && !this.div.contains(e.target)) {\n\t\t\t\tthis.closePalette();\n\t\t\t}\n\t\t}\n\t\topenPaletteSelection(e) {\n\t\t\tlet selection = this.getCurrentSelection();\n\t\t\te.param = selection;\n\t\t\tthis.openPalette(e);\n\t\t}\n\t\topenPalette(e) {\n\t\t\tthis.isOpened = true;\n\t\t\tthis.allowInputFieldSelection = false;\n\t\t\tthis.goBack = undefined;\n\t\t\tthis.blockProviderChange = false;\n\t\t\tlet activeElement = this.getActiveElement();\n\t\t\tthis.previouslyFocused = { element: activeElement, start: activeElement.selectionStart, end: activeElement.selectionEnd, caretPos: activeElement.selectionEnd };\n\t\t\tthis.input.value = '';\n\t\t\tif (e.param !== undefined) {\n\t\t\t\tthis.input.value = e.param;\n\t\t\t}\n\t\t\tif (this.settings.alwaysPassSelection) {\n\t\t\t\tthis.input.value += this.getCurrentSelection();\n\t\t\t}\n\t\t\tthis.currentSelection = 0;\n\t\t\tthis.onInput(this.input.value); //Trigger results on open\n\t\t\tthis.div.style.display = 'flex';\n\t\t\tthis.input.focus();\n\t\t}\n\n\t\tinsertSelectedResult() {\n\t\t\tif (!this.isOpened) return;\n\t\t\tif (this.currentSelection === 0) return; //TODO: what to do here?\n\t\t\tlet previous = this.previouslyFocused;\n\t\t\tlet previousValue = previous.element.value;\n\t\t\tif (previousValue === undefined) return;\n\t\t\tlet selection = this.currentResults[this.currentSelection - 1].result.name;\n\t\t\tif (previous.start !== previous.end) {\n\t\t\t\tthis.previouslyFocused.element.value = previousValue.substring(0, previous.start) + selection + previousValue.substring(previous.end);\n\t\t\t} else {\n\t\t\t\tthis.previouslyFocused.element.value = previousValue.substring(0, previous.start) + selection + previousValue.substring(previous.start);\n\t\t\t}\n\t\t\tthis.previouslyFocused.caretPos = previous.start + selection.length;\n\t\t\tthis.closePalette();\n\t\t}\n\n\t\tclosePalette() {\n\t\t\tthis.div.style.display = 'none';\n\t\t\tthis.isOpened = false;\n\t\t\tthis.focusAtCaretPosition(this.previouslyFocused.element, this.previouslyFocused.caretPos);\n\t\t}\n\t\tonKeyDown(e) {\n\t\t\tif (e.key === 'Escape') {\n\t\t\t\t//\t\t\t\t\t\t\t\t\t\\/ There's no previous state\n\t\t\t\tif (!this.settings.escapeGoesBack || this.goBack === undefined) {\n\t\t\t\t\tthis.closePalette();\n\t\t\t\t} else {\n\t\t\t\t\tthis.goBack();\n\t\t\t\t\tthis.goBack = undefined;\n\t\t\t\t}\n\t\t\t}\n\t\t\telse if (e.key === 'ArrowUp') {\n\t\t\t\te.preventDefault();\n\t\t\t\te.stopPropagation();\n\t\t\t\tlet sel = this.currentSelection - 1;\n\n\t\t\t\tif (sel === 0) {\n\t\t\t\t\tif (!this.allowInputFieldSelection) {\n\t\t\t\t\t\tsel = this.currentResults.length;\n\t\t\t\t\t}\n\t\t\t\t} else if (sel < 0) {\n\t\t\t\t\tsel = this.currentResults.length;\n\t\t\t\t}\n\t\t\t\tthis.setSelection(sel);\n\t\t\t}\n\t\t\telse if (e.key === 'ArrowDown') {\n\t\t\t\te.preventDefault();\n\t\t\t\te.stopPropagation();\n\t\t\t\tlet sel = (this.currentSelection + 1) % (this.currentResults.length + 1);\n\t\t\t\tif (!this.allowInputFieldSelection && sel === 0 && this.currentResults.length !== 0) {\n\t\t\t\t\tsel = 1;\n\t\t\t\t}\n\t\t\t\tthis.setSelection(sel);\n\t\t\t}\n\t\t\telse if (e.key === 'Enter') {\n\t\t\t\te.preventDefault();\n\t\t\t\te.stopPropagation();\n\t\t\t\tthis.validateSelection(e);\n\t\t\t}\n\t\t}\n\t\taddResult(result, id) {\n\t\t\tlet resultDiv = this.createElement('div', { className: 'commandpaletteresult', innerText: result.name });\n\t\t\tif (result.hint !== undefined) {\n\t\t\t\tlet hint = this.createElement('div', { className: 'commandpalettehint', innerText: result.hint });\n\t\t\t\tresultDiv.append(hint);\n\t\t\t}\n\t\t\tresultDiv.result = result;\n\t\t\tthis.currentResults.push(resultDiv);\n\t\t\tresultDiv.addEventListener('click', (e) => { this.setSelection(id + 1); this.validateSelection(e); });\n\t\t\tthis.scrollDiv.append(resultDiv);\n\t\t}\n\t\tvalidateSelection(e) {\n\t\t\tthis.currentResolver(e);\n\t\t}\n\t\tdefaultResolver(e) {\n\t\t\tif (e.getModifierState('Shift')) {\n\t\t\t\tthis.input.value = '+' + this.input.value; //this resolver expects that the input starts with +\n\t\t\t\tthis.createTiddlerResolver(e);\n\t\t\t\treturn;\n\t\t\t}\n\t\t\tif (this.currentSelection === 0) return;\n\t\t\tlet selectionTitle = this.currentResults[this.currentSelection - 1].result.name;\n\t\t\tthis.closePalette();\n\t\t\tthis.navigateTo(selectionTitle);\n\t\t}\n\t\tnavigateTo(title) {\n\t\t\tthis.parentWidget.dispatchEvent({\n\t\t\t\ttype: 'tm-navigate',\n\t\t\t\tparam: title,\n\t\t\t\tnavigateTo: title\n\t\t\t});\n\t\t}\n\n\t\tshowHistory() {\n\t\t\tthis.hint.innerText = 'History';\n\t\t\tthis.currentProvider = (terms) => {\n\t\t\t\tlet results;\n\t\t\t\tif (terms.length === 0) {\n\t\t\t\t\tresults = this.getHistory();\n\t\t\t\t} else {\n\t\t\t\t\tresults = this.getHistory().filter(h => h.includes(terms));\n\t\t\t\t}\n\t\t\t\tresults = results.map(r => { return { name: r, action: () => { this.navigateTo(r); this.closePalette(); } } });\n\t\t\t\tthis.showResults(results);\n\t\t\t};\n\t\t\tthis.currentResolver = (e) => {\n\t\t\t\tif (this.currentSelection === 0) return;\n\t\t\t\tthis.currentResults[this.currentSelection - 1].result.action(e);\n\t\t\t};\n\t\t\tthis.input.value = '';\n\t\t\tthis.blockProviderChange = true;\n\t\t\tthis.onInput(this.input.value);\n\t\t}\n\n\t\tsetSelectionToFirst() {\n\t\t\tlet sel = 1;\n\t\t\tif (this.allowInputFieldSelection || this.currentResults.length === 0) {\n\t\t\t\tsel = 0;\n\t\t\t}\n\t\t\tthis.setSelection(sel)\n\t\t}\n\n\t\tsetSelection(id) {\n\t\t\tthis.currentSelection = id;\n\t\t\tfor (let i = 0; i < this.currentResults.length; i++) {\n\t\t\t\tlet selected = this.currentSelection === i + 1;\n\t\t\t\tthis.currentResults[i].className = selected ? 'commandpaletteresult commandpaletteresultselected' : 'commandpaletteresult';\n\t\t\t}\n\t\t\tif (this.currentSelection === 0) {\n\t\t\t\tthis.scrollDiv.scrollTop = 0;\n\t\t\t\treturn;\n\t\t\t}\n\t\t\tlet scrollHeight = this.scrollDiv.offsetHeight;\n\t\t\tlet scrollPos = this.scrollDiv.scrollTop;\n\t\t\tlet selectionPos = this.currentResults[this.currentSelection - 1].offsetTop;\n\t\t\tlet selectionHeight = this.currentResults[this.currentSelection - 1].offsetHeight;\n\n\t\t\tif (selectionPos < scrollPos || selectionPos >= scrollPos + scrollHeight) {\n\t\t\t\t//select the closest scrolling position showing the selection\n\t\t\t\tlet a = selectionPos;\n\t\t\t\tlet b = selectionPos - scrollHeight + selectionHeight;\n\t\t\t\ta = Math.abs(a - scrollPos);\n\t\t\t\tb = Math.abs(b - scrollPos);\n\t\t\t\tif (a < b) {\n\t\t\t\t\tthis.scrollDiv.scrollTop = selectionPos;\n\t\t\t\t} else {\n\t\t\t\t\tthis.scrollDiv.scrollTop = selectionPos - scrollHeight + selectionHeight;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\n\t\tgetHistory() {\n\t\t\tlet history = $tw.wiki.getTiddlerData('$:/HistoryList');\n\t\t\tif (history === undefined) {\n\t\t\t\thistory = [];\n\t\t\t}\n\t\t\thistory = [...history.reverse().map(x => x.title), ...$tw.wiki.filterTiddlers('[list[$:/StoryList]]')];\n\t\t\treturn Array.from(new Set(history.filter(t => this.tiddlerOrShadowExists(t))));\n\t\t}\n\n\t\ttiddlerOrShadowExists(title) {\n\t\t\treturn $tw.wiki.tiddlerExists(title) || $tw.wiki.isShadowTiddler(title);\n\t\t}\n\n\t\tdefaultProvider(terms) {\n\t\t\tthis.hint.innerText = 'Search tiddlers (⇧⏎ to create)';\n\t\t\tlet searches;\n\t\t\tif (terms.startsWith('\\\\')) terms = terms.substr(1);\n\t\t\tif (terms.length === 0) {\n\t\t\t\tif (this.settings.showHistoryOnOpen) {\n\t\t\t\t\tsearches = this.getHistory().map(s => { return { name: s, hint: 'history' } });\n\t\t\t\t} else {\n\t\t\t\t\tsearches = [];\n\t\t\t\t}\n\t\t\t}\n\t\t\telse {\n\t\t\t\tsearches = this.searchSteps.reduce((a, c) => [...a, ...c(terms)], []);\n\t\t\t\tsearches = Array.from(new Set(searches));\n\t\t\t}\n\t\t\tthis.showResults(searches);\n\t\t}\n\n\t\tsearchStepBuilder(filter, caret, hint) {\n\t\t\treturn (terms) => {\n\t\t\t\tlet search = filter.substr(0, caret) + terms + filter.substr(caret);\n\t\t\t\tlet results = $tw.wiki.filterTiddlers(search).map(s => { return { name: s, hint: hint } });\n\t\t\t\treturn results;\n\t\t\t}\n\t\t}\n\n\t\ttagListProvider(terms) {\n\t\t\tthis.currentSelection = 0;\n\t\t\tthis.hint.innerText = 'Search tags';\n\t\t\tlet searches;\n\t\t\tif (terms.length === 0) {\n\t\t\t\tsearches = $tw.wiki.filterTiddlers('[!is[system]tags[]][is[system]tags[]][all[shadows]tags[]]');\n\t\t\t}\n\t\t\telse {\n\t\t\t\tsearches = $tw.wiki.filterTiddlers('[all[]tags[]!is[system]search[' + terms + ']][all[]tags[]is[system]search[' + terms + ']][all[shadows]tags[]search[' + terms + ']]');\n\t\t\t}\n\t\t\tsearches = searches.map(s => { return { name: s }; });\n\t\t\tthis.showResults(searches);\n\t\t}\n\t\ttagListResolver(e) {\n\t\t\tif (this.currentSelection === 0) {\n\t\t\t\tlet input = this.input.value.substr(1);\n\t\t\t\tlet exist = $tw.wiki.filterTiddlers('[tag[' + input + ']]');\n\t\t\t\tif (!exist)\n\t\t\t\t\treturn;\n\t\t\t\tthis.input.value = '@' + input;\n\t\t\t\treturn;\n\t\t\t}\n\t\t\tlet result = this.currentResults[this.currentSelection - 1];\n\t\t\tthis.input.value = '@' + result.innerText;\n\t\t\tthis.onInput(this.input.value);\n\t\t}\n\t\ttagProvider(terms) {\n\t\t\tthis.currentSelection = 0;\n\t\t\tthis.hint.innerText = 'Search tiddlers with @tag(s)';\n\t\t\tlet searches = [];\n\t\t\tif (terms.length !== 0) {\n\t\t\t\tlet { tags, searchTerms, tagsFilter } = this.parseTags(this.input.value);\n\t\t\t\tlet taggedTiddlers = $tw.wiki.filterTiddlers(tagsFilter);\n\n\t\t\t\tif (taggedTiddlers.length !== 0) {\n\t\t\t\t\tif (tags.length === 1) {\n\t\t\t\t\t\tlet tag = tags[0];\n\t\t\t\t\t\tlet tagTiddlerExists = this.tiddlerOrShadowExists(tag);\n\t\t\t\t\t\tif (tagTiddlerExists && searchTerms.some(s => tag.includes(s))) searches.push(tag);\n\t\t\t\t\t}\n\t\t\t\t\tsearches = [...searches, ...taggedTiddlers];\n\t\t\t\t}\n\t\t\t}\n\t\t\tsearches = searches.map(s => { return { name: s } });\n\t\t\tthis.showResults(searches);\n\t\t}\n\n\t\tparseTags(input) {\n\t\t\tlet splits = input.split(' ').filter(s => s !== '');\n\t\t\tlet tags = [];\n\t\t\tlet searchTerms = [];\n\t\t\tfor (let i = 0; i < splits.length; i++) {\n\t\t\t\tif (splits[i].startsWith('@')) {\n\t\t\t\t\ttags.push(splits[i].substr(1));\n\t\t\t\t\tcontinue;\n\t\t\t\t}\n\t\t\t\tsearchTerms.push(splits[i]);\n\t\t\t}\n\t\t\tlet tagsFilter = `[all[tiddlers+system+shadows]${tags.reduce((a, c) => { return a + 'tag[' + c + ']' }, '')}]`;\n\t\t\tif (searchTerms.length !== 0) {\n\t\t\t\ttagsFilter = tagsFilter.substr(0, tagsFilter.length - 1); //remove last ']'\n\t\t\t\ttagsFilter += `search[${searchTerms.join(' ')}]]`;\n\t\t\t}\n\t\t\treturn { tags, searchTerms, tagsFilter };\n\t\t}\n\n\t\tsettingsProvider(terms) {\n\t\t\tthis.currentSelection = 0;\n\t\t\tthis.hint.innerText = 'Select the setting you want to change';\n\t\t\tlet isNumerical = (terms) => terms.length !== 0 && terms.match(/\\D/gm) === null;\n\t\t\tlet isBoolean = (terms) => terms.length !== 0 && terms.match(/(true\\b)|(false\\b)/gmi) !== null;\n\t\t\tthis.showResults([\n\t\t\t\t{ name: 'Theme (currently ' + this.settings.theme.match(/[^\\/]*$/) + ')', action: () => this.promptForThemeSetting() },\n\t\t\t\tthis.settingResultBuilder('Max results', 'maxResults', 'Choose the maximum number of results', isNumerical, 'Error: value must be a positive integer'),\n\t\t\t\tthis.settingResultBuilder('Show history on open', 'showHistoryOnOpen', 'Chose whether to show the history when you open the palette', isBoolean, 'Error: value must be \\'true\\' or \\'false\\''),\n\t\t\t\tthis.settingResultBuilder('Escape to go back', 'escapeGoesBack', 'Chose whether ESC should go back when possible', isBoolean, 'Error: value must be \\'true\\' or \\'false\\''),\n\t\t\t\tthis.settingResultBuilder('Use selection as search query', 'alwaysPassSelection', 'Chose your current selection is passed to the command palette', isBoolean, 'Error: value must be \\'true\\' or \\'false\\''),\n\t\t\t\tthis.settingResultBuilder('Never Basic', 'neverBasic', 'Chose whether to override basic prompts to show filter operation', isBoolean, 'Error: value must be \\'true\\' or \\'false\\''),\n\t\t\t\tthis.settingResultBuilder('Field preview max size', 'maxResultHintSize', 'Choose the maximum hint length for field preview', isNumerical, 'Error: value must be a positive integer'),\n\t\t\t]);\n\t\t}\n\n\t\tsettingResultBuilder(name, settingName, hint, validator, errorMsg) {\n\t\t\treturn { name: name + ' (currently ' + this.settings[settingName] + ')', action: () => this.promptForSetting(settingName, hint, validator, errorMsg) }\n\t\t}\n\n\t\tsettingsResolver(e) {\n\t\t\tif (this.currentSelection === 0) return;\n\t\t\tthis.goBack = () => {\n\t\t\t\tthis.input.value = '|';\n\t\t\t\tthis.blockProviderChange = false;\n\t\t\t\tthis.onInput(this.input.value);\n\t\t\t}\n\t\t\tthis.currentResults[this.currentSelection - 1].result.action();\n\t\t}\n\n\t\tpromptForThemeSetting() {\n\t\t\tthis.blockProviderChange = true;\n\t\t\tthis.allowInputFieldSelection = false;\n\t\t\tthis.currentProvider = (terms) => {\n\t\t\t\tthis.currentSelection = 0;\n\t\t\t\tthis.hint.innerText = 'Choose a theme';\n\t\t\t\tlet defaultValue = this.defaultSettings['theme'];\n\t\t\t\tlet results = [{ name: 'Revert to default value: ' + defaultValue.match(/[^\\/]*$/), action: () => { this.setSetting('theme', defaultValue); this.refreshThemes(); } }];\n\t\t\t\tfor (let theme of this.themes) {\n\t\t\t\t\tlet name = theme.fields.title;\n\t\t\t\t\tlet shortName = name.match(/[^\\/]*$/);\n\t\t\t\t\tlet action = () => { this.setSetting('theme', name); this.refreshThemes(); }\n\t\t\t\t\tresults.push({ name: shortName, action: action });\n\t\t\t\t}\n\t\t\t\tthis.showResults(results);\n\t\t\t}\n\t\t\tthis.currentResolver = (e) => {\n\t\t\t\tthis.currentResults[this.currentSelection - 1].result.action(e);\n\t\t\t}\n\t\t\tthis.input.value = '';\n\t\t\tthis.onInput(this.input.value);\n\t\t}\n\n\t\t//Validator = (terms) => bool\n\t\tpromptForSetting(settingName, hint, validator, errorMsg) {\n\t\t\tthis.blockProviderChange = true;\n\t\t\tthis.allowInputFieldSelection = true;\n\t\t\tthis.currentProvider = (terms) => {\n\t\t\t\tthis.currentSelection = 0;\n\t\t\t\tthis.hint.innerText = hint;\n\t\t\t\tlet defaultValue = this.defaultSettings[settingName];\n\t\t\t\tlet results = [{ name: 'Revert to default value: ' + defaultValue, action: () => this.setSetting(settingName, defaultValue) }];\n\t\t\t\tif (!validator(terms)) {\n\t\t\t\t\tresults.push({ name: errorMsg });\n\t\t\t\t}\n\t\t\t\tthis.showResults(results);\n\t\t\t};\n\t\t\tthis.currentResolver = (e) => {\n\t\t\t\tif (this.currentSelection === 0) {\n\t\t\t\t\tlet input = this.input.value;\n\t\t\t\t\tif (validator(input)) {\n\t\t\t\t\t\tthis.setSetting(settingName, input);\n\t\t\t\t\t\tthis.goBack = undefined;\n\t\t\t\t\t\tthis.blockProviderChange = false;\n\t\t\t\t\t\tthis.allowInputFieldSelection = false;\n\t\t\t\t\t\tthis.promptCommand('|');\n\t\t\t\t\t}\n\t\t\t\t} else {\n\t\t\t\t\tlet action = this.currentResults[this.currentSelection - 1].result.action;\n\t\t\t\t\tif (action) {\n\t\t\t\t\t\taction();\n\t\t\t\t\t\tthis.goBack = undefined;\n\t\t\t\t\t\tthis.blockProviderChange = false;\n\t\t\t\t\t\tthis.allowInputFieldSelection = false;\n\t\t\t\t\t\tthis.promptCommand('|');\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t\tthis.input.value = this.settings[settingName];\n\t\t\tthis.onInput(this.input.value);\n\t\t}\n\n\t\tshowResults(results) {\n\t\t\tfor (let cur of this.currentResults) {\n\t\t\t\tcur.remove();\n\t\t\t}\n\t\t\tthis.currentResults = [];\n\t\t\tlet resultCount = 0;\n\t\t\tfor (let result of results) {\n\t\t\t\tthis.addResult(result, resultCount);\n\t\t\t\tresultCount++;\n\t\t\t\tif (resultCount >= this.settings.maxResults)\n\t\t\t\t\tbreak;\n\t\t\t}\n\t\t}\n\n\t\ttmMessageBuilder(message, params = {}) {\n\t\t\treturn (e) => {\n\t\t\t\tlet event = {\n\t\t\t\t\ttype: message,\n\t\t\t\t\tparamObject: params,\n\t\t\t\t\tevent: e,\n\t\t\t\t};\n\t\t\t\tthis.parentWidget.dispatchEvent(event);\n\t\t\t};\n\t\t}\n\t\tactionProvider(terms) {\n\t\t\tthis.currentSelection = 0;\n\t\t\tthis.hint.innerText = 'Search commands';\n\t\t\tlet results;\n\t\t\tif (terms.length === 0) {\n\t\t\t\tresults = this.getCommandHistory();\n\t\t\t}\n\t\t\telse {\n\t\t\t\tresults = this.actions.filter(a => a.name.toLowerCase().includes(terms.toLowerCase()));\n\t\t\t}\n\t\t\tthis.showResults(results);\n\t\t}\n\n\t\thelpProvider(terms) { //TODO: tiddlerify?\n\t\t\tthis.currentSelection = 0;\n\t\t\tthis.hint.innerText = 'Help';\n\t\t\tlet searches = [\n\t\t\t\t{ name: '... Search', action: () => this.promptCommand('') },\n\t\t\t\t{ name: '> Commands', action: () => this.promptCommand('>') },\n\t\t\t\t{ name: '+ Create tiddler with title', action: () => this.promptCommand('+') },\n\t\t\t\t{ name: '# Search tags', action: () => this.promptCommand('#') },\n\t\t\t\t{ name: '@ List tiddlers with tag', action: () => this.promptCommand('@') },\n\t\t\t\t{ name: '[ Filter operation', action: () => this.promptCommand('[') },\n\t\t\t\t{ name: '| Command Palette Settings', action: () => this.promptCommand('|') },\n\t\t\t\t{ name: '\\\\ Escape first character', action: () => this.promptCommand('\\\\') },\n\t\t\t\t{ name: '? Help', action: () => this.promptCommand('?') },\n\t\t\t];\n\t\t\tthis.showResults(searches);\n\t\t}\n\n\t\tfilterProvider(terms, hint) {\n\t\t\tthis.currentSelection = 0;\n\t\t\tthis.hint.innerText = hint === undefined ? 'Filter operation' : hint;\n\t\t\tterms = '[' + terms;\n\t\t\tlet fields = $tw.wiki.filterTiddlers('[fields[]]');\n\t\t\tlet results = $tw.wiki.filterTiddlers(terms).map(r => { return { name: r } });\n\t\t\tlet insertResult = (i, result) => results.splice(i + 1, 0, result);\n\t\t\tfor (let i = 0; i < results.length; i++) {\n\t\t\t\tlet initialResult = results[i];\n\t\t\t\tlet alreadyMatched = false;\n\t\t\t\tlet date = 'Invalid Date';\n\t\t\t\tif (initialResult.name.length === 17) { //to be sure to only match tiddly dates (17 char long)\n\t\t\t\t\tdate = $tw.utils.parseDate(initialResult.name).toLocaleString();\n\t\t\t\t}\n\t\t\t\tif (date !== \"Invalid Date\") {\n\t\t\t\t\tresults[i].hint = date;\n\t\t\t\t\tresults[i].action = () => { };\n\t\t\t\t\talreadyMatched = true;\n\t\t\t\t}\n\t\t\t\tlet isTag = $tw.wiki.getTiddlersWithTag(initialResult.name).length !== 0;\n\t\t\t\tif (isTag) {\n\t\t\t\t\tif (alreadyMatched) {\n\t\t\t\t\t\tinsertResult(i, { ...results[i] });\n\t\t\t\t\t\ti += 1;\n\t\t\t\t\t}\n\t\t\t\t\tresults[i].action = () => this.promptCommand('@' + initialResult.name);\n\t\t\t\t\tresults[i].hint = 'Tag'; //Todo more info?\n\t\t\t\t\talreadyMatched = true;\n\t\t\t\t}\n\t\t\t\tlet isTiddler = this.tiddlerOrShadowExists(initialResult.name);\n\t\t\t\tif (isTiddler) {\n\t\t\t\t\tif (alreadyMatched) {\n\t\t\t\t\t\tinsertResult(i, { ...results[i] });\n\t\t\t\t\t\ti += 1;\n\t\t\t\t\t}\n\t\t\t\t\tresults[i].action = () => { this.navigateTo(initialResult.name); this.closePalette() }\n\t\t\t\t\tresults[i].hint = 'Tiddler';\n\t\t\t\t\talreadyMatched = true;\n\t\t\t\t}\n\t\t\t\tlet isField = fields.includes(initialResult.name);\n\t\t\t\tif (isField) {\n\t\t\t\t\tif (alreadyMatched) {\n\t\t\t\t\t\tinsertResult(i, { ...results[i] });\n\t\t\t\t\t\ti += 1;\n\t\t\t\t\t}\n\t\t\t\t\tlet parsed;\n\t\t\t\t\ttry {\n\t\t\t\t\t\tparsed = $tw.wiki.parseFilter(this.input.value)\n\t\t\t\t\t} catch (e) { } //The error is already displayed to the user\n\t\t\t\t\tlet foundTitles = [];\n\t\t\t\t\tfor (let node of parsed || []) {\n\t\t\t\t\t\tif (node.operators.length !== 2) continue;\n\t\t\t\t\t\tif (node.operators[0].operator === 'title' && node.operators[1].operator === 'fields') {\n\t\t\t\t\t\t\tfoundTitles.push(node.operators[0].operand);\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t\tlet hint = 'Field';\n\t\t\t\t\tif (foundTitles.length === 1) {\n\t\t\t\t\t\thint = $tw.wiki.getTiddler(foundTitles[0]).fields[initialResult.name];\n\t\t\t\t\t\tif (hint instanceof Date) {\n\t\t\t\t\t\t\thint = hint.toLocaleString();\n\t\t\t\t\t\t}\n\t\t\t\t\t\thint = hint.toString().replace(/(\\r\\n|\\n|\\r)/gm, '');\n\t\t\t\t\t\tlet maxSize = this.settings.maxResultHintSize - 3;\n\t\t\t\t\t\tif (hint.length > maxSize) {\n\t\t\t\t\t\t\thint = hint.substring(0, maxSize);\n\t\t\t\t\t\t\thint += '...';\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t\tresults[i].hint = hint;\n\t\t\t\t\tresults[i].action = () => { };\n\t\t\t\t\talreadyMatched = true;\n\t\t\t\t}\n\t\t\t\t// let isContentType = terms.includes('content-type');\n\t\t\t}\n\t\t\tthis.showResults(results);\n\t\t}\n\n\t\tfilterResolver(e) {\n\t\t\tif (this.currentSelection === 0) return;\n\t\t\tthis.currentResults[this.currentSelection - 1].result.action();\n\t\t\te.stopPropagation();\n\t\t}\n\n\t\thelpResolver(e) {\n\t\t\tif (this.currentSelection === 0) return;\n\t\t\tthis.currentResults[this.currentSelection - 1].result.action();\n\t\t\te.stopPropagation();\n\t\t}\n\n\t\tcreateTiddlerProvider(terms) {\n\t\t\tthis.currentSelection = 0;\n\t\t\tthis.hint.innerText = 'Create new tiddler with title @tag(s)';\n\t\t\tthis.showResults([]);\n\t\t}\n\n\t\tcreateTiddlerResolver(e) {\n\t\t\tlet { tags, searchTerms } = this.parseTags(this.input.value.substr(1));\n\t\t\tlet title = searchTerms.join(' ');\n\t\t\ttags = tags.join(' ');\n\t\t\tthis.tmMessageBuilder('tm-new-tiddler', { title: title, tags: tags })(e);\n\t\t\tthis.closePalette();\n\t\t}\n\n\t\tpromptCommand(value, caret) {\n\t\t\tthis.blockProviderChange = false;\n\t\t\tthis.input.value = value;\n\t\t\tthis.input.focus();\n\t\t\tif (caret !== undefined) {\n\t\t\t\tthis.input.setSelectionRange(caret, caret);\n\t\t\t}\n\t\t\tthis.onInput(this.input.value);\n\t\t}\n\n\t\tpromptCommandBasic(value, caret, hint) {\n\t\t\tif (this.settings.neverBasic === 'true' || this.settings.neverBasic === true) { //TODO: validate settings to avoid unnecessary checks\n\t\t\t\tthis.promptCommand(value, caret);\n\t\t\t\treturn;\n\t\t\t}\n\t\t\tthis.input.value = \"\";\n\t\t\tthis.blockProviderChange = true;\n\t\t\tthis.currentProvider = this.basicProviderBuilder(value, caret, hint);\n\t\t\tthis.onInput(this.input.value);\n\t\t}\n\n\t\tbasicProviderBuilder(value, caret, hint) {\n\t\t\tlet start = value.substr(0, caret);\n\t\t\tlet end = value.substr(caret);\n\t\t\treturn (input) => {\n\t\t\t\tlet { resolver, provider, terms } = this.parseCommand(start + input + end);\n\t\t\t\tlet backgroundProvider = provider;\n\t\t\t\tbackgroundProvider(terms, hint);\n\t\t\t\tthis.currentResolver = resolver;\n\t\t\t}\n\t\t}\n\n\t\tgetCommandHistory() {\n\t\t\tthis.history = this.history.filter(h => this.actions.some(a => a.name === h)); //get rid of deleted command that are still in history;\n\t\t\tlet results = this.history.map(h => this.actions.find(a => a.name === h));\n\t\t\twhile (results.length <= this.settings.maxResults) {\n\t\t\t\tlet nextDefaultAction = this.actions.find(a => !results.includes(a));\n\t\t\t\tif (nextDefaultAction === undefined)\n\t\t\t\t\tbreak;\n\t\t\t\tresults.push(nextDefaultAction);\n\t\t\t}\n\t\t\treturn results;\n\t\t}\n\t\tactionResolver(e) {\n\t\t\tif (this.currentSelection === 0)\n\t\t\t\treturn;\n\t\t\tlet result = this.actions.find(a => a.name === this.currentResults[this.currentSelection - 1].innerText);\n\t\t\tif (result.keepPalette) {\n\t\t\t\tlet curInput = this.input.value;\n\t\t\t\tthis.goBack = () => {\n\t\t\t\t\tthis.input.value = curInput;\n\t\t\t\t\tthis.blockProviderChange = false;\n\t\t\t\t\tthis.onInput(this.input.value);\n\t\t\t\t};\n\t\t\t}\n\t\t\tthis.updateCommandHistory(result);\n\t\t\tresult.action(e);\n\t\t\te.stopPropagation();\n\t\t\tif (result.immediate) {\n\t\t\t\tthis.validateSelection(e);\n\t\t\t\treturn;\n\t\t\t}\n\t\t\tif (!result.keepPalette) {\n\t\t\t\tthis.closePalette();\n\t\t\t}\n\t\t}\n\n\t\tgetCurrentSelection() {\n\t\t\tlet selection = window.getSelection().toString();\n\t\t\tif (selection !== '') return selection;\n\t\t\tlet activeElement = this.getActiveElement();\n\t\t\tif (activeElement === undefined || activeElement.selectionStart === undefined) return '';\n\t\t\tif (activeElement.selectionStart > activeElement.selectionEnd) {\n\t\t\t\treturn activeElement.value.substring(activeElement.selectionStart, activeElement.selectionEnd);\n\t\t\t} else {\n\t\t\t\treturn activeElement.value.substring(activeElement.selectionEnd, activeElement.selectionStart);\n\t\t\t}\n\t\t}\n\t\tgetActiveElement(element = document.activeElement) {\n\t\t\tconst shadowRoot = element.shadowRoot\n\t\t\tconst contentDocument = element.contentDocument\n\n\t\t\tif (shadowRoot && shadowRoot.activeElement) {\n\t\t\t\treturn this.getActiveElement(shadowRoot.activeElement)\n\t\t\t}\n\n\t\t\tif (contentDocument && contentDocument.activeElement) {\n\t\t\t\treturn this.getActiveElement(contentDocument.activeElement)\n\t\t\t}\n\n\t\t\treturn element\n\t\t}\n\t\tfocusAtCaretPosition(el, caretPos) {\n\t\t\tif (el !== null) {\n\t\t\t\tel.value = el.value;\n\t\t\t\t// ^ this is used to not only get \"focus\", but\n\t\t\t\t// to make sure we don't have it everything -selected-\n\t\t\t\t// (it causes an issue in chrome, and having it doesn't hurt any other browser)\n\t\t\t\tif (el.createTextRange) {\n\t\t\t\t\tvar range = el.createTextRange();\n\t\t\t\t\trange.move('character', caretPos);\n\t\t\t\t\trange.select();\n\t\t\t\t\treturn true;\n\t\t\t\t}\n\t\t\t\telse {\n\t\t\t\t\t// (el.selectionStart === 0 added for Firefox bug)\n\t\t\t\t\tif (el.selectionStart || el.selectionStart === 0) {\n\t\t\t\t\t\tel.focus();\n\t\t\t\t\t\tel.setSelectionRange(caretPos, caretPos);\n\t\t\t\t\t\treturn true;\n\t\t\t\t\t}\n\n\t\t\t\t\telse { // fail city, fortunately this never happens (as far as I've tested) :)\n\t\t\t\t\t\tel.focus();\n\t\t\t\t\t\treturn false;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\tcreateElement(name, proprieties, styles) {\n\t\t\tlet el = this.document.createElement(name);\n\t\t\tfor (let [propriety, value] of Object.entries(proprieties || {})) {\n\t\t\t\tel[propriety] = value;\n\t\t\t}\n\t\t\tfor (let [style, value] of Object.entries(styles || {})) {\n\t\t\t\tel.style[style] = value;\n\t\t\t}\n\t\t\treturn el;\n\t\t}\n\t\t/*\n\t\t\tSelectively refreshes the widget if needed. Returns true if the widget or any of its children needed re-rendering\n\t\t\t*/\n\t\trefresh() {\n\t\t\treturn false;\n\t\t}\n\t}\n\n\texports.commandpalettewidget = CommandPaletteWidget;\n\n})();\n",
+            "type": "application/javascript",
+            "module-type": "widget"
+        }
+    }
+}
