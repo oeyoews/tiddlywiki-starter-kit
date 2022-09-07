@@ -1,14 +1,12 @@
 created: 20220828120245453
 creator: oeyoews
-modified: 20220907053049277
+modified: 20220907054615389
 modifier: oeyoews
 tags: 
 title: Index
 type: text/vnd.tiddlywiki
 
-<<.preamble  """<<emoji arrowright>> welcome to {{$:/SiteTitle}}
-"""
->>
+<<.preamble  """<<emoji arrowright>> welcome to {{$:/SiteTitle}}""">>
 
 {{neotw/mobile-warning}}
 

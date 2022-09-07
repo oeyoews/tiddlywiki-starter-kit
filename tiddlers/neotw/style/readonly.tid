@@ -1,6 +1,6 @@
 created: 20220901062635687
 creator: oeyoews
-modified: 20220907053040306
+modified: 20220907053329097
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/style/readonly
@@ -11,6 +11,6 @@ type: text/vnd.tiddlywiki
 </$list>
 
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
-	[data-tiddler-title="GettingStarted"] .tc-title, .tc-subtitle  { display:none; }
+	[data-tiddler-title="Index"] .tc-title, .tc-subtitle  { display:none; }
   .tc-tiddler-controls, .nc-bottombar, .nc-sidebar { display: none; }
 </$list>
