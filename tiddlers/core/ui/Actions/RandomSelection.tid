@@ -1,0 +1,14 @@
+abstract: Navigate to a random tiddler
+created: 20210725102925324
+creator: oeyoews
+modified: 20220907172214943
+modifier: oeyoews
+tags: $:/tags/Actions
+title: $:/core/ui/Actions/RandomSelection
+type: text/vnd.tiddlywiki
+
+\define navigateTo(link)
+<$action-navigate $to="$link$" />
+\end
+
+<$macrocall $name="navigateTo" link={{{ [all[shadows+tiddlers]!is[system]tag[word]random[1]] }}} />

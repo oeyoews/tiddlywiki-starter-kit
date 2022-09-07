@@ -1,0 +1,23 @@
+caption: {{$:/core/images/randomselection}} {{$:/language/Buttons/RandomSelection/Caption}}
+created: 20210725102642198
+creator: oeyoews
+description: {{$:/language/Buttons/RandomSelection/Hint}}
+modified: 20220907170340981
+modifier: oeyoews
+tags: $:/tags/PageControls
+title: $:/core/ui/Buttons/RandomSelection
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+\define randomselectionButton()
+<$button tooltip={{$:/language/Buttons/RandomSelection/Hint}} aria-label={{$:/language/Buttons/RandomSelection/Caption}} class=<<tv-config-toolbar-class>> actions={{$:/core/ui/Actions/RandomSelection}}>
+<$action-sendmessage $message="tm-close-all-tiddlers"/>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+{{$:/core/images/randomselection.svg}}
+</$list>
+<$list filter="[<tv-config-toolbar-text>match[yes]]">
+<span class="tc-btn-text"><$text text={{$:/language/Buttons/RandomSelection/Caption}}/></span>
+</$list>
+</$button>
+\end
+<<randomselectionButton>>

@@ -1,8 +1,8 @@
 created: 20220905003535669
 creator: oeyoews
-list-tree-color: #7d7dfc
+list-tree-color: #cfd6e6
 list-tree-thickness: 2px
-modified: 20220905004236984
+modified: 20220907160749287
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/style/listtree
@@ -12,6 +12,9 @@ type: text/vnd.tiddlywiki
 .list-tree, .list-tree ul, .list-tree li { position: relative; }
 
 .list-tree li { list-style: none; }
+.list-tree li::marker { 
+	content: ""
+}
 
 .list-tree ul { padding: 0 0 0 2em; }
 

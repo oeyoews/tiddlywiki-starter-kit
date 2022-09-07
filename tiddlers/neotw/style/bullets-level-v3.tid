@@ -1,36 +1,32 @@
 created: 20220905021248595
 creator: oeyoews
-modified: 20220906160755796
+modified: 20220907155809864
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/style/bullets-level-v3
 type: text/vnd.tiddlywiki
 
 ul li::marker {
-	 content: "● ";
-	 color: #7d7dfc; 
-}
-
-ul.bullets li {
-	list-style: none;
-}
-
-ul.bullets>li::before {
-		content: "{{neotw/bullet.dict##b1}} ";
-		color: {{neotw/bullet.dict##bcolor}};
-}
-
-ul.bullets>li>ul>li::before {
-		content: "{{neotw/bullet.dict##b2}} ";
-		color: {{neotw/bullet.dict##bcolor}};
-}
-
-ul.bullets>li>ul>li>ul>li::before {
-		content: "{{neotw/bullet.dict##b3}} ";
-		color: {{neotw/bullet.dict##bcolor}};
-}
-
-ul.bullets>li>ul>li>ul>li>ul>li::before {
 		content: "{{neotw/bullet.dict##b4}} ";
 		color: {{neotw/bullet.dict##bcolor}};
+}
+
+ul.bullets li::marker {
+		color: {{neotw/bullet.dict##bcolor}};
+}
+
+ul.bullets>li::marker {
+		content: "{{neotw/bullet.dict##b1}} ";
+}
+
+ul.bullets>li>ul>li::marker {
+		content: "{{neotw/bullet.dict##b2}} ";
+}
+
+ul.bullets>li>ul>li>ul>li::marker {
+		content: "{{neotw/bullet.dict##b3}} ";
+}
+
+ul.bullets>li>ul>li>ul>li>ul li::marker {
+		content: "{{neotw/bullet.dict##b4}} ";
 }

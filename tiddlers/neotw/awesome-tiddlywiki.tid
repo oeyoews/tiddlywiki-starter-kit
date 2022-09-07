@@ -1,6 +1,6 @@
 created: 20220830130512773
 creator: oeyoews
-modified: 20220907041521434
+modified: 20220907170620418
 modifier: oeyoews
 tags: 
 title: neotw/awesome-tiddlywiki
@@ -19,5 +19,7 @@ type: text/vnd.tiddlywiki
 <<emoji arrowright>> ''tutorial'': https://groktiddlywiki.com/read
 
 * ''grok video'' https://www.youtube.com/watch?v=uf5XV99YqMc
-
 * ''notebook '' https://nicolas.petton.fr/tw/notebook.html
+* ''xp'' https://keatonlao.github.io/tiddlywiki-xp 
+* ''cn'' https://tw-cn.netlify.app
+* ''gatha'' https://kookma.github.io/TW-Gatha/

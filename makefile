@@ -37,7 +37,7 @@ run-to-the-world:
 build:
 	@make clean;
 	@mkdir public
-	@cp -r tiddlers/ files/ tiddlywiki.info public/
+	@cp -r tiddlers/ tiddlywiki.info public/
 	@cd public/; rm -rf \
 		tiddlers/subwiki \
 		tiddlers/trashbin \
@@ -45,7 +45,7 @@ build:
 	$(CMD) public --output dist/ --build index >> /tmp/neotw.log 2>&1  # build
 	$(CMD) public --output dist/ --build favicon >> /tmp/neotw.log 2>&1  # favicon
 #$(CMD) public --output dist/ --build static >> /tmp/neotw.log 2>&1  # static giscus and commpand palette widget have a error
-	@cp -r src/vercel.json files/ dist/; echo -e "🎉 `ls  -sh dist/index.html`" # patch
+	@cp -r src/vercel.json dist/; echo -e "🎉 `ls  -sh dist/index.html`" # patch
 
 # view
 bpview:
