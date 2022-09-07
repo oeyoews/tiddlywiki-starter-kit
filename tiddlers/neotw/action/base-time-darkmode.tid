@@ -1,6 +1,6 @@
 created: 20220906164418486
 creator: oeyoews
-modified: 20220907180917599
+modified: 20220907232314289
 modifier: oeyoews
 tags: $:/tags/StartupAction
 title: neotw/action/base-time-darkmode
@@ -9,7 +9,7 @@ type: text/vnd.tiddlywiki
 <$vars
   currentTime=<<now "hhmm">>
   nightStart="2000"
-  nightEnd="800"
+  nightEnd="700"
 >
 <$list filter="[<currentTime>compare:number:gteq<nightStart>] [<currentTime>compare:number:lt<nightEnd>]">
 <$action-setfield $tiddler="$:/palette"
