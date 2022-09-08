@@ -1,0 +1,14 @@
+created: 20220908151621574
+creator: oeyoews
+modified: 20220908152445014
+modifier: oeyoews
+tags: 
+title: neotw/mobile/darkmode-button
+type: text/vnd.tiddlywiki
+
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]"> 
+<div class="neotw-darkmode">
+{{$:/plugins/kookma/shiraz/ui/Buttons/SwitchPalette}}
+{{$:/core/ui/Buttons/RandomSelection}} 
+</div>
+</$list>

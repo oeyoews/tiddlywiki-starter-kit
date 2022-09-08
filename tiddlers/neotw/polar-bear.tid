@@ -1,6 +1,6 @@
 created: 20220828031920001
 creator: oeyoews
-modified: 20220908150758039
+modified: 20220908151715779
 modifier: oeyoews
 tags: $:/tags/SideBarSegment
 title: neotw/polar-bear
@@ -9,10 +9,3 @@ type: text/vnd.tiddlywiki
 <div class="polarbear"></div>
 
 [img width="40px" class="tc-powered-by-tiddlywiki-banner "  [$:/favicon.ico]] 
-
-<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]"> 
-<div class="neotw-darkmode ">
-{{$:/plugins/kookma/shiraz/ui/Buttons/SwitchPalette}}
-{{$:/core/ui/Buttons/RandomSelection}} 
-</div>
-</$list>

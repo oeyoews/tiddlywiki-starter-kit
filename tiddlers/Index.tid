@@ -1,6 +1,6 @@
 created: 20220828120245453
 creator: oeyoews
-modified: 20220907054615389
+modified: 20220908152506527
 modifier: oeyoews
 tags: 
 title: Index
@@ -12,4 +12,5 @@ type: text/vnd.tiddlywiki
 
 * <<emoji book>> [[neotw documention|neotw/docs]]
 
+{{neotw/mobile/darkmode-button}}
 {{neotw/footer}}
