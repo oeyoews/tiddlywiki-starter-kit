@@ -1,6 +1,6 @@
 created: 20220830130512773
 creator: oeyoews
-modified: 20220907174641986
+modified: 20220908155002938
 modifier: oeyoews
 tags: 
 title: neotw/awesome-tiddlywiki
@@ -24,3 +24,7 @@ type: text/vnd.tiddlywiki
 * ''cn'' https://tw-cn.netlify.app
 * ''gatha'' https://kookma.github.io/TW-Gatha/
 * ''plugins'' https://saqimtiaz.github.io/tw5-plugins-sandbox/
+* ''tweaks'' http://www.telumire.be/TiddlyTweaks
+
+; <<emoji arrowright>> css
+: gradient https://uigradients.com/#ChittyChittyBangBang

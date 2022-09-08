@@ -1,0 +1,21 @@
+caption: setup
+created: 20220907022139318
+creator: oeyoews
+modified: 20220908170238607
+modifier: oeyoews
+tags: $:/tags/SideBar
+title: neotw/setup
+type: text/vnd.tiddlywiki
+
+; Sidebar width 
+
+: <$range tiddler="neotw/sidebar-width" min="350" max="700" default="10" increment="1"
+  actionsStart=<<actionsStart>> actionsStop=<<actionsStop>> actions=<<actions>> />   {{neotw/sidebar-width}}px	
+	
+; Tidsize 
+
+: <$range tiddler="neotw/tid-fontsize" min="16" max="26" default="16" increment="1"
+  actionsStart=<<actionsStart>> actionsStop=<<actionsStop>> actions=<<actions>> />   {{neotw/tid-fontsize}}px	
+	
+; Fontsize
+: <$range id="txt" tiddler="neotw/body-fontsize" min="14" max="26" increment="0.5"/> <$edit-text tiddler="neotw/body-fontsize" default="16" tag="input" type="text" size="1"/> px
