@@ -1,11 +1,11 @@
 author: oeyoews
 created: 20220907170720246
 description: english word
-modified: 20220907171259124
+modified: 20220907235351998
 name: word
-packaged-by: Gatha on 8th September 2022, 01:13:12
+packaged-by: Gatha on 8th September 2022, 07:57:25
 plugin-type: plugin
 tags: 
 title: $:/plugins/oeyoews/word
 type: application/json
-version: v0.0.1
+version: v0.0.3
