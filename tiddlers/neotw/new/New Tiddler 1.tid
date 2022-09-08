@@ -1,0 +1,24 @@
+created: 20220908171559928
+creator: oeyoews
+modified: 20220908171601952
+modifier: oeyoews
+tags: 
+title: neotw/new/New Tiddler 1
+type: text/vnd.tiddlywiki
+
+<$let imgs="""
+https://nextapps-de.github.io/spotlight/demo/gallery/brooklyn-bridge-1791001.jpg
+https://nextapps-de.github.io/spotlight/demo/gallery/california-1751455.jpg
+https://nextapps-de.github.io/spotlight/demo/gallery/canada-2340312.jpg
+"""
+>
+<$list filter="[enlist<imgs>]" variable="img">
+<$button class="tc-btn-invisible" tag="div" actions="""
+<$action-spotlight
+	$images=<<imgs>>
+	$start=<<img>>
+/>""">
+<$image source=<<img>> />
+</$button>
+</$list>
+</$let> 

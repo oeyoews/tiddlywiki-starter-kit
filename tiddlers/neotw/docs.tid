@@ -1,6 +1,6 @@
 created: 20220903040646600
 creator: oeyoews
-modified: 20220907185139894
+modified: 20220908172116000
 modifier: oeyoews
 tags: 
 title: neotw/docs
@@ -11,6 +11,7 @@ type: text/vnd.tiddlywiki
 * [[awesome list|neotw/awesome-tiddlywiki]]
 
 [img[https://gitlab.com/oeyoews/neotw/raw/main/img/s5.png]]
+{{neotw/gallary}}
 
 ---
 <<.link-badge-updated "">> coming

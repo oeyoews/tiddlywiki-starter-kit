@@ -1,0 +1,15 @@
+created: 20220908171035689
+creator: oeyoews
+modified: 20220908171954566
+modifier: oeyoews
+tags: 
+title: neotw/gallary
+type: text/vnd.tiddlywiki
+
+\define spotlight-actions()
+<$action-spotlight
+	$images=" https://gitlab.com/oeyoews/neotw/raw/main/img/s5.png" $start="https://gitlab.com/oeyoews/neotw/raw/main/files/images/s5.png"
+/>
+\end
+
+<$button actions=<<spotlight-actions>> > open lightbox </$button>

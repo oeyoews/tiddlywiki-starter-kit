@@ -1,0 +1,11 @@
+author: Saq Imtiaz
+core-version: >=5.2.0
+dependents: 
+description: Lightbox
+list: readme
+name: Spotlight
+plugin-priority: 0
+plugin-type: plugin
+title: $:/plugins/sq/spotlight
+type: application/json
+version: 0.0.4
