@@ -1,10 +1,17 @@
 created: 20220903154521999
 creator: oeyoews
-modified: 20220906012956255
+modified: 20220908150454666
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/style/polar
 type: text/vnd.tiddlywiki
+
+.neotw-darkmode {
+	position: fixed;
+	right: 1em;
+	bottom: 55px;
+  z-index: 2;
+}
 
 .tc-powered-by-tiddlywiki-banner {
 	position: fixed;
