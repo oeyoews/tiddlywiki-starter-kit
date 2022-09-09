@@ -1,0 +1,12 @@
+created: 20220909021956485
+creator: oeyoews
+modified: 20220909022711215
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: neotw/style/range
+type: text/vnd.tiddlywiki
+
+input[type=range]:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
