@@ -1,0 +1,21 @@
+created: 20220909024926814
+creator: oeyoews
+modified: 20220909025331096
+modifier: oeyoews
+tags: $:/tags/Macro
+title: neotw/macro/keyword
+type: text/vnd.tiddlywiki
+
+\define neotw-keyword(text, bg)
+<span class="neotw-span fw $bg$">$text$</span>
+\end
+
+\define TODO() <<neotw-keyword "TODO" b1>>
+
+\define HACK() <<neotw-keyword "HACK" b2>>
+
+\define FIXME() <<neotw-keyword "FIXME" b3>>
+
+\define DONE() <<neotw-keyword "DONE" b4>>
+
+\define WARN() <<neotw-keyword "WARN" yellow>>
