@@ -1,0 +1,17 @@
+created: 20220909163856160
+creator: oeyoews
+modified: 20220909164349941
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: neotw/style/context
+type: text/vnd.tiddlywiki
+
+.matched{
+	background-color:cyan;
+	padding: 0 3px;
+	border-radius: 3px;
+}
+
+.tw-context {
+  border:2px solid none;
+  word-break: break-all; word-wrap: break-word;}

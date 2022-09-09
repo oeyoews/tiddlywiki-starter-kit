@@ -1,6 +1,6 @@
 created: 20220903040646600
 creator: oeyoews
-modified: 20220909024716094
+modified: 20220909155351132
 modifier: oeyoews
 tags: 
 title: neotw/docs
@@ -12,6 +12,7 @@ type: text/vnd.tiddlywiki
 
 * [[awesome list|neotw/awesome-tiddlywiki]]
 
+; gallary
 {{neotw/images/gallary}}
 
 ---

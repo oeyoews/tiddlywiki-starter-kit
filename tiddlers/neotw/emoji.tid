@@ -1,6 +1,6 @@
 created: 20220902155534733
 creator: oeyoews
-modified: 20220902161910376
+modified: 20220909163354000
 modifier: oeyoews
 tags: 
 title: neotw/emoji
@@ -9,6 +9,10 @@ type: text/vnd.tiddlywiki
 <<.preamble """<<emoji tada>> this is a new, just resolve copy emoji(WIP) trouble""">>
 
 !! example
+
+; question
+
+<<emoji question>>
 
 ; rocket 
 <<emoji>> default is rocket

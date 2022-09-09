@@ -1,0 +1,11 @@
+created: 20220909163551880
+creator: oeyoews
+modified: 20220909163715412
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: neotw/style/select
+type: text/vnd.tiddlywiki
+
+.tc-subtitle, .tc-titlebar {
+	user-select: none;
+}

@@ -1,7 +1,7 @@
 caption: Neotw
 created: 20220907022139318
 creator: oeyoews
-modified: 20220909061541852
+modified: 20220909173722086
 modifier: oeyoews
 tags: $:/tags/SideBar
 title: neotw/setup
@@ -10,19 +10,19 @@ type: text/vnd.tiddlywiki
 !! <<emoji>> <<neotw-span "[[neotw setup|neotw/setup]]" b1>>
 <hr>
 
-; <<emoji arrowright>> [[neotw/change-theme-palette]]
+; <<emoji arrowright>>  [[neotw/change-theme-palette]]
 {{neotw/change-theme-palette}}
 
-; <<emoji arrowright>> [[sidebar width|neotw/sidebar-width]]
-: <$range tiddler="neotw/sidebar-width" min="350" max="700" default="350" increment="0.1"
-  actionsStart=<<actionsStart>> actionsStop=<<actionsStop>> actions=<<actions>> />   {{neotw/sidebar-width}}px	
+; <<emoji arrowright>> [[Sidebar width|$:/themes/nico/notebook/metrics/sidebar-width]]
+: <$range tiddler="$:/themes/nico/notebook/metrics/sidebar-width" field="width" min="350" max="700" default="350" increment=".1"
+  actionsStart=<<actionsStart>> actionsStop=<<actionsStop>> actions=<<actions>> />   {{$:/themes/nico/notebook/metrics/sidebar-width}}
 	
-; <<emoji arrowright>> [[tid size|neotw/tid-fontsize]] 
-: <$range tiddler="neotw/tid-fontsize" min="16" max="22" default="16" increment="0.5"
-  actionsStart=<<actionsStart>> actionsStop=<<actionsStop>> actions=<<actions>> />   {{neotw/tid-fontsize}}px	
+; <<emoji arrowright>> [[Tid size|$:/themes/tiddlywiki/vanilla/metrics/fontsize]] 
+: <$range tiddler="$:/themes/tiddlywiki/vanilla/metrics/bodyfontsize" field="size" min="16" max="22" default="16" increment=".1"
+  actionsStart=<<actionsStart>> actionsStop=<<actionsStop>> actions=<<actions>> />{{$:/themes/tiddlywiki/vanilla/metrics/bodyfontsize}}	
 	
-; <<emoji arrowright>> [[Fontsize|neotw/body-fontsize]]
-: <$range id="txt" tiddler="neotw/body-fontsize" min="16" max="20" increment="0.1"/> <$edit-text tiddler="neotw/body-fontsize" default="16" tag="input" type="text" size="1"/>px
+; <<emoji arrowright>> [[Fontsize|$:/themes/tiddlywiki/vanilla/metrics/fontsize]]
+: <$range tiddler="$:/themes/tiddlywiki/vanilla/metrics/fontsize" min="16" max="20" field="size" increment=".1"/> {{$:/themes/tiddlywiki/vanilla/metrics/fontsize}}
 
-; <<emoji arrowright>> [[storywidth|neotw/story-width]]
-: <$range id="txt" tiddler="neotw/story-width" min="900" max="1050" increment="0.1"/> <$edit-text tiddler="neotw/story-width" default="900" tag="input" type="text" size="1"/>px
+; <<emoji arrowright>> [[StoryWidth|$:/themes/nico/notebook/metrics/story-width]]
+: <$range  tiddler="$:/themes/nico/notebook/metrics/story-width" field="width" min="900" max="1050" increment=".1"/> {{$:/themes/nico/notebook/metrics/story-width}}

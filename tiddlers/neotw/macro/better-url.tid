@@ -1,0 +1,13 @@
+created: 20220909151431391
+creator: oeyoews
+modified: 20220909151456215
+modifier: oeyoews
+tags: $:/tags/Macro
+title: neotw/macro/better-url
+type: text/vnd.tiddlywiki
+
+\define url(address, n:3)
+<a href=<<__address__>> target=_blank>
+<$text text={{{[<__address__>split[/]first[$n$]join[/]]}}}/>
+</a>
+\end

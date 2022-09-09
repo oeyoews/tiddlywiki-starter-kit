@@ -1,0 +1,15 @@
+created: 20220909154423935
+creator: oeyoews
+modified: 20220909155805434
+modifier: oeyoews
+tags: 
+title: neotw/style/dd
+type: text/vnd.tiddlywiki
+
+dd {
+	margin-left:14px;
+}
+
+dd:hover::before {
+	content: "» ";
+}

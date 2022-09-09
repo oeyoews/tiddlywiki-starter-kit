@@ -1,0 +1,69 @@
+created: 20201202200514984
+creator: oeyoews
+modified: 20220909151801622
+modifier: oeyoews
+tags: $:/tags/Macro
+title: $:/plugins/nico/projectify/macros/todo-list
+type: text/vnd.tiddlywiki
+
+\define project-refile-actions()
+<!-- Macro similar to the todo-list drop actions, but used in project lists/cards -->
+  <$action-listops $tiddler=<<actionTiddler>> $tags=<<project-refile-tags>>/>
+\end
+
+\define todo-list-drop-actions(tag)
+<!-- Same as list-tagged-draggable-drop-actions, but removing the item from its old project and adding the todo tag. -->
+<$action-listops $tiddler=<<actionTiddler>> $tags=<<todo-list-drop-tags>>/>
+<!-- Save the current ordering of the tiddlers with this tag -->
+<$set name="order" filter="[<__tag__>tagging[]]">
+<!-- Remove any list-after or list-before fields from the tiddlers with this tag -->
+<$list filter="[<__tag__>tagging[]]">
+<$action-deletefield $field="list-before"/>
+<$action-deletefield $field="list-after"/>
+</$list>
+<!-- Save the new order to the Tag Tiddler -->
+<$action-listops $tiddler=<<__tag__>> $field="list" $filter="+[enlist<order>] +[insertbefore:currentTiddler<actionTiddler>]"/>
+</$set>
+\end
+
+\define todo-list-filtered(subFilter)
+  <$vars
+    projectTag={{!!title}}
+    dragHandle="yes"
+    list-tagged-draggable-drop-actions=<<todo-list-drop-actions>>
+  >
+    <div class="py-todos">
+      <$macrocall
+        $name="list-tagged-draggable"
+        tag=<<projectTag>>
+        subFilter=<<__subFilter__>>
+        itemTemplate="$:/plugins/nico/projectify/ui/todo/TodoItem"
+      />
+    </div>
+  </$vars>
+\end
+  
+\define todo-list(emptyTemplate)
+  <$list filter=<<py-has-no-open-todo>> variable="ignore">
+    <$transclude tiddler=<<__emptyTemplate__>>/>
+  </$list>
+  <$list filter=<<py-has-scheduled-todos>> variable="ignore">
+    <label class="py-label"><<lingo Scheduled>></label>
+    <$macrocall $name="todo-list-filtered" subFilter=<<py-scheduled-todos-subfilter>>/>
+  </$list>
+  <$list filter=<<py-has-unscheduled-todos>> variable="ignore">
+    <$list filter=<<py-has-scheduled-todos>>>
+      <label class="py-label"><<lingo OtherTasks>></label>
+    </$list>
+  </$list>
+  <$macrocall $name="todo-list-filtered" subFilter=<<py-unscheduled-todos-subfilter>>/>
+\end
+
+\define todo-list-completed()
+  <div class="py-todos py-completed-todos">
+    <$list
+      filter=<<py-completed-todos>>
+      template="$:/plugins/nico/projectify/ui/todo/TodoItem"
+    />
+  </div>
+\end

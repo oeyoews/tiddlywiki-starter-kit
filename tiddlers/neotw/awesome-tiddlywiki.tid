@@ -1,13 +1,14 @@
 created: 20220830130512773
 creator: oeyoews
-modified: 20220908155002938
+modified: 20220909154905566
 modifier: oeyoews
 tags: 
 title: neotw/awesome-tiddlywiki
 type: text/vnd.tiddlywiki
 
-* list: https://dynalist.io/d/zUP-nIWu2FFoXH-oM7L7d9DM
-* svg: https://www.svgrepo.com
+* tobibeer <<url "https://tobibeer.github.io/tw5-plugins/#Welcome">>
+* list <<url "https://dynalist.io/d/zUP-nIWu2FFoXH-oM7L7d9DM">>
+* svg <<url "https://www.svgrepo.com">>
 * png: https://www.flaticon.com
 * fontawesome: http://fa5-free-svg.tiddlyspot.com
 * cn: https://bramchen.github.io/tw5-docs/zh-Hans
@@ -27,4 +28,4 @@ type: text/vnd.tiddlywiki
 * ''tweaks'' http://www.telumire.be/TiddlyTweaks
 
 ; <<emoji arrowright>> css
-: gradient https://uigradients.com/#ChittyChittyBangBang
+: gradient <<url "https://uigradients.com/#ChittyChittyBangBang">>

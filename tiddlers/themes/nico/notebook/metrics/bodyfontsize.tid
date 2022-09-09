@@ -1,8 +1,8 @@
 created: 20200428203454207
 creator: oeyoews
-modified: 20220908170159417
+modified: 20220909173652781
 modifier: oeyoews
 title: $:/themes/nico/notebook/metrics/bodyfontsize
 type: text/vnd.tiddlywiki
 
-{{neotw/tid-fontsize}}px
+{{!!width}}px

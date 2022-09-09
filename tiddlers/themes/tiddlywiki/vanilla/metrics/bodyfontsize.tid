@@ -1,8 +1,9 @@
 created: 20220908164533712
 creator: oeyoews
-modified: 20220908164538415
+modified: 20220909173708446
 modifier: oeyoews
+size: 16
 title: $:/themes/tiddlywiki/vanilla/metrics/bodyfontsize
 type: text/vnd.tiddlywiki
 
-16
+{{!!size}}px
