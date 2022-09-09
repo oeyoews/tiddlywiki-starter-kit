@@ -1,0 +1,11 @@
+created: 20220909014027334
+creator: oeyoews
+modified: 20220909015318905
+modifier: oeyoews
+tags: $:/tags/Macro
+title: neotw/macro/neotw-span
+type: text/vnd.tiddlywiki
+
+\define neotw-span(text, bg)
+<span class="neotw-span $bg$">$text$</span>
+\end
