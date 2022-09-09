@@ -1,6 +1,6 @@
 created: 20220830102023755
 creator: oeyoews
-modified: 20220907233619949
+modified: 20220909043633256
 modifier: oeyoews
 tags: 
 title: neotw/CHANGELOG
@@ -24,7 +24,7 @@ type: text/vnd.tiddlywiki
 * ''2022/09/01 20:17:49'' add readonly mode, support disable
 
 ---
-* <<.link-badge-added "">> add render static
+* <<DONE>> add render static
 * <<.link-badge-added "">> add twemoji
 * <<.link-badge-modified"">> remove twemoji, but keep tid, add maple mono font
 * <<.link-badge-extended "">> add field configuration

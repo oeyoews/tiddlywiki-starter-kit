@@ -1,13 +1,13 @@
 created: 20220909024926814
 creator: oeyoews
-modified: 20220909025331096
+modified: 20220909051651211
 modifier: oeyoews
 tags: $:/tags/Macro
 title: neotw/macro/keyword
 type: text/vnd.tiddlywiki
 
 \define neotw-keyword(text, bg)
-<span class="neotw-span fw $bg$">$text$</span>
+<span class="neotw-span neotw-fw $bg$">$text$</span>
 \end
 
 \define TODO() <<neotw-keyword "TODO" b1>>

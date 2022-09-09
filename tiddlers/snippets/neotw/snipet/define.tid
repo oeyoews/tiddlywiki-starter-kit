@@ -1,0 +1,10 @@
+caption: define macro
+created: 20220909045603404
+creator: oeyoews
+modified: 20220909045640679
+modifier: oeyoews
+tags: $:/tags/TextEditor/Snippet
+title: neotw/snipet/define
+type: text/vnd.tiddlywiki
+
+\define $1()

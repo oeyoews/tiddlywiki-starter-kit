@@ -1,0 +1,11 @@
+created: 20220909045552724
+creator: oeyoews
+modified: 20220909051718660
+modifier: oeyoews
+tags: $:/tags/Macro
+title: neotw/macro/underline
+type: text/vnd.tiddlywiki
+
+\define neotw-underline(text, neotw-fw)
+<span class="neotw-underline $neotw-fw$">$text$</span>
+\end

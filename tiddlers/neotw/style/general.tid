@@ -1,0 +1,11 @@
+created: 20220909051531000
+creator: oeyoews
+modified: 20220909051608999
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: neotw/style/general
+type: text/vnd.tiddlywiki
+
+.neotw-fw {
+	font-weight: bold;
+}

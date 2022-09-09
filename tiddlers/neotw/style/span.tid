@@ -1,6 +1,6 @@
 created: 20220909012937474
 creator: oeyoews
-modified: 20220909025109121
+modified: 20220909051637926
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/style/span
@@ -27,8 +27,4 @@ type: text/vnd.tiddlywiki
 
 .yellow {
 	background: yellow;
-}
-
-.fw {
-	font-weight: bold;
 }
