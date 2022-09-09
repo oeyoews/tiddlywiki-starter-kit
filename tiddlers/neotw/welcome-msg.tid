@@ -1,8 +1,8 @@
 created: 20220521173616898
 creator: oeyoews
-modified: 20220905164501038
+modified: 20220909021103354
 modifier: oeyoews
 title: neotw/welcome-msg
 type: text/vnd.tiddlywiki
 
-Welcom to {{$:/SiteTitle}}
+Welcome to <<neotw-span  "{{$:/SiteTitle}}" b4>> 
