@@ -1,12 +1,12 @@
 created: 20220828120245453
 creator: oeyoews
-modified: 20220909021200918
+modified: 20220909021531349
 modifier: oeyoews
 tags: 
 title: Index
 type: text/vnd.tiddlywiki
 
-<<.preamble  "{{neotw/welcome-msg}}">>
+<<.preamble  "<<emoji arrowright>>  {{neotw/welcome-msg}}">>
 
 {{neotw/mobile-warning}}
 
