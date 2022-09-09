@@ -1,0 +1,11 @@
+created: 20220909175056464
+creator: oeyoews
+modified: 20220909175111976
+modifier: oeyoews
+tags: 
+title: neotw/new/New Tiddler 7
+type: text/vnd.tiddlywiki
+
+```wikitext
+tiddlywiki --load ./mywiki.html --savewikifolder ./mywikifolder
+```
