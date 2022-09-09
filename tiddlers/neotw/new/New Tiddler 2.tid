@@ -1,0 +1,26 @@
+created: 20220909005405288
+creator: oeyoews
+modified: 20220909010036803
+modifier: oeyoews
+tags: 
+title: neotw/new/New Tiddler 2
+type: text/vnd.tiddlywiki
+
+<$swiffy-slider>
+<div class="swiffy-slider slider-nav-visible slider-nav-arrow slider-nav-mousedrag" >
+    <ul class="slider-container">
+        <li><img src="https://source.unsplash.com/nKAglN6HBH8/1600x900" style="max-width: 100%;height: auto;"></li>
+        <li><img src="https://source.unsplash.com/nKAglN6HBH8/1600x900" style="max-width: 100%;height: auto;"></li>
+        <li><img src="https://source.unsplash.com/E9ZwWcMGzj8/1600x900" style="max-width: 100%;height: auto;"></li>
+    </ul>
+
+    <button type="button" class="slider-nav"></button>
+    <button type="button" class="slider-nav slider-nav-next"></button>
+
+    <div class="slider-indicators">
+        <button class="active"></button>
+        <button></button>
+        <button></button>
+    </div>
+</div>
+</$swiffy-slider> 
