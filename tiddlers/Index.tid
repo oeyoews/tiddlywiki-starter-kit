@@ -1,6 +1,6 @@
 created: 20220828120245453
 creator: oeyoews
-modified: 20220909052046810
+modified: 20220909174709015
 modifier: oeyoews
 tags: 
 title: Index
@@ -9,9 +9,9 @@ type: text/vnd.tiddlywiki
 <<.preamble  """<<emoji arrowright>>  {{neotw/welcome-msg}} <<emoji arrowright>> {{$:/SiteSubtitle}}
 """>>
 
+{{neotw/mobile/darkmode-button}}
 {{neotw/mobile-warning}}
 
-<<emoji dot-status>> <<neotw-span "[[neotw documention|neotw/docs]]" b1>>
+<<thumbnail-right image:"https://gitlab.com/oeyoews/neotw/raw/main/img/s5.png" link:"neotw/docs">>
 
-{{neotw/mobile/darkmode-button}}
 {{neotw/footer}}
