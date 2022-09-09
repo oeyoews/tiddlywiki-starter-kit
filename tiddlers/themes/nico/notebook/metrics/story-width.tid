@@ -1,7 +1,8 @@
 created: 20210123210054185
-modified: 20220828041017516
+creator: oeyoews
+modified: 20220909055733337
 modifier: oeyoews
 title: $:/themes/nico/notebook/metrics/story-width
 type: text/vnd.tiddlywiki
 
-900px
+{{neotw/story-width}}px
