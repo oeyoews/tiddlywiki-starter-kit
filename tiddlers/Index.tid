@@ -1,6 +1,6 @@
 created: 20220828120245453
 creator: oeyoews
-modified: 20220909051317888
+modified: 20220909052046810
 modifier: oeyoews
 tags: 
 title: Index
@@ -11,7 +11,7 @@ type: text/vnd.tiddlywiki
 
 {{neotw/mobile-warning}}
 
-* <<emoji book>> <<neotw-span "[[neotw documention|neotw/docs]]" b1>>
+<<emoji dot-status>> <<neotw-span "[[neotw documention|neotw/docs]]" b1>>
 
 {{neotw/mobile/darkmode-button}}
 {{neotw/footer}}
