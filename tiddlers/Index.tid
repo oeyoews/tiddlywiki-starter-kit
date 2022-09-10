@@ -1,6 +1,6 @@
 created: 20220828120245453
 creator: oeyoews
-modified: 20220910053358574
+modified: 20220910054402987
 modifier: oeyoews
 tags: start
 title: Index
@@ -9,8 +9,10 @@ type: text/vnd.tiddlywiki
 <<.preamble """{{neotw/welcome-msg}}""">>
 
 {{neotw/mobile-warning}}
-{{neotw/badges}} 
 
 > {{neotw/button/mode}}
 
 <<thumbnail-right image:"https://gitlab.com/oeyoews/neotw/raw/main/img/s5.png" link:"neotw/docs">>
+
+<br clear="both">
+{{neotw/badges}} 
