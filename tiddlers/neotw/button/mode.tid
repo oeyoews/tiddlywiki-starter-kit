@@ -1,0 +1,23 @@
+created: 20220910042749958
+creator: oeyoews
+modified: 20220910050110540
+modifier: oeyoews
+tags: 
+title: neotw/button/mode
+type: text/vnd.tiddlywiki
+
+<$list filter="$:/status/neotw/mode" variable=".state">
+<$reveal state=<<.state>> type="nomatch" text="show">
+
+<$fieldmangler tiddler="neotw/style/readonly">
+	<$button set=<<.state>> setTo="show">Show<$action-sendmessage $message="tm-remove-tag" $param="$:/tags/Stylesheet"/>
+	</$button>
+</$fieldmangler>
+</$reveal>
+<$reveal state=<<.state>> type="match" text="show">
+<$fieldmangler tiddler="neotw/style/readonly">
+	<$button set=<<.state>> setTo="hide">Hide<$action-sendmessage $message="tm-add-tag" $param="$:/tags/Stylesheet"/>
+	</$button>
+</$fieldmangler>
+</$reveal>
+</$list>
