@@ -1,0 +1,24 @@
+created: 20220910050842045
+creator: oeyoews
+modified: 20220910051642781
+modifier: oeyoews
+tags: 
+title: neotw/button/mode pagecontrol
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+
+<$list filter="$:/status/neotw/mode" variable=".state">
+<$reveal state=<<.state>> type="nomatch" text="show">
+<$fieldmangler tiddler="neotw/style/readonly">
+	<$button tooltip="show" aria-label="show info" class=<<tv-config-toolbar-class>> set=<<.state>> setTo="show">{{$:/core/icon}}<$action-sendmessage $message="tm-remove-tag" $param="$:/tags/Stylesheet"/>
+	</$button>
+</$fieldmangler>
+</$reveal>
+<$reveal state=<<.state>> type="match" text="show">
+<$fieldmangler tiddler="neotw/style/readonly">
+	<$button tooltip="show" aria-label="show info" class=<<tv-config-toolbar-class>> set=<<.state>> setTo="hide">{{$:/favicon.ico}}<$action-sendmessage $message="tm-add-tag" $param="$:/tags/Stylesheet"/>
+	</$button>
+</$fieldmangler>
+</$reveal>
+</$list>

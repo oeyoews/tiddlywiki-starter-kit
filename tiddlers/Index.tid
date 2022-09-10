@@ -1,6 +1,6 @@
 created: 20220828120245453
 creator: oeyoews
-modified: 20220910050731794
+modified: 20220910051949798
 modifier: oeyoews
 tags: start
 title: Index
@@ -10,5 +10,11 @@ type: text/vnd.tiddlywiki
 
 {{neotw/mobile-warning}}
 {{neotw/badges}} 
+
+<$list filter="[{$:/info/url/protocol}prefix[https]]"> 
+
+> {{neotw/button/mode}}
+
+</$list>
 
 <<thumbnail-right image:"https://gitlab.com/oeyoews/neotw/raw/main/img/s5.png" link:"neotw/docs">>
