@@ -1,0 +1,36 @@
+created: 20220910010442070
+creator: oeyoews
+modified: 20220910012049160
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: neotw/style/todo-ui
+type: text/vnd.tiddlywiki
+
+/* 
+Button appears on the tiddlers tagged with Task 
+through task viewtemplate
+*/
+.thinkup-task-row{
+margin-top:-20px;
+display: flex; 
+flex-direction: row-reverse;
+}.thinkup-btn-task-done input{
+  display : none;
+}
+.thinkup-task-row button,
+.thinkup-btn-task-done input + span {
+border:1px solid #cccccc;
+padding:2px 4px;
+border-radius:8px;
+font-size:0.8em;
+cursor: pointer;
+}
+.thinkup-btn-task-done input:checked + span{}.thinkup-btn-task-done svg {
+    height: 1em;
+    width:  1em;
+    margin-right: 3px;
+    margin-bottom: 1px;
+    vertical-align: middle;
+		}
+		
+.thinkup-task-row button{margin-left:0.5em;}

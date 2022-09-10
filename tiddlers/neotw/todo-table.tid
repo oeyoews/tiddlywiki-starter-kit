@@ -1,0 +1,33 @@
+created: 20220910014231360
+creator: oeyoews
+modified: 20220910021358417
+modifier: oeyoews
+tags: 
+title: neotw/todo-table
+type: text/vnd.tiddlywiki
+
+\define createTask()
+<$action-sendmessage 
+  $message="tm-new-tiddler" 
+  title="New Task" 
+  tags="todo" 
+  text=""
+  due-date=""
+  priority="normal"
+  status="not started"
+  />
+\end
+
+\define newTask()
+<$button actions=<<createTask>> class="btn btn-sm btn-info" >New Task
+</$button>
+\end
+
+<div class="float-right">
+<<newTask>>
+</div>
+
+undone tasks: <$count filter="{{{ [tag[todo]] -[tag[done]] }}}"/>
+
+Filter and search in table <$edit-text tiddler="$:/temp/tasks/dtable/search" filed=text tag=input default=""/>
+<$macrocall $name=table-dynamic filter="[tag[todo]search{$:/temp/tasks/dtable/search}] -[tag[done]]" fields="tbl-checkbox tbl-expand title priority status created" class="w-100" stateTiddler="your-state-tid"/>

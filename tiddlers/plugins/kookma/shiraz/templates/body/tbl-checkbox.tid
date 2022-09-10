@@ -1,0 +1,20 @@
+created: 20220910013914060
+creator: oeyoews
+modified: 20220910013922342
+modifier: oeyoews
+tags: $:/tags/Table/BodyTemplate
+tbl-column-list: tbl-checkbox
+title: $:/plugins/kookma/shiraz/templates/body/tbl-checkbox
+type: text/vnd.tiddlywiki
+
+\define rowStyle() color:<<colour foreground>>; background-color:<<colour table-header-background>>;
+<td style="width:28px;text-align:center;">
+<$checkbox tiddler=<<currentRecord>> tag="done"
+checkactions="""<$action-setfield $tiddler=<<tempTableStyle>> $index=<<currentRecord>> $value=<<rowStyle>> /><$action-setfield $tiddler=<<currentRecord>> status="complete"/>"""
+uncheckactions="""<$action-setfield $tiddler=<<tempTableStyle>> $index=<<currentRecord>> /><$action-setfield $tiddler=<<currentRecord>> status="rework"/>""" />
+</td>
+
+<!-- classic style
+"color:#155724;background-color:#d4edda;"
+<<colour tab-foreground>>; background-color:<<colour tab-background>>
+-->

@@ -1,0 +1,34 @@
+created: 20220910010319748
+creator: oeyoews
+list-before: $:/core/ui/ViewTemplate/body
+modified: 20220910013743750
+modifier: oeyoews
+tags: $:/tags/ViewTemplate
+title: neotw/viewtemplate/todo-button
+type: text/vnd.tiddlywiki
+
+<!-- this template implements the don/undone button on Task tiddlers -->
+\define btncheckactions() 
+<$action-setfield $tiddler=<<tempTableStyle>> $index=<<currentRecord>> $value="color:#155724;background-color:#d4edda;" />
+<$action-setfield $tiddler=<<currentRecord>> status="complete"/>
+\end
+\define btnuncheckactions()
+<$action-setfield $tiddler=<<tempTableStyle>> $index=<<currentRecord>> /><$action-setfield $tiddler=<<currentRecord>> status="rework"/>
+\end
+
+<$list filter="[all[current]tag[todo]]">
+<div class="thinkup-task-row">
+<$button to="neotw/INBOX" tooltip="Open Tasks Explorer" class="tc-btn-invisible">{{$:/plugins/kookma/thinkup/images/tasks}} Tasks Explorer</$button>
+<$vars currentRecord=<<currentTiddler>> tempTableStyle="$:/keepstate/dynamictables/tasks-state-tid/style">
+<$checkbox class=thinkup-btn-task-done 
+   tiddler=<<currentRecord>> tag="done"
+   checkactions=<<btncheckactions>> 
+   uncheckactions=<<btnuncheckactions>> 
+> {{$:/plugins/kookma/thinkup/images/todo}}
+<$list filter="[<currentTiddler>contains:tags[done]]" emptyMessage=done>
+Undone
+</$list>
+</$checkbox>
+</$vars>
+</div>
+</$list>
