@@ -64,6 +64,9 @@ install-tidgi:
 update-tidgi:
 	@cd tidgi; rm *.zst *.deb; makepkg; sudo pacman -U *.zst
 
+edit-config:
+	@nvim tiddlywiki.info
+
 install-service:
 	@cp $(SERVICETEMPLATEFILE) $(SERVICEFILE)
 	@sed -i "s#neotwdir#$(neotwdir-user)#" $(SERVICEFILE)

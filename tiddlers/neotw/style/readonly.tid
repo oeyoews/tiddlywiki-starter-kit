@@ -1,16 +1,16 @@
 created: 20220901062635687
 creator: oeyoews
-modified: 20220910053234690
+modified: 20220910153008515
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/style/readonly
 type: text/vnd.tiddlywiki
 
 <$list filter="[{$:/info/url/protocol}prefix[https]]">
-   .tc-tiddler-controls { display: none; }
+	 .tc-tags-wrapper, .tc-tiddler-controls { display: none; }
 </$list>
 
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
-	[data-tiddler-title="Index"] .tc-title, .tc-subtitle  { display:none; }
-  .tc-tiddler-controls, .nc-bottombar, .nc-sidebar { display: none; }
+	[data-tiddler-title="Index"] .tc-title { display:none; }
+ .tc-tags-wrapper, .tc-tiddler-controls, .nc-bottombar, .nc-sidebar { display: none; }
 </$list>

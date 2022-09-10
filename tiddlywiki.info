@@ -3,6 +3,7 @@
     "plugins": [
         "tiddlywiki/tiddlyweb",
         "tiddlywiki/help",
+        "tiddlywiki/qrcode",
         "tiddlywiki/filesystem",
         "tiddlywiki/highlight",
         "tiddlywiki/markdown",

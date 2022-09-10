@@ -1,0 +1,11 @@
+created: 20220910153025923
+creator: oeyoews
+modified: 20220910153247887
+modifier: oeyoews
+tags: 
+title: neotw/new/New Tiddler 10
+type: text/vnd.tiddlywiki
+
+<$button message="tm-full-screen" class="tc-btn-invisible tc-tiddlylink">
+full screen
+</$button>

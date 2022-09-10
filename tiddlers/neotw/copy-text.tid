@@ -1,15 +1,15 @@
-caption: copy text
+caption: copy code
 created: 20220904024227881
 creator: oeyoews
 description: copy text
-modified: 20220904024353186
+modified: 20220910152748182
 modifier: oeyoews
 tags: $:/tags/ViewToolbar
 title: neotw/copy-text
 type: text/vnd.tiddlywiki
 
 \whitespace trim
-<$button message="tm-copy-to-clipboard" param={{!!text}} tooltip="copy current title" class=<<tv-config-toolbar-class>>>
+<$button message="tm-copy-to-clipboard" param={{!!text}} tooltip="copy current code" class=<<tv-config-toolbar-class>>>
 	<$list filter="[<tv-config-toolbar-icons>match[yes]]">
 	{{$:/images/coreui-icons/brand/cib-visual-studio-code}}
 	</$list>
