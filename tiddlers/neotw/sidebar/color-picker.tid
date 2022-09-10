@@ -1,0 +1,14 @@
+caption: Color Picker
+created: 20220910170726512
+creator: oeyoews
+modified: 20220910171247760
+modifier: oeyoews
+tags: $:/tags/SideBar
+title: neotw/sidebar/color-picker
+type: text/vnd.tiddlywiki
+
+\define color-file() $:/temp/color
+
+color: <$edit-text tiddler=<<color-file>> tag='input' placeholder='color' default=''/>
+
+<$macrocall $name='colour-picker' actions="<$action-setfield $tiddler=<<color-file>> $value=<<colour-picker-value>>/>"/>
