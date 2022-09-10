@@ -1,5 +1,6 @@
 \$__Import.tid
 \$__StoryList*.tid
+StoryList*.tid
 \$__trashbin*
 tiddlers/trashbin/
 /public/
