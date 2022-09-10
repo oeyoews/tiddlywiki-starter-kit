@@ -60,8 +60,9 @@ install:
 # or yay tidgi directly
 install-tidgi:
 	@cd tidgi; makepkg; sudo pacman -U *.zst
+
 update-tidgi:
-	@cd tidgi; rm *.deb; makepkg; sudo pacman -U *.zst
+	@cd tidgi; rm *.zst *.deb; makepkg; sudo pacman -U *.zst
 
 install-service:
 	@cp $(SERVICETEMPLATEFILE) $(SERVICEFILE)
