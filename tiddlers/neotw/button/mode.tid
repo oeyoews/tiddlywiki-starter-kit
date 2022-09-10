@@ -1,11 +1,12 @@
 created: 20220910042749958
 creator: oeyoews
-modified: 20220910050110540
+modified: 20220910053342949
 modifier: oeyoews
 tags: 
 title: neotw/button/mode
 type: text/vnd.tiddlywiki
 
+<$list filter="[{$:/info/url/protocol}prefix[https]]"> 
 <$list filter="$:/status/neotw/mode" variable=".state">
 <$reveal state=<<.state>> type="nomatch" text="show">
 
@@ -20,4 +21,5 @@ type: text/vnd.tiddlywiki
 	</$button>
 </$fieldmangler>
 </$reveal>
+</$list>
 </$list>

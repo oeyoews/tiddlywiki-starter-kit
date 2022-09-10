@@ -1,0 +1,12 @@
+caption: http filter
+created: 20220910053254865
+creator: oeyoews
+modified: 20220910053330412
+modifier: oeyoews
+tags: $:/tags/TextEditor/Snippet
+title: neotw/snipet/http
+type: text/vnd.tiddlywiki
+
+<$list filter="[{$:/info/url/protocol}prefix[https]]">
+$1
+</$list>
