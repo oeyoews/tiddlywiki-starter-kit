@@ -1,10 +1,11 @@
 created: 20220903154521999
 creator: oeyoews
-modified: 20220908150454666
+modified: 20220910035227519
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/style/polar
 type: text/vnd.tiddlywiki
+velo: 0.2
 
 .neotw-darkmode {
 	position: fixed;
@@ -28,7 +29,7 @@ type: text/vnd.tiddlywiki
     z-index: 3001;
     /** background: url("files/images/bear.png"); */
     background: url("https://gitlab.com/oeyoews/neotw/raw/main/files/images/bear.png");
-    animation: bear 0.5s steps(8) infinite, change_pos 8s forwards;
+    animation: bear {{!!velo}}s steps(8) infinite, change_pos 8s forwards;
   }
 
   @keyframes bear {
