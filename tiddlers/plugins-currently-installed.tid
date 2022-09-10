@@ -1,13 +1,13 @@
 caption: Installed Plugins
 created: 20220828002233623
 creator: oeyoews
-modified: 20220828040555083
+modified: 20220910161748352
 modifier: oeyoews
 title: $:/plugins-currently-installed
 type: text/vnd.tiddlywiki
 
 \define lingo-base() $:/language/ControlPanel/Plugins/
-\define statusTid() $:/config/xp/aggregation-plugins/installed-plugins/View
+\define statusTid() $:/temp/config/xp/aggregation-plugins/installed-plugins/View
 \define storeTitle() $:/temp/search/plugins-currently-installed
 \define search-tips()
 <$reveal state=<<statusTid>> type="nomatch" text="rewritten" default="table">
