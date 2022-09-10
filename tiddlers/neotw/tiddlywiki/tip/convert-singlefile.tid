@@ -1,0 +1,11 @@
+created: 20220909175056464
+creator: oeyoews
+modified: 20220910164239408
+modifier: oeyoews
+tags: 
+title: neotw/tiddlywiki/tip/convert-singlefile
+type: text/vnd.tiddlywiki
+
+```wikitext
+tiddlywiki --load ./mywiki.html --savewikifolder ./mywikifolder
+```

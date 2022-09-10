@@ -1,11 +1,13 @@
-created: 20220909175056464
+created: 20220910164715854
 creator: oeyoews
-modified: 20220909175111976
+modified: 20220910164836087
 modifier: oeyoews
-tags: 
 title: neotw/new/New Tiddler 7
 type: text/vnd.tiddlywiki
 
-```wikitext
-tiddlywiki --load ./mywiki.html --savewikifolder ./mywikifolder
-```
+<$button>
+<$action-confirm $message="是否要删除标题和标签？">
+<$action-deletefield caption tags/>
+Delete "caption" and "tags"
+</$action-confirm>
+</$button>
