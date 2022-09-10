@@ -1,7 +1,7 @@
 caption: Subtitle Template
 created: 20210611015734693
 creator: @oeyoews
-modified: 20220910151427483
+modified: 20220910173935292
 modifier: oeyoews
 tags: $:/tags/ViewTemplate
 title: $:/core/ui/ViewTemplate/subtitle
@@ -12,7 +12,7 @@ type: text/vnd.tiddlywiki
 <$reveal type="nomatch" stateTitle=<<folded-state>> text="hide" tag="div" retain="yes" animate="yes">
 <div class="tc-subtitle">
 <$list filter="[!is[system]all[current]has[modifier]]">
-<<emoji arrowright>> 
+<<emoji arrowright>>
 <$view field="modifier"/>&ensp;
 </$list>
 <$list filter="[all[current]has[created]]">

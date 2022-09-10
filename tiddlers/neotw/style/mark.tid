@@ -1,10 +1,16 @@
 created: 20220909012937474
 creator: oeyoews
-modified: 20220909180021303
+modified: 20220910172254684
 modifier: oeyoews
 tags: $:/tags/Stylesheet
-title: neotw/style/span
+title: neotw/style/mark
 type: text/vnd.tiddlywiki
+
+.neotw-span {
+	border-radius: 3px;
+	padding: 0 5px;
+	color: black;
+}
 
 .neotw-span {
 	border-radius: 3px;

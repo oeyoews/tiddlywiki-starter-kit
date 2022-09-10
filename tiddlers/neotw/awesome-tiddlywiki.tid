@@ -1,11 +1,12 @@
 created: 20220830130512773
 creator: oeyoews
-modified: 20220909154905566
+modified: 20220910173302131
 modifier: oeyoews
 tags: 
 title: neotw/awesome-tiddlywiki
 type: text/vnd.tiddlywiki
 
+* <<url "https://zettelkasten.sorenbjornstad.com/">>
 * tobibeer <<url "https://tobibeer.github.io/tw5-plugins/#Welcome">>
 * list <<url "https://dynalist.io/d/zUP-nIWu2FFoXH-oM7L7d9DM">>
 * svg <<url "https://www.svgrepo.com">>
