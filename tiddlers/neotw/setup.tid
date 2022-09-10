@@ -1,7 +1,7 @@
 caption: Neotw
 created: 20220907022139318
 creator: oeyoews
-modified: 20220910001113036
+modified: 20220910022653001
 modifier: oeyoews
 tags: $:/tags/SideBar
 title: neotw/setup
@@ -24,5 +24,4 @@ type: text/vnd.tiddlywiki
 ; <<emoji arrowright>> [[StoryWidth|$:/themes/nico/notebook/metrics/story-width]]
 : <$range  tiddler="$:/themes/nico/notebook/metrics/story-width" field="width" min="900" max="1050" increment=".1"/> {{$:/themes/nico/notebook/metrics/story-width}}
 
-<footer><<emoji>> <<neotw-span "[[neotw setup|neotw/setup]]" b1>>
-</footer>
+; <<emoji arrowright>> <<neotw-span "[[Newtw|neotw/setup]]" b1>>
