@@ -1,6 +1,6 @@
 created: 20220901132657061
 creator: vanilla
-modified: 20220907051006647
+modified: 20220910040505661
 modifier: oeyoews
 tags: 
 title: neotw/readmode-v2
@@ -11,9 +11,11 @@ type: text/vnd.tiddlywiki
 \define help-delete(key) <$action-deletetiddler $tiddler="$:/state/$key$" />
 
 
+<$list filter="[{$:/info/url/protocol}prefix[https]]"> 
 <$list filter="[]" >
 <$list filter="[]" variable=_>
 <$fieldmangler tiddler="neotw/style/readonly">
+<<emoji arrowright>>
 <$button actions=<<help-seen "readmode">> >
 <<symbol "Editmode" "dot-off">>
 <$action-sendmessage $message="tm-remove-tag" $param="$:/tags/Stylesheet"/>
@@ -28,4 +30,5 @@ type: text/vnd.tiddlywiki
 <$action-sendmessage $message="tm-add-tag" $param="$:/tags/Stylesheet"/>
 </$button>
 </$fieldmangler>
+</$list>
 </$list>

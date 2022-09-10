@@ -1,7 +1,7 @@
 caption: Neotw
 created: 20220907022139318
 creator: oeyoews
-modified: 20220910035605142
+modified: 20220910040520654
 modifier: oeyoews
 tags: $:/tags/SideBar
 title: neotw/setup
@@ -26,5 +26,7 @@ type: text/vnd.tiddlywiki
 
 ; <<emoji arrowright>> [[Polar|neotw/style/polar]]
 : <$range  tiddler="neotw/style/polar" field="velo" min=".4" max="1" default=".4" increment=".1"/> {{neotw/style/polar!!velo}}s
+
+ {{neotw/readmode-v2}}
 
 ; <<emoji arrowright>> <<neotw-span "[[Newtw|neotw/setup]]" b1>>
