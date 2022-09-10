@@ -1,11 +1,11 @@
 created: 20220903154521999
 creator: oeyoews
-modified: 20220910035227519
+modified: 20220910035608626
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/style/polar
 type: text/vnd.tiddlywiki
-velo: 0.2
+velo: 0.4
 
 .neotw-darkmode {
 	position: fixed;
