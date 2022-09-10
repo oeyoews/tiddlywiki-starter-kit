@@ -1,9 +1,9 @@
 created: 20220910014231360
 creator: oeyoews
-modified: 20220910021358417
+modified: 20220910021753571
 modifier: oeyoews
 tags: 
-title: neotw/todo-table
+title: neotw/archive/todo-table
 type: text/vnd.tiddlywiki
 
 \define createTask()
@@ -30,4 +30,4 @@ type: text/vnd.tiddlywiki
 undone tasks: <$count filter="{{{ [tag[todo]] -[tag[done]] }}}"/>
 
 Filter and search in table <$edit-text tiddler="$:/temp/tasks/dtable/search" filed=text tag=input default=""/>
-<$macrocall $name=table-dynamic filter="[tag[todo]search{$:/temp/tasks/dtable/search}] -[tag[done]]" fields="tbl-checkbox tbl-expand title priority status created" class="w-100" stateTiddler="your-state-tid"/>
+<$macrocall $name=table-dynamic filter="[tag[todo]search{$:/temp/tasks/dtable/search}] -[tag[done]]" fields="tbl-checkbox tbl-expand title priority status created" class="w-100" stateTiddler="neotw-table-todo-tid"/>
