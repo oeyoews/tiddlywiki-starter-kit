@@ -11,3 +11,6 @@ todo.norg
 \$__q*.tid
 tiddlers/gtd/
 node_modules/
+
+# misc
+tiddlers/config/TiddlerTail/Default.tid

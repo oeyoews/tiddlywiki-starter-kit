@@ -1,9 +1,9 @@
 created: 20220907025453597
 creator: oeyoews
-modified: 20220907025508092
+modified: 20220910022157685
 modifier: oeyoews
 tags: 
 title: neotw/INBOX
 type: text/vnd.tiddlywiki
 
-{{$:/plugins/nico/projectify/ui/dashboard/InboxAndProjects}}
+{{$:/plugins/nico/projectify/ui/dashboard/Dashboard}}
