@@ -1,0 +1,10 @@
+button-classes: tc-text-editor-toolbar-item-start-group
+caption: {{$:/language/Buttons/Help/Caption}}
+condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]]
+description: {{$:/language/Buttons/Help/Hint}}
+dropdown: $:/core/ui/EditorToolbar/help-dropdown
+icon: $:/core/images/help
+shortcuts: ((help))
+tags: $:/tags/EditorToolbar
+title: $:/core/ui/EditorToolbar/help
+type: text/vnd.tiddlywiki
