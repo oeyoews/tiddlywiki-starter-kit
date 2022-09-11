@@ -1,2 +1,0 @@
-- [uppkgbuild](https://wiki.archlinux.org/title/AUR_submission_guidelines)
-- [guide](<https://wiki.archlinux.org/title/Creating_packages#package()>)

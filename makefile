@@ -59,6 +59,7 @@ install:
 
 # or yay tidgi directly
 install-tidgi:
+	@mkdir tidgi/; cp src/PKGBUILD tidgi/
 	@cd tidgi; makepkg; sudo pacman -U *.zst
 
 update-tidgi:
