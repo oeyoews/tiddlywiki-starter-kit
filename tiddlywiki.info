@@ -25,10 +25,10 @@
         "tiddlywiki/vanilla"
     ],
     "build": {
-        "offline": [
+        "index": [
             "--rendertiddler",
             "$:/plugins/tiddlywiki/tiddlyweb/save/offline",
-            "offline.html",
+            "index.html",
             "text/plain"
         ],
         "listen": [
@@ -36,10 +36,10 @@
             "root-tiddler=$:/core/save/all-external-js",
             "use-browser-cache=yes"
         ],
-        "index": [
+        "debug": [
             "--rendertiddler",
             "$:/core/save/offline-external-js",
-            "index.html",
+            "debug.html",
             "text/plain",
             "--render",
             "$:/core/templates/tiddlywiki5.js",
