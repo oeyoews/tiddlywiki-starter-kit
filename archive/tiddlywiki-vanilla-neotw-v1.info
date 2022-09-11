@@ -25,19 +25,10 @@
         "tiddlywiki/vanilla"
     ],
     "build": {
-        "listen": [
-            "--listen",
-            "root-tiddler=$:/core/save/all-external-js",
-            "use-browser-cache=yes"
-        ],
         "index": [
             "--rendertiddler",
-            "$:/core/save/offline-external-js",
+            "$:/plugins/tiddlywiki/tiddlyweb/save/offline",
             "index.html",
-            "text/plain",
-            "--render",
-            "$:/core/templates/tiddlywiki5.js",
-            "[[tiddlywikicore-]addsuffix<version>addsuffix[.js]]",
             "text/plain"
         ],
         "static": [
@@ -57,12 +48,6 @@
             "--rendertiddler",
             "$:/core/templates/static.template.css",
             "static/static.css",
-            "text/plain"
-        ],
-        "tiddlywikicore": [
-            "--render",
-            "$:/core/templates/tiddlywiki5.js",
-            "[[tiddlywikicore-]addsuffix<version>addsuffix[.js]]",
             "text/plain"
         ],
         "favicon": [
