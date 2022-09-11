@@ -1,9 +1,15 @@
+caption: TODO
 created: 20220904015636030
 creator: oeyoews
-modified: 20220904015711857
+modified: 20220911012535501
 modifier: oeyoews
-tags: 
+tags: $:/tags/SideBar
 title: neotw/todo
 type: text/vnd.tiddlywiki
 
+[ ] subtitle effect export style
 [ ] remove button link macro
+
+<$button>
+[[neotw/todo]]
+</$button>
