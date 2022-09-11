@@ -25,6 +25,12 @@
         "tiddlywiki/vanilla"
     ],
     "build": {
+        "offline": [
+            "--rendertiddler",
+            "$:/plugins/tiddlywiki/tiddlyweb/save/offline",
+            "offline.html",
+            "text/plain"
+        ],
         "listen": [
             "--listen",
             "root-tiddler=$:/core/save/all-external-js",
