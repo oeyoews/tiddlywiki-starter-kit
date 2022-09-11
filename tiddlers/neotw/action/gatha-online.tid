@@ -1,0 +1,13 @@
+created: 20220911170044403
+creator: oeyoews
+modified: 20220911170543205
+modifier: oeyoews
+tags: $:/tags/StartupAction
+title: neotw/action/gatha-online
+type: text/vnd.tiddlywiki
+
+<$list filter="[{$:/info/url/protocol}prefix[https]]">
+<$action-setfield $tiddler="$:/config/Plugins/Disabled/$:/plugins/kookma/gatha"
+          $field="text"
+          $value="no"/>
+</$list>
