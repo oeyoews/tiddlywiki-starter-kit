@@ -1,46 +1,48 @@
 created: 20220826140521100
 creator: oeyoews
-modified: 20220905163708197
+modified: 20220911171938200
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/stylesheet
 type: text/vnd.tiddlywiki
 
 .tc-notification {
-    color: black;
-    border-radius: 5px;
-		/** background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59); */
-		border: 2px; 
-		box-shadow: 0 5px 20px rgb(0 0 0 / 12%);
+  color: black;
+  border-radius: 5px;
+  /** background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59); */
+  border: 2px;
+  box-shadow: 0 5px 20px rgb(0 0 0 / 12%);
 }
 
 blockquote {
-	border-left: 3px solid #dfdfdf;
+  border-left: 3px solid #dfdfdf;
 }
 
 .tc-tiddler-frame {
-	border:0;
+  border: 0;
 }
-	
+
 .tc-block-tags-dropdown > .tc-btn-invisible:hover {
-    background-color: #00000008;
+  background-color: #00000008;
 }
 
-.cm-s-tiddlywiki .CodeMirror-activeline-background, .cm-s-tiddlywiki .CodeMirror-activeline-gutter .CodeMirror-linenumber {
-    background: #00000008;
+.cm-s-tiddlywiki .CodeMirror-activeline-background,
+.cm-s-tiddlywiki .CodeMirror-activeline-gutter .CodeMirror-linenumber {
+  background: #00000008;
 }
 
-.tc-editor-toolbar button, .tc-editor-toolbar button.tc-btn-invisible {
-    border-radius: 3px;
-    background: #00000008;
-    color: #3F3B3B;
-    fill: #3F3B3B;
-    border: 1px solid rgba(0,0,0,.2);
+.tc-editor-toolbar button,
+.tc-editor-toolbar button.tc-btn-invisible {
+  border-radius: 3px;
+  background: #00000008;
+  color: #3f3b3b;
+  fill: #3f3b3b;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-<!-- remove more border -->
+/* remove more border  */
 .tc-tab-content.tc-vertical {
-    border-left: 0;
+  border-left: 0;
 }
 
 .tc-more-sidebar > .tc-tab-set > .tc-tab-buttons > button.tc-tab-selected {
@@ -51,74 +53,73 @@ blockquote {
   border: none;
 }
 
-<!-- break change -->
-
+/* break change --  */
 hr {
-	background: #7f4bca;
-	height: 1px;
-	border: 0;
+  background: #7f4bca;
+  height: 1px;
+  border: 0;
 }
 
 button {
-	border: 0;
-	border-radius: 3px;
-	background: #00000008;
+  border: 0;
+  border-radius: 3px;
+  background: #00000008;
 }
 
-<!-- remove notebook sidebar border-->
+/* <!-- remove notebook sidebar border-- >  */
 .nc-sidebar .segment {
-	border-bottom: 0px;
+  border-bottom: 0px;
 }
 
 .nc-sidebar .section.open .label {
-    color: #ffffff;
-    fill: #ffffff;
-    background: #7f4bca;
-    border-bottom: 0;
-		border-radius: 3px;
+  color: #ffffff;
+  fill: #ffffff;
+  background: #7f4bca;
+  border-bottom: 0;
+  border-radius: 3px;
 }
 
 .nc-sidebar .section .label {
-		border-radius: 3px;
+  border-radius: 3px;
 }
 
 .tc-tiddler-preview-preview {
-    float: right;
-    width: 49%;
-    border: 2px solid rgba(0,0,0,.2);
-    margin: 4px 0 3px 3px;
-    padding: 3px 3px 3px 3px;
-    border-radius: 3px;
+  float: right;
+  width: 49%;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  margin: 4px 0 3px 3px;
+  padding: 3px 3px 3px 3px;
+  border-radius: 3px;
 }
 
-<!-- remove border -->
-
-.tc-editor-toolbar button, .tc-editor-toolbar button.tc-btn-invisible {
-border: 0;
+/** <!-- remove border -- > */
+.tc-editor-toolbar button,
+.tc-editor-toolbar button.tc-btn-invisible {
+  border: 0;
 }
 
 .tc-edit-tags {
-border: 0;
+  border: 0;
 }
 
 .tc-tiddler-frame input.tc-edit-texteditor {
-border: 0;
+  border: 0;
 }
 
 .tc-tiddler-frame input.tc-edit-texteditor:focus {
-	box-shadow: 0 0 0 0 transparent;
-	background: #00000008;
+  box-shadow: 0 0 0 0 transparent;
+  background: #00000008;
 }
 
 .CodeMirror {
-border: 0;
+  border: 0;
 }
 
 span.tc-tag-label {
-	border-radius: 3px;
-	background: #00000008;
+  border-radius: 3px;
+  background: #00000008;
 }
 
 .nc-bar input[type="search"]:focus {
-    box-shadow: 0 0 0 0 transparent;
+  box-shadow: 0 0 0 0 transparent;
 }
