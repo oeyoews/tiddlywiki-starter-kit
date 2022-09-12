@@ -43,13 +43,16 @@
 },
 
 "$:/plugins/oeyoews/neotw-surfing-keys/icon": {
-    "text": "<svg width=\"22pt\" height=\"22pt\" class=\"tc-image-bxi-bxs-keyboard tc-image-button\" viewBox=\"0 0 24 24\"><path d=\"M21,5H3C1.896,5,1,5.896,1,7v10c0,1.104,0.896,2,2,2h18c1.104,0,2-0.896,2-2V7C23,5.896,22.104,5,21,5z M13,7h2v2h-2V7z M13,11h2v2h-2V11z M9,7h2v2H9V7z M9,11h2v2H9V11z M5,7h2v2H5V7z M5,11h2v2H5V11z M17,17H7v-2h10V17z M19,13h-2v-2h2V13z M19,9h-2 V7h2V9z\"/></svg>",
+    "title": "$:/plugins/oeyoews/neotw-surfing-keys/icon",
     "created": "20220912153420932",
     "creator": "oeyoews",
-    "title": "$:/plugins/oeyoews/neotw-surfing-keys/icon",
-    "tags": "$:/tags/Image",
     "modified": "20220912153447811",
-    "modifier": "oeyoews"
+    "modifier": "oeyoews",
+    "tags": "$:/tags/Image",
+    "type": "text/vnd.tiddlywiki",
+    "text": "<svg width=\"22pt\" height=\"22pt\" class=\"tc-image-bxi-bxs-keyboard tc-image-button\" viewBox=\"0 0 24 24\"><path d=\"M21,5H3C1.896,5,1,5.896,1,7v10c0,1.104,0.896,2,2,2h18c1.104,0,2-0.896,2-2V7C23,5.896,22.104,5,21,5z M13,7h2v2h-2V7z M13,11h2v2h-2V11z M9,7h2v2H9V7z M9,11h2v2H9V11z M5,7h2v2H5V7z M5,11h2v2H5V11z M17,17H7v-2h10V17z M19,13h-2v-2h2V13z M19,9h-2 V7h2V9z\"/></svg>",
+    "revision": "0",
+    "bag": "default"
 },
 
 "$:/plugins/oeyoews/neotw-surfing-keys/newword": {
@@ -91,7 +94,7 @@
 },
 
 "$:/plugins/oeyoews/neotw-surfing-keys/snippet": {
-    "text": "<$navigator story=\"$:/StoryList\" history=\"$:/HistoryList\">\n<$action-sendmessage\n\t$message=\"tm-new-tiddler\"\n\ttags=\"$:/tags/TextEditor/Snippet\"\n\tcaption={{$:/language/Buttons/Stamp/New/Title}}\n\ttext={{$:/language/Buttons/Stamp/New/Text}}\n/>\n</$navigator>",
+    "text": "<$navigator story=\"$:/StoryList\" history=\"$:/HistoryList\">\n<$action-sendmessage\n\t$message=\"tm-new-tiddler\" title=\"neotw/snippet/\"\n\ttags=\"$:/tags/TextEditor/Snippet\"\n\tcaption={{$:/language/Buttons/Stamp/New/Title}}\n\ttext={{$:/language/Buttons/Stamp/New/Text}}\n/>\n</$navigator>",
     "title": "$:/plugins/oeyoews/neotw-surfing-keys/snippet",
     "caption": "snippet",
     "key": "((snippet))",
@@ -102,12 +105,12 @@
 },
 
 "$:/config/ShortcutInfo/snippet": {
-    "text": "⌨️ Create snippet",
     "title": "$:/config/ShortcutInfo/snippet",
+    "tags": "",
     "type": "text/vnd.tiddlywiki",
+    "text": "⌨️ Create snippet",
     "revision": "0",
-    "bag": "default",
-    "tags": ""
+    "bag": "default"
 },
 
 "$:/config/shortcuts/fullscreen": {
@@ -135,18 +138,18 @@
 },
 
 "$:/config/shortcuts/snippet": {
-    "text": "alt-S",
     "title": "$:/config/shortcuts/snippet",
+    "tags": "",
     "type": "text/vnd.tiddlywiki",
+    "text": "alt-S",
     "revision": "0",
-    "bag": "default",
-    "tags": ""
+    "bag": "default"
 },
 
 "$:/config/ShortcutInfo/home-page": {
-    "text": "⌨️ Close all tiddlers",
     "title": "$:/config/ShortcutInfo/home-page",
     "type": "text/vnd.tiddlywiki",
+    "text": "⌨️ Close all tiddlers",
     "revision": "0",
     "bag": "default"
 },
@@ -160,9 +163,9 @@
 },
 
 "$:/config/ShortcutInfo/get-plugins": {
-    "text": "⌨️ Jump to get-plugins",
     "title": "$:/config/ShortcutInfo/get-plugins",
     "type": "text/vnd.tiddlywiki",
+    "text": "⌨️ Jump to get-plugins",
     "revision": "0",
     "bag": "default"
 },
@@ -176,9 +179,9 @@
 },
 
 "$:/config/ShortcutInfo/search-filter": {
-    "text": "⌨️ Jump to search filter",
     "title": "$:/config/ShortcutInfo/search-filter",
     "type": "text/vnd.tiddlywiki",
+    "text": "⌨️ Jump to search filter",
     "revision": "0",
     "bag": "default"
 },
@@ -195,13 +198,13 @@
     "title": "oeyoews/shortcuts",
     "cpl.author": "oeyoews",
     "cpl.core-version": ">=5.2.2",
-    "cpl.description": "some shortcuts",
+    "cpl.description": "shortkeys",
     "cpl.documentation": "https://twms.vercel.app/",
-    "cpl.name": "Shortcuts",
+    "cpl.name": "neotw-surfingkey",
     "cpl.plugin-type": "plugin",
     "cpl.readme": "some shortcuts",
     "cpl.source": "https://twms.vercel.app/",
-    "cpl.title": "$:/plugins/oeyoews/shortcuts",
+    "cpl.title": "$:/plugins/oeyoews/neotw-shortkeys",
     "cpl.uri": "https://twms.vercel.app/index.html",
     "icon": "🏑",
     "page-cover": "https://images.unsplash.com/photo-1560762484-813fc97650a0?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8a2V5Ym9hcmR8ZW58MHx8MHx8&auto=format&fit=crop&w=500",
@@ -212,17 +215,17 @@
 },
 
 "$:/config/ShortcutInfo/newword": {
-    "text": "⌨️ Creat new word",
     "title": "$:/config/ShortcutInfo/newword",
     "type": "text/vnd.tiddlywiki",
+    "text": "⌨️ Creat new word",
     "revision": "0",
     "bag": "default"
 },
 
 "$:/config/ShortcutInfo/control": {
-    "text": "⌨️ Jump to Setting",
     "title": "$:/config/ShortcutInfo/control",
     "type": "text/vnd.tiddlywiki",
+    "text": "⌨️ Jump to Setting",
     "revision": "0",
     "bag": "default"
 },
