@@ -1,0 +1,12 @@
+created: 20220912145602169
+creator: oeyoews
+modified: 20220912145742506
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: neotw/style/save-button
+type: text/vnd.tiddlywiki
+
+html body.tc-dirty span.tc-dirty-indicator, html body.tc-dirty span.tc-dirty-indicator svg {
+    fill: #36c6ac;
+    color: #9b2626;
+}

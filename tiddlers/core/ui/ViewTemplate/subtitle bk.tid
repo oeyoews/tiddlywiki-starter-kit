@@ -1,26 +1,25 @@
 caption: Subtitle Template
-created: 20210611015734693
-creator: @oeyoews
-modified: 20220912161428557
+created: 20220912160733746
+creator: oeyoews
+modified: 20220912160739840
 modifier: oeyoews
-tags: $:/tags/ViewTemplate
-title: $:/core/ui/ViewTemplate/subtitle
+tags: 
+title: $:/core/ui/ViewTemplate/subtitle bk
 type: text/vnd.tiddlywiki
 
 \whitespace trim
+
 <$reveal type="nomatch" stateTitle=<<folded-state>> text="hide" tag="div" retain="yes" animate="yes">
 <div class="tc-subtitle">
 <$list filter="[!is[system]all[current]has[modifier]]">
 <<emoji arrowright>>
-<$link to={{!!modifier}}>
-<$view field="modifier"/>
-</$link>
+<$view field="modifier"/>&ensp;
 </$list>
 <$list filter="[all[current]has[created]]">
 <<emoji dot-status>>Created &nbsp;<$view field="created" format="date" template="YYYY/0MM/0DD"/> &ensp;
 </$list>
 <$list filter="[all[current]has[modified]]">
-<<emoji edit>>Updated &nbsp;<$view field="modified" format="date" template={{neotw/template/date-format}} />&ensp;
+<<emoji edit>>Updated &nbsp;<$view field="modified" format="date" template="YYYY/0MM/0DD 0hh:0mm" />&ensp;
 </$list>
 <$list filter="[all[current]has[description]]">
 <<emoji bingo>>{{!!description}}
