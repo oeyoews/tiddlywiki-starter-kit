@@ -1,0 +1,15 @@
+created: 20220913004915734
+creator: oeyoews
+modified: 20220913005002965
+modifier: oeyoews
+tags: 
+title: neotw/article/1 3
+type: text/vnd.tiddlywiki
+
+\define test()
+<$action-sendmessage $message="tm-modal" $param="neotw/mobile/warning-text" />
+\end
+
+<$button actions=<<test>>>
+hemode
+</$button>
