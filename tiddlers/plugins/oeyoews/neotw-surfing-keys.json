@@ -12,10 +12,12 @@
 
 "$:/plugins/oeyoews/neotw-surfing-keys/fullscreen": {
     "title": "$:/plugins/oeyoews/neotw-surfing-keys/fullscreen",
+    "created": "20220913003427919",
     "key": "((fullscreen))",
+    "modified": "20220913005451974",
     "tags": "$:/tags/KeyboardShortcut",
     "type": "text/vnd.tiddlywiki",
-    "text": "<$navigator story=\"$:/StoryList\" history=\"$:/HistoryList\">\n<$action-sendmessage $message=\"tm-full-screen\"/>\n</$navigator>",
+    "text": "<$action-sendmessage $message=\"tm-full-screen\"/>",
     "revision": "0",
     "bag": "default"
 },
@@ -27,6 +29,18 @@
     "tags": "$:/tags/KeyboardShortcut",
     "type": "text/vnd.tiddlywiki",
     "text": "<$navigator story=\"$:/StoryList\" history=\"$:/HistoryList\">\n  <$action-navigate $to=\"$:/core/ui/ControlPanel/Plugins\" $scroll=\"yes\"/>\n</$navigator>",
+    "revision": "0",
+    "bag": "default"
+},
+
+"$:/plugins/oeyoews/neotw-surfing-keys/help": {
+    "title": "$:/plugins/oeyoews/neotw-surfing-keys/help",
+    "created": "20220913005513985",
+    "key": "((help))",
+    "modified": "20220913011210202",
+    "tags": "$:/tags/KeyboardShortcut",
+    "type": "text/vnd.tiddlywiki",
+    "text": "<$action-sendmessage $message=\"tm-modal\" $param=\"$:/plugins/oeyoews/neotw-surfing-keys/keyboard-list\"/>",
     "revision": "0",
     "bag": "default"
 },
@@ -51,6 +65,18 @@
     "tags": "$:/tags/Image",
     "type": "text/vnd.tiddlywiki",
     "text": "<svg width=\"22pt\" height=\"22pt\" class=\"tc-image-bxi-bxs-keyboard tc-image-button\" viewBox=\"0 0 24 24\"><path d=\"M21,5H3C1.896,5,1,5.896,1,7v10c0,1.104,0.896,2,2,2h18c1.104,0,2-0.896,2-2V7C23,5.896,22.104,5,21,5z M13,7h2v2h-2V7z M13,11h2v2h-2V11z M9,7h2v2H9V7z M9,11h2v2H9V11z M5,7h2v2H5V7z M5,11h2v2H5V11z M17,17H7v-2h10V17z M19,13h-2v-2h2V13z M19,9h-2 V7h2V9z\"/></svg>",
+    "revision": "0",
+    "bag": "default"
+},
+
+"$:/plugins/oeyoews/neotw-surfing-keys/keyboard-list": {
+    "title": "$:/plugins/oeyoews/neotw-surfing-keys/keyboard-list",
+    "created": "20220913005710777",
+    "modified": "20220913011032767",
+    "subtitle": "neotw keyboard list",
+    "tags": "",
+    "type": "text/vnd.tiddlywiki",
+    "text": "{{$:/core/ui/ControlPanel/KeyboardShortcuts}}",
     "revision": "0",
     "bag": "default"
 },
@@ -94,12 +120,23 @@
 },
 
 "$:/plugins/oeyoews/neotw-surfing-keys/snippet": {
-    "text": "<$navigator story=\"$:/StoryList\" history=\"$:/HistoryList\">\n<$action-sendmessage\n\t$message=\"tm-new-tiddler\" title=\"neotw/snippet/\"\n\ttags=\"$:/tags/TextEditor/Snippet\"\n\tcaption={{$:/language/Buttons/Stamp/New/Title}}\n\ttext={{$:/language/Buttons/Stamp/New/Text}}\n/>\n</$navigator>",
     "title": "$:/plugins/oeyoews/neotw-surfing-keys/snippet",
     "caption": "snippet",
     "key": "((snippet))",
     "tags": "$:/tags/KeyboardShortcut",
     "type": "text/vnd.tiddlywiki",
+    "text": "<$navigator story=\"$:/StoryList\" history=\"$:/HistoryList\">\n<$action-sendmessage\n\t$message=\"tm-new-tiddler\" title=\"neotw/snippet/\"\n\ttags=\"$:/tags/TextEditor/Snippet\"\n\tcaption={{$:/language/Buttons/Stamp/New/Title}}\n\ttext={{$:/language/Buttons/Stamp/New/Text}}\n/>\n</$navigator>",
+    "revision": "0",
+    "bag": "default"
+},
+
+"$:/config/shortcuts/help": {
+    "title": "$:/config/shortcuts/help",
+    "created": "20220913005553888",
+    "modified": "20220913005614946",
+    "tags": "",
+    "type": "text/vnd.tiddlywiki",
+    "text": "alt-H",
     "revision": "0",
     "bag": "default"
 },
@@ -109,6 +146,17 @@
     "tags": "",
     "type": "text/vnd.tiddlywiki",
     "text": "⌨️ Create snippet",
+    "revision": "0",
+    "bag": "default"
+},
+
+"$:/config/ShortcutInfo/help": {
+    "title": "$:/config/ShortcutInfo/help",
+    "created": "20220913005637716",
+    "modified": "20220913005648125",
+    "tags": "",
+    "type": "text/vnd.tiddlywiki",
+    "text": "⌨️ neotw-help",
     "revision": "0",
     "bag": "default"
 },
