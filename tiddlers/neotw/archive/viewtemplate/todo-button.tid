@@ -1,10 +1,10 @@
 created: 20220910010319748
 creator: oeyoews
 list-before: $:/core/ui/ViewTemplate/body
-modified: 20220910013743750
+modified: 20220913075733325
 modifier: oeyoews
-tags: $:/tags/ViewTemplate
-title: neotw/viewtemplate/todo-button
+tags: 
+title: neotw/archive/viewtemplate/todo-button
 type: text/vnd.tiddlywiki
 
 <!-- this template implements the don/undone button on Task tiddlers -->
