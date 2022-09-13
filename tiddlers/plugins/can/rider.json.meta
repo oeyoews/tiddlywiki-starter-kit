@@ -1,0 +1,10 @@
+author: Chris Nicoll
+core-version: >=5.1.22
+dependents: 
+description: Editable transclusions
+list: readme license
+plugin-type: plugin
+source: https://github.com/clutterstack/can-tw/TW5-rider
+title: $:/plugins/can/rider
+type: application/json
+version: 0.0.2
