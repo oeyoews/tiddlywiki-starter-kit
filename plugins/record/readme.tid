@@ -3,9 +3,9 @@ creator: oeyoews
 modified: 20220915012214000
 modifier: oeyoews
 tags:
-title: readme
+title: $:/plugins/oeyoews/record/readme
 type: text/vnd.tiddlywiki
 
-! Record
+!! Record
 
 * test
