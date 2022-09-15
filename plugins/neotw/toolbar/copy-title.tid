@@ -1,9 +1,5 @@
 caption: Copy Tiddler Title
-created: 20220831023905573
-creator: oeyoews
 description: Copy the name of this tiddler to the clipboard
-modified: 20220904024358323
-modifier: oeyoews
 tags: $:/tags/ViewToolbar
 title: neotw/viewbar/copy-title
 type: text/vnd.tiddlywiki
