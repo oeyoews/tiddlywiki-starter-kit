@@ -39,16 +39,6 @@
             "port=8099",
             "anon-username=oeyoews"
         ],
-        "debug": [
-            "--rendertiddler",
-            "$:/core/save/offline-external-js",
-            "debug.html",
-            "text/plain",
-            "--render",
-            "$:/core/templates/tiddlywiki5.js",
-            "[[tiddlywikicore-]addsuffix<version>addsuffix[.js]]",
-            "text/plain"
-        ],
         "static": [
             "--rendertiddler",
             "$:/core/templates/static.template.html",
@@ -69,6 +59,16 @@
             "text/plain"
         ],
         "tiddlywikicore": [
+            "--render",
+            "$:/core/templates/tiddlywiki5.js",
+            "[[tiddlywikicore-]addsuffix<version>addsuffix[.js]]",
+            "text/plain"
+        ],
+        "debug": [
+            "--rendertiddler",
+            "$:/core/save/offline-external-js",
+            "debug.html",
+            "text/plain",
             "--render",
             "$:/core/templates/tiddlywiki5.js",
             "[[tiddlywikicore-]addsuffix<version>addsuffix[.js]]",
