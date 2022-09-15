@@ -24,6 +24,8 @@
     ],
     "build": {
         "index": [
+            "--output",
+            "dist",
             "--rendertiddler",
             "$:/plugins/tiddlywiki/tiddlyweb/save/offline",
             "index.html",
@@ -70,6 +72,8 @@
             "text/plain"
         ],
         "favicon": [
+            "--output",
+            "dist",
             "--savetiddler",
             "$:/favicon.ico",
             "favicon.ico"
