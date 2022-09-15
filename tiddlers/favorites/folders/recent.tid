@@ -1,9 +1,9 @@
 caption: Recently added
 created: 20220828022145583
 creator: oeyoews
-list: neotw/article/todo $:/core/ui/ViewTemplate/subtitle [[schedule sum]] $:/config/FileSystemPaths
+list: exam/timeline neotw/article/videos neotw/article/todo $:/core/ui/ViewTemplate/subtitle [[schedule sum]] $:/config/FileSystemPaths
 list-before: 
-modified: 20220912170525917
+modified: 20220914060238044
 modifier: oeyoews
 tags: $:/tags/Favorites/Folder
 title: $:/favorites/folders/recent
