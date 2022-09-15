@@ -1,5 +1,5 @@
 {
-    "description": "Basic client-server edition",
+    "description": "neotw edition",
     "plugins": [
         "tiddlywiki/tiddlyweb",
         "tiddlywiki/help",
