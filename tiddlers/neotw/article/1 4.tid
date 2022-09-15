@@ -1,0 +1,17 @@
+created: 20220915004857483
+creator: oeyoews
+modified: 20220915010959472
+modifier: oeyoews
+tags: 
+title: neotw/article/1 4
+type: text/vnd.tiddlywiki
+
+export TIDDLYWIKI_PLUGIN_PATH=$PWD/plugins
+
+* can be shared with others
+
+* <<url "https://www.youtube.com/watch?v=p-iTlVFLA-Y&list=PLuiC_HFhI4OxO7BAiKMp7psz9g0PBQBd-&index=12">>
+
+pack neotw plugin
+
+[ ] some style order not work
