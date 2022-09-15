@@ -1,0 +1,24 @@
+created: 20220915045231906
+creator: oeyoews
+modified: 20220915051105018
+modifier: oeyoews
+tags: 
+title: neotw/pluginlist
+type: text/vnd.tiddlywiki
+
+\define install(name)
+{{ $:/plugins/oeyoews/$name$||$:/core/ui/Components/plugin-info }}
+\end
+
+<!--
+<<install twm>>
+<<install tw-hitokoto>>
+<<install neotw>>
+-->
+
+<$vars
+    qualified-state=<<qualify "$:/state/plugin-info">>
+    pluginFilter="[plugin-type[plugin]prefix[$:/plugins/oeyoews/]] +[!has[draft.of]sort[]search:-text,*<userInput>]"
+    >
+<$list filter=<<pluginFilter>> emptyMessage=<<lingo "Empty/Hint">> template="$:/core/ui/Components/plugin-info"/>
+</$vars>
