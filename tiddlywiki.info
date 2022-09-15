@@ -36,17 +36,10 @@
             "index.html",
             "text/plain"
         ],
-        "favicon": [
-            "--output",
-            "dist",
-            "--savetiddler",
-            "$:/favicon.ico",
-            "favicon.ico"
-        ],
         "listen": [
             "--listen",
-            "root-tiddler=$:/core/save/all-external-js",
-            "use-browser-cache=yes"
+            "port=8099",
+            "anon-username=oeyoews"
         ],
         "debug": [
             "--rendertiddler",

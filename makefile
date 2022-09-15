@@ -26,7 +26,8 @@ endif
 run:
 	@echo "ℹ️  Your current OS is $(PLATFORM) \
 		🚀 startup $(PACKAGE)"
-	$(CMD) --listen port=$(PORT) anon-username=$(USER) 2>&1 &
+	# $(CMD) --listen port=$(PORT) anon-username=$(USER) 2>&1 &
+	$(CMD) --build listen 2>&1 &
 
 # startup to the world
 run-to-the-world:
