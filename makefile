@@ -37,7 +37,7 @@ run-to-the-world:
 build:
 	@make clean;
 	@mkdir public
-	@cp -r tiddlers/ tiddlywiki.info public/
+	@cp -r tiddlers/ plugins/ tiddlywiki.info public/
 	@cd public/; rm -rf \
 		tiddlers/subwiki \
 		tiddlers/trashbin \
@@ -49,6 +49,8 @@ build:
 	@cp -r src/vercel.json dist/; echo -e "🎉 `ls  -sh dist/index.html`" # patch
 
 # view
+view:
+	@google-chrome-stable dist/index.html
 bpview:
 	@make build; google-chrome-stable dist/index.html
 
