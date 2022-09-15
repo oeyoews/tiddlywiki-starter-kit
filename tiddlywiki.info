@@ -31,6 +31,13 @@
             "index.html",
             "text/plain"
         ],
+        "favicon": [
+            "--output",
+            "dist",
+            "--savetiddler",
+            "$:/favicon.ico",
+            "favicon.ico"
+        ],
         "listen": [
             "--listen",
             "root-tiddler=$:/core/save/all-external-js",
@@ -70,13 +77,6 @@
             "$:/core/templates/tiddlywiki5.js",
             "[[tiddlywikicore-]addsuffix<version>addsuffix[.js]]",
             "text/plain"
-        ],
-        "favicon": [
-            "--output",
-            "dist",
-            "--savetiddler",
-            "$:/favicon.ico",
-            "favicon.ico"
         ]
     },
     "config": {
