@@ -26,6 +26,11 @@
         "index": [
             "--output",
             "dist",
+            "--output",
+            "dist",
+            "--savetiddler",
+            "$:/favicon.ico",
+            "favicon.ico",
             "--rendertiddler",
             "$:/plugins/tiddlywiki/tiddlyweb/save/offline",
             "index.html",
