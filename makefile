@@ -1,11 +1,10 @@
 # options
-ENABLESTATIC = true
+ENABLESTATIC = false
 PACKAGE = "TiddlyWiki5"
 PKGNAME = "neotw"
 CMD = @tiddlywiki
-OUTPUTDIR = public
+NEOTWTEMP = neotw-temp
 PORT = 8099
-USERNAME = $(USER)
 HOST = "0.0.0.0"
 SERVICECMD = "systemctl"
 SERVICETEMPLATEFILE = "src/neotw-template.service"
@@ -13,6 +12,8 @@ SERVICEFILE = "neotw-user.service"
 SERVICETARGETFILE = "$(HOME)/.config/systemd/user/$(SERVICEFILE)"
 NEOTWBIN = "$(HOME)/.local/bin/$(PKGNAME)"
 neotwdir-user= "$(PWD)"
+repo-plateform = gitlab
+subwiki-address = https://$(repo-plateform).com/$(USER)/subwiki.git
 
 # adjust os, just test on linux
 ifeq ($(shell uname),Linux)
@@ -25,7 +26,7 @@ endif
 run:
 	@echo "ℹ️  Your current OS is $(PLATFORM) \
 		🚀 startup $(PACKAGE)"
-	$(CMD) --listen port=$(PORT) anon-username=$(USERNAME) 2>&1 &
+	$(CMD) --listen port=$(PORT) anon-username=$(USER) 2>&1 &
 
 # startup to the world
 run-to-the-world:
@@ -36,23 +37,29 @@ run-to-the-world:
 # note: because use make, so can't read this `tiddlywiki` cmd from current project, recommend install tiddlywiki global, likw `yarn global add tiddlywiki`
 build:
 	@make clean;
-	@mkdir public
-	@cp -r tiddlers/ plugins/ tiddlywiki.info public/
-	@cd public/; rm -rf \
-		tiddlers/subwiki \
-		tiddlers/trashbin \
-	 	tiddlers/\$$__StoryLis*.tid
-	$(CMD) public --build index >> /tmp/neotw.log 2>&1  # build
+	@mkdir $(NEOTWTEMP)
+	@cp -r tiddlers/ plugins/ tiddlywiki.info $(NEOTWTEMP)
+# if error how to exit
+	@rm -rf $(NEOTWTEMP)/tiddlers/subwiki \
+		$(NEOTWTEMP)/tiddlers/trashbin \
+	 	$(NEOTWTEMP)/tiddlers/\$$__StoryLis*.tid
+	$(CMD) $(NEOTWTEMP) --build index >> /tmp/neotw.log 2>&1  # build
 # $(CMD) public --build favicon >> /tmp/neotw.log 2>&1  # favicon
 # $(CMD) public --output dist/ --build debug >> /tmp/neotw.log 2>&1  # build
 # $(CMD) public --output dist/ --build static >> /tmp/neotw.log 2>&1  # static giscus and commpand palette widget have a error
 	@cp -r src/vercel.json dist/; echo -e "🎉 `ls  -sh dist/index.html`" # patch
+	@make clean;
 
 # view
 view:
 	@google-chrome-stable dist/index.html
+
+# bpview
 bpview:
 	@make build; google-chrome-stable dist/index.html
+
+install-subwiki:
+	@git clone --depth 1 $(subwiki-address) tiddlers/subwiki
 
 # install service
 install:
@@ -109,4 +116,4 @@ uninstall-service:
 # clean
 .PHONY: clean
 clean:
-	@rm -rf $(OUTPUTDIR) output dist
+	@rm -rf $(NEOTWTEMP)
