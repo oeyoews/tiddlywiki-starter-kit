@@ -1,0 +1,22 @@
+created: 20220916135750955
+creator: oeyoews
+modified: 20220916135810294
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: neotw/article/1 4
+type: text/vnd.tiddlywiki
+
+.mail-status.unread {
+    display: inline-block;
+    position: absolute;
+    top: -4px;
+    left: 6px;
+    z-index: 2;
+    width: 14px;
+    height: 14px;
+    color: #fff;
+    background-image: linear-gradient(#0076ff, #006eed);
+    background-clip: padding-box;
+    border: 2px solid hsl(215, 21.4%, 11%);
+    border-radius: 50%;
+}

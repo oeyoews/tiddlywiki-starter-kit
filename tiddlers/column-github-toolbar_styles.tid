@@ -1,0 +1,657 @@
+tags: $:/tags/Stylesheet
+title: column-github-toolbar/styles
+type: text/vnd.tiddlywiki
+
+.btc-top-github-header {
+	display: flex;
+	padding: 16px;
+	padding-right: {{$:/config/github-toptoolbar/padding-right}};
+	padding-left: {{$:/config/github-toptoolbar/padding-left}};
+	line-height: 1.5;
+	color: hwb(0 100% 0% / 0.7);
+	background-color: hsl(215, 21.4%, 11%);
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+@media (max-width: 800px) {
+	.btc-top-github-header {
+		flex-wrap: wrap;
+	}
+}
+
+.btc-top-github-header-item {
+	display: flex;
+	align-self: stretch;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+.btc-top-github-header-item.btc-top-github-header-item-notification {
+	position: relative;
+}
+
+.btc-top-github-header-item:not(:last-of-type) {
+	margin-right: 16px;
+}
+
+.btc-top-github-header-item.btc-top-github-header-item-icon {
+	margin-top: -4px;
+	margin-bottom: -4px;
+}
+
+.btc-top-github-header-item.btc-top-github-header-item-icon svg {
+	fill: hsl(210, 66.7%, 96.5%);
+}
+
+.btc-top-github-header-item.btc-top-github-header-item-system-hamburger svg, .btc-top-github-header-item.btc-top-github-header-item-user-hamburger svg {
+	fill: hsl(210, 66.7%, 96.5%);
+}
+
+.btc-top-github-header-item.btc-top-github-header-item-system-hamburger:hover svg, .btc-top-github-header-item.btc-top-github-header-item-user-hamburger:hover svg {
+	fill: hwb(0 100% 0% / 0.7);
+}
+
+.btc-top-github-header-item.btc-top-github-header-item-full {
+	flex: auto;
+	width: 100%;
+}
+
+.btc-top-github-header-item .header-search {
+	max-width: 272px;
+	transition: .2s ease-in-out;
+	transition-property: max-width,padding-bottom,padding-top;
+	margin-right: 16px;
+	align-self: auto;
+	flex: auto;
+}
+
+
+.btc-top-github-header-item .header-search .tc-sidebar-search > p {
+	margin: 0;
+}
+
+.btc-top-github-header-item .header-search:focus-within {
+	max-width: 544px;
+}
+
+.btc-top-github-header-item .header-search .tc-sidebar-search {
+	width: 100%;
+}
+
+.btc-top-github-header-item .header-search .tc-sidebar-search input {
+	width: 100%;
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(216, 27.8%, 7.1%);
+	border: 1px solid hsl(212.3, 11.9%, 21.4%);
+	border-radius: 6px;
+	padding-left: 12px;
+	padding-right: 12px;
+	line-height: 20px;
+	min-height: 28px;
+	outline: none;
+}
+
+.btc-top-github-header-item .header-search .tc-sidebar-search input:focus, .btc-top-github-header-item .header-search:focus-within .tc-sidebar-search input {
+	background-color: hsl(215, 21.4%, 11%);
+	border-radius: 6px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border-bottom: 0;
+}
+
+.btc-top-github-header-item .header-search .tc-sidebar-search .tc-search + .tc-block-dropdown-wrapper .tc-block-dropdown {
+	max-width: 272px;
+	width: 100%;
+	transition: .2s ease-in-out;
+	transition-property: width,max-width,padding-bottom,padding-top;
+	margin-left: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	box-shadow: 0 4px 10px rgba(0,0,0,.1);
+	background-color: hsl(215, 21.4%, 11%);
+	margin-top: 4px;
+	padding: 0;
+	text-align: left;
+	border: 1px solid hsl(212.3, 11.9%, 21.4%);
+	min-width: inherit;
+}
+
+.btc-top-github-header-item .header-search:focus-within .tc-sidebar-search .tc-search + .tc-block-dropdown-wrapper .tc-block-dropdown {
+	max-width: 544px;
+	width: 100%;
+	transition: .2s ease-in-out;
+	transition-property: width,max-width,padding-bottom,padding-top;
+	background-color: hsl(215, 21.4%, 11%);
+}
+
+.btc-top-github-header-item .header-search .tc-sidebar-search .tc-search + .tc-block-dropdown-wrapper .tc-block-dropdown > p {
+	margin: 0;
+}
+
+.btc-top-github-header-item .header-search .tc-sidebar-search .tc-search + .tc-block-dropdown-wrapper .tc-block-dropdown > p > div {
+	line-height: 50px;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.btc-top-github-header-item .header-search .tc-sidebar-search .tc-search + .tc-block-dropdown-wrapper .tc-block-dropdown a {
+	display: flex;
+}
+
+.btc-top-github-header-item .header-search .tc-sidebar-search .tc-search + .tc-block-dropdown-wrapper .tc-block-dropdown svg {
+	fill: hsl(211.6, 8.9%, 58.2%);
+}
+
+.btc-top-github-header-item .header-search .tc-sidebar-search .tc-search + .tc-block-dropdown-wrapper .tc-block-dropdown a:hover svg, .btc-top-github-header-item .header-search .tc-sidebar-search .tc-search + .tc-block-dropdown-wrapper .tc-block-dropdown .tc-list-item-selected a svg {
+	fill: hsl(210, 66.7%, 96.5%);
+}
+
+.btc-top-github-header-item .header-search .tc-sidebar-search .tc-search + .tc-block-dropdown-wrapper .tc-block-dropdown .tc-list-item-selected a, .btc-top-github-header-item .header-search .tc-sidebar-search .tc-search + .tc-block-dropdown-wrapper .tc-block-dropdown a:hover  {
+	background-color: hsl(216.5, 83.6%, 52.2%);
+	color: hsl(0, 0%, 100%);
+}
+
+.btc-top-github-header-item .header-search .tc-sidebar-search .tc-search + .tc-block-dropdown-wrapper .tc-block-dropdown div:not(:last-of-type) a {
+	border-bottom: 1px solid hsl(212.3, 11.9%, 21.4%);
+}
+
+.btc-top-github-header-item .header-search .tc-sidebar-search .tc-search + .tc-block-dropdown-wrapper .tc-block-dropdown a .btc-tiddler-svg {
+	display: table-cell;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.btc-top-github-header-item .header-search .tc-sidebar-search .tc-search + .tc-block-dropdown-wrapper .tc-block-dropdown a .btc-tiddler-title {
+	flex: auto;
+	width: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: hsl(210, 17.4%, 82%);
+}
+
+.btc-top-github-header-item .header-search .tc-sidebar-search .tc-search + .tc-block-dropdown-wrapper .tc-block-dropdown a .btc-tiddler-jump-to {
+	display: none;
+	vertical-align: middle;
+}
+
+.btc-top-github-header-item .header-search .tc-sidebar-search .tc-search + .tc-block-dropdown-wrapper .tc-block-dropdown .tc-list-item-selected a .btc-tiddler-jump-to {
+	display: table-cell;
+}
+
+.btc-top-github-header-item .header-search .tc-sidebar-search .tc-search + .tc-block-dropdown-wrapper .tc-block-dropdown a .btc-tiddler-jump-to kbd {
+	background-color: hsl(215, 21.4%, 11%);
+	font-size: 12px;
+	box-shadow: none;
+	color: hsl(211.6, 8.9%, 58.2%);
+	border: 1px solid hsl(212.3, 11.9%, 21.4%);
+	border-radius: 6px;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+}
+
+.btc-top-github-header-item .btc-top-github-header-item-nav button.tc-btn-invisible {
+	font-weight: 600;
+	margin-right: 16px;
+	color: hsl(210, 66.7%, 96.5%);
+	white-space: nowrap;
+}
+
+.btc-top-github-header-item .btc-top-github-header-item-nav:hover button.tc-btn-invisible {
+	color: hwb(0 100% 0% / 0.7);
+}
+
+.btc-top-github-header-item.btc-top-github-header-item-new button.tc-btn-invisible, 
+.btc-top-github-header-item.btc-top-github-header-item-avatar button.tc-btn-invisible, .btc-top-github-header-item.btc-top-github-header-item-notification button.tc-btn-invisible {
+	display: flex;
+	color: hsl(210, 66.7%, 96.5%);
+}
+
+.btc-top-github-header-item.btc-top-github-header-item-new button.tc-btn-invisible svg, .btc-top-github-header-item.btc-top-github-header-item-notification button.tc-btn-invisible svg {
+	font-weight: 600;
+	fill: hsl(210, 66.7%, 96.5%);
+}
+
+.dropdown-caret {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	vertical-align: middle;
+	content: "";
+	border-style: solid;
+	border-width: 4px 4px 0;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	border-left-color: transparent;
+}
+
+.dropdown-caret-wrapper {
+	margin-left: 3px;
+}
+
+.btc-top-github-header-item-avatar .dropdown-caret-wrapper {
+margin-left: 5px;
+margin-top: 1px;
+}
+
+.dropdown-menu {
+	margin-top: 10px;
+	width: 160px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	list-style: none;
+	background-color: hsl(215, 21.4%, 11%);
+	background-clip: padding-box;
+	border: 1px solid hsl(212.3, 11.9%, 21.4%);
+	border-radius: 6px;
+	box-shadow: 0 8px 24px #010409;
+	text-align: left;
+}
+
+.dropdown-menu-sw::before {
+	top: -16px;
+	right: 9px;
+	left: auto;
+}
+.dropdown-menu::before {
+	border: 8px solid transparent;
+	border-bottom-color: transparent;
+	border-bottom-color: hsl(212.3, 11.9%, 21.4%);
+}
+.dropdown-menu::before, .dropdown-menu::after {
+	position: absolute;
+	display: inline-block;
+	content: " ";
+}
+
+.dropdown-menu-sw::after {
+	top: -14px;
+	right: 10px;
+	left: auto;
+}
+.dropdown-menu::after {
+	border: 7px solid transparent;
+	border-bottom-color: transparent;
+	border-bottom-color: hsl(215, 21.4%, 11%);
+}
+
+.btc-dropdown-menu-item {
+	display: block;
+	padding: 4px 8px 4px 16px;
+	overflow: hidden;
+	color: hsl(210, 17.4%, 82%);
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	text-decoration: none;
+}
+
+.btc-dropdown-menu-section > a {
+	text-decoration: none;
+	font-weight: 400;
+	line-height: 1.2;
+}
+
+.avatar {
+	display: inline-block;
+	overflow: hidden;
+	line-height: 1;
+	vertical-align: middle;
+	background-color: rgba(255,255,255,0.1);
+	border-radius: 50%;
+	flex-shrink: 0;
+	box-shadow: 0 0 0 1px rgba(240,246,252,0.1);
+	width: 20px;
+	height: 20px;
+}
+
+.avatar img {
+	width: 20px;
+	height: 20px;
+	aspect-ratio: 1 / 1;
+}
+
+.btc-top-github-header-item .btc-panel-show, .btc-top-github-header-item .btc-user-panel-show {
+	position: relative;
+}
+
+.mail-status.unread {
+	display: inline-block;
+	position: absolute;
+	top: -4px;
+	left: 6px;
+	z-index: 2;
+	width: 14px;
+	height: 14px;
+	color: #fff;
+	background-image: linear-gradient(#54a3ff, #006eed);
+	background-clip: padding-box;
+	border: 2px solid hsl(215, 21.4%, 11%);
+	border-radius: 50%;
+}
+
+.btc-dropdown-menu-item.btc-dropdown-menu-item-import {
+	line-height: 1em;
+}
+
+.btc-dropdown-menu-item button.tc-btn-invisible {
+	font-weight: 400;
+	width: 100%;
+}
+
+.btc-dropdown-menu-item .tc-file-input-wrapper {
+	width: 100%;
+}
+
+.dropdown-menu .btc-dropdown-menu-item:hover {
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(216.5, 83.6%, 52.2%);
+	text-decoration: none;
+}
+
+.btc-top-github-header-item.btc-top-github-header-item-notification:hover > button.tc-btn-invisible, .btc-top-github-header-item.btc-top-github-header-item-new:hover > button.tc-btn-invisible, .btc-top-github-header-item.btc-top-github-header-item-avatar:hover > button.tc-btn-invisible {
+	color: hwb(0 100% 0% / 0.7);
+}
+
+.btc-top-github-header-item.btc-top-github-header-item-notification:hover > button.tc-btn-invisible svg, .btc-top-github-header-item.btc-top-github-header-item-new:hover > button.tc-btn-invisible svg {
+	fill: hwb(0 100% 0% / 0.7);
+}
+
+.btc-dropdown-menu-section-user {
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	font-weight: 400;
+}
+
+.btc-dropdown-menu-section-user button.tc-btn-invisible {
+	font-weight: 600;
+	width: 100%;
+}
+
+.dropdown-divider {
+	display: block;
+	height: 0;
+	margin: 8px 0;
+	border-top: 1px solid hsl(212.3, 11.9%, 21.4%);
+}
+
+@media (min-width: 800px) {
+
+.btc-top-github-header-item-hamburger {
+	display: none;
+}
+
+}
+
+@media (max-width: 800px) {
+
+.btc-top-github-header {
+	padding-right: 16px;
+	padding-left: 16px;
+}
+
+.btc-top-github-header-item-hamburger svg {
+	fill: hsl(210, 66.7%, 96.5%);
+}
+
+.btc-top-github-header-item-hamburger:hover svg {
+	fill: hwb(0 100% 0% / 0.7);
+}
+
+.btc-top-github-header-item-full, .btc-top-github-header-item-new, .btc-top-github-header-item-avatar {
+	display: none;
+}
+
+<$list filter="[[$:/config/panel/position]get[text]match[right]]" variable="ignore">
+
+.btc-top-github-header-item.btc-top-github-header-item-system-hamburger {
+	margin-right: 0;
+}
+
+</$list>
+
+<$list filter="[[$:/config/panel/position]get[text]match[left]]" variable="ignore">
+
+.btc-top-github-header-item.btc-top-github-header-item-user-hamburger {
+	margin-right: 0;
+}
+
+</$list>
+
+.btc-top-github-header-item-icon {
+	flex: auto;
+	justify-content: center;
+}
+
+}
+
+.btc-user-panel-avatar {
+	position: relative;
+	max-width: 296px;
+	max-height: 296px;
+}
+
+.btc-user-panel-avatar img {
+	width: 100%;
+	height: auto;
+	max-width: 296px;
+	max-height: 296px;
+	border-radius: 50%;
+	aspect-ratio: 1 / 1;
+}
+
+.user-status-circle-badge-container {
+	position: absolute;
+	bottom: 0;
+	left: 100%;
+	z-index: 2;
+	width: 38px;
+	height: 38px;
+	margin-bottom: 32px;
+	margin-left: -40px;
+	font-size: 14px;
+}
+
+.user-status-circle-badge {
+	display: inline-block;
+	line-height: 1;
+	padding: 8px;
+	background-color: hsl(216, 27.8%, 7.1%);
+	border: 1px solid hsl(212.3, 11.9%, 21.4%);
+	border-radius: 2em;
+	box-shadow: 0 3px 6px #010409;
+	width: 100%;
+	height: 100%;
+}
+
+.user-status-circle-badge-flex {
+	display: flex;
+	align-items: stretch;
+}
+
+.user-status-circle-badge-icon {
+	display: inline-flex;
+	line-height: 1.25;
+	border-radius: 50%;
+	font-size: 12px;
+}
+
+.user-status-circle-badge summary {
+	list-style: none;
+}
+
+.user-status-circle-badge-container .user-status-message-wrapper {
+	width: 0;
+	padding-top: 0;
+	overflow: hidden;
+	line-height: 20px;
+	opacity: 0;
+	transition: .1s ease;
+	white-space: normal;
+	font-size: 12px;
+	min-width: 0;
+	max-width: 100%;
+}
+
+.user-status-circle-badge:hover {
+	width: auto;
+}
+
+.user-status-circle-badge:hover .user-status-message-wrapper {
+	width: 100%;
+	opacity: 1;
+}
+
+.user-status-circle-badge-truncate {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.btc-user-panel-username-edit-button, .btc-user-panel-avatar-edit-button {
+	display: none;
+}
+
+.btc-user-panel-username:hover .btc-user-panel-username-edit-button {
+	display: inline-block;
+	position: relative;
+	font-size: 0.5em;
+	top: -15px;
+	left: -5px;
+}
+
+.btc-user-panel-avatar:hover .btc-user-panel-avatar-edit-button {
+	display: inline-block;
+	position: relative;
+	top: -75px;
+	left: 250px;
+}
+
+.btc-top-github-header-nav {
+	display: flex;
+	align-self: auto;
+	flex-direction: row;
+}
+
+.btc-top-github-header-item-nav-display {
+	display: none;
+}
+
+@media (max-width: 800px) {
+
+	.btc-top-github-header-item-nav-display {
+		display: block;
+	}
+
+	.btc-top-github-header-item.btc-top-github-header-item-notification {
+		order: 1;
+	}
+
+	.btc-top-github-header-item.btc-top-github-header-item-icon {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.mail-status.unread {
+		top: -2px;
+	}
+
+	<$list filter="[[$:/config/panel/position]get[text]match[right]]" variable="ignore" emptyMessage="""
+
+		.btc-top-github-header-item.btc-top-github-header-item-user-hamburger {
+			order: 1;
+		}
+
+	""">
+
+		.btc-top-github-header-item.btc-top-github-header-item-system-hamburger {
+			order: 1;
+		}
+
+	</$list>
+}
+
+<$list filter="[[$:/state/github-toolbar]get[text]match[yes]]" variable="ignore">
+
+	@media (max-width: 800px) {
+
+		.btc-column-container.btc-top-toolbar > .btc-top-github-header {
+			max-height: inherit;
+		}
+
+		.btc-top-github-header-item.btc-top-github-header-item-full {
+			display: flex;
+			order: 2;
+			margin-top: 16px;
+			width: 100%;
+			margin-right: 0;
+			flex-direction: column;
+			text-align: start;
+		}
+
+		.btc-top-github-header-item .header-search {
+			max-width: 100%;
+			margin-bottom: 16px;
+			align-self: stretch;
+			margin-right: 0;
+		}
+
+		.btc-top-github-header-item .header-search:focus-within {
+			max-width: 100%;
+		}
+
+		.btc-top-github-header-item .header-search .tc-sidebar-search .tc-search + .tc-block-dropdown-wrapper .tc-block-dropdown {
+			max-width: 100%;
+		}
+
+		.btc-top-github-header-item .header-search:focus-within .tc-sidebar-search .tc-search + .tc-block-dropdown-wrapper .tc-block-dropdown {
+			max-width: 100%;
+			background-color: hsl(216, 27.8%, 7.1%);
+		}
+
+		.btc-top-github-header-nav {
+			align-self: stretch;
+			flex-direction: column;
+		}
+
+		.btc-top-github-header-item-nav {
+			border-top: 1px solid hsl(212.3, 11.9%, 21.4%);
+		}
+
+		.btc-top-github-header-nav .btc-top-github-header-item-nav > button.tc-btn-invisible {
+			padding-top: 8px;
+			padding-bottom: 8px;
+			line-height: 1.5;
+		}
+
+		.btc-top-github-header-item .btc-top-github-header-item-nav button.tc-btn-invisible, .btc-top-github-header-item .btc-top-github-header-nav > button.tc-btn-invisible {
+			height: 100%;
+			width: 100%;
+			text-align: start;
+		}
+
+		.avatar {
+			vertical-align: sub;
+		}
+
+		.btc-top-github-header-nav .btc-top-github-header-item-nav > button.tc-btn-invisible > svg {
+			font-size: 1.5em;
+			fill: hsl(210, 66.7%, 96.5%);
+		}
+
+
+		.btc-top-github-header-nav .btc-top-github-header-item-nav:hover > button.tc-btn-invisible > svg {
+			fill: hwb(0 100% 0% / 0.7);
+		}
+
+		body.tc-dirty .btc-top-github-header-nav .btc-top-github-header-item-nav > button.tc-btn-invisible > svg {
+			fill: <<colour dirty-indicator>>;
+		}
+	}
+
+</$list>
