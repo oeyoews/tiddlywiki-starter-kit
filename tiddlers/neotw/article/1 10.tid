@@ -1,12 +1,14 @@
 created: 20220917150251326
 creator: oeyoews
-modified: 20220917150322456
+modified: 20220917171716739
 modifier: oeyoews
-tags: 
+tags: $:/tags/Stylesheet
 title: neotw/article/1 10
 type: text/vnd.tiddlywiki
 
 .tc-tiddler-frame {
-max-width: 600px;
-margin: auto;
+min-width: 600px;
+max-width: 50vw;
+margin-left: auto;
+margin-right: auto;
 }
