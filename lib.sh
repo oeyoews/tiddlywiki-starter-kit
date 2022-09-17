@@ -9,4 +9,4 @@ cp plugins/* node_modules/tiddlywiki/plugins/oeyoews -r
 cp src/library-template node_modules/tiddlywiki/ -r
 
 cd node_modules/tiddlywiki
-node ./tiddlywiki.js library-template/ --output ../../dist/library --build library
+node ./tiddlywiki.js library-template/ --output ../../library --build library
