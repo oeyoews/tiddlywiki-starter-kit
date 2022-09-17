@@ -1,0 +1,12 @@
+caption: {{$:/language/OfficialPluginLibrary}}
+created: 20220917080744450
+creator: oeyoews
+enabled: yes
+modified: 20220917080818919
+modifier: oeyoews
+tags: $:/tags/PluginLibrary
+title: test lib
+type: text/vnd.tiddlywiki
+url: https://github.com/oeyoews/neotw/blob/main/editions/pluginlibrary/lib/index.html
+
+The official plugin library is disabled when using the client-server configuration. Instead, plugins should be installed via the `tiddlywiki.info` file, as described [[here|https://tiddlywiki.com/#Installing%20a%20plugin%20from%20the%20plugin%20library]].
