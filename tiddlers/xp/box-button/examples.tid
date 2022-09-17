@@ -1,0 +1,27 @@
+caption: See examples
+title: $:/xp/box-button/examples
+type: text/vnd.tiddlywiki
+
+\define boxExample(color)
+<div class="$color$-box">
+
+''$color$-box''
+
+起来，饥寒交迫的奴隶！起来，全世界受苦的人！满腔的热血已经沸腾，要为真理而斗争！
+
+</div>
+\end
+
+<<boxExample blue>>
+
+<<boxExample gray>>
+
+<<boxExample green>>
+
+<<boxExample pink>>
+
+<<boxExample purple>>
+
+<<boxExample red>>
+
+<<boxExample yellow>>

@@ -1,0 +1,9 @@
+caption: {{$:/language/Buttons/box/Caption}}
+condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]]
+description: {{$:/language/Buttons/box/Hint}}
+dropdown: $:/xp/ui/EditorToolbar/box-dropdown
+icon: $:/xp/images/box
+shortcuts: ((box))
+tags: $:/tags/EditorToolbar
+title: $:/xp/ui/EditorToolbar/box
+type: text/vnd.tiddlywiki

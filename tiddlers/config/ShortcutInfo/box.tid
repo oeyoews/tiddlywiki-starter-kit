@@ -1,0 +1,4 @@
+title: $:/config/ShortcutInfo/box
+type: text/vnd.tiddlywiki
+
+{{$:/language/Buttons/box/Hint}}

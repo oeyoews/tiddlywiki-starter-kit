@@ -1,0 +1,22 @@
+caption: purple
+condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]]
+tags: $:/tags/TextEditor/Boxes
+title: $:/language/boxes/purple
+type: text/vnd.tiddlywiki
+
+<$button tag="a" tooltip="Purple">
+
+<$action-sendmessage
+	$message="tm-edit-text-operation"
+	$param="wrap-selection"
+	prefix="""<div class="purple-box">
+
+"""
+	suffix="
+
+</div>"
+/>
+
+<span style="display:inline-block; background-color: rgba(243, 236, 253, 1); width: 100%; height: 100%; border-radius: 3px;"/>
+
+</$button>

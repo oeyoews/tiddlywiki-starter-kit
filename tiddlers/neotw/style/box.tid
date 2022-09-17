@@ -1,0 +1,54 @@
+created: 20220917043744483
+creator: oeyoews
+modified: 20220917043937875
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: neotw/style/box
+type: text/vnd.tiddlywiki
+
+/* Light theme */
+
+.blue-box {
+    background-color: rgba(135, 206, 250, 0.13);
+}
+
+.gray-box {
+    background-color: rgba(238, 238, 238, 0.8);
+}
+
+.green-box {
+    background-color: rgb(230, 238, 224, 0.8);
+}
+
+.pink-box {
+    background-color: rgba(255, 192, 203, 0.23);
+}
+
+.purple-box {
+    background-color: rgba(243, 236, 253, 1);
+}
+
+.yellow-box {
+    background-color: rgba(251, 241, 218, 0.618);
+}
+
+.blue-box,
+.gray-box,
+.green-box,
+.pink-box,
+.purple-box,
+.red-box,
+.yellow-box {
+    padding: 8px 8px 4px 20px;
+    margin-top: 5px;
+    margin-bottom: 1em;
+    width: 95%;
+    color: #000;
+    border-radius: 3px;
+}
+
+.red-box {
+    background-color: #fff5f7;
+    border: 1px solid #ff3860;
+    color: #cd0930;
+}

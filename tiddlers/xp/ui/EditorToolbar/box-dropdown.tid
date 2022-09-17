@@ -1,0 +1,13 @@
+title: $:/xp/ui/EditorToolbar/box-dropdown
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+<div class="tc-colour-chooser">
+<$list filter="[all[shadows+tiddlers]tag[$:/tags/TextEditor/Boxes]!has[draft.of]sort[caption]]">
+<$transclude mode="inline"/><i style='margin-left:1px;'/>
+</$list>
+</div>
+
+<div class="tc-sidebar-lists">
+[[See examples|$:/xp/box-button/examples]]
+</div>
