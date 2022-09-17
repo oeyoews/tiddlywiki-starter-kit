@@ -13,11 +13,11 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          cache: npm
+          cache: yarn
           node-version: "16"
 
       - name: Install Dependency
-        run: npm install
+        run: yarn global add tiddlywiki
       - name: Build
         run: make build
 
