@@ -1,0 +1,10 @@
+{
+    "version": "0.0.1",
+    "type": "application/json",
+    "title": "$:/plugins/oeyoews/neotw-snippet",
+    "plugin-type": "plugin",
+    "name": "snippet",
+    "description": "neotw-snippet",
+    "author": "oeyoews",
+    "list": "readme"
+}

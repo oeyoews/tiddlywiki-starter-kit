@@ -1,9 +1,9 @@
 created: 20220911170044403
 creator: oeyoews
-modified: 20220911171249615
+modified: 20220917035652021
 modifier: oeyoews
 tags: 
-title: neotw/action/gatha-online
+title: neotw/archive/action/gatha-online
 type: text/vnd.tiddlywiki
 
 <$list filter="[{$:/info/url/protocol}prefix[https]]">
