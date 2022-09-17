@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-tiddlywiki@^5.2.3:
+tiddlywiki@5.2.3:
   version "5.2.3"
   resolved "https://registry.npmmirror.com/tiddlywiki/-/tiddlywiki-5.2.3.tgz#25dd71bc1eb11cfaa1a4398d5d884fb7c7ce85a5"
   integrity sha512-kf09XBI0bswr27pM6WBj/Vek4ATle83HwAtg8rPqJ8cjcC2/xX2SLEamiT8q4AAexjDDlQA05IlcPhhGtF0j6A==
