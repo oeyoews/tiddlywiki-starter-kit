@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="application-name" content="TiddlyWiki Plugin Library" />
+<meta name="application-version" content="v0.0.0" />
+<meta name="copyright" content="Copyright 2015 Jeremy Ruston" />
+<link id="faviconLink" rel="shortcut icon" href="favicon.ico">
+<title>Plugin Library</title>
+<script>
+var assetList = [
+    {
+        "version": "0.0.1",
+        "type": "application/json",
+        "title": "$:/plugins/oeyoews/foo",
+        "plugin-type": "plugin",
+        "name": "foo",
+        "description": "foo",
+        "author": "oeyoews",
+        "list": "readme",
+        "dependents": "",
+        "readme": "* this is a nodejs plugin templates\n",
+        "requires-reload": "no",
+        "icon": "data:text/vnd.tiddlywiki,%3Csvg%20width%3D%2222pt%22%20height%3D%2222pt%22%20viewBox%3D%220%200%20128%20128%22%0Aclass%3D%22tc-image-plugin-generic-plugin%20tc-image-button%22%20fill%3D%22%23FF7F87%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20d%3D%22M40.397%2076.446V95.34h14.12l-.001-.005a6.912%206.912%200%20005.364-11.593l.046-.023a6.912%206.912%200%20119.979.526l.086.055a6.914%206.914%200%20004.408%2010.948l-.023.092h21.32V75.568l-.15.038a6.912%206.912%200%2000-11.593-5.364l-.022-.046a6.912%206.912%200%2011.526-9.979l.055-.086a6.914%206.914%200%200010.948-4.408c.079.018.158.038.236.059v-15.74h-21.32l.023-.094a6.914%206.914%200%2001-4.408-10.947%2010.23%2010.23%200%2000-.086-.055%206.912%206.912%200%2010-9.979-.526l-.046.023a6.912%206.912%200%2001-5.364%2011.593l.001.005h-14.12v12.847A6.912%206.912%200%200129.5%2059.843l-.054.086a6.912%206.912%200%2010-.526%209.979l.023.046a6.912%206.912%200%200111.455%206.492zM64%200l54.56%2032v64L64%20128%209.44%2096V32L64%200z%22%2F%3E%3C%2Fsvg%3E%0A"
+    }
+];
+
+/*\
+title: $:/plugins/tiddlywiki/pluginlibrary/libraryserver.js
+type: application/javascript
+module-type: library
+
+A simple HTTP-over-window.postMessage implementation of a standard TiddlyWeb-compatible server. It uses real HTTP to load the individual tiddler JSON files.
+
+\*/
+(function(){
+
+/*jslint node: true, browser: true */
+/*global $tw: false */
+"use strict";
+
+// Listen for window messages
+window.addEventListener("message",function listener(event){
+	console.log("plugin library: Received message from",event.origin);
+	console.log("plugin library: Message content",event.data);
+	switch(event.data.verb) {
+		case "GET":
+			if(event.data.url === "recipes/library/tiddlers.json") {
+				// Route for recipes/library/tiddlers.json
+				event.source.postMessage({
+					verb: "GET-RESPONSE",
+					status: "200",
+					cookies: event.data.cookies,
+					url: event.data.url,
+					type: "application/json",
+					body: JSON.stringify(assetList,null,4)
+				},"*");
+			} else if(event.data.url.indexOf("recipes/library/tiddlers/") === 0) {
+				var url = "recipes/library/tiddlers/" + encodeURIComponent(removePrefix(event.data.url,"recipes/library/tiddlers/"));
+				// Route for recipes/library/tiddlers/<uri-encoded-tiddler-title>.json
+				httpGet(url,function(err,responseText) {
+					if(err) {
+						event.source.postMessage({
+							verb: "GET-RESPONSE",
+							status: "404",
+							cookies: event.data.cookies,
+							url: event.data.url,
+							type: "text/plain",
+							body: "Not found"
+						},"*");
+					} else {
+						event.source.postMessage({
+							verb: "GET-RESPONSE",
+							status: "200",
+							cookies: event.data.cookies,
+							url: event.data.url,
+							type: "application/json",
+							body: responseText
+						},"*");
+					}
+				});
+			} else {
+				event.source.postMessage({
+					verb: "GET-RESPONSE",
+					status: "404",
+					cookies: event.data.cookies,
+					url: event.data.url,
+					type: "text/plain",
+					body: "Not found"
+				},"*");
+			}
+			break;
+	}
+},false);
+
+// Helper to remove string prefixes
+function removePrefix(string,prefix) {
+	if(string.indexOf(prefix) === 0) {
+		return string.substr(prefix.length);
+	} else {
+		return string;
+	}
+}
+
+// Helper for HTTP GET
+function httpGet(url,callback) {
+	var http = new XMLHttpRequest();
+	http.open("GET",url,true);
+	http.onreadystatechange = function() {
+		if(http.readyState == 4 && http.status == 200) {
+			callback(null,http.responseText);
+		}
+	};
+	http.send();
+}
+
+})();
+
+</script>
+</head>
+<body><h1>HelloThere</h1><p>This is the TiddlyWiki plugin library. It is not intended to be opened directly in the browser.</p><p>See <a href="https://tiddlywiki.com/" target="_blank">https://tiddlywiki.com/</a> for details of how to install plugins.</p></body>
+</html>

@@ -1,15 +1,17 @@
 created: 20220905021248595
 creator: oeyoews
-modified: 20220907155809864
+modified: 20220917072204921
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/style/bullets-level-v3
 type: text/vnd.tiddlywiki
 
+<!--
 ul li::marker {
 		content: "{{neotw/bullet.dict##b4}} ";
 		color: {{neotw/bullet.dict##bcolor}};
 }
+-->
 
 ul.bullets li::marker {
 		color: {{neotw/bullet.dict##bcolor}};
