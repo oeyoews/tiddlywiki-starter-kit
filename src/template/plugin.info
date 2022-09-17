@@ -4,6 +4,7 @@
     "title": "$:/plugins/oeyoews/foo",
     "plugin-type": "plugin",
     "name": "foo",
+    "core-version": ">=5.2.3",
     "description": "foo",
     "author": "oeyoews",
     "list": "readme"

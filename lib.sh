@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-rm node_modules/tiddlywiki/plugins/oeyoews -r
-rm node_modules/tiddlywiki/library-template -r
+rm node_modules/tiddlywiki/plugins/oeyoews -rf
+rm node_modules/tiddlywiki/library-template -rf
 
 mkdir node_modules/tiddlywiki/plugins/oeyoews
 

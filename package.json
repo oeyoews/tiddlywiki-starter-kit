@@ -1,11 +1,11 @@
 {
   "name": "neotw",
   "version": "1.0.0",
-  "main": "index.html",
   "repository": "https://gitlab.com/oeyoews/neotw.git",
   "author": "oeyoews <jyao4783@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "nodemon": "^2.0.20",
     "tiddlywiki": "^5.2.3"
   }
 }
