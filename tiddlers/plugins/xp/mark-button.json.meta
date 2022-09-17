@@ -1,0 +1,11 @@
+author: kl
+created: 20210415051416996
+dependents: 
+description: Mark selected text
+list: readme
+modified: 20220810131842881
+name: Mark Button
+plugin-type: plugin
+title: $:/plugins/xp/mark-button
+type: application/json
+version: 0.2.1
