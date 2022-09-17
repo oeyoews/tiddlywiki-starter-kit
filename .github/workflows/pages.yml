@@ -17,7 +17,7 @@ jobs:
           node-version: "16"
 
       - name: Install Dependency
-        run: yarn global add tiddlywiki
+        run: yarn add tiddlywiki
       - name: Build
         run: make build
 
