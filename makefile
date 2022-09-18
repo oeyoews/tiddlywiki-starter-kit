@@ -52,7 +52,7 @@ build:
 # $(CMD) public --output dist/ --build static >> /tmp/neotw.log 2>&1  # static giscus and commpand palette widget have a error
 	@cp -r src/vercel.json library/ dist/; echo -e "🎉 `ls  -sh dist/index.html`" # patch
 	@make clean;
-	@tree -L 2 dist/
+	@tree dist/
 
 build-lib:
 	@sh ./lib.sh
