@@ -39,7 +39,6 @@ run-to-the-world:
 # should before build
 build:
 	@sh ./lib.sh
-	@tree -L 1
 	@make clean;
 	@mkdir $(NEOTWTEMP)
 	@cp -r tiddlers/ plugins/ tiddlywiki.info $(NEOTWTEMP)
@@ -53,6 +52,7 @@ build:
 # $(CMD) public --output dist/ --build static >> /tmp/neotw.log 2>&1  # static giscus and commpand palette widget have a error
 	@cp -r src/vercel.json library/ dist/; echo -e "🎉 `ls  -sh dist/index.html`" # patch
 	@make clean;
+	@tree -L 2 dist/
 
 build-lib:
 	@sh ./lib.sh
