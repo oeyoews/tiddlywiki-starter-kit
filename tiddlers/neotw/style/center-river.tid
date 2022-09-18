@@ -1,11 +1,12 @@
 created: 20220917150251326
 creator: oeyoews
-modified: 20220918015758763
+modified: 20220918021506662
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/style/center-river
 type: text/vnd.tiddlywiki
 
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]"> 
 <$list filter="[{$:/state/notebook-sidebar}match[no]]">
 
 .tc-story-river {
@@ -15,4 +16,5 @@ type: text/vnd.tiddlywiki
 .nc-topbar-wrapper {
 display: none;
 }
+</$list>
 </$list>
