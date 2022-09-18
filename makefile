@@ -2,7 +2,7 @@
 ENABLESTATIC = false
 PACKAGE = "TiddlyWiki5"
 PKGNAME = "neotw"
-CMD = @tiddlywiki
+CMD = @./node_modules/tiddlywiki/tiddlywiki.js
 NEOTWTEMP = neotw-temp
 PORT = 8099
 HOST = "0.0.0.0"
@@ -39,7 +39,7 @@ run-to-the-world:
 # should before build
 # sh ./lib.sh
 build:
-	tree
+	@tree -L 1
 	@make clean;
 	@mkdir $(NEOTWTEMP)
 	@cp -r tiddlers/ plugins/ tiddlywiki.info $(NEOTWTEMP)
