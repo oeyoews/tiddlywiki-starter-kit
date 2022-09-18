@@ -1,6 +1,6 @@
 created: 20220521171656845
 creator: oeyoews
-modified: 20220831082405129
+modified: 20220918003951616
 modifier: oeyoews
 tags: $:/tags/StartupAction
 title: neotw/actions/hide-sidebar
@@ -16,6 +16,9 @@ type: text/vnd.tiddlywiki
 </$list>
 
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]"> 
+  <$action-setfield $tiddler="$:/state/sidebar"
+          $field="text"
+          $value="no"/>
   <$action-setfield
     $tiddler="$:/state/notebook-sidebar"
     $value="yes"/>
