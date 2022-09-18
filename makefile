@@ -53,6 +53,9 @@ build:
 	@cp -r src/vercel.json library/ dist/; echo -e "🎉 `ls  -sh dist/index.html`" # patch
 	@make clean;
 
+build-lib:
+	@sh ./lib.sh
+
 # view
 view:
 	@google-chrome-stable dist/index.html
