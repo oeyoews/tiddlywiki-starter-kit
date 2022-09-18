@@ -39,6 +39,7 @@ run-to-the-world:
 # should before build
 # sh ./lib.sh
 build:
+	tree
 	@make clean;
 	@mkdir $(NEOTWTEMP)
 	@cp -r tiddlers/ plugins/ tiddlywiki.info $(NEOTWTEMP)
