@@ -1,7 +1,8 @@
 caption: {{$:/core/images/edit-button}} {{$:/language/Buttons/Edit/Caption}}
 created: 20220826140144050
+creator: oeyoews
 description: {{$:/language/Buttons/Edit/Hint}}
-modified: 20220828040847521
+modified: 20220918024155621
 modifier: oeyoews
 tags: $:/tags/ViewToolbar
 title: $:/core/ui/Buttons/edit
@@ -12,6 +13,9 @@ type: text/vnd.tiddlywiki
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
 {{$:/plugins/oeyoews/codemirror-keymap-vimjk/icon}}
 </$list>
+<$action-setfield
+    $tiddler="$:/state/notebook-sidebar"
+    $value="no"/>
 <$list filter="[<tv-config-toolbar-text>match[yes]]">
 <span class="tc-btn-text">
 <$text text={{$:/language/Buttons/Edit/Caption}}/>

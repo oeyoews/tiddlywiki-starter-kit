@@ -1,0 +1,26 @@
+caption: {{$:/core/images/done-button}} {{$:/language/Buttons/Save/Caption}}
+created: 20220918024243252
+creator: oeyoews
+description: {{$:/language/Buttons/Save/Hint}}
+modified: 20220918024259937
+modifier: oeyoews
+tags: $:/tags/EditToolbar
+title: $:/core/ui/Buttons/save
+type: text/vnd.tiddlywiki
+
+\define save-tiddler-button()
+\whitespace trim
+<$fieldmangler><$button tooltip={{$:/language/Buttons/Save/Hint}} aria-label={{$:/language/Buttons/Save/Caption}} class=<<tv-config-toolbar-class>>>
+<<save-tiddler-actions>>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+{{$:/core/images/done-button}}
+</$list>
+<$action-setfield
+    $tiddler="$:/state/notebook-sidebar"
+    $value="yes"/>
+<$list filter="[<tv-config-toolbar-text>match[yes]]">
+<span class="tc-btn-text"><$text text={{$:/language/Buttons/Save/Caption}}/></span>
+</$list>
+</$button></$fieldmangler>
+\end
+<<save-tiddler-button>>
