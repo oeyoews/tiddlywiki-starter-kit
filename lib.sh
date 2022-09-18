@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# WIP
+
 rm node_modules/tiddlywiki/plugins/oeyoews -rf
 rm node_modules/tiddlywiki/library-template -rf
 
