@@ -1,0 +1,18 @@
+created: 20220917150251326
+creator: oeyoews
+modified: 20220918015758763
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: neotw/style/center-river
+type: text/vnd.tiddlywiki
+
+<$list filter="[{$:/state/notebook-sidebar}match[no]]">
+
+.tc-story-river {
+	min-width: 1300px;
+}
+
+.nc-topbar-wrapper {
+display: none;
+}
+</$list>

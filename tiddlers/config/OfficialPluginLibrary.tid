@@ -1,10 +1,10 @@
 caption: {{$:/language/OfficialPluginLibrary}}
 created: 20220917080656073
 creator: oeyoews
-enabled: yes
-modified: 20220917080713717
+enabled: no
+modified: 20220918012740918
 modifier: oeyoews
-tags: $:/tags/PluginLibrary
+tags: 
 title: $:/config/OfficialPluginLibrary
 type: text/vnd.tiddlywiki
 url: https://tiddlywiki.com/library/v5.2.3/index.html
