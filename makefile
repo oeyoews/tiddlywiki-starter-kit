@@ -37,8 +37,8 @@ run-to-the-world:
 # generate index.html(support subwiki, but not build html no include subwiki)
 # note: because use make, so can't read this `tiddlywiki` cmd from current project, recommend install tiddlywiki global, likw `yarn global add tiddlywiki`
 # should before build
-# sh ./lib.sh
 build:
+	@sh ./lib.sh
 	@tree -L 1
 	@make clean;
 	@mkdir $(NEOTWTEMP)
