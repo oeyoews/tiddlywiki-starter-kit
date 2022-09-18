@@ -24,7 +24,8 @@ jobs:
           key: ${{ runner.os }}-${{ hashFiles('**/package.json') }}
 
       - name: Install Dependency
-        run: yarn global add tiddlywiki
+        # run: yarn global add tiddlywiki
+        run: yarn install
       - name: Build
         run: make build
 
