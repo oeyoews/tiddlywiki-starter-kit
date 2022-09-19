@@ -1,0 +1,10 @@
+author: Gk0Wk
+dependents: 
+description: Add notion-like backlink button under tiddler's subtitle
+list: LICENSE
+name: Notion Page(Backlink)
+plugin-type: plugin
+source: https://github.com/Gk0Wk/TiddlySeq/tree/master/plugins/Gk0Wk/notionpage-backlink
+title: $:/plugins/Gk0Wk/notionpage-backlink
+type: application/json
+version: 0.0.2
