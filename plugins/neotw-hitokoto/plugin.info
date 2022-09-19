@@ -1,0 +1,11 @@
+{
+    "version": "0.0.1",
+    "type": "application/json",
+    "title": "$:/plugins/oeyoews/neotw-hitokoto",
+    "plugin-type": "plugin",
+    "name": "neotw-hitokoto",
+    "core-version": ">=5.2.3",
+    "description": "neotw-hitokoto",
+    "author": "oeyoews",
+    "list": "readme"
+}
