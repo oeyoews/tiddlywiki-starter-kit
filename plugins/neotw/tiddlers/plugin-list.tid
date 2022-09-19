@@ -1,0 +1,8 @@
+title: $:/plugins/oeyoews/neotw/pluginlist
+
+<$vars
+    qualified-state=<<qualify "$:/state/plugin-info">>
+    pluginFilter="[plugin-type[plugin]prefix[$:/plugins/oeyoews/]] +[!has[draft.of]sort[]search:-text,*<userInput>]"
+    >
+<$list filter=<<pluginFilter>> emptyMessage=<<lingo "Empty/Hint">> template="$:/core/ui/Components/plugin-info"/>
+</$vars>

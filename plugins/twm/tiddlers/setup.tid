@@ -1,0 +1,16 @@
+title: $:/plugins/oeyoews/twm/setup
+tags: $:/tags/RawMarkupWikified/BottomBody
+
+`<meting-js
+        id="2916766519"
+        server="netease"
+        order="random"
+        type="playlist"
+        fixed="true"
+        preload="auto"
+        loop="all"
+        mutex="true"
+				lrc-type="0"
+        list-olded="true"
+>`
+`</meting-js>`
