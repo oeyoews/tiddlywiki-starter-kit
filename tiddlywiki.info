@@ -21,8 +21,7 @@
     ],
     "includeWikis": [
         {
-            "path": "./dev",
-            "read-only": false
+            "path": "dev"
         }
     ],
     "themes": [
