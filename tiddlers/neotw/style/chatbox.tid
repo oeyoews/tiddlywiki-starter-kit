@@ -1,6 +1,6 @@
 created: 20220831235345221
 creator: oeyoews
-modified: 20220901034904768
+modified: 20220920030537008
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/style/chatbox
@@ -8,18 +8,19 @@ type: text/vnd.tiddlywiki
 
 .neotw-left, .neotw-right {
         min-height: 60px;
+				max-width: 500px;
         position: relative;
-        left: 10px;
         display: table;
         text-align: left;
-        border-radius: 7px;
+        border-radius: 9px;
         background-color: #fc3;
 				padding: 10px;
       }
+			
       .neotw-right {
         /*使左右的对话框分开*/
         top: 20px;
-        left: 150px;
+        left: 450px;
         background-color: #9eea6a;
       }
       .neotw-left > p,
@@ -28,6 +29,7 @@ type: text/vnd.tiddlywiki
         display: table-cell;
         vertical-align: middle;
         padding: 0 10px;
+				right: 10px;
       }
       .neotw-left:before,
       .neotw-right:after {
