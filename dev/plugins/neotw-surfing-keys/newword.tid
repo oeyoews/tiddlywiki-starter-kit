@@ -1,7 +1,5 @@
 code-body: yes
-created: 20220920091946922
 key: ((newword))
-modified: 20220920091946922
 revision: 0
 tags: $:/tags/KeyboardShortcut
 title: $:/plugins/oeyoews/neotw-surfing-keys/newword
@@ -13,5 +11,5 @@ type: text/vnd.tiddlywiki
 
 """
 <<<' tags="EnglishWord"/>
-  
+
 </$navigator>
