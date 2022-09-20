@@ -80,8 +80,7 @@
         "plugin-type": "plugin",
         "packaged-by": "Gatha on 20th September 2022, 17:09:56",
         "type": "application/json",
-        "readme": "Customized shortcuts with `⌨️` at the beginning of description in [[shortcuts|$:/core/ui/ControlPanel/KeyboardShortcuts]] or press <kbd>alt h</kbd>\n\n!! TODO\n\n* add tip for repeat press this shortcut\n* can't scroll to determined tiddler repreat\n* another usage is if your tiddlywiki get bad, you can't find any buttons because of install some stanger plugins(even enable safemode), now you can press <kbd>ctrl I</kbd> to call setting\n* add system image for tips use class",
-        "requires-reload": "no",
-        "icon": "data:text/vnd.tiddlywiki,%3Csvg%20width%3D%2222pt%22%20height%3D%2222pt%22%20class%3D%22tc-image-bxi-bxs-keyboard%20tc-image-button%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M21%2C5H3C1.896%2C5%2C1%2C5.896%2C1%2C7v10c0%2C1.104%2C0.896%2C2%2C2%2C2h18c1.104%2C0%2C2-0.896%2C2-2V7C23%2C5.896%2C22.104%2C5%2C21%2C5z%20M13%2C7h2v2h-2V7z%20M13%2C11h2v2h-2V11z%20M9%2C7h2v2H9V7z%20M9%2C11h2v2H9V11z%20M5%2C7h2v2H5V7z%20M5%2C11h2v2H5V11z%20M17%2C17H7v-2h10V17z%20M19%2C13h-2v-2h2V13z%20M19%2C9h-2%20V7h2V9z%22%2F%3E%3C%2Fsvg%3E"
+        "readme": "Customized shortcuts with `⌨️` at the beginning of description in [[shortcuts|$:/core/ui/ControlPanel/KeyboardShortcuts]] or press <kbd>alt h</kbd>\n\n!! TODO\n\n* add tip for repeat press this shortcut\n* can't scroll to determined tiddler repreat\n* another usage is if your tiddlywiki get bad, you can't find any buttons because of install some stanger plugins(even enable safemode), now you can press <kbd>ctrl I</kbd> to call setting\n* add system image for tips use class\n",
+        "requires-reload": "no"
     }
 ]
