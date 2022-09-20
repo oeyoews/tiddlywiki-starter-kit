@@ -19,6 +19,12 @@
         "tiddlywiki/codemirror-mode-htmlmixed",
         "tiddlywiki/codemirror-mode-htmlembedded"
     ],
+    "includeWikis": [
+        {
+            "path": "./dev",
+            "read-only": false
+        }
+    ],
     "themes": [
         "tiddlywiki/vanilla"
     ],

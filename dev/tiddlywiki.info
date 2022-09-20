@@ -1,0 +1,17 @@
+{
+    "description": "neotw plugin dev",
+    "plugins": [
+        "tiddlywiki/tiddlyweb",
+        "tiddlywiki/filesystem",
+        "tiddlywiki/highlight"
+    ],
+    "themes": [
+        "tiddlywiki/vanilla"
+    ],
+    "build": {
+        "listen": [
+            "--listen",
+            "port=8091"
+        ]
+    }
+}

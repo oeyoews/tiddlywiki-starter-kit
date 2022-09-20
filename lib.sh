@@ -7,7 +7,7 @@ rm node_modules/tiddlywiki/library-template -rf
 
 mkdir node_modules/tiddlywiki/plugins/oeyoews
 
-cp plugins/* node_modules/tiddlywiki/plugins/oeyoews -r
+cp dev/plugins/* node_modules/tiddlywiki/plugins/oeyoews -r
 cp src/library-template node_modules/tiddlywiki/ -r
 
 cd node_modules/tiddlywiki
