@@ -1,0 +1,17 @@
+code-body: yes
+created: 20220920091946922
+key: ((newword))
+modified: 20220920091946922
+revision: 0
+tags: $:/tags/KeyboardShortcut
+title: $:/plugins/oeyoews/neotw-surfing-keys/newword
+type: text/vnd.tiddlywiki
+
+<$navigator story="$:/StoryList" history="$:/HistoryList">
+<$action-sendmessage $message="tm-new-tiddler" text='<<<
+"""
+
+"""
+<<<' tags="EnglishWord"/>
+  
+</$navigator>

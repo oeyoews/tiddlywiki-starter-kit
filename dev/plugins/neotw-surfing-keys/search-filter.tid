@@ -1,0 +1,12 @@
+caption: search-filter
+created: 20220920091946922
+key: ((search-filter))
+modified: 20220920091946922
+revision: 0
+tags: $:/tags/KeyboardShortcut
+title: $:/plugins/oeyoews/neotw-surfing-keys/search-filter
+type: text/vnd.tiddlywiki
+
+<$navigator story="$:/StoryList" history="$:/HistoryList">
+  <$action-navigate $to="$:/AdvancedSearch" $scroll="yes"/>
+</$navigator>

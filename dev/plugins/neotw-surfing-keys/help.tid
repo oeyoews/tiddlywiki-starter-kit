@@ -1,0 +1,9 @@
+created: 20220913005513985
+key: ((help))
+modified: 20220920091946921
+revision: 0
+tags: $:/tags/KeyboardShortcut
+title: $:/plugins/oeyoews/neotw-surfing-keys/help
+type: text/vnd.tiddlywiki
+
+<$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/neotw-surfing-keys/keyboard-list"/>

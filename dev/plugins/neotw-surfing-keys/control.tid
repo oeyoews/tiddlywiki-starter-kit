@@ -1,0 +1,12 @@
+caption: Settings
+created: 20220920091946921
+key: ((control))
+modified: 20220920091946921
+revision: 0
+tags: $:/tags/KeyboardShortcut
+title: $:/plugins/oeyoews/neotw-surfing-keys/control
+type: text/vnd.tiddlywiki
+
+<$navigator story="$:/StoryList" history="$:/HistoryList">
+  <$action-navigate $to="$:/ControlPanel" $scroll="yes"/>
+</$navigator>
