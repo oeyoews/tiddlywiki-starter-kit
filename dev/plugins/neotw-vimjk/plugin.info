@@ -1,0 +1,13 @@
+{
+    "title": "$:/plugins/oeyoews/codemirror-keymap-vimjk",
+    "name": "CodeMirror Keymap VimJK",
+    "description": "Keymap compatible with Vim for CodeMirror",
+    "author": "oeyoews",
+    "version": "v0.1.3",
+    "core-version": "5.2.3",
+    "source": "",
+    "list": "readme",
+    "parent-plugin": "$:/plugins/tiddlywiki/codemirror",
+    "dependents": "$:/plugins/tiddlywiki/codemirror-search-replace $:/plugins/tiddlywiki/codemirror-closebrackets",
+    "plugin-type": "plugin"
+}
