@@ -1,7 +1,7 @@
 {
     "version": "0.0.1",
     "type": "application/json",
-    "title": "$:/plugins/oeyoews/twm",
+    "title": "$:/plugins/oeyoews/neotw-music",
     "plugin-type": "plugin",
     "name": "twm",
     "core-version": ">=5.2.3",
