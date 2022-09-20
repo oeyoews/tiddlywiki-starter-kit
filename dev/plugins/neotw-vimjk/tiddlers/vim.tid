@@ -1,6 +1,4 @@
 module-type: codemirror-keymap
-revision: 0
 title: $:/plugins/tiddlywiki/codemirror/keymaps/vim
-type: text/vnd.tiddlywiki
 
 vim

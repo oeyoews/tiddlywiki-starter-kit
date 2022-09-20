@@ -38,7 +38,7 @@ run-to-the-world:
 # note: because use make, so can't read this `tiddlywiki` cmd from current project, recommend install tiddlywiki global, likw `yarn global add tiddlywiki`
 # should before build
 build:
-	@sh ./lib.sh
+	@sh ./lib
 	@make clean;
 	@mkdir $(NEOTWTEMP)
 	@cp -r tiddlers/ dev/ tiddlywiki.info $(NEOTWTEMP)
@@ -55,7 +55,7 @@ build:
 	@tree dist/
 
 build-lib:
-	@sh ./lib.sh
+	@sh ./lib
 
 # view
 view:
