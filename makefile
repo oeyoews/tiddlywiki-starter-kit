@@ -41,7 +41,7 @@ build:
 	@sh ./lib.sh
 	@make clean;
 	@mkdir $(NEOTWTEMP)
-	@cp -r tiddlers/ plugins/ tiddlywiki.info $(NEOTWTEMP)
+	@cp -r tiddlers/ dev/plugins/ tiddlywiki.info $(NEOTWTEMP)
 # if error how to exit
 	@rm -rf $(NEOTWTEMP)/tiddlers/subwiki \
 		$(NEOTWTEMP)/tiddlers/trashbin \
