@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-# WIP
+# WIP use variable
 
+# clean
 rm node_modules/tiddlywiki/plugins/oeyoews -rf
 rm node_modules/tiddlywiki/library-template -rf
 
