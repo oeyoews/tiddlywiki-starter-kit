@@ -1,6 +1,6 @@
 created: 20220917150251326
 creator: oeyoews
-modified: 20220921032840106
+modified: 20220921051322219
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/style/center-river
@@ -9,11 +9,16 @@ type: text/vnd.tiddlywiki
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]"> 
 <$list filter="[[$:/state/notebook-sidebar]get[text]else[no]match[no]]">
 
+<!--
+not resonitive width
+
 .tc-story-river {
 	min-width: 1100px;
 }
+-->
 
-.nc-topbar-wrapper {
+.nc-topbar-wrapper,
+.nc-bottombar {
 	display: none;
 }
 </$list>

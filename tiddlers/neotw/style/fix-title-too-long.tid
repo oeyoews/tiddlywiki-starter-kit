@@ -1,0 +1,24 @@
+created: 20220921050229586
+creator: oeyoews
+modified: 20220921050314789
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: neotw/style/fix-title-too-long
+type: text/vnd.tiddlywiki
+
+.tc-tiddler-view-frame .tc-titlebar {
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.tc-tiddler-view-frame .tc-titlebar span.tc-tiddler-controls {
+   flex: 1 0 max-content;
+   width: min-content;
+   text-align: right;
+}
+
+.tc-tiddler-view-frame .tc-titlebar span + span {
+   flex: 1 1 auto;
+}
