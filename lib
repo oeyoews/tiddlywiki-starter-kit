@@ -2,14 +2,18 @@
 
 # WIP use variable
 
+libpath="node_modules/tiddlywiki"
+
+bin="tiddlywiki.js"
+
 # clean
-rm node_modules/tiddlywiki/plugins/oeyoews -rf
-rm node_modules/tiddlywiki/library-template -rf
+rm -rf ${libpath}/plugins/oeyoews
+rm -rf ${libpath}/library-template
 
-mkdir node_modules/tiddlywiki/plugins/oeyoews
+mkdir ${libpath}/plugins/oeyoews
 
-cp dev/plugins/* node_modules/tiddlywiki/plugins/oeyoews -r
-cp src/library-template node_modules/tiddlywiki/ -r
+cp dev/plugins/* ${libpath}/plugins/oeyoews -r
+cp src/library-template ${libpath} -r
 
-cd node_modules/tiddlywiki
-node ./tiddlywiki.js library-template/ --output ../../library --build library
+cd ${libpath}
+node ${bin} library-template/ --output ../../library --build library
