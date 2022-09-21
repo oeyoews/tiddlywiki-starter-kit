@@ -1,12 +1,12 @@
 created: 20220921022151105
 creator: oeyoews
-modified: 20220921032409172
+modified: 20220921041044597
 modifier: oeyoews
 tags: 
 title: neotw/article/schools
 type: text/vnd.tiddlywiki
 
-!! 要求
+!! 基本查询项
 
 * 报考条件是否满足
 * 所考专业课 408 or 数据结构
@@ -17,12 +17,18 @@ type: text/vnd.tiddlywiki
 
 !! List
 
+[ ] 北方工业大学
 [ ] 北京工商大学
+[x] 北京工业大学
 [x] 北京语言大学 
 
 
 
 !! 北京地区
+
+!!!  北方工业大学
+
+* <<url "http://yjsy.ncut.edu.cn/zsgz/zsjz.htm">>
 
 !!! 北京工商大学
 
