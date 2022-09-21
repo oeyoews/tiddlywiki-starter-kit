@@ -1,9 +1,12 @@
 created: 20220909160117024
 creator: oeyoews
-modified: 20220910172139517
+modified: 20220921012129700
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/style/selection
 type: text/vnd.tiddlywiki
 
-mark::selection {background-color:cyan; color: black;}
+* ::selection {
+	background-color:cyan;
+	color: black;
+}

@@ -1,8 +1,10 @@
-created: 20220828002616571
+created: 20220921005343712
 creator: oeyoews
-modified: 20220910170445005
+modified: 20220921010504775
 modifier: oeyoews
 title: $:/SiteTitle
 type: text/vnd.tiddlywiki
 
-{{flask-22-icon}} <<neotw-span "<<neotw-gradient-link-info {{$:/info/url/full}} neotw>>" b4 neotw-fw>>
+<span class="neotw-fw neotw-gradient">
+{{flask-22-icon}} Neotw
+</span>
