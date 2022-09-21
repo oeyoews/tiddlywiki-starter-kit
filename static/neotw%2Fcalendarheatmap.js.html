@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="generator" content="TiddlyWiki" />
+<meta name="tiddlywiki-version" content="5.2.3" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no">
+<link id="faviconLink" rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="static.css">
+<title>neotw/calendarheatmap.js: 
+ Neotw
+ — A modern notebook based on TiddlyWiki5</title>
+</head>
+<body class="tc-body">
+<p><div class="tc-static-alert"><div class="tc-static-alert-inner" style="align:center">This page is part of a static HTML representation of the ~TiddlyWiki at <a class="tc-tiddlylink-external" href="https://neotw.netlify.app" rel="noopener noreferrer" target="_blank">https://neotw.netlify.app</a> </div></div></p>
+<section class="tc-story-river tc-static-story-river">
+<p><div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="neotw/calendarheatmap.js" role="article"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><button aria-label="trashbin" class="tc-btn-invisible tc-btn-%24%3A%2Fplugins%2Fkookma%2Ftrashbin%2Fui%2Ftoolbar-button" title="Move this tiddler to Trashbin"> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</button><button aria-expanded="false" aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"></button><div class=" tc-reveal" hidden="true"></div><button aria-label="favorites" class="tc-btn-invisible tc-btn-%24%3A%2Fplugins%2Fkookma%2Ffavorites%2Fui%2Fbuttons%2Fadd-remove" title="Add to favorites">
+     
+		 
+
+		 
+ </button><button aria-label="close others" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose-others" title="Close other tiddlers"></button><span class=" tc-reveal"><button aria-label="fold tiddler" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Ffold" title="Fold the body of this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><button class="tc-btn-invisible tc-btn-neotw%2Fviewbar%2Fcopy-title" title="copy current title"></button><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button><button class="tc-btn-invisible tc-btn-neotw%2Fcopy-text" title="copy current code"></button><span class="tc-popup-keep"><button aria-expanded="false" aria-label="QR code" class="tc-btn-invisible tc-btn-%24%3A%2Fplugins%2Ftiddlywiki%2Fqrcode%2FViewToolbarButton" title="Generate QR code for this tiddler"></button></span><div class=" tc-reveal" hidden="true"></div><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span><h2 class="tc-title">neotw/calendarheatmap.js</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"></div></div><div class=" tc-reveal"><div class="tc-tags-wrapper"></div></div>
+
+
+
+<div class="tc-tiddler-body tc-reveal"><pre class="hljs"><code class="javascript hljs"><span class="hljs-built_in">exports</span>.<span class="hljs-property">onUpdate</span> = <span class="hljs-keyword">function</span> (<span class="hljs-params">echart</span>) {
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">getData</span>(<span class="hljs-params">year</span>) {
+  year = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Date</span>().<span class="hljs-title function_">getFullYear</span>();
+  <span class="hljs-keyword">var</span> date = +echarts.<span class="hljs-property">number</span>.<span class="hljs-title function_">parseDate</span>(year + <span class="hljs-string">&#x27;-01-01&#x27;</span>);
+  <span class="hljs-keyword">var</span> end = +echarts.<span class="hljs-property">number</span>.<span class="hljs-title function_">parseDate</span>(+year + <span class="hljs-number">1</span> + <span class="hljs-string">&#x27;-01-01&#x27;</span>);
+  <span class="hljs-keyword">var</span> dayTime = <span class="hljs-number">3600</span> * <span class="hljs-number">24</span> * <span class="hljs-number">1000</span>;
+  <span class="hljs-keyword">var</span> data = [];
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> time = date; time &lt; end; time += dayTime) {
+    data.<span class="hljs-title function_">push</span>([
+      echarts.<span class="hljs-property">format</span>.<span class="hljs-title function_">formatTime</span>(<span class="hljs-string">&#x27;yyyy-MM-dd&#x27;</span>, time),
+      $tw.<span class="hljs-property">wiki</span>.<span class="hljs-title function_">filterTiddlers</span>(<span class="hljs-string">&#x27;[sameday:modified[&#x27;</span> + echarts.<span class="hljs-property">format</span>.<span class="hljs-title function_">formatTime</span>(<span class="hljs-string">&#x27;yyyy-MM-dd&#x27;</span>, time).<span class="hljs-title function_">replace</span>(<span class="hljs-regexp">/-/g</span>, <span class="hljs-string">&quot;&quot;</span>) + <span class="hljs-string">&#x27;]count[]]&#x27;</span>)
+    ]);
+  }
+  <span class="hljs-keyword">return</span> data;
+}
+  echart.<span class="hljs-title function_">setOption</span>({
+  <span class="hljs-attr">tooltip</span>: {
+    <span class="hljs-attr">position</span>: <span class="hljs-string">&#x27;top&#x27;</span>,
+    <span class="hljs-attr">formatter</span>: <span class="hljs-keyword">function</span> (<span class="hljs-params">p</span>) {
+      <span class="hljs-keyword">var</span> format = echarts.<span class="hljs-property">format</span>.<span class="hljs-title function_">formatTime</span>(<span class="hljs-string">&#x27;yyyy-MM-dd&#x27;</span>, p.<span class="hljs-property">data</span>[<span class="hljs-number">0</span>]);
+      <span class="hljs-keyword">return</span> format + <span class="hljs-string">&#x27;: &#x27;</span> + p.<span class="hljs-property">data</span>[<span class="hljs-number">1</span>];
+    }
+  },
+  <span class="hljs-attr">visualMap</span>: {
+    <span class="hljs-attr">min</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-attr">max</span>: <span class="hljs-number">10</span>,
+    <span class="hljs-attr">calculable</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">orient</span>: <span class="hljs-string">&#x27;vertical&#x27;</span>,
+    <span class="hljs-attr">left</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-attr">top</span>: <span class="hljs-number">10</span>
+  },
+  <span class="hljs-attr">calendar</span>: [
+    {
+      <span class="hljs-attr">left</span>: <span class="hljs-number">90</span>,
+      <span class="hljs-attr">cellSize</span>: <span class="hljs-string">&#x27;auto&#x27;</span>,
+      <span class="hljs-attr">top</span>: <span class="hljs-number">20</span>,
+      <span class="hljs-attr">orient</span>: <span class="hljs-string">&#x27;horizontal&#x27;</span>,
+      <span class="hljs-attr">range</span>: <span class="hljs-keyword">new</span> <span class="hljs-title class_">Date</span>().<span class="hljs-title function_">getFullYear</span>(),
+      <span class="hljs-attr">dayLabel</span>: {
+        <span class="hljs-attr">margin</span>: <span class="hljs-number">5</span>
+      }
+    }
+  ],
+  <span class="hljs-attr">series</span>: [
+    {
+      <span class="hljs-attr">type</span>: <span class="hljs-string">&#x27;heatmap&#x27;</span>,
+      <span class="hljs-attr">coordinateSystem</span>: <span class="hljs-string">&#x27;calendar&#x27;</span>,
+      <span class="hljs-attr">calendarIndex</span>: <span class="hljs-number">0</span>,
+      <span class="hljs-attr">data</span>: <span class="hljs-title function_">getData</span>()
+    }
+  ]
+});
+};
+</code></pre></div>
+<div class=" tc-reveal">
+
+</div>
+</div></p>
+</section>
+</body>
+</html>
+
