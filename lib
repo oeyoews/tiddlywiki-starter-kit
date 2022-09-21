@@ -1,12 +1,9 @@
 #!/usr/bin/env bash
 
-# WIP use variable
-
 libpath="node_modules/tiddlywiki"
-
 bin="tiddlywiki.js"
 
-# clean
+# clean adjust
 rm -rf ${libpath}/plugins/oeyoews
 rm -rf ${libpath}/library-template
 
