@@ -1,0 +1,35 @@
+created: 20220921022151105
+creator: oeyoews
+modified: 20220921024701484
+modifier: oeyoews
+tags: 
+title: neotw/article/schools
+type: text/vnd.tiddlywiki
+
+!! 要求
+
+* 报考条件是否满足
+* 所考专业课 408 or 数据结构
+* 专业课具体要求
+* 查询往年分数线， 录取情况
+
+!! List
+
+[ ] 北京工商大学
+[x] 北京语言大学 
+
+
+
+!! 北京地区
+
+!!! 北京语言大学 
+
+* <<url "http://yjsy.blcu.edu.cn/attach/0/22985f97222e4abdb3a8ee128d82855c.pdf">>  
+
+* <<emoji error>> 报考条件 
+
+* <<emoji bingo>> 数据结构
+
+!! Links
+
+* 研招网 https://yz.chsi.com.cn/zsml/zyfx_search.jsp
