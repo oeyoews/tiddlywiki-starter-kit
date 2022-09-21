@@ -1,7 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 authors:
-    - given-names: oeyoews
+    - family-names: oeyoews
+    given-names: oeyoews
 title: "neotw"
 version: 1.0.0
 date-released: 2022-09-21 21:02:25+0800
