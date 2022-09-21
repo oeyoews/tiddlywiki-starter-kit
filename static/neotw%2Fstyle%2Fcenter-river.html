@@ -49,7 +49,7 @@
 
 		 
  </button><button aria-label="close others" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose-others" title="Close other tiddlers"></button><span class=" tc-reveal"><button aria-label="fold tiddler" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Ffold" title="Fold the body of this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><button class="tc-btn-invisible tc-btn-neotw%2Fviewbar%2Fcopy-title" title="copy current title"></button><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button><button class="tc-btn-invisible tc-btn-neotw%2Fcopy-text" title="copy current code"></button><span class="tc-popup-keep"><button aria-expanded="false" aria-label="QR code" class="tc-btn-invisible tc-btn-%24%3A%2Fplugins%2Ftiddlywiki%2Fqrcode%2FViewToolbarButton" title="Generate QR code for this tiddler"></button></span><div class=" tc-reveal" hidden="true"></div><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span><h2 class="tc-title">neotw/style/center-river</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
-<div class=" tc-reveal"><div class="tc-subtitle"><span class="neotw-arrowright"></span><a class="tc-tiddlylink tc-tiddlylink-resolves" href="oeyoews.html">oeyoews</a><span class="neotw-dot-status"></span>Created 2022/09/17 <span class="neotw-edit"></span>Updated 2022/09/21 03:28 </div></div><div class=" tc-reveal"><div class="tc-tags-wrapper"><span class="tc-tag-list-item" data-tag-title="$:/tags/Stylesheet"><span aria-expanded="false" class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
+<div class=" tc-reveal"><div class="tc-subtitle"><span class="neotw-arrowright"></span><a class="tc-tiddlylink tc-tiddlylink-resolves" href="oeyoews.html">oeyoews</a><span class="neotw-dot-status"></span>Created 2022/09/17 <span class="neotw-edit"></span>Updated 2022/09/21 05:13 </div></div><div class=" tc-reveal"><div class="tc-tags-wrapper"><span class="tc-tag-list-item" data-tag-title="$:/tags/Stylesheet"><span aria-expanded="false" class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
 fill:#3F3B3B;
 color:#3F3B3B;">$:/tags/Stylesheet</span><span class="tc-drop-down tc-reveal" hidden="true"></span></span></div></div>
 
@@ -63,11 +63,16 @@ color:#3F3B3B;">$:/tags/Stylesheet</span><span class="tc-drop-down tc-reveal" hi
 		<pre class="hljs"><code class="css hljs">&lt;$list <span class="hljs-attribute">filter</span>=&quot;<span class="hljs-selector-attr">[[$:/info/browser/is/mobile]</span>get<span class="hljs-selector-attr">[text]</span>else<span class="hljs-selector-attr">[no]</span>match<span class="hljs-selector-attr">[no]</span>]&quot;&gt; 
 &lt;$list <span class="hljs-attribute">filter</span>=&quot;<span class="hljs-selector-attr">[[$:/state/notebook-sidebar]</span>get<span class="hljs-selector-attr">[text]</span>else<span class="hljs-selector-attr">[no]</span>match<span class="hljs-selector-attr">[no]</span>]&quot;&gt;
 
+&lt;!--
+not resonitive <span class="hljs-attribute">width</span>
+
 <span class="hljs-selector-class">.tc-story-river</span> {
 	<span class="hljs-attribute">min-width</span>: <span class="hljs-number">1100px</span>;
 }
+--&gt;
 
-<span class="hljs-selector-class">.nc-topbar-wrapper</span> {
+<span class="hljs-selector-class">.nc-topbar-wrapper</span>,
+<span class="hljs-selector-class">.nc-bottombar</span> {
 	<span class="hljs-attribute">display</span>: none;
 }
 &lt;/$list&gt;
@@ -81,9 +86,8 @@ color:#3F3B3B;">$:/tags/Stylesheet</span><span class="tc-drop-down tc-reveal" hi
 </span>
 
 <div class="tc-tiddler-body tc-reveal"><p><pre class="hljs"><code class="css hljs"> 
-<span class="hljs-selector-class">.tc-story-river</span> {
-	<span class="hljs-attribute">min-width</span>: <span class="hljs-number">1100px</span>;
-}<span class="hljs-selector-class">.nc-topbar-wrapper</span> {
+<span class="hljs-selector-class">.nc-topbar-wrapper</span>,
+<span class="hljs-selector-class">.nc-bottombar</span> {
 	<span class="hljs-attribute">display</span>: none;
 }
 
