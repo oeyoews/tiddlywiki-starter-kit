@@ -14,6 +14,7 @@ NEOTWBIN = "$(HOME)/.local/bin/$(PKGNAME)"
 neotwdir-user= "$(PWD)"
 repo-plateform = gitlab
 subwiki-address = https://$(repo-plateform).com/$(USER)/subwiki.git
+logfile = "/tmp/neotw.log"
 
 # adjust os, just test on linux
 ifeq ($(shell uname),Linux)
@@ -46,13 +47,13 @@ build:
 	@rm -rf $(NEOTWTEMP)/tiddlers/subwiki \
 		$(NEOTWTEMP)/tiddlers/trashbin \
 	 	$(NEOTWTEMP)/tiddlers/\$$__StoryLis*.tid
-	$(CMD) $(NEOTWTEMP) --build index >> /tmp/neotw.log 2>&1  # build
-	$(CMD) public --output dist/ --build static >> /tmp/neotw.log 2>&1  # static giscus and commpand palette widget have a error
+	$(CMD) $(NEOTWTEMP) --build index >> $(logfile) 2>&1  # build
+	$(CMD) $(NEOTWTEMP) --build static >> $(logfile) 2>&1  # static giscus and commpand palette widget have a error
 # $(CMD) public --build favicon >> /tmp/neotw.log 2>&1  # favicon
 # $(CMD) public --output dist/ --build debug >> /tmp/neotw.log 2>&1  # build
 	@cp -r src/vercel.json library/ dist/; echo -e "🎉 `ls  -sh dist/index.html`" # patch
 	@make clean;
-	@tree dist/
+	@tree dist/ -L 1
 
 build-lib:
 	@sh ./lib
@@ -60,6 +61,9 @@ build-lib:
 # view
 view:
 	@google-chrome-stable dist/index.html
+
+view-log:
+	nvim $(logfile)
 
 # bpview
 bpview:

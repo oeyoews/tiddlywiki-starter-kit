@@ -45,6 +45,8 @@
             "anon-username=oeyoews"
         ],
         "static": [
+            "--output",
+            "dist",
             "--rendertiddler",
             "$:/core/templates/static.template.html",
             "static.html",
