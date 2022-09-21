@@ -1,6 +1,6 @@
 created: 20220921022151105
 creator: oeyoews
-modified: 20220921024701484
+modified: 20220921032409172
 modifier: oeyoews
 tags: 
 title: neotw/article/schools
@@ -12,6 +12,8 @@ type: text/vnd.tiddlywiki
 * 所考专业课 408 or 数据结构
 * 专业课具体要求
 * 查询往年分数线， 录取情况
+* 招生简章 专业目录查询
+* 复试所考科目查询
 
 !! List
 
@@ -21,6 +23,10 @@ type: text/vnd.tiddlywiki
 
 
 !! 北京地区
+
+!!! 北京工商大学
+
+<<emoji refresh>> CET4
 
 !!! 北京语言大学 
 
@@ -33,3 +39,4 @@ type: text/vnd.tiddlywiki
 !! Links
 
 * 研招网 https://yz.chsi.com.cn/zsml/zyfx_search.jsp
+* http://yz.yanxian.org/major/show-283-1.html
