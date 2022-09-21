@@ -231,6 +231,11 @@ tree-node-cli@1.5.2:
     fast-folder-size "^1.6.1"
     pretty-bytes "^5.6.0"
 
+uglify-js@^3.17.1:
+  version "3.17.1"
+  resolved "https://registry.npmmirror.com/uglify-js/-/uglify-js-3.17.1.tgz#1258a2a488147a8266b3034499ce6959978ba7f4"
+  integrity sha512-+juFBsLLw7AqMaqJ0GFvlsGZwdQfI2ooKQB39PSBgMnMakcFosi9O8jCwE+2/2nMNcc0z63r9mwjoDG8zr+q0Q==
+
 unzipper@^0.10.11:
   version "0.10.11"
   resolved "https://registry.npmmirror.com/unzipper/-/unzipper-0.10.11.tgz#0b4991446472cbdb92ee7403909f26c2419c782e"
