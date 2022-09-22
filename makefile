@@ -73,8 +73,8 @@ install-subwiki:
 	@git clone --depth 1 $(subwiki-address) tiddlers/subwiki
 
 # install service
-install:
-	@echo "tiddlywiki --listen anon-username='anonymous'" > $(NEOTWBIN)
+install-bin:
+	@echo "tiddlywiki --listen" > $(NEOTWBIN)
 	@chmod +x ~/.local/bin/$(PKGNAME)
 	@echo "🎉 Installed neotw"
 
