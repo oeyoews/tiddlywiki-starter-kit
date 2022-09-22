@@ -43,19 +43,6 @@
     {
         "version": "0.0.1",
         "type": "application/json",
-        "title": "$:/plugins/oeyoews/neotw-record",
-        "plugin-type": "plugin",
-        "name": "record",
-        "description": "record",
-        "author": "oeyoews",
-        "list": "readme",
-        "dependents": "",
-        "readme": "!! Record\n\n* test\n",
-        "requires-reload": "no"
-    },
-    {
-        "version": "0.0.1",
-        "type": "application/json",
         "title": "$:/plugins/oeyoews/neotw-snippet",
         "plugin-type": "plugin",
         "name": "snippet",
