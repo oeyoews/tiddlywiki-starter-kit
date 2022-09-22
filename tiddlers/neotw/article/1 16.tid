@@ -1,0 +1,12 @@
+created: 20220922002741052
+creator: oeyoews
+modified: 20220922003034946
+modifier: oeyoews
+tags: 
+title: neotw/article/1 16
+type: text/vnd.tiddlywiki
+
+<$button class="tc-btn-download">
+<$action-sendmessage $message="tm-download-file" $param="neotw/edition/neotw/download-empty" filename="empty.html"/>
+Download {{$:/core/images/save-button}}
+</$button>
