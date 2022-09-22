@@ -1,7 +1,7 @@
 caption: Neotw
 created: 20220907022139318
 creator: oeyoews
-modified: 20220911162108320
+modified: 20220922144909814
 modifier: oeyoews
 tags: $:/tags/SideBar
 title: neotw/setup
@@ -11,20 +11,20 @@ type: text/vnd.tiddlywiki
 {{neotw/change-theme-palette}}
 
 ; <<emoji arrowright>> [[Sidebar width|$:/themes/nico/notebook/metrics/sidebar-width]]
-: <$range tiddler="$:/themes/nico/notebook/metrics/sidebar-width" field="width" min="350" max="700" default="350" increment=".1"
+: <$range tiddler="$:/themes/nico/notebook/metrics/sidebar-width" field="width" min="350" max="700" default="350" increment="1"
   actionsStart=<<actionsStart>> actionsStop=<<actionsStop>> actions=<<actions>> />   {{$:/themes/nico/notebook/metrics/sidebar-width}}
 	
 ; <<emoji arrowright>> [[Tid size|$:/themes/tiddlywiki/vanilla/metrics/fontsize]] 
-: <$range tiddler="$:/themes/tiddlywiki/vanilla/metrics/bodyfontsize" field="size" min="16" max="22" default="16" increment=".1"
+: <$range tiddler="$:/themes/tiddlywiki/vanilla/metrics/bodyfontsize" field="size" min="16" max="22" default="16" increment="1"
   actionsStart=<<actionsStart>> actionsStop=<<actionsStop>> actions=<<actions>> />{{$:/themes/tiddlywiki/vanilla/metrics/bodyfontsize}}	
 	
 ; <<emoji arrowright>> [[Fontsize|$:/themes/tiddlywiki/vanilla/metrics/fontsize]]
-: <$range tiddler="$:/themes/tiddlywiki/vanilla/metrics/fontsize" min="16" max="20" field="size" increment=".1"/> {{$:/themes/tiddlywiki/vanilla/metrics/fontsize}}
+: <$range tiddler="$:/themes/tiddlywiki/vanilla/metrics/fontsize" min="16" max="20" field="size" increment="1"/> {{$:/themes/tiddlywiki/vanilla/metrics/fontsize}}
 
 ;<<emoji arrowright>> [[StoryWidth|$:/themes/nico/notebook/metrics/story-width]]
-: <$range  tiddler="$:/themes/nico/notebook/metrics/story-width" field="width" min="900" max="1050" increment=".1"/> {{$:/themes/nico/notebook/metrics/story-width}}
+: <$range  tiddler="$:/themes/nico/notebook/metrics/story-width" field="width" min="900" max="1050" increment="1"/> {{$:/themes/nico/notebook/metrics/story-width}}
 
 ; <<emoji arrowright>> [[Polar|neotw/style/polar]]
 : <$range  tiddler="neotw/style/polar" field="velo" min=".4" max="1" default=".4" increment=".1"/> {{neotw/style/polar!!velo}}s
 
-; <<emoji arrowright>> [[Newtw|neotw/setup]] <<emoji arrowright>> [[MODE|neotw/button/mode]]
+; <<emoji arrowright>> [[Neotw|neotw/setup]] <<emoji arrowright>> {{neotw/button/mode}}
