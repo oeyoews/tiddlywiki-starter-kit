@@ -7310,7 +7310,7 @@ li.CodeMirror-hint-active {
   }
 }/* Sidebar */@keyframes sidebar-appear {
   0%   {
-    left: -350.8px;
+    left: -350px;
   }
   100% {
     left: 0;
@@ -7318,7 +7318,7 @@ li.CodeMirror-hint-active {
 }.nc-sidebar {
   background: #ffffff;
   border-right: 1px solid #dbdbc7;;
-  width: 350.8px;
+  width: 350px;
   overflow-y: auto;
   overflow-x: hidden;
   z-index: 500;
@@ -8242,12 +8242,23 @@ CSShtml {
 }ul.bullets>li>ul>li>ul>li>ul li::marker {
 		content: "● ";
 } 
+@media (min-width: 1100px) {
+.tc-story-river {
+		min-width: 1100px;
+}
 .nc-topbar-wrapper,
 .nc-bottombar {
 	display: none;
 }
-
-
+}
+ 
+@media (max-width: 960px) {
+.nc-sidebar,
+.nc-topbar-wrapper,
+.nc-bottombar {
+	display: none;
+}
+}
 .neotw-left, .neotw-right {
         min-height: 60px;
 				max-width: 500px;
