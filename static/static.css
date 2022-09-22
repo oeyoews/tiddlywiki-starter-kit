@@ -2547,17 +2547,6 @@ span.cm-internallink {
 }.gk0wk-backlinksbox-box-link-icon > p {
   margin: 0;
 }
-div#gk0wk-sidebar-resize-area {
-	height: 100vh;
-	width: 10px;
-	position: absolute;
-	top: 0;
-	left: -5px;
-	cursor: ew-resize;
-	transition: all 300ms;
-}div#gk0wk-sidebar-resize-area:hover {
-	background: #7f4bca;
-}
 .rider { 
     display: grid; 
     grid-template-columns: 8fr auto; 
@@ -2941,6 +2930,202 @@ label.kk-fav-label {
 
 details.kk-fav-details>summary{
 padding-left:0;
+}/* Ref: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3 */ 
+.refnotes-abbr abbr[title] {
+	color: inherit;
+	font-style: normal;
+	text-decoration: none;
+	border-bottom: 1px dotted #aaa;
+	cursor: help;
+}
+
+.refnotes-abbr-term-not-found{
+/*	color:red;*/
+	font-style: oblique;
+}
+
+.refnotes-abbr-term{
+/*	color:blue;*/
+}
+
+/* Ref:https://aarontgrogg.com/lab/
+Show the title for small screen
+*/ 
+/* this works based on the max-width*/
+@media only screen and (max-width: 960px) {
+.refnotes-abbr abbr:hover:after  { content: ' ('attr(title)')'; }
+}
+
+@media (hover: none) {
+/* Push the title attribute into generated content after the abbr. */
+.refnotes-abbr abbr[title]::after { 
+ content: ' ('attr(title)')'; }
+}
+.refnotes-details > summary{
+	padding-left:0;
+	padding-top:15px;
+	padding-bottom:15px;
+	width: 160px;
+	cursor: pointer;
+	font-weight:bold;
+}
+
+/* used for viewtemplate displaying the bibtex entry */
+.refnotes-bibtex-field{
+	display:table-row
+}
+.refnotes-bibtex-field > span{
+	display:table-cell
+}
+.refnotes-bibtex-field > span:first-of-type{
+	font-weight:bold;
+	padding-right:10px;
+	white-space: nowrap;
+}.ref-nonumber{
+/* color:blue;*/
+ font-size:90%;
+ list-style-type:none;
+}.ref-nonumber li{
+  padding-bottom:8px;
+}.ref-list{
+/* color:blue;*/
+ font-size:90%;
+}.link-refcls{
+ font-weight:400;
+/* color:#00008B;*/ /*darkblue*/
+ text-decoration:none;
+ color: #7f4bca; 	
+}.refcls{
+/* color:#00008B;*/
+ color: #7f4bca; 
+/* text-transform: capitalize;*/
+}.ref-notfound{
+/*  color: #856404 !important;*/
+/*  background-color: #fff3cd !important;*/
+}.ref-author{
+/*  color:#00008B;*/ /*color for author in tooltip*/
+}.bibtex-dropzone{
+	min-height:30px;
+	max-width:100%;
+	margin:4px auto;
+	border:2px dotted green;
+	text-align:center;
+}
+
+.bibtex-dropzone:focus {
+	background: #fffedd;
+}/*automatic counter for fnote macro. The counter resets at the begining of each tiddler*/
+.tc-tiddler-frame {
+  counter-reset: fnote-count;
+}
+.refnotes-footnote {
+  counter-increment: fnote-count;
+}
+.refnotes-footnote:after {
+  content: counter(fnote-count);
+  font-size:small;
+ /* color:#0000ee;*/
+  vertical-align: super;
+  line-height: 1.5;
+  margin-left: -0.1em;
+}
+/* in folding-editor*/
+.refnotes-library button svg{
+	font-size:0.8em;
+	vertical-align: middle;
+	margin-right:0;
+	margin-left:0;
+
+}
+
+/* Footnote class*/
+
+.fnote-list{
+/* color:blue;*/
+ font-size:90%;
+}
+
+.fnote-pretty{
+ display: block;
+  margin: 0.5em;
+  margin-right: auto;
+  width: 100% !important;
+  border-collapse: collapse;
+  padding: 15px 15px 15px 25px; /*left padding=25px*/
+  border-width:  0px;
+  border-style: solid;
+  border-left-width: 1px;
+  background-color:  rgb(255,248,220);
+  color: rgb(91,49,7);
+  line-height: 1.2em; 
+  font-size:0.9em;
+}
+/*Borderless table*/
+.refnotes-table-borderless, 
+.refnotes-table-borderless th, 
+.refnotes-table-borderless tr, 
+.refnotes-table-borderless td{
+  border:0;
+}/* tooltip class used for ref, fnote and other macros */
+.refnotes-tooltip {
+	position: relative;
+	display: inline-block;
+	cursor: pointer; 
+}
+
+.refnotes-tooltip .refnotes-tooltiptext{
+	font-size: 0.90em; /* change if it is too small */
+}
+
+.refnotes-tooltip .refnotes-tooltiptext {
+	visibility: hidden;
+	background-color: #fff;
+	color: #222222; 
+	text-align: left;
+	border-radius: 2px;
+	padding: 5px 10px;
+	max-width: 30vw;
+	max-height:20em;
+	overflow-y: auto;
+	cursor: auto;
+	width: max-content;
+	width: -moz-max-content;
+	width: -webkit-max-content;
+	width: -o-max-content;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -40px;
+	box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+.refnotes-tooltip:hover .refnotes-tooltiptext {
+	visibility: visible;
+	/*opacity: 0.9;*/
+}
+
+/* for small screens */
+
+@media screen and (max-width: 960px) {
+.refnotes-tooltip .refnotes-tooltiptext {
+    /* Position the tooltip */
+  	position:fixed;
+    top:0;
+    left: 0;
+    margin-left: 0px;
+    bottom: unset;
+    width:100%;
+    max-width: 100vw;
+    z-index: 9999;
+}  
+
+.refnotes-tooltip:hover .refnotes-tooltiptext {
+   opacity: 1;
+}  
+  
 }.leftbar{
   border-width:0px !important;
   border-radius:0px !important;
@@ -8242,9 +8427,9 @@ CSShtml {
 }ul.bullets>li>ul>li>ul>li>ul li::marker {
 		content: "● ";
 } 
-@media (min-width: 1100px) {
+@media (min-width: 1000px) {
 .tc-story-river {
-		min-width: 1100px;
+		min-width: 1000px;
 }
 .nc-topbar-wrapper,
 .nc-bottombar {
