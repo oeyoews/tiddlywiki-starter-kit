@@ -1,17 +1,14 @@
 created: 20220919032607654
 creator: oeyoews
-modified: 20220921001036372
+modified: 20220922145829442
 modifier: oeyoews
 tags: 
 title: neotw/example/delay-msg
 type: text/vnd.tiddlywiki
 
-\define delay-msg() 
-<$action-sendmessage $message="tm-notify" $param="neotw/welcome-msg"/> 
-\end
+\define delay-msg()  <$action-sendmessage $message="tm-notify" $param="neotw/welcome-msg"/> 
 
 \define delay-modal() <$action-sendmessage $message="tm-modal" $param="neotw/mobile/warning-text"/>
-\end
 
 * [[Timeoutjs|TiddlyTools/Time/action-timeout.js]]
 * talk ref <<emoji arrowright>> <<url "https://talk.tiddlywiki.org/t/is-delay-an-attribute-of-the-action-sendmessage-widget/3275/5?">>
