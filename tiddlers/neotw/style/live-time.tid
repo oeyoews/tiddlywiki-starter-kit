@@ -1,0 +1,11 @@
+created: 20220919195328871
+creator: oeyoews
+modified: 20220922001237758
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: neotw/style/live-time
+type: text/vnd.tiddlywiki
+
+.live-time {
+  outline: 0px solid #ccc;
+}
