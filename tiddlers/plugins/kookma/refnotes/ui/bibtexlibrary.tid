@@ -1,0 +1,64 @@
+caption: Bibliography
+created: 20181220153648454
+creator: oeyoews
+modified: 20220922141948890
+modifier: oeyoews
+tags: 
+title: $:/plugins/kookma/refnotes/ui/bibtexlibrary
+type: text/vnd.tiddlywiki
+
+\import [[$:/plugins/kookma/refnotes/macros/search-ui]]
+
+\define dispEntry()
+<$link/>
+<$macrocall $name=stretchText text="""
+<$view field="bibtex-author"/>. (<$view field="bibtex-year"/>). <$view field="bibtex-title"/>.""" />
+\end
+
+
+\define searchFilter() [has[bibtex-title]search:$(sField)$[$(sTerm)$]]
+
+\define bibLibrary()
+\import [[$:/plugins/kookma/refnotes/macros/stretch-text]]
+<$vars sField={{{[<searchTid>get[field]] ~[[bibtex-author]]}}} sTerm={{{[<searchTid>get[text]]}}}>
+
+<!-- show hide entry details -->
+<div class="tc-search refnotes-library" style="margin:10px 0 0 20px;">
+Show and Hide Details: &nbsp;
+<$button class="tc-btn-invisible" tooltip="show item details">{{$:/core/images/down-arrow}}
+<$list filter="[subfilter<searchFilter>]">
+<$action-setfield $tiddler=<<tmpTidDetails>> text=show />
+</$list>
+</$button>
+<$button class="tc-btn-invisible" tooltip="hide item details">{{$:/core/images/up-arrow}}
+<$list filter="[subfilter<searchFilter>]">
+<$action-deletetiddler $tiddler=<<tmpTidDetails>> />
+</$list>
+</$button>
+</div>
+
+<!-- show the library data -->
+<ol>
+<$list filter="[subfilter<searchFilter>]">
+<li><<dispEntry>></li>
+</$list>
+</ol>
+</$vars>
+\end
+
+<!-- interface -->
+<div style="margin-bottom:8px;">
+<<process-entries "Process New Entries">>
+{{$:/plugins/kookma/refnotes/ui/dropzone}}
+</div>
+
+<!-- make this optional
+[[Bibliography Table]]
+-->
+
+<<searchUi>>
+
+<<bibLibrary>>
+
+
+
