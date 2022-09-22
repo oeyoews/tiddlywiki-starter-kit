@@ -1,6 +1,6 @@
 created: 20220828120245453
 creator: oeyoews
-modified: 20220922022608054
+modified: 20220922035819126
 modifier: oeyoews
 tags: 
 title: Index
@@ -12,5 +12,3 @@ type: text/vnd.tiddlywiki
 <<layout "[img width=256 [showcase|neotw/image/showcase-01.png]]" right>>
 
 {{neotw/badges}}
-
-{{neotw/example/Live Time}}
