@@ -961,7 +961,7 @@ a.tc-tiddlylink:hover {
 		padding: 14px;
 		min-height: 32px;
 		margin-top: 0px;
-		transition:  min-height 250ms ease-in-out, padding-top 250ms ease-in-out, padding-bottom 250ms ease-in-out;
+		transition:  min-height 350ms ease-in-out, padding-top 350ms ease-in-out, padding-bottom 350ms ease-in-out;
 	}
 	
 	.tc-story-river {
@@ -2488,7 +2488,7 @@ span.cm-internallink {
   border: none;
   color: #3F3B3B;
   fill: #3F3B3B;
-  transition: all 250ms;
+  transition: all 350ms;
 }.gk0wk-backlinksbox-title:hover {
   opacity: 1;
   background: #ffffff;
@@ -2531,7 +2531,7 @@ span.cm-internallink {
   border-bottom: none;
   color: #3F3B3B !important;
   fill: #3F3B3B !important;
-  transition: all 250ms;
+  transition: all 350ms;
 }.gk0wk-backlinksbox-box-link:hover {
   background: #f5f5ee;
   filter: contrast(70%);
@@ -2554,7 +2554,7 @@ div#gk0wk-sidebar-resize-area {
 	top: 0;
 	left: -5px;
 	cursor: ew-resize;
-	transition: all 250ms;
+	transition: all 350ms;
 }div#gk0wk-sidebar-resize-area:hover {
 	background: #7f4bca;
 }
@@ -8167,7 +8167,7 @@ margin-top: 1px;
   top: auto !important;
   bottom: 0;
 }section.story-backdrop button {
-  transition: all 250ms;
+  transition: all 350ms;
   border: 0 !important;
 }section.story-backdrop > p, section.story-backdrop > p > div.tc-tab-buttons {
   background: white !important;
