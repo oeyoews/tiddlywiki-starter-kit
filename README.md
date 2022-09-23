@@ -2,8 +2,7 @@
 
 <h1>Neotw</h1>
 
-<hr>
-
+<img src="./img/flask.png" height=128 alt="flask">
 <!-- <img src="./img/white-vanilla.png" height=128 alt="cat(gitlab not support preview repo svg?)"> -->
 
 </div>
@@ -24,10 +23,6 @@
 <!-- tocstop -->
 
 ## What's the neotw
-
-<span style="float:right;width:156px">
-<img src="./img/flask.png" height=128 alt="flask">
-</span>
 
 > A modern style notebook based on tiddlywiki is v2 of the [tw5](https://github.com/oeyoews/tw5) repository
 
