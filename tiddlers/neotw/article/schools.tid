@@ -1,6 +1,6 @@
 created: 20220921022151105
 creator: oeyoews
-modified: 20220921041044597
+modified: 20220923133859351
 modifier: oeyoews
 tags: 
 title: neotw/article/schools
@@ -11,14 +11,14 @@ type: text/vnd.tiddlywiki
 * 报考条件是否满足
 * 所考专业课 408 or 数据结构
 * 专业课具体要求
-* 查询往年分数线， 录取情况
+* 查询往年复试分数线, 录取平均分数线， 录取比例
 * 招生简章 专业目录查询
 * 复试所考科目查询
 
 !! List
 
 [ ] 北方工业大学
-[ ] 北京工商大学
+[x] 北京工商大学
 [x] 北京工业大学
 [x] 北京语言大学 
 
