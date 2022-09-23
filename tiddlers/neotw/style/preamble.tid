@@ -1,0 +1,11 @@
+created: 20220923005759468
+creator: oeyoews
+modified: 20220923005818898
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: neotw/style/preamble
+type: text/vnd.tiddlywiki
+
+.doc-preamble {
+    border-radius: 6px;
+}

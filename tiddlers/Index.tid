@@ -1,13 +1,12 @@
 created: 20220828120245453
 creator: oeyoews
-modified: 20220923005336105
+modified: 20220923005710045
 modifier: oeyoews
 tags: 
 title: Index
 type: text/vnd.tiddlywiki
 
-<<.preamble """{{neotw/welcome-msg}} <<fnote "linear notebook">> {{$:/SiteSubtitle}}   """>>
-
+<<.preamble "{{neotw/welcome-msg}}">>
 
 <span style="float:right;width:156px">{{neotw/image/showcase-01.png}}</span>
 
