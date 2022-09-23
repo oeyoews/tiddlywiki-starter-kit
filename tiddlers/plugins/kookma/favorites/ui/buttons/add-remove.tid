@@ -2,7 +2,7 @@ caption: {{$:/plugins/kookma/favorites/images/heart}}{{$:/language/Buttons/Favor
 created: 20220901031443054
 creator: vanilla
 description: {{$:/language/Buttons/Favorites/Hint/Add}}
-modified: 20220901031715142
+modified: 20220923041801819
 modifier: oeyoews
 tags: $:/tags/ViewToolbar
 title: $:/plugins/kookma/favorites/ui/buttons/add-remove

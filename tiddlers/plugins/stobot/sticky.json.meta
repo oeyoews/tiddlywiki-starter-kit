@@ -1,0 +1,12 @@
+author: stobot
+core-version: >=5.1.23
+created: 20210905214035776
+description: Lightweight todo system
+list: readme config
+modified: 20211030150746534
+name: Stickies
+plugin-type: plugin
+source: 
+title: $:/plugins/stobot/sticky
+type: application/json
+version: 0.1.30

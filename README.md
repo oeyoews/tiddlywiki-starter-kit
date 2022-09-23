@@ -1,14 +1,10 @@
 <div align="center">
 
-<h1>neotw</h1>
-
-<img src="https://img.shields.io/badge/Status-Ing-blueviolet.svg?style=flat-square&logo=Chakra-Ui&color=90E59A&logoColor=green" alt="status" >
+<h1>Neotw</h1>
 
 <hr>
 
-<img src="./img/flask.png" height=128 alt="flask">
-
-<img src="./img/white-vanilla.png" height=128 alt="cat(gitlab not support preview repo svg?)">
+<!-- <img src="./img/white-vanilla.png" height=128 alt="cat(gitlab not support preview repo svg?)"> -->
 
 </div>
 
@@ -24,11 +20,14 @@
 - [Run](#run)
 - [Configuration](#configuration)
 - [Preview](#preview)
-- [License](#license)
 
 <!-- tocstop -->
 
 ## What's the neotw
+
+<span style="float:right;width:156px">
+<img src="./img/flask.png" height=128 alt="flask">
+</span>
 
 > A modern style notebook, is v2 of the [tw5](https://github.com/oeyoews/tw5) repository
 
@@ -41,7 +40,7 @@
 
 ## ShowCases
 
-<img src="img/s5.png"/>
+<img src="img/s5.png" width=256/>
 
 ## FileStruct
 
@@ -88,6 +87,12 @@ The [makefile](makefile) file is used as the centeral configuration for `neotw`
 - vercel: https://neotw.vercel.app
 - netlify: https://neotw.netlify.app/
 
-## License
+---
 
-<img src="https://img.shields.io/badge/License-MIT-blueviolet.svg?style=flat-square&color=blue" alt="project-license">
+<div align="center">
+<div>
+<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/dev/assets/footers/gray0_ctp_on_line.svg?sanitize=true" alt="cat"/>
+</div>
+<img src="https://img.shields.io/badge/License-MIT-blueviolet.svg?style=for-the-badge&color=blue" alt="project-license">
+<img src="https://img.shields.io/badge/Status-Ing-blueviolet.svg?style=for-the-badge&logo=Chakra-Ui&color=90E59A&logoColor=green" alt="status" >
+</div>
