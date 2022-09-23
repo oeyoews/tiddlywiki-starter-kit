@@ -1,6 +1,6 @@
 created: 20220821045909565
 creator: oeyoews
-modified: 20220922001622398
+modified: 20220923004840901
 modifier: oeyoews
 tags: 
 title: neotw/badges
@@ -40,7 +40,7 @@ type: text/vnd.tiddlywiki
 \define subwiki-private()  <$count filter="[!has[draft.of]tag[private]]"/>
 \define totaltiddlers() <$count filter="[!is[system]sort[title]]"/> 
 
-<div style="font-weight:regular;border-radius:4px;font-size:60%;padding: 2px 5px 2px;user-select: none;text-align:center;">
+<div style="font-weight:regular;border-radius:4px;font-size:60%;padding: 2px 5px 2px;user-select: none;text-align:left;">
 
 <<shield "Updated" "<<updatedtime>>">>  <<shield Plugins "<<totalplugins>>" blue>> <<shield Tiddlers "<<totaltiddlers>>(<<subwiki-private>>)" purple>> 
 </div>
