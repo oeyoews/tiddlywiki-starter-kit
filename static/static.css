@@ -8661,7 +8661,9 @@ CSShtml {
       left: 80%;
       transform: translate(-50%, 0);
     }
-  }input[type=range]:focus {
+  }.doc-preamble {
+    border-radius: 6px;
+}input[type=range]:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
 }
