@@ -8578,13 +8578,13 @@ CSShtml {
   border:2px solid none;
   word-break: break-all; word-wrap: break-word;}
 .neotw-info:before {
-		content: "ℹ️";
+		content: ℹ️;
 }.neotw-question:before {
-		content: "❓";
+		content: ❓;
 }.neotw-smile:before {
-		content: "😃";
+		content: 😃;
 }.neotw-checkbox:before {
-		content: "✅";
+		content: ✅;
 }.neotw-msg:before {
 		content: "💬";
 }.neotw-rocket:before {
@@ -8595,8 +8595,6 @@ CSShtml {
 		content: "🚿";
 }.neotw-helicopter:before {
 		content: "🚁";
-}.neotw-trigram:before {
-		content: "☯";
 }.neotw-traffic:before {
 		content: "🚦";
 }.neotw-hourglass:before {
