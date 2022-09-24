@@ -1,26 +1,29 @@
-checkbox: ✅
 created: 20220902154818583
 creator: oeyoews
-modified: 20220909163430679
+modified: 20220924093345009
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/style/emoji
 type: text/vnd.tiddlywiki
 
+\define emoji-dict(text)
+{{neotw/emoji.dict##$text$}}
+\end
+
 .neotw-info:before {
-		content: "{{neotw/emoji.dict##info}}";
+		content: <<emoji-dict info>>;
 }
 
 .neotw-question:before {
-		content: "{{neotw/emoji.dict##question}}";
+		content: <<emoji-dict question>>;
 }
 
 .neotw-smile:before {
-		content: "{{neotw/emoji.dict##smile}}";
+		content: <<emoji-dict smile>>;
 }
 
 .neotw-checkbox:before {
-		content: "{{!!checkbox}}";
+		content: <<emoji-dict checkbox>>;
 }
 
 .neotw-msg:before {
@@ -41,10 +44,6 @@ type: text/vnd.tiddlywiki
 
 .neotw-helicopter:before {
 		content: "🚁";
-}
-
-.neotw-trigram:before {
-		content: "☯";
 }
 
 .neotw-traffic:before {
