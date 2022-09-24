@@ -8620,6 +8620,8 @@ CSShtml {
    text-align: right;
 }.tc-tiddler-view-frame .tc-titlebar span + span {
    flex: 1 1 auto;
+}.kk-formatter-dropdown {
+    max-width: 12.6em;
 }.neotw-fw {
 	font-weight: bold;
 }.neotw-gradient {
