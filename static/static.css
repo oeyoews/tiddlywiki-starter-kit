@@ -5379,7 +5379,14 @@ April 13, 2018
   filter: alpha(opacity=100);
   opacity: 1;
 }
-.tc-editor-toolbar button.kk-formatter-btn + .tc-popup .tc-drop-down {
+.tc-editor-toolbar button.kk-formatter-btn + .tc-popup .tc-drop-down button.tc-btn-invisible.kk-sh-letter {
+	background-color: #cccccc;
+	color: #888888;;
+	fill: #888888;;
+	border-radius: 4px;
+	padding: 3px 4px;
+	margin: 2px 0 2px 4px;
+}.tc-editor-toolbar button.kk-formatter-btn + .tc-popup .tc-drop-down {
 	min-width:20px;
 }
 
@@ -5412,14 +5419,7 @@ April 13, 2018
 	max-width:6.6em;
 }
 
-.tc-editor-toolbar button.kk-formatter-btn + .tc-popup .tc-drop-down button.tc-btn-invisible.kk-sh-letter {
-	background-color: #cccccc;
-	color: #888888;;
-	fill: #888888;;
-	border-radius: 4px;
-	padding: 3px 4px;
-	margin: 2px 0 2px 4px;
-}.kk-sh-formatter-label {
+.kk-sh-formatter-label {
 	margin-bottom:10px;
 	width:100%;
 }
