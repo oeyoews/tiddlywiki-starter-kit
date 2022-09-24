@@ -1,0 +1,19 @@
+created: 20211027134000011
+creator: oeyoews
+list-before: $:/core/ui/ViewTemplate/body
+modified: 20220924021552895
+modifier: oeyoews
+tags: $:/plugins/TiddlyTweaks/CodeUtilities/Macro bookmark
+title: $:/plugins/TiddlyTweaks/CodeUtilities/Stylesheet/ViewTemplate
+type: text/vnd.tiddlywiki
+
+<$list filter="[{!!title}tag[$:/tags/Stylesheet]][{!!title}type[text/css]]">
+<$reveal type=nomatch stateTitle=<<folded-state>> text=hide>
+<$macrocall $name=copy-code language=css display-language=show code={{!!text}}/>
+</$reveal>
+</$list>
+<$list filter="[{!!title}tag[$:/tags/Macro]][{!!title}tag[$:/tags/ViewTemplate]][{!!title}tag[$:/tags/EditorToolbar]]">
+<$reveal type=nomatch stateTitle=<<folded-state>> text=hide>
+<$macrocall $name=copy-code language=html display-language=hide code={{!!text}}/>
+</$reveal>
+</$list>

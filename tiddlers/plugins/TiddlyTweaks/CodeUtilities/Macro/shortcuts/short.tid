@@ -1,0 +1,19 @@
+caption: shortcut copy code button
+condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]]
+created: 20210527212751871
+creator: user
+description: Transform the selection into a code bloc with a copy to clipboard button
+icon: $:/core/images/copy-clipboard
+modified: 20220924021655318
+modifier: oeyoews
+shortcuts: alt-m
+tags: $:/plugins/TiddlyTweaks/CodeUtilities/Macro
+title: $:/plugins/TiddlyTweaks/CodeUtilities/Macro/shortcuts/short
+type: text/vnd.tiddlywiki
+
+<$action-sendmessage
+    $message="tm-edit-text-operation"
+    $param="wrap-selection"
+    prefix='<<copy-code html """'
+    suffix='""">>'
+/>

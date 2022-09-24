@@ -1,0 +1,12 @@
+author: Mohammad Rahmani
+core-version: >=5.2.2
+description: Editor buttons and snippets for Shiraz
+list: readme license history
+name: Shiraz Formatter
+parent-plugin: $:/plugins/kookma/shiraz
+plugin-type: plugin
+source: https://github.com/kookma/TW-Shiraz
+tags: 
+title: $:/plugins/kookma/shiraz-formatter
+type: application/json
+version: 0.1.0
