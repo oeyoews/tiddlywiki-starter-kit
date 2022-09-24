@@ -6925,9 +6925,9 @@ height:1em;
   border: 1px solid gainsboro;
   text-align: center;
 }.sticky-active {
-  color: red; font-weight: 500;
+  color:red ; font-weight: 700;
 }.sticky-done {
-  font-weight: 500;
+  color:green;font-weight: 700;
 }/* details and summary */details {
    transition: height 1s ease;
    padding: 0 0.5em 0 0.66em;
