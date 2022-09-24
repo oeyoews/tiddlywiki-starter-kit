@@ -1,0 +1,18 @@
+list-style: none
+list-search: ^\W*?(\w|\<.*)
+table-style: line
+table-search: (.*)
+table-searchbar: show
+sidebar-style: trim
+sidebar-search: ^\W*?(\w|\<.*)
+sidebar-searchbar: show
+line-search: (.*)
+trim-search: ^\W*?(\w|\<.*)
+todo-search: .*?(\<\<sticky\s".+?"\>\>).*
+done-message: Congratulations, no stickies left!
+done-tooltip: 
+char-unchecked: &#x2718;
+char-checked: &#x2713;
+active-css: color:red ; font-weight: 700;
+done-css: color:green;font-weight: 700;
+delete-key: shift
