@@ -1,24 +1,26 @@
 {
-	"description": "TiddlyWiki Plugin Library",
-	"plugins": [
-		"tiddlywiki/pluginlibrary"
-	],
-	"build": {
-		"library": [
-			"--makelibrary",
-			"$:/UpgradeLibrary",
-			"--savelibrarytiddlers",
-			"$:/UpgradeLibrary",
-			"[prefix[$:/plugins/oeyoews]]",
-			"recipes/library/tiddlers/",
-			"$:/UpgradeLibrary/List",
-			"--savetiddler",
-			"$:/UpgradeLibrary/List",
-			"recipes/library/tiddlers.json",
-			"--rendertiddler",
-			"$:/plugins/tiddlywiki/pluginlibrary/library.template.html",
-			"index.html",
-			"text/plain"
-		]
-	}
+  "description": "TiddlyWiki Plugin Library",
+  "plugins": [
+    "tiddlywiki/pluginlibrary"
+  ],
+  "build": {
+    "library": [
+      "--output",
+      "../../library",
+      "--makelibrary",
+      "$:/UpgradeLibrary",
+      "--savelibrarytiddlers",
+      "$:/UpgradeLibrary",
+      "[prefix[$:/plugins/oeyoews]]",
+      "recipes/library/tiddlers/",
+      "$:/UpgradeLibrary/List",
+      "--savetiddler",
+      "$:/UpgradeLibrary/List",
+      "recipes/library/tiddlers.json",
+      "--rendertiddler",
+      "$:/plugins/tiddlywiki/pluginlibrary/library.template.html",
+      "index.html",
+      "text/plain"
+    ]
+  }
 }

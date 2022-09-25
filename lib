@@ -13,4 +13,4 @@ cp dev/plugins/* ${libpath}/plugins/oeyoews -r
 cp src/library-template ${libpath} -r
 
 cd ${libpath}
-node ${bin} library-template/ --output ../../library --build library
+node ${bin} library-template/ --build library
