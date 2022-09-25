@@ -1,0 +1,30 @@
+caption: random tiddlers
+created: 20220925131926846
+creator: oeyoews
+description: {{$:/language/Buttons/RandomSelection/Hint}}
+modified: 20220925134636081
+modifier: oeyoews
+tags: 
+title: neotw/button/random
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+
+\define randomTiddler(filter, label)
+<$let seed=<<now XXX>>
+      minNum  = 1
+      maxNum  = {{{ [subfilter<__filter__>count[]] }}}
+      randNum = {{{ [<maxNum>subtract<minNum>multiply<seed>divide[999]add<minNum>round[]]  }}}
+>
+<$link to={{{ [subfilter<__filter__>nth<randNum>] :else[subfilter<__filter__>first[]] }}}>$label$</$link>
+</$let>
+\end
+
+<$button tooltip="random tiddler" aria-label="random tiddler" class=<<tv-config-toolbar-class>> actions={{neotw/article/1 17}}>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+<<randomTiddler "[tag[private]]" "{{neotw/image/randomselection.svg}}">>
+<$list filter="[<tv-config-toolbar-text>match[yes]]">
+<span class="tc-btn-text"><$text text="random tiddlers"/></span>
+</$list>
+</$list>
+</$button>
