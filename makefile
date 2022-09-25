@@ -14,6 +14,7 @@ NEOTWBIN = "$(HOME)/.local/bin/$(PKGNAME)"
 neotwdir-user= "$(PWD)"
 repo-plateform = gitlab
 subwiki-address = https://$(repo-plateform).com/$(USER)/subwiki.git
+archrepo = ssh://aur@aur.archlinux.org/tidgi.git
 logfile = "/tmp/neotw.log"
 
 # adjust os, just test on linux
@@ -69,8 +70,12 @@ view-log:
 bpview:
 	@make build; google-chrome-stable dist/index.html
 
+# check dir
 install-subwiki:
 	@git clone --depth 1 $(subwiki-address) tiddlers/subwiki
+
+install-archrepo:
+	@git clone --depth 1 $(archrepo) dev/archrepo
 
 # install service
 install-bin:

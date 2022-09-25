@@ -1,6 +1,6 @@
 # Maintainer: oeyoews <jyao4783@gmail.com>
 pkgname=tidgi
-pkgver=0.7.8
+pkgver=0.7.9
 pkgrel=1
 pkgdesc="Tiddlywiki5 desktop"
 arch=(x86_64)
