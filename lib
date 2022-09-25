@@ -12,5 +12,6 @@ mkdir ${libpath}/plugins/oeyoews
 cp dev/plugins/* ${libpath}/plugins/oeyoews -r
 cp src/library-template ${libpath} -r
 
+# node_modules folder
 cd ${libpath}
 node ${bin} library-template/ --build library

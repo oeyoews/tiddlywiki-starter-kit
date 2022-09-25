@@ -52,7 +52,8 @@ build:
 	$(CMD) $(NEOTWTEMP) --build static >> $(logfile) 2>&1  # static giscus and commpand palette widget have a error
 # $(CMD) public --build favicon >> /tmp/neotw.log 2>&1  # favicon
 # $(CMD) public --output dist/ --build debug >> /tmp/neotw.log 2>&1  # build
-	@cp -r src/vercel.json library/ dist/; echo -e "🎉 `ls  -sh dist/index.html`" # patch
+	@rm -rf dist/library/; mv library/ dist/
+	@cp -r src/vercel.json dist/; echo -e "🎉 `ls  -sh dist/index.html`" # patch
 	@make clean;
 	@tree dist/ -L 1
 
