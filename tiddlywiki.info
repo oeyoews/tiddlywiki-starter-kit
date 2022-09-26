@@ -2,7 +2,6 @@
     "description": "neotw edition",
     "plugins": [
         "tiddlywiki/tiddlyweb",
-        "tiddlywiki/help",
         "tiddlywiki/filesystem",
         "tiddlywiki/highlight",
         "tiddlywiki/katex",
