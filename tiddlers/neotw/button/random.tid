@@ -2,7 +2,7 @@ caption: random tiddlers
 created: 20220925131926846
 creator: oeyoews
 description: {{$:/language/Buttons/RandomSelection/Hint}}
-modified: 20220925134636081
+modified: 20220926035346103
 modifier: oeyoews
 tags: 
 title: neotw/button/random
@@ -20,7 +20,7 @@ type: text/vnd.tiddlywiki
 </$let>
 \end
 
-<$button tooltip="random tiddler" aria-label="random tiddler" class=<<tv-config-toolbar-class>> actions={{neotw/article/1 17}}>
+<$button tooltip="random tiddler" aria-label="random tiddler" class=<<tv-config-toolbar-class>> actions={{neotw/style/codemirror-font-size}}>
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
 <<randomTiddler "[tag[private]]" "{{neotw/image/randomselection.svg}}">>
 <$list filter="[<tv-config-toolbar-text>match[yes]]">
