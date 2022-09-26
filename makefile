@@ -42,6 +42,7 @@ run-to-the-world:
 build:
 	@sh ./lib
 	@make clean;
+	@rm -rf dist/
 	@mkdir $(NEOTWTEMP)
 	@cp -r tiddlers/ dev/ tiddlywiki.info $(NEOTWTEMP)
 # if error how to exit
@@ -49,10 +50,10 @@ build:
 		$(NEOTWTEMP)/tiddlers/trashbin \
 	 	$(NEOTWTEMP)/tiddlers/\$$__StoryLis*.tid
 	$(CMD) $(NEOTWTEMP) --build index >> $(logfile) 2>&1  # build
-	$(CMD) $(NEOTWTEMP) --build static >> $(logfile) 2>&1  # static giscus and commpand palette widget have a error
+	# $(CMD) $(NEOTWTEMP) --build static >> $(logfile) 2>&1  # static giscus and commpand palette widget have a error
 # $(CMD) public --build favicon >> /tmp/neotw.log 2>&1  # favicon
 # $(CMD) public --output dist/ --build debug >> /tmp/neotw.log 2>&1  # build
-	@rm -rf dist/library/; mv library/ dist/
+	@mv library/ dist/
 	@cp -r src/vercel.json dist/; echo -e "🎉 `ls  -sh dist/index.html`" # patch
 	@make clean;
 	@tree dist/ -L 1
