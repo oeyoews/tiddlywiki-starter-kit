@@ -4,7 +4,6 @@
         "tiddlywiki/tiddlyweb",
         "tiddlywiki/filesystem",
         "tiddlywiki/highlight",
-        "tiddlywiki/katex",
         "tiddlywiki/browser-sniff",
         "tiddlywiki/codemirror",
         "tiddlywiki/codemirror-mode-xml",
@@ -13,9 +12,7 @@
         "tiddlywiki/codemirror-autocomplete",
         "tiddlywiki/codemirror-search-replace",
         "tiddlywiki/codemirror-closebrackets",
-        "tiddlywiki/codemirror-closetag",
-        "tiddlywiki/codemirror-mode-htmlmixed",
-        "tiddlywiki/codemirror-mode-htmlembedded"
+        "tiddlywiki/codemirror-closetag"
     ],
     "includeWikis": [
         {
