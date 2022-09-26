@@ -8570,7 +8570,9 @@ CSShtml {
       .neotw-right:after {
         border-left: 16px solid #9eea6a;
         right: -30px;
-      }.matched{
+      }.CodeMirror-wrap pre.CodeMirror-line {
+	font-size: 20px;
+}.matched{
 	background-color:cyan;
 	padding: 0 3px;
 	border-radius: 3px;
