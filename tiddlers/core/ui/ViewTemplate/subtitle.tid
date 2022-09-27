@@ -1,7 +1,7 @@
 caption: Subtitle Template
 created: 20210611015734693
 creator: @oeyoews
-modified: 20220912161428557
+modified: 20220927041810455
 modifier: oeyoews
 tags: $:/tags/ViewTemplate
 title: $:/core/ui/ViewTemplate/subtitle
@@ -20,7 +20,7 @@ type: text/vnd.tiddlywiki
 <<emoji dot-status>>Created &nbsp;<$view field="created" format="date" template="YYYY/0MM/0DD"/> &ensp;
 </$list>
 <$list filter="[all[current]has[modified]]">
-<<emoji edit>>Updated &nbsp;<$view field="modified" format="date" template={{neotw/template/date-format}} />&ensp;
+<<emoji dot-online>>Updated &nbsp;<$view field="modified" format="date" template={{neotw/template/date-format}} />&ensp;
 </$list>
 <$list filter="[all[current]has[description]]">
 <<emoji bingo>>{{!!description}}
