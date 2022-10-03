@@ -1,6 +1,6 @@
 created: 20221003050504474
 creator: oeyoews
-modified: 20221003051333674
+modified: 20221003051439629
 modifier: oeyoews
 tags: $:/tags/StartupAction/PostRender
 title: neotw/action/delay-help
@@ -11,5 +11,7 @@ type: text/vnd.tiddlywiki
 \end
 
 <$list filter="[{$:/info/url/protocol}prefix[https]]">
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]"> 
 <$action-timeout delay=3000 actions=<<delay-msg>>/>
+</$list>
 </$list>
