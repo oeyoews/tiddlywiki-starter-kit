@@ -16,6 +16,7 @@ repo-plateform = gitlab
 subwiki-address = https://$(repo-plateform).com/$(USER)/subwiki.git
 archrepo = ssh://aur@aur.archlinux.org/tidgi.git
 logfile = "/tmp/neotw.log"
+tidgi_dir = tidgi
 
 # adjust os, just test on linux
 ifeq ($(shell uname),Linux)
@@ -87,11 +88,8 @@ install-bin:
 
 # or yay tidgi directly
 install-tidgi:
-	@mkdir tidgi/; cp src/PKGBUILD tidgi/
-	@cd tidgi; makepkg; sudo pacman -U *.zst
-
-update-tidgi:
-	@cd tidgi; rm *.zst *.deb; makepkg; sudo pacman -U *.zst
+	@rm -rf $(tidgi_dir); mkdir $(tidgi_dir)/; cp src/PKGBUILD $(tidgi_dir)
+	@cd $(tidgi_dir); makepkg; sudo pacman -U *.zst
 
 edit-config:
 	@nvim tiddlywiki.info
