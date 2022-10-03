@@ -1,7 +1,7 @@
 created: 20220806081632787
 creator: oeyoews
 description: bells
-modified: 20220907025736247
+modified: 20221003055924510
 modifier: oeyoews
 tags: $:/tags/PageControls
 title: neotw/button/inbox
@@ -9,7 +9,7 @@ type: text/vnd.tiddlywiki
 
 \whitespace trim
 <$button tooltip="🧑 show your info" aria-label="show info" class=<<tv-config-toolbar-class>>> 
-{{neotw/image/bell}}
+{{neotw/image/inbox}}
 <$list filter="[<tv-config-toolbar-text>match[yes]]">
 <span class="tc-btn-text">
 <$text text="show your bells"/>
@@ -17,3 +17,7 @@ type: text/vnd.tiddlywiki
 </$list>
 <$action-navigate $to="neotw/INBOX"/>
 </$button>
+
+<!--
+<$button to="neotw/INBOX" class=<<tv-config-toolbar-class>> selectedClass="tc-selected"><i class="fa fa-inbox" style="font-size:140%; position:relative; bottom:-3px; left:-1px;"/></$button>
+-->
