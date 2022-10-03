@@ -88,7 +88,7 @@ install-bin:
 
 # or yay tidgi directly
 install-tidgi:
-	@rm -rf $(tidgi_dir); mkdir $(tidgi_dir)/; cp src/PKGBUILD $(tidgi_dir)
+	@rm -rf $(tidgi_dir); mkdir $(tidgi_dir)/; cp src/tidgi-repo/PKGBUILD $(tidgi_dir)
 	@cd $(tidgi_dir); makepkg; sudo pacman -U *.zst
 
 edit-config:
