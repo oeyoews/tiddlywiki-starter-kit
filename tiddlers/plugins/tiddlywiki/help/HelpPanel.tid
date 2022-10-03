@@ -1,0 +1,16 @@
+created: 20221003053544518
+creator: oeyoews
+modified: 20221003053557209
+modifier: oeyoews
+tags: $:/tags/PageTemplate
+title: $:/plugins/tiddlywiki/help/HelpPanel
+type: text/vnd.tiddlywiki
+
+<$reveal type="match" state="$:/config/ShowHelp" text="yes">
+<div class="tc-help-panel">
+<div class="tc-tiddler-controls">
+<$button set="$:/config/ShowHelp" setTo="no" class="tc-btn-invisible">{{$:/core/images/close-button}}</$button> ''Help Panel''
+</div>
+<<tabs "[all[shadows+tiddlers]tag[$:/tags/HelpPanel]!has[draft.of]]" "neotw/help/open" "$:/state/tab/help">>
+</div>
+</$reveal>
