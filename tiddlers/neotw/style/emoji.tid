@@ -1,6 +1,6 @@
 created: 20220902154818583
 creator: oeyoews
-modified: 20220924093345009
+modified: 20221004153714687
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/style/emoji
@@ -9,6 +9,10 @@ type: text/vnd.tiddlywiki
 \define emoji-dict(text)
 {{neotw/emoji.dict##$text$}}
 \end
+
+.neotw-error:before {
+		content: <<emoji-dict error>>;
+}
 
 .neotw-info:before {
 		content: <<emoji-dict info>>;

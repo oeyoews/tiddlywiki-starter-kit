@@ -1,6 +1,6 @@
 created: 20220901012627097
 creator: oeyoews
-modified: 20220924093401057
+modified: 20221004153424571
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/style/symbol
@@ -59,11 +59,6 @@ type: text/vnd.tiddlywiki
 .neotw-bingo:before {
 		content: "✓ ";
 		color: #008000;
-}
-
-.neotw-error:before {
-		content: "𝗫 ";
-		color: #e5534b;
 }
 
 .neotw-snow:before {
