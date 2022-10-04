@@ -1,7 +1,5 @@
 key: ((fullscreen))
-revision: 0
 tags: $:/tags/KeyboardShortcut
 title: $:/plugins/oeyoews/neotw-surfing-keys/fullscreen
-type: text/vnd.tiddlywiki
 
 <$action-sendmessage $message="tm-full-screen"/>

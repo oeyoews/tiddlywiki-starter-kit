@@ -1,9 +1,7 @@
 caption: snippet
 key: ((snippet))
-revision: 0
 tags: $:/tags/KeyboardShortcut
 title: $:/plugins/oeyoews/neotw-surfing-keys/snippet
-type: text/vnd.tiddlywiki
 
 <$navigator story="$:/StoryList" history="$:/HistoryList">
 <$action-sendmessage

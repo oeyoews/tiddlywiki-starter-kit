@@ -2,7 +2,6 @@ caption: Settings
 key: ((control))
 tags: $:/tags/KeyboardShortcut
 title: $:/plugins/oeyoews/neotw-surfing-keys/control
-type: text/vnd.tiddlywiki
 
 <$navigator story="$:/StoryList" history="$:/HistoryList">
   <$action-navigate $to="$:/ControlPanel" $scroll="yes"/>

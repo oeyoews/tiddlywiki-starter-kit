@@ -1,9 +1,7 @@
 caption: search-filter
 key: ((get-plugins))
-revision: 0
 tags: $:/tags/KeyboardShortcut
 title: $:/plugins/oeyoews/neotw-surfing-keys/get-plugins
-type: text/vnd.tiddlywiki
 
 <$navigator story="$:/StoryList" history="$:/HistoryList">
   <$action-navigate $to="$:/core/ui/ControlPanel/Plugins" $scroll="yes"/>
