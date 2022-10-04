@@ -2,7 +2,9 @@ revision: 0
 title: $:/plugins/oeyoews/neotw-surfing-keys/readme
 type: text/vnd.tiddlywiki
 
-Customized shortcuts with `⌨️` at the beginning of description in [[shortcuts|$:/core/ui/ControlPanel/KeyboardShortcuts]] or press <kbd>alt h</kbd>
+!! NOTE
+
+* This plugin is part of neotw(not general maybe)
 
 !! TODO
 
@@ -10,3 +12,5 @@ Customized shortcuts with `⌨️` at the beginning of description in [[shortcut
 * can't scroll to determined tiddler repreat
 * another usage is if your tiddlywiki get bad, you can't find any buttons because of install some stanger plugins(even enable safemode), now you can press <kbd>ctrl I</kbd> to call setting
 * add system image for tips use class
+
+Customized shortcuts with `⌨️` at the beginning of description in [[shortcuts|$:/core/ui/ControlPanel/KeyboardShortcuts]] or press <kbd>alt h</kbd>
