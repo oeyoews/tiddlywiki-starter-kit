@@ -1,0 +1,10 @@
+tags: $:/tags/Stylesheet
+title: $:/plugins/oeyoews/neotw-surfing-keys/style
+type: text/vnd.tiddlywiki
+
+.neotw-surfing-keys {
+  position: fixed;
+    right: 1em;
+    bottom: 5px;
+    z-index: 2;
+}

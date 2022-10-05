@@ -11,12 +11,13 @@ SERVICETEMPLATEFILE = "src/neotw-template.service"
 SERVICEFILE = "neotw-user.service"
 SERVICETARGETFILE = "$(HOME)/.config/systemd/user/$(SERVICEFILE)"
 NEOTWBIN = "$(HOME)/.local/bin/$(PKGNAME)"
-neotwdir-user= "$(PWD)"
+neotwdir-user= $(PWD)
 repo-plateform = gitlab
 subwiki-address = https://$(repo-plateform).com/$(USER)/subwiki.git
 archrepo = ssh://aur@aur.archlinux.org/tidgi.git
 logfile = "/tmp/neotw.log"
 tidgi_dir = tidgi
+version = $(shell node -e "console.log(require('./package.json').version);")
 
 # adjust os, just test on linux
 ifeq ($(shell uname),Linux)
@@ -94,9 +95,11 @@ install-tidgi:
 edit-config:
 	@nvim tiddlywiki.info
 
+	# @cp $(SERVICETEMPLATEFILE) $(SERVICEFILE)
+	# @sed -i "s#NEOTWDIR#$(neotwdir-user)#" $(SERVICEFILE)
+	# echo $(neotwdir-user)
 test:
-	@cp $(SERVICETEMPLATEFILE) $(SERVICEFILE)
-	@sed -i "s#NEOTWDIR#$(neotwdir-user)#" $(SERVICEFILE)
+	@echo ${version}
 
 install-service:
 	@cp $(SERVICETEMPLATEFILE) $(SERVICEFILE)
