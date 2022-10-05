@@ -2,13 +2,12 @@
     "title": "$:/plugins/oeyoews/neotw-surfing-keys",
     "name": "Some shortcuts",
     "description": "Some shortcuts",
-    "author": "",
-    "version": "v0.2.2",
+    "author": "oeyoews",
+    "version": "v0.2.3",
     "core-version": "5.2.3",
     "source": "",
     "list": "readme",
     "parent-plugin": "",
     "dependents": "",
-    "plugin-type": "plugin",
-    "packaged-by": "Gatha on 20th September 2022, 17:09:56"
+    "plugin-type": "plugin"
 }
