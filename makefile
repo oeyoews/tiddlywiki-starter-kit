@@ -94,9 +94,13 @@ install-tidgi:
 edit-config:
 	@nvim tiddlywiki.info
 
+test:
+	@cp $(SERVICETEMPLATEFILE) $(SERVICEFILE)
+	@sed -i "s#NEOTWDIR#$(neotwdir-user)#" $(SERVICEFILE)
+
 install-service:
 	@cp $(SERVICETEMPLATEFILE) $(SERVICEFILE)
-	@sed -i "s#neotwdir#$(neotwdir-user)#" $(SERVICEFILE)
+	@sed -i "s#\$NEOTWDIR#$(neotwdir-user)#" $(SERVICEFILE)
 	@mv -i $(SERVICEFILE) $(SERVICETARGETFILE)
 	@echo "🎉 $(SERVICETARGETFILE) file has installed"
 
