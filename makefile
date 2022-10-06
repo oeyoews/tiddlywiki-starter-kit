@@ -22,9 +22,7 @@ run-to-the-world:
 build: lib
 	@echo -e  👷 $(Green)Building 🗘 $(Color_off)
 	@sh ./lib
-	@make clean;
-	@rm -rf $(dist)
-	@mkdir $(NEOTWTEMP)
+	@rm -rf $(dist) $(NEOTWTEMP); mkdir $(NEOTWTEMP)
 	@cp -r tiddlers/ dev/ tiddlywiki.info $(NEOTWTEMP)
 # if error how to exit
 	@rm -rf $(NEOTWTEMP)/tiddlers/subwiki \
@@ -36,7 +34,6 @@ build: lib
 # $(CMD) public --output dist/ --build debug >> /tmp/neotw.log 2>&1  # build
 	@mv library/ $(dist)
 	@cp -r src/vercel.json $(dist); echo "📁 `ls  -sh $(dist)/index.html`" # patch
-	@make clean;
 	@tree $(dist) -L 1
 	@echo -e 🎉 $(Green)Finished ✔ $(Color_off)
 
@@ -117,4 +114,4 @@ uninstall-service:
 # clean
 .PHONY: clean
 clean:
-	@rm -rf $(NEOTWTEMP)
+	@rm -rf $(NEOTWTEMP) $(dist)
