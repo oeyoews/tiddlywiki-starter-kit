@@ -22,7 +22,7 @@ run-to-the-world:
 # generate index.html(support subwiki, but not build html no include subwiki)
 # note: because use make, so can't read this `tiddlywiki` cmd from current project, recommend install tiddlywiki global, likw `yarn global add tiddlywiki`
 # should before build
-build:
+build: lib
 	@sh ./lib
 	@make clean;
 	@rm -rf ${dist}
@@ -41,7 +41,7 @@ build:
 	@make clean;
 	@tree ${dist} -L 1
 
-build-lib:
+build-lib: lib
 	@sh ./lib
 
 # view
@@ -49,7 +49,7 @@ view:
 	@google-chrome-stable ${dist}/index.html
 
 view-log:
-	nvim $(logfile)
+	@nvim $(logfile)
 
 # bpview
 bpview:
@@ -74,13 +74,14 @@ install-tidgi:
 	@cd $(tidgi_dir); makepkg; sudo pacman -U *.zst
 
 edit-config:
-	@nvim tiddlywiki.info
+	@nvim ${tiddlywiki_configfile}
 
-	# @cp $(SERVICETEMPLATEFILE) $(SERVICEFILE)
-	# @sed -i "s#NEOTWDIR#$(neotwdir-user)#" $(SERVICEFILE)
-	# echo $(neotwdir-user)
-test:
-	@echo ${version}
+# @cp $(SERVICETEMPLATEFILE) $(SERVICEFILE)
+# @sed -i "s#NEOTWDIR#$(neotwdir-user)#" $(SERVICEFILE)
+# echo $(neotwdir-user)
+test: package.json
+	@echo version: ${version}
+	@echo project: ${PROJECT}
 
 install-service:
 	@cp $(SERVICETEMPLATEFILE) $(SERVICEFILE)

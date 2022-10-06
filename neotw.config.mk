@@ -1,3 +1,7 @@
+define GetFromPkg
+$(shell node -p "require('./package.json').$(1)")
+endef
+
 ENABLESTATIC = false
 PACKAGE = "TiddlyWiki5"
 PKGNAME = "neotw"
@@ -16,5 +20,9 @@ subwiki-address = https://$(repo-plateform).com/$(USER)/subwiki.git
 archrepo = ssh://aur@aur.archlinux.org/tidgi.git
 logfile = "/tmp/neotw.log"
 tidgi_dir = tidgi
-version = $(shell node -e "console.log(require('./package.json').version);")
+# version = $(shell node -e "console.log(require('./package.json').version);")
 dist = dist
+tiddlywiki_configfile = tiddlywiki.info
+
+PROJECT      := $(call GetFromPkg,name)
+version := $(call GetFromPkg,version)
