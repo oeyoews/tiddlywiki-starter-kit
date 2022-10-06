@@ -7,6 +7,13 @@ else
 	PLATFORM="😭 Not supported"
 endif
 
+test:
+	@echo $(TestVariable)
+
+info: package.json
+	@echo version: ${version}
+	@echo project: ${PROJECT}
+
 # startup tiddlywiki
 run:
 	@echo "ℹ️  Your current OS is $(PLATFORM) \
@@ -79,9 +86,6 @@ edit-config:
 # @cp $(SERVICETEMPLATEFILE) $(SERVICEFILE)
 # @sed -i "s#NEOTWDIR#$(neotwdir-user)#" $(SERVICEFILE)
 # echo $(neotwdir-user)
-test: package.json
-	@echo version: ${version}
-	@echo project: ${PROJECT}
 
 install-service:
 	@cp $(SERVICETEMPLATEFILE) $(SERVICEFILE)
