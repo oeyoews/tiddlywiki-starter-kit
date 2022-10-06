@@ -10,7 +10,7 @@ endif
 test:
 	@echo $(TestVariable)
 
-info: package.json
+info: $(PackageJson)
 	@echo version: ${version}
 	@echo project: ${PROJECT}
 
@@ -60,7 +60,7 @@ view-log:
 
 # bpview
 bpview:
-	@make build; google-chrome-stable ${dist}/index.html
+	@make build; google-chrome-stable $(dist)/index.html
 
 # check dir
 install-subwiki:
