@@ -1,5 +1,5 @@
 include ./neotw.config.mk
-include ./color.mk
+include ./src/color.mk
 
 info: $(PackageJson)
 	@echo -e " project: $(PROJECT)\n version: $(version)\n platform: $(PLATFORM)"
