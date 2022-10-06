@@ -20,7 +20,7 @@ run-to-the-world:
 # note: because use make, so can't read this `tiddlywiki` cmd from current project, recommend install tiddlywiki global, likw `yarn global add tiddlywiki`
 # should before build
 build: lib
-	@echo -e $(Green) Beginning 🗘 $(Color_off)
+	@echo -e  👷 $(Green)Building 🗘 $(Color_off)
 	@sh ./lib
 	@make clean;
 	@rm -rf $(dist)
@@ -35,10 +35,10 @@ build: lib
 # $(CMD) public --build favicon >> /tmp/neotw.log 2>&1  # favicon
 # $(CMD) public --output dist/ --build debug >> /tmp/neotw.log 2>&1  # build
 	@mv library/ $(dist)
-	@cp -r src/vercel.json $(dist); echo -e "🎉 `ls  -sh $(dist)/index.html`" # patch
+	@cp -r src/vercel.json $(dist); echo "📁 `ls  -sh $(dist)/index.html`" # patch
 	@make clean;
 	@tree $(dist) -L 1
-	@echo -e $(Green) Finished ✔ $(Color_off)
+	@echo -e 🎉 $(Green)Finished ✔ $(Color_off)
 
 build-lib: lib
 	@sh ./lib
