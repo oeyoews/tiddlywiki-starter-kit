@@ -18,6 +18,7 @@ archrepo = ssh://aur@aur.archlinux.org/tidgi.git
 logfile = "/tmp/neotw.log"
 tidgi_dir = tidgi
 version = $(shell node -e "console.log(require('./package.json').version);")
+dist = dist
 
 # adjust os, just test on linux
 ifeq ($(shell uname),Linux)
@@ -44,7 +45,7 @@ run-to-the-world:
 build:
 	@sh ./lib
 	@make clean;
-	@rm -rf dist/
+	@rm -rf ${dist}
 	@mkdir $(NEOTWTEMP)
 	@cp -r tiddlers/ dev/ tiddlywiki.info $(NEOTWTEMP)
 # if error how to exit
@@ -55,24 +56,24 @@ build:
 	# $(CMD) $(NEOTWTEMP) --build static >> $(logfile) 2>&1  # static giscus and commpand palette widget have a error
 # $(CMD) public --build favicon >> /tmp/neotw.log 2>&1  # favicon
 # $(CMD) public --output dist/ --build debug >> /tmp/neotw.log 2>&1  # build
-	@mv library/ dist/
-	@cp -r src/vercel.json dist/; echo -e "🎉 `ls  -sh dist/index.html`" # patch
+	@mv library/ ${dist}
+	@cp -r src/vercel.json ${dist}; echo -e "🎉 `ls  -sh ${dist}/index.html`" # patch
 	@make clean;
-	@tree dist/ -L 1
+	@tree ${dist} -L 1
 
 build-lib:
 	@sh ./lib
 
 # view
 view:
-	@google-chrome-stable dist/index.html
+	@google-chrome-stable ${dist}/index.html
 
 view-log:
 	nvim $(logfile)
 
 # bpview
 bpview:
-	@make build; google-chrome-stable dist/index.html
+	@make build; google-chrome-stable ${dist}/index.html
 
 # check dir
 install-subwiki:
