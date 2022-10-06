@@ -20,7 +20,7 @@ run-to-the-world:
 # note: because use make, so can't read this `tiddlywiki` cmd from current project, recommend install tiddlywiki global, likw `yarn global add tiddlywiki`
 # should before build
 build: lib
-	@echo -e $(Green) Beginning  $(Color_off)
+	@echo -e $(Green) Beginning 🗘 $(Color_off)
 	@sh ./lib
 	@make clean;
 	@rm -rf $(dist)
