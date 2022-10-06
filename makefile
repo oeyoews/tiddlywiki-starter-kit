@@ -1,18 +1,8 @@
 include ./neotw.config.mk
-
-# adjust os, just test on linux
-ifeq ($(shell uname),Linux)
-	PLATFORM="🐧 Linux"
-else
-	PLATFORM="😭 Not supported"
-endif
-
-test:
-	@echo $(TestVariable)
+include ./color.mk
 
 info: $(PackageJson)
-	@echo version: ${version}
-	@echo project: ${PROJECT}
+	@echo -e " project: $(PROJECT)\n version: $(version)\n platform: $(PLATFORM)"
 
 # startup tiddlywiki
 run:
@@ -30,9 +20,10 @@ run-to-the-world:
 # note: because use make, so can't read this `tiddlywiki` cmd from current project, recommend install tiddlywiki global, likw `yarn global add tiddlywiki`
 # should before build
 build: lib
+	@echo -e $(Green) Beginning  $(Color_off)
 	@sh ./lib
 	@make clean;
-	@rm -rf ${dist}
+	@rm -rf $(dist)
 	@mkdir $(NEOTWTEMP)
 	@cp -r tiddlers/ dev/ tiddlywiki.info $(NEOTWTEMP)
 # if error how to exit
@@ -40,20 +31,21 @@ build: lib
 		$(NEOTWTEMP)/tiddlers/trashbin \
 	 	$(NEOTWTEMP)/tiddlers/\$$__StoryLis*.tid
 	$(CMD) $(NEOTWTEMP) --build index >> $(logfile) 2>&1  # build
-	# $(CMD) $(NEOTWTEMP) --build static >> $(logfile) 2>&1  # static giscus and commpand palette widget have a error
+# $(CMD) $(NEOTWTEMP) --build static >> $(logfile) 2>&1  # static giscus and commpand palette widget have a error
 # $(CMD) public --build favicon >> /tmp/neotw.log 2>&1  # favicon
 # $(CMD) public --output dist/ --build debug >> /tmp/neotw.log 2>&1  # build
-	@mv library/ ${dist}
-	@cp -r src/vercel.json ${dist}; echo -e "🎉 `ls  -sh ${dist}/index.html`" # patch
+	@mv library/ $(dist)
+	@cp -r src/vercel.json $(dist); echo -e "🎉 `ls  -sh $(dist)/index.html`" # patch
 	@make clean;
-	@tree ${dist} -L 1
+	@tree $(dist) -L 1
+	@echo -e $(Green) Finished ✔ $(Color_off)
 
 build-lib: lib
 	@sh ./lib
 
 # view
 view:
-	@google-chrome-stable ${dist}/index.html
+	@google-chrome-stable $(dist)/index.html
 
 view-log:
 	@nvim $(logfile)
@@ -73,7 +65,7 @@ install-archrepo:
 install-bin:
 	@echo "tiddlywiki --listen" > $(NEOTWBIN)
 	@chmod +x ~/.local/bin/$(PKGNAME)
-	@echo "🎉 Installed neotw"
+	@echo "🎉 Installed neotw ✔"
 
 # or yay tidgi directly
 install-tidgi:
@@ -81,7 +73,7 @@ install-tidgi:
 	@cd $(tidgi_dir); makepkg; sudo pacman -U *.zst
 
 edit-config:
-	@nvim ${tiddlywiki_configfile}
+	@nvim $(tiddlywiki_configfile)
 
 # @cp $(SERVICETEMPLATEFILE) $(SERVICEFILE)
 # @sed -i "s#NEOTWDIR#$(neotwdir-user)#" $(SERVICEFILE)

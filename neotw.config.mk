@@ -5,6 +5,13 @@ define GetFromPkg
 $(shell node -p "require('./package.json').$(1)")
 endef
 
+# adjust os, just test on linux
+ifeq ($(shell uname),Linux)
+	PLATFORM="🐧 Linux"
+else
+	PLATFORM="😭 Not supported ✘"
+endif
+
 ENABLESTATIC := false
 PACKAGE := TiddlyWiki5
 PKGNAME := neotw
