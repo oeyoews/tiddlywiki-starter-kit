@@ -1,5 +1,6 @@
 title: $:/plugins/oeyoews/neotw-music/js/meting-js
 tags: $:/tags/RawMarkup
+type: application/javascript
 
 <script>
 class MetingJSElement extends HTMLElement {
