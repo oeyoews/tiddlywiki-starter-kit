@@ -15,6 +15,19 @@
     {
         "version": "0.0.1",
         "type": "application/json",
+        "title": "$:/plugins/oeyoews/neotw-confetti",
+        "plugin-type": "plugin",
+        "name": "neotw-confetti",
+        "core-version": ">=5.2.3",
+        "description": "neotw-confetti",
+        "author": "oeyoews",
+        "list": "readme",
+        "dependents": "",
+        "requires-reload": "no"
+    },
+    {
+        "version": "0.0.1",
+        "type": "application/json",
         "title": "$:/plugins/oeyoews/neotw-help",
         "plugin-type": "plugin",
         "name": "neotw-help",
