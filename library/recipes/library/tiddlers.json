@@ -23,7 +23,7 @@
         "author": "oeyoews",
         "list": "readme",
         "dependents": "",
-        "readme": "canvas confetti\n",
+        "readme": "* ref: https://github.com/catdad/canvas-confetti\n",
         "requires-reload": "no"
     },
     {
@@ -55,7 +55,7 @@
         "requires-reload": "no"
     },
     {
-        "version": "0.0.2",
+        "version": "0.0.3",
         "type": "application/json",
         "title": "$:/plugins/oeyoews/neotw-music",
         "plugin-type": "plugin",
