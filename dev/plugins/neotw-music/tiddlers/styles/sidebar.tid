@@ -1,0 +1,10 @@
+title: $:/plugins/oeyoews/neotw-music/style/aplayer-sidebar
+tags: $:/tags/Stylesheet
+
+.aplayer.aplayer-narrow .aplayer-body {
+  left: -66px !important;
+}
+
+.aplayer-body:hover {
+    left: 0px !important;
+}
