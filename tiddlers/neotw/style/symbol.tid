@@ -1,6 +1,6 @@
 created: 20220901012627097
 creator: oeyoews
-modified: 20221004153424571
+modified: 20221008160617255
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/style/symbol
@@ -32,8 +32,8 @@ type: text/vnd.tiddlywiki
 }
 
 .neotw-dot-online:before {
-		content: "● ";
-		color: #008000;
+		content:"● ";
+		color:#47f247;
 }
 
 .neotw-dot-off:before {
