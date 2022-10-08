@@ -2,14 +2,14 @@ created: 20220728151603887
 creator: oeyoews
 description: show your information
 list-after: neotw/repo-button
-modified: 20220906150512912
+modified: 20221007155030838
 modifier: oeyoews
 tags: $:/tags/PageControls
 title: neotw/user-info
 type: text/vnd.tiddlywiki
 
 \whitespace trim
-<$button tooltip="show your info" aria-label="show info" class=<<tv-config-toolbar-class>>>
+<$button tooltip="About me" aria-label="" class=<<tv-config-toolbar-class>>>
 
 {{$:/UserPanel}}
 
