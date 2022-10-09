@@ -1,11 +1,13 @@
-title: $:/plugins/oeyoews/neotw-confetti/confetti-id
+title: $:/plugins/oeyoews/neotw-confetti/confetti-fireworks
 tags: $:/tags/RawMarkupWikified/BottomBody
 type: application/javascript
 
 `<script>`
 var duration = 5 * 1000;
 var animationEnd = Date.now() + duration;
-var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+var defaults = { startVelocity: 30, spread: 360, ticks: 60, scalar: .6, zIndex:
+-100,
+};
 
 function randomInRange(min, max) {
   return Math.random() * (max - min) + min;
@@ -25,6 +27,6 @@ var interval = setInterval(function() {
 
 confetti({
 	zIndex: -100,
-	shapes: ['circle', 'circle', 'circle'],
+  scalar: .6,
   });
 `</script>`
