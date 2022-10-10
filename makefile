@@ -4,6 +4,9 @@ include ./src/color.mk
 info: $(PackageJson)
 	@echo -e " project: $(PROJECT)\n version: $(version)\n platform: $(PLATFORM)"
 
+bump: bump.mjs
+	yarn zx bump.mjs
+
 # startup tiddlywiki
 run:
 	@echo "ℹ️  Your current OS is $(PLATFORM) \
