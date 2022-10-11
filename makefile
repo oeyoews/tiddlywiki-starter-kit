@@ -1,6 +1,9 @@
 include ./neotw.config.mk
 include ./src/color.mk
 
+pre:
+	@yarn
+
 info: $(PackageJson)
 	@echo -e " Project: $(PROJECT)\n Version: $(version)\n Platform: $(PLATFORM)\n Commit: $(ShortCommitId)"
 
