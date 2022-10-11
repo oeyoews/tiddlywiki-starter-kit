@@ -1,4 +1,4 @@
-title: neotw/git/commit
+title: neotw/commit
 type: text/vnd.tiddlywiki
 
 \define commitid()

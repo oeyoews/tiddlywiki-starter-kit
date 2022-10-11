@@ -22,4 +22,4 @@ type: text/vnd.tiddlywiki
 <<layout "[img width=256 [showcase|neotw/image/showcase-01.png]]" right>>
 -->
 
-{{neotw/git/commit}}
+{{neotw/commit}}
