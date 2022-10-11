@@ -2,7 +2,7 @@ include ./neotw.config.mk
 include ./src/color.mk
 
 info: $(PackageJson)
-	@echo -e " Project: $(PROJECT)\n Version: $(version)\n Platform: $(PLATFORM)\n Commit: $(CommitId)"
+	@echo -e " Project: $(PROJECT)\n Version: $(version)\n Platform: $(PLATFORM)\n Commit: $(ShortCommitId)"
 
 update-git-commit:
 	@rm -rf $(TiddlyWiki-Git-File); cp $(TiddlyWiki-Git-TemplateFile) $(TiddlyWiki-Git-File)
