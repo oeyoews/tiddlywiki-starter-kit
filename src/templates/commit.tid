@@ -4,7 +4,7 @@ type: text/vnd.tiddlywiki
 \define commitid()
 Last Updated:
 <$button>
-<a href="https://github.com/oeyoews/neotw/commit/LongId" style="
+<a href="https://gitlab.com/oeyoews/neotw/commit/LongId" style="
 text-decoration:none;color: #539bf5" target="_blank">ShortId</a>
 </$button>
 \end
