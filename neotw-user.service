@@ -2,7 +2,7 @@
 Description=NeoTw Service
 
 [Service]
-WorkingDirectory=
+WorkingDirectory=/home/oeyoews/REPOS/neotw
 ExecStart=/usr/bin/tiddlywiki --build listen
 
 [Install]

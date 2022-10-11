@@ -84,14 +84,12 @@ install-tidgi:
 edit-config:
 	@nvim $(tiddlywiki_configfile)
 
-# @cp $(SERVICETEMPLATEFILE) $(SERVICEFILE)
-# @sed -i "s#NEOTWDIR#$(neotwdir-user)#" $(SERVICEFILE)
-# echo $(neotwdir-user)
+update-service-file:
+	@sed -i "5c WorkingDirectory=$(neotwdir-user)" $(SERVICEFILE)
 
 install-service:
-	@cp $(SERVICETEMPLATEFILE) $(SERVICEFILE)
-	@sed -i "s#\$NEOTWDIR#$(neotwdir-user)#" $(SERVICEFILE)
-	@mv -i $(SERVICEFILE) $(SERVICETARGETFILE)
+	@make update-service-file
+	@cp -i $(SERVICEFILE) $(SERVICETARGETFILE)
 	@echo "🎉 $(SERVICETARGETFILE) file has installed"
 
 # use highlight color
