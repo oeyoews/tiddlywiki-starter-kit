@@ -5,6 +5,7 @@ info: $(PackageJson)
 	@echo -e " Project: $(PROJECT)\n Version: $(version)\n Platform: $(PLATFORM)\n Commit: $(CommitId)"
 
 update-git-commit:
+	@rm -rf $(TiddlyWiki-Git-File); cp $(TiddlyWiki-Git-TemplateFile) $(TiddlyWiki-Git-File)
 	@sed -i "s#LongId#$(LongCommitId)#" $(TiddlyWiki-Git-File)
 	@sed -i "s#ShortId#$(ShortCommitId)#" $(TiddlyWiki-Git-File)
 
