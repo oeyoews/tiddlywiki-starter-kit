@@ -12,6 +12,7 @@ else
 	PLATFORM="😭 Not supported ✘"
 endif
 
+Description := "Hello"
 ENABLESTATIC := false
 PACKAGE := TiddlyWiki5
 PKGNAME := neotw
@@ -35,6 +36,9 @@ dist := dist
 tiddlywiki_configfile := tiddlywiki.info
 TestVariable := test
 PackageJson := package.json
+BumpFile := bump.mjs
+Lib := lib
+CommitId := $(shell git rev-parse --short HEAD && git show --pretty=format:"%ci %cr" | head -1)
 
 PROJECT      := $(call GetFromPkg,name)
 version := $(call GetFromPkg,version)

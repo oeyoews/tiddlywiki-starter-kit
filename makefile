@@ -2,9 +2,12 @@ include ./neotw.config.mk
 include ./src/color.mk
 
 info: $(PackageJson)
-	@echo -e " project: $(PROJECT)\n version: $(version)\n platform: $(PLATFORM)"
+	@echo -e " Project: $(PROJECT)\n Version: $(version)\n Platform: $(PLATFORM)\n Commit: $(CommitId)"
 
-bump: bump.mjs
+test:
+	@echo $(TIME)
+
+bump: $(BumpFile)
 	yarn zx bump.mjs
 
 # startup tiddlywiki
@@ -22,7 +25,7 @@ run-to-the-world:
 # generate index.html(support subwiki, but not build html no include subwiki)
 # note: because use make, so can't read this `tiddlywiki` cmd from current project, recommend install tiddlywiki global, likw `yarn global add tiddlywiki`
 # should before build
-build: lib
+build: $(Lib)
 	@echo -e  👷 $(Green)Building 🗘 $(Color_off)
 	@sh ./lib
 	@rm -rf $(dist) $(NEOTWTEMP); mkdir $(NEOTWTEMP)
@@ -40,7 +43,7 @@ build: lib
 	@tree $(dist) -L 1
 	@echo -e 🎉 $(Green)Finished ✔ $(Color_off)
 
-build-lib: lib
+build-lib: $(Lib)
 	@sh ./lib
 
 # view
