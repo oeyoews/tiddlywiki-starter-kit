@@ -1,0 +1,25 @@
+created: 20221011054220216
+creator: oeyoews
+modified: 20221011054226131
+modifier: oeyoews
+title: Index
+type: text/vnd.tiddlywiki
+
+<!--
+<<.preamble "{{neotw/welcome-msg}}">>
+-->
+
+<!-- <div class="purple-box"> -->
+<!-- {{neotw/welcome-msg}}  -->
+<!-- </div> -->
+
+<span style="float:right;width:156px">{{neotw/image/showcase-01.png}}</span>
+{{neotw/badges}}
+
+<!--
+<<showfnotes class:"fnote-pretty" title:"''Footnotes''">>
+
+<<layout "[img width=256 [showcase|neotw/image/showcase-01.png]]" right>>
+-->
+
+{{neotw/git/commit}}

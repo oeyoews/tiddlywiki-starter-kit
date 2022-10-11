@@ -40,6 +40,8 @@ BumpFile := bump.mjs
 Lib := lib
 CommitId := $(shell git rev-parse --short HEAD && git show --pretty=format:"%ci %cr" | head -1 && git branch)
 LongCommitId := $(shell git rev-parse HEAD)
+ShortCommitId := $(shell git rev-parse --short HEAD)
+TiddlyWiki-Git-File := "tiddlers/neotw/git/commit.tid"
 
 PROJECT      := $(call GetFromPkg,name)
 version := $(call GetFromPkg,version)

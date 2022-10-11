@@ -1,0 +1,16 @@
+created: 20221011052417812
+creator: oeyoews
+modified: 20221011054745303
+modifier: oeyoews
+tags: 
+title: neotw/git/commit
+type: text/vnd.tiddlywiki
+
+\define commitid() 
+Last Updated:
+<$button>
+<a href="https://github.com/oeyoews/neotw/commit/3741f7c1046972506ff0d1ca927d2f698ceee41c" style=" text-decoration:none;color: #539bf5" target="_blank">3741f7c</a>
+</$button>
+\end
+
+<<commitid>>
