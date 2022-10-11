@@ -5,7 +5,7 @@ info: $(PackageJson)
 	@echo -e " Project: $(PROJECT)\n Version: $(version)\n Platform: $(PLATFORM)\n Commit: $(CommitId)"
 
 test:
-	@echo $(TIME)
+	@echo $(LongCommitId)
 
 bump: $(BumpFile)
 	yarn zx bump.mjs
