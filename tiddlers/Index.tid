@@ -1,6 +1,6 @@
 created: 20221011054220216
 creator: oeyoews
-modified: 20221011054226131
+modified: 20221011112634697
 modifier: oeyoews
 title: Index
 type: text/vnd.tiddlywiki
@@ -22,4 +22,4 @@ type: text/vnd.tiddlywiki
 <<layout "[img width=256 [showcase|neotw/image/showcase-01.png]]" right>>
 -->
 
-{{neotw/commit}}
+{{neotw/git/commit}}
