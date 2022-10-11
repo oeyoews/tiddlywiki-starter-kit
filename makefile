@@ -7,11 +7,8 @@ pre:
 info: $(PackageJson)
 	@echo -e " Project: $(PROJECT)\n Version: $(version)\n Platform: $(PLATFORM)\n Commit: $(ShortCommitId)"
 
-# @rm -rf $(TiddlyWiki-Git-File); cp $(TiddlyWiki-Git-TemplateFile) $(TiddlyWiki-Git-File)
-# @sed -i "s#LongId#$(LongCommitId)#" $(TiddlyWiki-Git-File)
-# @sed -i "s#ShortId#$(ShortCommitId)#" $(TiddlyWiki-Git-File)
 update-git-commit:
-	@sed -i "s#commit/[0-9]*#commit/$(LongCommitId)#" $(TiddlyWiki-Git-File)
+	@sed -i "s#commit/[0-9]*\"#commit/$(LongCommitId)\"#" $(TiddlyWiki-Git-File)
 	@sed -i "s#>[0-9]*<#>$(ShortCommitId)<#" $(TiddlyWiki-Git-File)
 	@echo -e 🎉 update-git-commit $(Green)Finished ✔ $(Color_off)
 
