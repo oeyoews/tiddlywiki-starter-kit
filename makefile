@@ -11,8 +11,8 @@ info: $(PackageJson)
 # @sed -i "s#LongId#$(LongCommitId)#" $(TiddlyWiki-Git-File)
 # @sed -i "s#ShortId#$(ShortCommitId)#" $(TiddlyWiki-Git-File)
 update-git-commit:
-	@sed -i "s#commit/[0-9a-z]*#commit/$(LongCommitId)#" $(TiddlyWiki-Git-File)
-	@sed -i "s#>[0-9a-z]*<#>$(ShortCommitId)<#" $(TiddlyWiki-Git-File)
+	@sed -i "s#commit/[0-9]*#commit/$(LongCommitId)#" $(TiddlyWiki-Git-File)
+	@sed -i "s#>[0-9]*<#>$(ShortCommitId)<#" $(TiddlyWiki-Git-File)
 	@echo -e 🎉 update-git-commit $(Green)Finished ✔ $(Color_off)
 
 bump: $(BumpFile)
