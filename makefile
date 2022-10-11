@@ -8,6 +8,7 @@ update-git-commit:
 	@rm -rf $(TiddlyWiki-Git-File); cp $(TiddlyWiki-Git-TemplateFile) $(TiddlyWiki-Git-File)
 	@sed -i "s#LongId#$(LongCommitId)#" $(TiddlyWiki-Git-File)
 	@sed -i "s#ShortId#$(ShortCommitId)#" $(TiddlyWiki-Git-File)
+	@echo -e 🎉 update-git-commit $(Green)Finished ✔ $(Color_off)
 
 bump: $(BumpFile)
 	yarn zx bump.mjs
