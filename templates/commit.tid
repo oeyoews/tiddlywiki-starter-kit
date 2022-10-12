@@ -1,0 +1,12 @@
+title: neotw/git/commit
+type: text/vnd.tiddlywiki
+
+\define commitid()
+Last Updated:
+<$button>
+<a href="https://gitlab.com/oeyoews/neotw/commit/" style="
+text-decoration:none;color: #539bf5" target="_blank"></a>
+</$button>
+\end
+
+<<commitid>>

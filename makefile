@@ -8,6 +8,7 @@ info: $(PackageJson)
 	@echo -e " Project: $(PROJECT)\n Version: $(version)\n Platform: $(PLATFORM)\n Commit: $(ShortCommitId)"
 
 update-git-commit:
+	@cp templates/commit.tid $(TiddlyWiki-Git-File)
 	@sed -i "s#commit/[0-9a-z]*\"#commit/$(LongCommitId)\"#" $(TiddlyWiki-Git-File)
 	@sed -i "s#>[0-9a-z]*<#>$(ShortCommitId)<#" $(TiddlyWiki-Git-File)
 	@echo -e 🎉 update-git-commit $(Green)Finished ✔ $(Color_off)

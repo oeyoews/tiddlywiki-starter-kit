@@ -22,5 +22,5 @@ neotw-temp/
 dev/tiddlers/
 dev/archrepo/
 tiddlers/config/ShowHelp.tid
-# tiddlers/neotw/commit.tid
+tiddlers/commit.tid
 tiddlers/config/RecentTab/Mode.tid
