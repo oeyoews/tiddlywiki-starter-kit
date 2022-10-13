@@ -25,7 +25,6 @@ SERVICETEMPLATEFILE := src/neotw-template.service
 SERVICEFILE := neotw-user.service
 SERVICETARGETFILE := $(HOME)/.config/systemd/user/$(SERVICEFILE)
 NEOTWBIN := $(HOME)/.local/bin/$(PKGNAME)
-neotwdir-user:= $(PWD)
 repo-plateform := gitlab
 subwiki-address := https://$(repo-plateform).com/$(USER)/subwiki.git
 archrepo := ssh://aur@aur.archlinux.org/tidgi.git
@@ -41,6 +40,7 @@ Lib := lib
 LongCommitId := $(shell git rev-parse HEAD)
 ShortCommitId := $(shell git rev-parse --short HEAD)
 TiddlyWiki-Git-File := "tiddlers/commit.tid"
+Date := $(shell date)
 
 PROJECT      := $(call GetFromPkg,name)
 version := $(call GetFromPkg,version)

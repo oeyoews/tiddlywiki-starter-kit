@@ -85,13 +85,14 @@ edit-config:
 # install tiddlywiki global
 install-service:
 	@cp -i $(SERVICEFILE) $(SERVICETARGETFILE)
-	@sed -i "5c WorkingDirectory=$(neotwdir-user)" $(SERVICETARGETFILE)
+	@sed -i "5c WorkingDirectory=$(PWD)" $(SERVICETARGETFILE)
+	@sed -i "1i ;; automatically generated on $(Date)" $(SERVICETARGETFILE)
 	@echo "🎉 $(SERVICETARGETFILE) file has installed"
 
 # use highlight color
 # maybe should start byhand firstly
 reload-service:
-	$(SERVICECMD)  daemon-reload
+	$(SERVICECMD) daemon-reload
 enable:
 	$(SERVICECMD) enable $(SERVICEFILE)
 disable:
