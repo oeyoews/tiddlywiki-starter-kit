@@ -1,8 +1,10 @@
 \$__Import.tid
-Import.tid
 \$__StoryList*.tid
-StoryList*.tid
 \$__trashbin*
+\$__q*.tid
+
+Import.tid
+StoryList*.tid
 tiddlers/trashbin/
 /public/
 Draft*
@@ -10,7 +12,6 @@ tiddlers/subwiki/
 output/
 dist/
 todo.norg
-\$__q*.tid
 tiddlers/gtd/
 node_modules/
 

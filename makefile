@@ -1,9 +1,6 @@
 include ./neotw.config.mk
 include ./src/color.mk
 
-pre:
-	@yarn
-
 info: $(PackageJson)
 	@echo -e " Project: $(PROJECT)\n Version: $(version)\n Platform: $(PLATFORM)\n Commit: $(ShortCommitId)"
 
@@ -94,23 +91,23 @@ install-service:
 # use highlight color
 # maybe should start byhand firstly
 reload-service:
-	$(SERVICECMD) --user daemon-reload
+	$(SERVICECMD)  daemon-reload
 enable:
-	$(SERVICECMD) enable --user $(SERVICEFILE)
+	$(SERVICECMD) enable $(SERVICEFILE)
 disable:
-	$(SERVICECMD) disable --user $(SERVICEFILE)
+	$(SERVICECMD) disable $(SERVICEFILE)
 status:
-	$(SERVICECMD) status --user $(SERVICEFILE)
+	$(SERVICECMD) status $(SERVICEFILE)
 start:
-	$(SERVICECMD) start --user $(SERVICEFILE)
+	$(SERVICECMD) start  $(SERVICEFILE)
 	@echo "$(SERVICEFILE) has started, Click this address https://127.0.0.1:$(PORT) to open"
 	@make status
 restart:
-	$(SERVICECMD) restart --user $(SERVICEFILE)
+	$(SERVICECMD) restart $(SERVICEFILE)
 	@echo "$(SERVICEFILE) has restared, Click this address https://127.0.0.1:$(PORT) to open"
 	@make status
 stop:
-	$(SERVICECMD) stop --user $(SERVICEFILE)
+	$(SERVICECMD) stop $(SERVICEFILE)
 	@echo $(SERVICEFILE) has stopped
 uninstall:
 	rm -i $(NEOTWBIN)
@@ -120,7 +117,6 @@ uninstall-service:
 	@rm -f -i $(SERVICETARGETFILE);
 	@echo "👋 $(SERVICETARGETFILE) file has removed"
 
-# clean
 .PHONY: clean
 clean:
 	@rm -rf $(NEOTWTEMP) $(dist)
