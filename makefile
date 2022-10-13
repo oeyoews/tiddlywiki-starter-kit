@@ -86,7 +86,7 @@ edit-config:
 install-service:
 	@cp -i $(SERVICEFILE) $(SERVICETARGETFILE)
 	@sed -i "5c WorkingDirectory=$(PWD)" $(SERVICETARGETFILE)
-	@sed -i "1i ;; automatically generated on $(Date)" $(SERVICETARGETFILE)
+	@sed -i "1i ;; automatically generated on $(Date)\n" $(SERVICETARGETFILE)
 	@echo "🎉 $(SERVICETARGETFILE) file has installed"
 
 # use highlight color
