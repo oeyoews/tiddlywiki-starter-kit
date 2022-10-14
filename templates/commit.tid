@@ -1,17 +1,18 @@
 title: neotw/git/commit
 
+\define baseurl()
+https://gitlab.com/oeyoews/neotw/commit/
+\end
+
 \define longid() LONGID
 
 \define shortid() SHORTID
 
-\define baseurl()
-https://gitlab.com/oeyoews/neotw/commit/<<longid>>
-\end
-
 \define commitid()
 Last Updated:
 <$button>
-<a style="text-decoration:none;color: #539bf5" target="_blank" href=<<baseurl>>><<shortid>></a>
+<a style="text-decoration:none;color: #539bf5" href={{{
+  [<longid>addprefix<baseurl>] }}} target="_blank" ><<shortid>></a>
 </$button>
 \end
 
