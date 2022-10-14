@@ -15,7 +15,7 @@ https://gitlab.com/oeyoews/neotw/commit/
 }
 </style>
 
-Last Updated:
+Last Updated
 <$button>
 <a href={{{
   [<longid>addprefix<baseurl>] }}} target="_blank" class="gitcommit"><<shortid>></a>
