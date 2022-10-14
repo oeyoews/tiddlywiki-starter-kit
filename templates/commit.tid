@@ -1,4 +1,4 @@
-title: $:/state/commit
+title: $:/state/git/commit
 
 \define longid() LONGID
 
