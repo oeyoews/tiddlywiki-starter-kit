@@ -6,8 +6,7 @@ info: $(PackageJson)
 
 update-git-commit:
 	@cp templates/commit.tid $(TiddlyWiki-Git-File)
-	@sed -i -e "s#commit/[0-9a-z]*\"#commit/$(LongCommitId)\"#" \
-		-e "s#>[0-9a-z]*<#>$(ShortCommitId)<#" $(TiddlyWiki-Git-File)
+	@sed -i -e "s#LONGID#$(LongCommitId)#" -e "s#SHORTID#$(ShortCommitId)#" $(TiddlyWiki-Git-File)
 	@echo -e 🎉 update-git-commit $(Green)Finished ✔ $(Color_off)
 
 bump: $(BumpFile)
