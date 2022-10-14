@@ -2,7 +2,6 @@ caption: copy code
 description: copy text
 tags: $:/tags/ViewToolbar
 title: neotw/copy-text
-type: text/vnd.tiddlywiki
 
 \whitespace trim
 <$button message="tm-copy-to-clipboard" param={{!!text}} tooltip="copy current code" class=<<tv-config-toolbar-class>>>

@@ -1,16 +1,14 @@
 caption: repo button
 description: repo button
-list-after:
 tags: $:/tags/PageControls
 title: neotw/repo-button
-type: text/vnd.tiddlywiki
 
 \whitespace trim
 
 \define base-repo() https://gitlab.com/
 \define target() oeyoews/neotw
 
-<$button tooltip="Jump to repo" aria-label="GRB" class=<<tv-config-toolbar-class>>>
+<$button tooltip="Repo" aria-label="GRB" class=<<tv-config-toolbar-class>>>
 <a href={{{ [<target>addprefix<base-repo>]}}} target="_blank">
 {{$:/images/gitlab}}</a>
 </$button>
