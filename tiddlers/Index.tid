@@ -23,7 +23,7 @@ type: text/vnd.tiddlywiki
 -->
 
 <$list filter="[{$:/info/url/protocol}prefix[https]]">
-{{neotw/git/commit}}
+{{$:/state/commit}}
 </$list>
 
 {{neotw/repo-button}}

@@ -1,4 +1,4 @@
-title: neotw/git/commit
+title: $:/state/commit
 
 \define longid() LONGID
 
