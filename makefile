@@ -6,8 +6,8 @@ info: $(PackageJson)
 
 update-git-commit:
 	@cp templates/commit.tid $(TiddlyWiki-Git-File)
-	@sed -i "s#commit/[0-9a-z]*\"#commit/$(LongCommitId)\"#" $(TiddlyWiki-Git-File)
-	@sed -i "s#>[0-9a-z]*<#>$(ShortCommitId)<#" $(TiddlyWiki-Git-File)
+	@sed -i -e "s#commit/[0-9a-z]*\"#commit/$(LongCommitId)\"#" \
+		-e "s#>[0-9a-z]*<#>$(ShortCommitId)<#" $(TiddlyWiki-Git-File)
 	@echo -e 🎉 update-git-commit $(Green)Finished ✔ $(Color_off)
 
 bump: $(BumpFile)
@@ -85,8 +85,8 @@ edit-config:
 # install tiddlywiki global
 install-service:
 	@cp -i $(SERVICEFILE) $(SERVICETARGETFILE)
-	@sed -i "5c WorkingDirectory=$(PWD)" $(SERVICETARGETFILE)
-	@sed -i "1i ;; automatically generated on $(Date)\n" $(SERVICETARGETFILE)
+	@sed -i -e "5c WorkingDirectory=$(PWD)" \
+		-e "1i ;; automatically generated on $(Date)\n" $(SERVICETARGETFILE)
 	@echo "🎉 $(SERVICETARGETFILE) file has installed"
 
 # use highlight color

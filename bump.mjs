@@ -1,8 +1,4 @@
 #!/usr/bin/env zx
-/**
- * * 自动升级版本号并打标签 *
- * 相当于修改package.json里面version字段值，然后git commit -m 'xxx'，再git tag -a ${version}
- * */
 
 // https://github.com/google/zx
 import "zx/globals";
