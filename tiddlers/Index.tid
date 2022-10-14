@@ -1,6 +1,6 @@
 created: 20221011054220216
 creator: oeyoews
-modified: 20221014125712330
+modified: 20221014130907683
 modifier: oeyoews
 title: Index
 type: text/vnd.tiddlywiki
@@ -23,7 +23,8 @@ type: text/vnd.tiddlywiki
 -->
 
 <$list filter="[{$:/info/url/protocol}prefix[https]]">
-{{$:/state/git/commit}}
 {{neotw/repo-button}}
 </$list>
+{{$:/state/git/commit}}
+
 [img[cat.svg]]
