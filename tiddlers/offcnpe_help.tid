@@ -1,6 +1,6 @@
 created: 20221017070926711
 creator: oeyoews
-modified: 20221017111906868
+modified: 20221017141940081
 modifier: oeyoews
 tags: 
 title: offcnpe/help
@@ -13,6 +13,8 @@ type: text/vnd.tiddlywiki
 * 开启''redis'', ''mysql'' 服务
 * 修改redis host地址, 修改port 9003 为8080(为了方便输入（''application.yml'')
 
+<details>
+
 ```yml
 redis:
     host: localhost  # 取决与你redis在虚拟机上的设置， 我使用本地， 没有用到虚拟机
@@ -20,15 +22,43 @@ redis:
     port: 6379
 ```
 
+</details>
+
+
 * 修改上传图片地址(''SetmealController.java'')
+
+<details>
 
 ```java
  File saveDirFile=new File("/home/oeyoews/temp/offcnpe-images");   // 路径地址根据自己电脑路径设置， 如何路径确实会自动创建， 最好自己手动管理
 ```
+</details>
 
-!! PREVIEW
+
+!!! optional 
+
+<details>
+
+<<sticky-done "use org.maridb replace com.mysql, and below relative code(use mariadb not mysql, it's option for you" "  ">>)
+
+</details>
+
+---
+
+!! <<emoji bingo>> PREVIEW
 <<emoji dot-status>> 
 ''local'': <a href="http:8080/help">preview localhost based springboot</a>
 
 <<emoji dot-online>> 
 ''online'': http://neotw.netlify.app/#offcnpe%2Fhelp:offcnpe%2Fhelp
+
+
+---
+!! TIPS
+
+<details>
+
+* use start.aliyun.com replace start.spring.io
+** use maven mirror repo
+
+</details>
