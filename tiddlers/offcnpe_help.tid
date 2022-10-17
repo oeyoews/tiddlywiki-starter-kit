@@ -1,0 +1,33 @@
+created: 20221017070926711
+creator: oeyoews
+modified: 20221017075410257
+modifier: oeyoews
+tags: 
+title: offcnpe/help
+type: text/vnd.tiddlywiki
+
+!! <<emoji rocket>> offcnpe help(一些注意事项)
+
+
+* 开启''redis'', ''mysql'' 服务
+* 修改redis host地址, 修改port 9003 为8080(为了方便输入（''application.yml'')
+
+```yml
+redis:
+    host: localhost  # 取决与你redis在虚拟机上的设置， 我使用本地， 没有用到虚拟机
+    password: 123456
+    port: 6379
+```
+
+* 修改上传图片地址(''SetmealController.java'')
+
+```java
+ File saveDirFile=new File("/home/oeyoews/temp/offcnpe-images");   // 路径地址根据自己电脑路径设置， 如何路径确实会自动创建， 最好自己手动管理
+```
+
+!! PREVIEW
+<<emoji dot-status>> 
+''local'': <a href="http:8080/help">preview localhost based springboot</a>
+
+<<emoji dot-online>> 
+''online'':  
