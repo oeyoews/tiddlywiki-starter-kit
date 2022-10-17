@@ -1,6 +1,6 @@
 created: 20221017070926711
 creator: oeyoews
-modified: 20221017075410257
+modified: 20221017075457029
 modifier: oeyoews
 tags: 
 title: offcnpe/help
@@ -30,4 +30,4 @@ redis:
 ''local'': <a href="http:8080/help">preview localhost based springboot</a>
 
 <<emoji dot-online>> 
-''online'':  
+''online'': http://neotw.netlify.app/#offcnpe%2Fhelp:offcnpe%2Fhelp
