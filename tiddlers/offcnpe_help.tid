@@ -1,6 +1,6 @@
 created: 20221017070926711
 creator: oeyoews
-modified: 20221017075457029
+modified: 20221017111906868
 modifier: oeyoews
 tags: 
 title: offcnpe/help
@@ -8,6 +8,7 @@ type: text/vnd.tiddlywiki
 
 !! <<emoji rocket>> offcnpe help(一些注意事项)
 
+@@.bullets
 
 * 开启''redis'', ''mysql'' 服务
 * 修改redis host地址, 修改port 9003 为8080(为了方便输入（''application.yml'')
