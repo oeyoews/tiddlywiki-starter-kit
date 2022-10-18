@@ -117,6 +117,9 @@ uninstall-service:
 	@rm -f -i $(SERVICETARGETFILE);
 	@echo "👋 $(SERVICETARGETFILE) file has removed"
 
+update-plugin:
+	nvim -c PackerUpdate
+
 .PHONY: clean
 clean:
 	@rm -rf $(NEOTWTEMP) $(dist)
