@@ -1,9 +1,9 @@
 created: 20221022121257922
 creator: oeyoews
-modified: 20221022121803613
+modified: 20221022123813324
 modifier: oeyoews
 tags: $:/tags/Stylesheet
-title: neotw/article/1 21
+title: neotw/style/checkbox
 type: text/vnd.tiddlywiki
 
 input[type="checkbox"] {
