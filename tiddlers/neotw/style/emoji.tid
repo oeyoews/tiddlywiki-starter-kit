@@ -1,42 +1,30 @@
 created: 20220902154818583
 creator: oeyoews
-modified: 20221004153714687
+modified: 20221022134108731
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/style/emoji
 type: text/vnd.tiddlywiki
 
-\define emoji-dict(text)
-{{neotw/emoji.dict##$text$}}
+\define emojid(text)
+.neotw-$text$:before {
+	content:  "{{neotw/emoji.dict##$text$}} ";
+}
 \end
 
-.neotw-error:before {
-		content: <<emoji-dict error>>;
-}
+<<emojid error>>
 
-.neotw-info:before {
-		content: <<emoji-dict info>>;
-}
+<<emojid info>>
 
-.neotw-question:before {
-		content: <<emoji-dict question>>;
-}
+<<emojid question>>
 
-.neotw-smile:before {
-		content: <<emoji-dict smile>>;
-}
+<<emojid smile>>
 
-.neotw-checkbox:before {
-		content: <<emoji-dict checkbox>>;
-}
+<<emojid checkbox>>
 
-.neotw-msg:before {
-		content: "💬";
-}
+<<emojid msg>>
 
-.neotw-rocket:before {
-		content: "🚀";
-}
+<<emojid rocket>>
 
 .neotw-book:before {
 		content: "📖";
