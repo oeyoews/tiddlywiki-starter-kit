@@ -5,7 +5,7 @@ title: Index
 -->
 
 <div class="purple-box">
-  Hello, one <<now>>
+  Hello, on <<now>>
 </div>
 
 <span style="float:right;width:156px">{{neotw/image/showcase-01.png}}</span>
