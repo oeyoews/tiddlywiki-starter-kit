@@ -1,3 +1,6 @@
+title:  $:/plugins/oeyoews/neotw-emoji/dict
+type: application/x-tiddler-dictionary
+
 smile: 😃
 question: ❓
 info: ℹ️
@@ -11,6 +14,6 @@ fly: 🚁
 traffic: 🚦
 hourglass: ⌛
 tada: 🎉
-keyboard: ⌨
+kbd: ⌨
 danger: ☠
 warn: ⚠

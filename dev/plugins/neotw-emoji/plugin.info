@@ -1,0 +1,11 @@
+{
+    "version": "0.0.1",
+    "type": "application/json",
+    "title": "$:/plugins/oeyoews/neotw-emoji",
+    "plugin-type": "plugin",
+    "name": "emoji",
+    "core-version": ">=5.2.3",
+    "description": "emoji",
+    "author": "oeyoews",
+    "list": "readme"
+}

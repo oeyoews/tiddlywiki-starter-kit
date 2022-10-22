@@ -1,26 +1,20 @@
-created: 20220902155534733
-creator: oeyoews
-modified: 20221022133553058
-modifier: oeyoews
-tags: 
-title: neotw/emoji
-type: text/vnd.tiddlywiki
+title: $:/plugins/oeyoews/neotw-emoji/example
 
 <<.preamble """<<emoji tada>> this is a new, just resolve copy emoji(WIP) trouble""">>
 
 !! example
 
-; question
+<<emoji error>>  error
 
-<<emoji question>>
+<<emoji question>> question
 
-; rocket 
+; rocket
 <<emoji>> default is rocket
 
-; shower 
+; shower
 <<emoji shower>> default is rocket
 
-; traffic 
+; traffic
 <<emoji traffic>> default is rocket
 
 ; tada

@@ -1,0 +1,7 @@
+tags: $:/tags/Macro
+title: $:/plugins/oeyoews/neotw-emoji/macro
+
+\define emoji(symbol:rocket)
+\whitespace trim
+	<span class="neotw-$symbol$"></span>
+\end

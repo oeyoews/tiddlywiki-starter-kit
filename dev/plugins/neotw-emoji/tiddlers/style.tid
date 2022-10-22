@@ -1,0 +1,40 @@
+tags: $:/tags/Stylesheet
+title: $:/plugins/oeyoews/neotw-emoji/style
+
+\define emojid(text)
+.neotw-$text$:before {
+	content:  "{{$:/plugins/oeyoews/neotw-emoji/dict##$text$}} ";
+}
+\end
+
+<<emojid error>>
+
+<<emojid info>>
+
+<<emojid question>>
+
+<<emojid smile>>
+
+<<emojid checkbox>>
+
+<<emojid msg>>
+
+<<emojid warn>>
+
+<<emojid rocket>>
+
+<<emojid book>>
+
+<<emojid shower>>
+
+<<emojid fly>>
+
+<<emojid traffic>>
+
+<<emojid hourglass>>
+
+<<emojid tada>>
+
+<<emojid kbd>>
+
+<<emojid danger>>
