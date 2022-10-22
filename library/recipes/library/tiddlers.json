@@ -31,7 +31,7 @@
         "type": "application/json",
         "title": "$:/plugins/oeyoews/neotw-emoji",
         "plugin-type": "plugin",
-        "name": "emoji",
+        "name": "neotw-emoji",
         "core-version": ">=5.2.3",
         "description": "emoji",
         "author": "oeyoews",
