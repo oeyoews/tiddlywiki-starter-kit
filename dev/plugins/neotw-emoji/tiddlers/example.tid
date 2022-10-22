@@ -32,3 +32,25 @@ title: $:/plugins/oeyoews/neotw-emoji/example
 <<emoji menu>> menu
 
 Inspired by latex emoji package [[latex-emoji|https://github.com/stone-zeng/latex-emoji]] and [[neotw/bullets]]
+
+---
+
+!! tiddlywiki-bullets
+
+# <<symbol "There are no two identical snowflakes in the world, No two snowflakes are exactly the same" snow>>
+# <<symbol  bicycle "bingo">>
+
+---
+!! tiddlywiki-status
+
+# <<symbol error "error">>
+# <<symbol "show status" dot-status>>
+# <<symbol  "This is a bingo" "bingo">>
+
+!! tiddlywiki-list
+
+# <<symbol "This is a default list">>
+
+!!! test
+
+Inspired by [[org-superstar|https://github.com/integral-dw/org-superstar-mode/blob/master/DEMO.org]] [[neorg|https://github.com/nvim-neorg/neorg]]

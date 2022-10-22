@@ -1,19 +1,14 @@
-created: 20220830150031545
-creator: oeyoews
-modified: 20220905030006083
-modifier: oeyoews
 tags: $:/tags/Macro
-title: neotw/macro
-type: text/vnd.tiddlywiki
+title: $:/plugins/oeyoews/neotw
 
-\define neotw-username(username:"oeyoews") 
-$username$ 
+\define neotw-username(username:"oeyoews")
+$username$
 \end
 
 \define neotw-align(align:"center", tiddler)
 	<div align="$align">
 	{{$tiddler$}}
-	</div> 
+	</div>
 \end
 
 \define details(text:"", summary:"details" open:"")
