@@ -1,0 +1,84 @@
+{
+    "description": "neotw edition",
+    "plugins": [
+        "tiddlywiki/tiddlyweb",
+        "tiddlywiki/filesystem",
+        "tiddlywiki/help",
+        "tiddlywiki/highlight",
+        "tiddlywiki/browser-sniff",
+        "tiddlywiki/codemirror",
+        "tiddlywiki/codemirror-mode-xml",
+        "tiddlywiki/codemirror-mode-css",
+        "tiddlywiki/codemirror-mode-javascript",
+        "tiddlywiki/codemirror-autocomplete",
+        "tiddlywiki/codemirror-search-replace",
+        "tiddlywiki/codemirror-closebrackets",
+        "tiddlywiki/codemirror-closetag"
+    ],
+    "includeWikis": [
+        {
+            "path": "dev"
+        }
+    ],
+    "themes": [
+        "tiddlywiki/vanilla"
+    ],
+    "build": {
+        "index": [
+            "--output",
+            "dist",
+            "--rendertiddler",
+            "$:/plugins/tiddlywiki/tiddlyweb/save/offline",
+            "index.html",
+            "text/plain",
+            "--savetiddler",
+            "$:/favicon.ico",
+            "favicon.ico"
+        ],
+        "listen": [
+            "--listen",
+            "port=PORT",
+            "anon-username=AUTHOR"
+        ],
+        "static": [
+            "--output",
+            "dist",
+            "--rendertiddler",
+            "$:/core/templates/static.template.html",
+            "static.html",
+            "text/plain",
+            "--rendertiddler",
+            "$:/core/templates/alltiddlers.template.html",
+            "alltiddlers.html",
+            "text/plain",
+            "--rendertiddlers",
+            "[!is[system]]",
+            "$:/core/templates/static.tiddler.html",
+            "static",
+            "text/plain",
+            "--rendertiddler",
+            "$:/core/templates/static.template.css",
+            "static/static.css",
+            "text/plain"
+        ],
+        "tiddlywikicore": [
+            "--render",
+            "$:/core/templates/tiddlywiki5.js",
+            "[[tiddlywikicore-]addsuffix<version>addsuffix[.js]]",
+            "text/plain"
+        ],
+        "debug": [
+            "--rendertiddler",
+            "$:/core/save/offline-external-js",
+            "debug.html",
+            "text/plain",
+            "--render",
+            "$:/core/templates/tiddlywiki5.js",
+            "[[tiddlywikicore-]addsuffix<version>addsuffix[.js]]",
+            "text/plain"
+        ]
+    },
+    "config": {
+        "retain-original-tiddler-path": true
+    }
+}

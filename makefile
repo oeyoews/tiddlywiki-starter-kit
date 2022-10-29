@@ -2,7 +2,7 @@ include ./neotw.config.mk
 include ./src/color.mk
 
 init:
-	@cp templates/$(tiddlywiki_configfile) $(tiddlywiki_configfile)
+	@cp templates/$(tiddlywiki_configfile).template $(tiddlywiki_configfile)
 	@sed -i -e "s#AUTHOR#$(USER)#" $(tiddlywiki_configfile)
 	@sed -i -e "s#PORT#$(PORT)#" $(tiddlywiki_configfile)
 
