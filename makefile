@@ -1,6 +1,11 @@
 include ./neotw.config.mk
 include ./src/color.mk
 
+init:
+	@cp templates/$(tiddlywiki_configfile) $(tiddlywiki_configfile)
+	@sed -i -e "s#AUTHOR#$(USER)#" $(tiddlywiki_configfile)
+	@sed -i -e "s#PORT#$(PORT)#" $(tiddlywiki_configfile)
+
 info: $(PackageJson)
 	@echo -e " current path is" $(PWD)
 	@echo -e " Project: $(PROJECT)\n Version: $(version)\n Platform: $(PLATFORM)\n Commit: $(ShortCommitId)"
