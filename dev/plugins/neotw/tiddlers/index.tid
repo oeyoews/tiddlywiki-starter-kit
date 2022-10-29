@@ -11,6 +11,8 @@ title: Index
 <span style="float:right;width:156px">{{neotw/image/showcase-01.png}}</span>
 {{neotw/badges}}
 
+{{$:/state/git/commit}}
+
 <!--
 <<showfnotes class:"fnote-pretty" title:"''Footnotes''">>
 

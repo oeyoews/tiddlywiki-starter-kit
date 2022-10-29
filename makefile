@@ -130,4 +130,4 @@ uninstall-service:
 
 .PHONY: clean
 clean:
-	@rm -rf $(NEOTWTEMP) $(dist)
+	@rm -rf $(NEOTWTEMP) $(dist) $(TiddlyWiki-Git-File)
