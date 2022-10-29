@@ -2,6 +2,7 @@ include ./neotw.config.mk
 include ./src/color.mk
 
 info: $(PackageJson)
+	@echo -e " current path is" $(PWD)
 	@echo -e " Project: $(PROJECT)\n Version: $(version)\n Platform: $(PLATFORM)\n Commit: $(ShortCommitId)"
 
 update-git-commit:
