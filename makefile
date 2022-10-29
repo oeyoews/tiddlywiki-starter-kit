@@ -2,7 +2,7 @@ include ./neotw.config.mk
 include ./src/color.mk
 
 init-info-file:
-	@cp templates/$(tiddlywiki_configfile).template $(tiddlywiki_configfile)
+	@cp templates/tiddlywiki-template.info $(tiddlywiki_configfile)
 	@sed -i -e "s/AUTHOR/$(USER)/" \
 		-e "s/PORT/$(PORT)/" \
 		-e "\$$d" $(tiddlywiki_configfile)
@@ -12,7 +12,7 @@ info: $(PackageJson)
 	@echo -e " Project: $(PROJECT)\n Version: $(version)\n Platform: $(PLATFORM)\n Commit: $(ShortCommitId)"
 
 update-git-commit:
-	@cp templates/commit.tid.template $(TiddlyWiki-Git-File)
+	@cp templates/commit-template.tid $(TiddlyWiki-Git-File)
 	@sed -i -e "s#LONGID#$(LongCommitId)#" \
 		-e "s#SHORTID#$(ShortCommitId)#" $(TiddlyWiki-Git-File)
 	@echo -e 🎉 update-git-commit $(Green)Finished ✔ $(Color_off)
