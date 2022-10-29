@@ -20,3 +20,5 @@ Last Updated
 <a href={{{
   [<longid>addprefix<baseurl>] }}} target="_blank" class="gitcommit"><<shortid>></a>
 </$button>
+
+<!-- vim:set et sw=2 ts=2 ft=tiddlywiki tw=80: -->

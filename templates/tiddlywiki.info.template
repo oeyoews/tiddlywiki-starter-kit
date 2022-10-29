@@ -82,3 +82,4 @@
         "retain-original-tiddler-path": true
     }
 }
+/* vim:set et sw=2 ts=2 ft=json5 tw=80: */
