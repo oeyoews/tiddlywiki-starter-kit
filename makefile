@@ -36,7 +36,8 @@ run-to-the-world:
 # note: because use make, so can't read this `tiddlywiki` cmd from current project, recommend install tiddlywiki global, likw `yarn global add tiddlywiki`
 # should before build
 build: $(Lib)
-	@make update-git-commit
+	# prepare sed
+	@make update-git-commit; make init-info-file
 	@echo -e  👷 $(Green)Building 🗘 $(Color_off)
 	@sh ./lib
 	@rm -rf $(dist) $(NEOTWTEMP); mkdir $(NEOTWTEMP)
