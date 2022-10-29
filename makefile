@@ -101,19 +101,21 @@ install-service:
 reload-service:
 	$(SERVICECMD) daemon-reload
 enable:
-	$(SERVICECMD) enable $(SERVICEFILE)
+	$(SERVICECMD) enable $(ServiceName)
 disable:
-	$(SERVICECMD) disable $(SERVICEFILE)
+	$(SERVICECMD) disable $(ServiceName)
 status:
-	$(SERVICECMD) status $(SERVICEFILE)
+	$(SERVICECMD) status $(ServiceName)
 start:
 	$(SERVICECMD) start  $(SERVICEFILE)
 	@echo "$(SERVICEFILE) has started, Click this address https://127.0.0.1:$(PORT) to open"
 	@make status
+
 restart:
-	$(SERVICECMD) restart $(SERVICEFILE)
-	@echo "$(SERVICEFILE) has restared, Click this address https://127.0.0.1:$(PORT) to open"
+	$(SERVICECMD) restart $(ServiceName)
+	@echo "$(ServiceName) has restared, Click this address https://127.0.0.1:$(PORT) to open"
 	@make status
+
 stop:
 	$(SERVICECMD) stop $(SERVICEFILE)
 	@echo $(SERVICEFILE) has stopped
