@@ -1,4 +1,4 @@
-name: github-pages
+name: Release Plugins
 on:
   schedule:
     - cron: "0 16 * * 0"
@@ -26,11 +26,23 @@ jobs:
       - name: Install Dependency
         # run: yarn global add tiddlywiki
         run: yarn install
-      - name: Build
+
+      - name: Build Neotw
         run: make build
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        # if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && github.event.inputs.tag_name != 'nightly')
+        # https://github.com/neovim/neovim/blob/234b8c5f3d57294dda06dbc6c1760e5983bd2c19/.github/workflows/release.yml#L264
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          draft: false
+          files: dist/library/recipes/library/tiddlers
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # - name: Deploy
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: ./dist
