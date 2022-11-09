@@ -1,9 +1,12 @@
 name: Release Plugins
 on:
-  schedule:
-    - cron: "0 16 * * 0"
+  # schedule:
+  #   - cron: "0 16 * * 0"
+  # push:
+  #   branches: ["main"]
   push:
-    branches: ["main"]
+    tags:
+      - "v*.*.*"
   workflow_dispatch:
 
 jobs:
