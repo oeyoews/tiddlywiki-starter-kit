@@ -47,7 +47,6 @@ jobs:
         with:
           files: |
             dist/library/recipes/library/tiddlers/*
-            dev/example/*
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -57,4 +56,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: |
             ./dist
-            dev/example

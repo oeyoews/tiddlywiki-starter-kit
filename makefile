@@ -2,7 +2,7 @@ include ./neotw.config.mk
 include ./src/color.mk
 
 example:
-	@cd dev; tiddlywiki --build example
+	@$(CMD) dev --build example
 
 init-info-file:
 	@cp templates/tiddlywiki-template.info $(tiddlywiki_configfile)
@@ -44,6 +44,7 @@ build: $(Lib)
 	@echo -e  👷 $(Green)Building 🗘 $(Color_off)
 	@sh ./lib
 	@rm -rf $(dist) $(NEOTWTEMP); mkdir $(NEOTWTEMP)
+	@make example
 	@cp -r tiddlers/ dev/ tiddlywiki.info $(NEOTWTEMP)
 # if error how to exit
 	@rm -rf $(NEOTWTEMP)/tiddlers/subwiki \

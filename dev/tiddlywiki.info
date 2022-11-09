@@ -11,7 +11,7 @@
     "build": {
         "example": [
             "--output",
-            "example",
+            "dist",
             "--rendertiddler",
             "$:/plugins/tiddlywiki/tiddlyweb/save/offline",
             "example.html",
