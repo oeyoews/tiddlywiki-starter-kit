@@ -9,6 +9,10 @@ on:
       - "v*.*.*"
   workflow_dispatch:
 
+concurrency:
+  group: release-ci-group
+  cancel-in-progress: true
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
