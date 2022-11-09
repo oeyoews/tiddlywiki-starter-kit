@@ -35,7 +35,9 @@ jobs:
         run: yarn install
 
       - name: Build Neotw
-        run: make build
+        run: |
+          make build
+          make example
 
       - name: Create Release
         uses: softprops/action-gh-release@v1
