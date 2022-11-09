@@ -1,6 +1,9 @@
 include ./neotw.config.mk
 include ./src/color.mk
 
+example:
+	@cd dev; tiddlywiki --build example
+
 init-info-file:
 	@cp templates/tiddlywiki-template.info $(tiddlywiki_configfile)
 	@sed -i -e "s/AUTHOR/$(USER)/" \

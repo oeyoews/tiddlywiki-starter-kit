@@ -1,0 +1,29 @@
+created: 20221109140012516
+creator: oeyoews
+modified: 20221109140032386
+modifier: oeyoews
+tags: 
+title: neotw/article/1 20
+type: text/vnd.tiddlywiki
+
+```css
+--zm-blue: #48f;
+    --zm-gray: #222;
+    --zm-white: #fff;
+    --zm-green: #8c8;
+    --zm-yellow: #fc0;
+    --zm-orange: #f90;
+    --zm-red: #e33;
+    --zm-purple: #a7f;
+    --zm-pastel-blue: #99beff;
+    --zm-pastel-gray: #444b53;
+    --zm-pastel-white: #f5f5f5;
+    --zm-pastel-green: #b8e0b8;
+    --zm-pastel-yellow: #ffeb99;
+    --zm-pastel-orange: #ffc699;
+    --zm-pastel-red: #f7a1a1;
+    --zm-pastel-purple: #cfb2ff;
+    --zm-table-gray: #bfbfc4;
+    --responsive-multiplier: 1;
+    --header-height: 48px;
+```

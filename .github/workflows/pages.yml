@@ -43,7 +43,9 @@ jobs:
         # if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && github.event.inputs.tag_name != 'nightly')
         # https://github.com/neovim/neovim/blob/234b8c5f3d57294dda06dbc6c1760e5983bd2c19/.github/workflows/release.yml#L264
         with:
-          files: dist/library/recipes/library/tiddlers/*
+          files: |
+            dist/library/recipes/library/tiddlers/*
+            dev/example/*
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

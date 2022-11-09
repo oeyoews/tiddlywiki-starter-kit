@@ -9,6 +9,14 @@
         "tiddlywiki/vanilla"
     ],
     "build": {
+        "example": [
+            "--output",
+            "example",
+            "--rendertiddler",
+            "$:/plugins/tiddlywiki/tiddlyweb/save/offline",
+            "example.html",
+            "text/plain"
+        ],
         "listen": [
             "--listen",
             "port=8091"
