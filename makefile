@@ -83,11 +83,14 @@ install-subwiki:
 install-archrepo:
 	@git clone --depth 1 $(archrepo) dev/archrepo
 
-# install service
 install:
 	@echo 'xdg-open "http://127.0.0.1:$(PORT)"' > $(NEOTWBIN); chmod +x $(NEOTWBIN)
-	@cp neotw.desktop ~/.local/share/applications
+	@cp src/neotw.desktop ~/.local/share/applications/neotw.desktop; cp ./img/flask.png ~/.icons/neotw.png
 	@echo "🎉 Installed neotw ✔"
+
+uninstall:
+	@rm $(NEOTWBIN) ~/.icons/neotw.png ~/.local/share/applications/neotw.desktop
+	@echo "👋 bye "
 
 # or yay tidgi directly
 install-tidgi:
@@ -127,9 +130,6 @@ restart:
 stop:
 	$(SERVICECMD) stop $(SERVICEFILE)
 	@echo $(SERVICEFILE) has stopped
-uninstall:
-	rm -i $(NEOTWBIN)
-	@echo "👋 $(NEOTWBIN) file has uninstalled"
 	# uninstall service
 uninstall-service:
 	@rm -f -i $(SERVICETARGETFILE);
