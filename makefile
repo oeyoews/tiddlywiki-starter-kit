@@ -1,6 +1,9 @@
 include ./neotw.config.mk
 include ./src/color.mk
 
+open:
+	xdg-open http://127.0.0.1:$(PORT)
+
 example:
 	@$(CMD) dev --build example
 
@@ -81,9 +84,9 @@ install-archrepo:
 	@git clone --depth 1 $(archrepo) dev/archrepo
 
 # install service
-install-bin:
-	@echo "tiddlywiki --listen" > $(NEOTWBIN)
-	@chmod +x ~/.local/bin/$(PKGNAME)
+install:
+	@echo 'xdg-open "http://127.0.0.1:$(PORT)"' > $(NEOTWBIN); chmod +x $(NEOTWBIN)
+	@cp neotw.desktop ~/.local/share/applications
 	@echo "🎉 Installed neotw ✔"
 
 # or yay tidgi directly

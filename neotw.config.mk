@@ -26,6 +26,7 @@ SERVICETEMPLATEFILE := src/neotw-template.service
 SERVICEFILE := templates/neotw-user-template.service
 SERVICETARGETFILE := $(HOME)/.config/systemd/user/$(ServiceName)
 NEOTWBIN := $(HOME)/.local/bin/$(PKGNAME)
+Exec := /usr/local/bin/$(PKGNAME)
 repo-plateform := gitlab
 subwiki-address := https://$(repo-plateform).com/$(USER)/subwiki.git
 archrepo := ssh://aur@aur.archlinux.org/tidgi.git

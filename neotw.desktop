@@ -1,0 +1,10 @@
+[Desktop Entry]
+StartupNotify=true
+Version=1.0
+Terminal=false
+Type=Application
+Name=neotw
+Categories=Network;
+Keywords=Neotw;TiddlyWiki
+Exec=neotw %F
+Icon=/home/oeyoews/REPOS/neotw/img/flask.png
