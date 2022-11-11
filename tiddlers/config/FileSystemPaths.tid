@@ -1,18 +1,16 @@
 caption: File Manager
 created: 20220228060333093
 creator: oeyoews
-modified: 20221111172956206
+modified: 20221111173218048
 modifier: oeyoews
 title: $:/config/FileSystemPaths
 type: text/vnd.tiddlywiki
 
-[is[system]removeprefix[$:/]addprefix[config/]]
-
+[is[system]removeprefix[$:/]]
 [tag[private]addprefix[subwiki/private/]]
 [tag[todo]addprefix[subwiki/todo/]]
 [tag[Project]addprefix[subwiki/Project/]]
 [tag[Journal]addprefix[subwiki/Journal/]]
 [tag[books]addprefix[subwiki/books/]]
-
 [prefix[neotw/]]
 [prefix[private/]]
