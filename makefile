@@ -3,6 +3,7 @@ include ./src/color.mk
 
 new-plugin:
 	@cp -r templates/new-plugin dev/plugins/
+	@sed -i -e "s/PluginName/$(PluginName)/g" $(file)
 
 open:
 	xdg-open http://127.0.0.1:$(PORT)
