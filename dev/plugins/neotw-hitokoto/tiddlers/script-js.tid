@@ -1,18 +1,18 @@
 title: $:/plugins/oeyoews/neotw-hitokoto/script
 tags: $:/tags/RawMarkup
 
-<!-- NOTE: not support ios -->
+<!-- NOTE: not support ios because order load on pc too -->
 
 <!-- https://developer.hitokoto.cn/sentence/#%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0 -->
-<!-- <script src="https://v1.hitokoto.cn/?c=j&c=e&c=k&encode=js&select=%23hitokoto" defer></script> -->
+<script src="https://v1.hitokoto.cn/?c=j&c=e&c=k&encode=js&select=%23hitokoto" defer></script>
 
-<script>
-  fetch('https://v1.hitokoto.cn')
-    .then(response => response.json())
-    .then(data => {
-      const hitokoto = document.getElementById('hitokoto')
-      hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
-      hitokoto.innerText = data.hitokoto
-    })
-    .catch(console.error)
-</script>
+<!-- <script> -->
+<!--   fetch('https://v1.hitokoto.cn') -->
+<!--     .then(response => response.json()) -->
+<!--     .then(data => { -->
+<!--       const hitokoto = document.getElementById('hitokoto') -->
+<!--       hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid -->
+<!--       hitokoto.innerText = data.hitokoto -->
+<!--     }) -->
+<!--     .catch(console.error) -->
+<!-- </script> -->

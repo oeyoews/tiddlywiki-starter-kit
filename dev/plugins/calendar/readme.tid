@@ -1,3 +1,5 @@
 title: $:/plugins/oeyoews/calendar/readme
 
-* this is a nodejs plugin templates
+!! WIP
+
+* still have some bug(this load order), on localhost is perfact
