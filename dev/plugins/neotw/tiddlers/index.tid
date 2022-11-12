@@ -11,7 +11,9 @@ title: Index
 <span style="float:right;width:156px">{{neotw/image/showcase-01.png}}</span>
 {{neotw/badges}}
 
-{{$:/state/git/commit}}
+<$list filter="[{$:/info/url/protocol}prefix[https]]">
+  {{$:/state/git/commit}}
+</$list>
 
 <!--
 <<showfnotes class:"fnote-pretty" title:"''Footnotes''">>
