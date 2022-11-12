@@ -86,11 +86,11 @@ install-archrepo:
 install:
 	@echo 'xdg-open "http://127.0.0.1:$(PORT)"' > $(NEOTWBIN); chmod +x $(NEOTWBIN)
 	@cp src/neotw.desktop ~/.local/share/applications/neotw.desktop; cp ./img/flask.png ~/.icons/neotw.png
-	@echo "🎉 Installed neotw ✔"
+	@echo "🎉 Installed neotw ✔(notice start tiddlywiki service)"
 
 uninstall:
 	@rm $(NEOTWBIN) ~/.icons/neotw.png ~/.local/share/applications/neotw.desktop
-	@echo "👋 bye "
+	@echo "👋 bye by @$(USER)"
 
 # or yay tidgi directly
 install-tidgi:
