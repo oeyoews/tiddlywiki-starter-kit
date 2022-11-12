@@ -1,0 +1,13 @@
+js: <iframe class="calendar" srcdoc=""" <html>   <body>     <a       target="blank"       style="         color: gray;         text-decoration: none;         font-style: italic;         border-bottom: 2px dashed #ccc;         font-weight: 700;       "       href="#"       id="hitokoto"     >       🎉 Loading ...     </a>      <script       src="https://v1.hitokoto.cn/?c=j&c=e&c=k&encode=js&select=%23hitokoto"       defer     ></script>   </body> </html> """/>
+title: $:/temp/hitokoto/example
+update: true
+display:
+
+<center>
+<$button actions="""
+<$action-listops  $field="display" $subfilter="+[toggle[true]]" />
+""">Refresh Hitokoto</$button>
+<hr>
+
+<$list filter={{!!display}} variable=_  emptyMessage={{!!js}}>{{!!js}}</$list>
+</center>
