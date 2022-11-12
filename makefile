@@ -88,15 +88,17 @@ install-archrepo:
 # @cp ./img/s5.png ~/.icons/$(PKGNAME).png
 # @ln -s img/flask.png ~/.icons/$(PKGNAME).png # need absoulte path
 # sudo conflict chmod ?
+# @sudo cp ./img/flask.png /usr/share/pixmaps/$(PKGNAME).png
 install:
 	@echo 'xdg-open "http://127.0.0.1:$(PORT)"' > $(NEOTWBIN); chmod +x $(NEOTWBIN)
 	@cp src/neotw.desktop ~/.local/share/applications/$(PKGNAME).desktop;
-	@sudo cp ./img/flask.png /usr/share/pixmaps/$(PKGNAME).png
+	@sudo ln -s  $(PWD)/img/flask.png /usr/share/pixmaps/$(PKGNAME).png
 	@echo "🎉 Installed $(PKGNAME) ✔ (notice start tiddlywiki service)"
 
+# ~/.icons/$(PKGNAME).png
 uninstall:
-	@rm -rf $(NEOTWBIN) ~/.icons/$(PKGNAME).png ~/.local/share/applications/$(PKGNAME).desktop
-	@rm -rf /usr/share/pixmaps/$(PKGNAME).png
+	@rm -rf $(NEOTWBIN)  ~/.local/share/applications/$(PKGNAME).desktop
+	@sudo rm -rf /usr/share/pixmaps/$(PKGNAME).png
 	@echo "👋 bye by @$(USER)"
 
 # or yay tidgi directly
