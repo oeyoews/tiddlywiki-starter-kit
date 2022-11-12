@@ -1,6 +1,9 @@
 include ./neotw.config.mk
 include ./src/color.mk
 
+new-plugin:
+	@cp -r templates/new-plugin dev/plugins/
+
 open:
 	xdg-open http://127.0.0.1:$(PORT)
 

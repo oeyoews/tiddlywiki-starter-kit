@@ -1,0 +1,11 @@
+{
+    "version": "0.0.1",
+    "type": "application/json",
+    "title": "$:/plugins/oeyoews/calendar",
+    "plugin-type": "plugin",
+    "name": "calendar",
+    "core-version": ">=5.2.3",
+    "description": "calendar",
+    "author": "oeyoews",
+    "list": "readme"
+}

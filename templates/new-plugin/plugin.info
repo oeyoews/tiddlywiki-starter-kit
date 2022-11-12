@@ -1,11 +1,11 @@
 {
     "version": "0.0.1",
     "type": "application/json",
-    "title": "$:/plugins/oeyoews/foo",
+    "title": "$:/plugins/oeyoews/PluginName",
     "plugin-type": "plugin",
     "name": "foo",
     "core-version": ">=5.2.3",
-    "description": "foo",
+    "description": "PluginName",
     "author": "oeyoews",
     "list": "readme"
 }

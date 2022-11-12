@@ -1,0 +1,7 @@
+title: $:/plugins/oeyoews/neotw-calendar/script
+type: application/javascript
+tags: $:/tags/RawMarkupWikified/BottomBody
+
+`<script>`
+  GitHubCalendar(".calendar", "oeyoews", { responsive: true });
+`</script>`
