@@ -2,6 +2,20 @@
     {
         "version": "0.0.1",
         "type": "application/json",
+        "title": "$:/plugins/oeyoews/calendar",
+        "plugin-type": "plugin",
+        "name": "calendar",
+        "core-version": ">=5.2.3",
+        "description": "calendar",
+        "author": "oeyoews",
+        "list": "readme",
+        "dependents": "",
+        "readme": "* this is a nodejs plugin templates\n",
+        "requires-reload": "no"
+    },
+    {
+        "version": "0.0.1",
+        "type": "application/json",
         "title": "$:/plugins/oeyoews/neotw",
         "plugin-type": "plugin",
         "name": "neotw",
