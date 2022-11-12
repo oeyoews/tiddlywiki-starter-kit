@@ -36,7 +36,7 @@
 ## ShowCases
 
 <img src="img/s5.png" width=256/>
-<img src="img/app.png" width=256/>
+<!-- <img src="img/app.png" width=256/> -->
 
 ## FileStruct
 
