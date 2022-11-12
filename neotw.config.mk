@@ -42,6 +42,7 @@ LongCommitId := $(shell git rev-parse HEAD)
 ShortCommitId := $(shell git rev-parse --short HEAD)
 TiddlyWiki-Git-File := "tiddlers/commit.tid"
 Date := $(shell date)
+PluginName := INPUT
 
 PROJECT      := $(call GetFromPkg,name)
 version := $(call GetFromPkg,version)
