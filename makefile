@@ -83,13 +83,20 @@ install-subwiki:
 install-archrepo:
 	@git clone --depth 1 $(archrepo) dev/archrepo
 
+# or /usr/share/pixmaps
+# have some refresh bug
+# @cp ./img/s5.png ~/.icons/$(PKGNAME).png
+# @ln -s img/flask.png ~/.icons/$(PKGNAME).png # need absoulte path
+# sudo conflict chmod ?
 install:
 	@echo 'xdg-open "http://127.0.0.1:$(PORT)"' > $(NEOTWBIN); chmod +x $(NEOTWBIN)
-	@cp src/neotw.desktop ~/.local/share/applications/neotw.desktop; cp ./img/flask.png ~/.icons/neotw.png
-	@echo "🎉 Installed neotw ✔(notice start tiddlywiki service)"
+	@cp src/neotw.desktop ~/.local/share/applications/$(PKGNAME).desktop;
+	@sudo cp ./img/flask.png /usr/share/pixmaps/$(PKGNAME).png
+	@echo "🎉 Installed $(PKGNAME) ✔ (notice start tiddlywiki service)"
 
 uninstall:
-	@rm $(NEOTWBIN) ~/.icons/neotw.png ~/.local/share/applications/neotw.desktop
+	@rm -rf $(NEOTWBIN) ~/.icons/$(PKGNAME).png ~/.local/share/applications/$(PKGNAME).desktop
+	@rm -rf /usr/share/pixmaps/$(PKGNAME).png
 	@echo "👋 bye by @$(USER)"
 
 # or yay tidgi directly
