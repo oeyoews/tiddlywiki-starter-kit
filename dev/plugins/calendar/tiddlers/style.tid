@@ -10,7 +10,7 @@ rect.ContributionCalendar-day[data-level='1'] {
 }
 
 rect.ContributionCalendar-day[data-level='2'] {
-    fill: #450045;
+    fill: ##5468ff;
 }
 
 rect.ContributionCalendar-day[data-level='3'] {
