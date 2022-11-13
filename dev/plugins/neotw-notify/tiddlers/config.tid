@@ -1,0 +1,24 @@
+title: $:/plugins/oeyoews/neotw-notify/config
+type: application/javascript
+
+const btn = document.querySelector("#btn");
+
+btn.addEventListener("click", () => {
+    new Notify({
+status: "success",
+title: "Notify Title",
+text: "Notify text lorem ipsum",
+effect: "slide",
+speed: 300,
+customClass: "",
+customIcon: "🎉",
+showIcon: true,
+showCloseButton: true,
+autoclose: true,
+autotimeout: 3000,
+gap: 20,
+distance: 29,
+type: 2,
+position: "right",
+});
+    });

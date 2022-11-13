@@ -1,0 +1,8 @@
+title: $:/plugins/oeyoews/neotw-notify/example
+js: <iframe class="notify" srcdoc=""" <html>   <head>     <link       rel="stylesheet"       href="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.css"     />      <script src="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.js"></script>   </head>   <body>     <button id="btn">Push Notification</button>     <script charset="utf-8">       const btn = document.querySelector("#btn");        btn.addEventListener("click", () => {         new Notify({           status: "success",           title: "Notify Title",           text: "Notify text lorem ipsum",           effect: "slide",           speed: 300,           customClass: "",           customIcon: "🎉",           showIcon: true,           showCloseButton: true,           autoclose: true,           autotimeout: 3000,           gap: 20,           distance: 29,           type: 2,           position: "right",         });       });     </script>   </body> </html> """/>
+update: true
+display:
+
+<center>
+<$list filter={{!!display}} variable=_  emptyMessage={{!!js}}>{{!!js}}</$list>
+</center>

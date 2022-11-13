@@ -1,0 +1,11 @@
+{
+    "version": "0.0.1",
+    "type": "application/json",
+    "title": "$:/plugins/oeyoews/neotw-notify",
+    "plugin-type": "plugin",
+    "name": "neotw-notify",
+    "core-version": ">=5.2.3",
+    "description": "neotw-notify",
+    "author": "oeyoews",
+    "list": "readme"
+}
