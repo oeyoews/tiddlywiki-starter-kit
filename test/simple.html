@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <!-- https://simple-notify.github.io/simple-notify/ -->
+    <link rel="stylesheet" href="css/simple.css" />
+    <script src="js/simple.js"></script>
+  </head>
+  <body>
+    <button id="btn">Push Notification</button>
+    <script charset="utf-8">
+      const btn = document.querySelector("#btn");
+
+      btn.addEventListener("click", () => {
+        new Notify({
+          status: "success",
+          title: "Notify Title",
+          text: "Notify text lorem ipsum",
+          effect: "slide",
+          speed: 300,
+          customClass: "",
+          customIcon: "🎉",
+          showIcon: true,
+          showCloseButton: true,
+          autoclose: true,
+          autotimeout: 3000,
+          gap: 20,
+          distance: 29,
+          type: 2,
+          position: "right",
+        });
+      });
+    </script>
+  </body>
+</html>
