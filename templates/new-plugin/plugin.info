@@ -5,7 +5,7 @@
     "plugin-type": "plugin",
     "name": "PluginName",
     "core-version": ">=5.2.3",
-    "description": "PluginName",
+    "description": "Description",
     "author": "oeyoews",
     "list": "readme"
 }

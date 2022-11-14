@@ -1,9 +1,8 @@
 include ./neotw.config.mk
 include ./src/color.mk
 
-new-plugin:
-	@cp -r templates/new-plugin dev/plugins/$(PluginName)
-	@sed -i "s/PluginName/$(PluginName)/g" `grep PluginName -rl dev/plugins/$(PluginName)`
+new-plugin: $(NewPlugin)
+	@sh scripts/new-plugin.sh
 
 open:
 	xdg-open http://127.0.0.1:$(PORT)
