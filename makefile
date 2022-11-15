@@ -2,7 +2,7 @@ include ./neotw.config.mk
 include ./src/color.mk
 
 new-plugin: $(NewPlugin)
-	@sh scripts/new-plugin.sh
+	@npx zx $(NewPlugin)
 
 open:
 	xdg-open http://127.0.0.1:$(PORT)
@@ -27,7 +27,7 @@ update-git-commit:
 	@echo -e 🎉 update-git-commit $(Green)Finished ✔ $(Color_off)
 
 bump: $(BumpFile)
-	yarn zx bump.mjs
+	@npx zx bump.mjs
 
 # startup tiddlywiki
 run:

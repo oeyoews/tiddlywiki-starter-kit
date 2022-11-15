@@ -1,7 +1,5 @@
 #!/usr/bin/env zx
 
-// import "zx/globals";
-
 // https://github.com/terkelg/prompts#readme
 import { spinner } from "zx/experimental";
 const prompts = require("prompts");
@@ -17,39 +15,37 @@ const questions = [
   {
     type: "text",
     name: "description", // variable
-    message: "description",
+    message: "plugin description", // not support sed space
     initial: "description",
   },
   {
     type: "toggle",
     name: "newPluginStatus",
-    message: "Can you confirm?",
+    message: "Are you sure to Creat this new plugin",
     initial: true,
     inactive: "no",
     active: "yes",
   },
 ];
 
-// clean
-await $`rm -rf dev/plugins/PluginName*`;
-
 const response = await prompts(questions);
-
 const template = "templates/new-plugin";
 const newPluginName = response.PluginName;
 const target = "dev/plugins/" + newPluginName;
+const description = response.description;
 const replaceStr = "PluginName";
-
-const newPluginDir = await spinner("Loading ...", async () => {
-  // const files = await $`grep ${replaceStr} ${target} -rl | tr '\n' ' '`;
-  // await $`sed -i "s#PluginName#${newPluginName}#g" ${files}`;
-  await $`mkdir ${target} && cp -r ${template}/* ${target} || exit`;
-  await $`sed -i "s#${replaceStr}#${newPluginName}#g" ${target}/**.info ${target}/**/*.tid ${target}/*.tid`;
-});
+const oldDescription = "Description";
 
 if (response.newPluginStatus) {
-  newPluginDir;
-  console.log(chalk.green("finished"));
+  await spinner("Loading ...", async () => {
+    // const files = await $`grep ${replaceStr} ${target} -rl | tr '\n' ' '`;
+    // await $`sed -i "s#PluginName#${newPluginName}#g" ${files}`;
+    await $`rm -rf dev/plugins/PluginName*`;
+    await $`mkdir ${target} && cp -r ${template}/* ${target}`;
+    await $`sed -i "s#${replaceStr}#${newPluginName}#g" ${target}/**.info ${target}/**/*.tid ${target}/*.tid`;
+    await $`sed -i "s#${oldDescription}#${newPluginName}#g" ${target}/**.info ${target}/**/*.tid ${target}/*.tid`;
+  });
+  console.log(chalk.green("🎉 You have created new plugin in"), target);
 } else {
-  console.log(chalk.yellow("nothing to do"));
+  console.log(chalk.yellow("😭 Maybe something wrong"));
 }
