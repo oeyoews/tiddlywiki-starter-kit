@@ -1,6 +1,7 @@
 #!/usr/bin/env zx
 
 // https://github.com/google/zx
+// TODO: use git latest tag replace tag
 import "zx/globals";
 const filename = "./package.json";
 const { version } = require(filename);
