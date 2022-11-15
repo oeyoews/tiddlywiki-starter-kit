@@ -38,9 +38,11 @@ const questions = [
 ];
 
 const response = await prompts(questions);
+const output = response.output;
 
 if (response.isBuild) {
   await spinner("Building ...", async () => {
-    await $`${bin} --output ${response.output} --build index`;
+    await $`rm -rf ${output}`; // clean
+    await $`${bin} --output ${output} --build index`; // use vanilla replace --build
   });
 }
