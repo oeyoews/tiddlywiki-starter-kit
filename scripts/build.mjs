@@ -28,6 +28,25 @@ const questions = [
     message: "custom output",
   },
   {
+    type: "select",
+    name: "setup",
+    message: "Are you sure to set passwd ?",
+    choices: [
+      {
+        title: "yes",
+        description: "set TiddlyWiki password",
+        value: "yes",
+      },
+      { title: "no", value: "no" },
+    ],
+    initial: 1,
+  },
+  {
+    type: (prev) => (prev == "yes" ? "password" : null),
+    name: "password",
+    message: "custom password",
+  },
+  {
     type: "toggle",
     name: "isBuild",
     message: "Are you sure to build ?",
@@ -39,10 +58,17 @@ const questions = [
 
 const response = await prompts(questions);
 const output = response.output;
+const setup = response.setup;
+const passwd = response.password;
 
 if (response.isBuild) {
   await spinner("Building ...", async () => {
     await $`rm -rf ${output}`; // clean
-    await $`${bin} --output ${output} --build index`; // use vanilla replace --build
+    if (setup) {
+      await $`${bin} --output ${output} --password ${passwd} --build index `; // use vanilla replace --build
+    } else {
+      await $`${bin} --output ${output} --build index`; // use vanilla replace --build
+    }
   });
+  console.log(chalk.green("🎉 Building finished"));
 }
