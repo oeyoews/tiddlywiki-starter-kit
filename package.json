@@ -6,6 +6,8 @@
   "license": "MIT",
   "scripts": {},
   "dependencies": {
+    "open": "^8.4.0",
+    "portfinder": "^1.0.32",
     "tiddlywiki": "5.2.3",
     "tree-node-cli": "1.5.2"
   },

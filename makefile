@@ -4,8 +4,8 @@ include ./src/color.mk
 new-plugin: $(NewPlugin)
 	@npx zx $(NewPlugin)
 
-open:
-	xdg-open http://127.0.0.1:$(PORT)
+run:
+	@npx zx scripts/start.mjs
 
 example:
 	@$(CMD) dev --build example
@@ -28,18 +28,6 @@ update-git-commit:
 
 bump: $(BumpFile)
 	@npx zx bump.mjs
-
-# startup tiddlywiki
-run:
-	@echo "ℹ️  Your current OS is $(PLATFORM) \
-		🚀 startup $(PACKAGE)"
-	# $(CMD) --listen port=$(PORT) anon-username=$(USER) 2>&1 &
-	$(CMD) --build listen 2>&1 &
-
-# startup to the world
-run-to-the-world:
-	@echo "👋 startup $(PACKAGE) to the world"
-	$(CMD) --listen port=$(PORT) anon-username=$(USERNAME) host=$(HOST)
 
 # generate index.html(support subwiki, but not build html no include subwiki)
 # note: because use make, so can't read this `tiddlywiki` cmd from current project, recommend install tiddlywiki global, likw `yarn global add tiddlywiki`
