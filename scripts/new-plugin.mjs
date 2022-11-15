@@ -10,8 +10,8 @@ const timestamp = new Date().getTime();
 const questions = [
   {
     type: "text",
-    name: "dirname", // variable
-    message: "create dirname",
+    name: "PluginName", // variable
+    message: "create plugin",
     initial: "PluginName-" + timestamp,
   },
   {
@@ -21,29 +21,12 @@ const questions = [
     initial: "description",
   },
   {
-    type: "select",
-    name: "PluginName",
-    message: "Which part do you want to bump? ",
-    choices: [
-      {
-        title: "newPluginName1: ",
-        description: "This option has a description",
-      },
-      {
-        title: "Red",
-        description: "This option has a description",
-        value: "#ff0000",
-      },
-      { title: "Green", value: "#00ff00", disabled: true },
-    ],
-  },
-  {
     type: "toggle",
     name: "newPluginStatus",
     message: "Can you confirm?",
-    initial: false,
-    active: "yes",
+    initial: true,
     inactive: "no",
+    active: "yes",
   },
 ];
 
@@ -53,12 +36,15 @@ await $`rm -rf dev/plugins/PluginName*`;
 const response = await prompts(questions);
 
 const template = "templates/new-plugin";
-const target = "dev/plugins/" + response.dirname;
+const newPluginName = response.PluginName;
+const target = "dev/plugins/" + newPluginName;
+const replaceStr = "PluginName";
 
 const newPluginDir = await spinner("Loading ...", async () => {
+  // const files = await $`grep ${replaceStr} ${target} -rl | tr '\n' ' '`;
+  // await $`sed -i "s#PluginName#${newPluginName}#g" ${files}`;
   await $`mkdir ${target} && cp -r ${template}/* ${target} || exit`;
-  await $`sleep 1`;
-  // await $`sed -i "s#PluginName#${inputName}#g" ${target}/**.tid`;
+  await $`sed -i "s#${replaceStr}#${newPluginName}#g" ${target}/**.info ${target}/**/*.tid ${target}/*.tid`;
 });
 
 if (response.newPluginStatus) {
