@@ -30,7 +30,7 @@ const questions = [
   {
     type: "toggle",
     name: "isBuild",
-    message: "Are you sure open on browser ?",
+    message: "Are you sure to build ?",
     initial: true,
     inactive: "no",
     active: "yes",
@@ -39,7 +39,7 @@ const questions = [
 
 const response = await prompts(questions);
 
-if (isBuild) {
+if (response.isBuild) {
   await spinner("Building ...", async () => {
     await $`${bin} --output ${response.output} --build index`;
   });
