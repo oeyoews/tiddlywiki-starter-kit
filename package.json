@@ -4,7 +4,11 @@
   "repository": "https://gitlab.com/oeyoews/neotw.git",
   "author": "oeyoews <jyao4783@gmail.com>",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "bump": "npx zx scripts/bump.mjs",
+    "clone": "npx zx scripts/clone.mjs",
+    "service": "npx zx scripts/service.mjs"
+  },
   "dependencies": {
     "open": "^8.4.0",
     "portfinder": "^1.0.32",

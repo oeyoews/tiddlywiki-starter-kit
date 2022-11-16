@@ -26,9 +26,6 @@ update-git-commit:
 		-e "s#SHORTID#$(ShortCommitId)#" $(TiddlyWiki-Git-File)
 	@echo -e 🎉 update-git-commit $(Green)Finished ✔ $(Color_off)
 
-bump: $(BumpFile)
-	@npx zx bump.mjs
-
 # generate index.html(support subwiki, but not build html no include subwiki)
 # note: because use make, so can't read this `tiddlywiki` cmd from current project, recommend install tiddlywiki global, likw `yarn global add tiddlywiki`
 # should before build
@@ -56,24 +53,6 @@ build: $(Lib)
 build-lib: $(Lib)
 	@sh ./lib
 
-# view
-view:
-	@google-chrome-stable $(dist)/index.html
-
-view-log:
-	@nvim $(logfile)
-
-# bpview
-bpview:
-	@make build; google-chrome-stable $(dist)/index.html
-
-# check dir
-install-subwiki:
-	@git clone --depth 1 $(subwiki-address) tiddlers/subwiki
-
-install-archrepo:
-	@git clone --depth 1 $(archrepo) dev/archrepo
-
 # or /usr/share/pixmaps
 # have some refresh bug
 # @cp ./img/s5.png ~/.icons/$(PKGNAME).png
@@ -97,9 +76,6 @@ install-tidgi:
 	@rm -rf $(tidgi_dir); mkdir $(tidgi_dir)/; cp src/tidgi-repo/PKGBUILD $(tidgi_dir)
 	@cd $(tidgi_dir); makepkg; sudo pacman -U *.zst
 
-edit-config:
-	@nvim $(tiddlywiki_configfile)
-
 # install tiddlywiki global
 install-service:
 	@cp -i $(SERVICEFILE) $(SERVICETARGETFILE)
@@ -107,29 +83,6 @@ install-service:
 		-e "1i ;; automatically generated on $(Date)\n" $(SERVICETARGETFILE)
 	@echo "🎉 $(SERVICETARGETFILE) file has installed"
 
-# use highlight color
-# maybe should start byhand firstly
-reload-service:
-	$(SERVICECMD) daemon-reload
-enable:
-	$(SERVICECMD) enable $(ServiceName)
-disable:
-	$(SERVICECMD) disable $(ServiceName)
-status:
-	$(SERVICECMD) status $(ServiceName)
-start:
-	$(SERVICECMD) start  $(SERVICEFILE)
-	@echo "$(SERVICEFILE) has started, Click this address https://127.0.0.1:$(PORT) to open"
-	@make status
-
-restart:
-	$(SERVICECMD) restart $(ServiceName)
-	@echo "$(ServiceName) has restared, Click this address https://127.0.0.1:$(PORT) to open"
-	@make status
-
-stop:
-	$(SERVICECMD) stop $(SERVICEFILE)
-	@echo $(SERVICEFILE) has stopped
 	# uninstall service
 uninstall-service:
 	@rm -f -i $(SERVICETARGETFILE);

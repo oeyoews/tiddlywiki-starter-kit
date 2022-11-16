@@ -2,7 +2,7 @@
 
 // https://github.com/terkelg/prompts#readme
 import { spinner } from "zx/experimental";
-const prompts = require("prompts");
+import prompts from "prompts";
 const timestamp = new Date().getTime();
 
 const questions = [
