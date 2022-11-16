@@ -2,9 +2,12 @@
 
 // https://github.com/terkelg/prompts#readme
 import { spinner } from "zx/experimental";
+import { cyan, blue, yellow, bold, dim, green } from "kolorist";
 import prompts from "prompts";
-const timestamp = new Date().getTime();
 
+console.log(`  ${cyan("●") + blue("■") + yellow("▲")}`);
+
+const timestamp = new Date().getTime();
 const questions = [
   {
     type: "text",

@@ -1,18 +1,21 @@
 {
   "name": "Neotw",
   "version": "1.9.4",
+  "description": "A modern style notebook based on tiddlywiki",
   "repository": "https://gitlab.com/oeyoews/neotw.git",
   "author": "oeyoews <jyao4783@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "build": "npx zx scripts/build.mjs",
     "start": "npx zx scripts/start.mjs",
     "new-plugin": "npx zx scripts/new-plugin.mjs",
-    "info": "npx zx scripts/info.mjs",
+    "neotw": "npx zx scripts/info.mjs",
     "bump": "npx zx bump.mjs",
     "clone": "npx zx scripts/clone.mjs",
     "service": "npx zx scripts/service.mjs"
   },
   "dependencies": {
+    "kolorist": "^1.6.0",
     "open": "^8.4.0",
     "portfinder": "^1.0.32",
     "tiddlywiki": "5.2.3",
