@@ -1,12 +1,6 @@
 include ./neotw.config.mk
 include ./src/color.mk
 
-new-plugin: $(NewPlugin)
-	@npx zx $(NewPlugin)
-
-run:
-	@npx zx scripts/start.mjs
-
 example:
 	@$(CMD) dev --build example
 
