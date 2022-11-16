@@ -16,10 +16,6 @@ init-info-file:
 		-e "s/PORT/$(PORT)/" \
 		-e "\$$d" $(tiddlywiki_configfile)
 
-info: $(PackageJson)
-	@echo -e " current path is" $(PWD)
-	@echo -e " Project: $(PROJECT)\n Version: $(version)\n Platform: $(PLATFORM)\n Commit: $(ShortCommitId)"
-
 update-git-commit:
 	@cp templates/commit-template.tid $(TiddlyWiki-Git-File)
 	@sed -i -e "s#LONGID#$(LongCommitId)#" \

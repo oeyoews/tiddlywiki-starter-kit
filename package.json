@@ -5,6 +5,7 @@
   "author": "oeyoews <jyao4783@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "info": "npx zx scripts/info.mjs",
     "bump": "npx zx scripts/bump.mjs",
     "clone": "npx zx scripts/clone.mjs",
     "service": "npx zx scripts/service.mjs"

@@ -1,10 +1,9 @@
 #!/usr/bin/env zx
 
-const version = process.env.npm_package_version;
+const { version, name } = require("../package.json");
 
+const platform = os.platform(); // linux
 const userInfo = os.userInfo(); // init
 const username = userInfo.username; // xxx
-const homedir = userInfo.homedir; // /home/xxx
-const platform = os.platform(); // linux
 
-console.log(version);
+console.log(chalk.green(name, version, platform, username));
