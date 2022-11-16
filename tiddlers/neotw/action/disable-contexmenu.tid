@@ -1,0 +1,15 @@
+created: 20221116172030628
+creator: oeyoews
+modified: 20221116172425293
+modifier: oeyoews
+tags: $:/tags/RawMarkup
+title: neotw/action/disable-contexmenu
+type: text/vnd.tiddlywiki
+
+<script>
+  window.onload = function(){
+  document.oncontextmenu = function(){
+    return false;
+  }
+}
+</script>

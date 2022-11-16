@@ -1,5 +1,5 @@
 title: $:/plugins/oeyoews/neotw-confetti/confetti-welcome
-tags: $:/tags/RawMarkupWikified/TopBody
+tags: $:/tags/RawMarkupWikified/BottomBody
 
 `<script>`
 {{$:/plugins/oeyoews/neotw-confetti/config-js}}
