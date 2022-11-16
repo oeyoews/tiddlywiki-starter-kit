@@ -1,12 +1,12 @@
 {
   "name": "Neotw",
-  "version": "1.9.3",
+  "version": "1.9.4",
   "repository": "https://gitlab.com/oeyoews/neotw.git",
   "author": "oeyoews <jyao4783@gmail.com>",
   "license": "MIT",
   "scripts": {
     "info": "npx zx scripts/info.mjs",
-    "bump": "npx zx scripts/bump.mjs",
+    "bump": "npx zx bump.mjs",
     "clone": "npx zx scripts/clone.mjs",
     "service": "npx zx scripts/service.mjs"
   },
