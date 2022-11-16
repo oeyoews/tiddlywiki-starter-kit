@@ -12,6 +12,11 @@ const questions = [
     name: "serviceEvent",
     message: "event",
     choices: [
+      {
+        title: "Restart service",
+        description: "restart " + serviceFile,
+        value: "restart",
+      },
       // TODO: how to output this status?
       {
         title: "Status service",
@@ -42,11 +47,6 @@ const questions = [
         title: "Reload service",
         description: "reload " + serviceFile,
         value: "reload",
-      },
-      {
-        title: "Restart service",
-        description: "restart " + serviceFile,
-        value: "restart",
       },
     ],
     initial: 0,
