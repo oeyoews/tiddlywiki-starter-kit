@@ -3,7 +3,6 @@
 <h1>Neotw</h1>
 
 <img src="./img/flask.png" height=128 alt="flask">
-<!-- <img src="./img/white-vanilla.png" height=128 alt="cat(gitlab not support preview repo svg?)"> -->
 
 </div>
 
@@ -60,7 +59,8 @@ git clone --depth 1 https://gitlab.com/oeyoews/neotw # or git clone --depth 1 ht
 `vanilla`
 
 ```bash
-tiddlywiki --listen
+yarn install # install
+npx tiddlywiki --listen
 ```
 
 ## 🐥 Configuration
