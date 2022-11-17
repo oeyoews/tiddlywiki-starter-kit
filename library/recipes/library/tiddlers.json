@@ -154,19 +154,5 @@
         "type": "application/json",
         "readme": "This plugin adds a ''Keymap'' with some of the most important ''Vim'' keyboard shortcuts\n\nFor information about available ''keyboard shortcuts'' see the [ext[CodeMirror vim demo|https://codemirror.net/demo/vim.html]]\n",
         "requires-reload": "yes"
-    },
-    {
-        "version": "0.0.1",
-        "type": "application/json",
-        "title": "$:/plugins/oeyoews/replace-name",
-        "plugin-type": "plugin",
-        "name": "replace-name",
-        "core-version": ">=5.2.3",
-        "description": "Description",
-        "author": "oeyoews",
-        "list": "readme",
-        "dependents": "",
-        "readme": "* Description\n",
-        "requires-reload": "no"
     }
 ]
