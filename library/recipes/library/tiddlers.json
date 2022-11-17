@@ -124,20 +124,6 @@
         "requires-reload": "no"
     },
     {
-        "version": "0.0.1",
-        "type": "application/json",
-        "title": "$:/plugins/oeyoews/neotw-style",
-        "plugin-type": "plugin",
-        "name": "neotw-style",
-        "core-version": ">=5.2.3",
-        "description": "neotw-style",
-        "author": "oeyoews",
-        "list": "readme",
-        "dependents": "",
-        "readme": "* neotw-style\n",
-        "requires-reload": "no"
-    },
-    {
         "title": "$:/plugins/oeyoews/neotw-surfing-keys",
         "name": "Some shortcuts",
         "description": "Some shortcuts",
