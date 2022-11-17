@@ -1,0 +1,14 @@
+caption: mobile-warn
+created: 20221117023346122
+creator: oeyoews
+modified: 20221117023551440
+modifier: oeyoews
+subtitle: Warning
+tags: 
+title: neotw/browser/tip
+type: text/vnd.tiddlywiki
+
+<center>  <h2> <<emoji tada>> Ooops ! </h2> </center>
+
+<center> Try to press <kbd>alt shift s</kbd>, you will find more details <<emoji>>.
+</center>
