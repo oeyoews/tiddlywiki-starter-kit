@@ -1,7 +1,7 @@
 #!/usr/bin/env zx
 
 import { cyan, blue, yellow, bold, dim, green } from "kolorist";
-import signale from "signale";
+const signale = require("signale");
 
 const { description, version, name } = require("../package.json");
 const log = console.log;

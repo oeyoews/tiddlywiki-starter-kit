@@ -6,6 +6,7 @@
   "author": "oeyoews <jyao4783@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "index": "npx zx scripts/index.mjs",
     "build": "npx zx scripts/build.mjs",
     "start": "npx zx scripts/start.mjs",
     "new-plugin": "npx zx scripts/new-plugin.mjs",
@@ -19,6 +20,7 @@
     "open": "^8.4.0",
     "portfinder": "^1.0.32",
     "replace": "^1.2.2",
+    "signale": "^1.4.0",
     "tiddlywiki": "5.2.3",
     "tree-node-cli": "1.5.2"
   },
