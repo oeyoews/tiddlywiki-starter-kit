@@ -1,6 +1,6 @@
 created: 20221117023811761
 creator: oeyoews
-modified: 20221117130905436
+modified: 20221117131124860
 modifier: oeyoews
 title: Index
 type: text/vnd.tiddlywiki
@@ -14,7 +14,7 @@ type: text/vnd.tiddlywiki
 </div>
 
 <span style="float:right;width:156px">{{neotw/image/showcase-01.png}}</span>
-{{neotw/badges}}
+
 
 <$list filter="[{$:/info/url/protocol}prefix[https]]">
   {{$:/state/git/commit}}
@@ -27,3 +27,6 @@ type: text/vnd.tiddlywiki
 -->
 
 {{neotw/browser/tip}}
+
+---
+{{neotw/badges}}
