@@ -1,14 +1,14 @@
-caption: repo button
+caption: Repo button
 description: repo button
 tags: $:/tags/PageControls
-title: neotw/repo-button
+title: $:/plugins/oeyoews/neotw/button/repo
 
 \whitespace trim
 
 \define base-repo() https://gitlab.com/
 \define target() oeyoews/neotw
 
-<$button tooltip="Repo" aria-label="GRB" class=<<tv-config-toolbar-class>>>
+<$button tooltip="" aria-label="" class=<<tv-config-toolbar-class>>>
 <a href={{{ [<target>addprefix<base-repo>]}}} target="_blank">
-{{$:/images/gitlab}}</a>
+{{$:/plugins/oeyoews/neotw/icon/gitlab}}</a>
 </$button>
