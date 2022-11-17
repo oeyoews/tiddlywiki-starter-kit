@@ -21,7 +21,7 @@ const questions = [
     type: "text",
     name: "description", // variable
     message: "plugin description", // not support sed space
-    initial: "description",
+    initial: "",
   },
   {
     type: "toggle",
@@ -35,8 +35,9 @@ const questions = [
 
 const response = await prompts(questions);
 const template = "templates/new-plugin";
-const description = response.description;
-const pluginName = response.pluginName;
+const pluginName = response.pluginName.trim();
+
+const description = response.description || pluginName;
 const replacePluginName = "PluginName";
 const replaceDes = "Description";
 const target = "dev/plugins/" + pluginName;
