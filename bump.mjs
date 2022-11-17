@@ -7,7 +7,7 @@ const filename = "./package.json";
 const { version } = require(filename);
 const prompts = require("prompts");
 
-console.log(chalk.blue("Long long ago, there is a tiger."));
+console.log(chalk.green.bold.underline("Long long ago, there is a tiger."));
 console.log("Current version: " + version);
 
 const [major, minor, patch] = version.split(".");
@@ -16,11 +16,6 @@ const nextMinor = major + "." + String(Number(minor) + 1) + ".0";
 const nextPatch = major + "." + minor + "." + String(Number(patch) + 1);
 
 const questions = [
-  {
-    type: "text",
-    name: "dish",
-    message: "Would you like some cocktail? ",
-  },
   {
     type: "select",
     name: "version",
@@ -52,6 +47,7 @@ const questions = [
 
 const response = await prompts(questions);
 const newVersion = response.version;
+
 if (newVersion) {
   const data = await fs.readFile(filename);
   const content = String(data).replace(
@@ -61,6 +57,7 @@ if (newVersion) {
   await fs.writeFile(filename, content);
   console.log(chalk.green("`package.json` updated!"));
 }
+
 if (response.commit) {
   let message = response.message;
   if (message === "") {
@@ -77,6 +74,6 @@ if (response.commit) {
     }
   } else {
     // message === undefined的情况
-    console.log(chalk.yellow("I can see the first leaf falling."));
+    console.log(chalk.red.underline("I can see the first leaf falling."));
   }
 }
