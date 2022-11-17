@@ -1,0 +1,18 @@
+created: 20221117052014352
+creator: oeyoews
+modified: 20221117052234725
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: neotw/css/below-toolbar
+type: text/vnd.tiddlywiki
+
+.tc-tiddler-edit-frame .tc-dropzone-editor > .tc-reveal {
+   display: flex;
+   flex-direction: column;
+}
+
+.tc-tiddler-edit-frame .tc-dropzone-editor .tc-editor-toolbar {
+   order: 1;
+   position: sticky;
+   bottom: 0;
+}
