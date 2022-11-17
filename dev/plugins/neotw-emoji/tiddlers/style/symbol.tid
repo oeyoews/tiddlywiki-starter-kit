@@ -1,10 +1,5 @@
-created: 20220901012627097
-creator: oeyoews
-modified: 20221008160617255
-modifier: oeyoews
 tags: $:/tags/Stylesheet
-title: neotw/style/symbol
-type: text/vnd.tiddlywiki
+title: $:/plugins/oeyoews/neotw-emoji/style/symbol
 
 .neotw-circle:before {
 		content: "◍ ";
@@ -57,6 +52,7 @@ type: text/vnd.tiddlywiki
 }
 
 .neotw-bingo:before {
+    <!-- ✔ -->
 		content: "✓ ";
 		color: #008000;
 }

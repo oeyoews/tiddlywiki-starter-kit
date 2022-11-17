@@ -36,7 +36,8 @@ build: $(Lib)
 # $(CMD) public --build favicon >> /tmp/neotw.log 2>&1  # favicon
 # $(CMD) public --output dist/ --build debug >> /tmp/neotw.log 2>&1  # build
 	@mv library/ $(dist)
-	@cp -r src/vercel.json $(dist); ls -sh $(dist)/index.html # patch
+	@cp -r src/vercel.json $(dist);  # disable vercel
+	@ls -sh $(dist)/index.html # patch
 	@tree $(dist) -L 1
 	@echo -e 🎉 $(Green)Finished ✔ $(Color_off)
 

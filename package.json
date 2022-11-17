@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "index": "npx zx scripts/index.mjs",
-    "build": "npx zx scripts/build.mjs",
+    "build-local": "npx zx scripts/build.mjs",
     "start": "npx zx scripts/start.mjs",
     "new-plugin": "npx zx scripts/new-plugin.mjs",
     "neotw": "npx zx scripts/info.mjs",
