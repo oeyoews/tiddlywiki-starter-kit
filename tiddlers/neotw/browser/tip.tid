@@ -1,7 +1,7 @@
 caption: tips
 created: 20221117023346122
 creator: oeyoews
-modified: 20221117033457207
+modified: 20221117082929861
 modifier: oeyoews
 subtitle: Tips
 tags: 
@@ -10,8 +10,16 @@ type: text/vnd.tiddlywiki
 
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
 
-<center>  <h2> <<emoji tada>> Ooops ! </h2> </center>
-
-<center> Try to press <kbd>alt shift s</kbd>, you will find more details <<emoji>>.
+<div class=neotw-gradient> 
+	<center>  
+		<h2>
+			<<emoji tada>> Ooops !
+		</h2>
 </center>
+
+<center>
+	Try to press <kbd>alt shift s</kbd>, you will find more details <<emoji>>.
+</center>
+</div>
+
 </$list>
