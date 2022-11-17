@@ -4,14 +4,16 @@
 import { spinner } from "zx/experimental";
 import { cyan, blue, yellow, bold, dim, green } from "kolorist";
 import prompts from "prompts";
+import replace from "replace";
 
-console.log(`  ${cyan("●") + blue("■") + yellow("▲")}`);
+console.log(`${cyan("●") + blue("■") + yellow("▲")}`);
 
 const timestamp = new Date().getTime();
+
 const questions = [
   {
     type: "text",
-    name: "PluginName", // variable
+    name: "pluginName", // variable
     message: "create plugin",
     initial: "PluginName-" + timestamp,
   },
@@ -33,20 +35,36 @@ const questions = [
 
 const response = await prompts(questions);
 const template = "templates/new-plugin";
-const newPluginName = response.PluginName;
-const target = "dev/plugins/" + newPluginName;
 const description = response.description;
-const replaceStr = "PluginName";
-const oldDescription = "Description";
+const pluginName = response.pluginName;
+const replacePluginName = "PluginName";
+const replaceDes = "Description";
+const target = "dev/plugins/" + pluginName;
 
 if (response.newPluginStatus) {
   await spinner("Loading ...", async () => {
     // const files = await $`grep ${replaceStr} ${target} -rl | tr '\n' ' '`;
     // await $`sed -i "s#PluginName#${newPluginName}#g" ${files}`;
+    // await $`sed -i "s#${replaceStr}#${newPluginName}#g" ${target}/**.info ${target}/**/*.tid ${target}/*.tid`;
+    // await $`sed -i "s#${oldDescription}#${newPluginName}#g" ${target}/**.info ${target}/**/*.tid ${target}/*.tid`;
     await $`rm -rf dev/plugins/PluginName*`;
     await $`mkdir ${target} && cp -r ${template}/* ${target}`;
-    await $`sed -i "s#${replaceStr}#${newPluginName}#g" ${target}/**.info ${target}/**/*.tid ${target}/*.tid`;
-    await $`sed -i "s#${oldDescription}#${newPluginName}#g" ${target}/**.info ${target}/**/*.tid ${target}/*.tid`;
+    // pluginname
+    replace({
+      regex: replacePluginName,
+      replacement: pluginName,
+      paths: [target],
+      recursive: true,
+      silent: true,
+    });
+    // description
+    replace({
+      regex: replaceDes,
+      replacement: description,
+      paths: [target],
+      recursive: true,
+      silent: true,
+    });
   });
   console.log(chalk.green("🎉 You have created new plugin in"), target);
 } else {
