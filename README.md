@@ -11,34 +11,34 @@
 
 <!-- toc -->
 
-- [What's the neotw](#whats-the-neotw)
-- [Features](#features)
-- [ShowCases](#showcases)
-- [FileStruct](#filestruct)
-- [Install](#install)
-- [Run](#run)
-- [Configuration](#configuration)
-- [Preview](#preview)
+- [❓ What's the neotw](#%E2%9D%93-whats-the-neotw)
+- [🆕 Features](#%F0%9F%86%95-features)
+- [🖼️ ShowCases](#%F0%9F%96%BC%EF%B8%8F-showcases)
+- [📂 FileStruct](#%F0%9F%93%82-filestruct)
+- [⛹️ Install](#%E2%9B%B9%EF%B8%8F-install)
+- [👟 Run](#%F0%9F%91%9F-run)
+- [🐥 Configuration](#%F0%9F%90%A5-configuration)
+- [✌ Preview](#%E2%9C%8C-preview)
 
 <!-- tocstop -->
 
-## What's the neotw
+## ❓ What's the neotw
 
 > A modern style notebook based on tiddlywiki is v2 of the [tw5](https://github.com/oeyoews/tw5) repository
 
 > Compare to `tw5`, `neotw` remove github pages deploy and related deploy, no pwa, image optimize, no mobile
 > optimize, and Maximize keep vanilla configuration etc, just for local, so it's more simplify, still worth trying
 
-## Features
+## 🆕 Features
 
 > No longer listed specifically, waiting for your exploration and discovery
 
-## ShowCases
+## 🖼️ ShowCases
 
 <img src="img/s5.png" width=256/>
 <!-- <img src="img/app.png" width=256/> -->
 
-## FileStruct
+## 📂 FileStruct
 
 ```bash
 📁 neotw
@@ -49,13 +49,13 @@
 # This structure may not be up to date
 ```
 
-## Install
+## ⛹️ Install
 
 ```bash
 git clone --depth 1 https://gitlab.com/oeyoews/neotw # or git clone --depth 1 https://github.com/oeyoews/neotw
 ```
 
-## Run
+## 👟 Run
 
 vanilla
 
@@ -70,13 +70,13 @@ make or make run # port is 8099 default
 make build # generate dist/index.html
 ```
 
-## Configuration
+## 🐥 Configuration
 
 The [makefile](makefile) file is used as the centeral configuration for `neotw`
 
 > more usage please check [makefile](makefile)
 
-## Preview
+## ✌ Preview
 
 - gh-pages: https://oeyoews.github.io/neotw
 - tiddlyhost: https://neotw.tiddlyhost.com
