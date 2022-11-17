@@ -1,4 +1,4 @@
-title: $:/plugins/oeyoews/neotw-confetti/config-js
+title: $:/plugins/oeyoews/neotw-confetti/right-msg
 type: application/javascript
 
 var duration = 3 * 1000;

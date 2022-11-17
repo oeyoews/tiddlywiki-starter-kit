@@ -1,8 +1,6 @@
-title: $:/plugins/oeyoews/neotw-confetti/confetti-snow
-<!-- tags: $:/tags/RawMarkupWikified/BottomBody -->
+title: $:/plugins/oeyoews/neotw-confetti/snow
 type: application/javascript
 
-`<script>`
 var duration = 15 * 1000;
 var animationEnd = Date.now() + duration;
 var skew = 1;
@@ -36,4 +34,3 @@ function randomInRange(min, max) {
     requestAnimationFrame(frame);
   }
 }());
-`</script>`

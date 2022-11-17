@@ -68,9 +68,9 @@ if (response.isBuild) {
   await spinner("Building ...", async () => {
     await $`rm -rf ${output}`; // clean
     if (setup) {
-      await $`${bin} --output ${output} --password ${passwd} --build index `; // use vanilla replace --build
+      await $`npx ${bin} --output ${output} --password ${passwd} --build index `; // use vanilla replace --build
     } else {
-      await $`${bin} --output ${output} --build index`; // use vanilla replace --build
+      await $`npx ${bin} --output ${output} --build index`; // use vanilla replace --build
     }
   });
   console.log(chalk.green("🎉 Building finished"));

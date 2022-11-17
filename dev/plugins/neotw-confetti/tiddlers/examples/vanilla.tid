@@ -1,8 +1,6 @@
-title: $:/plugins/oeyoews/neotw-confetti/confetti
-<!-- tags: $:/tags/RawMarkupWikified/BottomBody -->
+title: $:/plugins/oeyoews/neotw-confetti/vanilla
 type: application/javascript
 
-`<script>`
 var duration = 1 * 1000;
 var end = Date.now() + duration;
 
@@ -26,5 +24,3 @@ var end = Date.now() + duration;
     requestAnimationFrame(frame);
   }
 }());
-
-`</script>`

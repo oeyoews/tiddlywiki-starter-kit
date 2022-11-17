@@ -13,6 +13,7 @@ import {
 setBasePort(8080); // default: 8000
 setHighestPort(8888); // default: 65535
 
+const bin = "tiddlywiki";
 const questions = [
   {
     type: "select",
@@ -49,18 +50,18 @@ const openUrl = "http:/localhost:" + response.port;
 
 if (response.isStart) {
   if (response.port == "random") {
-    getPort(function(err, port) {
+    getPort(function (err, port) {
       const openUrl = "http:/localhost:" + port;
-      $`tiddlywiki --listen port=${port} 2>&1`;
+      $`npx ${bin} --listen port=${port} 2>&1`;
       spinner("Loading ...", async () => {
-        await $`sleep 0.5`;
+        await $`sleep 0.7`;
         await open(openUrl);
       });
     });
   } else {
-    $`tiddlywiki --listen port=${response.port} 2>&1`;
+    $`npx ${bin} --listen port=${response.port} 2>&1`;
     await spinner("Loading ...", async () => {
-      await $`sleep 0.5`;
+      await $`sleep 0.7`;
       await open(openUrl);
     });
   }

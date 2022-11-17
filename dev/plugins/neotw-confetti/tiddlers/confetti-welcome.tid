@@ -2,5 +2,5 @@ title: $:/plugins/oeyoews/neotw-confetti/confetti-welcome
 tags: $:/tags/RawMarkupWikified/BottomBody
 
 `<script>`
-{{$:/plugins/oeyoews/neotw-confetti/config-js}}
+{{$:/plugins/oeyoews/neotw-confetti/fireworks}}
 `</script>`
