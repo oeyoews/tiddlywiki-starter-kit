@@ -1,7 +1,7 @@
 caption: mobile-warn
 created: 20220913004025225
 creator: oeyoews
-modified: 20221116165117613
+modified: 20221117042507928
 modifier: oeyoews
 subtitle: Warning
 tags: 
@@ -12,4 +12,4 @@ type: text/vnd.tiddlywiki
 
 &nbsp; &nbsp; Looks like you are browsing on a mobile device.
 
-&nbsp; &nbsp; We are still wroking on mobile support and recommend you use a desktop device.
+<p>&nbsp; &nbsp; We are still wroking on mobile support and recommend you use a desktop device. </p>

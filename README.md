@@ -17,7 +17,7 @@
 - [⛹️ Install](#%E2%9B%B9%EF%B8%8F-install)
 - [👟 Run](#%F0%9F%91%9F-run)
 - [🐥 Configuration](#%F0%9F%90%A5-configuration)
-- [Preview ✌](#preview-%E2%9C%8C)
+- [✌ Preview](#%E2%9C%8C-preview)
 
 <!-- tocstop -->
 
@@ -69,7 +69,7 @@ The [makefile](makefile) file is used as the centeral configuration for `neotw`
 
 > more usage please check [makefile](makefile)
 
-## Preview ✌
+## ✌ Preview
 
 - gh-pages: https://oeyoews.github.io/neotw
 - tiddlyhost: https://neotw.tiddlyhost.com
