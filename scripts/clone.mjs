@@ -2,6 +2,7 @@
 
 import prompts from "prompts";
 import { spinner } from "zx/experimental";
+import signale from "signale";
 
 const userInfo = os.userInfo(); // init
 const username = userInfo.username; // xxx
@@ -57,3 +58,9 @@ if (isClone) {
 } else {
   echo("🍃 I can see the first leaf falling.");
 }
+
+signale.complete({
+  prefix: "[Clone]",
+  message: "Finished clone",
+  suffix: "(@oeyoews)",
+});
