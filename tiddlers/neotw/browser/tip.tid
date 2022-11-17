@@ -1,7 +1,7 @@
 caption: tips
 created: 20221117023346122
 creator: oeyoews
-modified: 20221117125558498
+modified: 20221117133313741
 modifier: oeyoews
 subtitle: Tips
 tags: 
@@ -18,7 +18,9 @@ type: text/vnd.tiddlywiki
 </center>
 
 <center>
+<h4>
 	Try to press <kbd>alt shift s</kbd>, you will find more details <<emoji>>.
+</h4>
 </center>
 </div>
 
