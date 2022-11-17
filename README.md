@@ -57,17 +57,10 @@ git clone --depth 1 https://gitlab.com/oeyoews/neotw # or git clone --depth 1 ht
 
 ## 👟 Run
 
-vanilla
+`vanilla`
 
 ```bash
 tiddlywiki --listen
-```
-
-make
-
-```bash
-make or make run # port is 8099 default
-make build # generate dist/index.html
 ```
 
 ## 🐥 Configuration
