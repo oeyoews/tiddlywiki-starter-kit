@@ -18,6 +18,7 @@
     "kolorist": "^1.6.0",
     "open": "^8.4.0",
     "portfinder": "^1.0.32",
+    "replace": "^1.2.2",
     "tiddlywiki": "5.2.3",
     "tree-node-cli": "1.5.2"
   },
