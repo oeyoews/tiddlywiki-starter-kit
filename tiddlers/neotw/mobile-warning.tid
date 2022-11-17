@@ -1,17 +1,11 @@
 created: 20220831070237469
 creator: oeyoews
-modified: 20221117030602136
+modified: 20221117031741570
 modifier: oeyoews
 subtitle: Tips
 tags: 
 title: neotw/mobile-warning
 type: text/vnd.tiddlywiki
-
-<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]"> 
-<$list filter="[{$:/info/url/protocol}prefix[https]]">
-{{neotw/browser/tip}}
-</$list>
-</$list>
 
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]"> 
 {{neotw/mobile/warning-text}}

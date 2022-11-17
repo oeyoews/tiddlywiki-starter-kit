@@ -1,6 +1,6 @@
 created: 20221117023811761
 creator: oeyoews
-modified: 20221117030100260
+modified: 20221117031754979
 modifier: oeyoews
 title: Index
 type: text/vnd.tiddlywiki
@@ -26,4 +26,4 @@ type: text/vnd.tiddlywiki
 <<layout "[img width=256 [showcase|neotw/image/showcase-01.png]]" right>>
 -->
 
-{{neotw/mobile-warning}}
+{{neotw/browser/tip}}
