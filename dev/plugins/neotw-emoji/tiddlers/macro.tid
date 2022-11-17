@@ -1,7 +1,12 @@
 tags: $:/tags/Macro
 title: $:/plugins/oeyoews/neotw-emoji/macro
 
-\define emoji(symbol:rocket)
 \whitespace trim
+
+\define emoji(symbol:rocket)
 	<span class="neotw-$symbol$"></span>
+\end
+
+\define nw-gradient(text)
+	<span class="nw-gradient">$text$</span>
 \end

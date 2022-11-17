@@ -1,5 +1,5 @@
+title: $:/plugins/oeyoews/neotw-emoji/style/bullet
 tags: $:/tags/Stylesheet
-title: $:/plugins/oeyoews/neotw-emoji/bullet-style
 
 \define dict(text)
 		content: "{{$:/plugins/oeyoews/neotw-emoji/dict##$text$}} ";
