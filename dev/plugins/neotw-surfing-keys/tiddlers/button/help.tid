@@ -6,7 +6,7 @@ type: text/vnd.tiddlywiki
 <$list filter="[[$:/state/notebook-sidebar]get[text]else[no]match[no]]">
 <div class="neotw-surfing-keys">
 <$button>
-⌨️
+<<nw-gradient "🚀">>
 <$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/neotw-surfing-keys/keyboard-list"/>
 </$button>
 </div>
