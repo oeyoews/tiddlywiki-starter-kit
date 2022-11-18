@@ -31,13 +31,14 @@ build: $(Lib)
 	@rm -rf $(NEOTWTEMP)/tiddlers/subwiki \
 		$(NEOTWTEMP)/tiddlers/trashbin \
 	 	$(NEOTWTEMP)/tiddlers/\$$__StoryLis*.tid
-	$(CMD) $(NEOTWTEMP) --build index >> $(logfile) 2>&1  # build
+	$(CMD) $(NEOTWTEMP) --build main >> $(logfile) 2>&1  # build
+	@cp src/index.html $(dist)
 # $(CMD) $(NEOTWTEMP) --build static >> $(logfile) 2>&1  # static giscus and commpand palette widget have a error
 # $(CMD) public --build favicon >> /tmp/neotw.log 2>&1  # favicon
 # $(CMD) public --output dist/ --build debug >> /tmp/neotw.log 2>&1  # build
 	@mv library/ $(dist)
 	@cp -r src/vercel.json $(dist);  # disable vercel
-	@ls -sh $(dist)/index.html # patch
+	@ls -sh $(dist)/*.html # patch
 	@tree $(dist) -L 1
 	@echo -e 🎉 $(Green)Finished ✔ $(Color_off)
 

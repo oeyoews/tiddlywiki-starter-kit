@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Desktop Wallpaper</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap"
+      rel="stylesheet"
+    />
+
+    <style type="text/css" media="screen">
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+
+      .alert {
+        background: rgba(255, 255, 255, 1);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        z-index: 10;
+        padding: 10px;
+      }
+
+      .alert ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .alert ul li b {
+        color: #589;
+        font-weight: 600;
+        font-family: Arial, sans-serif;
+      }
+
+      #container {
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        position: relative;
+      }
+
+      #wallpaper {
+        background-image: url("https://images.pexels.com/photos/3375493/pexels-photo-3375493.jpeg?cs=srgb&dl=photo-of-birds-flying-during-daytime-3375493.jpg&fm=jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      #wallpaper.slideUp {
+        transition: all 0.6s ease;
+        transform: translateY(-100%);
+      }
+
+      #wallpaper.slideDown {
+        transition: all 0.6s linear;
+        transform: translateY(0%);
+      }
+
+      .icons {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 0.5em;
+      }
+
+      .icons i {
+        color: #fff;
+        margin-top: 0.7em;
+        margin-right: 2em;
+      }
+
+      #date_cont {
+        position: absolute;
+        top: 50%;
+        left: 3%;
+        animation: slideInFast 0.25s 0.25s linear forwards;
+        visibility: hidden;
+        transform: translateY(150%);
+        transition: all 0.6s ease both;
+      }
+
+      @keyframes slideInFast {
+        from {
+          visibility: hidden;
+          opacity: 0;
+          transform: translateY(100%);
+        }
+        to {
+          visibility: visible;
+          opacity: 1;
+          transform: translateY(0%);
+        }
+      }
+
+      #time {
+        font-size: 8em;
+        font-family: "Open Sans Condensed", sans-serif;
+        font-weight: 300;
+        color: #fff;
+        margin: 0;
+        margin-left: -15px;
+        padding: 0;
+      }
+
+      #date {
+        font-size: 2.5em;
+        font-family: "Open Sans Condensed", sans-serif;
+        color: #fff;
+        margin-top: -0.6em;
+        /*   padding-left: 0.4em; */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="notification" class="alert">
+      <ul>
+        <li><b>Enter</b> - Will unveil the lockscreen wallpaper</li>
+        <!-- <li><b>Space Bar</b> - Will veil the lockscreen wallpaper</li> -->
+      </ul>
+    </div>
+
+    <div id="container">
+      <div id="wallpaper">
+        <div id="date_cont">
+          <div id="time">08:20</div>
+          <div id="date">Tuesday, October 8</div>
+          <div class="icons">
+            <i class="fa fa-wifi"></i>
+            <i class="fa fa-battery-full"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script charset="utf-8">
+      (function () {
+        // Variable Definitions
+        var time = document.querySelector("#time");
+        var dateElem = document.querySelector("#date");
+        var wallpaper = document.querySelector("#wallpaper");
+
+        // Date Configurations
+        var currentDate = new Date();
+        var hours = currentDate.getHours();
+        var minutes = currentDate.getMinutes();
+        var month = currentDate.getMonth();
+        var day = currentDate.getDay();
+        var dateOfMonth = currentDate.getDate();
+
+        var dayOfWeek = [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+        ];
+        var monthOfYear = [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "Decemeber",
+        ];
+
+        // hours
+        if (hours < 10) {
+          time.innerHTML = "0" + hours + ":" + minutes;
+        } else {
+          time.innerHTML = hours + ":" + minutes;
+        }
+
+        // minutes
+        if (minutes < 10) {
+          time.innerHTML = hours + ":" + "0" + minutes;
+        } else {
+          time.innerHTML = hours + ":" + minutes;
+        }
+
+        // Update Date Component
+        dateElem.innerHTML =
+          dayOfWeek[day] + ", " + monthOfYear[month] + " " + dateOfMonth;
+
+        document.onkeydown = function (event) {
+          var e = event || window.event || arguments.callee.caller.arguments[0];
+          if (e.keyCode === 13) {
+            // document.getElementById("message_div").innerHTML = "Hello, Neotw";
+            window.location.href = "./main.html";
+            return false;
+          }
+        };
+
+        // Key Events
+        // document.addEventListener("keypress", (e) => {
+        //   console.log("key pressed", e.keyCode);
+        //   // Enter Key
+        //   if (e.keyCode === 13) {
+        //     window.location.href = "./main.html";
+        //     // wallpaper.classList.remove("slideDown");
+        //     // wallpaper.classList.add("slideUp");
+        //   }
+        //   // Spacebar Key
+        //   else if (e.keyCode === 32) {
+        //     wallpaper.classList.remove("slideUp");
+        //     wallpaper.classList.add("slideDown");
+        //   } else {
+        //     return null;
+        //   }
+        // });
+      })();
+    </script>
+  </body>
+</html>

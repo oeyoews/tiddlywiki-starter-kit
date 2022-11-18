@@ -24,6 +24,17 @@
         "tiddlywiki/vanilla"
     ],
     "build": {
+        "main": [
+            "--output",
+            "dist",
+            "--rendertiddler",
+            "$:/plugins/tiddlywiki/tiddlyweb/save/offline",
+            "main.html",
+            "text/plain",
+            "--savetiddler",
+            "$:/favicon.ico",
+            "favicon.ico"
+        ],
         "index": [
             "--output",
             "dist",
