@@ -1,21 +1,27 @@
 created: 20221117023811761
 creator: oeyoews
-modified: 20221118073021553
+modified: 20221118075222151
 modifier: oeyoews
 title: Index
 type: text/vnd.tiddlywiki
 
+<!-- start -->
 <div class="purple-box">
 {{neotw/article/gradient-icon}}
 </div>
 
-{{neotw/image/lightbox}}
 
-<$list filter="[{$:/info/url/protocol}prefix[https]]">
-  {{$:/state/git/commit}}
+<!-- browser --> 
+<center>
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
+	{{neotw/image/lightbox}}
+	{{neotw/browser/tip}}
+	<hr>
+	{{neotw/badges}}
 </$list>
+<center>
 
-{{neotw/browser/tip}}
-
-<hr>
-{{neotw/badges}}
+<!-- mobile -->
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
+	{{$:/state/git/commit}}
+</$list>

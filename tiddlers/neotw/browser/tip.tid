@@ -1,27 +1,19 @@
 caption: tips
 created: 20221117023346122
 creator: oeyoews
-modified: 20221117133313741
+modified: 20221118075042668
 modifier: oeyoews
 subtitle: Tips
 tags: 
 title: neotw/browser/tip
 type: text/vnd.tiddlywiki
 
-<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
-
 <div class=neotw-gradient> 
-	<center>  
 		<h2>
 			<<emoji tada>> Ooops !
 		</h2>
-</center>
 
-<center>
 <h4>
 	Try to press <kbd>alt shift s</kbd>, you will find more details <<emoji>>.
 </h4>
-</center>
 </div>
-
-</$list>
