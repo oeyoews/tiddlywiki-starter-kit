@@ -27,7 +27,7 @@
         "requires-reload": "no"
     },
     {
-        "version": "0.0.3",
+        "version": "0.0.4",
         "type": "application/json",
         "title": "$:/plugins/oeyoews/neotw-confetti",
         "plugin-type": "plugin",
@@ -37,7 +37,7 @@
         "author": "oeyoews",
         "list": "readme",
         "dependents": "",
-        "readme": "* ref: https://github.com/catdad/canvas-confetti\n\n<center>\ntry to click {{$:/temp/confetti}}\n</center>\n",
+        "readme": "* ref: https://github.com/catdad/canvas-confetti\n\n<center>\ntry to click {{$:/status/confetti}}\n</center>\n",
         "requires-reload": "no"
     },
     {
