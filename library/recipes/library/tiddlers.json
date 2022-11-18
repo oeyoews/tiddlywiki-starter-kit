@@ -83,6 +83,21 @@
         "requires-reload": "no"
     },
     {
+        "title": "$:/plugins/oeyoews/neotw-lockscreen",
+        "description": "Neotw Lockscreen",
+        "author": "oeyoews",
+        "version": "0.0.1",
+        "core-version": ">=5.2.3",
+        "type": "application/json",
+        "source": "https://github.com/oeyoews/dev/plugins/neotw-lockscreen",
+        "plugin-type": "plugin",
+        "name": "Neotw Lockscreen",
+        "list": "readme license history",
+        "dependents": "",
+        "readme": "* neotw-lockscreen\n* lockdown: https://codepen.io/codeliterate/pen/vYEvPRB\n",
+        "requires-reload": "no"
+    },
+    {
         "version": "0.0.3",
         "type": "application/json",
         "title": "$:/plugins/oeyoews/neotw-music",
