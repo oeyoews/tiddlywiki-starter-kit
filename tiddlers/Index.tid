@@ -1,6 +1,6 @@
 created: 20221117023811761
 creator: oeyoews
-modified: 20221118075808969
+modified: 20221118081724841
 modifier: oeyoews
 title: Index
 type: text/vnd.tiddlywiki
@@ -11,17 +11,10 @@ type: text/vnd.tiddlywiki
 </div>
 
 
-<!-- browser --> 
 <center>
-<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
 	{{neotw/image/lightbox}}
 	{{neotw/browser/tip}}
+	{{$:/state/git/commit}}
 	<hr>
 	{{neotw/badges}}
-</$list>
-<center>
-
-<!-- mobile -->
-<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
-	{{$:/state/git/commit}}
-</$list>
+</center>
