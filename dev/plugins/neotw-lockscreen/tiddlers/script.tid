@@ -1,3 +1,6 @@
+title: $:/plugins/oeyoews/neotw-lockscreen/jump-index
+tags: $:/tags/RawMarkup
+
 <script>
 document.onkeydown = function (event) {
         var e = event || window.event || arguments.callee.caller.arguments[0];

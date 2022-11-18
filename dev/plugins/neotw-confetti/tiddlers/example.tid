@@ -3,6 +3,7 @@ title: $:/status/confetti
 update: true
 display:
 
+<!-- don't use temp, use status dir -->
 <$button actions="""
 <$action-listops  $field="display" $subfilter="+[toggle[true]]" />
 """>Party Time</$button>

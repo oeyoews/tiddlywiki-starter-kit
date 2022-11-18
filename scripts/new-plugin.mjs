@@ -52,7 +52,7 @@ const upperPluginName = titleCase(
   response.pluginName.trim().replace(/-/g, " ")
 ); // no need trim whitespace
 const description =
-  titleCase(response.description.trim().replace(/-/g, " ")) || pluginName;
+  titleCase(response.description.trim().replace(/-/g, " ")) || upperPluginName;
 const replacePluginName = "PluginName";
 const replaceDes = "Description";
 const target = "dev/plugins/" + pluginName;
