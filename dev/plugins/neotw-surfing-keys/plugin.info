@@ -1,13 +1,11 @@
 {
     "title": "$:/plugins/oeyoews/neotw-surfing-keys",
-    "name": "Some shortcuts",
+    "name": "Some Neotw Shortcuts",
     "description": "Surfing On TiddlyWiki",
     "author": "oeyoews",
     "version": "v0.2.3",
     "core-version": "5.2.3",
     "source": "",
     "list": "readme",
-    "parent-plugin": "",
-    "dependents": "",
     "plugin-type": "plugin"
 }
