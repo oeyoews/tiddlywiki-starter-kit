@@ -122,12 +122,12 @@
     </style>
   </head>
   <body>
-    <div id="notification" class="alert">
+    <!-- <div id="notification" class="alert">
       <ul>
         <li><b>Enter</b> - Will unveil the lockscreen wallpaper</li>
-        <!-- <li><b>Space Bar</b> - Will veil the lockscreen wallpaper</li> -->
+        <li><b>Space Bar</b> - Will veil the lockscreen wallpaper</li>
       </ul>
-    </div>
+    </div> -->
 
     <div id="container">
       <div id="wallpaper">
@@ -206,6 +206,11 @@
             return false;
           }
         };
+
+        // mobile move
+        document.addEventListener("touchmove", (e) => {
+          window.location.href = "./main.html";
+        });
 
         // Key Events
         // document.addEventListener("keypress", (e) => {
