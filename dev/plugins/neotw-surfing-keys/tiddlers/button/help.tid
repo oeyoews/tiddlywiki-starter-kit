@@ -1,13 +1,11 @@
 tags: $:/tags/PageTemplate
 title: $:/plugins/oeyoews/neotw-suringkeys/button/help
-type: text/vnd.tiddlywiki
 
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
 <$list filter="[[$:/state/notebook-sidebar]get[text]else[no]match[no]]">
 <div class="neotw-surfing-keys">
 <$button>
-⌨️
-<$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/neotw-surfing-keys/keyboard-list"/>
+⌨️ <$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/neotw-surfing-keys/keyboard-list"/>
 </$button>
 </div>
 </$list>
