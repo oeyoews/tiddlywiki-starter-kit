@@ -126,7 +126,7 @@
     {
         "title": "$:/plugins/oeyoews/neotw-surfing-keys",
         "name": "Some shortcuts",
-        "description": "Some shortcuts",
+        "description": "Surfing On TiddlyWiki",
         "author": "oeyoews",
         "version": "v0.2.3",
         "core-version": "5.2.3",
