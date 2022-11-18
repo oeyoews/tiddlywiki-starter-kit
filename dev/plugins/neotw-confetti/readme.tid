@@ -3,5 +3,5 @@ title: $:/plugins/oeyoews/neotw-confetti/readme
 * ref: https://github.com/catdad/canvas-confetti
 
 <center>
-try to click {{$:/temp/confetti}}
+try to click {{$:/status/confetti}}
 </center>

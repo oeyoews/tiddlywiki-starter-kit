@@ -1,6 +1,8 @@
 title: $:/plugins/oeyoews/neotw-confetti/right-msg
 type: application/javascript
 
+<script>
+window.onload = function() {
 var duration = 3 * 1000;
 var animationEnd = Date.now() + duration;
 var defaults = { startVelocity: 30, spread: 360, ticks: 60, scalar: .6, zIndex:
@@ -22,3 +24,5 @@ var interval = setInterval(function() {
   confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.9, 1), y: 0.1 } }));
   confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.9, 1), y: 0.1 } }));
 }, 250);
+}
+</script>
