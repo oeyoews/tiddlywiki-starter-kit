@@ -1,6 +1,6 @@
 created: 20221117023811761
 creator: oeyoews
-modified: 20221118081724841
+modified: 20221118091433919
 modifier: oeyoews
 title: Index
 type: text/vnd.tiddlywiki
@@ -18,3 +18,6 @@ type: text/vnd.tiddlywiki
 	<hr>
 	{{neotw/badges}}
 </center>
+
+<!-- jump example -->
+<div id="message_div"></div>
