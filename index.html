@@ -198,14 +198,14 @@
         dateElem.innerHTML =
           dayOfWeek[day] + ", " + monthOfYear[month] + " " + dateOfMonth;
 
-        document.onkeydown = function (event) {
+        /* document.onkeydown = function (event) {
           var e = event || window.event || arguments.callee.caller.arguments[0];
           if (e.keyCode === 13 || e.keyCode === 32) {
             // document.getElementById("message_div").innerHTML = "Hello, Neotw";
             window.location.href = "./main.html";
             return false;
           }
-        };
+        }; */
 
         // mobile move
         document.addEventListener("touchmove", (e) => {
@@ -213,22 +213,22 @@
         });
 
         // Key Events
-        // document.addEventListener("keypress", (e) => {
-        //   console.log("key pressed", e.keyCode);
-        //   // Enter Key
-        //   if (e.keyCode === 13) {
-        //     window.location.href = "./main.html";
-        //     // wallpaper.classList.remove("slideDown");
-        //     // wallpaper.classList.add("slideUp");
-        //   }
-        //   // Spacebar Key
-        //   else if (e.keyCode === 32) {
-        //     wallpaper.classList.remove("slideUp");
-        //     wallpaper.classList.add("slideDown");
-        //   } else {
-        //     return null;
-        //   }
-        // });
+        document.addEventListener("keypress", (e) => {
+          // console.log("key pressed", e.keyCode);
+          // Enter Key
+          if (e.keyCode === 13 || e.keyCode === 32) {
+            window.location.href = "./main.html";
+            wallpaper.classList.remove("slideDown");
+            // wallpaper.classList.add("slideUp");
+          }
+          // Spacebar Key
+          // else if (e.keyCode === 32) {
+          //   wallpaper.classList.remove("slideUp");
+          //   wallpaper.classList.add("slideDown");
+          // } else {
+          //   return null;
+          // }
+        });
       })();
     </script>
   </body>
