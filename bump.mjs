@@ -72,6 +72,7 @@ if (response.commit) {
       await $`git tag -a ${tag} -m ''`;
       await $`git push && git push --tags`;
     }
+    console.log("🎉 Bump Version Finished !");
   } else {
     // message === undefined的情况
     console.log(chalk.red.underline("I can see the first leaf falling."));
