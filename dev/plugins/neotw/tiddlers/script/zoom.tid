@@ -1,3 +1,7 @@
+title: $:/plugins/oeyoews/neotw/console
+tags: $:/tags/RawMarkup
+type: application/javascript
+
 <script>
 window.onload = function() {
     // 阻止双击放大
