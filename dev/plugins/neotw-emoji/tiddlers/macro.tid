@@ -7,6 +7,16 @@ title: $:/plugins/oeyoews/neotw-emoji/macro
 	<span class="neotw-$symbol$"></span>
 \end
 
+<!-- old -->
 \define nw-gradient(text)
 	<span class="nw-gradient">$text$</span>
+\end
+
+<!-- new -->
+\define emojit(text)
+	<span class="nw-gradient">$text$</span>
+\end
+
+\define emojig(symbol:rocket)
+	<span class="neotw-$symbol$ nw-gradient"></span>
 \end
