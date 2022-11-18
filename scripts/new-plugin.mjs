@@ -37,7 +37,7 @@ const response = await prompts(questions);
 const template = "templates/new-plugin";
 const pluginName = response.pluginName.trim();
 
-const description = response.description || pluginName;
+const description = response.description.trim() || pluginName;
 const replacePluginName = "PluginName";
 const replaceDes = "Description";
 const target = "dev/plugins/" + pluginName;
