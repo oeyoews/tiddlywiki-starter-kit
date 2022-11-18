@@ -5,6 +5,7 @@
 
 Import.tid
 StoryList*.tid
+tiddlers/config/trashbin/
 tiddlers/trashbin/
 /public/
 Draft*
