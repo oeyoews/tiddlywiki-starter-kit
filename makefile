@@ -32,7 +32,7 @@ build: $(Lib)
 		$(NEOTWTEMP)/tiddlers/trashbin \
 	 	$(NEOTWTEMP)/tiddlers/\$$__StoryLis*.tid
 	$(CMD) $(NEOTWTEMP) --build main >> $(logfile) 2>&1  # build
-	@cp src/index.html $(dist)
+	@cp src/index.html $(dist); cp img/default.png $(dist)
 # $(CMD) $(NEOTWTEMP) --build static >> $(logfile) 2>&1  # static giscus and commpand palette widget have a error
 # $(CMD) public --build favicon >> /tmp/neotw.log 2>&1  # favicon
 # $(CMD) public --output dist/ --build debug >> /tmp/neotw.log 2>&1  # build
