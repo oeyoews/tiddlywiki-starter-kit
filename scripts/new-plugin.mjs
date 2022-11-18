@@ -33,11 +33,26 @@ const questions = [
   },
 ];
 
+function titleCase(str) {
+  var splitStr = str.toLowerCase().split(" ");
+  for (var i = 0; i < splitStr.length; i++) {
+    // You do not need to check if i is larger than splitStr length, as your for does that for you
+    // Assign it back to the array
+    splitStr[i] =
+      splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
+  }
+  // Directly return the joined string
+  return splitStr.join(" ");
+}
+
 const response = await prompts(questions);
 const template = "templates/new-plugin";
-const pluginName = response.pluginName.trim();
-
-const description = response.description.trim() || pluginName;
+const pluginName = response.pluginName.trim().replace(/\s+/g, "-");
+const upperPluginName = titleCase(
+  response.pluginName.trim().replace(/-/g, " ")
+); // no need trim whitespace
+const description =
+  titleCase(response.description.trim().replace(/-/g, " ")) || pluginName;
 const replacePluginName = "PluginName";
 const replaceDes = "Description";
 const target = "dev/plugins/" + pluginName;
@@ -50,6 +65,13 @@ if (response.newPluginStatus) {
     // await $`sed -i "s#${oldDescription}#${newPluginName}#g" ${target}/**.info ${target}/**/*.tid ${target}/*.tid`;
     await $`rm -rf dev/plugins/PluginName*`;
     await $`mkdir ${target} && cp -r ${template}/* ${target}`;
+    replace({
+      regex: "UpperPluginName",
+      replacement: upperPluginName,
+      paths: [target],
+      recursive: true,
+      silent: true,
+    });
     // pluginname
     replace({
       regex: replacePluginName,

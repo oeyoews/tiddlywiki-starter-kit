@@ -7,6 +7,6 @@
     "type": "application/json",
     "source": "https://github.com/oeyoews/PluginName",
     "plugin-type": "plugin",
-    "name": "PluginName",
+    "name": "UpperPluginName",
     "list": "readme license history"
 }
