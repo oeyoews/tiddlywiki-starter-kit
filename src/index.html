@@ -205,7 +205,7 @@
 
         document.onkeydown = function (event) {
           var e = event || window.event || arguments.callee.caller.arguments[0];
-          if (e.keyCode === 13) {
+          if (e.keyCode === 13 || e.keyCode === 32) {
             // document.getElementById("message_div").innerHTML = "Hello, Neotw";
             window.location.href = "./main.html";
             return false;
