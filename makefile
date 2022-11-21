@@ -2,7 +2,6 @@ include ./neotw.config.mk
 include ./src/color.mk
 
 update-git-commit:
-	@cp templates/commit-template.tid $(TiddlyWiki-Git-File)
 	@sed -i -e "s#LONGID#$(LongCommitId)#" \
 		-e "s#SHORTID#$(ShortCommitId)#" $(TiddlyWiki-Git-File)
 	@echo -e 🎉 update-git-commit $(Green)Finished ✔ $(Color_off)

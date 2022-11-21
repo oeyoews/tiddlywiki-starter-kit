@@ -1,7 +1,6 @@
 title: $:/state/git/commit
 
 \define longid() LONGID
-
 \define shortid() SHORTID
 
 \define baseurl()
