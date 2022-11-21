@@ -6,7 +6,7 @@
   "build": {
     "library": [
       "--output",
-      "../../library",
+      "library",
       "--makelibrary",
       "$:/UpgradeLibrary",
       "--savelibrarytiddlers",

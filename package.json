@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "index": "npx zx scripts/index.mjs",
-    "build-local": "npx zx scripts/build.mjs",
+    "build": "npx zx scripts/build.mjs",
+    "build-oeyoews": "npx zx scripts/build-oeyoews.mjs",
     "start": "npx zx scripts/start.mjs",
     "new-plugin": "npx zx scripts/new-plugin.mjs",
     "neotw": "npx zx scripts/info.mjs",
@@ -19,7 +20,6 @@
     "tiddlywiki": "5.2.3"
   },
   "devDependencies": {
-    "tree-node-cli": "1.5.2",
     "kolorist": "^1.6.0",
     "open": "^8.4.0",
     "portfinder": "^1.0.32",

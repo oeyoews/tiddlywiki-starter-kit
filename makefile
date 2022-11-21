@@ -1,15 +1,6 @@
 include ./neotw.config.mk
 include ./src/color.mk
 
-example:
-	@$(CMD) dev --build example
-
-init-info-file:
-	@cp templates/tiddlywiki-template.info $(tiddlywiki_configfile)
-	@sed -i -e "s/AUTHOR/$(USER)/" \
-		-e "s/PORT/$(PORT)/" \
-		-e "\$$d" $(tiddlywiki_configfile)
-
 update-git-commit:
 	@cp templates/commit-template.tid $(TiddlyWiki-Git-File)
 	@sed -i -e "s#LONGID#$(LongCommitId)#" \
@@ -21,26 +12,9 @@ update-git-commit:
 # should before build
 build: $(Lib)
 	# prepare sed
-	@make update-git-commit; make init-info-file
-	@echo -e  👷 $(Green)Building 🗘 $(Color_off)
-	@sh ./lib
+	@make update-git-commit
 	@rm -rf $(dist) $(NEOTWTEMP); mkdir $(NEOTWTEMP)
-	@make example
 	@cp -r tiddlers/ dev/ tiddlywiki.info $(NEOTWTEMP)
-# if error how to exit
-	@rm -rf $(NEOTWTEMP)/tiddlers/subwiki \
-		$(NEOTWTEMP)/tiddlers/trashbin \
-	 	$(NEOTWTEMP)/tiddlers/\$$__StoryLis*.tid
-	$(CMD) $(NEOTWTEMP) --build main >> $(logfile) 2>&1  # build
-	@cp src/index.html $(dist); cp img/default.png $(dist)
-# $(CMD) $(NEOTWTEMP) --build static >> $(logfile) 2>&1  # static giscus and commpand palette widget have a error
-# $(CMD) public --build favicon >> /tmp/neotw.log 2>&1  # favicon
-# $(CMD) public --output dist/ --build debug >> /tmp/neotw.log 2>&1  # build
-	@mv library/ $(dist)
-	@cp -r src/vercel.json $(dist);  # disable vercel
-	@ls -sh $(dist)/*.html # patch
-	@tree $(dist) -L 1
-	@echo -e 🎉 $(Green)Finished ✔ $(Color_off)
 
 build-lib: $(Lib)
 	@sh ./lib

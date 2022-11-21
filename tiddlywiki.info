@@ -48,8 +48,8 @@
         ],
         "listen": [
             "--listen",
-            "port=PORT",
-            "anon-username=AUTHOR"
+            "port=8099",
+            "anon-username=oeyoews"
         ],
         "static": [
             "--output",
@@ -93,4 +93,3 @@
         "retain-original-tiddler-path": true
     }
 }
-/* vim:set et sw=2 ts=2 ft=json5 tw=80: */
