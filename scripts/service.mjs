@@ -2,9 +2,12 @@
 
 import prompts from "prompts";
 import { spinner } from "zx/experimental";
+import { info, finish } from "./info.mjs";
 
 const platform = os.platform();
 const serviceFile = "neotw-user.service";
+
+info();
 
 const questions = [
   {
@@ -77,6 +80,7 @@ if (platform == "linux") {
     if (serviceEvent !== "reload") {
       await spinner("Cloning ...", async () => {
         await $`systemctl --user ${serviceEvent} ${serviceFile}`;
+        finish();
       });
     } else {
       echo("🍃 I can see the first leaf falling.");

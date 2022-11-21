@@ -8,13 +8,13 @@ const log = console.log;
 function info() {
   log(
     `${cyan("●") + blue("■") + yellow("▲")}` +
-    chalk.blue.bold(` ${name}: `) +
-    chalk.blue.cyan(` ${description} (${version}): `)
+      chalk.blue.bold(` ${name}: `) +
+      chalk.blue.cyan(` ${description} (${version}): `)
   );
 }
 
 function finish() {
-  signale.success("Building successful");
+  signale.success("Operation successful");
 }
 
 export { finish, info };
