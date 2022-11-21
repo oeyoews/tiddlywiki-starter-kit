@@ -2,18 +2,22 @@
 
 // https://github.com/google/zx
 // TODO: use git latest tag replace tag
-import "zx/globals";
-const filename = "./package.json";
-const { version } = require(filename);
-const prompts = require("prompts");
 
-console.log(chalk.green.bold.underline("Long long ago, there is a tiger."));
-console.log("Current version: " + version);
+import "zx/globals";
+import { info, finish } from "./info.mjs";
+import prompts from "prompts";
+
+const filename = "./package.json";
+const { version } = require("../package.json");
 
 const [major, minor, patch] = version.split(".");
 const nextMajor = String(Number(major) + 1) + ".0.0";
 const nextMinor = major + "." + String(Number(minor) + 1) + ".0";
 const nextPatch = major + "." + minor + "." + String(Number(patch) + 1);
+
+info();
+
+console.log("Current version: " + version);
 
 const questions = [
   {
@@ -64,7 +68,7 @@ if (response.commit) {
     message = `Bump version: ${version} → ${newVersion}`;
   }
   if (message) {
-    // console.log(`git add . && git commit -m '${message}'`)
+    // cd("..");
     await $`git add . && git commit -m ${message}`;
     if (response.tag) {
       const tag = "v" + newVersion;
@@ -72,9 +76,6 @@ if (response.commit) {
       await $`git tag -a ${tag} -m ''`;
       await $`git push && git push --tags`;
     }
-    console.log("🎉 Bump Version Finished !");
-  } else {
-    // message === undefined的情况
-    console.log(chalk.red.underline("I can see the first leaf falling."));
+    finish();
   }
 }
