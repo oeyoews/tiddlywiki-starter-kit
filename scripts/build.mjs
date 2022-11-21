@@ -8,8 +8,9 @@ import { spinner } from "zx/experimental";
 import { cyan, blue, yellow, bold, dim, green } from "kolorist";
 import { info, finish } from "./info.mjs";
 
-const bin = "tiddlywiki";
+info();
 
+const bin = "tiddlywiki";
 const questions = [
   {
     type: "select",
@@ -65,7 +66,6 @@ const setup = response.setup;
 const passwd = response.password;
 
 if (response.isBuild) {
-  info();
   await spinner("Building ...", async () => {
     await $`rm -rf ${output}`; // clean
     if (setup) {
