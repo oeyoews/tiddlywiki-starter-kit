@@ -3,6 +3,11 @@
 // update-git-commit
 
 import replace from "replace";
+// import info from "./info.mjs";
+// info.
+
+// enable quiet mode
+$.verbose = false;
 
 const reg = /LONGID/g;
 const reg2 = /SHORTID/g;
