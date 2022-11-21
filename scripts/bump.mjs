@@ -7,7 +7,9 @@ import "zx/globals";
 import { info, finish } from "./info.mjs";
 import prompts from "prompts";
 
+// write file base exe dir
 const filename = "./package.json";
+// require base relative file dir
 const { version } = require("../package.json");
 
 const [major, minor, patch] = version.split(".");

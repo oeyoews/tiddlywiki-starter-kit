@@ -1,22 +1,38 @@
-include ./neotw.config.mk
-include ./src/color.mk
+# https://seisman.github.io/how-to-write-makefile
+# https://www.zhaixue.cc/makefile/makefile-shell-function.html
 
-update-git-commit:
-	@sed -i -e "s#LONGID#$(LongCommitId)#" \
-		-e "s#SHORTID#$(ShortCommitId)#" $(TiddlyWiki-Git-File)
-	@echo -e 🎉 update-git-commit $(Green)Finished ✔ $(Color_off)
+define GetFromPkg
+$(shell node -p "require('./package.json').$(1)")
+endef
 
-# generate index.html(support subwiki, but not build html no include subwiki)
-# note: because use make, so can't read this `tiddlywiki` cmd from current project, recommend install tiddlywiki global, likw `yarn global add tiddlywiki`
-# should before build
-build: $(Lib)
-	# prepare sed
-	@make update-git-commit
-	@rm -rf $(dist) $(NEOTWTEMP); mkdir $(NEOTWTEMP)
-	@cp -r tiddlers/ dev/ tiddlywiki.info $(NEOTWTEMP)
+# adjust os, just test on linux
+ifeq ($(shell uname),Linux)
+	PLATFORM="🐧 Linux"
+else
+	PLATFORM="😭 Not supported ✘"
+endif
 
-build-lib: $(Lib)
-	@sh ./lib
+ENABLESTATIC := false
+PACKAGE := TiddlyWiki5
+PKGNAME := neotw
+CMD := @./node_modules/tiddlywiki/tiddlywiki.js
+NEOTWTEMP := /tmp/neotw-temp
+PORT := 8099
+HOST := "0.0.0.0"
+ServiceName := neotw-user.service
+SERVICECMD := @systemctl --user
+SERVICETEMPLATEFILE := src/neotw-template.service
+SERVICEFILE := templates/neotw-user-template.service
+SERVICETARGETFILE := $(HOME)/.config/systemd/user/$(ServiceName)
+NEOTWBIN := ~/.local/bin/$(PKGNAME)
+logfile := /tmp/neotw.log
+tidgi_dir := tidgi
+# version := $(shell node -e "console.log(require('./package.json').version);")
+dist := dist
+Date := $(shell date)
+
+PROJECT      := $(call GetFromPkg,name)
+version := $(call GetFromPkg,version)
 
 # or /usr/share/pixmaps
 # have some refresh bug
