@@ -3,8 +3,7 @@
 // update-git-commit
 
 import replace from "replace";
-// import info from "./info.mjs";
-// info.
+import loge from "./info.mjs";
 
 // enable quiet mode
 $.verbose = false;
