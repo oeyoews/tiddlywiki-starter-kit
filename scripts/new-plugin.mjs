@@ -1,12 +1,17 @@
 #!/usr/bin/env zx
 
+// enable quiet mode
+$.verbose = false;
+
 // https://github.com/terkelg/prompts#readme
 import { spinner } from "zx/experimental";
 import { cyan, blue, yellow, bold, dim, green } from "kolorist";
 import prompts from "prompts";
 import replace from "replace";
+import { info, finish } from "./info.mjs";
+import signale from "signale";
 
-console.log(`${cyan("●") + blue("■") + yellow("▲")}`);
+info();
 
 const timestamp = new Date().getTime();
 
@@ -83,7 +88,7 @@ if (response.newPluginStatus) {
     recursive: true,
     silent: true,
   });
-  console.log(chalk.green("🎉 You have created new plugin in"), target);
+  finish();
 } else {
   console.log(chalk.yellow("😭 Maybe something wrong"));
 }

@@ -2,7 +2,7 @@
 
 import prompts from "prompts";
 import { spinner } from "zx/experimental";
-import signale from "signale";
+import { info, finish } from "./info.mjs";
 
 const userInfo = os.userInfo(); // init
 const username = userInfo.username; // xxx
@@ -15,6 +15,7 @@ const dev = "dev";
 // const newDIr = "dev/plugins/neotw/tiddlers/**.tid";
 // let packages = await glob([newDIr]);
 
+info();
 // Object ?
 const questions = [
   {
@@ -54,13 +55,7 @@ if (isClone) {
     cd(dev);
     await $`git clone --depth 1 ${installRepoName}`;
   });
-  console.log(chalk.green(`This installed repo on ${dev}`));
+  finish();
 } else {
   echo("🍃 I can see the first leaf falling.");
 }
-
-signale.complete({
-  prefix: "[Clone]",
-  message: "Finished clone",
-  suffix: "(@oeyoews)",
-});
