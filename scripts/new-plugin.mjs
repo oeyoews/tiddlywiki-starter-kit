@@ -58,36 +58,30 @@ const replaceDes = "Description";
 const target = "dev/plugins/" + pluginName;
 
 if (response.newPluginStatus) {
-  await spinner("Loading ...", async () => {
-    // const files = await $`grep ${replaceStr} ${target} -rl | tr '\n' ' '`;
-    // await $`sed -i "s#PluginName#${newPluginName}#g" ${files}`;
-    // await $`sed -i "s#${replaceStr}#${newPluginName}#g" ${target}/**.info ${target}/**/*.tid ${target}/*.tid`;
-    // await $`sed -i "s#${oldDescription}#${newPluginName}#g" ${target}/**.info ${target}/**/*.tid ${target}/*.tid`;
-    await $`rm -rf dev/plugins/PluginName*`;
-    await $`mkdir ${target} && cp -r ${template}/* ${target}`;
-    replace({
-      regex: "UpperPluginName",
-      replacement: upperPluginName,
-      paths: [target],
-      recursive: true,
-      silent: true,
-    });
-    // pluginname
-    replace({
-      regex: replacePluginName,
-      replacement: pluginName,
-      paths: [target],
-      recursive: true,
-      silent: true,
-    });
-    // description
-    replace({
-      regex: replaceDes,
-      replacement: description,
-      paths: [target],
-      recursive: true,
-      silent: true,
-    });
+  await $`rm -rf dev/plugins/PluginName*`;
+  await $`mkdir ${target} && cp -r ${template}/* ${target}`;
+  replace({
+    regex: "UpperPluginName",
+    replacement: upperPluginName,
+    paths: [target],
+    recursive: true,
+    silent: true,
+  });
+  // pluginname
+  replace({
+    regex: replacePluginName,
+    replacement: pluginName,
+    paths: [target],
+    recursive: true,
+    silent: true,
+  });
+  // description
+  replace({
+    regex: replaceDes,
+    replacement: description,
+    paths: [target],
+    recursive: true,
+    silent: true,
   });
   console.log(chalk.green("🎉 You have created new plugin in"), target);
 } else {

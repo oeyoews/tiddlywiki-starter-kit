@@ -6,6 +6,6 @@ const log = console.log;
 
 export default log(
   `${cyan("●") + blue("■") + yellow("▲")}` +
-    chalk.blue.bold(` ${name}:`) +
-    chalk.blue.cyan(` ${description}(${version}):`)
+    chalk.blue.bold(` ${name}: `) +
+    chalk.blue.cyan(` ${description} (${version}): `)
 );

@@ -3,8 +3,7 @@
 import prompts from "prompts";
 import { spinner } from "zx/experimental";
 import { cyan, blue, yellow, bold, dim, green } from "kolorist";
-
-console.log(`  ${cyan("●") + blue("■") + yellow("▲")}`);
+import info from "./info.mjs";
 
 // With a message.
 // await spinner(" ", () => $`make build`);

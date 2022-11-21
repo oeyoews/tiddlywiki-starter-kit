@@ -2,8 +2,10 @@
 
 // update-git-commit
 
+import { spinner } from "zx/experimental";
 import replace from "replace";
-import loge from "./info.mjs";
+import info from "./info.mjs";
+import signale from "signale";
 
 // enable quiet mode
 $.verbose = false;
@@ -28,17 +30,17 @@ const buildDir = prefix + timestamp;
 const copyFiles = ["tiddlers", "dev", "tiddlywiki.info"];
 
 /**
- * NOTE: dont't use async to rm files
+ * NOTE: dont't use async to rm files or more situations
  */
 
-// clean generated files
-await $`rm -rf ${dist} ${library}`;
-// clean buildlib files
-await $`rm -rf ${libpath}/plugins/oeyoews ${libpath}/library-template`;
-// clean build dir
-await $`rm -rf ${prefix}*`;
+await spinner("Building ...", async () => {
+  // clean generated files
+  await $`rm -rf ${dist} ${library}`;
+  // clean buildlib files
+  await $`rm -rf ${libpath}/plugins/oeyoews ${libpath}/library-template`;
+  // clean build dir
+  await $`rm -rf ${prefix}*`;
 
-async function updateCommit() {
   await $`cp ${commitTemplate} ${commitFile}`;
   replace({
     regex: reg,
@@ -55,12 +57,7 @@ async function updateCommit() {
     recursive: true,
     silent: true,
   });
-}
 
-/**
- * @param {any} copyFiles
- */
-async function copyTwFile(copyFiles) {
   // clean last build dir
   await $`mkdir -p ${buildDir}`;
 
@@ -72,18 +69,14 @@ async function copyTwFile(copyFiles) {
     await $`rm -rf ${buildDir}/tiddlers/${subwiki}`;
     await $`rm -rf ${buildDir}/tiddlers/trashbin`;
   }
-}
 
-/* buildLib */
-async function buildLib() {
+  /* buildLib */
   await $`mkdir ${libpath}/plugins/oeyoews`;
   await $`cp -r dev/plugins/* ${libpath}/plugins/oeyoews`;
   await $`cp -r src/library-template ${libpath}`;
   await $`npx ${bin} ${libpath}/library-template/ --build library`;
-}
 
-/* buildTw */
-async function buildTw() {
+  /* buildTw */
   // generate main.html example.html library index.html
   await $`npx ${bin} ${buildDir} --build main`;
   // generate example.html after have dist dir
@@ -92,16 +85,5 @@ async function buildTw() {
   await $`mv ${library} ${dist}`;
   // copy vercel.json, index.html
   await $`cp src/vercel.json src/index.html img/default.png ${dist}`;
-}
-
-// updateCommit
-updateCommit();
-
-// copyfiles
-copyTwFile(copyFiles);
-
-// buildLib
-buildLib();
-
-// build tw
-buildTw();
+  signale.success("Building successful");
+});
