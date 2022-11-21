@@ -1,14 +1,15 @@
 #!/usr/bin/env zx
 
+// enable quiet mode
+$.verbose = false;
+
 import prompts from "prompts";
 import { spinner } from "zx/experimental";
 import { cyan, blue, yellow, bold, dim, green } from "kolorist";
-import info from "./info.mjs";
-
-// With a message.
-// await spinner(" ", () => $`make build`);
+import { info, finish } from "./info.mjs";
 
 const bin = "tiddlywiki";
+
 const questions = [
   {
     type: "select",
@@ -64,6 +65,7 @@ const setup = response.setup;
 const passwd = response.password;
 
 if (response.isBuild) {
+  info();
   await spinner("Building ...", async () => {
     await $`rm -rf ${output}`; // clean
     if (setup) {
@@ -72,5 +74,5 @@ if (response.isBuild) {
       await $`npx ${bin} --output ${output} --build index`; // use vanilla replace --build
     }
   });
-  console.log(chalk.green("🎉 Building finished"));
+  finish();
 }

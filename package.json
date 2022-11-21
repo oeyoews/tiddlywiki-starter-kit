@@ -11,7 +11,6 @@
     "build-oeyoews": "npx zx scripts/build-oeyoews.mjs",
     "start": "npx zx scripts/start.mjs",
     "new-plugin": "npx zx scripts/new-plugin.mjs",
-    "neotw": "npx zx scripts/info.mjs",
     "bump": "npx zx bump.mjs",
     "clone": "npx zx scripts/clone.mjs",
     "service": "npx zx scripts/service.mjs"
