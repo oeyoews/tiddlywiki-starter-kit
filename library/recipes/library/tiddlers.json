@@ -1,20 +1,5 @@
 [
     {
-        "title": "$:/plugins/oeyoews/dmeo",
-        "description": "Dmoe",
-        "author": "oeyoews",
-        "version": "0.0.1",
-        "core-version": ">=5.2.3",
-        "type": "application/json",
-        "source": "https://github.com/oeyoews/dev/plugins/dmeo",
-        "plugin-type": "plugin",
-        "name": "Dmeo",
-        "list": "readme license history",
-        "dependents": "",
-        "readme": "* Dmoe\n",
-        "requires-reload": "no"
-    },
-    {
         "version": "0.0.1",
         "type": "application/json",
         "title": "$:/plugins/oeyoews/neotw",
