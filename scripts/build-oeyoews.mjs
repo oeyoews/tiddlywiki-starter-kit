@@ -41,9 +41,6 @@ async function copyTwFile(copyFiles) {
   }
 }
 
-// copyfiles
-copyTwFile(copyFiles);
-
 /*  */
 async function buildLib() {
   await $`mkdir ${libpath}/plugins/oeyoews`;
@@ -52,16 +49,22 @@ async function buildLib() {
   await $`npx ${bin} ${libpath}/library-template/ --build library`;
 }
 
+async function buildTw() {
+  // generate main.html example.html library index.html
+  await $`npx ${bin} ${buildDir} --build main`;
+  // generate example.html after have dist dir
+  await $`npx ${bin} dev --build example`;
+  // after building
+  await $`mv ${library} ${dist}`;
+  // copy vercel.json, index.html
+  await $`cp src/vercel.json src/index.html img/default.png ${dist}`;
+}
+
+// copyfiles
+copyTwFile(copyFiles);
+
 // buildLib
 buildLib();
 
-// generate main.html example.html library index.html
-await $`npx ${bin} ${buildDir} --build main`;
-// generate example.html after have dist dir
-await $`npx ${bin} dev --build example`;
-// after building
-await $`mv ${library} ${dist}`;
-// copy vercel.json, index.html
-await $`cp src/vercel.json src/index.html img/default.png ${dist}`;
-
-// vercel.json
+// build tw
+buildTw();
