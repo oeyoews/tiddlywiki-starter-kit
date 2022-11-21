@@ -63,7 +63,7 @@ const questions = [
 const response = await prompts(questions);
 const output = response.output;
 const setup = response.setup;
-const passwd = response.password;
+const passwd = response.password || "password";
 
 if (response.isBuild) {
   await spinner("Building ...", async () => {

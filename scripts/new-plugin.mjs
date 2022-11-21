@@ -26,7 +26,7 @@ const questions = [
     type: "text",
     name: "description", // variable
     message: "plugin description", // not support sed space
-    initial: "",
+    initial: "plugin description",
   },
   {
     type: "toggle",

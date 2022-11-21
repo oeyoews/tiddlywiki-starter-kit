@@ -1,5 +1,8 @@
 #!/usr/bin/env zx
 
+// enable quiet mode
+$.verbose = false;
+
 import { spinner } from "zx/experimental";
 import prompts from "prompts";
 import open from "open"; // https://www.npmjs.com/package/open
@@ -9,6 +12,7 @@ import {
   setBasePort,
   setHighestPort,
 } from "portfinder"; // https://github.com/http-party/node-portfinder
+import { info, finish } from "./info.mjs";
 
 setBasePort(8080); // default: 8000
 setHighestPort(8888); // default: 65535
@@ -49,8 +53,9 @@ const response = await prompts(questions);
 const openUrl = "http:/localhost:" + response.port;
 
 if (response.isStart) {
+  info();
   if (response.port == "random") {
-    getPort(function (err, port) {
+    getPort(function(err, port) {
       const openUrl = "http:/localhost:" + port;
       $`npx ${bin} --listen port=${port} 2>&1`;
       spinner("Loading ...", async () => {
@@ -65,4 +70,5 @@ if (response.isStart) {
       await open(openUrl);
     });
   }
+  finish();
 }
