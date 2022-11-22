@@ -2,8 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- <meta http-equiv="Refresh" content="3;url=./main.html" /> -->
     <title>Neotw</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css"
@@ -222,6 +229,7 @@
           // console.log("key pressed", e.keyCode);
           // Enter Key
           if (e.keyCode === 13 || e.keyCode === 32) {
+            pushNotify();
             window.location.href = "./main.html";
             wallpaper.classList.remove("slideDown");
             wallpaper.classList.add("slideUp");
@@ -251,6 +259,29 @@
           document.getElementById("batt").style.color = c;
         });
       })();
+
+      // simple-notify
+      function pushNotify(text) {
+        new Notify({
+          status: "success",
+          title: "TiddlyWiki",
+          text: text,
+          effect: "fade",
+          speed: 300,
+          customClass: "",
+          customIcon: "",
+          showIcon: true,
+          showCloseButton: false,
+          // autoclose: true,
+          // autotimeout: 2000,
+          gap: 40,
+          distance: 650,
+          type: 2,
+          position: "right top",
+        });
+      }
+
+      pushNotify("Press space to find more");
     </script>
   </body>
 </html>
