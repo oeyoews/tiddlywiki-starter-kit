@@ -141,7 +141,7 @@
           <div id="date">Tuesday, October 8</div>
           <div class="icons">
             <i class="fa fa-wifi"></i>
-            <i class="fa fa-battery-full"></i>
+            <i class="fa fa-battery-full" id="batt"></i>
           </div>
         </div>
       </div>
@@ -233,6 +233,22 @@
           // } else {
           //   return null;
           // }
+        });
+      })();
+
+      (function batttick() {
+        navigator.getBattery().then((battery) => {
+          let m = "";
+          let c = "";
+          m = battery.level * 100 + "%";
+
+          if (battery.charging) {
+            // m += " ⚡";
+            c = "white";
+          }
+          // console.log(c, m);
+          document.getElementById("batt").innerHTML = m;
+          document.getElementById("batt").style.color = c;
         });
       })();
     </script>
