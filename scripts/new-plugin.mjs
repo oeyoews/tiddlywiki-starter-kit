@@ -51,18 +51,20 @@ function titleCase(str) {
 }
 
 const response = await prompts(questions);
-const template = "templates/new-plugin";
-const pluginName = response.pluginName.trim().replace(/\s+/g, "-");
-const upperPluginName = titleCase(
-  response.pluginName.trim().replace(/-/g, " ")
-); // no need trim whitespace
-const description =
-  titleCase(response.description.trim().replace(/-/g, " ")) || upperPluginName;
-const replacePluginName = "PluginName";
-const replaceDes = "Description";
-const target = "dev/plugins/" + pluginName;
 
 if (response.newPluginStatus) {
+  const template = "templates/new-plugin";
+  const pluginName = response.pluginName.trim().replace(/\s+/g, "-");
+  const upperPluginName = titleCase(
+    response.pluginName.trim().replace(/-/g, " ")
+  ); // no need trim whitespace
+  const description =
+    titleCase(response.description.trim().replace(/-/g, " ")) ||
+    upperPluginName;
+  const replacePluginName = "PluginName";
+  const replaceDes = "Description";
+  const target = "dev/plugins/" + pluginName;
+
   await $`rm -rf dev/plugins/PluginName*`;
   await $`mkdir ${target} && cp -r ${template}/* ${target}`;
   replace({
