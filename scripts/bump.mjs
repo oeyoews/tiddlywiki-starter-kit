@@ -1,5 +1,8 @@
 #!/usr/bin/env zx
 
+// enable quiet mode
+$.verbose = false;
+
 // https://github.com/google/zx
 // TODO: use git latest tag replace tag
 
