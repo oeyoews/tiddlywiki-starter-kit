@@ -68,8 +68,9 @@ const passwd = response.password || "password";
 if (response.isBuild) {
   await spinner("Building ...", async () => {
     await $`rm -rf ${output}`; // clean
-    if (setup) {
+    if (setup === "yes") {
       await $`npx ${bin} --output ${output} --password ${passwd} --build index `; // use vanilla replace --build
+      echo("dmeo");
     } else {
       await $`npx ${bin} --output ${output} --build index`; // use vanilla replace --build
     }
