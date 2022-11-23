@@ -7,9 +7,7 @@ $.verbose = false;
 
 import { spinner } from "zx/experimental";
 import replace from "replace";
-import Msg from "./info.mjs";
-
-const msg = new Msg();
+import msg from "./info.mjs";
 
 const reg = /LONGID/g;
 const reg2 = /SHORTID/g;

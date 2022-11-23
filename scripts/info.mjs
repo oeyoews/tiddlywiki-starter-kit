@@ -13,7 +13,7 @@ signale.config({
   // displayDate: true,
 });
 
-class Msg {
+const msg = {
   // info
   info() {
     log("");
@@ -23,13 +23,13 @@ class Msg {
         chalk.blue.cyan(` ${description} (${version}): `)
     );
     log("");
-  }
+  },
 
   // finish
   finish(text) {
     text = text || "Operation successful";
     signale.success(text);
-  }
-}
+  },
+};
 
-export default Msg;
+export default msg;

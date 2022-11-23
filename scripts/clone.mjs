@@ -2,9 +2,8 @@
 
 import prompts from "prompts";
 import { spinner } from "zx/experimental";
-import Msg from "./info.mjs";
+import msg from "./info.mjs";
 
-const msg = new Msg();
 const userInfo = os.userInfo(); // init
 const username = userInfo.username; // xxx
 const homedir = userInfo.homedir; // /home/xxx

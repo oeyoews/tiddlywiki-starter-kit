@@ -12,9 +12,7 @@ import {
   setBasePort,
   setHighestPort,
 } from "portfinder"; // https://github.com/http-party/node-portfinder
-import Msg from "./info.mjs";
-
-const msg = new Msg();
+import msg from "./info.mjs";
 
 setBasePort(8080); // default: 8000
 setHighestPort(8888); // default: 65535

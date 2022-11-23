@@ -2,9 +2,8 @@
 
 import prompts from "prompts";
 import { spinner } from "zx/experimental";
-import Msg from "./info.mjs";
+import msg from "./info.mjs";
 
-const msg = new Msg();
 const platform = os.platform();
 const serviceFile = "neotw-user.service";
 

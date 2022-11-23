@@ -6,9 +6,8 @@ $.verbose = false;
 import prompts from "prompts";
 import { spinner } from "zx/experimental";
 // import * as omsg from "./info.mjs"; // actually, not recommend do that *
-import Msg from "./info.mjs";
+import msg from "./info.mjs";
 
-const msg = new Msg();
 msg.info();
 
 const bin = "tiddlywiki";

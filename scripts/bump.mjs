@@ -8,9 +8,8 @@ $.verbose = false;
 
 import "zx/globals";
 import prompts from "prompts";
-import Msg from "./info.mjs";
+import msg from "./info.mjs";
 
-const msg = new Msg();
 // write file base exe dir
 const filename = "./package.json";
 // require base relative file dir

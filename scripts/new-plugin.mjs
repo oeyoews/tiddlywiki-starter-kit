@@ -9,9 +9,8 @@ import { cyan, blue, yellow, bold, dim, green } from "kolorist";
 import prompts from "prompts";
 import replace from "replace";
 import signale from "signale";
-import Msg from "./info.mjs";
+import msg from "./info.mjs";
 
-const msg = new Msg();
 msg.info();
 
 const timestamp = new Date().getTime();
