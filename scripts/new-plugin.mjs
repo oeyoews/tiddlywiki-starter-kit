@@ -8,10 +8,11 @@ import { spinner } from "zx/experimental";
 import { cyan, blue, yellow, bold, dim, green } from "kolorist";
 import prompts from "prompts";
 import replace from "replace";
-import { info, finish } from "./info.mjs";
 import signale from "signale";
+import Msg from "./info.mjs";
 
-info();
+const msg = new Msg();
+msg.info();
 
 const timestamp = new Date().getTime();
 
@@ -90,7 +91,7 @@ if (response.newPluginStatus) {
     recursive: true,
     silent: true,
   });
-  finish(`${pluginName} has created`);
+  msg.finish(`${pluginName} has created`);
 } else {
   console.log(chalk.yellow("😭 Maybe something wrong"));
 }

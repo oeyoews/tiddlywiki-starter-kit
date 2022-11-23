@@ -1,5 +1,6 @@
 #!/usr/bin/env zx
 
+// https://bobbyhadz.com/blog/javascript-export-class
 import { cyan, blue, yellow } from "kolorist";
 import signale from "signale";
 
@@ -13,19 +14,24 @@ signale.config({
   // displayDate: true,
 });
 
-function info() {
-  log("");
-  log(
-    `${cyan("●") + blue("■") + yellow("▲")}` +
-      chalk.blue.bold(` ${name}: `) +
-      chalk.blue.cyan(` ${description} (${version}): `)
-  );
-  log("");
+// import xxx from "xxx" no need brackets for default
+class Msg {
+  // info
+  info() {
+    log("");
+    log(
+      `${cyan("●") + blue("■") + yellow("▲")}` +
+        chalk.blue.bold(` ${name}: `) +
+        chalk.blue.cyan(` ${description} (${version}): `)
+    );
+    log("");
+  }
+
+  // finish
+  finish(text) {
+    text = text || "Operation successful";
+    signale.success(text);
+  }
 }
 
-function finish(text) {
-  text = text || "Operation successful";
-  signale.success(text);
-}
-
-export { finish, info };
+export default Msg;

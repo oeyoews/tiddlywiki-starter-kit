@@ -5,9 +5,11 @@ $.verbose = false;
 
 import prompts from "prompts";
 import { spinner } from "zx/experimental";
-import * as omsg from "./info.mjs";
+// import * as omsg from "./info.mjs"; // actually, not recommend do that *
+import Msg from "./info.mjs";
 
-omsg.info();
+const msg = new Msg();
+msg.info();
 
 const bin = "tiddlywiki";
 const questions = [
@@ -73,5 +75,5 @@ if (response.isBuild) {
       await $`npx ${bin} --output ${output} --build index`; // use vanilla replace --build
     }
   });
-  omsg.finish("Building Finished");
+  msg.finish("Building Finished");
 }

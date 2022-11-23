@@ -4,9 +4,10 @@
 // TODO: use git latest tag replace tag
 
 import "zx/globals";
-import { info, finish } from "./info.mjs";
 import prompts from "prompts";
+import Msg from "./info.mjs";
 
+const msg = new Msg();
 // write file base exe dir
 const filename = "./package.json";
 // require base relative file dir
@@ -17,7 +18,7 @@ const nextMajor = String(Number(major) + 1) + ".0.0";
 const nextMinor = major + "." + String(Number(minor) + 1) + ".0";
 const nextPatch = major + "." + minor + "." + String(Number(patch) + 1);
 
-info();
+msg.info();
 
 console.log("Current version: " + version);
 
@@ -78,6 +79,6 @@ if (response.commit) {
       await $`git tag -a ${tag} -m ''`;
       await $`git push && git push --tags`;
     }
-    finish();
+    msg.finish();
   }
 }

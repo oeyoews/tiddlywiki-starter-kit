@@ -2,8 +2,9 @@
 
 import prompts from "prompts";
 import { spinner } from "zx/experimental";
-import { info, finish } from "./info.mjs";
+import Msg from "./info.mjs";
 
+const msg = new Msg();
 const userInfo = os.userInfo(); // init
 const username = userInfo.username; // xxx
 const homedir = userInfo.homedir; // /home/xxx
@@ -15,7 +16,7 @@ const dev = "dev";
 // const newDIr = "dev/plugins/neotw/tiddlers/**.tid";
 // let packages = await glob([newDIr]);
 
-info();
+msg.info();
 // Object ?
 const questions = [
   {
@@ -55,7 +56,7 @@ if (isClone) {
     cd(dev);
     await $`git clone --depth 1 ${installRepoName}`;
   });
-  finish("Cloning Ending");
+  msg.finish("Cloning Ending");
 } else {
   echo("🍃 I can see the first leaf falling.");
 }
