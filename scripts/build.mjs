@@ -3,6 +3,7 @@
 // enable quiet mode
 $.verbose = false;
 
+import gradient from "gradient-string";
 import prompts from "prompts";
 import { spinner } from "zx/experimental";
 import { info, finish } from "./info.mjs";
@@ -75,3 +76,4 @@ if (response.isBuild) {
   });
   finish("Building Finished");
 }
+console.log(gradient.rainbow("Hello World"));
