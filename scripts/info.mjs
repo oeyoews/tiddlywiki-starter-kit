@@ -13,16 +13,19 @@ signale.config({
   // displayDate: true,
 });
 
+/* info */
 const msg = {
+  // time
+  currentDate: () => console.log(new Date()),
+
   // info
   info: () => {
-    log("");
+    // log("");
     log(
       `${cyan("●") + blue("■") + yellow("▲")}` +
         chalk.blue.bold(` ${name}: `) +
         chalk.blue.cyan(` ${description} (${version}): `)
     );
-    log("");
   },
 
   // finish
