@@ -7,6 +7,7 @@
   "license": "MIT",
   "scripts": {
     "index": "npx zx scripts/index.mjs",
+    "test": "npx zx test/test.mjs",
     "build:local": "npx zx scripts/build.mjs",
     "build:oeyoews": "npx zx scripts/build-oeyoews.mjs",
     "start": "npx zx scripts/start.mjs",
