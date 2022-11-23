@@ -55,7 +55,7 @@ if (isClone) {
     cd(dev);
     await $`git clone --depth 1 ${installRepoName}`;
   });
-  finish();
+  finish("Cloning Ending");
 } else {
   echo("🍃 I can see the first leaf falling.");
 }

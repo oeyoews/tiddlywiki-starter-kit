@@ -5,7 +5,6 @@ $.verbose = false;
 
 import prompts from "prompts";
 import { spinner } from "zx/experimental";
-import { cyan, blue, yellow, bold, dim, green } from "kolorist";
 import { info, finish } from "./info.mjs";
 
 info();
@@ -74,5 +73,5 @@ if (response.isBuild) {
       await $`npx ${bin} --output ${output} --build index`; // use vanilla replace --build
     }
   });
-  finish();
+  finish("Building Finished");
 }

@@ -21,8 +21,9 @@ function info() {
   log("");
 }
 
-function finish() {
-  signale.success("Operation successful");
+function finish(text) {
+  text = text || "Operation successful";
+  signale.success(text);
 }
 
 export { finish, info };

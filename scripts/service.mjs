@@ -80,7 +80,7 @@ if (platform == "linux") {
     if (serviceEvent !== "reload") {
       await spinner("Cloning ...", async () => {
         await $`systemctl --user ${serviceEvent} ${serviceFile}`;
-        finish();
+        finish(); // todo
       });
     } else {
       echo("🍃 I can see the first leaf falling.");

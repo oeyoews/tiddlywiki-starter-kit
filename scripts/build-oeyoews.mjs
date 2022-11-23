@@ -87,5 +87,5 @@ await spinner("Building ...", async () => {
   await $`mv ${library} ${dist}`;
   // copy vercel.json, index.html
   await $`cp src/vercel.json src/index.html img/default.png ${dist}`;
-  finish();
+  finish("Building Finished(for oyeoews)");
 });

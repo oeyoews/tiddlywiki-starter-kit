@@ -88,7 +88,7 @@ if (response.newPluginStatus) {
     recursive: true,
     silent: true,
   });
-  finish();
+  finish(`${pluginName} has created`);
 } else {
   console.log(chalk.yellow("😭 Maybe something wrong"));
 }
