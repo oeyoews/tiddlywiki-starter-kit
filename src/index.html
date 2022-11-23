@@ -264,7 +264,7 @@
       function pushNotify(text) {
         new Notify({
           status: "success",
-          title: "TiddlyWiki",
+          title: "Hello, Neotw",
           text: text,
           effect: "fade",
           speed: 300,
@@ -281,7 +281,8 @@
         });
       }
 
-      pushNotify("Press space to find more");
+      // pushNotify("Press space to find more");
+      window.onload = pushNotify();
     </script>
   </body>
 </html>
