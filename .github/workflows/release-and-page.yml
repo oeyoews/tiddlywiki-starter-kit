@@ -35,7 +35,7 @@ jobs:
 
       - name: Build Neotw
         run: |
-          npm run build-oeyoews
+          npm run build:oeyoews
 
       - name: Create Release
         uses: softprops/action-gh-release@v1

@@ -15,7 +15,7 @@ signale.config({
 
 const msg = {
   // info
-  info() {
+  info: () => {
     log("");
     log(
       `${cyan("●") + blue("■") + yellow("▲")}` +
@@ -26,8 +26,7 @@ const msg = {
   },
 
   // finish
-  finish(text) {
-    text = text || "Operation successful";
+  finish: (text = "Operation successful") => {
     signale.success(text);
   },
 };
