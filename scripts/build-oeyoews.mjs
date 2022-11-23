@@ -7,7 +7,7 @@ $.verbose = false;
 
 import { spinner } from "zx/experimental";
 import replace from "replace";
-import { info, finish } from "./info.mjs";
+import * as omsg from "./info.mjs";
 
 const reg = /LONGID/g;
 const reg2 = /SHORTID/g;
@@ -33,8 +33,7 @@ const copyFiles = ["tiddlers", "dev", "tiddlywiki.info"];
  */
 
 await spinner("Building ...", async () => {
-  // info
-  info();
+  omsg.info();
 
   // clean generated files
   await $`rm -rf ${dist} ${library}`;
@@ -87,5 +86,5 @@ await spinner("Building ...", async () => {
   await $`mv ${library} ${dist}`;
   // copy vercel.json, index.html
   await $`cp src/vercel.json src/index.html img/default.png ${dist}`;
-  finish("Building Finished(for oyeoews)");
+  omsg.finish("Building Finished(for oyeoews)");
 });

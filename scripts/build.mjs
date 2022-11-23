@@ -3,12 +3,11 @@
 // enable quiet mode
 $.verbose = false;
 
-import gradient from "gradient-string";
 import prompts from "prompts";
 import { spinner } from "zx/experimental";
-import { info, finish } from "./info.mjs";
+import * as omsg from "./info.mjs";
 
-info();
+omsg.info();
 
 const bin = "tiddlywiki";
 const questions = [
@@ -74,6 +73,5 @@ if (response.isBuild) {
       await $`npx ${bin} --output ${output} --build index`; // use vanilla replace --build
     }
   });
-  finish("Building Finished");
+  omsg.finish("Building Finished");
 }
-console.log(gradient.rainbow("Hello World"));

@@ -2,9 +2,11 @@
 
 import { cyan, blue, yellow } from "kolorist";
 import signale from "signale";
+
 const { description, version, name } = require("../package.json");
 const log = console.log;
 
+// TODO:: use Info.xxx
 signale.config({
   // displayFilename: true,
   // displayTimestamp: true,
