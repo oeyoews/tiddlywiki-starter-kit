@@ -5,7 +5,6 @@ $.verbose = false;
 
 import prompts from "prompts";
 import { spinner } from "zx/experimental";
-// import * as omsg from "./info.mjs"; // actually, not recommend do that *
 import msg from "./info.mjs";
 
 msg.info();

@@ -139,7 +139,7 @@ class MetingJSElement extends HTMLElement {
 
 }
 
-console.log("%c 🎶 MetingJS v2.0.1 🎉", "background: linear-gradient(to left, #12c2e9, #c471ed, #f64f59); color: black;border-radius: 3px;padding: 3px;")
+console.log("%c 🎶 MetingJS(TWM) v2.0.1 🎉", "background: linear-gradient(to left, #12c2e9, #c471ed, #f64f59); color: black;border-radius: 3px;padding: 3px;")
 <!-- console.log('\n %c MetingJS v2.0.1 %c https://github.com/metowolf/MetingJS \n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;') -->
 
 if (window.customElements && !window.customElements.get('meting-js')) {
