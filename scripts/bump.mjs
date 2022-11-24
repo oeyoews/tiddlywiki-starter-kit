@@ -57,7 +57,7 @@ const questions = [
 const response = await prompts(questions);
 const newVersion = response.version;
 
-await spinner("Building ...", async () => {
+await spinner("Pushing ...", async () => {
   if (newVersion) {
     const data = await fs.readFile(filename);
     const content = String(data).replace(
