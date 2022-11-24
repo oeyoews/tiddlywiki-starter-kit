@@ -8,14 +8,12 @@ $.verbose = false;
 import { spinner } from "zx/experimental";
 import replace from "replace";
 import msg from "./info.mjs";
+import gitCommit from "./git-info.mjs";
 
 const reg = /LONGID/g;
 const reg2 = /SHORTID/g;
-// longCommit
-const commit = await $`git rev-parse HEAD`;
-const longCommit = commit.toString().trim();
-// shortCommit
-const shortCommit = longCommit.toString().substring(0, 7);
+const longCommit = gitCommit.longCommit;
+const shortCommit = gitCommit.shortCommit;
 const commitTemplate = "templates/commit-template.tid";
 const commitFile = "tiddlers/commit.tid";
 const library = "library";
