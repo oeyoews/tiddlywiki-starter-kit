@@ -41,6 +41,8 @@ await spinner("Building ...", async () => {
   await $`rm -rf ${prefix}*`;
 
   await $`cp ${commitTemplate} ${commitFile}`;
+  // TODO
+  // const regexPlace = { reg }
   replace({
     regex: reg,
     replacement: longCommit,
