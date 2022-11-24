@@ -6,7 +6,7 @@ $.verbose = false;
 // https://github.com/google/zx
 // TODO: use git latest tag replace tag
 
-import "zx/globals";
+import { spinner } from "zx/experimental";
 import prompts from "prompts";
 import msg from "./info.mjs";
 
@@ -57,30 +57,32 @@ const questions = [
 const response = await prompts(questions);
 const newVersion = response.version;
 
-if (newVersion) {
-  const data = await fs.readFile(filename);
-  const content = String(data).replace(
-    `"version": "${version}"`,
-    `"version": "${newVersion}"`
-  );
-  await fs.writeFile(filename, content);
-  console.log(chalk.green("`package.json` updated!"));
-}
+await spinner("Building ...", async () => {
+  if (newVersion) {
+    const data = await fs.readFile(filename);
+    const content = String(data).replace(
+      `"version": "${version}"`,
+      `"version": "${newVersion}"`
+    );
+    await fs.writeFile(filename, content);
+    console.log(chalk.green("`package.json` updated!"));
+  }
 
-if (response.commit) {
-  let message = response.message;
-  if (message === "") {
-    message = `Bump version: ${version} → ${newVersion}`;
-  }
-  if (message) {
-    // cd("..");
-    await $`git add . && git commit -m ${message}`;
-    if (response.tag) {
-      const tag = "v" + newVersion;
-      // console.log(`git tag -a ${tag} -m ''`)
-      await $`git tag -a ${tag} -m ''`;
-      await $`git push && git push --tags`;
+  if (response.commit) {
+    let message = response.message;
+    if (message === "") {
+      message = `Bump version: ${version} → ${newVersion}`;
     }
-    msg.finish();
+    if (message) {
+      // cd("..");
+      await $`git add . && git commit -m ${message}`;
+      if (response.tag) {
+        const tag = "v" + newVersion;
+        // console.log(`git tag -a ${tag} -m ''`)
+        await $`git tag -a ${tag} -m ''`;
+        await $`git push && git push --tags`;
+      }
+      msg.finish();
+    }
   }
-}
+});
