@@ -50,37 +50,29 @@ if (response.newPluginStatus) {
   const description =
     base.titleCase(response.description.trim().replace(/-/g, " ")) ||
     upperPluginName;
-  const replacePluginName = "PluginName";
-  const replaceDes = "Description";
   const target = "dev/plugins/" + pluginName;
 
   await $`rm -rf dev/plugins/PluginName*`;
   await $`mkdir ${target} && cp -r ${template}/* ${target}`;
-  // use for loop
-  replace({
-    regex: "UpperPluginName",
-    replacement: upperPluginName,
-    paths: [target],
-    recursive: true,
-    silent: true,
-  });
-  // pluginname
-  replace({
-    regex: replacePluginName,
-    replacement: pluginName,
-    paths: [target],
-    recursive: true,
-    silent: true,
-  });
-  // description
-  replace({
-    regex: replaceDes,
-    replacement: description,
-    paths: [target],
-    recursive: true,
-    silent: true,
-  });
+
+  const regexPlace = {
+    // string: var
+    // TODO: rename these var, need notice order
+    UpperPluginName: upperPluginName,
+    PluginName: pluginName,
+    Description: description,
+  };
+
+  for (let i in regexPlace) {
+    replace({
+      regex: i,
+      replacement: regexPlace[i],
+      paths: [target],
+      recursive: true,
+      silent: true,
+    });
+  }
   msg.finish(`${pluginName} has created`);
 } else {
-  console.log(chalk.yellow("😭 Maybe something wrong"));
+  console.log(chalk.yellow("🍃 I can see the first leaf falling."));
 }
