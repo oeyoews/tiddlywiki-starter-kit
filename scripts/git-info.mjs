@@ -1,14 +1,14 @@
 #!/usr/bin/env zx
 
-$.verbose = false;
+$.verbose = false
 
-const headCommit = await $`git rev-parse HEAD`;
-const longCommit = headCommit.toString().trim();
-const shortCommit = longCommit.substring(0, 7);
+const headCommit = await $`git rev-parse HEAD`
+const longCommit = headCommit.toString().trim()
+const shortCommit = longCommit.substring(0, 7)
 
 const gitCommit = {
-  longCommit: longCommit,
-  shortCommit: shortCommit,
-};
+  longCommit,
+  shortCommit
+}
 
-export default gitCommit;
+export default gitCommit

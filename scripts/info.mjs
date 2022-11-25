@@ -1,17 +1,17 @@
 #!/usr/bin/env zx
 
 // https://bobbyhadz.com/blog/javascript-export-class
-import { cyan, blue, yellow } from "kolorist";
-import signale from "signale";
+import { cyan, blue, yellow } from 'kolorist'
+import signale from 'signale'
 
-const { description, version, name } = require("../package.json");
-const log = console.log;
+const { description, version, name } = require('../package.json')
+const log = console.log
 
 signale.config({
   // displayFilename: true,
   // displayTimestamp: true,
   // displayDate: true,
-});
+})
 
 /* info */
 const msg = {
@@ -22,16 +22,16 @@ const msg = {
   info: () => {
     // log("");
     log(
-      `${cyan("●") + blue("■") + yellow("▲")}` +
+      `${cyan('●') + blue('■') + yellow('▲')}` +
         chalk.blue.bold(` ${name}: `) +
         chalk.blue.cyan(` ${description} (${version}): `)
-    );
+    )
   },
 
   // finish
-  finish: (text = "Operation successful") => {
-    signale.success(text);
-  },
-};
+  finish: (text = 'Operation successful') => {
+    signale.success(text)
+  }
+}
 
-export default msg;
+export default msg

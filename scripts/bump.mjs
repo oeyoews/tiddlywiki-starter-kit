@@ -1,88 +1,88 @@
 #!/usr/bin/env zx
 
 // enable quiet mode
-$.verbose = false;
-
 // https://github.com/google/zx
 // TODO: use git latest tag replace tag
 
-import { spinner } from "zx/experimental";
-import prompts from "prompts";
-import msg from "./info.mjs";
+import { spinner } from 'zx/experimental'
+import prompts from 'prompts'
+import msg from './info.mjs'
+
+$.verbose = false
 
 // write file base exe dir
-const filename = "./package.json";
+const filename = './package.json'
 // require base relative file dir
-const { version } = require("../package.json");
+const { version } = require('../package.json')
 
-const [major, minor, patch] = version.split(".");
-const nextMajor = String(Number(major) + 1) + ".0.0";
-const nextMinor = major + "." + String(Number(minor) + 1) + ".0";
-const nextPatch = major + "." + minor + "." + String(Number(patch) + 1);
+const [major, minor, patch] = version.split('.')
+const nextMajor = String(Number(major) + 1) + '.0.0'
+const nextMinor = major + '.' + String(Number(minor) + 1) + '.0'
+const nextPatch = major + '.' + minor + '.' + String(Number(patch) + 1)
 
-msg.info();
+msg.info()
 
-console.log("Current version: " + version);
+console.log('Current version: ' + version)
 
 const questions = [
   {
-    type: "select",
-    name: "version",
-    message: "Which part do you want to bump? ",
+    type: 'select',
+    name: 'version',
+    message: 'Which part do you want to bump? ',
     choices: [
-      { title: "patch: " + nextPatch, value: nextPatch },
-      { title: "minor: " + nextMinor, value: nextMinor },
-      { title: "major: " + nextMajor, value: nextMajor },
-    ],
+      { title: 'patch: ' + nextPatch, value: nextPatch },
+      { title: 'minor: ' + nextMinor, value: nextMinor },
+      { title: 'major: ' + nextMajor, value: nextMajor }
+    ]
   },
   {
-    type: (prev) => prev && "confirm",
-    name: "commit",
-    message: "是否执行git commit提交代码？",
-    initial: true,
+    type: (prev) => prev && 'confirm',
+    name: 'commit',
+    message: '是否执行git commit提交代码？',
+    initial: true
   },
   {
-    type: (prev) => prev && "text",
-    name: "message",
-    message: "git commit的内容(留空则使用'Bump version')：",
+    type: (prev) => prev && 'text',
+    name: 'message',
+    message: "git commit的内容(留空则使用'Bump version')："
   },
   {
-    type: (prev) => (prev || prev === "") && "confirm",
-    name: "tag",
-    message: "是否执行git tag打标签？",
-    initial: true,
-  },
-];
+    type: (prev) => (prev || prev === '') && 'confirm',
+    name: 'tag',
+    message: '是否执行git tag打标签？',
+    initial: true
+  }
+]
 
-const response = await prompts(questions);
-const newVersion = response.version;
+const response = await prompts(questions)
+const newVersion = response.version
 
-await spinner("Pushing ...", async () => {
+await spinner('Pushing ...', async () => {
   if (newVersion) {
-    const data = await fs.readFile(filename);
+    const data = await fs.readFile(filename)
     const content = String(data).replace(
       `"version": "${version}"`,
       `"version": "${newVersion}"`
-    );
-    await fs.writeFile(filename, content);
-    console.log(chalk.green("`package.json` updated!"));
+    )
+    await fs.writeFile(filename, content)
+    console.log(chalk.green('`package.json` updated!'))
   }
 
   if (response.commit) {
-    let message = response.message;
-    if (message === "") {
-      message = `Bump version: ${version} → ${newVersion}`;
+    let message = response.message
+    if (message === '') {
+      message = `Bump version: ${version} → ${newVersion}`
     }
     if (message) {
       // cd("..");
-      await $`git add . && git commit -m ${message}`;
+      await $`git add . && git commit -m ${message}`
       if (response.tag) {
-        const tag = "v" + newVersion;
+        const tag = 'v' + newVersion
         // console.log(`git tag -a ${tag} -m ''`)
-        await $`git tag -a ${tag} -m ''`;
-        await $`git push && git push --tags`;
+        await $`git tag -a ${tag} -m ''`
+        await $`git push && git push --tags`
       }
-      msg.finish();
+      msg.finish()
     }
   }
-});
+})
