@@ -1,7 +1,7 @@
 #!/usr/bin/env zx
 
 // enable quiet mode
-$.verbose = false
+$.verbose = true
 
 function titleCase (str) {
   const splitStr = str.toLowerCase().split(' ')

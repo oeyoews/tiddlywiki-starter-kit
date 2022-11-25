@@ -2,13 +2,9 @@
 
 // enable quiet mode
 // https://github.com/google/zx
-// TODO: use git latest tag replace tag
-
 import { spinner } from 'zx/experimental'
 import prompts from 'prompts'
 import msg from './info.mjs'
-
-$.verbose = false
 
 // write file base exe dir
 const filename = './package.json'

@@ -14,7 +14,9 @@
     "new-plugin": "npx zx scripts/new-plugin.mjs",
     "bump": "npx zx ./scripts/bump.mjs",
     "clone": "npx zx scripts/clone.mjs",
-    "service": "npx zx scripts/service.mjs"
+    "service": "npx zx scripts/service.mjs",
+    "lint": "npx eslint ./scripts --ext mjs",
+    "lint:fix": "npx eslint ./scripts --ext mjs --fix"
   },
   "dependencies": {
     "tiddlywiki": "5.2.3"

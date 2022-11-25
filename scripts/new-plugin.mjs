@@ -10,8 +10,6 @@ import signale from 'signale'
 import msg from './info.mjs'
 import base from './base.mjs'
 
-$.verbose = false
-
 msg.info()
 
 const timestamp = new Date().getTime()

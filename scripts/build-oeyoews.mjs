@@ -1,8 +1,5 @@
 #!/usr/bin/env zx
 
-// enable quiet mode
-// update-git-commit
-
 import { spinner } from 'zx/experimental'
 import replace from 'replace'
 import msg from './info.mjs'
@@ -10,10 +7,6 @@ import gitCommit from './git-info.mjs'
 
 $.verbose = false
 
-const reg = /LONGID/g
-const reg2 = /SHORTID/g
-const longCommit = gitCommit.longCommit
-const shortCommit = gitCommit.shortCommit
 const commitTemplate = 'templates/commit-template.tid'
 const commitFile = 'tiddlers/commit.tid'
 const library = 'library'
@@ -41,8 +34,12 @@ await spinner('Building ...', async () => {
   await $`rm -rf ${prefix}*`
 
   await $`cp ${commitTemplate} ${commitFile}`
-  // TODO
-  // const regexPlace = { reg }
+
+  const longCommit = gitCommit.longCommit
+  const shortCommit = gitCommit.shortCommit
+  const reg = /LONGID/g
+  const reg2 = /SHORTID/g
+
   replace({
     regex: reg,
     replacement: longCommit,
@@ -75,13 +72,18 @@ await spinner('Building ...', async () => {
   await $`mkdir ${libpath}/plugins/oeyoews`
   await $`cp -r dev/plugins/* ${libpath}/plugins/oeyoews`
   await $`cp -r src/library-template ${libpath}`
-  await $`npx ${bin} ${libpath}/library-template/ --build library`
 
-  /* buildTw */
-  // generate main.html example.html library index.html
-  await $`npx ${bin} ${buildDir} --build main`
-  // generate example.html after have dist dir
-  await $`npx ${bin} dev --build example`
+  const buildTw = {
+    // builddir: target
+    [libpath + '/library-template/']: 'library',
+    [buildDir]: 'main',
+    dev: 'example'
+  }
+
+  for (const i in buildTw) {
+    await $`npx ${bin} ${i} --build ${buildTw[i]}`
+  }
+
   // after building
   await $`mv ${library} ${dist}`
   // copy vercel.json, index.html
