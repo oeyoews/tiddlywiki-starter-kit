@@ -8,8 +8,7 @@
   "scripts": {
     "index": "npx zx scripts/index.mjs",
     "build:oeyoews": "npx zx scripts/build-oeyoews.mjs",
-    "clone": "npx zx scripts/clone.mjs",
-    "lint:fix": "npx eslint ./scripts --ext mjs --fix"
+    "clone": "npx zx scripts/clone.mjs"
   },
   "dependencies": {
     "dateformat": "^5.0.3",
