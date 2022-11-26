@@ -4,11 +4,6 @@ import prompts from 'prompts'
 import { spinner } from 'zx/experimental'
 import msg from './info.mjs'
 
-const userInfo = os.userInfo() // init
-const username = userInfo.username // xxx
-const homedir = userInfo.homedir // /home/xxx
-const platform = os.platform() // linux
-
 const subwikiAddress = 'https://gitlab.com/oeyoews/subwiki.git'
 const tidgiArch = 'ssh://aur@aur.archlinux.org/tidgi.git'
 const dev = 'dev'
