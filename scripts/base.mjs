@@ -3,17 +3,7 @@
 // enable quiet mode
 $.verbose = true;
 
-function timestamp() {
-  const time = new Date();
-  const y = time.getFullYear();
-  const M = time.getMonth() + 1;
-  const d = time.getDate();
-  const h = time.getHours();
-  const m = time.getMinutes();
-  const s = time.getSeconds();
-  const normalDate = `${y}${M}${d}${h}${m}${s}`;
-  return normalDate;
-}
+import dateFormat from "dateformat";
 
 function titleCase(str) {
   const splitStr = str.toLowerCase().split(" ");
@@ -29,7 +19,7 @@ function titleCase(str) {
 
 const base = {
   titleCase,
-  timestamp,
+  timestamp: () => dateFormat(new Date(), "yyyymmddHHMMss"),
 };
 
 export default base;
