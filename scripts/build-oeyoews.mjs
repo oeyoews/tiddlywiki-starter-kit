@@ -18,7 +18,7 @@ const dist = "dist";
 const timestamp = base.timestamp();
 const prefix = "/tmp/neotw-";
 const buildDir = `${prefix}${timestamp}`;
-const copyFiles = ["tiddlers", "dev", "tiddlywiki.info"];
+const copyFiles = ["tiddlers", "dev", "files", "tiddlywiki.info"];
 
 /**
  * NOTE: dont't use async to rm files or more situations
@@ -85,6 +85,6 @@ await spinner("Building ...", async () => {
   // after building
   await $`mv ${library} ${dist}`;
   // copy vercel.json, index.html
-  await $`cp src/vercel.json src/index.html img/default.png ${dist}`;
+  await $`cp -r files src/vercel.json src/index.html img/default.png ${dist}`;
   msg.finish("Building Finished(for oyeoews)");
 });

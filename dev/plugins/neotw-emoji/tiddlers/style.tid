@@ -1,42 +1,26 @@
 tags: $:/tags/Stylesheet
 title: $:/plugins/oeyoews/neotw-emoji/style
 
-\define emojid(text)
-.neotw-$text$:before {
-	content:  "{{$:/plugins/oeyoews/neotw-emoji/dict##$text$}} ";
+\define emojid(texts)
+<$list filter="[enlist<__texts__>sort[]]" variable="text">
+.neotw-<<text>>:before {
+	content: "{{{ [[$:/plugins/oeyoews/neotw-emoji/dict]getindex<text>] }}}"
 }
 \end
 
-<<emojid tree>>
-
-<<emojid error>>
-
-<<emojid info>>
-
-<<emojid question>>
-
-<<emojid smile>>
-
-<<emojid checkbox>>
-
-<<emojid msg>>
-
-<<emojid warn>>
-
-<<emojid rocket>>
-
-<<emojid book>>
-
-<<emojid shower>>
-
-<<emojid fly>>
-
-<<emojid traffic>>
-
-<<emojid hourglass>>
-
-<<emojid tada>>
-
-<<emojid kbd>>
-
-<<emojid danger>>
+<<emojid """
+tree
+error
+info
+smile
+checkbox
+msg
+warn
+rocket
+fly
+traffic
+hourglass
+tada
+kbd
+danger
+""">>

@@ -6,11 +6,13 @@ type: application/javascript
 var duration = 3 * 1000;
 var animationEnd = Date.now() + duration;
 var defaults = {
-  startVelocity: 30,
+  startVelocity: 25,
   spread: 360,
   ticks: 60,
-  scalar: 0.6,
-  zIndex: 100,
+  scalar: 0.8,
+  zIndex: -10000,
+  shapes: ['circle', 'circle', 'square'],
+  disableForReducedMotion: false,
 };
 
 function randomInRange(min, max) {
