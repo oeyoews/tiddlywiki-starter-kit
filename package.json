@@ -6,12 +6,9 @@
   "author": "oeyoews <jyao4783@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "npx zx test/test.mjs",
     "index": "npx zx scripts/index.mjs",
     "build:oeyoews": "npx zx scripts/build-oeyoews.mjs",
-    "new-plugin": "npx zx scripts/new-plugin.mjs",
     "clone": "npx zx scripts/clone.mjs",
-    "lint": "npx eslint ./scripts --ext mjs",
     "lint:fix": "npx eslint ./scripts --ext mjs --fix"
   },
   "dependencies": {
