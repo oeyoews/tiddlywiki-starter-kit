@@ -41,7 +41,7 @@
         "requires-reload": "no"
     },
     {
-        "version": "0.0.2",
+        "version": "0.1.0",
         "type": "application/json",
         "title": "$:/plugins/oeyoews/neotw-emoji",
         "plugin-type": "plugin",
