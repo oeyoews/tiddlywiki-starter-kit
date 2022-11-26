@@ -18,6 +18,7 @@ const index = {
   newPlugin,
 };
 
+// from ob to arroy
 const choicesNeotw = Object.keys(index);
 
 // hello
