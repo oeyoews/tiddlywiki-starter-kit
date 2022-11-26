@@ -54,7 +54,7 @@ export default async function build() {
   ];
 
   const response = await prompts(questions);
-  const output = response.output;
+  const output = response.output || "public";
   const setup = response.setup;
   const passwd = response.password || "password";
 

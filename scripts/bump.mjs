@@ -1,7 +1,5 @@
 #!/usr/bin/env zx
 
-// enable quiet mode
-// https://github.com/google/zx
 import { spinner } from "zx/experimental";
 import prompts from "prompts";
 import msg from "./info.mjs";

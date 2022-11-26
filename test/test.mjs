@@ -3,19 +3,14 @@
 // enable quiet mode
 $.verbose = false;
 
-import msg from "../scripts/info.mjs";
-import base from "../scripts/base.mjs";
+function dmeo() {
+  console.log("dmeo");
+}
 
-msg.info();
-msg.finish("Neotw test ending");
+const index = {
+  dmeo: dmeo,
+};
 
-const time = new Date();
-const y = time.getFullYear();
-const M = time.getMonth() + 1;
-const d = time.getDay();
-const h = time.getHours();
-const m = time.getMinutes();
-const s = time.getSeconds();
-const normalDate = y + M + d + h + m + s;
-
-console.log(`${y}${M}`);
+// const ne = Array.from(index);
+const ne = Object.keys(index);
+console.log(ne);

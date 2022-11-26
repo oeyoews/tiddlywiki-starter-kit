@@ -6,17 +6,19 @@ import bump from "./bump.mjs";
 import build from "./build.mjs";
 import start from "./start.mjs";
 import service from "./service.mjs";
+import newPlugin from "./new-plugin.mjs";
+
+$.verbose = false;
 
 const index = {
   service,
   build,
   start,
   bump,
+  newPlugin,
 };
 
-$.verbose = false;
-
-const choicesNeotw = ["service", "build", "start", "bump"];
+const choicesNeotw = Object.keys(index);
 
 // hello
 msg.info();
