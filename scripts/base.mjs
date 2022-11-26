@@ -7,7 +7,7 @@ function timestamp() {
   const time = new Date();
   const y = time.getFullYear();
   const M = time.getMonth() + 1;
-  const d = time.getDay();
+  const d = time.getDate();
   const h = time.getHours();
   const m = time.getMinutes();
   const s = time.getSeconds();

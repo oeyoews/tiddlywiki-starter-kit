@@ -41,6 +41,7 @@ await spinner("Building ...", async () => {
   const regPlace = {
     LONGID: longCommit,
     SHORTID: shortCommit,
+    BUILDTIME: timestamp,
   };
 
   for (const i in regPlace) {

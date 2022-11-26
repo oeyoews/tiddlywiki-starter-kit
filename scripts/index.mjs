@@ -37,11 +37,10 @@ const questions = [
 const response = await prompts(questions);
 const fn = response.guide;
 
-// user sure
+// TODO: error
 /**
  * @param {any} callback
  */
-
 async function main(callback) {
   await index[callback]();
 }
