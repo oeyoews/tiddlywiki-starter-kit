@@ -6,15 +6,12 @@
   "author": "oeyoews <jyao4783@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "index": "npx zx scripts/index.mjs",
     "test": "npx zx test/test.mjs",
-    "build:local": "npx zx scripts/build.mjs",
+    "index": "npx zx scripts/index.mjs",
     "build:oeyoews": "npx zx scripts/build-oeyoews.mjs",
-    "start": "npx zx scripts/start.mjs",
     "new-plugin": "npx zx scripts/new-plugin.mjs",
     "bump": "npx zx ./scripts/bump.mjs",
     "clone": "npx zx scripts/clone.mjs",
-    "service": "npx zx scripts/service.mjs",
     "lint": "npx eslint ./scripts --ext mjs",
     "lint:fix": "npx eslint ./scripts --ext mjs --fix"
   },

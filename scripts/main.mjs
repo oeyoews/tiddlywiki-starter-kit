@@ -3,7 +3,6 @@
 // enable quiet mode
 import prompts from "prompts";
 import { spinner } from "zx/experimental";
-import msg from "./info.mjs";
 import open from "open"; // https://www.npmjs.com/package/open
 import {
   getPortPromise,
@@ -12,30 +11,27 @@ import {
   setHighestPort,
 } from "portfinder"; // https://github.com/http-party/node-portfinder
 
-msg.info();
-
 const bin = "tiddlywiki";
 
 async function service() {
   const serviceFile = "neotw-user.service";
-
-  msg.info();
+  const serviceChoices = [
+    "restart",
+    "stop",
+    "status",
+    "start",
+    "stop",
+    "disable",
+    "enable",
+    "reload",
+  ];
 
   const questions = [
     {
       type: "select",
       name: "serviceEvent",
       message: "event",
-      choices: [
-        "restart",
-        "stop",
-        "status",
-        "start",
-        "stop",
-        "disable",
-        "enable",
-        "reload",
-      ].map((i) => ({ value: i, title: i })),
+      choices: serviceChoices.map((i) => ({ value: i, title: i })),
       initial: 0,
     },
     {
@@ -63,7 +59,6 @@ async function service() {
     if (serviceEvent !== "reload") {
       await spinner("Cloning ...", async () => {
         await $`systemctl --user ${serviceEvent} ${serviceFile}`;
-        msg.finish(); // todo
       });
     } else {
       echo("🍃 I can see the first leaf falling.");
@@ -135,7 +130,6 @@ async function build() {
         await $`npx ${bin} --output ${output} --build index`; // use vanilla replace --build
       }
     });
-    msg.finish("Building Finished");
   }
 }
 
@@ -178,7 +172,6 @@ async function start() {
   const openUrl = "http:/localhost:" + response.port;
 
   if (response.isStart) {
-    msg.info();
     if (response.port == "random") {
       getPort(function (err, port) {
         const openUrl = "http:/localhost:" + port;
@@ -195,7 +188,6 @@ async function start() {
         await open(openUrl);
       });
     }
-    msg.finish();
   }
 }
 

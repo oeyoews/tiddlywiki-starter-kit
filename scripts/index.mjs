@@ -4,10 +4,13 @@ $.verbose = false;
 
 import prompts from "prompts";
 import index from "./main.mjs";
+import msg from "./info.mjs";
 
 const choicesNeotw = ["service", "build", "start"];
 
-// WIP TODO
+// hello
+msg.info();
+
 const questions = [
   {
     type: "select",
@@ -25,8 +28,9 @@ const fn = response.guide;
 /**
  * @param {any} callback
  */
-function main(callback) {
-  index[callback]();
+
+async function main(callback) {
+  await index[callback]();
 }
 
 /*  */
