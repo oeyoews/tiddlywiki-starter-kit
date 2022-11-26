@@ -17,8 +17,7 @@ https://gitlab.com/oeyoews/neotw/commit/
 BuildTime:
 <$button>
 BUILDTIME
-</$button>
-
+</$button> <br>
 Last Updated
 <$button>
 <a href={{{
