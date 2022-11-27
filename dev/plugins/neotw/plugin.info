@@ -3,8 +3,8 @@
     "type": "application/json",
     "title": "$:/plugins/oeyoews/neotw",
     "plugin-type": "plugin",
-    "name": "neotw",
-    "description": "neotw",
+    "name": "Neotw",
+    "description": "Neotw",
     "author": "oeyoews",
     "list": "readme licence config"
 }

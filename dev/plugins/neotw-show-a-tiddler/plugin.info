@@ -1,0 +1,12 @@
+{
+    "title": "$:/plugins/oeyoews/neotw-show-a-tiddler",
+    "description": "Neotw Show A Tiddler",
+    "author": "oeyoews",
+    "version": "0.0.1",
+    "core-version": ">=5.2.3",
+    "type": "application/json",
+    "source": "https://github.com/oeyoews/dev/plugins/neotw-show-a-tiddler",
+    "plugin-type": "plugin",
+    "name": "Neotw Show A Tiddler",
+    "list": "readme license history"
+}
