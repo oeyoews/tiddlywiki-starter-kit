@@ -34,7 +34,14 @@
 
 ## 🖼️ ShowCases
 
+<center>
+<img src="./img/1.gif" height=128 alt="flask">
+</center>
+
+<center>
 <img src="img/s5.png" width=256/>
+</center>
+
 <!-- <img src="img/app.png" width=256/> -->
 
 ## 📂 FileStruct
