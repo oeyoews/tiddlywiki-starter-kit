@@ -16,7 +16,8 @@ const bin = "tiddlywiki";
 const subwiki = "subwiki";
 const dist = "dist";
 const timestamp = base.timestamp();
-const prefix = "/tmp/neotw-";
+const tmpdir = os.tmpdir();
+const prefix = `${tmpdir}/neotw-`;
 const buildDir = `${prefix}${timestamp}`;
 const copyFiles = ["tiddlers", "dev", "files", "tiddlywiki.info"];
 

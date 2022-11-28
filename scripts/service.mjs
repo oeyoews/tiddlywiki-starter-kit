@@ -4,7 +4,11 @@ import prompts from "prompts";
 import { spinner } from "zx/experimental";
 
 export default async function service() {
+  const homedir = os.homedir();
   const serviceFile = "neotw-user.service";
+  const serviceFilePath = homedir + "/.config/systemd/user/" + serviceFile;
+  const exists = fs.pathExists(serviceFilePath);
+
   const serviceChoices = [
     "restart",
     "stop",
@@ -38,7 +42,7 @@ export default async function service() {
   const isSure = response.isSure;
   const serviceEvent = response.serviceEvent;
 
-  if (isSure) {
+  if (isSure && exists) {
     if (serviceEvent == "reload") {
       await spinner("Cloning ...", async () => {
         await $`systemctl --user daemon-reload`;
