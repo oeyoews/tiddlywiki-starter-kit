@@ -13,13 +13,13 @@ export default async function clone() {
   // Object ?
   const questions = [
     {
-      type: "select",
+      type: "autocomplete",
       name: "installRepoName",
       message: "install package",
       choices: [
         {
           title: "Subwiki",
-          description: "install repo" + subwikiAddress,
+          description: "install repo " + subwikiAddress,
           value: subwikiAddress,
         },
         {
