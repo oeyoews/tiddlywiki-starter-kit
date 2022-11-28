@@ -22,7 +22,7 @@ export default async function service() {
 
   const questions = [
     {
-      type: "select",
+      type: "autocomplete",
       name: "serviceEvent",
       message: "event",
       choices: serviceChoices.map((i) => ({ value: i, title: i })),
