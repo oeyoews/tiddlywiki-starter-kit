@@ -8,10 +8,12 @@
   "scripts": {
     "index": "npx zx scripts/index.mjs",
     "build:oeyoews": "npx zx scripts/build-oeyoews.mjs",
-    "clone": "npx zx scripts/clone.mjs"
+    "clone": "npx zx scripts/clone.mjs",
+    "dev": "npx nodemon --watch dev --ext tid --exec npx tiddlywiki --listen port=8081"
   },
   "dependencies": {
     "dateformat": "^5.0.3",
+    "nodemon": "^2.0.20",
     "tiddlywiki": "5.2.3"
   },
   "devDependencies": {
