@@ -7,15 +7,19 @@ import build from "./build.mjs";
 import start from "./start.mjs";
 import service from "./service.mjs";
 import newPlugin from "./new-plugin.mjs";
+import checkhealth from "./checkhealth.mjs";
+import clone from "./clone.mjs";
 
 $.verbose = false;
 
+const platform = checkhealth.platform;
 const index = {
   service,
   build,
   start,
   bump,
   newPlugin,
+  clone,
 };
 
 // from ob to arroy
@@ -26,7 +30,7 @@ msg.info();
 
 const questions = [
   {
-    type: "select",
+    type: "autocomplete",
     name: "guide",
     message: "guide",
     choices: choicesNeotw.map((i) => ({ value: i, title: i })),
@@ -46,6 +50,8 @@ async function main(callback) {
 }
 
 /*  */
-main(fn).catch((e) => {
-  msg.fatal(e);
-});
+if (platform === "linux") {
+  main(fn).catch((e) => {
+    msg.fatal(e);
+  });
+}
