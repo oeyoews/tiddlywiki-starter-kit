@@ -1,6 +1,6 @@
 #!/usr/bin/env zx
 
-import checkhealth from "./checkhealth.mjs";
+import checkhealth from "../scripts/checkhealth.mjs";
 
 const programms = ["git", "node", "npx", "tiddlywiki"];
 
