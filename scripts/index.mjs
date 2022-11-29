@@ -1,20 +1,18 @@
 #!/usr/bin/env zx
 
 import prompts from "prompts";
-import msg from "./info.mjs";
-import bump from "./bump.mjs";
-import build from "./build.mjs";
-import start from "./start.mjs";
-import service from "./service.mjs";
-import newPlugin from "./new-plugin.mjs";
-import checkneotw from "./checkneotw.mjs";
-import clone from "./clone.mjs";
+import msg from "./lib/info.mjs";
+import bump from "./lib/bump.mjs";
+import build from "./lib/build.mjs";
+import start from "./lib/start.mjs";
+import service from "./lib/service.mjs";
+import newPlugin from "./lib/new-plugin.mjs";
+import clone from "./lib/clone.mjs";
 
 $.verbose = false;
 
 const index = {
   service,
-  checkneotw,
   build,
   start,
   bump,

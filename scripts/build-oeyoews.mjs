@@ -2,9 +2,9 @@
 
 import { spinner } from "zx/experimental";
 import replace from "replace";
-import msg from "./info.mjs";
-import gitCommit from "./git-info.mjs";
-import base from "./base.mjs";
+import msg from "./lib/info.mjs";
+import gitCommit from "./lib/git-info.mjs";
+import base from "./lib/base.mjs";
 
 $.verbose = false;
 
