@@ -2,12 +2,12 @@
 
 import prompts from "prompts";
 import msg from "./lib/info.mjs";
-import bump from "./lib/bump.mjs";
-import build from "./lib/build.mjs";
-import start from "./lib/start.mjs";
-import service from "./lib/service.mjs";
-import newPlugin from "./lib/new-plugin.mjs";
-import clone from "./lib/clone.mjs";
+import service from "./component/service.mjs";
+import build from "./component/build.mjs";
+import start from "./component/start.mjs";
+import bump from "./component/bump.mjs";
+import newPlugin from "./component/new-plugin.mjs";
+import clone from "./component/clone.mjs";
 
 $.verbose = false;
 
@@ -49,5 +49,5 @@ async function main(callback) {
 
 /*  */
 main(fn).catch((e) => {
-  // msg.fatal(e);
+  msg.fatal(e);
 });

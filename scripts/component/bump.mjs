@@ -2,12 +2,12 @@
 
 import { spinner } from "zx/experimental";
 import prompts from "prompts";
-import msg from "./info.mjs";
+import msg from "../lib/info.mjs";
 
 export default async function bump() {
   // write file base exe dir
   const filename = "./package.json";
-  // require base relative file dir
+  // require base relative file dir(import relative path )
   const { version } = require("../package.json");
 
   const [major, minor, patch] = version.split(".");
