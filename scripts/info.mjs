@@ -17,7 +17,8 @@ signale.config({
 const msg = {
   // info
   info: () => {
-    log(new Date());
+    const timestamp = new Date();
+    log(`📅 ${timestamp}`);
     log(
       `${cyan("●") + blue("■") + yellow("▲")}` +
         chalk.blue.bold(` ${name}: `) +

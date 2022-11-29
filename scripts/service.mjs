@@ -26,7 +26,7 @@ export default async function service() {
       name: "serviceEvent",
       message: "event",
       choices: serviceChoices.map((i) => ({ value: i, title: i })),
-      initial: 0,
+      clearFirst: true,
     },
     {
       type: "toggle",

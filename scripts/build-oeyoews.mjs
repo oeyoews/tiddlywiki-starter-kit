@@ -59,9 +59,9 @@ await spinner("Building ...", async () => {
   await $`mkdir -p ${buildDir}`;
 
   // copy files
-  for (const i in copyFiles) {
+  for (let copyFile of copyFiles) {
     // copy build file to temp dir
-    await $`cp -r ${copyFiles[i]} ${buildDir}`;
+    await $`cp -r ${copyFile} ${buildDir}`;
     // clean subwiki when build on local
     await $`rm -rf ${buildDir}/tiddlers/${subwiki}`;
     await $`rm -rf ${buildDir}/tiddlers/trashbin`;

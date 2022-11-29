@@ -7,14 +7,14 @@ import build from "./build.mjs";
 import start from "./start.mjs";
 import service from "./service.mjs";
 import newPlugin from "./new-plugin.mjs";
-import checkhealth from "./checkhealth.mjs";
+import checkneotw from "./checkneotw.mjs";
 import clone from "./clone.mjs";
 
 $.verbose = false;
 
-const platform = checkhealth.platform;
 const index = {
   service,
+  checkneotw,
   build,
   start,
   bump,
@@ -30,18 +30,18 @@ msg.info();
 
 const questions = [
   {
-    type: "autocomplete",
+    type: "autocomplete", // not support use esc to exist
     name: "guide",
     message: "guide",
     choices: choicesNeotw.map((i) => ({ value: i, title: i })),
-    initial: 0,
+    clearFirst: true,
   },
 ];
 
+// begin question
 const response = await prompts(questions);
 const fn = response.guide;
 
-// TODO: error
 /**
  * @param {any} callback
  */
@@ -50,8 +50,6 @@ async function main(callback) {
 }
 
 /*  */
-if (platform === "linux") {
-  main(fn).catch((e) => {
-    msg.fatal(e);
-  });
-}
+main(fn).catch((e) => {
+  // msg.fatal(e);
+});
