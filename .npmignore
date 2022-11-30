@@ -7,3 +7,4 @@ test
 PluginName*
 .npmrc
 .gitignore
+node_modules
