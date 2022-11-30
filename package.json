@@ -12,11 +12,11 @@
     "publish": "npm publish --access public"
   },
   "dependencies": {
-    "dateformat": "^5.0.3",
-    "nodemon": "^2.0.20",
     "tiddlywiki": "5.2.3"
   },
   "devDependencies": {
+    "dateformat": "^5.0.3",
+    "nodemon": "^2.0.20",
     "gradient-string": "^2.0.2",
     "kolorist": "^1.6.0",
     "open": "^8.4.0",
