@@ -1,6 +1,6 @@
 {
-  "name": "Neotw",
-  "version": "2.2.2",
+  "name": "@oeyoews/neotw",
+  "version": "2.2.3",
   "description": "A modern style notebook based on tiddlywiki",
   "repository": "https://gitlab.com/oeyoews/neotw.git",
   "author": "oeyoews <jyao4783@gmail.com>",
@@ -8,7 +8,8 @@
   "scripts": {
     "index": "npx zx scripts/index.mjs",
     "build:oeyoews": "npx zx scripts/build-oeyoews.mjs",
-    "dev": "npx nodemon --watch dev --ext tid --exec npx tiddlywiki --listen port=8081"
+    "dev": "npx nodemon --watch dev --ext tid --exec npx tiddlywiki --listen port=8081",
+    "publish": "npm publish --access public"
   },
   "dependencies": {
     "dateformat": "^5.0.3",
@@ -25,5 +26,18 @@
     "signale": "^1.4.0",
     "typescript": "*",
     "zx": "^7.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oeyoews/neotw.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oeyoews/neotw/issues"
+  },
+  "homepage": "https://github.com/oeyoews/neotw#readme",
+  "keywords": [
+    "neotw",
+    "tiddlywiki",
+    "notebook"
+  ]
 }
