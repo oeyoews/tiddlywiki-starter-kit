@@ -1,7 +1,7 @@
 #!/usr/bin/env zx
 
 // https://bobbyhadz.com/blog/javascript-export-class
-import { cyan, blue, yellow } from "kolorist";
+// import { cyan, blue, yellow } from "kolorist";
 import signale from "signale";
 
 const { description, version, name } = require("../package.json");
@@ -20,8 +20,8 @@ const msg = {
     const timestamp = new Date();
     log(`📅 ${timestamp}`);
     log(
-      `${cyan("●") + blue("■") + yellow("▲")}` +
-        chalk.blue.bold(` ${name}: `) +
+      // `${cyan("●") + blue("■") + yellow("▲")}` +
+      chalk.blue.bold(`🚀 ${name}: `) +
         chalk.blue.cyan(` ${description} (${version}): `)
     );
   },

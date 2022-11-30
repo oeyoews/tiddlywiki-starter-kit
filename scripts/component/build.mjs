@@ -8,7 +8,6 @@ export default async function build() {
     {
       type: "select",
       name: "output",
-      message: "output dir",
       choices: [
         {
           title: "Vanilla",
