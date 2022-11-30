@@ -1,6 +1,6 @@
 {
   "name": "@oeyoews/neotw",
-  "version": "2.2.3",
+  "version": "2.2.5",
   "description": "A modern style notebook based on tiddlywiki",
   "repository": "https://gitlab.com/oeyoews/neotw.git",
   "author": "oeyoews <jyao4783@gmail.com>",
@@ -8,8 +8,7 @@
   "scripts": {
     "index": "npx zx scripts/index.mjs",
     "build:oeyoews": "npx zx scripts/build-oeyoews.mjs",
-    "dev": "npx nodemon --watch dev --ext tid --exec npx tiddlywiki --listen port=8081",
-    "publish": "npm publish --access public"
+    "dev": "npx nodemon --watch dev --ext tid --exec npx tiddlywiki --listen port=8081"
   },
   "dependencies": {
     "tiddlywiki": "5.2.3"
