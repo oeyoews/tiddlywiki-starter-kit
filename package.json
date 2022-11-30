@@ -1,6 +1,6 @@
 {
-  "name": "@oeyoews/neotw",
-  "version": "2.2.5",
+  "name": "neotw",
+  "version": "2.2.6",
   "description": "A modern style notebook based on tiddlywiki",
   "repository": "https://gitlab.com/oeyoews/neotw.git",
   "author": "oeyoews <jyao4783@gmail.com>",

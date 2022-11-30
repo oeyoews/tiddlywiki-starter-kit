@@ -2,4 +2,6 @@ tiddlers
 dist
 public
 .github/
-.idea/
+test
+**/.idea/
+PluginName*
