@@ -91,5 +91,5 @@ The [makefile](makefile) file is used as the centeral configuration for `neotw`
 <img src="./img/cat.svg" alt="cat"/>
 </div>
 <img src="https://img.shields.io/badge/License-MIT-blueviolet.svg?style=for-the-badge&color=blue" alt="project-license">
-<img src="https://img.shields.io/badge/Status-Ing-blueviolet.svg?style=for-the-badge&logo=Chakra-Ui&color=90E59A&logoColor=green" alt="status" >
+<img src="https://img.shields.io/badge/Status-DONE-blueviolet.svg?style=for-the-badge&logo=Chakra-Ui&color=90E59A&logoColor=green" alt="status" >
 </div>
