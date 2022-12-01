@@ -1,8 +1,8 @@
 created: 20221121100724832
 creator: oeyoews
-modified: 20221122161626311
+modified: 20221201142409259
 modifier: oeyoews
 title: $:/config/shortcuts/toggle-sidebar
 type: text/vnd.tiddlywiki
 
-win-Space
+shift-alt-S
