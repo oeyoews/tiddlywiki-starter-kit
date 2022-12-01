@@ -19,6 +19,7 @@ const timestamp = base.timestamp();
 const tmpdir = os.tmpdir();
 const prefix = `${tmpdir}/neotw-`;
 const buildDir = `${prefix}${timestamp}`;
+// build need files
 const copyFiles = ["tiddlers", "dev", "files", "tiddlywiki.info"];
 
 /**
@@ -85,7 +86,7 @@ await spinner("Building ...", async () => {
 
   // after building
   await $`mv ${library} ${dist}`;
-  // copy vercel.json, index.html
-  await $`cp -r files src/vercel.json src/index.html img/default.png ${dist}`;
+  // copy static files
+  await $`cp -r files src/vercel.json src/index.html static img/default.png ${dist}`;
   msg.finish("Building Finished(for oyeoews)");
 });
