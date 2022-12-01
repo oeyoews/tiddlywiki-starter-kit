@@ -1,7 +1,7 @@
 caption: tips
 created: 20221117023346122
 creator: oeyoews
-modified: 20221129132419006
+modified: 20221201142515439
 modifier: oeyoews
 subtitle: Tips
 tags: 
@@ -13,6 +13,6 @@ type: text/vnd.tiddlywiki
 			<<emoji tada>> Oops !
 		</h2>
 		<h4>
-			Try to press <kbd>🪟 win space</kbd> to find more <<emoji>>.
+			Try to press <kbd>🪟 alt shift s</kbd> to find more <<emoji>>.
 		</h4>
 </div>
