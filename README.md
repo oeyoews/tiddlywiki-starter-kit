@@ -6,21 +6,6 @@
 
 </div>
 
-# 🎩 TOC
-
-<!-- toc -->
-
-- [❓ What's the neotw](#%E2%9D%93-whats-the-neotw)
-- [🆕 Features](#%F0%9F%86%95-features)
-- [🖼️ ShowCases](#%F0%9F%96%BC%EF%B8%8F-showcases)
-- [📂 FileStruct](#%F0%9F%93%82-filestruct)
-- [⛹️ Install](#%E2%9B%B9%EF%B8%8F-install)
-- [👟 Run](#%F0%9F%91%9F-run)
-- [🐥 Configuration](#%F0%9F%90%A5-configuration)
-- [✌ Preview](#%E2%9C%8C-preview)
-
-<!-- tocstop -->
-
 ## ❓ What's the neotw
 
 > A modern style notebook based on tiddlywiki is v2 of the [tw5](https://github.com/oeyoews/tw5) repository
