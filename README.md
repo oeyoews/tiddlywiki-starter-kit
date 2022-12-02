@@ -63,6 +63,12 @@ The [makefile](makefile) file is used as the centeral configuration for `neotw`
 
 ## ✌ Preview
 
+### preview on mobile
+
+- npx http-server
+
+### online
+
 - 🏠 http://oeyoewl.top
 - 😺 https://oeyoews.github.io/neotw
 - 🦿 https://neotw.tiddlyhost.com
