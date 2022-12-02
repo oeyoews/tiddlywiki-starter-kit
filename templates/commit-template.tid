@@ -1,4 +1,5 @@
 title: $:/state/git/commit
+hide-body: yes
 
 \define longid() LONGID
 \define shortid() SHORTID
