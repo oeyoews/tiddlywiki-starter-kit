@@ -1,0 +1,16 @@
+title: $:/plugins/oeyoews/neotw-grey-tw/style
+tags: $:/tags/Stylesheet
+
+html {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=0.85);
+  -webkit-filter: grayscale(100%);}
+
+<!-- body * { -->
+<!-- -webkit-filter: grayscale(100%); /* webkit */ -->
+<!-- -moz-filter: grayscale(100%); /*firefox*/ -->
+<!-- -ms-filter: grayscale(100%); /*ie9*/ -->
+<!-- -o-filter: grayscale(100%); /*opera*/ -->
+<!-- filter: grayscale(100%); -->
+<!-- filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1); -->
+<!-- filter:gray; -->
+<!-- } -->

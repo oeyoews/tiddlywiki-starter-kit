@@ -1,0 +1,12 @@
+{
+    "title": "$:/plugins/oeyoews/neotw-grey-tw",
+    "description": "Grey Your Website On Some Special Days",
+    "author": "oeyoews",
+    "version": "0.0.1",
+    "core-version": ">=5.2.3",
+    "type": "application/json",
+    "source": "https://github.com/oeyoews/dev/plugins/neotw-grey-tw",
+    "plugin-type": "plugin",
+    "name": "Neotw Grey Tw",
+    "list": "readme license history"
+}
