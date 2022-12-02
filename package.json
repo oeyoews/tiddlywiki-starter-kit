@@ -10,9 +10,9 @@
   "bin": "./scripts/index.mjs",
   "license": "MIT",
   "scripts": {
-    "index": "npx zx scripts/index.mjs",
-    "build:oeyoews": "npx zx scripts/build-oeyoews.mjs",
-    "dev": "npx nodemon --watch dev --ext tid --exec npx tiddlywiki --listen port=8081"
+    "index": "zx scripts/index.mjs",
+    "build:oeyoews": "zx scripts/build-oeyoews.mjs",
+    "dev": "nodemon --watch dev --ext tid --exec tiddlywiki --listen port=8081"
   },
   "dependencies": {
     "dateformat": "^5.0.3",
