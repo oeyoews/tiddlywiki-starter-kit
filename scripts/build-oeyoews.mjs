@@ -87,6 +87,6 @@ await spinner("Building ...", async () => {
   // after building
   await $`mv ${library} ${dist}`;
   // copy static files
-  await $`cp -r files src/vercel.json src/index.html static img/default.png ${dist}`;
+  await $`cp -r files src/vercel.json src/index.html static img/default-2.png ${dist}`;
   msg.finish("Building Finished(for oyeoews)");
 });
