@@ -1,13 +1,13 @@
 #!/usr/bin/env zx
 
-import prompts from "prompts";
-import msg from "./lib/info.mjs";
-import service from "./component/service.mjs";
-import build from "./component/build.mjs";
-import start from "./component/start.mjs";
-import bump from "./component/bump.mjs";
-import newPlugin from "./component/new-plugin.mjs";
-import clone from "./component/clone.mjs";
+import prompts from 'prompts';
+import msg from './lib/info.mjs';
+import service from './component/service.mjs';
+import build from './component/build.mjs';
+import start from './component/start.mjs';
+import bump from './component/bump.mjs';
+import newPlugin from './component/new-plugin.mjs';
+import clone from './component/clone.mjs';
 
 $.verbose = false;
 
@@ -28,10 +28,10 @@ msg.info();
 
 const questions = [
   {
-    type: "autocomplete", // not support use esc to exist
-    name: "guide",
-    message: "guide",
-    choices: choicesNeotw.map((i) => ({ value: i, title: i })),
+    type: 'autocomplete', // not support use esc to exist
+    name: 'guide',
+    message: 'guide',
+    choices: choicesNeotw.map(i => ({ value: i, title: i })),
     clearFirst: true,
   },
 ];
@@ -48,6 +48,6 @@ async function main(callback) {
 }
 
 /*  */
-main(fn).catch((e) => {
+main(fn).catch(e => {
   // msg.fatal(e);
 });
