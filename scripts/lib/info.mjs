@@ -4,7 +4,7 @@
 // import { cyan, blue, yellow } from "kolorist";
 import signale from 'signale';
 
-const { description, version, name } = require('../package.json');
+const { description, version, name } = fs.readJsonSync('./package.json');
 const log = console.log;
 
 signale.config({
@@ -32,7 +32,7 @@ const msg = {
   },
 
   fatal: e => {
-    signale.error(new Error(e));
+    // signale.error(new Error(e));
   },
 };
 

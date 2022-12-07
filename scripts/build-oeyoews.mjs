@@ -1,32 +1,32 @@
 #!/usr/bin/env zx
 
-import { spinner } from "zx/experimental";
-import replace from "replace";
-import msg from "./lib/info.mjs";
-import gitCommit from "./lib/git-info.mjs";
-import base from "./lib/base.mjs";
+import { spinner } from 'zx/experimental';
+import replace from 'replace';
+import msg from './lib/info.mjs';
+import gitCommit from './lib/git-info.mjs';
+import base from './lib/base.mjs';
 
 $.verbose = false;
 
-const commitTemplate = "templates/commit-template.tid";
-const commitFile = "tiddlers/commit.tid";
-const library = "library";
-const libpath = "node_modules/tiddlywiki";
-const bin = "tiddlywiki";
-const subwiki = "subwiki";
-const dist = "dist";
+const commitTemplate = 'templates/commit-template.tid';
+const commitFile = 'tiddlers/commit.tid';
+const library = 'library';
+const libpath = 'node_modules/tiddlywiki';
+const bin = 'tiddlywiki';
+const subwiki = 'subwiki';
+const dist = 'dist';
 const timestamp = base.timestamp();
 const tmpdir = os.tmpdir();
 const prefix = `${tmpdir}/neotw-`;
 const buildDir = `${prefix}${timestamp}`;
 // build need files
-const copyFiles = ["tiddlers", "dev", "files", "tiddlywiki.info"];
+const copyFiles = ['tiddlers', 'dev', 'files', 'tiddlywiki.info'];
 
 /**
  * NOTE: dont't use async to rm files or more situations
  */
 
-await spinner("Building ...", async () => {
+await spinner('Building ...', async () => {
   msg.info();
 
   // clean generated files
@@ -75,9 +75,9 @@ await spinner("Building ...", async () => {
 
   const buildTw = {
     // builddir: target
-    [libpath + "/library-template/"]: "library",
-    [buildDir]: "main",
-    dev: "example",
+    [libpath + '/library-template/']: 'library',
+    [buildDir]: 'main',
+    dev: 'example',
   };
 
   for (const i in buildTw) {
@@ -87,6 +87,6 @@ await spinner("Building ...", async () => {
   // after building
   await $`mv ${library} ${dist}`;
   // copy static files
-  await $`cp -r files src/vercel.json src/index.html static img/default-2.png ${dist}`;
-  msg.finish("Building Finished(for oyeoews)");
+  await $`cp -r files src/vercel.json src/index.html static img/default-2.jpg ${dist}`;
+  msg.finish('Building Finished(for oyeoews)');
 });
