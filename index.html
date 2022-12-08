@@ -56,7 +56,7 @@
       }
 
       #wallpaper {
-        background-image: url("./default.png");
+        background-image: url('./default-2.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -156,9 +156,9 @@
     <script charset="utf-8">
       (function () {
         // Variable Definitions
-        var time = document.querySelector("#time");
-        var dateElem = document.querySelector("#date");
-        var wallpaper = document.querySelector("#wallpaper");
+        var time = document.querySelector('#time');
+        var dateElem = document.querySelector('#date');
+        var wallpaper = document.querySelector('#wallpaper');
 
         // Date Configurations
         var currentDate = new Date();
@@ -169,46 +169,46 @@
         var dateOfMonth = currentDate.getDate();
 
         var dayOfWeek = [
-          "Sunday",
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
+          'Sunday',
+          'Monday',
+          'Tuesday',
+          'Wednesday',
+          'Thursday',
+          'Friday',
+          'Saturday',
         ];
         var monthOfYear = [
-          "January",
-          "February",
-          "March",
-          "April",
-          "May",
-          "June",
-          "July",
-          "August",
-          "September",
-          "October",
-          "November",
-          "Decemeber",
+          'January',
+          'February',
+          'March',
+          'April',
+          'May',
+          'June',
+          'July',
+          'August',
+          'September',
+          'October',
+          'November',
+          'Decemeber',
         ];
 
         // hours
         if (hours < 10) {
-          time.innerHTML = "0" + hours + ":" + minutes;
+          time.innerHTML = '0' + hours + ':' + minutes;
         } else {
-          time.innerHTML = hours + ":" + minutes;
+          time.innerHTML = hours + ':' + minutes;
         }
 
         // minutes
         if (minutes < 10) {
-          time.innerHTML = hours + ":" + "0" + minutes;
+          time.innerHTML = hours + ':' + '0' + minutes;
         } else {
-          time.innerHTML = hours + ":" + minutes;
+          time.innerHTML = hours + ':' + minutes;
         }
 
         // Update Date Component
         dateElem.innerHTML =
-          dayOfWeek[day] + ", " + monthOfYear[month] + " " + dateOfMonth;
+          dayOfWeek[day] + ', ' + monthOfYear[month] + ' ' + dateOfMonth;
 
         /* document.onkeydown = function (event) {
           var e = event || window.event || arguments.callee.caller.arguments[0];
@@ -220,19 +220,19 @@
         }; */
 
         // mobile move
-        document.addEventListener("touchend", (e) => {
-          window.location.href = "./main.html";
+        document.addEventListener('touchend', e => {
+          window.location.href = './main.html';
         });
 
         // Key Events
-        document.addEventListener("keypress", (e) => {
+        document.addEventListener('keypress', e => {
           // console.log("key pressed", e.keyCode);
           // Enter Key
           if (e.keyCode === 13 || e.keyCode === 32) {
             // pushNotify();
-            window.location.href = "./main.html";
-            wallpaper.classList.remove("slideDown");
-            wallpaper.classList.add("slideUp");
+            window.location.href = './main.html';
+            wallpaper.classList.remove('slideDown');
+            wallpaper.classList.add('slideUp');
           }
           // Spacebar Key
           // else if (e.keyCode === 32) {
@@ -245,31 +245,31 @@
       })();
 
       (function batttick() {
-        navigator.getBattery().then((battery) => {
-          let m = "";
-          let c = "";
-          m = battery.level * 100 + "%";
+        navigator.getBattery().then(battery => {
+          let m = '';
+          let c = '';
+          m = battery.level * 100 + '%';
 
           if (battery.charging) {
             // m += " ⚡";
-            c = "white";
+            c = 'white';
           }
           // console.log(c, m);
-          document.getElementById("batt").innerHTML = m;
-          document.getElementById("batt").style.color = c;
+          document.getElementById('batt').innerHTML = m;
+          document.getElementById('batt').style.color = c;
         });
       })();
 
       // simple-notify
       function pushNotify(text) {
         new Notify({
-          status: "success",
-          title: "Hello, Neotw",
+          status: 'success',
+          title: 'Hello, Neotw',
           text: text,
-          effect: "fade",
+          effect: 'fade',
           speed: 300,
-          customClass: "",
-          customIcon: "",
+          customClass: '',
+          customIcon: '',
           showIcon: true,
           showCloseButton: true,
           autoclose: true,
@@ -277,7 +277,7 @@
           gap: 40,
           distance: 690,
           type: 1,
-          position: "right top",
+          position: 'right top',
         });
       }
 
