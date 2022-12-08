@@ -1,11 +1,11 @@
 name: Release Plugins
 on:
-  # schedule:
-  #   - cron: "0 16 * * 0"
-  # push:
-  #   branches: ["main"]
-  #   tags:
-  #     - "v*.*.*"
+  schedule:
+    - cron: '0 16 * * 0'
+  push:
+    branches: ['main']
+    tags:
+      - 'v*.*.*'
   workflow_dispatch:
 
 concurrency:
@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: "16"
+          node-version: '16'
           # cache: yarn
 
       - name: Cache dependencies
