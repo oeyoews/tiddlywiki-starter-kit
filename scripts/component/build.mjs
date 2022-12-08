@@ -1,5 +1,3 @@
-#!/usr/bin/env zx
-
 import prompts from 'prompts';
 import { spinner } from 'zx/experimental';
 

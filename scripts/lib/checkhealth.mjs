@@ -1,5 +1,3 @@
-#!/usr/bin/env zx
-
 function exitWithError(errorMessage) {
   console.error(chalk.red(errorMessage));
   // process.exit(1);

@@ -1,40 +1,38 @@
-#!/usr/bin/env zx
-
-import prompts from "prompts";
-import { spinner } from "zx/experimental";
+import prompts from 'prompts';
+import { spinner } from 'zx/experimental';
 
 export default async function service() {
   const homedir = os.homedir();
-  const serviceFile = "neotw-user.service";
-  const serviceFilePath = homedir + "/.config/systemd/user/" + serviceFile;
+  const serviceFile = 'neotw-user.service';
+  const serviceFilePath = homedir + '/.config/systemd/user/' + serviceFile;
   const exists = fs.pathExists(serviceFilePath);
 
   const serviceChoices = [
-    "restart",
-    "stop",
-    "status",
-    "start",
-    "stop",
-    "disable",
-    "enable",
-    "reload",
+    'restart',
+    'stop',
+    'status',
+    'start',
+    'stop',
+    'disable',
+    'enable',
+    'reload',
   ];
 
   const questions = [
     {
-      type: "autocomplete",
-      name: "serviceEvent",
-      message: "event",
-      choices: serviceChoices.map((i) => ({ value: i, title: i })),
+      type: 'autocomplete',
+      name: 'serviceEvent',
+      message: 'event',
+      choices: serviceChoices.map(i => ({ value: i, title: i })),
       clearFirst: true,
     },
     {
-      type: "toggle",
-      name: "isSure",
-      message: "Are you sure ?",
+      type: 'toggle',
+      name: 'isSure',
+      message: 'Are you sure ?',
       initial: true,
-      active: "yes",
-      inactive: "no",
+      active: 'yes',
+      inactive: 'no',
     },
   ];
 
@@ -43,19 +41,19 @@ export default async function service() {
   const serviceEvent = response.serviceEvent;
 
   if (isSure && exists) {
-    if (serviceEvent == "reload") {
-      await spinner("Cloning ...", async () => {
+    if (serviceEvent == 'reload') {
+      await spinner('Cloning ...', async () => {
         await $`systemctl --user daemon-reload`;
         console.log(chalk.green(`${serviceEvent}`));
       });
     }
 
-    if (serviceEvent !== "reload") {
-      await spinner("Cloning ...", async () => {
+    if (serviceEvent !== 'reload') {
+      await spinner('Cloning ...', async () => {
         await $`systemctl --user ${serviceEvent} ${serviceFile}`;
       });
     } else {
-      echo("🍃 I can see the first leaf falling.");
+      echo('🍃 I can see the first leaf falling.');
     }
   }
 }
