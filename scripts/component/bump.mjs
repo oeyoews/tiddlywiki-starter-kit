@@ -1,5 +1,4 @@
 import { spinner } from 'zx/experimental';
-import prompts from 'prompts';
 import msg from '../lib/info.mjs';
 
 export default async function bump() {
@@ -12,8 +11,6 @@ export default async function bump() {
   const nextMajor = String(Number(major) + 1) + '.0.0';
   const nextMinor = major + '.' + String(Number(minor) + 1) + '.0';
   const nextPatch = major + '.' + minor + '.' + String(Number(patch) + 1);
-
-  msg.info();
 
   console.log('Current version: ' + version);
 
