@@ -1,3 +1,4 @@
+import prompts from 'prompts';
 import { spinner } from 'zx/experimental';
 import msg from '../lib/info.mjs';
 
