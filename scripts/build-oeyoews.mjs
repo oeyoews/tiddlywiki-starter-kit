@@ -46,11 +46,11 @@ await spinner('Building ...', async () => {
     BUILDTIME: timestamp,
   };
 
-  for (const i in regPlace) {
+  for (let i in regPlace) {
     replace({
-      regex: i,
-      replacement: regPlace[i],
-      paths: [commitFile],
+      regex: i, // string
+      replacement: regPlace[i], // string
+      paths: [commitFile], // array
       recursive: true,
       silent: true,
     });

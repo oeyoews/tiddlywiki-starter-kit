@@ -1,5 +1,5 @@
 subtitle: Neotw Keyboard List
 title: $:/plugins/oeyoews/neotw-surfing-keys/keyboard-list
-type: text/vnd.tiddlywiki
+mask-closable: yes
 
 {{$:/core/ui/ControlPanel/KeyboardShortcuts}}
