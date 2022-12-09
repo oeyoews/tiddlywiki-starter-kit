@@ -61,6 +61,10 @@ The [makefile](makefile) file is used as the centeral configuration for `neotw`
 
 > more usage please check [makefile](makefile)
 
+## Dev
+
+- [modern-tiddlydev](https://gitlab.com/oeyoews/modern-tiddlydev)
+
 ## ✌ Preview
 
 ### preview on mobile
