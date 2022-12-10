@@ -52,10 +52,10 @@ git clone --depth 1 https://gitlab.com/oeyoews/neotw # or git clone --depth 1 ht
 
 ```bash
 yarn install # install
-npx tiddlywiki --listen
+npm run guide
 ```
 
-## 🐥 Configuration
+## 🐥 Configuration(deprecated)
 
 The [makefile](makefile) file is used as the centeral configuration for `neotw`
 
