@@ -14,6 +14,8 @@ const dist = 'dist';
 await spinner('Building ...', async () => {
   msg.info();
 
+  updatecommit();
+
   // clean generated files
   await $`rm -rf ${dist} ${library}`;
   await $`rm -rf tiddlers/trashbin`;
