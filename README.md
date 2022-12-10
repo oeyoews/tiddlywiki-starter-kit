@@ -48,11 +48,9 @@ git clone --depth 1 https://gitlab.com/oeyoews/neotw # or git clone --depth 1 ht
 
 ## 👟 Run
 
-`vanilla`
-
 ```bash
 yarn install # install
-npm run guide
+npm run guide # or npx tiddlywiki --listen
 ```
 
 ## 🐥 Configuration(deprecated)
