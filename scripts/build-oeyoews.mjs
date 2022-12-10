@@ -3,11 +3,13 @@
 import { spinner } from 'zx/experimental';
 import replace from 'replace';
 import msg from './lib/info.mjs';
-import gitCommit from './lib/git-info.mjs';
 import base from './lib/base.mjs';
 
 $.verbose = false;
 
+const headCommit = await $`git rev-parse HEAD`;
+const longid = headCommit.toString().trim();
+const shortid = longid.substring(0, 7);
 const commitTemplate = 'templates/commit-template.tid';
 const commitFile = 'tiddlers/commit.tid';
 const library = 'library';
@@ -22,10 +24,6 @@ const buildDir = `${prefix}${timestamp}`;
 // build need files
 const copyFiles = ['tiddlers', 'dev', 'files', 'tiddlywiki.info'];
 
-/**
- * NOTE: dont't use async to rm files or more situations
- */
-
 await spinner('Building ...', async () => {
   msg.info();
 
@@ -38,17 +36,15 @@ await spinner('Building ...', async () => {
 
   await $`cp ${commitTemplate} ${commitFile}`;
 
-  const longCommit = gitCommit.longCommit;
-  const shortCommit = gitCommit.shortCommit;
   const regPlace = {
-    LONGID: longCommit,
-    SHORTID: shortCommit,
-    BUILDTIME: timestamp,
+    longid,
+    shortid,
+    timestamp,
   };
 
   for (let i in regPlace) {
     replace({
-      regex: i, // string
+      regex: new RegExp('\\$\\{' + i + '\\}', 'g'),
       replacement: regPlace[i], // string
       paths: [commitFile], // array
       recursive: true,

@@ -7,10 +7,10 @@
     "url": "git+https://github.com/oeyoews/neotw.git"
   },
   "author": "oeyoews <jyao4783@gmail.com>",
-  "bin": "./scripts/index.mjs",
+  "bin": "./scripts/guide.mjs",
   "license": "MIT",
   "scripts": {
-    "index": "zx scripts/index.mjs",
+    "guide": "zx scripts/guide.mjs",
     "build:oeyoews": "zx scripts/build-oeyoews.mjs",
     "dev": "nodemon --watch dev --ext tid --exec tiddlywiki --listen port=8081"
   },

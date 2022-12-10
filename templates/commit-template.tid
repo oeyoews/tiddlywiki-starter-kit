@@ -1,8 +1,8 @@
 title: $:/state/git/commit
 hide-body: yes
 
-\define longid() LONGID
-\define shortid() SHORTID
+\define longid() ${longid}
+\define shortid() ${shortid}
 
 \define baseurl()
 https://gitlab.com/oeyoews/neotw/commit/
@@ -15,15 +15,17 @@ https://gitlab.com/oeyoews/neotw/commit/
 }
 </style>
 
+<div style="color:gray;font-style:italic;">
 BuildTime:
 <$button>
-BUILDTIME
+${timestamp}
 </$button> <br> <br>
-Last Updated
+Last Updated:
 <$button>
 <a href={{{
   [<longid>addprefix<baseurl>] }}} target="_blank" class="gitcommit"><<shortid>>
   <<emoji bingo>> </a>
 </$button>
+</div>
 
 <!-- vim:set et sw=2 ts=2 ft=tiddlywiki tw=80: -->
