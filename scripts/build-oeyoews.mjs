@@ -15,31 +15,23 @@ const commitFile = 'tiddlers/commit.tid';
 const library = 'library';
 const libpath = 'node_modules/tiddlywiki';
 const bin = 'tiddlywiki';
-const subwiki = 'subwiki';
 const dist = 'dist';
-const timestamp = base.timestamp();
-const tmpdir = os.tmpdir();
-const prefix = `${tmpdir}/neotw-`;
-const buildDir = `${prefix}${timestamp}`;
-// build need files
-const copyFiles = ['tiddlers', 'dev', 'files', 'tiddlywiki.info'];
 
 await spinner('Building ...', async () => {
   msg.info();
 
   // clean generated files
   await $`rm -rf ${dist} ${library}`;
+  await $`rm -rf tiddlers/trashbin`;
   // clean buildlib files
   await $`rm -rf ${libpath}/plugins/oeyoews ${libpath}/library-template`;
-  // clean build dir
-  await $`rm -rf ${prefix}*`;
 
   await $`cp ${commitTemplate} ${commitFile}`;
 
   const regPlace = {
     longid,
     shortid,
-    timestamp,
+    timestamp: base.timestamp,
   };
 
   for (let i in regPlace) {
@@ -52,37 +44,21 @@ await spinner('Building ...', async () => {
     });
   }
 
-  // clean last build dir
-  await $`mkdir -p ${buildDir}`;
-
-  // copy files
-  for (let copyFile of copyFiles) {
-    // copy build file to temp dir
-    await $`cp -r ${copyFile} ${buildDir}`;
-    // clean subwiki when build on local
-    await $`rm -rf ${buildDir}/tiddlers/${subwiki}`;
-    await $`rm -rf ${buildDir}/tiddlers/trashbin`;
-  }
-
   /* buildLib */
   await $`mkdir ${libpath}/plugins/oeyoews`;
   await $`cp -r dev/plugins/* ${libpath}/plugins/oeyoews`;
   await $`cp -r src/library-template ${libpath}`;
 
-  const buildTw = {
-    // builddir: target
-    [libpath + '/library-template/']: 'library',
-    [buildDir]: 'main',
-    dev: 'example',
-  };
+  const libbuild = libpath + '/library-template/';
+  const actions = ['library', 'main', 'example'];
 
-  for (const i in buildTw) {
-    await $`npx ${bin} ${i} --build ${buildTw[i]}`;
-  }
+  // library
+  await $`npx ${bin} ${libbuild} --build ${actions[0]}`;
+  // main example
+  await $`npx ${bin} --build ${actions[1]} ${actions[2]}`;
 
   // after building
   await $`mv ${library} ${dist}`;
-  // copy static files
-  await $`cp -r files src/vercel.json src/index.html static img/default-2.jpg ${dist}`;
+  await $`cp -r files src/vercel.json src/index.html img/default-2.jpg ${dist}`;
   msg.finish('Building Finished(for oyeoews)');
 });
