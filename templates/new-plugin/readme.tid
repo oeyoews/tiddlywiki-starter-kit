@@ -1,3 +1,3 @@
-title: $:/plugins/oeyoews/PluginName/readme
+title: $:/plugins/${username}/${pluginname}/readme
 
-* Description
+* ${description}

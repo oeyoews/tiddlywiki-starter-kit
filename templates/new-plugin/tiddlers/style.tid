@@ -1,2 +1,2 @@
-title: $:/plugins/oeyoews/PluginName/style
+title: $:/plugins/${username}/${pluginname}/style
 tags: $:/tags/Stylesheet

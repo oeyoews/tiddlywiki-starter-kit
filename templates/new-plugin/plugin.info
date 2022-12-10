@@ -1,12 +1,11 @@
 {
-    "title": "$:/plugins/oeyoews/PluginName",
-    "description": "Description",
-    "author": "oeyoews",
-    "version": "0.0.1",
-    "core-version": ">=5.2.3",
-    "type": "application/json",
-    "source": "https://github.com/oeyoews/dev/plugins/PluginName",
-    "plugin-type": "plugin",
-    "name": "UpperPluginName",
-    "list": "readme license history"
+  "title": "$:/plugins/${username}/${pluginname}",
+  "description": "${description}",
+  "author": "${username}",
+  "version": "0.0.1",
+  "core-version": ">=5.2.3",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "${upperpluginname}",
+  "list": "readme"
 }

@@ -1,0 +1,11 @@
+{
+  "title": "$:/plugins/oeyoews/dmeo-dmoe",
+  "description": "He This Is A Dmeo",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.2.3",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "Dmeo Dmoe",
+  "list": "readme"
+}

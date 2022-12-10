@@ -1,7 +1,5 @@
 $.verbose = false;
 
-// https://github.com/terkelg/prompts#readme
-import { spinner } from 'zx/experimental';
 import { cyan, blue, yellow, bold, dim, green } from 'kolorist';
 import prompts from 'prompts';
 import replace from 'replace';
@@ -10,20 +8,19 @@ import msg from '../lib/info.mjs';
 import base from '../lib/base.mjs';
 
 export default async function newPlugin() {
-  const timestamp = base.timestamp();
-
+  const template = 'templates/new-plugin';
   const questions = [
     {
       type: 'text',
-      name: 'pluginName', // variable
+      name: 'pluginname', // variable
       message: 'create plugin',
-      initial: 'PluginName-' + timestamp,
+      initial: 'pluginname',
     },
     {
       type: 'text',
       name: 'description', // variable
       message: 'plugin description', // not support sed space
-      initial: '',
+      initial: 'plugin description',
     },
     {
       type: 'toggle',
@@ -35,40 +32,39 @@ export default async function newPlugin() {
     },
   ];
 
-  const response = await prompts(questions);
+  // get answer
+  let { newPluginStatus, pluginname, description } = await prompts(questions);
 
-  if (response.newPluginStatus) {
-    const template = 'templates/new-plugin';
-    const pluginName = response.pluginName.trim().replace(/\s+/g, '-');
-    const upperPluginName = base.titleCase(
-      response.pluginName.trim().replace(/-/g, ' '),
-    ); // no need trim whitespace
-    const description =
-      base.titleCase(response.description.trim().replace(/-/g, ' ')) ||
-      upperPluginName;
-    const target = 'dev/plugins/' + pluginName;
+  if (newPluginStatus) {
+    await $`rm -rf dev/plugins/pluginname*`;
+    // ???
+    pluginname = pluginname.trim().replace(/\s+/g, '-');
+    const upperpluginname = base.titleCase(
+      pluginname.trim().replace(/-/g, ' '),
+    );
+    description =
+      base.titleCase(description.trim().replace(/-/g, ' ')) || upperpluginname;
+    const target = 'dev/plugins/' + pluginname;
 
-    await $`rm -rf dev/plugins/PluginName*`;
     await $`mkdir ${target} && cp -r ${template}/* ${target}`;
 
+    const { username } = os.userInfo();
     const regexPlace = {
-      // string: var
-      // TODO: rename these var, need notice order
-      UpperPluginName: upperPluginName,
-      PluginName: pluginName,
-      Description: description,
+      upperpluginname,
+      pluginname,
+      description,
+      username,
     };
 
-    for (const i in regexPlace) {
+    for (let i in regexPlace) {
       replace({
-        regex: i,
+        regex: new RegExp('\\$\\{' + i + '\\}', 'g'),
         replacement: regexPlace[i],
         paths: [target],
         recursive: true,
         silent: true,
       });
     }
-    msg.finish(`${pluginName} has created`);
   } else {
     console.log(chalk.yellow('🍃 I can see the first leaf falling.'));
   }

@@ -49,5 +49,5 @@ async function main(callback) {
 
 /*  */
 main(fn).catch(e => {
-  console.log(e);
+  // console.log(e);
 });
