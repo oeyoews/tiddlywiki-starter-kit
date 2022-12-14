@@ -1,0 +1,14 @@
+caption: Notion Button
+description: Notion Button
+tags: $:/tags/PageControls
+title: $:/plugins/oeyoews/neotw/button/notion
+
+\whitespace trim
+
+\define base-notion() https://oeyoewl.top
+\define target()
+
+<$button tooltip="" aria-label="" class=<<tv-config-toolbar-class>>>
+<a href={{{ [<target>addprefix<base-notion>]}}} target="_blank">
+{{Notion-logo.svg}}</a>
+</$button>
