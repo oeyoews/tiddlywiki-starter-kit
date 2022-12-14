@@ -30,10 +30,13 @@ await spinner('Building ...', async () => {
   const libbuild = libpath + '/library-template/';
   const actions = ['library', 'main', 'example'];
 
+  // different dirs
   // library
   await $`npx ${bin} ${libbuild} --build ${actions[0]}`;
-  // main example
-  await $`npx ${bin} --build ${actions[1]} ${actions[2]}`;
+  // main
+  await $`npx ${bin} --build ${actions[1]} `;
+  // example
+  await $`npx ${bin} dev --build ${actions[2]} `;
 
   // after building
   await $`mv ${library} ${dist}`;
