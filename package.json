@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "dateformat": "^5.0.3",
+    "global": "^4.4.0",
     "gradient-string": "^2.0.2",
     "kolorist": "^1.6.0",
     "nodemon": "^2.0.20",
@@ -24,7 +25,7 @@
     "prompts": "^2.4.2",
     "replace": "^1.2.2",
     "signale": "^1.4.0",
-    "tiddlywiki": "5.2.3",
+    "tiddlywiki": "^5.2.4",
     "zx": "^7.1.0"
   },
   "bugs": {
