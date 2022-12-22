@@ -888,10 +888,10 @@ through@2, through@~2.3, through@~2.3.1:
   resolved "https://registry.yarnpkg.com/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
   integrity sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==
 
-tiddlywiki@^5.2.4:
-  version "5.2.4"
-  resolved "https://registry.yarnpkg.com/tiddlywiki/-/tiddlywiki-5.2.4.tgz#8a1a3b538f7c495aeb2952dc237c7804d59c3734"
-  integrity sha512-D6x7eoqGC6nbPnapnMxC3H/1umV1Hl8UdDRvsYL80qsl0vumCNbXxs13Q99KUqgNlIvVi5Acmx0uOcLWHaST2A==
+tiddlywiki@^5.2.5:
+  version "5.2.5"
+  resolved "https://registry.yarnpkg.com/tiddlywiki/-/tiddlywiki-5.2.5.tgz#ba1171828ca167fa4276449cbc295b3cf56470bf"
+  integrity sha512-Xfq9NHxAwg2UvCimbtZWWqZyfUpVyq1w+tfb0vMrx3wyWK3VZD1hogJTN1a5qBNyvD9d+WmpZkCw/xN5smRzLQ==
 
 tinycolor2@^1.0.0:
   version "1.4.2"
