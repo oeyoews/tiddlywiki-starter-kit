@@ -2,7 +2,7 @@ caption: tips
 created: 20221117023346122
 creator: oeyoews
 mask-closable: yes
-modified: 20221214154304835
+modified: 20221222071104366
 modifier: oeyoews
 subtitle: Tips
 tags: 
@@ -10,9 +10,6 @@ title: neotw/browser/tip
 type: text/vnd.tiddlywiki
 
 <div class=neotw-gradient> 
-		<h2>
-			<<emoji tada>> Oops !
-		</h2>
 		<h4>
 			Try to press <kbd>alt shift s</kbd> to find more <<emoji>>.
 		</h4>
