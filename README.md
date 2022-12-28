@@ -25,6 +25,7 @@
 
 <center>
 <img src="img/s5.png" width=256/>
+<img src="./img/01.png" height=128 alt="01">
 </center>
 
 <!-- <img src="img/app.png" width=256/> -->
