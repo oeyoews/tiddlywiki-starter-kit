@@ -1,0 +1,19 @@
+caption: Repo button
+created: 20221228105335799
+creator: oeyoews
+description: repo button
+modified: 20221228105341389
+modifier: oeyoews
+tags: $:/tags/PageControls
+title: $:/plugins/oeyoews/neotw/button/repo
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+
+\define base-repo() https://gitlab.com/
+\define target() oeyoews/neotw
+
+<$button tooltip="" aria-label="" class=<<tv-config-toolbar-class>>>
+<a href={{{ [<target>addprefix<base-repo>]}}} target="_blank">
+{{neotw/icon/github01}}</a>
+</$button>

@@ -2,7 +2,7 @@ caption: {{$:/core/images/edit-button}} {{$:/language/Buttons/Edit/Caption}}
 created: 20220826140144050
 creator: oeyoews
 description: {{$:/language/Buttons/Edit/Hint}}
-modified: 20220925134742653
+modified: 20221228111136206
 modifier: oeyoews
 tags: $:/tags/ViewToolbar
 title: $:/core/ui/Buttons/edit
@@ -11,7 +11,7 @@ type: text/vnd.tiddlywiki
 \whitespace trim
 <$button message="tm-edit-tiddler" tooltip={{$:/language/Buttons/Edit/Hint}} aria-label={{$:/language/Buttons/Edit/Caption}} class=<<tv-config-toolbar-class>>>
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
-{{$:/plugins/oeyoews/codemirror-keymap-vimjk/icon}}
+{{neotw/icon/neovim}}
 </$list>
 <!--
 <$action-setfield
