@@ -8,4 +8,4 @@ plugin-type: plugin
 source: https://github.com/kookma/TW-Favorites
 title: $:/plugins/kookma/favorites
 type: application/json
-version: 4.7.9
+version: 4.8.1
