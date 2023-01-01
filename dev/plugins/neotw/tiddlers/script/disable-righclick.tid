@@ -1,0 +1,10 @@
+title: $:/plugins/oeyoews/neotw/script/disable-rightclick
+tags: $:/tags/RawMarkup
+type: application/javascript
+
+<script>
+  document.oncontextmenu = function(){
+    return false;
+  }
+demo
+</script>
