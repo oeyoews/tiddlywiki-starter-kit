@@ -15,7 +15,7 @@ footer {
 }
 
 footer .inline-icon svg{
-height:1em;
+  height:1em;
 }
 
 .live-time {

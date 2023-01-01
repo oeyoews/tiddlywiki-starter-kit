@@ -3,6 +3,6 @@ tags: $:/tags/RawMarkupWikified/BottomBody
 
 `<footer style="font-size:16px;">`
 `<div style="background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59); -webkit-background-clip: text; color: transparent; font-style:italic;
-border-bottom:2px dashed #12c2c9; font-weight:700;" id="hitokoto">` 🎉
+font-weight:700;" id="hitokoto">` 🎉
 Loading ... `</div>`
 `</footer>`

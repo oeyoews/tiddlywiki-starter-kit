@@ -1,0 +1,16 @@
+created: 20221231130705517
+creator: oeyoews
+modified: 20221231130825030
+modifier: oeyoews
+tags: $:/tags/PageControls
+title: neotw/page/bili
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+<$button tooltip="BiliBili" aria-label="" class=<<tv-config-toolbar-class>>>
+
+{{neotw/icon/bili}}
+
+<$action-navigate $to="neotw/bili"/>
+
+</$button>

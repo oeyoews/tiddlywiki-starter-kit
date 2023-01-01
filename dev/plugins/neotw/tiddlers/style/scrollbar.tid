@@ -1,11 +1,5 @@
-caption: Scrollbar
-created: 20220212200401023
-creator: oeyoews
-modified: 20220831040030941
-modifier: oeyoews
+title: $:/plugins/oeyoews/neotw/style/scrollbar
 tags: $:/tags/Stylesheet
-title: neotw/scrollbar
-type: text/vnd.tiddlywiki
 
 \rules only filteredtranscludeinline transcludeinline macrodef macrocallinline html
 
@@ -24,13 +18,13 @@ html {
 /* for Chrome, Edge */
 ::-webkit-scrollbar,
   scrollbar-width {
-  width: 5px;
+  width: 7px;
   height:5px;
 }
 
 ::-webkit-scrollbar:hover,
   scrollbar-width {
-  width: 5.5px;
+  width: 7.5px;
 }
 
 ::-webkit-scrollbar-track {
