@@ -1,0 +1,30 @@
+created: 20230102160728454
+creator: oeyoews
+modified: 20230102161138288
+modifier: oeyoews
+tags: 
+title: neotw/article/1 31
+type: text/vnd.tiddlywiki
+
+<figure class="bg-gray-100 rounded-xl p-8">
+      <img
+        class="w-32 h-32 rounded-full mx-auto"
+        src="https://avatars.githubusercontent.com/u/72405338?v=4"
+        alt=""
+        width="384"
+        height="512"
+      />
+      <div class="pt-6 space-y-4">
+        <blockquote>
+          <p class="text-lg font-semibold">
+            “Tailwind CSS is the only framework that I've seen scale on large
+            teams. It’s easy to customize, adapts to any design, and the build
+            size is tiny.”
+          </p>
+        </blockquote>
+        <figcaption>
+          <div>Sarah Dayan</div>
+          <div>Staff Engineer, Algolia</div>
+        </figcaption>
+      </div>
+    </figure>
