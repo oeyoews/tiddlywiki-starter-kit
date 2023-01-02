@@ -6,5 +6,4 @@ type: application/javascript
   document.oncontextmenu = function(){
     return false;
   }
-demo
 </script>
