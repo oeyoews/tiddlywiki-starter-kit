@@ -84,6 +84,10 @@ The [makefile](makefile) file is used as the centeral configuration for `neotw`
 <div>
 <img src="./img/cat.svg" alt="cat"/>
 </div>
+<a target="_blank" href="https://app.netlify.com/sites/neotw/deploys">
+<img src="https://api.netlify.com/api/v1/badges/7654bd58-2df9-4962-9a81-4cca9cf78b9c/deploy-status" alt="Netlify Status" >
+ </a>
+ <br>
 <img src="https://img.shields.io/badge/License-MIT-blueviolet.svg?style=for-the-badge&color=blue" alt="project-license">
 <img src="https://img.shields.io/badge/Status-DONE-blueviolet.svg?style=for-the-badge&logo=Chakra-Ui&color=90E59A&logoColor=green" alt="status" >
 </div>
