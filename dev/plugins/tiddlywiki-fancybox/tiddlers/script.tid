@@ -1,6 +1,7 @@
 title: $:/plugins/oeyoews/tiddlywiki-fancybox/script
 type: application/javascript
 tags: $:/tags/RawMarkup
+hide-body: yes
 
 <script>
 <!-- jq -->
