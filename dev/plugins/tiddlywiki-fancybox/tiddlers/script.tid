@@ -14,6 +14,9 @@ hide-body: yes
 Fancybox.defaults.Image = { zoom: false };
 Fancybox.defaults.Hash = false;
 Fancybox.bind('[data-fancybox="gallery"]', {
+  Thumbs: {
+    autoStart: false,
+  },
   Hash: false,
   Image: {
     zoom: false,
