@@ -22,6 +22,8 @@
         scriptNode.setAttribute("data-mapping", "specific");
         scriptNode.setAttribute("data-term", "Index");
         scriptNode.setAttribute("data-reactions-enabled", "1");
+        scriptNode.setAttribute("data-input-position", "top");
+        scriptNode.setAttribute("data-loading", "lazy");
         scriptNode.setAttribute("data-emit-metadata", "0");
         scriptNode.setAttribute("data-theme", theme);
         scriptNode.setAttribute("data-lang", lang);

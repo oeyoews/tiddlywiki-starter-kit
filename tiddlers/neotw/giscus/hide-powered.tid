@@ -1,11 +1,17 @@
 created: 20230103052342721
 creator: oeyoews
-modified: 20230103052516978
+modified: 20230103055010379
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/giscus/hide-powered
 type: text/vnd.tiddlywiki
 
+.gsc-left-header {
+    display: none !important;
+}
+
 #__next .text-sm {
-	display: !none;
+    font-size: .875rem;
+    line-height: 1.25rem;
+		color: red !important;
 }

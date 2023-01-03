@@ -38,9 +38,11 @@ await spinner('Building ...', async () => {
   await $`npx ${bin} dev --build ${actions[2]} `;
 
   // enable twikoo last before build for main
-  await $`cp patch/* tiddlers`;
+  await $`cp patch/tidio.tid tiddlers`;
   // main
   await $`npx ${bin} --build ${actions[1]} `;
+  // rm twikoo
+  await $`rm tiddlers/tidio.tid`;
 
   // after building
   await $`mv ${library} ${dist}`;
