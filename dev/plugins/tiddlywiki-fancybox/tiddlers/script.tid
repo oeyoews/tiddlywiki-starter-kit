@@ -12,8 +12,9 @@ hide-body: yes
 
 <script>
 Fancybox.defaults.Image = { zoom: false };
+Fancybox.defaults.Hash = false;
 Fancybox.bind('[data-fancybox="gallery"]', {
-  "J": "next",
+  Hash: false,
   Image: {
     zoom: false,
   },

@@ -1,9 +1,11 @@
 created: 20221118072834839
 creator: oeyoews
-modified: 20221222070857391
+modified: 20230103151916160
 modifier: oeyoews
 tags: 
 title: neotw/image/lightbox
 type: text/vnd.tiddlywiki
 
-<<ibox neotw/image/banner btn-class:"ibox-btn tc-btn-invisible pretty">> <<ibox outer-space-animate.svg btn-class:"ibox-btn tc-btn-invisible pretty">>
+<<ibox outer-space-animate.svg btn-class:"ibox-btn tc-btn-invisible pretty">> 
+
+[img width=128 [neotw/image/banner ]]
