@@ -13,6 +13,7 @@ hide-body: yes
 <script>
 Fancybox.defaults.Image = { zoom: false };
 Fancybox.defaults.Hash = false;
+<!-- Fancybox.getInstance().getSlide().Panzoom.toggleZoom(); -->
 Fancybox.bind('[data-fancybox="gallery"]', {
   Thumbs: {
     autoStart: false,
