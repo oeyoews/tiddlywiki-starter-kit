@@ -1,6 +1,6 @@
 title: $:/plugins/oeyoews/tiddlywiki-fancybox/readme
 
-!! Preview
+!! Readme
 
 * 只需要安装此插件即可， 无需额外配置， 自动识别图片tiddlywiki的所有图片,
 点击即可放大图片(如果不起作用, 请刷新tiddlywiki使用)
@@ -16,3 +16,5 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox/readme
 <b>Wiki Gallery</b>
 </center>
 {{$:/plugins/oeyoews/tiddlywiki-fancybox/example}}
+
+!! Bug Report
