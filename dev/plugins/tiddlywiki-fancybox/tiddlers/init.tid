@@ -16,5 +16,22 @@ $().fancybox({
   selector: '[data-fancybox="gallary"]',
   hash: false,
   loop: true,
-});`
+});
+
+$('[data-fancybox="gallary"]').fancybox({
+        caption: function (instance, item) {
+          var caption = $(this).data("caption") || "";
+
+          if (item.type === "image") {
+            caption =
+              (caption.length ? caption + "<br />" : "") +
+              '<a href="' +
+              item.src +
+              '">Download image</a>';
+          }
+
+          return caption;
+        },
+      });
+`
 `</script>`

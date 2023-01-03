@@ -1,0 +1,21 @@
+title: $:/plugins/oeyoews/tiddlywiki-fancybox/custom
+type: application/javascript
+tags: $:/tags/RawMarkupWikified/BottomBody
+
+`<script>
+$('[data-fancybox="gallary"]').fancybox({
+caption: function (instance, item) {
+var caption = $(this).data("caption") || "";
+
+if (item.type === "image") {
+caption =
+(caption.length ? caption + "<br />" : "") +
+'<a href="' +
+item.src +
+'">Download image</a>';
+}
+
+return caption;
+},
+});`
+`</script>`

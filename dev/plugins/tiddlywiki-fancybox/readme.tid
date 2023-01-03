@@ -11,6 +11,10 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox/readme
 只会渲染启动时识别到的img标签，如果导入新的图片或者打开新的含有图片的tiddler,
 则需要重新刷新当前界面，让插件重新渲染DOM
 
+!! Demo
+
+* https://neotw.netlify.app/main.html#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-fancybox
+
 !! Test
 
 * nodejs tiddlywiki
