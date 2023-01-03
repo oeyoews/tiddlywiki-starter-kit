@@ -5,6 +5,10 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox/readme
 * 只需要安装此插件即可， 无需额外配置， 自动识别图片tiddlywiki的所有图片,
 点击即可放大图片(如果不起作用, 请刷新tiddlywiki使用)
 
+!! Test
+
+* nodejs tiddlywiki
+
 <!-- * how to add refresh tip on tiddlywiki js?? -->
 <img src="https://gitlab.com/oeyoews/modern-tiddlydev/-/raw/main/static/fancybox-example.png"/>
 
