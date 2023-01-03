@@ -7,7 +7,9 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox/readme
 
 !! Note
 
-* 由于是动态给img加上一个父标签, 需要重新刷新当前界面，让插件重新渲染
+* 由于是动态给img加上一个父标签,
+只会渲染启动时识别到的img标签，如果导入新的图片或者打开新的含有图片的tiddler,
+则需要重新刷新当前界面，让插件重新渲染DOM
 
 !! Test
 
