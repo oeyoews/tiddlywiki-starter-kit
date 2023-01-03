@@ -206,7 +206,7 @@ var assetList = [
         "name": "Tiddlywiki Fancybox",
         "list": "readme",
         "dependents": "",
-        "readme": "!! Readme\n\n* 只需要安装此插件即可， 无需额外配置， 自动识别图片tiddlywiki的所有图片,\n点击即可放大图片(如果不起作用, 请刷新tiddlywiki使用)\n\n!! Note\n\n* 由于是动态给img加上一个父标签, 需要重新刷新当前界面，让插件重新渲染\n\n!! Test\n\n* nodejs tiddlywiki\n\n<!-- * how to add refresh tip on tiddlywiki js?? -->\n<img src=\"https://gitlab.com/oeyoews/modern-tiddlydev/-/raw/main/static/fancybox-example.png\"/>\n\n<center>\n<b>Wiki Gallery</b>\n</center>\n{{$:/plugins/oeyoews/tiddlywiki-fancybox/example}}\n\n!! Bug Report\n\n* about me button have a bug\n",
+        "readme": "!! Readme\n\n* 只需要安装此插件即可， 无需额外配置， 自动识别图片tiddlywiki的所有图片,\n点击即可放大图片(如果不起作用, 请刷新tiddlywiki使用)\n\n!! Note\n\n* 由于是动态给img加上一个父标签,\n只会渲染启动时识别到的img标签，如果导入新的图片或者打开新的含有图片的tiddler,\n则需要重新刷新当前界面，让插件重新渲染DOM\n\n!! Test\n\n* nodejs tiddlywiki\n\n<!-- * how to add refresh tip on tiddlywiki js?? -->\n<img src=\"https://gitlab.com/oeyoews/modern-tiddlydev/-/raw/main/static/fancybox-example.png\"/>\n\n<center>\n<b>Wiki Gallery</b>\n</center>\n{{$:/plugins/oeyoews/tiddlywiki-fancybox/example}}\n\n!! Bug Report\n\n* about me button have a bug\n",
         "requires-reload": "no"
     }
 ];
