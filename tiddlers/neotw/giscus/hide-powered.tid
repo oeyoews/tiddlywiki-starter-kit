@@ -1,0 +1,11 @@
+created: 20230103052342721
+creator: oeyoews
+modified: 20230103052516978
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: neotw/giscus/hide-powered
+type: text/vnd.tiddlywiki
+
+#__next .text-sm {
+	display: !none;
+}

@@ -33,10 +33,14 @@ await spinner('Building ...', async () => {
   // different dirs
   // library
   await $`npx ${bin} ${libbuild} --build ${actions[0]}`;
-  // main
-  await $`npx ${bin} --build ${actions[1]} `;
+
   // example
   await $`npx ${bin} dev --build ${actions[2]} `;
+
+  // enable twikoo last before build for main
+  await $`cp patch/* tiddlers`;
+  // main
+  await $`npx ${bin} --build ${actions[1]} `;
 
   // after building
   await $`mv ${library} ${dist}`;
