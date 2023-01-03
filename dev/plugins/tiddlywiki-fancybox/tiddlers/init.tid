@@ -8,30 +8,5 @@ $("img").each(function () {
     $(element).attr("data-fancybox", "gallery");
     $(element).attr("href", $(this).attr("src"));
     $(this).wrap(element);
-});`
-`</script>`
-
-`<script>
-$().fancybox({
-  selector: '[data-fancybox="gallary"]',
-  hash: false,
-  loop: true,
 });
-
-$('[data-fancybox="gallary"]').fancybox({
-        caption: function (instance, item) {
-          var caption = $(this).data("caption") || "";
-
-          if (item.type === "image") {
-            caption =
-              (caption.length ? caption + "<br />" : "") +
-              '<a href="' +
-              item.src +
-              '">Download image</a>';
-          }
-
-          return caption;
-        },
-      });
-`
 `</script>`
