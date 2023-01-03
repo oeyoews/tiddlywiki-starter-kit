@@ -21,6 +21,9 @@ Fancybox.bind('[data-fancybox="gallery"]', {
   Hash: false,
   Image: {
     zoom: false,
+    Panzoom: {
+      doubleClick: null
+    },
   },
   fullscreen: {
     autoStart: true,
