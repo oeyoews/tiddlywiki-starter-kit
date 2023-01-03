@@ -5,6 +5,10 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox/readme
 * 只需要安装此插件即可， 无需额外配置， 自动识别图片tiddlywiki的所有图片,
 点击即可放大图片(如果不起作用, 请刷新tiddlywiki使用)
 
+!! Note
+
+* 由于是动态给img加上一个父标签, 需要重新刷新当前界面，让插件重新渲染
+
 !! Test
 
 * nodejs tiddlywiki
