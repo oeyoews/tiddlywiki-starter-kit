@@ -10,3 +10,11 @@ $("img").each(function () {
     $(this).wrap(element);
 });`
 `</script>`
+
+`<script>
+$().fancybox({
+  selector: '[data-fancybox="gallary"]',
+  hash: false,
+  loop: true,
+});`
+`</script>`
