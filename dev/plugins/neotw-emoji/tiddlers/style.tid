@@ -6,6 +6,7 @@ title: $:/plugins/oeyoews/neotw-emoji/style
 .neotw-<<text>>:before {
 	content: "{{{ [[$:/plugins/oeyoews/neotw-emoji/dict]getindex<text>] }}}"
 }
+</$list>
 \end
 
 <<emojid """
