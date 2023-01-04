@@ -7,8 +7,9 @@ hide-body: yes
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.31/dist/fancybox.css">
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.31/dist/fancybox.umd.min.js"></script>
 
+<!-- disable zoom is true ??? -->
 <script>
-Fancybox.defaults.Image = { zoom: false };
+Fancybox.defaults.Image = { zoom: true };
 Fancybox.defaults.Hash = false;
 Fancybox.bind('[data-fancybox="gallery"]', {
   Thumbs: {
@@ -43,4 +44,8 @@ Fancybox.bind('[data-fancybox="gallery"]', {
     );
   },
 });
+</script>
+
+<script>
+console.log("%c🦊 Yay! Fancybox is working! 🎉", "background: linear-gradient(45deg, #fc466b, #3f5efb); color: black;border-radius: 3px;padding: 3px;")
 </script>
