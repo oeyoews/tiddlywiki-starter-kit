@@ -7,9 +7,9 @@ hide-body: yes
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.31/dist/fancybox.css">
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.31/dist/fancybox.umd.min.js"></script>
 
-<!-- bacause use macro, so this not work -->
-<!--
 <script>
+Fancybox.defaults.Image = { zoom: false };
+Fancybox.defaults.Hash = false;
 Fancybox.bind('[data-fancybox="gallery"]', {
   Thumbs: {
     autoStart: false,
@@ -44,4 +44,3 @@ Fancybox.bind('[data-fancybox="gallery"]', {
   },
 });
 </script>
--->
