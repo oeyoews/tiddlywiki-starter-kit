@@ -1,6 +1,7 @@
 title: $:/plugins/oeyoews/tiddlywiki-fancybox/style
 tags: $:/tags/Stylesheet
 
+<!-- not work ??? -->
 .fancybox__container {
   --fancybox-thumbs-border-radius: 50%;
   --fancybox-thumbs-ratio: 1;

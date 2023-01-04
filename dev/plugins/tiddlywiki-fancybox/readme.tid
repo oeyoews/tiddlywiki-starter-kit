@@ -56,3 +56,7 @@ https://lipsum.app/id/55/1200x675
 
 * `links` one or more https://xxx link
 * `width` default is 256
+
+!! Shortcuts
+
+* <kbd>t</kbd> toggle
