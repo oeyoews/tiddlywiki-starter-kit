@@ -41,13 +41,13 @@ https://lipsum.app/id/55/1200x675
 >>
 ```
 
+<center>
+<b>Fancybox Gallery Usage </b>
+</center>
+{{$:/plugins/oeyoews/tiddlywiki-fancybox/example2}}
+
 !! Local Image
 
 ```wikitext
 <<Fancybox "xxx.png">>
 ```
-
-<center>
-<b>Fancybox Gallery Usage </b>
-</center>
-{{$:/plugins/oeyoews/tiddlywiki-fancybox/example2}}
