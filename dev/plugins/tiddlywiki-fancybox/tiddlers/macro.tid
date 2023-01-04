@@ -5,7 +5,7 @@ tags: $:/tags/Macro
 
 \define Fancybox(links, width:256)
 <$list filter="[enlist<__links__>sort[]]" variable="link">
-	<a id="fancybox" href=<<link>> data-fancybox="gallary">
+	<a href=<<link>> data-fancybox="gallary">
     <$image source=<<link>> loading="lazy" tooltip=<<link>> width=$width$
     class="rounded"/>
 	</a>

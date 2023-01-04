@@ -1,7 +1,19 @@
 title: $:/plugins/oeyoews/tiddlywiki-fancybox/style
 tags: $:/tags/Stylesheet
 
-a#fancybox {
+.fancybox__container {
+  --fancybox-thumbs-border-radius: 50% !important;
+  --fancybox-thumbs-ratio: 1 !important;
+  --fancybox-thumbs-width: 50px !important;
+  --fancybox-thumbs-height: 50px !important;
+  --fancybox-accent-color: #F472B6 !important;
+}
+
+<!-- a#fancybox { -->
+<!--   text-decoration: none !important; -->
+<!-- } -->
+
+a[data-fancybox] {
   text-decoration: none !important;
 }
 
