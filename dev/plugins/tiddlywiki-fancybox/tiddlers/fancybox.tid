@@ -7,10 +7,8 @@ hide-body: yes
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.31/dist/fancybox.css">
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.31/dist/fancybox.umd.min.js"></script>
 
-<!-- if manual asign, this is not work because of load order -->
-<!-- Fancybox.defaults.Image = { zoom: false }; -->
-<!-- Fancybox.defaults.Hash = false; -->
-<!-- Fancybox.getInstance().getSlide().Panzoom.toggleZoom(); -->
+<!-- bacause use macro, so this not work -->
+<!--
 <script>
 Fancybox.bind('[data-fancybox="gallery"]', {
   Thumbs: {
@@ -46,3 +44,4 @@ Fancybox.bind('[data-fancybox="gallery"]', {
   },
 });
 </script>
+-->

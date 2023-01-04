@@ -1,0 +1,25 @@
+title: $:/plugins/oeyoews/neotw-gray-tw/status
+
+<$list filter="$:/status/neotw-gray-tw/mode" variable=".state">
+
+<!-- show -->
+<$reveal state=<<.state>> type="nomatch" text="show">
+
+<$fieldmangler tiddler="$:/plugins/oeyoews/neotw-grey-tw/style">
+	<$button set=<<.state>> setTo="show">Enable<$action-sendmessage $message="tm-add-tag" $param="$:/tags/Stylesheet"/>
+	</$button>
+</$fieldmangler>
+
+</$reveal>
+
+<!-- hide -->
+<$reveal state=<<.state>> type="match" text="show">
+
+<$fieldmangler tiddler="$:/plugins/oeyoews/neotw-grey-tw/style">
+	<$button set=<<.state>> setTo="hide">Disable<$action-sendmessage $message="tm-remove-tag" $param="$:/tags/Stylesheet"/>
+	</$button>
+</$fieldmangler>
+
+</$reveal>
+
+</$list>

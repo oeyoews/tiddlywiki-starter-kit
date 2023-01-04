@@ -1,6 +1,6 @@
 title: $:/plugins/oeyoews/tiddlywiki-fancybox/init
 type: application/javascript
-<!-- tags: $:/tags/RawMarkupWikified/BottomBody -->
+tags: $:/tags/RawMarkupWikified/BottomBody
 
 <!-- how to remove jq -->
 <!-- `<script> -->
@@ -13,14 +13,14 @@ type: application/javascript
 <!-- `</script>` -->
 
 <!-- no jq -->
-`<script>
-      const lables = document.querySelectorAll("img");
-      const elem = document.createElement("a");
-      lables.forEach((lable, index) => {
-        const elem = document.createElement("a");
-        elem.href = lable.getAttribute("src")
-        elem.setAttribute("data-fancybox", "gallary");
-        lable.parentNode.replaceChild(elem, lable);
-        elem.appendChild(lable);
-      });`
-`</script>`
+<!-- `<script> -->
+<!--       const lables = document.querySelectorAll("img"); -->
+<!--       const elem = document.createElement("a"); -->
+<!--       lables.forEach((lable, index) => { -->
+<!--         const elem = document.createElement("a"); -->
+<!--         elem.href = lable.getAttribute("src") -->
+<!--         elem.setAttribute("data-fancybox", "gallary"); -->
+<!--         lable.parentNode.replaceChild(elem, lable); -->
+<!--         elem.appendChild(lable); -->
+<!--       });` -->
+<!-- `</script>` -->
