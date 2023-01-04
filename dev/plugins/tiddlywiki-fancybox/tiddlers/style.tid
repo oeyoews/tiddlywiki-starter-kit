@@ -4,3 +4,7 @@ tags: $:/tags/Stylesheet
 a#fancybox {
   text-decoration: none !important;
 }
+
+.rounded {
+    border-radius: 0.25rem;
+}
