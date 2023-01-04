@@ -1,0 +1,11 @@
+{
+  "title": "$:/plugins/oeyoews/tiddlywiki-cplrc",
+  "description": "Upload Cpl Plugin File",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.2.3",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "Tiddlywiki Cplrc",
+  "list": "readme"
+}

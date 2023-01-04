@@ -1,0 +1,12 @@
+created: 20230104051417815
+creator: oeyoews
+modified: 20230104051446328
+modifier: oeyoews
+title: $:/plugins/oeyoews/tiddlywiki-fancybox/single
+type: text/vnd.tiddlywiki
+
+<<Fancybox """
+image.png
+https://gitlab.com/oeyoews/neotw/-/raw/main/img/fancybox4.png
+"""
+>>

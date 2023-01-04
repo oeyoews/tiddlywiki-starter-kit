@@ -1,0 +1,16 @@
+tags: $:/tags/PluginWiki
+title: $:/plugins/oeyoews/tiddlywiki-cplrc/cpl.info
+
+cpl.author: oeyoews
+cpl.core-version: >=5.2.2
+cpl.description:
+cpl.documentation: https://twms.vercel.app/
+cpl.name:
+cpl.plugin-type: plugin
+cpl.readme:
+cpl.source: https://twms.vercel.app/
+cpl.title: $:/plugins/oeyoews/
+cpl.uri: https://twms.vercel.app/index.html
+description: This is a cpl release template
+icon: 🎉
+page-cover:

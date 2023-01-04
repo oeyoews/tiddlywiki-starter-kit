@@ -1,0 +1,24 @@
+caption: 📢 cplrc
+description: Creat Cplrc
+tags: $:/tags/PageControls
+title: $:/plugins/oeyoews/tiddlywiki-cplrc/main
+
+\whitespace trim
+<$button tooltip="📢 Add plugin info to CPL wiki" aria-label="creat new cplrc" class=<<tv-config-toolbar-class>>>
+{{$:/plugins/oeyoews/cpl-info/icon}}
+
+<$list filter="[<tv-config-toolbar-text>match[yes]]">
+<span class="tc-btn-text">
+<$text text="creat cplrc"/>
+</span>
+</$list>
+
+<$action-createtiddler $basetitle={{{ [[oeyoews/]addsuffix<now YYYY0MM0DD0mm0ss0XXX>] }}} tags="$:/tags/PluginWiki" $template="$:/plugins/oeyoews/cpl-info/cpl.info">
+
+<$action-navigate $to=<<createTiddler-title>>/>
+
+<$action-sendmessage $message="tm-notify" $param="releaserc"/>
+
+</$action-createtiddler>
+
+</$button>
