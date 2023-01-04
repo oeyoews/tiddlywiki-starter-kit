@@ -1,6 +1,6 @@
 title: $:/plugins/oeyoews/tiddlywiki-fancybox/init
 type: application/javascript
-tags: $:/tags/RawMarkupWikified/BottomBody
+<!-- tags: $:/tags/RawMarkupWikified/BottomBody -->
 
 <!-- how to remove jq -->
 <!-- `<script> -->

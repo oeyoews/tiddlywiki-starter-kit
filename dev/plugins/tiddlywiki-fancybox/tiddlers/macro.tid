@@ -1,0 +1,11 @@
+title: $:/plugins/oeyoews/tiddlywiki-fancybox/macro
+tags: $:/tags/Macro
+
+\whitespace trim
+
+\define Fancybox(links)
+<$list filter="[enlist<__links__>sort[]]" variable="link">
+	<a href=<<link>> data-fancybox="gallary">
+		<img src=<<link>>/>
+	</a>
+\end

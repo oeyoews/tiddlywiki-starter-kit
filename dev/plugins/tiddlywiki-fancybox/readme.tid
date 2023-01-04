@@ -2,33 +2,46 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox/readme
 
 !! Readme
 
-* 只需要安装此插件即可， 无需额外配置， 自动识别图片tiddlywiki当前界面(不是所有)的所有图片,
-点击即可放大图片(如果不起作用, 请刷新tiddlywiki使用)，`updated time: 2023-01-03`, 后期更新说明请点击
+<!-- * 只需要安装此插件即可， 无需额外配置， 自动识别图片tiddlywiki当前界面(不是所有)的所有图片, -->
+<!-- 点击即可放大图片(如果不起作用, 请刷新tiddlywiki使用)， -->
+`updated time: 2023-01-03`, 后期更新说明请点击
 [[readme|https://oeyoewl.top/fancybox-gallery-tiddlywiki]]
 
-!! Note
+<!-- !! Note -->
 
-* 由于是动态给img加上一个父标签,
-只会渲染启动时识别到的img标签，如果导入新的图片或者打开新的含有图片的tiddler,
-则需要重新刷新当前界面，让插件重新渲染DOM
+<!-- * 由于是动态给img加上一个父标签, -->
+<!-- 只会渲染启动时识别到的img标签，如果导入新的图片或者打开新的含有图片的tiddler, -->
+<!-- 则需要重新刷新当前界面，让插件重新渲染DOM -->
 
 !! Demo
 
 * [[Demo|https://neotw.netlify.app/main.html#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-fancybox]]
+<<Fancybox "https://gitlab.com/oeyoews/neotw/-/raw/main/img/fancybox4.png" >>
 
-!! Test
-
-* nodejs tiddlywiki
-
+!! Usage
 <!-- * how to add refresh tip on tiddlywiki js?? -->
 <!-- <img src="https://gitlab.com/oeyoews/modern-tiddlydev/-/raw/main/static/fancybox-example.png"/> -->
-<img src="https://gitlab.com/oeyoews/neotw/-/raw/main/img/fancybox4.png"/>
+
+* Single Image
+
+```wikitext
+<<Fancybox "https://gitlab.com/oeyoews/neotw/-/raw/main/img/fancybox4.png" >>
+```
+
+<<Fancybox "https://gitlab.com/oeyoews/neotw/-/raw/main/img/fancybox4.png" >>
+
+* Gallary
+
+```wikitext
+<<Fancybox
+"""
+https://lipsum.app/id/66/1200x675
+https://lipsum.app/id/55/1200x675
+""""
+>>
+```
 
 <center>
-<b>Wiki Gallery</b>
+<b>Fancybox Gallery Usage </b>
 </center>
-{{$:/plugins/oeyoews/tiddlywiki-fancybox/example}}
-
-!! Bug Report
-
-* about me button have a bug
+{{$:/plugins/oeyoews/tiddlywiki-fancybox/example2}}

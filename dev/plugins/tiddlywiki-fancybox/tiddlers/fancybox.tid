@@ -1,4 +1,4 @@
-title: $:/plugins/oeyoews/tiddlywiki-fancybox/script
+title: $:/plugins/oeyoews/tiddlywiki-fancybox/fancybox
 type: application/javascript
 tags: $:/tags/RawMarkup
 hide-body: yes
@@ -7,10 +7,11 @@ hide-body: yes
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.31/dist/fancybox.css">
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.31/dist/fancybox.umd.min.js"></script>
 
-<script>
-Fancybox.defaults.Image = { zoom: false };
-Fancybox.defaults.Hash = false;
+<!-- if manual asign, this is not work because of load order -->
+<!-- Fancybox.defaults.Image = { zoom: false }; -->
+<!-- Fancybox.defaults.Hash = false; -->
 <!-- Fancybox.getInstance().getSlide().Panzoom.toggleZoom(); -->
+<script>
 Fancybox.bind('[data-fancybox="gallery"]', {
   Thumbs: {
     autoStart: false,
