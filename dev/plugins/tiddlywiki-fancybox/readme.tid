@@ -51,3 +51,18 @@ https://lipsum.app/id/55/1200x675
 ```wikitext
 <<Fancybox "xxx.png">>
 ```
+
+!! Fancybox Macro Parameters
+
+* `links` one or more https://xxx link
+* `width` default is 256
+
+!! Note
+
+* import global style for a tag(better ui for fancybox)
+
+```css
+a {
+  text-decoration: none !important
+}
+```

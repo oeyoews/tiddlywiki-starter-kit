@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/tiddlywiki-fancybox/style
+tags: $:/tags/Stylesheet
+
+a {
+  text-decoration: none !important
+}
