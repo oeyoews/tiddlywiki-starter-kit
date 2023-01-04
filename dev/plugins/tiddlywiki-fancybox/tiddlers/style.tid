@@ -1,18 +1,9 @@
 title: $:/plugins/oeyoews/tiddlywiki-fancybox/style
 tags: $:/tags/Stylesheet
 
-<!-- not work ??? -->
-.fancybox__container {
-  --fancybox-thumbs-border-radius: 50%;
-  --fancybox-thumbs-ratio: 1;
-  --fancybox-thumbs-width: 50px;
-  --fancybox-thumbs-height: 50px;
-  --fancybox-accent-color: #F472B6;
-}
-
 a[data-fancybox] {
   text-decoration: none !important;
-}
+}sty
 
 a[data-fancybox] img {
    border-radius: 0.25rem;
