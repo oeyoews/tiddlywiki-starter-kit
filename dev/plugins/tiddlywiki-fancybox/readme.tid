@@ -22,15 +22,15 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox/readme
 <!-- * how to add refresh tip on tiddlywiki js?? -->
 <!-- <img src="https://gitlab.com/oeyoews/modern-tiddlydev/-/raw/main/static/fancybox-example.png"/> -->
 
-* Single Image
+* [[Single Image|$:/plugins/oeyoews/tiddlywiki-fancybox/single]]
 
 ```wikitext
 <<Fancybox "https://gitlab.com/oeyoews/neotw/-/raw/main/img/fancybox4.png" >>
 ```
 
-<<Fancybox "https://gitlab.com/oeyoews/neotw/-/raw/main/img/fancybox4.png" >>
+{{$:/plugins/oeyoews/tiddlywiki-fancybox/single}}
 
-* Gallary
+* [[Gallary|$:/plugins/oeyoews/tiddlywiki-fancybox/example2]]
 
 ```wikitext
 <<Fancybox
