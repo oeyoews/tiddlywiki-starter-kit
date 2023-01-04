@@ -19,7 +19,6 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox/readme
 
 !! Usage
 <!-- * how to add refresh tip on tiddlywiki js?? -->
-<!-- <img src="https://gitlab.com/oeyoews/modern-tiddlydev/-/raw/main/static/fancybox-example.png"/> -->
 
 * [[Single Image|$:/plugins/oeyoews/tiddlywiki-fancybox/single]]
 
@@ -31,7 +30,7 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox/readme
 {{$:/plugins/oeyoews/tiddlywiki-fancybox/single}}
 </center>
 
-* [[Gallary|$:/plugins/oeyoews/tiddlywiki-fancybox/example2]]
+* [[Gallary|$:/plugins/oeyoews/tiddlywiki-fancybox/gallary]]
 
 ```wikitext
 <<Fancyboxs
@@ -47,7 +46,7 @@ https://lipsum.app/id/55/1200x675
 </center>
 
 <center>
-{{$:/plugins/oeyoews/tiddlywiki-fancybox/example2}}
+{{$:/plugins/oeyoews/tiddlywiki-fancybox/gallary}}
 </center>
 
 !! Local Image(WIP)

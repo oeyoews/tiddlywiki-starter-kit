@@ -3,18 +3,18 @@ tags: $:/tags/Macro
 
 \whitespace trim
 
-\define Fancyboxs(links, caption, width:256)
+\define Fancybox(links, caption, width:256)
 <$list filter="[enlist<__links__>sort[]]" variable="link">
-    <a href=<<link>> data-fancybox="gallary" data-caption="$caption$">
+    <a href=<<link>> data-fancybox=<<link>> data-caption="$caption$">
       <$image source=<<link>> loading="lazy" tooltip=<<link>> width=$width$
       />
     </a>
 </$list>
 \end
 
-\define Fancybox(links, caption, width:256)
+\define Fancyboxs(links, groupName, caption, width:256)
 <$list filter="[enlist<__links__>sort[]]" variable="link">
-    <a href=<<link>> data-fancybox=<<link>> data-caption="$caption$">
+    <a href=<<link>> data-fancybox="gallary-$groupName$" data-caption="$caption$">
       <$image source=<<link>> loading="lazy" tooltip=<<link>> width=$width$
       />
     </a>
