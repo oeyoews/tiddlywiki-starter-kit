@@ -27,7 +27,9 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox/readme
 <<Fancybox "https://gitlab.com/oeyoews/neotw/-/raw/main/img/fancybox4.png" >>
 ```
 
+<center>
 {{$:/plugins/oeyoews/tiddlywiki-fancybox/single}}
+</center>
 
 * [[Gallary|$:/plugins/oeyoews/tiddlywiki-fancybox/example2]]
 
@@ -42,8 +44,8 @@ https://lipsum.app/id/55/1200x675
 
 <center>
 <b>Fancybox Gallery Usage </b>
-</center>
 {{$:/plugins/oeyoews/tiddlywiki-fancybox/example2}}
+</center>
 
 !! Local Image
 
