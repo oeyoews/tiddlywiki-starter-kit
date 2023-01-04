@@ -9,60 +9,44 @@ hide-body: yes
 
 <!-- disable zoom is true ??? -->
 <script>
+Fancybox.defaults.Toolbar = {
+  display: [
+    { id: "prev", position: "center" },
+    { id: "counter", position: "center" },
+    { id: "next", position: "center" },
+    "zoom",
+    "slideshow",
+    "fullscreen",
+    "download",
+    "thumbs",
+    "close",
+  ],
+};
+Fancybox.defaults.fullscreen = {
+  autoStart: true,
+};
+Fancybox.defaults.Thumbs = {
+  autoStart: true,
+  key: "f",
+};
+Fancybox.defaults.keyboard = {
+  Delete: "close",
+  Escape: "close",
+  ["q"]: "close",
+  Backspace: "close",
+  PageUp: "next",
+  PageDown: "prev",
+  ["k"]: "prev",
+  ["p"]: "prev",
+  ArrowUp: "next",
+  ["j"]: "next",
+  ["n"]: "next",
+  ArrowDown: "prev",
+  ArrowRight: "next",
+  ArrowLeft: "prev",
+};
 Fancybox.defaults.Image = { zoom: false };
 Fancybox.defaults.Hash = false;
-<!-- not work ??? -->
-Fancybox.bind('[data-fancybox="gallery"]', {
-  <!-- debug -->
-  on: {
-          load: (fancybox, slide) => {
-            console.log(`#${slide.index} slide is loaded!`);
-            console.log(
-              `This slide is selected: ${
-                fancybox.getSlide().index === slide.index
-              }`
-            );
-          },
-        },
-  Thumbs: {
-    key: "f",
-    Carousel: {
-      Sync: {
-        friction: 0.9,
-      },
-    },
-    autoStart: false,
-    minSlideCount: 1,
-  },
-  Hash: false,
-  Image: {
-    zoom: false,
-    Panzoom: {
-      doubleClick: null
-    },
-  },
-  fullscreen: {
-    autoStart: true,
-  },
-  Toolbar: {
-    display: [
-      { id: "prev", position: "center" },
-      { id: "counter", position: "center" },
-      { id: "next", position: "center" },
-      "zoom",
-      "slideshow",
-      "fullscreen",
-      "download",
-      "thumbs",
-      "close",
-    ],
-  },
-  caption: function (fancybox, carousel, slide) {
-    return (
-      `${slide.index + 1} / ${carousel.slides.length} <br />` + slide.caption
-    );
-  },
-});
 </script>
 
 <!-- custom thumbnail -->

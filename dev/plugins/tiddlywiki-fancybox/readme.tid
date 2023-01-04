@@ -62,4 +62,7 @@ https://lipsum.app/id/55/1200x675
 
 !! Shortcuts
 
-* <kbd>t</kbd> toggle
+* <kbd>f</kbd> toggle thumbs
+* j / n  next image
+* k / p  prev image
+* q / esc / del close
