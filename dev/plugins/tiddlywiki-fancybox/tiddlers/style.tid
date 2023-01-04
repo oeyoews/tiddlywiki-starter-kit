@@ -2,21 +2,17 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox/style
 tags: $:/tags/Stylesheet
 
 .fancybox__container {
-  --fancybox-thumbs-border-radius: 50% !important;
-  --fancybox-thumbs-ratio: 1 !important;
-  --fancybox-thumbs-width: 50px !important;
-  --fancybox-thumbs-height: 50px !important;
-  --fancybox-accent-color: #F472B6 !important;
+  --fancybox-thumbs-border-radius: 50%;
+  --fancybox-thumbs-ratio: 1;
+  --fancybox-thumbs-width: 50px;
+  --fancybox-thumbs-height: 50px;
+  --fancybox-accent-color: #F472B6;
 }
-
-<!-- a#fancybox { -->
-<!--   text-decoration: none !important; -->
-<!-- } -->
 
 a[data-fancybox] {
   text-decoration: none !important;
 }
 
-.rounded {
-    border-radius: 0.25rem;
+a[data-fancybox] img {
+   border-radius: 0.25rem;
 }
