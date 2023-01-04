@@ -41,6 +41,12 @@ https://lipsum.app/id/55/1200x675
 >>
 ```
 
+!! Local Image
+
+```wikitext
+<<Fancybox "xxx.png">>
+```
+
 <center>
 <b>Fancybox Gallery Usage </b>
 </center>
