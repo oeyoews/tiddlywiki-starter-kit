@@ -55,12 +55,6 @@ https://lipsum.app/id/55/1200x675
 {{$:/plugins/oeyoews/tiddlywiki-fancybox/gallary}}
 </center>
 
-!! Local Image(WIP)
-
-```wikitext
-<<Fancybox "xxx.png">>
-```
-
 !! Fancybox Macro Parameters
 
 * `links` one or more https://xxx link
