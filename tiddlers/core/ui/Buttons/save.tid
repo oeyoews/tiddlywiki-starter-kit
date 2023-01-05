@@ -15,11 +15,6 @@ type: text/vnd.tiddlywiki
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
 {{$:/core/images/done-button}}
 </$list>
-<!--
-<$action-setfield
-    $tiddler="$:/state/notebook-sidebar"
-    $value="yes"/>
--->
 <$list filter="[<tv-config-toolbar-text>match[yes]]">
 <span class="tc-btn-text"><$text text={{$:/language/Buttons/Save/Caption}}/></span>
 </$list>

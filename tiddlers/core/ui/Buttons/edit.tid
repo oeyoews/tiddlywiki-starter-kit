@@ -13,11 +13,6 @@ type: text/vnd.tiddlywiki
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
 {{neotw/icon/neovim}}
 </$list>
-<!--
-<$action-setfield
-    $tiddler="$:/state/notebook-sidebar"
-    $value="no"/>
--->
 <$list filter="[<tv-config-toolbar-text>match[yes]]">
 <span class="tc-btn-text">
 <$text text={{$:/language/Buttons/Edit/Caption}}/>
