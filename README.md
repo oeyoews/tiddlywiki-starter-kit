@@ -6,7 +6,7 @@
 
 </div>
 
-## ❓ What's the neotw
+## What's the neotw
 
 > A modern style notebook based on tiddlywiki is v2 of the [tw5](https://github.com/oeyoews/tw5) repository
 
