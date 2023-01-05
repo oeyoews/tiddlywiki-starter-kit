@@ -1,7 +1,7 @@
 caption: Subtitle Template
 created: 20210611015734693
 creator: @oeyoews
-modified: 20220927041810455
+modified: 20230105112256747
 modifier: oeyoews
 tags: $:/tags/ViewTemplate
 title: $:/core/ui/ViewTemplate/subtitle
@@ -13,6 +13,7 @@ type: text/vnd.tiddlywiki
 <$list filter="[!is[system]all[current]has[modifier]]">
 <<emoji arrowright>>
 <$link to={{!!modifier}}>
+{{neotw/user-info2}}&nbsp;
 <$view field="modifier"/>
 </$link>
 </$list>

@@ -8,3 +8,12 @@ tags: $:/tags/Stylesheet
 .user-panel-avatar-56 img { width: 100%; height: auto; max-width: 56px; max-height: 56px; border-radius: 50%; aspect-ratio: 1 / 1; }
 
 .user-panel-avatar img { width: 100%; height: auto; max-width: 22px; max-height: 22px; border-radius: 50%; aspect-ratio: 1 / 1; }
+
+.user-panel-avatar2 img {
+    width: 100%;
+    height: auto;
+    max-width: 12px;
+    max-height: 22px;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+}

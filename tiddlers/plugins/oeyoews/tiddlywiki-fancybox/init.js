@@ -1,0 +1,23 @@
+<!-- how to remove jq -->
+<!-- `<script> -->
+<!-- $("img").each(function () { -->
+<!--     var element = document.createElement("a"); -->
+<!--     $(element).attr("data-fancybox", "gallery"); -->
+<!--     $(element).attr("href", $(this).attr("src")); -->
+<!--     $(this).wrap(element); -->
+<!-- }); -->
+<!-- `</script>` -->
+
+<!-- no jq -->
+<!-- just for local temporary, render again -->
+`<script>
+      const lables = document.querySelectorAll("img");
+      const elem = document.createElement("a");
+      lables.forEach((lable, index) => {
+        const elem = document.createElement("a");
+        elem.href = lable.getAttribute("src")
+        elem.setAttribute("data-fancybox", "gallary");
+        lable.parentNode.replaceChild(elem, lable);
+        elem.appendChild(lable);
+      });`
+`</script>`

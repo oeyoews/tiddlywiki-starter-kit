@@ -1,16 +1,16 @@
-created: 20220728151603887
+created: 20230105111923968
 creator: oeyoews
 description: show your information
-modified: 20230105112108905
+modified: 20230105111936785
 modifier: oeyoews
 tags: $:/tags/PageControls
-title: neotw/user-info
+title: neotw/user-info2
 type: text/vnd.tiddlywiki
 
 \whitespace trim
 <$button tooltip="About me" aria-label="" class=<<tv-config-toolbar-class>>>
 
-{{$:/UserPanel}}
+{{$:/UserPanel2}}
 
 <$action-navigate $to="oeyoews"/>
 
