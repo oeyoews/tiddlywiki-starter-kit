@@ -7,6 +7,7 @@ tags: $:/tags/Macro
 <$list filter="[enlist<__links__>sort[]]" variable="link">
     <a href=<<link>> data-fancybox=<<link>> data-caption="$caption$">
       <$image source=<<link>> loading="lazy" tooltip=<<link>> width=$width$
+      class="rounded"
       />
     </a>
 </$list>
@@ -16,6 +17,7 @@ tags: $:/tags/Macro
 <$list filter="[enlist<__links__>sort[]]" variable="link">
     <a href=<<link>> data-fancybox="gallary-$groupName$" data-caption="$caption$">
       <$image source=<<link>> loading="lazy" tooltip=<<link>> width=$width$
+      class="rounded"
       />
     </a>
 </$list>
