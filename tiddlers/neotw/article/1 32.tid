@@ -1,20 +1,28 @@
 created: 20230105170850721
 creator: oeyoews
-modified: 20230105172131502
+modified: 20230105183422062
 modifier: oeyoews
-tags: 
+tags: $:/tags/Macro
 title: neotw/article/1 32
 type: text/vnd.tiddlywiki
 
-\define I(image:"image.png") <<datauri $image$>>
-
-\define Fancybox(link)
-    <a 
-		href=<<qualify>> >
-      <$image
-      source=$link$/>
-    </a>
+\define I()
+<$macrocall $name="datauri" title="image.png" $output="text/plain"/>
 \end
 
-<<Fancybox "image.png">>
-<<qualify demo>>
+\define FancyboxTest()
+<a href=<<I>>
+>
+macro test
+</a>
+		
+\end
+
+
+\define test(one, two, three)
+$one$ $two$ $three$
+\end
+
+<<test two: hello, one: one, three: last>>
+
+<<FancyboxTest>>

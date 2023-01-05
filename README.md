@@ -99,3 +99,5 @@ The [makefile](makefile) file is used as the centeral configuration for `neotw`
 <img src="https://img.shields.io/badge/License-MIT-blueviolet.svg?style=for-the-badge&color=blue" alt="project-license">
 <img src="https://img.shields.io/badge/Status-DONE-blueviolet.svg?style=for-the-badge&logo=Chakra-Ui&color=90E59A&logoColor=green" alt="status" >
 </div>
+
+<!-- https://talk.tiddlywiki.org/t/how-to-pass-the-parameter-from-macrocall-to-js-macro/1363/5 -->
