@@ -6,7 +6,7 @@ title: $:/plugins/oeyoews/neotw-gray-tw/status
 <$reveal state=<<.state>> type="nomatch" text="show">
 
 <$fieldmangler tiddler="$:/plugins/oeyoews/neotw-grey-tw/style">
-	<$button set=<<.state>> setTo="show">Enable {{neotw/icon/approve}}<$action-sendmessage $message="tm-add-tag" $param="$:/tags/Stylesheet"/>
+	<$button set=<<.state>> setTo="show">Disable {{neotw/icon/warn}}<$action-sendmessage $message="tm-add-tag" $param="$:/tags/Stylesheet"/>
 	</$button>
 </$fieldmangler>
 
@@ -16,10 +16,13 @@ title: $:/plugins/oeyoews/neotw-gray-tw/status
 <$reveal state=<<.state>> type="match" text="show">
 
 <$fieldmangler tiddler="$:/plugins/oeyoews/neotw-grey-tw/style">
-	<$button set=<<.state>> setTo="hide">Disable {{neotw/icon/warn}}<$action-sendmessage $message="tm-remove-tag" $param="$:/tags/Stylesheet"/>
+	<$button set=<<.state>> setTo="hide">Enable {{neotw/icon/approve}}<$action-sendmessage $message="tm-remove-tag" $param="$:/tags/Stylesheet"/>
 	</$button>
 </$fieldmangler>
 
 </$reveal>
 
 </$list>
+<$button>
+  <$action-deletetiddler $tiddler="$:/plugins/oeyoews/neotw-grey-tw/style"/> Reset
+</$button>
