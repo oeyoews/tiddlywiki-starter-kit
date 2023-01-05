@@ -1,11 +1,13 @@
 created: 20220521171656845
 creator: oeyoews
-modified: 20230105134710911
+modified: 20230105142247339
 modifier: oeyoews
 tags: $:/tags/StartupAction
 title: neotw/actions/hide-show-sidebar-local
 type: text/vnd.tiddlywiki
 
-<$action-setfield
-    $tiddler="$:/state/notebook-sidebar"
-$value="yes"/>
+<$list filter="[{$:/info/url/protocol}prefix[http]]">
+	<$action-setfield
+			$tiddler="$:/state/notebook-sidebar"
+	$value="yes"/>
+</$list>
