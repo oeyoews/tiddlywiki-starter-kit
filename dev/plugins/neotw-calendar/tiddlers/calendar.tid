@@ -1,3 +1,5 @@
 title: $:/plugins/oeyoews/neotw-calendar/calendar
+tags: $:/tags/SideBar
+caption: Github Calendar
 
 <div class="calendar"></div>

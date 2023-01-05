@@ -1,5 +1,5 @@
 title: $:/plugins/oeyoews/neotw-calendar/style
-tags: $:/tags/Stylesheet
+<!-- tags: $:/tags/Stylesheet -->
 
 rect.ContributionCalendar-day[data-level='0'] {
     fill: #dddbdb;
