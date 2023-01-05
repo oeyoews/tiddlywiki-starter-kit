@@ -76,3 +76,7 @@ width: 256
 !! Links
 
 * fancybox: https://github.com/fancyapps/fancybox
+
+!! Note
+
+* support local svg at least

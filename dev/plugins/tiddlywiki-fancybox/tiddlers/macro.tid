@@ -18,3 +18,26 @@ tags: $:/tags/Macro
     </a>
 </$list>
 \end
+
+\define imagetobase64()  [{!!text}] [[;base64,]] [{!!type}] [[data:]] :and[reverse[]join[]]
+
+<!-- it slow and make tiddlywiki slow, so just use one image every times -->
+<!-- NOTE: cant have slash like xxx/image.png -->
+<!-- not support canonical_uri -->
+<!-- not recommend use this macro -->
+\define FancyboxL(link, width:256)
+<$let currentTiddler=$link$>
+  <a
+     data-fancybox=<<qualify>>
+     data-caption=$link$
+     href={{{ [subfilter<imagetobase64>] }}}
+     >
+    <$image
+      source=$link$
+      tooltip=$link$
+      loading="lazy"
+      width=$width$
+      class="rounded"/>
+  </a>
+</$let>
+\end
