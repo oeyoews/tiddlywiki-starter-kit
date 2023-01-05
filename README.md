@@ -13,7 +13,7 @@
 > Compare to `tw5`, `neotw` remove github pages deploy and related deploy, no pwa, image optimize, no mobile
 > optimize, and Maximize keep vanilla configuration etc, just for local, so it's more simplify, still worth trying
 
-## 🆕 Features
+## Features
 
 > No longer listed specifically, waiting for your exploration and discovery
 
