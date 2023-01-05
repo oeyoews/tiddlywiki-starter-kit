@@ -34,7 +34,7 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox/config
 
 <!-- <$list filter=<<mode>> variable=".state"> -->
 <!---->
-<!--   <!-- add  --> -->
+<!--   <!-- add  -->
 <!--   <$reveal state=<<.state>> type="nomatch" text="hide"> -->
 <!--     <$fieldmangler tiddler=<<tid>> > -->
 <!--       <$button set=<<.state>> setTo="hide">Enable Fancybox Global {{neotw/icon/approve}} -->
@@ -44,7 +44,7 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox/config
 <!--     </$fieldmangler> -->
 <!--   </$reveal> -->
 <!---->
-<!--   <!-- remove --> -->
+<!--   <!-- remove -->
 <!--   <$reveal state=<<.state>> type="match" text="hide"> -->
 <!--     <$fieldmangler tiddler=<<tid>> > -->
 <!--       <$button set=<<.state>> setTo="show">Disable Fancybox Global {{neotw/icon/warn}} -->
