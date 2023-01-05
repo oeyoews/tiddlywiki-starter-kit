@@ -1,6 +1,0 @@
-title: $:/plugins/oeyoews/neotw-notify/startup
-tags: $:/tags/RawMarkup
-
-<script>
-{{$:/plugins/oeyoews/neotw-notify/config-js}}
-</script>
