@@ -4,9 +4,12 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox/readme
 
 <!-- * 只需要安装此插件即可， 无需额外配置， 自动识别图片tiddlywiki当前界面(不是所有)的所有图片, -->
 <!-- 点击即可放大图片(如果不起作用, 请刷新tiddlywiki使用)， -->
-`updated time: 2023-01-05`, 后期更新说明请点击
-[[readme|https://oeyoewl.top/fancybox-gallery-tiddlywiki]]
+`Updated Time:  2023-01-05 11:34:43+0800`
+ <!-- 后期更新说明请点击 [[readme|https://oeyoewl.top/fancybox-gallery-tiddlywiki]] -->
 
+!! Features
+
+* support download images, fullscreen, custom style and shortcuts,
 <!-- !! Note -->
 
 <!-- * 由于是动态给img加上一个父标签, -->
