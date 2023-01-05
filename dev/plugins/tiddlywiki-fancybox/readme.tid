@@ -38,7 +38,7 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox/readme
 * [[Gallary|$:/plugins/oeyoews/tiddlywiki-fancybox/gallary]]
 
 ```wikitext
-<<Fancyboxs
+<<Fancybox
 """
 https://lipsum.app/id/66/1200x675
 https://lipsum.app/id/55/1200x675
@@ -60,6 +60,7 @@ width: 256
 
 * `links` one or more https://xxx link
 * `width` default is 256
+* `caption`
 
 !! Shortcuts
 
@@ -67,6 +68,10 @@ width: 256
 * j / n  next image
 * k / p  prev image
 * q / esc / del close
+
+!! Local Image
+
+<!-- <<FancyboxL "image.png">> -->
 
 !! Links
 

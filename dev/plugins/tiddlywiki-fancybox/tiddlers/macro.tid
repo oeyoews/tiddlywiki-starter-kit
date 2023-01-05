@@ -8,23 +8,7 @@ tags: $:/tags/Macro
     <a
       href=<<link>>
       data-fancybox=<<qualify>>
-      data-caption="$caption$">
-      <$image
-        source=<<link>>
-        loading="lazy"
-        tooltip=<<link>>
-        width=$width$
-        class="rounded"/>
-    </a>
-</$list>
-\end
-
-\define Fancyboxs(links, caption, width:256)
-<$list filter="[enlist<__links__>sort[]]" variable="link">
-    <a
-      href=<<link>>
-      data-fancybox=<<qualify>>
-      data-caption="$caption$">
+      data-caption=$caption$>
       <$image
         source=<<link>>
         loading="lazy"
