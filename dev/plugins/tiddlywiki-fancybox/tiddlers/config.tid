@@ -9,7 +9,7 @@ title: $:/plugins/oeyoews/tiddlywiki-fanncybox/config
   <!-- add  -->
   <$reveal state=<<.state>> type="nomatch" text="hide">
     <$fieldmangler tiddler=<<tid>> >
-      <$button set=<<.state>> setTo="hide">Enable {{neotw/icon/approve}}
+      <$button set=<<.state>> setTo="hide">Enable Fancybox Global {{neotw/icon/approve}}
         <$action-sendmessage $message="tm-add-tag" $param=<<tag>>/>
       </$button>
     </$fieldmangler>
@@ -18,7 +18,7 @@ title: $:/plugins/oeyoews/tiddlywiki-fanncybox/config
   <!-- remove -->
   <$reveal state=<<.state>> type="match" text="hide">
     <$fieldmangler tiddler=<<tid>> >
-      <$button set=<<.state>> setTo="show">Disable {{neotw/icon/warn}}
+      <$button set=<<.state>> setTo="show">Disable Fancybox Global {{neotw/icon/warn}}
         <$action-sendmessage $message="tm-remove-tag" $param=<<tag>>/>
       </$button>
     </$fieldmangler>
@@ -26,6 +26,7 @@ title: $:/plugins/oeyoews/tiddlywiki-fanncybox/config
 
 </$list>
 
+<!-- add config -->
 <$button>
-  <$action-deletetiddler $tiddler=<<tid>>/> Reset {{neotw/icon/reset}}
+  <$action-deletetiddler $tiddler=<<tid>>/> Reset Fancybox Configuration {{neotw/icon/reset}}
 </$button>
