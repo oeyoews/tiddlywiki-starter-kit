@@ -75,7 +75,8 @@ The [makefile](makefile) file is used as the centeral configuration for `neotw`
 - 🏠 http://oeyoewl.top
 - 😺 https://oeyoews.github.io/neotw
 - 🦿 https://neotw.tiddlyhost.com
-- 🌋 https://neotw.vercel.app(support multi plugin version)
+- 🌋 https://neotw.vercel.app
+<!-- (support multi plugin version) -->
 - 🤺 https://neotw.netlify.app/
 
 ---
