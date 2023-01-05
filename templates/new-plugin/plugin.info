@@ -3,7 +3,7 @@
   "description": "${description}",
   "author": "${username}",
   "version": "0.0.1",
-  "core-version": ">=5.2.3",
+  "core-version": ">=5.2.5",
   "type": "application/json",
   "plugin-type": "plugin",
   "name": "${upperpluginname}",

@@ -1,4 +1,4 @@
-title: $:/plugins/oeyoews/tiddlywiki-fanncybox/status
+title: $:/plugins/oeyoews/tiddlywiki-fanncybox/config
 
 \define tid() $:/plugins/oeyoews/tiddlywiki-fancybox/init
 \define tag() $:/tags/RawMarkupWikified/BottomBody
@@ -8,7 +8,7 @@ title: $:/plugins/oeyoews/tiddlywiki-fanncybox/status
 
   <!-- add  -->
   <$reveal state=<<.state>> type="nomatch" text="hide">
-    <$fieldmangler tiddler=<<tid>>
+    <$fieldmangler tiddler=<<tid>> >
       <$button set=<<.state>> setTo="hide">Enable {{neotw/icon/approve}}
         <$action-sendmessage $message="tm-add-tag" $param=<<tag>>/>
       </$button>
@@ -17,7 +17,7 @@ title: $:/plugins/oeyoews/tiddlywiki-fanncybox/status
 
   <!-- remove -->
   <$reveal state=<<.state>> type="match" text="hide">
-    <$fieldmangler tiddler=<<tid>>>
+    <$fieldmangler tiddler=<<tid>> >
       <$button set=<<.state>> setTo="show">Disable {{neotw/icon/warn}}
         <$action-sendmessage $message="tm-remove-tag" $param=<<tag>>/>
       </$button>
@@ -27,5 +27,5 @@ title: $:/plugins/oeyoews/tiddlywiki-fanncybox/status
 </$list>
 
 <$button>
-  <$action-deletetiddler $tiddler=<<tid>>/> Reset
+  <$action-deletetiddler $tiddler=<<tid>>/> Reset {{neotw/icon/reset}}
 </$button>
