@@ -1,4 +1,4 @@
-title: $:/plugins/oeyoews/tiddlywiki-fanncybox/config
+title: $:/plugins/oeyoews/tiddlywiki-fancybox/config
 
 \define tid() $:/plugins/oeyoews/tiddlywiki-fancybox/init
 \define tag() $:/tags/RawMarkupWikified/BottomBody
