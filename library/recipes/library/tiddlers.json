@@ -23,7 +23,7 @@
         "author": "oeyoews",
         "list": "readme",
         "dependents": "",
-        "readme": "!! WIP\n\n* still have some bug(this load order), on localhost is perfact\n",
+        "readme": "!! WIP\n\n* still have some bug(this load order), on localhost is perfact\n\n* https://github.com/Bloggify/github-calendar\n",
         "requires-reload": "no"
     },
     {
