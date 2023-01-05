@@ -23,7 +23,7 @@ Fancybox.defaults.Toolbar = {
   ],
 };
 Fancybox.defaults.fullscreen = {
-  autoStart: true,
+  autoStart: false,
 };
 Fancybox.defaults.Thumbs = {
   autoStart: true,

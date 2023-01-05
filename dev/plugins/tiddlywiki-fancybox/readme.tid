@@ -17,6 +17,9 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox/readme
 
 * [[Demo|https://neotw.netlify.app/main.html#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-fancybox]]
 
+!! Source
+
+* [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-fancybox]]
 !! Usage
 <!-- * how to add refresh tip on tiddlywiki js?? -->
 
