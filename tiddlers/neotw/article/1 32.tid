@@ -1,0 +1,20 @@
+created: 20230105170850721
+creator: oeyoews
+modified: 20230105172131502
+modifier: oeyoews
+tags: 
+title: neotw/article/1 32
+type: text/vnd.tiddlywiki
+
+\define I(image:"image.png") <<datauri $image$>>
+
+\define Fancybox(link)
+    <a 
+		href=<<qualify>> >
+      <$image
+      source=$link$/>
+    </a>
+\end
+
+<<Fancybox "image.png">>
+<<qualify demo>>
