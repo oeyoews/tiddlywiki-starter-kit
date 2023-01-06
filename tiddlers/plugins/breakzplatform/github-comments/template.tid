@@ -1,6 +1,6 @@
-created: 20230106085214673
+created: 20230106094223966
 creator: oeyoews
-modified: 20230106090818991
+modified: 20230106094231300
 modifier: oeyoews
 tags: $:/tags/ViewTemplate
 title: $:/plugins/breakzplatform/github-comments/template
@@ -12,7 +12,6 @@ type: text/vnd.tiddlywiki
 			@@.breakzplatform-github-comments-toggle
 				<$button class="tc-btn-invisible" set=<<stateTiddler>> setTo=<<currentTiddler>> >
 					{{$:/core/images/down-arrow}}
-					{{neotw/icon/comment}}
 					{{$:/config/breakzplatform/github-comments/label-show}}
 				</$button>
 			@@
@@ -21,7 +20,6 @@ type: text/vnd.tiddlywiki
 			@@.breakzplatform-github-comments-toggle
 				<$button class="tc-btn-invisible" set=<<stateTiddler>> setTo="">
 					{{$:/core/images/up-arrow}}
-					{{neotw/icon/comment-close}}
 					{{$:/config/breakzplatform/github-comments/label-hide}}
 				</$button>
 			@@
