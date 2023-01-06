@@ -1,6 +1,7 @@
 tags: $:/tags/Stylesheet
 title: neotw/style/readonly
 
+<!-- this order should put last, not suitable in plugin -->
 <$list filter="[{$:/info/url/protocol}prefix[https]]">
 	 .tc-tags-wrapper, .tc-tiddler-controls { display: none; }
 </$list>
