@@ -186,6 +186,20 @@
         "requires-reload": "yes"
     },
     {
+        "title": "$:/plugins/oeyoews/slider",
+        "description": "Super Fast And Lightweight Slider And Carousel That Is Heavily Customizable Via Css And Html.",
+        "author": "oeyoews",
+        "version": "0.0.1",
+        "core-version": ">=5.2.5",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "Slider",
+        "list": "readme",
+        "dependents": "",
+        "readme": "* Super Fast And Lightweight Slider And Carousel That Is Heavily Customizable Via Css And Html.\n",
+        "requires-reload": "no"
+    },
+    {
         "title": "$:/plugins/oeyoews/tiddlywiki-cplrc",
         "description": "Upload Cpl Plugin File",
         "author": "oeyoews",
