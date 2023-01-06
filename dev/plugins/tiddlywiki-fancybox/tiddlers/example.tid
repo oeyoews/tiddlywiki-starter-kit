@@ -1,0 +1,56 @@
+title: $:/plugins/oeyoews/tiddlywiki-fancybox/example
+
+```wikitext
+<<Fancybox "https://gitlab.com/oeyoews/neotw/-/raw/main/img/fancybox4.png" >>
+```
+
+<center>
+  <<Fancybox "https://gitlab.com/oeyoews/neotw/-/raw/main/img/fancybox4.png"
+  "Single Example">>
+</center>
+
+```wikitext
+<<Fancybox
+"""
+https://lipsum.app/id/77/1200x675
+https://lipsum.app/id/66/1200x675
+https://lipsum.app/id/55/1200x675
+"""
+caption: "xxx"
+width: 256
+>>
+```
+
+<center>
+  <b>Fancybox Gallery Usage </b>
+</center>
+
+<center>
+  <<Fancybox
+  """
+  https://lipsum.app/id/77/1200x675
+  https://lipsum.app/id/66/1200x675
+  https://lipsum.app/id/55/1200x675
+  """
+  caption: "Group Gallary"
+  group: "Gallary"
+  width: 300
+  >>
+</center>
+
+!! Fancybox Macro Parameters
+
+* `links` one or more https://xxx link
+* `width` default is 256
+* `caption`
+
+!! Shortcuts
+
+* <kbd>f</kbd> toggle thumbs
+* j / n  next image
+* k / p  prev image
+* q / esc / del close
+
+!! Local Image
+
+<!-- <<FancyboxL "image.png">> -->
