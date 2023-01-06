@@ -2,7 +2,7 @@ created: 20221117023811761
 creator: oeyoews
 icon: 
 list: 
-modified: 20230106093623382
+modified: 20230106100415874
 modifier: oeyoews
 page-cover: 
 tags: 
@@ -14,13 +14,27 @@ type: text/vnd.tiddlywiki
 {{neotw/article/gradient-icon}}
 </span>
 
+<center>
 {{neotw/logo}}
-{{neotw/button/mode}}
+</center>
+
+<center>
+<<Fancybox
+"""
+https://lipsum.app/id/77/1200x675
+https://lipsum.app/id/66/1200x675
+https://lipsum.app/id/55/1200x675
+"""
+caption: "Gallary"
+width: 256
+>>
+</center>
 
 <center>
 	{{neotw/browser/tip}}
 	{{$:/state/git/commit}}
 	<hr>
+{{neotw/button/mode}}
 	{{neotw/badges}}
 </center>
 
