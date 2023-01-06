@@ -1,8 +1,9 @@
 title: $:/plugins/oeyoews/neotw-music/js/meting-js
-tags: $:/tags/RawMarkup
+<!-- tags: $:/tags/RawMarkup -->
+tags: $:/tags/RawMarkupWikified/BottomBody
 type: application/javascript
 
-<script>
+`<script>
 class MetingJSElement extends HTMLElement {
 
   connectedCallback() {
@@ -145,5 +146,5 @@ console.log("%c 🎶 MetingJS(TWM) v2.0.1 🎉", "background: linear-gradient(to
 if (window.customElements && !window.customElements.get('meting-js')) {
   window.MetingJSElement = MetingJSElement
   window.customElements.define('meting-js', MetingJSElement)
-}
-</script>
+}`
+`</script>`
