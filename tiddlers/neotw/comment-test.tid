@@ -1,9 +1,11 @@
 created: 20230106094309776
 creator: oeyoews
-modified: 20230106094537443
+modified: 20230106094641148
 modifier: oeyoews
 tags: 
 title: neotw/comment-test
 type: text/vnd.tiddlywiki
 
 The comment is here [[issue#8|https://github.com/oeyoews/comments/issues/8]] <<emoji dot-online>>
+
+{{neotw/button/mode}}
