@@ -13,5 +13,5 @@ source=("https://github.com/tiddly-gittly/TidGi-Desktop/releases/download/v${pkg
 md5sums=('SKIP')
 
 package() {
-	bsdtar -xf data.tar.xz -C "$pkgdir/"
+	bsdtar -xf data.tar.zst -C "$pkgdir/"
 }
