@@ -1,5 +1,12 @@
 title: $:/plugins/oeyoews/tiddlywiki-fancybox/example
 
+!! Local Image
+
+<center>
+  <<FancyboxL "test-fancybox.png">>
+</center>
+
+!! Online Images
 <center>
   <b>Fancybox Single Image</b>
 </center>
@@ -62,7 +69,3 @@ width: 256
 * j / n  next image
 * k / p  prev image
 * q / esc / del close
-
-!! Local Image
-
-<!-- <<FancyboxL "image.png">> -->

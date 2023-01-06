@@ -29,7 +29,7 @@ tags: $:/tags/Macro
 <$let currentTiddler=$link$>
   <a
      data-fancybox=<<qualify>>
-     data-caption=$link$
+     data-caption="""$link$"""
      href={{{ [subfilter<imagetobase64>] }}}
      >
     <$image
