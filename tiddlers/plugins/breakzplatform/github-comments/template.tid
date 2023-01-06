@@ -1,0 +1,35 @@
+created: 20230106085214673
+creator: oeyoews
+modified: 20230106090818991
+modifier: oeyoews
+tags: $:/tags/ViewTemplate
+title: $:/plugins/breakzplatform/github-comments/template
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]subfilter{$:/config/breakzplatform/github-comments/filter}]" variable="doNotOverrideCurrent">
+	<$set name="stateTiddler" value="$:/state/breakzplatform/github-comments">
+		<$reveal type="nomatch" state=<<stateTiddler>> text=<<currentTiddler>>>
+			@@.breakzplatform-github-comments-toggle
+				<$button class="tc-btn-invisible" set=<<stateTiddler>> setTo=<<currentTiddler>> >
+					{{$:/core/images/down-arrow}}
+					{{neotw/icon/comment}}
+					{{$:/config/breakzplatform/github-comments/label-show}}
+				</$button>
+			@@
+		</$reveal>
+		<$reveal type="match" state=<<stateTiddler>> text=<<currentTiddler>>>
+			@@.breakzplatform-github-comments-toggle
+				<$button class="tc-btn-invisible" set=<<stateTiddler>> setTo="">
+					{{$:/core/images/up-arrow}}
+					{{neotw/icon/comment-close}}
+					{{$:/config/breakzplatform/github-comments/label-hide}}
+				</$button>
+			@@
+
+			<div class="gh-comments-wrapper"></div>
+
+			<$macrocall $name="github-comments" current=<<currentTiddler>>/>
+
+		</$reveal>
+	</$set>
+</$list>
