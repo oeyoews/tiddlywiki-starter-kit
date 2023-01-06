@@ -1,11 +1,12 @@
 created: 20220921050229586
 creator: oeyoews
-modified: 20220921050314789
+modified: 20230106111930827
 modifier: oeyoews
-tags: $:/tags/Stylesheet
+tags: 
 title: neotw/style/fix-title-too-long
 type: text/vnd.tiddlywiki
 
+<!-- not suit ios -->
 .tc-tiddler-view-frame .tc-titlebar {
    display: flex;
    flex-direction: row-reverse;
