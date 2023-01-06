@@ -25,6 +25,7 @@ tags: $:/tags/Macro
 <!-- NOTE: cant have slash like xxx/image.png -->
 <!-- not support canonical_uri -->
 <!-- not recommend use this macro -->
+<!-- not support files image -->
 \define FancyboxL(link, width:256)
 <$let currentTiddler=$link$>
   <a

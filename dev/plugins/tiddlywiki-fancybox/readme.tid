@@ -37,3 +37,7 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox/readme
 !! Note
 
 * not support local svg at least
+
+!! TODO
+
+* use widget instead macro
