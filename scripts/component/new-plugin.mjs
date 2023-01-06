@@ -25,7 +25,7 @@ export default async function newPlugin() {
     {
       type: 'toggle',
       name: 'newPluginStatus',
-      message: 'Are you sure to Creat this new plugin',
+      message: 'Are you sure to Create this new plugin',
       initial: true,
       inactive: 'no',
       active: 'yes',
