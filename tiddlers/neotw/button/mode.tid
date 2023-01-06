@@ -1,25 +1,30 @@
 created: 20220910042749958
 creator: oeyoews
-modified: 20220910053342949
+modified: 20230106093844383
 modifier: oeyoews
 tags: 
 title: neotw/button/mode
 type: text/vnd.tiddlywiki
 
-<$list filter="[{$:/info/url/protocol}prefix[https]]"> 
-<$list filter="$:/status/neotw/mode" variable=".state">
-<$reveal state=<<.state>> type="nomatch" text="show">
+\define tag() $:/tags/Stylesheet
+\define tid() neotw/style/readonly
 
-<$fieldmangler tiddler="neotw/style/readonly">
-	<$button set=<<.state>> setTo="show">Show<$action-sendmessage $message="tm-remove-tag" $param="$:/tags/Stylesheet"/>
-	</$button>
-</$fieldmangler>
-</$reveal>
-<$reveal state=<<.state>> type="match" text="show">
-<$fieldmangler tiddler="neotw/style/readonly">
-	<$button set=<<.state>> setTo="hide">Hide<$action-sendmessage $message="tm-add-tag" $param="$:/tags/Stylesheet"/>
-	</$button>
-</$fieldmangler>
-</$reveal>
-</$list>
+<$list filter="$:/status/neotw/mode" variable=".state">
+
+  <$reveal state=<<.state>> type="nomatch" text="show">
+    <$fieldmangler tiddler=<<tid>>>
+      <$button set=<<.state>> setTo="show">ReadMode {{neotw/icon/book}}
+        <$action-sendmessage $message="tm-remove-tag" $param=<<tag>>/>
+      </$button>
+    </$fieldmangler>
+  </$reveal>
+
+  <$reveal state=<<.state>> type="match" text="show">
+    <$fieldmangler tiddler=<<tid>>>
+      <$button set=<<.state>> setTo="hide">EditMode {{neotw/icon/pen}}
+        <$action-sendmessage $message="tm-add-tag" $param=<<tag>>/>
+      </$button>
+    </$fieldmangler>
+  </$reveal>
+
 </$list>

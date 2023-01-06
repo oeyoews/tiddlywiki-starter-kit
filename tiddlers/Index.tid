@@ -2,7 +2,7 @@ created: 20221117023811761
 creator: oeyoews
 icon: 
 list: 
-modified: 20230106091657784
+modified: 20230106093623382
 modifier: oeyoews
 page-cover: 
 tags: 
@@ -15,6 +15,7 @@ type: text/vnd.tiddlywiki
 </span>
 
 {{neotw/logo}}
+{{neotw/button/mode}}
 
 <center>
 	{{neotw/browser/tip}}
