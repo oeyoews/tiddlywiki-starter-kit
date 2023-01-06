@@ -42,3 +42,13 @@ tags: $:/tags/Macro
   </a>
 </$let>
 \end
+
+<!-- \define Carousel(links) -->
+<!-- <div class="carousel"> -->
+<!--   <$list filter="[enlist<__links__>]" variable="link"> -->
+<!--     <div class="carousel__slide"> -->
+<!--       <img src=<<link>> width="512" /> -->
+<!--     </div> -->
+<!--   </$list> -->
+<!-- </div> -->
+<!-- \end -->

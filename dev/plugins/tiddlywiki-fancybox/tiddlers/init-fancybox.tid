@@ -45,3 +45,6 @@ Fancybox.defaults.keyboard = {
 Fancybox.defaults.Image = { zoom: false };
 Fancybox.defaults.Hash = false;`
 `</script>`
+
+<!-- `<script>const myCarousel = new Carousel(document.querySelector(".carousel"), {});` -->
+<!-- `</script>` -->
