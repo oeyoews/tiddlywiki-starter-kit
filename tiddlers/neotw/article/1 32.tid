@@ -1,0 +1,15 @@
+created: 20230106041607966
+creator: oeyoews
+modified: 20230106042757648
+modifier: oeyoews
+tags: 
+title: neotw/article/1 32
+type: text/vnd.tiddlywiki
+
+\define test(para, first) 
+<<qualify """$para$""">>
+<<qualify $first$>>
+<<qualify "space space">>
+\end
+
+<<test  para: "para test" first: "first test">>

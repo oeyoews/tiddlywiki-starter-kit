@@ -1,12 +1,25 @@
 title: $:/plugins/oeyoews/tiddlywiki-fancybox/example
 
+<center>
+  <b>Fancybox Single Image</b>
+</center>
+
 ```wikitext
-<<Fancybox "https://gitlab.com/oeyoews/neotw/-/raw/main/img/fancybox4.png" >>
+<<Fancybox "https://lipsum.app/id/66/1200x675" >>
 ```
 
 <center>
-  <<Fancybox "https://gitlab.com/oeyoews/neotw/-/raw/main/img/fancybox4.png"
-  "Single Example">>
+  <<Fancybox "https://lipsum.app/id/66/1200x675"
+  caption: "First Image"
+  group: "first"
+  >>
+</center>
+
+<center>
+  <<Fancybox "https://lipsum.app/id/77/1200x675"
+  caption: "Second Image"
+  group: "second"
+  >>
 </center>
 
 ```wikitext
@@ -32,8 +45,7 @@ width: 256
   https://lipsum.app/id/66/1200x675
   https://lipsum.app/id/55/1200x675
   """
-  caption: "Group Gallary"
-  group: "Gallary"
+  group: "Gallary Group"
   width: 300
   >>
 </center>

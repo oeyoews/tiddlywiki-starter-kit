@@ -7,8 +7,8 @@ tags: $:/tags/Macro
 <$list filter="[enlist<__links__>]" variable="link">
     <a
       href=<<link>>
-      data-fancybox=<<qualify $group$>>
-      data-caption=$caption$>
+      data-fancybox=<<qualify  """$group$""">>
+      data-caption="""$caption$""">
       <$image
         source=<<link>>
         loading="lazy"
