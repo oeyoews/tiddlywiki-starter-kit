@@ -6,19 +6,7 @@ title: $:/plugins/oeyoews/slider/macro
       <ul class="slider-container">
         <li>
           <img
-            src="https://source.unsplash.com/49b9l_29ceA/1600x900"
-            style="max-width: 100%; height: auto"
-          />
-        </li>
-        <li>
-          <img
-            src="https://source.unsplash.com/nKAglN6HBH8/1600x900"
-            style="max-width: 100%; height: auto"
-          />
-        </li>
-        <li>
-          <img
-            src="https://source.unsplash.com/E9ZwWcMGzj8/1600x900"
+            src=<<img>>
             style="max-width: 100%; height: auto"
           />
         </li>
@@ -32,6 +20,7 @@ title: $:/plugins/oeyoews/slider/macro
         <button></button>
         <button></button>
       </div>
-    </div>
+
+ </div>
 
 \end
