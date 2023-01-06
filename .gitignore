@@ -31,3 +31,4 @@ PluginName*
 .idea
 *.tgz
 tiddlers/layout.tid
+tiddlers/**/readonly.tid
