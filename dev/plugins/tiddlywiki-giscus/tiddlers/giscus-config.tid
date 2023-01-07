@@ -1,0 +1,38 @@
+title: $:/plugins/oeyoews/tiddlywiki-giscus/giscus-config
+
+<!-- The config output is not written to this tiddler! -->
+
+You may have to save and reload the wiki to activate changes. [[get parameter|giscus|https://giscus.app/zh-CN]]
+
+<table>
+  <tr>
+    <th align="left">Repo:</th>
+    <td>
+      <$edit-text
+          tiddler="$:/plugins/oeyoews/tiddlywiki-giscus/config"
+          field="repo"
+          tag="input"
+          default="" />
+    </td>
+  </tr>
+  <tr>
+    <th align="left">Reop Id:</th>
+    <td>
+      <$edit-text
+          tiddler="$:/plugins/oeyoews/tiddlywiki-giscus/config"
+          field="repo-id"
+          tag="input"
+          default="" />
+    </td>
+  </tr>
+  <tr>
+    <th align="left">Category Id:</th>
+    <td>
+      <$edit-text
+          tiddler="$:/plugins/oeyoews/tiddlywiki-giscus/config"
+          field="category-id"
+          tag="input"
+          default="" />
+    </td>
+  </tr>
+</table>
