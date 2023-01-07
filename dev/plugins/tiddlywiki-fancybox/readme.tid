@@ -36,6 +36,8 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox/readme
 
 !! Note
 
+* if you use splashscreen, please remove `remove-when-wiki-loaded` class,
+otherwise this plugin will not work normally [[warn|https://github.com/Jermolene/TiddlyWiki5/search?q=tc-remove-when-wiki-loaded]]
 * not support local svg at least
 
 !! TODO
