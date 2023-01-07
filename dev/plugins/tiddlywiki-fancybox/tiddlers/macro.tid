@@ -26,10 +26,10 @@ tags: $:/tags/Macro
 <!-- not support canonical_uri -->
 <!-- not recommend use this macro -->
 <!-- not support files image -->
-\define FancyboxL(link, width:256)
+\define FancyboxL(link, group, width:256)
 <$let currentTiddler=$link$>
   <a
-     data-fancybox=<<qualify>>
+     data-fancybox="""$group$"""
      data-caption="""$link$"""
      href={{{ [subfilter<imagetobase64>] }}}
      >
