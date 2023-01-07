@@ -1,0 +1,34 @@
+caption: utteranc config
+created: 20230107184610303
+creator: oeyoews
+modified: 20230107184629849
+modifier: oeyoews
+repo: oeyoews/comments
+title: $:/plugins/oeyoews/tiddlywiki-utteranc/config
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+
+\define tid() $:/plugins/oeyoews/tiddlywiki-utteranc/config
+
+<table>
+  <tr>
+
+    <th align="left">Github Repo Link:</th>
+    <td>
+      <$edit-text
+          tiddler=<<tid>>
+          placeholder="username/reponame"
+          field="repo"
+          tag="input"
+          default="" />
+    </td>
+    <td>
+      <$button>
+        Reset Config
+        <$action-deletetiddler $tiddler=<<tid>>/>
+      </$button>
+    </td>
+
+ </tr>
+</table>

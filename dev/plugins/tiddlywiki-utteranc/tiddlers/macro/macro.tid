@@ -27,14 +27,17 @@ type: application/javascript
 		if (currentGhCommentsEL !== null) {
 			currentGhCommentsEL.remove()
 		}
+    var configUtterancTiddler = "$:/plugins/oeyoews/tiddlywiki-utteranc/config"
+    var configUtteranc = $tw.wiki.getTiddler(configUtterancTiddler)
+    var config = configUtteranc ? configUtteranc.fields : {};
 
 		/* Load Utteranc.es */
-		const script = document.createElement('script');
+		var script = document.createElement('script');
 		script.async = true
 		script.src = 'https://utteranc.es/client.js'
-		script.setAttribute('repo', "oeyoews/comments" || $tw.wiki.getTiddlerText('$:/config/breakzplatform/github-comments/repo'))
+		script.setAttribute('repo', config.repo)
 		script.setAttribute('issue-term', current)
-		script.setAttribute('theme', "github-light" || $tw.wiki.getTiddlerText('$:/config/breakzplatform/github-comments/theme'))
+		script.setAttribute('theme', config.theme || "github-light")
 		script.setAttribute('crossorigin', 'anonymous')
 
 		/* Create Github Comments Element */

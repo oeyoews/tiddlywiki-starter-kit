@@ -1,0 +1,28 @@
+title: $:/plugins/oeyoews/tiddlywiki-utteranc/config
+caption: utteranc config
+
+\whitespace trim
+
+\define tid() $:/plugins/oeyoews/tiddlywiki-utteranc/config
+
+<table>
+  <tr>
+
+    <th align="left">Github Repo Link:</th>
+    <td>
+      <$edit-text
+          tiddler=<<tid>>
+          placeholder="username/reponame"
+          field="repo"
+          tag="input"
+          default="" />
+    </td>
+    <td>
+      <$button>
+        Reset Config
+        <$action-deletetiddler $tiddler=<<tid>>/>
+      </$button>
+    </td>
+
+ </tr>
+</table>
