@@ -1,6 +1,9 @@
 title: $:/plugins/oeyoews/tiddlywiki-giscus/giscus-config
 
-<!-- The config output is not written to this tiddler! -->
+\whitespace trim
+
+\define tid() $:/plugins/oeyoews/tiddlywiki-giscus/config
+\define tidFilter() $:/plugins/oeyoews/tiddlywiki-giscus/filter
 
 You may have to save and reload the wiki to activate changes.
 
@@ -12,7 +15,7 @@ You may have to save and reload the wiki to activate changes.
     <th align="left">Github Repo Link:</th>
     <td>
       <$edit-text
-          tiddler="$:/plugins/oeyoews/tiddlywiki-giscus/config"
+          tiddler=<<tid>>
           field="repo"
           tag="input"
           default="" />
@@ -22,7 +25,7 @@ You may have to save and reload the wiki to activate changes.
     <th align="left">Github Reop Id:</th>
     <td>
       <$edit-text
-          tiddler="$:/plugins/oeyoews/tiddlywiki-giscus/config"
+          tiddler=<<tid>>
           field="repo-id"
           tag="input"
           default="" />
@@ -32,7 +35,7 @@ You may have to save and reload the wiki to activate changes.
     <th align="left">Github Repo Category Id:</th>
     <td>
       <$edit-text
-          tiddler="$:/plugins/oeyoews/tiddlywiki-giscus/config"
+          tiddler=<<tid>>
           field="category-id"
           tag="input"
           default="" />
@@ -41,19 +44,20 @@ You may have to save and reload the wiki to activate changes.
 
   <tr>
     <th align="left">filter:</th>
+      <td>
+        <$edit-text
+            tiddler=<<tidFilter>>
+            tag="input"
+            default="" />
+      </td>
+
     <td>
-      <$edit-text
-          tiddler="$:/plugins/oeyoews/tiddlywiki-giscus/filter"
-          text="category-id"
-          tag="input"
-          default="" />
+      <$button>
+        Reset filter
+        <$action-deletetiddler $tiddler=<<tidFilter>>>/>
+      </$button>
     </td>
-    <td>
-    <$button>
-      Reset filter
-      <$action-deletetiddler $tiddler="$:/plugins/oeyoews/tiddlywiki-giscus/filter">/>
-    </$button>
-    </td>
+
   </tr>
 
 </table>
