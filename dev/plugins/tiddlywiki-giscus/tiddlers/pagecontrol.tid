@@ -1,0 +1,9 @@
+title: $:/plugins/oeyoews/tiddlywiki-giscus/giscus-msg
+tags: $:/tags/PageControls
+
+\whitespace trim
+
+<$button tooltip="Message Here" aria-label="Message Here" class=<<tv-config-toolbar-class>>>
+  {{$:/plugins/oeyoews/tiddlywiki-giscus/icon}}
+  <$action-navigate $to="Message Area"/>
+</$button>
