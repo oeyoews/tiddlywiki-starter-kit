@@ -1,0 +1,36 @@
+title: $:/plugins/oeyoews/neotw-music/style/netease
+tags: $:/tags/Stylesheet
+
+.netease-player-reuse-pane {
+    position: absolute;
+		 z-index:999;
+    right: 10px;
+    width: auto;
+		 height: auto;
+    max-width: 40px;
+    max-height: 40px;
+    overflow: hidden;
+    box-sizing: content-box;
+    transition: max-width 0.5s, max-height 0.5s;
+}
+.netease-player-reuse-pane:hover {
+  max-width: 80vw;
+  max-height: 80vh;
+}
+.netease-player-reuse-pane-content {
+    display: inline-block;
+    background-color: transparent;
+}
+
+.netease-player-reuse-pane-content img {
+    width:auto;
+		 height:auto;
+		 max-width: 40px;
+    max-height: 40px;
+    transition: all 1s;
+}
+.netease-player-reuse-pane-content:hover img {
+		max-width: 0px;
+  	max-height: 0px;
+		transition: all 0s;
+}

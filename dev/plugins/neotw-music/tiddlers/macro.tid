@@ -1,0 +1,13 @@
+title: $:/plugins/oeyoews/neotw-music/setup
+tags: $:/tags/Macro
+
+<!-- todo add pagetemplate tag -->
+\define twm(music_type:"0", music_id:"2205017967")
+<div class="netease-player-reuse-pane">
+  <div class="netease-player-reuse-pane-content">
+	<img src="https://s1.music.126.net/style/favicon.ico"/>
+	 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0"
+   width=100% height=450px src="https://music.163.com/outchain/player?type=$music_type$&id=$music_id$&auto=1&height=430"/>
+	</div>
+</div>
+\end
