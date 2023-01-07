@@ -8,7 +8,7 @@ tags: $:/tags/PageControls
         <$button tooltip="Message Here" aria-label="Message Here"
         class=<<tv-config-toolbar-class>> set="$:/state/oeyoews/github-comments"
         setTo="neotw comment area" >
-          {{$:/plugins/oeyoews/tiddlywiki-utteranc/icon}}
+          {{$:/plugins/oeyoews/tiddlywiki-utteranc/utteranc-icon}}
           <$action-sendmessage $message="tm-close-all-tiddlers"/>
           <$action-navigate $to="neotw comment area"/>
         </$button>
@@ -17,6 +17,6 @@ tags: $:/tags/PageControls
 
 <$reveal type="match" state="$:/state/oeyoews/github-comments" text="neotw comment area">
         <$button tooltip="Message Here" aria-label="Message Here" class=<<tv-config-toolbar-class>>>
-          {{$:/plugins/oeyoews/tiddlywiki-utteranc/icon}}
+          {{$:/plugins/oeyoews/tiddlywiki-utteranc/utteranc-icon}}
         </$button>
 </$reveal>

@@ -8,7 +8,7 @@ title: $:/plugins/oeyoews/tiddlywiki-utteranc/viewtoolbar/github-comments-open
 <$list filter="[all[current]!is[system]]" variable="comment">
 	<$button tooltip="View GitHub comments" aria-label="github comments" class=<<tv-config-toolbar-class>> set="$:/state/oeyoews/github-comments" setTo=<<currentTiddler>> >
 		<$list filter="[<tv-config-toolbar-icons>prefix[yes]]">
-			{{$:/plugins/oeyoews/tiddlywiki-utteranc/icon}}
+			{{$:/plugins/oeyoews/tiddlywiki-utteranc/utteranc-icon}}
 		</$list>
 
 		<$list filter="[<tv-config-toolbar-text>prefix[yes]]">

@@ -8,7 +8,7 @@ tags: $:/tags/ViewTemplate
 			@@.breakzplatform-github-comments-toggle
 				<$button class="tc-btn-invisible" set=<<stateTiddler>> setTo=<<currentTiddler>> >
 					{{$:/core/images/down-arrow}}
-			    {{$:/plugins/oeyoews/tiddlywiki-utteranc/icon}}
+			    {{$:/plugins/oeyoews/tiddlywiki-utteranc/utteranc-icon}}
           Show Comments
 				</$button>
 			@@
@@ -18,7 +18,7 @@ tags: $:/tags/ViewTemplate
 			@@.breakzplatform-github-comments-toggle
 				<$button class="tc-btn-invisible" set=<<stateTiddler>> setTo="">
 					{{$:/core/images/up-arrow}}
-			    {{$:/plugins/oeyoews/tiddlywiki-utteranc/icon}}
+			    {{$:/plugins/oeyoews/tiddlywiki-utteranc/utteranc-icon}}
           Hide Comments
 				</$button>
 			@@
