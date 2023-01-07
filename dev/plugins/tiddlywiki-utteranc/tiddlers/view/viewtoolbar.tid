@@ -4,11 +4,9 @@ tags: $:/tags/ViewToolbar
 title: $:/plugins/oeyoews/tiddlywiki-utteranc/viewtoolbar/github-comments-open
 
 \whitespace trim
+
 <$list filter="[all[current]!is[system]]" variable="comment">
-
-	<$button tooltip="View GitHub comments" aria-label="github comments"
-  class=<<tv-config-toolbar-class>> set="$:/state/oeyoews/github-comments" setTo=<<currentTiddler>> >
-
+	<$button tooltip="View GitHub comments" aria-label="github comments" class=<<tv-config-toolbar-class>> set="$:/state/oeyoews/github-comments" setTo=<<currentTiddler>> >
 		<$list filter="[<tv-config-toolbar-icons>prefix[yes]]">
 			{{$:/plugins/oeyoews/tiddlywiki-utteranc/icon}}
 		</$list>
@@ -18,7 +16,5 @@ title: $:/plugins/oeyoews/tiddlywiki-utteranc/viewtoolbar/github-comments-open
 				<$text text="view GitHub comments"/>
 			</span>
 		</$list>
-
 	</$button>
-
 </$list>
