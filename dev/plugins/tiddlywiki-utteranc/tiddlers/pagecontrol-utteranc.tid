@@ -14,3 +14,9 @@ tags: $:/tags/PageControls
         </$button>
   </$set>
 </$reveal>
+
+<$reveal type="match" state="$:/state/oeyoews/github-comments" text="neotw comment area">
+        <$button tooltip="Message Here" aria-label="Message Here" class=<<tv-config-toolbar-class>>>
+          {{$:/plugins/oeyoews/tiddlywiki-utteranc/icon}}
+        </$button>
+</$reveal>
