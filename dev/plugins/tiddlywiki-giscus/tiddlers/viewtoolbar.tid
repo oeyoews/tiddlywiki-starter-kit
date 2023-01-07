@@ -1,5 +1,7 @@
 title: $:/plugins/oeyoews/tiddlywiki-giscus/viewtoolbar
-tags: $:/tags/ViewToolbar
+<!-- tags: $:/tags/ViewToolbar -->
+
+\whitespace trim
 
 <$list filter="[all[current]!is[draft]subfilter{$:/plugins/oeyoews/tiddlywiki-giscus/filter}]" variable="comment">
 

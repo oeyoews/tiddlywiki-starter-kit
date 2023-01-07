@@ -9,4 +9,6 @@ title: $:/plugins/oeyoews/tiddlywiki-giscus/readme
 !! TODO
 <!---->
 <!-- * Split giscus config and add filter configurable -->
-* add jump to comment [[example|https://tw5-github-comments.joseli.to/]]
+* add jump to comment and how to toggle for toolbar [[example|https://tw5-github-comments.joseli.to/]]
+
+<!-- !function(){'use strict';exports.name='github-comments',exports.params=[{name:'current'}],exports.run=function(t){if($tw.browser){const e=document.getElementById('gh-comments');null!==e&&e.remove();const i=document.createElement('script');i.async=!0,i.src='https://utteranc.es/client.js',i.setAttribute('repo',$tw.wiki.getTiddlerText('$:/config/breakzplatform/github-comments/repo')),i.setAttribute('issue-term','['+$tw.wiki.getTiddlerText('$:/config/breakzplatform/github-comments/url')+'] '+t),i.setAttribute('theme',$tw.wiki.getTiddlerText('$:/config/breakzplatform/github-comments/theme')),i.setAttribute('crossorigin','anonymous');const n=document.createElement('div');n.id='gh-comments',n.appendChild(i),document.querySelector('div[data-tiddler-title="'+t+'"] .gh-comments-wrapper').appendChild(n),$tw.utils.nextTick(function(){$tw.rootWidget.dispatchEvent({type:'github-comments-did-insert-element',target:n})})}}}(); -->
