@@ -1,0 +1,21 @@
+title: $:/plugins/oeyoews/tiddlywiki-giscus/viewtoolbar
+tags: $:/tags/ViewToolbar
+
+<$list filter="[all[current]!is[draft]subfilter{$:/plugins/oeyoews/tiddlywiki-giscus/filter}]" variable="comment">
+
+	<$button tooltip="View Giscus comments" aria-label="giscus comments" class=<<tv-config-toolbar-class>> set="$:/state/oeyoews/github-giscus-comments" setTo=<<currentTiddler>> >
+
+		<$list filter="[<tv-config-toolbar-icons>prefix[yes]]">
+            {{$:/plugins/oeyoews/tiddlywiki-giscus/icon}}
+		</$list>
+
+		<$list filter="[<tv-config-toolbar-text>prefix[yes]]">
+			<span class="tc-btn-text">
+				<$text text=" "/>
+				<$text text="view GitHub comments"/>
+			</span>
+		</$list>
+
+	</$button>
+
+</$list>
