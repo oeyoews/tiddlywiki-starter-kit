@@ -2,7 +2,10 @@ title: $:/plugins/oeyoews/tiddlywiki-giscus/giscus-config
 
 <!-- The config output is not written to this tiddler! -->
 
-You may have to save and reload the wiki to activate changes. [[get parameter|giscus|https://giscus.app/zh-CN]]
+You may have to save and reload the wiki to activate changes.
+
+* Install giscus for your github repo [[Install Giscus|https://github.com/apps/giscus/installations/new]]
+* [[get giscus parameter|https://giscus.app/zh-CN]]
 
 <table>
   <tr>

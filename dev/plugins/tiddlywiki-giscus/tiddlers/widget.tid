@@ -63,5 +63,6 @@ type: application/javascript
             return false;
         }
     };
+    console.log("%cℹ️  Yay! Giscus is working! 🎉", "background: linear-gradient(45deg, #fc466b, #3f5efb); color: black;border-radius: 3px;padding: 3px;")
     exports.giscus = GiscusNodeWidget;
 })();
