@@ -226,5 +226,19 @@
         "dependents": "",
         "readme": "!! Readme\n\n<!-- * 只需要安装此插件即可， 无需额外配置， 自动识别图片tiddlywiki当前界面(不是所有)的所有图片, -->\n<!-- 点击即可放大图片(如果不起作用, 请刷新tiddlywiki使用)， -->\n`Updated Time:  2023-01-06 11:45:14+0800`\n <!-- 后期更新说明请点击 [[readme|https://oeyoewl.top/fancybox-gallery-tiddlywiki]] -->\n\n* [[Demo|https://neotw.netlify.app/main.html#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-fancybox]]\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-fancybox]]\n\n* [[Tiddlyhost site|https://fancybox-oeyoews.tiddlyhost.com]]\n\n!! Features\n\n* support download images, fullscreen, custom style and shortcuts,\n<!-- !! Note -->\n<!-- * 由于是动态给img加上一个父标签, -->\n<!-- 只会渲染启动时识别到的img标签，如果导入新的图片或者打开新的含有图片的tiddler, -->\n<!-- 则需要重新刷新当前界面，让插件重新渲染DOM -->\n<!-- * how to add refresh tip on tiddlywiki js?? -->\n\n!! Usage\n\n<!-- !!! 分组 -->\n<!-- * 如果一个tiddler 中的图片来自多个其他的tiddler, 则会展示多个tid的图片分组, -->\n<!-- 如果当前tiddler的图片全部来自单个tiddler则会只会展示一个图片分组(此功能目前借助<<qualify>> -->\n<!-- 宏实现) -->\n{{$:/plugins/oeyoews/tiddlywiki-fancybox/example}}\n\n!! Links\n\n* fancybox: https://github.com/fancyapps/fancybox\n\n!! Note\n\n* if you use splashscreen, please remove `remove-when-wiki-loaded` class,\notherwise this plugin will not work normally [[warn|https://github.com/Jermolene/TiddlyWiki5/search?q=tc-remove-when-wiki-loaded]]\n* not support local svg at least\n\n!! TODO\n\n* use widget instead macro\n",
         "requires-reload": "no"
+    },
+    {
+        "title": "$:/plugins/oeyoews/tiddlywiki-giscus",
+        "description": "A Commenting System Powered By Github Discussions",
+        "author": "oeyoews",
+        "version": "0.0.1",
+        "core-version": ">=5.2.5",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "Tiddlywiki Giscus",
+        "list": "readme config",
+        "dependents": "",
+        "readme": "* A Commenting System Powered By Github Discussions. Let Visitors Leave Comments And Reactions On Your Site With Github! This Project Is Strongly Inspired By Utterances.\n\n* 注: 从CPL抽离而出\n",
+        "requires-reload": "yes"
     }
 ]
