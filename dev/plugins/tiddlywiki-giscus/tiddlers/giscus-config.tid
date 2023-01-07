@@ -11,42 +11,43 @@ You may have to save and reload the wiki to activate changes.
 * [[get giscus parameter|https://giscus.app/zh-CN]]
 
 <table>
-  <tr>
-    <th align="left">Github Repo Link:</th>
-    <td>
-      <$edit-text
-          tiddler=<<tid>>
-          field="repo"
-          tag="input"
-          default="" />
-    </td>
-  </tr>
-  <tr>
-    <th align="left">Github Reop Id:</th>
-    <td>
-      <$edit-text
-          tiddler=<<tid>>
-          field="repo-id"
-          tag="input"
-          default="" />
-    </td>
-  </tr>
-  <tr>
-    <th align="left">Github Repo Category Id:</th>
-    <td>
-      <$edit-text
-          tiddler=<<tid>>
-          field="category-id"
-          tag="input"
-          default="" />
-    </td>
-  </tr>
+  <!-- <tr> -->
+  <!--   <th align="left">Github Repo Link:</th> -->
+  <!--   <td> -->
+  <!--     <$edit-text -->
+  <!--         tiddler=<<tid>> -->
+  <!--         field="repo" -->
+  <!--         tag="input" -->
+  <!--         default="" /> -->
+  <!--   </td> -->
+  <!-- </tr> -->
+  <!-- <tr> -->
+  <!--   <th align="left">Github Reop Id:</th> -->
+  <!--   <td> -->
+  <!--     <$edit-text -->
+  <!--         tiddler=<<tid>> -->
+  <!--         field="repo-id" -->
+  <!--         tag="input" -->
+  <!--         default="" /> -->
+  <!--   </td> -->
+  <!-- </tr> -->
+  <!-- <tr> -->
+  <!--   <th align="left">Github Repo Category Id:</th> -->
+  <!--   <td> -->
+  <!--     <$edit-text -->
+  <!--         tiddler=<<tid>> -->
+  <!--         field="category-id" -->
+  <!--         tag="input" -->
+  <!--         default="" /> -->
+  <!--   </td> -->
+  <!-- </tr> -->
 
   <tr>
     <th align="left">filter:</th>
       <td>
         <$edit-text
             tiddler=<<tidFilter>>
+            placeholder="[!is[system]]"
             tag="input"
             default="" />
       </td>

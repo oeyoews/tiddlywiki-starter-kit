@@ -2,7 +2,7 @@ title: $:/plugins/oeyoews/tiddlywiki-giscus/viewtemplate
 tags: $:/tags/ViewTemplate
 
 <div style="text-align: right">
-  <$list filter="[all[current]!is[draft]subfilter{$:/plugins/oeyoews/tiddlywiki-giscus/filter}]" variable="comment">
+  <$list filter="[all[current]!is[system]!is[draft]subfilter{$:/plugins/oeyoews/tiddlywiki-giscus/filter}]" variable="comment">
 
     <$set name="stateTiddler" value="$:/state/oeyoews/github-giscus-comments">
       <$reveal type="nomatch" state=<<stateTiddler>> text=<<currentTiddler>>>
