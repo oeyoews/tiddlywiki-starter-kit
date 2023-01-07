@@ -5,12 +5,9 @@ type: application/javascript
 (function() {
     "use strict";
     var Widget = require("$:/core/modules/widgets/widget.js").widget;
-    var configGiscusTiddler = "$:/plugins/oeyoews/tiddlywiki-giscus/config"
     var GiscusNodeWidget = function(parseTreeNode, options) {
         this.initialise(parseTreeNode, options);
     };
-    var configGiscus = $tw.wiki.getTiddler(configGiscusTiddler)
-    var config = configGiscus ? configGiscus.fields : {};
     GiscusNodeWidget.prototype = new Widget();
     GiscusNodeWidget.prototype.render = function(parent, nextSibling) {
         this.parentDomNode = parent;
@@ -22,16 +19,18 @@ type: application/javascript
         if (id === '') return;
         var scriptNode = this.document.createElement('script');
         scriptNode.setAttribute("src", "https://giscus.app/client.js");
-        scriptNode.setAttribute("data-repo", config.repo);
-        scriptNode.setAttribute("data-repo-id", config.repo-id);
-        scriptNode.setAttribute("data-category-id", config.category-id);
+
+        scriptNode.setAttribute("data-repo", "oeyoews/neotw");
+        scriptNode.setAttribute("data-repo-id", "R_kgDOH5A5OA");
         scriptNode.setAttribute("data-category", "General");
+        scriptNode.setAttribute("data-category-id", "DIC_kwDOH5A5OM4CRFEE");
+
         scriptNode.setAttribute("data-mapping", "specific");
         scriptNode.setAttribute("data-term", id);
         scriptNode.setAttribute("data-reactions-enabled", "1");
+        scriptNode.setAttribute("data-emit-metadata", "0");
         scriptNode.setAttribute("data-input-position", "top");
         scriptNode.setAttribute("data-loading", "lazy");
-        scriptNode.setAttribute("data-emit-metadata", "0");
         scriptNode.setAttribute("data-theme", theme);
         scriptNode.setAttribute("data-lang", lang);
         scriptNode.setAttribute("crossorigin", "anonymous");
@@ -63,6 +62,5 @@ type: application/javascript
             return false;
         }
     };
-    console.log("%cℹ️  Yay! Giscus is working! 🎉", "background: linear-gradient(45deg, #fc466b, #3f5efb); color: black;border-radius: 3px;padding: 3px;")
     exports.giscus = GiscusNodeWidget;
 })();
