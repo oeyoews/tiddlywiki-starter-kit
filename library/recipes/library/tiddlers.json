@@ -252,7 +252,7 @@
         "name": "Tiddlywiki Utteranc",
         "list": "readme config",
         "dependents": "",
-        "readme": "* 本插件根据 [[tiddlywiki-utteranc|https://tw5-github-comments.joseli.to/]] 修改而成\n* A Lightweight Comments Widget Built On Github Issues\n",
+        "readme": "* 本插件根据 [[tiddlywiki-utteranc|https://tw5-github-comments.joseli.to/]] 修改而成\n* A Lightweight Comments Widget Built On Github Issues\n\n!! TODO\n\n* add viewtoolbar status like favourite plugin\n",
         "requires-reload": "yes"
     }
 ]
