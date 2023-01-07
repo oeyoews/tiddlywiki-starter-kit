@@ -17,7 +17,7 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox/example
 
 <center>
   <<FancyboxL "test-fancybox.png" >>
-<center>
+</center>
 
 !! Online Images
 <center>
