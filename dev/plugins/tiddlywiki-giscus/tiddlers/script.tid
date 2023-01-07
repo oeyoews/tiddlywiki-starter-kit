@@ -1,9 +1,0 @@
-title: $:/plugins/oeyoews/tiddlywiki-giscus/viewtemplate
-tags: $:/tags/ViewTemplate
-
-<$list filter="[all[current]!is[draft]!is[system]]" variable="comment">
-        <h3>
-          {{$:/plugins/oeyoews/tiddlywiki-giscus/icon}} Comments
-        </h3>
-        <$giscus id=<<comment>> lang="en" theme="light"/>
-</$list>

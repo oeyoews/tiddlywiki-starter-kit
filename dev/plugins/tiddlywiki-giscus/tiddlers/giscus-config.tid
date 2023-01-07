@@ -9,7 +9,7 @@ You may have to save and reload the wiki to activate changes.
 
 <table>
   <tr>
-    <th align="left">Repo:</th>
+    <th align="left">Github Repo Link:</th>
     <td>
       <$edit-text
           tiddler="$:/plugins/oeyoews/tiddlywiki-giscus/config"
@@ -19,7 +19,7 @@ You may have to save and reload the wiki to activate changes.
     </td>
   </tr>
   <tr>
-    <th align="left">Reop Id:</th>
+    <th align="left">Github Reop Id:</th>
     <td>
       <$edit-text
           tiddler="$:/plugins/oeyoews/tiddlywiki-giscus/config"
@@ -29,7 +29,7 @@ You may have to save and reload the wiki to activate changes.
     </td>
   </tr>
   <tr>
-    <th align="left">Category Id:</th>
+    <th align="left">Github Repo Category Id:</th>
     <td>
       <$edit-text
           tiddler="$:/plugins/oeyoews/tiddlywiki-giscus/config"
@@ -38,4 +38,22 @@ You may have to save and reload the wiki to activate changes.
           default="" />
     </td>
   </tr>
+
+  <tr>
+    <th align="left">filter:</th>
+    <td>
+      <$edit-text
+          tiddler="$:/plugins/oeyoews/tiddlywiki-giscus/filter"
+          text="category-id"
+          tag="input"
+          default="" />
+    </td>
+    <td>
+    <$button>
+      Reset filter
+      <$action-deletetiddler $tiddler="$:/plugins/oeyoews/tiddlywiki-giscus/filter">/>
+    </$button>
+    </td>
+  </tr>
+
 </table>

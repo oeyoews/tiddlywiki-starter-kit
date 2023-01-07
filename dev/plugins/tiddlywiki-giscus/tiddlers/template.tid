@@ -1,0 +1,11 @@
+title: $:/plugins/oeyoews/tiddlywiki-giscus/viewtemplate
+tags: $:/tags/ViewTemplate
+
+<$list filter="[all[current]!is[draft]subfilter{$:/plugins/oeyoews/tiddlywiki-giscus/filter}]" variable="comment">
+  <details>
+    <summary>
+      {{$:/plugins/oeyoews/tiddlywiki-giscus/icon}} Comments
+    </summary>
+    <$giscus id=<<comment>> lang="en" theme="light"/>
+  </details>
+</$list>
