@@ -1,0 +1,38 @@
+title: $:/plugins/oeyoews/tiddlywiki-devplugin-notes/macro/
+type: application/javascript
+module-type: macro
+
+/*\
+title: neotw/js-macro-test
+type: application/javascript
+module-type: macro
+
+Macro to test js macro
+
+\*/
+
+(function() {
+
+/*jslint node: true, browser: true */
+/* global $tw: false */
+"use strict";
+
+/*
+just test js macro
+*/
+
+exports.name = "msg"
+
+exports.params = [
+	{ name: "msg" }
+];
+
+/*
+Run the msg macro
+*/
+exports.run = function(msg) {
+	if(msg) return msg;
+	return "This is a default msg example for js macro"
+};
+
+})();

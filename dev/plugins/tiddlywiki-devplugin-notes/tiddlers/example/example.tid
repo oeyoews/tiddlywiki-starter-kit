@@ -1,0 +1,21 @@
+title: $:/plugins/oeyoews/tiddlywiki-devplugin-notes/example
+
+!! msg macro
+
+<<example
+"""
+<<msg>>>
+"""
+>>
+
+<<example
+"""
+<<msg "Hello Tiddlywiki5">>
+"""
+>>
+
+<<example
+"""
+<<msg msg: "key value msg">>
+"""
+>>
