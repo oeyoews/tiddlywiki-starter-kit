@@ -18,15 +18,17 @@ tags: $:/tags/Stylesheet
     background-color: rgb(97, 218, 251);
     color: rgb(0, 0, 0);
     padding: 10px 25px;
+    border-radius: 5px;
     white-space: nowrap;
     transition: background-color 0.2s ease-out 0s;
 }
 
-.btn {
+.nbtn {
 		display: inline-block;
     background-color: rgb(97, 218, 251);
     color: rgb(0, 0, 0);
     padding: 3px 8px;
     white-space: nowrap;
+    border-radius: 5px;
     transition: background-color 0.2s ease-out 0s;
 }

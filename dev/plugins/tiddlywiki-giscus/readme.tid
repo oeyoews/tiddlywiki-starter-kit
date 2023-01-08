@@ -1,5 +1,8 @@
 title: $:/plugins/oeyoews/tiddlywiki-giscus/readme
 
+\define giscus-config() $:/plugins/oeyoews/tiddlywiki-giscus/giscus-config
+\define repo() $:/plugins/oeyoews/tiddlywiki-giscus/config
+
 <div style="color: red">
   注: 从CPL抽离而出, 此插件目前仅仅是将其打包成插件，目前还没有添加配置项, 如果使用此插件注意修改 [[giscus widget|$:/plugins/oeyoews/tiddlywiki-giscus/widget]] 中关于giscus的参数, gitscus 的具体用法参见 [[giscus|https://giscus.app/zh-CN]]
   <!-- 暂时停止使用 -->
@@ -8,7 +11,11 @@ title: $:/plugins/oeyoews/tiddlywiki-giscus/readme
 * {{$:/plugins/oeyoews/tiddlywiki-giscus/icon}} A Commenting System Powered By Github Discussions. Let Visitors Leave Comments And Reactions On Your Site With Github! This Project Is Strongly Inspired By Utterances.
 
 <center>
-  <<nbtn $:/plugins/oeyoews/tiddlywiki-giscus/giscus-config>>
+  <<nbtn "<<giscus-config>>">>
+
+  <$button class="get-started" tooltip={{{ [<repo>get[repo]addsuffix[ discussions]] }}}>
+    <<giscusDiscussions>>
+  </$button>
 </center>
 
 !! TODO

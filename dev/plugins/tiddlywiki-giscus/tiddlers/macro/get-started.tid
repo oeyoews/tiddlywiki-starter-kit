@@ -3,7 +3,7 @@ tags: $:/tags/Macro
 
 <!-- general -->
 \define nbtn(started-tid, class:"get-started", caption:"Get Started")
-  <$button class=$class$>
+  <$button class=$class$ tooltip="$caption$">
     $caption$
     <!-- list filter todo -->
     <$action-navigate $to={{{ $started-tid$ }}}/>
