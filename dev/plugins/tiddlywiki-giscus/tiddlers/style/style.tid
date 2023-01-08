@@ -19,6 +19,7 @@ tags: $:/tags/Stylesheet
     color: rgb(0, 0, 0);
     padding: 10px 25px;
     border-radius: 5px;
+    border-color: white;
     white-space: nowrap;
     transition: background-color 0.2s ease-out 0s;
 }

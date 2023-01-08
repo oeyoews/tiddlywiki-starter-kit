@@ -9,7 +9,6 @@ You may have to save and reload the wiki to activate changes.
 
 * Install giscus for your github repo [[Install Giscus|https://github.com/apps/giscus/installations/new]]
 * [[get giscus parameter|https://giscus.app/zh-CN]]
-* [[Jump To Discussions|https://{{$:/plugins/oeyoews/tiddlywiki-giscus/config!!repo}}/discussions]]
 
 <table>
   <tr>
