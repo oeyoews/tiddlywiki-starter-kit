@@ -1,0 +1,31 @@
+title: $:/plugins/oeyoews/tiddlywiki-giscus/setting/setup
+
+\define tid() $:/plugins/oeyoews/tiddlywiki-giscus/viewtemplate
+\define tag() $:/tags/ViewTemplate
+\define mode() $:/status/tiddlywiki-giscus/mode
+
+<$list filter=<<mode>> variable=".state">
+
+  <!-- show -->
+  <$reveal state=<<.state>> type="nomatch" text="show">
+    <$fieldmangler tiddler=<<tid>>>
+      <$button set=<<.state>> setTo="show">Disable {{neotw/icon/warn}}
+        <$action-sendmessage $message="tm-add-tag" $param=<<tag>>/>
+      </$button>
+    </$fieldmangler>
+  </$reveal>
+
+  <!-- hide -->
+  <$reveal state=<<.state>> type="match" text="show">
+    <$fieldmangler tiddler=<<tid>>>
+      <$button set=<<.state>> setTo="hide">Enable {{neotw/icon/approve}}
+        <$action-sendmessage $message="tm-remove-tag" $param=<<tag>>/>
+      </$button>
+    </$fieldmangler>
+  </$reveal>
+
+</$list>
+
+<$button>
+  <$action-deletetiddler $tiddler=<<tid>>/> Reset
+</$button>

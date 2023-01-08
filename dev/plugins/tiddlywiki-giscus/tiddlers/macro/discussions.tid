@@ -3,9 +3,6 @@ tags: $:/tags/Macro
 
 \whitespace trim
 
-<!-- \define discussions() /discussions -->
-<!-- \define target() $:/plugins/oeyoews/tiddlywiki-giscus/config -->
-
 \define giscusDiscussions()
 <$set name="base-repo" value="https://github.com/">
 <$set name="target" value="$:/plugins/oeyoews/tiddlywiki-giscus/config">

@@ -22,26 +22,26 @@ You may have to save and reload the wiki to activate changes.
           default="" />
     </td>
   </tr>
-  <!-- <tr> -->
-  <!--   <th align="left">Github Reop Id:</th> -->
-  <!--   <td> -->
-  <!--     <$edit-text -->
-  <!--         tiddler=<<tid>> -->
-  <!--         field="repo-id" -->
-  <!--         tag="input" -->
-  <!--         default="" /> -->
-  <!--   </td> -->
-  <!-- </tr> -->
-  <!-- <tr> -->
-  <!--   <th align="left">Github Repo Category Id:</th> -->
-  <!--   <td> -->
-  <!--     <$edit-text -->
-  <!--         tiddler=<<tid>> -->
-  <!--         field="category-id" -->
-  <!--         tag="input" -->
-  <!--         default="" /> -->
-  <!--   </td> -->
-  <!-- </tr> -->
+  <tr>
+    <th align="left">Github Reop Id:</th>
+    <td>
+      <$edit-text
+          tiddler=<<tid>>
+          field="repoId"
+          tag="input"
+          default="" />
+    </td>
+  </tr>
+  <tr>
+    <th align="left">Github Repo Category Id:</th>
+    <td>
+      <$edit-text
+          tiddler=<<tid>>
+          field="categoryId"
+          tag="input"
+          default="" />
+    </td>
+  </tr>
 
   <tr>
     <th align="left">filter:</th>
