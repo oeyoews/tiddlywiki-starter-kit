@@ -21,7 +21,7 @@ tiddlers/config/TiddlerTail/Default.tid
 tidgi/
 library/
 neotw-temp/
-dev/tiddlers/
+# dev/tiddlers/
 dev/archrepo/
 tiddlers/config/ShowHelp.tid
 tiddlers/commit.tid
