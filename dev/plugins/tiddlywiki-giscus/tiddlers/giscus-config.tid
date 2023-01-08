@@ -18,6 +18,7 @@ You may have to save and reload the wiki to activate changes.
           tiddler=<<tid>>
           field="repo"
           tag="input"
+          placeholder="username/repo"
           default="" />
     </td>
   </tr>
@@ -28,6 +29,7 @@ You may have to save and reload the wiki to activate changes.
           tiddler=<<tid>>
           field="repoId"
           tag="input"
+          placeholder="TSJHFJDKHJExxx"
           default="" />
     </td>
   </tr>
@@ -37,6 +39,7 @@ You may have to save and reload the wiki to activate changes.
       <$edit-text
           tiddler=<<tid>>
           field="categoryId"
+          placeholder="DKSOFHGJVDKLXX"
           tag="input"
           default="" />
     </td>
@@ -52,6 +55,7 @@ You may have to save and reload the wiki to activate changes.
             default="" />
       </td>
 
+    <!-- not suitable on mobile(ios at least) -->
     <td>
       <$button>
         Reset filter

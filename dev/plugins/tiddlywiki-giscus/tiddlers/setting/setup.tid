@@ -26,6 +26,8 @@ title: $:/plugins/oeyoews/tiddlywiki-giscus/setting/setup
 
 </$list>
 
+<div>
 <$button>
-  <$action-deletetiddler $tiddler=<<tid>>/> Reset
+  <$action-deletetiddler $tiddler=<<tid>>/> Reset Ui
 </$button>
+</div>
