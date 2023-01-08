@@ -1,0 +1,18 @@
+title: $:/plugins/oeyoews/tiddlywiki-giscus/macro/discussions
+tags: $:/tags/Macro
+
+\whitespace trim
+
+<!-- \define base-repo() https://github.com/ -->
+\define discussions() /discussions
+\define target() $:/plugins/oeyoews/tiddlywiki-giscus/config
+
+\define giscusDiscussions()
+<$set name="base-repo" value="https://github.com">
+  <$button class=<<tv-config-toolbar-class>>>
+    <a href={{{ [<target>get[repo]addprefix<base-repo>addsuffix<discussions>] }}} target="_blank">
+      {{$:/plugins/oeyoews/tiddlywiki-giscus/icon}}
+    </a>
+  </$button>
+</$set>
+\end
