@@ -2,8 +2,10 @@ title: $:/plugins/oeyoews/tiddlywiki-giscus/macro/get-started
 tags: $:/tags/Macro
 
 <!-- general -->
-\define get-started(started-tid)
-<$button>
-  [[Get Started|$started-tid$]]
-</$button>
+\define nbtn(started-tid, class:"get-started", caption:"Get Started")
+  <$button class=$class$>
+    $caption$
+    <!-- list filter todo -->
+    <$action-navigate $to={{{ $started-tid$ }}}/>
+  </$button>
 \end

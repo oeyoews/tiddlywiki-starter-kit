@@ -7,7 +7,9 @@ title: $:/plugins/oeyoews/tiddlywiki-giscus/readme
 
 * {{$:/plugins/oeyoews/tiddlywiki-giscus/icon}} A Commenting System Powered By Github Discussions. Let Visitors Leave Comments And Reactions On Your Site With Github! This Project Is Strongly Inspired By Utterances.
 
-<<get-started $:/plugins/oeyoews/tiddlywiki-giscus/giscus-config>>
+<center>
+  <<nbtn $:/plugins/oeyoews/tiddlywiki-giscus/giscus-config>>
+</center>
 
 !! TODO
 
