@@ -2,9 +2,9 @@ title: $:/plugins/oeyoews/tiddlywiki-giscus/giscus-pagecontrol
 tags: $:/tags/PageControls
 
 \whitespace trim
+
 \define tid() Comment Area
-<$button tooltip="Message Here" aria-label="Message Here" class=<<tv-config-toolbar-class>> set="$:/state/oeyoews/github-comments"
-setTo=<<tid>> >
+<$button tooltip="Message Here" aria-label="Message Here" class=<<tv-config-toolbar-class>> set="$:/state/oeyoews/github-giscus-comments" setTo=<<tid>> >
   {{$:/plugins/oeyoews/tiddlywiki-giscus/icon}}
   <$action-navigate $to=<<tid>>/>
 </$button>
