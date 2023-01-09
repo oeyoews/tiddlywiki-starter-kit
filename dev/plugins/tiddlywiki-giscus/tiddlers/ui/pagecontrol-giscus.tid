@@ -7,4 +7,10 @@ tags: $:/tags/PageControls
 <$button tooltip="Message Here" aria-label="Message Here" class=<<tv-config-toolbar-class>> set="$:/state/oeyoews/github-giscus-comments" setTo=<<tid>> >
   {{$:/plugins/oeyoews/tiddlywiki-giscus/icon}}
   <$action-navigate $to=<<tid>>/>
+<!-- giscus-sidebar-text: giscus -->
+<$list filter="[<tv-config-toolbar-text>match[yes]]">
+  <span class="tc-btn-text">
+    <$text text="giscus"/>
+  </span>
+</$list>
 </$button>

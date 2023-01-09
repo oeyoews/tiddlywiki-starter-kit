@@ -1,5 +1,2 @@
 title: $:/plugins/oeyoews/tiddlywiki-giscus/config
-
-<!-- \define tid() $:/plugins/oeyoews/gh-repo-btn/github-address -->
-
-<!-- ''filter'' : <$edit-text tiddler=<<tid>> tag="input" placeholder="[all[current]prefix[]tag[]!is[draft]]"/> -->
+type: text/vnd.tiddlywiki

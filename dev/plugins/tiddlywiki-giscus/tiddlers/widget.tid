@@ -22,10 +22,10 @@ type: application/javascript
 
     // ?? not suport repo-id filed, use repoId instead
     var giscusConfigTiddler = "$:/plugins/oeyoews/tiddlywiki-giscus/config"
-    console.log(giscusConfigTiddler)
+    // console.log(giscusConfigTiddler)
     var giscusConfigTiddlerGet = $tw.wiki.getTiddler(giscusConfigTiddler)
     var config = giscusConfigTiddlerGet ? giscusConfigTiddlerGet.fields : {};
-    console.log(config)
+    // console.log(config)
 
     // debug
     // console.log(config.repo)
