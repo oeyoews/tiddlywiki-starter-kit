@@ -4,7 +4,7 @@ tags: $:/tags/ViewTemplate
 \whitespace trim
 
 \define nauthor()
-<span class="user-panel-avatar2">
+<span class="nauthor">
   <a style="text-decoration: none;" href={{{ [<currentTiddler>get[modifier]addprefix[https://github.com/]] }}} class="tc-tiddlylink-external" target="_blank" rel="noopener noreferrer">
     <img style="vertical-align: -1px;" src={{{ [<currentTiddler>get[modifier]addprefix[https://github.com/]addsuffix[.png?size=22]] }}} alt=""/>
 </a>

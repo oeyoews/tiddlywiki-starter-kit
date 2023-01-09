@@ -1,13 +1,9 @@
 categoryId: DIC_kwDOH5A5OM4CRFEE
 created: 20230108122422284
 creator: oeyoews
-modified: 20230108233635480
+modified: 20230109070736948
 modifier: oeyoews
 repo: oeyoews/neotw
 repoId: R_kgDOH5A5OA
 title: $:/plugins/oeyoews/tiddlywiki-giscus/config
 type: text/vnd.tiddlywiki
-
-<!-- \define tid() $:/plugins/oeyoews/gh-repo-btn/github-address -->
-
-<!-- ''filter'' : <$edit-text tiddler=<<tid>> tag="input" placeholder="[all[current]prefix[]tag[]!is[draft]]"/> -->
