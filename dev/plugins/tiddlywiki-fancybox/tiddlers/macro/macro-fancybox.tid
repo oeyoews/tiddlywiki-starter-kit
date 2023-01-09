@@ -51,15 +51,3 @@ tags: $:/tags/Macro
 <!--   </$list> -->
 <!-- </div> -->
 <!-- \end -->
-
-\whitespace trim
-<$button message="" tooltip="" aria-label="" class=<<tv-config-toolbar-class>>>
-<$list filter="[<tv-config-toolbar-icons>match[yes]]">
-{{}}
-</$list>
-<$list filter="[<tv-config-toolbar-text>match[yes]]">
-<span class="tc-btn-text">
-<$text text=""/>
-</span>
-</$list>
-</$button>

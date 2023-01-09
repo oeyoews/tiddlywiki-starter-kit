@@ -8,7 +8,7 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox/example
 
 <center>
   <<FancyboxL "test-fancybox.png" group:"Single Group">>
-  <<FancyboxL "test-fancybox1.png" group:"Single Group">>
+  <<FancyboxL "test-fancybox.png" group:"Single Group">>
 </center>
 
 <center>
