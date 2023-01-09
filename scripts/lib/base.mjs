@@ -17,7 +17,7 @@ function titleCase(str) {
 
 const base = {
   titleCase,
-  timestamp: () => dateFormat(new Date(), 'yyyymmddHHMMss'),
+  timestamp: () => dateFormat(new Date(), 'yyyymmddHHMM'),
 };
 
 export default base;
