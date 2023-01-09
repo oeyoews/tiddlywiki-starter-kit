@@ -1,6 +1,6 @@
 [
     {
-        "version": "0.0.1",
+        "version": "0.0.2",
         "type": "application/json",
         "title": "$:/plugins/oeyoews/neotw",
         "plugin-type": "plugin",
@@ -231,7 +231,7 @@
         "title": "$:/plugins/oeyoews/tiddlywiki-fancybox",
         "description": "Tiddlywiki Gallery",
         "author": "oeyoews",
-        "version": "0.2.9",
+        "version": "0.3.0",
         "core-version": ">=5.2.3",
         "type": "application/json",
         "plugin-type": "plugin",
@@ -245,7 +245,7 @@
         "title": "$:/plugins/oeyoews/tiddlywiki-giscus",
         "description": "A Commenting System Powered By Github Discussions",
         "author": "oeyoews",
-        "version": "0.8.1",
+        "version": "0.8.2",
         "core-version": ">=5.2.5",
         "type": "application/json",
         "plugin-type": "plugin",
