@@ -19,8 +19,9 @@ title: $:/plugins/oeyoews/tiddlywiki-giscus/readme
 
 !! TODO
 
-* js macro and widget to get config tid data difference(load order)
-* add toggle on local
+* jump to comment directly
+<!-- * js macro and widget to get config tid data difference(load order) -->
+<!-- * add toggle on local -->
 
 <!---->
 <!-- * Split giscus config and add filter configurable -->
