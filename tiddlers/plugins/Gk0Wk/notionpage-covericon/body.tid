@@ -1,7 +1,7 @@
 created: 20230109141720277
 creator: oeyoews
 list-before: $:/core/ui/ViewTemplate/title
-modified: 20230109151327597
+modified: 20230109153146115
 modifier: oeyoews
 tags: $:/tags/ViewTemplate
 title: $:/plugins/Gk0Wk/notionpage-covericon/body
@@ -27,7 +27,7 @@ type: text/vnd.tiddlywiki
   <!-- !icon && cover -->
   <div class="gk0wk-notionpagebg gk0wk-notionpagebg-c">
     <div class="gk0wk-notionpagebg-image">
-		<a data-fancybox=<<cover>> href=<<cover>> >
+		<a data-fancybox="notion-pagecover-with-fancybox" href=<<cover>> >
 		<$image source=<<cover>> width="100%" height="auto"/>
 		</a>
 		</div>
@@ -65,7 +65,7 @@ type: text/vnd.tiddlywiki
   <!-- icon && cover -->
   <div class="gk0wk-notionpagebg gk0wk-notionpagebg-ci">
     <div class="gk0wk-notionpagebg-image">
-		<a data-fancybox=<<cover>> href=<<cover>> >
+		<a data-fancybox="notion-pagecover-with-fancybox" href=<<cover>> >
 			<$image source=<<cover>> width="100%" height="auto"/>
 		</a>
 		</div>
