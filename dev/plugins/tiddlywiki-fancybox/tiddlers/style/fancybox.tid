@@ -24,3 +24,8 @@ a[data-fancybox] {
 a[data-fancybox] img {
    border-radius: 0.25rem;
 }
+
+/* hover style */
+.has-image[data-image-fit=contain] .fancybox__image {
+    border-radius: 10px;
+}
