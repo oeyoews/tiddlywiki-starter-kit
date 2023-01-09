@@ -22,9 +22,14 @@ title: $:/plugins/oeyoews/tiddlywiki-giscus/viewtemplate
               </$button>
           </$reveal>
           <$reveal type="match" state=<<stateTiddler>> text=<<currentTiddler>>>
+                <$set name="repo" value="$:/plugins/oeyoews/tiddlywiki-giscus/config">
+                  <$button class="" tooltip={{{ [<repo>get[repo]addsuffix[ discussions]] }}}>
+                    <<giscusDiscussions>>
+                  </$button>
+                </$set>
               <$button class="tc-btn-invisible" set=<<stateTiddler>> setTo="">
                 {{$:/core/images/up-arrow}}
-                {{$:/plugins/oeyoews/tiddlywiki-giscus/icon}}
+                <!-- {{$:/plugins/oeyoews/tiddlywiki-giscus/icon}} -->
                 <!-- en -->
                 <$list filter="[<lang>!search[zh]]">
                   Fold Comments

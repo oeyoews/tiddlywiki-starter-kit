@@ -1,0 +1,12 @@
+title: Comment Area
+
+<center>
+  <h2>
+    这是一个留言区 🐈
+  </h2>
+
+Jump to github discussions <$button class="get-started" tooltip={{{ [<repo>get[repo]addsuffix[ discussions]] }}}>
+  <<giscusDiscussions>>
+</$button>
+
+</center>
