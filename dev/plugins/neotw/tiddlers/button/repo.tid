@@ -1,5 +1,5 @@
-caption: Repo button
-description: repo button
+caption: Github Repo Button
+description: github repo button
 tags: $:/tags/PageControls
 title: $:/plugins/oeyoews/neotw/button/repo
 
@@ -7,8 +7,16 @@ title: $:/plugins/oeyoews/neotw/button/repo
 
 \define base-repo() https://gitlab.com/
 \define target() oeyoews/neotw
+\define tip() github repo
 
-<$button tooltip="" aria-label="" class=<<tv-config-toolbar-class>>>
-<a href={{{ [<target>addprefix<base-repo>]}}} target="_blank">
-{{$:/plugins/oeyoews/neotw/icon/gitlab}}</a>
+<!-- if use font awesome, just remove a icon content -->
+<$button tooltip=<<tip>> aria-label=<<tip>> class=<<tv-config-toolbar-class>>>
+  <a style="color: gray; text-decoration: none" href={{{ [<target>addprefix<base-repo>]}}} target="_blank">
+  {{neotw/icon/github01}}
+  </a>
+<$list filter="[<tv-config-toolbar-text>match[yes]]">
+  <span class="tc-btn-text">
+    <$text text=<<tip>>/>
+  </span>
+</$list>
 </$button>
