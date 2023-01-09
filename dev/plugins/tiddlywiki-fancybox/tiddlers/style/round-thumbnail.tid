@@ -1,10 +1,7 @@
-title: $:/plugins/oeyoews/tiddlywiki-fancybox/rounded
-type: application/javascript
-tags: $:/tags/RawMarkup
-hide-body: yes
+title: $:/plugins/oeyoews/tiddlywiki-fancybox/style/rounded-thumbnail
+tags: $:/tags/Stylesheet
+type: text/css
 
-<!-- custom thumbnail -->
-<style>
 .fancybox__container {
   --fancybox-thumbs-border-radius: 50%;
   --fancybox-thumbs-ratio: 1;
@@ -12,4 +9,3 @@ hide-body: yes
   --fancybox-thumbs-height: 50px;
   --fancybox-accent-color: #F472B6;
 }
-</style>

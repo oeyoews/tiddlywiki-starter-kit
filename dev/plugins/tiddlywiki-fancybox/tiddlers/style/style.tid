@@ -1,0 +1,13 @@
+title: $:/plugins/oeyoews/tiddlywiki-fancybox/style
+tags: $:/tags/Stylesheet
+type: text/css
+
+a[data-fancybox] img {
+   border-radius: 0.25rem;
+}
+
+<!-- remove a tag with image(not text) underline -->
+<!-- -- because this order bug, not work -->
+a[data-fancybox] {
+  text-decoration: none !important;
+}

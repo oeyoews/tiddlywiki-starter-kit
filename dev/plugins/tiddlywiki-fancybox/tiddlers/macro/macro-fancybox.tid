@@ -1,11 +1,11 @@
-title: $:/plugins/oeyoews/tiddlywiki-fancybox/macro
+title: $:/plugins/oeyoews/tiddlywiki-fancybox/macro/fancybox
 tags: $:/tags/Macro
 
 \whitespace trim
 
 \define Fancybox(links, caption, group, width:256)
 <$list filter="[enlist<__links__>]" variable="link">
-    <a
+    <a style="text-decoration: none;"
       href=<<link>>
       data-fancybox=<<qualify  """$group$""">>
       data-caption="""$caption$""">
@@ -13,8 +13,7 @@ tags: $:/tags/Macro
         source=<<link>>
         loading="lazy"
         tooltip=<<link>>
-        width=$width$
-        class="rounded"/>
+        width=$width$/>
     </a>
 </$list>
 \end
@@ -52,3 +51,15 @@ tags: $:/tags/Macro
 <!--   </$list> -->
 <!-- </div> -->
 <!-- \end -->
+
+\whitespace trim
+<$button message="" tooltip="" aria-label="" class=<<tv-config-toolbar-class>>>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+{{}}
+</$list>
+<$list filter="[<tv-config-toolbar-text>match[yes]]">
+<span class="tc-btn-text">
+<$text text=""/>
+</span>
+</$list>
+</$button>
