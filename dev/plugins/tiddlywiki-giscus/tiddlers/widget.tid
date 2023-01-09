@@ -69,10 +69,10 @@ type: application/javascript
             commentNodes[i].classList.remove('giscus');
         }
         // Find or create
-      var commentNode = this.document.querySelector('.gk0wk-giscus[tiddler-title="' + id.replace('"', '\\"') + '"]');
+      var commentNode = this.document.querySelector('.oeyoews-giscus[tiddler-title="' + id.replace('"', '\\"') + '"]');
       if (!commentNode) {
         commentNode = this.document.createElement('div');
-        commentNode.setAttribute('class', 'giscus gk0wk-giscus');
+        commentNode.setAttribute('class', 'giscus oeyoews-giscus');
         commentNode.setAttribute('tiddler-title', id);
         parent.insertBefore(commentNode, nextSibling);
         this.domNodes.push(commentNode);

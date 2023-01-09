@@ -1,7 +1,7 @@
 title: $:/plugins/oeyoews/tiddlywiki-giscus/style
 tags: $:/tags/Stylesheet
 
-<!-- hide powered -->
+<!-- hide powered not work-->
 .gsc-left-header {
     display: none !important;
 }
@@ -12,6 +12,7 @@ tags: $:/tags/Stylesheet
 		color: red !important;
 }
 
+<!-- btn style -->
 .get-started {
 		display: inline-block;
     font-size: 16px;
