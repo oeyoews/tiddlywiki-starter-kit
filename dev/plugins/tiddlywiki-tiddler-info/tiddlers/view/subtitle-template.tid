@@ -1,0 +1,35 @@
+title: $:/core/ui/ViewTemplate/subtitle
+tags: $:/tags/ViewTemplate
+
+\whitespace trim
+
+\define nauthor()
+<span class="user-panel-avatar2">
+  <a style="text-decoration: none;" href={{{ [<currentTiddler>get[modifier]addprefix[https://github.com/]] }}} class="tc-tiddlylink-external" target="_blank" rel="noopener noreferrer">
+    <img style="vertical-align: -1px;" src={{{ [<currentTiddler>get[modifier]addprefix[https://github.com/]addsuffix[.png?size=22]] }}} alt=""/>
+</a>
+</span>
+\end
+
+<$reveal type="nomatch" stateTitle=<<folded-state>> text="hide" tag="div" retain="yes" animate="yes">
+<div class="tc-subtitle">
+<$list filter="[!is[system]all[current]has[modifier]]">
+<<nauthor>>
+<!-- <$link to={{!!modifier}}>
+<$view field="modifier"/>
+</$link>
+-->
+</$list>
+<$list filter="[all[current]has[created]]">
+Created &nbsp;<$view field="created" format="date" template="YYYY/0MM/0DD"/> &ensp;
+</$list>
+<$list filter="[all[current]has[modified]]">
+Updated &nbsp;<$view field="modified" format="date" template={{neotw/template/date-format}} />&ensp;
+</$list>
+<$list filter="[all[current]has[description]]">
+<<emoji bingo>>{{!!description}}
+</$list>
+</div>
+</$reveal>
+
+<!-- $:/core/ui/ViewTemplate/subtitle -->
