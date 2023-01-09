@@ -7,7 +7,7 @@ a[data-fancybox] img {
 }
 
 <!-- remove a tag with image(not text) underline -->
-<!-- -- because this order bug, not work -->
-a[data-fancybox] {
-  text-decoration: none !important;
-}
+<!-- because this order bug, not work -->
+<!-- a[data-fancybox] { -->
+<!--   text-decoration: none !important; -->
+<!-- } -->

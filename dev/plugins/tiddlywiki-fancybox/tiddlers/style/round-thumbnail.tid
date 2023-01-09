@@ -1,5 +1,5 @@
 title: $:/plugins/oeyoews/tiddlywiki-fancybox/style/rounded-thumbnail
-tags: $:/tags/Stylesheet
+<!-- tags: $:/tags/Stylesheet -->
 type: text/css
 
 .fancybox__container {
