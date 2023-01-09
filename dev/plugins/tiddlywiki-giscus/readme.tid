@@ -5,17 +5,26 @@ title: $:/plugins/oeyoews/tiddlywiki-giscus/readme
   <!-- 暂时停止使用 -->
 <!-- </div> -->
 
-* {{$:/plugins/oeyoews/tiddlywiki-giscus/icon}} A Commenting System Powered By Github Discussions. Let Visitors Leave Comments And Reactions On Your Site With Github! This Project Is Strongly Inspired By Utterances.
-
 <center>
+<$button class="get-started">
+  <a style="text-decoration: none;" target="_blank"
+  href="https://neotw.netlify.app/main.html#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-giscus">
+  Install Giscus {{$:/plugins/oeyoews/tiddlywiki-giscus/icon}}
+</a>
+</$button>
+
 <<nbtn "$:/plugins/oeyoews/tiddlywiki-giscus/giscus-config">>
 
 <$set name="repo" value="$:/plugins/oeyoews/tiddlywiki-giscus/config">
   <$button class="get-started" tooltip={{{ [<repo>get[repo]addsuffix[ discussions]] }}}>
-    <<giscusDiscussions>>
+    <<giscusDiscussions>> Discussions
   </$button>
 </$set>
 </center>
+
+<<<
+{{$:/plugins/oeyoews/tiddlywiki-giscus/icon}} A Commenting System Powered By Github Discussions. Let Visitors Leave Comments And Reactions On Your Site With Github! This Project Is Strongly Inspired By Utterances.
+<<<
 
 !! TODO
 
