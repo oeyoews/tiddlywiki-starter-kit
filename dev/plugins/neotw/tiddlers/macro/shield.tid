@@ -1,0 +1,10 @@
+title: $:/plugins/oeyoews/neotw/macro/shield
+tags: $:/tags/Macro
+
+\define shield(label,status,colour)
+\whitespace trim
+  <div class="shield shield-$colour$">
+    <span class="label">$label$</span>
+    <span class="status">$status$</span>
+  </div>
+\end
