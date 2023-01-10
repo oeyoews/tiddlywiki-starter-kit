@@ -1,9 +1,9 @@
 title: $:/plugins/oeyoews/tiddlywiki-github-share/ui/ribbon
 tags: $:/tags/PageControls
 
-<!-- // todo config -->
 <a
-  href="https://github.com/oeyoews/"
+  href={{{
+    [[$:/config/oeyoews/tiddlywiki-github-share/config]get[text]addprefix[https://github.com/]] }}}
   target="_blank"
   rel="noopener noreferrer"
   class="githubCorner"
