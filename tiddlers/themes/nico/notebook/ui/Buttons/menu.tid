@@ -1,12 +1,12 @@
 created: 20200429115248943
 creator: oeyoews
-modified: 20230110071558130
+modified: 20230110071832635
 modifier: oeyoews
 tags: 
 title: $:/themes/nico/notebook/ui/Buttons/menu
 type: text/vnd.tiddlywiki
 
-<$reveal state="$:/state/notebook-sidebar" type="match" text="yes" default="no" retain="yes" animate="yes">
+<$reveal state="$:/state/notebook-sidebar" type="match" text="yes" default="no" retain="yes" animate="no">
   <$button set="$:/state/notebook-sidebar" setTo="no" tooltip="Toggle menu" class="tc-btn-invisible sidebar-toggle open">
 	<$action-setfield $tiddler="$:/themes/nico/notebook/options/stickytitles" text="yes"/>
     {{$:/themes/nico/notebook/images/bars}}
