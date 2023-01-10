@@ -1,0 +1,8 @@
+caption: install-plugins
+key: ((install-plugins))
+tags: $:/tags/KeyboardShortcut
+title: $:/plugins/oeyoews/neotw-surfing-keys/install-plugins
+
+<$navigator story="$:/StoryList" history="$:/HistoryList">
+  <$action-navigate $to="$:/core/ui/ControlPanel/Modals/AddPlugins" $scroll="yes"/>
+</$navigator>
