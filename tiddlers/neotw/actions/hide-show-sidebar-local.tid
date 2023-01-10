@@ -1,13 +1,21 @@
 created: 20220521171656845
 creator: oeyoews
-modified: 20230105142247339
+modified: 20230110161817046
 modifier: oeyoews
 tags: $:/tags/StartupAction
 title: neotw/actions/hide-show-sidebar-local
 type: text/vnd.tiddlywiki
 
+\define tid() $:/state/notebook-sidebar
+
 <$list filter="[{$:/info/url/protocol}prefix[http]]">
 	<$action-setfield
-			$tiddler="$:/state/notebook-sidebar"
+			$tiddler=<<tid>>
 	$value="yes"/>
+</$list>
+
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
+	<$action-setfield
+			$tiddler=<<tid>>
+	$value="no"/>
 </$list>
