@@ -8,24 +8,12 @@ hide-body: yes
 https://gitlab.com/oeyoews/neotw/commit/
 \end
 
-<style>
-.gitcommit {
-  text-decoration:none;
-  color: #539bf5;
-}
-</style>
-
-<div style="color:gray;font-style:italic;">
-BuildTime:
-<$button>
-${timestamp}
-</$button> <br> <br>
-Last Updated:
-<$button>
-<a href={{{
-  [<longid>addprefix<baseurl>] }}} target="_blank" class="gitcommit"><<shortid>>
-  <<emoji bingo>> </a>
-</$button>
+<div style="color:gray;font-size: 14px;">
+  BuildTime: ${timestamp};
+  Last Updated(git):
+  <a style="text-decoration: none; colro: #539bf5;"href={{{
+    [<longid>addprefix<baseurl>] }}} target="_blank" class="gitcommit"><<shortid>>
+    <<emoji bingo>> </a>
 </div>
 
 <!-- vim:set et sw=2 ts=2 ft=tiddlywiki tw=80: -->
