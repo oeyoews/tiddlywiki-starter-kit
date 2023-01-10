@@ -1,6 +1,6 @@
 created: 20220910042749958
 creator: oeyoews
-modified: 20230110161905688
+modified: 20230110162622448
 modifier: oeyoews
 tags: 
 title: neotw/button/mode
@@ -10,7 +10,7 @@ type: text/vnd.tiddlywiki
 \define tid() neotw/style/readonly
 
 <$list filter="[{$:/info/url/protocol}prefix[https]]">
-<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
 
 <$list filter="$:/status/neotw/mode" variable=".state">
 
