@@ -1,0 +1,13 @@
+title: $:/plugins/oeyoews/tiddlywiki-github-share/ui/ribbon
+tags: $:/tags/PageControls
+
+<!-- // todo config -->
+<a
+  href="https://github.com/oeyoews/"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="githubCorner"
+  aria-label="View source on GitHub"
+>
+  {{$:/plugins/oeyoews/tiddlywiki-github-share/icon/corner}}
+</a>

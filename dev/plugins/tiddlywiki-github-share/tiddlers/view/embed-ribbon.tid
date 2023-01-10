@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/tiddlywiki-github-share/ui/embed-ribbon
+
+<$list
+  filter="[[$:/state/notebook-sidebar]is[missing]] [[$:/state/notebook-sidebar]get[text]match[no]]  ">
+{{$:/plugins/oeyoews/tiddlywiki-github-share/ui/ribbon}}
+</$list>
