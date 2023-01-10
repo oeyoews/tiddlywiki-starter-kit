@@ -1,3 +1,6 @@
 title: $:/plugins/${username}/${pluginname}/readme
 
 * ${description}
+
+* [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/${pluginname}]]
+* [[Demo|https://oeyoews.github.io/neotw/main]]
