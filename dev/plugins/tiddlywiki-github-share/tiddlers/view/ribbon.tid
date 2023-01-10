@@ -1,7 +1,9 @@
 title: $:/plugins/oeyoews/tiddlywiki-github-share/ui/ribbon
 tags: $:/tags/PageControls
+caption: github share button
+description: github share button
 
-<a
+<a style="text-decoration: none;"
   href={{{
     [[$:/config/oeyoews/tiddlywiki-github-share/config]get[text]addprefix[https://github.com/]] }}}
   target="_blank"
@@ -11,3 +13,14 @@ tags: $:/tags/PageControls
 >
   {{$:/plugins/oeyoews/tiddlywiki-github-share/icon/corner}}
 </a>
+
+<$button message="" tooltip="" aria-label="" class=<<tv-config-toolbar-class>>>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+{{}}
+</$list>
+<$list filter="[<tv-config-toolbar-text>match[yes]]">
+<span class="tc-btn-text">
+<$text text="github share button"/>
+</span>
+</$list>
+</$button>

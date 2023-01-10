@@ -2,8 +2,8 @@ caption: {{$:/xp/images/plugin}} PLUGINS
 color: #bbb
 created: 20220828001717749
 creator: oeyoews
-icon: $:/xp/images/plugin
-modified: 20220828002113649
+icon: 
+modified: 20230110113324790
 modifier: oeyoews
 title: PLUGINS
 type: text/vnd.tiddlywiki
