@@ -9,4 +9,4 @@ plugin-type: plugin
 source: https://github.com/flibbles/tw5-relink
 title: $:/plugins/flibbles/relink
 type: application/json
-version: 2.2.0
+version: 2.3.1

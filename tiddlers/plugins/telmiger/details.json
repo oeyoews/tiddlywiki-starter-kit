@@ -50,20 +50,13 @@
             "creator": "Thomas Elmiger",
             "created": "20180925155320737"
         },
-        "$:/plugins/telmiger/DetailsWidget/support": {
-            "created": "20200603204816640",
-            "text": "{{$:/plugins/telmiger/support}}",
-            "title": "$:/plugins/telmiger/DetailsWidget/support",
-            "tags": "",
-            "modified": "20200603204849180"
-        },
         "$:/plugins/telmiger/support": {
-            "created": "20200604213259310",
+            "created": "20181103150753927",
             "text": "!! Support the Author\n\n''Hi!'' I’m Thomas, the author of [[tid.li/tw5/plugins.html|https://tid.li/tw5/plugins.html]]. Feedback is always welcome, as well as funding for maintenance, support and new projects :)\n\n---\n\n!!! One Time Support\n\nIf using my plugins just makes you happy, consider a one time payment via ~PayPal to reward the effort:\n\nhttps://www.paypal.me/telmiger\n\n---\n\n!!! Permanent Support\n\nIf my tools make you more productive or save you time in your job or your everyday life, you can support me as a Patron: \n\nhttps://www.patreon.com/telmiger\n\n---\n\n!!! Thank You\n\nSubstantial parts of my availabe time go to the deveopment of useful plugins for [[TiddlyWiki|https://tiddlywiki.com/]]. – Many others do the same and I would like to thank them all, especially [[Jeremy Ruston|https://tiddlywiki.com/#JeremyRuston]] and all the active members of the community!\n\n//Hereby I promise to share future revenues (if any) with other developers who’s works I use or who inspired me.//\n\nIf you like my work, I would be very happy to hear from you.\n\n''Thank you very much for your support!''<br>\n//Thomas//\n\nhttps://thomas-elmiger.ch",
             "title": "$:/plugins/telmiger/support",
             "tags": "",
             "modifier": "Thomas Elmiger",
-            "modified": "20200604213305050",
+            "modified": "20181104091650389",
             "creator": "Thomas Elmiger"
         },
         "$:/plugins/telmiger/details/about": {
@@ -72,6 +65,13 @@
             "title": "$:/plugins/telmiger/details/about",
             "text": "Create HTML 5 `<details>` elements including a `<summary>` using this widget.\n\n<$details summary=\"The details element – W3C definition\">\n\n<<<\nThe [[details|http://w3c.github.io/html/interactive-elements.html#elementdef-details]] element represents a disclosure widget from which the user can obtain additional information or controls.\n<<< W3C\n\n</$details>\n\n<$details summary=\"Code example\" open=\"no\">\n\n```\n<$details summary=\"This should be open\" open=\"yes\">\n\nContent will be immediately visible if open is set to \"yes\".\n\n</$details>\n```\n\n</$details>",
             "tags": ""
+        },
+        "$:/plugins/telmiger/details/support": {
+            "created": "20200603204816640",
+            "text": "{{$:/plugins/telmiger/support}}",
+            "title": "$:/plugins/telmiger/details/support",
+            "tags": "",
+            "modified": "20220425065858878"
         }
     }
 }
