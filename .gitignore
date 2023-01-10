@@ -32,3 +32,4 @@ PluginName*
 *.tgz
 tiddlers/layout.tid
 # tiddlers/**/readonly.tid
+stickytitles.tid
