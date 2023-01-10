@@ -9,7 +9,13 @@ type: text/vnd.tiddlywiki
 
 <$list
   filter="[[$:/state/notebook-sidebar]is[missing]] [{$:/state/notebook-sidebar}removeprefix[no]]"
-  emptyMessage="""<$action-setfield $tiddler="$:/state/notebook-sidebar" text="no"/>"""
+  emptyMessage="""
+  <$action-setfield $tiddler="$:/state/notebook-sidebar" text="no"/>
+  <$action-setfield $tiddler="$:/themes/nico/notebook/options/stickytitles" text="yes"/>
+  """
 >
+  <!-- show sidebar -->
   <$action-setfield $tiddler="$:/state/notebook-sidebar" text="yes"/>
+  <!-- disable stick title -->
+  <$action-setfield $tiddler="$:/themes/nico/notebook/options/stickytitles" text="no"/>
 </$list>
