@@ -2,7 +2,7 @@ caption: tips
 created: 20221117023346122
 creator: oeyoews
 mask-closable: yes
-modified: 20221222071104366
+modified: 20230110072642520
 modifier: oeyoews
 subtitle: Tips
 tags: 
@@ -11,6 +11,11 @@ type: text/vnd.tiddlywiki
 
 <div class=neotw-gradient> 
 		<h4>
-			Try to press <kbd>alt shift s</kbd> to find more <<emoji>>.
+			Try to press 
+<$list
+  filter="[[$:/state/notebook-sidebar]get[text]match[no]] ">
+{{$:/themes/nico/notebook/ui/Buttons/menu}}
+</$list>
+			<kbd>alt shift s</kbd> to find more <<emoji>>.
 		</h4>
 </div>
