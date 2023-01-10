@@ -34,3 +34,8 @@ tags: $:/tags/Stylesheet
     border-radius: 5px;
     transition: background-color 0.2s ease-out 0s;
 }
+
+.giscus-footer {
+    color: gray;
+    font-size: 14px;
+}

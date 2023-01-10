@@ -1,5 +1,5 @@
 <!-- tags: $:/tags/ViewTemplate -->
-modified: 20230109075610262
+modified: 20230110151226948
 modifier: oeyoews
 tags: $:/tags/ViewTemplate
 title: $:/plugins/oeyoews/tiddlywiki-giscus/viewtemplate
@@ -12,8 +12,8 @@ type: text/vnd.tiddlywiki
     <$list filter="[[$:/language]get[text]removeprefix[$:/languages/]else[en-GB]]" variable="lang">
         <$set name="stateTiddler" value="$:/state/oeyoews/github-giscus-comments">
           <$reveal type="nomatch" state=<<stateTiddler>> text=<<currentTiddler>>>
-              <$button class="tc-btn-invisible" set=<<stateTiddler>> setTo=<<currentTiddler>> >
-                {{$:/core/images/down-arrow}}
+              <$button class="tc-btn-invisible giscus-footer" set=<<stateTiddler>> setTo=<<currentTiddler>> >
+                <!-- {{$:/core/images/down-arrow}} -->
                 {{$:/plugins/oeyoews/tiddlywiki-giscus/icon}}
                 <!-- en -->
                 <$list filter="[<lang>!search[zh]]">
@@ -27,12 +27,12 @@ type: text/vnd.tiddlywiki
           </$reveal>
           <$reveal type="match" state=<<stateTiddler>> text=<<currentTiddler>>>
                 <$set name="repo" value="$:/plugins/oeyoews/tiddlywiki-giscus/config">
-                  <$button class="" tooltip={{{ [<repo>get[repo]addsuffix[ discussions]] }}}>
+                  <$button class="tc-btn-invisible" tooltip={{{ [<repo>get[repo]addsuffix[ discussions]] }}}>
                     <<giscusDiscussions>>
                   </$button>
                 </$set>
-              <$button class="tc-btn-invisible" set=<<stateTiddler>> setTo="">
-                {{$:/core/images/up-arrow}}
+              <$button class="tc-btn-invisible giscus-footer" set=<<stateTiddler>> setTo="">
+                <!-- {{$:/core/images/up-arrow}} -->
                 <!-- {{$:/plugins/oeyoews/tiddlywiki-giscus/icon}} -->
                 <!-- en -->
                 <$list filter="[<lang>!search[zh]]">
