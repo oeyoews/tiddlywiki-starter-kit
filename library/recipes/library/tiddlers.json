@@ -256,6 +256,20 @@
         "requires-reload": "yes"
     },
     {
+        "title": "$:/plugins/oeyoews/tiddlywiki-github-share",
+        "description": "Github Share Button",
+        "author": "oeyoews",
+        "version": "0.0.1",
+        "core-version": ">=5.2.5",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "Tiddlywiki Github Share",
+        "list": "readme config example",
+        "dependents": "",
+        "readme": "* Github Share Button\n",
+        "requires-reload": "no"
+    },
+    {
         "title": "$:/plugins/oeyoews/tiddlywiki-tiddler-info",
         "description": "Show Tiddler Info",
         "author": "oeyoews",
