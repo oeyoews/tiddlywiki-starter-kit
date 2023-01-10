@@ -2,7 +2,7 @@ caption: tips
 created: 20221117023346122
 creator: oeyoews
 mask-closable: yes
-modified: 20230110072642520
+modified: 20230110092901029
 modifier: oeyoews
 subtitle: Tips
 tags: 
@@ -13,7 +13,7 @@ type: text/vnd.tiddlywiki
 		<h4>
 			Try to press 
 <$list
-  filter="[[$:/state/notebook-sidebar]get[text]match[no]] ">
+  filter="[[$:/state/notebook-sidebar]is[missing]] [[$:/state/notebook-sidebar]get[text]match[no]]  ">
 {{$:/themes/nico/notebook/ui/Buttons/menu}}
 </$list>
 			<kbd>alt shift s</kbd> to find more <<emoji>>.
