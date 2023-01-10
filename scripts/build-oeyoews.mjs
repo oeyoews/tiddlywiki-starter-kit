@@ -46,6 +46,6 @@ await spinner('Building ...', async () => {
 
   // after building
   await $`mv ${library} ${dist}`;
-  await $`cp -r files  src/index.html img/default-2.jpg ${dist}`;
+  await $`cp -r files  src/index.html img/default2.avif ${dist}`;
   msg.finish('Building Finished(for oyeoews)');
 });
