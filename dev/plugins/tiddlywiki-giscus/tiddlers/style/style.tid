@@ -39,3 +39,7 @@ tags: $:/tags/Stylesheet
     color: gray;
     font-size: 14px;
 }
+
+.giscus-footer:hover {
+    color: black
+}
