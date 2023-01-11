@@ -1,17 +1,18 @@
 created: 20220521171656845
 creator: oeyoews
-modified: 20230110161817046
+modified: 20230111163427878
 modifier: oeyoews
 tags: $:/tags/StartupAction
-title: neotw/actions/hide-show-sidebar-local
+title: neotw/actions/toggle-sidebar-local
 type: text/vnd.tiddlywiki
 
 \define tid() $:/state/notebook-sidebar
 
 <$list filter="[{$:/info/url/protocol}prefix[http]]">
 	<$action-setfield
-			$tiddler=<<tid>>
-	$value="yes"/>
+			$tiddler=<<tid>> $value="yes"/>
+	<$action-setfield 
+		$tiddler="$:/themes/nico/notebook/options/stickytitles" text="no"/> 
 </$list>
 
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
