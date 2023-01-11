@@ -1,7 +1,7 @@
 created: 20230109141720277
 creator: oeyoews
 list-before: $:/core/ui/ViewTemplate/title
-modified: 20230109154238145
+modified: 20230111164401251
 modifier: oeyoews
 tags: $:/tags/ViewTemplate
 title: $:/plugins/Gk0Wk/notionpage-covericon/body
@@ -18,7 +18,6 @@ type: text/vnd.tiddlywiki
   <!-- !icon && !cover -->
   <div class="gk0wk-notionpagebg gk0wk-notionpagebg-n">
     <div class="gk0wk-notionbg-addbuttons">
-      <$button setTitle=<<tiddler>> setField="icon" setTo={{$:/plugins/Gk0Wk/notionpage-covericon/default-icon}} tooltip="Add Icon">😁 Add Icon</$button>
       <$button setTitle=<<tiddler>> setField="page-cover" setTo={{$:/plugins/Gk0Wk/notionpage-covericon/default-pagecover-url}} tooltip="Add Cover">{{$:/core/images/picture}} Add Cover</$button>
     </div>
   </div>
@@ -39,9 +38,6 @@ type: text/vnd.tiddlywiki
         </div>
       </div>
     </$reveal>
-    <div class="gk0wk-notionbg-addbuttons">
-      <$button setTitle=<<tiddler>> setField="icon" setTo={{$:/plugins/Gk0Wk/notionpage-covericon/default-icon}} tooltip="Add Icon">😁 Add Icon</$button>
-    </div>
   </div>
 </$list>
 </$list>
