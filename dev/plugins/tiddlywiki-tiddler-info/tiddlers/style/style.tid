@@ -4,8 +4,8 @@ tags: $:/tags/Stylesheet
 .nauthor img {
     width: 100%;
     height: auto;
-    max-width: 12px;
+    max-width: 14px;
     max-height: 22px;
-    border-radius: 50%;
+    border-radius: 75%;
     aspect-ratio: 1 / 1;
 }

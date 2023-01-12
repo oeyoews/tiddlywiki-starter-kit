@@ -1,0 +1,19 @@
+title: $:/core/ui/ViewTemplate/subtitle
+tags: $:/tags/ViewTemplate
+
+<$reveal type="nomatch" stateTitle=<<folded-state>> text="hide" tag="div" retain="yes" animate="yes">
+<div class="tc-subtitle">
+<$list filter="[!is[system]all[current]has[modifier]]">
+<<nauthor>>
+</$list>
+<$list filter="[all[current]has[created]]">
+🖊️ writed <$view field="created" format="date" template="YYYY/0MM/0DD"/>
+</$list>
+<$list filter="[all[current]has[modified]]">
+📝 modified <$view field="modified" format="relativedate" />&ensp;
+</$list>
+<$list filter="[all[current]has[description]]">
+<<emoji bingo>>{{!!description}}
+</$list>
+</div>
+</$reveal>
