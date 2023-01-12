@@ -1,9 +1,6 @@
 name: Release Plugins
 on:
   push:
-    branches:
-      - main
-      - master
     tags:
       - 'v*.*.*'
     paths-ignore:
