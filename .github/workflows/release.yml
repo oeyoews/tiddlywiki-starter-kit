@@ -6,7 +6,7 @@ on:
       - master
     tags:
       - 'v*.*.*'
-     paths-ignore:
+    paths-ignore:
       - 'README.md'
   workflow_dispatch:
 

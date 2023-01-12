@@ -4,8 +4,8 @@ on:
     branches:
       - main
       - master
-      paths-ignore:
-       - 'README.md'
+    paths-ignore:
+      - 'README.md'
   workflow_dispatch:
 
 concurrency:
