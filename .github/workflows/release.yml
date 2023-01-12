@@ -1,11 +1,13 @@
 name: Release Plugins
 on:
-  schedule:
-    - cron: '0 16 * * 0'
   push:
-    branches: ['main']
+    branches:
+      - main
+      - master
     tags:
       - 'v*.*.*'
+     paths-ignore:
+      - 'README.md'
   workflow_dispatch:
 
 concurrency:
@@ -13,8 +15,9 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  deploy:
+  Plugins:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -33,10 +36,6 @@ jobs:
         # run: yarn global add tiddlywiki
         run: yarn install
 
-      - name: Build Neotw
-        run: |
-          npm run build:oeyoews
-
       - name: Create Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
@@ -44,13 +43,6 @@ jobs:
         # https://github.com/neovim/neovim/blob/234b8c5f3d57294dda06dbc6c1760e5983bd2c19/.github/workflows/release.yml#L264
         with:
           files: |
-            dist/library/recipes/library/tiddlers/*.json
+            dist/plugins/*.json
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: |
-            ./dist

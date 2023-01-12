@@ -28,7 +28,7 @@ await spinner('Building ...', async () => {
   await $`cp -r src/library-template ${libpath}`;
 
   const libbuild = libpath + '/library-template/';
-  const actions = ['library', 'main', 'example'];
+  const actions = ['library', 'main', 'example', 'plugins'];
 
   // different dirs
   // library
@@ -43,6 +43,9 @@ await spinner('Building ...', async () => {
   await $`npx ${bin} --build ${actions[1]} `;
   // rm twikoo
   await $`rm tiddlers/tidio.tid`;
+
+  // build readable name plugins
+  await $`npx ${bin} --build ${actions[3]} `;
 
   // after building
   await $`mv ${library} ${dist}`;

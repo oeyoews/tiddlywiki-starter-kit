@@ -34,6 +34,15 @@
             "$:/favicon.ico",
             "favicon.ico"
         ],
+        "plugins": [
+            "--output",
+            "dist/plugins",
+            "--render",
+            "[prefix[$:/plugins/oeyoews/]has[plugin-type]]",
+            "[removeprefix[$:/plugins/oeyoews/]addsuffix[.json]]",
+            "text/plain",
+            "$:/core/templates/json-tiddler"
+        ],
         "index": [
             "--output",
             "dist",
