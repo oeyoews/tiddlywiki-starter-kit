@@ -1,5 +1,5 @@
 tags: $:/tags/Macro
-title: $:/plugins/oeyoews/neotw/macros
+title: $:/plugins/oeyoews/neotw/system/macro
 
 \define neotw-username(username:"oeyoews")
 $username$

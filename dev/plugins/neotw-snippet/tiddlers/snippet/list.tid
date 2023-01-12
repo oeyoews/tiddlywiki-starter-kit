@@ -1,0 +1,7 @@
+caption: general filter
+tags: $:/tags/TextEditor/Snippet
+title: $:/language/Snippets/list-filter
+
+<$list filter=[[]]>
+$1
+</$list>

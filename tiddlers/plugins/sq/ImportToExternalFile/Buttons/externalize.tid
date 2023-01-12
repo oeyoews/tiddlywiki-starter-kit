@@ -1,0 +1,21 @@
+caption: {{$:/plugins/sq/ImportToExternalFile/images/save-to-file}} Save as external file
+created: 20230112091513522
+creator: oeyoews
+description: Save as external file
+modified: 20230112091513522
+modifier: oeyoews
+tags: $:/tags/ViewToolbar
+title: $:/plugins/sq/ImportToExternalFile/Buttons/externalize
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+<$button message="tm-externalise-tiddler" tooltip="Save as external file" aria-label="Save as external file" class=<<tv-config-toolbar-class>>>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+{{$:/plugins/sq/ImportToExternalFile/images/save-to-file}}
+</$list>
+<$list filter="[<tv-config-toolbar-text>match[yes]]">
+<span class="tc-btn-text">
+<$text text="Save as external file"/>
+</span>
+</$list>
+</$button>

@@ -1,6 +1,0 @@
-caption: define macro
-tags: $:/tags/TextEditor/Snippet
-title: neotw/snippet/define
-type: text/vnd.tiddlywiki
-
-\define $1()
