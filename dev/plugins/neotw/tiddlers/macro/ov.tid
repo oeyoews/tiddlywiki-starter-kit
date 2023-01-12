@@ -3,7 +3,7 @@ title: $:/plugins/oeyoews/neotw/macro/ov
 
 \whitespace trim
 
-\define ov(filter:"[prefix[$:/plugins/oeyoews/]plugin-type[plugin]]",
+\define ov(filter:"[all[tiddlers+shadows]plugin-type[plugin]author[oeyoews]]",
 template:"$:/core/ui/Components/plugin-info")
 {{{ $filter$ ||$template$ }}}
 \end

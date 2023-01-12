@@ -38,7 +38,7 @@
             "--output",
             "dist/plugins",
             "--render",
-            "[prefix[$:/plugins/oeyoews/]plugin-type[plugin]]",
+            "[all[tiddlers+shadows]plugin-type[plugin]author[oeyoews]]",
             "[removeprefix[$:/plugins/oeyoews/]addsuffix[.json]]",
             "text/plain",
             "$:/core/templates/json-tiddler"
