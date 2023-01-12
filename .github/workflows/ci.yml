@@ -1,9 +1,11 @@
-name: Release Plugins
-
+name: release-and-page
 on:
   push:
     tags:
       - 'v*.*.*'
+    branches:
+      - main
+      - master
     paths-ignore:
       - 'README.md'
   workflow_dispatch:
@@ -13,9 +15,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  Plugins:
+  pages:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -34,6 +35,10 @@ jobs:
         # run: yarn global add tiddlywiki
         run: yarn install
 
+      - name: Build Neotw
+        run: |
+          npm run build:oeyoews
+
       - name: Create Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
@@ -44,3 +49,10 @@ jobs:
             dist/plugins/*.json
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: |
+            ./dist
