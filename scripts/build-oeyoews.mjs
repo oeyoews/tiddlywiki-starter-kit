@@ -28,19 +28,19 @@ await spinner('Building ...', async () => {
   await $`cp -r src/library-template ${libpath}`;
 
   const libbuild = libpath + '/library-template/';
-  const actions = ['library', 'main', 'example', 'plugins'];
+  const actions = ['library', 'example', 'main', 'plugins'];
 
   // different dirs
   // library
   await $`npx ${bin} ${libbuild} --build ${actions[0]}`;
 
   // example
-  await $`npx ${bin} dev --build ${actions[2]} `;
+  await $`npx ${bin} dev --build ${actions[1]} `;
 
   // enable twikoo last before build for main
   await $`cp patch/tidio.tid tiddlers`;
   // main
-  await $`npx ${bin} --build ${actions[1]} `;
+  await $`npx ${bin} --build ${actions[2]} `;
   // rm twikoo
   await $`rm tiddlers/tidio.tid`;
 
