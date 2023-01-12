@@ -6,15 +6,15 @@
     <title>Neotw</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css"
-    />
+    <!-- <link -->
+    <!--   rel="stylesheet" -->
+    <!--   href="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.css" -->
+    <!-- /> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.js"></script> -->
+    <!-- <link -->
+    <!--   rel="stylesheet" -->
+    <!--   href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css" -->
+    <!-- /> -->
     <style type="text/css" media="screen">
       body {
         margin: 0;
@@ -147,8 +147,8 @@
           <div id="time">08:20</div>
           <div id="date">Tuesday, October 8</div>
           <div class="icons">
-            <i class="fa fa-wifi"></i>
-            <i class="fa fa-battery-full" id="batt"></i>
+            🔋
+            <span id="batt"></span>
           </div>
         </div>
       </div>
@@ -248,10 +248,10 @@
         navigator.getBattery().then(battery => {
           let m = '';
           let c = '';
-          m = battery.level * 100 + '%';
+          m = (battery.level * 100).toFixed(2) + ' %';
 
           if (battery.charging) {
-            // m += " ⚡";
+            m += ' ⚡';
             c = 'white';
           }
           // console.log(c, m);
