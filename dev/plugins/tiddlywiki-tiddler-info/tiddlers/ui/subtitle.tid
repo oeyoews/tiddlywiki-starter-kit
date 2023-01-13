@@ -26,7 +26,7 @@ tags: $:/tags/ViewTemplate
 <$text text={{{[<tid>get[omodified]else[📝]]}}} /> modified &nbsp;<$view field="modified" format="relativedate" />&nbsp;&nbsp;
 </$list>
 <$list filter="[all[current]has[description]]">
-<$text text={{{[<tid>get[odescription]else<checkbox>]}}} />&nbsp;{{!!description}} &nbsp;&nbsp;
+<$text text={{{[<tid>get[odescription]else[✅]]}}} />&nbsp;{{!!description}} &nbsp;&nbsp;
 </$list>
 </div>
 </$reveal>
