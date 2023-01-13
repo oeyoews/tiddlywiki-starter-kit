@@ -1,0 +1,14 @@
+title: $:/plugins/oeyoews/tiddlywiki-publish-tiddler/macro/publish
+tags: $:/tags/Macro
+
+<!-- use reveal -->
+\define opublish()
+<$checkbox tiddler=<<currentTiddler>> field="publish" checked=no unchecked=yes> dont publish this tiddler
+</$checkbox>
+<$list filter={{{ [<currentTiddler>get[publish]match[no]] }}}>
+{{$:/plugins/oeyoews/tiddlywiki-publish-tiddler/icon}}
+</$list>
+<$list filter={{{ [<currentTiddler>get[publish]match[yes]] }}}>
+{{$:/plugins/oeyoews/tiddlywiki-publish-tiddler/icon/filter}}
+</$list>
+\end

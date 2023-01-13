@@ -4,11 +4,15 @@ title: $:/plugins/oeyoews/tiddlywiki-publish-tiddler/readme
 * not save storylist to html
 * support Publish or not manager
 
+!! NOTE
+
+* 在第一次启动时, 控制台可能会多出很多 `syncer-browser-tiddlyweb: Checking dirty status` 类似与这样的日志
+
 !! TODO
 
-* support article by filter
-* add ui to manage field
 * add plugin work details with tiddlywiki
+* enable only dev
+* maybe should use stattiddler to use http
 
 * [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-publish-tiddler]]
 * [[Demo|https://oeyoews.github.io/neotw/main]]

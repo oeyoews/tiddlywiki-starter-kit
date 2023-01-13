@@ -1,0 +1,8 @@
+created: 20230113184537026
+creator: oeyoews
+modified: 20230113184545491
+modifier: oeyoews
+title: $:/plugins/oeyoews/tiddlywiki-publish-tiddler/filter
+type: text/vnd.tiddlywiki
+
+[!is[system]prefix[neotw/article]]

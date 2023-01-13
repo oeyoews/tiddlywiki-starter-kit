@@ -2,10 +2,10 @@
   "title": "$:/plugins/oeyoews/tiddlywiki-publish-tiddler",
   "description": "Publish Tiddler Manager",
   "author": "oeyoews",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "core-version": ">=5.2.5",
   "type": "application/json",
   "plugin-type": "plugin",
   "name": "Tiddlywiki Publish Tiddler",
-  "list": "readme config"
+  "list": "readme publish-config"
 }

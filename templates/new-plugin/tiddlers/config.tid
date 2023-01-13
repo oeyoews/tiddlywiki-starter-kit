@@ -1,1 +1,1 @@
-title: $:/config/${username}/${pluginname}/config
+title: $:/plugins/${username}/${pluginname}/config
