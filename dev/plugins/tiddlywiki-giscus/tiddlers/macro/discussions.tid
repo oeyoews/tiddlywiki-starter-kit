@@ -21,7 +21,7 @@ tags: $:/tags/Macro
 <$set name="target" value="$:/plugins/oeyoews/tiddlywiki-giscus/config">
   <$button class=<<tv-config-toolbar-class>>>
     <a href={{{ [<target>get[repo]addsuffix[/discussions]addprefix<base-repo>]}}} target="_blank">
-      <img alt="" src={{{ [<target>get[repo]addprefix<imgshield>addsuffix[?style=for-the-badge]] }}} >
+      <img alt="discussions count" src={{{ [<target>get[repo]addprefix<imgshield>addsuffix[?style=]] [<target>get[style]] +[join[]]}}} >
     </a>
   </$button>
 </$set>

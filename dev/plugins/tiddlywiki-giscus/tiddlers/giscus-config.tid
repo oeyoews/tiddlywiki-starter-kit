@@ -10,6 +10,17 @@ You may have to save and reload the wiki to activate changes.
 * Install giscus for your github repo [[Install Giscus|https://github.com/apps/giscus/installations/new]]
 * [[get giscus parameter|https://giscus.app/zh-CN]]
 
+change badge style &nbsp;
+<$select field="style" tiddler=<<tid>> tooltip='badge style'>
+</$set>
+  <option>for-the-badge</option>
+  <option>flat</option>
+  <option>plastic</option>
+  <option>flat-square</option>
+  <option>social</option>
+</$select>
+<<giscusBadge>>
+
 <table>
   <tr>
     <th align="left">Github Repo Link:</th>
