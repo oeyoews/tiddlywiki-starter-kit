@@ -2,11 +2,14 @@ title: $:/plugins/oeyoews/tiddlywiki-tiddler-info/macro/nauthor
 tags: $:/tags/Macro
 
 \define nauthor()
+<!-- deprecated -->
 <span class="nauthor">
-  <a style="text-decoration: none;" href={{{ [<currentTiddler>get[modifier]addprefix[https://github.com/]] }}} class="tc-tiddlylink-external" target="_blank" rel="noopener noreferrer">
-    <img style="vertical-align: -1px;" src={{{
-      [<currentTiddler>get[modifier]addprefix[https://github.com/]addsuffix[.png?size=22]]
-      }}} alt="oeyoews"/>
+  <a style="text-decoration: none;" href={{{ [<currentTiddler>get[creator]addprefix[https://github.com/]] }}} class="tc-tiddlylink-external" target="_blank" rel="noopener noreferrer">
+    <!-- <img style="vertical-align: -1px;" src={{{ -->
+    <!--   [<currentTiddler>get[modifier]addprefix[https://github.com/]addsuffix[.png?size=22]] -->
+    <!--   }}} alt="oeyoews"/> -->
+    [img width=22 [neotw/gavatar]]
 </a>
+{{!!creator}}
 </span>
 \end

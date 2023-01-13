@@ -2,10 +2,10 @@
   "title": "$:/plugins/oeyoews/tiddlywiki-tiddler-info",
   "description": "Show Tiddler Info",
   "author": "oeyoews",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "core-version": ">=5.2.5",
   "type": "application/json",
   "plugin-type": "plugin",
   "name": "Tiddlywiki Tiddler Info",
-  "list": "readme config example"
+  "list": "readme info-config"
 }
