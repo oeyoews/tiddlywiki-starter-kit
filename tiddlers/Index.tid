@@ -3,7 +3,7 @@ creator: oeyoews
 description: Index
 icon: 
 list: 
-modified: 20230113121511597
+modified: 20230113170419269
 modifier: oeyoews
 page-cover: https://oeyoewl.top/_next/image?url=https%3A%2F%2Fwww.notion.so%2Fimage%2Fhttps%253A%252F%252Fwww.notion.so%252Fimages%252Fpage-cover%252Fgradients_8.png%3Ftable%3Dblock%26id%3D2e6d4459-ab59-4235-9139-4e8a6a72ce35%26cache%3Dv2&w=2048&q=75
 tags: 
@@ -17,6 +17,7 @@ type: text/vnd.tiddlywiki
 
 {{$:/plugins/oeyoews/tiddlywiki-github-share/ui/embed-ribbon}}
 
+<$list filter="[{$:/info/url/protocol}prefix[https]]">
 <center>
 <<Fancybox
 """
@@ -28,6 +29,7 @@ caption: "Gallary"
 width: 256
 >>
 </center>
+</$list>
 
 <center>
 	{{neotw/browser/tip}}
