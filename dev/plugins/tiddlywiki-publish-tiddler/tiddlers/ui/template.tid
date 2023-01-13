@@ -1,5 +1,5 @@
 title: $:/plugins/oeyoews/tiddlywiki-publish-tiddler/template
-tags: $:/tags/ViewTemplate
+<!-- tags: $:/tags/ViewTemplate -->
 
 <$list filter="[all[current]!is[system]!is[draft]subfilter{$:/plugins/oeyoews/tiddlywiki-publish-tiddler/filter}]">
   <div style="text-align: right" class="tc-subtitle">

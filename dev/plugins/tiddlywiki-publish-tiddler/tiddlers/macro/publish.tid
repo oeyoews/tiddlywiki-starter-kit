@@ -12,3 +12,11 @@ tags: $:/tags/Macro
 {{$:/plugins/oeyoews/tiddlywiki-publish-tiddler/icon/filter}}
 </$list>
 \end
+
+\define pushishNotFilter()
+[<currentTiddler>get[publish]match[no]]
+\end
+
+\define pushishFilter()
+[<currentTiddler>get[publish]match[yes]]
+\end

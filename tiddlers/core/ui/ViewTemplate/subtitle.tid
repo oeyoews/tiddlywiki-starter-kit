@@ -1,5 +1,10 @@
-title: $:/core/ui/ViewTemplate/subtitle
+created: 20230113194516210
+creator: oeyoews
+modified: 20230113194615022
+modifier: oeyoews
 tags: $:/tags/ViewTemplate
+title: $:/core/ui/ViewTemplate/subtitle
+type: text/vnd.tiddlywiki
 
 \define tid() $:/plugins/oeyoews/tiddlywiki-tiddler-info/config
 \define tidGravatar() $:/plugins/oeyoews/tiddlywiki-tiddler-info/gravatar.png
@@ -28,8 +33,6 @@ tags: $:/tags/ViewTemplate
 <$list filter="[all[current]has[description]]">
 <$text text={{{[<tid>get[odescription]else[✅]]}}} />&nbsp;{{!!description}} &nbsp;&nbsp;
 </$list>
-<!-- support publish  add suffix-->
-<!-- <$list filter="[all[current]!is[system]subfilter{$:/plugins/oeyoews/tiddlywiki-publish-tiddler/filter}]"> -->
 <$list filter="[all[current]!is[system]]">
 <<opublish>>
 </$list>

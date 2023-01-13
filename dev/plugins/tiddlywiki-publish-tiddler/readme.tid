@@ -10,6 +10,7 @@ title: $:/plugins/oeyoews/tiddlywiki-publish-tiddler/readme
 
 !! TODO
 
+* use viewtoolbar replace template
 * add plugin work details with tiddlywiki
 * enable only dev
 * maybe should use stattiddler to use http
