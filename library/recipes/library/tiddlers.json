@@ -276,14 +276,14 @@
         "title": "$:/plugins/oeyoews/tiddlywiki-publish-tiddler",
         "description": "Publish Tiddler Manager",
         "author": "oeyoews",
-        "version": "0.0.1",
+        "version": "0.2.0",
         "core-version": ">=5.2.5",
         "type": "application/json",
         "plugin-type": "plugin",
         "name": "Tiddlywiki Publish Tiddler",
-        "list": "readme config",
+        "list": "readme publish-config",
         "dependents": "",
-        "readme": "* Publish Tiddler Manager\n* not save storylist to html\n* support Publish or not manager\n\n!! TODO\n\n* support article by filter\n* add ui to manage field\n* add plugin work details with tiddlywiki\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-publish-tiddler]]\n* [[Demo|https://oeyoews.github.io/neotw/main]]\n",
+        "readme": "* Publish Tiddler Manager\n* not save storylist to html\n* support Publish or not manager\n\n!! NOTE\n\n* 在第一次启动时, 控制台可能会多出很多 `syncer-browser-tiddlyweb: Checking dirty status` 类似与这样的日志\n\n!! TODO\n\n* add plugin work details with tiddlywiki\n* enable only dev\n* maybe should use stattiddler to use http\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-publish-tiddler]]\n* [[Demo|https://oeyoews.github.io/neotw/main]]\n",
         "requires-reload": "no"
     },
     {
