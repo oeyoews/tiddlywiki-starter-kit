@@ -2,29 +2,31 @@ title: $:/core/ui/ViewTemplate/subtitle
 tags: $:/tags/ViewTemplate
 
 \define tid() $:/plugins/oeyoews/tiddlywiki-tiddler-info/config
+\define tidGravatar() $:/plugins/oeyoews/tiddlywiki-tiddler-info/gravatar.png
 
 <$reveal type="nomatch" stateTitle=<<folded-state>> text="hide" tag="div" retain="yes" animate="yes">
 <div class="tc-subtitle">
 <$list filter="[all[current]has[creator]]">
 <span class="nauthor">
-  <a style="text-decoration: none;" href={{{ [<currentTiddler>get[creator]addprefix[https://github.com/]] }}} class="tc-tiddlylink-external" target="_blank" rel="noopener noreferrer">
+  <a style="text-decoration: none !important;" href={{{ [<tid>get[ousername]else[oeyoews]addprefix[https://github.com/]] }}} target="_blank" rel="noopener noreferrer">
     <!-- <img style="vertical-align: -1px;" src={{{ -->
     <!--   [<currentTiddler>get[modifier]addprefix[https://github.com/]addsuffix[.png?size=22]] -->
     <!--   }}} alt="oeyoews"/> -->
     <!-- config option -->
-    [img width=22 [neotw/gavatar]]
+    <!-- [img width=22 [neotw/gavatar]] -->
+    <$image source={{{ [<tid>get[ouserimage]else<tidGravatar>]}}} width=22 />
 </a>
 {{!!creator}} &nbsp;
 </span>
 </$list>
 <$list filter="[all[current]has[created]]">
-{{{[<tid>get[ocreated]]}}} created &nbsp;<$view field="created" format="date" template="YYYY/0MM/0DD"/>&nbsp;&nbsp;
+<$text text={{{[<tid>get[ocreated]else[👉]]}}} /> created &nbsp;<$view field="created" format="date" template="YYYY/0MM/0DD"/>&nbsp;&nbsp;
 </$list>
 <$list filter="[all[current]has[modified]]">
-{{{[<tid>get[omodified]]}}} modified &nbsp;<$view field="modified" format="relativedate" />&nbsp;&nbsp;
+<$text text={{{[<tid>get[omodified]else[📝]]}}} /> modified &nbsp;<$view field="modified" format="relativedate" />&nbsp;&nbsp;
 </$list>
 <$list filter="[all[current]has[description]]">
-{{{[<tid>get[odescription]]}}}&nbsp;{{!!description}} &nbsp;&nbsp;
+<$text text={{{[<tid>get[odescription]else<checkbox>]}}} />&nbsp;{{!!description}} &nbsp;&nbsp;
 </$list>
 </div>
 </$reveal>

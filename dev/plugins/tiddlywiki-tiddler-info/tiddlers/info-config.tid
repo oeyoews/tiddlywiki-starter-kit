@@ -48,5 +48,27 @@ title: $:/plugins/oeyoews/tiddlywiki-tiddler-info/info-config
     tag="input"/>
   </td>
 </tr>
+
+<tr>
+  <th>username</th>
+  <td>
+  <$edit-text
+    tiddler=<<tid>>
+    field="ousername"
+    placeholder="username"
+    tag="input"/>
+  </td>
+</tr>
+
+<tr>
+  <th>user image</th>
+  <td>
+  <$edit-text
+    tiddler=<<tid>>
+    field="ouserimage"
+    placeholder="gravatar.png"
+    tag="input"/>
+  </td>
+</tr>
 </table>
 </center>
