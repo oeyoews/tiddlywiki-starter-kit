@@ -4,5 +4,11 @@ title: $:/plugins/oeyoews/tiddlywiki-publish-tiddler/readme
 * not save storylist to html
 * support Publish or not manager
 
+!! TODO
+
+* support article by filter
+* add ui to manage field
+* add plugin work details with tiddlywiki
+
 * [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-publish-tiddler]]
 * [[Demo|https://oeyoews.github.io/neotw/main]]
