@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/tiddlywiki-publish-tiddler/macro/publish-filter
+tags: $:/tags/Macro
+
+\define publishFilter()
+-[[$:/StoryList]] -[all[tiddlers+shadows]!is[system]!has[draft.of]field:publish[no]] -[tag[private]] -[tag[todo]] -[tag[Journal]] -[tag[books]]
+\end
