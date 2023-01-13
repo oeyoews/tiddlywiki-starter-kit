@@ -1,4 +1,6 @@
 title: $:/plugins/oeyoews/neotw-confetti/confetti-welcome-action
 tags: $:/tags/StartupAction/PostRender
 
-<$action-sendmessage $message="tm-notify" $param="$:/plugins/oeyoews/neotw-confetti/confetti-welcome-msg"/>
+<$list filter="[{$:/info/url/protocol}prefix[https]]">
+  <$action-sendmessage $message="tm-notify" $param="$:/plugins/oeyoews/neotw-confetti/confetti-welcome-msg"/>
+</$list>
