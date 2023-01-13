@@ -1,12 +1,16 @@
 title: Comment Area
 
+<!-- badges -->
+
 <center>
   <h2>
-    这是一个留言区 🐈
+    这是一个留言区 🐈 <<giscusBadge>>
   </h2>
 
-Jump to github discussions <$button class="get-started" tooltip={{{ [<repo>get[repo]addsuffix[ discussions]] }}}>
-  <<giscusDiscussions>>
-</$button>
+Jump to github discussions <$set name="repo" value="$:/plugins/oeyoews/tiddlywiki-giscus/config">
+  <$button class="get-started" tooltip={{{ [<repo>get[repo]addsuffix[ discussions]] }}}>
+    <<giscusDiscussions>>
+  </$button>
+</$set>
 
 </center>

@@ -14,3 +14,17 @@ tags: $:/tags/Macro
 </$set>
 </$set>
 \end
+
+\define giscusBadge()
+<$set name="base-repo" value="https://github.com/">
+<$set name="imgshield" value="https://img.shields.io/github/discussions/">
+<$set name="target" value="$:/plugins/oeyoews/tiddlywiki-giscus/config">
+  <$button class=<<tv-config-toolbar-class>>>
+    <a href={{{ [<target>get[repo]addsuffix[/discussions]addprefix<base-repo>]}}} target="_blank">
+      <img alt="" src={{{ [<target>get[repo]addprefix<imgshield>addsuffix[?style=for-the-badge]] }}} >
+    </a>
+  </$button>
+</$set>
+</$set>
+</$set>
+\end
