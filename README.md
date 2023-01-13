@@ -54,6 +54,11 @@ yarn install # install
 npm run guide # or npx tiddlywiki --listen
 ```
 
+## Note
+
+- if you use google-chrome on ios, maybe have some error tip when you touch this
+  screen prepare to select some text, its weired
+
 ## 🐥 Configuration(deprecated)
 
 The [makefile](makefile) file is used as the centeral configuration for `neotw`
@@ -88,6 +93,9 @@ The [makefile](makefile) file is used as the centeral configuration for `neotw`
 <a target="_blank" href="https://app.netlify.com/sites/neotw/deploys">
 <img src="https://api.netlify.com/api/v1/badges/7654bd58-2df9-4962-9a81-4cca9cf78b9c/deploy-status" alt="Netlify Status" >
  </a>
+ <!-- <a href="https://gitter.im/oneotw/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge" target="_blank"> -->
+ <!-- <img src="https://badges.gitter.im/oneotw/community.svg" alt="Gitter"/> -->
+ <!-- </a> -->
 <!-- <a target="_blank" href="https://github.com/oeyoews/neotw/actions/workflows/pages/pages-build-deployment"> -->
 <!-- <img src="https://github.com/oeyoews/neotw/actions/workflows/pages/pages-build-deployment/badge.svg" alt="Status" > -->
 <!--  </a> -->
