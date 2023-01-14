@@ -3,14 +3,22 @@ tags: $:/tags/Macro
 
 <!-- use reveal -->
 \define opublish()
-<$checkbox tiddler=<<currentTiddler>> field="publish" checked=no unchecked=yes> dont publish this tiddler
-</$checkbox>
+<$checkbox tiddler=<<currentTiddler>> field="publish" checked=no unchecked=public></$checkbox>
 <$list filter={{{ [<currentTiddler>get[publish]match[no]] }}}>
 {{$:/plugins/oeyoews/tiddlywiki-publish-tiddler/icon}}
 </$list>
-<$list filter={{{ [<currentTiddler>get[publish]match[yes]] }}}>
+<$list filter={{{ [<currentTiddler>get[publish]match[public]] }}}>
 {{$:/plugins/oeyoews/tiddlywiki-publish-tiddler/icon/filter}}
 </$list>
+<$list filter={{{ [<currentTiddler>get[publish]match[private]] }}}>
+{{$:/plugins/oeyoews/tiddlywiki-publish-tiddler/icon/private}}
+</$list>
+<$select field="publish" tiddler=<<currentTiddler>> tooltip='status' default="public">
+</$set>
+  <option value="private">private</option>
+  <option value="no">hide</option>
+  <option value="public">public</option>
+</$select>
 \end
 
 \define pushishNotFilter()

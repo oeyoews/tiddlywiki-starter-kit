@@ -1,9 +1,4 @@
-created: 20230114055852408
-creator: oeyoews
-modified: 20230114055852408
-modifier: oeyoews
 title: $:/config/FileSystemPaths
-type: text/vnd.tiddlywiki
 
 [is[system]removeprefix[$:/]]
 [publish[private]addprefix[subwiki/private/]]

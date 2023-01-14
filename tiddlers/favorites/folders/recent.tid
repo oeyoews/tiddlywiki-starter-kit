@@ -1,9 +1,9 @@
 caption: Recently added
 created: 20220828022145583
 creator: oeyoews
-list: neotw/font-size neotw/mobile-warning $:/StaticBanner neotw/article/music-index $:/config/OfficialPluginLibrary $:/xp/ui/EditorToolbar/box-dropdown $:/config/shortcuts/box $:/xp/box-button/examples neotw/style/box column-github-toolbar/styles neotw/article/videos neotw/article/todo $:/config/FileSystemPaths
+list: neotw/font-size neotw/mobile-warning $:/StaticBanner neotw/article/music-index $:/config/OfficialPluginLibrary $:/xp/ui/EditorToolbar/box-dropdown $:/config/shortcuts/box $:/xp/box-button/examples neotw/style/box column-github-toolbar/styles neotw/article/videos neotw/article/todo
 list-before: 
-modified: 20230110162030858
+modified: 20230114054656594
 modifier: oeyoews
 tags: $:/tags/Favorites/Folder
 title: $:/favorites/folders/recent

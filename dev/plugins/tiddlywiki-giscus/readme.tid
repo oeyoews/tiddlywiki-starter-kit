@@ -24,6 +24,7 @@ title: $:/plugins/oeyoews/tiddlywiki-giscus/readme
 !! TODO
 
 * jump to comment directly
+* [[discus|https://bimlas.gitlab.io/tw5-disqus]]
 <!-- * js macro and widget to get config tid data difference(load order) -->
 <!-- * add toggle on local -->
 
