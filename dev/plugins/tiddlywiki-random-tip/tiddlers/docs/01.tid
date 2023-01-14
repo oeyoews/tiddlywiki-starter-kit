@@ -6,8 +6,11 @@ author: oeyoews
 
 <center>
   01 random tips xxx
-  * 此插件急需大量有关tiddlywiki的一些技巧提示的素材(每一条尽量简短成一句话)，欢迎提供 <<.icon $:/core/images/github>> [[Github|https://github.com/oeyoews/neotw]]
 </center>
+
+<div style="color: red; font-style: bold">
+  此插件需大量有关tiddlywiki的一些技巧提示的素材(每一条尽量简短成一句话)，欢迎提供 <<.icon $:/core/images/github>> [[Github|https://github.com/oeyoews/neotw]]
+</div>
 
 <div class="tc-subtitle">
 
