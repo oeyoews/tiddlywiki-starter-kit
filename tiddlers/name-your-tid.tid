@@ -1,0 +1,9 @@
+created: 20230114141504992
+creator: oeyoews
+modified: 20230114141733375
+modifier: oeyoews
+tags: 
+title: name-your-tid
+type: text/vnd.tiddlywiki
+
+* in tiddlywiki, if you want some better ui for permalink, pelease use tolower case and use one dash to connnect(ps: if use cn, please pass this tid)
