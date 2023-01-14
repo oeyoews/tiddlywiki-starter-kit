@@ -1,4 +1,4 @@
-tags: $:/tags/PageTemplate
+<!-- tags: $:/tags/PageTemplate -->
 title: $:/plugins/oeyoews/neotw-suringkeys/button/help
 
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">

@@ -1,6 +1,0 @@
-title: $:/plugins/oeyoews/neotw-notify/js
-tags: $:/tags/RawMarkup
-type: application/javascript
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.js"></script>
