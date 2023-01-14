@@ -1,11 +1,12 @@
-title: $:/plugins/oeyoews/tiddlywiki-random-tip/02
+title: $:/plugins/oeyoews/tiddlywiki-random-tip/01
 mask-closable: yes
 subtitle: 😺  Did you know?
 tags: Tiddlywiki5Tip
 author: oeyoews
 
 <center>
-  02 random tips
+  01 random tips xxx
+  * 此插件急需大量有关tiddlywiki的一些技巧提示的素材，欢迎提供 {{$:/core/images/github}} [[Github|https://github.com/oeyoews/neotw]]
 </center>
 
 <div class="tc-subtitle">
