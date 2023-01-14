@@ -297,7 +297,7 @@
         "name": "Tiddlywiki Random Tip",
         "list": "readme config example",
         "dependents": "",
-        "readme": "* Tiddlywiki Random Tip\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-random-tip]]\n* [[Demo|https://oeyoews.github.io/neotw/main]]\n\n!! NOTE\n\n* 如果想要在手机端禁止此插件， 请安装browser-sniff\n\n!! TODO\n\n* add new tip button\n* add viewtemplate for random tips\n* add delay js\n* add next tip button(maybe)\n",
+        "readme": "* Tiddlywiki Random Tip\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-random-tip]]\n* [[Demo|https://oeyoews.github.io/neotw/main]]\n\n!! NOTE\n\n* 如果想要在手机端禁止此插件， 请安装browser-sniff\n\n!! TODO\n\n* add new tip button\n* add viewtemplate for random tips\n* add delay js\n* add next tip button(maybe)\n\n!! Scope\n\n* wikitext syntax\n* other tips\n* ...\n",
         "requires-reload": "no"
     },
     {
