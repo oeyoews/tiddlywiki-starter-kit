@@ -15,6 +15,8 @@ title: $:/plugins/oeyoews/tiddlywiki-random-tip/readme
 * add viewtemplate for random tips
 * add delay js
 * add next tip button(maybe)
+* add config tags for general use
+* support add tips dynamic
 
 !! Scope
 
