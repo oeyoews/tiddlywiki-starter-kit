@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/tiddlywiki-random-tip/random-tip
+tags: $:/tags/StartupAction/PostRender
+
+<$list filter="[{$:/info/url/protocol}prefix[https]]">
+  <$action-sendmessage $message="tm-modal" $param={{{ [all[shadows+tiddlers]tag[Tiddlywiki5Tip]random[1]] }}} />
+</$list>

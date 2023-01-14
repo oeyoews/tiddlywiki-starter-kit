@@ -1,0 +1,29 @@
+title: $:/plugins/oeyoews/tiddlywiki-random-tip/02
+mask-closable: yes
+subtitle: 😺  Did you know?
+tags: Tiddlywiki5Tip
+author: oeyoews
+
+<center>
+  02 random tips
+</center>
+
+<div class="tc-subtitle">
+
+<b>random tip</b> plugin have writted <$count filter=[all[tiddlers+shadows]tag[Tiddlywiki5Tip]] /> tips,
+if you know more tip about tiddlywiki
+
+<details>
+<summark>more</summark>
+<$list filter="[<currentTiddler>has[author]]">
+by @{{!!author}}
+</$list>
+
+!! Want to contribute?
+
+You have noticed something missing that you saw lately? Do not keep the candies for yourself and please feel free to share with us! You can open a PR on {{neotw/icon/github01}} [[Github|https://github.com/oeyoews/neotw]]
+
+Feel free to read how to contribute to get started.
+</details>
+
+</div>
