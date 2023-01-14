@@ -5,6 +5,10 @@ title: $:/plugins/oeyoews/tiddlywiki-random-tip/readme
 * [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-random-tip]]
 * [[Demo|https://oeyoews.github.io/neotw/main]]
 
+!! NOTE
+
+* 如果想要在手机端禁止此插件， 请安装browser-sniff
+
 !! TODO
 
 * add new tip button
