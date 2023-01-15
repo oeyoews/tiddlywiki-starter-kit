@@ -8,8 +8,16 @@ list-before: $:/core/ui/Buttons/close
 
 <$list filter="[all[current]!is[system]]">
 <$button  tooltip="jump new-page and copy url" aria-label="new-page" class=<<tv-config-toolbar-class>>>
-<$action-sendmessage $message="tm-copy-to-clipboard" $param={{{ [[$:/info/url/full]get[text]removesuffix[main.html]addsuffix[notes/]][[$:/info/url/full]get[text]removesuffix[main]addsuffix[notes/]] [[]addsuffix<storyTiddler>encodeuricomponent[]] +[join[]] }}}/>
-<$action-sendmessage $message="tm-open-external-window" $param={{{ [[$:/info/url/full]get[text]removesuffix[main.html]addsuffix[notes/]][[$:/info/url/full]get[text]removesuffix[main]addsuffix[notes/]] [[]addsuffix<storyTiddler>encodeuricomponent[]] +[join[]] }}}/>
+<$list filter="[{$:/info/url/protocol}prefix[https]]">
+<!-- https -->
+<$action-sendmessage $message="tm-copy-to-clipboard" $param={{{ [[$:/info/url/full]get[text]search-replace:g:regexp[index.html|index|main.html|main|],[]addsuffix[static/]] [[]addsuffix<storyTiddler>encodeuricomponent[]] +[join[]] }}}/>
+<$action-sendmessage $message="tm-open-external-window" $param={{{ [[$:/info/url/full]get[text]search-replace:g:regexp[index.html|index|main.html|main|],[]addsuffix[static/]] [[]addsuffix<storyTiddler>encodeuricomponent[]] +[join[]] }}}/>
+</$list>
+<$list filter="[{$:/info/url/protocol}prefix[http]]">
+<!-- http  -->
+<$action-sendmessage $message="tm-copy-to-clipboard" $param={{{ [[$:/info/url/full]get[text]] [[]addsuffix<storyTiddler>encodeuricomponent[]] +[join[]] }}}/>
+<$action-sendmessage $message="tm-open-external-window" $param={{{ [[$:/info/url/full]get[text]] [[]addsuffix<storyTiddler>encodeuricomponent[]] +[join[]] }}}/>
+</$list>
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
 {{$:/plugins/oeyoews/tiddlywiki-static-page/icon}}
 </$list>
