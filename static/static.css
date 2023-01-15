@@ -5550,7 +5550,7 @@ li.CodeMirror-hint-active {
   }
 }/* Sidebar */@keyframes sidebar-appear {
   0%   {
-    left: -383px;
+    left: -419px;
   }
   100% {
     left: 0;
@@ -5558,7 +5558,7 @@ li.CodeMirror-hint-active {
 }.nc-sidebar {
   background: #ffffff;
   border-right: 1px solid #dbdbc7;;
-  width: 383px;
+  width: 419px;
   overflow-y: auto;
   overflow-x: hidden;
   z-index: 500;
