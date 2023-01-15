@@ -1,6 +1,11 @@
 title: $:/plugins/oeyoews/tiddlywiki-static-page/readme
 
-* Tiddlywiki Static Page
+<div style="color: red; font-style: bold">
+<center>
+ 此插件不建议普通tiddlywiki用户使用
+</center>
+</div>
 
+* Tiddlywiki Static Page
 * [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-static-page]]
 * [[Demo|https://oeyoews.github.io/neotw/main]]
