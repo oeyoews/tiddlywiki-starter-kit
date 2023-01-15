@@ -253,10 +253,10 @@
         "type": "application/json",
         "plugin-type": "plugin",
         "name": "Tiddlywiki Special Day",
-        "list": "readme",
+        "list": "readme date-pick-config",
         "dependents": "",
-        "readme": "* Tiddlywiki Special Day\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-special-day]]\n* [[Demo|https://oeyoews.github.io/neotw/main]]\n",
-        "requires-reload": "no"
+        "readme": "* {{$:/plugins/oeyoews/tiddlywiki-special-day/icon}} Tiddlywiki Special Day\n\n!! NOTE\n\n* info/startup-timestamp 使用世界时间, 比我们慢了八小时\n\n!! TODO\n\n* add some select option for some special festival\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-special-day]]\n* [[Demo|https://oeyoews.github.io/neotw/main]]\n",
+        "requires-reload": "yes"
     },
     {
         "title": "$:/plugins/oeyoews/tiddlywiki-static-page",
