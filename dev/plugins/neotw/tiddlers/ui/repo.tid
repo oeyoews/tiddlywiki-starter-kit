@@ -14,6 +14,7 @@ title: $:/plugins/oeyoews/neotw/button/repo
   <!-- <a style="color: gray; text-decoration: none" href={{{ [<target>addprefix<base-repo>]}}} target="_blank"> -->
   <!-- {{neotw/icon/github01}} -->
   <!-- </a> -->
+  <!-- maybe not conflict for fontawesome -->
   <$action-sendmessage $message="tm-open-external-window" $param={{{ [<target>addprefix<base-repo>]}}}/>
   {{neotw/icon/github01}}
 <$list filter="[<tv-config-toolbar-text>match[yes]]">
