@@ -1,6 +1,6 @@
 created: 20220521171656845
 creator: oeyoews
-modified: 20230115113443756
+modified: 20230115160214257
 modifier: oeyoews
 tags: $:/tags/StartupAction
 title: neotw/actions/toggle-sidebar-local
@@ -20,3 +20,10 @@ type: text/vnd.tiddlywiki
 			$tiddler=<<tid>>
 	$value="no"/>
 </$list>
+
+<!-- the-brain
+<$list filter="[{$:/info/url/protocol}prefix[http:]]">
+	<$action-setfield
+			$tiddler="$:/state/notebook-sidebar-section" $value="the-brain"/>
+</$list>
+-->

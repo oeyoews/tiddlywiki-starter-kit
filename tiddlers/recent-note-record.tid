@@ -1,0 +1,17 @@
+created: 20230115132708917
+creator: oeyoews
+modified: 20230115133227561
+modifier: oeyoews
+tags: 
+title: recent-note-record
+type: text/vnd.tiddlywiki
+
+<ul>
+  <$list filter="[!is[system]!<currentTiddler>days[-100]!sort[modified]]">
+    <li>
+		<$link><$view field="title"/></$link>
+        <$list filter="[<currentTiddler>days[-7]]"> @@color:red;^^新^^@@</$list>
+        <$list filter="[<currentTiddler>days[-60]!days[-7]]"> @@color:black;^^近期^^@@</$list>
+    </li>
+  </$list>
+</ul>

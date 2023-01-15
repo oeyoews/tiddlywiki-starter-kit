@@ -17,6 +17,17 @@ title: $:/plugins/oeyoews/tiddlywiki-random-tip/readme
 * add next tip button(maybe)
 * add config tags for general use
 * support add tips dynamic
+* use new and old
+
+<ul>
+  <$list filter="[!is[system]!<currentTiddler>!sort[modified]]">
+    <li>
+		<$link><$view field="title"/></$link>
+        <$list filter="[<currentTiddler>days[-7]]"> @@color:red;^^新^^@@</$list>
+        <$list filter="[<currentTiddler>days[-30]!days[-7]]"> @@color:black;^^近期^^@@</$list>
+    </li>
+  </$list>
+</ul>
 
 !! Scope
 

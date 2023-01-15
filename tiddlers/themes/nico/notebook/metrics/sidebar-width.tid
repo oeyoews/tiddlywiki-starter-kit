@@ -1,10 +1,10 @@
 created: 20200429144554294
 creator: oeyoews
-modified: 20221006122311036
+modified: 20230115153825900
 modifier: oeyoews
 tags: 
 title: $:/themes/nico/notebook/metrics/sidebar-width
 type: text/vnd.tiddlywiki
-width: 383
+width: 419
 
 {{!!width}}px

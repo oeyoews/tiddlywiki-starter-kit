@@ -1,11 +1,11 @@
 created: 20230115111810581
 creator: oeyoews
-modified: 20230115112735569
+modified: 20230115153539293
 modifier: oeyoews
 tags: 
 title: tiddlywiki-heatmap
 type: text/vnd.tiddlywiki
 
 <div style="max-width: 800px; height: 200px; margin: 0 auto;">
-<$echarts $tiddler="$:/plugins/Gk0Wk/echarts/addons/GitHubHeatMap.js" $width="100%" $height="100%" />
+<$echarts $tiddler="$:/plugins/Gk0Wk/echarts/addons/GitHubHeatMap.js" $width="100%" $height="100%"/>
 </div>

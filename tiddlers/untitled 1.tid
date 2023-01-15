@@ -1,0 +1,15 @@
+created: 20230115152101927
+creator: oeyoews
+modified: 20230115152505654
+modifier: oeyoews
+tags: 
+title: untitled 1
+type: text/vnd.tiddlywiki
+
+\define special-day(oday)
+<$list filter="[{$:/info/startup-timestamp}prefix[2023]]" >
+hi
+</$list>
+\end
+
+<<special-day>>

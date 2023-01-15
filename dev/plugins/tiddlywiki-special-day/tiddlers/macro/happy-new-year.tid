@@ -1,0 +1,8 @@
+title: $:/plugins/oeyoews/tiddlywiki-special-day/macro/happy-new-year
+tags: $:/tags/Macro
+
+\define special-day(day:20230122, tiddler:"$:/plugins/oeyoews/tiddlywiki-special-day/docs/happy-new-year-2023")
+<$list filter="[{$:/info/startup-timestamp}prefix<day>]" >
+{{$tiddler$}}
+</$list>
+\end
