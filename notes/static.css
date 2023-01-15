@@ -6681,8 +6681,7 @@ CSS.mc-announcement-banner {
 }input[type=range]:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
-}
-::selection {background-color:#D7D4F0;
+}::selection {background-color:#D7D4F0;
 	color: black;
 }strike {
 	color: gray;
