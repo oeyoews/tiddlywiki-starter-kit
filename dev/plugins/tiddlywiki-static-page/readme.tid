@@ -8,7 +8,13 @@ title: $:/plugins/oeyoews/tiddlywiki-static-page/readme
 
 !! Tutorials
 
-* Coming
+需要在tiddlywiki.info 文件中添加这样一段代码， 然后在命令行中运行 `(npx) tiddlywiki --build static`
+
+```wikitext
+"static": [ "--output", "dist",
+            "--rendertiddlers", "[!is[system]]", "$:/core/templates/static.tiddler.html", "static", "text/plain",
+            "--rendertiddler", "$:/core/templates/static.template.css", "static/static.css", "text/plain" ]
+```
 
 * Tiddlywiki Static Page
 * [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-static-page]]
