@@ -1,0 +1,12 @@
+title: $:/plugins/oeyoews/tiddlywiki-special-day/test
+
+\define tid() $:/plugins/oeyoews/tiddlywiki-special-day/config
+
+<$button>
+test your config
+<$set name="date-pick" value={{{ [<tid>get[date-pick]else[1996]] }}} >
+<$list filter="[{$:/info/startup-timestamp}prefix<date-pick>]" >
+  <$action-sendmessage $message="tm-modal" $param={{{ [all[shadows+tiddlers]tag[happynewyear]random[1]] }}} />
+</$list>
+</$set>
+</$button>

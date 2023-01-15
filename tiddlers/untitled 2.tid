@@ -1,0 +1,13 @@
+created: 20230115173213130
+creator: oeyoews
+modified: 20230115174013477
+modifier: oeyoews
+tags: 
+title: untitled 2
+type: text/vnd.tiddlywiki
+
+\define tid() $:/plugins/oeyoews/tiddlywiki-special-day/config
+
+<$set name="date" value={{{ [<tid>get[date-pick]] }}} >
+<$text text=<<date>> >
+</$set>

@@ -1,0 +1,18 @@
+title: $:/plugins/oeyoews/tiddlywiki-special-day/actions/actions
+tags: $:/tags/StartupAction/PostRender
+
+<!-- config option -->
+
+\define tid() $:/plugins/oeyoews/tiddlywiki-special-day/config
+
+<!-- dev -->
+<!-- online -->
+<!-- <$list filter="[{$:/info/url/protocol}prefix[https]]"> -->
+<!-- <$list filter="[{$:/info/url/protocol}prefix[http:]]"> -->
+<!-- dev data -->
+<$set name="date-pick" value={{{ [<tid>get[date-pick]else[1996]] }}} >
+<$list filter="[{$:/info/startup-timestamp}prefix<date-pick>]" >
+  <$action-sendmessage $message="tm-modal" $param={{{ [all[shadows+tiddlers]tag[happynewyear]random[1]] }}} />
+</$list>
+</$set>
+<!-- </$list> -->

@@ -1,0 +1,29 @@
+title: $:/plugins/oeyoews/tiddlywiki-special-day/date-pick-config
+
+\define tid() $:/plugins/oeyoews/tiddlywiki-special-day/config
+
+<table>
+  <tr>
+    <th align="left">date pick</th>
+    <td>
+      <$edit-text
+          tiddler=<<tid>>
+          field="date-pick"
+          tag="input"
+          placeholder="20230122" />
+    </td>
+  </tr>
+</table>
+
+!! Info
+
+* startup-time: {{$:/info/startup-timestamp}}
+
+!! Test
+
+* {{$:/plugins/oeyoews/tiddlywiki-special-day/test}}
+
+<$button>
+  <$action-deletetiddler $tiddler=<<tid>>/>
+  Reset Configuration
+</$button>

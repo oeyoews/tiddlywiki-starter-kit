@@ -1,6 +1,14 @@
 title: $:/plugins/oeyoews/tiddlywiki-special-day/readme
 
-* Tiddlywiki Special Day
+* {{$:/plugins/oeyoews/tiddlywiki-special-day/icon}} Tiddlywiki Special Day
+
+!! NOTE
+
+* info/startup-timestamp 使用世界时间, 比我们慢了八小时
+
+!! TODO
+
+* add some select option for some special festival
 
 * [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-special-day]]
 * [[Demo|https://oeyoews.github.io/neotw/main]]
