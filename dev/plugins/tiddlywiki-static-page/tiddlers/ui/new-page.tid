@@ -5,7 +5,7 @@ caption: new-page
 list-before: $:/core/ui/Buttons/close
 
 \whitespace trim
-<$button message="new-page" tooltip="new-page" aria-label="new-page" class=<<tv-config-toolbar-class>>>
+<$button  tooltip="new-page" aria-label="new-page" class=<<tv-config-toolbar-class>>>
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
 <a style="text-decoration:none;" href={{{  [[$:/info/url/full]get[text]removesuffix[main.html]addsuffix[notes/]][[$:/info/url/full]get[text]removesuffix[main]addsuffix[notes/]] [[]addsuffix<storyTiddler>encodeuricomponent[]] +[join[]] }}} target="_blank" rel="noopener noreferrer">
 {{$:/plugins/oeyoews/tiddlywiki-static-page/icon}}
