@@ -65,11 +65,11 @@
             "--rendertiddlers",
             "[!is[system]]",
             "$:/core/templates/static.tiddler.html",
-            "notes",
+            "static",
             "text/plain",
             "--rendertiddler",
             "$:/core/templates/static.template.css",
-            "notes/static.css",
+            "static/static.css",
             "text/plain"
         ],
         "tiddlywikicore": [
