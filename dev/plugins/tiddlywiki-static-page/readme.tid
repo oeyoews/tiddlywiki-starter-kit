@@ -6,6 +6,10 @@ title: $:/plugins/oeyoews/tiddlywiki-static-page/readme
 </center>
 </div>
 
+!! Tips
+
+<!-- *  -->
+
 !! Tutorials
 
 需要在tiddlywiki.info 文件中添加这样一段代码， 然后在命令行中运行 `(npx) tiddlywiki --build static`
