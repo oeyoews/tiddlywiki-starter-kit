@@ -7,5 +7,5 @@
   "type": "application/json",
   "plugin-type": "plugin",
   "name": "Tiddlywiki Static Page",
-  "list": "readme config example"
+  "list": "readme"
 }
