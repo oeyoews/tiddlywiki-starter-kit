@@ -1,6 +1,6 @@
 created: 20220521171656845
 creator: oeyoews
-modified: 20230111163427878
+modified: 20230115113443756
 modifier: oeyoews
 tags: $:/tags/StartupAction
 title: neotw/actions/toggle-sidebar-local
@@ -8,7 +8,7 @@ type: text/vnd.tiddlywiki
 
 \define tid() $:/state/notebook-sidebar
 
-<$list filter="[{$:/info/url/protocol}prefix[http]]">
+<$list filter="[{$:/info/url/protocol}prefix[http:]]">
 	<$action-setfield
 			$tiddler=<<tid>> $value="yes"/>
 	<$action-setfield 
