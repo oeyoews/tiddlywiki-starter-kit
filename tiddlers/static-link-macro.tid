@@ -1,11 +1,11 @@
 created: 20230115053315835
 creator: oeyoews
-modified: 20230115060612824
+modified: 20230115061443232
 modifier: oeyoews
 tags: $:/tags/Macro
 title: static-link-macro
 type: text/vnd.tiddlywiki
 
 \define static-link()
-<button class="tc-btn-invisible" aria-label="静态网页链接"><a style="text-decoration:none;" href={{{ [[$:/info/url/full]get[text]removesuffix[main.html]addsuffix[notes/]] [[]addsuffix<storyTiddler>encodeuricomponent[]] +[join[]] }}} target="_blank" rel="noopener noreferrer">🔗</a></button>
+<button class="tc-btn-invisible" aria-label="静态网页链接"><a style="text-decoration:none;" href={{{  [[$:/info/url/full]get[text]removesuffix[main.html]addsuffix[notes/]][[$:/info/url/full]get[text]removesuffix[main]addsuffix[notes/]] [[]addsuffix<storyTiddler>encodeuricomponent[]] +[join[]] }}} target="_blank" rel="noopener noreferrer">🔗</a></button>
 \end
