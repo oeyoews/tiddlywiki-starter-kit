@@ -1,0 +1,16 @@
+title: $:/plugins/oeyoews/tiddlywiki-static-link/ui/static-link
+tags: $:/tags/ViewToolbar
+list-before: $:/core/ui/Buttons/close
+description: static-link
+caption: static-link
+
+\whitespace trim
+<$button message="tm-copy-to-clipboard" param={{{ [[$:/info/url/full]get[text]removesuffix[main.html]addsuffix[notes/]][[$:/info/url/full]get[text]removesuffix[main]addsuffix[notes/]] [[]addsuffix<storyTiddler>encodeuricomponent[]] +[join[]] }}}
+ tooltip="copy static link" class=<<tv-config-toolbar-class>>>
+	<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+	  {{$:/core/images/link}}
+	</$list>
+	<$list filter="[<tv-config-toolbar-text>match[yes]]">
+	  <span class="tc-btn-text"> copy title </span>
+	</$list>
+</$button>
