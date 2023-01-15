@@ -11,9 +11,11 @@ title: $:/plugins/oeyoews/neotw/button/repo
 
 <!-- if use font awesome, just remove a icon content -->
 <$button tooltip=<<tip>> aria-label=<<tip>> class=<<tv-config-toolbar-class>>>
-  <a style="color: gray; text-decoration: none" href={{{ [<target>addprefix<base-repo>]}}} target="_blank">
+  <!-- <a style="color: gray; text-decoration: none" href={{{ [<target>addprefix<base-repo>]}}} target="_blank"> -->
+  <!-- {{neotw/icon/github01}} -->
+  <!-- </a> -->
+  <$action-sendmessage $message="tm-open-external-window" $param={{{ [<target>addprefix<base-repo>]}}}/>
   {{neotw/icon/github01}}
-  </a>
 <$list filter="[<tv-config-toolbar-text>match[yes]]">
   <span class="tc-btn-text">
     <$text text=<<tip>>/>
