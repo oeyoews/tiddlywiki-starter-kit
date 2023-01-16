@@ -1,5 +1,10 @@
+author: Eric Shulman elsdesign@gmail.com
+code-body: hide
 created: 20150728060155235
-modified: 20220424071912984
+creator: oeyoews
+hide-body: yes
+modified: 20230116061330629
+modifier: oeyoews
 module-type: widget
 tags: 
 title: TiddlyTools/Time/action-timeout.js

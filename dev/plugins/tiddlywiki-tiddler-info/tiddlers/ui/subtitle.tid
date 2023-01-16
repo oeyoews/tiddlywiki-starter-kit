@@ -6,14 +6,10 @@ tags: $:/tags/ViewTemplate
 
 <$reveal type="nomatch" stateTitle=<<folded-state>> text="hide" tag="div" retain="yes" animate="yes">
 <div class="tc-subtitle">
+<!-- 300 -->
 <$list filter="[all[current]has[creator]]">
 <span class="nauthor">
   <a style="text-decoration: none !important;" href={{{ [<tid>get[ousername]else[oeyoews]addprefix[https://github.com/]] }}} target="_blank" rel="noopener noreferrer">
-    <!-- <img style="vertical-align: -1px;" src={{{ -->
-    <!--   [<currentTiddler>get[modifier]addprefix[https://github.com/]addsuffix[.png?size=22]] -->
-    <!--   }}} alt="oeyoews"/> -->
-    <!-- config option -->
-    <!-- [img width=22 [neotw/gavatar]] -->
     <$image source={{{ [<tid>get[ouserimage]else<tidGravatar>]}}} width=22 />
 </a>
 {{!!creator}} &nbsp;
@@ -28,10 +24,29 @@ tags: $:/tags/ViewTemplate
 <$list filter="[all[current]has[description]]">
 <$text text={{{[<tid>get[odescription]else[✅]]}}} />&nbsp;{{!!description}} &nbsp;&nbsp;
 </$list>
-<!-- support publish  add suffix-->
-<!-- <$list filter="[all[current]!is[system]subfilter{$:/plugins/oeyoews/tiddlywiki-publish-tiddler/filter}]"> -->
+
+<!-- another view -->
+<!-- on dev -->
+<!-- not work ??? -->
+<!-- <$list filter="[{$:/info/url/protocol}prefix[http:]]"> -->
+<$list filter="[!is[system]<currentTiddler>!days:created[-300]]" >
+⚠️  {{!!title}} 条目
+<$list filter="[all[current]!is[system]has[created]]">
+创建于 <$view field="created" format="date" template="YYYY-0MM-0DD"/>
+</$list>
+<$list filter="[all[current]!is[system]has[modified]]">
+, 修改于 <$view field="modified" format="relativedate" />
+</$list>
+, 部分内容可能已过期， 请酌情阅读
+</$list>
+<!-- </$list> -->
+
+<!-- local manage -->
+<$list filter="[{$:/info/url/protocol}prefix[http:]]">
 <$list filter="[all[current]!is[system]]">
 <<opublish>>
 </$list>
+</$list>
+
 </div>
 </$reveal>

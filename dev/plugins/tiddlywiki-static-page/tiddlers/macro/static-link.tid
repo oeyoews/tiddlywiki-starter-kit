@@ -1,6 +1,7 @@
 title: $:/plugins/oeyoews/tiddlywiki-static-page/macro/static-link
-tags: $:/tags/Macro
+<!-- tags: $:/tags/Macro -->
 
+<!-- deprecated -->
 \define static-link()
 <button class="tc-btn-invisible" aria-label="static link"><a style="text-decoration:none;" href={{{  [[$:/info/url/full]get[text]removesuffix[main.html]addsuffix[notes/]][[$:/info/url/full]get[text]removesuffix[main]addsuffix[notes/]] [[]addsuffix<storyTiddler>encodeuricomponent[]] +[join[]] }}} target="_blank" rel="noopener noreferrer">{{$:/plugins/oeyoews/tiddlywiki-static-page/icon}}</a></button>
 \end
