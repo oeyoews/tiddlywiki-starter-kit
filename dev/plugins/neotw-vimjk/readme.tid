@@ -1,3 +1,6 @@
 title: $:/plugins/oeyoews/codemirror-keymap-vimjk/readme
 
-Overwrite codemirror-keymap-vim by [[oeyoews|https://github.com/oeyoews]]
+Overwrite codemirror-keymap-vim by [[@oeyoews|https://github.com/oeyoews]]
+
+* support `jk` mapping
+* support H L replace 0 $
