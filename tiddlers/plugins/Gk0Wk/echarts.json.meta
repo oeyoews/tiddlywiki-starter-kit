@@ -1,7 +1,6 @@
-Modern.TiddlyDev#SHA256-Hashed: abe49192650b3ebb05b8e0239bf221a17cfe971dd1a439c4c5e410dfd69309af
+Modern.TiddlyDev#SHA256-Hashed: a5aae69e144008ec3379ffd3a505922ea25bc870da6448a3453026e524e058f8
 author: Gk0Wk
-core-version: >=5.2.0
-dependents: $:/plugins/felixhayashi/hotzone
+dependents: 
 description: ECharts for TiddlyWiki5
 list: readme LICENSE
 name: ECharts
@@ -9,4 +8,4 @@ plugin-type: plugin
 source: https://github.com/tiddly-gittly/tw-echarts/tree/master/plugins/Gk0Wk/echarts
 title: $:/plugins/Gk0Wk/echarts
 type: application/json
-version: 0.1.2
+version: 0.1.3

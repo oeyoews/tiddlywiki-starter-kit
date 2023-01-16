@@ -1,0 +1,19 @@
+created: 20230116071902869
+creator: oeyoews
+modified: 20230116071934473
+modifier: oeyoews
+tags: 
+title: gallary
+type: text/vnd.tiddlywiki
+
+<center>
+<<Fancybox
+"""
+https://lipsum.app/id/77/1200x675
+https://lipsum.app/id/66/1200x675
+https://lipsum.app/id/55/1200x675
+"""
+caption: "Gallary"
+width: 256
+>>
+</center>
