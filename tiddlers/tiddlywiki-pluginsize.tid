@@ -1,9 +1,0 @@
-created: 20230115112713958
-creator: oeyoews
-modified: 20230115112726764
-modifier: oeyoews
-tags: 
-title: tiddlywiki-pluginsize
-type: text/vnd.tiddlywiki
-
-<$echarts $tiddler="$:/plugins/Gk0Wk/echarts/addons/PluginsSize" $height="500px"/>
