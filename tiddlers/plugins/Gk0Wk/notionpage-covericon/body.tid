@@ -1,7 +1,7 @@
 created: 20230109141720277
 creator: oeyoews
 list-before: $:/core/ui/ViewTemplate/title
-modified: 20230111164401251
+modified: 20230116073017930
 modifier: oeyoews
 tags: $:/tags/ViewTemplate
 title: $:/plugins/Gk0Wk/notionpage-covericon/body
@@ -45,13 +45,6 @@ type: text/vnd.tiddlywiki
 <$list filter="[<cover>match[]]">
   <!-- icon && !cover -->
   <div class="gk0wk-notionpagebg gk0wk-notionpagebg-i">
-    <$button popup=<<stateTiddler1>> class="gk0wk-notionpagebg-icon1">
-    <$list filter="[title<icon>is[shadow]!is[tiddler]]]"><$transclude tiddler=<<icon>>/></$list>
-    <$list filter="[title<icon>is[tiddler]!is[shadow]]"><$transclude tiddler=<<icon>>/></$list>
-    <$list filter="[title<icon>!is[shadow]!is[tiddler]]"><$wikify name="rendered" text=<<icon>> output=html><<rendered>></$wikify></$list></$button>
-    <$reveal type="popup" state=<<stateTiddler1>> position="below" tag="div" class="tc-popup-keep">
-      {{$:/plugins/Gk0Wk/notionpage-covericon/icon-selector}}
-    </$reveal>
     <div class="gk0wk-notionbg-addbuttons">
       <$button setTitle=<<tiddler>> setField="page-cover" setTo={{$:/plugins/Gk0Wk/notionpage-covericon/default-pagecover-url}} tooltip="Add Cover">{{$:/core/images/picture}} Add Cover</$button>
     </div>
@@ -65,13 +58,6 @@ type: text/vnd.tiddlywiki
 			<$image source=<<cover>> width="100%" height="auto"/>
 		</a>
 		</div>
-    <$button popup=<<stateTiddler1>> class="gk0wk-notionpagebg-icon2">
-    <$list filter="[title<icon>is[shadow]!is[tiddler]]"><$transclude tiddler=<<icon>>/></$list>
-    <$list filter="[title<icon>is[tiddler]!is[shadow]]"><$transclude tiddler=<<icon>>/></$list>
-    <$list filter="[title<icon>!is[shadow]!is[tiddler]]"><$wikify name="rendered" text=<<icon>> output=html><<rendered>></$wikify></$list></$button>
-    <$reveal type="popup" state=<<stateTiddler1>> position="below" tag="div" class="tc-popup-keep">
-      {{$:/plugins/Gk0Wk/notionpage-covericon/icon-selector}}
-    </$reveal>
     <$button popup=<<stateTiddler2>> class="gk0wk-notionpageb-changecover" tooltip="Change Cover">Change Cover</$button>
     <$reveal type="popup" state=<<stateTiddler2>> position="belowleft" tag="div" class="tc-popup-keep">
       <div class="gk0wk-notionpageb-changecover-box">
