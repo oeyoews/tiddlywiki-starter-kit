@@ -42,10 +42,9 @@ tags: $:/tags/ViewTemplate
 <!-- </$list> -->
 
 <!-- local manage -->
-<$list filter="[{$:/info/url/protocol}prefix[http:]]">
+<!-- https have bug, will creat http: tid -->
 <$list filter="[all[current]!is[system]]">
 <<opublish>>
-</$list>
 </$list>
 
 </div>
