@@ -1,13 +1,9 @@
 caption: The Brain
-created: 20230115153021316
 creator: oeyoews
 list-after: $:/core/ui/SideBar/Open
-modified: 20230116085209664
-modifier: oeyoews
 tags: $:/tags/SideBar
 title: the-brain
-type: text/vnd.tiddlywiki
 
-<div style="">
+<div>
 <$echarts $tiddler="$:/plugins/Gk0Wk/echarts/addons/TheBrain.js" aliasField="caption" levels="1" graphTitle="The Barin View" previewDelay="-1" $width="350px" $height="400px"/>
 </div>

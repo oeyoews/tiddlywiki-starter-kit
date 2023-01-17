@@ -1,13 +1,20 @@
-created: 20230115111810581
+created: 20230117054555920
 creator: oeyoews
-modified: 20230116082019554
+heatmap-year: 2022
+modified: 20230117060039155
 modifier: oeyoews
 tags: 
 title: tiddlywiki-heatmap
 type: text/vnd.tiddlywiki
 
+<$select field="heatmap-year" default="year">
+<option disabled>year</option>
+<option>2023</option>
+<option>2022</option>
+</$select>
+
 <center>
 <div style="margin: 0 auto;">
-<$echarts $tiddler="$:/plugins/Gk0Wk/echarts/addons/GitHubHeatMap.js" $width="700px" $height="300px" $theme="light"/>
+<$echarts $tiddler="$:/plugins/Gk0Wk/echarts/addons/GitHubHeatMap.js" $width="700px" $height="300px" $theme="light" year={{{ [<currentTiddler>get[heatmap-year]] }}}/>
 </div>
 <center>

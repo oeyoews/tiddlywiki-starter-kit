@@ -1,13 +1,7 @@
-created: 20230116082932479
-creator: oeyoews
-modified: 20230116082944652
-modifier: oeyoews
-tags: 
 title: tiddlywiki-heatmap 2022
-type: text/vnd.tiddlywiki
 
-<center>
-<div style="margin: 0 auto;">
-<$echarts $tiddler="$:/plugins/Gk0Wk/echarts/addons/GitHubHeatMap.js" $width="700px" $height="300px" $theme="light" year=2022/>
-</div>
-<center>
+<!-- <center> -->
+<!-- <div style="margin: 0 auto;"> -->
+<!-- <$echarts $tiddler="$:/plugins/Gk0Wk/echarts/addons/GitHubHeatMap.js" $width="700px" $height="300px" $theme="light" year=2022/> -->
+<!-- </div> -->
+<!-- <center> -->
