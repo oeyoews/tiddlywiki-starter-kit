@@ -1,0 +1,21 @@
+title: $:/plugins/oeyoews/tiddlywiki-show-the-brain/viewtemplate
+tags: $:/tags/ViewTemplate
+
+<$list filter="[all[current]!is[system]!is[draft]]" variable="thebrain">
+  <span>
+        &nbsp;<<.icon "$:/plugins/oeyoews/tiddlywiki-show-the-brain/icon">>
+        <$set name="stateTiddler" value="$:/state/oeyoews/the-brain">
+          <$reveal type="nomatch" state=<<stateTiddler>> text=<<currentTiddler>>>
+              <$button class="tc-btn-invisible the-brain-footer" set=<<stateTiddler>> setTo=<<currentTiddler>> >
+                  Show The Brain
+              </$button>
+          </$reveal>
+          <$reveal type="match" state=<<stateTiddler>> text=<<currentTiddler>>>
+              <$button class="tc-btn-invisible the-brain-footer" set=<<stateTiddler>> setTo="">
+                  Fold The Brin
+              </$button>
+                    {{the-brain}}
+          </$reveal>
+        </$set>
+  </span>
+</$list>

@@ -1,0 +1,11 @@
+title: $:/plugins/oeyoews/tiddlywiki-show-the-brain/style
+tags: $:/tags/Stylesheet
+
+.the-brain-footer {
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+.the-brain-footer:hover {
+    font-weight: bold;
+}
