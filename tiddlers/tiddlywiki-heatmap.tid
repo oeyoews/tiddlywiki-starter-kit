@@ -1,9 +1,9 @@
 caption: {{calendar}} Heatmap
 created: 20230117054555920
 creator: oeyoews
-heatmap-year: 2023
+heatmap-year: 2022
 icon: calendar
-modified: 20230117132916222
+modified: 20230117155919498
 modifier: oeyoews
 neotw: index
 tags: 
@@ -18,6 +18,6 @@ type: text/vnd.tiddlywiki
 
 <center>
 <div style="margin: 0 auto;">
-<$echarts $tiddler="$:/plugins/Gk0Wk/echarts/addons/GitHubHeatMap.js" $width="700px" $height="300px" $theme="light" year={{{ [<currentTiddler>get[heatmap-year]] }}}/>
+<$echarts $tiddler="$:/plugins/Gk0Wk/echarts/addons/GitHubHeatMap.js" $width="700px" $height="300px" $theme="light" subfilter="[!is[draft]!is[system]!prefix[neotw/]]" year={{{ [<currentTiddler>get[heatmap-year]] }}}/>
 </div>
 <center>
