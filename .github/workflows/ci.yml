@@ -12,7 +12,7 @@ on:
 
 concurrency:
   group: release-ci-group
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   release-and-page:
