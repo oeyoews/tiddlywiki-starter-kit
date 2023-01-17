@@ -216,14 +216,14 @@ var assetList = [
         "title": "$:/plugins/oeyoews/tiddlywiki-github-share",
         "description": "Github Share Button",
         "author": "oeyoews",
-        "version": "0.0.1",
+        "version": "0.1.0",
         "core-version": ">=5.2.5",
         "type": "application/json",
         "plugin-type": "plugin",
         "name": "Tiddlywiki Github Share",
         "list": "readme config",
         "dependents": "",
-        "readme": "* Github Share Button\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-github-share]]\n* [[Demo|https://oeyoews.github.io/neotw/main]]\n\n!! Note\n\n<!-- * if you use tiddlywiki menu plugin, this share button maybe  -->\n",
+        "readme": "* Github Share Button\n* compatiable font-awesome plugin\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-github-share]]\n* [[Demo|https://oeyoews.github.io/neotw/main]]\n\n!! TODO\n\n* add macro to embed single tid, not copy tid\n\n<!-- * if you use tiddlywiki menu plugin, this share button maybe  -->\n",
         "requires-reload": "no"
     },
     {
@@ -253,6 +253,19 @@ var assetList = [
         "dependents": "",
         "readme": "* Tiddlywiki Random Tip\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-random-tip]]\n* [[Demo|https://oeyoews.github.io/neotw/main]]\n\n!! NOTE\n\n* 如果想要在手机端禁止此插件， 请安装browser-sniff\n\n!! TODO\n\n* add new tip button\n* add viewtemplate for random tips\n* add delay js\n* add next tip button(maybe)\n* add config tags for general use\n* support add tips dynamic\n* use new and old\n\n<ul>\n  <$list filter=\"[!is[system]!<currentTiddler>!sort[modified]]\">\n    <li>\n\t\t<$link><$view field=\"title\"/></$link>\n        <$list filter=\"[<currentTiddler>days[-7]]\"> @@color:red;^^新^^@@</$list>\n        <$list filter=\"[<currentTiddler>days[-30]!days[-7]]\"> @@color:black;^^近期^^@@</$list>\n    </li>\n  </$list>\n</ul>\n\n!! Scope\n\n* wikitext syntax\n* other tips\n* ...\n",
         "requires-reload": "yes"
+    },
+    {
+        "title": "$:/plugins/oeyoews/tiddlywiki-show-the-brain",
+        "description": "",
+        "author": "oeyoews",
+        "version": "1.1.0",
+        "core-version": ">=5.2.5",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "",
+        "list": "readme",
+        "dependents": "",
+        "requires-reload": "no"
     },
     {
         "title": "$:/plugins/oeyoews/tiddlywiki-special-day",
