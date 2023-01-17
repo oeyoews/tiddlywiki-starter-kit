@@ -1,10 +1,15 @@
+caption: {{puzzle}} Plugin Size
 created: 20230115112713958
 creator: oeyoews
-modified: 20230116075832058
+icon: puzzle
+modified: 20230117133330450
 modifier: oeyoews
+neotw: index
 publish: public
 tags: 
 title: tiddlywiki-echarts-pluginsize
 type: text/vnd.tiddlywiki
 
+<center>
 <$echarts $tiddler="$:/plugins/Gk0Wk/echarts/addons/PluginsSize" $height="500px" $width="800px"/>
+</center>

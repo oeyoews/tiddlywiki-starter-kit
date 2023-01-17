@@ -1,0 +1,25 @@
+created: 20230117100749859
+creator: oeyoews
+modified: 20230117101656278
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: tag-count
+type: text/vnd.tiddlywiki
+
+.tc-tag-label:after {
+	color: gray;
+	opacity: calc(2/3);
+  vertical-align: middle;
+}
+
+<$list filter="[all[shadows+tiddlers]tags[]]" variable=tag>
+<$set name=cssTag filter="[<tag>escapecss[]]" select=0>
+[data-tag-title=<<cssTag>>] .tc-tag-label:after {
+  content: " <$count filter="[all[shadows+tiddlers]tag<tag>]" />";
+}
+</$set>
+</$list>
+
+.tc-untagged-label:after {
+  content: "<$count filter="[untagged[]!is[system]] -[tags[]]"/>";
+}
