@@ -45,7 +45,7 @@ await spinner('Building ...', async () => {
   await $`rm tiddlers/tidio.tid`;
 
   // static
-  await $`npx ${bin} --build ${actions[3]} `;
+  // await $`npx ${bin} --build ${actions[3]} `;
 
   // build readable name plugins
   await $`npx ${bin} --build ${actions[4]} `;

@@ -3,14 +3,14 @@ tags: $:/tags/ViewTemplate
 
   <!-- filter -->
 <$list filter="[all[current]!is[system]!is[draft]subfilter{$:/plugins/oeyoews/tiddlywiki-giscus/filter}]" variable="comment">
-  <div style="text-align: right">
+  <span>
     <!-- lang -->
     <$list filter="[[$:/language]get[text]removeprefix[$:/languages/]else[en-GB]]" variable="lang">
         <$set name="stateTiddler" value="$:/state/oeyoews/github-giscus-comments">
           <$reveal type="nomatch" state=<<stateTiddler>> text=<<currentTiddler>>>
+              <<.icon "$:/plugins/oeyoews/tiddlywiki-giscus/icon">>
               <$button class="tc-btn-invisible giscus-footer" set=<<stateTiddler>> setTo=<<currentTiddler>> >
                 <!-- {{$:/core/images/down-arrow}} -->
-                {{$:/plugins/oeyoews/tiddlywiki-giscus/icon}}
                 <!-- en -->
                 <$list filter="[<lang>!search[zh]]">
                   Show Comments
@@ -44,5 +44,5 @@ tags: $:/tags/ViewTemplate
           </$reveal>
         </$set>
      </$list>
-  </div>
+  </span>
 </$list>

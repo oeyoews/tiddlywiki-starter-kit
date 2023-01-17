@@ -36,10 +36,10 @@ tags: $:/tags/Stylesheet
 }
 
 .giscus-footer {
-    color: gray;
+    color: #aaaaaa;
     font-size: 14px;
 }
 
 .giscus-footer:hover {
-    color: black
+    font-weight: bold;
 }
