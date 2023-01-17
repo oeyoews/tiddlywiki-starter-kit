@@ -1,0 +1,12 @@
+created: 20230117152229797
+creator: oeyoews
+modified: 20230117152310443
+modifier: oeyoews
+tags: 
+title: neotw-footer
+type: text/vnd.tiddlywiki
+
+<center>
+	{{$:/state/git/commit}}
+	{{neotw/badges}}
+</center>
