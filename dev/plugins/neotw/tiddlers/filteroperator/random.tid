@@ -1,5 +1,5 @@
 module-type: filteroperator
-title: $:/plugins/oeyoews/neotw-show-a-tiddler/random.js
+title: $:/plugins/oeyoews/neotw/filteroperator/random
 type: application/javascript
 
 /*\

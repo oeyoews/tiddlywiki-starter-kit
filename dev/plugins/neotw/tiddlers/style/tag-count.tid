@@ -1,10 +1,5 @@
-created: 20230117100749859
-creator: oeyoews
-modified: 20230117101656278
-modifier: oeyoews
+title: $:/plugins/oeyoews/neotw/style/tag-count
 tags: $:/tags/Stylesheet
-title: tag-count
-type: text/vnd.tiddlywiki
 
 .tc-tag-label:after {
 	color: gray;
