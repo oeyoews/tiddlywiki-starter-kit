@@ -2,5 +2,5 @@ title: $:/plugins/oeyoews/tiddlywiki-publish-tiddler/macro/publish-filter
 tags: $:/tags/Macro
 
 \define publishFilter()
--[all[tiddlers+shadows]!is[system]publish[no]] -[tag[private]] -[tag[todo]] -[tag[Journal]] -[tag[books]]
+-[!is[system]publish[no]]
 \end
