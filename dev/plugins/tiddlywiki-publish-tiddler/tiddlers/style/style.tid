@@ -1,2 +1,8 @@
-title: $:/plugins/oeyoews/tiddlywiki-publish-tiddler/style
+title: $:/plugins/oeyoews/tiddlywiki-publish-tiddler/style/publish
 tags: $:/tags/Stylesheet
+
+<$list filter="[{$:/info/url/protocol}prefix[https]]">
+.opublish {
+  display: none;
+}
+</$list>
