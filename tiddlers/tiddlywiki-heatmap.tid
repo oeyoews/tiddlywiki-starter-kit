@@ -2,7 +2,7 @@ caption: {{calendar}} Heatmap
 created: 20230117054555920
 creator: oeyoews
 icon: calendar
-modified: 20230117172225467
+modified: 20230118025225179
 modifier: oeyoews
 neotw: index
 tags: 
@@ -13,19 +13,19 @@ type: text/vnd.tiddlywiki
 <$button
             set="$:/state/heatmap!!year"
             setTo={{{ [{$:/state/heatmap!!year}subtract[1]!match[-1]] ~[<now YYYY>subtract[1]] }}}
-            class="tc-btn-invisible tc-tiddlylink"
-
+class="tc-btn-invisible tc-tiddlylink"
         >
-            ⮜
+				{{prev-arrow}}
         </$button> ''<$text text={{{[{$:/state/heatmap!!year}match[]then<now YYYY>else{$:/state/heatmap!!year}]}}}/>'' <$button
             set="$:/state/heatmap!!year"
             setTo={{{ [{$:/state/heatmap!!year}add[1]!match[1]] ~[<now YYYY>add[1]] }}}
-            class="tc-btn-invisible tc-tiddlylink"
-
+class="tc-btn-invisible tc-tiddlylink"
         >
-            ⮞
+				{{next-arrow}}
         </$button>
 <div style="margin: 0 auto;">
 <$echarts $tiddler="$:/plugins/Gk0Wk/echarts/addons/GitHubHeatMap.js" $width="100%" $height="300px" $theme="light" subfilter="[!is[draft]!is[system]!prefix[neotw/]]" year={{$:/state/heatmap!!year}}/>
 </div>
 <center>
+     <!--       ⮜  -->
+				<!-- ⮞ -->
