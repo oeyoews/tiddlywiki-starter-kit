@@ -1,9 +1,11 @@
+caption: {{puzzle}} Plugins
 created: 20230112174358443
 creator: oeyoews
-modified: 20230112181639507
+icon: puzzle
+modified: 20230118025850422
 modifier: oeyoews
 tags: 
-title: neotw/pluginlist
+title: neotw-plugins
 type: text/vnd.tiddlywiki
 
 <<ov>>
