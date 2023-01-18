@@ -1,0 +1,11 @@
+created: 20230118153702786
+creator: oeyoews
+modified: 20230118154201139
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: better-preview-ui
+type: text/vnd.tiddlywiki
+
+.tc-tiddler-preview-preview {
+    border: 0px; 
+}

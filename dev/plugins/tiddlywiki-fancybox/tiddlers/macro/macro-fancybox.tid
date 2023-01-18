@@ -20,6 +20,7 @@ tags: $:/tags/Macro
 
 \define imagetobase64()  [{!!text}] [[;base64,]] [{!!type}] [[data:]] :and[reverse[]join[]]
 
+<!-- use genesis -->
 <!-- it slow and make tiddlywiki slow, so just use one image every times -->
 <!-- NOTE: cant have slash like xxx/image.png -->
 <!-- not support canonical_uri -->
