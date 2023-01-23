@@ -1,5 +1,5 @@
-title: $:/plugins/oeyoews/neotw-lockscreen/jump-index
-tags: $:/tags/RawMarkup
+<!-- tags: $:/tags/RawMarkup -->
+title: $:/plugins/oeyoews/neotw/jump-index
 
 <script>
 document.onkeydown = function (event) {
