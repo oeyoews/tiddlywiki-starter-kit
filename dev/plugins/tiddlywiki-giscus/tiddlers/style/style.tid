@@ -16,7 +16,7 @@ tags: $:/tags/Stylesheet
 .get-started {
 		display: inline-block;
     font-size: 16px;
-    background-color: rgb(97, 218, 251);
+    <!-- background-color: rgb(97, 218, 251); -->
     color: rgb(0, 0, 0);
     padding: 10px 25px;
     border-radius: 5px;
@@ -27,7 +27,7 @@ tags: $:/tags/Stylesheet
 
 .nbtn {
 		display: inline-block;
-    background-color: rgb(97, 218, 251);
+    <!-- background-color: rgb(97, 218, 251); -->
     color: rgb(0, 0, 0);
     padding: 3px 8px;
     white-space: nowrap;
