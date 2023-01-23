@@ -1,0 +1,9 @@
+created: 20220828121236408
+creator: oeyoews
+modified: 20230123082953883
+modifier: oeyoews
+tags: 
+title: $:/SplashScreen
+type: text/vnd.tiddlywiki
+
+{{$:/xp/splashscreen/layouts/simple}}
