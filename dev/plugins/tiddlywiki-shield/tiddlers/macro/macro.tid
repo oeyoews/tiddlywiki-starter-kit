@@ -1,0 +1,69 @@
+title: $:/plugins/oeyoews/tiddlywiki-shield/macro/macro
+tags: $:/tags/Macro
+
+\define oshield()
+\define tid() $:/plugins/oeyoews/tiddlywiki-shield/config
+
+<h2> based github </h2>
+<!-- user input -->
+<$edit-text tag="input" field="user" default="user" tiddler=<<tid>> />
+<$edit-text tag="input" field="repo" default="repo" tiddler=<<tid>> />
+
+<!-- config type -->
+<$select field="otype" tiddler=<<tid>> tooltip='type' default="type">
+</$set>
+  <option disabled>type</option>
+  <option>license</option>
+  <option>discussions</option>
+  <option>tag</option>
+  <option>issues</option>
+  <option>stars</option>
+  <option>forks</option>
+  <!-- need match -->
+  <!-- <option>size</option> -->
+  <!-- <option>downloads</option> -->
+</$select>
+
+<!-- config img style -->
+<$select field="style" tiddler=<<tid>> tooltip='badge style' default="style">
+</$set>
+  <option disabled>style</option>
+  <option>for-the-badge</option>
+  <option>flat</option>
+  <option>plastic</option>
+  <option>flat-square</option>
+  <option>social</option>
+</$select>
+
+<!-- copy html code -->
+<$macrocall $name="copy-to-clipboard" src={{{ [<tid>get[otype]addsuffix[/]] [<tid>get[user]addsuffix[/]]  [<tid>get[repo]] +[join[]addprefix[<img src="https://img.shields.io/github/]addsuffix[">]]}}} />
+
+<!-- preview -->
+<$set name="uri" value={{{ [<tid>get[otype]addsuffix[/]] [<tid>get[user]addsuffix[/]]  [<tid>get[repo]addsuffix[?style=]] [<tid>get[style]] +[join[]addprefix[https://img.shields.io/github/]] }}} >
+<a href=<<uri>> target="_blank">
+      <img src=<<uri>>
+>
+</a>
+</$set>
+\end
+
+\define oshield-static()
+\define tid() $:/plugins/oeyoews/tiddlywiki-shield/config
+
+<h2> static </h2>
+<!-- user input -->
+<$edit-text tag="input" field="label" default="label" tiddler=<<tid>> />
+<$edit-text tag="input" field="message" default="message" tiddler=<<tid>> />
+<$edit-text tag="input" field="ocolor" default="color" tiddler=<<tid>> />
+
+<!-- copy html code -->
+<$macrocall $name="copy-to-clipboard" src={{{ [<tid>get[label]addsuffix[-]] [<tid>get[message]addsuffix[-]]  [<tid>get[ocolor]] +[join[]addprefix[<img src="https://img.shields.io/badge/]addsuffix[">]]}}} />
+
+<!-- preview -->
+<$set name="uri" value={{{ [<tid>get[label]addsuffix[-]] [<tid>get[message]addsuffix[-]] [<tid>get[ocolor]addsuffix[?style=]] [<tid>get[style]] +[join[]addprefix[https://img.shields.io/badge/]] }}} >
+<!-- <a href=<<uri>> target="_blank"> -->
+      <img src=<<uri>>
+>
+<!-- </a> -->
+</$set>
+\end
