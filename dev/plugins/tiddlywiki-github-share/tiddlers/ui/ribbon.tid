@@ -19,6 +19,7 @@ description: github share button
 </$list>
 </$button>
 
+<$list filter="[{$:/info/url/protocol}prefix[https]]">
 <a style="text-decoration: none;"
   href={{{ [<tid>get[text]addprefix<base-repo>] }}}
   target="_blank"
@@ -28,3 +29,4 @@ description: github share button
 >
   {{$:/plugins/oeyoews/tiddlywiki-github-share/icon/corner}}
 </a>
+</$list>
