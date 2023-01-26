@@ -41,5 +41,6 @@ tags: $:/tags/Stylesheet
 }
 
 .giscus-footer:hover {
-    font-weight: bold;
+    border-bottom: 2px solid;
+    color: black;
 }
