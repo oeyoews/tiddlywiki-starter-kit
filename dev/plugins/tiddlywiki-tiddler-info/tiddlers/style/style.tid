@@ -8,4 +8,5 @@ tags: $:/tags/Stylesheet
     max-height: 22px;
     border-radius: 75%;
     aspect-ratio: 1 / 1;
+    vertical-align: middle;
 }
