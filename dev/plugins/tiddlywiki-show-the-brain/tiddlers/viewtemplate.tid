@@ -2,8 +2,9 @@ title: $:/plugins/oeyoews/tiddlywiki-show-the-brain/viewtemplate
 tags: $:/tags/ViewTemplate
 
 <$list filter="[all[current]!is[system]!is[draft]]" variable="thebrain">
-<$list filter="[[$:/plugins/Gk0Wk/echarts]!is[missing]]">
+         <!-- <$list filter="[[$:/plugins/Gk0Wk/echarts]!is[missing]]"> -->
   <span>
+  <!-- todo, need docs macro and style -->
         &nbsp;<<.icon "$:/plugins/oeyoews/tiddlywiki-show-the-brain/icon">>
         <$set name="stateTiddler" value="$:/state/oeyoews/the-brain">
           <$reveal type="nomatch" state=<<stateTiddler>> text=<<currentTiddler>>>
@@ -19,5 +20,5 @@ tags: $:/tags/ViewTemplate
           </$reveal>
         </$set>
   </span>
-</$list>
+<!-- </$list> -->
 </$list>
