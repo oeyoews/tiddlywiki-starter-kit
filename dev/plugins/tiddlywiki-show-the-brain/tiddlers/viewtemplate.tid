@@ -2,6 +2,7 @@ title: $:/plugins/oeyoews/tiddlywiki-show-the-brain/viewtemplate
 tags: $:/tags/ViewTemplate
 
 <$list filter="[all[current]!is[system]!is[draft]]" variable="thebrain">
+<$list filter="[[$:/plugins/Gk0Wk/echarts]!is[missing]]">
   <span>
         &nbsp;<<.icon "$:/plugins/oeyoews/tiddlywiki-show-the-brain/icon">>
         <$set name="stateTiddler" value="$:/state/oeyoews/the-brain">
@@ -14,8 +15,9 @@ tags: $:/tags/ViewTemplate
               <$button class="tc-btn-invisible the-brain-footer" set=<<stateTiddler>> setTo="">
                   Fold The Brain
               </$button>
-                    {{the-brain}}
+                    <$echarts $tiddler="$:/plugins/Gk0Wk/echarts/addons/TheBrain.js" aliasField="caption" levels="1" graphTitle="The Barin View" previewDelay="-1" $width="100%" $height="400px"/>
           </$reveal>
         </$set>
   </span>
+</$list>
 </$list>

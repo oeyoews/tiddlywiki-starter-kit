@@ -1,11 +1,12 @@
 {
   "title": "$:/plugins/oeyoews/tiddlywiki-show-the-brain",
-  "description": "",
+  "description": "show the brain view",
   "author": "oeyoews",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "core-version": ">=5.2.5",
+  "parent-plugin": "$:/plugins/Gk0Wk/echarts",
   "type": "application/json",
   "plugin-type": "plugin",
-  "name": "",
+  "name": "show the brain view",
   "list": "readme"
 }
