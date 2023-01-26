@@ -29,7 +29,8 @@ tags: $:/tags/ViewTemplate
 <!-- on dev -->
 <!-- not work ??? -->
 <!-- <$list filter="[{$:/info/url/protocol}prefix[http:]]"> -->
-<$list filter="[!is[system]<currentTiddler>!days:created[-300]] -[days:modified[-300]]" >
+<$list filter="[<currentTiddler>!is[system]!days:created[-300]] -[days:modified[-300]]" >
+<!-- add style -->
 ⚠️  {{!!title}} 条目
 <$list filter="[all[current]!is[system]has[created]]">
 创建于 <$view field="created" format="date" template="YYYY-0MM-0DD"/>

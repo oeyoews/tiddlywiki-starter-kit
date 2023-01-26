@@ -1,7 +1,7 @@
 caption: Neotw
 created: 20220907022139318
 creator: oeyoews
-modified: 20230118153832675
+modified: 20230126145212927
 modifier: oeyoews
 tags: $:/tags/SideBar
 title: neotw/setup
@@ -23,8 +23,5 @@ type: text/vnd.tiddlywiki
 
 ;<<emoji arrowright>> [[StoryWidth|$:/themes/nico/notebook/metrics/story-width]]
 : <$range  tiddler="$:/themes/nico/notebook/metrics/story-width" field="width" min="900" max="1250" increment="1"/> {{$:/themes/nico/notebook/metrics/story-width}}
-
-; <<emoji arrowright>> [[Polar|neotw/style/polar]]
-: <$range  tiddler="neotw/style/polar" field="velo" min=".4" max="1" default=".4" increment=".1"/> {{neotw/style/polar!!velo}}s
 
 ; <<emoji arrowright>> [[Neotw|neotw/setup]] <<emoji arrowright>> {{neotw/button/mode}}

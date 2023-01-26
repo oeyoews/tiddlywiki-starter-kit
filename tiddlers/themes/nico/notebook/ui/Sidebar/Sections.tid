@@ -1,7 +1,7 @@
 caption: notebook sidebar
 created: 20200429163239707
 creator: oeyoews
-modified: 20220830154220221
+modified: 20230126150444561
 modifier: oeyoews
 tags: $:/themes/nico/notebook/tags/Sidebar
 title: $:/themes/nico/notebook/ui/Sidebar/Sections
@@ -11,4 +11,4 @@ type: text/vnd.tiddlywiki
   {{||$:/themes/nico/notebook/ui/Sidebar/SectionTemplate}}
 </$list>
 
-{{neotw/polar-bear}}
+{{$:/plugins/oeyoews/neotw/modules/polar/sidebar}}
