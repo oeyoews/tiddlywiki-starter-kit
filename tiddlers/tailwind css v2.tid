@@ -1,9 +1,0 @@
-created: 20230124043455990
-creator: oeyoews
-modified: 20230124044232735
-modifier: oeyoews
-tags: 
-title: tailwind css v2
-type: text/vnd.tiddlywiki
-
-<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">

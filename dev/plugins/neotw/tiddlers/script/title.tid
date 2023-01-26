@@ -1,0 +1,19 @@
+title: $:/plugins/oeyoews/neotw/script/title
+type: application/javascript
+tags: $:/tags/RawMarkupWikified/BottomBody
+
+`<script>`
+  var OriginTitle = document.title;
+  var titleTime;
+  document.addEventListener('visibilitychange', function () {
+    if (document.hidden) {
+      document.title = '🍃 ' + OriginTitle;
+      clearTimeout(titleTime);
+    } else {
+      document.title = "👀 " + OriginTitle;
+      titleTime = setTimeout(function () {
+        document.title = OriginTitle;
+      }, 2000);
+    }
+  });
+`</script>`

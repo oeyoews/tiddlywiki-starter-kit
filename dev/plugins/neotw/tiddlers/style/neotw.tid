@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/neotw/style/neotw
+tags: $:/tags/Stylesheet
+
+.tc-tiddler-preview-preview {
+    border: 0px !important;
+}
