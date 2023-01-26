@@ -1,6 +1,6 @@
 created: 20220903154521999
 creator: oeyoews
-modified: 20220922144920452
+modified: 20230126143654218
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/style/polar
@@ -27,7 +27,7 @@ velo: 0.4
     height: 100px;
     width: 200px;
     z-index: 3001;
-    background: url("{{neotw/image/canonical/polar.png!!_canonical_uri}}");
+    background: url("{{bear-base64}}");
     animation: bear {{!!velo}}s steps(8) infinite, change_pos 8s forwards;
   }
 
