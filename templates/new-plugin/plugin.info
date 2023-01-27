@@ -7,5 +7,5 @@
   "type": "application/json",
   "plugin-type": "plugin",
   "name": "${upperpluginname}",
-  "list": "readme tree"
+  "list": "readme explore"
 }
