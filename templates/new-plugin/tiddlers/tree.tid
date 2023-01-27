@@ -1,0 +1,3 @@
+title: $:/plugins/${username}/${pluginname}/tree
+
+<<tree $:/plugins/${username}/${pluginname}/>>

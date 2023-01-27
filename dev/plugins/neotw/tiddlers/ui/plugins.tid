@@ -1,7 +1,7 @@
 caption: Plugins List
 description: Plugins List
-tags: $:/tags/PageControls
-title: $:/plugins/oeyoews/neotw/button/plugins
+<!-- tags: $:/tags/PageControls -->
+title: $:/plugins/oeyoews/neotw/ui/plugins
 
 \whitespace trim
 <$button tooltip="plugins" aria-label="" class=<<tv-config-toolbar-class>>>

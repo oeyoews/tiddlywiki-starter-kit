@@ -7,5 +7,5 @@
     "core-version": ">=5.2.3",
     "description": "Tiddlywiki5 music player",
     "author": "oeyoews",
-    "list": "readme"
+    "list": "readme tree"
 }
