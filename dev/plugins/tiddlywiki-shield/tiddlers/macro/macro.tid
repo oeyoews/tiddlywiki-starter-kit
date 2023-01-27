@@ -19,7 +19,14 @@ tags: $:/tags/Macro
   <option>issues</option>
   <option>stars</option>
   <option>forks</option>
+  <option>contributors</option>
+  <option>repo-size</option>
+  <option>issues</option>
+  <option>directory-file-count</option>
+  <option>issues-closed</option>
+  <option>languages/code-size</option>
   <option>last-commit</option>
+  <option>release-date</option>
   <!-- need match -->
   <!-- <option>size</option> -->
   <!-- <option>downloads</option> -->
