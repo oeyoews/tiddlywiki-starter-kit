@@ -70,7 +70,10 @@
             "--rendertiddler",
             "$:/core/templates/static.template.css",
             "static/static.css",
-            "text/plain"
+            "text/plain",
+            "--savetiddler",
+            "$:/favicon.ico",
+            "static/favicon.ico"
         ],
         "tiddlywikicore": [
             "--render",
