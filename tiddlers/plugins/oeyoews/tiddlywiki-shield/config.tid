@@ -1,13 +1,13 @@
 created: 20230123101609614
 creator: oeyoews
-label: 
-message: 
-modified: 20230127115637931
+label: status
+message: Ing
+modified: 20230127175915374
 modifier: oeyoews
-ocolor: 
+ocolor: red
 otype: stars
 repo: neotw
-style: for-the-badge
+style: social
 title: $:/plugins/oeyoews/tiddlywiki-shield/config
 type: text/vnd.tiddlywiki
 user: oeyoews

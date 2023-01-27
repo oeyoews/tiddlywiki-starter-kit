@@ -64,14 +64,9 @@ tags: $:/tags/Macro
 <$edit-text tag="input" field="message" default="message" tiddler=<<tid>> />
 <$edit-text tag="input" field="ocolor" default="color" tiddler=<<tid>> />
 
-<!-- copy html code -->
-<$macrocall $name="copy-to-clipboard" src={{{ [<tid>get[label]addsuffix[-]] [<tid>get[message]addsuffix[-]]  [<tid>get[ocolor]] +[join[]addprefix[<img src="https://img.shields.io/badge/]addsuffix[">]]}}} />
-
 <!-- preview -->
 <$set name="uri" value={{{ [<tid>get[label]addsuffix[-]] [<tid>get[message]addsuffix[-]] [<tid>get[ocolor]addsuffix[?style=]] [<tid>get[style]] +[join[]addprefix[https://img.shields.io/badge/]] }}} >
-<!-- <a href=<<uri>> target="_blank"> -->
-      <img src=<<uri>>
->
-<!-- </a> -->
+      <img src=<<uri>> >
+<$macrocall $name="copy-to-clipboard" src=<<uri>> />
 </$set>
 \end
