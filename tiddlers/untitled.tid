@@ -1,0 +1,16 @@
+created: 20230127165730988
+creator: oeyoews
+hide-body: yes
+modified: 20230127170622259
+modifier: oeyoews
+tags: 
+title: untitled
+type: text/vnd.tiddlywiki
+
+\define saveTiddlerFilter()
+[[$:/core]] [[$:/isEncrypted]] [[$:/language]] [[$:/languages/zh-Hans]] [[$:/themes/tiddlywiki/vanilla]] [[$:/themes/nico/notebook]] [plugin-type[plugin]field:author[oeyoews]] -[[$:/boot/boot.css]] -[type[application/javascript]library[yes]] -[[$:/boot/boot.js]] -[[$:/boot/bootprefix.js]] +[sort[title]]
+\end
+\define savingEmpty()
+yes
+\end
+{{$:/core/templates/tiddlywiki5.html}}

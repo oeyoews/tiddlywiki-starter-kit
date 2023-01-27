@@ -1,0 +1,12 @@
+created: 20230127165821884
+creator: oeyoews
+modified: 20230127170251030
+modifier: oeyoews
+tags: 
+title: untitled 1
+type: text/vnd.tiddlywiki
+
+<$button class="tc-btn-download">
+<$action-sendmessage $message="tm-download-file" $param="untitled" filename="neotw-empty.html"/>
+Neotw Empty {{$:/core/images/save-button}}
+</$button>
