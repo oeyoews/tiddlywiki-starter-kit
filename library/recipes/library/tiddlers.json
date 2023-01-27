@@ -7,7 +7,7 @@
         "name": "Neotw",
         "description": "Neotw",
         "author": "oeyoews",
-        "list": "readme licence config",
+        "list": "readme tree licence config",
         "dependents": "",
         "readme": "* neotw builtin plugin\n",
         "requires-reload": "yes"
@@ -65,9 +65,9 @@
         "core-version": ">=5.2.3",
         "description": "Tiddlywiki5 music player",
         "author": "oeyoews",
-        "list": "readme",
+        "list": "readme tree",
         "dependents": "",
-        "readme": "<!-- !! WARNING -->\n\n<!-- * archived temporarily -->\n",
+        "readme": "* TWM\n* [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-special-day]]\n* [[Demo|https://oeyoews.github.io/neotw/main]]\n",
         "requires-reload": "no"
     },
     {
