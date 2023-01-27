@@ -2,12 +2,12 @@ created: 20230123101609614
 creator: oeyoews
 label: type
 message: tiddlywiki
-modified: 20230123114956551
+modified: 20230127111219286
 modifier: oeyoews
 ocolor: green
-otype: license
+otype: last-commit
 repo: neotw
-style: for-the-badge
+style: social
 title: $:/plugins/oeyoews/tiddlywiki-shield/config
 type: text/vnd.tiddlywiki
 user: oeyoews

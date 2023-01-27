@@ -19,6 +19,7 @@ tags: $:/tags/Macro
   <option>issues</option>
   <option>stars</option>
   <option>forks</option>
+  <option>last-commit</option>
   <!-- need match -->
   <!-- <option>size</option> -->
   <!-- <option>downloads</option> -->
