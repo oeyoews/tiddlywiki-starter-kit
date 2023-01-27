@@ -182,20 +182,6 @@ var assetList = [
         "requires-reload": "no"
     },
     {
-        "title": "$:/plugins/oeyoews/tiddlywiki-random-tip",
-        "description": "Tiddlywiki Random Tip",
-        "author": "oeyoews",
-        "version": "0.0.1",
-        "core-version": ">=5.2.5",
-        "type": "application/json",
-        "plugin-type": "plugin",
-        "name": "Tiddlywiki Random Tip",
-        "list": "readme config example",
-        "dependents": "",
-        "readme": "* Tiddlywiki Random Tip\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-random-tip]]\n* [[Demo|https://oeyoews.github.io/neotw/main]]\n\n!! NOTE\n\n* 如果想要在手机端禁止此插件， 请安装browser-sniff\n\n!! TODO\n\n* add new tip button\n* add viewtemplate for random tips\n* add delay js\n* add next tip button(maybe)\n* add config tags for general use\n* support add tips dynamic\n* use new and old\n\n<ul>\n  <$list filter=\"[!is[system]!<currentTiddler>!sort[modified]]\">\n    <li>\n\t\t<$link><$view field=\"title\"/></$link>\n        <$list filter=\"[<currentTiddler>days[-7]]\"> @@color:red;^^新^^@@</$list>\n        <$list filter=\"[<currentTiddler>days[-30]!days[-7]]\"> @@color:black;^^近期^^@@</$list>\n    </li>\n  </$list>\n</ul>\n\n!! Scope\n\n* wikitext syntax\n* other tips\n* ...\n",
-        "requires-reload": "yes"
-    },
-    {
         "title": "$:/plugins/oeyoews/tiddlywiki-shield",
         "description": "Shield for Tiddlywiki",
         "author": "oeyoews",
@@ -210,34 +196,6 @@ var assetList = [
         "requires-reload": "no"
     },
     {
-        "title": "$:/plugins/oeyoews/tiddlywiki-show-the-brain",
-        "description": "show the brain view",
-        "author": "oeyoews",
-        "version": "1.2.0",
-        "core-version": ">=5.2.5",
-        "parent-plugin": "$:/plugins/Gk0Wk/echarts",
-        "type": "application/json",
-        "plugin-type": "plugin",
-        "name": "show the brain view",
-        "list": "readme",
-        "dependents": "",
-        "requires-reload": "no"
-    },
-    {
-        "title": "$:/plugins/oeyoews/tiddlywiki-special-day",
-        "description": "Tiddlywiki Special Day",
-        "author": "oeyoews",
-        "version": "0.0.1",
-        "core-version": ">=5.2.5",
-        "type": "application/json",
-        "plugin-type": "plugin",
-        "name": "Tiddlywiki Special Day",
-        "list": "readme date-pick-config",
-        "dependents": "",
-        "readme": "* {{$:/plugins/oeyoews/tiddlywiki-special-day/icon}} Tiddlywiki Special Day\n\n!! NOTE\n\n* info/startup-timestamp 使用世界时间, 比我们慢了八小时\n\n!! TODO\n\n* add some select option for some special festival\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-special-day]]\n* [[Demo|https://oeyoews.github.io/neotw/main]]\n",
-        "requires-reload": "yes"
-    },
-    {
         "title": "$:/plugins/oeyoews/tiddlywiki-static-page",
         "description": "Tiddlywiki Static Page",
         "author": "oeyoews",
@@ -249,20 +207,6 @@ var assetList = [
         "list": "readme",
         "dependents": "",
         "readme": "<div style=\"color: red; font-style: bold\">\n<center>\n 此插件不建议普通tiddlywiki用户使用, 并且只适用于tiddlywiki nodejs版本,\n</center>\n</div>\n\n* supported nodejs tw local and static online\n\n!! Tips\n\n<!-- *  -->\n\n!! Tutorials\n\n需要在tiddlywiki.info 文件中添加这样一段代码， 然后在命令行中运行 `(npx) tiddlywiki --build static`\n\n```wikitext\n\"static\": [ \"--output\", \"dist\",\n            \"--rendertiddlers\", \"[!is[system]]\", \"$:/core/templates/static.tiddler.html\", \"static\", \"text/plain\",\n            \"--rendertiddler\", \"$:/core/templates/static.template.css\", \"static/static.css\", \"text/plain\" ]\n```\n\n* Tiddlywiki Static Page\n* [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-static-page]]\n* [[Demo|https://oeyoews.github.io/neotw/main]]\n",
-        "requires-reload": "no"
-    },
-    {
-        "title": "$:/plugins/oeyoews/tiddlywiki-template",
-        "description": "Template Link Notion",
-        "author": "oeyoews",
-        "version": "0.0.1",
-        "core-version": ">=5.2.5",
-        "type": "application/json",
-        "plugin-type": "plugin",
-        "name": "Tiddlywiki Template",
-        "list": "readme explore",
-        "dependents": "",
-        "readme": "* Template Link Notion\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-template]]\n* [[Demo|https://oeyoews.github.io/neotw/main]]\n",
         "requires-reload": "no"
     },
     {
