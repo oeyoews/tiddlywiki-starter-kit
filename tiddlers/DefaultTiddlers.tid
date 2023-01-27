@@ -1,8 +1,8 @@
 created: 20230117154541015
 creator: oeyoews
-modified: 20230121102532000
+modified: 20230127173859935
 modifier: oeyoews
 title: $:/DefaultTiddlers
 type: text/vnd.tiddlywiki
 
-[field:pin[yes]]
+[list[$:/StoryList]] [field:pin[yes]]

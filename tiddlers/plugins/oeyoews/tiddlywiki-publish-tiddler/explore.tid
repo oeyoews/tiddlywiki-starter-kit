@@ -1,0 +1,24 @@
+created: 20230127172904196
+creator: oeyoews
+modified: 20230127172909613
+modifier: oeyoews
+title: $:/plugins/oeyoews/tiddlywiki-publish-tiddler/explore
+type: text/vnd.tiddlywiki
+
+<$macrocall $name="tree" prefix={{{ [<currentTiddler>addsuffix[/]] }}} />
+
+!! Private
+
+<$list filter="[field:publish[private]]" >
+    <li>
+		<$link><$view field="title"/></$link>
+    </li>
+</$list>
+
+!! Not Published
+
+<$list filter="[field:publish[no]]" >
+    <li>
+		<$link><$view field="title"/></$link>
+    </li>
+</$list>
