@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/tiddlywiki-template/ui/EditTemplate
+tags: $:/tags/EditTemplate
+
+<$list filter="[all[current]get[text]else<currentTiddler>match<currentTiddler>]">
+<<template-list targetBlankTiddler >>
+</$list>

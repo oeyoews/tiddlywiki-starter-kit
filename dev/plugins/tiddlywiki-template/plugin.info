@@ -1,0 +1,11 @@
+{
+  "title": "$:/plugins/oeyoews/tiddlywiki-template",
+  "description": "Template Link Notion",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.2.5",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "Tiddlywiki Template",
+  "list": "readme explore"
+}

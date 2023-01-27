@@ -1,0 +1,59 @@
+title: $:/plugins/oeyoews/tiddlywiki-template/macro/macro
+tags: $:/tags/Macro
+
+\define template-list()
+\whitespace trim
+
+<div class="linonetwo-template-list-container">
+<!-- show search bar if there are at least one template -->
+<$list filter="[all[tiddlers+shadows]tag[$:/tags/TextEditor/Template]!is[draft]count[]compare:number:gt[0]]">
+  <$edit-text tiddler="$:/state/search-template-list/input" default="" placeholder="search template name" tag=input class="linonetwo-template-list-search" />
+</$list>
+
+<div class="linonetwo-template-list">
+  <$let target=<<currentTiddler>> targetTitle={{{ [<target>get[draft.title]] ~[<target>get[title]] }}} search={{{ [[$:/state/search-template-list/input]get[text]] }}} draftOf={{{ [<target>get[draft.of]] }}} >
+    <$list filter="[all[tiddlers+shadows]tag[$:/tags/TextEditor/Template]!is[draft]search:title,name,description,readme<search>]">
+      <$button class="linonetwo-template-list-item-container" >
+
+        <$action-createtiddler $basetitle=<<target>> $overwrite=yes $template=<<currentTiddler>> >
+
+          <!-- When copy the tag, we should remove the $:/tags/TextEditor/Template , otherwise new tiddler will become a template too -->
+          <$action-setfield $tiddler=<<target>> $field="tags" $value={{{ [<currentTiddler>get[tags]split[ ]] +[remove[$:/tags/TextEditor/Template]] +[join[ ]] }}} />
+
+          <!-- Fix draft tiddler 's fields get overwrite by the createtiddler https://github.com/Jermolene/TiddlyWiki5/issues/4411#issuecomment-1015526629 -->
+          <$action-setfield $tiddler=<<target>> $field="draft.of" $value=<<draftOf>> />
+          <$action-setfield $tiddler=<<target>> $field="draft.title" $value=<<targetTitle>> />
+
+        </$action-createtiddler>
+
+        <div class="linonetwo-template-list-item-content">
+          <div style="witdh: 100%; height: 180px; overflow: hidden;">
+            <$reveal stateTitle=<<currentTiddler>> stateField="page-cover" type="nomatch" text="">
+              <$image source={{{ [<currentTiddler>get[page-cover]] }}} width="100%" height="auto"/>
+            </$reveal>
+            <$wikify name="rendered" text={{{ [<currentTiddler>get[text]] }}} output=html><<rendered>></$wikify>
+          </div>
+
+          <div style="width: 100%; padding: 8px 10px 10px; height: 69px; display: flex; flex-direction: row;">
+
+            <$reveal stateTitle=<<currentTiddler>> stateField="icon" type="nomatch" text="">
+              <div>
+                <$list filter="[<currentTiddler>get[icon]]" variable="icon">
+                  <$list filter="[title<icon>is[shadow]]"><$transclude tiddler=<<icon>>/></$list>
+                  <$list filter="[title<icon>is[tiddler]]"><$transclude tiddler=<<icon>>/></$list>
+                  <$list filter="[title<icon>!is[shadow]!is[tiddler]]">
+                    <$wikify name="rendered" text=<<icon>> output=html><<rendered>></$wikify>
+                  </$list>
+                </$list>
+              </div>
+            </$reveal>
+            ''<$text text=<<currentTiddler>> />''
+          </div>
+        </div>
+      </$button>
+    </$list>
+  </$let>
+</div>
+</div>
+
+\end
