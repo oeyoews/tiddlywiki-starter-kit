@@ -43,15 +43,15 @@ tags: $:/tags/Macro
   <option>social</option>
 </$select>
 
-<!-- copy html code -->
-<$macrocall $name="copy-to-clipboard" src={{{ [<tid>get[otype]addsuffix[/]] [<tid>get[user]addsuffix[/]]  [<tid>get[repo]] +[join[]addprefix[<img src="https://img.shields.io/github/]addsuffix[">]]}}} />
-
 <!-- preview -->
 <$set name="uri" value={{{ [<tid>get[otype]addsuffix[/]] [<tid>get[user]addsuffix[/]]  [<tid>get[repo]addsuffix[?style=]] [<tid>get[style]] +[join[]addprefix[https://img.shields.io/github/]] }}} >
-<a href=<<uri>> target="_blank">
-      <img src=<<uri>>
->
+<a href=<<uri>> target="_blank" style="text-decoration: none;">
+      <img src=<<uri>> >
 </a>
+
+<!-- copy html code -->
+<$macrocall $name="copy-to-clipboard" src=<<uri>> />
+
 </$set>
 \end
 

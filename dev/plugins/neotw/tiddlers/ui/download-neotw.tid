@@ -8,4 +8,4 @@ caption: Download neotw
 Neotw Empty {{$:/core/images/save-button}}
 </$button>
 
-<img href="https://img.shields.io/badge/status-Ing-red?style=social" >
+<img src="https://img.shields.io/badge/status-Ing-red?style=for-the-badge" >
