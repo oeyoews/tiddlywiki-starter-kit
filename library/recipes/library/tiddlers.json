@@ -65,7 +65,7 @@
         "core-version": ">=5.2.3",
         "description": "Tiddlywiki5 music player",
         "author": "oeyoews",
-        "list": "readme tree",
+        "list": "readme explore",
         "dependents": "",
         "readme": "* TWM\n* [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-special-day]]\n* [[Demo|https://oeyoews.github.io/neotw/main]]\n",
         "requires-reload": "no"
