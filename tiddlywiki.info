@@ -35,6 +35,18 @@
             "$:/favicon.ico",
             "favicon.ico"
         ],
+        "neotw-empty": [
+            "--verbose",
+            "--output",
+            "dist",
+            "--render",
+            "$:/plugins/oeyoews/neotw/templates/download-neotw-template",
+            "neotw-empty.html",
+            "text/plain",
+            "--savetiddler",
+            "$:/favicon.ico",
+            "favicon.ico"
+        ],
         "main": [
             "--verbose",
             "--load",

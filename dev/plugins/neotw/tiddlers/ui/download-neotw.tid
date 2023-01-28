@@ -9,3 +9,12 @@ Neotw Empty {{$:/core/images/save-button}}
 </$button>
 
 <img src="https://img.shields.io/badge/status-Ing-red?style=for-the-badge" >
+
+<$list filter="[{$:/info/url/protocol}prefix[https]]">
+!! online preview
+<$button>
+<$action-sendmessage $message="tm-open-external-window" $param= {{{ [[$:/info/url/full]get[text]search-replace:g:regexp[index.html|index|main.html|main|],[]addsuffix[neotw-empty.html]] +[join[]] }}}
+/>
+Online previe neotw empty
+</$button>
+</$list>
