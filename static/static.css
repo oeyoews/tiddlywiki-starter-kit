@@ -4600,12 +4600,6 @@ html {
 
 
 
-[data-tag-title=\$\:\/tags\/StartupAction\/PostRender] .tc-tag-label:after {
-  content: " 2";
-}
-
-
-
 [data-tag-title=\$\:\/tags\/RawMarkupWikified\/TopHead] .tc-tag-label:after {
   content: " 1";
 }
@@ -4614,6 +4608,12 @@ html {
 
 [data-tag-title=\$\:\/tags\/RawMarkupWikified\/BottomBody] .tc-tag-label:after {
   content: " 8";
+}
+
+
+
+[data-tag-title=\$\:\/tags\/StartupAction\/PostRender] .tc-tag-label:after {
+  content: " 1";
 }
 
 
