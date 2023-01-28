@@ -1,9 +1,9 @@
 created: 20220828121236408
 creator: oeyoews
-modified: 20230128155541422
+modified: 20230128160011182
 modifier: oeyoews
 tags: $:/tags/RawMarkupWikified/TopBody
 title: $:/SplashScreen
 type: text/vnd.tiddlywiki
 
-{{$:/xp/splashscreen/layouts/simple}}
+{{$:/xp/splashscreen/layouts/onedot}}
