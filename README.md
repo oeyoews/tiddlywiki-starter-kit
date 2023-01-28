@@ -63,7 +63,7 @@ npm run guide # or npx tiddlywiki --listen
 ## Note
 
 - if you use google-chrome on ios, maybe have some error tip when you touch this
-  screen prepare to select some text, its weired
+  screen prepare to select some text, its weird
 
 ## 🐥 Configuration(deprecated)
 
@@ -87,7 +87,6 @@ The [makefile](makefile) file is used as the centeral configuration for `neotw`
 - 😺 https://oeyoews.github.io/neotw
 - 🦿 https://neotw.tiddlyhost.com
 - 🌋 https://neotw.vercel.app
-<!-- (support multi plugin version) -->
 - 🤺 https://neotw.netlify.app/
 
 ---
