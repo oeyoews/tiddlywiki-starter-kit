@@ -11,9 +11,11 @@ list-before: $:/core/ui/Buttons/close
 <$button  tooltip="jump new-page and copy url" aria-label="new-page" class=<<tv-config-toolbar-class>>>
 <!-- https -->
 <$list filter="[{$:/info/url/protocol}prefix[https]]">
-<$set name=uri value={{{ [[$:/info/url/full]get[text]removesuffix[.html]search-replace:g:regexp[index|main],[]addsuffix[static/]] [[]addsuffix<storyTiddler>encodeuricomponent[]] +[join[]] }}} >
+<$set name="pathname" value={{{ [[$:/info/url/pathname]get[text]] }}}>
+<$set name=uri value={{{ [[$:/info/url/full]get[text]search-replace<pathname>,[/]addsuffix[static/]] [[]addsuffix<storyTiddler>encodeuricomponent[]] +[join[]] }}} >
 <$action-sendmessage $message="tm-copy-to-clipboard" $param=<<uri>> />
 <$action-sendmessage $message="tm-open-external-window" $param=<<uri>>/>
+</$set>
 </$set>
 </$list>
 <!-- http  -->
