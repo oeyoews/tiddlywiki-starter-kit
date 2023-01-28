@@ -1,0 +1,12 @@
+{
+  "outputDirectory": "dist",
+  "buildCommand": "yarn build:oeyoews",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "github": {
+    "silent": true,
+    "deploymentEnabled": {
+      "gh-pages": false
+    }
+  }
+}
