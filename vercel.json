@@ -4,7 +4,7 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "github": {
-    "silent": true
+    "silent": false
   },
   "git": {
     "deploymentEnabled": {
