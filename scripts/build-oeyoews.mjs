@@ -37,8 +37,6 @@ await spinner('Building ...', async () => {
   // example storylist have some bug
   // await $`npx ${bin} dev --build ${actions[1]} `;
 
-  // enable twikoo last before build for main
-  await $`cp patch/tidio.tid tiddlers`;
   // main
   await $`npx ${bin} --build ${actions[2]} `;
   // rm twikoo
