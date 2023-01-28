@@ -1,0 +1,4 @@
+# https://docs.netlify.com/site-deploys/create-deploys/
+[build]
+  publish = "dist"
+  command = "yarn build:oeyoews"
