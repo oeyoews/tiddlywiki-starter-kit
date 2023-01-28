@@ -4,7 +4,9 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "github": {
-    "silent": true,
+    "silent": true
+  },
+  "git": {
     "deploymentEnabled": {
       "gh-pages": false
     }
