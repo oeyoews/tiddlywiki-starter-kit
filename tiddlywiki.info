@@ -24,6 +24,7 @@
     ],
     "build": {
         "main": [
+            "--verbose",
             "--output",
             "dist",
             "--render",
@@ -35,6 +36,7 @@
             "favicon.ico"
         ],
         "plugins": [
+            "--verbose",
             "--output",
             "dist/plugins",
             "--render",
@@ -44,6 +46,7 @@
             "$:/core/templates/json-tiddler"
         ],
         "index": [
+            "--verbose",
             "--output",
             "dist",
             "--render",
@@ -60,6 +63,7 @@
             "anon-username=oeyoews"
         ],
         "static": [
+            "--verbose",
             "--output",
             "dist",
             "--rendertiddlers",
