@@ -18,8 +18,10 @@ list-before: $:/core/ui/Buttons/close
 </$list>
 <!-- http  -->
 <$list filter="[{$:/info/url/protocol}prefix[http:]]">
-<$action-sendmessage $message="tm-copy-to-clipboard" $param={{{ [[$:/info/url/full]get[text]] [[]addsuffix<storyTiddler>encodeuricomponent[]] +[join[]] }}}/>
-<$action-sendmessage $message="tm-open-external-window" $param={{{ [[$:/info/url/full]get[text]] [[]addsuffix<storyTiddler>encodeuricomponent[]] +[join[]] }}}/>
+<$set name="uri" value={{{  [[$:/info/url/full]get[text]] [[]addsuffix<storyTiddler>encodeuricomponent[]] +[join[]] }}} >
+<!-- <$action-sendmessage $message="tm-copy-to-clipboard" $param=<<uri>>/> -->
+<$action-sendmessage $message="tm-open-external-window" $param=<<uri>>/>
+</$set>
 </$list>
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
 {{$:/plugins/oeyoews/tiddlywiki-static-page/icon}}
