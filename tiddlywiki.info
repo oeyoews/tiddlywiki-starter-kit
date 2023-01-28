@@ -23,8 +23,22 @@
         "tiddlywiki/vanilla"
     ],
     "build": {
+        "main-dev": [
+            "--verbose",
+            "--output",
+            "dist",
+            "--render",
+            "$:/plugins/tiddlywiki/tiddlyweb/save/offline",
+            "main.html",
+            "text/plain",
+            "--savetiddler",
+            "$:/favicon.ico",
+            "favicon.ico"
+        ],
         "main": [
             "--verbose",
+            "--load",
+            "patch/tidio.tid",
             "--output",
             "dist",
             "--render",
