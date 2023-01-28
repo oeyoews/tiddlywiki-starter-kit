@@ -12,7 +12,7 @@ list-before: $:/core/ui/Buttons/close
 <$list filter="[{$:/info/url/protocol}prefix[https]]">
 <!-- https -->
 <$action-sendmessage $message="tm-copy-to-clipboard" $param={{{ [[$:/info/url/full]get[text]search-replace:g:regexp[index.html|index|main.html|main|],[]addsuffix[static/]] [[]addsuffix<storyTiddler>encodeuricomponent[]] +[join[]] }}}/>
-<$action-sendmessage $message="tm-open-external-window" $param={{{ [[$:/info/url/full]get[text]search-replace:g:regexp[index.html|index|main.html|main|],[]addsuffix[static/]] [[]addsuffix<storyTiddler>encodeuricomponent[]] +[join[]] }}}/>
+<$action-sendmessage $message="tm-open-external-window" $param={{{ [[$:/info/url/full]get[text]removesuffix[.html]search-replace:g:regexp[index|main|],[]addsuffix[static/]] [[]addsuffix<storyTiddler>encodeuricomponent[]] +[join[]] }}}/>
 </$list>
 <$list filter="[{$:/info/url/protocol}prefix[http:]]">
 <!-- http  -->
