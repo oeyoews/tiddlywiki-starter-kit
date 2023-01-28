@@ -4,7 +4,7 @@ creator: oeyoews
 description: Index
 icon: $:/favicon.ico
 list: 
-modified: 20230126153045157
+modified: 20230128161033045
 modifier: oeyoews
 neotw: index
 page-cover: 
@@ -21,5 +21,7 @@ type: text/vnd.tiddlywiki
 {{$:/themes/nico/notebook/ui/Buttons/menu}}
 </$list>
 </span> &nbsp;
+
+{{$:/plugins/oeyoews/neotw/ui/download-neotw}}
 
 {{neotw-footer}}
