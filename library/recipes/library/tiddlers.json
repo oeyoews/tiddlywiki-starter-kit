@@ -67,7 +67,7 @@
         "author": "oeyoews",
         "list": "readme explore",
         "dependents": "",
-        "readme": "* check status: [metingjs api|https://meting-api-oeyoews.vercel.app/api]\n* TWM\n* [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-special-day]]\n* [[Demo|https://oeyoews.github.io/neotw/main]]\n",
+        "readme": "* check status: [[metingjs-api|https://meting-api-oeyoews.vercel.app/api]]\n* TWM\n* [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-special-day]]\n* [[Demo|https://oeyoews.github.io/neotw/main]]\n",
         "requires-reload": "no"
     },
     {
