@@ -42,6 +42,8 @@ await spinner('Building ...', async () => {
   // build readable name plugins
   await $`npx ${bin} --build plugins `;
 
+  await $`npx ${bin} --build neotw-empty `;
+
   // after building
   await $`mv ${library} ${dist}`;
   await $`cp -r files vercel.json src/index.html img/default2.avif ${dist}`;
