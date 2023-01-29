@@ -6,8 +6,8 @@ export default async function updateCommit() {
   const headCommit = await $`git rev-parse HEAD`;
   const longid = headCommit.toString().trim();
   const shortid = longid.substring(0, 7);
-  const commitTimesVanilla = await $`git rev-list --all --count`;
-  const commitTimes = commitTimesVanilla.toString().trim();
+  // const commitTimesVanilla = await $`git rev-list --all --count`;
+  // const commitTimes = commitTimesVanilla.toString().trim();
 
   const commitTemplate = 'templates/commit-template.tid';
   const commitFile = 'tiddlers/commit.tid';
@@ -15,7 +15,7 @@ export default async function updateCommit() {
   const regPlace = {
     longid,
     shortid,
-    commitTimes,
+    // commitTimes,
     timestamp: base.timestamp,
   };
 
