@@ -23,18 +23,6 @@
         "tiddlywiki/vanilla"
     ],
     "build": {
-        "main-dev": [
-            "--verbose",
-            "--output",
-            "dist",
-            "--render",
-            "$:/plugins/tiddlywiki/tiddlyweb/save/offline",
-            "main-dev.html",
-            "text/plain",
-            "--savetiddler",
-            "$:/favicon.ico",
-            "favicon.ico"
-        ],
         "neotw-empty": [
             "--verbose",
             "--output",
