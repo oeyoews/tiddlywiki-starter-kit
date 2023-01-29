@@ -4,7 +4,7 @@ caption: Download neotw
 !! Download Neotw
 
 <$button class="tc-btn-download">
-<$action-sendmessage $message="tm-download-file" $param="$:/plugins/oeyoews/neotw/ui/download-neotw-template" filename="neotw-empty.html"/>
+<$action-sendmessage $message="tm-download-file" $param="$:/plugins/oeyoews/neotw/templates/download-neotw-template" filename="neotw-empty.html"/>
 Neotw Empty {{$:/core/images/save-button}}
 </$button>
 

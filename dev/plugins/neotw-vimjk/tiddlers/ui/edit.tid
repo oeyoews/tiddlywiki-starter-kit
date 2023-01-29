@@ -1,7 +1,7 @@
 title: $:/core/ui/Buttons/edit
 tags: $:/tags/ViewToolbar
-description: edit
-caption: edit
+description: Code edit
+caption: {{$:/plugins/oeyoews/codemirror-keymap-vimjk/icon/vim}} edit
 list-before: $:/core/ui/Buttons/close
 
 \whitespace trim

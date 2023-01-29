@@ -1,5 +1,5 @@
 description: show your information
-tags: $:/tags/PageControls
+<!-- tags: $:/tags/PageControls -->
 title: $:/plugins/oeyoews/neotw/ui/user-info
 
 \whitespace trim
