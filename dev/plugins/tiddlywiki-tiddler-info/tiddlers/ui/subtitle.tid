@@ -38,7 +38,7 @@ tags: $:/tags/ViewTemplate
 <$list filter="[all[current]!is[system]has[modified]]">
 , 修改于 <$view field="modified" format="relativedate" />
 </$list>
-, 部分内容可能已过期， 请酌情阅读
+, 内容可能已经不够准确， 请酌情参考
 </$list>
 <!-- </$list> -->
 

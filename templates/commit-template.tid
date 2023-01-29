@@ -9,6 +9,7 @@ https://gitlab.com/oeyoews/neotw/commit/
 \end
 
 <div style="color:gray;font-size: 14px;">
+  commitTimes: ${commitTimes}
   BuildTime: ${timestamp};
   Last Updated(git):
   <a style="text-decoration: none; colro: #539bf5;"href={{{

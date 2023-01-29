@@ -34,15 +34,15 @@ await spinner('Building ...', async () => {
   await $`npx ${bin} ${libbuild} --build library`;
 
   // main
-  await $`npx ${bin} --build main `;
+  await $`npx ${bin} --build main`;
 
   // static
-  await $`npx ${bin} --build static `;
+  await $`npx ${bin} --build static`;
 
   // build readable name plugins
-  await $`npx ${bin} --build plugins `;
+  await $`npx ${bin} --build plugins`;
 
-  await $`npx ${bin} --build neotw-empty `;
+  await $`npx ${bin} --build neotw-empty`;
 
   // after building
   await $`mv ${library} ${dist}`;
