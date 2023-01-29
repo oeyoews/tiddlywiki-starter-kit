@@ -7,7 +7,7 @@ export default async function updateCommit() {
   const longid = headCommit.toString().trim();
   const shortid = longid.substring(0, 7);
   let commitTimes = await $`git rev-list --all --count`;
-  commitTimes = commitTimes.trim();
+  commitTimes = commitTimes.toString().trim();
 
   const commitTemplate = 'templates/commit-template.tid';
   const commitFile = 'tiddlers/commit.tid';
