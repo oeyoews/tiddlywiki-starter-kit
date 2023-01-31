@@ -2,7 +2,7 @@ tags: $:/tags/Stylesheet
 title: $:/plugins/oeyoews/neotw-emoji/style
 
 \define emojid(texts)
-<$list filter="[enlist<__texts__>sort[]]" variable="text">
+<$list filter="[enlist<__texts__>!sort[title]]" variable="text">
 .neotw-<<text>>:before {
 	content: "{{{ [[$:/plugins/oeyoews/neotw-emoji/dict]getindex<text>] }}}"
 }
@@ -25,3 +25,16 @@ tada
 kbd
 danger
 """>>
+
+<!-- <$macrocall $name="emojid" texts={{{ [{xxx}indexes[]!sort[title]] }}}> -->
+<!-- <$macrocall $name="emojid" texts={{{ [{xxx}jsonindexes[]!sort[title]] }}}> -->
+
+<!-- <$set name=texts value={{{ [{js}jsonindexs[]] }}}> -->
+<!-- <$set name=text value={{{ [enlist<texts>] }}}> -->
+<!-- </$set> -->
+<!-- </$set> -->
+
+<!-- <$list filter="[{js}jsonindexes[]]" variable="o"> -->
+<!-- <$list filter="[enlist<o>]"> -->
+<!-- </$list> -->
+<!-- </$list> -->
