@@ -4796,60 +4796,60 @@ ul.bullets li::marker {
 		color: #0ea6ff;
 }
 
-.neotw-checkbox:before {
-	content: "✅"
-}
-
-.neotw-danger:before {
-	content: "☠"
-}
-
-.neotw-error:before {
-	content: "✘"
-}
-
-.neotw-fly:before {
-	content: "🚁"
-}
-
-.neotw-hourglass:before {
-	content: "⌛"
-}
-
-.neotw-info:before {
-	content: "ℹ️"
-}
-
-.neotw-kbd:before {
-	content: "⌨"
-}
-
-.neotw-msg:before {
-	content: "💬"
-}
-
-.neotw-rocket:before {
-	content: "🚀"
-}
-
-.neotw-smile:before {
-	content: "😃"
-}
-
-.neotw-tada:before {
-	content: "🎉"
-}
-
-.neotw-traffic:before {
-	content: "🚦"
+.neotw-warn:before {
+	content: "⚠"
 }
 
 .neotw-tree:before {
 	content: "🌴"
 }
 
-.neotw-warn:before {
-	content: "⚠"
+.neotw-traffic:before {
+	content: "🚦"
+}
+
+.neotw-tada:before {
+	content: "🎉"
+}
+
+.neotw-smile:before {
+	content: "😃"
+}
+
+.neotw-rocket:before {
+	content: "🚀"
+}
+
+.neotw-msg:before {
+	content: "💬"
+}
+
+.neotw-kbd:before {
+	content: "⌨"
+}
+
+.neotw-info:before {
+	content: "ℹ️"
+}
+
+.neotw-hourglass:before {
+	content: "⌛"
+}
+
+.neotw-fly:before {
+	content: "🚁"
+}
+
+.neotw-error:before {
+	content: "✘"
+}
+
+.neotw-danger:before {
+	content: "☠"
+}
+
+.neotw-checkbox:before {
+	content: "✅"
 }
 footer {
 	flex: 1 1 auto;
