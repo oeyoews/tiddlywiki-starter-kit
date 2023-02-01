@@ -1,9 +1,12 @@
 title: $:/config/EmptyStoryMessage
 
+<$list filter="[[$:/state/notebook-sidebar]get[text]else[no]match[no]]">
 <center>
 <$button tooltip="Return Home" >
 [img width=22 [$:/favicon.ico]] return home
 {{$:/core/images/home-button}}
   <$action-navigate $to="GettingStarted"/>
 </$button>
+{{$:/core/ui/Buttons/new-tiddler}}
 </center>
+</$list>
