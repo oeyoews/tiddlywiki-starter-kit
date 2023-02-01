@@ -4402,7 +4402,7 @@ html {
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 99";
+  content: " 100";
 }
 
 
@@ -4730,7 +4730,7 @@ html {
 }
 
 .tc-untagged-label:after {
-  content: "164";
+  content: "165";
 }
 .user-panel-avatar { position: relative; max-width: 22px; max-height: 22px; }.user-panel-avatar-56 { position: relative; max-width: 56px; max-height: 56px; }.user-panel-avatar-56 img { width: 100%; height: auto; max-width: 56px; max-height: 56px; border-radius: 50%; aspect-ratio: 1 / 1; }.user-panel-avatar img { width: 100%; height: auto; max-width: 22px; max-height: 22px; border-radius: 50%; aspect-ratio: 1 / 1; }
 ul.bullets li::marker {
@@ -5729,6 +5729,9 @@ a[data-fancybox] img {
   }
 }
 
+.tc-sidebar-header {
+	display: none;
+}
 .nauthor img {
     width: 100%;
     height: auto;
