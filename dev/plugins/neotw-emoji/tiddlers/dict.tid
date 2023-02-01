@@ -19,7 +19,8 @@ kbd: ⌨
 danger: ☠
 warn: ⚠
 bcolor: #7d7dfc
-b1: ◉
+: b1: ◉
+b1: &#9673;
 b2: ◎
 b3: ✿
 b4: ●
