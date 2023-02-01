@@ -1,8 +1,9 @@
 title: $:/plugins/oeyoews/neotw-hitokoto/hitokoto-id
 tags: $:/tags/RawMarkupWikified/BottomBody
+<!-- tags: $:/tags/PageTemplate -->
 
 `<footer style="font-size:16px;">`
 `<div style="background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59); -webkit-background-clip: text; color: transparent; font-style:italic;
-font-weight:700;" id="hitokoto">` 🎉
+font-weight:700;" id="hitokoto">
 Loading ... `</div>`
 `</footer>`

@@ -1,0 +1,9 @@
+title: $:/config/EmptyStoryMessage
+
+<center>
+<$button tooltip="Return Home" >
+[img width=22 [$:/favicon.ico]] return home
+{{$:/core/images/home-button}}
+  <$action-navigate $to="GettingStarted"/>
+</$button>
+</center>
