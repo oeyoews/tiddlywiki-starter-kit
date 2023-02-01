@@ -4007,6 +4007,11 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   border-radius: 4px 4px 0 0;
 	}.gitter-open-chat-button, .gitter-open-chat-button:visited {
     color: black;
+}.gitter-open-chat-button::before {
+  content: 
+;
+}.gitter-chat-embed {
+  border: 0;
 }
 .polarbear {
     position: fixed;
