@@ -8,7 +8,8 @@ tags: $:/tags/Stylesheet
 .gitter-open-chat-button {
   background-color: #5d9ceb;
 	right: -50px;
-	padding: 0 20px 0;
+	padding: 0 20px 10px 20px;
+  font-weight: 700px;
 	bottom: 90px;
 	transform: rotate(270deg);
 	text-transform: none;
