@@ -2,6 +2,7 @@ title: $:/plugins/oeyoews/neotw-surfing-keys/readme
 
 !! NOTE
 
+* because of newline, this shortcut not work, need use vscode to remove this(for dev plugin)
 * This plugin is part of neotw(not general maybe)
 
 !! TODO
