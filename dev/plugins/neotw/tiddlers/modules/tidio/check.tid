@@ -1,9 +1,0 @@
-title: $:/plugins/oeyoews/neotw/modules/tidio/check
-<!-- tags: $:/tags/StartupAction -->
-
-<!-- js not work, because not render -->
-<$list filter="[{$:/info/url/protocol}prefix[http]]">
-<$fieldmangler tiddler="$:/temp/oeyoews/neotw/modules/tidio/tidiojs">
-<$action-sendmessage $message="tm-add-tag" $param="$:/tags/RawMarkupWikified/BottomBody"/>
-</$fieldmangler>
-</$list>

@@ -2,7 +2,7 @@ title: $:/plugins/oeyoews/tiddlywiki-static-page/readme
 
 <div style="color: red; font-style: bold">
 <center>
- 此插件不建议普通tiddlywiki用户使用, 并且只适用于tiddlywiki nodejs版本,
+ 此插件不建议普通tiddlywiki用户使用, 并且只适用于tiddlywiki nodejs版本, not compatiable vanilla theme
 </center>
 </div>
 
