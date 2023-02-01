@@ -1,0 +1,7 @@
+title: $:/temp/oeyoews/neotw/modules/gitter
+tags: $:/tags/RawMarkupWikified/BottomBody
+
+`<script>
+((window.gitter = {}).chat = {}).options = { room: 'oeyoews/neotw' };`
+`</script>`
+`<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer>``</script>`
