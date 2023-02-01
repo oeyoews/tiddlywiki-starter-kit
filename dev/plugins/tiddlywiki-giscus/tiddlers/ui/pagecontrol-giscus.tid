@@ -6,6 +6,7 @@ tags: $:/tags/PageControls
 \whitespace trim
 
 \define tid() Comment Area
+<$list filter="[{$:/info/url/protocol}prefix[https]]">
 <$button tooltip="Message Here" aria-label="Message Here" class=<<tv-config-toolbar-class>> set="$:/state/oeyoews/github-giscus-comments" setTo=<<tid>> >
   {{$:/plugins/oeyoews/tiddlywiki-giscus/icon}}
   <$action-navigate $to=<<tid>>/>
@@ -16,3 +17,4 @@ tags: $:/tags/PageControls
   </span>
 </$list>
 </$button>
+</$list>
