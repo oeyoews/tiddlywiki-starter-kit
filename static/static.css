@@ -3991,28 +3991,25 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 }.py-welcome p {
   margin: 0;
 }
+.gitter-open-chat-button,
 .gitter-chat-embed {
-    z-index: 999;
+  z-index: 9999;
 }.gitter-open-chat-button {
-  z-index: 999;
   background-color: #5d9ceb;
-	right: -50px;
-	padding: 0 20px 5px 20px;
-  font-weight: 700px;
-	bottom: 90px;
-	transform: rotate(270deg);
-	text-transform: none;
-  font-size: 14px;
-  line-height: 30px;
-  border-bottom-left-radius: 4px;
-  border-radius: 4px 4px 0 0;
+  border-radius: 0.5em;
+  padding: 0.4em 0.8em;
+  bottom: .4em;
+  right: 1.4em;
 	}.gitter-open-chat-button, .gitter-open-chat-button:visited {
     color: black;
-}.gitter-open-chat-button::before {
-	
-  
 }.gitter-chat-embed {
   border: 0;
+}.gitter-chat-embed:not(.is-collapsed) {
+left: 6em;
+bottom: 6em;
+top: 3em;
+}.gitter-open-chat-button::before {
+content: "Neotw · ";
 }
 .polarbear {
     position: fixed;
@@ -4040,33 +4037,14 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   }
 .tc-tiddler-preview-preview {
     border: 0px !important;
+}html, body, .tc-body, .tc-sidebar-scrollable {
+scrollbar-width: none;
 }
-html {
-  --scrollbarBG: #f5f5ee;
-  --thumbBG: #888888;
-	/*other candidate colors: foreground, sidebar-tiddler-link-foreground */
-}/* only for Twilight palette use #c0c0c0 *//* Works on Firefox */
-* {
-  scrollbar-width: thin;
-}
-/* for Chrome, Edge */
-::-webkit-scrollbar,
-  scrollbar-width {
-  width: 5px;
-  height:5px;
-}::-webkit-scrollbar:hover,
-  scrollbar-width {
-  width: 5px;
-}::-webkit-scrollbar-track {
-  background: var(--scrollbarBG);
-}/* background-color: var(--thumbBG) ;
-	background: linear-gradient(to top, #00f260, #0575e6); */
-::-webkit-scrollbar-thumb {
-  border-radius: 3px;
-  border: 0px solid var(--scrollbarBG);
-    background: linear-gradient(to top, #12c2e9, #c471ed, #f64f59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
-}::-webkit-scrollbar-thumb:hover {
-	background: linear-gradient(45deg, #00f260, #3AC9E1);
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+.tc-body::-webkit-scrollbar,
+.tc-sidebar-scrollable::-webkit-scrollbar {
+display: none;
 }
 .shield {
   font-weight: normal;
@@ -4408,7 +4386,7 @@ html {
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 100";
+  content: " 99";
 }
 
 
