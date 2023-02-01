@@ -1,7 +1,6 @@
 title: $:/plugins/oeyoews/neotw/modules/gitter/style
 tags: $:/tags/Stylesheet
 
-<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
 <!-- .gitter-chat-embed { -->
     <!-- z-index: 300; -->
 <!-- } -->
@@ -34,5 +33,10 @@ top: 3em;
 
 .gitter-open-chat-button::before {
 content: "Neotw · ";
+}
+
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
+.gitter-open-chat-button {
+    display: none;
 }
 </$list>
