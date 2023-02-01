@@ -38,9 +38,7 @@
         "main": [
             "--verbose",
             "--load",
-            "patch/tidio.tid",
-            "--load",
-            "patch/gitter.tid",
+            "patch",
             "--output",
             "dist",
             "--render",
