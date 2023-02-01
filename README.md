@@ -6,6 +6,8 @@
 
 </div>
 
+[![Join the chat at https://gitter.im/oeyoews/neotw](https://badges.gitter.im/oeyoews/neotw.svg)](https://gitter.im/oeyoews/neotw?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## What's the neotw
 
 > A modern style notebook based on tiddlywiki is v2 of the [tw5](https://github.com/oeyoews/tw5) repository
