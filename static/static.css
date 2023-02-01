@@ -4009,7 +4009,7 @@ left: 6em;
 bottom: 6em;
 top: 3em;
 }.gitter-open-chat-button::before {
-content: "Neotw	\27a4 ";
+content: "Neotw · ";
 }
 .polarbear {
     position: fixed;
