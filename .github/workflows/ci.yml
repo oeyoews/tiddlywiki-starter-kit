@@ -10,6 +10,9 @@ on:
       - 'README.md'
   workflow_dispatch:
 
+env:
+  TZ: Asia/Shanghai
+
 concurrency:
   group: release-ci-group
   cancel-in-progress: false
