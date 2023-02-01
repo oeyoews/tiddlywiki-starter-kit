@@ -2,10 +2,11 @@ title: $:/plugins/oeyoews/neotw/modules/gitter/style
 tags: $:/tags/Stylesheet
 
 .gitter-chat-embed {
-    z-index: 2000;
+    z-index: 999;
 }
 
 .gitter-open-chat-button {
+  z-index: 999;
   background-color: #5d9ceb;
 	right: -50px;
 	padding: 0 20px 5px 20px;
@@ -24,7 +25,8 @@ tags: $:/tags/Stylesheet
 }
 
 .gitter-open-chat-button::before {
-  content: {{$:/plugins/oeyoews/neotw/module/gitter/icon}};
+	<!-- content: url("data:image/svg+xml,%3Csvg%20stroke%3D%22currentColor%22%20fill%3D%22currentColor%22%20stroke-width%3D%220%22%20viewBox%3D%220%200%20384%20512%22%20height%3D%221em%22%20width%3D%221em%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M66.4%20322.5H16V0h50.4v322.5zM166.9%2076.1h-50.4V512h50.4V76.1zm100.6%200h-50.4V512h50.4V76.1zM368%2076h-50.4v247H368V76z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E"); -->
+  <!-- content: "🔗"; -->
 }
 
 .gitter-chat-embed {
