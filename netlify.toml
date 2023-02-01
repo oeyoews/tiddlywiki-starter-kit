@@ -2,3 +2,5 @@
 [build]
   publish = "dist"
   command = "yarn build:oeyoews"
+[build.environment]
+TZ = "Asia/Shanghai"
