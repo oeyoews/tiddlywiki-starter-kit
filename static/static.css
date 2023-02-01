@@ -3992,8 +3992,9 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   margin: 0;
 }
 .gitter-chat-embed {
-    z-index: 2000;
+    z-index: 999;
 }.gitter-open-chat-button {
+  z-index: 999;
   background-color: #5d9ceb;
 	right: -50px;
 	padding: 0 20px 5px 20px;
@@ -4008,8 +4009,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 	}.gitter-open-chat-button, .gitter-open-chat-button:visited {
     color: black;
 }.gitter-open-chat-button::before {
-  content: 
-;
+	
+  
 }.gitter-chat-embed {
   border: 0;
 }
