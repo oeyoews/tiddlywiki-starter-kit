@@ -1,5 +1,5 @@
 {
-    "version": "0.1.0",
+    "version": "0.1.1",
     "type": "application/json",
     "title": "$:/plugins/oeyoews/neotw-emoji",
     "plugin-type": "plugin",
@@ -7,5 +7,5 @@
     "core-version": ">=5.2.3",
     "description": "emoji",
     "author": "oeyoews",
-    "list": "readme"
+    "list": "readme explore"
 }

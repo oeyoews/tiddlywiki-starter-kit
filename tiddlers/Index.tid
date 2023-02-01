@@ -4,7 +4,7 @@ creator: oeyoews
 description: Index
 icon: $:/favicon.ico
 list: 
-modified: 20230128161033045
+modified: 20230201145050937
 modifier: oeyoews
 neotw: index
 page-cover: 
@@ -21,6 +21,10 @@ type: text/vnd.tiddlywiki
 {{$:/themes/nico/notebook/ui/Buttons/menu}}
 </$list>
 </span> &nbsp;
+
+@@.bullets
+!! Intro
+* tiddlywiki tips and examples or docs <<emoji tada>>
 
 {{$:/plugins/oeyoews/neotw/ui/download-neotw}}
 

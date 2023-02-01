@@ -54,3 +54,12 @@ Inspired by latex emoji package [[latex-emoji|https://github.com/stone-zeng/late
 !!! test
 
 Inspired by [[org-superstar|https://github.com/integral-dw/org-superstar-mode/blob/master/DEMO.org]] [[neorg|https://github.com/nvim-neorg/neorg]]
+
+!! bullets
+
+@@.bullets
+* one
+** two
+*** three
+**** four
+@@
