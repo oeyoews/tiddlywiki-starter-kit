@@ -22,3 +22,11 @@ tags: $:/tags/Stylesheet
 .gitter-open-chat-button, .gitter-open-chat-button:visited {
     color: black;
 }
+
+.gitter-open-chat-button::before {
+  content: {{$:/plugins/oeyoews/neotw/module/gitter/icon}};
+}
+
+.gitter-chat-embed {
+  border: 0;
+}
