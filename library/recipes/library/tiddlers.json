@@ -95,7 +95,7 @@
         "plugin-type": "plugin",
         "dependents": "",
         "type": "application/json",
-        "readme": "!! NOTE\n\n* This plugin is part of neotw(not general maybe)\n\n!! TODO\n\n* add tip for repeat press this shortcut\n* can't scroll to determined tiddler repreat\n* another usage is if your tiddlywiki get bad, you can't find any buttons because of install some stanger plugins(even enable safemode), now you can press <kbd>ctrl I</kbd> to call setting\n* add system image for tips use class\n\nCustomized shortcuts with `⌨️` at the beginning of description in [[shortcuts|$:/core/ui/ControlPanel/KeyboardShortcuts]] or press <kbd>alt h</kbd>\n",
+        "readme": "!! NOTE\n\n* because of newline, this shortcut not work, need use vscode to remove this(for dev plugin)\n* This plugin is part of neotw(not general maybe)\n\n!! TODO\n\n* add tip for repeat press this shortcut\n* can't scroll to determined tiddler repreat\n* another usage is if your tiddlywiki get bad, you can't find any buttons because of install some stanger plugins(even enable safemode), now you can press <kbd>ctrl I</kbd> to call setting\n* add system image for tips use class\n\nCustomized shortcuts with `⌨️` at the beginning of description in [[shortcuts|$:/core/ui/ControlPanel/KeyboardShortcuts]] or press <kbd>alt h</kbd>\n",
         "requires-reload": "no"
     },
     {
