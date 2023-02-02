@@ -1,10 +1,6 @@
 title: $:/plugin/oeyoews/tiddlywiki-static-page/style/static
 tags: $:/tags/Stylesheet
 
-<$list filter="[[$:/themes/nico/notebook]is[tiddler]]">
-<$list filter="[{$:/info/url/protocol}prefix[http:]]">
 .tc-sidebar-header {
 	display: none;
 }
-</$list>
-</$list>
