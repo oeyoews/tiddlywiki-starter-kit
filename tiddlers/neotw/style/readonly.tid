@@ -1,23 +1,12 @@
 created: 20230115080358369
 creator: oeyoews
-modified: 20230115082937284
+modified: 20230202084143755
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw/style/readonly
 type: text/vnd.tiddlywiki
 
-<!-- this order should put last, not suitable in plugin 
-<$list filter="[{$:/info/url/protocol}prefix[https]]">
-	 .tc-tags-wrapper, .tc-tiddler-controls { display: none; }
-</$list>
-
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
-	[data-tiddler-title="Index"] .tc-title { display:none; }
- .tc-subtitle, .tc-tags-wrapper, .tc-tiddler-controls, .nc-bottombar, .nc-sidebar { display: none; }
-</$list>
--->
-
-<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
-	[data-tiddler-title="Index"] .tc-title { display:none; }
- .tc-subtitle, .tc-tags-wrapper, .nc-bottombar, .nc-sidebar { display: none; }
+.tc-titlebar { display:none; }
+ .tc-subtitle, .tc-tags-wrapper, .tc-tiddler-controls, .nc-bottombar, .nc-topbar, .nc-sidebar { display: none; }
 </$list>

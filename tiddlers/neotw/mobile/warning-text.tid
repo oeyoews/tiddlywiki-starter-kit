@@ -2,10 +2,10 @@ caption: mobile-warn
 created: 20220913004025225
 creator: oeyoews
 mask-closable: yes
-modified: 20221209152439953
+modified: 20230202073724162
 modifier: oeyoews
 subtitle: Warning
-tags: 
+tags: deprecated
 title: neotw/mobile/warning-text
 type: text/vnd.tiddlywiki
 
