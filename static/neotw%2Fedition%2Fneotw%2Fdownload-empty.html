@@ -295,10 +295,6 @@ Error message and password prompt
 
 &lt;li&gt;neotw/actions/toggle-sidebar-local&lt;/li&gt;
 
-&lt;li&gt;neotw/archive/action/gatha-online&lt;/li&gt;
-
-&lt;li&gt;neotw/archive/gallary&lt;/li&gt;
-
 &lt;li&gt;neotw/archive/restore-button&lt;/li&gt;
 
 &lt;li&gt;neotw/archive/todo-table&lt;/li&gt;
@@ -352,8 +348,6 @@ Error message and password prompt
 &lt;li&gt;neotw/edition/neotw/download-empty&lt;/li&gt;
 
 &lt;li&gt;neotw/example/bullets-level&lt;/li&gt;
-
-&lt;li&gt;neotw/example/delay-msg&lt;/li&gt;
 
 &lt;li&gt;neotw/example/keyword&lt;/li&gt;
 
@@ -573,10 +567,6 @@ Error message and password prompt
 
 {"title":"neotw/actions/toggle-sidebar-local","created":"20220521171656845","creator":"oeyoews","modified":"20230115160214257","modifier":"oeyoews","tags":"$:/tags/StartupAction","type":"text/vnd.tiddlywiki","text":"\\define tid() $:/state/notebook-sidebar\n\n\u003C$list filter=\"[{$:/info/url/protocol}prefix[http:]]\"&gt;\n\t\u003C$action-setfield\n\t\t\t$tiddler=\u003C\u003Ctid&gt;&gt; $value=\"yes\"/&gt;\n\t\u003C$action-setfield \n\t\t$tiddler=\"$:/themes/nico/notebook/options/stickytitles\" text=\"no\"/&gt; \n\u003C/$list&gt;\n\n\u003C$list filter=\"[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]\"&gt;\n\t\u003C$action-setfield\n\t\t\t$tiddler=\u003C\u003Ctid&gt;&gt;\n\t$value=\"no\"/&gt;\n\u003C/$list&gt;\n\n\u003C!-- the-brain\n\u003C$list filter=\"[{$:/info/url/protocol}prefix[http:]]\"&gt;\n\t\u003C$action-setfield\n\t\t\t$tiddler=\"$:/state/notebook-sidebar-section\" $value=\"the-brain\"/&gt;\n\u003C/$list&gt;\n--&gt;","revision":"0","bag":"default"}<code>,</code>
 
-{"title":"neotw/archive/action/gatha-online","created":"20220911170044403","creator":"oeyoews","modified":"20220917035652021","modifier":"oeyoews","tags":"","type":"text/vnd.tiddlywiki","text":"\u003C$list filter=\"[{$:/info/url/protocol}prefix[https]]\"&gt;\n\u003C$action-setfield $tiddler=\"$:/config/Plugins/Disabled/$:/plugins/kookma/gatha\"\n          $field=\"text\"\n          $value=\"no\"/&gt;\n\u003C/$list&gt;","revision":"0","bag":"default"}<code>,</code>
-
-{"title":"neotw/archive/gallary","created":"20220908171035689","creator":"oeyoews","modified":"20221004164401757","modifier":"oeyoews","tags":"","type":"text/vnd.tiddlywiki","text":"\\define spotlight-actions()\n\u003C$action-spotlight\n\t$images=\"\n\thttps://gitlab.com/oeyoews/neotw/raw/main/img/s5.png\n\tneotw/images/white-vanilla.png\" $start=\"https://gitlab.com/oeyoews/neotw/raw/main/files/images/s5.png\"\n/&gt;\n\\end\n\n\u003C$button actions=\u003C\u003Cspotlight-actions&gt;&gt; &gt; open gallary \u003C/$button&gt;","revision":"0","bag":"default"}<code>,</code>
-
 {"title":"neotw/archive/restore-button","created":"20220902031815530","creator":"oeyoews","modified":"20220907052813082","modifier":"oeyoews","tags":"","type":"text/vnd.tiddlywiki","text":"\\define help-delete(key) \u003C$action-deletetiddler $tiddler=\"$:/state/seen/$key$\" /&gt;\n\n\\define restore-button()\n\u003C$fieldmangler tiddler=\"neotw/style/readonly\"&gt; \u003C$button actions=\u003C\u003Chelp-delete \"takeaways\"&gt;&gt; &gt;\n\u003C\u003Csymbol \"Restore Dismiss\" \"restore\"&gt;&gt; \n\u003C/$button&gt;\n\u003C/$fieldmangler&gt;\n\\end\n\n\u003Cdiv style=\"text-align: right;\"&gt;\n\u003C$button actions=\u003C\u003Chelp-seen \"takeaways\"&gt;&gt; &gt; \n\u003C\u003Csymbol \"Dismiss All\" bingo&gt;&gt;\n\u003C/$button&gt;\n\u003C/div&gt;","revision":"0","bag":"default"}<code>,</code>
 
 {"title":"neotw/archive/todo-table","created":"20220910014231360","creator":"oeyoews","modified":"20220910021753571","modifier":"oeyoews","tags":"","type":"text/vnd.tiddlywiki","text":"\\define createTask()\n\u003C$action-sendmessage \n  $message=\"tm-new-tiddler\" \n  title=\"New Task\" \n  tags=\"todo\" \n  text=\"\"\n  due-date=\"\"\n  priority=\"normal\"\n  status=\"not started\"\n  /&gt;\n\\end\n\n\\define newTask()\n\u003C$button actions=\u003C\u003CcreateTask&gt;&gt; class=\"btn btn-sm btn-info\" &gt;New Task\n\u003C/$button&gt;\n\\end\n\n\u003Cdiv class=\"float-right\"&gt;\n\u003C\u003CnewTask&gt;&gt;\n\u003C/div&gt;\n\nundone tasks: \u003C$count filter=\"{{{ [tag[todo]] -[tag[done]] }}}\"/&gt;\n\nFilter and search in table \u003C$edit-text tiddler=\"$:/temp/tasks/dtable/search\" filed=text tag=input default=\"\"/&gt;\n\u003C$macrocall $name=table-dynamic filter=\"[tag[todo]search{$:/temp/tasks/dtable/search}] -[tag[done]]\" fields=\"tbl-checkbox tbl-expand title priority status created\" class=\"w-100\" stateTiddler=\"neotw-table-todo-tid\"/&gt;","revision":"0","bag":"default"}<code>,</code>
@@ -630,8 +620,6 @@ Error message and password prompt
 {"title":"neotw/edition/neotw/download-empty","created":"20220922002850485","creator":"oeyoews","modified":"20220922003251682","modifier":"oeyoews","tags":"","type":"text/vnd.tiddlywiki","text":"\\define saveTiddlerFilter()\n[[$:/core]] [[$:/isEncrypted]]  [[$:/themes/tiddlywiki/vanilla]] -[[$:/boot/boot.css]] -[type[application/javascript]library[yes]] -[[$:/boot/boot.js]] -[[$:/boot/bootprefix.js]] [prefix[neotw]] -[prefix[neotw/article]]  +[sort[title]]\n\\end\n\\define savingEmpty()\nyes\n\\end\n{{$:/core/templates/tiddlywiki5.html}}","revision":"0","bag":"default"}<code>,</code>
 
 {"title":"neotw/example/bullets-level","created":"20220904170228442","creator":"oeyoews","modified":"20220907160434258","modifier":"oeyoews","tags":"","type":"text/vnd.tiddlywiki","text":"\u003C\u003C.preamble \"\"\"\u003C\u003Cemoji warn&gt;&gt; not use `@@` in wikitext, modify list style directly;for ios(safari), not support this marker entirly [[mdn|https://github.com/mdn/content/issues/984]]\n\"\"\"\n&gt;&gt;\n\n!! neotw bullets-level\n\n\u003C\u003C\u003C\n\"\"\"\ndmeo\ndmeo dmeo\ndmeo\n\"\"\"\n\u003C\u003C\u003C\n\n@@.list-tree\n* mdoe\n** dmeo\n** dmeo\n** dmeo\n*** dmeo\n*** dmeo\n*** dmeo\n* dmeo \n* dmeo \n*** deo\n@@\n\n@@.bullets\n* dmeo only configurate five level\n** dmo\n*** dmeo \u003C\u003C.lorem&gt;&gt;\n**** demo\n**** demo\n**** demo\n***** dmeo \u003C\u003C.lorem&gt;&gt;\n\n!! configuration\n\nlevel 1: \u003C$edit-text tiddler=\"neotw/style/bullets-level\" field=\"b1\" /&gt;\n\nlevel 2: \u003C$edit-text tiddler=\"neotw/style/bullets-level\" field=\"b2\" /&gt;\n\n\u003C!-- todo: use visual color operator --&gt;\nlevel color: \u003C$edit-text tiddler=\"neotw/style/bullets-level\" field=\"bcolor\" /&gt;\n\n\u003C!-- todo how to use edit text to modify dict value, like palette --&gt;","revision":"0","bag":"default"}<code>,</code>
-
-{"title":"neotw/example/delay-msg","created":"20220919032607654","creator":"oeyoews","modified":"20220922145829442","modifier":"oeyoews","tags":"","type":"text/vnd.tiddlywiki","text":"\\define delay-msg()  \u003C$action-sendmessage $message=\"tm-notify\" $param=\"neotw/welcome-msg\"/&gt; \n\n\\define delay-modal() \u003C$action-sendmessage $message=\"tm-modal\" $param=\"neotw/mobile/warning-text\"/&gt;\n\n* [[Timeoutjs|TiddlyTools/Time/action-timeout.js]]\n* talk ref \u003C\u003Cemoji arrowright&gt;&gt; \u003C\u003Curl \"https://talk.tiddlywiki.org/t/is-delay-an-attribute-of-the-action-sendmessage-widget/3275/5?\"&gt;&gt;\n&gt; will send msg after 0.5s\n* \u003C$button&gt; CLICK ME \u003C$action-timeout delay=500 actions=\u003C\u003Cdelay-msg&gt;&gt;/&gt;\u003C/$button&gt;\n\n* \u003C$button&gt; ME \u003C$action-timeout delay=500 actions=\u003C\u003Cdelay-modal&gt;&gt;/&gt;\u003C/$button&gt;\n","revision":"0","bag":"default"}<code>,</code>
 
 {"title":"neotw/example/keyword","created":"20220909024141450","creator":"oeyoews","modified":"20220909025412604","modifier":"oeyoews","tags":"","type":"text/vnd.tiddlywiki","text":"* \u003C\u003CTODO&gt;&gt; this is dmeo \n* \u003C\u003CDONE&gt;&gt; dmeo \n* \u003C\u003CWARN&gt;&gt; dmeo \n* \u003C\u003CHACK&gt;&gt; dmeo ","revision":"0","bag":"default"}<code>,</code>
 
