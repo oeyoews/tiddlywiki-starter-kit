@@ -18,6 +18,10 @@
 <img src="./img/011.png" height=256 alt="011">
 </center>
 
+<!-- ## Features -->
+
+<!-- - 一键部署 -->
+
 ## Deploy
 
 <!-- https://vercel.com/docs/deploy-button -->
@@ -33,6 +37,30 @@
 ## 📂 FileStruct
 
 ```bash
+.Neotw
+├──📁archive
+├──📁CITATION.cff
+├──📁dev
+├──📁dist
+├──📁files
+├──📁img
+├──📁LICENSE
+├──📁makefile
+├──📁netlify.toml
+├──📁node_modules
+├──📁output
+├──📁package.json
+├──📁patch
+├──📁README.md
+├──📁scripts
+├──📁src
+├──📁static
+├──📁templates
+├──📁test
+├──📁tiddlers
+├──📁tiddlywiki.info
+├──📁vercel.json
+└──📁yarn.lock
 # This structure may not be up to date
 ```
 
@@ -40,11 +68,6 @@
 
 ```bash
 git clone --depth 1 https://gitlab.com/oeyoews/neotw # or git clone --depth 1 https://github.com/oeyoews/neotw
-```
-
-## 👟 Run
-
-```bash
 yarn install # install
 npm run guide # or npx tiddlywiki --listen
 ```
