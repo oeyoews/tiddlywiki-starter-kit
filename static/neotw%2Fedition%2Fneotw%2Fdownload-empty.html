@@ -300,10 +300,6 @@ Error message and password prompt
 
 &lt;li&gt;neotw/archive/gallary&lt;/li&gt;
 
-&lt;li&gt;neotw/archive/images/gallary&lt;/li&gt;
-
-&lt;li&gt;neotw/archive/live-2d&lt;/li&gt;
-
 &lt;li&gt;neotw/archive/restore-button&lt;/li&gt;
 
 &lt;li&gt;neotw/archive/todo-table&lt;/li&gt;
@@ -581,10 +577,6 @@ Error message and password prompt
 {"title":"neotw/archive/action/gatha-online","created":"20220911170044403","creator":"oeyoews","modified":"20220917035652021","modifier":"oeyoews","tags":"","type":"text/vnd.tiddlywiki","text":"\u003C$list filter=\"[{$:/info/url/protocol}prefix[https]]\"&gt;\n\u003C$action-setfield $tiddler=\"$:/config/Plugins/Disabled/$:/plugins/kookma/gatha\"\n          $field=\"text\"\n          $value=\"no\"/&gt;\n\u003C/$list&gt;","revision":"0","bag":"default"}<code>,</code>
 
 {"title":"neotw/archive/gallary","created":"20220908171035689","creator":"oeyoews","modified":"20221004164401757","modifier":"oeyoews","tags":"","type":"text/vnd.tiddlywiki","text":"\\define spotlight-actions()\n\u003C$action-spotlight\n\t$images=\"\n\thttps://gitlab.com/oeyoews/neotw/raw/main/img/s5.png\n\tneotw/images/white-vanilla.png\" $start=\"https://gitlab.com/oeyoews/neotw/raw/main/files/images/s5.png\"\n/&gt;\n\\end\n\n\u003C$button actions=\u003C\u003Cspotlight-actions&gt;&gt; &gt; open gallary \u003C/$button&gt;","revision":"0","bag":"default"}<code>,</code>
-
-{"title":"neotw/archive/images/gallary","created":"20220909004248329","creator":"oeyoews","modified":"20220913024811202","modifier":"oeyoews","tags":"","type":"text/vnd.tiddlywiki","text":"\u003C!--\n\u003C$macy columns=\"6\" breakAt=\"1300:5:15:15 940:3:10:10 520:2:5:5 400:1:1:1\"&gt;\n\u003C$let imgs=\"\"\"\nhttps://gitlab.com/oeyoews/neotw/raw/main/img/s5.png\nneotw/images/white-vanilla.png \n\"\"\"\n&gt;\n\u003C$list filter=\"[enlist\u003Cimgs&gt;]\" variable=\"img\"&gt;\n\u003C$button class=\"tc-btn-invisible item-container\" tag=\"div\" actions=\"\"\"\n\u003C$action-spotlight\n\t$images=\u003C\u003Cimgs&gt;&gt;\n\t$start=\u003C\u003Cimg&gt;&gt;\n/&gt;\"\"\"&gt;\n\u003C$image source=\u003C\u003Cimg&gt;&gt;  class=\"item\" /&gt;\n\u003C/$button&gt;\n\u003C/$list&gt;\n\u003C/$let&gt;\n\u003C/$macy&gt;\n--&gt;","revision":"0","bag":"default"}<code>,</code>
-
-{"title":"neotw/archive/live-2d","created":"20220929054848592","creator":"oeyoews","modified":"20220929060614132","modifier":"oeyoews","tags":"","type":"text/vnd.tiddlywiki","text":"\u003Clink rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css\"/&gt;\n\u003Cscript src=\"https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js\"&gt;\u003C/script&gt;","revision":"0","bag":"default"}<code>,</code>
 
 {"title":"neotw/archive/restore-button","created":"20220902031815530","creator":"oeyoews","modified":"20220907052813082","modifier":"oeyoews","tags":"","type":"text/vnd.tiddlywiki","text":"\\define help-delete(key) \u003C$action-deletetiddler $tiddler=\"$:/state/seen/$key$\" /&gt;\n\n\\define restore-button()\n\u003C$fieldmangler tiddler=\"neotw/style/readonly\"&gt; \u003C$button actions=\u003C\u003Chelp-delete \"takeaways\"&gt;&gt; &gt;\n\u003C\u003Csymbol \"Restore Dismiss\" \"restore\"&gt;&gt; \n\u003C/$button&gt;\n\u003C/$fieldmangler&gt;\n\\end\n\n\u003Cdiv style=\"text-align: right;\"&gt;\n\u003C$button actions=\u003C\u003Chelp-seen \"takeaways\"&gt;&gt; &gt; \n\u003C\u003Csymbol \"Dismiss All\" bingo&gt;&gt;\n\u003C/$button&gt;\n\u003C/div&gt;","revision":"0","bag":"default"}<code>,</code>
 
