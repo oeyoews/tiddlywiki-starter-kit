@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="Refresh" content="3;url=./main.html" /> -->
+    <title>Neotw</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- <link -->
+    <!--   rel="stylesheet" -->
+    <!--   href="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.css" -->
+    <!-- /> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.js"></script> -->
+    <!-- <link -->
+    <!--   rel="stylesheet" -->
+    <!--   href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css" -->
+    <!-- /> -->
+    <style type="text/css" media="screen">
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+
+      .alert {
+        background: rgba(255, 255, 255, 1);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        z-index: 10;
+        padding: 10px;
+      }
+
+      .alert ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .alert ul li b {
+        color: #589;
+        font-weight: 600;
+        font-family: Arial, sans-serif;
+      }
+
+      #container {
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        position: relative;
+      }
+
+      #wallpaper {
+        background-image: url('./default2.avif'); /* https://unsplash.com/photos/T_Qe4QlMIvQ */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      #wallpaper.slideUp {
+        transition: all 0.6s ease;
+        transform: translateY(-100%);
+      }
+
+      #wallpaper.slideDown {
+        transition: all 0.6s linear;
+        transform: translateY(0%);
+      }
+
+      .icons {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 0.5em;
+      }
+
+      .icons i {
+        color: #fff;
+        margin-top: 0.7em;
+        margin-right: 2em;
+      }
+
+      #date_cont {
+        position: absolute;
+        top: 50%;
+        left: 3%;
+        animation: slideInFast 0.25s 0.25s linear forwards;
+        visibility: hidden;
+        transform: translateY(150%);
+        transition: all 0.6s ease both;
+      }
+
+      @keyframes slideInFast {
+        from {
+          visibility: hidden;
+          opacity: 0;
+          transform: translateY(100%);
+        }
+        to {
+          visibility: visible;
+          opacity: 1;
+          transform: translateY(0%);
+        }
+      }
+
+      #time {
+        font-size: 8em;
+        font-family: sans-serif;
+        font-weight: 300;
+        color: #fff;
+        margin: 0;
+        margin-left: -15px;
+        padding: 0;
+      }
+
+      #date {
+        font-size: 2.5em;
+        font-family: sans-serif;
+        color: #fff;
+        margin-top: -0.6em;
+        /*   padding-left: 0.4em; */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="wallpaper">
+        <div id="date_cont">
+          <div id="time">08:20</div>
+          <div id="date">Tuesday, October 8</div>
+          <div class="icons">
+            🔋
+            <span id="batt"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script charset="utf-8">
+
+        // mobile move
+        document.addEventListener('touchend', e => {
+          window.location.href = './main.html';
+        });
+
+        // Key Events
+        document.addEventListener('keypress', e => {
+          if (e.keyCode === 13 || e.keyCode === 32) {
+            window.location.href = './main.html';
+            wallpaper.classList.remove('slideDown');
+            wallpaper.classList.add('slideUp');
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
