@@ -1,6 +1,6 @@
-created: 20230202092206775
+created: 20230202124524313
 creator: oeyoews
-modified: 20230202111401267
+modified: 20230202124543087
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw-stylesheet
@@ -268,11 +268,8 @@ input:focus, textarea:focus {
     outline: 0;
 }
 
-center river
-<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]"> 
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
 <$list filter="[[$:/state/notebook-sidebar]get[text]else[no]match[no]]">
-
-@media (min-width: 1100px) {
 .tc-story-river {
 		min-width: 1100px;
 }
@@ -280,19 +277,7 @@ center river
 .nc-bottombar {
 	display: none;
 }
-}
-
 </$list>
-</$list>
-
-<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]"> 
-@media (max-width: 960px) {
-.nc-sidebar,
-.nc-topbar-wrapper,
-.nc-bottombar {
-	display: none;
-}
-}
 </$list>
 
 .tc-improvement-banner {
@@ -301,7 +286,7 @@ center river
 	padding-left: 5px;
 	margin-top: 6px;
 	margin-bottom: 12px;
-	
+
   -webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
      -moz-box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
           box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
@@ -339,7 +324,7 @@ center river
 .list-tree, .list-tree ul, .list-tree li { position: relative; }
 
 .list-tree li { list-style: none; }
-.list-tree li::marker { 
+.list-tree li::marker {
 	content: ""
 }
 
@@ -353,7 +338,7 @@ center river
 
 .list-tree li::before {
     border-bottom: {{!!list-tree-thickness}} solid {{!!list-tree-color}};
-    top: .6em; 
+    top: .6em;
     width: 7px;
 }
 
@@ -364,7 +349,6 @@ center river
 }
 
 .list-tree ul > li:last-child::after { height: .5em; }
-
 
 .list-tree > li:last-of-type:before { display:none; }
 
