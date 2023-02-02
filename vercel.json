@@ -10,8 +10,5 @@
     "deploymentEnabled": {
       "gh-pages": false
     }
-  },
-  "env": {
-    "TZ": "asia/shanghai"
   }
 }
