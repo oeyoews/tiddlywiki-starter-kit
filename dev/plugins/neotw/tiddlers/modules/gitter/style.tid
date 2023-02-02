@@ -46,3 +46,9 @@ content: "Neotw · ";
     display: none;
 }
 </$list>
+
+<$list filter="[{$:/info/url/protocol}prefix[http:]]">
+.gitter-open-chat-button {
+    display: none;
+}
+</$list>
