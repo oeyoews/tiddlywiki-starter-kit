@@ -1304,6 +1304,9 @@ a.tc-tiddlylink:hover {
 	border: 1px solid rgba(0,0,0,.2);
 	margin: 4px 0 3px 3px;
 	padding: 3px 3px 3px 3px;
+}.tc-tiddler-preview-preview {
+	overflow-y: scroll;
+	height: 400px;
 }.tc-tiddler-frame .tc-tiddler-preview .tc-edit-texteditor {
 	width: 49%;
 }.tc-tiddler-frame .tc-tiddler-preview canvas.tc-edit-bitmapeditor {
