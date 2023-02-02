@@ -1,0 +1,221 @@
+created: 20230202092206775
+creator: oeyoews
+modified: 20230202092644027
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: neotw-stylesheet
+type: text/vnd.tiddlywiki
+
+<!-- better preview -->
+.tc-tiddler-preview-preview {
+    border: 0px !important;
+}
+
+<!-- hide scrollbar -->
+html, body, .tc-body, .tc-sidebar-scrollable {
+scrollbar-width: none;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+.tc-body::-webkit-scrollbar,
+.tc-sidebar-scrollable::-webkit-scrollbar {
+display: none;
+}
+
+<!-- mobile -->
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
+.tc-titlebar { display:none; }
+ .tc-subtitle, .tc-tags-wrapper, .tc-tiddler-controls, .nc-bottombar, .nc-topbar, .nc-sidebar { display: none; }
+</$list>
+
+<!-- alert -->
+.tc-alert { board-radius: 5px !important; }
+
+<!-- ranget patch -->
+input[type=range]:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+<!-- general  -->
+.neotw-fw {
+	font-weight: bold;
+}
+
+<!-- ?? -->
+.mc-announcement-banner {
+    padding: 2px 10px;
+    background-color: yellow;
+    border-radius: 5px;
+    color: maroon;
+    border: 1px solid maroon;
+}
+
+<!-- checkbox -->
+input[type="checkbox"] {
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1em;
+  height: 1em;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  place-content: center;
+}
+
+<!-- selection -->
+* ::selection {
+	background-color:#D7D4F0;
+	color: black;
+}
+
+<!-- editor -->
+strike {
+	color: gray;
+}
+
+.CodeMirror-wrap pre.CodeMirror-line {
+    font-size: 24px !important;
+}
+
+<!-- tc-notification -->
+.tc-notification {
+  color: black;
+  border-radius: 5px;
+  /** background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59); */
+  border: 2px;
+  box-shadow: 0 5px 20px rgb(0 0 0 / 12%);
+}
+
+<!-- blockquote -->
+blockquote {
+  border-left: 3px solid #dfdfdf;
+}
+
+<!-- frame -->
+.tc-tiddler-frame {
+  border: 0;
+}
+
+.tc-block-tags-dropdown > .tc-btn-invisible:hover {
+  background-color: #00000008;
+}
+
+.cm-s-tiddlywiki .CodeMirror-activeline-background,
+.cm-s-tiddlywiki .CodeMirror-activeline-gutter .CodeMirror-linenumber {
+  background: #00000008;
+}
+
+.tc-editor-toolbar button,
+.tc-editor-toolbar button.tc-btn-invisible {
+  border-radius: 3px;
+  background: #00000008;
+  color: #3f3b3b;
+  fill: #3f3b3b;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+<!-- remove more border -->
+.tc-tab-content.tc-vertical {
+  border-left: 0;
+}
+
+.tc-more-sidebar > .tc-tab-set > .tc-tab-buttons > button.tc-tab-selected {
+  border: none;
+}
+
+.tc-more-sidebar > .tc-tab-set > .tc-tab-buttons > button {
+  border: none;
+}
+
+<!-- button -->
+button {
+  border: 0;
+  border-radius: 3px;
+  background: #00000008;
+}
+
+<!-- remove notebook sidebar border -->
+.nc-sidebar .segment {
+  border-bottom: 0px;
+}
+
+.nc-sidebar .section.open .label {
+  color: #ffffff;
+  fill: #ffffff;
+  background: #7f4bca;
+  border-bottom: 0;
+  border-radius: 3px;
+}
+
+.nc-sidebar .section .label {
+  border-radius: 3px;
+}
+
+.tc-tiddler-preview-preview {
+  float: right;
+  width: 49%;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  margin: 4px 0 3px 3px;
+  padding: 3px 3px 3px 3px;
+  border-radius: 3px;
+}
+
+<!-- remove border -->
+.tc-editor-toolbar button,
+.tc-editor-toolbar button.tc-btn-invisible {
+  border: 0;
+}
+
+.tc-edit-tags {
+  border: 0;
+}
+
+.tc-tiddler-frame input.tc-edit-texteditor {
+  border: 0;
+}
+
+.tc-tiddler-frame input.tc-edit-texteditor:focus {
+  box-shadow: 0 0 0 0 transparent;
+  background: #00000008;
+}
+
+.CodeMirror {
+  border: 0;
+}
+
+span.tc-tag-label {
+  border-radius: 3px;
+  background: #00000008;
+}
+
+.nc-bar input[type="search"]:focus {
+  box-shadow: 0 0 0 0 transparent;
+}
+
+<!-- folde-fix -->
+button.tc-fold-banner {
+  position: absolute;
+  padding: 0px;
+  /*margin: 0;*/
+  background: none;
+  border: yes;
+  width: 23px;
+  text-align: center;
+  margin-left: -50px;
+  top: 25px;
+  bottom: 25px;
+}
+button.tc-unfold-banner {
+  position: unset;
+  padding: 2px 0;
+  margin-top: 20px;
+  background: none;
+  width: 100%;
+  width: calc(100% + 2px);
+  margin-left: -3px;
+  text-align: center;
+  border: none;
+}

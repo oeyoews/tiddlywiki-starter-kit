@@ -6,5 +6,6 @@
     "name": "Neotw",
     "description": "Neotw",
     "author": "oeyoews",
+    "plugin-priority": "999",
     "list": "readme explore"
 }
