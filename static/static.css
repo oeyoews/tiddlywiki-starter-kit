@@ -4386,7 +4386,7 @@ display: none;
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 99";
+  content: " 96";
 }
 
 
@@ -4692,13 +4692,19 @@ display: none;
 
 
 [data-tag-title=\$\:\/tags\/StartupAction] .tc-tag-label:after {
-  content: " 2";
+  content: " 1";
 }
 
 
 
 [data-tag-title=\$\:\/tags\/HelpPanel] .tc-tag-label:after {
   content: " 1";
+}
+
+
+
+[data-tag-title=deprecated] .tc-tag-label:after {
+  content: " 3";
 }
 
 
@@ -4714,7 +4720,7 @@ display: none;
 }
 
 .tc-untagged-label:after {
-  content: "164";
+  content: "163";
 }
 .user-panel-avatar { position: relative; max-width: 22px; max-height: 22px; }.user-panel-avatar-56 { position: relative; max-width: 56px; max-height: 56px; }.user-panel-avatar-56 img { width: 100%; height: auto; max-width: 56px; max-height: 56px; border-radius: 50%; aspect-ratio: 1 / 1; }.user-panel-avatar img { width: 100%; height: auto; max-width: 22px; max-height: 22px; border-radius: 50%; aspect-ratio: 1 / 1; }
 ul.bullets li::marker {
@@ -7183,51 +7189,7 @@ CSS.mc-announcement-banner {
 	display: none;
 }
 }
-.neotw-left, .neotw-right {
-        min-height: 60px;
-				max-width: 500px;
-        position: relative;
-        display: table;
-        text-align: left;
-        border-radius: 9px;
-        background-color: #fc3;
-				padding: 10px;
-      }
-			
-      .neotw-right {
-        /*使左右的对话框分开*/
-        top: 20px;
-        left: 450px;
-        background-color: #9eea6a;
-      }
-      .neotw-left > p,
-      .neotw-right > p {
-        /*使内容居中*/
-        display: table-cell;
-        vertical-align: middle;
-        padding: 0 10px;
-				right: 10px;
-      }
-      .neotw-left:before,
-      .neotw-right:after {
-        /*用伪类写出小三角形*/
-        content: "";
-        display: block;
-        width: 0;
-        height: 0;
-        border: 16px solid transparent;
-        position: absolute;
-        top: 11px;
-      }
-      /*分别给左右两边的小三角形定位*/
-      .neotw-left:before {
-        border-right: 16px solid #fc3;
-        left: -30px;
-      }
-      .neotw-right:after {
-        border-left: 16px solid #9eea6a;
-        right: -30px;
-      }input[type="checkbox"] {
+input[type="checkbox"] {
   background-color: #fff;
   margin: 0;
   font: inherit;
@@ -7247,9 +7209,7 @@ CSS.mc-announcement-banner {
 }.tw-context {
   border:2px solid none;
   word-break: break-all; word-wrap: break-word;}
-.kk-formatter-dropdown {
-    max-width: 12.6em;
-}.neotw-fw {
+.neotw-fw {
 	font-weight: bold;
 }.nc-sidebar {
     border-right: 0;
@@ -7342,8 +7302,6 @@ CSS.mc-announcement-banner {
 	background-color: yellow;
 }.tc-drop-down a, .tc-drop-down button {
     padding: 5px !important;
-}.doc-preamble {
-    border-radius: 6px;
 }input[type=range]:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
