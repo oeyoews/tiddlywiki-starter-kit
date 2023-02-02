@@ -70,54 +70,7 @@ Error message and password prompt
 .tc-password-wrapper input {
 	width: 100%;
 }
-.copy-code{
-    font-family: Consolas;
-}.copy-code dt{
-    background: #f6f6f6;
-    border: solid 1px #cccccc;
-    border-bottom:unset;
-    padding: 0.5em;
-    border-radius: 3px 3px 0 0;
-    font-size: 1.1em;
-}.copy-code dt:empty, .copy-code dd small.hide{
-    display: none;
-}.copy-code dd{
-    margin: 0;
-}.copy-code dd>pre{
-    border-radius: 3px;
-    background-color:#ffffff
-}.copy-code dt:not(:empty)+dd>pre{
-    border-radius: 0 0 3px 3px;
-    margin-top: 0em;
-}.copy-code dd{
-    position: relative;
-    display: block;
-}.copy-code dd :is(button, small) {
-    position: absolute;
-    opacity: 0.3;
-    padding: 5px;
-}.copy-code dd button:hover{
-    transition: opacity 150ms ease-in-out;
-    opacity: 1;
-}.copy-code dd button {
-    font-size: 0;
-    right:0;
-    display: flex;
-    align-items:flex-start;
-    justify-content:flex-end;
-    pointer-events:none;
-}.copy-code dd button svg {
-    width: 20px;
-    height: auto;
-    pointer-events:all;
-}.copy-code dd small {
-    inset: auto 0 0 auto;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1em;
-}:is([data-tags*="$:/tags/Stylesheet"],[data-tags*="$:/tags/ViewTemplate"],[data-tags*="$:/tags/Macro"]) .tc-tiddler-body{
-display:none;
-}/*
+/*
 ** Start with the normalize CSS reset, and then belay some of its effects
 *//*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -2637,7 +2590,7 @@ content: "Neotw · ";
 
 
 [data-tag-title=\$\:\/tags\/EditorToolbar] .tc-tag-label:after {
-  content: " 37";
+  content: " 36";
 }
 
 
@@ -2733,7 +2686,7 @@ content: "Neotw · ";
 
 
 [data-tag-title=\$\:\/tags\/ViewTemplate] .tc-tag-label:after {
-  content: " 17";
+  content: " 16";
 }
 
 
@@ -2787,43 +2740,13 @@ content: "Neotw · ";
 
 
 [data-tag-title=\$\:\/tags\/Macro] .tc-tag-label:after {
-  content: " 50";
-}
-
-
-
-[data-tag-title=\$\:\/showInfo] .tc-tag-label:after {
-  content: " 1";
-}
-
-
-
-[data-tag-title=\$\:\/plugins\/TiddlyTweaks\/CodeUtilities\/Macro] .tc-tag-label:after {
-  content: " 7";
+  content: " 49";
 }
 
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 73";
-}
-
-
-
-[data-tag-title=\$\:\/plugins\/TiddlyTweaks\/CodeUtilities\/Stylesheet\/ViewTemplate] .tc-tag-label:after {
-  content: " 1";
-}
-
-
-
-[data-tag-title=\$\:\/showInfo\/macro\/copy-code\/style] .tc-tag-label:after {
-  content: " 1";
-}
-
-
-
-[data-tag-title=bookmark] .tc-tag-label:after {
-  content: " 1";
+  content: " 71";
 }
 
 
