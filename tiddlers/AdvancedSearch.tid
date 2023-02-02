@@ -1,9 +1,9 @@
-caption: {{$:/core/images/advanced-search-button}} Search
+caption: Search
 color: #bbb
 created: 20220828003703323
 creator: oeyoews
 icon: $:/core/images/advanced-search-button
-modified: 20230127073200354
+modified: 20230202152920095
 modifier: oeyoews
 title: $:/AdvancedSearch
 type: text/vnd.tiddlywiki
