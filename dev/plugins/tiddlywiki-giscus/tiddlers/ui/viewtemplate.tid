@@ -5,6 +5,7 @@ tags: $:/tags/ViewTemplate
 <$list filter="[all[current]!is[system]!is[draft]subfilter{$:/plugins/oeyoews/tiddlywiki-giscus/filter}]" variable="comment">
 <!-- online -->
 <$list filter="[{$:/info/url/protocol}prefix[https]]">
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
   <span>
     <!-- lang -->
     <$list filter="[[$:/language]get[text]removeprefix[$:/languages/]else[en-GB]]" variable="lang">
@@ -47,5 +48,6 @@ tags: $:/tags/ViewTemplate
         </$set>
      </$list>
   </span>
+</$list>
 </$list>
 </$list>
