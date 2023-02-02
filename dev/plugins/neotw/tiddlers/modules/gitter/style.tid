@@ -40,3 +40,9 @@ content: "Neotw · ";
     display: none;
 }
 </$list>
+
+<$list filter="[[$:/state/notebook-sidebar]get[text]else[no]match[yes]]">
+.gitter-open-chat-button {
+    display: none;
+}
+</$list>
