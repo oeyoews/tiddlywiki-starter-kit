@@ -1,7 +1,7 @@
 caption: giscus
 description: github giscus comments
 title: $:/plugins/oeyoews/tiddlywiki-giscus/giscus-pagecontrol
-tags: $:/tags/PageControls
+<!-- tags: $:/tags/PageControls -->
 
 \whitespace trim
 
