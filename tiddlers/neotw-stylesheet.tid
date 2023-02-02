@@ -1,6 +1,6 @@
 created: 20230202092206775
 creator: oeyoews
-modified: 20230202092644027
+modified: 20230202111401267
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw-stylesheet
@@ -219,3 +219,159 @@ button.tc-unfold-banner {
   text-align: center;
   border: none;
 }
+
+.matched{
+	background-color:cyan;
+	padding: 0 3px;
+	border-radius: 3px;
+}
+
+.tw-context {
+  border:2px solid none;
+  word-break: break-all; word-wrap: break-word;}
+
+.neotw-span {
+	border-radius: 3px;
+	padding: 0 5px;
+	color: black;
+}
+
+.neotw-span {
+	border-radius: 3px;
+	padding: 0 5px;
+	color: black;
+}
+
+.b1 {
+	background-color: #DCE2F1;
+}
+.b2 {
+	background-color: #E3EDCD;
+}
+.b3 {
+	background-color: #FAF9DE;
+}
+.b4 {
+	background-color: #FDE6E0;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+.neotw-underline {
+	text-decoration: underline 3px cyan;
+}
+
+input:focus, textarea:focus {
+		box-shadow: none;
+    outline: 0;
+}
+
+center river
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]"> 
+<$list filter="[[$:/state/notebook-sidebar]get[text]else[no]match[no]]">
+
+@media (min-width: 1100px) {
+.tc-story-river {
+		min-width: 1100px;
+}
+.nc-topbar-wrapper,
+.nc-bottombar {
+	display: none;
+}
+}
+
+</$list>
+</$list>
+
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]"> 
+@media (max-width: 960px) {
+.nc-sidebar,
+.nc-topbar-wrapper,
+.nc-bottombar {
+	display: none;
+}
+}
+</$list>
+
+.tc-improvement-banner {
+	font-size: 0.7em;
+	background: #fcc;
+	padding-left: 5px;
+	margin-top: 6px;
+	margin-bottom: 12px;
+	
+  -webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+     -moz-box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+          box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+
+}
+
+.tc-improvement-banner:before {
+		display: block;
+		position: absolute;
+		width: 0;
+		height: 0;
+		content: " ";
+		margin-left: -5px;
+		margin-top: -10px;
+		border-top: 5px solid transparent;
+		border-left: 5px solid transparent;
+		border-right: 5px solid #C07E7E;
+		border-bottom: 5px solid #C07E7E;
+	}
+
+.tc-drop-down a, .tc-drop-down button {
+    padding: 5px !important;
+}
+
+.CodeMirror-wrap pre.CodeMirror-line {
+	font-size: 20px;
+}
+
+.nc-sidebar {
+    border-right: 0;
+}
+
+<!-- listtree -->
+<pre>
+.list-tree, .list-tree ul, .list-tree li { position: relative; }
+
+.list-tree li { list-style: none; }
+.list-tree li::marker { 
+	content: ""
+}
+
+.list-tree ul { padding: 0 0 0 2em; }
+
+.list-tree li::before, .list-tree li::after {
+    content: "";
+    position: absolute;
+    left: -1em;
+}
+
+.list-tree li::before {
+    border-bottom: {{!!list-tree-thickness}} solid {{!!list-tree-color}};
+    top: .6em; 
+    width: 7px;
+}
+
+.list-tree ul li::after {
+    border-left: {{!!list-tree-thickness}} solid {{!!list-tree-color}};
+    height: 100%;
+    top: .1em;
+}
+
+.list-tree ul > li:last-child::after { height: .5em; }
+
+
+.list-tree > li:last-of-type:before { display:none; }
+
+.list-tree > li:first-of-type:before { border-top: {{!!list-tree-thickness}} solid {{!!list-tree-color}}; }
+
+.list-tree > li:before {
+    border-left: {{!!list-tree-thickness}} solid {{!!list-tree-color}};
+    height: 100%;
+}
+</pre>
