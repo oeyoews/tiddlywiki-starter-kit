@@ -3,8 +3,10 @@ tags: $:/tags/Macro
 
 \whitespace trim
 
-\define Fancybox(links, caption, group, width:256)
+\define fbox(links, caption, group, width:256)
 <$list filter="[enlist<__links__>]" variable="link">
+<!-- https: -->
+<$list filter="[<link>prefix[https:]]">
     <a
       href=<<link>>
       data-fancybox=<<qualify  """$group$""">>
@@ -16,39 +18,24 @@ tags: $:/tags/Macro
         width=$width$/>
     </a>
 </$list>
-\end
-
-\define imagetobase64()  [{!!text}] [[;base64,]] [{!!type}] [[data:]] :and[reverse[]join[]]
-
-<!-- use genesis -->
-<!-- it slow and make tiddlywiki slow, so just use one image every times -->
-<!-- NOTE: cant have slash like xxx/image.png -->
-<!-- not support canonical_uri -->
-<!-- not recommend use this macro -->
-<!-- not support files image -->
-\define FancyboxL(link, group, width:256)
-<$let currentTiddler=$link$>
+<!-- binary -->
+<$list filter="[<link>is[binary]!has[_canonical_uri]]">
   <a
      data-fancybox="""$group$"""
-     data-caption="""$link$"""
-     href={{{ [subfilter<imagetobase64>] }}}
+     data-caption="""$caption$"""
+     href={{{ [<link>get[text]] [[;base64,]] [<link>get[type]] [[data:]] :and[reverse[]join[]] }}}
      >
     <$image
-      source=$link$
-      tooltip=$link$
+      source=<<link>>
+      tooltip=<<link>>
       loading="lazy"
       width=$width$
       class="rounded"/>
   </a>
-</$let>
+	</$list>
+  <!-- not supported binary -->
+<$list filter="[<link>!prefix[https:]!is[binary]!has[_canonical_uri]]">
+{{{ [<__link__>] }}} image <span style="color:red;"> not supported by </span> [[Fancybox Plugin|$:/plugins/oeyoews/tiddlywiki-fancybox]]
+	</$list>
+</$list>
 \end
-
-<!-- \define Carousel(links) -->
-<!-- <div class="carousel"> -->
-<!--   <$list filter="[enlist<__links__>]" variable="link"> -->
-<!--     <div class="carousel__slide"> -->
-<!--       <img src=<<link>> width="512" /> -->
-<!--     </div> -->
-<!--   </$list> -->
-<!-- </div> -->
-<!-- \end -->

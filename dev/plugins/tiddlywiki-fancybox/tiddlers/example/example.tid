@@ -7,8 +7,8 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox/example
 </center>
 
 <center>
-  <<FancyboxL "test-fancybox.png" group:"Single Group">>
-  <<FancyboxL "test-fancybox.png" group:"Single Group">>
+  <<fbox "test-fancybox.png" group:"Single Group">>
+  <<fbox "test-fancybox.png" group:"Single Group">>
 </center>
 
 <center>
@@ -16,7 +16,7 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox/example
 </center>
 
 <center>
-  <<FancyboxL "test-fancybox.png" >>
+  <<fbox "test-fancybox.png" >>
 </center>
 
 !! Online Images
@@ -29,21 +29,21 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox/example
 ```
 
 <center>
-  <<Fancybox "https://lipsum.app/id/66/1200x675"
+  <<fbox "https://lipsum.app/id/66/1200x675"
   caption: "First Image"
   group: "first"
   >>
 </center>
 
 <center>
-  <<Fancybox "https://lipsum.app/id/77/1200x675"
+  <<fbox "https://lipsum.app/id/77/1200x675"
   caption: "Second Image"
   group: "second"
   >>
 </center>
 
 ```wikitext
-<<Fancybox
+<<fbox
 """
 https://lipsum.app/id/77/1200x675
 https://lipsum.app/id/66/1200x675
@@ -59,7 +59,7 @@ width: 256
 </center>
 
 <center>
-  <<Fancybox
+  <<fbox
   """
   https://lipsum.app/id/77/1200x675
   https://lipsum.app/id/66/1200x675
