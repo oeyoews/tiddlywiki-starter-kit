@@ -10,6 +10,7 @@ tags: $:/tags/Stylesheet
 }
 
 .gitter-open-chat-button {
+  font-weight: 700;
   background-color: #5d9ceb;
   border-radius: 0.5em;
   padding: 0.4em 0.8em;
