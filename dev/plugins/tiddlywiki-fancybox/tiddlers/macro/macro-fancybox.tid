@@ -35,7 +35,7 @@ tags: $:/tags/Macro
 	</$list>
   <!-- not supported binary -->
 <$list filter="[<link>!prefix[https:]!is[binary]!has[_canonical_uri]]">
-{{{ [<__link__>] }}} image <span style="color:red;"> not supported by </span> [[Fancybox Plugin|$:/plugins/oeyoews/tiddlywiki-fancybox]]
+<span style="color:red;">This image not supported by </span> [[Fancybox Plugin|$:/plugins/oeyoews/tiddlywiki-fancybox]]
 	</$list>
 </$list>
 \end
