@@ -15,8 +15,9 @@ tags: $:/tags/Macro
 <$list filter={{{ [<currentTiddler>get[publish]match[private]] }}}>
 {{$:/plugins/oeyoews/tiddlywiki-publish-tiddler/icon/private}}
 </$list>
-<$select field="publish" tiddler=<<currentTiddler>> tooltip='status' default="public">
+<$select field="publish" tiddler=<<currentTiddler>> tooltip='status' default="status">
 </$set>
+  <option disabled>status</option>
   <option value="private">private</option>
   <option value="no">hide</option>
   <option value="public">public</option>
