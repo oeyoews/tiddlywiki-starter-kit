@@ -1,7 +1,7 @@
 created: 20230202124524313
 creator: oeyoews
 empty: yes
-modified: 20230203063508098
+modified: 20230203064410745
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw-stylesheet
@@ -18,11 +18,11 @@ type: text/vnd.tiddlywiki
 }
 ::-webkit-scrollbar,
   scrollbar-width {
-  width: 0px;
+	display: none;
 }
 ::-webkit-scrollbar:hover,
   scrollbar-width {
-  width: 0px;
+	display: none;
 }
 
 <!-- mobile -->
