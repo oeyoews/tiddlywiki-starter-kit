@@ -11,6 +11,7 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox/readme
 !! Features
 
 * support download images, fullscreen, custom style and shortcuts,
+* support local images online images, mix that is also supported
 
 !! Usage
 
@@ -25,3 +26,7 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox/readme
 * need refresh on installed this fancybox plugin
 * if you use splashscreen, please remove `remove-when-wiki-loaded` class,
 otherwise this plugin will not work normally [[warn|https://github.com/Jermolene/TiddlyWiki5/search?q=tc-remove-when-wiki-loaded]]
+
+!! TODO
+
+* support filter
