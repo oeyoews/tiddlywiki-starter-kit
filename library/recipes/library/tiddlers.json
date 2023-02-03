@@ -125,9 +125,9 @@
         "type": "application/json",
         "plugin-type": "plugin",
         "name": "Tiddlywiki Fancybox",
-        "list": "readme config example",
+        "list": "readme config example explore",
         "dependents": "",
-        "readme": "!! Readme\n\n`Updated Time:  2023-01-09 20:02:49+0800`\n\n* [[Demo|https://neotw.netlify.app/main.html#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-fancybox]]\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-fancybox]]\n\n* [[Tiddlyhost site|https://fancybox-oeyoews.tiddlyhost.com]]\n\n!! Features\n\n* support download images, fullscreen, custom style and shortcuts,\n\n!! Usage\n\n{{$:/plugins/oeyoews/tiddlywiki-fancybox/example}}\n\n!! Links\n\n* fancybox: https://github.com/fancyapps/fancybox\n\n!! Note\n\n* if you use splashscreen, please remove `remove-when-wiki-loaded` class,\notherwise this plugin will not work normally [[warn|https://github.com/Jermolene/TiddlyWiki5/search?q=tc-remove-when-wiki-loaded]]\n",
+        "readme": "!! Readme\n\n* [[Demo|https://neotw.netlify.app/main.html#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-fancybox]]\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-fancybox]]\n\n* [[Tiddlyhost site|https://fancybox-oeyoews.tiddlyhost.com]]\n\n!! Features\n\n* support download images, fullscreen, custom style and shortcuts,\n\n!! Usage\n\n{{$:/plugins/oeyoews/tiddlywiki-fancybox/example}}\n\n!! Links\n\n* fancybox: https://github.com/fancyapps/fancybox\n\n!! Note\n\n* need refresh on installed this fancybox plugin\n* if you use splashscreen, please remove `remove-when-wiki-loaded` class,\notherwise this plugin will not work normally [[warn|https://github.com/Jermolene/TiddlyWiki5/search?q=tc-remove-when-wiki-loaded]]\n",
         "requires-reload": "no"
     },
     {
