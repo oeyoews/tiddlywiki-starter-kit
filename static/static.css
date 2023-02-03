@@ -6644,14 +6644,15 @@ ol.doc-github-contributors li {
 }
 .tc-tiddler-preview-preview {
     border: 0px !important;
-}html, body, .tc-body, .tc-sidebar-scrollable {
-scrollbar-width: none;
+}{scrollbar-width: thin;
 }
-html::-webkit-scrollbar,
-body::-webkit-scrollbar,
-.tc-body::-webkit-scrollbar,
-.tc-sidebar-scrollable::-webkit-scrollbar {
-display: none;
+::-webkit-scrollbar,
+  scrollbar-width {
+  width: 0px;
+}
+::-webkit-scrollbar:hover,
+  scrollbar-width {
+  width: 0px;
 }.tc-alert { board-radius: 5px !important; }input[type=range]:focus {
     box-shadow: 0 0 0 0;
     outline: 0;

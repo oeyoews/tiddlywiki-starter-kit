@@ -91,7 +91,7 @@ oeyoews  
 👉 created  2023/02/02  
 
 
-📝 modified  2 minutes ago  
+📝 modified  48 seconds ago  
 
 
 
@@ -135,14 +135,15 @@ color:#3F3B3B;">$:/tags/Stylesheet</span><span class="tc-drop-down tc-reveal" hi
 
 <div class="tc-tiddler-body tc-reveal"><p><pre class="hljs"><code class="css hljs"><span class="hljs-selector-class">.tc-tiddler-preview-preview</span> {
     <span class="hljs-attribute">border</span>: <span class="hljs-number">0px</span> <span class="hljs-meta">!important</span>;
-}<span class="hljs-selector-tag">html</span>, <span class="hljs-selector-tag">body</span>, <span class="hljs-selector-class">.tc-body</span>, <span class="hljs-selector-class">.tc-sidebar-scrollable</span> {
-scrollbar-<span class="hljs-attribute">width</span>: none;
+}{scrollbar-<span class="hljs-attribute">width</span>: thin;
 }
-<span class="hljs-selector-tag">html</span>::-webkit-scrollbar,
-body::-webkit-scrollbar,
-.tc-body::-webkit-scrollbar,
-.tc-sidebar-scrollable::-webkit-scrollbar {
-<span class="hljs-attribute">display</span>: none;
+::-webkit-scrollbar,
+  scrollbar-width {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">0px</span>;
+}
+::-webkit-scrollbar:hover,
+  scrollbar-width {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">0px</span>;
 }<span class="hljs-selector-class">.tc-alert</span> { board-radius: <span class="hljs-number">5px</span> <span class="hljs-meta">!important</span>; }<span class="hljs-selector-tag">input</span><span class="hljs-selector-attr">[type=range]</span><span class="hljs-selector-pseudo">:focus</span> {
     <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>;
     <span class="hljs-attribute">outline</span>: <span class="hljs-number">0</span>;
