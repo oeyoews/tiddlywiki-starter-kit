@@ -2,8 +2,6 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox/readme
 
 !! Readme
 
-`Updated Time:  2023-01-09 20:02:49+0800`
-
 * [[Demo|https://neotw.netlify.app/main.html#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-fancybox]]
 
 * [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-fancybox]]
@@ -24,5 +22,6 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox/readme
 
 !! Note
 
+* need refresh on installed this fancybox plugin
 * if you use splashscreen, please remove `remove-when-wiki-loaded` class,
 otherwise this plugin will not work normally [[warn|https://github.com/Jermolene/TiddlyWiki5/search?q=tc-remove-when-wiki-loaded]]
