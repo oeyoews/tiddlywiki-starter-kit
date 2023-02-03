@@ -1,0 +1,19 @@
+caption: {{$:/language/Buttons/Transcludify/Caption}}
+condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]]
+created: 20230203142317875
+creator: oeyoews
+description: {{$:/language/Buttons/Transcludify/Hint}}
+icon: $:/core/images/transcludify
+modified: 20230203142317875
+modifier: oeyoews
+shortcuts: ((transcludify))
+tags: $:/tags/EditorToolbar
+title: $:/core/ui/EditorToolbar/transcludify
+type: text/vnd.tiddlywiki
+
+<$action-sendmessage
+	$message="tm-edit-text-operation"
+	$param="wrap-selection"
+	prefix="{{"
+	suffix="}}"
+/>
