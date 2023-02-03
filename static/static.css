@@ -6648,11 +6648,11 @@ ol.doc-github-contributors li {
 }
 ::-webkit-scrollbar,
   scrollbar-width {
-  width: 0px;
+	display: none;
 }
 ::-webkit-scrollbar:hover,
   scrollbar-width {
-  width: 0px;
+	display: none;
 }.tc-alert { board-radius: 5px !important; }input[type=range]:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
