@@ -18,9 +18,9 @@ tags: $:/tags/Macro
 <$select field="publish" tiddler=<<currentTiddler>> tooltip='status' default="status">
 </$set>
   <option disabled>status</option>
+  <option value="public">public</option>
   <option value="private">private</option>
   <option value="no">hide</option>
-  <option value="public">public</option>
 </$select>
 </span>
 \end
