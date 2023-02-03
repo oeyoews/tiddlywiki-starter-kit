@@ -1,7 +1,13 @@
 title: $:/plugins/oeyoews/tiddlywiki-publish-tiddler/style/publish
 tags: $:/tags/Stylesheet
 
-<$list filter="[{$:/info/url/protocol}prefix[https]]">
+<$list filter="[{$:/info/url/protocol}prefix[file:]]">
+.opublish {
+  display: none;
+}
+</$list>
+
+<$list filter="[{$:/info/url/protocol}prefix[https:]]">
 .opublish {
   display: none;
 }
