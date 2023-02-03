@@ -1,7 +1,7 @@
 created: 20230202124524313
 creator: oeyoews
 empty: yes
-modified: 20230203064410745
+modified: 20230203064753519
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw-stylesheet
@@ -364,8 +364,10 @@ input:focus, textarea:focus {
 </pre>
 
 <!-- hide topbar on editmode -->
+<$list filter="[[$:/state/notebook-sidebar]get[text]else[no]match[yes]]">
 <$list filter="[!is[system]has[draft.of]]">
 .nc-topbar {
     display: none;
   }
+</$list>
 </$list>
