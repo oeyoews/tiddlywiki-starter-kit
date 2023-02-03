@@ -1,0 +1,8 @@
+title: $:/plugins/oeyoews/neotw/footer
+tags: $:/tags/RawMarkupWikified/BottomBody
+
+`<footer>`
+`<a href="https://github.com/neotw" target="_blank">`
+  `<img src="https://img.shields.io/badge/Powered by-Neotw-green?style=flat" />`
+`</a>`
+`</footer>`
