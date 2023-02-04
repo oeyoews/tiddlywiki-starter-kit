@@ -6,7 +6,19 @@
 
 </div>
 
-[![Join the chat at https://gitter.im/oeyoews/neotw](https://badges.gitter.im/oeyoews/neotw.svg)](https://gitter.im/oeyoews/neotw?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+<!-- badges -->
+<a href="https://gitter.im/oeyoews/neotw?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge" target="_blank">
+  <img src="https://badges.gitter.im/oeyoews/neotw.svg" />
+</a>
+<a href="https://github.com/oeyoews/neotw" target="_blank">
+  <img src="https://img.shields.io/badge/Powered by-Neotw-green?style=flat" />
+</a>
+<a href="https://github.com/oeyoews/neotw" target="_blank">
+  <img src="https://img.shields.io/github/tag/oeyoews/neotw?color=lightgreen?style=flat" />
+</a>
+<a href="https://github.com/oeyoews/neotw" target="_blank">
+  <img src="https://img.shields.io/website?down_color=red&down_message=offline&label=Neotw&up_color=9cf&up_message=online&url=https%3A%2F%2Fneotw.netlify.app%2F" />
+</a>
 
 ## What's the neotw
 
