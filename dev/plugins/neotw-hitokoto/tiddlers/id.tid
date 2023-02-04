@@ -5,8 +5,5 @@ tags: $:/tags/RawMarkupWikified/BottomBody
 `<footer style="font-size:16px;">`
 `<div style="background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59); -webkit-background-clip: text; color: transparent; font-style:italic;
 font-weight:700;" id="hitokoto">Loading ...`
-`<a href="https://developer.hitokoto.cn" target="_blank">`
-  `<img src="https://img.shields.io/badge/Powered by-Hitokoto-green?style=flat" />`
-`</a>`
 `</div>`
 `</footer>`

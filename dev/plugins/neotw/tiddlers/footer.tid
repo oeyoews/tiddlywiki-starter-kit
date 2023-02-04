@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/neotw/footer
+tags: $:/tags/RawMarkupWikified/BottomBody
+
+`<footer style="text-align:center;">`
+  `<img src="https://img.shields.io/badge/Neotw-node-green?style=flat" />`
+`</footer>`

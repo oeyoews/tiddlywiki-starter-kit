@@ -1,5 +1,9 @@
 title: $:/plugins/oeyoews/tiddlywiki-fancybox/readme
 
+<a href="https://github.com/fancyapps/fancybox" target="_blank">
+  <img src="https://img.shields.io/badge/Powered by-Fancybox-green?style=flat" />
+</a>
+
 !! Readme
 
 * [[Demo|https://neotw.netlify.app/main.html#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-fancybox]]
@@ -16,10 +20,6 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox/readme
 !! Usage
 
 {{$:/plugins/oeyoews/tiddlywiki-fancybox/example}}
-
-!! Links
-
-* fancybox: https://github.com/fancyapps/fancybox
 
 !! Note
 
