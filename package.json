@@ -11,13 +11,12 @@
   "license": "MIT",
   "scripts": {
     "guide": "zx scripts/guide.mjs",
-    "start": "pm2 start neotw.config.json",
+    "start": "npx pm2 start neotw.config.json",
     "build:oeyoews": "zx scripts/build-oeyoews.mjs",
     "dev": "nodemon --watch dev --ext tid --exec tiddlywiki --listen port=8081"
   },
   "dependencies": {
     "dateformat": "^5.0.3",
-    "global": "^4.4.0",
     "gradient-string": "^2.0.2",
     "kolorist": "^1.6.0",
     "nodemon": "^2.0.20",
