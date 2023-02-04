@@ -20,7 +20,7 @@ export default async function newPlugin() {
       type: 'text',
       name: 'description', // variable
       message: 'plugin description', // not support sed space
-      initial: 'plugin description',
+      initial: '',
     },
     {
       type: 'toggle',
