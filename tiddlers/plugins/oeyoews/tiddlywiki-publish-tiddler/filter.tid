@@ -1,8 +1,6 @@
 created: 20230113184537026
 creator: oeyoews
-modified: 20230113184545491
+modified: 20230204162159897
 modifier: oeyoews
 title: $:/plugins/oeyoews/tiddlywiki-publish-tiddler/filter
 type: text/vnd.tiddlywiki
-
-[!is[system]prefix[neotw/article]]

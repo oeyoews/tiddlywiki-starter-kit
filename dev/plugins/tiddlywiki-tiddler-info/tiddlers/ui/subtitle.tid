@@ -45,7 +45,7 @@ tags: $:/tags/ViewTemplate
 <!-- local manage -->
 <!-- https have bug, will creat http: tid -->
 <!-- GettingStarted not work filter -->
-<$list filter="[all[current]!is[system]]">
+<$list filter="[all[current]!is[system]!is[binary]]">
 <<opublish>>
 </$list>
 
