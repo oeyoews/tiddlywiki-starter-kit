@@ -1,0 +1,17 @@
+created: 20230204090933024
+creator: oeyoews
+modified: 20230204091127010
+modifier: oeyoews
+title: $:/language/MissingTiddler/Hint
+type: text/vnd.tiddlywiki
+
+Missing tiddler "<$text text=<<currentTiddler>>/>" -- click {{||$:/core/ui/Buttons/edit}} to create
+<hr>
+<center>
+<$button tooltip="Return Home" >
+[img width=22 [$:/favicon.ico]] return home
+{{$:/core/images/home-button}}
+<$action-sendmessage $message="tm-close-all-tiddlers"/>
+  <$action-navigate $to="GettingStarted"/>
+</$button>
+</center>
