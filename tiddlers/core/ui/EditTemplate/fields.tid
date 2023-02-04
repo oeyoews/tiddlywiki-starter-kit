@@ -1,6 +1,6 @@
 created: 20230204044056779
 creator: BramChen
-modified: 20230204044800992
+modified: 20230204054326100
 modifier: oeyoews
 tags: $:/tags/EditTemplate
 title: $:/core/ui/EditTemplate/fields
@@ -74,7 +74,7 @@ $value={{{ [subfilter<get-field-value-tiddler-filter>get[text]] }}}/>
 \whitespace trim
 
 <details>
-<summary>Type && Fields</summary>
+<summary><<.icon $:/core/images/options-button>> &nbsp;Setup</summary>
 <$set name="refreshTitle" value=<<qualify "$:/temp/type-search/refresh">>>
 <div class="tc-edit-type-selector-wrapper">
 <em class="tc-edit tc-small-gap-right"><<lingo Type/Prompt>></em>
