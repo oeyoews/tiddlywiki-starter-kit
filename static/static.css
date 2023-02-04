@@ -2758,12 +2758,6 @@ content: "Neotw · ";
 
 
 
-[data-tag-title=\$\:\/tags\/RawMarkupWikified\/BottomBody] .tc-tag-label:after {
-  content: " 9";
-}
-
-
-
 [data-tag-title=\$\:\/tags\/PluginLibrary] .tc-tag-label:after {
   content: " 4";
 }
@@ -2778,6 +2772,12 @@ content: "Neotw · ";
 
 [data-tag-title=\$\:\/tags\/RawMarkupWikified\/TopHead] .tc-tag-label:after {
   content: " 1";
+}
+
+
+
+[data-tag-title=\$\:\/tags\/RawMarkupWikified\/BottomBody] .tc-tag-label:after {
+  content: " 8";
 }
 
 
