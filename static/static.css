@@ -4785,8 +4785,18 @@ footer {
 	user-select: none;
 	padding: 2px;
 	font-size: 50%;
-}footer .inline-icon svg{
+}
+
+footer .inline-icon svg{
   height:1em;
+}
+
+#hitokoto, #hitokoto_from {
+  background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-style: italic;
+  font-weight: 700;
 }
 .aplayer {
   background: #fff;
