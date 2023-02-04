@@ -1,8 +1,8 @@
 created: 20230118153909956
 creator: oeyoews
-modified: 20230202134602148
+modified: 20230204044502167
 modifier: oeyoews
 title: $:/config/TextEditor/EditorHeight/Mode
 type: text/vnd.tiddlywiki
 
-fixed
+auto
