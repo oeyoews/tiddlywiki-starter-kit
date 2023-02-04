@@ -8,4 +8,7 @@ tags: $:/tags/RawMarkupWikified/BottomBody
 `&nbsp;<a href="https://github.com/oeyoews/neotw" target="_blank">`
   `<img src="https://img.shields.io/github/tag/oeyoews/neotw?color=lightgreen?style=flat" />`
 `</a>`
+`&nbsp;<a href="https://github.com/oeyoews/neotw" target="_blank">`
+  `<img src="https://img.shields.io/website?down_color=red&down_message=offline&label=Neotw&up_color=9cf&up_message=online&url=https%3A%2F%2Fneotw.netlify.app%2F" />`
+`</a>`
 `</footer>`
