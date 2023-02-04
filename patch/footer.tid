@@ -1,4 +1,4 @@
-title: $:/plugins/oeyoews/neotw/footer
+title: $:/state/plugins/oeyoews/neotw/footer
 tags: $:/tags/RawMarkupWikified/BottomBody
 
 `<footer style="text-align:center;">`
@@ -6,12 +6,12 @@ tags: $:/tags/RawMarkupWikified/BottomBody
   `<img src="https://img.shields.io/badge/Powered by-Neotw-green?style=flat" />`
 `</a>`
 `&nbsp;<a href="https://github.com/oeyoews/neotw" target="_blank">`
-  `<img src="https://img.shields.io/github/tag/oeyoews/neotw?color=lightgreen?style=flat" />`
+  `<img src="https://img.shields.io/github/tag/oeyoews/neotw?color=lightgreen?style=flat&logo=github" />`
 `</a>`
 `&nbsp;<a href="https://github.com/oeyoews/neotw" target="_blank">`
   `<img src="https://img.shields.io/website?down_color=red&down_message=offline&label=Neotw&up_color=9cf&up_message=online&url=https%3A%2F%2Fneotw.netlify.app%2F&logo=netlify" />`
 `</a>`
 `&nbsp;<a href="https://gitter.im/oeyoews/neotw?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge" target="_blank">`
-  `<img src="https://img.shields.io/gitter/room/oeyoews/neotw?logo=gitter&color=50BA9A&logo=gitter" />`
+  `<img src="https://img.shields.io/gitter/room/oeyoews/neotw?logo=gitter&color=50BA9A" />`
 `</a>`
 `</footer>`
