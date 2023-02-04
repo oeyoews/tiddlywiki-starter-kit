@@ -11,7 +11,6 @@ tags: $:/tags/ViewTemplate
     <$list filter="[[$:/language]get[text]removeprefix[$:/languages/]else[en-GB]]" variable="lang">
         <$set name="stateTiddler" value="$:/state/oeyoews/github-giscus-comments">
           <$reveal type="nomatch" state=<<stateTiddler>> text=<<currentTiddler>>>
-              <<.icon "$:/plugins/oeyoews/tiddlywiki-giscus/icon">>
               <$button class="tc-btn-invisible giscus-footer" set=<<stateTiddler>> setTo=<<currentTiddler>> >
                 <!-- {{$:/core/images/down-arrow}} -->
                 <!-- en -->
