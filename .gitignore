@@ -34,3 +34,6 @@ PluginName*
 tiddlers/layout.tid
 # tiddlers/**/readonly.tid
 stickytitles.tid
+
+# pm2
+logs

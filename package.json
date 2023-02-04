@@ -11,6 +11,7 @@
   "license": "MIT",
   "scripts": {
     "guide": "zx scripts/guide.mjs",
+    "start": "pm2 start neotw.config.json",
     "build:oeyoews": "zx scripts/build-oeyoews.mjs",
     "dev": "nodemon --watch dev --ext tid --exec tiddlywiki --listen port=8081"
   },
