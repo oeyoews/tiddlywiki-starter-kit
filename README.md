@@ -4,6 +4,7 @@
 
 </div>
 
+<center>
 <!-- badges -->
 <a target="_blank" href="https://app.netlify.com/sites/neotw/deploys">
 <img src="https://api.netlify.com/api/v1/badges/7654bd58-2df9-4962-9a81-4cca9cf78b9c/deploy-status" alt="Netlify Status" >
@@ -22,6 +23,7 @@
   <img src="https://img.shields.io/website?down_color=red&down_message=offline&label=Neotw&up_color=9cf&up_message=online&url=https%3A%2F%2Fneotw.netlify.app%2F&logo=netlify" />
 </a>
 <img src="https://img.shields.io/badge/License-MIT-blueviolet.svg?style=flat&color=blue" alt="project-license">
+</center>
 
 ## What's the neotw
 
@@ -50,10 +52,20 @@
 <img src="https://www.netlify.com/img/deploy/button.svg">
 </a>
 
-## 📂 FileStruct
+## ⛹️ Dev
 
 ```bash
-.Neotw
+git clone --depth 1 https://gitlab.com/oeyoews/neotw.git
+yarn install && yarn start # or use `npx tiddlywiki --listen` directly
+```
+
+## 📂 FileStruct
+
+<details>
+  <summary>folder</summary>
+
+```bash
+Neotw
 ├──📁archive
 ├──📁CITATION.cff
 ├──📁dev
@@ -80,24 +92,7 @@
 # This structure may not be up to date
 ```
 
-## ⛹️ Dev
-
-```bash
-git clone --depth 1 https://gitlab.com/oeyoews/neotw # or git clone --depth 1 https://github.com/oeyoews/neotw
-yarn install # install
-npm run guide # or npx tiddlywiki --listen
-```
-
-## Note
-
-> **Warning**
-> if you use google-chrome on ios, maybe have some error tip when you touch this
-> screen prepare to select some text, its weird
-
-~~## 🐥 Configuration(deprecated)~~
-
-~~The [makefile](makefile) file is used as the centeral configuration for `neotw`~~
-~~> more usage please check [makefile](makefile)~~
+</details>
 
 ## ✌ Preview
 
@@ -110,8 +105,5 @@ npm run guide # or npx tiddlywiki --listen
 ---
 
 <div align="center">
-<div>
 <img src="./img/cat.svg" alt="cat"/>
-</div>
- <br>
 </div>
