@@ -10,6 +10,7 @@ tags: $:/tags/Stylesheet
 }
 
 .gitter-open-chat-button {
+  transition: all 0.3s linear;
   font-weight: 500;
   background-color: #5d9ceb;
   border-radius: 0.5em;
@@ -32,8 +33,12 @@ bottom: 6em;
 top: 3em;
 }
 
-.gitter-open-chat-button::before {
-content: "Neotw · ";
+.gitter-open-chat-button:hover {
+        padding: 0.5em 0.9em;
+}
+
+.gitter-open-chat-button:hover::before {
+       content: "Neotw · ";
 }
 
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
