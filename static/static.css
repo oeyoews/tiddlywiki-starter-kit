@@ -5592,7 +5592,7 @@ a[data-fancybox] img {
 }
 
 .giscus-footer:hover {
-    border-bottom: 2px solid;
+    
     color: black;
 }
 @media (max-width: 1360px) {
