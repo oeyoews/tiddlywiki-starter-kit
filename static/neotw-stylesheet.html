@@ -91,7 +91,7 @@ oeyoews  
 👉 created  2023/02/02  
 
 
-📝 modified  24 hours ago  
+📝 modified  40 seconds ago  
 
 
 
@@ -134,7 +134,17 @@ color:#3F3B3B;">$:/tags/Stylesheet</span><span class="tc-drop-down tc-reveal" hi
 
 
 
-<div class="tc-tiddler-body tc-reveal"><p><pre class="hljs"><code class="css hljs"><span class="hljs-selector-class">.tc-tiddler-preview-preview</span> {
+<div class="tc-tiddler-body tc-reveal"><p><pre class="hljs"><code class="css hljs"><span class="hljs-selector-class">.tc-tiddler-frame</span> <span class="hljs-selector-class">.tc-titlebar</span> <span class="hljs-selector-tag">button</span> {
+  <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">transition</span>: opacity .<span class="hljs-number">5s</span> ease-in-out;
+}
+<span class="hljs-selector-class">.tc-tiddler-frame</span><span class="hljs-selector-pseudo">:hover</span> <span class="hljs-selector-class">.tc-titlebar</span> <span class="hljs-selector-tag">button</span> {
+  zoom: <span class="hljs-number">1</span>;
+  <span class="hljs-attribute">filter</span>: <span class="hljs-built_in">alpha</span>(opacity=<span class="hljs-number">100</span>);
+  <span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>;
+}<span class="hljs-selector-class">.tc-tiddler-controls</span> <span class="hljs-selector-class">.tc-image-delete-button</span> {fill:<span class="hljs-number">#ebb</span>;}
+<span class="hljs-selector-class">.tc-tiddler-controls</span> <span class="hljs-selector-class">.tc-image-cancel-button</span> {fill:<span class="hljs-number">#ed9</span>;}
+<span class="hljs-selector-class">.tc-tiddler-controls</span> <span class="hljs-selector-class">.tc-image-done-button</span> {fill:<span class="hljs-number">#beb</span>;}<span class="hljs-selector-class">.tc-tiddler-preview-preview</span> {
     <span class="hljs-attribute">border</span>: <span class="hljs-number">0px</span> <span class="hljs-meta">!important</span>;
 }{scrollbar-<span class="hljs-attribute">width</span>: thin;
 }
@@ -303,14 +313,11 @@ color:#3F3B3B;">$:/tags/Stylesheet</span><span class="tc-drop-down tc-reveal" hi
 	<span class="hljs-attribute">display</span>: none;
 }
 
+
 <span class="hljs-selector-class">.tc-improvement-banner</span> {
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">0.7em</span>;
-	<span class="hljs-attribute">background</span>: <span class="hljs-number">#fcc</span>;
-	<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">5px</span>;
-	<span class="hljs-attribute">margin-top</span>: <span class="hljs-number">6px</span>;
-	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">12px</span>;-webkit-<span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">2px</span> <span class="hljs-number">2px</span> <span class="hljs-number">2px</span> <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0.4</span>);
-     -moz-<span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">2px</span> <span class="hljs-number">2px</span> <span class="hljs-number">2px</span> <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0.4</span>);
-          <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">2px</span> <span class="hljs-number">2px</span> <span class="hljs-number">2px</span> <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0.4</span>);}<span class="hljs-selector-class">.tc-improvement-banner</span><span class="hljs-selector-pseudo">:before</span> {
+	<span class="hljs-attribute">display</span>: none;
+}
+<span class="hljs-selector-class">.tc-improvement-banner</span><span class="hljs-selector-pseudo">:before</span> {
 		<span class="hljs-attribute">display</span>: block;
 		<span class="hljs-attribute">position</span>: absolute;
 		<span class="hljs-attribute">width</span>: <span class="hljs-number">0</span>;

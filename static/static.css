@@ -2585,7 +2585,7 @@ content: "Neotw · ";
 
 
 [data-tag-title=\$\:\/tags\/ViewToolbar] .tc-tag-label:after {
-  content: " 23";
+  content: " 22";
 }
 
 
@@ -2747,7 +2747,7 @@ content: "Neotw · ";
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 71";
+  content: " 69";
 }
 
 
@@ -6320,6 +6320,18 @@ li.CodeMirror-hint-active {
   border-color: #7f4bca;
 }.tc-tiddler-controls .tc-btn-text {
     font-size: 16px;
+}@media (min-width: 960px) {
+  .tc-tiddler-frame .tc-tiddler-controls svg {
+    opacity: 0;
+    transition: all .2s ease-in;
+  }.tc-tiddler-controls svg.tc-image-close-button,
+  .tc-tiddler-controls .py-toggle-todo-button svg,
+  .tc-tiddler-controls svg.tc-image-done-button,
+  .tc-tiddler-frame .tc-tiddler-controls:hover svg {
+    opacity: 1;
+  }.tc-tiddler-controls .py-toggle-todo-button .done svg {
+    fill: #2da562;
+  }
 }button.tc-tag-label, span.tc-tag-label {
   padding: 0.3em 1em !important;
 }/* Fonts */html, body {
@@ -6624,11 +6636,7 @@ ol.doc-github-contributors li {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-}/*Tiddler edit toolbar buttons as traffic lights*/
-.tc-tiddler-controls .tc-image-delete-button {fill:#ebb;}
-.tc-tiddler-controls .tc-image-cancel-button {fill:#ed9;}
-.tc-tiddler-controls .tc-image-done-button {fill:#beb;}/* Mouseover toolbar visibility: courtesy from Tobias Beer*/
-.tc-tiddler-frame .tc-titlebar button {
+}.tc-tiddler-frame .tc-titlebar button {
   opacity: 0;
   transition: opacity .5s ease-in-out;
 }
@@ -6636,8 +6644,9 @@ ol.doc-github-contributors li {
   zoom: 1;
   filter: alpha(opacity=100);
   opacity: 1;
-}
-.tc-tiddler-preview-preview {
+}.tc-tiddler-controls .tc-image-delete-button {fill:#ebb;}
+.tc-tiddler-controls .tc-image-cancel-button {fill:#ed9;}
+.tc-tiddler-controls .tc-image-done-button {fill:#beb;}.tc-tiddler-preview-preview {
     border: 0px !important;
 }{scrollbar-width: thin;
 }
@@ -6806,14 +6815,11 @@ button.tc-unfold-banner {
 	display: none;
 }
 
+
 .tc-improvement-banner {
-	font-size: 0.7em;
-	background: #fcc;
-	padding-left: 5px;
-	margin-top: 6px;
-	margin-bottom: 12px;-webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
-     -moz-box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
-          box-shadow: 2px 2px 2px rgba(0,0,0,0.4);}.tc-improvement-banner:before {
+	display: none;
+}
+.tc-improvement-banner:before {
 		display: block;
 		position: absolute;
 		width: 0;
