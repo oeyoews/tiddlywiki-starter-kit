@@ -1,7 +1,7 @@
 created: 20230202124524313
 creator: oeyoews
 empty: yes
-modified: 20230204073115257
+modified: 20230204073632006
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw-stylesheet
@@ -298,13 +298,6 @@ input:focus, textarea:focus {
 </$list>
 </$list>
 
-<$list filter="[{$:/info/url/protocol}!match[https:]]">
-.tc-improvement-banner {
-	display: none;
-}
-</$list>
-
-<$list filter="[{$:/info/url/protocol}match[https:]]">
 .tc-improvement-banner {
 	font-size: 0.7em;
 	background: #fcc;
@@ -316,7 +309,6 @@ input:focus, textarea:focus {
      -moz-box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
           box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
 }
-</$list>
 
 .tc-improvement-banner:before {
 		display: block;
