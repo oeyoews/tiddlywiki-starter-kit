@@ -1,6 +1,12 @@
 title: $:/plugins/oeyoews/neotw-confetti/readme
 
-* ref: https://github.com/catdad/canvas-confetti
+<a href="https://github.com/oeyoews/neotw" target="_blank">
+  <img src="https://img.shields.io/badge/Powered by-Neotw-green?style=flat" />
+</a>
+
+<a href="https://github.com/catdad/canvas-confetti" target="_blank">
+  <img src="https://img.shields.io/badge/Powered by-confetti-green?style=flat" />
+</a>
 
 <center>
 try to click {{$:/status/confetti}}

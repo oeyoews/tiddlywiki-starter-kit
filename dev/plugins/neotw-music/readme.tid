@@ -1,6 +1,10 @@
 title: $:/plugins/oeyoews/neotw-music/readme
 type: text/vnd.tiddlywiki
 
+<a href="https://github.com/oeyoews/neotw" target="_blank">
+  <img src="https://img.shields.io/badge/Powered by-Neotw-green?style=flat" />
+</a>
+
 * check status: [[metingjs-api|https://meting-api-oeyoews.vercel.app/api]]
 * TWM
 * [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-special-day]]

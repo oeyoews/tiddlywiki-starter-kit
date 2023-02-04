@@ -1,5 +1,12 @@
 title: $:/plugins/oeyoews/tiddlywiki-giscus/readme
 
+<a style="text-decoration:none;" href="https://github.com/oeyoews/neotw" target="_blank">
+  <img src="https://img.shields.io/badge/Powered by-Neotw-green?style=flat" />
+</a>
+<a href="https://giscus.app/" target="_blank">
+  <img src="https://img.shields.io/badge/Powered by-giscus-blue?style=flat" />
+</a>
+
 <center>
 <$button class="get-started">
   <a style="text-decoration: none;" target="_blank"

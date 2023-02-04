@@ -1,5 +1,9 @@
 title: $:/plugins/oeyoews/tiddlywiki-publish-tiddler/readme
 
+<a href="https://github.com/oeyoews/neotw" target="_blank">
+  <img src="https://img.shields.io/badge/Powered by-Neotw-green?style=flat" />
+</a>
+
 * Publish Tiddler Manager
 * not save storylist to html
 * support Publish or not manager

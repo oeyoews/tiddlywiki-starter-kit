@@ -1,5 +1,9 @@
 title: $:/plugins/oeyoews/neotw-surfing-keys/readme
 
+<a href="https://github.com/oeyoews/neotw" target="_blank">
+  <img src="https://img.shields.io/badge/Powered by-Neotw-green?style=flat" />
+</a>
+
 !! NOTE
 
 * because of newline, this shortcut not work, need use vscode to remove this(for dev plugin)

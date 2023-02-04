@@ -1,5 +1,9 @@
 title: $:/plugins/oeyoews/tiddlywiki-github-share/readme
 
+<a href="https://github.com/oeyoews/neotw" target="_blank">
+  <img src="https://img.shields.io/badge/Powered by-Neotw-green?style=flat" />
+</a>
+
 * Github Share Button
 * compatiable font-awesome plugin
 
