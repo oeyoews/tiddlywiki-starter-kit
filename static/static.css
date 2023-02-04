@@ -2378,6 +2378,7 @@ body.tc-dirty span.tc-dirty-indicator svg {
 .gitter-chat-embed {
   z-index: 9999;
 }.gitter-open-chat-button {
+  transition: all 0.3s linear;
   font-weight: 500;
   background-color: #5d9ceb;
   border-radius: 0.5em;
@@ -2392,8 +2393,10 @@ body.tc-dirty span.tc-dirty-indicator svg {
 left: 6em;
 bottom: 6em;
 top: 3em;
-}.gitter-open-chat-button::before {
-content: "Neotw · ";
+}.gitter-open-chat-button:hover {
+        padding: 0.5em 0.9em;
+}.gitter-open-chat-button:hover::before {
+       content: "Neotw · ";
 }
 .polarbear {
     position: fixed;
