@@ -183,7 +183,7 @@
         "name": "Tiddlywiki Shield",
         "list": "readme example",
         "dependents": "",
-        "readme": "* Plugin Description\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-shield]]\n* [[Demo|https://oeyoews.github.io/neotw/main]]\n",
+        "readme": "* Plugin Description\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-shield]]\n* [[Demo|https://oeyoews.github.io/neotw/main]]\n\n!! TODO\n\n* support color\n",
         "requires-reload": "no"
     },
     {
