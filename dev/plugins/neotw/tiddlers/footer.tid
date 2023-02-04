@@ -5,4 +5,7 @@ tags: $:/tags/RawMarkupWikified/BottomBody
 `<a href="https://github.com/oeyoews/neotw" target="_blank">`
   `<img src="https://img.shields.io/badge/Powered by-Neotw-green?style=flat" />`
 `</a>`
+`&nbsp;<a href="https://github.com/oeyoews/neotw" target="_blank">`
+  `<img src="https://img.shields.io/github/tag/oeyoews/neotw?color=lightgreen?style=flat" />`
+`</a>`
 `</footer>`
