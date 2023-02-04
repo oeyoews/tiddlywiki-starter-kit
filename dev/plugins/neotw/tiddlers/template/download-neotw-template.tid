@@ -2,7 +2,7 @@ title: $:/plugins/oeyoews/neotw/templates/download-neotw-template
 hide-body: yes
 
 \define saveTiddlerFilter()
-[[$:/plugins/tiddlywiki/browser-sniff]] [[is[shadow]] [field:empty[yes]] [[$:/palette]] [[$:/theme]] [[$:/core]] [[$:/isEncrypted]]  [[$:/themes/tiddlywiki/vanilla]] [[$:/themes/nico/notebook]] [plugin-type[plugin]field:author[oeyoews]] [[$:/favicon.ico]] -[[$:/boot/boot.css]] -[type[application/javascript]library[yes]] -[[$:/boot/boot.js]] -[[$:/boot/bootprefix.js]] +[sort[title]]
+[[$:/plugins/tiddlywiki/browser-sniff]] -[[GettingStarted]] [is[tiddler]is[system]is[shadow]] [field:empty[yes]] [[$:/palette]] [[$:/theme]] [[$:/core]] [[$:/isEncrypted]]  [[$:/themes/tiddlywiki/vanilla]] [[$:/themes/nico/notebook]] [plugin-type[plugin]field:author[oeyoews]] [[$:/favicon.ico]] -[[$:/boot/boot.css]] -[type[application/javascript]library[yes]] -[[$:/boot/boot.js]] -[[$:/boot/bootprefix.js]] +[sort[title]]
 \end
 \define savingEmpty()
 yes
