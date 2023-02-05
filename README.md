@@ -6,9 +6,6 @@
 
 <center>
 <!-- badges -->
-<a target="_blank" href="https://app.netlify.com/sites/neotw/deploys">
-<img src="https://api.netlify.com/api/v1/badges/7654bd58-2df9-4962-9a81-4cca9cf78b9c/deploy-status" alt="Netlify Status" >
- </a>
 <a href="https://gitter.im/oeyoews/neotw?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge" target="_blank">
   <!-- <img src="https://badges.gitter.im/oeyoews/neotw.svg" /> -->
   <img src="https://img.shields.io/gitter/room/oeyoews/neotw?logo=gitter&color=50BA9A" />
@@ -23,6 +20,9 @@
   <img src="https://img.shields.io/website?down_color=red&down_message=offline&label=Neotw&up_color=9cf&up_message=online&url=https%3A%2F%2Fneotw.netlify.app%2F&logo=netlify" />
 </a>
 <img src="https://img.shields.io/badge/License-MIT-blueviolet.svg?style=flat&color=blue" alt="project-license">
+<a target="_blank" href="https://app.netlify.com/sites/neotw/deploys">
+<img src="https://api.netlify.com/api/v1/badges/7654bd58-2df9-4962-9a81-4cca9cf78b9c/deploy-status" alt="Netlify Status" >
+ </a>
 </center>
 
 ## What's the neotw
@@ -59,10 +59,8 @@ git clone --depth 1 https://gitlab.com/oeyoews/neotw.git
 yarn install && yarn start # or use `npx tiddlywiki --listen` directly
 ```
 
-## 📂 FileStruct
-
 <details>
-  <summary>folder</summary>
+  <summary>FileStruct</summary>
 
 ```bash
 Neotw
@@ -94,13 +92,16 @@ Neotw
 
 </details>
 
-## ✌ Preview
+<details>
+<summary>Preview</summary>
 
 - 🏠 http://oeyoewl.top
 - 😺 https://oeyoews.github.io/neotw
 - 🦿 https://neotw.tiddlyhost.com
 - 🌋 https://neotw.vercel.app
 - 🤺 https://neotw.netlify.app/
+
+</details>
 
 ---
 
