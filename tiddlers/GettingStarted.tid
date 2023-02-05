@@ -3,7 +3,7 @@ created: 20230117102714737
 creator: oeyoews
 giscus: yes
 icon: tom.png
-modified: 20230205141033185
+modified: 20230205141236342
 modifier: oeyoews
 page-cover: https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/banner.png
 pin: yes
@@ -17,7 +17,7 @@ type: text/vnd.tiddlywiki
 \end
 
 <<fb Plugins [plugin-type[plugin]count[]] green>> <$list filter="[{$:/info/url/protocol}match[http:]]">
-<img src="https://img.shields.io/badge/Powered by-Neotw-red?style=flat&logo=node.js" />
+<img src="https://img.shields.io/badge/Powered by-Neotw-red?style=flat&logo=dev.to&logoColor=red" />
 </$list>
 
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
