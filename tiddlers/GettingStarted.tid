@@ -3,7 +3,7 @@ created: 20230117102714737
 creator: oeyoews
 giscus: yes
 icon: tom.png
-modified: 20230205071351268
+modified: 20230205141033185
 modifier: oeyoews
 page-cover: https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/banner.png
 pin: yes
@@ -12,8 +12,12 @@ tags:
 title: GettingStarted
 type: text/vnd.tiddlywiki
 
-<$list filter="[{$:/info/url/protocol}match[http:]]">
-<img src="https://img.shields.io/badge/Powered by-Neotw-green?style=flat&logo=node.js" />
+\define fb(label:label filter color:green)
+<$image source={{{ [[]addprefix[https://img.shields.io/badge/]] [<__label__>addsuffix[-]]  $filter$ [[-]addsuffix<__color__>] +[join[]] }}} />
+\end
+
+<<fb Plugins [plugin-type[plugin]count[]] green>> <$list filter="[{$:/info/url/protocol}match[http:]]">
+<img src="https://img.shields.io/badge/Powered by-Neotw-red?style=flat&logo=node.js" />
 </$list>
 
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
