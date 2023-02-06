@@ -1,0 +1,10 @@
+author: Jim Lehmer
+core-version: >=5.0.8
+dependents: 
+description: TiddlyWiki5 plugin to generate ATOM feed.
+list: readme config
+plugin-type: plugin
+source: https://github.com/dullroar/TW5-atomfeed
+title: $:/plugins/dullroar/atomfeed
+type: application/json
+version: 0.0.3
