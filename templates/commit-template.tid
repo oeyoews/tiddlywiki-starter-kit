@@ -10,10 +10,11 @@ https://gitlab.com/oeyoews/neotw/commit/
 
 <div style="color:gray;font-size: 14px;">
   BuildTime: ${timestamp};
-  Last Updated(git):
-  <a style="text-decoration: none; colro: #539bf5;"href={{{
-    [<longid>addprefix<baseurl>] }}} target="_blank" class="gitcommit"><<shortid>>
-    <<emoji bingo>> </a>
+<a style="text-decoration: none; colro: #539bf5;"href={{{
+    [<longid>addprefix<baseurl>] }}} target="_blank" class="gitcommit">
+<$image source={{{ [[]addprefix[https://img.shields.io/badge/git-]] [<shortid>]
+[[]addsuffix[-blue?logo=git&logoColor=red]] +[join[]] }}} />
+</a>
 </div>
 
 <!-- vim:set et sw=2 ts=2 ft=tiddlywiki tw=80: -->
