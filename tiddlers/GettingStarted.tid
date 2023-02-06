@@ -3,7 +3,7 @@ created: 20230117102714737
 creator: oeyoews
 giscus: yes
 icon: tom.png
-modified: 20230205141236342
+modified: 20230206143754040
 modifier: oeyoews
 page-cover: https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/banner.png
 pin: yes
@@ -16,7 +16,10 @@ type: text/vnd.tiddlywiki
 <$image source={{{ [[]addprefix[https://img.shields.io/badge/]] [<__label__>addsuffix[-]]  $filter$ [[-]addsuffix<__color__>] +[join[]] }}} />
 \end
 
+
+<<fb Tiddlers [!is[system]count[]] yellow>> 
 <<fb Plugins [plugin-type[plugin]count[]] green>> <$list filter="[{$:/info/url/protocol}match[http:]]">
+<<fb Updated [!is[system]!has[draft.of]!sort[modified]limit[1]get[modified]format:relativedate[]] 9cf>> 
 <img src="https://img.shields.io/badge/Powered by-Neotw-red?style=flat&logo=dev.to&logoColor=red" />
 </$list>
 
