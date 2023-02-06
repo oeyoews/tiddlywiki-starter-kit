@@ -2474,7 +2474,7 @@ top: 3em;
 
 
 [data-tag-title=\$\:\/tags\/Exporter] .tc-tag-label:after {
-  content: " 5";
+  content: " 4";
 }
 
 
@@ -2504,7 +2504,7 @@ top: 3em;
 
 
 [data-tag-title=\$\:\/tags\/ControlPanel\/Info] .tc-tag-label:after {
-  content: " 3";
+  content: " 2";
 }
 
 
@@ -2811,12 +2811,6 @@ top: 3em;
 
 [data-tag-title=contextPlugin] .tc-tag-label:after {
   content: " 2";
-}
-
-
-
-[data-tag-title=static] .tc-tag-label:after {
-  content: " 1";
 }
 
 
