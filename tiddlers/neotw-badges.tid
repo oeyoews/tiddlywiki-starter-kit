@@ -1,6 +1,6 @@
 created: 20230206144115904
 creator: oeyoews
-modified: 20230207045556957
+modified: 20230207172819412
 modifier: oeyoews
 tags: 
 title: neotw-badges
@@ -11,6 +11,7 @@ type: text/vnd.tiddlywiki
 \end
 
 <<fb Tiddlers [!is[system]count[]] yellow>> 
+<<fb Tags [tags[]count[]] blue>> 
 <<fb Updated [!is[system]!has[draft.of]!sort[modified]limit[1]get[modified]format:relativedate[]] 9cf>> 
 <<fb Plugins [plugin-type[plugin]count[]] green>> <$list filter="[{$:/info/url/protocol}match[http:]]">
 <img src="https://img.shields.io/badge/Powered by-Neotw-red?style=flat&logo=dev.to&logoColor=red" />
