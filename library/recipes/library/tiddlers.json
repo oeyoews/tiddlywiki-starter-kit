@@ -155,7 +155,7 @@
         "name": "Tiddlywiki Github Share",
         "list": "readme config",
         "dependents": "",
-        "readme": "<a href=\"https://github.com/oeyoews/neotw\" target=\"_blank\">\n  <img src=\"https://img.shields.io/badge/Powered by-Neotw-green?style=flat\" />\n</a>\n\n* Github Share Button\n* compatiable font-awesome plugin\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-github-share]]\n* [[Demo|https://oeyoews.github.io/neotw/main]]\n\n!! TODO\n\n* add macro to embed single tid, not copy tid\n\n<!-- * if you use tiddlywiki menu plugin, this share button maybe  -->\n",
+        "readme": "<a style=\"text-decoration:none;\" href=\"https://github.com/oeyoews/neotw\" target=\"_blank\">\n  <img src=\"https://img.shields.io/badge/Powered by-Neotw-green?style=flat\" />\n</a>\n<a style=\"text-decoration:none;\" href=\"https://github.com/oeyoews\" target=\"_blank\">\n<$image source={{{ [[][https://img.shields.io/badge/Author-]] [<currentTiddler>get[author]] [[-lightblue?style=flat]] +[join[]]}}} />\n</a>\n<$image source={{{ [[][https://img.shields.io/badge/Version-]] [<currentTiddler>get[version]] [[-red?style=flat&logo=dev.to&logoColor=red]] +[join[]]}}} />\n\n* Github Share Button\n* compatiable font-awesome plugin\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-github-share]]\n* [[Demo|https://oeyoews.github.io/neotw/main]]\n\n!! TODO\n\n* add macro to embed single tid, not copy tid\n\n<!-- * if you use tiddlywiki menu plugin, this share button maybe  -->\n",
         "requires-reload": "no"
     },
     {
