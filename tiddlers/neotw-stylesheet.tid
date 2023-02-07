@@ -1,7 +1,7 @@
 created: 20230202124524313
 creator: oeyoews
 empty: yes
-modified: 20230207042307987
+modified: 20230207121405777
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw-stylesheet
@@ -291,7 +291,6 @@ input:focus, textarea:focus {
 .tc-story-river {
 		min-width: 1100px;
 }
-.nc-topbar-wrapper,
 .nc-bottombar {
 	display: none;
 }
