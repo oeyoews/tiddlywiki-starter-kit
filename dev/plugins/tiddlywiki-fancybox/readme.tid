@@ -1,8 +1,9 @@
 title: $:/plugins/oeyoews/tiddlywiki-fancybox/readme
 
-<a href="https://github.com/fancyapps/fancybox" target="_blank">
+<a style="text-decoration:none;" href="https://github.com/fancyapps/fancybox" target="_blank">
   <img src="https://img.shields.io/badge/Powered by-Fancybox-green?style=flat" />
 </a>
+<$image source={{{ [[][https://img.shields.io/badge/Version-]] [<currentTiddler>get[version]] [[-red?style=flat&logo=dev.to&logoColor=red]] +[join[]]}}} />
 
 !! Readme
 
