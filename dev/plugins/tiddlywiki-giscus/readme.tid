@@ -3,9 +3,11 @@ title: $:/plugins/oeyoews/tiddlywiki-giscus/readme
 <a style="text-decoration:none;" href="https://github.com/oeyoews/neotw" target="_blank">
   <img src="https://img.shields.io/badge/Powered by-Neotw-green?style=flat" />
 </a>
-<a href="https://giscus.app/" target="_blank">
+<a style="text-decoration:none;" href="https://giscus.app/" target="_blank">
   <img src="https://img.shields.io/badge/Powered by-giscus-blue?style=flat" />
 </a>
+<$image source={{{ [[][https://img.shields.io/badge/Version-]] [<currentTiddler>get[version]] [[-red?style=flat&logo=dev.to&logoColor=red]] +[join[]]}}} />
+<$image source={{{ [[][https://img.shields.io/badge/Author-]] [<currentTiddler>get[author]] [[-lightblue?style=flat]] +[join[]]}}} />
 
 <center>
 <$button class="get-started">

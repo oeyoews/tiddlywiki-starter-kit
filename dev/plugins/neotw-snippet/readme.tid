@@ -1,8 +1,12 @@
 title: $:/plugins/oeyoews/neotw-snippet/readme
 type: text/vnd.tiddlywiki
 
-<a href="https://github.com/oeyoews/neotw" target="_blank">
+<a style="text-decoration:none;" href="https://github.com/oeyoews/neotw" target="_blank">
   <img src="https://img.shields.io/badge/Powered by-Neotw-green?style=flat" />
+</a>
+<$image source={{{ [[][https://img.shields.io/badge/Version-]] [<currentTiddler>get[version]] [[-red?style=flat&logo=dev.to&logoColor=red]] +[join[]]}}} />
+<a style="text-decoration:none;" href="https://github.com/oeyoews/" target="_blank">
+<$image source={{{ [[][https://img.shields.io/badge/Author-]] [<currentTiddler>get[author]] [[-lightblue?style=flat]] +[join[]]}}} />
 </a>
 
 * neotw-snippet
