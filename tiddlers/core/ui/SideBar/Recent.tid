@@ -1,7 +1,7 @@
 caption: {{$:/language/SideBar/Recent/Caption}}
 created: 20220907162500326
 creator: oeyoews
-modified: 20220907162932216
+modified: 20230207061116924
 modifier: oeyoews
 rewrite: 5.2.3
 tags: $:/tags/SideBar
@@ -14,7 +14,7 @@ type: text/vnd.tiddlywiki
 \define storeTitle() $:/temp/search/recent
 \define cancel-search-actions() <$action-deletetiddler $filter=<<storeTitle>>/><$action-sendmessage $message="tm-focus-selector" $param=""".search-recent input"""/>
 
-\define timeline-searchable(is:"!is",limit:"100",format:"DDth MMM YYYY",subfilter:"!tag[done]!tag[todo]",dateField:"modified")
+\define timeline-searchable(is:"!is",limit:"100",format:"DDth MMM YYYY",subfilter:"!tag[done]!tag[todo]!field:publish[private]",dateField:"modified")
 <div class="tc-timeline">
 <$list filter="[$is$[system]$subfilter$has[$dateField$]!sort[$dateField$]limit[$limit$]eachday[$dateField$]]">
 <div class="tc-menu-list-item">
