@@ -3,18 +3,20 @@ hide-body: yes
 
 \define longid() ${longid}
 \define shortid() ${shortid}
+\define timestamp() ${timestamp}
 
 \define baseurl()
 https://gitlab.com/oeyoews/neotw/commit/
 \end
 
 <div style="color:gray;font-size: 14px;">
-  BuildTime: ${timestamp};
 <a style="text-decoration: none; colro: #539bf5;"href={{{
     [<longid>addprefix<baseurl>] }}} target="_blank" class="gitcommit">
 <$image source={{{ [[]addprefix[https://img.shields.io/badge/git-]] [<shortid>]
 [[]addsuffix[-blue?logo=git&logoColor=red]] +[join[]] }}} />
 </a>
+<$image source={{{ [[]addprefix[https://img.shields.io/badge/]]
+[[BuildTime]addsuffix[-]] [<timestamp>format:relativedate[]] [[-9cf]] +[join[]] }}} />
 </div>
 
 <!-- vim:set et sw=2 ts=2 ft=tiddlywiki tw=80: -->
