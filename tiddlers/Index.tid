@@ -4,7 +4,7 @@ creator: oeyoews
 description: Index
 icon: $:/favicon.ico
 list: 
-modified: 20230201145050937
+modified: 20230207150714030
 modifier: oeyoews
 neotw: index
 page-cover: 
@@ -13,7 +13,6 @@ tags:
 title: Index
 type: text/vnd.tiddlywiki
 
-{{$:/plugins/oeyoews/tiddlywiki-github-share/ui/embed-ribbon}}
 <span class="purple-box">
 {{neotw/article/gradient-icon}}
 <$list

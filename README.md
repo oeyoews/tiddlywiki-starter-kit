@@ -7,7 +7,6 @@
 <center>
 <!-- badges -->
 <a href="https://gitter.im/oeyoews/neotw?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge" target="_blank">
-  <!-- <img src="https://badges.gitter.im/oeyoews/neotw.svg" /> -->
   <img src="https://img.shields.io/gitter/room/oeyoews/neotw?logo=gitter&color=50BA9A" />
 </a>
 <a href="https://github.com/oeyoews/neotw" target="_blank">
