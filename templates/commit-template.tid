@@ -1,5 +1,6 @@
 title: $:/state/git/commit
 hide-body: yes
+tags: $:/tags/Macro
 
 \define longid() ${longid}
 \define shortid() ${shortid}
@@ -9,14 +10,12 @@ hide-body: yes
 https://gitlab.com/oeyoews/neotw/commit/
 \end
 
-<div style="color:gray;font-size: 14px;">
-<a style="text-decoration: none; colro: #539bf5;"href={{{
-    [<longid>addprefix<baseurl>] }}} target="_blank" class="gitcommit">
-<$image source={{{ [[]addprefix[https://img.shields.io/badge/git-]] [<shortid>]
-[[]addsuffix[-blue?logo=git&logoColor=red]] +[join[]] }}} />
-</a>
-<$image source={{{ [[]addprefix[https://img.shields.io/badge/]]
-[[BuildTime]addsuffix[-]] [<timestamp>format:relativedate[]] [[-9cf]] +[join[]] }}} />
-</div>
-
+<!-- <a style="text-decoration: none; colro: #539bf5;"href={{{ -->
+<!--     [<longid>addprefix<baseurl>] }}} target="_blank" class="gitcommit"> -->
+<!-- <$image source={{{ [[]addprefix[https://img.shields.io/badge/git-]] [<shortid>] -->
+<!-- [[]addsuffix[-blue?logo=git&logoColor=red]] +[join[]] }}} /> -->
+<!-- </a> -->
+<!-- <$image source={{{ [[]addprefix[https://img.shields.io/badge/]] -->
+<!-- [[BuildTime]addsuffix[-]] [<timestamp>format:relativedate[]] [[-9cf]] +[join[]] }}} /> -->
+<!---->
 <!-- vim:set et sw=2 ts=2 ft=tiddlywiki tw=80: -->

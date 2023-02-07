@@ -1,6 +1,6 @@
 created: 20230206144115904
 creator: oeyoews
-modified: 20230206145537377
+modified: 20230207003210734
 modifier: oeyoews
 tags: 
 title: neotw-badges
@@ -15,3 +15,14 @@ type: text/vnd.tiddlywiki
 <<fb Plugins [plugin-type[plugin]count[]] green>> <$list filter="[{$:/info/url/protocol}match[http:]]">
 <img src="https://img.shields.io/badge/Powered by-Neotw-red?style=flat&logo=dev.to&logoColor=red" />
 </$list>
+<$list filter="[{$:/info/url/protocol}match[https:]]">
+<a style="text-decoration: none; colro: #539bf5;"href={{{
+    [<longid>addprefix<baseurl>] }}} target="_blank" class="gitcommit">
+<$image source={{{ [[]addprefix[https://img.shields.io/badge/git-]] [<shortid>]
+[[]addsuffix[-blue?logo=git&logoColor=red]] +[join[]] }}} />
+</a>
+</$list>
+<!--
+<$image source={{{ [[]addprefix[https://img.shields.io/badge/]]
+[[BuildTime]addsuffix[-]] [<timestamp>format:relativedate[]] [[-9cf]] +[join[]] }}} />
+-->
