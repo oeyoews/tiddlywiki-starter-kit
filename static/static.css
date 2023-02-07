@@ -3037,12 +3037,6 @@ top: 3em;
 
 
 
-[data-tag-title=\$\:\/tags\/StartupAction] .tc-tag-label:after {
-  content: " 1";
-}
-
-
-
 [data-tag-title=\$\:\/tags\/HelpPanel] .tc-tag-label:after {
   content: " 1";
 }
@@ -3066,7 +3060,7 @@ top: 3em;
 }
 
 .tc-untagged-label:after {
-  content: "135";
+  content: "136";
 }
 .user-panel-avatar { position: relative; max-width: 22px; max-height: 22px; }.user-panel-avatar-56 { position: relative; max-width: 56px; max-height: 56px; }.user-panel-avatar-56 img { width: 100%; height: auto; max-width: 56px; max-height: 56px; border-radius: 50%; aspect-ratio: 1 / 1; }.user-panel-avatar img { width: 100%; height: auto; max-width: 22px; max-height: 22px; border-radius: 50%; aspect-ratio: 1 / 1; }
 .CodeMirror-hints {
@@ -6073,7 +6067,8 @@ li.CodeMirror-hint-active {
   font-size: 1.5em !important;
 }.nc-bar {
   padding: 10px;
-  height: 0px;
+  height: 52px
+;
   background: #f5f5ee;
   display: flex;
   justify-content: space-between;
@@ -6823,7 +6818,6 @@ button.tc-unfold-banner {
 .tc-story-river {
 		min-width: 1100px;
 }
-.nc-topbar-wrapper,
 .nc-bottombar {
 	display: none;
 }
