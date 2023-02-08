@@ -1,29 +1,39 @@
-created: 20230206144115904
+created: 20230208091356701
 creator: oeyoews
-modified: 20230207172819412
+modified: 20230208094447756
 modifier: oeyoews
 tags: 
 title: neotw-badges
 type: text/vnd.tiddlywiki
 
-\define fb(label:label filter color:green)
-<$image source={{{ [[]addprefix[https://img.shields.io/badge/]] [<__label__>addsuffix[-]]  $filter$ [[-]addsuffix<__color__>] +[join[]] }}} />
+\define fb(label:label filter:[!is[system]count[]] color:green)
+\whitespace trim
+<$button class="tc-btn-invisible">
+<$image source={{{ [[]addprefix[https://img.shields.io/badge/]] [<__label__>addsuffix[-]] $filter$ [[-]addsuffix<__color__>] +[join[]] }}} />
+<$action-setfield $tiddler="$:/temp/advancedsearch" $value="""$filter$"""/>
+<$action-setfield $tiddler="$:/temp/advancedsearch/input" $value="""$filter$"""/>
+<$action-setfield $tiddler="$:/temp/advancedsearch/refresh" text="yes"/>
+<$action-setfield $tiddler="$:/state/tab--1498284803" $value="$:/core/ui/AdvancedSearch/Filter"/>
+<$action-navigate $to="$:/AdvancedSearch"/>
+<$action-sendmessage $message="tm-focus-selector" $param=".tc-advanced-search input"/>
+</$button>
 \end
 
 <<fb Tiddlers [!is[system]count[]] yellow>> 
 <<fb Tags [tags[]count[]] blue>> 
 <<fb Updated [!is[system]!has[draft.of]!sort[modified]limit[1]get[modified]format:relativedate[]] 9cf>> 
-<<fb Plugins [plugin-type[plugin]count[]] green>> <$list filter="[{$:/info/url/protocol}match[http:]]">
-<img src="https://img.shields.io/badge/Powered by-Neotw-red?style=flat&logo=dev.to&logoColor=red" />
-</$list>
+<<fb Plugins [plugin-type[plugin]count[]] green>> 
+
 <$list filter="[{$:/info/url/protocol}match[https:]]">
 <a style="text-decoration: none; colro: #539bf5;"href={{{
     [<longid>addprefix<baseurl>] }}} target="_blank" class="gitcommit">
 <$image source={{{ [[]addprefix[https://img.shields.io/badge/git-]] [<shortid>]
 [[]addsuffix[-blue?logo=git&logoColor=red]] +[join[]] }}} />
 </a>
+</$list> <$list filter="[{$:/info/url/protocol}match[https:]]">
+<a style="text-decoration: none; colro: #539bf5;"href={{{
+    [<longid>addprefix<baseurl>] }}} target="_blank" class="gitcommit">
+<$image source={{{ [[]addprefix[https://img.shields.io/badge/git-]] [<shortid>]
+[[]addsuffix[-blue?logo=git&logoColor=red]] +[join[]] }}} />
+</a>
 </$list>
-<!--
-<$image source={{{ [[]addprefix[https://img.shields.io/badge/]]
-[[BuildTime]addsuffix[-]] [<timestamp>format:relativedate[]] [[-9cf]] +[join[]] }}} />
--->
