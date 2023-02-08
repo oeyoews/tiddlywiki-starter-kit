@@ -18,6 +18,6 @@ tags: $:/tags/RawMarkupWikified/BottomBody
   `<img src="https://img.shields.io/gitter/room/oeyoews/neotw?logo=gitter&color=50BA9A" />`
 `</a>`
 `&nbsp;<a href="https://gitlab.com/oeyoews/neotw/commit/${longid}" target="_blank">`
-  `<img src="https://img.shields.io/badge/git-${shortid}-blue?logo=git?style=flat" />`
+  `<img src="https://img.shields.io/badge/git-${shortid}-blue?logo=git&style=flat" />`
 `</a>`
 `</footer>`
