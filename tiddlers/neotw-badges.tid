@@ -2,7 +2,7 @@ created: 20230208091356701
 creator: oeyoews
 modified: 20230208101143274
 modifier: oeyoews
-tags: 
+tags:
 title: neotw-badges
 type: text/vnd.tiddlywiki
 
@@ -19,7 +19,4 @@ type: text/vnd.tiddlywiki
 </$button>
 \end
 
-<<fb Tiddlers [!is[system]count[]] yellow>> 
-<<fb Tags [tags[]count[]] blue>> 
-<<fb Updated [!is[system]!has[draft.of]!sort[modified]limit[1]get[modified]format:relativedate[]] 9cf>> 
-<<fb Plugins [plugin-type[plugin]count[]] green>> 
+<<fb "🐟 Tiddlers" [!is[system]count[]] yellow>> <<fb "🏷️ Tags" [tags[]count[]] blue>> <<fb "🔃 Updated" [!is[system]!has[draft.of]!sort[modified]limit[1]get[modified]format:relativedate[]] 9cf>> <<fb "🧩 Plugins" [plugin-type[plugin]count[]] green>>
