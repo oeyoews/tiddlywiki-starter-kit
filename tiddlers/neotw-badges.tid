@@ -19,4 +19,4 @@ type: text/vnd.tiddlywiki
 </$button>
 \end
 
-<<fb "🐟 Tiddlers" [!is[system]count[]] yellow>> <<fb "🏷️ Tags" [tags[]count[]] blue>> <<fb "🔃 Updated" [!is[system]!has[draft.of]!sort[modified]limit[1]get[modified]format:relativedate[]] 9cf>> <<fb "🧩 Plugins" [plugin-type[plugin]count[]] green>>
+<<fb "🐟 Tiddlers" [!is[system]count[]] yellow>> <<fb "🏷️ Tags" [tags[]count[]] blue>> <<fb "⏰ Updated" [!is[system]!has[draft.of]!sort[modified]limit[1]get[modified]format:relativedate[]] 9cf>> <<fb "🧩 Plugins" [plugin-type[plugin]count[]] green>>
