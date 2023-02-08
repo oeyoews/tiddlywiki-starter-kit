@@ -9,7 +9,7 @@ type: text/vnd.tiddlywiki
 \define fb(label:label filter:[!is[system]count[]] color:green)
 \whitespace trim
 <$button class="tc-btn-invisible">
-<$image source={{{ [[]addprefix[https://img.shields.io/badge/]] [<__label__>addsuffix[-]] $filter$ [[-]addsuffix<__color__>] +[join[]] }}} />
+<$image source={{{ [[]addprefix[https://img.shields.io/badge/]] [<__label__>addsuffix[-]] $filter$ [[-]addsuffix<__color__>] [[?labelColor=white]] +[join[]] }}} />
 <$action-setfield $tiddler="$:/temp/advancedsearch" $value="""$filter$"""/>
 <$action-setfield $tiddler="$:/temp/advancedsearch/input" $value="""$filter$"""/>
 <$action-setfield $tiddler="$:/temp/advancedsearch/refresh" text="yes"/>
