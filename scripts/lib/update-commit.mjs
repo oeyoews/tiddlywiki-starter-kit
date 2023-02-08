@@ -9,8 +9,8 @@ export default async function updateCommit() {
   // const commitTimesVanilla = await $`git rev-list --all --count`;
   // const commitTimes = commitTimesVanilla.toString().trim();
 
-  const commitTemplate = 'templates/commit-template.tid';
-  const commitFile = 'tiddlers/commit.tid';
+  const commitTemplate = 'templates/footer-template.tid';
+  const commitFile = 'patch/footer.tid';
 
   const regPlace = {
     longid,
