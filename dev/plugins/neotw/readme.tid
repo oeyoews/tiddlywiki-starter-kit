@@ -7,3 +7,4 @@ title: $:/plugins/oeyoews/neotw/readme
 <$image source={{{ [[][https://img.shields.io/badge/Author-]] [<currentTiddler>get[author]] [[-lightblue?style=flat]] +[join[]]}}} />
 
 {{$:/plugins/oeyoews/neotw/ui/download-neotw}}
+dmeo
