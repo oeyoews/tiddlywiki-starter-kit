@@ -6,6 +6,7 @@ services:
     buildCommand: yarn build:oeyoews
     staticPublishPath: ./dist
     startCommand: yarn
+    plan: starter
     # pullRequestPreviewsEnabled: true # optional
     # buildFilter:
     #   paths:
