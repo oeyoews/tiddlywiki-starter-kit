@@ -4,7 +4,7 @@ creator: oeyoews
 description: Index
 icon: $:/favicon.ico
 list: 
-modified: 20230207150714030
+modified: 20230209043303334
 modifier: oeyoews
 neotw: index
 page-cover: 
@@ -15,11 +15,7 @@ type: text/vnd.tiddlywiki
 
 <span class="purple-box">
 {{neotw/article/gradient-icon}}
-<$list
-  filter="[[$:/state/notebook-sidebar]is[missing]] [[$:/state/notebook-sidebar]get[text]match[no]]  ">
-{{$:/themes/nico/notebook/ui/Buttons/menu}}
-</$list>
-</span> &nbsp;
+</span>
 
 @@.bullets
 !! Intro
