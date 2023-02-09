@@ -1,0 +1,24 @@
+services:
+  # A static site
+  - type: web
+    name: neotw
+    env: static
+    buildCommand: yarn build:oeyoews
+    staticPublishPath: ./dist
+    # pullRequestPreviewsEnabled: true # optional
+    # buildFilter:
+    #   paths:
+    #     - src/**/*.js
+    #   ignoredPaths:
+    #     - src/**/*.test.js
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: sameorigin
+    routes:
+      - type: redirect
+        source: /index.html
+        destination: /index
+      - type: redirect
+        source: /main.html
+        destination: /main
