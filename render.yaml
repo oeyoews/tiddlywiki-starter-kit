@@ -5,6 +5,7 @@ services:
     env: static
     buildCommand: yarn build:oeyoews
     staticPublishPath: ./dist
+    startCommand: yarn
     # pullRequestPreviewsEnabled: true # optional
     # buildFilter:
     #   paths:
