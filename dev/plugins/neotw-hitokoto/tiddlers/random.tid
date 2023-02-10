@@ -1,0 +1,9 @@
+title: $:/plugins/oeyoews/neotw-hitokoto/hitokoto-random-id
+
+<!-- 『 』 -->
+<footer style="font-size:16px;">
+<div id="hitokoto_random">
+     <span id="hitokoto_text_random"></span>&nbsp;<a href="#" target="_blank" id="hitokoto_from_random"></a>
+
+</div>
+</footer>

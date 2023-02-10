@@ -1,11 +1,11 @@
 {
-    "version": "0.1.0",
-    "type": "application/json",
-    "title": "$:/plugins/oeyoews/neotw-hitokoto",
-    "plugin-type": "plugin",
-    "name": "neotw-hitokoto",
-    "core-version": ">=5.2.3",
-    "description": "neotw-hitokoto",
-    "author": "oeyoews",
-    "list": "readme"
+  "version": "0.2.0",
+  "type": "application/json",
+  "title": "$:/plugins/oeyoews/neotw-hitokoto",
+  "plugin-type": "plugin",
+  "name": "neotw-hitokoto",
+  "core-version": ">=5.2.3",
+  "description": "neotw-hitokoto",
+  "author": "oeyoews",
+  "list": "readme"
 }

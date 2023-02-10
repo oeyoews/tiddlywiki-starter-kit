@@ -15,4 +15,32 @@ tags: $:/tags/RawMarkupWikified/BottomBody
           hitokoto_from.innerText = "@" + data.from;
         })
         .catch(console.error);
+
+function hitokoto_footer() {
+      fetch("https://v1.hitokoto.cn")
+        .then((response) => response.json())
+        .then((data) => {
+          const hitokoto = document.querySelector("#hitokoto_text");
+          hitokoto.innerText = data.hitokoto;
+          const hitokoto_from = document.querySelector("#hitokoto_from");
+          hitokoto_from.href = "https://hitokoto.cn/?uuid=" + data.uuid;
+          hitokoto_from.innerText = "@" + data.from;
+        })
+        .catch(console.error);
+}
+
+function random() {
+      fetch("https://v1.hitokoto.cn")
+        .then((response) => response.json())
+        .then((data) => {
+          const hitokoto_random = document.querySelector("#hitokoto_text_random");
+          hitokoto_random.innerText = data.hitokoto;
+          const hitokoto_from_random = document.querySelector("#hitokoto_from_random");
+          hitokoto_from_random.href = "https://hitokoto.cn/?uuid=" + data.uuid;
+          hitokoto_from_random.innerText = "@" + data.from;
+        })
+        .catch(console.error);
+ }
+setInterval(hitokoto_footer, 60000);
+setInterval(random, 60000);
 `</script>`
