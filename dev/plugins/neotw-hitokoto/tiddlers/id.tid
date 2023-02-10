@@ -4,6 +4,5 @@ tags: $:/tags/RawMarkupWikified/BottomBody
 `<footer style="font-size:16px;">`
 `<div id="hitokoto">`
      `<span id="hitokoto_text">``</span>` `&nbsp;<a href="#" target="_blank" id="hitokoto_from">``</a>`
-
 `</div>`
 `</footer>`

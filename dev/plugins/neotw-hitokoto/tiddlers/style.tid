@@ -19,7 +19,7 @@ footer .inline-icon svg{
   height:1em;
 }
 
-#hitokoto, #hitokoto_from {
+#hitokoto_random, #hitokoto, #hitokoto_from_random, #hitokoto_from {
   background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
   -webkit-background-clip: text;
   color: transparent;

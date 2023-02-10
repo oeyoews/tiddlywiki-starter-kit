@@ -17,23 +17,6 @@ function hitokoto_footer() {
     .catch(console.error);
 }
 
-function hitokoto_random() {
-  fetch("https://v1.hitokoto.cn")
-    .then((response) => response.json())
-    .then((data) => {
-      const hitokoto_random = document.querySelector("#hitokoto_text_random");
-      hitokoto_random.innerText = data.hitokoto;
-      const hitokoto_from_random = document.querySelector(
-        "#hitokoto_from_random"
-      );
-      hitokoto_from_random.href = "https://hitokoto.cn/?uuid=" + data.uuid;
-      hitokoto_from_random.innerText = "@" + data.from;
-    })
-    .catch(console.error);
-}
-
 hitokoto_footer();
-hitokoto_random();
-setInterval(hitokoto_footer, 60000);
-setInterval(hitokoto_random, 60000);
+setInterval(hitokoto_footer, 30000);
 `</script>`
