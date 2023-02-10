@@ -1,6 +1,6 @@
 created: 20230208091356701
 creator: oeyoews
-modified: 20230210074201837
+modified: 20230210074444070
 modifier: oeyoews
 tags: 
 title: neotw-badges
@@ -19,7 +19,7 @@ type: text/vnd.tiddlywiki
 <img src="https://img.shields.io/badge/✌️v2ray-local-green?style=social" />
 </a>
 <a target="_blank" href="https://neotw.onrender.com" >
-<img src="https://img.shields.io/badge/️render-preview-green?style=social" />
+<img src="https://img.shields.io/badge/️🛼render-preview-green?style=social" />
 </a>
 </$list>
 <<fb "⏰ Updated" [!is[system]!has[draft.of]!sort[modified]limit[1]get[modified]format:relativedate[]]>>  
