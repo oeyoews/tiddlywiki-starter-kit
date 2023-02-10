@@ -2,7 +2,7 @@ function main() {
   window.location.href = './main.html';
 }
 
-(function hitokoto_footer() {
+function hitokoto_footer() {
   fetch('https://v1.hitokoto.cn')
     .then(response => response.json())
     .then(data => {
@@ -13,7 +13,9 @@ function main() {
       hitokoto_from.innerText = '@' + data.from;
     })
     .catch(console.error);
-})();
+}
+
+hitokoto_footer();
 
 // hitokoto_footer();
 // mobile move
