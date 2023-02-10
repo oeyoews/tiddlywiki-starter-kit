@@ -6644,6 +6644,8 @@ ol.doc-github-contributors li {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+}a {
+	text-decoration: none;
 }.tc-tiddler-frame .tc-titlebar button {
   opacity: 0;
   transition: opacity .5s ease-in-out;
