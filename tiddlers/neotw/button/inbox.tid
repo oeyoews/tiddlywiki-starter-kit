@@ -1,13 +1,14 @@
 created: 20220806081632787
 creator: oeyoews
 description: bells
-modified: 20221228114812694
+modified: 20230210171643959
 modifier: oeyoews
 tags: $:/tags/PageControls
 title: neotw/button/inbox
 type: text/vnd.tiddlywiki
 
 \whitespace trim
+<$list filter="[{$:/info/url/protocol}match[http:]]">
 <$button tooltip="Inbox" aria-label="show info" class=<<tv-config-toolbar-class>>> 
 {{neotw/icon/bell}}
 <$list filter="[<tv-config-toolbar-text>match[yes]]">
@@ -17,7 +18,4 @@ type: text/vnd.tiddlywiki
 </$list>
 <$action-navigate $to="neotw/INBOX"/>
 </$button>
-
-<!--
-<$button to="neotw/INBOX" class=<<tv-config-toolbar-class>> selectedClass="tc-selected"><i class="fa fa-inbox" style="font-size:140%; position:relative; bottom:-3px; left:-1px;"/></$button>
--->
+</$list>

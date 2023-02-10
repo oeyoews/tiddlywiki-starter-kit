@@ -2,7 +2,7 @@ caption: {{$:/core/images/randomselection}} {{$:/language/Buttons/RandomSelectio
 created: 20210725102642198
 creator: oeyoews
 description: {{$:/language/Buttons/RandomSelection/Hint}}
-modified: 20220925134626705
+modified: 20230210171710302
 modifier: oeyoews
 tags: $:/tags/PageControls
 title: $:/core/ui/Buttons/RandomSelection
@@ -22,4 +22,7 @@ type: text/vnd.tiddlywiki
 </$list>
 </$button>
 \end
+
+<$list filter="[{$:/info/url/protocol}match[http:]]">
 <<randomselectionButton>>
+</$list>
