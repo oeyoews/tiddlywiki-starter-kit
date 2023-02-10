@@ -1,22 +1,21 @@
 created: 20230208091356701
 creator: oeyoews
-modified: 20230208101143274
+modified: 20230210072734284
 modifier: oeyoews
-tags:
+tags: 
 title: neotw-badges
 type: text/vnd.tiddlywiki
 
 \define fb(label:label filter:[!is[system]count[]] color:green)
-\whitespace trim
-<$button class="tc-btn-invisible">
 <$image source={{{ [[]addprefix[https://img.shields.io/badge/]] [<__label__>addsuffix[-]] $filter$ [[-]addsuffix<__color__>] [[?style=social]] +[join[]] }}} />
-<$action-setfield $tiddler="$:/temp/advancedsearch" $value="""$filter$"""/>
-<$action-setfield $tiddler="$:/temp/advancedsearch/input" $value="""$filter$"""/>
-<$action-setfield $tiddler="$:/temp/advancedsearch/refresh" text="yes"/>
-<$action-setfield $tiddler="$:/state/tab--1498284803" $value="$:/core/ui/AdvancedSearch/Filter"/>
-<$action-navigate $to="$:/AdvancedSearch"/>
-<$action-sendmessage $message="tm-focus-selector" $param=".tc-advanced-search input"/>
-</$button>
 \end
 
 <<fb "🐟 Tiddlers" [!is[system]count[]] yellow>> <<fb "🏷️ Tags" [tags[]count[]] blue>> <<fb "⏰ Updated" [!is[system]!has[draft.of]!sort[modified]limit[1]get[modified]format:relativedate[]] 9cf>> <<fb "🧩 Plugins" [plugin-type[plugin]count[]] green>>
+<$list filter="[{$:/info/url/protocol}match[http:]]">
+<a style="text-decoration:none;" target="_blank" href="http://localhost:5230" >
+<img src="https://img.shields.io/badge/✍️memos-local-green?style=social" />
+</a>
+<a target="_blank" href="http://localhost:2017" >
+<img src="https://img.shields.io/badge/✌️v2ray-local-green?style=social" />
+</a>
+</$list>
