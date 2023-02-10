@@ -31,9 +31,9 @@
         var create_time = Math.round(new Date(Date.UTC(2021, 12, 27, 6, 6, 6)).getTime() / 1000);
         var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
         currentTime = secondToDate((timestamp - create_time));
-        currentTimeHtml = currentTime[0] + ' year ' + currentTime[1] + ' day '
-                + currentTime[2] + ' hour ' + currentTime[3] + ' min ' + currentTime[4]
-                + ' s';
+        currentTimeHtml = currentTime[0] + ' years ' + currentTime[1] + ' day '
+                + currentTime[2] + ' hours ' + currentTime[3] + ' minutes ' + currentTime[4]
+                + ' seconds';
         document.getElementById("htmer_time").innerHTML = currentTimeHtml;
     }    setInterval(setTime, 1000);
     `</script>`
