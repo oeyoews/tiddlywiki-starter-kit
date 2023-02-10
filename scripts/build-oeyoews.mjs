@@ -46,6 +46,6 @@ await spinner('Building ...', async () => {
 
   // after building
   await $`mv ${library} ${dist}`;
-  await $`cp -r files vercel.json src/index.html src/index.css img/default2.avif ${dist}`;
+  await $`cp -r files vercel.json src/index* img/default2.avif ${dist}`;
   msg.finish('Building Finished(for oyeoews)');
 });
