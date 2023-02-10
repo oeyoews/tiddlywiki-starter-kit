@@ -1,6 +1,6 @@
 created: 20230208091356701
 creator: oeyoews
-modified: 20230210074444070
+modified: 20230210075222340
 modifier: oeyoews
 tags: 
 title: neotw-badges
@@ -13,13 +13,19 @@ type: text/vnd.tiddlywiki
 <<fb "🐟 Tiddlers" [!is[system]count[]]>> <<fb "🏷️ Tags" [tags[]count[]]>> <<fb "🧩 Plugins" [plugin-type[plugin]count[]]>>
 <$list filter="[{$:/info/url/protocol}match[http:]]">
 <a style="text-decoration:none;" target="_blank" href="http://localhost:5230" >
-<img src="https://img.shields.io/badge/✍️memos-local-green?style=social" />
+<img src="https://img.shields.io/badge/✍️Memos-local-green?style=social" />
 </a>
 <a target="_blank" href="http://localhost:2017" >
-<img src="https://img.shields.io/badge/✌️v2ray-local-green?style=social" />
+<img src="https://img.shields.io/badge/✌️V2ray-local-green?style=social" />
 </a>
 <a target="_blank" href="https://neotw.onrender.com" >
-<img src="https://img.shields.io/badge/️🛼render-preview-green?style=social" />
+<img src="https://img.shields.io/badge/️🛼Render-preview-green?style=social" />
+</a>
+<a target="_blank" href="https://talk.tiddlywiki.org/latest" >
+<img src="https://img.shields.io/badge/talk-tiddlywiki-green?style=social" />
+</a>
+<a target="_blank" href="https://bramchen.github.io/tw5-docs/zh-Hans/" >
+<img src="https://img.shields.io/badge/tiddlywiki-doc-green?style=social" />
 </a>
 </$list>
 <<fb "⏰ Updated" [!is[system]!has[draft.of]!sort[modified]limit[1]get[modified]format:relativedate[]]>>  
