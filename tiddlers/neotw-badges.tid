@@ -1,6 +1,6 @@
 created: 20230208091356701
 creator: oeyoews
-modified: 20230210072734284
+modified: 20230210073813754
 modifier: oeyoews
 tags: 
 title: neotw-badges
@@ -10,7 +10,7 @@ type: text/vnd.tiddlywiki
 <$image source={{{ [[]addprefix[https://img.shields.io/badge/]] [<__label__>addsuffix[-]] $filter$ [[-]addsuffix<__color__>] [[?style=social]] +[join[]] }}} />
 \end
 
-<<fb "🐟 Tiddlers" [!is[system]count[]] yellow>> <<fb "🏷️ Tags" [tags[]count[]] blue>> <<fb "⏰ Updated" [!is[system]!has[draft.of]!sort[modified]limit[1]get[modified]format:relativedate[]] 9cf>> <<fb "🧩 Plugins" [plugin-type[plugin]count[]] green>>
+<<fb "🐟 Tiddlers" [!is[system]count[]]>> <<fb "🏷️ Tags" [tags[]count[]]>> <<fb "🧩 Plugins" [plugin-type[plugin]count[]]>>
 <$list filter="[{$:/info/url/protocol}match[http:]]">
 <a style="text-decoration:none;" target="_blank" href="http://localhost:5230" >
 <img src="https://img.shields.io/badge/✍️memos-local-green?style=social" />
@@ -19,3 +19,4 @@ type: text/vnd.tiddlywiki
 <img src="https://img.shields.io/badge/✌️v2ray-local-green?style=social" />
 </a>
 </$list>
+<<fb "⏰ Updated" [!is[system]!has[draft.of]!sort[modified]limit[1]get[modified]format:relativedate[]]>>  

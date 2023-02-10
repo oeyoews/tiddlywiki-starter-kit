@@ -1,11 +1,15 @@
 created: 20230202124524313
 creator: oeyoews
 empty: yes
-modified: 20230207121405777
+modified: 20230210073913034
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw-stylesheet
 type: text/vnd.tiddlywiki
+
+a {
+	text-decoration: none;
+}
 
 <!-- Mouseover toolbar visibility: courtesy from Tobias Beer -->
 .tc-tiddler-frame .tc-titlebar button {
