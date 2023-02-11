@@ -1,3 +1,14 @@
+# TOC
+
+<!-- toc -->
+
+- [What's the neotw](#whats-the-neotw)
+- [ShowCases](#showcases)
+- [Deploy](#deploy)
+- [Dev](#dev)
+
+<!-- tocstop -->
+
 <div align="center">
 
 <h1>Neotw</h1>
@@ -28,7 +39,7 @@
 
 > A modern style notebook based on `tiddlywiki`
 
-## 🖼️ ShowCases
+## ShowCases
 
 <center>
 <img src="./img/011.png" height=256 alt="011">
@@ -51,7 +62,7 @@
 <img src="https://www.netlify.com/img/deploy/button.svg">
 </a>
 
-## ⛹️ Dev
+## Dev
 
 ```bash
 git clone --depth 1 https://gitlab.com/oeyoews/neotw.git
@@ -94,11 +105,11 @@ Neotw
 <details>
 <summary>Preview</summary>
 
-- 🏠 http://oeyoewl.top
-- 😺 https://oeyoews.github.io/neotw
-- 🦿 https://neotw.tiddlyhost.com
-- 🌋 https://neotw.vercel.app
-- 🤺 https://neotw.netlify.app/
+- http://oeyoewl.top
+- https://oeyoews.github.io/neotw
+- https://neotw.tiddlyhost.com
+- https://neotw.vercel.app
+- https://neotw.netlify.app/
 - https://neotw.onrender.com
 
 </details>
