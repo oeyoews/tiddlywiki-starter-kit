@@ -2422,6 +2422,9 @@ top: 3em;
       transform: translate(-50%, 0);
     }
   }
+[data-tags*="docs"] .tc-tiddler-controls {
+	display: none;
+}
 .shield {
   font-weight: normal;
   display: inline-block;
@@ -2785,6 +2788,12 @@ top: 3em;
 
 
 
+[data-tag-title=\$\:\/tags\/StartupAction\/PostRender] .tc-tag-label:after {
+  content: " 2";
+}
+
+
+
 [data-tag-title=\$\:\/CodeMirrorEnhanced\/RealtimeHint] .tc-tag-label:after {
   content: " 2";
 }
@@ -2955,12 +2964,6 @@ top: 3em;
 
 [data-tag-title=\$\:\/themes\/nico\/notebook\/tags\/SidebarSection] .tc-tag-label:after {
   content: " 2";
-}
-
-
-
-[data-tag-title=\$\:\/tags\/StartupAction\/PostRender] .tc-tag-label:after {
-  content: " 1";
 }
 
 
@@ -5637,9 +5640,6 @@ a[data-fancybox] img {
   }
 }
 
-.tc-sidebar-header {
-	display: none;
-}
 .nauthor img {
     width: 100%;
     height: auto;
