@@ -1,5 +1,5 @@
 list-after: $:/core/ui/EditTemplate/title
-tags: $:/tags/EditTemplate
+<!-- tags: $:/tags/EditTemplate -->
 title: $:/ContributionBanner
 
 \define base-github()
