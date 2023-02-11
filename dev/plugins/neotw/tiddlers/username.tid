@@ -1,0 +1,10 @@
+title: $:/plugins/oeyoews/neotw/setup/username
+tags: $:/tags/StartupAction/PostRender
+
+<$list filter="[{$:/info/url/protocol}match[http:]]">
+  <$action-setfield $tiddler="$:/status/UserName" text="oeyoews"/>
+</$list>
+
+<$list filter="[{$:/info/url/protocol}match[https:]]">
+  <$action-setfield $tiddler="$:/status/UserName" text="Neotw"/>
+</$list>
