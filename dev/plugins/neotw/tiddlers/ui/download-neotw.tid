@@ -11,7 +11,7 @@ Neotw Empty {{$:/core/images/save-button}}
 <$button>
 <$action-sendmessage $message="tm-open-external-window" $param= {{{ [[$:/info/url/full]get[text]search-replace:g:regexp[index.html|index|main.html|main|],[]addsuffix[neotw-empty.html]] +[join[]] }}}
 />
-Online previe neotw empty
+Preview
 </$button>
 </$list>
 
