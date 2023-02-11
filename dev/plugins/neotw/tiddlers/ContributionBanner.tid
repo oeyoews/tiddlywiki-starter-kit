@@ -3,7 +3,7 @@ tags: $:/tags/EditTemplate
 title: $:/ContributionBanner
 
 \define base-github()
-https://gitlab.com/oeyoews/neotw/edit/main/tiddlers/
+https://github.com/oeyoews/neotw/edit/main/tiddlers/
 \end
 
 <$set name="draft-of" value={{{ [<currentTiddler>get[draft.of]] }}}>
