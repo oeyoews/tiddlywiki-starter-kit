@@ -1,3 +1,10 @@
+# [3.26.0](https://github.com/oeyoews/neotw/compare/v3.25.4...v3.26.0) (2023-02-11)
+
+
+### Features
+
+* support local img jump for fancybox with notionpage-covericon ([4a47ba5](https://github.com/oeyoews/neotw/commit/4a47ba5fffe8fb34c0621cde8da7959ea0016c04))
+
 ## [3.25.4](https://github.com/oeyoews/neotw/compare/v3.25.3...v3.25.4) (2023-02-11)
 
 
