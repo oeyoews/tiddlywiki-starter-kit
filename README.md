@@ -5,7 +5,7 @@
 - [What's the neotw](#whats-the-neotw)
 - [ShowCases](#showcases)
 - [Deploy](#deploy)
-- [Dev](#dev)
+- [Run](#run)
 
 <!-- tocstop -->
 
@@ -60,7 +60,7 @@
 <img src="https://www.netlify.com/img/deploy/button.svg">
 </a>
 
-## Dev
+## Run
 
 ```bash
 git clone --depth 1 https://github.com/oeyoews/neotw.git
