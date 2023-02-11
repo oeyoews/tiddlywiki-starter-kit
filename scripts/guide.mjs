@@ -2,22 +2,22 @@
 
 import prompts from 'prompts';
 import msg from './lib/info.mjs';
-import service from './component/service.mjs';
-import build from './component/build.mjs';
-import start from './component/start.mjs';
-import bump from './component/bump.mjs';
+// import service from './component/service.mjs';
+// import build from './component/build.mjs';
+// import start from './component/start.mjs';
+// import bump from './component/bump.mjs';
 import newPlugin from './component/new-plugin.mjs';
-import clone from './component/clone.mjs';
+// import clone from './component/clone.mjs';
 
 // $.verbose = false;
 
 const index = {
-  service,
-  build,
-  start,
-  bump,
+  // service,
+  // build,
+  // start,
+  // bump,
   newPlugin,
-  clone,
+  // clone,
 };
 
 // from ob to arroy
