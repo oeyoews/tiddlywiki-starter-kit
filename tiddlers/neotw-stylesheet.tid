@@ -1,11 +1,15 @@
 created: 20230202124524313
 creator: oeyoews
 empty: yes
-modified: 20230210073913034
+modified: 20230211162001383
 modifier: oeyoews
 tags: $:/tags/Stylesheet
 title: neotw-stylesheet
 type: text/vnd.tiddlywiki
+
+.tc-tiddler-frame .tc-tiddler-body {
+    font-size: 22px;
+}
 
 a {
 	text-decoration: none;
@@ -29,6 +33,7 @@ a {
 <!-- better preview -->
 .tc-tiddler-preview-preview {
     border: 0px !important;
+		font-size: 22px;
 }
 
 <!-- hide scrollbar -->
