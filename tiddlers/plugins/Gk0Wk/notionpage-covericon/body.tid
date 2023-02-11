@@ -1,11 +1,26 @@
 created: 20230109141720277
 creator: oeyoews
 list-before: $:/core/ui/ViewTemplate/title
-modified: 20230211165956473
+modified: 20230211170647794
 modifier: oeyoews
 tags: $:/tags/ViewTemplate
 title: $:/plugins/Gk0Wk/notionpage-covericon/body
 type: text/vnd.tiddlywiki
+
+\define notionpage-covericon-with-fancybox()
+    <div class="gk0wk-notionpagebg-image">
+    <!-- data-fancybox -->
+    <$list filter="[<cover>prefix[https:]]">
+		  <a data-fancybox="notion-pagecover-with-fancybox" href=<<cover>> >
+    		<$image source=<<cover>> width="100%" height="auto"/>
+  		</a>
+    </$list>
+    <!-- normal img -->
+    <$list filter="[<cover>!prefix[https:]]">
+		  <$image source=<<cover>> width="100%" height="auto"/>
+    </$list>
+		</div>
+\end
 
 <$list filter="[all[current]!is[system]]">
 <$set name="tiddler" value=<<currentTiddler>>>
@@ -25,16 +40,7 @@ type: text/vnd.tiddlywiki
 <$list filter="[<cover>!match[]]">
   <!-- !icon && cover -->
   <div class="gk0wk-notionpagebg gk0wk-notionpagebg-c">
-    <div class="gk0wk-notionpagebg-image">
-    <$list filter="[<cover>prefix[https:]]">
-		  <a data-fancybox="notion-pagecover-with-fancybox" href=<<cover>> >
-    		<$image source=<<cover>> width="100%" height="auto"/>
-  		</a>
-    </$list>
-    <$list filter="[<cover>!prefix[https:]]">
-		  <$image source=<<cover>> width="100%" height="auto"/>
-    </$list>
-		</div>
+    <<notionpage-covericon-with-fancybox>>
     <$button popup=<<stateTiddler2>> class="gk0wk-notionpageb-changecover" tooltip="Change Cover">Change Cover</$button>
     <$reveal type="popup" state=<<stateTiddler2>> position="belowleft" tag="div" class="tc-popup-keep">
       <div class="gk0wk-notionpageb-changecover-box">
@@ -58,16 +64,7 @@ type: text/vnd.tiddlywiki
 <$list filter="[<cover>!match[]]">
   <!-- icon && cover -->
   <div class="gk0wk-notionpagebg gk0wk-notionpagebg-c">
-    <div class="gk0wk-notionpagebg-image">
-    <$list filter="[<cover>prefix[https:]]">
-		  <a data-fancybox="notion-pagecover-with-fancybox" href=<<cover>> >
-    		<$image source=<<cover>> width="100%" height="auto"/>
-  		</a>
-    </$list>
-    <$list filter="[<cover>!prefix[https:]]">
-		  <$image source=<<cover>> width="100%" height="auto"/>
-    </$list>
-		</div>
+  <<notionpage-covericon-with-fancybox>>
     <$button popup=<<stateTiddler2>> class="gk0wk-notionpageb-changecover" tooltip="Change Cover">Change Cover</$button>
     <$reveal type="popup" state=<<stateTiddler2>> position="belowleft" tag="div" class="tc-popup-keep">
       <div class="gk0wk-notionpageb-changecover-box">
