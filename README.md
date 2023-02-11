@@ -2,7 +2,7 @@
 
 <!-- toc -->
 
-- [What's the neotw](#whats-the-neotw)
+- [Intro](#intro)
 - [ShowCases](#showcases)
 - [Deploy](#deploy)
 - [Run](#run)
@@ -35,7 +35,7 @@
  </a>
 </center>
 
-## What's the neotw
+## Intro
 
 > A modern style notebook based on `tiddlywiki`
 
