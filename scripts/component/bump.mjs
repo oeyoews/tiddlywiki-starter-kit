@@ -4,7 +4,7 @@ import msg from '../lib/info.mjs';
 
 export default async function bump() {
   // write file base exe dir
-  // const filename = './package.json';
+  const filename = './package.json';
   // require base relative file dir(import relative path )
   // const { version } = require('../package.json');
   let version = await $`git describe --abbrev=0 --tags`;
@@ -49,15 +49,15 @@ export default async function bump() {
   const newVersion = response.newVersion;
 
   await spinner('Pushing ...', async () => {
-    // if (newVersion) {
-    // const data = await fs.readFile(filename);
-    // const content = String(data).replace(
-    //   `"version": "${version}"`,
-    //   `"version": "${newVersion}"`,
-    // );
-    // await fs.writeFile(filename, content);
-    // console.log(chalk.green('`package.json` updated!'));
-    // }
+    if (newVersion) {
+      const data = await fs.readFile(filename);
+      const content = String(data).replace(
+        `"version": "${version}"`,
+        `"version": "${newVersion}"`,
+      );
+      await fs.writeFile(filename, content);
+      console.log(chalk.green('`package.json` updated!'));
+    }
 
     if (response.commit) {
       let message = response.message;
