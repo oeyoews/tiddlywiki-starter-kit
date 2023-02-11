@@ -39,8 +39,8 @@
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.2",
     "@semantic-release/git": "^10.0.1",
-    "pm2": "^5.2.2",
-    "semantic-release": "^20.1.0"
+    "semantic-release": "^20.1.0",
+    "pm2": "^5.2.2"
   },
   "engines": {
     "node": ">=18"
