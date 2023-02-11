@@ -1,3 +1,16 @@
+# [3.25.0](https://github.com/oeyoews/neotw/compare/v3.24.0...v3.25.0) (2023-02-11)
+
+
+### Bug Fixes
+
+* just test ([008056a](https://github.com/oeyoews/neotw/commit/008056af70a8da75721ce12f649511cebba8699f))
+* remove create release ([4ea8e0c](https://github.com/oeyoews/neotw/commit/4ea8e0cfc199f65355dfd2c56de1743c5952c78d))
+
+
+### Features
+
+* test ([bd0e240](https://github.com/oeyoews/neotw/commit/bd0e240241a5a35dffc6c508f13c8aa13d4b4799))
+
 # [3.24.0](https://github.com/oeyoews/neotw/compare/v3.23.2...v3.24.0) (2023-02-11)
 
 
