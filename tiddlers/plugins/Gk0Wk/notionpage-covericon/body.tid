@@ -1,7 +1,7 @@
 created: 20230109141720277
 creator: oeyoews
 list-before: $:/core/ui/ViewTemplate/title
-modified: 20230116073017930
+modified: 20230211165956473
 modifier: oeyoews
 tags: $:/tags/ViewTemplate
 title: $:/plugins/Gk0Wk/notionpage-covericon/body
@@ -26,9 +26,14 @@ type: text/vnd.tiddlywiki
   <!-- !icon && cover -->
   <div class="gk0wk-notionpagebg gk0wk-notionpagebg-c">
     <div class="gk0wk-notionpagebg-image">
-		<a data-fancybox="notion-pagecover-with-fancybox" href=<<cover>> >
-		<$image source=<<cover>> width="100%" height="auto"/>
-		</a>
+    <$list filter="[<cover>prefix[https:]]">
+		  <a data-fancybox="notion-pagecover-with-fancybox" href=<<cover>> >
+    		<$image source=<<cover>> width="100%" height="auto"/>
+  		</a>
+    </$list>
+    <$list filter="[<cover>!prefix[https:]]">
+		  <$image source=<<cover>> width="100%" height="auto"/>
+    </$list>
 		</div>
     <$button popup=<<stateTiddler2>> class="gk0wk-notionpageb-changecover" tooltip="Change Cover">Change Cover</$button>
     <$reveal type="popup" state=<<stateTiddler2>> position="belowleft" tag="div" class="tc-popup-keep">
@@ -54,9 +59,14 @@ type: text/vnd.tiddlywiki
   <!-- icon && cover -->
   <div class="gk0wk-notionpagebg gk0wk-notionpagebg-c">
     <div class="gk0wk-notionpagebg-image">
-		<a data-fancybox="notion-pagecover-with-fancybox" href=<<cover>> >
-			<$image source=<<cover>> width="100%" height="auto"/>
-		</a>
+    <$list filter="[<cover>prefix[https:]]">
+		  <a data-fancybox="notion-pagecover-with-fancybox" href=<<cover>> >
+    		<$image source=<<cover>> width="100%" height="auto"/>
+  		</a>
+    </$list>
+    <$list filter="[<cover>!prefix[https:]]">
+		  <$image source=<<cover>> width="100%" height="auto"/>
+    </$list>
 		</div>
     <$button popup=<<stateTiddler2>> class="gk0wk-notionpageb-changecover" tooltip="Change Cover">Change Cover</$button>
     <$reveal type="popup" state=<<stateTiddler2>> position="belowleft" tag="div" class="tc-popup-keep">
