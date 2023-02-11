@@ -1172,7 +1172,7 @@ a.tc-tiddlylink:hover {
 }.tc-tiddler-body {
 	clear: both;
 }.tc-tiddler-frame .tc-tiddler-body {
-	font-size: 20px;
+	font-size: 22px;
 	line-height: 22px;
 }.tc-titlebar, .tc-tiddler-edit-title {
 	overflow: hidden; /* https://github.com/Jermolene/TiddlyWiki5/issues/282 */
@@ -3063,7 +3063,7 @@ top: 3em;
 }
 
 .tc-untagged-label:after {
-  content: "139";
+  content: "140";
 }
 .user-panel-avatar { position: relative; max-width: 22px; max-height: 22px; }.user-panel-avatar-56 { position: relative; max-width: 56px; max-height: 56px; }.user-panel-avatar-56 img { width: 100%; height: auto; max-width: 56px; max-height: 56px; border-radius: 50%; aspect-ratio: 1 / 1; }.user-panel-avatar img { width: 100%; height: auto; max-width: 22px; max-height: 22px; border-radius: 50%; aspect-ratio: 1 / 1; }
 .CodeMirror-hints {
@@ -5853,7 +5853,7 @@ button.checklist-remove:focus {
 	border: 1px solid rgba(0,0,0,.2);
 	line-height: 1.5;
 	font-family: "Maple Mono", "Fira Code";
-	font-size: 20px;
+	font-size: 22px;
 }.CodeMirror-scroll {
 	overflow-x: auto;
 	overflow-y: hidden;
@@ -6052,7 +6052,7 @@ li.CodeMirror-hint-active {
 }.tc-story-river {
   padding: 6px 0 !important;
   width: 100% !important;
-  max-width: 1158px !important;
+  max-width: 1250px !important;
   margin: 0 auto !important;
   margin-top: 34px !important;
 }div.tc-tiddler-frame {
@@ -6082,7 +6082,7 @@ li.CodeMirror-hint-active {
 }.nc-bar.nc-topbar {
   top: 0;
   background: #f5f5eeee;
-  max-width: calc(1158px + 40px);
+  max-width: calc(1250px + 40px);
   padding: 10px 20px;
   margin: 0 auto;
 }.nc-bar.nc-bottombar {
@@ -6644,6 +6644,8 @@ ol.doc-github-contributors li {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+}.tc-tiddler-frame .tc-tiddler-body {
+    font-size: 22px;
 }a {
 	text-decoration: none;
 }.tc-tiddler-frame .tc-titlebar button {
@@ -6658,6 +6660,7 @@ ol.doc-github-contributors li {
 .tc-tiddler-controls .tc-image-cancel-button {fill:#ed9;}
 .tc-tiddler-controls .tc-image-done-button {fill:#beb;}.tc-tiddler-preview-preview {
     border: 0px !important;
+		font-size: 22px;
 }{scrollbar-width: thin;
 }
 ::-webkit-scrollbar,
