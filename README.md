@@ -46,8 +46,6 @@
 <img src="./img/012.png" height=245 alt="012">
 </center>
 
-<!-- ## Features -->
-
 <!-- - 一键部署 -->
 
 ## Deploy
