@@ -9,7 +9,7 @@ import bump from './component/bump.mjs';
 import newPlugin from './component/new-plugin.mjs';
 import clone from './component/clone.mjs';
 
-$.verbose = false;
+// $.verbose = false;
 
 const index = {
   service,
