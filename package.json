@@ -6,9 +6,9 @@
     "url": "git+https://github.com/oeyoews/neotw.git"
   },
   "author": "oeyoews <jyao4783@gmail.com>",
-  "bin": "./scripts/guide.mjs",
   "license": "MIT",
   "scripts": {
+    "semantic-release": "semantic-release",
     "guide": "zx scripts/guide.mjs",
     "start": "npx pm2 start neotw.config.json",
     "build:oeyoews": "zx scripts/build-oeyoews.mjs",
@@ -37,7 +37,10 @@
     "notebook"
   ],
   "devDependencies": {
-    "pm2": "^5.2.2"
+    "@semantic-release/changelog": "^6.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "pm2": "^5.2.2",
+    "semantic-release": "^20.1.0"
   },
   "engines": {
     "node": ">=16"
