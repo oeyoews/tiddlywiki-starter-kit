@@ -48,17 +48,17 @@ export default async function bump() {
   const response = await prompts(questions);
   const newVersion = response.newVersion;
 
-  await spinner('Pushing ...', async () => {
-    if (newVersion) {
-      const data = await fs.readFile(filename);
-      const content = String(data).replace(
-        `"version": "${version}"`,
-        `"version": "${newVersion}"`,
-      );
-      await fs.writeFile(filename, content);
-      console.log(chalk.green('`package.json` updated!'));
-    }
+  if (newVersion) {
+    const data = await fs.readFile(filename);
+    const content = String(data).replace(
+      `"version": "${version}"`,
+      `"version": "${newVersion}"`,
+    );
+    await fs.writeFile(filename, content);
+    console.log(chalk.green('`package.json` updated!'));
+  }
 
+  await spinner('Pushing ...', async () => {
     if (response.commit) {
       let message = response.message;
       if (message === '') {
