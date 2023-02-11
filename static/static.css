@@ -3063,7 +3063,7 @@ top: 3em;
 }
 
 .tc-untagged-label:after {
-  content: "140";
+  content: "141";
 }
 .user-panel-avatar { position: relative; max-width: 22px; max-height: 22px; }.user-panel-avatar-56 { position: relative; max-width: 56px; max-height: 56px; }.user-panel-avatar-56 img { width: 100%; height: auto; max-width: 56px; max-height: 56px; border-radius: 50%; aspect-ratio: 1 / 1; }.user-panel-avatar img { width: 100%; height: auto; max-width: 22px; max-height: 22px; border-radius: 50%; aspect-ratio: 1 / 1; }
 .CodeMirror-hints {
@@ -6052,7 +6052,7 @@ li.CodeMirror-hint-active {
 }.tc-story-river {
   padding: 6px 0 !important;
   width: 100% !important;
-  max-width: 1250px !important;
+  max-width: 1128px !important;
   margin: 0 auto !important;
   margin-top: 34px !important;
 }div.tc-tiddler-frame {
@@ -6082,7 +6082,7 @@ li.CodeMirror-hint-active {
 }.nc-bar.nc-topbar {
   top: 0;
   background: #f5f5eeee;
-  max-width: calc(1250px + 40px);
+  max-width: calc(1128px + 40px);
   padding: 10px 20px;
   margin: 0 auto;
 }.nc-bar.nc-bottombar {
@@ -6152,7 +6152,7 @@ li.CodeMirror-hint-active {
   }
 }/* Sidebar */@keyframes sidebar-appear {
   0%   {
-    left: -364px;
+    left: -350px;
   }
   100% {
     left: 0;
@@ -6160,7 +6160,7 @@ li.CodeMirror-hint-active {
 }.nc-sidebar {
   background: #ffffff;
   border-right: 1px solid #dbdbc7;;
-  width: 364px;
+  width: 350px;
   overflow-y: auto;
   overflow-x: hidden;
   z-index: 500;
@@ -6645,7 +6645,7 @@ ol.doc-github-contributors li {
 	overflow: hidden;
 	text-overflow: ellipsis;
 }.tc-tiddler-frame .tc-tiddler-body {
-    font-size: 22px;
+    font-size: 20px;
 }a {
 	text-decoration: none;
 }.tc-tiddler-frame .tc-titlebar button {
