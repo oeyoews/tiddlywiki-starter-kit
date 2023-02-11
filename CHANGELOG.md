@@ -1,3 +1,10 @@
+## [3.25.3](https://github.com/oeyoews/neotw/compare/v3.25.2...v3.25.3) (2023-02-11)
+
+
+### Bug Fixes
+
+* add filter for notion page fancybox ([49eb758](https://github.com/oeyoews/neotw/commit/49eb758f97aa4a3b04a867394c33ddcebeb51cc3))
+
 ## [3.25.2](https://github.com/oeyoews/neotw/compare/v3.25.1...v3.25.2) (2023-02-11)
 
 
