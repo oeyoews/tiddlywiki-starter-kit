@@ -3,7 +3,7 @@
 <!-- toc -->
 
 - [Intro](#intro)
-- [ShowCases](#showcases)
+- [Preview](#preview)
 - [Deploy](#deploy)
 - [Run](#run)
 
@@ -39,7 +39,7 @@
 
 > A modern style notebook based on `tiddlywiki`
 
-## ShowCases
+## Preview
 
 <center>
 <img src="./img/011.png" height=256 alt="011">
