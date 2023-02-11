@@ -37,7 +37,6 @@
         ]
       }
     ],
-    "@semantic-release/git",
     "@semantic-release/release-notes-generator",
     [
       "@semantic-release/npm",
@@ -47,7 +46,12 @@
     ],
     [
       "@semantic-release/github",
-      {}
+      {
+        "assets": [
+          "CHANGELOG.md",
+          "package.json"
+        ]
+      }
     ],
     [
       "@semantic-release/changelog",
@@ -59,7 +63,6 @@
       "@semantic-release/git",
       {
         "assets": [
-          "dist/plugins/*.json",
           "CHANGELOG.md",
           "package.json"
         ],
