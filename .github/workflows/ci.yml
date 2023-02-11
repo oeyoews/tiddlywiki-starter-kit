@@ -5,9 +5,8 @@ on:
       - 'v*.*.*'
     branches:
       - main
-      - master
     paths-ignore:
-      - 'README.md'
+      # - 'README.md'
   workflow_dispatch:
 
 env:
