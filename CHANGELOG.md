@@ -1,3 +1,10 @@
+## [3.25.2](https://github.com/oeyoews/neotw/compare/v3.25.1...v3.25.2) (2023-02-11)
+
+
+### Bug Fixes
+
+* update assets ([b465db3](https://github.com/oeyoews/neotw/commit/b465db3f66bef1f5b123480a8f56d27da798b79f))
+
 ## [3.25.1](https://github.com/oeyoews/neotw/compare/v3.25.0...v3.25.1) (2023-02-11)
 
 
