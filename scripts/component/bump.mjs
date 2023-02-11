@@ -18,7 +18,7 @@ export default async function bump() {
   const questions = [
     {
       type: 'select',
-      name: 'version',
+      name: 'newVersion',
       message: 'Which part do you want to bump? ',
       choices: [
         { title: 'patch: ' + nextPatch, value: nextPatch },
@@ -46,17 +46,17 @@ export default async function bump() {
   ];
 
   const response = await prompts(questions);
-  const newVersion = response.version;
+  const newVersion = response.newVersion;
 
   await spinner('Pushing ...', async () => {
     // if (newVersion) {
-    //   const data = await fs.readFile(filename);
-    //   const content = String(data).replace(
-    //     `"version": "${version}"`,
-    //     `"version": "${newVersion}"`,
-    //   );
-    //   await fs.writeFile(filename, content);
-    //   console.log(chalk.green('`package.json` updated!'));
+    // const data = await fs.readFile(filename);
+    // const content = String(data).replace(
+    //   `"version": "${version}"`,
+    //   `"version": "${newVersion}"`,
+    // );
+    // await fs.writeFile(filename, content);
+    // console.log(chalk.green('`package.json` updated!'));
     // }
 
     if (response.commit) {
