@@ -1,3 +1,10 @@
+## [3.25.4](https://github.com/oeyoews/neotw/compare/v3.25.3...v3.25.4) (2023-02-11)
+
+
+### Performance Improvements
+
+* use define for fancybox snippets ([d2fcc04](https://github.com/oeyoews/neotw/commit/d2fcc04539830d11393bd5d3eb733e93eda9d3ae))
+
 ## [3.25.3](https://github.com/oeyoews/neotw/compare/v3.25.2...v3.25.3) (2023-02-11)
 
 
