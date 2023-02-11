@@ -1,3 +1,10 @@
+## [3.25.1](https://github.com/oeyoews/neotw/compare/v3.25.0...v3.25.1) (2023-02-11)
+
+
+### Bug Fixes
+
+* add github asset ([5a54730](https://github.com/oeyoews/neotw/commit/5a54730f283f124c8a6b03f243f466d23326db6a))
+
 # [3.25.0](https://github.com/oeyoews/neotw/compare/v3.24.0...v3.25.0) (2023-02-11)
 
 
