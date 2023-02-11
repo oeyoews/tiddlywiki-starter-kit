@@ -42,14 +42,14 @@ jobs:
         run: |
           npm run build:oeyoews
 
-      - name: Create Release
-        uses: softprops/action-gh-release@v1
-        if: startsWith(github.ref, 'refs/tags/')
-        # if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && github.event.inputs.tag_name != 'nightly')
-        # https://github.com/neovim/neovim/blob/234b8c5f3d57294dda06dbc6c1760e5983bd2c19/.github/workflows/release.yml#L264
-        with:
-          files: |
-            dist/plugins/*.json
+        # - name: Create Release
+        #   uses: softprops/action-gh-release@v1
+        #   if: startsWith(github.ref, 'refs/tags/')
+        #   # if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && github.event.inputs.tag_name != 'nightly')
+        #   # https://github.com/neovim/neovim/blob/234b8c5f3d57294dda06dbc6c1760e5983bd2c19/.github/workflows/release.yml#L264
+        #   with:
+        #     files: |
+        #       dist/plugins/*.json
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
