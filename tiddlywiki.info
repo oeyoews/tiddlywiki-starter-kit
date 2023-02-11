@@ -1,116 +1,118 @@
 {
-    "description": "neotw edition",
-    "plugins": [
-        "tiddlywiki/tiddlyweb",
-        "tiddlywiki/filesystem",
-        "tiddlywiki/highlight",
-        "tiddlywiki/browser-sniff",
-        "tiddlywiki/codemirror",
-        "tiddlywiki/codemirror-mode-xml",
-        "tiddlywiki/codemirror-mode-css",
-        "tiddlywiki/codemirror-mode-javascript",
-        "tiddlywiki/codemirror-autocomplete",
-        "tiddlywiki/codemirror-search-replace",
-        "tiddlywiki/codemirror-closebrackets",
-        "tiddlywiki/codemirror-closetag"
-    ],
-    "includeWikis": [
-        {
-            "path": "dev"
-        }
-    ],
-    "themes": [
-        "tiddlywiki/vanilla"
-    ],
-    "build": {
-        "neotw-empty": [
-            "--verbose",
-            "--output",
-            "dist",
-            "--render",
-            "$:/plugins/oeyoews/neotw/templates/download-neotw-template",
-            "neotw-empty.html",
-            "text/plain",
-            "--savetiddler",
-            "$:/favicon.ico",
-            "favicon.ico"
-        ],
-        "main": [
-            "--verbose",
-            "--load",
-            "patch",
-            "--output",
-            "dist",
-            "--render",
-            "$:/plugins/tiddlywiki/tiddlyweb/save/offline",
-            "main.html",
-            "text/plain",
-            "--savetiddler",
-            "$:/favicon.ico",
-            "favicon.ico"
-        ],
-        "plugins": [
-            "--verbose",
-            "--output",
-            "dist/plugins",
-            "--render",
-            "[all[tiddlers+shadows]plugin-type[plugin]author[oeyoews]]",
-            "[removeprefix[$:/plugins/oeyoews/]addsuffix[.json]]",
-            "text/plain",
-            "$:/core/templates/json-tiddler"
-        ],
-        "index": [
-            "--verbose",
-            "--output",
-            "dist",
-            "--render",
-            "$:/plugins/tiddlywiki/tiddlyweb/save/offline",
-            "index.html",
-            "text/plain",
-            "--savetiddler",
-            "$:/favicon.ico",
-            "favicon.ico"
-        ],
-        "listen": [
-            "--listen",
-            "port=8099",
-            "anon-username=oeyoews"
-        ],
-        "static": [
-            "--verbose",
-            "--output",
-            "dist",
-            "--rendertiddlers",
-            "[!is[system]]",
-            "$:/core/templates/static.tiddler.html",
-            "static",
-            "text/plain",
-            "--rendertiddler",
-            "$:/core/templates/static.template.css",
-            "static/static.css",
-            "text/plain",
-            "--savetiddler",
-            "$:/favicon.ico",
-            "static/favicon.ico"
-        ],
-        "tiddlywikicore": [
-            "--render",
-            "$:/core/templates/tiddlywiki5.js",
-            "[[tiddlywikicore-]addsuffix<version>addsuffix[.js]]",
-            "text/plain"
-        ],
-        "debug": [
-            "--render",
-            "$:/core/save/offline-external-js",
-            "debug.html",
-            "text/plain",
-            "--render",
-            "$:/core/templates/tiddlywiki5.js",
-            "[[tiddlywikicore-]addsuffix<version>addsuffix[.js]]",
-            "text/plain"
-        ]
-    },
-    "config": {
-        "retain-original-tiddler-path": true
+  "description": "neotw edition",
+  "plugins": [
+    "tiddlywiki/tiddlyweb",
+    "tiddlywiki/filesystem",
+    "tiddlywiki/highlight",
+    "tiddlywiki/browser-sniff",
+    "tiddlywiki/codemirror",
+    "tiddlywiki/codemirror-mode-xml",
+    "tiddlywiki/codemirror-mode-css",
+    "tiddlywiki/codemirror-mode-javascript",
+    "tiddlywiki/codemirror-autocomplete",
+    "tiddlywiki/codemirror-search-replace",
+    "tiddlywiki/codemirror-closebrackets",
+    "tiddlywiki/codemirror-closetag"
+  ],
+  "includeWikis": [
+    {
+      "path": "dev",
+      "read-only": true
     }
+  ],
+  "themes": [
+    "tiddlywiki/vanilla"
+  ],
+  "build": {
+    "neotw-empty": [
+      "--verbose",
+      "--output",
+      "dist",
+      "--render",
+      "$:/plugins/oeyoews/neotw/templates/download-neotw-template",
+      "neotw-empty.html",
+      "text/plain",
+      "--savetiddler",
+      "$:/favicon.ico",
+      "favicon.ico"
+    ],
+    "main": [
+      "--verbose",
+      "--load",
+      "patch",
+      "--output",
+      "dist",
+      "--render",
+      "$:/plugins/tiddlywiki/tiddlyweb/save/offline",
+      "main.html",
+      "text/plain",
+      "--savetiddler",
+      "$:/favicon.ico",
+      "favicon.ico"
+    ],
+    "plugins": [
+      "--verbose",
+      "--output",
+      "dist/plugins",
+      "--render",
+      "[all[tiddlers+shadows]plugin-type[plugin]author[oeyoews]]",
+      "[removeprefix[$:/plugins/oeyoews/]addsuffix[.json]]",
+      "text/plain",
+      "$:/core/templates/json-tiddler"
+    ],
+    "index": [
+      "--verbose",
+      "--output",
+      "dist",
+      "--render",
+      "$:/plugins/tiddlywiki/tiddlyweb/save/offline",
+      "index.html",
+      "text/plain",
+      "--savetiddler",
+      "$:/favicon.ico",
+      "favicon.ico"
+    ],
+    "listen": [
+      "--listen",
+      "port=8099",
+      "anon-username=oeyoews"
+    ],
+    "static": [
+      "--verbose",
+      "--output",
+      "dist",
+      "--rendertiddlers",
+      "[!is[system]]",
+      "$:/core/templates/static.tiddler.html",
+      "static",
+      "text/plain",
+      "--rendertiddler",
+      "$:/core/templates/static.template.css",
+      "static/static.css",
+      "text/plain",
+      "--savetiddler",
+      "$:/favicon.ico",
+      "static/favicon.ico"
+    ],
+    "tiddlywikicore": [
+      "--render",
+      "$:/core/templates/tiddlywiki5.js",
+      "[[tiddlywikicore-]addsuffix<version>addsuffix[.js]]",
+      "text/plain"
+    ],
+    "debug": [
+      "--render",
+      "$:/core/save/offline-external-js",
+      "debug.html",
+      "text/plain",
+      "--render",
+      "$:/core/templates/tiddlywiki5.js",
+      "[[tiddlywikicore-]addsuffix<version>addsuffix[.js]]",
+      "text/plain"
+    ]
+  },
+  "config": {
+    "retain-original-tiddler-path": true,
+    "default-tiddler-location": "tiddlers"
+  }
 }

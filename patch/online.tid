@@ -1,0 +1,6 @@
+title: $:/state/readonly
+tags: $:/tags/Stylesheet
+
+.tc-tiddler-controls {
+	display: none;
+}

@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/neotw/style/hide-tiddler-controls
+tags: $:/tags/Stylesheet
+
+[data-tags*="docs"] .tc-tiddler-controls {
+	display: none;
+}
