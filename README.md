@@ -103,7 +103,6 @@ Neotw
 <details>
 <summary>Preview</summary>
 
-- http://oeyoewl.top
 - https://oeyoews.github.io/neotw
 - https://neotw.tiddlyhost.com
 - https://neotw.vercel.app
