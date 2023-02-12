@@ -11,6 +11,8 @@ tiddlers/trashbin/
 /public/
 Draft*
 tiddlers/subwiki/
+tiddlers/theme.tid
+'$:/theme.tid'
 output/
 dist/
 todo.norg
