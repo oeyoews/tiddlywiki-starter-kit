@@ -1,4 +1,4 @@
-title: $:/plugins/oeyoews/neotw/style/hide-tiddler-controls
+title: $:/plugins/oeyoews/neotw/style/readonly
 tags: $:/tags/Stylesheet
 
 \define hide-tiddler-controls()  [data-tiddler-title="$(currentTiddler)$"] .tc-tiddler-controls  {display: none;}
