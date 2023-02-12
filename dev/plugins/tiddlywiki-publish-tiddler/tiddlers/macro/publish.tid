@@ -10,6 +10,7 @@ tags: $:/tags/Macro
 \end
 
 \define opublish()
+<span class="o-publish">
 <$select field="publish" tiddler=<<currentTiddler>> tooltip='status' default="status">
   <option disabled>status</option>
   <option value="public">public</option>
@@ -20,4 +21,5 @@ tags: $:/tags/Macro
 </$select>
 <!-- add checkbox -->
 <$checkbox tiddler=<<currentTiddler>> field="publish" checked="no" unchecked="public"></$checkbox>
+</span>
 \end
