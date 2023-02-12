@@ -1,7 +1,7 @@
 created: 20230109141720277
 creator: oeyoews
 list-before: $:/core/ui/ViewTemplate/title
-modified: 20230211172836628
+modified: 20230212184222121
 modifier: oeyoews
 tags: $:/tags/ViewTemplate
 title: $:/plugins/Gk0Wk/notionpage-covericon/body
@@ -17,9 +17,9 @@ type: text/vnd.tiddlywiki
     </$list>
     <!-- normal img -->
     <$list filter="[<cover>!prefix[https:]]">
-		<$button tooltip="plugins" aria-label="" class=<<tv-config-toolbar-class>>>
+		<$button aria-label="" class=<<tv-config-toolbar-class>>>
 		  <$image source=<<cover>> width="100%" height="auto"/>
-  <$action-navigate $to="banner.png"/>
+  <$action-navigate $to=<<cover>>/>
 </$button>
     </$list>
 		</div>
