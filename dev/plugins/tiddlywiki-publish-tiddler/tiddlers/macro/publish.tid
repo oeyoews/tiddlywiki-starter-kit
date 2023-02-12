@@ -11,7 +11,7 @@ tags: $:/tags/Macro
 
 \define opublish()
 <span class="o-publish">
-<$select field="publish" tiddler=<<currentTiddler>> tooltip='status' default="status">
+<$select class="o-select" field="publish" tiddler=<<currentTiddler>> tooltip='status' default="status">
   <option disabled>status</option>
   <option value="public">public</option>
   <option value="private">private</option>

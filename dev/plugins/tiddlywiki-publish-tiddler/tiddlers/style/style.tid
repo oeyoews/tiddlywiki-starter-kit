@@ -12,3 +12,8 @@ tags: $:/tags/Stylesheet
 <$list filter="[field:publish[readonly]]">
 <<hide-tiddler-controls>>
 </$list>
+
+.o-select {
+  border: none;
+  border-radius: 3px;
+}
