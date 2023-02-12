@@ -12,7 +12,7 @@ tiddlers/trashbin/
 Draft*
 tiddlers/subwiki/
 tiddlers/theme.tid
-'$:/theme.tid'
+\$__theme.tid
 output/
 dist/
 todo.norg
