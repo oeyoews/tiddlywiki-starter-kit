@@ -20,6 +20,6 @@ tags: $:/tags/Macro
   <option value="article">article</option>
 </$select>
 <!-- add checkbox -->
-<$checkbox tiddler=<<currentTiddler>> field="publish" checked="no" unchecked="public"></$checkbox>
+<!-- <$checkbox tiddler=<<currentTiddler>> field="publish" checked="no" unchecked="public"></$checkbox> -->
 </span>
 \end
