@@ -1,0 +1,9 @@
+title: $:/plugins/oeyoews/neotw/setup/actions
+tags: $:/tags/StartupAction
+
+<!-- theme -->
+<$action-setfield $tiddler="$:/theme" text="$:/themes/nico/notebook"/>
+<!-- sidebar -->
+<$action-setfield $tiddler="$:/state/notebook-sidebar" text="yes"/>
+<!-- set username -->
+<$action-setfield $tiddler="$:/status/UserName" text="oeyoews"/>
