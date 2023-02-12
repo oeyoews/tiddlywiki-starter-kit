@@ -1,8 +1,9 @@
 created: 20230202124524313
 creator: oeyoews
 empty: yes
-modified: 20230212183150699
+modified: 20230212183756614
 modifier: oeyoews
+page-cover: 
 tags: $:/tags/Stylesheet
 title: neotw-stylesheet
 type: text/vnd.tiddlywiki
@@ -10,6 +11,9 @@ type: text/vnd.tiddlywiki
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
 .tc-story-river {
   padding: 12px !important;
+}
+.tc-tiddler-frame { 
+	border-radius: 3px !important;
 }
 </$list>
 
