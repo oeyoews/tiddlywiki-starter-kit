@@ -4,7 +4,6 @@ tags: $:/tags/Macro
 <!-- use reveal -->
 <!-- todo refactor code -->
 \define opublish()
-<span class="opublish">
 <$checkbox tiddler=<<currentTiddler>> field="publish" checked=no unchecked=public></$checkbox>
 <$list filter={{{ [<currentTiddler>get[publish]match[no]] }}}>
 {{$:/plugins/oeyoews/tiddlywiki-publish-tiddler/icon}}
@@ -16,7 +15,6 @@ tags: $:/tags/Macro
 {{$:/plugins/oeyoews/tiddlywiki-publish-tiddler/icon/private}}
 </$list>
 <$select field="publish" tiddler=<<currentTiddler>> tooltip='status' default="status">
-</$set>
   <option disabled>status</option>
   <option value="public">public tiddler</option>
   <option value="private">private tiddler</option>
@@ -24,7 +22,6 @@ tags: $:/tags/Macro
   <option value="readonly">hide buttons</option>
   <option value="article">add article field</option>
 </$select>
-</span>
 \end
 
 \define pushishNotFilter()

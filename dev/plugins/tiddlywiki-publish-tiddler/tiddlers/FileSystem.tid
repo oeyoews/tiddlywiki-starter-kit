@@ -1,4 +1,6 @@
 title: $:/config/FileSystemPaths
+overwrite: yes
+author: oeyoews
 
 [is[system]removeprefix[$:/]]
 [publish[private]addprefix[subwiki/private/]]
