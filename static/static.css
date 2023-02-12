@@ -5650,6 +5650,10 @@ a[data-fancybox] img {
   }
 }
 
+.opublish {
+  display: none;
+}
+
 [data-tiddler-title="GettingStarted"] .tc-tiddler-controls  {display: none;}
 
 .nauthor img {
