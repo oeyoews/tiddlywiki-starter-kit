@@ -10,7 +10,7 @@ title: $:/plugins/oeyoews/neotw-hitokoto/readme
 
 !! preview on neotw
 <$button>
-  <a href="./index-hitokoto.html">preview</a>
+  <a href="./index-hitokoto.html" target="_blank">preview</a>
 </$button>
 </$list>
 
