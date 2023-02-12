@@ -5655,7 +5655,10 @@ a[data-fancybox] img {
 }
 
 [data-tiddler-title="GettingStarted"] .tc-tiddler-controls  {display: none;}
-
+.o-select {
+  border: none;
+  border-radius: 3px;
+}
 .nauthor img {
     width: 100%;
     height: auto;
