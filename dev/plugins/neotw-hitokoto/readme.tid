@@ -6,6 +6,12 @@ title: $:/plugins/oeyoews/neotw-hitokoto/readme
 <$image source={{{ [[][https://img.shields.io/badge/Version-]] [<currentTiddler>get[version]] [[-red?style=flat&logo=dev.to&logoColor=red]] +[join[]]}}} />
 <$image source={{{ [[][https://img.shields.io/badge/Author-]] [<currentTiddler>get[author]] [[-lightblue?style=flat]] +[join[]]}}} />
 
+!! preview on neotw
+
+<$list filter="[{$:/info/url/protocol}match[https:]]">
+<a href="./index-hitokoto.html">preview</a>
+</$list>
+
 <!-- https://hitokoto.tyr.im/ -->
 <!-- https://api.vvhan.com/ -->
 !! TODO
