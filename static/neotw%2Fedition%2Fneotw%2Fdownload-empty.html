@@ -111,9 +111,11 @@ oeyoews  
 <select title="status" value="status">
 &lt;/$set&gt;
   <option disabled="true">status</option>
-  <option value="public">public</option>
-  <option value="private">private</option>
-  <option value="no">hide</option>
+  <option value="public">public tiddler</option>
+  <option value="private">private tiddler</option>
+  <option value="no">not public this tiddler</option>
+  <option value="readonly">hide buttons</option>
+  <option value="article">add article field</option>
 </select>
 </span>
 
@@ -281,8 +283,6 @@ Error message and password prompt
 
 &lt;li&gt;neotw-badges&lt;/li&gt;
 
-&lt;li&gt;neotw-footer&lt;/li&gt;
-
 &lt;li&gt;neotw-gallary&lt;/li&gt;
 
 &lt;li&gt;neotw-plugins&lt;/li&gt;
@@ -294,8 +294,6 @@ Error message and password prompt
 &lt;li&gt;neotw/action/mobile-warn&lt;/li&gt;
 
 &lt;li&gt;neotw/actions/base-browser-darkmode&lt;/li&gt;
-
-&lt;li&gt;neotw/actions/toggle-sidebar-local&lt;/li&gt;
 
 &lt;li&gt;neotw/archive/restore-button&lt;/li&gt;
 
@@ -551,8 +549,6 @@ Error message and password prompt
 
 {"title":"neotw-badges","created":"20230208091356701","creator":"oeyoews","modified":"20230210075222340","modifier":"oeyoews","tags":"","type":"text/vnd.tiddlywiki","text":"\\define fb(label:label filter:[!is[system]count[]] color:green)\n\u003C$image source={{{ [[]addprefix[https://img.shields.io/badge/]] [\u003C__label__&gt;addsuffix[-]] $filter$ [[-]addsuffix\u003C__color__&gt;] [[?style=social]] +[join[]] }}} /&gt;\n\\end\n\n\u003C\u003Cfb \"🐟 Tiddlers\" [!is[system]count[]]&gt;&gt; \u003C\u003Cfb \"🏷️ Tags\" [tags[]count[]]&gt;&gt; \u003C\u003Cfb \"🧩 Plugins\" [plugin-type[plugin]count[]]&gt;&gt;\n\u003C$list filter=\"[{$:/info/url/protocol}match[http:]]\"&gt;\n\u003Ca style=\"text-decoration:none;\" target=\"_blank\" href=\"http://localhost:5230\" &gt;\n\u003Cimg src=\"https://img.shields.io/badge/✍️Memos-local-green?style=social\" /&gt;\n\u003C/a&gt;\n\u003Ca target=\"_blank\" href=\"http://localhost:2017\" &gt;\n\u003Cimg src=\"https://img.shields.io/badge/✌️V2ray-local-green?style=social\" /&gt;\n\u003C/a&gt;\n\u003Ca target=\"_blank\" href=\"https://neotw.onrender.com\" &gt;\n\u003Cimg src=\"https://img.shields.io/badge/️🛼Render-preview-green?style=social\" /&gt;\n\u003C/a&gt;\n\u003Ca target=\"_blank\" href=\"https://talk.tiddlywiki.org/latest\" &gt;\n\u003Cimg src=\"https://img.shields.io/badge/talk-tiddlywiki-green?style=social\" /&gt;\n\u003C/a&gt;\n\u003Ca target=\"_blank\" href=\"https://bramchen.github.io/tw5-docs/zh-Hans/\" &gt;\n\u003Cimg src=\"https://img.shields.io/badge/tiddlywiki-doc-green?style=social\" /&gt;\n\u003C/a&gt;\n\u003C/$list&gt;\n\u003C\u003Cfb \"⏰ Updated\" [!is[system]!has[draft.of]!sort[modified]limit[1]get[modified]format:relativedate[]]&gt;&gt;  ","revision":"0","bag":"default"}<code>,</code>
 
-{"title":"neotw-footer","created":"20230117152229797","creator":"oeyoews","modified":"20230126153027031","modifier":"oeyoews","tags":"","type":"text/vnd.tiddlywiki","text":"\u003Ccenter&gt;\n\u003C$list filter=\"[{$:/info/url/protocol}prefix[https]]\"&gt;\n\t{{$:/state/git/commit}}\n\u003C/$list&gt;\n\t{{neotw/badges}}\n\u003C/center&gt;","revision":"0","bag":"default"}<code>,</code>
-
 {"title":"neotw-gallary","created":"20230117132950403","creator":"oeyoews","modified":"20230117132959542","modifier":"oeyoews","tags":"","type":"text/vnd.tiddlywiki","text":"\u003Csvg stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" version=\"1\" viewBox=\"0 0 48 48\" enable-background=\"new 0 0 48 48\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\"&gt;\u003Cpath fill=\"#E65100\" d=\"M41,42H13c-2.2,0-4-1.8-4-4V18c0-2.2,1.8-4,4-4h28c2.2,0,4,1.8,4,4v20C45,40.2,43.2,42,41,42z\"&gt;\u003C/path&gt;\u003Cpath fill=\"#F57C00\" d=\"M35,36H7c-2.2,0-4-1.8-4-4V12c0-2.2,1.8-4,4-4h28c2.2,0,4,1.8,4,4v20C39,34.2,37.2,36,35,36z\"&gt;\u003C/path&gt;\u003Ccircle fill=\"#FFF9C4\" cx=\"30\" cy=\"16\" r=\"3\"&gt;\u003C/circle&gt;\u003Cpolygon fill=\"#942A09\" points=\"17,17.9 8,31 26,31\"&gt;\u003C/polygon&gt;\u003Cpolygon fill=\"#BF360C\" points=\"28,23.5 22,31 34,31\"&gt;\u003C/polygon&gt;\u003C/svg&gt;","revision":"0","bag":"default"}<code>,</code>
 
 {"title":"neotw-plugins","caption":"{{puzzle}} Plugins","created":"20230112174358443","creator":"oeyoews","icon":"puzzle","modified":"20230118025850422","modifier":"oeyoews","tags":"","type":"text/vnd.tiddlywiki","text":"\u003C\u003Cov&gt;&gt;","revision":"0","bag":"default"}<code>,</code>
@@ -564,8 +560,6 @@ Error message and password prompt
 {"title":"neotw/action/mobile-warn","created":"20220913003820816","creator":"oeyoews","modified":"20230115082626906","modifier":"oeyoews","tags":"","type":"text/vnd.tiddlywiki","text":"\\define delay-msg()\n\t\u003C$action-sendmessage $message=\"tm-modal\" $param=\"neotw/mobile-warning\" /&gt;\n\\end\n\n\u003C$list filter=\"[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]\"&gt;\n\u003C$action-timeout delay=4000 actions=\u003C\u003Cdelay-msg&gt;&gt;/&gt;\n\u003C/$list&gt;","revision":"0","bag":"default"}<code>,</code>
 
 {"title":"neotw/actions/base-browser-darkmode","created":"20220907175050683","creator":"oeyoews","modified":"20220910030904877","modifier":"oeyoews","tags":"","type":"text/vnd.tiddlywiki","text":"\u003C$list filter=\"[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]\"&gt; \n\u003C$list filter=\"[[$:/info/darkmode]get[text]else[no]match[yes]]\"&gt; \n  \u003C$action-setfield $tiddler=\"$:/palette\"\n          $field=\"text\"\n          $value=\"$:/palettes/CupertinoDark\"/&gt;\n\u003C/$list&gt;\n\u003C/$list&gt;","revision":"0","bag":"default"}<code>,</code>
-
-{"title":"neotw/actions/toggle-sidebar-local","created":"20220521171656845","creator":"oeyoews","modified":"20230207121912194","modifier":"oeyoews","tags":"","type":"text/vnd.tiddlywiki","text":"\\define tid() $:/state/notebook-sidebar\n\n\u003C$list filter=\"[{$:/info/url/protocol}prefix[http:]]\"&gt;\n\t\u003C$action-setfield\n\t\t\t$tiddler=\u003C\u003Ctid&gt;&gt; $value=\"yes\"/&gt;\n\t\u003C$action-setfield \n\t\t$tiddler=\"$:/themes/nico/notebook/options/stickytitles\" text=\"no\"/&gt; \n\u003C/$list&gt;\n\n\u003C$list filter=\"[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]\"&gt;\n\t\u003C$action-setfield\n\t\t\t$tiddler=\u003C\u003Ctid&gt;&gt;\n\t$value=\"no\"/&gt;\n\u003C/$list&gt;","revision":"0","bag":"default"}<code>,</code>
 
 {"title":"neotw/archive/restore-button","created":"20220902031815530","creator":"oeyoews","modified":"20220907052813082","modifier":"oeyoews","tags":"","type":"text/vnd.tiddlywiki","text":"\\define help-delete(key) \u003C$action-deletetiddler $tiddler=\"$:/state/seen/$key$\" /&gt;\n\n\\define restore-button()\n\u003C$fieldmangler tiddler=\"neotw/style/readonly\"&gt; \u003C$button actions=\u003C\u003Chelp-delete \"takeaways\"&gt;&gt; &gt;\n\u003C\u003Csymbol \"Restore Dismiss\" \"restore\"&gt;&gt; \n\u003C/$button&gt;\n\u003C/$fieldmangler&gt;\n\\end\n\n\u003Cdiv style=\"text-align: right;\"&gt;\n\u003C$button actions=\u003C\u003Chelp-seen \"takeaways\"&gt;&gt; &gt; \n\u003C\u003Csymbol \"Dismiss All\" bingo&gt;&gt;\n\u003C/$button&gt;\n\u003C/div&gt;","revision":"0","bag":"default"}<code>,</code>
 

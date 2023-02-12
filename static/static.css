@@ -2426,13 +2426,8 @@ top: 3em;
       transform: translate(-50%, 0);
     }
   }
-[data-tags*="docs"] .tc-tiddler-controls {
-	display: none;
-}
 
-.tc-tiddler-controls {
-	display: none;
-}
+[data-tiddler-title=""] .tc-tiddler-controls  {display: none;}
 
 .shield {
   font-weight: normal;
@@ -2762,7 +2757,7 @@ top: 3em;
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 70";
+  content: " 69";
 }
 
 
@@ -3078,7 +3073,7 @@ top: 3em;
 }
 
 .tc-untagged-label:after {
-  content: "140";
+  content: "137";
 }
 .user-panel-avatar { position: relative; max-width: 22px; max-height: 22px; }.user-panel-avatar-56 { position: relative; max-width: 56px; max-height: 56px; }.user-panel-avatar-56 img { width: 100%; height: auto; max-width: 56px; max-height: 56px; border-radius: 50%; aspect-ratio: 1 / 1; }.user-panel-avatar img { width: 100%; height: auto; max-width: 22px; max-height: 22px; border-radius: 50%; aspect-ratio: 1 / 1; }
 .CodeMirror-hints {
@@ -5654,6 +5649,12 @@ a[data-fancybox] img {
     animation: octocat-wave 560ms ease-in-out;
   }
 }
+
+.opublish {
+  display: none;
+}
+
+[data-tiddler-title="GettingStarted"] .tc-tiddler-controls  {display: none;}
 
 .nauthor img {
     width: 100%;
