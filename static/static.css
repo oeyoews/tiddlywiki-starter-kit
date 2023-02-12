@@ -2398,6 +2398,10 @@ top: 3em;
 }.gitter-open-chat-button:hover::before {
        content: "Neotw · ";
 }
+.gitter-open-chat-button {
+    display: none;
+}
+
 .polarbear {
     position: fixed;
     bottom: 0px;
@@ -2769,6 +2773,12 @@ top: 3em;
 
 
 
+[data-tag-title=\$\:\/tags\/StartupAction] .tc-tag-label:after {
+  content: " 1";
+}
+
+
+
 [data-tag-title=\$\:\/tags\/PluginLibrary] .tc-tag-label:after {
   content: " 4";
 }
@@ -2789,18 +2799,6 @@ top: 3em;
 
 [data-tag-title=\$\:\/tags\/RawMarkupWikified\/TopHead] .tc-tag-label:after {
   content: " 1";
-}
-
-
-
-[data-tag-title=\$\:\/tags\/StartupAction] .tc-tag-label:after {
-  content: " 1";
-}
-
-
-
-[data-tag-title=\$\:\/tags\/StartupAction\/PostRender] .tc-tag-label:after {
-  content: " 2";
 }
 
 
@@ -2979,6 +2977,12 @@ top: 3em;
 
 
 
+[data-tag-title=\$\:\/tags\/StartupAction\/PostRender] .tc-tag-label:after {
+  content: " 1";
+}
+
+
+
 [data-tag-title=Plugins] .tc-tag-label:after {
   content: " 1";
 }
@@ -3074,7 +3078,7 @@ top: 3em;
 }
 
 .tc-untagged-label:after {
-  content: "141";
+  content: "140";
 }
 .user-panel-avatar { position: relative; max-width: 22px; max-height: 22px; }.user-panel-avatar-56 { position: relative; max-width: 56px; max-height: 56px; }.user-panel-avatar-56 img { width: 100%; height: auto; max-width: 56px; max-height: 56px; border-radius: 50%; aspect-ratio: 1 / 1; }.user-panel-avatar img { width: 100%; height: auto; max-width: 22px; max-height: 22px; border-radius: 50%; aspect-ratio: 1 / 1; }
 .CodeMirror-hints {
@@ -6168,6 +6172,11 @@ li.CodeMirror-hint-active {
   100% {
     left: 0;
   }
+}@media (min-width: 960px) {
+  .nc-sidebar {
+    animation: sidebar-appear .14s;
+    padding-top: 10px;
+  }
 }.nc-sidebar {
   background: #ffffff;
   border-right: 1px solid #dbdbc7;;
@@ -6231,6 +6240,32 @@ li.CodeMirror-hint-active {
     left: 0;
     top:  0;
     bottom: 0;
+  }
+}@media (max-width: 960px) {
+  @keyframes sidebar-slide {
+    0%   {
+      left: -100vw;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  .nc-sidebar {
+    overflow: auto;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 48px;
+    z-index: 3000;
+    animation: sidebar-slide ease-in .2s;
+    animation-fill-mode: forwards;
+  }
+}@media (min-width: 960px) {
+  .tc-page-container {
+    margin-left: 350px !important;
+  }.nc-topbar-wrapper {
+    left: 350px;
   }
 }/* Animate the hamburger button */@keyframes menu-bars-1 {
   0%   {}
@@ -6829,13 +6864,6 @@ button.tc-unfold-banner {
 }input:focus, textarea:focus {
 		box-shadow: none;
     outline: 0;
-}
-
-.tc-story-river {
-		min-width: 1100px;
-}
-.nc-bottombar {
-	display: none;
 }
 
 .tc-improvement-banner {
