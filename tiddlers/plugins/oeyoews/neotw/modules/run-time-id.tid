@@ -1,8 +1,0 @@
-tags: $:/tags/RawMarkupWikified/BottomBody
-title: $:/plugins/oeyoews/neotw/modules/run-time-id
-
-`<footer style="text-align:center;flex-wrap:wrap;">`
-`<div class="tc-subtitle">`
-This Neotw site has been running `<span id="htmer_time">``</span>`
-`</div>`
-`</footer>`
