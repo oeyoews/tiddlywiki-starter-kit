@@ -2769,7 +2769,7 @@ top: 3em;
 
 
 [data-tag-title=\$\:\/tags\/StartupAction] .tc-tag-label:after {
-  content: " 1";
+  content: " 2";
 }
 
 
@@ -5648,10 +5648,6 @@ a[data-fancybox] img {
   .githubCorner .octoArm {
     animation: octocat-wave 560ms ease-in-out;
   }
-}
-
-.opublish {
-  display: none;
 }
 
 [data-tiddler-title="GettingStarted"] .tc-tiddler-controls  {display: none;}
