@@ -1,4 +1,4 @@
 title: $:/plugins/oeyoews/neotw/setup/theme
-tags: $:/tags/StartupAction/PostRender
+tags: $:/tags/StartupAction
 
 <$action-setfield $tiddler="$:/theme" text="$:/themes/nico/notebook"/>
