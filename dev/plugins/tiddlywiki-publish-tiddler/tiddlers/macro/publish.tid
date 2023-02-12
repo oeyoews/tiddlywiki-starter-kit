@@ -1,33 +1,23 @@
 title: $:/plugins/oeyoews/tiddlywiki-publish-tiddler/macro/publish
 tags: $:/tags/Macro
 
-<!-- use reveal -->
-<!-- todo refactor code -->
-\define opublish()
-<$checkbox tiddler=<<currentTiddler>> field="publish" checked=no unchecked=public></$checkbox>
-<$list filter={{{ [<currentTiddler>get[publish]match[no]] }}}>
-{{$:/plugins/oeyoews/tiddlywiki-publish-tiddler/icon}}
-</$list>
-<$list filter={{{ [<currentTiddler>get[publish]match[public]] }}}>
-{{$:/plugins/oeyoews/tiddlywiki-publish-tiddler/icon/filter}}
-</$list>
-<$list filter={{{ [<currentTiddler>get[publish]match[private]] }}}>
-{{$:/plugins/oeyoews/tiddlywiki-publish-tiddler/icon/private}}
-</$list>
-<$select field="publish" tiddler=<<currentTiddler>> tooltip='status' default="status">
-  <option disabled>status</option>
-  <option value="public">public tiddler</option>
-  <option value="private">private tiddler</option>
-  <option value="no">not public this tiddler</option>
-  <option value="readonly">hide buttons</option>
-  <option value="article">add article field</option>
-</$select>
-\end
-
 \define pushishNotFilter()
 [<currentTiddler>get[publish]match[no]]
 \end
 
 \define pushishFilter()
 [<currentTiddler>get[publish]match[yes]]
+\end
+
+\define opublish()
+<$select field="publish" tiddler=<<currentTiddler>> tooltip='status' default="status">
+  <option disabled>status</option>
+  <option value="public">public</option>
+  <option value="private">private</option>
+  <option value="no">draft</option>
+  <option value="readonly">readonly</option>
+  <option value="article">article</option>
+</$select>
+<!-- add checkbox -->
+<$checkbox tiddler=<<currentTiddler>> field="publish" checked="no" unchecked="public"></$checkbox>
 \end
