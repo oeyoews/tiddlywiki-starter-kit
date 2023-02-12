@@ -4,3 +4,4 @@ title: $:/config/FileSystemPaths
 [publish[private]addprefix[subwiki/private/]]
 [tag[todo]addprefix[subwiki/todo/]]
 [tag[Project]addprefix[subwiki/Project/]]
+[field:publish[article]]

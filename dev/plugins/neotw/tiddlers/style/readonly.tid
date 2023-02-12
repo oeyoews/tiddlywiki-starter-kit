@@ -1,8 +1,0 @@
-title: $:/plugins/oeyoews/neotw/styls/readonly
-tags: $:/tags/Stylesheet
-
-<$list filter="[{$:/info/url/protocol}!match[http:]]">
-.tc-tiddler-controls {
-	display: none;
-}
-</$list>
