@@ -2,8 +2,5 @@ title: $:/state/oeyoews/neotw/modules/run-time-id
 tags: $:/tags/RawMarkupWikified/BottomBody
 
 `<footer style="text-align:center;display:flex;flex-wrap:wrap;">`
-`<div style="color:#aaaaaa";">`
-This Neotw site has been running
-`<span id="htmer_time">``</span>`
-`</div>`
+`<span style="color:#aaa;" id="htmer_time">``</span>`
 `</footer>`

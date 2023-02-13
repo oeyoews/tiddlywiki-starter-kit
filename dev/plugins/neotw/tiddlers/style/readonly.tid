@@ -1,8 +1,10 @@
 title: $:/plugins/oeyoews/neotw/style/readonly
 tags: $:/tags/Stylesheet
 
-\define hide-tiddler-controls()  [data-tiddler-title="$(currentTiddler)$"] .tc-tiddler-controls  {display: none;}
-
+\define hide-tiddler-controls()
 <$list filter="[{$:/info/url/protocol}!match[http:]]">
-<<hide-tiddler-controls>>
+[data-tiddler-title="$(currentTiddler)$"] .tc-tiddler-controls  {display: none;}
 </$list>
+\end
+
+<<hide-tiddler-controls>>

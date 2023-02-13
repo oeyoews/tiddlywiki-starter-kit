@@ -2,7 +2,7 @@ title: $:/plugins/oeyoews/neotw/modules/run-time
 tags: $:/tags/RawMarkupWikified/BottomBody
 type: application/javascript
 
-`<script>`
+`<script async>`
     function secondToDate(second) {
         if (!second) {
             return 0;
@@ -30,12 +30,12 @@ type: application/javascript
         return time;
     }
     `</script>`
-    `<script>`
+    `<script async>`
     function setTime() {
         var create_time = Math.round(new Date(Date.UTC(2021, 12, 27, 6, 6, 6)).getTime() / 1000);
         var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
         currentTime = secondToDate((timestamp - create_time));
-        currentTimeHtml = currentTime[0] + ' years ' + currentTime[1] + ' day '
+        currentTimeHtml = "This Neotw site has been running" + currentTime[0] + ' years ' + currentTime[1] + ' day '
                 + currentTime[2] + ' hours ' + currentTime[3] + ' minutes ' + currentTime[4]
                 + ' seconds';
         document.getElementById("htmer_time").innerHTML = currentTimeHtml;

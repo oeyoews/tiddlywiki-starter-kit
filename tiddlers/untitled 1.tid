@@ -1,0 +1,13 @@
+created: 20230213044506999
+creator: oeyoews
+modified: 20230213044647180
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: untitled 1
+type: text/vnd.tiddlywiki
+
+<$list filter="[{$:/info/url/protocol}!match[http:]]">
+\define hide-tiddler-controls()  [data-tiddler-title="$(currentTiddler)$"] .tc-tiddler-controls  {display: none;}
+
+<<hide-tiddler-controls>>
+</$list>
