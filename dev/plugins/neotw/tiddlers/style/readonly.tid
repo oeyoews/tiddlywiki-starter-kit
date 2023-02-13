@@ -5,7 +5,7 @@ tags: $:/tags/Stylesheet
 [data-tiddler-title="$(currentTiddler)$"] .tc-tiddler-controls  {display: none;}
 \end
 
-<$list filter="[{$:/info/url/protocol}match[https:]]">
+<$list filter="[{$:/info/url/protocol}!match[http:]]">
 <$list filter="[!is[system]]">
 <<hide-tiddler-controls>>
 </$list>
