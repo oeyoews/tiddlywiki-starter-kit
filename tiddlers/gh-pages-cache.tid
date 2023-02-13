@@ -1,9 +1,10 @@
 created: 20220915070846117
 creator: oeyoews
-modified: 20220917051622304
+modified: 20230213051057196
 modifier: oeyoews
+publish: article
 tags: 
-title: neotw/article/1 5
+title: gh-pages-cache
 type: text/vnd.tiddlywiki
 
 * this github-pages have cache, note this

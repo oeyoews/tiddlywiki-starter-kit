@@ -1,9 +1,10 @@
 created: 20230112170119168
 creator: oeyoews
-modified: 20230112170451481
+modified: 20230213050837299
 modifier: oeyoews
+publish: article
 tags: tiddlywiki
-title: 关于TIDDLYWIKI_PLUGIN_PATH不起作用
+title: about-TIDDLYWIKI_PLUGIN_PATH-not-working
 type: text/vnd.tiddlywiki
 
 [ ] `tiddlywiki`  卸载tiddlywiki全局包(我不理解)，一切正常 <<emoji>>
