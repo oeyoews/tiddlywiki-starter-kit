@@ -10,9 +10,7 @@
     "tiddlywiki/codemirror-mode-css",
     "tiddlywiki/codemirror-search-replace",
     "tiddlywiki/codemirror-closebrackets",
-    "tiddlywiki/codemirror-mode-javascript",
-    "tiddlywiki/codemirror-closetag",
-    "tiddlywiki/codemirror-mode-xml"
+    "tiddlywiki/codemirror-mode-javascript"
   ],
   "includeWikis": [
     {
