@@ -29,8 +29,6 @@ type: application/javascript
         }
         return time;
     }
-    `</script>`
-    `<script async>`
     function setTime() {
         var create_time = Math.round(new Date(Date.UTC(2021, 12, 27, 6, 6, 6)).getTime() / 1000);
         var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
@@ -39,5 +37,6 @@ type: application/javascript
                 + currentTime[2] + ' hours ' + currentTime[3] + ' minutes ' + currentTime[4]
                 + ' seconds';
         document.getElementById("htmer_time").innerHTML = currentTimeHtml;
-    }    setInterval(setTime, 1000);
-    `</script>`
+    }
+    setInterval(setTime, 1000);
+`</script>`
