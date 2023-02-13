@@ -2764,6 +2764,8 @@ top: 3em;
 
 [data-tiddler-title="tom.png"] .tc-tiddler-controls  {display: none;}
 
+[data-tiddler-title="untitled"] .tc-tiddler-controls  {display: none;}
+
 
 .shield {
   font-weight: normal;
@@ -3122,8 +3124,14 @@ top: 3em;
 
 
 
+[data-tag-title=\$\:\/tags\/RawMarkupWikified] .tc-tag-label:after {
+  content: " 2";
+}
+
+
+
 [data-tag-title=\$\:\/tags\/RawMarkupWikified\/BottomBody] .tc-tag-label:after {
-  content: " 10";
+  content: " 8";
 }
 
 
@@ -3403,7 +3411,7 @@ top: 3em;
 }
 
 .tc-untagged-label:after {
-  content: "125";
+  content: "126";
 }
 .user-panel-avatar { position: relative; max-width: 22px; max-height: 22px; }.user-panel-avatar-56 { position: relative; max-width: 56px; max-height: 56px; }.user-panel-avatar-56 img { width: 100%; height: auto; max-width: 56px; max-height: 56px; border-radius: 50%; aspect-ratio: 1 / 1; }.user-panel-avatar img { width: 100%; height: auto; max-width: 22px; max-height: 22px; border-radius: 50%; aspect-ratio: 1 / 1; }
 .CodeMirror-hints {
