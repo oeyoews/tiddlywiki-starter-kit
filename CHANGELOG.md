@@ -1,3 +1,10 @@
+## [3.26.2](https://github.com/oeyoews/neotw/compare/v3.26.1...v3.26.2) (2023-02-13)
+
+
+### Performance Improvements
+
+* remove trashbin ([8a750f9](https://github.com/oeyoews/neotw/commit/8a750f98df305521830adf7f9eb9f5ab6e183d2a))
+
 ## [3.26.1](https://github.com/oeyoews/neotw/compare/v3.26.0...v3.26.1) (2023-02-13)
 
 
