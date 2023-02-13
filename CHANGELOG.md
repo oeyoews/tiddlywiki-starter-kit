@@ -1,3 +1,10 @@
+# [3.27.0](https://github.com/oeyoews/neotw/compare/v3.26.2...v3.27.0) (2023-02-13)
+
+
+### Features
+
+* support close on wheel ([ce5f57e](https://github.com/oeyoews/neotw/commit/ce5f57e4ae3a23fd98b443ea2e2ad5e45d952131))
+
 ## [3.26.2](https://github.com/oeyoews/neotw/compare/v3.26.1...v3.26.2) (2023-02-13)
 
 
