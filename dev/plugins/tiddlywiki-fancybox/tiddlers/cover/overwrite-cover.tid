@@ -1,4 +1,9 @@
 title: $:/plugins/oeyoews/tiddlywiki-fancybox/action/overwrite-cover
 tags: $:/tags/StartupAction
 
-<$action-setfield $tiddler="$:/plugins/Gk0Wk/notionpage-covericon/body" $field="overwrite" $value="yes"/>
+\define set-shadows(tid)
+<$action-deletetiddler $tiddler="""$tid$"""/>
+<$action-setfield $tiddler="""$tid$""" $field="overwrite" $value="yes"/>
+\end
+
+<<set-shadows "$:/plugins/Gk0Wk/notionpage-covericon/body">>

@@ -2,6 +2,14 @@ title: $:/plugins/Gk0Wk/notionpage-covericon/body
 list-before: $:/core/ui/ViewTemplate/title
 tags: $:/tags/ViewTemplate
 
+\define addcover()
+<$list filter="[{$:/info/url/protocol}match[http:]]">
+    <div class="gk0wk-notionbg-addbuttons">
+      <$button setTitle=<<tiddler>> setField="page-cover" setTo={{$:/plugins/Gk0Wk/notionpage-covericon/default-pagecover-url}} tooltip="Add Cover">{{$:/core/images/picture}} Add Cover</$button>
+    </div>
+</$list>
+\end
+
 \define notionpage-covericon-with-fancybox()
     <div class="gk0wk-notionpagebg-image">
     <!-- data-fancybox -->
@@ -24,7 +32,7 @@ tags: $:/tags/ViewTemplate
 </$list>
 \end
 
-<$list filter="[all[current]!is[system]]">
+<$list filter="[all[current]!is[system]!is[binary]]">
 <$set name="tiddler" value=<<currentTiddler>>>
 <$list filter="[<currentTiddler>addprefix[$:/temp/Gk0Wk/notionpage-covericon/Selector/]]" variable="stateTiddler1">
 <$list filter="[<currentTiddler>addprefix[$:/temp/Gk0Wk/notionpage-covericon/ChangeCover/]]" variable="stateTiddler2">
@@ -34,9 +42,8 @@ tags: $:/tags/ViewTemplate
 <$list filter="[<cover>match[]]">
   <!-- !icon && !cover -->
   <div class="gk0wk-notionpagebg gk0wk-notionpagebg-n">
-    <div class="gk0wk-notionbg-addbuttons">
-      <$button setTitle=<<tiddler>> setField="page-cover" setTo={{$:/plugins/Gk0Wk/notionpage-covericon/default-pagecover-url}} tooltip="Add Cover">{{$:/core/images/picture}} Add Cover</$button>
-    </div>
+  <!-- addcover -->
+  <<addcover>>
   </div>
 </$list>
 <$list filter="[<cover>!match[]]">
@@ -57,9 +64,8 @@ tags: $:/tags/ViewTemplate
 <$list filter="[<cover>match[]]">
   <!-- icon && !cover -->
   <div class="gk0wk-notionpagebg gk0wk-notionpagebg-i">
-    <div class="gk0wk-notionbg-addbuttons">
-      <$button setTitle=<<tiddler>> setField="page-cover" setTo={{$:/plugins/Gk0Wk/notionpage-covericon/default-pagecover-url}} tooltip="Add Cover">{{$:/core/images/picture}} Add Cover</$button>
-    </div>
+    <!-- add cover -->
+    <<addcover>>
   </div>
 </$list>
 <$list filter="[<cover>!match[]]">
