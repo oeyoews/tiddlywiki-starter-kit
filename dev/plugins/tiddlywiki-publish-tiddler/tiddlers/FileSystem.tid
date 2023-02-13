@@ -7,4 +7,4 @@ author: oeyoews
 [tag[todo]addprefix[subwiki/todo/]]
 [tag[Project]addprefix[subwiki/Project/]]
 [field:publish[article]]
-[is[binary]addprefix[binary]]
+[is[binary]addprefix[binary/]]
