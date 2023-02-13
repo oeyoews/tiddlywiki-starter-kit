@@ -1,3 +1,10 @@
+## [3.27.2](https://github.com/oeyoews/neotw/compare/v3.27.1...v3.27.2) (2023-02-13)
+
+
+### Performance Improvements
+
+* hide add cover online ([3b962af](https://github.com/oeyoews/neotw/commit/3b962af709168f3bb27e4c76bc6a7e22808edb1b))
+
 ## [3.27.1](https://github.com/oeyoews/neotw/compare/v3.27.0...v3.27.1) (2023-02-13)
 
 
