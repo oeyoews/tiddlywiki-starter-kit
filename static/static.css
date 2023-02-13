@@ -2461,7 +2461,7 @@ top: 3em;
 }
 
 [data-tag-title=\$\:\/tags\/Image] .tc-tag-label:after {
-  content: " 160";
+  content: " 156";
 }
 
 
@@ -2587,13 +2587,13 @@ top: 3em;
 
 
 [data-tag-title=\$\:\/tags\/EditToolbar] .tc-tag-label:after {
-  content: " 4";
+  content: " 3";
 }
 
 
 
 [data-tag-title=\$\:\/tags\/ViewToolbar] .tc-tag-label:after {
-  content: " 22";
+  content: " 21";
 }
 
 
@@ -2665,7 +2665,7 @@ top: 3em;
 
 
 [data-tag-title=\$\:\/tags\/SideBar] .tc-tag-label:after {
-  content: " 7";
+  content: " 6";
 }
 
 
@@ -2695,7 +2695,7 @@ top: 3em;
 
 
 [data-tag-title=\$\:\/tags\/ViewTemplate] .tc-tag-label:after {
-  content: " 16";
+  content: " 15";
 }
 
 
@@ -2755,7 +2755,7 @@ top: 3em;
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 69";
+  content: " 66";
 }
 
 
@@ -3840,53 +3840,7 @@ label.kk-fav-label {
 
 details.kk-fav-details>summary{
 padding-left:0;
-}/* trashbin main ui */
-.kk-trashbin-ui{
-	min-width:320px; /* controls the minimum width of whole ui */
-}
-
-.kk-trahbin-ui svg{
-    fill:#aaaaaa;
-}
-
-.kk-trahbin-ui .kk-trahbin-ui-controls svg{
- width:1.2em;
- height:1.2em;	
-}
-
-
-/* trashbin items list ui */
-.kk-trashbin-row{
-	display: flex;	
-	width: 95%;
-	flex-wrap: wrap;
-}
-
-
-.kk-trashbin-row .kk-trashbin-delete,
-.kk-trashbin-row .kk-trashbin-restore {
-	flex-grow:0; width:20px;
-	margin-left:5px;
-}
-
-.kk-trashbin-row .kk-trashbin-link{
-	flex-grow:1; 
-	width: calc(100% - 50px); 
-	padding-right: 10px;
-}
-
-.kk-trashbin-row:hover { background-color: #f6f6f6; }
-
-/* UI button fade-in*/
-.kk-trahbin-ui   button:hover svg         { fill: #000000; }
-.kk-trahbin-ui  .kk-trashbin-ui-btn       { opacity:0.5; }
-.kk-trahbin-ui  .kk-trashbin-ui-btn:hover { opacity:1.0; }[data-tags~="$:/tags/trashbin"] .tc-tiddler-body,
-[data-tags~="$:/tags/trashbin"] .tc-tags-wrapper
-{
- display:none;
-}
-/* set style for trashed tiddlers */
-[data-tags ~="$:/tags/trashbin"] { border: 1px solid crimson; }/*!
+}/*!
  * Pikaday
  * Copyright © 2014 David Bushell | BSD & MIT license | https://dbushell.com/
  */
