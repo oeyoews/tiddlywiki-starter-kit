@@ -1,3 +1,10 @@
+## [3.26.1](https://github.com/oeyoews/neotw/compare/v3.26.0...v3.26.1) (2023-02-13)
+
+
+### Bug Fixes
+
+* add filter for readonly ([9b546cc](https://github.com/oeyoews/neotw/commit/9b546cc52d1aee978e63d1b7672f11652621c025))
+
 # [3.26.0](https://github.com/oeyoews/neotw/compare/v3.25.4...v3.26.0) (2023-02-11)
 
 
