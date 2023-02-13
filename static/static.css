@@ -2427,8 +2427,7 @@ top: 3em;
     }
   }
 
-[data-tiddler-title=""] .tc-tiddler-controls  {display: none;}
-
+[data-tiddler-title="$:/plugins/oeyoews/neotw/style/readonly"] .tc-tiddler-controls  {display: none;}
 .shield {
   font-weight: normal;
   display: inline-block;
@@ -2757,7 +2756,7 @@ top: 3em;
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 69";
+  content: " 70";
 }
 
 
@@ -6958,3 +6957,6 @@ button.tc-unfold-banner {
     border: 1px solid #ff3860;
     color: #cd0930;
 }
+\define hide-tiddler-controls()  [data-tiddler-title="$(currentTiddler)$"] .tc-tiddler-controls  {display: none;}
+
+
