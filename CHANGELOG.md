@@ -1,3 +1,10 @@
+## [3.27.3](https://github.com/oeyoews/neotw/compare/v3.27.2...v3.27.3) (2023-02-13)
+
+
+### Bug Fixes
+
+* use wikified instead of bottombody ([10b11e3](https://github.com/oeyoews/neotw/commit/10b11e3bd83ae75d74b35a3a9ff52a59afab325b))
+
 ## [3.27.2](https://github.com/oeyoews/neotw/compare/v3.27.1...v3.27.2) (2023-02-13)
 
 
