@@ -2983,7 +2983,7 @@ top: 3em;
 
 
 [data-tag-title=\$\:\/tags\/ControlPanel\/Settings\/CodeMirror] .tc-tag-label:after {
-  content: " 13";
+  content: " 12";
 }
 
 
@@ -5521,6 +5521,44 @@ a[data-fancybox] img {
 .has-image[data-image-fit=contain] .fancybox__image {
     border-radius: 10px;
 }
+
+<!-- img[data-fancybox] { -->
+<!--   cursor: zoom-in; -->
+<!-- } -->
+<!---->
+<!-- .fancybox__container { -->
+<!--   --fancybox-bg: rgba(193, 201, 210, 0.7); -->
+<!-- } -->
+<!---->
+<!-- .fancybox-zoomOut { -->
+<!--   animation: 0.2s ease-in-out fancybox-zoomOut both; -->
+<!-- } -->
+<!---->
+<!-- .fancybox-zoomIn { -->
+<!--   animation: 0.25s ease-in-out fancybox-zoomIn both; -->
+<!-- } -->
+<!---->
+<!-- @keyframes fancybox-zoomIn { -->
+<!--   from { -->
+<!--     opacity: 0; -->
+<!--     transform: scale3d(0.8, 0.8, 0.8); -->
+<!--   } -->
+<!---->
+<!--   100% { -->
+<!--     opacity: 1; -->
+<!--   } -->
+<!-- } -->
+<!---->
+<!-- @keyframes fancybox-zoomOut { -->
+<!--   from { -->
+<!--     opacity: 1; -->
+<!--   } -->
+<!---->
+<!--   to { -->
+<!--     opacity: 0; -->
+<!--     transform: scale3d(0.8, 0.8, 0.8); -->
+<!--   } -->
+<!-- } -->
 .gsc-left-header {
     display: none !important;
 }next .text-sm {
