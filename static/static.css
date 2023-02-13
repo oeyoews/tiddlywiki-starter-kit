@@ -2427,7 +2427,6 @@ top: 3em;
     }
   }
 
-[data-tiddler-title="$:/plugins/oeyoews/neotw/style/readonly"] .tc-tiddler-controls  {display: none;}
 .shield {
   font-weight: normal;
   display: inline-block;
