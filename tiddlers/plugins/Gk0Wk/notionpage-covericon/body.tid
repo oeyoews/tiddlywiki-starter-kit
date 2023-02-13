@@ -1,7 +1,7 @@
 created: 20230109141720277
 creator: oeyoews
 list-before: $:/core/ui/ViewTemplate/title
-modified: 20230212184222121
+modified: 20230213064820298
 modifier: oeyoews
 tags: $:/tags/ViewTemplate
 title: $:/plugins/Gk0Wk/notionpage-covericon/body
@@ -23,6 +23,10 @@ type: text/vnd.tiddlywiki
 </$button>
     </$list>
 		</div>
+    <!-- show ChangeCover button on http: -->
+<$list filter="[{$:/info/url/protocol}match[http:]]">
+    <$button popup=<<stateTiddler2>> class="gk0wk-notionpageb-changecover" tooltip="Change Cover">Change Cover</$button>
+</$list>
 \end
 
 <$list filter="[all[current]!is[system]]">
@@ -44,7 +48,6 @@ type: text/vnd.tiddlywiki
   <!-- !icon && cover -->
   <div class="gk0wk-notionpagebg gk0wk-notionpagebg-c">
     <<notionpage-covericon-with-fancybox>>
-    <$button popup=<<stateTiddler2>> class="gk0wk-notionpageb-changecover" tooltip="Change Cover">Change Cover</$button>
     <$reveal type="popup" state=<<stateTiddler2>> position="belowleft" tag="div" class="tc-popup-keep">
       <div class="gk0wk-notionpageb-changecover-box">
         <div>
@@ -68,7 +71,6 @@ type: text/vnd.tiddlywiki
   <!-- icon && cover -->
   <div class="gk0wk-notionpagebg gk0wk-notionpagebg-c">
   <<notionpage-covericon-with-fancybox>>
-    <$button popup=<<stateTiddler2>> class="gk0wk-notionpageb-changecover" tooltip="Change Cover">Change Cover</$button>
     <$reveal type="popup" state=<<stateTiddler2>> position="belowleft" tag="div" class="tc-popup-keep">
       <div class="gk0wk-notionpageb-changecover-box">
         <div>
