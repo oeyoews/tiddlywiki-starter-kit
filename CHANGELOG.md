@@ -1,3 +1,10 @@
+## [3.27.1](https://github.com/oeyoews/neotw/compare/v3.27.0...v3.27.1) (2023-02-13)
+
+
+### Bug Fixes
+
+* hide changcover button online ([f53d516](https://github.com/oeyoews/neotw/commit/f53d516c623c31d680274640709487148fba1388))
+
 # [3.27.0](https://github.com/oeyoews/neotw/compare/v3.26.2...v3.27.0) (2023-02-13)
 
 
