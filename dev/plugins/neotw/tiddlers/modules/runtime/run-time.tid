@@ -38,5 +38,6 @@ type: application/javascript
                 + ' seconds';
         document.getElementById("htmer_time").innerHTML = currentTimeHtml;
     }
+    setTime();
     setInterval(setTime, 1000);
 `</script>`
