@@ -1,0 +1,4 @@
+title: $:/plugins/oeyoews/tiddlywiki-fancybox/action/overwrite-cover
+tags: $:/tags/StartupAction
+
+<$action-setfield $tiddler="$:/plugins/Gk0Wk/notionpage-covericon/body" $field="overwrite" $value="yes"/>
