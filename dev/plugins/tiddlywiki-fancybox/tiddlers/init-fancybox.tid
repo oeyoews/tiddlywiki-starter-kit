@@ -42,7 +42,7 @@ Fancybox.defaults.keyboard = {
   ArrowRight: "next",
   ArrowLeft: "prev",
 };
-Fancybox.defaults.Image = { zoom: false };
+Fancybox.defaults.Image = { zoom: false, wheel: "close" };
 Fancybox.defaults.Hash = false;`
 `</script>`
 
