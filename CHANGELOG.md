@@ -1,3 +1,10 @@
+# [3.28.0](https://github.com/oeyoews/neotw/compare/v3.27.3...v3.28.0) (2023-02-14)
+
+
+### Features
+
+* add print css ([e447515](https://github.com/oeyoews/neotw/commit/e447515a3e2b1893a6d5e64d5091f5deca039431))
+
 ## [3.27.3](https://github.com/oeyoews/neotw/compare/v3.27.2...v3.27.3) (2023-02-13)
 
 
