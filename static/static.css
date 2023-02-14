@@ -2436,6 +2436,8 @@ top: 3em;
 
 [data-tiddler-title="bing-go"] .tc-tiddler-controls  {display: none;}
 
+[data-tiddler-title="bing-image-everyday"] .tc-tiddler-controls  {display: none;}
+
 [data-tiddler-title="build external image"] .tc-tiddler-controls  {display: none;}
 
 [data-tiddler-title="calendar"] .tc-tiddler-controls  {display: none;}
@@ -2457,8 +2459,6 @@ top: 3em;
 [data-tiddler-title="gnome-extensions"] .tc-tiddler-controls  {display: none;}
 
 [data-tiddler-title="heart"] .tc-tiddler-controls  {display: none;}
-
-[data-tiddler-title="img-cat"] .tc-tiddler-controls  {display: none;}
 
 [data-tiddler-title="Index"] .tc-tiddler-controls  {display: none;}
 
@@ -2541,8 +2541,6 @@ top: 3em;
 [data-tiddler-title="neotw/configuration"] .tc-tiddler-controls  {display: none;}
 
 [data-tiddler-title="neotw/css/below-toolbar"] .tc-tiddler-controls  {display: none;}
-
-[data-tiddler-title="neotw/docs"] .tc-tiddler-controls  {display: none;}
 
 [data-tiddler-title="neotw/docs/details-marker-bug"] .tc-tiddler-controls  {display: none;}
 
@@ -3353,7 +3351,7 @@ top: 3em;
 
 
 [data-tag-title=\$\:\/tags\/RawMarkupWikified\/TopBody] .tc-tag-label:after {
-  content: " 1";
+  content: " 2";
 }
 
 
@@ -3411,7 +3409,7 @@ top: 3em;
 }
 
 .tc-untagged-label:after {
-  content: "126";
+  content: "124";
 }
 .user-panel-avatar { position: relative; max-width: 22px; max-height: 22px; }.user-panel-avatar-56 { position: relative; max-width: 56px; max-height: 56px; }.user-panel-avatar-56 img { width: 100%; height: auto; max-width: 56px; max-height: 56px; border-radius: 50%; aspect-ratio: 1 / 1; }.user-panel-avatar img { width: 100%; height: auto; max-width: 22px; max-height: 22px; border-radius: 50%; aspect-ratio: 1 / 1; }
 .CodeMirror-hints {
@@ -5097,6 +5095,24 @@ footer .inline-icon svg{
   font-style: italic;
   font-weight: 700;
 }
+
+  .print {
+    width: 500px;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: dy 7s steps(30, end) infinite;
+    animation: dy 7s steps(30, end) infinite;
+  }
+  @-webkit-keyframes dy {
+    from {
+      width: 0;
+    }
+  }
+  @keyframes dy {
+    from {
+      width: 0;
+    }
+  }
 .aplayer {
   background: #fff;
   font-family: Arial, Helvetica, sans-serif;
