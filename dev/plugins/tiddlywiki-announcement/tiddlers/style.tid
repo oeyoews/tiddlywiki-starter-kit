@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/tiddlywiki-announcement/style
+tags: $:/tags/Stylesheet
+
+.o-warning {
+    color: red;
+  }

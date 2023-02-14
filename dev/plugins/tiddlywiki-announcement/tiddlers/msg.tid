@@ -1,0 +1,7 @@
+title: $:/plugins/oeyoews/tiddlywiki-announcement/msg
+subtitle: Announcement
+mask-closable: yes
+
+<div class="o-warning">
+{{$:/plugins/oeyoews/tiddlywiki-announcement/text}}
+</div>

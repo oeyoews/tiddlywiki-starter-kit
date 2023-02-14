@@ -27,7 +27,7 @@ footer .inline-icon svg{
   font-weight: 700;
 }
 
-  .print {
+.print {
     width: 500px;
     white-space: nowrap;
     overflow: hidden;
