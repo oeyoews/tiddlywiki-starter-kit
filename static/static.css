@@ -2398,10 +2398,6 @@ top: 3em;
 }.gitter-open-chat-button:hover::before {
        content: "Neotw · ";
 }
-.gitter-open-chat-button {
-    display: none;
-}
-
 .polarbear {
     position: fixed;
     bottom: 0px;
@@ -5757,11 +5753,6 @@ li.CodeMirror-hint-active {
   100% {
     left: 0;
   }
-}@media (min-width: 960px) {
-  .nc-sidebar {
-    animation: sidebar-appear .14s;
-    padding-top: 10px;
-  }
 }.nc-sidebar {
   background: #ffffff;
   border-right: 1px solid #dbdbc7;;
@@ -5825,32 +5816,6 @@ li.CodeMirror-hint-active {
     left: 0;
     top:  0;
     bottom: 0;
-  }
-}@media (max-width: 960px) {
-  @keyframes sidebar-slide {
-    0%   {
-      left: -100vw;
-    }
-    100% {
-      left: 0;
-    }
-  }
-  .nc-sidebar {
-    overflow: auto;
-    position: fixed;
-    width: 100%;
-    left: 0;
-    top: 0;
-    bottom: 48px;
-    z-index: 3000;
-    animation: sidebar-slide ease-in .2s;
-    animation-fill-mode: forwards;
-  }
-}@media (min-width: 960px) {
-  .tc-page-container {
-    margin-left: 350px !important;
-  }.nc-topbar-wrapper {
-    left: 350px;
   }
 }/* Animate the hamburger button */@keyframes menu-bars-1 {
   0%   {}
@@ -6449,6 +6414,13 @@ button.tc-unfold-banner {
 }input:focus, textarea:focus {
 		box-shadow: none;
     outline: 0;
+}
+
+.tc-story-river {
+		min-width: 1100px;
+}
+.nc-bottombar {
+	display: none;
 }
 
 .tc-improvement-banner {
