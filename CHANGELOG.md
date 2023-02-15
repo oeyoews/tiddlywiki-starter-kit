@@ -1,3 +1,10 @@
+# [3.29.0](https://github.com/oeyoews/neotw/compare/v3.28.0...v3.29.0) (2023-02-15)
+
+
+### Features
+
+* add tiddlywiki-announcement ([c996084](https://github.com/oeyoews/neotw/commit/c9960842928c838239f3dd708e5568b3410aafb3))
+
 # [3.28.0](https://github.com/oeyoews/neotw/compare/v3.27.3...v3.28.0) (2023-02-14)
 
 
