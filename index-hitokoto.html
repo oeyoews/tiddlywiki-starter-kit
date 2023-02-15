@@ -69,6 +69,23 @@
       body {
         display: flex;
       }
+      .print {
+        width: 4000px;
+        white-space: nowrap;
+        overflow: hidden;
+        -webkit-animation: dy 7s steps(30, end) infinite;
+        animation: dy 7s steps(30, end) infinite;
+      }
+      @-webkit-keyframes dy {
+        from {
+          width: 0;
+        }
+      }
+      @keyframes dy {
+        from {
+          width: 0;
+        }
+      }
     </style>
   </head>
 
