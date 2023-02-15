@@ -15,7 +15,7 @@ function hitokoto_footer() {
     .catch(console.error);
 }
 
-hitokoto_footer();
+// hitokoto_footer();
 
 // hitokoto_footer();
 // mobile move
