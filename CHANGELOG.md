@@ -1,3 +1,10 @@
+## [3.29.2](https://github.com/oeyoews/neotw/compare/v3.29.1...v3.29.2) (2023-02-15)
+
+
+### Performance Improvements
+
+* reduce img on footer ([7bd3caa](https://github.com/oeyoews/neotw/commit/7bd3caa759fdd5a7ff3bf05e41188b43d64605ad))
+
 ## [3.29.1](https://github.com/oeyoews/neotw/compare/v3.29.0...v3.29.1) (2023-02-15)
 
 
