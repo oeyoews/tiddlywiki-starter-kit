@@ -5230,8 +5230,6 @@ a[data-fancybox] img {
 .o-publish {
   display: none;
 }
-
-[data-tiddler-title="GettingStarted"] .tc-tiddler-controls  {display: none;}
 .o-select {
   border: none;
   border-radius: 3px;
