@@ -1,3 +1,10 @@
+## [3.29.4](https://github.com/oeyoews/neotw/compare/v3.29.3...v3.29.4) (2023-02-15)
+
+
+### Performance Improvements
+
+* disable title ([8645549](https://github.com/oeyoews/neotw/commit/864554970f510266b56819cc1fb830a018eb9512))
+
 ## [3.29.3](https://github.com/oeyoews/neotw/compare/v3.29.2...v3.29.3) (2023-02-15)
 
 
