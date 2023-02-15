@@ -1,6 +1,6 @@
 created: 20230208091356701
 creator: oeyoews
-modified: 20230210075222340
+modified: 20230215162353788
 modifier: oeyoews
 tags: 
 title: neotw-badges
@@ -27,5 +27,6 @@ type: text/vnd.tiddlywiki
 <a target="_blank" href="https://bramchen.github.io/tw5-docs/zh-Hans/" >
 <img src="https://img.shields.io/badge/tiddlywiki-doc-green?style=social" />
 </a>
-</$list>
+</$list> <$list filter="[{$:/info/url/protocol}match[https:]]">
 <<fb "⏰ Updated" [!is[system]!has[draft.of]!sort[modified]limit[1]get[modified]format:relativedate[]]>>  
+</$list>
