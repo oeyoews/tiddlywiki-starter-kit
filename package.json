@@ -39,8 +39,9 @@
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.2",
     "@semantic-release/git": "^10.0.1",
-    "semantic-release": "^20.1.0",
-    "pm2": "^5.2.2"
+    "html-minifier-terser": "^7.1.0",
+    "pm2": "^5.2.2",
+    "semantic-release": "^20.1.0"
   },
   "engines": {
     "node": ">=18"

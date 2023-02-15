@@ -14,7 +14,7 @@ tiddlers/subwiki/
 tiddlers/theme.tid
 \$__theme.tid
 output/
-dist/
+dist
 todo.norg
 tiddlers/gtd/
 node_modules/

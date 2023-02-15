@@ -46,6 +46,7 @@ await spinner('Building ...', async () => {
 
   // after building
   await $`mv ${library} ${dist}`;
+  await $`npx html-minifier-terser -c html-minifier-terser-config.json -o dist/main.html dist/main.html`;
   await $`cp -r files vercel.json src/index* img/default2.avif ${dist}`;
   msg.finish('Building Finished(for oyeoews)');
 });
