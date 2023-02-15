@@ -58,7 +58,7 @@ type: application/javascript
         scriptNode.setAttribute("data-reactions-enabled", "1");
         scriptNode.setAttribute("data-emit-metadata", "0");
         scriptNode.setAttribute("data-input-position", "top");
-        scriptNode.setAttribute("data-loading", "lazy");
+        <!-- scriptNode.setAttribute("data-loading", "lazy"); -->
         scriptNode.setAttribute("data-theme", theme);
         scriptNode.setAttribute("data-lang", lang);
         scriptNode.setAttribute("crossorigin", "anonymous");
