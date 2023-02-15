@@ -1,3 +1,10 @@
+# [3.30.0](https://github.com/oeyoews/neotw/compare/v3.29.4...v3.30.0) (2023-02-15)
+
+
+### Features
+
+* add html-minifier-terser ([487ed61](https://github.com/oeyoews/neotw/commit/487ed61aa4d1162af1044af70fc414413812d6a3))
+
 ## [3.29.4](https://github.com/oeyoews/neotw/compare/v3.29.3...v3.29.4) (2023-02-15)
 
 

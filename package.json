@@ -46,5 +46,5 @@
   "engines": {
     "node": ">=18"
   },
-  "version": "3.29.4"
+  "version": "3.30.0"
 }
