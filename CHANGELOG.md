@@ -1,3 +1,12 @@
+## [3.29.1](https://github.com/oeyoews/neotw/compare/v3.29.0...v3.29.1) (2023-02-15)
+
+
+### Performance Improvements
+
+* disable music and confetti ([0433c3c](https://github.com/oeyoews/neotw/commit/0433c3c957a5a2bc8d52aed092ed97e97f728ada))
+* disable neotw-hitokoto ([38df5c3](https://github.com/oeyoews/neotw/commit/38df5c355942ffcddf81040d4b20878cdcb2deef))
+* disable start sidebar ([935cea3](https://github.com/oeyoews/neotw/commit/935cea3971852077624efe66b60a6a06561f617e))
+
 # [3.29.0](https://github.com/oeyoews/neotw/compare/v3.28.0...v3.29.0) (2023-02-15)
 
 
