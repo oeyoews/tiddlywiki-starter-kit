@@ -1,6 +1,6 @@
 title: $:/plugins/oeyoews/neotw/script/title
 type: application/javascript
-tags: $:/tags/RawMarkupWikified/BottomBody
+<!-- tags: $:/tags/RawMarkupWikified/BottomBody -->
 
 `<script>`
   var OriginTitle = document.title;
