@@ -1,3 +1,10 @@
+## [3.29.3](https://github.com/oeyoews/neotw/compare/v3.29.2...v3.29.3) (2023-02-15)
+
+
+### Performance Improvements
+
+* minify index.html ([0326931](https://github.com/oeyoews/neotw/commit/03269313fc276f482f97cc4eb479b6c60c962ad2))
+
 ## [3.29.2](https://github.com/oeyoews/neotw/compare/v3.29.1...v3.29.2) (2023-02-15)
 
 
