@@ -2,12 +2,12 @@ created: 20230123101609614
 creator: oeyoews
 label: status
 message: Ing
-modified: 20230204055644800
+modified: 20230215164346587
 modifier: oeyoews
 ocolor: red
-otype: tag
+otype: v/tag
 repo: neotw
-style: flat
+style: plastic
 title: $:/plugins/oeyoews/tiddlywiki-shield/config
 type: text/vnd.tiddlywiki
 user: oeyoews

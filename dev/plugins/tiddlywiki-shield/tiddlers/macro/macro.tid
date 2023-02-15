@@ -11,11 +11,10 @@ tags: $:/tags/Macro
 
 <!-- config type -->
 <$select field="otype" tiddler=<<tid>> tooltip='type' default="type">
-</$set>
   <option disabled>type</option>
   <option>license</option>
   <option>discussions</option>
-  <option>tag</option>
+  <option value="v/tag">tag</option>
   <option>issues</option>
   <option>stars</option>
   <option>forks</option>
@@ -34,7 +33,6 @@ tags: $:/tags/Macro
 
 <!-- config img style -->
 <$select field="style" tiddler=<<tid>> tooltip='badge style' default="style">
-</$set>
   <option disabled>style</option>
   <option>for-the-badge</option>
   <option>flat</option>
