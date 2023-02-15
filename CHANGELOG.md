@@ -1,3 +1,10 @@
+## [3.30.1](https://github.com/oeyoews/neotw/compare/v3.30.0...v3.30.1) (2023-02-15)
+
+
+### Bug Fixes
+
+* disable gitter ([72bdf59](https://github.com/oeyoews/neotw/commit/72bdf59fcc2bc1ae7e3b69f3d658b9628c53a2ea))
+
 # [3.30.0](https://github.com/oeyoews/neotw/compare/v3.29.4...v3.30.0) (2023-02-15)
 
 
