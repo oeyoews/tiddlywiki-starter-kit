@@ -3,11 +3,11 @@ created: 20230117102714737
 creator: oeyoews
 giscus: yes
 icon: tom.png
-modified: 20230215162257203
+modified: 20230215162450809
 modifier: oeyoews
 page-cover: banner.png
 pin: yes
-publish: readonly
+publish: public
 tags: 
 title: GettingStarted
 type: text/vnd.tiddlywiki
@@ -15,7 +15,7 @@ type: text/vnd.tiddlywiki
 {{neotw-badges}}
 
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
-<<tabs "Index gallary neotw-plugins PLUGINS $:/AdvancedSearch neotw/INBOX" "Index" "$:/state/tab/neotw">>
+<<tabs "Index PLUGINS $:/AdvancedSearch neotw/INBOX" "Index" "$:/state/tab/neotw">>
 </$list>
 
 
