@@ -1,5 +1,5 @@
 title: $:/state/oeyoews/neotw/modules/gitter
-tags: $:/tags/RawMarkupWikified/BottomBody
+<!-- tags: $:/tags/RawMarkupWikified/BottomBody -->
 
 `<script>
 ((window.gitter = {}).chat = {}).options = { room: 'oeyoews/neotw' };`
