@@ -2,7 +2,7 @@ title: $:/plugins/oeyoews/neotw-hitokoto/hitokoto-id
 tags: $:/tags/RawMarkupWikified
 
 `<footer style="font-size:16px;">`
-`<div id="hitokoto" class="print">`
+`<div id="hitokoto">`
      `<span id="h-text">``</span>` `&nbsp;<a href="#" target="_blank" id="h-author">``</a>`
 `</div>`
 `</footer>`
