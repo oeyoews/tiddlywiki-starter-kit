@@ -4,6 +4,7 @@ services:
     name: neotw
     repo: https://github.com/oeyoews/neotw.git
     branch: main
+    region: singapore
     env: static
     buildCommand: yarn build:oeyoews
     staticPublishPath: ./dist
