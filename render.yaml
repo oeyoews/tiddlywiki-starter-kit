@@ -2,6 +2,8 @@ services:
   # A static site
   - type: web
     name: neotw
+    repo: https://github.com/oeyoews/neotw.git
+    branch: main
     env: static
     buildCommand: yarn build:oeyoews
     staticPublishPath: ./dist

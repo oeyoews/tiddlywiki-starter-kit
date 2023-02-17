@@ -3,11 +3,11 @@ created: 20230117102714737
 creator: oeyoews
 giscus: yes
 icon: tom.png
-modified: 20230215162450809
+modified: 20230217070418523
 modifier: oeyoews
 page-cover: banner.png
 pin: yes
-publish: public
+publish: readonly
 tags: 
 title: GettingStarted
 type: text/vnd.tiddlywiki
