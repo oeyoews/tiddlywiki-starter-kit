@@ -2772,6 +2772,12 @@ footer {
 
 [data-tiddler-title="untitled"] .tc-tiddler-controls  {display: none;}
 
+[data-tiddler-title="untitled 1"] .tc-tiddler-controls  {display: none;}
+
+[data-tiddler-title="untitled 2"] .tc-tiddler-controls  {display: none;}
+
+[data-tiddler-title="untitled 3"] .tc-tiddler-controls  {display: none;}
+
 
 .shield {
   font-weight: normal;
@@ -3041,7 +3047,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/ViewTemplate] .tc-tag-label:after {
-  content: " 15";
+  content: " 16";
 }
 
 
@@ -3417,7 +3423,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "125";
+  content: "127";
 }
 .user-panel-avatar { position: relative; max-width: 22px; max-height: 22px; }.user-panel-avatar-56 { position: relative; max-width: 56px; max-height: 56px; }.user-panel-avatar-56 img { width: 100%; height: auto; max-width: 56px; max-height: 56px; border-radius: 50%; aspect-ratio: 1 / 1; }.user-panel-avatar img { width: 100%; height: auto; max-width: 22px; max-height: 22px; border-radius: 50%; aspect-ratio: 1 / 1; }
 .CodeMirror-hints {
