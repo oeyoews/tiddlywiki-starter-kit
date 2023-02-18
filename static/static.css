@@ -2776,8 +2776,6 @@ footer {
 
 [data-tiddler-title="untitled 2"] .tc-tiddler-controls  {display: none;}
 
-[data-tiddler-title="untitled 3"] .tc-tiddler-controls  {display: none;}
-
 
 .shield {
   font-weight: normal;
@@ -3047,7 +3045,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/ViewTemplate] .tc-tag-label:after {
-  content: " 16";
+  content: " 15";
 }
 
 
