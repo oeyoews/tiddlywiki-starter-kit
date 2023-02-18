@@ -1,3 +1,10 @@
+## [3.30.2](https://github.com/oeyoews/neotw/compare/v3.30.1...v3.30.2) (2023-02-18)
+
+
+### Bug Fixes
+
+* remove filter for giscus ([98e08db](https://github.com/oeyoews/neotw/commit/98e08dba79df92e2ce3462393862ada02ecd11ee))
+
 ## [3.30.1](https://github.com/oeyoews/neotw/compare/v3.30.0...v3.30.1) (2023-02-15)
 
 
