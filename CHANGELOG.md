@@ -1,3 +1,10 @@
+# [3.32.0](https://github.com/oeyoews/neotw/compare/v3.31.0...v3.32.0) (2023-02-19)
+
+
+### Features
+
+* add friend link module ([a8efd86](https://github.com/oeyoews/neotw/commit/a8efd862c89cdac99f6d81df3b48898a1fb9bb4a))
+
 # [3.31.0](https://github.com/oeyoews/neotw/compare/v3.30.2...v3.31.0) (2023-02-19)
 
 
