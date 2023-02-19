@@ -2398,6 +2398,9 @@ body.tc-dirty span.tc-dirty-indicator svg {
     transform: scale(0.99);
     background-color: aliceblue !important;
     transition: transform .2s;
+}.friend-link {
+    color: #6698FF;
+    text-decoration: none;
 }
 .gitter-open-chat-button,
 .gitter-chat-embed {
