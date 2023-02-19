@@ -2483,6 +2483,8 @@ footer {
 
 [data-tiddler-title="dream-plan-websites"] .tc-tiddler-controls  {display: none;}
 
+[data-tiddler-title="f-notion"] .tc-tiddler-controls  {display: none;}
+
 [data-tiddler-title="gallary"] .tc-tiddler-controls  {display: none;}
 
 [data-tiddler-title="GettingStarted"] .tc-tiddler-controls  {display: none;}
@@ -3446,7 +3448,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "127";
+  content: "128";
 }
 .user-panel-avatar { position: relative; max-width: 22px; max-height: 22px; }.user-panel-avatar-56 { position: relative; max-width: 56px; max-height: 56px; }.user-panel-avatar-56 img { width: 100%; height: auto; max-width: 56px; max-height: 56px; border-radius: 50%; aspect-ratio: 1 / 1; }.user-panel-avatar img { width: 100%; height: auto; max-width: 22px; max-height: 22px; border-radius: 50%; aspect-ratio: 1 / 1; }
 .CodeMirror-hints {
