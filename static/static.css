@@ -3105,7 +3105,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 65";
+  content: " 64";
 }
 
 
@@ -3135,13 +3135,13 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/RawMarkupWikified] .tc-tag-label:after {
-  content: " 2";
+  content: " 1";
 }
 
 
 
 [data-tag-title=\$\:\/tags\/RawMarkupWikified\/BottomBody] .tc-tag-label:after {
-  content: " 3";
+  content: " 2";
 }
 
 
@@ -5083,48 +5083,6 @@ ul.bullets li::marker {
 .neotw-checkbox:before {
 	content: "✅"
 }
-footer {
-	flex: 1 1 auto;
-	display:flex !important;
-	justify-content:center;
-	align-items: center;
-	z-index:-1;
-	min-height:25px;
-	color: gray;
-	user-select: none;
-	padding: 2px;
-	font-size: 50%;
-}
-
-footer .inline-icon svg{
-  height:1em;
-}
-
-#hitokoto, #h-author {
-  background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
-  -webkit-background-clip: text;
-  color: transparent;
-  font-style: italic;
-  font-weight: 700;
-}
-
-.print {
-    width: 500px;
-    white-space: nowrap;
-    overflow: hidden;
-    -webkit-animation: dy 7s steps(30, end) infinite;
-    animation: dy 7s steps(30, end) infinite;
-  }
-  @-webkit-keyframes dy {
-    from {
-      width: 0;
-    }
-  }
-  @keyframes dy {
-    from {
-      width: 0;
-    }
-  }
 .neotw-surfing-keys {
   position: fixed;
     right: 1em;
