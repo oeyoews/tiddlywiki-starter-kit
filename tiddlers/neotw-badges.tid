@@ -1,6 +1,6 @@
 created: 20230208091356701
 creator: oeyoews
-modified: 20230215162353788
+modified: 20230219100108524
 modifier: oeyoews
 tags: 
 title: neotw-badges
@@ -12,9 +12,6 @@ type: text/vnd.tiddlywiki
 
 <<fb "🐟 Tiddlers" [!is[system]count[]]>> <<fb "🏷️ Tags" [tags[]count[]]>> <<fb "🧩 Plugins" [plugin-type[plugin]count[]]>>
 <$list filter="[{$:/info/url/protocol}match[http:]]">
-<a style="text-decoration:none;" target="_blank" href="http://localhost:5230" >
-<img src="https://img.shields.io/badge/✍️Memos-local-green?style=social" />
-</a>
 <a target="_blank" href="http://localhost:2017" >
 <img src="https://img.shields.io/badge/✌️V2ray-local-green?style=social" />
 </a>

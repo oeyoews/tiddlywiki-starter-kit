@@ -1,12 +1,15 @@
 created: 20230218104402093
 creator: oeyoews
-modified: 20230219065609299
+modified: 20230219094630934
 modifier: oeyoews
-publish: no
+publish: public
 tags: 
 title: thesis-record
 type: text/vnd.tiddlywiki
 
 @@.bullets
 * read all thesis
+* make mini program for neotw
+** remax(react)
+** uniapp(vue)
 @@
