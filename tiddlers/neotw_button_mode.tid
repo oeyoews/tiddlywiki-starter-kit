@@ -1,13 +1,13 @@
 created: 20220910042749958
 creator: oeyoews
-modified: 20230115080145178
+modified: 20230219124243558
 modifier: oeyoews
 tags: 
 title: neotw/button/mode
 type: text/vnd.tiddlywiki
 
 \define tag() $:/tags/Stylesheet
-\define tid() neotw/style/readonly
+\define tid() $:/plugins/oeyoews/neotw/style/readonly
 
 <$list filter="[{$:/info/url/protocol}prefix[https]]">
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
