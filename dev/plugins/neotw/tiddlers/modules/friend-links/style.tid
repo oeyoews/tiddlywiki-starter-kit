@@ -14,15 +14,26 @@ title: $:/plugins/oeyoews/neotw/modules/friend/style
     background-position: 0.5em 0.5em !important;
     background-size: 4.9em !important;
     overflow: hidden;
-}.friend-card .friend-title {
+}
+
+.friend-card .friend-title {
     padding: 0.36em 0.56em 0 0.56em;
     font-size: 1.2em;
-}.friend-card .friend-desc {
+}
+
+.friend-card .friend-desc {
     font-size: 80%;
     padding: 0.3em 0.9em 0.6em 0.9em;
     color: green;
-}.friend-card:hover {
+}
+
+.friend-card:hover {
     transform: scale(0.99);
     background-color: aliceblue !important;
     transition: transform .2s;
+}
+
+.friend-link {
+    color: #6698FF;
+    text-decoration: none;
 }
