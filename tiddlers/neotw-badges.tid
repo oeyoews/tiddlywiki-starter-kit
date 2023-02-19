@@ -1,6 +1,6 @@
 created: 20230208091356701
 creator: oeyoews
-modified: 20230219100108524
+modified: 20230219145056733
 modifier: oeyoews
 tags: 
 title: neotw-badges
@@ -16,10 +16,7 @@ type: text/vnd.tiddlywiki
 <img src="https://img.shields.io/badge/✌️V2ray-local-green?style=social" />
 </a>
 <a target="_blank" href="https://neotw.onrender.com" >
-<img src="https://img.shields.io/badge/️🛼Render-preview-green?style=social" />
-</a>
-<a target="_blank" href="https://talk.tiddlywiki.org/latest" >
-<img src="https://img.shields.io/badge/talk-tiddlywiki-green?style=social" />
+<img src="https://img.shields.io/badge/️Render-preview-green?style=social" />
 </a>
 <a target="_blank" href="https://bramchen.github.io/tw5-docs/zh-Hans/" >
 <img src="https://img.shields.io/badge/tiddlywiki-doc-green?style=social" />
