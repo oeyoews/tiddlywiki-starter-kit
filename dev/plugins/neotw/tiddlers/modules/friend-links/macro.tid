@@ -1,0 +1,13 @@
+tags: $:/tags/Macro
+title: $:/plugins/oeyoews/neotw/modules/friend/macro
+
+<!-- copyed from https://pimgeek.com/notes/ -->
+\whitespace trim
+\define friend-card(title desc img link)
+<a class="friend-link" href="$link$" rel="noopener noreferrer" target="_blank">
+  <div class="friend-card" style="background: url('$img$')">
+    <div class="friend-title">$title$</div>
+    <div class="friend-desc">$desc$</div>
+  </div>
+</a>
+\end

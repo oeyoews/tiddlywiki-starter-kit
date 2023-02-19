@@ -1,0 +1,6 @@
+tags: $:/tags/SideBar
+caption: Friend Link
+title: $:/plugins/oeyoews/neotw/modules/friend/ui
+list-after: $:/core/ui/SideBar/More
+
+<<friend-card 'TiddlyWiki · 太微中文教程' '社区共建的 TiddlyWiki 教程' 'https://pimfans.hintsnet.com/assets/tiddlywiki-cn.png' 'https://tw-cn.netlify.app/'>>
