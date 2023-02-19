@@ -2,6 +2,7 @@ tags: $:/tags/Stylesheet
 title: $:/plugins/oeyoews/neotw/modules/friend/style
 
 .friend-card {
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     padding: 0.6em 0.5em 0.5em 5.8em;
