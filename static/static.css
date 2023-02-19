@@ -2756,6 +2756,8 @@ footer {
 
 [data-tiddler-title="prev-arrow"] .tc-tiddler-controls  {display: none;}
 
+[data-tiddler-title="preview-all-plugins-tw"] .tc-tiddler-controls  {display: none;}
+
 [data-tiddler-title="puzzle"] .tc-tiddler-controls  {display: none;}
 
 [data-tiddler-title="recent-count"] .tc-tiddler-controls  {display: none;}
@@ -2763,6 +2765,8 @@ footer {
 [data-tiddler-title="recent-note-record"] .tc-tiddler-controls  {display: none;}
 
 [data-tiddler-title="some tw website examples"] .tc-tiddler-controls  {display: none;}
+
+[data-tiddler-title="thesis-record"] .tc-tiddler-controls  {display: none;}
 
 [data-tiddler-title="TiddlyTools/Time/action-timeout.js"] .tc-tiddler-controls  {display: none;}
 
@@ -3417,7 +3421,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "125";
+  content: "127";
 }
 .user-panel-avatar { position: relative; max-width: 22px; max-height: 22px; }.user-panel-avatar-56 { position: relative; max-width: 56px; max-height: 56px; }.user-panel-avatar-56 img { width: 100%; height: auto; max-width: 56px; max-height: 56px; border-radius: 50%; aspect-ratio: 1 / 1; }.user-panel-avatar img { width: 100%; height: auto; max-width: 22px; max-height: 22px; border-radius: 50%; aspect-ratio: 1 / 1; }
 .CodeMirror-hints {
@@ -5230,8 +5234,6 @@ a[data-fancybox] img {
 .o-publish {
   display: none;
 }
-
-[data-tiddler-title="GettingStarted"] .tc-tiddler-controls  {display: none;}
 .o-select {
   border: none;
   border-radius: 3px;
