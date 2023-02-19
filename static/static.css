@@ -2374,6 +2374,30 @@ body.tc-dirty span.tc-dirty-indicator svg {
 		transform: scale(359deg);
 	}
 }
+.friend-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0.6em 0.5em 0.5em 5.8em;
+    width: 96%;
+    height: 5.8em;
+    border-radius: 0.5em;
+    background-repeat: no-repeat !important;
+    background-color: whitesmoke !important;
+    background-position: 0.5em 0.5em !important;
+    background-size: 4.9em !important;
+    overflow: hidden;
+}.friend-card .friend-title {
+    padding: 0.36em 0.56em 0 0.56em;
+    font-size: 1.2em;
+}.friend-card .friend-desc {
+    font-size: 80%;
+    padding: 0.3em 0.9em 0.6em 0.9em;
+    color: green;
+}.friend-card:hover {
+    transform: scale(0.99);
+    background-color: aliceblue !important;
+    transition: transform .2s;
+}
 .gitter-open-chat-button,
 .gitter-chat-embed {
   z-index: 9999;
@@ -2774,7 +2798,7 @@ footer {
 
 [data-tiddler-title="tom.png"] .tc-tiddler-controls  {display: none;}
 
-[data-tiddler-title="untitled"] .tc-tiddler-controls  {display: none;}
+[data-tiddler-title="xiaofamao"] .tc-tiddler-controls  {display: none;}
 
 
 .shield {
@@ -3015,7 +3039,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/SideBar] .tc-tag-label:after {
-  content: " 6";
+  content: " 7";
 }
 
 
@@ -3099,13 +3123,13 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Macro] .tc-tag-label:after {
-  content: " 48";
+  content: " 49";
 }
 
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 64";
+  content: " 65";
 }
 
 
@@ -5750,7 +5774,7 @@ li.CodeMirror-hint-active {
   }
 }/* Sidebar */@keyframes sidebar-appear {
   0%   {
-    left: -350px;
+    left: -361px;
   }
   100% {
     left: 0;
@@ -5758,7 +5782,7 @@ li.CodeMirror-hint-active {
 }.nc-sidebar {
   background: #ffffff;
   border-right: 1px solid #dbdbc7;;
-  width: 350px;
+  width: 361px;
   overflow-y: auto;
   overflow-x: hidden;
   z-index: 500;
