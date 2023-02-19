@@ -6,6 +6,7 @@
 - [Preview](#preview)
 - [Deploy](#deploy)
 - [Run](#run)
+- [TODO](#todo)
 
 <!-- tocstop -->
 
@@ -66,6 +67,10 @@
 git clone --depth 1 https://github.com/oeyoews/neotw.git
 yarn install && yarn start # or use `npx tiddlywiki --listen` directly
 ```
+
+## TODO
+
+- [ ] add more details, description and usage for newtw
 
 <details>
   <summary>FileStruct</summary>
