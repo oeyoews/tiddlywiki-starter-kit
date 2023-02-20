@@ -1,6 +1,0 @@
-title: $:/plugins/oeyoews/tiddlywiki-random-tip/example
-
-<$button >
-random tip test
-<$action-sendmessage $message="tm-modal" $param={{{ [all[tiddlers+shadows]tag[Tiddlywiki5Tip]random[1]] }}} />
-</$button>

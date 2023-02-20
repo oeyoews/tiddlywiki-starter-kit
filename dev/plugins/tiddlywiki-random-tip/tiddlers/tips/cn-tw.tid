@@ -1,0 +1,10 @@
+title: $:/plugins/oeyoews/tiddlywiki-random-tip/docs/cn-tw
+mask-closable: yes
+subtitle: {{$:/plugins/oeyoews/tiddlywiki-random-tid/did-you-know}}
+tags: Tiddlywiki5Tip
+author: oeyoews
+footer:
+caption:
+description
+
+> 看不懂`tiddlywiki`的英文文档? 不用担心，[[cn document|https://bramchen.github.io/tw5-docs/zh-Hans]] 这里有实时更新的中文版`tiddlywiki`文档

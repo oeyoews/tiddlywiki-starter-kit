@@ -1,0 +1,10 @@
+title: $:/plugins/oeyoews/tiddlywiki-random-tip/02
+mask-closable: yes
+subtitle: {{$:/plugins/oeyoews/tiddlywiki-random-tid/did-you-know}}
+tags: Tiddlywiki5Tip
+author: oeyoews
+footer:
+caption:
+description
+
+> 设置 class 到tc-btn-invisible tc-tiddlylink 使得按钮看起来像一个内部链接。

@@ -2,7 +2,7 @@ title: $:/plugins/oeyoews/tiddlywiki-announcement/msg
 subtitle: {{$:/plugins/oeyoews/tiddlywiki-announcement/announcement}}
 mask-closable: yes
 class: test-modal
-<!-- footer: -->
+footer:
 <!-- help: https://github.com/oeyoews/neotw -->
 
 <div class="o-warning">

@@ -1,0 +1,10 @@
+title: $:/plugins/oeyoews/tiddlywiki-random-tip/docs/descripte-tw
+mask-closable: yes
+subtitle: {{$:/plugins/oeyoews/tiddlywiki-random-tid/did-you-know}}
+tags: Tiddlywiki5Tip
+author: oeyoews
+footer:
+caption:
+description
+
+> 简单来说，Tiddlywiki 就是一个简单的可以直接在浏览器编辑的html文件

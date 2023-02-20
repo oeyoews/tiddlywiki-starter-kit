@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/tiddlywiki-random-tip/example
+
+<$button >
+{{$:/plugins/oeyoews/tiddlywiki-random-tip/icon}} Random Tip
+{{$:/plugins/oeyoews/tiddlywiki-random-tip/startup}}
+</$button>

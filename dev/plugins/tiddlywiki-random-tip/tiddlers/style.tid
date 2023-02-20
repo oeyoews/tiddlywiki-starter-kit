@@ -1,0 +1,16 @@
+title: $:/plugins/oeyoews/tiddlywiki-random-tip/style
+tags: $:/tags/Stylesheet
+
+.tc-modal,
+.tc-modal-header,
+.tc-modal-body,
+.tc-modal-footer {
+   border-radius: 10px;
+   border: none;
+   background-color: #F5F5F5;
+}
+
+<!-- center tc-modal -->
+<!-- .tc-modal { -->
+<!--     top: 300px -->
+<!-- } -->
