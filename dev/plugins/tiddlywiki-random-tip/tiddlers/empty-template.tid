@@ -1,0 +1,8 @@
+title: $:/plugins/oeyoews/tiddlywiki-random-tip/empty-template
+mask-closable: yes
+subtitle: {{$:/plugins/oeyoews/tiddlywiki-random-tid/did-you-know}}
+tags: Tiddlywiki5Tip
+author: oeyoews
+class: o-random-tip
+
+>
