@@ -1,0 +1,8 @@
+title: $:/plugins/oeyoews/tiddlywiki-random-tip/docs/use-markdown
+mask-closable: yes
+subtitle: {{$:/plugins/oeyoews/tiddlywiki-random-tid/did-you-know}}
+tags: Tiddlywiki5Tip
+author: oeyoews
+class: o-random-tip
+
+> 如果你不能马上接受tiddlywiki的wikitext语法， 你还可以安装markdown插件, 从而在tiddlywiki里面使用markdown语法

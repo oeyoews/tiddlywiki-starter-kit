@@ -4,8 +4,6 @@ subtitle: {{$:/plugins/oeyoews/tiddlywiki-random-tid/did-you-know}}
 tags: Tiddlywiki5Tip
 author: oeyoews
 class: o-random-tip
-caption:
-description
 
 > 向button 添加 tc-btn-invisible tc-tiddlylink 两个 class, 可以使得按钮看起来像一个内部链接。 <$button class="tc-btn-invisible tc-tiddlylink">
   Demo Button
