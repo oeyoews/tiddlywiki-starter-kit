@@ -1,15 +1,5 @@
 title: $:/config/EmptyStoryMessage
+<!-- tags: $:/tags/AboveStory -->
 
 {{{ [[GettingStarted]] ||$:/core/ui/ViewTemplate }}}
-
-<!-- <$list filter="[[$:/state/notebook-sidebar]get[text]else[no]match[no]]"> -->
-<!-- <center> -->
-<!-- <$button tooltip="Return Home" > -->
-<!-- [img width=22 [$:/favicon.ico]] return home -->
-<!-- {{$:/core/images/home-button}} -->
-<!--   <$action-sendmessage $message="tm-close-all-tiddlers"/> -->
-<!--   <$action-navigate $to="GettingStarted"/> -->
-<!-- </$button> -->
-<!-- {{$:/core/ui/Buttons/new-tiddler}} -->
-<!-- </center> -->
-<!-- </$list> -->
+{{{ [!is[system]field:publish[article]!sort[modified]limit[9]] ||$:/core/ui/ViewTemplate}}}
