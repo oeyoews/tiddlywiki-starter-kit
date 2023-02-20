@@ -6,5 +6,7 @@ class: test-modal
 <!-- help: https://github.com/oeyoews/neotw -->
 
 <div class="o-warning">
+
 {{$:/plugins/oeyoews/tiddlywiki-announcement/text}}
+
 </div>

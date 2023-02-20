@@ -9,6 +9,8 @@ title: $:/plugins/oeyoews/tiddlywiki-announcement/readme
 </a>
 <$image source={{{ [[][https://img.shields.io/badge/Version-]] [<currentTiddler>get[version]] [[-red?style=social]] +[join[]]}}} />
 
+!! Setup
+
 {{$:/plugins/oeyoews/tiddlywiki-announcement/new-text}} {{$:/plugins/oeyoews/tiddlywiki-announcement/test}}
 
 !! Tiddlywiki Announcement
