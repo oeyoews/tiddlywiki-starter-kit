@@ -19,5 +19,14 @@ tags: $:/tags/Stylesheet
 }
 
 .o-random-tip blockquote {
-	border-left: 3px solid #dfdfdf;
+	border: none;
+	background-color: whitesmoke;
+	padding: 5px 10px;
+	border-radius: 10px;
+}
+
+.o-random-tip blockquote:hover {
+    transform: scale(0.99);
+    background-color: aliceblue !important;
+    transition: transform .2s;
 }
