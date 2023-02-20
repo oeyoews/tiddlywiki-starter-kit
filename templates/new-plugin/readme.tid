@@ -9,6 +9,7 @@ title: $:/plugins/${username}/${pluginname}/readme
 </a>
 <$image source={{{ [[][https://img.shields.io/badge/Version-]] [<currentTiddler>get[version]] [[-red?style=social]] +[join[]]}}} />
 
-* ${description}
+!! ${description}
+
 * [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/${pluginname}]]
 * [[Demo|https://oeyoews.github.io/neotw/main]]

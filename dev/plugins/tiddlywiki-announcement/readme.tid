@@ -10,10 +10,11 @@ title: $:/plugins/oeyoews/tiddlywiki-announcement/readme
 <$image source={{{ [[][https://img.shields.io/badge/Version-]] [<currentTiddler>get[version]] [[-red?style=social]] +[join[]]}}} />
 
 <$button>
-Add Announcement
+{{$:/plugins/oeyoews/tiddlywiki-announcement/icon}} Add Announcement
 <$action-sendmessage $message="tm-edit-tiddler" $param="$:/plugins/oeyoews/tiddlywiki-announcement/text"/>
 </$button>
 
-* Tiddlywiki Announcement
+!! Tiddlywiki Announcement
+
 * [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-announcement]]
 * [[Demo|https://oeyoews.github.io/neotw/main]]
