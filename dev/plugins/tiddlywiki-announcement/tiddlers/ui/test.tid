@@ -1,0 +1,7 @@
+title: $:/plugins/oeyoews/tiddlywiki-announcement/test
+
+<$list filter="[[$:/plugins/oeyoews/tiddlywiki-announcement/text]get[text]!is[blank]]">
+<$button> {{$:/plugins/oeyoews/tiddlywiki-announcement/icon-red}} Test
+  <$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/tiddlywiki-announcement/msg" />
+</$button>
+</$list>

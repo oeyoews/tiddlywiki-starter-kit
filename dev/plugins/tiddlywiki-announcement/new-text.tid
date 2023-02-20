@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/tiddlywiki-announcement/new-text
+
+<$button>
+{{$:/plugins/oeyoews/tiddlywiki-announcement/icon}} Add Announcement
+<$action-sendmessage $message="tm-edit-tiddler" $param="$:/plugins/oeyoews/tiddlywiki-announcement/text"/>
+</$button>
