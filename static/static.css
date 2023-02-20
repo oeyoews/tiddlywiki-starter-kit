@@ -2450,6 +2450,9 @@ top: 3em;
       transform: translate(-50%, 0);
     }
   }
+.mobile {
+    display: none !important;
+}
 footer {
 	flex: 1 1 auto;
 	display:flex !important;
@@ -3143,7 +3146,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 65";
+  content: " 66";
 }
 
 
