@@ -4,6 +4,6 @@ tags: $:/tags/StartupAction/PostRender
 <!-- dev -->
 \define random-tip() <$action-sendmessage $message="tm-modal" $param={{{ [all[tiddlers+shadows]tag[Tiddlywiki5Tip]random[1]] }}} />
 
-<$list filter="[{$:/info/url/protocol}match[http:]]">
+<$list filter="[{$:/info/url/protocol}match[https:]]">
   <$action-timeout delay=500 actions=<<random-tip>> />
 </$list>
