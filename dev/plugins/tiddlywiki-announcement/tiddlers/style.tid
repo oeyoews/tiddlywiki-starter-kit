@@ -4,3 +4,16 @@ tags: $:/tags/Stylesheet
 .o-warning {
     color: red;
   }
+
+.tc-modal,
+.tc-modal-header,
+.tc-modal-body,
+.tc-modal-footer {
+   border-radius: 10px;
+   border: none;
+   background-color: #F5F5F5;
+}
+
+<!-- .tc-modal-footer { -->
+<!--     display:none; -->
+<!-- } -->

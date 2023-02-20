@@ -1,6 +1,9 @@
 title: $:/plugins/oeyoews/tiddlywiki-announcement/msg
-subtitle: Announcement
+subtitle: {{$:/plugins/oeyoews/tiddlywiki-announcement/announcement}}
 mask-closable: yes
+class: test-modal
+<!-- footer: -->
+<!-- help: https://github.com/oeyoews/neotw -->
 
 <div class="o-warning">
 {{$:/plugins/oeyoews/tiddlywiki-announcement/text}}
