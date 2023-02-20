@@ -2849,7 +2849,7 @@ footer {
 }
 
 [data-tag-title=\$\:\/tags\/Image] .tc-tag-label:after {
-  content: " 156";
+  content: " 155";
 }
 
 
@@ -6303,10 +6303,9 @@ ol.doc-github-contributors li {
 	text-overflow: ellipsis;
 }a {
 	color: #007bff;
+	text-decoration: none;
 }.tc-tiddler-frame .tc-tiddler-body {
     font-size: 20px;
-}a {
-	text-decoration: none;
 }.tc-tiddler-frame .tc-titlebar button {
   opacity: 0;
   transition: opacity .5s ease-in-out;
