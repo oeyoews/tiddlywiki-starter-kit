@@ -8,7 +8,7 @@ caption: {{$:/plugins/oeyoews/tiddlywiki-random-tip/icon}} random tips
 <$button message="add new random tip" tooltip="" aria-label="" class=<<tv-config-toolbar-class>>>
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
 {{$:/plugins/oeyoews/tiddlywiki-random-tip/icon}}
-<$action-sendmessage $message="tm-new-tiddler" $param="$:/plugins/oeyoews/tiddlywiki-random-tip/empty-template" title=<<now "[UTC]YYYY0MM0DD0hh0mm0ssXXX">> tags="Tiddlywiki5Tip"/>
+<$action-sendmessage $message="tm-new-tiddler" $param="$:/plugins/oeyoews/tiddlywiki-random-tip/empty-template" title=<<now "[UTC]tips-YYYY0MM0DD0hh0mm0ssXXX">> tags="Tiddlywiki5Tip"/>
 </$list>
 <$list filter="[<tv-config-toolbar-text>match[yes]]">
 <span class="tc-btn-text">
