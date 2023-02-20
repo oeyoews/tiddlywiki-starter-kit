@@ -3,6 +3,8 @@ mask-closable: yes
 subtitle: {{$:/plugins/oeyoews/tiddlywiki-random-tid/did-you-know}}
 class: o-random-tip
 
+<!-- add tips here -->
 >
 
+<!-- add author and link, like <<random-author "author name" "https://xxx">> -->
 <<random-author>>
