@@ -1,3 +1,10 @@
+# [3.36.0](https://github.com/oeyoews/neotw/compare/v3.35.1...v3.36.0) (2023-02-20)
+
+
+### Features
+
+* add blockquote style for tiddlywiki-random-tip ([354da80](https://github.com/oeyoews/neotw/commit/354da8092ec7466b22dafe2d61655e50ea3fb08e))
+
 ## [3.35.1](https://github.com/oeyoews/neotw/compare/v3.35.0...v3.35.1) (2023-02-20)
 
 
