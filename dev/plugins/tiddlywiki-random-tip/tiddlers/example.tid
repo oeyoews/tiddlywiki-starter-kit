@@ -2,5 +2,5 @@ title: $:/plugins/oeyoews/tiddlywiki-random-tip/example
 
 <$button >
 {{$:/plugins/oeyoews/tiddlywiki-random-tip/icon}} Random Tip
-{{$:/plugins/oeyoews/tiddlywiki-random-tip/startup}}
+  <$action-sendmessage $message="tm-modal" $param={{{ [all[tiddlers+shadows]tag[Tiddlywiki5Tip]random[1]] }}} />
 </$button>
