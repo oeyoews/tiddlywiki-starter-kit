@@ -17,3 +17,7 @@ tags: $:/tags/Stylesheet
 .o-random-right {
     text-align: right;
 }
+
+.o-random-tip blockquote {
+	border-left: 3px solid #dfdfdf;
+}
