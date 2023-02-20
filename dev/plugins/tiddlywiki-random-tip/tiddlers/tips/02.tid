@@ -7,6 +7,4 @@ class: o-random-tip
 
 > 向button 添加 tc-btn-invisible tc-tiddlylink 两个 class, 可以使得按钮看起来像一个内部链接。
 
-<div class="o-random-right">
-[[@oeyoews|https://github.com/oeyoews/neotw]]
-</div>
+<<random-author>>

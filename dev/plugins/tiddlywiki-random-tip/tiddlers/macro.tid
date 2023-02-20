@@ -1,0 +1,10 @@
+title: $:/plugins/oeyoews/tiddlywiki-random-tip/macro/random-author
+tags: $:/tags/Macro
+
+\define random-author(author:oeyoews link:"https://github.com/oeyoews/neotw")
+<div class="o-random-right">
+<a href="""$link$""" target="_blank">
+@$author$
+</a>
+</div>
+\end

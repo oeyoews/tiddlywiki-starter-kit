@@ -4,3 +4,5 @@ subtitle: {{$:/plugins/oeyoews/tiddlywiki-random-tid/did-you-know}}
 class: o-random-tip
 
 >
+
+<<random-author>>

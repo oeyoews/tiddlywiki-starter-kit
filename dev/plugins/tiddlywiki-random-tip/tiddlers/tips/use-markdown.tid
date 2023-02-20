@@ -7,6 +7,4 @@ class: o-random-tip
 
 > 如果你不能马上适应tiddlywiki的wikitext语法， 你还可以安装markdown插件, 从而在tiddlywiki里面使用markdown语法.
 
-<div class="o-random-right">
-[[@oeyoews|https://github.com/oeyoews/neotw]]
-</div>
+<<random-author>>
