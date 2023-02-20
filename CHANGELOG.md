@@ -1,3 +1,10 @@
+## [3.33.2](https://github.com/oeyoews/neotw/compare/v3.33.1...v3.33.2) (2023-02-20)
+
+
+### Performance Improvements
+
+* add class for tm-modal ([a407390](https://github.com/oeyoews/neotw/commit/a407390023d4162f2ffce7883c83bf017316602b))
+
 ## [3.33.1](https://github.com/oeyoews/neotw/compare/v3.33.0...v3.33.1) (2023-02-20)
 
 
