@@ -1,3 +1,15 @@
+## [3.35.1](https://github.com/oeyoews/neotw/compare/v3.35.0...v3.35.1) (2023-02-20)
+
+
+### Bug Fixes
+
+* remove notebook-mobile patch, just archive it ([c632405](https://github.com/oeyoews/neotw/commit/c6324059fcf1177e9b17cf7f6183ecf7ad0b887c))
+
+
+### Performance Improvements
+
+* remove commander ([23370c9](https://github.com/oeyoews/neotw/commit/23370c9f9abdfeafb60887b90568340d55800c5a))
+
 # [3.35.0](https://github.com/oeyoews/neotw/compare/v3.34.0...v3.35.0) (2023-02-20)
 
 
