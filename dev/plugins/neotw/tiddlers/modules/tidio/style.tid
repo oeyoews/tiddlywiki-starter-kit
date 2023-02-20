@@ -1,6 +1,0 @@
-title: $:/plugins/oeyoews/neotw/modules/tidio/style
-tags: $:/tags/Stylesheet
-
-.mobile {
-    display: none !important;
-}

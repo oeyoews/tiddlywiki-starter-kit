@@ -1,0 +1,4 @@
+/* hide tidio on iphone */
+.mobile {
+  display: none !important;
+}
