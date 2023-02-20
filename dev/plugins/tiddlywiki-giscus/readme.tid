@@ -13,7 +13,7 @@ title: $:/plugins/oeyoews/tiddlywiki-giscus/readme
 <$button class="get-started">
   <a style="text-decoration: none;" target="_blank"
   href="https://neotw.netlify.app/main.html#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-giscus">
-  Install Giscus {{$:/plugins/oeyoews/tiddlywiki-giscus/icon}}
+  Install Giscus
 </a>
 </$button>
 
@@ -27,7 +27,7 @@ title: $:/plugins/oeyoews/tiddlywiki-giscus/readme
 </center>
 
 <<<
-{{$:/plugins/oeyoews/tiddlywiki-giscus/icon}} A Commenting System Powered By Github Discussions. Let Visitors Leave Comments And Reactions On Your Site With Github! This Project Is Strongly Inspired By Utterances.
+💎 A Commenting System Powered By Github Discussions. Let Visitors Leave Comments And Reactions On Your Site With Github! This Project Is Strongly Inspired By Utterances.
 <<<
 
 !! TODO

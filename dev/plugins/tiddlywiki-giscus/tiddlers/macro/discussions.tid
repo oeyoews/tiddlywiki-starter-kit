@@ -8,7 +8,7 @@ tags: $:/tags/Macro
 <$set name="target" value="$:/plugins/oeyoews/tiddlywiki-giscus/config">
   <$button class=<<tv-config-toolbar-class>>>
     <a href={{{ [<target>get[repo]addsuffix[/discussions]addprefix<base-repo>]}}} target="_blank">
-		{{$:/plugins/oeyoews/tiddlywiki-giscus/icon}}
+💎
     </a>
   </$button>
 </$set>
