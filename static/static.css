@@ -2808,8 +2808,6 @@ footer {
 
 [data-tiddler-title="thesis-record"] .tc-tiddler-controls  {display: none;}
 
-[data-tiddler-title="TiddlyTools/Time/action-timeout.js"] .tc-tiddler-controls  {display: none;}
-
 [data-tiddler-title="tiddlywiki-heatmap"] .tc-tiddler-controls  {display: none;}
 
 [data-tiddler-title="tom.png"] .tc-tiddler-controls  {display: none;}
@@ -3145,7 +3143,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 65";
+  content: " 66";
 }
 
 
@@ -3367,7 +3365,13 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/StartupAction\/PostRender] .tc-tag-label:after {
-  content: " 1";
+  content: " 3";
+}
+
+
+
+[data-tag-title=Tiddlywiki5Tip] .tc-tag-label:after {
+  content: " 6";
 }
 
 
@@ -3438,12 +3442,6 @@ footer {
 
 
 
-[data-tag-title=Tiddlywiki5Tip] .tc-tag-label:after {
-  content: " 1";
-}
-
-
-
 [data-tag-title=tiddlywiki] .tc-tag-label:after {
   content: " 1";
 }
@@ -3461,7 +3459,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "133";
+  content: "132";
 }
 .user-panel-avatar { position: relative; max-width: 22px; max-height: 22px; }.user-panel-avatar-56 { position: relative; max-width: 56px; max-height: 56px; }.user-panel-avatar-56 img { width: 100%; height: auto; max-width: 56px; max-height: 56px; border-radius: 50%; aspect-ratio: 1 / 1; }.user-panel-avatar img { width: 100%; height: auto; max-width: 22px; max-height: 22px; border-radius: 50%; aspect-ratio: 1 / 1; }
 .CodeMirror-hints {
@@ -5284,7 +5282,14 @@ a[data-fancybox] img {
   border: none;
   border-radius: 3px;
 }
-.nauthor img {
+.tc-modal,
+.tc-modal-header,
+.tc-modal-body,
+.tc-modal-footer {
+   border-radius: 10px;
+   border: none;
+   background-color: #F5F5F5;
+}.nauthor img {
     width: 100%;
     height: auto;
     max-width: 14px;
