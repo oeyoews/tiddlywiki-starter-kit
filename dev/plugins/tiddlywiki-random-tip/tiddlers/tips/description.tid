@@ -13,11 +13,4 @@ class: o-random-tip
 <hr>
 <div class="tc-subtitle">
 
-<b>random tip</b> have <$count filter=[all[tiddlers+shadows]tag[Tiddlywiki5Tip]] /> tips,
-if you know more tip about tiddlywiki
-
-!! Want to contribute?
-
-&nbsp;&nbsp;You have noticed something missing that you saw lately? Do not keep the candies for yourself and please feel free to share with us! You can open a PR on {{neotw/icon/github01}} [[Github|https://github.com/oeyoews/neotw]]
-
-</div>
+<b>Random Tip Plugin</b> have <$count filter=[all[tiddlers+shadows]tag[Tiddlywiki5Tip]] /> tips
