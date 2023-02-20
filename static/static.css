@@ -3083,7 +3083,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/ViewTemplate] .tc-tag-label:after {
-  content: " 15";
+  content: " 14";
 }
 
 
@@ -3143,7 +3143,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 65";
+  content: " 57";
 }
 
 
@@ -3222,84 +3222,6 @@ footer {
 
 [data-tag-title=\$\:\/tags\/flibbles\/relink\/Configuration] .tc-tag-label:after {
   content: " 4";
-}
-
-
-
-[data-tag-title=\$\:\/tags\/Commander\/Macro] .tc-tag-label:after {
-  content: " 31";
-}
-
-
-
-[data-tag-title=\$\:\/tags\/Commander] .tc-tag-label:after {
-  content: " 8";
-}
-
-
-
-[data-tag-title=\$\:\/tags\/Commander\/FieldOps] .tc-tag-label:after {
-  content: " 4";
-}
-
-
-
-[data-tag-title=\$\:\/tags\/Commander\/Filter] .tc-tag-label:after {
-  content: " 9";
-}
-
-
-
-[data-tag-title=\$\:\/tags\/Commander\/Help] .tc-tag-label:after {
-  content: " 5";
-}
-
-
-
-[data-tag-title=\$\:\/tags\/Commander\/InspectOps] .tc-tag-label:after {
-  content: " 1";
-}
-
-
-
-[data-tag-title=\$\:\/tags\/Commander\/Search\/FilterButton] .tc-tag-label:after {
-  content: " 3";
-}
-
-
-
-[data-tag-title=\$\:\/tags\/Commander\/Setting] .tc-tag-label:after {
-  content: " 4";
-}
-
-
-
-[data-tag-title=\$\:\/tags\/Commander\/SnrOps] .tc-tag-label:after {
-  content: " 1";
-}
-
-
-
-[data-tag-title=\$\:\/tags\/Commander\/TagOps] .tc-tag-label:after {
-  content: " 2";
-}
-
-
-
-[data-tag-title=\$\:\/tags\/Commander\/Template] .tc-tag-label:after {
-  content: " 3";
-}
-
-
-
-[data-tag-title=\$\:\/tags\/Commander\/TiddlerOps] .tc-tag-label:after {
-  content: " 3";
-}
-
-
-
-[data-tag-title=\$\:\/tags\/Commander\/TitleOps] .tc-tag-label:after {
-  content: " 3";
 }
 
 
@@ -3910,143 +3832,7 @@ span.cm-internallink {
 }.tc-relink-menu-missing-blurb {
 	margin-left: 30pt;
 }
-.commander-alert {
-  padding: 0.75rem 1.25rem;
-  margin-bottom: 1rem;
-  border: 1px dotted gray;
-  border-radius: 0.25rem;
-  color: #0c5460;
-  background-color: #d1ecf1;
-  border-color: #bee5eb;
-	
-}/**
-.cmd-btn{
- font-size:0.85em;
- font-size:300;
- color: #666666;
- background-color: #d8d8d8;
- padding: 3px 8px 3px 8px;
- border: 1px solid #a1a1a1;
-}
-**/
-
-.cmd-btn-wd{
-	width:20ch;
-}/*compInspect table*/
-.cmd-ci-table
-{border-collapse: collapse;}
-
-.cmd-ci-table .leftcol{
-width:20%;
-vertical-align: top;
-text-align: right;
-background-color:#f0f0f0;
-}
-.cmd-ci-table .rightcol{
-width:650px;
-}
-.kk-commander-log-note{
-	font-style:italic; font-size:small;
-}
-.kk-commander-log-item {
-	color:green;
-}
-
-/* This is missing and I added it */
-.cmd-txt-area{
-	min-width:25ch;
-}
-
-.cmd-txt-area2{
-	min-width:50ch;
-}
-
-/* Correct this later*/
-.kk-cmd-label{
-	display:inline-block;
-	width:85px;
-}
-
-.kk-cmd-label2{
-	display:inline-block;
-	width:120px;
-}.cmd-sl{
-  width:8ch;
-}
-
-.cmd-select-wd{
-  min-width:25ch;
-}
-.cmd-snr-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.cmd-snr-column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1
-}
-
-.cmd-snr-double-column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 2
-}
-
-@media screen and (min-width: 800px) {
-  .cmd-snr-column {
-    flex: 1
-  }
-
-  .cmd-snr-double-column {
-    flex: 2
-  }
-}.cmd-snr-form{
-  width:100%;
-}
-
-.cmd-snr-textbox {
-  width:100%;
-  box-sizing: border-box;
-  max-width:40ch;
-  }
-
-.cmd-snr-form select, .cmd-snr-form input{
-  margin: 0.2rem;
-}
-.cmd-snr-form legend{
-  background: #f5f5f5;
-  padding: 3px 6px;
-}
-
-.cmd-snr-form { padding:20px; }
-.cmd-snr-form .item { padding: 2px; margin:2px; }
-.cmd-snr-form .item label { display:inline-block; width:100px; margin-left:5px; }
-.cmd-snr-form .item input { display:inline-block; }
-.cmd-snr-form .item select { display:inline-block; }
-
-/* only for relink checkbox on renaming tiddler */
-.cmd-snr-form .item-relink { padding: 2px; margin:2px; }
-
-     .kk-commander-tiddler-list {
-  font-size:small; 
-	border-left:0.5px 
-	dotted grey;
-	padding-left:10px;
-	overflow-y:auto;
-	max-width:100%;
-	max-height:$(height)$;
-}
-
-.kk-commander-columns1   { display:block; column-count:1; column-gap:1em; }
-.kk-commander-columns2   { display:block; column-count:2; column-gap:1em; }
-.kk-commander-columns3   { display:block; column-count:3; column-gap:1em; }
-.kk-commander-columns4   { display:block; column-count:4; column-gap:1em; }
-.kk-commander-columns5   { display:block; column-count:5; column-gap:1em; }/* skin */
+/* skin */
 .kk-fav-row:hover {
 	background-color: #f0f0f0;
 }
