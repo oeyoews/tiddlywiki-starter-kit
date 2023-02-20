@@ -5,15 +5,15 @@ tags: $:/tags/Stylesheet
     color: red;
   }
 
-.tc-modal,
-.tc-modal-header,
-.tc-modal-body,
-.tc-modal-footer {
+.o-announcement .tc-modal,
+.o-announcement .tc-modal-header,
+.o-announcement .tc-modal-body,
+.o-announcement .tc-modal-footer {
    border-radius: 10px;
    border: none;
    background-color: #F5F5F5;
 }
 
-<!-- .tc-modal-footer { -->
-<!--     display:none; -->
-<!-- } -->
+.o-announcement .tc-modal-footer {
+    display:none;
+}

@@ -1,16 +1,15 @@
 title: $:/plugins/oeyoews/tiddlywiki-random-tip/style
 tags: $:/tags/Stylesheet
 
-.tc-modal,
-.tc-modal-header,
-.tc-modal-body,
-.tc-modal-footer {
+.o-random-tip .tc-modal,
+.o-random-tip .tc-modal-header,
+.o-random-tip .tc-modal-body,
+.o-random-tip .tc-modal-footer {
    border-radius: 10px;
    border: none;
    background-color: #F5F5F5;
 }
 
-<!-- center tc-modal -->
-<!-- .tc-modal { -->
-<!--     top: 300px -->
-<!-- } -->
+.o-random-tip .tc-modal-footer {
+    display:none;
+}
