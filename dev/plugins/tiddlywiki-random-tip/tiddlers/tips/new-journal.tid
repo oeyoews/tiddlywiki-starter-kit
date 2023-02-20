@@ -7,4 +7,8 @@ class: o-random-tip
 caption:
 description
 
-> 按住 alt j 即可快速创建当天日记
+> 按住 alt j 即可快速创建当天日记.
+
+<div class="o-random-right">
+[[@oeyoews|https://github.com/oeyoews/neotw]]
+</div>

@@ -7,4 +7,8 @@ class: o-random-tip
 caption:
 description
 
-> 简单来说，Tiddlywiki 就是一个简单的可以直接在浏览器编辑的html文件
+> 简单来说，Tiddlywiki 就是一个简单的可以直接在浏览器编辑的html文件.
+
+<div class="o-random-right">
+[[@oeyoews|https://github.com/oeyoews/neotw]]
+</div>

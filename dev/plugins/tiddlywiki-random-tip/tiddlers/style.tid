@@ -13,3 +13,7 @@ tags: $:/tags/Stylesheet
 .o-random-tip .tc-modal-footer {
     display:none;
 }
+
+.o-random-right {
+    text-align: right;
+}

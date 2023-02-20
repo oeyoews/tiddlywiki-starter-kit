@@ -14,3 +14,4 @@ class: o-random-tip
 <div class="tc-subtitle">
 
 <b>Random Tip Plugin</b> have <$count filter=[all[tiddlers+shadows]tag[Tiddlywiki5Tip]] /> tips
+</div>
