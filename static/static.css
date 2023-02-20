@@ -3143,7 +3143,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 66";
+  content: " 65";
 }
 
 
@@ -3365,13 +3365,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/StartupAction\/PostRender] .tc-tag-label:after {
-  content: " 2";
-}
-
-
-
-[data-tag-title=Tiddlywiki5Tip] .tc-tag-label:after {
-  content: " 6";
+  content: " 1";
 }
 
 
@@ -5282,14 +5276,7 @@ a[data-fancybox] img {
   border: none;
   border-radius: 3px;
 }
-.tc-modal,
-.tc-modal-header,
-.tc-modal-body,
-.tc-modal-footer {
-   border-radius: 10px;
-   border: none;
-   background-color: #F5F5F5;
-}.nauthor img {
+.nauthor img {
     width: 100%;
     height: auto;
     max-width: 14px;
