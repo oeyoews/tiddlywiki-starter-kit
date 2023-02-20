@@ -5294,6 +5294,8 @@ a[data-fancybox] img {
    background-color: #F5F5F5;
 }.o-random-tip .tc-modal-footer {
     display:none;
+}.o-random-right {
+    text-align: right;
 }
 .nauthor img {
     width: 100%;
