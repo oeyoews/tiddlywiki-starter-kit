@@ -8,3 +8,16 @@ type: text/vnd.tiddlywiki
     bottom: 5px;
     z-index: 2;
 }
+
+.o-surfing-keys .tc-modal,
+.o-surfing-keys .tc-modal-header,
+.o-surfing-keys .tc-modal-body,
+.o-surfing-keys .tc-modal-footer {
+   border-radius: 10px;
+   border: none;
+   background-color: #F5F5F5;
+}
+
+.o-surfing-keys .tc-modal-footer {
+    display:none;
+}

@@ -1,5 +1,6 @@
 subtitle: Neotw Keyboard List
 title: $:/plugins/oeyoews/neotw-surfing-keys/keyboard-list
 mask-closable: yes
+class: o-surfing-keys
 
 {{$:/core/ui/ControlPanel/KeyboardShortcuts}}
