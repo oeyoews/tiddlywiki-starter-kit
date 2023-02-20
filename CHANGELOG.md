@@ -1,3 +1,10 @@
+## [3.33.1](https://github.com/oeyoews/neotw/compare/v3.33.0...v3.33.1) (2023-02-20)
+
+
+### Bug Fixes
+
+* remove dump file ([dc3263c](https://github.com/oeyoews/neotw/commit/dc3263c54603a5bdd60bb3723fa9e7c770bfd438))
+
 # [3.33.0](https://github.com/oeyoews/neotw/compare/v3.32.2...v3.33.0) (2023-02-20)
 
 
