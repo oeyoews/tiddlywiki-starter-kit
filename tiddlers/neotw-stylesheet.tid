@@ -1,12 +1,16 @@
 created: 20230202124524313
 creator: oeyoews
 empty: yes
-modified: 20230212183756614
+modified: 20230220100804895
 modifier: oeyoews
 page-cover: 
 tags: $:/tags/Stylesheet
 title: neotw-stylesheet
 type: text/vnd.tiddlywiki
+
+a {
+	color: #007bff;
+}
 
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
 .tc-story-river {
