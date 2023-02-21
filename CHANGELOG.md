@@ -1,3 +1,10 @@
+# [3.39.0](https://github.com/oeyoews/neotw/compare/v3.38.0...v3.39.0) (2023-02-21)
+
+
+### Features
+
+* add landing layout ([dda9a2b](https://github.com/oeyoews/neotw/commit/dda9a2b2f9e91fea78bb06b7de53bae77c2ebb3e))
+
 # [3.38.0](https://github.com/oeyoews/neotw/compare/v3.37.0...v3.38.0) (2023-02-21)
 
 
