@@ -3,6 +3,7 @@
 <!-- toc -->
 
 - [Intro](#intro)
+- [Features](#features)
 - [Preview](#preview)
 - [Deploy](#deploy)
 - [Run](#run)
@@ -39,6 +40,11 @@
 ## Intro
 
 > A modern style notebook based on `tiddlywiki`
+
+## Features
+
+- 自动展示最近十篇创建的文章
+- ...
 
 ## Preview
 
