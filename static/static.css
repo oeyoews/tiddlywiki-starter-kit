@@ -6141,6 +6141,8 @@ ol.doc-github-contributors li {
   box-shadow: 0 5px 20px rgb(0 0 0 / 12%);
 }blockquote {
   border-left: 3px solid #dfdfdf;
+	background-color: whitesmoke;
+	padding: 5px;
 }.tc-tiddler-frame {
   border: 0;
 }.tc-block-tags-dropdown > .tc-btn-invisible:hover {
