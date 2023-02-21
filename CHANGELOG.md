@@ -1,3 +1,10 @@
+# [3.37.0](https://github.com/oeyoews/neotw/compare/v3.36.0...v3.37.0) (2023-02-21)
+
+
+### Features
+
+* add caption alias ([4f08a1e](https://github.com/oeyoews/neotw/commit/4f08a1efaaf6d928863fd0209124e60fb8be22b2))
+
 # [3.36.0](https://github.com/oeyoews/neotw/compare/v3.35.1...v3.36.0) (2023-02-20)
 
 
