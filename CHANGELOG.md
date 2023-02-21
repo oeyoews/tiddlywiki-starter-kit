@@ -1,3 +1,10 @@
+## [3.40.3](https://github.com/oeyoews/neotw/compare/v3.40.2...v3.40.3) (2023-02-21)
+
+
+### Performance Improvements
+
+* remove tidio ([7d83878](https://github.com/oeyoews/neotw/commit/7d83878d2873d1a8782f675e5504314ff7c38327))
+
 ## [3.40.2](https://github.com/oeyoews/neotw/compare/v3.40.1...v3.40.2) (2023-02-21)
 
 
