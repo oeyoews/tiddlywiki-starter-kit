@@ -11,5 +11,7 @@ tags: $:/tags/Layout
 	GettingStarted
 </$button>
 </div>
-<$transclude tiddler="$:/plugins/oeyoews/neotw/modules/landing/landing-page" mode="block"/>
+<div class="o-landing-panel">
+  <$transclude tiddler="$:/plugins/oeyoews/neotw/modules/landing/landing-page" mode="block"/>
+</div>
 </div>
