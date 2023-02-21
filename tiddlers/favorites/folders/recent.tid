@@ -1,9 +1,9 @@
 caption: Recently added
 created: 20220828022145583
 creator: oeyoews
-list: Landing-Page thesis-record bing-image-everyday $:/config/SaverFilter $:/language/MissingTiddler/Hint $:/core/ui/EditTemplate/fields $:/core/ui/EditTemplate/type neotw-stylesheet GettingStarted $:/themes/nico/notebook/ui/Sidebar/Sections recent-note-record neotw/button/mode $:/StaticBanner neotw/article/music-index $:/xp/ui/EditorToolbar/box-dropdown $:/config/shortcuts/box $:/xp/box-button/examples neotw/style/box
+list: $:/config/FileSystemExtensions Landing-Page thesis-record bing-image-everyday $:/config/SaverFilter $:/language/MissingTiddler/Hint $:/core/ui/EditTemplate/fields $:/core/ui/EditTemplate/type neotw-stylesheet GettingStarted $:/themes/nico/notebook/ui/Sidebar/Sections recent-note-record neotw/button/mode $:/StaticBanner neotw/article/music-index $:/xp/ui/EditorToolbar/box-dropdown $:/config/shortcuts/box $:/xp/box-button/examples neotw/style/box
 list-before: 
-modified: 20230221092204346
+modified: 20230221124442367
 modifier: oeyoews
 tags: $:/tags/Favorites/Folder
 title: $:/favorites/folders/recent
