@@ -2370,6 +2370,11 @@ body.tc-dirty span.tc-dirty-indicator svg {
 		transform: scale(359deg);
 	}
 }
+.o-load-more:hover {
+  transform: scale(0.89);
+  transition: transform 0.2s;
+  
+}
 .friend-card {
     margin-bottom: 10px;
     display: flex;
@@ -3197,7 +3202,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 59";
+  content: " 60";
 }
 
 
