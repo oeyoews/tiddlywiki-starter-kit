@@ -2855,6 +2855,8 @@ footer {
 
 [data-tiddler-title="js-books"] .tc-tiddler-controls  {display: none;}
 
+[data-tiddler-title="markdown-test"] .tc-tiddler-controls  {display: none;}
+
 [data-tiddler-title="memos-docker-compose"] .tc-tiddler-controls  {display: none;}
 
 [data-tiddler-title="name-your-tid"] .tc-tiddler-controls  {display: none;}
