@@ -33,8 +33,8 @@ await spinner('Building ...', async () => {
   // library
   await $`npx ${bin} ${libbuild} --build library`;
 
-  // main
-  await $`npx ${bin} --build main`;
+  // index
+  await $`npx ${bin} --build index`;
 
   // static
   await $`npx ${bin} --build static`;
@@ -46,7 +46,7 @@ await spinner('Building ...', async () => {
 
   // after building
   await $`mv ${library} ${dist}`;
-  await $`npx html-minifier-terser -c ./config/html-minifier-terser-config.json -o dist/main.html dist/main.html`;
+  await $`npx html-minifier-terser -c ./config/html-minifier-terser-config.json -o dist/index.html dist/index.html`;
   await $`cp -r files vercel.json src/index-* img/default2.avif ${dist}`;
   msg.finish('Building Finished(for oyeoews)');
 });

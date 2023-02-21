@@ -38,7 +38,7 @@
       "$:/favicon.ico",
       "favicon.ico"
     ],
-    "main": [
+    "index": [
       "--verbose",
       "--load",
       "patch",
@@ -46,7 +46,7 @@
       "dist",
       "--render",
       "$:/plugins/tiddlywiki/tiddlyweb/save/offline",
-      "main.html",
+      "index.html",
       "text/plain",
       "--savetiddler",
       "$:/favicon.ico",
@@ -61,18 +61,6 @@
       "[removeprefix[$:/plugins/oeyoews/]addsuffix[.json]]",
       "text/plain",
       "$:/core/templates/json-tiddler"
-    ],
-    "index": [
-      "--verbose",
-      "--output",
-      "dist",
-      "--render",
-      "$:/plugins/tiddlywiki/tiddlyweb/save/offline",
-      "index.html",
-      "text/plain",
-      "--savetiddler",
-      "$:/favicon.ico",
-      "favicon.ico"
     ],
     "listen": [
       "--listen",

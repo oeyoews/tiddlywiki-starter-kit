@@ -12,7 +12,7 @@ title: $:/plugins/oeyoews/tiddlywiki-giscus/readme
 <center>
 <$button class="get-started">
   <a style="text-decoration: none;" target="_blank"
-  href="https://neotw.netlify.app/main.html#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-giscus">
+  href="https://neotw.netlify.app/index.html#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-giscus">
   Install Giscus
 </a>
 </$button>
