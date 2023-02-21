@@ -14,3 +14,22 @@ tags: $:/tags/Stylesheet
 	-webkit-background-clip: text;
 	color: transparent;
 }
+
+<!-- background: linear-gradient(45deg, #F44336, #FFEB3B, #4CAF50, #2196F3, #9C27B0); -->
+<!--   background-size: 400%; -->
+<!--   animation: rainbow 10s ease infinite; -->
+<!--   color: white; -->
+<!--   border-radius: 4px; -->
+<!--   letter-spacing: 1px; -->
+
+<!-- @keyframes rainbow { -->
+<!--       0% { -->
+<!--         background-position: 0%; -->
+<!--       } -->
+<!--       50% { -->
+<!--         background-position: 100%; -->
+<!--       } -->
+<!--       100% { -->
+<!--         background-position: 0%; -->
+<!--       } -->
+<!--     } -->
