@@ -1,0 +1,15 @@
+title: $:/plugins/oeyoews/neotw/modules/landing/layout
+description: neotw landing page
+name: {{$:/favicon.ico}} Neotw
+tags: $:/tags/Layout
+
+<div class="o-landing">
+<div class="o-landing-branding">
+[img width=64 [$:/favicon.ico]]
+<h1>Neotw</h1>
+<$button set="$:/layout" setTo="$:/core/ui/PageTemplate" class="landing-button-start">
+	GettingStarted
+</$button>
+</div>
+<$transclude tiddler="$:/plugins/oeyoews/neotw/modules/landing/landing-page" mode="block"/>
+</div>

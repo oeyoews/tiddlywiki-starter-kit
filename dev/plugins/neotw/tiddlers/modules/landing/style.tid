@@ -1,0 +1,28 @@
+title: $:/plugins/oeyoews/neotw/modules/landing/style
+tags: $:/tags/Stylesheet
+type: text/css
+
+.o-landing {
+	margin: 1em 0.5em;
+}
+
+@media (min-width: 760px) {
+	.o-landing {
+		width: 660px;
+		margin: 1em auto;
+	}
+}
+
+.o-landing-branding {
+	text-align: center;
+	margin-bottom: 4em;
+}
+
+.o-landing-branding h1 {
+	font-weight: bold;
+}
+
+.landing-button-start {
+    padding: 10px;
+    font-weight: bold;
+  }
