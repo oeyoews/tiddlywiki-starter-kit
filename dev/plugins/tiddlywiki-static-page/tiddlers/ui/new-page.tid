@@ -20,7 +20,7 @@ list-before: $:/core/ui/Buttons/close
 </$list>
 <!-- http  -->
 <$list filter="[{$:/info/url/protocol}prefix[http:]]">
-<$set name="uri" value={{{  [[$:/info/url/full]get[text]] [[]addsuffix<storyTiddler>encodeuricomponent[]] +[join[]] }}} >
+<$set name="uri" value={{{ [[$:/info/url/full]get[text]] [[]addsuffix<storyTiddler>encodeuricomponent[]] +[join[]] }}} >
 <!-- set option -->
 <$set name="online-uri" value={{{ [<storyTiddler>encodeuricomponent[]addprefix[https://neotw.netlify.app/]] +[join[]] }}} >
 <$action-sendmessage $message="tm-copy-to-clipboard" $param=<<online-uri>>/>

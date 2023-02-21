@@ -1,15 +1,23 @@
+caption: markdown 语法测试
 created: 20230221073554683
 creator: oeyoews
-modified: 20230221124608074
+modified: 20230221141415491
 modifier: oeyoews
-publish: article
+publish: public
 tags: 
 title: markdown-test
 type: text/markdown
 
+## fancybox macro image
+
+<center>
+<<fbox width:"32" "https://neotw.oeyoewl.top/favicon.ico">>
+</center>
+
 ## image
 
 ![http image](https://neotw.oeyoewl.top/favicon.ico)
+
 ![alt text](<#tom.png>)
 
 ## link
@@ -33,6 +41,10 @@ X^2^
 
 Here's a simple footnote,[^1] and here's a longer one.[^bignote]
 
+## Katex
+
+$$\KaTeX$$
+
 $$c = \pm\sqrt{a^2 + b^2}$$
 
 
@@ -47,4 +59,3 @@ $$c = \pm\sqrt{a^2 + b^2}$$
     `{ my code }`
 
     Add as many paragraphs as you like.
-		
