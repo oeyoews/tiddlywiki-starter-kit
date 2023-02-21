@@ -3075,7 +3075,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/PageControls] .tc-tag-label:after {
-  content: " 31";
+  content: " 30";
 }
 
 
@@ -3171,13 +3171,13 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Macro] .tc-tag-label:after {
-  content: " 50";
+  content: " 49";
 }
 
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 61";
+  content: " 60";
 }
 
 
@@ -3327,13 +3327,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/StartupAction\/PostRender] .tc-tag-label:after {
-  content: " 2";
-}
-
-
-
-[data-tag-title=Tiddlywiki5Tip] .tc-tag-label:after {
-  content: " 7";
+  content: " 1";
 }
 
 
@@ -5130,27 +5124,6 @@ a[data-fancybox] img {
 .o-select {
   border: none;
   border-radius: 3px;
-}
-.o-random-tip .tc-modal,
-.o-random-tip .tc-modal-header,
-.o-random-tip .tc-modal-body,
-.o-random-tip .tc-modal-footer {
-   border-radius: 5px;
-   border: none;
-   background-color: #F5F5F5;
-}.o-random-tip .tc-modal-footer {
-    display:none;
-}.o-random-right {
-    text-align: right;
-}.o-random-tip blockquote {
-	border: none;
-	background-color: whitesmoke;
-	padding: 5px 10px;
-	border-radius: 5px;
-}.o-random-tip blockquote:hover {
-    transform: scale(0.99);
-    background-color: aliceblue !important;
-    transition: transform .2s;
 }
 .nauthor img {
     width: 100%;
