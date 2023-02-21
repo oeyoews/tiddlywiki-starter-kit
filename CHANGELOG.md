@@ -1,3 +1,10 @@
+# [3.40.0](https://github.com/oeyoews/neotw/compare/v3.39.2...v3.40.0) (2023-02-21)
+
+
+### Features
+
+* add tc-modal-centered for tiddlywiki-random-tip ([9979fab](https://github.com/oeyoews/neotw/commit/9979fabcf5a5a1d7dd6a64e915b342c4d072dc9c))
+
 ## [3.39.2](https://github.com/oeyoews/neotw/compare/v3.39.1...v3.39.2) (2023-02-21)
 
 
