@@ -13,5 +13,6 @@ class: o-random-tip
 <hr>
 <div class="tc-subtitle">
 
-<b>Random Tip Plugin</b> have <$count filter=[all[tiddlers+shadows]tag[Tiddlywiki5Tip]] /> tips
+> <b>Random Tip Plugin</b> have <$count filter=[all[tiddlers+shadows]tag[Tiddlywiki5Tip]] /> tips
+
 </div>

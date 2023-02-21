@@ -5,7 +5,7 @@ tags: $:/tags/Stylesheet
 .o-random-tip .tc-modal-header,
 .o-random-tip .tc-modal-body,
 .o-random-tip .tc-modal-footer {
-   border-radius: 10px;
+   border-radius: 5px;
    border: none;
    background-color: #F5F5F5;
 }
@@ -22,7 +22,7 @@ tags: $:/tags/Stylesheet
 	border: none;
 	background-color: whitesmoke;
 	padding: 5px 10px;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 
 .o-random-tip blockquote:hover {
