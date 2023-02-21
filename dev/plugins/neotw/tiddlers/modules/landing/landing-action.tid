@@ -1,5 +1,5 @@
 title: $:/state/oeyoews/neotw/modules/landing/landing-action
-<!-- tags: $:/tags/StartupAction -->
+tags: $:/tags/StartupAction
 
 <!-- bug it's not friendly for directyl jump -->
 <$action-setfield  $tiddler="$:/layout" text="$:/plugins/oeyoews/neotw/modules/landing/layout"/>
