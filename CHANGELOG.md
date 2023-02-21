@@ -1,3 +1,10 @@
+## [3.39.1](https://github.com/oeyoews/neotw/compare/v3.39.0...v3.39.1) (2023-02-21)
+
+
+### Bug Fixes
+
+* move main to index ([844822f](https://github.com/oeyoews/neotw/commit/844822f94ad717f37af554319af63cb15747b4e6))
+
 # [3.39.0](https://github.com/oeyoews/neotw/compare/v3.38.0...v3.39.0) (2023-02-21)
 
 
