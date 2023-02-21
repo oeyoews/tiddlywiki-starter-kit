@@ -1,3 +1,10 @@
+## [3.39.2](https://github.com/oeyoews/neotw/compare/v3.39.1...v3.39.2) (2023-02-21)
+
+
+### Bug Fixes
+
+* move landing-action to patch folder ([dba37fc](https://github.com/oeyoews/neotw/commit/dba37fc55bd21a2b4ebc35acdb78d68ea9da5c88))
+
 ## [3.39.1](https://github.com/oeyoews/neotw/compare/v3.39.0...v3.39.1) (2023-02-21)
 
 
