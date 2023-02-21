@@ -3,9 +3,7 @@ mask-closable: yes
 subtitle: {{$:/plugins/oeyoews/tiddlywiki-random-tid/did-you-know}}
 tags: Tiddlywiki5Tip
 author: oeyoews
-class: o-random-tip
-caption:
-description
+class: o-random-tip tc-modal-centered
 
 > 按住 alt j 即可快速创建当天日记.
 > <<random-author>>
