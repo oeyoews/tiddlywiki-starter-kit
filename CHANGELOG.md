@@ -1,3 +1,10 @@
+## [3.40.2](https://github.com/oeyoews/neotw/compare/v3.40.1...v3.40.2) (2023-02-21)
+
+
+### Bug Fixes
+
+* remove landing-action ([d9cd918](https://github.com/oeyoews/neotw/commit/d9cd9183dfc0104649bb16f1bb87dcb798e0f017))
+
 ## [3.40.1](https://github.com/oeyoews/neotw/compare/v3.40.0...v3.40.1) (2023-02-21)
 
 
