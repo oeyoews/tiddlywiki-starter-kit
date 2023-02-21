@@ -26,3 +26,9 @@ type: text/css
     padding: 10px;
     font-weight: bold;
   }
+
+.landing-button-start:hover {
+  transform: scale(0.95);
+  background-color: aliceblue !important;
+  transition: transform 0.2s;
+}
