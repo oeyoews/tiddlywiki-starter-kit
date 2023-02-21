@@ -1,3 +1,10 @@
+## [3.40.1](https://github.com/oeyoews/neotw/compare/v3.40.0...v3.40.1) (2023-02-21)
+
+
+### Bug Fixes
+
+* remove setup layout by action ([5eb02bc](https://github.com/oeyoews/neotw/commit/5eb02bcaa45c8ade1b09ac9cbb6c2c000437200d))
+
 # [3.40.0](https://github.com/oeyoews/neotw/compare/v3.39.2...v3.40.0) (2023-02-21)
 
 
