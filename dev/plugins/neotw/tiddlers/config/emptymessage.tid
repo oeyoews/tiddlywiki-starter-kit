@@ -2,4 +2,16 @@ title: $:/config/EmptyStoryMessage
 <!-- tags: $:/tags/AboveStory -->
 
 {{{ [[GettingStarted]] ||$:/core/ui/ViewTemplate }}}
-{{{ [!is[system]field:publish[article]!sort[modified]limit[10]] -[[GettingStarted]]||$:/core/ui/ViewTemplate}}}
+{{{ [!is[system]field:publish[article]!sort[modified]limit<a-count>] -[[GettingStarted]]||$:/core/ui/ViewTemplate}}}
+
+<!-- status -->
+<$list filter="[[$:/state/a-count]is[missing]]">
+<center>
+	<$button class="o-load-more" set="$:/state/a-count" setTo="yes">
+    &nbsp;
+     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path></svg>
+    &nbsp;
+    <$action-setfield $tiddler="$:/temp/a-count" text="\define a-count() 10" tags="$:/tags/Macro"/>
+	</$button>
+</center>
+</$list>
