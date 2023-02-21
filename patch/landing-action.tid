@@ -1,0 +1,4 @@
+title: $:/temp/oeyoews/neotw/modules/landing/landing-action
+tags: $:/tags/StartupAction
+
+<$action-setfield  $tiddler="$:/layout" text="$:/plugins/oeyoews/neotw/modules/landing/layout"/>
