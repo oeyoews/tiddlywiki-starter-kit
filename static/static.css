@@ -2466,6 +2466,8 @@ footer {
 
 [data-tiddler-title="about-TIDDLYWIKI_PLUGIN_PATH-not-working"] .tc-tiddler-controls  {display: none;}
 
+[data-tiddler-title="affine-pro"] .tc-tiddler-controls  {display: none;}
+
 [data-tiddler-title="awesome-plugins-tiddlywiki"] .tc-tiddler-controls  {display: none;}
 
 [data-tiddler-title="banner.png"] .tc-tiddler-controls  {display: none;}
@@ -2805,6 +2807,8 @@ footer {
 [data-tiddler-title="recent-note-record"] .tc-tiddler-controls  {display: none;}
 
 [data-tiddler-title="some tw website examples"] .tc-tiddler-controls  {display: none;}
+
+[data-tiddler-title="test-compose-on-tiddlywiki"] .tc-tiddler-controls  {display: none;}
 
 [data-tiddler-title="thesis-record"] .tc-tiddler-controls  {display: none;}
 
@@ -3375,7 +3379,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "132";
+  content: "134";
 }
 .user-panel-avatar { position: relative; max-width: 22px; max-height: 22px; }.user-panel-avatar-56 { position: relative; max-width: 56px; max-height: 56px; }.user-panel-avatar-56 img { width: 100%; height: auto; max-width: 56px; max-height: 56px; border-radius: 50%; aspect-ratio: 1 / 1; }.user-panel-avatar img { width: 100%; height: auto; max-width: 22px; max-height: 22px; border-radius: 50%; aspect-ratio: 1 / 1; }
 .CodeMirror-hints {
