@@ -2422,6 +2422,30 @@ top: 3em;
 }.gitter-open-chat-button:hover::before {
        content: "Neotw · ";
 }
+.o-landing {
+	margin: 1em 0.5em;
+}
+
+@media (min-width: 760px) {
+	.o-landing {
+		width: 660px;
+		margin: 1em auto;
+	}
+}
+
+.o-landing-branding {
+	text-align: center;
+	margin-bottom: 4em;
+}
+
+.o-landing-branding h1 {
+	font-weight: bold;
+}
+
+.landing-button-start {
+    padding: 10px;
+    font-weight: bold;
+  }
 .polarbear {
     position: fixed;
     bottom: 0px;
@@ -3147,7 +3171,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 60";
+  content: " 61";
 }
 
 
@@ -3159,7 +3183,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/StartupAction] .tc-tag-label:after {
-  content: " 3";
+  content: " 4";
 }
 
 
@@ -3171,6 +3195,12 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/RawMarkup] .tc-tag-label:after {
+  content: " 1";
+}
+
+
+
+[data-tag-title=\$\:\/tags\/Layout] .tc-tag-label:after {
   content: " 1";
 }
 
