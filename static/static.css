@@ -2480,8 +2480,6 @@ footer {
 
 [data-tiddler-title="cat.svg"] .tc-tiddler-controls  {display: none;}
 
-[data-tiddler-title="changlog"] .tc-tiddler-controls  {display: none;}
-
 [data-tiddler-title="confilict 01"] .tc-tiddler-controls  {display: none;}
 
 [data-tiddler-title="custom-tag-template"] .tc-tiddler-controls  {display: none;}
@@ -2521,6 +2519,8 @@ footer {
 [data-tiddler-title="neoto/macro/tiddlywiki"] .tc-tiddler-controls  {display: none;}
 
 [data-tiddler-title="neotw-badges"] .tc-tiddler-controls  {display: none;}
+
+[data-tiddler-title="neotw-changlog"] .tc-tiddler-controls  {display: none;}
 
 [data-tiddler-title="neotw-gallary"] .tc-tiddler-controls  {display: none;}
 
@@ -3131,7 +3131,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/ViewTemplateTitleFilter] .tc-tag-label:after {
-  content: " 3";
+  content: " 4";
 }
 
 
