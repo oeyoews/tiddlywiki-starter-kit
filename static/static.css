@@ -6145,7 +6145,10 @@ ol.doc-github-contributors li {
 }blockquote {
   border-left: 3px solid #dfdfdf;
 	background-color: whitesmoke;
-	padding: 5px;
+	padding: 2px 0 2px 2px !important;
+	margin: 2px 0 2px 2px !important;
+}blockquote>div {
+	margin: 4px 1px;
 }.tc-tiddler-frame {
   border: 0;
 }.tc-block-tags-dropdown > .tc-btn-invisible:hover {
