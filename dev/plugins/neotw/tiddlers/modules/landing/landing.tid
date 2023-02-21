@@ -4,14 +4,10 @@ name: {{$:/favicon.ico}} Neotw
 tags: $:/tags/Layout
 
 <div class="o-landing">
-<div class="o-landing-branding">
-[img width=64 [$:/favicon.ico]]
-<h1>Neotw</h1>
-<$button set="$:/layout" setTo="$:/core/ui/PageTemplate" class="landing-button-start">
-	GettingStarted
-</$button>
-</div>
-<div class="o-landing-panel">
-  <$transclude tiddler="$:/plugins/oeyoews/neotw/modules/landing/landing-page" mode="block"/>
-</div>
+  <div class="o-landing-branding">
+    [img width=32 [$:/favicon.ico]] <h1>Neotw</h1>
+  </div>
+  <div class="o-landing-panel">
+    <$transclude tiddler="$:/plugins/oeyoews/neotw/modules/landing/landing-page" mode="block"/>
+  </div>
 </div>

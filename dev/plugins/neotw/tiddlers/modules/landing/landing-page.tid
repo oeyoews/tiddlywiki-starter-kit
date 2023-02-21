@@ -1,6 +1,11 @@
 title: $:/plugins/oeyoews/neotw/modules/landing/landing-page
 
-<center> Hello, TiddlyWiki5 <center>
+<!-- <h2> Hello, TiddlyWiki5 </h2> -->
+<center>
+  <$button set="$:/layout" setTo="$:/core/ui/PageTemplate" class="landing-button-start">
+    GettingStarted
+  </$button>
+</center>
 
 <!-- * add action for https to change layout -->
 <!-- * remove index.html -->
