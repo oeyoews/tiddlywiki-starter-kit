@@ -1,0 +1,11 @@
+author: cdaven
+core-version: >=5.0.8
+dependents: 
+description: Markdown export of tiddlers
+list: readme details license
+name: markdown-export 导出Markdown
+plugin-type: plugin
+source: https://github.com/cdaven/tiddlywiki-stuff/tree/main/markdown-export
+title: $:/plugins/cdaven/markdown-export
+type: application/json
+version: 0.5.0

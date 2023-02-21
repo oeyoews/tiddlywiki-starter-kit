@@ -1,0 +1,41 @@
+## image
+
+![http image](https://neotw.oeyoewl.top/favicon.ico)
+![alt text](<#tom.png>)
+
+## link
+[link text](#Index "optional tooltip")
+
+## underline 
+++inserted text++
+
+## mark
+==dmeo==
+
+X^2^
+
+## table
+
+|Left Aligned |Centered   |Right Aligned |
+|:---         |   :---:   |          ---:|
+|apple        |bat        |candle        |
+
+## footnote
+
+Here's a simple footnote,[^1] and here's a longer one.[^bignote]
+
+$$c = \pm\sqrt{a^2 + b^2}$$
+
+
+
+
+[^1]: This is the first footnote.
+
+[^bignote]: Here's one with multiple paragraphs and code.
+
+    Indent paragraphs to include them in the footnote.
+
+    `{ my code }`
+
+    Add as many paragraphs as you like.
+		
