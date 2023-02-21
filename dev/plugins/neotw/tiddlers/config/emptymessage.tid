@@ -2,4 +2,4 @@ title: $:/config/EmptyStoryMessage
 <!-- tags: $:/tags/AboveStory -->
 
 {{{ [[GettingStarted]] ||$:/core/ui/ViewTemplate }}}
-{{{ [!is[system]field:publish[article]!sort[modified]limit[9]] ||$:/core/ui/ViewTemplate}}}
+{{{ [!is[system]field:publish[article]!sort[modified]limit[10]] -[[GettingStarted]]||$:/core/ui/ViewTemplate}}}
