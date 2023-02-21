@@ -1,0 +1,9 @@
+title: $:/plugins/oeyoews/neotw/modules/caption/display-caption
+
+\whitespace trim
+<h2 class="tc-title">
+<$view field="caption" />
+</h2>
+<!-- <$view field="caption"> -->
+<!--   <$view field="title" /> -->
+<!-- </$view> -->
