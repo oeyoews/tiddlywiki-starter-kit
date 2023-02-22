@@ -1,0 +1,54 @@
+created: 20230222125135159
+creator: oeyoews
+modified: 20230222125142445
+modifier: oeyoews
+move-checked: true
+show-clearall: false
+sort-alphabetically: true
+strike-checked: true
+title: $:/plugins/tgrosinger/tw5-checklist/Configuration
+type: text/vnd.tiddlywiki
+
+Please see the [[homepage|https://grosinger.net/tw5-checklist/]] for more information on the options.
+
+Save and reload the wiki to activate changes.
+
+<table>
+  <tr>
+    <th align="left">Rearrange checked items:</th>
+    <td>
+        <$checkbox field="move-checked" tiddler="$:/plugins/tgrosinger/tw5-checklist/Configuration"
+            checked="true" unchecked="false" default="true"></$checkbox>
+    </td>
+  </tr>
+  <tr>
+    <th align="left" class="rerendering-required">Strike checked items: </th>
+    <td>
+        <$checkbox field="strike-checked" tiddler="$:/plugins/tgrosinger/tw5-checklist/Configuration"
+            checked="true" unchecked="false" default="true"></$checkbox>
+    </td>
+  </tr>
+  <tr>
+    <th align="left" class="rerendering-required">Sort list alphabetically: </th>
+    <td>
+        <$checkbox field="sort-alphabetically" tiddler="$:/plugins/tgrosinger/tw5-checklist/Configuration"
+            checked="true" unchecked="false" default="false"></$checkbox>
+    </td>
+  </tr>
+  <tr>
+    <th align="left" class="rerendering-required">Show Clear-All: </th>
+    <td>
+        <$checkbox field="show-clearall" tiddler="$:/plugins/tgrosinger/tw5-checklist/Configuration"
+            checked="true" unchecked="false" default="true"></$checkbox>
+    </td>
+  </tr>
+</table>
+
+&#42; make a change in a list to see the effect (check/uncheck or add/delete an item).
+
+<style>
+.rerendering-required:after {
+    content: ' *';
+    color: #e32;
+}
+</style>
