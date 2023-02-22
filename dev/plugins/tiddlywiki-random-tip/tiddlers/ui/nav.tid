@@ -1,0 +1,4 @@
+title: $:/plugins/oeyoews/tiddlywiki-random-tip/nav
+tags: $:/tags/ViewTemplate
+
+<<rnav tag:"Tiddlywiki5Tip" class:"o-rnav" close:"yes">>

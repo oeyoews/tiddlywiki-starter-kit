@@ -1,6 +1,11 @@
 title: $:/plugins/oeyoews/tiddlywiki-random-tip/style
 tags: $:/tags/Stylesheet
 
+.o-rnav:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 .o-random-tip .tc-modal,
 .o-random-tip .tc-modal-header,
 .o-random-tip .tc-modal-body,

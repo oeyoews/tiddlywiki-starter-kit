@@ -8,3 +8,21 @@ tags: $:/tags/Macro
 </a>
 </div>
 \end
+
+\define rnav(tag, class, close:"no")
+<$list filter="[all[current]tag<__tag__>]">
+<div class="$class$">
+<$list filter="[tag<__tag__>before<currentTiddler>]" variable="prevTiddler">
+<$button to=<<prevTiddler>> tooltip=<<prevTiddler>> class="tc-btn-invisible $class$">previous
+<$list filter="[<__close__>match[yes]]" variable=ignore><$action-sendmessage $message="tm-close-tiddler" $param=<<currentTiddler>>/></$list>
+</$button>
+</$list>
+<$list filter="[tag<__tag__>after<currentTiddler>] [tag<__tag__>before<currentTiddler>] +[count[]] -1" variable=ignore></$list>
+<$list filter="[tag<__tag__>after<currentTiddler>]" variable="nextTiddler">
+<$button to=<<nextTiddler>> tooltip=<<nextTiddler>> class="tc-btn-invisible $class$">next
+<$list filter="[<__close__>match[yes]]" variable=ignore><$action-sendmessage $message="tm-close-tiddler" $param=<<currentTiddler>>/></$list>
+</$button>
+</$list>
+</div>
+</$list>
+\end
