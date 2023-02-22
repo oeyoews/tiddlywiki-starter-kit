@@ -1,3 +1,15 @@
+# [3.44.0](https://github.com/oeyoews/neotw/compare/v3.43.0...v3.44.0) (2023-02-22)
+
+
+### Features
+
+* add filter for back to top or bottom ([8bd3cd8](https://github.com/oeyoews/neotw/commit/8bd3cd8881610e7e61da9e052345e966b46868d4))
+
+
+### Performance Improvements
+
+* add filter for back to top or bottom ([a352b88](https://github.com/oeyoews/neotw/commit/a352b88cd4c8096fbbaaa55173c52993a76e8202))
+
 # [3.43.0](https://github.com/oeyoews/neotw/compare/v3.42.2...v3.43.0) (2023-02-22)
 
 
