@@ -1,3 +1,10 @@
+## [3.42.2](https://github.com/oeyoews/neotw/compare/v3.42.1...v3.42.2) (2023-02-22)
+
+
+### Performance Improvements
+
+* remove unused state tiddler ([432af31](https://github.com/oeyoews/neotw/commit/432af3120074451fc8d028a8577e6466ad9800ee))
+
 ## [3.42.1](https://github.com/oeyoews/neotw/compare/v3.42.0...v3.42.1) (2023-02-22)
 
 
