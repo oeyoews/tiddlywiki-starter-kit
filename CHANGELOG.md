@@ -1,3 +1,10 @@
+# [3.42.0](https://github.com/oeyoews/neotw/compare/v3.41.1...v3.42.0) (2023-02-22)
+
+
+### Features
+
+* use compare and add operator ([d43d642](https://github.com/oeyoews/neotw/commit/d43d642761a50c386176497f0f95bbbeded090c7))
+
 ## [3.41.1](https://github.com/oeyoews/neotw/compare/v3.41.0...v3.41.1) (2023-02-22)
 
 
