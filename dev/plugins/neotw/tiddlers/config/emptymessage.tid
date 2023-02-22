@@ -2,16 +2,31 @@ title: $:/config/EmptyStoryMessage
 <!-- tags: $:/tags/AboveStory -->
 
 {{{ [[GettingStarted]] ||$:/core/ui/ViewTemplate }}}
+<$set name="a-count" value={{{ [[$:/temp/number]get[number]] }}}>
 {{{ [!is[system]field:publish[article]!sort[modified]limit<a-count>] -[[GettingStarted]]||$:/core/ui/ViewTemplate}}}
+</$set>
 
 <!-- status -->
-<$list filter="[[$:/state/a-count]is[missing]]">
+<$list filter="[[$:/state/a-count-10]is[missing]]">
 <center>
-	<$button class="o-load-more" set="$:/state/a-count" setTo="yes">
+	<$button class="o-load-more" set="$:/state/a-count-10" setTo="yes">
     &nbsp;
      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path></svg>
     &nbsp;
-    <$action-setfield $tiddler="$:/temp/a-count" text="\define a-count() 10" tags="$:/tags/Macro"/>
+    <$action-setfield $tiddler="$:/temp/number" number="10" />
 	</$button>
 </center>
+</$list>
+
+<$list filter="[[$:/state/a-count-all]is[missing]]">
+<$list filter={{{ [[$:/state/a-count-10]is[tiddler]] }}}>
+<center>
+	<$button class="o-load-more" set="$:/state/a-count-all" setTo="yes">
+    &nbsp;
+     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path></svg>
+    &nbsp;
+    <$action-setfield $tiddler="$:/temp/number" number="9999" />
+	</$button>
+</center>
+</$list>
 </$list>
