@@ -1,3 +1,10 @@
+# [3.45.0](https://github.com/oeyoews/neotw/compare/v3.44.0...v3.45.0) (2023-02-22)
+
+
+### Features
+
+* add pangu ([8f8bfeb](https://github.com/oeyoews/neotw/commit/8f8bfeb3963af6251e23cee153ed8a2c8d2aa34a))
+
 # [3.44.0](https://github.com/oeyoews/neotw/compare/v3.43.0...v3.44.0) (2023-02-22)
 
 
