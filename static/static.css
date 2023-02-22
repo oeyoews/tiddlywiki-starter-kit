@@ -2469,7 +2469,16 @@ body.tc-dirty span.tc-dirty-indicator svg {
       transform: translate(-50%, 0);
     }
   }
-#stx-story-top {
+.o-btn-back {
+    background-color: #efefef;
+    border-radius: 50%;
+    padding: 0 0 7px;
+    margin: 0 0 9px;
+    display: block;
+}.o-btn-back:hover {
+  transform: scale(0.89);
+  transition: transform 0.2s;
+}#stx-story-top {
    position: fixed;
    bottom: 1rem;
    right: 1rem;
