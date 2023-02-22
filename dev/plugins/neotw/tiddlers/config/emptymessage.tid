@@ -9,7 +9,7 @@ title: $:/config/EmptyStoryMessage
 <!-- status -->
 <$list filter="[[$:/state/a-count-10]is[missing]]">
 <center>
-	<$button class="o-load-more" set="$:/state/a-count-10" setTo="yes">
+	<$button class="o-load-more" set="$:/state/a-count-10" setTo="yes" tooltip="load rencent 10 articles">
     &nbsp;
      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path></svg>
     &nbsp;
@@ -21,7 +21,7 @@ title: $:/config/EmptyStoryMessage
 <$list filter="[[$:/state/a-count-all]is[missing]]">
 <$list filter={{{ [[$:/state/a-count-10]is[tiddler]] }}}>
 <center>
-	<$button class="o-load-more" set="$:/state/a-count-all" setTo="yes">
+	<$button class="o-load-more" set="$:/state/a-count-all" setTo="yes" tooltip="load all articles">
     &nbsp;
      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path></svg>
     &nbsp;
