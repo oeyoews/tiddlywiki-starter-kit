@@ -1,3 +1,10 @@
+## [3.46.1](https://github.com/oeyoews/neotw/compare/v3.46.0...v3.46.1) (2023-02-22)
+
+
+### Performance Improvements
+
+* add hr for nav ([cf77a19](https://github.com/oeyoews/neotw/commit/cf77a1939dbce387ce9b52fce8fb45350b200604))
+
 # [3.46.0](https://github.com/oeyoews/neotw/compare/v3.45.0...v3.46.0) (2023-02-22)
 
 
