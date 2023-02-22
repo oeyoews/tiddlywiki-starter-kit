@@ -10,6 +10,7 @@ tags: $:/tags/Macro
 \end
 
 \define rnav(tag, class, close:"no")
+<hr>
 <$list filter="[all[current]tag<__tag__>]">
 <div class="$class$">
 <$list filter="[tag<__tag__>before<currentTiddler>]" variable="prevTiddler">

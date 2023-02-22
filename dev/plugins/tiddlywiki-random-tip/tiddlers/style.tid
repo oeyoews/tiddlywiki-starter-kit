@@ -1,6 +1,10 @@
 title: $:/plugins/oeyoews/tiddlywiki-random-tip/style
 tags: $:/tags/Stylesheet
 
+.o-rnav {
+  text-align: right;
+}
+
 .o-rnav:hover {
   text-decoration: underline;
   font-weight: bold;
