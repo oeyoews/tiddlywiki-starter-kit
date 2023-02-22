@@ -2500,25 +2500,6 @@ body.tc-dirty span.tc-dirty-indicator svg {
 #stx-story-top .tc-btn-rounded:active {
    padding-left: 0.75em;
    padding-right: 1em;
-}#stx-story-top button:not(:focus):not(:active) .tc-btn-text {
-   clip: rect(0 0 0 0);
-   clip-path: inset(50%);
-   height: 1px;
-   overflow: hidden;
-   position: absolute;
-   white-space: nowrap;
-   width: 1px;
-}.tc-btn-rounded:active {
-	border: 1px solid #999999;
-	background: #ffffff;
-	color: #999999;
-}html body.tc-body .tc-btn-rounded:active svg {
-	fill: #999999;
-}.tc-btn-boxed:active {
-	background: #999999;
-	color: #ffffff;
-}html body.tc-body .tc-btn-boxed:active svg {
-	fill: #ffffff;
 }
 footer {
 	flex: 1 1 auto;
@@ -3247,7 +3228,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Macro] .tc-tag-label:after {
-  content: " 50";
+  content: " 49";
 }
 
 
