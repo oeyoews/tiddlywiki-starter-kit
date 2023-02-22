@@ -6,7 +6,7 @@ title: $:/config/EmptyStoryMessage
 </$set>
 
 <$set name="a-total" value={{{ [field:publish[article]count[]] }}}>
-<$set name="a-num" value={{{ [[$:/temp/articles/number]get[number]else[0]add[5]] }}}>
+<$set name="a-num" value={{{ [[$:/temp/articles/number]get[number]else[0]add[1]] }}}>
 <$list filter="[<a-num>compare:number:lteq<a-total>]">
 <center>
 	<$button class="o-load-more" set="$:/state/a-count" setTo="yes" tooltip="Load rencent five articles">
