@@ -2,7 +2,6 @@ title: $:/plugins/oeyoews/neotw/config/load-style
 tags: $:/tags/Stylesheet
 
 .o-load-more:hover {
-  transform: scale(0.89);
+  transform: scale(1.1);
   transition: transform 0.2s;
-  <!-- background-color: aliceblue; -->
 }
