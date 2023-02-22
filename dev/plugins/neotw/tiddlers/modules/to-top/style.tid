@@ -1,7 +1,21 @@
 title: $:/plugins/oeyoews/neotw/modules/to-top/style
 tags: $:/tags/Stylesheet
+<!-- type: text/css -->
 
 \rules except list
+
+.o-btn-back {
+    background-color: #efefef;
+    border-radius: 50%;
+    padding: 0 0 7px;
+    margin: 0 0 9px;
+    display: block;
+}
+
+.o-btn-back:hover {
+  transform: scale(0.89);
+  transition: transform 0.2s;
+}
 
 #stx-story-top {
    position: fixed;
