@@ -6,13 +6,19 @@ tags: $:/tags/PageTemplate
 <$list filter="[list[$:/StoryList]count[]compare:number:gt[2]]">
 <div id="stx-story-top">
 <$button class=<<tv-config-toolbar-class>> tooltip="back to top">
-<<StoryTopExpress>>
+<!-- top -->
+<$list variable="target" filter="[list[$:/StoryList]first[]]">
+<$action-navigate $to=<<target>> $scroll="yes"/>
+</$list>
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M8 11h3v10h2V11h3l-4-4-4 4zM4 3v2h16V3H4z"></path></svg>
 </$list>
 </$button>
 <$button class=<<tv-config-toolbar-class>> tooltip="back to bottom">
-<<StoryBottomExpress>>
+<!-- bottom -->
+<$list variable="target" filter="[list[$:/StoryList]last[]]">
+<$action-navigate $to=<<target>> $scroll="yes"/>
+</$list>
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M16 13h-3V3h-2v10H8l4 4 4-4zM4 19v2h16v-2H4z"></path></svg>
 </$list>
