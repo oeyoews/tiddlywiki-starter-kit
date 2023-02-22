@@ -5163,7 +5163,9 @@ a[data-fancybox] img {
   border: none;
   border-radius: 3px;
 }
-.o-rnav:hover {
+.o-rnav {
+  text-align: right;
+}.o-rnav:hover {
   text-decoration: underline;
   font-weight: bold;
 }.o-random-tip .tc-modal,
