@@ -1,0 +1,20 @@
+title: $:/plugins/oeyoews/neotw/modules/to-top/macro
+tags: $:/tags/Macro
+
+<!-- based from tix's stx -->
+
+\define StoryTopExpress()
+<$list variable="target" filter="[list[$:/StoryList]first[]]">
+<$action-sendmessage $message="tm-focus-selector" $param=""".tc-story-river  button""" />
+<$action-sendmessage $message="tm-focus-selector" $param=""".tc-story-river a""" />
+<$action-navigate $to=<<target>>/>
+</$list>
+\end
+
+\define StoryBottomExpress()
+<$list variable="target" filter="[list[$:/StoryList]last[]]">
+<$action-sendmessage $message="tm-focus-selector" $param=""".tc-story-river  button""" />
+<$action-sendmessage $message="tm-focus-selector" $param=""".tc-story-river a""" />
+<$action-navigate $to=<<target>>/>
+</$list>
+\end

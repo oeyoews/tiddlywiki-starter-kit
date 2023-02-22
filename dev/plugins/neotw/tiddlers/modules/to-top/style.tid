@@ -1,0 +1,97 @@
+title: $:/plugins/oeyoews/neotw/modules/to-top/style
+tags: $:/tags/Stylesheet
+
+\rules except list
+
+#stx-story-top {
+   position: fixed;
+   bottom: 1rem;
+   right: 1rem;
+   font-size: 1.75rem;
+   z-index: 999;
+}
+
+#stx-story-top button {
+   opacity: 0.7;
+   min-width: 1.5em;
+}
+
+#stx-story-top .tc-btn-text {
+   margin-left: 0.3em;
+   vertical-align: middle;
+}
+
+#stx-story-top .tc-btn-invisible {
+   font-size: 0.75em;
+}
+
+#stx-story-top .tc-btn-invisible:hover,
+#stx-story-top .tc-btn-invisible:focus {
+   opacity: 1;
+}
+
+#stx-story-top .tc-btn-rounded,
+#stx-story-top .tc-btn-boxed {
+   min-width: 2.5em;
+}
+
+#stx-story-top .tc-btn-rounded {
+   font-size: 0.5em;
+   height: 2.5em;
+}
+
+#stx-story-top .tc-btn-boxed {
+   font-size: 0.6em;
+   padding-left: 0.5em;
+   padding-right: 0.5em;
+}
+
+#stx-story-top .tc-btn-rounded:focus,
+#stx-story-top .tc-btn-rounded:active {
+   padding-left: 0.75em;
+   padding-right: 1em;
+}
+
+<$reveal type="nomatch" state="$:/config/Toolbar/Text" text="yes">
+
+#stx-story-top button:not(:focus):not(:active) .tc-btn-text {
+   clip: rect(0 0 0 0);
+   clip-path: inset(50%);
+   height: 1px;
+   overflow: hidden;
+   position: absolute;
+   white-space: nowrap;
+   width: 1px;
+}
+
+</$reveal>
+
+<$reveal type="match" state="$:/config/Toolbar/Text" text="yes">
+
+/* button with text */
+
+#stx-story-top .tc-btn-rounded {
+   padding-left: 0.75em;
+   padding-right: 1em;
+}
+
+</$reveal>
+
+.tc-btn-rounded:active {
+	border: 1px solid <<colour muted-foreground>>;
+	background: <<colour background>>;
+	color: <<colour muted-foreground>>;
+}
+
+html body.tc-body .tc-btn-rounded:active svg {
+	fill: <<colour muted-foreground>>;
+}
+
+.tc-btn-boxed:active {
+	background: <<colour muted-foreground>>;
+	color: <<colour background>>;
+}
+
+html body.tc-body .tc-btn-boxed:active svg {
+	fill: <<colour background>>;
+}
