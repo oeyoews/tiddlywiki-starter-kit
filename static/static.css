@@ -2877,39 +2877,6 @@ footer {
 
 [data-tiddler-title="xiaofamao"] .tc-tiddler-controls  {display: none;}
 
-
-[data-tiddler-title="about-TIDDLYWIKI_PLUGIN_PATH-not-working"] .tc-tiddler-controls  {display: none;}
-
-[data-tiddler-title="add-animation-for-layout"] .tc-tiddler-controls  {display: none;}
-
-[data-tiddler-title="affine-pro"] .tc-tiddler-controls  {display: none;}
-
-[data-tiddler-title="dream-plan-websites"] .tc-tiddler-controls  {display: none;}
-
-[data-tiddler-title="GettingStarted"] .tc-tiddler-controls  {display: none;}
-
-[data-tiddler-title="gh-pages-cache"] .tc-tiddler-controls  {display: none;}
-
-[data-tiddler-title="gnome-extensions"] .tc-tiddler-controls  {display: none;}
-
-[data-tiddler-title="js-books"] .tc-tiddler-controls  {display: none;}
-
-[data-tiddler-title="markdown-test"] .tc-tiddler-controls  {display: none;}
-
-[data-tiddler-title="memos-docker-compose"] .tc-tiddler-controls  {display: none;}
-
-[data-tiddler-title="name-your-tid"] .tc-tiddler-controls  {display: none;}
-
-[data-tiddler-title="neotw-changlog"] .tc-tiddler-controls  {display: none;}
-
-[data-tiddler-title="pang-test"] .tc-tiddler-controls  {display: none;}
-
-[data-tiddler-title="test-compose-on-tiddlywiki"] .tc-tiddler-controls  {display: none;}
-
-[data-tiddler-title="use-latest-tiddlywiki"] .tc-tiddler-controls  {display: none;}
-
-[data-tiddler-title="xiaofamao"] .tc-tiddler-controls  {display: none;}
-
 .shield {
   font-weight: normal;
   display: inline-block;
@@ -3136,7 +3103,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/PageControls] .tc-tag-label:after {
-  content: " 30";
+  content: " 31";
 }
 
 
@@ -3178,7 +3145,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/ViewTemplate] .tc-tag-label:after {
-  content: " 14";
+  content: " 15";
 }
 
 
@@ -3232,13 +3199,13 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Macro] .tc-tag-label:after {
-  content: " 49";
+  content: " 50";
 }
 
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 61";
+  content: " 62";
 }
 
 
@@ -3388,7 +3355,13 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/StartupAction\/PostRender] .tc-tag-label:after {
-  content: " 1";
+  content: " 2";
+}
+
+
+
+[data-tag-title=Tiddlywiki5Tip] .tc-tag-label:after {
+  content: " 7";
 }
 
 
@@ -5189,6 +5162,30 @@ a[data-fancybox] img {
 .o-select {
   border: none;
   border-radius: 3px;
+}
+.o-rnav:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}.o-random-tip .tc-modal,
+.o-random-tip .tc-modal-header,
+.o-random-tip .tc-modal-body,
+.o-random-tip .tc-modal-footer {
+   border-radius: 5px;
+   border: none;
+   background-color: #F5F5F5;
+}.o-random-tip .tc-modal-footer {
+    display:none;
+}.o-random-right {
+    text-align: right;
+}.o-random-tip blockquote {
+	border: none;
+	background-color: whitesmoke;
+	padding: 5px 10px;
+	border-radius: 5px;
+}.o-random-tip blockquote:hover {
+    transform: scale(0.99);
+    background-color: aliceblue !important;
+    transition: transform .2s;
 }
 .nauthor img {
     width: 100%;
