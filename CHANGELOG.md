@@ -1,3 +1,10 @@
+## [3.41.1](https://github.com/oeyoews/neotw/compare/v3.41.0...v3.41.1) (2023-02-22)
+
+
+### Bug Fixes
+
+* update emptymessage ([aa6566f](https://github.com/oeyoews/neotw/commit/aa6566f6d004017a6464e24a9470ff70761fbbba))
+
 # [3.41.0](https://github.com/oeyoews/neotw/compare/v3.40.3...v3.41.0) (2023-02-21)
 
 
