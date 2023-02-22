@@ -1,3 +1,15 @@
+## [3.42.1](https://github.com/oeyoews/neotw/compare/v3.42.0...v3.42.1) (2023-02-22)
+
+
+### Bug Fixes
+
+* use lteq instead of lt ([aa1e7a0](https://github.com/oeyoews/neotw/commit/aa1e7a0f6d483f0f8f30d91dbee57fbe388d2f8a))
+
+
+### Performance Improvements
+
+* use 1 instead of 5 ([c456709](https://github.com/oeyoews/neotw/commit/c4567099870f45cde27ed54f70fba9062c12a6fa))
+
 # [3.42.0](https://github.com/oeyoews/neotw/compare/v3.41.1...v3.42.0) (2023-02-22)
 
 
