@@ -2865,8 +2865,6 @@ footer {
 
 [data-tiddler-title="some tw website examples"] .tc-tiddler-controls  {display: none;}
 
-[data-tiddler-title="test"] .tc-tiddler-controls  {display: none;}
-
 [data-tiddler-title="test-compose-on-tiddlywiki"] .tc-tiddler-controls  {display: none;}
 
 [data-tiddler-title="thesis-record"] .tc-tiddler-controls  {display: none;}
@@ -3457,7 +3455,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "139";
+  content: "138";
 }
 .user-panel-avatar { position: relative; max-width: 22px; max-height: 22px; }.user-panel-avatar-56 { position: relative; max-width: 56px; max-height: 56px; }.user-panel-avatar-56 img { width: 100%; height: auto; max-width: 56px; max-height: 56px; border-radius: 50%; aspect-ratio: 1 / 1; }.user-panel-avatar img { width: 100%; height: auto; max-width: 22px; max-height: 22px; border-radius: 50%; aspect-ratio: 1 / 1; }
 .CodeMirror-hints {
