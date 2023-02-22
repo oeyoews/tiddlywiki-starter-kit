@@ -43,6 +43,7 @@ type: application/javascript
         this.execute();
         var id = this.getAttribute("id", "");
         var lang = this.getAttribute("lang", "en");
+        <!-- var mapping = this.getAttribute("title", "title") -->
         var theme = this.getAttribute("theme", "light");
         if (id === '') return;
         var scriptNode = this.document.createElement('script');
@@ -56,7 +57,7 @@ type: application/javascript
         scriptNode.setAttribute("data-mapping", "specific");
         scriptNode.setAttribute("data-term", id);
         scriptNode.setAttribute("data-reactions-enabled", "1");
-        scriptNode.setAttribute("data-emit-metadata", "0");
+        scriptNode.setAttribute("data-emit-metadata", "1");
         scriptNode.setAttribute("data-input-position", "top");
         <!-- scriptNode.setAttribute("data-loading", "lazy"); -->
         scriptNode.setAttribute("data-theme", theme);
