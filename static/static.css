@@ -3234,6 +3234,12 @@ footer {
 
 
 
+[data-tag-title=\$\:\/tags\/RawMarkupWikified\/BottomBody] .tc-tag-label:after {
+  content: " 3";
+}
+
+
+
 [data-tag-title=\$\:\/tags\/Layout] .tc-tag-label:after {
   content: " 1";
 }
@@ -3242,12 +3248,6 @@ footer {
 
 [data-tag-title=\$\:\/tags\/RawMarkupWikified] .tc-tag-label:after {
   content: " 1";
-}
-
-
-
-[data-tag-title=\$\:\/tags\/RawMarkupWikified\/BottomBody] .tc-tag-label:after {
-  content: " 2";
 }
 
 
