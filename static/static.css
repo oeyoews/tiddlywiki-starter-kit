@@ -2371,9 +2371,8 @@ body.tc-dirty span.tc-dirty-indicator svg {
 	}
 }
 .o-load-more:hover {
-  transform: scale(0.89);
+  transform: scale(1.1);
   transition: transform 0.2s;
-  
 }
 .friend-card {
     margin-bottom: 10px;
@@ -2476,7 +2475,7 @@ body.tc-dirty span.tc-dirty-indicator svg {
     margin: 0 0 9px;
     display: block;
 }.o-btn-back:hover {
-  transform: scale(0.89);
+  transform: scale(1.1);
   transition: transform 0.2s;
 }#stx-story-top {
    position: fixed;
