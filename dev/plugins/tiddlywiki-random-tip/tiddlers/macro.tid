@@ -11,7 +11,7 @@ tags: $:/tags/Macro
 
 <!-- based from kookma -->
 \define rnav(tag, class, close:"no")
-<$list filter="[all[current]tag<__tag__>]">
+<$list filter="[all[current]is[system]tag<__tag__>]">
 <hr style="border:none;">
 <div class="$class$">
 <$list filter="[tag<__tag__>before<currentTiddler>]" variable="prevTiddler">
