@@ -1,3 +1,10 @@
+# [3.46.0](https://github.com/oeyoews/neotw/compare/v3.45.0...v3.46.0) (2023-02-22)
+
+
+### Features
+
+* add navigation for tiddlywiki-random-tip ([e741d4c](https://github.com/oeyoews/neotw/commit/e741d4c0e8304103ad9554f14a47fd03377c0af2))
+
 # [3.45.0](https://github.com/oeyoews/neotw/compare/v3.44.0...v3.45.0) (2023-02-22)
 
 
