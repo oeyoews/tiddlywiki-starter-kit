@@ -2,7 +2,7 @@
   "title": "$:/plugins/oeyoews/tiddlywiki-random-tip",
   "description": "Tiddlywiki Random Tip",
   "author": "oeyoews",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "core-version": ">=5.2.5",
   "type": "application/json",
   "plugin-type": "plugin",
