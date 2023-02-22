@@ -2902,6 +2902,8 @@ footer {
 
 [data-tiddler-title="neotw-changlog"] .tc-tiddler-controls  {display: none;}
 
+[data-tiddler-title="pang-test"] .tc-tiddler-controls  {display: none;}
+
 [data-tiddler-title="test-compose-on-tiddlywiki"] .tc-tiddler-controls  {display: none;}
 
 [data-tiddler-title="use-latest-tiddlywiki"] .tc-tiddler-controls  {display: none;}
