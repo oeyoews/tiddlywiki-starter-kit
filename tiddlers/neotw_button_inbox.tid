@@ -1,19 +1,22 @@
 created: 20220806081632787
 creator: oeyoews
 description: bells
-modified: 20230220160334948
+modified: 20230222092634424
 modifier: oeyoews
 tags: $:/tags/PageControls
 title: neotw/button/inbox
 type: text/vnd.tiddlywiki
 
 \whitespace trim
+<$list filter="[tag[todo]count[]compare:number:gt[0]]">
 <$button tooltip="Inbox" aria-label="show info" class=<<tv-config-toolbar-class>>> 
 {{neotw/icon/bell}}
+<$action-navigate $to="neotw/INBOX"/>
+</$button>
+</$list>
+
 <$list filter="[<tv-config-toolbar-text>match[yes]]">
 <span class="tc-btn-text">
 <$text text="show your bells"/>
 </span>
 </$list>
-<$action-navigate $to="neotw/INBOX"/>
-</$button>
