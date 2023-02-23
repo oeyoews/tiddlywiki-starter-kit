@@ -1,9 +1,3 @@
-<div align="center">
-
-<h1>Neotw</h1>
-
-</div>
-
 <center>
 <!-- badges -->
 <a href="https://gitter.im/oeyoews/neotw?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge" target="_blank">
@@ -30,6 +24,7 @@
 
 ## Features
 
+- 支持禅模式
 - 自动展示最近创建的文章
 - 中英文之间自动添加空格，排版更美观
 - ...

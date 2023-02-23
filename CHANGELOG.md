@@ -1,3 +1,10 @@
+# [3.52.0](https://github.com/oeyoews/neotw/compare/v3.51.2...v3.52.0) (2023-02-23)
+
+
+### Features
+
+* support zen-mode ([0df9220](https://github.com/oeyoews/neotw/commit/0df9220ee923befa4f4fbc655180e6c64ae97f18))
+
 ## [3.51.2](https://github.com/oeyoews/neotw/compare/v3.51.1...v3.51.2) (2023-02-23)
 
 
