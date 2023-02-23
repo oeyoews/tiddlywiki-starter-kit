@@ -3758,7 +3758,9 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 }.py-welcome p {
   margin: 0;
 }
-.o-load-more:hover {
+.o-load-more {
+  box-shadow: 0 5px 20px #0000001f
+}.o-load-more:hover {
   transform: scale(1.1);
   transition: transform 0.2s;
   color: black;
@@ -3863,6 +3865,7 @@ http://nicolasgallagher.com/micro-clearfix-hack/
     padding: 0 0 7px;
     margin: 0 0 9px;
     display: block;
+    box-shadow: 0 5px 20px #0000001f
 }.o-btn-back:hover {
   transform: scale(1.1);
   transition: transform 0.2s;
