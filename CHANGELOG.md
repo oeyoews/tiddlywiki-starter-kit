@@ -1,3 +1,10 @@
+# [3.51.0](https://github.com/oeyoews/neotw/compare/v3.50.2...v3.51.0) (2023-02-23)
+
+
+### Features
+
+* support markdown-it-emoji ([2965960](https://github.com/oeyoews/neotw/commit/29659608a966a5d86a840df2f96a4458aeaf5c30))
+
 ## [3.50.2](https://github.com/oeyoews/neotw/compare/v3.50.1...v3.50.2) (2023-02-23)
 
 
