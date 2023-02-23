@@ -1,3 +1,10 @@
+## [3.50.2](https://github.com/oeyoews/neotw/compare/v3.50.1...v3.50.2) (2023-02-23)
+
+
+### Bug Fixes
+
+* update mobile index to readme ([c5c865e](https://github.com/oeyoews/neotw/commit/c5c865e0446a03f4850a7c41897855682a091d12))
+
 ## [3.50.1](https://github.com/oeyoews/neotw/compare/v3.50.0...v3.50.1) (2023-02-23)
 
 
