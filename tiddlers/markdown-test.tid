@@ -1,12 +1,18 @@
 caption: markdown 语法测试
 created: 20230221073554683
 creator: oeyoews
-modified: 20230223030005388
+modified: 20230223081355888
 modifier: oeyoews
 publish: article
 tags: 
 title: markdown-test
 type: text/markdown
+
+## emoji
+
+* :tada:
+* :smile:
+* :cat:
 
 ## better render
 
