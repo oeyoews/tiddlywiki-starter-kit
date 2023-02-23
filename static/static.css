@@ -4261,6 +4261,10 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 .nc-topbar {
   display: none !important;
 }
+
+.nc-topbar {
+    display: none !important;
+}
 .custom-details {
   border-radius: 10px;
   padding: 0 10px;
