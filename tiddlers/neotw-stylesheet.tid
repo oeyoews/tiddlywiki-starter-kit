@@ -1,12 +1,16 @@
 created: 20230202124524313
 creator: oeyoews
 empty: yes
-modified: 20230221072204556
+modified: 20230223045536000
 modifier: oeyoews
 page-cover: 
 tags: $:/tags/Stylesheet
 title: neotw-stylesheet
 type: text/vnd.tiddlywiki
+
+.tc-titlebar h2 {
+	text-transform: Capitalize;
+}
 
 a {
 	color: #007bff;
