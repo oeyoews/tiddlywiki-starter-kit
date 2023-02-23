@@ -1,3 +1,10 @@
+# [3.50.0](https://github.com/oeyoews/neotw/compare/v3.49.0...v3.50.0) (2023-02-23)
+
+
+### Features
+
+* use tiddlywiki to generate readme file ([f8f651f](https://github.com/oeyoews/neotw/commit/f8f651ff40fa5ab475320087da93f657c4b97f90))
+
 # [3.49.0](https://github.com/oeyoews/neotw/compare/v3.48.0...v3.49.0) (2023-02-23)
 
 
