@@ -2511,6 +2511,20 @@ body.tc-dirty span.tc-dirty-indicator svg {
    padding-left: 0.75em;
    padding-right: 1em;
 }
+.custom-details {
+  border-radius: 10px;
+  padding: 0 10px;
+  display: inline;
+  color: #aaa;
+}.custom-details[open] {
+  display: block;
+}.custom-details:hover {
+  color: #333333;
+  transform: scale(0.99);
+  transition: transform .2s;
+}.custom-details>summary {
+   border-radius: 6px;
+}
 footer {
 	flex: 1 1 auto;
 	display:flex !important;
@@ -3215,7 +3229,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 61";
+  content: " 62";
 }
 
 
