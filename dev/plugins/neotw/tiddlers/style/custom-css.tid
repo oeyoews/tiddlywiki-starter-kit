@@ -20,4 +20,10 @@ tags: $:/tags/Stylesheet
 
 .custom-details>summary {
    border-radius: 6px;
+   background-color: #f7f7f7 !important;
+   margin-right: 2px;
+}
+
+.custom-details>summary::marker {
+   content:"";
 }
