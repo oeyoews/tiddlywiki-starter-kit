@@ -24,8 +24,6 @@
  </a>
 </center>
 
-[toc]
-
 ## Intro :tada:
 
 > A modern style notebook based on `tiddlywiki`
