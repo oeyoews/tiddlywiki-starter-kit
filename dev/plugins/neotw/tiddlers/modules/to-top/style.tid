@@ -7,7 +7,7 @@ tags: $:/tags/Stylesheet
 .o-btn-back {
     background-color: #efefef;
     border-radius: 50%;
-    padding: 0 0 7px;
+    padding: 0 0 5px;
     margin: 0 0 9px;
     display: block;
     box-shadow: 0 5px 20px #0000001f
@@ -23,7 +23,7 @@ tags: $:/tags/Stylesheet
    position: fixed;
    bottom: 1rem;
    right: 1rem;
-   font-size: 1.75rem;
+   font-size: 24px;
    z-index: 999;
 }
 

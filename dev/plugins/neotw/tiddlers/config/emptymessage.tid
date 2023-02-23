@@ -4,16 +4,3 @@ title: $:/config/EmptyStoryMessage
 <$set name="a-count" value={{{ [[$:/temp/articles/number]get[number]] }}}>
 {{{ [!is[system]field:publish[article]!sort[modified]limit<a-count>] -[[GettingStarted]]||$:/core/ui/ViewTemplate}}}
 </$set>
-
-<$set name="a-total" value={{{ [field:publish[article]count[]] }}}>
-<$set name="a-num" value={{{ [[$:/temp/articles/number]get[number]else[1]add[1]] }}}>
-<$list filter="[<a-num>compare:number:lteq<a-total>]">
-<center>
-	<$button class="o-load-more" tooltip="load rencent articles" style="padding: 8px 10px;border-radius: 50%;">
-     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path></svg>
-  <$action-setfield $tiddler="$:/temp/articles/number" number={{{ [<a-num>] }}}/>
-	</$button>
-</center>
-</$list>
-</$set>
-</$set>
