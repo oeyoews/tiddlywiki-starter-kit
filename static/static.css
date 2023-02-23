@@ -2373,6 +2373,7 @@ body.tc-dirty span.tc-dirty-indicator svg {
 .o-load-more:hover {
   transform: scale(1.1);
   transition: transform 0.2s;
+  color: black;
 }
 .friend-card {
     margin-bottom: 10px;
@@ -2477,6 +2478,7 @@ body.tc-dirty span.tc-dirty-indicator svg {
 }.o-btn-back:hover {
   transform: scale(1.1);
   transition: transform 0.2s;
+  color: black;
 }#stx-story-top {
    position: fixed;
    bottom: 1rem;
