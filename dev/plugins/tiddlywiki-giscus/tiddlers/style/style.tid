@@ -38,6 +38,7 @@ tags: $:/tags/Stylesheet
 .giscus-footer {
     color: #aaaaaa;
     font-size: 14px;
+    margin-top: 10px;
 }
 
 .giscus-footer:hover {

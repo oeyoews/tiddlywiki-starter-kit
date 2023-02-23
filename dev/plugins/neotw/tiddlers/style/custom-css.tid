@@ -6,7 +6,24 @@ tags: $:/tags/Stylesheet
 \end
 
 <$list filter="[!is[system]]">
-<<hide-tiddler-controls>>
+  <<hide-tiddler-controls>>
+</$list>
+
+<!-- https://talk.tiddlywiki.org/t/is-blank-seems-to-return-nothing/4713/5 -->
+<$list filter="[[$:/StoryList]get[list]count[]match[0]]">
+.tc-tiddler-controls  {display: none !important;}
+</$list>
+
+<$list filter="[[$:/StoryList]get[list]count[]match[0]]">
+.nc-topbar {
+  display: none !important;
+}
+</$list>
+
+<$list filter="[[$:/StoryList]get[list]is[blank]]">
+.nc-topbar {
+    display: none;
+}
 </$list>
 
 .custom-details {
