@@ -1,13 +1,14 @@
 created: 20230202124524313
 creator: oeyoews
 empty: yes
-modified: 20230223045536000
+modified: 20230223045918682
 modifier: oeyoews
 page-cover: 
 tags: $:/tags/Stylesheet
 title: neotw-stylesheet
 type: text/vnd.tiddlywiki
 
+<!-- .tc-tiddler-body h2, -->
 .tc-titlebar h2 {
 	text-transform: Capitalize;
 }
