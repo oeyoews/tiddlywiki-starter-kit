@@ -33,20 +33,23 @@ await spinner('Building ...', async () => {
   // library
   await $`npx ${bin} ${libbuild} --build library`;
 
-  // index
+  // build index
   await $`npx ${bin} --build index`;
-
-  // static
+  // build static
   await $`npx ${bin} --build static`;
-
   // build readable name plugins
   await $`npx ${bin} --build plugins`;
-
+  // build empty
   await $`npx ${bin} --build neotw-empty`;
 
   // after building
   await $`mv ${library} ${dist}`;
+  // minify index.html
   await $`npx html-minifier-terser -c ./config/html-minifier-terser-config.json -o dist/index.html dist/index.html`;
-  await $`cp -r files vercel.json src/index-* img/default2.avif ${dist}`;
+  // misc
+  await $`cp -r files vercel.json src/index-* ${dist}`;
+  // copy readme file
+  await $`cp dev/plugins/neotw/README.md README.md`;
+  // msg
   msg.finish('Building Finished(for oyeoews)');
 });
