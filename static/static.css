@@ -6340,6 +6340,8 @@ ol.doc-github-contributors li {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+}.tc-titlebar h2 {
+	text-transform: Capitalize;
 }a {
 	color: #007bff;
 	text-decoration: none;
