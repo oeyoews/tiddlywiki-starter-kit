@@ -1,6 +1,14 @@
 title: $:/plugins/oeyoews/neotw/style/custom-css
 tags: $:/tags/Stylesheet
 
+\define hide-tiddler-controls()
+[data-tiddler-title="$(currentTiddler)$"] .tc-titlebar h2  { text-transform: Capitalize; }
+\end
+
+<$list filter="[!is[system]]">
+<<hide-tiddler-controls>>
+</$list>
+
 .custom-details {
   border-radius: 10px;
   padding: 0 10px;
