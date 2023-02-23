@@ -2524,6 +2524,10 @@ body.tc-dirty span.tc-dirty-indicator svg {
   transition: transform .2s;
 }.custom-details>summary {
    border-radius: 6px;
+   background-color: #f7f7f7 !important;
+   margin-right: 2px;
+}.custom-details>summary::marker {
+   content:"";
 }
 footer {
 	flex: 1 1 auto;
