@@ -20,17 +20,12 @@ tags: $:/tags/Stylesheet
 }
 </$list>
 
-<!-- <$list filter="[[$:/temp/SimpleMode]is[missing]] [[$:/temp/SimpleMode]get[text]match[yes]]"> -->
-<!-- .nc-topbar { -->
-<!--   display: none !important; -->
-<!-- } -->
-<!-- </$list> -->
-<!---->
-<!-- <$list filter="[[$:/temp/SimpleMode]is[missing]] [[$:/temp/SimpleMode]get[text]match[no]]"> -->
-<!-- .nc-topbar { -->
-<!--   display: flex !important; -->
-<!-- } -->
-<!-- </$list> -->
+<$list filter="[[$:/temp/zen-mode]get[text]match[yes]]">
+.tc-tiddler-controls,
+.nc-topbar {
+  display: none !important;
+}
+</$list>
 
 <$list filter="[[$:/StoryList]get[list]count[]match[0]]">
 .nc-topbar {
