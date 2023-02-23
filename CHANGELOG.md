@@ -1,3 +1,10 @@
+# [3.49.0](https://github.com/oeyoews/neotw/compare/v3.48.0...v3.49.0) (2023-02-23)
+
+
+### Features
+
+* add text-transform for h2 ([4fba135](https://github.com/oeyoews/neotw/commit/4fba1350e5b0cc6bb545e6d824ddaa8224fe6c24))
+
 # [3.48.0](https://github.com/oeyoews/neotw/compare/v3.47.0...v3.48.0) (2023-02-22)
 
 
