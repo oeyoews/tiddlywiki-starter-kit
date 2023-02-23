@@ -1,9 +1,9 @@
 caption: Recently added
 created: 20220828022145583
 creator: oeyoews
-list: $:/plugins/tiddlywiki/markdown/markdown-it-table-of-contents.js $:/plugins/tiddlywiki/markdown/markdown-it-emoji.js $:/config/FileSystemExtensions thesis-record bing-image-everyday $:/config/SaverFilter $:/language/MissingTiddler/Hint $:/core/ui/EditTemplate/fields $:/core/ui/EditTemplate/type neotw-stylesheet GettingStarted $:/themes/nico/notebook/ui/Sidebar/Sections recent-note-record neotw/button/mode $:/StaticBanner neotw/article/music-index $:/xp/ui/EditorToolbar/box-dropdown $:/config/shortcuts/box $:/xp/box-button/examples neotw/style/box
+list: $:/plugins/tiddlywiki/markdown/markdown-it-emoji.js $:/config/FileSystemExtensions thesis-record bing-image-everyday $:/config/SaverFilter $:/language/MissingTiddler/Hint $:/core/ui/EditTemplate/fields $:/core/ui/EditTemplate/type neotw-stylesheet GettingStarted $:/themes/nico/notebook/ui/Sidebar/Sections recent-note-record neotw/button/mode $:/StaticBanner neotw/article/music-index $:/xp/ui/EditorToolbar/box-dropdown $:/config/shortcuts/box $:/xp/box-button/examples neotw/style/box
 list-before: 
-modified: 20230223083430069
+modified: 20230223083909124
 modifier: oeyoews
 tags: $:/tags/Favorites/Folder
 title: $:/favorites/folders/recent
