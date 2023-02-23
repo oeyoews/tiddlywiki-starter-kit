@@ -1,11 +1,10 @@
 {
-    "version": "0.0.2",
-    "type": "application/json",
-    "title": "$:/plugins/oeyoews/neotw",
-    "plugin-type": "plugin",
-    "name": "Neotw",
-    "description": "Neotw",
-    "author": "oeyoews",
-    "plugin-priority": "999",
-    "list": "readme explore"
+  "version": "0.0.3",
+  "type": "application/json",
+  "title": "$:/plugins/oeyoews/neotw",
+  "plugin-type": "plugin",
+  "name": "Neotw",
+  "description": "Neotw",
+  "author": "oeyoews",
+  "list": "readme explore"
 }

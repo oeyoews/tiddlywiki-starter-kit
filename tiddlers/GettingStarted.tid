@@ -3,7 +3,7 @@ created: 20230117102714737
 creator: oeyoews
 giscus: yes
 icon: tom.png
-modified: 20230223063247795
+modified: 20230223064218066
 modifier: oeyoews
 page-cover: banner.png
 pin: yes
@@ -20,7 +20,5 @@ type: text/vnd.tiddlywiki
 
 
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
-
-{{Index}}
-
+{{$:/plugins/oeyoews/neotw/readme}}
 </$list>
