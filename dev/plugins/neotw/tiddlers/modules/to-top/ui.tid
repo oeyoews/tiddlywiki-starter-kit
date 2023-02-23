@@ -85,6 +85,7 @@ tags: $:/tags/PageTemplate
 </div>
 </$list>
 
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
 <$list filter="[[$:/StoryList]get[list]!is[blank]]">
 <$list filter="[list[$:/StoryList]count[]compare:number:lteq[2]]">
 <div id="stx-story-top">
@@ -109,5 +110,6 @@ tags: $:/tags/PageTemplate
 </$button>
 </$list>
 </div>
+</$list>
 </$list>
 </$list>
