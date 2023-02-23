@@ -1,6 +1,10 @@
 title: $:/plugins/oeyoews/neotw/config/load-style
 tags: $:/tags/Stylesheet
 
+.o-load-more {
+  box-shadow: 0 5px 20px #0000001f
+}
+
 .o-load-more:hover {
   transform: scale(1.1);
   transition: transform 0.2s;

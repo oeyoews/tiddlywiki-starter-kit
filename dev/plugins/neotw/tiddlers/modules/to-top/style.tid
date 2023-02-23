@@ -10,6 +10,7 @@ tags: $:/tags/Stylesheet
     padding: 0 0 7px;
     margin: 0 0 9px;
     display: block;
+    box-shadow: 0 5px 20px #0000001f
 }
 
 .o-btn-back:hover {
