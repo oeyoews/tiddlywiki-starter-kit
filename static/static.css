@@ -3758,13 +3758,6 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 }.py-welcome p {
   margin: 0;
 }
-.o-load-more {
-  box-shadow: 0 5px 20px #0000001f
-}.o-load-more:hover {
-  transform: scale(1.1);
-  transition: transform 0.2s;
-  color: black;
-}
 .friend-card {
     margin-bottom: 10px;
     display: flex;
@@ -3862,7 +3855,7 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 .o-btn-back {
     background-color: #efefef;
     border-radius: 50%;
-    padding: 0 0 7px;
+    padding: 0 0 5px;
     margin: 0 0 9px;
     display: block;
     box-shadow: 0 5px 20px #0000001f
@@ -3874,7 +3867,7 @@ http://nicolasgallagher.com/micro-clearfix-hack/
    position: fixed;
    bottom: 1rem;
    right: 1rem;
-   font-size: 1.75rem;
+   font-size: 24px;
    z-index: 999;
 }#stx-story-top button {
    opacity: 0.7;
@@ -4988,7 +4981,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 62";
+  content: " 61";
 }
 
 
