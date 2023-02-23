@@ -12,9 +12,9 @@ tags: $:/tags/Stylesheet
   display: block;
 }
 
-.custom-details:hover {
+.custom-details:not([open]):hover {
   color: #333333;
-  transform: scale(0.99);
+  transform: scale(1.1);
   transition: transform .2s;
 }
 
