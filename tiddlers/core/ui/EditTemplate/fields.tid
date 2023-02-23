@@ -1,7 +1,7 @@
 created: 20230204044056779
 creator: BramChen
 list-before: $:/core/ui/EditTemplate/body
-modified: 20230221055342678
+modified: 20230223032343052
 modifier: oeyoews
 tags: $:/tags/EditTemplate
 title: $:/core/ui/EditTemplate/fields
@@ -74,7 +74,7 @@ $value={{{ [subfilter<get-field-value-tiddler-filter>get[text]] }}}/>
 \define input-cancel-actions() <$list filter="[<storeTitle>get[text]] [<currentTiddler>get[type]] +[limit[1]]" emptyMessage="""<<cancel-delete-tiddler-actions "cancel">>"""><$action-sendmessage $message="tm-remove-field" $param="type"/><$action-deletetiddler $filter="[<typeInputTiddler>] [<refreshTitle>] [<typeSelectionTiddler>]"/></$list>
 \whitespace trim
 
-<details style="display:inline;">
+<details class="custom-details">
 <summary>&nbsp;Setup</summary>
 <$set name="refreshTitle" value=<<qualify "$:/temp/type-search/refresh">>>
 <div class="tc-edit-type-selector-wrapper">

@@ -1,0 +1,23 @@
+title: $:/plugins/oeyoews/neotw/style/custom-css
+tags: $:/tags/Stylesheet
+
+.custom-details {
+  border-radius: 10px;
+  padding: 0 10px;
+  display: inline;
+  color: #aaa;
+}
+
+.custom-details[open] {
+  display: block;
+}
+
+.custom-details:hover {
+  color: #333333;
+  transform: scale(0.99);
+  transition: transform .2s;
+}
+
+.custom-details>summary {
+   border-radius: 6px;
+}
