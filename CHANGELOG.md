@@ -1,3 +1,10 @@
+## [3.51.1](https://github.com/oeyoews/neotw/compare/v3.51.0...v3.51.1) (2023-02-23)
+
+
+### Bug Fixes
+
+* move zero to one ([1740a14](https://github.com/oeyoews/neotw/commit/1740a14160a48ef44acb53a5784ecd5016ea2efe))
+
 # [3.51.0](https://github.com/oeyoews/neotw/compare/v3.50.2...v3.51.0) (2023-02-23)
 
 
