@@ -1,3 +1,10 @@
+## [3.50.1](https://github.com/oeyoews/neotw/compare/v3.50.0...v3.50.1) (2023-02-23)
+
+
+### Bug Fixes
+
+* just use text-transform for non-system tiddlers ([73ea69f](https://github.com/oeyoews/neotw/commit/73ea69fadfe7f12ccf0b40c7439d6d68934a84ca))
+
 # [3.50.0](https://github.com/oeyoews/neotw/compare/v3.49.0...v3.50.0) (2023-02-23)
 
 
