@@ -1,0 +1,46 @@
+title: $:/plugins/oeyoews/neotw/export
+hide-body: yes
+
+\define export-to-cpl(pluginname)
+<$set name="pluginauthor" value={{{ [<__pluginname__>get[author]] }}}>
+  \define pluginprefix() {{{ [[$:/plugins/]addsuffix<pluginauthor>addsuffix[/]] }}}
+</$set>
+<$button>
+export {{{ [<__pluginname__>get[author]addsuffix[/]] [<__pluginname__>get[name]] +[join[]] }}} to CPL
+  <$action-deletetiddler $tiddler={{{  [<__pluginname__>get[author]addsuffix[/]] [<__pluginname__>get[name]] +[join[]] }}} />
+  <$action-createtiddler
+    $basetitle={{{ [<__pluginname__>get[author]addsuffix[/]] [<__pluginname__>get[name]] +[join[]] }}}
+    title={{{ [<__pluginname__>get[author]addsuffix[/]] [<__pluginname__>get[name]] +[join[]] }}}
+    cpl.author={{{ [<__pluginname__>get[author]] }}}
+    cpl.description={{{ [<__pluginname__>get[description]] }}}
+    cpl.version={{{ [<__pluginname__>get[version]] }}}
+    cpl.name={{{ [<__pluginname__>removeprefix<pluginprefix>] }}}
+    cpl.plugin-type=plugin
+    tags="$:/tags/PluginWiki"
+    cpl.core-version=">=5.2.5"
+    />
+</$button>
+
+!! preview
+
+"""
+    title={{{ [<__pluginname__>get[author]addsuffix[/]] [<__pluginname__>get[name]] +[join[]] }}}
+    cpl.author=<<pluginauthor>>
+    cpl.description={{{ [<__pluginname__>get[description]] }}}
+    cpl.version={{{ [<__pluginname__>get[version]] }}}
+    cpl.name={{{ [<__pluginname__>removeprefix<pluginprefix>] }}}
+    cpl.plugin-type=plugin
+    tags="$:/tags/PluginWiki"
+    cpl.core-version=">=5.2.5"
+"""
+
+\end
+
+<<export-to-cpl "$:/plugins/oeyoews/neotw">>
+
+    cpl.source=https://
+    page-cover=
+    cpl.uri=
+    cpl.readme=
+    cpl.documention=
+    icon=
