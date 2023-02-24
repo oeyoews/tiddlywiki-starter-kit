@@ -18,7 +18,7 @@ tags: $:/tags/PageTemplate
 
 \define zen-mode()
 <!-- zen mode -->
-<$list filter="[[$:/temp/zen-mode]is[missing]] [[$:/temp/zen-mode]get[text]match[no]]">
+<$list filter="[[$:/temp/zen-mode]get[text]else[no]match[no]]">
 <$button class=<<tv-config-toolbar-class>> tooltip="zen mode" class="o-btn-back">
 <$action-setfield $tiddler="$:/temp/zen-mode" text="yes"/>
 <$action-sendmessage $message="tm-full-screen"/>
@@ -42,7 +42,7 @@ tags: $:/tags/PageTemplate
 <!-- darkmode automatically -->
 \define toggle-theme()
 <!-- theme -->
-<$list filter="[[$:/palette]get[text]match[$:/themes/nico/notebook/palettes/palette-beige]]">
+<$list filter="[[$:/palette]get[text]else[$:/themes/nico/notebook/palettes/palette-beige]match[$:/themes/nico/notebook/palettes/palette-beige]]">
 <!-- to night -->
 <$button class=<<tv-config-toolbar-class>> tooltip="to night" class="o-btn-back">
 <$action-setfield $tiddler="$:/palette" text="$:/palettes/GithubDark"/>
