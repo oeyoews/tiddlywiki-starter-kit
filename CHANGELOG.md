@@ -1,3 +1,10 @@
+## [3.58.1](https://github.com/oeyoews/neotw/compare/v3.58.0...v3.58.1) (2023-02-24)
+
+
+### Bug Fixes
+
+* add para for full-screen ([62dbceb](https://github.com/oeyoews/neotw/commit/62dbceb8ec51b35bd91e94ee4a432cbbd1d28e75))
+
 # [3.58.0](https://github.com/oeyoews/neotw/compare/v3.57.0...v3.58.0) (2023-02-24)
 
 
