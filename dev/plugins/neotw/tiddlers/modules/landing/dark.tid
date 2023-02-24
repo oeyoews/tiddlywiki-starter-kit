@@ -1,0 +1,6 @@
+tags: $:/tags/StartupAction/PostRender
+title: $:/plugins/oeyoews/neotw/modules/darkmode/action
+
+<$list filter="[{$:/info/url/search}prefix[?dark]]">
+  <$action-setfield $tiddler="$:/palette" text="$:/palettes/GithubDark"/>
+</$list>

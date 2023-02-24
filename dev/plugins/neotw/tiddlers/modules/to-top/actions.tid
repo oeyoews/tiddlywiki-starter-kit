@@ -3,7 +3,9 @@ tags: $:/tags/StartupAction
 
 <!-- not work -->
 <!-- <$action-deletetiddler $tiddler="$:/palette"/> -->
-<$action-setfield $tiddler="$:/palette" text="$:/themes/nico/notebook/palettes/palette-beige"/>
+<$list filter="[{$:/info/darkmode}match[no]]">
+  <$action-setfield $tiddler="$:/palette" text="$:/themes/nico/notebook/palettes/palette-beige"/>
+</$list>
 
 <!-- <$list filter="[{$:/info/darkmode}match[no]]"> -->
 <!-- <$action-setfield $tiddler="$:/palette" text="$:/themes/nico/notebook/palettes/palette-beige"/> -->
