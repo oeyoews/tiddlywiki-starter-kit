@@ -1,7 +1,8 @@
 title: $:/plugins/oeyoews/neotw/modules/darkmode/actions
 tags: $:/tags/StartupAction
 
-<$action-deletetiddler $tiddler="$:/palette"/>
+<!-- not work -->
+<!-- <$action-deletetiddler $tiddler="$:/palette"/> -->
 <$action-setfield $tiddler="$:/palette" text="$:/themes/nico/notebook/palettes/palette-beige"/>
 
 <!-- <$list filter="[{$:/info/darkmode}match[no]]"> -->
