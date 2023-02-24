@@ -1,3 +1,10 @@
+# [3.54.0](https://github.com/oeyoews/neotw/compare/v3.53.0...v3.54.0) (2023-02-24)
+
+
+### Features
+
+* add load time ([d1223d3](https://github.com/oeyoews/neotw/commit/d1223d36bcd371a8b1e2801f54d3103b6e6b8bb3))
+
 # [3.53.0](https://github.com/oeyoews/neotw/compare/v3.52.0...v3.53.0) (2023-02-24)
 
 
