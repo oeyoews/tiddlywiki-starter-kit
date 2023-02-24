@@ -1,7 +1,11 @@
 tags: $:/tags/StartupAction
 title: $:/plugins/oeyoews/neotw/modules/landing/layout-url
 
+<!-- for landing layout -->
 <$list filter="[{$:/info/url/search}match[?gettingstarted]]">
-<$action-sendmessage $message="tm-notify" $param="Index"/>
-<$action-setfield $tiddler="$:/layout" text="$:/plugins/oeyoews/neotw/modules/landing/layout"/>
+  <$action-setfield $tiddler="$:/layout" text="$:/plugins/oeyoews/neotw/modules/landing/layout"/>
+</$list>
+
+<$list filter="[{$:/info/url/search}match[?temp]]">
+  <$action-setfield $tiddler="$:/DefaultTiddlers" text="[field:temp[yes]!sort[modified]]"/>
 </$list>

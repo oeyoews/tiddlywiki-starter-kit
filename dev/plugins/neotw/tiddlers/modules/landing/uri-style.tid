@@ -1,0 +1,8 @@
+title: $:/plugins/oeyoews/neotw/style/uri-style
+tags: $:/tags/Stylesheet
+
+<$list filter="[{$:/info/url/search}prefix[?]]">
+.nc-topbar {
+  display: none !important;
+}
+</$list>
