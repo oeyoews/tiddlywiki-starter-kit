@@ -39,6 +39,7 @@ tags: $:/tags/PageTemplate
 </$list>
 \end
 
+<!-- darkmode automatically -->
 \define toggle-theme()
 <!-- theme -->
 <$list filter="[[$:/palette]get[text]match[$:/themes/nico/notebook/palettes/palette-beige]]">
