@@ -1,3 +1,16 @@
+# [3.60.0](https://github.com/oeyoews/neotw/compare/v3.59.0...v3.60.0) (2023-02-24)
+
+
+### Bug Fixes
+
+* remove dumplicat class ([6d1d114](https://github.com/oeyoews/neotw/commit/6d1d114b7612dd1c6f6ababcfaa707979e7c517c))
+
+
+### Features
+
+* move readonly-mode button to page ([fe2558d](https://github.com/oeyoews/neotw/commit/fe2558d294f5247d4ec24c27ed3b26448b2c822d))
+* support ?dark ([d88a47a](https://github.com/oeyoews/neotw/commit/d88a47a6f14e59f3221fbccc2714f2e4245b3a21))
+
 # [3.59.0](https://github.com/oeyoews/neotw/compare/v3.58.1...v3.59.0) (2023-02-24)
 
 
