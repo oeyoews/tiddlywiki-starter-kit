@@ -1,3 +1,10 @@
+# [3.57.0](https://github.com/oeyoews/neotw/compare/v3.56.0...v3.57.0) (2023-02-24)
+
+
+### Features
+
+* add split-view-plugin ([388e27a](https://github.com/oeyoews/neotw/commit/388e27adec1e177087b4751a0d8e3f558e4eed1c))
+
 # [3.56.0](https://github.com/oeyoews/neotw/compare/v3.55.0...v3.56.0) (2023-02-24)
 
 
