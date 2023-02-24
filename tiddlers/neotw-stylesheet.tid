@@ -1,7 +1,7 @@
 created: 20230202124524313
 creator: oeyoews
 empty: yes
-modified: 20230223062539846
+modified: 20230224023704259
 modifier: oeyoews
 page-cover: 
 tags: $:/tags/Stylesheet
@@ -127,13 +127,14 @@ strike {
   box-shadow: 0 5px 20px rgb(0 0 0 / 12%);
 }
 
-<!-- blockquote -->
+<!-- blockquote 
 blockquote {
   border-left: 3px solid #dfdfdf;
 	background-color: whitesmoke;
 	padding: 2px 0 2px 2px !important;
 	margin: 2px 0 2px 2px !important;
 }
+-->
 
 blockquote>div {
 	margin: 4px 1px;

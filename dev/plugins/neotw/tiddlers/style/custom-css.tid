@@ -45,14 +45,15 @@ tags: $:/tags/Stylesheet
 }
 
 .custom-details:not([open]):hover {
-  color: #333333;
+  <!-- color: #333333; -->
+  <!-- color: transparent; -->
   transform: scale(1.1);
   transition: transform .2s;
 }
 
 .custom-details>summary {
    border-radius: 6px;
-   background-color: #f7f7f7 !important;
+   background-color: transparent;
    margin-right: 2px;
 }
 

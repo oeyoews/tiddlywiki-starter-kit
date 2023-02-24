@@ -62,7 +62,8 @@ yarn install && yarn start # or use `npx tiddlywiki --listen` directly
 ## TODO
 
 - [ ] add more details, description and usage for newtw
-- [ ] add pwa setup with workbox-cli
+
+~~add pwa setup with workbox-cli~~
 
 <details>
   <summary>FileStruct</summary>

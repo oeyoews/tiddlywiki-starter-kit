@@ -13,7 +13,7 @@ tags: $:/tags/ViewTemplate
                   Fold Comments
               </$button>
               <!-- load giscus -->
-              <$giscus id=<<comment>> lang="en" theme="light"/>
+              <$giscus id=<<comment>> lang="en" theme={{{ [[$:/plugins/oeyoews/tiddlywiki-giscus/config]get[gtheme]else[light]] }}}/>
           </$reveal>
         </$set>
 </$list>

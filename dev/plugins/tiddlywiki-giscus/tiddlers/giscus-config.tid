@@ -56,6 +56,19 @@ change badge style &nbsp;
     </td>
   </tr>
 
+  <!-- theme -->
+
+  <tr>
+    <th align="left">Giscus theme:</th>
+    <td>
+      <$edit-text
+          tiddler=<<tid>>
+          field="gtheme"
+          placeholder="light"
+          tag="input"
+          default="" />
+    </td>
+  </tr>
   <tr>
     <th align="left">filter:</th>
       <td>
