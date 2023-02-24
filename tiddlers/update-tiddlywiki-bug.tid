@@ -1,0 +1,9 @@
+created: 20230224052401697
+creator: oeyoews
+modified: 20230224052448037
+modifier: oeyoews
+tags: 
+title: update-tiddlywiki-bug
+type: text/vnd.tiddlywiki
+
+if use deletetiddler on startup actioin, this file will not be updated on filesystem
