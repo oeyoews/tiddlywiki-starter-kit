@@ -63,10 +63,10 @@ tags: $:/tags/PageTemplate
 <!-- more two tiddler -->
 <$list filter="[list[$:/StoryList]count[]compare:number:gt[2]]">
 <div id="stx-story-top">
-<<toggle-theme>>
-<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
-<<zen-mode>>
-</$list>
+  <<toggle-theme>>
+  <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
+    <<zen-mode>>
+  </$list>
 <!-- home to SimpleMode or emptystorymessage -->
 <$button class=<<tv-config-toolbar-class>> tooltip="back to simple mode" class="o-btn-back">
 <$action-navigate $to="GettingStarted" $scroll="yes"/>
@@ -118,13 +118,13 @@ tags: $:/tags/PageTemplate
 </$list>
 
 <!-- non-storyriver -->
-<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
   <$list filter="[[$:/StoryList]get[list]!is[blank]]">
     <$list filter="[list[$:/StoryList]count[]compare:number:lteq[2]]">
       <div id="stx-story-top">
         <<toggle-theme>>
-        <<zen-mode>>
+        <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
+                <<zen-mode>>
+        </$list>
       </div>
     </$list>
   </$list>
-</$list>
