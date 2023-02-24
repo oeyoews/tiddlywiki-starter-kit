@@ -1,3 +1,10 @@
+# [3.56.0](https://github.com/oeyoews/neotw/compare/v3.55.0...v3.56.0) (2023-02-24)
+
+
+### Features
+
+* support url to another layout ([0b0d308](https://github.com/oeyoews/neotw/commit/0b0d30857039090981b5d56c045383149c206c58))
+
 # [3.55.0](https://github.com/oeyoews/neotw/compare/v3.54.0...v3.55.0) (2023-02-24)
 
 
