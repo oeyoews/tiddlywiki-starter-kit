@@ -1,3 +1,10 @@
+# [3.55.0](https://github.com/oeyoews/neotw/compare/v3.54.0...v3.55.0) (2023-02-24)
+
+
+### Features
+
+* support toggle theme automatically ([a29380e](https://github.com/oeyoews/neotw/commit/a29380e59872e22a064f5a8740c0141820f0375f))
+
 # [3.54.0](https://github.com/oeyoews/neotw/compare/v3.53.0...v3.54.0) (2023-02-24)
 
 
