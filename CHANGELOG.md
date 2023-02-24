@@ -1,3 +1,10 @@
+# [3.53.0](https://github.com/oeyoews/neotw/compare/v3.52.0...v3.53.0) (2023-02-24)
+
+
+### Features
+
+* support config giscus theme and add GithubDark palette ([075f7b9](https://github.com/oeyoews/neotw/commit/075f7b9951ef79d443951c1892f2268212d4ded5))
+
 # [3.52.0](https://github.com/oeyoews/neotw/compare/v3.51.2...v3.52.0) (2023-02-23)
 
 

@@ -25,8 +25,10 @@
 ## Features
 
 - 支持禅模式
+- 接入评论系统
 - 自动展示最近创建的文章
 - 中英文之间自动添加空格，排版更美观
+- 标题支持别名
 - ...
 
 ## Preview
@@ -60,7 +62,8 @@ yarn install && yarn start # or use `npx tiddlywiki --listen` directly
 ## TODO
 
 - [ ] add more details, description and usage for newtw
-- [ ] add pwa setup with workbox-cli
+
+~~add pwa setup with workbox-cli~~
 
 <details>
   <summary>FileStruct</summary>
