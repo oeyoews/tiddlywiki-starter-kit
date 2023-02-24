@@ -1,3 +1,10 @@
+# [3.59.0](https://github.com/oeyoews/neotw/compare/v3.58.1...v3.59.0) (2023-02-24)
+
+
+### Features
+
+* support temp uri ([173ab94](https://github.com/oeyoews/neotw/commit/173ab94c906dbf973430a2718e448decfc73e626))
+
 ## [3.58.1](https://github.com/oeyoews/neotw/compare/v3.58.0...v3.58.1) (2023-02-24)
 
 
