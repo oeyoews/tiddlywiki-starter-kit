@@ -1,0 +1,7 @@
+tags: $:/tags/StartupAction
+title: $:/plugins/oeyoews/neotw/modules/landing/layout-url
+
+<$list filter="[{$:/info/url/search}match[?gettingstarted]]">
+<$action-sendmessage $message="tm-notify" $param="Index"/>
+<$action-setfield $tiddler="$:/layout" text="$:/plugins/oeyoews/neotw/modules/landing/layout"/>
+</$list>
