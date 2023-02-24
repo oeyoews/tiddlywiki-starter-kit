@@ -18,6 +18,7 @@ tags: $:/tags/PageTemplate
 
 \define zen-mode()
 <!-- zen mode -->
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
 <$list filter="[[$:/temp/zen-mode]get[text]else[no]match[no]]">
 <$button tooltip="zen mode" class="o-btn-back">
 <$action-setfield $tiddler="$:/temp/zen-mode" text="yes"/>
@@ -36,6 +37,7 @@ tags: $:/tags/PageTemplate
 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10 4H8v4H4v2h6zM8 20h2v-6H4v2h4zm12-6h-6v6h2v-4h4zm0-6h-4V4h-2v6h6z"></path></svg>
   </$list>
 </$button>
+</$list>
 </$list>
 \end
 
@@ -59,14 +61,14 @@ tags: $:/tags/PageTemplate
 \end
 
 \whitespace trim
+<!-- non-storyriver -->
 <$list filter="[[$:/StoryList]get[list]!is[blank]]">
 <!-- more two tiddler -->
 <$list filter="[list[$:/StoryList]count[]compare:number:gt[2]]">
 <div id="stx-story-top">
+  <<readonly-mode>>
   <<toggle-theme>>
-  <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
-    <<zen-mode>>
-  </$list>
+  <<zen-mode>>
 <!-- home to SimpleMode or emptystorymessage -->
 <$button tooltip="back to simple mode" class="o-btn-back">
 <$action-navigate $to="GettingStarted" $scroll="yes"/>
@@ -117,14 +119,13 @@ tags: $:/tags/PageTemplate
 </div>
 </$list>
 
-<!-- non-storyriver -->
+<!-- non-storyriver && less two -->
   <$list filter="[[$:/StoryList]get[list]!is[blank]]">
     <$list filter="[list[$:/StoryList]count[]compare:number:lteq[2]]">
       <div id="stx-story-top">
+        <<readonly-mode>>
         <<toggle-theme>>
-        <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
-                <<zen-mode>>
-        </$list>
+        <<zen-mode>>
       </div>
     </$list>
   </$list>

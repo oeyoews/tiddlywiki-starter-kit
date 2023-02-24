@@ -1,0 +1,19 @@
+modified: 20230224120152472
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: $:/plugins/oeyoews/neotw/style/readonly
+type: text/vnd.tiddlywiki
+
+\define hide-tiddler-controls()
+[data-tiddler-title="$(currentTiddler)$"] .tc-tiddler-controls  {display: none;}
+\end
+
+<$list filter="[{$:/info/url/protocol}!match[http:]]">
+<$list filter="[!is[system]]">
+<<hide-tiddler-controls>>
+</$list>
+</$list>
+
+<!-- <$list filter="[!is[system]field:publish[article]]"> -->
+<!-- <<hide-tiddler-controls>> -->
+<!-- </$list> -->
