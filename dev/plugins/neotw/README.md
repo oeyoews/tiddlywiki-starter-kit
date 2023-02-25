@@ -33,7 +33,7 @@
 
 > A modern style notebook based on `tiddlywiki`. Here is a [» demo «](https://oeyoews.github.io/neotw)
 
-## Features
+## Features :sparkles:
 
 - 支持阅读模式编辑模式之间的切换
 - 支持 emoji 语法
@@ -46,7 +46,7 @@
 - 标题支持别名
 - ...
 
-## Install
+## Installation :package:
 
 > **Note**
 > require git and npm
@@ -57,7 +57,7 @@ cd neotw && npm install  # install packages
 npm run start  # start tiddlywiki on https://localhost:8099
 ```
 
-## Deploy
+## Deploy :gear:
 
 <!-- https://vercel.com/docs/deploy-button -->
 <a target="_blank" href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Foeyoews%2Fneotw">
@@ -68,7 +68,7 @@ npm run start  # start tiddlywiki on https://localhost:8099
 <img src="https://www.netlify.com/img/deploy/button.svg">
 </a>
 
-## FileStruct
+## FileStruct :open_file_folder:
 
 <details>
   <summary>FileStruct</summary>
@@ -103,7 +103,7 @@ Neotw
 
 </details>
 
-## Online Preview
+## Online Preview :framed_picture:
 
 <details>
 <summary>Preview</summary>
