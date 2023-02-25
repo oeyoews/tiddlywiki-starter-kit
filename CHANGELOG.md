@@ -1,3 +1,10 @@
+## [3.64.1](https://github.com/oeyoews/neotw/compare/v3.64.0...v3.64.1) (2023-02-25)
+
+
+### Performance Improvements
+
+* move menu to hover ([bafed5f](https://github.com/oeyoews/neotw/commit/bafed5f94062f0d322c9216790380598f2a7bed9))
+
 # [3.64.0](https://github.com/oeyoews/neotw/compare/v3.63.0...v3.64.0) (2023-02-25)
 
 
