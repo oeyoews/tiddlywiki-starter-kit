@@ -3,9 +3,8 @@ tags: $:/tags/Macro
 
 \define readonly-mode()
 \define tag() $:/tags/Stylesheet
-\define tid() $:/plugins/oeyoews/neotw/style/readonly
+\define tid() $:/temp/oeyoews/neotw/style/readonly
 
-<$list filter="[{$:/info/url/protocol}match[https:]]">
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
 <$list filter="$:/status/neotw/mode" variable=".state">
   <!-- readmode -->
@@ -30,7 +29,6 @@ tags: $:/tags/Macro
     </$list>
     </$fieldmangler>
   </$reveal>
-</$list>
 </$list>
 </$list>
 

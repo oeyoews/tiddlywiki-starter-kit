@@ -1,6 +1,37 @@
 title: $:/plugins/oeyoews/neotw/modules/to-top/ui
 tags: $:/tags/PageTemplate
 
+\define scroll-top-bottom()
+<!-- top -->
+<$button  tooltip="back to top" class="o-btn-back">
+<$list variable="target" filter="[list[$:/StoryList]first[]]">
+<$action-navigate $to=<<target>> $scroll="yes"/>
+</$list>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M8 11h3v10h2V11h3l-4-4-4 4zM4 3v2h16V3H4z"></path></svg>
+</$list>
+</$button>
+<!-- bottom -->
+<$button tooltip="back to bottom" class="o-btn-back">
+<$list variable="target" filter="[list[$:/StoryList]last[]]">
+<$action-navigate $to=<<target>> $scroll="yes"/>
+</$list>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M16 13h-3V3h-2v10H8l4 4 4-4zM4 19v2h16v-2H4z"></path></svg>
+</$list>
+</$button>
+
+\end
+
+\define home-button()
+<$button tooltip="back to home" class="o-btn-back">
+<$action-navigate $to="GettingStarted" $scroll="yes"/>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+  <svg stroke="currentColor" fill="none" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"></path></svg>
+</$list>
+</$button>
+\end
+
 \define load-articles()
 <$set name="a-total" value={{{ [field:publish[article]count[]] }}}>
 <$set name="a-num" value={{{ [[$:/temp/articles/number]get[number]else[1]add[1]] }}}>
@@ -69,34 +100,8 @@ tags: $:/tags/PageTemplate
   <<readonly-mode>>
   <<toggle-theme>>
   <<zen-mode>>
-<!-- home to SimpleMode or emptystorymessage -->
-<$button tooltip="back to simple mode" class="o-btn-back">
-<$action-navigate $to="GettingStarted" $scroll="yes"/>
-<!-- close all tiddlers -->
-<!-- <$action-sendmessage $message="tm-close-all-tiddlers"/> -->
-<!-- <$action-setfield $tiddler="$:/temp/SimpleMode" text="yes"/> -->
-<$list filter="[<tv-config-toolbar-icons>match[yes]]">
-<svg stroke="currentColor" fill="none" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"></path></svg>
-</$list>
-</$button>
-<!-- top -->
-<$button  tooltip="back to top" class="o-btn-back">
-<$list variable="target" filter="[list[$:/StoryList]first[]]">
-<$action-navigate $to=<<target>> $scroll="yes"/>
-</$list>
-<$list filter="[<tv-config-toolbar-icons>match[yes]]">
-<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M8 11h3v10h2V11h3l-4-4-4 4zM4 3v2h16V3H4z"></path></svg>
-</$list>
-</$button>
-<!-- bottom -->
-<$button tooltip="back to bottom" class="o-btn-back">
-<$list variable="target" filter="[list[$:/StoryList]last[]]">
-<$action-navigate $to=<<target>> $scroll="yes"/>
-</$list>
-<$list filter="[<tv-config-toolbar-icons>match[yes]]">
-<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M16 13h-3V3h-2v10H8l4 4 4-4zM4 19v2h16v-2H4z"></path></svg>
-</$list>
-</$button>
+  <<home-button>>
+  <<scroll-top-bottom>>
 </div>
 </$list>
 </$list>
@@ -105,16 +110,7 @@ tags: $:/tags/PageTemplate
 <$list filter="[[$:/StoryList]get[list]count[]match[0]]">
 <div id="stx-story-top">
   <<toggle-theme>>
-<!-- home on emptystorymessage -->
-<$button tooltip="back to main mode" class="o-btn-back">
-<!-- enter no-simplemode  -->
-<$action-navigate $to="GettingStarted" $scroll="no"/>
-<!-- <$action-setfield $tiddler="$:/temp/SimpleMode" text="no"/> -->
-<$list filter="[<tv-config-toolbar-icons>match[yes]]">
-<svg stroke="currentColor" fill="none" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"></path></svg>
-</$list>
-</$button>
-  <!-- load buttons -->
+  <<home-button>>
   <<load-articles>>
 </div>
 </$list>

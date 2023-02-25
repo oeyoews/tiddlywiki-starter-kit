@@ -16,6 +16,12 @@ tags: $:/tags/Stylesheet
   font-weight: bold;
 }
 
+<$list filter="[list[$:/StoryList]count[]compare:number:gt[1]]">
+.o-rnav-article {
+  display: none;
+}
+</$list>
+
 <$list filter="[!is[system]]">
   <<hide-tiddler-controls>>
 </$list>

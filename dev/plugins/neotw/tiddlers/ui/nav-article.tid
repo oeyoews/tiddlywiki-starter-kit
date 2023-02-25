@@ -1,7 +1,6 @@
 title: $:/plugins/oeyoews/neotw/ui/nav-article
 tags: $:/tags/ViewTemplate
 
-<!-- <$list filter="[list[$:/StoryList]count[]match[0]]"> -->
 <$list filter="[all[current]publish[article]]">
 <div class="o-rnav-article">
 <!-- prev -->
@@ -21,4 +20,3 @@ tags: $:/tags/ViewTemplate
 </$list>
 </div>
 </$list>
-<!-- </$list> -->
