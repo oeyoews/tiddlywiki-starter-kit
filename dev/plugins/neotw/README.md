@@ -2,6 +2,9 @@
 
 <center>
 <!-- badges -->
+<a href="https://tiddlywiki.com" target="_blank">
+  <img src="https://img.shields.io/badge/TiddlyWiki5-5.2.6 prelease-green?style=flat" />
+</a>
 <a href="https://gitter.im/oeyoews/neotw?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge" target="_blank">
   <img src="https://img.shields.io/gitter/room/oeyoews/neotw?logo=gitter&color=50BA9A" />
 </a>
@@ -26,10 +29,12 @@
 
 ## Features
 
+- 支持阅读模式编辑模式之间的切换
+- 支持 emoji 语法
 - 支持通过 url 切换多种布局
 - 根据系统自动切换夜间/日间模式, 支持 url 切换，例如 https://neotw.oeyoew.top?dark
 - 支持禅模式
-- 接入评论系统
+- 支持评论
 - 自动展示最近创建的文章
 - 中英文之间自动添加空格，排版更美观
 - 标题支持别名
