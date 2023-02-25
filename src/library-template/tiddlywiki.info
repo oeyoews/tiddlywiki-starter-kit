@@ -1,5 +1,5 @@
 {
-  "description": "TiddlyWiki Plugin Library",
+  "description": "TiddlyWiki Plugin Library For Neotw",
   "plugins": [
     "tiddlywiki/pluginlibrary"
   ],
