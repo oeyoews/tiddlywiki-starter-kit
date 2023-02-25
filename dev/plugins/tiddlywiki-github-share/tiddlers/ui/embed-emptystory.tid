@@ -1,12 +1,11 @@
-title: $:/plugins/oeyoews/tiddlywiki-github-share/ui/embed-ribbon
+title: $:/plugins/oeyoews/tiddlywiki-github-share/embed-emptystory
 
 \whitespace trim
-
 \define base-repo() https://github.com/
 \define tid() $:/config/oeyoews/tiddlywiki-github-share/config
 
-<$list filter="[{$:/info/url/protocol}match[https:]]">
-<$list filter="[[$:/state/notebook-sidebar]is[missing]] [[$:/state/notebook-sidebar]get[text]match[no]]">
+<$list filter="[{$:/info/url/protocol}match[http:]]">
+<$list filter="[list[$:/StoryList]count[]match[0]]">
 <a style="text-decoration: none;"
   href={{{ [<tid>get[text]addprefix<base-repo>] }}}
   target="_blank"

@@ -3,7 +3,7 @@ created: 20230117102714737
 creator: oeyoews
 giscus: yes
 icon: tom.png
-modified: 20230223102636222
+modified: 20230225095555269
 modifier: oeyoews
 page-cover: banner.png
 pin: yes
@@ -11,6 +11,8 @@ publish: article
 tags: 
 title: GettingStarted
 type: text/vnd.tiddlywiki
+
+{{$:/plugins/oeyoews/tiddlywiki-github-share/embed-emptystory}}
 
 {{neotw-badges}}
 
