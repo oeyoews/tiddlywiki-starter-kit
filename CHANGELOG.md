@@ -1,3 +1,12 @@
+# [3.62.0](https://github.com/oeyoews/neotw/compare/v3.61.0...v3.62.0) (2023-02-25)
+
+
+### Features
+
+* add filter for split ([8d67c4a](https://github.com/oeyoews/neotw/commit/8d67c4a17241ceb07bea8284dc47dc07830ec0b2))
+* default enable readonly-mode for anytime andwhere ([353253f](https://github.com/oeyoews/neotw/commit/353253f55d08f8335fd475e77bafed63c9e9dc58))
+* support nav for articles ([bc80b4c](https://github.com/oeyoews/neotw/commit/bc80b4c4f3bbfa85c2a88826f5b60dc1d4e627d0))
+
 # [3.61.0](https://github.com/oeyoews/neotw/compare/v3.60.0...v3.61.0) (2023-02-25)
 
 
