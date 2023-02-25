@@ -6812,6 +6812,8 @@ ol.doc-github-contributors li {
   /** background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59); */
   border: 2px;
   box-shadow: 0 5px 20px rgb(0 0 0 / 12%);
+}blockquote {
+  border-left: 3px solid #dfdfdf;
 }blockquote>div {
 	margin: 4px 1px;
 }.tc-tiddler-frame {
