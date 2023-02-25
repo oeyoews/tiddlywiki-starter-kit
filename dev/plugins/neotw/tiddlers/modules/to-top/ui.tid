@@ -3,12 +3,12 @@ tags: $:/tags/PageTemplate
 
 \define scroll-top-bottom()
 <!-- top -->
-<$button  tooltip="Back to top" class="o-btn-back">
+<$button tooltip="Back to top" class="o-btn-back">
 <$list variable="target" filter="[list[$:/StoryList]first[]]">
-<$action-navigate $to=<<target>> $scroll="yes"/>
+  <$action-navigate $to=<<target>> $scroll="yes"/>
 </$list>
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
-<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M8 11h3v10h2V11h3l-4-4-4 4zM4 3v2h16V3H4z"></path></svg>
+  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M8 11h3v10h2V11h3l-4-4-4 4zM4 3v2h16V3H4z"></path></svg>
 </$list>
 </$button>
 <!-- bottom -->
@@ -92,6 +92,18 @@ tags: $:/tags/PageTemplate
 \end
 
 \whitespace trim
+
+<!-- emptystorymessage -->
+<$list filter="[[$:/StoryList]get[list]count[]match[0]]">
+<div id="stx-story-top">
+  <<github-cat>>
+  <<switch-lang>>
+  <<toggle-theme>>
+  <<home-button>>
+  <<load-articles>>
+</div>
+</$list>
+
 <!-- non-storyriver -->
 <$list filter="[[$:/StoryList]get[list]!is[blank]]">
 <!-- more two tiddler -->
@@ -108,25 +120,15 @@ tags: $:/tags/PageTemplate
 </$list>
 </$list>
 
-<!-- emptystorymessage -->
-<$list filter="[[$:/StoryList]get[list]count[]match[0]]">
-<div id="stx-story-top">
-  <<switch-lang>>
-  <<toggle-theme>>
-  <<home-button>>
-  <<load-articles>>
-</div>
-</$list>
-
 <!-- non-storyriver && less two -->
-  <$list filter="[[$:/StoryList]get[list]!is[blank]]">
-    <$list filter="[list[$:/StoryList]count[]compare:number:lteq[2]]">
-      <div id="stx-story-top">
-        <<o-sidebar>>
-        <<switch-lang>>
-        <<readonly-mode>>
-        <<toggle-theme>>
-        <<zen-mode>>
-      </div>
-    </$list>
+<$list filter="[[$:/StoryList]get[list]!is[blank]]">
+  <$list filter="[list[$:/StoryList]count[]compare:number:lteq[2]]">
+    <div id="stx-story-top">
+      <<o-sidebar>>
+      <<switch-lang>>
+      <<readonly-mode>>
+      <<toggle-theme>>
+      <<zen-mode>>
+    </div>
   </$list>
+</$list>

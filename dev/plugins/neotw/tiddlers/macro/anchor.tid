@@ -1,3 +1,4 @@
+title: $:/plugins/oeyoews/neotw/macro/anchor
 tags: $:/tags/Macro
 
 \define anchor(id, tid)
