@@ -1,0 +1,12 @@
+caption: border-all (Solid)
+created: 20230225060526126
+creator: oeyoews
+modified: 20230225060532367
+modifier: oeyoews
+tags: $:/tags/Image [[Font Awesome 5]] Solid
+title: $:/images/fa5/solid/border-all
+type: text/vnd.tiddlywiki
+
+<$list filter="[list[$:/StoryList]count[]compare:number:gt[1]]">
+<svg class="tc-image-border-all tc-image-button" width="22pt" height="22pt" viewBox="0 0 448 512"><path d="M416 32H32A32 32 0 0 0 0 64v384a32 32 0 0 0 32 32h384a32 32 0 0 0 32-32V64a32 32 0 0 0-32-32zm-32 64v128H256V96zm-192 0v128H64V96zM64 416V288h128v128zm192 0V288h128v128z"/></svg>
+</$list>
