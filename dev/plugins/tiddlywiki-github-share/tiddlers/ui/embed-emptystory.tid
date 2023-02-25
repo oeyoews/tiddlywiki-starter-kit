@@ -4,7 +4,7 @@ title: $:/plugins/oeyoews/tiddlywiki-github-share/embed-emptystory
 \define base-repo() https://github.com/
 \define tid() $:/config/oeyoews/tiddlywiki-github-share/config
 
-<$list filter="[{$:/info/url/protocol}match[http:]]">
+<$list filter="[{$:/info/url/protocol}match[https:]]">
 <$list filter="[list[$:/StoryList]count[]match[0]]">
 <a style="text-decoration: none;"
   href={{{ [<tid>get[text]addprefix<base-repo>] }}}
