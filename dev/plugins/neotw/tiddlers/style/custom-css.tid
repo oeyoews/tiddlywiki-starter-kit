@@ -5,6 +5,17 @@ tags: $:/tags/Stylesheet
 [data-tiddler-title="$(currentTiddler)$"] .tc-titlebar h2  { text-transform: Capitalize; }
 \end
 
+.o-rnav-article {
+  text-align: right;
+  margin-top: 6px;
+  text-transform: uppercase;
+}
+
+.o-rnav-article:hover {
+  <!-- text-decoration: underline; -->
+  font-weight: bold;
+}
+
 <$list filter="[!is[system]]">
   <<hide-tiddler-controls>>
 </$list>

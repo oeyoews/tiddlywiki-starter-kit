@@ -8,7 +8,7 @@ tags: $:/tags/Stylesheet
 }
 
 .o-rnav:hover {
-  text-decoration: underline;
+  <!-- text-decoration: underline; -->
   font-weight: bold;
 }
 
