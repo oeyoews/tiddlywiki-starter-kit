@@ -9,6 +9,12 @@ tags: $:/tags/Stylesheet
 }
 </$list>
 
+<$list filter="[list[$:/StoryList]count[]match[0]]">
+.o-publish {
+  display: none;
+}
+</$list>
+
 <$list filter="[field:publish[readonly]]">
 <<hide-tiddler-controls>>
 </$list>
