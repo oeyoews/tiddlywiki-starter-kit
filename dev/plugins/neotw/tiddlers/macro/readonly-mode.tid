@@ -11,7 +11,7 @@ tags: $:/tags/Macro
   <$reveal state=<<.state>> type="nomatch" text="show">
     <$fieldmangler tiddler=<<tid>>>
     <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
-      <$button set=<<.state>> setTo="show" class="o-btn-back" tooltip="to edit mode">
+      <$button set=<<.state>> setTo="show" class="o-btn-back" tooltip="Edit mode">
         {{neotw/icon/book}}
         <$action-sendmessage $message="tm-remove-tag" $param=<<tag>>/>
       </$button>
@@ -22,7 +22,7 @@ tags: $:/tags/Macro
   <$reveal state=<<.state>> type="match" text="show">
     <$fieldmangler tiddler=<<tid>>>
     <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
-      <$button set=<<.state>> setTo="hide" tooltip="to readonly-mode" class="o-btn-back">
+      <$button set=<<.state>> setTo="hide" tooltip="Readonly mode" class="o-btn-back">
         {{neotw/icon/pen}}
         <$action-sendmessage $message="tm-add-tag" $param=<<tag>>/>
       </$button>
