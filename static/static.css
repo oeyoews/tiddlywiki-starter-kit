@@ -5001,7 +5001,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 62";
+  content: " 63";
 }
 
 
@@ -5507,7 +5507,10 @@ a[data-fancybox] img {
 <!--     transform: scale3d(0.8, 0.8, 0.8); -->
 <!--   } -->
 <!-- } -->
-.gsc-left-header {
+.os-started:hover {
+	transform: scale(1.01);
+	transition: transform .2s;
+}.gsc-left-header {
     display: none !important;
 }next .text-sm {
     font-size: .875rem;
@@ -5593,6 +5596,10 @@ a[data-fancybox] img {
 .o-select {
   border: none;
   border-radius: 3px;
+}
+.o-style-shield-copy:hover {
+	transform: scale(1.01);
+	transition: transform .2s;
 }
 .nauthor img {
     width: 100%;
