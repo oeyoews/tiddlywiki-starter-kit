@@ -1,3 +1,10 @@
+# [3.61.0](https://github.com/oeyoews/neotw/compare/v3.60.0...v3.61.0) (2023-02-25)
+
+
+### Features
+
+* hide select box on emptystorymessage ([8b12cc9](https://github.com/oeyoews/neotw/commit/8b12cc9f73594ad9e2702667da70d9bab739f0e5))
+
 # [3.60.0](https://github.com/oeyoews/neotw/compare/v3.59.0...v3.60.0) (2023-02-24)
 
 
