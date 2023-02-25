@@ -3897,7 +3897,14 @@ http://nicolasgallagher.com/micro-clearfix-hack/
    padding-left: 0.75em;
    padding-right: 1em;
 }
-
+.o-rnav-article {
+  text-align: right;
+  margin-top: 6px;
+  text-transform: uppercase;
+}.o-rnav-article:hover {
+  
+  font-weight: bold;
+}
   [data-tiddler-title="about-TIDDLYWIKI_PLUGIN_PATH-not-working"] .tc-titlebar h2  { text-transform: Capitalize; }
 
   [data-tiddler-title="add-animation-for-layout"] .tc-titlebar h2  { text-transform: Capitalize; }
@@ -4303,7 +4310,6 @@ footer {
 	font-size: 50%;
 }
 
-
 [data-tiddler-title="about-TIDDLYWIKI_PLUGIN_PATH-not-working"] .tc-tiddler-controls  {display: none;}
 
 [data-tiddler-title="add-animation-for-layout"] .tc-tiddler-controls  {display: none;}
@@ -4667,7 +4673,6 @@ footer {
 [data-tiddler-title="use-latest-tiddlywiki"] .tc-tiddler-controls  {display: none;}
 
 [data-tiddler-title="xiaofamao"] .tc-tiddler-controls  {display: none;}
-
 .shield {
   font-weight: normal;
   display: inline-block;
@@ -4936,7 +4941,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/ViewTemplate] .tc-tag-label:after {
-  content: " 14";
+  content: " 15";
 }
 
 
