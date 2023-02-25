@@ -23,20 +23,15 @@
  </a>
 </center>
 
+<hr>
+<center>
+<img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/011.png" height=256 alt="011">
+<img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/012.png" height=256 alt="012">
+</center>
+
 ## Intro :tada:
 
-> A modern style notebook based on `tiddlywiki`
-
-## Install
-
-> **Note**
-> require git and npm
-
-```bash
-git clone --depth 1 https://github.com/oeyoews/neotw
-cd neotw && npm install  # install packages
-npm run start  # start tiddlywiki on https://localhost:8099
-```
+> A modern style notebook based on `tiddlywiki`. Here is a [» demo «](https://oeyoews.github.io/neotw)
 
 ## Features
 
@@ -51,12 +46,16 @@ npm run start  # start tiddlywiki on https://localhost:8099
 - 标题支持别名
 - ...
 
-## Preview
+## Install
 
-<center>
-<img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/011.png" height=256 alt="011">
-<img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/012.png" height=245 alt="012">
-</center>
+> **Note**
+> require git and npm
+
+```bash
+git clone --depth 1 https://github.com/oeyoews/neotw
+cd neotw && npm install  # install packages
+npm run start  # start tiddlywiki on https://localhost:8099
+```
 
 ## Deploy
 
@@ -68,6 +67,8 @@ npm run start  # start tiddlywiki on https://localhost:8099
 <a target="_blank" href="https://app.netlify.com/start/deploy?repository=https://github.com/oeyoews/neotw">
 <img src="https://www.netlify.com/img/deploy/button.svg">
 </a>
+
+## FileStruct
 
 <details>
   <summary>FileStruct</summary>
@@ -101,6 +102,8 @@ Neotw
 ```
 
 </details>
+
+## Online Preview
 
 <details>
 <summary>Preview</summary>
