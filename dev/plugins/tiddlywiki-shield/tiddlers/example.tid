@@ -1,4 +1,9 @@
 title: $:/plugins/oeyoews/tiddlywiki-shield/example
 
+!! Based GitHub
+
 <<oshield>>
+
+!! Static
+
 <<oshield-static>>

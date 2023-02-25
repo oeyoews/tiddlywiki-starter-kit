@@ -10,18 +10,18 @@ title: $:/plugins/oeyoews/tiddlywiki-giscus/readme
 <$image source={{{ [[][https://img.shields.io/badge/Author-]] [<currentTiddler>get[author]] [[-lightblue?style=flat]] +[join[]]}}} />
 
 <center>
-<$button class="get-started">
-  <a style="text-decoration: none;" target="_blank"
-  href="https://neotw.netlify.app/index.html#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-giscus">
-  Install Giscus
-</a>
-</$button>
+<!-- <$button class="get-started"> -->
+<!--   <a style="text-decoration: none;" target="_blank" -->
+<!--   href="https://neotw.netlify.app/index.html#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-giscus"> -->
+<!--   Install Giscus -->
+<!-- </a> -->
+<!-- </$button> -->
 
-<<nbtn "$:/plugins/oeyoews/tiddlywiki-giscus/giscus-config">>
+<<nav-tid "giscus-config">>
 
 <$set name="repo" value="$:/plugins/oeyoews/tiddlywiki-giscus/config">
   <$button class="get-started" tooltip={{{ [<repo>get[repo]addsuffix[ discussions]] }}}>
-    <<giscusDiscussions>> Discussions
+    <<giscusDiscussions>>
   </$button>
 </$set>
 </center>
@@ -30,10 +30,10 @@ title: $:/plugins/oeyoews/tiddlywiki-giscus/readme
 💎 A Commenting System Powered By Github Discussions. Let Visitors Leave Comments And Reactions On Your Site With Github! This Project Is Strongly Inspired By Utterances.
 <<<
 
-!! TODO
+<!-- !! TODO -->
 
-* jump to comment directly
-* [[discus|https://bimlas.gitlab.io/tw5-disqus]]
+<!-- * jump to comment directly -->
+<!-- * [[discus|https://bimlas.gitlab.io/tw5-disqus]] -->
 <!-- * js macro and widget to get config tid data difference(load order) -->
 <!-- * add toggle on local -->
 

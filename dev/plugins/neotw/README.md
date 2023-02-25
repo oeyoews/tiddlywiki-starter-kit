@@ -70,7 +70,7 @@ yarn install && yarn start # or use `npx tiddlywiki --listen` directly
 
 ## TODO
 
-- [ ] add more details, description and usage for newtw
+~~add more details, description and usage for newtw~~
 
 ~~add pwa setup with workbox-cli~~
 

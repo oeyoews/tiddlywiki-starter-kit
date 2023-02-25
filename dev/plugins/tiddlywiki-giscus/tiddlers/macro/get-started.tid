@@ -9,3 +9,9 @@ tags: $:/tags/Macro
     <$action-navigate $to={{{ $started-tid$ }}}/>
   </$button>
 \end
+
+\define nav-tid(tid)
+<$button setTitle=<<tabsState>> setField="text" setTo=$tid$>
+  GettingStarted
+</$button>
+\end

@@ -1,11 +1,9 @@
-title: $:/plugins/oeyoews/tiddlywiki-shield/macro/macro
+title: $:/plugins/oeyoews/tiddlywiki-shield/macro
 tags: $:/tags/Macro
 
 \define tid() $:/temp/oeyoews/tiddlywiki-shield/config
 
 \define oshield()
-<h2> based github </h2>
-<!-- user input -->
 <$edit-text tag="input" field="user" default="user" tiddler=<<tid>> />
 <$edit-text tag="input" field="repo" default="repo" tiddler=<<tid>> />
 
@@ -47,15 +45,12 @@ tags: $:/tags/Macro
       <img src=<<uri>> >
 </a>
 
-<!-- copy html code -->
-<$macrocall $name="copy-to-clipboard" src=<<uri>> />
+<$macrocall $name="copy-to-clipboard" src={{{ [<uri>addprefix[<img src="]addsuffix[">]] }}}/>
 
 </$set>
 \end
 
 \define oshield-static()
-<h2> static </h2>
-<!-- user input -->
 <$edit-text tag="input" field="label" default="label" tiddler=<<tid>> />
 <$edit-text tag="input" field="message" default="message" tiddler=<<tid>> />
 <$edit-text tag="input" field="ocolor" default="color" tiddler=<<tid>> />
@@ -63,6 +58,6 @@ tags: $:/tags/Macro
 <!-- preview -->
 <$set name="uri" value={{{ [<tid>get[label]addsuffix[-]] [<tid>get[message]addsuffix[-]] [<tid>get[ocolor]addsuffix[?style=]] [<tid>get[style]] +[join[]addprefix[https://img.shields.io/badge/]] }}} >
       <img src=<<uri>> >
-<$macrocall $name="copy-to-clipboard" src=<<uri>> />
+<$macrocall $name="copy-to-clipboard" src={{{ [<uri>addprefix[<img src="]addsuffix[">]]}}}/>
 </$set>
 \end
