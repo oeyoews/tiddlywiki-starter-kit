@@ -1,3 +1,10 @@
+# [3.63.0](https://github.com/oeyoews/neotw/compare/v3.62.0...v3.63.0) (2023-02-25)
+
+
+### Features
+
+* support switch button ([f395812](https://github.com/oeyoews/neotw/commit/f3958126ce196e73cce52067f6230aa71739ba54))
+
 # [3.62.0](https://github.com/oeyoews/neotw/compare/v3.61.0...v3.62.0) (2023-02-25)
 
 
