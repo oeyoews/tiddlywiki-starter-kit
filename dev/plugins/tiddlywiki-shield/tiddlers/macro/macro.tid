@@ -1,9 +1,9 @@
 title: $:/plugins/oeyoews/tiddlywiki-shield/macro/macro
 tags: $:/tags/Macro
 
-\define oshield()
-\define tid() $:/plugins/oeyoews/tiddlywiki-shield/config
+\define tid() $:/temp/oeyoews/tiddlywiki-shield/config
 
+\define oshield()
 <h2> based github </h2>
 <!-- user input -->
 <$edit-text tag="input" field="user" default="user" tiddler=<<tid>> />
@@ -54,8 +54,6 @@ tags: $:/tags/Macro
 \end
 
 \define oshield-static()
-\define tid() $:/plugins/oeyoews/tiddlywiki-shield/config
-
 <h2> static </h2>
 <!-- user input -->
 <$edit-text tag="input" field="label" default="label" tiddler=<<tid>> />
