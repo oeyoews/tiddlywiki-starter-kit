@@ -2,10 +2,18 @@ tags: $:/tags/StartupAction
 title: $:/plugins/oeyoews/neotw/modules/landing/layout-url
 
 <!-- for landing layout -->
-<$list filter="[{$:/info/url/search}match[?gettingstarted]]">
+<$list filter="[{$:/info/url/search}match[?layout=gettingstarted]]">
   <$action-setfield $tiddler="$:/layout" text="$:/plugins/oeyoews/neotw/modules/landing/layout"/>
 </$list>
 
-<$list filter="[{$:/info/url/search}prefix[?temp]]">
+<$list filter="[{$:/info/url/search}prefix[?filter=temp]]">
   <$action-setfield $tiddler="$:/DefaultTiddlers" text="[field:temp[yes]!sort[modified]]"/>
+</$list>
+
+<$list filter="[{$:/info/url/search}prefix[?filter=oeyoews]]">
+  <$action-setfield $tiddler="$:/DefaultTiddlers" text="[[oeyoews]]"/>
+</$list>
+
+<$list filter="[{$:/info/url/search}prefix[?filter=articles]]">
+  <$action-setfield $tiddler="$:/DefaultTiddlers" text="[field:publish[article]!sort[modified]]"/>
 </$list>

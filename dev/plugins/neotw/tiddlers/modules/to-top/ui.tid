@@ -97,6 +97,7 @@ tags: $:/tags/PageTemplate
 <!-- more two tiddler -->
 <$list filter="[list[$:/StoryList]count[]compare:number:gt[2]]">
 <div id="stx-story-top">
+  <<switch-lang>>
   <<readonly-mode>>
   <<toggle-theme>>
   <<zen-mode>>
@@ -109,6 +110,7 @@ tags: $:/tags/PageTemplate
 <!-- emptystorymessage -->
 <$list filter="[[$:/StoryList]get[list]count[]match[0]]">
 <div id="stx-story-top">
+  <<switch-lang>>
   <<toggle-theme>>
   <<home-button>>
   <<load-articles>>
@@ -119,6 +121,7 @@ tags: $:/tags/PageTemplate
   <$list filter="[[$:/StoryList]get[list]!is[blank]]">
     <$list filter="[list[$:/StoryList]count[]compare:number:lteq[2]]">
       <div id="stx-story-top">
+        <<switch-lang>>
         <<readonly-mode>>
         <<toggle-theme>>
         <<zen-mode>>
