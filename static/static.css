@@ -6166,7 +6166,7 @@ li.CodeMirror-hint-active {
 }.tc-story-river {
   padding: 6px 0 !important;
   width: 100% !important;
-  max-width: 1128px !important;
+  max-width: 1045px !important;
   margin: 0 auto !important;
   margin-top: 34px !important;
 }div.tc-tiddler-frame {
@@ -6196,7 +6196,7 @@ li.CodeMirror-hint-active {
 }.nc-bar.nc-topbar {
   top: 0;
   background: #f4f4f4ee;
-  max-width: calc(1128px + 40px);
+  max-width: calc(1045px + 40px);
   padding: 10px 20px;
   margin: 0 auto;
 }.nc-bar.nc-bottombar {
