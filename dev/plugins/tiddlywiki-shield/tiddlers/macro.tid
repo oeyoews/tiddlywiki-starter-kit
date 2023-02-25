@@ -45,7 +45,7 @@ tags: $:/tags/Macro
       <img src=<<uri>> >
 </a>
 
-<$macrocall $name="copy-to-clipboard" src={{{ [<uri>addprefix[<img src="]addsuffix[">]] }}}/>
+<$macrocall $name="copy-to-clipboard" src={{{ [<uri>addprefix[<img src="]addsuffix[">]] }}} class="o-style-shield-copy"/>
 
 </$set>
 \end
@@ -58,6 +58,6 @@ tags: $:/tags/Macro
 <!-- preview -->
 <$set name="uri" value={{{ [<tid>get[label]addsuffix[-]] [<tid>get[message]addsuffix[-]] [<tid>get[ocolor]addsuffix[?style=]] [<tid>get[style]] +[join[]addprefix[https://img.shields.io/badge/]] }}} >
       <img src=<<uri>> >
-<$macrocall $name="copy-to-clipboard" src={{{ [<uri>addprefix[<img src="]addsuffix[">]]}}}/>
+<$macrocall $name="copy-to-clipboard" src={{{ [<uri>addprefix[<img src="]addsuffix[">]]}}} class="o-style-shield-copy"/>
 </$set>
 \end

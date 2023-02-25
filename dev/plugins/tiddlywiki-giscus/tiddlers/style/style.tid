@@ -1,6 +1,11 @@
 title: $:/plugins/oeyoews/tiddlywiki-giscus/style
 tags: $:/tags/Stylesheet
 
+.os-started:hover {
+	transform: scale(1.01);
+	transition: transform .2s;
+}
+
 <!-- hide powered not work-->
 .gsc-left-header {
     display: none !important;

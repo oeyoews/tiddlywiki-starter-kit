@@ -1,0 +1,7 @@
+title: $:/plugins/oeyoews/tiddlywiki-shield/style
+tags: $:/tags/Stylesheet
+
+.o-style-shield-copy:hover {
+	transform: scale(1.01);
+	transition: transform .2s;
+}

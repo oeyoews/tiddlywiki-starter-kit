@@ -10,8 +10,9 @@ tags: $:/tags/Macro
   </$button>
 \end
 
+<!-- for class not work -->
 \define nav-tid(tid)
-<$button setTitle=<<tabsState>> setField="text" setTo=$tid$>
+<$button setTitle=<<tabsState>> setField="text" setTo=$tid$ class="os-started">
   GettingStarted
 </$button>
 \end
