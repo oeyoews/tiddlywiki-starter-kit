@@ -13,11 +13,11 @@ tags: $:/tags/Macro
 <span class="o-publish">
 <$select class="o-select" field="publish" tiddler=<<currentTiddler>> tooltip='status' default="status">
   <option disabled>status</option>
-  <option value="public">public</option>
-  <option value="private">private</option>
-  <option value="no">draft</option>
-  <option value="readonly">readonly</option>
-  <option value="article">article</option>
+  <option value="public">public ({{{ [field:publish[public]count[]] }}})</option>
+  <option value="private">private ({{{ [field:publish[private]count[]] }}})</option>
+  <option value="no">draft ({{{ [field:publish[draft]count[]] }}})</option>
+  <option value="readonly">readonly ({{{ [field:publish[readonly]count[]] }}})</option>
+  <option value="article">article ({{{ [field:publish[article]count[]] }}})</option>
 </$select>
 <!-- add checkbox -->
 <!-- <$checkbox tiddler=<<currentTiddler>> field="publish" checked="no" unchecked="public"></$checkbox> -->
