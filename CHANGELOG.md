@@ -1,3 +1,5 @@
+## [3.67.1](https://github.com/oeyoews/neotw/compare/v3.67.0...v3.67.1) (2023-02-26)
+
 # [3.67.0](https://github.com/oeyoews/neotw/compare/v3.66.1...v3.67.0) (2023-02-26)
 
 
