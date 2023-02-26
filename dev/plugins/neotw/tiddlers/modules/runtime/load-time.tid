@@ -1,6 +1,7 @@
 title: $:/state/oeyoews/neotw/modules/load-time-id
-tags: $:/tags/RawMarkupWikified
+<!-- tags: $:/tags/RawMarkupWikified -->
+tags: $:/tags/RawMarkupWikified/BottomBody
 
 `<footer style="text-align:center;display:flex;flex-wrap:wrap;">`
-`<span style="color:#aaa;" id="load_time">``</span>`
+`<span style="color:#aaa;" id="load_time">`Loading …`</span>`
 `</footer>`
