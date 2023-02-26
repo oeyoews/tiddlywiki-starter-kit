@@ -1,0 +1,35 @@
+caption: Test
+color: red
+created: 20230218094549863
+creator: pimgeek
+list: one two
+modified: 20230226140020076
+modifier: oeyoews
+publish: article
+tags: 
+title: test-revealjs
+type: text/vnd.tiddlywiki
+
+<$presentation slideNumber="true" autoSlide="5000" loop $height="600">
+<$list filter="[tag[reveal]]">
+<$slide tiddlerTitle={{!!title}} backgroundColor={{!!color}}>
+<$transclude mode="block" />
+</$slide>
+</$list>
+</$presentation>
+
+<!-- reorder -->
+<details class="tc-subtitle">
+<summary>List </summary>
+<<list-tagged-draggable tag:"reveal">>
+</details>
+
+[ ] add new reveal js button
+
+!! Tips
+
+* O键预览
+* F键全屏显示
+* 空格或方向键翻页
+* S键可以查看演讲者笔记
+* B键黑屏
