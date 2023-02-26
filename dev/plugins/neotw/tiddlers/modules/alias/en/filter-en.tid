@@ -1,0 +1,5 @@
+title: $:/plugins/oeyoews/neotw/modules/alias/en/filter
+tags: $:/tags/ViewTemplateTitleFilter
+list-before: $:/config/ViewTemplateTitleFilters/default
+
+[[$:/language]get[text]match[$:/languages/en-GB]then[$:/plugins/oeyoews/neotw/modules/caption/en/display-caption]]
