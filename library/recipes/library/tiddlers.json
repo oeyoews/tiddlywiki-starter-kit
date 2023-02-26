@@ -70,19 +70,6 @@
         "requires-reload": "no"
     },
     {
-        "version": "0.0.2",
-        "type": "application/json",
-        "title": "$:/plugins/oeyoews/neotw-snippet",
-        "plugin-type": "plugin",
-        "name": "snippet",
-        "description": "neotw-snippet",
-        "author": "oeyoews",
-        "list": "readme",
-        "dependents": "",
-        "readme": "<a style=\"text-decoration:none;\" href=\"https://github.com/oeyoews/neotw\" target=\"_blank\">\n  <img src=\"https://img.shields.io/badge/Powered by-Neotw-green?style=flat\" />\n</a>\n<$image source={{{ [[][https://img.shields.io/badge/Version-]] [<currentTiddler>get[version]] [[-red?style=flat&logo=dev.to&logoColor=red]] +[join[]]}}} />\n<a style=\"text-decoration:none;\" href=\"https://github.com/oeyoews/\" target=\"_blank\">\n<$image source={{{ [[][https://img.shields.io/badge/Author-]] [<currentTiddler>get[author]] [[-lightblue?style=flat]] +[join[]]}}} />\n</a>\n\n* neotw-snippet\n",
-        "requires-reload": "no"
-    },
-    {
         "title": "$:/plugins/oeyoews/neotw-surfing-keys",
         "name": "Surfing on TiddlyWiki",
         "description": "Surfing On TiddlyWiki",
