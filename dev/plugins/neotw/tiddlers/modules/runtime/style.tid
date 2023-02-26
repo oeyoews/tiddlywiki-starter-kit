@@ -1,6 +1,6 @@
 title: $:/plugins/oeyoews/neotw/style/wave
 <!-- type: text/css -->
-tags: $:/tags/Stylesheet
+<!-- tags: $:/tags/Stylesheet -->
 
 .wave-header {
         position: relative;
