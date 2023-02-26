@@ -36,7 +36,7 @@ await spinner('Building ...', async () => {
   // build index
   await $`npx ${bin} --build index`;
   // build static
-  await $`npx ${bin} --build static`;
+  // await $`npx ${bin} --build static`;
   // build readable name plugins
   await $`npx ${bin} --build plugins`;
   // build empty
