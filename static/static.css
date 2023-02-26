@@ -3897,7 +3897,7 @@ http://nicolasgallagher.com/micro-clearfix-hack/
    padding-left: 0.75em;
    padding-right: 1em;
 }
-.o-rnav-article {
+.tc-tiddler-frame input.tc-edit-texteditor  { text-transform: capitalize; }.o-rnav-article {
   text-align: right;
   margin-top: 6px;
   text-transform: uppercase;
@@ -3905,369 +3905,369 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   
   font-weight: bold;
 }
-  [data-tiddler-title="about-TIDDLYWIKI_PLUGIN_PATH-not-working"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="about-TIDDLYWIKI_PLUGIN_PATH-not-working"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="add-animation-for-layout"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="add-animation-for-layout"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="affine-pro"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="affine-pro"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="awesome-plugins-tiddlywiki"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="awesome-plugins-tiddlywiki"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="banner.png"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="banner.png"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="bing-go"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="bing-go"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="bing-image-everyday"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="bing-image-everyday"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="build external image"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="build external image"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="calendar"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="calendar"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="cat.svg"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="cat.svg"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="confilict 01"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="confilict 01"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="custom-tag-template"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="custom-tag-template"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="dream-plan-websites"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="dream-plan-websites"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="f-notion"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="f-notion"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="f-talk"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="f-talk"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="f-tiddlyhost"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="f-tiddlyhost"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="f-tiddlywiki"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="f-tiddlywiki"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="f-tw5"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="f-tw5"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="gallary"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="gallary"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="GettingStarted"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="GettingStarted"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="gh-pages-cache"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="gh-pages-cache"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="gnome-extensions"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="gnome-extensions"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="heart"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="heart"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="Index"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="Index"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="js-books"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="js-books"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="markdown-test"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="markdown-test"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="memos-docker-compose"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="memos-docker-compose"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="missing-thinkup"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="missing-thinkup"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="name-your-tid"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="name-your-tid"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neoto/macro/tiddlywiki"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neoto/macro/tiddlywiki"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw-badges"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw-badges"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw-changlog"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw-changlog"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw-gallary"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw-gallary"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw-plugins"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw-plugins"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw-stylesheet"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw-stylesheet"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/action/base-time-darkmode"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/action/base-time-darkmode"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/actions/base-browser-darkmode"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/actions/base-browser-darkmode"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/archive/restore-button"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/archive/restore-button"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/archive/todo-table"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/archive/todo-table"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/archive/viewtemplate/todo-button"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/archive/viewtemplate/todo-button"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/articla/tailwin css example"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/articla/tailwin css example"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/article/1 13"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/article/1 13"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/article/1 26"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/article/1 26"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/article/1 4"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/article/1 4"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/article/1 7"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/article/1 7"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/article/1 8"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/article/1 8"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/article/awesome-websites"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/article/awesome-websites"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/article/gradient-icon"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/article/gradient-icon"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/article/music-index"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/article/music-index"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/article/tempmail"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/article/tempmail"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/article/theme-patch-note"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/article/theme-patch-note"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/awesome-tiddlywiki"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/awesome-tiddlywiki"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/body-fontsize"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/body-fontsize"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/browser/tip"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/browser/tip"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/button-checkbox"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/button-checkbox"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/button/inbox"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/button/inbox"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/button/mode pagecontrol"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/button/mode pagecontrol"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/button/random"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/button/random"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/change-theme-palette"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/change-theme-palette"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/CHANGELOG"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/CHANGELOG"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/checkbox"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/checkbox"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/clock"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/clock"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/config-table"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/config-table"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/configuration"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/configuration"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/css/below-toolbar"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/css/below-toolbar"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/docs/details-marker-bug"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/docs/details-marker-bug"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/docs/list"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/docs/list"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/docs/macro-not-snippet"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/docs/macro-not-snippet"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/example/bullets-level"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/example/bullets-level"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/example/keyword"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/example/keyword"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/example/Live Time"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/example/Live Time"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/example/shield-online"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/example/shield-online"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/fontawesome-tutorial"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/fontawesome-tutorial"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/fonts/maple-mono"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/fonts/maple-mono"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/fonts/twemoji"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/fonts/twemoji"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/gravatar.png"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/gravatar.png"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/help/open"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/help/open"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/icon/add"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/icon/add"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/icon/approve"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/icon/approve"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/icon/bell"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/icon/bell"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/icon/bili"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/icon/bili"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/icon/book"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/icon/book"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/icon/closed-folder"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/icon/closed-folder"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/icon/comment"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/icon/comment"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/icon/comment-close"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/icon/comment-close"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/icon/copy"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/icon/copy"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/icon/github"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/icon/github"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/icon/notification"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/icon/notification"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/icon/notion"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/icon/notion"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/icon/opened-folder"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/icon/opened-folder"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/icon/pen"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/icon/pen"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/icon/penguin"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/icon/penguin"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/icon/plugins"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/icon/plugins"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/icon/reset"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/icon/reset"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/icon/seting"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/icon/seting"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/icon/seting-red"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/icon/seting-red"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/icon/warn"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/icon/warn"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/image/banner"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/image/banner"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/image/bell"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/image/bell"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/image/copy"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/image/copy"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/image/inbox"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/image/inbox"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/image/randomselection.svg"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/image/randomselection.svg"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/image/showcase-01.png"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/image/showcase-01.png"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/images/white-vanilla.png"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/images/white-vanilla.png"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/INBOX"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/INBOX"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/logo"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/logo"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/macro/better-url"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/macro/better-url"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/macro/gitlab-image"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/macro/gitlab-image"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/macro/gradient"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/macro/gradient"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/macro/img-shield"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/macro/img-shield"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/macro/keyword"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/macro/keyword"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/macro/layout"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/macro/layout"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/macro/neotw"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/macro/neotw"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/macro/neotw-span"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/macro/neotw-span"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/macro/reuse"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/macro/reuse"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/macro/shield-online"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/macro/shield-online"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/macro/symbol"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/macro/symbol"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/macro/underline"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/macro/underline"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/mobile/darkmode-button"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/mobile/darkmode-button"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/network"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/network"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/new/New Tiddler"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/new/New Tiddler"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/new/New Tiddler 1"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/new/New Tiddler 1"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/new/New Tiddler 2"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/new/New Tiddler 2"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/new/New Tiddler 3"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/new/New Tiddler 3"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/new/New Tiddler 4"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/new/New Tiddler 4"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/new/New Tiddler 5"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/new/New Tiddler 5"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/new/New Tiddler 6"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/new/New Tiddler 6"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/new/New Tiddler 7"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/new/New Tiddler 7"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/new/New Tiddler 8"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/new/New Tiddler 8"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/new/New Tiddler 9"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/new/New Tiddler 9"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/official-plugin-library"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/official-plugin-library"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/readmode-v1"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/readmode-v1"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/readmode-v2"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/readmode-v2"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/search-fields"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/search-fields"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/search-images"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/search-images"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/searchtag"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/searchtag"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/setup"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/setup"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/sidebar/color-picker"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/sidebar/color-picker"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/story-width"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/story-width"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/style/box"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/style/box"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/style/dd"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/style/dd"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/style/fix-title-too-long"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/style/fix-title-too-long"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/style/save-button"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/style/save-button"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/style/select"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/style/select"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/svg/vscode"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/svg/vscode"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/switch-readonly"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/switch-readonly"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/switch-readonly-off"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/switch-readonly-off"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/switch-readonly-on"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/switch-readonly-on"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/switch-tip"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/switch-tip"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/template/date-format"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/template/date-format"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/test"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/test"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/tiddlywiki/tip/convert-singlefile"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/tiddlywiki/tip/convert-singlefile"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/tool/language"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/tool/language"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/twitter-button"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/twitter-button"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/username"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="neotw/username"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="New Tiddler"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="New Tiddler"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="New Tiddler 2"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="New Tiddler 2"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="New Tiddler 3"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="New Tiddler 3"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="New Tiddler 4"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="New Tiddler 4"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="New Tiddler 5"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="New Tiddler 5"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="New Tiddler 7"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="New Tiddler 7"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="next-arrow"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="next-arrow"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="Notion-logo.svg"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="Notion-logo.svg"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="oeyoews"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="oeyoews"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="oeyoews_contributions.png"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="oeyoews_contributions.png"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="pang-test"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="pang-test"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="PLUGINS"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="PLUGINS"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="poem-random"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="poem-random"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="prev-arrow"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="prev-arrow"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="preview-all-plugins-tw"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="preview-all-plugins-tw"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="puzzle"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="puzzle"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="recent-count"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="recent-count"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="recent-note-record"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="recent-note-record"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="some tw website examples"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="some tw website examples"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="test-compose-on-tiddlywiki"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="test-compose-on-tiddlywiki"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="test-one"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="test-one"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="test-two"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="test-two"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="tiddlywiki-heatmap"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="tiddlywiki-heatmap"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="tom.png"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="tom.png"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="update-tiddlywiki-bug"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="update-tiddlywiki-bug"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="use-latest-tiddlywiki"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="use-latest-tiddlywiki"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="xiaofamao"] .tc-titlebar h2  { text-transform: Capitalize; }
+  [data-tiddler-title="xiaofamao"] .tc-titlebar h2 { text-transform: capitalize; }
 
 .tc-tiddler-controls  {display: none !important;}
 
