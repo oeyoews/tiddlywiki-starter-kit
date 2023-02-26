@@ -3,9 +3,10 @@ tags: $:/tags/PageTemplate
 
 \define random-article()
 <$list filter="[{$:/info/url/protocol}match[https:]]">
-<$button tooltip="random tiddler" class=<<tv-config-toolbar-class>> actions={{$:/plugins/oeyoews/neotw/modules/random-button/actions-article}}>
+<$button tooltip="random tiddler" class="o-btn-back" actions={{$:/plugins/oeyoews/neotw/modules/random-button/actions-article}}>
+<$action-sendmessage $message="tm-close-all-tiddlers" />
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
-{{$:/plugins/oeyoews/neotw/module/random-button/icon}}
+  {{$:/plugins/oeyoews/neotw/module/random-button/icon}}
 </$list>
 </$button>
 </$list>
