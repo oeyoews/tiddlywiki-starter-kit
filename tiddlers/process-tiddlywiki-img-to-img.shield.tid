@@ -1,0 +1,22 @@
+created: 20230226065631599
+creator: oeyoews
+modified: 20230226075617713
+modifier: oeyoews
+publish: article
+tags: 
+title: process-tiddlywiki-img-to-img.shield
+type: text/vnd.tiddlywiki
+
+* https://github.com/simple-icons/simple-icons/discussions/4935
+* svgo **.svg
+
+<hr>
+
+* resize svg to 24: https://www.iloveimg.com/resize-image/resize-svg#resize-options,pixels
+* preview: https://petershaggynoble.github.io/SI-Sandbox/preview/
+* use svgo to optimize 
+* remove extra element https://jakearchibald.github.io/svgomg/
+* add format for shield like role="img"
+* resize again
+* npx svglint  icon/tiddlywiki.svg
+* use inkscape to center 
