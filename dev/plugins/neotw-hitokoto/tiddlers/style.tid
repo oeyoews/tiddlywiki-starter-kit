@@ -27,6 +27,10 @@ footer .inline-icon svg{
   font-weight: 700;
 }
 
+#hitokoto:hover {
+  cursor: pointer;
+}
+
 .print {
     width: 500px;
     white-space: nowrap;
