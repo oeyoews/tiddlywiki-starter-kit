@@ -3947,6 +3947,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="gh-pages-cache"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="github-discussion-org"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="gnome-extensions"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="heart"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -3962,6 +3964,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   [data-tiddler-title="missing-thinkup"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="name-your-tid"] .tc-titlebar h2 { text-transform: capitalize; }
+
+  [data-tiddler-title="nav-bug"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="neoto/macro/tiddlywiki"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -4267,6 +4271,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="update-tiddlywiki-bug"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="use-flameshot-to-upload-image"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="use-latest-tiddlywiki"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="xiaofamao"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -4354,6 +4360,8 @@ footer {
 
 [data-tiddler-title="gh-pages-cache"] .tc-tiddler-controls  {display: none;}
 
+[data-tiddler-title="github-discussion-org"] .tc-tiddler-controls  {display: none;}
+
 [data-tiddler-title="gnome-extensions"] .tc-tiddler-controls  {display: none;}
 
 [data-tiddler-title="heart"] .tc-tiddler-controls  {display: none;}
@@ -4369,6 +4377,8 @@ footer {
 [data-tiddler-title="missing-thinkup"] .tc-tiddler-controls  {display: none;}
 
 [data-tiddler-title="name-your-tid"] .tc-tiddler-controls  {display: none;}
+
+[data-tiddler-title="nav-bug"] .tc-tiddler-controls  {display: none;}
 
 [data-tiddler-title="neoto/macro/tiddlywiki"] .tc-tiddler-controls  {display: none;}
 
@@ -4673,6 +4683,8 @@ footer {
 [data-tiddler-title="tom.png"] .tc-tiddler-controls  {display: none;}
 
 [data-tiddler-title="update-tiddlywiki-bug"] .tc-tiddler-controls  {display: none;}
+
+[data-tiddler-title="use-flameshot-to-upload-image"] .tc-tiddler-controls  {display: none;}
 
 [data-tiddler-title="use-latest-tiddlywiki"] .tc-tiddler-controls  {display: none;}
 
@@ -5282,7 +5294,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "140";
+  content: "143";
 }
 .user-panel-avatar { position: relative; max-width: 22px; max-height: 22px; }.user-panel-avatar-56 { position: relative; max-width: 56px; max-height: 56px; }.user-panel-avatar-56 img { width: 100%; height: auto; max-width: 56px; max-height: 56px; border-radius: 50%; aspect-ratio: 1 / 1; }.user-panel-avatar img { width: 100%; height: auto; max-width: 22px; max-height: 22px; border-radius: 50%; aspect-ratio: 1 / 1; }
 ul.bullets li::marker {
