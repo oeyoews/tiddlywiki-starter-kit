@@ -1,3 +1,10 @@
+# [3.70.0](https://github.com/oeyoews/neotw/compare/v3.69.0...v3.70.0) (2023-02-26)
+
+
+### Features
+
+* support online random-article ([97c3487](https://github.com/oeyoews/neotw/commit/97c3487a414b6a3d038a643291c13fc5fa2be726))
+
 # [3.69.0](https://github.com/oeyoews/neotw/compare/v3.68.0...v3.69.0) (2023-02-26)
 
 
