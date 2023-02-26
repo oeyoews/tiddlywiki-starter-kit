@@ -1,3 +1,10 @@
+# [3.66.0](https://github.com/oeyoews/neotw/compare/v3.65.0...v3.66.0) (2023-02-26)
+
+
+### Features
+
+* support switch tiddlers title between cn and en based current language ([ce0425b](https://github.com/oeyoews/neotw/commit/ce0425be66695b3289866d810017a8f0b1337534))
+
 # [3.65.0](https://github.com/oeyoews/neotw/compare/v3.64.1...v3.65.0) (2023-02-25)
 
 
