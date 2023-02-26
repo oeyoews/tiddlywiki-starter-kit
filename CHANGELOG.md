@@ -1,3 +1,15 @@
+# [3.71.0](https://github.com/oeyoews/neotw/compare/v3.70.0...v3.71.0) (2023-02-26)
+
+
+### Features
+
+* add reveal demo ([4f29a89](https://github.com/oeyoews/neotw/commit/4f29a89307086d113cb095fa943323b89a023fa3))
+
+
+### Performance Improvements
+
+* disable static ([c1957dc](https://github.com/oeyoews/neotw/commit/c1957dcb76550511b6e6c202711f6184c211d19e))
+
 # [3.70.0](https://github.com/oeyoews/neotw/compare/v3.69.0...v3.70.0) (2023-02-26)
 
 
