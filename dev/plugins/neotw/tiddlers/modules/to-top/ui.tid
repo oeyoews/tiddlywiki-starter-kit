@@ -1,6 +1,16 @@
 title: $:/plugins/oeyoews/neotw/modules/to-top/ui
 tags: $:/tags/PageTemplate
 
+\define random-article()
+<$list filter="[{$:/info/url/protocol}match[https:]]">
+<$button tooltip="random tiddler" class=<<tv-config-toolbar-class>> actions={{$:/plugins/oeyoews/neotw/modules/random-button/actions-article}}>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+{{$:/plugins/oeyoews/neotw/module/random-button/icon}}
+</$list>
+</$button>
+</$list>
+\end
+
 \define scroll-top-bottom()
 <!-- top -->
 <$button tooltip="Back to top" class="o-btn-back">
@@ -92,10 +102,10 @@ tags: $:/tags/PageTemplate
 \end
 
 \whitespace trim
-
 <!-- emptystorymessage -->
 <$list filter="[[$:/StoryList]get[list]count[]match[0]]">
 <div id="stx-story-top">
+  <<random-article>>
   <<github-cat>>
   <<switch-lang>>
   <<toggle-theme>>
@@ -124,6 +134,7 @@ tags: $:/tags/PageTemplate
 <$list filter="[[$:/StoryList]get[list]!is[blank]]">
   <$list filter="[list[$:/StoryList]count[]compare:number:lteq[2]]">
     <div id="stx-story-top">
+      <<random-article>>
       <<o-sidebar>>
       <<switch-lang>>
       <<readonly-mode>>
