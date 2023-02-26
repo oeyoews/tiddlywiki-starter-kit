@@ -2,4 +2,4 @@ title: $:/plugins/oeyoews/neotw/modules/alias/filter
 tags: $:/tags/ViewTemplateTitleFilter
 list-before: $:/config/ViewTemplateTitleFilters/default
 
-[<currentTiddler>has[caption]then[$:/plugins/oeyoews/neotw/modules/caption/display-caption]]
+[[$:/language]get[text]match[$:/languages/zh-Hans]then[$:/plugins/oeyoews/neotw/modules/caption/display-caption]]
