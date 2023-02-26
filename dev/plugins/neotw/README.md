@@ -49,7 +49,7 @@
 ## Installation :package:
 
 > **Note**
-> require git and npm
+> require git and npm and not compatible vanilla theme
 
 ```bash
 git clone --depth 1 https://github.com/oeyoews/neotw
