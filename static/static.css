@@ -4306,6 +4306,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
    content:"";
 }
 footer {
+  text-align: center;
+  flex-wrap: wrap;
 	flex: 1 1 auto;
 	display:flex !important;
 	justify-content:center;
@@ -5432,6 +5434,8 @@ ul.bullets li::marker {
 	content: "✅"
 }
 footer {
+  text-align: center;
+  flex-wrap: wrap;
 	flex: 1 1 auto;
 	display:flex !important;
 	justify-content:center;
