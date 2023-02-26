@@ -47,7 +47,7 @@ await spinner('Building ...', async () => {
   // minify index.html
   await $`npx html-minifier-terser -c ./config/html-minifier-terser-config.json -o dist/index.html dist/index.html`;
   // misc
-  await $`cp -r files vercel.json src/index-* ${dist}`;
+  await $`cp -r files vercel.json ${dist}`;
   // copy readme file
   await $`cp dev/plugins/neotw/README.md README.md`;
   // msg
