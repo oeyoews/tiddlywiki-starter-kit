@@ -1,11 +1,21 @@
 created: 20230226065631599
 creator: oeyoews
-modified: 20230226075617713
+modified: 20230226104632976
 modifier: oeyoews
 publish: article
 tags: 
 title: process-tiddlywiki-img-to-img.shield
 type: text/vnd.tiddlywiki
+
+!! Steps
+
+* 首先需要将图片大小调整为24, 这使用inkscape很容易做到， 但是无法清楚style属性， 因此我继续使用了svgo进行处理，仅仅保留有一个path, 但是正式由于这一步图片不再是正方型， 难道是由于这个 widthxheight is 283.464x283.466导致的问题吗
+
+
+
+!! Some Links
+
+<hr>
 
 * https://github.com/simple-icons/simple-icons/discussions/4935
 * svgo **.svg
