@@ -2,5 +2,5 @@ title: $:/plugins/oeyoews/tiddlywiki-announcement/new-text
 
 <$button>
 {{$:/plugins/oeyoews/tiddlywiki-announcement/icon}} Add Announcement
-<$action-sendmessage $message="tm-new-tiddler" title="$:/plugins/oeyoews/tiddlywiki-announcement/text" text="<!-- please input your announcement content -->"/>
+<$action-sendmessage $message="tm-new-tiddler" title="$:/plugins/oeyoews/tiddlywiki-announcement/text" text=""/>
 </$button>
