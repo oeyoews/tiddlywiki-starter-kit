@@ -1,3 +1,10 @@
+## [3.66.1](https://github.com/oeyoews/neotw/compare/v3.66.0...v3.66.1) (2023-02-26)
+
+
+### Bug Fixes
+
+* split filter for title ([cf7718e](https://github.com/oeyoews/neotw/commit/cf7718e8616c629f3f1d75bf605f96c7a1b506d5))
+
 # [3.66.0](https://github.com/oeyoews/neotw/compare/v3.65.0...v3.66.0) (2023-02-26)
 
 
