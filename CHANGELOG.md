@@ -1,3 +1,10 @@
+# [3.67.0](https://github.com/oeyoews/neotw/compare/v3.66.1...v3.67.0) (2023-02-26)
+
+
+### Features
+
+* add onclick for neotw-hitokoto ([1fe3acb](https://github.com/oeyoews/neotw/commit/1fe3acb4d656fb22bb4c59783c1dc45a01463893))
+
 ## [3.66.1](https://github.com/oeyoews/neotw/compare/v3.66.0...v3.66.1) (2023-02-26)
 
 
