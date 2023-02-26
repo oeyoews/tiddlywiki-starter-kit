@@ -5,7 +5,7 @@ tags: $:/tags/Stylesheet
 [data-tiddler-title="$(currentTiddler)$"] .tc-titlebar h2 { text-transform: capitalize; }
 \end
 
-.tc-tiddler-frame input.tc-edit-texteditor  { text-transform: capitalize; }
+<!-- .tc-tiddler-frame input.tc-edit-texteditor  { text-transform: capitalize; } -->
 
 .o-rnav-article {
   text-align: right;

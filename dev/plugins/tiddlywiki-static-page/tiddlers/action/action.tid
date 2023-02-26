@@ -1,8 +1,8 @@
 title: $:/plugins/oeyoews/tiddlywiki-static-page/action/style
 <!-- tags: $:/tags/StartupAction/PostRender -->
 
-<$list filter="[{$:/info/url/protocol}prefix[http]]">
+<$list filter="[{$:/info/url/protocol}match[http:]]">
   <$fieldmangler tiddler="$:/state/oeyoews/tiddlywiki-static-page/style/static">
-  <$action-sendmessage $message="tm-add-tag" $param="$:/tags/Stylesheet"/>
+    <$action-sendmessage $message="tm-add-tag" $param="$:/tags/Stylesheet"/>
   </$fieldmangler>
 </$list>
