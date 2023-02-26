@@ -2,6 +2,8 @@ title: $:/plugins/oeyoews/neotw/style/footer
 tags: $:/tags/Stylesheet
 
 footer {
+  text-align: center;
+  flex-wrap: wrap;
 	flex: 1 1 auto;
 	display:flex !important;
 	justify-content:center;

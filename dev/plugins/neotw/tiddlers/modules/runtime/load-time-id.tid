@@ -2,7 +2,7 @@ title: $:/state/oeyoews/neotw/modules/load-time-id
 <!-- tags: $:/tags/RawMarkupWikified -->
 tags: $:/tags/RawMarkupWikified/BottomBody
 
-`<footer style="text-align:center;display:flex;flex-wrap:wrap;">`
+`<footer>`
 `<span style="color:#aaa;" id="load_time">`Loading …`</span>`
 <!-- `<svg -->
 <!--       class="wave-header waves" -->

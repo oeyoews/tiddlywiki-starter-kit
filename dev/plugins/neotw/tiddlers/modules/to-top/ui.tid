@@ -53,6 +53,7 @@ tags: $:/tags/PageTemplate
 <$list filter="[[$:/temp/zen-mode]get[text]else[no]match[no]]">
 <$button tooltip="Zen mode" class="o-btn-back">
 <$action-setfield $tiddler="$:/temp/zen-mode" text="yes"/>
+<$action-setfield $tiddler="$:/temp/style/toggle-footer" text="footer, .aplayer {display:none !important;}" tags="$:/tags/Stylesheet"/>
 <$action-sendmessage $message="tm-full-screen" $param="enter"/>
   <$list filter="[<tv-config-toolbar-icons>match[yes]]">
     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M5 5h5V3H3v7h2zm5 14H5v-5H3v7h7zm11-5h-2v5h-5v2h7zm-2-4h2V3h-7v2h5z"></path></svg>
@@ -63,6 +64,7 @@ tags: $:/tags/PageTemplate
 <$list filter="[[$:/temp/zen-mode]get[text]match[yes]]">
 <$button class=<<tv-config-toolbar-class>> tooltip="Non-zen mode" class="o-btn-back">
 <$action-setfield $tiddler="$:/temp/zen-mode" text="no"/>
+<$action-setfield $tiddler="$:/temp/style/toggle-footer" text="" tags="$:/tags/Stylesheet"/>
 <$action-sendmessage $message="tm-full-screen" $param="exit"/>
   <$list filter="[<tv-config-toolbar-icons>match[yes]]">
 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10 4H8v4H4v2h6zM8 20h2v-6H4v2h4zm12-6h-6v6h2v-4h4zm0-6h-4V4h-2v6h6z"></path></svg>

@@ -3,6 +3,8 @@ tags: $:/tags/Stylesheet
 type: text/css
 
 footer {
+  text-align: center;
+  flex-wrap: wrap;
 	flex: 1 1 auto;
 	display:flex !important;
 	justify-content:center;

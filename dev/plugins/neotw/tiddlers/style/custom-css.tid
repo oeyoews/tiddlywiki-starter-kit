@@ -40,6 +40,7 @@ tags: $:/tags/Stylesheet
 </$list>
 
 <$list filter="[[$:/temp/zen-mode]get[text]match[yes]]">
+footer {display:none !important;}
 .tc-tiddler-controls,
 .nc-topbar {
   display: none !important;

@@ -8,6 +8,7 @@ title: $:/plugins/oeyoews/neotw-hitokoto/readme
 
 <!-- https://hitokoto.tyr.im/ -->
 <!-- https://api.vvhan.com/ -->
-!! TODO
 
-* support onclick
+!! Usage
+
+* click to update next hitokoto
