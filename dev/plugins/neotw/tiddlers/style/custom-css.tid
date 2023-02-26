@@ -2,8 +2,10 @@ title: $:/plugins/oeyoews/neotw/style/custom-css
 tags: $:/tags/Stylesheet
 
 \define hide-tiddler-controls()
-[data-tiddler-title="$(currentTiddler)$"] .tc-titlebar h2  { text-transform: Capitalize; }
+[data-tiddler-title="$(currentTiddler)$"] .tc-titlebar h2 { text-transform: capitalize; }
 \end
+
+.tc-tiddler-frame input.tc-edit-texteditor  { text-transform: capitalize; }
 
 .o-rnav-article {
   text-align: right;
