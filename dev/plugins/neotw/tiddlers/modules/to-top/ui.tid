@@ -99,8 +99,8 @@ tags: $:/tags/PageTemplate
   <<github-cat>>
   <<switch-lang>>
   <<toggle-theme>>
-  <<home-button>>
   <<load-articles>>
+  <<home-button>>
 </div>
 </$list>
 
@@ -114,8 +114,8 @@ tags: $:/tags/PageTemplate
   <<readonly-mode>>
   <<toggle-theme>>
   <<zen-mode>>
-  <<home-button>>
   <<scroll-top-bottom>>
+  <<home-button>>
 </div>
 </$list>
 </$list>
@@ -129,6 +129,7 @@ tags: $:/tags/PageTemplate
       <<readonly-mode>>
       <<toggle-theme>>
       <<zen-mode>>
+      <<home-button>>
     </div>
   </$list>
 </$list>
