@@ -2,6 +2,7 @@ tags: $:/tags/Macro
 title: $:/plugins/oeyoews/neotw/macro/sidebar
 
 \define o-sidebar()
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
 <$reveal state="$:/state/notebook-sidebar" type="match" text="yes" default="no" retain="yes" animate="no">
   <$button set="$:/state/notebook-sidebar" setTo="no" tooltip="Toggle menu" class="sidebar-toggle open o-btn-back">
     {{$:/themes/nico/notebook/images/bars}}
@@ -13,4 +14,5 @@ title: $:/plugins/oeyoews/neotw/macro/sidebar
     {{$:/themes/nico/notebook/images/bars}}
   </$button>
 </$reveal>
+</$list>
 \end
