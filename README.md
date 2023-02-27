@@ -31,7 +31,13 @@
 
 ## Intro :tada:
 
-> A modern style notebook based on `tiddlywiki`. Here is a [» demo «](https://oeyoews.github.io/neotw)
+> A modern style notebook based on `tiddlywiki`. @oeyoews
+
+> Here is a [» demo «](https://oeyoews.github.io/neotw)
+
+## Intro :robot:
+
+> NEOTW is a concise and efficient article publishing platform. We support bilingual publishing in both Chinese and English, and provide a toggle between reading mode and editing mode, so that you can easily edit while reading articles. We also support emoji syntax, allowing you to add more expressions and emotional color to your articles. You can switch between different layouts through the URL, making your reading experience more flexible. In addition, we automatically switch between night/day mode based on the system, and you can also switch modes through the URL. We also support Zen mode, allowing you to enjoy reading in a quiet environment. On NEOTW, you can publish your own articles and comment on others' articles. We automatically display recently created articles, keeping you up to date with the latest news on the platform. To make your reading more beautiful, we also support automatic spacing between Chinese and English, making your typesetting more neat and beautiful. Additionally, we support title aliases to make your titles more exquisite. Welcome to NEOTW, let's enjoy the joy of reading and sharing together! @Chatgpt
 
 ## Features :sparkles:
 
