@@ -29,17 +29,18 @@
 <img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/012.png" height=256 alt="012">
 </center>
 
-## Intro :tada:
+## 介绍 :tada:
 
 > A modern style notebook based on `tiddlywiki`. @oeyoews
 
 > Here is a [» demo «](https://oeyoews.github.io/neotw)
 
-## Intro :robot:
+## 介绍 :robot:
 
-> NEOTW is a concise and efficient article publishing platform. We support bilingual publishing in both Chinese and English, and provide a toggle between reading mode and editing mode, so that you can easily edit while reading articles. We also support emoji syntax, allowing you to add more expressions and emotional color to your articles. You can switch between different layouts through the URL, making your reading experience more flexible. In addition, we automatically switch between night/day mode based on the system, and you can also switch modes through the URL. We also support Zen mode, allowing you to enjoy reading in a quiet environment. On NEOTW, you can publish your own articles and comment on others' articles. We automatically display recently created articles, keeping you up to date with the latest news on the platform. To make your reading more beautiful, we also support automatic spacing between Chinese and English, making your typesetting more neat and beautiful. Additionally, we support title aliases to make your titles more exquisite. Welcome to NEOTW, let's enjoy the joy of reading and sharing together! @Chatgpt
+> NEOTW 是一个简洁、高效的文章发布平台。我们支持中英双语文章发布，同时提供阅读模式和编辑模式之间的切换，让您在阅读文章的同时也可以轻松进行编辑。 我们还支持 emoji 语法，让您在文章中添加更多的表情和感情色彩。
+> 您可以通过 URL 切换不同的布局，让您的阅读体验更加自由。同时，我们根据系统自动切换夜间/日间模式，也可以通过 URL 切换。 我们还支持禅模式，让您在安静的环境中，更好的享受阅读的乐趣。 在 NEOTW 上，您可以发表自己的文章，并且支持评论功能。同时，我们会自动展示最近创建的文章，让您始终了解平台上的最新资讯。 为了让您的阅读更加美观，我们还特别支持中英文之间自动添加空格，让您的排版更加整洁和美观。另外，我们也支持标题别名，让您的标题更加精美。 欢迎来到 NEOTW，让我们一起享受阅读和分享的乐趣！ @Chatgpt
 
-## Features :sparkles:
+## 特性 :sparkles:
 
 - 随机展示文章
 - 文章标题支持中英双语言切换
@@ -56,9 +57,9 @@
 
 > **Warning** `Neotw` 部分功能暂时还未单独做成插件，或者部分功能依赖与其他插件, 不建议单独使用
 
-## Installation :package:
+## 安装 :package:
 
-> **Note**
+> **注意**
 > require git and npm and not compatible vanilla theme
 
 ```bash
@@ -78,7 +79,7 @@ npm run start  # start tiddlywiki on https://localhost:8099
 <img src="https://www.netlify.com/img/deploy/button.svg">
 </a>
 
-## FileStruct :open_file_folder:
+## 项目结构 :open_file_folder:
 
 <details>
   <summary>FileStruct</summary>
@@ -117,10 +118,10 @@ Neotw
 <!---->
 <!-- - 如果有兴趣以及能力(有一定的计算机基础),确实值得学习一下太微 (TiddlyWiki5) 的巧妙之处, 普通用户只需要学习太微的基本用法 (帕累托法则） -->
 
-## Online Preview :eyes:
+## 预览 :eyes:
 
 <details>
-<summary>Preview</summary>
+<summary>预览</summary>
 
 - [Slides](https://neotw.oeyoewl.top/#neotw-reveal-js)
 - [main](https://neotw.oeyoewl.top)
