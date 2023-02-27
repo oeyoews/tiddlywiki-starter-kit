@@ -1,0 +1,15 @@
+created: 20230227004259762
+creator: oeyoews
+modified: 20230227004551119
+modifier: oeyoews
+tags: $:/tags/Stylesheet Journal
+title: 2023-02-27
+type: text/vnd.tiddlywiki
+
+.reveal .progress {
+	color: #eb6f92;
+}
+
+.reveal .controls .controls-arrow {
+	color: #3FA1EA;
+}

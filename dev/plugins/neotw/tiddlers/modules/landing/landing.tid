@@ -8,6 +8,8 @@ tags: $:/tags/Layout
     [img width=32 [$:/favicon.ico]] <h1>Neotw</h1>
   </div>
   <div class="o-landing-panel">
-    <$transclude tiddler="$:/plugins/oeyoews/neotw/modules/landing/landing-page" mode="block"/>
+  <$list filter="[field:landing[yes]]">
+    <$transclude mode="block"/>
+  </$list>
   </div>
 </div>
