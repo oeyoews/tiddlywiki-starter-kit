@@ -5,7 +5,7 @@ creator: pimgeek
 giscus: yes
 icon: reveal-icon
 list: one two
-modified: 20230227042208088
+modified: 20230227081452121
 modifier: oeyoews
 publish: article
 tags: 
@@ -46,5 +46,7 @@ type: text/vnd.tiddlywiki
 * zoom: ctrl/alt click
 * move: hjkl
 * o: overview
+* n: next slide
 * f: fullscreen
 * b: black
+* press ? to find more usage
