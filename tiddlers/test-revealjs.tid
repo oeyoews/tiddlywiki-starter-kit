@@ -3,7 +3,7 @@ created: 20230218094549863
 creator: pimgeek
 icon: reveal-icon
 list: one two
-modified: 20230227025651639
+modified: 20230227032453031
 modifier: oeyoews
 publish: article
 tags: 
@@ -37,3 +37,11 @@ type: text/vnd.tiddlywiki
 </details>
 
 <!-- 每个slide 控制在十行以内 -->
+
+!! Usage
+
+* ctrl/alt click to zoom
+* hjkl
+* o
+* f
+* b

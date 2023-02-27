@@ -111,7 +111,7 @@ Neotw
 <!---->
 <!-- - 如果有兴趣以及能力(有一定的计算机基础),确实值得学习一下太微 (TiddlyWiki5) 的巧妙之处, 普通用户只需要学习太微的基本用法 (帕累托法则） -->
 
-## Online Preview :framed_picture:
+## Online Preview :eyes:
 
 <details>
 <summary>Preview</summary>
