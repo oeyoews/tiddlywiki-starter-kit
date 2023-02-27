@@ -1,9 +1,10 @@
 caption: {{reveal-icon}} Slides
 created: 20230218094549863
 creator: pimgeek
+giscus: yes
 icon: reveal-icon
 list: one two
-modified: 20230227035703221
+modified: 20230227040037168
 modifier: oeyoews
 publish: article
 tags: 
@@ -21,7 +22,8 @@ type: text/vnd.tiddlywiki
 <div style="text-align: right;">
 <span>
 <$button>
-[[neotw-reveal-js]]
+{{reveal-icon}} Navigate to Slides
+<$action-navigate $to="neotw-reveal-js" />
 </$button>
 <$button >
 <<.icon reveal-icon>> Add new slide
@@ -40,8 +42,8 @@ type: text/vnd.tiddlywiki
 
 !! Usage
 
-* ctrl/alt click to zoom
-* hjkl
-* o
-* f
-* b
+* zoom: ctrl/alt click
+* move: hjkl
+* o: overview
+* f: fullscreen
+* b: black
