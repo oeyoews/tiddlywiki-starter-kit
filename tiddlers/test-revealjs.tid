@@ -3,7 +3,7 @@ created: 20230218094549863
 creator: pimgeek
 icon: reveal-icon
 list: one two
-modified: 20230227021734919
+modified: 20230227022524063
 modifier: oeyoews
 publish: article
 r-tag: reveal
@@ -26,7 +26,7 @@ type: text/vnd.tiddlywiki
 </$button>
 <$button >
 <<.icon reveal-icon>> Add new slide
-<$action-sendmessage $message="tm-new-tiddler" title={{{ [<currentTiddler>get[title]addsuffix[-]]}}} tags={{{ [<currentTiddler>get[r-tag]] }}}/>
+<$action-sendmessage $message="tm-new-tiddler" title={{{ [[]addprefix[reveal-js-]]}}} tags={{{ [<currentTiddler>get[r-tag]] }}}/>
 </$button>
 </span>
 </div>
