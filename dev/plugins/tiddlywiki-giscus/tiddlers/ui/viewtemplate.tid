@@ -12,12 +12,13 @@ tags: $:/tags/ViewTemplate
               <$button class="tc-btn-invisible giscus-footer" set=<<stateTiddler>> setTo="">
                   Fold Comments
               </$button>
-              <$button class="tc-btn-invisible giscus-footer">
-                  | Back to top
-                <$action-navigate $to=<<currentTiddler>> >
-              </$button>
               <!-- load giscus -->
               <$giscus id=<<comment>> lang="en" theme={{{ [[$:/plugins/oeyoews/tiddlywiki-giscus/config]get[gtheme]else[light]] }}}/>
+              <!-- back -->
+              <$button class="tc-btn-invisible giscus-footer">
+                  Back to top
+                <$action-navigate $to=<<currentTiddler>> >
+              </$button>
           </$reveal>
         </$set>
 </$list>
