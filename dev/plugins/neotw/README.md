@@ -116,6 +116,7 @@ Neotw
 <details>
 <summary>Preview</summary>
 
+- [Slides](https://neotw.oeyoewl.top/#neotw-reveal-js)
 - [main](https://neotw.oeyoewl.top)
 - [github page](https://oeyoews.github.io/neotw)
 - [tiddlyhost](https://neotw.tiddlyhost.com)

@@ -3,11 +3,11 @@ created: 20230218094549863
 creator: pimgeek
 icon: reveal-icon
 list: one two
-modified: 20230227032453031
+modified: 20230227035703221
 modifier: oeyoews
 publish: article
 tags: 
-title: test-revealjs
+title: neotw-reveal-js
 type: text/vnd.tiddlywiki
 
 <$presentation slideNumber="true" autoSlide="" loop $height="600">
@@ -21,7 +21,7 @@ type: text/vnd.tiddlywiki
 <div style="text-align: right;">
 <span>
 <$button>
-[[test-revealjs]]
+[[neotw-reveal-js]]
 </$button>
 <$button >
 <<.icon reveal-icon>> Add new slide
