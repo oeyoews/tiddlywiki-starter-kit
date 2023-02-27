@@ -1,9 +1,9 @@
 created: 20230227004259762
 creator: oeyoews
-modified: 20230227004551119
+modified: 20230227023024642
 modifier: oeyoews
-tags: $:/tags/Stylesheet Journal
-title: 2023-02-27
+tags: $:/tags/Stylesheet
+title: reveal-js-style
 type: text/vnd.tiddlywiki
 
 .reveal .progress {
@@ -12,4 +12,9 @@ type: text/vnd.tiddlywiki
 
 .reveal .controls .controls-arrow {
 	color: #3FA1EA;
+}
+
+.reveal .slide-number {
+	color: #3FA1EA;
+	background-color: transparent;
 }
