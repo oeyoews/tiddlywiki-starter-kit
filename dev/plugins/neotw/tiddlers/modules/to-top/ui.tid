@@ -1,6 +1,13 @@
 title: $:/plugins/oeyoews/neotw/modules/to-top/ui
 tags: $:/tags/PageTemplate
 
+\define reveal-js()
+<$button tooltip="reveal-js" class="o-btn-back">
+{{reveal-icon}}
+<$action-navigate $to="neotw-reveal-js" />
+</$button>
+\end
+
 \define random-article()
 <$list filter="[{$:/info/url/protocol}match[https:]]">
 <$button tooltip="random tiddler" class="o-btn-back" actions={{$:/plugins/oeyoews/neotw/modules/random-button/actions-article}}>
@@ -106,6 +113,7 @@ tags: $:/tags/PageTemplate
 <!-- emptystorymessage -->
 <$list filter="[[$:/StoryList]get[list]count[]match[0]]">
 <div id="stx-story-top">
+  <<reveal-js>>
   <<random-article>>
   <<github-cat>>
   <<switch-lang>>

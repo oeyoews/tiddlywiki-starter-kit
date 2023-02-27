@@ -44,6 +44,8 @@ tags: $:/tags/Stylesheet
     color: #aaaaaa;
     font-size: 14px;
     margin-top: 10px;
+    <!-- text-align: right; -->
+    <!-- text-transform: captiliaze; -->
 }
 
 .giscus-footer:hover {
