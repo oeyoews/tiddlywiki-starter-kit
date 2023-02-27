@@ -1,8 +1,9 @@
-caption: Test
+caption: {{reveal-icon}} Slides
 created: 20230218094549863
 creator: pimgeek
+icon: reveal-icon
 list: one two
-modified: 20230227014534249
+modified: 20230227021734919
 modifier: oeyoews
 publish: article
 r-tag: reveal
@@ -12,33 +13,26 @@ type: text/vnd.tiddlywiki
 
 <$presentation slideNumber="true" autoSlide="" loop $height="600">
 <$list filter="[tag[reveal]]">
-<$slide  backgroundColor={{{ [<currentTiddler>get[color]else[]] }}}>
+<$slide  backgroundColor={{{ [<currentTiddler>get[color]else[aquamarine]] }}}>
 <$transclude mode="block" />
 </$slide>
 </$list>
 </$presentation>
 
 <div style="text-align: right;">
+<span>
+<$button>
+[[test-revealjs]]
+</$button>
 <$button >
-Add new slide
+<<.icon reveal-icon>> Add new slide
 <$action-sendmessage $message="tm-new-tiddler" title={{{ [<currentTiddler>get[title]addsuffix[-]]}}} tags={{{ [<currentTiddler>get[r-tag]] }}}/>
 </$button>
+</span>
 </div>
-
 
 <!-- reorder -->
 <details class="tc-subtitle">
 <summary>ReList </summary>
 <<list-tagged-draggable tag:"reveal">>
 </details>
-
-<details class="tc-subtitle">
-<summary>Tips</summary>
-!! Tips
-
-* O键预览
-* hjkl
-* F键全屏显示
-* 空格或方向键翻页
-* B键黑屏
-</dtails>
