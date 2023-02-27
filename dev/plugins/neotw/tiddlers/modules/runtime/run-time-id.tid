@@ -1,7 +1,6 @@
 title: $:/state/oeyoews/neotw/modules/run-time-id
-<!-- tags: $:/tags/RawMarkupWikified/BottomBody -->
 tags: $:/tags/RawMarkupWikified
 
 `<footer>`
-`<span style="color:#aaa;" id="htmer_time">``</span>`
+`<span id="htmer_time">``</span>`
 `</footer>`
