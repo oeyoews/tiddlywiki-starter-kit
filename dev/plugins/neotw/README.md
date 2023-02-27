@@ -40,7 +40,7 @@
 - 支持阅读模式编辑模式之间的切换
 - 支持 emoji 语法
 - 支持通过 url 切换多种布局
-- 根据系统自动切换夜间/日间模式, 支持 url 切换，例如 https://neotw.oeyoew.top?mode=dark
+- 根据系统自动切换夜间/日间模式, 支持 url 切换，例如 https://neotw.oeyoewl.top?mode=dark
 - 支持禅模式
 - 支持评论
 - 自动展示最近创建的文章

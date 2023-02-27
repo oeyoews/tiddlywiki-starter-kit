@@ -1,6 +1,6 @@
 created: 20230227012918666
 creator: oeyoews
-modified: 20230227030824849
+modified: 20230227031640531
 modifier: oeyoews
 tags: reveal
 title: neotw-reveal-cover
@@ -8,7 +8,12 @@ type: text/vnd.tiddlywiki
 
 <$slide>
 
-!! Neotw
+<center>
+{{$:/favicon.ico}}
+</center>
+
+!! Neotw 
+
 
 </$slide>
 

@@ -1,6 +1,6 @@
 created: 20230227023213668
 creator: oeyoews
-modified: 20230227024910489
+modified: 20230227031456988
 modifier: oeyoews
 tags: reveal
 title: neotw-features
@@ -20,7 +20,7 @@ type: text/vnd.tiddlywiki
 * 支持阅读模式编辑模式之间的切换
 * 支持 emoji 语法
 * 支持通过 url 切换多种布局
-* 根据系统自动切换夜间/日间模式, 支持 url 切换，例如 https://neotw.oeyoew.top?mode=dark
+* 根据系统自动切换夜间/日间模式, 支持 url 切换，例如 https://neotw.oeyoewl.top?mode=dark
 * 支持禅模式
 * 支持评论
 
