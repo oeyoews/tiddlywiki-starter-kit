@@ -1,3 +1,10 @@
+# [3.72.0](https://github.com/oeyoews/neotw/compare/v3.71.0...v3.72.0) (2023-02-27)
+
+
+### Features
+
+* add reveal-js btn ([903f247](https://github.com/oeyoews/neotw/commit/903f247ce182ba2d9f2a10b6d7aab87ed13d4ad6))
+
 # [3.71.0](https://github.com/oeyoews/neotw/compare/v3.70.0...v3.71.0) (2023-02-26)
 
 

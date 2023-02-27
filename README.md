@@ -40,7 +40,7 @@
 - 支持阅读模式编辑模式之间的切换
 - 支持 emoji 语法
 - 支持通过 url 切换多种布局
-- 根据系统自动切换夜间/日间模式, 支持 url 切换，例如 https://neotw.oeyoew.top?mode=dark
+- 根据系统自动切换夜间/日间模式, 支持 url 切换，例如 https://neotw.oeyoewl.top?mode=dark
 - 支持禅模式
 - 支持评论
 - 自动展示最近创建的文章
@@ -111,11 +111,12 @@ Neotw
 <!---->
 <!-- - 如果有兴趣以及能力(有一定的计算机基础),确实值得学习一下太微 (TiddlyWiki5) 的巧妙之处, 普通用户只需要学习太微的基本用法 (帕累托法则） -->
 
-## Online Preview :framed_picture:
+## Online Preview :eyes:
 
 <details>
 <summary>Preview</summary>
 
+- [Slides](https://neotw.oeyoewl.top/#neotw-reveal-js)
 - [main](https://neotw.oeyoewl.top)
 - [github page](https://oeyoews.github.io/neotw)
 - [tiddlyhost](https://neotw.tiddlyhost.com)
