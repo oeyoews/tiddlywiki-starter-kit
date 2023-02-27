@@ -68,7 +68,7 @@ cd neotw && npm install  # install packages
 npm run start  # start tiddlywiki on https://localhost:8099
 ```
 
-## Deploy :gear:
+## 一键部署 :gear:
 
 <!-- https://vercel.com/docs/deploy-button -->
 <a target="_blank" href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Foeyoews%2Fneotw">
