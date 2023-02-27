@@ -3,7 +3,7 @@ created: 20230218094549863
 creator: pimgeek
 icon: reveal-icon
 list: one two
-modified: 20230227025243657
+modified: 20230227025651639
 modifier: oeyoews
 publish: article
 tags: 
@@ -12,7 +12,7 @@ type: text/vnd.tiddlywiki
 
 <$presentation slideNumber="true" autoSlide="" loop $height="600">
 <$list filter="[tag[reveal]]">
-<$slide  backgroundColor={{{ [<currentTiddler>get[color]else[aquamarine]] }}}>
+<$slide backgroundColor={{{ [<currentTiddler>get[color]else[aquamarine]] }}}>
 <$transclude mode="block" />
 </$slide>
 </$list>
