@@ -1,0 +1,10 @@
+created: 20230227054202470
+creator: oeyoews
+modified: 20230227054418888
+modifier: oeyoews
+publish: article
+tags: 
+title: talk-timer
+type: text/vnd.tiddlywiki
+
+<$talktimer oktime="5" warntime="10" overtime="15" />

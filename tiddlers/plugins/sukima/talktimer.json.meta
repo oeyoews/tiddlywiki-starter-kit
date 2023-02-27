@@ -1,0 +1,11 @@
+author: sukima
+core-version: >=5.1.21
+dependents: 
+description: A Toast Master compatible timer widget
+list: readme license
+name: Talk Timer
+plugin-type: plugin
+source: https://github.com/sukima/tiddlywiki-talktimer
+title: $:/plugins/sukima/talktimer
+type: application/json
+version: 1.0.0
