@@ -1,11 +1,13 @@
 created: 20230227012918666
 creator: oeyoews
-modified: 20230227020604158
+modified: 20230227024337959
 modifier: oeyoews
 tags: reveal
 title: neotw-reveal-cover
 type: text/markdown
 
 ## Neotw
+
+{{reveal-js-badges}}
 
 > A modern style notebook

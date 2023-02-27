@@ -3,10 +3,9 @@ created: 20230218094549863
 creator: pimgeek
 icon: reveal-icon
 list: one two
-modified: 20230227022524063
+modified: 20230227025243657
 modifier: oeyoews
 publish: article
-r-tag: reveal
 tags: 
 title: test-revealjs
 type: text/vnd.tiddlywiki
@@ -26,7 +25,7 @@ type: text/vnd.tiddlywiki
 </$button>
 <$button >
 <<.icon reveal-icon>> Add new slide
-<$action-sendmessage $message="tm-new-tiddler" title={{{ [[]addprefix[reveal-js-]]}}} tags={{{ [<currentTiddler>get[r-tag]] }}}/>
+<$action-sendmessage $message="tm-new-tiddler" title={{{ [[]addprefix[reveal-js-]]}}} tags="reveal"/>
 </$button>
 </span>
 </div>
@@ -36,3 +35,5 @@ type: text/vnd.tiddlywiki
 <summary>ReList </summary>
 <<list-tagged-draggable tag:"reveal">>
 </details>
+
+<!-- 每个slide 控制在十行以内 -->

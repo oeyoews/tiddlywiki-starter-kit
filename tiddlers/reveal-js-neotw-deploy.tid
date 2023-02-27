@@ -1,0 +1,23 @@
+created: 20230227025035713
+creator: oeyoews
+modified: 20230227025155373
+modifier: oeyoews
+tags: reveal
+title: reveal-js-neotw-deploy
+type: text/vnd.tiddlywiki
+
+<$slide>
+
+!! Deploy
+
+</$slide>
+
+<$slide>
+<a target="_blank" href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Foeyoews%2Fneotw">
+<img src="https://vercel.com/button" alt="Deploy with Vercel" />
+</a>
+<!-- https://docs.netlify.com/site-deploys/create-deploys/ -->
+<a target="_blank" href="https://app.netlify.com/start/deploy?repository=https://github.com/oeyoews/neotw">
+<img src="https://www.netlify.com/img/deploy/button.svg">
+</a>
+</$slide>

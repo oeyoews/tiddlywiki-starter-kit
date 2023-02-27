@@ -1,0 +1,25 @@
+created: 20230227024414835
+creator: oeyoews
+modified: 20230227024756299
+modifier: oeyoews
+tags: reveal
+title: reveal-js-showcase
+type: text/vnd.tiddlywiki
+
+<$slide>
+
+!! Showcases
+
+</$slide>
+
+<$slide>
+<center>
+<img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/011.png" height=512 alt="011">
+</center>
+</$slide>
+
+<$slide>
+<center>
+<img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/012.png" height=512 alt="012">
+</center>
+</$slide>

@@ -1,0 +1,38 @@
+created: 20230227023213668
+creator: oeyoews
+modified: 20230227024910489
+modifier: oeyoews
+tags: reveal
+title: neotw-features
+type: text/vnd.tiddlywiki
+
+<$slide>
+
+!! Features 
+
+</$slide>
+
+
+<$slide>
+
+* 随机展示文章
+* 文章标题支持中英双语言切换
+* 支持阅读模式编辑模式之间的切换
+* 支持 emoji 语法
+* 支持通过 url 切换多种布局
+* 根据系统自动切换夜间/日间模式, 支持 url 切换，例如 https://neotw.oeyoew.top?mode=dark
+* 支持禅模式
+* 支持评论
+
+<line/>
+
+</$slide>
+
+<$slide>
+
+* 自动展示最近创建的文章
+* 中英文之间自动添加空格，排版更美观
+* 标题支持别名
+* ...
+
+</$slide>
