@@ -16,7 +16,7 @@ tags: $:/tags/ViewTemplate
               <$giscus id=<<comment>> lang="en" theme={{{ [[$:/plugins/oeyoews/tiddlywiki-giscus/config]get[gtheme]else[light]] }}}/>
               <!-- back -->
               <$button class="tc-btn-invisible giscus-footer">
-                  Back to top
+                  Back to top ↥︎
                 <$action-navigate $to=<<currentTiddler>> >
               </$button>
           </$reveal>
