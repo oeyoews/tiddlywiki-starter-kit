@@ -3,7 +3,7 @@ title: $:/plugins/oeyoews/neotw-surfing-keys/keyboard-list
 mask-closable: yes
 class: o-surfing-keys tc-modal-centered
 
-<<callout example title:Custom "{{$:/plugins/oeyoews/neotw-surfing-keys/list}}">>
+<<callout-details status:"open" example title:Custom "{{$:/plugins/oeyoews/neotw-surfing-keys/list}}">>
 
 <hr>
 
