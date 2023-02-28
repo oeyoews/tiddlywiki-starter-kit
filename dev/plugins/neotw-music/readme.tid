@@ -1,7 +1,7 @@
 title: $:/plugins/oeyoews/neotw-music/readme
 
 <a style="text-decoration:none;" href="https://github.com/oeyoews/neotw" target="_blank">
-  <img src="https://img.shields.io/badge/Powered by-Neotw-green?style=flat" />
+  <img src="https://img.shields.io/badge/Powered by-TWM-green?style=flat&logo=apple-music" />
 </a>
 <$image source={{{ [[][https://img.shields.io/badge/Version-]] [<currentTiddler>get[version]] [[-red?style=flat&logo=dev.to&logoColor=red]] +[join[]]}}} />
 
