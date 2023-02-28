@@ -1,3 +1,10 @@
+# [3.75.0](https://github.com/oeyoews/neotw/compare/v3.74.0...v3.75.0) (2023-02-28)
+
+
+### Features
+
+* add commit-hash ([1a1c3c5](https://github.com/oeyoews/neotw/commit/1a1c3c588b768980f475393e7247736416f35d03))
+
 # [3.74.0](https://github.com/oeyoews/neotw/compare/v3.73.0...v3.74.0) (2023-02-28)
 
 
