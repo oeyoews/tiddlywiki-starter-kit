@@ -11,7 +11,7 @@ function hitokoto_footer() {
       const hitokoto = document.querySelector("#h-text");
       hitokoto.innerText = data.hitokoto;
       const hitokoto_from = document.querySelector("#h-author");
-      hitokoto_from.href = "https://hitokoto.cn/?uuid=" + data.uuid;
+      <!-- hitokoto_from.href = "https://hitokoto.cn/?uuid=" + data.uuid; -->
       hitokoto_from.innerText = "@" + data.from;
     })
     .catch(console.error);
