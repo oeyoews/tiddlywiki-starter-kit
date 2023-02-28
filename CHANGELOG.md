@@ -1,3 +1,10 @@
+# [3.77.0](https://github.com/oeyoews/neotw/compare/v3.76.0...v3.77.0) (2023-02-28)
+
+
+### Features
+
+* add shiraz-callout ([58a6318](https://github.com/oeyoews/neotw/commit/58a6318ab4977e3c241d4ec67885762dd63eb4b3))
+
 # [3.76.0](https://github.com/oeyoews/neotw/compare/v3.75.1...v3.76.0) (2023-02-28)
 
 
