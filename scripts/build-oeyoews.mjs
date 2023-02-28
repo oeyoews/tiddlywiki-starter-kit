@@ -35,12 +35,14 @@ await spinner('Building ...', async () => {
 
   // build index
   await $`npx ${bin} --build index`;
-  // build static
-  // await $`npx ${bin} --build static`;
   // build readable name plugins
   await $`npx ${bin} --build plugins`;
   // build empty
   await $`npx ${bin} --build neotw-empty`;
+  await $`cp -r static-patch tiddlers`;
+  // build static
+  await $`npx ${bin} --build static`;
+  await $`rm -rf tiddlers/static-patch`;
 
   // after building
   await $`mv ${library} ${dist}`;
