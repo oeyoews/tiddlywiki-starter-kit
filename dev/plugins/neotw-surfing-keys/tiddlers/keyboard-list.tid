@@ -1,4 +1,4 @@
-subtitle: <<.icon $:/plugins/oeyoews/neotw-surfing-keys/icon/vim>> Keyboard shortcuts
+subtitle: [img width=22 [$:/plugins/oeyoews/neotw-surfing-keys/icon]] Keyboard shortcuts
 title: $:/plugins/oeyoews/neotw-surfing-keys/keyboard-list
 mask-closable: yes
 class: o-surfing-keys tc-modal-centered
