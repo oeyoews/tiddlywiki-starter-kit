@@ -1,17 +1,17 @@
-caption: Notion Button
-description: Notion Button
-<!-- tags: $:/tags/PageControls -->
 title: $:/plugins/oeyoews/neotw/button/notion
+tags: $:/tags/PageControls
+list-before: $:/core/ui/Buttons/more-page-actions
+description: notion
+caption: notion
 
 \whitespace trim
 
-\define base-notion() https://oeyoewl.top
+\define base-notion() https://neoblog.oeyoewl.top
 \define tip() notion blog with react
 
 <$button tooltip=<<tip>> aria-label=<<tip>> class=<<tv-config-toolbar-class>>>
-<a href={{{ [<base-notion>]}}} target="_blank">
-{{Notion-logo.svg}}
-</a>
+<$action-sendmessage $message="tm-open-external-window" $param="https://neoblog.oeyoewl.top"/>
+{{$:/plugins/oeyoews/neotw/icon/notion}}
   <$list filter="[<tv-config-toolbar-text>match[yes]]">
     <span class="tc-btn-text">
     <$text text=<<tip>>/>
