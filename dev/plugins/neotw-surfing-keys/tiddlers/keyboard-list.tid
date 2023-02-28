@@ -3,11 +3,14 @@ title: $:/plugins/oeyoews/neotw-surfing-keys/keyboard-list
 mask-closable: yes
 class: o-surfing-keys tc-modal-centered
 
-{{$:/plugins/oeyoews/neotw-surfing-keys/list}}
+<<callout-details example title:Custom "{{$:/plugins/oeyoews/neotw-surfing-keys/list}}">>
 
 <hr>
 
-<details>
-<summary>View more shortcuts</summary>
-{{$:/core/ui/ControlPanel/KeyboardShortcuts}}
-</details>
+<!-- <details> -->
+<!-- <summary>View more shortcuts</summary> -->
+<!-- {{$:/core/ui/ControlPanel/KeyboardShortcuts}} -->
+<!-- </details> -->
+
+<!-- use shiraz callout -->
+<<callout-details info title:System "{{$:/core/ui/ControlPanel/KeyboardShortcuts}}">>

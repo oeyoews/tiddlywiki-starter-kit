@@ -1,0 +1,11 @@
+created: 20230228085903350
+creator: oeyoews
+modified: 20230228085922914
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: fix-conflict
+type: text/vnd.tiddlywiki
+
+details > summary {
+   text-indent: 0em;
+}

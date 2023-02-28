@@ -1,0 +1,12 @@
+author: Mohammad Rahmani
+core-version: >=5.2.3
+dependents: 
+description: Admonitions for Shiraz
+list: readme license history
+name: Shiraz Callout
+parent-plugin: $:/plugins/kookma/shiraz
+plugin-type: plugin
+source: https://github.com/kookma/TW-Shiraz
+title: $:/plugins/kookma/shiraz-callout
+type: application/json
+version: 0.6.0

@@ -3,9 +3,10 @@
   "name": "Surfing on TiddlyWiki",
   "description": "Surfing On TiddlyWiki",
   "author": "oeyoews",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "core-version": "5.2.5",
   "source": "",
   "list": "readme explore",
+  "dependents": "$:/plugins/kookma/shiraz-callout",
   "plugin-type": "plugin"
 }

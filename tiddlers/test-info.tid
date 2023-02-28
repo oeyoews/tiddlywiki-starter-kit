@@ -1,0 +1,11 @@
+created: 20230228090451268
+creator: oeyoews
+modified: 20230228091230123
+modifier: oeyoews
+tags: 
+title: test-info
+type: text/vnd.tiddlywiki
+
+<<callout-details info {{GettingStarted}}>>
+
+<<callout-details tip "https://kookma.github.io/TW-Shiraz/shiraz-callout.html#Shiraz%20Callout%20Tutorial">>
