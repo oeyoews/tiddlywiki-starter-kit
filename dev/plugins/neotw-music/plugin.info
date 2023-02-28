@@ -1,11 +1,11 @@
 {
-    "version": "0.0.5",
-    "type": "application/json",
-    "title": "$:/plugins/oeyoews/neotw-music",
-    "plugin-type": "plugin",
-    "name": "TWM",
-    "core-version": ">=5.2.3",
-    "description": "Tiddlywiki5 music player",
-    "author": "oeyoews",
-    "list": "readme explore"
+  "version": "0.0.6",
+  "type": "application/json",
+  "title": "$:/plugins/oeyoews/neotw-music",
+  "plugin-type": "plugin",
+  "name": "TWM",
+  "core-version": ">=5.2.3",
+  "description": "Tiddlywiki5 music player",
+  "author": "oeyoews",
+  "list": "readme explore"
 }

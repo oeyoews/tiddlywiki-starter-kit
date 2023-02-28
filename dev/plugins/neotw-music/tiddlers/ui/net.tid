@@ -1,0 +1,18 @@
+title: $:/plugins/oeyoews/neotw-music/ui/net
+tags: $:/tags/PageControls
+list-before: $:/core/ui/Buttons/more-page-actions
+description: OM
+caption: OM
+
+\whitespace trim
+<$button message="OM" tooltip="OM" aria-label="" class=<<tv-config-toolbar-class>>>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+  <$action-sendmessage $message="tm-open-external-window" $param="https://om-app.oeyoewl.top"/>
+{{$:/plugins/oeyoews/neotw-music/icon}}
+</$list>
+<$list filter="[<tv-config-toolbar-text>match[yes]]">
+<span class="tc-btn-text">
+<$text text="OM"/>
+</span>
+</$list>
+</$button>
