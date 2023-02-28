@@ -41,3 +41,7 @@ tags: $:/tags/Stylesheet
     background-color: aliceblue !important;
     transition: transform .2s;
 }
+
+.o-random-tip .tc-modal-header {
+    text-transform: capitalize;
+  }

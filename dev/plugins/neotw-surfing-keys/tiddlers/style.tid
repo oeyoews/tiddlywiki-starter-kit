@@ -21,3 +21,7 @@ type: text/vnd.tiddlywiki
 .o-surfing-keys .tc-modal-footer {
     display:none;
 }
+
+.o-surfing-keys .tc-modal-header {
+    text-transform: capitalize;
+  }
