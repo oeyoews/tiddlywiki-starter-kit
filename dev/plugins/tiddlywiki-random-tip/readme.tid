@@ -18,13 +18,3 @@ title: $:/plugins/oeyoews/tiddlywiki-random-tip/readme
 !! Test
 
 {{$:/plugins/oeyoews/tiddlywiki-random-tip/example}}
-
-!! TODO
-
-* ~~add new tip button~~
-* ~~add viewtemplate for random tips~~
-* ~~add delay js~~
-* ~~add next tip button(maybe)~~
-* ~~add config tags for general use~~
-* ~~support add tips dynamic~~
-* ~~use new and old~~

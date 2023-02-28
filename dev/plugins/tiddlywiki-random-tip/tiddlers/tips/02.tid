@@ -5,5 +5,12 @@ tags: Tiddlywiki5Tip
 author: oeyoews
 class: o-random-tip tc-modal-centered
 
-> 向button 添加 tc-btn-invisible tc-tiddlylink 两个 class, 可以使得按钮看起来像一个内部链接。
-> <<random-author>>
+\define o-title()
+链接小技巧
+\end
+
+\define content()
+向button 添加 tc-btn-invisible tc-tiddlylink 两个 class, 可以使得按钮看起来像一个内部链接。
+\end
+
+<$macrocall $name="callout-details" type="info" src=<<content>> status="close" title=<<o-title>> width="400px"/>

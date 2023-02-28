@@ -5,5 +5,3 @@ class: o-random-tip tc-modal-centered
 
 <!-- add tips here -->
 <!-- add author and link, like <<random-author "author name" "https://xxx">> -->
->
-> <<random-author>>
