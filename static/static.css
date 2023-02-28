@@ -7568,7 +7568,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 120";
+  content: " 121";
 }
 
 
@@ -7748,7 +7748,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/StartupAction\/PostRender] .tc-tag-label:after {
-  content: " 3";
+  content: " 4";
 }
 
 
@@ -8800,6 +8800,19 @@ footer .inline-icon svg{
   left: -66px !important;
 }.aplayer-body:hover {
     left: 0px !important;
+}
+.o-surfing-warning .tc-modal,
+.o-surfing-warning .tc-modal-header,
+.o-surfing-warning .tc-modal-body,
+.o-surfing-warning .tc-modal-footer {
+   border-radius: 5px;
+   border: none;
+   background-color: #F5F5F5;
+}.o-surfing-warning .tc-modal-footer {
+    display:none;
+}.o-surfing-warning-msg {
+    color: red;
+    font-weight: bold;
 }
 .neotw-surfing-keys {
   position: fixed;
