@@ -1,3 +1,10 @@
+## [3.79.1](https://github.com/oeyoews/neotw/compare/v3.79.0...v3.79.1) (2023-02-28)
+
+
+### Performance Improvements
+
+* remove details widget ([0d9e025](https://github.com/oeyoews/neotw/commit/0d9e02592a01989d11437d7774642dc36bb1c3ca))
+
 # [3.79.0](https://github.com/oeyoews/neotw/compare/v3.78.0...v3.79.0) (2023-02-28)
 
 
