@@ -25,7 +25,7 @@ tags: $:/tags/Stylesheet
    bottom: 1rem;
    right: 1rem;
    font-size: 24px;
-   z-index: 999;
+   z-index: 899;
 }
 
 #stx-story-top button {
