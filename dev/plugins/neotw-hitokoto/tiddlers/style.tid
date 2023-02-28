@@ -29,7 +29,7 @@ footer .inline-icon svg{
   font-weight: 700;
 }
 
-#hitokoto:hover {
+#h-cursor:hover {
   cursor: pointer;
 }
 
