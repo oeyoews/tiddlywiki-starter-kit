@@ -8828,7 +8828,9 @@ footer .inline-icon svg{
    background-color: #F5F5F5;
 }.o-surfing-keys .tc-modal-footer {
     display:none;
-}
+}.o-surfing-keys .tc-modal-header {
+    text-transform: capitalize;
+  }
 .o-warning {
     color: red;
   }.o-announcement .tc-modal,
