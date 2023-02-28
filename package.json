@@ -24,7 +24,7 @@
     "prompts": "^2.4.2",
     "replace": "^1.2.2",
     "signale": "^1.4.0",
-    "tiddlywiki": "github:oeyoews/TiddlyWiki5",
+    "tiddlywiki": "github:oeyoews/TiddlyWiki5#8d39ce95ebb26ea32ddc8b3102334b2081641df2",
     "zx": "^7.1.0"
   },
   "bugs": {
