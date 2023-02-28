@@ -1,20 +1,9 @@
-subtitle: <<.icon $:/plugins/oeyoews/neotw-suringkeys/button/vim>> Keyboard shortcuts
+subtitle: <<.icon $:/plugins/oeyoews/neotw-surfing-keys/icon/vim>> Keyboard shortcuts
 title: $:/plugins/oeyoews/neotw-surfing-keys/keyboard-list
 mask-closable: yes
 class: o-surfing-keys tc-modal-centered
 
-<center>
-
-|Shortcuts|Description|h
-|<kbd>Ctrl+H</kbd>|Home|
-|<kbd>Ctrl+I</kbd>|Setting|
-|<kbd>Ctrl+Shift+U</kbd>|Update|
-|<kbd>Alt+F</kbd>|Fullscreen|
-|<kbd>Ctrl+/</kbd>|Keyboard shortcuts|
-|<kbd>Ctrl+G</kbd>|Install plugins|
-|<kbd>Ctrl+K</kbd>|Search|
-
-</center>
+{{$:/plugins/oeyoews/neotw-surfing-keys/list}}
 
 <hr>
 

@@ -3,9 +3,9 @@
   "name": "Surfing on TiddlyWiki",
   "description": "Surfing On TiddlyWiki",
   "author": "oeyoews",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "core-version": "5.2.5",
   "source": "",
-  "list": "readme",
+  "list": "readme explore",
   "plugin-type": "plugin"
 }
