@@ -7569,7 +7569,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 121";
+  content: " 119";
 }
 
 
@@ -7773,12 +7773,6 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/RawMarkupWikified\/TopHead] .tc-tag-label:after {
-  content: " 1";
-}
-
-
-
-[data-tag-title=Plugins] .tc-tag-label:after {
   content: " 1";
 }
 
@@ -9040,45 +9034,7 @@ a[data-fancybox] img {
   color:red ; font-weight: 700;
 }.sticky-done {
   color:green;font-weight: 700;
-}/* details and summary */details {
-   transition: height 1s ease;
-   padding: 0 0.5em 0 0.66em;
-   margin-top: 0.66em;
-   margin-bottom: 0.66em;
-}details + details {
-   margin-top: -0.46em;
-}details[open] {
-   padding-bottom: 1em;
-}details:not([open]) { 
-   cursor: pointer;
-}details > summary {
-   display: list-item;
-   margin: 0 -0.5em 0 -0.66em;
-   padding: 0.2em 0.5em 0.2em 0.66em;
-   padding-left: 1.76em;  /* adjust for indentation */
-   text-indent: -1.1em;
-   cursor: pointer;
-}details[open] > summary {
-   margin-bottom: 1em;
-}details[open] > *:first-child:not(summary) {
-   margin-top: 1em;
-}
-/* details and summary colours */details {
-   background-color: #f8f8f8;
-   color: #333333;
-}details summary {
-   background-color: #ececec;
-}details.notification summary {
-    background-color: #ffffdd;
-    /* TW leaves color undefined/uses foreground */
-}details.warning summary {
-    background-color: #ffbbaf;
-    color: #000;
-}details.success summary {
-    background-color: #88edc5;
-    color: #000;
-}
-ul.checklist {
+}ul.checklist {
     list-style: none;
     margin: 0;
     padding: 0;
