@@ -5,14 +5,14 @@ creator: pimgeek
 giscus: yes
 icon: reveal-icon
 list: one two
-modified: 20230227081452121
+modified: 20230228093804862
 modifier: oeyoews
 publish: article
 tags: 
 title: neotw-reveal-js
 type: text/vnd.tiddlywiki
 
-<$presentation slideNumber="true" autoSlide="" loop $height="600">
+<$presentation slideNumber="true" autoSlide="" loop $height="400">
 <$list filter="[tag[reveal]]">
 <$slide backgroundColor={{{ [<currentTiddler>get[color]else[aquamarine]] }}}>
 <$transclude mode="block" />
@@ -33,16 +33,10 @@ type: text/vnd.tiddlywiki
 </span>
 </div>
 
-<!-- reorder -->
-<details class="tc-subtitle">
-<summary>ReList </summary>
-<<list-tagged-draggable tag:"reveal">>
-</details>
-
 <!-- 每个slide 控制在十行以内 -->
+<<callout-details tips  """<<list-tagged-draggable tag:"reveal">>""">>
 
-!! Usage
-
+<<callout-details example title:"Usage"  """
 * zoom: ctrl/alt click
 * move: hjkl
 * o: overview
@@ -50,3 +44,4 @@ type: text/vnd.tiddlywiki
 * f: fullscreen
 * b: black
 * press ? to find more usage
+""">>
