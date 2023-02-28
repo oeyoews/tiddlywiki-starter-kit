@@ -1,0 +1,6 @@
+tags: $:/tags/StartupAction/PostRender
+title: $:/plugins/oeyoews/neotw-surfing-keys/action
+
+<$list filter="[[$:/plugins/kookma/shiraz-callout]is[missing]]">
+<$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/neotw-surfing-keys/msg"/>
+</$list>
