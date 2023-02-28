@@ -1,6 +1,6 @@
 title: $:/plugins/oeyoews/neotw-surfing-keys/msg
 mask-closable: yes
-subtitle:
+subtitle: {{$:/plugins/oeyoews/neotw-surfing-keys/icon}} Neotw-surfing-keys
 class: o-surfing-warning tc-modal-centered test-c
 
 <h2 class="o-surfing-warning-msg">
