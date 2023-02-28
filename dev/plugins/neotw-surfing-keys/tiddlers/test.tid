@@ -1,0 +1,8 @@
+title: $:/plugins/oeyoews/neotw-surfing-keys/test
+
+<center>
+<$button>
+  [img width=22 [$:/plugins/oeyoews/neotw-surfing-keys/icon]]
+  <$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/neotw-surfing-keys/keyboard-list"/>
+</$button>
+</center>
