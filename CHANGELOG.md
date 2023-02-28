@@ -1,3 +1,10 @@
+# [3.78.0](https://github.com/oeyoews/neotw/compare/v3.77.0...v3.78.0) (2023-02-28)
+
+
+### Features
+
+* add check dependend ([bbcc665](https://github.com/oeyoews/neotw/commit/bbcc665ac2f2c885fbb11be576104f2be18bf221))
+
 # [3.77.0](https://github.com/oeyoews/neotw/compare/v3.76.0...v3.77.0) (2023-02-28)
 
 
