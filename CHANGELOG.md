@@ -1,3 +1,10 @@
+# [3.79.0](https://github.com/oeyoews/neotw/compare/v3.78.0...v3.79.0) (2023-02-28)
+
+
+### Features
+
+* add fps ([4932243](https://github.com/oeyoews/neotw/commit/493224374b5d3d6f7d975740c1c815cd640f38e1))
+
 # [3.78.0](https://github.com/oeyoews/neotw/compare/v3.77.0...v3.78.0) (2023-02-28)
 
 
