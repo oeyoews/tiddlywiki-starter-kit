@@ -1,6 +1,6 @@
 created: 20230226083950150
 creator: oeyoews
-modified: 20230301092036158
+modified: 20230301110945481
 modifier: oeyoews
 publish: article
 tags: 
@@ -9,4 +9,4 @@ type: text/vnd.tiddlywiki
 
 ~~* `ctrl+alt+a` and press enter~~
 
-* flameshot + picgo + github + jsdelivr
+* picgo(gitlab files plugin) + ~~github~~ gitlab(or cn gitlab)  ~~ + jsdelivr~~
