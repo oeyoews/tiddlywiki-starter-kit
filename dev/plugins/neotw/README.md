@@ -143,7 +143,7 @@ Neotw
 
 ![Alt](https://repobeats.axiom.co/api/embed/3afafedb553e9729995586198853fa9a3c473e90.svg 'Repobeats analytics image')
 
-<center>
+</center>
 
 <center>
   <a href="##neotw-readme-top">
