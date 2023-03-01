@@ -6,6 +6,8 @@ title: $:/plugins/oeyoews/neotw-surfing-keys/readme
 
 !! Usage
 
+*  当前使用 <kbd>Ctrl-/</kbd> 弹出提示框， 此快捷键与Unility的显示field的快捷间冲突
+
 {{$:/plugins/oeyoews/neotw-surfing-keys/test}}
 {{$:/plugins/oeyoews/neotw-surfing-keys/list}}
 
@@ -13,3 +15,7 @@ title: $:/plugins/oeyoews/neotw-surfing-keys/readme
 
 * because of newline, this shortcut not work, need use vscode to remove this(for dev plugin)
 * This plugin is part of neotw(not general maybe)
+
+!! TODO
+
+* 支持动态修改快捷键

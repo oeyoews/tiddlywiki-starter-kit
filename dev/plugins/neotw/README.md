@@ -134,6 +134,10 @@ Neotw
 
 </details>
 
+## Repobeats
+
+![Alt](https://repobeats.axiom.co/api/embed/3afafedb553e9729995586198853fa9a3c473e90.svg 'Repobeats analytics image')
+
 <center>
   <a href="##neotw-readme-top">
     <img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/cat.svg" alt="cat"/>↥︎
