@@ -1,10 +1,14 @@
 created: 20230301092839844
 creator: oeyoews
-modified: 20230301093023061
+modified: 20230301110316676
 modifier: oeyoews
 tags: 
 title: test-picgo
 type: text/vnd.tiddlywiki
+
+<<fbox "https://gitlab.com/oeyoews/img/-/raw/main/pictures/2023/03/1_19_2_8_%E6%88%AA%E5%9B%BE%202023-03-01%2017-29-30.png">>
+
+<img src="https://gitlab.com/oeyoews/img/-/raw/main/pictures/2023/03/1_19_2_8_%E6%88%AA%E5%9B%BE%202023-03-01%2017-29-30.png"/>
 
 <<fbox "https://cdn.jsdelivr.net/gh/oeyoews/img@latest/imgpicgo/2023-03-01_17-27.png">>
 
