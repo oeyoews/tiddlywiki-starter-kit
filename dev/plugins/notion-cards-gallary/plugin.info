@@ -1,0 +1,12 @@
+{
+  "title": "$:/plugins/oeyoews/notion-cards-gallary",
+  "description": "Notion Cards Gallary",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.2.5",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "Notion Cards Gallary",
+  "dependents": "",
+  "list": "readme explore"
+}
