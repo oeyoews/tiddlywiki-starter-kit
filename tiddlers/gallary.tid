@@ -2,7 +2,7 @@ caption: Gallary
 created: 20230116071902869
 creator: oeyoews
 icon: neotw-gallary
-modified: 20230224061317569
+modified: 20230301060921442
 modifier: oeyoews
 neotw: index
 tags: 
@@ -12,9 +12,9 @@ type: text/vnd.tiddlywiki
 <center>
 <<fbox
 """
-https://lipsum.app/id/77/1200x675
-https://lipsum.app/id/66/1200x675
-https://lipsum.app/id/55/1200x675
+https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/011.png
+https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/012.png
+https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/013.png
 """
 caption: "Gallary"
 width: 256
