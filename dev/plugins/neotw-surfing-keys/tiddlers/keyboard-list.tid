@@ -5,8 +5,6 @@ class: o-surfing-keys tc-modal-centered
 
 <<callout-details status:"open" example title:Custom "{{$:/plugins/oeyoews/neotw-surfing-keys/list}}">>
 
-<hr>
-
 <!-- <details> -->
 <!-- <summary>View more shortcuts</summary> -->
 <!-- {{$:/core/ui/ControlPanel/KeyboardShortcuts}} -->

@@ -2,13 +2,14 @@ title: $:/plugins/oeyoews/neotw-surfing-keys/list
 
 <center>
 
-|Shortcuts|Description|h
-|<kbd>Ctrl+H</kbd>|Home|
-|<kbd>Ctrl+I</kbd>|Setting|
-|<kbd>Ctrl+Shift+U</kbd>|Update|
-|<kbd>Alt+F</kbd>|Fullscreen|
-|<kbd>Ctrl+/</kbd>|Keyboard shortcuts|
-|<kbd>Ctrl+G</kbd>|Install plugins|
-|<kbd>Ctrl+K</kbd>|Search|
+|Icon|Shortcuts|Description|h
+|{{$:/core/images/home-button}}|<kbd>Ctrl+H</kbd>|Home|
+|{{$:/core/images/options-button}}|<kbd>Ctrl+I</kbd>|Setting|
+|{{$:/core/images/plugin-generic-plugin}}|<kbd>Ctrl+Shift+U</kbd>|Update|
+|{{$:/core/images/full-screen-button}}|<kbd>Alt+F</kbd>|Fullscreen|
+|{{$:/core/images/help}}|<kbd>Ctrl+/</kbd>|Keyboard shortcuts|
+|{{$:/xp/images/plugin}}|<kbd>Ctrl+G</kbd>|Install plugins|
+|{{$:/core/images/advanced-search-button}}|<kbd>Ctrl+K</kbd>|Search|
+| 👀 |<kbd>Ctrl+Shift+H</kbd>|View Fields|
 
 </center>
