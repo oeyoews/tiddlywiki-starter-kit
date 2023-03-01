@@ -1,3 +1,10 @@
+# [3.80.0](https://github.com/oeyoews/neotw/compare/v3.79.1...v3.80.0) (2023-03-01)
+
+
+### Features
+
+* support switch lang readme in tiddlywiki ([e38699e](https://github.com/oeyoews/neotw/commit/e38699e39f846d43d2b2f7721e488b502c2a66df))
+
 ## [3.79.1](https://github.com/oeyoews/neotw/compare/v3.79.0...v3.79.1) (2023-02-28)
 
 

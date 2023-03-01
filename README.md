@@ -1,5 +1,10 @@
 <a id="#neotw-readme-top"></a>
 
+<div style="text-align: right;margin-bottom: 20px;">
+  Language:
+  English
+</div>
+
 <center>
 <!-- badges -->
 <a href="https://tiddlywiki.com" target="_blank">
@@ -27,6 +32,7 @@
 <center>
 <img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/011.png" height=256 alt="011">
 <img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/012.png" height=256 alt="012">
+<img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/013.png" height=256 alt="013">
 </center>
 
 ## Intro :tada:
@@ -35,11 +41,14 @@
 
 > Here is a [» demo «](https://oeyoews.github.io/neotw)
 
-## Intro :robot:
+<details>
+<summary>Intro 🤖</summary>
 
 > NEOTW is a concise and efficient article publishing platform. We support bilingual publishing in both Chinese and English, and provide a toggle between reading mode and editing mode, so that you can easily edit while reading articles. We also support emoji syntax, allowing you to add more expressions and emotional color to your articles. You can switch between different layouts through the URL, making your reading experience more flexible. In addition, we automatically switch between night/day mode based on the system, and you can also switch modes through the URL. We also support Zen mode, allowing you to enjoy reading in a quiet environment. On NEOTW, you can publish your own articles and comment on others' articles. We automatically display recently created articles, keeping you up to date with the latest news on the platform. To make your reading more beautiful, we also support automatic spacing between Chinese and English, making your typesetting more neat and beautiful. Additionally, we support title aliases to make your titles more exquisite. Welcome to NEOTW, let's enjoy the joy of reading and sharing together! @Chatgpt
 
-> This is a document created using TiddlyWiki, which can be opened using TiddlyWiki 5.2.6 or higher. Its main purpose is to introduce Neotw, which includes custom CSS and some plugins that can be used to enhance the appearance and functionality of TiddlyWiki. The document provides detailed instructions on how to install and use the Neotw, as well as how to customize settings and add plugins. Additionally, the document offers some common questions and useful links regarding TiddlyWiki. If you are interested in customizing TiddlyWiki themes and developing plugins, you may find useful information within the TiddlyWiki community.
+> This is a document created using TiddlyWiki, which can be opened using TiddlyWiki 5.2.6 or higher. Its main purpose is to introduce Neotw, which includes custom CSS and some plugins that can be used to enhance the appearance and functionality of TiddlyWiki. The document provides detailed instructions on how to install and use the Neotw, as well as how to customize settings and add plugins. Additionally, the document offers some common questions and useful links regarding TiddlyWiki. If you are interested in customizing TiddlyWiki themes and developing plugins, you may find useful information within the TiddlyWiki community. @Chatgpt
+
+</details>
 
 ## Features :sparkles:
 
@@ -132,6 +141,14 @@ Neotw
 - [netlify](https://neotw.netlify.app)
 
 </details>
+
+## Repobeats
+
+<center>
+
+![Alt](https://repobeats.axiom.co/api/embed/3afafedb553e9729995586198853fa9a3c473e90.svg 'Repobeats analytics image')
+
+</center>
 
 <center>
   <a href="##neotw-readme-top">
