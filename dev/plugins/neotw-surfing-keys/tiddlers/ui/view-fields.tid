@@ -1,0 +1,11 @@
+description: Toggle field handling in view mode
+list-before: $:/core/ui/ViewTemplate/body
+tags: $:/tags/ViewTemplate
+title: $:/plugins/oeyoews/viewtemplates/view-fields
+
+<$reveal type=match stateTiddler stateTitle="$:/state/utility/view-fields"stateField=text default=hide text=show tag=div class=kk-ut-viewfields>
+<$importvariables filter="$:/core/ui/EditTemplate">
+<$vars newFieldNameTiddler=<<qualify [[$:/temp/NewFieldName]]>>newFieldValueTiddlerPrefix=<<qualify [[$:/temp/NewFieldValue]]>>newFieldNameInputTiddler=<<qualify [[$:/temp/NewFieldName/input]]>>newFieldNameSelectionTiddler=<<qualify [[$:/temp/NewFieldName/selected-item]]>>searchListState=<<qualify [[$:/temp/searchListState]]>>storeTitle=<<qualify [[$:/temp/storeTitle]]>>>
+{{||$:/core/ui/EditTemplate/fields}}
+</$vars>
+</$importvariables>
