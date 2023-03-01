@@ -1,10 +1,5 @@
 <a id="#neotw-readme-top"></a>
 
-<div style="text-align: right;margin-bottom: 20px;">
-  语言:
-  中文
-</div>
-
 <center>
 <!-- badges -->
 <a href="https://tiddlywiki.com" target="_blank">
