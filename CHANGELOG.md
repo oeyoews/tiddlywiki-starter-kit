@@ -1,3 +1,10 @@
+# [3.81.0](https://github.com/oeyoews/neotw/compare/v3.80.0...v3.81.0) (2023-03-01)
+
+
+### Features
+
+* support switch for neotw readme ([98f5e3c](https://github.com/oeyoews/neotw/commit/98f5e3cd471d3cba97c3c671d2e0a8181d554c94))
+
 # [3.80.0](https://github.com/oeyoews/neotw/compare/v3.79.1...v3.80.0) (2023-03-01)
 
 
