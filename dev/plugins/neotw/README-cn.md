@@ -1,5 +1,10 @@
 <a id="#neotw-readme-top"></a>
 
+<div style="text-align: right;margin-bottom: 20px;">
+  语言:
+  中文
+</div>
+
 <center>
 <!-- badges -->
 <a href="https://tiddlywiki.com" target="_blank">
@@ -27,6 +32,7 @@
 <center>
 <img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/011.png" height=256 alt="011">
 <img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/012.png" height=256 alt="012">
+<img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/013.png" height=256 alt="013">
 </center>
 
 ## 介绍 :tada:

@@ -1,0 +1,11 @@
+title: $:/plugins/oeyoews/neotw/readme-lang
+type: markdown
+caption: 介绍
+
+<$list filter="[[$:/language]get[text]match[$:/languages/zh-Hans]]">
+  {{$:/plugins/oeyoews/neotw/readme-cn}}
+</$list>
+
+<$list filter="[[$:/language]get[text]!match[$:/languages/zh-Hans]]">
+  {{$:/plugins/oeyoews/neotw/readme}}
+</$list>
