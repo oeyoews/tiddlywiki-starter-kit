@@ -1,0 +1,20 @@
+created: 20230301074309929
+creator: oeyoews
+modified: 20230301074726880
+modifier: oeyoews
+tags: 
+title: table-todo
+type: text/vnd.tiddlywiki
+
+<table>
+<$list filter="[tag[todo]!is[system]!is[shadow]sort[]]">
+<tr>
+<td width="600px" style="padding:5px;"> <$link to={{!!title}}><$view field="title"/></$link>
+</td>
+<td width="600px" style="padding:5px;"> <$link to={{!!title}}><$view field="modified"/></$link>
+</td>
+<td width="600px" style="padding:5px;"> <$link to={{!!title}}><$view field="tags"/></$link>
+</td>
+</tr>
+</$list>
+</table>
