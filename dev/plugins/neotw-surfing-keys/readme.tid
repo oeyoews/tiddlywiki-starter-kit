@@ -4,6 +4,18 @@ title: $:/plugins/oeyoews/neotw-surfing-keys/readme
   <img src="https://img.shields.io/badge/Powered by-Neotw-green?style=flat" />
 </a>
 
+<center>
+
+<$list filter="[[$:/plugins/oeyoews/tiddlywiki-fancybox]!is[missing]]">
+<<fbox "https://gitlab.com/oeyoews/img/-/raw/main/pictures/2023/03/2/neotw-surfing-keys-example.png">>
+</$list>
+
+<$list filter="[[$:/plugins/oeyoews/tiddlywiki-fancybox]is[missing]]">
+<img src="https://gitlab.com/oeyoews/img/-/raw/main/pictures/2023/03/2/neotw-surfing-keys-example.png" width="256"/>
+</$list>
+
+</center>
+
 !! Usage
 
 *  当前使用 <kbd>Ctrl-/</kbd> 弹出提示框， 此快捷键与Unility的显示field的快捷间冲突
