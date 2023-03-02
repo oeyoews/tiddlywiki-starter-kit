@@ -1,3 +1,10 @@
+# [3.87.0](https://github.com/oeyoews/neotw/compare/v3.86.0...v3.87.0) (2023-03-02)
+
+
+### Features
+
+* add giscus-app to custom bar ([ce0ecc7](https://github.com/oeyoews/neotw/commit/ce0ecc7c15af71ad0b60bd5a2e675acf26c60c42))
+
 # [3.86.0](https://github.com/oeyoews/neotw/compare/v3.85.0...v3.86.0) (2023-03-02)
 
 
