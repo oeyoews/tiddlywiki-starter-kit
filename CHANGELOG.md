@@ -1,3 +1,15 @@
+# [3.82.0](https://github.com/oeyoews/neotw/compare/v3.81.0...v3.82.0) (2023-03-02)
+
+
+### Bug Fixes
+
+* add space ([c7e5c6a](https://github.com/oeyoews/neotw/commit/c7e5c6a410b7989cd9098607f913166b0481934e))
+
+
+### Features
+
+* add close button for close-modal ([23db9fb](https://github.com/oeyoews/neotw/commit/23db9fb31589146e553e37b80e01d10a254744be))
+
 # [3.81.0](https://github.com/oeyoews/neotw/compare/v3.80.0...v3.81.0) (2023-03-01)
 
 
