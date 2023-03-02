@@ -6925,7 +6925,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/ViewToolbar] .tc-tag-label:after {
-  content: " 21";
+  content: " 22";
 }
 
 
@@ -8373,7 +8373,18 @@ footer {
 }.has-image[data-image-fit=contain] .fancybox__image {
     border-radius: 10px;
 }
-.os-started:hover {
+.o-giscus-comment .tc-modal,
+.o-giscus-comment .tc-modal-header,
+.o-giscus-comment .tc-modal-body,
+.o-giscus-comment .tc-modal-footer {
+   border-radius: 10px;
+   border: none;
+   background-color: #F5F5F5;
+}.o-giscus-comment .tc-modal-footer {
+    display:none;
+}.o-giscus-comment .tc-modal-header {
+    text-transform: capitalize;
+  }.os-started:hover {
 	transform: scale(1.01);
 	transition: transform .2s;
 }.gsc-left-header {
