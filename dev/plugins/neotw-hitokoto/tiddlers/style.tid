@@ -1,7 +1,9 @@
 title: $:/plugins/oeyoews/neotw-hitokoto/style
 tags: $:/tags/Stylesheet
-type: text/css
 
+\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
+
+<$list filter="[{$:/layout}match[$:/core/ui/PageTemplate]]">
 footer {
   text-align: center;
   flex-wrap: wrap;
@@ -50,3 +52,10 @@ footer .inline-icon svg{
       width: 0;
     }
   }
+</$list>
+
+<$list filter="[{$:/layout}!match[$:/core/ui/PageTemplate]]">
+footer {
+    display: none !important;
+  }
+</$list>

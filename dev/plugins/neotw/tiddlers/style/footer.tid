@@ -1,6 +1,7 @@
 title: $:/plugins/oeyoews/neotw/style/footer
 tags: $:/tags/Stylesheet
 
+<$list filter="[{$:/layout}match[$:/core/ui/PageTemplate]]">
 footer {
   text-align: center;
   flex-wrap: wrap;
@@ -15,3 +16,10 @@ footer {
 	padding: 2px;
 	font-size: 50%;
 }
+</$list>
+
+<$list filter="[{$:/layout}!match[$:/core/ui/PageTemplate]]">
+footer {
+    display: none !important;
+  }
+</$list>
