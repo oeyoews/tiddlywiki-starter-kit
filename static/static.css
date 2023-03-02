@@ -7075,7 +7075,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/PageControls] .tc-tag-label:after {
-  content: " 36";
+  content: " 34";
 }
 
 
@@ -7117,7 +7117,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/ViewTemplate] .tc-tag-label:after {
-  content: " 18";
+  content: " 17";
 }
 
 
@@ -7171,13 +7171,13 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Macro] .tc-tag-label:after {
-  content: " 78";
+  content: " 77";
 }
 
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 123";
+  content: " 122";
 }
 
 
@@ -7357,7 +7357,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/StartupAction\/PostRender] .tc-tag-label:after {
-  content: " 5";
+  content: " 4";
 }
 
 
@@ -7382,12 +7382,6 @@ footer {
 
 [data-tag-title=\$\:\/tags\/RawMarkupWikified\/TopHead] .tc-tag-label:after {
   content: " 1";
-}
-
-
-
-[data-tag-title=Tiddlywiki5Tip] .tc-tag-label:after {
-  content: " 7";
 }
 
 
@@ -8618,36 +8612,6 @@ a[data-fancybox] img {
   border: none;
   border-radius: 3px;
 }
-.o-rnav {
-  text-align: right;
-  margin-top: 6px;
-  text-transform: uppercase;
-}.o-rnav:hover {
-  
-  font-weight: bold;
-}.o-random-tip .tc-modal,
-.o-random-tip .tc-modal-header,
-.o-random-tip .tc-modal-body,
-.o-random-tip .tc-modal-footer {
-   border-radius: 5px;
-   border: none;
-   background-color: #F5F5F5;
-}.o-random-tip .tc-modal-footer {
-    display:none;
-}.o-random-right {
-    text-align: right;
-}.o-random-tip blockquote {
-	border: none;
-	background-color: whitesmoke;
-	padding: 5px 10px;
-	border-radius: 5px;
-}.o-random-tip blockquote:hover {
-    transform: scale(0.99);
-    background-color: aliceblue !important;
-    transition: transform .2s;
-}.o-random-tip .tc-modal-header {
-    text-transform: capitalize;
-  }
 .o-style-shield-copy:hover {
 	transform: scale(1.01);
 	transition: transform .2s;
