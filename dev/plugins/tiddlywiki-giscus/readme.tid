@@ -9,6 +9,14 @@ title: $:/plugins/oeyoews/tiddlywiki-giscus/readme
 <$image source={{{ [[][https://img.shields.io/badge/Version-]] [<currentTiddler>get[version]] [[-red?style=flat&logo=dev.to&logoColor=red]] +[join[]]}}} />
 <$image source={{{ [[][https://img.shields.io/badge/Author-]] [<currentTiddler>get[author]] [[-lightblue?style=flat]] +[join[]]}}} />
 
+<!-- <$list filter="[[$:/plugins/oeyoews/tiddlywiki-fancybox]has[plugin-type]]"> -->
+<!-- <<fbox "">> -->
+<!-- </$list> -->
+
+<!-- <center> -->
+<!-- [img width=256 []] -->
+<!-- </center> -->
+
 <center>
 <!-- <$button class="get-started"> -->
 <!--   <a style="text-decoration: none;" target="_blank" -->
