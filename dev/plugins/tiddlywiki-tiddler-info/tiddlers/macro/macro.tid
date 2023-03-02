@@ -13,3 +13,11 @@ tags: $:/tags/Macro
 {{!!creator}}
 </span>
 \end
+
+\define tid-size()
+🥪 tiddler size <$text text={{{
+[<currentTiddler>fields[]] :map[<..currentTiddler>get<currentTiddler>length[ ]else[0]]
+[<currentTiddler>fields[]length[]]
+:and[sum[]divide[1024]fixed[2]] KB :and[join[ ]]
+}}}/>&nbsp;
+\end

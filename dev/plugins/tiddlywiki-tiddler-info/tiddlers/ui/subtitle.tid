@@ -46,6 +46,7 @@ tags: $:/tags/ViewTemplate
 <!-- https have bug, will creat http: tid -->
 <!-- GettingStarted not work filter -->
 <$list filter="[all[current]!is[system]!is[binary]]">
+<<tid-size>>
 <<opublish>>
 </$list>
 
