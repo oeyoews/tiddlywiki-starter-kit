@@ -80,3 +80,20 @@ footer {display:none !important;}
 .custom-details>summary::marker {
    content:"";
 }
+
+.o-neotw-setup .tc-modal,
+.o-neotw-setup .tc-modal-header,
+.o-neotw-setup .tc-modal-body,
+.o-neotw-setup .tc-modal-footer {
+   border-radius: 10px;
+   border: none;
+   background-color: #F5F5F5;
+}
+
+.o-neotw-setup .tc-modal-footer {
+    display:none;
+}
+
+.o-neotw-setup .tc-modal-header {
+    text-transform: capitalize;
+  }

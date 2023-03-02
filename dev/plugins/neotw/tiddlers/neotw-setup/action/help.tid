@@ -1,0 +1,5 @@
+key: ((neotw-help))
+tags: $:/tags/KeyboardShortcut
+title: $:/plugins/oeyoews/neotw/neotw-setup/neotw-help
+
+<$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/neotw/setting"/>
