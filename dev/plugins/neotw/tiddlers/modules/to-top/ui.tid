@@ -1,6 +1,13 @@
 title: $:/plugins/oeyoews/neotw/modules/to-top/ui
 tags: $:/tags/PageTemplate
 
+\define giscus-app()
+<$button tooltip="reveal-js" class="o-btn-back">
+<$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/tiddlywiki-giscus/giscus-modal"/>
+{{$:/plugins/oeyoews/tiddlywiki-giscus/icon}}
+</$button>
+\end
+
 \define reveal-js()
 <$button tooltip="reveal-js" class="o-btn-back">
 {{reveal-icon}}
@@ -113,6 +120,7 @@ tags: $:/tags/PageTemplate
 <!-- emptystorymessage -->
 <$list filter="[[$:/StoryList]get[list]count[]match[0]]">
 <div id="stx-story-top">
+  <<giscus-app>>
   <<reveal-js>>
   <<random-article>>
   <<github-cat>>
@@ -128,6 +136,7 @@ tags: $:/tags/PageTemplate
 <!-- more two tiddler -->
 <$list filter="[list[$:/StoryList]count[]compare:number:gt[2]]">
 <div id="stx-story-top">
+  <<giscus-app>>
   <<o-sidebar>>
   <<switch-lang>>
   <<readonly-mode>>
@@ -143,6 +152,7 @@ tags: $:/tags/PageTemplate
 <$list filter="[[$:/StoryList]get[list]!is[blank]]">
   <$list filter="[list[$:/StoryList]count[]compare:number:lteq[2]]">
     <div id="stx-story-top">
+      <<giscus-app>>
       <<random-article>>
       <<o-sidebar>>
       <<switch-lang>>
