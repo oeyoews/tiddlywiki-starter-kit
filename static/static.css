@@ -6793,7 +6793,7 @@ footer {
 }
 
 [data-tag-title=\$\:\/tags\/Image] .tc-tag-label:after {
-  content: " 156";
+  content: " 155";
 }
 
 
@@ -6925,7 +6925,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/ViewToolbar] .tc-tag-label:after {
-  content: " 22";
+  content: " 21";
 }
 
 
@@ -6955,7 +6955,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/KeyboardShortcut] .tc-tag-label:after {
-  content: " 23";
+  content: " 24";
 }
 
 
@@ -7118,30 +7118,6 @@ footer {
 
 [data-tag-title=\$\:\/plugins\/Gk0Wk\/notionpage-covericon\/emojies] .tc-tag-label:after {
   content: " 9";
-}
-
-
-
-[data-tag-title=Font\ Awesome\ 5] .tc-tag-label:after {
-  content: " 1";
-}
-
-
-
-[data-tag-title=Solid] .tc-tag-label:after {
-  content: " 1";
-}
-
-
-
-[data-tag-title=\$\:\/tags\/action\/split] .tc-tag-label:after {
-  content: " 1";
-}
-
-
-
-[data-tag-title=\$\:\/tags\/action\/unsplit] .tc-tag-label:after {
-  content: " 1";
 }
 
 
