@@ -5,6 +5,7 @@ list-before: $:/core/ui/Buttons/close
 description: giscus on modal
 caption: giscus on modal
 
+\whitespace trim
 <$list filter="[[$:/temp/focussedTiddler]!is[missing]]">
 <$button message="giscus" tooltip="comment" class=<<tv-config-toolbar-class>>>
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">

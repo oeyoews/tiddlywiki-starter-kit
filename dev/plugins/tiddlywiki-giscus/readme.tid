@@ -30,6 +30,10 @@ title: $:/plugins/oeyoews/tiddlywiki-giscus/readme
 💎 A Commenting System Powered By Github Discussions. Let Visitors Leave Comments And Reactions On Your Site With Github! This Project Is Strongly Inspired By Utterances.
 <<<
 
+!! Usage
+
+* <kbd>Ctrl-Shift-G</kbd> 显示评论， 或者点击界面上的这个图标 {{$:/plugins/oeyoews/tiddlywiki-giscus/icon-gem}}
+
 !! NOTE
 
 * 由于使用modal现实评论， filter 的配置项不再使用， 也没有使用的必要了， 仅作为保留

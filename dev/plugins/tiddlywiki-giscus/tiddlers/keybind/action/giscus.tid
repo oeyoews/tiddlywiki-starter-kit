@@ -1,0 +1,5 @@
+key: ((giscus))
+tags: $:/tags/KeyboardShortcut
+title: $:/plugins/oeyoews/neotw/neotw-setup/giscus
+
+<$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/tiddlywiki-giscus/giscus-modal"/>
