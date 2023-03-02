@@ -4,9 +4,7 @@ mask-closable: yes
 class: o-neotw-setup tc-modal-centered
 
 <$list filter="[[$:/plugins/kookma/shiraz-callout]has[plugin-type]]">
-<<callout-details "tip" title:"plugins" "<<ov>>" status:"open">>
-<hr>
-<<callout "Some tabs coming soon">>
+{{neotw-guides}}
 </$list>
 
 <$list filter="[[$:/plugins/kookma/shiraz-callout]!has[plugin-type]]">

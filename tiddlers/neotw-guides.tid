@@ -2,7 +2,7 @@ caption: Guides
 cn-title: 指南
 created: 20230301054333183
 creator: oeyoews
-modified: 20230302052738400
+modified: 20230302100747738
 modifier: oeyoews
 tags: 
 title: neotw-guides
@@ -25,3 +25,5 @@ type: text/vnd.tiddlywiki
 <<callout-details question title:"Plugins 🧩"  {{neotw-plugins}}>>
 
 <<callout-details error title:"Gallary {{neotw-gallary}}"  {{gallary}}>>
+
+<<callout-details info title:"Some tabs coming soon 🍺">>
