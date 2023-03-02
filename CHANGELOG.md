@@ -1,3 +1,10 @@
+## [3.84.1](https://github.com/oeyoews/neotw/compare/v3.84.0...v3.84.1) (2023-03-02)
+
+
+### Performance Improvements
+
+* use rules instead of css ([ca3d2b8](https://github.com/oeyoews/neotw/commit/ca3d2b87aadbf50d19d73d809a27fc32b444882d))
+
 # [3.84.0](https://github.com/oeyoews/neotw/compare/v3.83.0...v3.84.0) (2023-03-02)
 
 
