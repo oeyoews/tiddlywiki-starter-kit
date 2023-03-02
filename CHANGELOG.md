@@ -1,3 +1,11 @@
+# [3.86.0](https://github.com/oeyoews/neotw/compare/v3.85.0...v3.86.0) (2023-03-02)
+
+
+### Features
+
+* add class for current tiddler ([336ac88](https://github.com/oeyoews/neotw/commit/336ac888dda97b7f6385b0837dfabc5a7a0e288a))
+* support keybinding ([28051df](https://github.com/oeyoews/neotw/commit/28051dfae7e6111ea3cc4388d1c51566ae4621e9))
+
 # [3.85.0](https://github.com/oeyoews/neotw/compare/v3.84.1...v3.85.0) (2023-03-02)
 
 
