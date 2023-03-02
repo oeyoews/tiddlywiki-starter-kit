@@ -1,3 +1,10 @@
+## [3.87.1](https://github.com/oeyoews/neotw/compare/v3.87.0...v3.87.1) (2023-03-02)
+
+
+### Performance Improvements
+
+* remove tc-modal-centered ([4df7fd5](https://github.com/oeyoews/neotw/commit/4df7fd5ffdd483fd865af260f501aa3370e6b971))
+
 # [3.87.0](https://github.com/oeyoews/neotw/compare/v3.86.0...v3.87.0) (2023-03-02)
 
 
