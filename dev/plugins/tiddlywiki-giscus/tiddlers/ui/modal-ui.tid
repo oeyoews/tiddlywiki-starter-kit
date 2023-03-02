@@ -9,7 +9,7 @@ caption: giscus on modal
 <$button message="giscus" tooltip="comment" class=<<tv-config-toolbar-class>>>
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
 <$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/tiddlywiki-giscus/giscus-modal"/>
-{{$:/core/images/github}}
+{{$:/plugins/oeyoews/tiddlywiki-giscus/icon}}
 </$list>
 <$list filter="[<tv-config-toolbar-text>match[yes]]">
 <span class="tc-btn-text">
