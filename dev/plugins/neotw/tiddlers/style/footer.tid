@@ -10,7 +10,7 @@ footer {
 	justify-content:center;
 	align-items: center;
 	z-index:-1;
-	min-height:25px;
+	<!-- min-height:25px; -->
 	color: gray;
 	user-select: none;
 	padding: 2px;

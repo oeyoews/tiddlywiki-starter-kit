@@ -1,6 +1,11 @@
 title: $:/plugins/oeyoews/neotw/modules/landing/style
 tags: $:/tags/Stylesheet
-type: text/css
+
+<$list filter="[{$:/info/url/search}prefix[?]]">
+.nc-topbar {
+  display: none !important;
+}
+</$list>
 
 .o-landing {
 	margin: 1em 0.5em;
