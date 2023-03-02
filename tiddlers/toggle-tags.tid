@@ -1,0 +1,13 @@
+created: 20230302060048483
+creator: oeyoews
+list: todo
+modified: 20230302060724769
+modifier: oeyoews
+my-field: todo
+tags: 
+title: toggle-tags
+type: text/vnd.tiddlywiki
+
+<$button> toggle tasks
+<$action-listops $tiddler=<<currentTiddler>> $tags="+[toggle[todo],[done],[cancled]]"/>
+</$button>
