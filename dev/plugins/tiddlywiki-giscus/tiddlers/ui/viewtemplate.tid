@@ -1,11 +1,12 @@
 title: $:/plugins/oeyoews/tiddlywiki-giscus/viewtemplate
 tags: $:/tags/ViewTemplate
 
- <$list filter="[all[current]!is[system]!is[draft]subfilter{$:/plugins/oeyoews/tiddlywiki-giscus/filter}]" variable="comment">
+<$list filter="[all[current]!is[system]!is[draft]subfilter{$:/plugins/oeyoews/tiddlywiki-giscus/filter}]" variable="comment">
+<$list filter="[[$:/temp/focussedTiddler]is[missing]]">
         <$set name="stateTiddler" value="$:/state/oeyoews/github-giscus-comments">
           <$reveal type="nomatch" state=<<stateTiddler>> text=<<currentTiddler>>>
               <$button class="tc-btn-invisible giscus-footer" set=<<stateTiddler>> setTo=<<currentTiddler>> >
-                  Show Comments
+                Show Comments
               </$button>
           </$reveal>
           <$reveal type="match" state=<<stateTiddler>> text=<<currentTiddler>>>
@@ -21,4 +22,5 @@ tags: $:/tags/ViewTemplate
               </$button>
           </$reveal>
         </$set>
+</$list>
 </$list>

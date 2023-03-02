@@ -2,10 +2,11 @@
   "title": "$:/plugins/oeyoews/tiddlywiki-giscus",
   "description": "A Commenting System Powered By Github Discussions",
   "author": "oeyoews",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "core-version": ">=5.2.5",
   "type": "application/json",
   "plugin-type": "plugin",
+  "dependents": "$:/plugins/Gk0Wk/focused-tiddler",
   "name": "Tiddlywiki Giscus",
   "list": "readme giscus-config explore"
 }

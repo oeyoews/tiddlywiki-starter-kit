@@ -1,0 +1,22 @@
+title: $:/plugins/oeyoews/tiddlywiki-giscus/ui/giscus-modal
+tags: $:/tags/ViewToolbar
+caption: viewtemplate-modal
+list-before: $:/core/ui/Buttons/close
+description: giscus on modal
+caption: giscus on modal
+
+<$list filter="[all[current]!is[system]!is[draft]subfilter{$:/plugins/oeyoews/tiddlywiki-giscus/filter}]">
+<$list filter="[[$:/temp/focussedTiddler]!is[missing]]">
+<$button message="giscus" tooltip="comment" class=<<tv-config-toolbar-class>>>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+<$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/tiddlywiki-giscus/giscus-modal"/>
+{{$:/core/images/github}}
+</$list>
+<$list filter="[<tv-config-toolbar-text>match[yes]]">
+<span class="tc-btn-text">
+<$text text="giscus"/>
+</span>
+</$list>
+</$button>
+</$list>
+</$list>

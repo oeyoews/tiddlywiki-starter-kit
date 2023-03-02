@@ -30,13 +30,8 @@ title: $:/plugins/oeyoews/tiddlywiki-giscus/readme
 💎 A Commenting System Powered By Github Discussions. Let Visitors Leave Comments And Reactions On Your Site With Github! This Project Is Strongly Inspired By Utterances.
 <<<
 
-<!-- !! TODO -->
+!! TODO
 
-<!-- * jump to comment directly -->
-<!-- * [[discus|https://bimlas.gitlab.io/tw5-disqus]] -->
-<!-- * js macro and widget to get config tid data difference(load order) -->
-<!-- * add toggle on local -->
-
-<!---->
-<!-- * Split giscus config and add filter configurable -->
-<!-- * add jump to comment and how to toggle for toolbar [[example|https://tw5-github-comments.joseli.to/]] -->
+* 统一button样式
+* 提供未配置检测警告
+* 提供依赖检测警告

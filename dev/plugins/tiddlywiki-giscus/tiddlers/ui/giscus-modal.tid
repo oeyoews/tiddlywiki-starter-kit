@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/tiddlywiki-giscus/giscus-modal
+mask-closable: yes
+subtitle: 💎 {{$:/temp/focussedTiddler}} {{$:/plugins/oeyoews/tiddlywiki-giscus/close-modal}}
+class: o-surfing-keys tc-modal-centered
+
+<$giscus id={{$:/temp/focussedTiddler}}/>
