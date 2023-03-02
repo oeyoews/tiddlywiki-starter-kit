@@ -3,4 +3,10 @@ subtitle: Neotw Setting {{$:/plugins/oeyoews/neotw/close-modal}}
 mask-closable: yes
 class: o-neotw-setup tc-modal-centered
 
-<<callout-details "tip" "Coming soom">>
+<$list filter="[[$:/plugins/kookma/shiraz-callout]has[plugin-type]]">
+<<callout-details "tip" "Coming soon">>
+</$list>
+
+<$list filter="[[$:/plugins/kookma/shiraz-callout]!has[plugin-type]]">
+Coming soon
+</$list>
