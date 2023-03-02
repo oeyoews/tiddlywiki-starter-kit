@@ -1,11 +1,10 @@
 title: $:/plugins/oeyoews/tiddlywiki-giscus/ui/giscus-modal
-tags: $:/tags/ViewToolbar
+tags: $:/tags/PageControls
 caption: viewtemplate-modal
 list-before: $:/core/ui/Buttons/close
 description: giscus on modal
 caption: giscus on modal
 
-<$list filter="[all[current]!is[system]!is[draft]subfilter{$:/plugins/oeyoews/tiddlywiki-giscus/filter}]">
 <$list filter="[[$:/temp/focussedTiddler]!is[missing]]">
 <$button message="giscus" tooltip="comment" class=<<tv-config-toolbar-class>>>
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
@@ -18,5 +17,4 @@ caption: giscus on modal
 </span>
 </$list>
 </$button>
-</$list>
 </$list>
