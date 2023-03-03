@@ -5401,7 +5401,113 @@ width:1.2em;
 
 .callout[data-callout="dark"]{
   --callout-color: 33, 37, 41;
-}/*!
+}:root {
+    --palette-radius: 5px;
+}
+.commandpalette {
+    position: fixed;
+    background: #ffffff;
+    z-index: 9999;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, 0%);
+    width: 500px;
+    display: none;
+    flex-direction: column;
+    font-size: 21px;
+    border-radius: var(--palette-radius);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 14px;
+    border: 2px solid #f4f4f4;
+}
+@media (max-width: 540px) {
+  .commandpalette {
+    width: calc(100vw - 40px);
+  }
+}
+.commandpalette-masklayer {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #ffffff;
+    opacity: 0;
+    filter: contrast(130%);
+    min-width: 200px !important;
+    transition: all 300ms;
+    pointer-events: none;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255,255,255,0.6);
+}
+.inputhintwrapper {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f4f4f4;
+}
+.commandpalette input {
+    border: 0;
+    background: 0;
+    height: 40px;
+    color: #333333;
+    border-radius: var(--palette-radius) var(--palette-radius) 0px 0px;
+    outline: 0;
+    min-width: 50px;
+    flex: 1;
+    padding-left: 7px;
+}
+.commandpalettetitle {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.commandpalettehint {
+    font-size: 13px;
+    text-align: right;
+    flex-shrink: 0;
+    padding-right: 7px;
+    opacity: 0.6;
+    font-weight: 800;
+}
+.commandpaletteresultselected>.commandpalettehint {
+    opacity: 1;
+}
+.commandpalettehintmain {}
+.commandpaletteresult {
+    background: #ffffff;
+    font-size: 15px;
+    color: #333333;
+    fill: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+.commandpaletteresult:not(:last-child) {
+    border-bottom: #f4f4f4 solid 1px;
+}
+.commandpaletteresult:hover:not(.commandpaletteresultselected) {
+    background: #f4f4f4;
+}
+.commandpaletteresultselected {
+    background: #5778d8;
+    color: #ffffff;
+    fill: #ffffff;
+}
+.cp-scroll{
+    max-height: 50vh;
+    overflow-y: auto;
+    position: relative;
+    border-radius: 0px 0px var(--palette-radius) var(--palette-radius);
+}
+
+/*!
  * Pikaday
  * Copyright © 2014 David Bushell | BSD & MIT license | https://dbushell.com/
  */
@@ -6779,7 +6885,7 @@ footer {
 }
 
 [data-tag-title=\$\:\/tags\/Image] .tc-tag-label:after {
-  content: " 155";
+  content: " 156";
 }
 
 
@@ -6803,7 +6909,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/AboveStory] .tc-tag-label:after {
-  content: " 1";
+  content: " 2";
 }
 
 
@@ -6941,7 +7047,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/KeyboardShortcut] .tc-tag-label:after {
-  content: " 24";
+  content: " 30";
 }
 
 
@@ -6971,7 +7077,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/PageControls] .tc-tag-label:after {
-  content: " 36";
+  content: " 37";
 }
 
 
@@ -7073,7 +7179,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 119";
+  content: " 121";
 }
 
 
@@ -7151,7 +7257,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/ControlPanel\/SettingsTab] .tc-tag-label:after {
-  content: " 4";
+  content: " 5";
 }
 
 
@@ -7182,6 +7288,18 @@ footer {
 
 [data-tag-title=\$\:\/tags\/ShirazCallout\/Image] .tc-tag-label:after {
   content: " 13";
+}
+
+
+
+[data-tag-title=\$\:\/tags\/CommandPaletteCommand] .tc-tag-label:after {
+  content: " 42";
+}
+
+
+
+[data-tag-title=\$\:\/tags\/CommandPaletteTheme] .tc-tag-label:after {
+  content: " 2";
 }
 
 
@@ -7313,7 +7431,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/SplashScreen] .tc-tag-label:after {
-  content: " 15";
+  content: " 17";
 }
 
 
