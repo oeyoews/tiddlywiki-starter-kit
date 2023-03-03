@@ -2,14 +2,16 @@ title: $:/plugins/oeyoews/neotw/modules/to-top/ui
 tags: $:/tags/PageTemplate
 
 \define giscus-app()
-<$button tooltip="reveal-js" class="o-btn-back">
+<$list filter="[[$:/temp/focussedTiddler]!is[missing]]">
+<$button tooltip="Comment" class="o-btn-back">
 <$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/tiddlywiki-giscus/giscus-modal"/>
 {{$:/plugins/oeyoews/tiddlywiki-giscus/icon}}
 </$button>
+</$list>
 \end
 
 \define reveal-js()
-<$button tooltip="reveal-js" class="o-btn-back">
+<$button tooltip="Reveal Slides" class="o-btn-back">
 {{reveal-icon}}
 <$action-navigate $to="neotw-reveal-js" />
 </$button>
