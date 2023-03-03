@@ -1,11 +1,11 @@
-caption: {{reveal-icon}} Slides
+caption: {{$:/plugins/oeyoews/neotw/icon/reveal}} Slides
 cn-title: Neotw 幻灯片演示
 created: 20230218094549863
 creator: pimgeek
 giscus: yes
-icon: reveal-icon
+icon: $:/plugins/oeyoews/neotw/icon/revea-js
 list: one two
-modified: 20230228093804862
+modified: 20230303084704079
 modifier: oeyoews
 publish: article
 tags: 
@@ -23,11 +23,11 @@ type: text/vnd.tiddlywiki
 <div style="text-align: right;">
 <span>
 <$button>
-{{reveal-icon}} Navigate to Slides
+{{$:/plugins/oeyoews/neotw/icon/revea-js}} Navigate to Slides
 <$action-navigate $to="neotw-reveal-js" />
 </$button>
 <$button >
-<<.icon reveal-icon>> Add new slide
+{{$:/plugins/oeyoews/neotw/icon/revea-js}} Add new slide
 <$action-sendmessage $message="tm-new-tiddler" title={{{ [[]addprefix[reveal-js-]]}}} tags="reveal"/>
 </$button>
 </span>
