@@ -22,15 +22,9 @@
   var giscusConfigTiddlerGet = $tw.wiki.getTiddler(giscusConfigTiddler);
   var config = giscusConfigTiddlerGet ? giscusConfigTiddlerGet.fields : {};
   // console.log(config)
-
-  // debug
   // console.log(config.repo)
   // console.log(config.repoId)
   // console.log(config.categoryId)
-
-  var repo = 'oeyoews/neotw';
-  var repoId = 'R_kgDOH5A5OA';
-  var categoryId = 'DIC_kwDOH5A5OM4CRFEE';
 
   GiscusNodeWidget.prototype = new Widget();
   GiscusNodeWidget.prototype.render = function (parent, nextSibling) {

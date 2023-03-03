@@ -3,4 +3,8 @@ mask-closable: yes
 subtitle: {{$:/plugins/oeyoews/tiddlywiki-giscus/close-modal}}
 class: o-giscus-comment
 
+<!-- giscus -->
 <$giscus id={{$:/temp/focussedTiddler}} lang="en" theme={{{ [[$:/plugins/oeyoews/tiddlywiki-giscus/config]get[gtheme]else[light]] }}}/>
+<!-- utteranc -->
+<!-- <div class="gh-comments-wrapper"></div> -->
+<!-- <$macrocall $name="github-comments" current=<<currentTiddler>>/> -->

@@ -1,8 +1,9 @@
-title: $:/plugins/oeyoews/tiddlywiki-utteranc/config
+title: $:/plugins/oeyoews/tiddlywiki-giscus/modules/utteranc/config
 caption: utteranc config
 
 \whitespace trim
 
+<!-- wip -->
 \define tid() $:/plugins/oeyoews/tiddlywiki-utteranc/config
 
 <table>

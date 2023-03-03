@@ -1,0 +1,7 @@
+title: $:/plugins/oeyoews/tiddlywiki-utteranc/template
+<!-- tags: $:/tags/ViewTemplate -->
+
+<$list filter="[all[current]!is[system]]" variable="comment">
+<div class="gh-comments-wrapper"></div>
+<$macrocall $name="github-comments" current=<<currentTiddler>>/>
+</$list>
