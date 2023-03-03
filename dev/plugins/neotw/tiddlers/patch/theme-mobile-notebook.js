@@ -1,10 +1,5 @@
 /*\
-title: $:/themes/nico/notebook-mobile/js/notebookSidebarNav.js
-type: application/javascript
-module-type: global
-
 Closes the notebook sidebar on mobile when navigating
-
 \*/
 (function () {
   /*jslint node: true, browser: true */

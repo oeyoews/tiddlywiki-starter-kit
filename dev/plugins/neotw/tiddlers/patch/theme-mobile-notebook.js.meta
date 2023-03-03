@@ -1,3 +1,3 @@
-module-type: global
-title: $:/plugins/nico/notebook-mobile/js/notebookSidebarNav.js
+title: $:/themes/nico/notebook-mobile/js/notebookSidebarNav.js
 type: application/javascript
+module-type: global
