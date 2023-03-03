@@ -3,10 +3,12 @@ tags: $:/tags/PageTemplate
 
 \define giscus-app()
 <$list filter="[[$:/temp/focussedTiddler]!is[missing]]">
+<$list filter="[[$:/temp/focussedTiddler]get[text]!is[system]]">
 <$button tooltip="Comment" class="o-btn-back">
 <$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/tiddlywiki-giscus/giscus-modal"/>
 {{$:/plugins/oeyoews/tiddlywiki-giscus/icon}}
 </$button>
+</$list>
 </$list>
 \end
 
