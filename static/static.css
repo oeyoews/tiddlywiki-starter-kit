@@ -7538,7 +7538,6 @@ footer {
 	justify-content:center;
 	align-items: center;
 	z-index:-1;
-	<!-- min-height:25px; -->
 	color: gray;
 	user-select: none;
 	padding: 2px;
@@ -7549,28 +7548,10 @@ footer {
   background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
   -webkit-background-clip: text;
   color: transparent;
-  <!-- font-style: italic; -->
   font-weight: 700;
 }#h-cursor:hover {
   cursor: pointer;
-}.print {
-    width: 500px;
-    white-space: nowrap;
-    overflow: hidden;
-    -webkit-animation: dy 7s steps(30, end) infinite;
-    animation: dy 7s steps(30, end) infinite;
-  }
-  @-webkit-keyframes dy {
-    from {
-      width: 0;
-    }
-  }
-  @keyframes dy {
-    from {
-      width: 0;
-    }
-  }
-</$list><$list filter="[{$:/layout}!match[$:/core/ui/PageTemplate]]">
+}</$list><$list filter="[{$:/layout}!match[$:/core/ui/PageTemplate]]">
 footer {
     display: none !important;
   }
