@@ -2581,13 +2581,13 @@ span.cm-internallink {
   .gk0wk-notionpagebg .gk0wk-notionpagebg-image {
     width: calc(100% - -14px - -14px);
     left: -14px;
-    height: 200px;
+    height: 100px;
   }
   .gk0wk-notionpagebg-ci {
-    height: calc(200px + 65px / 2 + -14px + 10px);
+    height: calc(100px + 65px / 2 + -14px + 10px);
   }
   .gk0wk-notionpagebg-c {
-    height: calc(200px + -14px + 30px + 10px);
+    height: calc(100px + -14px + 30px + 10px);
   }
 }.gk0wk-notionpagebg p {
     margin: 0;
