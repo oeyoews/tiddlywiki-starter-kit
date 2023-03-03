@@ -1,4 +1,4 @@
 title: $:/plugins/oeyoews/neotw/surfing
 surfing: yes
 
-|{{$:/core/icon}}|<kbd>Ctrl+Shift+G</kbd>|setting|
+|{{$:/core/icon}}|<kbd>Alt+Shift+Slash</kbd>|Setting|
