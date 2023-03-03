@@ -6753,8 +6753,19 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   }
 
 footer {
-    display: none !important;
-  }
+  text-align: center;
+  flex-wrap: wrap;
+	flex: 1 1 auto;
+	display:flex !important;
+	justify-content:center;
+	align-items: center;
+	z-index:-1;
+	
+	color: gray;
+	user-select: none;
+	padding: 2px;
+	font-size: 50%;
+}
 
 .tc-sidebar-scrollable {
     display: none;
