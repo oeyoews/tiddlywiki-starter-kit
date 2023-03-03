@@ -1,3 +1,10 @@
+# [3.90.0](https://github.com/oeyoews/neotw/compare/v3.89.0...v3.90.0) (2023-03-03)
+
+
+### Features
+
+* add search for help ([9e7d44e](https://github.com/oeyoews/neotw/commit/9e7d44ef9e07143ebfd48a86b335758ca0552d47))
+
 # [3.89.0](https://github.com/oeyoews/neotw/compare/v3.88.0...v3.89.0) (2023-03-03)
 
 
