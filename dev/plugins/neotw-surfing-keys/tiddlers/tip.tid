@@ -1,0 +1,9 @@
+title: $:/plugins/oeyoews/tiddlywiki-surfing-keys/tips
+mask-closable: yes
+subtitle: {{$:/plugins/oeyoews/tiddlywiki-random-tid/did-you-know}}
+tags: Tiddlywiki5Tip
+author: oeyoews
+class: o-random-tip tc-modal-centered
+
+> 按住<kbd>Ctrl-Shift-G</kbd>可以显示当前文章的评论
+> <<random-author>>
