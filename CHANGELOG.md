@@ -1,3 +1,10 @@
+# [3.88.0](https://github.com/oeyoews/neotw/compare/v3.87.1...v3.88.0) (2023-03-03)
+
+
+### Features
+
+* support show other plugins shortcut ([d54c6a8](https://github.com/oeyoews/neotw/commit/d54c6a8e508047bea7fa4b2ad7dade34fa26a8c2))
+
 ## [3.87.1](https://github.com/oeyoews/neotw/compare/v3.87.0...v3.87.1) (2023-03-02)
 
 
