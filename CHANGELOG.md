@@ -1,3 +1,10 @@
+# [3.92.0](https://github.com/oeyoews/neotw/compare/v3.91.0...v3.92.0) (2023-03-03)
+
+
+### Features
+
+* split to js and js.meta ([2796392](https://github.com/oeyoews/neotw/commit/27963920b968290566e349b11d1c9fa4ce1e9698))
+
 # [3.91.0](https://github.com/oeyoews/neotw/compare/v3.90.0...v3.91.0) (2023-03-03)
 
 
