@@ -1,0 +1,9 @@
+title: $:/plugins/oeyoews/neotw-surfing-keys/plugins
+
+<$list filter="[[$:/plugins/kookma/shiraz-callout]!is[missing]]">
+<$list filter="[all[tiddlers+shadows]surfing[yes]count[]!match[0]]">
+<$list filter="[all[tiddlers+shadows]surfing[yes]]" variable="surfing">
+<$transclude tiddler={{{ [<surfing>] }}} mode="block"/>
+</$list>
+</$list>
+</$list>

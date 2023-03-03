@@ -1,5 +1,5 @@
 title: $:/plugins/oeyoews/neotw/setting
-subtitle: Neotw Setting {{$:/plugins/oeyoews/neotw/close-modal}}
+subtitle: {{$:/core/icon}} Neotw Setting {{$:/plugins/oeyoews/neotw/close-modal}}
 mask-closable: yes
 class: o-neotw-setup tc-modal-centered
 

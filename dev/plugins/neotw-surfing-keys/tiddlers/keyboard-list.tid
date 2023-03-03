@@ -1,10 +1,12 @@
-subtitle: [img width=22 [$:/plugins/oeyoews/neotw-surfing-keys/icon]] Keyboard shortcuts {{$:/plugins/oeyoews/neotw-surfing-keys/close-modal}}
 title: $:/plugins/oeyoews/neotw-surfing-keys/keyboard-list
+subtitle: [img width=22 [$:/plugins/oeyoews/neotw-surfing-keys/icon]] Keyboard shortcuts {{$:/plugins/oeyoews/neotw-surfing-keys/close-modal}}
 mask-closable: yes
 class: o-surfing-keys tc-modal-centered
 
+<!-- main -->
 <$list filter="[[$:/plugins/kookma/shiraz-callout]!is[missing]]">
 <<callout-details status:"open" example title:Custom "{{$:/plugins/oeyoews/neotw-surfing-keys/list}}">>
+<<callout-details tldr title:Plugins "{{$:/plugins/oeyoews/neotw-surfing-keys/plugins}}">>
 <<callout-details info title:System "{{$:/core/ui/ControlPanel/KeyboardShortcuts}}">>
 </$list>
 
