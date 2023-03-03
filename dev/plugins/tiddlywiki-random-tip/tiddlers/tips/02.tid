@@ -13,4 +13,10 @@ class: o-random-tip tc-modal-centered
 向button 添加 tc-btn-invisible tc-tiddlylink 两个 class, 可以使得按钮看起来像一个内部链接。
 \end
 
+<$list filter="[[$:/plugins/kookma/shiraz-callout]has[plugin-type]]">
 <$macrocall $name="callout-details" type="info" src=<<content>> status="close" title=<<o-title>> width="400px"/>
+</$list>
+
+<$list filter="[[$:/plugins/kookma/shiraz-callout]!has[plugin-type]]">
+<<content>>
+</$list>

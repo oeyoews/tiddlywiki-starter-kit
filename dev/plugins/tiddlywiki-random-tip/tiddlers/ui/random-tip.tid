@@ -10,7 +10,7 @@ list-before: $:/core/ui/Buttons/more-page-actions
 <$action-navigate $to="$link$" />
 \end
 
-<$list filter="[tag[Tiddlywiki5Tip]count[]compare:number:gt[1]]">
+<$list filter="[tag[Tiddlywiki5Tip]count[]compare:number:gt[10]]">
 <$button tooltip="tips" aria-label="tips" class=<<tv-config-toolbar-class>> >
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
 <$macrocall $name="random-action" link={{{ [tag[Tiddlywiki5Tip]!is[system]random[1]] }}} />
