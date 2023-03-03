@@ -1,0 +1,9 @@
+tags: $:/tags/RawMarkupWikified/BottomBody
+
+`<script src="https://cdn.staticfile.org/twikoo/1.6.10/twikoo.all.min.js">``</script>`
+`<script>
+twikoo.init({
+      envId: 'https://twikoo.oeyoewl.top', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+      el: '#comment', // 容器元素
+})
+``</script>`
