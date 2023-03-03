@@ -1,0 +1,3 @@
+module-type: codemirror
+title: $:/plugins/tiddlywiki/codemirror/keymap/vim.js
+type: application/javascript

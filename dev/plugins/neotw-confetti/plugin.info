@@ -1,11 +1,11 @@
 {
-    "version": "0.0.4",
-    "type": "application/json",
-    "title": "$:/plugins/oeyoews/neotw-confetti",
-    "plugin-type": "plugin",
-    "name": "neotw-confetti",
-    "core-version": ">=5.2.3",
-    "description": "neotw-confetti",
-    "author": "oeyoews",
-    "list": "readme"
+  "version": "0.0.4",
+  "type": "application/json",
+  "title": "$:/plugins/oeyoews/neotw-confetti",
+  "plugin-type": "plugin",
+  "name": "neotw-confetti",
+  "core-version": ">=5.2.3",
+  "description": "neotw-confetti",
+  "author": "oeyoews",
+  "list": "readme explore"
 }

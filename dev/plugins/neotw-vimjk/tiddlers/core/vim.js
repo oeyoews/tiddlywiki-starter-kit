@@ -1,7 +1,3 @@
-module-type: codemirror
-title: $:/plugins/tiddlywiki/codemirror/keymap/vim.js
-type: application/javascript
-
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
 // Distributed under an MIT license: https://codemirror.net/LICENSE
 !(function (e) {
@@ -1481,12 +1477,12 @@ type: application/javascript
             (this.searchQueries = []),
             (this.linewise = !1);
         },
-        toString: function () {
+        toString: function() {
           return this.keyBuffer.join("");
         },
       }),
       (j.prototype = {
-        pushText: function (e, t, r, n, o) {
+        pushText: function(e, t, r, n, o) {
           if ("_" !== e) {
             n && "\n" !== r.charAt(r.length - 1) && (r += "\n");
             var i = this.isValidRegister(e) ? this.getRegister(e) : null;
@@ -1509,23 +1505,23 @@ type: application/javascript
             }
           }
         },
-        getRegister: function (e) {
+        getRegister: function(e) {
           return this.isValidRegister(e)
             ? ((e = e.toLowerCase()),
               this.registers[e] || (this.registers[e] = new _()),
               this.registers[e])
             : this.unnamedRegister;
         },
-        isValidRegister: function (e) {
+        isValidRegister: function(e) {
           return e && w(e, d);
         },
-        shiftNumericRegisters_: function () {
+        shiftNumericRegisters_: function() {
           for (var e = 9; 2 <= e; e--)
             this.registers[e] = this.getRegister("" + (e - 1));
         },
       }),
       (H.prototype = {
-        nextMatch: function (e, t) {
+        nextMatch: function(e, t) {
           var r = this.historyBuffer,
             n = t ? -1 : 1;
           null === this.initialPrefix && (this.initialPrefix = e);
@@ -1536,317 +1532,317 @@ type: application/javascript
           return o >= r.length
             ? ((this.iterator = r.length), this.initialPrefix)
             : o < 0
-            ? e
-            : void 0;
+              ? e
+              : void 0;
         },
-        pushInput: function (e) {
+        pushInput: function(e) {
           var t = this.historyBuffer.indexOf(e);
           -1 < t && this.historyBuffer.splice(t, 1),
             e.length && this.historyBuffer.push(e);
         },
-        reset: function () {
+        reset: function() {
           (this.initialPrefix = null),
             (this.iterator = this.historyBuffer.length);
         },
       });
     var F = {
-        matchCommand: function (e, t, r, n) {
-          var o = (function (e, t, r, n) {
-            for (var o, i = [], a = [], s = 0; s < t.length; s++) {
-              var l = t[s];
-              ("insert" == r && "insert" != l.context) ||
-                (l.context && l.context != r) ||
-                (n.operator && "action" == l.type) ||
-                !(o = (function (e, t) {
-                  {
-                    if ("<character>" != t.slice(-11))
-                      return e == t ? "full" : 0 == t.indexOf(e) && "partial";
-                    var r = t.length - 11,
-                      n = e.slice(0, r),
-                      o = t.slice(0, r);
-                    return n == o && e.length > r
-                      ? "full"
-                      : 0 == o.indexOf(n) && "partial";
-                  }
-                })(e, l.keys)) ||
-                ("partial" == o && i.push(l), "full" == o && a.push(l));
-            }
-            return { partial: i.length && i, full: a.length && a };
-          })(e, t, n, r);
-          if (!o.full && !o.partial) return { type: "none" };
-          if (!o.full && o.partial) return { type: "partial" };
-          for (var i = 0; i < o.full.length; i++) var a = o.full[i], s = s || a;
-          if ("<character>" == s.keys.slice(-11)) {
-            var l = (function (e) {
-              var t = /^.*(<[^>]+>)$/.exec(e),
-                r = t ? t[1] : e.slice(-1);
-              if (1 < r.length)
-                switch (r) {
-                  case "<CR>":
-                    r = "\n";
-                    break;
-                  case "<Space>":
-                    r = " ";
-                    break;
-                  default:
-                    r = "";
+      matchCommand: function(e, t, r, n) {
+        var o = (function(e, t, r, n) {
+          for (var o, i = [], a = [], s = 0; s < t.length; s++) {
+            var l = t[s];
+            ("insert" == r && "insert" != l.context) ||
+              (l.context && l.context != r) ||
+              (n.operator && "action" == l.type) ||
+              !(o = (function(e, t) {
+                {
+                  if ("<character>" != t.slice(-11))
+                    return e == t ? "full" : 0 == t.indexOf(e) && "partial";
+                  var r = t.length - 11,
+                    n = e.slice(0, r),
+                    o = t.slice(0, r);
+                  return n == o && e.length > r
+                    ? "full"
+                    : 0 == o.indexOf(n) && "partial";
                 }
-              return r;
-            })(e);
-            if (!l) return { type: "none" };
-            r.selectedCharacter = l;
+              })(e, l.keys)) ||
+              ("partial" == o && i.push(l), "full" == o && a.push(l));
           }
-          return { type: "full", command: s };
-        },
-        processCommand: function (e, t, r) {
-          switch (((t.inputState.repeatOverride = r.repeatOverride), r.type)) {
-            case "motion":
-              this.processMotion(e, t, r);
+          return { partial: i.length && i, full: a.length && a };
+        })(e, t, n, r);
+        if (!o.full && !o.partial) return { type: "none" };
+        if (!o.full && o.partial) return { type: "partial" };
+        for (var i = 0; i < o.full.length; i++) var a = o.full[i], s = s || a;
+        if ("<character>" == s.keys.slice(-11)) {
+          var l = (function(e) {
+            var t = /^.*(<[^>]+>)$/.exec(e),
+              r = t ? t[1] : e.slice(-1);
+            if (1 < r.length)
+              switch (r) {
+                case "<CR>":
+                  r = "\n";
+                  break;
+                case "<Space>":
+                  r = " ";
+                  break;
+                default:
+                  r = "";
+              }
+            return r;
+          })(e);
+          if (!l) return { type: "none" };
+          r.selectedCharacter = l;
+        }
+        return { type: "full", command: s };
+      },
+      processCommand: function(e, t, r) {
+        switch (((t.inputState.repeatOverride = r.repeatOverride), r.type)) {
+          case "motion":
+            this.processMotion(e, t, r);
+            break;
+          case "operator":
+            this.processOperator(e, t, r);
+            break;
+          case "operatorMotion":
+            this.processOperatorMotion(e, t, r);
+            break;
+          case "action":
+            this.processAction(e, t, r);
+            break;
+          case "search":
+            this.processSearch(e, t, r);
+            break;
+          case "ex":
+          case "keyToEx":
+            this.processEx(e, t, r);
+        }
+      },
+      processMotion: function(e, t, r) {
+        (t.inputState.motion = r.motion),
+          (t.inputState.motionArgs = $(r.motionArgs)),
+          this.evalInput(e, t);
+      },
+      processOperator: function(e, t, r) {
+        var n = t.inputState;
+        if (n.operator) {
+          if (n.operator == r.operator)
+            return (
+              (n.motion = "expandToLine"),
+              (n.motionArgs = { linewise: !0 }),
+              void this.evalInput(e, t)
+            );
+          P(e);
+        }
+        (n.operator = r.operator),
+          (n.operatorArgs = $(r.operatorArgs)),
+          r.exitVisualBlock && ((t.visualBlock = !1), ae(e)),
+          t.visualMode && this.evalInput(e, t);
+      },
+      processOperatorMotion: function(e, t, r) {
+        var n = t.visualMode,
+          o = $(r.operatorMotionArgs);
+        o && n && o.visualLine && (t.visualLine = !0),
+          this.processOperator(e, t, r),
+          n || this.processMotion(e, t, r);
+      },
+      processAction: function(e, t, r) {
+        var n = t.inputState,
+          o = n.getRepeat(),
+          i = !!o,
+          a = $(r.actionArgs) || {};
+        n.selectedCharacter && (a.selectedCharacter = n.selectedCharacter),
+          r.operator && this.processOperator(e, t, r),
+          r.motion && this.processMotion(e, t, r),
+          (r.motion || r.operator) && this.evalInput(e, t),
+          (a.repeat = o || 1),
+          (a.repeatIsExplicit = i),
+          (a.registerName = n.registerName),
+          P(e),
+          (t.lastMotion = null),
+          r.isEdit && this.recordLastEdit(t, n, r),
+          U[r.action](e, a, t);
+      },
+      processSearch: function(s, n, o) {
+        if (s.getSearchCursor) {
+          var l = o.searchArgs.forward,
+            e = o.searchArgs.wholeWordOnly;
+          Ce(s).setReversed(!l);
+          var t = l ? "/" : "?",
+            i = Ce(s).getQuery(),
+            c = s.getScrollInfo();
+          switch (o.searchArgs.querySrc) {
+            case "prompt":
+              var r = K.macroModeState;
+              r.isPlaying
+                ? p((h = r.replaySearchQueries.shift()), !0, !1)
+                : Re(s, {
+                  onClose: function(e) {
+                    s.scrollTo(c.left, c.top), p(e, !0, !0);
+                    var t = K.macroModeState;
+                    t.isRecording &&
+                      (function(e, t) {
+                        if (e.isPlaying) return;
+                        var r = e.latestRegister,
+                          n = K.registerController.getRegister(r);
+                        n && n.pushSearchQuery && n.pushSearchQuery(t);
+                      })(t, e);
+                  },
+                  prefix: t,
+                  desc: Te,
+                  onKeyUp: function(e, t, r) {
+                    var n,
+                      o,
+                      i,
+                      a = Ze.keyName(e);
+                    "Up" == a || "Down" == a
+                      ? ((n = "Up" == a),
+                        (o = e.target ? e.target.selectionEnd : 0),
+                        r(
+                          (t =
+                            K.searchHistoryController.nextMatch(t, n) || "")
+                        ),
+                        o &&
+                        e.target &&
+                        (e.target.selectionEnd = e.target.selectionStart =
+                          Math.min(o, e.target.value.length)))
+                      : "Left" != a &&
+                      "Right" != a &&
+                      "Ctrl" != a &&
+                      "Alt" != a &&
+                      "Shift" != a &&
+                      K.searchHistoryController.reset();
+                    try {
+                      i = Ee(s, t, !0, !0);
+                    } catch (e) { }
+                    i
+                      ? s.scrollIntoView(Ie(s, !l, i), 30)
+                      : (Ke(s), s.scrollTo(c.left, c.top));
+                  },
+                  onKeyDown: function(e, t, r) {
+                    var n = Ze.keyName(e);
+                    "Esc" == n ||
+                      "Ctrl-C" == n ||
+                      "Ctrl-[" == n ||
+                      ("Backspace" == n && "" == t)
+                      ? (K.searchHistoryController.pushInput(t),
+                        K.searchHistoryController.reset(),
+                        Ee(s, i),
+                        Ke(s),
+                        s.scrollTo(c.left, c.top),
+                        Ze.e_stop(e),
+                        P(s),
+                        r(),
+                        s.focus())
+                      : "Up" == n || "Down" == n
+                        ? Ze.e_stop(e)
+                        : "Ctrl-U" == n && (Ze.e_stop(e), r(""));
+                  },
+                });
               break;
-            case "operator":
-              this.processOperator(e, t, r);
-              break;
-            case "operatorMotion":
-              this.processOperatorMotion(e, t, r);
-              break;
-            case "action":
-              this.processAction(e, t, r);
-              break;
-            case "search":
-              this.processSearch(e, t, r);
-              break;
-            case "ex":
-            case "keyToEx":
-              this.processEx(e, t, r);
+            case "wordUnderCursor":
+              var a = ue(s, !1, 0, !1, !0),
+                u = !0;
+              if ((a || ((a = ue(s, !1, 0, !1, !1)), (u = !1)), !a)) return;
+              var h = s.getLine(a.start.line).substring(a.start.ch, a.end.ch);
+              (h =
+                u && e
+                  ? "\\b" + h + "\\b"
+                  : h.replace(/([.?*+$\[\]\/\\(){}|\-])/g, "\\$1")),
+                (K.jumpList.cachedCursor = s.getCursor()),
+                s.setCursor(a.start),
+                p(h, !0, !1);
           }
-        },
-        processMotion: function (e, t, r) {
-          (t.inputState.motion = r.motion),
-            (t.inputState.motionArgs = $(r.motionArgs)),
-            this.evalInput(e, t);
-        },
-        processOperator: function (e, t, r) {
-          var n = t.inputState;
-          if (n.operator) {
-            if (n.operator == r.operator)
-              return (
-                (n.motion = "expandToLine"),
-                (n.motionArgs = { linewise: !0 }),
-                void this.evalInput(e, t)
-              );
-            P(e);
+        }
+        function p(t, e, r) {
+          K.searchHistoryController.pushInput(t),
+            K.searchHistoryController.reset();
+          try {
+            Ee(s, t, e, r);
+          } catch (e) {
+            return Le(s, "Invalid regex: " + t), void P(s);
           }
-          (n.operator = r.operator),
-            (n.operatorArgs = $(r.operatorArgs)),
-            r.exitVisualBlock && ((t.visualBlock = !1), ae(e)),
-            t.visualMode && this.evalInput(e, t);
-        },
-        processOperatorMotion: function (e, t, r) {
-          var n = t.visualMode,
-            o = $(r.operatorMotionArgs);
-          o && n && o.visualLine && (t.visualLine = !0),
-            this.processOperator(e, t, r),
-            n || this.processMotion(e, t, r);
-        },
-        processAction: function (e, t, r) {
-          var n = t.inputState,
-            o = n.getRepeat(),
-            i = !!o,
-            a = $(r.actionArgs) || {};
-          n.selectedCharacter && (a.selectedCharacter = n.selectedCharacter),
-            r.operator && this.processOperator(e, t, r),
-            r.motion && this.processMotion(e, t, r),
-            (r.motion || r.operator) && this.evalInput(e, t),
-            (a.repeat = o || 1),
-            (a.repeatIsExplicit = i),
-            (a.registerName = n.registerName),
-            P(e),
-            (t.lastMotion = null),
-            r.isEdit && this.recordLastEdit(t, n, r),
-            U[r.action](e, a, t);
-        },
-        processSearch: function (s, n, o) {
-          if (s.getSearchCursor) {
-            var l = o.searchArgs.forward,
-              e = o.searchArgs.wholeWordOnly;
-            Ce(s).setReversed(!l);
-            var t = l ? "/" : "?",
-              i = Ce(s).getQuery(),
-              c = s.getScrollInfo();
-            switch (o.searchArgs.querySrc) {
-              case "prompt":
-                var r = K.macroModeState;
-                r.isPlaying
-                  ? p((h = r.replaySearchQueries.shift()), !0, !1)
-                  : Re(s, {
-                      onClose: function (e) {
-                        s.scrollTo(c.left, c.top), p(e, !0, !0);
-                        var t = K.macroModeState;
-                        t.isRecording &&
-                          (function (e, t) {
-                            if (e.isPlaying) return;
-                            var r = e.latestRegister,
-                              n = K.registerController.getRegister(r);
-                            n && n.pushSearchQuery && n.pushSearchQuery(t);
-                          })(t, e);
-                      },
-                      prefix: t,
-                      desc: Te,
-                      onKeyUp: function (e, t, r) {
-                        var n,
-                          o,
-                          i,
-                          a = Ze.keyName(e);
-                        "Up" == a || "Down" == a
-                          ? ((n = "Up" == a),
-                            (o = e.target ? e.target.selectionEnd : 0),
-                            r(
-                              (t =
-                                K.searchHistoryController.nextMatch(t, n) || "")
-                            ),
-                            o &&
-                              e.target &&
-                              (e.target.selectionEnd = e.target.selectionStart =
-                                Math.min(o, e.target.value.length)))
-                          : "Left" != a &&
-                            "Right" != a &&
-                            "Ctrl" != a &&
-                            "Alt" != a &&
-                            "Shift" != a &&
-                            K.searchHistoryController.reset();
-                        try {
-                          i = Ee(s, t, !0, !0);
-                        } catch (e) {}
-                        i
-                          ? s.scrollIntoView(Ie(s, !l, i), 30)
-                          : (Ke(s), s.scrollTo(c.left, c.top));
-                      },
-                      onKeyDown: function (e, t, r) {
-                        var n = Ze.keyName(e);
-                        "Esc" == n ||
-                        "Ctrl-C" == n ||
-                        "Ctrl-[" == n ||
-                        ("Backspace" == n && "" == t)
-                          ? (K.searchHistoryController.pushInput(t),
-                            K.searchHistoryController.reset(),
-                            Ee(s, i),
-                            Ke(s),
-                            s.scrollTo(c.left, c.top),
-                            Ze.e_stop(e),
-                            P(s),
-                            r(),
-                            s.focus())
-                          : "Up" == n || "Down" == n
-                          ? Ze.e_stop(e)
-                          : "Ctrl-U" == n && (Ze.e_stop(e), r(""));
-                      },
-                    });
-                break;
-              case "wordUnderCursor":
-                var a = ue(s, !1, 0, !1, !0),
-                  u = !0;
-                if ((a || ((a = ue(s, !1, 0, !1, !1)), (u = !1)), !a)) return;
-                var h = s.getLine(a.start.line).substring(a.start.ch, a.end.ch);
-                (h =
-                  u && e
-                    ? "\\b" + h + "\\b"
-                    : h.replace(/([.?*+$\[\]\/\\(){}|\-])/g, "\\$1")),
-                  (K.jumpList.cachedCursor = s.getCursor()),
-                  s.setCursor(a.start),
-                  p(h, !0, !1);
-            }
-          }
-          function p(t, e, r) {
-            K.searchHistoryController.pushInput(t),
-              K.searchHistoryController.reset();
-            try {
-              Ee(s, t, e, r);
-            } catch (e) {
-              return Le(s, "Invalid regex: " + t), void P(s);
-            }
-            F.processMotion(s, n, {
-              type: "motion",
-              motion: "findNext",
-              motionArgs: { forward: !0, toJumplist: o.searchArgs.toJumplist },
-            });
-          }
-        },
-        processEx: function (a, e, t) {
-          function r(e) {
-            K.exCommandHistoryController.pushInput(e),
-              K.exCommandHistoryController.reset(),
-              Fe.processCommand(a, e);
-          }
-          function n(e, t, r) {
-            var n,
-              o,
-              i = Ze.keyName(e);
-            ("Esc" == i ||
-              "Ctrl-C" == i ||
-              "Ctrl-[" == i ||
-              ("Backspace" == i && "" == t)) &&
-              (K.exCommandHistoryController.pushInput(t),
+          F.processMotion(s, n, {
+            type: "motion",
+            motion: "findNext",
+            motionArgs: { forward: !0, toJumplist: o.searchArgs.toJumplist },
+          });
+        }
+      },
+      processEx: function(a, e, t) {
+        function r(e) {
+          K.exCommandHistoryController.pushInput(e),
+            K.exCommandHistoryController.reset(),
+            Fe.processCommand(a, e);
+        }
+        function n(e, t, r) {
+          var n,
+            o,
+            i = Ze.keyName(e);
+          ("Esc" == i ||
+            "Ctrl-C" == i ||
+            "Ctrl-[" == i ||
+            ("Backspace" == i && "" == t)) &&
+            (K.exCommandHistoryController.pushInput(t),
               K.exCommandHistoryController.reset(),
               Ze.e_stop(e),
               P(a),
               r(),
               a.focus()),
-              "Up" == i || "Down" == i
-                ? (Ze.e_stop(e),
-                  (n = "Up" == i),
-                  (o = e.target ? e.target.selectionEnd : 0),
-                  r((t = K.exCommandHistoryController.nextMatch(t, n) || "")),
-                  o &&
-                    e.target &&
-                    (e.target.selectionEnd = e.target.selectionStart =
-                      Math.min(o, e.target.value.length)))
-                : "Ctrl-U" == i
+            "Up" == i || "Down" == i
+              ? (Ze.e_stop(e),
+                (n = "Up" == i),
+                (o = e.target ? e.target.selectionEnd : 0),
+                r((t = K.exCommandHistoryController.nextMatch(t, n) || "")),
+                o &&
+                e.target &&
+                (e.target.selectionEnd = e.target.selectionStart =
+                  Math.min(o, e.target.value.length)))
+              : "Ctrl-U" == i
                 ? (Ze.e_stop(e), r(""))
                 : "Left" != i &&
-                  "Right" != i &&
-                  "Ctrl" != i &&
-                  "Alt" != i &&
-                  "Shift" != i &&
-                  K.exCommandHistoryController.reset();
-          }
-          "keyToEx" == t.type
-            ? Fe.processCommand(a, t.exArgs.input)
-            : e.visualMode
+                "Right" != i &&
+                "Ctrl" != i &&
+                "Alt" != i &&
+                "Shift" != i &&
+                K.exCommandHistoryController.reset();
+        }
+        "keyToEx" == t.type
+          ? Fe.processCommand(a, t.exArgs.input)
+          : e.visualMode
             ? Re(a, {
-                onClose: r,
-                prefix: ":",
-                value: "'<,'>",
-                onKeyDown: n,
-                selectValueOnOpen: !1,
-              })
+              onClose: r,
+              prefix: ":",
+              value: "'<,'>",
+              onKeyDown: n,
+              selectValueOnOpen: !1,
+            })
             : Re(a, { onClose: r, prefix: ":", onKeyDown: n });
-        },
-        evalInput: function (e, t) {
-          var r,
-            n,
-            o,
-            i,
-            a,
-            s,
-            l,
-            c,
-            u,
-            h,
-            p,
-            f,
-            d = t.inputState,
-            m = d.motion,
-            g = d.motionArgs || {},
-            v = d.operator,
-            y = d.operatorArgs || {},
-            k = d.registerName,
-            C = t.sel,
-            w = z(t.visualMode ? J(e, C.head) : e.getCursor("head")),
-            x = z(t.visualMode ? J(e, C.anchor) : e.getCursor("anchor")),
-            M = z(w),
-            S = z(x);
-          if (
-            (v && this.recordLastEdit(t, d),
+      },
+      evalInput: function(e, t) {
+        var r,
+          n,
+          o,
+          i,
+          a,
+          s,
+          l,
+          c,
+          u,
+          h,
+          p,
+          f,
+          d = t.inputState,
+          m = d.motion,
+          g = d.motionArgs || {},
+          v = d.operator,
+          y = d.operatorArgs || {},
+          k = d.registerName,
+          C = t.sel,
+          w = z(t.visualMode ? J(e, C.head) : e.getCursor("head")),
+          x = z(t.visualMode ? J(e, C.anchor) : e.getCursor("anchor")),
+          M = z(w),
+          S = z(x);
+        if (
+          (v && this.recordLastEdit(t, d),
             0 <
               (n =
                 void 0 !== d.repeatOverride
@@ -1854,62 +1850,62 @@ type: application/javascript
                   : d.getRepeat()) && g.explicitRepeat
               ? (g.repeatIsExplicit = !0)
               : (g.noRepeat || (!g.explicitRepeat && 0 === n)) &&
-                ((n = 1), (g.repeatIsExplicit = !1)),
+              ((n = 1), (g.repeatIsExplicit = !1)),
             d.selectedCharacter &&
-              (g.selectedCharacter = y.selectedCharacter = d.selectedCharacter),
+            (g.selectedCharacter = y.selectedCharacter = d.selectedCharacter),
             (g.repeat = n),
             P(e),
             m)
-          ) {
-            var A,
-              b,
-              L = W[m](e, w, g, t, d);
-            if (((t.lastMotion = W[m]), !L)) return;
-            g.toJumplist &&
-              ((b = (A = K.jumpList).cachedCursor)
-                ? (he(e, b, L), delete A.cachedCursor)
-                : he(e, w, L)),
-              (s = (s = L instanceof Array ? ((r = L[0]), L[1]) : L) || z(w)),
-              t.visualMode
-                ? ((t.visualBlock && s.ch === 1 / 0) || (s = J(e, s)),
-                  (r = (r = r && J(e, r)) || S),
-                  (C.anchor = r),
-                  (C.head = s),
-                  ae(e),
-                  ve(e, t, "<", Z(r, s) ? r : s),
-                  ve(e, t, ">", Z(r, s) ? s : r))
-                : v || ((s = J(e, s)), e.setCursor(s.line, s.ch));
-          }
-          if (v) {
-            if (
-              (y.lastSel
-                ? ((r = S),
-                  (o = y.lastSel),
-                  (i = Math.abs(o.head.line - o.anchor.line)),
-                  (a = Math.abs(o.head.ch - o.anchor.ch)),
-                  (s = o.visualLine
-                    ? tt(S.line + i, S.ch)
-                    : o.visualBlock
+        ) {
+          var A,
+            b,
+            L = W[m](e, w, g, t, d);
+          if (((t.lastMotion = W[m]), !L)) return;
+          g.toJumplist &&
+            ((b = (A = K.jumpList).cachedCursor)
+              ? (he(e, b, L), delete A.cachedCursor)
+              : he(e, w, L)),
+            (s = (s = L instanceof Array ? ((r = L[0]), L[1]) : L) || z(w)),
+            t.visualMode
+              ? ((t.visualBlock && s.ch === 1 / 0) || (s = J(e, s)),
+                (r = (r = r && J(e, r)) || S),
+                (C.anchor = r),
+                (C.head = s),
+                ae(e),
+                ve(e, t, "<", Z(r, s) ? r : s),
+                ve(e, t, ">", Z(r, s) ? s : r))
+              : v || ((s = J(e, s)), e.setCursor(s.line, s.ch));
+        }
+        if (v) {
+          if (
+            (y.lastSel
+              ? ((r = S),
+                (o = y.lastSel),
+                (i = Math.abs(o.head.line - o.anchor.line)),
+                (a = Math.abs(o.head.ch - o.anchor.ch)),
+                (s = o.visualLine
+                  ? tt(S.line + i, S.ch)
+                  : o.visualBlock
                     ? tt(S.line + i, S.ch + a)
                     : o.head.line == o.anchor.line
-                    ? tt(S.line, S.ch + a)
-                    : tt(S.line + i, S.ch)),
-                  (t.visualMode = !0),
-                  (t.visualLine = o.visualLine),
-                  (t.visualBlock = o.visualBlock),
-                  (C = t.sel = { anchor: r, head: s }),
-                  ae(e))
-                : t.visualMode &&
-                  (y.lastSel = {
-                    anchor: z(C.anchor),
-                    head: z(C.head),
-                    visualBlock: t.visualBlock,
-                    visualLine: t.visualLine,
-                  }),
+                      ? tt(S.line, S.ch + a)
+                      : tt(S.line + i, S.ch)),
+                (t.visualMode = !0),
+                (t.visualLine = o.visualLine),
+                (t.visualBlock = o.visualBlock),
+                (C = t.sel = { anchor: r, head: s }),
+                ae(e))
+              : t.visualMode &&
+              (y.lastSel = {
+                anchor: z(C.anchor),
+                head: z(C.head),
+                visualBlock: t.visualBlock,
+                visualLine: t.visualLine,
+              }),
               t.visualMode)
-            ) {
-              if (
-                ((h = G(C.head, C.anchor)),
+          ) {
+            if (
+              ((h = G(C.head, C.anchor)),
                 (p = Y(C.head, C.anchor)),
                 (l = t.visualLine || y.linewise),
                 (E = se(
@@ -1918,79 +1914,79 @@ type: application/javascript
                   (c = t.visualBlock ? "block" : l ? "line" : "char")
                 )),
                 l)
-              ) {
-                var T = E.ranges;
-                if ("block" == c)
-                  for (var R = 0; R < T.length; R++)
-                    T[R].head.ch = te(e, T[R].head.line);
-                else "line" == c && (T[0].head = tt(T[0].head.line + 1, 0));
-              }
-            } else {
-              (h = z(r || S)),
-                Z((p = z(s || M)), h) && ((u = h), (h = p), (p = u)),
-                (l = g.linewise || y.linewise)
-                  ? ((f = p), (h.ch = 0), (f.ch = 0), f.line++)
-                  : g.forward &&
-                    (function (e, t, r) {
-                      var n = e.getRange(t, r);
-                      if (/\n\s*$/.test(n)) {
-                        var o = n.split("\n");
-                        o.pop();
-                        for (
-                          var i = o.pop();
-                          0 < o.length && i && B(i);
-                          i = o.pop()
-                        )
-                          r.line--, (r.ch = 0);
-                        i ? (r.line--, (r.ch = te(e, r.line))) : (r.ch = 0);
-                      }
-                    })(e, h, p);
-              var E = se(
-                e,
-                { anchor: h, head: p },
-                (c = "char"),
-                !g.inclusive || l
-              );
+            ) {
+              var T = E.ranges;
+              if ("block" == c)
+                for (var R = 0; R < T.length; R++)
+                  T[R].head.ch = te(e, T[R].head.line);
+              else "line" == c && (T[0].head = tt(T[0].head.line + 1, 0));
             }
-            e.setSelections(E.ranges, E.primary),
-              (t.lastMotion = null),
-              (y.repeat = n),
-              (y.registerName = k),
-              (y.linewise = l);
-            var O = D[v](e, y, E.ranges, S, s);
-            t.visualMode && le(e, null != O), O && e.setCursor(O);
+          } else {
+            (h = z(r || S)),
+              Z((p = z(s || M)), h) && ((u = h), (h = p), (p = u)),
+              (l = g.linewise || y.linewise)
+                ? ((f = p), (h.ch = 0), (f.ch = 0), f.line++)
+                : g.forward &&
+                (function(e, t, r) {
+                  var n = e.getRange(t, r);
+                  if (/\n\s*$/.test(n)) {
+                    var o = n.split("\n");
+                    o.pop();
+                    for (
+                      var i = o.pop();
+                      0 < o.length && i && B(i);
+                      i = o.pop()
+                    )
+                      r.line--, (r.ch = 0);
+                    i ? (r.line--, (r.ch = te(e, r.line))) : (r.ch = 0);
+                  }
+                })(e, h, p);
+            var E = se(
+              e,
+              { anchor: h, head: p },
+              (c = "char"),
+              !g.inclusive || l
+            );
           }
-        },
-        recordLastEdit: function (e, t, r) {
-          var n = K.macroModeState;
-          n.isPlaying ||
-            ((e.lastEditInputState = t),
+          e.setSelections(E.ranges, E.primary),
+            (t.lastMotion = null),
+            (y.repeat = n),
+            (y.registerName = k),
+            (y.linewise = l);
+          var O = D[v](e, y, E.ranges, S, s);
+          t.visualMode && le(e, null != O), O && e.setCursor(O);
+        }
+      },
+      recordLastEdit: function(e, t, r) {
+        var n = K.macroModeState;
+        n.isPlaying ||
+          ((e.lastEditInputState = t),
             (e.lastEditActionCommand = r),
             (n.lastInsertModeChanges.changes = []),
             (n.lastInsertModeChanges.expectCursorActivityForChange = !1),
             (n.lastInsertModeChanges.visualBlock = e.visualBlock
               ? e.sel.head.line - e.sel.anchor.line
               : 0));
-        },
       },
+    },
       W = {
-        moveToTopLine: function (e, t, r) {
+        moveToTopLine: function(e, t, r) {
           var n = Ne(e).top + r.repeat - 1;
           return tt(n, ce(e.getLine(n)));
         },
-        moveToMiddleLine: function (e) {
+        moveToMiddleLine: function(e) {
           var t = Ne(e),
             r = Math.floor(0.5 * (t.top + t.bottom));
           return tt(r, ce(e.getLine(r)));
         },
-        moveToBottomLine: function (e, t, r) {
+        moveToBottomLine: function(e, t, r) {
           var n = Ne(e).bottom - r.repeat + 1;
           return tt(n, ce(e.getLine(n)));
         },
-        expandToLine: function (e, t, r) {
+        expandToLine: function(e, t, r) {
           return tt(t.line + r.repeat - 1, 1 / 0);
         },
-        findNext: function (e, t, r) {
+        findNext: function(e, t, r) {
           var n = Ce(e),
             o = n.getQuery();
           if (o) {
@@ -1999,14 +1995,14 @@ type: application/javascript
             return Be(e, o), Ie(e, i, o, r.repeat);
           }
         },
-        findAndSelectNextInclusive: function (e, t, r, n, o) {
+        findAndSelectNextInclusive: function(e, t, r, n, o) {
           var i = Ce(e),
             a = i.getQuery();
           if (a) {
             var s = !r.forward,
-              l = (function (o, i, a, s, l) {
+              l = (function(o, i, a, s, l) {
                 void 0 === s && (s = 1);
-                return o.operation(function () {
+                return o.operation(function() {
                   var e = o.getCursor(),
                     t = o.getSearchCursor(a, e),
                     r = t.find(!i);
@@ -2030,11 +2026,11 @@ type: application/javascript
               if (n.visualMode) {
                 (n.visualLine || n.visualBlock) &&
                   ((n.visualLine = !1),
-                  (n.visualBlock = !1),
-                  Ze.signal(e, "vim-mode-change", {
-                    mode: "visual",
-                    subMode: "",
-                  }));
+                    (n.visualBlock = !1),
+                    Ze.signal(e, "vim-mode-change", {
+                      mode: "visual",
+                      subMode: "",
+                    }));
                 var h = n.sel.anchor;
                 if (h)
                   return i.isReversed()
@@ -2042,8 +2038,8 @@ type: application/javascript
                       ? [h, c]
                       : [h, u]
                     : r.forward
-                    ? [h, u]
-                    : [h, c];
+                      ? [h, u]
+                      : [h, c];
               } else
                 (n.visualMode = !0),
                   (n.visualLine = !1),
@@ -2056,7 +2052,7 @@ type: application/javascript
             }
           }
         },
-        goToMark: function (e, t, r, n) {
+        goToMark: function(e, t, r, n) {
           var o = Pe(e, n, r.selectedCharacter);
           return o
             ? r.linewise
@@ -2064,7 +2060,7 @@ type: application/javascript
               : o
             : null;
         },
-        moveToOtherHighlightedEnd: function (e, t, r, n) {
+        moveToOtherHighlightedEnd: function(e, t, r, n) {
           if (n.visualBlock && r.sameLine) {
             var o = n.sel;
             return [
@@ -2074,7 +2070,7 @@ type: application/javascript
           }
           return [n.sel.head, n.sel.anchor];
         },
-        jumpToMark: function (e, t, r, n) {
+        jumpToMark: function(e, t, r, n) {
           for (var o = t, i = 0; i < r.repeat; i++) {
             var a,
               s,
@@ -2083,21 +2079,21 @@ type: application/javascript
             for (var u in n.marks) {
               y(u) &&
                 ((a = n.marks[u].find()),
-                (r.forward ? Z(a, c) : Z(c, a)) ||
+                  (r.forward ? Z(a, c) : Z(c, a)) ||
                   (r.linewise && a.line == c.line) ||
                   ((s = X(c, o)),
-                  (l = r.forward ? ee(c, a, o) : ee(o, a, c)),
-                  (s || l) && (o = a)));
+                    (l = r.forward ? ee(c, a, o) : ee(o, a, c)),
+                    (s || l) && (o = a)));
             }
           }
           return r.linewise && (o = tt(o.line, ce(e.getLine(o.line)))), o;
         },
-        moveByCharacters: function (e, t, r) {
+        moveByCharacters: function(e, t, r) {
           var n = r.repeat,
             o = r.forward ? t.ch + n : t.ch - n;
           return tt(t.line, o);
         },
-        moveByLines: function (e, t, r, n) {
+        moveByLines: function(e, t, r, n) {
           var o = t,
             i = o.ch;
           switch (n.lastMotion) {
@@ -2121,13 +2117,13 @@ type: application/javascript
             s < l && o.line == l
               ? this.moveToStartOfLine(e, t, r, n)
               : c < s && o.line == c
-              ? me(e, t, r, n, !0)
-              : (r.toFirstChar && ((i = ce(e.getLine(s))), (n.lastHPos = i)),
-                (n.lastHSPos = e.charCoords(tt(s, i), "div").left),
-                tt(s, i))
+                ? me(e, t, r, n, !0)
+                : (r.toFirstChar && ((i = ce(e.getLine(s))), (n.lastHPos = i)),
+                  (n.lastHSPos = e.charCoords(tt(s, i), "div").left),
+                  tt(s, i))
           );
         },
-        moveByDisplayLines: function (e, t, r, n) {
+        moveByDisplayLines: function(e, t, r, n) {
           var o = t;
           switch (n.lastMotion) {
             case this.moveByDisplayLines:
@@ -2145,30 +2141,30 @@ type: application/javascript
             l = e.findPosV(o, r.forward ? s : -s, "line", n.lastHSPos);
           return (
             l.hitSide &&
-              (l = r.forward
-                ? ((i = {
-                    top: e.charCoords(l, "div").top + 8,
-                    left: n.lastHSPos,
-                  }),
-                  e.coordsChar(i, "div"))
-                : (((a = e.charCoords(tt(e.firstLine(), 0), "div")).left =
-                    n.lastHSPos),
-                  e.coordsChar(a, "div"))),
+            (l = r.forward
+              ? ((i = {
+                top: e.charCoords(l, "div").top + 8,
+                left: n.lastHSPos,
+              }),
+                e.coordsChar(i, "div"))
+              : (((a = e.charCoords(tt(e.firstLine(), 0), "div")).left =
+                n.lastHSPos),
+                e.coordsChar(a, "div"))),
             (n.lastHPos = l.ch),
             l
           );
         },
-        moveByPage: function (e, t, r) {
+        moveByPage: function(e, t, r) {
           var n = r.repeat;
           return e.findPosV(t, r.forward ? n : -n, "page");
         },
-        moveByParagraph: function (e, t, r) {
+        moveByParagraph: function(e, t, r) {
           var n = r.forward ? 1 : -1;
           return ye(e, t, r.repeat, n);
         },
-        moveBySentence: function (e, t, r) {
+        moveBySentence: function(e, t, r) {
           var n = r.forward ? 1 : -1;
-          return (function (e, t, r, n) {
+          return (function(e, t, r, n) {
             function u(e, t) {
               if (t.pos + t.dir < 0 || t.pos + t.dir >= t.line.length) {
                 if (((t.ln += t.dir), !v(e, t.ln)))
@@ -2178,77 +2174,77 @@ type: application/javascript
               } else t.pos += t.dir;
             }
             var o = { ln: t.line, pos: t.ch };
-            for (; 0 < r; )
+            for (; 0 < r;)
               (o = (
                 n < 0
-                  ? function (e, t, r, n) {
-                      var o = {
-                          line: (s = e.getLine(t)),
-                          ln: t,
-                          pos: r,
-                          dir: n,
-                        },
-                        i = { ln: o.ln, pos: null },
-                        a = "" === o.line;
-                      for (u(e, o); null !== o.line; ) {
-                        if ("" === o.line && !a)
-                          return null !== i.pos ? i : { ln: o.ln, pos: o.pos };
-                        if (
-                          C(o.line[o.pos]) &&
-                          null !== i.pos &&
-                          (o.ln !== i.ln || o.pos + 1 !== i.pos)
-                        )
-                          return i;
-                        "" === o.line ||
-                          B(o.line[o.pos]) ||
-                          ((a = !1), (i = { ln: o.ln, pos: o.pos })),
-                          u(e, o);
-                      }
-                      for (
-                        var s = e.getLine(i.ln), l = (i.pos = 0);
-                        l < s.length;
-                        ++l
+                  ? function(e, t, r, n) {
+                    var o = {
+                      line: (s = e.getLine(t)),
+                      ln: t,
+                      pos: r,
+                      dir: n,
+                    },
+                      i = { ln: o.ln, pos: null },
+                      a = "" === o.line;
+                    for (u(e, o); null !== o.line;) {
+                      if ("" === o.line && !a)
+                        return null !== i.pos ? i : { ln: o.ln, pos: o.pos };
+                      if (
+                        C(o.line[o.pos]) &&
+                        null !== i.pos &&
+                        (o.ln !== i.ln || o.pos + 1 !== i.pos)
                       )
-                        if (!B(s[l])) {
-                          i.pos = l;
-                          break;
-                        }
-                      return i;
+                        return i;
+                      "" === o.line ||
+                        B(o.line[o.pos]) ||
+                        ((a = !1), (i = { ln: o.ln, pos: o.pos })),
+                        u(e, o);
                     }
-                  : function (e, t, r, n) {
-                      var o = "" === (l = e.getLine(t)),
-                        i = { line: l, ln: t, pos: r, dir: n },
-                        a = { ln: i.ln, pos: i.pos },
-                        s = "" === i.line;
-                      for (u(e, i); null !== i.line; ) {
-                        if (
-                          ((a.ln = i.ln), (a.pos = i.pos), "" === i.line && !s)
-                        )
-                          return { ln: i.ln, pos: i.pos };
-                        if (o && "" !== i.line && !B(i.line[i.pos]))
-                          return { ln: i.ln, pos: i.pos };
-                        !C(i.line[i.pos]) ||
-                          o ||
-                          (i.pos !== i.line.length - 1 &&
-                            !B(i.line[i.pos + 1])) ||
-                          (o = !0),
-                          u(e, i);
+                    for (
+                      var s = e.getLine(i.ln), l = (i.pos = 0);
+                      l < s.length;
+                      ++l
+                    )
+                      if (!B(s[l])) {
+                        i.pos = l;
+                        break;
                       }
-                      var l = e.getLine(a.ln);
-                      a.pos = 0;
-                      for (var c = l.length - 1; 0 <= c; --c)
-                        if (!B(l[c])) {
-                          a.pos = c;
-                          break;
-                        }
-                      return a;
+                    return i;
+                  }
+                  : function(e, t, r, n) {
+                    var o = "" === (l = e.getLine(t)),
+                      i = { line: l, ln: t, pos: r, dir: n },
+                      a = { ln: i.ln, pos: i.pos },
+                      s = "" === i.line;
+                    for (u(e, i); null !== i.line;) {
+                      if (
+                        ((a.ln = i.ln), (a.pos = i.pos), "" === i.line && !s)
+                      )
+                        return { ln: i.ln, pos: i.pos };
+                      if (o && "" !== i.line && !B(i.line[i.pos]))
+                        return { ln: i.ln, pos: i.pos };
+                      !C(i.line[i.pos]) ||
+                        o ||
+                        (i.pos !== i.line.length - 1 &&
+                          !B(i.line[i.pos + 1])) ||
+                        (o = !0),
+                        u(e, i);
                     }
+                    var l = e.getLine(a.ln);
+                    a.pos = 0;
+                    for (var c = l.length - 1; 0 <= c; --c)
+                      if (!B(l[c])) {
+                        a.pos = c;
+                        break;
+                      }
+                    return a;
+                  }
               )(e, o.ln, o.pos, n)),
                 r--;
             return tt(o.ln, o.pos);
           })(e, t, r.repeat, n);
         },
-        moveByScroll: function (e, t, r, n) {
+        moveByScroll: function(e, t, r, n) {
           var o = e.getScrollInfo(),
             i = null,
             a = (a = r.repeat) || o.clientHeight / (2 * e.defaultTextHeight()),
@@ -2258,13 +2254,13 @@ type: application/javascript
           var l = e.charCoords(i, "local");
           return e.scrollTo(null, o.top + l.top - s.top), i;
         },
-        moveByWords: function (e, t, r) {
-          return (function (e, t, r, n, o, i) {
+        moveByWords: function(e, t, r) {
+          return (function(e, t, r, n, o, i) {
             var a = z(t),
               s = [];
             ((n && !o) || (!n && o)) && r++;
             for (var l = !(n && o), c = 0; c < r; c++) {
-              var u = (function (e, t, r, n, o) {
+              var u = (function(e, t, r, n, o) {
                 var i = t.line,
                   a = t.ch,
                   s = e.getLine(i),
@@ -2274,15 +2270,15 @@ type: application/javascript
                   if (((i += l), (s = e.getLine(i)), !v(e, i))) return null;
                   a = r ? 0 : s.length;
                 }
-                for (;;) {
+                for (; ;) {
                   if (o && "" == s) return { from: 0, to: 0, line: i };
-                  for (var u = 0 < l ? s.length : -1, h = u, p = u; a != u; ) {
+                  for (var u = 0 < l ? s.length : -1, h = u, p = u; a != u;) {
                     for (var f = !1, d = 0; d < c.length && !f; ++d)
                       if (c[d](s.charAt(a))) {
-                        for (h = a; a != u && c[d](s.charAt(a)); ) a += l;
+                        for (h = a; a != u && c[d](s.charAt(a));) a += l;
                         if (
                           ((f = h != (p = a)),
-                          h == t.ch && i == t.line && p == h + l)
+                            h == t.ch && i == t.line && p == h + l)
                         )
                           continue;
                         return {
@@ -2315,25 +2311,25 @@ type: application/javascript
               ? (p || (f.from == a.ch && f.line == a.line) || (d = s.pop()),
                 tt(d.line, d.from))
               : n && o
-              ? tt(d.line, d.to - 1)
-              : !n && o
-              ? (p || (f.to == a.ch && f.line == a.line) || (d = s.pop()),
-                tt(d.line, d.to))
-              : tt(d.line, d.from);
+                ? tt(d.line, d.to - 1)
+                : !n && o
+                  ? (p || (f.to == a.ch && f.line == a.line) || (d = s.pop()),
+                    tt(d.line, d.to))
+                  : tt(d.line, d.from);
           })(e, t, r.repeat, !!r.forward, !!r.wordEnd, !!r.bigWord);
         },
-        moveTillCharacter: function (e, t, r) {
+        moveTillCharacter: function(e, t, r) {
           var n = ge(e, r.repeat, r.forward, r.selectedCharacter),
             o = r.forward ? -1 : 1;
           return pe(o, r), n ? ((n.ch += o), n) : null;
         },
-        moveToCharacter: function (e, t, r) {
+        moveToCharacter: function(e, t, r) {
           var n = r.repeat;
           return pe(0, r), ge(e, n, r.forward, r.selectedCharacter) || t;
         },
-        moveToSymbol: function (e, t, r) {
+        moveToSymbol: function(e, t, r) {
           return (
-            (function (e, t, r, n) {
+            (function(e, t, r, n) {
               var o = z(e.getCursor()),
                 i = r ? 1 : -1,
                 a = r ? e.lineCount() : -1,
@@ -2358,12 +2354,12 @@ type: application/javascript
               var p = de[h].init,
                 f = de[h].isComplete;
               p && p(u);
-              for (; l !== a && t; ) {
+              for (; l !== a && t;) {
                 var d;
                 (u.index += i),
                   (u.nextCh = u.lineText.charAt(u.index)),
                   u.nextCh ||
-                    ((l += i),
+                  ((l += i),
                     (u.lineText = e.getLine(l) || ""),
                     0 < i
                       ? (u.index = 0)
@@ -2377,7 +2373,7 @@ type: application/javascript
             })(e, r.repeat, r.forward, r.selectedCharacter) || t
           );
         },
-        moveToColumn: function (e, t, r, n) {
+        moveToColumn: function(e, t, r, n) {
           var o,
             i,
             a,
@@ -2390,13 +2386,13 @@ type: application/javascript
             J(o, tt(a, i - 1))
           );
         },
-        moveToEol: function (e, t, r, n) {
+        moveToEol: function(e, t, r, n) {
           return me(e, t, r, n, !1);
         },
-        moveToFirstNonWhiteSpaceCharacter: function (e, t) {
+        moveToFirstNonWhiteSpaceCharacter: function(e, t) {
           return tt(t.line, ce(e.getLine(t.line)));
         },
-        moveToMatchedSymbol: function (e, t) {
+        moveToMatchedSymbol: function(e, t) {
           for (
             var r, n = t, o = n.line, i = n.ch, a = e.getLine(o);
             i < a.length;
@@ -2412,18 +2408,18 @@ type: application/javascript
           }
           return n;
         },
-        moveToStartOfLine: function (e, t) {
+        moveToStartOfLine: function(e, t) {
           return tt(t.line, 0);
         },
-        moveToLineOrEdgeOfDocument: function (e, t, r) {
+        moveToLineOrEdgeOfDocument: function(e, t, r) {
           var n = r.forward ? e.lastLine() : e.firstLine();
           return (
             r.repeatIsExplicit &&
-              (n = r.repeat - e.getOption("firstLineNumber")),
+            (n = r.repeat - e.getOption("firstLineNumber")),
             tt(n, ce(e.getLine(n)))
           );
         },
-        textObjectManipulation: function (e, t, r, n) {
+        textObjectManipulation: function(e, t, r, n) {
           var o = r.selectedCharacter;
           "b" == o ? (o = "(") : "B" == o && (o = "{");
           var i = !r.textObjectInner;
@@ -2439,7 +2435,7 @@ type: application/javascript
               ">": "<",
             }[o]
           )
-            s = (function (e, t, r, n) {
+            s = (function(e, t, r, n) {
               var o,
                 i,
                 a = t,
@@ -2468,10 +2464,10 @@ type: application/javascript
                 ((o = e.scanForBracket(tt(a.line, a.ch + c), -1, void 0, {
                   bracketRegex: s,
                 })),
-                (i = e.scanForBracket(tt(a.line, a.ch + c), 1, void 0, {
-                  bracketRegex: s,
-                })),
-                !o || !i)
+                  (i = e.scanForBracket(tt(a.line, a.ch + c), 1, void 0, {
+                    bracketRegex: s,
+                  })),
+                  !o || !i)
               )
                 return { start: a, end: a };
               {
@@ -2479,13 +2475,13 @@ type: application/javascript
                 (o = o.pos),
                   (i = i.pos),
                   ((o.line == i.line && o.ch > i.ch) || o.line > i.line) &&
-                    ((u = o), (o = i), (i = u));
+                  ((u = o), (o = i), (i = u));
               }
               n ? (i.ch += 1) : (o.ch += 1);
               return { start: o, end: i };
             })(e, t, o, i);
           else if ({ "'": !0, '"': !0, "`": !0 }[o])
-            s = (function (e, t, r, n) {
+            s = (function(e, t, r, n) {
               var o,
                 i,
                 a,
@@ -2518,7 +2514,7 @@ type: application/javascript
                   s.end.line--);
           } else {
             if ("t" !== o) return null;
-            s = (function (e, t, r) {
+            s = (function(e, t, r) {
               var n = t;
               if (!Ze.findMatchingTag || !Ze.findEnclosingTag)
                 return { start: n, end: n };
@@ -2529,23 +2525,23 @@ type: application/javascript
             })(e, t, i);
           }
           return e.state.vim.visualMode
-            ? (function (e, t, r) {
-                var n,
-                  o = e.state.vim.sel,
-                  i = o.head,
-                  a = o.anchor;
-                Z(r, t) && ((n = r), (r = t), (t = n));
-                Z(i, a)
-                  ? ((i = G(t, i)), (a = Y(a, r)))
-                  : ((a = G(t, a)),
-                    -1 == (i = q((i = Y(i, r)), 0, -1)).ch &&
-                      i.line != e.firstLine() &&
-                      (i = tt(i.line - 1, te(e, i.line - 1))));
-                return [a, i];
-              })(e, s.start, s.end)
+            ? (function(e, t, r) {
+              var n,
+                o = e.state.vim.sel,
+                i = o.head,
+                a = o.anchor;
+              Z(r, t) && ((n = r), (r = t), (t = n));
+              Z(i, a)
+                ? ((i = G(t, i)), (a = Y(a, r)))
+                : ((a = G(t, a)),
+                  -1 == (i = q((i = Y(i, r)), 0, -1)).ch &&
+                  i.line != e.firstLine() &&
+                  (i = tt(i.line - 1, te(e, i.line - 1))));
+              return [a, i];
+            })(e, s.start, s.end)
             : [s.start, s.end];
         },
-        repeatLastCharacterSearch: function (e, t, r) {
+        repeatLastCharacterSearch: function(e, t, r) {
           var n = K.lastCharacterSearch,
             o = r.repeat,
             i = r.forward === n.forward,
@@ -2560,7 +2556,7 @@ type: application/javascript
       return r;
     }
     var D = {
-      change: function (e, t, r) {
+      change: function(e, t, r) {
         var n,
           o,
           i,
@@ -2584,11 +2580,11 @@ type: application/javascript
                 G(r[0].head, r[0].anchor))
             : ((n = e.getRange(u, h)),
               "moveByWords" != (i = c.lastEditInputState || {}).motion ||
-                B(n) ||
-                ((a = /\s+$/.exec(n)) &&
-                  i.motionArgs &&
-                  i.motionArgs.forward &&
-                  ((h = q(h, 0, -a[0].length)),
+              B(n) ||
+              ((a = /\s+$/.exec(n)) &&
+                i.motionArgs &&
+                i.motionArgs.forward &&
+                ((h = q(h, 0, -a[0].length)),
                   (n = n.slice(0, -a[0].length)))),
               (s = new tt(u.line - 1, Number.MAX_VALUE)),
               (l = e.firstLine() == e.lastLine()),
@@ -2596,7 +2592,7 @@ type: application/javascript
                 ? e.replaceRange("", s, h)
                 : e.replaceRange("", u, h),
               t.linewise &&
-                (l || (e.setCursor(s), Ze.commands.newlineAndIndent(e)),
+              (l || (e.setCursor(s), Ze.commands.newlineAndIndent(e)),
                 (u.ch = Number.MAX_VALUE)),
               u);
         K.registerController.pushText(
@@ -2608,7 +2604,7 @@ type: application/javascript
         ),
           U.enterInsertMode(e, { head: p }, e.state.vim);
       },
-      delete: function (e, t, r) {
+      delete: function(e, t, r) {
         var n,
           o,
           i,
@@ -2624,12 +2620,12 @@ type: application/javascript
             : ((a = r[0].anchor),
               (s = r[0].head),
               t.linewise &&
-                s.line != e.firstLine() &&
-                a.line == e.lastLine() &&
-                a.line == s.line - 1 &&
-                (a.line == e.firstLine()
-                  ? (a.ch = 0)
-                  : (a = tt(a.line - 1, te(e, a.line - 1)))),
+              s.line != e.firstLine() &&
+              a.line == e.lastLine() &&
+              a.line == s.line - 1 &&
+              (a.line == e.firstLine()
+                ? (a.ch = 0)
+                : (a = tt(a.line - 1, te(e, a.line - 1)))),
               (o = e.getRange(a, s)),
               e.replaceRange("", a, s),
               (n = a),
@@ -2644,7 +2640,7 @@ type: application/javascript
           J(e, n)
         );
       },
-      indent: function (e, t, r) {
+      indent: function(e, t, r) {
         var n = e.state.vim,
           o = r[0].anchor.line,
           i = n.visualBlock ? r[r.length - 1].anchor.line : r[0].head.line,
@@ -2654,13 +2650,13 @@ type: application/javascript
           for (var l = 0; l < a; l++) e.indentLine(s, t.indentRight);
         return W.moveToFirstNonWhiteSpaceCharacter(e, r[0].anchor);
       },
-      indentAuto: function (e, t, r) {
+      indentAuto: function(e, t, r) {
         return (
           e.execCommand("indentAuto"),
           W.moveToFirstNonWhiteSpaceCharacter(e, r[0].anchor)
         );
       },
-      changeCase: function (e, t, r, n, o) {
+      changeCase: function(e, t, r, n, o) {
         for (
           var i = e.getSelections(), a = [], s = t.toLower, l = 0;
           l < i.length;
@@ -2684,13 +2680,13 @@ type: application/javascript
             : !e.state.vim.visualMode &&
               t.linewise &&
               r[0].anchor.line + 1 == r[0].head.line
-            ? W.moveToFirstNonWhiteSpaceCharacter(e, n)
-            : t.linewise
-            ? n
-            : G(r[0].anchor, r[0].head)
+              ? W.moveToFirstNonWhiteSpaceCharacter(e, n)
+              : t.linewise
+                ? n
+                : G(r[0].anchor, r[0].head)
         );
       },
-      yank: function (e, t, r, n) {
+      yank: function(e, t, r, n) {
         var o = e.state.vim,
           i = e.getSelection(),
           a = o.visualMode
@@ -2709,43 +2705,43 @@ type: application/javascript
       },
     };
     var U = {
-      jumpListWalk: function (e, t, r) {
+      jumpListWalk: function(e, t, r) {
         var n, o, i, a;
         r.visualMode ||
           ((n = t.repeat),
-          (o = t.forward),
-          (a =
-            (a = (i = K.jumpList.move(e, o ? n : -n)) ? i.find() : void 0) ||
-            e.getCursor()),
-          e.setCursor(a));
+            (o = t.forward),
+            (a =
+              (a = (i = K.jumpList.move(e, o ? n : -n)) ? i.find() : void 0) ||
+              e.getCursor()),
+            e.setCursor(a));
       },
-      scroll: function (e, t, r) {
+      scroll: function(e, t, r) {
         var n, o, i, a, s, l, c, u;
         r.visualMode ||
           ((n = t.repeat || 1),
-          (o = e.defaultTextHeight()),
-          (i = e.getScrollInfo().top),
-          (a = o * n),
-          (s = t.forward ? i + a : i - a),
-          (l = z(e.getCursor())),
-          (c = e.charCoords(l, "local")),
-          t.forward
-            ? s > c.top
-              ? ((l.line += (s - c.top) / o),
-                (l.line = Math.ceil(l.line)),
-                e.setCursor(l),
-                (c = e.charCoords(l, "local")),
-                e.scrollTo(null, c.top))
-              : e.scrollTo(null, s)
-            : (u = s + e.getScrollInfo().clientHeight) < c.bottom
-            ? ((l.line -= (c.bottom - u) / o),
-              (l.line = Math.floor(l.line)),
-              e.setCursor(l),
-              (c = e.charCoords(l, "local")),
-              e.scrollTo(null, c.bottom - e.getScrollInfo().clientHeight))
-            : e.scrollTo(null, s));
+            (o = e.defaultTextHeight()),
+            (i = e.getScrollInfo().top),
+            (a = o * n),
+            (s = t.forward ? i + a : i - a),
+            (l = z(e.getCursor())),
+            (c = e.charCoords(l, "local")),
+            t.forward
+              ? s > c.top
+                ? ((l.line += (s - c.top) / o),
+                  (l.line = Math.ceil(l.line)),
+                  e.setCursor(l),
+                  (c = e.charCoords(l, "local")),
+                  e.scrollTo(null, c.top))
+                : e.scrollTo(null, s)
+              : (u = s + e.getScrollInfo().clientHeight) < c.bottom
+                ? ((l.line -= (c.bottom - u) / o),
+                  (l.line = Math.floor(l.line)),
+                  e.setCursor(l),
+                  (c = e.charCoords(l, "local")),
+                  e.scrollTo(null, c.bottom - e.getScrollInfo().clientHeight))
+                : e.scrollTo(null, s));
       },
-      scrollToCursor: function (e, t) {
+      scrollToCursor: function(e, t) {
         var r = e.getCursor().line,
           n = e.charCoords(tt(r, 0), "local"),
           o = e.getScrollInfo().clientHeight,
@@ -2760,12 +2756,12 @@ type: application/javascript
         }
         e.scrollTo(null, i);
       },
-      replayMacro: function (e, t, r) {
+      replayMacro: function(e, t, r) {
         var n = t.selectedCharacter,
           o = t.repeat,
           i = K.macroModeState;
-        for ("@" == n ? (n = i.latestRegister) : (i.latestRegister = n); o--; )
-          !(function (e, t, r, n) {
+        for ("@" == n ? (n = i.latestRegister) : (i.latestRegister = n); o--;)
+          !(function(e, t, r, n) {
             var o = K.registerController.getRegister(n);
             if (":" == n)
               return (
@@ -2777,13 +2773,13 @@ type: application/javascript
             (r.isPlaying = !0),
               (r.replaySearchQueries = o.searchQueries.slice(0));
             for (var s, l, c = 0; c < i.length; c++)
-              for (var u, h = i[c]; h; ) {
+              for (var u, h = i[c]; h;) {
                 (s = /<\w+-.+?>|<\w+>|./.exec(h)),
                   (l = s[0]),
                   (h = h.substring(s.index + l.length)),
                   Ze.Vim.handleKey(e, l, "macro"),
                   t.insertMode &&
-                    ((u = o.insertModeChanges[a++].changes),
+                  ((u = o.insertModeChanges[a++].changes),
                     (K.macroModeState.lastInsertModeChanges.changes = u),
                     Xe(e, u, 1),
                     We(e));
@@ -2791,12 +2787,12 @@ type: application/javascript
             r.isPlaying = !1;
           })(e, r, i, n);
       },
-      enterMacroRecordMode: function (e, t) {
+      enterMacroRecordMode: function(e, t) {
         var r = K.macroModeState,
           n = t.selectedCharacter;
         K.registerController.isValidRegister(n) && r.enterMacroRecordMode(e, n);
       },
-      toggleOverwrite: function (e) {
+      toggleOverwrite: function(e) {
         e.state.overwrite
           ? (e.toggleOverwrite(!1),
             e.setOption("keyMap", "vim-insert"),
@@ -2805,7 +2801,7 @@ type: application/javascript
             e.setOption("keyMap", "vim-replace"),
             Ze.signal(e, "vim-mode-change", { mode: "replace" }));
       },
-      enterInsertMode: function (e, t, r) {
+      enterInsertMode: function(e, t, r) {
         if (!e.getOption("readOnly")) {
           (r.insertMode = !0), (r.insertModeRepeat = (t && t.repeat) || 1);
           var n = t ? t.insertAt : null,
@@ -2821,24 +2817,24 @@ type: application/javascript
             if (!r.visualMode) return;
             r.visualBlock
               ? ((i = tt(
-                  Math.min(o.head.line, o.anchor.line),
-                  Math.min(o.head.ch, o.anchor.ch)
-                )),
+                Math.min(o.head.line, o.anchor.line),
+                Math.min(o.head.ch, o.anchor.ch)
+              )),
                 (a = Math.abs(o.head.line - o.anchor.line) + 1))
               : (i =
-                  o.head.line < o.anchor.line ? o.head : tt(o.anchor.line, 0));
+                o.head.line < o.anchor.line ? o.head : tt(o.anchor.line, 0));
           } else if ("endOfSelectedArea" == n) {
             if (!r.visualMode) return;
             r.visualBlock
               ? ((i = tt(
-                  Math.min(o.head.line, o.anchor.line),
-                  Math.max(o.head.ch + 1, o.anchor.ch)
-                )),
+                Math.min(o.head.line, o.anchor.line),
+                Math.max(o.head.ch + 1, o.anchor.ch)
+              )),
                 (a = Math.abs(o.head.line - o.anchor.line) + 1))
               : (i =
-                  o.head.line >= o.anchor.line
-                    ? q(o.head, 0, 1)
-                    : tt(o.anchor.line, 0));
+                o.head.line >= o.anchor.line
+                  ? q(o.head, 0, 1)
+                  : tt(o.anchor.line, 0));
           } else if ("inplace" == n) {
             if (r.visualMode) return;
           } else "lastEdit" == n && (i = _e(e) || i);
@@ -2851,12 +2847,12 @@ type: application/javascript
                 e.setOption("keyMap", "vim-insert"),
                 Ze.signal(e, "vim-mode-change", { mode: "insert" })),
             K.macroModeState.isPlaying ||
-              (e.on("change", De), Ze.on(e.getInputField(), "keydown", Qe)),
+            (e.on("change", De), Ze.on(e.getInputField(), "keydown", Qe)),
             r.visualMode && le(e),
             oe(e, i, a);
         }
       },
-      toggleVisualMode: function (e, t, r) {
+      toggleVisualMode: function(e, t, r) {
         var n,
           o = t.repeat,
           i = e.getCursor();
@@ -2869,8 +2865,8 @@ type: application/javascript
                 subMode: r.visualLine
                   ? "linewise"
                   : r.visualBlock
-                  ? "blockwise"
-                  : "",
+                    ? "blockwise"
+                    : "",
               }),
               ae(e))
             : le(e)
@@ -2884,14 +2880,14 @@ type: application/javascript
               subMode: r.visualLine
                 ? "linewise"
                 : r.visualBlock
-                ? "blockwise"
-                : "",
+                  ? "blockwise"
+                  : "",
             }),
             ae(e),
             ve(e, r, "<", G(i, n)),
             ve(e, r, ">", Y(i, n)));
       },
-      reselectLastSelection: function (e, t, r) {
+      reselectLastSelection: function(e, t, r) {
         var n = r.lastSelection;
         if ((r.visualMode && ie(e, r), n)) {
           var o = n.anchorMark.find(),
@@ -2909,12 +2905,12 @@ type: application/javascript
               subMode: r.visualLine
                 ? "linewise"
                 : r.visualBlock
-                ? "blockwise"
-                : "",
+                  ? "blockwise"
+                  : "",
             });
         }
       },
-      joinLines: function (e, t, r) {
+      joinLines: function(e, t, r) {
         var n, o, i;
         r.visualMode
           ? ((o = e.getCursor("anchor")),
@@ -2935,7 +2931,7 @@ type: application/javascript
         var u = tt(o.line, a);
         r.visualMode && le(e, !1), e.setCursor(u);
       },
-      newLineAndEnterInsertMode: function (e, t, r) {
+      newLineAndEnterInsertMode: function(e, t, r) {
         r.insertMode = !0;
         var n = z(e.getCursor());
         n.line !== e.firstLine() || t.after
@@ -2950,7 +2946,7 @@ type: application/javascript
             e.setCursor(e.firstLine(), 0)),
           this.enterInsertMode(e, { repeat: t.repeat }, r);
       },
-      paste: function (n, e, t) {
+      paste: function(n, e, t) {
         var o,
           i,
           r,
@@ -2964,26 +2960,26 @@ type: application/javascript
         if (p) {
           e.matchIndent &&
             ((o = n.getOption("tabSize")),
-            (i = function (e) {
-              var t = e.split("\t").length - 1,
-                r = e.split(" ").length - 1;
-              return t * o + r;
-            }),
-            (r = n.getLine(n.getCursor().line)),
-            (a = i(r.match(/^\s*/)[0])),
-            (s = p.replace(/\n$/, "")),
-            (l = p !== s),
-            (c = i(p.match(/^\s*/)[0])),
-            (p = s.replace(/^\s*/gm, function (e) {
-              var t = a + (i(e) - c);
-              if (t < 0) return "";
-              if (n.getOption("indentWithTabs")) {
-                var r = Math.floor(t / o);
-                return Array(r + 1).join("\t");
-              }
-              return Array(t + 1).join(" ");
-            })),
-            (p += l ? "\n" : "")),
+              (i = function(e) {
+                var t = e.split("\t").length - 1,
+                  r = e.split(" ").length - 1;
+                return t * o + r;
+              }),
+              (r = n.getLine(n.getCursor().line)),
+              (a = i(r.match(/^\s*/)[0])),
+              (s = p.replace(/\n$/, "")),
+              (l = p !== s),
+              (c = i(p.match(/^\s*/)[0])),
+              (p = s.replace(/^\s*/gm, function(e) {
+                var t = a + (i(e) - c);
+                if (t < 0) return "";
+                if (n.getOption("indentWithTabs")) {
+                  var r = Math.floor(t / o);
+                  return Array(r + 1).join("\t");
+                }
+                return Array(t + 1).join(" ");
+              })),
+              (p += l ? "\n" : "")),
             1 < e.repeat && (p = Array(e.repeat + 1).join(p));
           var f,
             d,
@@ -3006,59 +3002,59 @@ type: application/javascript
             S
               ? t.visualMode
                 ? (p = t.visualLine
-                    ? p.slice(0, -1)
-                    : "\n" + p.slice(0, p.length - 1) + "\n")
+                  ? p.slice(0, -1)
+                  : "\n" + p.slice(0, p.length - 1) + "\n")
                 : e.after
-                ? ((p = "\n" + p.slice(0, p.length - 1)),
-                  (u.ch = te(n, u.line)))
-                : (u.ch = 0)
+                  ? ((p = "\n" + p.slice(0, p.length - 1)),
+                    (u.ch = te(n, u.line)))
+                  : (u.ch = 0)
               : (u.ch += e.after ? 1 : 0);
           if (t.visualMode) {
             t.lastPastedText = p;
             var L =
-                ((w = n),
+              ((w = n),
                 (M = (x = t).lastSelection),
                 (x.visualMode
-                  ? function () {
-                      var e = w.listSelections(),
-                        t = e[0],
-                        r = e[e.length - 1];
-                      return [
-                        Z(t.anchor, t.head) ? t.anchor : t.head,
-                        Z(r.anchor, r.head) ? r.head : r.anchor,
-                      ];
-                    }
-                  : function () {
-                      var e = w.getCursor(),
-                        t = w.getCursor(),
-                        r = M.visualBlock;
-                      if (r) {
-                        for (
-                          var n = r.width,
-                            o = r.height,
-                            t = tt(e.line + o, e.ch + n),
-                            i = [],
-                            a = e.line;
-                          a < t.line;
-                          a++
-                        ) {
-                          var s = { anchor: tt(a, e.ch), head: tt(a, t.ch) };
-                          i.push(s);
-                        }
-                        w.setSelections(i);
-                      } else {
-                        var l = M.anchorMark.find(),
-                          c = M.headMark.find(),
-                          u = c.line - l.line,
-                          h = c.ch - l.ch;
-                        (t = { line: t.line + u, ch: u ? t.ch : h + t.ch }),
-                          M.visualLine &&
-                            ((e = tt(e.line, 0)),
-                            (t = tt(t.line, te(w, t.line)))),
-                          w.setSelection(e, t);
+                  ? function() {
+                    var e = w.listSelections(),
+                      t = e[0],
+                      r = e[e.length - 1];
+                    return [
+                      Z(t.anchor, t.head) ? t.anchor : t.head,
+                      Z(r.anchor, r.head) ? r.head : r.anchor,
+                    ];
+                  }
+                  : function() {
+                    var e = w.getCursor(),
+                      t = w.getCursor(),
+                      r = M.visualBlock;
+                    if (r) {
+                      for (
+                        var n = r.width,
+                        o = r.height,
+                        t = tt(e.line + o, e.ch + n),
+                        i = [],
+                        a = e.line;
+                        a < t.line;
+                        a++
+                      ) {
+                        var s = { anchor: tt(a, e.ch), head: tt(a, t.ch) };
+                        i.push(s);
                       }
-                      return [e, t];
-                    })()),
+                      w.setSelections(i);
+                    } else {
+                      var l = M.anchorMark.find(),
+                        c = M.headMark.find(),
+                        u = c.line - l.line,
+                        h = c.ch - l.ch;
+                      (t = { line: t.line + u, ch: u ? t.ch : h + t.ch }),
+                        M.visualLine &&
+                        ((e = tt(e.line, 0)),
+                          (t = tt(t.line, te(w, t.line)))),
+                        w.setSelection(e, t);
+                    }
+                    return [e, t];
+                  })()),
               T = L[0],
               R = L[1],
               E = n.getSelection(),
@@ -3074,12 +3070,12 @@ type: application/javascript
                   n.replaceSelections(p),
                   T)
                 : t.visualBlock
-                ? (n.replaceSelections(B),
-                  n.setCursor(T),
-                  n.replaceRange(p, T, T),
-                  T)
-                : (n.replaceRange(p, T, R),
-                  n.posFromIndex(n.indexFromPos(T) + p.length - 1))),
+                  ? (n.replaceSelections(B),
+                    n.setCursor(T),
+                    n.replaceRange(p, T, T),
+                    T)
+                  : (n.replaceRange(p, T, R),
+                    n.posFromIndex(n.indexFromPos(T) + p.length - 1))),
               m && (t.lastSelection.headMark = n.setBookmark(m)),
               S && (f.ch = 0);
           } else if (A) {
@@ -3088,7 +3084,7 @@ type: application/javascript
               var I = u.line + b;
               I > n.lastLine() && n.replaceRange("\n", tt(I, 0)),
                 te(n, I) < u.ch &&
-                  ((g = n),
+                ((g = n),
                   (v = I),
                   (y = u.ch),
                   0,
@@ -3107,29 +3103,29 @@ type: application/javascript
                 S && e.after
                   ? tt(u.line + 1, ce(n.getLine(u.line + 1)))
                   : S && !e.after
-                  ? tt(u.line, ce(n.getLine(u.line)))
-                  : !S && e.after
-                  ? ((d = n.indexFromPos(u)), n.posFromIndex(d + p.length - 1))
-                  : ((d = n.indexFromPos(u)), n.posFromIndex(d + p.length)));
+                    ? tt(u.line, ce(n.getLine(u.line)))
+                    : !S && e.after
+                      ? ((d = n.indexFromPos(u)), n.posFromIndex(d + p.length - 1))
+                      : ((d = n.indexFromPos(u)), n.posFromIndex(d + p.length)));
           t.visualMode && le(n, !1), n.setCursor(f);
         }
       },
-      undo: function (e, t) {
-        e.operation(function () {
+      undo: function(e, t) {
+        e.operation(function() {
           Q(e, Ze.commands.undo, t.repeat)(),
             e.setCursor(e.getCursor("anchor"));
         });
       },
-      redo: function (e, t) {
+      redo: function(e, t) {
         Q(e, Ze.commands.redo, t.repeat)();
       },
-      setRegister: function (e, t, r) {
+      setRegister: function(e, t, r) {
         r.inputState.registerName = t.selectedCharacter;
       },
-      setMark: function (e, t, r) {
+      setMark: function(e, t, r) {
         ve(e, r, t.selectedCharacter, e.getCursor());
       },
-      replace: function (e, t, r) {
+      replace: function(e, t, r) {
         var n,
           o,
           i,
@@ -3163,22 +3159,22 @@ type: application/javascript
                 le(e, !1))
               : e.setCursor(q(u, 0, -1)));
       },
-      incrementNumberToken: function (e, t) {
+      incrementNumberToken: function(e, t) {
         for (
           var r,
-            n,
-            o,
-            i,
-            a,
-            s,
-            l,
-            c,
-            u,
-            h,
-            p,
-            f = e.getCursor(),
-            d = e.getLine(f.line),
-            m = /(-?)(?:(0x)([\da-f]+)|(0b|0|)(\d+))/gi;
+          n,
+          o,
+          i,
+          a,
+          s,
+          l,
+          c,
+          u,
+          h,
+          p,
+          f = e.getCursor(),
+          d = e.getLine(f.line),
+          m = /(-?)(?:(0x)([\da-f]+)|(0b|0|)(\d+))/gi;
           null !== (r = m.exec(d)) &&
           ((o = (n = r.index) + r[0].length), !(f.ch < o));
 
@@ -3186,28 +3182,28 @@ type: application/javascript
         (!t.backtrack && o <= f.ch) ||
           (r &&
             ((i = r[2] || r[4]),
-            (a = r[3] || r[5]),
-            (s = t.increase ? 1 : -1),
-            (l = { "0b": 2, 0: 8, "": 10, "0x": 16 }[i.toLowerCase()]),
-            (c = (parseInt(r[1] + a, l) + s * t.repeat).toString(l)),
-            (u = i
-              ? new Array(a.length - c.length + 1 + r[1].length).join("0")
-              : ""),
-            (c = "-" === c.charAt(0) ? "-" + i + u + c.substr(1) : i + u + c),
-            (h = tt(f.line, n)),
-            (p = tt(f.line, o)),
-            e.replaceRange(c, h, p),
-            e.setCursor(tt(f.line, n + c.length - 1))));
+              (a = r[3] || r[5]),
+              (s = t.increase ? 1 : -1),
+              (l = { "0b": 2, 0: 8, "": 10, "0x": 16 }[i.toLowerCase()]),
+              (c = (parseInt(r[1] + a, l) + s * t.repeat).toString(l)),
+              (u = i
+                ? new Array(a.length - c.length + 1 + r[1].length).join("0")
+                : ""),
+              (c = "-" === c.charAt(0) ? "-" + i + u + c.substr(1) : i + u + c),
+              (h = tt(f.line, n)),
+              (p = tt(f.line, o)),
+              e.replaceRange(c, h, p),
+              e.setCursor(tt(f.line, n + c.length - 1))));
       },
-      repeatLastEdit: function (e, t, r) {
+      repeatLastEdit: function(e, t, r) {
         var n;
         r.lastEditInputState &&
           ((n = t.repeat) && t.repeatIsExplicit
             ? (r.lastEditInputState.repeatOverride = n)
             : (n = r.lastEditInputState.repeatOverride || n),
-          ze(e, r, n, !1));
+            ze(e, r, n, !1));
       },
-      indent: function (e, t) {
+      indent: function(e, t) {
         e.indentLine(e.getCursor().line, t.indentRight);
       },
       exitInsertMode: We,
@@ -3232,7 +3228,7 @@ type: application/javascript
       );
     }
     function Q(t, r, n) {
-      return function () {
+      return function() {
         for (var e = 0; e < n; e++) r(t);
       };
     }
@@ -3248,14 +3244,14 @@ type: application/javascript
     function G(e, t) {
       return (
         2 < arguments.length &&
-          (t = G.apply(void 0, Array.prototype.slice.call(arguments, 1))),
+        (t = G.apply(void 0, Array.prototype.slice.call(arguments, 1))),
         Z(e, t) ? e : t
       );
     }
     function Y(e, t) {
       return (
         2 < arguments.length &&
-          (t = Y.apply(void 0, Array.prototype.slice.call(arguments, 1))),
+        (t = Y.apply(void 0, Array.prototype.slice.call(arguments, 1))),
         Z(e, t) ? t : e
       );
     }
@@ -3275,7 +3271,7 @@ type: application/javascript
         n = e.listSelections(),
         o = z(e.clipPos(t)),
         i = !X(t, o),
-        a = (function (e, t, r) {
+        a = (function(e, t, r) {
           for (var n = 0; n < e.length; n++) {
             var o = "head" != r && X(e[n].anchor, t),
               i = "anchor" != r && X(e[n].head, t);
@@ -3296,8 +3292,8 @@ type: application/javascript
       0 < m && g <= 0
         ? (f++, i || d--)
         : m < 0 && 0 <= g
-        ? (f--, s || d++)
-        : m < 0 && -1 == g && (f--, d++);
+          ? (f--, s || d++)
+          : m < 0 && -1 == g && (f--, d++);
       for (var v = h; v <= p; v++) {
         var y = { anchor: new tt(v, f), head: new tt(v, d) };
         r.push(y);
@@ -3316,7 +3312,7 @@ type: application/javascript
         n = t.sel.head;
       t.lastPastedText &&
         ((n = e.posFromIndex(e.indexFromPos(r) + t.lastPastedText.length)),
-        (t.lastPastedText = null)),
+          (t.lastPastedText = null)),
         (t.lastSelection = {
           anchorMark: e.setBookmark(r),
           headMark: e.setBookmark(n),
@@ -3362,13 +3358,13 @@ type: application/javascript
       if ("block" == r) {
         for (
           var c = Math.min(a.line, i.line),
-            u = Math.min(a.ch, i.ch),
-            h = Math.max(a.line, i.line),
-            p = Math.max(a.ch, i.ch) + 1,
-            f = h - c + 1,
-            d = i.line == c ? 0 : f - 1,
-            m = [],
-            g = 0;
+          u = Math.min(a.ch, i.ch),
+          h = Math.max(a.line, i.line),
+          p = Math.max(a.ch, i.ch) + 1,
+          f = h - c + 1,
+          d = i.line == c ? 0 : f - 1,
+          m = [],
+          g = 0;
           g < f;
           g++
         )
@@ -3394,25 +3390,25 @@ type: application/javascript
     function ue(e, t, r, n, o) {
       for (
         var i,
-          a,
-          s =
-            ((a = (i = e).getCursor("head")),
+        a,
+        s =
+          ((a = (i = e).getCursor("head")),
             1 == i.getSelection().length && (a = G(a, i.getCursor("anchor"))),
             a),
-          l = e.getLine(s.line),
-          c = s.ch,
-          u = o ? m[0] : g[0];
+        l = e.getLine(s.line),
+        c = s.ch,
+        u = o ? m[0] : g[0];
         !u(l.charAt(c));
 
       )
         if (++c >= l.length) return null;
       n ? (u = g[0]) : (u = m[0])(l.charAt(c)) || (u = m[1]);
-      for (var h = c, p = c; u(l.charAt(h)) && h < l.length; ) h++;
-      for (; u(l.charAt(p)) && 0 <= p; ) p--;
+      for (var h = c, p = c; u(l.charAt(h)) && h < l.length;) h++;
+      for (; u(l.charAt(p)) && 0 <= p;) p--;
       if ((p++, t)) {
-        for (var f = h; /\s/.test(l.charAt(h)) && h < l.length; ) h++;
+        for (var f = h; /\s/.test(l.charAt(h)) && h < l.length;) h++;
         if (f == h) {
-          for (var d = p; /\s/.test(l.charAt(p - 1)) && 0 < p; ) p--;
+          for (var d = p; /\s/.test(l.charAt(p - 1)) && 0 < p;) p--;
           p = p || d;
         }
       }
@@ -3427,21 +3423,21 @@ type: application/javascript
         (K.lastCharacterSearch.selectedCharacter = t.selectedCharacter);
     }
     var fe = {
-        "(": "bracket",
-        ")": "bracket",
-        "{": "bracket",
-        "}": "bracket",
-        "[": "section",
-        "]": "section",
-        "*": "comment",
-        "/": "comment",
-        m: "method",
-        M: "method",
-        "#": "preprocess",
-      },
+      "(": "bracket",
+      ")": "bracket",
+      "{": "bracket",
+      "}": "bracket",
+      "[": "section",
+      "]": "section",
+      "*": "comment",
+      "/": "comment",
+      m: "method",
+      M: "method",
+      "#": "preprocess",
+    },
       de = {
         bracket: {
-          isComplete: function (e) {
+          isComplete: function(e) {
             if (e.nextCh === e.symb) {
               if ((e.depth++, 1 <= e.depth)) return !0;
             } else e.nextCh === e.reverseSymb && e.depth--;
@@ -3449,34 +3445,34 @@ type: application/javascript
           },
         },
         section: {
-          init: function (e) {
+          init: function(e) {
             (e.curMoveThrough = !0),
               (e.symb = (e.forward ? "]" : "[") === e.symb ? "{" : "}");
           },
-          isComplete: function (e) {
+          isComplete: function(e) {
             return 0 === e.index && e.nextCh === e.symb;
           },
         },
         comment: {
-          isComplete: function (e) {
+          isComplete: function(e) {
             var t = "*" === e.lastCh && "/" === e.nextCh;
             return (e.lastCh = e.nextCh), t;
           },
         },
         method: {
-          init: function (e) {
+          init: function(e) {
             (e.symb = "m" === e.symb ? "{" : "}"),
               (e.reverseSymb = "{" === e.symb ? "}" : "{");
           },
-          isComplete: function (e) {
+          isComplete: function(e) {
             return e.nextCh === e.symb;
           },
         },
         preprocess: {
-          init: function (e) {
+          init: function(e) {
             e.index = 0;
           },
-          isComplete: function (e) {
+          isComplete: function(e) {
             if ("#" === e.nextCh) {
               var t = e.lineText.match(/#(\w+)/)[1];
               if ("endif" === t) {
@@ -3498,7 +3494,7 @@ type: application/javascript
       return (
         a.ch--,
         o ||
-          ((n.lastHPos = 1 / 0), (n.lastHSPos = e.charCoords(a, "div").left)),
+        ((n.lastHPos = 1 / 0), (n.lastHSPos = e.charCoords(a, "div").left)),
         i
       );
     }
@@ -3506,7 +3502,7 @@ type: application/javascript
       for (var o, i = e.getCursor(), a = i.ch, s = 0; s < t; s++) {
         if (
           -1 ==
-          (o = (function (e, t, r, n, o) {
+          (o = (function(e, t, r, n, o) {
             var i;
             n
               ? -1 == (i = t.indexOf(r, e + 1)) || o || --i
@@ -3536,7 +3532,7 @@ type: application/javascript
         return r ? u(e) != u(e + t) : !u(e) && u(e + t);
       }
       if (n) {
-        for (; s <= c && c <= l && 0 < r; ) h(c, n) && r--, (c += n);
+        for (; s <= c && c <= l && 0 < r;) h(c, n) && r--, (c += n);
         return new tt(c, 0);
       }
       var p,
@@ -3554,7 +3550,7 @@ type: application/javascript
       );
       return { start: new tt(c, 0), end: i };
     }
-    function ke() {}
+    function ke() { }
     function Ce(e) {
       var t = e.state.vim;
       return t.searchState_ || (t.searchState_ = new ke());
@@ -3579,28 +3575,28 @@ type: application/javascript
     }
     M("pcre", !0, "boolean"),
       (ke.prototype = {
-        getQuery: function () {
+        getQuery: function() {
           return K.query;
         },
-        setQuery: function (e) {
+        setQuery: function(e) {
           K.query = e;
         },
-        getOverlay: function () {
+        getOverlay: function() {
           return this.searchOverlay;
         },
-        setOverlay: function (e) {
+        setOverlay: function(e) {
           this.searchOverlay = e;
         },
-        isReversed: function () {
+        isReversed: function() {
           return K.isReversed;
         },
-        setReversed: function (e) {
+        setReversed: function(e) {
           K.isReversed = e;
         },
-        getScrollbarAnnotate: function () {
+        getScrollbarAnnotate: function() {
           return this.annotate;
         },
-        setScrollbarAnnotate: function (e) {
+        setScrollbarAnnotate: function(e) {
           this.annotate = e;
         },
       });
@@ -3612,14 +3608,14 @@ type: application/javascript
         Me[i + a]
           ? (n.push(Me[i + a]), o++)
           : r
-          ? (n.push(i), (r = !1))
-          : "\\" === i
-          ? ((r = !0),
-            (t = a),
-            u.test(t) || "$" === a
-              ? n.push("$")
-              : "/" !== a && "\\" !== a && n.push("\\"))
-          : ("$" === i && n.push("$"), n.push(i), "/" === a && n.push("\\"));
+            ? (n.push(i), (r = !1))
+            : "\\" === i
+              ? ((r = !0),
+                (t = a),
+                u.test(t) || "$" === a
+                  ? n.push("$")
+                  : "/" !== a && "\\" !== a && n.push("\\"))
+              : ("$" === i && n.push("$"), n.push(i), "/" === a && n.push("\\"));
       }
       return n.join("");
     }
@@ -3646,21 +3642,21 @@ type: application/javascript
           : (n = e),
         n
           ? (A("pcre") ||
-              (n = (function (e) {
-                for (var t = !1, r = [], n = -1; n < e.length; n++) {
-                  var o = e.charAt(n) || "",
-                    i = e.charAt(n + 1) || "",
-                    a = i && -1 != "|(){".indexOf(i);
-                  t
-                    ? (("\\" === o && a) || r.push(o), (t = !1))
-                    : "\\" === o
+            (n = (function(e) {
+              for (var t = !1, r = [], n = -1; n < e.length; n++) {
+                var o = e.charAt(n) || "",
+                  i = e.charAt(n + 1) || "",
+                  a = i && -1 != "|(){".indexOf(i);
+                t
+                  ? (("\\" === o && a) || r.push(o), (t = !1))
+                  : "\\" === o
                     ? ((t = !0),
                       i && -1 != "}".indexOf(i) && (a = !0),
                       (a && "\\" !== i) || r.push(o))
                     : (r.push(o), a && "\\" !== i && r.push("\\"));
-                }
-                return r.join("");
-              })(n)),
+              }
+              return r.join("");
+            })(n)),
             r && (t = /^[^A-Z]*$/.test(n)),
             new RegExp(n, t || o ? "i" : void 0))
           : null
@@ -3669,9 +3665,9 @@ type: application/javascript
     function Le(e, t) {
       e.openNotification
         ? e.openNotification('<span style="color: red">' + t + "</span>", {
-            bottom: !0,
-            duration: 5e3,
-          })
+          bottom: !0,
+          duration: 5e3,
+        })
         : alert(t);
     }
     var Te = "(Javascript regexp)";
@@ -3687,13 +3683,13 @@ type: application/javascript
         u = (t.prefix || "") + " " + (t.desc || ""),
         h =
           ((r = t.prefix),
-          (n = t.desc),
-          (o =
-            '<span style="font-family: monospace; white-space: pre">' +
-            (r || "") +
-            '<input type="text" autocorrect="off" autocapitalize="off" spellcheck="false"></span>'),
-          n && (o += ' <span style="color: #888">' + n + "</span>"),
-          o);
+            (n = t.desc),
+            (o =
+              '<span style="font-family: monospace; white-space: pre">' +
+              (r || "") +
+              '<input type="text" autocorrect="off" autocapitalize="off" spellcheck="false"></span>'),
+            n && (o += ' <span style="color: #888">' + n + "</span>"),
+            o);
       (i = e),
         (a = h),
         (s = u),
@@ -3701,12 +3697,12 @@ type: application/javascript
         (c = t),
         i.openDialog
           ? i.openDialog(a, l, {
-              bottom: !0,
-              value: c.value,
-              onKeyDown: c.onKeyDown,
-              onKeyUp: c.onKeyUp,
-              selectValueOnOpen: !1,
-            })
+            bottom: !0,
+            value: c.value,
+            onKeyDown: c.onKeyDown,
+            onKeyUp: c.onKeyUp,
+            selectValueOnOpen: !1,
+          })
           : l(prompt(s, ""));
     }
     function Ee(e, t, r, n) {
@@ -3716,11 +3712,11 @@ type: application/javascript
         if (i)
           return (
             Be(e, i),
-            (function (e, t) {
+            (function(e, t) {
               if (e instanceof RegExp && t instanceof RegExp) {
                 for (
                   var r = ["global", "multiline", "ignoreCase", "source"],
-                    n = 0;
+                  n = 0;
                   n < r.length;
                   n++
                 ) {
@@ -3737,40 +3733,40 @@ type: application/javascript
     var Oe = 0;
     function Be(o, i) {
       clearTimeout(Oe),
-        (Oe = setTimeout(function () {
+        (Oe = setTimeout(function() {
           var r,
             n,
             e = Ce(o),
             t = e.getOverlay();
           (t && i == t.query) ||
             (t && o.removeOverlay(t),
-            "^" == (r = i).source.charAt(0) && (n = !0),
-            (t = {
-              token: function (e) {
-                if (!n || e.sol()) {
-                  var t = e.match(r, !1);
-                  if (t)
-                    return 0 == t[0].length
-                      ? (e.next(), "searching")
-                      : e.sol() || (e.backUp(1), r.exec(e.next() + t[0]))
-                      ? (e.match(r), "searching")
-                      : (e.next(), null);
-                  for (; !e.eol() && (e.next(), !e.match(r, !1)); );
-                } else e.skipToEnd();
-              },
-              query: r,
-            }),
-            o.addOverlay(t),
-            o.showMatchesOnScrollbar &&
+              "^" == (r = i).source.charAt(0) && (n = !0),
+              (t = {
+                token: function(e) {
+                  if (!n || e.sol()) {
+                    var t = e.match(r, !1);
+                    if (t)
+                      return 0 == t[0].length
+                        ? (e.next(), "searching")
+                        : e.sol() || (e.backUp(1), r.exec(e.next() + t[0]))
+                          ? (e.match(r), "searching")
+                          : (e.next(), null);
+                    for (; !e.eol() && (e.next(), !e.match(r, !1)););
+                  } else e.skipToEnd();
+                },
+                query: r,
+              }),
+              o.addOverlay(t),
+              o.showMatchesOnScrollbar &&
               (e.getScrollbarAnnotate() && e.getScrollbarAnnotate().clear(),
-              e.setScrollbarAnnotate(o.showMatchesOnScrollbar(i))),
-            e.setOverlay(t));
+                e.setScrollbarAnnotate(o.showMatchesOnScrollbar(i))),
+              e.setOverlay(t));
         }, 50));
     }
     function Ie(o, i, a, s) {
       return (
         void 0 === s && (s = 1),
-        o.operation(function () {
+        o.operation(function() {
           for (
             var e = o.getCursor(), t = o.getSearchCursor(a, e), r = 0;
             r < s;
@@ -3779,7 +3775,7 @@ type: application/javascript
             var n = t.find(i);
             if (
               (0 == r && n && X(t.from(), e) && (n = t.find(i)),
-              !n &&
+                !n &&
                 !(t = o.getSearchCursor(
                   a,
                   i ? tt(o.lastLine()) : tt(o.firstLine(), 0)
@@ -3796,7 +3792,7 @@ type: application/javascript
       e.removeOverlay(Ce(e).getOverlay()),
         t.setOverlay(null),
         t.getScrollbarAnnotate() &&
-          (t.getScrollbarAnnotate().clear(), t.setScrollbarAnnotate(null));
+        (t.getScrollbarAnnotate().clear(), t.setScrollbarAnnotate(null));
     }
     function Ne(e) {
       var t = e.getScrollInfo(),
@@ -3812,20 +3808,20 @@ type: application/javascript
       return n && n.find();
     }
     function _e(e) {
-      for (var t = e.doc.history.done, r = t.length; r--; )
+      for (var t = e.doc.history.done, r = t.length; r--;)
         if (t[r].changes) return z(t[r].changes[0].to);
     }
     function je() {
       this.buildCommandMap_();
     }
     je.prototype = {
-      processCommand: function (e, t, r) {
+      processCommand: function(e, t, r) {
         var n = this;
-        e.operation(function () {
+        e.operation(function() {
           (e.curOp.isVimOp = !0), n._processCommand(e, t, r);
         });
       },
-      _processCommand: function (t, e, r) {
+      _processCommand: function(t, e, r) {
         var n = t.state.vim,
           o = K.registerController.getRegister(":"),
           i = o.toString();
@@ -3845,9 +3841,9 @@ type: application/javascript
           if ((s = this.matchCommand_(c.commandName))) {
             if (
               ((l = s.name),
-              s.excludeFromCommandHistory && o.setText(i),
-              this.parseCommandArgs_(a, c, s),
-              "exToKey" == s.type)
+                s.excludeFromCommandHistory && o.setText(i),
+                this.parseCommandArgs_(a, c, s),
+                "exToKey" == s.type)
             ) {
               for (var u = 0; u < s.toKeys.length; u++)
                 Ze.Vim.handleKey(t, s.toKeys[u], "mapping");
@@ -3865,18 +3861,18 @@ type: application/javascript
           }
         else Le(t, 'Not an editor command ":' + e + '"');
       },
-      parseInput_: function (e, t, r) {
+      parseInput_: function(e, t, r) {
         t.eatWhile(":"),
           t.eat("%")
             ? ((r.line = e.firstLine()), (r.lineEnd = e.lastLine()))
             : ((r.line = this.parseLineSpec_(e, t)),
               void 0 !== r.line &&
-                t.eat(",") &&
-                (r.lineEnd = this.parseLineSpec_(e, t)));
+              t.eat(",") &&
+              (r.lineEnd = this.parseLineSpec_(e, t)));
         var n = t.match(/^(\w+|!!|@@|[!#&*<=>@~])/);
         return (r.commandName = n ? n[1] : t.match(/.*/)[0]), r;
       },
-      parseLineSpec_: function (e, t) {
+      parseLineSpec_: function(e, t) {
         var r = t.match(/^(\d+)/);
         if (r) return parseInt(r[1], 10) - 1;
         switch (t.next()) {
@@ -3898,21 +3894,21 @@ type: application/javascript
             return void t.backUp(1);
         }
       },
-      parseLineSpecOffset_: function (e, t) {
+      parseLineSpecOffset_: function(e, t) {
         var r,
           n = e.match(/^([+-])?(\d+)/);
         return (
           n && ((r = parseInt(n[2], 10)), "-" == n[1] ? (t -= r) : (t += r)), t
         );
       },
-      parseCommandArgs_: function (e, t, r) {
+      parseCommandArgs_: function(e, t, r) {
         var n, o;
         e.eol() ||
           ((t.argString = e.match(/.*/)[0]),
-          (n = r.argDelimiter || /\s+/),
-          (o = re(t.argString).split(n)).length && o[0] && (t.args = o));
+            (n = r.argDelimiter || /\s+/),
+            (o = re(t.argString).split(n)).length && o[0] && (t.args = o));
       },
-      matchCommand_: function (e) {
+      matchCommand_: function(e) {
         for (var t = e.length; 0 < t; t--) {
           var r = e.substring(0, t);
           if (this.commandMap_[r]) {
@@ -3922,7 +3918,7 @@ type: application/javascript
         }
         return null;
       },
-      buildCommandMap_: function () {
+      buildCommandMap_: function() {
         this.commandMap_ = {};
         for (var e = 0; e < et.length; e++) {
           var t = et[e],
@@ -3930,23 +3926,23 @@ type: application/javascript
           this.commandMap_[r] = t;
         }
       },
-      map: function (e, t, r) {
+      map: function(e, t, r) {
         if (":" != e && ":" == e.charAt(0)) {
           if (r) throw Error("Mode not supported for ex mappings");
           var n = e.substring(1);
           ":" != t && ":" == t.charAt(0)
             ? (this.commandMap_[n] = {
-                name: n,
-                type: "exToEx",
-                toInput: t.substring(1),
-                user: !0,
-              })
+              name: n,
+              type: "exToEx",
+              toInput: t.substring(1),
+              user: !0,
+            })
             : (this.commandMap_[n] = {
-                name: n,
-                type: "exToKey",
-                toKeys: t,
-                user: !0,
-              });
+              name: n,
+              type: "exToKey",
+              toKeys: t,
+              user: !0,
+            });
         } else {
           var o;
           (o =
@@ -3957,7 +3953,7 @@ type: application/javascript
             Ge.unshift(o);
         }
       },
-      unmap: function (e, t) {
+      unmap: function(e, t) {
         if (":" != e && ":" == e.charAt(0)) {
           if (t) throw Error("Mode not supported for ex mappings");
           var r = e.substring(1);
@@ -3971,438 +3967,438 @@ type: application/javascript
       },
     };
     var He = {
-        colorscheme: function (e, t) {
-          !t.args || t.args.length < 1
-            ? Le(e, e.getOption("theme"))
-            : e.setOption("theme", t.args[0]);
-        },
-        map: function (e, t, r) {
-          var n = t.args;
-          !n || n.length < 2
-            ? e && Le(e, "Invalid mapping: " + t.input)
-            : Fe.map(n[0], n[1], r);
-        },
-        imap: function (e, t) {
-          this.map(e, t, "insert");
-        },
-        nmap: function (e, t) {
-          this.map(e, t, "normal");
-        },
-        vmap: function (e, t) {
-          this.map(e, t, "visual");
-        },
-        unmap: function (e, t, r) {
-          var n = t.args;
-          !n || n.length < 1
-            ? e && Le(e, "No such mapping: " + t.input)
-            : Fe.unmap(n[0], r);
-        },
-        move: function (e, t) {
-          F.processCommand(e, e.state.vim, {
-            type: "motion",
-            motion: "moveToLineOrEdgeOfDocument",
-            motionArgs: { forward: !1, explicitRepeat: !0, linewise: !0 },
-            repeatOverride: t.line + 1,
-          });
-        },
-        set: function (e, t) {
-          var r = t.args,
-            n = t.setCfg || {};
-          if (!r || r.length < 1) e && Le(e, "Invalid mapping: " + t.input);
-          else {
-            var o = r[0].split("="),
-              i = o[0],
-              a = o[1],
-              s = !1;
-            if ("?" == i.charAt(i.length - 1)) {
-              if (a) throw Error("Trailing characters: " + t.argString);
-              (i = i.substring(0, i.length - 1)), (s = !0);
-            }
-            void 0 === a &&
-              "no" == i.substring(0, 2) &&
-              ((i = i.substring(2)), (a = !1));
-            var l,
-              c,
-              u = x[i] && "boolean" == x[i].type;
-            u && null == a && (a = !0),
-              (!u && void 0 === a) || s
-                ? (l = A(i, e, n)) instanceof Error
-                  ? Le(e, l.message)
-                  : Le(
-                      e,
-                      !0 === l || !1 === l
-                        ? " " + (l ? "" : "no") + i
-                        : "  " + i + "=" + l
-                    )
-                : (c = S(i, a, e, n)) instanceof Error && Le(e, c.message);
+      colorscheme: function(e, t) {
+        !t.args || t.args.length < 1
+          ? Le(e, e.getOption("theme"))
+          : e.setOption("theme", t.args[0]);
+      },
+      map: function(e, t, r) {
+        var n = t.args;
+        !n || n.length < 2
+          ? e && Le(e, "Invalid mapping: " + t.input)
+          : Fe.map(n[0], n[1], r);
+      },
+      imap: function(e, t) {
+        this.map(e, t, "insert");
+      },
+      nmap: function(e, t) {
+        this.map(e, t, "normal");
+      },
+      vmap: function(e, t) {
+        this.map(e, t, "visual");
+      },
+      unmap: function(e, t, r) {
+        var n = t.args;
+        !n || n.length < 1
+          ? e && Le(e, "No such mapping: " + t.input)
+          : Fe.unmap(n[0], r);
+      },
+      move: function(e, t) {
+        F.processCommand(e, e.state.vim, {
+          type: "motion",
+          motion: "moveToLineOrEdgeOfDocument",
+          motionArgs: { forward: !1, explicitRepeat: !0, linewise: !0 },
+          repeatOverride: t.line + 1,
+        });
+      },
+      set: function(e, t) {
+        var r = t.args,
+          n = t.setCfg || {};
+        if (!r || r.length < 1) e && Le(e, "Invalid mapping: " + t.input);
+        else {
+          var o = r[0].split("="),
+            i = o[0],
+            a = o[1],
+            s = !1;
+          if ("?" == i.charAt(i.length - 1)) {
+            if (a) throw Error("Trailing characters: " + t.argString);
+            (i = i.substring(0, i.length - 1)), (s = !0);
           }
-        },
-        setlocal: function (e, t) {
-          (t.setCfg = { scope: "local" }), this.set(e, t);
-        },
-        setglobal: function (e, t) {
-          (t.setCfg = { scope: "global" }), this.set(e, t);
-        },
-        registers: function (e, t) {
-          var r = t.args,
-            n = K.registerController.registers,
-            o = "----------Registers----------<br><br>";
-          if (r)
-            for (var r = r.join(""), i = 0; i < r.length; i++) {
-              (a = r.charAt(i)),
-                K.registerController.isValidRegister(a) &&
-                  (o +=
-                    '"' + a + "    " + (n[a] || new _()).toString() + "<br>");
+          void 0 === a &&
+            "no" == i.substring(0, 2) &&
+            ((i = i.substring(2)), (a = !1));
+          var l,
+            c,
+            u = x[i] && "boolean" == x[i].type;
+          u && null == a && (a = !0),
+            (!u && void 0 === a) || s
+              ? (l = A(i, e, n)) instanceof Error
+                ? Le(e, l.message)
+                : Le(
+                  e,
+                  !0 === l || !1 === l
+                    ? " " + (l ? "" : "no") + i
+                    : "  " + i + "=" + l
+                )
+              : (c = S(i, a, e, n)) instanceof Error && Le(e, c.message);
+        }
+      },
+      setlocal: function(e, t) {
+        (t.setCfg = { scope: "local" }), this.set(e, t);
+      },
+      setglobal: function(e, t) {
+        (t.setCfg = { scope: "global" }), this.set(e, t);
+      },
+      registers: function(e, t) {
+        var r = t.args,
+          n = K.registerController.registers,
+          o = "----------Registers----------<br><br>";
+        if (r)
+          for (var r = r.join(""), i = 0; i < r.length; i++) {
+            (a = r.charAt(i)),
+              K.registerController.isValidRegister(a) &&
+              (o +=
+                '"' + a + "    " + (n[a] || new _()).toString() + "<br>");
+          }
+        else
+          for (var a in n) {
+            var s = n[a].toString();
+            s.length && (o += '"' + a + "    " + s + "<br>");
+          }
+        Le(e, o);
+      },
+      sort: function(e, i) {
+        var a, s, l, c, u;
+        var t = (function() {
+          if (i.argString) {
+            var e = new Ze.StringStream(i.argString);
+            if ((e.eat("!") && (a = !0), e.eol())) return;
+            if (!e.eatSpace()) return "Invalid arguments";
+            var t = e.match(/([dinuox]+)?\s*(\/.+\/)?\s*/);
+            if (!t && !e.eol()) return "Invalid arguments";
+            if (t[1]) {
+              (s = -1 != t[1].indexOf("i")), (l = -1 != t[1].indexOf("u"));
+              var r =
+                -1 != t[1].indexOf("d") || (-1 != t[1].indexOf("n") && 1),
+                n = -1 != t[1].indexOf("x") && 1,
+                o = -1 != t[1].indexOf("o") && 1;
+              if (1 < r + n + o) return "Invalid arguments";
+              c = (r ? "decimal" : n && "hex") || (o && "octal");
             }
-          else
-            for (var a in n) {
-              var s = n[a].toString();
-              s.length && (o += '"' + a + "    " + s + "<br>");
-            }
-          Le(e, o);
-        },
-        sort: function (e, i) {
-          var a, s, l, c, u;
-          var t = (function () {
-            if (i.argString) {
-              var e = new Ze.StringStream(i.argString);
-              if ((e.eat("!") && (a = !0), e.eol())) return;
-              if (!e.eatSpace()) return "Invalid arguments";
-              var t = e.match(/([dinuox]+)?\s*(\/.+\/)?\s*/);
-              if (!t && !e.eol()) return "Invalid arguments";
-              if (t[1]) {
-                (s = -1 != t[1].indexOf("i")), (l = -1 != t[1].indexOf("u"));
-                var r =
-                    -1 != t[1].indexOf("d") || (-1 != t[1].indexOf("n") && 1),
-                  n = -1 != t[1].indexOf("x") && 1,
-                  o = -1 != t[1].indexOf("o") && 1;
-                if (1 < r + n + o) return "Invalid arguments";
-                c = (r ? "decimal" : n && "hex") || (o && "octal");
-              }
-              t[2] &&
-                (u = new RegExp(t[2].substr(1, t[2].length - 2), s ? "i" : ""));
-            }
-          })();
-          if (t) Le(e, t + ": " + i.argString);
-          else {
-            var r = i.line || e.firstLine(),
-              n = i.lineEnd || i.line || e.lastLine();
-            if (r != n) {
-              var o = tt(r, 0),
-                h = tt(n, te(e, n)),
-                p = e.getRange(o, h).split("\n"),
-                f =
-                  u ||
-                  ("decimal" == c
-                    ? /(-?)([\d]+)/
-                    : "hex" == c
+            t[2] &&
+              (u = new RegExp(t[2].substr(1, t[2].length - 2), s ? "i" : ""));
+          }
+        })();
+        if (t) Le(e, t + ": " + i.argString);
+        else {
+          var r = i.line || e.firstLine(),
+            n = i.lineEnd || i.line || e.lastLine();
+          if (r != n) {
+            var o = tt(r, 0),
+              h = tt(n, te(e, n)),
+              p = e.getRange(o, h).split("\n"),
+              f =
+                u ||
+                ("decimal" == c
+                  ? /(-?)([\d]+)/
+                  : "hex" == c
                     ? /(-?)(?:0x)?([0-9a-f]+)/i
                     : "octal" == c
-                    ? /([0-7]+)/
-                    : null),
-                d =
-                  "decimal" == c
-                    ? 10
-                    : "hex" == c
+                      ? /([0-7]+)/
+                      : null),
+              d =
+                "decimal" == c
+                  ? 10
+                  : "hex" == c
                     ? 16
                     : "octal" == c
-                    ? 8
-                    : null,
-                m = [],
-                g = [];
-              if (c || u)
-                for (var v = 0; v < p.length; v++) {
-                  var y = u ? p[v].match(u) : null;
-                  y && "" != y[0]
-                    ? m.push(y)
-                    : !u && f.exec(p[v])
+                      ? 8
+                      : null,
+              m = [],
+              g = [];
+            if (c || u)
+              for (var v = 0; v < p.length; v++) {
+                var y = u ? p[v].match(u) : null;
+                y && "" != y[0]
+                  ? m.push(y)
+                  : !u && f.exec(p[v])
                     ? m.push(p[v])
                     : g.push(p[v]);
-                }
-              else g = p;
-              if (
-                (m.sort(
-                  u
-                    ? function (e, t) {
-                        var r;
-                        return (
-                          a && ((r = e), (e = t), (t = r)),
-                          s &&
-                            ((e[0] = e[0].toLowerCase()),
-                            (t[0] = t[0].toLowerCase())),
-                          e[0] < t[0] ? -1 : 1
-                        );
-                      }
-                    : w
-                ),
+              }
+            else g = p;
+            if (
+              (m.sort(
+                u
+                  ? function(e, t) {
+                    var r;
+                    return (
+                      a && ((r = e), (e = t), (t = r)),
+                      s &&
+                      ((e[0] = e[0].toLowerCase()),
+                        (t[0] = t[0].toLowerCase())),
+                      e[0] < t[0] ? -1 : 1
+                    );
+                  }
+                  : w
+              ),
                 u)
-              )
-                for (v = 0; v < m.length; v++) m[v] = m[v].input;
-              else c || g.sort(w);
-              if (((p = a ? m.concat(g) : g.concat(m)), l))
-                for (var k, C = p, p = [], v = 0; v < C.length; v++)
-                  C[v] != k && p.push(C[v]), (k = C[v]);
-              e.replaceRange(p.join("\n"), o, h);
-            }
+            )
+              for (v = 0; v < m.length; v++) m[v] = m[v].input;
+            else c || g.sort(w);
+            if (((p = a ? m.concat(g) : g.concat(m)), l))
+              for (var k, C = p, p = [], v = 0; v < C.length; v++)
+                C[v] != k && p.push(C[v]), (k = C[v]);
+            e.replaceRange(p.join("\n"), o, h);
           }
-          function w(e, t) {
-            var r;
-            a && ((r = e), (e = t), (t = r)),
-              s && ((e = e.toLowerCase()), (t = t.toLowerCase()));
-            var n = c && f.exec(e),
-              o = c && f.exec(t);
-            return n
-              ? (n = parseInt((n[1] + n[2]).toLowerCase(), d)) -
-                  (o = parseInt((o[1] + o[2]).toLowerCase(), d))
-              : e < t
+        }
+        function w(e, t) {
+          var r;
+          a && ((r = e), (e = t), (t = r)),
+            s && ((e = e.toLowerCase()), (t = t.toLowerCase()));
+          var n = c && f.exec(e),
+            o = c && f.exec(t);
+          return n
+            ? (n = parseInt((n[1] + n[2]).toLowerCase(), d)) -
+            (o = parseInt((o[1] + o[2]).toLowerCase(), d))
+            : e < t
               ? -1
               : 1;
-          }
-        },
-        global: function (t, e) {
-          var r = e.argString;
-          if (r) {
-            var n,
-              o = void 0 !== e.line ? e.line : t.firstLine(),
-              i = e.lineEnd || e.line || t.lastLine(),
-              a = we(r, "/"),
-              s = r;
-            if (
-              (a.length && ((s = a[0]), (n = a.slice(1, a.length).join("/"))),
-              s)
-            )
-              try {
-                Ee(t, s, !0, !0);
-              } catch (e) {
-                return void Le(t, "Invalid regex: " + s);
-              }
-            for (
-              var l, c, u = Ce(t).getQuery(), h = [], p = "", f = o;
-              f <= i;
-              f++
-            ) {
-              u.test(t.getLine(f)) &&
-                (h.push(f + 1), (p += t.getLine(f) + "<br>"));
-            }
-            n
-              ? ((l = 0),
-                (c = function () {
-                  var e;
-                  l < h.length &&
-                    ((e = h[l] + n), Fe.processCommand(t, e, { callback: c })),
-                    l++;
-                })())
-              : Le(t, p);
-          } else Le(t, "Regular Expression missing from global");
-        },
-        substitute: function (t, e) {
-          if (!t.getSearchCursor)
-            throw new Error(
-              "Search feature not available. Requires searchcursor.js or any other getSearchCursor implementation."
-            );
-          var r,
-            n,
-            o,
-            i,
-            a,
-            s,
-            l,
-            c,
-            u,
-            h = e.argString,
-            p = h ? we(h, h[0]) : [],
-            f = "",
-            d = !1,
-            m = !1;
-          if (p.length)
-            (r = p[0]),
-              A("pcre") && "" !== r && (r = new RegExp(r).source),
-              (f = p[1]),
-              r &&
-                "$" === r[r.length - 1] &&
-                ((r = r.slice(0, r.length - 1) + "\\n"),
-                (f = f ? f + "\n" : "\n")),
-              void 0 !== f &&
-                ((f = A("pcre")
-                  ? (function (e) {
-                      for (var t = new Ze.StringStream(e), r = []; !t.eol(); ) {
-                        for (; t.peek() && "\\" != t.peek(); ) r.push(t.next());
-                        var n = !1;
-                        for (var o in Ae)
-                          if (t.match(o, !0)) {
-                            (n = !0), r.push(Ae[o]);
-                            break;
-                          }
-                        n || r.push(t.next());
-                      }
-                      return r.join("");
-                    })(f.replace(/([^\\])&/g, "$1$$&"))
-                  : Se(f)),
-                (K.lastSubstituteReplacePart = f)),
-              (n = p[2] ? p[2].split(" ") : []);
-          else if (h && h.length)
-            return void Le(
-              t,
-              "Substitutions should be of the form :s/pattern/replace/"
-            );
+        }
+      },
+      global: function(t, e) {
+        var r = e.argString;
+        if (r) {
+          var n,
+            o = void 0 !== e.line ? e.line : t.firstLine(),
+            i = e.lineEnd || e.line || t.lastLine(),
+            a = we(r, "/"),
+            s = r;
           if (
-            (n &&
-              ((o = n[0]),
+            (a.length && ((s = a[0]), (n = a.slice(1, a.length).join("/"))),
+              s)
+          )
+            try {
+              Ee(t, s, !0, !0);
+            } catch (e) {
+              return void Le(t, "Invalid regex: " + s);
+            }
+          for (
+            var l, c, u = Ce(t).getQuery(), h = [], p = "", f = o;
+            f <= i;
+            f++
+          ) {
+            u.test(t.getLine(f)) &&
+              (h.push(f + 1), (p += t.getLine(f) + "<br>"));
+          }
+          n
+            ? ((l = 0),
+              (c = function() {
+                var e;
+                l < h.length &&
+                  ((e = h[l] + n), Fe.processCommand(t, e, { callback: c })),
+                  l++;
+              })())
+            : Le(t, p);
+        } else Le(t, "Regular Expression missing from global");
+      },
+      substitute: function(t, e) {
+        if (!t.getSearchCursor)
+          throw new Error(
+            "Search feature not available. Requires searchcursor.js or any other getSearchCursor implementation."
+          );
+        var r,
+          n,
+          o,
+          i,
+          a,
+          s,
+          l,
+          c,
+          u,
+          h = e.argString,
+          p = h ? we(h, h[0]) : [],
+          f = "",
+          d = !1,
+          m = !1;
+        if (p.length)
+          (r = p[0]),
+            A("pcre") && "" !== r && (r = new RegExp(r).source),
+            (f = p[1]),
+            r &&
+            "$" === r[r.length - 1] &&
+            ((r = r.slice(0, r.length - 1) + "\\n"),
+              (f = f ? f + "\n" : "\n")),
+            void 0 !== f &&
+            ((f = A("pcre")
+              ? (function(e) {
+                for (var t = new Ze.StringStream(e), r = []; !t.eol();) {
+                  for (; t.peek() && "\\" != t.peek();) r.push(t.next());
+                  var n = !1;
+                  for (var o in Ae)
+                    if (t.match(o, !0)) {
+                      (n = !0), r.push(Ae[o]);
+                      break;
+                    }
+                  n || r.push(t.next());
+                }
+                return r.join("");
+              })(f.replace(/([^\\])&/g, "$1$$&"))
+              : Se(f)),
+              (K.lastSubstituteReplacePart = f)),
+            (n = p[2] ? p[2].split(" ") : []);
+        else if (h && h.length)
+          return void Le(
+            t,
+            "Substitutions should be of the form :s/pattern/replace/"
+          );
+        if (
+          (n &&
+            ((o = n[0]),
               (i = parseInt(n[1])),
               o &&
-                (-1 != o.indexOf("c") && ((d = !0), o.replace("c", "")),
+              (-1 != o.indexOf("c") && ((d = !0), o.replace("c", "")),
                 -1 != o.indexOf("g") && ((m = !0), o.replace("g", "")),
                 (r = A("pcre")
                   ? r + "/" + o
                   : r.replace(/\//g, "\\/") + "/" + o))),
             r)
-          )
-            try {
-              Ee(t, r, !0, !0);
-            } catch (e) {
-              return void Le(t, "Invalid regex: " + r);
-            }
-          void 0 !== (f = f || K.lastSubstituteReplacePart)
-            ? ((a = Ce(t).getQuery()),
-              (s = void 0 !== e.line ? e.line : t.getCursor().line),
-              (l = e.lineEnd || s),
-              s == t.firstLine() && l == t.lastLine() && (l = 1 / 0),
-              i && (l = (s = l) + i - 1),
-              (c = J(t, tt(s, 0))),
-              (u = t.getSearchCursor(a, c)),
-              (function (o, e, n, i, a, s, t, r, l) {
-                o.state.vim.exMode = !0;
-                var c = !1,
-                  u = s.from();
-                function h() {
-                  o.operation(function () {
-                    for (; !c; ) p(), f();
-                    d();
-                  });
-                }
-                function p() {
-                  var e = o.getRange(s.from(), s.to()).replace(t, r);
-                  s.replace(e);
-                }
-                function f() {
-                  for (
-                    ;
-                    s.findNext() &&
-                    ((e = s.from()),
+        )
+          try {
+            Ee(t, r, !0, !0);
+          } catch (e) {
+            return void Le(t, "Invalid regex: " + r);
+          }
+        void 0 !== (f = f || K.lastSubstituteReplacePart)
+          ? ((a = Ce(t).getQuery()),
+            (s = void 0 !== e.line ? e.line : t.getCursor().line),
+            (l = e.lineEnd || s),
+            s == t.firstLine() && l == t.lastLine() && (l = 1 / 0),
+            i && (l = (s = l) + i - 1),
+            (c = J(t, tt(s, 0))),
+            (u = t.getSearchCursor(a, c)),
+            (function(o, e, n, i, a, s, t, r, l) {
+              o.state.vim.exMode = !0;
+              var c = !1,
+                u = s.from();
+              function h() {
+                o.operation(function() {
+                  for (; !c;) p(), f();
+                  d();
+                });
+              }
+              function p() {
+                var e = o.getRange(s.from(), s.to()).replace(t, r);
+                s.replace(e);
+              }
+              function f() {
+                for (
+                  ;
+                  s.findNext() &&
+                  ((e = s.from()),
                     (t = i),
                     (r = a),
                     "number" != typeof e && (e = e.line),
                     t instanceof Array
                       ? w(e, t)
                       : r
-                      ? t <= e && e <= r
-                      : e == t);
+                        ? t <= e && e <= r
+                        : e == t);
 
-                  )
-                    if (n || !u || s.from().line != u.line)
-                      return (
-                        o.scrollIntoView(s.from(), 30),
-                        o.setSelection(s.from(), s.to()),
-                        (u = s.from()),
-                        void (c = !1)
-                      );
-                  var e, t, r;
-                  c = !0;
-                }
-                function d(e) {
-                  var t;
-                  e && e(),
-                    o.focus(),
-                    u &&
-                      (o.setCursor(u),
-                      ((t = o.state.vim).exMode = !1),
-                      (t.lastHPos = t.lastHSPos = u.ch)),
-                    l && l();
-                }
-                if ((f(), c)) return Le(o, "No matches for " + t.source);
-                if (!e) return h(), l && l();
-                Re(o, {
-                  prefix: "replace with <strong>" + r + "</strong> (y/n/a/q/l)",
-                  onKeyDown: function (e, t, r) {
-                    switch ((Ze.e_stop(e), Ze.keyName(e))) {
-                      case "Y":
-                        p(), f();
-                        break;
-                      case "N":
-                        f();
-                        break;
-                      case "A":
-                        var n = l;
-                        (l = void 0), o.operation(h), (l = n);
-                        break;
-                      case "L":
-                        p();
-                      case "Q":
-                      case "Esc":
-                      case "Ctrl-C":
-                      case "Ctrl-[":
-                        d(r);
-                    }
-                    return c && d(r), !0;
-                  },
-                });
-              })(t, d, m, s, l, u, a, f, e.callback))
-            : Le(t, "No previous substitute regular expression");
-        },
-        redo: Ze.commands.redo,
-        undo: Ze.commands.undo,
-        write: function (e) {
-          Ze.commands.save ? Ze.commands.save(e) : e.save && e.save();
-        },
-        nohlsearch: function (e) {
-          Ke(e);
-        },
-        yank: function (e) {
-          var t = z(e.getCursor()).line,
-            r = e.getLine(t);
-          K.registerController.pushText("0", "yank", r, !0, !0);
-        },
-        delmarks: function (e, t) {
-          if (t.argString && re(t.argString))
-            for (
-              var r = e.state.vim, n = new Ze.StringStream(re(t.argString));
-              !n.eol();
+                )
+                  if (n || !u || s.from().line != u.line)
+                    return (
+                      o.scrollIntoView(s.from(), 30),
+                      o.setSelection(s.from(), s.to()),
+                      (u = s.from()),
+                      void (c = !1)
+                    );
+                var e, t, r;
+                c = !0;
+              }
+              function d(e) {
+                var t;
+                e && e(),
+                  o.focus(),
+                  u &&
+                  (o.setCursor(u),
+                    ((t = o.state.vim).exMode = !1),
+                    (t.lastHPos = t.lastHSPos = u.ch)),
+                  l && l();
+              }
+              if ((f(), c)) return Le(o, "No matches for " + t.source);
+              if (!e) return h(), l && l();
+              Re(o, {
+                prefix: "replace with <strong>" + r + "</strong> (y/n/a/q/l)",
+                onKeyDown: function(e, t, r) {
+                  switch ((Ze.e_stop(e), Ze.keyName(e))) {
+                    case "Y":
+                      p(), f();
+                      break;
+                    case "N":
+                      f();
+                      break;
+                    case "A":
+                      var n = l;
+                      (l = void 0), o.operation(h), (l = n);
+                      break;
+                    case "L":
+                      p();
+                    case "Q":
+                    case "Esc":
+                    case "Ctrl-C":
+                    case "Ctrl-[":
+                      d(r);
+                  }
+                  return c && d(r), !0;
+                },
+              });
+            })(t, d, m, s, l, u, a, f, e.callback))
+          : Le(t, "No previous substitute regular expression");
+      },
+      redo: Ze.commands.redo,
+      undo: Ze.commands.undo,
+      write: function(e) {
+        Ze.commands.save ? Ze.commands.save(e) : e.save && e.save();
+      },
+      nohlsearch: function(e) {
+        Ke(e);
+      },
+      yank: function(e) {
+        var t = z(e.getCursor()).line,
+          r = e.getLine(t);
+        K.registerController.pushText("0", "yank", r, !0, !0);
+      },
+      delmarks: function(e, t) {
+        if (t.argString && re(t.argString))
+          for (
+            var r = e.state.vim, n = new Ze.StringStream(re(t.argString));
+            !n.eol();
 
-            ) {
-              n.eatSpace();
-              var o = n.pos;
+          ) {
+            n.eatSpace();
+            var o = n.pos;
+            if (!n.match(/[a-zA-Z]/, !1))
+              return void Le(
+                e,
+                "Invalid argument: " + t.argString.substring(o)
+              );
+            var i = n.next();
+            if (n.match("-", !0)) {
               if (!n.match(/[a-zA-Z]/, !1))
                 return void Le(
                   e,
                   "Invalid argument: " + t.argString.substring(o)
                 );
-              var i = n.next();
-              if (n.match("-", !0)) {
-                if (!n.match(/[a-zA-Z]/, !1))
-                  return void Le(
-                    e,
-                    "Invalid argument: " + t.argString.substring(o)
-                  );
-                var a = i,
-                  s = n.next();
-                if (!((y(a) && y(s)) || (k(a) && k(s))))
-                  return void Le(e, "Invalid argument: " + a + "-");
-                var l = a.charCodeAt(0),
-                  c = s.charCodeAt(0);
-                if (c <= l)
-                  return void Le(
-                    e,
-                    "Invalid argument: " + t.argString.substring(o)
-                  );
-                for (var u = 0; u <= c - l; u++) {
-                  var h = String.fromCharCode(l + u);
-                  delete r.marks[h];
-                }
-              } else delete r.marks[i];
-            }
-          else Le(e, "Argument required");
-        },
+              var a = i,
+                s = n.next();
+              if (!((y(a) && y(s)) || (k(a) && k(s))))
+                return void Le(e, "Invalid argument: " + a + "-");
+              var l = a.charCodeAt(0),
+                c = s.charCodeAt(0);
+              if (c <= l)
+                return void Le(
+                  e,
+                  "Invalid argument: " + t.argString.substring(o)
+                );
+              for (var u = 0; u <= c - l; u++) {
+                var h = String.fromCharCode(l + u);
+                delete r.marks[h];
+              }
+            } else delete r.marks[i];
+          }
+        else Le(e, "Argument required");
       },
+    },
       Fe = new je();
     function We(e) {
       var t = e.state.vim,
@@ -4412,8 +4408,8 @@ type: application/javascript
         i = r.lastInsertModeChanges;
       o || (e.off("change", De), Ze.off(e.getInputField(), "keydown", Qe)),
         !o &&
-          1 < t.insertModeRepeat &&
-          (ze(e, t, t.insertModeRepeat - 1, !0),
+        1 < t.insertModeRepeat &&
+        (ze(e, t, t.insertModeRepeat - 1, !0),
           (t.lastEditInputState.repeatOverride = t.insertModeRepeat)),
         delete t.insertModeRepeat,
         (t.insertMode = !1),
@@ -4424,14 +4420,14 @@ type: application/javascript
         n.setText(i.changes.join("")),
         Ze.signal(e, "vim-mode-change", { mode: "normal" }),
         r.isRecording &&
-          (function (e) {
-            if (e.isPlaying) return;
-            var t = e.latestRegister,
-              r = K.registerController.getRegister(t);
-            r &&
-              r.pushInsertModeChanges &&
-              r.pushInsertModeChanges(e.lastInsertModeChanges);
-          })(r);
+        (function(e) {
+          if (e.isPlaying) return;
+          var t = e.latestRegister,
+            r = K.registerController.getRegister(t);
+          r &&
+            r.pushInsertModeChanges &&
+            r.pushInsertModeChanges(e.lastInsertModeChanges);
+        })(r);
     }
     function Ve(e) {
       Ge.unshift(e);
@@ -4442,20 +4438,20 @@ type: application/javascript
         o = K.macroModeState,
         i = o.lastInsertModeChanges;
       if (!o.isPlaying)
-        for (; t; ) {
+        for (; t;) {
           (i.expectCursorActivityForChange = !0),
             1 < i.ignoreCount
               ? i.ignoreCount--
               : ("+input" != t.origin &&
-                  "paste" != t.origin &&
-                  void 0 !== t.origin) ||
-                (1 < (r = e.listSelections().length) && (i.ignoreCount = r),
+                "paste" != t.origin &&
+                void 0 !== t.origin) ||
+              (1 < (r = e.listSelections().length) && (i.ignoreCount = r),
                 (n = t.text.join("\n")),
                 i.maybeReset && ((i.changes = []), (i.maybeReset = !1)),
                 n &&
-                  (e.state.overwrite && !/\n/.test(n)
-                    ? i.changes.push([n])
-                    : i.changes.push(n))),
+                (e.state.overwrite && !/\n/.test(n)
+                  ? i.changes.push([n])
+                  : i.changes.push(n))),
             (t = t.next);
         }
     }
@@ -4470,15 +4466,15 @@ type: application/javascript
           : (n.maybeReset = !0);
       } else
         e.curOp.isVimOp ||
-          (function (e, t) {
+          (function(e, t) {
             var r = e.getCursor("anchor"),
               n = e.getCursor("head");
             t.visualMode && !e.somethingSelected()
               ? le(e, !1)
               : t.visualMode ||
-                t.insertMode ||
-                !e.somethingSelected() ||
-                ((t.visualMode = !0),
+              t.insertMode ||
+              !e.somethingSelected() ||
+              ((t.visualMode = !0),
                 (t.visualLine = !1),
                 Ze.signal(e, "vim-mode-change", { mode: "visual" }));
             {
@@ -4512,7 +4508,7 @@ type: application/javascript
     function $e(e) {
       e.fakeCursor && (e.fakeCursor.clear(), (e.fakeCursor = null)),
         e.fakeCursorBookmark &&
-          (e.fakeCursorBookmark.clear(), (e.fakeCursorBookmark = null));
+        (e.fakeCursorBookmark.clear(), (e.fakeCursorBookmark = null));
     }
     function qe(e) {
       this.keyName = e;
@@ -4522,7 +4518,7 @@ type: application/javascript
         r = Ze.keyName(e);
       r &&
         ((-1 == r.indexOf("Delete") && -1 == r.indexOf("Backspace")) ||
-          Ze.lookupKey(r, "vim-insert", function () {
+          Ze.lookupKey(r, "vim-insert", function() {
             return (
               t.maybeReset && ((t.changes = []), (t.maybeReset = !1)),
               t.changes.push(new qe(r)),
@@ -4542,12 +4538,12 @@ type: application/javascript
         var t;
         0 < o.lastInsertModeChanges.changes.length &&
           ((e = n.lastEditActionCommand ? e : 1),
-          (t = o.lastInsertModeChanges),
-          Xe(r, t.changes, e));
+            (t = o.lastInsertModeChanges),
+            Xe(r, t.changes, e));
       }
       if (
         ((n.inputState = n.lastEditInputState),
-        i && n.lastEditActionCommand.interlaceInsertRepeat)
+          i && n.lastEditActionCommand.interlaceInsertRepeat)
       )
         for (var c = 0; c < e; c++) s(), l(1);
       else t || s(), l(e);
@@ -4570,9 +4566,9 @@ type: application/javascript
           h instanceof qe
             ? Ze.lookupKey(h.keyName, "vim-insert", n)
             : "string" == typeof h
-            ? ((l = t.getCursor()), t.replaceRange(h, l, l))
-            : ((u = q((c = t.getCursor()), 0, h[0].length)),
-              t.replaceRange(h[0], c, u));
+              ? ((l = t.getCursor()), t.replaceRange(h, l, l))
+              : ((u = q((c = t.getCursor()), 0, h[0].length)),
+                t.replaceRange(h[0], c, u));
         }
       }
       i && t.setCursor(q(o, 0, 1));
