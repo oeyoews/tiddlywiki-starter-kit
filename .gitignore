@@ -33,7 +33,7 @@ tiddlers/config/RecentTab/Mode.tid
 PluginName*
 .idea
 *.tgz
-tiddlers/layout.tid
+# tiddlers/layout.tid
 # tiddlers/**/readonly.tid
 stickytitles.tid
 
