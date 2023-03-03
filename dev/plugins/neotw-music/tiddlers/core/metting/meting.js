@@ -1,20 +1,14 @@
-title: $:/plugins/oeyoews/neotw-music/js/meting-js
-tags: $:/tags/RawMarkupWikified/BottomBody
-type: application/javascript
-
-`<script>
 class MetingJSElement extends HTMLElement {
-
   connectedCallback() {
     if (window.APlayer && window.fetch) {
-      this._init()
-      this._parse()
+      this._init();
+      this._parse();
     }
   }
 
   disconnectedCallback() {
     if (!this.lock) {
-      this.aplayer.destroy()
+      this.aplayer.destroy();
     }
   }
 
@@ -22,28 +16,45 @@ class MetingJSElement extends HTMLElement {
     return str
       .replace(/^[_.\- ]+/, '')
       .toLowerCase()
-      .replace(/[_.\- ]+(\w|$)/g, (m, p1) => p1.toUpperCase())
+      .replace(/[_.\- ]+(\w|$)/g, (m, p1) => p1.toUpperCase());
   }
 
   _init() {
-    let config = {}
+    let config = {};
     for (let i = 0; i < this.attributes.length; i += 1) {
-      config[this._camelize(this.attributes[i].name)] = this.attributes[i].value
+      config[this._camelize(this.attributes[i].name)] =
+        this.attributes[i].value;
     }
     let keys = [
-      'server', 'type', 'id', 'api', 'auth',
-      'auto', 'lock',
-      'name', 'title', 'artist', 'author', 'url', 'cover', 'pic', 'lyric', 'lrc',
-    ]
-    this.meta = {}
+      'server',
+      'type',
+      'id',
+      'api',
+      'auth',
+      'auto',
+      'lock',
+      'name',
+      'title',
+      'artist',
+      'author',
+      'url',
+      'cover',
+      'pic',
+      'lyric',
+      'lrc',
+    ];
+    this.meta = {};
     for (let key of keys) {
-      this.meta[key] = config[key]
-      delete config[key]
+      this.meta[key] = config[key];
+      delete config[key];
     }
-    this.config = config
+    this.config = config;
 
-    this.api = this.meta.api || window.meting_api || 'https://twm.oeyoewl.top/api?server=:server&type=:type&id=:id&r=:r'
-    if (this.meta.auto) this._parse_link()
+    this.api =
+      this.meta.api ||
+      window.meting_api ||
+      'https://twm.oeyoewl.top/api?server=:server&type=:type&id=:id&r=:r';
+    if (this.meta.auto) this._parse_link();
   }
 
   _parse_link() {
@@ -62,16 +73,16 @@ class MetingJSElement extends HTMLElement {
       ['xiami.com.*album/(\\w+)', 'xiami', 'album'],
       ['xiami.com.*artist/(\\w+)', 'xiami', 'artist'],
       ['xiami.com.*collect/(\\w+)', 'xiami', 'playlist'],
-    ]
+    ];
 
     for (let rule of rules) {
-      let patt = new RegExp(rule[0])
-      let res = patt.exec(this.meta.auto)
+      let patt = new RegExp(rule[0]);
+      let res = patt.exec(this.meta.auto);
       if (res !== null) {
-        this.meta.server = rule[1]
-        this.meta.type = rule[2]
-        this.meta.id = res[1]
-        return
+        this.meta.server = rule[1];
+        this.meta.type = rule[2];
+        this.meta.id = res[1];
+        return;
       }
     }
   }
@@ -85,16 +96,16 @@ class MetingJSElement extends HTMLElement {
         cover: this.meta.cover || this.meta.pic,
         lrc: this.meta.lrc || this.meta.lyric || '',
         type: this.meta.type || 'auto',
-      }
+      };
       if (!result.lrc) {
-        this.meta.lrcType = 0
+        this.meta.lrcType = 0;
       }
       if (this.innerText) {
-        result.lrc = this.innerText
-        this.meta.lrcType = 2
+        result.lrc = this.innerText;
+        this.meta.lrcType = 2;
       }
-      this._loadPlayer([result])
-      return
+      this._loadPlayer([result]);
+      return;
     }
 
     let url = this.api
@@ -102,48 +113,47 @@ class MetingJSElement extends HTMLElement {
       .replace(':type', this.meta.type)
       .replace(':id', this.meta.id)
       .replace(':auth', this.meta.auth)
-      .replace(':r', Math.random())
+      .replace(':r', Math.random());
 
     fetch(url)
       .then(res => res.json())
-      .then(result => this._loadPlayer(result))
+      .then(result => this._loadPlayer(result));
   }
 
   _loadPlayer(data) {
-
     let defaultOption = {
       audio: data,
       mutex: true,
       lrcType: this.meta.lrcType || 3,
-      storageName: 'metingjs'
-    }
+      storageName: 'metingjs',
+    };
 
-    if (!data.length) return
+    if (!data.length) return;
 
     let options = {
       ...defaultOption,
       ...this.config,
-    }
+    };
     for (let optkey in options) {
       if (options[optkey] === 'true' || options[optkey] === 'false') {
-        options[optkey] = (options[optkey] === 'true')
+        options[optkey] = options[optkey] === 'true';
       }
     }
 
-    let div = document.createElement('div')
-    options.container = div
-    this.appendChild(div)
+    let div = document.createElement('div');
+    options.container = div;
+    this.appendChild(div);
 
-    this.aplayer = new APlayer(options)
+    this.aplayer = new APlayer(options);
   }
-
 }
 
-console.log("%c 🎶 MetingJS(TWM) v2.0.1 🎉", "background: linear-gradient(to left, #12c2e9, #c471ed, #f64f59); color: black;border-radius: 3px;padding: 3px;")
-<!-- console.log('\n %c MetingJS v2.0.1 %c https://github.com/metowolf/MetingJS \n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;') -->
+console.log(
+  '%c 🎶 MetingJS(TWM) v2.0.1 🎉',
+  'background: linear-gradient(to left, #12c2e9, #c471ed, #f64f59); color: black;border-radius: 3px;padding: 3px;',
+);
 
 if (window.customElements && !window.customElements.get('meting-js')) {
-  window.MetingJSElement = MetingJSElement
-  window.customElements.define('meting-js', MetingJSElement)
-}`
-`</script>`
+  window.MetingJSElement = MetingJSElement;
+  window.customElements.define('meting-js', MetingJSElement);
+}
