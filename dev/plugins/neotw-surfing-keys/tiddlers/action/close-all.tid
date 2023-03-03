@@ -1,8 +1,0 @@
-code-body: yes
-key: ((close-all))
-tags: $:/tags/KeyboardShortcut
-title: $:/plugins/oeyoews/neotw-surfing-keys/close-all
-
-<$navigator story="$:/StoryList" history="$:/HistoryList">
-<$action-sendmessage $message="tm-close-all-tiddlers"/>
-</$navigator>

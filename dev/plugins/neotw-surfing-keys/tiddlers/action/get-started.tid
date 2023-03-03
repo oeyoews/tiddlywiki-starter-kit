@@ -1,0 +1,8 @@
+code-body: yes
+key: ((get-started))
+tags: $:/tags/KeyboardShortcut
+title: $:/plugins/oeyoews/neotw-surfing-keys/get-started
+
+<$navigator story="$:/StoryList" history="$:/HistoryList">
+<$action-navigate $to="GettingStarted"/>
+</$navigator>
