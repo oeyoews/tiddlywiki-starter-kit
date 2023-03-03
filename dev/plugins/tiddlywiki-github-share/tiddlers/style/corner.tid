@@ -8,7 +8,7 @@ title: $:/plugins/oeyoews/tiddlywiki-github-share/icon/corner
     fill: #70b7fd;
     color: #fff;
     position: absolute;
-    z-index: 1001;
+    z-index: 899;
     top: 0;
     right: 0;
     border: 0;
