@@ -1,8 +1,7 @@
 title: $:/plugins/oeyoews/tiddlywiki-giscus/close-modal
 
-<$button class="tc-btn-invisible">
-{{$:/temp/focussedTiddler}}
-</$button>
+{{$:/plugins/oeyoews/tiddlywiki-giscus/icon-gem}}
+<$view tiddler="$:/temp/focussedTiddler" field="text" />
 
 <span style="float:right;">
 <$button class="tc-btn-invisible" tooltip="close">

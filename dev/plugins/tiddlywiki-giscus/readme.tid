@@ -49,6 +49,7 @@ title: $:/plugins/oeyoews/tiddlywiki-giscus/readme
 
 !! TODO
 
+* 自动切换评论主题
 * 统一button样式
 * 提供未配置检测警告
 * 提供依赖检测警告
