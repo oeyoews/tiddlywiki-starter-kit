@@ -7,10 +7,10 @@ title: $:/plugins/oeyoews/neotw-surfing-keys/list
 |{{$:/core/images/options-button}}|<kbd>Ctrl+I</kbd>|Setting|
 |{{$:/core/images/plugin-generic-plugin}}|<kbd>Ctrl+Shift+U</kbd>|Update|
 |{{$:/core/images/full-screen-button}}|<kbd>Alt+F</kbd>|Fullscreen|
-|{{$:/core/images/help}}|<kbd>Ctrl+/</kbd>|Keyboard shortcuts|
-|{{$:/xp/images/plugin}}|<kbd>Ctrl+G</kbd>|Install plugins|
+|{{$:/core/images/help}}|<kbd>Ctrl+/</kbd>|Keyboard|
+|{{$:/xp/images/plugin}}|<kbd>Ctrl+G</kbd>|Install|
 |{{$:/core/images/advanced-search-button}}|<kbd>Ctrl+K</kbd>|Search|
 | 👀 |<kbd>Ctrl+Shift+H</kbd>|View Fields|
-| 🔰 |<kbd>Alt+Shift+G</kbd>|GettingStarted|
+| 🔰 |<kbd>Alt+Shift+G</kbd>|Home|
 
 </center>
