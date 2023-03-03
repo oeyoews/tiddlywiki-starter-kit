@@ -6772,33 +6772,6 @@ footer {
 .tc-sidebar-scrollable {
     display: none;
 }
-.shield {
-  font-weight: normal;
-  display: inline-block;
-  color: white;
-  font-size: .8em;
-  margin: 5px;
-}.shield:hover {
-  text-decoration: none;
-}.shield .label {
-  background: #555;
-	border-radius: 3px 0 0 3px;
-  padding: 3px 6px;
-}.shield .status {
-  background: #40ba12;
-	border-radius: 0 3px 3px 0;
-  padding: 3px 6px;
-}.shield.shield-purple .status {
-  background: #923293;
-}.shield.shield-red .status {
-  background: #cc5640;
-}.shield.shield-blue .status {
-  background: #0e7fbf;
-}.shield.shield-info .status {
-  background: #5BC0DE;
-}.shield.shield-time .status {
-  background: #7f4bca;
-}
 .tc-tag-label:after {
 	color: gray;
 	opacity: calc(2/3);
@@ -7100,7 +7073,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 121";
+  content: " 119";
 }
 
 
@@ -7417,7 +7390,8 @@ ul.bullets li::marker {
 	background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
 	-webkit-background-clip: text;
 	color: transparent;
-}.neotw-circle:before {
+}
+.neotw-circle:before {
 		content: "◍ ";
 		color: orange;
 }.neotw-music:before {
@@ -7544,11 +7518,11 @@ footer {
 	font-size: 50%;
 }footer .inline-icon svg{
   height:1em;
-}#hitokoto, #h-author {
+}#hitokoto,
+#h-author {
   background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
   -webkit-background-clip: text;
   color: transparent;
-  font-weight: 700;
 }#h-cursor:hover {
   cursor: pointer;
 }</$list><$list filter="[{$:/layout}!match[$:/core/ui/PageTemplate]]">
@@ -8071,7 +8045,7 @@ footer {
   display: block;
   overflow: hidden;
   width: 100%;
-  content: " ";
+  content: ' ';
 }
 .aplayer .aplayer-lrc:after {
   bottom: 0;
@@ -8258,41 +8232,10 @@ footer {
     transform: rotate(1turn);
   }
 }
-.netease-player-reuse-pane {
-    position: absolute;
-		 z-index:999;
-    right: 10px;
-    width: auto;
-		 height: auto;
-    max-width: 40px;
-    max-height: 40px;
-    overflow: hidden;
-    box-sizing: content-box;
-    transition: max-width 0.5s, max-height 0.5s;
-}
-.netease-player-reuse-pane:hover {
-  max-width: 80vw;
-  max-height: 80vh;
-}
-.netease-player-reuse-pane-content {
-    display: inline-block;
-    background-color: transparent;
-}.netease-player-reuse-pane-content img {
-    width:auto;
-		 height:auto;
-		 max-width: 40px;
-    max-height: 40px;
-    transition: all 1s;
-}
-.netease-player-reuse-pane-content:hover img {
-		max-width: 0px;
-  	max-height: 0px;
-		transition: all 0s;
-}
 .aplayer.aplayer-narrow .aplayer-body {
   left: -66px !important;
 }.aplayer-body:hover {
-    left: 0px !important;
+  left: 0px !important;
 }
 .o-surfing-warning .tc-modal,
 .o-surfing-warning .tc-modal-header,
