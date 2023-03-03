@@ -1,7 +1,7 @@
 title: $:/plugins/oeyoews/neotw/setting
 subtitle: {{$:/core/icon}} Neotw Setting {{$:/plugins/oeyoews/neotw/close-modal}}
 mask-closable: yes
-class: o-neotw-setup tc-modal-centered
+class: o-neotw-setup
 
 <$list filter="[[$:/plugins/kookma/shiraz-callout]has[plugin-type]]">
 {{neotw-guides}}
