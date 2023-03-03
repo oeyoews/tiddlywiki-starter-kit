@@ -48,7 +48,7 @@
     scriptNode.setAttribute('data-term', id);
     scriptNode.setAttribute('data-reactions-enabled', '1');
     scriptNode.setAttribute('data-emit-metadata', '1');
-    scriptNode.setAttribute('data-input-position', 'top');
+    scriptNode.setAttribute('data-input-position', 'bottom');
     scriptNode.setAttribute('data-loading', 'lazy');
     scriptNode.setAttribute('data-theme', theme);
     scriptNode.setAttribute('data-lang', lang);
