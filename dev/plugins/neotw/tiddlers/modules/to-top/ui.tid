@@ -6,7 +6,7 @@ tags: $:/tags/PageTemplate
 <$list filter="[[$:/temp/focussedTiddler]get[text]!is[system]]">
 <$button tooltip="Comment" class="o-btn-back">
 <$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/tiddlywiki-giscus/giscus-modal"/>
-{{$:/plugins/oeyoews/tiddlywiki-giscus/icon}}
+{{$:/plugins/oeyoews/tiddlywiki-giscus/icon-gem}}
 </$button>
 </$list>
 </$list>
@@ -14,7 +14,7 @@ tags: $:/tags/PageTemplate
 
 \define reveal-js()
 <$button tooltip="Reveal Slides" class="o-btn-back">
-{{reveal-icon}}
+{{$:/plugins/oeyoews/neotw/icon/revea-js}}
 <$action-navigate $to="neotw-reveal-js" />
 </$button>
 \end
