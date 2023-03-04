@@ -41,7 +41,7 @@
         "requires-reload": "no"
     },
     {
-        "version": "0.7.0",
+        "version": "0.8.0",
         "type": "application/json",
         "title": "$:/plugins/oeyoews/neotw-hitokoto",
         "plugin-type": "plugin",

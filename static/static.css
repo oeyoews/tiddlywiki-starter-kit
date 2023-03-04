@@ -7179,7 +7179,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 120";
+  content: " 121";
 }
 
 
@@ -7621,6 +7621,428 @@ ul.bullets li::marker {
 .neotw-checkbox:before {
 	content: "✅"
 }
+.hexample {
+    font-size: 50%;
+    display: none;
+}
+[data-tiddler-title="2023-02-28"] .hexample  {display: block !important;}
+
+[data-tiddler-title="about-TIDDLYWIKI_PLUGIN_PATH-not-working"] .hexample  {display: block !important;}
+
+[data-tiddler-title="add-animation-for-layout"] .hexample  {display: block !important;}
+
+[data-tiddler-title="affine-pro"] .hexample  {display: block !important;}
+
+[data-tiddler-title="awesome-plugins-tiddlywiki"] .hexample  {display: block !important;}
+
+[data-tiddler-title="banner.png"] .hexample  {display: block !important;}
+
+[data-tiddler-title="bing-go"] .hexample  {display: block !important;}
+
+[data-tiddler-title="bing-image-everyday"] .hexample  {display: block !important;}
+
+[data-tiddler-title="build external image"] .hexample  {display: block !important;}
+
+[data-tiddler-title="calendar"] .hexample  {display: block !important;}
+
+[data-tiddler-title="cat.svg"] .hexample  {display: block !important;}
+
+[data-tiddler-title="colorful-png"] .hexample  {display: block !important;}
+
+[data-tiddler-title="confilict 01"] .hexample  {display: block !important;}
+
+[data-tiddler-title="custom-tag-template"] .hexample  {display: block !important;}
+
+[data-tiddler-title="dream-plan-websites"] .hexample  {display: block !important;}
+
+[data-tiddler-title="f-notion"] .hexample  {display: block !important;}
+
+[data-tiddler-title="f-talk"] .hexample  {display: block !important;}
+
+[data-tiddler-title="f-tiddlyhost"] .hexample  {display: block !important;}
+
+[data-tiddler-title="f-tiddlywiki"] .hexample  {display: block !important;}
+
+[data-tiddler-title="f-tw5"] .hexample  {display: block !important;}
+
+[data-tiddler-title="firefox-network"] .hexample  {display: block !important;}
+
+[data-tiddler-title="fix-conflict"] .hexample  {display: block !important;}
+
+[data-tiddler-title="gallary"] .hexample  {display: block !important;}
+
+[data-tiddler-title="GettingStarted"] .hexample  {display: block !important;}
+
+[data-tiddler-title="gh-pages-cache"] .hexample  {display: block !important;}
+
+[data-tiddler-title="github-discussion-org"] .hexample  {display: block !important;}
+
+[data-tiddler-title="gitter-talk-for-tiddlywiki"] .hexample  {display: block !important;}
+
+[data-tiddler-title="gnome-extensions"] .hexample  {display: block !important;}
+
+[data-tiddler-title="heart"] .hexample  {display: block !important;}
+
+[data-tiddler-title="Index"] .hexample  {display: block !important;}
+
+[data-tiddler-title="js-books"] .hexample  {display: block !important;}
+
+[data-tiddler-title="markdown-test"] .hexample  {display: block !important;}
+
+[data-tiddler-title="memos-docker-compose"] .hexample  {display: block !important;}
+
+[data-tiddler-title="missing-thinkup"] .hexample  {display: block !important;}
+
+[data-tiddler-title="name-your-tid"] .hexample  {display: block !important;}
+
+[data-tiddler-title="nav-bug"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neoto/macro/tiddlywiki"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw-badges"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw-changlog"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw-features"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw-gallary"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw-gettingstarted"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw-guides"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw-keymaps"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw-plugins"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw-reveal-cover"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw-reveal-js"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw-stylesheet"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/action/base-time-darkmode"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/actions/base-browser-darkmode"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/archive/restore-button"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/archive/todo-table"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/archive/viewtemplate/todo-button"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/articla/tailwin css example"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/article/1 13"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/article/1 26"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/article/1 4"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/article/1 7"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/article/1 8"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/article/awesome-websites"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/article/gradient-icon"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/article/music-index"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/article/tempmail"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/article/theme-patch-note"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/awesome-tiddlywiki"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/body-fontsize"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/browser/tip"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/button-checkbox"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/button/inbox"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/button/mode pagecontrol"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/button/random"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/change-theme-palette"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/CHANGELOG"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/checkbox"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/clock"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/config-table"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/configuration"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/css/below-toolbar"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/docs/details-marker-bug"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/docs/list"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/docs/macro-not-snippet"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/example/bullets-level"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/example/keyword"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/example/Live Time"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/example/shield-online"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/fontawesome-tutorial"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/fonts/maple-mono"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/fonts/twemoji"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/gravatar.png"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/help/open"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/icon/add"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/icon/approve"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/icon/bell"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/icon/bili"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/icon/book"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/icon/closed-folder"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/icon/comment"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/icon/comment-close"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/icon/copy"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/icon/github"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/icon/notification"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/icon/opened-folder"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/icon/pen"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/icon/penguin"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/icon/plugins"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/icon/reset"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/icon/seting"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/icon/seting-red"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/icon/warn"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/image/banner"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/image/bell"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/image/copy"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/image/inbox"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/image/randomselection.svg"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/image/showcase-01.png"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/images/white-vanilla.png"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/INBOX"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/logo"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/macro/better-url"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/macro/gitlab-image"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/macro/gradient"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/macro/img-shield"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/macro/keyword"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/macro/layout"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/macro/neotw"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/macro/neotw-span"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/macro/reuse"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/macro/shield-online"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/macro/symbol"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/macro/underline"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/mobile/darkmode-button"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/network"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/new/New Tiddler"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/new/New Tiddler 1"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/new/New Tiddler 2"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/new/New Tiddler 3"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/new/New Tiddler 4"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/new/New Tiddler 5"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/new/New Tiddler 6"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/new/New Tiddler 7"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/new/New Tiddler 8"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/new/New Tiddler 9"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/official-plugin-library"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/readmode-v1"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/readmode-v2"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/search-fields"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/search-images"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/searchtag"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/setup"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/sidebar/color-picker"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/story-width"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/style/box"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/style/dd"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/style/fix-title-too-long"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/style/save-button"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/style/select"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/svg/vscode"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/switch-readonly"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/switch-readonly-off"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/switch-readonly-on"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/switch-tip"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/template/date-format"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/test"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/tiddlywiki/tip/convert-singlefile"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/tool/language"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/twitter-button"] .hexample  {display: block !important;}
+
+[data-tiddler-title="neotw/username"] .hexample  {display: block !important;}
+
+[data-tiddler-title="New Tiddler"] .hexample  {display: block !important;}
+
+[data-tiddler-title="New Tiddler 2"] .hexample  {display: block !important;}
+
+[data-tiddler-title="New Tiddler 3"] .hexample  {display: block !important;}
+
+[data-tiddler-title="New Tiddler 4"] .hexample  {display: block !important;}
+
+[data-tiddler-title="New Tiddler 5"] .hexample  {display: block !important;}
+
+[data-tiddler-title="New Tiddler 7"] .hexample  {display: block !important;}
+
+[data-tiddler-title="next-arrow"] .hexample  {display: block !important;}
+
+[data-tiddler-title="oeyoews"] .hexample  {display: block !important;}
+
+[data-tiddler-title="oeyoews_contributions.png"] .hexample  {display: block !important;}
+
+[data-tiddler-title="pang-test"] .hexample  {display: block !important;}
+
+[data-tiddler-title="PLUGINS"] .hexample  {display: block !important;}
+
+[data-tiddler-title="poem-random"] .hexample  {display: block !important;}
+
+[data-tiddler-title="prev-arrow"] .hexample  {display: block !important;}
+
+[data-tiddler-title="preview-all-plugins-tw"] .hexample  {display: block !important;}
+
+[data-tiddler-title="process-tiddlywiki-img-to-img.shield"] .hexample  {display: block !important;}
+
+[data-tiddler-title="puzzle"] .hexample  {display: block !important;}
+
+[data-tiddler-title="recent-count"] .hexample  {display: block !important;}
+
+[data-tiddler-title="recent-note-record"] .hexample  {display: block !important;}
+
+[data-tiddler-title="reveal"] .hexample  {display: block !important;}
+
+[data-tiddler-title="reveal-icon"] .hexample  {display: block !important;}
+
+[data-tiddler-title="reveal-js-badges"] .hexample  {display: block !important;}
+
+[data-tiddler-title="reveal-js-neotw-deploy"] .hexample  {display: block !important;}
+
+[data-tiddler-title="reveal-js-neotw-ending"] .hexample  {display: block !important;}
+
+[data-tiddler-title="reveal-js-showcase"] .hexample  {display: block !important;}
+
+[data-tiddler-title="reveal-js-style"] .hexample  {display: block !important;}
+
+[data-tiddler-title="some tw website examples"] .hexample  {display: block !important;}
+
+[data-tiddler-title="table-todo"] .hexample  {display: block !important;}
+
+[data-tiddler-title="talk-timer"] .hexample  {display: block !important;}
+
+[data-tiddler-title="test-compose-on-tiddlywiki"] .hexample  {display: block !important;}
+
+[data-tiddler-title="test-info"] .hexample  {display: block !important;}
+
+[data-tiddler-title="test-one"] .hexample  {display: block !important;}
+
+[data-tiddler-title="test-picgo"] .hexample  {display: block !important;}
+
+[data-tiddler-title="test-two"] .hexample  {display: block !important;}
+
+[data-tiddler-title="tiddlywiki-bugs"] .hexample  {display: block !important;}
+
+[data-tiddler-title="tiddlywiki-heatmap"] .hexample  {display: block !important;}
+
+[data-tiddler-title="toggle-tags"] .hexample  {display: block !important;}
+
+[data-tiddler-title="tom.png"] .hexample  {display: block !important;}
+
+[data-tiddler-title="top-news"] .hexample  {display: block !important;}
+
+[data-tiddler-title="update-tiddlywiki-bug"] .hexample  {display: block !important;}
+
+[data-tiddler-title="use-flameshot-to-upload-image"] .hexample  {display: block !important;}
+
+[data-tiddler-title="use-latest-tiddlywiki"] .hexample  {display: block !important;}
+
+[data-tiddler-title="xiaofamao"] .hexample  {display: block !important;}
+
 <$list filter="[{$:/layout}match[$:/core/ui/PageTemplate]]">
 footer {
   text-align: center;
@@ -7643,8 +8065,6 @@ footer {
   color: transparent;
 }#h-cursor:hover {
   cursor: pointer;
-}.hexample {
-    font-size: 50%;
 }</$list><$list filter="[{$:/layout}!match[$:/core/ui/PageTemplate]]">
 footer {
     display: none !important;
