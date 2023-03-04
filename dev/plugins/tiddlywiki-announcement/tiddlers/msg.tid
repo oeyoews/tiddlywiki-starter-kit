@@ -1,7 +1,7 @@
 title: $:/plugins/oeyoews/tiddlywiki-announcement/msg
-subtitle: {{$:/plugins/oeyoews/tiddlywiki-announcement/announcement}}
+subtitle: {{$:/plugins/oeyoews/tiddlywiki-announcement/announcement}} {{$:/plugins/oeyoews/tiddlywiki-modal-ui/close-modal}}
 mask-closable: yes
-class: o-announcement
+class: o-tm
 
 <div class="o-warning">
 
