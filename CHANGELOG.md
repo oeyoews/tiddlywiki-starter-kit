@@ -1,3 +1,10 @@
+# [3.95.0](https://github.com/oeyoews/neotw/compare/v3.94.1...v3.95.0) (2023-03-04)
+
+
+### Features
+
+* add tiddlywiki-edition-macro ([3118bb6](https://github.com/oeyoews/neotw/commit/3118bb65041dd5d8a8e2dd2959cefc87d736d432))
+
 ## [3.94.1](https://github.com/oeyoews/neotw/compare/v3.94.0...v3.94.1) (2023-03-04)
 
 
