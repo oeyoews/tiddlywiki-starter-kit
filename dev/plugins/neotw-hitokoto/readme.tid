@@ -9,8 +9,4 @@ title: $:/plugins/oeyoews/neotw-hitokoto/readme
 <!-- https://hitokoto.tyr.im/ -->
 <!-- https://api.vvhan.com/ -->
 
-!! Usage
-
-* subfilter: [[$:/plugins/oeyoews/neotw-hitokoto/ui/hitokoto/filter]]
-
-{{$:/plugins/oeyoews/neotw-hitokoto/hitokoto}}
+> 在tiddler中嵌入一言

@@ -7,3 +7,5 @@ class: o-random-tip tc-modal-centered
 
 > 按住 alt j 即可快速创建当天日记.
 > <<random-author>>
+
+<<vanillaTid>>

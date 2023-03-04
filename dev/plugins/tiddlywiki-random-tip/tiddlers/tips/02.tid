@@ -20,3 +20,5 @@ class: o-random-tip tc-modal-centered
 <$list filter="[[$:/plugins/kookma/shiraz-callout]!has[plugin-type]]">
 <<content>>
 </$list>
+
+<<vanillaTid>>

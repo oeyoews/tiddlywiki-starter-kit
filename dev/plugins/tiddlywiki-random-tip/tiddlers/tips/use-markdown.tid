@@ -6,3 +6,5 @@ class: o-random-tip tc-modal-centered
 
 > 如果你不能马上适应tiddlywiki的wikitext语法， 你还可以安装markdown插件, 从而在tiddlywiki里面使用markdown语法.
 > <<random-author>>
+
+<<vanillaTid>>

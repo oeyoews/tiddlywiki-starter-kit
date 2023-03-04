@@ -17,3 +17,5 @@ class: o-random-tip tc-modal-centered
 > <<random-author>>
 
 </div>
+
+<<vanillaTid>>
