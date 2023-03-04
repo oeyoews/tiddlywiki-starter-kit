@@ -1,8 +1,5 @@
-created: 20150117152612000
-modified: 20220617125128201
+title: $:/plugins/oeyoews/tiddlywiki-edition-macro/style
 tags: $:/tags/Stylesheet
-title: $:/editions/tw5.com/doc-styles
-type: text/vnd.tiddlywiki
 
 .doc-def {
 	font-style: normal;
@@ -111,7 +108,7 @@ td svg {
 	margin-top: 0.2em;
 }
 
-.doc-example input[type=search] { 
+.doc-example input[type=search] {
   width: 95%;
 }
 .doc-example pre:first-child {
@@ -237,8 +234,7 @@ a.doc-deprecated-version.tc-tiddlylink {
 	height: 1em;
 }
 
-
-.doc-tiddler-fields table, 
+.doc-tiddler-fields table,
 .doc-tiddler-fields h2 {
 	margin: 0.5em 0;
 }
@@ -267,8 +263,8 @@ ol.doc-github-contributors li {
 	margin:3px 3px 10px 3px;
 	text-decoration:none;
 }
-.doc-github-contributors a img { 
-	border-radius: 50%; 
+.doc-github-contributors a img {
+	border-radius: 50%;
 	background:#eee;
 }
 .doc-github-contributor-username {
@@ -281,4 +277,3 @@ ol.doc-github-contributors li {
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
-
