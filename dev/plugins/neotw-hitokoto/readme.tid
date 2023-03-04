@@ -13,6 +13,4 @@ title: $:/plugins/oeyoews/neotw-hitokoto/readme
 
 * subfilter: [[$:/plugins/oeyoews/neotw-hitokoto/ui/hitokoto/filter]]
 
-!! Example
-
 {{$:/plugins/oeyoews/neotw-hitokoto/hitokoto}}

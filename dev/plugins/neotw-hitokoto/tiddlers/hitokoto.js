@@ -19,8 +19,5 @@ function hitokoto_footer(text = '#htext', author = '#hauthor') {
 const htext_example = '#htext-example';
 const hauthor_example = '#hauthor-example';
 
-hitokoto_footer();
-setInterval('hitokoto_footer()', 30000);
-
 hitokoto_footer(htext_example, hauthor_example);
-setInterval('hitokoto_footer(htext_example, hauthor_example)', 3000);
+setInterval('hitokoto_footer(htext_example, hauthor_example)', 9000);
