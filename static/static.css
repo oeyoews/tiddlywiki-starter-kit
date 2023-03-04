@@ -7622,6 +7622,7 @@ ul.bullets li::marker {
 	content: "✅"
 }
 .hexample {
+    margin-top: 10px;
     font-size: 50%;
     display: none;
 }
