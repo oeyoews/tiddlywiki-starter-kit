@@ -3,5 +3,5 @@ tags: $:/tags/RawMarkupWikified/BottomBody
 type: application/javascript
 
 `<script async>`
-{{$:/plugins/oeyoews/neotw/modules/fps/show-fps}}
+{{$:/plugins/oeyoews/neotw/modules/fps/show-fps.js}}
 `</script>`

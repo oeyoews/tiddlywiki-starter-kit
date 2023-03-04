@@ -2,6 +2,6 @@ title: $:/plugins/oeyoews/neotw-confetti/base
 tags: $:/tags/RawMarkupWikified/BottomBody
 
 `<script>`
-{{$:/plugins/oeyoews/neotw-confetti/core/confetti}}
-{{$:/plugins/oeyoews/neotw-confetti/example/fireworks}}
+{{$:/plugins/oeyoews/neotw-confetti/core/confetti.js}}
+{{$:/plugins/oeyoews/neotw-confetti/example/fireworks.js}}
 `</script>`

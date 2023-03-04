@@ -3,5 +3,5 @@ tags: $:/tags/RawMarkupWikified/BottomBody
 type: application/javascript
 
 `<script>`
-{{$:/plugins/oeyoews/neotw-music/js/meting-js}}
+{{$:/plugins/oeyoews/neotw-music/js/meting.js}}
 `</script>`

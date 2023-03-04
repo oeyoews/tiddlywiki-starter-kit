@@ -3,5 +3,5 @@ tags: $:/tags/RawMarkupWikified/BottomBody
 type: application/javascript
 
 `<script async>`
-{{$:/plugins/oeyoews/neotw/modules/time/run-time}}
+{{$:/plugins/oeyoews/neotw/modules/time/run-time.js}}
 `</script>`

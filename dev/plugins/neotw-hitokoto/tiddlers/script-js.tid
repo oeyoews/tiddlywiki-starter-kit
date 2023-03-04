@@ -2,5 +2,5 @@ title: $:/plugins/oeyoews/neotw-hitokoto/script
 tags: $:/tags/RawMarkupWikified/BottomBody
 
 `<script>`
-{{$:/plugins/oeyoews/neotw-hitokoto/hitokoto-js}}
+{{$:/plugins/oeyoews/neotw-hitokoto/hitokoto.js}}
 `</script>`

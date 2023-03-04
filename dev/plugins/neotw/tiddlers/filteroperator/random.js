@@ -1,8 +1,4 @@
 /*\
-title: $:/plugins/oeyoews/neotw-show-a-tiddler/random.js
-type: application/javascript
-module-type: filteroperator
-
 a filter to show a tiddler
 
 @preserve
