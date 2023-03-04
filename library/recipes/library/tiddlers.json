@@ -55,7 +55,7 @@
         "requires-reload": "no"
     },
     {
-        "version": "0.1.0",
+        "version": "0.1.1",
         "type": "application/json",
         "title": "$:/plugins/oeyoews/neotw-music",
         "plugin-type": "plugin",
