@@ -1,3 +1,10 @@
+# [3.98.0](https://github.com/oeyoews/neotw/compare/v3.97.2...v3.98.0) (2023-03-04)
+
+
+### Features
+
+* add twm config ([f339718](https://github.com/oeyoews/neotw/commit/f339718f0f267bb0399a3e895ead9cffbe46268a))
+
 ## [3.97.2](https://github.com/oeyoews/neotw/compare/v3.97.1...v3.97.2) (2023-03-04)
 
 ## [3.97.1](https://github.com/oeyoews/neotw/compare/v3.97.0...v3.97.1) (2023-03-04)
