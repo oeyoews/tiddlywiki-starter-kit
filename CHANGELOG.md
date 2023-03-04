@@ -1,3 +1,10 @@
+# [3.94.0](https://github.com/oeyoews/neotw/compare/v3.93.0...v3.94.0) (2023-03-04)
+
+
+### Features
+
+* add filter ([6aa745a](https://github.com/oeyoews/neotw/commit/6aa745a7efd944325231fe6b9e3c01abafcf4f11))
+
 # [3.93.0](https://github.com/oeyoews/neotw/compare/v3.92.3...v3.93.0) (2023-03-04)
 
 
