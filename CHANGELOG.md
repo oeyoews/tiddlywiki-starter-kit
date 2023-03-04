@@ -1,3 +1,10 @@
+# [3.96.0](https://github.com/oeyoews/neotw/compare/v3.95.0...v3.96.0) (2023-03-04)
+
+
+### Features
+
+* use filter for style to reduce console error ([76d5e9d](https://github.com/oeyoews/neotw/commit/76d5e9d7c7389e522b027aaebd8af4b2402ab1c8))
+
 # [3.95.0](https://github.com/oeyoews/neotw/compare/v3.94.1...v3.95.0) (2023-03-04)
 
 
