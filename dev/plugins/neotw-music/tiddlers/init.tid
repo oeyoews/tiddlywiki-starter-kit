@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/neotw-music/set-music
+tags: $:/tags/RawMarkupWikified/BottomBody
+
+`<script>`
+{{$:/plugins/oeyoews/neotw-music/js/meting-init.js}}
+`</script>`
