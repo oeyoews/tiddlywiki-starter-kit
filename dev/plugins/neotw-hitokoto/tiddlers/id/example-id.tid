@@ -1,0 +1,8 @@
+title: $:/plugins/oeyoews/neotw-hitokoto/hitokoto
+
+<center>
+<div id="hitokoto" class="hexample">
+<span id="htext-example"></span>
+&nbsp;&nbsp;<span id="hauthor-example"></span>
+</div>
+</center>

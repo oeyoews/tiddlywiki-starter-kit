@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/neotw-hitokoto/modal-id
+mask-closable: yes
+subtitle: {{$:/plugins/oeyoews/neotw-hitokoto/icon}} Hitokoto {{$:/plugins/oeyoews/tiddlywiki-modal-ui/close-modal}}
+class: o-tm
+
+{{$:/plugins/oeyoews/neotw-hitokoto/hitokoto}}

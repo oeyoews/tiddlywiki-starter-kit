@@ -5,7 +5,7 @@ creator: pimgeek
 giscus: yes
 icon: $:/plugins/oeyoews/neotw/icon/revea-js
 list: one two
-modified: 20230303084704079
+modified: 20230304031136929
 modifier: oeyoews
 publish: article
 tags: 
@@ -45,3 +45,5 @@ type: text/vnd.tiddlywiki
 * b: black
 * press ? to find more usage
 """>>
+
+{{$:/plugins/oeyoews/neotw-hitokoto/hitokoto}}

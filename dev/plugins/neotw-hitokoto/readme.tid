@@ -9,6 +9,13 @@ title: $:/plugins/oeyoews/neotw-hitokoto/readme
 <!-- https://hitokoto.tyr.im/ -->
 <!-- https://api.vvhan.com/ -->
 
+!! Example
+
+{{$:/plugins/oeyoews/neotw-hitokoto/hitokoto}}
+
 !! Usage
 
+<!-- copy title to embed -->
 * click to update next hitokoto
+
+!! embed viewtemplate

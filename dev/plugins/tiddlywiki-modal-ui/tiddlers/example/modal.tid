@@ -1,0 +1,8 @@
+title: $:/plugins/oeyoews/tiddlywiki-modal-ui/modal
+subtitle: {{$:/plugins/oeyoews/tiddlywiki-modal-ui/icon}} Modal UI {{$:/plugins/oeyoews/tiddlywiki-modal-ui/close-modal}}
+mask-closable: yes
+class: o-tm
+
+<center>
+This is demo
+</center>

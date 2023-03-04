@@ -1,0 +1,4 @@
+title: $:/plugins/oeyoews/neotw-hitokoto/ui/hitokoto
+tags: $:/tags/ViewTemplate
+
+{{$:/plugins/oeyoews/neotw-hitokoto/hitokoto}}
