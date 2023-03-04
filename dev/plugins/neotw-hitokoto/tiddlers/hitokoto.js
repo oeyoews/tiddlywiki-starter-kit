@@ -12,7 +12,6 @@ function hitokoto_footer(text = '#htext', author = '#hauthor') {
       const hitokoto_from = document.querySelector(author);
       // hitokoto_from.href = 'https://hitokoto.cn/?uuid=' + data.uuid;
       hitokoto_from.innerText = '@' + data.from;
-      console.log('🚀 Updated hitokoto');
       // console.log('🚀 Updated hitokoto');
     })
     .catch(console.error);
