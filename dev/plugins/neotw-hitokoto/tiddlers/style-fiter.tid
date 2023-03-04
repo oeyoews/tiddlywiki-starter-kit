@@ -1,0 +1,16 @@
+title: $:/plugins/oeyoews/neotw-hitokoto/style-fiter
+tags: $:/tags/Stylesheet
+
+<!-- show -->
+\define show-tiddler-controls()
+  [data-tiddler-title="$(currentTiddler)$"] .hexample  {display: block !important;}
+\end
+
+.hexample {
+    font-size: 50%;
+    display: none;
+}
+
+<$list filter="[!is[system]subfilter{$:/plugins/oeyoews/neotw-hitokoto/ui/hitokoto/filter}]">
+<<show-tiddler-controls>>
+</$list>

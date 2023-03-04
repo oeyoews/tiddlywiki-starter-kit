@@ -1,6 +1,4 @@
 title: $:/plugins/oeyoews/neotw-hitokoto/ui/hitokoto
 tags: $:/tags/ViewTemplate
 
-<$list filter="[all[current]!is[system]subfilter{$:/plugins/oeyoews/neotw-hitokoto/ui/hitokoto/filter}]">
 {{$:/plugins/oeyoews/neotw-hitokoto/hitokoto}}
-</$list>
