@@ -7,11 +7,11 @@ title: $:/plugins/oeyoews/neotw-music/readme
 
 <center>
 <$button>
-{{$:/plugins/oeyoews/neotw-music/icon}} Open Music on new page
+{{$:/plugins/oeyoews/neotw-music/icon}} Open Music(pure)
 <$action-sendmessage $message="tm-open-external-window" $param="https://oeyoews.github.io/HeoMusic"/>
 </$button>
 <$button>
-{{$:/plugins/oeyoews/neotw-music/om-icon}} Open Music on new page
+{{$:/plugins/oeyoews/neotw-music/om-icon}} Open Music(163 custom)
 <$action-sendmessage $message="tm-open-external-window" $param="https://om-app.oeyoewl.top"/>
 </$button>
 </center>
@@ -21,3 +21,10 @@ title: $:/plugins/oeyoews/neotw-music/readme
 * [[Metingjs-api|https://meting-api-oeyoews.vercel.app/api]]
 * [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-special-day]]
 * [[Demo|https://oeyoews.github.io/neotw/]]
+
+!! Usage
+
+<$button>
+  Config {{$:/plugins/oeyoews/neotw-music/icon}}
+  <$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/neotw-music/config-modal"/>
+</$button>
