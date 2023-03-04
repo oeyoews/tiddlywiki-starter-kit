@@ -6343,7 +6343,7 @@ http://nicolasgallagher.com/micro-clearfix-hack/
       transform: translate(-50%, 0);
     }
   }
-#o-fps,
+.o-fps,
 #load_time,
 #htmer_time {
   background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
@@ -7358,14 +7358,14 @@ footer {
 
 
 
-[data-tag-title=\$\:\/tags\/RawMarkupWikified] .tc-tag-label:after {
-  content: " 2";
+[data-tag-title=\$\:\/tags\/RawMarkupWikified\/BottomBody] .tc-tag-label:after {
+  content: " 10";
 }
 
 
 
-[data-tag-title=\$\:\/tags\/RawMarkupWikified\/BottomBody] .tc-tag-label:after {
-  content: " 10";
+[data-tag-title=\$\:\/tags\/RawMarkupWikified] .tc-tag-label:after {
+  content: " 1";
 }
 
 
