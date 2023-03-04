@@ -1,3 +1,10 @@
+## [3.94.1](https://github.com/oeyoews/neotw/compare/v3.94.0...v3.94.1) (2023-03-04)
+
+
+### Performance Improvements
+
+* remove footer ([ca81582](https://github.com/oeyoews/neotw/commit/ca8158224c224c4b6007c3be63f1c8b5be722dae))
+
 # [3.94.0](https://github.com/oeyoews/neotw/compare/v3.93.0...v3.94.0) (2023-03-04)
 
 
