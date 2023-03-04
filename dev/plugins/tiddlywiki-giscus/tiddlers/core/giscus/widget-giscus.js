@@ -16,16 +16,9 @@
     this.initialise(parseTreeNode, options);
   };
 
-  // ?? not suport repo-id filed, use repoId instead
   var giscusConfigTiddler = '$:/plugins/oeyoews/tiddlywiki-giscus/config';
-  // console.log(giscusConfigTiddler)
   var giscusConfigTiddlerGet = $tw.wiki.getTiddler(giscusConfigTiddler);
   var config = giscusConfigTiddlerGet ? giscusConfigTiddlerGet.fields : {};
-  // console.log(config)
-  // console.log(config.repo)
-  // console.log(config.repoId)
-  // console.log(config.categoryId)
-
   GiscusNodeWidget.prototype = new Widget();
   GiscusNodeWidget.prototype.render = function (parent, nextSibling) {
     this.parentDomNode = parent;
@@ -38,11 +31,11 @@
     if (id === '') return;
     var scriptNode = this.document.createElement('script');
     scriptNode.setAttribute('src', 'https://giscus.app/client.js');
-
-    scriptNode.setAttribute('data-repo', config.repo);
-    scriptNode.setAttribute('data-repo-id', config.repoId);
+    var { repo, repoId, categoryId } = config;
+    scriptNode.setAttribute('data-repo', repo);
+    scriptNode.setAttribute('data-repo-id', repoId);
     scriptNode.setAttribute('data-category', 'General');
-    scriptNode.setAttribute('data-category-id', config.categoryId);
+    scriptNode.setAttribute('data-category-id', categoryId);
 
     scriptNode.setAttribute('data-mapping', 'specific');
     scriptNode.setAttribute('data-term', id);

@@ -1,0 +1,13 @@
+title: $:/plugins/oeyoews/neotw-music/config
+id: 2916766519
+server: netease
+order: random
+type: playlist
+loop: all
+preload: auto
+mutex: true
+fixed: true
+lrc_type: 0
+list_olded: true
+
+Twm config file
