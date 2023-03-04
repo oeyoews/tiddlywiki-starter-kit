@@ -7047,7 +7047,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/KeyboardShortcut] .tc-tag-label:after {
-  content: " 30";
+  content: " 31";
 }
 
 
@@ -7119,7 +7119,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/ViewTemplate] .tc-tag-label:after {
-  content: " 18";
+  content: " 19";
 }
 
 
@@ -7173,13 +7173,13 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Macro] .tc-tag-label:after {
-  content: " 78";
+  content: " 79";
 }
 
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 121";
+  content: " 122";
 }
 
 
@@ -7643,10 +7643,12 @@ footer {
   color: transparent;
 }#h-cursor:hover {
   cursor: pointer;
+}.hexample {
+    font-size: 50%;
 }</$list><$list filter="[{$:/layout}!match[$:/core/ui/PageTemplate]]">
 footer {
     display: none !important;
-  }
+}
 </$list>
 .aplayer {
   background: #fff;
@@ -8455,6 +8457,18 @@ footer {
   .githubCorner .octoArm {
     animation: octocat-wave 560ms ease-in-out;
   }
+}
+.o-tm .tc-modal,
+.o-tm .tc-modal-header,
+.o-tm .tc-modal-body,
+.o-tm .tc-modal-footer {
+  border-radius: 10px;
+  border: none;
+  background-color: #f5f5f5;
+}.o-tm .tc-modal-footer {
+  display: none;
+}.o-tm .tc-modal-header {
+  text-transform: capitalize;
 }
 
 .o-publish {
