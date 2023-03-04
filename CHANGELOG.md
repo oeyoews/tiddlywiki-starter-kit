@@ -1,3 +1,10 @@
+## [3.97.1](https://github.com/oeyoews/neotw/compare/v3.97.0...v3.97.1) (2023-03-04)
+
+
+### Bug Fixes
+
+* add missing type for hitokoto ([cad47e8](https://github.com/oeyoews/neotw/commit/cad47e8af53d340718e41fd79609ad171321f9f8))
+
 # [3.97.0](https://github.com/oeyoews/neotw/compare/v3.96.0...v3.97.0) (2023-03-04)
 
 
