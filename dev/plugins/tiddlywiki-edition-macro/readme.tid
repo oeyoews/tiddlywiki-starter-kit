@@ -8,15 +8,17 @@ title: $:/plugins/oeyoews/tiddlywiki-edition-macro/readme
 </a>
 <$image source={{{ [[][https://img.shields.io/badge/Version-]] [<currentTiddler>get[version]] [[-red?style=social]] +[join[]]}}} />
 
+<$button setTitle=<<tabsState>> setField="text" setTo="document">
+  Usage
+</$button>
+<$button setTitle=<<tabsState>> setField="text" setTo="explore">
+  Explore
+</$button>
+<$button setTitle=<<tabsState>> setField="text" setTo="contents">
+  Content
+</$button>
+
 !! Tiddlywiki Edition Macro
 
 * [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-edition-macro]]
 * [[Demo|https://oeyoews.github.io/neotw]]
-
-!! Examples
-
-```
-<<.icon $:/core/icon>>
-```
-
-<<.icon $:/core/icon>> core icon is a cat

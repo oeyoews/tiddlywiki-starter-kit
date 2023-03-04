@@ -9,34 +9,20 @@ title: $:/plugins/oeyoews/tiddlywiki-giscus/readme
 <$image source={{{ [[][https://img.shields.io/badge/Version-]] [<currentTiddler>get[version]] [[-red?style=flat&logo=dev.to&logoColor=red]] +[join[]]}}} />
 <$image source={{{ [[][https://img.shields.io/badge/Author-]] [<currentTiddler>get[author]] [[-lightblue?style=flat]] +[join[]]}}} />
 
-<!-- <$list filter="[[$:/plugins/oeyoews/tiddlywiki-fancybox]has[plugin-type]]"> -->
-<!-- <<fbox "">> -->
-<!-- </$list> -->
-
-<!-- <center> -->
-<!-- [img width=256 []] -->
-<!-- </center> -->
-
-<center>
-<!-- <$button class="get-started"> -->
-<!--   <a style="text-decoration: none;" target="_blank" -->
-<!--   href="https://neotw.netlify.app/index.html#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-giscus"> -->
-<!--   Install Giscus -->
-<!-- </a> -->
-<!-- </$button> -->
-
+<$button setTitle=<<tabsState>> setField="text" setTo="contents">
+  Contents
+</$button>
+<$button setTitle=<<tabsState>> setField="text" setTo="explore">
+  Explore
+</$button>
 <<nav-tid "giscus-config">>
-
 <$set name="repo" value="$:/plugins/oeyoews/tiddlywiki-giscus/config">
   <$button class="get-started" tooltip={{{ [<repo>get[repo]addsuffix[ discussions]] }}}>
     <<giscusDiscussions>>
   </$button>
 </$set>
-</center>
 
-<<<
-💎 A Commenting System Powered By Github Discussions. Let Visitors Leave Comments And Reactions On Your Site With Github! This Project Is Strongly Inspired By Utterances.
-<<<
+> 💎 A Commenting System Powered By Github Discussions. Let Visitors Leave Comments And Reactions On Your Site With Github! This Project Is Strongly Inspired By Utterances.
 
 !! Usage
 

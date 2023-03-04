@@ -1,0 +1,163 @@
+title: $:/plugins/oeyoews/tiddlywiki-edition-macro/document
+
+下列宏使用于整个 ~TiddlyWiki 的文档中。他们的名称前缀句点，避开用户可能尝试使用的名称。
+
+! 一般
+
+|!宏 |!用于 |!示例 |
+|.def |定义术语实例 |<<.def widget>> |
+|.em |句子中的次要强调 |<<.em not>> |
+|.place |用户可以填写的占位符 |<<.place tagname>> |
+|.strong |条目中的主要的重点 |<<.strong Important!>> |
+|.word |提到普通的单字或词组 |<<.word "hello world">> |
+|.icon |一个图标，大小与周围的文本相匹配 |<<.icon "$:/core/images/globe">> |
+
+! 建议
+
+|!宏 |!用于 |!示例 |
+|^.tip |^提示和技巧 |<<.tip "Turn your screen on, otherwise<br>you won't be able to see much.">> |
+|^.warning |^警示建议 |<<.warning "Make a backup of your file<br>before you upgrade.">> |
+
+! 区块
+
+|!宏 |!用于 |
+|.preamble |位于条目其余内容之外的开场白 |
+
+! 条目与字段
+
+|!宏 |!用于 |!示例 |
+|.tid |条目名称 |<<.tid Example>> |
+|.tag |标签 |<<.tag Example>> |
+|.field|字段名称 |<<.field example>> |
+|.value|字段值 |<<.value "example value">> |
+|.op |a filter operator |<<.op backlinks>> |
+|.var|变量或宏名称 |<<.var currentTiddler>> |
+|.wid|小工具名称 |<<.wid list>> |
+|.attr |属性名称 |<<.attr filter>> |
+|.param |宏参数名称 |<<.param text>> |
+|.tiddler-fields |一个条目的字段清单 |<<.tiddler-fields "Monday">> |
+
+! 链接
+
+|!宏 |!用于 |!示例 |
+|.link |包含维基文本的链接 |<<.link "^^an^^ ~~example~~" Example>> |
+|.clink |代码的链接 |<<.clink `<$list>` ListWidget>> |
+|.dlink |术语定义实例上的链接 |<<.dlink widget Widgets>> |
+|.dlink-ex |术语定义实例上的外部链接 |<<.dlink-ex Example "http://example.com/">> |
+|.flink |指向字段的链接 |<<.flink ListField>> |
+|.mlink |指向宏的链接 |<<.mlink qualify>> |
+|.mlink2 |指向具有指定目标的宏的链接 |<<.mlink2 foo "Examples of Macros">> |
+|.olink |指向操作符的链接 |<<.olink prefix>> |
+|.olink2 |指向具有指定目标的操作符的链接 |<<.olink2 foo prefix>> |
+|.vlink |指向变量的链接 |<<.vlink currentTiddler>> |
+|.vlink2 |指向具有指定目标的变量的链接 |<<.vlink2 foo "Examples of Variables">> |
+|.wlink |指向小工具的链接 |<<.wlink ButtonWidget>> |
+|.wlink2 |指向具有指定文本的小工具的链接 |<<.wlink2 foo ButtonWidget>> |
+
+! 用户界面
+
+|!宏 |!用于 |!示例 |
+|.key |键盘上的按键 |<<.key Escape>> |
+|.keycombo |组合键 |<<.keycombo Ctrl Enter>> |
+
+! 选项卡
+
+|!宏 |!用于 |!示例 |
+|.sidebar-tab |侧边栏选项卡的名称 |<<.sidebar-tab More>> |
+|.more-tab |更多选项卡的子选项卡的名称 |<<.more-tab Shadows>> |
+|.info-tab |条目信息选项卡的名称 |<<.info-tab Fields>> |
+|.controlpanel-tab |控制台选项卡的名称 |<<.controlpanel-tab Settings>> |
+|.advancedsearch-tab |t高级搜索选项卡的名称 |<<.advancedsearch-tab Filter>> |
+|.toc-tab |tw5.com 目录选项卡的名称 |<<.toc-tab>> |
+|.example-tab |示例选项卡名称 |<<.example-tab "Notes">> |
+
+!! .sidebar-tab 的参数
+
+|Open |<<.sidebar-tab Open>> |
+|Recent |<<.sidebar-tab Recent>> |
+|Tools |<<.sidebar-tab Tools>> |
+|More |<<.sidebar-tab More>> |
+
+!! .more-tab 的参数
+
+|All |<<.more-tab All>> |
+|Recent |<<.more-tab Recent>> |
+|Tags |<<.more-tab Tags>> |
+|Missing |<<.more-tab Missing>> |
+|Drafts |<<.more-tab Drafts>> |
+|Orphans |<<.more-tab Orphans>> |
+|Types |<<.more-tab Types>> |
+|System |<<.more-tab System>> |
+|Shadows |<<.more-tab Shadows>> |
+
+!! .info-tab 的参数
+
+|Tools |<<.info-tab Tools>> |
+|References |<<.info-tab References>> |
+|Tagging |<<.info-tab Tagging>> |
+|List |<<.info-tab List>> |
+|Listed |<<.info-tab Listed>> |
+|Fields |<<.info-tab Fields>> |
+|Advanced |<<.info-tab Advanced>> |
+
+!! .controlpanel-tab 的参数
+
+|Info |<<.controlpanel-tab Info>> |
+|Appearance |<<.controlpanel-tab Appearance>> |
+|Settings |<<.controlpanel-tab Settings>> |
+|Saving |<<.controlpanel-tab Saving>> |
+|Plugins |<<.controlpanel-tab Plugins>> |
+
+!! .advancedsearch-tab 的参数
+
+|Standard |<<.advancedsearch-tab Standard>> |
+|System |<<.advancedsearch-tab System>> |
+|Shadows |<<.advancedsearch-tab Shadows>> |
+|Filter |<<.advancedsearch-tab Filter>> |
+
+! 按钮
+
+|!宏 |!用于 |!示例 |
+|.button |标准按钮名称和图标 |<<.button "new-tiddler">> |
+
+!!.button 的参数
+
+!!! 条目工具栏
+
+|clone |<<.button "clone">> |
+|close |<<.button "close">> |
+|close-others |<<.button "close-others">> |
+|edit |<<.button "edit">> |
+|export-tiddler |<<.button "export-tiddler">> |
+|info |<<.button "info">> |
+|more-tiddler-actions |<<.button "more-tiddler-actions">> |
+|new-here |<<.button "new-here">> |
+|new-journal-here |<<.button "new-journal-here">> |
+|permalink |<<.button "permalink">> |
+
+!!! 编辑模式工具栏
+
+|cancel |<<.button "cancel">> |
+|delete |<<.button "delete">> |
+|save |<<.button "save">> |
+
+!!! 页面工具栏
+
+|advanced-search |<<.button "advanced-search">> |
+|close-all |<<.button "close-all">> |
+|control-panel |<<.button "control-panel">> |
+|encryption |<<.button "encryption">> |
+|export-page |<<.button "export-page">> |
+|full-screen |<<.button "full-screen">> |
+|home |<<.button "home">> |
+|import |<<.button "import">> |
+|language |<<.button "language">> |
+|more-page-actions |<<.button "more-page-actions">> |
+|new-journal |<<.button "new-journal">> |
+|new-tiddler |<<.button "new-tiddler">> |
+|permaview |<<.button "permaview">> |
+|refresh |<<.button "refresh">> |
+|save-wiki |<<.button "save-wiki">> |
+|storyview |<<.button "storyview">> |
+|tag-manager |<<.button "tag-manager">> |
+|theme |<<.button "theme">> |
