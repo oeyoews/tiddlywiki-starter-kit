@@ -6404,6 +6404,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 }
   [data-tiddler-title="2023-02-28"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="2023-03-05"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="about-TIDDLYWIKI_PLUGIN_PATH-not-working"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="add-animation-for-layout"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -7455,7 +7457,7 @@ footer {
 
 
 [data-tag-title=Journal] .tc-tag-label:after {
-  content: " 2";
+  content: " 3";
 }
 
 
@@ -7627,6 +7629,8 @@ ul.bullets li::marker {
     display: none;
 }
 [data-tiddler-title="2023-02-28"] .hexample  {display: block !important;}
+
+[data-tiddler-title="2023-03-05"] .hexample  {display: block !important;}
 
 [data-tiddler-title="about-TIDDLYWIKI_PLUGIN_PATH-not-working"] .hexample  {display: block !important;}
 
