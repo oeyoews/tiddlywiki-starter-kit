@@ -1,10 +1,10 @@
 title: $:/plugins/oeyoews/neotw/modules/load-time-js
 tags: $:/tags/RawMarkupWikified/BottomBody
-<!-- tags: $:/tags/RawMarkup -->
 type: application/javascript
 
 `<script async>
 window.onload = () => {
 const load_time = Date.now() - performance.timing.navigationStart
+const loadTime = document.createElement("span")
 document.getElementById("load_time").innerHTML = "This page takes " + load_time + "ms to load";
 }``</script>`

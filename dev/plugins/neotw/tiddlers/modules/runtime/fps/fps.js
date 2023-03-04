@@ -1,4 +1,9 @@
-var fpsPanel = document.getElementById('o-fps');
+const body = document.querySelector('body');
+const footer = document.createElement('footer');
+body.appendChild(footer);
+var fpsPanel = document.createElement('span');
+fpsPanel.className = 'o-fps';
+footer.appendChild(fpsPanel);
 var showFPS = (function () {
   var requestAnimationFrame =
     window.requestAnimationFrame ||
