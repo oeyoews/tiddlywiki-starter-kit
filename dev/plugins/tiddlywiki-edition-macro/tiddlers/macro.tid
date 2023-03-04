@@ -1,4 +1,4 @@
-title: $:/plugins/oeyoews/tiddlywiki-edition-macro/macro/macro
+title: $:/plugins/oeyoews/tiddlywiki-edition-macro/macro
 tags: $:/tags/Macro
 
 \define .concat(1,2,3,4,5) $1$$2$$3$$4$$5$
