@@ -15,7 +15,4 @@ title: $:/plugins/oeyoews/neotw-hitokoto/readme
 
 !! Usage
 
-<!-- copy title to embed -->
-* click to update next hitokoto
-
-!! embed viewtemplate
+* subfilter: [[$:/plugins/oeyoews/neotw-hitokoto/ui/hitokoto/filter]]

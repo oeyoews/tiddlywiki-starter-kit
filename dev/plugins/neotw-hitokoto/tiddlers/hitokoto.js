@@ -23,4 +23,4 @@ hitokoto_footer();
 setInterval('hitokoto_footer()', 30000);
 
 hitokoto_footer(htext_example, hauthor_example);
-setInterval('hitokoto_footer(htext_example, hauthor_example)', 30000);
+setInterval('hitokoto_footer(htext_example, hauthor_example)', 3000);
