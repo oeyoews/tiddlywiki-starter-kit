@@ -12,3 +12,11 @@ title: $:/plugins/oeyoews/tiddlywiki-edition-macro/readme
 
 * [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-edition-macro]]
 * [[Demo|https://oeyoews.github.io/neotw]]
+
+!! Examples
+
+```
+<<.icon $:/core/icon>>
+```
+
+<<.icon $:/core/icon>> core icon is a cat
