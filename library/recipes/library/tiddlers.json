@@ -133,14 +133,14 @@
         "title": "$:/plugins/oeyoews/tiddlywiki-fancybox",
         "description": "Tiddlywiki Gallery",
         "author": "oeyoews",
-        "version": "0.6.0",
-        "core-version": ">=5.2.3",
+        "version": "0.6.1",
+        "core-version": ">=5.2.5",
         "type": "application/json",
         "plugin-type": "plugin",
         "name": "Tiddlywiki Fancybox",
+        "dependents": "$:/plugins/oeyoews/tiddlywiki-modal-ui",
         "list": "readme config example explore",
-        "dependents": "",
-        "readme": "<a style=\"text-decoration:none;\" href=\"https://github.com/fancyapps/fancybox\" target=\"_blank\">\n  <img src=\"https://img.shields.io/badge/Powered by-Fancybox-green?style=flat\" />\n</a>\n<$image source={{{ [[][https://img.shields.io/badge/Version-]] [<currentTiddler>get[version]] [[-red?style=flat&logo=dev.to&logoColor=red]] +[join[]]}}} />\n\n!! Readme\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-fancybox]]\n\n* [[Tiddlyhost site|https://fancybox-oeyoews.tiddlyhost.com]]\n\n!! Features\n\n* support download images, fullscreen, custom style and shortcuts,\n* support local images online images, mix that is also supported\n\n!! Usage\n\n{{$:/plugins/oeyoews/tiddlywiki-fancybox/example}}\n\n!! Note\n\n* need refresh on installed this fancybox plugin\n* if you use splashscreen, please remove `remove-when-wiki-loaded` class,\notherwise this plugin will not work normally [[warn|https://github.com/Jermolene/TiddlyWiki5/search?q=tc-remove-when-wiki-loaded]]\n\n!! TODO\n\n* support filter\n",
+        "readme": "<a style=\"text-decoration:none;\" href=\"https://github.com/fancyapps/fancybox\" target=\"_blank\">\n  <img src=\"https://img.shields.io/badge/Powered by-Fancybox-green?style=flat\" />\n</a>\n<$image source={{{ [[][https://img.shields.io/badge/Version-]] [<currentTiddler>get[version]] [[-red?style=flat&logo=dev.to&logoColor=red]] +[join[]]}}} />\n\n!! Readme\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-fancybox]]\n\n* [[Tiddlyhost site|https://fancybox-oeyoews.tiddlyhost.com]]\n\n!! Features\n\n* support download images, fullscreen, custom style and shortcuts,\n* support local images online images, mix that is also supported\n\n!! Usage\n\n<$button>\n  Usage\n  <$action-sendmessage $message=\"tm-modal\" $param=\"$:/plugins/oeyoews/tiddlywiki-fancybox/example\"/>\n</$button>\n\n!! Note\n\n* need refresh on installed this fancybox plugin\n* if you use splashscreen, please remove `remove-when-wiki-loaded` class,\notherwise this plugin will not work normally [[warn|https://github.com/Jermolene/TiddlyWiki5/search?q=tc-remove-when-wiki-loaded]]\n\n!! TODO\n\n* support filter\n",
         "requires-reload": "no"
     },
     {
