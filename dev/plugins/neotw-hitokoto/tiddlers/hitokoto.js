@@ -4,14 +4,16 @@ function hitokoto_footer(text = '#htext', author = '#hauthor') {
     .then(data => {
       const hitokoto = document.querySelector(text);
       let data_ = data.hitokoto;
-      // if(data_.length > 28){
-      // data_ = data_.substring(0,28);
-      // data_ = data_ + "…";
-      // }
+      if (data_.length > 28) {
+        data_ = data_.substring(0, 28);
+        data_ = data_ + '…';
+      }
       hitokoto.innerText = data_;
       const hitokoto_from = document.querySelector(author);
-      // hitokoto_from.href = "https://hitokoto.cn/?uuid=" + data.uuid;
+      hitokoto_from.href = 'https://hitokoto.cn/?uuid=' + data.uuid;
       hitokoto_from.innerText = '@' + data.from;
+      console.log('🚀 Updated hitokoto');
+      // console.log('🚀 Updated hitokoto');
     })
     .catch(console.error);
 }
