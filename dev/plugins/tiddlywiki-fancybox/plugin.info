@@ -2,10 +2,11 @@
   "title": "$:/plugins/oeyoews/tiddlywiki-fancybox",
   "description": "Tiddlywiki Gallery",
   "author": "oeyoews",
-  "version": "0.6.0",
-  "core-version": ">=5.2.3",
+  "version": "0.6.1",
+  "core-version": ">=5.2.5",
   "type": "application/json",
   "plugin-type": "plugin",
   "name": "Tiddlywiki Fancybox",
+  "dependents": "$:/plugins/oeyoews/tiddlywiki-modal-ui",
   "list": "readme config example explore"
 }

@@ -1,4 +1,7 @@
 title: $:/plugins/oeyoews/tiddlywiki-fancybox/example
+subtitle: {{$:/plugins/oeyoews/tiddlywiki-fancybox/icon}} Fancybox Usage {{$:/plugins/oeyoews/tiddlywiki-modal-ui/close-modal}}
+mask-closable: yes
+class: o-tm
 
 !! Local Image
 
