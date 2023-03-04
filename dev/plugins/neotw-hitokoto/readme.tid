@@ -9,10 +9,10 @@ title: $:/plugins/oeyoews/neotw-hitokoto/readme
 <!-- https://hitokoto.tyr.im/ -->
 <!-- https://api.vvhan.com/ -->
 
-!! Example
-
-{{$:/plugins/oeyoews/neotw-hitokoto/hitokoto}}
-
 !! Usage
 
 * subfilter: [[$:/plugins/oeyoews/neotw-hitokoto/ui/hitokoto/filter]]
+
+!! Example
+
+{{$:/plugins/oeyoews/neotw-hitokoto/hitokoto}}
