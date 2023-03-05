@@ -22,17 +22,15 @@ Render this widget into the DOM
 */
   OHitokoto.prototype.render = function (parent, nextSibling) {
     this.parentDomNode = parent;
-    var sentences = [
-      'Hello, world!',
-      'This is a random sentence.',
-      'I like codingoeyoews',
-      "What's up?",
-      'Have a nice day!',
-      "It's a beautiful day.",
-    ];
+    var tiddlerData = $tw.wiki.getTiddlerData(
+      '$:/plugins/oeyoews/neotw-hitokoto/random-sentences.json',
+    );
+    var sentences = tiddlerData.sentences;
+    console.log(tiddlerData);
 
     var randomIndex = Math.floor(Math.random() * sentences.length);
     var randomSentence = sentences[randomIndex] + '  @oeyoews';
+    console.log(randomSentence);
 
     var ohitokotoSpan = this.document.createElement('span');
     ohitokotoSpan.className = 'hitokoto';

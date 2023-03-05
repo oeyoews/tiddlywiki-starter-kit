@@ -9,7 +9,14 @@ title: $:/plugins/oeyoews/neotw-hitokoto/readme
 <!-- https://hitokoto.tyr.im/ -->
 <!-- https://api.vvhan.com/ -->
 
-!! 在tiddler中使用一言API
+!! 一言(online)
+
+> 使用一言api, 需要联网
+
+!! 一言tiddlywiki版(local)
+
+> 使用json格式存储数据， 可以随时更改句子内容  @chatgpt
+> [[Random Sentences|$:/plugins/oeyoews/neotw-hitokoto/random-sentences.json]]
 
 !! TODO
 
