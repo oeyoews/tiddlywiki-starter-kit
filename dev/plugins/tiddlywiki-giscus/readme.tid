@@ -41,7 +41,7 @@ title: $:/plugins/oeyoews/tiddlywiki-giscus/readme
 !! TODO
 
 * support switch giscus to others, such as twikoo, and utterances
-* switch theme on comments top(select box)
+* switch theme on comments top(select box) dark_dimmed
 * 统一button样式
 * 提供未配置检测警告
 * 提供依赖检测警告
