@@ -26,9 +26,13 @@
     this.execute();
     var id = this.getAttribute('id', '');
     var lang = this.getAttribute('lang', 'en');
-    // var mapping = this.getAttribute("title", "title")
     var theme = this.getAttribute('theme', 'light');
-    if (id === '') return;
+    if (id === '') {
+      console.log(`💎 请传入正确的评论区id`);
+      return;
+    }
+    // TODO 重复唤起
+    console.log(`💎 当前评论区为 ${id}`);
     var scriptNode = this.document.createElement('script');
     scriptNode.setAttribute('src', 'https://giscus.app/client.js');
     var { repo, repoId, categoryId } = config;
