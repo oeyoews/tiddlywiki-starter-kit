@@ -77,7 +77,7 @@
         "core-version": "5.2.5",
         "source": "",
         "list": "readme explore",
-        "dependents": "$:/plugins/kookma/shiraz-callout",
+        "dependents": "$:/plugins/kookma/shiraz-callout $:/plugins/oeyoews/tiddlywiki-modal-ui",
         "plugin-type": "plugin",
         "type": "application/json",
         "readme": "<a href=\"https://github.com/oeyoews/neotw\" target=\"_blank\">\n  <img src=\"https://img.shields.io/badge/Powered by-Neotw-green?style=flat\" />\n</a>\n\n<center>\n\n<$list filter=\"[[$:/plugins/oeyoews/tiddlywiki-fancybox]!is[missing]]\">\n<<fbox \"https://gitlab.com/oeyoews/img/-/raw/main/pictures/2023/03/2/neotw-surfing-keys-example.png\">>\n</$list>\n\n<$list filter=\"[[$:/plugins/oeyoews/tiddlywiki-fancybox]is[missing]]\">\n<img src=\"https://gitlab.com/oeyoews/img/-/raw/main/pictures/2023/03/2/neotw-surfing-keys-example.png\" width=\"256\"/>\n</$list>\n\n</center>\n\n!! Usage\n\n*  当前使用 <kbd>Ctrl-/</kbd> 弹出提示框， 此快捷键与Unility的显示field的快捷间冲突\n\n{{$:/plugins/oeyoews/neotw-surfing-keys/test}}\n{{$:/plugins/oeyoews/neotw-surfing-keys/list}}\n{{$:/plugins/oeyoews/neotw-surfing-keys/plugins}}\n\n!! NOTE(plugin developer)\n\n* because of newline, this shortcut not work, need use vscode to remove this(for dev plugin)\n* This plugin is part of neotw(not general maybe)\n\n!! TODO\n\n* use ctrl k use moadal search, how to close modal on click links\n* 支持动态修改快捷键\n",
