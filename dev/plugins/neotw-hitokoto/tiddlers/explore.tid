@@ -1,0 +1,3 @@
+title: $:/plugins/oeyoews/neotw-hitokoto/explore
+
+<$macrocall $name="tree" prefix={{{ [<currentTiddler>addsuffix[/]] }}}>

@@ -1,4 +1,4 @@
 title: $:/plugins/oeyoews/neotw-hitokoto/ui/hitokoto
 tags: $:/tags/ViewTemplate
 
-{{$:/plugins/oeyoews/neotw-hitokoto/hitokoto}}
+{{$:/plugins/oeyoews/neotw-hitokoto/modal-id}}

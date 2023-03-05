@@ -2,4 +2,4 @@ title: $:/plugins/oeyoews/neotw-hitokoto/keybinding/modal
 key: ((hitokoto-modal))
 tags: $:/tags/KeyboardShortcut
 
-<$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/neotw-hitokoto/modal-id"/>
+<$action-sendmessage $message="tm-modal" $param=""/>
