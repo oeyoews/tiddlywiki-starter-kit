@@ -40,8 +40,10 @@ Hitokoto widget
         .catch(console.error);
     }
 
-    hitokotoSpan.addEventListener('click', function () {
-      fetchHitokoto();
+    parent.addEventListener('click', function (event) {
+      if (event.target.classList.contains('hitokoto')) {
+        fetchHitokoto();
+      }
     });
 
     fetchHitokoto();

@@ -1,11 +1,14 @@
-{
-  "title": "random sentences",
-  "sentences": [
-    "Hello, world!",
-    "This is a random sentence.",
-    "I like coding.",
-    "What's up?",
-    "Have a nice day!",
-    "It's a beautiful day."
-  ]
-}
+[
+  {
+    "from": "@sentences",
+    "hitokoto": "It's a beautiful day."
+  },
+  {
+    "from": "@tiddlywiki",
+    "hitokoto": "Hello, TiddlyWiki5!"
+  },
+  {
+    "from": "@test",
+    "hitokoto": "Test Coding"
+  }
+]
