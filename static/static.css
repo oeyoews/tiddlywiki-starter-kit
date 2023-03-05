@@ -8606,7 +8606,10 @@ ol.doc-github-contributors li {
     display:none;
 }.o-giscus-comment .tc-modal-header {
     text-transform: capitalize;
-  }
+  }.o-giscus-warn {
+    color: red;
+    font-weight: bold;
+}
 @media (max-width: 1360px) {
   .githubCorner {
     display: none;
