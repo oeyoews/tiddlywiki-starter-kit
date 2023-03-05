@@ -31,19 +31,28 @@ Hitokoto widget
     this.domNodes.push(hitokotoSpan);
 
     function fetchHitokoto() {
+      if (self.executing) {
+        return;
+      }
+      self.executing = true;
       fetch('https://v1.hitokoto.cn')
         .then(response => response.json())
         .then(data => {
           var hitokotoText = data.hitokoto + ' @' + data.from;
           hitokotoSpan.textContent = hitokotoText;
+          console.log(hitokotoText); // 控制台输出 log
         })
-        .catch(console.error);
+        .catch(console.error)
+        .finally(() => {
+          self.executing = false;
+        });
     }
 
     parent.addEventListener('click', function (event) {
-      if (event.target.classList.contains('hitokoto')) {
-        fetchHitokoto();
+      if (event.target !== hitokotoSpan) {
+        return;
       }
+      fetchHitokoto();
     });
 
     fetchHitokoto();

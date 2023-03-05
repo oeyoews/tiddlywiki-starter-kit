@@ -19,7 +19,7 @@
     parent.insertBefore(ohitokotoSpan, nextSibling);
     this.domNodes.push(ohitokotoSpan);
 
-    setInterval(this.updateText.bind(this, ohitokotoSpan), 1000); // 每隔2秒刷新文本
+    setInterval(this.updateText.bind(this, ohitokotoSpan), 20000); // 每隔2秒刷新文本
   };
 
   OHitokoto.prototype.updateText = function updateHitokoto(domNode) {
@@ -43,9 +43,9 @@
       // 正在更新文本，直接返回
       return;
     }
-    console.log('🚀 Click Owidget');
     var ohitokotoSpan = this.domNodes[0];
     this.updateText(ohitokotoSpan); // 刷新ohitokoto文本
+    console.log('Refreshed: ' + ohitokotoSpan.textContent);
   };
 
   exports.ohitokoto = OHitokoto;
