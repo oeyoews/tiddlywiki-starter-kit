@@ -1,3 +1,10 @@
+## [3.101.1](https://github.com/oeyoews/neotw/compare/v3.101.0...v3.101.1) (2023-03-05)
+
+
+### Performance Improvements
+
+* remove draft.of status for giscus ([38b217e](https://github.com/oeyoews/neotw/commit/38b217ef755f385ad6f6c1bedb516b3e0d43368d))
+
 # [3.101.0](https://github.com/oeyoews/neotw/compare/v3.100.0...v3.101.0) (2023-03-05)
 
 
