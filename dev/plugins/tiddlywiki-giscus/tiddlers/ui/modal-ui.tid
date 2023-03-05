@@ -21,3 +21,15 @@ caption: giscus on modal
 </span>
 </$list>
 </$list>
+
+<!-- plugins -->
+<$list filter="[[$:/temp/focussedTiddler]!is[missing]]">
+<$list filter="[[$:/temp/focussedTiddler]get[text]prefix[$:/plugins/]]">
+<$button message="giscus" tooltip="comment" class=<<tv-config-toolbar-class>>>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+<$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/tiddlywiki-giscus/giscus-modal"/>
+{{$:/plugins/oeyoews/tiddlywiki-giscus/icon}}
+</$list>
+</$button>
+</$list>
+</$list>
