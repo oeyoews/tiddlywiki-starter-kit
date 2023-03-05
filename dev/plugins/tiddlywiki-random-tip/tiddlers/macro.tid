@@ -4,7 +4,7 @@ tags: $:/tags/Macro
 <!-- add filter or use template -->
 <!-- todo -->
 \define vanillaTid()
-<$list filter="[{$:/info/url/protocol}match[]]">
+<!-- <$list filter="[{$:/info/url/protocol}match[]]"> -->
 <$navigator story="$:/StoryList" history="$:/HistoryList">
 <$button tooltip="tip">
   查看原文
@@ -12,7 +12,7 @@ tags: $:/tags/Macro
   <$action-navigate $to=<<currentTiddler>>/>
 </$button>
 </$navigator>
-</$list>
+<!-- </$list> -->
 \end
 
 \define random-author(author:oeyoews link:"https://github.com/oeyoews/neotw")

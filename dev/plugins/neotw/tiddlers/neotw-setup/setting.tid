@@ -10,3 +10,5 @@ class: o-neotw-setup
 <$list filter="[[$:/plugins/kookma/shiraz-callout]!has[plugin-type]]">
 <<ov>>
 </$list>
+
+<!-- {{$:/plugins/oeyoews/neotw/neotw-info}} -->
