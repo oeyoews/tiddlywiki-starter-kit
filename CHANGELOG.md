@@ -1,3 +1,10 @@
+# [3.101.0](https://github.com/oeyoews/neotw/compare/v3.100.0...v3.101.0) (2023-03-05)
+
+
+### Features
+
+* support plugin tiddlers ([13447c5](https://github.com/oeyoews/neotw/commit/13447c5f2a6f6a0520fb17cfc38f7006208a4abb))
+
 # [3.100.0](https://github.com/oeyoews/neotw/compare/v3.99.0...v3.100.0) (2023-03-05)
 
 
