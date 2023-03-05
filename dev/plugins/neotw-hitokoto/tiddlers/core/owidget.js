@@ -1,9 +1,4 @@
-/*\
-OHitokoto widget
-\*/
 (function () {
-  /*jslint node: true, browser: true */
-  /*global $tw: false */
   'use strict';
 
   var Widget = require('$:/core/modules/widgets/widget.js').widget;
@@ -12,32 +7,31 @@ OHitokoto widget
     this.initialise(parseTreeNode, options);
   };
 
-  /*
-Inherit from the base widget class
-*/
   OHitokoto.prototype = new Widget();
 
-  /*
-Render this widget into the DOM
-*/
   OHitokoto.prototype.render = function (parent, nextSibling) {
     this.parentDomNode = parent;
+    var ohitokotoSpan = this.document.createElement('span');
+    ohitokotoSpan.className = 'hitokoto';
+    this.updateText(ohitokotoSpan); // 初始化ohitokoto文本
+    ohitokotoSpan.onclick = this.handleRefresh.bind(this); // 绑定点击事件处理程序
+    parent.insertBefore(ohitokotoSpan, nextSibling);
+    this.domNodes.push(ohitokotoSpan);
+  };
+
+  OHitokoto.prototype.updateText = function (domNode) {
     var tiddlerData = $tw.wiki.getTiddlerData(
       '$:/plugins/oeyoews/neotw-hitokoto/random-sentences.json',
     );
     var sentences = tiddlerData.sentences;
-    console.log(tiddlerData);
-
     var randomIndex = Math.floor(Math.random() * sentences.length);
     var randomSentence = sentences[randomIndex] + '  @oeyoews';
-    console.log(randomSentence);
+    domNode.textContent = randomSentence;
+  };
 
-    var ohitokotoSpan = this.document.createElement('span');
-    ohitokotoSpan.className = 'hitokoto';
-    var textNode = this.document.createTextNode(randomSentence);
-    ohitokotoSpan.appendChild(textNode);
-    parent.insertBefore(ohitokotoSpan, nextSibling);
-    this.domNodes.push(ohitokotoSpan);
+  OHitokoto.prototype.handleRefresh = function () {
+    var ohitokotoSpan = this.domNodes[0];
+    this.updateText(ohitokotoSpan); // 刷新ohitokoto文本
   };
 
   exports.ohitokoto = OHitokoto;

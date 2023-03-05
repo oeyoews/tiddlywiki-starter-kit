@@ -13,29 +13,38 @@ Hitokoto widget
   };
 
   /*
-Inherit from the base widget class
-*/
+  Inherit from the base widget class
+  */
   Hitokoto.prototype = new Widget();
 
   /*
-Render this widget into the DOM
-*/
+  Render this widget into the DOM
+  */
   Hitokoto.prototype.render = function (parent, nextSibling) {
     this.parentDomNode = parent;
 
-    var data_ = null;
-    fetch('https://v1.hitokoto.cn')
-      .then(response => response.json())
-      .then(data => {
-        data_ = data.hitokoto + ' @' + data.from;
-        var hitokotoSpan = this.document.createElement('div');
-        hitokotoSpan.className = 'hitokoto';
-        var textNode = this.document.createTextNode(data_);
-        hitokotoSpan.appendChild(textNode);
-        parent.insertBefore(hitokotoSpan, nextSibling);
-        this.domNodes.push(hitokotoSpan);
-      })
-      .catch(console.error);
+    var self = this;
+
+    var hitokotoSpan = this.document.createElement('span');
+    hitokotoSpan.className = 'hitokoto';
+    parent.insertBefore(hitokotoSpan, nextSibling);
+    this.domNodes.push(hitokotoSpan);
+
+    function fetchHitokoto() {
+      fetch('https://v1.hitokoto.cn')
+        .then(response => response.json())
+        .then(data => {
+          var hitokotoText = data.hitokoto + ' @' + data.from;
+          hitokotoSpan.textContent = hitokotoText;
+        })
+        .catch(console.error);
+    }
+
+    hitokotoSpan.addEventListener('click', function () {
+      fetchHitokoto();
+    });
+
+    fetchHitokoto();
   };
 
   exports.hitokoto = Hitokoto;
