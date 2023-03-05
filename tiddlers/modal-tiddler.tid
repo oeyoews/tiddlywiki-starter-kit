@@ -1,0 +1,14 @@
+created: 20230305093254531
+creator: oeyoews
+modified: 20230305093426452
+modifier: oeyoews
+tags: 
+title: modal-tiddler
+type: text/vnd.tiddlywiki
+
+<!-- modal-tiddler -->
+<$button> Jump xxx Tiddler
+<br>DEBUG: CURRENTTIDDLER=<<currentTiddler>><br>
+  <$action-sendmessage $message="tm-close-tiddler" $param=<<currentTiddler>>/>
+  <$action-navigate $to="Index">>/>
+</$button>

@@ -19,6 +19,8 @@ title: $:/plugins/oeyoews/neotw-hitokoto/readme
 > 使用json格式存储数据， 可以随时更改句子内容  @chatgpt
 > [[Random Sentences|$:/plugins/oeyoews/neotw-hitokoto/random-sentences.json]]
 
+* 每隔一段时间自动刷新, 点击也可刷新
+
 !! TODO
 
 * 传入参数, 支持自定义样式, id

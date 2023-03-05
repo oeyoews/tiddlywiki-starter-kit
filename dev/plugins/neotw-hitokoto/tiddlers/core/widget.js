@@ -45,6 +45,7 @@ Hitokoto widget
     });
 
     fetchHitokoto();
+    setInterval(fetchHitokoto, 30000);
   };
 
   exports.hitokoto = Hitokoto;

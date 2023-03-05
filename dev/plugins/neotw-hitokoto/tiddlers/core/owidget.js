@@ -17,9 +17,11 @@
     ohitokotoSpan.onclick = this.handleRefresh.bind(this); // 绑定点击事件处理程序
     parent.insertBefore(ohitokotoSpan, nextSibling);
     this.domNodes.push(ohitokotoSpan);
+
+    setInterval(this.updateText.bind(this, ohitokotoSpan), 20000); // 每隔2秒刷新文本
   };
 
-  OHitokoto.prototype.updateText = function (domNode) {
+  OHitokoto.prototype.updateText = function updateHitokoto(domNode) {
     var tiddlerData = $tw.wiki.getTiddlerData(
       '$:/plugins/oeyoews/neotw-hitokoto/random-sentences.json',
     );
