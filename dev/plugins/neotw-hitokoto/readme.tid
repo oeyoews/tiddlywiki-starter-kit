@@ -15,3 +15,4 @@ title: $:/plugins/oeyoews/neotw-hitokoto/readme
 
 * 传入参数, 支持自定义样式, id
 * 支持modal
+* 使用级联保持widget在末尾, 不受其他viewtemplate影响
