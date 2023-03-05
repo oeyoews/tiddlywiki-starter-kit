@@ -35,7 +35,7 @@ title: $:/plugins/oeyoews/tiddlywiki-giscus/readme
 
 !! NOTE
 
-* 由于使用modal现实评论， filter 的配置项不再使用， 也没有使用的必要了， 仅作为保留
+* 由于使用modal评论， filter 的配置项不再使用， 也没有使用的必要了， 仅作为保留
 * 如果想要使用旧版的1.2.1, 卸载此插件的依赖项即可`$:/plugins/Gk0Wk/focused-tiddler` 或者卸载hotzone插件
 
 !! TODO
