@@ -15,6 +15,7 @@ title: $:/plugins/oeyoews/neotw-hitokoto/readme
 
 !! 一言tiddlywiki版(local)
 
+{{$:/plugins/oeyoews/neotw-hitokoto/surfing}}
 > 使用json格式存储数据， 可以随时更改句子内容  @chatgpt
 > [[Random Sentences|$:/plugins/oeyoews/neotw-hitokoto/random-sentences.json]]
 
@@ -28,6 +29,4 @@ title: $:/plugins/oeyoews/neotw-hitokoto/readme
 
 * 暂时还不支持静态文件编译
 
-<center>
-<$ohitokoto />
-</center>
+{{$:/plugins/oeyoews/neotw-hitokoto/ohitokoto}}

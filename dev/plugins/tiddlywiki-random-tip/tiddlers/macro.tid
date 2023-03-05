@@ -5,13 +5,11 @@ tags: $:/tags/Macro
 <!-- todo -->
 \define vanillaTid()
 <!-- <$list filter="[{$:/info/url/protocol}match[]]"> -->
-<$navigator story="$:/StoryList" history="$:/HistoryList">
 <$button tooltip="tip">
   查看原文
   <$action-sendmessage $message="tm-close-tiddler" $param=<<currentTiddler>>/>
-  <$action-navigate $to=<<currentTiddler>>/>
+  <!-- <$action-navigate $to="Index" /> -->
 </$button>
-</$navigator>
 <!-- </$list> -->
 \end
 
