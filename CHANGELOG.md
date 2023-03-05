@@ -1,3 +1,15 @@
+# [3.99.0](https://github.com/oeyoews/neotw/compare/v3.98.0...v3.99.0) (2023-03-05)
+
+
+### Features
+
+* use hitokoto widget instead of script ([f1d0516](https://github.com/oeyoews/neotw/commit/f1d051678d1b3a59d66c29bbbb91288bf8ec9313))
+
+
+### Performance Improvements
+
+* remove filter setting ([2b639a0](https://github.com/oeyoews/neotw/commit/2b639a0738c2aa3267a34482275dc4acafc0e2d3))
+
 # [3.98.0](https://github.com/oeyoews/neotw/compare/v3.97.2...v3.98.0) (2023-03-04)
 
 
