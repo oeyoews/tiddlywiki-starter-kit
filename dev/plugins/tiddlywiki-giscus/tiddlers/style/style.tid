@@ -17,3 +17,8 @@ tags: $:/tags/Stylesheet
 .o-giscus-comment .tc-modal-header {
     text-transform: capitalize;
   }
+
+.o-giscus-warn {
+    color: red;
+    font-weight: bold;
+}
