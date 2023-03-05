@@ -1,4 +1,10 @@
 title: $:/plugins/oeyoews/neotw-hitokoto/ui/hitokoto
 tags: $:/tags/ViewTemplate
 
+<$list filter="[all[current]!is[system]]">
 {{$:/plugins/oeyoews/neotw-hitokoto/modal-id}}
+</$list>
+
+<$list filter="[all[current]match[$:/plugins/oeyoews/neotw-hitokoto]]">
+{{$:/plugins/oeyoews/neotw-hitokoto/modal-id}}
+</$list>
