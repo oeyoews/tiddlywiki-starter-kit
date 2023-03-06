@@ -6814,8 +6814,6 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="top-news"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="twikoo-modal"] .tc-titlebar h2 { text-transform: capitalize; }
-
   [data-tiddler-title="twikoo-modal-test"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="update-tiddlywiki-bug"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -7055,7 +7053,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/KeyboardShortcut] .tc-tag-label:after {
-  content: " 30";
+  content: " 31";
 }
 
 
@@ -7127,7 +7125,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/ViewTemplate] .tc-tag-label:after {
-  content: " 17";
+  content: " 18";
 }
 
 
@@ -7187,7 +7185,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 120";
+  content: " 121";
 }
 
 
@@ -7485,7 +7483,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "162";
+  content: "161";
 }
 .user-panel-avatar { position: relative; max-width: 22px; max-height: 22px; }.user-panel-avatar-56 { position: relative; max-width: 56px; max-height: 56px; }.user-panel-avatar-56 img { width: 100%; height: auto; max-width: 56px; max-height: 56px; border-radius: 50%; aspect-ratio: 1 / 1; }.user-panel-avatar img { width: 100%; height: auto; max-width: 22px; max-height: 22px; border-radius: 50%; aspect-ratio: 1 / 1; }
 ul.bullets li::marker {
@@ -7622,6 +7620,15 @@ ul.bullets li::marker {
 
 .neotw-checkbox:before {
 	content: "✅"
+}
+.hitokoto {
+  margin-top: 10px;
+  font-size: 50%;
+  background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+  -webkit-background-clip: text;
+  color: transparent;
+}.hitokoto:hover {
+  cursor: pointer;
 }
 .aplayer {
   background: #fff;
