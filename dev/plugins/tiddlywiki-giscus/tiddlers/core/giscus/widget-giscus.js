@@ -16,6 +16,10 @@
       const id = this.getAttribute('id', '');
       const lang = this.getAttribute('lang', 'en');
       const theme = this.getAttribute('theme', 'light');
+      // const loadingNode = this.document.createElement('div');
+      // loadingNode.textContent = 'Loading comments ...';
+      // parent.insertBefore(loadingNode, nextSibling);
+      // this.domNodes.push(loadingNode);
       if (id === '') {
         console.log(`💎 请传入正确的评论区id`);
         return;
@@ -35,8 +39,9 @@
         this.domNodes.push(warnNode);
         console.warn('此评论区已存在，请勿重复渲染！');
         return;
+      } else {
+        console.log(`💎 当前评论区为 "${id}"`);
       }
-      console.log(`💎 当前评论区为 "${id}"`);
       const scriptNode = this.document.createElement('script');
       scriptNode.setAttribute('src', 'https://giscus.app/client.js');
       const { repo, repoId, categoryId } = this.config;
@@ -59,6 +64,9 @@
       for (let i = 0, len = commentNodes.length; i < len; i++) {
         commentNodes[i].classList.remove('giscus');
       }
+      // scriptNode.addEventListener('load', () => {
+      //   setTimeout(loadingNode.remove(), 100);
+      // });
       // 创建新的评论区节点
       const commentNode = this.document.createElement('div');
       commentNode.setAttribute('class', 'giscus oeyoews-giscus');

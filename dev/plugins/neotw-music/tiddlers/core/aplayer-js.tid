@@ -3,5 +3,5 @@ type: application/javascript
 tags: $:/tags/RawMarkupWikified/BottomBody
 
 `<script>`
-{{$:/plugins/oeyoews/neotw-music/aplayer.js}}
+{{$:/plugins/oeyoews/neotw-music/aplayer.min.js}}
 `</script>`
