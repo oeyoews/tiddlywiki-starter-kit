@@ -5,24 +5,13 @@ title: $:/plugins/oeyoews/neotw-music/readme
 </a>
 <$image source={{{ [[][https://img.shields.io/badge/Version-]] [<currentTiddler>get[version]] [[-red?style=flat&logo=dev.to&logoColor=red]] +[join[]]}}} />
 
-<center>
-<$button>
-{{$:/plugins/oeyoews/neotw-music/icon}} Open Music(pure)
-<$action-sendmessage $message="tm-open-external-window" $param="https://oeyoews.github.io/HeoMusic"/>
-</$button>
-<$button>
-{{$:/plugins/oeyoews/neotw-music/om-icon}} Open Music(163 custom)
-<$action-sendmessage $message="tm-open-external-window" $param="https://om-app.oeyoewl.top"/>
-</$button>
-</center>
-
-!! TWM
+!! Intro TWM
 
 * [[Metingjs-api|https://meting-api-oeyoews.vercel.app/api]]
 * [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-special-day]]
 * [[Demo|https://oeyoews.github.io/neotw/]]
 
-!! Usage
+!! Configuration TWM
 
 <$button>
   Config {{$:/plugins/oeyoews/neotw-music/icon}}

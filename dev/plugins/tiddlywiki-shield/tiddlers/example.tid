@@ -1,4 +1,7 @@
 title: $:/plugins/oeyoews/tiddlywiki-shield/example
+class: o-tm
+subtitle: {{$:/plugins/oeyoews/tiddlywiki-shield/icon}} Shield {{$:/plugins/oeyoews/tiddlywiki-modal-ui/close-modal}}
+mask-closable: yes
 
 !! Based GitHub
 

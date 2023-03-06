@@ -1,10 +1,10 @@
 {
-  "version": "0.1.1",
+  "version": "0.2.0",
   "type": "application/json",
   "title": "$:/plugins/oeyoews/neotw-music",
   "plugin-type": "plugin",
   "name": "TWM",
-  "core-version": ">=5.2.3",
+  "core-version": ">=5.2.5",
   "description": "Tiddlywiki5 music player",
   "author": "oeyoews",
   "dependents": "$:/plugins/oeyoews/tiddlywiki-modal-ui",

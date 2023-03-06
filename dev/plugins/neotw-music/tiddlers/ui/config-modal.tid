@@ -3,5 +3,4 @@ mask-closable: yes
 subtitle: {{$:/plugins/oeyoews/neotw-music/icon}} TWM {{$:/plugins/oeyoews/tiddlywiki-modal-ui/close-modal}}
 class: o-tm
 
-<!-- use select option -->
-> Coming
+{{$:/plugins/oeyoews/neotw-music/config}}

@@ -10,4 +10,40 @@ fixed: true
 lrc_type: 0
 list_olded: true
 
-Twm config file
+> Coming
+
+!! 默认配置
+
+!!! 必填参数
+
+<!-- use select option -->
+* id: {{!!id}}
+> 播放歌单
+
+* server: {{!!server}}
+> 音乐平台
+
+!!! 可选参数
+
+* order: {{!!order}}
+> 播放顺序
+
+* type: {{!!type}}
+* loop: {{!!loop}}
+* preload: {{!!preload}}
+* mutex: {{!!mutex}}
+* fixed: {{!!fixed}}
+* lrc_type: {{!!lrc_type}}
+* list_olded: {{!!list_olded}}
+
+<!-- external music by @oeyoews -->
+<center>
+<$button>
+{{$:/plugins/oeyoews/neotw-music/icon}} Open Music(pure)
+<$action-sendmessage $message="tm-open-external-window" $param="https://oeyoews.github.io/HeoMusic"/>
+</$button>
+<$button>
+{{$:/plugins/oeyoews/neotw-music/om-icon}} Open Music(163 custom)
+<$action-sendmessage $message="tm-open-external-window" $param="https://om-app.oeyoewl.top"/>
+</$button>
+</center>

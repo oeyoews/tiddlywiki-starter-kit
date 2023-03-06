@@ -7,5 +7,5 @@
   "type": "application/json",
   "plugin-type": "plugin",
   "name": "Tiddlywiki Shield",
-  "list": "readme example"
+  "list": "readme"
 }
