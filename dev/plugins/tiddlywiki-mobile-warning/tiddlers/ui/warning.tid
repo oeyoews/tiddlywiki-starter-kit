@@ -1,0 +1,6 @@
+mask-closable: yes
+subtitle: {{$:/plugins/oeyoews/tiddlywiki-mobile-warning/icon}} Warning {{$:/plugins/oeyoews/tiddlywiki-modal-ui/close-modal}}
+title: $:/plugins/oeyoews/tiddlywiki-mobile-warn/ui/warning
+class: o-tm
+
+<<callout-details status:"open" type:'error' "Coming">>
