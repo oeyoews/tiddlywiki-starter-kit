@@ -1,0 +1,12 @@
+created: 20230306054354367
+creator: oeyoews
+modified: 20230306054532168
+modifier: oeyoews
+tags: 
+title: twikoo-modal-test
+type: text/vnd.tiddlywiki
+
+<$button>
+modal twikoo
+<$action-sendmessage $message="tm-modal" $param="twikoo-modal"/>
+</$button>

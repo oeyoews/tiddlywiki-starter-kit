@@ -3,5 +3,5 @@ tags: $:/tags/ViewTemplate
 
 <$list filter="[all[current]match[GettingStarted]]">
 <$siteuptime />
-<$loadtime />
+<!-- <$loadtime /> -->
 </$list>
