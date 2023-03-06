@@ -3,6 +3,4 @@ mask-closable: yes
 subtitle: {{$:/plugins/oeyoews/neotw-hitokoto/icon}} Hitokoto {{$:/plugins/oeyoews/tiddlywiki-modal-ui/close-modal}}
 class: o-tm tc-modal-centered
 
-<center>
 <$ohitokoto />
-</center>

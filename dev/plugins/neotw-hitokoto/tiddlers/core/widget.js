@@ -4,7 +4,6 @@ Hitokoto widget
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
-  'use strict';
 
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
 
@@ -17,7 +16,7 @@ Hitokoto widget
     render(parent, nextSibling) {
       this.parentDomNode = parent;
 
-      const hitokotoSpan = this.document.createElement('span');
+      const hitokotoSpan = this.document.createElement('center');
       hitokotoSpan.className = 'hitokoto';
       parent.insertBefore(hitokotoSpan, nextSibling);
       this.domNodes.push(hitokotoSpan);

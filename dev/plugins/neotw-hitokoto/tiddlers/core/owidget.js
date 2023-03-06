@@ -1,6 +1,4 @@
 (function () {
-  'use strict';
-
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
 
   class OHitokoto extends Widget {
@@ -11,7 +9,7 @@
 
     render(parent, nextSibling) {
       this.parentDomNode = parent;
-      const ohitokotoSpan = this.document.createElement('span');
+      const ohitokotoSpan = this.document.createElement('center');
       ohitokotoSpan.className = 'hitokoto';
       this.updateText(ohitokotoSpan);
       ohitokotoSpan.onclick = this.handleRefresh.bind(this);

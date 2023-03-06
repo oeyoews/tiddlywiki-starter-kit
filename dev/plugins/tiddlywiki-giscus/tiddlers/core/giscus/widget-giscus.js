@@ -1,7 +1,5 @@
 /* widget giscus */
 (function () {
-  'use strict';
-
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
 
   class GiscusNodeWidget extends Widget {
@@ -30,7 +28,8 @@
         console.warn(`💎 评论区 "${id}" 已存在`);
         // 如果已经存在评论区，则在插件所在的位置添加一个 span 元素，内容为警告信息
         const warnNode = this.document.createElement('center');
-        warnNode.className = 'o-giscus-warn';
+        warnNode.style.color = 'red';
+        warnNode.style.fontWeight = 'bold';
         warnNode.textContent = '此评论区已存在，请勿重复渲染！';
         parent.insertBefore(warnNode, nextSibling);
         this.domNodes.push(warnNode);
