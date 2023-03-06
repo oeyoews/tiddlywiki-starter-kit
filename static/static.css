@@ -6814,6 +6814,10 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="top-news"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="twikoo-modal"] .tc-titlebar h2 { text-transform: capitalize; }
+
+  [data-tiddler-title="twikoo-modal-test"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="update-tiddlywiki-bug"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="use-deepl-extend-on-chrome"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -7177,13 +7181,13 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Macro] .tc-tag-label:after {
-  content: " 79";
+  content: " 80";
 }
 
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 119";
+  content: " 120";
 }
 
 
@@ -7481,7 +7485,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "160";
+  content: "162";
 }
 .user-panel-avatar { position: relative; max-width: 22px; max-height: 22px; }.user-panel-avatar-56 { position: relative; max-width: 56px; max-height: 56px; }.user-panel-avatar-56 img { width: 100%; height: auto; max-width: 56px; max-height: 56px; border-radius: 50%; aspect-ratio: 1 / 1; }.user-panel-avatar img { width: 100%; height: auto; max-width: 22px; max-height: 22px; border-radius: 50%; aspect-ratio: 1 / 1; }
 ul.bullets li::marker {
