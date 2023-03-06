@@ -1,7 +1,7 @@
 title: $:/plugins/oeyoews/tiddlywiki-mobile-warn/action/startup
 tags: $:/tags/StartupAction/PostRender
 
-<!-- <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]"> -->
-<$list filter="[{$:/info/url/protocol}match[http:]]">
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
+<!-- <$list filter="[{$:/info/url/protocol}match[http:]]"> -->
 <$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/tiddlywiki-mobile-warn/ui/warning"/>
 </$list>
