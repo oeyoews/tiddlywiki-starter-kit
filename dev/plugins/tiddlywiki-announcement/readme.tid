@@ -17,3 +17,7 @@ title: $:/plugins/oeyoews/tiddlywiki-announcement/readme
 
 * [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-announcement]]
 * [[Demo|https://oeyoews.github.io/neotw/]]
+
+!! TODO
+
+* use tc-plugin-reload-warning
