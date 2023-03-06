@@ -46,4 +46,5 @@
   }
 
   exports.loadtime = LoadTimeWidget;
+  exports.platforms = ['browser'];
 })();
