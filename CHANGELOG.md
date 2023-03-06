@@ -1,3 +1,10 @@
+# [3.106.0](https://github.com/oeyoews/neotw/compare/v3.105.1...v3.106.0) (2023-03-06)
+
+
+### Features
+
+* add font awesome ([e715856](https://github.com/oeyoews/neotw/commit/e715856a3952fdb609d013e5e5c54789371ce6eb))
+
 ## [3.105.1](https://github.com/oeyoews/neotw/compare/v3.105.0...v3.105.1) (2023-03-06)
 
 
