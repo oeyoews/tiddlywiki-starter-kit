@@ -1,3 +1,10 @@
+# [3.105.0](https://github.com/oeyoews/neotw/compare/v3.104.0...v3.105.0) (2023-03-06)
+
+
+### Features
+
+* add githubcalender widget ([d090e07](https://github.com/oeyoews/neotw/commit/d090e07e17d6081738a437542d6a608d1ad2ffd3))
+
 # [3.104.0](https://github.com/oeyoews/neotw/compare/v3.103.2...v3.104.0) (2023-03-06)
 
 
