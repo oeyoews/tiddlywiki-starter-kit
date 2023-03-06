@@ -1,3 +1,10 @@
+## [3.105.1](https://github.com/oeyoews/neotw/compare/v3.105.0...v3.105.1) (2023-03-06)
+
+
+### Bug Fixes
+
+* just build index and plugins ([9f81038](https://github.com/oeyoews/neotw/commit/9f810383f39808891a5fbdb94096f774133d1714))
+
 # [3.105.0](https://github.com/oeyoews/neotw/compare/v3.104.0...v3.105.0) (2023-03-06)
 
 
