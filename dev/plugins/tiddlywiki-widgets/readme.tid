@@ -19,3 +19,7 @@ title: $:/plugins/oeyoews/tiddlywiki-widgets/readme
 
 * [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-widgets]]
 * [[Demo|https://oeyoews.github.io/neotw]]
+
+!! TODO
+
+* loadtime repeat, use pagetemplate to fix

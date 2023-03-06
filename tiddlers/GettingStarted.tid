@@ -3,7 +3,7 @@ created: 20230117102714737
 creator: oeyoews
 giscus: yes
 icon: tom.png
-modified: 20230306062419388
+modified: 20230306063431778
 modifier: oeyoews
 page-cover: banner.png
 pin: yes
@@ -25,4 +25,6 @@ type: text/vnd.tiddlywiki
 {{$:/plugins/oeyoews/neotw/readme-lang}}
 </$list>
 
+<$list filter="[{$:/info/url/protocol}match[https:]]">
 <$twikoo />
+</$list>

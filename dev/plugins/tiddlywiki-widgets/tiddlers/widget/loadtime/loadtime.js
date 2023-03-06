@@ -1,6 +1,6 @@
 (function () {
   // Interactive DOM not available when generating static pages
-  // if (!$tw.browser) return;
+  if (!$tw.browser) return;
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
 
   class LoadTimeWidget extends Widget {

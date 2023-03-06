@@ -1,4 +1,5 @@
 (function () {
+  if (!$tw.browser) return;
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
 
   class OHitokoto extends Widget {

@@ -5,6 +5,8 @@ Hitokoto widget
   /*jslint node: true, browser: true */
   /*global $tw: false */
 
+  if (!$tw.browser) return;
+
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
 
   class Hitokoto extends Widget {
