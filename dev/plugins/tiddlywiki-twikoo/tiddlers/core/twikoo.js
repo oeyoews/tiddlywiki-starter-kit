@@ -1,5 +1,3 @@
-// https://twikoo.oeyoewl.top
-// add if (!$tw.browser) return;
 (function () {
   // Interactive DOM not available when generating static pages
   if (!$tw.browser) return;
@@ -10,12 +8,6 @@
       super(parseTreeNode, options);
       this.twikooScriptSrc =
         'https://cdn.staticfile.org/twikoo/1.6.10/twikoo.all.min.js';
-      console.log(this.twikooScriptSrc);
-      this.envId = parseTreeNode.envId || 'https://twikoo.oeyoewl.top';
-      this.el = parseTreeNode.el || '#tcomment';
-      this.path =
-        parseTreeNode.path ||
-        $tw.wiki.getTiddlerText('$:/temp/focussedTiddler');
     }
 
     render(parent, nextSibling) {
@@ -26,31 +18,18 @@
       twikooScript.src = this.twikooScriptSrc;
       twikooScript.async = true;
       this.document.head.appendChild(twikooScript);
-      // this.envId = envId;
-      // this.el = el;
-
-      // var path = $tw.wiki.getTiddlerText('$:/temp/focussedTiddler');
-      // var path = this.path;
-      console.log(`🐛current path is + ${this.path}`);
-      //
-      // if (!envId) {
-      //   console.error("Missing 'envId' attribute for twikoo widget.");
-      //   return;
-      // } else {
-      //   console.log(envId);
-      // }
-      //
-      // if (!el) {
-      //   console.error("Missing 'el' attribute for twikoo widget.");
-      //   return;
-      // }
+      this.computeAttributes();
+      var path = this.getAttribute('path', 'Index');
+      var envId = this.getAttribute('envId', 'https://twikoo.oeyoewl.top');
+      var el = this.getAttribute('el', '#tcomment');
+      console.log(`🐛 当前twikoo评论区 为 ${path}`);
 
       // Initialize Twikoo with options
       twikooScript.addEventListener('load', () => {
         twikoo.init({
-          envId: this.envId,
-          el: this.el,
-          path: this.path,
+          envId: envId,
+          el: el,
+          path: path,
         });
       });
 
@@ -73,7 +52,7 @@
       if (twikooScript) {
         twikooScript.remove();
       }
-      const twikooDiv = this.document.querySelector(this.el);
+      const twikooDiv = this.document.querySelector(el);
       if (twikooDiv) {
         twikooDiv.remove();
       }
