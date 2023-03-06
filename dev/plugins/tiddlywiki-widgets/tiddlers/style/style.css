@@ -1,0 +1,11 @@
+.hitokoto {
+  margin-top: 10px;
+  font-size: 50%;
+  background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hitokoto:hover {
+  cursor: pointer;
+}

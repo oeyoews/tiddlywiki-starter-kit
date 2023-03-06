@@ -1,0 +1,7 @@
+title: $:/plugins/oeyoews/tiddlywiki-widgets/ui/viewtemplate
+tags: $:/tags/ViewTemplate
+
+<$list filter="[[GettingStarted]]">
+<$siteuptime />
+<$loadtime />
+</$list>
