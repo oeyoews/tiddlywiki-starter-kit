@@ -1,0 +1,10 @@
+title: $:/plugins/oeyoews/tiddlywiki-tips/ui/modal
+mask-closable: yes
+class: o-tm
+subtitle: {{$:/plugins/oeyoews/tiddlywiki-tips/icon}} Example
+
+> 点击下方红色文本刷新, 默认只添加了十条文本, 所以连续两次重复几率比较大
+
+<div style="color: red;font-weight:bold;">
+<$tw-tip />
+</div>

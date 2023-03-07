@@ -1,0 +1,14 @@
+{
+  "title": "$:/plugins/oeyoews/tiddlywiki-tips",
+  "description": "Tiddlywiki Tips",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.2.5",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "Tiddlywiki Tips",
+  "dependents": [
+    "$:/plugins/oeyoews/tiddlywiki-modal-ui"
+  ],
+  "list": "readme explore"
+}
