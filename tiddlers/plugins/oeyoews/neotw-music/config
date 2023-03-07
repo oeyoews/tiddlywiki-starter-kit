@@ -1,15 +1,3 @@
-title: $:/plugins/oeyoews/neotw-music/config
-server: netease
-id: 2916766519
-type: playlist
-order: random
-loop: all
-preload: auto
-mutex: true
-fixed: true
-lrc_type: 0
-list_olded: true
-
 \define tid() $:/plugins/oeyoews/neotw-music/config
 
 \define id()
