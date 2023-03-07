@@ -1,3 +1,10 @@
+# [3.111.0](https://github.com/oeyoews/neotw/compare/v3.110.0...v3.111.0) (2023-03-07)
+
+
+### Features
+
+* add refreshHitokoto ([dfc04b5](https://github.com/oeyoews/neotw/commit/dfc04b5efbf6e93e29a42d2b24e86fb504d0b9f3))
+
 # [3.110.0](https://github.com/oeyoews/neotw/compare/v3.109.0...v3.110.0) (2023-03-07)
 
 
