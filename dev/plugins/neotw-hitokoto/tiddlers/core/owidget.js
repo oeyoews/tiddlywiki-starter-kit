@@ -10,6 +10,15 @@
 
     render(parent, nextSibling) {
       this.parentDomNode = parent;
+      this.computeAttributes();
+      this.execute();
+
+      const refreshTime = this.getAttribute('refreshTime', '30000');
+
+      if (refreshTime <= 0) {
+        alert('refreshTime 值过小， 请设置一个合适的数字');
+        return;
+      }
       const ohitokotoSpan = this.document.createElement('center');
       ohitokotoSpan.className = 'hitokoto';
       this.updateText(ohitokotoSpan);
@@ -17,7 +26,7 @@
       parent.insertBefore(ohitokotoSpan, nextSibling);
       this.domNodes.push(ohitokotoSpan);
 
-      setInterval(() => this.updateText(ohitokotoSpan), 20000);
+      setInterval(() => this.updateText(ohitokotoSpan), refreshTime);
     }
 
     updateText(domNode) {
@@ -29,7 +38,7 @@
       );
       const randomIndex = Math.floor(Math.random() * sentences.length);
       const randomSentence =
-        sentences[randomIndex].hitokoto + '  ' + sentences[randomIndex].from;
+        sentences[randomIndex].hitokoto + ' @' + sentences[randomIndex].from;
       this.isUpdating = true;
       domNode.textContent = randomSentence;
       this.isUpdating = false;

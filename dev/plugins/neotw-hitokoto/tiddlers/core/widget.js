@@ -17,7 +17,15 @@ Hitokoto widget
 
     render(parent, nextSibling) {
       this.parentDomNode = parent;
+      this.computeAttributes();
+      this.execute();
 
+      const refreshTime = this.getAttribute('refreshTime', '30000');
+
+      if (refreshTime <= 0) {
+        alert('refreshTime 值过小， 请设置一个合适的数字');
+        return;
+      }
       const hitokotoSpan = this.document.createElement('center');
       hitokotoSpan.className = 'hitokoto';
       parent.insertBefore(hitokotoSpan, nextSibling);
@@ -49,7 +57,7 @@ Hitokoto widget
       });
 
       fetchHitokoto();
-      setInterval(fetchHitokoto, 30000);
+      setInterval(fetchHitokoto, refreshTime);
     }
   }
 
