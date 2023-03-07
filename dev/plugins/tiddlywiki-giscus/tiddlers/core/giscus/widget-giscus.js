@@ -20,10 +20,19 @@
       // loadingNode.textContent = 'Loading comments ...';
       // parent.insertBefore(loadingNode, nextSibling);
       // this.domNodes.push(loadingNode);
+
       if (id === '') {
         console.log(`💎 请传入正确的评论区id`);
+        const warnNode = this.document.createElement('center');
+        warnNode.style.color = 'red';
+        warnNode.style.fontWeight = 'bold';
+        warnNode.textContent = '未正确配置Giscus Id';
+        parent.insertBefore(warnNode, nextSibling);
+        this.domNodes.push(warnNode);
+        console.warn('未正确配置Giscus Id');
         return;
       }
+
       // 如果已经存在相同 id 的评论区，直接返回
       const existingCommentNode = this.document.querySelector(
         `.oeyoews-giscus[tiddler-title="${id.replace('"', '\\"')}"]`,
