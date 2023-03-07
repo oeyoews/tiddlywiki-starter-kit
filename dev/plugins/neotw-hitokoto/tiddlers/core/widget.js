@@ -20,7 +20,7 @@ Hitokoto widget
       this.computeAttributes();
       this.execute();
 
-      const refreshTime = this.getAttribute('refreshTime', '30000');
+      const refreshTime = this.getAttribute('refreshTime', '600000');
 
       if (refreshTime <= 0) {
         alert('refreshTime 值过小， 请设置一个合适的数字');
