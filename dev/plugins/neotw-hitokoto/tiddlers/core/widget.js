@@ -20,8 +20,10 @@ Hitokoto widget
       this.computeAttributes();
       this.execute();
 
+      /* param */
       const refreshTime = this.getAttribute('refreshTime', '600000');
       const refreshHitokoto = this.getAttribute('refreshHitokoto', '');
+      const enableClick = this.getAttribute('enableClick', 'yes');
 
       const hitokotoSpan = this.document.createElement('center');
       hitokotoSpan.className = 'hitokoto';
@@ -55,12 +57,14 @@ Hitokoto widget
           });
       };
 
-      parent.addEventListener('click', event => {
-        if (event.target !== hitokotoSpan) {
-          return;
-        }
-        fetchHitokoto();
-      });
+      if (enableClick === 'yes') {
+        parent.addEventListener('click', event => {
+          if (event.target !== hitokotoSpan) {
+            return;
+          }
+          fetchHitokoto();
+        });
+      }
 
       fetchHitokoto();
       if (refreshHitokoto === 'yes') {

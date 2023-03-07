@@ -15,6 +15,7 @@
 
       const refreshTime = this.getAttribute('refreshTime', '600000');
       // const refreshHitokoto = this.getAttribute('refreshHitokoto', '');
+      const enableClick = this.getAttribute('enableClick', 'yes');
 
       if (refreshTime <= 0) {
         // alert('refreshTime 值过小， 请设置一个合适的数字');
@@ -24,7 +25,9 @@
       const ohitokotoSpan = this.document.createElement('center');
       ohitokotoSpan.className = 'hitokoto';
       this.updateText(ohitokotoSpan);
-      ohitokotoSpan.onclick = this.handleRefresh.bind(this);
+      if (enableClick === 'yes') {
+        ohitokotoSpan.onclick = this.handleRefresh.bind(this);
+      }
       parent.insertBefore(ohitokotoSpan, nextSibling);
       this.domNodes.push(ohitokotoSpan);
 
