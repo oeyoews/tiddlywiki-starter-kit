@@ -13,6 +13,8 @@ list_olded: true
 \define tid() $:/plugins/oeyoews/neotw-music/config
 
 \define id()
+Id: <$edit-text tag="input" field="id" default="2916766519" tiddler=<<tid>> placeholder="2916766519"/>
+
 * id: {{!!id}}
 > 播放歌单, 默认使用网易音乐
 \end
@@ -70,6 +72,13 @@ list_olded: true
 !! 可选参数
 
 <$macrocall $name="callout-details" type="tip" src=<<option>> title="optional"/>
+
+!! 恢复默认设置
+
+<$button>
+  Reset Configuration
+  <$action-deletetiddler $tiddler=<<currentTiddler>> />
+</$button>
 
 !! 外部页面
 
