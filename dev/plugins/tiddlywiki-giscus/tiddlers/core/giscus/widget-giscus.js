@@ -26,7 +26,7 @@
         const warnNode = this.document.createElement('center');
         warnNode.style.color = 'red';
         warnNode.style.fontWeight = 'bold';
-        warnNode.textContent = '未正确配置Giscus Id';
+        warnNode.textContent = '💎 未正确配置Giscus Id';
         parent.insertBefore(warnNode, nextSibling);
         this.domNodes.push(warnNode);
         console.warn('未正确配置Giscus Id');
