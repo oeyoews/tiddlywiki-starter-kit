@@ -1,0 +1,17 @@
+class: o-tm
+created: 20230307124530367
+creator: oeyoews
+mask-closable: yes
+modified: 20230307124706614
+modifier: oeyoews
+subtitle: <$text text={{{[<switch>lookup[$:/language/Switcher/Subtitle/]]}}}/>
+title: $:/core/ui/SwitcherModal
+type: text/vnd.tiddlywiki
+
+<$tiddler tiddler={{{[<switch>lookup[$:/config/SwitcherTargets/]]}}}>
+
+
+<$transclude/>
+
+
+</$tiddler>

@@ -14,6 +14,7 @@
       this.execute();
 
       const refreshTime = this.getAttribute('refreshTime', '600000');
+      // const refreshHitokoto = this.getAttribute('refreshHitokoto', '');
 
       if (refreshTime <= 0) {
         alert('refreshTime 值过小， 请设置一个合适的数字');

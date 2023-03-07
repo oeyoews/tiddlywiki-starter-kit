@@ -21,17 +21,23 @@ Hitokoto widget
       this.execute();
 
       const refreshTime = this.getAttribute('refreshTime', '600000');
+      const refreshHitokoto = this.getAttribute('refreshHitokoto', '');
 
-      if (refreshTime <= 0) {
-        alert('refreshTime 值过小， 请设置一个合适的数字');
-        return;
-      }
       const hitokotoSpan = this.document.createElement('center');
       hitokotoSpan.className = 'hitokoto';
       parent.insertBefore(hitokotoSpan, nextSibling);
       this.domNodes.push(hitokotoSpan);
 
       const fetchHitokoto = () => {
+        if (parseInt(refreshTime) < 1000) {
+          // alert('refreshTime 值过小， 请设置一个合适的数字');
+          console.warn('refreshTime 值过小， 请设置一个合适的数字');
+          return;
+        }
+        if (refreshTime === 'true' || refreshTime === '') {
+          return;
+        }
+        console.log(`🐛 ${refreshTime}`);
         if (this.executing) {
           return;
         }
@@ -57,7 +63,10 @@ Hitokoto widget
       });
 
       fetchHitokoto();
-      setInterval(fetchHitokoto, refreshTime);
+      if (refreshHitokoto === 'yes') {
+        console.log('🐛 test');
+        setInterval(fetchHitokoto, refreshTime);
+      }
     }
   }
 
