@@ -52,3 +52,17 @@ title: $:/plugins/oeyoews/tiddlywiki-tips/readme
 </$button>
 
 > 注： 本插件由neotw-hitokoto单独抽离而出
+
+!! 用法
+
+```
+<$tw-tip />
+```
+
+在tiddler里面嵌入以上内容即可
+
+<$button>
+  添加文本
+  <$action-sendmessage $message="tm-edit-tiddler" $param="$:/plugins/oeyoews/tiddlywiki-tips/random-sentences.json" />
+</$button>
+<!-- add reset and confirm tip-->
