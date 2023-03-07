@@ -5,13 +5,13 @@ title: $:/plugins/oeyoews/neotw-music/readme
 </a>
 <$image source={{{ [[][https://img.shields.io/badge/Version-]] [<currentTiddler>get[version]] [[-red?style=flat&logo=dev.to&logoColor=red]] +[join[]]}}} />
 
-!! Intro TWM
+!! Intro
 
 * [[Metingjs-api|https://meting-api-oeyoews.vercel.app/api]]
 * [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-special-day]]
 * [[Demo|https://oeyoews.github.io/neotw/]]
 
-!! Configuration TWM
+!! Configuration
 
 <$button>
   Config {{$:/plugins/oeyoews/neotw-music/icon}}
