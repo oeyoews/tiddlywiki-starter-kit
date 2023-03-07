@@ -1,8 +1,0 @@
-title: $:/plugins/oeyoews/tiddlywiki-widgets/ui/viewtemplate
-tags: $:/tags/ViewTemplate
-
-<$list filter="[{$:/info/url/protocol}match[https:]]">
-<$list filter="[all[current]match[GettingStarted]]">
-<$siteuptime />
-</$list>
-</$list>
