@@ -7,6 +7,8 @@
   "core-version": ">=5.2.3",
   "description": "neotw-hitokoto",
   "author": "oeyoews",
-  "dependents": "$:/plugins/oeyoew/tiddlywiki-modal-ui",
+  "dependents": [
+    "$:/plugins/oeyoew/tiddlywiki-modal-ui"
+  ],
   "list": "readme explore"
 }

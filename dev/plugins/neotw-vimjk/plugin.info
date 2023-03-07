@@ -1,13 +1,15 @@
 {
-    "title": "$:/plugins/oeyoews/codemirror-keymap-vimjk",
-    "name": "CodeMirror Keymap VimJK",
-    "description": "VimJK",
-    "author": "oeyoews",
-    "version": "v0.1.4",
-    "core-version": "5.2.3",
-    "source": "",
-    "list": "readme",
-    "parent-plugin": "$:/plugins/tiddlywiki/codemirror",
-    "dependents": "$:/plugins/tiddlywiki/codemirror-search-replace $:/plugins/tiddlywiki/codemirror-closebrackets",
-    "plugin-type": "plugin"
+  "title": "$:/plugins/oeyoews/codemirror-keymap-vimjk",
+  "name": "CodeMirror Keymap VimJK",
+  "description": "VimJK",
+  "author": "oeyoews",
+  "version": "v0.1.5",
+  "core-version": "5.2.3",
+  "source": "",
+  "list": "readme",
+  "parent-plugin": "$:/plugins/tiddlywiki/codemirror",
+  "dependents": [
+    "$:/plugins/tiddlywiki/codemirror-search-replace $:/plugins/tiddlywiki/codemirror-closebrackets"
+  ],
+  "plugin-type": "plugin"
 }

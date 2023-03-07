@@ -7,6 +7,6 @@
   "type": "application/json",
   "plugin-type": "plugin",
   "name": "${upperpluginname}",
-  "dependents": "",
+  "dependents": [],
   "list": "readme explore"
 }

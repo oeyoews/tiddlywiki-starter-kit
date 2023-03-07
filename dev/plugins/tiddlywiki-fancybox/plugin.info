@@ -7,6 +7,6 @@
   "type": "application/json",
   "plugin-type": "plugin",
   "name": "Tiddlywiki Fancybox",
-  "dependents": "$:/plugins/oeyoews/tiddlywiki-modal-ui",
+  "dependents": ["$:/plugins/oeyoews/tiddlywiki-modal-ui"],
   "list": "readme config example explore"
 }

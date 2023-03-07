@@ -7,6 +7,6 @@
   "type": "application/json",
   "plugin-type": "plugin",
   "name": "Tiddlywiki Modal Ui",
-  "dependents": "",
+  "dependents": [],
   "list": "readme explore"
 }

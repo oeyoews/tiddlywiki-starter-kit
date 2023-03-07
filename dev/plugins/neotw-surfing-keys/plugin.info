@@ -7,6 +7,6 @@
   "core-version": "5.2.5",
   "source": "",
   "list": "readme explore",
-  "dependents": "$:/plugins/kookma/shiraz-callout $:/plugins/oeyoews/tiddlywiki-modal-ui",
+  "dependents": ["$:/plugins/kookma/shiraz-callout", "$:/plugins/oeyoews/tiddlywiki-modal-ui"],
   "plugin-type": "plugin"
 }
