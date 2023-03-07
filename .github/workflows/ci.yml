@@ -66,12 +66,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: yarn semantic-release
 
-      - uses: jsmrcaga/action-netlify-deploy@v2.0.0
-        with:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_DEPLOY_TO_PROD: true
-          NETLIFY_SITE_ID: 7654bd58-2df9-4962-9a81-4cca9cf78b9c
-          build_directory: ./dist
-          NETLIFY_DEPLOY_MESSAGE: 'Deployed from GitHub action'
-          install_command: 'echo Skipping installing the dependencies'
-          build_command: 'echo Skipping building the web files'
+      # - uses: jsmrcaga/action-netlify-deploy@v2.0.0
+      #   with:
+      #     NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      #     NETLIFY_DEPLOY_TO_PROD: true
+      #     NETLIFY_SITE_ID: 7654bd58-2df9-4962-9a81-4cca9cf78b9c
+      #     build_directory: ./dist
+      #     NETLIFY_DEPLOY_MESSAGE: 'Deployed from GitHub action'
+      #     install_command: 'echo Skipping installing the dependencies'
+      #     build_command: 'echo Skipping building the web files'
