@@ -37,7 +37,7 @@ Hitokoto widget
         if (refreshTime === 'true' || refreshTime === '') {
           return;
         }
-        console.log(`🐛 ${refreshTime}`);
+        // console.log(`🐛 ${refreshTime}`);
         if (this.executing) {
           return;
         }
@@ -64,7 +64,6 @@ Hitokoto widget
 
       fetchHitokoto();
       if (refreshHitokoto === 'yes') {
-        console.log('🐛 test');
         setInterval(fetchHitokoto, refreshTime);
       }
     }

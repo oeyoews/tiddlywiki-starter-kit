@@ -17,7 +17,8 @@
       // const refreshHitokoto = this.getAttribute('refreshHitokoto', '');
 
       if (refreshTime <= 0) {
-        alert('refreshTime 值过小， 请设置一个合适的数字');
+        // alert('refreshTime 值过小， 请设置一个合适的数字');
+        console.log('refreshTime 值过小， 请设置一个合适的数字');
         return;
       }
       const ohitokotoSpan = this.document.createElement('center');
