@@ -15,11 +15,11 @@ title: $:/plugins/oeyoews/tiddlywiki-giscus/readme
   <$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/tiddlywiki-giscus/giscus-config"/>
 </$button>
 <!-- <<nav-tid "giscus-config">> -->
-<$set name="repo" value="$:/plugins/oeyoews/tiddlywiki-giscus/config">
-  <$button class="get-started" tooltip={{{ [<repo>get[repo]addsuffix[ discussions]] }}}>
-    <<giscusDiscussions>>
-  </$button>
-</$set>
+<!-- <$set name="repo" value="$:/plugins/oeyoews/tiddlywiki-giscus/config"> -->
+<!--   <$button class="get-started" tooltip={{{ [<repo>get[repo]addsuffix[ discussions]] }}}> -->
+<!--     <<giscusDiscussions>> -->
+<!--   </$button> -->
+<!-- </$set> -->
 <$button setTitle=<<tabsState>> setField="text" setTo="contents">
   Contents
 </$button>

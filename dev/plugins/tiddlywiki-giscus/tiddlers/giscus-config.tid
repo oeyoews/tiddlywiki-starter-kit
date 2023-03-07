@@ -1,9 +1,7 @@
 title: $:/plugins/oeyoews/tiddlywiki-giscus/giscus-config
 mask-closable: yes
 subtitle: {{$:/plugins/oeyoews/tiddlywiki-giscus/icon-gem}} Giscus Config {{$:/plugins/oeyoews/tiddlywiki-modal-ui/close-modal}}
-class: o-tm tc-modal-centered
-
-\whitespace trim
+class: o-tm
 
 \define tid() $:/plugins/oeyoews/tiddlywiki-giscus/config
 \define tidFilter() $:/plugins/oeyoews/tiddlywiki-giscus/filter
@@ -13,7 +11,7 @@ You may have to save and reload the wiki to activate changes.
 * Install giscus for your github repo [[Install Giscus|https://github.com/apps/giscus/installations/new]]
 * [[get giscus parameter|https://giscus.app/zh-CN]]
 
-change badge style &nbsp;
+<!-- change badge style &nbsp; -->
 <$select field="style" tiddler=<<tid>> tooltip='badge style'>
 </$set>
   <option>for-the-badge</option>
