@@ -1,0 +1,9 @@
+title: $:/plugins/oeyoews/neotw-hitokoto/ohitokoto-modal
+mask-closable: yes
+subtitle: {{$:/plugins/oeyoews/neotw-hitokoto/icon}} Hitokoto {{$:/plugins/oeyoews/tiddlywiki-modal-ui/close-modal}}
+class: o-tm tc-modal-centered
+
+<!-- todo -->
+<div style="font-size:18px;">
+<$ohitokoto />
+</div>

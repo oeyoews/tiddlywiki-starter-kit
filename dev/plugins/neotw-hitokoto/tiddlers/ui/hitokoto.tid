@@ -5,6 +5,10 @@ tags: $:/tags/ViewTemplate
 {{$:/plugins/oeyoews/neotw-hitokoto/modal-id}}
 </$list>
 
-<$list filter="[all[current]match[$:/plugins/oeyoews/neotw-hitokoto]]">
-{{$:/plugins/oeyoews/neotw-hitokoto/modal-id}}
-</$list>
+<!-- <$list filter="[[all[current]field:hitokoto[yes]]]"> -->
+<!-- {{$:/plugins/oeyoews/neotw-hitokoto/modal-id}} -->
+<!-- </$list> -->
+
+<!-- <$list filter="[all[current]match[$:/plugins/oeyoews/neotw-hitokoto]]"> -->
+<!-- {{$:/plugins/oeyoews/neotw-hitokoto/modal-id}} -->
+<!-- </$list> -->

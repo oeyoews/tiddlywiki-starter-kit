@@ -13,11 +13,15 @@ title: $:/plugins/oeyoews/neotw-hitokoto/readme
 
 > 使用一言api, 需要联网
 
+{{$:/plugins/oeyoews/neotw-hitokoto/modal-id}}
+
 !! 一言tiddlywiki版(local)
 
 {{$:/plugins/oeyoews/neotw-hitokoto/surfing}}
 > 使用json格式存储数据， 可以随时更改句子内容  @chatgpt
 > [[Random Sentences|$:/plugins/oeyoews/neotw-hitokoto/random-sentences.json]]
+
+{{$:/plugins/oeyoews/neotw-hitokoto/ohitokoto}}
 
 * 每隔一段时间自动刷新, 点击也可刷新
 
@@ -40,5 +44,3 @@ title: $:/plugins/oeyoews/neotw-hitokoto/readme
 !! NOTE
 
 * 暂时还不支持静态文件编译
-
-{{$:/plugins/oeyoews/neotw-hitokoto/ohitokoto}}
