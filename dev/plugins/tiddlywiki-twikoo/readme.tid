@@ -17,9 +17,13 @@ title: $:/plugins/oeyoews/tiddlywiki-twikoo/readme
 
 !! Tiddlywiki Twikoo
 
+> 一个简洁、安全、免费的静态网站评论系统。
+> A simple, safe, free comment system.
+
 * [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-twikoo]]
 * [[Demo|https://oeyoews.github.io/neotw]]
 
 !! TODO
 
+* add usage for twikoo
 * merget to giscus add two tabs to support switch

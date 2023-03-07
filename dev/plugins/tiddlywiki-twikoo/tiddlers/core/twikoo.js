@@ -20,10 +20,15 @@
       this.document.head.appendChild(twikooScript);
       this.computeAttributes();
       var path = this.getAttribute('path', 'Index');
-      var envId = this.getAttribute('envId', 'https://twikoo.oeyoewl.top');
+      var envId = this.getAttribute('envId', '');
       var el = this.getAttribute('el', '#tcomment');
       console.log(`🐛 当前twikoo评论区 为 ${path}`);
 
+      if (!envId) {
+        alert('twikoo not have a valid envId');
+        console.log(envId);
+        return;
+      }
       // Initialize Twikoo with options
       twikooScript.addEventListener('load', () => {
         twikoo.init({
