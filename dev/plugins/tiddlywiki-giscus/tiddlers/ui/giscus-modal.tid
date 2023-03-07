@@ -3,6 +3,10 @@ mask-closable: yes
 subtitle: {{$:/plugins/oeyoews/tiddlywiki-giscus/close-modal}}
 class: o-giscus-comment
 
+<$list filter="[[$:/plugins/oeyoews/neotw-hitokoto]has[plugin-type]]">
+<$ohitokoto />
+</$list>
+
 <!-- theme -->
 <$giscus id={{$:/temp/focussedTiddler}} lang="en" theme={{{ [[$:/plugins/oeyoews/tiddlywiki-giscus/config]get[gtheme]else[light]] }}}/>
 <!-- utteranc -->
