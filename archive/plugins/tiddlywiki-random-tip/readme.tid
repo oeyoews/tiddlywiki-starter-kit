@@ -22,6 +22,10 @@ title: $:/plugins/oeyoews/tiddlywiki-random-tip/readme
 
 {{$:/plugins/oeyoews/tiddlywiki-random-tip/example}}
 
+!! NOTE
+
+* 随着时间变化，提示包来源混杂, 太微环境不一致等因素, 提示包内容不保证绝对正确
+
 !! TODO
 
 * 如果条目达到一定规模， 或者格式稳定后， 将提示包单独做成一个子插件
