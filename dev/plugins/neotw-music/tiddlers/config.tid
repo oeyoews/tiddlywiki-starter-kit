@@ -9,9 +9,10 @@ mutex: true
 fixed: true
 volumn: 0.7
 storyage_name: meting-js
-lrc_type: 1
+enablelrc: no
 bottom: 0
 list_olded: true
+<!-- lrc_type: 3 -->
 <!-- mini: false -->
 
 \define tid() $:/plugins/oeyoews/neotw-music/config
@@ -34,6 +35,14 @@ Id: <$edit-text tag="input" field="id" default="2916766519" tiddler=<<tid>> plac
 <$transclude tiddler={{{ [<currentTiddler>get[server]addprefix[$:/plugins/oeyoews/neotw-music/icons/]addsuffix[.svg]] }}}  mode="inline"/>
 \end
 
+\define showlrc()
+歌词显示:
+<$select field="enablelrc" tiddler=<<tid>> tooltip='' default="netease">
+  <option>no</option>
+  <option>yes</option>
+</$select>
+\end
+
 \define position()
 播放器高度: <$edit-text tag="input" field="bottom" default="0" tiddler=<<tid>> placeholder="200"/>
 
@@ -53,8 +62,8 @@ Id: <$edit-text tag="input" field="id" default="2916766519" tiddler=<<tid>> plac
 * preload: {{!!preload}}
 * mutex: {{!!mutex}}
 * fixed: {{!!fixed}}
-* lrc_type: {{!!lrc_type}}
 * list_olded: {{!!list_olded}}
+<!-- * lrc_type: {{!!lrc_type}} -->
 \end
 
 \define btn()
@@ -84,6 +93,7 @@ Id: <$edit-text tag="input" field="id" default="2916766519" tiddler=<<tid>> plac
 !! 可选参数
 
 <$macrocall $name="callout-details" type="note" src=<<position>> title="播放器位置"/>
+<$macrocall $name="callout-details" type="info" src=<<showlrc>> title="歌词显示"/>
 <$macrocall $name="callout-details" type="tip" src=<<option>> title="optional"/>
 
 !! 恢复默认设置

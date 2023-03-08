@@ -25,4 +25,5 @@ title: $:/plugins/oeyoews/neotw-music/readme
 
 !! NOTE
 
-> 由于浏览器限制， 不支持自动播放
+* 由于浏览器限制， 不支持自动播放
+* lrcType 参数有问题， 不完全支持
