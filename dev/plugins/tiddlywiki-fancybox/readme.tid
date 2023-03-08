@@ -13,10 +13,11 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox/readme
 
 !! Features
 
+* 点击图片自动放大(全部支持， 0 配置)
 * support download images, fullscreen, custom style and shortcuts,
 * support local images online images, mix that is also supported
 
-!! Usage
+!! Advance Usage
 
 <$button>
   Usage

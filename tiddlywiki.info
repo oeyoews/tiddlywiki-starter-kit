@@ -67,7 +67,6 @@
     "listen": [
       "--listen",
       "port=8099",
-      "use-browser-cache=yes",
       "anon-username=oeyoews"
     ],
     "static": [

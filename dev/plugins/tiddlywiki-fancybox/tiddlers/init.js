@@ -1,31 +1,40 @@
-let fbox_initialized = false;
 function init_fbox() {
-  const lables = document.querySelectorAll('img');
+  const images = document.querySelectorAll('img');
 
-  lables.forEach((lable, index) => {
-    var parent = lable.parentElement;
+  images.forEach((image, index) => {
+    var parent = image.parentElement;
     var hasFancybox = parent.hasAttribute('data-fancybox');
-    if (!hasFancybox) {
-      id = index;
-      const elem = document.createElement('a');
-      elem.href = lable.getAttribute('src');
-      elem.setAttribute('data-fancybox', '');
-      lable.parentNode.replaceChild(elem, lable);
-      elem.appendChild(lable);
+    if (hasFancybox) return;
+    if (parent && !parent.hasAttribute('data-fancybox')) {
+      const link = document.createElement('a');
+      link.href = image.getAttribute('src');
+      link.setAttribute('data-fancybox', '');
+      image.parentNode.replaceChild(link, image);
+      link.appendChild(image);
     }
   });
-  fbox_initialized = true;
-  console.log('初始化fancybox');
 }
+
+init_fbox();
+
+document.addEventListener('mousemove', function (e) {
+  var x = e.clientX;
+  var y = e.clientY;
+  var element = document.elementFromPoint(x, y);
+  if (element?.tagName.toLowerCase() === 'img') {
+    init_fbox();
+  }
+});
 
 // WIP dblclick is not suitable
-if (!fbox_initialized) {
-  document.addEventListener('dblclick', () => {
-    // listen to any DOM change and automatically perform spacing via MutationObserver()
-    init_fbox();
-  });
-}
-
+// if (!fbox_initialized) {
+// document.addEventListener('dblclick', () => {
+//   // listen to any DOM change and automatically perform spacing via MutationObserver()
+//   init_fbox();
+//   // console.log('init_fbox');
+//   // console.log(fbox_initialized);
+// });
+// }
 // const lables = document.querySelectorAll('img');
 // const elem = document.createElement('a');
 // lables.forEach((lable, index) => {
