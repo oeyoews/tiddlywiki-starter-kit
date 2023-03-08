@@ -67,7 +67,6 @@
     "listen": [
       "--listen",
       "port=8099",
-      "root-tiddler=$:/core/save/all-external-js",
       "use-browser-cache=yes",
       "anon-username=oeyoews"
     ],
