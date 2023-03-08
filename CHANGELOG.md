@@ -1,3 +1,10 @@
+## [3.114.1](https://github.com/oeyoews/neotw/compare/v3.114.0...v3.114.1) (2023-03-08)
+
+
+### Performance Improvements
+
+* use root-tiddler for nodejs ([f02a76d](https://github.com/oeyoews/neotw/commit/f02a76dca42228e9270fa79a28e9283f56ade5e4))
+
 # [3.114.0](https://github.com/oeyoews/neotw/compare/v3.113.0...v3.114.0) (2023-03-08)
 
 
