@@ -1,3 +1,10 @@
+# [3.112.0](https://github.com/oeyoews/neotw/compare/v3.111.0...v3.112.0) (2023-03-08)
+
+
+### Features
+
+* add scripts for neotw-hitokoto ([81668d3](https://github.com/oeyoews/neotw/commit/81668d399377f2f59f011672aff50b264704a711))
+
 # [3.111.0](https://github.com/oeyoews/neotw/compare/v3.110.0...v3.111.0) (2023-03-07)
 
 
