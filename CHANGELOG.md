@@ -1,3 +1,10 @@
+## [3.114.2](https://github.com/oeyoews/neotw/compare/v3.114.1...v3.114.2) (2023-03-08)
+
+
+### Bug Fixes
+
+* remove root-tiddler ([b19c4f9](https://github.com/oeyoews/neotw/commit/b19c4f9ec2ca07124a7f7043b1e6d433ba3f9f69))
+
 ## [3.114.1](https://github.com/oeyoews/neotw/compare/v3.114.0...v3.114.1) (2023-03-08)
 
 
