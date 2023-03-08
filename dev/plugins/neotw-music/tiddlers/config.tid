@@ -71,6 +71,8 @@ Id: <$edit-text tag="input" field="id" default="2916766519" tiddler=<<tid>> plac
 </center>
 \end
 
+> 默认歌单为521首纯音乐
+
 !! 必填参数
 
 <$macrocall $name="callout-details" type="error" src=<<id>> title="Id"/>
