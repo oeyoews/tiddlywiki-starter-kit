@@ -1,3 +1,10 @@
+# [3.115.0](https://github.com/oeyoews/neotw/compare/v3.114.2...v3.115.0) (2023-03-08)
+
+
+### Features
+
+* tiddlywiki-fancybox finished ([8977394](https://github.com/oeyoews/neotw/commit/8977394f910bd98a8c86c058079f9fe93be154cb))
+
 ## [3.114.2](https://github.com/oeyoews/neotw/compare/v3.114.1...v3.114.2) (2023-03-08)
 
 
