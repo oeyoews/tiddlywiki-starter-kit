@@ -1,3 +1,10 @@
+# [3.113.0](https://github.com/oeyoews/neotw/compare/v3.112.0...v3.113.0) (2023-03-08)
+
+
+### Features
+
+* add bottom param and enable dblclick to use init fancybox ([28bc6e5](https://github.com/oeyoews/neotw/commit/28bc6e597101333a5f4a91bdf50efec101d1f9ee))
+
 # [3.112.0](https://github.com/oeyoews/neotw/compare/v3.111.0...v3.112.0) (2023-03-08)
 
 
