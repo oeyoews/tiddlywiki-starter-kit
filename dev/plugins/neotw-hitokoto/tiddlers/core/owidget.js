@@ -43,7 +43,7 @@
       );
       const randomIndex = Math.floor(Math.random() * sentences.length);
       const randomSentence =
-        sentences[randomIndex].hitokoto + ' @' + sentences[randomIndex].from;
+        sentences[randomIndex].hitokoto + ' ' + sentences[randomIndex].from;
       this.isUpdating = true;
       domNode.textContent = randomSentence;
       this.isUpdating = false;

@@ -51,7 +51,7 @@ title: $:/plugins/oeyoews/tiddlywiki-tips/readme
   <$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/tiddlywiki-tips/ui/modal"/>
 </$button>
 
-> 注： 本插件由neotw-hitokoto单独抽离而出
+> 注： 本插件由neotw-hitokoto单独抽离而出, 此插件只是作为一个例子， 后续更新请查看neotw-hitokoto插件
 
 !! 用法
 
@@ -60,6 +60,13 @@ title: $:/plugins/oeyoews/tiddlywiki-tips/readme
 ```
 
 在tiddler里面嵌入以上内容即可
+
+> 如果需要添加大量文本， 建议使用chatgpt制卡(如果可以), 以下是本插件文本默认的制卡规则, 仅仅作为参考建议
+
+* 英文名人名言
+* 长度控制在20 到35 之间
+* 不使用双引号
+* 来源使用@分离
 
 <$button>
   添加文本
