@@ -55,7 +55,7 @@
       }
       const ohitokotoSpan = this.domNodes[0];
       this.updateText(ohitokotoSpan);
-      console.log('Refreshed: ' + ohitokotoSpan.textContent);
+      console.log(ohitokotoSpan.textContent);
     }
   }
 
