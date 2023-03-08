@@ -39,7 +39,7 @@
         return;
       }
       const sentences = $tw.wiki.getTiddlerData(
-        '$:/plugins/oeyoews/neotw-hitokoto/random-sentences.json',
+        '$:/plugins/oeyoews/neotw-hitokoto/sentences.json',
       );
       const randomIndex = Math.floor(Math.random() * sentences.length);
       const randomSentence =
