@@ -1,4 +1,7 @@
 (function () {
+  /*jslint node: true, browser: true */
+  /*global $tw: false */
+
   // Interactive DOM not available when generating static pages
   if (!$tw.browser) return;
   const Widget = require('$:/core/modules/widgets/widget.js').widget;

@@ -1,5 +1,8 @@
 /* widget giscus */
 (function () {
+  /*jslint node: true, browser: true */
+  /*global $tw: false */
+
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
 
   class GiscusNodeWidget extends Widget {
