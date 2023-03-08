@@ -43,10 +43,12 @@ for (let line of lines) {
 }
 
 // Convert the 'result' array to a formatted JSON string and store it in the 'jsonResult' variable
-const jsonResult = JSON.stringify(result, null, 2);
+// const jsonResult = JSON.stringify(result, null, 2);
+const jsonResult = JSON.stringify(result);
 
+const sentencesName = 'sentences.json';
 // Write the 'jsonResult' string to a new file called 'sentences.json'
-fs.writeFileSync('sentences.json', jsonResult);
+fs.writeFileSync(sentencesName, jsonResult);
 
 // Print a message to the console to confirm that the data has been written to the new file
-console.log('JSON data written to sentences.json');
+console.log(`JSON data written to ${sentencesName} and have ${id} sentences`);
