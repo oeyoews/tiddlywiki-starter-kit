@@ -36,6 +36,8 @@ Id: <$edit-text tag="input" field="id" default="2916766519" tiddler=<<tid>> plac
 
 \define position()
 播放器高度: <$edit-text tag="input" field="bottom" default="0" tiddler=<<tid>> placeholder="200"/>
+
+> pc端默认设置为0, 这个高度主要针对手机端
 \end
 
 \define type()
@@ -71,7 +73,6 @@ Id: <$edit-text tag="input" field="id" default="2916766519" tiddler=<<tid>> plac
 
 !! 必填参数
 
-<$macrocall $name="callout-details" type="note" src=<<position>> title="播放器位置"/>
 <$macrocall $name="callout-details" type="error" src=<<id>> title="Id"/>
 <$macrocall $name="callout-details" type="info" src=<<server>> title="音乐平台"/>
 <$macrocall $name="callout-details" type="warn" src=<<type>> title="type"/>
@@ -80,6 +81,7 @@ Id: <$edit-text tag="input" field="id" default="2916766519" tiddler=<<tid>> plac
 
 !! 可选参数
 
+<$macrocall $name="callout-details" type="note" src=<<position>> title="播放器位置"/>
 <$macrocall $name="callout-details" type="tip" src=<<option>> title="optional"/>
 
 !! 恢复默认设置
