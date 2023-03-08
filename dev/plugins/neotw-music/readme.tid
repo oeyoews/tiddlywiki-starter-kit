@@ -17,3 +17,7 @@ title: $:/plugins/oeyoews/neotw-music/readme
   Config {{$:/plugins/oeyoews/neotw-music/icon}}
   <$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/neotw-music/config-modal"/>
 </$button>
+
+!! TODO
+
+* use selection to id(support add new)
