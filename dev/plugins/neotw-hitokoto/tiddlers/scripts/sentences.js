@@ -4,7 +4,7 @@ comments by @chatgpt
 const fs = require('fs');
 
 // Read the contents of 'sentences.txt' file synchronously and store it in the 'data' variable as a string
-const data = fs.readFileSync('sentences.txt', 'utf-8');
+const data = fs.readFileSync('sentences_unique.txt', 'utf-8');
 
 // Split the string into an array of lines using the newline character '\n'
 const lines = data.split('\n');
