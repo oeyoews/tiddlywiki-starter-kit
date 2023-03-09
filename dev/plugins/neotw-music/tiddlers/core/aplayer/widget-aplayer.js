@@ -74,6 +74,7 @@ A music player widget that uses the APlayer library.
       this.aplayer = new APlayer(aplayerOptions);
     }
 
+    // add aplayer.destory
     handleClick(event) {
       const target = event.target,
         to = target.getAttribute('to');

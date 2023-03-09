@@ -18,11 +18,10 @@ title: $:/plugins/oeyoews/neotw-music/readme
 <$meting />
 <$meting id="12077204" type="artist" />
 ```
-<$aplayer />
 <$meting />
 
 > WIP
-> 使用歌单可能会报错， 暂时建议使用song
+> 使用歌单会报错, 因为要处理暂停程序， 暂时建议使用song
 
 !! Configuration
 
