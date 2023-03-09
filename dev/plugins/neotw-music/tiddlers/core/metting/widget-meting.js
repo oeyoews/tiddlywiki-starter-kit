@@ -12,15 +12,15 @@ Meting widget
   class Meting extends Widget {
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
-      this.addEventListeners([
-        { type: 'tm-navigate', handler: 'handleNavigateEvent' },
-      ]);
+      // this.addEventListeners([
+      //   { type: 'tm-navigate', handler: 'handleNavigateEvent' },
+      // ]);
     }
 
     render(parent, nextSibling) {
       this.parentDomNode = parent;
       this.computeAttributes();
-
+      this.execute();
       const server = this.getAttribute('server', 'netease');
       const id = this.getAttribute('id', '1947926942');
       const type = this.getAttribute('type', 'song');
@@ -40,21 +40,23 @@ Meting widget
       this.domNodes.push(metingSpan);
     }
 
-    handleNavigateEvent(event) {
-      const target = event.target,
-        to = target.getAttribute('to');
-      if (to === this.getAttribute('to')) {
-        this.refreshSelf();
-        event.preventDefault();
-        event.stopPropagation();
-      }
-    }
+    execute() {}
 
-    destructor() {
-      const metingSpan = this.domNodes[0];
-      metingSpan.parentNode.removeChild(metingSpan);
-      super.destructor();
-    }
+    // handleNavigateEvent(event) {
+    //   const target = event.target,
+    //     to = target.getAttribute('to');
+    //   if (to === this.getAttribute('to')) {
+    //     this.refreshSelf();
+    //     event.preventDefault();
+    //     event.stopPropagation();
+    //   }
+    // }
+
+    // destructor() {
+    //   const metingSpan = this.domNodes[0];
+    //   metingSpan.parentNode.removeChild(metingSpan);
+    //   super.destructor();
+    // }
   }
 
   exports.meting = Meting;
