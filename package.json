@@ -10,7 +10,7 @@
   "scripts": {
     "semantic-release": "semantic-release",
     "guide": "zx scripts/guide.mjs",
-    "start": "npx pm2 start neotw.config.json",
+    "start": "npx pm2 start ecosystem.config.js",
     "build:oeyoews": "zx scripts/build-oeyoews.mjs",
     "dev": "nodemon --watch dev --ext tid --exec tiddlywiki --listen port=8081"
   },

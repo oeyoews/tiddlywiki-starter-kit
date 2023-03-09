@@ -1,3 +1,6 @@
+/**
+ * init_fbox
+ */
 function init_fbox() {
   const images = document.querySelectorAll('img');
 
