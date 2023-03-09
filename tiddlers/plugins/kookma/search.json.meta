@@ -1,0 +1,12 @@
+author: Mohammad Rahmani
+core-version: >=5.2.5
+dependents: $:/plugins/kookma/shiraz
+description: Advanced search in fields using regular expression and tabular output
+list: readme license history
+name: Search in Fields
+plugin-type: plugin
+source: https://github.com/kookma/TW-Search
+tags: 
+title: $:/plugins/kookma/search
+type: application/json
+version: 0.9.0
