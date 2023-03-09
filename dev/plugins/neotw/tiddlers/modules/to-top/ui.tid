@@ -136,7 +136,7 @@ tags: $:/tags/PageTemplate
   <<github-cat>>
   <<switch-lang>>
   <<toggle-theme>>
-  <<load-articles>>
+  <!-- <<load-articles>> -->
   <<home-button>>
 </div>
 </$list>

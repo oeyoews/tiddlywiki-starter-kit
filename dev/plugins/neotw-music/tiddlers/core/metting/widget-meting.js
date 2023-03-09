@@ -25,22 +25,17 @@ Meting widget
       const id = this.getAttribute('id', '1947926942');
       const type = this.getAttribute('type', 'song');
       const fold = this.getAttribute('fold', true);
-      // const fixed = this.getAttribute('fixed', false);
-      // const mini = this.getAttribute('mini', true);
 
       const metingSpan = this.document.createElement('meting-js');
       metingSpan.setAttribute('server', server);
       metingSpan.setAttribute('id', id);
       metingSpan.setAttribute('type', type);
       metingSpan.setAttribute('list-folded', fold);
-      // metingSpan.setAttribute('fixed', fixed);
-      // metingSpan.setAttribute('mini', mini);
 
       parent.insertBefore(metingSpan, nextSibling);
       this.domNodes.push(metingSpan);
     }
-
-    execute() {}
+    // add refreshSelf
 
     // handleNavigateEvent(event) {
     //   const target = event.target,
@@ -50,12 +45,6 @@ Meting widget
     //     event.preventDefault();
     //     event.stopPropagation();
     //   }
-    // }
-
-    // destructor() {
-    //   const metingSpan = this.domNodes[0];
-    //   metingSpan.parentNode.removeChild(metingSpan);
-    //   super.destructor();
     // }
   }
 
