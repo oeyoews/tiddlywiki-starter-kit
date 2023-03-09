@@ -26,6 +26,7 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox/readme
 
 !! Note
 
+* 不建议使用过大的图片， 会造成卡顿
 * need refresh on installed this fancybox plugin
 * if you use splashscreen, please remove `remove-when-wiki-loaded` class,
 otherwise this plugin will not work normally [[warn|https://github.com/Jermolene/TiddlyWiki5/search?q=tc-remove-when-wiki-loaded]]
