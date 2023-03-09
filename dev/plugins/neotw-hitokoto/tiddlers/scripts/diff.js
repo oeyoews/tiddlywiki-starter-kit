@@ -16,7 +16,7 @@ for (let i = 0; i < lines.length; i++) {
   }
   if (uniqueHitokotos.has(hitokoto)) {
     // 如果已存在，则添加到“重复列表”中
-    duplicateHitokotos.push(i + 1); // 需要加 1，因为数组的索引从 0 开始
+    duplicateHitokotos.push(i); // 需要加 1，因为数组的索引从 0 开始
   } else {
     uniqueHitokotos.set(hitokoto, from); // 否则添加到 Map 中
   }

@@ -3,7 +3,7 @@ created: 20230117102714737
 creator: oeyoews
 giscus: yes
 icon: tom.png
-modified: 20230309104344063
+modified: 20230309144943095
 modifier: oeyoews
 page-cover: banner.png
 pin: yes
@@ -32,8 +32,4 @@ type: text/vnd.tiddlywiki
 
 <$list filter="[{$:/info/url/protocol}match[https:]]">
 <$siteuptime />
-</$list>
-
-<$list filter="[{$:/info/url/protocol}match[https:]]">
-<$twikoo envId="https://twikoo.oeyoewl.top"/>
 </$list>
