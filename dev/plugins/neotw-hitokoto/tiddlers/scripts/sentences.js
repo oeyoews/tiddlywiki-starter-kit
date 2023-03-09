@@ -1,9 +1,10 @@
-// comments by @chatgpt
-// Import the built-in 'fs' module to work with the file system
+/* to generate sentences.json
+comments by @chatgpt
+*/
 const fs = require('fs');
 
 // Read the contents of 'sentences.txt' file synchronously and store it in the 'data' variable as a string
-const data = fs.readFileSync('sentences.txt', 'utf-8');
+const data = fs.readFileSync('sentences_unique.txt', 'utf-8');
 
 // Split the string into an array of lines using the newline character '\n'
 const lines = data.split('\n');
@@ -25,7 +26,7 @@ for (let line of lines) {
 
   // Trim any leading or trailing white space from the 'from' and 'hitokoto' parts
   const hitokoto = parts[0].trim();
-  const from = '@' + parts[1].trim();
+  const from = parts[1].trim();
 
   const comboObject = {
     // 组合的对象，包含 'hitokoto' 和 'from'
