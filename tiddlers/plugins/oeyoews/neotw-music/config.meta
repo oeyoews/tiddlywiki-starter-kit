@@ -1,14 +1,14 @@
 <!-- lrc_type: 3 -->
 <!-- mini: false -->
 bottom: 0
-created: 20230309065302120
+created: 20230309071145371
 creator: oeyoews
-enablelrc: yes
+enablelrc: no
 fixed: true
-id: 7714963283
+id: 145050013
 list_olded: true
 loop: all
-modified: 20230309065326081
+modified: 20230309071150790
 modifier: oeyoews
 mutex: true
 order: random
@@ -16,5 +16,5 @@ preload: auto
 server: netease
 storyage_name: meting-js
 title: $:/plugins/oeyoews/neotw-music/config
-type: playlist
+type: album
 volumn: 0.7

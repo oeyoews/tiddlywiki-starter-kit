@@ -87,6 +87,8 @@
       "static/favicon.ico"
     ],
     "tiddlywikicore": [
+      "--output",
+      "dist",
       "--render",
       "$:/core/templates/tiddlywiki5.js",
       "[[tiddlywikicore-]addsuffix<version>addsuffix[.js]]",
