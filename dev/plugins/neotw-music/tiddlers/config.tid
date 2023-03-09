@@ -22,9 +22,7 @@ list_olded: true
 
 <$select field="server" tiddler=<<tid>> tooltip='' default="netease">
   <option>netease</option>
-  <option>kugou</option>
   <option>xiami</option>
-  <option>baidu</option>
   <option value="tencent"> {{$:/plugins/oeyoews/neotw-music/icons/tencent.svg}} tencent</option>
 </$select>
 <$transclude tiddler={{{ [<currentTiddler>get[server]addprefix[$:/plugins/oeyoews/neotw-music/icons/]addsuffix[.svg]] }}}  mode="inline"/>

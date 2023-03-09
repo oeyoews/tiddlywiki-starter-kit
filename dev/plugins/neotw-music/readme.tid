@@ -11,6 +11,10 @@ title: $:/plugins/oeyoews/neotw-music/readme
 * [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-special-day]]
 * [[Demo|https://oeyoews.github.io/neotw/]]
 
+!! Widget
+
+<$aplayer />
+
 !! Configuration
 
 <$button>
