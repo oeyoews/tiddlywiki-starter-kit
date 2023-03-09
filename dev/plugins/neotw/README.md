@@ -67,6 +67,8 @@
 > **Note**
 > require git and npm and not compatible vanilla theme
 
+> 不建议使用 root-tiddler 参数(虽然使用有很多好处)
+
 ```bash
 git clone --depth 1 https://github.com/oeyoews/neotw
 cd neotw && npm install  # install packages
