@@ -1,0 +1,11 @@
+created: 20230309051154477
+creator: oeyoews
+modified: 20230309051535425
+modifier: oeyoews
+tags: 
+title: chatgpt
+type: text/vnd.tiddlywiki
+
+@@height:calc(100vh - 120px);
+<$chat-gpt history="$:/state/plugins/Gk0Wk/chat-gpt/side-bar-history" scroll="yes" model="gpt-3.5-turbo" temperature="1" max_tokens="512" system_message="You known much on TiddlyWiki. You should answer in Markdown format" />
+@@

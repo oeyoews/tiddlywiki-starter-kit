@@ -2,7 +2,7 @@ title: $:/plugins/oeyoews/neotw/macro/lang
 tags: $:/tags/Macro
 
 \define switch-lang()
-<!-- <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]"> -->
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
 <$button class="o-btn-back" tooltip="Switch lang">
 <$list filter="[[$:/language]get[text]match[$:/languages/zh-Hans]]">
 <!-- icon -->
@@ -25,5 +25,5 @@ fill="#ffde00" transform="scale(0.0000019467600073)"/>
   <$action-setfield $tiddler="$:/language" text="$:/languages/zh-Hans"/>
 </$list>
 </$button>
-<!-- </$list> -->
+</$list>
 \end
