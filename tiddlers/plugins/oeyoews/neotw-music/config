@@ -5,9 +5,7 @@
 
 <$select field="server" tiddler=<<tid>> tooltip='' default="netease">
   <option>netease</option>
-  <option>kugou</option>
   <option>xiami</option>
-  <option>baidu</option>
   <option value="tencent"> {{$:/plugins/oeyoews/neotw-music/icons/tencent.svg}} tencent</option>
 </$select>
 <$transclude tiddler={{{ [<currentTiddler>get[server]addprefix[$:/plugins/oeyoews/neotw-music/icons/]addsuffix[.svg]] }}}  mode="inline"/>
@@ -18,6 +16,7 @@
   <option value="2916766519">纯音乐(521) @网易云(type: playlist)</option>
   <option value="12077204">个人歌单(type: artist)</option>
   <option value="145050013">专辑(type: album)</option>
+  <option value="1947926942">歌曲(type: song)</option>
   <option value="">自定义</option>
 </$select>
 <$edit-text tag="input" field="id" default="2916766519" tiddler=<<tid>> placeholder="2916766519"/>
