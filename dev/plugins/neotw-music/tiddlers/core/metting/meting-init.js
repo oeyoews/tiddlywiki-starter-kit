@@ -6,8 +6,8 @@
   if (!config.id) {
     alert('检测到你没有设置TWM id, 默认使用 2916766519');
   }
-  metingjs.setAttribute('server', config.server || netease);
-  metingjs.setAttribute('id', config.id || 2916766519);
+  metingjs.setAttribute('server', config.server);
+  metingjs.setAttribute('id', config.id);
   metingjs.setAttribute('type', config.type);
   metingjs.setAttribute('order', config.order);
   metingjs.setAttribute('loop', config.loop);

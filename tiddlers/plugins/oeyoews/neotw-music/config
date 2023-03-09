@@ -1,20 +1,3 @@
-title: $:/plugins/oeyoews/neotw-music/config
-server: netease
-id: 2916766519
-type: playlist
-order: random
-loop: all
-preload: auto
-mutex: true
-fixed: true
-volumn: 0.7
-storyage_name: meting-js
-enablelrc: no
-bottom: 0
-list_olded: true
-<!-- lrc_type: 3 -->
-<!-- mini: false -->
-
 \define tid() $:/plugins/oeyoews/neotw-music/config
 
 \define required-options()
