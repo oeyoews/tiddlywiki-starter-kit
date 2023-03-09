@@ -13,7 +13,11 @@ title: $:/plugins/oeyoews/neotw-music/readme
 
 !! Widget
 
+```
 <$aplayer />
+<$meting />
+<$meting id="12077204" type="artist" />
+```
 
 !! Configuration
 

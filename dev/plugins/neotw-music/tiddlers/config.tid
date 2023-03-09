@@ -11,7 +11,7 @@ volumn: 0.7
 storyage_name: meting-js
 enablelrc: no
 bottom: 0
-list_olded: true
+list_folded: true
 <!-- lrc_type: 3 -->
 <!-- mini: false -->
 

@@ -23,6 +23,7 @@ A music player widget that uses the APlayer library.
       super(parseTreeNode, options);
       this.addEventListeners([
         { type: 'click', handler: 'handleClick', id: 'aplayer' },
+        { type: 'tm-navigate', handler: 'handleNavigateEvent' },
       ]);
     }
 
@@ -74,6 +75,13 @@ A music player widget that uses the APlayer library.
     }
 
     handleClick(event) {
+      const target = event.target,
+        to = target.getAttribute('to');
+      if (to === this.getAttribute('to')) {
+        this.refreshSelf();
+        event.preventDefault();
+        event.stopPropagation();
+      }
       if (event.target === this.aplayer.element) {
         this.aplayer.play();
       }
