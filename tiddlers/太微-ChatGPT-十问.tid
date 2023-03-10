@@ -1,6 +1,6 @@
 created: 20230310124119309
 creator: oeyoews
-modified: 20230310125031581
+modified: 20230310131734638
 modifier: oeyoews
 tags: 
 title: 太微-ChatGPT-十问
@@ -9,3 +9,8 @@ type: text/vnd.tiddlywiki
 @@height:calc(100vh - 120px);
 <$chat-gpt history="chatgpt-999" scroll="yes" model="gpt-3.5-turbo" temperature="1" max_tokens="512" system_message="You known much on TiddlyWiki know how to write tiddlywiki widget. You should answer in Markdown format, and please use chinese to answer user question" />
 @@
+
+
+!! 评论区
+
+<$twikoo envId="https://twikoo.oeyoewl.top" path=<<currentTiddler>>/>
