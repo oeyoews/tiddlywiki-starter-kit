@@ -1,11 +1,12 @@
 /*\
-title: APlayer
+title: $:/plugins/oeyoews/neotw-music/widget-aplayer.js
 type: application/javascript
 module-type: widget
 
 A music player widget that uses the APlayer library.
 
 \*/
+
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */

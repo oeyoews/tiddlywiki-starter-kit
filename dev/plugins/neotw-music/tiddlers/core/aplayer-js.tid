@@ -1,7 +1,0 @@
-title: $:/plugins/oeyoews/neotw-music/js/aplayer-js
-type: application/javascript
-tags: $:/tags/RawMarkupWikified/BottomBody
-
-`<script>`
-{{$:/plugins/oeyoews/neotw-music/aplayer.min.js}}
-`</script>`

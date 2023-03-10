@@ -1,0 +1,16 @@
+created: 20230310074236605
+creator: oeyoews
+modified: 20230310082150228
+modifier: oeyoews
+tags: 
+title: fancybox-example
+type: text/vnd.tiddlywiki
+
+!! img wikitext
+
+[img [banner.png]]
+
+!! image widget
+
+<$image source="$:/favicon.ico" />
+<$image source="banner.png" id=1 />
