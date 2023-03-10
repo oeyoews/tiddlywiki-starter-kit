@@ -1,12 +1,12 @@
 caption: ChatGPT
 created: 20230310100612653
 creator: oeyoews
-modified: 20230310100706060
+modified: 20230310120956084
 modifier: oeyoews
 tags: $:/tags/SideBar
 title: $:/plugins/Gk0Wk/chat-gpt/side-bar
 type: text/vnd.tiddlywiki
 
 @@height:calc(100vh - 120px);
-<$chat-gpt history="oeyoews-chatgpt-history" scroll="yes" model="gpt-3.5-turbo" temperature="1" max_tokens="512" system_message="You known much on TiddlyWiki. You should answer in Markdown format" />
+<$chat-gpt history="oeyoews-chatgpt-history" scroll="yes" model="gpt-3.5-turbo" temperature="1" max_tokens="512" system_message="You known much on TiddlyWiki. You should answer in Markdown format, and please use chinese to answer question" />
 @@

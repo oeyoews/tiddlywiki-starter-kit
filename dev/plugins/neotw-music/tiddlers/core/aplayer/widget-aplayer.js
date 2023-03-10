@@ -75,19 +75,31 @@ A music player widget that uses the APlayer library.
       this.aplayer = new APlayer(aplayerOptions);
     }
 
-    // add aplayer.destory
-    handleClick(event) {
-      const target = event.target,
-        to = target.getAttribute('to');
-      if (to === this.getAttribute('to')) {
+    refresh() {
+      var changedAttributes = this.computeAttributes();
+      // changedAttributes.title;
+      if (Object.keys(changedAttributes).length > 0) {
+        this.aplayer.pause();
         this.refreshSelf();
-        event.preventDefault();
-        event.stopPropagation();
-      }
-      if (event.target === this.aplayer.element) {
-        this.aplayer.play();
+        return true;
+      } else {
+        return false;
       }
     }
+
+    // add aplayer.destory
+    // handleClick(event) {
+    //   const target = event.target,
+    //     to = target.getAttribute('to');
+    //   if (to === this.getAttribute('to')) {
+    //     this.refreshSelf();
+    //     event.preventDefault();
+    //     event.stopPropagation();
+    //   }
+    //   if (event.target === this.aplayer.element) {
+    //     this.aplayer.play();
+    //   }
+    // }
   }
 
   exports.aplayer = APlayerWidget;
