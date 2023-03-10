@@ -14,9 +14,9 @@ tags: $:/tags/ViewTemplate
     <div class="gk0wk-notionpagebg-image">
     <!-- data-fancybox -->
     <$list filter="[<cover>prefix[https:]]">
-		  <a data-fancybox="notion-pagecover-with-fancybox" href=<<cover>> >
+		  <!-- <a data-fancybox="notion-pagecover-with-fancybox" href=<<cover>> > -->
     		<$image source=<<cover>> width="100%" height="auto"/>
-  		</a>
+  		<!-- </a> -->
     </$list>
     <!-- normal img -->
     <$list filter="[<cover>!prefix[https:]]">

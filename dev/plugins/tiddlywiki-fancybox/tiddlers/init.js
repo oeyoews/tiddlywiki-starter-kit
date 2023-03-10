@@ -6,6 +6,7 @@ function init_fbox() {
   var images = document.getElementsByTagName('img');
   for (var i = 0; i < images.length; i++) {
     var image = images[i];
+    // comment below will have two a tag
     // conflict for image.js(overwrite)
     // var parent = image.parentElement;
     // var hasFancybox = parent.hasAttribute('data-fancybox');
