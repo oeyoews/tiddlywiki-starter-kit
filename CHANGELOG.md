@@ -1,3 +1,10 @@
+## [3.120.1](https://github.com/oeyoews/neotw/compare/v3.120.0...v3.120.1) (2023-03-10)
+
+
+### Bug Fixes
+
+* disable confetti on dev ([cabfde1](https://github.com/oeyoews/neotw/commit/cabfde1a09970d1243dd8bf4eb351ad25850dff0))
+
 # [3.120.0](https://github.com/oeyoews/neotw/compare/v3.119.1...v3.120.0) (2023-03-10)
 
 
