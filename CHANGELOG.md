@@ -1,3 +1,10 @@
+## [3.119.1](https://github.com/oeyoews/neotw/compare/v3.119.0...v3.119.1) (2023-03-10)
+
+
+### Bug Fixes
+
+* remove data-fancybox on notionpage-covericon ([60714bd](https://github.com/oeyoews/neotw/commit/60714bd12597d36faebc9519b0b6a7fa926625b5))
+
 # [3.119.0](https://github.com/oeyoews/neotw/compare/v3.118.0...v3.119.0) (2023-03-10)
 
 
