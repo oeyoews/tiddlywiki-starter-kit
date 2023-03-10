@@ -1,3 +1,10 @@
+## [3.120.2](https://github.com/oeyoews/neotw/compare/v3.120.1...v3.120.2) (2023-03-10)
+
+
+### Performance Improvements
+
+* merge emoji to folder ([0d40e67](https://github.com/oeyoews/neotw/commit/0d40e67a4b5651afe3d1fcb2d2a24d507cde28a1))
+
 ## [3.120.1](https://github.com/oeyoews/neotw/compare/v3.120.0...v3.120.1) (2023-03-10)
 
 
