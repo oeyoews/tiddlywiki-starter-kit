@@ -1,3 +1,10 @@
+# [3.118.0](https://github.com/oeyoews/neotw/compare/v3.117.0...v3.118.0) (2023-03-10)
+
+
+### Features
+
+* add fbox widget ([04d64f6](https://github.com/oeyoews/neotw/commit/04d64f6aa8a0643198b3ff49b2f33b196294a749))
+
 # [3.117.0](https://github.com/oeyoews/neotw/compare/v3.116.0...v3.117.0) (2023-03-09)
 
 
