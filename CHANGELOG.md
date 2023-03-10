@@ -1,3 +1,10 @@
+# [3.119.0](https://github.com/oeyoews/neotw/compare/v3.118.0...v3.119.0) (2023-03-10)
+
+
+### Features
+
+* overwrite image widget ([c1522c7](https://github.com/oeyoews/neotw/commit/c1522c7df327a8580a9ee954c8a5308b77ce8d1c))
+
 # [3.118.0](https://github.com/oeyoews/neotw/compare/v3.117.0...v3.118.0) (2023-03-10)
 
 
