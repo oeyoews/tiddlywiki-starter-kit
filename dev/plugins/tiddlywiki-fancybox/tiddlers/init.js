@@ -6,9 +6,10 @@ function init_fbox() {
   var images = document.getElementsByTagName('img');
   for (var i = 0; i < images.length; i++) {
     var image = images[i];
-    var parent = image.parentElement;
-    var hasFancybox = parent.hasAttribute('data-fancybox');
-    if (hasFancybox) return;
+    // conflict for image.js(overwrite)
+    // var parent = image.parentElement;
+    // var hasFancybox = parent.hasAttribute('data-fancybox');
+    // if (hasFancybox) return;
     var link = document.createElement('a');
     link.href = image.src;
     link.setAttribute('data-fancybox', '');

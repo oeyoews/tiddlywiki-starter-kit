@@ -26,6 +26,7 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox/readme
 
 !! Note
 
+* 重写部分image widget
 * 不建议使用过大的图片， 会造成卡顿
 * 可以在widget/image.js 添加 这样一行代码，` domNode.setAttribute("data-fancybox",'');` 从而让tw支持fancybox, 但是不建议， 会有引发很多问题
 * need refresh on installed this fancybox plugin

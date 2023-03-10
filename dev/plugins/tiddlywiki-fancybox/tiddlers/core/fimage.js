@@ -103,7 +103,7 @@ Render this widget into the DOM
     const aNode = this.document.createElement('a');
     aNode.setAttribute('data-fancybox', '');
     aNode.href = src;
-    aNode.setAttribute('data-caption', this.imageTooltip);
+    aNode.setAttribute('data-caption', this.imageTooltip || '');
     aNode.appendChild(domNode);
 
     // Add classes when the image loads or fails
