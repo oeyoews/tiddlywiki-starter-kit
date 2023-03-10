@@ -27,6 +27,16 @@ fancybox widget
       this.computeAttributes();
       this.execute();
 
+      // Add a loading element
+      const loadingNode = this.document.createElement('div');
+      loadingNode.textContent = 'Loading...';
+      loadingNode.style.position = 'absolute';
+      loadingNode.style.top = '50%';
+      loadingNode.style.left = '50%';
+      loadingNode.style.transform = 'translate(-50%, -50%)';
+      parent.insertBefore(loadingNode, nextSibling);
+      this.domNodes.push(loadingNode);
+
       const src = this.getAttribute('src', '');
       const alt = this.getAttribute('alt', '');
       const id = this.getAttribute('id', '');
