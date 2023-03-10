@@ -3,6 +3,14 @@ subtitle: {{$:/plugins/oeyoews/tiddlywiki-fancybox/icon}} Fancybox Usage {{$:/pl
 mask-closable: yes
 class: o-tm
 
+!! Widget
+
+```
+<$fbox src="https://lipsum.app/id/66/1200x675" />
+```
+
+<$fbox src="https://lipsum.app/id/66/1200x675" alt="example image"/>
+
 !! Local Image
 
 <center>
