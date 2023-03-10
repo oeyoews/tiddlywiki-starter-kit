@@ -1,3 +1,10 @@
+/*\
+title: $:/plugins/oeyoews/neotw-hitokoto/owidget.js
+type: application/javascript
+module-type: widget
+
+owidget
+\*/
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */

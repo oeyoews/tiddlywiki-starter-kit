@@ -1,3 +1,10 @@
+/*\
+title: $:/plugins/oeyoews/tiddlywiki-widgets/widget/fps
+type: application/javascript
+module-type: widget
+
+fps widget
+\*/
 (function () {
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
 

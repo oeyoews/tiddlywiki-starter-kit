@@ -1,10 +1,9 @@
 /*\
-title: $:/plugins/oeyoews/neotw-music/widget-aplayer.js
+title: $:/plugins/oeyoews/neotw-music/aplayer-startup.js
 type: application/javascript
 module-type: startup
 
 load aplayer
-
 \*/
 
 /* exports.startup = function () {

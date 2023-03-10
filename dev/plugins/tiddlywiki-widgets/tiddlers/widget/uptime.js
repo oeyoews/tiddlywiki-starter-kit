@@ -1,3 +1,11 @@
+/*\
+title: $:/plugins/oeyoews/tiddlywiki-widgets/widget/uptime
+type: application/javascript
+module-type: widget
+
+uptime
+\*/
+
 (function () {
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
 

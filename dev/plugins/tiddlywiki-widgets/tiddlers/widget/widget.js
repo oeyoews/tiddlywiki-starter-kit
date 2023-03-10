@@ -1,4 +1,11 @@
-// github-calendar js
+/*\
+title: $:/plugins/oeyoews/tiddlywiki-widgets/widget/githubcalendar
+type: application/javascript
+module-type: widget
+
+github-calendar js
+\*/
+
 (function () {
   // Interactive DOM not available when generating static pages
   if (!$tw.browser) return;

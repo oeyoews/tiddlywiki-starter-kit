@@ -1,7 +1,9 @@
 /*\
-a filter to show a tiddler
+title: $:/plugins/oeyoews/neotw/filteroperator/random.js
+type: application/javascript
+module-type: filteroperator
 
-@preserve
+a filter to show a tiddler @preserve
 \*/
 (function () {
   'use strict';

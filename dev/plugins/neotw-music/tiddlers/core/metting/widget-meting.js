@@ -1,4 +1,8 @@
 /*\
+title: $:/plugins/oeyoews/neotw-music/widget-meting.js
+type: application/javascript
+module-type: widget
+
 Meting widget
 \*/
 (function () {

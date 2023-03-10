@@ -1,3 +1,9 @@
+/*\
+title: $:/plugins/oeyoews/neotw-music/js/meting-init.js
+type: application/javascript
+
+meting-init
+\*/
 (function () {
   var twmTiddler = '$:/plugins/oeyoews/neotw-music/config';
   var twmTiddlerGet = $tw.wiki.getTiddler(twmTiddler);

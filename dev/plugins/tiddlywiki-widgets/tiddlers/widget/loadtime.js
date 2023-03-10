@@ -1,3 +1,11 @@
+/*\
+title: $:/plugins/oeyoews/tiddlywiki-widgets/widget/loadtime
+type: application/javascript
+module-type: widget
+
+loadtime
+\*/
+
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */

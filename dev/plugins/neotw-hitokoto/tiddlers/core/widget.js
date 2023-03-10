@@ -1,4 +1,8 @@
 /*\
+title: $:/plugins/oeyoews/neotw-hitokoto/widget.js
+type: application/javascript
+module-type: widget
+
 Hitokoto widget
 \*/
 (function () {

@@ -1,3 +1,10 @@
+/*\
+title: test-twikoo
+type: application/javascript
+module-type: widget
+
+twikoo widget
+\*/
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */

@@ -1,6 +1,10 @@
-/**
- * neotw startup descption
- */
+/*\
+title: neotw-startup.js
+type: application/javascript
+module-type: startup
+
+neotw startup descption
+\*/
 (function () {
   exports.platforms = ['browser'];
   exports.after = ['story'];

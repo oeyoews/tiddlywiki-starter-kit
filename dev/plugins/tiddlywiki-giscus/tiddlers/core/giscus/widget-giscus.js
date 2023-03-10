@@ -1,4 +1,10 @@
-/* widget giscus */
+/*\
+title: $:/plugins/oeyoews/tiddlywiki-giscus/widget-giscus.js
+type: application/javascript
+module-type: widget
+
+gisucs widget
+\*/
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
