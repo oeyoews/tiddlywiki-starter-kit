@@ -1,6 +1,12 @@
 title: $:/plugins/oeyoews/neotw/modules/to-top/ui
 tags: $:/tags/PageTemplate
 
+\define backToTopBtn()
+<button class="back-to-top-btn">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M8 11h3v10h2V11h3l-4-4-4 4zM4 3v2h16V3H4z"></path></svg>
+</button>
+\end
+
 \define giscus-app()
 <$list filter="[[$:/temp/focussedTiddler]!is[missing]]">
 <$list filter="[[$:/temp/focussedTiddler]get[text]!is[system]]">
@@ -41,18 +47,18 @@ tags: $:/tags/PageTemplate
   <$action-navigate $to=<<target>> $scroll="yes"/>
 </$list>
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
-  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M8 11h3v10h2V11h3l-4-4-4 4zM4 3v2h16V3H4z"></path></svg>
+  <svg id="backToTopBtn" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M8 11h3v10h2V11h3l-4-4-4 4zM4 3v2h16V3H4z"></path></svg>
 </$list>
 </$button>
 <!-- bottom -->
-<$button tooltip="Back to bottom" class="o-btn-back">
-<$list variable="target" filter="[list[$:/StoryList]last[]]">
-<$action-navigate $to=<<target>> $scroll="yes"/>
-</$list>
-<$list filter="[<tv-config-toolbar-icons>match[yes]]">
-<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M16 13h-3V3h-2v10H8l4 4 4-4zM4 19v2h16v-2H4z"></path></svg>
-</$list>
-</$button>
+<!-- <$button tooltip="Back to bottom" class="o-btn-back"> -->
+<!-- <$list variable="target" filter="[list[$:/StoryList]last[]]"> -->
+<!-- <$action-navigate $to=<<target>> $scroll="yes"/> -->
+<!-- </$list> -->
+<!-- <$list filter="[<tv-config-toolbar-icons>match[yes]]"> -->
+<!-- <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M16 13h-3V3h-2v10H8l4 4 4-4zM4 19v2h16v-2H4z"></path></svg> -->
+<!-- </$list> -->
+<!-- </$button> -->
 
 \end
 
@@ -93,6 +99,8 @@ tags: $:/tags/PageTemplate
   </$list>
 </$button>
 </$list>
+</$list>
+
 <!-- exit zen-mode -->
 <$list filter="[[$:/temp/zen-mode]get[text]match[yes]]">
 <$button class=<<tv-config-toolbar-class>> tooltip="Non-zen mode" class="o-btn-back">
@@ -103,7 +111,6 @@ tags: $:/tags/PageTemplate
 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10 4H8v4H4v2h6zM8 20h2v-6H4v2h4zm12-6h-6v6h2v-4h4zm0-6h-4V4h-2v6h6z"></path></svg>
   </$list>
 </$button>
-</$list>
 </$list>
 \end
 
@@ -127,41 +134,44 @@ tags: $:/tags/PageTemplate
 \end
 
 \whitespace trim
+
 <!-- emptystorymessage -->
 <$list filter="[[$:/StoryList]get[list]count[]match[0]]">
 <div id="stx-story-top">
+  <<backToTopBtn>>
   <<giscus-app>>
   <<reveal-js>>
   <<random-article>>
   <<github-cat>>
   <<switch-lang>>
   <<toggle-theme>>
-  <!-- <<load-articles>> -->
   <<home-button>>
+  <!-- <<load-articles>> -->
 </div>
 </$list>
 
 <!-- non-storyriver -->
-<$list filter="[[$:/StoryList]get[list]!is[blank]]">
 <!-- more two tiddler -->
-<$list filter="[list[$:/StoryList]count[]compare:number:gt[2]]">
-<div id="stx-story-top">
-  <<giscus-app>>
-  <<o-sidebar>>
-  <<switch-lang>>
-  <<readonly-mode>>
-  <<toggle-theme>>
-  <<zen-mode>>
-  <<scroll-top-bottom>>
-  <<home-button>>
-</div>
-</$list>
-</$list>
+<!-- <$list filter="[[$:/StoryList]get[list]!is[blank]]"> -->
+<!-- <$list filter="[list[$:/StoryList]count[]compare:number:gt[2]]"> -->
+<!-- <div id="stx-story-top"> -->
+<!--   <<giscus-app>> -->
+<!--   <<o-sidebar>> -->
+<!--   <<switch-lang>> -->
+<!--   <<readonly-mode>> -->
+<!--   <<toggle-theme>> -->
+<!--   <<zen-mode>> -->
+<!--   <<scroll-top-bottom>> -->
+<!--   <<home-button>> -->
+<!-- </div> -->
+<!-- </$list> -->
+<!-- </$list> -->
 
 <!-- non-storyriver && less two -->
 <$list filter="[[$:/StoryList]get[list]!is[blank]]">
-  <$list filter="[list[$:/StoryList]count[]compare:number:lteq[2]]">
+  <!-- <$list filter="[list[$:/StoryList]count[]compare:number:lteq[2]]"> -->
     <div id="stx-story-top">
+      <<backToTopBtn>>
       <<giscus-app>>
       <<random-article>>
       <<o-sidebar>>
@@ -171,5 +181,5 @@ tags: $:/tags/PageTemplate
       <<zen-mode>>
       <<home-button>>
     </div>
-  </$list>
+  <!-- </$list> -->
 </$list>

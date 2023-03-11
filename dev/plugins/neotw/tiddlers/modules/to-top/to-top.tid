@@ -1,0 +1,52 @@
+title: $:/plugins/oeyoews/neotw/modules/to-top/back-to-top-btn.js
+type: application/javascript
+tags: $:/tags/RawMarkupWikified/BottomBody
+
+`<script>
+const THRESHOLD = 700;
+
+const backToTopBtnModule = (function() {
+  const backToTopBtn = document.querySelector('.back-to-top-btn');
+
+  function toggleBackToTopBtn() {
+    if (window.pageYOffset > THRESHOLD) {
+      backToTopBtn.classList.add('is-visible');
+    } else {
+      backToTopBtn.classList.remove('is-visible');
+    }
+  }
+
+  function scrollToTop(duration, increment, start, target) {
+    const topElement = document.documentElement.scrollTop ? document.documentElement : document.body;
+    if (topElement.scrollTop === 0) {
+      return;
+    }
+    let currentTime = 0;
+
+    function animateScroll() {
+      currentTime += increment;
+      const easeInOut = 0.5 * (1 - Math.cos(Math.PI * currentTime / duration));
+      topElement.scrollTop = easeInOut * (target - start) + start;
+      if (currentTime < duration) {
+        setTimeout(animateScroll, increment);
+      }
+    }
+    animateScroll();
+  }
+
+  window.addEventListener('scroll', toggleBackToTopBtn);
+
+  backToTopBtn.addEventListener('click', function () {
+    const duration = 500;
+    const increment = 20;
+    const start = document.documentElement.scrollTop || document.body.scrollTop;
+    const target = 0;
+    scrollToTop(duration, increment, start, target);
+  });
+
+  return {
+    toggleBackToTopBtn,
+    scrollToTop
+  }
+})();
+`</script>`
