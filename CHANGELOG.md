@@ -1,3 +1,10 @@
+## [3.121.1](https://github.com/oeyoews/neotw/compare/v3.121.0...v3.121.1) (2023-03-11)
+
+
+### Performance Improvements
+
+* builtin githubcalendar.js ([c0ce21b](https://github.com/oeyoews/neotw/commit/c0ce21b22dc08c34c4642a0cfb6f49d268350add))
+
 # [3.121.0](https://github.com/oeyoews/neotw/compare/v3.120.4...v3.121.0) (2023-03-11)
 
 
