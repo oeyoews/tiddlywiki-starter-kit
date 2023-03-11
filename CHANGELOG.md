@@ -1,3 +1,10 @@
+# [3.122.0](https://github.com/oeyoews/neotw/compare/v3.121.1...v3.122.0) (2023-03-11)
+
+
+### Features
+
+* add motion plugin ([b898b27](https://github.com/oeyoews/neotw/commit/b898b27b241ebacd090a88ffdf67a20fe733755d))
+
 ## [3.121.1](https://github.com/oeyoews/neotw/compare/v3.121.0...v3.121.1) (2023-03-11)
 
 
