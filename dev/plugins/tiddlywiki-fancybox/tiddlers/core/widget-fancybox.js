@@ -4,7 +4,6 @@ type: application/javascript
 module-type: widget
 
 fancybox widget
-
 \*/
 (function () {
   /*jslint node: true, browser: true */
@@ -27,7 +26,8 @@ fancybox widget
       this.computeAttributes();
       this.execute();
 
-      // TODO support local
+      // const currentTiddler = $tw.wiki.getTiddlerText('$:/temp/focussedTiddler');
+
       // const local = this.getAttribute('local', 'no');
       const src = this.getAttribute('src', '');
       // const imgTiddler = $tw.wiki.getTiddler(src)?.fields || {};

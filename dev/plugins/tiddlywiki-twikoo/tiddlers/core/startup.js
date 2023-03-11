@@ -4,7 +4,6 @@ type: application/javascript
 module-type: startup
 
 load twikoo
-
 \*/
 
 /* exports.startup = function () {

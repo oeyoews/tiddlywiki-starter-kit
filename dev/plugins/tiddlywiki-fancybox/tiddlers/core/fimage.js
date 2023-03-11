@@ -3,6 +3,7 @@ title: $:/core/modules/widgets/image.js
 type: application/javascript
 module-type: widget
 
+overwrite image.js
 \*/
 (function () {
   /*jslint node: true, browser: true */
