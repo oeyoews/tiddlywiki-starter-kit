@@ -1,9 +1,9 @@
 /*\
-title: $:/plugins/oeyoews/neotw-hitokoto/owidget.js
+title: $:/plugins/oeyoews/tiddlywiki-english-words/owidget.js
 type: application/javascript
 module-type: widget
 
-owidget
+tiddlywiki-english-words
 \*/
 (function () {
   /*jslint node: true, browser: true */
@@ -12,7 +12,7 @@ owidget
   if (!$tw.browser) return;
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
 
-  class OHitokoto extends Widget {
+  class EnglishWidget extends Widget {
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
       this.isUpdating = false;
@@ -35,6 +35,7 @@ owidget
 
       const ohitokotoSpan = this.document.createElement('span');
       ohitokotoSpan.className = 'hitokoto';
+      ohitokotoSpan.style.fontSize = '18px';
       this.updateText(ohitokotoSpan);
 
       // use container
@@ -50,10 +51,6 @@ owidget
       parent.insertBefore(refreshButton, nextSibling);
       this.domNodes.push(ohitokotoSpan);
       this.domNodes.push(refreshButton);
-      // containerNode.appendChild(ohitokotoSpan);
-      // containerNode.appendChild(refreshButton);
-      // parent.insertBefore(containerNode, nextSibling);
-      // this.domNodes.push(containerNode);
 
       setInterval(() => this.updateText(ohitokotoSpan), refreshTime);
     }
@@ -64,11 +61,11 @@ owidget
       }
 
       const sentences = $tw.wiki.getTiddlerData(
-        '$:/plugins/oeyoews/neotw-hitokoto/sentences.json',
+        '$:/plugins/oeyoews/tiddlywiki-english-words/voc.json',
       );
       const randomIndex = Math.floor(Math.random() * sentences.length);
       const randomSentence =
-        sentences[randomIndex].hitokoto + ' ' + sentences[randomIndex].from;
+        sentences[randomIndex].word + ' ' + sentences[randomIndex].definition;
       this.isUpdating = true;
       domNode.textContent = randomSentence;
       this.isUpdating = false;
@@ -84,5 +81,5 @@ owidget
     }
   }
 
-  exports.ohitokoto = OHitokoto;
+  exports.english = EnglishWidget;
 })();

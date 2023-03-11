@@ -3,7 +3,7 @@ created: 20230117102714737
 creator: oeyoews
 giscus: yes
 icon: tom.png
-modified: 20230309144943095
+modified: 20230311090610325
 modifier: oeyoews
 page-cover: banner.png
 pin: yes
@@ -12,10 +12,12 @@ tags:
 title: GettingStarted
 type: text/vnd.tiddlywiki
 
+<center>
 <$ohitokoto refreshTime="600000"/>
 <$list filter="[{$:/info/url/protocol}match[https:]]">
 <$github-calendar />
 </$list>
+</center>
 
 {{$:/plugins/oeyoews/tiddlywiki-github-share/embed-emptystory}}
 

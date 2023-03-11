@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "word": "cmd",
+    "pronunciation": "/siːɛmdɪ/",
+    "definition": "命令提示符",
+    "example": "this is a demo for this cmd / 这是一个针对命令提示符的演示。",
+    "add_time": "2023-03-11 14:59"
+  },
+  {
+    "id": "2",
+    "word": "metre",
+    "pronunciation": "/ˈmiːtər/",
+    "definition": "米（原词：meter）",
+    "example": "\"It depicted simply an enormous face",
+    "add_time": " more than a metre wide / 它简单地描绘了一个直径超过一米的巨脸。\""
+  },
+  {
+    "id": "3",
+    "word": "demo",
+    "pronunciation": "/ˈdɛmoʊ/",
+    "definition": "演示；示范；实例",
+    "example": "this is a demo / 这是一个演示",
+    "add_time": "2023-03-11 15:04"
+  },
+  {
+    "id": "4",
+    "word": "manual",
+    "pronunciation": "ˈmænjuəl",
+    "definition": "手册，手工的",
+    "example": "remove the last add word and start a manual / 删除最后一个加词并开始手动。",
+    "add_time": "2023-03-11 15:12"
+  },
+  {
+    "id": "5",
+    "word": "username",
+    "pronunciation": "/ˈjuːzəneɪm/",
+    "definition": "用户名",
+    "example": "oeyoew is a username / oeyoew是一个用户名。",
+    "add_time": "2023-03-11 15:40"
+  }
+]

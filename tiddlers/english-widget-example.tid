@@ -1,0 +1,11 @@
+created: 20230311081747628
+creator: oeyoews
+modified: 20230311090914937
+modifier: oeyoews
+tags: 
+title: english-widget-example
+type: text/vnd.tiddlywiki
+
+<center>
+<$english />
+</center>
