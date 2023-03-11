@@ -143,7 +143,7 @@ Neotw
 
 <center>
 
-![Alt](https://repobeats.axiom.co/api/embed/3afafedb553e9729995586198853fa9a3c473e90.svg 'Repobeats analytics image')
+![repobeats](https://repobeats.axiom.co/api/embed/3afafedb553e9729995586198853fa9a3c473e90.svg 'Repobeats analytics image')
 
 </center>
 
