@@ -4,7 +4,9 @@ subtitle: {{$:/plugins/oeyoews/tiddlywiki-giscus/close-modal}}
 class: o-giscus-comment
 
 <$list filter="[[$:/plugins/oeyoews/neotw-hitokoto]has[plugin-type]]">
+<center>
 <$ohitokoto />
+</center>
 </$list>
 
 <!-- theme -->

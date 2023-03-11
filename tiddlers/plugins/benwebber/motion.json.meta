@@ -1,0 +1,12 @@
+author: Ben Webber
+core-version: >=5.1.20
+dependents: 
+description: Vim-like keyboard shortcuts for TiddlyWiki
+license: MIT
+list: README
+name: motion
+plugin-type: plugin
+source: https://github.com/benwebber/tiddlywiki-motion
+title: $:/plugins/benwebber/motion
+type: application/json
+version: 0.3.0

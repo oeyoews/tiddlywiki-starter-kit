@@ -1,0 +1,11 @@
+created: 20230311133943619
+creator: oeyoews
+modified: 20230311134156278
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: focus-visible-patch
+type: text/vnd.tiddlywiki
+
+.tc-tiddler-frame:focus-visible {
+	outline: #7f4bca 2px solid;
+}
