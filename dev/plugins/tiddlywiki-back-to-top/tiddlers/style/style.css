@@ -1,0 +1,31 @@
+#oeyoews-story-top {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 24px;
+  z-index: 899;
+}
+
+#oeyoews-story-top button {
+  opacity: 0.7;
+  min-width: 1.5em;
+  border: none;
+}
+
+.back-to-top-btn {
+  background-color: #00000008;
+  border-radius: 50%;
+  padding: 0 0 5px;
+  margin: 0 0 9px;
+  display: none;
+  box-shadow: 0 5px 20px #0000001f;
+}
+
+.back-to-top-btn.is-visible {
+  display: block;
+}
+
+.back-to-top-btn:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}

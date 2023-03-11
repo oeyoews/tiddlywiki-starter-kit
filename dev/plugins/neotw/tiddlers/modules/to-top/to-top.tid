@@ -1,11 +1,12 @@
 title: $:/plugins/oeyoews/neotw/modules/to-top/back-to-top-btn.js
 type: application/javascript
-tags: $:/tags/RawMarkupWikified/BottomBody
+<!-- tags: $:/tags/RawMarkupWikified/BottomBody -->
 
-`<script>
+`<script>`
 const THRESHOLD = 700;
 
 const backToTopBtnModule = (function() {
+  <!-- const parent = document.querySelector('.nav'); -->
   const backToTopBtn = document.querySelector('.back-to-top-btn');
 
   function toggleBackToTopBtn() {

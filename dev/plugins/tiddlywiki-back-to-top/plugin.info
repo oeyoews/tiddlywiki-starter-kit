@@ -1,0 +1,12 @@
+{
+  "title": "$:/plugins/oeyoews/tiddlywiki-back-to-top",
+  "description": "Tiddlywiki Back To Top",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.2.5",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "Tiddlywiki Back To Top",
+  "dependents": [],
+  "list": "readme explore"
+}
