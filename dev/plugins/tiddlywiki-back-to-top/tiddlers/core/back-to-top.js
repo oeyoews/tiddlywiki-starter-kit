@@ -36,10 +36,13 @@ Adds a "back to top" button to the page which allows users to quickly scroll to 
 
   // Add a scroll event listener to show/hide the button based on the user's scroll position
   window.addEventListener('scroll', () => {
-    if (window.scrollY > showButtonAt) {
-      button.firstElementChild.style.display = 'block';
-    } else {
-      button.firstElementChild.style.display = 'none';
-    }
+    button.firstElementChild.style.display =
+      window.scrollY > showButtonAt ? 'block' : 'none';
+    // if (window.scrollY > showButtonAt) {
+    //   button.firstElementChild.style.display = 'block';
+    // } else {
+    //   button.firstElementChild.style.display = 'none';
+    //   // button.classList.remove('is-visible');
+    // }
   });
 })();
