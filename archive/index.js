@@ -2,6 +2,7 @@ function main() {
   window.location.href = './main.html';
 }
 
+// this is a github blocks test comments
 function hitokoto_footer() {
   fetch('https://v1.hitokoto.cn')
     .then(response => response.json())
