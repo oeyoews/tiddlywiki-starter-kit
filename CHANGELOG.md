@@ -1,3 +1,10 @@
+# [3.121.0](https://github.com/oeyoews/neotw/compare/v3.120.4...v3.121.0) (2023-03-11)
+
+
+### Features
+
+* add new plugin (back-to-top) ([b7f1234](https://github.com/oeyoews/neotw/commit/b7f1234e72ced315ef713877f2e57e79d8e1554f))
+
 ## [3.120.4](https://github.com/oeyoews/neotw/compare/v3.120.3...v3.120.4) (2023-03-11)
 
 ## [3.120.3](https://github.com/oeyoews/neotw/compare/v3.120.2...v3.120.3) (2023-03-10)
