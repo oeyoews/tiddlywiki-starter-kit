@@ -12,5 +12,6 @@ title: $:/plugins/oeyoews/neotw-surfing-keys/list
 |{{$:/core/images/advanced-search-button}}|<kbd>Ctrl+K</kbd>|Search|
 | 👀 |<kbd>Ctrl+Shift+H</kbd>|View Fields|
 | 🔰 |<kbd>Alt+Shift+G</kbd>|Home|
+|{{$:/core/icon}}|<kbd>Alt+Shift+Slash</kbd>|Setting|
 
 </center>

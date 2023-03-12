@@ -2,13 +2,9 @@ title: $:/plugins/oeyoews/neotw/setting
 subtitle: {{$:/core/icon}} Neotw Setting {{$:/plugins/oeyoews/neotw/close-modal}}
 mask-closable: yes
 class: o-neotw-setup
+tags: $:/tags/ControlPanel
+caption: Neotw
 
 <$list filter="[[$:/plugins/kookma/shiraz-callout]has[plugin-type]]">
 {{neotw-guides}}
 </$list>
-
-<$list filter="[[$:/plugins/kookma/shiraz-callout]!has[plugin-type]]">
-<<ov>>
-</$list>
-
-<!-- {{$:/plugins/oeyoews/neotw/neotw-info}} -->

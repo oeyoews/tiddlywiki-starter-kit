@@ -1,0 +1,5 @@
+title: $:/plugins/oeyoews/neotw/neotw-surfing-keys/neotw-help
+key: ((neotw-help))
+tags: $:/tags/KeyboardShortcut
+
+<$action-sendmessage $message="tm-modal" $param="$:/ControlPanel-UI"/>
