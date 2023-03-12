@@ -1,3 +1,10 @@
+# [3.123.0](https://github.com/oeyoews/neotw/compare/v3.122.1...v3.123.0) (2023-03-12)
+
+
+### Features
+
+* enable statis again ([b19fcd2](https://github.com/oeyoews/neotw/commit/b19fcd2beb38cccf8fc0f579e3731f53f6ba7e00))
+
 ## [3.122.1](https://github.com/oeyoews/neotw/compare/v3.122.0...v3.122.1) (2023-03-12)
 
 # [3.122.0](https://github.com/oeyoews/neotw/compare/v3.121.1...v3.122.0) (2023-03-11)
