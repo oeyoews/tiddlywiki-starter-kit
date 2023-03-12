@@ -125,6 +125,7 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
       .use(require('markdown-it-footnote'))
       .use(require('markdown-it-emoji'))
       .use(require('markdown-it-task'))
+      .use(require('markdown-it-container'), 'warning')
       .use(require('markdown-it-deflist'));
 
     var results = setupWikiRules(pluginOptions);
@@ -247,9 +248,7 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
   }
 
   // to extend MarkdownIt outside of this module, do:
-  //
   // var emoji = require('markdown-it-emoji');
-  // md = $tw.Wiki.parsers['text/markdown'].prototype.md;
   // md.use(emoji);
   MarkdownParser.prototype.md = createMarkdownEngine(markdownOpts, pluginOpts);
 

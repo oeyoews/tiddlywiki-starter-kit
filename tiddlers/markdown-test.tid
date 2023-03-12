@@ -1,12 +1,17 @@
 cn-title: markdown 语法测试
 created: 20230221073554683
 creator: oeyoews
-modified: 20230226081455824
+modified: 20230312104831182
 modifier: oeyoews
 publish: article
 tags: 
 title: markdown-test
 type: text/markdown
+
+## Markdown Task
+
+- [ ] undone
+- [x] done
 
 ## emoji
 
