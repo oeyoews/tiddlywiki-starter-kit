@@ -1,3 +1,10 @@
+# [3.126.0](https://github.com/oeyoews/neotw/compare/v3.125.0...v3.126.0) (2023-03-12)
+
+
+### Features
+
+* add progressindictor ([38c5824](https://github.com/oeyoews/neotw/commit/38c5824212ec5c77ad2ff0d9570b56c153c79c97))
+
 # [3.125.0](https://github.com/oeyoews/neotw/compare/v3.124.0...v3.125.0) (2023-03-12)
 
 
