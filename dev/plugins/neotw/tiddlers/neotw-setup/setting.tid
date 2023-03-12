@@ -3,7 +3,7 @@ subtitle: {{$:/core/icon}} Neotw Setting {{$:/plugins/oeyoews/neotw/close-modal}
 mask-closable: yes
 class: o-neotw-setup
 tags: $:/tags/ControlPanel
-caption: Neotw
+caption: [img width=22 [$:/favicon.ico]]
 
 <$list filter="[[$:/plugins/kookma/shiraz-callout]has[plugin-type]]">
 {{neotw-guides}}
