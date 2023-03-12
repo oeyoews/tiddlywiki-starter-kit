@@ -124,6 +124,7 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
       .use(require('markdown-it-mark'))
       .use(require('markdown-it-footnote'))
       .use(require('markdown-it-emoji'))
+      .use(require('markdown-it-task'))
       .use(require('markdown-it-deflist'));
 
     var results = setupWikiRules(pluginOptions);
