@@ -1,0 +1,11 @@
+tags: doc
+title: Section Overview
+type: text/vnd.tiddlywiki
+
+<dl>
+<$list filter="[!has[draft.of]tag[doc]tag[section]sort[sectionnumber]]">
+
+<dt> <$link to={{!!title}}><$view field="title"/></$link></dt><dd><$view field="description"/></dd>
+
+</$list>
+</dl>

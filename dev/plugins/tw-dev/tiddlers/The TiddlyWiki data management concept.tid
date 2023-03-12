@@ -1,0 +1,4 @@
+title: The TiddlyWiki data management concept
+type: text/vnd.tiddlywiki
+
+This section descripes how the data of the wiki is stored within Tiddlywiki during the runtime. And how the complete wiki is persisted.

@@ -1,0 +1,12 @@
+{
+  "title": "$:/plugins/oeyoews/tw-dev",
+  "description": "Tw Dev",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.2.5",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "Tw Dev",
+  "dependents": [],
+  "list": "readme explore"
+}

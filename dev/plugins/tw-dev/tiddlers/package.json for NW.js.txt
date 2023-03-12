@@ -1,0 +1,9 @@
+{
+    "name": "tiddlywiki",
+    "main": "./index.html",
+	"window": {
+		"toolbar": true,
+		"width": 1024,
+		"height": 768
+	}
+}
