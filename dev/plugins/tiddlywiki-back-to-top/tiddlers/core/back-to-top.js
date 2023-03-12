@@ -3,7 +3,7 @@ title: $:/plugins/my-plugin/back-to-top.js
 type: application/javascript
 module-type: startup
 
-Adds a "back to top" button to the page which allows users to quickly scroll to the top of the page.
+Adds a "back to top" button with a progress indicator to the page which allows users to quickly scroll to the top of the page.
 
 \*/
 (function () {
@@ -37,7 +37,11 @@ Adds a "back to top" button to the page which allows users to quickly scroll to 
   backToTopButton.className = 'back-to-top-btn';
   backToTopButton.innerHTML = svgButton;
   button.appendChild(backToTopButton);
-  button.firstElementChild.addEventListener('click', scrollToTop);
+  // Add a span element for the progress indicator
+  const progressIndicator = document.createElement('span');
+  progressIndicator.className = 'back-to-top-progress';
+  button.appendChild(progressIndicator);
+  backToTopButton.addEventListener('click', scrollToTop);
 
   // Add the button to the page
   document.body.appendChild(button);
@@ -47,11 +51,19 @@ Adds a "back to top" button to the page which allows users to quickly scroll to 
     window.addEventListener('scroll', () => {
       if (window.scrollY > showButtonAt) {
         backToTopButton.classList.add('is-visible');
+        progressIndicator.classList.add('is-visible');
+        // Update the progress indicator
+        const pageHeight = document.body.scrollHeight - window.innerHeight;
+        const progress = Math.min(
+          (window.scrollY / pageHeight) * 100,
+          99,
+        ).toFixed(1);
+        progressIndicator.textContent = `${Math.round(progress)}.0%`;
       } else {
         backToTopButton.classList.remove('is-visible');
+        progressIndicator.classList.remove('is-visible');
+        // progressIndicator.textContent = '';
       }
-      // button.firstElementChild.style.display =
-      //   window.scrollY > showButtonAt ? 'block' : 'none';
     });
   }
   exports.startup = backListener;

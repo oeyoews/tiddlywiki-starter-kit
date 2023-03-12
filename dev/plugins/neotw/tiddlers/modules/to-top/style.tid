@@ -23,7 +23,7 @@ tags: $:/tags/Stylesheet
 #stx-story-top {
    position: fixed;
    bottom: 3rem;
-   right: 1rem;
+   right: 1.2rem;
    font-size: 24px;
    z-index: 899;
 }

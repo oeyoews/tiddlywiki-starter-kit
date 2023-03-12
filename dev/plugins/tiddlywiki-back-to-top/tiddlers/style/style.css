@@ -1,6 +1,15 @@
+.back-to-top-progress {
+  display: none;
+  font-size: 14px;
+}
+
+.back-to-top-progress.is-visible {
+  display: inline;
+}
+
 #oeyoews-story-top {
   position: fixed;
-  bottom: 1rem;
+  bottom: 0.1rem;
   right: 1rem;
   font-size: 24px;
   z-index: 899;
@@ -16,13 +25,13 @@
   background-color: #00000008;
   border-radius: 50%;
   padding: 0 0 5px;
-  margin: 0 0 9px;
+  margin: 0 0 4px;
   display: none;
   box-shadow: 0 5px 20px #0000001f;
 }
 
 .back-to-top-btn.is-visible {
-  display: block;
+  display: block; /* inline */
 }
 
 .back-to-top-btn:hover {

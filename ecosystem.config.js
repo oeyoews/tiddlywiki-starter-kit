@@ -9,7 +9,7 @@ module.exports = {
         //不监视的文件
       ],
       cwd: './',
-      watch_delay: 1000,
+      watch_delay: 100,
     },
   ],
 };
