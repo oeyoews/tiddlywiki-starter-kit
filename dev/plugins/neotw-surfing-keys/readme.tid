@@ -3,6 +3,7 @@ title: $:/plugins/oeyoews/neotw-surfing-keys/readme
 <a href="https://github.com/oeyoews/neotw" target="_blank">
   <img src="https://img.shields.io/badge/Powered by-Neotw-green?style=flat" />
 </a>
+<$image source={{{ [[][https://img.shields.io/badge/Files-]] [<currentTiddler>plugintiddlers[]count[]] [[-red?style=social]] +[join[]]}}} />
 
 <center>
 

@@ -7,6 +7,7 @@ title: $:/plugins/oeyoews/tiddlywiki-github-share/readme
 <$image source={{{ [[][https://img.shields.io/badge/Author-]] [<currentTiddler>get[author]] [[-lightblue?style=flat]] +[join[]]}}} />
 </a>
 <$image source={{{ [[][https://img.shields.io/badge/Version-]] [<currentTiddler>get[version]] [[-red?style=flat&logo=dev.to&logoColor=red]] +[join[]]}}} />
+<$image source={{{ [[][https://img.shields.io/badge/Files-]] [<currentTiddler>plugintiddlers[]count[]] [[-red?style=social]] +[join[]]}}} />
 
 * Github Share Button
 * compatiable font-awesome plugin

@@ -4,6 +4,7 @@ title: $:/plugins/oeyoews/neotw-music/readme
   <img src="https://img.shields.io/badge/Powered by-TWM-green?style=flat&logo=apple-music" />
 </a>
 <$image source={{{ [[][https://img.shields.io/badge/Version-]] [<currentTiddler>get[version]] [[-red?style=flat&logo=dev.to&logoColor=red]] +[join[]]}}} />
+<$image source={{{ [[][https://img.shields.io/badge/Files-]] [<currentTiddler>plugintiddlers[]count[]] [[-red?style=social]] +[join[]]}}} />
 
 !! Intro
 

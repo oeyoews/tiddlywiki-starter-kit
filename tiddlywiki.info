@@ -95,6 +95,8 @@
       "text/plain"
     ],
     "debug": [
+      "--output",
+      "dist",
       "--render",
       "$:/core/save/offline-external-js",
       "debug.html",
