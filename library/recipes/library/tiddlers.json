@@ -272,6 +272,20 @@
         "icon": "data:image/svg+xml,%3Csvg%20stroke%3D%22currentColor%22%20fill%3D%22currentColor%22%20stroke-width%3D%220%22%20version%3D%221%22%20viewBox%3D%220%200%2048%2048%22%20enable-background%3D%22new%200%200%2048%2048%22%20height%3D%221em%22%20width%3D%221em%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill%3D%22%23E65100%22%20d%3D%22M41%2C42H13c-2.2%2C0-4-1.8-4-4V18c0-2.2%2C1.8-4%2C4-4h28c2.2%2C0%2C4%2C1.8%2C4%2C4v20C45%2C40.2%2C43.2%2C42%2C41%2C42z%22%3E%3C%2Fpath%3E%3Cpath%20fill%3D%22%23F57C00%22%20d%3D%22M35%2C36H7c-2.2%2C0-4-1.8-4-4V12c0-2.2%2C1.8-4%2C4-4h28c2.2%2C0%2C4%2C1.8%2C4%2C4v20C39%2C34.2%2C37.2%2C36%2C35%2C36z%22%3E%3C%2Fpath%3E%3Ccircle%20fill%3D%22%23FFF9C4%22%20cx%3D%2230%22%20cy%3D%2216%22%20r%3D%223%22%3E%3C%2Fcircle%3E%3Cpolygon%20fill%3D%22%23942A09%22%20points%3D%2217%2C17.9%208%2C31%2026%2C31%22%3E%3C%2Fpolygon%3E%3Cpolygon%20fill%3D%22%23BF360C%22%20points%3D%2228%2C23.5%2022%2C31%2034%2C31%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E%0A"
     },
     {
+        "title": "$:/plugins/oeyoews/tiddlywiki-static-page",
+        "description": "Tiddlywiki Static Page",
+        "author": "oeyoews",
+        "version": "1.2.0",
+        "core-version": ">=5.2.5",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "Tiddlywiki Static Page",
+        "list": "readme",
+        "dependents": "",
+        "readme": "<a href=\"https://github.com/oeyoews/neotw\" target=\"_blank\">\n  <img src=\"https://img.shields.io/badge/Powered by-Neotw-green?style=flat\" />\n</a>\n\n<div style=\"color: red; font-style: bold\">\n<center>\n 此插件不建议普通tiddlywiki用户使用, 并且只适用于tiddlywiki nodejs版本, not compatiable vanilla theme\n</center>\n</div>\n\n* supported nodejs tw local and static online\n\n!! Tips\n\n<!-- *  -->\n\n!! Tutorials\n\n需要在tiddlywiki.info 文件中添加这样一段代码， 然后在命令行中运行 `(npx) tiddlywiki --build static`\n\n```wikitext\n\"static\": [ \"--output\", \"dist\",\n            \"--rendertiddlers\", \"[!is[system]]\", \"$:/core/templates/static.tiddler.html\", \"static\", \"text/plain\",\n            \"--rendertiddler\", \"$:/core/templates/static.template.css\", \"static/static.css\", \"text/plain\" ]\n```\n\n* Tiddlywiki Static Page\n* [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-static-page]]\n* [[Demo|https://oeyoews.github.io/neotw/]]\n",
+        "requires-reload": "no"
+    },
+    {
         "title": "$:/plugins/oeyoews/tiddlywiki-tiddler-info",
         "description": "Show Tiddler Info",
         "author": "oeyoews",
