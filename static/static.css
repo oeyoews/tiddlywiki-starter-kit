@@ -10206,7 +10206,7 @@ ul.bullets li::marker {
 }
 
 .back-to-top-btn.is-visible {
-  display: block; /* inline */
+  display: inline; /* inline */
 }
 
 .back-to-top-btn:hover {
