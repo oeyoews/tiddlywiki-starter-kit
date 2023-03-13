@@ -6,12 +6,15 @@ module-type: startup
 progress
 
 \*/
+// TODO: ios not update processbar
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
 
   if (!$tw.browser) return;
+
+  if (navigator.userAgent.match(/Mobile/i)) return;
 
   // Export name and synchronous status
   exports.name = 'progressbar';
