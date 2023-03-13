@@ -38,5 +38,6 @@ title: $:/plugins/oeyoews/neotw-music/readme
 
 !! NOTE
 
+* ~~由于ip不在大陆，理论上除了网易云外其他音乐源均不可用,解决方法部署到国内平台~~
 * 由于浏览器限制， 不支持自动播放
 * lrcType 参数有问题， 不完全支持
