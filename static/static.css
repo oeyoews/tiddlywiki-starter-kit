@@ -10216,6 +10216,47 @@ ul.bullets li::marker {
   transform: scale(1.1);
   transition: transform 0.2s;
 }
+
+/* bar */
+#page-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+progress {
+  width: 100%;
+  height: 4px;
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+::-webkit-progress-bar {
+  background-color: white;
+}
+
+::-webkit-progress-value {
+  /* background: linear-gradient(to right, #007aff, #00d4ff); */
+  background: linear-gradient(135deg, #12c2e9, #ffafbd, #c9ffbf);
+  /* filter: brightness(0.8); */
+  width: 50%;
+  /* transition: width 0.5s ease; */
+  animation: progress-bar 1s ease-out infinite;
+}
+
+@keyframes progress-bar {
+  0% {
+    box-shadow: 0 0 10px #007aff;
+  }
+  50% {
+    box-shadow: 0 0 20px #007aff;
+  }
+  100% {
+    box-shadow: 0 0 10px #007aff;
+  }
+}
 .doc-def {
 	font-style: normal;
 	font-weight: bold;
