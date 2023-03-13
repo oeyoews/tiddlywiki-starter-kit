@@ -10176,6 +10176,9 @@ ul.bullets li::marker {
 .back-to-top-progress {
   display: none;
   font-size: 14px;
+  background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .back-to-top-progress.is-visible {
