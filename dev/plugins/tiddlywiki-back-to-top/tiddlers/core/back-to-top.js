@@ -31,9 +31,9 @@ Adds a "back to top" button with a progress indicator to the page which allows u
 
   // Create the button element and attach the click listener
   const button = document.createElement('div');
-  button.setAttribute('title', '返回到顶部');
   const backToTopButton = document.createElement('button');
   button.id = 'oeyoews-story-top';
+  backToTopButton.setAttribute('title', '返回到顶部');
   backToTopButton.className = 'back-to-top-btn';
   backToTopButton.innerHTML = svgButton;
   button.appendChild(backToTopButton);
