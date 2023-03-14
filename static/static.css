@@ -9517,7 +9517,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/SideBar] .tc-tag-label:after {
-  content: " 9";
+  content: " 8";
 }
 
 
@@ -9787,96 +9787,6 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/RawMarkup] .tc-tag-label:after {
-  content: " 1";
-}
-
-
-
-[data-tag-title=Mechanisms] .tc-tag-label:after {
-  content: " 7";
-}
-
-
-
-[data-tag-title=doc] .tc-tag-label:after {
-  content: " 46";
-}
-
-
-
-[data-tag-title=new] .tc-tag-label:after {
-  content: " 6";
-}
-
-
-
-[data-tag-title=section] .tc-tag-label:after {
-  content: " 4";
-}
-
-
-
-[data-tag-title=Data-Storage] .tc-tag-label:after {
-  content: " 1";
-}
-
-
-
-[data-tag-title=Data\ Storage] .tc-tag-label:after {
-  content: " 1";
-}
-
-
-
-[data-tag-title=Microkernel\ Architecture] .tc-tag-label:after {
-  content: " 2";
-}
-
-
-
-[data-tag-title=howto] .tc-tag-label:after {
-  content: " 5";
-}
-
-
-
-[data-tag-title=dev] .tc-tag-label:after {
-  content: " 11";
-}
-
-
-
-[data-tag-title=TableOfContents] .tc-tag-label:after {
-  content: " 1";
-}
-
-
-
-[data-tag-title=HookMechanism] .tc-tag-label:after {
-  content: " 16";
-}
-
-
-
-[data-tag-title=redo] .tc-tag-label:after {
-  content: " 1";
-}
-
-
-
-[data-tag-title=moduletypes] .tc-tag-label:after {
-  content: " 5";
-}
-
-
-
-[data-tag-title=unused] .tc-tag-label:after {
-  content: " 1";
-}
-
-
-
-[data-tag-title=introduction] .tc-tag-label:after {
   content: " 1";
 }
 
