@@ -10,6 +10,10 @@ overwrite image.js
   /*global $tw: false */
   'use strict';
 
+  if (!$tw.browser) return;
+  // const username = $tw.wiki.getTiddlerText('$:/status/UserName');
+  // if (username !== 'oeyoews') return;
+
   var Widget = require('$:/core/modules/widgets/widget.js').widget;
 
   var ImageWidget = function (parseTreeNode, options) {
