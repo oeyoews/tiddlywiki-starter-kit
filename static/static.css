@@ -11607,16 +11607,7 @@ button.tc-unfold-banner {
 }input:focus, textarea:focus {
 		box-shadow: none;
     outline: 0;
-}
-
-.tc-story-river {
-		min-width: 1100px;
-}
-.nc-bottombar {
-	display: none;
-}
-
-.tc-improvement-banner {
+}.tc-improvement-banner {
 	font-size: 0.7em;
 	background: #fcc;
 	padding-left: 5px;
