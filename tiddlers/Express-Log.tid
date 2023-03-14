@@ -1,6 +1,6 @@
 created: 20230314105336787
 creator: oeyoews
-modified: 20230314133643754
+modified: 20230314135431359
 modifier: oeyoews
 publish: public
 tags: 
@@ -18,7 +18,9 @@ type: text/vnd.tiddlywiki
 * 管理员 admin1/123
 
 
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
 <progress value="10" />
+</$list>
 
 !! Download git
 
