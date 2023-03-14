@@ -1,6 +1,6 @@
 created: 20230314105336787
 creator: oeyoews
-modified: 20230314135714052
+modified: 20230314140713239
 modifier: oeyoews
 publish: public
 tags: 
@@ -17,7 +17,9 @@ type: text/vnd.tiddlywiki
 * 默认用户密码 user1/123
 * 管理员 admin1/123
 
+<center>
 <progress value="10" />
+</center>
 
 !! Download git
 

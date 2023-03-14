@@ -3,7 +3,7 @@ created: 20230117102714737
 creator: oeyoews
 giscus: yes
 icon: tom.png
-modified: 20230314140120364
+modified: 20230314140639724
 modifier: oeyoews
 page-cover: banner.png
 pin: yes
@@ -24,9 +24,9 @@ type: text/vnd.tiddlywiki
 
 {{neotw-badges}}
 
-</center>
-
 <progress value="100"/>
+
+</center>
 
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
 <<tabs "$:/plugins/oeyoews/neotw/readme-lang neotw-guides PLUGINS $:/AdvancedSearch neotw/INBOX neotw-reveal-js neotw-music" "$:/plugins/oeyoews/neotw/readme-lang" "$:/state/tab/neotw">>
