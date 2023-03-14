@@ -3,7 +3,7 @@ created: 20230117102714737
 creator: oeyoews
 giscus: yes
 icon: tom.png
-modified: 20230314141908922
+modified: 20230314143420084
 modifier: oeyoews
 page-cover: banner.png
 pin: yes
@@ -16,7 +16,9 @@ type: text/vnd.tiddlywiki
 <$list filter="[{$:/info/url/protocol}match[https:]]">
 <$github-calendar />
 </$list>
+<$list filter="[{$:/info/url/protocol}match[http:]]">
 <$ohitokoto refreshTime="600000"/>
+</$list>
 </center>
 
 <center>
