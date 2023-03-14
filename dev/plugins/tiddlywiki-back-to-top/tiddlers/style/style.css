@@ -58,6 +58,14 @@ progress {
   overflow: hidden;
 }
 
+/* 手机端样式 */
+@media (max-width: 767px) {
+  .progress {
+    height: 2px;
+    border-radius: 4px;
+  }
+}
+
 ::-webkit-progress-bar {
   background-color: white;
 }
