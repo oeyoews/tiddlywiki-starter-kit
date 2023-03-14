@@ -8878,6 +8878,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="heart"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="hr-liner-gradient"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="Index"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="js-books"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9609,7 +9611,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 92";
+  content: " 93";
 }
 
 
@@ -11434,7 +11436,13 @@ details > summary {
    text-indent: 0em;
 }.tc-tiddler-frame:focus-visible {
 	outline: #7f4bca 2px solid;
-}a {
+}hr {
+  height: 4px;
+  background-image: linear-gradient(135deg, #12c2e9, #ffafbd, #c9ffbf);
+  border: none;
+	border-radius: 3px;
+}
+a {
 	color: #007bff;
 	text-decoration: none;
 }.tc-tiddler-frame .tc-tiddler-body {
