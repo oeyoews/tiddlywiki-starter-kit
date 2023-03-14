@@ -1,3 +1,10 @@
+## [3.127.3](https://github.com/oeyoews/neotw/compare/v3.127.2...v3.127.3) (2023-03-14)
+
+
+### Bug Fixes
+
+* remove tc-storyrive min-width ([4a647a7](https://github.com/oeyoews/neotw/commit/4a647a7427e754d76dd470ae79e5e45ab9ccb4ae))
+
 ## [3.127.2](https://github.com/oeyoews/neotw/compare/v3.127.1...v3.127.2) (2023-03-14)
 
 ## [3.127.1](https://github.com/oeyoews/neotw/compare/v3.127.0...v3.127.1) (2023-03-13)
