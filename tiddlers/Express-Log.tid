@@ -1,14 +1,27 @@
 created: 20230314105336787
 creator: oeyoews
-modified: 20230314114641191
+modified: 20230314132711051
 modifier: oeyoews
 tags: 
-title: CarParking
+title: Express-Log
 type: text/vnd.tiddlywiki
+
+!! Installation
+
+* 开启 mysql redis 服务
+> redis-server.exe 位于桌面workspace/Redis* 文件夹
+
+* 运行项目
+* 在浏览器打开http://localhost:8080/index
+* 默认用户密码 user1/123
+* 管理员 admin1/123
+
+
+<progress value="50" />
 
 !! Download git
 
-* pc.qq.com
+* https://pc.qq.com
 
 !! Clone Projects
 
@@ -21,4 +34,4 @@ type: text/vnd.tiddlywiki
 
 * https://github.com/uniqueliuzhen/QRcode_doorManage
 
-* https://github.com/jitwxs/express
+* https://github.com/jitwxs/express (that's you)
