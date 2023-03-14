@@ -1,7 +1,7 @@
 created: 20230202124524313
 creator: oeyoews
 empty: yes
-modified: 20230312115903435
+modified: 20230314155053388
 modifier: oeyoews
 page-cover: 
 tags: $:/tags/Stylesheet
@@ -318,6 +318,7 @@ input:focus, textarea:focus {
     outline: 0;
 }
 
+<!--
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
 <$list filter="[[$:/state/notebook-sidebar]get[text]else[no]match[no]]">
 .tc-story-river {
@@ -328,6 +329,7 @@ input:focus, textarea:focus {
 }
 </$list>
 </$list>
+-->
 
 .tc-improvement-banner {
 	font-size: 0.7em;
