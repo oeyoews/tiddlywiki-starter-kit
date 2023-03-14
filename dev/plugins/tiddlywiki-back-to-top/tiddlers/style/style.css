@@ -56,6 +56,8 @@ progress {
   height: 4px;
   border-radius: 9px;
   overflow: hidden;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 /* 手机端样式 */
