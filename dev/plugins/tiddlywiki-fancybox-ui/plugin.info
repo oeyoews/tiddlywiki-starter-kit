@@ -2,7 +2,7 @@
   "title": "$:/plugins/oeyoews/tiddlywiki-fancybox-ui",
   "description": "New Fancybox",
   "author": "oeyoews",
-  "version": "5.0.7-1",
+  "version": "5.0.7.1",
   "core-version": ">=5.2.5",
   "type": "application/json",
   "plugin-type": "plugin",
