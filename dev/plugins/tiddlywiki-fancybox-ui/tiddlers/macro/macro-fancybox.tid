@@ -1,0 +1,58 @@
+title: $:/plugins/oeyoews/tiddlywiki-fancybox/macro/fancybox
+tags: $:/tags/Macro
+
+\whitespace trim
+
+\define fbox(links, caption, group, width:256)
+<$list filter="[enlist<__links__>]" variable="link">
+<!-- https: -->
+<$list filter="[<link>prefix[https:]]">
+    <a
+      href=<<link>>
+      data-fancybox=<<qualify  """$group$""">>
+      data-caption="""$caption$""">
+      <$image
+        source=<<link>>
+        loading="lazy"
+        tooltip=<<link>>
+        width=$width$/>
+    </a>
+</$list>
+<!-- binary -->
+<$list filter="[<link>is[binary]!has[_canonical_uri]]">
+  <a
+     data-fancybox="""$group$"""
+     data-caption="""$caption$"""
+     href={{{ [<link>get[text]] [[;base64,]] [<link>get[type]] [[data:]] :and[reverse[]join[]] }}}
+     >
+    <$image
+      source=<<link>>
+      tooltip=<<link>>
+      loading="lazy"
+      width=$width$
+      class="rounded"/>
+  </a>
+	</$list>
+  <!-- not supported binary -->
+<$list filter="[<link>!prefix[https:]!is[binary]!has[_canonical_uri]]">
+<span style="color:red;">This image not supported by </span> [[Fancybox Plugin|$:/plugins/oeyoews/tiddlywiki-fancybox]]
+	</$list>
+</$list>
+\end
+
+<!-- videos -->
+\define v-fbox(link)
+    <a
+      href="""$link$"""
+      data-fancybox="video">
+      <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1" viewBox="0 0 48 48" enable-background="new 0 0 48 48" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polygon fill="#90CAF9" points="40,45 8,45 8,3 30,3 40,13"></polygon><polygon fill="#E1F5FE" points="38.5,14 29,14 29,4.5"></polygon><polygon fill="#1976D2" points="30,28 20,22 20,34"></polygon></svg>
+    </a>
+\end
+
+\define fclick(tip:"点击查看内容", hideContent:"nothing")
+<a href="#my-content" data-fancybox>$tip$</a>
+
+<div id="my-content" style="display:none;">
+  $hideContent$
+</div>
+\end

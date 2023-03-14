@@ -1,0 +1,7 @@
+title: $:/plugins/oeyoews/tiddlywiki-fancybox/setup
+
+<!-- \define tid() $:/plugins/oeyoews/tiddlywiki-fancybox/style/rounded-thumbnail -->
+<!---->
+<!-- <$checkbox disabled="no" tag="$:/tags/Stylesheet" tiddler=<<tid>>> -->
+<!-- rounded-thumbnail -->
+<!-- </$checkbox> -->

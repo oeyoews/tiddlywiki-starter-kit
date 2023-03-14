@@ -1,0 +1,113 @@
+title: $:/plugins/oeyoews/tiddlywiki-fancybox/example
+subtitle: {{$:/plugins/oeyoews/tiddlywiki-fancybox/icon}} Fancybox Usage {{$:/plugins/oeyoews/tiddlywiki-modal-ui/close-modal}}
+mask-closable: yes
+class: o-tm
+
+!! Widget
+
+```
+<$fbox src="https://lipsum.app/id/66/1200x675" />
+```
+
+<$fbox src="https://lipsum.app/id/66/1200x675" alt="example image"/>
+
+!! Other Usage
+
+<a href="#my-content" data-fancybox>点击查看内容</a>
+
+<div id="my-content" style="display:none;">
+  这是要显示为 Fancybox 弹出框的内容。
+</div>
+
+<a href="https://www.youtube.com/watch?v=y2GR4ERc5w0" data-fancybox>
+  <img src="https://yt3.ggpht.com/ytc/AL5GRJUQA65mhmGXUh_uIIRfu9d2yNFo_-aCuYr5pkf-xg=s88-c-k-c0x00ffffff-no-rj" alt="视频" />
+</a>
+
+!! Local Image
+
+<center>
+  ''Group Local Image''
+</center>
+
+<center>
+  <<fbox "test-fancybox.png" group:"Single Group">>
+  <<fbox "test-fancybox.png" group:"Single Group">>
+</center>
+
+<center>
+  ''Single Local Image''
+</center>
+
+<center>
+  <<fbox "test-fancybox.png" >>
+</center>
+
+!! Online Images
+<center>
+  <b>Fancybox Single Image</b>
+</center>
+
+```wikitext
+<<fbox "https://lipsum.app/id/66/1200x675">>
+```
+
+<center>
+  <<fbox "https://lipsum.app/id/66/1200x675"
+  caption: "First Image"
+  group: "first"
+  >>
+</center>
+
+<center>
+  <<fbox "https://lipsum.app/id/77/1200x675"
+  caption: "Second Image"
+  group: "second"
+  >>
+</center>
+
+```wikitext
+<<fbox
+"""
+https://lipsum.app/id/77/1200x675
+https://lipsum.app/id/66/1200x675
+https://lipsum.app/id/55/1200x675
+"""
+caption: "xxx"
+width: 256
+>>
+```
+
+<center>
+  <b>Fancybox Gallery Usage </b>
+</center>
+
+<center>
+  <<fbox
+  """
+  https://lipsum.app/id/77/1200x675
+  https://lipsum.app/id/66/1200x675
+  https://lipsum.app/id/55/1200x675
+  """
+  group: "Gallary Group"
+  width: 300
+  >>
+</center>
+
+<!-- <<Carousel """ -->
+<!-- https://lipsum.app/id/77/1200x675 -->
+<!-- https://lipsum.app/id/55/1200x675 -->
+<!-- https://lipsum.app/id/66/1200x675 -->
+<!-- """>> -->
+
+!! Fancybox Macro Parameters
+
+* `links` one or more https://xxx link
+* `width` default is 256
+* `caption`
+
+!! Shortcuts
+
+* <kbd>f</kbd> toggle thumbs
+* j / n  next image
+* k / p  prev image
+* q / esc / del close

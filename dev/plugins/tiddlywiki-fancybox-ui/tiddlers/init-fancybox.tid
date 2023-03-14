@@ -1,0 +1,8 @@
+title: $:/plugins/oeyoews/tiddlywiki-fancybox/init-fancybox
+type: application/javascript
+tags: $:/tags/RawMarkupWikified/BottomBody
+
+`<script>`
+{{$:/plugins/oeyoews/tiddlywiki-fancybox/fancybox.min.js}}
+{{$:/plugins/oeyoews/tiddlywiki-fancybox/init-fancybox.js}}
+`</script>`

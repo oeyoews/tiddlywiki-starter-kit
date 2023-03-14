@@ -33,3 +33,9 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox/readme
 * need refresh on installed this fancybox plugin
 * if you use splashscreen, please remove `remove-when-wiki-loaded` class,
 otherwise this plugin will not work normally [[warn|https://github.com/Jermolene/TiddlyWiki5/search?q=tc-remove-when-wiki-loaded]]
+
+!! Fancybox Version
+
+* 4.x
+
+> Fancybox is licensed under the GPLv3 license for all open source applications. A commercial license is required for all commercial applications (including sites, themes and apps you plan to sell).

@@ -1,0 +1,90 @@
+title: $:/plugins/Gk0Wk/notionpage-covericon/body
+list-before: $:/core/ui/ViewTemplate/title
+tags: $:/tags/ViewTemplate
+
+\define addcover()
+<$list filter="[{$:/info/url/protocol}match[http:]]">
+    <div class="gk0wk-notionbg-addbuttons">
+      <$button setTitle=<<tiddler>> setField="page-cover" setTo={{$:/plugins/Gk0Wk/notionpage-covericon/default-pagecover-url}} tooltip="Add Cover">{{$:/core/images/picture}} Add Cover</$button>
+    </div>
+</$list>
+\end
+
+\define notionpage-covericon-with-fancybox()
+    <div class="gk0wk-notionpagebg-image">
+    <!-- data-fancybox -->
+    <$list filter="[<cover>prefix[https:]]">
+		  <!-- <a data-fancybox="notion-pagecover-with-fancybox" href=<<cover>> > -->
+    		<$image source=<<cover>> width="100%" height="auto"/>
+  		<!-- </a> -->
+    </$list>
+    <!-- normal img -->
+    <$list filter="[<cover>!prefix[https:]]">
+		<$button aria-label="" class=<<tv-config-toolbar-class>>>
+		  <$image source=<<cover>> width="100%" height="auto"/>
+  <$action-navigate $to=<<cover>>/>
+</$button>
+    </$list>
+		</div>
+    <!-- show ChangeCover button on http: -->
+<$list filter="[{$:/info/url/protocol}match[http:]]">
+    <$button popup=<<stateTiddler2>> class="gk0wk-notionpageb-changecover" tooltip="Change Cover">Change Cover</$button>
+</$list>
+\end
+
+<$list filter="[all[current]!is[system]!is[binary]]">
+<$set name="tiddler" value=<<currentTiddler>>>
+<$list filter="[<currentTiddler>addprefix[$:/temp/Gk0Wk/notionpage-covericon/Selector/]]" variable="stateTiddler1">
+<$list filter="[<currentTiddler>addprefix[$:/temp/Gk0Wk/notionpage-covericon/ChangeCover/]]" variable="stateTiddler2">
+<$set name="icon" value={{!!icon}}>
+<$set name="cover" value={{!!page-cover}}>
+<$list filter="[<icon>match[]]">
+<$list filter="[<cover>match[]]">
+  <!-- !icon && !cover -->
+  <div class="gk0wk-notionpagebg gk0wk-notionpagebg-n">
+  <!-- addcover -->
+  <<addcover>>
+  </div>
+</$list>
+<$list filter="[<cover>!match[]]">
+  <!-- !icon && cover -->
+  <div class="gk0wk-notionpagebg gk0wk-notionpagebg-c">
+    <<notionpage-covericon-with-fancybox>>
+    <$reveal type="popup" state=<<stateTiddler2>> position="belowleft" tag="div" class="tc-popup-keep">
+      <div class="gk0wk-notionpageb-changecover-box">
+        <div>
+          <$edit-text tiddler=<<tiddler>> field="page-cover" default="" placeholder="Tiddler or URL" focus="true"/>
+        </div>
+      </div>
+    </$reveal>
+  </div>
+</$list>
+</$list>
+<$list filter="[<icon>!match[]]">
+<$list filter="[<cover>match[]]">
+  <!-- icon && !cover -->
+  <div class="gk0wk-notionpagebg gk0wk-notionpagebg-i">
+    <!-- add cover -->
+    <<addcover>>
+  </div>
+</$list>
+<$list filter="[<cover>!match[]]">
+  <!-- icon && cover -->
+  <div class="gk0wk-notionpagebg gk0wk-notionpagebg-c">
+  <<notionpage-covericon-with-fancybox>>
+    <$reveal type="popup" state=<<stateTiddler2>> position="belowleft" tag="div" class="tc-popup-keep">
+      <div class="gk0wk-notionpageb-changecover-box">
+        <div>
+          <$edit-text tiddler=<<tiddler>> field="page-cover" default="" placeholder="Tiddler or URL" focus="true"/>
+        </div>
+      </div>
+    </$reveal>
+  </div>
+</$list>
+</$list>
+</$set>
+</$set>
+</$list>
+</$list>
+</$set>
+</$list>

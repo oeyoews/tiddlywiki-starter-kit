@@ -1,0 +1,64 @@
+title: $:/plugins/oeyoews/tiddlywiki-fancybox/config
+
+\define tid() $:/plugins/oeyoews/tiddlywiki-fancybox/init
+\define tid-msg() $:/plugins/oeyoews/tiddlywiki-fancybox/msg
+\define tag() $:/tags/RawMarkupWikified/BottomBody
+\define mode() $:/status/tiddlywiki-fancybox/mode
+
+<!-- one config -->
+<$list filter=<<mode>> variable=".state">
+
+  <!-- add  -->
+  <$reveal state=<<.state>> type="nomatch" text="hide">
+    <$fieldmangler tiddler=<<tid>> >
+      <$button set=<<.state>> setTo="hide">Enable Fancybox Global {{neotw/icon/approve}}
+        <$action-sendmessage $message="tm-add-tag" $param=<<tag>>/>
+        <$action-sendmessage $message="tm-notify" $param=<<tid-msg>>/>
+      </$button>
+    </$fieldmangler>
+  </$reveal>
+
+  <!-- remove -->
+  <$reveal state=<<.state>> type="match" text="hide">
+    <$fieldmangler tiddler=<<tid>> >
+      <$button set=<<.state>> setTo="show">Disable Fancybox Global {{neotw/icon/warn}}
+        <$action-sendmessage $message="tm-remove-tag" $param=<<tag>>/>
+        <$action-sendmessage $message="tm-notify" $param=<<tid-msg>>/>
+      </$button>
+    </$fieldmangler>
+  </$reveal>
+
+</$list>
+
+<!-- second config -->
+
+<!-- <$list filter=<<mode>> variable=".state"> -->
+<!---->
+<!--   <!-- add  -->
+<!--   <$reveal state=<<.state>> type="nomatch" text="hide"> -->
+<!--     <$fieldmangler tiddler=<<tid>> > -->
+<!--       <$button set=<<.state>> setTo="hide">Enable Fancybox Global {{neotw/icon/approve}} -->
+<!--         <$action-sendmessage $message="tm-add-tag" $param=<<tag>>/> -->
+<!--         <$action-sendmessage $message="tm-notify" $param=<<tid-msg>>/> -->
+<!--       </$button> -->
+<!--     </$fieldmangler> -->
+<!--   </$reveal> -->
+<!---->
+<!--   <!-- remove -->
+<!--   <$reveal state=<<.state>> type="match" text="hide"> -->
+<!--     <$fieldmangler tiddler=<<tid>> > -->
+<!--       <$button set=<<.state>> setTo="show">Disable Fancybox Global {{neotw/icon/warn}} -->
+<!--         <$action-sendmessage $message="tm-remove-tag" $param=<<tag>>/> -->
+<!--         <$action-sendmessage $message="tm-notify" $param=<<tid-msg>>/> -->
+<!--       </$button> -->
+<!--     </$fieldmangler> -->
+<!--   </$reveal> -->
+<!---->
+<!-- </$list> -->
+
+<!-- add config -->
+<$button>
+  <$action-deletetiddler $tiddler=<<tid>>/>
+  <$action-sendmessage $message="tm-notify" $param=<<tid-msg>>/>
+  Reset Fancybox Configuration {{neotw/icon/reset}}
+</$button>
