@@ -42,6 +42,8 @@ await spinner('Building ...', async () => {
   // build static
   await $`cp -r static-patch tiddlers`;
   await $`npx ${bin} --build static`;
+  // await $`npx tiddlywiki --output dist --render '[!is[system]]' '[addprefix[static/]addsuffix[.html]]'`;
+  // await $`npx tiddlywiki  --output dist --rendertiddler "$:/core/templates/static.template.css" "static/static.css"`;
   await $`rm -rf tiddlers/static-patch`;
 
   // after building
