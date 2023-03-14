@@ -9479,7 +9479,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/KeyboardShortcut] .tc-tag-label:after {
-  content: " 30";
+  content: " 29";
 }
 
 
@@ -9509,7 +9509,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/PageControls] .tc-tag-label:after {
-  content: " 33";
+  content: " 32";
 }
 
 
@@ -9551,7 +9551,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/ViewTemplate] .tc-tag-label:after {
-  content: " 16";
+  content: " 15";
 }
 
 
@@ -9605,13 +9605,13 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Macro] .tc-tag-label:after {
-  content: " 63";
+  content: " 60";
 }
 
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 93";
+  content: " 92";
 }
 
 
@@ -9785,7 +9785,7 @@ footer {
 
 
 [data-tag-title=Tiddlywiki5Tip] .tc-tag-label:after {
-  content: " 2";
+  content: " 1";
 }
 
 
@@ -10416,18 +10416,6 @@ ol.doc-github-contributors li {
    border-radius: 0.25rem;
 }.has-image[data-image-fit=contain] .fancybox__image {
     border-radius: 10px;
-}
-.o-giscus-comment .tc-modal,
-.o-giscus-comment .tc-modal-header,
-.o-giscus-comment .tc-modal-body,
-.o-giscus-comment .tc-modal-footer {
-   border-radius: 10px;
-   border: none;
-   background-color: #F5F5F5;
-}.o-giscus-comment .tc-modal-footer {
-    display:none;
-}.o-giscus-comment .tc-modal-header {
-    text-transform: capitalize;
 }
 @media (max-width: 1360px) {
   .githubCorner {
