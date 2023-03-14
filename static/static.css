@@ -8826,8 +8826,6 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="calendar"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="CarParking"] .tc-titlebar h2 { text-transform: capitalize; }
-
   [data-tiddler-title="cat.svg"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="chatgpt-999"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -8843,6 +8841,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   [data-tiddler-title="dream-plan-websites"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="english-widget-example"] .tc-titlebar h2 { text-transform: capitalize; }
+
+  [data-tiddler-title="Express-Log"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="f-notion"] .tc-titlebar h2 { text-transform: capitalize; }
 
