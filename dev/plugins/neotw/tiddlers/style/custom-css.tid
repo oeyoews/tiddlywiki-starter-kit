@@ -6,6 +6,12 @@ tags: $:/tags/Stylesheet
 \end
 
 <!-- .tc-tiddler-frame input.tc-edit-texteditor  { text-transform: capitalize; } -->
+<!-- hr { -->
+<!--   height: 4px; -->
+<!--   background-image: linear-gradient(135deg, #12c2e9, #ffafbd, #c9ffbf); -->
+<!--   border: none; -->
+<!-- 	border-radius: 3px; -->
+<!-- } -->
 
 .o-rnav-article {
   text-align: right;

@@ -3,7 +3,7 @@ created: 20230117102714737
 creator: oeyoews
 giscus: yes
 icon: tom.png
-modified: 20230314140639724
+modified: 20230314141513274
 modifier: oeyoews
 page-cover: banner.png
 pin: yes
@@ -24,7 +24,7 @@ type: text/vnd.tiddlywiki
 
 {{neotw-badges}}
 
-<progress value="100"/>
+<hr />
 
 </center>
 

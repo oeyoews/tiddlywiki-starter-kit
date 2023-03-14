@@ -1,0 +1,14 @@
+created: 20230314141436539
+creator: oeyoews
+modified: 20230314141452222
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: hr-liner-gradient
+type: text/vnd.tiddlywiki
+
+hr {
+  height: 4px;
+  background-image: linear-gradient(135deg, #12c2e9, #ffafbd, #c9ffbf);
+  border: none;
+	border-radius: 3px;
+}
