@@ -9617,7 +9617,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 92";
+  content: " 93";
 }
 
 
@@ -10498,7 +10498,7 @@ ol.doc-github-contributors li {
 	transform: scale(1.01);
 	transition: transform .2s;
 }
-.nauthor img {
+.contents{display:contents}.h-32{height:8rem}.w-32{width:8rem}.bg-green-500{--tw-bg-opacity:1;background-color:rgb(34 197 94/var(--tw-bg-opacity))}@media (min-width:768px){.md\:bg-blue-500{--tw-bg-opacity:1;background-color:rgb(59 130 246/var(--tw-bg-opacity))}}.nauthor img {
     width: 100%;
     height: auto;
     max-width: 14px;
