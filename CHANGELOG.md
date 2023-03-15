@@ -1,3 +1,10 @@
+# [3.128.0](https://github.com/oeyoews/neotw/compare/v3.127.5...v3.128.0) (2023-03-15)
+
+
+### Features
+
+* support for fullscreen ([c337f2b](https://github.com/oeyoews/neotw/commit/c337f2bcfaf6b100626aec2ed544c1e0948c1b89))
+
 ## [3.127.5](https://github.com/oeyoews/neotw/compare/v3.127.4...v3.127.5) (2023-03-15)
 
 ## [3.127.4](https://github.com/oeyoews/neotw/compare/v3.127.3...v3.127.4) (2023-03-15)
