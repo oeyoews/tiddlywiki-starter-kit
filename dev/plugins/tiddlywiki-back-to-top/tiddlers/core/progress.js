@@ -7,6 +7,9 @@ progress
 
 \*/
 // CSS-based progress bar that works on iOS devices
+
+// The reason why the HTML5 progress element doesn't work on iOS devices is because Safari on iOS doesn't support the progress element's JavaScript API. This means that you can't update the value of the progress bar using JavaScript, which is necessary for the progress bar to work as intended.
+// Using a CSS - based progress bar is a workaround for this issue, because you can update the width of the progress bar using CSS instead of JavaScript.This allows the progress bar to work on iOS devices as well as other browsers.
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
