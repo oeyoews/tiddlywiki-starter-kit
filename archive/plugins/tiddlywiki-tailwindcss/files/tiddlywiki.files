@@ -1,0 +1,12 @@
+{
+  "tiddlers": [
+    {
+      "file": "styles.min.css",
+      "fields": {
+        "title": "$:/plugins/oeyoews/tiddlywiki-tailwindcss/styles.min.css",
+        "type": "text/css",
+        "tags": "$:/tags/Stylesheet"
+      }
+    }
+  ]
+}
