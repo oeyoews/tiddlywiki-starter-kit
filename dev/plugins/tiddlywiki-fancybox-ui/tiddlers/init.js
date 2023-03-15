@@ -6,15 +6,13 @@ function init_fbox() {
   var images = document.getElementsByTagName('img');
   for (var i = 0; i < images.length; i++) {
     var image = images[i];
-    // comment below will have two a tag
-    // conflict for image.js(overwrite)
-    // var parent = image.parentElement;
-    // var hasFancybox = parent.hasAttribute('data-fancybox');
-    // if (hasFancybox) return;
+    var parent = image.parentElement;
+    var hasFancybox = parent.hasAttribute('data-fancybox');
+    if (hasFancybox) continue;
     var link = document.createElement('a');
     link.href = image.src;
-    link.setAttribute('data-fancybox', '');
-    link.setAttribute('data-caption', image.alt);
+    link.setAttribute('data-fancybox', 'gallary');
+    link.setAttribute('data-caption', image.alt || 'gallary');
     image.parentNode.insertBefore(link, image);
     link.appendChild(image);
   }

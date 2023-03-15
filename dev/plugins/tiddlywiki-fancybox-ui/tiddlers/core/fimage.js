@@ -104,9 +104,15 @@ Render this widget into the DOM
       domNode.setAttribute('loading', this.lazyLoading);
     }
     // custom
-    const dataFancybox = $tw.wiki.getTiddlerText('$:/temp/focussedTiddler');
+    // const dataFancybox = $tw.wiki.getTiddlerText('$:/temp/focussedTiddler');
     const aNode = this.document.createElement('a');
-    aNode.setAttribute('data-fancybox', dataFancybox);
+    aNode.setAttribute('data-fancybox', '');
+    // todo
+    /* if (dataFancybox !== 'undefined') {
+      aNode.setAttribute('data-fancybox', dataFancybox);
+    } else {
+      aNode.setAttribute('data-fancybox', 'gallary');
+    } */
     // TODO
     // if (this.imageAlt) {
     //   aNode.setAttribute('data-slug', '#' + this.imageAlt);
