@@ -4,8 +4,8 @@ control: ctrl-i
 fullscreen: alt-f
 surfing-help: ctrl-slash
 home-page: ctrl-h
-get-plugins: ctrl-shift-u
-install-plugins: ctrl-g
+get-plugins: ctrl-g
+install-plugins: ctrl-shift-u
 search-filter: ctrl-k
 neotw-help: alt-shift-slash
 view-fields: ctrl-shift-h
