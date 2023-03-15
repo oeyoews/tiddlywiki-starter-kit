@@ -1,0 +1,11 @@
+{
+  "tiddlers": [
+    {
+      "file": "sentences.json",
+      "fields": {
+        "title": "$:/plugins/oeyoews/neotw-hitokoto/sentences.json",
+        "type": "application/json"
+      }
+    }
+  ]
+}
