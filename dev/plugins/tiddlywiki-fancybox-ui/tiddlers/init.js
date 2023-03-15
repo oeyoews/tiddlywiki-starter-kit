@@ -11,8 +11,8 @@ function init_fbox() {
     if (hasFancybox) continue;
     var link = document.createElement('a');
     link.href = image.src;
-    link.setAttribute('data-fancybox', 'gallary');
-    link.setAttribute('data-caption', image.alt || 'gallary');
+    link.setAttribute('data-fancybox', '');
+    link.setAttribute('data-caption', image.alt || 'image');
     image.parentNode.insertBefore(link, image);
     link.appendChild(image);
   }

@@ -10,7 +10,7 @@ fi
 
 if [ ! -d "$dirPath" ]
   then
-    echo "Directory $dirPath does not exist"
+    echo -e "\033[0;31mDirectory $dirPath does not exist\033[0m"
     echo "Please provide a valid directory path"
     exit 1
 fi
@@ -21,4 +21,4 @@ content="$dirPath/**/*.tid"
 
 npx tailwindcss --input "$inputPath" --output "$outputPath" --minify --content "$content"
 
-echo "Generated $outputPath"
+echo -e "\033[0;32mGenerated $outputPath\033[0m"

@@ -3,3 +3,13 @@ title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/demo
 !! Demo
 
 <div class="w-32 h-32 bg-green-500 md:bg-blue-500" />
+
+!! Dark
+
+<div class="w-32 h-32 bg-blue-500 dark:bg-green-500"></div>
+
+<div class="bg-white text-primary mx-auto">
+The quick brown fox jumps over the lazy dog
+</div>
+
+<img class="w-16 md:w-32 lg:w-48" src="https://neotw.oeyoewl.top/favicon.ico">
