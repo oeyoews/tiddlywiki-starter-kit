@@ -22,7 +22,7 @@ node_modules/
 # misc
 tiddlers/config/TiddlerTail/Default.tid
 tidgi/
-library/
+# library/
 neotw-temp/
 # dev/tiddlers/
 dev/archrepo/

@@ -1,0 +1,16 @@
+{
+  "directories": [
+    {
+      "path": "library",
+      "filesRegExp": "^.*\\.min.js$",
+      "fields": {
+        "title": {
+          "source": "filename",
+          "prefix": "$:/plugins/oeyoews/tiddlywiki-fancybox/library/"
+        },
+        "type": "application/javascript",
+        "module-type": "library"
+      }
+    }
+  ]
+}
