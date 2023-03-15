@@ -2,7 +2,9 @@ title: $:/plugins/oeyoews/neotw-hitokoto/ui/hitokoto
 tags: $:/tags/ViewTemplate
 
 <$list filter="[all[current]!is[system]!field:hitokoto[no]]">
+<$list filter="[{$:/info/url/protocol}match[https:]]">
 {{$:/plugins/oeyoews/neotw-hitokoto/modal-id}}
+</$list>
 </$list>
 
 <!-- <$list filter="[[all[current]field:hitokoto[yes]]]"> -->

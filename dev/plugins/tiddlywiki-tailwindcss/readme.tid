@@ -22,3 +22,7 @@ title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/readme
 * [[Demo|https://oeyoews.github.io/neotw]]
 
 > https://github.com/benwebber/tiddlywiki-plugins
+
+!! NOTE
+
+* 还未完全支持Tailwindcss的所有高级用法

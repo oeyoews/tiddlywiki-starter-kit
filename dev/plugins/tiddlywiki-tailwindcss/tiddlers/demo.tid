@@ -1,0 +1,5 @@
+title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/demo
+
+!! Demo
+
+<div class="w-32 h-32 bg-green-500 md:bg-blue-500" />

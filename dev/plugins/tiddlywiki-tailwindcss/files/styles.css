@@ -1,0 +1,4 @@
+/* remove this base to compatiable tiddlywiki */
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
