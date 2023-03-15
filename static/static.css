@@ -10135,7 +10135,20 @@ ul.bullets li::marker {
   top: 0;
   left: 0;
   right: 0;
+  width: 100%;
+  height: 3px;
+  /* background-color: #ddd; */
   z-index: 899;
+}
+
+#page-progress-bar {
+  background: linear-gradient(135deg, #12c2e9, #ffafbd, #c9ffbf);
+  height: 100%;
+  background-color: #007bff;
+  width: 0;
+  border-radius: 9px;
+  transition: width 0.3s ease-in-out;
+  /* animation: progress-bar 1s ease-out infinite; */
 }
 
 progress {
@@ -10170,13 +10183,13 @@ progress {
 
 @keyframes progress-bar {
   0% {
-    box-shadow: 0 0 10px #007aff;
+    box-shadow: 0 0 1px #007aff;
   }
   50% {
-    box-shadow: 0 0 20px #007aff;
+    box-shadow: 0 0 2px #007aff;
   }
   100% {
-    box-shadow: 0 0 10px #007aff;
+    box-shadow: 0 0 1px #007aff;
   }
 }
 .doc-def {
