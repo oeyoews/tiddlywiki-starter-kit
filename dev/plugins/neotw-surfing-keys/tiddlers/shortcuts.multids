@@ -1,0 +1,12 @@
+title: $:/config/shortcuts/
+
+control: ctrl-i
+fullscreen: alt-f
+surfing-help: ctrl-slash
+home-page: ctrl-h
+get-plugins: ctrl-shift-u
+install-plugins: ctrl-g
+search-filter: ctrl-k
+neotw-help: alt-shift-slash
+view-fields: ctrl-shift-h
+get-started: alt-shift-g
