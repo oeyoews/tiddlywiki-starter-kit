@@ -8826,6 +8826,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="calendar"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="can-i-use"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="cat.svg"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="chatgpt-999"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9174,6 +9176,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="openai-api-about-project"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="otp-meaning"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="pang-test"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="plugin-svg"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9237,6 +9241,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   [data-tiddler-title="update-tiddlywiki-bug"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="use-deepl-extend-on-chrome"] .tc-titlebar h2 { text-transform: capitalize; }
+
+  [data-tiddler-title="use-files-on-tiddlywiki"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="use-flameshot-to-upload-image"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -9913,7 +9919,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "168";
+  content: "171";
 }
 .user-panel-avatar { position: relative; max-width: 22px; max-height: 22px; }.user-panel-avatar-56 { position: relative; max-width: 56px; max-height: 56px; }.user-panel-avatar-56 img { width: 100%; height: auto; max-width: 56px; max-height: 56px; border-radius: 50%; aspect-ratio: 1 / 1; }.user-panel-avatar img { width: 100%; height: auto; max-width: 22px; max-height: 22px; border-radius: 50%; aspect-ratio: 1 / 1; }
 ul.bullets li::marker {
