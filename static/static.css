@@ -7338,11 +7338,6 @@ readers do not read off random characters that represent icons */
   width: auto; }
 
 
-.tw-flex{display:flex}.tw-justify-around{justify-content:space-around}.tw-border-none{border-style:none}.tw-p-1{padding:.25rem}
-[data-tiddler-title=] {
-  outline: #5778d8 2px solid;
-}
-
 .matched{background-color:yellow}
 .tw-context {/*border:1px solid;
   /*word-break: break-all; word-wrap: break-word*/}.tc-relink-references {
@@ -8555,6 +8550,11 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 }.py-welcome p {
   margin: 0;
 }
+.tw-flex{display:flex}.tw-justify-around{justify-content:space-around}.tw-border-none{border-style:none}.tw-p-1{padding:.25rem}
+[data-tiddler-title=] {
+  outline: #5778d8 2px solid;
+}
+
 .friend-card {
     margin-bottom: 10px;
     display: flex;
@@ -8787,6 +8787,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   [data-tiddler-title="min-js"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="missing-thinkup"] .tc-titlebar h2 { text-transform: capitalize; }
+
+  [data-tiddler-title="MUI"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="name-your-tid"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -9791,7 +9793,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "174";
+  content: "175";
 }
 .user-panel-avatar { position: relative; max-width: 22px; max-height: 22px; }.user-panel-avatar-56 { position: relative; max-width: 56px; max-height: 56px; }.user-panel-avatar-56 img { width: 100%; height: auto; max-width: 56px; max-height: 56px; border-radius: 50%; aspect-ratio: 1 / 1; }.user-panel-avatar img { width: 100%; height: auto; max-width: 22px; max-height: 22px; border-radius: 50%; aspect-ratio: 1 / 1; }
 ul.bullets li::marker {
