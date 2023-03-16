@@ -14,3 +14,7 @@
 .o-tm .tc-modal-header {
   text-transform: capitalize;
 }
+
+.o-tm .tc-modal-backdrop {
+  cursor: pointer;
+}
