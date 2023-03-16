@@ -6,6 +6,8 @@ import updatecommit from './lib/update-commit.mjs';
 
 $.verbose = false;
 
+process.env.TIDDLYWIKI_PLUGIN_PATH = './';
+
 const bin = 'tiddlywiki';
 const dist = 'dist';
 

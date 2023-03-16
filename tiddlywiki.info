@@ -41,6 +41,8 @@
       "patch",
       "--output",
       "dist",
+      "--deletetiddlers",
+      "$:/StoryList",
       "--render",
       "$:/plugins/tiddlywiki/tiddlyweb/save/offline",
       "index.html",
