@@ -1,3 +1,10 @@
+# [3.131.0](https://github.com/oeyoews/neotw/compare/v3.130.0...v3.131.0) (2023-03-16)
+
+
+### Features
+
+* update motion ([e866e3b](https://github.com/oeyoews/neotw/commit/e866e3b6cd91853183d19c3ea39a763ac2ea3e7d))
+
 # [3.130.0](https://github.com/oeyoews/neotw/compare/v3.129.0...v3.130.0) (2023-03-16)
 
 
