@@ -2370,116 +2370,6 @@ body.tc-dirty span.tc-dirty-indicator svg {
 		transform: scale(359deg);
 	}
 }
-.CodeMirror-hints {
-  /* Floating above tiddlers */
-  z-index: 800 !important;
-}
-
-.CodeMirror-hint {
-  width: 400px !important;
-}
-
-li.cm-hacked-hint {
-  display: flex;
-  justify-content: space-between;
-  white-space: nowrap;
-}
-
-li.cm-hacked-hint > span.hint-title {
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-li.cm-hacked-hint > span.hint-title > span.hint-title-highlighted {
-  background: yellow;
-}
-
-li.cm-hacked-hint > span.hint-type {
-  padding-left: 10px;
-  font-weight: bold;
-  opacity: 0.5;
-}
-
-.CodeMirror-hints-append {
-  max-height: 20em !important;
-  width: 300px !important;
-  color: black;
-  resize: both;
-}
-
-span.cm-underlined {
-  text-decoration-line: underline;
-}
-
-/* Enhance from and specially thank to https://github.com/adithya-badidey/TW5-codemirror-plus */
-span.cm-superscript {
-  vertical-align: super;
-  font-size: 0.7em;
-  line-height: 0.1em;
-}
-
-span.cm-subscript {
-  font-size: 0.7em;
-  line-height: 0.5;
-}
-
-pre.cm-quote-line {
-  padding-left: 0.4em !important;
-  border-left: #444 solid 0.2em !important;
-}
-
-.cm-code-block-line,
-.latex {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-span.cm-h1 {
-  font-weight: 700;
-  font-size: 1.383em;
-  line-height: 1.802em;
-}
-
-span.cm-h2 {
-  font-weight: 600;
-  font-size: 1.296em;
-  line-height: 1.602em;
-}
-
-span.cm-h3 {
-  font-weight: 500;
-  font-size: 1.215em;
-  line-height: 1.424em;
-}
-
-span.cm-h4 {
-  font-weight: 400;
-  font-size: 1.138em;
-  line-height: 1.266em;
-}
-
-span.cm-h5 {
-  font-weight: 400;
-  font-size: 1.067em;
-  line-height: 1.125em;
-}
-
-span.cm-h6 {
-  font-weight: 400;
-}
-
-span.cm-link {
-  cursor: pointer;
-}
-
-span.cm-internallink,
-span.cm-externallink {
-  cursor: pointer;
-  font-weight: 800;
-}
-
-span.cm-internallink {
-  text-decoration: none;
-}
 .gk0wk-chatgpt-container{height:100%;width:100%;display:flex;padding:10px 0;flex-direction:column}.gk0wk-chatgpt-container .conversations{width:100%;flex-grow:1}.gk0wk-chatgpt-container .conversations-scroll{height:0;width:100%;flex-grow:1;overflow-y:auto}.gk0wk-chatgpt-container .chat-box{width:100%;display:flex;border:1.5px solid #888a;border-radius:5px;background:#8881}.gk0wk-chatgpt-container .chat-input{flex-grow:1;padding-left:10px;font-size:16px}.gk0wk-chatgpt-container .chat-button{height:45px;width:45px;font-size:20px}.gk0wk-chatgpt-container .chatgpt-conversation{display:flex;flex-direction:column}.gk0wk-chatgpt-container .chatgpt-conversation-assistant{background-image:linear-gradient(0deg,#8883,#8883)}.gk0wk-chatgpt-container .chatgpt-conversation-error .chatgpt-conversation-assistant{color:red}.gk0wk-chatgpt-container .chatgpt-conversation-user{font-weight:750;padding-top:18px!important}.gk0wk-chatgpt-container .chatgpt-conversation-message{padding:10px 20px;position:relative}.gk0wk-chatgpt-container .chatgpt-conversation-message .conversation-datetime{position:absolute;left:0;top:0;user-select:none;opacity:.5;font-size:12px;font-weight:500px}.gk0wk-chatgpt-container .chatgpt-conversation-message .edit-button{position:absolute;right:0;top:18px}.gk0wk-chatgpt-container .chatgpt-conversation-message .delete-button{position:absolute;right:25px;top:18px}.gk0wk-backlinksbox-title {
   opacity: 0.7;
   user-select: none;
@@ -9489,7 +9379,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/KeyboardShortcut] .tc-tag-label:after {
-  content: " 29";
+  content: " 19";
 }
 
 
@@ -9561,7 +9451,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/ViewTemplate] .tc-tag-label:after {
-  content: " 15";
+  content: " 14";
 }
 
 
@@ -9621,31 +9511,13 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 93";
+  content: " 90";
 }
 
 
 
 [data-tag-title=\$\:\/tags\/SyncerDropdown] .tc-tag-label:after {
   content: " 6";
-}
-
-
-
-[data-tag-title=\$\:\/CodeMirrorEnhanced\/RealtimeHint] .tc-tag-label:after {
-  content: " 2";
-}
-
-
-
-[data-tag-title=\$\:\/CodeMirrorEnhanced\/SnippetsList] .tc-tag-label:after {
-  content: " 1";
-}
-
-
-
-[data-tag-title=\$\:\/CodeMirrorEnhanced\/ClickableToken] .tc-tag-label:after {
-  content: " 1";
 }
 
 
@@ -9777,7 +9649,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/StartupAction\/PostRender] .tc-tag-label:after {
-  content: " 4";
+  content: " 3";
 }
 
 
@@ -9790,12 +9662,6 @@ footer {
 
 [data-tag-title=\$\:\/tags\/RawMarkupWikified\/BottomBody] .tc-tag-label:after {
   content: " 4";
-}
-
-
-
-[data-tag-title=Tiddlywiki5Tip] .tc-tag-label:after {
-  content: " 1";
 }
 
 
@@ -10067,36 +9933,6 @@ ul.bullets li::marker {
 .neotw-checkbox:before {
 	content: "✅"
 }
-.o-surfing-warning .tc-modal,
-.o-surfing-warning .tc-modal-header,
-.o-surfing-warning .tc-modal-body,
-.o-surfing-warning .tc-modal-footer {
-   border-radius: 5px;
-   border: none;
-   background-color: #F5F5F5;
-}.o-surfing-warning .tc-modal-footer {
-    display:none;
-}.o-surfing-warning-msg {
-    color: red;
-    font-weight: bold;
-}
-.neotw-surfing-keys {
-  position: fixed;
-    right: 1em;
-    bottom: 5px;
-    z-index: 2;
-}.o-surfing-keys .tc-modal,
-.o-surfing-keys .tc-modal-header,
-.o-surfing-keys .tc-modal-body,
-.o-surfing-keys .tc-modal-footer {
-   border-radius: 10px;
-   border: none;
-   background-color: #F5F5F5;
-}.o-surfing-keys .tc-modal-footer {
-    display:none;
-}.o-surfing-keys .tc-modal-header {
-    text-transform: capitalize;
-  }
 .back-to-top-progress {
   display: none;
   font-size: 14px;
