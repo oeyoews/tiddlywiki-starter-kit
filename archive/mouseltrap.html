@@ -21,6 +21,18 @@
     console.log('command shift k');
   });
 
+  Mousetrap.bind('g+i', function () {
+    console.log('i');
+  });
+
+  Mousetrap.bind('g+I', function () {
+    console.log('I');
+  });
+
+  Mousetrap.bind('ctrl+I', function () {
+    console.log('ctrl I');
+  });
+
   // map multiple combinations to the same callback
   Mousetrap.bind(['command+k', 'ctrl+k'], function () {
     console.log('command k or control k');

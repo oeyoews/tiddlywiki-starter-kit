@@ -17,6 +17,11 @@ title: $:/plugins/oeyoews/neotw-surfing-keys/readme
 
 </center>
 
+!! Note
+
+> 此插件不再更新
+> 使用 vim-style 风格的motion插件, 当前插件的快捷键均通过 motion 进行扩展
+
 !! Usage
 
 *  当前使用 <kbd>Ctrl-/</kbd> 弹出提示框， 此快捷键与Unility的显示field的快捷间冲突
