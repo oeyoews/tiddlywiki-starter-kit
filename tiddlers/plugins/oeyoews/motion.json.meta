@@ -9,4 +9,4 @@ plugin-type: plugin
 source: https://github.com/oeyoews/neotw/dev/plugins/tiddlywiki-motion
 title: $:/plugins/oeyoews/motion
 type: application/json
-version: 0.3.40
+version: 0.3.41
