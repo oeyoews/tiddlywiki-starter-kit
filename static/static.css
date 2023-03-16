@@ -7450,7 +7450,7 @@ readers do not read off random characters that represent icons */
 
 .tw-flex{display:flex}.tw-justify-around{justify-content:space-around}.tw-border-none{border-style:none}.tw-p-1{padding:.25rem}
 [data-tiddler-title=] {
-  outline: #5778d8 1px solid;
+  outline: #5778d8 2px solid;
 }
 
 .matched{background-color:yellow}
@@ -10481,6 +10481,8 @@ ol.doc-github-contributors li {
   display: none;
 }.o-tm .tc-modal-header {
   text-transform: capitalize;
+}.o-tm .tc-modal-backdrop {
+  cursor: pointer;
 }
 
 .o-publish {
