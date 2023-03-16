@@ -21,8 +21,11 @@ title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/readme
 * [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-tailwindcss]]
 * [[Demo|https://oeyoews.github.io/neotw]]
 
-> https://github.com/benwebber/tiddlywiki-plugins
-
 !! NOTE
 
-* 还未完全支持Tailwindcss的所有高级用法
+* 此插件目前仅作为个人练习测试 Tailwindcss 使用
+<!-- > https://github.com/benwebber/tiddlywiki-plugins -->
+
+!! TODO
+
+* 支持Tailwindcss的高级用法
