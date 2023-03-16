@@ -9,4 +9,4 @@ plugin-type: plugin
 source: https://github.com/benwebber/tiddlywiki-motion
 title: $:/plugins/benwebber/motion
 type: application/json
-version: 0.3.32
+version: 0.3.38
