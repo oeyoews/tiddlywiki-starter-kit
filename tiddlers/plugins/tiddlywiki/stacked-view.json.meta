@@ -1,0 +1,8 @@
+dependents: 
+description: Stacked card storyview
+list: readme
+name: Stacked View
+plugin-type: plugin
+title: $:/plugins/tiddlywiki/stacked-view
+type: application/json
+version: 5.2.5
