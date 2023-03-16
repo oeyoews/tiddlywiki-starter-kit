@@ -60,7 +60,7 @@
       "dist/plugins",
       "--render",
       "[all[tiddlers+shadows]plugin-type[plugin]author[oeyoews]]",
-      "[removeprefix[$:/plugins/oeyoews/]addsuffix[.json]]",
+      "[removeprefix[$:/plugins/oeyoews/]slugify[]addsuffix[.json]]",
       "text/plain",
       "$:/core/templates/json-tiddler"
     ],

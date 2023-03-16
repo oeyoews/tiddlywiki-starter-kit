@@ -105,6 +105,8 @@ Render this widget into the DOM
     }
     // custom
     // const dataFancybox = $tw.wiki.getTiddlerText('$:/temp/focussedTiddler');
+    // const currentTiddler = $tw.wiki.getVariable('currentTiddler');
+    // getVariable("currentTiddler")
     const aNode = this.document.createElement('a');
     aNode.setAttribute('data-fancybox', '');
     // todo
