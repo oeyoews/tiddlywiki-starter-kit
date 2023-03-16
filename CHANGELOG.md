@@ -1,3 +1,15 @@
+## [3.132.1](https://github.com/oeyoews/neotw/compare/v3.132.0...v3.132.1) (2023-03-16)
+
+
+### Code Refactoring
+
+* minify build process ([90f958a](https://github.com/oeyoews/neotw/commit/90f958a6ad19b3d447a02035023a134967929555))
+
+
+### BREAKING CHANGES
+
+* add plugins link
+
 # [3.132.0](https://github.com/oeyoews/neotw/compare/v3.131.0...v3.132.0) (2023-03-16)
 
 
