@@ -6,8 +6,6 @@ import updatecommit from './lib/update-commit.mjs';
 
 $.verbose = false;
 
-const library = 'library';
-const libpath = 'node_modules/tiddlywiki';
 const bin = 'tiddlywiki';
 const dist = 'dist';
 
@@ -17,21 +15,10 @@ await spinner('Building ...', async () => {
   updatecommit();
 
   // clean generated files
-  await $`rm -rf ${dist} ${library}`;
-  await $`rm -rf tiddlers/trashbin`;
-  // clean buildlib files
-  await $`rm -rf ${libpath}/plugins/oeyoews ${libpath}/library-template`;
+  await $`rm -rf ${dist}`;
 
-  /* buildLib */
-  await $`mkdir ${libpath}/plugins/oeyoews`;
-  await $`cp -r dev/plugins/* ${libpath}/plugins/oeyoews`;
-  await $`cp -r src/library-template ${libpath}`;
-
-  const libbuild = libpath + '/library-template/';
-
-  // different dirs
   // library
-  await $`npx ${bin} ${libbuild} --build library`;
+  await $`npx ${bin} --build library`;
 
   // build index
   await $`npx ${bin} --build index`;
@@ -46,8 +33,6 @@ await spinner('Building ...', async () => {
   // await $`npx tiddlywiki  --output dist --rendertiddler "$:/core/templates/static.template.css" "static/static.css"`;
   await $`rm -rf tiddlers/static-patch`;
 
-  // after building
-  await $`mv ${library} ${dist}`;
   // minify index.html
   await $`npx html-minifier-terser -c ./config/html-minifier-terser-config.json -o dist/index.html dist/index.html`;
   // misc

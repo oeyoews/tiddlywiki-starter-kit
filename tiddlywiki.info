@@ -16,13 +16,8 @@
     "tiddlywiki/codemirror-closebrackets",
     "tiddlywiki/codemirror-mode-markdown",
     "tiddlywiki/codemirror-mode-xml",
-    "tiddlywiki/codemirror-mode-javascript"
-  ],
-  "includeWikis": [
-    {
-      "path": "dev",
-      "read-only": true
-    }
+    "tiddlywiki/codemirror-mode-javascript",
+    "tiddlywiki/pluginlibrary"
   ],
   "themes": [
     "tiddlywiki/vanilla"
@@ -93,6 +88,26 @@
       "$:/core/templates/tiddlywiki5.js",
       "[[tiddlywikicore-]addsuffix<version>addsuffix[.js]]",
       "text/plain"
+    ],
+    "library": [
+      "--output",
+      "dist/library",
+      "--makelibrary",
+      "$:/UpgradeLibrary",
+      "--savelibrarytiddlers",
+      "$:/UpgradeLibrary",
+      "[prefix[$:/plugins/oeyoews]]",
+      "recipes/library/tiddlers/",
+      "$:/UpgradeLibrary/List",
+      "--savetiddler",
+      "$:/UpgradeLibrary/List",
+      "recipes/library/tiddlers.json",
+      "--rendertiddler",
+      "$:/plugins/tiddlywiki/pluginlibrary/library.template.html",
+      "index.html",
+      "text/plain",
+      "--deletetiddlers",
+      "[[$:/UpgradeLibrary]] [[$:/UpgradeLibrary/List]]"
     ],
     "debug": [
       "--output",
