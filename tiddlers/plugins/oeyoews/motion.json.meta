@@ -1,0 +1,12 @@
+author: oeyoews
+core-version: >=5.2.5
+dependents: 
+description: Vim-like keyboard shortcuts for TiddlyWiki
+license: MIT
+list: README
+name: motion
+plugin-type: plugin
+source: https://github.com/oeyoews/neotw/dev/plugins/tiddlywiki-motion
+title: $:/plugins/oeyoews/motion
+type: application/json
+version: 0.3.40
