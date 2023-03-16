@@ -1,3 +1,10 @@
+## [3.132.2](https://github.com/oeyoews/neotw/compare/v3.132.1...v3.132.2) (2023-03-16)
+
+
+### Bug Fixes
+
+* add missing env ([4ac50de](https://github.com/oeyoews/neotw/commit/4ac50de2d8e0a048dd893ccfc2a1cff701c1155b))
+
 ## [3.132.1](https://github.com/oeyoews/neotw/compare/v3.132.0...v3.132.1) (2023-03-16)
 
 
