@@ -49,5 +49,6 @@ if [ ! -d "$(dirname "$outputPath")" ]
 fi
 
 npx tailwindcss --input "$inputPath" --output "$outputPath" --minify --content "$content"
+# npx tailwindcss --output "$outputPath" --minify --content "$content"
 
 echo -e "\033[0;32mGenerated $outputPath\033[0m"
