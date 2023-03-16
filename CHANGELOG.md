@@ -1,3 +1,10 @@
+# [3.130.0](https://github.com/oeyoews/neotw/compare/v3.129.0...v3.130.0) (2023-03-16)
+
+
+### Features
+
+* add support togglesidebar for notebook theme with motion ([4a6ca3f](https://github.com/oeyoews/neotw/commit/4a6ca3f63431d3055a6fdf2325a199671c4fba7e))
+
 # [3.129.0](https://github.com/oeyoews/neotw/compare/v3.128.1...v3.129.0) (2023-03-15)
 
 
