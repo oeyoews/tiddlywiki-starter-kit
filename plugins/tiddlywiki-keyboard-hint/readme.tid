@@ -24,4 +24,4 @@ title: $:/plugins/oeyoews/tiddlywiki-keyboard-hint/readme
 !! NOTE
 
 * if your computer installed some vim extensions, such as surfing-keys or vimium, this plugin maybe not work
-sites
+sites, this plugin will be not work normally
