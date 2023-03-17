@@ -10,7 +10,8 @@ tiddlers/config/trashbin/
 tiddlers/trashbin/
 /public/
 Draft*
-tiddlers/subwiki/
+subwiki/
+!tiddlers/subwiki/
 tiddlers/theme.tid
 \$__theme.tid
 output/
