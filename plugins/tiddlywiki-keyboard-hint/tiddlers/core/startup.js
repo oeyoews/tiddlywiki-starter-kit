@@ -22,10 +22,17 @@ show pressed key
   const MAX_KEYS_DEFAULT = 4; // 最大键位数
   const DISAPPEAR_DELAY_DEFAULT = 500; // 消失延迟时间（以毫秒为单位）
 
-  var keyContainer = document.createElement('div');
-  keyContainer.className = KEY_CONTAINER_CLASS;
-  keyContainer.innerHTML = '<div class="keys"></div>';
-  document.body.appendChild(keyContainer);
+  let keyContainer;
+  let keysEl;
+
+  function createKeyContainer() {
+    keyContainer = document.createElement('div');
+    keyContainer.className = KEY_CONTAINER_CLASS;
+    keysEl = document.createElement('div');
+    keysEl.className = 'keys';
+    keyContainer.appendChild(keysEl);
+    document.body.appendChild(keyContainer);
+  }
 
   function addClass(el, className) {
     if (el.classList) {
@@ -53,7 +60,6 @@ show pressed key
     maxKeys = MAX_KEYS_DEFAULT,
     disappearDelay = DISAPPEAR_DELAY_DEFAULT,
   ) {
-    const keysEl = document.querySelector(`.${KEY_CONTAINER_CLASS} .keys`);
     let pressedKeys = [];
     let timer;
     let inInput = false;
@@ -69,6 +75,9 @@ show pressed key
       if (!inInput && pressedKeys.length < maxKeys) {
         pressedKeys.push(key);
         // pressedKeys.unshift(key);
+        if (!keyContainer) {
+          createKeyContainer();
+        }
         updateKeys();
         // console.log('Mousetrap key pressed!');
       }
