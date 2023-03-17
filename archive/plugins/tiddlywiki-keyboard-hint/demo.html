@@ -49,62 +49,49 @@
       <div class="keys"></div>
     </div>
 
-    <script src="moustrap.min.js"></script>
-    <script charset="utf-8">
-      Mousetrap.bind(
-        'esc',
-        function () {
-          console.log('escape');
-        },
-        'keyup',
-      );
-    </script>
     <script>
       const MAX_KEYS = 4; // 最大键位数
       const DISAPPEAR_DELAY = 500; // 消失延迟时间（以毫秒为单位）
 
-      const keyContainer = document.querySelector('.key-container');
-      const keys = document.querySelector('.keys');
+      const keyContainer = document.querySelector(".key-container");
+      const keys = document.querySelector(".keys");
 
       let pressedKeys = [];
       let timer;
 
-      document.addEventListener('keyup', event => {
+      document.addEventListener("keyup", (event) => {
         const key = event.key;
         // 判断是否是 Mousetrap 触发的按键
-
-        const de = event.target.classList.contains('mousetrap');
-        console.log(de);
         if (
-          event.target.tagName === 'BODY' &&
-          event.target.classList.contains('mousetrap')
+          event.target.tagName === "BODY" &&
+          event.target.classList.contains("mousetrap")
         ) {
           if (pressedKeys.length < MAX_KEYS) {
             pressedKeys.push(key);
             updateKeys();
           }
           // 显示提示
-          console.log('Mousetrap key pressed!');
+          console.log("Mousetrap key pressed!");
         }
       });
 
       function updateKeys() {
-        keys.innerHTML = '';
-        pressedKeys.forEach(key => {
-          const keyEl = document.createElement('span');
-          keyEl.classList.add('key');
+        keys.innerHTML = "";
+        pressedKeys.forEach((key) => {
+          const keyEl = document.createElement("span");
+          keyEl.classList.add("key");
           keyEl.textContent = key;
           keys.appendChild(keyEl);
         });
         if (
           pressedKeys.length > 0 &&
-          !keyContainer.classList.contains('visible')
+          !keyContainer.classList.contains("visible")
         ) {
-          keyContainer.classList.add('visible');
+          keyContainer.classList.add("visible");
         }
         clearTimeout(timer);
         timer = setTimeout(() => {
-          keyContainer.classList.remove('visible');
+          keyContainer.classList.remove("visible");
           pressedKeys = [];
         }, DISAPPEAR_DELAY);
       }

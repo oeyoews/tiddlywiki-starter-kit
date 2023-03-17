@@ -1,0 +1,12 @@
+{
+  "title": "$:/plugins/oeyoews/tiddlywiki-keyboard-hint",
+  "description": "Tiddlywiki Keyboard Hint",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.2.5",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "Tiddlywiki Keyboard Hint",
+  "dependents": [],
+  "list": "readme explore"
+}
