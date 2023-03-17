@@ -1,3 +1,10 @@
+## [3.140.2](https://github.com/oeyoews/neotw/compare/v3.140.1...v3.140.2) (2023-03-17)
+
+
+### Bug Fixes
+
+* add missing get action ([fa5f8c3](https://github.com/oeyoews/neotw/commit/fa5f8c3a3ec9f14edac39e86343318c079f828ca))
+
 ## [3.140.1](https://github.com/oeyoews/neotw/compare/v3.140.0...v3.140.1) (2023-03-17)
 
 
