@@ -22,6 +22,9 @@ await spinner('Building ...', async () => {
   // library
   await $`npx ${bin} --build library`;
 
+  /* edition */
+  await $`npx ${bin} editions/neotw --output dist/editions --build index`;
+
   // build index
   await $`npx ${bin} --build index`;
   // build readable name plugins
