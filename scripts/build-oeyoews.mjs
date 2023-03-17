@@ -1,6 +1,5 @@
 #!/usr/bin/env zx
 
-import { spinner } from 'zx/experimental';
 import msg from './lib/info.mjs';
 import updatecommit from './lib/update-commit.mjs';
 
