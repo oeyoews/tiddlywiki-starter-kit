@@ -1,3 +1,10 @@
+## [3.135.2](https://github.com/oeyoews/neotw/compare/v3.135.1...v3.135.2) (2023-03-17)
+
+
+### Bug Fixes
+
+* move nico mobile js to notebook theme ([a3fffbc](https://github.com/oeyoews/neotw/commit/a3fffbc38f068e1a3a65a016377709ec464d941e))
+
 ## [3.135.1](https://github.com/oeyoews/neotw/compare/v3.135.0...v3.135.1) (2023-03-17)
 
 
