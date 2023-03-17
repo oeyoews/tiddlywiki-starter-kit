@@ -1,3 +1,10 @@
+## [3.134.1](https://github.com/oeyoews/neotw/compare/v3.134.0...v3.134.1) (2023-03-17)
+
+
+### Performance Improvements
+
+* use subwiki soft link ([10c2480](https://github.com/oeyoews/neotw/commit/10c2480b98c0bd76c6ddbd51155002fb4d257140))
+
 # [3.134.0](https://github.com/oeyoews/neotw/compare/v3.133.2...v3.134.0) (2023-03-17)
 
 
