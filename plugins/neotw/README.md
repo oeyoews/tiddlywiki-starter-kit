@@ -96,7 +96,7 @@ npm run start  # start tiddlywiki on https://localhost:8099
 Neotw
 ├──📁archive
 ├──📁CITATION.cff
-├──📁dev
+├──📁subwiki
 ├──📁dist
 ├──📁files
 ├──📁img

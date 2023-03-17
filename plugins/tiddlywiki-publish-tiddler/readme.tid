@@ -23,5 +23,5 @@ title: $:/plugins/oeyoews/tiddlywiki-publish-tiddler/readme
 * enable only dev
 * maybe should use stattiddler to use http
 
-* [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-publish-tiddler]]
+* [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/tiddlywiki-publish-tiddler]]
 * [[Demo|https://oeyoews.github.io/neotw]]
