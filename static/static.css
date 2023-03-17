@@ -9520,7 +9520,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 88";
+  content: " 87";
 }
 
 
@@ -11259,7 +11259,8 @@ li.CodeMirror-hint-active {
   font-weight: bold;
 }div.tc-tiddler-frame .tc-tiddler-body {
   font-size: px;
-  line-height: 22px;
+  line-height: 22px
+;
 }/* Tabs */div.tc-tab-buttons {
   margin-bottom: -4px;
 }div.tc-tab-buttons button {
