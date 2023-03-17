@@ -9743,6 +9743,12 @@ footer {
 
 
 
+[data-tag-title=\$\:\/tags\/StartupAction\/PostRender] .tc-tag-label:after {
+  content: " 4";
+}
+
+
+
 [data-tag-title=\$\:\/tags\/StartupAction] .tc-tag-label:after {
   content: " 5";
 }
@@ -9751,12 +9757,6 @@ footer {
 
 [data-tag-title=\$\:\/tags\/RawMarkupWikified\/TopHead] .tc-tag-label:after {
   content: " 1";
-}
-
-
-
-[data-tag-title=\$\:\/tags\/StartupAction\/PostRender] .tc-tag-label:after {
-  content: " 3";
 }
 
 
