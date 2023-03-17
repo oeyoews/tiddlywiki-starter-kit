@@ -1,3 +1,10 @@
+# [3.137.0](https://github.com/oeyoews/neotw/compare/v3.136.0...v3.137.0) (2023-03-17)
+
+
+### Features
+
+* remove segment border on notebook folder base ([aafeb6a](https://github.com/oeyoews/neotw/commit/aafeb6adfe342fa67dc4348eefdeb03848651e4a))
+
 # [3.136.0](https://github.com/oeyoews/neotw/compare/v3.135.2...v3.136.0) (2023-03-17)
 
 
