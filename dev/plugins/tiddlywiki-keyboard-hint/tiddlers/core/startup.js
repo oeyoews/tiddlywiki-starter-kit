@@ -56,11 +56,19 @@ key
     const keysEl = document.querySelector(`.${KEY_CONTAINER_CLASS} .keys`);
     let pressedKeys = [];
     let timer;
+    let inInput = false;
 
+    document.addEventListener('input', () => {
+      inInput = true;
+    });
+    document.addEventListener('focusout', () => {
+      inInput = false;
+    });
     function keyupHandler(event) {
       const key = event.key;
-      if (pressedKeys.length < maxKeys) {
+      if (!inInput && pressedKeys.length < maxKeys) {
         pressedKeys.push(key);
+        // pressedKeys.unshift(key);
         updateKeys();
         // console.log('Mousetrap key pressed!');
       }
@@ -84,7 +92,7 @@ key
       }, disappearDelay);
     }
 
-    document.addEventListener('keyup', keyupHandler);
+    document.addEventListener('keydown', keyupHandler);
 
     return {
       stop: () => document.removeEventListener('keyup', keyupHandler),
