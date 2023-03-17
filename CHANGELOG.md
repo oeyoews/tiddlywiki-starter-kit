@@ -1,3 +1,10 @@
+## [3.140.1](https://github.com/oeyoews/neotw/compare/v3.140.0...v3.140.1) (2023-03-17)
+
+
+### Bug Fixes
+
+* remove extra lines for new-journal format title ([2369cf6](https://github.com/oeyoews/neotw/commit/2369cf6dc46e8ddf2e5da75ec54919c4250fcad7))
+
 # [3.140.0](https://github.com/oeyoews/neotw/compare/v3.139.0...v3.140.0) (2023-03-17)
 
 
