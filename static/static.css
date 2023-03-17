@@ -10420,41 +10420,43 @@ ol.doc-github-contributors li {
 }
 .key-container {
   position: fixed;
-  bottom: 10px;
+  bottom: 4px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(100%);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 8px;
   background-color: #1e1e1e;
   color: white;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 4px;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .key-container.visible {
   opacity: 1;
+  transform: translateX(-50%) translateY(0);
 }
 
 .keys {
   display: flex;
-  gap: 6px;
+  gap: 3px;
 }
 
 /* key */
 .key {
   display: inline-block;
-  padding: 5px 10px;
+  padding: 4px 8px;
   background-color: #2d2d2d;
+  /* background-color: rgba(0, 0, 0, 0.5); */
   color: white;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   line-height: 1;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 .o-tm .tc-modal,
 .o-tm .tc-modal-header,
