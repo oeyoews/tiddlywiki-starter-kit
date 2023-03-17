@@ -59,6 +59,11 @@
       "[all[tiddlers+shadows]plugin-type[plugin]author[oeyoews]]",
       "[removeprefix[$:/plugins/oeyoews/]slugify[]addsuffix[.json]]",
       "text/plain",
+      "$:/core/templates/json-tiddler",
+      "--render",
+      "[[$:/plugins/tiddlywiki/markdown]]",
+      "[removeprefix[$:/plugins/tiddlywiki/]slugify[]addsuffix[.json]]",
+      "text/plain",
       "$:/core/templates/json-tiddler"
     ],
     "themes": [
@@ -108,7 +113,7 @@
       "$:/UpgradeLibrary",
       "--savelibrarytiddlers",
       "$:/UpgradeLibrary",
-      "[prefix[$:/plugins/oeyoews]] [prefix[$:/themes/nico]]",
+      "[prefix[$:/plugins/oeyoews]] [prefix[$:/themes/nico]] [[$:/plugins/tiddlywiki/markdown]]",
       "recipes/library/tiddlers/",
       "$:/UpgradeLibrary/List",
       "--savetiddler",
