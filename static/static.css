@@ -11060,7 +11060,7 @@ li.CodeMirror-hint-active {
   overflow-x: hidden;
   z-index: 500;
 }.nc-sidebar .segment {
-  border-bottom: 1px solid rgba(0,0,0,.1);
+  border-bottom: 0px solid rgba(0,0,0,.1);
 }.nc-sidebar ol {
   margin: 0;
   padding: 0;
