@@ -1,3 +1,10 @@
+## [3.135.1](https://github.com/oeyoews/neotw/compare/v3.135.0...v3.135.1) (2023-03-17)
+
+
+### Performance Improvements
+
+* builtin notebook theme ([df35621](https://github.com/oeyoews/neotw/commit/df3562152f907d73b32af10fcb29100d73c97010))
+
 # [3.135.0](https://github.com/oeyoews/neotw/compare/v3.134.2...v3.135.0) (2023-03-17)
 
 
