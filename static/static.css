@@ -11450,12 +11450,13 @@ hr {
 }/* remove story border */
 .tc-tiddler-frame {
   border: 0;
+}/* remove extra underline with image lin */
+a {
+  color: #007bff;
+  text-decoration: none;
 }
 details > summary {
    text-indent: 0em;
-}a {
-	color: #007bff;
-	text-decoration: none;
 }.tc-tiddler-frame .tc-tiddler-body {
     font-size: 20px;
 }.tc-tiddler-frame .tc-titlebar button {
@@ -11514,12 +11515,6 @@ details > summary {
   /** background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59); */
   border: 2px;
   box-shadow: 0 5px 20px rgb(0 0 0 / 12%);
-}blockquote {
-  border-left: 3px solid #dfdfdf;
-}blockquote>div {
-	margin: 4px 1px;
-}.tc-tiddler-frame {
-  border: 0;
 }.tc-block-tags-dropdown > .tc-btn-invisible:hover {
   background-color: #00000008;
 }.cm-s-tiddlywiki .CodeMirror-activeline-background,
