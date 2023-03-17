@@ -2370,6 +2370,90 @@ body.tc-dirty span.tc-dirty-indicator svg {
 		transform: scale(359deg);
 	}
 }
+.CodeMirror-hints {
+  /* Floating above tiddlers */
+  z-index: 800 !important;
+  background: #ffffff !important;
+  border: 1px solid #dddddd !important;
+  padding: 0 !important;
+}.CodeMirror-hint {
+  width: 400px !important;
+  color: #333333 !important;
+  border-radius: 0 !important;
+  padding: 2px 4px !important;
+}li.CodeMirror-hint-active {
+  background: #5778d8 !important;
+  color: #ffffff !important;
+}li.cm-hacked-hint {
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+}li.cm-hacked-hint>span.hint-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}li.cm-hacked-hint>span.hint-title>span.hint-title-highlighted {
+  background: #881122;
+  color: #ffffff;
+}li.cm-hacked-hint>span.hint-type {
+  padding-left: 10px;
+  font-weight: bold;
+  opacity: 0.5;
+}.CodeMirror-hints-append {
+  min-height: 20em !important;
+  width: 400px !important;
+  resize: both;
+  background: #ffffff;
+  word-wrap: break-word;
+  color: #333333;
+  fill: #333333;
+}span.cm-underlined {
+  text-decoration-line: underline;
+}/* Enhance from and specially thank to https://github.com/adithya-badidey/TW5-codemirror-plus */
+span.cm-superscript {
+  vertical-align: super;
+  font-size: 0.7em;
+  line-height: 0.1em;
+}span.cm-subscript {
+  font-size: 0.7em;
+  line-height: 0.5;
+}pre.cm-quote-line {
+  padding-left: 0.4em !important;
+  border-left: #444 solid 0.2em !important;
+}.cm-code-block-line,
+.latex {
+  background: rgba(0, 0, 0, 0.2);
+}span.cm-h1 {
+  font-weight: 700;
+  font-size: 1.383em;
+  line-height: 1.802em;
+}span.cm-h2 {
+  font-weight: 600;
+  font-size: 1.296em;
+  line-height: 1.602em;
+}span.cm-h3 {
+  font-weight: 500;
+  font-size: 1.215em;
+  line-height: 1.424em;
+}span.cm-h4 {
+  font-weight: 400;
+  font-size: 1.138em;
+  line-height: 1.266em;
+}span.cm-h5 {
+  font-weight: 400;
+  font-size: 1.067em;
+  line-height: 1.125em;
+}span.cm-h6 {
+  font-weight: 400;
+}span.cm-link {
+  cursor: pointer;
+}span.cm-internallink,
+span.cm-externallink {
+  cursor: pointer;
+  font-weight: 800;
+}span.cm-internallink {
+  text-decoration: none;
+}
 .gk0wk-chatgpt-container{height:100%;width:100%;display:flex;padding:10px 0;flex-direction:column}.gk0wk-chatgpt-container .conversations{width:100%;flex-grow:1}.gk0wk-chatgpt-container .conversations-scroll{height:0;width:100%;flex-grow:1;overflow-y:auto}.gk0wk-chatgpt-container .chat-box{width:100%;display:flex;border:1.5px solid #888a;border-radius:5px;background:#8881}.gk0wk-chatgpt-container .chat-input{flex-grow:1;padding-left:10px;font-size:16px}.gk0wk-chatgpt-container .chat-button{height:45px;width:45px;font-size:20px}.gk0wk-chatgpt-container .chatgpt-conversation{display:flex;flex-direction:column}.gk0wk-chatgpt-container .chatgpt-conversation-assistant{background-image:linear-gradient(0deg,#8883,#8883)}.gk0wk-chatgpt-container .chatgpt-conversation-error .chatgpt-conversation-assistant{color:red}.gk0wk-chatgpt-container .chatgpt-conversation-user{font-weight:750;padding-top:18px!important}.gk0wk-chatgpt-container .chatgpt-conversation-message{padding:10px 20px;position:relative}.gk0wk-chatgpt-container .chatgpt-conversation-message .conversation-datetime{position:absolute;left:0;top:0;user-select:none;opacity:.5;font-size:12px;font-weight:500px}.gk0wk-chatgpt-container .chatgpt-conversation-message .edit-button{position:absolute;right:0;top:18px}.gk0wk-chatgpt-container .chatgpt-conversation-message .delete-button{position:absolute;right:25px;top:18px}.gk0wk-backlinksbox-title {
   opacity: 0.7;
   user-select: none;
@@ -9406,7 +9490,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/MoreSideBar] .tc-tag-label:after {
-  content: " 15";
+  content: " 16";
 }
 
 
@@ -9520,7 +9604,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 87";
+  content: " 88";
 }
 
 
@@ -9532,7 +9616,25 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/ControlPanel\/SettingsTab] .tc-tag-label:after {
-  content: " 6";
+  content: " 7";
+}
+
+
+
+[data-tag-title=\$\:\/CodeMirrorEnhanced\/SnippetsList] .tc-tag-label:after {
+  content: " 1";
+}
+
+
+
+[data-tag-title=\$\:\/CodeMirrorEnhanced\/ClickableToken] .tc-tag-label:after {
+  content: " 1";
+}
+
+
+
+[data-tag-title=\$\:\/CodeMirrorEnhanced\/RealtimeHint] .tc-tag-label:after {
+  content: " 2";
 }
 
 
