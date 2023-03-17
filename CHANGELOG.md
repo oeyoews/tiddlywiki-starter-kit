@@ -1,3 +1,10 @@
+## [3.134.2](https://github.com/oeyoews/neotw/compare/v3.134.1...v3.134.2) (2023-03-17)
+
+
+### Bug Fixes
+
+* update plugin address ([277dd52](https://github.com/oeyoews/neotw/commit/277dd525486437b8472ef60288926435fc62106a))
+
 ## [3.134.1](https://github.com/oeyoews/neotw/compare/v3.134.0...v3.134.1) (2023-03-17)
 
 
