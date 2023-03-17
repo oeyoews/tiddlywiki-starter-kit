@@ -143,6 +143,7 @@ Neotw
 ## TODO
 
 - [x] 提供 neotw 空白版本
+- [x] 使用 q 关闭打开的 modal
 
 ## Repobeats
 
