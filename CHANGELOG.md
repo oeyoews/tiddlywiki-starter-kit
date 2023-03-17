@@ -1,3 +1,10 @@
+# [3.140.0](https://github.com/oeyoews/neotw/compare/v3.139.0...v3.140.0) (2023-03-17)
+
+
+### Features
+
+* auto setup vim mode ([4ce29e7](https://github.com/oeyoews/neotw/commit/4ce29e75a529689c5d064e89b4cfc1eeff5feff5))
+
 # [3.139.0](https://github.com/oeyoews/neotw/compare/v3.138.0...v3.139.0) (2023-03-17)
 
 
