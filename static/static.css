@@ -9426,7 +9426,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/EditTemplate] .tc-tag-label:after {
-  content: " 7";
+  content: " 8";
 }
 
 
@@ -11441,8 +11441,8 @@ hr {
   border: none !important;
   border-radius: 3px;
 }/* better focus-visible */
-.tc-tiddler-frame:focus-visible {
-  outline: #7f4bca 2px solid;
+:focus-visible {
+  outline: #7f4bca 2px solid !important;
 }blockquote {
   border-left: 3px solid #dfdfdf;
 }blockquote > div {
