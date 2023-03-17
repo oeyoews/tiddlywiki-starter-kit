@@ -1,3 +1,10 @@
+# [3.139.0](https://github.com/oeyoews/neotw/compare/v3.138.0...v3.139.0) (2023-03-17)
+
+
+### Features
+
+* builtin some style on notebook and modified font size ([a88fd7f](https://github.com/oeyoews/neotw/commit/a88fd7f84df343755d8bc07004264f2e3b4e4035))
+
 # [3.138.0](https://github.com/oeyoews/neotw/compare/v3.137.0...v3.138.0) (2023-03-17)
 
 
