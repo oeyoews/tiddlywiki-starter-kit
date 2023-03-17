@@ -18,54 +18,81 @@ key
   exports.after = ['startup'];
   exports.synchronous = true;
 
-  var progressBar = document.createElement('div');
-  progressBar.className = 'key-container';
-  progressBar.innerHTML = '<div class="keys"></div>';
-  document.body.appendChild(progressBar);
+  const KEY_CONTAINER_CLASS = 'key-container';
+  const MAX_KEYS_DEFAULT = 4; // 最大键位数
+  const DISAPPEAR_DELAY_DEFAULT = 500; // 消失延迟时间（以毫秒为单位）
 
-  const MAX_KEYS = 4; // 最大键位数
-  const DISAPPEAR_DELAY = 500; // 消失延迟时间（以毫秒为单位）
+  var keyContainer = document.createElement('div');
+  keyContainer.className = KEY_CONTAINER_CLASS;
+  keyContainer.innerHTML = '<div class="keys"></div>';
+  document.body.appendChild(keyContainer);
 
-  function updateKey() {
-    const keyContainer = document.querySelector('.key-container');
-    const keys = document.querySelector('.keys');
+  function addClass(el, className) {
+    if (el.classList) {
+      el.classList.add(className);
+    } else {
+      el.className += ' ' + className;
+    }
+  }
 
+  function removeClass(el, className) {
+    if (el.classList) {
+      el.classList.remove(className);
+    } else {
+      el.className = el.className.replace(
+        new RegExp(
+          '(^|\\b)' + className.split(' ').join('|') + '(\\b|$)',
+          'gi',
+        ),
+        ' ',
+      );
+    }
+  }
+
+  function updateKey(
+    maxKeys = MAX_KEYS_DEFAULT,
+    disappearDelay = DISAPPEAR_DELAY_DEFAULT,
+  ) {
+    const keysEl = document.querySelector(`.${KEY_CONTAINER_CLASS} .keys`);
     let pressedKeys = [];
     let timer;
 
-    document.addEventListener('keyup', event => {
+    function keyupHandler(event) {
       const key = event.key;
-      if (pressedKeys.length < MAX_KEYS) {
+      if (pressedKeys.length < maxKeys) {
         pressedKeys.push(key);
         updateKeys();
-        console.log('Mousetrap key pressed!');
+        // console.log('Mousetrap key pressed!');
       }
-    });
+    }
 
     function updateKeys() {
-      keys.innerHTML = '';
+      keysEl.innerHTML = '';
       pressedKeys.forEach(key => {
         const keyEl = document.createElement('span');
         keyEl.classList.add('key');
         keyEl.textContent = key;
-        keys.appendChild(keyEl);
+        keysEl.appendChild(keyEl);
       });
-      if (
-        pressedKeys.length > 0 &&
-        !keyContainer.classList.contains('visible')
-      ) {
-        keyContainer.classList.add('visible');
+      if (pressedKeys.length > 0) {
+        addClass(keyContainer, 'visible');
       }
       clearTimeout(timer);
       timer = setTimeout(() => {
-        keyContainer.classList.remove('visible');
+        removeClass(keyContainer, 'visible');
         pressedKeys = [];
-      }, DISAPPEAR_DELAY);
+      }, disappearDelay);
     }
+
+    document.addEventListener('keyup', keyupHandler);
+
+    return {
+      stop: () => document.removeEventListener('keyup', keyupHandler),
+    };
   }
 
   function keyContainerListener() {
-    window.addEventListener('keyup', updateKey);
+    return updateKey();
   }
 
   exports.startup = keyContainerListener;
