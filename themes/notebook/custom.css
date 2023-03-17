@@ -27,3 +27,16 @@ hr {
 .tc-tiddler-frame:focus-visible {
   outline: #7f4bca 2px solid;
 }
+
+blockquote {
+  border-left: 3px solid #dfdfdf;
+}
+
+blockquote > div {
+  margin: 4px 1px;
+}
+
+/* remove story border */
+.tc-tiddler-frame {
+  border: 0;
+}

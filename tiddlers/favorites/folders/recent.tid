@@ -1,9 +1,9 @@
 caption: Recently added
 created: 20220828022145583
 creator: oeyoews
-list: chat-app focus-visible-patch fix-conflict top-news talk-timer $:/config/FileSystemExtensions $:/config/SaverFilter $:/language/MissingTiddler/Hint $:/core/ui/EditTemplate/fields $:/core/ui/EditTemplate/type neotw-stylesheet GettingStarted $:/themes/nico/notebook/ui/Sidebar/Sections recent-note-record $:/StaticBanner neotw/article/music-index $:/xp/ui/EditorToolbar/box-dropdown $:/config/shortcuts/box $:/xp/box-button/examples neotw/style/box
+list: chat-app fix-conflict top-news talk-timer $:/config/FileSystemExtensions $:/config/SaverFilter $:/language/MissingTiddler/Hint $:/core/ui/EditTemplate/fields $:/core/ui/EditTemplate/type neotw-stylesheet GettingStarted $:/themes/nico/notebook/ui/Sidebar/Sections recent-note-record $:/StaticBanner neotw/article/music-index $:/xp/ui/EditorToolbar/box-dropdown $:/config/shortcuts/box $:/xp/box-button/examples neotw/style/box
 list-before: 
-modified: 20230315054246352
+modified: 20230317134847113
 modifier: oeyoews
 tags: $:/tags/Favorites/Folder
 title: $:/favorites/folders/recent
