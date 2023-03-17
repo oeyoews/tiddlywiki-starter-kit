@@ -17,7 +17,7 @@ mask-closable: yes
 <h4>Custom</h4>
 
 <table class="tw-border-none">
-<$list filter="[enlist[Fullscreen ToggleSidebar GoToInbox RefreshWiki GoToGettingStarted GoToControlPanel GoToSearch ToggleLayout]]">
+<$list filter="[enlist[Fullscreen ToggleSidebar GoToInbox RefreshWiki GoToGettingStarted GoToControlPanel GoToSearch ToggleLayout TogglePalette]]">
 <$macrocall $name="shortcut" shortcut=<<currentTiddler>> />
 </$list>
 </table>
