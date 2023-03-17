@@ -9318,7 +9318,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Palette] .tc-tag-label:after {
-  content: " 23";
+  content: " 22";
 }
 
 
@@ -9834,7 +9834,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/notebook\/Palette] .tc-tag-label:after {
-  content: " 3";
+  content: " 4";
 }
 
 
@@ -11443,6 +11443,13 @@ hr {
 }/* better focus-visible */
 .tc-tiddler-frame:focus-visible {
   outline: #7f4bca 2px solid;
+}blockquote {
+  border-left: 3px solid #dfdfdf;
+}blockquote > div {
+  margin: 4px 1px;
+}/* remove story border */
+.tc-tiddler-frame {
+  border: 0;
 }
 details > summary {
    text-indent: 0em;
