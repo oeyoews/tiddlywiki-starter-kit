@@ -1,0 +1,54 @@
+title: $:/plugins/oeyoews/motion/config/Shortcuts/
+
+FocusSearch/Key: /
+FocusSearch/Caption: Focus search
+GoToSearch/Key: g k
+GoToSearch/Caption: GoToSearch
+GoToControlPanel/Key: g I
+GoToControlPanel/Caption: GoToControlPanel
+GoToGettingStarted/Key: h
+GoToGettingStarted/Caption: GoToGettingStarted
+RefreshWiki/Key: r
+RefreshWiki/Caption: Refresh wiki
+ShowHelp/Key: ?
+ShowHelp/Caption: Show this help message
+GoToInbox/Key: g i
+GoToInbox/Caption: Go to inbox
+ToggleSidebar/Key: s
+ToggleSidebar/Caption: ToggleSidebar
+Fullscreen/Key: f
+Fullscreen/Caption: Fullscreen
+CreateNewTiddler/Key: n
+CreateNewTiddler/Caption: Create a new tiddler
+DeleteTiddler/Key: d
+DeleteTiddler/Caption: Delete selected tiddler
+GoToFirstTiddler/Key: g g
+GoToFirstTiddler/Caption: Go to first tiddler in story river
+GoToLastTiddler/Key: G
+GoToLastTiddler/Caption: Go to last tiddler in story river
+SelectNextTiddler/Key: j
+SelectNextTiddler/Caption: Select next tiddler in story river
+SelectPreviousTiddler/Key: k
+SelectPreviousTiddler/Caption: Select previous tiddler in story river
+EditTiddler/Key: e
+EditTiddler/Caption: Edit selected tiddler
+CloseTiddler/Key: x
+CloseTiddler/Caption: Close selected tiddler
+CloseAllTiddlers/Key: X
+CloseAllTiddlers/Caption: Close all tiddlers
+FoldTiddler/Key: z c
+FoldTiddler/Caption: Fold selected tiddler
+UnfoldTiddler/Key: z o
+UnfoldTiddler/Caption: Unfold selected tiddler
+ToggleTiddler/Key: z a
+ToggleTiddler/Caption: Toggle folding for selected tiddler
+FoldAllTiddlers/Key: z C
+FoldAllTiddlers/Caption: Fold all tiddlers
+UnfoldAllTiddlers/Key: z O
+UnfoldAllTiddlers/Caption: Unfold all tiddlers
+ToggleAllTiddlers/Key: z A
+ToggleAllTiddlers/Caption: Toggle folding for all tiddlers
+Dismiss/Key: q
+Dismiss/Caption: Dismiss selection
+SaveWiki/Key: w
+SaveWiki/Caption: Save wiki

@@ -1,0 +1,38 @@
+{
+  "tiddlers": [
+    {
+      "file": "styles.min.css",
+      "fields": {
+        "title": "$:/plugins/oeyoews/motion/styles/static",
+        "type": "text/css",
+        "tags": "$:/tags/Stylesheet"
+      }
+    }
+  ],
+  "directories": [
+    {
+      "path": "library",
+      "filesRegExp": "^.*\\.min.js$",
+      "fields": {
+        "title": {
+          "source": "filename",
+          "prefix": "$:/plugins/oeyoews/motion/modules/library/"
+        },
+        "type": "application/javascript",
+        "module-type": "library"
+      }
+    },
+    {
+      "path": "startup",
+      "filesRegExp": "^.*\\.min.js$",
+      "fields": {
+        "title": {
+          "source": "filename",
+          "prefix": "$:/plugins/oeyoews/motion/modules/startup/"
+        },
+        "type": "application/javascript",
+        "module-type": "startup"
+      }
+    }
+  ]
+}
