@@ -1,3 +1,10 @@
+# [3.136.0](https://github.com/oeyoews/neotw/compare/v3.135.2...v3.136.0) (2023-03-17)
+
+
+### Features
+
+* add notebook to library ([d7ac225](https://github.com/oeyoews/neotw/commit/d7ac22544586102c9dad056aa987226ffa1d7242))
+
 ## [3.135.2](https://github.com/oeyoews/neotw/compare/v3.135.1...v3.135.2) (2023-03-17)
 
 
