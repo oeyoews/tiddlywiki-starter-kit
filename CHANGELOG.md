@@ -1,3 +1,10 @@
+## [3.133.2](https://github.com/oeyoews/neotw/compare/v3.133.1...v3.133.2) (2023-03-17)
+
+
+### Performance Improvements
+
+* remove plugins soft link to compatiable windows platform ([0797ae9](https://github.com/oeyoews/neotw/commit/0797ae97c74c18a0a97ce95721f7405eaffafeb1))
+
 ## [3.133.1](https://github.com/oeyoews/neotw/compare/v3.133.0...v3.133.1) (2023-03-17)
 
 
