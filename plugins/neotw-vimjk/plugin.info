@@ -3,7 +3,7 @@
   "name": "CodeMirror Keymap VimJK",
   "description": "VimJK",
   "author": "oeyoews",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "core-version": "5.2.3",
   "source": "",
   "list": "readme",

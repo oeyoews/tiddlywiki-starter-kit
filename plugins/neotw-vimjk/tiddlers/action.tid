@@ -1,0 +1,6 @@
+title: $:/plugins/tiddlywiki/codemirror/keymap/action
+tags: $:/tags/StartupAction/PostRender
+
+<$list filter="[[$:/config/codemirror/keyMap]trim[]!match[vim]]">
+<$action-setfield $tiddler="$:/config/codemirror/keyMap" text="vim"/>
+</$list>
