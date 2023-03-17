@@ -1,9 +1,9 @@
 /*\
-title: key.js
+title: $:/plugins/oeyoews/tiddlywiki-keyboard-hint/startup.js
 type: application/javascript
 module-type: startup
 
-key
+show pressed key
 \*/
 (function () {
   /*jslint node: true, browser: true */
