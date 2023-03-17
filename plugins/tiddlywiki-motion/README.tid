@@ -8,6 +8,10 @@ Vim-like keyboard shortcuts for TiddlyWiki. modified `based benwebber/motion`
 
 Press <kbd>{{$:/plugins/oeyoews/motion/config/Shortcuts/ShowHelp/Key}}</kbd> to show keyboard shortcuts.
 
+!! NOTE
+
+* if your computer installed some vim extensions, such as surfing-keys or vimium, this plugin maybe not work
+
 !! TODO
 
 ```

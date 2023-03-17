@@ -20,3 +20,8 @@ title: $:/plugins/oeyoews/tiddlywiki-keyboard-hint/readme
 
 * [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/tiddlywiki-keyboard-hint]]
 * [[Demo|https://oeyoews.github.io/neotw]]
+
+!! NOTE
+
+* if your computer installed some vim extensions, such as surfing-keys or vimium, this plugin maybe not work
+sites

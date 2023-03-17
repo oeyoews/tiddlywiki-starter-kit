@@ -1,8 +1,8 @@
 created: 20230221113847356
 creator: oeyoews
-modified: 20230317111141215
+modified: 20230317120714827
 modifier: oeyoews
 title: $:/layout
 type: text/vnd.tiddlywiki
 
-$:/plugins/oeyoews/neotw/modules/landing/layout
+$:/core/ui/PageTemplate
