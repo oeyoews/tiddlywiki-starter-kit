@@ -9511,13 +9511,13 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Macro] .tc-tag-label:after {
-  content: " 58";
+  content: " 59";
 }
 
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 87";
+  content: " 88";
 }
 
 
@@ -10314,6 +10314,44 @@ ol.doc-github-contributors li {
   .githubCorner .octoArm {
     animation: octocat-wave 560ms ease-in-out;
   }
+}
+.key-container {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #1e1e1e;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.key-container.visible {
+  opacity: 1;
+}
+
+.keys {
+  display: flex;
+  gap: 6px;
+}
+
+/* key */
+.key {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #2d2d2d;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  border-radius: 5px;
 }
 .o-tm .tc-modal,
 .o-tm .tc-modal-header,
