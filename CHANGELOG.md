@@ -1,3 +1,10 @@
+## [3.133.1](https://github.com/oeyoews/neotw/compare/v3.133.0...v3.133.1) (2023-03-17)
+
+
+### Bug Fixes
+
+* use keydown instead of keyup ([645435e](https://github.com/oeyoews/neotw/commit/645435e011d77feb694551eb392be0b98d56ada0))
+
 # [3.133.0](https://github.com/oeyoews/neotw/compare/v3.132.2...v3.133.0) (2023-03-17)
 
 
