@@ -40,3 +40,9 @@ blockquote > div {
 .tc-tiddler-frame {
   border: 0;
 }
+
+/* remove extra underline with image lin */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
