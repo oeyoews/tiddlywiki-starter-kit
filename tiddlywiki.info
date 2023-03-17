@@ -61,6 +61,16 @@
       "text/plain",
       "$:/core/templates/json-tiddler"
     ],
+    "themes": [
+      "--verbose",
+      "--output",
+      "dist/themes",
+      "--render",
+      "[all[tiddlers+shadows]plugin-type[theme]author[NicolasPetton]]",
+      "[removeprefix[$:/themes/nico]slugify[]addsuffix[.json]]",
+      "text/plain",
+      "$:/core/templates/json-tiddler"
+    ],
     "listen": [
       "--listen",
       "port=8099",

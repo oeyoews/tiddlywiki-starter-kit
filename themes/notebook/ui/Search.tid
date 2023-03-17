@@ -1,0 +1,60 @@
+title: $:/themes/nico/notebook/ui/Search
+type: text/vnd.tiddlywiki
+
+\define advanced-search-actions()
+<$action-setfield $tiddler="$:/temp/advancedsearch/input" text={{$:/temp/notebook-search}}/>
+<$action-setfield $tiddler="$:/temp/advancedsearch/refresh" text="yes"/>
+<$action-navigate $to="$:/AdvancedSearch"/>
+\end
+
+\define input-accept-actions()
+<$list filter="[<__tiddler__>get[text]!is[missing]] ~[<__tiddler__>get[text]is[shadow]]">
+  <$action-navigate $to={{{ [<__tiddler__>get[text]] }}}/>
+  <$action-deletetiddler $filter="[[$:/temp/search]] [<searchTiddler>] [<searchListState>]"/>
+</$list>
+\end
+
+\define cancel-search-actions()
+<$list filter="[<searchTiddler>get[text]!match{$:/temp/search}]" emptyMessage="""<$action-deletetiddler $filter="[[$:/temp/search]] [<searchTiddler>] [<searchListState>]"/>""">
+  <$action-setfield $tiddler="$:/temp/search" text={{{ [<searchTiddler>get[text]] }}}/>
+  <$action-setfield $tiddler="$:/temp/search/refresh" text="yes"/></$list>
+\end
+
+<$vars editTiddler="$:/temp/search"
+       searchTiddler="$:/temp/search/input"
+       searchListState=<<qualify "$:/state/search-list/selected-item">>>
+  <$macrocall $name="keyboard-driven-input"
+	      tiddler=<<editTiddler>>
+	      storeTitle=<<searchTiddler>>
+	      selectionStateTitle=<<searchListState>>
+	      refreshTitle="$:/temp/search/refresh"
+	      type="search"
+	      tag="input"
+	      focus={{$:/config/Search/AutoFocus}}
+	      focusPopup="$:/state/popup/notebook-search"
+	      class="tc-popup-handle"
+	      filterMinLength={{$:/config/Search/MinLength}}
+	      placeholder="Search..."
+	      inputAcceptActions=<<input-accept-actions>>
+	      inputCancelActions=<<cancel-search-actions>>
+	      cancelPopups="yes"
+	      configTiddlerFilter="[[$:/state/search/currentTab]!is[missing]get[text]] ~[{$:/config/SearchResults/Default}]"
+	      />
+  <$button
+    tooltip={{$:/language/Buttons/AdvancedSearch/Hint}}
+    aria-label={{$:/language/Buttons/AdvancedSearch/Caption}}
+    class="tc-btn-invisible tc-page-controls"
+    >
+    {{$:/core/images/advanced-search-button}}
+    <<advanced-search-actions>>
+  </$button>
+  <$reveal tag="div" class="tc-block-dropdown-wrapper" state="$:/state/popup/notebook-search" type="nomatch" text="" default="">
+    <$list filter="[<searchTiddler>get[text]minlength{$:/config/Search/MinLength}limit[1]]" emptyMessage="" variable="listItem">
+      <div class="tc-block-dropdown tc-search-drop-down">
+        <$tiddler tiddler=<<configTiddler>>>
+          {{$:/themes/nico/notebook/ui/Sidebar/SearchResults}}
+        </$tiddler>
+      </div>
+    </$list>
+  </$reveal>
+</$vars>

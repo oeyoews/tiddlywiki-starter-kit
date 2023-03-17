@@ -28,6 +28,8 @@ await spinner('Building ...', async () => {
   await $`npx ${bin} --build index`;
   // build readable name plugins
   await $`npx ${bin} --build plugins`;
+  /** notebook theme */
+  await $`npx ${bin} --build themes`;
   // build empty
   // await $`npx ${bin} --build neotw-empty`;
   // build static

@@ -1,0 +1,11 @@
+key: ((toggle-sidebar))
+tags: $:/tags/KeyboardShortcut
+title: $:/themes/nico/notebook/shortcuts/toggle-sidebar
+type: text/vnd.tiddlywiki
+
+<$list
+  filter="[[$:/state/notebook-sidebar]is[missing]] [{$:/state/notebook-sidebar}removeprefix[yes]]"
+  emptyMessage="""<$action-setfield $tiddler="$:/state/notebook-sidebar" text="yes"/>"""
+>
+  <$action-setfield $tiddler="$:/state/notebook-sidebar" text="no"/>
+</$list>

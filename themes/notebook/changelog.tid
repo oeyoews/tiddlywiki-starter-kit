@@ -1,0 +1,111 @@
+caption: ChangeLog
+title: $:/themes/nico/notebook/changelog
+
+! 1.4.1
+
+!! Fixes
+
+* Fix the transclusion mode of sidebar sections
+* Fix section title rendering for tiddlers without a caption field
+* Fix the colour of links in the sidebar when using Notebook palettes with Vanilla
+
+! 1.4.0
+
+!! Features
+
+* New redesigned topbar layout
+* Add a configuration setting for the story width
+* Add support for keyboard navigation in the search dropdown
+
+! 1.3.6
+
+!! Improvements
+
+* Improve the style of tabs
+* New animation for drop-downs
+* Use a lighter page background colour in the beige palette
+
+!! Fixes
+
+* Fix the default ctrl+shift+F shortcut for focusing the search input
+
+! 1.3.5
+
+!! Features
+
+* Add an option to reveal tiddler controls on mouseover
+
+! 1.3.4
+
+!! Improvements
+
+* Add a keyboard shortcut (alt+shift+s) to toggle Notebook sidebar
+* Add missing colours to tiddler editor fields in the dark palette
+
+!! Fixes
+
+* Fix the size of toolbar button labels when the $:/config/Toolbar/Text is set to yes
+
+! 1.3.3
+
+!! Improvements
+
+* Make the sidebar more generic by using the default sidebar sections
+
+! 1.3.2
+
+!! Improvements
+
+* Add colours for messages in the dark palette
+* Add colours for notification in the dark palette
+* Set colours for messages in the beige palette
+
+! 1.3.1
+
+!! Features
+
+* New font family settings distinct from the Vanilla theme
+
+!! Improvements
+
+* Use a slightly lighter colour as the search input background
+* Improve contrast of sidebar buttons in the dark palette
+
+!! Fixes
+
+* Fix tiddler control button colours in all three palettes
+* Fix tab colours in palette-dark
+
+! 1.3.0
+
+!! Improvements
+
+* New dark colour palette
+* Use a darker color for tiddler subtitles
+* Add back the WebKit search cancel button in search inputs
+
+!! Fixes
+
+* Fix the z-index of the topbar for the zoomin story view
+* Fix the font weight of tiddler titles in edit mode
+
+! 1.2.0
+
+!! Improvements
+
+* Better support for dark colour palettes
+
+!! Fixes
+
+* Fix rendering of overflowing/wrapping text in the sidebar
+
+! 1.1.0
+
+!! Features
+
+* New theme tweaks tab dedicated to Notebook in the control panel
+* Inputs in the edit template are now styled consistently with other inputs
+
+!! Fixes
+
+* Fixes the position of sticky tiddler titles when the option is turned on

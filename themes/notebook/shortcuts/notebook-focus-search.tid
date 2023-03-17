@@ -1,0 +1,6 @@
+key: ((notebook-focus-search))
+tags: $:/tags/KeyboardShortcut
+title: $:/themes/nico/notebook/shortcuts/notebook-focus-search
+type: text/vnd.tiddlywiki
+
+<$action-sendmessage $message="tm-focus-selector" $param=".nc-topbar input"/>

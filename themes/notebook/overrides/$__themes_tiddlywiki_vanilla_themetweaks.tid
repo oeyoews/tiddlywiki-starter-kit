@@ -1,0 +1,5 @@
+caption: {{$:/language/ThemeTweaks/ThemeTweaks}}
+title: $:/themes/tiddlywiki/vanilla/themetweaks
+type: text/vnd.tiddlywiki
+
+Overwritten by $:/themes/nico/notebook so that the Vanilla theme tweaks do not appear in the control panel.
