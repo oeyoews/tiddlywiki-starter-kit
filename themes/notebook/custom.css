@@ -24,8 +24,8 @@ hr {
 }
 
 /* better focus-visible */
-.tc-tiddler-frame:focus-visible {
-  outline: #7f4bca 2px solid;
+:focus-visible {
+  outline: #7f4bca 2px solid !important;
 }
 
 blockquote {
