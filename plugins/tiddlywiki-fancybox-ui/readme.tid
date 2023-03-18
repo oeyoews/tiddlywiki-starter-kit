@@ -21,6 +21,12 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox-ui/readme
 * [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/tiddlywiki-fancybox-ui]]
 * [[Demo|https://oeyoews.github.io/neotw]]
 
+!! Usage
+
+```
+<$fbox src='' id="1" />
+```
+
 !! Version
 
 * 5.x
