@@ -38,9 +38,9 @@ SelectPreviousTiddler/Key: k
 SelectPreviousTiddler/Caption: Select previous tiddler in story river
 EditTiddler/Key: e
 EditTiddler/Caption: Edit selected tiddler
-CloseTiddler/Key: x
+CloseTiddler/Key: c c
 CloseTiddler/Caption: Close selected tiddler
-CloseAllTiddlers/Key: X
+CloseAllTiddlers/Key: g c c
 CloseAllTiddlers/Caption: Close all tiddlers
 FoldTiddler/Key: z c
 FoldTiddler/Caption: Fold selected tiddler
