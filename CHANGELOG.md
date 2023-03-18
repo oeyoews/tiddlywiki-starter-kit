@@ -1,3 +1,10 @@
+## [3.142.1](https://github.com/oeyoews/neotw/compare/v3.142.0...v3.142.1) (2023-03-18)
+
+
+### Bug Fixes
+
+* add important for nauthor conflict for fancybox-ui ([7df0cdf](https://github.com/oeyoews/neotw/commit/7df0cdfbdeb6146e0a957aeee3f30d159cd257e2))
+
 # [3.142.0](https://github.com/oeyoews/neotw/compare/v3.141.0...v3.142.0) (2023-03-18)
 
 
