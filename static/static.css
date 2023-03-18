@@ -9210,6 +9210,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="reveal-js-style"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="search-fast-with-gpt"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="soft-link-for-path"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="some tw website examples"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9915,7 +9917,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "183";
+  content: "184";
 }
 .user-panel-avatar { position: relative; max-width: 22px; max-height: 22px; }.user-panel-avatar-56 { position: relative; max-width: 56px; max-height: 56px; }.user-panel-avatar-56 img { width: 100%; height: auto; max-width: 56px; max-height: 56px; border-radius: 50%; aspect-ratio: 1 / 1; }.user-panel-avatar img { width: 100%; height: auto; max-width: 22px; max-height: 22px; border-radius: 50%; aspect-ratio: 1 / 1; }
 ul.bullets li::marker {
@@ -11364,13 +11366,15 @@ li.CodeMirror-hint-active {
 }button.tc-tag-label, span.tc-tag-label {
   padding: 0.3em 1em !important;
 }/* Fonts */html, body {
-  font-family: "Maple hand", -apple-system,"Helvetica Neue",Helvetica,Arial,"PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft Yahei",sans-serif,  "Segoe UI",Helvetica,Arial,sans-serif, "Twemoji Mozilla", "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: system-ui,"Maple hand", -apple-system,"Helvetica Neue",Helvetica,Arial,"PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft Yahei",sans-serif, "Segoe UI",Helvetica,Arial,sans-serif, "Twemoji Mozilla", "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
+;
 }.tc-tiddler-frame input.tc-edit-texteditor,
 .tc-tiddler-frame textarea.tc-edit-texteditor,
 .tc-tiddler-frame iframe.tc-edit-texteditor {
   font-family: ;
 }pre, code {
-  font-family: "Maple hand", "Liberation Mono",Menlo,Courier,monospace;
+  font-family: system-ui,"Maple hand","Fira Mono","Liberation Mono",Menlo,Courier,monospace
+;
 }.tc-titlebar, .tc-site-title {
   font-size: 28px !important;
   line-height: 34px !important;
