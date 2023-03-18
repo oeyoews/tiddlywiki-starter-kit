@@ -11536,6 +11536,11 @@ a {
   zoom: 1;
   filter: alpha(opacity=100);
   opacity: 1;
+}/* enhance font size */
+.tc-tiddler-frame .tc-tiddler-body {
+  font-size: 20px;
+}.CodeMirror-wrap pre.CodeMirror-line {
+  font-size: 20px;
 }
 details > summary {
    text-indent: 0em;
