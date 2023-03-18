@@ -1,3 +1,10 @@
+## [3.142.2](https://github.com/oeyoews/neotw/compare/v3.142.1...v3.142.2) (2023-03-18)
+
+
+### Bug Fixes
+
+* this mobile for notebook can't in theme plugin ([88fd7b7](https://github.com/oeyoews/neotw/commit/88fd7b7ceb34e920a49f1404014890df4b01c548))
+
 ## [3.142.1](https://github.com/oeyoews/neotw/compare/v3.142.0...v3.142.1) (2023-03-18)
 
 
