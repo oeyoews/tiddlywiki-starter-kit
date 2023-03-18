@@ -1,0 +1,12 @@
+{
+  "title": "$:/plugins/oeyoews/tiddlywiki-type",
+  "description": "Tiddlywiki Type",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.2.5",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "Tiddlywiki Type",
+  "dependents": [],
+  "list": "readme explore"
+}

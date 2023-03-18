@@ -1,0 +1,12 @@
+{
+  "tiddlers": [
+    {
+      "file": "type.min.js",
+      "fields": {
+        "type": "application/javascript",
+        "title": "type.min.js",
+        "module-type": "library"
+      }
+    }
+  ]
+}
