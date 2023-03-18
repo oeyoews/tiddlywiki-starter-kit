@@ -11255,7 +11255,7 @@ li.CodeMirror-hint-active {
   /* position: fixed; */
   /* top: 6px; */
   /* left: 6px; */
-  /* z-index: 600; */
+  z-index: 600;
   /* padding: 4px; */
   /* border-radius: 8px; */
   margin-right: 10px;
