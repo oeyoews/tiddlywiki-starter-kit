@@ -137,3 +137,7 @@ button {
   border-radius: 3px;
   background: #00000008;
 }
+
+.tc-modal-backdrop {
+  cursor: pointer;
+}
