@@ -8851,6 +8851,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="GettingStarted"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="GFM"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="gh-pages-cache"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="github-discussion-org"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -8861,7 +8863,11 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="heart"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="hi-oeyoews"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="Index"] .tc-titlebar h2 { text-transform: capitalize; }
+
+  [data-tiddler-title="install-svg"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="js-books"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -9175,6 +9181,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="preview-all-plugins-tw"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="preview-readme-on-local"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="process-tiddlywiki-img-to-img.shield"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="puzzle"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9200,6 +9208,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   [data-tiddler-title="soft-link-for-path"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="some tw website examples"] .tc-titlebar h2 { text-transform: capitalize; }
+
+  [data-tiddler-title="svg-intro"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="table-todo"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -9900,7 +9910,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "178";
+  content: "183";
 }
 .user-panel-avatar { position: relative; max-width: 22px; max-height: 22px; }.user-panel-avatar-56 { position: relative; max-width: 56px; max-height: 56px; }.user-panel-avatar-56 img { width: 100%; height: auto; max-width: 56px; max-height: 56px; border-radius: 50%; aspect-ratio: 1 / 1; }.user-panel-avatar img { width: 100%; height: auto; max-width: 22px; max-height: 22px; border-radius: 50%; aspect-ratio: 1 / 1; }
 ul.bullets li::marker {
