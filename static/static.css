@@ -11144,13 +11144,13 @@ li.CodeMirror-hint-active {
   .nc-topbar {
     display: none;
   }.tc-story-river {
-    padding: 0 !important;
+    padding: 12px;
     margin-top: 0 !important;
     margin-bottom: 60px !important;
   }div.tc-tiddler-frame {
-    margin: 0;
+    border-radius: 3px;
+    margin: 15px 0px 15px 0px;
     box-shadow: none;
-    border-radius: 0;
     border-top: 0;
   }
 }@media (min-width: 960px) {
