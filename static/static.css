@@ -10514,7 +10514,7 @@ ol.doc-github-contributors li {
     height: auto;
     max-width: 14px;
     max-height: 22px;
-    border-radius: 75%;
+    border-radius: 75% !important;
     aspect-ratio: 1 / 1;
     vertical-align: middle;
 }
