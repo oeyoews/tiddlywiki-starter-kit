@@ -30,3 +30,7 @@ var md = $tw.Wiki.parsers["text/markdown"].prototype.md;
 md.use(plugin1)
   .use(plugin2, opts, ...);
 ```
+
+!! TODO
+
+* markdown class
