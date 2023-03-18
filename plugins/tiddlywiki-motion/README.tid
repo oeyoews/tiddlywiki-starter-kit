@@ -14,6 +14,8 @@ Press <kbd>{{$:/plugins/oeyoews/motion/config/Shortcuts/ShowHelp/Key}}</kbd> to 
 
 !! TODO
 
+* 支持像素滚动
+
 ```
  // map multiple combinations to the same callback
     Mousetrap.bind(['command+k', 'ctrl+k'], function() {
