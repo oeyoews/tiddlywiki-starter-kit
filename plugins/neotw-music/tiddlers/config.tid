@@ -10,7 +10,7 @@ fixed: true
 volumn: 0.7
 storyage_name: meting-js
 enablelrc: no
-bottom: 0
+bottom: 52
 list_folded: true
 <!-- lrc_type: 3 -->
 <!-- mini: false -->
