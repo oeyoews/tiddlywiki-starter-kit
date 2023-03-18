@@ -1,0 +1,22 @@
+title: $:/plugins/oeyoews/neotw/ui/download-neotw-empty
+
+<style>
+.download-neotw-empty {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+</style>
+
+<$list filter="[{$:/info/url/protocol}match[https:]]">
+<!-- <center> -->
+<a href="./editions/index.html" class="download-neotw-empty">Download Neotw Empty</a>
+<!-- </center> -->
+</$list>
