@@ -36,7 +36,7 @@ export default async function newPlugin() {
   let { newPluginStatus, pluginname, description } = await prompts(questions);
 
   if (newPluginStatus) {
-    await $`rm -rf dev/plugins/pluginname*`;
+    await $`rm -rf plugins/pluginname*`;
     // ???
     pluginname = pluginname.trim().replace(/\s+/g, '-');
     const upperpluginname = base.titleCase(
@@ -44,7 +44,17 @@ export default async function newPlugin() {
     );
     description =
       base.titleCase(description.trim().replace(/-/g, ' ')) || upperpluginname;
-    const target = 'dev/plugins/' + pluginname;
+    const target = 'plugins/' + pluginname;
+
+    // TODO
+    if (fs.existsSync(target)) {
+      console.log(
+        chalk.red.bold(
+          `Plugin directory '${target}' already exists. Aborting.`,
+        ),
+      );
+      return;
+    }
 
     await $`mkdir ${target} && cp -r ${template}/* ${target}`;
 
