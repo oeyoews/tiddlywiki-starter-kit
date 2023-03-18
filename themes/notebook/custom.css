@@ -134,4 +134,6 @@ a {
 /* remove btn border */
 button {
   border: none;
+  border-radius: 3px;
+  background: #00000008;
 }
