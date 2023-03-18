@@ -13,7 +13,7 @@ tags: $:/tags/Macro
     <$fieldmangler tiddler=<<tid>>>
     <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
       <$button set=<<.state>> setTo="show" class="o-btn-back" tooltip="Edit mode">
-        {{neotw/icon/book}}
+        {{$:/plugins/oeyoews/neotw/icon/book}}
         <$action-sendmessage $message="tm-remove-tag" $param=<<tag>>/>
       </$button>
     </$list>
@@ -24,7 +24,7 @@ tags: $:/tags/Macro
     <$fieldmangler tiddler=<<tid>>>
     <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
       <$button set=<<.state>> setTo="hide" tooltip="Readonly mode" class="o-btn-back">
-        {{neotw/icon/pen}}
+        {{$:/plugins/oeyoews/neotw/icon/pen}}
         <$action-sendmessage $message="tm-add-tag" $param=<<tag>>/>
       </$button>
     </$list>
