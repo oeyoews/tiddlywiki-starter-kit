@@ -11535,6 +11535,8 @@ button {
   border: none;
   border-radius: 3px;
   background: #00000008;
+}.tc-modal-backdrop {
+  cursor: pointer;
 }
 details > summary {
    text-indent: 0em;
