@@ -11,6 +11,7 @@ Closes the notebook sidebar on mobile when navigating
   'use strict';
 
   // not work ???
+  // maybe canuse js to replace this
   const isOnMobile = () => {
     let bottombar = document.querySelector('.nc-bottombar');
     return bottombar && bottombar.getClientRects().length > 0;
