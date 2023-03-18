@@ -9870,18 +9870,6 @@ footer {
 
 
 
-[data-tag-title=\$\:\/tags\/highlight\.js\/languages] .tc-tag-label:after {
-  content: " 1";
-}
-
-
-
-[data-tag-title=ExcludeFromEmpty] .tc-tag-label:after {
-  content: " 1";
-}
-
-
-
 [data-tag-title=\$\:\/tags\/Table\/BodyTemplate] .tc-tag-label:after {
   content: " 1";
 }
