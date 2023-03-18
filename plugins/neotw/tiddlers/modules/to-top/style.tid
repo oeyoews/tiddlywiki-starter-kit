@@ -29,7 +29,13 @@ tags: $:/tags/Stylesheet
 }
 
 #stx-story-top button {
-  border: none;
+  width: 40px;
+  height: 40px;
+   <!-- background-color: red; -->
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: none;
    opacity: 0.7;
    min-width: 1.5em;
 }
@@ -48,24 +54,24 @@ tags: $:/tags/Stylesheet
    opacity: 1;
 }
 
-#stx-story-top .tc-btn-rounded,
-#stx-story-top .tc-btn-boxed {
-   min-width: 2.5em;
-}
-
-#stx-story-top .tc-btn-rounded {
-   font-size: 0.5em;
-   height: 2.5em;
-}
-
-#stx-story-top .tc-btn-boxed {
-   font-size: 0.6em;
-   padding-left: 0.5em;
-   padding-right: 0.5em;
-}
-
-#stx-story-top .tc-btn-rounded:focus,
-#stx-story-top .tc-btn-rounded:active {
-   padding-left: 0.75em;
-   padding-right: 1em;
-}
+<!-- #stx-story-top .tc-btn-rounded, -->
+<!-- #stx-story-top .tc-btn-boxed { -->
+<!--    min-width: 2.5em; -->
+<!-- } -->
+<!---->
+<!-- #stx-story-top .tc-btn-rounded { -->
+<!--    font-size: 0.5em; -->
+<!--    height: 2.5em; -->
+<!-- } -->
+<!---->
+<!-- #stx-story-top .tc-btn-boxed { -->
+<!--    font-size: 0.6em; -->
+<!--    padding-left: 0.5em; -->
+<!--    padding-right: 0.5em; -->
+<!-- } -->
+<!---->
+<!-- #stx-story-top .tc-btn-rounded:focus, -->
+<!-- #stx-story-top .tc-btn-rounded:active { -->
+<!--    padding-left: 0.75em; -->
+<!--    padding-right: 1em; -->
+<!-- } -->

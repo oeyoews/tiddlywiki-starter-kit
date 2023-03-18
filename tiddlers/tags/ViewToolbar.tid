@@ -1,7 +1,7 @@
 created: 20220826140222762
 creator: oeyoews
-list: $:/plugins/kookma/trashbin/ui/toolbar-button $:/core/ui/Buttons/more-tiddler-actions $:/plugins/sq/ImportToExternalFile/Buttons/externalize $:/core/ui/Buttons/info $:/plugins/kookma/favorites/ui/buttons/add-remove $:/core/ui/Buttons/new-here $:/core/ui/Buttons/new-journal-here $:/core/ui/Buttons/clone $:/core/ui/Buttons/export-tiddler $:/core/ui/Buttons/delete $:/core/ui/Buttons/permalink $:/core/ui/Buttons/permaview $:/core/ui/Buttons/close-others $:/core/ui/Buttons/fold-others $:/core/ui/Buttons/fold $:/core/ui/Buttons/fold-bar $:/core/ui/Buttons/edit $:/plugins/nico/projectify/ui/buttons/ToggleTodo $:/core/ui/Buttons/open-window $:/plugins/oeyoews/neotw/ui/copy-code $:/plugins/oeyoews/neotw/ui/copy-title $:/plugins/oeyoews/tiddlywiki-static-link/ui/static-link $:/plugins/oeyoews/tiddlywiki-static-page/ui/new-page $:/core/ui/Buttons/close
-modified: 20230115075711817
+list: $:/core/ui/Buttons/more-tiddler-actions $:/plugins/sq/ImportToExternalFile/Buttons/externalize $:/core/ui/Buttons/info $:/plugins/kookma/favorites/ui/buttons/add-remove $:/core/ui/Buttons/new-here $:/core/ui/Buttons/new-journal-here $:/core/ui/Buttons/clone $:/core/ui/Buttons/export-tiddler $:/core/ui/Buttons/delete $:/core/ui/Buttons/permalink $:/core/ui/Buttons/permaview $:/core/ui/Buttons/close-others $:/core/ui/Buttons/fold-others $:/core/ui/Buttons/fold $:/core/ui/Buttons/fold-bar $:/core/ui/Buttons/open-window $:/core/ui/Buttons/edit $:/plugins/oeyoews/neotw/ui/copy-code $:/plugins/oeyoews/neotw/ui/copy-title $:/plugins/oeyoews/tiddlywiki-static-page/ui/new-page $:/plugins/FSpark/TiddlerScreenshot/captureButton $:/core/ui/Buttons/close
+modified: 20230318041950069
 modifier: oeyoews
 title: $:/tags/ViewToolbar
 type: text/vnd.tiddlywiki
