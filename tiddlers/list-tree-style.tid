@@ -1,0 +1,48 @@
+created: 20230318025228811
+creator: oeyoews
+modified: 20230318025711694
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: list-tree-style
+type: text/vnd.tiddlywiki
+
+<!-- listtree -->
+<pre>
+.list-tree, .list-tree ul, .list-tree li { position: relative; }
+
+.list-tree li { list-style: none; }
+.list-tree li::marker {
+	content: ""
+}
+
+.list-tree ul { padding: 0 0 0 2em; }
+
+.list-tree li::before, .list-tree li::after {
+    content: "";
+    position: absolute;
+    left: -1em;
+}
+
+.list-tree li::before {
+    border-bottom: {{!!list-tree-thickness}} solid {{!!list-tree-color}};
+    top: .6em;
+    width: 7px;
+}
+
+.list-tree ul li::after {
+    border-left: {{!!list-tree-thickness}} solid {{!!list-tree-color}};
+    height: 100%;
+    top: .1em;
+}
+
+.list-tree ul > li:last-child::after { height: .5em; }
+
+.list-tree > li:last-of-type:before { display:none; }
+
+.list-tree > li:first-of-type:before { border-top: {{!!list-tree-thickness}} solid {{!!list-tree-color}}; }
+
+.list-tree > li:before {
+    border-left: {{!!list-tree-thickness}} solid {{!!list-tree-color}};
+    height: 100%;
+}
+</pre>
