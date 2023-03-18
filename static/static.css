@@ -10064,6 +10064,7 @@ ul.bullets li::marker {
 .neotw-checkbox:before {
 	content: "✅"
 }
+/* progress number */
 .back-to-top-progress {
   display: none;
   font-size: 14px;
@@ -10073,9 +10074,10 @@ ul.bullets li::marker {
 }
 
 .back-to-top-progress.is-visible {
-  display: inline;
+  display: flex;
 }
 
+/* button */
 #oeyoews-story-top {
   position: fixed;
   bottom: 0.1rem;
@@ -10090,16 +10092,23 @@ ul.bullets li::marker {
   border: none;
 }
 
+/* todo */
 .back-to-top-btn {
   background-color: #00000008;
   border-radius: 50%;
-  padding: 0 0 5px;
-  margin: 0 0 4px;
+  padding: 0;
+  margin: 0;
   display: none;
   box-shadow: 0 5px 20px #0000001f;
 }
 
 .back-to-top-btn.is-visible {
+  /* background-color: red; */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 40px;
+  height: 40px;
   display: inline; /* inline */
 }
 
