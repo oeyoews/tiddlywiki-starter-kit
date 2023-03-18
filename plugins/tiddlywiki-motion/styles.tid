@@ -6,3 +6,8 @@ tags: $:/tags/Stylesheet
   outline: <<colour primary>> 2px solid;
 }
 </$list>
+
+<!-- smooth scroll -->
+<!-- html { -->
+<!--   scroll-behavior: smooth; -->
+<!-- } -->
