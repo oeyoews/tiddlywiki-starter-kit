@@ -15,14 +15,16 @@ mask-closable: yes
 <div class="tw-flex tw-justify-around">
 <div>
 <h4>Custom</h4>
+<hr>
 
 <table class="tw-border-none">
-<$list filter="[enlist[Fullscreen ToggleSidebar GoToInbox RefreshWiki GoToGettingStarted GoToControlPanel GoToSearch ToggleLayout TogglePalette]]">
+<$list filter="[enlist[Fullscreen ToggleSidebar GoToInbox RefreshWiki GoToGettingStarted GoToControlPanel GoToSearch ToggleLayout TogglePalette GoToPlugins]]">
 <$macrocall $name="shortcut" shortcut=<<currentTiddler>> />
 </$list>
 </table>
 
 <h4>General</h4>
+<hr>
 
 <table class="tw-border-none">
 <$list filter="[enlist[FocusSearch ShowHelp Dismiss]]">
@@ -31,6 +33,7 @@ mask-closable: yes
 </table>
 
 <h4>Story River</h4>
+<hr>
 
 <table class="tw-border-none">
 <$list filter="[enlist[CreateNewTiddler SelectNextTiddler SelectPreviousTiddler GoToFirstTiddler GoToLastTiddler EditTiddler DeleteTiddler CloseTiddler CloseAllTiddlers]]">
@@ -41,6 +44,7 @@ mask-closable: yes
 
 <div>
 <h4>Folding</h4>
+<hr>
 
 <table class="tw-border-none">
 <$list filter="[enlist[FoldTiddler UnfoldTiddler ToggleTiddler FoldAllTiddlers UnfoldAllTiddlers ToggleAllTiddlers]]">

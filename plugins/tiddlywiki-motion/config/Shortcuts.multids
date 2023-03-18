@@ -12,6 +12,8 @@ RefreshWiki/Key: r
 RefreshWiki/Caption: Refresh wiki
 ShowHelp/Key: ?
 ShowHelp/Caption: Show this help message
+GoToPlugins/Key: g p
+GoToPlugins/Caption: Go to Plugins
 GoToInbox/Key: g i
 GoToInbox/Caption: Go to inbox
 TogglePalette/Key: g t
