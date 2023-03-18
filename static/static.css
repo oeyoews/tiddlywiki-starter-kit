@@ -11541,6 +11541,11 @@ a {
   font-size: 20px;
 }.CodeMirror-wrap pre.CodeMirror-line {
   font-size: 20px;
+}/* remove btn border */
+button {
+  border: none;
+  border-radius: 3px;
+  background: #00000008;
 }
 details > summary {
    text-indent: 0em;
@@ -11625,12 +11630,6 @@ details > summary {
   color: #3f3b3b;
   fill: #3f3b3b;
   border: 1px solid rgba(0, 0, 0, 0.2);
-}button {
-  border: 0;
-  border-radius: 3px;
-  background: #00000008;
-}.nc-sidebar .segment {
-  border-bottom: 0px;
 }.nc-sidebar .section.open .label {
   color: #ffffff;
   fill: #ffffff;
