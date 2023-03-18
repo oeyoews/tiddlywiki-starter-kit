@@ -4,8 +4,7 @@ title: $:/plugins/oeyoews/neotw/ui/download-neotw-empty
 .download-neotw-empty {
   display: inline-block;
   padding: 10px 20px;
-  <!-- background-color: #28a745; -->
-  background: linear-gradient(to right, #12c2e9, #ffafbd, #c9ffbf);
+  background-color: #28a745;
   color: #fff;
   font-size: 16px;
   font-weight: bold;
@@ -17,6 +16,7 @@ title: $:/plugins/oeyoews/neotw/ui/download-neotw-empty
 }
 
 .download-neotw-empty:hover {
+  background: linear-gradient(to right, #12c2e9, #ffafbd, #c9ffbf);
   transform: scale(1.1);
   transition: transform .3s ease;
 }
