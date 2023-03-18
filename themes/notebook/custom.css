@@ -130,3 +130,8 @@ a {
 .CodeMirror-wrap pre.CodeMirror-line {
   font-size: 20px;
 }
+
+/* remove btn border */
+button {
+  border: none;
+}
