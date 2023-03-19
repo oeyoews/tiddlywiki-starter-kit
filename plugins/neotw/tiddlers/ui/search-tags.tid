@@ -1,11 +1,6 @@
-caption: Tags
-created: 20220830124434849
-creator: oeyoews
-modified: 20220911161548256
-modifier: oeyoews
-tags: awesome
-title: neotw/searchtag
-type: text/vnd.tiddlywiki
+title: $:/plugins/oeyoews/neotw/ui/search-tags
+tags: $:/tags/AdvancedSearch
+caption: Search Tags
 
 \define lingo-base() $:/language/Search/
 \define storeTitle() $:/temp/search/systemtags/moresidebar
@@ -25,8 +20,8 @@ type: text/vnd.tiddlywiki
 </$reveal>
 </span>
 </$wikify>
-<$vars userInput={{{ [<storeTitle>get[text]] }}} 
-    searchFilter="[all[shadows+tiddlers]tags[]is[system]sort[]search:title<userInput>]" 
+<$vars userInput={{{ [<storeTitle>get[text]] }}}
+    searchFilter="[all[shadows+tiddlers]tags[]is[system]sort[]search:title<userInput>]"
     resultCount="<$count filter=<<searchFilter>>/>">
 <$reveal state=<<storeTitle>> type="nomatch" text="">
 <span class="tc-search-results"><<lingo System/Matches>></span>
