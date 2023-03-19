@@ -1,3 +1,10 @@
+## [3.142.4](https://github.com/oeyoews/neotw/compare/v3.142.3...v3.142.4) (2023-03-19)
+
+
+### Performance Improvements
+
+* remove reveal-js ([f59d303](https://github.com/oeyoews/neotw/commit/f59d303a33226244a29725d5eed88c637898cf2d))
+
 ## [3.142.3](https://github.com/oeyoews/neotw/compare/v3.142.2...v3.142.3) (2023-03-18)
 
 ## [3.142.2](https://github.com/oeyoews/neotw/compare/v3.142.1...v3.142.2) (2023-03-18)
