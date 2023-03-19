@@ -1,5 +1,5 @@
-const dotenv = require('dotenv');
-dotenv.config();
+// import .env
+require('dotenv').config();
 
 module.exports = {
   apps: [

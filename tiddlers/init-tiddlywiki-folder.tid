@@ -1,0 +1,10 @@
+created: 20230319040244043
+creator: oeyoews
+modified: 20230319040317489
+modifier: oeyoews
+tags: 
+title: init-tiddlywiki-folder
+type: text/vnd.tiddlywiki
+
+```
+tiddlywiki <wikifolder> --init <editionName>
