@@ -142,7 +142,7 @@ tags: $:/tags/PageTemplate
 <div id="stx-story-top">
   <!-- <<backToTopBtn>> -->
   <<giscus-app>>
-  <<reveal-js>>
+  <!-- <<reveal-js>> -->
   <<random-article>>
   <<github-cat>>
   <<switch-lang>>
