@@ -8826,6 +8826,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="chatgpt-999"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="chatgpt-bash"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="chatgpt-website-oeyoews"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="codeberg"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -8837,6 +8839,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   [data-tiddler-title="custom-tag-template"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="deepl-tw-bug"] .tc-titlebar h2 { text-transform: capitalize; }
+
+  [data-tiddler-title="delete-timestamp"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="dream-plan-websites"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -9172,6 +9176,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="oeyoews_contributions.png"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="oeyoews.jpg"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="openai-api-about-project"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="otp-meaning"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9357,7 +9363,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/AboveStory] .tc-tag-label:after {
-  content: " 2";
+  content: " 3";
 }
 
 
@@ -9913,9 +9919,45 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "190";
+  content: "193";
 }
-.user-panel-avatar { position: relative; max-width: 22px; max-height: 22px; }.user-panel-avatar-56 { position: relative; max-width: 56px; max-height: 56px; }.user-panel-avatar-56 img { width: 100%; height: auto; max-width: 56px; max-height: 56px; border-radius: 50%; aspect-ratio: 1 / 1; }.user-panel-avatar img { width: 100%; height: auto; max-width: 22px; max-height: 22px; border-radius: 50%; aspect-ratio: 1 / 1; }
+.user-panel-avatar {
+  position: relative;
+  max-width: 22px;
+  max-height: 22px;
+}
+.user-panel-avatar img {
+  width: 100%;
+  height: auto;
+  max-width: 22px;
+  max-height: 22px;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+}.user-panel-avatar-56 {
+  position: relative;
+  max-width: 56px;
+  max-height: 56px;
+}
+.user-panel-avatar-56 img {
+  width: 100%;
+  height: auto;
+  max-width: 56px;
+  max-height: 56px;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+}.user-panel-avatar-124 {
+  position: relative;
+  max-width: 124px;
+  max-height: 124px;
+}
+.user-panel-avatar-124 img {
+  width: 100%;
+  height: auto;
+  max-width: 124px;
+  max-height: 124px;
+  border-radius: 50% !important;
+  aspect-ratio: 1 / 1;
+}
 ul.bullets li::marker {
 		color: #7d7dfc;
 }ul.bullets>li::marker {
