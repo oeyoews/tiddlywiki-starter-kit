@@ -5,3 +5,7 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox/readme
 ```
 <$fbox src="xxx" />
 ```
+
+!! NOTE
+
+* 首次安装需要重启tw, 刷新浏览器无效（nodejs)
