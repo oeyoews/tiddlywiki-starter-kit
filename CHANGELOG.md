@@ -1,3 +1,10 @@
+## [3.144.1](https://github.com/oeyoews/neotw/compare/v3.144.0...v3.144.1) (2023-03-19)
+
+
+### Performance Improvements
+
+* move archive/plugins to plugins folder ([3015a02](https://github.com/oeyoews/neotw/commit/3015a02ee6579a922175b32bff5fa22b71a84a4e))
+
 # [3.144.0](https://github.com/oeyoews/neotw/compare/v3.143.0...v3.144.0) (2023-03-19)
 
 
