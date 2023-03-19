@@ -1,10 +1,13 @@
+const dotenv = require('dotenv');
+dotenv.config();
+
 module.exports = {
   apps: [
     {
       name: 'neotw',
       script: './node_modules/tiddlywiki/tiddlywiki.js',
       args: '--build listen',
-      watch: ['./plugins/', './themes'],
+      watch: ['./plugins/oeyoews', './themes'],
       ignore_watch: ['./tiddlers'],
       cwd: './',
       watch_delay: 100,

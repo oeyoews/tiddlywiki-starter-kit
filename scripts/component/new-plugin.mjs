@@ -44,7 +44,7 @@ export default async function newPlugin() {
     );
     description =
       base.titleCase(description.trim().replace(/-/g, ' ')) || upperpluginname;
-    const target = 'plugins/' + pluginname;
+    const target = 'plugins/oeyoews/' + pluginname;
 
     // TODO
     if (fs.existsSync(target)) {
