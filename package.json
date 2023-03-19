@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "dateformat": "^5.0.3",
+    "dotenv": "^16.0.3",
     "gradient-string": "^2.0.2",
     "kolorist": "^1.6.0",
     "nodemon": "^2.0.20",

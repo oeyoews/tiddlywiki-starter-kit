@@ -2,11 +2,14 @@
 
 import msg from './lib/info.mjs';
 import updatecommit from './lib/update-commit.mjs';
+import * as dotenv from 'dotenv';
+
+dotenv.config();
 
 $.verbose = false;
 
-process.env.TIDDLYWIKI_PLUGIN_PATH = './';
-process.env.TIDDLYWIKI_THEME_PATH = './';
+// process.env.TIDDLYWIKI_PLUGIN_PATH = './';
+// process.env.TIDDLYWIKI_THEME_PATH = './';
 
 const bin = 'tiddlywiki';
 const dist = 'dist';
