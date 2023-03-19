@@ -1,5 +1,5 @@
 /*\
-title: fstartup.js
+title: $:/plugins/oeyoews/tiddlywiki-fancybox-ui/startup.js
 type: application/javascript
 module-type: startup
 
