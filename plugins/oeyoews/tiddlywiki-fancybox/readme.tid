@@ -1,42 +1,7 @@
 title: $:/plugins/oeyoews/tiddlywiki-fancybox/readme
 
-<a style="text-decoration:none;" href="https://github.com/fancyapps/fancybox" target="_blank">
-  <img src="https://img.shields.io/badge/Powered by-Fancybox-green?style=flat" />
-</a>
-<$image source={{{ [[][https://img.shields.io/badge/Version-]] [<currentTiddler>get[version]] [[-red?style=flat&logo=dev.to&logoColor=red]] +[join[]]}}} />
-<$image source={{{ [[][https://img.shields.io/badge/Files-]] [<currentTiddler>plugintiddlers[]count[]] [[-red?style=social]] +[join[]]}}} />
+!! Usage
 
-!! Readme
-
-* [[Source|https://github.com/oeyoews/neotw/tree/main/dev/plugins/tiddlywiki-fancybox]]
-
-* [[Tiddlyhost site|https://fancybox-oeyoews.tiddlyhost.com]]
-
-!! Features
-
-* use fancybox 3.5.7
-<!-- * 点击图片自动放大(全部支持， 0 配置) -->
-* support download images, fullscreen, custom style and shortcuts,
-* support local images online images, mix that is also supported
-
-!! Advance Usage
-
-<$button>
-  Usage
-  <$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/tiddlywiki-fancybox/example"/>
-</$button>
-
-!! Note
-
-* 重写部分image widget
-* 不建议使用过大的图片， 会造成卡顿
-* 可以在widget/image.js 添加 这样一行代码，` domNode.setAttribute("data-fancybox",'');` 从而让tw支持fancybox, 但是不建议， 会有引发很多问题
-* need refresh on installed this fancybox plugin
-* if you use splashscreen, please remove `remove-when-wiki-loaded` class,
-otherwise this plugin will not work normally [[warn|https://github.com/Jermolene/TiddlyWiki5/search?q=tc-remove-when-wiki-loaded]]
-
-!! Fancybox Version
-
-* 4.x
-
-> Fancybox is licensed under the GPLv3 license for all open source applications. A commercial license is required for all commercial applications (including sites, themes and apps you plan to sell).
+```
+<$fbox src="xxx" />
+```
