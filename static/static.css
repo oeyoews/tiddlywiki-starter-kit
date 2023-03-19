@@ -8884,6 +8884,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="js-books"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="list-all-empty-folders"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="list-tree-style"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="markdown-test"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9907,7 +9909,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "186";
+  content: "187";
 }
 .user-panel-avatar { position: relative; max-width: 22px; max-height: 22px; }.user-panel-avatar-56 { position: relative; max-width: 56px; max-height: 56px; }.user-panel-avatar-56 img { width: 100%; height: auto; max-width: 56px; max-height: 56px; border-radius: 50%; aspect-ratio: 1 / 1; }.user-panel-avatar img { width: 100%; height: auto; max-width: 22px; max-height: 22px; border-radius: 50%; aspect-ratio: 1 / 1; }
 ul.bullets li::marker {
