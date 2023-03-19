@@ -1,9 +1,7 @@
 title: $:/plugins/oeyoews/tiddlywiki-fancybox/init
-tags: $:/tags/RawMarkupWikified/BottomBody
 type: application/javascript
+tags: $:/tags/RawMarkupWikified/BottomBody
 
 `<script>`
-{{$:/plugins/oeyoews/tiddlywiki-fancybox/fancybox.min.js}}
-{{$:/plugins/oeyoews/tiddlywiki-fancybox/jq}}
 {{$:/plugins/oeyoews/tiddlywiki-fancybox/action/init}}
 `</script>`
