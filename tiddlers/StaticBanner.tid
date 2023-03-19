@@ -1,6 +1,6 @@
 created: 20230319122845263
 creator: oeyoews
-modified: 20230319130438514
+modified: 20230319162836566
 modifier: oeyoews
 tags: $:/tags/AboveStory
 title: $:/StaticBanner
@@ -12,13 +12,16 @@ type: text/vnd.tiddlywiki
 [img [oeyoews.jpg]]
 </div>
 <h1> oeyoews </h1>
+	<$list filter="[{$:/info/url/protocol}match[http:]]">
+	<$github-calendar />
+	</$list>
 </center>
 <$list filter="[{$:/info/url/protocol}match[https:]]">
-<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
-<hr>
+	<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
+	<hr>
+	</$list>
 </$list>
-</$list>
-<$list filter="[{$:/info/url/protocol}match[http:]]">
-<hr>
-</$list>
+	<$list filter="[{$:/info/url/protocol}match[http:]]">
+		<hr>
+	</$list>
 </$list>
