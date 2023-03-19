@@ -1,3 +1,10 @@
+# [3.143.0](https://github.com/oeyoews/neotw/compare/v3.142.4...v3.143.0) (2023-03-19)
+
+
+### Features
+
+* builtin more search options ([f43c693](https://github.com/oeyoews/neotw/commit/f43c693a055ce431da2692829ae0970ba5b8c1cc))
+
 ## [3.142.4](https://github.com/oeyoews/neotw/compare/v3.142.3...v3.142.4) (2023-03-19)
 
 
