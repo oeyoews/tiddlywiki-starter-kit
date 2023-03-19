@@ -9120,8 +9120,6 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="neotw/search-fields"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/search-images"] .tc-titlebar h2 { text-transform: capitalize; }
-
   [data-tiddler-title="neotw/setup"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="neotw/sidebar/color-picker"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9238,6 +9236,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="tiddlywiki-heatmap"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="tiddlywiki-variables"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="toggle-tags"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="tom.png"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9253,6 +9253,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   [data-tiddler-title="use-flameshot-to-upload-image"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="use-latest-tiddlywiki"] .tc-titlebar h2 { text-transform: capitalize; }
+
+  [data-tiddler-title="use-process-env"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="use-root-tiddler"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -9905,11 +9907,11 @@ footer {
 
 
 [data-tag-title=awesome] .tc-tag-label:after {
-  content: " 2";
+  content: " 1";
 }
 
 .tc-untagged-label:after {
-  content: "187";
+  content: "189";
 }
 .user-panel-avatar { position: relative; max-width: 22px; max-height: 22px; }.user-panel-avatar-56 { position: relative; max-width: 56px; max-height: 56px; }.user-panel-avatar-56 img { width: 100%; height: auto; max-width: 56px; max-height: 56px; border-radius: 50%; aspect-ratio: 1 / 1; }.user-panel-avatar img { width: 100%; height: auto; max-width: 22px; max-height: 22px; border-radius: 50%; aspect-ratio: 1 / 1; }
 ul.bullets li::marker {
