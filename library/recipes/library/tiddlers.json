@@ -247,7 +247,7 @@
         "plugin-type": "plugin",
         "name": "Tiddlywiki Fancybox",
         "dependents": "$:/plugins/oeyoews/tiddlywiki-modal-ui",
-        "list": "readme config example explore",
+        "list": "readme",
         "readme": "!! Usage\n\n```\n<$fbox src=\"xxx\" />\n```\n",
         "requires-reload": "yes"
     },
