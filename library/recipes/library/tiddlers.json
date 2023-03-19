@@ -248,7 +248,7 @@
         "name": "Tiddlywiki Fancybox",
         "dependents": "$:/plugins/oeyoews/tiddlywiki-modal-ui",
         "list": "readme",
-        "readme": "!! Usage\n\n```\n<$fbox src=\"xxx\" />\n```\n",
+        "readme": "!! Usage\n\n```\n<$fbox src=\"xxx\" />\n```\n\n!! NOTE\n\n* 首次安装需要重启tw, 刷新浏览器无效（nodejs)\n",
         "requires-reload": "yes"
     },
     {
