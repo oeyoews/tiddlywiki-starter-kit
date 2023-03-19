@@ -45,12 +45,13 @@ module.exports = {
       Hash: false,
     };
     try {
-      globalThis.Fancybox = require('$:/plugins/oeyoews/tiddlywiki-fancybox/library/fancybox.min.js');
-      Fancybox.Fancybox.defaults = {
+      globalThis.Fancybox =
+        require('$:/plugins/oeyoews/tiddlywiki-fancybox/library/fancybox.min.js').Fancybox;
+      Fancybox.defaults = {
         ...Fancybox.defaults,
         ...options,
       };
-      Fancybox.Fancybox.bind('[data-fancybox]', {
+      Fancybox.bind('[data-fancybox]', {
         wheel: 'close', // pan slide soom false
         startIndex: '0', // not work
         hideScrollbar: true,

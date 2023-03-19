@@ -1,0 +1,24 @@
+created: 20230317121544255
+modified: 20230317123236831
+tags: 
+title: Modern Font Stacks
+type: text/vnd.tiddlywiki
+
+\define fontstacks() FontStacks
+<$select tiddler='$:/themes/tiddlywiki/vanilla/settings/fontfamily' field='text' default='Choose a font family'>
+<option disabled>Choose a font family</option>
+<$list filter='[<fontstacks>indexes[]]'>
+<option value={{{ [<fontstacks>getindex<currentTiddler>] }}}>
+<$view field='title'/>
+</option>
+</$list>
+</$select>
+
+''font-family'': <$text text={{$:/themes/tiddlywiki/vanilla/settings/fontfamily}} />
+
+<$button actions="""<$action-deletetiddler $tiddler="$:/themes/tiddlywiki/vanilla/settings/fontfamily"/>""">
+Factory reset
+</$button>
+
+
+Ref: https://modernfontstacks.com/#font-stacks

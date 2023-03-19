@@ -4,7 +4,7 @@ FocusSearch/Key: /
 FocusSearch/Caption: Focus search
 GoToSearch/Key: g k
 GoToSearch/Caption: GoToSearch
-GoToControlPanel/Key: g I
+GoToControlPanel/Key: g i
 GoToControlPanel/Caption: GoToControlPanel
 GoToGettingStarted/Key: h
 GoToGettingStarted/Caption: GoToGettingStarted
@@ -14,7 +14,7 @@ ShowHelp/Key: ?
 ShowHelp/Caption: Show this help message
 GoToPlugins/Key: g p
 GoToPlugins/Caption: Go to Plugins
-GoToInbox/Key: g i
+GoToInbox/Key: g I
 GoToInbox/Caption: Go to inbox
 TogglePalette/Key: g t
 TogglePalette/Caption: togglePalette
