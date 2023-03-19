@@ -43,7 +43,8 @@
     "oeyoews/tiddlywiki-widgets"
   ],
   "themes": [
-    "tiddlywiki/vanilla"
+    "tiddlywiki/vanilla",
+    "nico/notebook"
   ],
   "build": {
     "neotw-empty": [

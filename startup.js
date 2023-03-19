@@ -1,6 +1,9 @@
 // load environment variables
 require('dotenv').config();
 
+/* process.env.TIDDLYWIKI_PLUGIN_PATH = `./plugins`;
+process.env.TIDDLYWIKI_THEME_PATH = `./themes`; */
+
 // load tiddlywiki
 var $tw = require('./node_modules/tiddlywiki/boot/boot.js').TiddlyWiki();
 
