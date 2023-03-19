@@ -20,7 +20,7 @@ module.exports = {
       },
       Thumbs: {
         autoStart: true,
-        key: 'f',
+        key: 'o',
       },
       keyboard: {
         Delete: 'close',
