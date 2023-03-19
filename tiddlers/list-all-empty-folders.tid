@@ -1,0 +1,9 @@
+created: 20230319020047637
+creator: oeyoews
+modified: 20230319020108399
+modifier: oeyoews
+tags: 
+title: list-all-empty-folders
+type: text/vnd.tiddlywiki
+
+* find . -type d -empty
