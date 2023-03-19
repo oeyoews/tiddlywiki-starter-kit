@@ -9120,8 +9120,6 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="neotw/search-images"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/searchtag"] .tc-titlebar h2 { text-transform: capitalize; }
-
   [data-tiddler-title="neotw/setup"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="neotw/sidebar/color-picker"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9365,7 +9363,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/AdvancedSearch] .tc-tag-label:after {
-  content: " 6";
+  content: " 9";
 }
 
 
@@ -9905,7 +9903,7 @@ footer {
 
 
 [data-tag-title=awesome] .tc-tag-label:after {
-  content: " 3";
+  content: " 2";
 }
 
 .tc-untagged-label:after {
