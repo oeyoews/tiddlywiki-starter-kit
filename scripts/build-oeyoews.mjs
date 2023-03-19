@@ -37,7 +37,7 @@ await spinner('Building ...', async () => {
   // build empty
   // await $`npx ${bin} --build neotw-empty`;
   // build static
-  await $`cp -r static-patch tiddlers`;
+  await $`cp -r static-patch tiddlers/static-patch`;
   await $`npx ${bin} --build static`;
   // await $`npx tiddlywiki --output dist --render '[!is[system]]' '[addprefix[static/]addsuffix[.html]]'`;
   // await $`npx tiddlywiki  --output dist --rendertiddler "$:/core/templates/static.template.css" "static/static.css"`;
