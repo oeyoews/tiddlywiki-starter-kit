@@ -24,7 +24,7 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox-ui/readme
 !! Usage
 
 ```
-<$fbox src='' id="1" />
+<$fbox src='xxx' />
 ```
 
 !! Alter
