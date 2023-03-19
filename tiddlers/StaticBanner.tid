@@ -1,10 +1,24 @@
-created: 20220904033903576
-creator: vanilla
-modified: 20230220122922100
+created: 20230319122845263
+creator: oeyoews
+modified: 20230319130438514
 modifier: oeyoews
+tags: $:/tags/AboveStory
 title: $:/StaticBanner
 type: text/vnd.tiddlywiki
 
-<!-- 
-<div class="tc-static-alert"><div class="tc-static-alert-inner" style="align:center" >This page is part of a static HTML representation of the Neotw at https://neotw.netlify.app </div></div>
--->
+<$list filter="[[$:/StoryList]get[list]count[]match[0]]">
+<center>
+<div class="user-panel-avatar-124">
+[img [oeyoews.jpg]]
+</div>
+<h1> oeyoews </h1>
+</center>
+<$list filter="[{$:/info/url/protocol}match[https:]]">
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
+<hr>
+</$list>
+</$list>
+<$list filter="[{$:/info/url/protocol}match[http:]]">
+<hr>
+</$list>
+</$list>

@@ -8,7 +8,7 @@ GoToControlPanel/Key: g I
 GoToControlPanel/Caption: GoToControlPanel
 GoToGettingStarted/Key: h
 GoToGettingStarted/Caption: GoToGettingStarted
-RefreshWiki/Key: r
+RefreshWiki/Key: r r
 RefreshWiki/Caption: Refresh wiki
 ShowHelp/Key: ?
 ShowHelp/Caption: Show this help message
@@ -20,7 +20,7 @@ TogglePalette/Key: g t
 TogglePalette/Caption: togglePalette
 ToggleLayout/Key: g l
 ToggleLayout/Caption: ToggleLayout
-ToggleSidebar/Key: s
+ToggleSidebar/Key: s s
 ToggleSidebar/Caption: ToggleSidebar
 Fullscreen/Key: f
 Fullscreen/Caption: Fullscreen
