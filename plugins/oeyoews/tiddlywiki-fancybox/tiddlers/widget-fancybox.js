@@ -59,7 +59,7 @@ fancybox widget
       imgNode.src = src;
       imgNode.alt = alt;
       imgNode.width = width;
-      aNode.setAttribute('data-fancybox', id || 'gallary');
+      aNode.setAttribute('data-fancybox', this.getVariable('currentTiddler'));
       aNode.setAttribute('data-caption', alt);
       aNode.appendChild(imgNode);
       parent.insertBefore(aNode, nextSibling);

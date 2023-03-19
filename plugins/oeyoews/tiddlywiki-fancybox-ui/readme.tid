@@ -27,15 +27,5 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox-ui/readme
 <$fbox src='' id="1" />
 ```
 
-!! Version
-
-* 5.x
-
-> xxx
-
 !! Alter
 > spotlight lightbox macy
-
-!! TODO
-
-* group not work

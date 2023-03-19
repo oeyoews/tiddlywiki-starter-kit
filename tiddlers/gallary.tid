@@ -2,7 +2,7 @@ caption: Gallary
 created: 20230116071902869
 creator: oeyoews
 icon: $:/plugins/oeyoews/tiddlywiki-shield/icon
-modified: 20230316112303057
+modified: 20230319154030896
 modifier: oeyoews
 neotw: index
 tags: 
@@ -10,13 +10,8 @@ title: gallary
 type: text/vnd.tiddlywiki
 
 <center>
-<<fbox
-"""
-https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/011.png
-https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/012.png
-https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/013.png
-"""
-caption: "Gallary"
-width: 256
->>
+<$fbox src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/011.png"/>
+
+<$fbox src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/012.png"/>
+<$fbox src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/013.png"/>
 </center>

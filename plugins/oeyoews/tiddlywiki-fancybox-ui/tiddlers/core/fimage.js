@@ -108,7 +108,7 @@ Render this widget into the DOM
     // const currentTiddler = $tw.wiki.getVariable('currentTiddler');
     // getVariable("currentTiddler")
     const aNode = this.document.createElement('a');
-    aNode.setAttribute('data-fancybox', '');
+    aNode.setAttribute('data-fancybox', this.getVariable('currentTiddler'));
     // todo
     /* if (dataFancybox !== 'undefined') {
       aNode.setAttribute('data-fancybox', dataFancybox);
