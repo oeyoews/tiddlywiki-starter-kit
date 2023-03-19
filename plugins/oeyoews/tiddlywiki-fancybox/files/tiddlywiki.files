@@ -1,0 +1,18 @@
+{
+  "tiddlers": [
+    {
+      "file": "fancybox.min.js",
+      "fields": {
+        "title": "$:/plugins/oeyoews/tiddlywiki-fancybox/fancybox.min.js",
+        "type": "application/javascript"
+      }
+    },
+    {
+      "file": "jq.min.js",
+      "fields": {
+        "title": "$:/plugins/oeyoews/tiddlywiki-fancybox/jq.min.js",
+        "type": "application/javascript"
+      }
+    }
+  ]
+}

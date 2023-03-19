@@ -10,5 +10,5 @@
   "dependents": [
     "$:/plugins/oeyoews/tiddlywiki-modal-ui"
   ],
-  "list": "readme config example explore"
+  "list": "readme"
 }
