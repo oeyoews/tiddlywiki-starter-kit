@@ -388,7 +388,7 @@ html button {
 }/*
 ** Basic element styles
 */html, body {
-	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;;
+	font-family: system-ui, sans-serif;;
 	text-rendering: optimizeLegibility; /* Enables kerning and ligatures etc. */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -8864,6 +8864,10 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="fix-conflict"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="font-stacks/readme"] .tc-titlebar h2 { text-transform: capitalize; }
+
+  [data-tiddler-title="FontStacks"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="gallary"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="GettingStarted"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -8903,6 +8907,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   [data-tiddler-title="min-js"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="missing-thinkup"] .tc-titlebar h2 { text-transform: capitalize; }
+
+  [data-tiddler-title="Modern Font Stacks"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="MUI"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -9919,7 +9925,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "193";
+  content: "196";
 }
 .user-panel-avatar {
   position: relative;
