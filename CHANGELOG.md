@@ -1,3 +1,10 @@
+## [3.145.2](https://github.com/oeyoews/neotw/compare/v3.145.1...v3.145.2) (2023-03-19)
+
+
+### Bug Fixes
+
+* add missing theme for editions ([74511f9](https://github.com/oeyoews/neotw/commit/74511f90bd5ea785b316a5e95462577c92c38d01))
+
 ## [3.145.1](https://github.com/oeyoews/neotw/compare/v3.145.0...v3.145.1) (2023-03-19)
 
 
