@@ -1,5 +1,5 @@
 /*\
-title: fancybox widget
+title: $:/plugins/oeyoews/tiddlywiki-fancybox-ui/widget/fbox
 type: application/javascript
 module-type: widget
 
