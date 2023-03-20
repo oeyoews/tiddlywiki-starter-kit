@@ -3,8 +3,9 @@
     {
       "file": "githubcalendar.min.js",
       "fields": {
-        "title": "githubcalendar.min.js",
+        "title": "$:/plugins/oeyoews/tiddlywiki-widgets/githubcalendar.min.js",
         "module-type": "library",
+        "hide-body": "yes",
         "type": "application/javascript"
       }
     }
