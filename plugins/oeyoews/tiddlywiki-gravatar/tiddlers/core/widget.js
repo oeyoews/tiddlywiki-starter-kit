@@ -25,6 +25,7 @@ gravatar widget
       this.execute();
 
       const email = this.getAttribute('email', 'jyao4783@gmail.com');
+      // size conflict with style be fixed
       const size = this.getAttribute('size', '100');
       // add width
       const gclass = this.getAttribute('gclass', 'gravatar-56');
@@ -44,7 +45,8 @@ gravatar widget
 
     getGravatarUrl(email, size) {
       const hash = md5(email.trim().toLowerCase());
-      const url = `https://en.gravatar.com/avatar/${hash}?s=${size}`;
+      // cn or en add options
+      const url = `https://cn.gravatar.com/avatar/${hash}?s=${size}`;
       return url;
     }
   }

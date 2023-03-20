@@ -1,6 +1,6 @@
 created: 20230319122845263
 creator: oeyoews
-modified: 20230320080344156
+modified: 20230320084342117
 modifier: oeyoews
 tags: 
 title: $:/StaticBanner
@@ -8,10 +8,7 @@ type: text/vnd.tiddlywiki
 
 <$list filter="[[$:/StoryList]get[list]count[]match[0]]">
 <center>
-<div class="user-panel-avatar-56">
-<!-- <img src="https://github.com/oeyoews.png?size=56" /> -->
-<img src="https://en.gravatar.com/userimage/216583511/c7165598eeb66df95698edbc168b8155.png" />
-</div>
+<$gravatar />
 <h1> oeyoews </h1>
 	<$list filter="[{$:/info/url/protocol}match[https:]]">
 	<$github-calendar />

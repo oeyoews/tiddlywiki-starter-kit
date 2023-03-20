@@ -1,6 +1,6 @@
 created: 20230320060259089
 creator: oeyoews
-modified: 20230320060308135
+modified: 20230320084220456
 modifier: oeyoews
 tags: $:/tags/AboveStory
 title: Header
@@ -8,9 +8,7 @@ type: text/vnd.tiddlywiki
 
 <$list filter="[[$:/StoryList]get[list]count[]match[0]]">
 <center>
-<div class="user-panel-avatar-124">
-[img [oeyoews.jpg]]
-</div>
+<$gravatar size="126"/>
 <h1> oeyoews </h1>
 	<$list filter="[{$:/info/url/protocol}match[https:]]">
 	<$github-calendar />
