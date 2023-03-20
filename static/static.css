@@ -9236,8 +9236,6 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="table-todo"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="talk-timer"] .tc-titlebar h2 { text-transform: capitalize; }
-
   [data-tiddler-title="test-compose-on-tiddlywiki"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="test-gravatar-static"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9929,7 +9927,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "198";
+  content: "197";
 }
 .user-panel-avatar {
   position: relative;
@@ -11644,7 +11642,7 @@ details > summary {
     font-size: 20px;
 }.tc-tiddler-preview-preview {
     border: 0px !important;
-		font-size: 22px;
+		font-size: 20px;
 }.tc-alert { board-radius: 5px !important; }input[type=range]:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
@@ -11659,7 +11657,6 @@ details > summary {
 }input[type="checkbox"] {
   background-color: #fff;
   margin: 0;
-  font: inherit;
   color: currentColor;
   width: 1em;
   height: 1em;
@@ -11670,7 +11667,7 @@ details > summary {
 }strike {
 	color: gray;
 }.CodeMirror-wrap pre.CodeMirror-line {
-    font-size: 24px !important;
+    font-size: 20px !important;
 }.tc-block-tags-dropdown > .tc-btn-invisible:hover {
   background-color: #00000008;
 }.cm-s-tiddlywiki .CodeMirror-activeline-background,
@@ -11783,7 +11780,7 @@ button.tc-unfold-banner {
 	}.tc-drop-down a, .tc-drop-down button {
     padding: 5px !important;
 }.CodeMirror-wrap pre.CodeMirror-line {
-	font-size: 20px;
+	font-size: 18x;
 }/* Light theme */.blue-box {
     background-color: rgba(135, 206, 250, 0.13);
 }.gray-box {
