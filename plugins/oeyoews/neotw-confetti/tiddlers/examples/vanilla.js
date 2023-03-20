@@ -1,7 +1,7 @@
 var duration = 1 * 1000;
 var end = Date.now() + duration;
 
-(function frame() {
+function frame() {
   confetti({
     zIndex: -100,
     particleCount: 7,
@@ -20,4 +20,6 @@ var end = Date.now() + duration;
   if (Date.now() < end) {
     requestAnimationFrame(frame);
   }
-})();
+}
+
+exports.frame = frame;

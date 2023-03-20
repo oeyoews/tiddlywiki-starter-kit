@@ -1,0 +1,12 @@
+{
+  "tiddlers": [
+    {
+      "file": "confetti.min.js",
+      "fields": {
+        "title": "$:/plugins/oeyoews/neotw-confetti/library/confetti.min.js",
+        "type": "application/javascript",
+        "module-type": "library"
+      }
+    }
+  ]
+}

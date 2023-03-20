@@ -15,10 +15,9 @@ module.exports = {
   synchronous: !0,
   startup: () => {
     try {
-      const confetti = require('$:/plugins/oeyoews/neotw-confetti/core/confetti.min.js');
-      const runConfetti =
-        require('$:/plugins/oeyoews/neotw-confetti/example/fireworks.js').runConfetti;
-      runConfetti();
+      const confetti = require('$:/plugins/oeyoews/neotw-confetti/library/confetti.min.js');
+
+      require('$:/plugins/oeyoews/neotw-confetti/example/fireworks.js').fireworks();
     } catch (r) {
       console.error(r);
     }

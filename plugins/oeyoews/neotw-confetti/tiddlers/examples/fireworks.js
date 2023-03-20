@@ -1,5 +1,6 @@
-function runConfetti() {
+function fireworks() {
   const isDev = $tw.wiki.getTiddlerText('$:/info/url/protocol');
+  const confettiType = 'fireworks';
 
   // if (isDev === 'http:') return;
   var duration = 3 * 1000;
@@ -41,9 +42,9 @@ function runConfetti() {
   }, 250);
 
   console.log(
-    '%c📣 Yay! neotw-confetti is working! 🎉',
+    `%c📣 Yay! neotw-confetti is working! ${confettiType} 🎉`,
     'background: linear-gradient(45deg, #fc466b, #3f5efb); color: black;border-radius: 3px;padding: 3px;',
   );
 }
 
-exports.runConfetti = runConfetti;
+exports.fireworks = fireworks;
