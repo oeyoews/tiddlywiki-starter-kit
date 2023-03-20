@@ -8882,8 +8882,6 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="gnome-extensions"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="Header"] .tc-titlebar h2 { text-transform: capitalize; }
-
   [data-tiddler-title="heart"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="hi-oeyoews"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9228,6 +9226,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="search-fast-with-gpt"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="show-articles"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="soft-link-for-path"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="some tw website examples"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9373,7 +9373,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/AboveStory] .tc-tag-label:after {
-  content: " 3";
+  content: " 2";
 }
 
 
@@ -9929,7 +9929,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "197";
+  content: "198";
 }
 .user-panel-avatar {
   position: relative;
