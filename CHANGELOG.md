@@ -1,3 +1,10 @@
+## [3.148.2](https://github.com/oeyoews/neotw/compare/v3.148.1...v3.148.2) (2023-03-20)
+
+
+### Performance Improvements
+
+* use cn gravatar ([a5b3ee6](https://github.com/oeyoews/neotw/commit/a5b3ee67bd4bee05983127c0524a79075d4b1982))
+
 ## [3.148.1](https://github.com/oeyoews/neotw/compare/v3.148.0...v3.148.1) (2023-03-20)
 
 
