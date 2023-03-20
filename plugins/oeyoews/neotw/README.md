@@ -46,6 +46,7 @@
 
 ## Features :sparkles:
 
+- support gravatar(en and cn)
 - 随机展示文章
 - 支持 F 全屏, s 切换全屏
 - 文章标题支持中英双语言切换
