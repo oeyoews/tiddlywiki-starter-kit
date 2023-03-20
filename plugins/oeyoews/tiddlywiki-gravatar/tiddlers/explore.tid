@@ -1,0 +1,3 @@
+title: $:/plugins/oeyoews/tiddlywiki-gravatar/explore
+
+<$macrocall $name="tree" prefix={{{ [<currentTiddler>addsuffix[/]] }}}>
