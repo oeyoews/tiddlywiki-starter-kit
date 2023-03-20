@@ -26,16 +26,11 @@ fancybox widget
       this.computeAttributes();
       this.execute();
 
-      // const currentTiddler = $tw.wiki.getTiddlerText('$:/temp/focussedTiddler');
-
-      // const local = this.getAttribute('local', 'no');
       const src = this.getAttribute('src', '');
-      // const imgTiddler = $tw.wiki.getTiddler(src)?.fields || {};
-      // const imgTiddlerBase64 = imgTiddler.text;
-
       const alt = this.getAttribute('alt', '');
-      const id = this.getAttribute('id', '');
       const width = this.getAttribute('width', '256');
+
+      const currentTiddler = this.getVariable('currentTiddler');
 
       const aNode = this.document.createElement('a');
       const warnNode = this.document.createElement('span');
@@ -59,7 +54,7 @@ fancybox widget
       imgNode.src = src;
       imgNode.alt = alt;
       imgNode.width = width;
-      aNode.setAttribute('data-fancybox', this.getVariable('currentTiddler'));
+      aNode.setAttribute('data-fancybox', currentTiddler);
       aNode.setAttribute('data-caption', alt);
       aNode.appendChild(imgNode);
       parent.insertBefore(aNode, nextSibling);
