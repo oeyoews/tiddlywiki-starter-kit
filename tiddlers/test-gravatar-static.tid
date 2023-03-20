@@ -1,0 +1,9 @@
+created: 20230320100005477
+creator: oeyoews
+modified: 20230320100018978
+modifier: oeyoews
+tags: 
+title: test-gravatar-static
+type: text/vnd.tiddlywiki
+
+<$gravatar />
