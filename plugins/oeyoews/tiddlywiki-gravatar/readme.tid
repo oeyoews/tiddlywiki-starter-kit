@@ -29,18 +29,27 @@ title: $:/plugins/oeyoews/tiddlywiki-gravatar/readme
 
 !! Example
 
-<$gravatar />
+> global
+* <$gravatar />
+
+> qq
+* <$qq-avatar />
 
 !! usage
+
+> support qq email
 
 `$:/config/plugins/oeyoews/tiddlywiki-gravatar/email` is config file
 
 ```
 <$gravatar email="xxx" />
+<$qq-avatar email="xxx" />
 ```
+
 * https://cn.gravatar.com/emails/
 * https://en.gravatar.com/emails/
 
 !! TODO
 
 * missing img src ???
+* merge qq avatar and gravatar
