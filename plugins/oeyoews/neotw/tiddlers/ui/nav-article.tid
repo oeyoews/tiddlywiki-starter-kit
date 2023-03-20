@@ -1,5 +1,5 @@
 title: $:/plugins/oeyoews/neotw/ui/nav-article
-tags: $:/tags/ViewTemplate
+<!-- tags: $:/tags/ViewTemplate -->
 
 <$list filter="[all[current]publish[article]]">
 <div class="o-rnav-article">
