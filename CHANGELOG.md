@@ -1,3 +1,10 @@
+# [3.147.0](https://github.com/oeyoews/neotw/compare/v3.146.2...v3.147.0) (2023-03-20)
+
+
+### Features
+
+* use startup for confetti ([159deab](https://github.com/oeyoews/neotw/commit/159deabd680dae9f96572f2c71fdde1068c3fdee))
+
 ## [3.146.2](https://github.com/oeyoews/neotw/compare/v3.146.1...v3.146.2) (2023-03-19)
 
 ## [3.146.1](https://github.com/oeyoews/neotw/compare/v3.146.0...v3.146.1) (2023-03-19)
