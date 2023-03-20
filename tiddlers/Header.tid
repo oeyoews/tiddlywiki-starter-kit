@@ -1,15 +1,15 @@
-created: 20230319122845263
+created: 20230320060259089
 creator: oeyoews
-modified: 20230320061550790
+modified: 20230320060308135
 modifier: oeyoews
-tags: 
-title: $:/StaticBanner
+tags: $:/tags/AboveStory
+title: Header
 type: text/vnd.tiddlywiki
 
 <$list filter="[[$:/StoryList]get[list]count[]match[0]]">
 <center>
-<div class="user-panel-avatar-56">
-<img src="https://github.com/oeyoews.png?size=56" />
+<div class="user-panel-avatar-124">
+[img [oeyoews.jpg]]
 </div>
 <h1> oeyoews </h1>
 	<$list filter="[{$:/info/url/protocol}match[https:]]">
