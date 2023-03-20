@@ -1,3 +1,10 @@
+## [3.150.1](https://github.com/oeyoews/neotw/compare/v3.150.0...v3.150.1) (2023-03-20)
+
+
+### Bug Fixes
+
+* remove TW5-CodeMirror-Enhanced config ([e96a9e3](https://github.com/oeyoews/neotw/commit/e96a9e3b04edce620ab07b8ebeb8c05ce20192a9))
+
 # [3.150.0](https://github.com/oeyoews/neotw/compare/v3.149.1...v3.150.0) (2023-03-20)
 
 
