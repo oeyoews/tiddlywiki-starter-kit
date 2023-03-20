@@ -12,7 +12,7 @@ gravatar widget
   if (!$tw.browser) return;
 
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
-  const md5 = require('md5.min.js');
+  const md5 = require('$:/plugins/oeyoews/tiddlywiki-gravatar/md5.min.js');
 
   class Gravatar extends Widget {
     constructor(parseTreeNode, options) {
