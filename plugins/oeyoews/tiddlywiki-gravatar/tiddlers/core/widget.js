@@ -19,6 +19,7 @@ gravatar widget
       super(parseTreeNode, options);
     }
 
+    // TODO support use fancybox to view
     render(parent, nextSibling) {
       this.parentDomNode = parent;
       this.computeAttributes();
