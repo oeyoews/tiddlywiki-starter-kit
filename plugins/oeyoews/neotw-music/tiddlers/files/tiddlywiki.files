@@ -1,0 +1,12 @@
+{
+  "tiddlers": [
+    {
+      "file": "aplayer.min.js",
+      "fields": {
+        "title": "$:/plugins/oeyoews/neotw-music/aplayer.min.js",
+        "module-type": "library",
+        "type": "application/javascript"
+      }
+    }
+  ]
+}

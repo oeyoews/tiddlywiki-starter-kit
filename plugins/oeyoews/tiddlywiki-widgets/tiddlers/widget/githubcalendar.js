@@ -22,7 +22,7 @@ github-calendar js
       this.execute();
 
       const username = this.getAttribute('username', 'oeyoews');
-      const GitHubCalendar = require('githubcalendar.js');
+      const GitHubCalendar = require('githubcalendar.min.js');
 
       const options = {};
       if (this.getAttribute('responsive', 'yes') === 'yes') {
