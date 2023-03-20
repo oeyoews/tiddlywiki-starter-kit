@@ -1,5 +1,5 @@
 title: $:/plugins/oeyoews/neotw-music/ui/net
-tags: $:/tags/PageControls
+<!-- tags: $:/tags/PageControls -->
 list-before: $:/core/ui/Buttons/more-page-actions
 description: OM
 caption: OM
