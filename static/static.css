@@ -8882,6 +8882,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="gnome-extensions"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="Header"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="heart"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="hi-oeyoews"] .tc-titlebar h2 { text-transform: capitalize; }
