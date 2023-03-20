@@ -20,7 +20,7 @@ TogglePalette/Key: g t
 TogglePalette/Caption: togglePalette
 ToggleLayout/Key: g l
 ToggleLayout/Caption: ToggleLayout
-ToggleSidebar/Key: s s
+ToggleSidebar/Key: g s
 ToggleSidebar/Caption: ToggleSidebar
 Fullscreen/Key: f
 Fullscreen/Caption: Fullscreen
