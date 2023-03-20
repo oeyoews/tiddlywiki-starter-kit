@@ -8,5 +8,19 @@
         "module-type": "library"
       }
     }
+  ],
+  "directories": [
+    {
+      "path": "example",
+      "filesRegExp": "^.*\\.js$",
+      "fields": {
+        "title": {
+          "source": "filename",
+          "prefix": "$:/plugins/oeyoews/neotw-confetti/example/"
+        },
+        "type": "application/javascript",
+        "module-type": "library"
+      }
+    }
   ]
 }
