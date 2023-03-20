@@ -9,6 +9,8 @@ owidget
   /*jslint node: true, browser: true */
   /*global $tw: false */
 
+  // 在 JSLint 注释中，$tw: false 表示 $tw 是一个全局变量，但它的值是 false。这是因为在某些情况下，JSLint 可能会检测到 $tw 变量被重新赋值，从而抛出警告或错误。通过将 $tw: false 设置为全局变量的值，可以告诉 JSLint，$tw 变量是只读的，不应该被重新赋值。这可以避免 JSLint 报错或警告，同时确保代码中正确使用 $tw 变量。
+
   if (!$tw.browser) return;
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
 

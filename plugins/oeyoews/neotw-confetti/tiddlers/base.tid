@@ -1,7 +1,0 @@
-title: $:/plugins/oeyoews/neotw-confetti/base
-tags: $:/tags/RawMarkupWikified/BottomBody
-
-`<script>`
-{{$:/plugins/oeyoews/neotw-confetti/core/confetti.min.js}}
-{{$:/plugins/oeyoews/neotw-confetti/example/fireworks.js}}
-`</script>`

@@ -1,7 +1,7 @@
-const isDev = $tw.wiki.getTiddlerText('$:/info/url/protocol');
+function runConfetti() {
+  const isDev = $tw.wiki.getTiddlerText('$:/info/url/protocol');
 
-(function runConfetti() {
-  if (isDev === 'http:') return;
+  // if (isDev === 'http:') return;
   var duration = 3 * 1000;
   var animationEnd = Date.now() + duration;
   var defaults = {
@@ -44,4 +44,6 @@ const isDev = $tw.wiki.getTiddlerText('$:/info/url/protocol');
     '%c📣 Yay! neotw-confetti is working! 🎉',
     'background: linear-gradient(45deg, #fc466b, #3f5efb); color: black;border-radius: 3px;padding: 3px;',
   );
-})();
+}
+
+exports.runConfetti = runConfetti;
