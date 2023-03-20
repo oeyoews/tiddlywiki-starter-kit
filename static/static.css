@@ -9240,6 +9240,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="test-compose-on-tiddlywiki"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="test-gravatar-static"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="test-info"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="test-one"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9641,7 +9643,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 88";
+  content: " 89";
 }
 
 
@@ -9927,7 +9929,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "196";
+  content: "197";
 }
 .user-panel-avatar {
   position: relative;
@@ -10477,6 +10479,20 @@ ol.doc-github-contributors li {
   .githubCorner .octoArm {
     animation: octocat-wave 560ms ease-in-out;
   }
+}
+.gravatar-56 {
+  position: relative;
+  max-width: 56px;
+  max-height: 56px;
+}
+
+.gravatar-56 img {
+  width: 100%;
+  height: auto;
+  max-width: 56px;
+  max-height: 56px;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
 }
 .key-container {
   position: fixed;
