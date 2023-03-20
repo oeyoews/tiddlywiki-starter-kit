@@ -1,5 +1,5 @@
 /*\
-title: test-twikoo
+title: $:/plugins/oeyoews/tiddlywiki-twikoo/widget.js
 type: application/javascript
 module-type: widget
 
@@ -13,7 +13,7 @@ twikoo widget
   if (!$tw.browser) return;
 
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
-  const twikoo = require('lib-twikoo.js');
+  const twikoo = require('$:/plugins/oeyoews/tiddlywiki-twikoo/twikoo.min.js');
 
   class TwikooWidget extends Widget {
     constructor(parseTreeNode, options) {
@@ -25,13 +25,16 @@ twikoo widget
       this.computeAttributes();
       this.execute();
 
-      var path = this.getAttribute('path', 'Index');
+      const currentTiddler = this.getVariable('currentTiddler');
+      var path = this.getAttribute('path', currentTiddler || 'Index');
+      console.log(`🐛 当前twikoo评论区 为 ${path}`);
+
       var envId = this.getAttribute('envId', '');
       var el = this.getAttribute('el', '#tcomment');
 
       if (!envId) {
-        // alert('twikoo not have a valid envId');
         console.warn('twikoo not have a valid envId');
+        // alert('twikoo not have a valid envId');
         // console.log(envId);
         return;
       }
@@ -42,21 +45,18 @@ twikoo widget
       parent.insertBefore(twikooDiv, nextSibling);
       this.domNodes.push(twikooDiv);
 
-      const runTwikoo = twikoo.init({
+      const twikooInit = twikoo.init({
         envId: envId,
         el: el,
         path: path,
       });
 
-      // weired
-      runTwikoo;
-
-      console.log(`🐛 当前twikoo评论区 为 ${path}`);
+      twikooInit;
     }
 
     refresh() {
       var changedAttributes = this.computeAttributes();
-      // changedAttributes.title;
+      changedAttributes.title;
       if (Object.keys(changedAttributes).length > 0) {
         this.refreshSelf();
         return true;

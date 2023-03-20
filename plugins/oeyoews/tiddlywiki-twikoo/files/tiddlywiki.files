@@ -1,0 +1,12 @@
+{
+  "tiddlers": [
+    {
+      "file": "twikoo.min.js",
+      "fields": {
+        "title": "$:/plugins/oeyoews/tiddlywiki-twikoo/twikoo.min.js",
+        "module-type": "library",
+        "type": "application/javascript"
+      }
+    }
+  ]
+}
