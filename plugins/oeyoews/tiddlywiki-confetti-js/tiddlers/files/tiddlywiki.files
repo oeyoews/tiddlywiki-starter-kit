@@ -1,0 +1,12 @@
+{
+  "tiddlers": [
+    {
+      "file": "confetti.min.js",
+      "fields": {
+        "title": "$:/plugins/oeyoews/tiddlywiki-confetti/library/confetti.min.js",
+        "module-type": "library",
+        "type": "application/javascript"
+      }
+    }
+  ]
+}

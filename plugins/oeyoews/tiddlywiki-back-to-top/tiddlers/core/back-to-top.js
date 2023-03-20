@@ -56,7 +56,7 @@ Adds a "back to top" button with a progress indicator to the page which allows u
         const pageHeight = document.body.scrollHeight - window.innerHeight;
         const progress = Math.min(
           (window.scrollY / pageHeight) * 100,
-          100,
+          99,
         ).toFixed(1);
         progressIndicator.textContent = `${Math.round(progress)}.0%`;
       } else {

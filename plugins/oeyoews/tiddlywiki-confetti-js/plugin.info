@@ -1,0 +1,12 @@
+{
+  "title": "$:/plugins/oeyoews/tiddlywiki-confetti-js",
+  "description": "Tiddlywiki Confetti Js",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.2.5",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "Tiddlywiki Confetti Js",
+  "dependents": [],
+  "list": "readme explore"
+}
