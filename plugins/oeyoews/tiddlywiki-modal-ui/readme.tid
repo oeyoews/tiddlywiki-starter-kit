@@ -15,4 +15,6 @@ title: $:/plugins/oeyoews/tiddlywiki-modal-ui/readme
 
 !! Usage
 
+> use custom modal ui
+
 {{$:/plugins/oeyoews/tiddlywiki-modal-ui/button}}
