@@ -45,8 +45,10 @@ module.exports = {
       Hash: false,
     };
     try {
-      globalThis.Fancybox =
-        require('$:/plugins/oeyoews/tiddlywiki-fancybox/library/fancybox.min.js').Fancybox;
+      const {
+        Fancybox,
+      } = require('$:/plugins/oeyoews/tiddlywiki-fancybox/library/fancybox.min.js');
+      globalThis.Fancybox = Fancybox;
       Fancybox.defaults = {
         ...Fancybox.defaults,
         ...options,

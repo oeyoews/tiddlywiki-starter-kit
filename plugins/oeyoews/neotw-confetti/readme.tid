@@ -8,10 +8,10 @@ title: $:/plugins/oeyoews/neotw-confetti/readme
   <img src="https://img.shields.io/badge/Powered by-confetti-green?style=flat" />
 </a>
 
-!! INTRO
+!! Usage
 
-> 仅仅在线展示
-
-!! TODO
-
-* add config to switch effect
+<$confetti text="snow" type="snow"/>
+<$confetti text="fireworks" type="firework"/>
+<$confetti text="msg" type="msg"/>
+<$confetti text="pride" type="pride"/>
+<$confetti text="random" type="random"/>

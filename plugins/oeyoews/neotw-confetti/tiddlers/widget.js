@@ -13,14 +13,15 @@ module-type: widget
   if (!$tw.browser) return;
 
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
-  const fireworks =
-    require('$:/plugins/oeyoews/neotw-confetti/example/fireworks.js').fireworks;
-  const snow =
-    require('$:/plugins/oeyoews/neotw-confetti/example/snow.js').snow;
-  const vanilla =
-    require('$:/plugins/oeyoews/neotw-confetti/example/vanilla.js').frame;
-  const msg =
-    require('$:/plugins/oeyoews/neotw-confetti/example/right-msg.js').msg;
+  const {
+    fireworks,
+    snow,
+    pride,
+    realistic,
+    random,
+    center,
+    msg,
+  } = require('$:/plugins/oeyoews/neotw-confetti/example/fireworks.js');
 
   class ConfettiButtonWidget extends Widget {
     constructor(parseTreeNode, options) {
@@ -47,23 +48,17 @@ module-type: widget
 
     handleClick(event) {
       const type = this.getAttribute('type', 'fireworks');
-      switch (type) {
-        case 'fireworks':
-          fireworks();
-          break;
-        // not work now
-        case 'snow':
-          snow();
-          break;
-        case 'vanilla':
-          vanilla();
-          break;
-        case 'msg':
-          msg();
-          break;
-        default:
-          fireworks();
-      }
+      const confettiMap = {
+        fireworks,
+        snow,
+        pride,
+        realistic,
+        random,
+        center,
+        msg,
+      };
+      const confettiFunc = confettiMap[type] || fireworks;
+      confettiFunc();
     }
   }
 
