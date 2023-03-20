@@ -9941,18 +9941,6 @@ footer {
   max-height: 22px;
   border-radius: 50%;
   aspect-ratio: 1 / 1;
-}.user-panel-avatar-56 {
-  position: relative;
-  max-width: 56px;
-  max-height: 56px;
-}
-.user-panel-avatar-56 img {
-  width: 100%;
-  height: auto;
-  max-width: 56px;
-  max-height: 56px;
-  border-radius: 50%;
-  aspect-ratio: 1 / 1;
 }.user-panel-avatar-124 {
   position: relative;
   max-width: 124px;
