@@ -56,5 +56,5 @@ ToggleAllTiddlers/Key: z A
 ToggleAllTiddlers/Caption: Toggle folding for all tiddlers
 Dismiss/Key: q
 Dismiss/Caption: Dismiss selection
-SaveWiki/Key: w
-SaveWiki/Caption: Save wiki
+# SaveWiki/Key: w
+# SaveWiki/Caption: Save wiki
