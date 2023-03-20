@@ -1,3 +1,10 @@
+# [3.149.0](https://github.com/oeyoews/neotw/compare/v3.148.2...v3.149.0) (2023-03-20)
+
+
+### Features
+
+* add tiddlywiki-gravatar plugin ([a773429](https://github.com/oeyoews/neotw/commit/a7734297720aaa33d57c7bb12816ce6a36745682))
+
 ## [3.148.2](https://github.com/oeyoews/neotw/compare/v3.148.1...v3.148.2) (2023-03-20)
 
 
