@@ -52,4 +52,6 @@ title: $:/plugins/oeyoews/tiddlywiki-gravatar/readme
 !! TODO
 
 * missing img src ???
+> use qq-avatar widget, no extra dependency
+
 * merge qq avatar and gravatar
