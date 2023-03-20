@@ -1,7 +1,7 @@
 created: 20230202124524313
 creator: oeyoews
 empty: yes
-modified: 20230318065210027
+modified: 20230320142255146
 modifier: oeyoews
 page-cover: 
 tags: $:/tags/Stylesheet
@@ -10,11 +10,11 @@ type: text/vnd.tiddlywiki
 
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
 .tc-story-river {
-  padding: 12px !important;
+  padding: 10px !important;
 }
 .tc-tiddler-frame { 
 	border-radius: 3px !important;
-	margin: 15px 0px 15px 0px !important;
+	margin: 10px 0px !important;
 }
 </$list>
 
@@ -25,7 +25,7 @@ type: text/vnd.tiddlywiki
 <!-- better preview -->
 .tc-tiddler-preview-preview {
     border: 0px !important;
-		font-size: 22px;
+		font-size: 20px;
 }
 
 <!-- mobile -->
@@ -60,7 +60,6 @@ input[type=range]:focus {
 input[type="checkbox"] {
   background-color: #fff;
   margin: 0;
-  font: inherit;
   color: currentColor;
   width: 1em;
   height: 1em;
@@ -76,7 +75,7 @@ strike {
 }
 
 .CodeMirror-wrap pre.CodeMirror-line {
-    font-size: 24px !important;
+    font-size: 20px !important;
 }
 
 .tc-block-tags-dropdown > .tc-btn-invisible:hover {
@@ -236,5 +235,5 @@ input:focus, textarea:focus {
 }
 
 .CodeMirror-wrap pre.CodeMirror-line {
-	font-size: 20px;
+	font-size: 18x;
 }
