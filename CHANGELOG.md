@@ -1,3 +1,10 @@
+# [3.148.0](https://github.com/oeyoews/neotw/compare/v3.147.0...v3.148.0) (2023-03-20)
+
+
+### Features
+
+* add confetti widget ([7cb0ff7](https://github.com/oeyoews/neotw/commit/7cb0ff7bd1c86c54ca534236b76739e11350122e))
+
 # [3.147.0](https://github.com/oeyoews/neotw/compare/v3.146.2...v3.147.0) (2023-03-20)
 
 
