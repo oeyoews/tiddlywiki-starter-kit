@@ -6,9 +6,9 @@ GoToSearch/Key: g k
 GoToSearch/Caption: GoToSearch
 GoToControlPanel/Key: g i
 GoToControlPanel/Caption: GoToControlPanel
-GoToGettingStarted/Key: h
+GoToGettingStarted/Key: g h
 GoToGettingStarted/Caption: GoToGettingStarted
-RefreshWiki/Key: r r
+RefreshWiki/Key: g r
 RefreshWiki/Caption: Refresh wiki
 ShowHelp/Key: ?
 ShowHelp/Caption: Show this help message
@@ -24,9 +24,9 @@ ToggleSidebar/Key: g s
 ToggleSidebar/Caption: ToggleSidebar
 Fullscreen/Key: f
 Fullscreen/Caption: Fullscreen
-CreateNewTiddler/Key: n
+CreateNewTiddler/Key: g n
 CreateNewTiddler/Caption: Create a new tiddler
-DeleteTiddler/Key: d
+DeleteTiddler/Key: g d
 DeleteTiddler/Caption: Delete selected tiddler
 GoToFirstTiddler/Key: g g
 GoToFirstTiddler/Caption: Go to first tiddler in story river
@@ -36,11 +36,11 @@ SelectNextTiddler/Key: j
 SelectNextTiddler/Caption: Select next tiddler in story river
 SelectPreviousTiddler/Key: k
 SelectPreviousTiddler/Caption: Select previous tiddler in story river
-EditTiddler/Key: e
+EditTiddler/Key: g e
 EditTiddler/Caption: Edit selected tiddler
-CloseTiddler/Key: c c
+CloseTiddler/Key: g c
 CloseTiddler/Caption: Close selected tiddler
-CloseAllTiddlers/Key: g c c
+CloseAllTiddlers/Key: g a
 CloseAllTiddlers/Caption: Close all tiddlers
 FoldTiddler/Key: z c
 FoldTiddler/Caption: Fold selected tiddler
