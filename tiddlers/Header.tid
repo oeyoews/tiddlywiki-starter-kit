@@ -9,7 +9,7 @@ type: text/vnd.tiddlywiki
 <$list filter="[[$:/StoryList]get[list]count[]match[0]]">
 <center>
 <$gravatar/>
-<h1> oeyoews </h1>
+<h2> oeyoews </h2>
 	<$list filter="[{$:/info/url/protocol}match[https:]]">
 	<$github-calendar />
 	</$list>
