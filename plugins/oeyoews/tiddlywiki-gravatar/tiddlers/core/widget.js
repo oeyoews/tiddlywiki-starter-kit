@@ -26,7 +26,13 @@ gravatar widget
       this.computeAttributes();
       this.execute();
 
-      const email = this.getAttribute('email', 'jyao4783@gmail.com');
+      const getDefaultEmail = $tw.wiki.getTiddlerText(
+        '$:/config/plugins/oeyoews/tiddlywiki-gravatar/email',
+      );
+      const email = this.getAttribute(
+        'email',
+        getDefaultEmail || 'jyao4783@gmail.com',
+      );
       // size conflict with style be fixed
       const size = this.getAttribute('size', '100');
       // add width

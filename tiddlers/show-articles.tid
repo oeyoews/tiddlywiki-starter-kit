@@ -1,6 +1,11 @@
-title: $:/config/EmptyStoryMessage
+created: 20230320111601537
+creator: oeyoews
+modified: 20230320111609296
+modifier: oeyoews
+tags: 
+title: show-articles
+type: text/vnd.tiddlywiki
 
-{{{ [[GettingStarted]] ||$:/core/ui/ViewTemplate }}}
 <$set name="a-count" value={{{ [[$:/temp/articles/number]get[number]] }}}>
 {{{ [!is[system]field:publish[article]!sort[modified]limit<a-count>] -[[GettingStarted]]||$:/core/ui/ViewTemplate}}}
 </$set>

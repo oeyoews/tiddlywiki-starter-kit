@@ -1,15 +1,12 @@
-created: 20230320060259089
-creator: oeyoews
-modified: 20230320095754793
-modifier: oeyoews
-tags: $:/tags/AboveStory
-title: Header
-type: text/vnd.tiddlywiki
+title: header
+<!-- tags: $:/tags/AboveStory -->
 
 <$list filter="[[$:/StoryList]get[list]count[]match[0]]">
 <center>
-<$gravatar/>
-<h2> oeyoews </h2>
+<!-- <$list filter="[[]]"> -->
+<!-- <$gravatar/> -->
+<!-- </$list> -->
+<h2> {{$:/status/UserName}} </h2>
 	<$list filter="[{$:/info/url/protocol}match[https:]]">
 	<$github-calendar />
 	</$list>
