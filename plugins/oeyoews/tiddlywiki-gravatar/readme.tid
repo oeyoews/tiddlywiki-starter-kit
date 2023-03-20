@@ -21,6 +21,20 @@ title: $:/plugins/oeyoews/tiddlywiki-gravatar/readme
 * [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/tiddlywiki-gravatar]]
 * [[Demo|https://oeyoews.github.io/neotw]]
 
+!! Intro
+
+> Gravatar stands for Globally Recognized Avatar. It is a service that allows users to create a unique avatar, which is an image that represents them online. This avatar can then be used across different websites, forums, and platforms that support Gravatar.
+> Gravatar is a free service that is owned by Automattic, the company behind WordPress. It works by linking an email address to an avatar, so whenever a user comments or posts on a website that supports Gravatar, their avatar will automatically appear next to their name.
+> Gravatar is a convenient way for users to maintain a consistent online identity across different platforms. It also helps website owners to easily identify and recognize their regular commenters and engage with them.
+
 !! Example
 
 <$gravatar />
+
+!! usage
+
+```
+<$gravatar email="xxx" />
+```
+* https://cn.gravatar.com/emails/
+* https://en.gravatar.com/emails/
