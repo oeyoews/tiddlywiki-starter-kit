@@ -1,3 +1,10 @@
+## [3.150.8](https://github.com/oeyoews/neotw/compare/v3.150.7...v3.150.8) (2023-03-21)
+
+
+### Bug Fixes
+
+* add missing gradient css ([93cfbb8](https://github.com/oeyoews/neotw/commit/93cfbb89b0e9114582ff5bfa10c945f72f0a876f))
+
 ## [3.150.7](https://github.com/oeyoews/neotw/compare/v3.150.6...v3.150.7) (2023-03-21)
 
 
