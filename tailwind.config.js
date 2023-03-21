@@ -16,4 +16,9 @@ module.exports = {
   corePlugins: {
     preflight: false,
   },
+  variants: {
+    extend: {
+      appearance: ['hover', 'focus'],
+    },
+  },
 };

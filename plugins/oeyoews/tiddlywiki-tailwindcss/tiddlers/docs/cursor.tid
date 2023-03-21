@@ -1,0 +1,32 @@
+title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/docs/cursor
+caption: cursor
+
+!! Cursor
+
+<button class="cursor-auto">
+auto
+</button>
+
+<button class="cursor-pointer">
+pointer
+</button>
+
+<button class="cursor-wait">
+wait
+</button>
+
+<button class="cursor-default">
+default
+</button>
+
+<button class="cursor-text">
+text
+</button>
+
+<button class="cursor-move">
+move
+</button>
+
+<button class="cursor-not-allowed">
+disable
+</button>

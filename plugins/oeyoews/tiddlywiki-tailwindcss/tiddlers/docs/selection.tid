@@ -1,0 +1,18 @@
+title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/docs/selection
+caption: selection
+
+<div class="select-none">
+  This text is not selectable
+</div>
+
+<div class="select-text">
+  This text is selectable
+</div>
+
+<div class="select-all">
+  Click anywhere in this text to select it all
+</div>
+
+<div class="select-auto">
+  This text is selectable
+</div>
