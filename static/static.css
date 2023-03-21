@@ -9524,13 +9524,13 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Macro] .tc-tag-label:after {
-  content: " 56";
+  content: " 55";
 }
 
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 84";
+  content: " 80";
 }
 
 
@@ -9824,145 +9824,6 @@ footer {
   max-height: 124px;
   border-radius: 50% !important;
   aspect-ratio: 1 / 1;
-}
-ul.bullets li::marker {
-		color: #7d7dfc;
-}ul.bullets>li::marker {
-	content: "◉ ";
-}ul.bullets>li>ul>li::marker {
-		content: "◎ ";
-		color: #9ECE6A;
-}ul.bullets>li>ul>li>ul>li::marker {
-		content: "✿ ";
-		color: #7DCFFF;
-}ul.bullets>li>ul>li>ul>li>ul li::marker {
-		content: "● ";
-		color: #2AC3DE;
-}
-.neotw-gradient {
-	background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
-	-webkit-background-clip: text;
-	color: transparent;
-}.nw-gradient {
-	background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
-	-webkit-background-clip: text;
-	color: transparent;
-}
-.neotw-circle:before {
-		content: "◍ ";
-		color: orange;
-}.neotw-music:before {
-		content: "♫ ";
-		color: orange;
-}.neotw-type:before {
-		content: "⁋ ";
-		color: orange;
-}.neotw-restore:before {
-		content: "⟳ ";
-		color: orange;
-}.neotw-dot-status:before {
-		content: "● ";
-		color: orange;
-}.neotw-dot-online:before {
-		content:"● ";
-		color:#47f247;
-}.neotw-dot-off:before {
-		content: "● ";
-		color: #e5534b;
-}.neotw-star:before {
-		content: "✯ ";
-		color: red;
-}.neotw-edit:before {
-		content: "✎ ";
-		color: orange;
-}.neotw-dot-list:before {
-		content: "● ";
-		color: #7d7dfc;
-}.neotw-bingo:before {
-    
-		content: "✓ ";
-		color: #008000;
-}.neotw-snow:before {
-		content: "✿ ";
-		color: #2AC2DE;
-}.neotw-snow-virtual:before {
-		content: "❀ ";
-		color: #2AC2DE;
-}.neotw-bicycle:before {
-		content: "◉ ";
-		color: #7DCFFF;
-}.neotw-six:before {
-		content: "☷ ";
-		color: #7DCFFF;
-}.neotw-arrowright:before {
-		content: "» ";
-		color: #7d7dfc;
-}.neotw-arrowleft:before {
-		content: "« ";
-		color: #7d7dfc;
-}.neotw-menu:before {
-		content: "☰ ";
-		color: #0ea6ff;
-}
-
-.neotw-warn:before {
-	content: ""
-}
-
-.neotw-tree:before {
-	content: "🌴"
-}
-
-.neotw-traffic:before {
-	content: "🚦"
-}
-
-.neotw-tada:before {
-	content: "🎉"
-}
-
-.neotw-smile:before {
-	content: "😃"
-}
-
-.neotw-rocket:before {
-	content: "🚀"
-}
-
-.neotw-msg:before {
-	content: "💬"
-}
-
-.neotw-kbd:before {
-	content: "⌨"
-}
-
-.neotw-info:before {
-	content: "ℹ️"
-}
-
-.neotw-hourglass:before {
-	content: "⌛"
-}
-
-.neotw-fly:before {
-	content: "🚁"
-}
-
-.neotw-eye:before {
-	content: "👁️"
-}
-
-.neotw-error:before {
-	content: "✘"
-}
-
-.neotw-danger:before {
-	content: "☠"
-}
-
-.neotw-checkbox:before {
-	content: "✅"
 }
 /* progress number */
 .back-to-top-progress {
