@@ -2,7 +2,7 @@ title: $:/plugins/oeyoews/motion/config/Shortcuts/
 
 FocusSearch/Key: /
 FocusSearch/Caption: Focus search
-GoToSearch/Key: g k
+GoToSearch/Key: s
 GoToSearch/Caption: GoToSearch
 GoToControlPanel/Key: g i
 GoToControlPanel/Caption: GoToControlPanel
@@ -26,7 +26,7 @@ Fullscreen/Key: f
 Fullscreen/Caption: Fullscreen
 CreateNewTiddler/Key: g n
 CreateNewTiddler/Caption: Create a new tiddler
-DeleteTiddler/Key: g d
+DeleteTiddler/Key: d d
 DeleteTiddler/Caption: Delete selected tiddler
 GoToFirstTiddler/Key: g g
 GoToFirstTiddler/Caption: Go to first tiddler in story river
@@ -40,7 +40,7 @@ EditTiddler/Key: g e
 EditTiddler/Caption: Edit selected tiddler
 CloseTiddler/Key: g c
 CloseTiddler/Caption: Close selected tiddler
-CloseAllTiddlers/Key: g a
+CloseAllTiddlers/Key: g d
 CloseAllTiddlers/Caption: Close all tiddlers
 FoldTiddler/Key: z c
 FoldTiddler/Caption: Fold selected tiddler
@@ -56,5 +56,5 @@ ToggleAllTiddlers/Key: z A
 ToggleAllTiddlers/Caption: Toggle folding for all tiddlers
 Dismiss/Key: q
 Dismiss/Caption: Dismiss selection
-# SaveWiki/Key: w
-# SaveWiki/Caption: Save wiki
+SaveWiki/Key: g w
+SaveWiki/Caption: Save wiki
