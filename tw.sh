@@ -27,7 +27,7 @@ shift $((OPTIND -1))
 dirPath=${dirPath:-"./plugins/oeyoews/tiddlywiki-tailwindcss"}
 inputPath="$dirPath/files/styles.css"
 outputPath="$dirPath/files/styles.min.css"
-content="$dirPath/**/*.tid"
+content="$dirPath/**/*"
 
 if [ ! -d "$dirPath" ]
   then

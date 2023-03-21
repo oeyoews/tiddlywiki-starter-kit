@@ -165,6 +165,8 @@ indent-2
 
 !! padding
 
+<div class="p-0.5 ...">p-0.5</div>
+<div class="p-1 ...">p-1</div>
 <div class="pt-6 ...">pt-6</div>
 <div class="pr-4 ...">pr-4</div>
 <div class="pb-8 ...">pb-8</div>
