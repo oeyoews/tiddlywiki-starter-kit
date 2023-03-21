@@ -1,54 +1,6 @@
 title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/Tailwindcss
 
-<div class="flex justify-center">
-  <button class="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-pink-500 hover:to-purple-500 text-white font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out">
-    Get Started
-  </button>
-&nbsp;<span class="relative flex h-3 w-3">
-  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
-  <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
-</span>
-</div>
-
-!! Font smoothing
-
-<p class="subpixel-antialiased ...">The quick brown fox ...</p>
-<p class="antialiased ...">The quick brown fox ...</p>
-
-!! Ulist
-
-<ul class="list-inside ...">
-  <li>5 cups chopped Porcini mushrooms</li>
-  <!-- ... -->
-</ul>
-
-<ul class="list-outside ...">
-  <li>5 cups chopped Porcini mushrooms</li>
-  <!-- ... -->
-</ul>
-
-!! Text
-
-<p class="underline ...">The quick brown fox ...</p>
-<p class="overline ...">The quick brown fox ...</p>
-<p class="line-through ...">The quick brown fox ...</p>
-<p class="no-underline ...">The quick brown fox ...</p>
-
-!! color
-
-<div>
-  <p>
-    I’m xxx, an astro-engineer based in Tattooine. I like to build X-Wings at
-    <a class="underline decoration-sky-500">My Company, Inc</a>.
-    Outside of work, I like to <a class="underline decoration-pink-500">watch
-    pod-racing</a> and have <a class="underline decoration-indigo-500">light-saber</a> fights.
-  </p>
-</div>
-
-!! downarrow
-
-<svg class="animate-bounce w-6 h-6 ..." stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"></path>
-</svg>
+<$macrocall $name="tabs" tabsList="[all[tiddlers+shadows]prefix[$:/plugins/oeyoews/tiddlywiki-tailwindcss/docs/]sort[title]]" default={{{ [all[tiddlers+shadows]prefix[$:/plugins/oeyoews/tiddlywiki-tailwindcss/docs/]sort[title]first[]] }}} state="$:/state/tiddlywiki-tailwindcss/docs-tab" explicitState="$:/state/tiddlywiki-tailwindcss/docs-tab-en" class="tc-vertical" template=""/>
 
 !! Pulse(wip)
 

@@ -1,0 +1,18 @@
+created: 20230321150118888
+creator: oeyoews
+modified: 20230321150203894
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: vertical-button
+type: text/vnd.tiddlywiki
+
+.tc-tab-buttons.tc-vertical button {
+    display: block;
+    width: 100%;
+    margin-top: none;
+    margin-right: 0px;
+    text-align: right;
+    background-color: rgb(238, 238, 238);
+		border: none;
+    border-radius: 2px 0px 0px 2px;
+}

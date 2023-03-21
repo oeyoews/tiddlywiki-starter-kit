@@ -1,0 +1,9 @@
+title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/docs/text
+caption: text
+
+!! Text
+
+<p class="underline ...">The quick brown fox ...</p>
+<p class="overline ...">The quick brown fox ...</p>
+<p class="line-through ...">The quick brown fox ...</p>
+<p class="no-underline ...">The quick brown fox ...</p>

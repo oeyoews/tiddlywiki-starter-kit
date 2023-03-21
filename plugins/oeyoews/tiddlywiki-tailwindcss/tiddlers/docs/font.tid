@@ -1,0 +1,7 @@
+title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/docs
+caption: font
+
+!! Font smoothing
+
+<p class="subpixel-antialiased ...">The quick brown fox ...</p>
+<p class="antialiased ...">The quick brown fox ...</p>

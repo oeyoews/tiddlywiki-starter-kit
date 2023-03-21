@@ -1,0 +1,14 @@
+title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/docs/ulist
+caption: ulist
+
+!! Ulist
+
+<ul class="list-inside ...">
+  <li>5 cups chopped Porcini mushrooms</li>
+  <!-- ... -->
+</ul>
+
+<ul class="list-outside ...">
+  <li>5 cups chopped Porcini mushrooms</li>
+  <!-- ... -->
+</ul>

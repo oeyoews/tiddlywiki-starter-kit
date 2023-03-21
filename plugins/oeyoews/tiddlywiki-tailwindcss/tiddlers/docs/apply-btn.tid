@@ -1,6 +1,5 @@
-title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/apply-btn
-
-!! btn
+title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/docs/apply-btn
+caption: apply btn
 
 > Extracting classes using @apply
 
