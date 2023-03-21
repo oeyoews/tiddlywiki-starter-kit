@@ -8703,6 +8703,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="bing-go"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="bing-image-generator"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="build external image"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="calendar"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9802,7 +9804,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "200";
+  content: "201";
 }
 .user-panel-avatar {
   position: relative;
@@ -10215,6 +10217,7 @@ ol.doc-github-contributors li {
   }
 }
 .gravatar-56 {
+  display: inline;
   position: relative;
   max-width: 56px;
   max-height: 56px;
@@ -11219,6 +11222,7 @@ hr {
   border: none !important;
   border-radius: 3px;
 }.gradient {
+  display: inline;
   background-image: linear-gradient(135deg, #12c2e9, #ffafbd, #c9ffbf);
   -webkit-background-clip: text;
   color: transparent;
