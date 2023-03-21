@@ -1,86 +1,70 @@
 /*\
-title: $:/plugins/oeyoews/tiddlywiki-gravatar/gqwidget.js
+title: $:/plugins/oeyoews/tiddlywiki-gravatar/widget.js
 type: application/javascript
 module-type: widget
 
-Gravatar and QQ Avatar Widget
-
+gravatar widget
 \*/
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
-  'use strict';
 
-  var Widget = require('$:/core/modules/widgets/widget.js').widget;
-  var md5 = require('$:/plugins/oeyoews/tiddlywiki-gravatar/md5.min.js');
+  // if (!$tw.browser) return;
 
-  var AvatarWidget = function (parseTreeNode, options) {
-    this.initialise(parseTreeNode, options);
-  };
+  const Widget = require('$:/core/modules/widgets/widget.js').widget;
+  // this md5 lib maybe is the reason of failure to render html
+  const md5 = require('$:/plugins/oeyoews/tiddlywiki-gravatar/md5.min.js');
 
-  /*
-  Inherit from the base widget class
-  */
-  AvatarWidget.prototype = new Widget();
-
-  /*
-  Render this widget into the DOM
-  */
-  AvatarWidget.prototype.render = function (parent, nextSibling) {
-    this.parentDomNode = parent;
-    this.computeAttributes();
-    this.execute();
-    var getDefaultEmail = $tw.wiki.getTiddlerText(
-      '$:/config/plugins/oeyoews/tiddlywiki-gravatar/email',
-    );
-    var width = this.getAttribute('width', '56');
-    var type = this.getAttribute('type', 'qq');
-    var email = this.getAttribute(
-      'email',
-      getDefaultEmail || '2956398608@qq.com',
-    );
-    var gclass = this.getAttribute('gclass', 'gravatar-56');
-    var size = this.getAttribute('size', '100');
-    var alt = this.getAttribute('alt', 'Avatar');
-    var src = `https://q1.qlogo.cn/g?b=qq&nk=${email}&s=${size}`;
-
-    // qq is default
-    if (type === 'qq') {
-      src = `https://q1.qlogo.cn/g?b=qq&nk=${email}&s=${size}`;
+  class Gravatar extends Widget {
+    constructor(parseTreeNode, options) {
+      super(parseTreeNode, options);
     }
-    // gravatar en
-    if (type === 'gravatar-en') {
+
+    // TODO support use fancybox to view
+    render(parent, nextSibling) {
+      this.parentDomNode = parent;
+      this.computeAttributes();
+      this.execute();
+
+      const getDefaultEmail = $tw.wiki.getTiddlerText(
+        '$:/config/plugins/oeyoews/tiddlywiki-gravatar/email',
+      );
+      const email = this.getAttribute(
+        'email',
+        getDefaultEmail || 'jyao4783@gmail.com',
+      );
+      // size conflict with style be fixed
+      // size will effect this image clear, dont modify it easily
+      const size = this.getAttribute('size', '100');
+      // image size(container)
+      const width = this.getAttribute('width', '56');
+      // add width
+      // dont modify it, unless you know that how to work
+      const gclass = this.getAttribute('gclass', 'gravatar-56');
+      const galt = this.getAttribute('alt', 'gravatar');
+
+      const gravatarUrl = this.getGravatarUrl(email, size);
+
+      const gContainer = this.document.createElement('div');
+      gContainer.className = gclass;
+      gContainer.setAttribute('style', `max-width: ${width}px;`);
+
+      const img = this.document.createElement('img');
+      img.src = gravatarUrl;
+      img.alt = galt;
+
+      gContainer.appendChild(img);
+      parent.insertBefore(gContainer, nextSibling);
+      this.domNodes.push(gContainer);
+    }
+
+    getGravatarUrl(email, size) {
       const hash = md5(email.trim().toLowerCase());
-      src = `https://en.gravatar.com/avatar/${hash}?s=${size}`;
+      // cn or en add options
+      const url = `https://cn.gravatar.com/avatar/${hash}?s=${size}`;
+      return url;
     }
-    // gravatar cn
-    if (type === 'gravatar-cn') {
-      const hash = md5(email.trim().toLowerCase());
-      src = `https://cn.gravatar.com/avatar/${hash}?s=${size}`;
-    }
-    // Create element
-    const avatarContainer = this.document.createElement('span');
-    avatarContainer.className = gclass;
-    avatarContainer.setAttribute('style', `max-width: ${width}px`);
+  }
 
-    var img = this.document.createElement('img');
-    img.setAttribute('src', src);
-    img.setAttribute('alt', alt);
-    // img.setAttribute('class', gclass);
-    img.setAttribute('style', `max-width: ${width}px`);
-
-    avatarContainer.appendChild(img);
-    // Insert element
-    parent.insertBefore(avatarContainer, nextSibling);
-    this.domNodes.push(avatarContainer);
-  };
-
-  /*
-  Compute the internal state of the widget
-  */
-  AvatarWidget.prototype.execute = function () {
-    // Nothing to do
-  };
-
-  exports['avatar'] = AvatarWidget;
+  exports.gravatar = Gravatar;
 })();

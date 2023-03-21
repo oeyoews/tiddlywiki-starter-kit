@@ -39,7 +39,7 @@ Render this widget into the DOM
       gclass = this.getAttribute('gclass', 'gravatar-56'),
       src = 'https://q1.qlogo.cn/g?b=qq&nk=' + qq + '&s=' + size;
     // Create element
-    const qqContainer = this.document.createElement('span');
+    const qqContainer = this.document.createElement('div');
     qqContainer.setAttribute('style', `max-width: ${width}px`);
     qqContainer.className = gclass;
 
