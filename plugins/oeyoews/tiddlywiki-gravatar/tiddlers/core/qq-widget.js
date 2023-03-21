@@ -32,13 +32,15 @@ Render this widget into the DOM
     const getDefaultEmail = $tw.wiki.getTiddlerText(
       '$:/config/plugins/oeyoews/tiddlywiki-gravatar/email',
     );
+    const width = this.getAttribute('width', '56');
     var qq = this.getAttribute('qq', getDefaultEmail || '2956398608'),
       size = this.getAttribute('size', '100'),
       alt = this.getAttribute('alt', 'QQ Avatar'),
       gclass = this.getAttribute('gclass', 'gravatar-56'),
       src = 'https://q1.qlogo.cn/g?b=qq&nk=' + qq + '&s=' + size;
     // Create element
-    const qqContainer = this.document.createElement('div');
+    const qqContainer = this.document.createElement('span');
+    qqContainer.setAttribute('style', `max-width: ${width}px`);
     qqContainer.className = gclass;
 
     var img = this.document.createElement('img');

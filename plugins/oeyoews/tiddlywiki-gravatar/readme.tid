@@ -42,7 +42,7 @@ title: $:/plugins/oeyoews/tiddlywiki-gravatar/readme
 `$:/config/plugins/oeyoews/tiddlywiki-gravatar/email` is config file
 
 ```
-<$gravatar email="xxx" />
+<$gravatar email="xxx" width="56"/>
 <$qq-avatar email="xxx" />
 ```
 
@@ -51,7 +51,7 @@ title: $:/plugins/oeyoews/tiddlywiki-gravatar/readme
 
 !! TODO
 
-* missing img src ???
+<!-- * missing img src ??? -->
 > use qq-avatar widget, no extra dependency
 
 * merge qq avatar and gravatar

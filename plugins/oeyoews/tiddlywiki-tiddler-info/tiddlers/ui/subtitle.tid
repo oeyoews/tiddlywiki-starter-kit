@@ -8,10 +8,15 @@ tags: $:/tags/ViewTemplate
 <div class="tc-subtitle">
 <!-- 300 -->
 <$list filter="[all[current]has[creator]]">
+<!-- <span class="nauthor"> -->
+<!--   <a style="text-decoration: none !important;" href={{{ [<tid>get[ousername]else[oeyoews]addprefix[https://github.com/]] }}} target="_blank" rel="noopener noreferrer"> -->
+<!--     <$image source={{{ [<tid>get[ouserimage]else<tidGravatar>]}}} width=22 /> -->
+<!--   </a> -->
+<!-- {{!!creator}} &nbsp; -->
 <span class="nauthor">
-  <a style="text-decoration: none !important;" href={{{ [<tid>get[ousername]else[oeyoews]addprefix[https://github.com/]] }}} target="_blank" rel="noopener noreferrer">
-    <$image source={{{ [<tid>get[ouserimage]else<tidGravatar>]}}} width=22 />
-</a>
+  <a style="text-decoration: none;" href={{{ [<currentTiddler>get[creator]addprefix[https://github.com/]] }}} class="tc-tiddlylink-external" target="_blank" rel="noopener noreferrer">
+    <$qq-avatar width=22 />
+  </a>
 {{!!creator}} &nbsp;
 </span>
 </$list>
@@ -46,7 +51,7 @@ tags: $:/tags/ViewTemplate
 <!-- https have bug, will creat http: tid -->
 <!-- GettingStarted not work filter -->
 <$list filter="[all[current]!is[system]!is[binary]]">
-<<tid-size>>
+<!-- <<tid-size>> -->
 <<opublish>>
 </$list>
 

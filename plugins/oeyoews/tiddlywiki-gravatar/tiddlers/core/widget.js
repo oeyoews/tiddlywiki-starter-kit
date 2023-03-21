@@ -34,15 +34,20 @@ gravatar widget
         getDefaultEmail || 'jyao4783@gmail.com',
       );
       // size conflict with style be fixed
+      // size will effect this image clear, dont modify it easily
       const size = this.getAttribute('size', '100');
+      // image size(container)
+      const width = this.getAttribute('width', '56');
       // add width
+      // dont modify it, unless you know that how to work
       const gclass = this.getAttribute('gclass', 'gravatar-56');
       const galt = this.getAttribute('alt', 'gravatar');
 
       const gravatarUrl = this.getGravatarUrl(email, size);
 
-      const gContainer = this.document.createElement('div');
+      const gContainer = this.document.createElement('span');
       gContainer.className = gclass;
+      gContainer.setAttribute('style', `max-width: ${width}px;`);
 
       const img = this.document.createElement('img');
       img.src = gravatarUrl;
