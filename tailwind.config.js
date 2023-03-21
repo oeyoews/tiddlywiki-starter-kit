@@ -21,4 +21,5 @@ module.exports = {
       appearance: ['hover', 'focus'],
     },
   },
+  plugins: [require('@tailwindcss/typography')],
 };
