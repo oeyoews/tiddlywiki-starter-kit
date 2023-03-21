@@ -38,7 +38,8 @@
     "oeyoews/tiddlywiki-static-page",
     "oeyoews/tiddlywiki-tailwindcss",
     "oeyoews/tiddlywiki-tiddler-info",
-    "oeyoews/tiddlywiki-gravatar",
+    "oeyoews/tiddlywiki-gravatar",   
+    "oeyoews/tiddlywiki-empty-story", 
     "oeyoews/tiddlywiki-widgets"
   ],
   "themes": [
