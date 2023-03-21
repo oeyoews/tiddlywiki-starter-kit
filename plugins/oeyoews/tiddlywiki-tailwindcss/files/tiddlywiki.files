@@ -5,6 +5,7 @@
       "fields": {
         "title": "$:/plugins/oeyoews/tiddlywiki-tailwindcss/styles.min.css",
         "type": "text/css",
+        "description": "Tailwindcss Styles",
         "tags": "$:/tags/Stylesheet"
       }
     }
