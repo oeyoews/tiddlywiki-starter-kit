@@ -2,12 +2,6 @@ title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/Tailwindcss
 
 <$macrocall $name="tabs" tabsList="[all[tiddlers+shadows]prefix[$:/plugins/oeyoews/tiddlywiki-tailwindcss/docs/]sort[title]]" default={{{ [all[tiddlers+shadows]prefix[$:/plugins/oeyoews/tiddlywiki-tailwindcss/docs/]sort[title]first[]] }}} state="$:/state/tiddlywiki-tailwindcss/docs-tab" explicitState="$:/state/tiddlywiki-tailwindcss/docs-tab-en" class="tc-vertical" template=""/>
 
-!! Indext
-
-<div class="indent-2">
-indent-2
-</div>
-
 !! opacity
 
 <button class="bg-indigo-500 opacity-100 ..."></button>

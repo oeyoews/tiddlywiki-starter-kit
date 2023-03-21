@@ -15,6 +15,7 @@
     "dev": "nodemon --watch dev --ext tid --exec tiddlywiki --listen port=8081"
   },
   "dependencies": {
+    "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.14",
     "dateformat": "^5.0.3",

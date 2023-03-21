@@ -1,7 +1,32 @@
 title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/docs/typography
 caption: typography
 
-<article class="prose lg:prose-xl">
+!! prose
+
+<article class="prose prose-stone indent-8">
+    But a recent study shows that the celebrated appetizer may be linked to a series of rabies cases
+    springing up around the country.
+</article>
+
+<article class="prose prose-slate indent-8">
+    But a recent study shows that the celebrated appetizer may be linked to a series of rabies cases
+    springing up around the country.
+</article>
+
+<article class="prose prose-zinc indent-8">
+    But a recent study shows that the celebrated appetizer may be linked to a series of rabies cases
+    springing up around the country.
+</article>
+
+<article class="prose prose-neutral indent-8">
+    But a recent study shows that the celebrated appetizer may be linked to a series of rabies cases
+    springing up around the country.
+</article>
+
+> sm base lg xl 2xl
+> 14px 16px 18px 20px 24px
+
+<article class="prose prose-base indent-8">
   <p>
     For years parents have espoused the health benefits of eating garlic bread with cheese to their
     children, with the food earning such an iconic status in our culture that kids will often dress
@@ -11,5 +36,21 @@ caption: typography
     But a recent study shows that the celebrated appetizer may be linked to a series of rabies cases
     springing up around the country.
   </p>
-  <!-- ... -->
+</article>
+
+<article class="prose prose-md indent-8">
+  <p>
+  The quick brown fox jumps over the lazy dog
+
+  敏捷的棕色狐狸跳过了懒狗
+  敏捷的棕色狐狸跳过了懒狗
+  敏捷的棕色狐狸跳过了懒狗
+  敏捷的棕色狐狸跳过了懒狗
+  敏捷的棕色狐狸跳过了懒狗
+  </p>
+  <p>
+    The quick brown fox jumps over the lazy dog
+    But a recent study shows that the celebrated appetizer may be linked to a series of rabies cases
+    springing up around the country.
+  </p>
 </article>

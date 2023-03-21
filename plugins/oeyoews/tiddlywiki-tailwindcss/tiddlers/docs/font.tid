@@ -1,21 +1,22 @@
 title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/docs/font
 caption: font
 
-!! Font smoothing
-
-<p class="subpixel-antialiased ...">The quick brown fox ...</p>
-<p class="antialiased ...">The quick brown fox ...</p>
-
 !! font style
 
 <p class="italic ...">The quick brown fox ...</p>
 <p class="not-italic ...">The quick brown fox ...</p>
 
-!! font-bold
+!! font weight
 
-<div class="font-bold" >
-font-bold
-</div>
+<p class="font-thin ...">The quick brown fox ...</p>
+<p class="font-extralight ...">The quick brown fox ...</p>
+<p class="font-light ...">The quick brown fox ...</p>
+<p class="font-normal ...">The quick brown fox ...</p>
+<p class="font-medium ...">The quick brown fox ...</p>
+<p class="font-semibold ...">The quick brown fox ...</p>
+<p class="font-bold ...">The quick brown fox ...</p>
+<p class="font-extrabold ...">The quick brown fox ...</p>
+<p class="font-black ...">The quick brown fox ...</p>
 
 !! font-size
 

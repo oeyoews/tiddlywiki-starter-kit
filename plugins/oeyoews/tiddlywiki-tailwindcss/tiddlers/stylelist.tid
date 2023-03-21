@@ -1,5 +1,8 @@
 title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/stylelist
 
-* font-bold
+* font-{thin light normal bold} italic
+* text-{sm base lg xl 2xl}
 * rounded-full, rounded-md
+* indent-8
+* prose
 * ...(WIP)

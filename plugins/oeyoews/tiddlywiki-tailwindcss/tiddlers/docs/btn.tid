@@ -3,15 +3,19 @@ caption: apply btn
 
 > Extracting classes using @apply
 
-<button class="btn-green">
+<button class="tw-btn-gradient">
+  Focus me
+</button>
+
+<button class="tw-btn-green">
   Button
 </button>
 
-<button class="btn-yellow">
+<button class="tw-btn-yellow">
   Button
 </button>
 
-<button class="btn-blue">
+<button class="tw-btn-blue">
   Click me
 </button>
 
