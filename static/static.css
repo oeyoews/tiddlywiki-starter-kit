@@ -8773,6 +8773,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="hi-oeyoews"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="icon-adguard"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="Index"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="init-tiddlywiki-folder"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9164,6 +9166,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   [data-tiddler-title="use-root-tiddler"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="v2raya-tray-git"] .tc-titlebar h2 { text-transform: capitalize; }
+
+  [data-tiddler-title="virtual-network"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="xiaofamao"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -9798,7 +9802,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "198";
+  content: "200";
 }
 .user-panel-avatar {
   position: relative;
