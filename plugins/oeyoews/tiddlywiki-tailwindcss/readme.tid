@@ -36,4 +36,5 @@ title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/readme
 
 !! TODO
 
+* support basic style(wip)
 * 支持Tailwindcss的高级用法
