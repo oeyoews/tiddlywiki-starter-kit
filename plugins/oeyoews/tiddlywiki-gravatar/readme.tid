@@ -29,14 +29,20 @@ title: $:/plugins/oeyoews/tiddlywiki-gravatar/readme
 
 !! Example
 
-> global
+> general
+* <$avatar />
+* <$avatar width=22/>
+
+> gravatar(cn)
 * <$gravatar />
+* <$gravatar width=108/>
 
 > qq
 * <$qq-avatar />
 
 !! usage
 
+> 默认最大高度为56
 > support qq email
 
 `$:/config/plugins/oeyoews/tiddlywiki-gravatar/email` is config file
@@ -44,6 +50,8 @@ title: $:/plugins/oeyoews/tiddlywiki-gravatar/readme
 ```
 <$gravatar email="xxx" width="56"/>
 <$qq-avatar email="xxx" />
+// default is qq, support gravatar-en and gravatar-cn params
+<$avatar type="qq"/>
 ```
 
 * https://cn.gravatar.com/emails/
@@ -52,6 +60,6 @@ title: $:/plugins/oeyoews/tiddlywiki-gravatar/readme
 !! TODO
 
 <!-- * missing img src ??? -->
-> use qq-avatar widget, no extra dependency
+> use qq-avatar widget, no extra dependency(for static)
 
-* merge qq avatar and gravatar
+<!-- * merge qq avatar and gravatar -->
