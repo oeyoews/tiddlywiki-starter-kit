@@ -9171,6 +9171,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="v2raya-tray-git"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="vertical-button"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="virtual-network"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="xiaofamao"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9538,7 +9540,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 80";
+  content: " 81";
 }
 
 
@@ -11303,6 +11305,7 @@ button {
   border: none;
   border-radius: 3px;
   background: #00000008;
+  text-transform: capitalize;
 }.tc-modal-backdrop {
   cursor: pointer;
 }
@@ -11525,4 +11528,13 @@ button.tc-unfold-banner {
 }.reveal .slide-number {
 	color: #3FA1EA;
 	background-color: transparent;
+}.tc-tab-buttons.tc-vertical button {
+    display: block;
+    width: 100%;
+    margin-top: none;
+    margin-right: 0px;
+    text-align: right;
+    background-color: rgb(238, 238, 238);
+		border: none;
+    border-radius: 2px 0px 0px 2px;
 }
