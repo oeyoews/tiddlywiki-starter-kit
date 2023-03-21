@@ -3,7 +3,7 @@
 <center>
 <!-- badges -->
 <a href="https://tiddlywiki.com" target="_blank">
-  <img src="https://img.shields.io/badge/TiddlyWiki5-5.2.6 prelease-green?style=flat" />
+  <img src="https://img.shields.io/badge/TiddlyWiki5-5.2.7 prelease-green?style=flat" />
 </a>
 <a href="https://gitter.im/oeyoews/neotw?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge" target="_blank">
   <img src="https://img.shields.io/gitter/room/oeyoews/neotw?logo=gitter&color=50BA9A" />
