@@ -68,7 +68,9 @@
 > **Note**
 > require git and npm and not compatible vanilla theme
 
-> 不建议使用 root-tiddler 参数(虽然使用有很多好处)
+> not recommended use root-tiddler params
+
+> README File use soft link, so not support on Windows to show readme file in tiddlywiki
 
 ```bash
 git clone --depth 1 https://github.com/oeyoews/neotw
