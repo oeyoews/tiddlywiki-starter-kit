@@ -1,26 +1,17 @@
 title: apply test
 
-<!-- Using utilities -->
-<button class="py-2 px-4 font-semibold rounded-lg shadow-md text-white bg-green-500 hover:bg-green-700">
-  Click me
-</button>
+!! btn
 
-<!-- Extracting classes using @apply -->
-<button class="btn btn-green">
+> Extracting classes using @apply
+
+<button class="btn-green">
   Button
 </button>
 
-!! btn
-
-<button class="btn-indigo">
-  Click me
+<button class="btn-yellow">
+  Button
 </button>
 
-<style>
-  .btn {
-    @apply py-2 px-4 font-semibold rounded-lg shadow-md;
-  }
-  .btn-green {
-    @apply text-white bg-green-500 hover:bg-green-700;
-  }
-</style>
+<button class="btn-blue">
+  Click me
+</button>

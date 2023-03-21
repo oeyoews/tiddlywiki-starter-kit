@@ -15,6 +15,7 @@
     "dev": "nodemon --watch dev --ext tid --exec tiddlywiki --listen port=8081"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.14",
     "dateformat": "^5.0.3",
     "dotenv": "^16.0.3",
     "gradient-string": "^2.0.2",
@@ -22,6 +23,7 @@
     "nodemon": "^2.0.20",
     "open": "^8.4.0",
     "portfinder": "^1.0.32",
+    "postcss": "^8.4.21",
     "prompts": "^2.4.2",
     "replace": "^1.2.2",
     "signale": "^1.4.0",
