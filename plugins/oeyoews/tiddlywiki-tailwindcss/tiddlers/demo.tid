@@ -1,10 +1,10 @@
 title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/demo
 
 <div class="flex justify-center">
-  <button class="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-pink-500 hover:to-purple-500 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out">
+  <button class="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-pink-500 hover:to-purple-500 text-white font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out">
     Get Started
   </button>
-<span class="relative flex h-3 w-3">
+&nbsp;<span class="relative flex h-3 w-3">
   <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
   <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
 </span>
@@ -71,9 +71,7 @@ title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/demo
 !! spin
 
 <button type="button" class="bg-indigo-500 ..." disabled>
-  <svg class="animate-spin h-5 w-5 mr-3 ..." viewBox="0 0 24 24">
-    <!-- ... -->
-  </svg>
+  <i class="fas fa-spinner fa-pulse"></i>
   Processing...
 </button>
 
@@ -180,7 +178,7 @@ indent-2
 </select>
 
 <div class="flex justify-center">
-<button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out">
+<button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out">
   The end
 </button>
 </div>

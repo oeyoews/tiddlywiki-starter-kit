@@ -22,10 +22,10 @@ title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/readme
 </div>
 
 <div class="flex justify-center">
-<$button setTitle=<<tabsState>> setField="text" setTo="demo" class="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-pink-500 hover:to-purple-500 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out">
+<$button setTitle=<<tabsState>> setField="text" setTo="demo" class="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-pink-500 hover:to-purple-500 text-white font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out">
   Getstarted
 </$button>
-<span class="relative flex h-3 w-3">
+&nbsp;<span class="relative flex h-3 w-3">
   <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
   <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
 </span>
