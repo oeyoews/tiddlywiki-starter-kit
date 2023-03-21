@@ -1,3 +1,6 @@
 title: $:/SiteTitle
 
-[img width=22 [$:/favicon.ico]] <span class="neotw-fw nw-gradient">Neotw</span> <sup class="nw-gradient">rolling</sup>
+<div class="gradient">
+  [img width=22 [$:/favicon.ico]]
+  Neotw <sup class="gradient">rolling</sup>
+</div>
