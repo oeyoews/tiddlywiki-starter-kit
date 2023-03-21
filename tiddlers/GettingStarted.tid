@@ -8,7 +8,7 @@ modifier: oeyoews
 page-cover: banner.png
 pin: yes
 publish: article
-tags: 
+tags:
 title: GettingStarted
 type: text/vnd.tiddlywiki
 
@@ -29,9 +29,8 @@ type: text/vnd.tiddlywiki
 <<tabs "$:/plugins/oeyoews/neotw/Readme neotw-guides PLUGINS $:/AdvancedSearch neotw/INBOX neotw-reveal-js neotw-music" "$:/plugins/oeyoews/neotw/Readme" "$:/state/tab/neotw">>
 </$list>
 
-
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
-{{$:/plugins/oeyoews/neotw/readme-lang}}
+{{$:/plugins/oeyoews/neotw/Readme}}
 </$list>
 
 <hr>
