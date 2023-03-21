@@ -1,5 +1,4 @@
 title: $:/plugins/oeyoews/neotw/Readme
-type: markdown
 caption: Readme
 
 <$list filter="[[$:/language]get[text]match[$:/languages/zh-Hans]]">

@@ -1,0 +1,18 @@
+{
+  "tiddlers": [
+    {
+      "file": "README.md",
+      "fields": {
+        "type": "text/markdown",
+        "title": "$:/plugins/oeyoews/neotw/README"
+      }
+    },
+    {
+      "file": "README-CN.md",
+      "fields": {
+        "type": "text/markdown",
+        "title": "$:/plugins/oeyoews/neotw/README-CN"
+      }
+    }
+  ]
+}
