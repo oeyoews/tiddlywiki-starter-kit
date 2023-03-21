@@ -1,4 +1,4 @@
-tags: $:/tags/Macro
+<!-- tags: $:/tags/Macro -->
 title: $:/plugins/oeyoews/neotw/system/macro
 
 \define neotw-username(username:"oeyoews")
@@ -16,4 +16,12 @@ $username$
 <summary>$summary$</summary>
 $text$
 </details>
+\end
+
+\define shield(label,status,colour)
+\whitespace trim
+  <div class="shield shield-$colour$">
+    <span class="label">$label$</span>
+    <span class="status">$status$</span>
+  </div>
 \end

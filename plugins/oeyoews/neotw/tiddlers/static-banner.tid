@@ -1,11 +1,6 @@
-created: 20230319122845263
-creator: oeyoews
-modified: 20230320145157825
-modifier: oeyoews
-tags: 
 title: $:/StaticBanner
-type: text/vnd.tiddlywiki
 
+<!-- use trim  -->
 <$list filter="[[$:/StoryList]get[list]count[]match[0]]">
 <center>
 <$qq-avatar />
