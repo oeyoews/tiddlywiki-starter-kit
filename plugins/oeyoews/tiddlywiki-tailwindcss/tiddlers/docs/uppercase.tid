@@ -1,0 +1,16 @@
+title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/docs/uppercase
+caption: uppercase
+
+!! uppercase
+
+<div class="uppercase">
+uppercase
+</div>
+
+<div class="lowercase">
+LOWERCASE
+</div>
+
+<div class="capitalize">
+capitalize
+</div>

@@ -14,3 +14,10 @@ caption: apply btn
 <button class="btn-blue">
   Click me
 </button>
+
+!! border-radius
+
+<button class="bg-red-500 rounded ...">default</button>
+<button class="bg-yellow-500 rounded-md ...">md</button>
+<button class="bg-blue-500 rounded-lg ...">lg</button>
+<button class="bg-green-500 rounded-full ...">full</button>
