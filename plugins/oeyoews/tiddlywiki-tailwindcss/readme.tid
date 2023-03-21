@@ -30,12 +30,6 @@ title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/readme
 * [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/tiddlywiki-tailwindcss]]
 * [[Demo|https://oeyoews.github.io/neotw]]
 
-<!-- !! NOTE -->
-
-<!-- * 此插件目前仅作为个人练习测试 Tailwindcss 使用 -->
-<!-- > https://github.com/benwebber/tiddlywiki-plugins -->
-
 !! TODO
 
-* support basic style(wip)
-* ~~support apply~~
+> support basic style <sup>beta</sup>
