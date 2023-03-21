@@ -1,3 +1,10 @@
+# [3.155.0](https://github.com/oeyoews/neotw/compare/v3.154.0...v3.155.0) (2023-03-21)
+
+
+### Features
+
+* add typography plugin for tiddlywiki-tailwindcss ([f19a3dd](https://github.com/oeyoews/neotw/commit/f19a3ddf0e2860d4d419f70bf557e92303971dee))
+
 # [3.154.0](https://github.com/oeyoews/neotw/compare/v3.153.0...v3.154.0) (2023-03-21)
 
 
