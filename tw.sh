@@ -24,7 +24,7 @@ while getopts ":d:" opt; do
 done
 shift $((OPTIND -1))
 
-dirPath=${dirPath:-"./plugins/tiddlywiki-tailwindcss"}
+dirPath=${dirPath:-"./plugins/oeyoews/tiddlywiki-tailwindcss"}
 inputPath="$dirPath/files/styles.css"
 outputPath="$dirPath/files/styles.min.css"
 content="$dirPath/**/*.tid"
