@@ -27,7 +27,7 @@
     "signale": "^1.4.0",
     "tailwindcss": "^3.2.7",
     "terser": "^5.16.6",
-    "tiddlywiki": "github:oeyoews/TiddlyWiki5#8d39ce95ebb26ea32ddc8b3102334b2081641df2",
+    "tiddlywiki": "github:oeyoews/TiddlyWiki5#925ff202a07689882e9670fb1426167076f8bb7a",
     "zx": "^7.2.0"
   },
   "bugs": {
