@@ -49,7 +49,7 @@ await spinner('Building ...', async () => {
   await $`cp -r files vercel.json ${dist}`;
   // copy readme file
   // TODO: add cn readme
-  await $`cp plugins/oeyoews/neotw/files/README.md README.md`;
+  // await $`cp plugins/oeyoews/neotw/files/README.md README.md`;
   // msg
   msg.finish('Building Finished(for oyeoews)');
 });
