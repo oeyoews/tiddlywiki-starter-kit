@@ -1,3 +1,10 @@
+## [3.156.3](https://github.com/oeyoews/neotw/compare/v3.156.2...v3.156.3) (2023-03-22)
+
+
+### Bug Fixes
+
+* remove githubcalendar ([13474e5](https://github.com/oeyoews/neotw/commit/13474e56d296a463ae43486b78023e081b0a2cc5))
+
 ## [3.156.2](https://github.com/oeyoews/neotw/compare/v3.156.1...v3.156.2) (2023-03-22)
 
 
