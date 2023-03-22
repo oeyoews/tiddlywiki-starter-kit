@@ -29,9 +29,9 @@
 
 ## Intro :tada:
 
-> A modern style notebook based on `tiddlywiki`. @oeyoews
+> A modern style notebook based on tiddlywiki. @oeyoews
 
-> Here is a [» demo «](https://oeyoews.github.io/neotw)
+> Here is a [Demo](https://oeyoews.github.io/neotw)
 
 <details>
 <summary>Intro 🤖</summary>
@@ -59,7 +59,7 @@
 - 标题支持别名
 - ...
 
-> **Warning** `Neotw` 部分功能暂时还未单独做成插件，或者部分功能依赖与其他插件, 不建议单独使用
+> **Warning** 部分配置暂时还未单独做成插件，或者依赖与其他插件, 不建议单独使用
 
 ## Playground(stackblitz)
 

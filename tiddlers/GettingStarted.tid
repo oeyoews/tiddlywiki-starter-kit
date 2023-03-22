@@ -3,7 +3,7 @@ created: 20230117102714737
 creator: oeyoews
 giscus: yes
 icon: tom.png
-modified: 20230322063627538
+modified: 20230322081456645
 modifier: oeyoews
 page-cover: banner.png
 pin: yes
@@ -13,32 +13,15 @@ title: GettingStarted
 type: text/vnd.tiddlywiki
 
 <center>
-<$list filter="[{$:/info/url/protocol}match[http:]]">
-<$ohitokoto refreshTime="600000"/>
-</$list>
+	{{$:/plugins/oeyoews/tiddlywiki-github-share/embed-emptystory}}
 </center>
 
-<center>
-{{$:/plugins/oeyoews/tiddlywiki-github-share/embed-emptystory}}
-
-<!--
-{{neotw-badges}}
--->
-
-</center>
-
-<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
-<<tabs "$:/plugins/oeyoews/neotw/Readme neotw-guides PLUGINS $:/AdvancedSearch neotw/INBOX neotw-reveal-js neotw-music" "$:/plugins/oeyoews/neotw/Readme" "$:/state/tab/neotw">>
-</$list>
-
-<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
 {{$:/plugins/oeyoews/neotw/Readme}}
-</$list>
 
 <hr>
 
 {{$:/plugins/oeyoews/neotw/ui/download-neotw-empty}}
 
 <$list filter="[{$:/info/url/protocol}match[https:]]">
-<$siteuptime />
+	<$siteuptime />
 </$list>
