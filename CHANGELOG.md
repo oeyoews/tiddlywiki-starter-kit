@@ -1,3 +1,10 @@
+## [3.155.1](https://github.com/oeyoews/neotw/compare/v3.155.0...v3.155.1) (2023-03-22)
+
+
+### Performance Improvements
+
+* use html for tiddlywiki-tailwindcss ([de38864](https://github.com/oeyoews/neotw/commit/de38864753df79c318c25d49ced887f743596909))
+
 # [3.155.0](https://github.com/oeyoews/neotw/compare/v3.154.0...v3.155.0) (2023-03-21)
 
 
