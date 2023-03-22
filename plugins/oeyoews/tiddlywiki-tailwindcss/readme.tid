@@ -49,6 +49,7 @@ title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/readme
 
 * support basic style <sup>beta</sup>
 * support import custom.styles.css(done)
+* suppose tailwindui
 * ~~support daisyui~~
 * overwrite tiddlywiki palette with tailwindcss preset
 * use watch to compile styles.min.css
