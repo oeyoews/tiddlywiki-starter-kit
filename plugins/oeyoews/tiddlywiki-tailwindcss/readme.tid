@@ -43,6 +43,7 @@ title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/readme
 
 !! NOTE
 
+* 由于tiddlywiki 代码总是用p进行包装， 无法准确识别到真正的p标签, 所以无法借助 prose-p:indent-8 进行自动段落缩进
 * 默认启用 important
 * disable tailwindcss [[prelight|https://tailwindcss.com/docs/preflight]] to compatiable tiddlywiki, just use tailwindcss/base to support some css variables
 

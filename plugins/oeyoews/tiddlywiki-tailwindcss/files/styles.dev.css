@@ -2006,6 +2006,10 @@
   --tw-ring-color: rgb(96 165 250 / var(--tw-ring-opacity)) !important;
 }
 
+.prose-p\:indent-8 :is(:where(p):not(:where([class~="not-prose"] *))) {
+  text-indent: 2rem !important;
+}
+
 .prose-a\:no-underline :is(:where(a):not(:where([class~="not-prose"] *))) {
   text-decoration-line: none !important;
 }
