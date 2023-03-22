@@ -1,3 +1,10 @@
+## [3.156.5](https://github.com/oeyoews/neotw/compare/v3.156.4...v3.156.5) (2023-03-22)
+
+
+### Bug Fixes
+
+* add prose-md:my-0 to suit tiddlywiki body template ([916d777](https://github.com/oeyoews/neotw/commit/916d777d04b4dbb3ff1fb790a5f43332e2fcd3e5))
+
 ## [3.156.4](https://github.com/oeyoews/neotw/compare/v3.156.3...v3.156.4) (2023-03-22)
 
 
