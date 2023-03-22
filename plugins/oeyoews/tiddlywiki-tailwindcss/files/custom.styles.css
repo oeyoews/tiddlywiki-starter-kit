@@ -1,5 +1,5 @@
 /* custom styles */
-.oeyoews {
+/* .oeyoews {
   color: gray;
   font-weight: bold;
   text-transform: capitalize;
@@ -7,4 +7,9 @@
 
 .tw-btn {
   @apply rounded-full p-1 font-bold underline bg-indigo-500 inline px-2;
-}
+} */
+
+/* this have 700 line code */
+/* .tw-wysiwyg {
+  @apply prose max-w-none prose-indigo prose-img:my-0 dark:prose-invert prose-a:no-underline;
+} */
