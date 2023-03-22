@@ -1,3 +1,10 @@
+## [3.156.1](https://github.com/oeyoews/neotw/compare/v3.156.0...v3.156.1) (2023-03-22)
+
+
+### Performance Improvements
+
+* refactor body ViewTemplate ([87fdb7e](https://github.com/oeyoews/neotw/commit/87fdb7e981b9435b205e246368adffa651b998af))
+
 # [3.156.0](https://github.com/oeyoews/neotw/compare/v3.155.1...v3.156.0) (2023-03-22)
 
 
