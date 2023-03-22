@@ -1,3 +1,10 @@
+# [3.156.0](https://github.com/oeyoews/neotw/compare/v3.155.1...v3.156.0) (2023-03-22)
+
+
+### Features
+
+* add prose max-w-none for ViewTemplate body ([ce7ac9b](https://github.com/oeyoews/neotw/commit/ce7ac9b28b7c7368717b7651efbc3ac3bb22fa03))
+
 ## [3.155.1](https://github.com/oeyoews/neotw/compare/v3.155.0...v3.155.1) (2023-03-22)
 
 
