@@ -6,6 +6,7 @@ export default async function updateCommit() {
   const headCommit = await $`git rev-parse HEAD`;
   const longid = headCommit.toString().trim();
   const shortid = longid.substring(0, 7);
+  // console.log(`${longid} and ${shortid}`);
   // const commitTimesVanilla = await $`git rev-list --all --count`;
   // const commitTimes = commitTimesVanilla.toString().trim();
 
