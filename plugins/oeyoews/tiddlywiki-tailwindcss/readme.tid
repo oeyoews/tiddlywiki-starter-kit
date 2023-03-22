@@ -50,6 +50,8 @@ title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/readme
 
 !! TODO
 
+* this hove a style have some weired
+* build tiddlywiki-tailwindcss-lite(no docs, just have styles.min.css)
 * packaging prose classes to one
 * setup precode and hr not code directly
 * support basic style <sup>beta</sup>
