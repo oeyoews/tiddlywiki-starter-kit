@@ -11257,7 +11257,7 @@ hr {
 }/* remove extra underline with image lin */
 a {
   color: #007bff;
-  text-decoration: none;
+  text-decoration: none !important;
 }/* selection */
 *::selection {
   background-color: #d7d4f0;
