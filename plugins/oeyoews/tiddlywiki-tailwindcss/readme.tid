@@ -51,5 +51,9 @@ title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/readme
 * support import custom.styles.css(done)
 * ~~support daisyui~~
 * overwrite tiddlywiki palette with tailwindcss preset
+* use watch to compile styles.min.css
 
 </div>
+
+* https://tailwindcss.com/docs/installation/play-cdn
+* https://tailwind.wyz.xyz/docs/installation

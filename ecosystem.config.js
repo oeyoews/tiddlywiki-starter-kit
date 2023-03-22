@@ -7,7 +7,7 @@ module.exports = {
       name: 'neotw',
       script: './node_modules/tiddlywiki/tiddlywiki.js',
       args: '--build listen',
-      watch: ['./plugins/oeyoews', './themes', 'tiddlywiki.info'],
+      watch: ['./plugins/oeyoews', './themes', 'tiddlywiki.info', 'README.md'],
       ignore_watch: ['./tiddlers'],
       cwd: './',
       watch_delay: 100,

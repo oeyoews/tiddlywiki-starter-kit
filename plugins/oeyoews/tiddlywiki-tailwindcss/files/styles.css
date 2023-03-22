@@ -1,11 +1,17 @@
-/* remove this base to compatiable tiddlywiki */
-/* @tailwind base; */
+/* remove this base to compatiable tiddlywiki
+@tailwind base; */
 /* @tailwind components; */
 /* @tailwind utilities; */
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import './custom.styles.css';
+
+@layer base {
+  /* hr {
+    @apply h-1 bg-gradient-to-r from-teal-400 via-pink-500 to-green-400 rounded-md border-none;
+  } */
+}
 
 @layer components {
   /* btn */

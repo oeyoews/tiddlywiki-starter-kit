@@ -1,3 +1,5 @@
 .oeyoews {
-  color: red;
+  color: gray;
+  font-weight: bold;
+  text-transform: capitalize;
 }
