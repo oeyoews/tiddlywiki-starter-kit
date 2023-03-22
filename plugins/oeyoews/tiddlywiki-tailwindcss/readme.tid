@@ -48,6 +48,7 @@ title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/readme
 
 !! TODO
 
+* setup precode not code directly
 * support basic style <sup>beta</sup>
 * support import custom.styles.css(done)
 * suppose tailwindui
