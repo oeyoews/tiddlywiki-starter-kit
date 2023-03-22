@@ -8807,8 +8807,6 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="name-your-tid"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="nav-bug"] .tc-titlebar h2 { text-transform: capitalize; }
-
   [data-tiddler-title="neoto/macro/tiddlywiki"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="neotw-badges"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9071,8 +9069,6 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="next-arrow"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="oeyoews"] .tc-titlebar h2 { text-transform: capitalize; }
-
   [data-tiddler-title="oeyoews_contributions.png"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="oeyoews.jpg"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9135,13 +9131,7 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="test-gravatar-static"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="test-info"] .tc-titlebar h2 { text-transform: capitalize; }
-
-  [data-tiddler-title="test-one"] .tc-titlebar h2 { text-transform: capitalize; }
-
   [data-tiddler-title="test-picgo"] .tc-titlebar h2 { text-transform: capitalize; }
-
-  [data-tiddler-title="test-two"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="tiddlywiki-bugs"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -9808,7 +9798,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "202";
+  content: "197";
 }
 .user-panel-avatar {
   position: relative;
