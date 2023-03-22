@@ -115,7 +115,10 @@ oeyoews  
 
 
 
-<div class="prose max-w-none"><div class="tc-tiddler-body tc-reveal"><pre class="hljs"><code class="bash hljs"><span class="hljs-meta">#!/bin/bash</span>
+
+
+
+<div class="tc-tiddler-body prose max-w-none tc-reveal"><pre class="hljs"><code class="bash hljs"><span class="hljs-meta">#!/bin/bash</span>
 
 API_KEY=<span class="hljs-variable">$OPENAI_API_KEY</span>
 <span class="hljs-comment"># Set the endpoint URL</span>
@@ -127,7 +130,8 @@ PARAMETERS=<span class="hljs-string">&#x27;{&quot;prompt&quot;: &quot;&#x27;</sp
 <span class="hljs-comment"># Send the request to the API</span>
 RESPONSE=$(curl -s -X POST -H <span class="hljs-string">&quot;Content-Type: application/json&quot;</span> -H <span class="hljs-string">&quot;Authorization: Bearer <span class="hljs-variable">$API_KEY</span>&quot;</span> -d <span class="hljs-string">&quot;<span class="hljs-variable">$PARAMETERS</span>&quot;</span> <span class="hljs-variable">$ENDPOINT</span>)
 <span class="hljs-comment"># Parse the response and print the generated text</span>
-<span class="hljs-built_in">echo</span> <span class="hljs-variable">$RESPONSE</span> | jq -r <span class="hljs-string">&#x27;.choices[0].text&#x27;</span></code></pre></div></div><div class=" tc-reveal">
+<span class="hljs-built_in">echo</span> <span class="hljs-variable">$RESPONSE</span> | jq -r <span class="hljs-string">&#x27;.choices[0].text&#x27;</span></code></pre></div>
+<div class=" tc-reveal">
 
 </div>
 <br>
