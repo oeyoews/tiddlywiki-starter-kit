@@ -4,15 +4,14 @@ caption: font
 !! font style
 
 <p class="italic ...">The quick brown fox ...</p>
-<p class="not-italic ...">The quick brown fox ...</p>
 
 !! font weight
 
-<p class="font-thin ...">The quick brown fox ...</p>
-<p class="font-extralight ...">The quick brown fox ...</p>
-<p class="font-light ...">The quick brown fox ...</p>
-<p class="font-normal ...">The quick brown fox ...</p>
-<p class="font-medium ...">The quick brown fox ...</p>
+<p class="font-thin ">The quick brown fox ...</p>
+<p class="font-extralight ">The quick brown fox ...</p>
+<p class="font-light ">The quick brown fox ...</p>
+<p class="font-normal ">The quick brown fox ...</p>
+<p class="font-medium ">The quick brown fox ...</p>
 <p class="font-semibold ...">The quick brown fox ...</p>
 <p class="font-bold ...">The quick brown fox ...</p>
 <p class="font-extrabold ...">The quick brown fox ...</p>
@@ -29,7 +28,3 @@ caption: font
 !! text-color
 
 <p class="text-blue-600/100">The quick brown fox...</p>
-<p class="text-blue-600/75">The quick brown fox...</p>
-<p class="text-blue-600/50">The quick brown fox...</p>
-<p class="text-blue-600/25">The quick brown fox...</p>
-<p class="text-blue-600/0">The quick brown fox...</p>

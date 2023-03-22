@@ -34,7 +34,13 @@ title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/readme
 
 *  [[Style All In One|$:/plugins/oeyoews/tiddlywiki-tailwindcss/styles.min.css]]
 
+!! NOTE
+
+* disable tailwindcss [[prelight|https://tailwindcss.com/docs/preflight]] to compatiable tiddlywiki, just use tailwindcss/base to support some css variables
+
 !! TODO
 
 * support basic style <sup>beta</sup>
 * support import custom.styles.css(done)
+* ~~support daisyui~~
+* overwrite tiddlywiki palette with tailwindcss preset
