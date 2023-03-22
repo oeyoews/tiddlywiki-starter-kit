@@ -8801,6 +8801,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="missing-thinkup"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="mode-bug-on-gnome"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="Modern Font Stacks"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="MUI"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9802,7 +9804,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "199";
+  content: "200";
 }
 .user-panel-avatar {
   position: relative;
