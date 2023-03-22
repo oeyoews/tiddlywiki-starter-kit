@@ -51,10 +51,14 @@ title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/readme
 * support import custom.styles.css(done)
 * suppose tailwindui
 * ~~support daisyui~~
-* overwrite tiddlywiki palette with tailwindcss preset
+* config dev ide for tailwindcss with vscode or webstorm
+* overwrite tiddlywiki palette with tailwindcss preset, support dark and light by one palette(depends system mode)
 * use watch to compile styles.min.css
+* add forms tailwindcss plugin
+* read refactor ui pdf or videos
 
 </div>
 
 * https://tailwindcss.com/docs/installation/play-cdn
 * https://tailwind.wyz.xyz/docs/installation
+* https://www.youtube.com/watch?v=GEYkwfYytAM&list=RDCMUCOe-8z68tgw9ioqVvYM4ddQ&start_radio=1&rv=GEYkwfYytAM&t=15
