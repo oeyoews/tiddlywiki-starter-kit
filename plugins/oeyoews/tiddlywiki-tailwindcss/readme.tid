@@ -50,6 +50,7 @@ title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/readme
 
 !! TODO
 
+* dynamic switch primaty palette
 * markdown and tiddlywiki heading style not same
 * this hove a style have some weired
 * build tiddlywiki-tailwindcss-lite(no docs, just have styles.min.css)
