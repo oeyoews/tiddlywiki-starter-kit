@@ -1,3 +1,10 @@
+## [3.156.2](https://github.com/oeyoews/neotw/compare/v3.156.1...v3.156.2) (2023-03-22)
+
+
+### Performance Improvements
+
+* remove badges ([95d6f5d](https://github.com/oeyoews/neotw/commit/95d6f5d3ce56feeb6799b1c2822bafb2e92069b8))
+
 ## [3.156.1](https://github.com/oeyoews/neotw/compare/v3.156.0...v3.156.1) (2023-03-22)
 
 
