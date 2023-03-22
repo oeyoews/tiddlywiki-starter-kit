@@ -1833,6 +1833,18 @@
   text-transform: capitalize;
 }
 
+.tw-btn {
+  display: inline;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(99 102 241 / var(--tw-bg-opacity));
+  padding: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-weight: 700;
+  text-decoration-line: underline;
+}
+
 .file\:mr-4::file-selector-button {
   margin-right: 1rem !important;
 }

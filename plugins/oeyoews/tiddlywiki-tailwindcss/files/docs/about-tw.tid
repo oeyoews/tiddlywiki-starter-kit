@@ -1,0 +1,54 @@
+!! List All Supported Class
+
+!!! font
+
+* font-{thin light normal semibold bold} italic
+
+!!! bg
+
+* bg-indigo-500
+
+!!! display
+
+* inline, block, flex
+* (inline-block, inline-flex, table, inline-table ...)
+
+!!! float
+
+* float-{right, left, none}
+
+!!! position
+
+* (static, fixed, absoulte, relative, sticky)
+
+!!! trbl
+
+* (inset-0, inset-{x, y}-0, {top, right, bottom, left}-0 ...)
+
+!!! visibility
+
+* (visible, invisible, collapse)
+
+!!! transform
+
+* uppercase, capitalize, lovwercase
+
+!!! text
+
+* text-{sm base lg xl 2xl}
+
+!!! radius
+
+* rounded-{full, md}
+
+!!! indent
+
+* indent-{2, 4, 8}
+
+!! typography
+
+* prose
+
+* ...(WIP)
+
+<small> include brackets is wip </small>

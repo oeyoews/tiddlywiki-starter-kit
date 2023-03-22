@@ -23,6 +23,19 @@
           "source": "basename"
         }
       }
+    },
+    {
+      "path": "docs",
+      "filesRegExp": "^.*\\.(tid)$",
+      "fields": {
+        "title": {
+          "source": "basename",
+          "prefix": "$:/plugins/oeyoews/tiddlywiki-tailwindcss/docs/"
+        },
+        "caption": {
+          "source": "basename"
+        }
+      }
     }
   ]
 }

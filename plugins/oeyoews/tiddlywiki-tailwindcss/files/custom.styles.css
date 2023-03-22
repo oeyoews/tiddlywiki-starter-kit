@@ -1,5 +1,10 @@
+/* custom styles */
 .oeyoews {
   color: gray;
   font-weight: bold;
   text-transform: capitalize;
+}
+
+.tw-btn {
+  @apply rounded-full p-1 font-bold underline bg-indigo-500 inline px-2;
 }
