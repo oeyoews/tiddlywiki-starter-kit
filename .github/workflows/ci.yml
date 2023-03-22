@@ -5,8 +5,8 @@ on:
       - 'v*.*.*'
     branches:
       - main
-    paths-ignore:
-      # - 'README.md'
+    # paths-ignore:
+    # - 'README.md'
   workflow_dispatch:
 
 env:
