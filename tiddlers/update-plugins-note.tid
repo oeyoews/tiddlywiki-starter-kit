@@ -1,0 +1,9 @@
+created: 20230322170636086
+creator: oeyoews
+modified: 20230322170844902
+modifier: oeyoews
+tags: 
+title: update-plugins-note
+type: text/vnd.tiddlywiki
+
+if update codemirror-enhanced from cpl, its dependencied will download automatically(for nodejs and me, it's needless because of tiddlywiki.info)
