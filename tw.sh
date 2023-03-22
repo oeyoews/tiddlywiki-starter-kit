@@ -27,6 +27,8 @@ shift $((OPTIND -1))
 dirPath=${dirPath:-"./plugins/oeyoews/tiddlywiki-tailwindcss"}
 inputPath="$dirPath/files/styles.css"
 outputPath="$dirPath/files/styles.min.css"
+outputPathDev="$dirPath/files/styles.dev.css"
+# content=$(find ${dirPath} -type f \( -name "*.html" -o -name "*.css" -o -name "*.tid" \))
 content="$dirPath/**/*"
 
 if [ ! -d "$dirPath" ]
@@ -48,6 +50,7 @@ if [ ! -d "$(dirname "$outputPath")" ]
     exit 1
 fi
 
+npx tailwindcss --input "$inputPath" --output "$outputPathDev" --content "$content"
 npx tailwindcss --input "$inputPath" --output "$outputPath" --minify --content "$content"
 # npx tailwindcss --output "$outputPath" --minify --content "$content"
 
