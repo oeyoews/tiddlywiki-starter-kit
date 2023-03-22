@@ -7,9 +7,9 @@ title: header
 <!-- <$gravatar/> -->
 <!-- </$list> -->
 <h2> {{$:/status/UserName}} </h2>
-	<$list filter="[{$:/info/url/protocol}match[https:]]">
-	<$github-calendar />
-	</$list>
+	<!-- <$list filter="[{$:/info/url/protocol}match[https:]]"> -->
+	<!-- <$github-calendar /> -->
+	<!-- </$list> -->
 </center>
 <$list filter="[{$:/info/url/protocol}match[https:]]">
 	<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
