@@ -1,0 +1,3 @@
+{
+  "startCommand": "node startup.js --listen"
+}

@@ -1,0 +1,5 @@
+title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/docs/daisyui
+caption: daisyui
+
+<button class="btn">btn</button>
+<button class="btn btn-primary">btn</button>
