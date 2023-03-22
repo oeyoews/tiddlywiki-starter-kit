@@ -1,0 +1,7 @@
+title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/docs/hr
+caption: hr
+
+<!-- /* not support use base */ -->
+hr
+
+<hr class="h-1 bg-gradient-to-r from-teal-400 via-pink-500 to-green-400 rounded-md border-none">

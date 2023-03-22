@@ -10,7 +10,7 @@ const config: Config = {
 */
 
 module.exports = {
-  // content: ['dev/plugins/tiddlywiki-tailwindcss/**/*'],
+  content: ['plugins/oeyoews/tiddlywiki-tailwindcss/**/*'],
   // prefix: 'tw-',
   darkMode: 'class',
   corePlugins: {
@@ -21,5 +21,12 @@ module.exports = {
       appearance: ['hover', 'focus'],
     },
   },
-  plugins: [require('@tailwindcss/typography'), [require('daisyui')]],
+  plugins: [
+    require('@tailwindcss/typography'),
+    // not suitable tiddlywiki, have some conflict(wip)
+    // require('daisyui'),
+  ],
+  daisyui: {
+    themes: ['cmyk'],
+  },
 };

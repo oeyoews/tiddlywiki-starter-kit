@@ -15,10 +15,13 @@
     "dev": "node startup.js --listen"
   },
   "dependencies": {
-    "@tailwindcss/forms": "^0.5.3",
+    "tiddlywiki": "github:oeyoews/TiddlyWiki5#925ff202a07689882e9670fb1426167076f8bb7a",
+    "tailwindcss": "^3.2.7",
     "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.14",
     "daisyui": "^2.51.5",
+    "terser": "^5.16.6",
+    "zx": "^7.2.0",
     "dateformat": "^5.0.3",
     "dotenv": "^16.0.3",
     "gradient-string": "^2.0.2",
@@ -27,13 +30,10 @@
     "open": "^8.4.0",
     "portfinder": "^1.0.32",
     "postcss": "^8.4.21",
+    "postcss-import": "^15.1.0",
     "prompts": "^2.4.2",
     "replace": "^1.2.2",
-    "signale": "^1.4.0",
-    "tailwindcss": "^3.2.7",
-    "terser": "^5.16.6",
-    "tiddlywiki": "github:oeyoews/TiddlyWiki5#925ff202a07689882e9670fb1426167076f8bb7a",
-    "zx": "^7.2.0"
+    "signale": "^1.4.0"
   },
   "bugs": {
     "url": "https://github.com/oeyoews/neotw/issues"

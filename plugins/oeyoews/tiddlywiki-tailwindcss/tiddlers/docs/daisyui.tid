@@ -1,5 +1,27 @@
 title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/docs/daisyui
 caption: daisyui
 
-<button class="btn">btn</button>
-<button class="btn btn-primary">btn</button>
+<!-- <label for="my-modal" class="btn">open modal</label> -->
+<!---->
+<!-- <input type="checkbox" id="my-modal" class="modal-toggle" /> -->
+<!-- <div class="modal"> -->
+<!--   <div class="modal-box"> -->
+<!--     <h3 class="font-bold text-lg">Congratulations random Internet user!</h3> -->
+<!--     <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p> -->
+<!--     <div class="modal-action"> -->
+<!--       <label for="my-modal" class="btn">Yay!</label> -->
+<!--     </div> -->
+<!--   </div> -->
+<!-- </div> -->
+<!---->
+<!-- <div class="avatar"> -->
+<!--   <div class="w-24 rounded-full"> -->
+<!--     <$image source="https://github.com/oeyoews.png?size=100" /> -->
+<!--   </div> -->
+<!-- </div> -->
+<!---->
+<!-- <div class="badge">neutral</div> -->
+<!-- <div class="badge badge-primary">primary</div> -->
+<!-- <div class="badge badge-secondary">secondary</div> -->
+<!-- <div class="badge badge-accent">accent</div> -->
+<!-- <div class="badge badge-ghost">ghost</div> -->

@@ -36,4 +36,5 @@ title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/readme
 
 !! TODO
 
-> support basic style <sup>beta</sup>
+* support basic style <sup>beta</sup>
+* support import custom.styles.css(done)
