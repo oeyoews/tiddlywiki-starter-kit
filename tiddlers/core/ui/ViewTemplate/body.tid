@@ -1,6 +1,6 @@
-created: 20230322040332246
+created: 20230322042803332
 creator: oeyoews
-modified: 20230322040902387
+modified: 20230322042838021
 modifier: oeyoews
 tags: $:/tags/ViewTemplate
 title: $:/core/ui/ViewTemplate/body
@@ -8,12 +8,18 @@ type: text/vnd.tiddlywiki
 
 \import [all[shadows+tiddlers]tag[$:/tags/Macro/View/Body]!has[draft.of]]
 
-<div class="prose max-w-none">
-
+<$list filter="[all[current]is[system]]">
 <$reveal tag="div" class="tc-tiddler-body" type="nomatch" stateTitle=<<folded-state>> text="hide" retain="yes" animate="yes">
 
 <$transclude tiddler={{{ [<currentTiddler>] :cascade[all[shadows+tiddlers]tag[$:/tags/ViewTemplateBodyFilter]!is[draft]get[text]] :and[!is[blank]else[$:/core/ui/ViewTemplate/body/default]] }}} />
 
 </$reveal>
+</$list>
 
-</div>
+<$list filter="[all[current]!is[system]]">
+<$reveal tag="div" class="tc-tiddler-body prose max-w-none" type="nomatch" stateTitle=<<folded-state>> text="hide" retain="yes" animate="yes">
+
+<$transclude tiddler={{{ [<currentTiddler>] :cascade[all[shadows+tiddlers]tag[$:/tags/ViewTemplateBodyFilter]!is[draft]get[text]] :and[!is[blank]else[$:/core/ui/ViewTemplate/body/default]] }}} />
+
+</$reveal>
+</$list>
