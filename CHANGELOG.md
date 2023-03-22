@@ -1,3 +1,10 @@
+## [3.156.6](https://github.com/oeyoews/neotw/compare/v3.156.5...v3.156.6) (2023-03-22)
+
+
+### Bug Fixes
+
+* add ! try to fix invert not wor ([38fc2f6](https://github.com/oeyoews/neotw/commit/38fc2f69028e425f10190c96161e151d31da406a))
+
 ## [3.156.5](https://github.com/oeyoews/neotw/compare/v3.156.4...v3.156.5) (2023-03-22)
 
 
