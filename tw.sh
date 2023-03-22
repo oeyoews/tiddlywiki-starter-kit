@@ -52,7 +52,6 @@ fi
 
 npx tailwindcss --input "$inputPath" --output "$outputPathDev" --content "$content"
 npx tailwindcss --input "$inputPath" --output "$outputPath" --minify --content "$content"
-# npx tailwindcss --output "$outputPath" --minify --content "$content"
 
 size=$(wc -c "$outputPath" | awk '{print $1}')
 if [ "$size" -lt "1024" ]; then
