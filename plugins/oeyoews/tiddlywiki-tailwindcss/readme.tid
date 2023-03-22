@@ -37,6 +37,10 @@ title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/readme
 
 *  [[Style All In One|$:/plugins/oeyoews/tiddlywiki-tailwindcss/styles.min.css]]
 
+!! Usage
+
+> Coming ...
+
 !! NOTE
 
 * disable tailwindcss [[prelight|https://tailwindcss.com/docs/preflight]] to compatiable tiddlywiki, just use tailwindcss/base to support some css variables
