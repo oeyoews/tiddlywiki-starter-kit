@@ -43,6 +43,7 @@ title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/readme
 
 !! NOTE
 
+* 默认启用 important
 * disable tailwindcss [[prelight|https://tailwindcss.com/docs/preflight]] to compatiable tiddlywiki, just use tailwindcss/base to support some css variables
 
 !! TODO
@@ -58,6 +59,7 @@ title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/readme
 * read refactor ui pdf or videos
 * prose conflict span code symbol, and code blog style have seem questions
 * use prose to add viewtemplate(maybe use cascading), note some bug
+* link style not work
 
 </div>
 

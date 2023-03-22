@@ -12,6 +12,7 @@ const config: Config = {
 module.exports = {
   content: ['./plugins/oeyoews/tiddlywiki-tailwindcss/**/*'],
   // prefix: 'tw-',
+  important: true,
   darkMode: 'class',
   corePlugins: {
     preflight: false,
