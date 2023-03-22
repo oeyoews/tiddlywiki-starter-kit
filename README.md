@@ -31,8 +31,6 @@
 
 > A modern style notebook based on tiddlywiki. @oeyoews
 
-> Here is a [Demo](https://oeyoews.github.io/neotw)
-
 <details>
 <summary>Intro 🤖</summary>
 

@@ -51,4 +51,12 @@ fi
 npx tailwindcss --input "$inputPath" --output "$outputPath" --minify --content "$content"
 # npx tailwindcss --output "$outputPath" --minify --content "$content"
 
-echo -e "\033[0;32mGenerated $outputPath\033[0m"
+size=$(wc -c "$outputPath" | awk '{print $1}')
+if [ "$size" -lt "1024" ]; then
+  sizeStr="${size} bytes"
+elif [ "$size" -lt "1048576" ]; then
+  sizeStr="$(echo "scale=2; $size/1024" | bc) KB"
+else
+  sizeStr="$(echo "scale=2; $size/1048576" | bc) MB"
+fi
+echo -e "\033[0;32mGenerated $outputPath (${sizeStr})\033[0m"

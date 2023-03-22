@@ -27,7 +27,27 @@ module.exports = {
     // not suitable tiddlywiki, have some conflict(wip)
     // require('daisyui'),
   ],
-  daisyui: {
-    themes: ['cmyk'],
+  // https://github.com/tailwindlabs/tailwindcss-typography/issues/279
+  theme: {
+    extend: {
+      typography: ({ theme }) => ({
+        DEFAULT: {
+          css: {
+            code: {
+              backgroundColor: theme('colors.slate.100'),
+              borderRadius: theme('borderRadius.sm'),
+              padding: `${theme('padding.1')} ${theme('padding.1.5')}`,
+              border: `none`,
+            },
+            'code::before': {
+              content: 'normal',
+            },
+            'code::after': {
+              content: 'normal',
+            },
+          },
+        },
+      }),
+    },
   },
 };
