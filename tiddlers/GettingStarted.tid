@@ -3,12 +3,12 @@ created: 20230117102714737
 creator: oeyoews
 giscus: yes
 icon: tom.png
-modified: 20230321065322162
+modified: 20230322035844214
 modifier: oeyoews
 page-cover: banner.png
 pin: yes
 publish: article
-tags:
+tags: 
 title: GettingStarted
 type: text/vnd.tiddlywiki
 
@@ -25,6 +25,8 @@ type: text/vnd.tiddlywiki
 
 </center>
 
+<div class="prose">
+
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
 <<tabs "$:/plugins/oeyoews/neotw/Readme neotw-guides PLUGINS $:/AdvancedSearch neotw/INBOX neotw-reveal-js neotw-music" "$:/plugins/oeyoews/neotw/Readme" "$:/state/tab/neotw">>
 </$list>
@@ -40,3 +42,5 @@ type: text/vnd.tiddlywiki
 <$list filter="[{$:/info/url/protocol}match[https:]]">
 <$siteuptime />
 </$list>
+
+</div>

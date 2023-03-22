@@ -1,7 +1,5 @@
 <a id="#neotw-readme-top"></a>
 
-<center>
-<!-- badges -->
 <a href="https://tiddlywiki.com" target="_blank">
   <img src="https://img.shields.io/badge/TiddlyWiki5-5.2.7 prelease-green?style=flat" />
 </a>
@@ -14,14 +12,13 @@
 <a href="https://github.com/oeyoews/neotw" target="_blank">
   <img src="https://img.shields.io/github/v/tag/oeyoews/neotw?color=lightgreen?style=flat" />
 </a>
-<a href="https://github.com/oeyoews/neotw" target="_blank">
-  <img src="https://img.shields.io/website?down_color=red&down_message=offline&label=Neotw&up_color=9cf&up_message=online&url=https%3A%2F%2Fneotw.netlify.app%2F&logo=netlify" />
+<!-- <a href="https://github.com/oeyoews/neotw" target="_blank"> -->
+<!--   <img src="https://img.shields.io/website?down_color=red&down_message=offline&label=Neotw&up_color=9cf&up_message=online&url=https%3A%2F%2Fneotw.netlify.app%2F&logo=netlify" /> -->
+<!-- </a> -->
+<a target="_blank" href="https://app.netlify.com/sites/neotw/deploys">
+  <img src="https://api.netlify.com/api/v1/badges/7654bd58-2df9-4962-9a81-4cca9cf78b9c/deploy-status" alt="Netlify Status" >
 </a>
 <img src="https://img.shields.io/badge/License-MIT-blueviolet.svg?style=flat&color=blue" alt="project-license">
-<a target="_blank" href="https://app.netlify.com/sites/neotw/deploys">
-<img src="https://api.netlify.com/api/v1/badges/7654bd58-2df9-4962-9a81-4cca9cf78b9c/deploy-status" alt="Netlify Status" >
- </a>
-</center>
 
 <hr>
 <center>
