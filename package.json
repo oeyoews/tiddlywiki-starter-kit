@@ -12,7 +12,7 @@
     "guide": "zx scripts/guide.mjs",
     "start": "npx pm2 start ecosystem.config.js",
     "build:oeyoews": "zx scripts/build-oeyoews.mjs",
-    "dev": "nodemon --watch dev --ext tid --exec tiddlywiki --listen port=8081"
+    "dev": "node startup.js --listen"
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.5.3",
