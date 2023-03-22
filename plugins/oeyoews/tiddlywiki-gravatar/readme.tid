@@ -58,6 +58,7 @@ title: $:/plugins/oeyoews/tiddlywiki-gravatar/readme
 
 !! TODO
 
+* inline image with text link .icon macro, to suitable tailwindcss
 <!-- * missing img src ??? -->
 <!-- * support github qq gravatar(en and cn)(done) -->
 

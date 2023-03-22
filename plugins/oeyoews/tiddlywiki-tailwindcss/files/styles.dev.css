@@ -1013,6 +1013,14 @@
   border-width: 0 !important;
 }
 
+.visible {
+  visibility: visible !important;
+}
+
+.collapse {
+  visibility: collapse !important;
+}
+
 .absolute {
   position: absolute !important;
 }
@@ -1037,6 +1045,16 @@
   float: left !important;
 }
 
+.mx-1 {
+  margin-left: 0.25rem !important;
+  margin-right: 0.25rem !important;
+}
+
+.mx-10 {
+  margin-left: 2.5rem !important;
+  margin-right: 2.5rem !important;
+}
+
 .mx-auto {
   margin-left: auto !important;
   margin-right: auto !important;
@@ -1048,6 +1066,14 @@
 
 .block {
   display: block !important;
+}
+
+.inline-block {
+  display: inline-block !important;
+}
+
+.inline {
+  display: inline !important;
 }
 
 .flex {
@@ -1064,6 +1090,10 @@
 
 .grid {
   display: grid !important;
+}
+
+.contents {
+  display: contents !important;
 }
 
 .hidden {
@@ -1090,6 +1120,10 @@
   height: 0.75rem !important;
 }
 
+.h-5 {
+  height: 1.25rem !important;
+}
+
 .h-6 {
   height: 1.5rem !important;
 }
@@ -1108,6 +1142,10 @@
 
 .w-3 {
   width: 0.75rem !important;
+}
+
+.w-5 {
+  width: 1.25rem !important;
 }
 
 .w-6 {
@@ -1130,8 +1168,20 @@
   flex: 1 1 0% !important;
 }
 
+.flex-shrink {
+  flex-shrink: 1 !important;
+}
+
 .shrink-0 {
   flex-shrink: 0 !important;
+}
+
+.border-collapse {
+  border-collapse: collapse !important;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
 }
 
 @keyframes bounce {
@@ -1223,6 +1273,10 @@
           user-select: auto !important;
 }
 
+.resize {
+  resize: both !important;
+}
+
 .list-inside {
   list-style-position: inside !important;
 }
@@ -1242,12 +1296,26 @@
        columns: 1 !important;
 }
 
+.columns-2 {
+  -moz-columns: 2 !important;
+       columns: 2 !important;
+}
+
+.columns-3 {
+  -moz-columns: 3 !important;
+       columns: 3 !important;
+}
+
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
 }
 
 .items-center {
   align-items: center !important;
+}
+
+.items-baseline {
+  align-items: baseline !important;
 }
 
 .justify-center {
@@ -1286,6 +1354,10 @@
   --tw-space-y-reverse: 0 !important;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse))) !important;
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse)) !important;
+}
+
+.self-center {
+  align-self: center !important;
 }
 
 .rounded {
@@ -1696,8 +1768,18 @@
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
 }
 
+.shadow-blue-500 {
+  --tw-shadow-color: #3b82f6 !important;
+  --tw-shadow: var(--tw-shadow-colored) !important;
+}
+
 .shadow-blue-500\/50 {
   --tw-shadow-color: rgb(59 130 246 / 0.5) !important;
+  --tw-shadow: var(--tw-shadow-colored) !important;
+}
+
+.shadow-cyan-500 {
+  --tw-shadow-color: #06b6d4 !important;
   --tw-shadow: var(--tw-shadow-colored) !important;
 }
 
@@ -1706,9 +1788,27 @@
   --tw-shadow: var(--tw-shadow-colored) !important;
 }
 
+.shadow-indigo-500 {
+  --tw-shadow-color: #6366f1 !important;
+  --tw-shadow: var(--tw-shadow-colored) !important;
+}
+
 .shadow-indigo-500\/50 {
   --tw-shadow-color: rgb(99 102 241 / 0.5) !important;
   --tw-shadow: var(--tw-shadow-colored) !important;
+}
+
+.outline {
+  outline-style: solid !important;
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;
+}
+
+.backdrop-filter {
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia) !important;
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia) !important;
 }
 
 .transition {
@@ -1827,11 +1927,4 @@
 .focus\:ring-blue-400:focus {
   --tw-ring-opacity: 1 !important;
   --tw-ring-color: rgb(96 165 250 / var(--tw-ring-opacity)) !important;
-}
-
-@media (min-width: 640px) {
-  .sm\:columns-3 {
-    -moz-columns: 3 !important;
-         columns: 3 !important;
-  }
 }
