@@ -50,4 +50,4 @@ tiddlers/static-patch
 openai-api-key.tid
 tiddlers/oeyoews-chatgpt-history*
 yarn-error.log
-plugins/oeyoews/tiddlywiki-tailwindcss/files/styles.dev.css
+# plugins/oeyoews/tiddlywiki-tailwindcss/files/styles.dev.css
