@@ -42,8 +42,7 @@ title: $:/plugins/oeyoews/tiddlywiki-gravatar/readme
 
 !! usage
 
-> 默认最大高度为56
-> support qq email
+* 支持 qq gravatar(en and cn) github
 
 `$:/config/plugins/oeyoews/tiddlywiki-gravatar/email` is config file
 
@@ -60,6 +59,11 @@ title: $:/plugins/oeyoews/tiddlywiki-gravatar/readme
 !! TODO
 
 <!-- * missing img src ??? -->
-> use qq-avatar widget, no extra dependency(for static)
+<!-- * support github qq gravatar(en and cn)(done) -->
+
+!! Tips
+
+* 默认最大高度为56
+* use qq-avatar widget, no extra dependency(for static)
 
 <!-- * merge qq avatar and gravatar -->

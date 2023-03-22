@@ -1,0 +1,9 @@
+created: 20230322065143987
+creator: oeyoews
+modified: 20230322065223692
+modifier: oeyoews
+tags: 
+title: pm2-not-restarted
+type: text/vnd.tiddlywiki
+
+* if pm2 not restart automatically, use pm2 delete <id>, and start it

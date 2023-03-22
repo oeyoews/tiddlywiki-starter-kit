@@ -33,12 +33,15 @@ Gravatar and QQ Avatar Widget
     var getDefaultEmail = $tw.wiki.getTiddlerText(
       '$:/config/plugins/oeyoews/tiddlywiki-gravatar/email',
     );
+    const Username = $tw.wiki.getTiddlerText('$:/status/UserName');
+    const username = this.getAttribute('username', Username || 'oeyoews');
     var width = this.getAttribute('width', '56');
     var type = this.getAttribute('type', 'qq');
     var email = this.getAttribute(
       'email',
       getDefaultEmail || '2956398608@qq.com',
     );
+
     var gclass = this.getAttribute('gclass', 'gravatar-56');
     var size = this.getAttribute('size', '100');
     var alt = this.getAttribute('alt', 'Avatar');
@@ -48,6 +51,11 @@ Gravatar and QQ Avatar Widget
     if (type === 'qq') {
       src = `https://q1.qlogo.cn/g?b=qq&nk=${email}&s=${size}`;
     }
+
+    if (type === 'github') {
+      src = `https://github.com/${username}.png?size=${size}`;
+    }
+
     // gravatar en
     if (type === 'gravatar-en') {
       const hash = md5(email.trim().toLowerCase());
