@@ -1,0 +1,17 @@
+created: 20230322142248095
+creator: oeyoews
+modified: 20230322142308720
+modifier: oeyoews
+tags: 
+title: display-four
+type: text/vnd.tiddlywiki
+
+inline：元素会被显示为内联元素，元素的高度、宽度、外边距和内边距不可设置，它们的大小由元素的内容决定。
+
+block：元素会被显示为块级元素，元素会在新行上开始，并占据一个可设置的宽度，高度、外边距和内边距也可设置。
+
+inline-block：元素会被显示为内联元素，但是可以设置宽度、高度、外边距和内边距。
+
+flex：元素会被显示为一个弹性盒子，元素的子元素可以在弹性盒子中被排列。
+
+inline-flex：元素会被显示为一个内联块级弹性盒子，元素的子元素可以在弹性盒子中被排列。
