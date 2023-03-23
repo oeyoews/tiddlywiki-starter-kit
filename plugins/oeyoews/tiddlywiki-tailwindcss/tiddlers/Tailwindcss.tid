@@ -1,6 +1,6 @@
 title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/Tailwindcss
 
-<div class="prose">
+<div class="tc-tiddler-body prose prose-indigo max-w-none prose-img:my-0 !dark:prose-invert prose-a:no-underline prose-h2:mt-4">
 
 <$macrocall $name="tabs" tabsList="[all[tiddlers+shadows]prefix[$:/plugins/oeyoews/tiddlywiki-tailwindcss/docs/]sort[title]]" default={{{ [all[tiddlers+shadows]prefix[$:/plugins/oeyoews/tiddlywiki-tailwindcss/docs/]sort[title]first[]] }}} state="$:/state/tiddlywiki-tailwindcss/docs-tab" explicitState="$:/state/tiddlywiki-tailwindcss/docs-tab-en" class="tc-vertical" template=""/>
 

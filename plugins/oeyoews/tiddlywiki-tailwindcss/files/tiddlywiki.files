@@ -14,6 +14,20 @@
   "directories": [
     {
       "path": "docs",
+      "filesRegExp": "^.*\\.(md)$",
+      "fields": {
+        "title": {
+          "source": "basename",
+          "prefix": "$:/plugins/oeyoews/tiddlywiki-tailwindcss/docs/"
+        },
+        "type": "text/markdown",
+        "caption": {
+          "source": "basename"
+        }
+      }
+    },
+    {
+      "path": "docs",
       "filesRegExp": "^.*\\.(html)$",
       "fields": {
         "title": {
