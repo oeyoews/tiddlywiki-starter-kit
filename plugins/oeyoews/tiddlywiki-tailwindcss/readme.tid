@@ -72,6 +72,7 @@ title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/readme
 * use prose to add viewtemplate(maybe use cascading), note some bug
 <!-- * link style not work -->
 * use moderndev to support tailwindcss
+  * use browser-sync or other tool to refresh borwser
 
 * https://tailwindcss.com/docs/installation/play-cdn
 * https://tailwind.wyz.xyz/docs/installation

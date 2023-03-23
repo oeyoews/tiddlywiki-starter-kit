@@ -8,6 +8,7 @@
   "author": "oeyoews <jyao4783@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "bs-sync": "browser-sync start --config bs.config.js",
     "semantic-release": "semantic-release",
     "guide": "zx scripts/guide.mjs",
     "start": "npx pm2 start ecosystem.config.js",
@@ -19,6 +20,7 @@
   "dependencies": {
     "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.14",
+    "browser-sync": "^2.29.1",
     "daisyui": "^2.51.5",
     "dateformat": "^5.0.3",
     "dotenv": "^16.0.3",
