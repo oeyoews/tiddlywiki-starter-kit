@@ -5,7 +5,7 @@ module.exports = {
       port: 8080,
     },
   },
-  files: ['plugins/oeyoews/**/*.{html,js,css}'],
+  files: ['test/**/*.{html,js,css}'],
   watchEvents: ['change'],
   watchOptions: {
     ignoreInitial: true,
@@ -15,7 +15,7 @@ module.exports = {
     index: 'index.html',
   },
   proxy: false,
-  port: 3000,
+  port: 8099,
   middleware: false,
   serveStatic: [],
   ghostMode: {
