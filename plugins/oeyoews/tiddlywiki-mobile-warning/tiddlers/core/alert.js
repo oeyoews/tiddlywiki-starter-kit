@@ -8,10 +8,12 @@
 
   var alertTiddlerGet = $tw.wiki.getTiddlerText(alertTiddler);
 
-  if ($tw.wiki.getTiddlerText('$:/info/browser/is/ios') === 'yes') {
-    alert('IOS not supported touch, this will cause some script error warning');
+  /* if ($tw.wiki.getTiddlerText('$:/info/browser/is/ios') === 'yes') {
+    alert(
+      'IOS not supported setInterval(maybe), this will cause some script error warning',
+    );
     return;
-  }
+  } */
   // console.log('🐛alert test');
   if (isMobileTiddlerGet === 'yes') {
     alert(alertTiddlerGet);

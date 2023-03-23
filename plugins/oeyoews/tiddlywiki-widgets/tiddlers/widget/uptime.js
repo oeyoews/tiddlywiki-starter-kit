@@ -15,7 +15,6 @@ uptime
       this.timestamp = Math.round(
         new Date(Date.UTC(2021, 11, 27, 6, 6, 6)).getTime() / 1000,
       );
-      this.intervalId = null;
       this.currentTimeSpan = null;
     }
 
@@ -29,6 +28,7 @@ uptime
       if (this.currentTimeSpan) {
         this.currentTimeSpan.textContent = currentTimeHtml;
       }
+      requestAnimationFrame(this.updateTime.bind(this));
     }
 
     secondToDate(second) {
@@ -66,18 +66,13 @@ uptime
       this.domNodes.push(this.currentTimeSpan);
 
       this.updateTime();
-      this.intervalId = setInterval(() => {
-        this.updateTime();
-      }, 1000);
     }
 
     refresh() {
       return false;
     }
 
-    detach() {
-      clearInterval(this.intervalId);
-    }
+    detach() {}
   }
 
   exports.siteuptime = SiteUptimeWidget;

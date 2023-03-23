@@ -18,19 +18,24 @@ loadtime
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
       this.loadTimeSpan = null;
-      this.intervalId = null;
       this.isUpdating = false;
       this.handleLoad = this.handleLoad.bind(this);
+      this.updateTime = this.updateTime.bind(this);
     }
 
     handleLoad() {
-      clearInterval(this.intervalId);
       if (this.isUpdating && this.loadTimeSpan) {
         const loadTime = Date.now() - performance.timing.navigationStart;
         this.loadTimeSpan.textContent = `This page takes ${loadTime}ms to load`;
         console.log(`Load time updated: ${loadTime}ms`);
         this.isUpdating = false;
       }
+    }
+
+    updateTime() {
+      this.isUpdating = true;
+      console.log('Load time updating...');
+      requestAnimationFrame(this.updateTime);
     }
 
     render(parent, nextSibling) {
@@ -42,10 +47,7 @@ loadtime
       this.domNodes.push(this.loadTimeSpan);
 
       window.addEventListener('load', this.handleLoad);
-      this.intervalId = setInterval(() => {
-        this.isUpdating = true;
-        console.log('Load time updating...');
-      }, 1000);
+      requestAnimationFrame(this.updateTime);
     }
 
     refresh() {
@@ -53,7 +55,6 @@ loadtime
     }
 
     detach() {
-      clearInterval(this.intervalId);
       window.removeEventListener('load', this.handleLoad);
     }
   }
