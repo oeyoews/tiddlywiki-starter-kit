@@ -6,18 +6,18 @@ mask-closable: yes
 \define shortcut(shortcut)
 <$set name=kbd filter="[enlist:raw{$:/plugins/oeyoews/motion/config/Shortcuts/$shortcut$/Key}addprefix[<kbd>]addsuffix[</kbd>]]">
 <tr>
-  <td class="tw-border-none tw-p-1"><<kbd>></td>
-  <td class="tw-border-none tw-p-1"><$transclude tiddler="$:/plugins/oeyoews/motion/config/Shortcuts/$shortcut$/Caption" /></td>
+  <td class="border-none p-1"><<kbd>></td>
+  <td class="border-none p-1"><$transclude tiddler="$:/plugins/oeyoews/motion/config/Shortcuts/$shortcut$/Caption" /></td>
 </tr>
 </$set>
 \end
 
-<div class="tw-flex tw-justify-around">
+<div class="flex justify-around">
 <div>
 <h4>Custom</h4>
 <hr>
 
-<table class="tw-border-none">
+<table class="border-none">
 <$list filter="[enlist[Fullscreen ToggleSidebar GoToInbox RefreshWiki GoToGettingStarted GoToControlPanel GoToSearch ToggleLayout TogglePalette GoToPlugins]]">
 <$macrocall $name="shortcut" shortcut=<<currentTiddler>> />
 </$list>
@@ -26,7 +26,7 @@ mask-closable: yes
 <h4>General</h4>
 <hr>
 
-<table class="tw-border-none">
+<table class="border-none">
 <$list filter="[enlist[FocusSearch ShowHelp Dismiss]]">
 <$macrocall $name="shortcut" shortcut=<<currentTiddler>> />
 </$list>
@@ -35,7 +35,7 @@ mask-closable: yes
 <h4>Story River</h4>
 <hr>
 
-<table class="tw-border-none">
+<table class="border-none">
 <$list filter="[enlist[CreateNewTiddler SelectNextTiddler SelectPreviousTiddler GoToFirstTiddler GoToLastTiddler EditTiddler DeleteTiddler CloseTiddler CloseAllTiddlers]]">
 <$macrocall $name="shortcut" shortcut=<<currentTiddler>> />
 </$list>
@@ -46,12 +46,10 @@ mask-closable: yes
 <h4>Folding</h4>
 <hr>
 
-<table class="tw-border-none">
+<table class="border-none">
 <$list filter="[enlist[FoldTiddler UnfoldTiddler ToggleTiddler FoldAllTiddlers UnfoldAllTiddlers ToggleAllTiddlers]]">
 <$macrocall $name="shortcut" shortcut=<<currentTiddler>> />
 </$list>
 </table>
 </div>
 </div>
-
-<!-- <button class="border-none uppercase bg-zinc-400 p-1 font-bold">Demo</button> -->
