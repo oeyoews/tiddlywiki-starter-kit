@@ -38,7 +38,6 @@ title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/readme
 * Build a lightweight version of TiddlyWiki with only the necessary TailwindCSS styles (no documentation).
 * Combine the Prose classes into a single file for easier packaging.
 * Set up precode and hr elements to use appropriate styles (not the `code` element directly).
-* Add basic styles for the <sup> element (beta).
 * Support importing custom.styles.css (already done).
 * To support TailwindUI, (purchase a license and include the necessary files in your project).
 * (To support DaisyUI, install the package and configure it in your project)
