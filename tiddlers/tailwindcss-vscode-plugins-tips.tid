@@ -1,0 +1,9 @@
+created: 20230323075507823
+creator: oeyoews
+modified: 20230323075555542
+modifier: oeyoews
+tags: 
+title: tailwindcss-vscode-plugins-tips
+type: text/vnd.tiddlywiki
+
+* if your project folder is too much, this vscode tailwindcss intelligence have some delay()
