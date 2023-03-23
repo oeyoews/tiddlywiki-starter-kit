@@ -1,3 +1,15 @@
+## [3.158.2](https://github.com/oeyoews/neotw/compare/v3.158.1...v3.158.2) (2023-03-23)
+
+
+### Bug Fixes
+
+* remove unused files on tiddlywiki.files ([6c1d71e](https://github.com/oeyoews/neotw/commit/6c1d71e77fee247f1ae0d0a53861c3ba7a3aa160))
+
+
+### Performance Improvements
+
+* remove tw-{xxx} from style.min.css, use tailwindcss instead ([3354234](https://github.com/oeyoews/neotw/commit/33542342b4542c3d3363201a043a0f4b57bea4fb))
+
 ## [3.158.1](https://github.com/oeyoews/neotw/compare/v3.158.0...v3.158.1) (2023-03-23)
 
 
