@@ -11,6 +11,8 @@
     "semantic-release": "semantic-release",
     "guide": "zx scripts/guide.mjs",
     "start": "npx pm2 start ecosystem.config.js",
+    "tw-build": "sh tw.sh",
+    "tw-watch": "npx tailwindcss --output ./plugins/oeyoews/tiddlywiki-tailwindcss/files/styles.min.css --minify -c ./tw-preset.js -w",
     "build:oeyoews": "zx scripts/build-oeyoews.mjs",
     "dev": "node startup.js --listen"
   },
