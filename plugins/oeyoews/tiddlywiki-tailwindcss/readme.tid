@@ -67,8 +67,11 @@ title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/readme
 * add forms tailwindcss plugin
 * read refactor ui pdf or videos
 <!-- * prose conflict span code symbol, and code blog style have seem questions -->
+<!-- * user sorter -->
+<!-- > https://tailwindcss.com/blog/automatic-class-sorting-with-prettier -->
 * use prose to add viewtemplate(maybe use cascading), note some bug
 <!-- * link style not work -->
+* use moderndev to support tailwindcss
 
 * https://tailwindcss.com/docs/installation/play-cdn
 * https://tailwind.wyz.xyz/docs/installation
