@@ -1,11 +1,20 @@
 /* alert mobile */
 (function () {
+  var alertTiddler = '$:/plugins/oeyoews/tiddlywiki-mobile-warning/alert-text';
+
   var isMobileTiddler = '$:/info/browser/is/mobile';
-  var twmTiddler = '$:/plugins/oeyoews/tiddlywiki-mobile-warning/alert-text';
+
   var isMobileTiddlerGet = $tw.wiki.getTiddlerText(isMobileTiddler);
-  var twmTiddlerGet = $tw.wiki.getTiddlerText(twmTiddler);
+
+  var alertTiddlerGet = $tw.wiki.getTiddlerText(alertTiddler);
+
+  if ($tw.wiki.getTiddlerText('$:/info/browser/is/ios') === 'yes') {
+    alert('IOS not supported touch, this will cause some script error warning');
+    return;
+  }
   // console.log('🐛alert test');
   if (isMobileTiddlerGet === 'yes') {
-    alert(twmTiddlerGet);
+    alert(alertTiddlerGet);
+    return;
   }
 })();
