@@ -1,12 +1,75 @@
 cn-title: markdown 语法测试
 created: 20230221073554683
 creator: oeyoews
-modified: 20230312115728755
+modified: 20230323035557526
 modifier: oeyoews
 publish: article
 tags: 
 title: markdown-test
 type: text/markdown
+
+# 标题
+
+## 二级标题
+
+### 三级标题
+
+#### 四级标题
+
+##### 五级标题
+
+###### 六级标题
+
+
+# 段落
+
+这是一段普通的文本。
+
+段落之间需要空行。
+
+换行需要使用 `<br>` 或者加上两个空格。
+
+字体可以使用 *斜体* 或者 **粗体** 或者 ***斜粗体***。
+
+删除线可以使用 ~~删除线~~。
+
+
+# 列表
+
+## 无序列表
+
+- 列表项 1
+- 列表项 2
+- 列表项 3
+
+## 有序列表
+
+1. 列表项 1
+2. 列表项 2
+3. 列表项 3
+
+
+# 引用
+
+> 这是一段引用的文本。
+
+
+# 代码
+
+## 行内代码
+
+这是一段代码：`print("Hello world!")`
+
+## 代码块
+
+```python
+def hello():
+    print("Hello world!")
+    
+hello()
+```
+
+<hr>
 
 ## Markdown Task
 
