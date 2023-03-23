@@ -1,5 +1,35 @@
 !! List All Supported Class
 
+| CSS Property     | CSS Example                    | Tailwind CSS Class | Tailwind CSS Example |
+| Color            | color: red;                    | text-red-500       | text-red-500         |
+| Background Color | background-color: blue;        | bg-blue-200        | bg-blue-200          |
+| Font Size        | font-size: 24px;               | text-xl            | text-xl              |
+| Font Family      | font-family: Arial;            | font-sans          | font-sans            |
+| Line Height      | line-height: 1.5;              | leading-normal     | leading-normal       |
+| Text Align       | text-align: center;            | text-center        | text-center          |
+| Margin           | margin: 10px;                  | m-4                | m-4                  |
+| Padding          | padding: 5px;                  | p-2                | p-2                  |
+| Border           | border: 1px solid black;       | border-2           | border-2             |
+| Display          | display: flex;                 | flex               | flex                 |
+| Position         | position: absolute;            | absolute           | absolute             |
+| Width            | width: 200px;                  | w-64               | w-64                 |
+| Height           | height: 200px;                 | h-64               | h-64                 |
+| Box Shadow       | box-shadow: 0px 0px 5px black; | shadow-lg          | shadow-lg            |
+
+| CSS Property    | CSS Example                     | Tailwind CSS Class | Tailwind CSS Example |
+| Text Decoration | text-decoration: underline;     | underline          | underline            |
+| Font Weight     | font-weight: bold;              | font-bold          | font-bold            |
+| Font Style      | font-style: italic;             | italic             | italic               |
+| Letter Spacing  | letter-spacing: 2px;            | tracking-wide      | tracking-wide        |
+| Word Spacing    | word-spacing: 5px;              | tracking-wider     | tracking-wider       |
+| Text Transform  | text-transform: uppercase;      | uppercase          | uppercase            |
+| Border Radius   | border-radius: 10px;            | rounded-lg         | rounded-lg           |
+| Box Sizing      | box-sizing: border-box;         | box-border         | box-border           |
+| Text Overflow   | text-overflow: ellipsis;        | overflow-ellipsis  | overflow-ellipsis    |
+| Overflow        | overflow: hidden;               | overflow-hidden    | overflow-hidden      |
+| Text Shadow     | text-shadow: 2px 2px 2px black; | text-shadow        | text-shadow          |
+| Cursor          | cursor: pointer;                | cursor-pointer     | cursor-pointer       |
+
 !!! font
 
 * font-{thin light normal semibold bold} italic
