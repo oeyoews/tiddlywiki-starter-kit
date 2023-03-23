@@ -1,3 +1,11 @@
+# [3.158.0](https://github.com/oeyoews/neotw/compare/v3.157.0...v3.158.0) (2023-03-23)
+
+
+### Features
+
+* add prettier tailwindcss plugin ([2ebca07](https://github.com/oeyoews/neotw/commit/2ebca07a719c73e06830e0a48bfcd267800fd35b))
+* format tiddlywiki-tailwindcss docs ([2b893d0](https://github.com/oeyoews/neotw/commit/2b893d0f574d22280cdb596beeb1b2b4fa62f941))
+
 # [3.157.0](https://github.com/oeyoews/neotw/compare/v3.156.7...v3.157.0) (2023-03-23)
 
 
