@@ -10,7 +10,7 @@ const config: Config = {
 
 module.exports = {
   // prefix: 'tw-',
-  content: ['./plugins/oeyoews/tiddlywiki-tailwindcss/*.{html,tid,css}'],
+  content: ['./plugins/oeyoews/**/*.{html,tid,css}'],
   theme: {
     extend: {
       typography: ({ theme }) => ({

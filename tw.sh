@@ -51,6 +51,7 @@ if [ ! -d "$(dirname "$outputPath")" ]
 fi
 
 npx tailwindcss --input "$inputPath" --output "$outputPathDev" --content "$content"
+# npx tailwindcss --input "$inputPath" --output "$outputPathDev" --content "./plugins/oeyoews/**"
 npx tailwindcss --input "$inputPath" --output "$outputPath" --minify --content "$content"
 
 size=$(wc -c "$outputPath" | awk '{print $1}')
