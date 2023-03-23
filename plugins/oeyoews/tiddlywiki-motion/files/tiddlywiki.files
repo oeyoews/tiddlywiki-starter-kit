@@ -1,14 +1,4 @@
 {
-  "tiddlers": [
-    {
-      "file": "styles.min.css",
-      "fields": {
-        "title": "$:/plugins/oeyoews/motion/styles/static",
-        "type": "text/css",
-        "tags": "$:/tags/Stylesheet"
-      }
-    }
-  ],
   "directories": [
     {
       "path": "library",
