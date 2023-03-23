@@ -53,9 +53,12 @@ fi
 # npx tailwindcss --input "$inputPath" --output "$outputPathDev" --content "$content"
 # npx tailwindcss --input "$inputPath" --output "$outputPath" --minify --content "$content"
 # npx tailwindcss --input "$inputPath" --output "$outputPathDev" -c ./tw-preset.js
-npx tailwindcss --input "$inputPath" --output "$outputPath" --minify -c ./tw-preset.js
+# npx tailwindcss --input "$inputPath" --output "$outputPath" --minify -c ./tw-preset.js
 npx tailwindcss --output "$outputPathDev" -c ./tw-preset.js
 npx tailwindcss --output "$outputPath" --minify -c ./tw-preset.js
+
+# watch
+# npx tailwindcss --output ./plugins/oeyoews/tiddlywiki-tailwindcss/files/styles.min.css --minify -c ./tw-preset.js -w
 
 size=$(wc -c "$outputPath" | awk '{print $1}')
 if [ "$size" -lt "1024" ]; then
