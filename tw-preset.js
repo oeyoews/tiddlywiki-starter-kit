@@ -10,6 +10,7 @@ const config: Config = {
 
 module.exports = {
   // prefix: 'tw-',
+  // content not work ???
   content: ['./plugins/oeyoews/**/*.{html,tid,css}'],
   theme: {
     extend: {

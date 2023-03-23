@@ -50,9 +50,12 @@ if [ ! -d "$(dirname "$outputPath")" ]
     exit 1
 fi
 
-npx tailwindcss --input "$inputPath" --output "$outputPathDev" --content "$content"
-# npx tailwindcss --input "$inputPath" --output "$outputPathDev" --content "./plugins/oeyoews/**"
-npx tailwindcss --input "$inputPath" --output "$outputPath" --minify --content "$content"
+# npx tailwindcss --input "$inputPath" --output "$outputPathDev" --content "$content"
+# npx tailwindcss --input "$inputPath" --output "$outputPath" --minify --content "$content"
+# npx tailwindcss --input "$inputPath" --output "$outputPathDev" -c ./tw-preset.js
+npx tailwindcss --input "$inputPath" --output "$outputPath" --minify -c ./tw-preset.js
+npx tailwindcss --output "$outputPathDev" -c ./tw-preset.js
+npx tailwindcss --output "$outputPath" --minify -c ./tw-preset.js
 
 size=$(wc -c "$outputPath" | awk '{print $1}')
 if [ "$size" -lt "1024" ]; then
