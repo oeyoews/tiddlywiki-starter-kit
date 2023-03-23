@@ -8773,6 +8773,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="gnome-extensions"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="google-chrome-bug"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="heart"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="hi-oeyoews"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9810,7 +9812,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "203";
+  content: "204";
 }
 .user-panel-avatar {
   position: relative;
