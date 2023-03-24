@@ -4,4 +4,8 @@ title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/Tailwindcss
 
 <$macrocall $name="tabs" tabsList="[all[tiddlers+shadows]prefix[$:/plugins/oeyoews/tiddlywiki-tailwindcss/docs/]sort[title]]" default={{{ [all[tiddlers+shadows]prefix[$:/plugins/oeyoews/tiddlywiki-tailwindcss/docs/]sort[title]first[]] }}} state="$:/state/tiddlywiki-tailwindcss/docs-tab" explicitState="$:/state/tiddlywiki-tailwindcss/docs-tab-en" class="tc-vertical" template=""/>
 
+---
+
+{{$:/plugins/oeyoews/tiddlywiki-tailwindcss/dist/documention}}
+
 </div>
