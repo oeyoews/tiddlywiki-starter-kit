@@ -2,6 +2,17 @@
   "directories": [
     {
       "path": "library",
+      "filesRegExp": "^.*\\.min.css$",
+      "fields": {
+        "title": {
+          "source": "filename",
+          "prefix": "$:/plugins/oeyoews/tiddlywiki-fancybox/library/"
+        },
+        "type": "text/css"
+      }
+    },
+    {
+      "path": "library",
       "filesRegExp": "^.*\\.min.js$",
       "fields": {
         "title": {
