@@ -27,7 +27,7 @@ function generateExampleHtml(className) {
 
 // 写入markdown文件
 fs.writeFileSync(
-  "dist/documention.md",
+  "tw/documention.md",
   tableRows
     .map(
       (rows) => `

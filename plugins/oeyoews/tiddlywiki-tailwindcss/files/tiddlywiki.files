@@ -13,12 +13,12 @@
   ],
   "directories": [
     {
-      "path": "dist",
+      "path": "tw",
       "filesRegExp": "^.*\\.(md)$",
       "fields": {
         "title": {
           "source": "basename",
-          "prefix": "$:/plugins/oeyoews/tiddlywiki-tailwindcss/dist/"
+          "prefix": "$:/plugins/oeyoews/tiddlywiki-tailwindcss/tw/"
         },
         "type": "text/markdown",
         "caption": {
