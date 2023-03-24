@@ -1,0 +1,9 @@
+created: 20230324144249616
+creator: oeyoews
+modified: 20230324144259246
+modifier: oeyoews
+tags: 
+title: eacces
+type: text/vnd.tiddlywiki
+
+* POSIX defines EACCES as " an attempt was made to access a file in a way forbidden by its file access permissions " and EPERM as " an attempt was made to perform an operation limited to processes with appropriate privileges or to the owner of a file or other resource ".
