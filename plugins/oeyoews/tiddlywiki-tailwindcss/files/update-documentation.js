@@ -25,16 +25,8 @@ function generateExampleHtml(className) {
   return `<div class="${className}">${className}</div>`;
 }
 
-// 计算总类数并写入markdown文件
-const totalClasses = filteredClassNames.length;
-console.log(`Total classes is ${totalClasses}`);
-fs.appendFileSync(
-  "tw/documentation.md",
-  `Total classes: <span class="font-bold">${totalClasses}</span>\n\n`
-);
-
 // 写入表格到markdown文件
-fs.appendFileSync(
+fs.writeFileSync(
   "tw/documentation.md",
   tableRows
     .map(
@@ -45,4 +37,12 @@ ${rows.map((name) => `| ${name} | ${generateExampleHtml(name)} |`).join("\n")}
 `
     )
     .join("\n")
+);
+
+// 计算总类数并写入markdown文件
+const totalClasses = filteredClassNames.length;
+console.log(`Total classes is ${totalClasses}`);
+fs.appendFileSync(
+  "tw/documentation.md",
+  `\n Total classes: <span class="font-bold">${totalClasses}</span>`
 );
