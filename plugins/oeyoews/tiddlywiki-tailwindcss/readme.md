@@ -13,7 +13,7 @@
 
 ## Usage
 
-> Coming ...
+> Just use tailwindcss as usual
 
 ## NOTE
 
