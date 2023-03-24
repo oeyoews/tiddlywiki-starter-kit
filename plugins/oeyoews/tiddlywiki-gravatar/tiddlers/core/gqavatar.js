@@ -3,7 +3,7 @@ title: $:/plugins/oeyoews/tiddlywiki-gravatar/gqwidget.js
 type: application/javascript
 module-type: widget
 
-Gravatar and QQ Avatar Widget
+Gravatar and QQ  Github Avatar Widget(Lastest gqg)
 
 \*/
 (function () {
@@ -56,15 +56,16 @@ Gravatar and QQ Avatar Widget
       src = `https://github.com/${username}.png?size=${size}`;
     }
 
-    // gravatar en
-    if (type === 'gravatar-en') {
+    // gravatar
+    // https://en.gravatar.com/site/implement/images/
+    if (type === 'gravatar') {
       const hash = md5(email.trim().toLowerCase());
-      src = `https://en.gravatar.com/avatar/${hash}?s=${size}`;
+      src = `https://gravatar.com/avatar/${hash}.png?d=identicon&s=${size}`;
     }
-    // gravatar cn
+    // gravatar cn not support identicon options
     if (type === 'gravatar-cn') {
       const hash = md5(email.trim().toLowerCase());
-      src = `https://cn.gravatar.com/avatar/${hash}?s=${size}`;
+      src = `https://cn.gravatar.com/avatar/${hash}.png?s=${size}`;
     }
     // Create element
     const avatarContainer = this.document.createElement('div');
