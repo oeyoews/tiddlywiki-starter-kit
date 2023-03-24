@@ -15,6 +15,13 @@ module.exports = {
   synchronous: !0,
   startup: () => {
     const options = {
+      Toolbar: {
+        display: {
+          left: ['infobar'],
+          middle: [],
+          right: ['slideshow', 'fullscreen', 'download', 'thumbs', 'close'],
+        },
+      },
       Fullscreen: {
         autoStart: false,
       },
