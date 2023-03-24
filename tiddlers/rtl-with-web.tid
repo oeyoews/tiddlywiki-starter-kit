@@ -1,0 +1,11 @@
+created: 20230324133259939
+creator: oeyoews
+modified: 20230324133324931
+modifier: oeyoews
+tags: 
+title: rtl-with-web
+type: text/vnd.tiddlywiki
+
+* RTL 代表从右到左，这是在某些语言（例如阿拉伯语、希伯来语和波斯语）中使用的书写方向。在 RTL 书写系统中，文本是从右到左书写的，这与英语等大多数语言中使用的从左到右的方向相反。
+
+* 为了在 Web 开发中支持 RTL，CSS 提供了一些可用于更改元素布局的属性。例如，direction属性可以设置rtl为将文本和其他元素的方向更改为从右到左。此外，一些 CSS 框架（如 Bootstrap 和 TailwindCSS）提供对 RTL 布局的内置支持，使创建支持 RTL 语言的网站变得更加容易。

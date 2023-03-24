@@ -25,6 +25,7 @@
 ## TODO
 
 - [ ] Use a script to output all supported TailwindCSS classes.
+- [ ] use @config commands
 - [ ] Use the `theme` feature of TailwindCSS to support dynamic switching of the primary palette.
 - [ ] Ensure that the Markdown and TiddlyWiki heading styles are consistent.
 - [ ] Fix the hover style, which currently has some issues.
