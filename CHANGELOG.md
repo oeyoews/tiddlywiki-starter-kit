@@ -1,3 +1,10 @@
+## [3.160.1](https://github.com/oeyoews/neotw/compare/v3.160.0...v3.160.1) (2023-03-25)
+
+
+### Performance Improvements
+
+* update taildinwcss class parten ([6623cb3](https://github.com/oeyoews/neotw/commit/6623cb3f31a6458993f0186a2a689c3f8e68b78a))
+
 # [3.160.0](https://github.com/oeyoews/neotw/compare/v3.159.1...v3.160.0) (2023-03-25)
 
 
