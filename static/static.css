@@ -9136,6 +9136,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="search-fast-with-gpt"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="shields.io-not-support-online-image"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="show-articles"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="soft-link-for-path"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9833,7 +9835,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "214";
+  content: "215";
 }
 .user-panel-avatar {
   position: relative;
