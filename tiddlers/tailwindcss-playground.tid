@@ -1,0 +1,9 @@
+created: 20230325065909467
+creator: oeyoews
+modified: 20230325071155700
+modifier: oeyoews
+tags: 
+title: tailwindcss-playground
+type: text/vnd.tiddlywiki
+
+* <span class="text-cyan-300 underline decoration-wavy decoration-2 decoration-indigo-400"> demo underline decoration-indigo-200</span>

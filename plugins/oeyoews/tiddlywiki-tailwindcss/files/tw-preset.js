@@ -10,8 +10,11 @@ const config: Config = {
 
 module.exports = {
   // prefix: 'tw-',
-  // content not work ???
-  content: ['./plugins/oeyoews/**/*.{html,tid,md}'],
+  content: [
+    './plugins/oeyoews/**/*.{html,tid,md}',
+    './tiddlers/!(StoryList).tid',
+    './tiddlers/!(($%2FStoryList)).tid',
+  ],
   theme: {
     extend: {
       typography: ({ theme }) => ({
