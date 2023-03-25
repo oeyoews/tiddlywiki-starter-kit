@@ -11,7 +11,7 @@ const config: Config = {
 module.exports = {
   // prefix: 'tw-',
   // content not work ???
-  content: ['./plugins/oeyoews/**/*.{html,tid,css}'],
+  content: ['./plugins/oeyoews/**/*.{html,tid,md}'],
   theme: {
     extend: {
       typography: ({ theme }) => ({

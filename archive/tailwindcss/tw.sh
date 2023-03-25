@@ -54,8 +54,8 @@ fi
 # npx tailwindcss --input "$inputPath" --output "$outputPath" --minify --content "$content"
 # npx tailwindcss --input "$inputPath" --output "$outputPathDev" -c ./tw-preset.js
 # npx tailwindcss --input "$inputPath" --output "$outputPath" --minify -c ./tw-preset.js
-npx tailwindcss --output "$outputPathDev" -c ./tw-preset.js
-npx tailwindcss --output "$outputPath" --minify -c ./tw-preset.js
+npx tailwindcss --output "$outputPathDev" -c ./plugins/oeyoews/tiddlywiki-tailwindcss/files/tw-preset.js
+npx tailwindcss --output "$outputPath" --minify -c ./plugins/oeyoews/tiddlywiki-tailwindcss/files/tw-preset.js
 
 # watch
 # npx tailwindcss --output ./plugins/oeyoews/tiddlywiki-tailwindcss/files/styles.min.css --minify -c ./tw-preset.js -w
