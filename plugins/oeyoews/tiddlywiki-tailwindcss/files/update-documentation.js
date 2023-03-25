@@ -6,7 +6,15 @@ const cssText = fs.readFileSync('styles.min.css', 'utf-8');
 // 匹配所有的类名
 // TODO
 // const classNames = cssText.match(/\.[\w-]+/g);
-const classNames = cssText.match(/\.[a-z]+(?:-[a-z\d]+)*/g);
+// const classNames = cssText.match(/\.[a-z]+(?:-[a-z\d]+)*(?::[a-z-]+)?/g);
+const classNames = cssText.match(
+  // /\.[a-z]+(?:-[a-z\d]+)*(?::[a-z-]+(?:\([^\)]+\)))?(?=:[a-z-]+)?/g,
+  /(?<=\.)[a-z]+(?:-[a-z\d]+)*(?::[a-z-]+(?:\([^\)]+\)))?(?=:[a-z-]+)?/g, //weired sometime not useful
+  // /\.[a-z]+(?:-[a-z\d]+)*(?::[a-z-]+(?:\([^\)]+\)))?(?=:[a-z-]+)?|\b[a-z]+(?:-[a-z\d]+)*(?::[a-z-]+(?:\([^\)]+\)))?(?=:[a-z-]+)?/g,
+);
+/* const classNames = cssText.match(
+  /\.[a-z]+(?:-[a-z\d]+)*(?::[a-z-]+(?:\([^\)]+\)))?/g,
+); */
 
 // 去重并排序
 const uniqueClassNames = [...new Set(classNames)].sort();
