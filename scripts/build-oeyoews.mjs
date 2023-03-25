@@ -22,6 +22,10 @@ await spinner('Building ...', async () => {
   // clean generated files
   await $`rm -rf ${dist}`;
 
+  // update tailwindcss styles.min.css
+
+  await $`sh tw.sh`;
+
   // library
   await $`npx ${bin} --build library`;
 
