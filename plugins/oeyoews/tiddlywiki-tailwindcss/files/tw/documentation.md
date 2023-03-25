@@ -88,15 +88,16 @@
 | drop-shadow | <div class="drop-shadow">drop-shadow</div> |
 | duration-200 | <div class="duration-200">duration-200</div> |
 | duration-300 | <div class="duration-300">duration-300</div> |
+| duration-500 | <div class="duration-500">duration-500</div> |
 | ease-in-out | <div class="ease-in-out">ease-in-out</div> |
 | ease-linear | <div class="ease-linear">ease-linear</div> |
 | ease-out | <div class="ease-out">ease-out</div> |
 | file | <div class="file">file</div> |
-| fill-current | <div class="fill-current">fill-current</div> |
 
 
 | Class Name | Example |
 | --- | --- |
+| fill-current | <div class="fill-current">fill-current</div> |
 | filter | <div class="filter">filter</div> |
 | first-letter | <div class="first-letter">first-letter</div> |
 | fixed | <div class="fixed">fixed</div> |
@@ -116,11 +117,11 @@
 | font-sans | <div class="font-sans">font-sans</div> |
 | font-semibold | <div class="font-semibold">font-semibold</div> |
 | font-thin | <div class="font-thin">font-thin</div> |
-| from-green-400 | <div class="from-green-400">from-green-400</div> |
 
 
 | Class Name | Example |
 | --- | --- |
+| from-green-400 | <div class="from-green-400">from-green-400</div> |
 | from-purple-400 | <div class="from-purple-400">from-purple-400</div> |
 | from-purple-500 | <div class="from-purple-500">from-purple-500</div> |
 | from-teal-400 | <div class="from-teal-400">from-teal-400</div> |
@@ -140,11 +141,11 @@
 | hidden | <div class="hidden">hidden</div> |
 | hover | <div class="hover">hover</div> |
 | indent-2 | <div class="indent-2">indent-2</div> |
-| indent-4 | <div class="indent-4">indent-4</div> |
 
 
 | Class Name | Example |
 | --- | --- |
+| indent-4 | <div class="indent-4">indent-4</div> |
 | indent-8 | <div class="indent-8">indent-8</div> |
 | inline | <div class="inline">inline</div> |
 | inline-block | <div class="inline-block">inline-block</div> |
@@ -164,11 +165,11 @@
 | m-0 | <div class="m-0">m-0</div> |
 | m-2 | <div class="m-2">m-2</div> |
 | m-4 | <div class="m-4">m-4</div> |
-| max-w-none | <div class="max-w-none">max-w-none</div> |
 
 
 | Class Name | Example |
 | --- | --- |
+| max-w-none | <div class="max-w-none">max-w-none</div> |
 | max-w-sm | <div class="max-w-sm">max-w-sm</div> |
 | mb-2 | <div class="mb-2">mb-2</div> |
 | ml-2 | <div class="ml-2">ml-2</div> |
@@ -188,11 +189,11 @@
 | opacity-50 | <div class="opacity-50">opacity-50</div> |
 | opacity-75 | <div class="opacity-75">opacity-75</div> |
 | outline | <div class="outline">outline</div> |
-| overflow-ellipsis | <div class="overflow-ellipsis">overflow-ellipsis</div> |
 
 
 | Class Name | Example |
 | --- | --- |
+| overflow-ellipsis | <div class="overflow-ellipsis">overflow-ellipsis</div> |
 | overflow-hidden | <div class="overflow-hidden">overflow-hidden</div> |
 | overline | <div class="overline">overline</div> |
 | p-0 | <div class="p-0">p-0</div> |
@@ -212,11 +213,11 @@
 | prose-slate | <div class="prose-slate">prose-slate</div> |
 | prose-stone | <div class="prose-stone">prose-stone</div> |
 | prose-zinc | <div class="prose-zinc">prose-zinc</div> |
-| pt-2 | <div class="pt-2">pt-2</div> |
 
 
 | Class Name | Example |
 | --- | --- |
+| pt-2 | <div class="pt-2">pt-2</div> |
 | px-2 | <div class="px-2">px-2</div> |
 | px-4 | <div class="px-4">px-4</div> |
 | py-1 | <div class="py-1">py-1</div> |
@@ -236,11 +237,11 @@
 | self-center | <div class="self-center">self-center</div> |
 | shadow | <div class="shadow">shadow</div> |
 | shadow-2xl | <div class="shadow-2xl">shadow-2xl</div> |
-| shadow-blue-500 | <div class="shadow-blue-500">shadow-blue-500</div> |
 
 
 | Class Name | Example |
 | --- | --- |
+| shadow-blue-500 | <div class="shadow-blue-500">shadow-blue-500</div> |
 | shadow-cyan-500 | <div class="shadow-cyan-500">shadow-cyan-500</div> |
 | shadow-indigo-500 | <div class="shadow-indigo-500">shadow-indigo-500</div> |
 | shadow-lg | <div class="shadow-lg">shadow-lg</div> |
@@ -260,11 +261,11 @@
 | text-base | <div class="text-base">text-base</div> |
 | text-black | <div class="text-black">text-black</div> |
 | text-blue-600 | <div class="text-blue-600">text-blue-600</div> |
-| text-center | <div class="text-center">text-center</div> |
 
 
 | Class Name | Example |
 | --- | --- |
+| text-center | <div class="text-center">text-center</div> |
 | text-cyan-300 | <div class="text-cyan-300">text-cyan-300</div> |
 | text-indigo-400 | <div class="text-indigo-400">text-indigo-400</div> |
 | text-lg | <div class="text-lg">text-lg</div> |
@@ -284,11 +285,11 @@
 | tracking-wider | <div class="tracking-wider">tracking-wider</div> |
 | transform | <div class="transform">transform</div> |
 | transition | <div class="transition">transition</div> |
-| truncate | <div class="truncate">truncate</div> |
 
 
 | Class Name | Example |
 | --- | --- |
+| truncate | <div class="truncate">truncate</div> |
 | underline | <div class="underline">underline</div> |
 | uppercase | <div class="uppercase">uppercase</div> |
 | via-pink-500 | <div class="via-pink-500">via-pink-500</div> |
@@ -301,4 +302,4 @@
 | w-64 | <div class="w-64">w-64</div> |
 | w-full | <div class="w-full">w-full</div> |
 
- Total classes: <span class="font-bold">251</span>
+ Total classes: <span class="font-bold">252</span>

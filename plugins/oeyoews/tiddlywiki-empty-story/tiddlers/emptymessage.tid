@@ -3,7 +3,9 @@ title: $:/config/EmptyStoryMessage
 <center>
 <$list filter="[[$:/plugins/oeyoews/tiddlywiki-gravatar]has[plugin-type]]">
   <!-- <$gravatar/> -->
-  <$qq-avatar/>
+<div class="transform hover:scale-125 inline-flex transition duration-300 ease-in-out">
+  <$avatar />
+</div>
 </$list>
 <h2> {{$:/status/UserName}} </h2>
 	<!-- <$list filter="[{$:/info/url/protocol}match[https:]]"> -->
