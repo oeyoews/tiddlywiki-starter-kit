@@ -40,6 +40,15 @@ title: $:/plugins/oeyoews/tiddlywiki-gravatar/readme
 > qq
 * <$qq-avatar />
 
+> github
+
+* <$avatar type="github"/>
+
+> identicon
+
+* <$avatar email="xxx"/>
+* <$avatar email="xxx" type="gravatar"/>
+
 !! usage
 
 * 支持 qq gravatar(en and cn) github
