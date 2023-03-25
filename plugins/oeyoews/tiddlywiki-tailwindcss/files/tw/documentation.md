@@ -65,14 +65,22 @@
 | cursor-text | <div class="cursor-text">cursor-text</div> |
 | cursor-wait | <div class="cursor-wait">cursor-wait</div> |
 | decoration-2 | <div class="decoration-2">decoration-2</div> |
-| decoration-dotted | <div class="decoration-dotted">decoration-dotted</div> |
-| decoration-indigo-500 | <div class="decoration-indigo-500">decoration-indigo-500</div> |
-| decoration-pink-500 | <div class="decoration-pink-500">decoration-pink-500</div> |
-| decoration-sky-500 | <div class="decoration-sky-500">decoration-sky-500</div> |
+| decoration-4 | <div class="decoration-4">decoration-4</div> |
+| decoration-cyan-200 | <div class="decoration-cyan-200">decoration-cyan-200</div> |
+| decoration-cyan-300 | <div class="decoration-cyan-300">decoration-cyan-300</div> |
+| decoration-cyan-400 | <div class="decoration-cyan-400">decoration-cyan-400</div> |
 
 
 | Class Name | Example |
 | --- | --- |
+| decoration-dashed | <div class="decoration-dashed">decoration-dashed</div> |
+| decoration-dotted | <div class="decoration-dotted">decoration-dotted</div> |
+| decoration-double | <div class="decoration-double">decoration-double</div> |
+| decoration-indigo-500 | <div class="decoration-indigo-500">decoration-indigo-500</div> |
+| decoration-pink-500 | <div class="decoration-pink-500">decoration-pink-500</div> |
+| decoration-rose-500 | <div class="decoration-rose-500">decoration-rose-500</div> |
+| decoration-sky-500 | <div class="decoration-sky-500">decoration-sky-500</div> |
+| decoration-solid | <div class="decoration-solid">decoration-solid</div> |
 | decoration-wavy | <div class="decoration-wavy">decoration-wavy</div> |
 | drop-shadow | <div class="drop-shadow">drop-shadow</div> |
 | duration-200 | <div class="duration-200">duration-200</div> |
@@ -85,6 +93,10 @@
 | filter | <div class="filter">filter</div> |
 | first-letter | <div class="first-letter">first-letter</div> |
 | fixed | <div class="fixed">fixed</div> |
+
+
+| Class Name | Example |
+| --- | --- |
 | flex | <div class="flex">flex</div> |
 | flex-1 | <div class="flex-1">flex-1</div> |
 | flex-wrap | <div class="flex-wrap">flex-wrap</div> |
@@ -93,10 +105,6 @@
 | focus | <div class="focus">focus</div> |
 | font-black | <div class="font-black">font-black</div> |
 | font-bold | <div class="font-bold">font-bold</div> |
-
-
-| Class Name | Example |
-| --- | --- |
 | font-extrabold | <div class="font-extrabold">font-extrabold</div> |
 | font-extralight | <div class="font-extralight">font-extralight</div> |
 | font-light | <div class="font-light">font-light</div> |
@@ -109,6 +117,10 @@
 | from-purple-400 | <div class="from-purple-400">from-purple-400</div> |
 | from-purple-500 | <div class="from-purple-500">from-purple-500</div> |
 | from-teal-400 | <div class="from-teal-400">from-teal-400</div> |
+
+
+| Class Name | Example |
+| --- | --- |
 | gap-4 | <div class="gap-4">gap-4</div> |
 | grayscale | <div class="grayscale">grayscale</div> |
 | grid | <div class="grid">grid</div> |
@@ -117,10 +129,6 @@
 | h-10 | <div class="h-10">h-10</div> |
 | h-2 | <div class="h-2">h-2</div> |
 | h-20 | <div class="h-20">h-20</div> |
-
-
-| Class Name | Example |
-| --- | --- |
 | h-3 | <div class="h-3">h-3</div> |
 | h-5 | <div class="h-5">h-5</div> |
 | h-6 | <div class="h-6">h-6</div> |
@@ -133,6 +141,10 @@
 | indent-8 | <div class="indent-8">indent-8</div> |
 | inline | <div class="inline">inline</div> |
 | inline-block | <div class="inline-block">inline-block</div> |
+
+
+| Class Name | Example |
+| --- | --- |
 | inline-flex | <div class="inline-flex">inline-flex</div> |
 | inline-table | <div class="inline-table">inline-table</div> |
 | invisible | <div class="invisible">invisible</div> |
@@ -141,10 +153,6 @@
 | items-center | <div class="items-center">items-center</div> |
 | justify-around | <div class="justify-around">justify-around</div> |
 | justify-center | <div class="justify-center">justify-center</div> |
-
-
-| Class Name | Example |
-| --- | --- |
 | leading-normal | <div class="leading-normal">leading-normal</div> |
 | line-through | <div class="line-through">line-through</div> |
 | list-inside | <div class="list-inside">list-inside</div> |
@@ -157,18 +165,19 @@
 | max-w-sm | <div class="max-w-sm">max-w-sm</div> |
 | mb-2 | <div class="mb-2">mb-2</div> |
 | ml-2 | <div class="ml-2">ml-2</div> |
+
+
+| Class Name | Example |
+| --- | --- |
 | mt-2 | <div class="mt-2">mt-2</div> |
 | mt-6 | <div class="mt-6">mt-6</div> |
 | mx-0 | <div class="mx-0">mx-0</div> |
+| mx-1 | <div class="mx-1">mx-1</div> |
 | mx-10 | <div class="mx-10">mx-10</div> |
 | mx-2 | <div class="mx-2">mx-2</div> |
 | mx-auto | <div class="mx-auto">mx-auto</div> |
 | my-2 | <div class="my-2">my-2</div> |
 | my-4 | <div class="my-4">my-4</div> |
-
-
-| Class Name | Example |
-| --- | --- |
 | no-underline | <div class="no-underline">no-underline</div> |
 | object-cover | <div class="object-cover">object-cover</div> |
 | opacity-100 | <div class="opacity-100">opacity-100</div> |
@@ -180,6 +189,10 @@
 | overflow-hidden | <div class="overflow-hidden">overflow-hidden</div> |
 | overline | <div class="overline">overline</div> |
 | p-0 | <div class="p-0">p-0</div> |
+
+
+| Class Name | Example |
+| --- | --- |
 | p-1 | <div class="p-1">p-1</div> |
 | p-2 | <div class="p-2">p-2</div> |
 | p-4 | <div class="p-4">p-4</div> |
@@ -189,10 +202,6 @@
 | prose-a | <div class="prose-a">prose-a</div> |
 | prose-base | <div class="prose-base">prose-base</div> |
 | prose-h2 | <div class="prose-h2">prose-h2</div> |
-
-
-| Class Name | Example |
-| --- | --- |
 | prose-img | <div class="prose-img">prose-img</div> |
 | prose-indigo | <div class="prose-indigo">prose-indigo</div> |
 | prose-neutral | <div class="prose-neutral">prose-neutral</div> |
@@ -204,6 +213,10 @@
 | px-2 | <div class="px-2">px-2</div> |
 | px-4 | <div class="px-4">px-4</div> |
 | py-1 | <div class="py-1">py-1</div> |
+
+
+| Class Name | Example |
+| --- | --- |
 | py-2 | <div class="py-2">py-2</div> |
 | py-4 | <div class="py-4">py-4</div> |
 | relative | <div class="relative">relative</div> |
@@ -213,10 +226,6 @@
 | rounded-md | <div class="rounded-md">rounded-md</div> |
 | rounded-sm | <div class="rounded-sm">rounded-sm</div> |
 | select-all | <div class="select-all">select-all</div> |
-
-
-| Class Name | Example |
-| --- | --- |
 | select-auto | <div class="select-auto">select-auto</div> |
 | select-none | <div class="select-none">select-none</div> |
 | select-text | <div class="select-text">select-text</div> |
@@ -228,6 +237,10 @@
 | shadow-indigo-500 | <div class="shadow-indigo-500">shadow-indigo-500</div> |
 | shadow-lg | <div class="shadow-lg">shadow-lg</div> |
 | shadow-md | <div class="shadow-md">shadow-md</div> |
+
+
+| Class Name | Example |
+| --- | --- |
 | shadow-xl | <div class="shadow-xl">shadow-xl</div> |
 | shrink-0 | <div class="shrink-0">shrink-0</div> |
 | space-x-2 | <div class="space-x-2">space-x-2</div> |
@@ -237,10 +250,6 @@
 | space-y-6 | <div class="space-y-6">space-y-6</div> |
 | sr-only | <div class="sr-only">sr-only</div> |
 | static | <div class="static">static</div> |
-
-
-| Class Name | Example |
-| --- | --- |
 | sticky | <div class="sticky">sticky</div> |
 | table | <div class="table">table</div> |
 | text-2xl | <div class="text-2xl">text-2xl</div> |
@@ -252,6 +261,10 @@
 | text-lg | <div class="text-lg">text-lg</div> |
 | text-red-500 | <div class="text-red-500">text-red-500</div> |
 | text-rose-200 | <div class="text-rose-200">text-rose-200</div> |
+
+
+| Class Name | Example |
+| --- | --- |
 | text-slate-500 | <div class="text-slate-500">text-slate-500</div> |
 | text-slate-600 | <div class="text-slate-600">text-slate-600</div> |
 | text-sm | <div class="text-sm">text-sm</div> |
@@ -261,10 +274,6 @@
 | to-blue-500 | <div class="to-blue-500">to-blue-500</div> |
 | to-green-400 | <div class="to-green-400">to-green-400</div> |
 | to-pink-500 | <div class="to-pink-500">to-pink-500</div> |
-
-
-| Class Name | Example |
-| --- | --- |
 | to-red-500 | <div class="to-red-500">to-red-500</div> |
 | tracking-wide | <div class="tracking-wide">tracking-wide</div> |
 | tracking-wider | <div class="tracking-wider">tracking-wider</div> |
@@ -276,10 +285,14 @@
 | visible | <div class="visible">visible</div> |
 | w-10 | <div class="w-10">w-10</div> |
 | w-20 | <div class="w-20">w-20</div> |
+
+
+| Class Name | Example |
+| --- | --- |
 | w-3 | <div class="w-3">w-3</div> |
 | w-5 | <div class="w-5">w-5</div> |
 | w-6 | <div class="w-6">w-6</div> |
 | w-64 | <div class="w-64">w-64</div> |
 | w-full | <div class="w-full">w-full</div> |
 
- Total classes: <span class="font-bold">236</span>
+ Total classes: <span class="font-bold">245</span>
