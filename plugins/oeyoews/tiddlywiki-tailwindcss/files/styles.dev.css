@@ -2117,6 +2117,11 @@
   background-color: rgb(79 70 229 / var(--tw-bg-opacity)) !important;
 }
 
+.hover\:bg-rose-500:hover {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(244 63 94 / var(--tw-bg-opacity)) !important;
+}
+
 .hover\:bg-sky-400:hover {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(56 189 248 / var(--tw-bg-opacity)) !important;

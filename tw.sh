@@ -69,3 +69,6 @@ else
   sizeStr="$(echo "scale=2; $size/1048576" | bc) MB"
 fi
 echo -e "\033[0;32mGenerated $outputPath (${sizeStr})\033[0m"
+
+# update-documentaion
+cd ./plugins/oeyoews/tiddlywiki-tailwindcss/files && node ./update-documentation.js
