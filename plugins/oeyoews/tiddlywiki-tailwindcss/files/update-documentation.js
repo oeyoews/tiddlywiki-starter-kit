@@ -4,7 +4,9 @@ const fs = require('fs');
 const cssText = fs.readFileSync('styles.min.css', 'utf-8');
 
 // 匹配所有的类名
-const classNames = cssText.match(/\.[\w-]+/g);
+// TODO
+// const classNames = cssText.match(/\.[\w-]+/g);
+const classNames = cssText.match(/\.[a-z]+(?:-[a-z\d]+)*/g);
 
 // 去重并排序
 const uniqueClassNames = [...new Set(classNames)].sort();

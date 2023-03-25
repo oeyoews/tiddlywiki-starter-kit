@@ -12,8 +12,8 @@ module.exports = {
   // prefix: 'tw-',
   content: [
     './plugins/oeyoews/**/*.{html,tid,md}',
-    './tiddlers/!(StoryList).tid',
-    './tiddlers/!(($%2FStoryList)).tid',
+    './tiddlers/**/*!(StoryList).tid',
+    './tiddlers/**/*!(($%2FStoryList)).tid',
   ],
   theme: {
     extend: {

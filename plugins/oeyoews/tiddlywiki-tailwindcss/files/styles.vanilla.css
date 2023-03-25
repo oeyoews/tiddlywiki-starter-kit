@@ -1028,6 +1028,11 @@
   margin-right: 0px !important;
 }
 
+.mx-1 {
+  margin-left: 0.25rem !important;
+  margin-right: 0.25rem !important;
+}
+
 .mx-10 {
   margin-left: 2.5rem !important;
   margin-right: 2.5rem !important;
@@ -1286,6 +1291,10 @@
           user-select: auto !important;
 }
 
+.resize {
+  resize: both !important;
+}
+
 .list-inside {
   list-style-position: inside !important;
 }
@@ -1374,6 +1383,12 @@
 
 .overflow-hidden {
   overflow: hidden !important;
+}
+
+.truncate {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
 }
 
 .overflow-ellipsis {
@@ -1780,6 +1795,11 @@
   color: rgb(37 99 235 / 1) !important;
 }
 
+.text-cyan-300 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(103 232 249 / var(--tw-text-opacity)) !important;
+}
+
 .text-indigo-400 {
   --tw-text-opacity: 1 !important;
   color: rgb(129 140 248 / var(--tw-text-opacity)) !important;
@@ -1831,6 +1851,26 @@
   text-decoration-line: none !important;
 }
 
+.decoration-cyan-200 {
+  text-decoration-color: #a5f3fc !important;
+}
+
+.decoration-cyan-300 {
+  text-decoration-color: #67e8f9 !important;
+}
+
+.decoration-cyan-400 {
+  text-decoration-color: #22d3ee !important;
+}
+
+.decoration-indigo-200 {
+  text-decoration-color: #c7d2fe !important;
+}
+
+.decoration-indigo-400 {
+  text-decoration-color: #818cf8 !important;
+}
+
 .decoration-indigo-500 {
   text-decoration-color: #6366f1 !important;
 }
@@ -1839,12 +1879,28 @@
   text-decoration-color: #ec4899 !important;
 }
 
+.decoration-rose-500 {
+  text-decoration-color: #f43f5e !important;
+}
+
 .decoration-sky-500 {
   text-decoration-color: #0ea5e9 !important;
 }
 
+.decoration-solid {
+  text-decoration-style: solid !important;
+}
+
+.decoration-double {
+  text-decoration-style: double !important;
+}
+
 .decoration-dotted {
   text-decoration-style: dotted !important;
+}
+
+.decoration-dashed {
+  text-decoration-style: dashed !important;
 }
 
 .decoration-wavy {
@@ -1853,6 +1909,10 @@
 
 .decoration-2 {
   text-decoration-thickness: 2px !important;
+}
+
+.decoration-4 {
+  text-decoration-thickness: 4px !important;
 }
 
 .accent-violet-500 {
@@ -1939,6 +1999,11 @@
   outline-style: solid !important;
 }
 
+.blur {
+  --tw-blur: blur(8px) !important;
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;
+}
+
 .drop-shadow {
   --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06)) !important;
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;
@@ -1951,6 +2016,14 @@
 
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;
+}
+
+.\!transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter !important;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter !important;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transition-duration: 150ms !important;
 }
 
 .transition {
@@ -1969,6 +2042,10 @@
   transition-duration: 300ms !important;
 }
 
+.duration-500 {
+  transition-duration: 500ms !important;
+}
+
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
@@ -1979,6 +2056,10 @@
 
 .ease-out {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1) !important;
+}
+
+.\[insertbefore\:currentTiddler\<actionTiddler\>\] {
+  insertbefore: currentTiddler<actionTiddler>;
 }
 
 .first-letter\:uppercase::first-letter {
@@ -2024,6 +2105,12 @@
 .file\:text-violet-700::file-selector-button {
   --tw-text-opacity: 1 !important;
   color: rgb(109 40 217 / var(--tw-text-opacity)) !important;
+}
+
+.hover\:scale-125:hover {
+  --tw-scale-x: 1.25 !important;
+  --tw-scale-y: 1.25 !important;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
 }
 
 .hover\:bg-blue-700:hover {
