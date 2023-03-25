@@ -17,10 +17,11 @@
 
 ## NOTE
 
+- tailwindcss not support text-shadow officially, but you can custom it on your tailwindcss
 - Since TiddlyWiki always wraps content in `<p>` tags, it can be difficult to accurately identify the actual `<p>` tags, making it impossible to use `prose-p:indent-8` for automatic paragraph indentation.
 - Do not add custom classes by default to keep the CSS file small.
 - Enable the `important` flag by default.
-- Disable `preflight` and use only the `base` styles. https://tailwindcss.com/docs/preflight to compatiable tiddlywiki, just use tailwindcss/base to support some css variables
+- Disable `preflight` and use only the `base` styles. https://tailwindcss.com/docs/preflight to compatible tiddlywiki, just use tailwindcss/base to support some css variables
 
 ## TODO
 
