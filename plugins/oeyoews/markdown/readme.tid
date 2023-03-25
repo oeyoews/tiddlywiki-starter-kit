@@ -2,12 +2,27 @@ title: $:/plugins/tiddlywiki/markdown/readme
 
 This plugin provides Markdown support via the [[markdown-it|https://github.com/markdown-it/markdown-it]] parser and its associated plugins:
 
+<div class="font-bold flex justify-center bg-rose-400 rounded p-2">
+Not compatiable wiki link parse in markdown
+</div>
+
 * markdown-it-deflist
 * markdown-it-footnote
 * markdown-it-ins
 * markdown-it-mark
 * markdown-it-sub
 * markdown-it-sup
+
+<hr>
+
+<h2>Extend Personal</h2>
+
+<div class="prose max-w-none font-bold text-indigo-400">
+
+* markdown-it-emoji
+* markdown-it-todo
+
+</div>
 
 !! Compatibility Notes
 

@@ -8,13 +8,13 @@
   "author": "oeyoews <jyao4783@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "bs-sync": "browser-sync start --config bs.config.js",
-    "semantic-release": "semantic-release",
     "guide": "zx scripts/guide.mjs",
-    "start": "npx pm2 start ecosystem.config.js",
-    "tw-build": "sh tw.sh",
-    "tw-watch": "npx tailwindcss --output ./plugins/oeyoews/tiddlywiki-tailwindcss/files/styles.min.css --minify -c ./tw-preset.js -w",
+    "build:tailwindcss": "sh tw.sh",
+    "watch:tailwindcss": "npx tailwindcss --output ./plugins/oeyoews/tiddlywiki-tailwindcss/files/styles.min.css --minify -c ./tw-preset.js -w",
     "build:oeyoews": "zx scripts/build-oeyoews.mjs",
+    "start": "npx pm2 start ecosystem.config.js",
+    "semantic-release": "semantic-release",
+    "bs-sync": "browser-sync start --config bs.config.js",
     "dev": "node startup.js --listen"
   },
   "dependencies": {
