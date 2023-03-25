@@ -29,6 +29,7 @@ twikoo widget
       var path = this.getAttribute('path', currentTiddler || 'Index');
       console.log(`🐛 当前twikoo评论区 为 ${path}`);
 
+      // "this envid just support nodejs, not support static html"
       var envId = this.getAttribute('envId', process.env.envId || '');
       var el = this.getAttribute('el', '#tcomment');
 
