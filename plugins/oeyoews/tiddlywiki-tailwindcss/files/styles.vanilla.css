@@ -1058,6 +1058,10 @@
   margin-bottom: 1rem !important;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem !important;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem !important;
 }
@@ -1176,6 +1180,10 @@
 
 .w-64 {
   width: 16rem !important;
+}
+
+.w-96 {
+  width: 24rem !important;
 }
 
 .w-full {
@@ -1321,6 +1329,10 @@
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
+.flex-col {
+  flex-direction: column !important;
 }
 
 .flex-wrap {
@@ -1472,6 +1484,11 @@
   background-color: rgb(191 219 254 / var(--tw-bg-opacity)) !important;
 }
 
+.bg-blue-400 {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity)) !important;
+}
+
 .bg-blue-500 {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity)) !important;
@@ -1606,6 +1623,14 @@
   --tw-gradient-to: #ef4444 !important;
 }
 
+.bg-left-top {
+  background-position: left top !important;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat !important;
+}
+
 .fill-current {
   fill: currentColor !important;
 }
@@ -1658,6 +1683,11 @@
 .py-4 {
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
+}
+
+.py-6 {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
 }
 
 .pb-4 {
@@ -1715,6 +1745,11 @@
 .text-xl {
   font-size: 1.25rem !important;
   line-height: 1.75rem !important;
+}
+
+.text-xs {
+  font-size: 0.75rem !important;
+  line-height: 1rem !important;
 }
 
 .font-black {
@@ -1786,6 +1821,11 @@
   color: rgb(0 0 0 / var(--tw-text-opacity)) !important;
 }
 
+.text-blue-400 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(96 165 250 / var(--tw-text-opacity)) !important;
+}
+
 .text-blue-600 {
   --tw-text-opacity: 1 !important;
   color: rgb(37 99 235 / var(--tw-text-opacity)) !important;
@@ -1798,6 +1838,16 @@
 .text-cyan-300 {
   --tw-text-opacity: 1 !important;
   color: rgb(103 232 249 / var(--tw-text-opacity)) !important;
+}
+
+.text-green-400 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(74 222 128 / var(--tw-text-opacity)) !important;
+}
+
+.text-green-500 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(34 197 94 / var(--tw-text-opacity)) !important;
 }
 
 .text-indigo-400 {
@@ -2199,6 +2249,14 @@
 
 .prose-a\:no-underline :is(:where(a):not(:where([class~="not-prose"] *))) {
   text-decoration-line: none !important;
+}
+
+.prose-blockquote\:font-normal :is(:where(blockquote):not(:where([class~="not-prose"] *))) {
+  font-weight: 400 !important;
+}
+
+.prose-blockquote\:not-italic :is(:where(blockquote):not(:where([class~="not-prose"] *))) {
+  font-style: normal !important;
 }
 
 .prose-img\:my-0 :is(:where(img):not(:where([class~="not-prose"] *))) {

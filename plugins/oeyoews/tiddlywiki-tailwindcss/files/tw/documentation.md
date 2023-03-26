@@ -209,14 +209,15 @@
 | prose | <div class="prose">prose</div> |
 | prose-a | <div class="prose-a">prose-a</div> |
 | prose-base | <div class="prose-base">prose-base</div> |
+| prose-blockquote | <div class="prose-blockquote">prose-blockquote</div> |
 | prose-h2 | <div class="prose-h2">prose-h2</div> |
 | prose-img | <div class="prose-img">prose-img</div> |
 | prose-indigo | <div class="prose-indigo">prose-indigo</div> |
-| prose-neutral | <div class="prose-neutral">prose-neutral</div> |
 
 
 | Class Name | Example |
 | --- | --- |
+| prose-neutral | <div class="prose-neutral">prose-neutral</div> |
 | prose-p | <div class="prose-p">prose-p</div> |
 | prose-slate | <div class="prose-slate">prose-slate</div> |
 | prose-stone | <div class="prose-stone">prose-stone</div> |
@@ -236,11 +237,11 @@
 | rounded-md | <div class="rounded-md">rounded-md</div> |
 | rounded-sm | <div class="rounded-sm">rounded-sm</div> |
 | select-all | <div class="select-all">select-all</div> |
-| select-auto | <div class="select-auto">select-auto</div> |
 
 
 | Class Name | Example |
 | --- | --- |
+| select-auto | <div class="select-auto">select-auto</div> |
 | select-none | <div class="select-none">select-none</div> |
 | select-text | <div class="select-text">select-text</div> |
 | self-center | <div class="self-center">self-center</div> |
@@ -260,11 +261,11 @@
 | space-y-6 | <div class="space-y-6">space-y-6</div> |
 | sr-only | <div class="sr-only">sr-only</div> |
 | static | <div class="static">static</div> |
-| sticky | <div class="sticky">sticky</div> |
 
 
 | Class Name | Example |
 | --- | --- |
+| sticky | <div class="sticky">sticky</div> |
 | table | <div class="table">table</div> |
 | text-2xl | <div class="text-2xl">text-2xl</div> |
 | text-base | <div class="text-base">text-base</div> |
@@ -284,11 +285,11 @@
 | text-sm | <div class="text-sm">text-sm</div> |
 | text-stone-900 | <div class="text-stone-900">text-stone-900</div> |
 | text-white | <div class="text-white">text-white</div> |
-| text-xl | <div class="text-xl">text-xl</div> |
 
 
 | Class Name | Example |
 | --- | --- |
+| text-xl | <div class="text-xl">text-xl</div> |
 | text-xs | <div class="text-xs">text-xs</div> |
 | to-blue-500 | <div class="to-blue-500">to-blue-500</div> |
 | to-green-400 | <div class="to-green-400">to-green-400</div> |
@@ -308,12 +309,12 @@
 | w-3 | <div class="w-3">w-3</div> |
 | w-5 | <div class="w-5">w-5</div> |
 | w-6 | <div class="w-6">w-6</div> |
-| w-64 | <div class="w-64">w-64</div> |
 
 
 | Class Name | Example |
 | --- | --- |
+| w-64 | <div class="w-64">w-64</div> |
 | w-96 | <div class="w-96">w-96</div> |
 | w-full | <div class="w-full">w-full</div> |
 
- Total classes: <span class="font-bold">262</span>
+ Total classes: <span class="font-bold">263</span>
