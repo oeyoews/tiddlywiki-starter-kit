@@ -8850,15 +8850,11 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="neotw/article/1 26"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/article/1 4"] .tc-titlebar h2 { text-transform: capitalize; }
-
   [data-tiddler-title="neotw/article/1 7"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="neotw/article/1 8"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="neotw/article/awesome-websites"] .tc-titlebar h2 { text-transform: capitalize; }
-
-  [data-tiddler-title="neotw/article/gradient-icon"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="neotw/article/music-index"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -8973,8 +8969,6 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   [data-tiddler-title="neotw/macro/better-url"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="neotw/macro/gitlab-image"] .tc-titlebar h2 { text-transform: capitalize; }
-
-  [data-tiddler-title="neotw/macro/gradient"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="neotw/macro/img-shield"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -9553,7 +9547,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Macro] .tc-tag-label:after {
-  content: " 56";
+  content: " 55";
 }
 
 
@@ -9827,7 +9821,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "215";
+  content: "213";
 }
 .user-panel-avatar {
   position: relative;
