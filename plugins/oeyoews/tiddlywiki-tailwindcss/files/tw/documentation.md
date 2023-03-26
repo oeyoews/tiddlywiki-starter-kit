@@ -236,11 +236,12 @@
 | px-1 | <div class="px-1">px-1</div> |
 | px-2 | <div class="px-2">px-2</div> |
 | px-4 | <div class="px-4">px-4</div> |
-| py-1 | <div class="py-1">py-1</div> |
+| py-0 | <div class="py-0">py-0</div> |
 
 
 | Class Name | Example |
 | --- | --- |
+| py-1 | <div class="py-1">py-1</div> |
 | py-2 | <div class="py-2">py-2</div> |
 | py-4 | <div class="py-4">py-4</div> |
 | py-6 | <div class="py-6">py-6</div> |
@@ -260,11 +261,11 @@
 | shadow-2xl | <div class="shadow-2xl">shadow-2xl</div> |
 | shadow-blue-500 | <div class="shadow-blue-500">shadow-blue-500</div> |
 | shadow-cyan-500 | <div class="shadow-cyan-500">shadow-cyan-500</div> |
-| shadow-indigo-500 | <div class="shadow-indigo-500">shadow-indigo-500</div> |
 
 
 | Class Name | Example |
 | --- | --- |
+| shadow-indigo-500 | <div class="shadow-indigo-500">shadow-indigo-500</div> |
 | shadow-lg | <div class="shadow-lg">shadow-lg</div> |
 | shadow-md | <div class="shadow-md">shadow-md</div> |
 | shadow-xl | <div class="shadow-xl">shadow-xl</div> |
@@ -284,11 +285,11 @@
 | text-blue-400 | <div class="text-blue-400">text-blue-400</div> |
 | text-blue-600 | <div class="text-blue-600">text-blue-600</div> |
 | text-center | <div class="text-center">text-center</div> |
-| text-cyan-300 | <div class="text-cyan-300">text-cyan-300</div> |
 
 
 | Class Name | Example |
 | --- | --- |
+| text-cyan-300 | <div class="text-cyan-300">text-cyan-300</div> |
 | text-green-400 | <div class="text-green-400">text-green-400</div> |
 | text-green-500 | <div class="text-green-500">text-green-500</div> |
 | text-indigo-400 | <div class="text-indigo-400">text-indigo-400</div> |
@@ -308,11 +309,11 @@
 | to-green-400 | <div class="to-green-400">to-green-400</div> |
 | to-pink-500 | <div class="to-pink-500">to-pink-500</div> |
 | to-red-500 | <div class="to-red-500">to-red-500</div> |
-| to-yellow-500 | <div class="to-yellow-500">to-yellow-500</div> |
 
 
 | Class Name | Example |
 | --- | --- |
+| to-yellow-500 | <div class="to-yellow-500">to-yellow-500</div> |
 | tracking-wide | <div class="tracking-wide">tracking-wide</div> |
 | tracking-wider | <div class="tracking-wider">tracking-wider</div> |
 | transform | <div class="transform">transform</div> |
@@ -332,6 +333,10 @@
 | w-64 | <div class="w-64">w-64</div> |
 | w-96 | <div class="w-96">w-96</div> |
 | w-full | <div class="w-full">w-full</div> |
+
+
+| Class Name | Example |
+| --- | --- |
 | z-50 | <div class="z-50">z-50</div> |
 
- Total classes: <span class="font-bold">280</span>
+ Total classes: <span class="font-bold">281</span>
