@@ -3,7 +3,7 @@ title: $:/config/EmptyStoryMessage
 <center>
 <$list filter="[[$:/plugins/oeyoews/tiddlywiki-gravatar]has[plugin-type]]">
   <!-- <$gravatar/> -->
-<div class="shadown-lg transform hover:scale-125 inline-flex transition duration-300 ease-in-out">
+<div class="shadow-lg transform hover:scale-125 inline-flex transition duration-300 ease-in-out">
   <$avatar />
 </div>
 </$list>
