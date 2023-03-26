@@ -1,0 +1,7 @@
+title: $:/plugins/oeyoews/neotw/ui/download-neotw-empty
+
+<div class="flex justify-center">
+<button class="bg-transparent duration-400 rounded bg-gradient-to-r from-green-400 to-blue-500 p-2 px-4 text-white transition hover:scale-110">
+<a target="_blank" href="https://neotw.oeyoewl.top/editions/index.html" class="text-white">Online Preview (empty)</a>
+</button>
+</div>

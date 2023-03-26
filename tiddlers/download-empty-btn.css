@@ -1,6 +1,3 @@
-title: $:/plugins/oeyoews/neotw/ui/download-neotw-empty
-
-<style>
 .download-neotw-empty {
   display: inline-block;
   padding: 10px 20px;
@@ -20,10 +17,3 @@ title: $:/plugins/oeyoews/neotw/ui/download-neotw-empty
   transform: scale(1.1);
   transition: transform .3s ease;
 }
-</style>
-
-<!-- <$list filter="[{$:/info/url/protocol}match[https:]]"> -->
-<center>
-<a target="_blank" href="https://neotw.oeyoewl.top/editions/index.html" class="download-neotw-empty">Online Preview (empty)</a>
-</center>
-<!-- </$list> -->

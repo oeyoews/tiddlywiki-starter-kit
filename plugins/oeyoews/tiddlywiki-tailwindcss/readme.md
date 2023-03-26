@@ -17,6 +17,8 @@
 
 ## NOTE
 
+- tailwindcss use line-gradient need config on your config file
+  > https://stackoverflow.com/questions/71120394/is-there-a-way-to-adjust-the-angle-of-the-linear-gradient-in-tailwind-css
 - tailwindcss not support text-shadow officially, but you can custom it on your tailwindcss
 - Since TiddlyWiki always wraps content in `<p>` tags, it can be difficult to accurately identify the actual `<p>` tags, making it impossible to use `prose-p:indent-8` for automatic paragraph indentation.
 - Do not add custom classes by default to keep the CSS file small.
