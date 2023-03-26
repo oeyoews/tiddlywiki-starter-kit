@@ -24,7 +24,7 @@ await spinner('Building ...', async () => {
 
   // update tailwindcss styles.min.css
 
-  await $`yarn build:tailwindcss`;
+  // await $`yarn build:tailwindcss`;
 
   // library
   await $`npx ${bin} --build library`;

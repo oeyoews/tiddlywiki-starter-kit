@@ -18,3 +18,7 @@ title: $:/plugins/oeyoews/tiddlywiki-modal-ui/readme
 > use custom modal ui
 
 {{$:/plugins/oeyoews/tiddlywiki-modal-ui/button}}
+
+!! TODO
+
+* mb-1 not work on ios
