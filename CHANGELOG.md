@@ -1,3 +1,10 @@
+## [3.162.2](https://github.com/oeyoews/neotw/compare/v3.162.1...v3.162.2) (2023-03-26)
+
+
+### Bug Fixes
+
+* move documentation.md to documentation.txt to prevent tailwindcss ([d05ff9d](https://github.com/oeyoews/neotw/commit/d05ff9d0ecb06753b36a07185196d59a941af024))
+
 ## [3.162.1](https://github.com/oeyoews/neotw/compare/v3.162.0...v3.162.1) (2023-03-26)
 
 
