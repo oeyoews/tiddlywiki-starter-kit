@@ -1,3 +1,10 @@
+## [3.162.3](https://github.com/oeyoews/neotw/compare/v3.162.2...v3.162.3) (2023-03-26)
+
+
+### Performance Improvements
+
+* just show processbar ([d2abb24](https://github.com/oeyoews/neotw/commit/d2abb24a7d591580ca052100fe3c381c1037e6c3))
+
 ## [3.162.2](https://github.com/oeyoews/neotw/compare/v3.162.1...v3.162.2) (2023-03-26)
 
 
