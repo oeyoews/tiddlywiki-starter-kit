@@ -8666,14 +8666,7 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 <!--    padding-left: 0.75em; -->
 <!--    padding-right: 1em; -->
 <!-- } -->
-.o-rnav-article {
-  text-align: right;
-  margin-top: 6px;
-  text-transform: uppercase;
-}.o-rnav-article:hover {
-  
-  font-weight: bold;
-}
+
   [data-tiddler-title="2023-02-28"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="about-TIDDLYWIKI_PLUGIN_PATH-not-working"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -8865,8 +8858,6 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   [data-tiddler-title="neotw/awesome-tiddlywiki"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="neotw/body-fontsize"] .tc-titlebar h2 { text-transform: capitalize; }
-
-  [data-tiddler-title="neotw/browser/tip"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="neotw/button-checkbox"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -9821,7 +9812,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "213";
+  content: "212";
 }
 .user-panel-avatar {
   position: relative;

@@ -627,7 +627,7 @@
         "description": "A clean, uncluttered TiddlyWiki theme",
         "author": "NicolasPetton",
         "version": "1.4.14",
-        "core-version": ">=5.1.22",
+        "core-version": ">=5.2.6",
         "source": "https://github.com/NicolasPetton/Notebook",
         "list": "LICENSE changelog",
         "dependents": "$:/themes/tiddlywiki/vanilla $:/plugins/nico/notebook-mobile",
