@@ -37,7 +37,7 @@ function generateExampleHtml(className) {
 
 // 写入表格到markdown文件
 fs.writeFileSync(
-  'tw/documentation.md',
+  'documentation.txt',
   tableRows
     .map(
       rows => `
@@ -53,6 +53,6 @@ ${rows.map(name => `| ${name} | ${generateExampleHtml(name)} |`).join('\n')}
 const totalClasses = filteredClassNames.length;
 console.log(`Total classes is ${totalClasses}`);
 fs.appendFileSync(
-  'tw/documentation.md',
+  'documentation.txt',
   `\n Total classes: <span class="font-bold">${totalClasses}</span>`,
 );
