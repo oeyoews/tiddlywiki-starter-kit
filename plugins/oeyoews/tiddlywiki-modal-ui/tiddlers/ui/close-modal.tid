@@ -1,6 +1,6 @@
 title: $:/plugins/oeyoews/tiddlywiki-modal-ui/close-modal
 
 <$button class="tc-btn-invisible float-right">
-<span class="hover:scale-125 transition duration-200 ease-in-out bg-rose-200 hover:bg-rose-400 rounded px-2 py-1 text-xs">Esc</span>
+<span class="hover:scale-125 transition duration-200 ease-in-out bg-rose-200 hover:bg-rose-400 rounded px-2 py-1 mb-1 text-xs">Esc</span>
 <$action-sendmessage $message="tm-close-tiddler" $param=<<currentTiddler>>/>
 </$button>
