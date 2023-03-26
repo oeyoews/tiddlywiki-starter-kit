@@ -73,6 +73,7 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
     avatarContainer.setAttribute('style', `max-width: ${width}px`);
 
     var img = this.document.createElement('img');
+    img.setAttribute('class', 'shadow-lg');
     img.setAttribute('src', src);
     img.setAttribute('alt', alt);
     // img.setAttribute('class', gclass);
