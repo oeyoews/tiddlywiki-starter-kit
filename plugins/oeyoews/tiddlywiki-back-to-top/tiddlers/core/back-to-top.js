@@ -1,7 +1,7 @@
 /*\
 title: $:/plugins/my-plugin/back-to-top.js
 type: application/javascript
-module-type: startup
+// module-type: startup
 
 Adds a "back to top" button with a progress indicator to the page which allows users to quickly scroll to the top of the page.
 
