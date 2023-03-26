@@ -9538,7 +9538,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Macro] .tc-tag-label:after {
-  content: " 55";
+  content: " 54";
 }
 
 
@@ -9694,12 +9694,6 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Layout] .tc-tag-label:after {
-  content: " 1";
-}
-
-
-
-[data-tag-title=\$\:\/tags\/RawMarkupWikified\/BottomBody] .tc-tag-label:after {
   content: " 1";
 }
 
