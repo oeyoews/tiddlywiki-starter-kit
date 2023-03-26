@@ -31,15 +31,14 @@
     "oeyoews/tiddlywiki-giscus",
     "oeyoews/tiddlywiki-github-share",
     "oeyoews/tiddlywiki-keyboard-hint",
-    "oeyoews/tiddlywiki-mobile-warning",
     "oeyoews/tiddlywiki-modal-ui",
     "oeyoews/tiddlywiki-motion",
     "oeyoews/tiddlywiki-publish-tiddler",
     "oeyoews/tiddlywiki-static-page",
     "oeyoews/tiddlywiki-tailwindcss",
     "oeyoews/tiddlywiki-tiddler-info",
-    "oeyoews/tiddlywiki-gravatar",   
-    "oeyoews/tiddlywiki-empty-story", 
+    "oeyoews/tiddlywiki-gravatar",
+    "oeyoews/tiddlywiki-empty-story",
     "oeyoews/tiddlywiki-widgets"
   ],
   "themes": [
