@@ -24,7 +24,7 @@ hr {
 }
 
 .gradient {
-  display: inline;
+  /* display: inline; */
   background-image: linear-gradient(135deg, #12c2e9, #ffafbd, #c9ffbf);
   -webkit-background-clip: text;
   color: transparent;
