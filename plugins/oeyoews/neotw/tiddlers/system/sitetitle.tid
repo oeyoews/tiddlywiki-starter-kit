@@ -1,6 +1,6 @@
 title: $:/SiteTitle
 
-<div class="gradient">
-  [img width=22 [$:/favicon.ico]]
-  Neotw <sup class="gradient">rolling</sup>
+<div class="gradient font-bold">
+[img class="hover:scale-125 duration-200 transition" width=22 [$:/favicon.ico]]  Neotw
+<sup class="gradient">rolling</sup>
 </div>

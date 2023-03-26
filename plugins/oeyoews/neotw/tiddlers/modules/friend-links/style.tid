@@ -21,19 +21,20 @@ title: $:/plugins/oeyoews/neotw/modules/friend/style
     font-size: 1.2em;
 }
 
-.friend-card .friend-desc {
-    font-size: 80%;
-    padding: 0.3em 0.9em 0.6em 0.9em;
-    color: green;
-}
-
 .friend-card:hover {
-    transform: scale(0.99);
+    transform: scale(1.05);
     background-color: aliceblue !important;
-    transition: transform .2s;
+    transition: transform .3s;
 }
 
-.friend-link {
-    color: #6698FF;
-    text-decoration: none;
-}
+<!-- .friend-link { -->
+<!--     color: #6698FF; -->
+<!--     text-decoration: none; -->
+<!-- } -->
+<!---->
+<!-- .friend-card .friend-desc { -->
+<!--     font-size: 80%; -->
+<!--     padding: 0.3em 0.9em 0.6em 0.9em; -->
+<!--     color: green; -->
+<!-- } -->
+<!---->
