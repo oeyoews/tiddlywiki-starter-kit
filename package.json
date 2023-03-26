@@ -16,7 +16,6 @@
     "build:oeyoews": "zx scripts/build-oeyoews.mjs",
     "start": "pm2 start ecosystem.config.js",
     "semantic-release": "semantic-release",
-    "bs-sync": "browser-sync start --config bs.config.js",
     "dev": "node startup.js --listen"
   },
   "dependencies": {
@@ -27,14 +26,11 @@
     "postcss-import": "^15.1.0",
     "prettier": "^2.8.6",
     "prettier-plugin-tailwindcss": "^0.2.5",
-    "browser-sync": "^2.29.1",
     "dateformat": "^5.0.3",
     "dotenv": "^16.0.3",
     "gradient-string": "^2.0.2",
     "kolorist": "^1.6.0",
-    "nodemon": "^2.0.20",
     "open": "^8.4.0",
-    "portfinder": "^1.0.32",
     "prompts": "^2.4.2",
     "replace": "^1.2.2",
     "signale": "^1.4.0",
