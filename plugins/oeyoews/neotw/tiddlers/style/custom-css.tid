@@ -13,23 +13,6 @@ tags: $:/tags/Stylesheet
 <!-- 	border-radius: 3px; -->
 <!-- } -->
 
-.o-rnav-article {
-  text-align: right;
-  margin-top: 6px;
-  text-transform: uppercase;
-}
-
-.o-rnav-article:hover {
-  <!-- text-decoration: underline; -->
-  font-weight: bold;
-}
-
-<$list filter="[list[$:/StoryList]count[]compare:number:gt[1]]">
-.o-rnav-article {
-  display: none;
-}
-</$list>
-
 <$list filter="[!is[system]]">
   <<hide-tiddler-controls>>
 </$list>
