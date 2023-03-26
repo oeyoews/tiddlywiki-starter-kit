@@ -1,9 +1,9 @@
 title: $:/SiteTitle
 
-<!-- [img class="hover:scale-125 duration-200 transition" width=22 [$:/favicon.ico]] -->
+<!-- <a href="#"> -->
+<!--   <img src="./files/favicon.ico" class="w-6 hover:scale-125 inline duration-200 transition" /> -->
+<!-- </a> -->
 <div class='gradient font-bold inline'>
-<a href="#">
-  <img src="./files/favicon.ico" class="w-6 hover:scale-125 inline duration-200 transition" />
-</a>
+[img class="hover:scale-125 duration-200 transition" width=22 [$:/favicon.ico]]
 Neotw <sup class="gradient">rolling</sup>
 </div>
