@@ -1,3 +1,10 @@
+## [3.160.2](https://github.com/oeyoews/neotw/compare/v3.160.1...v3.160.2) (2023-03-26)
+
+
+### Performance Improvements
+
+* add prose-blockquote:not-italic ([3835714](https://github.com/oeyoews/neotw/commit/38357147e00802be18a2fbdd4d725d9e72065491))
+
 ## [3.160.1](https://github.com/oeyoews/neotw/compare/v3.160.0...v3.160.1) (2023-03-25)
 
 
