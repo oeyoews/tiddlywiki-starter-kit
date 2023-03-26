@@ -1,4 +1,6 @@
 title: $:/plugins/oeyoews/tiddlywiki-modal-ui/close-modal
 
-<svg class="transition duration-200 ease-in-out float-right bg-rose-200 hover:bg-rose-400 rounded-full" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="#000" stroke-width="2" d="M7,7 L17,17 M7,17 L17,7"></path></svg>
+<$button class="tc-btn-invisible float-right">
+<span class="hover:scale-125 transition duration-200 ease-in-out bg-rose-200 hover:bg-rose-400 rounded px-2 py-1 text-xs">Esc</span>
 <$action-sendmessage $message="tm-close-tiddler" $param=<<currentTiddler>>/>
+</$button>

@@ -1,6 +1,6 @@
 title: $:/plugins/oeyoews/tiddlywiki-modal-ui/button
 
-<$button>
+<$button class="rounded-md font-bold bg-indigo-200 hover:bg-indigo-400 duration-200 transition hover:ease-in-out">
   {{$:/plugins/oeyoews/tiddlywiki-modal-ui/icon}} Click Me!
   <$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/tiddlywiki-modal-ui/modal"/>
 </$button>

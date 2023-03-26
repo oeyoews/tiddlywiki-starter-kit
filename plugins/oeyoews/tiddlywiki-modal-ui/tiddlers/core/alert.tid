@@ -1,5 +1,5 @@
 title: $:/plugins/oeyoews/tiddlywiki-modal-ui/script/alert
-tags: $:/tags/RawMarkup
+<!-- tags: $:/tags/RawMarkup -->
 
 <script>
 window.alert = alert;
