@@ -10,5 +10,5 @@
   "dependents": [
     "$:/plugins/tiddlywiki/markdown"
   ],
-  "list": "readme Tailwindcss explore Documentation"
+  "list": "readme Tailwindcss Documentation explore "
 }
