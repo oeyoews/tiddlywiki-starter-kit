@@ -8727,6 +8727,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="english-widget-example"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="Everything is possible with GPT"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="f-notion"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="f-talk"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9806,7 +9808,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "215";
+  content: "216";
 }
 .user-panel-avatar {
   position: relative;
