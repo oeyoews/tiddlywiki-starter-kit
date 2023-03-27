@@ -35,7 +35,7 @@
     "replace": "^1.2.2",
     "signale": "^1.4.0",
     "terser": "^5.16.6",
-    "tiddlywiki": "github:oeyoews/TiddlyWiki5#925ff202a07689882e9670fb1426167076f8bb7a",
+    "tiddlywiki": "github:oeyoews/TiddlyWiki5#e0ff54a04ed0427d05739ecff07168f6fc86ba6d",
     "zx": "^7.2.0"
   },
   "bugs": {
