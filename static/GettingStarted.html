@@ -239,8 +239,8 @@ require git and npm and not compatible vanilla theme
 </p>
 </blockquote>
 <pre class="hljs"><code class="bash hljs">git <span class="hljs-built_in">clone</span> --depth 1 https://github.com/oeyoews/neotw
-<span class="hljs-built_in">cd</span> neotw &amp;&amp; npm install  <span class="hljs-comment"># install packages</span>
-npm run start  <span class="hljs-comment"># start tiddlywiki on https://localhost:8099</span>
+<span class="hljs-built_in">cd</span> neotw &amp;&amp; yarn or yarn install  <span class="hljs-comment"># install packages</span>
+yarn start  <span class="hljs-comment"># start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm2:start</span>
 </code></pre>
 <h2>Deploy ⚙️</h2>
 
@@ -251,44 +251,10 @@ npm run start  <span class="hljs-comment"># start tiddlywiki on https://localhos
 <a href="https://app.netlify.com/start/deploy?repository=https://github.com/oeyoews/neotw" target="_blank">
 <img src="https://www.netlify.com/img/deploy/button.svg">
 </a>
-<h2>FileStruct 📂</h2>
-<details>
-  <summary>FileStruct</summary>
-<pre class="hljs"><code class="bash hljs">Neotw
-├──📁archive
-├──📁CITATION.cff
-├──📁subwiki
-├──📁dist
-├──📁files
-├──📁img
-├──📁LICENSE
-├──📁makefile
-├──📁netlify.toml
-├──📁node_modules
-├──📁output
-├──📁package.json
-├──📁patch
-├──📁README.md
-├──📁scripts
-├──📁src
-├──📁static
-├──📁templates
-├──📁<span class="hljs-built_in">test</span>
-├──📁tiddlers
-├──📁tiddlywiki.info
-├──📁vercel.json
-└──📁yarn.lock
-<span class="hljs-comment"># This structure may not be up to date</span>
-</code></pre>
-</details>
-
-
-
 <h2>Online Preview 👀</h2>
 <details>
 <summary>Preview</summary>
 <ul>
-<li><a class="tc-tiddlylink-external _codified_" href="https://neotw.oeyoewl.top/#neotw-reveal-js" rel="noopener noreferrer" target="_blank">Slides</a></li>
 <li><a class="tc-tiddlylink-external _codified_" href="https://neotw.oeyoewl.top" rel="noopener noreferrer" target="_blank">main</a></li>
 <li><a class="tc-tiddlylink-external _codified_" href="https://oeyoews.github.io/neotw" rel="noopener noreferrer" target="_blank">github page</a></li>
 <li><a class="tc-tiddlylink-external _codified_" href="https://neotw.tiddlyhost.com" rel="noopener noreferrer" target="_blank">tiddlyhost</a></li>
@@ -296,11 +262,6 @@ npm run start  <span class="hljs-comment"># start tiddlywiki on https://localhos
 <li><a class="tc-tiddlylink-external _codified_" href="https://neotw.netlify.app" rel="noopener noreferrer" target="_blank">netlify</a></li>
 </ul>
 </details>
-<h2>TODO</h2>
-<ul class="task-list">
-<li class="task-list-item"><input checked="true" disabled="true" id="cbx_0" type="checkbox"><label for="cbx_0"> 提供 neotw 空白版本</label></li>
-<li class="task-list-item"><input checked="true" disabled="true" id="cbx_1" type="checkbox"><label for="cbx_1"> 使用 q 关闭打开的 modal</label></li>
-</ul>
 <h2>Repobeats</h2>
 <center>
 <p><a data-caption="Repobeats analytics image" data-fancybox="$:/plugins/oeyoews/neotw/README"><img alt="repobeats" class=" tc-image-loading" src="https://repobeats.axiom.co/api/embed/3afafedb553e9729995586198853fa9a3c473e90.svg" title="Repobeats analytics image"></a>
