@@ -19,14 +19,14 @@ tags: $:/tags/ViewTemplate
     <$avatar width=16 />
 </div>
   </a>
-{{!!creator}} &nbsp;
+{{!!creator}}&nbsp;
 </span>
 </$list>
 <$list filter="[all[current]has[created]]">
-<$text text={{{[<tid>get[ocreated]else[👉]]}}} /> created &nbsp;<$view field="created" format="date" template="YYYY/0MM/0DD"/>&nbsp;&nbsp;
+<$text text={{{[<tid>get[ocreated]else[👉]]}}} /> created <$view field="created" format="date" template="YYYY/0MM/0DD"/>&nbsp;&nbsp;
 </$list>
 <$list filter="[all[current]has[modified]]">
-<$text text={{{[<tid>get[omodified]else[📝]]}}} /> modified &nbsp;<$view field="modified" format="relativedate" />&nbsp;&nbsp;
+<$text text={{{[<tid>get[omodified]else[📝]]}}} /> modified <$view field="modified" format="relativedate" />&nbsp;&nbsp;
 </$list>
 <$list filter="[all[current]has[description]]">
 <$text text={{{[<tid>get[odescription]else[✅]]}}} />&nbsp;{{!!description}} &nbsp;&nbsp;

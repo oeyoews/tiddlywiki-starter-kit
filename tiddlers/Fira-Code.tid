@@ -1,0 +1,19 @@
+created: 20230327035438969
+creator: oeyoews
+hide-body: no
+modified: 20230327041315510
+modifier: oeyoews
+publish: public
+tags: 
+title: Fira-Code
+type: text/vnd.tiddlywiki
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+
+<!--
+第一行是建立与 Google 字体服务器的预连接。这意味着当浏览器加载网页时，它已经与谷歌字体服务器建立了连接，这可以提高网站性能。
+
+第二行是与 Google Fonts 服务器的静态内容域建立预连接。这是通过“crossorigin”属性完成的，它允许浏览器在不违反同源策略的情况下从另一个域（在本例中为 Google Fonts）请求资源。这还可以通过允许浏览器在解析 CSS 文件之前开始下载字体来提高网站性能。
+-->

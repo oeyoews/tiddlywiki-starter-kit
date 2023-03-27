@@ -15,3 +15,7 @@ title: $:/plugins/oeyoews/neotw-confetti/readme
 <$confetti text="msg" type="msg"/>
 <$confetti text="pride" type="pride"/>
 <$confetti text="random" type="random"/>
+
+!! TODO
+
+* support action
