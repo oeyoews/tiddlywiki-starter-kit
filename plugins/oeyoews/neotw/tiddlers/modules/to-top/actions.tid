@@ -14,3 +14,5 @@ tags: $:/tags/StartupAction
 <$list filter="[{$:/info/darkmode}match[yes]]">
 <$action-setfield $tiddler="$:/palette" text="$:/palettes/GithubDark"/>
 </$list>
+
+<!-- support cn and en -->

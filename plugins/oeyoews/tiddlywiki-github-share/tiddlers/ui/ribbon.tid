@@ -2,6 +2,7 @@ title: $:/plugins/oeyoews/tiddlywiki-github-share/ui/ribbon
 tags: $:/tags/PageControls
 caption: github share button
 description: github share button
+list-after:
 
 \whitespace trim
 
