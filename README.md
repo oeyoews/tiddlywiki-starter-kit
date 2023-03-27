@@ -81,8 +81,8 @@
 
 ```bash
 git clone --depth 1 https://github.com/oeyoews/neotw
-cd neotw && npm install  # install packages
-npm run start  # start tiddlywiki on https://localhost:8099
+cd neotw && yarn or yarn install  # install packages
+yarn start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm2:start
 ```
 
 ## Deploy :gear:
@@ -96,51 +96,11 @@ npm run start  # start tiddlywiki on https://localhost:8099
 <img src="https://www.netlify.com/img/deploy/button.svg">
 </a>
 
-## FileStruct :open_file_folder:
-
-<details>
-  <summary>FileStruct</summary>
-
-```bash
-Neotw
-├──📁archive
-├──📁CITATION.cff
-├──📁subwiki
-├──📁dist
-├──📁files
-├──📁img
-├──📁LICENSE
-├──📁makefile
-├──📁netlify.toml
-├──📁node_modules
-├──📁output
-├──📁package.json
-├──📁patch
-├──📁README.md
-├──📁scripts
-├──📁src
-├──📁static
-├──📁templates
-├──📁test
-├──📁tiddlers
-├──📁tiddlywiki.info
-├──📁vercel.json
-└──📁yarn.lock
-# This structure may not be up to date
-```
-
-</details>
-
-<!-- ## Ps -->
-<!---->
-<!-- - 如果有兴趣以及能力(有一定的计算机基础),确实值得学习一下太微 (TiddlyWiki5) 的巧妙之处, 普通用户只需要学习太微的基本用法 (帕累托法则） -->
-
 ## Online Preview :eyes:
 
 <details>
 <summary>Preview</summary>
 
-- [Slides](https://neotw.oeyoewl.top/#neotw-reveal-js)
 - [main](https://neotw.oeyoewl.top)
 - [github page](https://oeyoews.github.io/neotw)
 - [tiddlyhost](https://neotw.tiddlyhost.com)
@@ -148,11 +108,6 @@ Neotw
 - [netlify](https://neotw.netlify.app)
 
 </details>
-
-## TODO
-
-- [x] 提供 neotw 空白版本
-- [x] 使用 q 关闭打开的 modal
 
 ## Repobeats
 

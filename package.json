@@ -14,9 +14,9 @@
     "build:tailwindcss": "tailwindcss --output ./plugins/oeyoews/tiddlywiki-tailwindcss/files/styles.min.css -c ./plugins/oeyoews/tiddlywiki-tailwindcss/files/tw-preset.js --minify && yarn build:tailwindcss-docs",
     "build:oeyoews": "zx scripts/build-oeyoews.mjs",
     "build:neotw": "zx scripts/build-oeyoews.mjs",
-    "start": "pm2 start ecosystem.config.js",
+    "pm2:start": "pm2 start ecosystem.config.js",
     "semantic-release": "semantic-release",
-    "dev": "node startup.js --listen"
+    "start": "node startup.js --listen"
   },
   "dependencies": {
     "tailwindcss": "^3.2.7",
