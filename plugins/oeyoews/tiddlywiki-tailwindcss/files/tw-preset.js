@@ -11,7 +11,7 @@ const config: Config = {
 module.exports = {
   // prefix: 'tw-',
   content: [
-    './plugins/oeyoews/**/*.{html,tid,md}',
+    './plugins/oeyoews/**/*.{html,tid,md,js}',
     './tiddlers/**/*!(StoryList).tid',
     './tiddlers/**/*!(($%2FStoryList)).tid',
   ],

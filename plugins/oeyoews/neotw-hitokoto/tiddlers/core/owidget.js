@@ -41,11 +41,12 @@ owidget
 
       // use container
       const refreshButton = this.document.createElement('button');
-      refreshButton.className = 'hitokoto-refresh';
-      refreshButton.style.fontSize = '50%';
-      refreshButton.style.marginLeft = '4px';
-      refreshButton.style.color = '#7AA2F7';
+      refreshButton.className =
+        'hitokoto-refresh text-xs ml-2 text-sky-300 cursor-pointer hover:underline hover:font-bold';
       refreshButton.textContent = ' Next';
+      // refreshButton.style.fontSize = '50%';
+      // refreshButton.style.marginLeft = '4px';
+      // refreshButton.style.color = '#7AA2F7';
       refreshButton.onclick = this.handleRefresh.bind(this);
 
       parent.insertBefore(ohitokotoSpan, nextSibling);
