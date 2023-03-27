@@ -1,3 +1,10 @@
+# [3.164.0](https://github.com/oeyoews/neotw/compare/v3.163.0...v3.164.0) (2023-03-27)
+
+
+### Features
+
+* Add metadata and content to gptcommit.tid file. ([c174cf6](https://github.com/oeyoews/neotw/commit/c174cf6fe847ea788936f989536f4dfdfdb4cc4b))
+
 # [3.163.0](https://github.com/oeyoews/neotw/compare/v3.162.6...v3.163.0) (2023-03-27)
 
 
