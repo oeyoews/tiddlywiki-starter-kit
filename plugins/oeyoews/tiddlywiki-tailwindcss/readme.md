@@ -31,6 +31,11 @@
 - Enable the `important` flag by default.
 - Disable `preflight` and use only the `base` styles. https://tailwindcss.com/docs/preflight to compatible tiddlywiki, just use tailwindcss/base to support some css variables
 
+## Extensions
+
+- base tailwindcss to makr tag color manager
+- make theme support theme and dark
+
 ## TODO
 
 - [ ] Use a script to output all supported TailwindCSS classes.
