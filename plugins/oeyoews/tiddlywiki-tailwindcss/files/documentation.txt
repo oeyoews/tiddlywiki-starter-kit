@@ -220,6 +220,7 @@
 | py-4 | <div class="py-4">py-4</div> |
 | relative | <div class="relative">relative</div> |
 | resize | <div class="resize">resize</div> |
+| rotate-90 | <div class="rotate-90">rotate-90</div> |
 | rounded | <div class="rounded">rounded</div> |
 | rounded-full | <div class="rounded-full">rounded-full</div> |
 | rounded-lg | <div class="rounded-lg">rounded-lg</div> |
@@ -236,11 +237,11 @@
 | shadow-blue-500 | <div class="shadow-blue-500">shadow-blue-500</div> |
 | shadow-cyan-500 | <div class="shadow-cyan-500">shadow-cyan-500</div> |
 | shadow-indigo-500 | <div class="shadow-indigo-500">shadow-indigo-500</div> |
-| shadow-lg | <div class="shadow-lg">shadow-lg</div> |
 
 
 | Class Name | Example |
 | --- | --- |
+| shadow-lg | <div class="shadow-lg">shadow-lg</div> |
 | shadow-md | <div class="shadow-md">shadow-md</div> |
 | shadow-xl | <div class="shadow-xl">shadow-xl</div> |
 | shrink-0 | <div class="shrink-0">shrink-0</div> |
@@ -260,11 +261,11 @@
 | text-base | <div class="text-base">text-base</div> |
 | text-black | <div class="text-black">text-black</div> |
 | text-blue-400 | <div class="text-blue-400">text-blue-400</div> |
-| text-blue-600 | <div class="text-blue-600">text-blue-600</div> |
 
 
 | Class Name | Example |
 | --- | --- |
+| text-blue-600 | <div class="text-blue-600">text-blue-600</div> |
 | text-center | <div class="text-center">text-center</div> |
 | text-cyan-300 | <div class="text-cyan-300">text-cyan-300</div> |
 | text-green-500 | <div class="text-green-500">text-green-500</div> |
@@ -284,11 +285,11 @@
 | text-xs | <div class="text-xs">text-xs</div> |
 | to-blue-500 | <div class="to-blue-500">to-blue-500</div> |
 | to-green-400 | <div class="to-green-400">to-green-400</div> |
-| to-pink-500 | <div class="to-pink-500">to-pink-500</div> |
 
 
 | Class Name | Example |
 | --- | --- |
+| to-pink-500 | <div class="to-pink-500">to-pink-500</div> |
 | to-red-500 | <div class="to-red-500">to-red-500</div> |
 | to-yellow-500 | <div class="to-yellow-500">to-yellow-500</div> |
 | tracking-tight | <div class="tracking-tight">tracking-tight</div> |
@@ -308,4 +309,4 @@
 | w-6 | <div class="w-6">w-6</div> |
 | w-full | <div class="w-full">w-full</div> |
 
- Total classes: <span class="font-bold">258</span>
+ Total classes: <span class="font-bold">259</span>
