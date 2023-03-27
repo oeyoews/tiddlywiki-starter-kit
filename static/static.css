@@ -8741,6 +8741,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="fclickId-example"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="Fira-Code"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="firefox-network"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="fix-conflict"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9804,7 +9806,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "214";
+  content: "215";
 }
 .user-panel-avatar {
   position: relative;
@@ -11120,15 +11122,13 @@ li.CodeMirror-hint-active {
 }button.tc-tag-label, span.tc-tag-label {
   padding: 0.3em 1em !important;
 }/* Fonts */html, body {
-  font-family: system-ui,"Maple hand", -apple-system,"Helvetica Neue",Helvetica,Arial,"PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft Yahei",sans-serif, "Segoe UI",Helvetica,Arial,sans-serif, "Twemoji Mozilla", "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
-;
+  font-family: system-ui,"Maple hand", -apple-system,"Helvetica Neue",Helvetica,Arial,"PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft Yahei",sans-serif, "Segoe UI",Helvetica,Arial,sans-serif, "Twemoji Mozilla", "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }.tc-tiddler-frame input.tc-edit-texteditor,
 .tc-tiddler-frame textarea.tc-edit-texteditor,
 .tc-tiddler-frame iframe.tc-edit-texteditor {
-  font-family: ;
+  font-family: "Fira Code";
 }pre, code {
-  font-family: system-ui,"Maple hand","Fira Mono","Liberation Mono",Menlo,Courier,monospace
-;
+  font-family: system-ui,"Maple hand","Fira Mono","Liberation Mono",Menlo,Courier,monospace;
 }.tc-titlebar, .tc-site-title {
   font-size: 28px !important;
   line-height: 34px !important;
