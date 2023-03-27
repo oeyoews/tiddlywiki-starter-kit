@@ -2,7 +2,7 @@ title: $:/plugins/oeyoews/neotw/ui/download-neotw-empty
 
 <div class="flex justify-center">
   <button
-    class="duration-400 rounded bg-transparent bg-gradient-to-r from-green-400 to-blue-500 p-2 px-4 text-white transition hover:scale-110"
+    class="duration-400 rounded bg-transparent bg-gradient-to-r from-green-400 to-blue-500 p-2 px-4 text-white transition hover:scale-110 shadow-lg"
   >
     <a
       target="_blank"
