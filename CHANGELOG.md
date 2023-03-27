@@ -1,3 +1,10 @@
+# [3.165.0](https://github.com/oeyoews/neotw/compare/v3.164.1...v3.165.0) (2023-03-27)
+
+
+### Features
+
+* Add TiddlyWiki Gravatar plugin with navigation button. ([a22b4ad](https://github.com/oeyoews/neotw/commit/a22b4ad3d4a27184e04c20623f9a4363be50b2f4))
+
 ## [3.164.1](https://github.com/oeyoews/neotw/compare/v3.164.0...v3.164.1) (2023-03-27)
 
 
