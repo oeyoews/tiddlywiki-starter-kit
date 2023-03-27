@@ -1,3 +1,10 @@
+# [3.163.0](https://github.com/oeyoews/neotw/compare/v3.162.6...v3.163.0) (2023-03-27)
+
+
+### Features
+
+* Add new tiddler with complete metadata ([3409462](https://github.com/oeyoews/neotw/commit/3409462fd11c09040ac1c3eda1d4fb13dccda3c6))
+
 ## [3.162.6](https://github.com/oeyoews/neotw/compare/v3.162.5...v3.162.6) (2023-03-27)
 
 
