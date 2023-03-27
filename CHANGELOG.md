@@ -1,3 +1,10 @@
+## [3.162.4](https://github.com/oeyoews/neotw/compare/v3.162.3...v3.162.4) (2023-03-27)
+
+
+### Bug Fixes
+
+* if the watch not closed(vscode), will have bg job 1G ([fb5285c](https://github.com/oeyoews/neotw/commit/fb5285cd92fd5e71d7381114126aa9fc6b0b6848))
+
 ## [3.162.3](https://github.com/oeyoews/neotw/compare/v3.162.2...v3.162.3) (2023-03-26)
 
 
