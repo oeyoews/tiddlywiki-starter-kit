@@ -164,7 +164,7 @@ Neotw
   <a href="##neotw-readme-top">
     <!-- <img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/cat.svg" alt="cat"/>↥︎ -->
 
-![cat](https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/cat.svg 'cat')> ↥︎
+![cat](https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/cat.svg 'cat') ↥︎
 
   </a>
   <br>
