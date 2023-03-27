@@ -20,6 +20,8 @@ module.exports = {
       typography: ({ theme }) => ({
         DEFAULT: {
           css: {
+            'blockquote p:first-of-type::before': null,
+            'blockquote p:last-of-type::after': null,
             code: {
               backgroundColor: theme('colors.slate.100'),
               borderRadius: theme('borderRadius.sm'),
