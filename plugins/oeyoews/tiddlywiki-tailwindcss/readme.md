@@ -35,6 +35,8 @@
 
 - base tailwindcss to makr tag color manager
 - make theme support theme and dark
+- add div box
+- switch primary color dynamic
 
 ## TODO
 
