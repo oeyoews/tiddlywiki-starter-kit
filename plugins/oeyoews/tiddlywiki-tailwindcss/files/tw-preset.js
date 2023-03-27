@@ -20,6 +20,9 @@ module.exports = {
       typography: ({ theme }) => ({
         DEFAULT: {
           css: {
+            // a: {
+            //   textDecoration: `none`,
+            // },
             'blockquote p:first-of-type::before': null,
             'blockquote p:last-of-type::after': null,
             code: {

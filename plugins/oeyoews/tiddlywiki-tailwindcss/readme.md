@@ -1,4 +1,4 @@
-<div class="tc-tiddler-body prose prose-indigo max-w-none prose-img:my-0 !dark:prose-invert prose-a:no-underline prose-h2:mt-4 prose-blockquote:not-italic">
+<div class="prose prose-indigo max-w-none prose-img:my-0 !dark:prose-invert prose-a:no-underline prose-h2:mt-4 prose-blockquote:not-italic">
 
 <$image source={{{ [[][https://img.shields.io/badge/Version-]] [<currentTiddler>get[version]] [[-red?style=social]] +[join[]]}}} />
 <$image source={{{ [[][https://img.shields.io/badge/Files-]] [<currentTiddler>plugintiddlers[]count[]] [[-red?style=social]] +[join[]]}}} />
