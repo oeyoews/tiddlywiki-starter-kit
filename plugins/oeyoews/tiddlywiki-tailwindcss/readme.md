@@ -7,6 +7,8 @@
 
 <$transclude tiddler="$:/plugins/oeyoews/tiddlywiki-tailwindcss/docs/header" mode="inline"/>
 
+{{$:/plugins/oeyoews/tiddlywiki-tailwindcss/docs/index}}
+
 ## Use Tailwindcss On Tiddlywiki
 
 > [online view](https://oeyoews.github.io/neotw)
