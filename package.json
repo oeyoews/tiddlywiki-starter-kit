@@ -12,7 +12,6 @@
     "build:tailwindcss-docs": "cd ./plugins/oeyoews/tiddlywiki-tailwindcss/files && node update-documentation.js",
     "build:tailwindcss-vanilla": "tailwindcss --output ./plugins/oeyoews/tiddlywiki-tailwindcss/files/styles.vanilla.css -c ./plugins/oeyoews/tiddlywiki-tailwindcss/files/tw-preset.js",
     "build:tailwindcss": "tailwindcss --output ./plugins/oeyoews/tiddlywiki-tailwindcss/files/styles.min.css -c ./plugins/oeyoews/tiddlywiki-tailwindcss/files/tw-preset.js --minify && yarn build:tailwindcss-docs",
-    "watch:tailwindcss": "tailwindcss --output ./plugins/oeyoews/tiddlywiki-tailwindcss/files/styles.min.css -c ./plugins/oeyoews/tiddlywiki-tailwindcss/files/tw-preset.js --minify -w",
     "build:oeyoews": "zx scripts/build-oeyoews.mjs",
     "build:neotw": "zx scripts/build-oeyoews.mjs",
     "start": "pm2 start ecosystem.config.js",
