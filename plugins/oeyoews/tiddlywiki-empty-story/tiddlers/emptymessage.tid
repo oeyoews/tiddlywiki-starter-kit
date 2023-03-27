@@ -2,10 +2,13 @@ title: $:/config/EmptyStoryMessage
 
 <center>
 <$list filter="[[$:/plugins/oeyoews/tiddlywiki-gravatar]has[plugin-type]]">
+<$button class="bg-transparent">
+<$action-navigate $to="oeyoews"/>
   <!-- <$gravatar/> -->
 <div class="transform hover:scale-125 inline-flex transition duration-300 ease-in-out">
   <$avatar />
 </div>
+</$button>
 </$list>
 <h2 class="capitalize"> {{$:/status/UserName}} </h2>
 	<!-- <$list filter="[{$:/info/url/protocol}match[https:]]"> -->
