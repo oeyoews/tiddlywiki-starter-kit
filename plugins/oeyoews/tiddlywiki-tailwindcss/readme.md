@@ -5,9 +5,9 @@
 <img src="https://img.shields.io/badge/Tailwindcss-3.2.7-38bdf8?style=social">
 <img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/oeyoews/neotw/plugins/oeyoews/tiddlywiki-tailwindcss/files/styles.min.css?style=social">
 
-<$transclude tiddler="$:/plugins/oeyoews/tiddlywiki-tailwindcss/docs/header" mode="inline"/>
-
 {{$:/plugins/oeyoews/tiddlywiki-tailwindcss/docs/index}}
+
+<$transclude tiddler="$:/plugins/oeyoews/tiddlywiki-tailwindcss/docs/header" mode="inline"/>
 
 ## Use Tailwindcss On Tiddlywiki
 
