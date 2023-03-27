@@ -1,7 +1,7 @@
 /*\
 title: $:/plugins/oeyoews/tiddlywiki-widgets/widget/fps
 type: application/javascript
-module-type: widget
+// module-type: widget
 
 fps widget
 \*/
