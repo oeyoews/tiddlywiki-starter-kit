@@ -1,3 +1,10 @@
+## [3.162.6](https://github.com/oeyoews/neotw/compare/v3.162.5...v3.162.6) (2023-03-27)
+
+
+### Bug Fixes
+
+* push failure ([355fd80](https://github.com/oeyoews/neotw/commit/355fd8057cba52b450e53000e606aa9566057ec0))
+
 ## [3.162.5](https://github.com/oeyoews/neotw/compare/v3.162.4...v3.162.5) (2023-03-27)
 
 
