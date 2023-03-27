@@ -10,7 +10,7 @@
   "scripts": {
     "guide": "zx scripts/guide.mjs",
     "build:tailwindcss-docs": "cd ./plugins/oeyoews/tiddlywiki-tailwindcss/files && node update-documentation.js",
-    "build:tailwindcss-vanilla": "tailwindcss --output /tmp/styles.vanilla.css -c ./plugins/oeyoews/tiddlywiki-tailwindcss/files/tw-preset.js",
+    "build:tailwindcss-vanilla": "tailwindcss --output ./plugins/oeyoews/tiddlywiki-tailwindcss/files/styles.vanilla.css -c ./plugins/oeyoews/tiddlywiki-tailwindcss/files/tw-preset.js",
     "build:tailwindcss": "tailwindcss --output ./plugins/oeyoews/tiddlywiki-tailwindcss/files/styles.min.css -c ./plugins/oeyoews/tiddlywiki-tailwindcss/files/tw-preset.js --minify && yarn build:tailwindcss-docs",
     "watch:tailwindcss": "tailwindcss --output ./plugins/oeyoews/tiddlywiki-tailwindcss/files/styles.min.css -c ./plugins/oeyoews/tiddlywiki-tailwindcss/files/tw-preset.js --minify -w",
     "build:oeyoews": "zx scripts/build-oeyoews.mjs",
