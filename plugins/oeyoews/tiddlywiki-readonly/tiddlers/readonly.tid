@@ -10,7 +10,3 @@ tags: $:/tags/Stylesheet
 <<hide-tiddler-controls>>
 </$list>
 </$list>
-
-<!-- <$list filter="[!is[system]field:publish[article]]"> -->
-<!-- <<hide-tiddler-controls>> -->
-<!-- </$list> -->
