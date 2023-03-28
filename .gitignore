@@ -37,7 +37,7 @@ PluginName*
 *.tgz
 tiddlers/layout.tid
 # tiddlers/**/readonly.tid
-stickytitles.tid
+# stickytitles.tid
 
 # pm2
 logs
