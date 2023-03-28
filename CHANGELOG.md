@@ -1,3 +1,10 @@
+## [3.166.1](https://github.com/oeyoews/neotw/compare/v3.166.0...v3.166.1) (2023-03-28)
+
+
+### Bug Fixes
+
+* Correct typo in README.md ([73ae798](https://github.com/oeyoews/neotw/commit/73ae798bfaf5ff9f29e75369efecd8e388b33c1a))
+
 # [3.166.0](https://github.com/oeyoews/neotw/compare/v3.165.1...v3.166.0) (2023-03-28)
 
 
