@@ -1,3 +1,10 @@
+# [3.166.0](https://github.com/oeyoews/neotw/compare/v3.165.1...v3.166.0) (2023-03-28)
+
+
+### Features
+
+* Add `tiddlywiki-readonly` plugin and related files. ([e652a9f](https://github.com/oeyoews/neotw/commit/e652a9f31c600aa1fbb1f7a1b97b1c6b0193f70c))
+
 ## [3.165.1](https://github.com/oeyoews/neotw/compare/v3.165.0...v3.165.1) (2023-03-27)
 
 
