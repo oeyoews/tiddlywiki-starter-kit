@@ -1,20 +1,10 @@
-created: 20220909012800182
-creator: oeyoews
-modified: 20230327055559666
-modifier: oeyoews
-tags: 
-title: reading-colors
-type: text/vnd.tiddlywiki
-
 \define colorbar(color, width:"100",height:"20")
 <svg width="$width$" height="$height$">
   <rect fill="$color$" x="0" y="0" width="$width$" height="$height$"/>
 </svg>
 \end
 
-
 几款纯色阅读的背景：
-
 
 |Color Name |HEX |RGB |Color |Tailwindcss |
 |杏仁黄  |#FAF9DE |rgb (250, 249, 222) |<<colorbar #FAF9DE>>  |<span class="bg-yellow-100">bg-yellow-100</span> |
