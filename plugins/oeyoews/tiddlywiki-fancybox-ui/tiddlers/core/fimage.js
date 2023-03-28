@@ -101,7 +101,7 @@ Render this widget into the DOM
       domNode.setAttribute('alt', this.imageAlt);
     }
     if (this.lazyLoading && tag === 'img') {
-      domNode.setAttribute('loading', this.lazyLoading);
+      domNode.setAttribute('loading', this.lazyLoading || 'lazy');
     }
     const aNode = this.document.createElement('a');
     aNode.setAttribute('data-fancybox', this.getVariable('currentTiddler'));

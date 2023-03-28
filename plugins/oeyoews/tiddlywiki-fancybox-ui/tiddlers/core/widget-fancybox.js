@@ -57,6 +57,7 @@ fancybox widget
       imgNode.src = src;
       imgNode.alt = alt;
       imgNode.width = width;
+      imgNode.setAttribute('loading', 'lazy');
       aNode.setAttribute('data-fancybox', currentTiddler);
       aNode.setAttribute('data-caption', alt);
       aNode.appendChild(imgNode);
