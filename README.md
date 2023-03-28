@@ -29,7 +29,7 @@
 
 ## Intro :tada:
 
-> A modern style notebook based on tiddlywiki. @oeyoews
+> A modern style notebook based on Tiddlywiki. @oeyoews
 
 ## Features :sparkles:
 
@@ -47,9 +47,6 @@
 - :calendar: Automatically display recently created articles
 - :memo: Automatically add spaces between Chinese and English for better typography
 - :label: Support title aliases
-- ...
-
-> **Warning:** Some configurations have not yet been made into standalone plugins or may depend on other plugins. It is not recommended to use them separately.
 
 ## Playground(stackblitz)
 
@@ -58,13 +55,6 @@
 </a>
 
 ## Installation :package:
-
-<!-- > **Note**
-> require git and npm and not compatible vanilla theme
-
-> not recommended use root-tiddler params
-
-> README File use soft link, so not support on Windows to show readme file in tiddlywiki -->
 
 ```bash
 git clone --depth 1 https://github.com/oeyoews/neotw

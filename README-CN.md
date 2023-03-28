@@ -30,114 +30,89 @@
 <img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/013.png" height=256 alt="013">
 </center>
 
-## 介绍 :tada:
+## 简介 :tada:
 
-> A modern style notebook based on `tiddlywiki`. @oeyoews
-
-> Here is a [» demo «](https://oeyoews.github.io/neotw)
-
-## 介绍 :robot:
-
-> NEOTW 是一个简洁、高效的文章发布平台。我们支持中英双语文章发布，同时提供阅读模式和编辑模式之间的切换，让您在阅读文章的同时也可以轻松进行编辑。 我们还支持 emoji 语法，让您在文章中添加更多的表情和感情色彩。
-> 您可以通过 URL 切换不同的布局，让您的阅读体验更加自由。同时，我们根据系统自动切换夜间/日间模式，也可以通过 URL 切换。 我们还支持禅模式，让您在安静的环境中，更好的享受阅读的乐趣。 在 NEOTW 上，您可以发表自己的文章，并且支持评论功能。同时，我们会自动展示最近创建的文章，让您始终了解平台上的最新资讯。 为了让您的阅读更加美观，我们还特别支持中英文之间自动添加空格，让您的排版更加整洁和美观。另外，我们也支持标题别名，让您的标题更加精美。 欢迎来到 NEOTW，让我们一起享受阅读和分享的乐趣！ @Chatgpt
-
-> 这是一个用 TiddlyWiki 创建的文档，可以使用 TiddlyWiki5.2.6 或更高版本打开。Neotw 包括自定义 CSS 和一些插件，可用于美化和增强 TiddlyWiki 的功能。该文档提供了安装和使用 Neotw 主题的详细说明，以及如何进行自定义设置和添加插件。同时，该文档还提供了一些有关 TiddlyWiki 的常见问题解答和有用的链接。如果您对 TiddlyWiki 主题定制和插件开发感兴趣，您可能会在 tiddlywiki 社区中找到有用的信息。
+> 基于太微的现代风格笔记本。@oeyoews
 
 ## 特性 :sparkles:
 
-- 随机展示文章
-- 文章标题支持中英双语言切换
-- 支持阅读模式编辑模式之间的切换
-- 支持 emoji 语法
-- 支持通过 url 切换多种布局
-- 根据系统自动切换夜间/日间模式, 支持 url 切换，例如 https://neotw.oeyoewl.top?mode=dark
-- 支持禅模式
-- 支持评论
-- 自动展示最近创建的文章
-- 中英文之间自动添加空格，排版更美观
-- 标题支持别名
-- ...
+- :bust_in_silhouette: 支持 gravatar
+- :art: 支持使用 tailwindcss 进行更好的排版
+- :twisted_rightwards_arrows: 随机显示文章
+- :computer: 支持 F 全屏，s 切换全屏
+- :globe_with_meridians: 文章标题支持双语言切换
+- :pencil2: 支持阅读模式和编辑模式之间的切换
+- :smile: 支持 emoji 语法
+- :triangular_ruler: 支持通过 URL 在多个布局之间切换
+- :crescent_moon: 根据系统设置自动切换夜间/白天模式，支持 URL 切换
+- :lotus_position: 支持禅模式
+- :speech_balloon: 支持评论
+- :calendar: 自动显示最近创建的文章
+- :memo: 自动在中英文之间添加空格以获得更好的排版效果
+- :label: 支持标题别名
 
-> **Warning** `Neotw` 部分功能暂时还未单独做成插件，或者部分功能依赖与其他插件, 不建议单独使用
+## Playground(stackblitz)
+
+<a href="https://stackblitz.com/github/oeyoews/neotw?file=README.md" target="_blank">
+<img src="https://img.shields.io/badge/Open on Stackblitz-1374EF?style=for-the-badge&logo=StackBlitz">
+</a>
 
 ## 安装 :package:
 
-> **注意**
-> require git and npm and not compatible vanilla theme
-
 ```bash
 git clone --depth 1 https://github.com/oeyoews/neotw
-cd neotw && npm install  # install packages
-npm run start  # start tiddlywiki on https://localhost:8099
+cd neotw && yarn or yarn install # 安装依赖
+yarn start # 在 https://localhost:8099 上启动 TiddlyWiki，或使用 pm2 和 yarn pm2:start
 ```
 
-## 一键部署 :gear:
+## 部署 :gear:
 
 <!-- https://vercel.com/docs/deploy-button -->
 <a target="_blank" href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Foeyoews%2Fneotw">
-<img src="https://vercel.com/button" alt="Deploy with Vercel" />
+<img src="https://vercel.com/button" alt="Deploy with
+" />
 </a>
 <!-- https://docs.netlify.com/site-deploys/create-deploys/ -->
 <a target="_blank" href="https://app.netlify.com/start/deploy?repository=https://github.com/oeyoews/neotw">
 <img src="https://www.netlify.com/img/deploy/button.svg">
 </a>
 
-## 项目结构 :open_file_folder:
+## 在线预览 :eyes:
 
-<details>
-  <summary>FileStruct</summary>
+<a href="https://neotw.oeyoewl.top" target="_blank">
+<img src="https://img.shields.io/badge/Main-1374EF?style=for-the-badge&logo=">
+</a>
 
-```bash
-Neotw
-├──📁archive
-├──📁CITATION.cff
-├──📁dev
-├──📁dist
-├──📁files
-├──📁img
-├──📁LICENSE
-├──📁makefile
-├──📁netlify.toml
-├──📁node_modules
-├──📁output
-├──📁package.json
-├──📁patch
-├──📁README.md
-├──📁scripts
-├──📁src
-├──📁static
-├──📁templates
-├──📁test
-├──📁tiddlers
-├──📁tiddlywiki.info
-├──📁vercel.json
-└──📁yarn.lock
-# This structure may not be up to date
-```
+<a href="https://oeyoews.github.io/neotw" target="_blank">
+<img src="https://img.shields.io/badge/Github Page-1374EF?style=for-the-badge&logo=github">
+</a>
 
-</details>
+<a href="https://neotw.netlify.app" target="_blank">
+<img src="https://img.shields.io/badge/Netlify-1374EF?style=for-the-badge&logo=netlify">
+</a>
 
-<!-- ## Ps -->
-<!---->
-<!-- - 如果有兴趣以及能力(有一定的计算机基础),确实值得学习一下太微 (TiddlyWiki5) 的巧妙之处, 普通用户只需要学习太微的基本用法 (帕累托法则） -->
+<a href="https://neotw.vercel.app" target="_blank">
+<img src="https://img.shields.io/badge/
+-1374EF?style=for-the-badge&logo=vercel">
+</a>
 
-## 预览 :eyes:
+<a href="https://neotw.tiddlyhost.com" target="_blank">
+<img src="https://img.shields.io/badge/Tiddlyhost-1374EF?style=for-the-badge&logo=">
+</a>
 
-<details>
-<summary>预览</summary>
+## Repobeats :headphones:
 
-- [Slides](https://neotw.oeyoewl.top/#neotw-reveal-js)
-- [main](https://neotw.oeyoewl.top)
-- [github page](https://oeyoews.github.io/neotw)
-- [tiddlyhost](https://neotw.tiddlyhost.com)
-- [vercel](https://neotw.vercel.app)
-- [netlify](https://neotw.netlify.app)
+<center>
 
-</details>
+![repobeats](https://repobeats.axiom.co/api/embed/3afafedb553e9729995586198853fa9a3c473e90.svg 'Repobeats analytics image')
+
+</center>
 
 <center>
   <a href="##neotw-readme-top">
-    <img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/cat.svg" alt="cat"/>↥︎
+
+![cat](https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/cat.svg 'cat') ↥︎
+
   </a>
   <br>
   <small>This readme file was automatically generated by Neotw.</small>
