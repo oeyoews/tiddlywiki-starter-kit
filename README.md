@@ -23,7 +23,7 @@
 <hr>
 <center>
 
-![014](https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/014.png 'shwocase')
+![014](https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/014.png 'showcase')
 
 </center>
 
