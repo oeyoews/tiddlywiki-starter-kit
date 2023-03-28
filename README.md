@@ -22,15 +22,8 @@
 
 <hr>
 <center>
-<!-- <img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/011.png" height=256 alt="011">
-<img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/012.png" height=256 alt="012">
-<img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/013.png" height=256 alt="013"> -->
 
 ![014](https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/014.png 'shwocase')
-
-<!-- ![011](https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/011.png 'showcase') -->
-<!-- ![012](https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/012.png 'showcase') -->
-<!-- ![013](https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/013.png 'shwocase') -->
 
 </center>
 
@@ -40,27 +33,29 @@
 
 ## Features :sparkles:
 
-- support gravatar(en and cn)
-- support use tailwindcss to better typography
-- 随机展示文章
-- 支持 F 全屏, s 切换全屏
-- 文章标题支持中英双语言切换
-- 支持阅读模式编辑模式之间的切换
-- 支持 emoji 语法
-- 支持通过 url 切换多种布局
-- 根据系统自动切换夜间/日间模式, 支持 url 切换，例如 https://neotw.oeyoewl.top?mode=dark
-- 支持禅模式
-- 支持评论
-- 自动展示最近创建的文章
-- 中英文之间自动添加空格，排版更美观
-- 标题支持别名
+- :bust_in_silhouette: Support gravatar
+- :art: Support use tailwindcss to better typography
+- :twisted_rightwards_arrows: Randomly display articles
+- :computer: Support F fullscreen, s toggle fullscreen
+- :globe_with_meridians: Article titles support bilingual language switching
+- :pencil2: Support switching between reading mode and editing mode
+- :smile: Support emoji syntax
+- :triangular_ruler: Support switching between multiple layouts via URL
+- :crescent_moon: Automatically switch between night/day mode based on system settings, support URL switching
+- :lotus_position: Support Zen mode
+- :speech_balloon: Support comments
+- :calendar: Automatically display recently created articles
+- :memo: Automatically add spaces between Chinese and English for better typography
+- :label: Support title aliases
 - ...
 
-> **Warning** 部分配置暂时还未单独做成插件，或者依赖与其他插件, 不建议单独使用
+> **Warning:** Some configurations have not yet been made into standalone plugins or may depend on other plugins. It is not recommended to use them separately.
 
 ## Playground(stackblitz)
 
-- [stackblitz](https://stackblitz.com/github/oeyoews/neotw?file=README.md)
+<a href="https://stackblitz.com/github/oeyoews/neotw?file=README.md" target="_blank">
+<img src="https://img.shields.io/badge/Open on Stackblitz-1374EF?style=for-the-badge&logo=StackBlitz">
+</a>
 
 ## Installation :package:
 
@@ -96,7 +91,7 @@ yarn start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm
 - [vercel](https://neotw.vercel.app)
 - [netlify](https://neotw.netlify.app)
 
-## Repobeats
+## Repobeats :headphones:
 
 <center>
 
@@ -106,7 +101,6 @@ yarn start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm
 
 <center>
   <a href="##neotw-readme-top">
-    <!-- <img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/cat.svg" alt="cat"/>↥︎ -->
 
 ![cat](https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/cat.svg 'cat') ↥︎
 
