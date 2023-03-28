@@ -10310,6 +10310,7 @@ ol.doc-github-contributors li {
   border: none;
   border-radius: 3px;
 }
+
 .o-style-shield-copy:hover {
 	transform: scale(1.01);
 	transition: transform .2s;
