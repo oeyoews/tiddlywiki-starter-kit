@@ -59,12 +59,12 @@
 
 ## Installation :package:
 
-> **Note**
+<!-- > **Note**
 > require git and npm and not compatible vanilla theme
 
 > not recommended use root-tiddler params
 
-> README File use soft link, so not support on Windows to show readme file in tiddlywiki
+> README File use soft link, so not support on Windows to show readme file in tiddlywiki -->
 
 ```bash
 git clone --depth 1 https://github.com/oeyoews/neotw
