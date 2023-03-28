@@ -51,7 +51,7 @@
 - :memo: 自动在中英文之间添加空格以获得更好的排版效果
 - :label: 支持标题别名
 
-## Playground(stackblitz)
+## 在线部署演示(StackBlitz)
 
 <a href="https://stackblitz.com/github/oeyoews/neotw?file=README.md" target="_blank">
 <img src="https://img.shields.io/badge/Open on Stackblitz-1374EF?style=for-the-badge&logo=StackBlitz">
