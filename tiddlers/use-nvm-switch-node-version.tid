@@ -1,0 +1,12 @@
+created: 20230328094035468
+creator: oeyoews
+modified: 20230328094119090
+modifier: oeyoews
+tags: 
+title: use-nvm-switch-node-version
+type: text/vnd.tiddlywiki
+
+```
+nvm alias defult v16.2.0
+nvm use default
+```

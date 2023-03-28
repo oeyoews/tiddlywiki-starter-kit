@@ -26,7 +26,10 @@ fancybox widget
       this.computeAttributes();
       this.execute();
 
-      const src = this.getAttribute('src', '');
+      const src = this.getAttribute(
+        'src',
+        'https://source.unsplash.com/random',
+      );
       const alt = this.getAttribute('alt', '');
       const width = this.getAttribute('width', '256');
 

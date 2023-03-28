@@ -1,0 +1,11 @@
+created: 20230328075031564
+creator: oeyoews
+modified: 20230328075135824
+modifier: oeyoews
+tags: 
+title: Cannot load from mysql.proc
+type: text/vnd.tiddlywiki
+
+* https://github.com/antares-sql/antares/issues/159
+* https://stackoverflow.com/questions/27918764/cannot-load-from-mysql-proc-the-table-is-probably-corrupted
+* sudo mysql_upgrade -u root -p root --force
