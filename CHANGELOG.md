@@ -1,3 +1,10 @@
+## [3.170.1](https://github.com/oeyoews/neotw/compare/v3.170.0...v3.170.1) (2023-03-29)
+
+
+### Bug Fixes
+
+* add missing slash ([d22555b](https://github.com/oeyoews/neotw/commit/d22555bda4f22dfa1a44c3d1537db37e73149d99))
+
 # [3.170.0](https://github.com/oeyoews/neotw/compare/v3.169.1...v3.170.0) (2023-03-29)
 
 
