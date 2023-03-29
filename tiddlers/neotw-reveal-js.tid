@@ -5,9 +5,9 @@ creator: pimgeek
 giscus: yes
 icon: $:/plugins/oeyoews/neotw/icon/revea-js
 list: one two
-modified: 20230304031136929
+modified: 20230329144027288
 modifier: oeyoews
-publish: article
+publish: public
 tags: 
 title: neotw-reveal-js
 type: text/vnd.tiddlywiki
