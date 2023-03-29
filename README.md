@@ -33,6 +33,7 @@
 
 ## Features :sparkles:
 
+- :newspaper: Support Atome Feed(Rss)
 - :bust_in_silhouette: Support gravatar
 - :art: Support use tailwindcss to better typography
 - :twisted_rightwards_arrows: Randomly display articles
