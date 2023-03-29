@@ -1,3 +1,10 @@
+## [3.170.3](https://github.com/oeyoews/neotw/compare/v3.170.2...v3.170.3) (2023-03-29)
+
+
+### Performance Improvements
+
+* remove music confetti ([4a54ea2](https://github.com/oeyoews/neotw/commit/4a54ea2f72e1d3f06b2f326b4a27227ed241f3af))
+
 ## [3.170.2](https://github.com/oeyoews/neotw/compare/v3.170.1...v3.170.2) (2023-03-29)
 
 
