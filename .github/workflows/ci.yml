@@ -38,7 +38,7 @@ jobs:
       - name: Install Dependency
         # run: yarn global add tiddlywiki
         run: |
-          yarn install
+          yarn install --production
           # sudo apt install pngquant -y
           # node scripts/minify.png.js
 
