@@ -12,7 +12,7 @@ module.exports = {
   // prefix: 'tw-',
   content: [
     './plugins/oeyoews/**/*.{html,tid,md,js}',
-    './tiddlers/**/*!(StoryList).tid',
+    './tiddlers/**/*!(StoryList).{js,tid}',
     './tiddlers/**/*!(($%2FStoryList)).tid',
   ],
   theme: {
