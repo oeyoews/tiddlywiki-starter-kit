@@ -1,3 +1,20 @@
+# [3.169.0](https://github.com/oeyoews/neotw/compare/v3.168.0...v3.169.0) (2023-03-29)
+
+
+### Bug Fixes
+
+* bing to bin ([2f79dec](https://github.com/oeyoews/neotw/commit/2f79dece190d8685d0b14c7e568d7293c4c60b58))
+
+
+### Features
+
+* try to add atom.xml ([0cae247](https://github.com/oeyoews/neotw/commit/0cae24767180c14a97ad2a494cf4621bf744832a))
+
+
+### Performance Improvements
+
+* use production ([b1345a4](https://github.com/oeyoews/neotw/commit/b1345a4601af7eae6674a70e15b613b0be2f3609))
+
 # [3.168.0](https://github.com/oeyoews/neotw/compare/v3.167.3...v3.168.0) (2023-03-29)
 
 
