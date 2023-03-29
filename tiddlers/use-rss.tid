@@ -1,7 +1,8 @@
 created: 20230329095532069
 creator: oeyoews
-modified: 20230329122230785
+modified: 20230329151030481
 modifier: oeyoews
+page-cover: 
 publish: article
 tags: 
 title: use-rss
@@ -11,8 +12,14 @@ type: text/vnd.tiddlywiki
 
 > personal atom feed: https://neotw.oeyoewl.top/atom.xml
 
+!! Why Rss
+
+* 原因有很多，大概是因为 Rss 给了我一种安静的感觉吧
+
+
 !! Apps
 
+* netnewswire
 * feeder.co
 * feedbro
 * desktop: rssowl
@@ -31,3 +38,8 @@ JSON Feed 是一种基于 JSON 数据格式的网络订阅源的较新格式。�
 RSS（Really Simple Syndication）是一种较旧的网络订阅源格式，在早期的博客和内容联合中广泛使用。它是一种基于 XML 的格式，至今仍在使用，尽管它已在很大程度上被 Atom 和 JSON Feed 取代。RSS 提要可用于分发范围广泛的内容，包括博客文章、新闻文章、播客和视频。
 
 综上所述，Atom、JSON Feed、RSS都是一种标准化的Web内容发布格式，只是底层技术不同，支持的特性不同。Atom 是一种基于 XML 的格式，广泛用于 Web 提要，而 JSON Feed 是一种基于 JSON 的较新格式，旨在易于读写。RSS 是一种仍在使用的旧格式，但在很大程度上已被 Atom 和 JSON Feed 取代。
+
+!! Links
+
+* https://zhuanlan.zhihu.com/p/133452043
+* https://zhuanlan.zhihu.com/p/395100455
