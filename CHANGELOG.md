@@ -1,3 +1,10 @@
+## [3.167.3](https://github.com/oeyoews/neotw/compare/v3.167.2...v3.167.3) (2023-03-29)
+
+
+### Performance Improvements
+
+* minify all images ([95ef506](https://github.com/oeyoews/neotw/commit/95ef50628ece143a06e16320e26972eb3915d7fb))
+
 ## [3.167.2](https://github.com/oeyoews/neotw/compare/v3.167.1...v3.167.2) (2023-03-29)
 
 
