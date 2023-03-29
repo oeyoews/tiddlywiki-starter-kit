@@ -1,0 +1,19 @@
+title: $:/plugins/dullroar/atomfeed/ui/rss
+tags: $:/tags/PageControls
+list-before: $:/core/ui/Buttons/more-page-actions
+description: Rss
+caption: Rss
+list-after:
+
+\whitespace trim
+<$button message="Rss" tooltip="Rss" aria-label="Rss" class=<<tv-config-toolbar-class>>>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+<$action-sendmessage $message="tm-copy-to-clipboard" $param={{{ [[$:/config/atomserver]get[text]addsuffix[atom.xml]] }}} />
+{{$:/plugins/dullroar/atomfeed/icon.gray}}
+</$list>
+<$list filter="[<tv-config-toolbar-text>match[yes]]">
+<span class="tc-btn-text">
+<$text text=""/>
+</span>
+</$list>
+</$button>
