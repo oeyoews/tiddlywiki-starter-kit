@@ -9071,8 +9071,6 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="oeyoews"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="oeyoews_contributions.png"] .tc-titlebar h2 { text-transform: capitalize; }
-
   [data-tiddler-title="oeyoews.jpg"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="openai-api-about-project"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9824,7 +9822,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "224";
+  content: "223";
 }
 .user-panel-avatar {
   position: relative;
