@@ -1,6 +1,6 @@
 created: 20230329095532069
 creator: oeyoews
-modified: 20230329121335520
+modified: 20230329122230785
 modifier: oeyoews
 publish: article
 tags: 
@@ -9,6 +9,8 @@ type: text/vnd.tiddlywiki
 
 > 原来rss feeds 用起来这么爽, 之前一直还不理解
 
+> personal atom feed: https://neotw.oeyoewl.top/atom.xml
+
 !! Apps
 
 * feeder.co
@@ -16,6 +18,7 @@ type: text/vnd.tiddlywiki
 * desktop: rssowl
 * inoreader
 * briefcake(email)
+* feedly.com
 
 <hr>
 
