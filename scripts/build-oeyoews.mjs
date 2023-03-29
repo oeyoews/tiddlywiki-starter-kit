@@ -6,7 +6,7 @@ import * as dotenv from 'dotenv';
 
 dotenv.config();
 
-$.verbose = false;
+$.verbose = true;
 
 // process.env.TIDDLYWIKI_PLUGIN_PATH = './';
 // process.env.TIDDLYWIKI_THEME_PATH = './';
@@ -25,6 +25,7 @@ await spinner('Building ...', async () => {
   // update tailwindcss styles.min.css
 
   // await $`yarn build:tailwindcss`;
+  await $`node scripts/minify.png.js`;
 
   // library
   await $`npx ${bin} --build library`;
