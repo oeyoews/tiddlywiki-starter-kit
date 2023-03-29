@@ -1,3 +1,10 @@
+## [3.169.1](https://github.com/oeyoews/neotw/compare/v3.169.0...v3.169.1) (2023-03-29)
+
+
+### Performance Improvements
+
+* update vercel.json ([319cf60](https://github.com/oeyoews/neotw/commit/319cf60600eabaaf4de9b4eb2dbed8abbe404a90))
+
 # [3.169.0](https://github.com/oeyoews/neotw/compare/v3.168.0...v3.169.0) (2023-03-29)
 
 
