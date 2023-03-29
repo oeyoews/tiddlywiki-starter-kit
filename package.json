@@ -55,7 +55,7 @@
     "semantic-release": "^20.1.0"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=16"
   },
   "version": "3.167.1"
 }
