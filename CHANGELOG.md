@@ -1,3 +1,15 @@
+# [3.170.0](https://github.com/oeyoews/neotw/compare/v3.169.1...v3.170.0) (2023-03-29)
+
+
+### Bug Fixes
+
+* add missing brack and remove extra slash ([f83412e](https://github.com/oeyoews/neotw/commit/f83412e46aaeebc7031fd6360bf84a0f62c5e5cd))
+
+
+### Features
+
+* add rss btn ([054a70d](https://github.com/oeyoews/neotw/commit/054a70d946105d340a20b44214823d030d930f7c))
+
 ## [3.169.1](https://github.com/oeyoews/neotw/compare/v3.169.0...v3.169.1) (2023-03-29)
 
 
