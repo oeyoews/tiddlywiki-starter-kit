@@ -143,10 +143,10 @@ tags: $:/tags/PageTemplate
   <!-- <<backToTopBtn>> -->
   <<giscus-app>>
   <!-- <<reveal-js>> -->
-  <<random-article>>
+  <!-- <<random-article>> -->
   <<github-cat>>
-  <<switch-lang>>
-  <<toggle-theme>>
+  <!-- <<switch-lang>> -->
+  <!-- <<toggle-theme>> -->
   <<home-button>>
   <!-- <<load-articles>> -->
 </div>
@@ -175,12 +175,12 @@ tags: $:/tags/PageTemplate
     <div id="stx-story-top">
       <!-- <<backToTopBtn>> -->
       <<giscus-app>>
-      <<random-article>>
+      <!-- <<random-article>> -->
       <!-- right padding conflict for backtotop -->
       <!-- <<o-sidebar>> -->
-      <<switch-lang>>
+      <!-- <<switch-lang>> -->
       <<readonly-mode>>
-      <<toggle-theme>>
+      <!-- <<toggle-theme>> -->
       <<zen-mode>>
       <<home-button>>
     </div>
