@@ -9139,6 +9139,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="some tw website examples"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="stop-parse-options"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="sufface-platform-on-tw"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="svg-intro"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9822,7 +9824,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "223";
+  content: "224";
 }
 .user-panel-avatar {
   position: relative;
