@@ -1,6 +1,6 @@
 created: 20230329095532069
 creator: oeyoews
-modified: 20230329151030481
+modified: 20230329153739755
 modifier: oeyoews
 page-cover: 
 publish: article
@@ -16,9 +16,14 @@ type: text/vnd.tiddlywiki
 
 * 原因有很多，大概是因为 Rss 给了我一种安静的感觉吧
 
+!! Rsshub
+
+* https://docs.rsshub.app/
+
 
 !! Apps
 
+* fluent reader(app)
 * netnewswire
 * feeder.co
 * feedbro
@@ -41,5 +46,6 @@ RSS（Really Simple Syndication）是一种较旧的网络订阅源格式，在�
 
 !! Links
 
+* https://www.ruanyifeng.com/blog/2006/01/rss.html
 * https://zhuanlan.zhihu.com/p/133452043
 * https://zhuanlan.zhihu.com/p/395100455
