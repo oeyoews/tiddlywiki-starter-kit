@@ -39,7 +39,7 @@ jobs:
         # run: yarn global add tiddlywiki
         run: |
           yarn install
-          apt install pngquant -y
+          sudo apt install pngquant -y
           node scripts/minify.png.js
 
       - name: Build Neotw
