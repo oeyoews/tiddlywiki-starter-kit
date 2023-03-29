@@ -1,3 +1,10 @@
+## [3.170.2](https://github.com/oeyoews/neotw/compare/v3.170.1...v3.170.2) (2023-03-29)
+
+
+### Bug Fixes
+
+* remove enter for atomserver ([50183c9](https://github.com/oeyoews/neotw/commit/50183c9d0a070c4c33c867f5ca7dbd5d683850ed))
+
 ## [3.170.1](https://github.com/oeyoews/neotw/compare/v3.170.0...v3.170.1) (2023-03-29)
 
 
