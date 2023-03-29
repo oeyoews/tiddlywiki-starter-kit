@@ -9121,6 +9121,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="reveal-js-style"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="rss-icon-list.png"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="rtl-with-web"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="sdk"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9830,7 +9832,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "224";
+  content: "225";
 }
 .user-panel-avatar {
   position: relative;
