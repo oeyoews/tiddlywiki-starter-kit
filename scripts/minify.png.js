@@ -16,7 +16,7 @@ directoryPaths.forEach(directoryPath => {
       const filePath = path.join(directoryPath, file);
       if (fs.statSync(filePath).isFile() && path.extname(filePath) === '.png') {
         exec(
-          `npx pngquant 64 --skip-if-larger --ext=.png --force "${filePath}"`,
+          `pngquant 64 --skip-if-larger --ext=.png --force "${filePath}"`,
           (err, stdout, stderr) => {
             if (err) {
               console.error(chalk.red(`Error executing pngquant: ${err}`));
