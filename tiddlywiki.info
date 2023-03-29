@@ -41,6 +41,7 @@
     "oeyoews/tiddlywiki-gravatar",
     "oeyoews/tiddlywiki-empty-story",
     "oeyoews/tiddlywiki-readonly",
+    "atomfeed",
     "oeyoews/tiddlywiki-shield"
   ],
   "themes": [
@@ -48,6 +49,15 @@
     "nico/notebook"
   ],
   "build": {
+    "feed": [
+      "--verbose",
+      "--output",
+      "dist",
+      "--render",
+      "$:/plugins/dullroar/atomfeed/atom.template.xml",
+      "atom.xml",
+      "text/plain"
+    ],
     "neotw-empty": [
       "--verbose",
       "--output",

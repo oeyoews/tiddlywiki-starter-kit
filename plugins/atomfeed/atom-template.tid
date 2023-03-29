@@ -1,0 +1,4 @@
+title: $:/plugins/dullroar/atomfeed/atom.template.xml
+type: text/vnd.tiddlywiki
+
+<$set name="exportFilter" value={{$:/config/atomfilter}}>{{$:/plugins/dullroar/atomfeed/atomexport}}</$set>

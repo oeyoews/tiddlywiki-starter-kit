@@ -28,6 +28,8 @@ await spinner('Building ...', async () => {
   // TODO have some dependency
   // await $`node scripts/minify.png.js`;
 
+  await $`npx ${bing} --build feed`;
+
   // library
   await $`npx ${bin} --build library`;
 

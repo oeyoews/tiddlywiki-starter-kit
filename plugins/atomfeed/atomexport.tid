@@ -1,0 +1,10 @@
+title: $:/plugins/dullroar/atomfeed/atomexport
+description: Atom Feed
+tags: $:/tags/Exporter
+type: text/vnd.tiddlywiki-html
+extension: .xml
+
+\define renderContent()
+<$text text=<<atomtiddlers filter:"""$(exportFilter)$""">>/>
+\end
+<<renderContent>>

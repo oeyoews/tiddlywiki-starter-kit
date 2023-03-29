@@ -1,0 +1,86 @@
+title: $:/plugins/dullroar/atomfeed/readme
+
+{{$:/plugins/dullroar/atomfeed/Feed-icon.svg}}
+
+~TiddlyWiki5 plugin to generate ATOM feed (http://www.ietf.org/rfc/rfc4287.txt).
+
+This plugin is meant to be use to generate a static ATOM feed file. This means it is intended to be part of [[TiddlyWiki's Node.js method|http://tiddlywiki.com/#Using%20TiddlyWiki%20on%20Node.js]] build process.
+
+Official source can be found at https://github.com/dullroar/TW5-atomfeed
+
+!! Why Node?
+
+The use case for an ATOM feed is to to offer news reader software a single file they can download and then aggregate updates to those files to the users.
+
+~TiddlyWiki is served (or saved on a file system) as a single HTML file.
+
+These two are two very separate concepts and there is no technical way for the ATOM spec to parse HTML with JavaScript to construct the XML required by the news reader. It must be a separate file.
+
+And so this plugin will typically remain dormant in the single page ~TiddlyWiki version but can be used with the Node.js version.
+
+!! How to install
+
+1.  Download/clone this repository.
+2.  Copy the `atomfeed` directory to your wiki's `plugins` folder.
+
+The file heiarchy would look like this:
+
+```
+wiki/
++-- tiddlywiki.info
++-- tiddlers/
+|   +-- ... (all the tiddlers)
+\-- plugins/
+    \-- atomfeeds/
+        +-- atom-template.tid
+        +-- atomexport.tid
+        +-- atomfeed-icon.svg.tid
+        +-- atomsmasher.js
+        +-- atomtiddlers.js
+        +-- config.tid
+        +-- dombuilder.js
+        +-- md5.js
+        +-- md5hashToGuid.js
+        +-- plugin.info
+        +-- readme.tid
+        \-- tw-dombuilder.js
+```
+
+!! How to configure
+
+Run your ~TiddlyWiki as you normally would (likely as a server): `tiddlywiki wiki --server`.
+
+Open the settings tab and there should be a an ''Atom Feeds'' tab under the ''Info'' tab section.
+
+Here you can change the following:
+
+;Canonical feed URL
+:The URL prefix to be appended to all links generated in the ATOM feed output.
+;Included Tiddlers
+:The filter used to currate the list of tiddlers you want to include in the ATOM feed output.
+
+!! How to use
+
+To output an `atom.xml` file use this command:
+
+```
+tiddlywiki wiki --rendertiddler '$:/plugins/dullroar/atomfeed/atom.template.xml' 'atom.xml' 'text/plain'
+```
+
+You can add the following to your `tiddlywiki.info` to make the command easier:
+
+```json
+{
+  "build": {
+    "feed": [
+      "--rendertiddler", "$:/plugins/dullroar/atomfeed/atom.template.xml", "atom.xml", "text/plain"
+    ]
+  }
+}
+```
+
+And then simply run:
+
+```
+tiddlywiki wiki --build feed
+```
