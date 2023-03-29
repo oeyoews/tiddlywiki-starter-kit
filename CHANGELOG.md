@@ -1,3 +1,10 @@
+# [3.168.0](https://github.com/oeyoews/neotw/compare/v3.167.3...v3.168.0) (2023-03-29)
+
+
+### Features
+
+* support minify-png on actions ([816197a](https://github.com/oeyoews/neotw/commit/816197a0dff3d9955042b15023917354ada5df46))
+
 ## [3.167.3](https://github.com/oeyoews/neotw/compare/v3.167.2...v3.167.3) (2023-03-29)
 
 
