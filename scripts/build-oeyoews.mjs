@@ -25,7 +25,8 @@ await spinner('Building ...', async () => {
   // update tailwindcss styles.min.css
 
   // await $`yarn build:tailwindcss`;
-  await $`node scripts/minify.png.js`;
+  // TODO have some dependency
+  // await $`node scripts/minify.png.js`;
 
   // library
   await $`npx ${bin} --build library`;

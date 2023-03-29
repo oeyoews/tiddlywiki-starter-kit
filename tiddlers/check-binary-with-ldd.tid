@@ -1,0 +1,11 @@
+created: 20230329073521153
+creator: oeyoews
+modified: 20230329073545251
+modifier: oeyoews
+tags: 
+title: check-binary-with-ldd
+type: text/vnd.tiddlywiki
+
+```sh
+ldd /usr/bin/xx
+```

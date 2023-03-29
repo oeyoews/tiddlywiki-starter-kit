@@ -27,7 +27,6 @@
     "gradient-string": "^2.0.2",
     "kolorist": "^1.6.0",
     "open": "^8.4.0",
-    "pngquant-bin": "^8.0.1",
     "postcss": "^8.4.21",
     "postcss-import": "^15.1.0",
     "prettier": "^2.8.6",

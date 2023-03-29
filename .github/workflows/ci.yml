@@ -37,7 +37,10 @@ jobs:
 
       - name: Install Dependency
         # run: yarn global add tiddlywiki
-        run: yarn install
+        run: |
+          yarn install
+          apt install pngquant -y
+          node scripts/minify.png.js
 
       - name: Build Neotw
         run: |
