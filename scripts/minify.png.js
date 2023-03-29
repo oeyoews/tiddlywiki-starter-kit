@@ -3,7 +3,9 @@ import path from 'path';
 import { exec } from 'child_process';
 import chalk from 'chalk';
 
-const directoryPaths = ['./files', './img']; // 修改为你的图片目录路径，可以是一个数组
+// just fit pngquant-bin
+
+const directoryPaths = ['files', 'img', 'tiddlers']; // 修改为你的图片目录路径，可以是一个数组
 
 directoryPaths.forEach(directoryPath => {
   fs.readdir(directoryPath, function (err, files) {
@@ -16,7 +18,7 @@ directoryPaths.forEach(directoryPath => {
       const filePath = path.join(directoryPath, file);
       if (fs.statSync(filePath).isFile() && path.extname(filePath) === '.png') {
         exec(
-          `pngquant 64 --skip-if-larger --ext=.png --force "${filePath}"`,
+          `npx pngquant 64 --skip-if-larger --ext=.png --force "${filePath}"`,
           (err, stdout, stderr) => {
             if (err) {
               console.error(chalk.red(`Error executing pngquant: ${err}`));
