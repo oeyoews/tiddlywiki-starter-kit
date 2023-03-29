@@ -8761,6 +8761,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="gallary"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="gallary01"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="GettingStarted"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="GFM"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -8784,6 +8786,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   [data-tiddler-title="icon-adguard"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="Index"] .tc-titlebar h2 { text-transform: capitalize; }
+
+  [data-tiddler-title="infinity-tab"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="init-tiddlywiki-folder"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -9001,21 +9005,11 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="neotw/new/New Tiddler"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/new/New Tiddler 1"] .tc-titlebar h2 { text-transform: capitalize; }
-
-  [data-tiddler-title="neotw/new/New Tiddler 2"] .tc-titlebar h2 { text-transform: capitalize; }
-
-  [data-tiddler-title="neotw/new/New Tiddler 3"] .tc-titlebar h2 { text-transform: capitalize; }
-
   [data-tiddler-title="neotw/new/New Tiddler 5"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="neotw/new/New Tiddler 6"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="neotw/new/New Tiddler 7"] .tc-titlebar h2 { text-transform: capitalize; }
-
   [data-tiddler-title="neotw/new/New Tiddler 8"] .tc-titlebar h2 { text-transform: capitalize; }
-
-  [data-tiddler-title="neotw/new/New Tiddler 9"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="neotw/official-plugin-library"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -9472,7 +9466,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/PageControls] .tc-tag-label:after {
-  content: " 31";
+  content: " 32";
 }
 
 
@@ -9836,7 +9830,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "227";
+  content: "224";
 }
 .user-panel-avatar {
   position: relative;
