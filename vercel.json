@@ -1,6 +1,7 @@
 {
   "outputDirectory": "dist",
-  "buildCommand": "yarn install --production && yarn build:oeyoews",
+  "buildCommand": "yarn build:oeyoews",
+  "installCommand": "yarn install --production ",
   "cleanUrls": true,
   "trailingSlash": false,
   "github": {
