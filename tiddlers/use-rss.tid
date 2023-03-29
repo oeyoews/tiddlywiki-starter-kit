@@ -1,6 +1,6 @@
 created: 20230329095532069
 creator: oeyoews
-modified: 20230329101757403
+modified: 20230329110329268
 modifier: oeyoews
 publish: article
 tags: 
@@ -11,6 +11,6 @@ type: text/vnd.tiddlywiki
 
 !! Apps
 
-* google extensions: feeder.co
+* google extensions: feeder.co, feedbro
 * desktop: rssowl
 ...
