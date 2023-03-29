@@ -1,3 +1,10 @@
+## [3.167.1](https://github.com/oeyoews/neotw/compare/v3.167.0...v3.167.1) (2023-03-29)
+
+
+### Performance Improvements
+
+* try to use codemirror-fullscreen ([75f17f1](https://github.com/oeyoews/neotw/commit/75f17f1855d6ba516c5bb6de5e8dca18ec9adba1))
+
 # [3.167.0](https://github.com/oeyoews/neotw/compare/v3.166.1...v3.167.0) (2023-03-28)
 
 
