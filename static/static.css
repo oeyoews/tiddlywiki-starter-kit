@@ -9203,6 +9203,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="virtual-network"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="web3-xlog"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="xiaofamao"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="xss"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9832,7 +9834,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "225";
+  content: "226";
 }
 .user-panel-avatar {
   position: relative;
