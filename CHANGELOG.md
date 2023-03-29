@@ -1,3 +1,10 @@
+## [3.167.2](https://github.com/oeyoews/neotw/compare/v3.167.1...v3.167.2) (2023-03-29)
+
+
+### Performance Improvements
+
+* minify img with pngquant ([b38956b](https://github.com/oeyoews/neotw/commit/b38956b896afbb97fafa9445bdc73b18130bff48))
+
 ## [3.167.1](https://github.com/oeyoews/neotw/compare/v3.167.0...v3.167.1) (2023-03-29)
 
 
