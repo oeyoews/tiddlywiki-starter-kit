@@ -1,0 +1,12 @@
+{
+  "title": "$:/plugins/oeyoews/tiddlywiki-palette-all-in-one",
+  "description": "Switch Palette Dark Or Light Base Tailwindcss",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.2.5",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "Tiddlywiki Palette All In One",
+  "dependents": [],
+  "list": "readme explore"
+}

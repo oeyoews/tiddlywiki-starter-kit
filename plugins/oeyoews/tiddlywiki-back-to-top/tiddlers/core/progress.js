@@ -1,5 +1,5 @@
 /*\
-title: $:/plugins/my-plugin/progress.js
+title: $:/plugins/oeyoews/tiddlywiki-back-top-top/progress.js
 type: application/javascript
 module-type: startup
 

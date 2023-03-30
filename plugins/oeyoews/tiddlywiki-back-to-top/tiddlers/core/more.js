@@ -1,5 +1,5 @@
 /*\
-title: $:/plugins/my-plugin/more.js
+title: $:/plugins/oeyoews/tiddlywiki-back-top-top/more.js
 type: application/javascript
 // module-type: startup
 

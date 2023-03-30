@@ -1,5 +1,5 @@
 /*\
-title: $:/plugins/my-plugin/back-to-top.js
+title: $:/plugins/oeyoews/tiddlywiki-back-top-top/back-to-top.js
 type: application/javascript
 // module-type: startup
 

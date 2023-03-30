@@ -43,6 +43,7 @@ module.exports = {
     },
   },
   darkMode: 'class',
+  // darkMode: ['class', '[data-mode="dark"]'],
   variants: {
     extend: {
       appearance: ['hover', 'focus'],

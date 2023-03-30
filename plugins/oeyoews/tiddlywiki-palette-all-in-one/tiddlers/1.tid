@@ -1,0 +1,10 @@
+title: all-in-one
+
+<button onclick="setLightMode()">Light</button>
+<button onclick="setDarkMode()">Dark</button>
+<button onclick="setOSPreference()">Respect OS Preference</button>
+
+<!-- base notebook theme just add dark color-->
+<div class="dark:bg-gray-900 dark:text-white p-4 py-2 rounded-md">
+  hi dmeo this is a dmeo <$avatar width=22/>
+</div>
