@@ -1,3 +1,10 @@
+## [3.173.1](https://github.com/oeyoews/neotw/compare/v3.173.0...v3.173.1) (2023-03-30)
+
+
+### Bug Fixes
+
+* revert atomfeed ([a380826](https://github.com/oeyoews/neotw/commit/a380826a3300a50bfc372b02bb040127bd3fa5ae))
+
 # [3.173.0](https://github.com/oeyoews/neotw/compare/v3.172.0...v3.173.0) (2023-03-30)
 
 
