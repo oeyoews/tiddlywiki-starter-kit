@@ -1,5 +1,5 @@
 title: $:/plugins/oeyoews/tiddlywiki-giscus/viewtemplate
-tags: $:/tags/ViewTemplate
+<!-- tags: $:/tags/ViewTemplate -->
 
 <$list filter="[all[current]!is[system]!is[draft]subfilter{$:/plugins/oeyoews/tiddlywiki-giscus/filter}]" variable="comment">
 <$list filter="[[$:/temp/focussedTiddler]is[missing]]">
