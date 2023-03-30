@@ -1,3 +1,10 @@
+## [3.173.2](https://github.com/oeyoews/neotw/compare/v3.173.1...v3.173.2) (2023-03-30)
+
+
+### Bug Fixes
+
+* disable rss ([4f59379](https://github.com/oeyoews/neotw/commit/4f593791dffcdc2b6c4c586cc54583e9eb254280))
+
 ## [3.173.1](https://github.com/oeyoews/neotw/compare/v3.173.0...v3.173.1) (2023-03-30)
 
 
