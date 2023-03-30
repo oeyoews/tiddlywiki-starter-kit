@@ -1,15 +1,12 @@
 created: 20230330100214948
 creator: oeyoews
-modified: 20230330100318066
+modified: 20230330100920532
 modifier: oeyoews
+page-cover: 
 publish: article
 tags: 
 title: test-cover
-type: text/markdown
+type: text/vnd.tiddlywiki
 
-## Cover
-
-<center>
-	<$fbox class=""/>
-</center>
+[img [https://source.unsplash.com/random]]
 
