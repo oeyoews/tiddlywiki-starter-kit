@@ -7,9 +7,7 @@ tags: $:/tags/RawMarkupWikified/TopHead
 `<meta name="mobile-web-app-capable" content="yes">`
 `<meta name="format-detection" content="telephone=no">`
 `<meta name="keywords" content="Neotw, oeyoews">`
-`<meta name="description" content="A modern style notebook based on
-tiddlywiki">`
+`<meta name="description" content="A modern style notebook based on tiddlywiki">`
 `<meta name="author" content="oeyoews">`
-`<meta content="no" name="apple-mobile-web-app-status-bar-style"
-content="black">`
-`<link rel="alternate" type="application/rss+xml" title="Neotw Rss" href="https://neotw.netlify.app/atom.xml" />`
+<!-- `<meta content="no" name="apple-mobile-web-app-status-bar-style" content="black">` -->
+<!-- `<link rel="alternate" type="application/rss+xml" title="Neotw Rss" href="https://neotw.netlify.app/atom.xml" />` -->
