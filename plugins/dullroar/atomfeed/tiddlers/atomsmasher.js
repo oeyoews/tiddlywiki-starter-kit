@@ -39,8 +39,11 @@ Encapsulating class for constructing atom feeds
     return output;
   }
 
+  // custom dir
+  // add option for article link
   function toPermalink(title) {
-    return '#' + encodeURIComponent(title);
+    // return '#' + encodeURIComponent(title);
+    return 'static/' + encodeURIComponent(title);
   }
 
   function toFileName(title) {
@@ -95,6 +98,8 @@ Encapsulating class for constructing atom feeds
    */
   AtomSmasher.prototype.lookupEntryData = function lookupEntryData(tiddler) {
     var title = tiddler.getFieldString('title');
+    // var pageCover = $tw.wiki.getTiddler('use-rss').fields['page-cover'];
+    var pageCover = tiddler.getFieldString('page-cover');
     return {
       title: title,
       updated: toISODate(tiddler.getFieldString('modified')),
