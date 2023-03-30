@@ -1,6 +1,6 @@
 created: 20230329095532069
 creator: oeyoews
-modified: 20230330123430086
+modified: 20230330133439839
 modifier: oeyoews
 page-cover: 
 publish: article
@@ -11,6 +11,10 @@ type: text/vnd.tiddlywiki
 > 原来rss feeds 用起来这么爽, 之前一直还不理解
 
 > personal atom feed: https://neotw.oeyoewl.top/atom.xml
+
+!! TODO
+
+* 使用rss 可以做很多事情， 订阅各个平台的更新， youtube的视频的更新， 音乐更新， 省去了打开软件的麻烦， 提高效率， 正在摸索相关工作流
 
 !! Why Rss
 
