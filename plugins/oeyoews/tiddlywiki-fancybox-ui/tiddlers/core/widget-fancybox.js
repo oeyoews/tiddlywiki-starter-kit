@@ -33,7 +33,7 @@ fancybox widget
       const alt = this.getAttribute('alt', '');
       const width = this.getAttribute('width', '256');
 
-      const currentTiddler = this.getVariable('currentTiddler');
+      const currentTiddler = this.getVariable('currentTiddler') || 'gallary';
 
       const aNode = this.document.createElement('a');
       const warnNode = this.document.createElement('span');

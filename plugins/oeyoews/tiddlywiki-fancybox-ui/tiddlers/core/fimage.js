@@ -104,7 +104,10 @@ Render this widget into the DOM
       domNode.setAttribute('loading', this.lazyLoading || 'lazy');
     }
     const aNode = this.document.createElement('a');
-    aNode.setAttribute('data-fancybox', this.getVariable('currentTiddler'));
+    aNode.setAttribute(
+      'data-fancybox',
+      this.getVariable('currentTiddler') || 'gallary',
+    );
     aNode.href = src;
     aNode.setAttribute('data-caption', this.imageTooltip || '');
     aNode.appendChild(domNode);
