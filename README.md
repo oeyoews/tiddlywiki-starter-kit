@@ -1,3 +1,9 @@
+<center>
+
+![014](https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/014.png 'showcase')
+
+</center>
+
 <a id="#neotw-readme-top"></a>
 
 <a href="https://tiddlywiki.com" target="_blank">
@@ -21,11 +27,6 @@
 <img src="https://img.shields.io/badge/License-MIT-blueviolet.svg?style=flat&color=blue" alt="project-license" loading="lazy"/>
 
 <hr>
-<center>
-
-![014](https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/014.png 'showcase')
-
-</center>
 
 ## Intro :tada:
 
