@@ -111,3 +111,29 @@ width: 256
 * j / n  next image
 * k / p  prev image
 * q / esc / del close
+
+```
+<$let imgs="""
+https://nextapps-de.github.io/spotlight/demo/gallery/brooklyn-bridge-1791001.jpg
+https://nextapps-de.github.io/spotlight/demo/gallery/california-1751455.jpg
+https://nextapps-de.github.io/spotlight/demo/gallery/canada-2340312.jpg
+"""
+>
+
+<$list filter="[enlist<imgs>]" variable="img">
+<$image source=<<img>> />
+</$list>
+</$let>
+```
+
+<$let imgs="""
+https://nextapps-de.github.io/spotlight/demo/gallery/brooklyn-bridge-1791001.jpg
+https://nextapps-de.github.io/spotlight/demo/gallery/california-1751455.jpg
+https://nextapps-de.github.io/spotlight/demo/gallery/canada-2340312.jpg
+"""
+>
+
+<$list filter="[enlist<imgs>]" variable="img">
+<$image source=<<img>> />
+</$list>
+</$let>
