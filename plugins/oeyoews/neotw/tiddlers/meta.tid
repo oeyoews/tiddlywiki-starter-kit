@@ -12,3 +12,4 @@ tiddlywiki">`
 `<meta name="author" content="oeyoews">`
 `<meta content="no" name="apple-mobile-web-app-status-bar-style"
 content="black">`
+`<link rel="alternate" type="application/rss+xml" title="Neotw Rss" href="https://neotw.netlify.app/atom.xml" />`
