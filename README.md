@@ -6,7 +6,7 @@
 
 <a id="#neotw-readme-top"></a>
 
-<a href="https://tiddlywiki.com" target="_blank">
+<!-- <a href="https://tiddlywiki.com" target="_blank">
   <img src="https://img.shields.io/badge/TiddlyWiki5-5.2.7 prelease-green?style=flat" loading="lazy"/>
 </a>
 <a href="https://gitter.im/oeyoews/neotw?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge" target="_blank">
@@ -24,7 +24,7 @@
 <a target="_blank" href="https://app.netlify.com/sites/neotw/deploys">
   <img src="https://api.netlify.com/api/v1/badges/7654bd58-2df9-4962-9a81-4cca9cf78b9c/deploy-status" alt="Netlify Status" loading="lazy"/>
 </a>
-<img src="https://img.shields.io/badge/License-MIT-blueviolet.svg?style=flat&color=blue" alt="project-license" loading="lazy"/>
+<img src="https://img.shields.io/badge/License-MIT-blueviolet.svg?style=flat&color=blue" alt="project-license" loading="lazy"/> -->
 
 <hr>
 
