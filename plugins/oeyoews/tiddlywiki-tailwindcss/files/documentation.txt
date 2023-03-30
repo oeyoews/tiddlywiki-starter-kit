@@ -245,6 +245,7 @@
 | opacity-50 | <div class="opacity-50">opacity-50</div> |
 | opacity-75 | <div class="opacity-75">opacity-75</div> |
 | outline | <div class="outline">outline</div> |
+| outline-none | <div class="outline-none">outline-none</div> |
 | overline | <div class="overline">overline</div> |
 | p-0 | <div class="p-0">p-0</div> |
 | p-1 | <div class="p-1">p-1</div> |
@@ -260,11 +261,11 @@
 | prose-a | <div class="prose-a">prose-a</div> |
 | prose-base | <div class="prose-base">prose-base</div> |
 | prose-blockquote | <div class="prose-blockquote">prose-blockquote</div> |
-| prose-h2 | <div class="prose-h2">prose-h2</div> |
 
 
 | Class Name | Example |
 | --- | --- |
+| prose-h2 | <div class="prose-h2">prose-h2</div> |
 | prose-img | <div class="prose-img">prose-img</div> |
 | prose-indigo | <div class="prose-indigo">prose-indigo</div> |
 | prose-neutral | <div class="prose-neutral">prose-neutral</div> |
@@ -284,11 +285,11 @@
 | py-24 | <div class="py-24">py-24</div> |
 | py-4 | <div class="py-4">py-4</div> |
 | py-6 | <div class="py-6">py-6</div> |
-| relative | <div class="relative">relative</div> |
 
 
 | Class Name | Example |
 | --- | --- |
+| relative | <div class="relative">relative</div> |
 | resize | <div class="resize">resize</div> |
 | ring | <div class="ring">ring</div> |
 | rotate-90 | <div class="rotate-90">rotate-90</div> |
@@ -308,11 +309,11 @@
 | shadow-blue-500 | <div class="shadow-blue-500">shadow-blue-500</div> |
 | shadow-cyan-500 | <div class="shadow-cyan-500">shadow-cyan-500</div> |
 | shadow-indigo-500 | <div class="shadow-indigo-500">shadow-indigo-500</div> |
-| shadow-lg | <div class="shadow-lg">shadow-lg</div> |
 
 
 | Class Name | Example |
 | --- | --- |
+| shadow-lg | <div class="shadow-lg">shadow-lg</div> |
 | shadow-md | <div class="shadow-md">shadow-md</div> |
 | shadow-xl | <div class="shadow-xl">shadow-xl</div> |
 | shrink-0 | <div class="shrink-0">shrink-0</div> |
@@ -332,11 +333,11 @@
 | text-3xl | <div class="text-3xl">text-3xl</div> |
 | text-base | <div class="text-base">text-base</div> |
 | text-black | <div class="text-black">text-black</div> |
-| text-blue-400 | <div class="text-blue-400">text-blue-400</div> |
 
 
 | Class Name | Example |
 | --- | --- |
+| text-blue-400 | <div class="text-blue-400">text-blue-400</div> |
 | text-blue-600 | <div class="text-blue-600">text-blue-600</div> |
 | text-center | <div class="text-center">text-center</div> |
 | text-cyan-300 | <div class="text-cyan-300">text-cyan-300</div> |
@@ -356,11 +357,11 @@
 | text-sm | <div class="text-sm">text-sm</div> |
 | text-stone-900 | <div class="text-stone-900">text-stone-900</div> |
 | text-transparent | <div class="text-transparent">text-transparent</div> |
-| text-white | <div class="text-white">text-white</div> |
 
 
 | Class Name | Example |
 | --- | --- |
+| text-white | <div class="text-white">text-white</div> |
 | text-xl | <div class="text-xl">text-xl</div> |
 | text-xs | <div class="text-xs">text-xs</div> |
 | to-blue-500 | <div class="to-blue-500">to-blue-500</div> |
@@ -380,11 +381,11 @@
 | w-10 | <div class="w-10">w-10</div> |
 | w-12 | <div class="w-12">w-12</div> |
 | w-2 | <div class="w-2">w-2</div> |
-| w-20 | <div class="w-20">w-20</div> |
 
 
 | Class Name | Example |
 | --- | --- |
+| w-20 | <div class="w-20">w-20</div> |
 | w-24 | <div class="w-24">w-24</div> |
 | w-3 | <div class="w-3">w-3</div> |
 | w-4 | <div class="w-4">w-4</div> |
@@ -394,4 +395,4 @@
 | w-full | <div class="w-full">w-full</div> |
 | z | <div class="z">z</div> |
 
- Total classes: <span class="font-bold">328</span>
+ Total classes: <span class="font-bold">329</span>

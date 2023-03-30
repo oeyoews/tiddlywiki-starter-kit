@@ -1,4 +1,8 @@
 caption: See examples
+created: 20230330061957036
+creator: oeyoews
+modified: 20230330062001778
+modifier: oeyoews
 title: $:/xp/box-button/examples
 type: text/vnd.tiddlywiki
 
@@ -7,7 +11,7 @@ type: text/vnd.tiddlywiki
 
 ''$color$-box''
 
-起来，饥寒交迫的奴隶！起来，全世界受苦的人！满腔的热血已经沸腾，要为真理而斗争！
+<<.lorem>>
 
 </div>
 \end
