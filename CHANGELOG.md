@@ -1,3 +1,10 @@
+## [3.170.5](https://github.com/oeyoews/neotw/compare/v3.170.4...v3.170.5) (2023-03-30)
+
+
+### Performance Improvements
+
+* remove splash ([268f863](https://github.com/oeyoews/neotw/commit/268f8634fd590ec5fda998fe9d2bd88311a6742c))
+
 ## [3.170.4](https://github.com/oeyoews/neotw/compare/v3.170.3...v3.170.4) (2023-03-29)
 
 
