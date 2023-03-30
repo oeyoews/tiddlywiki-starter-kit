@@ -9300,7 +9300,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Exporter] .tc-tag-label:after {
-  content: " 6";
+  content: " 5";
 }
 
 
@@ -9330,7 +9330,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/ControlPanel\/Info] .tc-tag-label:after {
-  content: " 3";
+  content: " 2";
 }
 
 
@@ -9474,7 +9474,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/PageControls] .tc-tag-label:after {
-  content: " 32";
+  content: " 31";
 }
 
 
@@ -9619,12 +9619,6 @@ footer {
 
 [data-tag-title=contextPlugin] .tc-tag-label:after {
   content: " 2";
-}
-
-
-
-[data-tag-title=static] .tc-tag-label:after {
-  content: " 1";
 }
 
 
