@@ -1,3 +1,10 @@
+# [3.174.0](https://github.com/oeyoews/neotw/compare/v3.173.2...v3.174.0) (2023-03-30)
+
+
+### Features
+
+* try to use superfeedr ([0dc45f7](https://github.com/oeyoews/neotw/commit/0dc45f783cbf7a534f6a740d40ff0799c7bf1bf8))
+
 ## [3.173.2](https://github.com/oeyoews/neotw/compare/v3.173.1...v3.173.2) (2023-03-30)
 
 
