@@ -157,6 +157,11 @@ Encapsulating class for constructing atom feeds
       .add('updated')
       .text(this.metadata.updated)
       .end()
+      .add('image')
+      .attr('href', this.wiki.getTiddlerText('$:/config/RSS/FeedImage'))
+      .attr('rel', 'icon')
+      .attr('type', 'image/png')
+      .end()
       .bind(function () {
         if (imageUrl) {
           this.add('logo').text(imageUrl).end();
