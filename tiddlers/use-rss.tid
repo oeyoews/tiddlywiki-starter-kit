@@ -1,6 +1,6 @@
 created: 20230329095532069
 creator: oeyoews
-modified: 20230330081626516
+modified: 20230330123430086
 modifier: oeyoews
 page-cover: 
 publish: article
@@ -34,6 +34,10 @@ type: text/vnd.tiddlywiki
 * newblur
 * ego reader(格式似乎有问题)
 * unread
+
+!! Q&A
+
+* 使用过程中发现软件似乎对rss源的刷新有一个限制， 并且不会被手动刷新影响（以后再研究吧）, 现在使用rss的人确实不多了
 
 <hr>
 
