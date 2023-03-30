@@ -8793,6 +8793,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="install-svg"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="instapaper"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="js-books"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="list-all-empty-folders"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9826,7 +9828,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "228";
+  content: "229";
 }
 .user-panel-avatar {
   position: relative;
