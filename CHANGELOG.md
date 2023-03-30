@@ -1,3 +1,10 @@
+# [3.172.0](https://github.com/oeyoews/neotw/compare/v3.171.0...v3.172.0) (2023-03-30)
+
+
+### Features
+
+* add rss link ([861c9de](https://github.com/oeyoews/neotw/commit/861c9de84c3a0a6153ed92c3dfe1fea0a8dbd665))
+
 # [3.171.0](https://github.com/oeyoews/neotw/compare/v3.170.5...v3.171.0) (2023-03-30)
 
 
