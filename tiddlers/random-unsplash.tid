@@ -1,6 +1,6 @@
 created: 20230328100437122
 creator: oeyoews
-modified: 20230330163005937
+modified: 20230330163734541
 modifier: oeyoews
 page-cover: 
 publish: article
@@ -10,5 +10,4 @@ type: text/vnd.tiddlywiki
 
 <center>
 [img width=128 [https://source.unsplash.com/random]]
-<$fbox />
 </center>
