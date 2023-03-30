@@ -120,7 +120,16 @@ Encapsulating class for constructing atom feeds
    * @return {DomBuilder}
    * @private
    */
+
   AtomSmasher.prototype.atomFeed = function atomHeader() {
+    var atomserver = this.wiki.getTiddlerText('$:/config/atomserver');
+    var image = this.wiki.getTiddler('$:/config/RSS/FeedImage');
+    var imageUrl = image
+      ? image.getFieldString('url')
+      : atomserver + 'favicon.ico';
+    var imageTitle = image ? image.getFieldString('title') : '';
+    var imageLink = image ? image.getFieldString('link') : '';
+
     return $tw.utils
       .DomBuilder('feed', this.document)
       .attr('xmlns', 'http://www.w3.org/2005/Atom')
@@ -147,7 +156,29 @@ Encapsulating class for constructing atom feeds
       .end()
       .add('updated')
       .text(this.metadata.updated)
-      .end();
+      .end()
+      .bind(function () {
+        if (imageUrl) {
+          this.add('logo').text(imageUrl).end();
+        }
+      })
+      .bind(function () {
+        if (imageTitle || imageLink) {
+          this.add('image')
+            .bind(function () {
+              if (imageTitle) {
+                this.add('title').text(imageTitle).end();
+              }
+              if (imageUrl) {
+                this.add('url').text(imageUrl).end();
+              }
+              if (imageLink) {
+                this.add('link').text(imageLink).end();
+              }
+            })
+            .end();
+        }
+      });
   };
 
   /**
