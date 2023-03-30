@@ -89,6 +89,7 @@ tiddlywiki wiki --build feed
 
 * support render notion-pagecover for atom feed
 * add modal for rss
+* support email to subscribe rss
 
 !! TIPs
 
