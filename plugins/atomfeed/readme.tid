@@ -89,3 +89,11 @@ tiddlywiki wiki --build feed
 
 * support render notion-pagecover for atom feed
 * add modal for rss
+
+!! TIPs
+
+add this to support rss reade like inoreader to recongize(maybe you need to know this tag $:/tags/RawMarkupWikified/TopHead)
+
+```
+<link rel="alternate" type="application/rss+xml" title="Neotw Rss" href="https://neotw.netlify.app/atom.xml" />
+```
