@@ -8811,6 +8811,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="memos-docker-compose"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="microfeed-oeyoews"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="min-js"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="missing-thinkup"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9350,7 +9352,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/ControlPanel\/Appearance] .tc-tag-label:after {
-  content: " 7";
+  content: " 6";
 }
 
 
@@ -9769,18 +9771,6 @@ footer {
 
 
 
-[data-tag-title=\$\:\/tags\/RawMarkupWikified\/TopBody] .tc-tag-label:after {
-  content: " 1";
-}
-
-
-
-[data-tag-title=\$\:\/tags\/SplashScreen] .tc-tag-label:after {
-  content: " 17";
-}
-
-
-
 [data-tag-title=\$\:\/tags\/notebook\/Palette] .tc-tag-label:after {
   content: " 4";
 }
@@ -9834,7 +9824,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "226";
+  content: "227";
 }
 .user-panel-avatar {
   position: relative;
