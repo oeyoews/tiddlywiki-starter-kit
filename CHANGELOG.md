@@ -1,3 +1,11 @@
+## [3.175.1](https://github.com/oeyoews/neotw/compare/v3.175.0...v3.175.1) (2023-03-31)
+
+
+### Performance Improvements
+
+* remove giscus ([09074a0](https://github.com/oeyoews/neotw/commit/09074a06aaeca1d0bce1863aa4fae0186c0cadf1))
+* remove github share ([9c80d50](https://github.com/oeyoews/neotw/commit/9c80d502410aaaaf4656dc1a27e0f1cd6e95d5d4))
+
 # [3.175.0](https://github.com/oeyoews/neotw/compare/v3.174.0...v3.175.0) (2023-03-30)
 
 
