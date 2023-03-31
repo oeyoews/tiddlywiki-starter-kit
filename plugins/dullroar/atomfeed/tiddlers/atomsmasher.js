@@ -180,9 +180,6 @@ Encapsulating class for constructing atom feeds
       .attr('type', 'text/html')
       .attr('href', data.statichref)
       .end()
-      .add('img')
-      .attr('src', data.pageCover || 'https://source.unsplash.com/random')
-      .end()
       .add('id')
       .text(data.uuid)
       .end()
@@ -204,6 +201,9 @@ Encapsulating class for constructing atom feeds
       .add('name')
       .text(data.author)
       .end()
+      .end()
+      .add('img')
+      .attr('src', data.pageCover || 'https://source.unsplash.com/random')
       .end();
   };
 

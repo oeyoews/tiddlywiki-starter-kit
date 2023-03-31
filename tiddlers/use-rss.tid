@@ -1,6 +1,6 @@
 created: 20230329095532069
 creator: oeyoews
-modified: 20230331031239143
+modified: 20230331035109080
 modifier: oeyoews
 page-cover: https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZmVlZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60
 publish: article
@@ -19,6 +19,10 @@ type: text/vnd.tiddlywiki
 !! Why Rss
 
 * 原因有很多，大概是因为 Rss 给了我一种安静的感觉吧
+
+!! Backup
+
+* use opml file format
 
 !! Rsshub
 
