@@ -1,3 +1,11 @@
+# [3.178.0](https://github.com/oeyoews/neotw/compare/v3.177.0...v3.178.0) (2023-03-31)
+
+
+### Features
+
+* add summary for use rss ([442b7da](https://github.com/oeyoews/neotw/commit/442b7dacd2ff46ced2093fb203a255b53565e6df))
+* add tiddlywiki-sweetalert plugin ([508f75d](https://github.com/oeyoews/neotw/commit/508f75d715dce3bad0cb0dc157a4425af461da92))
+
 # [3.177.0](https://github.com/oeyoews/neotw/compare/v3.176.0...v3.177.0) (2023-03-31)
 
 
