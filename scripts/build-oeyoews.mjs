@@ -1,7 +1,7 @@
 #!/usr/bin/env zx
 
 import msg from './lib/info.mjs';
-import updatecommit from './lib/update-commit.mjs';
+// import updatecommit from './lib/update-commit.mjs';
 import * as dotenv from 'dotenv';
 
 dotenv.config();
@@ -17,7 +17,7 @@ const dist = 'dist';
 await spinner('Building ...', async () => {
   msg.info();
 
-  updatecommit();
+  // updatecommit();
 
   // clean generated files
   await $`rm -rf ${dist}`;
