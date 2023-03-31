@@ -11,6 +11,8 @@ neotw startup descption
   exports.synchronous = true;
   exports.startup = function () {
     if (!$tw.browser) return;
+    // const swal = require('$:/plugins/oeyoews/sweetalert/sweetalert.min.js');
+    // swal('Hi');
     console.log(
       '%c A modern style notebook based on tiddlywiki. @oeyoews  🎉',
 
