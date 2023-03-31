@@ -1,38 +1,37 @@
 created: 20230329095532069
 creator: oeyoews
-modified: 20230331075617738
+modified: 20230331135828466
 modifier: oeyoews
 page-cover: https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZmVlZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60
 publish: article
 summary: use rss records
 tags: 
 title: use-rss
-type: text/vnd.tiddlywiki
+type: text/markdown
 
-[img [files/rss-banner.png]]
+<img src="./files/rss-banner.png" />
 
 > 原来rss feeds 用起来这么爽, 之前一直还不理解
 
 > personal atom feed: https://neotw.oeyoewl.top/atom.xml
 
-!! TODO
+## TODO
 
 * 使用rss 可以做很多事情， 订阅各个平台的更新， youtube的视频的更新， 音乐更新， 省去了打开软件的麻烦， 提高效率， 正在摸索相关工作流
 
-!! Why Rss
+## Why Rss
 
 * 原因有很多，大概是因为 Rss 给了我一种安静的感觉吧
 
-!! Backup
+## Backup
 
 * use opml file format
 
-!! Rsshub
+## Rsshub
 
 * https://docs.rsshub.app/
 
-
-!! Apps
+## Apps
 
 * dinorss
 * https://rss.cafe
@@ -52,7 +51,7 @@ type: text/vnd.tiddlywiki
 * http://webfollow.cc/welcome
 
 
-!! Q&A
+## Q&A
 
 * 使用过程中发现软件似乎对rss源的刷新有一个限制， 并且不会被手动刷新影响（以后再研究吧）, 现在使用rss的人确实不多了
 
@@ -68,13 +67,13 @@ RSS（Really Simple Syndication）是一种较旧的网络订阅源格式，在�
 
 综上所述，Atom、JSON Feed、RSS都是一种标准化的Web内容发布格式，只是底层技术不同，支持的特性不同。Atom 是一种基于 XML 的格式，广泛用于 Web 提要，而 JSON Feed 是一种基于 JSON 的较新格式，旨在易于读写。RSS 是一种仍在使用的旧格式，但在很大程度上已被 Atom 和 JSON Feed 取代。
 
-!! Links
+## Links
 
 * https://www.ruanyifeng.com/blog/2006/01/rss.html
 * https://zhuanlan.zhihu.com/p/133452043
 * https://zhuanlan.zhihu.com/p/395100455
 
-!! Subscribe Github
+## Subscribe Github
 
 ```
 /* Repo releases */
@@ -104,6 +103,6 @@ https://github.com/:user.atom
 * deploy: https://docs.rsshub.app/install/#bu-shu-dao-vercel-zeit-now
 * https://chrome.google.com/webstore/detail/web-monitor/fipadnnmmoiomfllhbbnhjnghopkgfpb?utm_source=official
 
-!! Notion
+## Notion
 
 * use notionfeed
