@@ -1,6 +1,6 @@
 created: 20230329095532069
 creator: oeyoews
-modified: 20230331060256294
+modified: 20230331064040264
 modifier: oeyoews
 page-cover: https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZmVlZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60
 publish: article
@@ -33,6 +33,7 @@ type: text/vnd.tiddlywiki
 
 !! Apps
 
+* dinorss
 * https://rss.cafe
 * https://www.qireader.com.cn/(mirror)
 * fluent reader(app)
@@ -101,3 +102,7 @@ https://github.com/:user.atom
 * rsshub 提供一些rss源
 * deploy: https://docs.rsshub.app/install/#bu-shu-dao-vercel-zeit-now
 * https://chrome.google.com/webstore/detail/web-monitor/fipadnnmmoiomfllhbbnhjnghopkgfpb?utm_source=official
+
+!! Notion
+
+* use notionfeed

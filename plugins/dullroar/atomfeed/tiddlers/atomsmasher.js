@@ -100,10 +100,10 @@ Encapsulating class for constructing atom feeds
   AtomSmasher.prototype.lookupEntryData = function lookupEntryData(tiddler) {
     var title = tiddler.getFieldString('title');
     // var pageCover = $tw.wiki.getTiddler('use-rss').fields['page-cover'];
-    var pageCover = tiddler.getFieldString('page-cover');
+    // var pageCover = tiddler.getFieldString('page-cover');
     return {
       title: title,
-      pageCover: pageCover,
+      // pageCover: pageCover,
       updated: toISODate(tiddler.getFieldString('modified')),
       uuid: uuidHasher.run(title),
       href: pathJoin([this.metadata.sitehref, toPermalink(title)]),
@@ -201,10 +201,10 @@ Encapsulating class for constructing atom feeds
       .add('name')
       .text(data.author)
       .end()
-      .end()
-      .add('img')
-      .attr('src', data.pageCover || 'https://source.unsplash.com/random')
       .end();
+    // .add('img')
+    // .attr('src', data.pageCover || 'https://source.unsplash.com/random')
+    // .end();
   };
 
   /**
