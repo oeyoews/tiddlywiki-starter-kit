@@ -1,3 +1,10 @@
+## [3.180.1](https://github.com/oeyoews/neotw/compare/v3.180.0...v3.180.1) (2023-03-31)
+
+
+### Performance Improvements
+
+* remove unnecesscay plugin ([91cf2ee](https://github.com/oeyoews/neotw/commit/91cf2ee77228ba7556da26a2799629baa10eb483))
+
 # [3.180.0](https://github.com/oeyoews/neotw/compare/v3.179.0...v3.180.0) (2023-03-31)
 
 
