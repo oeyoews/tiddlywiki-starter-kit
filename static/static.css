@@ -3793,7 +3793,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 }
 
 [data-tiddler-title=] {
-  outline: #5778d8 2px solid;
+  
+  
 }
 
 .friend-card {
@@ -6467,8 +6468,10 @@ hr {
   -webkit-background-clip: text;
   color: transparent;
 }/* better focus-visible */
+/* disable it */
 :focus-visible {
-  outline: #7f4bca 2px solid !important;
+  /* outline: #7f4bca 2px solid !important; */
+  outline: none;
 }blockquote {
   border-left: 3px solid #dfdfdf;
 }blockquote > div {
