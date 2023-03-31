@@ -1,3 +1,10 @@
+# [3.179.0](https://github.com/oeyoews/neotw/compare/v3.178.0...v3.179.0) (2023-03-31)
+
+
+### Features
+
+* add zoomjs plugin ([38f2d4c](https://github.com/oeyoews/neotw/commit/38f2d4cbcaee23fb65a20f0566a825c7ab02b4c5))
+
 # [3.178.0](https://github.com/oeyoews/neotw/compare/v3.177.0...v3.178.0) (2023-03-31)
 
 
