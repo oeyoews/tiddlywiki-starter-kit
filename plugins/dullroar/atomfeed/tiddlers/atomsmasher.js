@@ -41,6 +41,7 @@ Encapsulating class for constructing atom feeds
 
   // custom dir
   // add option for article link
+  // actually have statichref as alternative
   function toPermalink(title) {
     // return '#' + encodeURIComponent(title);
     return 'static/' + encodeURIComponent(title);

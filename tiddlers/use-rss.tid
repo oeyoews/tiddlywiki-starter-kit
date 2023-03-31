@@ -1,6 +1,6 @@
 created: 20230329095532069
 creator: oeyoews
-modified: 20230330175557018
+modified: 20230331031239143
 modifier: oeyoews
 page-cover: https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZmVlZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60
 publish: article
@@ -27,6 +27,8 @@ type: text/vnd.tiddlywiki
 
 !! Apps
 
+* https://rss.cafe
+* https://www.qireader.com.cn/(mirror)
 * fluent reader(app)
 * netnewswire
 * feeder.co
@@ -39,6 +41,7 @@ type: text/vnd.tiddlywiki
 * ego reader(格式似乎有问题)
 * unread
 * newsflash
+
 
 !! Q&A
 
