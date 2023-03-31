@@ -1,0 +1,12 @@
+{
+  "title": "$:/plugins/oeyoews/tiddlywiki-sweetalert",
+  "description": "A Beautiful Replacement For Javascript's alert",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.2.5",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "Tiddlywiki Sweetalert",
+  "dependents": [],
+  "list": "readme explore"
+}

@@ -1,0 +1,12 @@
+{
+  "tiddlers": [
+    {
+      "file": "sweetalert.min.js",
+      "fields": {
+        "title": "$:/plugins/oeyoews/sweetalert/sweetalert.min.js",
+        "module-type": "library",
+        "type": "application/javascript"
+      }
+    }
+  ]
+}
