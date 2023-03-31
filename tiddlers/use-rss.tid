@@ -1,6 +1,6 @@
 created: 20230329095532069
 creator: oeyoews
-modified: 20230331135828466
+modified: 20230331140000056
 modifier: oeyoews
 page-cover: https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZmVlZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60
 publish: article
@@ -9,7 +9,7 @@ tags:
 title: use-rss
 type: text/markdown
 
-<img src="./files/rss-banner.png" />
+![rss](./files/rss-banner.png)
 
 > 原来rss feeds 用起来这么爽, 之前一直还不理解
 
