@@ -1,3 +1,15 @@
+# [3.177.0](https://github.com/oeyoews/neotw/compare/v3.176.0...v3.177.0) (2023-03-31)
+
+
+### Bug Fixes
+
+* update tailwindcss to 3.3.1 ([c7a0ebe](https://github.com/oeyoews/neotw/commit/c7a0ebed7888d82240b5c1b72d131a021696351f))
+
+
+### Features
+
+* add img pagecover ([5116eb3](https://github.com/oeyoews/neotw/commit/5116eb303b6056cf4e3c38300dbaefd4f2eaa1bb))
+
 # [3.176.0](https://github.com/oeyoews/neotw/compare/v3.175.3...v3.176.0) (2023-03-31)
 
 
