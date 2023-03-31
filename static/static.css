@@ -9067,6 +9067,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="New Tiddler 7"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="news-app"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="next-arrow"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="oeyoews"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9208,6 +9210,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   [data-tiddler-title="virtual-network"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="web3-xlog"] .tc-titlebar h2 { text-transform: capitalize; }
+
+  [data-tiddler-title="webflow-university"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="xiaofamao"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -9474,7 +9478,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/PageControls] .tc-tag-label:after {
-  content: " 32";
+  content: " 31";
 }
 
 
@@ -9570,13 +9574,13 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Macro] .tc-tag-label:after {
-  content: " 53";
+  content: " 52";
 }
 
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 82";
+  content: " 81";
 }
 
 
@@ -9826,7 +9830,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "228";
+  content: "230";
 }
 .user-panel-avatar {
   position: relative;
@@ -10203,40 +10207,6 @@ ol.doc-github-contributors li {
    border-radius: 0.25rem;
 }.has-image[data-image-fit=contain] .fancybox__image {
     border-radius: 10px;
-}
-@media (max-width: 1360px) {
-  .githubCorner {
-    display: none;
-  }
-}
-
-.githubCorner:hover .octoArm {
-  animation: octocat-wave 560ms ease-in-out;
-}
-
-@keyframes octocat-wave {
-  0%,
-  100% {
-    transform: rotate(0);
-  }
-  20%,
-  60% {
-    transform: rotate(-25deg);
-  }
-  40%,
-  80% {
-    transform: rotate(10deg);
-  }
-}
-
-@media (max-width: 500px) {
-  .githubCorner:hover .octoArm {
-    animation: none;
-  }
-
-  .githubCorner .octoArm {
-    animation: octocat-wave 560ms ease-in-out;
-  }
 }
 .gravatar-56 {
   display: inline;
