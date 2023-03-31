@@ -8687,6 +8687,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="banner.png"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="bing-gallary"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="bing-go"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="bing-image-generator"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9151,6 +9153,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="svg-intro"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="sweetalert"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="table-todo"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="tailwindcss-playground"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9164,8 +9168,6 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   [data-tiddler-title="talk-tw-support-keyboards"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="teamviewer-free-devices"] .tc-titlebar h2 { text-transform: capitalize; }
-
-  [data-tiddler-title="test"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="test-gravatar-static"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -9832,7 +9834,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "231";
+  content: "232";
 }
 .user-panel-avatar {
   position: relative;
