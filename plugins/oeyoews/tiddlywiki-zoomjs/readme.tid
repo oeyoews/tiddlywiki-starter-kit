@@ -21,6 +21,14 @@ title: $:/plugins/oeyoews/tiddlywiki-zoomjs/readme
 * [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/tiddlywiki-zoomjs]]
 * [[Demo|https://oeyoews.github.io/neotw]]
 
+!! Example
+
+<<.lorem>>
+
+<img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/014.png" data-action="zoom">
+
+<<.lorem>>
+
 !! WIP
 
 > just first startup work(need add data-zoom)
