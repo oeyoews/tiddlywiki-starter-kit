@@ -1,6 +1,6 @@
 created: 20230329095532069
 creator: oeyoews
-modified: 20230331035109080
+modified: 20230331041929182
 modifier: oeyoews
 page-cover: https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZmVlZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60
 publish: article
@@ -68,3 +68,29 @@ RSS（Really Simple Syndication）是一种较旧的网络订阅源格式，在�
 * https://www.ruanyifeng.com/blog/2006/01/rss.html
 * https://zhuanlan.zhihu.com/p/133452043
 * https://zhuanlan.zhihu.com/p/395100455
+
+!! Subscribe Github
+
+```
+/* Repo releases */
+
+https://github.com/:owner/:repo/releases.atom
+
+/* Repo commits */
+
+https://github.com/:owner/:repo/commits.atom
+
+/* Private feed (You can find Subscribe to your news feed in dashboard page after login) */
+
+https://github.com/:user.private.atom?token=:secret
+
+/* Repo tags */
+
+https://github.com/:user/:repo/tags.atom
+
+/* User activity */
+
+https://github.com/:user.atom
+```
+
+* https://ronalds.eu/2020/03/26/rss-feeds-for-your-github-releases-tags-and-activity/
