@@ -1,3 +1,10 @@
+## [3.180.3](https://github.com/oeyoews/neotw/compare/v3.180.2...v3.180.3) (2023-03-31)
+
+
+### Bug Fixes
+
+* remove focus-visible style ([714f983](https://github.com/oeyoews/neotw/commit/714f9833ababfdb5acf8e33fe14a554a42dfc9e6))
+
 ## [3.180.2](https://github.com/oeyoews/neotw/compare/v3.180.1...v3.180.2) (2023-03-31)
 
 
