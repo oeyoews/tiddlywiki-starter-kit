@@ -3,6 +3,7 @@ tags: $:/tags/Stylesheet
 
 <$list filter="[{$:/state/plugins/oeyoews/motion/selected}] [has[draft.of]field:draft.of{$:/state/plugins/oeyoews/motion/selected}] +[escapecss[]]">
 [data-tiddler-title=<<currentTiddler>>] {
-  outline: <<colour primary>> 2px solid;
+  <!-- outline: <<colour primary>> 2px solid; -->
+  <!-- border: red 2px solid; -->
 }
 </$list>

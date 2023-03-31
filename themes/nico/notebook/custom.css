@@ -31,8 +31,10 @@ hr {
 }
 
 /* better focus-visible */
+/* disable it */
 :focus-visible {
-  outline: #7f4bca 2px solid !important;
+  /* outline: #7f4bca 2px solid !important; */
+  outline: none;
 }
 
 blockquote {
