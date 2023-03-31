@@ -2454,7 +2454,7 @@ span.cm-externallink {
 }span.cm-internallink {
   text-decoration: none;
 }
-.gk0wk-chatgpt-container{height:100%;width:100%;display:flex;padding:10px 0;flex-direction:column}.gk0wk-chatgpt-container .conversations{width:100%;flex-grow:1}.gk0wk-chatgpt-container .conversations-scroll{height:0;width:100%;flex-grow:1;overflow-y:auto}.gk0wk-chatgpt-container .chat-box{width:100%;display:flex;border:1.5px solid #888a;border-radius:5px;background:#8881}.gk0wk-chatgpt-container .chat-input{flex-grow:1;padding-left:10px;font-size:16px}.gk0wk-chatgpt-container .chat-button{height:45px;width:45px;font-size:20px}.gk0wk-chatgpt-container .chatgpt-conversation{display:flex;flex-direction:column}.gk0wk-chatgpt-container .chatgpt-conversation-assistant{background-image:linear-gradient(0deg,#8883,#8883)}.gk0wk-chatgpt-container .chatgpt-conversation-error .chatgpt-conversation-assistant{color:red}.gk0wk-chatgpt-container .chatgpt-conversation-user{font-weight:750;padding-top:18px!important}.gk0wk-chatgpt-container .chatgpt-conversation-message{padding:10px 20px;position:relative}.gk0wk-chatgpt-container .chatgpt-conversation-message .conversation-datetime{position:absolute;left:0;top:0;user-select:none;opacity:.5;font-size:12px;font-weight:500px}.gk0wk-chatgpt-container .chatgpt-conversation-message .edit-button{position:absolute;right:0;top:18px}.gk0wk-chatgpt-container .chatgpt-conversation-message .delete-button{position:absolute;right:25px;top:18px}.gk0wk-backlinksbox-title {
+.gk0wk-backlinksbox-title {
   opacity: 0.7;
   user-select: none;
   cursor: pointer;
@@ -9498,7 +9498,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/SideBar] .tc-tag-label:after {
-  content: " 8";
+  content: " 6";
 }
 
 
@@ -9588,7 +9588,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 81";
+  content: " 80";
 }
 
 
@@ -9600,7 +9600,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/ControlPanel\/SettingsTab] .tc-tag-label:after {
-  content: " 6";
+  content: " 5";
 }
 
 
