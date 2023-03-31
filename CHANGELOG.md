@@ -1,3 +1,10 @@
+## [3.175.2](https://github.com/oeyoews/neotw/compare/v3.175.1...v3.175.2) (2023-03-31)
+
+
+### Performance Improvements
+
+* remove footer badge ([739a38a](https://github.com/oeyoews/neotw/commit/739a38a2baffb617eb439c68ef138ad1c7142ade))
+
 ## [3.175.1](https://github.com/oeyoews/neotw/compare/v3.175.0...v3.175.1) (2023-03-31)
 
 
