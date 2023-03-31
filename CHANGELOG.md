@@ -1,3 +1,16 @@
+## [3.180.2](https://github.com/oeyoews/neotw/compare/v3.180.1...v3.180.2) (2023-03-31)
+
+
+### Bug Fixes
+
+* remove codemirror-fullscreen ([b629407](https://github.com/oeyoews/neotw/commit/b629407f74fd8bda8d2af772212cee4e53044d26))
+
+
+### Performance Improvements
+
+* remove FontAwesome ([c1c007b](https://github.com/oeyoews/neotw/commit/c1c007b3d7f6570fdc2d1bff36c3b1f069653434))
+* remove link-to-tabs ([2cf4b16](https://github.com/oeyoews/neotw/commit/2cf4b16d0e9965a8c78d06617e96c19ebf894fa5))
+
 ## [3.180.1](https://github.com/oeyoews/neotw/compare/v3.180.0...v3.180.1) (2023-03-31)
 
 
