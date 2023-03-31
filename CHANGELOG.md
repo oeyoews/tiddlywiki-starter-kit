@@ -1,3 +1,10 @@
+# [3.176.0](https://github.com/oeyoews/neotw/compare/v3.175.3...v3.176.0) (2023-03-31)
+
+
+### Features
+
+* add pagecover ([5ea5b08](https://github.com/oeyoews/neotw/commit/5ea5b089f1f78eccf8f32764513e97caeb66b31e))
+
 ## [3.175.3](https://github.com/oeyoews/neotw/compare/v3.175.2...v3.175.3) (2023-03-31)
 
 
