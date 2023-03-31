@@ -1,4 +1,4 @@
-tags: $:/tags/SideBar
+<!-- tags: $:/tags/SideBar -->
 caption: Links
 title: $:/plugins/oeyoews/neotw/modules/friend/ui
 list-after: $:/core/ui/SideBar/More
