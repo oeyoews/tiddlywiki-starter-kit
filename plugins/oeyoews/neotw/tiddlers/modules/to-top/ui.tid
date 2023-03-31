@@ -141,10 +141,10 @@ tags: $:/tags/PageTemplate
 <$list filter="[[$:/StoryList]get[list]count[]match[0]]">
 <div id="stx-story-top">
   <!-- <<backToTopBtn>> -->
-  <<giscus-app>>
+  <!-- <<giscus-app>> -->
   <!-- <<reveal-js>> -->
   <!-- <<random-article>> -->
-  <<github-cat>>
+  <!-- <<github-cat>> -->
   <!-- <<switch-lang>> -->
   <!-- <<toggle-theme>> -->
   <<home-button>>
@@ -174,7 +174,7 @@ tags: $:/tags/PageTemplate
   <!-- <$list filter="[list[$:/StoryList]count[]compare:number:lteq[2]]"> -->
     <div id="stx-story-top">
       <!-- <<backToTopBtn>> -->
-      <<giscus-app>>
+      <!-- <<giscus-app>> -->
       <!-- <<random-article>> -->
       <!-- right padding conflict for backtotop -->
       <!-- <<o-sidebar>> -->
