@@ -39,6 +39,7 @@
     "oeyoews/tiddlywiki-readonly",
     "dullroar/atomfeed",
     "oeyoews/tiddlywiki-sweetalert",
+    "oeyoews/tiddlywiki-zoomjs",
     "oeyoews/tiddlywiki-shield"
   ],
   "themes": [
