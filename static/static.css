@@ -9165,8 +9165,6 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="teamviewer-free-devices"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="test-cover"] .tc-titlebar h2 { text-transform: capitalize; }
-
   [data-tiddler-title="test-gravatar-static"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="test-picgo"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9832,7 +9830,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "231";
+  content: "230";
 }
 .user-panel-avatar {
   position: relative;
