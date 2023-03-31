@@ -8687,6 +8687,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="banner.png"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="bing-everyday-seven"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="bing-gallary"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="bing-go"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -9834,7 +9836,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "232";
+  content: "233";
 }
 .user-panel-avatar {
   position: relative;
