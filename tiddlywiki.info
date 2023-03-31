@@ -36,8 +36,7 @@
     "oeyoews/tiddlywiki-gravatar",
     "oeyoews/tiddlywiki-empty-story",
     "oeyoews/tiddlywiki-readonly",
-    "dullroar/atomfeed",
-    "oeyoews/tiddlywiki-shield"
+    "dullroar/atomfeed"
   ],
   "themes": [
     "tiddlywiki/vanilla",
