@@ -2454,82 +2454,6 @@ span.cm-externallink {
 }span.cm-internallink {
   text-decoration: none;
 }
-.gk0wk-backlinksbox-title {
-  opacity: 0.7;
-  user-select: none;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  flex-shrink: 0;
-  white-space: nowrap;
-  height: 28px;
-  border-radius: 3px;
-  line-height: 1.2;
-  padding-left: 6px;
-  padding-right: 8px;
-  background: transparent;
-  border: none;
-  color: #333333;
-  fill: #333333;
-  transition: all 300ms;
-}.gk0wk-backlinksbox-title:hover {
-  opacity: 1;
-  background: #ffffff;
-  color: #333333;
-  fill: #333333;
-}.gk0wk-backlinksbox-box {
-  border-radius: 3px;
-  background: #f4f4f4;
-  position: relative;
-  max-height: 300px;
-  width: min(90vw, 450px);
-  
-  -webkit-box-shadow: #00000070 0 2px 6px;
-     -moz-box-shadow: #00000070 0 2px 6px;
-          box-shadow: #00000070 0 2px 6px;
-
-  overflow: hidden;
-  filter: contrast(90%);
-  padding-bottom: 6px;
-}.gk0wk-backlinksbox-box-description {
-  user-select: none;
-  font-size: 0.9em;
-  line-height: 16px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  margin: 12px 0 8px 4px;
-  flex: 1 1 0%;
-  padding-left: 8px;
-}.gk0wk-backlinksbox-box-link {
-  user-select: none;
-  cursor: pointer;
-  width: 100%;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  margin-bottom: 2px;
-  margin-right: 4px;
-  padding: 4px 18px 4px 20px;
-  border-bottom: none;
-  color: #333333 !important;
-  fill: #333333 !important;
-  transition: all 300ms;
-}.gk0wk-backlinksbox-box-link:hover {
-  background: #f4f4f4;
-  filter: contrast(70%);
-  text-decoration: none !important;
-}.gk0wk-backlinksbox-box-link strong {
-  border-bottom: 1px solid #bbb;
-  line-height: 1.3;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}.gk0wk-backlinksbox-box-link-icon {
-  font-family: "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols;
-  margin-right: 10px;
-}.gk0wk-backlinksbox-box-link-icon > p {
-  margin: 0;
-}
 /* Container */
 .gk0wk-notionpagebg {
   width: 100%;
@@ -9528,7 +9452,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/ViewTemplate] .tc-tag-label:after {
-  content: " 12";
+  content: " 11";
 }
 
 
@@ -9588,7 +9512,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 80";
+  content: " 79";
 }
 
 
@@ -9726,7 +9650,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/StartupAction\/PostRender] .tc-tag-label:after {
-  content: " 3";
+  content: " 2";
 }
 
 
