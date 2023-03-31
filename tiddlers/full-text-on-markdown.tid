@@ -1,12 +1,14 @@
 created: 20230331131934773
 creator: oeyoews
-modified: 20230331135544858
+modified: 20230331141711720
 modifier: oeyoews
-page-cover: https://source.unsplash.com/random
+page-cover: 
 publish: article
 summary: test markdown full text
 tags: 
 title: full-text-on-markdown
-type: text/vnd.tiddlywiki
+type: text/markdown
+
+## Just a test
 
 > seems only markdown type have full text function
