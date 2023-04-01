@@ -1,3 +1,10 @@
+## [3.184.3](https://github.com/oeyoews/neotw/compare/v3.184.2...v3.184.3) (2023-04-01)
+
+
+### Bug Fixes
+
+* remove unused github ci file ([2907b26](https://github.com/oeyoews/neotw/commit/2907b26c059ec8b2d5f1496e001ae8cf7a7e757a))
+
 ## [3.184.2](https://github.com/oeyoews/neotw/compare/v3.184.1...v3.184.2) (2023-04-01)
 
 
