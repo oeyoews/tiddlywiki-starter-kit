@@ -169,6 +169,10 @@ Encapsulating class for constructing atom feeds
     var data = this.lookupEntryData(tiddler);
     return $tw.utils
       .DomBuilder('entry', this.document)
+      .add('img')
+      .attr('alt', 'cover')
+      .attr('src', data.pageCover || 'https://source.unsplash.com/random')
+      .end()
       .add('title')
       .text(data.title)
       .end()
@@ -201,10 +205,6 @@ Encapsulating class for constructing atom feeds
       .add('name')
       .text(data.author)
       .end()
-      .end()
-      .add('img')
-      .attr('alt', 'cover')
-      .attr('src', data.pageCover || 'https://source.unsplash.com/random')
       .end();
   };
 
