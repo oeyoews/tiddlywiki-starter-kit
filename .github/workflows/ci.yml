@@ -46,7 +46,7 @@ jobs:
         run: |
           npm run build:oeyoews
           # npx zx ./scripts/make-template.mjs
-          sh ./scripts/make-template.sh
+          # sh ./scripts/make-template.sh
 
         # - name: Create Release
         #   uses: softprops/action-gh-release@v1
@@ -71,15 +71,16 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: yarn semantic-release
 
-      - name: removeSymbolink
-        run: |
-          rm -rf plugins editions
+      # not work
+      # - name: removeSymbolink
+      #   run: |
+      #     rm -rf plugins editions
 
-      - name: makeNeotwEmptyTemplate
-        uses: s0/git-publish-subdir-action@develop
-        env:
-          REPO: self
-          BRANCH: template
-          FOLDER: upload
-          SQUASH_HISTORY: true
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - name: makeNeotwEmptyTemplate
+      #   uses: s0/git-publish-subdir-action@develop
+      #   env:
+      #     REPO: self
+      #     BRANCH: template
+      #     FOLDER: upload
+      #     SQUASH_HISTORY: true
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
