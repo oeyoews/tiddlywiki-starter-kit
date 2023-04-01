@@ -71,11 +71,13 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: yarn semantic-release
 
-      - name: makeNeotwEmptyTemplate
-        uses: s0/git-publish-subdir-action@develop
+      - name: removeSymbolink
         run: |
           # Find all symlinks in current directory and delete them
           find . -type l -delete
+
+      - name: makeNeotwEmptyTemplate
+        uses: s0/git-publish-subdir-action@develop
         env:
           REPO: self
           BRANCH: template
