@@ -1,3 +1,10 @@
+## [3.184.7](https://github.com/oeyoews/neotw/compare/v3.184.6...v3.184.7) (2023-04-01)
+
+
+### Bug Fixes
+
+* remove template step temporary ([82167d8](https://github.com/oeyoews/neotw/commit/82167d893c707624ca701eefb4402f0efbb85fbb))
+
 ## [3.184.6](https://github.com/oeyoews/neotw/compare/v3.184.5...v3.184.6) (2023-04-01)
 
 
