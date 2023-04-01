@@ -80,3 +80,7 @@ swal({
 !! Simple Lib
 
 * simple-notify
+
+!! Example
+
+<$swal />
