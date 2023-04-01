@@ -69,6 +69,15 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: yarn semantic-release
 
+      - name: makeNeotwEmptyTemplate
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: template
+          FOLDER: upload
+          SQUASH_HISTORY: true
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       # - uses: jsmrcaga/action-netlify-deploy@v2.0.0
       #   with:
       #     NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
