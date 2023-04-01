@@ -2,7 +2,7 @@
 
 export async function makeTemplate() {
   // Define variables
-  const TEMPLATE_DIR = 'public/neotw-template';
+  const TEMPLATE_DIR = 'tmp/neotw-template';
   const PLUGINS_DIR = 'dist/plugins';
   const THEMES_DIR = 'dist/themes';
   const UPLOAD_DIR = 'upload';
