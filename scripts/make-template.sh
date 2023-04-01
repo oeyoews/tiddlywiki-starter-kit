@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Define variables
-TEMPLATE_DIR="public/neotw-template"
+TEMPLATE_DIR="tmp/neotw-template"
 PLUGINS_DIR="dist/plugins"
 THEMES_DIR="dist/themes"
 UPLOAD_DIR="upload"
