@@ -73,8 +73,7 @@ jobs:
 
       - name: removeSymbolink
         run: |
-          # Find all symlinks in current directory and delete them
-          find . -type l -delete
+          rm -rf plugins editions
 
       - name: makeNeotwEmptyTemplate
         uses: s0/git-publish-subdir-action@develop
