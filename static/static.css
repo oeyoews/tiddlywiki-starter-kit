@@ -4479,6 +4479,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="vertical-button"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="vidline"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="virtual-network"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="web3-xlog"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -5104,7 +5106,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "235";
+  content: "236";
 }
 .user-panel-avatar {
   position: relative;
