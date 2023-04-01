@@ -19,7 +19,7 @@ mkdir "$TEMPLATE_DIR/tiddlers"
 cp -r "$PLUGINS_DIR" "$THEMES_DIR" "$TEMPLATE_DIR/tiddlers"
 
 # Rename template dir to upload dir
-mkdir "$UPLOAD_DIR"
+# mkdir "$UPLOAD_DIR"
 mv "$TEMPLATE_DIR" "$UPLOAD_DIR"
 
 echo "Template successfully created in '$UPLOAD_DIR'"
