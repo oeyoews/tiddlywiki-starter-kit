@@ -1,3 +1,10 @@
+## [3.184.6](https://github.com/oeyoews/neotw/compare/v3.184.5...v3.184.6) (2023-04-01)
+
+
+### Bug Fixes
+
+* directly remove symbolink dir ([289aef2](https://github.com/oeyoews/neotw/commit/289aef28c2eda7719415693ca01825b7ca747032))
+
 ## [3.184.5](https://github.com/oeyoews/neotw/compare/v3.184.4...v3.184.5) (2023-04-01)
 
 
