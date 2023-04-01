@@ -1,3 +1,11 @@
+## [3.184.2](https://github.com/oeyoews/neotw/compare/v3.184.1...v3.184.2) (2023-04-01)
+
+
+### Bug Fixes
+
+* because of await, so use github workflows ([f45d5e7](https://github.com/oeyoews/neotw/commit/f45d5e72682879974a491c5bb6f5e2f3f02a83f1))
+* better template workflows ([f8a1771](https://github.com/oeyoews/neotw/commit/f8a1771271d52d3eb09ba4fb95700876bad92943))
+
 ## [3.184.1](https://github.com/oeyoews/neotw/compare/v3.184.0...v3.184.1) (2023-04-01)
 
 
