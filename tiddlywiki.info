@@ -42,31 +42,8 @@
     "nico/notebook"
   ],
   "build": {
-    "feed": [
-      "--verbose",
-      "--output",
-      "dist",
-      "--render",
-      "$:/plugins/dullroar/atomfeed/atom.template.xml",
-      "atom.xml",
-      "text/plain"
-    ],
-    "neotw-empty": [
-      "--verbose",
-      "--output",
-      "dist",
-      "--render",
-      "$:/plugins/oeyoews/neotw/templates/download-neotw-template",
-      "neotw-empty.html",
-      "text/plain",
-      "--savetiddler",
-      "$:/favicon.ico",
-      "favicon.ico"
-    ],
     "index": [
       "--verbose",
-      "--load",
-      "patch",
       "--output",
       "dist",
       "--deletetiddlers",
@@ -78,6 +55,20 @@
       "--savetiddler",
       "$:/favicon.ico",
       "favicon.ico"
+    ],
+    "editions": [
+      "--verbose",
+      "--output",
+      "dist/editions",
+      "--render",
+      "$:/plugins/tiddlywiki/tiddlyweb/save/offline",
+      "index.html",
+      "text/plain",
+      "--savetiddler",
+      "$:/favicon.ico",
+      "favicon.ico",
+      "--deletetiddlers",
+      "$:/StoryList"
     ],
     "plugins": [
       "--verbose",
@@ -164,6 +155,15 @@
       "--render",
       "$:/core/templates/tiddlywiki5.js",
       "[[tiddlywikicore-]addsuffix<version>addsuffix[.js]]",
+      "text/plain"
+    ],
+    "feed": [
+      "--verbose",
+      "--output",
+      "dist",
+      "--render",
+      "$:/plugins/dullroar/atomfeed/atom.template.xml",
+      "atom.xml",
       "text/plain"
     ]
   },

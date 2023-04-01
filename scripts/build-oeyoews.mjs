@@ -35,7 +35,8 @@ await spinner('Building ...', async () => {
   await $`npx ${bin} --build library`;
 
   /* edition */
-  await $`npx ${bin} editions/neotw --output dist/editions --build index`;
+  // need dotenv to add library
+  await $`npx ${bin} editions/neotw --build editions`;
 
   // build index
   await $`npx ${bin} --build index`;
