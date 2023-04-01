@@ -10,5 +10,5 @@ tags: $:/tags/RawMarkupWikified/TopHead
 `<meta name="description" content="A modern style notebook based on tiddlywiki">`
 `<meta name="author" content="oeyoews">`
 `<meta content="no" name="apple-mobile-web-app-status-bar-style" content="black">`
-`<link rel="alternate" type="application/atom+xml" title="Neotw Rss" href="https://neotw.netlify.app/atom.xml" />`
+<!-- `<link rel="alternate" type="application/atom+xml" title="Neotw Rss" href="https://neotw.netlify.app/atom.xml" />` -->
 <!-- `<link rel="hub" href="http://pubsubhubbub.superfeedr.com/" />` -->
