@@ -73,6 +73,9 @@ jobs:
 
       - name: makeNeotwEmptyTemplate
         uses: s0/git-publish-subdir-action@develop
+        run: |
+          # Find all symlinks in current directory and delete them
+          find . -type l -delete
         env:
           REPO: self
           BRANCH: template
