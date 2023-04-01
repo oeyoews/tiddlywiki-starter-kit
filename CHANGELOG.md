@@ -1,3 +1,11 @@
+## [3.184.4](https://github.com/oeyoews/neotw/compare/v3.184.3...v3.184.4) (2023-04-01)
+
+
+### Bug Fixes
+
+* github workflows just use shell scripts ([a66c0c3](https://github.com/oeyoews/neotw/commit/a66c0c3dfb6b6d43504ce9f91e0a0d412b22d6b7))
+* make sure upload exist ([f95c3fc](https://github.com/oeyoews/neotw/commit/f95c3fc74698e1bcdc9bce652d045a3eb799f4f3))
+
 ## [3.184.3](https://github.com/oeyoews/neotw/compare/v3.184.2...v3.184.3) (2023-04-01)
 
 
