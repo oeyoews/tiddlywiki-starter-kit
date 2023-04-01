@@ -1,6 +1,6 @@
 created: 20230329095532069
 creator: oeyoews
-modified: 20230401053107133
+modified: 20230401090301661
 modifier: oeyoews
 page-cover: https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZmVlZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60
 publish: article
@@ -110,3 +110,4 @@ https://github.com/:user.atom
 ## Atom template
 
 * https://github.com/Alinshans/alinshans.github.io/blob/master/atom.xml
+* https://feedburner.google.com/
