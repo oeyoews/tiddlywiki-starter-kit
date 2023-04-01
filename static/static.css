@@ -3937,6 +3937,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="add-animation-for-layout"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="add-copyright-footer"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="affine-pro"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="AIGC"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -3960,6 +3962,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   [data-tiddler-title="bing-image-generator"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="build external image"] .tc-titlebar h2 { text-transform: capitalize; }
+
+  [data-tiddler-title="built-blog-with-react"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="calendar"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -5098,7 +5102,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "235";
+  content: "237";
 }
 .user-panel-avatar {
   position: relative;
