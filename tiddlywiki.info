@@ -35,8 +35,7 @@
     "oeyoews/tiddlywiki-tiddler-info",
     "oeyoews/tiddlywiki-gravatar",
     "oeyoews/tiddlywiki-empty-story",
-    "oeyoews/tiddlywiki-readonly",
-    "dullroar/atomfeed"
+    "oeyoews/tiddlywiki-readonly"
   ],
   "themes": [
     "tiddlywiki/vanilla",
