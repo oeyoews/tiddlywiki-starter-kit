@@ -4067,6 +4067,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="js-books"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="learn-faster-how"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="list-all-empty-folders"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="list-tree-style"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -4382,6 +4384,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   [data-tiddler-title="recent-count"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="recent-note-record"] .tc-titlebar h2 { text-transform: capitalize; }
+
+  [data-tiddler-title="remember-everything"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="remove-old-data-on-mongodb"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -5102,7 +5106,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "237";
+  content: "239";
 }
 .user-panel-avatar {
   position: relative;
