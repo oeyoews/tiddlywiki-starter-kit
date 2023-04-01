@@ -1,6 +1,6 @@
 created: 20230331131934773
 creator: oeyoews
-modified: 20230401053558192
+modified: 20230401053621877
 modifier: oeyoews
 page-cover: https://blogs.microsoft.com/wp-content/uploads/prod/2023/03/BingImageCreator_Hero_16x9-2048x1152.jpg
 publish: article
@@ -8,10 +8,6 @@ summary: test markdown full text
 tags: 
 title: full-text-on-markdown
 type: text/markdown
-
-## Just a test
-
-> seems only markdown type have full text function
 
 ## Hi
 
