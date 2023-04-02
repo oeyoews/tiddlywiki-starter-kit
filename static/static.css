@@ -4391,6 +4391,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="remove-old-data-on-mongodb"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="rename-branch-name"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="reveal"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="reveal-icon"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -5112,7 +5114,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "242";
+  content: "243";
 }
 .user-panel-avatar {
   position: relative;
