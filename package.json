@@ -18,12 +18,11 @@
     "pm2:start": "pm2 start ecosystem.config.js",
     "semantic-release": "semantic-release",
     "start": "node startup.js --listen",
-    "pre-commit": "sh ./scripts/minify.png.hooks.sh"
+    "minify:png": "sh ./scripts/minify.png.hooks.sh"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.14",
-    "husky": "^8.0.3",
     "pm2": "^5.2.2",
     "pngquant-bin": "^8.0.1",
     "postcss": "^8.4.21",
