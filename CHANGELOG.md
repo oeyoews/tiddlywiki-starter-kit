@@ -1,3 +1,10 @@
+# [3.187.0](https://github.com/oeyoews/neotw/compare/v3.186.2...v3.187.0) (2023-04-02)
+
+
+### Features
+
+* add figure ([4424af5](https://github.com/oeyoews/neotw/commit/4424af5b7a830d98b2a288965191ec273bfc3f9d))
+
 ## [3.186.2](https://github.com/oeyoews/neotw/compare/v3.186.1...v3.186.2) (2023-04-02)
 
 
