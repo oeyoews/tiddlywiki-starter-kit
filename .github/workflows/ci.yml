@@ -24,15 +24,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      # - name: Cache Dependencies
-      #   uses: actions/cache@v3
-      #   with:
-      #     path: |
-      #       **/.yarn
-      #     key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-      #     restore-keys: |
-      #       ${{ runner.os }}-yarn-
-
       - name: Setup Node.js and Yarn
         uses: actions/setup-node@v3
         with:
@@ -42,30 +33,13 @@ jobs:
           registry-url: 'https://registry.yarnpkg.com'
 
       - name: Install Dependency
-        # run: yarn global add tiddlywiki
         run: |
-          # yarn install
           # yarn install --production
           yarn workspaces focus --all --production
-          # sudo apt install pngquant -y
-          # node scripts/minify.png.js
 
       - name: Build Neotw
         run: |
           npm run build:neotw
-          # npx zx ./scripts/make-template.mjs
-          # sh ./scripts/make-template.sh
-
-        # - name: Create Release
-        #   uses: softprops/action-gh-release@v1
-        #   if: startsWith(github.ref, 'refs/tags/')
-        #   # if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && github.event.inputs.tag_name != 'nightly')
-        #   # https://github.com/neovim/neovim/blob/234b8c5f3d57294dda06dbc6c1760e5983bd2c19/.github/workflows/release.yml#L264
-        #   with:
-        #     files: |
-        #       dist/plugins/*.json
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
@@ -78,17 +52,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: yarn semantic-release
-
-      # not work
-      # - name: removeSymbolink
-      #   run: |
-      #     rm -rf plugins editions
-
-      # - name: makeNeotwEmptyTemplate
-      #   uses: s0/git-publish-subdir-action@develop
-      #   env:
-      #     REPO: self
-      #     BRANCH: template
-      #     FOLDER: upload
-      #     SQUASH_HISTORY: true
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

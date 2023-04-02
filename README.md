@@ -64,6 +64,12 @@ cd neotw && yarn or yarn install  # install packages
 yarn start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm2:start
 ```
 
+## Use Template
+
+```bash
+git clone --depth 1 -b template https://github.com/oeyoews/neotw
+```
+
 ## Deploy :gear:
 
 <!-- https://vercel.com/docs/deploy-button -->
