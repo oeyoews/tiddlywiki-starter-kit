@@ -1,3 +1,3 @@
 {
-  "startCommand": "node startup.js --listen"
+  "startCommand": "cp ./README*.md ./plugins/oeyoews/neotw/files/ && node startup.js --listen"
 }
