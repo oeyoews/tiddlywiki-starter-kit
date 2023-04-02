@@ -4469,6 +4469,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="update-tiddlywiki-bug"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="use-berry"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="use-deepl-extend-on-chrome"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="use-files-on-tiddlywiki"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -5110,7 +5112,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "241";
+  content: "242";
 }
 .user-panel-avatar {
   position: relative;
