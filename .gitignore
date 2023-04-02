@@ -55,7 +55,7 @@ upload
 
 # yarn betrry
 .yarn/*
-# !.yarn/cache
+!.yarn/cache
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
