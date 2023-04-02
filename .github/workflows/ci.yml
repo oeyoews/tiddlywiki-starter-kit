@@ -33,6 +33,7 @@ jobs:
         with:
           path: |
             **/node_modules
+            **/.yarn/cache
           key: ${{ runner.os }}-${{ hashFiles('**/package.json') }}
 
       - name: Install Dependency
