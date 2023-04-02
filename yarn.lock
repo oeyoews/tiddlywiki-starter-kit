@@ -3436,18 +3436,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky-init@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "husky-init@npm:8.0.0"
-  dependencies:
-    husky: ^8.0.0
-  bin:
-    husky-init: lib/bin.js
-  checksum: ccee853be5c28dcbe1f7498ec8b466c58e81adfe27b3d96d6ebf15bb4ceb83ae74b9e7179be261a1cb364f00cf5fb77dac388d26aa74d38d23d4db55ef7e2f09
-  languageName: node
-  linkType: hard
-
-"husky@npm:^8.0.0, husky@npm:^8.0.3":
+"husky@npm:^8.0.3":
   version: 8.0.3
   resolution: "husky@npm:8.0.3"
   bin:
@@ -4755,7 +4744,6 @@ __metadata:
     gradient-string: ^2.0.2
     html-minifier-terser: ^7.1.0
     husky: ^8.0.3
-    husky-init: ^8.0.0
     kolorist: ^1.6.0
     pm2: ^5.2.2
     pngquant-bin: ^8.0.1
