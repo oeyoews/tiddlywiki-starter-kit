@@ -1,13 +1,19 @@
 created: 20230402054334389
 creator: oeyoews
-modified: 20230402064124042
+modified: 20230402065523486
 modifier: oeyoews
 tags: 
 title: use-berry
 type: text/vnd.tiddlywiki
 
-yarn init -y
-
+* just enable for current projects
+> yarn set version stable
+> yarn set version classic
 > yarn set version berry # enable global yarn to berry
 > cache maybe not supported
 > support cli completions
+
+<hr>
+
+* corepack disable to manage your global yarn version
+* when you are in yarn-1.22.19, you can use `yarn init -2` to init current project to yarn with berry projects
