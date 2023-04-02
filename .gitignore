@@ -52,3 +52,12 @@ tiddlers/oeyoews-chatgpt-history*
 yarn-error.log
 # plugins/oeyoews/tiddlywiki-tailwindcss/files/styles.dev.css
 upload
+
+# yarn betrry
+.yarn/*
+# !.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

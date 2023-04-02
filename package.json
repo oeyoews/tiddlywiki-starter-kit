@@ -1,6 +1,7 @@
 {
   "name": "neotw",
   "description": "A modern style notebook based on tiddlywiki",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/oeyoews/neotw.git"
@@ -22,29 +23,29 @@
     "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.14",
     "open": "^8.4.0",
+    "pm2": "^5.2.2",
     "pngquant-bin": "^8.0.1",
     "postcss": "^8.4.21",
     "postcss-import": "^15.1.0",
     "prettier": "^2.8.6",
     "prettier-plugin-tailwindcss": "^0.2.5",
     "tailwindcss": "3.3.1",
-    "terser": "^5.16.6",
-    "pm2": "^5.2.2"
+    "terser": "^5.16.6"
   },
   "dependencies": {
-    "tiddlywiki": "github:oeyoews/TiddlyWiki5#e0ff54a04ed0427d05739ecff07168f6fc86ba6d",
+    "@semantic-release/changelog": "^6.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "dateformat": "^5.0.3",
     "dotenv": "^16.0.3",
     "gradient-string": "^2.0.2",
     "html-minifier-terser": "^7.1.0",
-    "prompts": "^2.4.2",
-    "signale": "^1.4.0",
-    "replace": "^1.2.2",
     "kolorist": "^1.6.0",
-    "dateformat": "^5.0.3",
-    "zx": "^7.2.0",
+    "prompts": "^2.4.2",
+    "replace": "^1.2.2",
     "semantic-release": "^20.1.0",
-    "@semantic-release/changelog": "^6.0.2",
-    "@semantic-release/git": "^10.0.1"
+    "signale": "^1.4.0",
+    "tiddlywiki": "github:oeyoews/TiddlyWiki5#e0ff54a04ed0427d05739ecff07168f6fc86ba6d",
+    "zx": "^7.2.0"
   },
   "bugs": {
     "url": "https://github.com/oeyoews/neotw/issues"
@@ -58,5 +59,6 @@
   "engines": {
     "node": ">=16"
   },
-  "version": "3.184.9"
+  "version": "3.184.9",
+  "packageManager": "yarn@3.5.0"
 }
