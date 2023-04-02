@@ -1,0 +1,9 @@
+created: 20230402175632696
+creator: oeyoews
+modified: 20230402175722655
+modifier: oeyoews
+tags: 
+title: husky-usage
+type: text/vnd.tiddlywiki
+
+* if you use gitua(git add . && git commit -m "xxx") this pre-commit will not work (maybe this bug)
