@@ -4771,7 +4771,7 @@ __metadata:
     replace: ^1.2.2
     semantic-release: ^20.1.0
     signale: ^1.4.0
-    tailwindcss: 3.3.1
+    tailwindcss: ^3.3.1
     terser: ^5.16.6
     tiddlywiki: "github:oeyoews/TiddlyWiki5#e0ff54a04ed0427d05739ecff07168f6fc86ba6d"
     zx: ^7.2.0
@@ -7282,7 +7282,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:3.3.1":
+"tailwindcss@npm:^3.3.1":
   version: 3.3.1
   resolution: "tailwindcss@npm:3.3.1"
   dependencies:
