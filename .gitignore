@@ -61,3 +61,4 @@ upload
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+.vercel

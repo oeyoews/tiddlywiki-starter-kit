@@ -1,10 +1,13 @@
 created: 20230402054334389
 creator: oeyoews
-modified: 20230402061322874
+modified: 20230402064124042
 modifier: oeyoews
 tags: 
 title: use-berry
 type: text/vnd.tiddlywiki
 
-yarn init -2
+yarn init -y
+
+> yarn set version berry # enable global yarn to berry
 > cache maybe not supported
+> support cli completions
