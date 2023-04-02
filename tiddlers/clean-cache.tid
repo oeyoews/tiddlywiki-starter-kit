@@ -1,0 +1,13 @@
+created: 20230402161915292
+creator: oeyoews
+modified: 20230402163014015
+modifier: oeyoews
+page-cover: memory.png
+tags: 
+title: clean-cache
+type: text/vnd.tiddlywiki
+
+> 今天突然发现500G 的电脑竟然快满了
+
+* yay -Scc
+* yarn cache clean

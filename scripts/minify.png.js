@@ -5,7 +5,7 @@ const chalk = require('chalk');
 
 // just fit pngquant-bin
 
-const directoryPaths = ['files', 'img', 'tiddlers']; // 修改为你的图片目录路径，可以是一个数组
+const directoryPaths = ['files', 'img', 'tiddlers/binary']; // 修改为你的图片目录路径，可以是一个数组
 
 directoryPaths.forEach(directoryPath => {
   fs.readdir(directoryPath, function (err, files) {
