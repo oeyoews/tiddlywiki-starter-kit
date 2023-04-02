@@ -1,3 +1,10 @@
+## [3.184.8](https://github.com/oeyoews/neotw/compare/v3.184.7...v3.184.8) (2023-04-02)
+
+
+### Bug Fixes
+
+* copy readfile on stackblitzrc ([e589ee2](https://github.com/oeyoews/neotw/commit/e589ee2cf80184e895cc37dba2c2afcc7634f37a))
+
 ## [3.184.7](https://github.com/oeyoews/neotw/compare/v3.184.6...v3.184.7) (2023-04-01)
 
 
