@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+## NOTE need after build steps
+
 # Define variables
 TEMPLATE_DIR="tmp/neotw-template"
 PLUGINS_DIR="dist/plugins"
@@ -23,3 +25,10 @@ cp -r "$PLUGINS_DIR" "$THEMES_DIR" "$TEMPLATE_DIR/tiddlers"
 mv "$TEMPLATE_DIR" "$UPLOAD_DIR"
 
 echo "Template successfully created in '$UPLOAD_DIR'"
+
+### git repo
+cd upload && git init && git branch -M template
+# bind repo
+git remote add origin https://github.com/oeyoews/neotw
+# push
+git add . && git commit -m "init: upload template" && git push -uf origin template

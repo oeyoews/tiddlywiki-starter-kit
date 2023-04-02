@@ -52,7 +52,8 @@ jobs:
 
       - name: Build Neotw
         run: |
-          npm run build:oeyoews
+          npm run build:neotw
+          sh ./scripts/make-template.sh
           # npx zx ./scripts/make-template.mjs
           # sh ./scripts/make-template.sh
 

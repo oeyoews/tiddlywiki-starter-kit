@@ -1,0 +1,9 @@
+created: 20230402103541799
+creator: oeyoews
+modified: 20230402103617661
+modifier: oeyoews
+tags: 
+title: rename-branch-name
+type: text/vnd.tiddlywiki
+
+* git branch -M [branch-name]
