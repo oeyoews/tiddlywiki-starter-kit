@@ -1,3 +1,15 @@
+# [3.186.0](https://github.com/oeyoews/neotw/compare/v3.185.1...v3.186.0) (2023-04-02)
+
+
+### Bug Fixes
+
+* revert production because of pngquant-bin not support build on github ([4420563](https://github.com/oeyoews/neotw/commit/4420563c6178e2f1578eddf734e6d83c582e1961))
+
+
+### Features
+
+* with berry, just use yarn install ([21192d9](https://github.com/oeyoews/neotw/commit/21192d9ee3c072378e1cc6230d882de2edc3f5ec))
+
 ## [3.185.1](https://github.com/oeyoews/neotw/compare/v3.185.0...v3.185.1) (2023-04-02)
 
 
