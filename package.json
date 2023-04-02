@@ -18,7 +18,7 @@
     "pm2:start": "pm2 start ecosystem.config.js",
     "semantic-release": "semantic-release",
     "start": "node startup.js --listen",
-    "prepare": "husky install"
+    "postinstall": "husky install"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9",
