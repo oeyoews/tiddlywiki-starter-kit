@@ -1,8 +1,6 @@
 {
   "description": "neotw edition",
-  "languages": [
-    "zh-Hans"
-  ],
+  "languages": [],
   "plugins": [
     "tiddlywiki/tiddlyweb",
     "tiddlywiki/filesystem",
