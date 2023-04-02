@@ -1,7 +1,7 @@
 {
   "outputDirectory": "dist",
   "buildCommand": "yarn build:oeyoews",
-  "installCommand": "yarn workspaces focus --all --production",
+  "installCommand": "yarn install",
   "cleanUrls": true,
   "trailingSlash": false,
   "github": {
