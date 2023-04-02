@@ -1,3 +1,16 @@
+# [3.188.0](https://github.com/oeyoews/neotw/compare/v3.187.0...v3.188.0) (2023-04-02)
+
+
+### Bug Fixes
+
+* remove husky ([84c8c02](https://github.com/oeyoews/neotw/commit/84c8c023c76e7a913abcd0e7cc6c1e4ea1a9933e))
+
+
+### Features
+
+* add husky ([931303e](https://github.com/oeyoews/neotw/commit/931303e31c1e4cd2035ca6615e4dd93ea882b368))
+* add minify hooks ([95e4625](https://github.com/oeyoews/neotw/commit/95e4625cdc75a2bad1d8c89bc379c0cffafbe687))
+
 # [3.187.0](https://github.com/oeyoews/neotw/compare/v3.186.2...v3.187.0) (2023-04-02)
 
 
