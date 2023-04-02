@@ -3981,6 +3981,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="check-binary-with-ldd"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="clean-cache"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="codeberg"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="colorful-png"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -4084,6 +4086,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   [data-tiddler-title="mdn-search"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="mdx"] .tc-titlebar h2 { text-transform: capitalize; }
+
+  [data-tiddler-title="memory.png"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="memos-docker-compose"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -5114,7 +5118,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "243";
+  content: "245";
 }
 .user-panel-avatar {
   position: relative;
