@@ -36,8 +36,8 @@ jobs:
         run: |
           # yarn install --production
           yarn workspaces focus --all --production
+          sudo apt-get install libimagequant-dev
           npm install -g pngquant-bin && pngquant
-          # yarn install
 
       - name: Build Neotw
         run: |
