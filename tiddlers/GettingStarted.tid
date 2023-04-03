@@ -8,12 +8,14 @@ modifier: oeyoews
 page-cover: banner.png
 pin: yes
 publish: article
-tags: 
+tags:
 title: GettingStarted
 type: text/vnd.tiddlywiki
 
 {{neotw-badges}}
 
+<$list filter="[{$:/info/url/protocol}match[https:]]">
 {{$:/plugins/oeyoews/neotw/Readme}}
 
 {{$:/plugins/oeyoews/neotw/ui/download-neotw-empty}}
+</$list>
