@@ -35,7 +35,9 @@ jobs:
       - name: Install Dependency
         run: |
           # yarn install --production
-          yarn workspaces focus --all --production
+          # yarn workspaces focus --all --production
+          sudo apt-get install libpng-dev
+          yarn install
 
       - name: Build Neotw
         run: |
