@@ -3971,6 +3971,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="Cannot load from mysql.proc"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="carbon-screenshot"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="cat.svg"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="chatgpt-999"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -5120,7 +5122,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "246";
+  content: "247";
 }
 .user-panel-avatar {
   position: relative;
