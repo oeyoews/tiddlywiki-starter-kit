@@ -1,0 +1,9 @@
+created: 20230404051559959
+creator: oeyoews
+modified: 20230404051620140
+modifier: oeyoews
+tags: 
+title: use-exact
+type: text/vnd.tiddlywiki
+
+* yarn add --exact
