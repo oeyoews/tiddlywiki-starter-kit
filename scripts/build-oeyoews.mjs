@@ -38,12 +38,6 @@ await spinner('Building ...', async () => {
   // need dotenv to add library
   await $`npx ${bin} editions/neotw --build editions`;
 
-  // build static
-  await $`cp -r static-patch tiddlers/static-patch`;
-  await $`npx ${bin} --build static`;
-  // await $`npx tiddlywiki --output dist --render '[!is[system]]' '[addprefix[static/]addsuffix[.html]]'`;
-  // await $`npx tiddlywiki  --output dist --rendertiddler "$:/core/templates/static.template.css" "static/static.css"`;
-  await $`rm -rf tiddlers/static-patch`;
   // build index
   await $`npx ${bin} --build index`;
   // build readable name plugins
@@ -52,6 +46,15 @@ await spinner('Building ...', async () => {
   await $`npx ${bin} --build themes`;
   // build empty
   // await $`npx ${bin} --build neotw-empty`;
+
+  // build static
+  await $`cp -r static-patch tiddlers/static-patch`;
+  await $`npx ${bin} --build static`;
+  // await $`npx tiddlywiki --output dist --render '[!is[system]]' '[addprefix[static/]addsuffix[.html]]'`;
+  // await $`npx tiddlywiki  --output dist --rendertiddler "$:/core/templates/static.template.css" "static/static.css"`;
+  await $`rm -rf tiddlers/static-patch`;
+  // move static to root
+  await $`mv dist/static/* dist/`;
 
   // minify index.html
   await $`npx html-minifier-terser -c ./config/html-minifier-terser-config.json -o dist/main.html dist/main.html`;
