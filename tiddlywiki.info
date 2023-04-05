@@ -48,7 +48,7 @@
       "$:/StoryList",
       "--render",
       "$:/plugins/tiddlywiki/tiddlyweb/save/offline",
-      "index.html",
+      "main.html",
       "text/plain",
       "--savetiddler",
       "$:/favicon.ico",
@@ -105,15 +105,15 @@
       "--rendertiddlers",
       "[!is[system]]",
       "$:/core/templates/static.tiddler.html",
-      "static",
+      "",
       "text/plain",
       "--rendertiddler",
       "$:/core/templates/static.template.css",
-      "static/static.css",
+      "static.css",
       "text/plain",
       "--savetiddler",
       "$:/favicon.ico",
-      "static/favicon.ico"
+      "favicon.ico"
     ],
     "tiddlywikicore": [
       "--output",
