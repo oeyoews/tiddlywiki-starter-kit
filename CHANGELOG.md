@@ -1,3 +1,10 @@
+# [3.189.0](https://github.com/oeyoews/neotw/compare/v3.188.3...v3.189.0) (2023-04-05)
+
+
+### Features
+
+* encrypt main ([ca11a2f](https://github.com/oeyoews/neotw/commit/ca11a2fcd27646060bc459a3d7afd157656136ea))
+
 ## [3.188.3](https://github.com/oeyoews/neotw/compare/v3.188.2...v3.188.3) (2023-04-05)
 
 
