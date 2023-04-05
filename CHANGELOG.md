@@ -1,3 +1,10 @@
+## [3.188.3](https://github.com/oeyoews/neotw/compare/v3.188.2...v3.188.3) (2023-04-05)
+
+
+### Performance Improvements
+
+* use cp instead of mv static folder ([0975a52](https://github.com/oeyoews/neotw/commit/0975a52ae5578c3544e25431c494242fccd1c9f2))
+
 ## [3.188.2](https://github.com/oeyoews/neotw/compare/v3.188.1...v3.188.2) (2023-04-05)
 
 
