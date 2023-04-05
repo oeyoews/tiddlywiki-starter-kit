@@ -1,5 +1,5 @@
 title: $:/plugins/oeyoews/neotw/modules/darkmode/action
-tags: $:/tags/StartupAction/PostRender
+<!-- tags: $:/tags/StartupAction/PostRender -->
 
 <!-- dark mode -->
 <$list filter="[{$:/info/url/search}prefix[?mode=dark]]">

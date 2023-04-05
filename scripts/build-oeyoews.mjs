@@ -54,7 +54,7 @@ await spinner('Building ...', async () => {
   // await $`npx tiddlywiki  --output dist --rendertiddler "$:/core/templates/static.template.css" "static/static.css"`;
   await $`rm -rf tiddlers/static-patch`;
   // move static to root
-  await $`mv dist/static/* dist/`;
+  await $`cp dist/static/* dist/`;
 
   // minify index.html
   await $`npx html-minifier-terser -c ./config/html-minifier-terser-config.json -o dist/main.html dist/main.html`;
