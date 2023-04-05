@@ -4433,6 +4433,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="search-fast-with-gpt"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="seveal-framworks"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="shields.io-not-support-online-image"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="show-articles"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -5130,7 +5132,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "254";
+  content: "255";
 }
 .user-panel-avatar {
   position: relative;
@@ -6093,7 +6095,7 @@ li.CodeMirror-hint-active {
 }.tc-story-river {
   padding: 6px 0 !important;
   width: 100% !important;
-  max-width: 1250px !important;
+  max-width: 1133px !important;
   margin: 0 auto !important;
   margin-top: 34px !important;
 }div.tc-tiddler-frame {
@@ -6123,7 +6125,7 @@ li.CodeMirror-hint-active {
 }.nc-bar.nc-topbar {
   top: 0;
   background: #f4f4f4ee;
-  max-width: calc(1250px + 40px);
+  max-width: calc(1133px + 40px);
   padding: 10px 20px;
   margin: 0 auto;
 }.nc-bar.nc-bottombar {
