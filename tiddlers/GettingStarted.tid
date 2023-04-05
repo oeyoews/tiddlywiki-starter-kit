@@ -3,12 +3,12 @@ created: 20230117102714737
 creator: oeyoews
 giscus: yes
 icon: tom.png
-modified: 20230331032216517
+modified: 20230405130643191
 modifier: oeyoews
 page-cover: banner.png
 pin: yes
 publish: article
-tags:
+tags: 
 title: GettingStarted
 type: text/vnd.tiddlywiki
 
@@ -17,5 +17,6 @@ type: text/vnd.tiddlywiki
 <$list filter="[{$:/info/url/protocol}match[https:]]">
 {{$:/plugins/oeyoews/neotw/Readme}}
 
-{{$:/plugins/oeyoews/neotw/ui/download-neotw-empty}}
 </$list>
+
+{{$:/plugins/oeyoews/neotw/ui/download-neotw-empty}}
