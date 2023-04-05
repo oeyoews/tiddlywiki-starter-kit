@@ -1,3 +1,10 @@
+## [3.188.2](https://github.com/oeyoews/neotw/compare/v3.188.1...v3.188.2) (2023-04-05)
+
+
+### Performance Improvements
+
+* better build ([bc5a1dc](https://github.com/oeyoews/neotw/commit/bc5a1dc5e5f0b758cf973a639adebebe0eb33bcb))
+
 ## [3.188.1](https://github.com/oeyoews/neotw/compare/v3.188.0...v3.188.1) (2023-04-03)
 
 
