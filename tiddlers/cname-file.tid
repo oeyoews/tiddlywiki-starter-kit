@@ -1,0 +1,9 @@
+created: 20230406100140026
+creator: oeyoews
+modified: 20230406100201430
+modifier: oeyoews
+tags: 
+title: cname-file
+type: text/vnd.tiddlywiki
+
+* not all dns provider support cname file, such as aliyun
