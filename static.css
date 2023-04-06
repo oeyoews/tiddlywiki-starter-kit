@@ -4437,6 +4437,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="seveal-framworks"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="several-render-method"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="shields.io-not-support-online-image"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="show-articles"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -5134,7 +5136,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "256";
+  content: "257";
 }
 .user-panel-avatar {
   position: relative;
