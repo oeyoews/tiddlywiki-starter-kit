@@ -3953,6 +3953,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="banner.png"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="beta-nextjs"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="bing-everyday-seven"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="bing-gallary"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -3986,6 +3988,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   [data-tiddler-title="check-binary-with-ldd"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="clean-cache"] .tc-titlebar h2 { text-transform: capitalize; }
+
+  [data-tiddler-title="cname-file"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="codeberg"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -5136,7 +5140,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "257";
+  content: "259";
 }
 .user-panel-avatar {
   position: relative;
