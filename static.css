@@ -4077,6 +4077,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="learn-faster-how"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="link-icons"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="list-all-empty-folders"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="list-tree-style"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -5132,7 +5134,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "255";
+  content: "256";
 }
 .user-panel-avatar {
   position: relative;
