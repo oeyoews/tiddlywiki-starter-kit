@@ -1,0 +1,29 @@
+created: 20230407020820997
+creator: oeyoews
+modified: 20230407021750733
+modifier: oeyoews
+tags: 
+title: color-text
+type: text/vnd.tiddlywiki
+
+!! Wikitext
+
+@@.text-indigo-500
+@@.underline
+@@.decoration-wavy
+@@.decoration-rose-500
+@@.font-bold
+This is a demo 
+@@
+
+!! Html
+
+<div class="text-indigo-500
+underline
+decoration-wavy
+decoration-indigo-500 indent-4
+" >
+
+<<.lorem>>
+
+</div>
