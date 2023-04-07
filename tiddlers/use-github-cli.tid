@@ -1,0 +1,11 @@
+created: 20230407045459273
+creator: oeyoews
+modified: 20230407045534451
+modifier: oeyoews
+tags: 
+title: use-github-cli
+type: text/markdown
+
+    gh repo clone oeyoews/oeyoews demo-oeyoews -- --depth 1
+		
+		gh auth login
