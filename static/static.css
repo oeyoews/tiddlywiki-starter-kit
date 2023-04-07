@@ -4513,7 +4513,11 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="use-github-actions-on-local"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="use-github-cli"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="use-latest-tiddlywiki"] .tc-titlebar h2 { text-transform: capitalize; }
+
+  [data-tiddler-title="use-microsoft-drop"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="use-nvm-switch-node-version"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -5142,7 +5146,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "260";
+  content: "262";
 }
 .user-panel-avatar {
   position: relative;
