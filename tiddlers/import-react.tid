@@ -1,0 +1,9 @@
+created: 20230407065541846
+creator: oeyoews
+modified: 20230407065619470
+modifier: oeyoews
+tags: 
+title: import-react
+type: text/vnd.tiddlywiki
+
+* if you not use jsx, React not necessary imported if you dont use it
