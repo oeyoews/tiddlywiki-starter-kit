@@ -1,0 +1,13 @@
+created: 20230408131023896
+creator: oeyoews
+modified: 20230408131100445
+modifier: oeyoews
+tags: 
+title: neovim-0.9
+type: text/vnd.tiddlywiki
+
+you should update tree-sitter to latest, if you got this 
+
+```
+nvim: symbol lookup error: nvim: undefined symbol: ts_tree_included_ranges
+```
