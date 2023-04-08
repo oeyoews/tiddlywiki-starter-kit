@@ -4001,6 +4001,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="custom-tag-template"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="cwebp"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="deepl-tw-bug"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="delete-timestamp"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -4378,6 +4380,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   [data-tiddler-title="oeyoews"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="oeyoews.jpg"] .tc-titlebar h2 { text-transform: capitalize; }
+
+  [data-tiddler-title="oeyoews.webp"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="openai-api-about-project"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -5158,7 +5162,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "268";
+  content: "270";
 }
 .user-panel-avatar {
   position: relative;
