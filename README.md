@@ -1,7 +1,7 @@
 <center>
 <figure>
 
-![014](https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/014.png 'showcase')
+![014](https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/014.webp 'showcase')
 
 <figcaption>
 A modern style and elegant notebook based on Tiddlywiki by oeyoews
