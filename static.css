@@ -4073,6 +4073,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="icon-adguard"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="image-example"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="import-react"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="index"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -4358,6 +4360,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   [data-tiddler-title="neotw/tool/language"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="neotw/twitter-button"] .tc-titlebar h2 { text-transform: capitalize; }
+
+  [data-tiddler-title="neovim-0.9"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="New Tiddler"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -5162,7 +5166,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "270";
+  content: "272";
 }
 .user-panel-avatar {
   position: relative;
