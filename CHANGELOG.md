@@ -1,3 +1,10 @@
+# [3.192.0](https://github.com/oeyoews/neotw/compare/v3.191.0...v3.192.0) (2023-04-08)
+
+
+### Features
+
+* try to use webp image format ([8acd3b5](https://github.com/oeyoews/neotw/commit/8acd3b5b99842ba1c97ae944e20b5a07fa70ba62))
+
 # [3.191.0](https://github.com/oeyoews/neotw/compare/v3.190.0...v3.191.0) (2023-04-07)
 
 
