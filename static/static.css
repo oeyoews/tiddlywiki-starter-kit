@@ -4942,7 +4942,7 @@ footer {
 
 
 [data-tag-title=\$\:\/tags\/Stylesheet] .tc-tag-label:after {
-  content: " 66";
+  content: " 67";
 }
 
 
@@ -5180,7 +5180,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "279";
+  content: "278";
 }
 .user-panel-avatar {
   position: relative;
@@ -6624,7 +6624,21 @@ button {
 }.tc-modal-backdrop {
   cursor: pointer;
 }
-details > summary {
+.download-neotw-empty {
+  display: inline-block;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.download-neotw-empty:hover {
+  background: linear-gradient(to right, #12c2e9, #ffafbd, #c9ffbf);
+}details > summary {
    text-indent: 0em;
 }
 .list-tree, .list-tree ul, .list-tree li { position: relative; }
