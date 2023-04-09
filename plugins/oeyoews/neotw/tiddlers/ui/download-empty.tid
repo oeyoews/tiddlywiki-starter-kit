@@ -2,18 +2,21 @@ title: $:/plugins/oeyoews/neotw/ui/download-neotw-empty
 
 <div class="flex justify-center">
   <button
-    class="duration-400 rounded bg-transparent bg-gradient-to-r from-green-400 to-blue-500 p-2 px-4 text-white transition hover:scale-110 shadow-lg ease-in-out"
+    class="duration-400 rounded bg-transparent bg-gradient-to-r from-green-400 to-blue-500 text-base text-white transition shadow-lg ease-in-out download-neotw-empty"
   >
     <a
       target="_blank"
       href="https://neotw.oeyoewl.top/editions/index.html"
+      style="color: white"
       class="text-white"
     >
       Online Preview (empty)
     </a>
   </button>
+  <span>
   <span class="relative flex h-2 w-2 -ml-1 -mt-1">
   <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
   <span class="relative inline-flex rounded-full h-2 w-2 bg-sky-500"></span>
+  </span>
 </span>
 </div>
