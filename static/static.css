@@ -3933,6 +3933,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="2023-02-28"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="about-gpt"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="about-TIDDLYWIKI_PLUGIN_PATH-not-working"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="about-unsplash-random"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -4571,6 +4573,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="太微-ChatGPT-十问"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="心智模型"] .tc-titlebar h2 { text-transform: capitalize; }
+
 .tc-tiddler-controls  {display: none !important;}
 
 .nc-topbar {
@@ -5168,7 +5172,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "273";
+  content: "275";
 }
 .user-panel-avatar {
   position: relative;
