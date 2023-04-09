@@ -3935,6 +3935,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="about-TIDDLYWIKI_PLUGIN_PATH-not-working"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="about-unsplash-random"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="add-animation-for-layout"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="add-copyright-footer"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -5166,7 +5168,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "272";
+  content: "273";
 }
 .user-panel-avatar {
   position: relative;
