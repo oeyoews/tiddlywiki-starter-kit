@@ -24,3 +24,17 @@ title: $:/plugins/oeyoews/tiddlywiki-tailwindcss-plus/readme
 !! Tailwindcss All In One
 
 * support official plugins
+
+!! Customize
+
+> write your class with @apply
+
+```wikitext
+<style type="text/tailwindcss">
+.btn {
+ 	@apply font-bold underline border-none
+}
+</style>
+
+<button class="btn"> demo </button>
+```
