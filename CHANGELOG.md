@@ -1,3 +1,10 @@
+# [3.195.0](https://github.com/oeyoews/neotw/compare/v3.194.0...v3.195.0) (2023-04-09)
+
+
+### Features
+
+* add prose to EditTemplate preview output ([d660a0e](https://github.com/oeyoews/neotw/commit/d660a0ef5ce8d4ce5cb175930c6844eb75a3d394))
+
 # [3.194.0](https://github.com/oeyoews/neotw/compare/v3.193.0...v3.194.0) (2023-04-09)
 
 
