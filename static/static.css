@@ -4007,6 +4007,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="cwebp"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="dark-macro-about-tailwindcss"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="deepl-tw-bug"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="delete-timestamp"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -4064,6 +4066,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   [data-tiddler-title="gnome-extensions"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="google-chrome-bug"] .tc-titlebar h2 { text-transform: capitalize; }
+
+  [data-tiddler-title="google-updated"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="gptcommit"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -4525,6 +4529,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="use-berry"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="use-dark-reader"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="use-deepl-extend-on-chrome"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="use-exact"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -4560,6 +4566,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   [data-tiddler-title="web3-xlog"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="webflow-university"] .tc-titlebar h2 { text-transform: capitalize; }
+
+  [data-tiddler-title="webgpu"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="xiaofamao"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -5172,7 +5180,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "275";
+  content: "279";
 }
 .user-panel-avatar {
   position: relative;
