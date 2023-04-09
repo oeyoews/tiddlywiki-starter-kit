@@ -13,6 +13,25 @@
 
 > [online view](https://oeyoews.github.io/neotw)
 
+### Just use tailwindcss
+
+```wikitext
+tags: $:/tags/RawMarkup
+title: tailwindcss
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+    tailwind.config = {
+      corePlugins: {
+         preflight: false,
+      },
+    }
+</script>
+```
+
+* if you just want to use tailwindcss no tailwindcss plugin and components, this method is connvent, it just have 348kb
+
 ## Usage
 
 > Just use tailwindcss as usual

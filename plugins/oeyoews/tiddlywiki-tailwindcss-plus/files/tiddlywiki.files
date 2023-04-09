@@ -1,0 +1,13 @@
+{
+  "tiddlers": [
+    {
+      "file": "tailwindcss.min.js",
+      "fields": {
+        "title": "tailwindcss.min.js",
+        "module-type": "library",
+        "type": "application/javascript",
+        "hide-body": "yes"
+      }
+    }
+  ]
+}
