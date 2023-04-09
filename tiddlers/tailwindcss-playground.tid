@@ -1,6 +1,6 @@
 created: 20230325065909467
 creator: oeyoews
-modified: 20230326125614428
+modified: 20230409121856935
 modifier: oeyoews
 tags: 
 title: tailwindcss-playground
@@ -14,6 +14,6 @@ type: text/vnd.tiddlywiki
 
 </div>
 
-* <span class="font-bold capitalize text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-500 to-yellow-500">
+* <span class="capitalize text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-500 to-yellow-500">
 dmeo dmeo dmeo dmeo dmoe dmeo 
 </span>
