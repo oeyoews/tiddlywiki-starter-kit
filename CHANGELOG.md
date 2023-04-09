@@ -1,3 +1,10 @@
+# [3.193.0](https://github.com/oeyoews/neotw/compare/v3.192.0...v3.193.0) (2023-04-09)
+
+
+### Features
+
+* add tiddlywiki-tailwindcss-plus ([14be493](https://github.com/oeyoews/neotw/commit/14be493b097b6f0f86c55f1bbb5507e9aa25b57b))
+
 # [3.192.0](https://github.com/oeyoews/neotw/compare/v3.191.0...v3.192.0) (2023-04-08)
 
 
