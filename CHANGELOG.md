@@ -1,3 +1,10 @@
+# [3.194.0](https://github.com/oeyoews/neotw/compare/v3.193.0...v3.194.0) (2023-04-09)
+
+
+### Features
+
+* migrate to tailwindcss-plus ([b09e00d](https://github.com/oeyoews/neotw/commit/b09e00df514d0bcbf6cf22be68b84bb06724e309))
+
 # [3.193.0](https://github.com/oeyoews/neotw/compare/v3.192.0...v3.193.0) (2023-04-09)
 
 
