@@ -1,0 +1,18 @@
+created: 20230409114254827
+creator: oeyoews
+modified: 20230409115613358
+modifier: oeyoews
+tags: 
+title: dark-macro-about-tailwindcss
+type: text/vnd.tiddlywiki
+
+\define code(mode)
+<html class=$mode$>
+<div class="bg-slate-200 p-2 rounded dark:bg-black dark:text-white ">
+demo
+</div>
+</html>
+\end
+
+<<code dark>>
+<<code>>
