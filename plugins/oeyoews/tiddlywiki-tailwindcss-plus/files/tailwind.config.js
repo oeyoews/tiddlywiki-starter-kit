@@ -1,10 +1,10 @@
-const tailwindConfig = {
+module.exports = {
   // prefix: 'tw-',
-  content: [
-    // './plugins/oeyoews/**/*.{html,tid,md,js}',
-    // './tiddlers/**/*!(StoryList).{js,tid,md}',
-    // './tiddlers/**/*!(($%2FStoryList)).tid',
-  ],
+  // content: [
+  //   './plugins/oeyoews/**/*.{html,tid,md,js}',
+  //   './tiddlers/**/*!(StoryList).{js,tid,md}',
+  //   './tiddlers/**/*!(($%2FStoryList)).tid',
+  // ],
   theme: {
     extend: {
       typography: ({ theme }) => ({
@@ -33,17 +33,13 @@ const tailwindConfig = {
     },
   },
   darkMode: 'class',
-  // darkMode: ['class', '[data-mode="dark"]'],
   variants: {
     extend: {
       appearance: ['hover', 'focus'],
     },
   },
-  // plugins: [require('@tailwindcss/typography')],
   important: true,
   corePlugins: {
     preflight: false,
   },
 };
-
-module.exports = tailwindConfig;
