@@ -44,8 +44,6 @@
       "--verbose",
       "--output",
       "dist",
-      "--password",
-      "oeyoews",
       "--deletetiddlers",
       "$:/StoryList",
       "--render",
