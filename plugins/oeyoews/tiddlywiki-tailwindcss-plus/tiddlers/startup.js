@@ -6,14 +6,17 @@ hide-body: yes
 
 \*/
 
-'use strict';
-module.exports = {
-  ...module.exports,
-  name: 'tailwindcss-startup-hook',
-  platforms: ['browser'],
-  after: ['load-modules'],
-  synchronous: !0,
-  startup: () => {
+(function () {
+  /*jslint node: true, browser: true */
+  /*global $tw: false */
+  'use strict';
+
+  exports.name = 'tailwindcss-startup-hook';
+  exports.platforms = ['browser'];
+  exports.after = ['load-modules'];
+  exports.synchronous = true;
+
+  exports.startup = function () {
     try {
       globalThis.tailwindcss = require('tailwindcss.min.js');
       tailwind.config = {
@@ -53,5 +56,5 @@ module.exports = {
     } catch (r) {
       console.error(r);
     }
-  },
-};
+  };
+})();
