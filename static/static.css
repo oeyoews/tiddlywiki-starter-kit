@@ -4491,6 +4491,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="show-your-mirror-branch"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="simple-encrypt-tiddlywiki-file"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="soft-link-for-path"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="some tw website examples"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -5206,7 +5208,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "291";
+  content: "292";
 }
 .user-panel-avatar {
   position: relative;
