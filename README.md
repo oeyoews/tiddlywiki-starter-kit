@@ -18,7 +18,7 @@ A modern style and elegant notebook based on Tiddlywiki by oeyoews
 
 ## Features :sparkles:
 
-<ul role="list" class="marker:text-sky-400 list-disc pl-5 space-y-3 text-slate-400">
+<li role="list" class="marker:text-sky-400 list-none pl-5 space-y-3">
 
 - :newspaper: Support Atome Feed(Rss)
 - :bust_in_silhouette: Support gravatar
@@ -36,7 +36,7 @@ A modern style and elegant notebook based on Tiddlywiki by oeyoews
 - :memo: Automatically add spaces between Chinese and English for better typography
 - :label: Support title aliases
 
-</ui>
+</li>
 
 ## Playground(stackblitz)
 
