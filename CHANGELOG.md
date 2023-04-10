@@ -1,3 +1,15 @@
+# [3.196.0](https://github.com/oeyoews/neotw/compare/v3.195.1...v3.196.0) (2023-04-10)
+
+
+### Features
+
+* split config to tailwind.config.js ([cb05f5c](https://github.com/oeyoews/neotw/commit/cb05f5c9ebfd7b48510fab089e948886f3d6fc67))
+
+
+### Performance Improvements
+
+* split tailwindcss config ([1d1bef3](https://github.com/oeyoews/neotw/commit/1d1bef384538a479f96b44a31ccff46fc1da6d83))
+
 ## [3.195.1](https://github.com/oeyoews/neotw/compare/v3.195.0...v3.195.1) (2023-04-10)
 
 # [3.195.0](https://github.com/oeyoews/neotw/compare/v3.194.0...v3.195.0) (2023-04-09)
