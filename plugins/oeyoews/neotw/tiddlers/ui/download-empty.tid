@@ -1,6 +1,6 @@
 title: $:/plugins/oeyoews/neotw/ui/download-neotw-empty
 
-<div class="flex justify-center mt-2">
+<div class="flex justify-center my-2">
   <button
     class="duration-400 rounded bg-transparent bg-gradient-to-r from-green-400 to-blue-500 text-base text-white transition shadow-lg ease-in-out download-neotw-empty"
   >
