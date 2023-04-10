@@ -4021,6 +4021,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="eacces"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="emotion-library"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="english-widget-example"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="Everything is possible with GPT"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -5186,7 +5188,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "281";
+  content: "282";
 }
 .user-panel-avatar {
   position: relative;
