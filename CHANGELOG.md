@@ -1,3 +1,10 @@
+# [3.197.0](https://github.com/oeyoews/neotw/compare/v3.196.0...v3.197.0) (2023-04-10)
+
+
+### Features
+
+* add placeholder for title template ([239e816](https://github.com/oeyoews/neotw/commit/239e8163ac6e32262ffd1ecdd60a362d4b744767))
+
 # [3.196.0](https://github.com/oeyoews/neotw/compare/v3.195.1...v3.196.0) (2023-04-10)
 
 
