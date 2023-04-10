@@ -23,6 +23,8 @@ title: $:/plugins/oeyoews/tiddlywiki-tailwindcss-plus/readme
 
 !! Tailwindcss All In One
 
+> if you dont want to install postcss and nodejs, use cdn is a better method, it have 400kb about with offical typrography plugin
+
 * support official plugins(default with typrograph)
 
 !! Customize
