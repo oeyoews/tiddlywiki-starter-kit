@@ -1,3 +1,10 @@
+# [3.198.0](https://github.com/oeyoews/neotw/compare/v3.197.0...v3.198.0) (2023-04-10)
+
+
+### Features
+
+* use Jermolene/TiddlyWiki5 directly ([27908ed](https://github.com/oeyoews/neotw/commit/27908ed24b3035e6175396e8168658f92cdc7b58))
+
 # [3.197.0](https://github.com/oeyoews/neotw/compare/v3.196.0...v3.197.0) (2023-04-10)
 
 
