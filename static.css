@@ -4079,6 +4079,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="heart"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="heart-joh"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="hi-oeyoews"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="hmr"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -4409,6 +4411,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="pang-test"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="password-on-tiddlywiki.info"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="personal-docs"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="place-hold.it"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -4492,6 +4496,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   [data-tiddler-title="some tw website examples"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="some-tools"] .tc-titlebar h2 { text-transform: capitalize; }
+
+  [data-tiddler-title="sounds-mp3"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="stop-parse-options"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -5200,7 +5206,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "288";
+  content: "291";
 }
 .user-panel-avatar {
   position: relative;
