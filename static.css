@@ -4395,8 +4395,6 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="notes-app"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="oeyoews"] .tc-titlebar h2 { text-transform: capitalize; }
-
   [data-tiddler-title="oeyoews.jpg"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="oeyoews.webp"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -4580,6 +4578,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   [data-tiddler-title="vidline"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="virtual-network"] .tc-titlebar h2 { text-transform: capitalize; }
+
+  [data-tiddler-title="vite-vue"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="web3-xlog"] .tc-titlebar h2 { text-transform: capitalize; }
 
