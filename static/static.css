@@ -3969,6 +3969,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="bing-paper-websites"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="brotli"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="build external image"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="built-blog-with-react"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -5198,7 +5200,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "287";
+  content: "288";
 }
 .user-panel-avatar {
   position: relative;
