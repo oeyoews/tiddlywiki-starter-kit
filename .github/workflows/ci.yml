@@ -16,15 +16,12 @@ concurrency:
   group: release-ci-group
   cancel-in-progress: false
 
-# 设置 GITHUB_TOKEN 的权限，以允许部署到 GitHub Pages。
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 jobs:
   release-and-page:
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      contents: write
     steps:
       - uses: actions/checkout@v3
 
