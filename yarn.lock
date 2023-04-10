@@ -4747,7 +4747,7 @@ __metadata:
     signale: ^1.4.0
     tailwindcss: ^3.3.1
     terser: ^5.16.6
-    tiddlywiki: "github:oeyoews/TiddlyWiki5#e0ff54a04ed0427d05739ecff07168f6fc86ba6d"
+    tiddlywiki: "github:Jermolene/TiddlyWiki5"
     zx: ^7.2.0
   languageName: unknown
   linkType: soft
@@ -7434,12 +7434,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tiddlywiki@github:oeyoews/TiddlyWiki5#e0ff54a04ed0427d05739ecff07168f6fc86ba6d":
+"tiddlywiki@github:Jermolene/TiddlyWiki5":
   version: 5.2.8-prerelease
-  resolution: "tiddlywiki@https://github.com/oeyoews/TiddlyWiki5.git#commit=e0ff54a04ed0427d05739ecff07168f6fc86ba6d"
+  resolution: "tiddlywiki@https://github.com/Jermolene/TiddlyWiki5.git#commit=36d766081d64844cc35407283412c4d5efc4152f"
   bin:
     tiddlywiki: ./tiddlywiki.js
-  checksum: f595238a6b7dd554e307c2ab54ea53187dda020ae1018731ec53518ec4e4a9747e863fa7fba891246c1fba891cd2e1dc732c341811f938d9bc261bd3653bb9d2
+  checksum: 1494c549c271fbd89c9cce21b42b2052b877fe1238a141b4bd5acf4705391042270eec5c0cd6e2d99fa948861cd0e2b58d1615fc518528750267f8b8a838c65b
   languageName: node
   linkType: hard
 
