@@ -55,4 +55,8 @@ title: $:/plugins/oeyoews/tiddlywiki-tailwindcss-plus/readme
 
 * 总体而言，在 TiddlyWiki 中仅使用 Tailwind CSS 可以简化您的样式设置过程，使您的样式更加一致，并减少您需要编写和维护的 CSS 数量。
 
+!! TODO
+
+* use preset config
+
 </div>
