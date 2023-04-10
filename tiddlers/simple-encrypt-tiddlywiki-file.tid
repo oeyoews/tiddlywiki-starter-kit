@@ -1,0 +1,9 @@
+created: 20230410125509639
+creator: oeyoews
+modified: 20230410125734831
+modifier: oeyoews
+tags: 
+title: simple-encrypt-tiddlywiki-file
+type: text/vnd.tiddlywiki
+
+if use --password on tiddlywiki, this file will be more larger, about more 2M, so if you just want to add password on open website simple, not encrypt all website(note: if your html download, this content will be check by editor to open this html file)
