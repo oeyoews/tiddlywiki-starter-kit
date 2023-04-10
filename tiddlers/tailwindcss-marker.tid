@@ -1,0 +1,13 @@
+created: 20230410062411733
+creator: oeyoews
+modified: 20230410062502121
+modifier: oeyoews
+tags: 
+title: tailwindcss-marker
+type: text/vnd.tiddlywiki
+
+<ul role="list" class="marker:text-sky-400 list-disc pl-5 space-y-3 text-slate-400">
+  <li>5 cups chopped Porcini mushrooms</li>
+  <li>1/2 cup of olive oil</li>
+  <li>3lb of celery</li>
+</ul>
