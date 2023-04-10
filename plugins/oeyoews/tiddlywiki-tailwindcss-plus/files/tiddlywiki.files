@@ -1,6 +1,14 @@
 {
   "tiddlers": [
     {
+      "file": "tailwind.config.js",
+      "fields": {
+        "title": "tailwind.config.js",
+        "module-type": "library",
+        "type": "application/javascript"
+      }
+    },
+    {
       "file": "tailwindcss.typography.min.js",
       "fields": {
         "title": "tailwindcss.min.js",
