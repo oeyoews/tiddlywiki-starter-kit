@@ -1,3 +1,10 @@
+## [3.198.1](https://github.com/oeyoews/neotw/compare/v3.198.0...v3.198.1) (2023-04-10)
+
+
+### Bug Fixes
+
+* add gravatar title and try to use modal ([e149004](https://github.com/oeyoews/neotw/commit/e14900464db32a7173bc36ecf0b7ad44adbd103c))
+
 # [3.198.0](https://github.com/oeyoews/neotw/compare/v3.197.0...v3.198.0) (2023-04-10)
 
 
