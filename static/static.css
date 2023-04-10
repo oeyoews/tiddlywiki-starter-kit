@@ -4507,6 +4507,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="tailwind-playground-on-tiddlywiki"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="tailwindcss-marker"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="tailwindcss-playground"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="tailwindcss-record"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -5196,7 +5198,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "286";
+  content: "287";
 }
 .user-panel-avatar {
   position: relative;
