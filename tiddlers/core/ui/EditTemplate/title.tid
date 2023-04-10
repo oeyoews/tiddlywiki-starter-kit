@@ -1,13 +1,13 @@
 created: 20230330071028521
 creator: oeyoews
-modified: 20230330072357014
+modified: 20230410062224454
 modifier: oeyoews
 tags: $:/tags/EditTemplate
 title: $:/core/ui/EditTemplate/title
 type: text/vnd.tiddlywiki
 
 \whitespace trim
-<$edit-text field="draft.title" class="tc-titlebar tc-edit-texteditor bg-gray-200 outline-none" focus="true" tabindex={{$:/config/EditTabIndex}} placeholder="title here"/>
+<$edit-text field="draft.title" class="tc-titlebar tc-edit-texteditor bg-gray-200 outline-none placeholder:text-slate-400" focus="true" tabindex={{$:/config/EditTabIndex}} placeholder="title here"/>
 
 <$reveal state="!!draft.title" type="nomatch" text={{!!draft.of}} tag="div">
 
