@@ -29,7 +29,7 @@ Hitokoto widget
       const refreshHitokoto = this.getAttribute('refreshHitokoto', '');
       const enableClick = this.getAttribute('enableClick', 'yes');
 
-      const hitokotoSpan = this.document.createElement('center');
+      const hitokotoSpan = this.document.createElement('spin');
       hitokotoSpan.className = 'hitokoto';
       parent.insertBefore(hitokotoSpan, nextSibling);
       this.domNodes.push(hitokotoSpan);
