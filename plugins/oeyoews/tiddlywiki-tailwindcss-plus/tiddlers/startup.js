@@ -17,6 +17,7 @@ hide-body: yes
   exports.synchronous = true;
 
   // tailwindConfig
+  // TODO add option for user
   var tailwindConfig = {
     theme: {
       extend: {
@@ -50,17 +51,14 @@ hide-body: yes
     },
     darkMode: 'class',
     important: true,
+    // dont modify this corePlugins content
     corePlugins: {
       preflight: false,
     },
   };
 
   exports.startup = function () {
-    try {
-      globalThis.tailwindcss = require('tailwindcss.min.js');
-      tailwind.config = tailwindConfig;
-    } catch (r) {
-      console.error(r);
-    }
+    tailwind = require('tailwindcss.min.js');
+    tailwind.config = tailwindConfig;
   };
 })();
