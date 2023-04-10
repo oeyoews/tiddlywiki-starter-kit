@@ -1,3 +1,4 @@
+title: $:/plugins/oeyoews/tiddlywiki-gravatar/ui/gravatar
 tags: $:/tags/PageControls
 list-before: $:/core/ui/Buttons/more-page-actions
 description: gravatar
@@ -8,7 +9,8 @@ list-after:
 <$button message="gravatar" tooltip="Gravatar" aria-label="gravatar" class=<<tv-config-toolbar-class>>>
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
 <!-- todo -->
-<$action-navigate $to="oeyoews"/>
+<!-- <$action-navigate $to="oeyoews"/> -->
+<$action-sendmessage $message="tm-modal" $param="oeyoews"/>
 <div class="hover:scale-110 transition duration-200 ease-in-out inline-flex">
 <$avatar width=24/>
 </div>
