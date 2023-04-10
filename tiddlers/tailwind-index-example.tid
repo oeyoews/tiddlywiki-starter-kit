@@ -1,0 +1,45 @@
+created: 20230410024019662
+creator: oeyoews
+modified: 20230410024331659
+modifier: oeyoews
+tags: 
+title: tailwind-index-example
+type: text/vnd.tiddlywiki
+
+<div class="relative mx-auto max-w-5xl">
+  <span class="font-bold">
+    Rapidly build modern websites without ever leaving your HTML.
+  </span>
+  <p
+    class="mx-auto max-w-3xl text-center text-lg text-slate-600 dark:text-slate-400"
+  >
+    A utility-first CSS framework packed with classes like flex, pt-4,
+    text-center and rotate-90 that can be composed to build any design, directly
+    in your markup.
+  </p>
+</div>
+
+<figure class="rounded-xl bg-slate-100 p-8 dark:bg-slate-800 md:flex md:p-0">
+  <img
+    class="mx-auto h-16 w-24 rounded-full md:h-auto md:w-48 md:rounded-md"
+    src="https://tailwindcss.com/_next/static/media/sarah-dayan.a620c98f.jpg"
+    alt=""
+    width="384"
+    height="512"
+  />
+  <div class="space-y-4 pt-6 text-center md:p-8 md:text-left">
+    <blockquote>
+      <p class="text-lg font-medium">
+        Tailwind CSS is the only framework that I've seen scale on large teams.
+        It’s easy to customize, adapts to any design, and the build size is
+        tiny.
+      </p>
+    </blockquote>
+    <figcaption class="font-medium">
+      <div class="text-sky-500 dark:text-sky-400">Sarah Dayan</div>
+      <div class="text-slate-700 dark:text-slate-500">
+        Staff Engineer, Algolia
+      </div>
+    </figcaption>
+  </div>
+</figure>
