@@ -29,8 +29,9 @@ Hitokoto widget
       const refreshHitokoto = this.getAttribute('refreshHitokoto', '');
       const enableClick = this.getAttribute('enableClick', 'yes');
 
-      const hitokotoSpan = this.document.createElement('spin');
-      hitokotoSpan.className = 'hitokoto';
+      const hitokotoSpan = this.document.createElement('span');
+      hitokotoSpan.className =
+        'text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-500 to-yellow-500 cursor-pointer text-sm';
       parent.insertBefore(hitokotoSpan, nextSibling);
       this.domNodes.push(hitokotoSpan);
 
