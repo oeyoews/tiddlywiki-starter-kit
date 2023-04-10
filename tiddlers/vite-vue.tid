@@ -1,0 +1,9 @@
+created: 20230410081825540
+creator: oeyoews
+modified: 20230410081852264
+modifier: oeyoews
+tags: 
+title: vite-vue
+type: text/vnd.tiddlywiki
+
+if tailwindcss not work on dev, dont add postcss.config.js for your project
