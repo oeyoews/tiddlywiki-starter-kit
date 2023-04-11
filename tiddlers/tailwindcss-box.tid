@@ -1,0 +1,29 @@
+created: 20230411082428029
+creator: oeyoews
+modified: 20230411083140804
+modifier: oeyoews
+tags: tailwind
+title: tailwindcss-box
+type: text/vnd.tiddlywiki
+
+<div class="font-mono">
+<div class="bg-violet-200 rounded p-2 m-1">
+<<.lorem>>
+</div>
+
+<div class="bg-rose-200 rounded p-2 m-1">
+<<.lorem>>
+</div>
+
+<div class="bg-slate-200 rounded p-2 m-1">
+<<.lorem>>
+</div>
+
+<div class="bg-lime-100 p-2 rounded m-1">
+<<.lorem>>
+</div>
+
+<div class="bg-fuchsia-200 p-2 rounded m-1">
+<<.lorem>>
+</div>
+</div>
