@@ -1,3 +1,10 @@
+## [3.200.1](https://github.com/oeyoews/neotw/compare/v3.200.0...v3.200.1) (2023-04-11)
+
+
+### Bug Fixes
+
+* remove toggle darkmode automatically ([424fc04](https://github.com/oeyoews/neotw/commit/424fc0443d8f5408c2c6ec53c0fafd73b5fd77ef))
+
 # [3.200.0](https://github.com/oeyoews/neotw/compare/v3.199.1...v3.200.0) (2023-04-11)
 
 
