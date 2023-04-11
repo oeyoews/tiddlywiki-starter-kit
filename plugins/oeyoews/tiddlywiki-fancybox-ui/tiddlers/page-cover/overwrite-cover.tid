@@ -6,6 +6,6 @@ tags: $:/tags/StartupAction
 <$action-setfield $tiddler="""$tid$""" $field="overwrite" $value="yes"/>
 \end
 
-<$list filter="[[$:/plugins/Gk0Wk/notionpage-covericon]field:plugin-type[plugin]]">
+<$list filter="[[$:/plugins/Gk0Wk/notionpage-covericon]!is[missing]]">
   <<set-shadows "$:/plugins/Gk0Wk/notionpage-covericon/body">>
 </$list>
