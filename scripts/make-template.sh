@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+yarn build:neotw
+
 ## NOTE need after build steps
 
 # Define variables
@@ -32,3 +34,5 @@ cd upload && git init && git branch -M template
 git remote add origin https://github.com/oeyoews/neotw
 # push
 git add . && git commit -m "init: upload template" && git push -uf origin template
+
+git push https://github.com/oeyoews/tiddlywiki-neotw-starter-kit.git -f
