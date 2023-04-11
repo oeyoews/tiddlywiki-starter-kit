@@ -1,3 +1,10 @@
+## [3.199.1](https://github.com/oeyoews/neotw/compare/v3.199.0...v3.199.1) (2023-04-11)
+
+
+### Bug Fixes
+
+* use mono font family for vim cursor with so thin before codemirror5 ([490e9bb](https://github.com/oeyoews/neotw/commit/490e9bbb00d31af7fd930d0b0db69c69ba335992))
+
 # [3.199.0](https://github.com/oeyoews/neotw/compare/v3.198.3...v3.199.0) (2023-04-11)
 
 
