@@ -11,3 +11,5 @@ Overwrite codemirror-keymap-vim by [[@oeyoews|https://github.com/oeyoews]]
 
 * support `jk` mapping
 * support H L replace 0 $
+
+<!-- * https://github.com/codemirror/codemirror5/pull/6765 -->
