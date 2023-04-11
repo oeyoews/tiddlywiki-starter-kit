@@ -4378,6 +4378,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="neovim-0.9"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="nest.js"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="network-school"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="New Tiddler"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -5225,7 +5227,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "296";
+  content: "297";
 }
 .user-panel-avatar {
   position: relative;
