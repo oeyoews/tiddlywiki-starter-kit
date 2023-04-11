@@ -4053,10 +4053,6 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="fix-conflict"] .tc-titlebar h2 { text-transform: capitalize; }
 
-  [data-tiddler-title="font-stacks/readme"] .tc-titlebar h2 { text-transform: capitalize; }
-
-  [data-tiddler-title="FontStacks"] .tc-titlebar h2 { text-transform: capitalize; }
-
   [data-tiddler-title="gallary"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="GettingStarted"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -4140,8 +4136,6 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   [data-tiddler-title="missing-thinkup"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="mode-bug-on-gnome"] .tc-titlebar h2 { text-transform: capitalize; }
-
-  [data-tiddler-title="Modern Font Stacks"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="mozjpeg"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -5208,7 +5202,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "292";
+  content: "289";
 }
 .user-panel-avatar {
   position: relative;
