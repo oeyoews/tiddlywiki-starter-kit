@@ -4118,6 +4118,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="listent-different-sounds"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="localstorage"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="margin-order"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="markdown-resume"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -4478,6 +4480,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="rtl-with-web"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="scroll-on-wps"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="sdk"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="search-fast-with-gpt"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -4515,6 +4519,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   [data-tiddler-title="tailwind-index-example"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="tailwind-playground-on-tiddlywiki"] .tc-titlebar h2 { text-transform: capitalize; }
+
+  [data-tiddler-title="tailwindcss-box"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="tailwindcss-gradient-generator"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -5212,8 +5218,14 @@ footer {
   content: " 1";
 }
 
+
+
+[data-tag-title=tailwind] .tc-tag-label:after {
+  content: " 1";
+}
+
 .tc-untagged-label:after {
-  content: "294";
+  content: "296";
 }
 .user-panel-avatar {
   position: relative;
@@ -6468,7 +6480,8 @@ li.CodeMirror-hint-active {
 }button.tc-tag-label, span.tc-tag-label {
   padding: 0.3em 1em !important;
 }/* Fonts */html, body {
-  font-family: system-ui,"Maple hand", -apple-system,"Helvetica Neue",Helvetica,Arial,"PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft Yahei",sans-serif, "Segoe UI",Helvetica,Arial,sans-serif, "Twemoji Mozilla", "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+;
 }.tc-tiddler-frame input.tc-edit-texteditor,
 .tc-tiddler-frame textarea.tc-edit-texteditor,
 .tc-tiddler-frame iframe.tc-edit-texteditor {
