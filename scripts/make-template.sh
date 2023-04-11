@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-yarn build:neotw
+# yarn build:neotw
 
 ## NOTE need after build steps
 
@@ -16,7 +16,7 @@ rm -rf "$TEMPLATE_DIR" $UPLOAD_DIR
 # Initialize TiddlyWiki server template
 # npx tiddlywiki "$TEMPLATE_DIR" --init server
 
-mkdir $TEMPLATE_DIR && cp ./templates/tiddlywiki.info $TEMPLATE_DIR
+mkdir tmp/neotw-template -p && cp ./templates/tiddlywiki.info $TEMPLATE_DIR
 
 # Create tiddlers dir
 mkdir "$TEMPLATE_DIR/tiddlers"
