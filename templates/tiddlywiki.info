@@ -1,0 +1,48 @@
+{
+  "description": "Basic client-server edition",
+  "plugins": [
+    "tiddlywiki/tiddlyweb",
+    "tiddlywiki/filesystem",
+    "tiddlywiki/highlight",
+    "tiddlywiki/katex",
+    "tiddlywiki/browser-sniff",
+    "tiddlywiki/codemirror",
+    "tiddlywiki/codemirror-autocomplete",
+    "tiddlywiki/codemirror-mode-css",
+    "tiddlywiki/codemirror-search-replace",
+    "tiddlywiki/codemirror-closebrackets",
+    "tiddlywiki/codemirror-mode-markdown",
+    "tiddlywiki/codemirror-mode-xml",
+    "tiddlywiki/codemirror-mode-javascript"
+  ],
+  "themes": [
+    "tiddlywiki/vanilla",
+    "tiddlywiki/snowwhite"
+  ],
+  "build": {
+    "index": [
+      "--render",
+      "$:/plugins/tiddlywiki/tiddlyweb/save/offline",
+      "index.html",
+      "text/plain"
+    ],
+    "static": [
+      "--render",
+      "$:/core/templates/static.template.html",
+      "static.html",
+      "text/plain",
+      "--render",
+      "$:/core/templates/alltiddlers.template.html",
+      "alltiddlers.html",
+      "text/plain",
+      "--render",
+      "[!is[system]]",
+      "[encodeuricomponent[]addprefix[static/]addsuffix[.html]]",
+      "text/plain",
+      "--render",
+      "$:/core/templates/static.template.css",
+      "static/static.css",
+      "text/plain"
+    ]
+  }
+}

@@ -11,10 +11,12 @@ THEMES_DIR="dist/themes"
 UPLOAD_DIR="upload"
 
 # Remove existing template dir
-rm -rf "$TEMPLATE_DIR" upload
+rm -rf "$TEMPLATE_DIR" $UPLOAD_DIR
 
 # Initialize TiddlyWiki server template
-npx tiddlywiki "$TEMPLATE_DIR" --init server
+# npx tiddlywiki "$TEMPLATE_DIR" --init server
+
+mkdir $TEMPLATE_DIR && cp ./templates/tiddlywiki.info $TEMPLATE_DIR
 
 # Create tiddlers dir
 mkdir "$TEMPLATE_DIR/tiddlers"
