@@ -1,6 +1,6 @@
 created: 20230115132708917
 creator: oeyoews
-modified: 20230127172522740
+modified: 20230411013904562
 modifier: oeyoews
 tags: 
 title: recent-note-record
@@ -10,8 +10,8 @@ type: text/vnd.tiddlywiki
   <$list filter="[!is[system]!<currentTiddler>days[-100]!sort[modified]]">
     <li>
 		<$link><$view field="title"/></$link>
-        <$list filter="[<currentTiddler>days[-7]]"> @@color:red;^^新^^@@</$list>
-        <$list filter="[<currentTiddler>days[-60]!days[-7]]"> @@color:black;^^近期^^@@</$list>
+        <$list filter="[<currentTiddler>days[-7]]"> <span class="text-rose-500 ml-1">^^new^^</span></$list>
+        <$list filter="[<currentTiddler>days[-60]!days[-7]]"> @@color:black;^^recent^^@@</$list>
     </li>
   </$list>
 </ul>
