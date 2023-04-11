@@ -1,3 +1,10 @@
+# [3.199.0](https://github.com/oeyoews/neotw/compare/v3.198.3...v3.199.0) (2023-04-11)
+
+
+### Features
+
+* update cover on tiddlywiki-fancybox-ui ([b094ab3](https://github.com/oeyoews/neotw/commit/b094ab3dc8a6d4ed9ced5f96a49a04e11c685c6f))
+
 ## [3.198.3](https://github.com/oeyoews/neotw/compare/v3.198.2...v3.198.3) (2023-04-11)
 
 
