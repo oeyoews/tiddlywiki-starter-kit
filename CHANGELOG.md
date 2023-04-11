@@ -1,3 +1,10 @@
+## [3.198.3](https://github.com/oeyoews/neotw/compare/v3.198.2...v3.198.3) (2023-04-11)
+
+
+### Performance Improvements
+
+* default is open recent tab ([f105ab7](https://github.com/oeyoews/neotw/commit/f105ab7e17f9cc3316050b75a8d340701312baa0))
+
 ## [3.198.2](https://github.com/oeyoews/neotw/compare/v3.198.1...v3.198.2) (2023-04-10)
 
 
