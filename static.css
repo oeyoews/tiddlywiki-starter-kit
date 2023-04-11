@@ -4077,6 +4077,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="heart-joh"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="hero-icons"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="hi-oeyoews"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="hmr"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -4399,6 +4401,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="optimic-png"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="ORM"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="OTP"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="otp-meaning"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -4509,6 +4513,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="tailwind-playground-on-tiddlywiki"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="tailwindcss-gradient-generator"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="tailwindcss-marker"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="tailwindcss-playground"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -4526,6 +4532,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   [data-tiddler-title="test-gravatar-static"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="test-picgo"] .tc-titlebar h2 { text-transform: capitalize; }
+
+  [data-tiddler-title="thesis-summary"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="tiddlywiki-bugs"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -5202,7 +5210,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "289";
+  content: "293";
 }
 .user-panel-avatar {
   position: relative;
@@ -6165,7 +6173,7 @@ li.CodeMirror-hint-active {
 }.tc-story-river {
   padding: 6px 0 !important;
   width: 100% !important;
-  max-width: 1250px !important;
+  max-width: 1450px !important;
   margin: 0 auto !important;
   margin-top: 34px !important;
 }div.tc-tiddler-frame {
@@ -6195,7 +6203,7 @@ li.CodeMirror-hint-active {
 }.nc-bar.nc-topbar {
   top: 0;
   background: #f4f4f4ee;
-  max-width: calc(1250px + 40px);
+  max-width: calc(1450px + 40px);
   padding: 10px 20px;
   margin: 0 auto;
 }.nc-bar.nc-bottombar {
