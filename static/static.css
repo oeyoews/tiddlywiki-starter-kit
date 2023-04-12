@@ -4014,6 +4014,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="dark-macro-about-tailwindcss"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="debounce-throttle"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="deepl-tw-bug"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="delete-timestamp"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -4053,6 +4055,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   [data-tiddler-title="firefox-network"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="fix-conflict"] .tc-titlebar h2 { text-transform: capitalize; }
+
+  [data-tiddler-title="freepik-images"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="gallary"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -4097,6 +4101,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   [data-tiddler-title="infinity-tab"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="init-tiddlywiki-folder"] .tc-titlebar h2 { text-transform: capitalize; }
+
+  [data-tiddler-title="input-bug-on-office-365"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="install-svg"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -4417,6 +4423,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   [data-tiddler-title="otp-meaning"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="pang-test"] .tc-titlebar h2 { text-transform: capitalize; }
+
+  [data-tiddler-title="paper-for-chatgpt"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="password-on-tiddlywiki.info"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -5224,12 +5232,18 @@ footer {
 
 
 
+[data-tag-title=gpt] .tc-tag-label:after {
+  content: " 1";
+}
+
+
+
 [data-tag-title=tailwind] .tc-tag-label:after {
   content: " 1";
 }
 
 .tc-untagged-label:after {
-  content: "298";
+  content: "301";
 }
 .user-panel-avatar {
   position: relative;
