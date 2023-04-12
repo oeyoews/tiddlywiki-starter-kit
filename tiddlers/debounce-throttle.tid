@@ -1,0 +1,23 @@
+created: 20230412104400249
+creator: oeyoews
+modified: 20230412105329269
+modifier: oeyoews
+tags: 
+title: debounce-throttle
+type: text/vnd.tiddlywiki
+
+> https://www.cnblogs.com/aurora-ql/p/13757733.html
+
+闭包的典型应用就是函数防抖和节流
+
+函数防抖（debounce）
+函数防抖，就是指触发事件后，在 n 秒后只能执行一次，如果在 n 秒内又触发了事件，则会重新计算函数的执行时间。
+
+简单的说，当一个动作连续触发，只执行最后一次。
+
+打个比方，坐公交，司机需要等最后一个人进入才能关门。每次进入一个人，司机就会多等待几秒再关门。
+
+函数节流（throttle）
+限制一个函数在一定时间内只能执行一次
+
+举个例子，乘坐地铁，过闸机时，每个人进入后3秒后门关闭，等待下一个人进入

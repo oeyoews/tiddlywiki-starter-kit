@@ -1,0 +1,11 @@
+created: 20230412130253174
+creator: oeyoews
+modified: 20230412130358038
+modifier: oeyoews
+tags: 
+title: input-bug-on-office-365
+type: text/vnd.tiddlywiki
+
+* 在office 365 input chinese, this text will missing
+
+> solution: reset your input method, such fcitx5
