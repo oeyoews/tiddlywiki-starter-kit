@@ -3992,6 +3992,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="chatgpt-bash"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="chatgpt-sites"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="chatgpt-website-oeyoews"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="check-binary-with-ldd"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -5249,7 +5251,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "302";
+  content: "303";
 }
 .user-panel-avatar {
   position: relative;
