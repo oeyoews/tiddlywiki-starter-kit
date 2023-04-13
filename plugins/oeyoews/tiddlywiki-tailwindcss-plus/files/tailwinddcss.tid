@@ -1,0 +1,6 @@
+<!-- need as a shadow -->
+<style type="text/tailwindcss">
+ @layer base {
+     button { border: 1px solid red; }
+}
+</style>

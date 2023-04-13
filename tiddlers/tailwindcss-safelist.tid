@@ -1,0 +1,15 @@
+created: 20230413015821037
+creator: oeyoews
+modified: 20230413015844275
+modifier: oeyoews
+tags: tailwind
+title: tailwindcss-safelist
+type: text/vnd.tiddlywiki
+
+```tailwindcss
+safelist: [
+    'bg-red-500',
+    'text-3xl',
+    'lg:text-4xl',
+  ]
+```
