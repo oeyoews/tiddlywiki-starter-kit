@@ -1,3 +1,10 @@
+# [3.201.0](https://github.com/oeyoews/neotw/compare/v3.200.1...v3.201.0) (2023-04-14)
+
+
+### Features
+
+* enable zoom view with motion(jk) ([8e8319d](https://github.com/oeyoews/neotw/commit/8e8319d4c0b9e7fe95a6951bec231959ff130ae5))
+
 ## [3.200.1](https://github.com/oeyoews/neotw/compare/v3.200.0...v3.200.1) (2023-04-11)
 
 
