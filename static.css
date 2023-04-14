@@ -4528,6 +4528,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="sufface-platform-on-tw"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="surge.sh"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="svg-intro"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="sweetalert"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -4635,6 +4637,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   [data-tiddler-title="yiyan"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="youtbe-video"] .tc-titlebar h2 { text-transform: capitalize; }
+
+  [data-tiddler-title="zoomin-view"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="中文链接测试，空格测试"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -5251,7 +5255,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "303";
+  content: "305";
 }
 .user-panel-avatar {
   position: relative;
