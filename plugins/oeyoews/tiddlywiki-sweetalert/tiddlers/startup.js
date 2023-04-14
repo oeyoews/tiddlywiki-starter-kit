@@ -18,6 +18,7 @@ swealalert
   exports.synchronous = true;
 
   exports.startup = function () {
+    // cookie, indexedDB
     const swal = require('$:/plugins/oeyoews/sweetalert/sweetalert.min.js');
     if (window.location.protocol !== 'https:') {
       // if (!window.location.href.includes('https://neotw.oeyoewl.top')) {
