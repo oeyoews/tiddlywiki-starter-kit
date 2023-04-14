@@ -5,6 +5,7 @@ module-type: widget
 
 zoom
 \*/
+
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
@@ -16,7 +17,9 @@ zoom
 
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
 
-  const zoom = require('zoom.js').zoom;
+  // Load the zoom.js library
+  const zoom =
+    require('$:/plugins/oeyoews/tiddlywiki-zoom/library/zoom.js').zoom;
 
   class ZoomWidget extends Widget {
     constructor(parseTreeNode, options) {
@@ -42,16 +45,13 @@ zoom
       // Add a click event listener to the image node
       imgNode.addEventListener('click', this.handleClick.bind(this));
 
-      // Add a click event listener to the image node
-      // imgNode.addEventListener('click', this.handleClick.bind(this));
-
       parent.insertBefore(imgNode, nextSibling);
       this.domNodes.push(imgNode);
     }
 
     handleClick(event) {
       event.preventDefault();
-      // zoomjs(event.target);
+      // zoom(event.target, {});
     }
   }
 
