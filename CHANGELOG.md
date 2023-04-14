@@ -1,3 +1,10 @@
+# [3.205.0](https://github.com/oeyoews/neotw/compare/v3.204.2...v3.205.0) (2023-04-14)
+
+
+### Features
+
+* enable tiddlywiki-sweetalert ([c869658](https://github.com/oeyoews/neotw/commit/c8696588c6e7369388e4793b6666a9fc479e7f79))
+
 ## [3.204.2](https://github.com/oeyoews/neotw/compare/v3.204.1...v3.204.2) (2023-04-14)
 
 ## [3.204.1](https://github.com/oeyoews/neotw/compare/v3.204.0...v3.204.1) (2023-04-14)
