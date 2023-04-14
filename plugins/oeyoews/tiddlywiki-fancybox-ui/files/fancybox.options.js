@@ -2,7 +2,15 @@ module.exports = {
   Toolbar: {
     display: {
       left: ['infobar'],
-      middle: [],
+      middle: [
+        'zoomIn',
+        'zoomOut',
+        'toggle1to1',
+        'rotateCCW',
+        'rotateCW',
+        'flipX',
+        'flipY',
+      ],
       right: ['slideshow', 'fullscreen', 'download', 'thumbs', 'close'],
     },
   },
@@ -10,6 +18,8 @@ module.exports = {
     autoStart: false,
   },
   Thumbs: {
+    type: 'modern', // modern, classic
+    // classes: { container: '', },
     autoStart: true,
     key: 'o',
   },
