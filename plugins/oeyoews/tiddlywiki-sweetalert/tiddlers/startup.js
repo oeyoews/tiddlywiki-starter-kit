@@ -19,9 +19,21 @@ swealalert
 
   exports.startup = function () {
     const swal = require('$:/plugins/oeyoews/sweetalert/sweetalert.min.js');
-    // if (window.location.protocol !== 'https:') {
-    if (window.location.href.includes('https://neotw.oeyoewl.top')) {
-      swal('Welcome to neotw', '', 'success');
+    if (window.location.protocol !== 'https:') {
+      // if (!window.location.href.includes('https://neotw.oeyoewl.top')) {
+      // 获取存储的日期
+      const storedDate = localStorage.getItem('notificationDate');
+
+      // 获取当前日期
+      const currentDate = new Date().toDateString();
+
+      // 如果存储的日期与当前日期不同，则触发通知
+      if (storedDate !== currentDate) {
+        // 设置存储的日期为当前日期
+        localStorage.setItem('notificationDate', currentDate);
+
+        swal('Welcome to neotw', '', 'success');
+      }
     }
   };
 })();
