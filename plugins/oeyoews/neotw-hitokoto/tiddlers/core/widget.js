@@ -31,7 +31,7 @@ Hitokoto widget
 
       const hitokotoSpan = this.document.createElement('span');
       hitokotoSpan.className =
-        'text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-500 to-yellow-500 cursor-pointer text-xs';
+        'text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-500 to-yellow-500 cursor-pointer text-xs select-none';
       parent.insertBefore(hitokotoSpan, nextSibling);
       this.domNodes.push(hitokotoSpan);
 
