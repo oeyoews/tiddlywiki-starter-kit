@@ -1,4 +1,14 @@
 {
+  "tiddlers": [
+    {
+      "file": "fancybox.options.js",
+      "fields": {
+        "title": "$:/plugins/oeyoews/tiddlywiki-fancybox/fancybox.options.js",
+        "module-type": "library",
+        "type": "application/javascript"
+      }
+    }
+  ],
   "directories": [
     {
       "path": "library",

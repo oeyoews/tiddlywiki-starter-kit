@@ -6,67 +6,29 @@ module-type: startup
 fqncybox
 \*/
 
-'use strict';
-module.exports = {
-  ...module.exports,
-  name: 'fancybox-startup-hook',
-  platforms: ['browser'],
-  after: ['load-modules'],
-  synchronous: !0,
-  startup: () => {
-    const options = {
-      Toolbar: {
-        display: {
-          left: ['infobar'],
-          middle: [],
-          right: ['slideshow', 'fullscreen', 'download', 'thumbs', 'close'],
-        },
-      },
-      Fullscreen: {
-        autoStart: false,
-      },
-      Thumbs: {
-        autoStart: true,
-        key: 'o',
-      },
-      keyboard: {
-        Delete: 'close',
-        Escape: 'close',
-        ['q']: 'close',
-        Backspace: 'close',
-        PageUp: 'next',
-        PageDown: 'prev',
-        ['k']: 'prev',
-        ['p']: 'prev',
-        ArrowUp: 'next',
-        ['j']: 'next',
-        ['n']: 'next',
-        ArrowDown: 'prev',
-        ArrowRight: 'next',
-        ArrowLeft: 'prev',
-      },
-      Image: {
-        zoom: true,
-        wheel: 'close',
-      },
-      Hash: false,
+(function () {
+  /*jslint node: true, browser: true */
+  /*global $tw: false */
+  'use strict';
+
+  exports.name = 'fancybox-startup-hook';
+  exports.platforms = ['browser'];
+  exports.after = ['load-modules'];
+  exports.synchronous = true;
+
+  exports.startup = function () {
+    const {
+      Fancybox,
+    } = require('$:/plugins/oeyoews/tiddlywiki-fancybox/library/fancybox.min.js');
+    const options = require('$:/plugins/oeyoews/tiddlywiki-fancybox/fancybox.options.js');
+    Fancybox.defaults = {
+      ...Fancybox.defaults,
+      ...options,
     };
-    try {
-      const {
-        Fancybox,
-      } = require('$:/plugins/oeyoews/tiddlywiki-fancybox/library/fancybox.min.js');
-      globalThis.Fancybox = Fancybox;
-      Fancybox.defaults = {
-        ...Fancybox.defaults,
-        ...options,
-      };
-      Fancybox.bind('[data-fancybox]', {
-        wheel: 'close', // pan slide soom false
-        startIndex: '0', // not work
-        hideScrollbar: true,
-      });
-    } catch (r) {
-      console.error(r);
-    }
-  },
-};
+    Fancybox.bind('[data-fancybox]', {
+      wheel: 'close', // pan slide soom false
+      startIndex: '0', // not work
+      hideScrollbar: true,
+    });
+  };
+})();
