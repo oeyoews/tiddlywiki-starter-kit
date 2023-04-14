@@ -49,6 +49,22 @@ zoom
       this.domNodes.push(imgNode);
     }
 
+    refresh(changedTiddlers) {
+      const changedAttributes = this.computeAttributes();
+      if (
+        changedAttributes.src || // Change this to match the attribute name for the image source
+        changedAttributes.width ||
+        changedAttributes.height ||
+        changedAttributes.alt || // Change this to match the attribute name for the image alt text
+        changedTiddlers[this.getAttribute('src')] // Change this to match the attribute name for the image source
+      ) {
+        this.refreshSelf();
+        return true;
+      } else {
+        return false;
+      }
+    }
+
     handleClick(event) {
       event.preventDefault();
       // zoom(event.target, {});
