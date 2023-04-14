@@ -1,3 +1,10 @@
+## [3.205.1](https://github.com/oeyoews/neotw/compare/v3.205.0...v3.205.1) (2023-04-14)
+
+
+### Performance Improvements
+
+* once notify everyday ([23a5706](https://github.com/oeyoews/neotw/commit/23a57065119a8598f69de807c40dfd147079c36f))
+
 # [3.205.0](https://github.com/oeyoews/neotw/compare/v3.204.2...v3.205.0) (2023-04-14)
 
 
