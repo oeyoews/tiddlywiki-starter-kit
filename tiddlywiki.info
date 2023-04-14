@@ -16,6 +16,7 @@
     "tiddlywiki/codemirror-mode-xml",
     "tiddlywiki/codemirror-mode-javascript",
     "tiddlywiki/pluginlibrary",
+    "oeyoews/tiddlywiki-sweetalert",
     "oeyoews/markdown",
     "oeyoews/neotw",
     "oeyoews/neotw-hitokoto",
