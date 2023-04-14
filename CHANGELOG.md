@@ -1,3 +1,15 @@
+## [3.204.1](https://github.com/oeyoews/neotw/compare/v3.204.0...v3.204.1) (2023-04-14)
+
+
+### Bug Fixes
+
+* remove tc-tiddler-body on body editemplate ([928ecdd](https://github.com/oeyoews/neotw/commit/928ecddf90a74f730aec797496930ccc1465391b))
+
+
+### Performance Improvements
+
+* add select-none for neotw-hitokoto ([ddd7544](https://github.com/oeyoews/neotw/commit/ddd75442365afe4b205cc86366722683074620e1))
+
 # [3.204.0](https://github.com/oeyoews/neotw/compare/v3.203.0...v3.204.0) (2023-04-14)
 
 
