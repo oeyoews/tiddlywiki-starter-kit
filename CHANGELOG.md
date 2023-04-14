@@ -1,3 +1,10 @@
+# [3.204.0](https://github.com/oeyoews/neotw/compare/v3.203.0...v3.204.0) (2023-04-14)
+
+
+### Features
+
+* add middle options for fancybox-ui ([cdbff24](https://github.com/oeyoews/neotw/commit/cdbff24f91e1eecb9628702bbeb85fafbe0a0b40))
+
 # [3.203.0](https://github.com/oeyoews/neotw/compare/v3.202.1...v3.203.0) (2023-04-14)
 
 
