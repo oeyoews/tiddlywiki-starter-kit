@@ -1,7 +1,7 @@
 /*\
 title: $:/plugins/oeyoews/tiddlywiki-zoom/widget-zoom.js
 type: application/javascript
-// module-type: widget
+module-type: widget
 
 zoom
 \*/
@@ -16,7 +16,9 @@ zoom
 
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
 
-  class FancyboxWidget extends Widget {
+  const zoom = require('zoom.js').zoom;
+
+  class ZoomWidget extends Widget {
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
     }
@@ -36,10 +38,22 @@ zoom
       imgNode.alt = alt;
       imgNode.width = width;
       imgNode.setAttribute('data-action', 'zoom');
+
+      // Add a click event listener to the image node
+      imgNode.addEventListener('click', this.handleClick.bind(this));
+
+      // Add a click event listener to the image node
+      // imgNode.addEventListener('click', this.handleClick.bind(this));
+
       parent.insertBefore(imgNode, nextSibling);
       this.domNodes.push(imgNode);
     }
+
+    handleClick(event) {
+      event.preventDefault();
+      // zoomjs(event.target);
+    }
   }
 
-  exports['zoom'] = FancyboxWidget;
+  exports.zoom = ZoomWidget;
 })();
