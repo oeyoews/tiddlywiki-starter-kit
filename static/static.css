@@ -4144,6 +4144,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="microfeed-oeyoews"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="microsoft-activate-scripts"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="min-js"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="missing-thinkup"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -5255,7 +5257,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "305";
+  content: "306";
 }
 .user-panel-avatar {
   position: relative;
