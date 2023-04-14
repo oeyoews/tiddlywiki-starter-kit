@@ -1,9 +1,9 @@
 /*\
-title: $:/plugins/yourname/yourplugin/widget.js
+title: $:/plugins/oeyoews/tiddlywiki-sweetalert/widget.js
 type: application/javascript
 module-type: widget
 
-Your Plugin Widget
+sweetalert
 \*/
 (function () {
   /*jslint node: true, browser: true */

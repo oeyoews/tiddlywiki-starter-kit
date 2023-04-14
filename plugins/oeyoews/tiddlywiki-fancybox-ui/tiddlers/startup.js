@@ -22,7 +22,7 @@ fqncybox
       require('$:/plugins/oeyoews/tiddlywiki-fancybox/library/fancybox.min.js').Fancybox;
     const options = require('$:/plugins/oeyoews/tiddlywiki-fancybox/fancybox.options.js');
     Fancybox.defaults = {
-      ...Fancybox.defaults,
+      // ...Fancybox.defaults,
       ...options,
     };
     Fancybox.bind('[data-fancybox]', {
