@@ -36,7 +36,7 @@ swealalert
       // 存储更新后的 JavaScript 对象
       localStorage.setItem('neotw', JSON.stringify(neotw));
       // 触发通知
-      swal('Welcome to neotw', '', 'success');
+      swal('👋 Welcome to neotw !', '', 'success');
     }
   };
 })();
