@@ -4000,6 +4000,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="clean-cache"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="clear-data"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="cname-file"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="codeberg"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -4511,6 +4513,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   [data-tiddler-title="seveal-framworks"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="several-render-method"] .tc-titlebar h2 { text-transform: capitalize; }
+
+  [data-tiddler-title="shared-storage"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="shields.io-not-support-online-image"] .tc-titlebar h2 { text-transform: capitalize; }
 
@@ -5263,7 +5267,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "309";
+  content: "311";
 }
 .user-panel-avatar {
   position: relative;
