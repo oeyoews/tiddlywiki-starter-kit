@@ -9,6 +9,7 @@
   "author": "oeyoews <jyao4783@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "git:update": "git pull origin main && git push",
     "vercel:dev": "vercel dev",
     "guide": "zx scripts/guide.mjs",
     "build:tailwindcss-docs": "cd ./plugins/oeyoews/tiddlywiki-tailwindcss/files && node update-documentation.js",
