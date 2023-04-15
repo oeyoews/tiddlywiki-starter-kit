@@ -9,6 +9,7 @@
   "author": "oeyoews <jyao4783@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "deploy:surge": "surge dist --domain neotw.surge.sh",
     "git:update": "git pull origin main && git push",
     "vercel:dev": "vercel dev",
     "guide": "zx scripts/guide.mjs",
