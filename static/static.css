@@ -4628,6 +4628,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
   [data-tiddler-title="vite-vue"] .tc-titlebar h2 { text-transform: capitalize; }
 
+  [data-tiddler-title="web-sql"] .tc-titlebar h2 { text-transform: capitalize; }
+
   [data-tiddler-title="web3-xlog"] .tc-titlebar h2 { text-transform: capitalize; }
 
   [data-tiddler-title="webflow-university"] .tc-titlebar h2 { text-transform: capitalize; }
@@ -5261,7 +5263,7 @@ footer {
 }
 
 .tc-untagged-label:after {
-  content: "308";
+  content: "309";
 }
 .user-panel-avatar {
   position: relative;
