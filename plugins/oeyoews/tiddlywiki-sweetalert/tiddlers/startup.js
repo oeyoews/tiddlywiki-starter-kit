@@ -20,21 +20,23 @@ swealalert
   exports.startup = function () {
     // cookie, indexedDB
     const swal = require('$:/plugins/oeyoews/sweetalert/sweetalert.min.js');
-    if (window.location.protocol === 'https:') {
-      // if (!window.location.href.includes('https://neotw.oeyoewl.top')) {
-      // 获取存储的日期
-      const storedDate = localStorage.getItem('notificationDate');
+    // 从 localStorage 中读取数据
+    const neotw = JSON.parse(localStorage.getItem('neotw')) || {
+      lastNotified: null,
+    };
+    // 获取存储的日期
+    const storedDate = neotw.lastNotified;
+    // 获取当前日期
+    const currentDate = new Date().toDateString();
 
-      // 获取当前日期
-      const currentDate = new Date().toDateString();
-
-      // 如果存储的日期与当前日期不同，则触发通知
-      if (storedDate !== currentDate) {
-        // 设置存储的日期为当前日期
-        localStorage.setItem('notificationDate', currentDate);
-
-        swal('Welcome to neotw', '', 'success');
-      }
+    // 如果协议不是 HTTPS，并且上次通知的日期与当前日期不同，则触发通知
+    if (window.location.protocol !== 'https:' && storedDate !== currentDate) {
+      // 更新存储的日期为当前日期
+      neotw.lastNotified = currentDate;
+      // 存储更新后的 JavaScript 对象
+      localStorage.setItem('neotw', JSON.stringify(neotw));
+      // 触发通知
+      swal('Welcome to neotw', '', 'success');
     }
   };
 })();
