@@ -1,3 +1,10 @@
+## [3.205.2](https://github.com/oeyoews/neotw/compare/v3.205.1...v3.205.2) (2023-04-15)
+
+
+### Performance Improvements
+
+* use json array instead of key-value ([4c462a0](https://github.com/oeyoews/neotw/commit/4c462a0158a05d236bca540512a209e08c874333))
+
 ## [3.205.1](https://github.com/oeyoews/neotw/compare/v3.205.0...v3.205.1) (2023-04-14)
 
 
