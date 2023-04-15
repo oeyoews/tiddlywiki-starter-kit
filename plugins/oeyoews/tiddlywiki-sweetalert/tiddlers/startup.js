@@ -30,7 +30,7 @@ swealalert
     const currentDate = new Date().toDateString();
 
     // 如果协议不是 HTTPS，并且上次通知的日期与当前日期不同，则触发通知
-    if (window.location.protocol !== 'https:' && storedDate !== currentDate) {
+    if (window.location.protocol === 'https:' && storedDate !== currentDate) {
       // 更新存储的日期为当前日期
       neotw.lastNotified = currentDate;
       // 存储更新后的 JavaScript 对象
