@@ -9,7 +9,7 @@ Import.tid
 StoryList*.tid
 tiddlers/config/trashbin/
 tiddlers/trashbin/
-/public/
+!public/
 Draft*
 subwiki/
 !tiddlers/subwiki/

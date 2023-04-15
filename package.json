@@ -48,6 +48,7 @@
     "replace": "^1.2.2",
     "semantic-release": "^20.1.0",
     "signale": "^1.4.0",
+    "surge": "^0.23.1",
     "tiddlywiki": "github:Jermolene/TiddlyWiki5",
     "zx": "^7.2.0"
   },
