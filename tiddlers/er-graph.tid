@@ -1,11 +1,11 @@
 created: 20230416025853978
 creator: oeyoews
-modified: 20230416030203050
+modified: 20230416041719634
 modifier: oeyoews
 tags: 
 title: er-graph
-type: text/vnd.tiddlywiki
+type: text/markdown
 
-实体(E): 真实存在(box)
-
-
+实体(E): 真实存在(矩形表示)
+联系(R): (菱形表示)有联通词
+属性使用椭圆形表示,主键加下划线
