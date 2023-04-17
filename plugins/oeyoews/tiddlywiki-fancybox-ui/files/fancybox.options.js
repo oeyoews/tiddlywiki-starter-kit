@@ -3,15 +3,17 @@ module.exports = {
     display: {
       left: ['infobar'],
       middle: [
-        'zoomIn',
+        /* 'zoomIn',
         'zoomOut',
         'toggle1to1',
         'rotateCCW',
         'rotateCW',
         'flipX',
-        'flipY',
+        'flipY', */
       ],
-      right: ['slideshow', 'fullscreen', 'download', 'thumbs', 'close'],
+      right: [
+        // 'slideshow', 'fullscreen', 'download', 'thumbs', 'close'
+      ],
     },
   },
   Fullscreen: {
@@ -19,8 +21,6 @@ module.exports = {
   },
   Thumbs: {
     type: 'modern', // modern, classic
-    // classes: { container: '', },
-    autoStart: true,
     key: 'o',
   },
   keyboard: {
@@ -40,7 +40,7 @@ module.exports = {
     ArrowLeft: 'prev',
   },
   Image: {
-    zoom: true,
+    zoom: false,
     wheel: 'close',
   },
   Hash: false,
