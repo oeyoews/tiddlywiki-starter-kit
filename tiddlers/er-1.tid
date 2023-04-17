@@ -1,0 +1,59 @@
+created: 20230416105002555
+creator: oeyoews
+modified: 20230416105009592
+modifier: oeyoews
+tags: 
+title: er-1
+type: text/vnd.tiddlywiki
+
+erDiagram
+    USER {
+        string username
+        string password
+        string email
+    }
+    ADMIN {
+        string username
+        string password
+        string email
+    }
+    LABEL {
+        string label_name
+    }
+    ACTIVITY {
+        string activity_name
+        datetime start_time
+        datetime end_time
+        string location
+    }
+    COMMENT {
+        string content
+    }
+    NOTICE {
+        string content
+        datetime send_time
+    }
+    REPLY {
+        string content
+        datetime reply_time
+    }
+    COMPANY {
+        string company_name
+    }
+    ARTICLE {
+        string title
+        string content
+    }
+    OLDSTUFF {
+        string item_name
+        int price
+        string description
+    }
+    HELP {
+        string help_type
+        string description
+    }
+    JOB {
+        string job_description
+        string job_type
+    }
