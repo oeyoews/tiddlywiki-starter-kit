@@ -1,7 +1,8 @@
 case-sensitive: casesensitive
 created: 20230309154713248
 creator: oeyoews
-modified: 20230309154713248
+modified: 20230417141522330
 modifier: oeyoews
+search-mode: words
 title: $:/config/search-in-fields/option
 type: text/vnd.tiddlywiki

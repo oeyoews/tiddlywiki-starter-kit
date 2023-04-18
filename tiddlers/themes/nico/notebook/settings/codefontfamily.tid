@@ -1,8 +1,8 @@
 created: 20230327035634321
 creator: oeyoews
-modified: 20230327040936448
+modified: 20230417174251697
 modifier: oeyoews
 title: $:/themes/nico/notebook/settings/codefontfamily
 type: text/vnd.tiddlywiki
 
-system-ui,"Maple hand","Fira Mono","Liberation Mono",Menlo,Courier,monospace
+"Liberation Mono",Menlo,Courier,monospace
