@@ -1,6 +1,6 @@
 created: 20230208091356701
 creator: oeyoews
-modified: 20230322152954733
+modified: 20230418024531615
 modifier: oeyoews
 tags: 
 title: neotw-badges
@@ -11,13 +11,4 @@ type: text/vnd.tiddlywiki
 \end
 
 <<fb "🐟 Tiddlers" [!is[system]count[]]>> <<fb "🏷️ Tags" [tags[]count[]]>> <<fb "🧩 Plugins" [plugin-type[plugin]count[]]>>
-<$list filter="[{$:/info/url/protocol}match[http:]]">
-<a target="_blank" href="http://localhost:2017" >
-<img src="https://img.shields.io/badge/✌️V2ray-local-green?style=social" />
-</a>
-<a target="_blank" href="https://bramchen.github.io/tw5-docs/zh-Hans/" >
-<img src="https://img.shields.io/badge/tiddlywiki-doc-green?style=social" />
-</a>
-</$list> <$list filter="[{$:/info/url/protocol}match[https:]]">
 <<fb "⏰ Updated" [!is[system]!has[draft.of]!sort[modified]limit[1]get[modified]format:relativedate[]]>>  
-</$list>
