@@ -11,18 +11,18 @@ title: $:/config/EmptyStoryMessage
 </div>
 </$button>
 </$list>
-<h2 class="capitalize"> {{$:/status/UserName}} </h2>
+<!-- <h2 class=""> {{$:/status/UserName}} </h2> -->
 	<!-- <$list filter="[{$:/info/url/protocol}match[https:]]"> -->
 	<!-- <$github-calendar /> -->
 	<!-- </$list> -->
 </center>
-<$list filter="[{$:/info/url/protocol}match[https:]]">
-	<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
-	<hr>
-	</$list>
-</$list>
-	<$list filter="[{$:/info/url/protocol}match[http:]]">
-		<hr>
-	</$list>
+<!-- <$list filter="[{$:/info/url/protocol}match[https:]]"> -->
+<!-- 	<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]"> -->
+<!-- 	<hr> -->
+<!-- 	</$list> -->
+<!-- </$list> -->
+<!-- 	<$list filter="[{$:/info/url/protocol}match[http:]]"> -->
+<!-- 		<hr> -->
+<!-- 	</$list> -->
 
 {{{ [[GettingStarted]] ||$:/core/ui/ViewTemplate }}}
