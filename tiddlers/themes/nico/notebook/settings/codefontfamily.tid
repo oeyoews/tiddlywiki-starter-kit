@@ -1,8 +1,8 @@
 created: 20230327035634321
 creator: oeyoews
-modified: 20230417174251697
+modified: 20230418020058325
 modifier: oeyoews
 title: $:/themes/nico/notebook/settings/codefontfamily
 type: text/vnd.tiddlywiki
 
-"Liberation Mono",Menlo,Courier,monospace
+"maple hand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
