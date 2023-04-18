@@ -1,3 +1,10 @@
+## [3.206.1](https://github.com/oeyoews/neotw/compare/v3.206.0...v3.206.1) (2023-04-18)
+
+
+### Performance Improvements
+
+* disabale hitokoto ([3609184](https://github.com/oeyoews/neotw/commit/3609184618cf8ee5fb2cf51e946ad272cedbaa4f))
+
 # [3.206.0](https://github.com/oeyoews/neotw/compare/v3.205.3...v3.206.0) (2023-04-17)
 
 
