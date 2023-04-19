@@ -1,3 +1,10 @@
+## [3.208.1](https://github.com/oeyoews/neotw/compare/v3.208.0...v3.208.1) (2023-04-19)
+
+
+### Performance Improvements
+
+* split config for options ([e15148b](https://github.com/oeyoews/neotw/commit/e15148b55f4838285c40976c9acaade2d46d4144))
+
 # [3.208.0](https://github.com/oeyoews/neotw/compare/v3.207.0...v3.208.0) (2023-04-19)
 
 
