@@ -35,13 +35,22 @@ youtube widget
       parent.insertBefore(container, nextSibling);
       this.domNodes.push(container);
 
+      // Create an object to represent the iframe attributes
+      const iframeAttributes = {
+        src: iframeSrc,
+        width: '560',
+        height: '315',
+        frameborder: '0',
+        allowfullscreen: '',
+        class: 'border-none shadow-lg rounded-lg',
+        title: '', // example attribute
+      };
+
+      // Create the iframe element and set its attributes using a loop
       const iframe = this.document.createElement('iframe');
-      iframe.className = 'border-none shadow-lg rounded-md';
-      iframe.src = iframeSrc;
-      iframe.width = '560';
-      iframe.height = '315';
-      iframe.frameborder = '0';
-      iframe.allowfullscreen = true;
+      for (const [key, value] of Object.entries(iframeAttributes)) {
+        iframe.setAttribute(key, value);
+      }
 
       container.appendChild(iframe);
     }
