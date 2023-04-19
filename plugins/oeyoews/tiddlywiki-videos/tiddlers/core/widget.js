@@ -43,8 +43,8 @@ youtube widget
         frameborder: '0',
         allowfullscreen: '',
         class: 'border-none shadow-lg rounded-lg',
-        // allowsInlineMediaPlayback: "true",
-        playsinline: '0',
+        allowsInlineMediaPlayback: 'true',
+        playsinline: '1',
         title: '', // example attribute
       };
 
