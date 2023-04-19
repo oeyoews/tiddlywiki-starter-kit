@@ -20,14 +20,20 @@ youtube widget
       this.computeAttributes();
       this.execute();
 
-      var youtubeId = this.getAttribute('youtubeId', '');
+      var youtubeId = this.getAttribute('youtubeId');
+      var playlist = this.getAttribute('playlist');
+      var iframeSrc = 'https://www.youtube.com/embed/';
+
+      if (playlist) {
+        iframeSrc += `videoseries?list=${youtubeId}`;
+      } else {
+        iframeSrc += `${youtubeId}`;
+      }
 
       const container = this.document.createElement('div');
       container.className = 'youtube-container';
       parent.insertBefore(container, nextSibling);
       this.domNodes.push(container);
-
-      const iframeSrc = `https://www.youtube.com/embed/${youtubeId}`;
 
       const iframe = this.document.createElement('iframe');
       iframe.className = 'border-none shadow-lg rounded-md';

@@ -24,3 +24,4 @@ title: $:/plugins/oeyoews/tiddlywiki-videos/readme
 !! Examples
 
 <$youtube youtubeId="o7GyFa90klg" />
+<$youtube youtubeId="PLjNhkoz3yGwG9ISeHEYsdUSQdQarKJ8u3" playlist/>
