@@ -25,3 +25,7 @@ title: $:/plugins/oeyoews/tiddlywiki-videos/readme
 
 <$youtube youtubeId="o7GyFa90klg" />
 <$youtube youtubeId="PLjNhkoz3yGwG9ISeHEYsdUSQdQarKJ8u3" playlist/>
+
+!! Ref
+
+* https://developers.google.com/youtube/player_parameters?hl=zh-cn
