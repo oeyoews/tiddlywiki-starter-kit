@@ -1,11 +1,11 @@
 created: 20230331152923700
 creator: oeyoews
-modified: 20230331160138907
+modified: 20230419132411020
 modifier: oeyoews
 tags: 
 title: youtbe-video
 type: text/vnd.tiddlywiki
 
-<iframe width="1178" height="663" src="https://www.youtube.com/embed/o7GyFa90klg?autoplay=1&mute=1&loop=1&controls=1&cc_load_policy=1 " title="How I budget and live simply - finances, living within means, and rural life" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<<youtube youtubeId:"o7GyFa90klg">>
 
-<iframe width="1178" height="663" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLjNhkoz3yGwG9ISeHEYsdUSQdQarKJ8u3&mute=1&loop=1&controls=1&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="600" height="600" class="border-none rounded-lg" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLjNhkoz3yGwG9ISeHEYsdUSQdQarKJ8u3&mute=1&loop=1&controls=1&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
