@@ -6,6 +6,7 @@
     "tiddlywiki/filesystem",
     "tiddlywiki/highlight",
     "tiddlywiki/katex",
+    "tiddlywiki/twitter",
     "tiddlywiki/browser-sniff",
     "tiddlywiki/codemirror",
     "tiddlywiki/codemirror-autocomplete",

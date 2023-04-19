@@ -1,0 +1,11 @@
+created: 20230419122147417
+creator: oeyoews
+modified: 20230419122643421
+modifier: oeyoews
+tags: 
+title: twitter-example
+type: text/vnd.tiddlywiki
+
+<center>
+<$twitter type="tweet" tweetID="1647655398957268992"/>
+</center>
