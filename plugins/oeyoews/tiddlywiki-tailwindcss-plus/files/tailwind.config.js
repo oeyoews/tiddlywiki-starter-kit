@@ -1,18 +1,9 @@
 module.exports = {
-  // prefix: 'tw-',
-  // content: [
-  //   './plugins/oeyoews/**/*.{html,tid,md,js}',
-  //   './tiddlers/**/*!(StoryList).{js,tid,md}',
-  //   './tiddlers/**/*!(($%2FStoryList)).tid',
-  // ],
   theme: {
     extend: {
       typography: ({ theme }) => ({
         DEFAULT: {
           css: {
-            // a: {
-            //   textDecoration: `none`,
-            // },
             'blockquote p:first-of-type::before': null,
             'blockquote p:last-of-type::after': null,
             code: {

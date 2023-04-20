@@ -1,5 +1,5 @@
 /*\
-title: tailwindcss-startup.js
+title: $:/plugins/oeyoews/tiddlywiki-tailwindcss-plus/startup.js
 type: application/javascript
 module-type: startup
 hide-body: yes
