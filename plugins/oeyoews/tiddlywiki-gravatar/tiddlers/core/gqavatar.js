@@ -92,5 +92,5 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
     // Nothing to do
   };
 
-  exports['avatar'] = AvatarWidget;
+  exports.avatar = AvatarWidget;
 })();
