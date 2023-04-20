@@ -22,6 +22,7 @@ meting-init
     'preload',
     'mutex',
     'fixed',
+    'list-olded',
   ];
 
   options.forEach(option => {
@@ -32,7 +33,6 @@ meting-init
   if (config.enablelrc === 'no') {
     metingjs.setAttribute('lrc-type', 'yes');
   }
-  metingjs.setAttribute('list-olded', config.list_olded);
   document.body.appendChild(metingjs);
   console.log(`🎶 当前歌单为 ${config.server} && ${config.id} `);
 })();
