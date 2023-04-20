@@ -5,14 +5,13 @@ module-type: widget
 
 fancybox widget
 \*/
+
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
 
-  if (!$tw.browser) {
-    return;
-  }
+  if (!$tw.browser) return;
 
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
 
@@ -66,5 +65,5 @@ fancybox widget
     }
   }
 
-  exports['fbox'] = FancyboxWidget;
+  exports.fbox = FancyboxWidget;
 })();
