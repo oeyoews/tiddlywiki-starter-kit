@@ -5,6 +5,7 @@ module-type: startup
 
 show pressed key
 \*/
+
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */

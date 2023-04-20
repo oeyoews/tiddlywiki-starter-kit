@@ -1,0 +1,15 @@
+created: 20230420052301964
+creator: oeyoews
+modified: 20230420052322410
+modifier: oeyoews
+tags: 
+title: es5/6
+type: text/vnd.tiddlywiki
+
+Yes, ES5 and ES6 code can be mixed together in the same JavaScript file or project. ES6 introduced new features and syntax to JavaScript, but it was designed to be backward-compatible with ES5, meaning that any valid ES5 code should still work in ES6.
+
+In fact, many projects start by using ES5 and gradually transitioning to ES6 as new features are needed or as older code is rewritten. This gradual transition can help avoid breaking changes and make it easier to adopt new features without having to rewrite entire codebases.
+
+However, when mixing ES5 and ES6 code, it's important to keep in mind that some ES6 features may not be supported in older browsers or environments. In those cases, you may need to use a compiler like Babel to transpile ES6 code into ES5 compatible code.
+
+Overall, mixing ES5 and ES6 code is a common practice in modern JavaScript development, and it allows developers to take advantage of newer language features while still maintaining backward compatibility.
