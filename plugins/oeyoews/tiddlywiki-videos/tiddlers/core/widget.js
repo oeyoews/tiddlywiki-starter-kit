@@ -31,15 +31,15 @@ youtube widget
       }
 
       const container = this.document.createElement('div');
-      container.className = 'youtube-container';
+      container.className = 'flex justify-center item-center';
       parent.insertBefore(container, nextSibling);
       this.domNodes.push(container);
 
       // Create an object to represent the iframe attributes
       const iframeAttributes = {
         src: iframeSrc,
-        width: '560',
-        height: '315',
+        width: '800',
+        height: '450',
         frameborder: '0',
         allowfullscreen: '',
         class: 'border-none shadow-lg rounded-lg',

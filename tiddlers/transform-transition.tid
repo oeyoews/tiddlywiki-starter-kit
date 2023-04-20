@@ -1,0 +1,9 @@
+created: 20230420123138706
+creator: oeyoews
+modified: 20230420123148799
+modifier: oeyoews
+tags: 
+title: transform-transition
+type: text/vnd.tiddlywiki
+
+如果我们需要实现的是元素状态或外观的变换，应该使用 "transform" 属性。如果我们需要控制元素状态或外观的变化过程，应该使用 "transition" 属性。
