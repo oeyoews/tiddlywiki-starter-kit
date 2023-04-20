@@ -10,23 +10,23 @@ meting-init
   var config = twmTiddlerGet ? twmTiddlerGet.fields : {};
   var metingjs = document.createElement('meting-js');
   if (!config.id) {
-    alert('检测到你没有设置TWM id, 默认使用 2916766519');
+    console.warn('检测到你没有设置TWM id, 默认使用 2916766519');
   }
 
-  const options = {
-    server: 'netease',
-    id: '',
-    type: '',
-    order: '',
-    loop: '',
-    preload: '',
-    mutex: '',
-    fixed: '',
-  };
+  const options = [
+    'server',
+    'id',
+    'type',
+    'order',
+    'loop',
+    'preload',
+    'mutex',
+    'fixed',
+  ];
 
-  for (const key in options) {
-    metingjs.setAttribute(key, config[key]);
-  }
+  options.forEach(option => {
+    metingjs.setAttribute(option, config[option]);
+  });
 
   // BUG
   if (config.enablelrc === 'no') {
