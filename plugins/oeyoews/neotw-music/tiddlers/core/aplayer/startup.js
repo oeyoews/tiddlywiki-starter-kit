@@ -6,23 +6,17 @@ module-type: startup
 load aplayer
 \*/
 
-/* exports.startup = function () {
-  if (!$tw.browser) return;
-  $tw.modules.execute('$:/plugins/oeyoews/neotw-music/aplayer.min.js');
-}; */
+(function () {
+  /*jslint node: true, browser: true */
+  /*global $tw: false */
+  'use strict';
 
-'use strict';
-module.exports = {
-  ...module.exports,
-  name: 'aplayer-startup-hook',
-  platforms: ['browser'],
-  after: ['load-modules'],
-  synchronous: !0,
-  startup: () => {
-    try {
-      globalThis.APlayer = require('$:/plugins/oeyoews/neotw-music/aplayer.min.js');
-    } catch (r) {
-      console.error(r);
-    }
-  },
-};
+  exports.name = 'aplayer-startup-hook';
+  exports.platforms = ['browser'];
+  exports.after = ['load-modules'];
+  exports.synchronous = true;
+
+  exports.startup = function () {
+    window.APlayer = require('$:/plugins/oeyoews/neotw-music/aplayer.min.js');
+  };
+})();
