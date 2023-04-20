@@ -14,17 +14,20 @@ gisucs widget
   class GiscusNodeWidget extends Widget {
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
-      this.giscusConfigTiddler = '$:/plugins/oeyoews/tiddlywiki-giscus/config';
-      this.config = $tw.wiki.getTiddler(this.giscusConfigTiddler)?.fields || {};
     }
 
     render(parent, nextSibling) {
       this.parentDomNode = parent;
       this.computeAttributes();
       this.execute();
+
       const id = this.getAttribute('id', '');
       const lang = this.getAttribute('lang', 'en');
       const theme = this.getAttribute('theme', 'light');
+
+      const giscusConfigTiddler = '$:/plugins/oeyoews/tiddlywiki-giscus/config';
+      const config = $tw.wiki.getTiddler(giscusConfigTiddler)?.fields || {};
+
       // const loadingNode = this.document.createElement('div');
       // loadingNode.textContent = 'Loading comments ...';
       // parent.insertBefore(loadingNode, nextSibling);
@@ -63,22 +66,26 @@ gisucs widget
       const scriptNode = this.document.createElement('script');
       scriptNode.setAttribute('src', 'https://giscus.app/client.js');
       // for field, cant get xxx-xxx with middle line variables
-      // TODO use mapping
-      const { repo, repoId, categoryId } = this.config;
-      scriptNode.setAttribute('data-repo', repo);
-      scriptNode.setAttribute('data-repo-id', repoId);
-      scriptNode.setAttribute('data-category-id', categoryId);
-      scriptNode.setAttribute('data-term', id);
-      scriptNode.setAttribute('data-theme', theme);
-      scriptNode.setAttribute('data-lang', lang);
-      scriptNode.setAttribute('data-category', 'General');
-      scriptNode.setAttribute('data-mapping', 'specific');
-      scriptNode.setAttribute('data-reactions-enabled', '1');
-      scriptNode.setAttribute('data-emit-metadata', '1');
-      scriptNode.setAttribute('data-input-position', 'bottom');
-      scriptNode.setAttribute('data-loading', 'lazy');
-      scriptNode.setAttribute('crossorigin', 'anonymous');
-      scriptNode.setAttribute('async', 'true');
+      // use single file json
+      const options = {
+        'data-repo': config.repo,
+        'date-repo-id': config.repoId,
+        'data-category-id': config.categoryId,
+        'data-term': id,
+        'data-theme': theme,
+        'data-lang': lang,
+        'data-category': 'General',
+        'data-mapping': 'specific',
+        'data-reactions-enabled': '1',
+        'data-loading': 'lazy',
+        crossorigin: 'anonymous',
+        async: 'true',
+      };
+
+      for (let data in options) {
+        scriptNode.setAttribute(data, options[data]);
+      }
+
       // 清除其他评论区节点的 giscus class
       const commentNodes = this.document.querySelectorAll('.giscus');
       for (let i = 0, len = commentNodes.length; i < len; i++) {
