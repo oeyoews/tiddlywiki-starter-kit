@@ -62,19 +62,21 @@ gisucs widget
       }
       const scriptNode = this.document.createElement('script');
       scriptNode.setAttribute('src', 'https://giscus.app/client.js');
+      // for field, cant get xxx-xxx with middle line variables
+      // TODO use mapping
       const { repo, repoId, categoryId } = this.config;
       scriptNode.setAttribute('data-repo', repo);
       scriptNode.setAttribute('data-repo-id', repoId);
-      scriptNode.setAttribute('data-category', 'General');
       scriptNode.setAttribute('data-category-id', categoryId);
-      scriptNode.setAttribute('data-mapping', 'specific');
       scriptNode.setAttribute('data-term', id);
+      scriptNode.setAttribute('data-theme', theme);
+      scriptNode.setAttribute('data-lang', lang);
+      scriptNode.setAttribute('data-category', 'General');
+      scriptNode.setAttribute('data-mapping', 'specific');
       scriptNode.setAttribute('data-reactions-enabled', '1');
       scriptNode.setAttribute('data-emit-metadata', '1');
       scriptNode.setAttribute('data-input-position', 'bottom');
       scriptNode.setAttribute('data-loading', 'lazy');
-      scriptNode.setAttribute('data-theme', theme);
-      scriptNode.setAttribute('data-lang', lang);
       scriptNode.setAttribute('crossorigin', 'anonymous');
       scriptNode.setAttribute('async', 'true');
       // 清除其他评论区节点的 giscus class
