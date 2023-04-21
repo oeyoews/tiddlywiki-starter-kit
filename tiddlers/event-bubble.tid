@@ -1,0 +1,9 @@
+created: 20230421080044107
+creator: oeyoews
+modified: 20230421080052799
+modifier: oeyoews
+tags: 
+title: event-bubble
+type: text/vnd.tiddlywiki
+
+事件冒泡和事件捕获分别由微软和网景公司提出，这两个概念都是为了解决页面中事件流（事件发生顺序）的问题。

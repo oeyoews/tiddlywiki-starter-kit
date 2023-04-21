@@ -1,0 +1,11 @@
+created: 20230421032305338
+creator: oeyoews
+modified: 20230421032331000
+modifier: oeyoews
+tags: 
+title: yarn-bug
+type: text/vnd.tiddlywiki
+
+error package.json: Name contains illegal characters
+
+> yarn not support whitespace like `deee ddd`

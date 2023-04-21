@@ -1,0 +1,9 @@
+created: 20230421082847072
+creator: oeyoews
+modified: 20230421082901383
+modifier: oeyoews
+tags: JavaScript
+title: 兜底
+type: text/vnd.tiddlywiki
+
+在JavaScript中，所谓的"兜底"是指在代码执行出现异常情况时，可以给出一个备用方案，避免程序崩溃或不可用的情况。
