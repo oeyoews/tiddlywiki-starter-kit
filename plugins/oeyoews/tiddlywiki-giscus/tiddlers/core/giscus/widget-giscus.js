@@ -21,17 +21,10 @@ gisucs widget
       this.computeAttributes();
       this.execute();
 
-      const id = this.getAttribute('id', '');
-      const lang = this.getAttribute('lang', 'en');
-      const theme = this.getAttribute('theme', 'light');
+      const { id = '', lang = 'en', theme = 'light' } = this.attributes;
 
       const giscusConfigTiddler = '$:/plugins/oeyoews/tiddlywiki-giscus/config';
       const config = $tw.wiki.getTiddler(giscusConfigTiddler)?.fields || {};
-
-      // const loadingNode = this.document.createElement('div');
-      // loadingNode.textContent = 'Loading comments ...';
-      // parent.insertBefore(loadingNode, nextSibling);
-      // this.domNodes.push(loadingNode);
 
       if (id === '') {
         console.log(`💎 请传入正确的评论区id`);
