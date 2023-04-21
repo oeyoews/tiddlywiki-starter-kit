@@ -16,9 +16,6 @@ Meting widget
   class Meting extends Widget {
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
-      // this.addEventListeners([
-      //   { type: 'tm-navigate', handler: 'handleNavigateEvent' },
-      // ]);
     }
 
     render(parent, nextSibling) {
@@ -39,17 +36,6 @@ Meting widget
       parent.insertBefore(metingSpan, nextSibling);
       this.domNodes.push(metingSpan);
     }
-    // add refreshSelf
-
-    // handleNavigateEvent(event) {
-    //   const target = event.target,
-    //     to = target.getAttribute('to');
-    //   if (to === this.getAttribute('to')) {
-    //     this.refreshSelf();
-    //     event.preventDefault();
-    //     event.stopPropagation();
-    //   }
-    // }
   }
 
   exports.meting = Meting;

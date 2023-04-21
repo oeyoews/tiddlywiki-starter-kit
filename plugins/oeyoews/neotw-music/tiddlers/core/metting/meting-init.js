@@ -5,12 +5,13 @@ type: application/javascript
 meting-init
 \*/
 (function () {
-  var twmTiddler = '$:/plugins/oeyoews/neotw-music/config';
-  var twmTiddlerGet = $tw.wiki.getTiddler(twmTiddler);
-  var config = twmTiddlerGet ? twmTiddlerGet.fields : {};
+  // 使用解构赋值获取 twmTiddlerGet 对象中的 fields 属性
+  const { fields = {} } =
+    $tw.wiki.getTiddler('$:/plugins/oeyoews/neotw-music/config') || {};
+
   var metingjs = document.createElement('meting-js');
-  if (!config.id) {
-    console.warn('检测到你没有设置TWM id, 默认使用 2916766519');
+  if (!fields.id) {
+    console.warn('检测到你没有设置 TWM id, 默认使用 2916766519');
   }
 
   const options = [
@@ -22,17 +23,19 @@ meting-init
     'preload',
     'mutex',
     'fixed',
-    'list-olded',
+    'list-folded',
   ];
 
+  // cors
   options.forEach(option => {
-    metingjs.setAttribute(option, config[option]);
+    metingjs.setAttribute(option, fields[option]);
   });
 
-  // BUG
-  if (config.enablelrc === 'no') {
+  // 修复BUG：判断 enablelrc 属性是否为 'no'，如果是则将 'lrc-type' 属性设置为 'yes'
+  if (fields.enablelrc === 'no') {
     metingjs.setAttribute('lrc-type', 'yes');
   }
+
   document.body.appendChild(metingjs);
-  console.log(`🎶 当前歌单为 ${config.server} && ${config.id} `);
+  console.log(`🎶 当前歌单为 ${fields.server} && ${fields.id}`);
 })();

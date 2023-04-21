@@ -7,6 +7,14 @@
         "module-type": "library",
         "type": "application/javascript"
       }
+    },
+    {
+      "file": "meting.min.js",
+      "fields": {
+        "title": "$:/plugins/oeyoews/neotw-music/meting.min.js",
+        "module-type": "library",
+        "type": "application/javascript"
+      }
     }
   ]
 }

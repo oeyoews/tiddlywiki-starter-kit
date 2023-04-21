@@ -12,9 +12,7 @@ A music player widget that uses the APlayer library.
   /*global $tw: false */
   'use strict';
 
-  if (!$tw.browser) {
-    return;
-  }
+  if (!$tw.browser) return;
 
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
   const APlayer = require('$:/plugins/oeyoews/neotw-music/aplayer.min.js');
@@ -22,10 +20,10 @@ A music player widget that uses the APlayer library.
   class APlayerWidget extends Widget {
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
-      this.addEventListeners([
-        { type: 'click', handler: 'handleClick', id: 'aplayer' },
-        { type: 'tm-navigate', handler: 'handleNavigateEvent' },
-      ]);
+      // this.addEventListeners([
+      //   { type: 'click', handler: 'handleClick', id: 'aplayer' },
+      //   { type: 'tm-navigate', handler: 'handleNavigateEvent' },
+      // ]);
     }
 
     render(parent, nextSibling) {
@@ -35,7 +33,6 @@ A music player widget that uses the APlayer library.
 
       const audioName = this.getAttribute('audioName', '清风');
       const artistName = this.getAttribute('artistName', '');
-      // 1947926942
       const id = this.getAttribute('id', '1947926942');
       const audioUrl = this.getAttribute(
         'audioUrl',
@@ -59,8 +56,6 @@ A music player widget that uses the APlayer library.
         mini: false,
         order: 'list',
         preload: 'auto',
-        // lrcType: 3,
-        // autoplay: true,
         audio: [
           {
             name: audioName,
@@ -86,20 +81,6 @@ A music player widget that uses the APlayer library.
         return false;
       }
     }
-
-    // add aplayer.destory
-    // handleClick(event) {
-    //   const target = event.target,
-    //     to = target.getAttribute('to');
-    //   if (to === this.getAttribute('to')) {
-    //     this.refreshSelf();
-    //     event.preventDefault();
-    //     event.stopPropagation();
-    //   }
-    //   if (event.target === this.aplayer.element) {
-    //     this.aplayer.play();
-    //   }
-    // }
   }
 
   exports.aplayer = APlayerWidget;
