@@ -9,6 +9,7 @@
   "author": "oeyoews <jyao4783@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "update:npm": "npm-check-updates -u",
     "deploy:surge": "surge dist --domain neotw.surge.sh",
     "git:update": "git pull origin main && git push",
     "vercel:dev": "vercel dev",
@@ -27,31 +28,32 @@
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.14",
-    "pm2": "^5.2.2",
+    "pm2": "^5.3.0",
     "pngquant-bin": "^8.0.1",
-    "postcss": "^8.4.21",
+    "postcss": "^8.4.23",
     "postcss-import": "^15.1.0",
-    "prettier": "^2.8.6",
-    "prettier-plugin-tailwindcss": "^0.2.5",
+    "prettier": "^2.8.7",
+    "prettier-plugin-tailwindcss": "^0.2.7",
     "tailwindcss": "^3.3.1",
-    "terser": "^5.16.6",
-    "vercel": "^28.18.5"
+    "terser": "^5.17.1",
+    "vercel": "^28.20.0"
   },
   "dependencies": {
-    "@semantic-release/changelog": "^6.0.2",
+    "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "dateformat": "^5.0.3",
     "dotenv": "^16.0.3",
     "gradient-string": "^2.0.2",
-    "html-minifier-terser": "^7.1.0",
-    "kolorist": "^1.6.0",
+    "html-minifier-terser": "^7.2.0",
+    "kolorist": "^1.7.0",
+    "npm-check-updates": "^16.10.9",
     "prompts": "^2.4.2",
     "replace": "^1.2.2",
-    "semantic-release": "^20.1.0",
+    "semantic-release": "^21.0.1",
     "signale": "^1.4.0",
     "surge": "^0.23.1",
     "tiddlywiki": "github:Jermolene/TiddlyWiki5",
-    "zx": "^7.2.0"
+    "zx": "^7.2.1"
   },
   "bugs": {
     "url": "https://github.com/oeyoews/neotw/issues"
