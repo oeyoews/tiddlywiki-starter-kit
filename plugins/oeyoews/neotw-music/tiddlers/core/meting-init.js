@@ -1,9 +1,12 @@
 /*\
-title: $:/plugins/oeyoews/neotw-music/js/meting-init.js
+title: $:/plugins/oeyoews/neotw-music/meting-init.js
 type: application/javascript
+module-type: library
 
 meting-init
+
 \*/
+
 (function () {
   // 使用解构赋值获取 twmTiddlerGet 对象中的 fields 属性
   const { fields = {} } =

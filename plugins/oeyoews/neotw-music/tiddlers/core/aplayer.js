@@ -20,10 +20,6 @@ A music player widget that uses the APlayer library.
   class APlayerWidget extends Widget {
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
-      // this.addEventListeners([
-      //   { type: 'click', handler: 'handleClick', id: 'aplayer' },
-      //   { type: 'tm-navigate', handler: 'handleNavigateEvent' },
-      // ]);
     }
 
     render(parent, nextSibling) {
