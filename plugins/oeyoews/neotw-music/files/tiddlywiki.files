@@ -16,5 +16,19 @@
         "type": "application/javascript"
       }
     }
+  ],
+  "directories": [
+    {
+      "path": "styles",
+      "filesRegExp": "^.*\\.css$",
+      "fields": {
+        "title": {
+          "source": "filename",
+          "prefix": "$:/plugins/oeyoews/neotw-music/styles/"
+        },
+        "type": "text/css",
+        "tags": "$:/tags/Stylesheet"
+      }
+    }
   ]
 }
