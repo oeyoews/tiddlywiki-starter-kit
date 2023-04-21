@@ -1,5 +1,5 @@
 /*\
-title: fancybox widget
+title: fancybox/widget
 type: application/javascript
 module-type: widget
 

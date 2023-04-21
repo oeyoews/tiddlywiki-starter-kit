@@ -1,5 +1,5 @@
 /*\
-title: meting/startup.js
+title: $:/plugins/oeyoews/neotw-music/startup.js
 type: application/javascript
 module-type: startup
 
