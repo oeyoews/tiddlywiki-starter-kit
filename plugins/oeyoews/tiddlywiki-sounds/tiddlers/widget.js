@@ -26,6 +26,7 @@ sounds widget
       this.computeAttributes();
       this.execute();
 
+      let count = 0;
       const param = this.getAttribute('param', 'Click');
       const className = this.getAttribute('className');
       const widgetId = this.getAttribute('id');
@@ -35,8 +36,10 @@ sounds widget
       buttonNode.textContent = param;
       buttonNode.className = className;
 
-      buttonNode.onclick = event => {
-        playSound();
+      buttonNode.onclick = () => {
+        count++;
+        playSound('menu-open.mp3');
+        buttonNode.innerText = `按钮被点击了 ${count} 次`;
       };
 
       parent.insertBefore(buttonNode, nextSibling);

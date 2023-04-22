@@ -18,11 +18,10 @@ module-type: startup
   exports.startup = function () {
     const Howl = require('howler.min.js').Howl;
     window.playSound = function (filepath = 'click.mp3') {
-      const sound = new Howl({
+      new Howl({
         src: [filepath],
-      });
+      }).play();
 
-      sound.play();
       console.log(`${filepath}`);
     };
   };

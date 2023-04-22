@@ -4,3 +4,7 @@ title: $:/plugins/oeyoews/tiddlywiki-sounds/readme
 
 * [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/tiddlywiki-sounds]]
 * [[Demo|https://oeyoews.github.io/neotw]]
+
+!! ING
+
+<$soundPlay className="bg-rose-200 rounded hover:bg-rose-300 duration-200" />

@@ -7,11 +7,17 @@
         "module-type": "library",
         "type": "application/javascript"
       }
-    },
+    }
+  ],
+  "directories": [
     {
-      "file": "click.mp3",
+      "path": "sounds",
+      "filesRegExp": "^.*\\.mp3$",
       "fields": {
-        "title": "click.mp3",
+        "title": {
+          "source": "filename",
+          "prefix": ""
+        },
         "type": "audio/mpeg"
       }
     }
