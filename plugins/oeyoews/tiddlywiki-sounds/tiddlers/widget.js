@@ -39,7 +39,7 @@ sounds widget
       buttonNode.onclick = () => {
         count++;
         playSound('menu-open.mp3');
-        buttonNode.innerText = `按钮被点击了 ${count} 次`;
+        buttonNode.textContent = `${param} (${count})`;
       };
 
       parent.insertBefore(buttonNode, nextSibling);
