@@ -38,7 +38,7 @@ sounds widget
 
       buttonNode.onclick = () => {
         count++;
-        playSound();
+        howler();
         buttonNode.textContent = `${param} (${count})`;
       };
 

@@ -17,15 +17,15 @@ module-type: startup
 
   exports.startup = function () {
     const Howl = require('howler.min.js').Howl;
-    window.playSound = function (filepath) {
+    window.howler = function () {
       new Howl({
         src: [
           '/files/menu-open.mp3',
           'https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/plugins/oeyoews/tiddlywiki-sounds/files/sounds/menu-open.mp3',
         ],
-        onend: function () {
+        /* onend: function () {
           console.log('Finished!');
-        },
+        }, */
       }).play();
     };
   };
