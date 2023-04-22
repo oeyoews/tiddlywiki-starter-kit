@@ -37,6 +37,8 @@ sweetalert
         // do something here
         const swal = require('$:/plugins/oeyoews/sweetalert/sweetalert.min.js');
         swal('Button clicked'); // 控制台输出 log
+        // tiddlywiki-sounds
+        playSound();
         this.executing = false;
       };
 
