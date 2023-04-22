@@ -16,7 +16,7 @@ tags: $:/tags/ViewTemplate
 <span class="nauthor">
   <a style="text-decoration: none;" href={{{ [<currentTiddler>get[creator]addprefix[https://github.com/]] }}} class="tc-tiddlylink-external" target="_blank" rel="noopener noreferrer">
 <span class="transform hover:scale-125 inline-flex transition duration-300 ease-in-out">
-    <$avatar width=16 />
+    <$avatar width=16 sound="yes"/>
 </span>
   </a>
 {{!!creator}}&nbsp;

@@ -12,7 +12,7 @@ list-after:
 <!-- <$action-navigate $to="oeyoews"/> -->
 <$action-sendmessage $message="tm-modal" $param="oeyoews"/>
 <div class="hover:scale-110 transition duration-200 ease-in-out inline-flex">
-<$avatar width=24/>
+<$avatar width=24 sound="yes"/>
 </div>
 </$list>
 <$list filter="[<tv-config-toolbar-text>match[yes]]">

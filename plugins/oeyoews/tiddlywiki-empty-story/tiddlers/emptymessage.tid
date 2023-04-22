@@ -7,7 +7,7 @@ title: $:/config/EmptyStoryMessage
 <$action-sendmessage $message="tm-modal" $param="oeyoews"/>
   <!-- <$gravatar/> -->
 <div class="transform hover:scale-105 inline-flex transition duration-300 ease-in-out">
-  <$avatar />
+  <$avatar sound="yes"/>
 </div>
 </$button>
 </$list>
