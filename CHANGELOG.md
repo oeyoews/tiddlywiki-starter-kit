@@ -1,3 +1,10 @@
+## [3.209.1](https://github.com/oeyoews/neotw/compare/v3.209.0...v3.209.1) (2023-04-22)
+
+
+### Bug Fixes
+
+* cors for tiddlywiki-sounds ([43f8ddb](https://github.com/oeyoews/neotw/commit/43f8ddbe13d5075eefc91af32cc7bc10bb14632c))
+
 # [3.209.0](https://github.com/oeyoews/neotw/compare/v3.208.3...v3.209.0) (2023-04-22)
 
 
