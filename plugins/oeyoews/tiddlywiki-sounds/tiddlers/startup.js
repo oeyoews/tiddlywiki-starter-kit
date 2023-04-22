@@ -1,5 +1,5 @@
 /*\
-title: xxx/startup.js
+title: $:/plugins/oeyoews/tiddlywiki-sounds/startup.js
 type: application/javascript
 module-type: startup
 

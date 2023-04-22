@@ -1,5 +1,5 @@
 /*\
-title: sounds/widget.js
+title: $:/plugins/oeyoews/tiddlywiki-sounds/widget.js
 type: application/javascript
 module-type: widget
 
