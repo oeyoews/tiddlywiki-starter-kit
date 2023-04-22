@@ -205,7 +205,7 @@
         "name": "Tiddlywiki Sounds",
         "dependents": "",
         "list": "readme",
-        "readme": "!! Tiddlywiki Sounds\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/tiddlywiki-sounds]]\n* [[Demo|https://oeyoews.github.io/neotw]]\n",
+        "readme": "!! Tiddlywiki Sounds\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/tiddlywiki-sounds]]\n* [[Demo|https://oeyoews.github.io/neotw]]\n\n!! ING\n\n<$soundPlay className=\"bg-rose-200 rounded hover:bg-rose-300 duration-200\" />\n",
         "requires-reload": "yes",
         "icon": "data:image/svg+xml,%3Csvg%20stroke%3D%22currentColor%22%20fill%3D%22%23aaaaaa%22%20stroke-width%3D%220%22%20version%3D%221%22%20viewBox%3D%220%200%2048%2048%22%20enable-background%3D%22new%200%200%2048%2048%22%20height%3D%221em%22%20width%3D%221em%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill%3D%22%238BC34A%22%20d%3D%22M39%2C15c0-2.2-1.8-4-4-4h-6c-0.7%2C0-1.1-0.8-0.7-1.4c0.6-1%2C0.9-2.2%2C0.6-3.5c-0.4-2-1.9-3.6-3.8-4%20C21.8%2C1.4%2C19%2C3.9%2C19%2C7c0%2C1%2C0.3%2C1.8%2C0.7%2C2.6c0.4%2C0.6%2C0%2C1.4-0.8%2C1.4h-6c-2.2%2C0-4%2C1.8-4%2C4v7c0%2C0.7%2C0.8%2C1.1%2C1.4%2C0.7%20c1-0.6%2C2.2-0.9%2C3.5-0.6c2%2C0.4%2C3.6%2C1.9%2C4%2C3.8c0.7%2C3.2-1.8%2C6.1-4.9%2C6.1c-1%2C0-1.8-0.3-2.6-0.7C9.8%2C30.9%2C9%2C31.3%2C9%2C32v6c0%2C2.2%2C1.8%2C4%2C4%2C4%20h22c2.2%2C0%2C4-1.8%2C4-4V15z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%0A"
     },
