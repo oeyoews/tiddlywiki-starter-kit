@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>react</title>
+    <!-- <script src="./react.production.min.js"></script>
+    <script src="./react-dom.production.min.js"></script> -->
+    <script src="./react.development.js"></script>
+    <script src="./react-dom.development.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script charset="utf-8">
+      const example = 'demo';
+      const div = React.createElement('button', null, example);
+
+      const root = ReactDOM.createRoot(document.getElementById('root'));
+      root.render(div);
+    </script>
+  </body>
+</html>
