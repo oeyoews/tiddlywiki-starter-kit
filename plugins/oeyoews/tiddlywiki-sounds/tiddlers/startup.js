@@ -5,7 +5,7 @@ module-type: startup
 
 \*/
 
-(function() {
+(function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -15,9 +15,9 @@ module-type: startup
   exports.after = ['load-modules'];
   exports.synchronous = true;
 
-  exports.startup = function() {
+  exports.startup = function () {
     const Howl = require('howler.min.js').Howl;
-    window.howler = function(param = 'menu-open.mp3') {
+    window.howler = function (param = 'menu-open.mp3') {
       // TODO add pagecontrol button to toggle sound, and support dynamic buttons
       // if () return
       new Howl({
@@ -25,6 +25,7 @@ module-type: startup
           '/files/' + param,
           'https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/plugins/oeyoews/tiddlywiki-sounds/files/sounds/menu-open.mp3',
         ],
+        format: ['mp3'],
         /* onend: function () {
           console.log('Finished!');
         }, */
