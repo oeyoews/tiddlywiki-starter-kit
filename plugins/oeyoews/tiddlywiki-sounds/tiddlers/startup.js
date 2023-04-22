@@ -17,10 +17,10 @@ module-type: startup
 
   exports.startup = function () {
     const Howl = require('howler.min.js').Howl;
-    window.howler = function () {
+    window.howler = function (param = 'menu-open.mp3') {
       new Howl({
         src: [
-          '/files/menu-open.mp3',
+          '/files/' + param,
           'https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/plugins/oeyoews/tiddlywiki-sounds/files/sounds/menu-open.mp3',
         ],
         /* onend: function () {
