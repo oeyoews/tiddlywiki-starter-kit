@@ -3,7 +3,7 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox-ui/startup.js
 type: application/javascript
 module-type: startup
 
-fqncybox
+fancybox
 \*/
 
 (function () {
