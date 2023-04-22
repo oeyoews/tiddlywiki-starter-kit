@@ -38,7 +38,9 @@ sounds widget
 
       buttonNode.onclick = () => {
         count++;
-        playSound('menu-open.mp3');
+        playSound(
+          'https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/plugins/oeyoews/tiddlywiki-sounds/files/sounds/menu-open.mp3',
+        );
         buttonNode.textContent = `${param} (${count})`;
       };
 
