@@ -1,0 +1,10 @@
+created: 20230423040402015
+creator: oeyoews
+modified: 20230423040504309
+modifier: oeyoews
+tags: React
+title: react01
+type: text/vnd.tiddlywiki
+
+* 命令式 过程优先
+* 声明式 只关心结果, 不关心过程
