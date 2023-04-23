@@ -6,6 +6,8 @@ module-type: widget
 Gravatar and QQ  Github Avatar Widget(Lastest gqg)
 
 \*/
+
+// todo: enable link click
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
