@@ -33,13 +33,13 @@ type: text/vnd.tiddlywiki
 }
 </style>
 <div class="reuse-pane">
-  <small class="reuse-pane-content">$content$</small>
+  <small class="rounded bg-rose-200 reuse-pane-content duration-200 transition">$content$</small>
 </div>
 \end
 
 \define reuse-tiddler(title)
 <$macrocall $name="reuse-pane" content="""
-Jump to this tiddler：[[$title$]]
+[[$title$]]
 """ />
 
 {{$title$}}

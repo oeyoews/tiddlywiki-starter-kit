@@ -1,0 +1,16 @@
+tags: $:/tags/Macro
+title: $:/plugins/oeyoews/tiddlywiki-keywords/keywords
+
+\define o-k(text:"TODO", bg:rose-200)
+<div class="px-1 rounded font-normal bg-$bg$ inline">$text$</div>
+\end
+
+\define TODO() <<o-k "TODO" lime-100>>
+
+\define HACK() <<o-k "HACK" yellow-400>>
+
+\define FIXME() <<o-k "FIXME" red-500>>
+
+\define DONE() <<o-k "DONE" lime-500>>
+
+\define WARN() <<o-k "WARN" rose-600>>
