@@ -1,3 +1,10 @@
+# [3.212.0](https://github.com/oeyoews/neotw/compare/v3.211.0...v3.212.0) (2023-04-23)
+
+
+### Features
+
+* add tiddlywiki-keywords ([05c1cd7](https://github.com/oeyoews/neotw/commit/05c1cd783cc6d134c184d323f1d30c21fc63d4ec))
+
 # [3.211.0](https://github.com/oeyoews/neotw/compare/v3.210.1...v3.211.0) (2023-04-22)
 
 
