@@ -8,16 +8,41 @@
     <script src="./react-dom.production.min.js"></script> -->
     <script src="./react.development.js"></script>
     <script src="./react-dom.development.js"></script>
+    <script src="./babel.min.js"></script>
   </head>
 
   <body>
     <div id="root"></div>
-    <script charset="utf-8">
-      const example = 'demo';
-      const div = React.createElement('button', null, example);
+    <script charset="utf-8" type="text/babel">
+      const List = () => {
+        const data = [3, 2, 1];
+        return data.map((item, index) => <li key={index}>{item}</li>);
+      };
 
+      function App() {
+        return <List />;
+      }
+
+      const app = (
+        <div
+          id="App"
+          style={{
+            color: 'red',
+            backgroundColor: 'yellowgreen',
+          }}
+          onClick={() => {
+            alert('demo');
+          }}
+        >
+          backgroundCOlor
+          <button> demo </button>
+        </div>
+      );
+
+      // get root id
       const root = ReactDOM.createRoot(document.getElementById('root'));
-      root.render(div);
+      // render
+      root.render(<App />);
     </script>
   </body>
 </html>
