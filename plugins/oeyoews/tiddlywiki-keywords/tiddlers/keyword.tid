@@ -1,8 +1,8 @@
 title: $:/plugins/oeyoews/tiddlywiki-keywords/keywords
 tags: $:/tags/Macro
 
-\define o-k(text:"TODO", bg:rose-200)
-<div class="px-1 rounded font-normal bg-$bg$ inline">$text$</div>
+\define o-k(text:"Todo", bg:rose-200)
+<div class="px-1 rounded font-normal bg-$bg$ inline">{{{ [<__text__>uppercase[]]}}}</div>
 \end
 
 \define TODO() <<o-k "TODO" lime-100>>
