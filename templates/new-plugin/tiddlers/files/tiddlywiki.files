@@ -1,0 +1,15 @@
+{
+  "directories": [
+    {
+      "path": "./",
+      "filesRegExp": "^.*\\.css$",
+      "fields": {
+        "title": {
+          "source": "filename",
+          "prefix": "$:/plugins/${username}/${pluginname}/"
+        },
+        "type": "text/css"
+      }
+    }
+  ]
+}
