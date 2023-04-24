@@ -63,3 +63,5 @@ upload
 !.yarn/versions
 
 .vercel
+
+tiddlers/keepstate/nareng/pin-to-sidebar.tid
