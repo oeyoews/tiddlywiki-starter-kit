@@ -1,11 +1,12 @@
 /*\
-title: general-widget
+title: $:/plugins/${username}/${pluginname}/widget.js
 type: application/javascript
 module-type: widget
 
-general widget
+${pluginname} widget
 
 \*/
+
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
