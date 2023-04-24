@@ -1,3 +1,10 @@
+## [3.213.1](https://github.com/oeyoews/neotw/compare/v3.213.0...v3.213.1) (2023-04-24)
+
+
+### Performance Improvements
+
+* add volume to prevent sounds too bog ([68b3435](https://github.com/oeyoews/neotw/commit/68b34357cf2e3dbe1730233d411e0b3aba4cf96c))
+
 # [3.213.0](https://github.com/oeyoews/neotw/compare/v3.212.1...v3.213.0) (2023-04-24)
 
 
