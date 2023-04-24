@@ -304,7 +304,7 @@
         "name": "Markdown",
         "description": "Markdown parser based on markdown-it",
         "list": "readme config syntax license",
-        "version": "5.2.8-prerelease",
+        "version": "5.3.0-prerelease",
         "plugin-type": "plugin",
         "dependents": "",
         "type": "application/json",
