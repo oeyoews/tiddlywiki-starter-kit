@@ -1,10 +1,14 @@
 created: 20230424052256811
 creator: oeyoews
-modified: 20230424052359903
+modified: 20230424061236928
 modifier: oeyoews
 tags: React
 title: react-classnames
 type: text/vnd.tiddlywiki
+
+<div class="bg-red-200 rounded-md p-2 indent-4">
+Even use this classnames package, the local debug is normal, but this dist not generate the dynamic tailwindcss class
+</div>
 
 classnames 是一个 JavaScript 包，用于动态生成 CSS 类名字符串。它可以简化应用程序中条件渲染类名的过程，特别是在 React 应用程序中，当需要根据组件的 props 或 state 动态应用类名时。
 

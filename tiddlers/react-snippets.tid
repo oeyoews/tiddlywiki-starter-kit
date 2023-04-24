@@ -1,0 +1,35 @@
+created: 20230424064913112
+creator: oeyoews
+modified: 20230424070212991
+modifier: oeyoews
+tags: React
+title: react-snippets
+type: text/markdown
+
+## shortcuts
+
+`ctrl alt r` to search snippets(based vscode extensions)
+
+## imrc
+
+`import React, { Component } from 'react'`
+
+## imr
+
+`import React from 'react'`
+
+## rsc(React Stateless Component)
+```jsx
+
+import React from 'react';
+
+const ComponentName = () => {
+	return (
+		<div>
+			
+		</div>
+	);
+};
+
+export default ComponentName;
+```

@@ -1,0 +1,11 @@
+caption: Pinned
+created: 20230424104625532
+creator: oeyoews
+modified: 20230424104625532
+modifier: oeyoews
+tags: $:/tags/SideBar
+title: $:/keepstate/nareng/pin-to-sidebar
+type: text/vnd.tiddlywiki
+
+<div class=kk-pinned-tab>
+{{GettingStarted||$:/plugins/kookma/narenj/templates/ViewTemplate}}

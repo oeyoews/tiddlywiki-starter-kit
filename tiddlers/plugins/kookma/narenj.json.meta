@@ -1,0 +1,11 @@
+author: Mohammad rahmani
+core-version: >= 5.2.7
+description: Sidebar tools for edit and view tiddlers
+list: readme license history
+name: Narenj
+plugin-type: plugin
+source: https://github.com/kookma/TW-Narenj
+tags: 
+title: $:/plugins/kookma/narenj
+type: application/json
+version: 0.2.0
