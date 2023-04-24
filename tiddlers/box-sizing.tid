@@ -1,0 +1,17 @@
+created: 20230424025526316
+creator: oeyoews
+modified: 20230424025619682
+modifier: oeyoews
+tags: CSS
+title: box-sizing
+type: text/vnd.tiddlywiki
+
+The `box-sizing` property is useful for controlling the layout of elements on a webpage.
+
+By default, when you set the width or height of an element in CSS, it only applies to the content area of the element. If you add padding or a border to the element, the total width and height of the element will be larger than what you specified with the `width` and `height` properties, which can lead to unexpected layout issues.
+
+By setting the `box-sizing` property to `border-box`, the padding and border of an element are included in the total width and height of the element. This makes it easier to create predictable layouts and avoid layout issues caused by changes in padding or border settings.
+
+For example, if you have a grid layout of elements with fixed dimensions and you want to add a border around each element without changing the position of the elements, using `border-box` ensures that each element still takes up the same amount of space. Similarly, if you want to add padding to an element without affecting its position or layout within a container, using `border-box` ensures that the total size of the element remains unchanged.
+
+Overall, using `box-sizing` can simplify your CSS code and make it easier to create consistent and predictable layouts on a webpage.

@@ -1,0 +1,19 @@
+created: 20230424033338520
+creator: oeyoews
+modified: 20230424033402055
+modifier: oeyoews
+tags: React Vue
+title: vue-react-comments
+type: text/vnd.tiddlywiki
+
+Vue的单文件组件和React的组件在某些方面是相似的，但也有许多区别。
+
+Vue的单文件组件是以.vue后缀名的文件，包含了HTML、CSS和JavaScript代码。它们通常包含了一个template模板、一个script脚本和一个style样式，这使得Vue组件的代码更加模块化，易于维护。在单文件组件中，你可以快速地编写逻辑代码、样式和模板，并且可以轻松地将它们分离和组合。
+
+React的组件则通常是由JavaScript函数或类构成，其中包含了状态（state）和属性（props）。React组件的优点是可以直接在JavaScript中编写HTML和CSS，而不需要将它们分离到不同的文件中。
+
+一个显着的区别是Vue组件可以在同一个文件中同时包含HTML、CSS和JavaScript代码，这使得开发人员可以更加高效地管理组件代码。另外，Vue提供了一些有用的内置指令，如v-bind、v-model、v-if等，可以帮助你更加轻松地管理模板中的数据和事件处理程序。
+
+相较之下，React的特点是更加灵活。React允许你编写类或函数组件，在JavaScript中编写HTML和CSS，从而使得React的开发人员可以更加自由地管理组件代码和状态。
+
+总之，Vue的单文件组件和React的组件有各自的优点和适用场景。你可以根据你的需求和偏好来选择使用哪种技术。

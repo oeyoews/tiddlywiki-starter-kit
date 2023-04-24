@@ -1,0 +1,28 @@
+created: 20230424034648007
+creator: oeyoews
+modified: 20230424034716406
+modifier: oeyoews
+tags: React
+title: react-strictmode
+type: text/vnd.tiddlywiki
+
+StrictMode is a built-in component in React that helps you to identify common issues and potential bugs earlier during development. When you wrap a section of your application in StrictMode, React will perform additional checks and give you warning messages in the console for things like:
+
+Using deprecated methods
+Identifying components with unsafe lifecycle methods
+Detecting unexpected side effects during rendering
+Finding potential issues with the usage of context APIs
+Detecting issues with the usage of setState and useReducer functions
+In summary, StrictMode can be used as a tool to improve the quality of your code and to help you catch and fix issues before they become bigger problems. You can wrap your entire application or specific components with StrictMode in your index.js file like this:
+
+```jsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+```

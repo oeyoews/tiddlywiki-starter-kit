@@ -41,7 +41,10 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
         getDefaultEmail || '2956398608@qq.com',
       );
 
-      var gclass = this.getAttribute('gclass', 'gravatar-56');
+      var gclass = this.getAttribute(
+        'gclass',
+        'gravatar-56 object-cover object-center',
+      );
       var size = this.getAttribute('size', '100');
       var alt = this.getAttribute('alt', 'Avatar');
       var src = `https://q1.qlogo.cn/g?b=qq&nk=${email}&s=${size}`;
