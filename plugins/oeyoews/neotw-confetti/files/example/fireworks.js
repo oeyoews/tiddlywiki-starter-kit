@@ -1,7 +1,7 @@
 // load confetti
 require('$:/plugins/oeyoews/neotw-confetti/library/confetti.min.js');
 
-function fireworks() {
+const fireworks = () => {
   const isDev = $tw.wiki.getTiddlerText('$:/info/url/protocol');
   const confettiType = 'fireworks';
 
@@ -22,7 +22,7 @@ function fireworks() {
     return Math.random() * (max - min) + min;
   }
 
-  var interval = setInterval(function() {
+  var interval = setInterval(function () {
     var timeLeft = animationEnd - Date.now();
 
     if (timeLeft <= 0) {
@@ -49,9 +49,9 @@ function fireworks() {
     'background: linear-gradient(45deg, #fc466b, #3f5efb); color: black;border-radius: 3px;padding: 3px;',
   );
   // return null;
-}
+};
 
-function pride() {
+const pride = () => {
   var duration = 0.5 * 1000;
   var end = Date.now() + duration;
   (function frame() {
@@ -61,9 +61,9 @@ function pride() {
       requestAnimationFrame(frame);
     }
   })();
-}
+};
 
-function snow() {
+const snow = () => {
   const confettiType = 'snow';
 
   var duration = 15 * 1000;
@@ -100,9 +100,9 @@ function snow() {
     }
   })();
   console.log(confettiType);
-}
+};
 
-function realistic() {
+const realistic = () => {
   var count = 200;
   var defaults = {
     origin: { y: 0.7 },
@@ -138,9 +138,9 @@ function realistic() {
     spread: 120,
     startVelocity: 45,
   });
-}
+};
 
-function random() {
+const random = () => {
   function randomInRange(min, max) {
     return Math.random() * (max - min) + min;
   }
@@ -151,17 +151,17 @@ function random() {
     particleCount: randomInRange(50, 100),
     origin: { y: 0.6 },
   });
-}
+};
 
-function center() {
+const center = () => {
   confetti({
     particleCount: 100,
     spread: 70,
     origin: { y: 0.6 },
   });
-}
+};
 
-function msg() {
+const msg = () => {
   var duration = 3 * 1000;
   var animationEnd = Date.now() + duration;
   var defaults = {
@@ -176,7 +176,7 @@ function msg() {
     return Math.random() * (max - min) + min;
   }
 
-  var interval = setInterval(function() {
+  var interval = setInterval(function () {
     var timeLeft = animationEnd - Date.now();
 
     if (timeLeft <= 0) {
@@ -197,7 +197,7 @@ function msg() {
       }),
     );
   }, 250);
-}
+};
 
 module.exports = {
   fireworks,
