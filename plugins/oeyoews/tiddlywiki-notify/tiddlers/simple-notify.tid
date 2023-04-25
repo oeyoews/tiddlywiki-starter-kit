@@ -2,6 +2,8 @@ title: simple-notify.js
 tags: $:/tags/RawMarkupWikified/BottomBody
 type: application/javascript
 
+<!-- tags: $:/tags/RawMarkup -->
+
 `<script>`
 {{simple-notify.min.js}}
 `</script>`

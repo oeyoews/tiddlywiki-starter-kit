@@ -13,6 +13,8 @@ neotw startup descption
     if (!$tw.browser) return;
     // const swal = require('$:/plugins/oeyoews/sweetalert/sweetalert.min.js');
     // swal('Hi');
+    // need require simple-notify, but this module not support require
+    // pushNotify();
     console.log(
       '%c A modern style notebook based on tiddlywiki. @oeyoews  🎉',
 
