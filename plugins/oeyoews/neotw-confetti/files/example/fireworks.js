@@ -22,7 +22,7 @@ function fireworks() {
     return Math.random() * (max - min) + min;
   }
 
-  var interval = setInterval(function () {
+  var interval = setInterval(function() {
     var timeLeft = animationEnd - Date.now();
 
     if (timeLeft <= 0) {
@@ -48,6 +48,7 @@ function fireworks() {
     `%c📣 Yay! neotw-confetti is working! ${confettiType} 🎉`,
     'background: linear-gradient(45deg, #fc466b, #3f5efb); color: black;border-radius: 3px;padding: 3px;',
   );
+  // return null;
 }
 
 function pride() {
@@ -175,7 +176,7 @@ function msg() {
     return Math.random() * (max - min) + min;
   }
 
-  var interval = setInterval(function () {
+  var interval = setInterval(function() {
     var timeLeft = animationEnd - Date.now();
 
     if (timeLeft <= 0) {
