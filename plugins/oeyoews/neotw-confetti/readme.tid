@@ -10,12 +10,8 @@ title: $:/plugins/oeyoews/neotw-confetti/readme
 
 !! Usage
 
-<$confetti text="snow" type="snow"/>
-<$confetti text="fireworks" type="firework"/>
-<$confetti text="msg" type="msg"/>
-<$confetti text="pride" type="pride"/>
-<$confetti text="random" type="random"/>
-
-!! TODO
-
-* support action
+<$confetti text="🌨️ snow" type="snow"/>
+<$confetti text="🔥 fireworks" type="fireworks"/>
+<$confetti text="🍾 msg" type="msg"/>
+<$confetti text="🎉 pride" type="pride"/>
+<$confetti text="🎲 random" type="random"/>
