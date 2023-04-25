@@ -1,0 +1,22 @@
+created: 20230425132750106
+creator: oeyoews
+modified: 20230425132822517
+modifier: oeyoews
+tags: JavaScript
+title: try-catch
+type: text/vnd.tiddlywiki
+
+在 JavaScript 中，try...catch 语句中的 catch 代码块会自动接收一个异常对象作为参数。当 try 代码块中的代码发生异常时，JavaScript 引擎会创建一个异常对象，并将其传递给 catch 代码块。这个异常对象包含了异常的类型、消息、堆栈等信息，可以在 catch 代码块中使用这个对象来诊断和处理异常。
+
+例如，在下面的示例中，try 代码块中的 throw 语句会抛出一个 Error 类型的异常，catch 代码块中的 error 参数就会接收到这个异常对象。
+
+```javascript
+try {
+  throw new Error('Something went wrong');
+} catch (error) {
+  console.error(error.name); // 输出 "Error"
+  console.error(error.message); // 输出 "Something went wrong"
+}
+```
+
+需要注意的是，catch 代码块中的参数名（如上面的 error）是任意的，只要符合标识符的命名规范即可。通常情况下，它被命名为 error 或 err，以表明它是一个异常对象。
