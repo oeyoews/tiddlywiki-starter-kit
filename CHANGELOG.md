@@ -1,3 +1,10 @@
+# [3.215.0](https://github.com/oeyoews/neotw/compare/v3.214.0...v3.215.0) (2023-04-25)
+
+
+### Features
+
+* try to add daysyui ([efd0193](https://github.com/oeyoews/neotw/commit/efd0193737e1044b06deb5730079be17c7135362))
+
 # [3.214.0](https://github.com/oeyoews/neotw/compare/v3.213.1...v3.214.0) (2023-04-25)
 
 
