@@ -21,7 +21,9 @@ load confetti
     // load some confetti effects
     // TODO: support params
     $tw.rootWidget.addEventListener('om-confetti-launch', () => {
-      Confetti.pride();
+      try {
+        Confetti.pride();
+      } catch {}
     });
     window.Confetti = require('$:/plugins/oeyoews/neotw-confetti/example/fireworks.js');
     // startup trigger fireworks
