@@ -22,6 +22,7 @@ load confetti
     // TODO: support params
     $tw.rootWidget.addEventListener('om-confetti-launch', () => {
       try {
+        howler('click01.mp3');
         Confetti.pride();
       } catch {}
     });

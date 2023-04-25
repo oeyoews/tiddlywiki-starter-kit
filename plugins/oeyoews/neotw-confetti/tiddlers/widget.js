@@ -25,6 +25,7 @@ module-type: widget
 
       const text = this.getAttribute('text', 'Click Me!');
       const button = this.document.createElement('button');
+      button.className = 'bg-red-200 rounded m-1';
       button.textContent = text;
       button.addEventListener('click', this.handleClick.bind(this));
 

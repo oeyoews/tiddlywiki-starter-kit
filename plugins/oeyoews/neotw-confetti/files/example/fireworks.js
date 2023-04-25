@@ -44,10 +44,10 @@ const fireworks = () => {
     );
   }, 250);
 
-  console.log(
-    `%c📣 Yay! neotw-confetti is working! ${confettiType} 🎉`,
-    'background: linear-gradient(45deg, #fc466b, #3f5efb); color: black;border-radius: 3px;padding: 3px;',
-  );
+  // console.log(
+  //   `%c📣 Yay! neotw-confetti is working! ${confettiType} 🎉`,
+  //   'background: linear-gradient(45deg, #fc466b, #3f5efb); color: black;border-radius: 3px;padding: 3px;',
+  // );
   // return null;
 };
 
@@ -99,7 +99,7 @@ const snow = () => {
       requestAnimationFrame(frame);
     }
   })();
-  console.log(confettiType);
+  // console.log(confettiType);
 };
 
 const realistic = () => {
@@ -161,12 +161,21 @@ const center = () => {
   });
 };
 
+const centerSound = () => {
+  howler();
+  confetti({
+    particleCount: 100,
+    spread: 70,
+    origin: { y: 0.6 },
+  });
+};
+
 const msg = () => {
   var duration = 3 * 1000;
   var animationEnd = Date.now() + duration;
   var defaults = {
     startVelocity: 30,
-    spread: 360,
+    spread: 260,
     ticks: 60,
     scalar: 0.6,
     zIndex: -100,
@@ -206,5 +215,6 @@ module.exports = {
   realistic,
   random,
   center,
+  centerSound,
   msg,
 };

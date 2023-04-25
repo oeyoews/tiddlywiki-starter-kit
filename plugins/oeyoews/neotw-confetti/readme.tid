@@ -8,8 +8,10 @@ title: $:/plugins/oeyoews/neotw-confetti/readme
   <img src="https://img.shields.io/badge/Powered by-confetti-green?style=flat" />
 </a>
 
-!! Usage
+!! Examples
 
+<div class="grid grid-rows-2 grid-flow-col gap-2">
+<$confetti text="🔊 sound" type="centerSound"/>
 <$confetti text="🔥 fireworks" type="fireworks"/>
 <$confetti text="🎉 pride" type="pride"/>
 <$confetti text="🌨️ snow" type="snow"/>
@@ -17,10 +19,15 @@ title: $:/plugins/oeyoews/neotw-confetti/readme
 <$confetti text="🍾 msg" type="msg"/>
 <$confetti text="🎲 random" type="random"/>
 <$confetti text="🎲 center" type="center"/>
+</div>
 
 !! with action-sendmessage
 
 <$button>
 <$action-sendmessage $message="om-confetti-launch"/>
-Click Me
+🔊 Click Me
 </$button>
+
+!! Usage
+
+> 👋 TODO
