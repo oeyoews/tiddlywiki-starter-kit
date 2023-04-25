@@ -1,3 +1,10 @@
+## [3.216.1](https://github.com/oeyoews/neotw/compare/v3.216.0...v3.216.1) (2023-04-25)
+
+
+### Performance Improvements
+
+* remove plugin-info border ([93192e3](https://github.com/oeyoews/neotw/commit/93192e3c13fa229ad656bc6f2786b93f2433d9e2))
+
 # [3.216.0](https://github.com/oeyoews/neotw/compare/v3.215.0...v3.216.0) (2023-04-25)
 
 
