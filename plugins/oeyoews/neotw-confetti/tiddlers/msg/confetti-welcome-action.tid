@@ -1,5 +1,5 @@
 title: $:/plugins/oeyoews/neotw-confetti/confetti-welcome-action
-tags: $:/tags/StartupAction/PostRender
+<!-- tags: $:/tags/StartupAction/PostRender -->
 
 <!-- $tw.notifier.display('Index'); -->
 <$list filter="[{$:/info/url/protocol}prefix[https]]">
