@@ -1,3 +1,10 @@
+# [3.214.0](https://github.com/oeyoews/neotw/compare/v3.213.1...v3.214.0) (2023-04-25)
+
+
+### Features
+
+* add tiddlywiki-notify ([1104815](https://github.com/oeyoews/neotw/commit/11048154e3aa15245d13a540842e8e2acba3639f))
+
 ## [3.213.1](https://github.com/oeyoews/neotw/compare/v3.213.0...v3.213.1) (2023-04-24)
 
 
