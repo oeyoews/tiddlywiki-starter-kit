@@ -26,6 +26,11 @@ notify widget
       this.computeAttributes();
       this.execute();
 
+      const status = this.getAttribute('status');
+      const title = this.getAttribute('title');
+      const text = this.getAttribute('text');
+      const autoclose = this.getAttribute('autoclose');
+
       const param = this.getAttribute('param', 'Click');
       const className = this.getAttribute('className');
       const widgetId = this.getAttribute('id');
@@ -36,7 +41,7 @@ notify widget
       buttonNode.className = className;
 
       buttonNode.onclick = () => {
-        howler();
+        pushNotify(status, title, text, autoclose);
       };
 
       parent.insertBefore(buttonNode, nextSibling);

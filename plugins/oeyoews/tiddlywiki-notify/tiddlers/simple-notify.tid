@@ -1,0 +1,7 @@
+title: simple-notify.js
+tags: $:/tags/RawMarkupWikified/BottomBody
+type: application/javascript
+
+`<script>`
+{{simple-notify.min.js}}
+`</script>`

@@ -16,25 +16,31 @@ module-type: startup
   exports.synchronous = true;
 
   exports.startup = function () {
-    window.Notify = require('simple-notify.min.js');
-    window.pushNotify = function () {
+    // not suppor require umd
+    // window.Notify = require('simple-notify.min.js');
+    window.pushNotify = (
+      status = 'success',
+      title = 'Notify',
+      text = 'Text',
+      effect = 'slide',
+      autoclose = true,
+    ) =>
       new Notify({
-        status: 'success',
-        title: 'Notify Title',
-        text: 'Notify text lorem ipsum',
-        effect: 'fade',
+        status,
+        title,
+        text,
+        effect,
         speed: 300,
+        autoclose,
         customClass: null,
         customIcon: null,
         showIcon: true,
-        showCloseButton: true,
-        autoclose: false,
+        showCloseButton: false,
         autotimeout: 3000,
         gap: 20,
         distance: 20,
         type: 1,
         position: 'right top',
       });
-    };
   };
 })();
