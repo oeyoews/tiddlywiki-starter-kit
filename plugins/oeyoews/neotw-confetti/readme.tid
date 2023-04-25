@@ -17,3 +17,10 @@ title: $:/plugins/oeyoews/neotw-confetti/readme
 <$confetti text="🍾 msg" type="msg"/>
 <$confetti text="🎲 random" type="random"/>
 <$confetti text="🎲 center" type="center"/>
+
+!! with action-sendmessage
+
+<$button>
+<$action-sendmessage $message="om-confetti-launch"/>
+Click Me
+</$button>
