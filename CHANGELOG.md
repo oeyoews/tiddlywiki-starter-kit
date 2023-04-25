@@ -1,3 +1,10 @@
+# [3.216.0](https://github.com/oeyoews/neotw/compare/v3.215.0...v3.216.0) (2023-04-25)
+
+
+### Features
+
+* add confetti globally ([ed01ec5](https://github.com/oeyoews/neotw/commit/ed01ec5d901da342e184744011d7209f82d8287b))
+
 # [3.215.0](https://github.com/oeyoews/neotw/compare/v3.214.0...v3.215.0) (2023-04-25)
 
 
