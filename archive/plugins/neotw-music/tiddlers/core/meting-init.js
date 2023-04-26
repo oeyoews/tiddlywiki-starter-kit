@@ -8,6 +8,11 @@ meting-init
 \*/
 
 (function () {
+  // aplayer
+  window.APlayer = require('$:/plugins/oeyoews/neotw-music/aplayer.min.js');
+  // meting
+  require('$:/plugins/oeyoews/neotw-music/meting.min.js');
+
   // 使用解构赋值获取 twmTiddlerGet 对象中的 fields 属性
   const { fields = {} } =
     $tw.wiki.getTiddler('$:/plugins/oeyoews/neotw-music/config') || {};

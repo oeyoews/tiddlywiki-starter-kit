@@ -3,7 +3,8 @@ title: $:/plugins/oeyoews/neotw-music/startup.js
 type: application/javascript
 module-type: startup
 
-meting
+neotw music
+
 \*/
 
 (function () {
@@ -17,11 +18,6 @@ meting
   exports.synchronous = true;
 
   exports.startup = function () {
-    // aplayer
-    window.APlayer = require('$:/plugins/oeyoews/neotw-music/aplayer.min.js');
-    // meting
-    require('$:/plugins/oeyoews/neotw-music/meting.min.js');
-    // load options
     require('$:/plugins/oeyoews/neotw-music/meting-init.js');
   };
 })();
