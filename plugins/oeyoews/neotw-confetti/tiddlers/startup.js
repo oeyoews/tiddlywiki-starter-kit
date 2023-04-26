@@ -28,6 +28,6 @@ load confetti
     });
     window.Confetti = require('$:/plugins/oeyoews/neotw-confetti/example/fireworks.js');
     // startup trigger fireworks
-    // Confetti.fireworks();
+    Confetti.fireworks();
   };
 })();

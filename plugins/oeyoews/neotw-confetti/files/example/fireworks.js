@@ -5,7 +5,8 @@ const fireworks = () => {
   const isDev = $tw.wiki.getTiddlerText('$:/info/url/protocol');
   const confettiType = 'fireworks';
 
-  // if (isDev === 'http:') return;
+  if (isDev === 'http:') return;
+
   var duration = 3 * 1000;
   var animationEnd = Date.now() + duration;
   var defaults = {
