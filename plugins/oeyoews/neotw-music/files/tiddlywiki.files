@@ -26,7 +26,6 @@
           "source": "filename",
           "prefix": "$:/plugins/oeyoews/neotw-music/styles/"
         },
-        "type": "text/css",
         "tags": "$:/tags/Stylesheet"
       }
     }
