@@ -19,7 +19,7 @@ load confetti
 
   exports.startup = function () {
     // load some confetti effects
-    // TODO: support params
+    // TODO: support params; confetti.reset()
     $tw.rootWidget.addEventListener('om-confetti-launch', () => {
       try {
         howler('click01.mp3');
