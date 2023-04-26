@@ -1,3 +1,10 @@
+## [3.216.2](https://github.com/oeyoews/neotw/compare/v3.216.1...v3.216.2) (2023-04-26)
+
+
+### Performance Improvements
+
+* **music:** move load from startup.js ([c564bec](https://github.com/oeyoews/neotw/commit/c564becebe36f7cbc6843faa06a40094ff32fed0))
+
 ## [3.216.1](https://github.com/oeyoews/neotw/compare/v3.216.0...v3.216.1) (2023-04-25)
 
 
