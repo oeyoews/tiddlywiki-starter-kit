@@ -1,16 +1,16 @@
 created: 20230331105639997
 creator: oeyoews
-modified: 20230425174813628
+modified: 20230426012812953
 modifier: oeyoews
 tags: 
 title: bing-everyday-seven
 type: text/vnd.tiddlywiki
 
 <div class="grid grid-rows-2 grid-flow-col gap-4 bg-slate-200 rounded-md p-8">
-[img [https://bing.biturl.top/?resolution=1920&format=image&index=0&mkt=zh-CN]]
-[img [https://bing.biturl.top/?resolution=1920&format=image&index=1&mkt=zh-CN]]
-[img [https://bing.biturl.top/?resolution=1920&format=image&index=2&mkt=zh-CN]]
-[img [https://bing.biturl.top/?resolution=1920&format=image&index=3&mkt=zh-CN]]
-[img [https://bing.biturl.top/?resolution=1920&format=image&index=4&mkt=zh-CN]]
-[img [https://bing.biturl.top/?resolution=1920&format=image&index=5&mkt=zh-CN]]
+[img class="hover:scale-105 duration-200" [https://bing.biturl.top/?resolution=1920&format=image&index=0&mkt=zh-CN]]
+[img class="hover:scale-105 duration-200" [https://bing.biturl.top/?resolution=1920&format=image&index=1&mkt=zh-CN]]
+[img class="hover:scale-105 duration-200" [https://bing.biturl.top/?resolution=1920&format=image&index=2&mkt=zh-CN]]
+[img class="hover:scale-105 duration-200" [https://bing.biturl.top/?resolution=1920&format=image&index=3&mkt=zh-CN]]
+[img class="hover:scale-105 duration-200" [https://bing.biturl.top/?resolution=1920&format=image&index=4&mkt=zh-CN]]
+[img class="hover:scale-105 duration-200" [https://bing.biturl.top/?resolution=1920&format=image&index=5&mkt=zh-CN]]
 </div>
