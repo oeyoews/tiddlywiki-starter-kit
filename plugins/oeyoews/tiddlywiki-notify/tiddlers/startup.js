@@ -1,7 +1,9 @@
 /*\
-title: notify/startup.js
+title: $:/plugins/oeyoews/tiddlywiki-notify/startup.js
 type: application/javascript
 module-type: startup
+
+simple notify
 
 \*/
 
@@ -14,8 +16,7 @@ module-type: startup
   exports.platforms = ['browser'];
   exports.after = ['load-modules'];
   exports.synchronous = true;
-
-  exports.startup = function () {
+  exports.startup = () => {
     // not suppor require umd
     // window.Notify = require('simple-notify.min.js');
     window.pushNotify = (
