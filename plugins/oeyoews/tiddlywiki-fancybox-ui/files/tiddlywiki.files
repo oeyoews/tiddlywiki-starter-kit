@@ -11,14 +11,15 @@
   ],
   "directories": [
     {
-      "path": "library",
+      "path": "./",
       "filesRegExp": "^.*\\.min.css$",
       "fields": {
         "title": {
           "source": "filename",
           "prefix": "$:/plugins/oeyoews/tiddlywiki-fancybox/library/"
         },
-        "type": "text/css"
+        "type": "text/css",
+        "tags": "$:/tags/Stylesheet"
       }
     },
     {
