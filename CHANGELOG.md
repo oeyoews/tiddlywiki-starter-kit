@@ -1,3 +1,10 @@
+# [3.217.0](https://github.com/oeyoews/neotw/compare/v3.216.2...v3.217.0) (2023-04-26)
+
+
+### Features
+
+* add shiraz to use table-dynamic ([7f812de](https://github.com/oeyoews/neotw/commit/7f812de2d821a717fcf3403d28ade33665debe57))
+
 ## [3.216.2](https://github.com/oeyoews/neotw/compare/v3.216.1...v3.216.2) (2023-04-26)
 
 
