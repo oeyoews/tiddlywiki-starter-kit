@@ -1,3 +1,10 @@
+## [3.217.1](https://github.com/oeyoews/neotw/compare/v3.217.0...v3.217.1) (2023-04-26)
+
+
+### Bug Fixes
+
+* remove type/css for neotw-music ([22b1b40](https://github.com/oeyoews/neotw/commit/22b1b401161c6346b675f722bcdb2f5d30d039cd))
+
 # [3.217.0](https://github.com/oeyoews/neotw/compare/v3.216.2...v3.217.0) (2023-04-26)
 
 
