@@ -1,3 +1,10 @@
+## [3.218.1](https://github.com/oeyoews/neotw/compare/v3.218.0...v3.218.1) (2023-04-26)
+
+
+### Performance Improvements
+
+* split fancybox.min.css ([b13851f](https://github.com/oeyoews/neotw/commit/b13851f9852cda1f9e59627052105fe628d2e085))
+
 # [3.218.0](https://github.com/oeyoews/neotw/compare/v3.217.1...v3.218.0) (2023-04-26)
 
 
