@@ -8,19 +8,16 @@ meting-init
 \*/
 
 (function () {
-  // aplayer
   window.APlayer = require('$:/plugins/oeyoews/neotw-music/aplayer.min.js');
-  // meting
   require('$:/plugins/oeyoews/neotw-music/meting.min.js');
 
-  // 使用解构赋值获取 twmTiddlerGet 对象中的 fields 属性
   const { fields = {} } =
     $tw.wiki.getTiddler('$:/plugins/oeyoews/neotw-music/config') || {};
 
   var metingjs = document.createElement('meting-js');
-  if (!fields.id) {
-    console.warn('检测到你没有设置 TWM id, 默认使用 2916766519');
-  }
+  // if (!fields.id) {
+  //   console.warn('检测到你没有设置 TWM id, 默认使用 2916766519');
+  // }
 
   const options = [
     'server',
@@ -34,7 +31,6 @@ meting-init
     'list-folded',
   ];
 
-  // cors
   options.forEach(option => {
     metingjs.setAttribute(option, fields[option]);
   });
@@ -45,5 +41,5 @@ meting-init
   }
 
   document.body.appendChild(metingjs);
-  console.log(`🎶 当前歌单为 ${fields.server} && ${fields.id}`);
+  // console.log(`🎶 当前歌单为 ${fields.server} && ${fields.id}`);
 })();

@@ -15,20 +15,6 @@ fancybox
   exports.platforms = ['browser'];
   exports.after = ['load-modules'];
   exports.synchronous = true;
-
-  exports.startup = function () {
-    // es5
-    const Fancybox =
-      require('$:/plugins/oeyoews/tiddlywiki-fancybox/library/fancybox.min.js').Fancybox;
-    const options = require('$:/plugins/oeyoews/tiddlywiki-fancybox/fancybox.options.js');
-    Fancybox.defaults = {
-      // ...Fancybox.defaults,
-      ...options,
-    };
-    Fancybox.bind('[data-fancybox]', {
-      wheel: 'close', // pan slide soom false
-      startIndex: '0', // not work
-      hideScrollbar: true,
-    });
-  };
+  exports.startup = () =>
+    require('$:/plugins/oeyoews/tiddlywiki-fancybox-ui/init.js');
 })();
