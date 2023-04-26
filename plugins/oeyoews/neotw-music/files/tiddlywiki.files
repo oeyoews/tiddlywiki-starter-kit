@@ -20,7 +20,7 @@
   "directories": [
     {
       "path": "styles",
-      "filesRegExp": "^.*\\.css$",
+      "filesRegExp": "^.*\\.min.css$",
       "fields": {
         "title": {
           "source": "filename",
