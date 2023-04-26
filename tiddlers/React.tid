@@ -1,9 +1,9 @@
 created: 20230426035425719
 creator: oeyoews
-modified: 20230426040818715
+modified: 20230426041802481
 modifier: oeyoews
 tags: React
 title: React
 type: text/vnd.tiddlywiki
 
-<<table-dynamic filter:[tag[React]![React]] fields:"title created tags summary tbl-expand" caption:"" class:"capitalize" editButton:"no" pagination:"yes" emptyMessage:"Nothing">>
+<<table-dynamic filter:[tag[React]![React]] fields:"title created tags tbl-expand" caption:"" class:"capitalize" editButton:"no" pagination:"yes" sortOp:'sortan' emptyMessage:"Nothing">>
