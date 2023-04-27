@@ -1,0 +1,12 @@
+{
+  "title": "$:/plugins/oeyoews/tiddlywiki-windicss",
+  "description": "Tiddlywiki Windicss",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.2.5",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "Tiddlywiki Windicss",
+  "dependents": [],
+  "list": "readme explore"
+}

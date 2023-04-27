@@ -1,0 +1,28 @@
+{
+  "directories": [
+    {
+      "path": "./",
+      "filesRegExp": "^.*\\.min.js$",
+      "fields": {
+        "title": {
+          "source": "filename",
+          "prefix": "$:/plugins/oeyoews/tiddlywiki-windicss/"
+        },
+        "module-type": "library",
+        "type": "application/javascript"
+      }
+    },
+    {
+      "path": "./",
+      "filesRegExp": "^.*\\.css$",
+      "fields": {
+        "title": {
+          "source": "filename",
+          "prefix": "$:/plugins/oeyoews/tiddlywiki-windicss/"
+        },
+        "tags": "$:/tags/Stylesheet",
+        "type": "text/css"
+      }
+    }
+  ]
+}
