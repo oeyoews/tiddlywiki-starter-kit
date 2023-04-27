@@ -1,3 +1,10 @@
+## [3.218.2](https://github.com/oeyoews/neotw/compare/v3.218.1...v3.218.2) (2023-04-27)
+
+
+### Bug Fixes
+
+* remove extra message param ([db8c6c8](https://github.com/oeyoews/neotw/commit/db8c6c8c7b61167141bff79619134d214ac4e30f))
+
 ## [3.218.1](https://github.com/oeyoews/neotw/compare/v3.218.0...v3.218.1) (2023-04-26)
 
 
