@@ -13,7 +13,7 @@ sweetalert
 
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
 
-  class YourPlugin extends Widget {
+  class SwalWidget extends Widget {
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
       this.executing = false;
@@ -46,5 +46,5 @@ sweetalert
     }
   }
 
-  exports.swal = YourPlugin;
+  exports.swal = SwalWidget;
 })();

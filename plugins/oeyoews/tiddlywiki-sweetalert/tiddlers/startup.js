@@ -12,39 +12,22 @@ swealalert
   /*global $tw: false */
   'use strict';
 
-  exports.name = 'neotw-startup-hook';
+  exports.name = 'swal-startup-hook';
   exports.platforms = ['browser'];
   exports.after = ['load-modules'];
   exports.synchronous = true;
 
   exports.startup = function () {
-    const swal = require('$:/plugins/oeyoews/sweetalert/sweetalert.min.js');
-    const neotw = JSON.parse(localStorage.getItem('neotw')) || {};
-    const currentDate = new Date().toDateString();
-    const noNotifyDate = neotw.noNotifyDate;
+    require('$:/plugins/oeyoews/tiddlywiki-sweetalert/startup-message.js');
 
-    if (window.location.protocol === 'https:' && noNotifyDate !== currentDate) {
-      swal({
-        title: '👋 Welcome to neotw !',
-        text: '',
-        icon: 'success',
-        buttons: {
-          no: {
-            text: 'Silent',
-            value: false,
-          },
-          yes: {
-            text: 'Close',
-            value: true,
-            visible: true,
-          },
-        },
-      }).then(result => {
-        if (!result) {
-          neotw.noNotifyDate = currentDate;
-          localStorage.setItem('neotw', JSON.stringify(neotw));
-        }
-      });
-    }
+    // TODO add params
+    // https://github.com/Jermolene/TiddlyWiki5/compare/master...confetti-plugin
+    $tw.rootWidget.addEventListener('om-swal', event => {
+      try {
+        swal(event.detail.message);
+      } catch (err) {
+        console.log(err);
+      }
+    });
   };
 })();
