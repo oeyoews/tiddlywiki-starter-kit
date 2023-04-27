@@ -1,0 +1,16 @@
+{
+  "directories": [
+    {
+      "path": "./",
+      "filesRegExp": "^.*\\.min.js$",
+      "fields": {
+        "title": {
+          "source": "filename",
+          "prefix": "$:/plugins/oeyoews/tiddlywiki-unocss/"
+        },
+        "module-type": "library",
+        "type": "application/javascript"
+      }
+    }
+  ]
+}
