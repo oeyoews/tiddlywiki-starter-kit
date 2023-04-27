@@ -1,6 +1,6 @@
 title: oeyoews
 mask-closable: yes
-subtitle: {{$:/plugins/oeyoews/neotw-music/icon}} {{$:/plugins/oeyoews/tiddlywiki-modal-ui/close-modal}}
+subtitle: {{$:/plugins/oeyoews/tiddlywiki-modal-ui/close-modal}}
 type: text/markdown
 class: o-tm
 
