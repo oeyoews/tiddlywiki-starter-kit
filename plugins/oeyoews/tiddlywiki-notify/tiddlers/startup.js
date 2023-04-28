@@ -36,7 +36,7 @@ simple notify
         customClass: null,
         customIcon: null,
         showIcon: true,
-        showCloseButton: false,
+        showCloseButton: true,
         autotimeout: 3000,
         gap: 20,
         distance: 20,
