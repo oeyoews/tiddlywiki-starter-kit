@@ -6,21 +6,13 @@ tags: $:/tags/ViewTemplate
 
 <$reveal type="nomatch" stateTitle=<<folded-state>> text="hide" tag="div" retain="yes" animate="yes">
 <div class="tc-subtitle">
-<!-- 300 -->
 <$list filter="[all[current]has[creator]]">
-<!-- <span class="nauthor"> -->
-<!--   <a style="text-decoration: none !important;" href={{{ [<tid>get[ousername]else[oeyoews]addprefix[https://github.com/]] }}} target="_blank" rel="noopener noreferrer"> -->
-<!--     <$image source={{{ [<tid>get[ouserimage]else<tidGravatar>]}}} width=22 /> -->
-<!--   </a> -->
-<!-- {{!!creator}} &nbsp; -->
-<span class="nauthor">
   <a style="text-decoration: none;" href={{{ [<currentTiddler>get[creator]addprefix[https://github.com/]] }}} class="tc-tiddlylink-external" target="_blank" rel="noopener noreferrer">
 <span class="transform hover:scale-125 inline-flex transition duration-300 ease-in-out">
     <$avatar width=16 sound="yes"/>
 </span>
   </a>
 {{!!creator}}&nbsp;
-</span>
 </$list>
 <$list filter="[all[current]has[created]]">
 <$text text={{{[<tid>get[ocreated]else[👉]]}}} /> created <$view field="created" format="date" template="YYYY/0MM/0DD"/>&nbsp;&nbsp;
