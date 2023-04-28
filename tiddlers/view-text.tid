@@ -1,0 +1,15 @@
+created: 20230428062125021
+creator: oeyoews
+modified: 20230428062224901
+modifier: oeyoews
+tags: Taro React
+title: view-text
+type: text/markdown
+
+在 Taro 中，`View` 组件和 `Text` 组件是两个基础组件，被广泛地用于构建 React Native 应用程序的 UI。它们各自有不同的作用和特点。
+
+- `View` 组件：`View` 组件是一个容器组件，用于组织和布局其他子组件。类似于 HTML 中的 `div` 标签，`View` 组件没有具体的显示效果，只是一个透明的容器。在 Taro 中使用 `View` 组件可以方便地实现布局和组织结构，例如嵌套、定位和缩放等。与 HTML 的 `div` 标签不同的是，在 React Native 应用程序中，`View` 组件支持滚动和分页等功能，可以使您更轻松地创建复杂的用户界面。
+
+- `Text` 组件：`Text` 组件用于显示文本。类似于 HTML 中的 `span` 标签，`Text` 组件支持多种样式和排版属性，例如字体大小、颜色、行高、加粗、斜体等。在 Taro 中，使用 `Text` 组件可以方便地定义文本的样式和布局，从而创建更加美观的用户界面。
+
+总之，`View` 组件和 `Text` 组件是 Taro 中两个常用的基础组件，它们各自有不同的作用和特点。`View` 组件是一个容器，用于组织和布局其他子组件，而 `Text` 组件用于显示文本，并支持多种样式和排版属性。在 Taro 中使用这两个组件可以方便地创建美观、高效的 React Native 应用程序。

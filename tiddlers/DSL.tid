@@ -1,0 +1,11 @@
+created: 20230428081342677
+creator: oeyoews
+modified: 20230428081351713
+modifier: oeyoews
+tags: 
+title: DSL
+type: text/vnd.tiddlywiki
+
+DSL（Domain-Specific Language，领域特定语言）框架是一种用于简化特定领域的编程语言开发的工具。其目的是为了在特定领域内提高开发效率和代码可读性，以及减少错误。
+
+通常情况下，DSL 框架会提供一种领域特定的语法和编译器，使得用户可以快速地构建专门用于某个领域的应用或系统。与通用编程语言相比，DSL 更加专注于某个特定领域，因此它能够提供更丰富、更直观、更易用的语法和工具，使得用户可以更加轻松地完成相关任务
