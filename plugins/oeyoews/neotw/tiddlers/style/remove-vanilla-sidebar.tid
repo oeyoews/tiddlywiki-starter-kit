@@ -1,6 +1,0 @@
-tags: $:/tags/Stylesheet
-title: $:/plugins/oeyoews/neotw/style/remove-vanilla-sidebar
-
-.tc-sidebar-scrollable {
-    display: none;
-}

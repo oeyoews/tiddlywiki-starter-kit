@@ -1,5 +1,5 @@
 title: $:/plugins/oeyoews/neotw/style/footer
-tags: $:/tags/Stylesheet
+<!-- tags: $:/tags/Stylesheet -->
 
 <$list filter="[{$:/layout}match[$:/core/ui/PageTemplate]]">
 footer {
