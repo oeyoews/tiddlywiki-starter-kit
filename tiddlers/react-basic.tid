@@ -1,0 +1,20 @@
+created: 20230428083657671
+creator: oeyoews
+modified: 20230428084244705
+modifier: oeyoews
+tags: React
+title: react-basic
+type: text/markdown
+
+* 在最新的react版本中，也可以直接使用<></>来代替Fragment。其中<>唯一可以拥有的属性为key。即< key='xxx'></>
+
+* 使用数组map循环更新li，一定要给li添加对应的key值，否则虽然正常运行，但是会报错误警告。不建议直接使用index作为key值。
+* 在JSX中写注释，格式为：{/* xxxxx */}或{//xxxx}，注意如果使用单行注释，最外的大括号必须单独占一行。注释尽在开发源代码中显示，在导出的网页中不会有该注释。
+
+* 给标签添加样式时，推荐使用className，不推荐使用class。如果使用class虽然运行没问题，但是会报错误警告，因为样式class这个关键词和js中声明类的class冲突。类似的还有标签中for关键词，推荐改为htmlFor。
+
+## 声明式开发" 概念解释
+"声明式开发"：基于数据定义和数据改变，视图层自动更新。
+"命令式开发"：基于具体执行命令更改视图，例如DOM操作修改。
+
+注意：声明式开发并不是不进行DOM操作，而是把DOM操作频率降到最低。

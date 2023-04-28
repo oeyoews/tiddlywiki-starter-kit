@@ -1,0 +1,17 @@
+created: 20230428084651907
+creator: oeyoews
+modified: 20230428084705660
+modifier: oeyoews
+tags: React
+title: redux
+type: text/vnd.tiddlywiki
+
+Redux和useState不会发生冲突。它们都是React中不同类型的状态管理工具，用于在组件之间共享数据。
+
+useState是React内置的状态管理机制，它允许在函数式组件中定义和更新组件的本地状态（state）。每个useState调用都只影响到当前组件本身。使用useState时，React会根据状态更新重新渲染组件的UI。
+
+Redux是一个独立于React的状态容器，用于管理应用程序的全局状态。Redux允许在多个组件之间分享相同的状态，并使用单向数据流来确保数据的一致性。Redux通常与React结合使用，但也可以与其他框架和库一起使用。
+
+在React中使用Redux时，Redux存储在单独的状态树中，而不是存储在组件的本地状态中。组件可以通过dispatch（）函数向Redux发送操作，操作触发Redux中对应的reducer函数，从而更新Redux中的状态树。然后，React会在Redux状态被更新时重新呈现受影响的组件。
+
+使用Redux或useState，取决于应用程序的需要和开发者的偏好。Redux适用于大型应用程序，需要跨组件共享状态的情况。而useState通常用于小型应用程序或仅需要在本地控制状态的组件。开发者可以根据实际情况并结合实践来选择合适的状态管理工具。

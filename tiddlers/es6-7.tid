@@ -1,0 +1,19 @@
+created: 20230428085004938
+creator: oeyoews
+modified: 20230428085015579
+modifier: oeyoews
+tags: ES6
+title: es6-7
+type: text/vnd.tiddlywiki
+
+ES6和ES7都是JavaScript的版本，主要有以下区别：
+
+ES6（ECMAScript 2015）是JavaScript的第六个版本，于2015年发布。ES6引入了很多新特性，包括箭头函数、let/const、解构赋值、类、Promise等。这些新特性使得JavaScript更加强大、灵活，代码可读性更高。
+
+ES7（ECMAScript 2016）是JavaScript的第七个版本，于2016年发布。ES7新增了一些语言特性，包括Array.prototype.includes()、指数操作符**、Async/Await等。这些新增特性也使得JavaScript的语言能力进一步提升，更易于开发人员使用。
+
+可以总结如下：
+
+- ES6和ES7都是JavaScript的版本，其中ES6是第六个版本，ES7是第七个版本。
+- ES6引入了很多新特性，使得JavaScript更加强大、灵活、易读；ES7新增了一些语言特性，使得JavaScript的语言能力进一步提升。
+- 目前市场上已经普遍使用ES6语法，而ES7特性的使用仍受到限制，需要通过转译工具进行转译。因此，在实际项目开发中，还需要根据需求和兼容性考虑选择使用哪种语法。
