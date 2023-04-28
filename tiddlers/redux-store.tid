@@ -1,0 +1,9 @@
+created: 20230428090025500
+creator: oeyoews
+modified: 20230428090042178
+modifier: oeyoews
+tags: React Redux
+title: redux-store
+type: text/vnd.tiddlywiki
+
+在 redux 中，store 是一个包含整个应用程序状态的对象。它是一个单一的 JavaScript 对象，其中包含应用程序的所有数据和状态。store 可以被视为应用程序中的一个全局变量，您可以在任何地方访问它，以获取或更改应用程序的状态。store 通过 reducer 处理 action，并根据 action 的类型更新应用程序的状态。当状态发生变化时，store 将通知应用程序中的任何订阅者，以便它们可以更新自己的状态和 UI。store 可以通过 Provider 组件提供给 React 组件树中的所有组件。
