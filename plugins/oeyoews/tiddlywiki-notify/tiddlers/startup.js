@@ -24,7 +24,7 @@ simple notify
       title = 'Notify',
       text = 'Text',
       effect = 'slide',
-      autoclose = true,
+      autoclose = false,
     ) =>
       new Notify({
         status,

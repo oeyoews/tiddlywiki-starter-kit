@@ -11,7 +11,7 @@
     {
       "file": "simple-notify.min.css",
       "fields": {
-        "title": "simple-notify.min.css",
+        "title": "$:/plugins/oeyoews/tiddlywiki-notify/simple-notify.min.css",
         "type": "text/css",
         "tags": "$:/tags/Stylesheet"
       }
