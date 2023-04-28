@@ -1,0 +1,13 @@
+created: 20230428132945828
+creator: oeyoews
+modified: 20230428133119871
+modifier: oeyoews
+tags: React
+title: usestate-count
+type: text/vnd.tiddlywiki
+
+```jsx
+import React, { useState } from 'react'
+
+cons [count, setCount] = useState(0); // deconstruction
+```

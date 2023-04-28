@@ -1,7 +1,7 @@
 created: 20230202124524313
 creator: oeyoews
 empty: yes
-modified: 20230320142255146
+modified: 20230428161736674
 modifier: oeyoews
 page-cover: 
 tags: $:/tags/Stylesheet
@@ -40,11 +40,6 @@ type: text/vnd.tiddlywiki
 input[type=range]:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
-}
-
-<!-- general  -->
-.neotw-fw {
-	font-weight: bold;
 }
 
 <!-- ?? -->
@@ -166,18 +161,6 @@ button.tc-unfold-banner {
   border:2px solid none;
   word-break: break-all; word-wrap: break-word;}
 
-.neotw-span {
-	border-radius: 3px;
-	padding: 0 5px;
-	color: black;
-}
-
-.neotw-span {
-	border-radius: 3px;
-	padding: 0 5px;
-	color: black;
-}
-
 .b1 {
 	background-color: #DCE2F1;
 }
@@ -193,10 +176,6 @@ button.tc-unfold-banner {
 
 .yellow {
 	background-color: yellow;
-}
-
-.neotw-underline {
-	text-decoration: underline 3px cyan;
 }
 
 input:focus, textarea:focus {
