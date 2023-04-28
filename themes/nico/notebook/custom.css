@@ -74,6 +74,11 @@ a {
   text-decoration: none !important;
 }
 
+a.tc-tiddlylink:hover {
+  text-decoration: underline 2px !important;
+  transition: 0.2s;
+}
+
 /* selection */
 *::selection {
   background-color: #d7d4f0;
