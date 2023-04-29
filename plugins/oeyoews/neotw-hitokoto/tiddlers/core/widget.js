@@ -4,7 +4,9 @@ type: application/javascript
 module-type: widget
 
 Hitokoto widget
+
 \*/
+
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
@@ -31,7 +33,7 @@ Hitokoto widget
 
       const hitokotoSpan = this.document.createElement('span');
       hitokotoSpan.className =
-        'text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-500 to-yellow-500 cursor-pointer text-xs select-none line-clamp-1';
+        'text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-500 to-yellow-500 cursor-pointer text-xs line-clamp-1';
       parent.insertBefore(hitokotoSpan, nextSibling);
       this.domNodes.push(hitokotoSpan);
 
@@ -52,9 +54,10 @@ Hitokoto widget
         fetch('https://v1.hitokoto.cn')
           .then(response => response.json())
           .then(data => {
+            // add hover show
             const hitokotoText = data.hitokoto + ' @' + data.from;
             hitokotoSpan.textContent = hitokotoText;
-            console.log(hitokotoText); // 控制台输出 log
+            // console.log(hitokotoText); // 控制台输出 log
           })
           .catch(console.error)
           .finally(() => {
@@ -62,13 +65,28 @@ Hitokoto widget
           });
       };
 
-      if (enableClick === 'yes') {
+      if (enableClick === 'yes' && window.innerWidth > 768) {
         parent.addEventListener('click', event => {
           if (event.target !== hitokotoSpan) {
+            event.preventDefault();
             return;
           }
           fetchHitokoto();
         });
+        // copy
+        /* hitokotoSpan.setAttribute('title', '点击复制, 右键切换');
+        hitokotoSpan.addEventListener('click', () => {
+          document.execCommand('copy');
+          window.getSelection().removeAllRanges();
+        });
+        document.addEventListener('copy', event => {
+          event.preventDefault();
+          if (event.clipboardData) {
+            const hitokotoText = hitokotoSpan.textContent;
+            event.clipboardData.setData('text/plain', hitokotoText);
+          }
+          pushNotify();
+        }); */
       }
 
       fetchHitokoto();
