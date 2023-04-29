@@ -1,0 +1,9 @@
+created: 20230429114253181
+creator: oeyoews
+modified: 20230429114306733
+modifier: oeyoews
+tags: JavaScript
+title: true
+type: text/vnd.tiddlywiki
+
+if(link) 表示当 link 存在且不是空字符串、false、0、null、undefined 等 Falsy 值时，if 条件判断为真。如果 link 是一个 Truthy 值，则 if 语句块中的代码会被执行。

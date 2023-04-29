@@ -33,7 +33,8 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
       );
       const Username = $tw.wiki.getTiddlerText('$:/status/UserName');
       const username = this.getAttribute('username', Username || 'oeyoews');
-      var isCenter = this.getAttribute('center', false);
+      var isCenter = this.getAttribute('center');
+      const link = this.getAttribute('link');
       var width = this.getAttribute('width', '56');
       var type = this.getAttribute('type', 'qq');
       var email = this.getAttribute(
@@ -75,8 +76,19 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
       img.setAttribute('src', src);
       img.setAttribute('alt', alt);
 
-      parent.insertBefore(img, nextSibling);
-      this.domNodes.push(img);
+      let ele = null;
+      if (link) {
+        var a = this.document.createElement('a');
+        a.appendChild(img);
+        a.href = link;
+        a.setAttribute('target', '_blank');
+        ele = a;
+      } else {
+        ele = img;
+      }
+
+      parent.insertBefore(ele, nextSibling);
+      this.domNodes.push(ele);
     };
   }
 
