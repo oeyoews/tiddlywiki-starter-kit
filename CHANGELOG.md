@@ -1,3 +1,10 @@
+# [3.225.0](https://github.com/oeyoews/neotw/compare/v3.224.0...v3.225.0) (2023-04-29)
+
+
+### Features
+
+* update vercel.json ([744c540](https://github.com/oeyoews/neotw/commit/744c54053f5e38b037749b2feae1cf18303448fd))
+
 # [3.224.0](https://github.com/oeyoews/neotw/compare/v3.223.0...v3.224.0) (2023-04-29)
 
 
