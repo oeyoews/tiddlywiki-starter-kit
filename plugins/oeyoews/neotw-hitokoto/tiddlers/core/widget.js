@@ -4,7 +4,9 @@ type: application/javascript
 module-type: widget
 
 Hitokoto widget
+
 \*/
+
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
