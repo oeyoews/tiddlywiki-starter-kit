@@ -1,0 +1,10 @@
+created: 20230429011646413
+creator: oeyoews
+modified: 20230429011742917
+modifier: oeyoews
+tags: ES6
+title: primitive
+type: text/vnd.tiddlywiki
+
+* string, number, boolean null undefined are primitive
+* object and array are non-primitive(ref)
