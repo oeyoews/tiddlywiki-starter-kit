@@ -1,3 +1,10 @@
+# [3.223.0](https://github.com/oeyoews/neotw/compare/v3.222.0...v3.223.0) (2023-04-29)
+
+
+### Features
+
+* remove extra container and styles for gravatar ([552f7e2](https://github.com/oeyoews/neotw/commit/552f7e2f6a67f4c92b17712e85614a10292a2354))
+
 # [3.222.0](https://github.com/oeyoews/neotw/compare/v3.221.0...v3.222.0) (2023-04-29)
 
 
