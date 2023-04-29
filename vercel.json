@@ -1,6 +1,5 @@
 {
   "alias": "neotw",
-  "outputDirectory": "dist",
   "build": {
     "command": "yarn run build:oeyoews",
     "output": "dist"
