@@ -3,12 +3,8 @@ title: $:/config/EmptyStoryMessage
 <center>
 <$list filter="[[$:/plugins/oeyoews/tiddlywiki-gravatar]has[plugin-type]]">
 <$button class="bg-transparent">
-<!-- <$action-navigate $to="oeyoews"/> -->
 <$action-sendmessage $message="tm-modal" $param="oeyoews"/>
-  <!-- <$gravatar/> -->
-<div class="transform hover:scale-105 inline-flex transition duration-300 ease-in-out">
-  <$avatar sound="yes"/>
-</div>
+<$avatar center=true/>
 </$button>
 </$list>
 <!-- <h2 class=""> {{$:/status/UserName}} </h2> -->

@@ -40,14 +40,9 @@ gravatar widget
       const width = this.getAttribute('width', '56');
       // add width
       // dont modify it, unless you know that how to work
-      const gclass = this.getAttribute('gclass', 'gravatar-56');
       const galt = this.getAttribute('alt', 'gravatar');
 
       const gravatarUrl = this.getGravatarUrl(email, size);
-
-      const gContainer = this.document.createElement('div');
-      gContainer.className = gclass;
-      gContainer.setAttribute('style', `max-width: ${width}px;`);
 
       const img = this.document.createElement('img');
       img.src = gravatarUrl;
