@@ -71,7 +71,7 @@ blockquote > div {
 /* remove extra underline with image lin */
 a {
   color: #007bff;
-  /* text-decoration: none !important; */
+  text-decoration: none !important;
 }
 
 /* selection */

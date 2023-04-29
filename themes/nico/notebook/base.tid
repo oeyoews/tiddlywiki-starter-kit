@@ -279,6 +279,10 @@ input[type="search"]::-webkit-search-cancel-button {
   color: <<colour primary>>;
 }
 
+.nc-sidebar .tc-tiddlylink:hover {
+  text-decoration: underline !important;
+}
+
 @media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
   .nc-sidebar {
     position: fixed;
