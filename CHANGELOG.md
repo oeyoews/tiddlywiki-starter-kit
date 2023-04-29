@@ -1,3 +1,10 @@
+# [3.222.0](https://github.com/oeyoews/neotw/compare/v3.221.0...v3.222.0) (2023-04-29)
+
+
+### Features
+
+* add hitokoto ([41e2424](https://github.com/oeyoews/neotw/commit/41e2424963f1c4db9376bb6c45db9eb48bd3e42b))
+
 # [3.221.0](https://github.com/oeyoews/neotw/compare/v3.220.0...v3.221.0) (2023-04-28)
 
 
