@@ -1,7 +1,7 @@
 title: $:/plugins/oeyoews/tiddlywiki-keywords/keywords
 tags: $:/tags/Macro
 
-\define o-k(text:"Todo", bg:rose-200, icon)
+\define o-k(text:"Todo", bg:"red-200", icon)
 <div class="px-1 rounded font-normal bg-$bg$ inline">$icon$ {{{ [<__text__>uppercase[]]}}}</div>
 \end
 
