@@ -67,10 +67,9 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
       }
 
       var img = this.document.createElement('img');
-      img.className =
-        'rounded-full align-middle m-1 duration-200 transition shadow-lg';
+      img.className = 'rounded-full align-middle m-1 duration-200 transition';
       if (isCenter) {
-        img.className += ' ' + 'block mx-auto';
+        img.className += ' ' + 'block mx-auto  shadow-lg';
       }
       img.setAttribute('style', `max-width: ${width}px`);
       img.setAttribute('src', src);
