@@ -7,6 +7,13 @@
   "github": {
     "silent": true
   },
+  "production": {
+    "branch": "main"
+  },
+  "preview": {
+    "branch": "dev",
+    "env": {}
+  },
   "git": {
     "deploymentEnabled": {
       "gh-pages": false
