@@ -100,6 +100,8 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
         a.appendChild(img);
         a.href = link;
         a.setAttribute('target', '_blank');
+        a.setAttribute('rel', 'noopener noreferrer');
+        a.setAttribute('style', 'text-decoration: none;');
         ele = a;
       } else {
         ele = img;

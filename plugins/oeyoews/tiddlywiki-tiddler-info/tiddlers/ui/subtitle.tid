@@ -7,9 +7,7 @@ tags: $:/tags/ViewTemplate
 <$reveal type="nomatch" stateTitle=<<folded-state>> text="hide" tag="div" retain="yes" animate="yes">
 <div class="tc-subtitle">
 <$list filter="[all[current]has[creator]]">
-  <a style="text-decoration: none;" href={{{ [<currentTiddler>get[creator]addprefix[https://github.com/]] }}} class="tc-tiddlylink-external" target="_blank" rel="noopener noreferrer">
-    <$avatar width=16 sound="yes"/>
-  </a>
+    <$avatar width=16 link="https://github.com/oeyoews" />
 {{!!creator}}&nbsp;
 </$list>
 <$list filter="[all[current]has[created]]">
