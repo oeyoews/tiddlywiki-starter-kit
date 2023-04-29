@@ -21,12 +21,13 @@ gisucs widget
       this.computeAttributes();
       this.execute();
 
-      const { id = '', lang = 'en', theme = 'light' } = this.attributes;
+      const { id, lang = 'en', theme = 'light' } = this.attributes;
 
       const giscusConfigTiddler = '$:/plugins/oeyoews/tiddlywiki-giscus/config';
       const config = $tw.wiki.getTiddler(giscusConfigTiddler)?.fields || {};
 
-      if (id === '') {
+      // TODO
+      if (!id) {
         console.log(`💎 请传入正确的评论区id`);
         const warnNode = this.document.createElement('center');
         warnNode.style.color = 'red';

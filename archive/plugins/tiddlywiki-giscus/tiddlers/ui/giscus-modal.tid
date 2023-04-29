@@ -2,17 +2,12 @@ title: $:/plugins/oeyoews/tiddlywiki-giscus/giscus-modal
 mask-closable: yes
 subtitle: {{$:/plugins/oeyoews/tiddlywiki-giscus/icon}} Giscus {{$:/plugins/oeyoews/tiddlywiki-modal-ui/close-modal}}
 class: o-tm
+tags: $:/tags/ViewTemplate
 
-<!-- <$list filter="[[$:/plugins/oeyoews/neotw-hitokoto]has[plugin-type]]"> -->
-<!-- <center> -->
-<!-- <$ohitokoto /> -->
-<!-- </center> -->
-<!-- </$list> -->
-
-<!-- theme -->
-<!-- <div class="clear-both"> -->
+<!-- subfilter TODO -->
+<!-- remove focussedTiddler use js variable -->
+<$list filter="[all[current]!is[system]]">
+<div class="shadow-md rounded-lg p-2 m-2">
 <$giscus id={{$:/temp/focussedTiddler}} lang="en" theme={{{ [[$:/plugins/oeyoews/tiddlywiki-giscus/config]get[gtheme]else[light]] }}}/>
-<!-- </div> -->
-<!-- utteranc -->
-<!-- <div class="gh-comments-wrapper"></div> -->
-<!-- <$macrocall $name="github-comments" current=<<currentTiddler>>/> -->
+</div>
+</$list>
