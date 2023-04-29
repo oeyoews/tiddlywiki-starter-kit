@@ -1,6 +1,10 @@
 {
+  "alias": "neotw",
   "outputDirectory": "dist",
-  "buildCommand": "yarn build:oeyoews",
+  "build": {
+    "command": "yarn run build:oeyoews",
+    "output": "dist"
+  },
   "installCommand": "yarn workspaces focus --all --production",
   "cleanUrls": true,
   "trailingSlash": false,
@@ -11,8 +15,7 @@
     "branch": "main"
   },
   "preview": {
-    "branch": "dev",
-    "env": {}
+    "branch": "dev"
   },
   "git": {
     "deploymentEnabled": {
