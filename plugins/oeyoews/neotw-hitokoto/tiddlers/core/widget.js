@@ -54,10 +54,11 @@ Hitokoto widget
         fetch('https://v1.hitokoto.cn')
           .then(response => response.json())
           .then(data => {
-            // add hover show
-            const hitokotoText = data.hitokoto + ' @' + data.from;
-            hitokotoSpan.textContent = hitokotoText;
-            // console.log(hitokotoText); // 控制台输出 log
+            // add hover show TODO
+            const hitokotoText = data.hitokoto;
+            const hitokotoFrom = '@' + data.from;
+            hitokotoSpan.textContent = `${hitokotoText} ${hitokotoFrom}`;
+            // console.log(hitokotoText);
           })
           .catch(console.error)
           .finally(() => {
