@@ -7,6 +7,6 @@
   "type": "application/json",
   "plugin-type": "plugin",
   "name": "${upperpluginname}",
-  "dependents": [],
+  "dependents": ["$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"],
   "list": "readme explore"
 }
