@@ -11,12 +11,6 @@
   "github": {
     "silent": true
   },
-  "production": {
-    "branch": "main"
-  },
-  "preview": {
-    "branch": "dev"
-  },
   "git": {
     "deploymentEnabled": {
       "gh-pages": false
