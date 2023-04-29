@@ -1,15 +1,15 @@
 title: $:/plugins/oeyoews/tiddlywiki-keywords/keywords
 tags: $:/tags/Macro
 
-\define o-k(text:"Todo", bg:"red-200", icon)
+\define ok(text:"Todo", bg:"red-200", icon)
 <div class="px-1 rounded font-normal bg-$bg$ inline">$icon$ {{{ [<__text__>uppercase[]]}}}</div>
 \end
 
-\define TODO() <<o-k "TODO" lime-100>>
-\define DONE() <<o-k "DONE" lime-500>>
-\define WARN() <<o-k "WARN" rose-600>>
+\define TODO() <<ok "TODO" lime-100>>
+\define DONE() <<ok "DONE" lime-500>>
+\define WARN() <<ok "WARN" rose-600>>
 
-\define HACK() <<o-k "HACK" yellow-400>>
+\define HACK() <<ok "HACK" yellow-400>>
 
-\define FIXME() <<o-k "FIXME" red-500>>
-\define FIX() <<o-k "FIX" red-500>>
+\define FIXME() <<ok "FIXME" red-500>>
+\define FIX() <<ok "FIX" red-500>>
