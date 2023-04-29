@@ -4,8 +4,9 @@ title: $:/config/EmptyStoryMessage
 <$list filter="[[$:/plugins/oeyoews/tiddlywiki-gravatar]has[plugin-type]]">
 <$button class="bg-transparent">
 <$action-sendmessage $message="tm-modal" $param="oeyoews"/>
-<$avatar center=true/>
+<$avatar />
 </$button>
+<$hitokoto />
 </$list>
 <!-- <h2 class=""> {{$:/status/UserName}} </h2> -->
 	<!-- <$list filter="[{$:/info/url/protocol}match[https:]]"> -->
