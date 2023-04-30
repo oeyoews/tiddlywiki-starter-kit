@@ -1,10 +1,10 @@
 title: $:/plugins/oeyoews/tiddlywiki-cards/bing
 
 \define img(number:0)
-<img data-fancybox="bing" class="cursor-pointer h-48 w-full object-cover hover:scale-105 duration-200 rounded-lg shadow-lg" src={{{ [[https://bing.biturl.top/?resolution=1920&format=image&index=]addsuffix<__number__>] }}} alt="Card Image">
+<img data-fancybox="bing" class="cursor-pointer h-48 w-full object-cover hover:scale-105 duration-200 rounded-lg" src={{{ [[https://bing.biturl.top/?resolution=1920&format=image&index=]addsuffix<__number__>] }}} alt="Card Image">
 \end
 
-<div class="flex overflow-auto gap-4 rounded-lg p-2">
+<div class="flex overflow-auto gap-4 rounded-lg p-8 shadow-lg">
 <<img 0>>
 <<img 1>>
 <<img 2>>
