@@ -1,0 +1,23 @@
+created: 20230430030133332
+creator: oeyoews
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+modified: 20230430040220725
+modifier: oeyoews
+tags: Templates
+title: magzine-view
+type: text/vnd.tiddlywiki
+
+<$button class="text-left border-none bg-transparent p-0 m-2" message="om-confetti-launch">
+<div class="bg-slate-100 rounded-lg overflow-hidden shadow-lg flex hover:scale-105 duration-200 transiton">
+  <div class="w-1/4 relative">
+    <img class="hidden absolute h-full w-full object-cover rounded -ml-24 md:inline" src="https://picsum.photos/500/500" alt="Article Image">
+  </div>
+  <div class="p-4 -ml-24 w-3/4">
+    <h2 class="text-gray-900 font-medium text-lg mb-2">{{!!title}} </h2>
+    <p class="indent-4 text-gray-700 text-sm leading-snug line-clamp-2">
+		{{!!description}}
+		</p>
+  </div>
+</div>
+<$action-navigate $to="index"/>
+</$button>
