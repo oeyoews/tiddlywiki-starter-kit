@@ -1,3 +1,10 @@
+## [3.225.1](https://github.com/oeyoews/neotw/compare/v3.225.0...v3.225.1) (2023-04-29)
+
+
+### Bug Fixes
+
+* update vercel.json ([ff63ef3](https://github.com/oeyoews/neotw/commit/ff63ef37751a14ef1e41cd4494d8f114285a5244))
+
 # [3.225.0](https://github.com/oeyoews/neotw/compare/v3.224.0...v3.225.0) (2023-04-29)
 
 
