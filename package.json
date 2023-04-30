@@ -9,6 +9,7 @@
   "author": "oeyoews <jyao4783@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "update:template": "yarn run build:neotw && sh ./scripts/make-template.sh",
     "update:npm": "npm-check-updates -u",
     "deploy:surge": "surge dist --domain neotw.surge.sh",
     "git:update": "git pull origin main && git push",

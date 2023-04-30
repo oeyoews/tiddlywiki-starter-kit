@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# yarn build:neotw
+yarn build:neotw
 
 ## NOTE need after build steps
 
