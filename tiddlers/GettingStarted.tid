@@ -3,11 +3,12 @@ created: 20230117102714737
 creator: oeyoews
 giscus: yes
 icon: tom.svg
-modified: 20230430151739608
+modified: 20230430170521638
 modifier: oeyoews
 page-cover: banner.png
 pin: yes
 publish: article
+sticky-footer: A modern notebook based on TiddlyWiki5
 tags: 
 title: GettingStarted
 type: text/vnd.tiddlywiki
