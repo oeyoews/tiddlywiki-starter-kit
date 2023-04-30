@@ -8,4 +8,5 @@ title: $:/plugins/oeyoews/tiddlywiki-cards/gallary
 <<img 011>>
 <<img 012>>
 <<img 013>>
+<img data-fancybox="gallary" class="cursor-pointer h-48 w-full object-cover hover:scale-105 duration-200 rounded-lg" src={{{ [[https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/014.webp]] }}} alt="Card Image">
 </div>
