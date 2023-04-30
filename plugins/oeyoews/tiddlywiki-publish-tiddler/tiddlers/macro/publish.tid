@@ -10,8 +10,8 @@ tags: $:/tags/Macro
 \end
 
 \define opublish()
-<span class="o-publish">
-<$select class="o-select appearance-none p-0.5 bg-red-200 capitalize" field="publish" tiddler=<<currentTiddler>> tooltip='status' default="status">
+<div class="o-publish inline">
+<$select class="border-none rounded appearance-none p-0.5 bg-red-200 capitalize" field="publish" tiddler=<<currentTiddler>> tooltip='status' default="status">
   <option disabled class="bg-teal-400" value="status">❓ status</option>
   <option class="bg-lime-400" value="public">🔥 public ({{{ [field:publish[public]count[]] }}})</option>
   <option class="bg-red-400" value="private">🔐 private ({{{ [field:publish[private]count[]] }}})</option>
@@ -21,5 +21,5 @@ tags: $:/tags/Macro
 </$select>
 <!-- add checkbox -->
 <!-- <$checkbox tiddler=<<currentTiddler>> field="publish" checked="no" unchecked="public"></$checkbox> -->
-</span>
+</div>
 \end
