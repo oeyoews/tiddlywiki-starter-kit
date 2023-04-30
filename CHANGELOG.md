@@ -1,3 +1,10 @@
+## [3.227.1](https://github.com/oeyoews/neotw/compare/v3.227.0...v3.227.1) (2023-04-30)
+
+
+### Performance Improvements
+
+* use serif ([c94c349](https://github.com/oeyoews/neotw/commit/c94c349fd916c41e9841058708994de9bbdc272a))
+
 # [3.227.0](https://github.com/oeyoews/neotw/compare/v3.226.0...v3.227.0) (2023-04-30)
 
 
