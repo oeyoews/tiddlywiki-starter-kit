@@ -1,3 +1,10 @@
+# [3.227.0](https://github.com/oeyoews/neotw/compare/v3.226.0...v3.227.0) (2023-04-30)
+
+
+### Features
+
+* add fancybox param for image ([dc666dc](https://github.com/oeyoews/neotw/commit/dc666dc1f26358f091a9b150b8c64a6fb8c55c9b))
+
 # [3.226.0](https://github.com/oeyoews/neotw/compare/v3.225.1...v3.226.0) (2023-04-30)
 
 
