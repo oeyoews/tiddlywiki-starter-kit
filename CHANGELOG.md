@@ -1,3 +1,10 @@
+# [3.226.0](https://github.com/oeyoews/neotw/compare/v3.225.1...v3.226.0) (2023-04-30)
+
+
+### Features
+
+* add tiddlywiki-cards view ([df7aabb](https://github.com/oeyoews/neotw/commit/df7aabbfee35cca8748e48eaf6e3a04506dfcb26))
+
 ## [3.225.1](https://github.com/oeyoews/neotw/compare/v3.225.0...v3.225.1) (2023-04-29)
 
 
