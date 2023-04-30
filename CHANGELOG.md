@@ -1,3 +1,10 @@
+# [3.229.0](https://github.com/oeyoews/neotw/compare/v3.228.1...v3.229.0) (2023-04-30)
+
+
+### Features
+
+* add sites view ([da4ee7e](https://github.com/oeyoews/neotw/commit/da4ee7e5a57263e58b52163826583d589b95350e))
+
 ## [3.228.1](https://github.com/oeyoews/neotw/compare/v3.228.0...v3.228.1) (2023-04-30)
 
 
