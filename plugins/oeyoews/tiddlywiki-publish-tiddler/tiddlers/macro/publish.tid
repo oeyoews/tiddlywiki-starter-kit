@@ -11,13 +11,13 @@ tags: $:/tags/Macro
 
 \define opublish()
 <span class="o-publish">
-<$select class="o-select appearance-none p-0.5" field="publish" tiddler=<<currentTiddler>> tooltip='status' default="status">
-  <option disabled class="">status</option>
-  <option class="" value="public">public ({{{ [field:publish[public]count[]] }}})</option>
-  <option class="text-red-400" value="private">private ({{{ [field:publish[private]count[]] }}})</option>
-  <option class="text-yellow-400" value="no">draft ({{{ [field:publish[draft]count[]] }}})</option>
-  <option class="text-indigo-400" value="readonly">readonly ({{{ [field:publish[readonly]count[]] }}})</option>
-  <option class="text-green-400" value="article">article ({{{ [field:publish[article]count[]] }}})</option>
+<$select class="o-select appearance-none p-0.5 bg-red-200 capitalize" field="publish" tiddler=<<currentTiddler>> tooltip='status' default="status">
+  <option disabled class="bg-teal-400">status</option>
+  <option class="bg-lime-400" value="public">public ({{{ [field:publish[public]count[]] }}})</option>
+  <option class="bg-red-400" value="private">private ({{{ [field:publish[private]count[]] }}})</option>
+  <option class="bg-yellow-400" value="no">draft ({{{ [field:publish[draft]count[]] }}})</option>
+  <option class="bg-indigo-400" value="readonly">readonly ({{{ [field:publish[readonly]count[]] }}})</option>
+  <option class="bg-green-400" value="article">article ({{{ [field:publish[article]count[]] }}})</option>
 </$select>
 <!-- add checkbox -->
 <!-- <$checkbox tiddler=<<currentTiddler>> field="publish" checked="no" unchecked="public"></$checkbox> -->
