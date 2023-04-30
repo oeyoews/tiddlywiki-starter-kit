@@ -1,20 +1,20 @@
 <center>
 <figure>
 
-<img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/014.webp" class="hidden" alt="neotw banner"/>
+<img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/014.webp" class="hidden" alt="neotw banner" title="neotw"/>
+
+</figure>
+</center>
+
+<hr>
+
+## Intro :tada:
 
 <figcaption class="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-500 to-yellow-500 line-clamp-1">
 A modern style and elegant notebook based on Tiddlywiki by oeyoews
 </figcaption>
 
-</figure>
-</center>
-
 <a id="#neotw-readme-top"></a>
-
-<hr>
-
-## Intro :tada:
 
 ## Features :sparkles:
 
