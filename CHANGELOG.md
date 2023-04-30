@@ -1,3 +1,10 @@
+## [3.228.1](https://github.com/oeyoews/neotw/compare/v3.228.0...v3.228.1) (2023-04-30)
+
+
+### Bug Fixes
+
+* reorder for o-publish and inline ([c8fa5ff](https://github.com/oeyoews/neotw/commit/c8fa5ff4455d53a247d3dd71e99a8d50cf6e0c4f))
+
 # [3.228.0](https://github.com/oeyoews/neotw/compare/v3.227.1...v3.228.0) (2023-04-30)
 
 
