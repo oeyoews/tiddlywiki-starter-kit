@@ -1,3 +1,10 @@
+## [3.229.1](https://github.com/oeyoews/neotw/compare/v3.229.0...v3.229.1) (2023-04-30)
+
+
+### Bug Fixes
+
+* add fancybox param for page-cover ([cc6e1ff](https://github.com/oeyoews/neotw/commit/cc6e1ff03b347e382042757a406804b0a282f513))
+
 # [3.229.0](https://github.com/oeyoews/neotw/compare/v3.228.1...v3.229.0) (2023-04-30)
 
 
