@@ -35,9 +35,24 @@ module-type: widget
     }
 
     handleClick() {
-      const type = this.getAttribute('type', 'fireworks');
+      const confettiMethods = Object.values(Confetti);
+      const type = this.getAttribute('type');
+
+      // how use reset method
+      function randomConfetti() {
+        const index = Math.floor(Math.random() * confettiMethods.length);
+        const method = confettiMethods[index];
+        if (method && typeof method === 'function') {
+          method();
+        }
+      }
+
       try {
-        Confetti[type]();
+        if (type) {
+          Confetti[type]();
+        } else {
+          randomConfetti();
+        }
       } catch {
         console.warn(`${type} is not supported params `);
       }

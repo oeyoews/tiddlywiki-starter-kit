@@ -12,8 +12,9 @@ title: $:/plugins/oeyoews/neotw-confetti/readme
 
 !! Examples
 
-<div class="grid grid-rows-2 grid-flow-col gap-4">
+<div class="grid grid-rows-2 grid-cols-4 gap-4">
 <$confetti text="🔊 sound" type="centerSound"/>
+<$confetti text="❓ Who Know"/>
 <$confetti text="🔥 fireworks" type="fireworks"/>
 <$confetti text="🎉 pride" type="pride"/>
 <$confetti text="🌨️ snow" type="snow"/>
