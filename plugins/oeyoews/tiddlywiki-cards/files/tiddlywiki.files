@@ -1,0 +1,16 @@
+{
+  "directories": [
+    {
+      "path": "./",
+      "filesRegExp": "^.*\\.css$",
+      "fields": {
+        "title": {
+          "source": "filename",
+          "prefix": "$:/plugins/oeyoews/tiddlywiki-cards/"
+        },
+        "tags": "$:/tags/Stylesheet",
+        "type": "text/css"
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "title": "$:/plugins/oeyoews/tiddlywiki-cards",
+  "description": "Tiddlywiki Cards",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.2.5",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "Tiddlywiki Cards",
+  "dependents": ["$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"],
+  "list": "readme explore"
+}
