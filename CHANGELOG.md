@@ -1,3 +1,10 @@
+# [3.228.0](https://github.com/oeyoews/neotw/compare/v3.227.1...v3.228.0) (2023-04-30)
+
+
+### Features
+
+* use flex for gallary ([888d404](https://github.com/oeyoews/neotw/commit/888d404f972c0361fc95462ae048624aa30b326b))
+
 ## [3.227.1](https://github.com/oeyoews/neotw/compare/v3.227.0...v3.227.1) (2023-04-30)
 
 
