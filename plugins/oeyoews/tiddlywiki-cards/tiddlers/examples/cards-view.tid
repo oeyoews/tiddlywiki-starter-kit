@@ -3,7 +3,8 @@ description: cards-view
 
 \define img()
 <div class="inline-block w-56 bg-white rounded-lg overflow-hidden shadow-lg m-2">
-    <img class="h-48 w-full object-cover hover:scale-105 duration-200 transition" src="https://picsum.photos/300/200" alt="Card Image">
+    <!-- <img class="h-48 w-full object-cover hover:scale-105 duration-200 transition" src="https://picsum.photos/300/200" alt="Card Image"> -->
+    [img class="h-48 w-full object-cover hover:scale-105 duration-200 transition" nofancybox alt="banner.png" [banner.png]]
     <div class="p-4">
       <h3 class="text-gray-900 font-medium text-lg mb-2">Card Title</h3>
       <p class="text-gray-700 text-sm leading-snug">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>

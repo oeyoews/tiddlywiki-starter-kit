@@ -104,13 +104,19 @@ Render this widget into the DOM
       domNode.setAttribute('loading', this.lazyLoading || 'lazy');
     }
     const aNode = this.document.createElement('a');
-    aNode.setAttribute(
-      'data-fancybox',
-      this.getVariable('currentTiddler') || 'gallary',
-    );
-    aNode.href = src;
-    aNode.setAttribute('data-caption', this.imageTooltip || '');
-    aNode.appendChild(domNode);
+    let fancyboxImage = null;
+    if (this.imageFancybox === 'yes') {
+      aNode.setAttribute(
+        'data-fancybox',
+        this.getVariable('currentTiddler') || 'gallary',
+      );
+      aNode.href = src;
+      aNode.setAttribute('data-caption', this.imageTooltip || '');
+      aNode.appendChild(domNode);
+      fancyboxImage = aNode;
+    } else {
+      fancyboxImage = domNode;
+    }
 
     // Add classes when the image loads or fails
     $tw.utils.addClass(domNode, 'tc-image-loading');
@@ -131,8 +137,8 @@ Render this widget into the DOM
       false,
     );
     // Insert element
-    parent.insertBefore(aNode, nextSibling);
-    this.domNodes.push(aNode);
+    parent.insertBefore(fancyboxImage, nextSibling);
+    this.domNodes.push(fancyboxImage);
   };
 
   /*
@@ -147,6 +153,7 @@ Compute the internal state of the widget
     this.imageTooltip = this.getAttribute('tooltip');
     this.imageAlt = this.getAttribute('alt');
     this.lazyLoading = this.getAttribute('loading');
+    this.imageFancybox = this.getAttribute('fancybox');
   };
 
   /*
@@ -160,6 +167,7 @@ Selectively refreshes the widget if needed. Returns true if the widget or any of
       changedAttributes.height ||
       changedAttributes['class'] ||
       changedAttributes.tooltip ||
+      changedTiddlers[this.imageFancybox] ||
       changedTiddlers[this.imageSource]
     ) {
       this.refreshSelf();
