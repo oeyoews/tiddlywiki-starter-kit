@@ -2,16 +2,11 @@ caption: Gallary
 created: 20230116071902869
 creator: oeyoews
 icon: $:/plugins/oeyoews/tiddlywiki-shield/icon
-modified: 20230425172346259
+modified: 20230430123500331
 modifier: oeyoews
 neotw: index
 tags: 
 title: gallary
 type: text/vnd.tiddlywiki
 
-<div class="grid grid-rows-1 grid-flow-col gap-2">
-<$fbox src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/011.png"/>
-
-<$fbox src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/012.png"/>
-<$fbox src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/013.png"/>
-</div>
+{{$:/plugins/oeyoews/tiddlywiki-cards/gallary}}
