@@ -1,5 +1,6 @@
 title: $:/plugins/oeyoews/tiddlywiki-cards/magazine
 description: cards-view this view have some bugs, because its width not fixed, should be fixed in the next version, and its margin for title should be redesign later
+cards: yes
 caption: magazine view
 
 <$button class="text-left border-none bg-transparent p-0 m-2" message="om-confetti-launch">

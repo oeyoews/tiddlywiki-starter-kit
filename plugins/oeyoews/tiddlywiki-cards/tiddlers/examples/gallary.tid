@@ -1,4 +1,5 @@
 title: $:/plugins/oeyoews/tiddlywiki-cards/gallary
+cards: yes
 
 \define img(number)
 <img data-fancybox="gallary" class="cursor-pointer h-48 w-full object-cover hover:scale-105 duration-200 rounded-lg" src={{{ [[https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/]addsuffix<__number__>addsuffix[.png]] }}} alt="Card Image">

@@ -1,7 +1,8 @@
 case-sensitive: casesensitive
 created: 20230309154713248
 creator: oeyoews
-modified: 20230417141522330
+format: tabular
+modified: 20230430134914508
 modifier: oeyoews
 search-mode: words
 title: $:/config/search-in-fields/option
