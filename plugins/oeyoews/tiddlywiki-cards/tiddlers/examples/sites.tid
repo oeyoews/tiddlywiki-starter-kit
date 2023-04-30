@@ -18,5 +18,8 @@ title: $:/plugins/oeyoews/tiddlywiki-cards/sites
 <<img title:"太微中文教程" description:"中文社区共建的TiddlyWiki教程，体验从入门到知识管理大师之路" href:"https://tw-cn.netlify.app/" src:"https://i.imgur.com/OEnP9zM.png">>
 <<img title:Tiddlyhost description:"提供了一种方便的方式来托管和分享你的 TiddlyWiki 笔记" src:"https://i.imgur.com/RqPxXN1.png" href:"https://tiddlyhost.com/">>
 <<img title:xp description:"A chance to experience TiddlyWiki very quickly" src:"https://i.imgur.com/E64uoEn.png" href:"https://keatonlao.github.io/">>
+<<img title:CPL description:"TiddlyWiki5 Plugin Library for TiddlyWiki Chinese Communities" src:"https://i.imgur.com/tUYEXwF.jpg" href:"https://tw-cpl.netlify.app/">>
+<<img title:Talk description:"Talk Tiddlywiki" src:"https://i.imgur.com/RlS9K1M.png" href:"https://talk.tiddlywiki.org">>
+<<img title:Dev description:"documentation for developers" src:"https://i.imgur.com/dFVqj5q.png" href:"https://talk.tiddlywiki.org/dev">>
 <<img title:neotw description:"A modern style and elegant notebook based on Tiddlywiki by oeyoews" href:"https://github.com" src:"https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/014.webp">>
 </div>
