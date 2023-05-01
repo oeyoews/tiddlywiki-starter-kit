@@ -1,7 +1,7 @@
 title: $:/plugins/oeyoews/tiddlywiki-cards/sites
 
 \define img(title:"title", description:"description", src:"", href:"#")
-<div class="shadow-md rounded-md p-2 ">
+<div class="hover:shadow-md rounded-md p-2 transition-all duration-200">
 <$image source="""$src$"""class="w-full object-cover hidden lg:inline hover:scale-105 transition duration-200" alt=$title$ title=$title$ fancybox="yes" />
       <a href="""$href$""" class="font-bold text-gray-900 text-lg my-2 hover:underline block">$title$</a>
       <p class="hidden lg:inline text-gray-700 text-sm leading-snug font-serif line-clamp-3 indent-4">$description$</p>
