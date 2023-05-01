@@ -1,0 +1,11 @@
+created: 20230501172445994
+creator: oeyoews
+icon: private.png
+modified: 20230501172754732
+modifier: oeyoews
+tags: Private
+title: Private
+type: text/vnd.tiddlywiki
+
+<$image source="private.png" class="h-12 w-auto block mx-auto animate-pulse" />
+<<table-dynamic filter:[publish[private]] fields:"title created tags tbl-expand" caption:"" class:"capitalize" editButton:"no" pagination:"yes" sortOp:'sortan' emptyMessage:"Nothing">>

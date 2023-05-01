@@ -1,6 +1,6 @@
 created: 20230501062851560
 creator: oeyoews
-modified: 20230501123108772
+modified: 20230501173521641
 modifier: oeyoews
 tags: 
 title: Cards
@@ -14,11 +14,14 @@ type: text/vnd.tiddlywiki
 			</$button>
 \end
 
-<h2 class="hidden lg:block"> Personal Notes </h2>
+<h3 class="hidden lg:block text-center"> Personal Notes </h3>
 <div class="grid-cols-4 overflow-auto gap-4 rounded-lg p-4 hidden lg:grid">
+<<img tag:'New' img:'new.png'>>
+<<img tag:'Article' img:'articles.png'>>
 <<img tag:'React' img:'react.png' >>
 <<img tag:'Vue' img:'vue.png'>>
 <<img tag:'JavaScript' img:'js.png'>>
 <<img tag:'Journal' img:'Journal.png'>>
 <<img tag:'Tailwindcss' img:'Tailwindcss.png'>>
+<<img tag:'Private' img:'private.png'>>
 </div>
