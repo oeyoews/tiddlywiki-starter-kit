@@ -5,6 +5,8 @@ description: Toggle mode
 caption: Toggle Mode
 list-after:
 
+<!-- todo: add dynamic icon -->
+
 \whitespace trim
 <$button message="om-toggle-theme" tooltip="toggle" aria-label="toggle" class=<<tv-config-toolbar-class>>>
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
