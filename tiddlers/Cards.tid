@@ -1,6 +1,6 @@
 created: 20230501062851560
 creator: oeyoews
-modified: 20230501070327498
+modified: 20230501070450117
 modifier: oeyoews
 tags: 
 title: Cards
@@ -18,6 +18,5 @@ type: text/vnd.tiddlywiki
 <div class="grid-cols-3 overflow-auto gap-4 rounded-lg p-4 grid">
 <<img tag:'React' img:'react.png' des:'React Notes'>>
 <<img tag:'Vue' img:'vue.png' des:'Vue Notes'>>
-<<img tag:'JavaScript' img:'js.png' des:'Js Notes'>>
 <<img tag:'JavaScript' img:'js.png' des:'Js Notes'>>
 </div>
