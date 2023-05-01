@@ -1,0 +1,10 @@
+created: 20230501105846310
+creator: oeyoews
+icon: Journal.png
+modified: 20230501110405076
+modifier: oeyoews
+tags: Journal
+title: Journal
+type: text/vnd.tiddlywiki
+
+<<table-dynamic filter:[tag[Journal]![Journal]] fields:"title created tags tbl-expand" caption:"" class:"capitalize" editButton:"no" pagination:"yes" sortOp:'sortan' emptyMessage:"Nothing">>
