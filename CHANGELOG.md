@@ -1,3 +1,10 @@
+# [3.230.0](https://github.com/oeyoews/neotw/compare/v3.229.1...v3.230.0) (2023-05-01)
+
+
+### Features
+
+* add tiddlywiki-daylight ([8240b56](https://github.com/oeyoews/neotw/commit/8240b5667bb88be1923b9816073882441c3beea2))
+
 ## [3.229.1](https://github.com/oeyoews/neotw/compare/v3.229.0...v3.229.1) (2023-04-30)
 
 
