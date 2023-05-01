@@ -23,7 +23,7 @@
     "build:neotw": "zx scripts/build-oeyoews.mjs",
     "pm2:start": "pm2 start ecosystem.config.js",
     "semantic-release": "semantic-release",
-    "start": "node startup.js --listen",
+    "start": "node startup.js --listen host='0.0.0.0'",
     "minify:png": "sh ./scripts/minify.png.hooks.sh"
   },
   "devDependencies": {
