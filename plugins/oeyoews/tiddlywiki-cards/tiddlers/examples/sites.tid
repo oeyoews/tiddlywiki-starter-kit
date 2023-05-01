@@ -1,12 +1,10 @@
 title: $:/plugins/oeyoews/tiddlywiki-cards/sites
 
 \define img(title:"title", description:"description", src:"", href:"#")
-<div class="shadow-md rounded-md p-2 hover:scale-105 transition duration-200">
-<a href="""$href$""" target="_blank" class="" rel="noreferrer noopener">
-<img src="""$src$"""class="w-full object-cover hidden lg:inline" alt=$title$ title=$title$/>
-      <h2 class="font-bold text-gray-900 text-lg mb-2">$title$</h2>
+<div class="shadow-md rounded-md p-2 ">
+<$image source="""$src$"""class="w-full object-cover hidden lg:inline hover:scale-105 transition duration-200" alt=$title$ title=$title$ fancybox="yes" />
+      <a href="""$href$""" class="font-bold text-gray-900 text-lg my-2 hover:underline block">$title$</a>
       <p class="hidden lg:inline text-gray-700 text-sm leading-snug font-serif line-clamp-3 indent-4">$description$</p>
-			</a>
 			</div>
 \end
 
