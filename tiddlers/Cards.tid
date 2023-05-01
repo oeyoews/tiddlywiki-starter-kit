@@ -1,0 +1,21 @@
+created: 20230501062851560
+creator: oeyoews
+modified: 20230501064847681
+modifier: oeyoews
+tags: 
+title: Cards
+type: text/vnd.tiddlywiki
+
+\define img(tid, src, title, des)
+<$button class="shadow-md rounded-md p-2 hover:scale-105 transition duration-200">
+<$action-navigate $to=$tid$/>
+<$image source="""$src$""" class="object-cover object-center h-32 w-32" alt=$title$ title=$title$ />
+      <h2 class="font-bold text-gray-900 text-lg mb-2">$title$</h2>
+      <p class="text-gray-700 text-sm leading-snug font-serif line-clamp-3 indent-4">$des$</p>
+			</$button>
+\end
+
+<div class="grid-cols-3 overflow-auto gap-4 rounded-lg p-4 flex lg:grid">
+<<img tid:'React' src:'react.png' title:'React' des:'React Notes'>>
+<<img tid:'Vue' src:'vue.png' title:'Vue' des:'Vue Notes'>>
+</div>
