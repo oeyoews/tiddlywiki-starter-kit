@@ -1,5 +1,5 @@
 /*\
-title: daylight/startup.js
+title: $:/plugins/oeyoews/tiddlywiki-daylight/daylight/startup.js
 type: application/javascript
 module-type: startup
 
