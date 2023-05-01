@@ -2,15 +2,15 @@ title: $:/plugins/oeyoews/tiddlywiki-cards/sites
 
 \define img(title:"title", description:"description", src:"", href:"#")
 <div class="hover:shadow-md rounded-md p-2 transition-all duration-200">
-<$image source="""$src$"""class="w-full object-cover hidden lg:inline hover:scale-105 transition duration-200" alt=$title$ title=$title$ fancybox="yes" />
+<$image source="""$src$"""class="w-full object-cover hover:scale-105 transition duration-200" alt=$title$ title=$title$ fancybox="yes" />
       <a href="""$href$""" class="font-bold text-gray-900 text-lg my-2 hover:underline block">$title$</a>
-      <p class="hidden lg:inline text-gray-700 text-sm leading-snug font-serif line-clamp-3 indent-4">$description$</p>
+      <p class="text-gray-700 text-sm leading-snug font-serif line-clamp-3 indent-4">$description$</p>
 			</div>
 \end
 
 <!-- support tag link here to transclude with macro -->
 <!-- or with json file -->
-<div class="grid-cols-3 overflow-auto gap-4 rounded-lg p-4 grid">
+<div class="grid-cols-3 overflow-auto gap-4 rounded-lg p-4 grid hidden lg:inline">
 <<img title:Tiddlywiki description:"Welcome to TiddlyWiki, a unique non-linear notebook for capturing, organising and sharing complex information" href:"https://tiddlywiki.com/" src:"https://i.imgur.com/GKnmqiu.png">>
 <<img title:"Tiddlywiki CN" description:"欢迎使用 TiddlyWiki，一个独特的非线性笔记本，用于截取、管理和共用复杂的信息。" src:"https://i.imgur.com/KzDNaUY.png" href:"https://bramchen.github.io/tw5-docs/zh-Hans/">>
 <<img title:"太微中文教程" description:"中文社区共建的TiddlyWiki教程，体验从入门到知识管理大师之路" href:"https://tw-cn.netlify.app/" src:"https://i.imgur.com/OEnP9zM.png">>
