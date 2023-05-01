@@ -1,0 +1,10 @@
+created: 20230501120326107
+creator: oeyoews
+icon: Tailwindcss.png
+modified: 20230501120429926
+modifier: oeyoews
+tags: Tailwindcss
+title: Tailwindcss
+type: text/vnd.tiddlywiki
+
+<<table-dynamic filter:[tag[Tailwindcss]![Tailwindcss]] fields:"title created tags tbl-expand" caption:"" class:"capitalize" editButton:"no" pagination:"yes" sortOp:'sortan' emptyMessage:"Nothing">>

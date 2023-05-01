@@ -1,15 +1,15 @@
 created: 20230501062851560
 creator: oeyoews
-modified: 20230501111403377
+modified: 20230501121028841
 modifier: oeyoews
 tags: 
 title: Cards
 type: text/vnd.tiddlywiki
 
 \define img(tag, img:"banner.png")
-<$button class="shadow-none rounded-md p-4 hover:scale-105 transition-all duration-200 bg-transparent hover:bg-slate-100">
+<$button message="om-sound" class="shadow-none rounded-md p-4 hover:scale-105 transition-all duration-200 bg-transparent hover:bg-slate-100">
 <$action-navigate $to=$tag$/>
-<$image source="""$img$""" class="object-cover object-center hidden lg:block" alt=$title$ title=$tag$ />
+<$image source="""$img$""" class="object-cover object-center hidden lg:block" alt=$tag$ title=$tag$ />
       <h2 class="font-bold text-gray-900 text-lg mb-2 hidden lg:block">$tag$</h2>
 			</$button>
 \end
@@ -19,4 +19,5 @@ type: text/vnd.tiddlywiki
 <<img tag:'Vue' img:'vue.png'>>
 <<img tag:'JavaScript' img:'js.png'>>
 <<img tag:'Journal' img:'Journal.png'>>
+<<img tag:'Tailwindcss' img:'Tailwindcss.png'>>
 </div>
