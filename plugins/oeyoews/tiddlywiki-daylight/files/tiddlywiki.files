@@ -1,0 +1,16 @@
+{
+  "directories": [
+    {
+      "path": "./",
+      "filesRegExp": "^.*\\.css$",
+      "fields": {
+        "title": {
+          "source": "filename",
+          "prefix": "$:/plugins/oeyoews/tiddlywiki-daylight/"
+        },
+        "tags": "$:/tags/Stylesheet",
+        "type": "text/css"
+      }
+    }
+  ]
+}
