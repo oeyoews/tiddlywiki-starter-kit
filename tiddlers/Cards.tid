@@ -1,6 +1,6 @@
 created: 20230501062851560
 creator: oeyoews
-modified: 20230501173521641
+modified: 20230502021047886
 modifier: oeyoews
 tags: 
 title: Cards
@@ -24,4 +24,5 @@ type: text/vnd.tiddlywiki
 <<img tag:'Journal' img:'Journal.png'>>
 <<img tag:'Tailwindcss' img:'Tailwindcss.png'>>
 <<img tag:'Private' img:'private.png'>>
+<<img tag:'CSS' img:'CSS.png'>>
 </div>
