@@ -14,10 +14,15 @@ toggle
   * 不需要获取按钮元素
  */
 
-function toggle() {
-  // 获取 HTML 元素
-  const htmlTag = document.documentElement;
+// 获取 HTML 元素
+const htmlTag = document.documentElement;
 
+function setTheme(mode) {
+  htmlTag.classList.remove('light', 'dark');
+  htmlTag.classList.add(mode);
+}
+
+function toggle() {
   // 初始化主题模式
   const currentTheme = localStorage.getItem('theme');
   if (currentTheme) {
@@ -32,12 +37,6 @@ function toggle() {
 
   // 将选中的主题模式保存至 Local Storage
   localStorage.setItem('theme', newMode);
-
-  // 设置主题模式
-  function setTheme(mode) {
-    htmlTag.classList.remove('light', 'dark');
-    htmlTag.classList.add(mode);
-  }
 }
 
-module.exports = { toggle };
+module.exports = { toggle, setTheme };

@@ -4,6 +4,7 @@ module.exports = {
       typography: ({ theme }) => ({
         DEFAULT: {
           css: {
+            // '--tw-prose-body': theme('colors.white'),
             'blockquote p:first-of-type::before': null,
             'blockquote p:last-of-type::after': null,
             code: {

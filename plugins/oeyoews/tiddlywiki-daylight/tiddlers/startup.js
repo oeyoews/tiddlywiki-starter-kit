@@ -19,6 +19,7 @@ daylight module
   exports.startup = () => {
     require('daylight.js');
     window.toggle = require('toggle.js').toggle;
+    window.setTheme = require('toggle.js').setTheme;
     $tw.rootWidget.addEventListener('om-toggle-theme', () => {
       toggle();
     });
