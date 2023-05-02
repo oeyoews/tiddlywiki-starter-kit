@@ -1,0 +1,22 @@
+title: $:/plugins/oeyoews/tiddlywiki-cards/bing
+
+<div class="bg-cover h-screen" style="background-image: url('https://source.unsplash.com/random?alpine')">
+  <div class="flex items-center justify-center h-full bg-black bg-opacity-50">
+
+<div class="grid grid-cols-3 gap-4 auto-rows-minmax-auto">
+  <div class="bg-white p-4 rounded-lg shadow-md">
+    <h2 class="text-xl font-bold mb-4">卡片1</h2>
+    <p>这是卡片1的内容。</p>
+  </div>
+  <div class="bg-white p-4 rounded-lg shadow-md">
+    <h2 class="text-xl font-bold mb-4">卡片2</h2>
+    <p>这是卡片2的内容。</p>
+  </div>
+  <div class="bg-white p-4 rounded-lg shadow-md">
+    <h2 class="text-xl font-bold mb-4">卡片3</h2>
+    <p>这是卡片3的内容。</p>
+  </div>
+</div>
+
+  </div>
+</div>
