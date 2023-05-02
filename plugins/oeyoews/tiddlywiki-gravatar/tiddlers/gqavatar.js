@@ -91,7 +91,7 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
       if (isCenter) {
         img.className +=
           ' ' +
-          'block mx-auto shadow-lg border-dashed border border-indigo-400 p-1 hover:scale-105';
+          'block mx-auto shadow-lg border-dashed border border-indigo-400 p-1 hover:scale-105 delay-200';
       }
       img.setAttribute('style', `max-width: ${width}px`);
       img.setAttribute('src', src);
