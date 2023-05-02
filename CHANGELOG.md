@@ -1,3 +1,10 @@
+# [3.232.0](https://github.com/oeyoews/neotw/compare/v3.231.0...v3.232.0) (2023-05-02)
+
+
+### Features
+
+* combine github dark and toggle with motion ([a125469](https://github.com/oeyoews/neotw/commit/a1254695601953b6cf1553bc6ec0b9217922141c))
+
 # [3.231.0](https://github.com/oeyoews/neotw/compare/v3.230.0...v3.231.0) (2023-05-01)
 
 
