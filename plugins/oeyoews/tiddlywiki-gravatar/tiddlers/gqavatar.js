@@ -26,7 +26,7 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
  *
  */
 
-(function() {
+(function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -41,7 +41,7 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
       super(parseTreeNode, options);
     }
 
-    render = function(parent, nextSibling) {
+    render = function (parent, nextSibling) {
       this.parentDomNode = parent;
       this.computeAttributes();
       this.execute();
@@ -86,13 +86,17 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
       }
 
       var img = this.document.createElement('img');
-      img.className = 'rounded-full align-middle m-1 duration-200 transition object-cover object-center';
+      img.className =
+        'rounded-full align-middle m-1 duration-200 transition object-cover object-center';
       if (isCenter) {
-        img.className += ' ' + 'block mx-auto  shadow-lg';
+        img.className +=
+          ' ' +
+          'block mx-auto shadow-lg border-dashed border border-indigo-400 p-1 hover:scale-105';
       }
       img.setAttribute('style', `max-width: ${width}px`);
       img.setAttribute('src', src);
       img.setAttribute('alt', alt);
+      img.title = "Click to open this user's profile";
 
       let ele = null;
       if (link) {

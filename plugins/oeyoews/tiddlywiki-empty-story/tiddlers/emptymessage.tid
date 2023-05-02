@@ -4,7 +4,7 @@ title: $:/config/EmptyStoryMessage
   <center>
   <$button class="bg-transparent">
     <$action-sendmessage $message="tm-modal" $param="oeyoews"/>
-    <$avatar />
+    <$avatar center="yes"/>
   </$button>
     <$hitokoto />
   </center>
