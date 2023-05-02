@@ -9,6 +9,7 @@
   "author": "oeyoews <jyao4783@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "build:babel": "babel demo/src/ -d demo/lib/",
     "update:template": "yarn run build:neotw && sh ./scripts/make-template.sh",
     "update:npm": "npm-check-updates -u",
     "deploy:surge": "surge dist --domain neotw.surge.sh",
@@ -27,8 +28,12 @@
     "minify:png": "sh ./scripts/minify.png.hooks.sh"
   },
   "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.21.5",
+    "@babel/preset-env": "^7.21.5",
     "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.14",
+    "babel-cli": "^6.26.0",
     "pm2": "^5.3.0",
     "pngquant-bin": "^8.0.1",
     "postcss": "^8.4.23",
