@@ -1,0 +1,50 @@
+created: 20230502022011265
+creator: oeyoews
+modified: 20230502025628826
+modifier: oeyoews
+tags: CSS
+title: left-bar
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+\define lingo-base() $:/language/CloseAll/
+
+\define drop-actions()
+<$action-listops $tiddler=<<tv-story-list>> $subfilter="+[insertbefore<actionTiddler>,<currentTiddler>]"/>
+\end
+
+\define placeholder()
+<div class="tc-droppable-placeholder"/>
+\end
+
+\define droppable-item(button)
+\whitespace trim
+<$droppable actions=<<drop-actions>> enable=<<tv-allow-drag-and-drop>> tag="div">
+<<placeholder>>
+<div>
+$button$
+</div>
+</$droppable>
+\end
+
+<div class="hidden fixed lg:block left-8 w-36 bg-transparent top-10 rounded-md p-2">
+
+<!--
+<h3> TOC </h3>
+-->
+		
+<div class="tc-sidebar-tab-open prose capitalize">
+<$list filter="[list<tv-story-list>]" history=<<tv-history-list>> storyview="pop">
+<div class="tc-sidebar-tab-open-item">
+<$macrocall $name="droppable-item" button="<$link class='p-1 rounded-sm hover:bg-red-200 transition-all duration-200 line-clamp-1' to={{!!title}}><$view field='title'/></$link>"/>
+</div>
+</$list>
+</div>
+		
+</div>
+
+<!--
+* should add scroll to when have tid
+* nav bug
+* $:/tags/PageTemplate
+-->
