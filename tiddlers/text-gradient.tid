@@ -1,0 +1,11 @@
+created: 20230502071308754
+creator: oeyoews
+modified: 20230502071519248
+modifier: oeyoews
+tags: Tailwindcss
+title: text-gradient
+type: text/vnd.tiddlywiki
+
+<div class="bg-gradient-to-r from-rose-200 via-yellow-200 to-blue-200 rounded p-2 indent-4 line-clamp-1">
+<<.lorem>>
+</div>
