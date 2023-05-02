@@ -1,0 +1,11 @@
+created: 20230502113611698
+creator: oeyoews
+modified: 20230502113630308
+modifier: oeyoews
+tags: Tips
+title: wget-download
+type: text/vnd.tiddlywiki
+
+```bash
+wget -r -np -k https://neotw.vercel.app/
+```
