@@ -33,3 +33,7 @@ Specifically, we need to implement the following features:
 
 这是一个实验性插件, 最终目的是实现tiddlywiki的主题切换;
 由于tiddlywiki使用palette进行切换颜色主题(对于我个人来说, 修改palette很繁琐, 并且现有的palette的样式并不能让我满意, 我仅仅想要切换暗亮两种主题即可), 如果想要借助tailwindcss的方式一套代码支持切换暗亮两种主题, 可能需要修改大量模板, 这在目前来说是不现实的,甚至会影响额外的副作用(具体还没想到), 如果你有什么想法, 欢迎评论
+
+!! Example
+
+{{$:/plugins/oeyoews/tiddlywiki-daylight/example}}
