@@ -6,7 +6,7 @@ title: $:/config/EmptyStoryMessage
     <$action-sendmessage $message="tm-modal" $param="oeyoews"/>
     <$avatar center="yes"/>
   </$button>
-    <$hitokoto />
+    <$ohitokoto />
   </center>
 </$list>
 

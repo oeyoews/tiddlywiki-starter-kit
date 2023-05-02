@@ -5,7 +5,7 @@ module-type: widget
 
 owidget
 \*/
-(function () {
+(function() {
   /*jslint node: true, browser: true */
   /*global $tw: false */
 
@@ -36,13 +36,13 @@ owidget
       // const containerNode = this.document.createElement('container');
 
       const ohitokotoSpan = this.document.createElement('span');
-      ohitokotoSpan.className = 'hitokoto';
+      ohitokotoSpan.className = 'hitokoto block cursor-default';
       this.updateText(ohitokotoSpan);
 
       // use container
       const refreshButton = this.document.createElement('button');
       refreshButton.className =
-        'hitokoto-refresh text-xs ml-2 text-sky-300 cursor-pointer hover:underline hover:font-bold';
+        'hitokoto-refresh text-xs ml-2 text-sky-300 cursor-pointer hover:font-bold bg-transparent hidden';
       refreshButton.textContent = ' Next';
       // refreshButton.style.fontSize = '50%';
       // refreshButton.style.marginLeft = '4px';
