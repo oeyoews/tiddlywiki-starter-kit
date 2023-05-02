@@ -46,7 +46,7 @@ list-before: $:/core/ui/ViewTemplate/title
 </$list>
 <$list filter="[<cover>!match[]]">
   <!-- !icon && cover -->
-  <div class="gk0wk-notionpagebg gk0wk-notionpagebg-c">
+  <div class="gk0wk-notionpagebg gk0wk-notionpagebg-c dark:hidden">
     <<notionpage-covericon-with-fancybox>>
     <$reveal type="popup" state=<<stateTiddler2>> position="belowleft" tag="div" class="tc-popup-keep">
       <div class="gk0wk-notionpageb-changecover-box">
@@ -68,7 +68,7 @@ list-before: $:/core/ui/ViewTemplate/title
 </$list>
 <$list filter="[<cover>!match[]]">
   <!-- icon && cover -->
-  <div class="gk0wk-notionpagebg gk0wk-notionpagebg-c">
+  <div class="gk0wk-notionpagebg gk0wk-notionpagebg-c dark:hidden">
   <<notionpage-covericon-with-fancybox>>
     <$reveal type="popup" state=<<stateTiddler2>> position="belowleft" tag="div" class="tc-popup-keep">
       <div class="gk0wk-notionpageb-changecover-box">

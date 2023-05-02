@@ -1,6 +1,6 @@
 created: 20230208091356701
 creator: oeyoews
-modified: 20230501031148786
+modified: 20230502155144638
 modifier: oeyoews
 tags: 
 title: neotw-badges
@@ -10,5 +10,7 @@ type: text/vnd.tiddlywiki
 <$image source={{{ [[]addprefix[https://img.shields.io/badge/]] [<__label__>addsuffix[-]] $filter$ [[-]addsuffix<__color__>] [[?style=social]] +[join[]] }}} />
 \end
 
+<div class="dark:hidden">
 <<fb "🐟 Tiddlers" [!is[system]count[]]>> <<fb "🏷️ Tags" [tags[]count[]]>> <<fb "🧩 Plugins" [plugin-type[plugin]count[]]>>
 <<fb "⏰ Updated" [!is[system]!has[draft.of]!sort[modified]limit[1]get[modified]format:relativedate[]]>>  
+</div>
