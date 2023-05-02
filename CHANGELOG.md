@@ -1,3 +1,10 @@
+# [3.233.0](https://github.com/oeyoews/neotw/compare/v3.232.0...v3.233.0) (2023-05-02)
+
+
+### Features
+
+* if dark and mobile hide content for tiddler ([f9ac26b](https://github.com/oeyoews/neotw/commit/f9ac26bce343042c8bf83bdfa92fe1c3828db642))
+
 # [3.232.0](https://github.com/oeyoews/neotw/compare/v3.231.0...v3.232.0) (2023-05-02)
 
 
