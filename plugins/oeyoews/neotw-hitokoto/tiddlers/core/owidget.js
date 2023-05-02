@@ -5,7 +5,7 @@ module-type: widget
 
 owidget
 \*/
-(function() {
+(function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
 
@@ -35,8 +35,8 @@ owidget
 
       // const containerNode = this.document.createElement('container');
 
-      const ohitokotoSpan = this.document.createElement('span');
-      ohitokotoSpan.className = 'hitokoto block cursor-default';
+      const ohitokotoSpan = this.document.createElement('div');
+      ohitokotoSpan.className = 'hitokoto cursor-default line-clamp-1';
       this.updateText(ohitokotoSpan);
 
       // use container
