@@ -1,6 +1,6 @@
 created: 20230322042803332
 creator: oeyoews
-modified: 20230502152757750
+modified: 20230502153304093
 modifier: oeyoews
 tags: $:/tags/ViewTemplate
 title: $:/core/ui/ViewTemplate/body
@@ -17,7 +17,7 @@ type: text/vnd.tiddlywiki
 </$list>
 
 <$list filter="[all[current]!is[system]]">
-<$reveal tag="div" class="prose prose-indigo max-w-none prose-img:my-0 prose-a:no-underline prose-h2:mt-4 prose-blockquote:not-italic mt-4 dark:text-white dark:hidden dark:lg:inline" type="nomatch" stateTitle=<<folded-state>> text="hide" retain="yes" animate="yes">
+<$reveal tag="div" class="prose prose-indigo max-w-none prose-img:my-0 prose-a:no-underline prose-h2:mt-4 prose-blockquote:not-italic mt-4 dark:text-white dark:bg-transparent" type="nomatch" stateTitle=<<folded-state>> text="hide" retain="yes" animate="yes">
 
 <$transclude tiddler={{{ [<currentTiddler>] :cascade[all[shadows+tiddlers]tag[$:/tags/ViewTemplateBodyFilter]!is[draft]get[text]] :and[!is[blank]else[$:/core/ui/ViewTemplate/body/default]] }}} />
 
