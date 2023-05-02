@@ -1,11 +1,36 @@
 created: 20230426035425719
 creator: oeyoews
 icon: react.png
-modified: 20230501103211930
+modified: 20230502112514636
 modifier: oeyoews
 tags: React
 title: React
 type: text/vnd.tiddlywiki
+
+\whitespace trim
+\define newHereActions()
+\whitespace trim
+<$set name="tags" filter="[<currentTiddler>] [enlist{$:/config/NewTiddler/Tags}]">
+<$action-sendmessage $message="tm-new-tiddler" tags=<<tags>>/>
+</$set>
+\end
+\define newHereButton()
+\whitespace trim
+<$button actions=<<newHereActions>> tooltip={{$:/language/Buttons/NewHere/Hint}} aria-label={{$:/language/Buttons/NewHere/Caption}} class="bg-rose-400 shadow-md hover:bg-rose-500 transition-all duration-200 hover:scale-105">
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+{{$:/core/images/new-here-button}}
+</$list>
+<$list filter="[<tv-config-toolbar-text>match[yes]]">
+<span class="tc-btn-text">
+<$text text={{$:/language/Buttons/NewHere/Caption}}/>
+</span>
+</$list>
+</$button>
+\end
+
+<div class="flex justify-end">
+<<newHereButton>>
+</div>
 
 <$image source="react.png" class="h-12 w-auto block mx-auto animate-pulse" />
 <<table-dynamic filter:[tag[React]![React]] fields:"title created tags tbl-expand" caption:"" class:"capitalize" editButton:"no" pagination:"yes" sortOp:'sortan' emptyMessage:"Nothing">>
