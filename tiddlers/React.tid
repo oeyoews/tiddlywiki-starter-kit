@@ -1,7 +1,7 @@
 created: 20230426035425719
 creator: oeyoews
 icon: react.png
-modified: 20230502120214264
+modified: 20230502131038613
 modifier: oeyoews
 tags: React
 title: React
@@ -33,4 +33,4 @@ type: text/vnd.tiddlywiki
 </div>
 
 <$image source="react.png" class="h-12 w-auto block mx-auto animate-pulse" />
-<<table-dynamic filter:"[tag[React]![React]]" fields:"title created tags tbl-expand" caption:"" class:"capitalize" editButton:"no" pagination:"yes"  emptyMessage:"Nothing">>
+<<table-dynamic filter:"[tag[React]![React]]" fields:"title description created tags tbl-expand" caption:"" class:"capitalize" editButton:"no" pagination:"yes"  emptyMessage:"Nothing">>
