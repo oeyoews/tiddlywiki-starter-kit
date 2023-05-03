@@ -88,6 +88,7 @@ tags: $:/tags/PageTemplate
 </$set>
 \end
 
+<!-- TODO; intergrate to fullscreen shortcuts -->
 \define zen-mode()
 <!-- zen mode -->
 <$list filter="[[$:/temp/zen-mode]get[text]else[no]match[no]]">
