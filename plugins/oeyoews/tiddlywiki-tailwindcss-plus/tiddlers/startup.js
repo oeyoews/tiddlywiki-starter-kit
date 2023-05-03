@@ -7,7 +7,7 @@ hide-body: yes
 tailwindcss startup
 
 \*/
-(function() {
+(function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -21,7 +21,7 @@ tailwindcss startup
     const originalWarn = console.warn;
 
     // 重写console.warn()方法
-    console.warn = function(...args) {
+    console.warn = function (...args) {
       // 获取调用栈信息
       const stackTrace = new Error().stack;
       // 判断调用栈信息中是否包含"script.js"字符串
