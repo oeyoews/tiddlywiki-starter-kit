@@ -1,3 +1,10 @@
+## [3.235.1](https://github.com/oeyoews/neotw/compare/v3.235.0...v3.235.1) (2023-05-03)
+
+
+### Performance Improvements
+
+* overwrite console.warn ([baa265f](https://github.com/oeyoews/neotw/commit/baa265f0481c22c3d0df1d3283e6df61cafedc81))
+
 # [3.235.0](https://github.com/oeyoews/neotw/compare/v3.234.1...v3.235.0) (2023-05-03)
 
 
