@@ -18,5 +18,19 @@ axios module
   exports.synchronous = true;
   exports.startup = () => {
     window.axios = require('axios.min.js');
+    $tw.rootWidget.addEventListener('om-axios-test', () => {
+      axios
+        .get('https://htk.vercel.app/api')
+        .then(response => {
+          swal({
+            title: 'Axios Test',
+            icon: 'success',
+            text: `${response.data.text} @${response.data.author}`,
+          });
+        })
+        .catch(error => {
+          console.log(error);
+        });
+    });
   };
 })();
