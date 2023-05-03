@@ -1,6 +1,6 @@
 created: 20230501062851560
 creator: oeyoews
-modified: 20230502170017947
+modified: 20230503033542161
 modifier: oeyoews
 tags: 
 title: Cards
@@ -8,6 +8,13 @@ type: text/vnd.tiddlywiki
 
 \define img(tag, img:"banner.png")
 <$button message="om-sound" class="shadow-none rounded-md p-4 hover:scale-105 transition-all duration-200 bg-transparent hover:bg-slate-100 dark:hover:bg-transparent delay-100">
+<div class="relative">
+        <div class="absolute top-0 right-0">
+            <div class="inline-block text-slate-400 rounded-full">
+                {{{ [tag<__tag__>count[]] }}}
+            </div>
+        </div>
+    </div>
 <$action-navigate $to=$tag$/>
 <$image source="""$img$""" tooltip="""$tag$""" class="object-cover object-center rounded-lg" alt=$tag$ title=$tag$ />
       <div class="font-bold text-gray-900 text-xs my-2 hover:underline decoration-wavy decoration-indigo-500 transition-all duration-200 dark:text-white">$tag$</div>
