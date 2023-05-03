@@ -17,15 +17,17 @@ tailwindcss startup
   exports.after = ['load-modules'];
   exports.synchronous = true;
   exports.startup = () => {
+    const tailwindFile = 'tailwindcss.min.js';
+
     // 保存原始的console.warn()方法
     const originalWarn = console.warn;
 
     // 重写console.warn()方法
-    console.warn = function (...args) {
+    console.warn = (...args) => {
       // 获取调用栈信息
       const stackTrace = new Error().stack;
       // 判断调用栈信息中是否包含"script.js"字符串
-      if (stackTrace.includes('tailwindcss.min.js')) {
+      if (stackTrace.includes(tailwindFile)) {
         // 自定义逻辑：拦截console.warn()信息，记录日志等
         // console.log('Intercepted warning from script.js:', ...args);
         console.warn('Tailwindcss is using cdn on production env');
@@ -34,8 +36,8 @@ tailwindcss startup
         originalWarn(...args);
       }
     };
-    tailwind = require('tailwindcss.min.js');
-    var tailwindConfig = require('tailwind.config.js');
-    tailwind.config = tailwindConfig;
+
+    tailwind = require(tailwindFile);
+    tailwind.config = require('tailwind.config.js');
   };
 })();
