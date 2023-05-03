@@ -52,6 +52,18 @@ Hitokoto widget
           return;
         }
         this.executing = true;
+        /* axios
+          .get('https://v1.hitokoto.cn')
+          .then(response => {
+            const data = response.data;
+            const hitokotoText = data.hitokoto;
+            const hitokotoFrom = '@' + data.from;
+            hitokotoSpan.textContent = `${hitokotoText} ${hitokotoFrom}`;
+          })
+          .catch(error => console.error(error))
+          .finally(() => {
+            this.executing = false;
+          }); */
         fetch('https://v1.hitokoto.cn')
           .then(response => response.json())
           .then(data => {
