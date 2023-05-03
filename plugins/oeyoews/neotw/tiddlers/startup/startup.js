@@ -16,7 +16,7 @@ neotw startup descption
       .then(response => response.json())
       .then(data =>
         console.log(
-          `%c 最后一次 commit 更新时间：${data.commit.author.date}`,
+          `%c 最后一次 commit 更新时间：${data.commit.author.date} https://github.com/oeyoews/neotw`,
           'background: linear-gradient(to right, #12c2e9, #c471ed); color: black;padding: 3px;',
         ),
       )
