@@ -1,3 +1,10 @@
+# [3.241.0](https://github.com/oeyoews/neotw/compare/v3.240.1...v3.241.0) (2023-05-03)
+
+
+### Features
+
+* add lockscreen page ([1940683](https://github.com/oeyoews/neotw/commit/1940683ee36408d2c03040b6b4d27d983432327c))
+
 ## [3.240.1](https://github.com/oeyoews/neotw/compare/v3.240.0...v3.240.1) (2023-05-03)
 
 
