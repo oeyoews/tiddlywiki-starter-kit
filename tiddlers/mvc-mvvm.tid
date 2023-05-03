@@ -1,0 +1,19 @@
+created: 20230503031328980
+creator: oeyoews
+modified: 20230503031338437
+modifier: oeyoews
+tags: JavaScript
+title: mvc-mvvm
+type: text/vnd.tiddlywiki
+
+MVC（Model-View-Controller）和MVVM（Model-View-ViewModel）是两种常见的前端应用程序架构模式，它们的主要区别如下：
+
+1. 模型与视图的关系不同：在MVC中，视图和模型是分离的。控制器作为桥梁，将模型和视图链接在一起。而在MVVM中，视图通过数据绑定直接绑定到ViewModel上，ViewModel与模型交互并提供必要的方法。
+
+2. 数据双向绑定：MVVM引入了数据双向绑定的概念，使得视图和ViewModel之间的交互更加便捷。当ViewModel中的数据发生变化时，视图会自动更新；当用户在视图中输入数据时，ViewModel会自动更新数据模型。
+
+3. 控制器与ViewModel的区别：MVVM中没有控制器的概念，而是引入了ViewModel。ViewModel既可以处理视图的显示逻辑，也可以与模型进行交互。而控制器则只负责处理视图和模型之间的通信。
+
+4. 独立性不同：在MVC中，视图、模型和控制器都是独立的组件，彼此之间没有强耦合。而在MVVM中，ViewModel是视图和模型之间的桥梁，它们之间的联系更加紧密。
+
+总的来说，MVC和MVVM都是优秀的前端应用程序架构模式，它们各有优缺点，适用于不同的场景和需求。对于需要频繁更新视图的复杂单页应用程序，MVVM更为适合；而对于传统的多页Web应用程序，MVC则更加适用。
