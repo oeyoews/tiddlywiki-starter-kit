@@ -1,3 +1,10 @@
+# [3.242.0](https://github.com/oeyoews/neotw/compare/v3.241.0...v3.242.0) (2023-05-03)
+
+
+### Features
+
+* add dev tiddlywiki-documentaion-developers ([36a4219](https://github.com/oeyoews/neotw/commit/36a42192e3cc338bfd40b22e637fbae6ecc5ff1c))
+
 # [3.241.0](https://github.com/oeyoews/neotw/compare/v3.240.1...v3.241.0) (2023-05-03)
 
 
