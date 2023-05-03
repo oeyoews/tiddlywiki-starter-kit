@@ -1,3 +1,10 @@
+# [3.238.0](https://github.com/oeyoews/neotw/compare/v3.237.0...v3.238.0) (2023-05-03)
+
+
+### Features
+
+* add versio for swal startup ([ba83314](https://github.com/oeyoews/neotw/commit/ba83314552ec1898d9db9421aeda8add124a5a3b))
+
 # [3.237.0](https://github.com/oeyoews/neotw/compare/v3.236.0...v3.237.0) (2023-05-03)
 
 
