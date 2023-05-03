@@ -1,3 +1,10 @@
+## [3.240.1](https://github.com/oeyoews/neotw/compare/v3.240.0...v3.240.1) (2023-05-03)
+
+
+### Performance Improvements
+
+* minify 015 ([5e2267b](https://github.com/oeyoews/neotw/commit/5e2267b6942a0ff653a44e08817d3d1cda25244e))
+
 # [3.240.0](https://github.com/oeyoews/neotw/compare/v3.239.0...v3.240.0) (2023-05-03)
 
 
