@@ -25,9 +25,9 @@ list-before: $:/core/ui/ViewTemplate/title
     </$list>
 		</div>
     <!-- show ChangeCover button on http: -->
-<$list filter="[{$:/info/url/protocol}match[http:]]">
-    <$button popup=<<stateTiddler2>> class="gk0wk-notionpageb-changecover" tooltip="Change Cover">Change Cover</$button>
-</$list>
+<!-- <$list filter="[{$:/info/url/protocol}match[http:]]"> -->
+<!--     <$button popup=<<stateTiddler2>> class="gk0wk-notionpageb-changecover" tooltip="Change Cover">Change Cover</$button> -->
+<!-- </$list> -->
 \end
 
 <$list filter="[all[current]!is[system]!is[binary]]">

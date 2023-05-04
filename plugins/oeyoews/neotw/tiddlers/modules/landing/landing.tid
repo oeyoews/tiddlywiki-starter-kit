@@ -13,6 +13,7 @@ tags: $:/tags/Layout
 <!-- </div> -->
 
 <!-- NOTE: if startupaction, this tailwindcss and some css are not working -->
+<div class="h-screen flex items-center justify-center bg-cover bg-no-repeat bg-gradient-to-r from-teal-100 to-lime-200">
 <div class="h-screen flex items-center justify-center">
 <div class="p-6 bg-white rounded-md shadow-lg max-w-sm w-full">
   <$avatar center="yes" width="128"/>
@@ -35,4 +36,5 @@ tags: $:/tags/Layout
             </div>
         </form>
     </div>
+</div>
 </div>

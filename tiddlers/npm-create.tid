@@ -1,0 +1,12 @@
+created: 20230504013559549
+creator: oeyoews
+modified: 20230504013631938
+modifier: oeyoews
+tags: NodeJs
+title: npm-create
+type: text/vnd.tiddlywiki
+
+```bash
+npx create-next-app nextjs-learning
+yarn create next-app nextjs-learning
+```
