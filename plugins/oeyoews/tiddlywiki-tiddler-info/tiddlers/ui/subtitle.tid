@@ -42,6 +42,7 @@ tags: $:/tags/ViewTemplate
 <!-- GettingStarted not work filter -->
 <$list filter="[all[current]!is[system]!is[binary]]">
 <<opublish>>
+<!-- <<AddTags>> -->
 </$list>
 
 </div>

@@ -1,0 +1,13 @@
+created: 20230504084318317
+creator: oeyoews
+modified: 20230504084328219
+modifier: oeyoews
+tags: React
+title: spa
+type: text/vnd.tiddlywiki
+
+SPA是单页应用程序（Single Page Application）的缩写，它使用JavaScript动态更新页面内容，而无需每次更改时重新加载整个页面。React是一种用于构建用户界面的JavaScript库，它可以帮助您构建高效且易于维护的SPA应用程序。
+
+React使用组件化的方法来构建应用程序，将页面拆分为小部件，每个部件负责呈现自己的内容。这使得开发人员能够更轻松地管理代码和UI状态，并创建可重用的代码块。
+
+当React与SPA结合使用时，您可以使用React来构建应用程序中的每个部分，并使用React Router等路由库来控制应用程序的导航。这将使您的应用程序具有更好的性能和用户体验，并更容易扩展和维护。
