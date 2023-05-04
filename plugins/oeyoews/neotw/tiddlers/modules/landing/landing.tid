@@ -33,11 +33,17 @@ tags: $:/tags/Layout
             </div>
 
         </form>
-        <$list filter="[[$:/temp/login/password]get[password]match[oeyoews]]">
+
         <div class="flex items-center justify-end">
-          <$button set="$:/layout" setTo="$:/core/ui/PageTemplate" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-200" type="submit">Login</$button>
-        </div>
+        <$list filter="[[$:/temp/login/password]is[missing]] ~[[$:/temp/login/password]get[password]!match[oeyoews]]">
+        <$button set="$:/layout" setTo="$:/plugins/oeyoews/neotw/modules/landing/layout" class="cursor-not-allowed bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-200" type="submit" disabled=yes tooltip="Please enter your password">Login</$button>
         </$list>
+
+        <$list filter="[[$:/temp/login/password]get[password]match[oeyoews]]">
+          <$button set="$:/layout" setTo="$:/core/ui/PageTemplate" class="bg-lime-400 hover:bg-lime-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-200" type="submit" tooltip="Click to login">Login</$button>
+        </$list>
+        </div>
+
     </div>
 </div>
 </div>
