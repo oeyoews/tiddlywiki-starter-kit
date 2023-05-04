@@ -1,3 +1,10 @@
+## [3.242.1](https://github.com/oeyoews/neotw/compare/v3.242.0...v3.242.1) (2023-05-04)
+
+
+### Performance Improvements
+
+* use postrender action for layout ([ba77734](https://github.com/oeyoews/neotw/commit/ba77734b09f9d421cd08fd40caa4e1205834733f))
+
 # [3.242.0](https://github.com/oeyoews/neotw/compare/v3.241.0...v3.242.0) (2023-05-03)
 
 
