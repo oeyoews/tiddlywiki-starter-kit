@@ -11,7 +11,7 @@ list-after:
 \whitespace trim
 <$button message="om-toggle-theme" tooltip="toggle" aria-label="toggle" class=<<tv-config-toolbar-class>>>
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
-{{$:/plugins/oeyoews/tiddlywiki-daylight/icon}}
+{{$:/plugins/oeyoews/tiddlywiki-daylight/sun}}
 </$list>
 <$list filter="[<tv-config-toolbar-text>match[yes]]">
 <span class="tc-btn-text">
