@@ -24,3 +24,4 @@ title: $:/plugins/oeyoews/tiddlywiki-tid2pdf/readme
 !! Example
 
 <$tid2pdf />
+<$tid2png />

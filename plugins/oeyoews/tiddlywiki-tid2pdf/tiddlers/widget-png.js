@@ -31,7 +31,7 @@ tid2png/widget
       const buttonNode = this.document.createElement('button');
       buttonNode.textContent = param;
       buttonNode.className =
-        'bg-lime-200 hover:bg-lime-300 duration-200 transition rounded-sm py-1 px-2 transition duration-200';
+        'bg-lime-200 hover:bg-lime-300 duration-200 transition rounded-sm py-1 px-2 transition duration-200 m-1';
       buttonNode.onclick = () => {
         const selector = `[data-tiddler-title="${title}"]`;
 

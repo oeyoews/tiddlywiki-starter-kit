@@ -31,7 +31,7 @@ tid2pdf/widget
       const buttonNode = this.document.createElement('button');
       buttonNode.textContent = param;
       buttonNode.className =
-        'bg-blue-200 hover:bg-blue-300 duration-200 transition rounded-sm p-1';
+        'bg-blue-200 hover:bg-blue-300 duration-200 transition rounded-sm py-1 px-2 transition duration-200 m-1';
       buttonNode.addEventListener('click', function () {
         var doc = new jspdf.jsPDF();
 
