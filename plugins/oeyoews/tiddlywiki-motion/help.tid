@@ -6,46 +6,35 @@ mask-closable: yes
 \define shortcut(shortcut)
 <$set name=kbd filter="[enlist:raw{$:/plugins/oeyoews/motion/config/Shortcuts/$shortcut$/Key}addprefix[<kbd>]addsuffix[</kbd>]]">
 <tr>
-  <td class="border-none p-1"><<kbd>></td>
-  <td class="border-none p-1"><$transclude tiddler="$:/plugins/oeyoews/motion/config/Shortcuts/$shortcut$/Caption" /></td>
+  <td class="border-2 p-1"><<kbd>></td>
+  <td class="border-2 p-1"><$transclude tiddler="$:/plugins/oeyoews/motion/config/Shortcuts/$shortcut$/Caption" /></td>
 </tr>
 </$set>
 \end
 
-<div class="flex justify-around">
-<div>
-<span class="font-bold flex justify-center item-center rounded transition duration-300 ease-in-out">Custom</span>
-
-<table class="border-none">
+<div class="grid grid-cols-2 gap-2">
+<table class="border-2">
 <$list filter="[enlist[Fullscreen ToggleSidebar GoToInbox RefreshWiki GoToGettingStarted GoToControlPanel GoToSearch ToggleLayout TogglePalette GoToPlugins]]">
 <$macrocall $name="shortcut" shortcut=<<currentTiddler>> />
 </$list>
 </table>
 
-<h4 class="font-bold flex justify-center item-center">General</h4>
-
-<table class="border-none">
+<table class="border-2">
 <$list filter="[enlist[FocusSearch ShowHelp Dismiss]]">
 <$macrocall $name="shortcut" shortcut=<<currentTiddler>> />
 </$list>
 </table>
 
-<h4 class="font-bold flex justify-center item-center">Story River</h4>
-
-<table class="border-none">
+<table class="border-2">
 <$list filter="[enlist[CreateNewTiddler SelectNextTiddler SelectPreviousTiddler GoToFirstTiddler GoToLastTiddler EditTiddler DeleteTiddler CloseTiddler CloseAllTiddlers]]">
 <$macrocall $name="shortcut" shortcut=<<currentTiddler>> />
 </$list>
 </table>
-</div>
 
-<div>
-<h4 class="font-bold flex justify-center item-center">Folding</h4>
-
-<table class="border-none">
+<table class="border-2">
 <$list filter="[enlist[FoldTiddler UnfoldTiddler ToggleTiddler FoldAllTiddlers UnfoldAllTiddlers ToggleAllTiddlers]]">
 <$macrocall $name="shortcut" shortcut=<<currentTiddler>> />
 </$list>
 </table>
-</div>
+
 </div>
