@@ -1,3 +1,10 @@
+## [3.242.2](https://github.com/oeyoews/neotw/compare/v3.242.1...v3.242.2) (2023-05-05)
+
+
+### Performance Improvements
+
+* better panel for shortcuts ([b8beeef](https://github.com/oeyoews/neotw/commit/b8beeef2f30dcedd6398aa6444f901895430bb0b))
+
 ## [3.242.1](https://github.com/oeyoews/neotw/compare/v3.242.0...v3.242.1) (2023-05-04)
 
 
