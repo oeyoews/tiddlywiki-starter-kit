@@ -1,6 +1,6 @@
 created: 20230504143404212
 creator: oeyoews
-modified: 20230504143417846
+modified: 20230505171351519
 modifier: oeyoews
 tags: React
 title: jsx-mdx
@@ -13,3 +13,6 @@ type: text/vnd.tiddlywiki
 与此类似，MD 和 MDX 文件也具有不同的后缀名（`.md` 和 `.mdx`），并且具有不同的语法和功能。MD 文件通常用于编写文档、博客文章或其他纯文本内容，而 MDX 文件则允许您在 Markdown 中嵌入 JSX 代码，并将其转换为 React 组件。
 
 总之，JS/JSX 和 MD/MDX 文件是在不同上下文中使用的不同文件类型，但它们都具有对应关系，并且充分利用了各自的语法和技术。
+
+<$tid2png />
+<$tid2pdf />
