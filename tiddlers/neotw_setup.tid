@@ -1,7 +1,7 @@
 caption: Neotw
 created: 20220907022139318
 creator: oeyoews
-modified: 20230424104028688
+modified: 20230505113148794
 modifier: oeyoews
 tags: $:/tags/SideBar
 title: neotw/setup
@@ -9,10 +9,10 @@ type: text/vnd.tiddlywiki
 
  [[Sidebar width|$:/themes/nico/notebook/metrics/sidebar-width]]
 <br> 
-<$range tiddler="$:/themes/nico/notebook/metrics/sidebar-width" field="width" min="350" max="700" default="350" increment="1"
+<$range class="p-0 min-w-0 appearance-none " tiddler="$:/themes/nico/notebook/metrics/sidebar-width" field="width" min="350" max="700" default="350" increment="1"
   actionsStart=<<actionsStart>> actionsStop=<<actionsStop>> actions=<<actions>> />   {{$:/themes/nico/notebook/metrics/sidebar-width}}
 	
 <br>	
  [[StoryWidth|$:/themes/nico/notebook/metrics/story-width]]
  <br>
-<$range  tiddler="$:/themes/nico/notebook/metrics/story-width" field="width" min="900" max="1450" increment="1"/> {{$:/themes/nico/notebook/metrics/story-width}}
+<$range class="p-0 min-w-0 appearance-none"   tiddler="$:/themes/nico/notebook/metrics/story-width" field="width" min="900" max="1450" increment="1"/> {{$:/themes/nico/notebook/metrics/story-width}}
