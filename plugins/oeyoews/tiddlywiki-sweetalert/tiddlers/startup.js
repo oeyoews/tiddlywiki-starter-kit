@@ -23,11 +23,7 @@ swealalert
     // TODO add params
     // https://github.com/Jermolene/TiddlyWiki5/compare/master...confetti-plugin
     $tw.rootWidget.addEventListener('om-swal', event => {
-      try {
-        swal(event.detail.message);
-      } catch (err) {
-        console.log(err);
-      }
+      swal(event.detail.message);
     });
   };
 })();

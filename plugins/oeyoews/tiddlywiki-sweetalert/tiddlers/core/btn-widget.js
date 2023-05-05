@@ -25,7 +25,7 @@ sweetalert
       this.execute();
 
       const button = this.document.createElement('button');
-      button.textContent = this.getAttribute('text', 'Click me!');
+      button.textContent = this.text;
       parent.insertBefore(button, nextSibling);
       this.domNodes.push(button);
 
@@ -34,15 +34,27 @@ sweetalert
           return;
         }
         this.executing = true;
-        // do something here
+
         const swal = require('$:/plugins/oeyoews/sweetalert/sweetalert.min.js');
-        swal('Button clicked'); // 控制台输出 log
-        // tiddlywiki-sounds
-        howler();
+        swal({
+          icon: this.icon,
+          title: this.title,
+          text: this.text,
+          confirmButtonText: 'OK',
+          // other SweetAlert options here
+        });
+
         this.executing = false;
       };
 
       button.addEventListener('click', handleClick);
+    }
+
+    computeAttributes() {
+      super.computeAttributes();
+      this.icon = this.getAttribute('icon', 'success');
+      this.title = this.getAttribute('title', 'Default title');
+      this.text = this.getAttribute('text', 'Default text');
     }
   }
 
