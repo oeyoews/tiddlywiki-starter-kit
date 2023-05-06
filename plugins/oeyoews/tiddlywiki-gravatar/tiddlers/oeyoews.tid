@@ -4,4 +4,8 @@ subtitle: {{$:/plugins/oeyoews/tiddlywiki-modal-ui/close-modal}}
 type: text/markdown
 class: o-tm
 
-> :wave: Coming
+<$avatar center="yes" link="https://github.com/oeyoews"/>
+
+<div class="animate-bounce inline-block m-2">
+👋 Coming !
+</div>
