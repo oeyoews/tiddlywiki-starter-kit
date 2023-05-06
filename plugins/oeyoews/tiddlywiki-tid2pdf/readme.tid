@@ -33,3 +33,5 @@ Export PNG
 !! TODO
 
 - support pdf preview
+- https://github.com/niklasvh/html2canvas/issues/722
+- minify png

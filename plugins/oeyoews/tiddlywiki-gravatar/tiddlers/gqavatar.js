@@ -108,6 +108,7 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
         ele = a;
       } else {
         ele = img;
+        // img.crossOrigin = 'anonymous';
       }
 
       // 在图片加载失败时使用渐变圆形背景

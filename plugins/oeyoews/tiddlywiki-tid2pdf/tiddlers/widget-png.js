@@ -6,7 +6,7 @@ module-type: widget
 tid2png/widget
 
 \*/
-(function() {
+(function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -59,8 +59,9 @@ tid2png/widget
 
         // 转换canvas为PNG格式的数据URL
         html2canvas(element, {
-          allowTaint: true,
-          useCORS: true,
+          allowTaint: false,
+          useCORS: false,
+          letterRendering: 1,
         }).then(canvas => {
           const imgData = canvas.toDataURL('image/png');
 
