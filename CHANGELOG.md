@@ -1,3 +1,10 @@
+# [3.245.0](https://github.com/oeyoews/neotw/compare/v3.244.1...v3.245.0) (2023-05-06)
+
+
+### Features
+
+* support img.onerror use gradient img ([3bce911](https://github.com/oeyoews/neotw/commit/3bce911c59440971a0b79eb81167597b5b952eac))
+
 ## [3.244.1](https://github.com/oeyoews/neotw/compare/v3.244.0...v3.244.1) (2023-05-06)
 
 
