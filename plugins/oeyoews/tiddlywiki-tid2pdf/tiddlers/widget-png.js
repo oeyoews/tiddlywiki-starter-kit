@@ -20,17 +20,20 @@ tid2png/widget
       super(parseTreeNode, options);
     }
 
+    computeAttributes() {
+      super.computeAttributes();
+      this.title = this.getVariable('currentTiddler', 'default title');
+      this.param = this.getAttribute('param', `Download ${this.title}.png`);
+      this.preview = this.getAttribute('preview', false);
+    }
+
     render(parent, nextSibling) {
       this.parentDomNode = parent;
       this.computeAttributes();
       this.execute();
 
-      const title = this.getVariable('currentTiddler');
-      const param = this.getAttribute('param', `Download ${title}.png`);
-      const preview = this.getAttribute('preview') === 'true';
-
       const buttonNode = this.document.createElement('button');
-      buttonNode.textContent = param;
+      buttonNode.textContent = this.param;
       buttonNode.className =
         'bg-lime-200 hover:bg-lime-300 duration-200 transition rounded-sm py-1 px-2 transition duration-200 m-1';
 
@@ -40,7 +43,7 @@ tid2png/widget
         linkNode.href = imgData;
 
         // 指定文件名并将<a>元素添加到页面上
-        linkNode.download = `${title}`;
+        linkNode.download = `${this.title}`;
         document.body.appendChild(linkNode);
 
         // 模拟单击事件以触发下载
@@ -51,7 +54,7 @@ tid2png/widget
       };
 
       buttonNode.onclick = () => {
-        const selector = `[data-tiddler-title="${title}"]`;
+        const selector = `[data-tiddler-title="${this.title}"]`;
         var element = document.querySelector(selector);
 
         // 转换canvas为PNG格式的数据URL
@@ -62,10 +65,10 @@ tid2png/widget
           const imgNode = document.createElement('img');
           imgNode.src = imgData;
 
-          if (preview) {
+          if (this.preview) {
             swal({
               icon: 'success',
-              title: `${title}`,
+              title: `${this.title}`,
               content: {
                 element: imgNode,
               },
@@ -91,7 +94,7 @@ tid2png/widget
       this.domNodes.push(buttonNode);
     }
 
-    refresh() {
+    /* refresh() {
       var changedAttributes = this.computeAttributes();
       // changedAttributes.title;
       if (Object.keys(changedAttributes).length > 0) {
@@ -100,7 +103,7 @@ tid2png/widget
       } else {
         return false;
       }
-    }
+    } */
   }
 
   exports.tid2png = PNGWidget;
