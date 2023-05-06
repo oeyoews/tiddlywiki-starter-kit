@@ -6,9 +6,7 @@ module-type: widget
 tid2png/widget
 
 \*/
-(function() {
-  /*jslint node: true, browser: true */
-  /*global $tw: false */
+(function () {
   'use strict';
 
   if (!$tw.browser) return;
@@ -27,31 +25,73 @@ tid2png/widget
 
       const title = this.getVariable('currentTiddler');
       const param = this.getAttribute('param', `Download ${title}.png`);
+      const cornerRadius = parseInt(this.getAttribute('cornerRadius', '0'));
 
       const buttonNode = this.document.createElement('button');
       buttonNode.textContent = param;
       buttonNode.className =
-        'bg-lime-200 hover:bg-lime-300 duration-200 transition rounded-sm py-1 px-2 transition duration-200 m-1';
+        'rounded-sm bg-lime-200 hover:bg-lime-300 duration-200 transition py-1 px-2 m-1';
       buttonNode.onclick = () => {
         const selector = `[data-tiddler-title="${title}"]`;
-
-        var element = document.querySelector(selector);
+        const element = document.querySelector(selector);
 
         html2canvas(element).then(canvas => {
-          const imgData = canvas.toDataURL('image/png'); // 转换canvas为PNG格式的数据URL
+          const imgData = canvas.toDataURL('image/png');
 
-          // 创建一个<a>元素，并指定其href属性为图像数据URL
           const linkNode = document.createElement('a');
           linkNode.href = imgData;
-
-          // 指定文件名并将<a>元素添加到页面上
-          linkNode.download = `${title}`;
+          linkNode.download = `${title}.png`;
           document.body.appendChild(linkNode);
 
-          // 模拟单击事件以触发下载
-          linkNode.click();
+          if (cornerRadius > 0) {
+            const img = new Image();
+            img.src = imgData;
+            img.onload = function () {
+              const canvas = document.createElement('canvas');
+              canvas.width = this.width;
+              canvas.height = this.height;
+              const ctx = canvas.getContext('2d');
 
-          // 将<a>元素从页面上移除
+              ctx.save();
+              ctx.beginPath();
+              ctx.moveTo(0, cornerRadius);
+              ctx.lineTo(0, canvas.height - cornerRadius);
+              ctx.quadraticCurveTo(
+                0,
+                canvas.height,
+                cornerRadius,
+                canvas.height,
+              );
+              ctx.lineTo(canvas.width - cornerRadius, canvas.height);
+              ctx.quadraticCurveTo(
+                canvas.width,
+                canvas.height,
+                canvas.width,
+                canvas.height - cornerRadius,
+              );
+              ctx.lineTo(canvas.width, cornerRadius);
+              ctx.quadraticCurveTo(
+                canvas.width,
+                0,
+                canvas.width - cornerRadius,
+                0,
+              );
+              ctx.lineTo(cornerRadius, 0);
+              ctx.quadraticCurveTo(0, 0, 0, cornerRadius);
+              ctx.closePath();
+              ctx.clip();
+
+              ctx.drawImage(img, 0, 0);
+
+              ctx.restore();
+
+              const newImgData = canvas.toDataURL('image/png');
+              linkNode.href = newImgData;
+              linkNode.download = `${title}-rounded.png`;
+            };
+          }
+
+          linkNode.click();
           document.body.removeChild(linkNode);
         });
       };
@@ -61,7 +101,6 @@ tid2png/widget
 
     refresh() {
       var changedAttributes = this.computeAttributes();
-      // changedAttributes.title;
       if (Object.keys(changedAttributes).length > 0) {
         this.refreshSelf();
         return true;
