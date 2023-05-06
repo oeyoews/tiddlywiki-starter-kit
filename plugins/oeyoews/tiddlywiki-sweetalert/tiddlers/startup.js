@@ -18,7 +18,9 @@ swealalert
   exports.synchronous = true;
 
   exports.startup = function () {
-    require('$:/plugins/oeyoews/tiddlywiki-sweetalert/startup-message.js');
+    if (window.location.protocol === 'https:') {
+      require('$:/plugins/oeyoews/tiddlywiki-sweetalert/startup-message.js');
+    }
 
     // TODO add params
     // https://github.com/Jermolene/TiddlyWiki5/compare/master...confetti-plugin
