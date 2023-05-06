@@ -1,3 +1,10 @@
+## [3.244.1](https://github.com/oeyoews/neotw/compare/v3.244.0...v3.244.1) (2023-05-06)
+
+
+### Bug Fixes
+
+* use https online just ([58ea891](https://github.com/oeyoews/neotw/commit/58ea89193315d58cd7a1fef91b36fac7881130d0))
+
 # [3.244.0](https://github.com/oeyoews/neotw/compare/v3.243.0...v3.244.0) (2023-05-06)
 
 
