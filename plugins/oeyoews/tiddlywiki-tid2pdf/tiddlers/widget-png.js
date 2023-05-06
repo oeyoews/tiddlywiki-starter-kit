@@ -64,6 +64,7 @@ tid2png/widget
 
           if (preview) {
             swal({
+              icon: 'success',
               title: `${title}`,
               content: {
                 element: imgNode,
