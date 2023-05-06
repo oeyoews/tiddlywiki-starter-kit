@@ -1,5 +1,5 @@
 title: $:/plugins/oeyoews/neotw-hitokoto/ui/hitokoto
-tags: $:/tags/ViewTemplate
+<!-- tags: $:/tags/ViewTemplate -->
 
 <$list filter="[all[current]!is[system]!field:hitokoto[no]]">
 <$list filter="[{$:/info/url/protocol}match[https:]]">
