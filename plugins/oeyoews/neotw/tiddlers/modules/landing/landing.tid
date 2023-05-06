@@ -29,7 +29,7 @@ tags: $:/tags/Layout
 <span class="animate-bounce inline-block mr-2">
 🔐
 </span>
-<span class="text-slate-400">Tips: password is oeyoews </span>
+<span class="text-slate-400">Tips: password is <span class="hover:font-bold transition duration-200 cursor-pointer select-all"> oeyoews</span> </span>
 </div>
             </div>
 
