@@ -1,3 +1,10 @@
+## [3.245.2](https://github.com/oeyoews/neotw/compare/v3.245.1...v3.245.2) (2023-05-06)
+
+
+### Performance Improvements
+
+* add serif for code style ([47052f0](https://github.com/oeyoews/neotw/commit/47052f01cb0e2b7530218e081f2a7cb4a6117287))
+
 ## [3.245.1](https://github.com/oeyoews/neotw/compare/v3.245.0...v3.245.1) (2023-05-06)
 
 
