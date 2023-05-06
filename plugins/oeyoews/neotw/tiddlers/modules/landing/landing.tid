@@ -25,7 +25,12 @@ tags: $:/tags/Layout
             <div class="mb-4">
                <label class="block text-gray-700 font-bold mb-2" for="password">Password</label>
                <$edit-text tiddler="$:/temp/login/password" field="password" class="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="password" placeholder="Enter Your Password" focus=yes/>
-               <div class="text-slate-400 m-2 italic">Tips: password is oeyoews </div>
+               <div class="my-2 mr-2">
+<span class="animate-bounce inline-block mr-2">
+🔐
+</span>
+<span class="text-slate-400">Tips: password is oeyoews </span>
+</div>
             </div>
 
         </form>
