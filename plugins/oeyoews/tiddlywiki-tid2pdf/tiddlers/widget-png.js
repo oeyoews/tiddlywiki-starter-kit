@@ -6,7 +6,7 @@ module-type: widget
 tid2png/widget
 
 \*/
-(function () {
+(function() {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';

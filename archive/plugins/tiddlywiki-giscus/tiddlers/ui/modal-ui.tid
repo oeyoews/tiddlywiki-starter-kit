@@ -8,7 +8,7 @@ caption: giscus on modal
 \whitespace trim
 <$list filter="[[$:/temp/focussedTiddler]!is[missing]]">
 <$list filter="[[$:/temp/focussedTiddler]get[text]!is[system]!has[draft.of]]">
-<$button message="giscus" tooltip="comment" class=<<tv-config-toolbar-class>>>
+<$button tooltip="comment" class=<<tv-config-toolbar-class>>>
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
 <$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/tiddlywiki-giscus/giscus-modal"/>
 {{$:/plugins/oeyoews/tiddlywiki-giscus/icon}}
