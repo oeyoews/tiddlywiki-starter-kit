@@ -1,6 +1,6 @@
 created: 20230504143404212
 creator: oeyoews
-modified: 20230505171351519
+modified: 20230506051355848
 modifier: oeyoews
 tags: React
 title: jsx-mdx
@@ -16,3 +16,7 @@ type: text/vnd.tiddlywiki
 
 <$tid2png />
 <$tid2pdf />
+
+!!preview
+
+<$tid2png preview="true"/>
