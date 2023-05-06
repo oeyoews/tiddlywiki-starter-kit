@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>上传、预览和下载图像（含粘贴功能）</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <div class="mx-auto py-10">
+      <div
+        class="mx-auto max-w-xl overflow-hidden rounded-lg bg-white shadow-md"
+      >
+        <div class="px-6 py-4">
+          <h2 class="text-lg font-bold text-gray-800">
+            上传、预览和下载图像（含粘贴功能）
+          </h2>
+          <p class="mt-1 text-gray-600">
+            选择一个图像或拖放图像文件，也可以用 Ctrl V 从剪贴板上粘贴至此。
+          </p>
+        </div>
+        <div class="border-t border-gray-200 px-6 py-4">
+          <form method="post" enctype="multipart/form-data">
+            <div class="mb-4">
+              <label class="mb-2 block font-bold text-gray-700" for="image">
+                选择图像
+              </label>
+              <input
+                class="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 focus:outline-none"
+                id="image"
+                name="image"
+                type="file"
+                onchange="previewImage(event)"
+              />
+            </div>
+            <div class="flex items-center justify-end">
+              <button
+                class="focus:shadow-outline rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700 focus:outline-none"
+                type="submit"
+              >
+                上传
+              </button>
+            </div>
+          </form>
+        </div>
+        <div id="preview" class="hidden border-t border-gray-200 px-6 py-4">
+          <h3 class="mb-4 text-lg font-bold text-gray-800">预览</h3>
+          <div class="rounded-lg">
+            <img id="preview-image" src="#" alt="" class="w-full rounded-lg" />
+          </div>
+          <div class="mt-4 flex items-center justify-end">
+            <a
+              id="download-button"
+              href="#"
+              download="image.png"
+              class="focus:shadow-outline rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700 focus:outline-none"
+            >
+              下载
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.onload = function () {
+        var imageInput = document.getElementById('image');
+        if (imageInput) {
+          // 如果存在文件选择输入框，则添加change事件监听器
+          imageInput.addEventListener('change', previewImage);
+        }
+
+        // 添加paste事件监听器
+        window.addEventListener('paste', function (event) {
+          previewImage(event);
+          event.preventDefault(); // 防止粘贴数据直接插入到页面中
+        });
+      };
+      function previewImage(event) {
+        var preview = document.getElementById('preview');
+        var previewImage = document.getElementById('preview-image');
+        var downloadButton = document.getElementById('download-button');
+
+        // 显示预览和下载按钮
+        preview.classList.remove('hidden');
+        downloadButton.href = '';
+        downloadButton.classList.add('hidden');
+
+        // 检查文件类型是否为图像
+        if (
+          event.target.files &&
+          event.target.files[0] &&
+          event.target.files[0].type.indexOf('image') !== -1
+        ) {
+          // 如果是图像文件，使用URL.createObjectURL()方法设置预览图像的src属性
+          previewImage.src = URL.createObjectURL(event.target.files[0]);
+          downloadButton.href = previewImage.src;
+          downloadButton.classList.remove('hidden');
+        } else {
+          // 如果不是图像文件，则尝试从剪贴板中提取图像数据
+          var items = (event.clipboardData || event.originalEvent.clipboardData)
+            .items;
+          for (var i in items) {
+            if (items[i].type == 'image/png') {
+              var blob = items[i].getAsFile();
+              var reader = new FileReader();
+              reader.onload = function (event) {
+                // 使用URL.createObjectURL()方法设置预览图像的src属性
+                previewImage.src = event.target.result;
+                downloadButton.href = previewImage.src;
+                downloadButton.classList.remove('hidden');
+              };
+              reader.readAsDataURL(blob);
+            }
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
