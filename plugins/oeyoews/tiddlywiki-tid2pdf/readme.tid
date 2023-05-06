@@ -29,3 +29,7 @@ title: $:/plugins/oeyoews/tiddlywiki-tid2pdf/readme
 <$button message="om-export-png" >
 Export PNG
 </$button>
+
+!! TODO
+
+- support pdf preview
