@@ -25,3 +25,7 @@ title: $:/plugins/oeyoews/tiddlywiki-tid2pdf/readme
 
 <$tid2pdf />
 <$tid2png />
+
+<$button message="om-export-png" >
+Export PNG
+</$button>

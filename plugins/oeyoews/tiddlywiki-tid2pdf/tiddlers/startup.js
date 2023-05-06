@@ -19,9 +19,8 @@ tid2pdf module
     window.jspdf = require('jspdf.umd.min.js');
     window.html2canvas = require('html2canvas.min.js');
 
-    /* $tw.rootWidget.addEventListener('om-export-png', () => {
-      const title = getvariable('currentTiddler');
-      // const param = this.getAttribute('param', `Download ${title}.png`);
+    $tw.rootWidget.addEventListener('om-export-png', () => {
+      const title = $tw.wiki.getTiddlerText('$:/temp/focussedTiddler');
       const selector = `[data-tiddler-title="${title}"]`;
 
       var element = document.querySelector(selector);
@@ -43,6 +42,6 @@ tid2pdf module
         // 将<a>元素从页面上移除
         document.body.removeChild(linkNode);
       });
-    }); */
+    });
   };
 })();
