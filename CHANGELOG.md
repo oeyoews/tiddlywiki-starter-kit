@@ -1,3 +1,10 @@
+## [3.245.1](https://github.com/oeyoews/neotw/compare/v3.245.0...v3.245.1) (2023-05-06)
+
+
+### Bug Fixes
+
+* swal ([8d42af3](https://github.com/oeyoews/neotw/commit/8d42af300ea614f938133a9c9bb1f7833ca4867b))
+
 # [3.245.0](https://github.com/oeyoews/neotw/compare/v3.244.1...v3.245.0) (2023-05-06)
 
 
