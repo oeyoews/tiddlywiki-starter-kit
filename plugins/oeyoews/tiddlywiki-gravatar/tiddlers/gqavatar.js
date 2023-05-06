@@ -25,7 +25,6 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
  * 整个插件是一个 IIFE（Immediately Invoked Function Expression）函数，其中定义了一个 AvatarWidget 类，在类的内部实现了 render 方法来生成头像。最后通过 exports.avatar = AvatarWidget; 部分将 AvatarWidget 类导出为 $avatar 标签供 TiddlyWiki 使用。
  *
  */
-
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
@@ -110,6 +109,17 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
       } else {
         ele = img;
       }
+
+      // 在图片加载失败时使用渐变圆形背景
+      img.onerror = function () {
+        img.style.display = 'none';
+        const mask = document.createElement('div');
+        mask.setAttribute('title', 'gradient avatar');
+        mask.className = `bg-gradient-to-r from-teal-100 to-lime-200 rounded-full align-middle m-1 duration-200 transition object-cover object-center w-${width} h-${width}`;
+        mask.style.maxWidth = '24px';
+        mask.style.maxHeight = '24px';
+        parent.insertBefore(mask, nextSibling);
+      };
 
       parent.insertBefore(ele, nextSibling);
       this.domNodes.push(ele);
