@@ -18,6 +18,7 @@ swealalert
   exports.synchronous = true;
 
   exports.startup = function () {
+    window.swal = require('$:/plugins/oeyoews/sweetalert/sweetalert.min.js');
     if (window.location.protocol === 'https:') {
       require('$:/plugins/oeyoews/tiddlywiki-sweetalert/startup-message.js');
     }

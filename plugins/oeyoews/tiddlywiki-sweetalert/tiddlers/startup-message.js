@@ -7,7 +7,7 @@ swealalert startup message
 
 \*/
 
-const swal = require('$:/plugins/oeyoews/sweetalert/sweetalert.min.js');
+// const swal = require('$:/plugins/oeyoews/sweetalert/sweetalert.min.js');
 const neotw = JSON.parse(localStorage.getItem('neotw')) || {};
 const currentDate = new Date().toDateString();
 const noNotifyDate = neotw.noNotifyDate;
