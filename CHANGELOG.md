@@ -1,3 +1,10 @@
+# [3.244.0](https://github.com/oeyoews/neotw/compare/v3.243.0...v3.244.0) (2023-05-06)
+
+
+### Features
+
+* support swal for html2canvas ([147bdc4](https://github.com/oeyoews/neotw/commit/147bdc4f6d6f03efebc86e9fec1fe23b82977e77))
+
 # [3.243.0](https://github.com/oeyoews/neotw/compare/v3.242.2...v3.243.0) (2023-05-05)
 
 
