@@ -1,0 +1,16 @@
+created: 20230508104256371
+creator: oeyoews
+modified: 20230508104311673
+modifier: oeyoews
+tags: TypeScript
+title: ts-01
+type: text/vnd.tiddlywiki
+
+"ts" 是 TypeScript 的缩写，尖括号 "<>" 在 TypeScript 中通常用于表示泛型类型。例如：
+
+```typescript
+// 定义一个泛型数组类型
+const array: Array<number> = [1, 2, 3];
+```
+
+在这个例子中，"<number>" 表示了这个数组只能存储数字类型的元素。泛型是 TypeScript 中非常强大和灵活的特性，它可以让代码更加抽象和可复用。
