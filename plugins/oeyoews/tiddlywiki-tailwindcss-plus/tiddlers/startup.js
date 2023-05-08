@@ -30,7 +30,7 @@ tailwindcss startup
       if (stackTrace.includes(tailwindFile)) {
         // 自定义逻辑：拦截console.warn()信息，记录日志等
         // console.log('Intercepted warning from script.js:', ...args);
-        console.warn('Tailwindcss is using cdn on production env');
+        // console.warn('Tailwindcss is using cdn on production env');
       } else {
         // 调用原始的console.warn()方法输出警告信息
         originalWarn(...args);
