@@ -8,7 +8,8 @@
           "source": "filename"
         },
         "module-type": "library",
-        "type": "application/javascript"
+        "type": "application/javascript",
+        "hide-body": "yes"
       }
     }
   ]
