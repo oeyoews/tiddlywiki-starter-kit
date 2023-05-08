@@ -3,7 +3,7 @@ created: 20230117102714737
 creator: oeyoews
 giscus: yes
 icon: tom.svg
-modified: 20230504022757622
+modified: 20230508094108540
 modifier: oeyoews
 page-cover: banner.png
 pin: yes
@@ -22,6 +22,5 @@ type: text/vnd.tiddlywiki
 <$list filter="[{$:/info/url/protocol}match[https:]]">
 {{$:/plugins/oeyoews/tiddlywiki-cards/gallary}}
 {{$:/plugins/oeyoews/neotw/Readme}}
-{{$:/plugins/oeyoews/tiddlywiki-cards/sites}}
 {{$:/plugins/oeyoews/neotw/ui/download-neotw-empty}}
 </$list>
