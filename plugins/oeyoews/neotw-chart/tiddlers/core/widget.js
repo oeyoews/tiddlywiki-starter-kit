@@ -30,8 +30,8 @@ neotw-chart widget
       const {
         id = time,
         type = 'pie',
-        width = '40',
-        height = '40',
+        // width = '40px',
+        // height = '40px',
       } = this.attributes;
       const canvas = this.document.createElement('canvas');
       canvas.id = id;
