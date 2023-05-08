@@ -11,9 +11,7 @@ neotw-chart widget
   /*global $tw: false */
   'use strict';
 
-  if (!$tw.browser) {
-    return;
-  }
+  if (!$tw.browser) return;
 
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
   const Chart = require('chart.min.js');

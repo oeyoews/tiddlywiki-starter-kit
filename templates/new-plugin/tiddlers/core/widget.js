@@ -6,15 +6,12 @@ module-type: widget
 ${pluginname} widget
 
 \*/
-
-(function () {
+(function() {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
 
-  if (!$tw.browser) {
-    return;
-  }
+  if (!$tw.browser) return;
 
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
 

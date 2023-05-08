@@ -21,6 +21,7 @@ gisucs widget
       this.computeAttributes();
       this.execute();
 
+      // ?
       const { id = '', lang = 'en', theme = 'light' } = this.attributes;
 
       const giscusConfigTiddler = '$:/plugins/oeyoews/tiddlywiki-giscus/config';
