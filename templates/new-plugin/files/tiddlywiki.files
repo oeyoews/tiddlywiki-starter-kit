@@ -2,14 +2,14 @@
   "directories": [
     {
       "path": "./",
-      "filesRegExp": "^.*\\.css$",
+      "filesRegExp": "^.*\\.min.js$",
       "fields": {
         "title": {
-          "source": "filename",
-          "prefix": "$:/plugins/${username}/${pluginname}/"
+          "source": "filename"
         },
-        "tags": "$:/tags/Stylesheet",
-        "type": "text/css"
+        "module-type": "library",
+        "type": "application/javascript",
+        "hide-body": "yes"
       }
     }
   ]
