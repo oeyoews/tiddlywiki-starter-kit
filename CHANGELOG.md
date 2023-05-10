@@ -1,3 +1,10 @@
+# [3.246.0](https://github.com/oeyoews/neotw/compare/v3.245.2...v3.246.0) (2023-05-10)
+
+
+### Features
+
+* add echarts ([0aa5758](https://github.com/oeyoews/neotw/commit/0aa57584e63a5e37a204d8d3f7d5354d498789eb))
+
 ## [3.245.2](https://github.com/oeyoews/neotw/compare/v3.245.1...v3.245.2) (2023-05-06)
 
 
