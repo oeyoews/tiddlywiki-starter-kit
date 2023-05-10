@@ -6,7 +6,7 @@ module-type: widget
 tiddlywiki-echarts widget
 
 \*/
-(function () {
+(function() {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -39,19 +39,27 @@ tiddlywiki-echarts widget
       if (tiddlerTitle) {
         const tiddler = $tw.wiki.getTiddler(tiddlerTitle);
         if (tiddler) {
-          const tiddlerFields = JSON.parse(tiddler.fields.text);
-          Object.assign(this.attributes, tiddlerFields);
+          try {
+            const tiddlerFields = JSON.parse(tiddler.fields.text);
+            Object.assign(this.attributes, tiddlerFields);
+          } catch (e) {
+            console.error('Failed to parse JSON from tiddler:', e);
+          }
         }
       }
 
       const {
-        title = '',
+        title = 'Echarts',
         type = 'bar',
-        theme = 'dark',
+        theme = 'light',
         width = '600px',
         height = '400px',
         className = '',
+        xdata = '',
+        ydata = '',
+        yname = '',
       } = this.attributes;
+      console.log(this.attributes);
 
       const time = new Date().getTime();
       const id = time;
@@ -73,14 +81,14 @@ tiddlywiki-echarts widget
         },
         tooltip: {},
         xAxis: {
-          data: ['衬衫', '羊毛衫', '雪纺衫', '裤子', '高跟鞋', '袜子'],
+          data: xdata,
         },
         yAxis: {},
         series: [
           {
-            name: '',
+            name: yname,
             type: type,
-            data: [5, 20, 36, 10, 10, 20],
+            data: ydata,
           },
         ],
       };
