@@ -1,3 +1,10 @@
+## [3.246.1](https://github.com/oeyoews/neotw/compare/v3.246.0...v3.246.1) (2023-05-10)
+
+
+### Performance Improvements
+
+* update 404.png ([2105c3b](https://github.com/oeyoews/neotw/commit/2105c3b145f3fcd0d12746c159a5b91633a2e269))
+
 # [3.246.0](https://github.com/oeyoews/neotw/compare/v3.245.2...v3.246.0) (2023-05-10)
 
 
