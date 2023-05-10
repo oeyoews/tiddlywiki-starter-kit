@@ -34,6 +34,16 @@ tiddlywiki-echarts widget
       另外，请注意，在TiddlyWiki中，使用`attributes`属性时，返回的是一个JavaScript对象，而不是字符串。因此，我们需要从该对象中提取所需的属性值。
        */
       // const theme = this.getAttribute('theme', 'light');
+
+      const tiddlerTitle = this.getAttribute('tiddler');
+      if (tiddlerTitle) {
+        const tiddler = $tw.wiki.getTiddler(tiddlerTitle);
+        if (tiddler) {
+          const tiddlerFields = JSON.parse(tiddler.fields.text);
+          Object.assign(this.attributes, tiddlerFields);
+        }
+      }
+
       const {
         title = '',
         type = 'bar',
