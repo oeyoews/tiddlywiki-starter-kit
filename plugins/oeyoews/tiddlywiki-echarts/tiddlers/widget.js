@@ -6,7 +6,7 @@ module-type: widget
 tiddlywiki-echarts widget
 
 \*/
-(function() {
+(function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -75,25 +75,33 @@ tiddlywiki-echarts widget
       const chartContainer = document.getElementById(id);
       const myChart = echarts.init(chartContainer, theme);
 
-      const option = {
+      const defaultOption = {
+        color: ['#00ffff'], // 指定颜色值
         title: {
           text: title,
         },
         tooltip: {},
         xAxis: {
-          data: xdata,
+          data: [
+            { value: 'vue', itemStyle: { color: 'red' } },
+            'react',
+            'javaScript',
+            'journal',
+            'css',
+            'tailwindcss',
+          ],
         },
         yAxis: {},
         series: [
           {
-            name: yname,
+            name: 'count',
             type: type,
-            data: ydata,
+            data: [1, 1, 2, 3, 5, 6],
           },
         ],
       };
 
-      myChart.setOption(option);
+      myChart.setOption(defaultOption);
     }
   }
 
