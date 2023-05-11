@@ -18,6 +18,7 @@
     "tiddlywiki/pluginlibrary",
     "oeyoews/tiddlywiki-sweetalert",
     "oeyoews/tiddlywiki-notify",
+    "oeyoews/tiddlywiki-markdown-extensions",
     "oeyoews/markdown",
     "oeyoews/tiddlywiki-cards",
     "oeyoews/tiddlywiki-tid2pdf",
