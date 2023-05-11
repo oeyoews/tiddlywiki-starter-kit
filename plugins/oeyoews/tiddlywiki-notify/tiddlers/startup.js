@@ -50,7 +50,7 @@ simple notify
           text = 'Text',
           autoclose = true,
         } = paramObject;
-        pushNotify(status, title, text);
+        pushNotify(status, title, text, autoclose);
       } catch {}
     });
   };
