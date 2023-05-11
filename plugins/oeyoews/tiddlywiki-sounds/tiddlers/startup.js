@@ -5,7 +5,7 @@ module-type: startup
 
 \*/
 
-(function () {
+(function() {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -15,9 +15,9 @@ module-type: startup
   exports.after = ['load-modules'];
   exports.synchronous = true;
 
-  exports.startup = function () {
+  exports.startup = function() {
     const Howl = require('howler.min.js').Howl;
-    window.howler = function (param = 'menu-open.mp3') {
+    window.howler = function(param = 'menu-open.mp3') {
       // TODO add pagecontrol button to toggle sound, and support dynamic buttons
       // if () return
       new Howl({
@@ -34,8 +34,10 @@ module-type: startup
       }).play();
     };
 
-    $tw.rootWidget.addEventListener('om-sound', () => {
-      howler('click01.mp3');
+    $tw.rootWidget.addEventListener('om-sound', event => {
+      const paramObject = event.paramObject || {};
+      const sound = paramObject.sound || 'menu-open.mp3';
+      howler(sound);
     });
   };
 })();

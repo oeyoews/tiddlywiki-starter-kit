@@ -6,8 +6,7 @@ module-type: startup
 swealalert
 
 \*/
-
-(function () {
+(function() {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -17,16 +16,19 @@ swealalert
   exports.after = ['load-modules'];
   exports.synchronous = true;
 
-  exports.startup = function () {
+  exports.startup = function() {
     window.swal = require('$:/plugins/oeyoews/sweetalert/sweetalert.min.js');
     if (window.location.protocol === 'https:') {
       require('$:/plugins/oeyoews/tiddlywiki-sweetalert/startup-message.js');
     }
 
-    // TODO add params
     // https://github.com/Jermolene/TiddlyWiki5/compare/master...confetti-plugin
     $tw.rootWidget.addEventListener('om-swal', event => {
-      swal(event.detail.message);
+      const paramObject = event.paramObject || {};
+      const icon = paramObject.icon || 'success';
+      const title = paramObject.title || 'Title';
+      const text = paramObject.text || 'Sweet Alert';
+      swal({ icon, title, text });
     });
   };
 })();

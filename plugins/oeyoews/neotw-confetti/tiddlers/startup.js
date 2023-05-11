@@ -6,8 +6,7 @@ module-type: startup
 load confetti
 
 \*/
-
-(function () {
+(function() {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -17,17 +16,20 @@ load confetti
   exports.after = ['startup'];
   exports.synchronous = true;
 
-  exports.startup = function () {
-    // load some confetti effects
-    // TODO: support params; confetti.reset()
-    $tw.rootWidget.addEventListener('om-confetti-launch', () => {
+  exports.startup = function() {
+    // <$button>
+    // <$action-sendmessage $message="om-confetti-launch" type="centerSound" />
+    $tw.rootWidget.addEventListener('om-confetti-launch', event => {
       try {
-        howler('click01.mp3');
-        Confetti.pride();
-      } catch {}
+        const paramObject = event.paramObject || {};
+        const type = paramObject.type || 'center';
+        // const sound = paramObject.sound || '';
+        Confetti[type]();
+      } catch { }
     });
+    // startup first first
+
     window.Confetti = require('$:/plugins/oeyoews/neotw-confetti/example/fireworks.js');
-    // startup trigger fireworks
     Confetti.fireworks();
   };
 })();

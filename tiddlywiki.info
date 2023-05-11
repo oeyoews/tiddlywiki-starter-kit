@@ -17,6 +17,7 @@
     "tiddlywiki/codemirror-mode-javascript",
     "tiddlywiki/pluginlibrary",
     "oeyoews/tiddlywiki-sweetalert",
+    "oeyoews/tiddlywiki-notify",
     "oeyoews/markdown",
     "oeyoews/tiddlywiki-cards",
     "oeyoews/tiddlywiki-tid2pdf",

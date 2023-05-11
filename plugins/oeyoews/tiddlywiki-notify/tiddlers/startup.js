@@ -7,7 +7,7 @@ simple notify
 
 \*/
 
-(function () {
+(function() {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -43,5 +43,14 @@ simple notify
         type: 1,
         position: 'right top',
       });
+    $tw.rootWidget.addEventListener('om-notify', event => {
+      try {
+        const paramObject = event.paramObject || {};
+        const status = paramObject.status || 'success';
+        const title = paramObject.title || 'Notify';
+        const text = paramObject.text || 'Text';
+        pushNotify(status, title, text);
+      } catch { }
+    });
   };
 })();

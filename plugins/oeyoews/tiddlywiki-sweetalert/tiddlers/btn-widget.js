@@ -5,7 +5,7 @@ module-type: widget
 
 sweetalert
 \*/
-(function () {
+(function() {
   /*jslint node: true, browser: true */
   /*global $tw: false */
 
