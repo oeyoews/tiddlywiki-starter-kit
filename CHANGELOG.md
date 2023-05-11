@@ -1,3 +1,10 @@
+## [3.246.3](https://github.com/oeyoews/neotw/compare/v3.246.2...v3.246.3) (2023-05-11)
+
+
+### Performance Improvements
+
+* support for some functions ([b9e8753](https://github.com/oeyoews/neotw/commit/b9e8753bf22e4cc874a632c8f9dd0880da450ad4))
+
 ## [3.246.2](https://github.com/oeyoews/neotw/compare/v3.246.1...v3.246.2) (2023-05-11)
 
 
