@@ -6,8 +6,7 @@ module-type: startup
 simple notify
 
 \*/
-
-(function() {
+(function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -17,14 +16,13 @@ simple notify
   exports.after = ['load-modules'];
   exports.synchronous = true;
   exports.startup = () => {
-    // not suppor require umd
-    // window.Notify = require('simple-notify.min.js');
+    const defaultOptions = {};
     window.pushNotify = (
       status = 'success',
       title = 'Notify',
       text = 'Text',
       effect = 'slide',
-      autoclose = false,
+      autoclose = true,
     ) =>
       new Notify({
         status,
@@ -46,11 +44,14 @@ simple notify
     $tw.rootWidget.addEventListener('om-notify', event => {
       try {
         const paramObject = event.paramObject || {};
-        const status = paramObject.status || 'success';
-        const title = paramObject.title || 'Notify';
-        const text = paramObject.text || 'Text';
+        const {
+          status = 'success',
+          title = 'Notify',
+          text = 'Text',
+          autoclose = true,
+        } = paramObject;
         pushNotify(status, title, text);
-      } catch { }
+      } catch {}
     });
   };
 })();
