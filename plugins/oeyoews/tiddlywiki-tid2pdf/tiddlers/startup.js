@@ -6,7 +6,7 @@ module-type: startup
 tid2pdf module
 
 \*/
-(function () {
+(function() {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -19,8 +19,12 @@ tid2pdf module
     window.jspdf = require('jspdf.umd.min.js');
     window.html2canvas = require('html2canvas.min.js');
 
-    $tw.rootWidget.addEventListener('om-export-png', () => {
-      const title = $tw.wiki.getTiddlerText('$:/temp/focussedTiddler');
+    $tw.rootWidget.addEventListener('om-export-png', event => {
+      // add adjuge
+      const paramObject = event.paramObject || {};
+      // NOTE: this tid must have storylist be rendered by tw
+      const title =
+        paramObject.title || $tw.wiki.getTiddlerText('$:/temp/focussedTiddler');
       const selector = `[data-tiddler-title="${title}"]`;
 
       var element = document.querySelector(selector);
