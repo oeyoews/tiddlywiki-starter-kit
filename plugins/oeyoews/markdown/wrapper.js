@@ -6,12 +6,12 @@ module-type: parser
 Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
 
 \*/
-(function (realRequire) {
+(function(realRequire) {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
 
-  var require = function (m) {
+  var require = function(m) {
     return realRequire('$:/plugins/tiddlywiki/markdown/' + m + '.js');
   };
 
@@ -88,7 +88,7 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
 
     var pragma = pluginOptions.renderWikiText
       ? '\\rules except latex-parser extlink\n' +
-        pluginOptions.renderWikiTextPragma
+      pluginOptions.renderWikiTextPragma
       : '\\rules only html entity commentinline commentblock';
 
     wikiParser.pos = 0;
@@ -104,11 +104,11 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
     results.inlineRuleClasses = {};
 
     // save the rule sets for future markdown parsing
-    wikiParser.blockRules.forEach(function (ruleinfo) {
+    wikiParser.blockRules.forEach(function(ruleinfo) {
       results.blockRules[ruleinfo.rule.name] = ruleinfo;
       results.blockRuleClasses[ruleinfo.rule.name] = ruleinfo.rule.class;
     });
-    wikiParser.inlineRules.forEach(function (ruleinfo) {
+    wikiParser.inlineRules.forEach(function(ruleinfo) {
       results.inlineRules[ruleinfo.rule.name] = ruleinfo;
       results.inlineRuleClasses[ruleinfo.rule.name] = ruleinfo.rule.class;
     });
@@ -149,7 +149,7 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
       inlineRules: results.inlineRules,
     });
 
-    $tw.utils.each(['image', 'prettylink', 'prettyextlink'], function (rule) {
+    $tw.utils.each(['image', 'prettylink', 'prettyextlink'], function(rule) {
       if (MarkdownParser.prototype.inlineRules[rule]) {
         // delegate to md; ignore the rule class in WikiParser
         delete MarkdownParser.prototype.inlineRuleClasses[rule];
@@ -161,7 +161,7 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
   /// Parse tree post processing ///
 
   function deactivateLinks(tree) {
-    $tw.utils.each(tree, function (node) {
+    $tw.utils.each(tree, function(node) {
       if (node.type === 'link') {
         node.type = 'text';
         node.text = node.children[0].text;
@@ -203,8 +203,8 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
         match[1] !== undefined
           ? match[1]
           : match[2] !== undefined
-          ? match[2]
-          : match[3];
+            ? match[2]
+            : match[3];
       node.end = pos + match[0].length;
       if (match[0].charAt(0) === 'e') {
         node.value = decodeEntities(node.value);
@@ -218,7 +218,7 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
   function processWikiTree(tree, hasWikiLinkRule) {
     var stack = [].concat(tree);
 
-    var mergeable = function (node) {
+    var mergeable = function(node) {
       return (
         node.type === 'element' &&
         node.tag === 'p' &&
@@ -287,8 +287,8 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
       wikiParser = $tw.wiki.parseText(
         'text/vnd.tiddlywiki',
         '<strong>Error encountered while parsing the tiddler:</strong><p>' +
-          err.message +
-          '</p>',
+        err.message +
+        '</p>',
         { parseAsInline: false, wiki: options.wiki },
       );
     } finally {
@@ -297,7 +297,7 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
     if (wikiParser.tree.length > 0) {
       var hasWikiLinkRule = false;
       // see if wikilink rule has been invoked
-      $tw.utils.each(wikiParser.inlineRules, function (ruleInfo) {
+      $tw.utils.each(wikiParser.inlineRules, function(ruleInfo) {
         if (ruleInfo.rule.name === 'wikilink') {
           hasWikiLinkRule = true;
           return false;

@@ -1,0 +1,13 @@
+created: 20230511032720780
+creator: oeyoews
+modified: 20230511032907190
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: warning
+type: text/vnd.tiddlywiki
+
+.warning {
+	background: orange;
+	padding: 0 4px;
+	border-radius: 4px;
+}
