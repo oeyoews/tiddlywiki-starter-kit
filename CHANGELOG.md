@@ -1,3 +1,10 @@
+## [3.246.2](https://github.com/oeyoews/neotw/compare/v3.246.1...v3.246.2) (2023-05-11)
+
+
+### Performance Improvements
+
+* split class Motion ([79690ea](https://github.com/oeyoews/neotw/commit/79690ea7095d7ba255a62ca1af3d96cee78c4d47))
+
 ## [3.246.1](https://github.com/oeyoews/neotw/compare/v3.246.0...v3.246.1) (2023-05-10)
 
 
