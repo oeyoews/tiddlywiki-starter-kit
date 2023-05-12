@@ -1,3 +1,10 @@
+# [3.247.0](https://github.com/oeyoews/neotw/compare/v3.246.3...v3.247.0) (2023-05-12)
+
+
+### Features
+
+* add markdown-container styles with tailwindcss ([c5cee81](https://github.com/oeyoews/neotw/commit/c5cee8133a853ebf573597077818d0c99bfc2c80))
+
 ## [3.246.3](https://github.com/oeyoews/neotw/compare/v3.246.2...v3.246.3) (2023-05-11)
 
 
