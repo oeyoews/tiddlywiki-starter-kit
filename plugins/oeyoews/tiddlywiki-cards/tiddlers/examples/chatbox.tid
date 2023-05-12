@@ -18,7 +18,7 @@ title: $:/plugins/oeyoews/tiddlywiki-cards/chatbox
 <div>
   <!-- username -->
  <div class="text-sm text-gray-500">$sender1$</div>
-    <div class="bg-white rounded-lg p-1">
+    <div class="bg-white rounded-lg p-1 shadow-md select-all">
       <p class="text-gray-700">$text1$</p>
     </div>
 		</div>
@@ -30,7 +30,7 @@ title: $:/plugins/oeyoews/tiddlywiki-cards/chatbox
 <div>
  <div class="text-sm text-gray-500 text-right mr-2">$sender2$</div>
     <!-- 聊天消息内容 -->
-    <div class="bg-white rounded-lg p-1">
+    <div class="bg-green-200 rounded-lg p-1 shadow-md select-all">
       <p class="text-gray-700">$text2$</p>
     </div>
 		</div>
