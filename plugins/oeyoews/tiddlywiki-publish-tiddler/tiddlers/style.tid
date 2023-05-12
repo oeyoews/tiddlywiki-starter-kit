@@ -22,3 +22,7 @@ tags: $:/tags/Stylesheet
 <$list filter='[filed:publish[private]]'>
 [data-tiddler-title='{{!!title}}'] { border: 1px dashed red !important; }
 </$list>
+
+<!-- <$list filter='[has[draft.of]]'> -->
+<!-- [data-tiddler-title='{{!!title}}'] { border: 2px dashed red !important; } -->
+<!-- </$list> -->
