@@ -4,6 +4,8 @@ title: $:/plugins/oeyoews/tiddlywiki-cards/chatbox
 <$avatar width=22 link="https://github.com/oeyoews" email=$email$ type="gravatar"/>
 \end
 
+<!-- TODO make macro -->
+
 <!-- 聊天消息列表 -->
 <ul class="bg-gray-100 p-4 rounded-lg">
   <!-- 第一条聊天消息 -->
