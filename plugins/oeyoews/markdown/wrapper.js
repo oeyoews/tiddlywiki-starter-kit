@@ -135,7 +135,7 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
         render: function (tokens, idx) {
           if (tokens[idx].nesting === 1) {
             return (
-              '<div class="bg-yellow-100 rounded-md border-left border-l-4 border-yellow-500 text-yellow-700 px-1 mb-2">\n' +
+              '<div class="bg-yellow-100 rounded-md border-left border-l-4 border-yellow-500 text-yellow-700 px-1 my-2">\n' +
               '<div class="font-bold">注意</div>' +
               '<div class="content">'
             );
@@ -150,7 +150,7 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
         render: function (tokens, idx) {
           if (tokens[idx].nesting === 1) {
             return (
-              '<div class="bg-blue-100 rounded-md border-left border-l-4 border-blue-500 text-blue-700 px-1 mb-2">\n' +
+              '<div class="bg-blue-100 rounded-md border-left border-l-4 border-blue-500 text-blue-700 px-1 my-2">\n' +
               '<div class="font-bold">提示</div>' +
               '<div class="content">'
             );
@@ -163,7 +163,7 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
         render: function (tokens, idx) {
           if (tokens[idx].nesting === 1) {
             return (
-              '<div class="bg-red-100 border-left rounded-md border-l-4 border-red-500 text-red-700 px-1 mb-10">\n' +
+              '<div class="bg-red-100 border-left rounded-md border-l-4 border-red-500 text-red-700 px-1 my-10">\n' +
               '<div class="font-bold">警告</div>' +
               '<div class="content">'
             );
