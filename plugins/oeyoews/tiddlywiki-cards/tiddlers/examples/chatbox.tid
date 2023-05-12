@@ -1,34 +1,33 @@
 title: $:/plugins/oeyoews/tiddlywiki-cards/chatbox
 
 \define avatar(email:jyao4783@gmail.com)
-<$avatar width=22 link="https://github.com/oeyoews" email=$email$ type="gravatar"/>
+<div class="flex-shrink-0 rounded-full overflow-hidden mr-4">
+  <$avatar width=22 link="https://github.com/oeyoews" email=$email$ type="gravatar"/>
+<div>
 \end
 
-<!-- TODO make macro -->
-
+\define chatbox(text1: "Hello, how are you?", text2: "I'm good. What about you?")
 <!-- 聊天消息列表 -->
 <ul class="bg-gray-100 p-4 rounded-lg">
   <!-- 第一条聊天消息 -->
   <li class="flex items-start mb-4">
     <!-- 头像 -->
-    <div class="rounded-full overflow-hidden mr-4">
 		<<avatar>>
-    </div>
     <!-- 聊天消息内容 -->
     <div class="bg-white rounded-lg px-2">
-      <p class="text-gray-700">Hello, how are you? </p>
+      <p class="text-gray-700">$text1$</p>
     </div>
   </li>
   <!-- 第二条聊天消息 -->
   <li class="flex items-start mb-4  flex-row-reverse">
     <!-- 头像 -->
-    <div class="rounded-full overflow-hidden mr-4">
 		<<avatar 2>>
-    </div>
     <!-- 聊天消息内容 -->
     <div class="bg-white rounded-lg px-2">
-      <p class="text-gray-700">I'm good. What about you?</p>
+      <p class="text-gray-700">$text2$</p>
     </div>
   </li>
-  <!-- 更多聊天消息... -->
 </ul>
+\end
+
+<<chatbox>>
