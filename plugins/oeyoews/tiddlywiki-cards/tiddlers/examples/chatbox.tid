@@ -1,4 +1,5 @@
 title: $:/plugins/oeyoews/tiddlywiki-cards/chatbox
+tags: $:/tags/Macro
 
 <!-- support qq email -->
 \define avatar(email:2956398608)
@@ -7,7 +8,7 @@ title: $:/plugins/oeyoews/tiddlywiki-cards/chatbox
 <div>
 \end
 
-\define chatbox(sender1 sender2 username text1: "Hello, how are you?", text2: "I'm good. What about you?")
+\define chatbox(sender1 sender2 text1: "Hello, how are you?", text2: "I'm good. What about you?")
 <!-- 聊天消息列表 -->
 <ul class="bg-gray-100 p-4 rounded-lg">
   <!-- 第一条聊天消息 -->
@@ -16,7 +17,6 @@ title: $:/plugins/oeyoews/tiddlywiki-cards/chatbox
 		<<avatar>>
     <!-- 聊天消息内容 -->
 <div>
-  <!-- username -->
  <div class="text-sm text-gray-500">$sender1$</div>
     <div class="bg-white rounded-lg p-1 shadow-md select-all">
       <p class="text-gray-700">$text1$</p>
