@@ -5,7 +5,6 @@ module-type: startup
 
 tiddlywiki-update
 \*/
-
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
@@ -16,27 +15,32 @@ tiddlywiki-update
   exports.after = ['load-modules'];
   exports.synchronous = true;
   exports.startup = () => {
-    const getVersion = () => {
-      return fetch(
-        'https://raw.githubusercontent.com/Jermolene/TiddlyWiki5/master/package.json',
-      )
-        .then(response => response.json())
-        .then(data => {
-          return data.version;
-        });
-    };
+    $tw.rootWidget.addEventListener('om-update-check', () => {
+      const getVersion = () => {
+        return fetch(
+          'https://raw.githubusercontent.com/Jermolene/TiddlyWiki5/master/package.json',
+        )
+          .then(response => response.json())
+          .then(data => {
+            return data.version;
+          });
+      };
 
-    const checkUpdate = async () => {
-      const latestVersion = await getVersion();
-      const localVersion = $tw.version;
+      const checkUpdate = async () => {
+        const latestVersion = await getVersion();
+        const localVersion = $tw.version;
 
-      let log = console.log;
-      if (window.swal) log = swal;
-      // log('⭕ Checking for updates...');
-      if (latestVersion !== localVersion)
-        log(`A new version of TiddlyWiki is available: ${latestVersion}`);
-    };
+        let log = console.log;
+        if (window.swal) log = swal;
+        // log('⭕ Checking for updates...');
+        if (latestVersion !== localVersion) {
+          log(`A new version of TiddlyWiki is available: ${latestVersion}`);
+        } else {
+          log(`Your tiddlywiki is up-to-date: ${latestVersion}`);
+        }
+      };
 
-    checkUpdate();
+      checkUpdate();
+    });
   };
 })();
