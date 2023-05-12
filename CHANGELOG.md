@@ -1,3 +1,10 @@
+# [3.248.0](https://github.com/oeyoews/neotw/compare/v3.247.0...v3.248.0) (2023-05-12)
+
+
+### Features
+
+* add neotw-type ([51770ef](https://github.com/oeyoews/neotw/commit/51770effb912addf8eb05e8875a17effc0012edf))
+
 # [3.247.0](https://github.com/oeyoews/neotw/compare/v3.246.3...v3.247.0) (2023-05-12)
 
 
