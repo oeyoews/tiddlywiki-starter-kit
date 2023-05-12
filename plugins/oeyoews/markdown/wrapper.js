@@ -130,6 +130,20 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
       // .use(require('markdown-it-container'), 'info')
       // .use(require('markdown-it-container'), 'error')
 
+      .use(container, 'todo', {
+        render: function (tokens, idx) {
+          if (tokens[idx].nesting === 1) {
+            return (
+              '<div class="bg-green-100 rounded-md border-left border-l-4 border-green-500 text-green-700 px-1 my-2">\n' +
+              '<div class="font-bold">✅ 任务</div>' +
+              '<div class="content">'
+            );
+          } else {
+            return '</div>\n</div>\n';
+          }
+        },
+      })
+
       // 定义 warning 容器
       .use(container, 'warning', {
         render: function (tokens, idx) {
