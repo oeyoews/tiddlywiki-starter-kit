@@ -3,7 +3,7 @@ created: 20230117102714737
 creator: oeyoews
 giscus: yes
 icon: tom.svg
-modified: 20230508094108540
+modified: 20230512165517513
 modifier: oeyoews
 page-cover: banner.png
 pin: yes
@@ -13,6 +13,7 @@ tags:
 title: GettingStarted
 type: text/vnd.tiddlywiki
 
+<$typing />
 <div class="dark:bg-white">
 {{neotw-badges}}
 </div>
