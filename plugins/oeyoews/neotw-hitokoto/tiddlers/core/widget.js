@@ -7,6 +7,7 @@ Hitokoto widget
 
 \*/
 
+// support nprogress
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
@@ -14,6 +15,7 @@ Hitokoto widget
   if (!$tw.browser) return;
 
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
+  const NProgress = require('nprogress.min.js');
 
   class Hitokoto extends Widget {
     constructor(parseTreeNode, options) {
