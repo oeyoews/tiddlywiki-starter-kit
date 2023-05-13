@@ -33,6 +33,7 @@ title: $:/plugins/oeyoews/neotw-music/readme
 
 !! TODO
 
+* add layout for music
 * use selection to id(support add new)
 * add meting-api config ui
 * add play music methos with space key
