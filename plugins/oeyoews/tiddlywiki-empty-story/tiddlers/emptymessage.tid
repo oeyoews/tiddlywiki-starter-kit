@@ -12,4 +12,8 @@ title: $:/config/EmptyStoryMessage
   </div>
   </center>
 
-{{{ [[GettingStarted]] ||$:/core/ui/ViewTemplate }}}
+<div class="m-6">
+<$image source="leaf.png" class="w-32 mx-auto block"/>
+</div>
+
+<!-- {{{ [[GettingStarted]] ||$:/core/ui/ViewTemplate }}} -->
