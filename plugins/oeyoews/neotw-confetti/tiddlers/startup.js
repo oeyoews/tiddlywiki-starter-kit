@@ -30,6 +30,7 @@ load confetti
     // startup first first
 
     window.Confetti = require('$:/plugins/oeyoews/neotw-confetti/example/fireworks.js');
-    Confetti.fireworks();
+    // use landing instead
+    // Confetti.fireworks();
   };
 })();
