@@ -26,14 +26,15 @@ neotw-type widget
       this.computeAttributes();
       this.execute();
 
-      const neotwString =
-        'A modern style and elegant notebook based on Tiddlywiki by oeyoews';
+      const neotwString = 'demo';
       const text = this.getAttribute('text');
       // not worked
       const loop = this.getAttribute('loop', 'false');
       const gradient = this.getAttribute('gradient', 'true');
       const spanNode = this.document.createElement('span');
-      spanNode.id = 'neotwTyping';
+      const time = new Date().getTime();
+      const id = 'neotwTyping-' + time;
+      spanNode.id = id;
       spanNode.textContent = text || neotwString;
       if (gradient === 'true') {
         spanNode.className =
@@ -42,7 +43,7 @@ neotw-type widget
       parent.insertBefore(spanNode, nextSibling);
       this.domNodes.push(spanNode);
 
-      new Typed('#neotwTyping', {
+      new Typed(`#${id}`, {
         strings: [neotwString],
         cursorChar: ' 🐬',
         typeSpeed: 150,

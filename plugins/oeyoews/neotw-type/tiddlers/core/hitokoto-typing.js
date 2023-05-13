@@ -37,7 +37,9 @@ neotw-type widget with hitokoto
       const loop = this.getAttribute('loop', 'false');
       const gradient = this.getAttribute('gradient', 'true');
       const spanNode = this.document.createElement('span');
-      spanNode.id = 'neotwTyping';
+      const time = new Date().getTime();
+      const id = 'neotwTyping-' + time;
+      spanNode.id = id;
       spanNode.textContent = text;
       if (gradient === 'true') {
         spanNode.className =
@@ -46,7 +48,7 @@ neotw-type widget with hitokoto
       parent.insertBefore(spanNode, nextSibling);
       this.domNodes.push(spanNode);
 
-      new Typed('#neotwTyping', {
+      new Typed(`#${id}`, {
         strings: [text],
         cursorChar: ' 🐬',
         typeSpeed: 100,
