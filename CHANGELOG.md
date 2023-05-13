@@ -1,3 +1,10 @@
+# [3.251.0](https://github.com/oeyoews/neotw/compare/v3.250.0...v3.251.0) (2023-05-13)
+
+
+### Features
+
+* support nprogress ([12468ea](https://github.com/oeyoews/neotw/commit/12468ea46e176164f79c18e986970db2ddf3cdf7))
+
 # [3.250.0](https://github.com/oeyoews/neotw/compare/v3.249.0...v3.250.0) (2023-05-13)
 
 
