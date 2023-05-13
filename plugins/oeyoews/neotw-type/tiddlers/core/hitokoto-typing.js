@@ -1,9 +1,9 @@
 /*\
-title: $:/plugins/oeyoews/neotw-type/widget.js
+title: $:/plugins/oeyoews/neotw-type/widget-hitokoto.js
 type: application/javascript
 module-type: widget
 
-neotw-type widget
+neotw-type widget with hitokoto
 
 \*/
 (function () {
@@ -26,15 +26,19 @@ neotw-type widget
       this.computeAttributes();
       this.execute();
 
-      const neotwString =
-        'A modern style and elegant notebook based on Tiddlywiki by oeyoews';
-      const text = this.getAttribute('text');
+      const sentences = $tw.wiki.getTiddlerData(
+        '$:/plugins/oeyoews/neotw-hitokoto/sentences.json',
+      );
+      const randomIndex = Math.floor(Math.random() * sentences.length);
+      const text =
+        sentences[randomIndex].hitokoto + ' ' + sentences[randomIndex].from;
+
       // not worked
       const loop = this.getAttribute('loop', 'false');
       const gradient = this.getAttribute('gradient', 'true');
       const spanNode = this.document.createElement('span');
       spanNode.id = 'neotwTyping';
-      spanNode.textContent = text || neotwString;
+      spanNode.textContent = text;
       if (gradient === 'true') {
         spanNode.className =
           'text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-500 to-yellow-500 cursor-pointer';
@@ -43,9 +47,9 @@ neotw-type widget
       this.domNodes.push(spanNode);
 
       new Typed('#neotwTyping', {
-        strings: [neotwString],
+        strings: [text],
         cursorChar: ' 🐬',
-        typeSpeed: 150,
+        typeSpeed: 100,
         loop: loop,
         fadeOut: true,
         fadeOutClass: 'typed-fade-out',
@@ -55,5 +59,5 @@ neotw-type widget
     }
   }
 
-  exports.typing = TypedWidget;
+  exports['typing-hitokoto'] = TypedWidget;
 })();
