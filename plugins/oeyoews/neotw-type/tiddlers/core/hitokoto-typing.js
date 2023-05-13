@@ -43,7 +43,7 @@ neotw-type widget with hitokoto
       spanNode.textContent = text;
       if (gradient === 'true') {
         spanNode.className =
-          'text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-500 to-yellow-500 cursor-pointer';
+          'text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-500 to-yellow-500';
       }
       parent.insertBefore(spanNode, nextSibling);
       this.domNodes.push(spanNode);
