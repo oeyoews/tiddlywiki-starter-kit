@@ -33,6 +33,7 @@ A modern style and elegant notebook based on Tiddlywiki by oeyoews
 - :calendar: Automatically display recently created articles
 - :memo: Automatically add spaces between Chinese and English for better typography
 - :label: Support title aliases, custom 404 page
+- ...
 
 ## Playground(stackblitz)
 
