@@ -29,11 +29,16 @@ neotw-type widget
       const neotwString =
         'A modern style and elegant notebook based on Tiddlywiki by oeyoews';
       const text = this.getAttribute('text');
+      // not worked
+      const loop = this.getAttribute('loop', 'false');
+      const gradient = this.getAttribute('gradient', true);
       const spanNode = this.document.createElement('span');
       spanNode.id = 'neotwTyping';
       spanNode.textContent = text || neotwString;
-      spanNode.className =
-        'text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-500 to-yellow-500 cursor-pointer';
+      if (gradient === 'true') {
+        spanNode.className =
+          'text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-500 to-yellow-500 cursor-pointer';
+      }
       parent.insertBefore(spanNode, nextSibling);
       this.domNodes.push(spanNode);
 
@@ -41,7 +46,7 @@ neotw-type widget
         strings: [neotwString],
         cursorChar: ' 🐬',
         typeSpeed: 150,
-        loop: true,
+        loop: loop,
         fadeOut: true,
         fadeOutClass: 'typed-fade-out',
         fadeOutDelay: 500,
