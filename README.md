@@ -18,15 +18,15 @@ A modern style and elegant notebook based on Tiddlywiki by oeyoews
 
 ## Features :sparkles:
 
-- :newspaper: Support Atome Feed(Rss)
+<!-- - :newspaper: Support Atome Feed(Rss) -->
+<!-- - :twisted_rightwards_arrows: Randomly display articles -->
+<!-- - :triangular_ruler: Support switching between multiple layouts via URL -->
 - :bust_in_silhouette: Support gravatar
 - :art: Support use tailwindcss to better typography
-- :twisted_rightwards_arrows: Randomly display articles
 - :computer: Support F fullscreen, s toggle fullscreen
 - :globe_with_meridians: Article titles support bilingual language switching
 - :pencil2: Support switching between reading mode and editing mode
-- :smile: Support emoji syntax
-- :triangular_ruler: Support switching between multiple layouts via URL
+- :smile: Support emoji syntax and markdown container
 - :crescent_moon: Automatically switch between night/day mode based on system settings, support URL switching
 - :lotus_position: Support Zen mode
 - :speech_balloon: Support comments
