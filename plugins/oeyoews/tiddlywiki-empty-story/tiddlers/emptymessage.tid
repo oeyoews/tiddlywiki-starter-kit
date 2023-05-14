@@ -16,4 +16,8 @@ title: $:/config/EmptyStoryMessage
 <$image source="leaf.png" class="w-32 mx-auto block"/>
 </div>
 
+<<folded-ribbon text:"Neotw" class:oleft style:"--c: #F8CA00;color: #000;--f:0px" >>
+<!-- <<folded-ribbon text:"Home" class:oright style:"--c: #F8CA00;color: #000;--f:0px" >> -->
+<<oribbon>>
+
 <!-- {{{ [[GettingStarted]] ||$:/core/ui/ViewTemplate }}} -->

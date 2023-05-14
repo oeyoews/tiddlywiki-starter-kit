@@ -12,3 +12,18 @@ title: $:/plugins/oeyoews/tiddlywiki-github-share/macro/github-cat
   </$list>
 </$button>
 \end
+
+\define oribbon()
+\define base-repo() https://github.com/
+\define tid() $:/config/oeyoews/tiddlywiki-github-share/config
+
+<a style="text-decoration: none;"
+  href={{{ [<tid>get[text]addprefix<base-repo>] }}}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="githubCorner"
+  aria-label="View source on GitHub"
+>
+  {{$:/plugins/oeyoews/tiddlywiki-github-share/icon/corner}}
+</a>
+\end
