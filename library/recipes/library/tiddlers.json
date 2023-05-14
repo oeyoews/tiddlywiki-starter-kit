@@ -240,6 +240,21 @@
         "icon": "data:image/svg+xml,%3Csvg%20stroke%3D%22currentColor%22%20fill%3D%22currentColor%22%20stroke-width%3D%220%22%20version%3D%221%22%20viewBox%3D%220%200%2048%2048%22%20enable-background%3D%22new%200%200%2048%2048%22%20height%3D%221em%22%20width%3D%221em%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20fill%3D%22%2342A5F5%22%20points%3D%2236%2C44%208%2C44%208%2C8%2028%2C8%2036%2C16%22%3E%3C%2Fpolygon%3E%3Cpolygon%20fill%3D%22%2390CAF9%22%20points%3D%2240%2C40%2012%2C40%2012%2C4%2032%2C4%2040%2C12%22%3E%3C%2Fpolygon%3E%3Cpolygon%20fill%3D%22%23E1F5FE%22%20points%3D%2238.5%2C13%2031%2C13%2031%2C5.5%22%3E%3C%2Fpolygon%3E%3Cpath%20fill%3D%22%231976D2%22%20d%3D%22M24.5%2C28.3c0-4.7%2C3.6-4.4%2C3.6-7.2c0-0.7-0.2-2.1-2-2.1c-2%2C0-2.1%2C1.6-2.1%2C2h-2.7c0-0.7%2C0.3-4.2%2C4.8-4.2%20c4.6%2C0%2C4.7%2C3.6%2C4.7%2C4.3c0%2C3.5-3.8%2C4-3.8%2C7.3H24.5z%20M24.3%2C31.8c0-0.2%2C0-1.5%2C1.5-1.5c1.4%2C0%2C1.5%2C1.3%2C1.5%2C1.5c0%2C0.4-0.2%2C1.4-1.5%2C1.4%20C24.5%2C33.2%2C24.3%2C32.2%2C24.3%2C31.8z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%0A"
     },
     {
+        "title": "$:/plugins/oeyoews/tiddlywiki-github-share",
+        "description": "Github Share Button",
+        "author": "oeyoews",
+        "version": "0.2.0",
+        "core-version": ">=5.2.5",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "Tiddlywiki Github Share",
+        "list": "readme config",
+        "dependents": "",
+        "readme": "<a style=\"text-decoration:none;\" href=\"https://github.com/oeyoews/neotw\" target=\"_blank\">\n  <img src=\"https://img.shields.io/badge/Powered by-Neotw-green?style=flat\" />\n</a>\n<a style=\"text-decoration:none;\" href=\"https://github.com/oeyoews\" target=\"_blank\">\n<$image source={{{ [[][https://img.shields.io/badge/Author-]] [<currentTiddler>get[author]] [[-lightblue?style=flat]] +[join[]]}}} />\n</a>\n<$image source={{{ [[][https://img.shields.io/badge/Version-]] [<currentTiddler>get[version]] [[-red?style=flat&logo=dev.to&logoColor=red]] +[join[]]}}} />\n<$image source={{{ [[][https://img.shields.io/badge/Files-]] [<currentTiddler>plugintiddlers[]count[]] [[-red?style=social]] +[join[]]}}} />\n\n* Github Share Button\n* compatiable font-awesome plugin\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/tiddlywiki-github-share]]\n* [[Demo|https://oeyoews.github.io/neotw]]\n\n!! TODO\n\n* add macro to embed single tid, not copy tid\n\n<!-- * if you use tiddlywiki menu plugin, this share button maybe  -->\n",
+        "requires-reload": "no",
+        "icon": "data:image/svg+xml,%3Csvg%20stroke%3D%22currentColor%22%20fill%3D%22gray%22%20stroke-width%3D%220%22%20viewBox%3D%220%200%2024%2024%22%20height%3D%221em%22%20width%3D%221em%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M21.035%205.257c.91%201.092%201.364%202.366%201.364%203.822%200%205.277-3.002%206.824-5.823%207.279.364.637.455%201.365.455%202.093v3.73c0%20.455-.273.728-.637.728a.718.718%200%200%201-.728-.728v-3.73a2.497%202.497%200%200%200-.728-2.093l.455-1.183c2.821-.364%205.733-1.274%205.733-6.187%200-1.183-.455-2.275-1.274-3.185l-.182-.727a4.04%204.04%200%200%200%20.09-2.73c-.454.09-1.364.273-2.91%201.365l-.547.09a13.307%2013.307%200%200%200-6.55%200l-.547-.09C7.57%202.71%206.66%202.437%206.204%202.437c-.273.91-.273%201.91.09%202.73l-.181.727c-.91.91-1.365%202.093-1.365%203.185%200%204.822%202.73%205.823%205.732%206.187l.364%201.183c-.546.546-.819%201.274-.728%202.002v3.821a.718.718%200%200%201-.728.728.718.718%200%200%201-.728-.728V20.18c-3.002.637-4.185-.91-5.095-2.092-.455-.546-.819-1.001-1.274-1.092-.09-.091-.364-.455-.273-.819.091-.364.455-.637.82-.455.91.182%201.455.91%202%201.547.82%201.092%201.639%202.092%204.095%201.547v-.364c-.09-.728.091-1.456.455-2.093-2.73-.546-5.914-2.093-5.914-7.279%200-1.456.455-2.73%201.365-3.822-.273-1.273-.182-2.638.273-3.73l.455-.364C5.749%201.073%207.023.8%209.66%202.437a13.673%2013.673%200%200%201%206.642%200C18.851.708%2020.216.98%2020.398%201.072l.455.364c.455%201.274.546%202.548.182%203.821z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%0A"
+    },
+    {
         "title": "$:/plugins/oeyoews/tiddlywiki-gravatar",
         "description": "Tiddlywiki Gravatar",
         "author": "oeyoews",
