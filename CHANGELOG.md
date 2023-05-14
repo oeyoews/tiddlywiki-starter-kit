@@ -1,3 +1,10 @@
+# [3.252.0](https://github.com/oeyoews/neotw/compare/v3.251.1...v3.252.0) (2023-05-14)
+
+
+### Features
+
+* support card for sidebar ([a6f4631](https://github.com/oeyoews/neotw/commit/a6f46319874cd452fb1fb0cf65fdf34cd5c381a0))
+
 ## [3.251.1](https://github.com/oeyoews/neotw/compare/v3.251.0...v3.251.1) (2023-05-14)
 
 
