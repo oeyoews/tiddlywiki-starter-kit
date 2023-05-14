@@ -6,5 +6,6 @@ author: oeyoews
 [publish[private]addprefix[subwiki/private/]]
 [tag[todo]addprefix[subwiki/todo/]]
 [tag[Project]addprefix[subwiki/Project/]]
-[field:publish[article]]
+[field:publish[article]addprefix[content/articles/]]
 [is[binary]addprefix[binary/]]
+[!is[system]addprefix[content/]]
