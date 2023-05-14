@@ -1,0 +1,11 @@
+created: 20230514033822819
+creator: oeyoews
+modified: 20230514071601094
+modifier: oeyoews
+tags: $:/tags/Macro
+title: folded-ribbon/macro
+type: text/vnd.tiddlywiki
+
+\define folded-ribbon(text:"", class:"right", style:"")
+<div class="ribbon $class$" style=<<__style__>>>$text$</div>
+\end

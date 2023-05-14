@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/neotw-review/startup
+tags: $:/tags/StartupAction/PostRender
+
+<$list filter="[{$:/info/url/protocol}match[http:]]">
+  <$action-sendmessage $message="tm-modal" $param={{{ [all[tiddlers+shadows]]random[1]] }}} />
+</$list>

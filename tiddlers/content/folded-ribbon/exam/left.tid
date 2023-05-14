@@ -1,0 +1,15 @@
+created: 20230514035431961
+creator: oeyoews
+modified: 20230514065331166
+modifier: oeyoews
+tags: 
+title: folded-ribbon/exam/left
+type: text/vnd.tiddlywiki
+
+<<folded-ribbon
+text:"Features"
+class:oleft
+style:"--c:purple; --f:15px"
+>>
+
+Hello! I am a very sepcial tiddler!

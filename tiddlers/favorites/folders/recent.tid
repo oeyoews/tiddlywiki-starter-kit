@@ -1,9 +1,9 @@
 caption: Recently added
 created: 20220828022145583
 creator: oeyoews
-list: bing-everyday-seven React self-introduce chatbase $:/core/ui/EditTemplate/body/preview/output youtbe-video $:/core/ui/EditTemplate/title tailwindcss-playground $:/core/ui/ViewTemplate/body fix-conflict $:/config/FileSystemExtensions $:/config/SaverFilter $:/language/MissingTiddler/Hint neotw-stylesheet $:/themes/nico/notebook/ui/Sidebar/Sections recent-note-record $:/StaticBanner neotw/article/music-index $:/xp/ui/EditorToolbar/box-dropdown $:/config/shortcuts/box $:/xp/box-button/examples neotw/style/box
+list: folded-ribbon/macro folded-ribbon/styles folded-ribbon/exam/left-flat folded-ribbon/exam/left folded-ribbon/exam/right-flat folded-ribbon/exam/right neotw-Hello-World bing-everyday-seven React self-introduce chatbase $:/core/ui/EditTemplate/body/preview/output youtbe-video $:/core/ui/EditTemplate/title tailwindcss-playground $:/core/ui/ViewTemplate/body fix-conflict $:/config/FileSystemExtensions $:/config/SaverFilter $:/language/MissingTiddler/Hint neotw-stylesheet $:/themes/nico/notebook/ui/Sidebar/Sections recent-note-record $:/StaticBanner neotw/article/music-index $:/xp/ui/EditorToolbar/box-dropdown $:/config/shortcuts/box $:/xp/box-button/examples neotw/style/box
 list-before: 
-modified: 20230501031255330
+modified: 20230514092653225
 modifier: oeyoews
 tags: $:/tags/Favorites/Folder
 title: $:/favorites/folders/recent
