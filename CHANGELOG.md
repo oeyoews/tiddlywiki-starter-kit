@@ -1,3 +1,10 @@
+## [3.251.1](https://github.com/oeyoews/neotw/compare/v3.251.0...v3.251.1) (2023-05-14)
+
+
+### Performance Improvements
+
+* add content folder ([8c10711](https://github.com/oeyoews/neotw/commit/8c10711268a15888c88d9d0902de1e2a856889f4))
+
 # [3.251.0](https://github.com/oeyoews/neotw/compare/v3.250.0...v3.251.0) (2023-05-13)
 
 
