@@ -20,4 +20,12 @@ title: $:/config/EmptyStoryMessage
 <!-- <<folded-ribbon text:"Home" class:oright style:"--c: #F8CA00;color: #000;--f:0px" >> -->
 <<oribbon>>
 
+    <!-- <div class="nc-sidebar p-2 rounded-lg shadow-lg my-8 mx-4 z-[1000] hover:bg-gray-100 transition duration-500 relative w-3/5"> -->
+    <!--   <$list filter="[all[shadows+tiddlers]tag[$:/themes/nico/notebook/tags/Sidebar]!has[draft.of]]" variable="listItem"> -->
+    <!--     <$reveal type="nomatch" state=<<config-title>> text="hide" tag="div"> -->
+    <!--       <$transclude tiddler=<<listItem>> mode="inline"/> -->
+    <!--     </$reveal> -->
+    <!--   </$list> -->
+    <!-- </div> -->
+
 <!-- {{{ [[GettingStarted]] ||$:/core/ui/ViewTemplate }}} -->
