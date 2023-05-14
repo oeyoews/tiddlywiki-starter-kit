@@ -1,6 +1,9 @@
 module.exports = {
   theme: {
     extend: {
+      boxShadow: {
+        // lg: '5px 20px #000001f',
+      },
       typography: ({ theme }) => ({
         DEFAULT: {
           css: {

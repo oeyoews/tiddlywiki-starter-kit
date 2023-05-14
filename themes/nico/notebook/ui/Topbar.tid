@@ -4,7 +4,7 @@ type: text/vnd.tiddlywiki
 
 <$reveal state="$:/state/notebook-topbar" type="match" text="yes" default="yes" retain="yes" animate="yes">
   <div class="nc-topbar-wrapper">
-    <div class="nc-bar nc-topbar tc-adjust-top-of-scroll">
+    <div class="nc-bar nc-topbar tc-adjust-top-of-scroll mb-4 shadow-md rounded">
       <$list filter="[all[shadows+tiddlers]tag[$:/tags/NotebookTopbar]!has[draft.of]]" variable="listItem">
         <$reveal type="nomatch" state=<<config-title>> text="hide" tag="div">
           <$transclude tiddler=<<listItem>> mode="block"/>
