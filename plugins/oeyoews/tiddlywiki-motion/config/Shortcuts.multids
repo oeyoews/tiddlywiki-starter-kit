@@ -22,6 +22,8 @@ ToggleLayout/Key: g l
 ToggleLayout/Caption: ToggleLayout
 ToggleSidebar/Key: g s
 ToggleSidebar/Caption: ToggleSidebar
+ToggleOpen/Key: g o
+ToggleOpen/Caption: ToggleOpen
 Fullscreen/Key: f
 Fullscreen/Caption: Fullscreen
 CreateNewTiddler/Key: g n
