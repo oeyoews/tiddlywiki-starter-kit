@@ -39,6 +39,7 @@ simple notify
         gap: 20,
         distance: 20,
         type: 1,
+        // option
         position: 'right top',
       });
     $tw.rootWidget.addEventListener('om-notify', event => {
