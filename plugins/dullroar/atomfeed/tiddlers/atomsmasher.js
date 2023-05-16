@@ -190,10 +190,10 @@ Encapsulating class for constructing atom feeds
         .add('content')
         .attr('type', 'xhtml')
         // heaer image
-        .add('img')
+        /* .add('img')
         .attr('alt', 'cover')
         .attr('src', data.pageCover || 'https://source.unsplash.com/random')
-        .end()
+        .end() */
         // summary
         .bind(function () {
           if (data.summary) {
