@@ -29,7 +29,7 @@ response.json()方法返回一个Promise对象，该Promise对象会在解析完
       )
       .catch(error => console.error(error)); */
     // 获取仓库的 tag 列表并选择最新的那个 tag
-    fetch('https://api.github.com/repos/oeyoews/neotw/tags')
+    /* fetch('https://api.github.com/repos/oeyoews/neotw/tags')
       .then(response => response.json())
       .then(data => {
         const latestTag = data[0].name;
@@ -38,7 +38,7 @@ response.json()方法返回一个Promise对象，该Promise对象会在解析完
           'background: linear-gradient(to right, #12c2e9, #c471ed); color: black;padding: 3px;',
         );
       })
-      .catch(error => console.error(error));
+      .catch(error => console.error(error)); */
     /* fetch('https://raw.githubusercontent.com/oeyoews/neotw/main/package.json', {
       headers: { 'User-Agent': 'Mozilla/5.0' },
     })
