@@ -6,4 +6,5 @@ title: $:/plugins/oeyoews/neotw/modules/random-button/actions
 <$action-navigate $to="$link$" />
 \end
 
-<$macrocall $name="navigateTo" link={{{ [all[shadows+tiddlers]!is[system]tag[todo]!tag[done]random[1]] }}} />
+<$action-sendmessage $message="tm-close-all-tiddlers"/>
+<$macrocall $name="navigateTo" link={{{ [all[shadows+tiddlers]!is[system]!tag[todo]random[1]] }}} />
