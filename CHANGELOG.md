@@ -1,3 +1,10 @@
+# [3.257.0](https://github.com/oeyoews/neotw/compare/v3.256.0...v3.257.0) (2023-05-16)
+
+
+### Features
+
+* enable atomfeed again ([787b88e](https://github.com/oeyoews/neotw/commit/787b88ed0f2b0d60648d3b4ddefa17a42b5f5f14))
+
 # [3.256.0](https://github.com/oeyoews/neotw/compare/v3.255.0...v3.256.0) (2023-05-16)
 
 
