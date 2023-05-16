@@ -1,0 +1,27 @@
+created: 20230516142038003
+creator: oeyoews
+modified: 20230516142058742
+modifier: oeyoews
+tags: JavaScript
+title: create-imag-obj
+type: text/vnd.tiddlywiki
+
+`var img = new Image();` 和 `const img = document.createElement("img");` 都可以用于创建 `<img>` 元素，但它们的语法和使用方式略有不同。
+
+`var img = new Image();` 使用 `Image()` 构造函数创建一个新的图片对象。这种方式通常用于预加载图像以及在 JavaScript 中动态创建图像元素。你可以使用 `img.src` 属性来设置图像的 URL，并将其添加到 DOM 中。例如：
+
+```javascript
+var img = new Image();
+img.src = 'path/to/image.png';
+document.body.appendChild(img);
+```
+
+`const img = document.createElement("img");` 使用 `document.createElement()` 方法创建一个新的图片元素。这种方式通常用于在 HTML 中静态创建图像元素，或者在 JavaScript 中动态创建图像元素。你可以使用 `img.src` 属性来设置图像的 URL，并将其添加到 DOM 中。例如：
+
+```javascript
+const img = document.createElement('img');
+img.src = 'path/to/image.png';
+document.body.appendChild(img);
+```
+
+需要注意的是，`var img = new Image();` 创建的图片对象具有更多的属性和方法，例如 `onload`、 `onerror` 和 `complete` 属性以及 `naturalWidth` 和 `naturalHeight` 方法。而使用 `document.createElement("img")` 创建的图片元素则不包含这些属性和方法。因此，在实际开发中，我们应该根据需求选择适当的方法来创建 `<img>` 元素。

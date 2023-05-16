@@ -6,7 +6,7 @@ module-type: startup
 tid2pdf module
 
 \*/
-(function() {
+(function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -18,6 +18,41 @@ tid2pdf module
   exports.startup = () => {
     window.jspdf = require('jspdf.umd.min.js');
     window.html2canvas = require('html2canvas.min.js');
+    window.htmlToImage = require('html-to-image.min.js');
+
+    $tw.rootWidget.addEventListener('om-export-plus', event => {
+      // add adjuge
+      const paramObject = event.paramObject || {};
+      // NOTE: this tid must have storylist be rendered by tw
+      const title =
+        paramObject.title || $tw.wiki.getTiddlerText('$:/temp/focussedTiddler');
+      const selector = `[data-tiddler-title="${title}"]`;
+
+      var node = document.querySelector(selector);
+
+      htmlToImage
+        .toSvg(node)
+        .then(function (dataUrl) {
+          var img = new Image();
+          img.src = dataUrl;
+
+          const linkNode = document.createElement('a');
+          linkNode.href = imgData;
+
+          // 指定文件名并将<a>元素添加到页面上
+          linkNode.download = `${title}`;
+          document.body.appendChild(linkNode);
+
+          // 模拟单击事件以触发下载
+          linkNode.click();
+
+          // 将<a>元素从页面上移除
+          document.body.removeChild(linkNode);
+        })
+        .catch(function (error) {
+          console.error('oops, something went wrong!', error);
+        });
+    });
 
     $tw.rootWidget.addEventListener('om-export-png', event => {
       // add adjuge

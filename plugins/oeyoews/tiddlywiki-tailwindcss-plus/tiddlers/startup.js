@@ -20,7 +20,7 @@ tailwindcss startup
     const tailwindFile = 'tailwindcss.min.js';
 
     // 保存原始的console.warn()方法
-    const originalWarn = console.warn;
+    /* const originalWarn = console.warn;
 
     // 重写console.warn()方法
     console.warn = (...args) => {
@@ -35,7 +35,7 @@ tailwindcss startup
         // 调用原始的console.warn()方法输出警告信息
         originalWarn(...args);
       }
-    };
+    }; */
 
     tailwind = require(tailwindFile);
     tailwind.config = require('tailwind.config.js');
