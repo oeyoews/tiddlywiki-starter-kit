@@ -29,7 +29,7 @@ await spinner('Building ...', async () => {
   // await $`node scripts/minify.png.js`;
 
   // rss
-  // await $`npx ${bin} --build feed`;
+  await $`npx ${bin} --build feed`;
 
   // library
   await $`npx ${bin} --build library`;
