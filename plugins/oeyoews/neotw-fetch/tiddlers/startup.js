@@ -6,7 +6,7 @@ module-type: startup
 fetch-readme module
 
 \*/
-(function () {
+(function() {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -38,6 +38,6 @@ fetch-readme module
     const fileName = '$:/plugins/oeyoews/neotw/README';
     $tw.wiki.setText(fileName, 'text', null, text);
     $tw.wiki.setText(fileName, 'type', null, 'text/markdown');
-    // navigator
+    // navigator for widget button, emulate motion plugins
   };
 })();
