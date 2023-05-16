@@ -16,7 +16,9 @@ title: $:/config/EmptyStoryMessage
 <$image source="leaf.png" class="w-32 mx-auto block"/>
 </div>
 
-<$gli class="text-center mt-4 text-gray-500"/>
+<$list filter="[{$:/info/url/protocol}match[https:]]">
+  <$gli class="text-center mt-4 text-gray-500"/>
+</$list>
 
 <!-- <<folded-ribbon text:"Neotw" class:oleft style:"--c: #F8CA00;color: #000;--f:0px" >> -->
 <!-- <<folded-ribbon text:"Home" class:oright style:"--c: #F8CA00;color: #000;--f:0px" >> -->

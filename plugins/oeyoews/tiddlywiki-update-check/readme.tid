@@ -20,3 +20,8 @@ title: $:/plugins/oeyoews/tiddlywiki-update-check/readme
 
 * [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/tiddlywiki-update-check]]
 * [[Demo|https://oeyoews.github.io/neotw]]
+
+!! TODO
+
+* add tw-update-check
+* add button to update
