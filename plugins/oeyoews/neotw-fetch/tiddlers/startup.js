@@ -1,5 +1,5 @@
 /*\
-title: fetch-readme/startup.js
+title: fetch/startup.js
 type: application/javascript
 module-type: startup
 
@@ -16,6 +16,19 @@ fetch-readme module
   exports.after = ['load-modules'];
   exports.synchronous = true;
   exports.startup = async () => {
+    $tw.rootWidget.addEventListener('om-fetch-mdfile', async event => {
+      const paramObject = event.paramObject || {};
+      const time = new Date().getTime();
+      const fileName = paramObject.fileName || `fetch-${time}`;
+      const url =
+        paramObject.url ||
+        'https://raw.githubusercontent.com/oeyoews/neotw/main/README.md';
+      console.log(fileName, paramObject.fileName);
+      const response = await fetch(url);
+      const text = await response.text();
+      $tw.wiki.setText(fileName, 'text', null, text);
+      $tw.wiki.setText(fileName, 'type', null, 'text/markdown');
+    });
     // https
     if (window.location.protocol === 'http:') return;
     const url =
@@ -25,5 +38,6 @@ fetch-readme module
     const fileName = '$:/plugins/oeyoews/neotw/README';
     $tw.wiki.setText(fileName, 'text', null, text);
     $tw.wiki.setText(fileName, 'type', null, 'text/markdown');
+    // navigator
   };
 })();
