@@ -39,12 +39,8 @@ Encapsulating class for constructing atom feeds
     return output;
   }
 
-  // custom dir
-  // add option for article link
-  // actually have statichref as alternative
   function toPermalink(title) {
-    // return '#' + encodeURIComponent(title);
-    return 'static/' + encodeURIComponent(title);
+    return '#' + encodeURIComponent(title);
   }
 
   function toFileName(title) {
@@ -99,11 +95,8 @@ Encapsulating class for constructing atom feeds
    */
   AtomSmasher.prototype.lookupEntryData = function lookupEntryData(tiddler) {
     var title = tiddler.getFieldString('title');
-    // var pageCover = $tw.wiki.getTiddler('use-rss').fields['page-cover'];
-    var pageCover = tiddler.getFieldString('page-cover');
     return {
       title: title,
-      pageCover: pageCover,
       updated: toISODate(tiddler.getFieldString('modified')),
       uuid: uuidHasher.run(title),
       href: pathJoin([this.metadata.sitehref, toPermalink(title)]),
@@ -167,49 +160,41 @@ Encapsulating class for constructing atom feeds
    */
   AtomSmasher.prototype.atomEntry = function atomEntry(tiddler) {
     var data = this.lookupEntryData(tiddler);
-    return (
-      $tw.utils
-        .DomBuilder('entry', this.document)
-        .add('title')
-        .text(data.title)
-        .end()
-        .add('link')
-        .attr('href', data.href)
-        .end()
-        .add('link')
-        .attr('rel', 'alternative')
-        .attr('type', 'text/html')
-        .attr('href', data.statichref)
-        .end()
-        .add('id')
-        .text(data.uuid)
-        .end()
-        .add('updated')
-        .text(data.updated)
-        .end()
-        .add('content')
-        .attr('type', 'xhtml')
-        // heaer image
-        /* .add('img')
-        .attr('alt', 'cover')
-        .attr('src', data.pageCover || 'https://source.unsplash.com/random')
-        .end() */
-        // summary
-        .bind(function () {
-          if (data.summary) {
-            this.add('summary').text(data.summary);
-          }
-        })
-        .attr('xmlns', 'http://www.w3.org/1999/xhtml')
-        .renderTiddler(data.title)
-        .end()
-        .end()
-        .add('author')
-        .add('name')
-        .text(data.author)
-        .end()
-        .end()
-    );
+    return $tw.utils
+      .DomBuilder('entry', this.document)
+      .add('title')
+      .text(data.title)
+      .end()
+      .add('link')
+      .attr('href', data.href)
+      .end()
+      .add('link')
+      .attr('rel', 'alternative')
+      .attr('type', 'text/html')
+      .attr('href', data.statichref)
+      .end()
+      .add('id')
+      .text(data.uuid)
+      .end()
+      .add('updated')
+      .text(data.updated)
+      .end()
+      .bind(function () {
+        if (data.summary) {
+          this.add('summary').text(data.summary);
+        }
+      })
+      .add('content')
+      .attr('type', 'xhtml')
+      .renderTiddler(data.title)
+      .attr('xmlns', 'http://www.w3.org/1999/xhtml')
+      .end()
+      .end()
+      .add('author')
+      .add('name')
+      .text(data.author)
+      .end()
+      .end();
   };
 
   /**
