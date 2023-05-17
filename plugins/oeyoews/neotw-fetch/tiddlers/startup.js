@@ -6,7 +6,7 @@ module-type: startup
 fetch-readme module
 
 \*/
-(function() {
+(function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -23,7 +23,6 @@ fetch-readme module
       const url =
         paramObject.url ||
         'https://raw.githubusercontent.com/oeyoews/neotw/main/README.md';
-      console.log(fileName, paramObject.fileName);
       const response = await fetch(url);
       const text = await response.text();
       $tw.wiki.setText(fileName, 'text', null, text);
