@@ -1,6 +1,6 @@
 created: 20230503080911033
 creator: oeyoews
-modified: 20230503083847127
+modified: 20230517115209877
 modifier: oeyoews
 publish: public
 tags: 
@@ -24,3 +24,34 @@ Ajax广泛应用于各种Web应用程序中，例如电子邮件、社交媒体�
 4. Server-Sent Events：Server-Sent Events 是一种 HTML5 技术，用于在服务器和客户端之间建立一条单向连接。与 WebSocket 不同，Server-Sent Events 只能从服务器向客户端发送消息，不能反过来。
 
 这些技术中的每一种都有其优点和局限性，具体选择取决于你的需求和项目要求。
+
+Ajax 是一种在 Web 应用中使用的技术，它利用 JavaScript、XML 和 HTTP 请求与服务器进行交互。使用 Ajax，可以实现 Web 页面的动态更新和交互式的用户体验。
+
+通过 Ajax，客户端可以异步地向服务器发送请求，并在请求返回后更新页面上的内容，而无需重新加载整个页面。这样做可以显著提高 Web 应用程序的响应速度和用户体验。
+
+以下是一个使用 Ajax 发送 GET 请求并处理响应的示例代码：
+
+```javascript
+// 创建一个新的 XMLHttpRequest 对象
+const xhr = new XMLHttpRequest();
+
+// 设置请求 URL 和方法
+xhr.open('GET', 'path/to/data.json');
+
+// 处理响应数据
+xhr.onload = function() {
+  if (xhr.status === 200) {
+    const data = JSON.parse(xhr.responseText);
+    console.log(data);
+  } else {
+    console.error('Request failed. Status code:', xhr.status);
+  }
+};
+
+// 发送请求
+xhr.send();
+```
+
+在上面的示例中，我们首先创建了一个新的 XMLHttpRequest 对象，并通过 `.open()` 方法设置请求的 URL 和方法。然后，我们使用 `.onload` 事件处理程序处理响应数据，并将其解析为 JSON 格式。最后，使用 `.send()` 方法发送请求。
+
+需要注意的是，Ajax 不仅可以用于处理 JSON 数据，还可以处理其他格式的数据，例如 XML、HTML 或纯文本等。另外，如果需要发送 POST 请求或带有参数的请求，则需要使用 `.setRequestHeader()` 方法来设置请求头信息，并通过 `.send()` 方法将参数数据作为参数传递。
