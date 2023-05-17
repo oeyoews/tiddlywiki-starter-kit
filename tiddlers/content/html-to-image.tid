@@ -1,0 +1,80 @@
+created: 20230517011022990
+creator: oeyoews
+modified: 20230517011031138
+modifier: oeyoews
+tags: 
+title: html-to-image
+type: text/vnd.tiddlywiki
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML to Image Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/html-to-image@1.11.11/dist/html-to-image.js"></script>
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      h1 {
+        color: #333333;
+        font-size: 3em;
+        margin-top: 50px;
+      }
+      p {
+        color: #666666;
+        font-size: 2em;
+        margin-top: 20px;
+      }
+      #image-container {
+        margin-top: 50px;
+      }
+      .download-link {
+        display: inline-block;
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        font-size: 1.5em;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="demo">
+      <h1>Hello, World!</h1>
+      <p>
+        This is an example of HTML to image conversion using the html-to-image
+        library.
+      </p>
+
+      <div id="image-container"></div>
+
+      <a href="#" class="download-link">Download Image</a>
+    </div>
+
+    <script>
+      <!-- var element = document.body; -->
+      var element = document.getElementById("demo");
+
+      htmlToImage
+        .toSvg(element)
+        .then(function (dataUrl) {
+          const img = new Image();
+          img.src = dataUrl;
+          document.getElementById("demo").appendChild(img);
+          const downloadLink = document.querySelector(".download-link");
+          downloadLink.href = dataUrl;
+          downloadLink.download = "html-to-image.svg";
+        })
+        .catch(function (error) {
+          console.error("oops, something went wrong!", error);
+        });
+    </script>
+  </body>
+</html>
+```
