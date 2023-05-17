@@ -1,6 +1,6 @@
 created: 20230517012244896
 creator: oeyoews
-modified: 20230517020441477
+modified: 20230517020533010
 modifier: oeyoews
 tags: 
 title: fetch-chatgpt-free-sites
@@ -9,3 +9,5 @@ type: text/vnd.tiddlywiki
 <$button>Chatgpt-Free-sites
   <$action-sendmessage $message="om-fetch-mdfile" url="https://raw.githubusercontent.com/LiLittleCat/awesome-free-chatgpt/main/README.md" fileName="chatgpt-free-sites"/>
 </$button>
+
+[[chatgpt-free-sites]]
