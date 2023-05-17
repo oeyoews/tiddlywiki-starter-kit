@@ -1,3 +1,10 @@
+## [3.257.1](https://github.com/oeyoews/neotw/compare/v3.257.0...v3.257.1) (2023-05-17)
+
+
+### Performance Improvements
+
+* remove xp-box and use text-gray-500 for ViewTemplate ([e6460e8](https://github.com/oeyoews/neotw/commit/e6460e8d91e1791c32faeb2b8014cc95a519663f))
+
 # [3.257.0](https://github.com/oeyoews/neotw/compare/v3.256.0...v3.257.0) (2023-05-16)
 
 
