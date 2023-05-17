@@ -24,17 +24,19 @@ tags: $:/tags/ViewTemplate
 <!-- on dev -->
 <!-- not work ??? -->
 <!-- <$list filter="[{$:/info/url/protocol}prefix[http:]]"> -->
+<span class="text-violet-500">
 <$list filter="[<currentTiddler>!is[system]!days:created[-300]] -[days:modified[-300]]" >
 <!-- add style -->
-⚠️  {{!!title}} 条目
+
 <$list filter="[all[current]!is[system]has[created]]">
-创建于 <$view field="created" format="date" template="YYYY-0MM-0DD"/>
+🤖  此条目创建于 <$view field="created" format="date" template="YYYY/0MM/0DD"/>
 </$list>
 <$list filter="[all[current]!is[system]has[modified]]">
 , 修改于 <$view field="modified" format="relativedate" />
 </$list>
-, 内容可能已经不够准确， 请酌情参考 &nbsp;
+, 内容可能已经不够准确， 请酌情参考 ⚠️ &nbsp;
 </$list>
+</span>
 <!-- </$list> -->
 
 <!-- local manage -->
