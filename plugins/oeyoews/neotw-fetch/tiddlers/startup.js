@@ -6,6 +6,7 @@ module-type: startup
 fetch-readme module
 
 \*/
+// TODO: add changelog
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
