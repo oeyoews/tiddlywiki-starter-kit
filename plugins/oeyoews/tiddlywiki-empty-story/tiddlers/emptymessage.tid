@@ -16,6 +16,8 @@ title: $:/config/EmptyStoryMessage
 <$image source="leaf.png" class="w-32 mx-auto block"/>
 </div>
 
+<div class="polarbear"></div>
+
 <$list filter="[{$:/info/url/protocol}match[https:]]">
   <$gli class="text-center mt-4 text-gray-500"/>
 </$list>
