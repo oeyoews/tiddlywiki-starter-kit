@@ -1,0 +1,68 @@
+created: 20230519125715740
+creator: oeyoews
+modified: 20230519125811495
+modifier: oeyoews
+tags: HTML
+title: classList
+type: text/vnd.tiddlywiki
+
+`classList`是一个DOM元素的属性，它允许您访问该元素的类列表。类列表是一个字符串数组，包含该元素的所有类名。
+
+`classList`是一个只读属性，但是它提供了一组方法，可以用于添加、删除和切换类名。这些方法包括：
+
+- `add(class1, class2, ...)`: 将一个或多个类名添加到元素的类列表中。
+- `remove(class1, class2, ...)`: 从元素的类列表中删除一个或多个类名。
+- `toggle(class, force)`: 切换元素的类名。如果类名存在，则删除它；如果类名不存在，则添加它。`force`参数是一个布尔值，用于指定是否强制添加或删除类名。
+- `contains(class)`: 检查元素的类列表是否包含特定的类名。返回一个布尔值。
+
+示例：
+
+```html
+<div id="myDiv" class="foo bar"></div>
+```
+
+```javascript
+var div = document.getElementById('myDiv');
+
+console.log(div.classList); // ["foo", "bar"]
+console.log(div.classList.contains('foo')); // true
+
+div.classList.add('baz');
+console.log(div.classList); // ["foo", "bar", "baz"]
+
+div.classList.remove('bar');
+console.log(div.classList); // ["foo", "baz"]
+
+div.classList.toggle('foo');
+console.log(div.classList); // ["baz"]
+```
+
+在这个示例中，我们首先获取ID为“myDiv”的DOM元素，并输出其类列表。然后，我们使用`contains()`方法检查它是否包含类名“foo”。接下来，我们使用`add()`方法将类名“baz”添加到类列表中，并输出更新后的类列表。然后，我们使用`remove()`方法从列表中删除类名“bar”，并再次输出更新后的类列表。最后，我们使用`toggle()`方法切换类名“foo”的存在，并输出更新后的类列表。
+
+总之，`classList`是一个方便的属性，可用于对DOM元素的类名进行操作。它提供了一组方法，使您可以轻松地添加、删除和切换类名，而无需手动操作类名字符串。
+
+`classList.add()`和`className`都是用于操作DOM元素类名的方法，但是它们有重要的区别。
+
+`classList.add()`: 这个方法是在一个元素的类列表中添加一个或多个类名。它将一个或多个类名作为参数，并将这些类名添加到元素的类列表中。如果类名已经存在于类列表中，则它不会被重复添加。
+
+示例：
+
+```javascript
+var element = document.getElementById('my-element');
+element.classList.add('active');
+```
+
+在这个示例中，我们获取ID为“my-element”的DOM元素，并将“active”类名添加到其类列表中。
+
+`className`: 这个属性返回或设置元素的类名。它可以返回元素的类名字符串，也可以将其设置为新的类名字符串。请注意，将类名设置为新的字符串将替换元素的所有现有类名。
+
+示例：
+
+```javascript
+var element = document.getElementById('my-element');
+element.className += ' active';
+```
+
+在这个示例中，我们获取ID为“my-element”的DOM元素，并将“active”类名添加到其类名属性中。
+
+总之，`classList.add()`和`className`都可用于操作DOM元素的类名，但是`classList.add()`更加灵活且具有防止重复添加类名的功能，而`className`属性则更加简单直接，适合于简单的类名修改，但是不具备`classList.add()`那样的功能。
