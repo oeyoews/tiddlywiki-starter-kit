@@ -18,120 +18,160 @@ neotw-unsplash widget
       super(parseTreeNode, options);
     }
 
-    // 创建搜索栏和搜索按钮
-    createSearchBar() {
-      const searchInput = document.createElement('input');
-      searchInput.type = 'text';
-      searchInput.id = 'search-input';
-      searchInput.placeholder = 'Search photos...';
-      searchInput.classList.add(
-        'w-4/5',
-        'px-3',
-        'py-2',
-        'bg-white',
-        'border',
-        'border-gray-300',
-        'rounded',
-        'shadow-sm',
-        'focus:outline-none',
-        'focus:border-blue-300',
-      );
-
-      const searchBtn = document.createElement('button');
-      searchBtn.id = 'search-btn';
-      searchBtn.textContent = 'Search';
-      searchBtn.classList.add(
-        'bg-blue-500',
-        'hover:bg-blue-600',
-        'text-white',
-        'font-semibold',
-        'py-2',
-        'px-4',
-        'mx-2',
-        'rounded',
-        'shadow',
-        'transition',
-        'duration-200',
-      );
-
-      return { searchInput, searchBtn };
-    }
-
-    // 在 Unsplash 上搜索照片
-    async searchPhotos(query) {
-      const apiKey = window.localStorage.getItem('unsplashApiKey') || '';
-      if (!apiKey) {
-        const input = window.prompt('Please enter your Unsplash API Key:', '');
-        if (input) {
-          window.localStorage.setItem('unsplashApiKey', input.trim());
-        }
-      }
-      const apiUrl = `https://api.unsplash.com/search/photos?query=${query}&client_id=${apiKey}`;
-      const response = await fetch(apiUrl);
-      const data = await response.json();
-      return data.results;
-    }
-
-    // 创建一个照片元素
-    createPhotoElement(photo) {
-      const element = document.createElement('div');
-      element.classList.add('p-2');
-      element.innerHTML = `
-        <div class="w-full h-64 bg-cover bg-center rounded-lg shadow-lg m-2" style="background-image: url(${photo.urls.small})">
-
-        <div class="mb-1 text-xs my-8 text-white">${photo.alt_description}</div>
-        <div class="-my-[34px]">
-          <button class="bg-blue-400 hover:bg-blue-500 text-white p-1 rounded-sm focus:outline-none focus:shadow-outline hover:scale-105 duration-300 transition " data-photo-url="${photo.urls.regular}">
-            Copy
-          </button>
-        </div>
-        </div>
-      `;
-
-      // 监听复制图片 URL 的按钮点击事件
-      const copyBtn = element.querySelector('button');
-      copyBtn.addEventListener('click', () => {
-        navigator.clipboard.writeText(copyBtn.dataset.photoUrl);
-      });
-
-      return element;
-    }
-
     render(parent, nextSibling) {
       this.parentDomNode = parent;
       this.computeAttributes();
       this.execute();
 
+      // 创建搜索栏和搜索按钮
+      function createSearchBar() {
+        const searchInput = document.createElement('input');
+        searchInput.type = 'text';
+        searchInput.id = 'search-input';
+        searchInput.placeholder = 'Search photos...';
+        searchInput.classList.add(
+          'w-4/5',
+          'px-3',
+          'py-2',
+          'bg-white',
+          'border',
+          'border-gray-300',
+          'rounded',
+          'shadow-sm',
+          'focus:outline-none',
+          'focus:border-blue-300',
+        );
+
+        const searchBtn = document.createElement('button');
+        searchBtn.id = 'search-btn';
+        searchBtn.textContent = 'Search';
+        searchBtn.classList.add(
+          'bg-blue-500',
+          'hover:bg-blue-600',
+          'text-white',
+          'font-semibold',
+          'py-2',
+          'px-4',
+          'mx-2',
+          'rounded',
+          'shadow',
+          'transition',
+          'duration-200',
+        );
+
+        return { searchInput, searchBtn };
+      }
+
+      // 在 Unsplash 上搜索照片
+      async function searchPhotos(query) {
+        const apiKey = window.localStorage.getItem('unsplashApiKey') || '';
+        if (!apiKey) {
+          const input = window.prompt(
+            'Please enter your Unsplash API Key:',
+            '',
+          );
+          if (input) {
+            window.localStorage.setItem('unsplashApiKey', input.trim());
+          }
+        }
+        const apiUrl = `https://api.unsplash.com/search/photos?query=${query}&client_id=${apiKey}`;
+        const response = await fetch(apiUrl);
+        const data = await response.json();
+        return data.results;
+      }
+
+      // 创建一个照片元素
+      function createPhotoElement(photo) {
+        const elementWrapper = document.createElement('div');
+        elementWrapper.classList.add('w-full', 'md:w-1/2', 'lg:w-1/3', 'p-4');
+
+        const element = document.createElement('div');
+        element.classList.add(
+          'bg-white',
+          'rounded-lg',
+          'shadow-lg',
+          'overflow-hidden',
+          'w-44',
+          'h-44',
+        );
+        element.style.backgroundImage = `url(${photo.urls.small})`;
+        element.style.backgroundSize = 'cover';
+        element.style.backgroundPosition = 'center';
+
+        // 在照片元素内部创建一个复制按钮
+        const copyBtn = document.createElement('button');
+        copyBtn.classList.add(
+          'bg-blue-400',
+          'hover:bg-blue-500',
+          'text-white',
+          'py-2',
+          'px-4',
+          'rounded',
+          'focus:outline-none',
+          'focus:shadow-outline',
+          'transform',
+          'scale-0',
+          'duration-400',
+          'transition',
+        );
+        copyBtn.dataset.photoUrl = photo.urls.regular;
+        copyBtn.textContent = 'Copy';
+
+        // 在鼠标悬停时显示复制按钮
+        element.addEventListener('mouseenter', () => {
+          copyBtn.classList.remove('scale-0');
+          copyBtn.classList.add('scale-100');
+        });
+        element.addEventListener('mouseleave', () => {
+          copyBtn.classList.remove('scale-100');
+          copyBtn.classList.add('scale-0');
+        });
+
+        // 监听复制图片 URL 的按钮点击事件
+        copyBtn.addEventListener('click', () => {
+          navigator.clipboard.writeText(copyBtn.dataset.photoUrl);
+        });
+
+        // 在照片元素内部创建一个文本元素，显示图片描述信息
+        const textElement = document.createElement('div');
+        textElement.classList.add(
+          'text-white',
+          'py-2',
+          'px-4',
+          'text-sm',
+          'truncate',
+        );
+        textElement.textContent = photo.alt_description || '';
+
+        element.appendChild(copyBtn);
+        element.appendChild(textElement);
+        elementWrapper.appendChild(element);
+
+        return elementWrapper;
+      }
+
       const unsplashNode = this.document.createElement('div');
       unsplashNode.id = 'unsplashApp';
 
       // 创建搜索栏和搜索按钮
-      const { searchInput, searchBtn } = this.createSearchBar();
+      const { searchInput, searchBtn } = createSearchBar();
+      unsplashNode.appendChild(searchInput);
+      unsplashNode.appendChild(searchBtn);
 
+      // 添加搜索结果容器到页面中
       const resultsContainer = document.createElement('div');
+      resultsContainer.id = 'results-container';
       resultsContainer.classList.add(
-        'grid',
-        'grid-cols-3',
-        // 'flex-wrap',
-        // 'justify-center',
-        'my-8',
+        'flex',
+        'flex-wrap',
+        'justify-between',
+        'mt-8',
       );
-
-      const searchContainer = document.createElement('div');
-      searchContainer.classList.add('text-center');
-
-      // 将搜索栏、照片结果列表和文本编辑器添加到页面主体中
-      unsplashNode.appendChild(searchContainer);
       unsplashNode.appendChild(resultsContainer);
 
       parent.insertBefore(unsplashNode, nextSibling);
-      this.domNodes.push(unsplashNode);
 
-      // 将搜索栏和搜索按钮添加到容器元素中
-      searchContainer.appendChild(searchInput);
-      searchContainer.appendChild(searchBtn);
-
-      // 初始化搜索栏内容为 localStorage 中存储的值
+      // 从 localStorage 中读取上一次的搜索关键字，并执行搜索
       const savedQuery = window.localStorage.getItem('unsplashSearchQuery');
       if (savedQuery) {
         searchInput.value = savedQuery;
@@ -151,10 +191,10 @@ neotw-unsplash widget
         window.localStorage.setItem('unsplashSearchQuery', query);
 
         try {
-          const photos = await this.searchPhotos(query);
+          const photos = await searchPhotos(query);
 
           photos.forEach(photo => {
-            const element = this.createPhotoElement(photo);
+            const element = createPhotoElement(photo);
             resultsContainer.appendChild(element);
           });
         } catch (error) {
@@ -173,16 +213,10 @@ neotw-unsplash widget
       }
 
       // 监听搜索栏输入框的键盘事件
-      searchInput.addEventListener(
-        'keyup',
-        debounce(performSearch.bind(this), 1000),
-      );
+      searchInput.addEventListener('keyup', debounce(performSearch, 1000));
 
       // 监听点击搜索按钮的事件
-      searchBtn.addEventListener(
-        'click',
-        debounce(performSearch.bind(this), 100),
-      );
+      searchBtn.addEventListener('click', debounce(performSearch, 1000));
     }
   }
 
