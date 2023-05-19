@@ -1,3 +1,10 @@
+# [3.259.0](https://github.com/oeyoews/neotw/compare/v3.258.0...v3.259.0) (2023-05-19)
+
+
+### Features
+
+* support enter to search ([3a02fcc](https://github.com/oeyoews/neotw/commit/3a02fcc1c16856bf9b973e64dcd1ee666af16b69))
+
 # [3.258.0](https://github.com/oeyoews/neotw/compare/v3.257.2...v3.258.0) (2023-05-19)
 
 
