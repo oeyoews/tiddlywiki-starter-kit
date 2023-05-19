@@ -1,3 +1,10 @@
+# [3.260.0](https://github.com/oeyoews/neotw/compare/v3.259.0...v3.260.0) (2023-05-19)
+
+
+### Features
+
+* use tailwindcss overwrite ([f815533](https://github.com/oeyoews/neotw/commit/f815533dea3b2abfaaf702aa78b4ef3baa59c75d))
+
 # [3.259.0](https://github.com/oeyoews/neotw/compare/v3.258.0...v3.259.0) (2023-05-19)
 
 
