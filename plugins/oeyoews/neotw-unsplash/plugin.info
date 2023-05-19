@@ -7,6 +7,6 @@
   "type": "application/json",
   "plugin-type": "plugin",
   "name": "Neotw Unsplash",
-  "dependents": ["$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus", "$:/plugins/oeyoews/tiddlywiki-modal-ui"],
+  "dependents": ["$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus", "$:/plugins/oeyoews/tiddlywiki-modal-ui", "$:/plugins/oeyoews/tiddlywiki-notify"],
   "list": "readme explore"
 }

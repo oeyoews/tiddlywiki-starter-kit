@@ -75,7 +75,7 @@ neotw-unsplash widget
             window.localStorage.setItem('unsplashApiKey', input.trim());
           }
         }
-        const apiUrl = `https://api.unsplash.com/search/photos?query=${query}&client_id=${apiKey}`;
+        const apiUrl = `https://api.unsplash.com/search/photos?query=${query}&client_id=${apiKey}&lang=en&per_page=21`;
         const response = await fetch(apiUrl);
         const data = await response.json();
         return data.results;
@@ -131,6 +131,7 @@ neotw-unsplash widget
         // 监听复制图片 URL 的按钮点击事件
         copyBtn.addEventListener('click', () => {
           navigator.clipboard.writeText(copyBtn.dataset.photoUrl);
+          pushNotify('info', 'Unplash', 'copyed');
         });
 
         // 在照片元素内部创建一个文本元素，显示图片描述信息
