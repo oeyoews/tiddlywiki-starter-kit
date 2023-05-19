@@ -1,3 +1,10 @@
+## [3.262.2](https://github.com/oeyoews/neotw/compare/v3.262.1...v3.262.2) (2023-05-19)
+
+
+### Performance Improvements
+
+* disable login page ([f76e9d8](https://github.com/oeyoews/neotw/commit/f76e9d894f5b60abb3d57013b236df3fd81d3b9a))
+
 ## [3.262.1](https://github.com/oeyoews/neotw/compare/v3.262.0...v3.262.1) (2023-05-19)
 
 
