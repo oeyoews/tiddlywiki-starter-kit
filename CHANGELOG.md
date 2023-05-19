@@ -1,3 +1,10 @@
+## [3.262.5](https://github.com/oeyoews/neotw/compare/v3.262.4...v3.262.5) (2023-05-19)
+
+
+### Performance Improvements
+
+* use tc-modal-centered ([aa68ec1](https://github.com/oeyoews/neotw/commit/aa68ec1b7f2ee6a26b4d48de9b00453ad222f4e7))
+
 ## [3.262.4](https://github.com/oeyoews/neotw/compare/v3.262.3...v3.262.4) (2023-05-19)
 
 
