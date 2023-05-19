@@ -1,3 +1,15 @@
+# [3.261.0](https://github.com/oeyoews/neotw/compare/v3.260.0...v3.261.0) (2023-05-19)
+
+
+### Features
+
+* add editorbar ([278980a](https://github.com/oeyoews/neotw/commit/278980a2b03b29cd9a0573ea90c4385af2f89172))
+
+
+### Performance Improvements
+
+* overwrite style ([0cd30a0](https://github.com/oeyoews/neotw/commit/0cd30a0e8740fade8f0b146331cf4b4ce794d755))
+
 # [3.260.0](https://github.com/oeyoews/neotw/compare/v3.259.0...v3.260.0) (2023-05-19)
 
 
