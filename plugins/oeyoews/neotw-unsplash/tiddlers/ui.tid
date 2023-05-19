@@ -3,6 +3,6 @@ title: $:/plugins/oeyoews/neotw-unsplash/unsplash
 class: o-tm
 mask-closable: yes
 subtitle: Unsplash
-class: o-tm
+class: o-tm tc-modal-centered
 
 <$unsplash />
