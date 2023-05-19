@@ -25,12 +25,15 @@ neotw-unsplash widget
       this.computeAttributes();
       this.execute();
 
-      // TODO: use searchcontainer
       // 创建搜索栏和搜索按钮
       function createSearchBar() {
+        const searchForm = document.createElement('form');
+        searchForm.addEventListener('submit', performSearch);
+
         const searchInput = document.createElement('input');
         searchInput.type = 'text';
         searchInput.id = 'search-input';
+        searchInput.name = 'query';
         searchInput.placeholder = 'Search photos...';
         searchInput.classList.add(
           'w-4/5',
@@ -46,7 +49,7 @@ neotw-unsplash widget
         );
 
         const searchBtn = document.createElement('button');
-        searchBtn.id = 'search-btn';
+        searchBtn.type = 'submit';
         searchBtn.textContent = 'Search';
         searchBtn.classList.add(
           'bg-blue-500',
@@ -62,7 +65,10 @@ neotw-unsplash widget
           'duration-200',
         );
 
-        return { searchInput, searchBtn };
+        searchForm.appendChild(searchInput);
+        searchForm.appendChild(searchBtn);
+
+        return { searchForm };
       }
 
       // 在 Unsplash 上搜索照片
@@ -139,53 +145,26 @@ neotw-unsplash widget
         // 在照片元素内部创建一个文本元素，显示图片描述信息
         const textElement = document.createElement('div');
         textElement.classList.add(
-          'text-white',
+          'text-black',
           'py-2',
           'px-4',
           'text-sm',
           'truncate',
         );
-        textElement.textContent = photo.alt_description || '';
-
+        textElement.textContent = photo.alt_description;
         element.appendChild(copyBtn);
-        element.appendChild(textElement);
         elementWrapper.appendChild(element);
+        elementWrapper.appendChild(textElement);
 
         return elementWrapper;
       }
 
-      const unsplashNode = this.document.createElement('div');
-      unsplashNode.id = 'unsplashApp';
+      // 监听提交事件
+      async function performSearch(event) {
+        event.preventDefault(); // 阻止表单提交
 
-      // 创建搜索栏和搜索按钮
-      const { searchInput, searchBtn } = createSearchBar();
-      unsplashNode.appendChild(searchInput);
-      unsplashNode.appendChild(searchBtn);
-
-      // 添加搜索结果容器到页面中
-      const resultsContainer = document.createElement('div');
-      resultsContainer.id = 'results-container';
-      resultsContainer.classList.add(
-        'flex',
-        'flex-wrap',
-        'justify-between',
-        'mt-8',
-      );
-      unsplashNode.appendChild(resultsContainer);
-
-      parent.insertBefore(unsplashNode, nextSibling);
-
-      // 从 localStorage 中读取上一次的搜索关键字，并执行搜索
-      const savedQuery = window.localStorage.getItem('unsplashSearchQuery');
-      if (savedQuery) {
-        searchInput.value = savedQuery;
-        performSearch();
-      }
-
-      // 在 Unsplash 上搜索照片
-      async function performSearch() {
         resultsContainer.innerHTML = '';
-        const query = searchInput.value.trim();
+        const query = event.target.elements.query.value.trim();
 
         if (!query) {
           return;
@@ -206,21 +185,24 @@ neotw-unsplash widget
         }
       }
 
-      // 创建 debounce 函数
-      function debounce(fn, delay) {
-        let timerId;
-        return function (...args) {
-          const context = this;
-          clearTimeout(timerId);
-          timerId = setTimeout(() => fn.apply(context, args), delay);
-        };
-      }
+      const container = document.createElement('div');
+      container.classList.add('flex', 'flex-col');
 
-      // 监听搜索栏输入框的键盘事件
-      searchInput.addEventListener('keyup', debounce(performSearch, 1000));
+      // 创建搜索栏和搜索按钮
+      const { searchForm } = createSearchBar();
+      container.appendChild(searchForm);
 
-      // 监听点击搜索按钮的事件
-      searchBtn.addEventListener('click', debounce(performSearch, 1000));
+      const resultsContainer = document.createElement('div');
+      resultsContainer.classList.add(
+        'flex',
+        'flex-wrap',
+        'justify-center',
+        'mt-4',
+      );
+      container.appendChild(resultsContainer);
+
+      // 在页面中显示照片部件
+      parent.insertBefore(container, nextSibling);
     }
   }
 

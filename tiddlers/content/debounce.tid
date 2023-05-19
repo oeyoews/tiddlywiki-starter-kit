@@ -1,0 +1,21 @@
+created: 20230519120239950
+creator: oeyoews
+modified: 20230519121348400
+modifier: oeyoews
+tags: JavaScript
+title: debounce
+type: text/vnd.tiddlywiki
+
+```js
+const debounce = (func, delay) => {
+        let timeoutId;
+        return (...args) => {
+          if (timeoutId) {
+            clearTimeout(timeoutId);
+          }
+          timeoutId = setTimeout(() => {
+            func.apply(null, args);
+          }, delay);
+        };
+      };
+```
