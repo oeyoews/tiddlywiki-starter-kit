@@ -6,7 +6,7 @@ module-type: widget
 neotw-unsplash widget
 
 \*/
-(function() {
+(function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -24,9 +24,6 @@ neotw-unsplash widget
       this.parentDomNode = parent;
       this.computeAttributes();
       this.execute();
-
-      // secret
-      const param = this.getAttribute('param', 'Test Param');
 
       const unsplashNode = this.document.createElement('div');
       unsplashNode.id = 'unsplashApp';
@@ -67,7 +64,16 @@ neotw-unsplash widget
 
       // 在 Unsplash 上搜索照片
       async function searchPhotos(query) {
-        const apiKey = 'baKbPgwlhbBfF7mHcGf0DS0TmFzi8GknZ4hbUhuNkrA';
+        const apiKey = window.localStorage.getItem('unsplashApiKey') || '';
+        if (!apiKey) {
+          const input = window.prompt(
+            'Please enter your Unsplash API Key:',
+            '',
+          );
+          if (input) {
+            window.localStorage.setItem('unsplashApiKey', input.trim());
+          }
+        }
         const apiUrl = `https://api.unsplash.com/search/photos?query=${query}&client_id=${apiKey}`;
         try {
           const response = await fetch(apiUrl);
@@ -80,9 +86,8 @@ neotw-unsplash widget
 
       // 将照片插入到编辑器中
       function insertPhoto(photoUrl) {
-        const currentText = editor.value;
-        // editor.value = currentText + `![Unsplash photo](${photoUrl})`;
-        editor.value = currentText + `<img src="${photoUrl}" />`;
+        editor.value = '';
+        editor.value = `<img src="${photoUrl}" />`;
       }
 
       // 监听搜索按钮的点击事件
