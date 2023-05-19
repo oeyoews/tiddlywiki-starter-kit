@@ -8,9 +8,9 @@ title: $:/plugins/oeyoews/neotw/modules/landing/layout-url
   <$action-setfield $tiddler="$:/layout" text="$:/plugins/oeyoews/neotw/modules/landing/layout"/>
 </$list>
 
-<$list filter="[{$:/info/url/protocol}match[https:]]">
-  <$action-setfield $tiddler="$:/layout" text="$:/plugins/oeyoews/neotw/modules/landing/layout"/>
-</$list>
+<!-- <$list filter="[{$:/info/url/protocol}match[https:]]"> -->
+<!--   <$action-setfield $tiddler="$:/layout" text="$:/plugins/oeyoews/neotw/modules/landing/layout"/> -->
+<!-- </$list> -->
 
 <$list filter="[{$:/info/url/search}match[?layout=0]]">
   <$action-setfield $tiddler="$:/layout" text="$:/plugins/oeyoews/neotw/modules/landing/layout"/>
