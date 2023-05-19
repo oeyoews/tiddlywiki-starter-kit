@@ -1,3 +1,10 @@
+## [3.262.4](https://github.com/oeyoews/neotw/compare/v3.262.3...v3.262.4) (2023-05-19)
+
+
+### Performance Improvements
+
+* remove setitem for search text ([9f1b65f](https://github.com/oeyoews/neotw/commit/9f1b65f70e6fedbf599c3024c84def2954ed5e87))
+
 ## [3.262.3](https://github.com/oeyoews/neotw/compare/v3.262.2...v3.262.3) (2023-05-19)
 
 ## [3.262.2](https://github.com/oeyoews/neotw/compare/v3.262.1...v3.262.2) (2023-05-19)
