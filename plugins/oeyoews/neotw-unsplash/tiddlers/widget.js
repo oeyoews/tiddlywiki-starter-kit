@@ -6,7 +6,7 @@ module-type: widget
 neotw-unsplash widget
 
 \*/
-(function () {
+(function() {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -29,18 +29,29 @@ neotw-unsplash widget
       unsplashNode.id = 'unsplashApp';
 
       const searchBtn = document.createElement('button');
+      searchBtn.id = 'search-btn';
+      searchBtn.textContent = 'Search';
+      searchBtn.classList.add(
+        'bg-blue-500',
+        'hover:bg-blue-600',
+        'text-white',
+        'font-semibold',
+        'py-2',
+        'px-4',
+        'mx-2',
+        'rounded',
+        'shadow',
+        'transition',
+        'duration-200',
+      );
       const resultsContainer = document.createElement('div');
       const searchContainer = document.createElement('div');
-
-      // 创建文本编辑器
-      const editor = document.createElement('textarea');
-      editor.id = 'editor';
+      searchContainer.classList.add('text-center');
 
       // 将搜索栏、照片结果列表和文本编辑器添加到页面主体中
       unsplashNode.appendChild(searchBtn);
       unsplashNode.appendChild(searchContainer);
       unsplashNode.appendChild(resultsContainer);
-      unsplashNode.appendChild(editor);
 
       parent.insertBefore(unsplashNode, nextSibling);
       this.domNodes.push(unsplashNode);
@@ -49,16 +60,34 @@ neotw-unsplash widget
       searchInput.type = 'text';
       searchInput.id = 'search-input';
       searchInput.placeholder = 'Search photos...';
+      searchInput.classList.add(
+        'w-4/5',
+        'px-3',
+        'py-2',
+        'bg-white',
+        'border',
+        'border-gray-300',
+        'rounded',
+        'shadow-sm',
+        'focus:outline-none',
+        'focus:border-blue-300',
+      );
 
       // 创建搜索按钮
       searchBtn.id = 'search-btn';
       searchBtn.textContent = 'Search';
 
       // 创建照片结果列表
-      resultsContainer.classList.add('results-container');
+      resultsContainer.classList.add(
+        'grid',
+        'grid-cols-4',
+        'overflow-auto',
+        'gap-4',
+        'rounded-lg',
+        'my-4',
+      );
 
       // 将搜索栏和搜索按钮添加到容器元素中
-      searchContainer.classList.add('search-container');
       searchContainer.appendChild(searchInput);
       searchContainer.appendChild(searchBtn);
 
@@ -83,17 +112,15 @@ neotw-unsplash widget
         });
       }
 
-      // 将照片插入到编辑器中
-      function insertPhoto(photoUrl) {
-        // 在插入图片前清空编辑器
-        editor.value = '';
-
-        editor.value = `<img src="${photoUrl}" />`;
+      // 点击图片复制图片 URL 到粘贴板
+      function copyPhotoUrl(photoUrl) {
+        const image = `<img src="${photoUrl}" />`;
+        navigator.clipboard.writeText(image);
       }
 
       function debounce(fn, delay) {
         let timerId;
-        return function (...args) {
+        return function(...args) {
           const context = this;
           clearTimeout(timerId);
           timerId = setTimeout(() => fn.apply(context, args), delay);
@@ -118,12 +145,13 @@ neotw-unsplash widget
 
             photos.forEach(photo => {
               const element = document.createElement('div');
-              element.classList.add('results-item');
+              element.classList.add('w-56', 'h-56');
               element.innerHTML = `<img src="${photo.urls.small}" alt="${photo.alt_description}" />`;
 
-              // 监听照片的点击事件，将其插入到编辑器中
+              // 监听照片的点击事件，将其插入到编辑器中，并复制到粘贴板
               element.addEventListener('click', () => {
-                insertPhoto(photo.urls.regular);
+                // insertPhoto(photo.urls.regular);
+                copyPhotoUrl(photo.urls.regular);
               });
 
               resultsContainer.appendChild(element);
@@ -154,12 +182,13 @@ neotw-unsplash widget
 
             photos.forEach(photo => {
               const element = document.createElement('div');
-              element.classList.add('results-item');
+              element.classList.add('w-56', 'h-56', 'm-1');
               element.innerHTML = `<img src="${photo.urls.small}" alt="${photo.alt_description}" />`;
 
               // 监听照片的点击事件，将其插入到编辑器中
               element.addEventListener('click', () => {
-                insertPhoto(photo.urls.regular);
+                // insertPhoto(photo.urls.regular);
+                copyPhotoUrl(photo.urls.regular);
               });
 
               resultsContainer.appendChild(element);
