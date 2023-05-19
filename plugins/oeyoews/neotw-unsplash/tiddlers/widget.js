@@ -75,23 +75,16 @@ neotw-unsplash widget
     // 创建一个照片元素
     createPhotoElement(photo) {
       const element = document.createElement('div');
-      element.classList.add(
-        'w-full',
-        'md:w-1/2',
-        'lg:w-1/3',
-        'p-2',
-        'flex',
-        'flex-col',
-        'items-center',
-        'justify-start',
-      );
+      element.classList.add('p-2');
       element.innerHTML = `
-        <div class="w-full h-64 bg-cover bg-center rounded-lg shadow-lg hover:scale-105 duration-300 transition" style="background-image: url(${photo.urls.small})"></div>
-        <div class="mb-1 text-xs my-2 text-slate-500">${photo.alt_description}</div>
-        <div class="w-full -mt-8 p-6 my-2">
-          <button class="bg-blue-400 hover:bg-blue-500 text-white p-1 rounded-sm focus:outline-none focus:shadow-outline hover:scale-105 duration-300 transition" data-photo-url="${photo.urls.regular}">
+        <div class="w-full h-64 bg-cover bg-center rounded-lg shadow-lg m-2" style="background-image: url(${photo.urls.small})">
+
+        <div class="mb-1 text-xs my-8 text-white">${photo.alt_description}</div>
+        <div class="-my-[34px]">
+          <button class="bg-blue-400 hover:bg-blue-500 text-white p-1 rounded-sm focus:outline-none focus:shadow-outline hover:scale-105 duration-300 transition " data-photo-url="${photo.urls.regular}">
             Copy
           </button>
+        </div>
         </div>
       `;
 
@@ -117,10 +110,11 @@ neotw-unsplash widget
 
       const resultsContainer = document.createElement('div');
       resultsContainer.classList.add(
-        'flex',
-        'flex-wrap',
-        'justify-center',
-        'my-4',
+        'grid',
+        'grid-cols-3',
+        // 'flex-wrap',
+        // 'justify-center',
+        'my-8',
       );
 
       const searchContainer = document.createElement('div');
@@ -187,7 +181,7 @@ neotw-unsplash widget
       // 监听点击搜索按钮的事件
       searchBtn.addEventListener(
         'click',
-        debounce(performSearch.bind(this), 1000),
+        debounce(performSearch.bind(this), 100),
       );
     }
   }

@@ -25,4 +25,4 @@ title: $:/plugins/oeyoews/neotw-unsplash/readme
 
 * add tm-modal on edittoolbar to call unsplash <19-05-23, oeyoews>
 * use other image api <19-05-23, oeyoews>
-* use enter to search <19-05-23, oeyoews>
+* use tm-notify or others notify
