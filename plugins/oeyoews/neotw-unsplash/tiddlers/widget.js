@@ -6,6 +6,8 @@ module-type: widget
 neotw-unsplash widget
 
 \*/
+// TODO: add loading
+// center search
 (function () {
   'use strict';
 
