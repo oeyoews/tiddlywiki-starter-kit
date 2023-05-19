@@ -7,7 +7,6 @@ neotw-unsplash widget
 
 \*/
 // TODO: add loading
-// center search
 (function () {
   'use strict';
 
@@ -28,9 +27,11 @@ neotw-unsplash widget
       // 创建搜索栏和搜索按钮
       function createSearchBar() {
         const searchForm = document.createElement('form');
+        searchForm.classList.add('flex', 'justify-center', 'items-center');
         searchForm.addEventListener('submit', performSearch);
 
         const searchInput = document.createElement('input');
+
         searchInput.type = 'text';
         searchInput.id = 'search-input';
         searchInput.name = 'query';
@@ -170,9 +171,6 @@ neotw-unsplash widget
           return;
         }
 
-        // 将搜索关键字存储到 localStorage 中
-        window.localStorage.setItem('unsplashSearchQuery', query);
-
         try {
           const photos = await searchPhotos(query);
 
@@ -203,6 +201,9 @@ neotw-unsplash widget
 
       // 在页面中显示照片部件
       parent.insertBefore(container, nextSibling);
+      /* parent.insertBefore(divNode, nextSibling) 用于在父节点 parent 中插入一个新节点 divNode，并将其插入到指定的 nextSibling 节点之前。这个方法返回被插入的节点 divNode。
+而 this.domNodes.push(divNode) 则是将 divNode 添加到当前组件实例的 domNodes 数组中，以便在以后的更新操作中可以方便地访问和操作该节点。
+两者的区别在于，parent.insertBefore(divNode, nextSibling) 是 DOM 操作，用于修改页面上的 DOM 结构，而 this.domNodes.push(divNode) 则是组件状态的维护，用于记录当前组件实例所包含的节点信息。 */
     }
   }
 
