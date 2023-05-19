@@ -23,6 +23,7 @@ neotw-unsplash widget
       this.computeAttributes();
       this.execute();
 
+      // TODO: use searchcontainer
       // 创建搜索栏和搜索按钮
       function createSearchBar() {
         const searchInput = document.createElement('input');
