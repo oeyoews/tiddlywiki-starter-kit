@@ -38,8 +38,8 @@ neotw-unsplash widget
 
       // 将搜索栏、照片结果列表和文本编辑器添加到页面主体中
       unsplashNode.appendChild(searchBtn);
-      unsplashNode.appendChild(resultsContainer);
       unsplashNode.appendChild(searchContainer);
+      unsplashNode.appendChild(resultsContainer);
       unsplashNode.appendChild(editor);
 
       parent.insertBefore(unsplashNode, nextSibling);
@@ -63,57 +63,119 @@ neotw-unsplash widget
       searchContainer.appendChild(searchBtn);
 
       // 在 Unsplash 上搜索照片
-      async function searchPhotos(query) {
-        const apiKey = window.localStorage.getItem('unsplashApiKey') || '';
-        if (!apiKey) {
-          const input = window.prompt(
-            'Please enter your Unsplash API Key:',
-            '',
-          );
-          if (input) {
-            window.localStorage.setItem('unsplashApiKey', input.trim());
+      function searchPhotos(query) {
+        return new Promise((resolve, reject) => {
+          const apiKey = window.localStorage.getItem('unsplashApiKey') || '';
+          if (!apiKey) {
+            const input = window.prompt(
+              'Please enter your Unsplash API Key:',
+              '',
+            );
+            if (input) {
+              window.localStorage.setItem('unsplashApiKey', input.trim());
+            }
           }
-        }
-        const apiUrl = `https://api.unsplash.com/search/photos?query=${query}&client_id=${apiKey}`;
-        try {
-          const response = await fetch(apiUrl);
-          const data = await response.json();
-          return data.results;
-        } catch (error) {
-          console.log(error);
-        }
+          const apiUrl = `https://api.unsplash.com/search/photos?query=${query}&client_id=${apiKey}`;
+          fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => resolve(data.results))
+            .catch(error => reject(error));
+        });
       }
 
       // 将照片插入到编辑器中
       function insertPhoto(photoUrl) {
+        // 在插入图片前清空编辑器
         editor.value = '';
+
         editor.value = `<img src="${photoUrl}" />`;
       }
 
-      // 监听搜索按钮的点击事件
-      searchBtn.addEventListener('click', async () => {
-        resultsContainer.innerHTML = '';
-        const query = searchInput.value.trim();
+      function debounce(fn, delay) {
+        let timerId;
+        return function (...args) {
+          const context = this;
+          clearTimeout(timerId);
+          timerId = setTimeout(() => fn.apply(context, args), delay);
+        };
+      }
 
-        if (!query) {
-          return;
-        }
+      searchBtn.addEventListener(
+        'click',
+        debounce(async () => {
+          resultsContainer.innerHTML = '';
+          const query = searchInput.value.trim();
 
-        const photos = await searchPhotos(query);
+          if (!query) {
+            return;
+          }
 
-        photos.forEach(photo => {
-          const element = document.createElement('div');
-          element.classList.add('results-item');
-          element.innerHTML = `<img src="${photo.urls.small}" alt="${photo.alt_description}" />`;
+          // 将搜索关键字存储到 localStorage 中
+          window.localStorage.setItem('unsplashSearchQuery', query);
 
-          // 监听照片的点击事件，将其插入到编辑器中
-          element.addEventListener('click', () => {
-            insertPhoto(photo.urls.regular);
-          });
+          try {
+            const photos = await searchPhotos(query);
 
-          resultsContainer.appendChild(element);
-        });
-      });
+            photos.forEach(photo => {
+              const element = document.createElement('div');
+              element.classList.add('results-item');
+              element.innerHTML = `<img src="${photo.urls.small}" alt="${photo.alt_description}" />`;
+
+              // 监听照片的点击事件，将其插入到编辑器中
+              element.addEventListener('click', () => {
+                insertPhoto(photo.urls.regular);
+              });
+
+              resultsContainer.appendChild(element);
+            });
+          } catch (error) {
+            console.log(error);
+          }
+        }),
+        1000,
+      );
+
+      // 监听搜索栏输入框的键盘事件，支持回车搜索
+      searchInput.addEventListener(
+        'keyup',
+        debounce(async () => {
+          resultsContainer.innerHTML = '';
+          const query = searchInput.value.trim();
+
+          if (!query) {
+            return;
+          }
+
+          // 将搜索关键字存储到 localStorage 中
+          window.localStorage.setItem('unsplashSearchQuery', query);
+
+          try {
+            const photos = await searchPhotos(query);
+
+            photos.forEach(photo => {
+              const element = document.createElement('div');
+              element.classList.add('results-item');
+              element.innerHTML = `<img src="${photo.urls.small}" alt="${photo.alt_description}" />`;
+
+              // 监听照片的点击事件，将其插入到编辑器中
+              element.addEventListener('click', () => {
+                insertPhoto(photo.urls.regular);
+              });
+
+              resultsContainer.appendChild(element);
+            });
+          } catch (error) {
+            console.log(error);
+          }
+        }),
+        1000,
+      );
+
+      // 初始化搜索栏内容为 localStorage 中存储的值
+      const savedQuery = window.localStorage.getItem('unsplashSearchQuery');
+      if (savedQuery) {
+        searchInput.value = savedQuery;
+      }
     }
   }
 
