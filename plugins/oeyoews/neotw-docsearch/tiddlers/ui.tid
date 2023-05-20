@@ -3,7 +3,7 @@ tags: $:/tags/PageControls
 list-before: $:/core/ui/Buttons/more-page-actions
 description: docsearch
 caption: Docsearch
-list-after:
+list-before:
 
 \whitespace trim
 <$button tooltip="" aria-label="" class=<<tv-config-toolbar-class>>>
