@@ -1,0 +1,18 @@
+title: Search
+tags: $:/tags/PageControls
+list-before: $:/core/ui/Buttons/more-page-actions
+description: docsearch
+caption: Docsearch
+list-after:
+
+\whitespace trim
+<$button tooltip="" aria-label="" class=<<tv-config-toolbar-class>>>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+<$docsearch />
+</$list>
+<$list filter="[<tv-config-toolbar-text>match[yes]]">
+<span class="tc-btn-text">
+<$text text=""/>
+</span>
+</$list>
+</$button>

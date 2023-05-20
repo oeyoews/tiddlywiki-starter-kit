@@ -6,7 +6,7 @@ module-type: widget
 neotw-docsearch widget
 
 \*/
-(function () {
+(function() {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -26,12 +26,11 @@ neotw-docsearch widget
       this.computeAttributes();
       this.execute();
 
-      const param = this.getAttribute('param', 'Test Param');
+      // const param = this.getAttribute('param', 'Test Param');
 
       const divNode = this.document.createElement('div');
       divNode.id = 'searchbox';
-      divNode.textContent = param;
-      divNode.className = 'divClass';
+      // divNode.textContent = param;
       parent.insertBefore(divNode, nextSibling);
       this.domNodes.push(divNode);
       docsearch({
