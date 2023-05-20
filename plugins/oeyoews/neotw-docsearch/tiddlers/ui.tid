@@ -9,10 +9,11 @@ list-before:
 <$button tooltip="" aria-label="" class=<<tv-config-toolbar-class>>>
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
 <$docsearch />
+{{$:/core/images/advanced-search-button}}
 </$list>
 <$list filter="[<tv-config-toolbar-text>match[yes]]">
 <span class="tc-btn-text">
-<$text text=""/>
+<$text text="Docsearch"/>
 </span>
 </$list>
 </$button>
