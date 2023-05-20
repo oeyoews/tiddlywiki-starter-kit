@@ -70,6 +70,6 @@
   "engines": {
     "node": ">=16"
   },
-  "version": "3.264.0",
+  "version": "3.265.0",
   "packageManager": "yarn@3.5.0"
 }

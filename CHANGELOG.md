@@ -1,3 +1,11 @@
+# [3.265.0](https://github.com/oeyoews/neotw/compare/v3.264.0...v3.265.0) (2023-05-20)
+
+
+### Features
+
+* add neotw-algolia ([ef84bdc](https://github.com/oeyoews/neotw/commit/ef84bdc40c4685aee8ca5cd46ec9aef649355a1d))
+* use hit ([5da757d](https://github.com/oeyoews/neotw/commit/5da757db9520a5ee115bcfbc215051b7809d34bf))
+
 # [3.264.0](https://github.com/oeyoews/neotw/compare/v3.263.0...v3.264.0) (2023-05-20)
 
 
