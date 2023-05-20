@@ -1,3 +1,10 @@
+# [3.263.0](https://github.com/oeyoews/neotw/compare/v3.262.5...v3.263.0) (2023-05-20)
+
+
+### Features
+
+* add neotw-docsearch ([03643cc](https://github.com/oeyoews/neotw/commit/03643cc91e0765ba40fd7d6e8a38379d9894e04d))
+
 ## [3.262.5](https://github.com/oeyoews/neotw/compare/v3.262.4...v3.262.5) (2023-05-19)
 
 
