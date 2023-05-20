@@ -47,6 +47,7 @@ neotw-algolia widget
       const search = instantsearch({
         indexName,
         searchClient,
+        maxValuesPerFacet: 10, // 最多显示10个facet值
       });
       const container = this.getAttribute('container', '#searchbox');
 
@@ -58,21 +59,33 @@ neotw-algolia widget
         // <p class="text-gray-800 line-clamp-3">{{{_highlightResult.modified.value}}}</p>
         // <p class="text-gray-800 line-clamp-3">{{{_highlightResult.text.value}}}</p>
         /* <a href="#{{{_highlightResult.tags.value}}}" class="text-gray-800 rounded-md font-bold py-1 inline">{{{_highlightResult.tags.value}}}</a> */
+
+        /* <div class="w-1/5 pl-4">
+                  <img
+                    src="${hit.page - cover}"
+                    class="rounded"
+                  />
+                </div> */
+        // ${hit.title}
+        // <p class="text-gray-800 mt-2">${hit.tags}</p>
         instantsearch.widgets.hits({
           container: '#hits',
+          hitsPerPage: 10,
           templates: {
-            item: `
-<div class="rounded flex hover:shadow-md p-2 transition duration-300">
-  <div class="w-4/5">
-    <a href="#{{{_highlightResult.title.value}}}" class="text-xl mb-2 font-semibold truncate capitalize">
-{{{_highlightResult.title.value}}}</a>
-  </div>
-
-  <div class="w-1/5 pl-4">
-    <img src="{{{_highlightResult.page-cover.value}}}" class="rounded"/>
-  </div>
-</div>
-      `,
+            item(hit) {
+              return `
+              <div class="flex rounded p-2 transition duration-300">
+                <div class="w-4/5">
+                  <a
+                    href="#${hit.title}"
+                    class="mb-2 truncate text-xl font-semibold capitalize"
+                  >
+                  ${hit._highlightResult.title.value}
+                  </a>
+                  <p class="text-gray-800 line-clamp-3">${hit._highlightResult.text.value}</p>
+                </div>
+              </div>`;
+            },
           },
         }),
       ]);
