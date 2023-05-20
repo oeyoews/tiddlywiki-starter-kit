@@ -3,6 +3,7 @@
     {
       "path": "./",
       "filesRegExp": "^.*\\.md$",
+      "searchSubdirectories": true,
       "isEditableFile": true,
       "fields": {
         "title": {
