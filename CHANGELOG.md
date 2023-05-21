@@ -1,3 +1,15 @@
+# [3.267.0](https://github.com/oeyoews/neotw/compare/v3.266.0...v3.267.0) (2023-05-21)
+
+
+### Features
+
+* add throttle for neotw-hitokoto ([9602921](https://github.com/oeyoews/neotw/commit/96029214cbf24235392f8011b904affb78a747e5))
+
+
+### Performance Improvements
+
+* simplify neotw-hitokoto ([f51bef1](https://github.com/oeyoews/neotw/commit/f51bef198fdae0df923b42e0d6965bea6a069e4f))
+
 # [3.266.0](https://github.com/oeyoews/neotw/compare/v3.265.0...v3.266.0) (2023-05-21)
 
 
