@@ -6,7 +6,6 @@ module-type: widget
 Hitokoto widget
 
 \*/
-// support nprogress
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
@@ -26,52 +25,31 @@ Hitokoto widget
       this.computeAttributes();
       this.execute();
 
-      /* param */
-      const refreshTime = this.getAttribute('refreshTime', '600000');
-      const refreshHitokoto = this.getAttribute('refreshHitokoto', '');
-      const enableClick = this.getAttribute('enableClick', 'yes');
-
-      const hitokotoSpan = this.document.createElement('div');
-      hitokotoSpan.textContent = 'Loading...';
-      hitokotoSpan.className =
-        'text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-500 to-yellow-500 cursor-pointer text-xs line-clamp-1 my-4';
-      parent.insertBefore(hitokotoSpan, nextSibling);
-      this.domNodes.push(hitokotoSpan);
+      const hitokotoNode = this.document.createElement('div');
+      hitokotoNode.textContent = 'Loading...';
+      hitokotoNode.classList.add(
+        'text-transparent',
+        'bg-clip-text',
+        'bg-gradient-to-r',
+        'from-teal-400',
+        'via-pink-500',
+        'to-yellow-500',
+        'cursor-pointer',
+        'text-xs',
+        'line-clamp-1',
+        'my-4',
+        'inline',
+      );
+      parent.insertBefore(hitokotoNode, nextSibling);
+      this.domNodes.push(hitokotoNode);
 
       const fetchHitokoto = () => {
-        if (parseInt(refreshTime) < 1000) {
-          // alert('refreshTime 值过小， 请设置一个合适的数字');
-          console.warn('refreshTime 值过小， 请设置一个合适的数字');
-          return;
-        }
-        if (refreshTime === 'true' || refreshTime === '') {
-          return;
-        }
-        // console.log(`🐛 ${refreshTime}`);
-        if (this.executing) {
-          return;
-        }
-        this.executing = true;
-        /* axios
-          .get('https://v1.hitokoto.cn')
-          .then(response => {
-            const data = response.data;
-            const hitokotoText = data.hitokoto;
-            const hitokotoFrom = '@' + data.from;
-            hitokotoSpan.textContent = `${hitokotoText} ${hitokotoFrom}`;
-          })
-          .catch(error => console.error(error))
-          .finally(() => {
-            this.executing = false;
-          }); */
         fetch('https://v1.hitokoto.cn')
           .then(response => response.json())
           .then(data => {
-            // add hover show TODO
             const hitokotoText = data.hitokoto;
             const hitokotoFrom = '@' + data.from;
-            hitokotoSpan.textContent = `${hitokotoText} ${hitokotoFrom}`;
-            // console.log(hitokotoText);
+            hitokotoNode.textContent = `${hitokotoText} ${hitokotoFrom}`;
           })
           .catch(console.error)
           .finally(() => {
@@ -79,34 +57,10 @@ Hitokoto widget
           });
       };
 
-      if (enableClick === 'yes' && window.innerWidth > 768) {
-        parent.addEventListener('click', event => {
-          if (event.target !== hitokotoSpan) {
-            event.preventDefault();
-            return;
-          }
-          fetchHitokoto();
-        });
-        // copy
-        /* hitokotoSpan.setAttribute('title', '点击复制, 右键切换');
-        hitokotoSpan.addEventListener('click', () => {
-          document.execCommand('copy');
-          window.getSelection().removeAllRanges();
-        });
-        document.addEventListener('copy', event => {
-          event.preventDefault();
-          if (event.clipboardData) {
-            const hitokotoText = hitokotoSpan.textContent;
-            event.clipboardData.setData('text/plain', hitokotoText);
-          }
-          pushNotify();
-        }); */
-      }
-
+      hitokotoNode.addEventListener('click', () => {
+        fetchHitokoto();
+      });
       fetchHitokoto();
-      if (refreshHitokoto === 'yes') {
-        setInterval(fetchHitokoto, refreshTime);
-      }
     }
   }
 
