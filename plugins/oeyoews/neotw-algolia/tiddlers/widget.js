@@ -54,6 +54,13 @@ neotw-algolia widget
       search.addWidgets([
         instantsearch.widgets.searchBox({
           container,
+          placeholder: '搜索...',
+          showReset: false,
+          showSubmit: false,
+          debounce: 200, // 设置500ms的延迟时间
+          onChange: function (event) {
+            search.helper.setQuery(event.target.value).search();
+          },
         }),
 
         // <p class="text-gray-800 line-clamp-3">{{{_highlightResult.modified.value}}}</p>
@@ -62,11 +69,10 @@ neotw-algolia widget
 
         /* <div class="w-1/5 pl-4">
                   <img
-                    src="${hit.page - cover}"
+                    src="${hit['page-cover']}"
                     class="rounded"
                   />
                 </div> */
-        // ${hit.title}
         // <p class="text-gray-800 mt-2">${hit.tags}</p>
         instantsearch.widgets.hits({
           container: '#hits',
@@ -76,13 +82,10 @@ neotw-algolia widget
               return `
               <div class="flex rounded p-2 transition duration-300">
                 <div class="w-4/5">
-                  <a
-                    href="#${hit.title}"
-                    class="mb-2 truncate text-xl font-semibold capitalize"
-                  >
+               <a href="#${hit.title}" class="font-bold mb-2 truncate text-xl capitalize">
                   ${hit._highlightResult.title.value}
-                  </a>
-                  <p class="text-gray-800 line-clamp-3">${hit._highlightResult.text.value}</p>
+               </a>
+               <p class="text-gray-800 line-clamp-3">${hit._highlightResult.text.value}</p>
                 </div>
               </div>`;
             },
