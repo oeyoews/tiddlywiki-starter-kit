@@ -21,6 +21,7 @@ nprogress module
       NProgress.start();
       setTimeout(function () {
         NProgress.done();
+        // pushNotify('success', 'Loading finished');
       }, 1000);
     };
   };

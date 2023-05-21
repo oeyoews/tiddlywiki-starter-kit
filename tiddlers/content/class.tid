@@ -1,0 +1,35 @@
+created: 20230521114614640
+creator: oeyoews
+modified: 20230521114723528
+modifier: oeyoews
+tags: ES6
+title: class
+type: text/vnd.tiddlywiki
+
+```js
+class Person {
+  constructor(name, version) {
+    this.name = name;
+    this.version = version;
+  }
+
+  log() {
+    console.log('parent');
+  }
+}
+
+class PersonPlus extends Person {
+  constructor(name, version) {
+    super(name, version);
+  }
+  log() {
+    super.log();
+    console.log('child');
+  }
+}
+
+const plusTom = new PersonPlus('Tom', '1.0.0');
+console.log(plusTom.version);
+plusTom.log();
+
+```
