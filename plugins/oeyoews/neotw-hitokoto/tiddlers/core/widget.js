@@ -57,8 +57,14 @@ Hitokoto widget
           });
       };
 
+      const _ = require('lodash.min.js');
+      const throttleHitokotoHandleClick = _.throttle(
+        fetchHitokoto.bind(this),
+        1000,
+      );
+
       hitokotoNode.addEventListener('click', () => {
-        fetchHitokoto();
+        throttleHitokotoHandleClick();
       });
       fetchHitokoto();
     }
