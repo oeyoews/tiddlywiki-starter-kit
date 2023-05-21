@@ -1,10 +1,82 @@
 created: 20230521114614640
 creator: oeyoews
-modified: 20230521114723528
+modified: 20230521142719725
 modifier: oeyoews
 tags: ES6
 title: class
 type: text/vnd.tiddlywiki
+
+在 JavaScript 中，使用原型对象的方式可以实现对类的属性和方法进行共享。以下是一个使用原型对象的写法示例：
+
+```javascript
+// 定义构造函数
+function Animal(name) {
+  this.name = name;
+}
+
+// 在原型对象上定义方法
+Animal.prototype.sayHello = function() {
+  console.log(`Hello, my name is ${this.name}.`);
+};
+
+// 创建实例对象
+const myAnimal = new Animal('Rufus');
+
+// 调用方法
+myAnimal.sayHello(); // 输出：Hello, my name is Rufus.
+```
+
+在这个示例中，我们首先定义了一个构造函数 `Animal`，它接受一个参数 `name`，并使用 `this` 关键字将它保存在实例对象上。
+
+然后，我们使用 `Animal.prototype` 对象来定义 `sayHello` 方法，这样所有 `Animal` 类型的对象都可以调用它。在 `sayHello` 方法中，我们使用 `this.name` 来获取实例对象的属性，并输出问候语。
+
+最后，我们创建了一个 `myAnimal` 实例，并调用了它的 `sayHello` 方法。由于使用了原型对象的方式，所以该方法会被所有 `Animal` 类型的对象共享。
+
+使用原型对象可以大大提高代码的复用性和可维护性，使得类的属性和方法得到更好的组织和管理。不过，需要注意的是，在使用原型对象时，要避免直接修改原型对象的属性和方法，否则可能会产生难以预料的结果。
+
+`class` 是 ES6 中引入的一个新语法，用于定义类和继承关系。相比于传统的构造函数和原型对象方式，使用 `class` 语法可以带来许多便利：
+
+1. 更加直观：使用 `class` 可以更加直观地描述类和继承关系，避免了使用构造函数时需要手动设置原型对象的复杂操作。
+2. 更加简洁：使用 `class` 可以将一些常见的方法（如构造函数和 `toString()` 方法）隐式地定义在类中，不必显式地添加到原型对象上。
+3. 更加安全：使用 `class` 可以避免一些常见的错误，如忘记使用 `new` 关键字导致 `this` 指向全局对象等。
+4. 更加易于维护：使用 `class` 可以使代码结构更加清晰和易于维护，同时也可以方便地重构和扩展类的行为。
+
+以下是一个使用 `class` 定义类和继承关系的示例，演示了如何使用 `class` 带来的便利：
+
+```javascript
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+
+  sayHello() {
+    console.log(`Hello, my name is ${this.name}.`);
+  }
+}
+
+class Dog extends Animal {
+  constructor(name, breed) {
+    super(name);
+    this.breed = breed;
+  }
+
+  bark() {
+    console.log('Woof!');
+  }
+}
+
+const myDog = new Dog('Fido', 'Labrador');
+myDog.sayHello(); // 输出：Hello, my name is Fido.
+myDog.bark(); // 输出：Woof!
+```
+
+在这个示例中，我们使用 `class` 关键字定义了一个父类 `Animal` 和一个子类 `Dog`，并使用 `extends` 关键字实现了继承关系。
+
+在类的内部，我们使用 `constructor` 方法定义构造函数，并使用 `super()` 方法调用父类的构造函数。在 `Animal` 类中，我们还定义了一个 `sayHello` 方法，以便所有子类都可以调用它。
+
+在 `Dog` 类中，我们使用 `constructor` 方法定义了子类自己的属性和方法，并使用 `super(name)` 方法调用了父类的构造函数。然后，我们又添加了一个 `bark` 方法，用于模拟狗吠声。
+
+最后，我们创建了一个 `myDog` 实例，并调用了它的 `sayHello` 和 `bark` 方法。由于使用了 `class` 语法，所以代码更加简洁明了，易于维护和扩展。
 
 ```js
 class Person {

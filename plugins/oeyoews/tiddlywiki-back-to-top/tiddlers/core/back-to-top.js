@@ -48,7 +48,7 @@ Adds a "back to top" button with a progress indicator to the page which allows u
 
   function backListener() {
     // Add a scroll event listener to show/hide the button based on the user's scroll position
-    window.addEventListener('scroll', () => {
+    $tw.wiki.addEventListener('scroll', () => {
       if (window.scrollY > showButtonAt) {
         backToTopButton.classList.add('is-visible');
         progressIndicator.classList.add('is-visible');
