@@ -19,6 +19,19 @@ neotw-gli widget
       super(parseTreeNode, options);
     }
 
+    /**
+     * Asynchronously renders the HTML of the component in the provided parent element before the nextSibling.
+     *
+     * @param {HTMLElement} parent - The parent element to append the rendered HTML to.
+     * @param {HTMLElement} nextSibling - The element before which the rendered HTML will be inserted.
+     */
+
+    /**
+ * 异步地在提供的父元素中在 nextSibling 前渲染组件的 HTML。
+ *
+ * @param {HTMLElement} parent - 要将渲染的 HTML 附加到的父元素。
+ * @param {HTMLElement} nextSibling - 要插入渲染的 HTML 的元素之前的元素。
+ */
     async render(parent, nextSibling) {
       this.parentDomNode = parent;
       this.computeAttributes();
