@@ -6,11 +6,12 @@ module-type: widget
 neotw-gli widget
 
 \*/
-(function() {
+(function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
 
+  // adjuge this environment to the widget
   if (!$tw.browser) return;
 
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
@@ -27,11 +28,11 @@ neotw-gli widget
      */
 
     /**
- * 异步地在提供的父元素中在 nextSibling 前渲染组件的 HTML。
- *
- * @param {HTMLElement} parent - 要将渲染的 HTML 附加到的父元素。
- * @param {HTMLElement} nextSibling - 要插入渲染的 HTML 的元素之前的元素。
- */
+     * 异步地在提供的父元素中在 nextSibling 前渲染组件的 HTML。
+     *
+     * @param {HTMLElement} parent - 要将渲染的 HTML 附加到的父元素。
+     * @param {HTMLElement} nextSibling - 要插入渲染的 HTML 的元素之前的元素。
+     */
     async render(parent, nextSibling) {
       this.parentDomNode = parent;
       this.computeAttributes();
@@ -40,9 +41,9 @@ neotw-gli widget
       const url =
         'https://api.github.com/repos/oeyoews/neotw/commits?per_page=1';
 
-      const divNode = this.document.createElement('div');
-      divNode.className = this.getAttribute('class') || '';
-      divNode.textContent = 'Loading ...'; // 显示loading
+      const gliNode = this.document.createElement('div');
+      gliNode.className = this.getAttribute('class') || '';
+      gliNode.textContent = 'Loading ...'; // 显示loading
 
       try {
         const response = await fetch(url);
@@ -52,17 +53,17 @@ neotw-gli widget
         const timestamp = new Date(data[0].commit.author.date).getTime();
         // 格式化时间戳为字符串
         const timeStr = new Date(timestamp).toLocaleString();
-        divNode.textContent = `Last commit: ${timeStr}`; // 显示时间字符串
+        gliNode.textContent = `Last commit: ${timeStr}`; // 显示时间字符串
       } catch (error) {
         console.error(error);
-        divNode.textContent = 'Error loading data'; // 显示错误信息
-        divNode.className = 'text-red-500';
+        gliNode.textContent = 'Error loading data'; // 显示错误信息
+        gliNode.className = 'text-red-500';
       }
 
-      parent.insertBefore(divNode, nextSibling);
-      this.domNodes.push(divNode);
+      parent.insertBefore(gliNode, nextSibling);
+      this.domNodes.push(gliNode);
     }
   }
 
-  exports['gli'] = GLIWidget;
+  exports.gli = GLIWidget;
 })();

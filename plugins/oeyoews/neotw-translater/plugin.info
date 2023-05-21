@@ -1,0 +1,12 @@
+{
+  "title": "$:/plugins/oeyoews/neotw-translater",
+  "description": "Neotw Translater",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.2.5",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "Neotw Translater",
+  "dependents": ["$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"],
+  "list": "readme explore"
+}
