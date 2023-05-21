@@ -17,7 +17,6 @@ owidget
   class OHitokoto extends Widget {
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
-      this.isUpdating = false;
     }
 
     render(parent, nextSibling) {
@@ -25,65 +24,33 @@ owidget
       this.computeAttributes();
       this.execute();
 
-      const refreshTime = this.getAttribute('refreshTime', '600000');
-      const enableClick = this.getAttribute('enableClick', 'yes');
+      const ohitokotoNode = this.document.createElement('div');
+      ohitokotoNode.className = 'hitokoto cursor-pointer truncate';
+      ohitokotoNode.textContent = 'Loading ...';
 
-      if (refreshTime <= 0) {
-        console.log('refreshTime 值过小，请设置一个合适的数字');
-        return;
-      }
+      parent.insertBefore(ohitokotoNode, nextSibling);
+      this.domNodes.push(ohitokotoNode);
 
-      // const containerNode = this.document.createElement('container');
+      const fetchOHitokoto = () => {
+        const sentences = $tw.wiki.getTiddlerData(
+          '$:/plugins/oeyoews/neotw-hitokoto/sentences.json',
+        );
+        const randomIndex = Math.floor(Math.random() * sentences.length);
+        const randomSentence =
+          sentences[randomIndex].hitokoto + ' ' + sentences[randomIndex].from;
+        ohitokotoNode.textContent = randomSentence;
+      };
 
-      const ohitokotoSpan = this.document.createElement('div');
-      ohitokotoSpan.className = 'hitokoto cursor-default line-clamp-1';
-      this.updateText(ohitokotoSpan);
-
-      // use container
-      const refreshButton = this.document.createElement('button');
-      refreshButton.className =
-        'hitokoto-refresh text-xs ml-2 text-sky-300 cursor-pointer hover:font-bold bg-transparent hidden';
-      refreshButton.textContent = ' Next';
-      // refreshButton.style.fontSize = '50%';
-      // refreshButton.style.marginLeft = '4px';
-      // refreshButton.style.color = '#7AA2F7';
-      refreshButton.onclick = this.handleRefresh.bind(this);
-
-      parent.insertBefore(ohitokotoSpan, nextSibling);
-      parent.insertBefore(refreshButton, nextSibling);
-      this.domNodes.push(ohitokotoSpan);
-      this.domNodes.push(refreshButton);
-      // containerNode.appendChild(ohitokotoSpan);
-      // containerNode.appendChild(refreshButton);
-      // parent.insertBefore(containerNode, nextSibling);
-      // this.domNodes.push(containerNode);
-
-      setInterval(() => this.updateText(ohitokotoSpan), refreshTime);
-    }
-
-    updateText(domNode) {
-      if (this.isUpdating) {
-        return;
-      }
-
-      const sentences = $tw.wiki.getTiddlerData(
-        '$:/plugins/oeyoews/neotw-hitokoto/sentences.json',
+      const _ = require('lodash.min.js');
+      const throttleOHitokotoHandleClick = _.throttle(
+        fetchOHitokoto.bind(this),
+        1000,
       );
-      const randomIndex = Math.floor(Math.random() * sentences.length);
-      const randomSentence =
-        sentences[randomIndex].hitokoto + ' ' + sentences[randomIndex].from;
-      this.isUpdating = true;
-      domNode.textContent = randomSentence;
-      this.isUpdating = false;
-    }
 
-    handleRefresh() {
-      if (this.isUpdating) {
-        return;
-      }
-      const ohitokotoSpan = this.domNodes[0];
-      this.updateText(ohitokotoSpan);
-      console.log(ohitokotoSpan.textContent);
+      ohitokotoNode.addEventListener('click', () => {
+        throttleOHitokotoHandleClick();
+      });
+      fetchOHitokoto();
     }
   }
 

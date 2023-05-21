@@ -33,7 +33,7 @@ neotw-type widget with hitokoto
       const text =
         sentences[randomIndex].hitokoto + ' ' + sentences[randomIndex].from;
 
-      // not worked
+      // TODO: not worked
       const loop = this.getAttribute('loop', 'false');
       const gradient = this.getAttribute('gradient', 'true');
       const spanNode = this.document.createElement('span');
@@ -42,8 +42,14 @@ neotw-type widget with hitokoto
       spanNode.id = id;
       spanNode.textContent = text;
       if (gradient === 'true') {
-        spanNode.className =
-          'text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-500 to-yellow-500';
+        spanNode.classList.add(
+          'text-transparent',
+          'bg-clip-text',
+          'bg-gradient-to-r',
+          'from-teal-400',
+          'via-pink-500',
+          'to-yellow-500',
+        );
       }
       parent.insertBefore(spanNode, nextSibling);
       this.domNodes.push(spanNode);
