@@ -1,6 +1,6 @@
 created: 20230503065404259
 creator: oeyoews
-modified: 20230503070843841
+modified: 20230522110728452
 modifier: oeyoews
 tags: Tailwindcss
 title: badge-cards
@@ -8,10 +8,10 @@ type: text/vnd.tiddlywiki
 
 \define bg(tag)
 <div>
-<div class="inline bg-yellow-200 m-0 p-1 capitalize">
+<div class="inline bg-yellow-200 m-0 p-1 capitalize rounded">
 $tag$
 </div>
-<div class="inline p-0 m-0 p-1 capitalize bg-yellow-400">
+<div class="inline p-0 m-0 p-1 capitalize bg-yellow-400 rounded">
 {{{ [tag<__tag__>count[]] }}}
 </div>
 </div>

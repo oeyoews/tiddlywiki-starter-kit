@@ -1,0 +1,38 @@
+created: 20230522105648570
+creator: oeyoews
+modified: 20230522105710024
+modifier: oeyoews
+tags: JavaScript
+title: change-this
+type: text/vnd.tiddlywiki
+
+`call`、`apply` 和 `bind` 是 JavaScript 中的三个方法，它们都是用于改变函数的 `this` 指向。
+
+`call` 和 `apply` 的作用一样，它们都可以在指定的作用域中调用函数，并将 `this` 指向第一个参数。区别在于，`call` 的参数是逐个传入的，而 `apply` 的参数是以数组的形式传入的。
+
+`bind` 的作用是创建一个新的函数，新函数的 `this` 指向第一个参数，后续的参数作为新函数的参数传入。与 `call` 和 `apply` 不同的是，`bind` 方法不会立即执行函数，而是返回一个新函数，需要手动调用才会执行。
+
+下面是这三个方法的用法示例：
+
+```javascript
+const obj = {
+  name: 'Alice',
+  age: 18,
+};
+
+function sayHi() {
+  console.log(`Hi, my name is ${this.name}, I'm ${this.age} years old.`);
+}
+
+// 使用 call 方法调用函数
+sayHi.call(obj);
+
+// 使用 apply 方法调用函数
+sayHi.apply(obj);
+
+// 使用 bind 方法创建新函数并调用
+const newSayHi = sayHi.bind(obj);
+newSayHi();
+```
+
+在实际开发中，这三个方法经常用于改变函数的 `this` 指向，例如在回调函数中使用，或者在函数式编程中使用柯里化等技术。
