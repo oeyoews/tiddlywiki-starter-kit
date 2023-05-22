@@ -1,10 +1,66 @@
 created: 20230519120239950
 creator: oeyoews
-modified: 20230519121348400
+modified: 20230522055429088
 modifier: oeyoews
 tags: JavaScript
 title: debounce
 type: text/vnd.tiddlywiki
+
+防抖和节流都是为了减少函数的执行次数，避免频繁触发函数而影响性能。不同之处在于，防抖是在一定时间内只执行一次函数，而节流是在一定时间内间隔执行函数。
+
+以下是防抖和节流的实现代码：
+
+防抖：
+
+```javascript
+function debounce(func, delay) {
+  let timer = null;
+  return function() {
+    const context = this;
+    const args = arguments;
+    clearTimeout(timer);
+    timer = setTimeout(function() {
+      func.apply(context, args);
+    }, delay);
+  };
+}
+```
+
+使用方式：
+
+```javascript
+const debounceFn = debounce(function() {
+  console.log('debounce');
+}, 1000);
+debounceFn();
+```
+
+节流：
+
+```javascript
+function throttle(func, delay) {
+  let timer = null;
+  return function() {
+    const context = this;
+    const args = arguments;
+    if (!timer) {
+      timer = setTimeout(function() {
+        func.apply(context, args);
+        timer = null;
+      }, delay);
+    }
+  };
+}
+```
+
+使用方式：
+
+```javascript
+const throttleFn = throttle(function() {
+  console.log('throttle');
+}, 1000);
+throttleFn();
+```
 
 ```js
 const debounce = (func, delay) => {
