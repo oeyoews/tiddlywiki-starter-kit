@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Neotw rolling
 </title><subtitle>A modern notebook based on TiddlyWiki5
-</subtitle><link href="https://neotw.netlify.app/atom.xml" rel="self"></link><link href="https://neotw.netlify.app/"></link><author><name>oeyoews</name></author><id>462a8bca-7c57-8f8a-27a3-d6cb4c75a727</id><updated>2023-05-22T13:54:29</updated><entry><title>/home/runner/work/neotw/neotw/tiddlers/hi-oeyoews.svg</title><link href="https://neotw.netlify.app/#%2Fhome%2Frunner%2Fwork%2Fneotw%2Fneotw%2Ftiddlers%2Fhi-oeyoews.svg"></link><link href="https://neotw.netlify.app/static/%252Fhome%252Frunner%252Fwork%252Fneotw%252Fneotw%252Ftiddlers%252Fhi-oeyoews.svg.html" rel="alternative" type="text/html"></link><id>3798d5df-8b06-4ca4-8046-0c87bf3b437d</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><img src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20viewBox%3D%220%200%20600%20300%22%20width%3D%22600%22%20height%3D%22300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3CforeignObject%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%0A%20%20%20%20%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%0A%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%40keyframes%20hi%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%200%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2010%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2020%25%20%7B%20transform%3A%20rotate(-8.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2030%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2040%25%20%7B%20transform%3A%20rotate(-4.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2050%25%20%7B%20transform%3A%20rotate(10.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2060%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40keyframes%20gradient%20%7B%0A%20%20%20%20%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%2050%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%20100%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%235452ee%3B%0A%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%23e73c7e%3B%0A%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%2323a6d5%3B%0A%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23ffff%3B%0A%0A%20%20%20%20%20%20%20%20%20%20background%3A%20linear-gradient(-45deg%2C%20var(--color-main)%2C%20var(--color-primary)%2C%20var(--color-secondary)%2C%20var(--color-tertiary))%3B%0A%20%20%20%20%20%20%20%20%20%20background-size%3A%20400%25%20400%25%3B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20gradient%2015s%20ease%20infinite%3B%0A%0A%20%20%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20%20%20height%3A%20300px%3B%0A%0A%20%20%20%20%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20color%3A%20white%3B%0A%0A%20%20%20%20%20%20%20%20%20%20font-family%3A%20-apple-system%2C%20BlinkMacSystemFont%2C%20%22Segoe%20UI%22%2C%20Roboto%2C%20Helvetica%2C%20Arial%2C%20sans-serif%2C%20%22Apple%20Color%20Emoji%22%2C%20%22Segoe%20UI%20Emoji%22%2C%20%22Segoe%20UI%20Symbol%22%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20hi%201.5s%20linear%20-0.5s%20infinite%3B%0A%20%20%20%20%20%20%20%20%20%20display%3A%20inline-block%3B%0A%20%20%20%20%20%20%20%20%20%20transform-origin%3A%2070%25%2070%25%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-color-scheme%3A%20light)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%23F15BB5%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%2324b0ef%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%234526f6%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23f6f645%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-reduced-motion)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%3C%2Fstyle%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%20%20%3Ch1%3EHi%20there%2C%20my%20name%20is%20oeyoews%20%3Cdiv%20class%3D%22hi%22%3E%F0%9F%91%8B%3C%2Fdiv%3E%3C%2Fh1%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2FforeignObject%3E%0A%3C%2Fsvg%3E"></img></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-02-28</title><link href="https://neotw.netlify.app/#2023-02-28"></link><link href="https://neotw.netlify.app/static/2023-02-28.html" rel="alternative" type="text/html"></link><id>90d001b4-d8df-ae9a-ba70-fe38459a71c5</id><updated>2023-02-28T00:12:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div>无论人生上了哪一层台阶 ，阶下有人在仰望你，阶上亦有人在俯视你；你抬头自卑，低头自得，唯有平视，才能看到真实的自已。 @杨绛语录</div></blockquote></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-16</title><link href="https://neotw.netlify.app/#2023-04-16"></link><link href="https://neotw.netlify.app/static/2023-04-16.html" rel="alternative" type="text/html"></link><id>b720eb79-6a7f-86f0-c39b-4c456f2916fb</id><updated>2023-04-16T09:56:15</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>初级赚钱方式靠信息差，
+</subtitle><link href="https://neotw.netlify.app/atom.xml" rel="self"></link><link href="https://neotw.netlify.app/"></link><author><name>oeyoews</name></author><id>462a8bca-7c57-8f8a-27a3-d6cb4c75a727</id><updated>2023-05-22T19:54:06</updated><entry><title>/home/runner/work/neotw/neotw/tiddlers/hi-oeyoews.svg</title><link href="https://neotw.netlify.app/#%2Fhome%2Frunner%2Fwork%2Fneotw%2Fneotw%2Ftiddlers%2Fhi-oeyoews.svg"></link><link href="https://neotw.netlify.app/static/%252Fhome%252Frunner%252Fwork%252Fneotw%252Fneotw%252Ftiddlers%252Fhi-oeyoews.svg.html" rel="alternative" type="text/html"></link><id>3798d5df-8b06-4ca4-8046-0c87bf3b437d</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><img src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20viewBox%3D%220%200%20600%20300%22%20width%3D%22600%22%20height%3D%22300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3CforeignObject%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%0A%20%20%20%20%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%0A%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%40keyframes%20hi%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%200%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2010%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2020%25%20%7B%20transform%3A%20rotate(-8.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2030%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2040%25%20%7B%20transform%3A%20rotate(-4.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2050%25%20%7B%20transform%3A%20rotate(10.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2060%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40keyframes%20gradient%20%7B%0A%20%20%20%20%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%2050%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%20100%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%235452ee%3B%0A%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%23e73c7e%3B%0A%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%2323a6d5%3B%0A%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23ffff%3B%0A%0A%20%20%20%20%20%20%20%20%20%20background%3A%20linear-gradient(-45deg%2C%20var(--color-main)%2C%20var(--color-primary)%2C%20var(--color-secondary)%2C%20var(--color-tertiary))%3B%0A%20%20%20%20%20%20%20%20%20%20background-size%3A%20400%25%20400%25%3B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20gradient%2015s%20ease%20infinite%3B%0A%0A%20%20%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20%20%20height%3A%20300px%3B%0A%0A%20%20%20%20%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20color%3A%20white%3B%0A%0A%20%20%20%20%20%20%20%20%20%20font-family%3A%20-apple-system%2C%20BlinkMacSystemFont%2C%20%22Segoe%20UI%22%2C%20Roboto%2C%20Helvetica%2C%20Arial%2C%20sans-serif%2C%20%22Apple%20Color%20Emoji%22%2C%20%22Segoe%20UI%20Emoji%22%2C%20%22Segoe%20UI%20Symbol%22%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20hi%201.5s%20linear%20-0.5s%20infinite%3B%0A%20%20%20%20%20%20%20%20%20%20display%3A%20inline-block%3B%0A%20%20%20%20%20%20%20%20%20%20transform-origin%3A%2070%25%2070%25%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-color-scheme%3A%20light)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%23F15BB5%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%2324b0ef%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%234526f6%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23f6f645%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-reduced-motion)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%3C%2Fstyle%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%20%20%3Ch1%3EHi%20there%2C%20my%20name%20is%20oeyoews%20%3Cdiv%20class%3D%22hi%22%3E%F0%9F%91%8B%3C%2Fdiv%3E%3C%2Fh1%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2FforeignObject%3E%0A%3C%2Fsvg%3E"></img></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-02-28</title><link href="https://neotw.netlify.app/#2023-02-28"></link><link href="https://neotw.netlify.app/static/2023-02-28.html" rel="alternative" type="text/html"></link><id>90d001b4-d8df-ae9a-ba70-fe38459a71c5</id><updated>2023-02-28T00:12:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div>无论人生上了哪一层台阶 ，阶下有人在仰望你，阶上亦有人在俯视你；你抬头自卑，低头自得，唯有平视，才能看到真实的自已。 @杨绛语录</div></blockquote></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-16</title><link href="https://neotw.netlify.app/#2023-04-16"></link><link href="https://neotw.netlify.app/static/2023-04-16.html" rel="alternative" type="text/html"></link><id>b720eb79-6a7f-86f0-c39b-4c456f2916fb</id><updated>2023-04-16T09:56:15</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>初级赚钱方式靠信息差，
 高级赚钱方式靠认知差，
 顶级赚钱方式靠资源差</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-20</title><link href="https://neotw.netlify.app/#2023-04-20"></link><link href="https://neotw.netlify.app/static/2023-04-20.html" rel="alternative" type="text/html"></link><id>66fbd211-302a-90f1-43e7-1f0ea4e0f181</id><updated>2023-04-20T20:53:27</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>多端同步的便捷和本地存储的安全，就是鱼与熊掌不可兼得。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-23</title><link href="https://neotw.netlify.app/#2023-04-23"></link><link href="https://neotw.netlify.app/static/2023-04-23.html" rel="alternative" type="text/html"></link><id>eb28f00e-453b-d5a1-967b-e984799ea2d8</id><updated>2023-04-24T00:16:36</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div>延迟满足</div><div>用书籍增加三倍人生体验时长</div><div>不以成喜，不以败悲</div></blockquote><p>“止观止心，无妄无碍”是禅宗的一种修行方法，也是佛教徒在生活中追求内心平静和解脱的方式。</p><p>其中，“止”指的是停止杂念、烦恼等不必要的思考和行为，如止诸恶、止杀戮、止谤言等。这样可以使内心得到安定和净化，有利于后续的修行。</p><p>“观”则指观察事物的真相和本质，排除偏见和执着。通过观想自己和世界的真实性质，认识自己的本性和命运，从而达到身心合一、彻底了解自己和世界的目的。</p><p>“无妄”则表示去除「妄念」、「妄想」和「妄语」等，即清空心灵中荒谬无稽的幻想和自我，让自己的内心变得更加安宁、平静。</p><p>“无碍”则是指避免心态上的障碍和物质层面的附着，为达到自由和解脱而努力。</p><p>总之，这个修行方法要求个人通过内省、检视和拯救自己，消除恶念与烦恼，培养慈悲之心，领悟事物的真实本质，从而找到内心的平静和解放。</p><blockquote><div>客观事物发展规律不以人的主观意志，然而掌握事物的发展规律，却可以从必然王国到自由王国</div></blockquote><p>这句话的意思是，客观事物的发展规律是客观存在的，不受人的主观意志的影响。但是，如果我们能够掌握这些规律并对它们进行改变和运用，我们就可以从必然王国（受客观规律支配的领域）进入自由王国（自由创造或创新的领域）。</p><p>在许多领域中，我们都可以看到这一点。例如，在科学技术领域，我们通过研究和掌握客观规律，开发出了许多有用的工具和技术，使我们的生产和生活更加便利和高效。同样，在社会和经济领域中，通过深入了解客观规律，我们可以制定出更好的政策和管理方法，以促进社会和经济的稳定和发展。</p><p>尽管客观规律的存在使我们受到限制，但如果我们学会理解和运用这些规律，我们就可以发挥自己的主动性和创造性，实现更高的自由度，并不断推动事物的进步和发展。因此，掌握客观规律是实现自由和创造的关键之一。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-25</title><link href="https://neotw.netlify.app/#2023-04-25"></link><link href="https://neotw.netlify.app/static/2023-04-25.html" rel="alternative" type="text/html"></link><id>07baca31-a4c1-d735-df41-8cf857fe4d13</id><updated>2023-04-25T23:01:46</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://space.bilibili.com/43109229/channel/collectiondetail?sid=1234748" rel="noopener noreferrer" target="_blank">https://space.bilibili.com/43109229/channel/collectiondetail?sid=1234748</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-05-06</title><link href="https://neotw.netlify.app/#2023-05-06"></link><link href="https://neotw.netlify.app/static/2023-05-06.html" rel="alternative" type="text/html"></link><id>ac8c3ae3-20fd-c971-eb36-7e3608c51b59</id><updated>2023-05-06T22:55:30</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>拥有能让自己快乐的能力,有一件让自己兴奋一点的事情</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-05-15</title><link href="https://neotw.netlify.app/#2023-05-15"></link><link href="https://neotw.netlify.app/static/2023-05-15.html" rel="alternative" type="text/html"></link><id>5ae2dacd-4932-0fb6-3754-327b31a02c7f</id><updated>2023-05-15T09:19:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>社交的本质是价值交换</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-05-17</title><link href="https://neotw.netlify.app/#2023-05-17"></link><link href="https://neotw.netlify.app/static/2023-05-17.html" rel="alternative" type="text/html"></link><id>5cfc6d08-80d6-3230-a52e-29ee0b651757</id><updated>2023-05-17T10:46:31</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <ul>
@@ -218,44 +218,44 @@ xhr.<span class="hljs-title function_">send</span>();
 
 axios.<span class="hljs-title function_">get</span>(<span class="hljs-string">&#x27;https://api.github.com/users/octocat&#x27;</span>)
   .<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">response</span> =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(response.<span class="hljs-property">data</span>))
-  .<span class="hljs-title function_">catch</span>(<span class="hljs-function"><span class="hljs-params">error</span> =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(error));</code></pre><p>上面的代码通过axios发送了一个GET请求，并在请求成功后打印出响应数据。注意，在axios中，响应数据被封装在response对象的data属性中，我们需要通过response.data来获取响应数据。</p><p>由于axios具有更加丰富的功能和更好的可扩展性，因此在实际开发中，我们通常会优先选择axios来进行网络请求。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>axios-test</title><link href="https://neotw.netlify.app/#axios-test"></link><link href="https://neotw.netlify.app/static/axios-test.html" rel="alternative" type="text/html"></link><id>3ed03f53-013e-0da1-f72d-4472aa609b1f</id><updated>2023-05-03T15:34:28</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://jsonplaceholder.typicode.com/guide/" rel="noopener noreferrer" target="_blank">https://jsonplaceholder.typicode.com/guide/</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>badge-cards</title><link href="https://neotw.netlify.app/#badge-cards"></link><link href="https://neotw.netlify.app/static/badge-cards.html" rel="alternative" type="text/html"></link><id>c4f3fb00-1adb-0675-5a55-b3d4350b1a32</id><updated>2023-05-03T15:08:43</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="flex gap-4 justify-center">
+  .<span class="hljs-title function_">catch</span>(<span class="hljs-function"><span class="hljs-params">error</span> =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(error));</code></pre><p>上面的代码通过axios发送了一个GET请求，并在请求成功后打印出响应数据。注意，在axios中，响应数据被封装在response对象的data属性中，我们需要通过response.data来获取响应数据。</p><p>由于axios具有更加丰富的功能和更好的可扩展性，因此在实际开发中，我们通常会优先选择axios来进行网络请求。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>axios-test</title><link href="https://neotw.netlify.app/#axios-test"></link><link href="https://neotw.netlify.app/static/axios-test.html" rel="alternative" type="text/html"></link><id>3ed03f53-013e-0da1-f72d-4472aa609b1f</id><updated>2023-05-03T15:34:28</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://jsonplaceholder.typicode.com/guide/" rel="noopener noreferrer" target="_blank">https://jsonplaceholder.typicode.com/guide/</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>badge-cards</title><link href="https://neotw.netlify.app/#badge-cards"></link><link href="https://neotw.netlify.app/static/badge-cards.html" rel="alternative" type="text/html"></link><id>c4f3fb00-1adb-0675-5a55-b3d4350b1a32</id><updated>2023-05-22T19:07:28</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="flex gap-4 justify-center">
 <div>
-<div class="inline bg-yellow-200 m-0 p-1 capitalize">
+<div class="inline bg-yellow-200 m-0 p-1 capitalize rounded">
 React
 </div>
-<div class="inline p-0 m-0 p-1 capitalize bg-yellow-400">
-<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#56">56</a></span>
+<div class="inline p-0 m-0 p-1 capitalize bg-yellow-400 rounded">
+<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#57">57</a></span>
 </div>
 </div>
 <div>
-<div class="inline bg-yellow-200 m-0 p-1 capitalize">
+<div class="inline bg-yellow-200 m-0 p-1 capitalize rounded">
 JavaScript
 </div>
-<div class="inline p-0 m-0 p-1 capitalize bg-yellow-400">
-<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#29">29</a></span>
+<div class="inline p-0 m-0 p-1 capitalize bg-yellow-400 rounded">
+<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#32">32</a></span>
 </div>
 </div>
 <div>
-<div class="inline bg-yellow-200 m-0 p-1 capitalize">
+<div class="inline bg-yellow-200 m-0 p-1 capitalize rounded">
 CSS
 </div>
-<div class="inline p-0 m-0 p-1 capitalize bg-yellow-400">
+<div class="inline p-0 m-0 p-1 capitalize bg-yellow-400 rounded">
 <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#6">6</a></span>
 </div>
 </div>
 <div>
-<div class="inline bg-yellow-200 m-0 p-1 capitalize">
+<div class="inline bg-yellow-200 m-0 p-1 capitalize rounded">
 Journal
 </div>
-<div class="inline p-0 m-0 p-1 capitalize bg-yellow-400">
+<div class="inline p-0 m-0 p-1 capitalize bg-yellow-400 rounded">
 <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#9">9</a></span>
 </div>
 </div>
 <div>
-<div class="inline bg-yellow-200 m-0 p-1 capitalize">
+<div class="inline bg-yellow-200 m-0 p-1 capitalize rounded">
 Tailwindcss
 </div>
-<div class="inline p-0 m-0 p-1 capitalize bg-yellow-400">
+<div class="inline p-0 m-0 p-1 capitalize bg-yellow-400 rounded">
 <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#17">17</a></span>
 </div>
 </div>
@@ -348,7 +348,7 @@ Tailwindcss
 <div class="relative">
         <div class="absolute top-0 right-0">
             <div class="inline-block text-slate-400 rounded-full">
-                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#56">56</a></span>
+                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#57">57</a></span>
             </div>
         </div>
     </div>
@@ -372,7 +372,7 @@ Tailwindcss
 <div class="relative">
         <div class="absolute top-0 right-0">
             <div class="inline-block text-slate-400 rounded-full">
-                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#29">29</a></span>
+                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#32">32</a></span>
             </div>
         </div>
     </div>
@@ -428,7 +428,24 @@ Tailwindcss
 <img alt="CSS" class="object-cover object-center rounded-lg tc-image-loading" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABHNCSVQICAgIfAhkiAAAIABJREFUeF7t3Qm8XVV96PH/PnfIvbmZ7808QwIBQxIQZJIiiFitorZ9HZ6oYKl2cipQKdiKpTiUUp+1g1YUrPX5Xq1DxamIwmsFoYwJyBgImQghI5lukjvst/73EglJ7j77nLX32muv/VufD5/Wu/dea/2/a+ec/9nDWiIUBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQT8FYj87Ro9SxK49954fEtH3zFRXDs2lniRxNExZjBnD0rUFUncZY6daP7T/9ueVA/bEEAgP4H7VgzeccmF7a/OrwVqRqB5ARKA5u2cHvnzn8dj9g30n2YaPS+S2nki8Ynm/6857QSNIYBAQwI/+MmgTJkc3XXJ29tOb+hAdkbAgQAJgAPkZpt44IF4grQM/ob5hX+hGagzTD0tzdbFcQgg4F5AEwAtU3qEKwHu+WmxjgAJQB0g15vjOK49+PDAGySWd5rBuSAW6XDdB9pDAIFsBA4kAFobSUA2ptSSnQAJQHaWVjXpF/+KFQO/MhBFV5t7+CdZVcbBCCDghcDBCYB2iNsBXgwLnXhRgASg4FPhttvi1gmTBi6SSK4wXTm64O7QPAIIZChwaAKgVXMlIENgqrIS4CEyKz67g+9/aP/JE7oHfma+/L9gauLL346ToxEohcDzm+XMG77a97NSdJZOBi1AAlDA8Jon+ic9uLzvM+YVvrtN8ycX0AWaRACBAgWe3xSfRhJQ4ADQ9JAACYDjE+GBFf1v3T8w8GQcRe/H3zE+zSHgkcBQEvAv+3/qUZfoSsUESAAcDbje679/Rd8nTXPfNP9NctQszSCAgMcC3A7weHAq0DUSAAeDvHx5PN/c678zkujDpjkevHRgThMIlEWAKwFlGanw+kkCkPOY6oN+g9GA3us/JeemqB4BBEoqwJWAkg5cybtNApDjAC5f3neuedDvJ6aJyTk2Q9UIIBCAAA8GBjCIJQuBBCCnAXvwof5fHYyi75vqx+bUBNUigEBgAiQBgQ2o5+GQAOQwQPcv7//tOJavm6pH5VA9VSKAQMACPBMQ8OB6FhoJQMYDcv/yvtdGkdxoqsU2Y1uqQ6AqAjwTUJWRLjZOvqQy9H/g4f2nRFH0bVMlv/wzdKUqBKoowO2AKo6625hJADLy1lf9JK7pPf8xGVVJNQggUHEBbgdU/ATIOXwSgAyA7703bjOv+n3VLOHbk0F1VIEAAgj8QoDbAZwMeQmQAGQg2zKq/zpTzekZVEUVCCCAwGEC3A44jIQ/ZCBAAmCJaF73e5PEQ/P6UxBAAIHcBEgCcqOtbMUkABZDf//98WTzut+XTRVM72vhyKEIIJBOgGcC0jmxVzoBEoB0TkfcK2od+JTZwMI+R9ThjwggkIcAzwTkoVrNOkkAmhz3Bx7uO9McelGTh3MYAggg0LQAtwOapuPAgwRIAJo4HXRpXxms/b05lEv/TfhxCAII2AuQBNgbVr0GEoAmzgCztO/FIvHSJg7lEAQQQCAzAZ4JyIyykhWRADQ47P/6r3GLRPHlDR7G7ggggEAuAjwTkAtrJSolAWhwmBcuGvgt89rfwgYPY3cEEEAgNwFuB+RGG3TFJAANDG8cx+aef3RFA4ewKwIIIOBEgCTACXNQjZAANDCcDz488EZz739xA4ewKwIIIOBMgGcCnFEH0RAJQCPDGMu7GtmdfRFAAAHXAjwT4Fq8vO2RAKQcO7Pgz3iz65tS7s5uCCCAQGEC3A4ojL5UDZMApByu1vbB3zK7dqbcnd0QQACBQgVIAgrlL0XjJAAph2lQ4ren3JXdEEAAAS8EeCbAi2HwthMkACmGRi//m8f/z0ixK7sggAACXgnwTIBXw+FVZ0gAUgxHrW3gbLNbS4pd2QUBBBDwToDbAd4NiRcdIgFIMQxRFJ+TYjd2QQABBLwVIAnwdmgK6xgJQCr62rmpdmMnBBBAwGMBkgCPB6eArpEA1EEffv0vPqHObmxGAAEESiHAg4GlGCYnnSQBqMPc2tp3rNmFZX/rOLEZAQTKI8CDgeUZqzx7SgJQR3ewpaYJAAUBBBAISoDbAUENZ1PBkADUYYskJgGoY8RmBBAopwBJQDnHLatekwDUk4wjEoB6RmxHAIHSCpAElHborDtOAlCfcGb9XdgDAQQQKK8ADwaWd+xsek4CUFcvGld3F3ZAAAEESi7Ag4ElH8Amuk8CUA8tjsfU24XtCCCAQAgC3A4IYRTTx0ACUM8qkrH1dmE7AgggEIoASUAoI1k/DhKA+kZcAahvxB4IIBCQAElAQIOZEAoJQALOi5va6+/CHggggMDhArUSf8KSBBw+nqH9pcSnZ2hDQTwIIBCaQGvJ1xAlCQjtjHx5PCQAYY8v0SGAQIECLS3ln0WcJKDAEyjnpkkAcgamegQQqK5AS0scRPAkAUEM42FBkAAcRsIfEEAAgWwEWluzqceHWjQJuPFr+3/qQ1/oQzYCJADZOFILAgggcJhAx6jy3wI4OKgNG+XMG77a97PDAuUPpRQgASjlsNFpBBAog0DX6DL0srE+cjugMS+f9yYB8Hl06BsCCJRaYEyACYAOCElAqU/LX3SeBCCMcSQKBBDwUGD06LBuARxMTBLg4QnXYJdIABoEY3cEEEAgrUCoVwAOxM+DgWnPBD/3IwHwc1zoFQIIBCCgbwGMDXwycR4MLO+JSgJQ3rGj5wggUAKB7onh3gY4wM/tgBKciEfoIgnAEVD4EwIIIJCVQPfErGryux6SAL/H50i9IwE4kgp/QwABBDISmDQh/CsAB6hIAjI6aRxVQwLgCJpmEECgmgL6HMDECdWJnQcDyzPWJADlGSt6igACJRWYOa06VwF0iHgwsBwnKglAOcaJXiKAQIkFpk+JpFaxT1tuB/h/wlbslPR/QOghAgiEJ6C3Aab2VOsqgI4iSYDf5zIJgN/jQ+8QQCAQgZnTq5cAHEgCWEXQz5OYBMDPcaFXCCAQmMDkbjMpUFdgQaUMh2cCUkI53o0EwDE4zSGAQHUFjppbzasAOuLcDvDvvCcB8G9M6BECCAQqMMO8DdDVSRIQ6PCWLiwSgNINGR1GAIEyCxw1t8y9t+878wTYG2ZVAwlAVpLUgwACCKQQmDUjknFjU+wY8C48E+DH4JIA+DEO9AIBBCok8IpjaxJV907A0EjzTEDxJzwJQPFjQA8QQKBiAhPGiVT1tcCDh5okoNgTnwSgWH9aRwCBigosOjqStraKBn9Q2DwTUNw5QAJQnD0tI4BAhQX0y3/JcXwE6ynAMwHF/EPg7CvGnVYRQAABmdIjMn92xR8GePE84HaA+38QJADuzWkRAQQQ+IXAsQsimTAeEBUgCXB7HpAAuPWmNQQQQOBlAvo2wLJXRNLO8wBDLjwT4O4fCAmAO2taQgABBI4o0NkRyclLa6KrBlJ4JsDVOUAC4EqadhBAAIEEgfHm1cCTTqhJjU/lISVuByScLBlt4lTLCJJqEEAAAVuB7onmzYDjo8pPEnTAkdsBtmdU8vEkAMk+bEUAAQScCkyfEg09E8CVgGF2XhHM7/QjAcjPlpoRQACBpgSmmSSAZwJeouN2QFOnUd2DSADqErEDAggg4F5AbwecemJN2tvdt+1jiyQB2Y8KCUD2ptSIAAIIZCKgqwaecXIkE5knYMiTJCCT0+oXlZAAZOtJbQgggECmAvqK4Kkn1WTBfB4OVFiSgOxOLxKA7CypCQEEEMhFQCcLWmgSgJNOYAEhBebtgGxOMxKAbBypBQEEEMhdYEpPJGefXpO5Zv0ATQqqXHg7wH70SQDsDakBAQQQcCbQZmYLPH5hZJ4NqIlOHlTlwu0Au9EnAbDz42gEEECgEIHhBwRrsnhRJF2d1b0cwO2A5k+/6p41Kc0eWNEfp9yV3RBAAIFCBGLzKfX8llieWhXLCzsL6ULhjU6ZHN11ydvbTi+8IyXqAAlAncEiAagDxGYEEPBKYNMWkfXPxbJxUyyDg151LffOTJ8qd1z82+2vzr2hQBogAagzkCQAdYDYjAACXgr094s893ws6zfGsm27iF4lqEIhCUg/yiQAdaxIAOoAsRkBBLwXGBgQ2f6CyOZtsWzeGsvOXWEnBNwOSHdKkgDUcSIBqAPEZgQQKJ2AXh3Yvcf81xvLrt0ie8z/v3dfLP0mURgYiKTfPPqk/3+ZbyFwJaD+aWleKKEggAACCFRJoNV88usrhOPHHfwbcKT/v7QyZ5a25446zmuAjqBpBgEEEEAAAZ8ESAB8Gg36ggACCCCAgCMBEgBH0DSDAAIIIICATwIkAD6NBn1BAAEEEEDAkQAJgCNomkEAAQQQQMAnARIAn0aDviCAAAIIIOBIgATAETTNIIAAAggg4JMACYBPo0FfEEAAAQQQcCRAAuAImmYQQAABBBDwSYAEwKfRoC8IIIAAAgg4EiABcARNMwgggAACCPgkQALg02jQFwQQQAABBBwJkAA4gqYZBBBAAAEEfBIgAfBpNOgLAggggAACjgRIABxB0wwCCCCAAAI+CZAA+DQa9AUBBBBAAAFHAiQAjqBpBgEEEEAAAZ8ESAB8Gg36ggACCCCAgCMBEgBH0DSDAAIIIICATwIkAD6NBn1BAAEEEEDAkQAJgCNomkEAAQQQQMAnARIAn0aDviCAAAIIIOBIgATAETTNIIAAAggg4JNAq0+doS8INCOwb7/I1m2xbN8hsnt3LHv2RrJ/fywDgyJRJNLZIdIzMZJZMyMZ29VMCxxTFYGdu0TWbohly9ZYeveKxLFIi/mZ1N4emfMoljFdkUwYJ9Jtzqf29qqoEGeoAiQAoY5s4HHt7xPZsDGWZ58b/uJ/ebjmU/ugsmu3yC6TGDyzLpa5syJZtCCSGte+Aj9DGgtv0CSLjz4Zy9pn46Ev/YOLbuvrj2X3HpHNJjEYLvFQIjBzeiTTp0bSxidpY+Ds7YUAp60Xw0An0grsM7/sV60WWWM+qAcG0h710n6rTRKgycDJS2skAY3zBXmEfsHfu3xQtmxrLDy94rR9RyyPr4xltrm6NH92JKNGNVYHeyNQpAAJQJH6tJ1aQH+VrVoby8pVzX3xH9yQftA/Zj60jz/G3B+gVF7gEfPLv9Ev/4PR+k0iumqNuXqwPpYF8yOZZxIBvfVEQcB3AS6E+j5C9E9298Zy5z2DQ7+0mvnVfyTC4SsBR9rC36okoPf815mrSVkUTQQ0sbzz3kHZY85ZCgK+C5AA+D5CFe/f85v1yz+WHeaDOuuS1Qd/1v2iPncCeg4ces/ftvUdO0XuMOfsRnPuUhDwWYAEwOfRqXjf9MP5vhWx9PfnA/HSA1351E+t/gtsbvC+f9qI9Jx94KE4s6sLadtlPwQaESABaESLfZ0J6Jf/Q4/l+wuqd5+zcGjIU4G9+/I7x/TKgp7DXGnydPDplpAAcBJ4J6CX/fP+8vcuaDoUrMDDj3M7INjBLXlgJAAlH8DQuq8P/C1/JL9fZQd7dfLKVminT8PxdIzK/3F9vRKwwpzTPBjY8PBwQM4CJAA5A1N9egH9oHzQ3DfN657/oT3pmZT/h/+hbfK//RLomeimP0PPBDyc/QOHbnpPK6EKkACEOrIljEvf88/jaf+RKGbNGGkLf6+KgE4P7aro2wHPmHOcgoAvAiQAvoxExfuhM/w9ZSb5cVXmmsladF53SrUFdG0InR7aVVn5TGzWqXDVGu0gkCxAApDsw1ZHAjq9r06k4qJ0TxI5zqwHQEFABXRtiG6HtwKeNrMGUhDwQYAEwIdRqHgfdGEfndvfRdFf/qeYdQCYqtWFdjna0IWhdG0IV1cCdMrgvpzmtiiHOL30RYC1AHwZiQr3Q1f1y2qK30MZW1teXA642ywHPF247H8oEP97SECTAF0bYo55JkDf29dJonQ54DyuSmmdes5rWxQEihQgAShSn7aHBHRJ36zK2DEis2ZE0mPWa+/sMGu5mwSAgkBagTHmmYBFC/WLefjLWRNTTQQ2bzMT+phf7jvN0tJZlPXmnCcByEKSOmwESABs9DjWWmCfeSBKl1W1LfoL7jjzwT3bfPlzed9Wk+MPCGgCqUmBPjA6zzwsqItI6YI/uoSwTdn+goje+mpvs6mFYxGwE+AZADs/jrYU2Gp+WdmWA/dw9RcVX/62mhyfJKDPCejzAnrO2ZYszn3bPnB8tQUyOI2rDUj0dgJZ/Po/3vzyd/UUt120HB2CgJ5r+uaAbcni3LftA8dXW4AEoNrjX3j0u3bbXQE4cM+/8EDoQKUE9EqA7TwSu/fYnfuVAifYXARIAHJhpdK0Ant67X5J6QN/XPZPq81+WQroWyU2Zfceu3Pfpm2ORUAFSAA4DwoV6Ou3+xXkai73QpFo3EuBHvNqqU3p67M7923a5lgEVIAEgPOgUAHb9/87Ouw+hAsNnsZLLWC7mmQecwyUGpTOOxcgAXBOToMHC9i+TqUT/VAQKEKg1fIlattzv4iYaTMsARKAsMaTaBBAAAEEEEglQAKQiomdEEAAAQQQCEuABCCs8SQaBBBAAAEEUgmQAKRiYicEEEAAAQTCEiABCGs8iQYBBBBAAIFUAiQAqZjYCQEEEEAAgbAESADCGk+iQQABBBBAIJUACUAqJnZCAAEEEEAgLAESgLDGk2gQQAABBBBIJUACkIqJnRBAAAEEEAhLgAQgrPEkGgQQQAABBFIJkACkYmInBBBAAAEEwhIgAQhrPIkGAQQQQACBVAIkAKmY2AkBBBBAAIGwBEgAwhpPokEAAQQQQCCVAAlAKiZ2QgABBBBAICwBEoCwxpNoEEAAAQQQSCVAApCKiZ0QQAABBBAIS4AEIKzxJBoEEEAAAQRSCZAApGJiJwQQQAABBMISIAEIazyJBgEEEEAAgVQCJACpmNgJAQQQQACBsARIAMIaT6JBAAEEEEAglUBrqr3YCQEEghDYuUtk7YZYtmyNpXfvcEidHSI9EyOZNTOSsV1BhEkQCCCQQoAEIAUSuyBQdoHBQZFHn4xl7bOxxPHLo9m1W2TX7lieWRfL3FmRLFoQSY1rg2UfcvqPQF0B/pnXJWIHBMotoF/+9y4flDXrD//yPzSy1SYJ0H31GAoCCIQtQAIQ9vgSHQLyiPnlv2Vbegjd97GVh1wmSH84eyKAQEkESABKMlB0E4FmBPSe/zpz2b/RolcC9NYABQEEwhUgAQh3bIkMgaEH/g6955+WpZnEIW3d7IcAAsULkAAUPwb0AIHcBLZsbb7qzeZNAQoCCIQrQAIQ7tgSGQKyd2/zX+K9+wBEAIGQBUgAQh5dz2Pr77frIK+qpfCLUuzDLk0L2J6Dtv8Gmu44ByJgBEgAOA0KEzgwEU2zHWhtafbI6hzXMar5DKBzVHWcmo20xfIc3Luv+Ss0zfaZ4xA4IEACwLlQmIDtPea2tua/3AoL2nHDPRObb7CnG996erbn4OYGXs+s1xe2I9CoAAlAo2Lsn5nAug12VXWN5tdTPUGd3rfZMmt6s0dW57jRHXbn4DozORMFgaIESACKkq94u6vX6nvmdh9+XaOb/3KrCr/O7a/T+zZa5s6OZExX48c12k7Z97c12mnmWtA5FygIFCFAAlCEesXb1FfTHs1gprkJ4yoOmTJ8ndu/u4FbAd2TRI4zx1DqC2RxDuqsi43M1Fi/V+yBQDoBEoB0TuyVkYAuOHOPmWu+2clpDnQjMt9P3WYFO0p9AX1S/eSltVRXAvSX/ylmX/Wl1BfI4hw8sFYDVwLqe7NHtgKsBpitJ7UdIqCvOenT/vrAn97zt73sf6B6/eXV1gZ3WgFNAo4/JpI55pkAneFPx+NlywGbB/70nr/tJe20/Qllv/Z2ET0Xt++wi0iTgEeeiIcWbJo1PRJ9AFPfwmjlE9oOlqMTBTi9EnnY2KjAxudFnlw9KLvNvc08V5SbOY2fqI2Oje4/xjwTsGih2uHXjN+RjplpvrC378jmPr6uvzC0ENNBt8g0eRszWmTBUTWZ2nOkHvA3BJoTIAFozo2jDhHQX/p33Tco+lBT3kV/FU2byhdY3s7Un05g2pRIHjdf2P0D6fZvdC9NpHeYRZ3uXzEoY8eInHZSjSsDjSKy/xEFeAbgiCz8sREB/fK//U43X/7arzkzImkjdW1kiNg3R4F2cytqtsXrlo10TVd3vP1ng8IMgo2ose9IAiQAI8nw99QCd5pf/n2W0/qmbUx//c+bw6//tF7s50Zgvnl40tXMlH195mrb/eayAAUBSwESAEvAqh+u9/z1fr+rsnB+JKPMg1cUBHwSGGUe2Ftgzk1XRa8EPL/JVWu0E6oACUCoI+sorpXPuPslMt48bd3MpDaOKGim4gLzzFWAcWPdIbj8t+cuKlpyKUAC4FI7wLZ27XETlN7zX/aKiPfT3XDTShMCOnfCiYvNrQBHz6e4eOC2CQYOKZEACUCJBsvHrg5m8/ZTYmj6wbrk+JqM7nR3iTWxQ2xEYAQBPUeXHO8mUXXxb2+EMPlzIAIkAIEMZOhhxOIg0wgdkficCGiaajvTpZOO0kjlBUgAKn8K2AHUHPwo1w/TFY/EsqeXJMButDg6b4Hd5hxdbs5VF8XFvz0XcdBGcQIkAMXZB9GyzlDmouh7zw88bK4DuPlsdRESbQQmoOfmgw+ZCYEcvRKrKz1SELARIAGw0ePYoelJXZUdO0WeMcsIUxDwUWCVOTd1xj5XxeVrh65ioh23Au4+vd3GRWuOBHRucp2e1FVZ+Uws+/e7ao12EEgnsG9/LE+tcpecjjWvG07pcXD/LV347FVSARKAkg6cT93WucldTc2rl1efXuPug9YnZ/rir8Cq1ZLbWgCHRq2rYJ7xSj66D3XhfzcuwFnUuBlHHCKg7z2/5oyasysBa82Sqa6mHmawEagnsN9MzbvGLLHsougv/3PPrImuEEhBwFbA0ZQVtt3keN8FNAl49atqQ9OT6gxlOklJXssB66prGzbGQ2vbUxAoWkDPxYGcVgLU2PTLXm+zLZgXcdm/6MEOrH0SgMAGtOhwpkw29yYnv/TzRD8Ye/eKbN4Wyzrzyz2r2cvWP0cC0MxY6xzyazfEsmVrPDQuWjo7RHomRjLLJFQ8Wd646rPmXMyq6Bf9LLPapY6HjktLS1Y1Uw8ChwuQABxuwl8yFNAPsDHmdaUxXZHMmxXJ6nWxPGbWTre9OrD9BRG99KpLsVLqC6j3o0/GstZcqj70Vcpd5mrNrt2xPGPGRtdaWLQg4hJzfdKhPfaZB1K370i5c8Ju+iv/uIWRzDZf/jrzJQUBFwLcSXKhTBu/ENAvmJOXZnMPc6u5qkCpL6Bf/vcuH5Q15grMoV/+hx6tCZrua5ugHVpvqP87i3NQv/z134Te0uLLP9Qzxc+4SAD8HJege9U9UYZ+ZdqWLH552fahDMc/Yn75b9mWvqe6r16lodQXyOIcPN788td/ExQEXAuQALgWp70hAb0SoLcFbMruPXxJ1fPTe/7rmnhCXa8E6K0BSrKA3jqxKQfu+dvUwbEINCtAAtCsHMdZC8yablfF7j12CYRd6+U4Wh/4q3fZf6RImkkcRqor1L/v6bU7B/WBPy77h3p2+B8XCYD/YxRsD3u67T48+/rsfn0FC3tQYFu2Nh/lZvOmACVZoK/fzqiHS//JwGzNVYAEIFdeKk8S6ByVtLX+Np0PgJIssHdv819QvfuS62arWL//39FhlwQzBgjYCJAA2OhxrJWATh5kU3hSPYUe3y8pkJrfxfYcbOU9/+bxOdJagATAmpAKEPBXoGNU8xmA7RUaf1XoGQIIqAAJAOcBAgEL2Nxjtn1GI2BWQkMgCAESgCCGkSAQOLKATu/bbLF9S6PZdjkOAQTcCJAAuHGmFQQKEdC5/XXOhUbL3Nn28zQ02ib7I4CAWwESALfetIaAcwGddbGRmea6J5l56TOYqdF5oDSIAAINCZAANMTFzgiUT+DAXPNprgToL/9TzLz0TE5TvnGmxwg0KmD5IlajzbE/AggUIaBJwPHHREMLzugMfzrJz8uWAzaTMuk9f9vpmYuIjTYRQKA5ARKA5tw4CoFSCujSzIvM4jMijT8XUMqA6TQCCIwowC2AEWnYgAACCCCAQLgCJADhji2RIYAAAgggMKIACcCINGxAAAEEEEAgXAESgHDHlsgQQAABBBAYUYAEYEQaNiCAAAIIIBCuAAlAuGNLZAgggAACCIwoQAIwIg0bEEAAAQQQCFeABCDcsSUyBBBAAAEERhQgARiRhg0IIIAAAgiEK0ACEO7YEhkCCCCAAAIjCpAAjEjDBgQQQAABBMIVIAEId2yJDAEEEEAAgREFSABGpGEDAggggAAC4QqQAIQ7tkSGAAIIIIDAiAIkACPSsAEBBBBAAIFwBUgAwh1bIkMAAQQQQGBEARKAEWnYgAACCCCAQLgCJADhji2RIYAAAgggMKIACcCINGxAAAEEEEAgXAESgHDHlsgQQAABBBAYUYAEYEQaNiCAAAIIIBCuAAlAuGNLZAgggAACCIwoQAIwIg0bEEAAAQQQCFeABCDcsS1FZDXLM7C/vxRh0skABWzPPdtzP0BSQnIsYPnx67i3NBecQEuLXUh798V2FXA0Ak0K9O5t8sAXD2u1PPftWudoBERIADgLChVoa4us2t+8zepwDkagaYHNW+2ST9tzv+mOcyACLwqQAHAqFCowusPuQ3TdervjCw2exkstsG6DXfe7RnPu2glytK1pR+dPAAAgAElEQVQACYCtIMdbCYzpsrsCsHO3yOp1fJBaDQIHNyywem0su3bbnXddo+3O/YY7zQEIHCJAAsApUajAhHH2zT+2MpYt3Aqwh6SGVAJbtoo8as4525LFuW/bB46vtgAJQLXHv/Douyfa/woaHBS5d/kgVwIKH83wO/CMudp0jznXYsvv/8ic9lmc++GLE2GeAq15Vk7dCNQTaG8X0V9C23fU2zN5uyYBjzwRyxrzTMCs6ZH0dEfSOUqklTM8GY6tiQL6qp8+7a8P/Ok9f9vL/gca03O+rS2xaTYikLsAH4+5E9NAPYGZ5gt7+w7Ln1QvNrLLPBOgtwTkxUu0+pphZ4dIj7nSMGtmJGO76vWG7VUW2LlLZO0Gc0vJfOHrF//AQD4aM6fZX/nKp2fUWiUBEoAqjbansU6bEsnj5gu7P4cPW/0A16RAf7np5du5syJZtCASJmHx9GQoqFt6BenRJ2NZ+2xsfXm/Xgh6VWraVBKAek5sz1+AZwDyN6aFOgLt5lLobPPr3EXRNwb0eQH9wKcgoAIHniHR20e29/bTiM6ZEUkbP73SULFPzgIkADkDU306gfmzI3E1M5q+MTB0m4CCgBF4xPzyd/UWif76nzfHTbLL4CJQT4AEoJ4Q250IjDIP7C2Y7+6DUa8E6K0BSrUF9J7/OnPZ31VZaM7xUebBVwoCPgiQAPgwCvRhSGCeuQowbqw7DJcf/O6ioqVGBPQccHHZX/s03jz5r8+gUBDwRYAEwJeRoB+i70afuNjcCnB0f9R2LneGrPwCrtaS0Hv+y14RDZ3jFAR8ESAB8GUk6MeQwOjOSJYc7+aDsncf6FUXcLGapH7pLzm+NnRuUxDwSYAEwKfRoC9DAlN7Ill8LB+WnA5hCCxeFMmUnjBiIYqwBEgAwhrPYKKZZV6VOsF8cOZ5yVRnCqRUW6BjVH6Jpp67JxxnJqAyE11REPBRgATAx1GhT0MCmgSceEJ+zwT0TOKDueqnWs/EfAT0OZaTTqjx5Z8PL7VmJEACkBEk1eQjoLcDzjwln7cDZs3Ip8/UWh4BnR4666JP++s5y2X/rGWpL2sBEoCsRakvcwF9eOqMk2tDU/hm9YbAXPPK4Ziu7D/8Mw+eCnMV0LUhsno1T8/N4xZGcvoreeAv10Gj8swEHL1wlVl/qaiiAno/db6ZQU0XUXl6jZmz3Uzb2uzaAd2TzAe1SSYoCKiAJpa6VkSzswHqDJZzzJUEPT91dUsKAmUR4FOwzkg9sKLf3TRhdfrC5pcE+swyrRs2xrL+uVi2v5BeRn/565d/ng8Xpu8Ne/oioOsB6PTQOkNkmqLnjy7pqwmpLuzD3P5p1Nzvc+KSVr7jEtjBScDRTSQAdYA82Ly/T2TrNpMI7Bhe9a+3N5J9ffHQUq41c4YPLQfcrU9jC5f9PRgvn7ug00Pr7IA6SZQuBzxo8gFdUrq9LTLv8cdD549+8Xeb5aXbzCJWFL8FSACSx4cEINmHBKCOD5sRQAABXwVIAJJHhocAk33YigACCCCAQJACJABBDitBIYAAAgggkCxAApDsw1YEEEAAAQSCFCABCHJYCQoBBBBAAIFkARKAZB+2IoAAAgggEKQACUCQw0pQCCCAAAIIJAuQACT7sBUBBBBAAIEgBUgAghxWgkIAAQQQQCBZgAQg2YetCCCAAAIIBClAAhDksBIUAggggAACyQIkAMk+bEUAAQQQQCBIARKAIIeVoBBAAAEEEEgWIAFI9mErAggggAACQQqQAAQ5rASFAAIIIIBAsgAJQLIPWxFAAAEEEAhSgAQgyGElKAQQQAABBJIFSACSfdiKAAIIIIBAkAIkAEEOK0EhgAACCCCQLEACkOzDVgQQQAABBIIUIAEIclgJCgEEEEAAgWQBEoBkH7YigAACCCAQpAAJQJDDSlAIIIAAAggkC5AAJPuwFQEEEEAAgSAFSACCHFaCQgABBBBAIFmABCDZh60IIIAAAggEKUACEOSwEhQCCCCAAALJAiQAyT5sRQABBBBAIEgBEoAgh5WgEEAAAQQQSBYgAUj2YSsCCCCAAAJBCpAABDmsBIUAAggggECyAAlAsg9bEUAAAQQQCFKABCDIYSUoBBBAAAEEkgVIAJJ92IoAAggggECQAiQAQQ4rQSGAAAIIIJAsQAKQ7MNWBBBAAAEEghQgAQhyWAkKAQQQQACBZAESgGQftiKAAAIIIBCkAAlAkMNKUAgggAACCCQLkAAk+7AVAQQQQACBIAVIAIIcVoJCAAEEEEAgWYAEINmHrQgggAACCAQpQAIQ5LASFAIIIIAAAskCJADJPmxFAAEEEEAgSAESgCCHlaAQQAABBBBIFiABSPZhKwIIIIAAAkEKkAAEOawEhQACCCCAQLIACUCyD1sRQAABBBAIUoAEIMhhJSgEEEAAAQSSBUgAkn3YigACCCCAQJACJABBDitBIYAAAgggkCxAApDsw1YEEEAAAQSCFCABCHJYCQoBBBBAAIFkARKAZB+2IoAAAgggEKQACUCQw0pQCCCAAAIIJAuQACT7sBUBBBBAAIEgBUgAghxWgkIAAQQQQCBZgAQg2YetCCCAAAIIBClAAhDksBIUAggggAACyQIkAMk+bEUAAQQQQCBIARKAIIeVoBBAAAEEEEgWIAFI9mErAggggAACQQqQAAQ5rASFAAIIIIBAsgAJQLIPWxFAAAEEEAhSgAQgyGElKAQQQAABBJIFSACSfdiKAAIIIIBAkAIkAEEOK0EhgAACCCCQLEACkOzDVgQQQAABBIIUIAEIclgJCgEEEEAAgWQBEoBkH7YigAACCCAQpAAJQJDDSlAIIIAAAggkC5AAJPuwFQEEEEAAgSAFWoOMKsOg/uJjLRnWRlUIIIAAAgj4IcAVAD/GgV4ggAACCCDgVIAEwCk3jSGAAAIIIOCHAAmAH+NALxBAAAEEEHAqQALglJvGEEAAAQQQ8EOABMCPcaAXCCCAAAIIOBUgAXDKTWMIIIAAAgj4IUAC4Mc40AsEEEAAAQScCpAAOOWmMQQQQAABBPwQIAHwYxzoBQIIIIAAAk4FSACcctMYAggggAACfgiQAPgxDvQCAQQQQAABpwIkAE65aQwBBBBAAAE/BEgA/BgHeoEAAggggIBTARIAp9w0hgACCCCAgB8CJAB+jAO9QAABBBBAwKkACYBTbhpDAAEEEEDADwESAD/GgV4ggAACCCDgVIAEwCk3jSGAAAIIIOCHAAmAH+NALxBAAAEEEHAqQALglJvGEEAAAQQQ8EOABMCPcaAXCCCAAAIIOBUgAXDKTWMIIIAAAgj4IUAC4Mc40AsEEEAAAQScCrQ6bY3GEPBQYNYskYULRObPE5k3X2TiRJGu0ea/ruHO9u4V2bNbZNMmkbVrRdaY/37+iMj69R4Gc4QuTZggcsIJIscsFJk5U2TqVJGxY0U6O0RaWo5wQAN/2rvPuDwvsnyFyK0/NjZrGjjY0a5Vj98RM82UUCAqYZ+ddvltvxbHThukMScC8+eJnHmmyGmnisyY0VyTz5svvvvuF/nJT0Seerq5OvI6Sr/gf+kskdecLXL00Xm18vJ6BwdF/uMWkRtvEunvd9PmSK1UPf6RXKr29299I+I7LmHQwUnA0U0kAHWASrRZPwpOPFHkrW8RWfyKbDv+5EqRm28WueNOkSJTxu5ukbdcIPK680RGjco2xrS1PfSQyDXXFpMEVD3+tGNUlf1IAJJHmgQg2YcEoI5PWTYvWiTyu79jLvObS/x5Fr018NfXi7zwQp6tHF63XsrXL/5f/3WRjoK++A/u1fd/IHLDFw/vZ15/qXr8ebmWvV4SgOQRJAFI9iEBqOPj++Zx40Te9c7hS+GuLgY++6zIlVeJ7NjpRmemuYVx6R+b5xfmuWkvTSt6O+BDlw4/M5Fmf5t9qh6/jV3ox5IAJI8wbwEk+7C1xALHHyfyN38tcs5rRFx9+SuXPlPwB3/gBu7000Su+yu/vvw18pr5ZDnvtfkbVD3+/IVpIWQB3gIIeXQrGpt+2et9/v/52/ZPuTdL+KpTRPS2w2OPNVtD/eNef765rXHJ8Jdt/b3d77F0Sb5tVj3+fHWpvQoCXAGowihXKEb98n/P74q848LivvwPcOf5C/j814m89z3+fvmrweTJ+Z14VY8/P1lqrpIAVwCqNNqBx6oPgr3/fSJnvdqPQPUWRB5FL3trklPVUvX4qzruxJ29AAlA9qbUWICA/vL/4AfMu/1nFND4CE3qBDRZF33g7X1/5Pcv/wMx68RJWZeqx5+1J/VVW4BbANUe/2Cif+c7/PryV1h9Ej7L0mrSdX3av8PM4FeGorMDZlmqHn+WltSFgAqQAHAelF7gl18//A68b4Ho64BZlgve7N/T/iPFp8nPrbeOtLW5v1c9/ubUOAqBkQVIAEa2YUsJBI4+SuTdF/vZ0Xvuza5fkyYNT/KTXY351vSDH5o5ANZl10bV489OkpoQeEmABICzobQCozuHL4nrpWHfii6S85PbsuuVvtbowwx/aSJaYS793/TlNHum36fq8aeXYk8E0gt4+NGZvvPsWW2BS8w78NOm+Wnwta+JbNmSTd90YRud29/3opf99Ze/fvkPDGTX26rHn50kNSHwcgESAM6IUgroYj660p2PRefBv/m72fXsLLOqX1EL+9SLYq9ZKllXRXxwuciPzXLAWV72P9B21eOvNwZsR6BZARKAZuU4rjABfd9fZ8DLuuhl+zvNan66xO9TT4ls3y7Satrq7hGZM1vkDPOK4cmvFGlrO3LLOvf/V75ivgjN8sBZlnMyTHRWrxn+otYn9DeZL26N2fdS9fh9Hx/6V14BEoDyjl1le/6GN4jMNl/IWRVdu/573xf5t2+I7N798lr3m/+5Z+3woja61O/o0SKnnSqi09xOmTr8qt9m8777CrME7h13ZP+FOnGiyFHmQUfb0tcncuNNIv9xS7HLFTcaR9Xjb9SL/RFoRIAEoBEt9i1cQC+F/+pbs+uGvqp3/adFVq1KV+eePcMP92X5gF9Sy3qrw3YhI/3yv+ZakYcfTmrJz21Vj9/PUaFXoQiQAIQykhWJ43VmDvysZth7cqXIX5ovxp2Olu1tZoiOOaaZo15+zJduLOeXv0ZR9fjtR58aEBhZgARgZBu2eCag997fekE2nXriCZGPfkxkn+f3wGfOtItX7/nf8iO7Ooo8uurxF2lP2+ELMA9A+GMcTISnmUVwdEIY27Jxo8jHP+H/l7/GOd3yNUd9Mj+ObcWKO77q8RcnT8tVECABqMIoBxLjeefaB6Lvp/+vz4joE/tlKF1ddr1cbl7PK3OpevxlHjv67r8ACYD/Y0QPjcDUKSKLF9tTfPNbIo+by/9lKbYL/2zaXJZIj9zPqsd/ZBX+ikA2AiQA2ThSS84CZ5t34W2fhtdL/9/4Zs4d9ax6WzPPwmm4O1WPv2EwDqiUAAlApYa7vMGecop93//Pv4rs1xf7S1R0pj2b0tNtc3Txx1Y9/uJHgB6ELEACEPLoBhLb0GQw8+2C2fCcyH/9l10dRRy9a5ddq0uX2h1f9NFVj79of9oPW4AEIOzxDSK6V55kf/n/B2Z+fl2spmzlOZO42JTzXitSK/G/8qrHbzP2HItAPYESfzTUC43toQjYPvynl/1vv72cGuvNTIU2Zc4ckdefb1NDscdWPf5i9Wk9dAESgNBHOID4Fi6wC+KBB0R2HTLHv12N7o7WCYtsy8UXiSw5wbaWYo6vevzFqNNqVQRIAKoy0iWNU98Dn2Y5Gc5d/13S4E23HzLz99tO5NNq5vv8yFUibzSLKJXtdkDV4y/vmUvPyyBAAlCGUapwH3UlPJtXufTLs8yT4eiSxLo0sW3RJOCS3xH59PUib36TWd7Y3Bqwfcfetk9pjq96/GmM2AeBZgVYC6BZOY5zIjDLci789etF9EukzOX2/xRZYHkb5ED8uoyy3hI4UHRmxF7zqqEuiKTzJKiXXnbXX96+uFU9/jKfu/TdbwESAL/Hp/K9m2JmALQpuuJf2Yu+vnjh280vdrMUctalpUVkjLnNov/pvPvLzGuDv/LG4VZWGjv98tX2i1wxserxZz3m1IfAAQFuAXAueC0webJd99assTveh6P1y/fWAlb006sOl7xb5POfE3n3RdksxNSMZ9Xjb8aMYxBII0ACkEaJfQoTsE0AnrV8ja6wwA9p+NvfEdlb0NLFeuXhTea5gb/7rMjb3iqiVw1cl6rH79qb9qohQAJQjXEubZRjx9h1ffMWu+N9OXrrVpGvf73Y3mgi8I4LRf7qUyIzZrjtS9Xjd6tNa1URIAGoykiXNM5Rlve9fXmQLQv+79wssmpVFjXZ1TF/nsh1Jgk49VS7eho9uurxN+rF/gjUEyABqCfE9kIFbBOA3t5Cu59p4/rE/l+b1/j2eBBTZ6fI5Ze6nWWw6vFnejJRGQJGgASA08BrAdsEoK/P6/Aa7pwuavTZv/NjXQOdVOi97xE5/3UNh9H0AVWPv2k4DkTgCAIkAEdA4U8I+Cxw990i//QFf3r4nt81twNe5a4/VY/fnTQthS5AAhD6CJc8vn2WT763tZUcYITu32JeC/y7vxfRy+JFF70S8IH3i8y0nLSpkTiqHn8jVuyLwEgCJAAjyfB3LwRsEwC9Vx1q+cltw88E+PCcg04r/McfdPuKYNXjD/W8Ji53AiQA7qxpqQkB2wRg4sQmGi3RIXebhY4u+xNP3g6YP7zOgEu+qsfv0pq2whMgAQhvTIOKaOcuu3C6J9kdX4ajN2wQ+ZMrRP75K2ayIDOvf5HlN/6HiOukq+rxFznetF1uARKAco9f8L3ftMkuRNcT1tj1tvmj9VmAb/+7yB++T+Tm7xY4a6C5FfCWC5qPo9kjqx5/s24cV20BEoBqj7/30T//vF0X5861O75sR2/bJnLjTeb1vN8TueGLZmW/J0V0SWSX5fzzRcaOddniS21VPf5i1Gm1rAKsBljWkatIv22vACzMaBndsnHrAjrf/8Hwf+PHiyxeLHLswuEn9adMFRk/zqwuaH6tt+bwCaBTBp/16uG2i3KrevxFudNuuQRy+OdfLgB667fAOrM+vU3RWwATJviztr1NLM0e+8ILInfcMfzfoXXol/Vks+Ty0iUi571WZM6cQ/do7n+ffXaxCcDBva56/M2NIEdVQYBbAFUY5RLH+NRTdpewo8h8uZk17ilHFtAVBteuFfnu98xrfJeJfOEGkf7+I+/byF8XHG2uMpgrD76Xqsfv+/jQv3wFSADy9aV2S4E9e0SeNU+525TTT7M5ujrHDg6K/OCHItdca58EaOKltx3KVKoef5nGir5mI0ACkI0jteQooFcBbMqJy0TGdNnUUK1jH3pI5KYv28eszxyUsVQ9/jKOGX1uToAEoDk3jnIooB/INkWnAz7nHJsaqnfsD/9j+NaATeQupwa26eeRjq16/Ecy4W/hCZAAhDemwUV03/12zwEoyC//sttpass+CHo5/NYf20Uxbbrd8UUeXfX4i7SnbXcCJADurGmpSYHt20WefrrJg188bPo0kV86y66Oqh29fIVdxGW/7VL1+O1Gn6PLIEACUIZRoo/y3/fYI/zmb4i0t9vXU5UabOdg0HkGylyqHn+Zx46+pxMgAajj1NJSZwc2OxH4f/9pfxtginnf/dd/zUl3g2jEPMhf6VL1+Ms++HlMclV2k0P7TwJwqMgh/9s8QOZ4ItU6HaroZp0S+KGH7YN/21tFFh1rX08VauiZbBdlb8ELE9n1XqTq8dv6FX18e5uYJ1koSQIkAEk6Zltbu5hlVig+CPzY8qE0jUGv6HzwAyLjzFS4lGQBnR3QpuzebXN08cdWPf7iR8CuB63tMQlAHUISgDpAbW0xCUAdI1eb77pbZMsW+9b0VsBVV5q58M00uJQjC9TMJ8N55x15W9q/6jK9ZS1Vj7+s43Zwv9taJYM5LUOQGDkGEoCRbYa2tLVE++vswmZHAn19Iv/+nWwa00WC/uJj5kpAQavWZRNFfrW8wbw2OXuWXf3PWq7jYNe63dFVj99Oz4+j29r47K43EiQAdYQ6RotZSoXii8AtP8puYZ8FJgn4xMdFjjrKl+j86McSc+n/onfZ9+XxJ+zrKKKGqsdfhHkebY7qFPMCMSVJgNUAk3TMttGj49UikeVvoTqNsDm1wH5zPeab3xJ598WpD0nccbqZrOaTJgnQpXP/7Rsiu3Yl7m7OBxFdW0AXGJpiHpLTCWP0dTF9QPGnZsW9vSV+8E0ve+svX/3yt337JTaPzj7882RL37ZWPX7fxsO2P10d8TO2dYR+PAlAnRHu7IjNR3t0Zp3d2OxQQBesyXLpWn1d6II3i7z+fJE7fyZy/wMiK1cOX2nQL8KeHrNM7myRM84QeeVJ5raQmVr44LJokchZZpKhd1wo8i9fFfnRrQ4xLJvSd/X1mYhlJqF5rVkO2Pay/4HuPPmkiC7D63upevy+j49N/zo6I8tJxG1aL8exJAB1xqm9PTaPnsl76+zGZocCA+axTF22Vu/h66pzWZVR5qHAc14z/F8zdY41zxP8/u+JzJ8n8k+mf3mUuXOGH85bcoLIZPPF7euDjDpvQx6l6vHnYRpqnW0dA3eFGltWcZEA1JHsG9Nyi37J6CVNij8CP39E5LbbRc49x58+HeiJrjvwnJm34DsZPbCo9epVh4svGr5KkWXSk4fe3n3Dt0OyrLvq8WdpWYW69N/IqFpLBi8Oh63FQ4B1xvcjvx+tnzQpLvGd3ToBlnjzF78ksuE5PwP4rd8U6e7Opm/65fdnV5kFjV6f7RWPbHp3eC23mJUEd+48/O/N/qXq8TfrVuXjunvi3g99KCrxi6huRo8EIIVz92R5NMVu7OJYoLdX5G/+RqTfw7d99dL8a8/NBkQfeFy8OJu68q5Fx+TbGV750P5WPf68xyzE+rsnSQbzhoYo8/KYSABSjPG40fH3U+zGLgUIPGVWCfzSjQU0nKLJk1+ZYqc6u+g97/NfV2cnjzb/369n95qmhlX1+D0a2lJ1ZfzY+Hul6nBBnSUBSAHf0VH7vO/3XVOEEewuPzSXnL/1bf/CmzHDvk/6ZH5Zzj1dsvl7GX/sVj1++zOoejXo65wDE2o5PYYblicJQIrxvPTSaO3UaXEJXmpKEUygu+jrd//1U7+C0w8i26LzDZSh7DGX/q83t2P0DY0sS9Xjz9KyKnVNnSbb9NmtqsRrE2cGH1E2zZfn2KlTopvL09vq9VTf0vjbz4rk9fpZM6LbMpiHrCejBwmb6X/aY3QypM/8bT4PZFY9/rRjwH4vCUydKh5eD/RzhEgAUo7L2C65kvWlU2IVtJv++tQkQGf186E8WoFHRzXx+tznRe65xwdx932oevzuxZNb1Im7ujrEzBBCSSNAApBGyeyjtwFmzYrXptyd3QoS0A/kG74ocuNN2V+ObjSkLJYv3pzB6oeN9jvt/vrLX7/8b83xbeuqx592LNhvWGD2nHjNZZdFq/FIJ0ACkM5paK8pPbH5aqGUQeDm75p35/9cZPPmYnr73+YX8aOP2be9fLl9HXnUoPf8P3Vd/tMeVz3+PMYu5Dp7Jsc8/NfAAJMANIC1b1/tGjO5C5MCNWBW5K6PPW6u3Fw+/AvV5UyOzz4r8vf/kE3k+utaf2n7VPRp/8uNq4vL/lWP36dx970vkybJvjNeVfuE7/30qX/mjgklrcDtt38sftuv/vnMDRuiU9Iew37FCujqgffcK/Kg+SU9f77IpIn59udhM/3INddmNxOeLqgzfrzIQrN0cdFFJ/n56tdE/uEfRXZkONNfUlxVjz/Jhm0vFzj2uMF/vOidtYxfRA1b2cyYTGlE4Oqr4/bVa+Nd27dHh6wJ10gt7FuEgL5Pv2yZyFsuENHFdLIsT5jV7/S2w513Zr9uhD58+hEzFXDWfU4bv87tf8stZoa/f892kp+07Vc9/rROVd5vwvi4b+6caMzVV0cm5aekFSABSCt10H5XXzNw0/IHa2bVdEpZBebOFTnTLO97+mkiM2c2F8XGjSL33Sfy49tEVq1qro60R+mX4EXmjNP1ALKYX6Beu3rLRJf01dcqdX6FXbvqHZHv9qrHn69u+Wtftmzwix/9s5ZLyh+J2whIAJrw1qsAz26Q7Zs2S2cTh3OIZwIzzYx9CxYOL+M7f57IRHOboKtLZMyY4Y7u2SOiD71tMiv8rTHvgaw1/z1iViNcb+71uy6zZ5vlgM3sgEuXmIdSdTngDrse6DoKe81TLS/sEHneJDTrzfQpj5svfr2VoZfffStVj9+38fChP5Mny54Z02Qiv/4bHw0SgMbNho741HX9F999d8uXXD5c1mRXOQwBBBAIUkBv673q1IH3XHF56xeCDDDnoEgALIAv+3D8+FMr5RiLKjgUAQQQQKBJgQUL4seu+1TtuCYPr/xhvAZocQpMny1v7ujgGoAFIYcigAACTQmM7pTByTMi80gvpVkBEoBm5cxxl/5R9MTixfFflGW1NotQORQBBBDwRkA/cxe9YvBTf/KByDyxQmlWgFsAzcoddNyHrxy874nHo5MyqIoqEEAAAQTqCBx7bHzPJz9ee1Wd3dhcR4ArAHWA0mw+am501tQp4mhqlDQ9Yh8EEEAgTIEpU+Lds2dG54YZnduoSAAy8H7ve6M9C46WN44eLZ5N2ppBcFSBAAIIeCIwuksGjzkuOu8P/zAqeGYKT0Asu0ECYAl44HCzAtVPlyyVi9rbxUyhQkEAAQQQyFJAP1uXnTDwjkvfH92VZb1VrosEIMPR//Bl0VeWLRm8XGctoyCAAAIIZCPQYlatWbJs8KrLL2/939nUSC0qQAKQ8Xnwp3/acv3iJYOf5c2AjGGpDgEEKimgn6UnLpXPXPXhFlb6y/gM4C2AjEEPVHfNJwb+avkDtcsHBnJqgGoRQACBwAX0l/8JSwc/+9GrWt4feErHDd8AAAPLSURBVKiFhEcCkCP7Jz4xcOnyFbXr9u0XnHN0pmoEEAhPoK1N4pOWyUeuuCL6eHjR+RERX0w5j8Mnr++/8KHlLV/es5vbLTlTUz0CCAQiYBbjGly8dOBdV1za+i+BhORlGCQADobluuviU59aFf9o48ZorIPmaAIBBBAorcDkKbL7mGPljZd9MPrP0gZRko6TADgaKLOEcEf/QPzDRx6Nzmb1AEfoNIMAAqUR0If9Fi6Il8+ZHb2a9/zdDBsJgBvnX7Ry7bUDf/nwI9GVe/fynoBjeppDAAFPBXRhn+OOH/z4R65s+TNPuxhkt0gAChjW6z4bz9+8Pv7WkyujpVwNKGAAaBIBBLwQ0J9B846Kn54/O/qV970vesyLTlWoEyQABQ62PiD49MqWz216XroK7AZNI4AAAs4FJvdI77wFgx+68vKWzztvnAaHBEgACj4RzLMB7VGrfO6ZVfGF27dHbQV3h+YRQACBXAUmTJT98+YOfiUeqP3B1VdH+3NtjMoTBUgAEnncbbzttrj1jp8NfnTNmtofb9oko921TEsIIIBA/gLd3bJ3zlz558E++YD54t+bf4u0UE+ABKCekOPt5opAra1z8KpNm2qXrF8rc/r7HXeA5hBAAIGMBHRdlFmz4zU9k+Mb+npr15ovflZMzcg2i2pIALJQzKmO66+PZ+/cM3jNpo3RW57bGE0Y5J9OTtJUiwACWQnUzAoz06bG26dMi741plM+euml0dqs6qaebAVIALL1zK226/4xntL3wuBFO3bW3rZ1S7xk8+ZoNG8Q5MZNxQgg0IDA+PHSN2VyvHLshPiHnW21z5jl0Vc3cDi7FiRAAlAQvG2zn/50PH3/gJy3f5+c2tsbL+ntlXnmvwnmlkFbf3/Usm+ftPb1ScRiRLbSHI9AdQV0MR6dk3/UKOlvbY0HzCX9vo7R0bbRHfHqzs5oRVvHwF2jai0//tCHog3VVSJyBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQyEPg/wOgpSQPSAB7gwAAAABJRU5ErkJggg==" title="CSS"></img>
       <div class="font-bold text-gray-900 text-xs my-2 hover:underline decoration-wavy decoration-indigo-500 transition-all duration-200 dark:text-white">CSS</div>
 			</button>
-</div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>cat.svg</title><link href="https://neotw.netlify.app/#cat.svg"></link><link href="https://neotw.netlify.app/static/cat.svg.html" rel="alternative" type="text/html"></link><id>ecb86074-b52b-eb4d-dabc-9d5963d03d03</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><img src="data:image/svg+xml,%3Csvg%20width%3D%22600%22%20height%3D%2275%22%20viewBox%3D%220%200%20600%2075%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20style%3D%22stroke-linecap%3A%20round%3B%20stroke-linejoin%3A%20round%3B%20stroke-miterlimit%3A%201.5%3B%22%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(1%2C0%2C0%2C1%2C92.3579%2C4.11772)%22%20d%3D%22M105.809%2C48.397C105.809%2C44.506%20102.473%2C43.931%20102.473%2C33.503%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%201.5px%3B%22%2F%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(1%2C0%2C0%2C1%2C92.3579%2C4.11772)%22%20d%3D%22M109.397%2C38.324L109.397%2C48.321%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%201.5px%3B%22%2F%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(1%2C0%2C0%2C1%2C92.3579%2C4.11772)%22%20d%3D%22M112.883%2C48.152C112.883%2C44.717%20115.053%2C40.554%20115.053%2C35.084C115.053%2C29.613%20114.393%2C24.795%20114.216%2C21.81%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%201.5px%3B%22%2F%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(1%2C0%2C0%2C1%2C92.3579%2C4.11772)%22%20d%3D%22M112.951%2C22.241C112.951%2C22.241%20116.335%2C21.976%20117.504%2C16.695%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%201.5px%3B%22%2F%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(1%2C0%2C0%2C1%2C92.3579%2C4.11772)%22%20d%3D%22M107.788%2C11.843C107.788%2C11.843%20106.369%2C7.434%20105.169%2C7.434C103.969%2C7.434%20101.87%2C13.187%20101.87%2C21.862C101.87%2C24.103%2090.181%2C29.985%2092.659%2C43.571C93.057%2C45.751%2094.053%2C49.908%2094.053%2C49.924C94.053%2C49.94%2096.571%2C59.453%2091.184%2C59.453C90.063%2C59.453%2089.526%2C58.833%2088.405%2C58.833C87.285%2C58.833%2086.381%2C59.598%2086.381%2C60.591C86.381%2C61.584%2087.491%2C64.025%2091.446%2C64.025C98.593%2C64.025%2098.865%2C58.038%2098.865%2C54.158C98.865%2C50.278%2098.829%2C51.479%2098.829%2C50.844C98.829%2C48.717%20100.601%2C48.284%20101.259%2C48.043%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%201.5px%3B%22%2F%3E%0A%20%20%20%20%3Cellipse%20transform%3D%22matrix(1.00474%2C-0.404483%2C0.370766%2C0.920982%2C85.4108%2C49.8267)%22%20cx%3D%22111.892%22%20cy%3D%2215.766%22%20rx%3D%221.032%22%20ry%3D%221.449%22%20style%3D%22fill%3A%20rgb(47%2C%2044%2C%2062)%3B%22%2F%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(1%2C0%2C0%2C1%2C92.3579%2C4.11772)%22%20d%3D%22M110.074%2C10.347C113.617%2C10.347%20114.448%2C14.635%20117.14%2C14.635%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%201.5px%3B%22%2F%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(1%2C0%2C0%2C1%2C92.3579%2C4.11772)%22%20d%3D%22M112.568%2C9.074C112.568%2C9.074%20111.553%2C6.74%20110.677%2C6.74C109.801%2C6.74%20108.537%2C9.169%20108.537%2C9.169%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%201.5px%3B%22%2F%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(3.96613%2C0%2C0%2C5.89452%2C-177.012%2C-336.835)%22%20d%3D%22M93.717%2C66.428L195.647%2C66.428%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%200.3px%3B%22%2F%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(1.78906%2C0%2C0%2C2.78204%2C-166.7%2C-130.078)%22%20d%3D%22M93.717%2C66.428L195.647%2C66.428%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%200.64px%3B%22%2F%3E%0A%3C%2Fsvg%3E%0A"></img></div></content><author><name>oeyoews</name></author></entry><entry><title>cf</title><link href="https://neotw.netlify.app/#cf"></link><link href="https://neotw.netlify.app/static/cf.html" rel="alternative" type="text/html"></link><id>4e29342d-9904-d64e-9e25-fd3b92558e2f</id><updated>2023-04-22T12:17:17</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>但ChatGPT 配备了 CloudFlare 防火墙，不仅会检测用户访问页面时的IP, 还会每隔一段时间就断开用户（包含ChatGPT PLUS用户）的连接，</p></div></content><author><name>oeyoews</name></author></entry><entry><title>chatbase-button</title><link href="https://neotw.netlify.app/#chatbase-button"></link><link href="https://neotw.netlify.app/static/chatbase-button.html" rel="alternative" type="text/html"></link><id>f53099af-4fdf-6d95-c507-abc81dd74366</id><updated>2023-04-16T09:51:00</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><safe-script id="neotw-oeyoewl-top-laaqdvwta" src="https://cdn.jsdelivr.net/gh/yasserelsaid/chatbot@latest/index.min.js"></safe-script></p></div></content><author><name>oeyoews</name></author></entry><entry><title>chatbot</title><link href="https://neotw.netlify.app/#chatbot"></link><link href="https://neotw.netlify.app/static/chatbot.html" rel="alternative" type="text/html"></link><id>00f2b1ea-d3a0-990b-8185-17356cb40280</id><updated>2023-04-16T09:38:47</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://www.chatbase.co/create-new-chatbot" rel="noopener noreferrer" target="_blank">https://www.chatbase.co/create-new-chatbot</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>chatgpt-bash</title><link href="https://neotw.netlify.app/#chatgpt-bash"></link><link href="https://neotw.netlify.app/static/chatgpt-bash.html" rel="alternative" type="text/html"></link><id>d42724db-e418-d07e-a052-38b0123c1daf</id><updated>2023-03-19T18:02:58</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre class="hljs"><code class="bash hljs"><span class="hljs-meta">#!/bin/bash</span>
+</div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>cat.svg</title><link href="https://neotw.netlify.app/#cat.svg"></link><link href="https://neotw.netlify.app/static/cat.svg.html" rel="alternative" type="text/html"></link><id>ecb86074-b52b-eb4d-dabc-9d5963d03d03</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><img src="data:image/svg+xml,%3Csvg%20width%3D%22600%22%20height%3D%2275%22%20viewBox%3D%220%200%20600%2075%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20style%3D%22stroke-linecap%3A%20round%3B%20stroke-linejoin%3A%20round%3B%20stroke-miterlimit%3A%201.5%3B%22%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(1%2C0%2C0%2C1%2C92.3579%2C4.11772)%22%20d%3D%22M105.809%2C48.397C105.809%2C44.506%20102.473%2C43.931%20102.473%2C33.503%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%201.5px%3B%22%2F%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(1%2C0%2C0%2C1%2C92.3579%2C4.11772)%22%20d%3D%22M109.397%2C38.324L109.397%2C48.321%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%201.5px%3B%22%2F%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(1%2C0%2C0%2C1%2C92.3579%2C4.11772)%22%20d%3D%22M112.883%2C48.152C112.883%2C44.717%20115.053%2C40.554%20115.053%2C35.084C115.053%2C29.613%20114.393%2C24.795%20114.216%2C21.81%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%201.5px%3B%22%2F%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(1%2C0%2C0%2C1%2C92.3579%2C4.11772)%22%20d%3D%22M112.951%2C22.241C112.951%2C22.241%20116.335%2C21.976%20117.504%2C16.695%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%201.5px%3B%22%2F%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(1%2C0%2C0%2C1%2C92.3579%2C4.11772)%22%20d%3D%22M107.788%2C11.843C107.788%2C11.843%20106.369%2C7.434%20105.169%2C7.434C103.969%2C7.434%20101.87%2C13.187%20101.87%2C21.862C101.87%2C24.103%2090.181%2C29.985%2092.659%2C43.571C93.057%2C45.751%2094.053%2C49.908%2094.053%2C49.924C94.053%2C49.94%2096.571%2C59.453%2091.184%2C59.453C90.063%2C59.453%2089.526%2C58.833%2088.405%2C58.833C87.285%2C58.833%2086.381%2C59.598%2086.381%2C60.591C86.381%2C61.584%2087.491%2C64.025%2091.446%2C64.025C98.593%2C64.025%2098.865%2C58.038%2098.865%2C54.158C98.865%2C50.278%2098.829%2C51.479%2098.829%2C50.844C98.829%2C48.717%20100.601%2C48.284%20101.259%2C48.043%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%201.5px%3B%22%2F%3E%0A%20%20%20%20%3Cellipse%20transform%3D%22matrix(1.00474%2C-0.404483%2C0.370766%2C0.920982%2C85.4108%2C49.8267)%22%20cx%3D%22111.892%22%20cy%3D%2215.766%22%20rx%3D%221.032%22%20ry%3D%221.449%22%20style%3D%22fill%3A%20rgb(47%2C%2044%2C%2062)%3B%22%2F%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(1%2C0%2C0%2C1%2C92.3579%2C4.11772)%22%20d%3D%22M110.074%2C10.347C113.617%2C10.347%20114.448%2C14.635%20117.14%2C14.635%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%201.5px%3B%22%2F%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(1%2C0%2C0%2C1%2C92.3579%2C4.11772)%22%20d%3D%22M112.568%2C9.074C112.568%2C9.074%20111.553%2C6.74%20110.677%2C6.74C109.801%2C6.74%20108.537%2C9.169%20108.537%2C9.169%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%201.5px%3B%22%2F%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(3.96613%2C0%2C0%2C5.89452%2C-177.012%2C-336.835)%22%20d%3D%22M93.717%2C66.428L195.647%2C66.428%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%200.3px%3B%22%2F%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(1.78906%2C0%2C0%2C2.78204%2C-166.7%2C-130.078)%22%20d%3D%22M93.717%2C66.428L195.647%2C66.428%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%200.64px%3B%22%2F%3E%0A%3C%2Fsvg%3E%0A"></img></div></content><author><name>oeyoews</name></author></entry><entry><title>cf</title><link href="https://neotw.netlify.app/#cf"></link><link href="https://neotw.netlify.app/static/cf.html" rel="alternative" type="text/html"></link><id>4e29342d-9904-d64e-9e25-fd3b92558e2f</id><updated>2023-04-22T12:17:17</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>但ChatGPT 配备了 CloudFlare 防火墙，不仅会检测用户访问页面时的IP, 还会每隔一段时间就断开用户（包含ChatGPT PLUS用户）的连接，</p></div></content><author><name>oeyoews</name></author></entry><entry><title>change-this</title><link href="https://neotw.netlify.app/#change-this"></link><link href="https://neotw.netlify.app/static/change-this.html" rel="alternative" type="text/html"></link><id>52a93cfe-b0b5-fdf2-20c1-b3a5d38d6bdd</id><updated>2023-05-22T18:57:10</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><code>call</code>、<code>apply</code> 和 <code>bind</code> 是 JavaScript 中的三个方法，它们都是用于改变函数的 <code>this</code> 指向。</p><p><code>call</code> 和 <code>apply</code> 的作用一样，它们都可以在指定的作用域中调用函数，并将 <code>this</code> 指向第一个参数。区别在于，<code>call</code> 的参数是逐个传入的，而 <code>apply</code> 的参数是以数组的形式传入的。</p><p><code>bind</code> 的作用是创建一个新的函数，新函数的 <code>this</code> 指向第一个参数，后续的参数作为新函数的参数传入。与 <code>call</code> 和 <code>apply</code> 不同的是，<code>bind</code> 方法不会立即执行函数，而是返回一个新函数，需要手动调用才会执行。</p><p>下面是这三个方法的用法示例：</p><pre class="hljs"><code class="javascript hljs"><span class="hljs-keyword">const</span> obj = {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;Alice&#x27;</span>,
+  <span class="hljs-attr">age</span>: <span class="hljs-number">18</span>,
+};
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">sayHi</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Hi, my name is <span class="hljs-subst">${<span class="hljs-variable language_">this</span>.name}</span>, I&#x27;m <span class="hljs-subst">${<span class="hljs-variable language_">this</span>.age}</span> years old.`</span>);
+}
+
+<span class="hljs-comment">// 使用 call 方法调用函数</span>
+sayHi.<span class="hljs-title function_">call</span>(obj);
+
+<span class="hljs-comment">// 使用 apply 方法调用函数</span>
+sayHi.<span class="hljs-title function_">apply</span>(obj);
+
+<span class="hljs-comment">// 使用 bind 方法创建新函数并调用</span>
+<span class="hljs-keyword">const</span> newSayHi = sayHi.<span class="hljs-title function_">bind</span>(obj);
+<span class="hljs-title function_">newSayHi</span>();</code></pre><p>在实际开发中，这三个方法经常用于改变函数的 <code>this</code> 指向，例如在回调函数中使用，或者在函数式编程中使用柯里化等技术。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>chatbase-button</title><link href="https://neotw.netlify.app/#chatbase-button"></link><link href="https://neotw.netlify.app/static/chatbase-button.html" rel="alternative" type="text/html"></link><id>f53099af-4fdf-6d95-c507-abc81dd74366</id><updated>2023-04-16T09:51:00</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><safe-script id="neotw-oeyoewl-top-laaqdvwta" src="https://cdn.jsdelivr.net/gh/yasserelsaid/chatbot@latest/index.min.js"></safe-script></p></div></content><author><name>oeyoews</name></author></entry><entry><title>chatbot</title><link href="https://neotw.netlify.app/#chatbot"></link><link href="https://neotw.netlify.app/static/chatbot.html" rel="alternative" type="text/html"></link><id>00f2b1ea-d3a0-990b-8185-17356cb40280</id><updated>2023-04-16T09:38:47</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://www.chatbase.co/create-new-chatbot" rel="noopener noreferrer" target="_blank">https://www.chatbase.co/create-new-chatbot</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>chatgpt-bash</title><link href="https://neotw.netlify.app/#chatgpt-bash"></link><link href="https://neotw.netlify.app/static/chatgpt-bash.html" rel="alternative" type="text/html"></link><id>d42724db-e418-d07e-a052-38b0123c1daf</id><updated>2023-03-19T18:02:58</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre class="hljs"><code class="bash hljs"><span class="hljs-meta">#!/bin/bash</span>
 
 API_KEY=<span class="hljs-variable">$OPENAI_API_KEY</span>
 <span class="hljs-comment"># Set the endpoint URL</span>
@@ -1683,8 +1700,8 @@ Undefined widget 'english'
 </div>
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>GettingStarted</title><link href="https://neotw.netlify.app/#GettingStarted"></link><link href="https://neotw.netlify.app/static/GettingStarted.html" rel="alternative" type="text/html"></link><id>fc927313-83cf-7e0a-53c1-21853f695851</id><updated>2023-05-18T18:09:49</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:bg-white">
 <div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-562-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-44-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-64-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-3 hours ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-566-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-44-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-64-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-46 seconds ago-green?style=social"></img>  
 </div>
 
 </div></p><p><h3 class="hidden lg:block text-center dark:text-white"> Personal Notes </h3>
@@ -1717,7 +1734,7 @@ Undefined widget 'english'
 <div class="relative">
         <div class="absolute top-0 right-0">
             <div class="inline-block text-slate-400 rounded-full">
-                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#56">56</a></span>
+                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#57">57</a></span>
             </div>
         </div>
     </div>
@@ -1741,7 +1758,7 @@ Undefined widget 'english'
 <div class="relative">
         <div class="absolute top-0 right-0">
             <div class="inline-block text-slate-400 rounded-full">
-                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#29">29</a></span>
+                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#32">32</a></span>
             </div>
         </div>
     </div>
@@ -2014,7 +2031,395 @@ Undefined widget 'english'
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">add</span>(<span class="hljs-params">a: <span class="hljs-built_in">number</span>, b: <span class="hljs-built_in">number</span></span>): <span class="hljs-built_in">number</span>;</code></pre><p>在这个示例中，<code>index.d.ts</code>文件将<code>add</code>函数的参数和返回值类型定义为数字类型，这样TypeScript编译器就可以在使用<code>example.js</code>模块时自动进行类型检查和推断。</p><p>总之，<code>index.d.ts</code>文件是TypeScript用于描述JavaScript模块、类、函数等类型的声明文件，它可以帮助TypeScript编译器进行类型检查和推断，并提高代码的可读性和可维护性。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>infinity-tab</title><link href="https://neotw.netlify.app/#infinity-tab"></link><link href="https://neotw.netlify.app/static/infinity-tab.html" rel="alternative" type="text/html"></link><id>d4ccd28e-b2f0-0987-92bd-43987fdd63ee</id><updated>2023-03-31T01:49:31</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>infinity's todo is my favourite function</p></div></content><author><name>oeyoews</name></author></entry><entry><title>init-tiddlywiki-folder</title><link href="https://neotw.netlify.app/#init-tiddlywiki-folder"></link><link href="https://neotw.netlify.app/static/init-tiddlywiki-folder.html" rel="alternative" type="text/html"></link><id>30eb967a-3b3d-2739-ce68-a899690aa725</id><updated>2023-03-19T12:03:17</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre><code>tiddlywiki &lt;wikifolder&gt; --init &lt;editionName&gt;</code></pre></div></content><author><name>oeyoews</name></author></entry><entry><title>input-bug-on-office-365</title><link href="https://neotw.netlify.app/#input-bug-on-office-365"></link><link href="https://neotw.netlify.app/static/input-bug-on-office-365.html" rel="alternative" type="text/html"></link><id>68a8ae6e-a6ae-2208-54ab-ec32aa6a9e26</id><updated>2023-04-12T21:03:58</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>在office 365 input chinese, this text will missing</li></ul><blockquote><div>solution: reset your input method, such fcitx5</div></blockquote></div></content><author><name>oeyoews</name></author></entry><entry><title>install-svg</title><link href="https://neotw.netlify.app/#install-svg"></link><link href="https://neotw.netlify.app/static/install-svg.html" rel="alternative" type="text/html"></link><id>87113c37-7003-30a0-ac1d-a3c397f898ac</id><updated>2023-03-18T11:48:49</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><img src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20viewBox%3D%220%200%2060%2030%22%20width%3D%2260%22%20height%3D%2230%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3CforeignObject%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%0A%20%20%20%20%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%0A%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20.container%20%7B%20%20%0A%20display%3A%20inline-block%3B%0A%20%20padding%3A%201px%202px%3B%0A%20%20background-color%3A%20%2328a745%3B%0A%20%20color%3A%20%23fff%3B%0A%20%20font-size%3A%2016px%3B%0A%20%20font-weight%3A%20bold%3B%0A%20%20text-decoration%3A%20none%3B%0A%20%20border-radius%3A%204px%3B%0A%20%20border%3A%20none%3B%0A%20%20box-shadow%3A%200%202px%204px%20rgba(0%2C%200%2C%200%2C%200.2)%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%3C%2Fstyle%3E%0A%20%20%20%20%20%20%3Cspan%20class%3D%22container%22%3EInstall%3C%2Fspan%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2FforeignObject%3E%0A%3C%2Fsvg%3E"></img></div></content><author><name>oeyoews</name></author></entry><entry><title>instapaper</title><link href="https://neotw.netlify.app/#instapaper"></link><link href="https://neotw.netlify.app/static/instapaper.html" rel="alternative" type="text/html"></link><id>346303fb-5d49-84fb-ad77-c4b78f2cf702</id><updated>2023-03-31T21:18:18</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>pure reader asist rss</p></div></content><author><name>oeyoews</name></author></entry><entry><title>itabb</title><link href="https://neotw.netlify.app/#itabb"></link><link href="https://neotw.netlify.app/static/itabb.html" rel="alternative" type="text/html"></link><id>cfb8fdff-5783-5674-8e0e-6480a163bde4</id><updated>2023-04-23T11:48:28</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>itab</p></div></content><author><name>oeyoews</name></author></entry><entry><title>JavaScript</title><link href="https://neotw.netlify.app/#JavaScript"></link><link href="https://neotw.netlify.app/static/JavaScript.html" rel="alternative" type="text/html"></link><id>686155af-75a6-0a0f-6e9d-80c1f7edd3e9</id><updated>2023-05-01T14:58:27</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></content><author><name>oeyoews</name></author></entry><entry><title>javascript.info</title><link href="https://neotw.netlify.app/#javascript.info"></link><link href="https://neotw.netlify.app/static/javascript.info.html" rel="alternative" type="text/html"></link><id>96f3bffc-e83e-f1c0-4e7d-05f41e7ef9e6</id><updated>2023-04-08T09:41:00</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://javascript.info/" rel="noopener noreferrer" target="_blank">https://javascript.info/</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>Journal</title><link href="https://neotw.netlify.app/#Journal"></link><link href="https://neotw.netlify.app/static/Journal.html" rel="alternative" type="text/html"></link><id>6b2b5614-a23a-bed4-834b-7cb7b91c6887</id><updated>2023-05-01T19:04:05</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></content><author><name>oeyoews</name></author></entry><entry><title>js-books</title><link href="https://neotw.netlify.app/#js-books"></link><link href="https://neotw.netlify.app/static/js-books.html" rel="alternative" type="text/html"></link><id>8705013a-284d-ed3c-68a9-b765513755d4</id><updated>2023-02-13T13:12:44</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://books.goalkicker.com/JavaScriptBook/" rel="noopener noreferrer" target="_blank">https://books.goalkicker.com/JavaScriptBook/</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>js-event</title><link href="https://neotw.netlify.app/#js-event"></link><link href="https://neotw.netlify.app/static/js-event.html" rel="alternative" type="text/html"></link><id>652e8b98-742f-cb8a-4125-e47d7d873edb</id><updated>2023-04-20T20:50:29</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>JavaScript中的 "event" 是指代表事件的对象。当用户与网页交互时，比如点击鼠标、按下键盘、滚动页面等等，就会触发一些事件。这些事件都有对应的事件处理函数，可以通过JavaScript来绑定和调用。</p><p>在事件处理函数中，我们可以使用 "event" 对象来获取事件的相关信息，比如事件类型、触发元素、鼠标位置等等。例如：</p><pre class="hljs"><code class="javascript hljs"><span class="hljs-variable language_">document</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) {
   <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;You clicked on element:&#x27;</span>, event.<span class="hljs-property">target</span>);
   <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;Mouse position:&#x27;</span>, event.<span class="hljs-property">pageX</span>, event.<span class="hljs-property">pageY</span>);
-});</code></pre><p>上述代码中，我们使用addEventListener方法为文档添加了一个 "click" 事件处理函数。在函数中，我们可以通过 "event" 对象获取到被点击的元素（即 "target" 属性），以及鼠标点击的位置（即 "pageX" 和 "pageY" 属性）。</p><p>需要注意的是，不同的浏览器在 "event" 对象的属性和方法方面可能存在差异，需要进行一定的兼容性处理。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>Json-parse</title><link href="https://neotw.netlify.app/#Json-parse"></link><link href="https://neotw.netlify.app/static/Json-parse.html" rel="alternative" type="text/html"></link><id>c7970f91-f9d4-4411-6290-daef1ff18129</id><updated>2023-05-09T23:40:40</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>在JavaScript中，可以使用<code>JSON.parse()</code>方法将一个JSON格式的字符串转换为JavaScript对象。该方法接受一个字符串参数，并尝试将其解析为有效的JSON格式。如果解析成功，则返回一个对应的JavaScript对象，否则抛出异常。</p><p>以下是一个简单的例子：</p><pre class="hljs"><code class="javascript hljs"><span class="hljs-keyword">const</span> jsonString = <span class="hljs-string">&#x27;{&quot;name&quot;: &quot;John&quot;, &quot;age&quot;: 30, &quot;hobbies&quot;: [&quot;reading&quot;, &quot;traveling&quot;]}&#x27;</span>;
+});</code></pre><p>上述代码中，我们使用addEventListener方法为文档添加了一个 "click" 事件处理函数。在函数中，我们可以通过 "event" 对象获取到被点击的元素（即 "target" 属性），以及鼠标点击的位置（即 "pageX" 和 "pageY" 属性）。</p><p>需要注意的是，不同的浏览器在 "event" 对象的属性和方法方面可能存在差异，需要进行一定的兼容性处理。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>js-methods</title><link href="https://neotw.netlify.app/#js-methods"></link><link href="https://neotw.netlify.app/static/js-methods.html" rel="alternative" type="text/html"></link><id>e0ededf9-e422-f8d0-8a0b-377c4b0de595</id><updated>2023-05-22T19:47:56</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+<p>以下是 JavaScript 中需要掌握的高频方法：
+</p>
+<ol>
+<li>
+<p>DOM操作：获取、创建、修改、删除DOM元素
+</p>
+</li>
+<li>
+<p>事件处理：绑定、解绑事件、事件冒泡、阻止默认事件
+</p>
+</li>
+<li>
+<p>数组操作：遍历、筛选、排序、去重、合并、转换等
+</p>
+</li>
+<li>
+<p>字符串处理：截取、拼接、替换、正则匹配等
+</p>
+</li>
+<li>
+<p>Ajax请求：发送、接收、处理请求结果等
+</p>
+</li>
+<li>
+<p>函数操作：声明、调用、参数传递、闭包、高阶函数等
+</p>
+</li>
+<li>
+<p>异常处理：try-catch语句、抛出异常等
+</p>
+</li>
+<li>
+<p>定时器：setTimeout、setInterval等
+</p>
+</li>
+<li>
+<p>JSON操作：解析、转换、序列化等
+</p>
+</li>
+<li>
+<p>模块化：使用模块化规范、模块的导入和导出等。
+</p>
+</li>
+<li>
+<p>DOM操作：
+</p>
+</li>
+</ol>
+<p>获取元素：
+</p>
+<pre><code>let element = document.querySelector('#id');
+let elements = document.querySelectorAll('.class');
+</code></pre>
+<p>创建元素：
+</p>
+<pre><code>let element = document.createElement('div');
+</code></pre>
+<p>修改元素：
+</p>
+<pre><code>element.innerHTML = 'new content';
+element.setAttribute('class', 'newClass');
+</code></pre>
+<p>删除元素：
+</p>
+<pre><code>element.parentNode.removeChild(element);
+</code></pre>
+<ol start="2">
+<li>事件处理：</li>
+</ol>
+<p>绑定事件：
+</p>
+<pre><code>element.addEventListener('click', function(event){
+  // 点击事件处理逻辑
+});
+</code></pre>
+<p>解绑事件：
+</p>
+<pre><code>element.removeEventListener('click', function(event){
+  // 点击事件处理逻辑
+});
+</code></pre>
+<p>阻止默认事件：
+</p>
+<pre><code>event.preventDefault();
+</code></pre>
+<ol start="3">
+<li>数组操作：</li>
+</ol>
+<p>遍历数组：
+</p>
+<pre><code>let arr = [1, 2, 3];
+arr.forEach(function(item){
+  console.log(item);
+});
+</code></pre>
+<p>筛选数组：
+</p>
+<pre><code>let arr = [1, 2, 3];
+let newArr = arr.filter(function(item){
+  return item &gt; 1;
+});
+</code></pre>
+<p>排序数组：
+</p>
+<pre><code>let arr = [3, 1, 2];
+arr.sort(function(a, b){
+  return a - b;
+});
+</code></pre>
+<p>去重数组：
+</p>
+<pre><code>let arr = [1, 2, 3, 2, 1];
+let newArr = Array.from(new Set(arr));
+</code></pre>
+<ol start="4">
+<li>字符串处理：</li>
+</ol>
+<p>截取字符串：
+</p>
+<pre><code>let str = 'hello world';
+let newStr = str.slice(0, 5);
+</code></pre>
+<p>拼接字符串：
+</p>
+<pre><code>let str1 = 'hello';
+let str2 = 'world';
+let newStr = str1 + ' ' + str2;
+</code></pre>
+<p>替换字符串：
+</p>
+<pre><code>let str = 'hello world';
+let newStr = str.replace('world', 'javascript');
+</code></pre>
+<p>正则匹配：
+</p>
+<pre><code>let str = 'hello world';
+let reg = /world/;
+let result = reg.test(str);
+</code></pre>
+<ol start="5">
+<li>Ajax请求：</li>
+</ol>
+<p>发送请求：
+</p>
+<pre><code>let xhr = new XMLHttpRequest();
+xhr.open('GET', 'url');
+xhr.send();
+</code></pre>
+<p>接收处理请求结果：
+</p>
+<pre><code>xhr.onload = function(){
+  console.log(xhr.responseText);
+};
+</code></pre>
+<ol start="6">
+<li>函数操作：</li>
+</ol>
+<p>声明函数：
+</p>
+<pre><code>function add(a, b){
+  return a + b;
+}
+</code></pre>
+<p>调用函数：
+</p>
+<pre><code>let sum = add(1, 2);
+</code></pre>
+<p>参数传递：
+</p>
+<pre><code>function modifyObj(obj){
+  obj.name = 'new name';
+}
+
+let obj = {name: 'old name'};
+modifyObj(obj);
+console.log(obj.name); // 输出 'new name'
+</code></pre>
+<p>闭包：
+</p>
+<pre><code>function createCounter(){
+  let count = 0;
+  return function(){
+    count++;
+    console.log(count);
+  };
+}
+
+let counter = createCounter();
+counter(); // 输出 1
+counter(); // 输出 2
+</code></pre>
+<p>高阶函数：
+</p>
+<pre><code>function add(a, b){
+  return a + b;
+}
+
+function calculate(func, a, b){
+  return func(a, b);
+}
+
+let sum = calculate(add, 1, 2);
+</code></pre>
+<ol start="7">
+<li>异常处理：</li>
+</ol>
+<pre><code>try {
+  // 可能出现异常的代码
+} catch(error) {
+  // 异常处理逻辑
+}
+</code></pre>
+<p>抛出异常：
+</p>
+<pre><code>throw new Error('error message');
+</code></pre>
+<ol start="8">
+<li>定时器：</li>
+</ol>
+<pre><code>let timer = setTimeout(function(){
+  console.log('timer');
+}, 1000);
+
+clearTimeout(timer);
+</code></pre>
+<ol start="9">
+<li>JSON操作：</li>
+</ol>
+<p>解析JSON：
+</p>
+<pre><code>let str = '{"name": "alice", "age": 18}';
+let obj = JSON.parse(str);
+</code></pre>
+<p>序列化JSON：
+</p>
+<pre><code>let obj = {name: 'alice', age: 18};
+let str = JSON.stringify(obj);
+</code></pre>
+<ol start="10">
+<li>模块化：</li>
+</ol>
+<p>导入模块：
+</p>
+<pre><code>import {add} from './module';
+</code></pre>
+<p>导出模块：
+</p>
+<pre><code>export function add(a, b){
+  return a + b;
+}
+</code></pre>
+<ol start="11">
+<li>Promise</li>
+</ol>
+<p>Promise是一种异步编程的解决方案，它可以用来解决回调地狱的问题，提高代码的可读性和可维护性。
+</p>
+<p>创建Promise对象：
+</p>
+<pre><code>let promise = new Promise(function(resolve, reject){
+  // 异步操作
+  if(/* 操作成功 */){
+    resolve(result);
+  }else{
+    reject(error);
+  }
+});
+</code></pre>
+<p>使用then方法处理Promise：
+</p>
+<pre><code>promise.then(function(result){
+  // 操作成功的处理逻辑
+}, function(error){
+  // 操作失败的处理逻辑
+});
+</code></pre>
+<p>使用catch方法处理Promise：
+</p>
+<pre><code>promise.catch(function(error){
+  // 操作失败的处理逻辑
+});
+</code></pre>
+<ol start="12">
+<li>async/await</li>
+</ol>
+<p>async/await是ES2017中新增的异步编程解决方案，它基于Promise实现，可以进一步简化异步代码的编写。
+</p>
+<p>使用async声明异步函数：
+</p>
+<pre><code>async function fetchData(){
+  // 异步操作
+  return result;
+}
+</code></pre>
+<p>使用await等待异步操作完成：
+</p>
+<pre><code>let result = await fetchData();
+</code></pre>
+<p>使用try-catch处理异步操作的异常：
+</p>
+<pre><code>try{
+  let result = await fetchData();
+}catch(error){
+  // 异常处理逻辑
+}
+</code></pre>
+<ol start="13">
+<li>ES6中的新特性</li>
+</ol>
+<p>ES6是JavaScript中一个重要的版本，它引入了许多新的特性，包括箭头函数、模板字符串、解构赋值、let/const关键字、类、模块化等等。
+</p>
+<p>箭头函数：
+</p>
+<pre><code>let add = (a, b) =&gt; a + b;
+</code></pre>
+<p>模板字符串：
+</p>
+<pre><code>let name = 'alice';
+let str = `hello ${name}`;
+</code></pre>
+<p>解构赋值：
+</p>
+<pre><code>let [a, b] = [1, 2];
+</code></pre>
+<p>let/const关键字：
+</p>
+<pre><code>let name = 'alice';
+const PI = 3.14;
+</code></pre>
+<p>类：
+</p>
+<pre><code>class Person{
+  constructor(name){
+    this.name = name;
+  }
+
+  sayHello(){
+    console.log(`hello ${this.name}`);
+  }
+}
+
+let person = new Person('alice');
+person.sayHello();
+</code></pre>
+<p>模块化：
+</p>
+<pre><code>export function add(a, b){
+  return a + b;
+}
+
+import {add} from './module';
+</code></pre>
+<ol>
+<li>
+<p>数组的常用方法：<code class="_codified_">push</code>、<code class="_codified_">pop</code>、<code class="_codified_">shift</code>、<code class="_codified_">unshift</code>、<code class="_codified_">slice</code>、<code class="_codified_">splice</code>、<code class="_codified_">concat</code>、<code class="_codified_">join</code>、<code class="_codified_">map</code>、<code class="_codified_">reduce</code>、<code class="_codified_">filter</code>、<code class="_codified_">sort</code>、<code class="_codified_">reverse</code> 等。
+</p>
+</li>
+<li>
+<p>对象的常用方法：<code class="_codified_">Object.keys</code>、<code class="_codified_">Object.values</code>、<code class="_codified_">Object.entries</code>、<code class="_codified_">Object.assign</code>、<code class="_codified_">JSON.stringify</code>、<code class="_codified_">JSON.parse</code> 等。
+</p>
+</li>
+<li>
+<p>字符串的常用方法：<code class="_codified_">charAt</code>、<code class="_codified_">charCodeAt</code>、<code class="_codified_">indexOf</code>、<code class="_codified_">lastIndexOf</code>、<code class="_codified_">substr</code>、<code class="_codified_">substring</code>、<code class="_codified_">slice</code>、<code class="_codified_">split</code>、<code class="_codified_">replace</code>、<code class="_codified_">match</code> 等。
+</p>
+</li>
+<li>
+<p>函数的常用方法：<code class="_codified_">bind</code>、<code class="_codified_">call</code>、<code class="_codified_">apply</code>、<code class="_codified_">setTimeout</code>、<code class="_codified_">setInterval</code>、<code class="_codified_">Promise</code>、<code class="_codified_">async/await</code>、<code class="_codified_">try/catch</code> 等。
+</p>
+</li>
+<li>
+<p>DOM 操作的常用方法：<code class="_codified_">getElementById</code>、<code class="_codified_">querySelector</code>、<code class="_codified_">querySelectorAll</code>、<code class="_codified_">createElement</code>、<code class="_codified_">appendChild</code>、<code class="_codified_">removeChild</code>、<code class="_codified_">setAttribute</code>、<code class="_codified_">getAttribute</code>、<code class="_codified_">classList</code> 等。
+</p>
+</li>
+<li>
+<p>事件的常用方法：<code class="_codified_">addEventListener</code>、<code class="_codified_">removeEventListener</code>、<code class="_codified_">preventDefault</code>、<code class="_codified_">stopPropagation</code> 等。
+</p>
+</li>
+<li>
+<p>正则表达式的常用方法：<code class="_codified_">test</code>、<code class="_codified_">exec</code>、<code class="_codified_">match</code>、<code class="_codified_">replace</code>、<code class="_codified_">search</code> 等。
+</p>
+</li>
+<li>
+<p>数学计算的常用方法：<code class="_codified_">Math.round</code>、<code class="_codified_">Math.ceil</code>、<code class="_codified_">Math.floor</code>、<code class="_codified_">Math.abs</code>、<code class="_codified_">Math.max</code>、<code class="_codified_">Math.min</code>、<code class="_codified_">Math.random</code> 等。
+</p>
+</li>
+</ol>
+<p>以上是 JavaScript 中需要掌握的高频方法，掌握这些方法可以提高编码效率，同时也有助于更好地理解 JavaScript 的语法和运行机制。
+</p>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>Json-parse</title><link href="https://neotw.netlify.app/#Json-parse"></link><link href="https://neotw.netlify.app/static/Json-parse.html" rel="alternative" type="text/html"></link><id>c7970f91-f9d4-4411-6290-daef1ff18129</id><updated>2023-05-09T23:40:40</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>在JavaScript中，可以使用<code>JSON.parse()</code>方法将一个JSON格式的字符串转换为JavaScript对象。该方法接受一个字符串参数，并尝试将其解析为有效的JSON格式。如果解析成功，则返回一个对应的JavaScript对象，否则抛出异常。</p><p>以下是一个简单的例子：</p><pre class="hljs"><code class="javascript hljs"><span class="hljs-keyword">const</span> jsonString = <span class="hljs-string">&#x27;{&quot;name&quot;: &quot;John&quot;, &quot;age&quot;: 30, &quot;hobbies&quot;: [&quot;reading&quot;, &quot;traveling&quot;]}&#x27;</span>;
 <span class="hljs-keyword">const</span> obj = <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">parse</span>(jsonString);
 <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(obj);</code></pre><p>在这个例子中，我们定义了一个名为<code>jsonString</code>的字符串，表示一个包含<code>name</code>、<code>age</code>和<code>hobbies</code>属性的JSON对象。然后我们使用<code>JSON.parse()</code>方法将该字符串解析为一个JavaScript对象，并将其保存到名为<code>obj</code>的变量中。最后，我们使用<code>console.log()</code>方法输出该对象。</p><p>如果要在TypeScript中将一个字符串转换为JavaScript对象，则需要使用<code>JSON.parse()</code>方法相同的方式进行转换。例如：</p><pre class="hljs"><code class="typescript hljs"><span class="hljs-keyword">const</span> jsonString = <span class="hljs-string">&#x27;{&quot;name&quot;: &quot;John&quot;, &quot;age&quot;: 30, &quot;hobbies&quot;: [&quot;reading&quot;, &quot;traveling&quot;]}&#x27;</span>;
 <span class="hljs-keyword">const</span> obj = <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">parse</span>(jsonString);
@@ -2326,8 +2731,8 @@ M1001 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 <li>aria2c -d <dirname> <url>&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;</url></dirname></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-badges</title><link href="https://neotw.netlify.app/#neotw-badges"></link><link href="https://neotw.netlify.app/static/neotw-badges.html" rel="alternative" type="text/html"></link><id>f934e3aa-d36d-34bb-609b-922693d9b993</id><updated>2023-05-18T12:28:56</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-562-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-44-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-64-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-3 hours ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-566-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-44-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-64-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-46 seconds ago-green?style=social"></img>  
 </div>
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-command</title><link href="https://neotw.netlify.app/#neotw-command"></link><link href="https://neotw.netlify.app/static/neotw-command.html" rel="alternative" type="text/html"></link><id>188385e0-6b3a-4916-a54a-061d9d29e18f</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <h2>cp</h2>
@@ -5055,7 +5460,17 @@ http
 <p>需要注意的是，除非您有特殊原因需要传递 referrer 信息，否则最好一直使用 rel=“noreferrer” 属性来确保您的站点安全。
 </p>
 </div></div></content><author><name>oeyoews</name></author></entry><entry><title>npm-create</title><link href="https://neotw.netlify.app/#npm-create"></link><link href="https://neotw.netlify.app/static/npm-create.html" rel="alternative" type="text/html"></link><id>d787eda3-1037-c02f-13a2-e069ae982b8b</id><updated>2023-05-04T09:36:31</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre class="hljs"><code class="bash hljs">npx create-next-app nextjs-learning
-yarn create next-app nextjs-learning</code></pre></div></content><author><name>oeyoews</name></author></entry><entry><title>npm-run-all</title><link href="https://neotw.netlify.app/#npm-run-all"></link><link href="https://neotw.netlify.app/static/npm-run-all.html" rel="alternative" type="text/html"></link><id>6dafca49-9190-c6f7-4c35-d603810165f9</id><updated>2023-05-01T20:18:02</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://tailwindcss.com/docs/content-configuration#safelisting-classes:~:text=%E6%82%A8%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8%E5%83%8Fnpm%2Drun%2Dall%E6%88%96%20%E8%BF%99%E6%A0%B7%E7%9A%84%E5%8C%85concurrently%E6%9D%A5%E7%BC%96%E8%AF%91%E6%82%A8%E7%9A%84%20CSS%20%E4%BB%A5%E5%8F%8A%E6%82%A8%E9%80%9A%E5%B8%B8%E7%9A%84%E5%BC%80%E5%8F%91%E5%91%BD%E4%BB%A4%EF%BC%8C%E6%96%B9%E6%B3%95%E6%98%AF%E5%B0%86%E4%B8%80%E4%BA%9B%E8%84%9A%E6%9C%AC%E6%B7%BB%E5%8A%A0%E5%88%B0%E6%82%A8%E7%9A%84%E9%A1%B9%E7%9B%AE%E4%B8%AD%EF%BC%8C%E5%A6%82%E4%B8%8B%E6%89%80%E7%A4%BA%EF%BC%9A" rel="noopener noreferrer" target="_blank">https://tailwindcss.com/docs/content-configuration#safelisting-classes:~:text=%E6%82%A8%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8%E5%83%8Fnpm%2Drun%2Dall%E6%88%96%20%E8%BF%99%E6%A0%B7%E7%9A%84%E5%8C%85concurrently%E6%9D%A5%E7%BC%96%E8%AF%91%E6%82%A8%E7%9A%84%20CSS%20%E4%BB%A5%E5%8F%8A%E6%82%A8%E9%80%9A%E5%B8%B8%E7%9A%84%E5%BC%80%E5%8F%91%E5%91%BD%E4%BB%A4%EF%BC%8C%E6%96%B9%E6%B3%95%E6%98%AF%E5%B0%86%E4%B8%80%E4%BA%9B%E8%84%9A%E6%9C%AC%E6%B7%BB%E5%8A%A0%E5%88%B0%E6%82%A8%E7%9A%84%E9%A1%B9%E7%9B%AE%E4%B8%AD%EF%BC%8C%E5%A6%82%E4%B8%8B%E6%89%80%E7%A4%BA%EF%BC%9A</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>office-tool-plus</title><link href="https://neotw.netlify.app/#office-tool-plus"></link><link href="https://neotw.netlify.app/static/office-tool-plus.html" rel="alternative" type="text/html"></link><id>526b9359-4353-484c-88b5-b152f3b38a47</id><updated>2023-04-13T15:01:43</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>office tool plus</p><p>github
+yarn create next-app nextjs-learning</code></pre></div></content><author><name>oeyoews</name></author></entry><entry><title>npm-run-all</title><link href="https://neotw.netlify.app/#npm-run-all"></link><link href="https://neotw.netlify.app/static/npm-run-all.html" rel="alternative" type="text/html"></link><id>6dafca49-9190-c6f7-4c35-d603810165f9</id><updated>2023-05-01T20:18:02</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://tailwindcss.com/docs/content-configuration#safelisting-classes:~:text=%E6%82%A8%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8%E5%83%8Fnpm%2Drun%2Dall%E6%88%96%20%E8%BF%99%E6%A0%B7%E7%9A%84%E5%8C%85concurrently%E6%9D%A5%E7%BC%96%E8%AF%91%E6%82%A8%E7%9A%84%20CSS%20%E4%BB%A5%E5%8F%8A%E6%82%A8%E9%80%9A%E5%B8%B8%E7%9A%84%E5%BC%80%E5%8F%91%E5%91%BD%E4%BB%A4%EF%BC%8C%E6%96%B9%E6%B3%95%E6%98%AF%E5%B0%86%E4%B8%80%E4%BA%9B%E8%84%9A%E6%9C%AC%E6%B7%BB%E5%8A%A0%E5%88%B0%E6%82%A8%E7%9A%84%E9%A1%B9%E7%9B%AE%E4%B8%AD%EF%BC%8C%E5%A6%82%E4%B8%8B%E6%89%80%E7%A4%BA%EF%BC%9A" rel="noopener noreferrer" target="_blank">https://tailwindcss.com/docs/content-configuration#safelisting-classes:~:text=%E6%82%A8%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8%E5%83%8Fnpm%2Drun%2Dall%E6%88%96%20%E8%BF%99%E6%A0%B7%E7%9A%84%E5%8C%85concurrently%E6%9D%A5%E7%BC%96%E8%AF%91%E6%82%A8%E7%9A%84%20CSS%20%E4%BB%A5%E5%8F%8A%E6%82%A8%E9%80%9A%E5%B8%B8%E7%9A%84%E5%BC%80%E5%8F%91%E5%91%BD%E4%BB%A4%EF%BC%8C%E6%96%B9%E6%B3%95%E6%98%AF%E5%B0%86%E4%B8%80%E4%BA%9B%E8%84%9A%E6%9C%AC%E6%B7%BB%E5%8A%A0%E5%88%B0%E6%82%A8%E7%9A%84%E9%A1%B9%E7%9B%AE%E4%B8%AD%EF%BC%8C%E5%A6%82%E4%B8%8B%E6%89%80%E7%A4%BA%EF%BC%9A</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>obj-clone</title><link href="https://neotw.netlify.app/#obj-clone"></link><link href="https://neotw.netlify.app/static/obj-clone.html" rel="alternative" type="text/html"></link><id>ff8a539a-de4f-2cc5-918b-f3bb585a5067</id><updated>2023-05-22T18:41:06</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>我们可以通过生活中的例子来更加形象地理解深拷贝和浅拷贝。</p><p>假设你有一本书，书中有很多章节，每个章节有许多页，每页上有文字和图片。这本书就可以看作是一个对象，每个章节就是一个数组，每页就是一个对象，文字和图片就是属性值。</p><p>现在你想要把这本书借给你的朋友，但是你不想让朋友修改这本书的内容。如果你使用浅拷贝的方式，就相当于把这本书复制了一份，让你的朋友也可以看到这本书，但是你们两个人看到的是同一本书，如果你的朋友在书中做了标记或修改了内容，你也会看到这些标记和修改。</p><p>如果你使用深拷贝的方式，就相当于把这本书复制了一份，但是你和你的朋友看到的是两本不同的书，你朋友对他的那本书做了任何修改，都不会影响你看到的那本书。</p><p>另外，我们也可以举一个更加简单的例子来理解深拷贝和浅拷贝。假设你有一个盒子，里面放了一个苹果。如果你使用浅拷贝的方式，就相当于你把这个盒子复制了一份，但是两个盒子里面放的还是同一个苹果，如果你从一个盒子里取出苹果，另一个盒子里的苹果也会被取出。如果你使用深拷贝的方式，就相当于你把这个盒子复制了一份，但是两个盒子里面放的是两个完全一样的苹果，如果你从一个盒子里取出苹果，另一个盒子里的苹果还是在原地。</p><p>深拷贝（deep copy）和浅拷贝（shallow copy）是在 JavaScript 中经常用到的概念。</p><p>浅拷贝是指将一个对象的属性值复制到另一个对象，如果属性值是基本数据类型（如字符串、数字、布尔值等），则复制的是基本数据类型的值；如果属性值是引用数据类型（如数组、对象、函数等），则复制的是内存地址，也就是说两个对象会共享同一个引用类型的值。如果其中一个对象修改了这个引用类型的值，另一个对象也会受到影响。</p><p>深拷贝则是将一个对象的所有属性值都复制到另一个对象，包括基本数据类型和引用数据类型。即使原始对象中的引用类型属性值发生了改变，拷贝后的对象中的引用类型属性值也不会受到影响，因为它们指向的是不同的内存地址。</p><p>举个例子，如果我们有一个对象 obj1：</p><pre class="hljs"><code class="javascript hljs"><span class="hljs-keyword">const</span> obj1 = {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;Alice&#x27;</span>,
+  <span class="hljs-attr">age</span>: <span class="hljs-number">18</span>,
+  <span class="hljs-attr">hobbies</span>: [<span class="hljs-string">&#x27;reading&#x27;</span>, <span class="hljs-string">&#x27;dancing&#x27;</span>],
+  <span class="hljs-attr">address</span>: {
+    <span class="hljs-attr">city</span>: <span class="hljs-string">&#x27;Shanghai&#x27;</span>,
+    <span class="hljs-attr">street</span>: <span class="hljs-string">&#x27;Nanjing Road&#x27;</span>,
+  },
+};</code></pre><p>那么浅拷贝 obj2 可以通过以下方式实现：</p><pre class="hljs"><code class="javascript hljs"><span class="hljs-keyword">const</span> obj2 = <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">assign</span>({}, obj1);</code></pre><p>此时修改 obj1 的 hobbies 属性会影响 obj2：</p><pre class="hljs"><code class="javascript hljs">obj1.<span class="hljs-property">hobbies</span>.<span class="hljs-title function_">push</span>(<span class="hljs-string">&#x27;swimming&#x27;</span>);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(obj2.<span class="hljs-property">hobbies</span>); <span class="hljs-comment">// [&#x27;reading&#x27;, &#x27;dancing&#x27;, &#x27;swimming&#x27;]</span></code></pre><p>而深拷贝 obj3 可以通过以下方式实现：</p><pre class="hljs"><code class="javascript hljs"><span class="hljs-keyword">const</span> obj3 = <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">parse</span>(<span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>(obj1));</code></pre><p>此时修改 obj1 的 hobbies 属性不会影响 obj3：</p><pre class="hljs"><code class="javascript hljs">obj1.<span class="hljs-property">hobbies</span>.<span class="hljs-title function_">push</span>(<span class="hljs-string">&#x27;swimming&#x27;</span>);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(obj3.<span class="hljs-property">hobbies</span>); <span class="hljs-comment">// [&#x27;reading&#x27;, &#x27;dancing&#x27;]</span></code></pre><p>需要注意的是，JSON.parse(JSON.stringify()) 这种方式虽然可以实现深拷贝，但是它有一些限制，例如无法拷贝函数、正则表达式等特殊对象。在实际开发中，需要根据具体情况选择合适的方式进行拷贝。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>office-tool-plus</title><link href="https://neotw.netlify.app/#office-tool-plus"></link><link href="https://neotw.netlify.app/static/office-tool-plus.html" rel="alternative" type="text/html"></link><id>526b9359-4353-484c-88b5-b152f3b38a47</id><updated>2023-04-13T15:01:43</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>office tool plus</p><p>github
 <a class="tc-tiddlylink-external" href="https://cloud.tencent.com/developer/article/1858440" rel="noopener noreferrer" target="_blank">https://cloud.tencent.com/developer/article/1858440</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>openai-api-about-project</title><link href="https://neotw.netlify.app/#openai-api-about-project"></link><link href="https://neotw.netlify.app/static/openai-api-about-project.html" rel="alternative" type="text/html"></link><id>bdb95516-34aa-959e-4b3d-000ff719cda6</id><updated>2023-03-11T15:10:12</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>avoic</li></ul><blockquote><div><a class="tc-tiddlylink-external" href="https://github.com/piglei/ai-vocabulary-builder/tree/main/voc_builder" rel="noopener noreferrer" target="_blank">https://github.com/piglei/ai-vocabulary-builder/tree/main/voc_builder</a></div></blockquote><ul><li>chatgpt-vercel</li></ul><blockquote><div><a class="tc-tiddlylink-external" href="https://github.com/ourongxing/chatgpt-vercel" rel="noopener noreferrer" target="_blank">https://github.com/ourongxing/chatgpt-vercel</a></div><div><a class="tc-tiddlylink-external" href="https://www.aitoolgpt.com/" rel="noopener noreferrer" target="_blank">https://www.aitoolgpt.com/</a></div></blockquote></div></content><author><name>oeyoews</name></author></entry><entry><title>opensource-guide</title><link href="https://neotw.netlify.app/#opensource-guide"></link><link href="https://neotw.netlify.app/static/opensource-guide.html" rel="alternative" type="text/html"></link><id>ce7fa384-b30b-cd95-77ba-ed4afd50abac</id><updated>2023-05-02T11:04:26</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://opensource.guide/zh-hans/" rel="noopener noreferrer" target="_blank">https://opensource.guide/zh-hans/</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>optimic-png</title><link href="https://neotw.netlify.app/#optimic-png"></link><link href="https://neotw.netlify.app/static/optimic-png.html" rel="alternative" type="text/html"></link><id>9aa1b042-8cfa-cf10-df0b-31a5996f7e62</id><updated>2023-03-29T15:02:00</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>use pngquant and zopflipng to compressor png</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>ORM</title><link href="https://neotw.netlify.app/#ORM"></link><link href="https://neotw.netlify.app/static/ORM.html" rel="alternative" type="text/html"></link><id>8b8a92c2-7c10-3f10-168d-764dd799dd9c</id><updated>2023-04-11T11:16:15</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>对象关系映射（Object Relational Mapping，简称ORM</p></div></content><author><name>oeyoews</name></author></entry><entry><title>OTP</title><link href="https://neotw.netlify.app/#OTP"></link><link href="https://neotw.netlify.app/static/OTP.html" rel="alternative" type="text/html"></link><id>d9d1e60e-5011-9d97-5200-1d4196ee6b3c</id><updated>2023-03-25T15:24:08</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>one time password</p></div></content><author><name>oeyoews</name></author></entry><entry><title>otp-meaning</title><link href="https://neotw.netlify.app/#otp-meaning"></link><link href="https://neotw.netlify.app/static/otp-meaning.html" rel="alternative" type="text/html"></link><id>a5ac3429-6026-d61e-0fbe-00e2bb7b17df</id><updated>2023-03-15T16:31:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><dl><dt>otp</dt></dl><p>one time password</p></div></content><author><name>oeyoews</name></author></entry><entry><title>overflow-auto</title><link href="https://neotw.netlify.app/#overflow-auto"></link><link href="https://neotw.netlify.app/static/overflow-auto.html" rel="alternative" type="text/html"></link><id>db132fc6-dc9c-a04c-fcc6-a843afcb99c8</id><updated>2023-05-02T10:08:48</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>use flex overflow-atuo</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>pang-test</title><link href="https://neotw.netlify.app/#pang-test"></link><link href="https://neotw.netlify.app/static/pang-test.html" rel="alternative" type="text/html"></link><id>c70c3b4f-7c64-6aeb-fc3e-80cb61ca367c</id><updated>2023-02-26T16:21:31</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>中文English中文空格测试</li><li>中文 English 中文空格测试</li></ul><blockquote><div>汉学家称这个空白字元为「盘古之白」，因为它劈开了全形字和半形字之间的混沌。另有研究显示，打字的时候不喜欢在中文和英文之间加空格的人，感情路都走得很辛苦，有七成的比例会在 34 岁的时候跟自己不爱的人结婚，而其余三成的人最后只能把遗产留给自己的猫。毕竟爱情跟书写都需要适时地留白。</div></blockquote><p>— 与大家共勉之。</p><p><a class="tc-tiddlylink-external" href="https://github.com/vinta/pangu.js" rel="noopener noreferrer" target="_blank">https://github.com/vinta/pangu.js</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>paper-for-chatgpt</title><link href="https://neotw.netlify.app/#paper-for-chatgpt"></link><link href="https://neotw.netlify.app/static/paper-for-chatgpt.html" rel="alternative" type="text/html"></link><id>7b7fd86e-b018-800d-11cc-7843fe840bc7</id><updated>2023-04-12T13:49:12</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>chagpt online to search not suiable paper</p></div></content><author><name>oeyoews</name></author></entry><entry><title>passwd-manager</title><link href="https://neotw.netlify.app/#passwd-manager"></link><link href="https://neotw.netlify.app/static/passwd-manager.html" rel="alternative" type="text/html"></link><id>812df014-7df2-7ac4-6072-abbffd0354f1</id><updated>2023-04-21T17:19:13</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>bitwarden</p></div></content><author><name>oeyoews</name></author></entry><entry><title>password-on-tiddlywiki.info</title><link href="https://neotw.netlify.app/#password-on-tiddlywiki.info"></link><link href="https://neotw.netlify.app/static/password-on-tiddlywiki.info.html" rel="alternative" type="text/html"></link><id>0e75a8f5-be64-4b50-5eaa-5e534b35c470</id><updated>2023-04-28T20:36:34</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre><code>"--password",
  "oeyoews",</code></pre></div></content><author><name>oeyoews</name></author></entry><entry><title>Perplexity</title><link href="https://neotw.netlify.app/#Perplexity"></link><link href="https://neotw.netlify.app/static/Perplexity.html" rel="alternative" type="text/html"></link><id>e734cbff-94b5-2dbd-aa3f-0a1e610da891</id><updated>2023-04-16T10:45:03</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>Perplexity</p></div></content><author><name>oeyoews</name></author></entry><entry><title>personal-docs</title><link href="https://neotw.netlify.app/#personal-docs"></link><link href="https://neotw.netlify.app/static/personal-docs.html" rel="alternative" type="text/html"></link><id>7bee303c-d7a6-b855-e87d-cacf7d071206</id><updated>2023-04-04T23:35:24</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>notion-blog(notion)</li><li>vitepress(docs)</li><li>tiddlywiki(personal notes)</li><li>gastby(blog)</li></ul><hr></hr><ul><li>docus <a class="tc-tiddlylink-external" href="https://docus.dev/" rel="noopener noreferrer" target="_blank">https://docus.dev/</a></li><li>vuepress </li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>pjax</title><link href="https://neotw.netlify.app/#pjax"></link><link href="https://neotw.netlify.app/static/pjax.html" rel="alternative" type="text/html"></link><id>46209b11-2be3-bbf1-3c52-297a8bdeb631</id><updated>2023-05-17T23:52:47</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>PJAX（Partial JavaScript and XML）是一种在 Web 应用程序中实现局部页面刷新的技术，它利用 Ajax、HTML5 的 history API 和浏览器的 pushState 方法来实现无需重新加载整个页面而更新部分页面内容的效果。</p><p>与传统的网页跳转方式不同，PJAX 可以通过异步请求方式获取数据，然后使用 JavaScript 将新的数据渲染到当前页面中的指定区域。这样可以提高页面加载速度、减少服务器的负载，并且可以获得更好的用户体验。</p><p>以下是一个使用 PJAX 实现无刷新页面加载的示例代码：</p><pre class="hljs"><code class="javascript hljs"><span class="hljs-comment">// 监听链接点击事件</span>
 <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) {
@@ -5243,7 +5658,264 @@ const numbers = [1, 2, 3];
 const listItems = numbers.map((number) =&gt; (
   <li key="{number.toString()}">{number}</li>
 ));
-在这里，我们传递了一个匿名函数 (number) =&gt; (<li key="{number.toString()}">{number}</li>) 给 numbers.map() 方法，该方法将遍历数组 numbers 中的每个元素，并将每个元素传递给回调函数。在回调函数中，我们以 number 作为参数，创建一个新的 <li> 元素并设置 key 属性。最终，返回的结果是一个包含三个元素的数组，表示列表中的所有数字。</li></li></p></div></content><author><name>oeyoews</name></author></entry><entry><title>react-native</title><link href="https://neotw.netlify.app/#react-native"></link><link href="https://neotw.netlify.app/static/react-native.html" rel="alternative" type="text/html"></link><id>b0df5bc3-b30d-4921-72d8-ecae7ff97bf1</id><updated>2023-05-03T11:14:57</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>React Native是一种基于React框架开发的移动端应用程序框架，它可以让你使用JavaScript和React的语法来编写原生应用程序。具体而言，React Native向开发者提供了一套类似于Web前端技术的API，包括View、Text、Image等基础组件，还有StyleSheet样式、Flex布局等常见的Web前端技术。</p><p>React Native的主要特点如下：</p><p>1. 原生渲染：与传统的Hybrid应用不同，React Native的组件并不是通过WebView渲染实现的，而是通过原生组件完成的，因此React Native应用程序的性能与原生应用程序非常接近。</p><p>2. 热更新：React Native支持热更新功能，即在应用程序运行中不需要重新打包和发布，就可以实时地更新应用程序的代码和资源文件。</p><p>3. 跨平台：React Native可以同时在iOS和Android平台上运行，并且开发者可以共享部分代码（如业务逻辑层），减少重复开发和维护成本。</p><p>4. 组件化：React Native采用组件化的开发方式，使得应用程序的UI部分可以高度抽象和复用，提高了开发效率和质量。</p><p>5. 社区支持：React Native拥有庞大的社区支持，有许多优秀的第三方组件和工具，可以帮助开发者更快地完成应用程序的开发和测试。</p><p>React Native作为一种新兴的移动端应用程序开发框架，目前已经得到了广泛的应用和支持。由于它与Web前端技术的联系比较紧密，因此对于熟悉React框架和前端技术的开发者来说，学习和使用React Native也相对比较容易。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>react-props</title><link href="https://neotw.netlify.app/#react-props"></link><link href="https://neotw.netlify.app/static/react-props.html" rel="alternative" type="text/html"></link><id>0f167105-ead7-15a5-34e6-e9637227257c</id><updated>2023-04-24T23:22:07</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>{ message } 和 (props) 都是 JavaScript 中传递函数参数的有效方式。</p><p>使用解构赋值 { message } 允许你从传递给函数的对象中提取 message 属性。这可以使函数调用更加简洁和易读，特别是如果对象有许多属性，而你只需要其中的一些属性。然而，如果对象有很多属性，在函数中没有用到，解构可以创建不必要的代码。</p><p>使用 (props) 允许你将具有任意数量属性的对象传递给函数。如果函数需要访问对象的多个属性，或者对象具有不预先知道的可变数量属性，这可能非常有用。然而，如果对象有很多属性，在函数中没有用到，传递整个对象作为 (props) 可能会创建不必要的开销。</p><p>总的来说，{ message } 和 (props) 的选择取决于函数的具体需求和它所期望的对象参数。如果你只需要从对象中提取一些属性，并且预先知道这些属性是什么，解构可以使函数调用更加简洁。如果你需要访问对象的多个属性，或者对象具有可变数量的属性，将整个对象作为 (props) 传递可能更合适。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>react-redux-example</title><link href="https://neotw.netlify.app/#react-redux-example"></link><link href="https://neotw.netlify.app/static/react-redux-example.html" rel="alternative" type="text/html"></link><id>e42d090d-b232-9956-e608-b66e85de5220</id><updated>2023-04-30T19:11:33</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>以下是一个简单的 React 状态管理示例，使用 Redux 作为状态管理库：</p><p>首先，我们需要创建一个 Redux store，并在应用程序中使用它。可以通过以下代码实现：</p><pre class="hljs"><code class="javascript hljs"><span class="hljs-keyword">import</span> { createStore } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;redux&#x27;</span>;
+在这里，我们传递了一个匿名函数 (number) =&gt; (<li key="{number.toString()}">{number}</li>) 给 numbers.map() 方法，该方法将遍历数组 numbers 中的每个元素，并将每个元素传递给回调函数。在回调函数中，我们以 number 作为参数，创建一个新的 <li> 元素并设置 key 属性。最终，返回的结果是一个包含三个元素的数组，表示列表中的所有数字。</li></li></p></div></content><author><name>oeyoews</name></author></entry><entry><title>react-methods</title><link href="https://neotw.netlify.app/#react-methods"></link><link href="https://neotw.netlify.app/static/react-methods.html" rel="alternative" type="text/html"></link><id>5aa8de50-5491-52a8-8992-598e760f2f33</id><updated>2023-05-22T19:54:06</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+<ol>
+<li>
+<p>使用 JSX 创建组件
+</p>
+</li>
+<li>
+<p>使用组件 props 传递数据和方法
+</p>
+</li>
+<li>
+<p>使用 state 存储组件状态
+</p>
+</li>
+<li>
+<p>使用生命周期方法管理组件生命周期
+</p>
+</li>
+<li>
+<p>使用事件处理函数处理用户交互
+</p>
+</li>
+<li>
+<p>使用条件渲染和循环渲染控制组件显示
+</p>
+</li>
+<li>
+<p>使用 ref 获取组件和 DOM 元素的引用
+</p>
+</li>
+<li>
+<p>使用 Context 全局共享数据
+</p>
+</li>
+<li>
+<p>使用 Redux 管理应用状态
+</p>
+</li>
+<li>
+<p>使用 React Router 管理应用路由
+</p>
+</li>
+<li>
+<p>使用 JSX 创建组件
+</p>
+</li>
+</ol>
+<pre class="hljs"><code class="jsx hljs"><span class="hljs-keyword">import</span> <span class="hljs-title class_">React</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">MyComponent</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello World!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></span>;
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title class_">MyComponent</span>;
+</code></pre>
+<ol start="2">
+<li>使用组件 props 传递数据和方法</li>
+</ol>
+<pre class="hljs"><code class="jsx hljs"><span class="hljs-keyword">import</span> <span class="hljs-title class_">React</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">MyComponent</span>(<span class="hljs-params">props</span>) {
+  <span class="hljs-keyword">return</span> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{props.onClick}</span>&gt;</span>{props.label}<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span>;
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title class_">MyComponent</span>;
+</code></pre>
+<ol start="3">
+<li>使用 state 存储组件状态</li>
+</ol>
+<pre class="hljs"><code class="jsx hljs"><span class="hljs-keyword">import</span> <span class="hljs-title class_">React</span>, { useState } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">MyComponent</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [count, setCount] = <span class="hljs-title function_">useState</span>(<span class="hljs-number">0</span>);
+
+  <span class="hljs-keyword">function</span> <span class="hljs-title function_">handleClick</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-title function_">setCount</span>(count + <span class="hljs-number">1</span>);
+  }
+
+  <span class="hljs-keyword">return</span> (
+    <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>You clicked {count} times<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{handleClick}</span>&gt;</span>Click me<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title class_">MyComponent</span>;
+</code></pre>
+<ol start="4">
+<li>使用生命周期方法管理组件生命周期</li>
+</ol>
+<pre class="hljs"><code class="jsx hljs"><span class="hljs-keyword">import</span> <span class="hljs-title class_">React</span>, { <span class="hljs-title class_">Component</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">MyComponent</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">Component</span> {
+  <span class="hljs-title function_">componentDidMount</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;Component mounted&#x27;</span>);
+  }
+
+  <span class="hljs-title function_">componentWillUnmount</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;Component unmounted&#x27;</span>);
+  }
+
+  <span class="hljs-title function_">render</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello World!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></span>;
+  }
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title class_">MyComponent</span>;
+</code></pre>
+<ol start="5">
+<li>使用事件处理函数处理用户交互</li>
+</ol>
+<pre class="hljs"><code class="jsx hljs"><span class="hljs-keyword">import</span> <span class="hljs-title class_">React</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">MyComponent</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">function</span> <span class="hljs-title function_">handleClick</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;Button clicked&#x27;</span>);
+  }
+
+  <span class="hljs-keyword">return</span> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{handleClick}</span>&gt;</span>Click me<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span>;
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title class_">MyComponent</span>;
+</code></pre>
+<ol start="6">
+<li>使用条件渲染和循环渲染控制组件显示</li>
+</ol>
+<pre class="hljs"><code class="jsx hljs"><span class="hljs-keyword">import</span> <span class="hljs-title class_">React</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">MyComponent</span>(<span class="hljs-params">props</span>) {
+  <span class="hljs-keyword">if</span> (props.<span class="hljs-property">isVisible</span>) {
+    <span class="hljs-keyword">return</span> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello World!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></span>;
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+  }
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title class_">MyComponent</span>;
+</code></pre>
+<pre class="hljs"><code class="jsx hljs"><span class="hljs-keyword">import</span> <span class="hljs-title class_">React</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">MyComponent</span>(<span class="hljs-params">props</span>) {
+  <span class="hljs-keyword">const</span> items = props.<span class="hljs-property">items</span>.<span class="hljs-title function_">map</span>(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{item.id}</span>&gt;</span>{item.name}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>);
+
+  <span class="hljs-keyword">return</span> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>{items}<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></span>;
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title class_">MyComponent</span>;
+</code></pre>
+<ol start="7">
+<li>使用 ref 获取组件和 DOM 元素的引用</li>
+</ol>
+<pre class="hljs"><code class="jsx hljs"><span class="hljs-keyword">import</span> <span class="hljs-title class_">React</span>, { useRef } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">MyComponent</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> inputRef = <span class="hljs-title function_">useRef</span>(<span class="hljs-literal">null</span>);
+
+  <span class="hljs-keyword">function</span> <span class="hljs-title function_">handleClick</span>(<span class="hljs-params"></span>) {
+    inputRef.<span class="hljs-property">current</span>.<span class="hljs-title function_">focus</span>();
+  }
+
+  <span class="hljs-keyword">return</span> (
+    <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">{inputRef}</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{handleClick}</span>&gt;</span>Focus input<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title class_">MyComponent</span>;
+</code></pre>
+<ol start="8">
+<li>使用 Context 全局共享数据</li>
+</ol>
+<pre class="hljs"><code class="jsx hljs"><span class="hljs-keyword">import</span> <span class="hljs-title class_">React</span>, { createContext, useContext } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
+
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">MyContext</span> = <span class="hljs-title function_">createContext</span>();
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">MyComponent</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> (
+    <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">MyContext.Provider</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;Hello World!&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ChildComponent</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">MyContext.Provider</span>&gt;</span></span>
+  );
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">ChildComponent</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> value = <span class="hljs-title function_">useContext</span>(<span class="hljs-title class_">MyContext</span>);
+
+  <span class="hljs-keyword">return</span> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>{value}<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></span>;
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title class_">MyComponent</span>;
+</code></pre>
+<ol start="9">
+<li>使用 Redux 管理应用状态</li>
+</ol>
+<pre class="hljs"><code class="jsx hljs"><span class="hljs-keyword">import</span> <span class="hljs-title class_">React</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
+<span class="hljs-keyword">import</span> { connect } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react-redux&#x27;</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">MyComponent</span>(<span class="hljs-params">props</span>) {
+  <span class="hljs-keyword">function</span> <span class="hljs-title function_">handleClick</span>(<span class="hljs-params"></span>) {
+    props.<span class="hljs-title function_">dispatch</span>({ <span class="hljs-attr">type</span>: <span class="hljs-string">&#x27;INCREMENT&#x27;</span> });
+  }
+
+  <span class="hljs-keyword">return</span> (
+    <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Count: {props.count}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{handleClick}</span>&gt;</span>Increment<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">mapStateToProps</span>(<span class="hljs-params">state</span>) {
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">count</span>: state.<span class="hljs-property">count</span>,
+  };
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title function_">connect</span>(mapStateToProps)(<span class="hljs-title class_">MyComponent</span>);
+</code></pre>
+<ol start="10">
+<li>使用 React Router 管理应用路由</li>
+</ol>
+<pre class="hljs"><code class="jsx hljs"><span class="hljs-keyword">import</span> <span class="hljs-title class_">React</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
+<span class="hljs-keyword">import</span> { <span class="hljs-title class_">BrowserRouter</span> <span class="hljs-keyword">as</span> <span class="hljs-title class_">Router</span>, <span class="hljs-title class_">Route</span>, <span class="hljs-title class_">Link</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react-router-dom&#x27;</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Home</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></span>;
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">About</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></span>;
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">MyComponent</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> (
+    <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">Router</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Link</span> <span class="hljs-attr">to</span>=<span class="hljs-string">&quot;/&quot;</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Link</span> <span class="hljs-attr">to</span>=<span class="hljs-string">&quot;/about&quot;</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">exact</span> <span class="hljs-attr">path</span>=<span class="hljs-string">&quot;/&quot;</span> <span class="hljs-attr">component</span>=<span class="hljs-string">{Home}</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">&quot;/about&quot;</span> <span class="hljs-attr">component</span>=<span class="hljs-string">{About}</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Router</span>&gt;</span></span>
+  );
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title class_">MyComponent</span>;
+</code></pre>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>react-native</title><link href="https://neotw.netlify.app/#react-native"></link><link href="https://neotw.netlify.app/static/react-native.html" rel="alternative" type="text/html"></link><id>b0df5bc3-b30d-4921-72d8-ecae7ff97bf1</id><updated>2023-05-03T11:14:57</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>React Native是一种基于React框架开发的移动端应用程序框架，它可以让你使用JavaScript和React的语法来编写原生应用程序。具体而言，React Native向开发者提供了一套类似于Web前端技术的API，包括View、Text、Image等基础组件，还有StyleSheet样式、Flex布局等常见的Web前端技术。</p><p>React Native的主要特点如下：</p><p>1. 原生渲染：与传统的Hybrid应用不同，React Native的组件并不是通过WebView渲染实现的，而是通过原生组件完成的，因此React Native应用程序的性能与原生应用程序非常接近。</p><p>2. 热更新：React Native支持热更新功能，即在应用程序运行中不需要重新打包和发布，就可以实时地更新应用程序的代码和资源文件。</p><p>3. 跨平台：React Native可以同时在iOS和Android平台上运行，并且开发者可以共享部分代码（如业务逻辑层），减少重复开发和维护成本。</p><p>4. 组件化：React Native采用组件化的开发方式，使得应用程序的UI部分可以高度抽象和复用，提高了开发效率和质量。</p><p>5. 社区支持：React Native拥有庞大的社区支持，有许多优秀的第三方组件和工具，可以帮助开发者更快地完成应用程序的开发和测试。</p><p>React Native作为一种新兴的移动端应用程序开发框架，目前已经得到了广泛的应用和支持。由于它与Web前端技术的联系比较紧密，因此对于熟悉React框架和前端技术的开发者来说，学习和使用React Native也相对比较容易。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>react-props</title><link href="https://neotw.netlify.app/#react-props"></link><link href="https://neotw.netlify.app/static/react-props.html" rel="alternative" type="text/html"></link><id>0f167105-ead7-15a5-34e6-e9637227257c</id><updated>2023-04-24T23:22:07</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>{ message } 和 (props) 都是 JavaScript 中传递函数参数的有效方式。</p><p>使用解构赋值 { message } 允许你从传递给函数的对象中提取 message 属性。这可以使函数调用更加简洁和易读，特别是如果对象有许多属性，而你只需要其中的一些属性。然而，如果对象有很多属性，在函数中没有用到，解构可以创建不必要的代码。</p><p>使用 (props) 允许你将具有任意数量属性的对象传递给函数。如果函数需要访问对象的多个属性，或者对象具有不预先知道的可变数量属性，这可能非常有用。然而，如果对象有很多属性，在函数中没有用到，传递整个对象作为 (props) 可能会创建不必要的开销。</p><p>总的来说，{ message } 和 (props) 的选择取决于函数的具体需求和它所期望的对象参数。如果你只需要从对象中提取一些属性，并且预先知道这些属性是什么，解构可以使函数调用更加简洁。如果你需要访问对象的多个属性，或者对象具有可变数量的属性，将整个对象作为 (props) 传递可能更合适。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>react-redux-example</title><link href="https://neotw.netlify.app/#react-redux-example"></link><link href="https://neotw.netlify.app/static/react-redux-example.html" rel="alternative" type="text/html"></link><id>e42d090d-b232-9956-e608-b66e85de5220</id><updated>2023-04-30T19:11:33</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>以下是一个简单的 React 状态管理示例，使用 Redux 作为状态管理库：</p><p>首先，我们需要创建一个 Redux store，并在应用程序中使用它。可以通过以下代码实现：</p><pre class="hljs"><code class="javascript hljs"><span class="hljs-keyword">import</span> { createStore } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;redux&#x27;</span>;
 <span class="hljs-keyword">import</span> rootReducer <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;./reducers&#x27;</span>;
 
 <span class="hljs-keyword">const</span> store = <span class="hljs-title function_">createStore</span>(rootReducer);
@@ -5459,7 +6131,31 @@ React.StrictMode 组件不会在生产环境中运行，它仅在开发环境中
 &lt;/p&gt;</code></pre></div></content><author><name>oeyoews</name></author></entry><entry><title>react01</title><link href="https://neotw.netlify.app/#react01"></link><link href="https://neotw.netlify.app/static/react01.html" rel="alternative" type="text/html"></link><id>5a51edec-61a1-79ed-0826-41dc9f43fe13</id><updated>2023-04-23T12:05:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>命令式 过程优先</li><li>声明式 只关心结果, 不关心过程</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-count</title><link href="https://neotw.netlify.app/#recent-count"></link><link href="https://neotw.netlify.app/static/recent-count.html" rel="alternative" type="text/html"></link><id>6a131e9a-b046-19c3-08bd-35ef7c9ffbfc</id><updated>2023-02-08T18:16:06</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="tc-timeline">
 
 <div class="tc-menu-list-item">
-22nd May 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#3">3</a></span>)
+22nd May 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#9">9</a></span>)
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#react-methods"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#js-methods"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#Tailwindcss"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#badge-cards"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#change-this"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#obj-clone"></a>
+</div>
 
 <div class="tc-menu-list-subitem">
 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#debounce"></a>
@@ -5830,7 +6526,7 @@ React.StrictMode 组件不会在生产环境中运行，它仅在开发环境中
 </div>
 
 <div class="tc-menu-list-item">
-3rd May 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#15">15</a></span>)
+3rd May 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#14">14</a></span>)
 
 <div class="tc-menu-list-subitem">
 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#React"></a>
@@ -5854,10 +6550,6 @@ React.StrictMode 组件不会在生产环境中运行，它仅在开发环境中
 
 <div class="tc-menu-list-subitem">
 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#badge-imageio"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#badge-cards"></a>
 </div>
 
 <div class="tc-menu-list-subitem">
@@ -5984,6 +6676,42 @@ React.StrictMode 组件不会在生产环境中运行，它仅在开发环境中
 </div>
 
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-note-record</title><link href="https://neotw.netlify.app/#recent-note-record"></link><link href="https://neotw.netlify.app/static/recent-note-record.html" rel="alternative" type="text/html"></link><id>2619840e-dc84-d69e-3d32-c2258f306a66</id><updated>2023-04-11T09:39:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><ul>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#react-methods">react-methods</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#js-methods">js-methods</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#Tailwindcss">Tailwindcss</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#badge-cards">badge-cards</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#change-this">change-this</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#obj-clone">obj-clone</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#debounce">debounce</a>
@@ -6436,12 +7164,6 @@ React.StrictMode 组件不会在生产环境中运行，它仅在开发环境中
     </li>
   
     <li>
-		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#badge-cards">badge-cards</a>
-        
-         <span style="color:black;"><sup>recent</sup></span>
-    </li>
-  
-    <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#websocket">websocket</a>
         
          <span style="color:black;"><sup>recent</sup></span>
@@ -6665,12 +7387,6 @@ React.StrictMode 组件不会在生产环境中运行，它仅在开发环境中
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#tailwindcss-gradient-generator">tailwindcss-gradient-generator</a>
-        
-         <span style="color:black;"><sup>recent</sup></span>
-    </li>
-  
-    <li>
-		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#Tailwindcss">Tailwindcss</a>
         
          <span style="color:black;"><sup>recent</sup></span>
     </li>
@@ -8957,7 +9673,7 @@ yarn run surge --domain neotw.surge.sh ./dist <span class="hljs-comment"># suppo
       </div>
     </div>
   </div>
-</div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>Tailwindcss</title><link href="https://neotw.netlify.app/#Tailwindcss"></link><link href="https://neotw.netlify.app/static/Tailwindcss.html" rel="alternative" type="text/html"></link><id>90656fdf-d750-3d1b-2a25-30f57cb5ae3f</id><updated>2023-05-01T20:04:29</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></content><author><name>oeyoews</name></author></entry><entry><title>tailwindcss-box</title><link href="https://neotw.netlify.app/#tailwindcss-box"></link><link href="https://neotw.netlify.app/static/tailwindcss-box.html" rel="alternative" type="text/html"></link><id>5b3bb295-3714-9296-de8a-fd8b29d62cd6</id><updated>2023-05-01T20:18:16</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="font-mono">
+</div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>Tailwindcss</title><link href="https://neotw.netlify.app/#Tailwindcss"></link><link href="https://neotw.netlify.app/static/Tailwindcss.html" rel="alternative" type="text/html"></link><id>90656fdf-d750-3d1b-2a25-30f57cb5ae3f</id><updated>2023-05-22T19:16:07</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></content><author><name>oeyoews</name></author></entry><entry><title>tailwindcss-box</title><link href="https://neotw.netlify.app/#tailwindcss-box"></link><link href="https://neotw.netlify.app/static/tailwindcss-box.html" rel="alternative" type="text/html"></link><id>5b3bb295-3714-9296-de8a-fd8b29d62cd6</id><updated>2023-05-01T20:18:16</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="font-mono">
 <div class="bg-violet-200 rounded p-2 m-1">
 
 </div>
