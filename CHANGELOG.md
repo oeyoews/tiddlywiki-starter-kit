@@ -1,3 +1,10 @@
+# [3.268.0](https://github.com/oeyoews/neotw/compare/v3.267.0...v3.268.0) (2023-05-22)
+
+
+### Features
+
+* add tiddlywiki-medium-zoom ([7961caa](https://github.com/oeyoews/neotw/commit/7961caafda17751a8bb3c02369ea64adf766f6b8))
+
 # [3.267.0](https://github.com/oeyoews/neotw/compare/v3.266.0...v3.267.0) (2023-05-21)
 
 
