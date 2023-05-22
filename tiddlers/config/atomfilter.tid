@@ -1,8 +1,8 @@
 created: 20230206150700293
 creator: oeyoews
-modified: 20230516151732959
+modified: 20230522042026960
 modifier: oeyoews
 title: $:/config/atomfilter
 type: text/vnd.tiddlywiki
 
-[!is[system]]
+[!is[system]!is[binary]]
