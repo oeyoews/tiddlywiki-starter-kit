@@ -1652,7 +1652,7 @@ Undefined widget 'english'
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>GettingStarted</title><link href="https://neotw.netlify.app/#GettingStarted"></link><link href="https://neotw.netlify.app/static/GettingStarted.html" rel="alternative" type="text/html"></link><id>fc927313-83cf-7e0a-53c1-21853f695851</id><updated>2023-05-18T18:09:49</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:bg-white">
 <div class="dark:hidden">
 <img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-560-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-44-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-64-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-60 seconds ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-12 hours ago-green?style=social"></img>  
 </div>
 
 </div></p><p><h3 class="hidden lg:block text-center dark:text-white"> Personal Notes </h3>
@@ -2295,7 +2295,7 @@ M1001 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 &lt;/ul&gt;
 &lt;/div&gt;</url></dirname></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-badges</title><link href="https://neotw.netlify.app/#neotw-badges"></link><link href="https://neotw.netlify.app/static/neotw-badges.html" rel="alternative" type="text/html"></link><id>f934e3aa-d36d-34bb-609b-922693d9b993</id><updated>2023-05-18T12:28:56</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:hidden">
 <img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-560-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-44-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-64-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-60 seconds ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-12 hours ago-green?style=social"></img>  
 </div>
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-command</title><link href="https://neotw.netlify.app/#neotw-command"></link><link href="https://neotw.netlify.app/static/neotw-command.html" rel="alternative" type="text/html"></link><id>188385e0-6b3a-4916-a54a-061d9d29e18f</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <h2>cp</h2>
@@ -6123,60 +6123,60 @@ React.StrictMode 组件不会在生产环境中运行，它仅在开发环境中
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#RIP">RIP</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#create-neotw-app">create-neotw-app</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#2023-05-15">2023-05-15</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#folded-ribbon%2Fexam%2Fleft">folded-ribbon/exam/left</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#folded-ribbon%2Fexam%2Fright">folded-ribbon/exam/right</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#folded-ribbon%2Fmacro">folded-ribbon/macro</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#folded-ribbon%2Fexam%2Fleft-flat">folded-ribbon/exam/left-flat</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#folded-ribbon%2Fexam%2Fright-flat">folded-ribbon/exam/right-flat</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#folded-ribbon%2Fstyles">folded-ribbon/styles</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#neotw-Hello-World">neotw-Hello-World</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
@@ -8109,31 +8109,31 @@ React.StrictMode 组件不会在生产环境中运行，它仅在开发环境中
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#display-four">display-four</a>
         
-         <span style="color:black;"><sup>recent</sup></span>
+        
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#prose-table">prose-table</a>
         
-         <span style="color:black;"><sup>recent</sup></span>
+        
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#mode-bug-on-gnome">mode-bug-on-gnome</a>
         
-         <span style="color:black;"><sup>recent</sup></span>
+        
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#pm2-not-restarted">pm2-not-restarted</a>
         
-         <span style="color:black;"><sup>recent</sup></span>
+        
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#talk-tw-support-keyboards">talk-tw-support-keyboards</a>
         
-         <span style="color:black;"><sup>recent</sup></span>
+        
     </li>
   
     <li>
