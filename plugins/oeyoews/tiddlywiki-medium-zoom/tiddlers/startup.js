@@ -6,7 +6,6 @@ module-type: startup
 zoomjs
 
 \*/
-
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
@@ -18,9 +17,9 @@ zoomjs
   exports.synchronous = true;
   exports.startup = () => {
     window.mediumZoom = require('medium-zoom.min.js');
-    mediumZoom('[data-zoom]');
-    $tw.rootWidget.addEventListener('om-zoom', () => {
-      mediumZoom('[data-zoom]');
+    // mediumZoom('img');
+    $tw.rootWidget.addEventListener('om-zoom-image', () => {
+      mediumZoom('img');
     });
   };
 })();
