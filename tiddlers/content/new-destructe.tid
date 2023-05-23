@@ -1,0 +1,17 @@
+created: 20230523050118396
+creator: oeyoews
+modified: 20230523050143683
+modifier: oeyoews
+tags: ES6
+title: new-destructe
+type: text/vnd.tiddlywiki
+
+```js
+const demo = {
+  rawname: 'tom',
+  age: 2,
+};
+
+const { rawname: newname } = demo;
+console.log(newname);
+```
