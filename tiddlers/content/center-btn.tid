@@ -1,0 +1,17 @@
+created: 20230523014222656
+creator: oeyoews
+modified: 20230523014244834
+modifier: oeyoews
+tags: CSS
+title: center-btn
+type: text/vnd.tiddlywiki
+
+transform: translate(-50%, -50%);
+
+This CSS property is used to move an element from its original position using percentage values. It moves the element horizontally and vertically by a certain percentage amount, calculated from its own dimensions.
+
+The "translate" property takes two values: a horizontal value and a vertical value. The first value represents the horizontal distance that the element should be moved, and the second value represents the vertical distance that the element should be moved.
+
+The values are expressed as percentages relative to the element's own size, with "0%" being the default position. A negative value will move the element in the opposite direction.
+
+The "translate" property is often used in conjunction with the "position" property to center an element on the page. By setting the element's position to "absolute" or "fixed", and then using "translate(-50%, -50%)" to move it halfway across both the horizontal and vertical axes, the element will be centered precisely in the middle of its parent container.
