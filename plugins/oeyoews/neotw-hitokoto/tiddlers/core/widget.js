@@ -43,8 +43,13 @@ Hitokoto widget
       parent.insertBefore(hitokotoNode, nextSibling);
       this.domNodes.push(hitokotoNode);
 
-      const fetchHitokoto = () => {
-        fetch('https://v1.hitokoto.cn')
+      const fetchHitokoto = async () => {
+        const response = await fetch('https://v1.hitokoto.cn');
+        const { hitokoto: hitokotoText, from } = await response.json();
+        const hitokotoFrom = '@' + from;
+        hitokotoNode.textContent = `${hitokotoText} ${hitokotoFrom}`;
+
+        /* fetch('https://v1.hitokoto.cn')
           .then(response => response.json())
           .then(data => {
             const hitokotoText = data.hitokoto;
@@ -54,7 +59,7 @@ Hitokoto widget
           .catch(console.error)
           .finally(() => {
             this.executing = false;
-          });
+          }); */
       };
 
       const _ = require('lodash.min.js');
