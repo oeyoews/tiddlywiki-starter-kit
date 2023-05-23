@@ -5,7 +5,7 @@ list-before: $:/core/ui/ViewTemplate/title
 \define addcover()
 <$list filter="[{$:/info/url/protocol}match[http:]]">
     <div class="gk0wk-notionbg-addbuttons">
-      <$button setTitle=<<tiddler>> setField="page-cover" setTo={{$:/plugins/Gk0Wk/notionpage-covericon/default-pagecover-url}} tooltip="Add Cover">{{$:/core/images/picture}} Add Cover</$button>
+    <$button setTitle="alpine" setField="page-cover" setTo={{{ [[$:/plugins/Gk0Wk/notionpage-covericon/default-pagecover-url]get[text]addsuffix[&]addsuffix<currentTiddler>] }}} tooltip="Add Cover">{{$:/core/images/picture}} Add Cover</$button>
     </div>
 </$list>
 \end
