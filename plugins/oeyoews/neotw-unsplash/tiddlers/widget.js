@@ -125,7 +125,7 @@ neotw-unsplash widget
           'transition',
         );
         // copyBtn.dataset.photoUrl = photo.urls.regular;
-        copyBtn.dataset.photoUrl = `<img src="${photo.urls.regular}" alt="Unsplash Image" class="rounded"/>`;
+        copyBtn.dataset.photoUrl = `<$image source="${photo.urls.regular}" alt="Unsplash Image" fancybox="yes"/>`;
         copyBtn.textContent = 'Copy';
 
         // 在鼠标悬停时显示复制按钮
