@@ -84,7 +84,7 @@ neotw-unsplash widget
             window.localStorage.setItem('unsplashApiKey', input.trim());
           }
         }
-        const apiUrl = `https://api.unsplash.com/search/photos?query=${query}&client_id=${apiKey}&lang=en&per_page=21`;
+        const apiUrl = `https://api.unsplash.com/search/photos?query=${query}&orientation=landscape&client_id=${apiKey}&lang=en&per_page=21`;
         const response = await fetch(apiUrl);
         const data = await response.json();
         return data.results;
@@ -124,7 +124,8 @@ neotw-unsplash widget
           'duration-400',
           'transition',
         );
-        copyBtn.dataset.photoUrl = photo.urls.regular;
+        // copyBtn.dataset.photoUrl = photo.urls.regular;
+        copyBtn.dataset.photoUrl = `<img src="${photo.urls.regular}" alt="Unsplash Image" class="rounded"/>`;
         copyBtn.textContent = 'Copy';
 
         // 在鼠标悬停时显示复制按钮
