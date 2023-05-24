@@ -1,86 +1,28 @@
-const { spawn } = require('child_process');
+const simpleGit = require('simple-git');
 
-// 1. 拉取远程仓库最新代码
-const pull = spawn('git', ['pull']);
+// 初始化 simple-git
+const git = simpleGit();
 
-pull.stdout.on('data', data => {
-  console.log(`stdout: ${data}`);
-});
-
-pull.stderr.on('data', data => {
-  console.error(`stderr: ${data}`);
-});
-
-pull.on('close', code => {
-  console.log(`child process exited with code ${code}`);
-
-  // 2. 添加变更文件
-  const add = spawn('git', ['add', '.']);
-
-  add.stdout.on('data', data => {
-    console.log(`stdout: ${data}`);
-  });
-
-  add.stderr.on('data', data => {
-    console.error(`stderr: ${data}`);
-  });
-
-  add.on('close', code => {
-    console.log(`child process exited with code ${code}`);
-
-    // 3. 提交变更文件
-    const commit = spawn('git', ['commit', '-m', 'Updated With AI']);
-
-    commit.stdout.on('data', data => {
-      console.log(`stdout: ${data}`);
-    });
-
-    commit.stderr.on('data', data => {
-      console.error(`stderr: ${data}`);
-    });
-
-    commit.on('close', code => {
-      console.log(`child process exited with code ${code}`);
-
-      // 4. 推送变更文件
-      const push = spawn('git', ['push']);
-
-      push.stdout.on('data', data => {
-        console.log(`stdout: ${data}`);
-      });
-
-      push.stderr.on('data', data => {
-        console.error(`stderr: ${data}`);
-      });
-
-      push.on('close', code => {
-        console.log(`child process exited with code ${code}`);
-
-        if (code !== 0) {
-          // 5. 如果推送失败，则使用merge方法来合并冲突
-          const merge = spawn('git', ['merge']);
-
-          merge.stdout.on('data', data => {
-            console.log(`stdout: ${data}`);
-          });
-
-          merge.stderr.on('data', data => {
-            console.error(`stderr: ${data}`);
-          });
-
-          merge.on('close', code => {
-            console.log(`child process exited with code ${code}`);
-
-            if (code !== 0) {
-              console.error('Failed to merge changes');
-            } else {
-              console.log('Changes merged successfully');
-            }
-          });
-        } else {
-          console.log('Changes pushed successfully');
-        }
-      });
-    });
-  });
+// 检查文件状态
+git.status((err, status) => {
+  if (err) {
+    console.log(err);
+  } else {
+    // 如果有修改或新增的文件
+    if (status.modified.length || status.not_added.length) {
+      // 添加所有文件到暂存区
+      git
+        .add('.')
+        .then(() => {
+          // 提交所有文件
+          git
+            .commit('Updated with AI')
+            .then(() => console.log('Changes committed!'))
+            .catch(err => console.error(err));
+        })
+        .catch(err => console.error(err));
+    } else {
+      console.log('No changes to commit.');
+    }
+  }
 });
