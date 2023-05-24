@@ -18,6 +18,7 @@ git.status((err, status) => {
           git
             .commit('Updated with AI')
             .then(() => console.log('Changes committed!'))
+            .push()
             .catch(err => console.error(err));
         })
         .catch(err => console.error(err));
