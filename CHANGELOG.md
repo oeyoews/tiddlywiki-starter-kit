@@ -1,3 +1,10 @@
+# [3.270.0](https://github.com/oeyoews/neotw/compare/v3.269.0...v3.270.0) (2023-05-24)
+
+
+### Features
+
+* add update.js ([d539ef4](https://github.com/oeyoews/neotw/commit/d539ef4b99510af998264072d449cfd5393a544f))
+
 # [3.269.0](https://github.com/oeyoews/neotw/compare/v3.268.0...v3.269.0) (2023-05-24)
 
 
