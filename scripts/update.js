@@ -1,46 +1,85 @@
-// push git repo, if have conflict, use merge
+const { spawn } = require('child_process');
 
-const { exec } = require('child_process');
+// 1. 拉取远程仓库最新代码
+const pull = spawn('git', ['pull']);
 
-// 拉取远程仓库最新代码
-exec('git pull origin', (err, stdout, stderr) => {
-  if (err) {
-    console.error('拉取远程仓库最新代码失败：', err);
-    return;
-  }
-  console.log('拉取远程仓库最新代码成功!');
+pull.stdout.on('data', data => {
+  console.log(`stdout: ${data}`);
+});
 
-  // 添加变更文件
-  exec('git add .', (err, stdout, stderr) => {
-    if (err) {
-      console.error('添加变更文件失败：', err);
-      return;
-    }
-    console.log('添加变更文件成功!');
+pull.stderr.on('data', data => {
+  console.error(`stderr: ${data}`);
+});
 
-    // 提交变更文件
-    exec('git commit -m "提交变更文件"', (err, stdout, stderr) => {
-      if (err) {
-        console.error('提交变更文件失败：', err);
-        return;
-      }
-      console.log('提交变更文件成功!');
+pull.on('close', code => {
+  console.log(`child process exited with code ${code}`);
 
-      // 推送变更文件
-      exec('git push', (err, stdout, stderr) => {
-        if (err) {
-          console.error('推送变更文件失败：', err);
-          // 如果推送失败，则尝试合并冲突
-          exec('git merge --no-ff --no-edit', (err, stdout, stderr) => {
-            if (err) {
-              console.error('合并冲突失败：', err);
-              return;
-            }
-            console.log('合并冲突成功!');
+  // 2. 添加变更文件
+  const add = spawn('git', ['add', '.']);
+
+  add.stdout.on('data', data => {
+    console.log(`stdout: ${data}`);
+  });
+
+  add.stderr.on('data', data => {
+    console.error(`stderr: ${data}`);
+  });
+
+  add.on('close', code => {
+    console.log(`child process exited with code ${code}`);
+
+    // 3. 提交变更文件
+    const commit = spawn('git', ['commit', '-m', 'Updated With AI']);
+
+    commit.stdout.on('data', data => {
+      console.log(`stdout: ${data}`);
+    });
+
+    commit.stderr.on('data', data => {
+      console.error(`stderr: ${data}`);
+    });
+
+    commit.on('close', code => {
+      console.log(`child process exited with code ${code}`);
+
+      // 4. 推送变更文件
+      const push = spawn('git', ['push']);
+
+      push.stdout.on('data', data => {
+        console.log(`stdout: ${data}`);
+      });
+
+      push.stderr.on('data', data => {
+        console.error(`stderr: ${data}`);
+      });
+
+      push.on('close', code => {
+        console.log(`child process exited with code ${code}`);
+
+        if (code !== 0) {
+          // 5. 如果推送失败，则使用merge方法来合并冲突
+          const merge = spawn('git', ['merge']);
+
+          merge.stdout.on('data', data => {
+            console.log(`stdout: ${data}`);
           });
-          return;
+
+          merge.stderr.on('data', data => {
+            console.error(`stderr: ${data}`);
+          });
+
+          merge.on('close', code => {
+            console.log(`child process exited with code ${code}`);
+
+            if (code !== 0) {
+              console.error('Failed to merge changes');
+            } else {
+              console.log('Changes merged successfully');
+            }
+          });
+        } else {
+          console.log('Changes pushed successfully');
         }
-        console.log('推送变更文件成功!');
       });
     });
   });
