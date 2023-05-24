@@ -1,11 +1,12 @@
-/**
- * async merge
- *
- */
 const simpleGit = require('simple-git');
 
 // 初始化 simple-git
 const git = simpleGit();
+
+/**
+ * async merge
+ *
+ */
 
 // 定义一个异步函数来提交所有修改过的文件
 async function commitChanges() {
@@ -71,11 +72,6 @@ commitChanges();
  * async not merge
  *
  */
-/* const simpleGit = require('simple-git');
-
-// 初始化 simple-git
-const git = simpleGit();
-
 // 定义一个异步函数来提交所有修改过的文件
 async function commitChanges() {
   try {
@@ -113,17 +109,12 @@ async function commitChanges() {
 }
 
 // 调用异步函数来提交所有修改过的文件
-commitChanges(); */
+commitChanges(); * /
 
 /**
  * promise
  *
  */
-
-/* const simpleGit = require('simple-git');
-
-// 初始化 simple-git
-const git = simpleGit();
 
 // 获取修改过的文件列表
 git
@@ -169,4 +160,4 @@ git
       })
       .catch(err => console.error('Failed to commit and push changes:', err));
   })
-  .catch(err => console.error('Failed to get status:', err)); */
+  .catch(err => console.error('Failed to get status:', err)); * /
