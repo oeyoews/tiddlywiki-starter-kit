@@ -18,8 +18,8 @@ git.status((err, status) => {
           git
             .commit('Commit message')
             .then(() => {
-              console
-                .log('Changes committed!')
+              console.log('Changes committed!');
+              git
                 .push('origin', 'main')
                 .then(() => console.log('Changes pushed to remote repository.'))
                 .catch(err => console.error('Failed to push changes:', err));
