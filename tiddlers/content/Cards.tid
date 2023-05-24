@@ -1,13 +1,13 @@
 created: 20230501062851560
 creator: oeyoews
-modified: 20230513032331256
+modified: 20230524041333074
 modifier: oeyoews
 tags: 
 title: Cards
 type: text/vnd.tiddlywiki
 
 \define img(tag, img:"banner.png")
-<$button message="om-sound" class="shadow-none rounded-md p-4 hover:scale-105 transition-all duration-200 bg-transparent hover:bg-slate-100 dark:hover:bg-transparent delay-100">
+<$button class="shadow-none rounded-md p-4 hover:scale-105 transition-all duration-200 bg-transparent hover:bg-slate-100 dark:hover:bg-transparent delay-100">
 <div class="relative">
         <div class="absolute top-0 right-0">
             <div class="inline-block text-slate-400 rounded-full">
@@ -22,7 +22,7 @@ type: text/vnd.tiddlywiki
 \end
 
 <h3 class="hidden lg:block text-center dark:text-white"> Personal Notes </h3>
-<div class="grid-cols-6 overflow-auto gap-8 rounded-lg p-4 hidden lg:grid">
+<div class="grid-cols-5 overflow-auto gap-8 rounded-lg p-4 hidden lg:grid">
 <<img tag:'New' img:'new.png'>>
 <<img tag:'Article' img:'articles.png'>>
 <<img tag:'React' img:'react.png' >>
