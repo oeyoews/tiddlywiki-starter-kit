@@ -26,6 +26,8 @@ title: $:/config/EmptyStoryMessage
   <$gli class="text-center mt-4 text-gray-500"/>
 </$list>
 
+<!-- {{$:/plugins/oeyoews/tiddlywiki-cards/tips}} -->
+
 <!-- <<folded-ribbon text:"Neotw" class:oleft style:"--c: #F8CA00;color: #000;--f:0px" >> -->
 <!-- <<folded-ribbon text:"Home" class:oright style:"--c: #F8CA00;color: #000;--f:0px" >> -->
 <!-- <<oribbon>> -->
