@@ -1,3 +1,10 @@
+# [3.269.0](https://github.com/oeyoews/neotw/compare/v3.268.0...v3.269.0) (2023-05-24)
+
+
+### Features
+
+* add sync.yml ([71f93eb](https://github.com/oeyoews/neotw/commit/71f93eb28af50f09ae622b5017d7f3e8fbf0e430))
+
 # [3.268.0](https://github.com/oeyoews/neotw/compare/v3.267.0...v3.268.0) (2023-05-22)
 
 
