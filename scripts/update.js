@@ -7,7 +7,6 @@ const git = simpleGit();
  * async merge
  *
  */
-
 // 定义一个异步函数来提交所有修改过的文件
 async function commitChanges() {
   try {
@@ -72,6 +71,9 @@ commitChanges();
  * async not merge
  *
  */
+
+/*
+
 // 定义一个异步函数来提交所有修改过的文件
 async function commitChanges() {
   try {
@@ -109,13 +111,14 @@ async function commitChanges() {
 }
 
 // 调用异步函数来提交所有修改过的文件
-commitChanges(); * /
+commitChanges(); */
 
 /**
  * promise
  *
  */
 
+/*
 // 获取修改过的文件列表
 git
   .status()
@@ -160,4 +163,4 @@ git
       })
       .catch(err => console.error('Failed to commit and push changes:', err));
   })
-  .catch(err => console.error('Failed to get status:', err)); * /
+  .catch(err => console.error('Failed to get status:', err)); */
