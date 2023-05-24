@@ -1,0 +1,9 @@
+title: $:/plugins/oeyoews/tiddlywiki-cards/tips
+
+<div class="fixed bottom-4 right-4 bg-slate-100 p-4 rounded-lg shadow-lg z-[1000]">
+  <h2 class="text-lg font-bold m-0">Get started today!</h2>
+  <p class="mb-2">Sign up now to access all of our features.</p>
+<div class="grid">
+  <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Sign up</button>
+</div>
+</div>
