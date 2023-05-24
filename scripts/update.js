@@ -3,6 +3,7 @@ const simpleGit = require('simple-git');
 // 初始化 simple-git
 const git = simpleGit();
 
+// should add use merge
 /**
  * async merge
  *
