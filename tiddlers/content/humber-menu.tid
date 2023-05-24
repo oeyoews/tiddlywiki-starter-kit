@@ -1,0 +1,53 @@
+created: 20230524113611130
+creator: oeyoews
+modified: 20230524113626951
+modifier: oeyoews
+tags: Tailwindcss
+title: humber-menu
+type: text/vnd.tiddlywiki
+
+```html
+<div class="flex items-center justify-between px-4 py-1 bg-gray-900">
+      <div>
+        <a href="#" class="text-white font-bold">Logo</a>
+      </div>
+      <div class="flex md:hidden">
+        <button
+          type="button"
+          class="text-gray-500 hover:text-white focus:outline-none focus:text-white"
+        >
+          <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+            <path
+              v-if="isOpen"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M19.293 16.707a1 1 0 01-1.414 1.414l-6.293-6.293-6.293 6.293a1 1 0 01-1.414-1.414l6.293-6.293-6.293-6.293a1 1 0 011.414-1.414l6.293 6.293 6.293-6.293a1 1 0 011.414 1.414l-6.293 6.293 6.293 6.293z"
+            />
+            <path
+              v-else
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="hidden md:flex">
+        <a
+          href="#"
+          class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+          >Home</a
+        >
+        <a
+          href="#"
+          class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+          >About</a
+        >
+        <a
+          href="#"
+          class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+          >Contact</a
+        >
+      </div>
+    </div>
+```
