@@ -17,7 +17,13 @@ git.status((err, status) => {
           // 提交所有文件
           git
             .commit('Commit message')
-            .then(() => console.log('Changes committed!'))
+            .then(() => {
+              console
+                .log('Changes committed!')
+                .push('origin', 'main')
+                .then(() => console.log('Changes pushed to remote repository.'))
+                .catch(err => console.error('Failed to push changes:', err));
+            })
             .catch(err => console.error(err));
         })
         .catch(err => console.error(err));
@@ -26,9 +32,3 @@ git.status((err, status) => {
     }
   }
 });
-
-// 推送到远程仓库
-git
-  .push('origin', 'main')
-  .then(() => console.log('Changes pushed to remote repository.'))
-  .catch(err => console.error('Failed to push changes:', err));
