@@ -1,0 +1,11 @@
+created: 20230525133553087
+creator: oeyoews
+modified: 20230525133617231
+modifier: oeyoews
+tags: JavaScript
+title: equal-compare
+type: text/vnd.tiddlywiki
+
+* ===
+* ==
+* Object.is()
