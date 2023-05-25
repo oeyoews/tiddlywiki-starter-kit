@@ -26,15 +26,6 @@ neotw-unsplash widget
 
       // 创建搜索栏和搜索按钮
       function createSearchBar() {
-        const searchForm = document.createElement('form');
-        /* const searchForm = $tw.utils.domMaker('div', {
-          class: 'flex justify-center items-center',
-          attributes: {},
-          children: [],
-        }); */
-        searchForm.classList.add('flex', 'justify-center', 'items-center');
-        searchForm.addEventListener('submit', performSearch);
-
         const searchInput = $tw.utils.domMaker('input', {
           class:
             'w-4/5 px-3 py-2 bg-white border border-gray-300 rounded shadow-sm focus:outline-none focus:border-blue-300',
@@ -56,8 +47,12 @@ neotw-unsplash widget
           },
         });
 
-        searchForm.appendChild(searchInput);
-        searchForm.appendChild(searchBtn);
+        // const searchForm = document.createElement('form');
+        const searchForm = $tw.utils.domMaker('form', {
+          class: 'flex justify-center items-center',
+          children: [searchInput, searchBtn],
+        });
+        searchForm.addEventListener('submit', performSearch);
 
         return { searchForm };
       }
@@ -133,9 +128,9 @@ neotw-unsplash widget
 
       // 监听提交事件
       async function performSearch(event) {
-        event.preventDefault(); // 阻止表单提交
-
-        resultsContainer.innerHTML = '';
+        // 阻止表单提交
+        event.preventDefault();
+        resultsContainer.textContent = '';
         const query = event.target.elements.query.value.trim();
 
         if (!query) {
