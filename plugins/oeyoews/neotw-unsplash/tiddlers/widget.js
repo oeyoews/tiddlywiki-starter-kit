@@ -45,24 +45,14 @@ neotw-unsplash widget
           attributes: {
             type: 'submit',
           },
-          eventListeners: {
-            click: performSearch(),
-          },
         });
 
         // const searchForm = document.createElement('form');
         const searchForm = $tw.utils.domMaker('form', {
           class: 'flex justify-center items-center',
           children: [searchInput, searchBtn],
-          eventListeners: {
-            submit: performSearch, // 调用performSearch函数
-          },
         });
-        /* searchForm.classList.add('flex', 'justify-center', 'items-center');
-        searchForm.addEventListener('submit', performSearch); */
-
-        /* searchForm.appendChild(searchInput);
-        searchForm.appendChild(searchBtn); */
+        searchForm.addEventListener('submit', performSearch);
 
         return { searchForm };
       }
@@ -138,10 +128,9 @@ neotw-unsplash widget
 
       // 监听提交事件
       async function performSearch(event) {
-        console.log('🎉');
-        event.preventDefault(); // 阻止表单提交
-
-        resultsContainer.innerHTML = '';
+        // 阻止表单提交
+        event.preventDefault();
+        resultsContainer.textContent = '';
         const query = event.target.elements.query.value.trim();
 
         if (!query) {
