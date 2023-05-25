@@ -37,7 +37,11 @@ neotw-unsplash widget
           },
         });
 
-        // const searchBtn = document.createElement('button');
+        // 在这个代码中，虽然没有显式地声明 searchBtn 是一个提交按钮，但是由于它是被包含在一个表单元素中的，所以它默认就是一个提交按钮。当用户点击 searchBtn 按钮时，该按钮会触发表单的提交事件，从而调用 performSearch 函数来执行搜索操作。
+        //         事件委托是一种常见的优化技巧，它利用事件冒泡机制来减少事件处理程序的数量，从而提高性能和代码的可维护性。具体来说，事件委托的原理是将事件处理程序绑定到父元素上，然后通过事件冒泡机制来捕获子元素上的事件，从而达到统一处理的效果。
+        // 例如，在一个列表中，如果需要为列表项绑定点击事件，可以选择为每个列表项单独绑定事件处理程序，也可以将事件处理程序绑定到列表的父元素上，然后在处理程序中判断事件源是否为列表项，如果是，则执行相应的操作。这样做的好处是，可以避免为每个列表项单独绑定事件处理程序，从而减少代码量和内存占用，同时也可以避免由于动态添加或删除列表项而导致事件处理程序失效的问题。
+        // 事件委托的应用场景很多，例如对于动态生成的元素、列表、表格等，都可以使用事件委托来处理事件，以提高代码的效率和可维护性。
+        // 在这个代码中，由于使用了事件委托的方式来监听表单的提交事件，所以存在事件冒泡。具体来说，当用户点击搜索按钮时，会触发按钮的点击事件，然后该事件会向上冒泡到表单元素，最终触发表单的提交事件。在 performSearch 函数中，可以通过调用 event.preventDefault() 方法来阻止事件的默认行为，从而避免表单的自动提交。
         const searchBtn = $tw.utils.domMaker('button', {
           text: 'Search',
           class:
@@ -140,10 +144,12 @@ neotw-unsplash widget
         try {
           const photos = await searchPhotos(query);
 
-          photos.forEach(photo => {
-            const element = createPhotoElement(photo);
-            resultsContainer.appendChild(element);
-          });
+          if (Array.isArray(photos)) {
+            photos.forEach(photo => {
+              const element = createPhotoElement(photo);
+              resultsContainer.appendChild(element);
+            });
+          }
         } catch (error) {
           console.log(error);
         }
