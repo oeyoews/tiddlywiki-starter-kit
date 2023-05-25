@@ -1,3 +1,10 @@
+## [3.272.1](https://github.com/oeyoews/neotw/compare/v3.272.0...v3.272.1) (2023-05-25)
+
+
+### Performance Improvements
+
+* archive some unused plugins ([2b5a96c](https://github.com/oeyoews/neotw/commit/2b5a96c3ae4396e53b11cf75ed2a39f3cd89c42d))
+
 # [3.272.0](https://github.com/oeyoews/neotw/compare/v3.271.0...v3.272.0) (2023-05-25)
 
 
