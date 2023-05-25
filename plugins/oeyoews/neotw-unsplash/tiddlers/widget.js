@@ -148,19 +148,17 @@ neotw-unsplash widget
           console.log(error);
         }
       }
+
       // 创建搜索栏和搜索按钮
       const { searchForm } = createSearchBar();
 
       const resultsContainer = $tw.utils.domMaker('div', {
         text: '',
-        class: 'flex flex-col justify-center mt-4',
-        attributes: {},
-        children: [],
+        class: 'flex flex-wrap justify-center mt-4',
       });
 
       const container = $tw.utils.domMaker('div', {
         class: 'flex flex-col',
-        attributes: {},
         children: [searchForm, resultsContainer],
       });
 
