@@ -44,6 +44,7 @@ await spinner('Building ...', async () => {
   await $`npx ${bin} --build plugins`;
   /** notebook theme */
   await $`npx ${bin} --build themes`;
+  await $`npx ${bin} --build tiddlyjam`;
   // build empty
   // await $`npx ${bin} --build neotw-empty`;
 

@@ -1,0 +1,35 @@
+created: 20140909110520793
+creator: Adithya
+description: A place for blogs.
+modified: 20230525003426181
+modifier: oeyoews
+name: Blog
+published: 20230525003426180
+renderer: $:/plugins/adithyab/tiddlyjam/renderer/blog/body
+tags: $:/plugins/adithyab/tiddlyjam/category $:/plugins/adithyab/tiddlyjam/page $:/plugins/adithyab/tiddlyjam/internals $:/plugins/adithyab/tiddlyjam/live
+title: blog
+type: text/vnd.tiddlywiki
+
+<section class="section mt-6">
+    <div class="container">
+        <div class="column is-6-desktop is-offset-3-desktop is-8 is-offset-2">
+            <h1 class="title" style="font-size: 400%;">Blog</h1>
+        </div>
+    </div>
+    <div>
+        <div class="container mt-6">
+            <div class="column is-6-desktop is-offset-3-desktop is-8 is-offset-2">
+                <$list filter="[tag[$:/plugins/adithyab/tiddlyjam/live]tag[blog]!sort[published]limit[2]]">
+                    {{||$:/plugins/adithyab/tiddlyjam/renderer/templates/blog_verbose}}
+                </$list>
+            </div>
+        </div>
+        <div class="container mt-6">
+            <div class="column is-6-desktop is-offset-3-desktop is-8 is-offset-2">
+                <$list filter="[tag[$:/plugins/adithyab/tiddlyjam/live]tag[blog]!sort[published]rest[2]]">
+                    {{||$:/plugins/adithyab/tiddlyjam/renderer/templates/blog_compact}}
+                </$list>
+            </div>
+        </div>
+    </div>
+</section>

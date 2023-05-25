@@ -173,6 +173,21 @@
       "[[tiddlywikicore-]addsuffix<version>addsuffix[.js]]",
       "text/plain"
     ],
+    "tiddlyjam": [
+      "--rendertiddlers",
+      "[all[tiddlers+shadows]tag[$:/plugins/adithyab/tiddlyjam/live]]",
+      "$:/plugins/adithyab/tiddlyjam/renderer/base",
+      ".",
+      "text/plain",
+      "--render",
+      "[all[tiddlers+shadows][$:/plugins/adithyab/tiddlyjam/renderer/sitemap]]",
+      "sitemap.xml",
+      "text/plain",
+      "--render",
+      "[all[tiddlers+shadows]tag[$:/plugins/adithyab/tiddlyjam/css]]",
+      "[encodeuricomponent[]addprefix[css/]]",
+      "text/plain"
+    ],
     "feed": [
       "--verbose",
       "--output",
