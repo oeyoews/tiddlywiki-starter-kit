@@ -49,23 +49,13 @@ neotw-unsplash widget
           'focus:border-blue-300',
         );
 
-        const searchBtn = document.createElement('button');
+        // const searchBtn = document.createElement('button');
+        const searchBtn = $tw.utils.domMaker('button', {
+          class:
+            'bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 mx-2 rounded shadow',
+        });
         searchBtn.type = 'submit';
         searchBtn.textContent = 'Search';
-        searchBtn.classList.add(
-          'bg-blue-500',
-          'hover:bg-blue-600',
-          'text-white',
-          'font-semibold',
-          'py-2',
-          'px-4',
-          'mx-2',
-          'rounded',
-          'shadow',
-          'transition',
-          'duration-200',
-        );
-
         searchForm.appendChild(searchInput);
         searchForm.appendChild(searchBtn);
 
@@ -95,38 +85,35 @@ neotw-unsplash widget
         const elementWrapper = document.createElement('div');
         elementWrapper.classList.add('w-full', 'md:w-1/2', 'lg:w-1/3', 'p-4');
 
-        const element = document.createElement('div');
-        element.classList.add(
-          'bg-white',
-          'rounded-lg',
-          'shadow-lg',
-          'overflow-hidden',
-          'w-44',
-          'h-44',
-        );
+        // 在照片元素内部创建一个复制按钮
+        const copyBtn = $tw.utils.domMaker('button', {
+          class:
+            'bg-blue-400 hover:bg-blue-500 text-white py-2 px-4 rounded focus:outline-none focus: shadow-outline transform scale-0 duration-400 transition',
+        });
+        copyBtn.dataset.photoUrl = `<$image source="${photo.urls.regular}" alt="Unsplash Image" fancybox="yes"/>`;
+        copyBtn.textContent = 'Copy';
+
+        // 监听复制图片 URL 的按钮点击事件
+        copyBtn.addEventListener('click', () => {
+          navigator.clipboard.writeText(copyBtn.dataset.photoUrl);
+          pushNotify('info', 'Unplash', 'copyed');
+        });
+
+        // 在照片元素内部创建一个文本元素，显示图片描述信息
+        // const textElement = document.createElement('div');
+        const textElement = $tw.utils.domMaker('div', {
+          class: 'text-white py-2 px-4 text-sm truncate',
+        });
+        textElement.textContent = photo.alt_description;
+
+        // const element = document.createElement('div');
+        const element = $tw.utils.domMaker('div', {
+          class: 'bg-white rounded-lg shadow-lg overflow-hidden w-44 h-44',
+          children: [copyBtn],
+        });
         element.style.backgroundImage = `url(${photo.urls.small})`;
         element.style.backgroundSize = 'cover';
         element.style.backgroundPosition = 'center';
-
-        // 在照片元素内部创建一个复制按钮
-        const copyBtn = document.createElement('button');
-        copyBtn.classList.add(
-          'bg-blue-400',
-          'hover:bg-blue-500',
-          'text-white',
-          'py-2',
-          'px-4',
-          'rounded',
-          'focus:outline-none',
-          'focus:shadow-outline',
-          'transform',
-          'scale-0',
-          'duration-400',
-          'transition',
-        );
-        // copyBtn.dataset.photoUrl = photo.urls.regular;
-        copyBtn.dataset.photoUrl = `<$image source="${photo.urls.regular}" alt="Unsplash Image" fancybox="yes"/>`;
-        copyBtn.textContent = 'Copy';
 
         // 在鼠标悬停时显示复制按钮
         element.addEventListener('mouseenter', () => {
@@ -138,23 +125,6 @@ neotw-unsplash widget
           copyBtn.classList.add('scale-0');
         });
 
-        // 监听复制图片 URL 的按钮点击事件
-        copyBtn.addEventListener('click', () => {
-          navigator.clipboard.writeText(copyBtn.dataset.photoUrl);
-          pushNotify('info', 'Unplash', 'copyed');
-        });
-
-        // 在照片元素内部创建一个文本元素，显示图片描述信息
-        const textElement = document.createElement('div');
-        textElement.classList.add(
-          'text-black',
-          'py-2',
-          'px-4',
-          'text-sm',
-          'truncate',
-        );
-        textElement.textContent = photo.alt_description;
-        element.appendChild(copyBtn);
         elementWrapper.appendChild(element);
         elementWrapper.appendChild(textElement);
 
