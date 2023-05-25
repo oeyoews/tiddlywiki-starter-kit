@@ -36,6 +36,7 @@ list-before: $:/core/ui/ViewTemplate/title
 <$list filter="[<currentTiddler>addprefix[$:/temp/Gk0Wk/notionpage-covericon/ChangeCover/]]" variable="stateTiddler2">
 <$set name="icon" value={{!!icon}}>
 <$set name="cover" value={{!!page-cover}}>
+<!-- <$set name="cover" value={{{ [<currentTiddler>get[page-cover]addsuffix[&]addsuffix<tiddler>] }}}> -->
 <$list filter="[<icon>match[]]">
 <$list filter="[<cover>match[]]">
   <!-- !icon && !cover -->
