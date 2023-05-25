@@ -1,3 +1,10 @@
+# [3.272.0](https://github.com/oeyoews/neotw/compare/v3.271.0...v3.272.0) (2023-05-25)
+
+
+### Features
+
+* add UnsplashAPI widget ([e301bef](https://github.com/oeyoews/neotw/commit/e301bef0fc340ff55b25d0d8ca4adadf77f68b8f))
+
 # [3.271.0](https://github.com/oeyoews/neotw/compare/v3.270.0...v3.271.0) (2023-05-25)
 
 
