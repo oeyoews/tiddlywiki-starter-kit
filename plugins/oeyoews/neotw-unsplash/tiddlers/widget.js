@@ -6,7 +6,7 @@ module-type: widget
 neotw-unsplash widget
 
 \*/
-// TODO: add loading
+
 (function () {
   'use strict';
 
@@ -27,35 +27,35 @@ neotw-unsplash widget
       // 创建搜索栏和搜索按钮
       function createSearchBar() {
         const searchForm = document.createElement('form');
+        /* const searchForm = $tw.utils.domMaker('div', {
+          class: 'flex justify-center items-center',
+          attributes: {},
+          children: [],
+        }); */
         searchForm.classList.add('flex', 'justify-center', 'items-center');
         searchForm.addEventListener('submit', performSearch);
 
-        const searchInput = document.createElement('input');
-
-        searchInput.type = 'text';
-        searchInput.id = 'search-input';
-        searchInput.name = 'query';
-        searchInput.placeholder = 'Search photos...';
-        searchInput.classList.add(
-          'w-4/5',
-          'px-3',
-          'py-2',
-          'bg-white',
-          'border',
-          'border-gray-300',
-          'rounded',
-          'shadow-sm',
-          'focus:outline-none',
-          'focus:border-blue-300',
-        );
+        const searchInput = $tw.utils.domMaker('input', {
+          class:
+            'w-4/5 px-3 py-2 bg-white border border-gray-300 rounded shadow-sm focus:outline-none focus:border-blue-300',
+          attributes: {
+            placeholder: 'Search photos...',
+            type: 'text',
+            id: 'search-input',
+            name: 'query',
+          },
+        });
 
         // const searchBtn = document.createElement('button');
         const searchBtn = $tw.utils.domMaker('button', {
+          text: 'Search',
           class:
             'bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 mx-2 rounded shadow',
+          attributes: {
+            type: 'submit',
+          },
         });
-        searchBtn.type = 'submit';
-        searchBtn.textContent = 'Search';
+
         searchForm.appendChild(searchInput);
         searchForm.appendChild(searchBtn);
 
