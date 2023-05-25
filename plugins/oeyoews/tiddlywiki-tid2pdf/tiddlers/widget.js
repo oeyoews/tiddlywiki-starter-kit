@@ -6,7 +6,8 @@ module-type: widget
 tid2pdf/widget
 
 \*/
-(function () {
+// TODO: long tid not work well
+(function() {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -32,7 +33,7 @@ tid2pdf/widget
       buttonNode.textContent = param;
       buttonNode.className =
         'bg-blue-200 hover:bg-blue-300 duration-200 transition rounded-sm py-1 px-2 transition duration-200 m-1';
-      buttonNode.addEventListener('click', function () {
+      buttonNode.addEventListener('click', function() {
         var doc = new jspdf.jsPDF();
 
         const selector = `[data-tiddler-title="${title}"]`;
@@ -41,7 +42,7 @@ tid2pdf/widget
 
         html2canvas(elements, {
           width: 1000,
-        }).then(function (canvas) {
+        }).then(function(canvas) {
           var imgData = canvas.toDataURL('image/png');
 
           var pdfWidth = doc.internal.pageSize.getWidth();
