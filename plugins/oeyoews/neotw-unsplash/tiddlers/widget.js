@@ -149,21 +149,18 @@ neotw-unsplash widget
         }
       }
 
-      const container = document.createElement('div');
-      container.classList.add('flex', 'flex-col');
-
       // 创建搜索栏和搜索按钮
       const { searchForm } = createSearchBar();
-      container.appendChild(searchForm);
 
-      const resultsContainer = document.createElement('div');
-      resultsContainer.classList.add(
-        'flex',
-        'flex-wrap',
-        'justify-center',
-        'mt-4',
-      );
-      container.appendChild(resultsContainer);
+      const resultsContainer = $tw.utils.domMaker('div', {
+        text: '',
+        class: 'flex flex-wrap justify-center mt-4',
+      });
+
+      const container = $tw.utils.domMaker('div', {
+        class: 'flex flex-col',
+        children: [searchForm, resultsContainer],
+      });
 
       // 在页面中显示照片部件
       parent.insertBefore(container, nextSibling);
