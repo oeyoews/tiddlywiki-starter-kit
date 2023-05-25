@@ -1828,8 +1828,8 @@ Undefined widget 'english'
 </div>
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>GettingStarted</title><link href="https://neotw.netlify.app/#GettingStarted"></link><link href="https://neotw.netlify.app/static/GettingStarted.html" rel="alternative" type="text/html"></link><id>fc927313-83cf-7e0a-53c1-21853f695851</id><updated>2023-05-24T12:25:01</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:bg-white">
 <div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-583-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-45-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-65-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-12 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-584-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-45-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-65-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-32 minutes ago-green?style=social"></img>  
 </div>
 
 </div></p><p><h3 class="hidden lg:block text-center dark:text-white"> Personal Notes </h3>
@@ -1984,7 +1984,87 @@ Undefined widget 'english'
       <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{this.handleClick}</span>&gt;</span>点击我<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span>
     );
   }
-}</code></pre><p>在这个例子中，<code>handleClick</code> 方法定义了处理按钮点击事件的代码，然后在 <code>render</code> 方法中通过 <code>onClick</code> 属性将它绑定到按钮上。</p><p>当用户点击按钮时，React 将自动调用 <code>handleClick</code> 方法，使应用程序能够响应相应的事件并执行相应的操作。</p><p>总之，在 React 中，事件处理函数是一种由程序员编写的函数，用于响应组件中发生的事件，并通过绑定事件监听器的方式将它们关联到相应的 DOM 元素上。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>hayo</title><link href="https://neotw.netlify.app/#hayo"></link><link href="https://neotw.netlify.app/static/hayo.html" rel="alternative" type="text/html"></link><id>6d8a6dae-33d1-c827-6853-e32544b4ccf6</id><updated>2023-04-18T16:18:33</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://www.hayo.com/" rel="noopener noreferrer" target="_blank">https://www.hayo.com/</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>heart</title><link href="https://neotw.netlify.app/#heart"></link><link href="https://neotw.netlify.app/static/heart.html" rel="alternative" type="text/html"></link><id>31899347-74aa-880f-a7fb-f8da8f9e446d</id><updated>2023-01-23T16:04:12</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><svg class="feather feather-heart" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></p></div></content><author><name>oeyoews</name></author></entry><entry><title>heart-joh</title><link href="https://neotw.netlify.app/#heart-joh"></link><link href="https://neotw.netlify.app/static/heart-joh.html" rel="alternative" type="text/html"></link><id>f78aee29-45fe-421e-ba63-dc60dd598f23</id><updated>2023-04-10T20:43:39</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><svg fill="none" height="40.32" style="transform: rotate(0deg);" viewBox="0 0 50 42" width="48"><defs><linearGradient gradientUnits="userSpaceOnUse" id="active-gradient-snow" x1="25" x2="26.3796" y1="42" y2="0.0453673"><stop stop-color="hsl(353deg, 100%, 52%)"></stop><stop offset="1" stop-color="hsl(313deg, 100%, 52%)"></stop></linearGradient><linearGradient gradientUnits="userSpaceOnUse" id="inactive-gradient-snow" x1="15" x2="42" y1="41" y2="-1.5"><stop stop-color="#666" stop-opacity="0.4"></stop><stop offset="1" stop-color="#AAA" stop-opacity="0.4"></stop></linearGradient></defs><mask height="42" id="like-button-mask-snow" mask-type="alpha" maskUnits="userSpaceOnUse" width="50" x="0" y="0"><path d="M13.2537 0.0255029C23.4033 0.0255029 25.0273 10.5191 25.0273 10.5191C25.0273 10.5191 26.6512 -0.60088 37.6129 0.0255029C44.3441 0.410148 48.7484 6.32169 48.9804 12.1981C49.7924 32.7656 28.7678 41.5 25.0273 41.5C21.2868 41.5 -0.549833 32.3459 1.07416 12.1981C1.54782 6.32169 6.29929 0.0255029 13.2537 0.0255029Z" fill="#000000"></path></mask><mask height="42" id="active-gradient-mask-snow" mask-type="alpha" maskUnits="userSpaceOnUse" width="50" x="0" y="0"><polygon fill="#000000" points="
+}</code></pre><p>在这个例子中，<code>handleClick</code> 方法定义了处理按钮点击事件的代码，然后在 <code>render</code> 方法中通过 <code>onClick</code> 属性将它绑定到按钮上。</p><p>当用户点击按钮时，React 将自动调用 <code>handleClick</code> 方法，使应用程序能够响应相应的事件并执行相应的操作。</p><p>总之，在 React 中，事件处理函数是一种由程序员编写的函数，用于响应组件中发生的事件，并通过绑定事件监听器的方式将它们关联到相应的 DOM 元素上。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>handsontable</title><link href="https://neotw.netlify.app/#handsontable"></link><link href="https://neotw.netlify.app/static/handsontable.html" rel="alternative" type="text/html"></link><id>84883421-d90c-d49a-7029-ac6dce1ba3d2</id><updated>2023-05-25T17:56:30</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div><a class="tc-tiddlylink-external" href="https://github.com/Gk0Wk/TW5-CodeMirror-Enhanced/blob/811760507bfcd5493df4d5c117d33d7bfa076ab2/src/cme/core/Options.ts#L4" rel="noopener noreferrer" target="_blank">https://github.com/Gk0Wk/TW5-CodeMirror-Enhanced/blob/811760507bfcd5493df4d5c117d33d7bfa076ab2/src/cme/core/Options.ts#L4</a></div></blockquote><pre class="hljs"><code class="html hljs"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>HandsonTable Export Demo<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- 引入 HandsonTable 样式文件 --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span>
+      <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span>
+      <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/handsontable/dist/handsontable.min.css&quot;</span>
+    /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- 创建一个容器用于放置 HandsonTable --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;hot&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- 引入 HandsonTable JavaScript 文件 --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/handsontable/dist/handsontable.min.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- 引入 Export File 插件 JavaScript 文件 --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/handsontable/plugins/exportFile/exportFile.min.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript">
+      <span class="hljs-comment">// 创建一个 HandsonTable 实例</span>
+      <span class="hljs-keyword">var</span> container = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&quot;hot&quot;</span>);
+      <span class="hljs-keyword">var</span> hot = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Handsontable</span>(container, {
+        <span class="hljs-attr">licenseKey</span>: <span class="hljs-string">&quot;non-commercial-and-evaluation&quot;</span>,
+        <span class="hljs-comment">/* data: [
+          [&quot;&quot;, &quot;&quot;, &quot;&quot;],
+          [&quot;&quot;, &quot;&quot;, &quot;&quot;],
+        ], */</span>
+        <span class="hljs-comment">/* cell: [
+          {
+            // bottom-level cell options overwrite the top-level grid options
+            // apply only to a cell with coordinates (1, 1)
+            row: 2,
+            col: 2,
+            readOnly: true,
+          },
+        ], */</span>
+        <span class="hljs-comment">// show numbers</span>
+        <span class="hljs-attr">rowHeaders</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">readOnly</span>: <span class="hljs-literal">false</span>,
+        <span class="hljs-comment">// show A, B</span>
+        <span class="hljs-attr">colHeaders</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-comment">// 启用 Export File 插件</span>
+        <span class="hljs-attr">exportFile</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">width</span>: <span class="hljs-string">&quot;auto&quot;</span>,
+        <span class="hljs-attr">height</span>: <span class="hljs-string">&quot;auto&quot;</span>,
+        <span class="hljs-attr">customBorders</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">dropdownMenu</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">multiColumnSorting</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">filters</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">manualRowMove</span>: <span class="hljs-literal">true</span>,
+      });
+      <span class="hljs-keyword">var</span> saveBtn = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">&quot;button&quot;</span>);
+      saveBtn.<span class="hljs-property">innerHTML</span> = <span class="hljs-string">&quot;Save JSON&quot;</span>;
+      saveBtn.<span class="hljs-property">onclick</span> = <span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) {
+        <span class="hljs-keyword">var</span> data = hot.<span class="hljs-title function_">getData</span>(); <span class="hljs-comment">// 获取表格数据</span>
+        <span class="hljs-keyword">var</span> json = <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>(data); <span class="hljs-comment">// 将数据转换为 JSON 字符串</span>
+        <span class="hljs-keyword">var</span> blob = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Blob</span>([json], { <span class="hljs-attr">type</span>: <span class="hljs-string">&quot;application/json&quot;</span> }); <span class="hljs-comment">// 创建 Blob 对象</span>
+        <span class="hljs-keyword">var</span> url = <span class="hljs-variable constant_">URL</span>.<span class="hljs-title function_">createObjectURL</span>(blob); <span class="hljs-comment">// 创建 URL</span>
+        <span class="hljs-keyword">var</span> a = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">&quot;a&quot;</span>); <span class="hljs-comment">// 创建 a 元素</span>
+        a.<span class="hljs-property">href</span> = url;
+        a.<span class="hljs-property">download</span> = <span class="hljs-string">&quot;data.json&quot;</span>; <span class="hljs-comment">// 指定文件名</span>
+        <span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-title function_">appendChild</span>(a); <span class="hljs-comment">// 将 a 元素添加到页面</span>
+        a.<span class="hljs-title function_">click</span>(); <span class="hljs-comment">// 模拟点击下载链接</span>
+        <span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-title function_">removeChild</span>(a); <span class="hljs-comment">// 移除 a 元素</span>
+        <span class="hljs-variable constant_">URL</span>.<span class="hljs-title function_">revokeObjectURL</span>(url); <span class="hljs-comment">// 释放 URL 对象</span>
+      };
+
+      <span class="hljs-comment">// 添加一个按钮，点击时将表格导出为 CSV 文件</span>
+      <span class="hljs-keyword">var</span> exportBtn = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">&quot;button&quot;</span>);
+      exportBtn.<span class="hljs-property">innerHTML</span> = <span class="hljs-string">&quot;Export CSV&quot;</span>;
+      exportBtn.<span class="hljs-property">onclick</span> = <span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) {
+        hot
+          .<span class="hljs-title function_">getPlugin</span>(<span class="hljs-string">&quot;exportFile&quot;</span>)
+          .<span class="hljs-title function_">downloadFile</span>(<span class="hljs-string">&quot;csv&quot;</span>, { <span class="hljs-attr">filename</span>: <span class="hljs-string">&quot;data.csv&quot;</span> });
+      };
+      <span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-title function_">appendChild</span>(exportBtn);
+      <span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-title function_">appendChild</span>(saveBtn);
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre></div></content><author><name>oeyoews</name></author></entry><entry><title>hayo</title><link href="https://neotw.netlify.app/#hayo"></link><link href="https://neotw.netlify.app/static/hayo.html" rel="alternative" type="text/html"></link><id>6d8a6dae-33d1-c827-6853-e32544b4ccf6</id><updated>2023-04-18T16:18:33</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://www.hayo.com/" rel="noopener noreferrer" target="_blank">https://www.hayo.com/</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>heart</title><link href="https://neotw.netlify.app/#heart"></link><link href="https://neotw.netlify.app/static/heart.html" rel="alternative" type="text/html"></link><id>31899347-74aa-880f-a7fb-f8da8f9e446d</id><updated>2023-01-23T16:04:12</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><svg class="feather feather-heart" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></p></div></content><author><name>oeyoews</name></author></entry><entry><title>heart-joh</title><link href="https://neotw.netlify.app/#heart-joh"></link><link href="https://neotw.netlify.app/static/heart-joh.html" rel="alternative" type="text/html"></link><id>f78aee29-45fe-421e-ba63-dc60dd598f23</id><updated>2023-04-10T20:43:39</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><svg fill="none" height="40.32" style="transform: rotate(0deg);" viewBox="0 0 50 42" width="48"><defs><linearGradient gradientUnits="userSpaceOnUse" id="active-gradient-snow" x1="25" x2="26.3796" y1="42" y2="0.0453673"><stop stop-color="hsl(353deg, 100%, 52%)"></stop><stop offset="1" stop-color="hsl(313deg, 100%, 52%)"></stop></linearGradient><linearGradient gradientUnits="userSpaceOnUse" id="inactive-gradient-snow" x1="15" x2="42" y1="41" y2="-1.5"><stop stop-color="#666" stop-opacity="0.4"></stop><stop offset="1" stop-color="#AAA" stop-opacity="0.4"></stop></linearGradient></defs><mask height="42" id="like-button-mask-snow" mask-type="alpha" maskUnits="userSpaceOnUse" width="50" x="0" y="0"><path d="M13.2537 0.0255029C23.4033 0.0255029 25.0273 10.5191 25.0273 10.5191C25.0273 10.5191 26.6512 -0.60088 37.6129 0.0255029C44.3441 0.410148 48.7484 6.32169 48.9804 12.1981C49.7924 32.7656 28.7678 41.5 25.0273 41.5C21.2868 41.5 -0.549833 32.3459 1.07416 12.1981C1.54782 6.32169 6.29929 0.0255029 13.2537 0.0255029Z" fill="#000000"></path></mask><mask height="42" id="active-gradient-mask-snow" mask-type="alpha" maskUnits="userSpaceOnUse" width="50" x="0" y="0"><polygon fill="#000000" points="
                 0,42
                 50,42
                 50,42
@@ -2943,8 +3023,8 @@ M1001 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 <li>aria2c -d <dirname> <url>&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;</url></dirname></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-badges</title><link href="https://neotw.netlify.app/#neotw-badges"></link><link href="https://neotw.netlify.app/static/neotw-badges.html" rel="alternative" type="text/html"></link><id>f934e3aa-d36d-34bb-609b-922693d9b993</id><updated>2023-05-18T12:28:56</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-583-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-45-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-65-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-12 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-584-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-45-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-65-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-32 minutes ago-green?style=social"></img>  
 </div>
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-command</title><link href="https://neotw.netlify.app/#neotw-command"></link><link href="https://neotw.netlify.app/static/neotw-command.html" rel="alternative" type="text/html"></link><id>188385e0-6b3a-4916-a54a-061d9d29e18f</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <h2>cp</h2>
@@ -6349,7 +6429,11 @@ React.StrictMode 组件不会在生产环境中运行，它仅在开发环境中
 &lt;/p&gt;</code></pre></div></content><author><name>oeyoews</name></author></entry><entry><title>react01</title><link href="https://neotw.netlify.app/#react01"></link><link href="https://neotw.netlify.app/static/react01.html" rel="alternative" type="text/html"></link><id>5a51edec-61a1-79ed-0826-41dc9f43fe13</id><updated>2023-04-23T12:05:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>命令式 过程优先</li><li>声明式 只关心结果, 不关心过程</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-count</title><link href="https://neotw.netlify.app/#recent-count"></link><link href="https://neotw.netlify.app/static/recent-count.html" rel="alternative" type="text/html"></link><id>6a131e9a-b046-19c3-08bd-35ef7c9ffbfc</id><updated>2023-02-08T18:16:06</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="tc-timeline">
 
 <div class="tc-menu-list-item">
-25th May 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#10">10</a></span>)
+25th May 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#11">11</a></span>)
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#handsontable"></a>
+</div>
 
 <div class="tc-menu-list-subitem">
 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#js-data-type"></a>
@@ -6888,6 +6972,12 @@ React.StrictMode 组件不会在生产环境中运行，它仅在开发环境中
 </div>
 
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-note-record</title><link href="https://neotw.netlify.app/#recent-note-record"></link><link href="https://neotw.netlify.app/static/recent-note-record.html" rel="alternative" type="text/html"></link><id>2619840e-dc84-d69e-3d32-c2258f306a66</id><updated>2023-04-11T09:39:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><ul>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#handsontable">handsontable</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#js-data-type">js-data-type</a>
