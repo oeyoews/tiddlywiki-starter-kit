@@ -30,6 +30,7 @@ neotw-unsplash widget
           class:
             'w-4/5 px-3 py-2 bg-white border border-gray-300 rounded shadow-sm focus:outline-none focus:border-blue-300',
           attributes: {
+            autofocus: '',
             placeholder: 'Search photos...',
             type: 'text',
             id: 'search-input',
