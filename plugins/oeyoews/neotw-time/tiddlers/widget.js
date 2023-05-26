@@ -38,6 +38,7 @@ neotw-time widget
       });
       parent.insertBefore(divNode, nextSibling);
       this.domNodes.push(divNode);
+      this.update();
       this.startTimer();
     }
 
