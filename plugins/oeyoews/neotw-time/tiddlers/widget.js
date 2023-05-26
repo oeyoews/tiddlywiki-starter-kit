@@ -6,6 +6,7 @@ module-type: widget
 neotw-time widget
 
 \*/
+// TODO 实现翻转效果
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
