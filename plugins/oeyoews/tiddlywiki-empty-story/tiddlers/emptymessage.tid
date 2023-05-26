@@ -21,6 +21,11 @@ title: $:/config/EmptyStoryMessage
 <!-- polarbear -->
 <div class="polarbear"></div>
 
+<!--TODO custom-->
+<center class="">
+  <$otime />
+</center>
+
 <!-- commiit info on github -->
 <$list filter="[{$:/info/url/protocol}match[https:]]">
   <$gli class="text-center mt-4 text-gray-500"/>
