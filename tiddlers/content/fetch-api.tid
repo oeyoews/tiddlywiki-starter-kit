@@ -1,9 +1,9 @@
 created: 20230523022921612
 creator: oeyoews
-modified: 20230525145042201
+modified: 20230526041109231
 modifier: oeyoews
 tags: JavaScript
-title: feath-api
+title: fetch-api
 type: text/markdown
 
 Fetch API 使用 Promise 技术来处理异步操作。Fetch API 是用于异步获取资源的新标准 API，它提供了一种更现代、更简洁、更灵活的方式来处理网络请求。
