@@ -29,13 +29,18 @@ neotw-time widget
       this.computeAttributes();
       this.execute();
 
-      const className = this.getAttribute('class');
+      const classNames = this.getAttribute('class', '').split(' ');
 
       const divNode = $tw.utils.domMaker('div', {
         text: '',
         class: 'bg-black text-white rounded inline py-2 px-4 text-xl',
       });
-      divNode.classList.add(className);
+      classNames.forEach(className => {
+        if (className) {
+          divNode.classList.add(className);
+        }
+      });
+
       parent.insertBefore(divNode, nextSibling);
       this.domNodes.push(divNode);
       this.update();
