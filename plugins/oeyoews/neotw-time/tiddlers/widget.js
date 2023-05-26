@@ -31,9 +31,9 @@ neotw-time widget
 
       const divNode = $tw.utils.domMaker('div', {
         text: '',
-        class: '',
+        class: 'font-bold text-lg inline',
         attributes: {
-          id: 'otime',
+          // id: 'otime',
         },
       });
       parent.insertBefore(divNode, nextSibling);
