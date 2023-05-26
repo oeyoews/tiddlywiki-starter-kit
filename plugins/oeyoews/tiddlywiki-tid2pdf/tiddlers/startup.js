@@ -6,7 +6,7 @@ module-type: startup
 tid2pdf module
 
 \*/
-(function() {
+(function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -16,7 +16,7 @@ tid2pdf module
   exports.after = ['load-modules'];
   exports.synchronous = true;
   exports.startup = () => {
-    window.jspdf = require('jspdf.umd.min.js');
+    // window.jspdf = require('jspdf.umd.min.js');
     window.html2canvas = require('html2canvas.min.js');
 
     $tw.rootWidget.addEventListener('om-export-png', event => {

@@ -32,10 +32,23 @@ tid2png/widget
       this.computeAttributes();
       this.execute();
 
-      const buttonNode = this.document.createElement('button');
-      buttonNode.textContent = this.param;
-      buttonNode.className =
-        'bg-lime-200 hover:bg-lime-300 duration-200 transition rounded-sm py-1 px-2 transition duration-200 m-1';
+      const buttonNode = $tw.utils.domMaker('button', {
+        text: this.param,
+        class:
+          'bg-lime-200 hover:bg-lime-300 duration-200 transition rounded-sm py-1 px-2 transition duration-200 m-1',
+        attributes: {},
+        children: [],
+        eventListeners: [
+          {
+            name: 'click',
+            handlerObject: this,
+            handlerMethod: '',
+          },
+        ],
+      });
+
+      parent.insertBefore(buttonNode, nextSibling);
+      this.domNodes.push(buttonNode);
 
       const downloadPng = imgData => {
         // 创建一个<a>元素，并指定其href属性为图像数据URL
@@ -94,20 +107,7 @@ tid2png/widget
           }
         });
       };
-      parent.insertBefore(buttonNode, nextSibling);
-      this.domNodes.push(buttonNode);
     }
-
-    /* refresh() {
-      var changedAttributes = this.computeAttributes();
-      // changedAttributes.title;
-      if (Object.keys(changedAttributes).length > 0) {
-        this.refreshSelf();
-        return true;
-      } else {
-        return false;
-      }
-    } */
   }
 
   exports.tid2png = PNGWidget;
