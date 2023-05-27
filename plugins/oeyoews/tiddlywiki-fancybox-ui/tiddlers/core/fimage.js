@@ -103,19 +103,12 @@ Render this widget into the DOM
     if (this.lazyLoading && tag === 'img') {
       domNode.setAttribute('loading', this.lazyLoading || 'lazy');
     }
-    const aNode = this.document.createElement('a');
-    let fancyboxImage = null;
     if (this.imageFancybox === 'yes') {
-      aNode.setAttribute(
+      domNode.classList.add('cursor-pointer');
+      domNode.setAttribute(
         'data-fancybox',
         this.getVariable('currentTiddler') || 'gallary',
       );
-      aNode.href = src;
-      aNode.setAttribute('data-caption', this.imageTooltip || '');
-      aNode.appendChild(domNode);
-      fancyboxImage = aNode;
-    } else {
-      fancyboxImage = domNode;
     }
 
     // Add classes when the image loads or fails
@@ -137,8 +130,8 @@ Render this widget into the DOM
       false,
     );
     // Insert element
-    parent.insertBefore(fancyboxImage, nextSibling);
-    this.domNodes.push(fancyboxImage);
+    parent.insertBefore(domNode, nextSibling);
+    this.domNodes.push(domNode);
   };
 
   /*
