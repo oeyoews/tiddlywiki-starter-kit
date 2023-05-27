@@ -1,0 +1,19 @@
+title: giscus-inline
+<!-- tags: $:/tags/ViewToolbar -->
+list-before: $:/core/ui/Buttons/more-page-actions
+description: Giscus
+caption: Giscus
+list-before: Giscus
+
+\whitespace trim
+<$button tooltip="" aria-label="" class=<<tv-config-toolbar-class>>>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+{{$:/plugins/oeyoews/tiddlywiki-giscus/icon}}
+<$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/tiddlywiki-giscus/giscus-modal-inline"/>
+</$list>
+<$list filter="[<tv-config-toolbar-text>match[yes]]">
+<span class="tc-btn-text">
+<$text text=""/>
+</span>
+</$list>
+</$button>

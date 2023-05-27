@@ -1,5 +1,5 @@
 /*\
-title: $:/plugins/oeyoews/tiddlywiki-giscus/widget-giscus.js
+title: $:/plugins/oeyoews/tiddlywiki-giscus/widget-giscus-inline.js
 type: application/javascript
 module-type: widget
 
@@ -21,51 +21,23 @@ gisucs widget
       this.computeAttributes();
       this.execute();
 
-      const { id, lang = 'en', theme = 'light' } = this.attributes;
+      const { lang = 'en', theme = 'light' } = this.attributes;
 
       const giscusConfigTiddler = '$:/plugins/oeyoews/tiddlywiki-giscus/config';
       const config = $tw.wiki.getTiddler(giscusConfigTiddler)?.fields || {};
 
-      if (!id) {
-        const warnNode = $tw.utils.domMaker('center', {
-          text: '💎 未正确配置Giscus Id',
-          class: 'text-red-500 font-bold text-xl',
-          attributes: {
-            style: 'color: red ; font-size: 20px; font-weight: bold;',
-          },
-        });
-        parent.insertBefore(warnNode, nextSibling);
-        this.domNodes.push(warnNode);
-        return;
-      }
-
-      // 如果已经存在相同 id 的评论区，直接返回
-      const existingCommentNode = this.document.querySelector(
-        `.oeyoews-giscus[tiddler-title="${id.replace('"', '\\"')}"]`,
-      );
-      if (existingCommentNode) {
-        const warnNode = $tw.utils.domMaker('center', {
-          text: '此评论区已存在，请勿重复渲染！',
-          class: 'text-red-500 font-bold text-xl',
-          attributes: {
-            style: 'color: red ; font-size: 20px; font-weight: bold;',
-          },
-          children: [],
-        });
-        parent.insertBefore(warnNode, nextSibling);
-        this.domNodes.push(warnNode);
-        return;
-      }
       const scriptNode = this.document.createElement('script');
       scriptNode.setAttribute('src', 'https://giscus.app/client.js');
       parent.insertBefore(scriptNode, nextSibling);
       this.domNodes.push(scriptNode);
 
+      const currentTiddler = this.getVariable('currentTiddler') || 'index';
+
       const options = {
         'data-repo': config.repo,
         'date-repo-id': config.repoId,
         'data-category-id': config.categoryId,
-        'data-term': id,
+        'data-term': currentTiddler,
         'data-theme': theme,
         'data-lang': lang,
         'data-category': 'General',
@@ -84,7 +56,7 @@ gisucs widget
         text: 'Loading ...',
         class: 'giscus oeyoews-giscus',
         attributes: {
-          ['tiddler-title']: id,
+          ['tiddler-title']: currentTiddler,
         },
       });
       parent.insertBefore(commentNode, nextSibling);
@@ -92,5 +64,5 @@ gisucs widget
     }
   }
 
-  exports.giscus = GiscusNodeWidget;
+  exports['inline-giscus'] = GiscusNodeWidget;
 })();

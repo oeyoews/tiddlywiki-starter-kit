@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/tiddlywiki-giscus/giscus-modal-inline
+mask-closable: yes
+subtitle: {{$:/plugins/oeyoews/tiddlywiki-giscus/icon}} Giscus {{$:/plugins/oeyoews/tiddlywiki-modal-ui/close-modal}}
+class: o-tm
+
+<$inline-giscus />

@@ -1,5 +1,5 @@
 title: $:/plugins/oeyoews/tiddlywiki-giscus/ui/giscus-modal
-tags: $:/tags/PageControls
+<!-- tags: $:/tags/PageControls -->
 caption: viewtemplate-modal
 list-before: $:/core/ui/Buttons/close
 description: giscus on modal
