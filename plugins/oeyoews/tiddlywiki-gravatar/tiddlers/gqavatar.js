@@ -62,6 +62,7 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
       var size = this.getAttribute('size', '100');
       var alt = this.getAttribute('alt', 'Avatar');
       var src = `https://q1.qlogo.cn/g?b=qq&nk=${email}&s=${size}`;
+      const hash = md5(email.trim().toLowerCase());
 
       switch (type) {
         case 'qq':
@@ -71,12 +72,10 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
           src = `https://github.com/${username}.png?size=${size}`;
           break;
         case 'gravatar':
-          const hash1 = md5(email.trim().toLowerCase());
-          src = `https://gravatar.com/avatar/${hash1}.png?d=identicon&s=${size}`;
+          src = `https://gravatar.com/avatar/${hash}.png?d=identicon&s=${size}`;
           break;
         case 'gravatar-cn':
-          const hash2 = md5(email.trim().toLowerCase());
-          src = `https://cn.gravatar.com/avatar/${hash2}.png?s=${size}`;
+          src = `https://cn.gravatar.com/avatar/${hash}.png?s=${size}`;
           break;
         default:
           src = `https://q1.qlogo.cn/g?b=qq&nk=${email}&s=${size}`;
