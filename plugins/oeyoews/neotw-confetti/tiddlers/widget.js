@@ -24,14 +24,20 @@ module-type: widget
       this.execute();
 
       const text = this.getAttribute('text', 'Click Me!');
-      const button = this.document.createElement('button');
-      button.className = 'bg-red-200 rounded m-1';
-      button.textContent = text;
-      button.addEventListener('click', this.handleClick.bind(this));
+      const buttonNode = $tw.utils.domMaker('button', {
+        text,
+        class: 'bg-red-200 rounded m-1',
+        eventListeners: [
+          {
+            name: 'click',
+            handlerObject: this,
+            handlerMethod: 'handleClick',
+          },
+        ],
+      });
 
-      parent.insertBefore(button, nextSibling);
-
-      this.domNodes.push(button);
+      parent.insertBefore(buttonNode, nextSibling);
+      this.domNodes.push(buttonNode);
     }
 
     handleClick() {
@@ -41,9 +47,8 @@ module-type: widget
       // how use reset method
       function randomConfetti() {
         const index = Math.floor(Math.random() * confettiMethods.length);
-        const method = confettiMethods[index];
         if (method && typeof method === 'function') {
-          method();
+          confettiMethods[index];
         }
       }
 

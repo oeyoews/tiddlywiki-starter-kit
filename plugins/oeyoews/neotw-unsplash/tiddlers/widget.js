@@ -6,8 +6,9 @@ module-type: widget
 neotw-unsplash widget
 
 \*/
-
 (function () {
+  /*jslint node: true, browser: true */
+  /*global $tw: false */
   'use strict';
 
   if (!$tw.browser) return;
@@ -52,7 +53,6 @@ neotw-unsplash widget
           },
         });
 
-        // const searchForm = document.createElement('form');
         const searchForm = $tw.utils.domMaker('form', {
           class: 'flex justify-center items-center',
           children: [searchInput, searchBtn],
@@ -100,13 +100,11 @@ neotw-unsplash widget
         });
 
         // 在照片元素内部创建一个文本元素，显示图片描述信息
-        // const textElement = document.createElement('div');
         const textElement = $tw.utils.domMaker('div', {
           class: 'text-white py-2 px-4 text-sm truncate',
         });
         textElement.textContent = photo.alt_description;
 
-        // const element = document.createElement('div');
         const element = $tw.utils.domMaker('div', {
           class: 'bg-white rounded-lg shadow-lg overflow-hidden w-44 h-44',
           children: [copyBtn],

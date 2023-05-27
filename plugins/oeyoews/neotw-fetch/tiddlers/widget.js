@@ -8,7 +8,7 @@ fetch-mdfile widget
 \*/
 // TODO: refresh textContent
 // debounce
-(function() {
+(function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -27,8 +27,6 @@ fetch-mdfile widget
       this.computeAttributes();
       this.execute();
 
-      const time = new Date().toLocaleString();
-      let param = this.getAttribute('param', `Fetch Mdfile `);
       const timestamp = new Date().getTime();
       const fileName = this.getAttribute('fileName', `MDFile-${timestamp}`);
       const modified = $tw.wiki.getTiddler(fileName)?.fields.modified;
@@ -52,16 +50,6 @@ fetch-mdfile widget
         buttonNode.textContent = `${fileName} updated ${modified}`;
       };
     }
-    /* refresh() {
-      var changedAttributes = this.computeAttributes();
-      changedAttributes.title;
-      if (Object.keys(changedAttributes).length > 0) {
-        this.refreshSelf();
-        return true;
-      } else {
-        return false;
-      }
-    } */
   }
 
   exports['fetch-mdfile'] = FetchWidget;
