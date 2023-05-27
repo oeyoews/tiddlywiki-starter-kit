@@ -6,7 +6,7 @@ module-type: widget
 neotw-type widget
 
 \*/
-(function() {
+(function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -29,21 +29,24 @@ neotw-type widget
       const neotwString = 'demo';
       const text = this.getAttribute('text');
       // not worked
-      const loop = this.getAttribute('loop', 'false');
-      const gradient = this.getAttribute('gradient', 'true');
+      const loop = this.getAttribute('loop', false);
+      const gradient = this.getAttribute('gradient');
       const spanNode = this.document.createElement('span');
       const time = new Date().getTime();
       const id = 'neotwTyping-' + time;
       spanNode.id = id;
       spanNode.textContent = text || neotwString;
-      if (gradient === 'true') {
-        spanNode.className =
-          'text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-500 to-yellow-500';
+      const classNames =
+        'text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-500 to-yellow-500';
+      if (gradient) {
+        classNames.split(' ').forEach(className => {
+          spanNode.classList.add(className);
+        });
       }
       parent.insertBefore(spanNode, nextSibling);
       this.domNodes.push(spanNode);
 
-      new Typed(`#${id}`, {
+      new Typed(this.domNodes[0], {
         strings: [neotwString],
         cursorChar: ' 🐬',
         typeSpeed: 150,

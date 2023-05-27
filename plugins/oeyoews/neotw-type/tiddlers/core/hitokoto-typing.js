@@ -33,8 +33,7 @@ neotw-type widget with hitokoto
       const text =
         sentences[randomIndex].hitokoto + ' ' + sentences[randomIndex].from;
 
-      // TODO: not worked
-      const loop = this.getAttribute('loop', 'false');
+      const loop = this.getAttribute('loop', false);
       const gradient = this.getAttribute('gradient', 'true');
       const spanNode = this.document.createElement('span');
       const time = new Date().getTime();
