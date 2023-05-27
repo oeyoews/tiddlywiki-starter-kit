@@ -63,25 +63,24 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
       var alt = this.getAttribute('alt', 'Avatar');
       var src = `https://q1.qlogo.cn/g?b=qq&nk=${email}&s=${size}`;
 
-      // qq is default
-      if (type === 'qq') {
-        src = `https://q1.qlogo.cn/g?b=qq&nk=${email}&s=${size}`;
-      }
-
-      if (type === 'github') {
-        src = `https://github.com/${username}.png?size=${size}`;
-      }
-
-      // gravatar
-      // https://en.gravatar.com/site/implement/images/
-      if (type === 'gravatar') {
-        const hash = md5(email.trim().toLowerCase());
-        src = `https://gravatar.com/avatar/${hash}.png?d=identicon&s=${size}`;
-      }
-      // gravatar cn not support identicon options
-      if (type === 'gravatar-cn') {
-        const hash = md5(email.trim().toLowerCase());
-        src = `https://cn.gravatar.com/avatar/${hash}.png?s=${size}`;
+      switch (type) {
+        case 'qq':
+          src = `https://q1.qlogo.cn/g?b=qq&nk=${email}&s=${size}`;
+          break;
+        case 'github':
+          src = `https://github.com/${username}.png?size=${size}`;
+          break;
+        case 'gravatar':
+          const hash1 = md5(email.trim().toLowerCase());
+          src = `https://gravatar.com/avatar/${hash1}.png?d=identicon&s=${size}`;
+          break;
+        case 'gravatar-cn':
+          const hash2 = md5(email.trim().toLowerCase());
+          src = `https://cn.gravatar.com/avatar/${hash2}.png?s=${size}`;
+          break;
+        default:
+          src = `https://q1.qlogo.cn/g?b=qq&nk=${email}&s=${size}`;
+          break;
       }
 
       var img = this.document.createElement('img');
@@ -107,13 +106,15 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
 
       let ele = null;
       if (link) {
-        var a = this.document.createElement('a');
-        a.appendChild(img);
-        a.href = link;
-        a.setAttribute('target', '_blank');
-        a.setAttribute('rel', 'noopener noreferrer');
-        a.setAttribute('style', 'text-decoration: none;');
-        ele = a;
+        ele = $tw.utils.domMaker('a', {
+          attributes: {
+            target: '_blank',
+            rel: 'noopener noreferrer',
+            style: 'text-decoration: none;',
+            href: link,
+          },
+          children: [img],
+        });
       } else {
         ele = img;
         // img.crossOrigin = 'anonymous';
@@ -122,9 +123,13 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
       // 在图片加载失败时使用渐变圆形背景
       img.onerror = function () {
         img.style.display = 'none';
-        const mask = document.createElement('div');
-        mask.setAttribute('title', 'gradient avatar');
-        mask.className = `bg-gradient-to-r from-teal-100 to-lime-200 rounded-full align-middle m-1 duration-200 transition object-cover object-center w-${width} h-${width}`;
+        const make = $tw.utils.domMaker('div', {
+          text: 'div',
+          class: `bg-gradient-to-r from-teal-100 to-lime-200 rounded-full align-middle m-1 duration-200 transition object-cover object-center w-${width} h-${width}`,
+          attributes: {
+            title: 'gradient avatar',
+          },
+        });
         mask.style.maxWidth = '24px';
         mask.style.maxHeight = '24px';
         parent.insertBefore(mask, nextSibling);
