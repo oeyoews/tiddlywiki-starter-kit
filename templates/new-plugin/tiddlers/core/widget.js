@@ -6,7 +6,7 @@ module-type: widget
 ${pluginname} widget
 
 \*/
-(function() {
+(function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -26,26 +26,34 @@ ${pluginname} widget
       this.execute();
 
       const param = this.getAttribute('param', 'Test Param');
+      const classNames = this.getAttribute('class', '').split('');
 
-      const divNode = this.document.createElement('div');
-      divNode.id = 'divId';
-      divNode.textContent = param;
-      divNode.className = 'divClass';
-      parent.insertBefore(divNode, nextSibling);
-      this.domNodes.push(divNode);
+      const buttonNode = $tw.utils.domMaker('button', {
+        text: param,
+        class: '',
+        attributes: {},
+        children: [],
+        eventListeners: [
+          {
+            name: 'click',
+            handlerObject: this,
+            handlerMethod: 'handlerClick',
+          },
+        ],
+      });
+      classNames.forEach(className => {
+        if (className) {
+          buttonNode.classList.add(className);
+        }
+      });
+      parent.insertBefore(buttonNode, nextSibling);
+      this.domNodes.push(buttonNode);
     }
 
-    refresh() {
-      var changedAttributes = this.computeAttributes();
-      // changedAttributes.title;
-      if (Object.keys(changedAttributes).length > 0) {
-        this.refreshSelf();
-        return true;
-      } else {
-        return false;
-      }
-    }
+    handlerClick = () => {
+      console.log('button clicked');
+    };
   }
 
-  exports['div-widget'] = DivWidget;
+  exports[''] = DivWidget;
 })();
