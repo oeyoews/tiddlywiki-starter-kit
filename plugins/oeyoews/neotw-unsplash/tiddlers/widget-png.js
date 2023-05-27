@@ -1,0 +1,54 @@
+/*\
+title: widget-unsplash
+type: application/javascript
+module-type: widget
+
+widget-unsplash widget
+
+\*/
+(function () {
+  /*jslint node: true, browser: true */
+  /*global $tw: false */
+  'use strict';
+
+  if (!$tw.browser) return;
+
+  const Widget = require('$:/core/modules/widgets/widget.js').widget;
+
+  class DivWidget extends Widget {
+    constructor(parseTreeNode, options) {
+      super(parseTreeNode, options);
+    }
+
+    render(parent, nextSibling) {
+      this.parentDomNode = parent;
+      this.computeAttributes();
+      this.execute();
+
+      const title = this.getVariable('currentTiddler');
+      const alt = title;
+      const src = `https://source.unsplash.com/random?fm=blurhash&w=50&${title}`;
+      const classNames = this.getAttribute('class', '').split(' ');
+
+      const imgNode = $tw.utils.domMaker('img', {
+        // text: 'Loading ...',
+        class: 'rounded cursor-pointer',
+        attributes: {
+          src,
+          title,
+          alt,
+          ['data-fancybox']: '',
+        },
+      });
+      classNames.forEach(className => {
+        if (className) {
+          imgNode.classList.add(className);
+        }
+      });
+      parent.insertBefore(imgNode, nextSibling);
+      this.domNodes.push(imgNode);
+    }
+  }
+
+  exports['ocover'] = DivWidget;
+})();
