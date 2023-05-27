@@ -133,7 +133,7 @@ neotw-unsplash widget
       async function performSearch(event) {
         // 阻止表单提交
         event.preventDefault();
-        resultsContainer.textContent = '';
+        resultsContainer.textContent = 'Searching...';
         const query = event.target.elements.query.value.trim();
 
         if (!query) {
@@ -142,6 +142,7 @@ neotw-unsplash widget
 
         try {
           const photos = await searchPhotos(query);
+          resultsContainer.textContent = '';
 
           if (Array.isArray(photos)) {
             photos.forEach(photo => {
