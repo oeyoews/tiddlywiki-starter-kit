@@ -31,7 +31,6 @@ widget-unsplash widget
       const classNames = this.getAttribute('class', '').split(' ');
 
       const imgNode = $tw.utils.domMaker('img', {
-        // text: 'Loading ...',
         class: 'rounded cursor-pointer',
         attributes: {
           src,

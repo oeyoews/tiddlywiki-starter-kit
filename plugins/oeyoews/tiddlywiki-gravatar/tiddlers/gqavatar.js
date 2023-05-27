@@ -122,8 +122,7 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
       // 在图片加载失败时使用渐变圆形背景
       img.onerror = function () {
         img.style.display = 'none';
-        const make = $tw.utils.domMaker('div', {
-          text: 'div',
+        const mask = $tw.utils.domMaker('img', {
           class: `bg-gradient-to-r from-teal-100 to-lime-200 rounded-full align-middle m-1 duration-200 transition object-cover object-center w-${width} h-${width}`,
           attributes: {
             title: 'gradient avatar',
