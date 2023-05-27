@@ -30,10 +30,10 @@ gisucs widget
         const warnNode = $tw.utils.domMaker('center', {
           text: '💎 未正确配置Giscus Id',
           class: 'text-red-500 font-bold text-xl',
-          attributes: {},
+          attributes: {
+            style: 'color: red ; font-size: 20px; font-weight: bold;',
+          },
         });
-        warnNode.style.color = 'red';
-        warnNode.style.fontWeight = 'bold';
         parent.insertBefore(warnNode, nextSibling);
         this.domNodes.push(warnNode);
         return;
@@ -44,15 +44,16 @@ gisucs widget
         `.oeyoews-giscus[tiddler-title="${id.replace('"', '\\"')}"]`,
       );
       if (existingCommentNode) {
-        console.warn(`💎 评论区 "${id}" 已存在`);
-        // 如果已经存在评论区，则在插件所在的位置添加一个 span 元素，内容为警告信息
-        const warnNode = this.document.createElement('center');
-        warnNode.style.color = 'red';
-        warnNode.style.fontWeight = 'bold';
-        warnNode.textContent = '此评论区已存在，请勿重复渲染！';
+        const warnNode = $tw.utils.domMaker('center', {
+          text: '此评论区已存在，请勿重复渲染！',
+          class: 'text-red-500 font-bold text-xl',
+          attributes: {
+            style: 'color: red ; font-size: 20px; font-weight: bold;',
+          },
+          children: [],
+        });
         parent.insertBefore(warnNode, nextSibling);
         this.domNodes.push(warnNode);
-        console.warn('此评论区已存在，请勿重复渲染！');
         return;
       } else {
         console.log(`💎 当前评论区为 "${id}"`);
