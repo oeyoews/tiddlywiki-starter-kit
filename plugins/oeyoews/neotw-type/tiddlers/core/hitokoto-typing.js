@@ -34,14 +34,15 @@ neotw-type widget with hitokoto
         sentences[randomIndex].hitokoto + ' ' + sentences[randomIndex].from;
 
       const loop = this.getAttribute('loop', false);
-      const gradient = this.getAttribute('gradient', 'true');
-      const spanNode = this.document.createElement('span');
-      const time = new Date().getTime();
-      const id = 'neotwTyping-' + time;
-      spanNode.id = id;
-      spanNode.textContent = text;
-      if (gradient === 'true') {
-        spanNode.classList.add(
+      const divNode = $tw.utils.domMaker('div', {
+        text,
+        class: '',
+        attributes: {},
+      });
+      const gradient = this.getAttribute('gradient', true);
+      if (gradient) {
+        divNode.classList.add(
+          'inline',
           'text-transparent',
           'bg-clip-text',
           'bg-gradient-to-r',
@@ -50,10 +51,10 @@ neotw-type widget with hitokoto
           'to-yellow-500',
         );
       }
-      parent.insertBefore(spanNode, nextSibling);
-      this.domNodes.push(spanNode);
+      parent.insertBefore(divNode, nextSibling);
+      this.domNodes.push(divNode);
 
-      new Typed(`#${id}`, {
+      new Typed(this.domNodes[0], {
         strings: [text],
         cursorChar: ' 🐬',
         typeSpeed: 100,
