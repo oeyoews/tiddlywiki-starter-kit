@@ -1,3 +1,10 @@
+## [3.274.1](https://github.com/oeyoews/neotw/compare/v3.274.0...v3.274.1) (2023-05-27)
+
+
+### Performance Improvements
+
+* remove aNode ([3b89614](https://github.com/oeyoews/neotw/commit/3b89614b78de9629aed4be265243ca650ee8c2f3))
+
 # [3.274.0](https://github.com/oeyoews/neotw/compare/v3.273.0...v3.274.0) (2023-05-27)
 
 
