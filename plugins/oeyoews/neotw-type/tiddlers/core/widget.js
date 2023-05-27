@@ -26,28 +26,27 @@ neotw-type widget
       this.computeAttributes();
       this.execute();
 
-      const neotwString = 'demo';
-      const text = this.getAttribute('text');
-      // not worked
+      const neotwString = 'The quick brown fox jumps over the lazy dog';
+      const text = this.getAttribute('text', neotwString);
       const loop = this.getAttribute('loop', false);
       const gradient = this.getAttribute('gradient');
-      const spanNode = this.document.createElement('span');
-      const time = new Date().getTime();
-      const id = 'neotwTyping-' + time;
-      spanNode.id = id;
-      spanNode.textContent = text || neotwString;
+      const divNode = $tw.utils.domMaker('div', {
+        text,
+        class: 'inline',
+        attributes: {},
+      });
       const classNames =
         'text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-500 to-yellow-500';
       if (gradient) {
         classNames.split(' ').forEach(className => {
-          spanNode.classList.add(className);
+          divNode.classList.add(className);
         });
       }
-      parent.insertBefore(spanNode, nextSibling);
-      this.domNodes.push(spanNode);
+      parent.insertBefore(divNode, nextSibling);
+      this.domNodes.push(divNode);
 
       new Typed(this.domNodes[0], {
-        strings: [neotwString],
+        strings: [text],
         cursorChar: ' 🐬',
         typeSpeed: 150,
         loop: loop,

@@ -36,13 +36,12 @@ neotw-type widget with hitokoto
       const loop = this.getAttribute('loop', false);
       const divNode = $tw.utils.domMaker('div', {
         text,
-        class: '',
+        class: 'inline',
         attributes: {},
       });
       const gradient = this.getAttribute('gradient', true);
       if (gradient) {
         divNode.classList.add(
-          'inline',
           'text-transparent',
           'bg-clip-text',
           'bg-gradient-to-r',
