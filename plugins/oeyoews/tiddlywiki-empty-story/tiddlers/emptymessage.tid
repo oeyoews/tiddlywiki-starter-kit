@@ -33,7 +33,7 @@ title: $:/config/EmptyStoryMessage
 
 <!-- giscus -->
 <div class="mt-4">
-<$inline-giscus/>
+<$inline-giscus local="no"/>
 </div>
 
 <!-- {{$:/plugins/oeyoews/tiddlywiki-cards/tips}} -->

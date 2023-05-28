@@ -5,7 +5,7 @@ module-type: widget
 
 gisucs widget
 \*/
-(function() {
+(function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
 
@@ -22,6 +22,8 @@ gisucs widget
       this.execute();
 
       const { lang = 'en', theme = 'light' } = this.attributes;
+      const local = this.getAttribute('local', 'no');
+      if (local === 'no') return;
 
       const giscusConfigTiddler = '$:/plugins/oeyoews/tiddlywiki-giscus/config';
       const config = $tw.wiki.getTiddler(giscusConfigTiddler)?.fields || {};
@@ -56,7 +58,7 @@ gisucs widget
 
       const commentNode = $tw.utils.domMaker('div', {
         text: 'Loading ...',
-        class: 'giscus oeyoews-giscus',
+        class: 'text-center giscus oeyoews-giscus',
         attributes: {
           ['tiddler-title']: currentTiddler,
         },
