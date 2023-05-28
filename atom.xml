@@ -1874,10 +1874,10 @@ arr.forEach((item, index) =&gt; {
 <img alt="Card Image" class="cursor-pointer h-48 w-full object-cover hover:scale-105 duration-200 rounded-lg" data-fancybox="gallary" src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/012.png"></img>
 <img alt="Card Image" class="cursor-pointer h-48 w-full object-cover hover:scale-105 duration-200 rounded-lg" data-fancybox="gallary" src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/013.png"></img>
 </div>
-</p></div></content><author><name>oeyoews</name></author></entry><entry><title>GettingStarted</title><link href="https://neotw.netlify.app/#GettingStarted"></link><link href="https://neotw.netlify.app/static/GettingStarted.html" rel="alternative" type="text/html"></link><id>fc927313-83cf-7e0a-53c1-21853f695851</id><updated>2023-05-24T12:25:01</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:bg-white">
+</p></div></content><author><name>oeyoews</name></author></entry><entry><title>GettingStarted</title><link href="https://neotw.netlify.app/#GettingStarted"></link><link href="https://neotw.netlify.app/static/GettingStarted.html" rel="alternative" type="text/html"></link><id>fc927313-83cf-7e0a-53c1-21853f695851</id><updated>2023-05-28T19:48:41</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:bg-white">
 <div class="dark:hidden">
 <img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-604-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-46-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-66-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-37 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-113 seconds ago-green?style=social"></img>  
 </div>
 
 </div></p><p><h3 class="hidden lg:block text-center dark:text-white"> Personal Notes </h3>
@@ -3125,7 +3125,7 @@ M1001 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 &lt;/ul&gt;
 &lt;/div&gt;</url></dirname></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-badges</title><link href="https://neotw.netlify.app/#neotw-badges"></link><link href="https://neotw.netlify.app/static/neotw-badges.html" rel="alternative" type="text/html"></link><id>f934e3aa-d36d-34bb-609b-922693d9b993</id><updated>2023-05-18T12:28:56</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:hidden">
 <img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-604-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-46-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-66-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-37 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-113 seconds ago-green?style=social"></img>  
 </div>
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-command</title><link href="https://neotw.netlify.app/#neotw-command"></link><link href="https://neotw.netlify.app/static/neotw-command.html" rel="alternative" type="text/html"></link><id>188385e0-6b3a-4916-a54a-061d9d29e18f</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <h2>cp</h2>
@@ -6575,7 +6575,11 @@ React.StrictMode 组件不会在生产环境中运行，它仅在开发环境中
 &lt;/p&gt;</code></pre></div></content><author><name>oeyoews</name></author></entry><entry><title>react01</title><link href="https://neotw.netlify.app/#react01"></link><link href="https://neotw.netlify.app/static/react01.html" rel="alternative" type="text/html"></link><id>5a51edec-61a1-79ed-0826-41dc9f43fe13</id><updated>2023-04-23T12:05:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>命令式 过程优先</li><li>声明式 只关心结果, 不关心过程</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-count</title><link href="https://neotw.netlify.app/#recent-count"></link><link href="https://neotw.netlify.app/static/recent-count.html" rel="alternative" type="text/html"></link><id>6a131e9a-b046-19c3-08bd-35ef7c9ffbfc</id><updated>2023-02-08T18:16:06</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="tc-timeline">
 
 <div class="tc-menu-list-item">
-28th May 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#7">7</a></span>)
+28th May 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#8">8</a></span>)
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-shadow tc-tiddlylink-resolves" href="#GettingStarted"></a>
+</div>
 
 <div class="tc-menu-list-subitem">
 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#reduce"></a>
@@ -6763,7 +6767,7 @@ React.StrictMode 组件不会在生产环境中运行，它仅在开发环境中
 </div>
 
 <div class="tc-menu-list-item">
-24th May 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#6">6</a></span>)
+24th May 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#5">5</a></span>)
 
 <div class="tc-menu-list-subitem">
 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#click-more"></a>
@@ -6783,10 +6787,6 @@ React.StrictMode 组件不会在生产环境中运行，它仅在开发环境中
 
 <div class="tc-menu-list-subitem">
 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#class-compare"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-shadow tc-tiddlylink-resolves" href="#GettingStarted"></a>
 </div>
 
 </div>
@@ -7089,6 +7089,12 @@ React.StrictMode 组件不会在生产环境中运行，它仅在开发环境中
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-note-record</title><link href="https://neotw.netlify.app/#recent-note-record"></link><link href="https://neotw.netlify.app/static/recent-note-record.html" rel="alternative" type="text/html"></link><id>2619840e-dc84-d69e-3d32-c2258f306a66</id><updated>2023-04-11T09:39:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><ul>
   
     <li>
+		<a class="tc-tiddlylink tc-tiddlylink-shadow tc-tiddlylink-resolves" href="#GettingStarted">GettingStarted</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#reduce">reduce</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
         
@@ -7366,12 +7372,6 @@ React.StrictMode 组件不会在生产环境中运行，它仅在开发环境中
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#class-compare">class-compare</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
-    </li>
-  
-    <li>
-		<a class="tc-tiddlylink tc-tiddlylink-shadow tc-tiddlylink-resolves" href="#GettingStarted">GettingStarted</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
         
     </li>
