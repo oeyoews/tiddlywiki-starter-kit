@@ -1,0 +1,18 @@
+created: 20230528110216050
+creator: oeyoews
+modified: 20230528110224700
+modifier: oeyoews
+tags: JavaScript
+title: reduce
+type: text/vnd.tiddlywiki
+
+reduce是JavaScript的一个数组方法，用于将数组中的元素归纳为一个单独的值。reduce方法接收一个回调函数作为参数，该回调函数接收两个参数：累加器和当前元素。在每次迭代时，回调函数都会将当前元素与累加器作为参数，并返回一个新的累加器。最终，reduce方法会返回最后一次迭代后的累加器的值。下面是一个使用reduce方法的示例：
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+const sum = numbers.reduce((accumulator, current) => accumulator + current, 0);
+
+console.log(sum); // 输出：15
+```
+
+在这个示例中，我们定义了一个numbers数组，包含了一些数字。然后，我们调用了该数组的reduce方法，并传入一个回调函数作为参数。回调函数接收两个参数，accumulator表示累加器的值，current表示当前元素的值。我们在回调函数中将accumulator和current相加，并返回新的累加器的值。在调用reduce方法时，我们传入了一个初始值0作为累加器的初始值。这样，reduce方法会从数组的第一个元素开始迭代，将该元素和累加器的初始值0作为参数传递给回调函数，并返回新的累加器的值1；然后，将第二个元素2和上一次迭代的结果1作为参数传递给回调函数，并返回新的累加器的值3；接着，将第三个元素3和上一次迭代的结果3作为参数传递给回调函数，并返回新的累加器的值6；以此类推，直到迭代到最后一个元素5，返回最终的累加器的值15。最终，我们输出了累加器的值15，表示数组中所有元素的和。
