@@ -1,3 +1,16 @@
+# [3.275.0](https://github.com/oeyoews/neotw/compare/v3.274.1...v3.275.0) (2023-05-28)
+
+
+### Bug Fixes
+
+* remove aNode ([d78c424](https://github.com/oeyoews/neotw/commit/d78c4245f04286b584bd3da58f981435a287b5e1))
+* use className instead of classList.add (?) ([c22db6b](https://github.com/oeyoews/neotw/commit/c22db6b99527ab5baa4c51aa88947f0e250c5001))
+
+
+### Features
+
+* add searching ([a650a2d](https://github.com/oeyoews/neotw/commit/a650a2d4f48c375377c054a2b847baad9e01730f))
+
 ## [3.274.1](https://github.com/oeyoews/neotw/compare/v3.274.0...v3.274.1) (2023-05-27)
 
 
