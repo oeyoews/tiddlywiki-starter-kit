@@ -26,9 +26,12 @@ title: $:/config/EmptyStoryMessage
   <$otime />
 </center>
 
-<!-- commiit info on github -->
+<!-- commit info on github -->
 <$list filter="[{$:/info/url/protocol}match[https:]]">
   <$gli class="text-center mt-4 text-gray-500"/>
+  <center>
+  <$hitokoto />
+  </center>
 </$list>
 
 <!-- giscus -->
