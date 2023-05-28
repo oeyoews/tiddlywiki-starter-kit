@@ -28,10 +28,10 @@ gisucs widget
 
       if (!id) {
         const warnNode = $tw.utils.domMaker('center', {
-          text: '💎 未正确配置Giscus Id',
-          class: 'text-red-500 font-bold text-xl',
+          text: '😭 未正确配置Giscus Id',
+          class: 'text-red-500 font-bold',
           attributes: {
-            style: 'color: red ; font-size: 20px; font-weight: bold;',
+            style: 'color: red; font-weight: bold;',
           },
         });
         parent.insertBefore(warnNode, nextSibling);

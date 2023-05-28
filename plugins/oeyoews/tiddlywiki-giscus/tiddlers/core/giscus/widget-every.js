@@ -5,7 +5,7 @@ module-type: widget
 
 gisucs widget
 \*/
-(function () {
+(function() {
   /*jslint node: true, browser: true */
   /*global $tw: false */
 
@@ -31,7 +31,9 @@ gisucs widget
       parent.insertBefore(scriptNode, nextSibling);
       this.domNodes.push(scriptNode);
 
-      const currentTiddler = this.getVariable('currentTiddler') || 'index';
+      // if use https: filter this currentTiddler will be changed is https: maybe
+      const tiddler = this.getAttribute('tiddler', 'GettingStarted');
+      const currentTiddler = this.getVariable('currentTiddler') || tiddler;
 
       const options = {
         'data-repo': config.repo,
