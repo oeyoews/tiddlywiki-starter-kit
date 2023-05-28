@@ -1,0 +1,44 @@
+created: 20230528032425800
+creator: oeyoews
+modified: 20230528032436760
+modifier: oeyoews
+tags: 
+title: turndown
+type: text/vnd.tiddlywiki
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Turndown demo</title>
+  </head>
+  <body>
+    <div class="post">
+      <h2>turndown demo</h2>
+      <p>Turndown is a function to convert HTML into clean markdown.</p>
+      <ul>
+        <li>It removes HTML elements</li>
+        <li>But keeps content</li>
+        <li>And converts HTML entities and idioms into markdown equivalents</li>
+      </ul>
+      <blockquote>
+        Great tool for generating markdown from HTML snippets.
+      </blockquote>
+      <p>
+        Checkout the
+        <a href="https://github.com/domchristie/turndown"
+          >turndown repo on GitHub.</a
+        >
+      </p>
+    </div>
+
+    <script src="https://unpkg.com/turndown/dist/turndown.js"></script>
+    <script>
+      var turndownService = new TurndownService();
+      var markdown = turndownService.turndown(
+        document.querySelector(".post").innerHTML
+      );
+      console.log(markdown);
+    </script>
+  </body>
+</html>

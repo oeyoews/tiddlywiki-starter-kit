@@ -1,0 +1,32 @@
+created: 20230528035027995
+creator: oeyoews
+modified: 20230528035051818
+modifier: oeyoews
+tags: 
+title: puppeteer-leetcode
+type: text/vnd.tiddlywiki
+
+```js
+const puppeteer = require("puppeteer");
+const fs = require("fs");
+const turndown = require("turndown");
+
+(async () => {
+  const browser = await puppeteer.launch({
+    headless: "new",
+  });
+  const page = await browser.newPage();
+  await page.goto("https://leetcode.cn/problems/array-reduce-transformation/");
+
+  // 查找 `[data-key="description_content"]` 元素
+  const element = await page.$('[data-key="description-content"]');
+  // 获取元素内容
+  const text = await page.evaluate((el) => el.textContent, element);
+
+  const turndownService = new turndown();
+  const markdownText = turndownService.turndown(text);
+  fs.writeFileSync("description.md", markdownText);
+
+  await browser.close();
+})();
+```
