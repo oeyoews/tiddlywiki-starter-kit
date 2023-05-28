@@ -3,7 +3,7 @@ title: $:/plugins/oeyoews/tiddlywiki-cards/sites1
 \define img(title:"title", description:"description", src:"", href:"#")
 <div class="rounded-md p-2 transition-all duration-200">
       <a rel="noopener noreferrer" target="_blank" href="""$href$""" class="font-bold text-gray-900 text-lg block m-0" title="""$title$""">
-<$image source="""$src$"""class="w-full object-cover transition duration-200 shadow m-0" alt=$title$ title=$title$ fancybox="yes" />
+<$image source="""$src$"""class="rounded w-full object-cover transition duration-200 shadow m-0" alt=$title$ title=$title$ fancybox="yes" />
 			$title$</a>
       <p class="text-gray-500 text-sm leading-snug font-serif line-clamp-2 m-0">$description$</p>
 			</div>

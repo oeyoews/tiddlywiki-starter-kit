@@ -104,7 +104,9 @@ Render this widget into the DOM
       domNode.setAttribute('loading', this.lazyLoading || 'lazy');
     }
     if (this.imageFancybox === 'yes') {
-      domNode.className = 'cursor-pointer';
+      // fix build error
+      if (!$tw.browser) return;
+      domNode.classList.add('cursor-pointer', 'rounded');
       domNode.setAttribute(
         'data-fancybox',
         this.getVariable('currentTiddler') || 'gallary',
