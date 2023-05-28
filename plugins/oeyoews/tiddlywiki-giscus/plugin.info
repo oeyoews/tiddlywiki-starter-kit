@@ -8,7 +8,7 @@
   "plugin-type": "plugin",
   "dependents": [
     "$:/plugins/Gk0Wk/focused-tiddler",
-    "$:/plugins/oeyoews/tiddlywiki-modal-ui"
+    "$:/plugins/oeyoews/tiddlywiki-modal-ui",
     "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
   ],
   "name": "Tiddlywiki Giscus",
