@@ -47,7 +47,7 @@ fetch-mdfile widget
         const text = await response.text();
         $tw.wiki.setText(fileName, 'text', null, text);
         $tw.wiki.setText(fileName, 'type', null, 'text/markdown');
-        buttonNode.textContent = `${fileName} updated ${modified}`;
+        // buttonNode.textContent = `${fileName} updated ${modified}`;
       };
     }
   }
