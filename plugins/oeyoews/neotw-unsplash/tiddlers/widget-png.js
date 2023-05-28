@@ -12,7 +12,6 @@ widget-unsplash widget
   'use strict';
 
   if (!$tw.browser) return;
-
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
 
   class DivWidget extends Widget {
@@ -24,6 +23,10 @@ widget-unsplash widget
       this.parentDomNode = parent;
       this.computeAttributes();
       this.execute();
+
+      const local = this.getAttribute('local', '');
+      // online https
+      if (window.location.protocol === 'http:' && !local) return;
 
       const title = this.getVariable('currentTiddler');
       const alt = title;

@@ -1,6 +1,6 @@
 created: 20230527151811742
 creator: oeyoews
-modified: 20230527160333553
+modified: 20230528023513066
 modifier: oeyoews
 tags: LeetCode
 title: Two-Sum
@@ -25,6 +25,7 @@ You can return the answer in any order.
 算法的时间复杂度为O(n)，其中n为数组中元素的个数。使用哈希表来存储元素和下标的对应关系; 
 **/
 
+// soulation 1
 var twoSum = function(nums, target) {
   const map = new Map(); // 创建一个空的哈希表
   for (let i = 0; i < nums.length; i++) {
@@ -35,4 +36,16 @@ var twoSum = function(nums, target) {
     map.set(nums[i], i); // 如果不存在，则将当前元素和下标存入哈希表中
   }
 };
+
+// soulation 2
+function twoSum(nums, target) {
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = i + 1; j < nums.length; j++) {
+      if (nums[i] + nums[j] === target) {
+        return [i, j];
+      }
+    }
+  }
+  return [];
+}
 ```
