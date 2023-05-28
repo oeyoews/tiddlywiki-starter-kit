@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Neotw rolling
 </title><subtitle>A modern notebook based on TiddlyWiki5
-</subtitle><link href="https://neotw.netlify.app/atom.xml" rel="self"></link><link href="https://neotw.netlify.app/"></link><author><name>oeyoews</name></author><id>462a8bca-7c57-8f8a-27a3-d6cb4c75a727</id><updated>2023-05-27T19:49:15</updated><entry><title>/home/runner/work/neotw/neotw/tiddlers/hi-oeyoews.svg</title><link href="https://neotw.netlify.app/#%2Fhome%2Frunner%2Fwork%2Fneotw%2Fneotw%2Ftiddlers%2Fhi-oeyoews.svg"></link><link href="https://neotw.netlify.app/static/%252Fhome%252Frunner%252Fwork%252Fneotw%252Fneotw%252Ftiddlers%252Fhi-oeyoews.svg.html" rel="alternative" type="text/html"></link><id>3798d5df-8b06-4ca4-8046-0c87bf3b437d</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><img src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20viewBox%3D%220%200%20600%20300%22%20width%3D%22600%22%20height%3D%22300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3CforeignObject%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%0A%20%20%20%20%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%0A%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%40keyframes%20hi%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%200%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2010%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2020%25%20%7B%20transform%3A%20rotate(-8.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2030%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2040%25%20%7B%20transform%3A%20rotate(-4.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2050%25%20%7B%20transform%3A%20rotate(10.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2060%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40keyframes%20gradient%20%7B%0A%20%20%20%20%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%2050%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%20100%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%235452ee%3B%0A%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%23e73c7e%3B%0A%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%2323a6d5%3B%0A%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23ffff%3B%0A%0A%20%20%20%20%20%20%20%20%20%20background%3A%20linear-gradient(-45deg%2C%20var(--color-main)%2C%20var(--color-primary)%2C%20var(--color-secondary)%2C%20var(--color-tertiary))%3B%0A%20%20%20%20%20%20%20%20%20%20background-size%3A%20400%25%20400%25%3B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20gradient%2015s%20ease%20infinite%3B%0A%0A%20%20%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20%20%20height%3A%20300px%3B%0A%0A%20%20%20%20%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20color%3A%20white%3B%0A%0A%20%20%20%20%20%20%20%20%20%20font-family%3A%20-apple-system%2C%20BlinkMacSystemFont%2C%20%22Segoe%20UI%22%2C%20Roboto%2C%20Helvetica%2C%20Arial%2C%20sans-serif%2C%20%22Apple%20Color%20Emoji%22%2C%20%22Segoe%20UI%20Emoji%22%2C%20%22Segoe%20UI%20Symbol%22%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20hi%201.5s%20linear%20-0.5s%20infinite%3B%0A%20%20%20%20%20%20%20%20%20%20display%3A%20inline-block%3B%0A%20%20%20%20%20%20%20%20%20%20transform-origin%3A%2070%25%2070%25%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-color-scheme%3A%20light)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%23F15BB5%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%2324b0ef%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%234526f6%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23f6f645%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-reduced-motion)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%3C%2Fstyle%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%20%20%3Ch1%3EHi%20there%2C%20my%20name%20is%20oeyoews%20%3Cdiv%20class%3D%22hi%22%3E%F0%9F%91%8B%3C%2Fdiv%3E%3C%2Fh1%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2FforeignObject%3E%0A%3C%2Fsvg%3E"></img></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-02-28</title><link href="https://neotw.netlify.app/#2023-02-28"></link><link href="https://neotw.netlify.app/static/2023-02-28.html" rel="alternative" type="text/html"></link><id>90d001b4-d8df-ae9a-ba70-fe38459a71c5</id><updated>2023-02-28T00:12:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div>无论人生上了哪一层台阶 ，阶下有人在仰望你，阶上亦有人在俯视你；你抬头自卑，低头自得，唯有平视，才能看到真实的自已。 @杨绛语录</div></blockquote></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-16</title><link href="https://neotw.netlify.app/#2023-04-16"></link><link href="https://neotw.netlify.app/static/2023-04-16.html" rel="alternative" type="text/html"></link><id>b720eb79-6a7f-86f0-c39b-4c456f2916fb</id><updated>2023-04-16T09:56:15</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>初级赚钱方式靠信息差，
+</subtitle><link href="https://neotw.netlify.app/atom.xml" rel="self"></link><link href="https://neotw.netlify.app/"></link><author><name>oeyoews</name></author><id>462a8bca-7c57-8f8a-27a3-d6cb4c75a727</id><updated>2023-05-28T11:08:39</updated><entry><title>/home/runner/work/neotw/neotw/tiddlers/hi-oeyoews.svg</title><link href="https://neotw.netlify.app/#%2Fhome%2Frunner%2Fwork%2Fneotw%2Fneotw%2Ftiddlers%2Fhi-oeyoews.svg"></link><link href="https://neotw.netlify.app/static/%252Fhome%252Frunner%252Fwork%252Fneotw%252Fneotw%252Ftiddlers%252Fhi-oeyoews.svg.html" rel="alternative" type="text/html"></link><id>3798d5df-8b06-4ca4-8046-0c87bf3b437d</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><img src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20viewBox%3D%220%200%20600%20300%22%20width%3D%22600%22%20height%3D%22300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3CforeignObject%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%0A%20%20%20%20%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%0A%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%40keyframes%20hi%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%200%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2010%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2020%25%20%7B%20transform%3A%20rotate(-8.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2030%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2040%25%20%7B%20transform%3A%20rotate(-4.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2050%25%20%7B%20transform%3A%20rotate(10.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2060%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40keyframes%20gradient%20%7B%0A%20%20%20%20%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%2050%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%20100%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%235452ee%3B%0A%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%23e73c7e%3B%0A%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%2323a6d5%3B%0A%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23ffff%3B%0A%0A%20%20%20%20%20%20%20%20%20%20background%3A%20linear-gradient(-45deg%2C%20var(--color-main)%2C%20var(--color-primary)%2C%20var(--color-secondary)%2C%20var(--color-tertiary))%3B%0A%20%20%20%20%20%20%20%20%20%20background-size%3A%20400%25%20400%25%3B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20gradient%2015s%20ease%20infinite%3B%0A%0A%20%20%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20%20%20height%3A%20300px%3B%0A%0A%20%20%20%20%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20color%3A%20white%3B%0A%0A%20%20%20%20%20%20%20%20%20%20font-family%3A%20-apple-system%2C%20BlinkMacSystemFont%2C%20%22Segoe%20UI%22%2C%20Roboto%2C%20Helvetica%2C%20Arial%2C%20sans-serif%2C%20%22Apple%20Color%20Emoji%22%2C%20%22Segoe%20UI%20Emoji%22%2C%20%22Segoe%20UI%20Symbol%22%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20hi%201.5s%20linear%20-0.5s%20infinite%3B%0A%20%20%20%20%20%20%20%20%20%20display%3A%20inline-block%3B%0A%20%20%20%20%20%20%20%20%20%20transform-origin%3A%2070%25%2070%25%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-color-scheme%3A%20light)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%23F15BB5%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%2324b0ef%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%234526f6%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23f6f645%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-reduced-motion)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%3C%2Fstyle%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%20%20%3Ch1%3EHi%20there%2C%20my%20name%20is%20oeyoews%20%3Cdiv%20class%3D%22hi%22%3E%F0%9F%91%8B%3C%2Fdiv%3E%3C%2Fh1%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2FforeignObject%3E%0A%3C%2Fsvg%3E"></img></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-02-28</title><link href="https://neotw.netlify.app/#2023-02-28"></link><link href="https://neotw.netlify.app/static/2023-02-28.html" rel="alternative" type="text/html"></link><id>90d001b4-d8df-ae9a-ba70-fe38459a71c5</id><updated>2023-02-28T00:12:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div>无论人生上了哪一层台阶 ，阶下有人在仰望你，阶上亦有人在俯视你；你抬头自卑，低头自得，唯有平视，才能看到真实的自已。 @杨绛语录</div></blockquote></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-16</title><link href="https://neotw.netlify.app/#2023-04-16"></link><link href="https://neotw.netlify.app/static/2023-04-16.html" rel="alternative" type="text/html"></link><id>b720eb79-6a7f-86f0-c39b-4c456f2916fb</id><updated>2023-04-16T09:56:15</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>初级赚钱方式靠信息差，
 高级赚钱方式靠认知差，
 顶级赚钱方式靠资源差</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-20</title><link href="https://neotw.netlify.app/#2023-04-20"></link><link href="https://neotw.netlify.app/static/2023-04-20.html" rel="alternative" type="text/html"></link><id>66fbd211-302a-90f1-43e7-1f0ea4e0f181</id><updated>2023-04-20T20:53:27</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>多端同步的便捷和本地存储的安全，就是鱼与熊掌不可兼得。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-23</title><link href="https://neotw.netlify.app/#2023-04-23"></link><link href="https://neotw.netlify.app/static/2023-04-23.html" rel="alternative" type="text/html"></link><id>eb28f00e-453b-d5a1-967b-e984799ea2d8</id><updated>2023-04-24T00:16:36</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div>延迟满足</div><div>用书籍增加三倍人生体验时长</div><div>不以成喜，不以败悲</div></blockquote><p>“止观止心，无妄无碍”是禅宗的一种修行方法，也是佛教徒在生活中追求内心平静和解脱的方式。</p><p>其中，“止”指的是停止杂念、烦恼等不必要的思考和行为，如止诸恶、止杀戮、止谤言等。这样可以使内心得到安定和净化，有利于后续的修行。</p><p>“观”则指观察事物的真相和本质，排除偏见和执着。通过观想自己和世界的真实性质，认识自己的本性和命运，从而达到身心合一、彻底了解自己和世界的目的。</p><p>“无妄”则表示去除「妄念」、「妄想」和「妄语」等，即清空心灵中荒谬无稽的幻想和自我，让自己的内心变得更加安宁、平静。</p><p>“无碍”则是指避免心态上的障碍和物质层面的附着，为达到自由和解脱而努力。</p><p>总之，这个修行方法要求个人通过内省、检视和拯救自己，消除恶念与烦恼，培养慈悲之心，领悟事物的真实本质，从而找到内心的平静和解放。</p><blockquote><div>客观事物发展规律不以人的主观意志，然而掌握事物的发展规律，却可以从必然王国到自由王国</div></blockquote><p>这句话的意思是，客观事物的发展规律是客观存在的，不受人的主观意志的影响。但是，如果我们能够掌握这些规律并对它们进行改变和运用，我们就可以从必然王国（受客观规律支配的领域）进入自由王国（自由创造或创新的领域）。</p><p>在许多领域中，我们都可以看到这一点。例如，在科学技术领域，我们通过研究和掌握客观规律，开发出了许多有用的工具和技术，使我们的生产和生活更加便利和高效。同样，在社会和经济领域中，通过深入了解客观规律，我们可以制定出更好的政策和管理方法，以促进社会和经济的稳定和发展。</p><p>尽管客观规律的存在使我们受到限制，但如果我们学会理解和运用这些规律，我们就可以发挥自己的主动性和创造性，实现更高的自由度，并不断推动事物的进步和发展。因此，掌握客观规律是实现自由和创造的关键之一。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-25</title><link href="https://neotw.netlify.app/#2023-04-25"></link><link href="https://neotw.netlify.app/static/2023-04-25.html" rel="alternative" type="text/html"></link><id>07baca31-a4c1-d735-df41-8cf857fe4d13</id><updated>2023-04-25T23:01:46</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://space.bilibili.com/43109229/channel/collectiondetail?sid=1234748" rel="noopener noreferrer" target="_blank">https://space.bilibili.com/43109229/channel/collectiondetail?sid=1234748</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-05-06</title><link href="https://neotw.netlify.app/#2023-05-06"></link><link href="https://neotw.netlify.app/static/2023-05-06.html" rel="alternative" type="text/html"></link><id>ac8c3ae3-20fd-c971-eb36-7e3608c51b59</id><updated>2023-05-06T22:55:30</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>拥有能让自己快乐的能力,有一件让自己兴奋一点的事情</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-05-15</title><link href="https://neotw.netlify.app/#2023-05-15"></link><link href="https://neotw.netlify.app/static/2023-05-15.html" rel="alternative" type="text/html"></link><id>5ae2dacd-4932-0fb6-3754-327b31a02c7f</id><updated>2023-05-15T09:19:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>社交的本质是价值交换</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-05-17</title><link href="https://neotw.netlify.app/#2023-05-17"></link><link href="https://neotw.netlify.app/static/2023-05-17.html" rel="alternative" type="text/html"></link><id>5cfc6d08-80d6-3230-a52e-29ee0b651757</id><updated>2023-05-17T10:46:31</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <ul>
@@ -165,7 +165,26 @@ xhr.<span class="hljs-title function_">send</span>();
 </p>
 <p>需要注意的是，以上示例仅演示了如何使用 Ajax、Fetch 和 Axios 发送 GET 请求并处理响应。实际开发中，您可能需要使用其他 HTTP 方法（例如 POST、PUT 或 DELETE）来与服务器进行交互，并针对具体业务需求进行相关设置和处理。
 </p>
-</div></div></content><author><name>oeyoews</name></author></entry><entry><title>antd</title><link href="https://neotw.netlify.app/#antd"></link><link href="https://neotw.netlify.app/static/antd.html" rel="alternative" type="text/html"></link><id>12f83809-7e88-fad5-93fa-cf1260572402</id><updated>2023-05-03T17:10:06</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>Ant Design 是一个基于 Ant Design 设计语言的 UI 库，提供了一套丰富的 React 组件和样式，可以帮助你快速构建美观、可重复使用的用户界面。</p><p>Ant Design 设计语言是由蚂蚁金服推出的一套设计规范，旨在帮助开发者在多种场景下创建一致性的用户体验。Ant Design UI 库则是根据这个设计语言进行开发的，提供了一些常用组件，如按钮、表单、布局、列表和模态框等。这些组件都具有良好的可访问性，并支持响应式设计，适合用于开发 Web 和移动设备应用程序。</p><p>除了基础组件外，Ant Design 还提供了一些高级组件和工具，如数据表格、图标、颜色选择器和国际化支持等。这些组件不仅易于使用，而且支持主题样式和自定义属性，使得开发者可以轻松地创建符合其品牌形象的 UI 组件。</p><p>Ant Design 遵循 MIT 许可证，是一个完全开源的项目，并拥有活跃的社区支持。它已经成为 React 生态系统中最受欢迎的 UI 库之一，并在许多企业和组织中得到广泛的应用。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>arrow-function</title><link href="https://neotw.netlify.app/#arrow-function"></link><link href="https://neotw.netlify.app/static/arrow-function.html" rel="alternative" type="text/html"></link><id>430c7748-55be-87ab-b165-7f211570df9b</id><updated>2023-05-06T14:02:44</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>箭头函数（Arrow Function）是 ES6 提出的一种新的函数语法，它可以更简洁地定义函数，并且不会改变 this 的指向。</p><p>箭头函数的参数有以下几种形式：</p><p>1. 无参数：如果函数没有参数，那么可以在括号中省略参数部分，如下所示：</p><pre class="hljs"><code class="javascript hljs">   <span class="hljs-keyword">const</span> <span class="hljs-title function_">sayHello</span> = (<span class="hljs-params"></span>) =&gt; {
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>antd</title><link href="https://neotw.netlify.app/#antd"></link><link href="https://neotw.netlify.app/static/antd.html" rel="alternative" type="text/html"></link><id>12f83809-7e88-fad5-93fa-cf1260572402</id><updated>2023-05-03T17:10:06</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>Ant Design 是一个基于 Ant Design 设计语言的 UI 库，提供了一套丰富的 React 组件和样式，可以帮助你快速构建美观、可重复使用的用户界面。</p><p>Ant Design 设计语言是由蚂蚁金服推出的一套设计规范，旨在帮助开发者在多种场景下创建一致性的用户体验。Ant Design UI 库则是根据这个设计语言进行开发的，提供了一些常用组件，如按钮、表单、布局、列表和模态框等。这些组件都具有良好的可访问性，并支持响应式设计，适合用于开发 Web 和移动设备应用程序。</p><p>除了基础组件外，Ant Design 还提供了一些高级组件和工具，如数据表格、图标、颜色选择器和国际化支持等。这些组件不仅易于使用，而且支持主题样式和自定义属性，使得开发者可以轻松地创建符合其品牌形象的 UI 组件。</p><p>Ant Design 遵循 MIT 许可证，是一个完全开源的项目，并拥有活跃的社区支持。它已经成为 React 生态系统中最受欢迎的 UI 库之一，并在许多企业和组织中得到广泛的应用。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>array-prototype-last</title><link href="https://neotw.netlify.app/#array-prototype-last"></link><link href="https://neotw.netlify.app/static/array-prototype-last.html" rel="alternative" type="text/html"></link><id>d54a0dac-8ad6-5314-959e-304c6906d33a</id><updated>2023-05-28T00:20:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre class="hljs"><code class="js hljs"><span class="hljs-comment">/**
+ * link: https://leetcode.cn/problems/array-prototype-last/
+ * Order: 2619
+ * Type: Javascript
+ * Description: 
+ * 	Write code that enhances all arrays such that you can call the array.last() method on any array and it will return the last element. If there are no elements in the array, it should return -1.
+ * 	请你编写一段代码实现一个数组方法，使任何数组都可以调用 array.last() 方法，这个方法将返回数组最后一个元素。如果数组中没有元素，则返回 -1 。
+ */</span>
+
+<span class="hljs-title class_">Array</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>.<span class="hljs-property">last</span> = <span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">length</span> === <span class="hljs-number">0</span>) { <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>; }
+    <span class="hljs-keyword">else</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>[<span class="hljs-variable language_">this</span>.<span class="hljs-property">length</span> - <span class="hljs-number">1</span>];
+    }
+};
+
+<span class="hljs-comment">/**
+ * const arr = [1, 2, 3];
+ * arr.last(); // 3
+ */</span></code></pre></div></content><author><name>oeyoews</name></author></entry><entry><title>arrow-function</title><link href="https://neotw.netlify.app/#arrow-function"></link><link href="https://neotw.netlify.app/static/arrow-function.html" rel="alternative" type="text/html"></link><id>430c7748-55be-87ab-b165-7f211570df9b</id><updated>2023-05-06T14:02:44</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>箭头函数（Arrow Function）是 ES6 提出的一种新的函数语法，它可以更简洁地定义函数，并且不会改变 this 的指向。</p><p>箭头函数的参数有以下几种形式：</p><p>1. 无参数：如果函数没有参数，那么可以在括号中省略参数部分，如下所示：</p><pre class="hljs"><code class="javascript hljs">   <span class="hljs-keyword">const</span> <span class="hljs-title function_">sayHello</span> = (<span class="hljs-params"></span>) =&gt; {
      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;Hello&#x27;</span>);
    };
    
@@ -263,7 +282,7 @@ React
 JavaScript
 </div>
 <div class="inline p-0 m-0 p-1 capitalize bg-yellow-400 rounded">
-<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#47">47</a></span>
+<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#49">49</a></span>
 </div>
 </div>
 <div>
@@ -403,7 +422,7 @@ Tailwindcss
 <div class="relative">
         <div class="absolute top-0 right-0">
             <div class="inline-block text-slate-400 rounded-full">
-                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#47">47</a></span>
+                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#49">49</a></span>
             </div>
         </div>
     </div>
@@ -1857,8 +1876,8 @@ arr.forEach((item, index) =&gt; {
 </div>
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>GettingStarted</title><link href="https://neotw.netlify.app/#GettingStarted"></link><link href="https://neotw.netlify.app/static/GettingStarted.html" rel="alternative" type="text/html"></link><id>fc927313-83cf-7e0a-53c1-21853f695851</id><updated>2023-05-24T12:25:01</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:bg-white">
 <div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-596-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-45-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-66-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-19 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-603-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-46-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-66-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-5 hours ago-green?style=social"></img>  
 </div>
 
 </div></p><p><h3 class="hidden lg:block text-center dark:text-white"> Personal Notes </h3>
@@ -1915,7 +1934,7 @@ arr.forEach((item, index) =&gt; {
 <div class="relative">
         <div class="absolute top-0 right-0">
             <div class="inline-block text-slate-400 rounded-full">
-                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#47">47</a></span>
+                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#49">49</a></span>
             </div>
         </div>
     </div>
@@ -2311,7 +2330,7 @@ arr.forEach((item, index) =&gt; {
   <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;You clicked on element:&#x27;</span>, event.<span class="hljs-property">target</span>);
   <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;Mouse position:&#x27;</span>, event.<span class="hljs-property">pageX</span>, event.<span class="hljs-property">pageY</span>);
 });</code></pre><p>上述代码中，我们使用addEventListener方法为文档添加了一个 "click" 事件处理函数。在函数中，我们可以通过 "event" 对象获取到被点击的元素（即 "target" 属性），以及鼠标点击的位置（即 "pageX" 和 "pageY" 属性）。</p><p>需要注意的是，不同的浏览器在 "event" 对象的属性和方法方面可能存在差异，需要进行一定的兼容性处理。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>js-false</title><link href="https://neotw.netlify.app/#js-false"></link><link href="https://neotw.netlify.app/static/js-false.html" rel="alternative" type="text/html"></link><id>4e7cf5b4-55b0-1a1a-8fb5-600490cbc092</id><updated>2023-05-27T00:22:26</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
-<a data-caption="" data-fancybox="gallary"><img alt="Unsplash Image" class=" tc-image-loading" src="https://images.unsplash.com/photo-1542319465-7a87c5f95757?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w0NTAyMTB8MHwxfHNlYXJjaHwxNHx8ZmFsc2V8ZW58MHwwfHx8MTY4NTExODA3NHww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"></img></a>
+<img alt="Unsplash Image" class="cursor-pointer tc-image-loading" data-fancybox="gallary" src="https://images.unsplash.com/photo-1542319465-7a87c5f95757?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w0NTAyMTB8MHwxfHNlYXJjaHwxNHx8ZmFsc2V8ZW58MHwwfHx8MTY4NTExODA3NHww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"></img>
 <p>在 JavaScript 中会被判断为 <code class="_codified_">false</code> 的有以下几种情况：
 </p>
 <ol>
@@ -2336,7 +2355,29 @@ arr.forEach((item, index) =&gt; {
 </code></pre>
 <p>在上面的代码中，由于 <code class="_codified_">x</code> 的值为 <code class="_codified_">0</code>，因此它会被判断为 <code class="_codified_">false</code>，因此条件语句会输出 <code class="_codified_">"x is false"</code>。
 </p>
-</div></div></content><author><name>oeyoews</name></author></entry><entry><title>js-methods</title><link href="https://neotw.netlify.app/#js-methods"></link><link href="https://neotw.netlify.app/static/js-methods.html" rel="alternative" type="text/html"></link><id>e0ededf9-e422-f8d0-8a0b-377c4b0de595</id><updated>2023-05-27T19:43:30</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>js-map</title><link href="https://neotw.netlify.app/#js-map"></link><link href="https://neotw.netlify.app/static/js-map.html" rel="alternative" type="text/html"></link><id>4c3935c8-bd4e-9ffd-cce1-3d6baa2971d4</id><updated>2023-05-27T21:45:32</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>map是什么呢？在JavaScript中，map是一种数据结构，用于存储键值对的集合。与普通的对象不同，map的键可以是任意类型的值，包括基本类型和对象等。map的键值对可以使用set()方法添加，使用get()方法获取。map还有一些常用的方法，包括has()判断是否存在某个键、delete()删除某个键值对、clear()清空所有的键值对等。下面是一个使用map的示例：</p><pre class="hljs"><code class="javascript hljs"><span class="hljs-keyword">const</span> myMap = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Map</span>(); <span class="hljs-comment">// 创建一个空的map</span>
+
+<span class="hljs-comment">// 使用set()方法添加键值对</span>
+myMap.<span class="hljs-title function_">set</span>(<span class="hljs-string">&#x27;name&#x27;</span>, <span class="hljs-string">&#x27;张三&#x27;</span>);
+myMap.<span class="hljs-title function_">set</span>(<span class="hljs-string">&#x27;age&#x27;</span>, <span class="hljs-number">18</span>);
+myMap.<span class="hljs-title function_">set</span>({<span class="hljs-attr">x</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">2</span>}, <span class="hljs-string">&#x27;一个对象&#x27;</span>);
+
+<span class="hljs-comment">// 使用get()方法获取键对应的值</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(myMap.<span class="hljs-title function_">get</span>(<span class="hljs-string">&#x27;name&#x27;</span>)); <span class="hljs-comment">// 输出：张三</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(myMap.<span class="hljs-title function_">get</span>(<span class="hljs-string">&#x27;age&#x27;</span>)); <span class="hljs-comment">// 输出：18</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(myMap.<span class="hljs-title function_">get</span>({<span class="hljs-attr">x</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">2</span>})); <span class="hljs-comment">// 输出：undefined（注意这里的对象不是同一个对象）</span>
+
+<span class="hljs-comment">// 使用has()方法判断是否存在某个键</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(myMap.<span class="hljs-title function_">has</span>(<span class="hljs-string">&#x27;name&#x27;</span>)); <span class="hljs-comment">// 输出：true</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(myMap.<span class="hljs-title function_">has</span>(<span class="hljs-string">&#x27;gender&#x27;</span>)); <span class="hljs-comment">// 输出：false</span>
+
+<span class="hljs-comment">// 使用delete()方法删除某个键值对</span>
+myMap.<span class="hljs-title function_">delete</span>(<span class="hljs-string">&#x27;age&#x27;</span>);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(myMap); <span class="hljs-comment">// 输出：Map(2) { &#x27;name&#x27; =&gt; &#x27;张三&#x27;, { x: 1, y: 2 } =&gt; &#x27;一个对象&#x27; }</span>
+
+<span class="hljs-comment">// 使用clear()方法清空所有的键值对</span>
+myMap.<span class="hljs-title function_">clear</span>();
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(myMap); <span class="hljs-comment">// 输出：Map(0) {}</span></code></pre><p>map是一种非常有用的数据结构，可以用于解决很多问题，比如需要存储键值对的场景、需要按照某种顺序存储元素的场景等。熟练掌握map的使用方法，可以提高我们的编程效率。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>js-methods</title><link href="https://neotw.netlify.app/#js-methods"></link><link href="https://neotw.netlify.app/static/js-methods.html" rel="alternative" type="text/html"></link><id>e0ededf9-e422-f8d0-8a0b-377c4b0de595</id><updated>2023-05-27T19:43:30</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <p>以下是 JavaScript 中需要掌握的高频方法：
 </p>
 <ol>
@@ -3083,8 +3124,8 @@ M1001 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 <li>aria2c -d <dirname> <url>&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;</url></dirname></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-badges</title><link href="https://neotw.netlify.app/#neotw-badges"></link><link href="https://neotw.netlify.app/static/neotw-badges.html" rel="alternative" type="text/html"></link><id>f934e3aa-d36d-34bb-609b-922693d9b993</id><updated>2023-05-18T12:28:56</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-596-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-45-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-66-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-19 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-603-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-46-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-66-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-5 hours ago-green?style=social"></img>  
 </div>
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-command</title><link href="https://neotw.netlify.app/#neotw-command"></link><link href="https://neotw.netlify.app/static/neotw-command.html" rel="alternative" type="text/html"></link><id>188385e0-6b3a-4916-a54a-061d9d29e18f</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <h2>cp</h2>
@@ -5537,8 +5578,6 @@ archlinux-java status
 &lt;/div&gt;</exec></li></ul></filename></li></ul></time></li></ul></li></ul></username></li></username></li></username></li></ul></directions></li></ul></li></ul></server-id></p></li></id></p></li></ul></PID></p></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw/action/base-time-darkmode</title><link href="https://neotw.netlify.app/#neotw%2Faction%2Fbase-time-darkmode"></link><link href="https://neotw.netlify.app/static/neotw%252Faction%252Fbase-time-darkmode.html" rel="alternative" type="text/html"></link><id>ca300897-59c7-394f-ab70-18ef3e8afa20</id><updated>2022-09-10T11:55:09</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>
 
 
-
-
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw/actions/base-browser-darkmode</title><link href="https://neotw.netlify.app/#neotw%2Factions%2Fbase-browser-darkmode"></link><link href="https://neotw.netlify.app/static/neotw%252Factions%252Fbase-browser-darkmode.html" rel="alternative" type="text/html"></link><id>c06b7073-601c-a135-522e-8d52eb62e6db</id><updated>2022-09-10T11:09:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p></p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw/archive/restore-button</title><link href="https://neotw.netlify.app/#neotw%2Farchive%2Frestore-button"></link><link href="https://neotw.netlify.app/static/neotw%252Farchive%252Frestore-button.html" rel="alternative" type="text/html"></link><id>51399bbb-0860-5f76-e517-a4cedcb6a20c</id><updated>2022-09-07T13:28:13</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div style="text-align: right;">
 <button class=""> 
 
@@ -5756,7 +5795,7 @@ current neotw version is <u></u>
 <br></br>	
  <a class="tc-tiddlylink tc-tiddlylink-shadow tc-tiddlylink-resolves" href="#%24%3A%2Fthemes%2Fnico%2Fnotebook%2Fmetrics%2Fstory-width">StoryWidth</a>
  <br></br>
-<input class="p-0 min-w-0 appearance-none" max="1450" min="900" step="1" type="range" value="1030"></input> 1030px</p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw/sidebar/color-picker</title><link href="https://neotw.netlify.app/#neotw%2Fsidebar%2Fcolor-picker"></link><link href="https://neotw.netlify.app/static/neotw%252Fsidebar%252Fcolor-picker.html" rel="alternative" type="text/html"></link><id>1e2de642-e628-9386-685c-9a996df0cd84</id><updated>2022-09-12T00:15:12</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>color: <input placeholder="color" value=""></input></p><p></p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw/story-width</title><link href="https://neotw.netlify.app/#neotw%2Fstory-width"></link><link href="https://neotw.netlify.app/static/neotw%252Fstory-width.html" rel="alternative" type="text/html"></link><id>511a18e7-e7af-4dbe-d657-2e579d8c4161</id><updated>2022-09-09T14:16:05</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>900</p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw/style/dd</title><link href="https://neotw.netlify.app/#neotw%2Fstyle%2Fdd"></link><link href="https://neotw.netlify.app/static/neotw%252Fstyle%252Fdd.html" rel="alternative" type="text/html"></link><id>78eae5b9-cb44-0fda-3f92-a55b35e30fa1</id><updated>2022-09-09T23:58:05</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>dd {
+<input class="p-0 min-w-0 appearance-none" max="1450" min="900" step="1" type="range" value="1164"></input> 1164px</p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw/sidebar/color-picker</title><link href="https://neotw.netlify.app/#neotw%2Fsidebar%2Fcolor-picker"></link><link href="https://neotw.netlify.app/static/neotw%252Fsidebar%252Fcolor-picker.html" rel="alternative" type="text/html"></link><id>1e2de642-e628-9386-685c-9a996df0cd84</id><updated>2022-09-12T00:15:12</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>color: <input placeholder="color" value=""></input></p><p></p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw/story-width</title><link href="https://neotw.netlify.app/#neotw%2Fstory-width"></link><link href="https://neotw.netlify.app/static/neotw%252Fstory-width.html" rel="alternative" type="text/html"></link><id>511a18e7-e7af-4dbe-d657-2e579d8c4161</id><updated>2022-09-09T14:16:05</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>900</p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw/style/dd</title><link href="https://neotw.netlify.app/#neotw%2Fstyle%2Fdd"></link><link href="https://neotw.netlify.app/static/neotw%252Fstyle%252Fdd.html" rel="alternative" type="text/html"></link><id>78eae5b9-cb44-0fda-3f92-a55b35e30fa1</id><updated>2022-09-09T23:58:05</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>dd {
 	margin-left:14px;
 }</p><p>dd:hover::before {
 	content: "» ";
@@ -5935,7 +5974,41 @@ map.forEach((value, key) =&gt; arr.push([key, value])); // 遍历 Map</code></pr
 };</code></pre><p>3. 实例化对象（Instance Object）：通过new关键字调用构造函数来实例化一个新对象，该对象会自动继承构造函数的原型对象。</p><pre class="hljs"><code class="js hljs"><span class="hljs-keyword">const</span> person = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>(<span class="hljs-string">&#x27;John Doe&#x27;</span>, <span class="hljs-number">30</span>);
 person.<span class="hljs-title function_">greet</span>(); <span class="hljs-comment">// Hi, my name is John Doe and I&#x27;m 30 years old.</span></code></pre><p>4. 原型链（Prototype Chain）：每个对象都有一个内部属性<a class="tc-tiddlylink tc-tiddlylink-missing" href="#Prototype">Prototype</a>，该属性指向该对象的原型。如果一个对象的属性或方法没有被找到，JavaScript引擎会沿着该对象的原型链向上查找，直到找到该属性或方法为止。</p><pre class="hljs"><code class="js hljs"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(person.<span class="hljs-property">__proto__</span> === <span class="hljs-title class_">Person</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>); <span class="hljs-comment">// true</span>
 <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title class_">Person</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>.<span class="hljs-property">__proto__</span> === <span class="hljs-title class_">Object</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>); <span class="hljs-comment">// true</span>
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title class_">Object</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>.<span class="hljs-property">__proto__</span> === <span class="hljs-literal">null</span>); <span class="hljs-comment">// true</span></code></pre><p>在JavaScript中，原型和原型链是非常重要的概念。理解它们可以帮助我们更好地理解JavaScript中的面向对象编程方式，并进一步提高我们的JavaScript编程能力。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>pure-es6</title><link href="https://neotw.netlify.app/#pure-es6"></link><link href="https://neotw.netlify.app/static/pure-es6.html" rel="alternative" type="text/html"></link><id>24cf2bf3-81ee-69c3-1249-b34c641db810</id><updated>2023-05-27T19:49:15</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c" rel="noopener noreferrer" target="_blank">https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>pure-function</title><link href="https://neotw.netlify.app/#pure-function"></link><link href="https://neotw.netlify.app/static/pure-function.html" rel="alternative" type="text/html"></link><id>af5a9221-f747-5d04-c9c2-da59a1c28650</id><updated>2023-04-28T16:41:14</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>"纯函数" 概念解释
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title class_">Object</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>.<span class="hljs-property">__proto__</span> === <span class="hljs-literal">null</span>); <span class="hljs-comment">// true</span></code></pre><p>在JavaScript中，原型和原型链是非常重要的概念。理解它们可以帮助我们更好地理解JavaScript中的面向对象编程方式，并进一步提高我们的JavaScript编程能力。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>puppeteer</title><link href="https://neotw.netlify.app/#puppeteer"></link><link href="https://neotw.netlify.app/static/puppeteer.html" rel="alternative" type="text/html"></link><id>dafa8152-77d3-bbc4-9978-68647f09a9f2</id><updated>2023-05-28T11:53:24</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+<p>Puppeteer是一个由Google Chrome团队开发的Node.js库，可以通过编写JavaScript代码来控制Chrome或Chromium浏览器的行为。Puppeteer提供了一组API，可以让开发人员编写脚本来模拟用户在浏览器中的操作，例如点击、填写表单、截图等等。这使得开发人员能够自动化测试和爬取网站，以及进行其他与浏览器交互相关的任务。
+</p>
+<p>Puppeteer的特点包括：
+</p>
+<ul>
+<li>它可以完全模拟人类用户的行为，包括点击、输入和滚动等。</li>
+<li>它可以在无头模式下运行浏览器，这意味着浏览器界面不会显示出来，从而提高了脚本执行的速度。</li>
+<li>它可以轻松地生成PDF或截图，并提供了丰富的API来访问和操作页面元素。</li>
+<li>它提供了一个方便的调试工具，可以在浏览器中查看脚本运行时的页面状态和元素信息。</li>
+</ul>
+<p>总之，Puppeteer是一个非常强大和灵活的工具，可以大大简化许多Web自动化任务的开发和执行过程。它已经成为许多开发人员和企业的首选工具之一，特别是在需要进行大规模测试、数据抓取和屏幕截图等任务时。
+</p>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>puppeteer-leetcode</title><link href="https://neotw.netlify.app/#puppeteer-leetcode"></link><link href="https://neotw.netlify.app/static/puppeteer-leetcode.html" rel="alternative" type="text/html"></link><id>ac173bcf-d8d0-f8c2-78fe-19a618d4d95d</id><updated>2023-05-28T11:50:51</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre class="hljs"><code class="js hljs"><span class="hljs-keyword">const</span> puppeteer = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;puppeteer&quot;</span>);
+<span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;fs&quot;</span>);
+<span class="hljs-keyword">const</span> turndown = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;turndown&quot;</span>);
+
+(<span class="hljs-keyword">async</span> () =&gt; {
+  <span class="hljs-keyword">const</span> browser = <span class="hljs-keyword">await</span> puppeteer.<span class="hljs-title function_">launch</span>({
+    <span class="hljs-attr">headless</span>: <span class="hljs-string">&quot;new&quot;</span>,
+  });
+  <span class="hljs-keyword">const</span> page = <span class="hljs-keyword">await</span> browser.<span class="hljs-title function_">newPage</span>();
+  <span class="hljs-keyword">await</span> page.<span class="hljs-title function_">goto</span>(<span class="hljs-string">&quot;https://leetcode.cn/problems/array-reduce-transformation/&quot;</span>);
+
+  <span class="hljs-comment">// 查找 `[data-key=&quot;description_content&quot;]` 元素</span>
+  <span class="hljs-keyword">const</span> element = <span class="hljs-keyword">await</span> page.$(<span class="hljs-string">&#x27;[data-key=&quot;description-content&quot;]&#x27;</span>);
+  <span class="hljs-comment">// 获取元素内容</span>
+  <span class="hljs-keyword">const</span> text = <span class="hljs-keyword">await</span> page.evaluate(<span class="hljs-function">(<span class="hljs-params">el</span>) =&gt;</span> el.<span class="hljs-property">textContent</span>, element);
+
+  <span class="hljs-keyword">const</span> turndownService = <span class="hljs-keyword">new</span> <span class="hljs-title function_">turndown</span>();
+  <span class="hljs-keyword">const</span> markdownText = turndownService.<span class="hljs-title function_">turndown</span>(text);
+  fs.<span class="hljs-title function_">writeFileSync</span>(<span class="hljs-string">&quot;description.md&quot;</span>, markdownText);
+
+  <span class="hljs-keyword">await</span> browser.<span class="hljs-title function_">close</span>();
+})();</code></pre></div></content><author><name>oeyoews</name></author></entry><entry><title>pure-es6</title><link href="https://neotw.netlify.app/#pure-es6"></link><link href="https://neotw.netlify.app/static/pure-es6.html" rel="alternative" type="text/html"></link><id>24cf2bf3-81ee-69c3-1249-b34c641db810</id><updated>2023-05-27T19:49:15</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c" rel="noopener noreferrer" target="_blank">https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>pure-function</title><link href="https://neotw.netlify.app/#pure-function"></link><link href="https://neotw.netlify.app/static/pure-function.html" rel="alternative" type="text/html"></link><id>af5a9221-f747-5d04-c9c2-da59a1c28650</id><updated>2023-04-28T16:41:14</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>"纯函数" 概念解释
 JS中定义的所有函数都可以增加参数，所谓"纯函数"是指函数内部并未修改过该参数的函数。</p><p>例如以下函数：function myFun(a){let c=a }，该函数内部从未更改过参数a，那么这个函数就是纯函数。</p><p>反例，非纯函数 例如：function myFun(a){a=a+2; let c=a}，该函数内部修改过参数a，那么这个函数就不再是纯函数了。</p><p>纯函数的特殊意义是什么？
 因为纯函数内部从不会直接修改参数，那么无论运行多少次，执行结果永远是一致的。</p><p>若仅仅有一个函数，那么也无所谓，但是如果有多个函数都是都需要调用执行同一个变量(参数)，为了确保多个函数执行结果是符合预期的，那么就要求每个函数都不能在自己内部修改该变量(参数)。</p><p>这就是为什么react不允许直接修改某变量的原因。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>puzzle</title><link href="https://neotw.netlify.app/#puzzle"></link><link href="https://neotw.netlify.app/static/puzzle.html" rel="alternative" type="text/html"></link><id>2d8aa42a-0347-c2d6-6cc8-6a0138dc9664</id><updated>2023-01-17T21:32:53</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><svg enable-background="new 0 0 48 48" fill="currentColor" height="1em" stroke="currentColor" stroke-width="0" version="1" viewBox="0 0 48 48" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M39,15c0-2.2-1.8-4-4-4h-6c-0.7,0-1.1-0.8-0.7-1.4c0.6-1,0.9-2.2,0.6-3.5c-0.4-2-1.9-3.6-3.8-4 C21.8,1.4,19,3.9,19,7c0,1,0.3,1.8,0.7,2.6c0.4,0.6,0,1.4-0.8,1.4h-6c-2.2,0-4,1.8-4,4v7c0,0.7,0.8,1.1,1.4,0.7 c1-0.6,2.2-0.9,3.5-0.6c2,0.4,3.6,1.9,4,3.8c0.7,3.2-1.8,6.1-4.9,6.1c-1,0-1.8-0.3-2.6-0.7C9.8,30.9,9,31.3,9,32v6c0,2.2,1.8,4,4,4 h22c2.2,0,4-1.8,4-4V15z" fill="#8BC34A"></path></svg></p></div></content><author><name>oeyoews</name></author></entry><entry><title>random-unsplash</title><link href="https://neotw.netlify.app/#random-unsplash"></link><link href="https://neotw.netlify.app/static/random-unsplash.html" rel="alternative" type="text/html"></link><id>5124d9ec-7710-d2b3-4737-4480a0502126</id><updated>2023-04-09T11:30:00</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><center>
 <img class=" tc-image-loading" src="https://source.unsplash.com/random/700x700?cat" width="128"></img>
@@ -6502,7 +6575,40 @@ React.StrictMode 组件不会在生产环境中运行，它仅在开发环境中
 &lt;/p&gt;</code></pre></div></content><author><name>oeyoews</name></author></entry><entry><title>react01</title><link href="https://neotw.netlify.app/#react01"></link><link href="https://neotw.netlify.app/static/react01.html" rel="alternative" type="text/html"></link><id>5a51edec-61a1-79ed-0826-41dc9f43fe13</id><updated>2023-04-23T12:05:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>命令式 过程优先</li><li>声明式 只关心结果, 不关心过程</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-count</title><link href="https://neotw.netlify.app/#recent-count"></link><link href="https://neotw.netlify.app/static/recent-count.html" rel="alternative" type="text/html"></link><id>6a131e9a-b046-19c3-08bd-35ef7c9ffbfc</id><updated>2023-02-08T18:16:06</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="tc-timeline">
 
 <div class="tc-menu-list-item">
-27th May 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#21">21</a></span>)
+28th May 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#6">6</a></span>)
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#puppeteer"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#puppeteer-leetcode"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#turndown"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#sleep-promise"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#Two-Sum"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#array-prototype-last"></a>
+</div>
+
+</div>
+
+<div class="tc-menu-list-item">
+27th May 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#22">22</a></span>)
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#js-map"></a>
+</div>
 
 <div class="tc-menu-list-subitem">
 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#pure-es6"></a>
@@ -6976,37 +7082,49 @@ React.StrictMode 组件不会在生产环境中运行，它仅在开发环境中
 
 </div>
 
-<div class="tc-menu-list-item">
-6th May 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#3">3</a></span>)
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#2023-05-06"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#arrow-function"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#jsx-mdx"></a>
-</div>
-
-</div>
-
-<div class="tc-menu-list-item">
-5th May 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#2">2</a></span>)
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#neotw%2Fsetup"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#index.d.ts"></a>
-</div>
-
-</div>
-
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-note-record</title><link href="https://neotw.netlify.app/#recent-note-record"></link><link href="https://neotw.netlify.app/static/recent-note-record.html" rel="alternative" type="text/html"></link><id>2619840e-dc84-d69e-3d32-c2258f306a66</id><updated>2023-04-11T09:39:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><ul>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#puppeteer">puppeteer</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#puppeteer-leetcode">puppeteer-leetcode</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#turndown">turndown</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#sleep-promise">sleep-promise</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#Two-Sum">Two-Sum</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#array-prototype-last">array-prototype-last</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#js-map">js-map</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#pure-es6">pure-es6</a>
@@ -7299,48 +7417,48 @@ React.StrictMode 组件不会在生产环境中运行，它仅在开发环境中
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#class">class</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#addEventlistener-on-tw">addEventlistener-on-tw</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#debounce-throttle">debounce-throttle</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#translater.html">translater.html</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#neotw-adb">neotw-adb</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#function-adjust">function-adjust</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#prototype">prototype</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#neotw-tar">neotw-tar</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
@@ -9255,37 +9373,37 @@ React.StrictMode 组件不会在生产环境中运行，它仅在开发环境中
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#ui-components">ui-components</a>
         
-         <span style="color:black;"><sup>recent</sup></span>
+        
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#export-sql-file-with-dbeaver">export-sql-file-with-dbeaver</a>
         
-         <span style="color:black;"><sup>recent</sup></span>
+        
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#use-nvm-switch-node-version">use-nvm-switch-node-version</a>
         
-         <span style="color:black;"><sup>recent</sup></span>
+        
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#Cannot%20load%20from%20mysql.proc">Cannot load from mysql.proc</a>
         
-         <span style="color:black;"><sup>recent</sup></span>
+        
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#show-your-mirror-branch">show-your-mirror-branch</a>
         
-         <span style="color:black;"><sup>recent</sup></span>
+        
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#listent-different-sounds">listent-different-sounds</a>
         
-         <span style="color:black;"><sup>recent</sup></span>
+        
     </li>
   
     <li>
@@ -10168,7 +10286,29 @@ person.info();</code></pre><p>在这个例子中，我们使用箭头函数来�
       opacity: 1;
     }
   }
-&lt;/style&gt;</p><p>&lt;/div&gt;</p></div></content><author><name>oeyoews</name></author></entry><entry><title>soft-link-for-path</title><link href="https://neotw.netlify.app/#soft-link-for-path"></link><link href="https://neotw.netlify.app/static/soft-link-for-path.html" rel="alternative" type="text/html"></link><id>2b8c1e0b-f5cf-f477-f8fb-2196621ae60d</id><updated>2023-03-17T14:20:12</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div>for ln -s, use absolute path general, but for some special conditions is not necessary</div></blockquote><hr></hr><blockquote><div>if you want to ln a directory to some where, just jump target use cd, and execute command, such as</div></blockquote><pre class="hljs"><code class="bash hljs"><span class="hljs-built_in">ln</span> ../../plugins ./plugins</code></pre></div></content><author><name>oeyoews</name></author></entry><entry><title>some tw website examples</title><link href="https://neotw.netlify.app/#some%20tw%20website%20examples"></link><link href="https://neotw.netlify.app/static/some%2520tw%2520website%2520examples.html" rel="alternative" type="text/html"></link><id>0b5ad75c-cbd5-b42a-602d-39d802c7be73</id><updated>2023-01-14T13:40:16</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://zettelkasten.sorenbjornstad.com/" rel="noopener noreferrer" target="_blank">https://zettelkasten.sorenbjornstad.com/</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>some-tools</title><link href="https://neotw.netlify.app/#some-tools"></link><link href="https://neotw.netlify.app/static/some-tools.html" rel="alternative" type="text/html"></link><id>720e3905-e723-4e16-9466-2c7dc389577f</id><updated>2023-04-01T22:10:44</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>tinysnap</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>sounds-mp3</title><link href="https://neotw.netlify.app/#sounds-mp3"></link><link href="https://neotw.netlify.app/static/sounds-mp3.html" rel="alternative" type="text/html"></link><id>fcad668a-25fe-8cdf-e198-b849528e3f0a</id><updated>2023-04-10T20:00:18</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://mixkit.co/free-sound-effects/click/?page=2" rel="noopener noreferrer" target="_blank">https://mixkit.co/free-sound-effects/click/?page=2</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>spa</title><link href="https://neotw.netlify.app/#spa"></link><link href="https://neotw.netlify.app/static/spa.html" rel="alternative" type="text/html"></link><id>cc91e646-ffef-196e-61f2-5dce2ada9ae5</id><updated>2023-05-07T20:51:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>SPA是单页应用程序（Single Page Application）的缩写，它使用JavaScript动态更新页面内容，而无需每次更改时重新加载整个页面。React是一种用于构建用户界面的JavaScript库，它可以帮助您构建高效且易于维护的SPA应用程序。</p><p>React使用组件化的方法来构建应用程序，将页面拆分为小部件，每个部件负责呈现自己的内容。这使得开发人员能够更轻松地管理代码和UI状态，并创建可重用的代码块。</p><p>当React与SPA结合使用时，您可以使用React来构建应用程序中的每个部分，并使用React Router等路由库来控制应用程序的导航。这将使您的应用程序具有更好的性能和用户体验，并更容易扩展和维护。</p><p>SPA（Single Page Application）是一种Web应用程序开发模式，它通过使用AJAX和动态HTML更新单个页面来提供更快速的用户体验。与传统的多页应用程序相比，SPA通常具有以下特点：</p><p>1. 页面刷新少：因为 SPA 只加载一个 HTML 页面并通过 AJAX 请求数据，所以可以减少页面刷新和服务器负载。</p><p>2. 更快的用户体验：由于只需要在用户与应用程序交互时才需要更新页面，并且可以使用缓存技术在本地存储数据，因此可以提高应用程序的响应速度和性能。</p><p>3. 更灵活的前端架构：因为 SPA 通常使用 JavaScript 来渲染视图，所以可以使用现代的前端框架（如React、Angular或Vue.js）来构建复杂的用户界面。</p><p>4. SEO 困难：因为 SPA 只有一个HTML页面，而且大部分内容都是通过AJAX请求获取后渲染到页面上，搜索引擎可能无法正确索引网站，对SEO会有一定影响。</p><p>以下是一些常见的SPA框架和库：</p><p>- AngularJS / Angular
+&lt;/style&gt;</p><p>&lt;/div&gt;</p></div></content><author><name>oeyoews</name></author></entry><entry><title>sleep-promise</title><link href="https://neotw.netlify.app/#sleep-promise"></link><link href="https://neotw.netlify.app/static/sleep-promise.html" rel="alternative" type="text/html"></link><id>968a8131-c674-b2ce-d59b-e9b894f68ef1</id><updated>2023-05-28T11:08:39</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+Undefined widget 'ocover'
+<pre class="hljs"><code class="js hljs"><span class="hljs-comment">/**
+ * description: 请你编写一个异步函数，它接收一个正整数参数 millis ，并休眠这么多毫秒。要求此函数可以解析任何值。 
+ * order: 2621
+ * type: javascript
+ */</span>
+
+<span class="hljs-comment">/**
+ * <span class="hljs-doctag">@param</span> {<span class="hljs-type">number</span>} <span class="hljs-variable">millis</span>
+ */</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">sleep</span>(<span class="hljs-params">millis</span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve</span>) =&gt;</span> {
+    <span class="hljs-built_in">setTimeout</span>(resolve, millis)
+  })
+}
+
+<span class="hljs-comment">/**
+ * let t = Date.now()
+ * sleep(100).then(() =&gt; console.log(Date.now() - t)) // 100
+ */</span>
+</code></pre>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>soft-link-for-path</title><link href="https://neotw.netlify.app/#soft-link-for-path"></link><link href="https://neotw.netlify.app/static/soft-link-for-path.html" rel="alternative" type="text/html"></link><id>2b8c1e0b-f5cf-f477-f8fb-2196621ae60d</id><updated>2023-03-17T14:20:12</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div>for ln -s, use absolute path general, but for some special conditions is not necessary</div></blockquote><hr></hr><blockquote><div>if you want to ln a directory to some where, just jump target use cd, and execute command, such as</div></blockquote><pre class="hljs"><code class="bash hljs"><span class="hljs-built_in">ln</span> ../../plugins ./plugins</code></pre></div></content><author><name>oeyoews</name></author></entry><entry><title>some tw website examples</title><link href="https://neotw.netlify.app/#some%20tw%20website%20examples"></link><link href="https://neotw.netlify.app/static/some%2520tw%2520website%2520examples.html" rel="alternative" type="text/html"></link><id>0b5ad75c-cbd5-b42a-602d-39d802c7be73</id><updated>2023-01-14T13:40:16</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://zettelkasten.sorenbjornstad.com/" rel="noopener noreferrer" target="_blank">https://zettelkasten.sorenbjornstad.com/</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>some-tools</title><link href="https://neotw.netlify.app/#some-tools"></link><link href="https://neotw.netlify.app/static/some-tools.html" rel="alternative" type="text/html"></link><id>720e3905-e723-4e16-9466-2c7dc389577f</id><updated>2023-04-01T22:10:44</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>tinysnap</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>sounds-mp3</title><link href="https://neotw.netlify.app/#sounds-mp3"></link><link href="https://neotw.netlify.app/static/sounds-mp3.html" rel="alternative" type="text/html"></link><id>fcad668a-25fe-8cdf-e198-b849528e3f0a</id><updated>2023-04-10T20:00:18</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://mixkit.co/free-sound-effects/click/?page=2" rel="noopener noreferrer" target="_blank">https://mixkit.co/free-sound-effects/click/?page=2</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>spa</title><link href="https://neotw.netlify.app/#spa"></link><link href="https://neotw.netlify.app/static/spa.html" rel="alternative" type="text/html"></link><id>cc91e646-ffef-196e-61f2-5dce2ada9ae5</id><updated>2023-05-07T20:51:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>SPA是单页应用程序（Single Page Application）的缩写，它使用JavaScript动态更新页面内容，而无需每次更改时重新加载整个页面。React是一种用于构建用户界面的JavaScript库，它可以帮助您构建高效且易于维护的SPA应用程序。</p><p>React使用组件化的方法来构建应用程序，将页面拆分为小部件，每个部件负责呈现自己的内容。这使得开发人员能够更轻松地管理代码和UI状态，并创建可重用的代码块。</p><p>当React与SPA结合使用时，您可以使用React来构建应用程序中的每个部分，并使用React Router等路由库来控制应用程序的导航。这将使您的应用程序具有更好的性能和用户体验，并更容易扩展和维护。</p><p>SPA（Single Page Application）是一种Web应用程序开发模式，它通过使用AJAX和动态HTML更新单个页面来提供更快速的用户体验。与传统的多页应用程序相比，SPA通常具有以下特点：</p><p>1. 页面刷新少：因为 SPA 只加载一个 HTML 页面并通过 AJAX 请求数据，所以可以减少页面刷新和服务器负载。</p><p>2. 更快的用户体验：由于只需要在用户与应用程序交互时才需要更新页面，并且可以使用缓存技术在本地存储数据，因此可以提高应用程序的响应速度和性能。</p><p>3. 更灵活的前端架构：因为 SPA 通常使用 JavaScript 来渲染视图，所以可以使用现代的前端框架（如React、Angular或Vue.js）来构建复杂的用户界面。</p><p>4. SEO 困难：因为 SPA 只有一个HTML页面，而且大部分内容都是通过AJAX请求获取后渲染到页面上，搜索引擎可能无法正确索引网站，对SEO会有一定影响。</p><p>以下是一些常见的SPA框架和库：</p><p>- AngularJS / Angular
 - React
 - Vue.js
 - Ember.js
@@ -10620,9 +10760,85 @@ Undefined widget 'echarts'
   <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(error.<span class="hljs-property">name</span>); <span class="hljs-comment">// 输出 &quot;Error&quot;</span>
   <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(error.<span class="hljs-property">message</span>); <span class="hljs-comment">// 输出 &quot;Something went wrong&quot;</span>
 }</code></pre><p>需要注意的是，catch 代码块中的参数名（如上面的 error）是任意的，只要符合标识符的命名规范即可。通常情况下，它被命名为 error 或 err，以表明它是一个异常对象。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>ts-01</title><link href="https://neotw.netlify.app/#ts-01"></link><link href="https://neotw.netlify.app/static/ts-01.html" rel="alternative" type="text/html"></link><id>2f634752-3aa6-7169-6bf4-583505a441bd</id><updated>2023-05-08T18:43:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>"ts" 是 TypeScript 的缩写，尖括号 "&lt;&gt;" 在 TypeScript 中通常用于表示泛型类型。例如：</p><pre class="hljs"><code class="typescript hljs"><span class="hljs-comment">// 定义一个泛型数组类型</span>
-<span class="hljs-keyword">const</span> <span class="hljs-attr">array</span>: <span class="hljs-title class_">Array</span>&lt;<span class="hljs-built_in">number</span>&gt; = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>];</code></pre><p>在这个例子中，"<number>" 表示了这个数组只能存储数字类型的元素。泛型是 TypeScript 中非常强大和灵活的特性，它可以让代码更加抽象和可复用。</number></p></div></content><author><name>oeyoews</name></author></entry><entry><title>twitter-example</title><link href="https://neotw.netlify.app/#twitter-example"></link><link href="https://neotw.netlify.app/static/twitter-example.html" rel="alternative" type="text/html"></link><id>1a2ce178-6ae4-de74-9265-6f102349b6f7</id><updated>2023-04-19T20:26:43</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><center>
+<span class="hljs-keyword">const</span> <span class="hljs-attr">array</span>: <span class="hljs-title class_">Array</span>&lt;<span class="hljs-built_in">number</span>&gt; = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>];</code></pre><p>在这个例子中，"<number>" 表示了这个数组只能存储数字类型的元素。泛型是 TypeScript 中非常强大和灵活的特性，它可以让代码更加抽象和可复用。</number></p></div></content><author><name>oeyoews</name></author></entry><entry><title>turndown</title><link href="https://neotw.netlify.app/#turndown"></link><link href="https://neotw.netlify.app/static/turndown.html" rel="alternative" type="text/html"></link><id>e62e00e0-2543-fad6-96ab-7bd3f2be6502</id><updated>2023-05-28T11:24:36</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre class="hljs"><code class="html hljs"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Turndown demo<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>turndown demo<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Turndown is a function to convert HTML into clean markdown.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>It removes HTML elements<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>But keeps content<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>And converts HTML entities and idioms into markdown equivalents<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span>&gt;</span>
+        Great tool for generating markdown from HTML snippets.
+      <span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+        Checkout the
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://github.com/domchristie/turndown&quot;</span>
+          &gt;</span>turndown repo on GitHub.&lt;/a
+        &gt;
+      <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://unpkg.com/turndown/dist/turndown.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript">
+      <span class="hljs-keyword">var</span> turndownService = <span class="hljs-keyword">new</span> <span class="hljs-title class_">TurndownService</span>();
+      <span class="hljs-keyword">var</span> markdown = turndownService.<span class="hljs-title function_">turndown</span>(
+        <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&quot;.post&quot;</span>).<span class="hljs-property">innerHTML</span>
+      );
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(markdown);
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre></div></content><author><name>oeyoews</name></author></entry><entry><title>twitter-example</title><link href="https://neotw.netlify.app/#twitter-example"></link><link href="https://neotw.netlify.app/static/twitter-example.html" rel="alternative" type="text/html"></link><id>1a2ce178-6ae4-de74-9265-6f102349b6f7</id><updated>2023-04-19T20:26:43</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><center>
 Undefined widget 'twitter'
-</center></p></div></content><author><name>oeyoews</name></author></entry><entry><title>types</title><link href="https://neotw.netlify.app/#types"></link><link href="https://neotw.netlify.app/static/types.html" rel="alternative" type="text/html"></link><id>d14a8022-b085-f9ef-19d4-79cbdd581127</id><updated>2023-05-10T00:14:14</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>静态类型、动态类型和弱类型、强类型<br></br>静态类型：编译期就知道每一个变量的类型。类型错误编译失败是语法问题。如Java、C++。<br></br>动态类型：编译期不知道类型，运行时才知道。类型错误抛出异常发生在运行时。如JS、Python。<br></br>弱类型：容忍隐式类型转换。如JS，1+'1'='11'，数字型转成了字符型。<br></br>强类型：不容忍隐式类型转换。如Python，1+'1'会抛出TypeError。<br></br></p></div></content><author><name>oeyoews</name></author></entry><entry><title>typescript</title><link href="https://neotw.netlify.app/#typescript"></link><link href="https://neotw.netlify.app/static/typescript.html" rel="alternative" type="text/html"></link><id>1e35bcba-2dba-1089-c7bd-0805d4517c8f</id><updated>2023-05-07T21:50:29</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>strong type</li><li>custome type</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>ui-components</title><link href="https://neotw.netlify.app/#ui-components"></link><link href="https://neotw.netlify.app/static/ui-components.html" rel="alternative" type="text/html"></link><id>9240f38b-0d57-3016-3960-8dbb734ccf71</id><updated>2023-03-28T21:16:44</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>elementui(vue)</li><li>headless(react)</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>unsplash-source-api</title><link href="https://neotw.netlify.app/#unsplash-source-api"></link><link href="https://neotw.netlify.app/static/unsplash-source-api.html" rel="alternative" type="text/html"></link><id>c9117199-aa34-f750-7954-3342e16df884</id><updated>2023-05-19T20:40:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><code>https://source.unsplash.com/random</code> 是 Unsplash 提供的一个 API，用于随机获取 Unsplash 图片库中的一张公共照片。使用该 API 时不需要进行身份验证，只需访问该 URL 即可返回一张随机图片。</p><p>但需要注意的是，该 API 并没有返回任何图片信息的 JSON 数据等格式化数据，而是直接返回一张图片的二进制流。因此如果要在页面中显示该随机图片，需要使用 <code>&lt;img&gt;</code> 标签来加载该图片的 URL：</p><pre class="hljs"><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://source.unsplash.com/random&quot;</span>&gt;</span></code></pre><p>当浏览器加载该 URL 时，Unsplash 会随机返回一张符合条件的图片，并将其作为二进制流返回给浏览器，浏览器会自动将其解析成图片并显示到页面上。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>update-plugins-note</title><link href="https://neotw.netlify.app/#update-plugins-note"></link><link href="https://neotw.netlify.app/static/update-plugins-note.html" rel="alternative" type="text/html"></link><id>e990db7b-2ab3-2284-c1f4-9c9a6c5ee12c</id><updated>2023-03-23T01:08:44</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>if update codemirror-enhanced from cpl, its dependencied will download automatically(for nodejs and me, it's needless because of tiddlywiki.info)</p></div></content><author><name>oeyoews</name></author></entry><entry><title>update-tiddlywiki-bug</title><link href="https://neotw.netlify.app/#update-tiddlywiki-bug"></link><link href="https://neotw.netlify.app/static/update-tiddlywiki-bug.html" rel="alternative" type="text/html"></link><id>fd1850ec-b702-4355-8498-186c6c0f0791</id><updated>2023-02-24T14:10:38</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>if use deletetiddler on startup actioin, this file will not be updated on filesystem</p></div></content><author><name>oeyoews</name></author></entry><entry><title>use-berry</title><link href="https://neotw.netlify.app/#use-berry"></link><link href="https://neotw.netlify.app/static/use-berry.html" rel="alternative" type="text/html"></link><id>d2d0a958-04dc-18ee-ca13-6b24bb380543</id><updated>2023-04-04T12:05:08</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>just enable for current projects</li></ul><blockquote><div>yarn set version stable</div><div>yarn set version classic</div><div>yarn set version berry # enable global yarn to berry</div><div>cache maybe not supported</div><div>support cli completions</div></blockquote><hr></hr><ul><li>corepack disable to manage your global yarn version</li><li>when you are in yarn-1.22.19, you can use <code>yarn init -2</code> to init current project to yarn with berry projects</li><li>please remove ~/.yarnrc.yml this will have some questions</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>use-dark-reader</title><link href="https://neotw.netlify.app/#use-dark-reader"></link><link href="https://neotw.netlify.app/static/use-dark-reader.html" rel="alternative" type="text/html"></link><id>1534888f-59d0-8775-cce5-33459f7d8b57</id><updated>2023-04-09T19:38:52</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>google not toggle dark/mode, so this dark reader extension is better choice</p></div></content><author><name>oeyoews</name></author></entry><entry><title>use-deepl-extend-on-chrome</title><link href="https://neotw.netlify.app/#use-deepl-extend-on-chrome"></link><link href="https://neotw.netlify.app/static/use-deepl-extend-on-chrome.html" rel="alternative" type="text/html"></link><id>9d71e5ae-ed4a-a09c-70d1-93f5edddae11</id><updated>2023-03-05T15:52:50</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></content><author><name>oeyoews</name></author></entry><entry><title>use-exact</title><link href="https://neotw.netlify.app/#use-exact"></link><link href="https://neotw.netlify.app/static/use-exact.html" rel="alternative" type="text/html"></link><id>ebc14d3a-4fa6-a5c1-8c43-7f9b5def5741</id><updated>2023-04-04T13:16:20</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>yarn add –exact</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>use-files-on-tiddlywiki</title><link href="https://neotw.netlify.app/#use-files-on-tiddlywiki"></link><link href="https://neotw.netlify.app/static/use-files-on-tiddlywiki.html" rel="alternative" type="text/html"></link><id>f0675d27-810c-842b-776c-6c075845587d</id><updated>2023-03-15T17:27:10</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li><a class="tc-tiddlylink-external" href="https://github.com/benwebber/tiddlywiki-plugins/blob/main/src/plugins/motion/files/tiddlywiki.files" rel="noopener noreferrer" target="_blank">https://github.com/benwebber/tiddlywiki-plugins/blob/main/src/plugins/motion/files/tiddlywiki.files</a></li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>use-flameshot-to-upload-image</title><link href="https://neotw.netlify.app/#use-flameshot-to-upload-image"></link><link href="https://neotw.netlify.app/static/use-flameshot-to-upload-image.html" rel="alternative" type="text/html"></link><id>209f63c0-ed7d-d51d-6644-549907f31e95</id><updated>2023-03-01T19:09:45</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><strike>* <code>ctrl+alt+a</code> and press enter</strike></p><ul><li>picgo(gitlab files plugin) + <strike>github</strike> gitlab(or cn gitlab)  <strike> + jsdelivr</strike></li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>use-github-actions-on-local</title><link href="https://neotw.netlify.app/#use-github-actions-on-local"></link><link href="https://neotw.netlify.app/static/use-github-actions-on-local.html" rel="alternative" type="text/html"></link><id>b63d7c04-ee92-957d-9529-564398901a09</id><updated>2023-04-03T18:59:00</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>act</p></div></content><author><name>oeyoews</name></author></entry><entry><title>use-github-cli</title><link href="https://neotw.netlify.app/#use-github-cli"></link><link href="https://neotw.netlify.app/static/use-github-cli.html" rel="alternative" type="text/html"></link><id>04ba8f1b-775c-26ad-1c2e-22a9057da83a</id><updated>2023-04-07T12:55:34</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+</center></p></div></content><author><name>oeyoews</name></author></entry><entry><title>Two-Sum</title><link href="https://neotw.netlify.app/#Two-Sum"></link><link href="https://neotw.netlify.app/static/Two-Sum.html" rel="alternative" type="text/html"></link><id>cdf2a7ad-09eb-f3f8-3197-93a24c56c173</id><updated>2023-05-28T10:35:13</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+Undefined widget 'ocover'
+<pre class="hljs"><code class="js hljs"><span class="hljs-comment">/**
+Name: two-sum
+Order: 1
+
+* Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target  的那 两个 整数，并返回它们的数组下标。
+
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+你可以假设每种输入只会对应一个答案。但是，数组中同一个元素在答案里不能重复出现。
+
+You can return the answer in any order.
+你可以按任意顺序返回答案。
+
+算法的时间复杂度为O(n)，其中n为数组中元素的个数。使用哈希表来存储元素和下标的对应关系; 
+**/</span>
+
+<span class="hljs-comment">// soulation 1</span>
+<span class="hljs-keyword">var</span> twoSum = <span class="hljs-keyword">function</span>(<span class="hljs-params">nums, target</span>) {
+  <span class="hljs-keyword">const</span> map = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Map</span>(); <span class="hljs-comment">// 创建一个空的哈希表</span>
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; nums.<span class="hljs-property">length</span>; i++) {
+    <span class="hljs-keyword">const</span> diff = target - nums[i]; <span class="hljs-comment">// 计算目标值与当前元素的差值</span>
+    <span class="hljs-keyword">if</span> (map.<span class="hljs-title function_">has</span>(diff)) { <span class="hljs-comment">// 在哈希表中查找是否存在值等于差值的元素</span>
+      <span class="hljs-keyword">return</span> [map.<span class="hljs-title function_">get</span>(diff),i]; <span class="hljs-comment">// 如果存在，则返回这两个元素的下标</span>
+    }
+    map.<span class="hljs-title function_">set</span>(nums[i], i); <span class="hljs-comment">// 如果不存在，则将当前元素和下标存入哈希表中</span>
+  }
+};
+
+<span class="hljs-comment">// soulation 2</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">twoSum</span>(<span class="hljs-params">nums, target</span>) {
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; nums.<span class="hljs-property">length</span>; i++) {
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> j = i + <span class="hljs-number">1</span>; j &lt; nums.<span class="hljs-property">length</span>; j++) {
+      <span class="hljs-keyword">if</span> (nums[i] + nums[j] === target) {
+        <span class="hljs-keyword">return</span> [i, j];
+      }
+    }
+  }
+  <span class="hljs-keyword">return</span> [];
+}
+</code></pre>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>types</title><link href="https://neotw.netlify.app/#types"></link><link href="https://neotw.netlify.app/static/types.html" rel="alternative" type="text/html"></link><id>d14a8022-b085-f9ef-19d4-79cbdd581127</id><updated>2023-05-10T00:14:14</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>静态类型、动态类型和弱类型、强类型<br></br>静态类型：编译期就知道每一个变量的类型。类型错误编译失败是语法问题。如Java、C++。<br></br>动态类型：编译期不知道类型，运行时才知道。类型错误抛出异常发生在运行时。如JS、Python。<br></br>弱类型：容忍隐式类型转换。如JS，1+'1'='11'，数字型转成了字符型。<br></br>强类型：不容忍隐式类型转换。如Python，1+'1'会抛出TypeError。<br></br></p></div></content><author><name>oeyoews</name></author></entry><entry><title>typescript</title><link href="https://neotw.netlify.app/#typescript"></link><link href="https://neotw.netlify.app/static/typescript.html" rel="alternative" type="text/html"></link><id>1e35bcba-2dba-1089-c7bd-0805d4517c8f</id><updated>2023-05-07T21:50:29</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>strong type</li><li>custome type</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>ui-components</title><link href="https://neotw.netlify.app/#ui-components"></link><link href="https://neotw.netlify.app/static/ui-components.html" rel="alternative" type="text/html"></link><id>9240f38b-0d57-3016-3960-8dbb734ccf71</id><updated>2023-03-28T21:16:44</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>elementui(vue)</li><li>headless(react)</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>unsplash-source-api</title><link href="https://neotw.netlify.app/#unsplash-source-api"></link><link href="https://neotw.netlify.app/static/unsplash-source-api.html" rel="alternative" type="text/html"></link><id>c9117199-aa34-f750-7954-3342e16df884</id><updated>2023-05-19T20:40:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><code>https://source.unsplash.com/random</code> 是 Unsplash 提供的一个 API，用于随机获取 Unsplash 图片库中的一张公共照片。使用该 API 时不需要进行身份验证，只需访问该 URL 即可返回一张随机图片。</p><p>但需要注意的是，该 API 并没有返回任何图片信息的 JSON 数据等格式化数据，而是直接返回一张图片的二进制流。因此如果要在页面中显示该随机图片，需要使用 <code>&lt;img&gt;</code> 标签来加载该图片的 URL：</p><pre class="hljs"><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://source.unsplash.com/random&quot;</span>&gt;</span></code></pre><p>当浏览器加载该 URL 时，Unsplash 会随机返回一张符合条件的图片，并将其作为二进制流返回给浏览器，浏览器会自动将其解析成图片并显示到页面上。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>update-plugins-note</title><link href="https://neotw.netlify.app/#update-plugins-note"></link><link href="https://neotw.netlify.app/static/update-plugins-note.html" rel="alternative" type="text/html"></link><id>e990db7b-2ab3-2284-c1f4-9c9a6c5ee12c</id><updated>2023-03-23T01:08:44</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>if update codemirror-enhanced from cpl, its dependencied will download automatically(for nodejs and me, it's needless because of tiddlywiki.info)</p></div></content><author><name>oeyoews</name></author></entry><entry><title>update-tiddlywiki-bug</title><link href="https://neotw.netlify.app/#update-tiddlywiki-bug"></link><link href="https://neotw.netlify.app/static/update-tiddlywiki-bug.html" rel="alternative" type="text/html"></link><id>fd1850ec-b702-4355-8498-186c6c0f0791</id><updated>2023-02-24T14:10:38</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>if use deletetiddler on startup actioin, this file will not be updated on filesystem</p></div></content><author><name>oeyoews</name></author></entry><entry><title>use-berry</title><link href="https://neotw.netlify.app/#use-berry"></link><link href="https://neotw.netlify.app/static/use-berry.html" rel="alternative" type="text/html"></link><id>d2d0a958-04dc-18ee-ca13-6b24bb380543</id><updated>2023-04-04T12:05:08</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>just enable for current projects</li></ul><blockquote><div>yarn set version stable</div><div>yarn set version classic</div><div>yarn set version berry # enable global yarn to berry</div><div>cache maybe not supported</div><div>support cli completions</div></blockquote><hr></hr><ul><li>corepack disable to manage your global yarn version</li><li>when you are in yarn-1.22.19, you can use <code>yarn init -2</code> to init current project to yarn with berry projects</li><li>please remove ~/.yarnrc.yml this will have some questions</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>use-dark-reader</title><link href="https://neotw.netlify.app/#use-dark-reader"></link><link href="https://neotw.netlify.app/static/use-dark-reader.html" rel="alternative" type="text/html"></link><id>1534888f-59d0-8775-cce5-33459f7d8b57</id><updated>2023-04-09T19:38:52</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>google not toggle dark/mode, so this dark reader extension is better choice</p></div></content><author><name>oeyoews</name></author></entry><entry><title>use-deepl-extend-on-chrome</title><link href="https://neotw.netlify.app/#use-deepl-extend-on-chrome"></link><link href="https://neotw.netlify.app/static/use-deepl-extend-on-chrome.html" rel="alternative" type="text/html"></link><id>9d71e5ae-ed4a-a09c-70d1-93f5edddae11</id><updated>2023-03-05T15:52:50</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></content><author><name>oeyoews</name></author></entry><entry><title>use-exact</title><link href="https://neotw.netlify.app/#use-exact"></link><link href="https://neotw.netlify.app/static/use-exact.html" rel="alternative" type="text/html"></link><id>ebc14d3a-4fa6-a5c1-8c43-7f9b5def5741</id><updated>2023-04-04T13:16:20</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>yarn add –exact</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>use-files-on-tiddlywiki</title><link href="https://neotw.netlify.app/#use-files-on-tiddlywiki"></link><link href="https://neotw.netlify.app/static/use-files-on-tiddlywiki.html" rel="alternative" type="text/html"></link><id>f0675d27-810c-842b-776c-6c075845587d</id><updated>2023-03-15T17:27:10</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li><a class="tc-tiddlylink-external" href="https://github.com/benwebber/tiddlywiki-plugins/blob/main/src/plugins/motion/files/tiddlywiki.files" rel="noopener noreferrer" target="_blank">https://github.com/benwebber/tiddlywiki-plugins/blob/main/src/plugins/motion/files/tiddlywiki.files</a></li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>use-flameshot-to-upload-image</title><link href="https://neotw.netlify.app/#use-flameshot-to-upload-image"></link><link href="https://neotw.netlify.app/static/use-flameshot-to-upload-image.html" rel="alternative" type="text/html"></link><id>209f63c0-ed7d-d51d-6644-549907f31e95</id><updated>2023-03-01T19:09:45</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><strike>* <code>ctrl+alt+a</code> and press enter</strike></p><ul><li>picgo(gitlab files plugin) + <strike>github</strike> gitlab(or cn gitlab)  <strike> + jsdelivr</strike></li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>use-github-actions-on-local</title><link href="https://neotw.netlify.app/#use-github-actions-on-local"></link><link href="https://neotw.netlify.app/static/use-github-actions-on-local.html" rel="alternative" type="text/html"></link><id>b63d7c04-ee92-957d-9529-564398901a09</id><updated>2023-04-03T18:59:00</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>act</p></div></content><author><name>oeyoews</name></author></entry><entry><title>use-github-cli</title><link href="https://neotw.netlify.app/#use-github-cli"></link><link href="https://neotw.netlify.app/static/use-github-cli.html" rel="alternative" type="text/html"></link><id>04ba8f1b-775c-26ad-1c2e-22a9057da83a</id><updated>2023-04-07T12:55:34</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <pre><code>gh repo clone oeyoews/oeyoews demo-oeyoews -- --depth 1
 	
 	gh auth login
