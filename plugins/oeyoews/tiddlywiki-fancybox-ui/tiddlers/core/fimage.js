@@ -104,7 +104,7 @@ Render this widget into the DOM
       domNode.setAttribute('loading', this.lazyLoading || 'lazy');
     }
     if (this.imageFancybox === 'yes') {
-      domNode.classList.add('cursor-pointer');
+      domNode.className = 'cursor-pointer';
       domNode.setAttribute(
         'data-fancybox',
         this.getVariable('currentTiddler') || 'gallary',
