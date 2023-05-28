@@ -22,8 +22,8 @@ gisucs widget
       this.execute();
 
       const { lang = 'en', theme = 'light' } = this.attributes;
-      const local = this.getAttribute('local', 'no');
-      if (local === 'no') return;
+      const local = this.getAttribute('local');
+      if (window.location.protocol === 'http:' && local === 'no') return;
 
       const giscusConfigTiddler = '$:/plugins/oeyoews/tiddlywiki-giscus/config';
       const config = $tw.wiki.getTiddler(giscusConfigTiddler)?.fields || {};
