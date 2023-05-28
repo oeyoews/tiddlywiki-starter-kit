@@ -1,3 +1,10 @@
+## [3.275.1](https://github.com/oeyoews/neotw/compare/v3.275.0...v3.275.1) (2023-05-28)
+
+
+### Bug Fixes
+
+* add adjuge for image widget ([f119414](https://github.com/oeyoews/neotw/commit/f119414a0dbf83cd6a97073c23284d26fd317b27))
+
 # [3.275.0](https://github.com/oeyoews/neotw/compare/v3.274.1...v3.275.0) (2023-05-28)
 
 
