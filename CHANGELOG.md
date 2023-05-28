@@ -1,3 +1,10 @@
+# [3.276.0](https://github.com/oeyoews/neotw/compare/v3.275.1...v3.276.0) (2023-05-28)
+
+
+### Features
+
+* add giscus plugin ([6318ced](https://github.com/oeyoews/neotw/commit/6318ced4b1e6443a55a8db78ae57825fa42b18b9))
+
 ## [3.275.1](https://github.com/oeyoews/neotw/compare/v3.275.0...v3.275.1) (2023-05-28)
 
 
