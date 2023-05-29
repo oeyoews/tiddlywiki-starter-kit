@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Neotw rolling
 </title><subtitle>A modern notebook based on TiddlyWiki5
-</subtitle><link href="https://neotw.netlify.app/atom.xml" rel="self"></link><link href="https://neotw.netlify.app/"></link><author><name>oeyoews</name></author><id>462a8bca-7c57-8f8a-27a3-d6cb4c75a727</id><updated>2023-05-29T11:12:44</updated><entry><title>/home/runner/work/neotw/neotw/tiddlers/hi-oeyoews.svg</title><link href="https://neotw.netlify.app/#%2Fhome%2Frunner%2Fwork%2Fneotw%2Fneotw%2Ftiddlers%2Fhi-oeyoews.svg"></link><link href="https://neotw.netlify.app/static/%252Fhome%252Frunner%252Fwork%252Fneotw%252Fneotw%252Ftiddlers%252Fhi-oeyoews.svg.html" rel="alternative" type="text/html"></link><id>3798d5df-8b06-4ca4-8046-0c87bf3b437d</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><img src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20viewBox%3D%220%200%20600%20300%22%20width%3D%22600%22%20height%3D%22300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3CforeignObject%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%0A%20%20%20%20%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%0A%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%40keyframes%20hi%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%200%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2010%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2020%25%20%7B%20transform%3A%20rotate(-8.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2030%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2040%25%20%7B%20transform%3A%20rotate(-4.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2050%25%20%7B%20transform%3A%20rotate(10.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2060%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40keyframes%20gradient%20%7B%0A%20%20%20%20%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%2050%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%20100%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%235452ee%3B%0A%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%23e73c7e%3B%0A%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%2323a6d5%3B%0A%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23ffff%3B%0A%0A%20%20%20%20%20%20%20%20%20%20background%3A%20linear-gradient(-45deg%2C%20var(--color-main)%2C%20var(--color-primary)%2C%20var(--color-secondary)%2C%20var(--color-tertiary))%3B%0A%20%20%20%20%20%20%20%20%20%20background-size%3A%20400%25%20400%25%3B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20gradient%2015s%20ease%20infinite%3B%0A%0A%20%20%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20%20%20height%3A%20300px%3B%0A%0A%20%20%20%20%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20color%3A%20white%3B%0A%0A%20%20%20%20%20%20%20%20%20%20font-family%3A%20-apple-system%2C%20BlinkMacSystemFont%2C%20%22Segoe%20UI%22%2C%20Roboto%2C%20Helvetica%2C%20Arial%2C%20sans-serif%2C%20%22Apple%20Color%20Emoji%22%2C%20%22Segoe%20UI%20Emoji%22%2C%20%22Segoe%20UI%20Symbol%22%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20hi%201.5s%20linear%20-0.5s%20infinite%3B%0A%20%20%20%20%20%20%20%20%20%20display%3A%20inline-block%3B%0A%20%20%20%20%20%20%20%20%20%20transform-origin%3A%2070%25%2070%25%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-color-scheme%3A%20light)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%23F15BB5%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%2324b0ef%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%234526f6%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23f6f645%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-reduced-motion)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%3C%2Fstyle%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%20%20%3Ch1%3EHi%20there%2C%20my%20name%20is%20oeyoews%20%3Cdiv%20class%3D%22hi%22%3E%F0%9F%91%8B%3C%2Fdiv%3E%3C%2Fh1%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2FforeignObject%3E%0A%3C%2Fsvg%3E"></img></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-02-28</title><link href="https://neotw.netlify.app/#2023-02-28"></link><link href="https://neotw.netlify.app/static/2023-02-28.html" rel="alternative" type="text/html"></link><id>90d001b4-d8df-ae9a-ba70-fe38459a71c5</id><updated>2023-02-28T00:12:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div>无论人生上了哪一层台阶 ，阶下有人在仰望你，阶上亦有人在俯视你；你抬头自卑，低头自得，唯有平视，才能看到真实的自已。 @杨绛语录</div></blockquote></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-16</title><link href="https://neotw.netlify.app/#2023-04-16"></link><link href="https://neotw.netlify.app/static/2023-04-16.html" rel="alternative" type="text/html"></link><id>b720eb79-6a7f-86f0-c39b-4c456f2916fb</id><updated>2023-04-16T09:56:15</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>初级赚钱方式靠信息差，
+</subtitle><link href="https://neotw.netlify.app/atom.xml" rel="self"></link><link href="https://neotw.netlify.app/"></link><author><name>oeyoews</name></author><id>462a8bca-7c57-8f8a-27a3-d6cb4c75a727</id><updated>2023-05-29T20:10:21</updated><entry><title>/home/runner/work/neotw/neotw/tiddlers/hi-oeyoews.svg</title><link href="https://neotw.netlify.app/#%2Fhome%2Frunner%2Fwork%2Fneotw%2Fneotw%2Ftiddlers%2Fhi-oeyoews.svg"></link><link href="https://neotw.netlify.app/static/%252Fhome%252Frunner%252Fwork%252Fneotw%252Fneotw%252Ftiddlers%252Fhi-oeyoews.svg.html" rel="alternative" type="text/html"></link><id>3798d5df-8b06-4ca4-8046-0c87bf3b437d</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><img src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20viewBox%3D%220%200%20600%20300%22%20width%3D%22600%22%20height%3D%22300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3CforeignObject%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%0A%20%20%20%20%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%0A%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%40keyframes%20hi%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%200%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2010%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2020%25%20%7B%20transform%3A%20rotate(-8.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2030%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2040%25%20%7B%20transform%3A%20rotate(-4.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2050%25%20%7B%20transform%3A%20rotate(10.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2060%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40keyframes%20gradient%20%7B%0A%20%20%20%20%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%2050%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%20100%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%235452ee%3B%0A%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%23e73c7e%3B%0A%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%2323a6d5%3B%0A%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23ffff%3B%0A%0A%20%20%20%20%20%20%20%20%20%20background%3A%20linear-gradient(-45deg%2C%20var(--color-main)%2C%20var(--color-primary)%2C%20var(--color-secondary)%2C%20var(--color-tertiary))%3B%0A%20%20%20%20%20%20%20%20%20%20background-size%3A%20400%25%20400%25%3B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20gradient%2015s%20ease%20infinite%3B%0A%0A%20%20%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20%20%20height%3A%20300px%3B%0A%0A%20%20%20%20%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20color%3A%20white%3B%0A%0A%20%20%20%20%20%20%20%20%20%20font-family%3A%20-apple-system%2C%20BlinkMacSystemFont%2C%20%22Segoe%20UI%22%2C%20Roboto%2C%20Helvetica%2C%20Arial%2C%20sans-serif%2C%20%22Apple%20Color%20Emoji%22%2C%20%22Segoe%20UI%20Emoji%22%2C%20%22Segoe%20UI%20Symbol%22%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20hi%201.5s%20linear%20-0.5s%20infinite%3B%0A%20%20%20%20%20%20%20%20%20%20display%3A%20inline-block%3B%0A%20%20%20%20%20%20%20%20%20%20transform-origin%3A%2070%25%2070%25%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-color-scheme%3A%20light)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%23F15BB5%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%2324b0ef%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%234526f6%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23f6f645%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-reduced-motion)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%3C%2Fstyle%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%20%20%3Ch1%3EHi%20there%2C%20my%20name%20is%20oeyoews%20%3Cdiv%20class%3D%22hi%22%3E%F0%9F%91%8B%3C%2Fdiv%3E%3C%2Fh1%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2FforeignObject%3E%0A%3C%2Fsvg%3E"></img></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-02-28</title><link href="https://neotw.netlify.app/#2023-02-28"></link><link href="https://neotw.netlify.app/static/2023-02-28.html" rel="alternative" type="text/html"></link><id>90d001b4-d8df-ae9a-ba70-fe38459a71c5</id><updated>2023-02-28T00:12:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div>无论人生上了哪一层台阶 ，阶下有人在仰望你，阶上亦有人在俯视你；你抬头自卑，低头自得，唯有平视，才能看到真实的自已。 @杨绛语录</div></blockquote></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-16</title><link href="https://neotw.netlify.app/#2023-04-16"></link><link href="https://neotw.netlify.app/static/2023-04-16.html" rel="alternative" type="text/html"></link><id>b720eb79-6a7f-86f0-c39b-4c456f2916fb</id><updated>2023-04-16T09:56:15</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>初级赚钱方式靠信息差，
 高级赚钱方式靠认知差，
 顶级赚钱方式靠资源差</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-20</title><link href="https://neotw.netlify.app/#2023-04-20"></link><link href="https://neotw.netlify.app/static/2023-04-20.html" rel="alternative" type="text/html"></link><id>66fbd211-302a-90f1-43e7-1f0ea4e0f181</id><updated>2023-04-20T20:53:27</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>多端同步的便捷和本地存储的安全，就是鱼与熊掌不可兼得。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-23</title><link href="https://neotw.netlify.app/#2023-04-23"></link><link href="https://neotw.netlify.app/static/2023-04-23.html" rel="alternative" type="text/html"></link><id>eb28f00e-453b-d5a1-967b-e984799ea2d8</id><updated>2023-04-24T00:16:36</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div>延迟满足</div><div>用书籍增加三倍人生体验时长</div><div>不以成喜，不以败悲</div></blockquote><p>“止观止心，无妄无碍”是禅宗的一种修行方法，也是佛教徒在生活中追求内心平静和解脱的方式。</p><p>其中，“止”指的是停止杂念、烦恼等不必要的思考和行为，如止诸恶、止杀戮、止谤言等。这样可以使内心得到安定和净化，有利于后续的修行。</p><p>“观”则指观察事物的真相和本质，排除偏见和执着。通过观想自己和世界的真实性质，认识自己的本性和命运，从而达到身心合一、彻底了解自己和世界的目的。</p><p>“无妄”则表示去除「妄念」、「妄想」和「妄语」等，即清空心灵中荒谬无稽的幻想和自我，让自己的内心变得更加安宁、平静。</p><p>“无碍”则是指避免心态上的障碍和物质层面的附着，为达到自由和解脱而努力。</p><p>总之，这个修行方法要求个人通过内省、检视和拯救自己，消除恶念与烦恼，培养慈悲之心，领悟事物的真实本质，从而找到内心的平静和解放。</p><blockquote><div>客观事物发展规律不以人的主观意志，然而掌握事物的发展规律，却可以从必然王国到自由王国</div></blockquote><p>这句话的意思是，客观事物的发展规律是客观存在的，不受人的主观意志的影响。但是，如果我们能够掌握这些规律并对它们进行改变和运用，我们就可以从必然王国（受客观规律支配的领域）进入自由王国（自由创造或创新的领域）。</p><p>在许多领域中，我们都可以看到这一点。例如，在科学技术领域，我们通过研究和掌握客观规律，开发出了许多有用的工具和技术，使我们的生产和生活更加便利和高效。同样，在社会和经济领域中，通过深入了解客观规律，我们可以制定出更好的政策和管理方法，以促进社会和经济的稳定和发展。</p><p>尽管客观规律的存在使我们受到限制，但如果我们学会理解和运用这些规律，我们就可以发挥自己的主动性和创造性，实现更高的自由度，并不断推动事物的进步和发展。因此，掌握客观规律是实现自由和创造的关键之一。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-25</title><link href="https://neotw.netlify.app/#2023-04-25"></link><link href="https://neotw.netlify.app/static/2023-04-25.html" rel="alternative" type="text/html"></link><id>07baca31-a4c1-d735-df41-8cf857fe4d13</id><updated>2023-04-25T23:01:46</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://space.bilibili.com/43109229/channel/collectiondetail?sid=1234748" rel="noopener noreferrer" target="_blank">https://space.bilibili.com/43109229/channel/collectiondetail?sid=1234748</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-05-06</title><link href="https://neotw.netlify.app/#2023-05-06"></link><link href="https://neotw.netlify.app/static/2023-05-06.html" rel="alternative" type="text/html"></link><id>ac8c3ae3-20fd-c971-eb36-7e3608c51b59</id><updated>2023-05-06T22:55:30</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>拥有能让自己快乐的能力,有一件让自己兴奋一点的事情</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-05-15</title><link href="https://neotw.netlify.app/#2023-05-15"></link><link href="https://neotw.netlify.app/static/2023-05-15.html" rel="alternative" type="text/html"></link><id>5ae2dacd-4932-0fb6-3754-327b31a02c7f</id><updated>2023-05-15T09:19:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>社交的本质是价值交换</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-05-17</title><link href="https://neotw.netlify.app/#2023-05-17"></link><link href="https://neotw.netlify.app/static/2023-05-17.html" rel="alternative" type="text/html"></link><id>5cfc6d08-80d6-3230-a52e-29ee0b651757</id><updated>2023-05-17T10:46:31</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <ul>
@@ -305,7 +305,7 @@ React
 JavaScript
 </div>
 <div class="inline p-0 m-0 p-1 capitalize bg-yellow-400 rounded">
-<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#51">51</a></span>
+<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#54">54</a></span>
 </div>
 </div>
 <div>
@@ -445,7 +445,7 @@ Tailwindcss
 <div class="relative">
         <div class="absolute top-0 right-0">
             <div class="inline-block text-slate-400 rounded-full">
-                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#51">51</a></span>
+                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#54">54</a></span>
             </div>
         </div>
     </div>
@@ -1899,8 +1899,8 @@ arr.forEach((item, index) =&gt; {
 </div>
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>GettingStarted</title><link href="https://neotw.netlify.app/#GettingStarted"></link><link href="https://neotw.netlify.app/static/GettingStarted.html" rel="alternative" type="text/html"></link><id>fc927313-83cf-7e0a-53c1-21853f695851</id><updated>2023-05-28T20:15:53</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:bg-white">
 <div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-606-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-46-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-67-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-46 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-609-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-46-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-67-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-29 minutes ago-green?style=social"></img>  
 </div>
 
 </div></p><p><h3 class="hidden lg:block text-center dark:text-white"> Personal Notes </h3>
@@ -1957,7 +1957,7 @@ arr.forEach((item, index) =&gt; {
 <div class="relative">
         <div class="absolute top-0 right-0">
             <div class="inline-block text-slate-400 rounded-full">
-                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#51">51</a></span>
+                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#54">54</a></span>
             </div>
         </div>
     </div>
@@ -2788,7 +2788,7 @@ import {add} from './module';
 </ol>
 <p>以上是 JavaScript 中需要掌握的高频方法，掌握这些方法可以提高编码效率，同时也有助于更好地理解 JavaScript 的语法和运行机制。
 </p>
-</div></div></content><author><name>oeyoews</name></author></entry><entry><title>Json-parse</title><link href="https://neotw.netlify.app/#Json-parse"></link><link href="https://neotw.netlify.app/static/Json-parse.html" rel="alternative" type="text/html"></link><id>c7970f91-f9d4-4411-6290-daef1ff18129</id><updated>2023-05-27T19:44:19</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>在JavaScript中，可以使用<code>JSON.parse()</code>方法将一个JSON格式的字符串转换为JavaScript对象。该方法接受一个字符串参数，并尝试将其解析为有效的JSON格式。如果解析成功，则返回一个对应的JavaScript对象，否则抛出异常。</p><p>以下是一个简单的例子：</p><pre class="hljs"><code class="javascript hljs"><span class="hljs-keyword">const</span> jsonString = <span class="hljs-string">&#x27;{&quot;name&quot;: &quot;John&quot;, &quot;age&quot;: 30, &quot;hobbies&quot;: [&quot;reading&quot;, &quot;traveling&quot;]}&#x27;</span>;
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>js-void</title><link href="https://neotw.netlify.app/#js-void"></link><link href="https://neotw.netlify.app/static/js-void.html" rel="alternative" type="text/html"></link><id>afdcb890-0bd4-d9a4-2390-446c668cd00a</id><updated>2023-05-29T20:10:21</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>javascript:void()和#都是用于在HTML中创建链接的特殊URL。它们的作用是让用户点击链接时不跳转或刷新页面，而是执行一些JavaScript代码或将用户滚动到页面的顶部。</p><p>具体来说，javascript:void()是一个空的JavaScript语句，它不会执行任何操作。如果将javascript:void()作为链接的href属性值，当用户点击该链接时，浏览器将执行javascript:void()语句，并不会有任何变化。例如：</p><pre class="hljs"><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void()&quot;</span>&gt;</span>点击我<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre><p>在这个例子中，我们创建了一个链接，并将其href属性设置为javascript:void()。当用户点击该链接时，浏览器将执行javascript:void()语句，但不会有任何变化。</p><p>相比之下，#是用于创建锚点的特殊URL，它会将用户滚动到页面的顶部。如果将#作为链接的href属性值，当用户点击该链接时，浏览器将滚动到页面的顶部，并不会跳转或刷新页面。例如：</p><pre class="hljs"><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>回到顶部<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre><p>在这个例子中，我们创建了一个链接，并将其href属性设置为#。当用户点击该链接时，浏览器将滚动到页面的顶部，但并不会跳转或刷新页面。</p><p>需要注意的是，虽然javascript:void()和#都是用于在HTML中创建链接的特殊URL，但它们有所不同。javascript:void()不会执行任何操作，而#会将用户滚动到页面的顶部。在实际开发中，需要根据具体需求选择合适的URL。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>Json-parse</title><link href="https://neotw.netlify.app/#Json-parse"></link><link href="https://neotw.netlify.app/static/Json-parse.html" rel="alternative" type="text/html"></link><id>c7970f91-f9d4-4411-6290-daef1ff18129</id><updated>2023-05-27T19:44:19</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>在JavaScript中，可以使用<code>JSON.parse()</code>方法将一个JSON格式的字符串转换为JavaScript对象。该方法接受一个字符串参数，并尝试将其解析为有效的JSON格式。如果解析成功，则返回一个对应的JavaScript对象，否则抛出异常。</p><p>以下是一个简单的例子：</p><pre class="hljs"><code class="javascript hljs"><span class="hljs-keyword">const</span> jsonString = <span class="hljs-string">&#x27;{&quot;name&quot;: &quot;John&quot;, &quot;age&quot;: 30, &quot;hobbies&quot;: [&quot;reading&quot;, &quot;traveling&quot;]}&#x27;</span>;
 <span class="hljs-keyword">const</span> obj = <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">parse</span>(jsonString);
 <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(obj);</code></pre><p>在这个例子中，我们定义了一个名为<code>jsonString</code>的字符串，表示一个包含<code>name</code>、<code>age</code>和<code>hobbies</code>属性的JSON对象。然后我们使用<code>JSON.parse()</code>方法将该字符串解析为一个JavaScript对象，并将其保存到名为<code>obj</code>的变量中。最后，我们使用<code>console.log()</code>方法输出该对象。</p><p>如果要在TypeScript中将一个字符串转换为JavaScript对象，则需要使用<code>JSON.parse()</code>方法相同的方式进行转换。例如：</p><pre class="hljs"><code class="typescript hljs"><span class="hljs-keyword">const</span> jsonString = <span class="hljs-string">&#x27;{&quot;name&quot;: &quot;John&quot;, &quot;age&quot;: 30, &quot;hobbies&quot;: [&quot;reading&quot;, &quot;traveling&quot;]}&#x27;</span>;
 <span class="hljs-keyword">const</span> obj = <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">parse</span>(jsonString);
@@ -3147,8 +3147,8 @@ M1001 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 <li>aria2c -d <dirname> <url>&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;</url></dirname></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-badges</title><link href="https://neotw.netlify.app/#neotw-badges"></link><link href="https://neotw.netlify.app/static/neotw-badges.html" rel="alternative" type="text/html"></link><id>f934e3aa-d36d-34bb-609b-922693d9b993</id><updated>2023-05-18T12:28:56</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-606-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-46-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-67-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-46 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-609-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-46-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-67-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-29 minutes ago-green?style=social"></img>  
 </div>
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-command</title><link href="https://neotw.netlify.app/#neotw-command"></link><link href="https://neotw.netlify.app/static/neotw-command.html" rel="alternative" type="text/html"></link><id>188385e0-6b3a-4916-a54a-061d9d29e18f</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <h2>cp</h2>
@@ -6595,10 +6595,34 @@ React.StrictMode 组件不会在生产环境中运行，它仅在开发环境中
 </p>
 </div></div></content><author><name>oeyoews</name></author></entry><entry><title>react-ui</title><link href="https://neotw.netlify.app/#react-ui"></link><link href="https://neotw.netlify.app/static/react-ui.html" rel="alternative" type="text/html"></link><id>d0f88813-23a4-d24f-6e1b-7bc58bca6560</id><updated>2023-05-01T13:36:15</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>react-ui	</p></div></content><author><name>oeyoews</name></author></entry><entry><title>react-use-dynamic-tailwindcss</title><link href="https://neotw.netlify.app/#react-use-dynamic-tailwindcss"></link><link href="https://neotw.netlify.app/static/react-use-dynamic-tailwindcss.html" rel="alternative" type="text/html"></link><id>529af334-0b76-ce90-2d3b-ffeb17177097</id><updated>2023-05-04T10:50:08</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><h2 class="">dyanmic tailwindcss</h2><pre class="hljs"><code class="jsx hljs">&lt;p className={<span class="hljs-string">`m-0 max-w-[30ch] text-lg <span class="hljs-subst">${isActive ? <span class="hljs-string">&#x27;bg-gray-200&#x27;</span> : <span class="hljs-string">&#x27;&#x27;</span>}</span> <span class="hljs-subst">${customClassName}</span>`</span>}&gt;
   <span class="hljs-title class_">Find</span> <span class="hljs-keyword">in</span>-depth information about <span class="hljs-title class_">Next</span>.<span class="hljs-property">js</span> features and <span class="hljs-variable constant_">API</span>.
-&lt;/p&gt;</code></pre></div></content><author><name>oeyoews</name></author></entry><entry><title>react01</title><link href="https://neotw.netlify.app/#react01"></link><link href="https://neotw.netlify.app/static/react01.html" rel="alternative" type="text/html"></link><id>5a51edec-61a1-79ed-0826-41dc9f43fe13</id><updated>2023-04-23T12:05:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>命令式 过程优先</li><li>声明式 只关心结果, 不关心过程</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-count</title><link href="https://neotw.netlify.app/#recent-count"></link><link href="https://neotw.netlify.app/static/recent-count.html" rel="alternative" type="text/html"></link><id>6a131e9a-b046-19c3-08bd-35ef7c9ffbfc</id><updated>2023-02-08T18:16:06</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="tc-timeline">
+&lt;/p&gt;</code></pre></div></content><author><name>oeyoews</name></author></entry><entry><title>react01</title><link href="https://neotw.netlify.app/#react01"></link><link href="https://neotw.netlify.app/static/react01.html" rel="alternative" type="text/html"></link><id>5a51edec-61a1-79ed-0826-41dc9f43fe13</id><updated>2023-04-23T12:05:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>命令式 过程优先</li><li>声明式 只关心结果, 不关心过程</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>readFile</title><link href="https://neotw.netlify.app/#readFile"></link><link href="https://neotw.netlify.app/static/readFile.html" rel="alternative" type="text/html"></link><id>dcc6a58d-382f-5a0c-75d8-7ee4a98ba7b3</id><updated>2023-05-29T20:00:50</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>在Node.js中，可以使用fs模块读取文件。fs模块提供了多种读取文件的方法，包括同步和异步方法。</p><p>下面是使用fs模块异步读取JSON文件的示例：</p><pre class="hljs"><code class="javascript hljs"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;fs&quot;</span>);
+
+fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">&quot;data.json&quot;</span>, <span class="hljs-string">&quot;utf8&quot;</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params">err, data</span>) {
+  <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(data);
+});</code></pre><p>在这个例子中，我们首先使用require()方法引入fs模块。然后，我们使用fs.readFile()方法异步读取JSON文件，该方法接受三个参数：文件路径、文件编码方式和回调函数。当文件读取完成后，回调函数将被调用，并将读取的文件内容作为第二个参数传递给回调函数，我们可以在回调函数中处理文件内容。</p><p>需要注意的是，异步读取文件时，Node.js会将文件读取请求放入事件循环中，并继续执行后续代码。当文件读取完成后，Node.js会调用回调函数来处理文件内容，因此在使用异步方法时，需要在回调函数中处理文件内容。</p><p>如果需要同步读取文件，可以使用fs.readFileSync()方法，该方法会阻塞代码执行，直到文件读取完成。例如：</p><pre class="hljs"><code class="javascript hljs"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;fs&quot;</span>);
+
+<span class="hljs-keyword">try</span> {
+  <span class="hljs-keyword">const</span> data = fs.<span class="hljs-title function_">readFileSync</span>(<span class="hljs-string">&quot;data.json&quot;</span>, <span class="hljs-string">&quot;utf8&quot;</span>);
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(data);
+} <span class="hljs-keyword">catch</span> (err) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(err);
+}</code></pre><p>在这个例子中，我们使用try-catch语句块来处理可能的异常情况。在try块中，我们使用fs.readFileSync()方法同步读取JSON文件，并将文件内容存储在data变量中。如果读取文件时出现错误，catch块将捕获该错误，并输出错误信息。</p><p>以上是使用fs模块读取文件的示例，需要注意的是，在使用fs模块读取文件时，我们需要处理可能的异常情况，并根据实际情况选择异步或同步方法。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-count</title><link href="https://neotw.netlify.app/#recent-count"></link><link href="https://neotw.netlify.app/static/recent-count.html" rel="alternative" type="text/html"></link><id>6a131e9a-b046-19c3-08bd-35ef7c9ffbfc</id><updated>2023-02-08T18:16:06</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="tc-timeline">
 
 <div class="tc-menu-list-item">
-29th May 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#2">2</a></span>)
+29th May 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#5">5</a></span>)
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#js-void"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#readFile"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#this"></a>
+</div>
 
 <div class="tc-menu-list-subitem">
 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#js-fullscreen"></a>
@@ -7075,24 +7099,25 @@ React.StrictMode 组件不会在生产环境中运行，它仅在开发环境中
 
 </div>
 
-<div class="tc-menu-list-item">
-10th May 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#3">3</a></span>)
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#deno"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#declare-interface"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#types"></a>
-</div>
-
-</div>
-
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-note-record</title><link href="https://neotw.netlify.app/#recent-note-record"></link><link href="https://neotw.netlify.app/static/recent-note-record.html" rel="alternative" type="text/html"></link><id>2619840e-dc84-d69e-3d32-c2258f306a66</id><updated>2023-04-11T09:39:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><ul>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#js-void">js-void</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#readFile">readFile</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#this">this</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#js-fullscreen">js-fullscreen</a>
@@ -10547,6 +10572,101 @@ dmeo dmeo dmeo dmeo dmoe dmeo
 <ul class="task-list">
 <li class="task-list-item"><input checked="true" disabled="true" id="cbx_0" type="checkbox"></input><label for="cbx_0"> Auth module</label></li>
 </ul>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>this</title><link href="https://neotw.netlify.app/#this"></link><link href="https://neotw.netlify.app/static/this.html" rel="alternative" type="text/html"></link><id>9e925e93-41b4-90bf-d3b4-c4ca3b0c1ef2</id><updated>2023-05-29T13:20:14</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+<h2>JavaScript this 关键字</h2>
+<h3>面向对象语言中 this 表示当前对象的一个引用。</h3>
+<p>但在 JavaScript 中 this 不是固定不变的，它会随着执行环境的改变而改变。
+</p>
+<p>在方法中，this 表示该方法所属的对象。
+如果单独使用，this 表示全局对象。
+在函数中，this 表示全局对象。
+在函数中，在严格模式下，this 是未定义的(undefined)。
+在事件中，this 表示接收事件的元素。
+类似 call() 和 apply() 方法可以将 this 引用到任何对象。
+</p>
+<p>JavaScript中的this关键字是一个指向当前执行上下文的引用，它的值取决于函数的调用方式。this关键字可以用于访问当前对象的属性和方法，也可以用于创建新的对象。
+</p>
+<p>在JavaScript中，this关键字的值取决于函数的调用方式。当函数被作为方法调用时，this关键字会指向调用该方法的对象。例如：
+</p>
+<pre class="hljs"><code class="javascript hljs"><span class="hljs-keyword">var</span> person = {
+  <span class="hljs-attr">firstName</span>: <span class="hljs-string">&quot;John&quot;</span>,
+  lastName : <span class="hljs-string">&quot;Doe&quot;</span>,
+  fullName : <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">firstName</span> + <span class="hljs-string">&quot; &quot;</span> + <span class="hljs-variable language_">this</span>.<span class="hljs-property">lastName</span>;
+  }
+};
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(person.<span class="hljs-title function_">fullName</span>()); <span class="hljs-comment">// 输出 &quot;John Doe&quot;</span>
+</code></pre>
+<p>在这个例子中，我们定义了一个名为person的对象，该对象包含了firstName、lastName和fullName三个属性。fullName属性是一个函数，用于返回person对象的完整姓名。当我们调用person.fullName()方法时，this关键字会指向person对象，因此函数中的this.firstName和this.lastName都会返回person对象的属性值。
+</p>
+<p>当函数不作为对象的方法调用时，this关键字会指向全局对象。例如：
+</p>
+<pre class="hljs"><code class="javascript hljs"><span class="hljs-keyword">function</span> <span class="hljs-title function_">myFunction</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>;
+}
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title function_">myFunction</span>()); <span class="hljs-comment">// 输出全局对象</span>
+</code></pre>
+<p>在这个例子中，我们定义了一个名为myFunction的函数，该函数没有被任何对象调用。当我们调用myFunction()函数时，this关键字会指向全局对象，因此函数中的this将返回全局对象。
+</p>
+<p>除了作为方法调用和全局调用之外，this关键字还可以用于构造函数和事件处理程序等场景。在构造函数中，this关键字用于创建新的对象。例如：
+</p>
+<pre class="hljs"><code class="javascript hljs"><span class="hljs-keyword">function</span> <span class="hljs-title function_">Person</span>(<span class="hljs-params">firstName, lastName</span>) {
+  <span class="hljs-variable language_">this</span>.<span class="hljs-property">firstName</span> = firstName;
+  <span class="hljs-variable language_">this</span>.<span class="hljs-property">lastName</span> = lastName;
+  <span class="hljs-variable language_">this</span>.<span class="hljs-property">fullName</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">firstName</span> + <span class="hljs-string">&quot; &quot;</span> + <span class="hljs-variable language_">this</span>.<span class="hljs-property">lastName</span>;
+  }
+}
+
+<span class="hljs-keyword">var</span> person = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>(<span class="hljs-string">&quot;John&quot;</span>, <span class="hljs-string">&quot;Doe&quot;</span>);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(person.<span class="hljs-title function_">fullName</span>()); <span class="hljs-comment">// 输出 &quot;John Doe&quot;</span>
+</code></pre>
+<p>在这个例子中，我们定义了一个名为Person的构造函数，用于创建具有firstName和lastName属性的Person对象。当我们使用new关键字调用Person构造函数时，this关键字会指向新创建的Person对象，因此函数中的this.firstName和this.lastName都会被设置为新创建的对象的属性值。
+</p>
+<p>总之，JavaScript中的this关键字是一个非常重要的概念，它的值取决于函数的调用方式，可以用于访问当前对象的属性和方法，也可以用于创建新的对象。在不同的场景中，需要根据具体情况来使用this关键字，以确保程序的正确性和可维护性。
+</p>
+<p>在JavaScript中，事件处理程序中的this关键字通常指向触发事件的元素。例如，当用户点击一个按钮时，按钮的click事件处理程序中的this关键字将指向该按钮元素。
+</p>
+<p>举个例子：
+</p>
+<pre class="hljs"><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;myButton&quot;</span>&gt;</span>点击我<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript">
+<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&quot;myButton&quot;</span>).<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&quot;click&quot;</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable language_">this</span>); <span class="hljs-comment">// 输出按钮元素</span>
+});
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>在这个例子中，我们使用addEventListener()方法将一个click事件处理程序绑定到按钮元素上。当用户点击按钮时，该事件处理程序将被触发，此时this关键字将指向按钮元素，因此在函数中输出this将返回按钮元素。
+</p>
+<p>需要注意的是，如果事件处理程序使用箭头函数定义，则this关键字将不指向当前元素，而是指向定义该函数时的执行上下文。例如：
+</p>
+<pre class="hljs"><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;myButton&quot;</span>&gt;</span>点击我<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript">
+<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&quot;myButton&quot;</span>).<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&quot;click&quot;</span>, <span class="hljs-function">() =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable language_">this</span>); <span class="hljs-comment">// 输出全局对象</span>
+});
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>在这个例子中，我们使用箭头函数定义click事件处理程序。由于箭头函数没有自己的this值，因此在事件处理程序中使用箭头函数定义时，this关键字将不指向当前元素，而是指向定义该函数时的执行上下文。在这个例子中，事件处理程序中的this关键字将指向全局对象，因此在函数中输出this将返回全局对象。
+</p>
+<p>如果需要在事件处理程序中访问当前元素，可以使用event.target属性来获取当前触发事件的元素。例如：
+</p>
+<pre class="hljs"><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;myButton&quot;</span>&gt;</span>点击我<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript">
+<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&quot;myButton&quot;</span>).<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&quot;click&quot;</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(event.<span class="hljs-property">target</span>); <span class="hljs-comment">// 输出按钮元素</span>
+});
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>在这个例子中，我们在click事件处理程序中使用event.target属性来获取当前触发事件的元素，因此在函数中输出event.target将返回按钮元素。
+</p>
+<p>总之，事件处理程序中的this关键字通常指向触发事件的元素，但如果使用箭头函数定义事件处理程序，则this关键字将指向定义该函数时的执行上下文。如果需要在事件处理程序中访问当前元素，可以使用event.target属性来获取当前触发事件的元素。
+</p>
 </div></div></content><author><name>oeyoews</name></author></entry><entry><title>three-pig</title><link href="https://neotw.netlify.app/#three-pig"></link><link href="https://neotw.netlify.app/static/three-pig.html" rel="alternative" type="text/html"></link><id>13c25fdf-b5db-5d2d-db6a-3573a149ee0e</id><updated>2023-05-25T10:58:03</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <h1>三只小猪</h1>
 <h2>题目背景</h2>
