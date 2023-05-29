@@ -1,0 +1,22 @@
+created: 20230529141821037
+creator: oeyoews
+modified: 20230529145144331
+modifier: oeyoews
+page-cover: https://source.unsplash.com/random?fm=blurhash&w=50&LinkItem
+tags: 
+title: LinkItem
+type: text/vnd.tiddlywiki
+
+\define LinkItem(title:"neotw", text, description:"demo")
+* <$button class="bg-transparent text-indigo-500 capitalize m-0 p-0 pr-4" tooltip=$title$>
+$title$ 
+<$action-sendmessage $message="tm-open-external-window" $param=$text$/>
+</$button>  $description$
+\end
+
+!! Link Dashboard
+
+* get tiddler
+
+<<LinkItem>>
+<<LinkItem>>
