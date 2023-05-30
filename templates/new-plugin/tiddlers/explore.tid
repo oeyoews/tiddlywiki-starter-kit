@@ -1,3 +1,0 @@
-title: $:/plugins/${username}/${pluginname}/explore
-
-<$macrocall $name="tree" prefix={{{ [<currentTiddler>addsuffix[/]] }}}>
