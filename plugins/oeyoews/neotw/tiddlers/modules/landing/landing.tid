@@ -3,6 +3,7 @@ description: neotw landing page
 name: LockScreen
 tags: $:/tags/Layout
 
+<!-- TODO: use js to overwrite this page -->
 <!-- NOTE: if startupaction, this tailwindcss and some css are not working -->
 <div class="h-screen flex items-center justify-center bg-cover bg-no-repeat bg-gradient-to-r from-teal-100 to-lime-200">
 <div class="h-screen flex items-center justify-center">
