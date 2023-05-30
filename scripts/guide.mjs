@@ -1,10 +1,12 @@
 #!/usr/bin/env zx
 
+import ora from 'ora';
 import prompts from 'prompts';
-import msg from './lib/info.mjs';
 import newPlugin from './component/new-plugin.mjs';
 
 // $.verbose = false;
+
+const spinner = ora('Waiting ...');
 
 const index = {
   newPlugin,
@@ -12,9 +14,6 @@ const index = {
 
 // from ob to arroy
 const choicesNeotw = Object.keys(index);
-
-// hello
-msg.info();
 
 const questions = [
   {
@@ -35,6 +34,7 @@ const fn = response.guide;
  */
 async function main(callback) {
   await index[callback]();
+  spinner.succeed('Done');
 }
 
 /*  */
