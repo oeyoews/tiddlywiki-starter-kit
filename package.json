@@ -55,7 +55,7 @@
     "semantic-release": "^21.0.2",
     "signale": "^1.4.0",
     "surge": "^0.23.1",
-    "tiddlywiki": "github:Jermolene/TiddlyWiki5#3518e257c027ef70e2fa70e782c92798551c5d69",
+    "tiddlywiki": "github:Jermolene/TiddlyWiki5#f19e74900e676bde03dec9ed288ed5464f826144",
     "zx": "^7.2.1"
   },
   "bugs": {
