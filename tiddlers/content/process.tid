@@ -1,0 +1,21 @@
+created: 20230530020540477
+creator: oeyoews
+modified: 20230530020604942
+modifier: oeyoews
+tags: NodeJs
+title: process
+type: text/markdown
+
+`process` 是 Node.js 中一个全局对象，它提供了有关当前 Node.js 进程的信息。这个对象包含了很多有用的属性和方法，可以让我们更好地控制和管理进程。
+
+以下是 `process` 对象中一些常用的属性和方法：
+
+- `process.argv`：返回一个数组，包含了启动 Node.js 进程时传入的命令行参数。
+- `process.env`：返回一个对象，包含了当前进程的环境变量。
+- `process.cwd()`：返回一个字符串，表示当前工作目录的路径。
+- `process.exit([code])`：退出当前 Node.js 进程，并返回一个指定的退出码（如果指定了的话）。
+- `process.on(event, callback)`：监听指定的事件，并在事件触发时执行回调函数。
+
+除了上面列出的属性和方法之外，`process` 对象还提供了很多其他有用的工具，比如流、进程间通信、信号处理等等。
+
+在实际开发中，我们经常需要使用 `process` 对象来获取或修改进程的信息，比如读取环境变量、获取命令行参数、退出进程、监听信号等等。通过 `process` 对象，我们可以更好地控制和管理 Node.js 进程，提高应用程序的稳定性和可靠性。
