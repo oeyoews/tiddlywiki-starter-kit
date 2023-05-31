@@ -16,7 +16,6 @@ tid2pdf module
   exports.after = ['load-modules'];
   exports.synchronous = true;
   exports.startup = () => {
-    // window.jspdf = require('jspdf.umd.min.js');
     window.html2canvas = require('html2canvas.min.js');
 
     $tw.rootWidget.addEventListener('om-export-png', event => {

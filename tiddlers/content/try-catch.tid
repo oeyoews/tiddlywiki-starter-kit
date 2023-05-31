@@ -1,6 +1,6 @@
 created: 20230425132750106
 creator: oeyoews
-modified: 20230425132822517
+modified: 20230531065248701
 modifier: oeyoews
 tags: JavaScript
 title: try-catch
@@ -19,4 +19,5 @@ try {
 }
 ```
 
-需要注意的是，catch 代码块中的参数名（如上面的 error）是任意的，只要符合标识符的命名规范即可。通常情况下，它被命名为 error 或 err，以表明它是一个异常对象。
+* 需要注意的是，catch 代码块中的参数名（如上面的 error）是任意的，只要符合标识符的命名规范即可。通常情况下，它被命名为 error 或 err，以表明它是一个异常对象。
+* finally 代码块时，通常用于释放资源或执行清理操作

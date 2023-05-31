@@ -32,6 +32,7 @@ tid2png/widget
       this.computeAttributes();
       this.execute();
 
+      const html2canvas = require('html2canvas.min.js');
       const buttonNode = $tw.utils.domMaker('button', {
         text: this.param,
         class:

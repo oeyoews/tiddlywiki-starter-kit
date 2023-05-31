@@ -9,7 +9,7 @@ dotenv.config();
 // process.env.TIDDLYWIKI_THEME_PATH = './';
 
 // impress msg
-$.verbose = false;
+$.verbose = true;
 
 const bin = 'tiddlywiki';
 const dist = 'dist';
