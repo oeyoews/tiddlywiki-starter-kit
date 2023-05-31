@@ -51,7 +51,7 @@ neotw-battery widget
       // TODO: how to disabled this on dom removed
       const batteryId = document.getElementById('battery-level');
       if (batteryId) {
-        this.intervalId = setInterval(showBatteryLevel, 1000);
+        this.intervalId = setInterval(showBatteryLevel, 60000);
         console.log('updated');
       } else {
         clearInterval(this.intervalId);
