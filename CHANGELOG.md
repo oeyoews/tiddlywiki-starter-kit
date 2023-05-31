@@ -1,3 +1,10 @@
+## [3.276.2](https://github.com/oeyoews/neotw/compare/v3.276.1...v3.276.2) (2023-05-31)
+
+
+### Performance Improvements
+
+* update templates ([873e705](https://github.com/oeyoews/neotw/commit/873e705246b7d0822e338d2ffcb712c0af7146c8))
+
 ## [3.276.1](https://github.com/oeyoews/neotw/compare/v3.276.0...v3.276.1) (2023-05-30)
 
 
