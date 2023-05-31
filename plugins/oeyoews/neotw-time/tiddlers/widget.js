@@ -59,12 +59,14 @@ neotw-time widget
       if (!this.domNodes || !this.domNodes[0]) {
         clearInterval(this.timer);
         return;
+      } else {
+        // 获取当前时间并更新 widget 的内容
+        const now = new Date();
+        const timeString = now.toLocaleTimeString();
+        // this.dom节点的内容更新为当前时间字符串;
+        this.domNodes[0].textContent = timeString;
+        console.log('updated widget');
       }
-      // 获取当前时间并更新 widget 的内容
-      const now = new Date();
-      const timeString = now.toLocaleTimeString();
-      // this.dom节点的内容更新为当前时间字符串;
-      this.domNodes[0].textContent = timeString;
     }
 
     destructor() {
