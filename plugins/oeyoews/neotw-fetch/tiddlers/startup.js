@@ -29,6 +29,8 @@ fetch-readme module
       $tw.wiki.setText(fileName, 'text', null, text);
       $tw.wiki.setText(fileName, 'type', null, 'text/markdown');
     });
+
+    // can use action with renderStartup tag
     // https
     if (window.location.protocol === 'http:') return;
     const url =
