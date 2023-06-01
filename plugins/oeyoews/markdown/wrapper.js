@@ -149,7 +149,7 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
         render: function (tokens, idx) {
           if (tokens[idx].nesting === 1) {
             return (
-              '<div class="bg-yellow-100 rounded-md border-left border-l-4 border-yellow-500 text-yellow-700 px-1 my-2">\n' +
+              '<div class="bg-yellow-100 rounded-md border-left border-l-4 border-yellow-500 text-yellow-700 px-2 my-2">\n' +
               '<div class="font-bold">注意</div>' +
               '<div class="content">'
             );
