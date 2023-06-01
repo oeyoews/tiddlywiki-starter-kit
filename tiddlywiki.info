@@ -22,6 +22,7 @@
     "oeyoews/markdown",
     "oeyoews/neotw-time",
     "oeyoews/neotw-battery",
+    "oeyoews/neotw-refresh-site-cache",
     "oeyoews/tiddlywiki-cards",
     "oeyoews/tiddlywiki-giscus",
     "oeyoews/neotw-type",
