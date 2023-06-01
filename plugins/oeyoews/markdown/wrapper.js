@@ -115,6 +115,32 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
     return results;
   }
 
+  // TODO
+  // 定义公共样式
+  const containerCommonStyle =
+    'rounded-md border-l-4 px-2 my-2 font-bold content';
+
+  function renderContainer(tokens, idx, className) {
+    if (tokens[idx].nesting === 1) {
+      return (
+        `<div class="${className}" ">\n` +
+        '<div class="' +
+        containerCommonStyle +
+        '">'
+      );
+    } else {
+      return '</div>\n</div>\n';
+    }
+  }
+
+  // 定义 warning 容器
+  /* .use(require('markdown-it-container'), 'warning', {
+    render: function (tokens, idx) {
+        const className = 'bg-yellow-100 border-yellow-500';
+        return renderContainer(tokens, idx, className, 'yellow');
+    }
+}) */
+
   // Creates markdown-it parser
   function createMarkdownEngine(markdownItOptions, pluginOptions) {
     const container = require('markdown-it-container');
