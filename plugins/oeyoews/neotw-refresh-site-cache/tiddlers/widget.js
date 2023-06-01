@@ -6,6 +6,7 @@ module-type: widget
 neotw-refresh-site-cache widget
 
 \*/
+// show cache size on button
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
