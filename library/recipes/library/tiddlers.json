@@ -142,7 +142,7 @@
         "name": "Neotw Refresh Site Cache",
         "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
         "list": "readme explore",
-        "readme": "!! Neotw Refresh Site Cache\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/neotw-refresh-site-cache]]\n* [[Demo|https://oeyoews.github.io/neotw]]\n",
+        "readme": "!! Neotw Refresh Site Cache\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/neotw-refresh-site-cache]]\n* [[Demo|https://oeyoews.github.io/neotw]]\n\n!! Demo\n\n<$refresh-site-cache />\n",
         "requires-reload": "yes"
     },
     {
