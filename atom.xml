@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Neotw rolling
 </title><subtitle>A modern notebook based on TiddlyWiki5
-</subtitle><link href="https://neotw.netlify.app/atom.xml" rel="self"></link><link href="https://neotw.netlify.app/"></link><author><name>oeyoews</name></author><id>462a8bca-7c57-8f8a-27a3-d6cb4c75a727</id><updated>2023-06-01T20:01:53</updated><entry><title>/home/runner/work/neotw/neotw/tiddlers/hi-oeyoews.svg</title><link href="https://neotw.netlify.app/#%2Fhome%2Frunner%2Fwork%2Fneotw%2Fneotw%2Ftiddlers%2Fhi-oeyoews.svg"></link><link href="https://neotw.netlify.app/static/%252Fhome%252Frunner%252Fwork%252Fneotw%252Fneotw%252Ftiddlers%252Fhi-oeyoews.svg.html" rel="alternative" type="text/html"></link><id>3798d5df-8b06-4ca4-8046-0c87bf3b437d</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><img src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20viewBox%3D%220%200%20600%20300%22%20width%3D%22600%22%20height%3D%22300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3CforeignObject%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%0A%20%20%20%20%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%0A%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%40keyframes%20hi%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%200%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2010%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2020%25%20%7B%20transform%3A%20rotate(-8.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2030%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2040%25%20%7B%20transform%3A%20rotate(-4.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2050%25%20%7B%20transform%3A%20rotate(10.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2060%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40keyframes%20gradient%20%7B%0A%20%20%20%20%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%2050%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%20100%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%235452ee%3B%0A%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%23e73c7e%3B%0A%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%2323a6d5%3B%0A%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23ffff%3B%0A%0A%20%20%20%20%20%20%20%20%20%20background%3A%20linear-gradient(-45deg%2C%20var(--color-main)%2C%20var(--color-primary)%2C%20var(--color-secondary)%2C%20var(--color-tertiary))%3B%0A%20%20%20%20%20%20%20%20%20%20background-size%3A%20400%25%20400%25%3B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20gradient%2015s%20ease%20infinite%3B%0A%0A%20%20%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20%20%20height%3A%20300px%3B%0A%0A%20%20%20%20%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20color%3A%20white%3B%0A%0A%20%20%20%20%20%20%20%20%20%20font-family%3A%20-apple-system%2C%20BlinkMacSystemFont%2C%20%22Segoe%20UI%22%2C%20Roboto%2C%20Helvetica%2C%20Arial%2C%20sans-serif%2C%20%22Apple%20Color%20Emoji%22%2C%20%22Segoe%20UI%20Emoji%22%2C%20%22Segoe%20UI%20Symbol%22%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20hi%201.5s%20linear%20-0.5s%20infinite%3B%0A%20%20%20%20%20%20%20%20%20%20display%3A%20inline-block%3B%0A%20%20%20%20%20%20%20%20%20%20transform-origin%3A%2070%25%2070%25%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-color-scheme%3A%20light)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%23F15BB5%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%2324b0ef%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%234526f6%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23f6f645%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-reduced-motion)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%3C%2Fstyle%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%20%20%3Ch1%3EHi%20there%2C%20my%20name%20is%20oeyoews%20%3Cdiv%20class%3D%22hi%22%3E%F0%9F%91%8B%3C%2Fdiv%3E%3C%2Fh1%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2FforeignObject%3E%0A%3C%2Fsvg%3E"></img></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-02-28</title><link href="https://neotw.netlify.app/#2023-02-28"></link><link href="https://neotw.netlify.app/static/2023-02-28.html" rel="alternative" type="text/html"></link><id>90d001b4-d8df-ae9a-ba70-fe38459a71c5</id><updated>2023-02-28T00:12:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div>无论人生上了哪一层台阶 ，阶下有人在仰望你，阶上亦有人在俯视你；你抬头自卑，低头自得，唯有平视，才能看到真实的自已。 @杨绛语录</div></blockquote></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-16</title><link href="https://neotw.netlify.app/#2023-04-16"></link><link href="https://neotw.netlify.app/static/2023-04-16.html" rel="alternative" type="text/html"></link><id>b720eb79-6a7f-86f0-c39b-4c456f2916fb</id><updated>2023-04-16T09:56:15</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>初级赚钱方式靠信息差，
+</subtitle><link href="https://neotw.netlify.app/atom.xml" rel="self"></link><link href="https://neotw.netlify.app/"></link><author><name>oeyoews</name></author><id>462a8bca-7c57-8f8a-27a3-d6cb4c75a727</id><updated>2023-06-01T21:42:53</updated><entry><title>/home/runner/work/neotw/neotw/tiddlers/hi-oeyoews.svg</title><link href="https://neotw.netlify.app/#%2Fhome%2Frunner%2Fwork%2Fneotw%2Fneotw%2Ftiddlers%2Fhi-oeyoews.svg"></link><link href="https://neotw.netlify.app/static/%252Fhome%252Frunner%252Fwork%252Fneotw%252Fneotw%252Ftiddlers%252Fhi-oeyoews.svg.html" rel="alternative" type="text/html"></link><id>3798d5df-8b06-4ca4-8046-0c87bf3b437d</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><img src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20viewBox%3D%220%200%20600%20300%22%20width%3D%22600%22%20height%3D%22300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3CforeignObject%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%0A%20%20%20%20%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%0A%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%40keyframes%20hi%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%200%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2010%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2020%25%20%7B%20transform%3A%20rotate(-8.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2030%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2040%25%20%7B%20transform%3A%20rotate(-4.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2050%25%20%7B%20transform%3A%20rotate(10.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2060%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40keyframes%20gradient%20%7B%0A%20%20%20%20%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%2050%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%20100%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%235452ee%3B%0A%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%23e73c7e%3B%0A%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%2323a6d5%3B%0A%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23ffff%3B%0A%0A%20%20%20%20%20%20%20%20%20%20background%3A%20linear-gradient(-45deg%2C%20var(--color-main)%2C%20var(--color-primary)%2C%20var(--color-secondary)%2C%20var(--color-tertiary))%3B%0A%20%20%20%20%20%20%20%20%20%20background-size%3A%20400%25%20400%25%3B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20gradient%2015s%20ease%20infinite%3B%0A%0A%20%20%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20%20%20height%3A%20300px%3B%0A%0A%20%20%20%20%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20color%3A%20white%3B%0A%0A%20%20%20%20%20%20%20%20%20%20font-family%3A%20-apple-system%2C%20BlinkMacSystemFont%2C%20%22Segoe%20UI%22%2C%20Roboto%2C%20Helvetica%2C%20Arial%2C%20sans-serif%2C%20%22Apple%20Color%20Emoji%22%2C%20%22Segoe%20UI%20Emoji%22%2C%20%22Segoe%20UI%20Symbol%22%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20hi%201.5s%20linear%20-0.5s%20infinite%3B%0A%20%20%20%20%20%20%20%20%20%20display%3A%20inline-block%3B%0A%20%20%20%20%20%20%20%20%20%20transform-origin%3A%2070%25%2070%25%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-color-scheme%3A%20light)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%23F15BB5%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%2324b0ef%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%234526f6%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23f6f645%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-reduced-motion)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%3C%2Fstyle%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%20%20%3Ch1%3EHi%20there%2C%20my%20name%20is%20oeyoews%20%3Cdiv%20class%3D%22hi%22%3E%F0%9F%91%8B%3C%2Fdiv%3E%3C%2Fh1%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2FforeignObject%3E%0A%3C%2Fsvg%3E"></img></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-02-28</title><link href="https://neotw.netlify.app/#2023-02-28"></link><link href="https://neotw.netlify.app/static/2023-02-28.html" rel="alternative" type="text/html"></link><id>90d001b4-d8df-ae9a-ba70-fe38459a71c5</id><updated>2023-02-28T00:12:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div>无论人生上了哪一层台阶 ，阶下有人在仰望你，阶上亦有人在俯视你；你抬头自卑，低头自得，唯有平视，才能看到真实的自已。 @杨绛语录</div></blockquote></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-16</title><link href="https://neotw.netlify.app/#2023-04-16"></link><link href="https://neotw.netlify.app/static/2023-04-16.html" rel="alternative" type="text/html"></link><id>b720eb79-6a7f-86f0-c39b-4c456f2916fb</id><updated>2023-04-16T09:56:15</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>初级赚钱方式靠信息差，
 高级赚钱方式靠认知差，
 顶级赚钱方式靠资源差</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-20</title><link href="https://neotw.netlify.app/#2023-04-20"></link><link href="https://neotw.netlify.app/static/2023-04-20.html" rel="alternative" type="text/html"></link><id>66fbd211-302a-90f1-43e7-1f0ea4e0f181</id><updated>2023-04-20T20:53:27</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>多端同步的便捷和本地存储的安全，就是鱼与熊掌不可兼得。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-23</title><link href="https://neotw.netlify.app/#2023-04-23"></link><link href="https://neotw.netlify.app/static/2023-04-23.html" rel="alternative" type="text/html"></link><id>eb28f00e-453b-d5a1-967b-e984799ea2d8</id><updated>2023-04-24T00:16:36</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div>延迟满足</div><div>用书籍增加三倍人生体验时长</div><div>不以成喜，不以败悲</div></blockquote><p>“止观止心，无妄无碍”是禅宗的一种修行方法，也是佛教徒在生活中追求内心平静和解脱的方式。</p><p>其中，“止”指的是停止杂念、烦恼等不必要的思考和行为，如止诸恶、止杀戮、止谤言等。这样可以使内心得到安定和净化，有利于后续的修行。</p><p>“观”则指观察事物的真相和本质，排除偏见和执着。通过观想自己和世界的真实性质，认识自己的本性和命运，从而达到身心合一、彻底了解自己和世界的目的。</p><p>“无妄”则表示去除「妄念」、「妄想」和「妄语」等，即清空心灵中荒谬无稽的幻想和自我，让自己的内心变得更加安宁、平静。</p><p>“无碍”则是指避免心态上的障碍和物质层面的附着，为达到自由和解脱而努力。</p><p>总之，这个修行方法要求个人通过内省、检视和拯救自己，消除恶念与烦恼，培养慈悲之心，领悟事物的真实本质，从而找到内心的平静和解放。</p><blockquote><div>客观事物发展规律不以人的主观意志，然而掌握事物的发展规律，却可以从必然王国到自由王国</div></blockquote><p>这句话的意思是，客观事物的发展规律是客观存在的，不受人的主观意志的影响。但是，如果我们能够掌握这些规律并对它们进行改变和运用，我们就可以从必然王国（受客观规律支配的领域）进入自由王国（自由创造或创新的领域）。</p><p>在许多领域中，我们都可以看到这一点。例如，在科学技术领域，我们通过研究和掌握客观规律，开发出了许多有用的工具和技术，使我们的生产和生活更加便利和高效。同样，在社会和经济领域中，通过深入了解客观规律，我们可以制定出更好的政策和管理方法，以促进社会和经济的稳定和发展。</p><p>尽管客观规律的存在使我们受到限制，但如果我们学会理解和运用这些规律，我们就可以发挥自己的主动性和创造性，实现更高的自由度，并不断推动事物的进步和发展。因此，掌握客观规律是实现自由和创造的关键之一。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-25</title><link href="https://neotw.netlify.app/#2023-04-25"></link><link href="https://neotw.netlify.app/static/2023-04-25.html" rel="alternative" type="text/html"></link><id>07baca31-a4c1-d735-df41-8cf857fe4d13</id><updated>2023-04-25T23:01:46</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://space.bilibili.com/43109229/channel/collectiondetail?sid=1234748" rel="noopener noreferrer" target="_blank">https://space.bilibili.com/43109229/channel/collectiondetail?sid=1234748</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-05-06</title><link href="https://neotw.netlify.app/#2023-05-06"></link><link href="https://neotw.netlify.app/static/2023-05-06.html" rel="alternative" type="text/html"></link><id>ac8c3ae3-20fd-c971-eb36-7e3608c51b59</id><updated>2023-05-06T22:55:30</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>拥有能让自己快乐的能力,有一件让自己兴奋一点的事情</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-05-15</title><link href="https://neotw.netlify.app/#2023-05-15"></link><link href="https://neotw.netlify.app/static/2023-05-15.html" rel="alternative" type="text/html"></link><id>5ae2dacd-4932-0fb6-3754-327b31a02c7f</id><updated>2023-05-15T09:19:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>社交的本质是价值交换</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-05-17</title><link href="https://neotw.netlify.app/#2023-05-17"></link><link href="https://neotw.netlify.app/static/2023-05-17.html" rel="alternative" type="text/html"></link><id>5cfc6d08-80d6-3230-a52e-29ee0b651757</id><updated>2023-05-17T10:46:31</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <ul>
@@ -308,7 +308,7 @@ axios.<span class="hljs-title function_">get</span>(<span class="hljs-string">&#
 React
 </div>
 <div class="inline p-0 m-0 p-1 capitalize bg-yellow-400 rounded">
-<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#58">58</a></span>
+<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#60">60</a></span>
 </div>
 </div>
 <div>
@@ -432,7 +432,7 @@ Tailwindcss
 <div class="relative">
         <div class="absolute top-0 right-0">
             <div class="inline-block text-slate-400 rounded-full">
-                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#58">58</a></span>
+                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#60">60</a></span>
             </div>
         </div>
     </div>
@@ -2141,9 +2141,10 @@ arr.forEach((item, index) =&gt; {
 </div>
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>GettingStarted</title><link href="https://neotw.netlify.app/#GettingStarted"></link><link href="https://neotw.netlify.app/static/GettingStarted.html" rel="alternative" type="text/html"></link><id>fc927313-83cf-7e0a-53c1-21853f695851</id><updated>2023-05-30T12:43:41</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:bg-white">
 <div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-627-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-46-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-70-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-17 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-629-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-46-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-70-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-15 minutes ago-green?style=social"></img>  
 </div>
+
 
 </div></p><p><h3 class="hidden lg:block text-center dark:text-white"> Personal Notes </h3>
 <div class="grid-cols-5 overflow-auto gap-8 rounded-lg p-4 hidden lg:grid">
@@ -2175,7 +2176,7 @@ arr.forEach((item, index) =&gt; {
 <div class="relative">
         <div class="absolute top-0 right-0">
             <div class="inline-block text-slate-400 rounded-full">
-                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#58">58</a></span>
+                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#60">60</a></span>
             </div>
         </div>
     </div>
@@ -3436,11 +3437,10 @@ M1001 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 <ul>
 <li>aria2c -d <dirname> <url>&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/div&gt;</url></dirname></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-badges</title><link href="https://neotw.netlify.app/#neotw-badges"></link><link href="https://neotw.netlify.app/static/neotw-badges.html" rel="alternative" type="text/html"></link><id>f934e3aa-d36d-34bb-609b-922693d9b993</id><updated>2023-05-18T12:28:56</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-627-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-46-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-70-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-17 minutes ago-green?style=social"></img>  
-</div>
-</p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-command</title><link href="https://neotw.netlify.app/#neotw-command"></link><link href="https://neotw.netlify.app/static/neotw-command.html" rel="alternative" type="text/html"></link><id>188385e0-6b3a-4916-a54a-061d9d29e18f</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+&lt;/div&gt;</url></dirname></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-badges</title><link href="https://neotw.netlify.app/#neotw-badges"></link><link href="https://neotw.netlify.app/static/neotw-badges.html" rel="alternative" type="text/html"></link><id>f934e3aa-d36d-34bb-609b-922693d9b993</id><updated>2023-06-01T21:41:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:hidden">
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-629-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-46-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-70-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-15 minutes ago-green?style=social"></img>  
+</div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-command</title><link href="https://neotw.netlify.app/#neotw-command"></link><link href="https://neotw.netlify.app/static/neotw-command.html" rel="alternative" type="text/html"></link><id>188385e0-6b3a-4916-a54a-061d9d29e18f</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <h2>cp</h2>
 <pre class="hljs"><code class="shell hljs">eg: dir: 1/2/3
 cp -r 1/ 2 like copy 1/*
@@ -6428,7 +6428,13 @@ Even use this classnames package, the local debug is normal, but this dist not g
   }
 }
 
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title class_">Welcome</span>;</code></pre><p>通过这两个例子可以看出，用函数组件来实现一个简单的React组件非常简单明了，而类组件则提供了更多高级的功能。选择哪种方式取决于你的需求，如果你只需要一个简单的 UI 节点，那么使用函数组件就足够了；但如果你需要更复杂的逻辑和状态管理，那么类组件会更加适合。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>react-diff</title><link href="https://neotw.netlify.app/#react-diff"></link><link href="https://neotw.netlify.app/static/react-diff.html" rel="alternative" type="text/html"></link><id>c3e0f35b-e5b3-87f0-157f-b88e9a21d31e</id><updated>2023-04-25T16:43:14</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>（2）Diff算法
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title class_">Welcome</span>;</code></pre><p>通过这两个例子可以看出，用函数组件来实现一个简单的React组件非常简单明了，而类组件则提供了更多高级的功能。选择哪种方式取决于你的需求，如果你只需要一个简单的 UI 节点，那么使用函数组件就足够了；但如果你需要更复杂的逻辑和状态管理，那么类组件会更加适合。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>react-components</title><link href="https://neotw.netlify.app/#react-components"></link><link href="https://neotw.netlify.app/static/react-components.html" rel="alternative" type="text/html"></link><id>858d9e6d-263d-ad4c-6d56-c25c326de9cd</id><updated>2023-06-01T21:40:31</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>在 React 中，组件是构建用户界面的基本单元。组件可以是函数组件或类组件。下面是它们的概述：</p><p>1. 函数组件：函数组件是一个接受 props 作为参数并返回 React 元素的纯函数。这种组件通常用于简单的 UI 呈现，不需要维护组件状态。例如：</p><pre class="hljs"><code class="js hljs"><span class="hljs-keyword">function</span> <span class="hljs-title function_">Welcome</span>(<span class="hljs-params">props</span>) {
+  <span class="hljs-keyword">return</span> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello, {props.name}!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></span>;
+}</code></pre><p>2. 类组件：类组件是一个继承自 React.Component 的 JavaScript 类，它可以包含状态和生命周期方法。类组件必须实现 render() 方法，该方法返回 React 元素。例如：</p><pre class="hljs"><code class="js hljs"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Welcome</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">React.Component</span> {
+  <span class="hljs-title function_">render</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello, {this.props.name}!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></span>;
+  }
+}</code></pre><p>除了这两种常见的组件类型之外，还有一些其他类型的组件，例如高阶组件、渲染属性组件、容器组件等。但是，函数组件和类组件是 React 中最常用的两种组件类型。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>react-diff</title><link href="https://neotw.netlify.app/#react-diff"></link><link href="https://neotw.netlify.app/static/react-diff.html" rel="alternative" type="text/html"></link><id>c3e0f35b-e5b3-87f0-157f-b88e9a21d31e</id><updated>2023-04-25T16:43:14</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>（2）Diff算法
 tree diff：新旧两颗DOM树，逐层对比的过程，就是Tree Diff；当整颗DOM逐层对比完毕，则所有需要被按需更新的元素，必然能够找到
 component diff：在进行tree diff的时候，每一层中，组件级别的对比，叫作component diff；
 如果对比前后，组件的类型相同，则暂时认为此组件不需要被更新；
@@ -6792,7 +6798,41 @@ const listItems = numbers.map((number) =&gt; (
   <span class="hljs-attr">addTodo</span>: addTodoAction,
 };
 
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title function_">connect</span>(mapStateToProps, mapDispatchToProps)(<span class="hljs-title class_">MyComponent</span>);</code></pre><p>在这个组件中，我们使用 connect 函数将组件连接到 Redux store。通过 mapStateToProps 函数，我们将 store 中的 todo 状态映射到组件的 props 中，而 mapDispatchToProps 函数则将 addTodoAction 映射到组件的 props 中。最后，我们可以在点击事件中调用这个 action 来添加一个新的 todo。</p><p>这就是一个简单的 React 状态管理示例，演示了如何使用 Redux 作为状态管理库来管理应用程序的状态。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>react-router</title><link href="https://neotw.netlify.app/#react-router"></link><link href="https://neotw.netlify.app/static/react-router.html" rel="alternative" type="text/html"></link><id>af1a6369-a3a1-42df-c72f-a66df18007ac</id><updated>2023-05-02T19:19:55</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>React Router 是一个基于 React 的路由库，它可以帮助我们在 React 应用程序中管理不同页面之间的导航。使用 React Router，我们可以定义各种 URL 路径和对应的组件来实现不同页面的呈现和导航。</p><p>React Router 提供了多种路由类型，包括 BrowserRouter、HashRouter、MemoryRouter 等，在不同的项目场景下可以选择不同的路由类型。</p><p>此外，React Router 还提供了很多功能，如路由嵌套、动态路由匹配、路由参数传递等等。这些功能可以让我们更加灵活地构建复杂的单页应用程序或多页应用程序。</p><p>总之，React Router 是一个非常重要的库，它可以帮助我们实现页面之间的导航和流程控制，从而提升用户体验。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>react-router-route-components</title><link href="https://neotw.netlify.app/#react-router-route-components"></link><link href="https://neotw.netlify.app/static/react-router-route-components.html" rel="alternative" type="text/html"></link><id>aaed3513-23ec-069d-2a28-1de69ef72160</id><updated>2023-05-02T19:57:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title function_">connect</span>(mapStateToProps, mapDispatchToProps)(<span class="hljs-title class_">MyComponent</span>);</code></pre><p>在这个组件中，我们使用 connect 函数将组件连接到 Redux store。通过 mapStateToProps 函数，我们将 store 中的 todo 状态映射到组件的 props 中，而 mapDispatchToProps 函数则将 addTodoAction 映射到组件的 props 中。最后，我们可以在点击事件中调用这个 action 来添加一个新的 todo。</p><p>这就是一个简单的 React 状态管理示例，演示了如何使用 Redux 作为状态管理库来管理应用程序的状态。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>react-render</title><link href="https://neotw.netlify.app/#react-render"></link><link href="https://neotw.netlify.app/static/react-render.html" rel="alternative" type="text/html"></link><id>e265400b-0611-61c3-7f42-3c7ac7ddd16b</id><updated>2023-06-01T21:42:53</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+<p>React 组件的生命周期方法指的是在组件的生命周期中由 React 自动调用的一系列方法，这些方法可以用于在组件的不同阶段执行一些操作，例如初始化状态、更新 UI、处理错误等。React 组件的生命周期方法分为三个阶段：挂载、更新和卸载。下面是每个阶段的生命周期方法：
+</p>
+<ol>
+<li>
+<p>挂载阶段（Mounting）：
+</p>
+<ul>
+<li>constructor()：组件的构造函数，在组件创建时调用。在构造函数中可以初始化组件的状态（this.state）和绑定成员函数的 this。</li>
+<li>static getDerivedStateFromProps(props, state)：在组件实例化和接收到新的 props 时调用，用于根据新的 props 更新 state（不推荐使用）。</li>
+<li>render()：组件的渲染函数，在组件挂载到 DOM 上时调用。render() 必须返回一个 React 元素。</li>
+<li>componentDidMount()：在组件挂载后调用，用于进行一些异步操作，例如从服务器获取数据、设置定时器等。</li>
+</ul>
+</li>
+<li>
+<p>更新阶段（Updating）：
+</p>
+<ul>
+<li>static getDerivedStateFromProps(props,state)：在组件接收到新的 props 或 state 时调用，用于根据新的 props 或 state 更新 state（不推荐使用）。</li>
+<li>shouldComponentUpdate(nextProps, nextState)：在组件接收到新的 props 或 state 时调用，用于决定是否重新渲染组件。如果返回 false，组件将不会重新渲染。</li>
+<li>render()：同上。</li>
+<li>componentDidUpdate(prevProps, prevState, snapshot)：在组件更新后调用，用于进行一些副作用操作，例如更新 DOM、记录日志等。可以通过第三个参数 snapshot 获取组件更新前的信息。</li>
+</ul>
+</li>
+<li>
+<p>卸载阶段（Unmounting）：
+</p>
+<ul>
+<li>componentWillUnmount()：在组件卸载前调用，用于清理组件的副作用操作，例如取消定时器、移除事件监听器等。</li>
+</ul>
+</li>
+</ol>
+<p>除了上述生命周期方法之外，还有一些其他方法，例如 static getDerivedStateFromError(error) 和 componentDidCatch(error, info)，用于处理组件渲染过程中的错误。需要注意的是，在 React 17 之后，getDerivedStateFromProps 和 componentWillReceiveProps 方法被标记为不安全的方法，不推荐使用。
+</p>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>react-router</title><link href="https://neotw.netlify.app/#react-router"></link><link href="https://neotw.netlify.app/static/react-router.html" rel="alternative" type="text/html"></link><id>af1a6369-a3a1-42df-c72f-a66df18007ac</id><updated>2023-05-02T19:19:55</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>React Router 是一个基于 React 的路由库，它可以帮助我们在 React 应用程序中管理不同页面之间的导航。使用 React Router，我们可以定义各种 URL 路径和对应的组件来实现不同页面的呈现和导航。</p><p>React Router 提供了多种路由类型，包括 BrowserRouter、HashRouter、MemoryRouter 等，在不同的项目场景下可以选择不同的路由类型。</p><p>此外，React Router 还提供了很多功能，如路由嵌套、动态路由匹配、路由参数传递等等。这些功能可以让我们更加灵活地构建复杂的单页应用程序或多页应用程序。</p><p>总之，React Router 是一个非常重要的库，它可以帮助我们实现页面之间的导航和流程控制，从而提升用户体验。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>react-router-route-components</title><link href="https://neotw.netlify.app/#react-router-route-components"></link><link href="https://neotw.netlify.app/static/react-router-route-components.html" rel="alternative" type="text/html"></link><id>aaed3513-23ec-069d-2a28-1de69ef72160</id><updated>2023-05-02T19:57:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <p><code class="_codified_">react-router-dom</code> and <code class="_codified_">react-router</code> are two packages that are used for different purposes, but they both share a lot of the same code. Here’s a brief overview of the differences between the two:
 </p>
 <ul>
@@ -6939,7 +6979,19 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 }</code></pre><p>在这个例子中，我们使用try-catch语句块来处理可能的异常情况。在try块中，我们使用fs.readFileSync()方法同步读取JSON文件，并将文件内容存储在data变量中。如果读取文件时出现错误，catch块将捕获该错误，并输出错误信息。</p><p>以上是使用fs模块读取文件的示例，需要注意的是，在使用fs模块读取文件时，我们需要处理可能的异常情况，并根据实际情况选择异步或同步方法。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-count</title><link href="https://neotw.netlify.app/#recent-count"></link><link href="https://neotw.netlify.app/static/recent-count.html" rel="alternative" type="text/html"></link><id>6a131e9a-b046-19c3-08bd-35ef7c9ffbfc</id><updated>2023-02-08T18:16:06</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="tc-timeline">
 
 <div class="tc-menu-list-item">
-1st June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#4">4</a></span>)
+1st June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#7">7</a></span>)
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#react-render"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#neotw-badges"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#react-components"></a>
+</div>
 
 <div class="tc-menu-list-subitem">
 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#basic-thought"></a>
@@ -7381,7 +7433,7 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 </div>
 
 <div class="tc-menu-list-item">
-18th May 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#6">6</a></span>)
+18th May 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#5">5</a></span>)
 
 <div class="tc-menu-list-subitem">
 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#neotw%2Fchange-theme-palette"></a>
@@ -7403,50 +7455,27 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#button-github"></a>
 </div>
 
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#neotw-badges"></a>
-</div>
-
-</div>
-
-<div class="tc-menu-list-item">
-17th May 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#8">8</a></span>)
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#history-api"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#pjax"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#ajax-fetch-axios"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#ajax"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#2023-05-17"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#fetch-chatgpt-free-sites"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#chatgpt-free-sites"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#html-to-image"></a>
-</div>
-
 </div>
 
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-note-record</title><link href="https://neotw.netlify.app/#recent-note-record"></link><link href="https://neotw.netlify.app/static/recent-note-record.html" rel="alternative" type="text/html"></link><id>2619840e-dc84-d69e-3d32-c2258f306a66</id><updated>2023-04-11T09:39:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><ul>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#react-render">react-render</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#neotw-badges">neotw-badges</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#react-components">react-components</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#basic-thought">basic-thought</a>
@@ -8032,12 +8061,6 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#button-github">button-github</a>
-        
-         <span style="color:black;"><sup>recent</sup></span>
-    </li>
-  
-    <li>
-		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#neotw-badges">neotw-badges</a>
         
          <span style="color:black;"><sup>recent</sup></span>
     </li>
