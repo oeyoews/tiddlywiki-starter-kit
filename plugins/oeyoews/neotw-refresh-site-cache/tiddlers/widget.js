@@ -57,6 +57,13 @@ neotw-refresh-site-cache widget
      * @return {void}
      */
     async refreshSiteCache() {
+      const isPWA =
+        'serviceWorker' in window.navigator &&
+        navigator.serviceWorker.controller;
+      if (!isPWA) {
+        alert('ServiceWorker未激活,请刷新浏览器');
+        return;
+      }
       let cacheSize = 0;
       const cacheNames = await caches.keys();
       for (const cacheName of cacheNames) {
