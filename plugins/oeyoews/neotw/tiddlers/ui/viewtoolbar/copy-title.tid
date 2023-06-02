@@ -8,6 +8,7 @@ list-before: $:/core/ui/Buttons/close
 <$button message="tm-copy-to-clipboard" param={{!!title}} tooltip="copy current title" class=<<tv-config-toolbar-class>>>
 	<$list filter="[<tv-config-toolbar-icons>match[yes]]">
 	{{$:/core/images/copy-clipboard}}
+	<!-- {{copy-title}} -->
 	</$list>
 	<$list filter="[<tv-config-toolbar-text>match[yes]]">
 	<span class="tc-btn-text">

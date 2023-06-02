@@ -11,6 +11,12 @@ dotenv.config();
 // impress msg
 $.verbose = true;
 
+/* const PUBLIC = process.env.PUBLIC || true;
+if (!PUBLIC) {
+  console.log('构建被禁用');
+  return;
+} */
+
 const bin = 'tiddlywiki';
 const dist = 'dist';
 const oraSpinner = ora('Building ...');
