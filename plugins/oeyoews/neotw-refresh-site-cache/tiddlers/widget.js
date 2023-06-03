@@ -26,9 +26,10 @@ neotw-refresh-site-cache widget
       this.computeAttributes();
       this.execute();
 
-      const isPWA =
+      /* const isPWA =
         'serviceWorker' in window.navigator &&
-        navigator.serviceWorker.controller;
+        navigator.serviceWorker.controller; */
+      const isPWA = navigator.serviceWorker?.controller;
       const param = this.getAttribute('param', 'Clear cache');
       const classNames = this.getAttribute('class', '').split('');
 

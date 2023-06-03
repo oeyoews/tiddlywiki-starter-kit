@@ -1,0 +1,9 @@
+title: demodemo-tra
+tags: $:/tags/ViewToolbar
+description: ui
+list-before: $:/core/ui/Buttons/close
+caption:
+list-after:
+
+\whitespace trim
+<$traditional />
