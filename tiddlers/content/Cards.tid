@@ -1,6 +1,6 @@
 created: 20230501062851560
 creator: oeyoews
-modified: 20230602155245139
+modified: 20230603015058067
 modifier: oeyoews
 page-cover: https://source.unsplash.com/random?fm=blurhash&w=50&Cards
 tags: 
@@ -36,5 +36,5 @@ type: text/vnd.tiddlywiki
 </div>
 
 <small class="text-rose-500 flex justify-center font-bold">
-以上部分内容来自AIGC, 准确性有待验证 
+以上部分内容来自[[AIGC]], 准确性有待验证 
 </small>
