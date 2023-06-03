@@ -1,3 +1,10 @@
+# [3.278.0](https://github.com/oeyoews/neotw/compare/v3.277.0...v3.278.0) (2023-06-03)
+
+
+### Features
+
+* support toggle simpiled and traditional ([c13b78f](https://github.com/oeyoews/neotw/commit/c13b78f7333de8ad6e3a4eb6552fed67ae75ef7f))
+
 # [3.277.0](https://github.com/oeyoews/neotw/compare/v3.276.2...v3.277.0) (2023-06-01)
 
 
