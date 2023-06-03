@@ -26,19 +26,24 @@ neotw-refresh-site-cache widget
       this.computeAttributes();
       this.execute();
 
+      const isPWA =
+        'serviceWorker' in window.navigator &&
+        navigator.serviceWorker.controller;
       const param = this.getAttribute('param', 'Clear cache');
       const classNames = this.getAttribute('class', '').split('');
 
       const buttonNode = $tw.utils.domMaker('button', {
-        text: param,
-        class: '',
+        text: isPWA
+          ? param
+          : 'Your tiddlywiki site no register serviceWorker(not supported PWA)',
+        class: isPWA ? '' : 'text-red-500 font-bold cursor-not-allowed',
         attributes: {},
         children: [],
         eventListeners: [
           {
             name: 'click',
             handlerObject: this,
-            handlerMethod: 'handlerClick',
+            handlerMethod: isPWA ? 'handlerClick' : '',
           },
         ],
       });
@@ -57,13 +62,6 @@ neotw-refresh-site-cache widget
      * @return {void}
      */
     async refreshSiteCache() {
-      const isPWA =
-        'serviceWorker' in window.navigator &&
-        navigator.serviceWorker.controller;
-      if (!isPWA) {
-        alert('ServiceWorker未激活,请刷新浏览器');
-        return;
-      }
       let cacheSize = 0;
       const cacheNames = await caches.keys();
       for (const cacheName of cacheNames) {
