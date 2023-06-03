@@ -171,7 +171,7 @@
         "name": "Neotw Traditonal",
         "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
         "list": "readme explore",
-        "readme": "!! Neotw Traditonal\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/neotw-traditional]]\n* [[Demo|https://oeyoews.github.io/neotw]]\n",
+        "readme": "!! Neotw Traditonal\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/neotw-traditional]]\n* [[Demo|https://oeyoews.github.io/neotw]]\n\n!! TODO\n\n* 设置body global\n",
         "requires-reload": "yes"
     },
     {
