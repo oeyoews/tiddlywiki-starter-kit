@@ -96,6 +96,7 @@ neotw-unsplash widget
         // 监听复制图片 URL 的按钮点击事件
         copyBtn.addEventListener('click', () => {
           navigator.clipboard.writeText(copyBtn.dataset.photoUrl);
+          // confetti(); // z-index need add options for confetti
           pushNotify('info', 'Unplash', 'copyed');
         });
 

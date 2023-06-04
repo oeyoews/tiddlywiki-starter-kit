@@ -7,7 +7,7 @@ hide-body: yes
 href: https://github.com/peoplefund-tech/markdown-it-wiki-toc/blob/master/index.js
 
 \*/
-// TODO: 各级标题折叠, 目录折叠, 样式控制
+// TODO: 各级标题折叠, 目录折叠, 样式控制, 一级标题序号zero
 (function () {
   'use strict';
 
@@ -162,7 +162,7 @@ href: https://github.com/peoplefund-tech/markdown-it-wiki-toc/blob/master/index.
       return `
     <${tokens[index].tag}>
       <a href="#${options.reverseLink ? options.tocId : anchor}" id="${anchor}">
-        ${numberingStr}
+       ✨ ${numberingStr}
       </a>
   `;
     };
