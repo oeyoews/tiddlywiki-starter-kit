@@ -7,6 +7,7 @@ hide-body: yes
 href: https://github.com/peoplefund-tech/markdown-it-wiki-toc/blob/master/index.js
 
 \*/
+// TODO: 各级标题折叠, 目录折叠, 样式控制
 (function() {
   'use strict';
 
