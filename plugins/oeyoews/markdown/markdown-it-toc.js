@@ -8,7 +8,7 @@ href: https://github.com/peoplefund-tech/markdown-it-wiki-toc/blob/master/index.
 
 \*/
 // TODO: 各级标题折叠, 目录折叠, 样式控制
-(function() {
+(function () {
   'use strict';
 
   var defaultOptions = {
@@ -21,14 +21,14 @@ href: https://github.com/peoplefund-tech/markdown-it-wiki-toc/blob/master/index.
     reverseLink: false,
   };
 
-  module.exports = function(md, options) {
+  module.exports = function (md, options) {
     // Set default options
     var options = Object.assign({}, defaultOptions, options);
 
     // Global variables
     var headingInfos = [];
 
-    md.inline.ruler.after('emphasis', 'toc', function(state, silent) {
+    md.inline.ruler.after('emphasis', 'toc', function (state, silent) {
       if (silent) {
         return false;
       }
@@ -36,9 +36,9 @@ href: https://github.com/peoplefund-tech/markdown-it-wiki-toc/blob/master/index.
       var match = options.tocRegexp.exec(state.src);
       match = !match
         ? []
-        : match.filter(function(m) {
-          return m;
-        });
+        : match.filter(function (m) {
+            return m;
+          });
       if (match.length < 1) {
         return false;
       }
@@ -58,7 +58,7 @@ href: https://github.com/peoplefund-tech/markdown-it-wiki-toc/blob/master/index.
     // TODO: NAN
     // 折叠
     // 悬浮显示标题
-    md.core.ruler.push('init_toc', function(state) {
+    md.core.ruler.push('init_toc', function (state) {
       // For each rendering, initialize heading count
       var headingCounts = [0, 0, 0, 0, 0, 0, 0];
       var tokens = state.tokens;
@@ -89,7 +89,7 @@ href: https://github.com/peoplefund-tech/markdown-it-wiki-toc/blob/master/index.
       }
     });
 
-    md.renderer.rules.toc_open = function(tokens, index) {
+    md.renderer.rules.toc_open = function (tokens, index) {
       return (
         '<div id="' +
         options.tocId +
@@ -101,11 +101,11 @@ href: https://github.com/peoplefund-tech/markdown-it-wiki-toc/blob/master/index.
       );
     };
 
-    md.renderer.rules.toc_close = function(token, index) {
+    md.renderer.rules.toc_close = function (token, index) {
       return '</div>';
     };
 
-    md.renderer.rules.toc_body = function(tokens, index) {
+    md.renderer.rules.toc_body = function (tokens, index) {
       var results = [];
       var previousLevel = 0;
 
@@ -134,14 +134,14 @@ href: https://github.com/peoplefund-tech/markdown-it-wiki-toc/blob/master/index.
 
         results.push(
           '<li class="capitalize"><a href="#' +
-          anchor +
-          '">' +
-          '⭐️ ' + // 添加 Emoji
-          numberingStr +
-          ' ' +
-          hInfo.content +
-          '</a> ' +
-          '</li>',
+            anchor +
+            '">' +
+            '⭐️ ' + // 添加 Emoji
+            numberingStr +
+            ' ' +
+            hInfo.content +
+            '</a> ' +
+            '</li>',
         );
 
         previousLevel = hInfo.numbering.length;
@@ -155,7 +155,7 @@ href: https://github.com/peoplefund-tech/markdown-it-wiki-toc/blob/master/index.
       return results.join('');
     };
 
-    md.renderer.rules.heading_open = function(tokens, index) {
+    md.renderer.rules.heading_open = function (tokens, index) {
       // 添加 h1 信息,如果文档没有 h1
       /* if (tokens[index].tag === 'h2' && headingInfos.length === 0) {
         headingInfos.unshift({
