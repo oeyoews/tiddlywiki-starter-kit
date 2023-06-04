@@ -90,15 +90,10 @@ href: https://github.com/peoplefund-tech/markdown-it-wiki-toc/blob/master/index.
     });
 
     md.renderer.rules.toc_open = function (tokens, index) {
-      return (
-        '<div id="' +
-        options.tocId +
-        '" class="' +
-        options.tocWrapperClass +
-        '"><h3>' +
-        options.tocTitle +
-        '</h3>'
-      );
+      return `
+      <div id="${options.tocId}" class="${options.tocWrapperClass}">
+        <h3>${options.tocTitle}</h3>
+    `;
     };
 
     md.renderer.rules.toc_close = function (token, index) {
@@ -132,17 +127,13 @@ href: https://github.com/peoplefund-tech/markdown-it-wiki-toc/blob/master/index.
         var numberingStr = hInfo.numbering.join('.');
         var anchor = options.anchorIdPrefix + numberingStr;
 
-        results.push(
-          '<li class="capitalize"><a href="#' +
-            anchor +
-            '">' +
-            '⭐️ ' + // 添加 Emoji
-            numberingStr +
-            ' ' +
-            hInfo.content +
-            '</a> ' +
-            '</li>',
-        );
+        results.push(`
+          <li class="capitalize">
+            <a href="#${anchor}">
+              ⭐️ ${numberingStr} ${hInfo.content}
+            </a>
+          </li>
+        `);
 
         previousLevel = hInfo.numbering.length;
       }
@@ -168,17 +159,12 @@ href: https://github.com/peoplefund-tech/markdown-it-wiki-toc/blob/master/index.
       var numberingStr = hInfo.numbering.join('.');
       var anchor = options.anchorIdPrefix + numberingStr;
 
-      return (
-        '<' +
-        tokens[index].tag +
-        '><a href="#' +
-        (options.reverseLink ? options.tocId : anchor) +
-        '" id="' +
-        anchor +
-        '">' +
-        numberingStr +
-        '</a> '
-      );
+      return `
+    <${tokens[index].tag}>
+      <a href="#${options.reverseLink ? options.tocId : anchor}" id="${anchor}">
+        ${numberingStr}
+      </a>
+  `;
     };
   };
 })();
