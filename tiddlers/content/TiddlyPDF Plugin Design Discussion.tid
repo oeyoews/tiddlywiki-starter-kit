@@ -1,0 +1,11 @@
+created: 20230604124305456
+creator: oeyoews
+modified: 20230604130008285
+modifier: oeyoews
+page-cover: https://source.unsplash.com/random?fm=blurhash&w=50&TiddlyPDF Plugin Design Discussion
+publish: public
+tags: Talk
+title: TiddlyPDF Plugin Design Discussion
+type: text/markdown
+
+I have tried to export a single tiddler to PDF using the third-party library jspdf, but I didn't study the aspect ratio of the exported PDF in depth, so the result was not good. Therefore, I tried exporting it in PNG format, and the effect seemed to be better. In addition, images are easier to share than PDFs, while PDFs are more suitable for document viewing. The above image content was exported using tiddlywiki-tid2pdf.
