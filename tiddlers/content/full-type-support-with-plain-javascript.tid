@@ -1,15 +1,14 @@
 created: 20230604141122805
 creator: oeyoews
-modified: 20230604141626792
+modified: 20230604141818255
 modifier: oeyoews
-tags: 
-title: 使用纯 JavaScript 获得完整的类型支持
+tags: JavaScript
+title: full-type-support-with-plain-javascript
 type: text/markdown
 
 @[toc]
 
 <hr>
-
 
 ## 使用纯 JavaScript 获得完整的类型支持
 
