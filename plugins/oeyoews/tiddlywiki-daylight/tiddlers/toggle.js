@@ -4,7 +4,6 @@ type: application/javascript
 module-type: library
 
 toggle
-
 \*/
 
 /**
@@ -21,6 +20,11 @@ function setTheme(mode) {
   htmlTag.classList.remove('light', 'dark');
   htmlTag.classList.add(mode);
 }
+
+// 定时检测亮暗模式变化
+/* setInterval(() => {
+  const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+}, 1000); */
 
 function toggle() {
   // 初始化主题模式
