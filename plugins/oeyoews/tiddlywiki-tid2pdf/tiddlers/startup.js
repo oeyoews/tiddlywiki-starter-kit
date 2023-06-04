@@ -19,14 +19,13 @@ tid2pdf module
     window.html2canvas = require('html2canvas.min.js');
 
     $tw.rootWidget.addEventListener('om-export-png', event => {
-      // add adjuge
+      // add judge
       const paramObject = event.paramObject || {};
       // NOTE: this tid must have storylist be rendered by tw
       const title =
         paramObject.title || $tw.wiki.getTiddlerText('$:/temp/focussedTiddler');
       const selector = `[data-tiddler-title="${title}"]`;
-
-      var element = document.querySelector(selector);
+      const element = document.querySelector(selector);
 
       html2canvas(element).then(canvas => {
         const imgData = canvas.toDataURL('image/png'); // 转换canvas为PNG格式的数据URL
@@ -39,6 +38,7 @@ tid2pdf module
         });
 
         pushNotify('info', 'PNG', `Wait a moment to export ${title}.png`);
+        confetti();
         // 模拟单击事件以触发下载
         linkNode.click();
 
