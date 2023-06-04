@@ -31,14 +31,14 @@ tid2pdf module
       html2canvas(element).then(canvas => {
         const imgData = canvas.toDataURL('image/png'); // 转换canvas为PNG格式的数据URL
 
-        // 创建一个<a>元素，并指定其href属性为图像数据URL
-        const linkNode = document.createElement('a');
-        linkNode.href = imgData;
+        const linkNode = $tw.utils.domMaker('a', {
+          attributes: {
+            href: imgData,
+            download: title,
+          },
+        });
 
-        // 指定文件名并将<a>元素添加到页面上
-        linkNode.download = `${title}`;
-        document.body.appendChild(linkNode);
-
+        pushNotify('info', 'PNG', `Wait a moment to export ${title}.png`);
         // 模拟单击事件以触发下载
         linkNode.click();
 
