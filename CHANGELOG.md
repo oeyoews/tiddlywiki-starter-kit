@@ -1,3 +1,11 @@
+# [3.280.0](https://github.com/oeyoews/neotw/compare/v3.279.0...v3.280.0) (2023-06-04)
+
+
+### Features
+
+* just show less three level toc ([c3e7891](https://github.com/oeyoews/neotw/commit/c3e7891470428860bb42737c89ebf3a9acd1bece))
+* support markdown-it-toc ([78ff760](https://github.com/oeyoews/neotw/commit/78ff76068bfa7549b8cb83fd44c9a3d2acdcc762))
+
 # [3.279.0](https://github.com/oeyoews/neotw/compare/v3.278.0...v3.279.0) (2023-06-04)
 
 
