@@ -4,6 +4,8 @@ type: application/javascript
 module-type: library
 hide-body: yes
 
+href: https://github.com/peoplefund-tech/markdown-it-wiki-toc/blob/master/index.js
+
 \*/
 (function () {
   'use strict';
