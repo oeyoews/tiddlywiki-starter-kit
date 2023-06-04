@@ -106,6 +106,12 @@ href: https://github.com/peoplefund-tech/markdown-it-wiki-toc/blob/master/index.
 
       for (var i = 0; i < headingInfos.length; i++) {
         var hInfo = headingInfos[i];
+
+        // 跳过超过三级的标题
+        if (hInfo.numbering.length > 3) {
+          continue;
+        }
+
         var levelDiff = hInfo.numbering.length - previousLevel;
 
         if (levelDiff > 0) {
@@ -131,7 +137,7 @@ href: https://github.com/peoplefund-tech/markdown-it-wiki-toc/blob/master/index.
             '</li>',
         );
 
-        previousLevel = headingInfos[i].numbering.length;
+        previousLevel = hInfo.numbering.length;
       }
 
       // Add the remaining </ul> tags at end of TOC.
