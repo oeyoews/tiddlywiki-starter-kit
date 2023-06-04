@@ -1,0 +1,16 @@
+created: 20230604144252693
+creator: oeyoews
+modified: 20230604145158431
+modifier: oeyoews
+summary: I am a popover with more information.
+tags: 
+title: popover-114
+type: text/vnd.tiddlywiki
+
+* https://developer.chrome.com/blog/introducing-popover-api/
+
+<button popovertarget="my-popover"> Open Popover </button>
+
+<div id="my-popover" popover class="bg-red-200 rounded border-none shadow-lg p-2 duration-300 transition">
+{{!!summary}}
+</div>
