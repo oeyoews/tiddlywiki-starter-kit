@@ -294,7 +294,7 @@ myPromise
 
 <span class="hljs-title function_">myAsyncFunction</span>().<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">result</span> =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(result));</code></pre></div></content><author><name>oeyoews</name></author></entry><entry><title>atom-css</title><link href="https://neotw.netlify.app/#atom-css"></link><link href="https://neotw.netlify.app/static/atom-css.html" rel="alternative" type="text/html"></link><id>17def230-0977-8d8c-34eb-d5c9e057d1f9</id><updated>2023-03-16T17:19:34</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Tailwindcss</li><li>Windicss</li><li>Unocss</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>awesome-chatgpt-application</title><link href="https://neotw.netlify.app/#awesome-chatgpt-application"></link><link href="https://neotw.netlify.app/static/awesome-chatgpt-application.html" rel="alternative" type="text/html"></link><id>cca946d4-1142-3c19-f9ba-602d3fced8bd</id><updated>2023-03-18T23:08:03</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
-        0.1
+       ✨ 0.1
       </a>
   Shell</h2>
 <hr></hr>
@@ -303,7 +303,7 @@ myPromise
 </ul>
 <blockquote></blockquote></p><p><h2>
       <a href="##h-0.2" id="#h-0.2">
-        0.2
+       ✨ 0.2
       </a>
   Website</h2>
 <hr></hr>
@@ -554,7 +554,7 @@ RESPONSE=$(curl -s -X POST -H <span class="hljs-string">&quot;Content-Type: appl
 <span class="hljs-comment"># Parse the response and print the generated text</span>
 <span class="hljs-built_in">echo</span> <span class="hljs-variable">$RESPONSE</span> | jq -r <span class="hljs-string">&#x27;.choices[0].text&#x27;</span></code></pre></div></content><author><name>oeyoews</name></author></entry><entry><title>chatgpt-free-sites</title><link href="https://neotw.netlify.app/#chatgpt-free-sites"></link><link href="https://neotw.netlify.app/static/chatgpt-free-sites.html" rel="alternative" type="text/html"></link><id>0a2ad23b-f66e-7932-665f-16219db67457</id><updated>2023-05-17T09:28:30</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h1>
       <a href="##h-1" id="#h-1">
-        1
+       ✨ 1
       </a>
   Awesome Free ChatGPT</h1>
 <p><a class="tc-tiddlylink-external _codified_" href="README_en.md" rel="noopener noreferrer" target="_blank">English</a>
@@ -566,13 +566,13 @@ RESPONSE=$(curl -s -X POST -H <span class="hljs-string">&quot;Content-Type: appl
 <p>当然，非常感谢他们出色的工作，如果您觉得它有用，可以考虑捐赠或打赏他们。
 </p></p><p><h2>
       <a href="##h-1.1" id="#h-1.1">
-        1.1
+       ✨ 1.1
       </a>
   🌈 欢迎贡献</h2>
 <p>欢迎随时提交 <a class="tc-tiddlylink-external _codified_" href="https://github.com/LiLittleCat/awesome-free-chatgpt/issues" rel="noopener noreferrer" target="_blank">issue</a> 和 <a class="tc-tiddlylink-external _codified_" href="https://github.com/LiLittleCat/awesome-free-chatgpt/pulls" rel="noopener noreferrer" target="_blank">PR</a> 新增网站或报告网站失效，如果您发现此项目有用，不要忘记 star ⭐，您的支持是我前进的动力。
 </p></p><p><h2>
       <a href="##h-1.2" id="#h-1.2">
-        1.2
+       ✨ 1.2
       </a>
   📖 列表</h2>
 <blockquote>
@@ -610,7 +610,7 @@ RESPONSE=$(curl -s -X POST -H <span class="hljs-string">&quot;Content-Type: appl
 </ul>
 </blockquote></p><p><h3>
       <a href="##h-1.2.1" id="#h-1.2.1">
-        1.2.1
+       ✨ 1.2.1
       </a>
   类似官网风格</h3>
 <ul>
@@ -818,7 +818,7 @@ RESPONSE=$(curl -s -X POST -H <span class="hljs-string">&quot;Content-Type: appl
 </ul>
 <hr></hr></p><p><h3>
       <a href="##h-1.2.2" id="#h-1.2.2">
-        1.2.2
+       ✨ 1.2.2
       </a>
   <a class="tc-tiddlylink-external _codified_" href="https://github.com/ddiu8081/chatgpt-demo" rel="noopener noreferrer" target="_blank">chatgpt-demo</a> 风格</h3>
 <ul>
@@ -877,7 +877,7 @@ RESPONSE=$(curl -s -X POST -H <span class="hljs-string">&quot;Content-Type: appl
 </ul>
 <hr></hr></p><p><h3>
       <a href="##h-1.2.3" id="#h-1.2.3">
-        1.2.3
+       ✨ 1.2.3
       </a>
   其他风格</h3>
 <ul>
@@ -1068,7 +1068,7 @@ RESPONSE=$(curl -s -X POST -H <span class="hljs-string">&quot;Content-Type: appl
 </ul>
 <hr></hr></p><p><h3>
       <a href="##h-1.2.4" id="#h-1.2.4">
-        1.2.4
+       ✨ 1.2.4
       </a>
   替代方案</h3>
 <ul>
@@ -1115,7 +1115,7 @@ RESPONSE=$(curl -s -X POST -H <span class="hljs-string">&quot;Content-Type: appl
 </ul>
 <hr></hr></p><p><h3>
       <a href="##h-1.2.5" id="#h-1.2.5">
-        1.2.5
+       ✨ 1.2.5
       </a>
   软件</h3>
 <ul>
@@ -1123,7 +1123,7 @@ RESPONSE=$(curl -s -X POST -H <span class="hljs-string">&quot;Content-Type: appl
 </ul>
 <hr></hr></p><p><h3>
       <a href="##h-1.2.6" id="#h-1.2.6">
-        1.2.6
+       ✨ 1.2.6
       </a>
   🚫 已失效</h3>
 <details>
@@ -1236,17 +1236,17 @@ RESPONSE=$(curl -s -X POST -H <span class="hljs-string">&quot;Content-Type: appl
 </ul>
 </details></p><p><h2>
       <a href="##h-1.3" id="#h-1.3">
-        1.3
+       ✨ 1.3
       </a>
   🤟 玩得开心</h2></p><p><h2>
       <a href="##h-1.4" id="#h-1.4">
-        1.4
+       ✨ 1.4
       </a>
   Star History</h2>
 <p><a class="tc-tiddlylink-external _codified_" href="https://star-history.com/#LiLittleCat/awesome-free-chatgpt&amp;Date" rel="noopener noreferrer" target="_blank"><img alt="Star History Chart" class=" tc-image-loading" src="https://api.star-history.com/svg?repos=LiLittleCat/awesome-free-chatgpt&amp;type=Date"></img></a>
 </p></p><p><h2>
       <a href="##h-1.5" id="#h-1.5">
-        1.5
+       ✨ 1.5
       </a>
   Contributors</h2>
 <p><a class="tc-tiddlylink-external _codified_" href="https://github.com/LiLittleCat/awesome-free-chatgpt/graphs/contributors" rel="noopener noreferrer" target="_blank"><img alt="Contributors" class=" tc-image-loading" src="https://contrib.rocks/image?repo=LiLittleCat/awesome-free-chatgpt"></img></a>
@@ -1977,7 +1977,7 @@ Undefined widget 'english'
 
     <h2>
       <a href="##h-0.1" id="#h-0.1">
-        0.1
+       ✨ 0.1
       </a>
   事件冒泡</h2>
 <p>DOM事件，也是有一个流程的。从事件触发开始到事件响应是有三个阶段。
@@ -1990,7 +1990,7 @@ Undefined widget 'english'
 
     <h2>
       <a href="##h-0.2" id="#h-0.2">
-        0.2
+       ✨ 0.2
       </a>
   event 委托</h2>
 <p>简单来说，就是利用事件冒泡，将某个元素上的事件委托给他的父级。
@@ -1998,7 +1998,7 @@ Undefined widget 'english'
 
     <h3>
       <a href="##h-0.2.1" id="#h-0.2.1">
-        0.2.1
+       ✨ 0.2.1
       </a>
   优点</h3>
 <ul>
@@ -2236,7 +2236,7 @@ arr.forEach((item, index) =&gt; {
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>GettingStarted</title><link href="https://neotw.netlify.app/#GettingStarted"></link><link href="https://neotw.netlify.app/static/GettingStarted.html" rel="alternative" type="text/html"></link><id>fc927313-83cf-7e0a-53c1-21853f695851</id><updated>2023-05-30T12:43:41</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:bg-white">
 <div class="dark:hidden">
 <img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-644-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-46-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-70-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-72 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-4 minutes ago-green?style=social"></img>  
 </div>
 
 
@@ -2527,7 +2527,7 @@ arr.forEach((item, index) =&gt; {
 
     <h2>
       <a href="##h-0.1" id="#h-0.1">
-        0.1
+       ✨ 0.1
       </a>
   <code class="_codified_">useEffect</code></h2>
 <p>有些组件需要在挂载、卸载或更新时执行一些副作用操作（比如调用接口请求数据或者修改 DOM）。<code class="_codified_">useEffect</code> 就是用来管理这些副作用的钩子函数。它在每次渲染后都会执行，并且可以返回一个清除副作用的函数，以避免内存泄漏。
@@ -2552,7 +2552,7 @@ arr.forEach((item, index) =&gt; {
 
     <h2>
       <a href="##h-0.2" id="#h-0.2">
-        0.2
+       ✨ 0.2
       </a>
   <code class="_codified_">useContext</code></h2>
 <p><code class="_codified_">useContext</code> 允许在组件树中跨层级传递数据而不必一级一级地手动传递 props。它是一个接收 React 上下文对象（通过 <code class="_codified_">React.createContext()</code> 创建）并返回当前上下文值的钩子函数。
@@ -3277,7 +3277,7 @@ neotw
   </div>
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>localstorage</title><link href="https://neotw.netlify.app/#localstorage"></link><link href="https://neotw.netlify.app/static/localstorage.html" rel="alternative" type="text/html"></link><id>7db657fe-2074-9f1b-097c-a3a7f16e89a5</id><updated>2023-04-11T16:04:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
-        0.1
+       ✨ 0.1
       </a>
   Several Storage</h2>
 <ul>
@@ -3332,7 +3332,7 @@ arr.forEach(item =&gt; {
 
 // 使用 map 方法
 const newArr = arr.map(item =&gt; item * 2);
-console.log(newArr);</code></pre><p>在使用这两种方法时，需要注意的是，回调函数的参数不同。<code>forEach</code> 方法的回调函数有三个参数：当前遍历的元素、当前元素的索引和整个数组。而 <code>map</code> 方法的回调函数只有两个参数：当前遍历的元素和当前元素的索引。</p><p>希望这些信息可以帮助您更好地理解 <code>forEach</code> 和 <code>map</code> 方法之间的区别。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>maple-hand</title><link href="https://neotw.netlify.app/#maple-hand"></link><link href="https://neotw.netlify.app/static/maple-hand.html" rel="alternative" type="text/html"></link><id>027ea563-1e2a-e6cf-d184-c314fcc15dae</id><updated>2023-04-18T10:08:25</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>maple hand</p></div></content><author><name>oeyoews</name></author></entry><entry><title>margin-order</title><link href="https://neotw.netlify.app/#margin-order"></link><link href="https://neotw.netlify.app/static/margin-order.html" rel="alternative" type="text/html"></link><id>92b8eb3a-ee84-e2ae-265b-09aae86d6866</id><updated>2023-03-20T22:24:27</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>top right bottom left(clock)</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>markdown-resume</title><link href="https://neotw.netlify.app/#markdown-resume"></link><link href="https://neotw.netlify.app/static/markdown-resume.html" rel="alternative" type="text/html"></link><id>c8069c2c-e807-797b-a0fd-0c16ed3adb5c</id><updated>2023-03-30T13:40:28</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li><a class="tc-tiddlylink-external" href="http://cv.ftqq.com/?fr=github" rel="noopener noreferrer" target="_blank">http://cv.ftqq.com/?fr=github</a>#</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>markdown-test</title><link href="https://neotw.netlify.app/#markdown-test"></link><link href="https://neotw.netlify.app/static/markdown-test.html" rel="alternative" type="text/html"></link><id>13a076a3-1f1c-7d8e-6144-3b028dbbba0b</id><updated>2023-06-04T19:13:43</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+console.log(newArr);</code></pre><p>在使用这两种方法时，需要注意的是，回调函数的参数不同。<code>forEach</code> 方法的回调函数有三个参数：当前遍历的元素、当前元素的索引和整个数组。而 <code>map</code> 方法的回调函数只有两个参数：当前遍历的元素和当前元素的索引。</p><p>希望这些信息可以帮助您更好地理解 <code>forEach</code> 和 <code>map</code> 方法之间的区别。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>maple-hand</title><link href="https://neotw.netlify.app/#maple-hand"></link><link href="https://neotw.netlify.app/static/maple-hand.html" rel="alternative" type="text/html"></link><id>027ea563-1e2a-e6cf-d184-c314fcc15dae</id><updated>2023-04-18T10:08:25</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>maple hand</p></div></content><author><name>oeyoews</name></author></entry><entry><title>margin-order</title><link href="https://neotw.netlify.app/#margin-order"></link><link href="https://neotw.netlify.app/static/margin-order.html" rel="alternative" type="text/html"></link><id>92b8eb3a-ee84-e2ae-265b-09aae86d6866</id><updated>2023-03-20T22:24:27</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>top right bottom left(clock)</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>markdown-examples</title><link href="https://neotw.netlify.app/#markdown-examples"></link><link href="https://neotw.netlify.app/static/markdown-examples.html" rel="alternative" type="text/html"></link><id>ea3dd8d5-e410-f5d1-cd24-2786e05a9fd7</id><updated>2023-06-04T20:26:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <p><div class="toc" id="toc">
         <h3>🌴 Table of Contents</h3>
     <ul class="toc-level">
@@ -3473,43 +3473,43 @@ console.log(newArr);</code></pre><p>在使用这两种方法时，需要注意�
 
     <h1>
       <a href="##h-1" id="#h-1">
-        1
+       ✨ 1
       </a>
   标题</h1>
 
     <h2>
       <a href="##h-1.1" id="#h-1.1">
-        1.1
+       ✨ 1.1
       </a>
   二级标题</h2>
 
     <h3>
       <a href="##h-1.1.1" id="#h-1.1.1">
-        1.1.1
+       ✨ 1.1.1
       </a>
   三级标题</h3>
 
     <h4>
       <a href="##h-1.1.1.1" id="#h-1.1.1.1">
-        1.1.1.1
+       ✨ 1.1.1.1
       </a>
   四级标题</h4>
 
     <h5>
       <a href="##h-1.1.1.1.1" id="#h-1.1.1.1.1">
-        1.1.1.1.1
+       ✨ 1.1.1.1.1
       </a>
   五级标题</h5>
 
     <h6>
       <a href="##h-1.1.1.1.1.1" id="#h-1.1.1.1.1.1">
-        1.1.1.1.1.1
+       ✨ 1.1.1.1.1.1
       </a>
   六级标题</h6>
 
     <h1>
       <a href="##h-2" id="#h-2">
-        2
+       ✨ 2
       </a>
   段落</h1>
 <p>这是一段普通的文本。
@@ -3525,13 +3525,13 @@ console.log(newArr);</code></pre><p>在使用这两种方法时，需要注意�
 
     <h1>
       <a href="##h-3" id="#h-3">
-        3
+       ✨ 3
       </a>
   列表</h1>
 
     <h2>
       <a href="##h-3.1" id="#h-3.1">
-        3.1
+       ✨ 3.1
       </a>
   无序列表</h2>
 <ul>
@@ -3542,7 +3542,7 @@ console.log(newArr);</code></pre><p>在使用这两种方法时，需要注意�
 
     <h2>
       <a href="##h-3.2" id="#h-3.2">
-        3.2
+       ✨ 3.2
       </a>
   有序列表</h2>
 <ol>
@@ -3553,7 +3553,7 @@ console.log(newArr);</code></pre><p>在使用这两种方法时，需要注意�
 
     <h1>
       <a href="##h-4" id="#h-4">
-        4
+       ✨ 4
       </a>
   引用</h1>
 <blockquote>
@@ -3563,13 +3563,13 @@ console.log(newArr);</code></pre><p>在使用这两种方法时，需要注意�
 
     <h1>
       <a href="##h-5" id="#h-5">
-        5
+       ✨ 5
       </a>
   代码</h1>
 
     <h2>
       <a href="##h-5.1" id="#h-5.1">
-        5.1
+       ✨ 5.1
       </a>
   行内代码</h2>
 <p>这是一段代码：<code class="_codified_">print("Hello world!")</code>
@@ -3577,7 +3577,7 @@ console.log(newArr);</code></pre><p>在使用这两种方法时，需要注意�
 
     <h2>
       <a href="##h-5.2" id="#h-5.2">
-        5.2
+       ✨ 5.2
       </a>
   代码块</h2>
 <pre class="hljs"><code class="python hljs"><span class="hljs-keyword">def</span> <span class="hljs-title function_">hello</span>():
@@ -3589,7 +3589,7 @@ hello()
 
     <h2>
       <a href="##h-5.3" id="#h-5.3">
-        5.3
+       ✨ 5.3
       </a>
   Markdown Task</h2>
 <ul class="task-list">
@@ -3599,7 +3599,7 @@ hello()
 
     <h2>
       <a href="##h-5.4" id="#h-5.4">
-        5.4
+       ✨ 5.4
       </a>
   emoji</h2>
 <ul>
@@ -3610,7 +3610,7 @@ hello()
 
     <h2>
       <a href="##h-5.5" id="#h-5.5">
-        5.5
+       ✨ 5.5
       </a>
   better render</h2>
 <ul>
@@ -3624,7 +3624,7 @@ hello()
 
     <h2>
       <a href="##h-5.6" id="#h-5.6">
-        5.6
+       ✨ 5.6
       </a>
   fancybox macro image</h2>
 <center>
@@ -3633,7 +3633,7 @@ hello()
 
     <h2>
       <a href="##h-5.7" id="#h-5.7">
-        5.7
+       ✨ 5.7
       </a>
   image</h2>
 <p><img alt="http image" class=" tc-image-loading" src="https://neotw.oeyoewl.top/favicon.ico"></img>
@@ -3643,7 +3643,7 @@ hello()
 
     <h2>
       <a href="##h-5.8" id="#h-5.8">
-        5.8
+       ✨ 5.8
       </a>
   link</h2>
 <p><a class="tc-tiddlylink tc-tiddlylink-missing _codified_" href="#Index" title="optional tooltip">link text</a>
@@ -3651,7 +3651,7 @@ hello()
 
     <h2>
       <a href="##h-5.9" id="#h-5.9">
-        5.9
+       ✨ 5.9
       </a>
   underline</h2>
 <p><ins>inserted text</ins>
@@ -3659,7 +3659,7 @@ hello()
 
     <h2>
       <a href="##h-5.10" id="#h-5.10">
-        5.10
+       ✨ 5.10
       </a>
   mark</h2>
 <p><mark>dmeo</mark>
@@ -3669,7 +3669,7 @@ hello()
 
     <h2>
       <a href="##h-5.11" id="#h-5.11">
-        5.11
+       ✨ 5.11
       </a>
   table</h2>
 <table>
@@ -3691,7 +3691,7 @@ hello()
 
     <h2>
       <a href="##h-5.12" id="#h-5.12">
-        5.12
+       ✨ 5.12
       </a>
   footnote</h2>
 <p>Here’s a simple footnote,<a class="footnote-ref" href="##fn1-0" id="#fnref1-0">[1]</a> and here’s a longer one.<a class="footnote-ref" href="##fn2-0" id="#fnref2-0">[2]</a>
@@ -3699,7 +3699,7 @@ hello()
 
     <h2>
       <a href="##h-5.13" id="#h-5.13">
-        5.13
+       ✨ 5.13
       </a>
   Katex</h2>
 <p><span><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>KaTeX</mtext></mrow><annotation encoding="application/x-tex">\KaTeX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8988em;vertical-align:-0.2155em;"></span><span class="mord text"><span class="mord textrm">K</span><span class="mspace" style="margin-right:-0.17em;"></span><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6833em;"><span style="top:-2.905em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord"><span class="mord textrm mtight sizing reset-size6 size3">A</span></span></span></span></span></span><span class="mspace" style="margin-right:-0.15em;"></span><span class="mord text"><span class="mord textrm">T</span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.4678em;"><span style="top:-2.7845em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord textrm">E</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2155em;"><span></span></span></span></span><span class="mspace" style="margin-right:-0.125em;"></span><span class="mord textrm">X</span></span></span></span></span></span></span></span></p>
@@ -3731,7 +3731,7 @@ M1001 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 </li>
 </ol>
 </section>
-</div></div></content><author><name>oeyoews</name></author></entry><entry><title>mdn-search</title><link href="https://neotw.netlify.app/#mdn-search"></link><link href="https://neotw.netlify.app/static/mdn-search.html" rel="alternative" type="text/html"></link><id>ca98d367-bafa-9eca-7127-54f030961751</id><updated>2023-03-31T21:17:45</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://developer.mozilla.org/zh-CN/" rel="noopener noreferrer" target="_blank">https://developer.mozilla.org/zh-CN/</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>mdx</title><link href="https://neotw.netlify.app/#mdx"></link><link href="https://neotw.netlify.app/static/mdx.html" rel="alternative" type="text/html"></link><id>93c3b60a-8b8c-46fe-78ba-27927b2280e7</id><updated>2023-03-24T22:00:08</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>use mdx</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>memos-docker-compose</title><link href="https://neotw.netlify.app/#memos-docker-compose"></link><link href="https://neotw.netlify.app/static/memos-docker-compose.html" rel="alternative" type="text/html"></link><id>66cc4474-77be-e7d2-0c7d-444665ceec23</id><updated>2023-03-31T21:18:33</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre class="hljs"><code class="bash hljs">docker-compose up -d  <span class="hljs-comment">#docker-compose.yml`</span></code></pre><pre class="hljs"><code class="yml hljs"><span class="hljs-attr">version:</span> <span class="hljs-string">&quot;3.0&quot;</span>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>markdown-resume</title><link href="https://neotw.netlify.app/#markdown-resume"></link><link href="https://neotw.netlify.app/static/markdown-resume.html" rel="alternative" type="text/html"></link><id>c8069c2c-e807-797b-a0fd-0c16ed3adb5c</id><updated>2023-03-30T13:40:28</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li><a class="tc-tiddlylink-external" href="http://cv.ftqq.com/?fr=github" rel="noopener noreferrer" target="_blank">http://cv.ftqq.com/?fr=github</a>#</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>mdn-search</title><link href="https://neotw.netlify.app/#mdn-search"></link><link href="https://neotw.netlify.app/static/mdn-search.html" rel="alternative" type="text/html"></link><id>ca98d367-bafa-9eca-7127-54f030961751</id><updated>2023-03-31T21:17:45</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://developer.mozilla.org/zh-CN/" rel="noopener noreferrer" target="_blank">https://developer.mozilla.org/zh-CN/</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>mdx</title><link href="https://neotw.netlify.app/#mdx"></link><link href="https://neotw.netlify.app/static/mdx.html" rel="alternative" type="text/html"></link><id>93c3b60a-8b8c-46fe-78ba-27927b2280e7</id><updated>2023-03-24T22:00:08</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>use mdx</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>memos-docker-compose</title><link href="https://neotw.netlify.app/#memos-docker-compose"></link><link href="https://neotw.netlify.app/static/memos-docker-compose.html" rel="alternative" type="text/html"></link><id>66cc4474-77be-e7d2-0c7d-444665ceec23</id><updated>2023-03-31T21:18:33</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre class="hljs"><code class="bash hljs">docker-compose up -d  <span class="hljs-comment">#docker-compose.yml`</span></code></pre><pre class="hljs"><code class="yml hljs"><span class="hljs-attr">version:</span> <span class="hljs-string">&quot;3.0&quot;</span>
 <span class="hljs-attr">services:</span>
   <span class="hljs-attr">memos:</span>
     <span class="hljs-attr">image:</span> <span class="hljs-string">neosmemo/memos:latest</span>
@@ -3821,7 +3821,7 @@ M1001 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 
     <h1>
       <a href="##h-1" id="#h-1">
-        1
+       ✨ 1
       </a>
   more information, plese use tldr(rust) adb</h1>
 </div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-aria2c</title><link href="https://neotw.netlify.app/#neotw-aria2c"></link><link href="https://neotw.netlify.app/static/neotw-aria2c.html" rel="alternative" type="text/html"></link><id>cc2198ec-6420-26c9-449e-4ea807dff9b7</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
@@ -3840,17 +3840,17 @@ M1001 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 &lt;/ul&gt;
 &lt;/div&gt;</url></dirname></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-badges</title><link href="https://neotw.netlify.app/#neotw-badges"></link><link href="https://neotw.netlify.app/static/neotw-badges.html" rel="alternative" type="text/html"></link><id>f934e3aa-d36d-34bb-609b-922693d9b993</id><updated>2023-06-01T21:41:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:hidden">
 <img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-644-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-46-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-70-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-72 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-4 minutes ago-green?style=social"></img>  
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-command</title><link href="https://neotw.netlify.app/#neotw-command"></link><link href="https://neotw.netlify.app/static/neotw-command.html" rel="alternative" type="text/html"></link><id>188385e0-6b3a-4916-a54a-061d9d29e18f</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
-        0.1
+       ✨ 0.1
       </a>
   cp</h2>
 <pre class="hljs"><code class="shell hljs">eg: dir: 1/2/3
 cp -r 1/ 2 like copy 1/*
 </code></pre></p><p><h2>
       <a href="##h-0.2" id="#h-0.2">
-        0.2
+       ✨ 0.2
       </a>
   crontab</h2>
 <pre class="hljs"><code class="shell hljs">- sudo su
@@ -3858,7 +3858,7 @@ cp -r 1/ 2 like copy 1/*
 </code></pre>
 </p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-docker</title><link href="https://neotw.netlify.app/#neotw-docker"></link><link href="https://neotw.netlify.app/static/neotw-docker.html" rel="alternative" type="text/html"></link><id>445e81cb-7a6f-c67b-d9e5-8f795c8112e7</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
-        0.1
+       ✨ 0.1
       </a>
   groupadd for docker</h2>
 <ul>
@@ -3954,7 +3954,7 @@ cp -r 1/ 2 like copy 1/*
 
     <h2>
       <a href="##h-0.2" id="#h-0.2">
-        0.2
+       ✨ 0.2
       </a>
   docker</h2>
 <p>docker start (ID)     # start docker’s software
@@ -3977,7 +3977,7 @@ docker rename old_name new_name    # 容器重新命名
 
     <h1>
       <a href="##h-1" id="#h-1">
-        1
+       ✨ 1
       </a>
   name 容器名称   -p 端口进行映射，将本地的8080端口映射为容器内部的80端口</h1>
 <p>-d 设置容器在后台一直运行
@@ -3989,14 +3989,14 @@ docker rename old_name new_name    # 容器重新命名
 </ul>
 &lt;/div&gt;</ALIDAS></ID></p></li></ID></p></li></ID></p></li></ID></p></li></ID></p></li></ID></p></li></ID></p></li></ul></p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-gettingstarted</title><link href="https://neotw.netlify.app/#neotw-gettingstarted"></link><link href="https://neotw.netlify.app/static/neotw-gettingstarted.html" rel="alternative" type="text/html"></link><id>c57ae495-bd9a-6e00-25d8-f13f23fda7e1</id><updated>2023-03-01T13:54:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>GettingStarted</p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-git</title><link href="https://neotw.netlify.app/#neotw-git"></link><link href="https://neotw.netlify.app/static/neotw-git.html" rel="alternative" type="text/html"></link><id>3e952baf-6028-6657-583b-eb758a0534f2</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h3>
       <a href="##h-0.0.1" id="#h-0.0.1">
-        0.0.1
+       ✨ 0.0.1
       </a>
   Reverd</h3>
 <ul>
 <li>git revert id    # 会有冲突出现  ？</li>
 </ul></p><p><h3>
       <a href="##h-0.0.2" id="#h-0.0.2">
-        0.0.2
+       ✨ 0.0.2
       </a>
   Log</h3>
 <ul>
@@ -4006,7 +4006,7 @@ docker rename old_name new_name    # 容器重新命名
 <li>git log --all -n 4 --graph  --oneline     # 结合  部分的参数</li>
 </ul></p><p><h3>
       <a href="##h-0.0.3" id="#h-0.0.3">
-        0.0.3
+       ✨ 0.0.3
       </a>
   Misc</h3>
 <ul>
@@ -4014,35 +4014,35 @@ docker rename old_name new_name    # 容器重新命名
 <li>git ls-remote  //  detail</li>
 </ul></p><p><h3>
       <a href="##h-0.0.4" id="#h-0.0.4">
-        0.0.4
+       ✨ 0.0.4
       </a>
   Status</h3>
 <ul>
 <li>git show -sb</li>
 </ul></p><p><h3>
       <a href="##h-0.0.5" id="#h-0.0.5">
-        0.0.5
+       ✨ 0.0.5
       </a>
   Count</h3>
 <ul>
 <li>git rev-list --count branch_name</li>
 </ul></p><p><h3>
       <a href="##h-0.0.6" id="#h-0.0.6">
-        0.0.6
+       ✨ 0.0.6
       </a>
   Gc</h3>
 <ul>
 <li>git gc</li>
 </ul></p><p><h3>
       <a href="##h-0.0.7" id="#h-0.0.7">
-        0.0.7
+       ✨ 0.0.7
       </a>
   Show</h3>
 <ul>
 <li>git show main:readme.md</li>
 </ul></p><p><h3>
       <a href="##h-0.0.8" id="#h-0.0.8">
-        0.0.8
+       ✨ 0.0.8
       </a>
   Tag</h3>
 <ul>
@@ -4059,7 +4059,7 @@ docker rename old_name new_name    # 容器重新命名
 <li>git push --tags</li>
 </ul></p><p><h3>
       <a href="##h-0.0.9" id="#h-0.0.9">
-        0.0.9
+       ✨ 0.0.9
       </a>
   Reset</h3>
 <ul>
@@ -4070,7 +4070,7 @@ docker rename old_name new_name    # 容器重新命名
 
     <h3>
       <a href="##h-0.0.10" id="#h-0.0.10">
-        0.0.10
+       ✨ 0.0.10
       </a>
   Diff</h3>
 <ul>
@@ -4080,7 +4080,7 @@ docker rename old_name new_name    # 容器重新命名
 
     <h3>
       <a href="##h-0.0.11" id="#h-0.0.11">
-        0.0.11
+       ✨ 0.0.11
       </a>
   Gitignore</h3>
 <ul>
@@ -4092,7 +4092,7 @@ docker rename old_name new_name    # 容器重新命名
 
     <h3>
       <a href="##h-0.0.12" id="#h-0.0.12">
-        0.0.12
+       ✨ 0.0.12
       </a>
   Remote</h3>
 <ul>
@@ -4103,7 +4103,7 @@ docker rename old_name new_name    # 容器重新命名
 
     <h3>
       <a href="##h-0.0.13" id="#h-0.0.13">
-        0.0.13
+       ✨ 0.0.13
       </a>
   Branch</h3>
 <ul>
@@ -4121,7 +4121,7 @@ docker rename old_name new_name    # 容器重新命名
 
     <h3>
       <a href="##h-0.0.14" id="#h-0.0.14">
-        0.0.14
+       ✨ 0.0.14
       </a>
   Checkout</h3>
 <ul>
@@ -4136,7 +4136,7 @@ docker rename old_name new_name    # 容器重新命名
 
     <h3>
       <a href="##h-0.0.15" id="#h-0.0.15">
-        0.0.15
+       ✨ 0.0.15
       </a>
   Push</h3>
 <ul>
@@ -4158,7 +4158,7 @@ docker rename old_name new_name    # 容器重新命名
 
     <h3>
       <a href="##h-0.0.16" id="#h-0.0.16">
-        0.0.16
+       ✨ 0.0.16
       </a>
   Commit</h3>
 <ul>
@@ -4167,7 +4167,7 @@ docker rename old_name new_name    # 容器重新命名
 
     <h3>
       <a href="##h-0.0.17" id="#h-0.0.17">
-        0.0.17
+       ✨ 0.0.17
       </a>
   Merge</h3>
 <ul>
@@ -4180,7 +4180,7 @@ docker rename old_name new_name    # 容器重新命名
 
     <h3>
       <a href="##h-0.0.18" id="#h-0.0.18">
-        0.0.18
+       ✨ 0.0.18
       </a>
   Cache</h3>
 <ul>
@@ -4190,7 +4190,7 @@ docker rename old_name new_name    # 容器重新命名
 
     <h3>
       <a href="##h-0.0.19" id="#h-0.0.19">
-        0.0.19
+       ✨ 0.0.19
       </a>
   Mv</h3>
 <ul>
@@ -4199,7 +4199,7 @@ docker rename old_name new_name    # 容器重新命名
 
     <h3>
       <a href="##h-0.0.20" id="#h-0.0.20">
-        0.0.20
+       ✨ 0.0.20
       </a>
   Config</h3>
 <ul>
@@ -4213,7 +4213,7 @@ docker rename old_name new_name    # 容器重新命名
 
     <h3>
       <a href="##h-0.0.21" id="#h-0.0.21">
-        0.0.21
+       ✨ 0.0.21
       </a>
   Ssh</h3>
 <ul>
@@ -4224,7 +4224,7 @@ docker rename old_name new_name    # 容器重新命名
 
     <h3>
       <a href="##h-0.0.22" id="#h-0.0.22">
-        0.0.22
+       ✨ 0.0.22
       </a>
   Multi_repository_address</h3>
 <ul>
@@ -4233,7 +4233,7 @@ docker rename old_name new_name    # 容器重新命名
 
     <h3>
       <a href="##h-0.0.23" id="#h-0.0.23">
-        0.0.23
+       ✨ 0.0.23
       </a>
   Gitlab</h3>
 <ul>
@@ -4242,7 +4242,7 @@ docker rename old_name new_name    # 容器重新命名
 
     <h3>
       <a href="##h-0.0.24" id="#h-0.0.24">
-        0.0.24
+       ✨ 0.0.24
       </a>
   Enhance_speed</h3>
 <ul>
@@ -4251,7 +4251,7 @@ docker rename old_name new_name    # 容器重新命名
 
     <h3>
       <a href="##h-0.0.25" id="#h-0.0.25">
-        0.0.25
+       ✨ 0.0.25
       </a>
   GitReset</h3>
 <p><code class="_codified_">git reset --hard id  </code>
@@ -4265,7 +4265,7 @@ hard 表示将工作区 暂存区 版本库记录 恢复到某一定版本，com
 
     <h3>
       <a href="##h-0.0.26" id="#h-0.0.26">
-        0.0.26
+       ✨ 0.0.26
       </a>
   Relative_web</h3>
 <p><a class="tc-tiddlylink-external _codified_" href="https://gitee.com/help/articles/4232#article-header0" rel="noopener noreferrer" target="_blank">thin_large_repository</a>
@@ -4275,7 +4275,7 @@ hard 表示将工作区 暂存区 版本库记录 恢复到某一定版本，com
 
     <h3>
       <a href="##h-0.0.27" id="#h-0.0.27">
-        0.0.27
+       ✨ 0.0.27
       </a>
   git_submoudle(子模块)</h3>
 <ul>
@@ -4289,7 +4289,7 @@ hard 表示将工作区 暂存区 版本库记录 恢复到某一定版本，com
 
     <h3>
       <a href="##h-0.0.28" id="#h-0.0.28">
-        0.0.28
+       ✨ 0.0.28
       </a>
   git pull</h3>
 <ul>
@@ -4298,7 +4298,7 @@ hard 表示将工作区 暂存区 版本库记录 恢复到某一定版本，com
 
     <h3>
       <a href="##h-0.0.29" id="#h-0.0.29">
-        0.0.29
+       ✨ 0.0.29
       </a>
   commit</h3>
 <ul>
@@ -4318,7 +4318,7 @@ hard 表示将工作区 暂存区 版本库记录 恢复到某一定版本，com
 
     <h2>
       <a href="##h-0.1" id="#h-0.1">
-        0.1
+       ✨ 0.1
       </a>
   Note</h2>
 <ul>
@@ -4328,7 +4328,7 @@ next branch, unless you commit it’s job</li>
 </ul>
 &lt;/div&gt;</branch></li></ul></filename></li></ul></p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-go</title><link href="https://neotw.netlify.app/#neotw-go"></link><link href="https://neotw.netlify.app/static/neotw-go.html" rel="alternative" type="text/html"></link><id>bb81689f-383d-fb73-a038-30f994f372a4</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
-        0.1
+       ✨ 0.1
       </a>
   go</h2>
 <ul>
@@ -4339,7 +4339,7 @@ next branch, unless you commit it’s job</li>
 <li>go env -u GOPROXY</li>
 </ul></p><p><h2>
       <a href="##h-0.2" id="#h-0.2">
-        0.2
+       ✨ 0.2
       </a>
   Learn go</h2>
 <ul>
@@ -4352,7 +4352,7 @@ next branch, unless you commit it’s job</li>
 <li>go mod init hello(root directory name)</li>
 </ul></p><p><h2>
       <a href="##h-0.3" id="#h-0.3">
-        0.3
+       ✨ 0.3
       </a>
   Path</h2>
 <ul>
@@ -4400,18 +4400,18 @@ q w
 </p>
 </div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-guides</title><link href="https://neotw.netlify.app/#neotw-guides"></link><link href="https://neotw.netlify.app/static/neotw-guides.html" rel="alternative" type="text/html"></link><id>8b65c380-9b27-c19c-2922-2dc3273c17e1</id><updated>2023-03-02T20:00:38</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><center><h2 class="">Welcom to neotw</h2></center></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-Hello-World</title><link href="https://neotw.netlify.app/#neotw-Hello-World"></link><link href="https://neotw.netlify.app/static/neotw-Hello-World.html" rel="alternative" type="text/html"></link><id>175c09ca-2b20-62f4-6ca8-1310ff4f8bf6</id><updated>2023-05-14T11:32:27</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
-        0.1
+       ✨ 0.1
       </a>
   Hello TiddlyWiki</h2>
 </p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-keymaps</title><link href="https://neotw.netlify.app/#neotw-keymaps"></link><link href="https://neotw.netlify.app/static/neotw-keymaps.html" rel="alternative" type="text/html"></link><id>cdbc2621-d929-352b-6f71-4aa243333b72</id><updated>2023-03-01T13:57:14</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-lua</title><link href="https://neotw.netlify.app/#neotw-lua"></link><link href="https://neotw.netlify.app/static/neotw-lua.html" rel="alternative" type="text/html"></link><id>5fc9b516-ecc3-33dc-8f11-8e995d8e8abf</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
-        0.1
+       ✨ 0.1
       </a>
   lua</h2>
 <p><a class="tc-tiddlylink-external _codified_" href="https://www.2n.pl/blog/how-to-write-neovim-plugins-in-lua" rel="noopener noreferrer" target="_blank">make_lua_plugin</a>
 </p></p><p><h3>
       <a href="##h-0.1.1" id="#h-0.1.1">
-        0.1.1
+       ✨ 0.1.1
       </a>
   NOTE:</h3>
 <ul>
@@ -4425,7 +4425,7 @@ q w
 </li>
 </ul></p><p><h3>
       <a href="##h-0.1.2" id="#h-0.1.2">
-        0.1.2
+       ✨ 0.1.2
       </a>
   logical operator</h3>
 <ul>
@@ -4443,7 +4443,7 @@ q w
 </li>
 </ul></p><p><h3>
       <a href="##h-0.1.3" id="#h-0.1.3">
-        0.1.3
+       ✨ 0.1.3
       </a>
   Type</h3>
 <ul>
@@ -4453,7 +4453,7 @@ q w
 </ul>
 </p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-markdown</title><link href="https://neotw.netlify.app/#neotw-markdown"></link><link href="https://neotw.netlify.app/static/neotw-markdown.html" rel="alternative" type="text/html"></link><id>bf312cfb-ebce-331c-476a-9b694bc688a7</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
-        0.1
+       ✨ 0.1
       </a>
   markdown</h2>
 <pre class="hljs"><code class="shell hljs">
@@ -4479,7 +4479,7 @@ This is <a class="tc-tiddlylink-external _codified_" href="http://example.com/" 
 &lt;/ul&gt;
 &lt;/div&gt;</mark></mark></small></small></big></big></p></li></ul></p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-music</title><link href="https://neotw.netlify.app/#neotw-music"></link><link href="https://neotw.netlify.app/static/neotw-music.html" rel="alternative" type="text/html"></link><id>ae84346e-6d28-89cd-066e-1d60da2be39f</id><updated>2023-03-27T23:22:37</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>Undefined widget 'meting'</p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-nginx</title><link href="https://neotw.netlify.app/#neotw-nginx"></link><link href="https://neotw.netlify.app/static/neotw-nginx.html" rel="alternative" type="text/html"></link><id>146cbde5-63d1-26f3-dc13-f294c45cdf01</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
-        0.1
+       ✨ 0.1
       </a>
   nginx</h2>
 <ul>
@@ -4489,7 +4489,7 @@ This is <a class="tc-tiddlylink-external _codified_" href="http://example.com/" 
 </ul>
 </p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-npm&amp;yarn</title><link href="https://neotw.netlify.app/#neotw-npm%26yarn"></link><link href="https://neotw.netlify.app/static/neotw-npm%2526yarn.html" rel="alternative" type="text/html"></link><id>79145287-6943-8957-5288-8b0ebca74473</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
-        0.1
+       ✨ 0.1
       </a>
   Change source</h2>
 <p><code class="_codified_"> export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node  # 对nvm换源</code>
@@ -4498,7 +4498,7 @@ This is <a class="tc-tiddlylink-external _codified_" href="http://example.com/" 
 <li>npm config set registry https://registry.npm.taobao.org                 # npm换源</li>
 </ul></p><p><h2>
       <a href="##h-0.2" id="#h-0.2">
-        0.2
+       ✨ 0.2
       </a>
   Nvm</h2>
 <p>nvm install latest
@@ -4507,7 +4507,7 @@ nvm use default
 npm init # 用来生成一个新的package.json 文件
 </p></p><p><h2>
       <a href="##h-0.3" id="#h-0.3">
-        0.3
+       ✨ 0.3
       </a>
   Npm</h2>
 <p>npm  uninstall xxx -g # 卸载全局的模块软件
@@ -4538,7 +4538,7 @@ npm -g outdated   # 查看已经过时的包
 npm install -g npm-check  # npm-check -u -g  检查依赖关系
 </p></p><p><h2>
       <a href="##h-0.4" id="#h-0.4">
-        0.4
+       ✨ 0.4
       </a>
   Yarn</h2>
 <p>yarn install #  等价yarn
@@ -4550,42 +4550,42 @@ yarn upgrade-interactive --latest    # 忽略包json ，升级最新版本
 </p>
 </p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-plugins</title><link href="https://neotw.netlify.app/#neotw-plugins"></link><link href="https://neotw.netlify.app/static/neotw-plugins.html" rel="alternative" type="text/html"></link><id>ed441761-6c6e-6b37-db79-1349a4096086</id><updated>2023-01-18T10:58:50</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-question</title><link href="https://neotw.netlify.app/#neotw-question"></link><link href="https://neotw.netlify.app/static/neotw-question.html" rel="alternative" type="text/html"></link><id>69607510-a2c0-16c6-cf8c-4f7d52518b2c</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
-        0.1
+       ✨ 0.1
       </a>
   libreoffice</h2>
 <ul>
 <li>page number: right click, to select style and setup first page options</li>
 </ul></p><p><h2>
       <a href="##h-0.2" id="#h-0.2">
-        0.2
+       ✨ 0.2
       </a>
   Gnome workspace</h2>
 <ul>
 <li>up and down in dash dock to switch workspace</li>
 </ul></p><p><h2>
       <a href="##h-0.3" id="#h-0.3">
-        0.3
+       ✨ 0.3
       </a>
   Github</h2>
 <ul class="task-list">
 <li class="task-list-item"><input disabled="true" id="cbx_0" type="checkbox"></input><label for="cbx_0"> github project’s item archived, how to check out?</label></li>
 </ul></p><p><h2>
       <a href="##h-0.4" id="#h-0.4">
-        0.4
+       ✨ 0.4
       </a>
   latex</h2>
 <ul class="task-list">
 <li class="task-list-item"><input disabled="true" id="cbx_1" type="checkbox"></input><label for="cbx_1"> how to type arrrange number?</label></li>
 </ul></p><p><h2>
       <a href="##h-0.5" id="#h-0.5">
-        0.5
+       ✨ 0.5
       </a>
   wiki</h2>
 <ul class="task-list">
 <li class="task-list-item"><input disabled="true" id="cbx_2" type="checkbox"></input><label for="cbx_2"> learn short tiddlywiki</label></li>
 </ul></p><p><h2>
       <a href="##h-0.6" id="#h-0.6">
-        0.6
+       ✨ 0.6
       </a>
   tiddlywiki</h2>
   
@@ -4595,31 +4595,31 @@ yarn upgrade-interactive --latest    # 忽略包json ，升级最新版本
 <li>note: don’t use tiddly plugin, it’s hard to uninstall plugin, and more troubles, less is simple, is more</li>
 </ul></p><p><h2>
       <a href="##h-0.7" id="#h-0.7">
-        0.7
+       ✨ 0.7
       </a>
   github</h2>
 <pre><code>- notes: git checkout -b dev [commitid]
 </code></pre></p><p><h2>
       <a href="##h-0.8" id="#h-0.8">
-        0.8
+       ✨ 0.8
       </a>
   debug</h2>
 <pre><code>- when have browser cache, don't use to clean the cache, just open private mode to debug it
 </code></pre></p><p><h2>
       <a href="##h-0.9" id="#h-0.9">
-        0.9
+       ✨ 0.9
       </a>
   gnome another clipboard</h2>
 <pre><code>- clipboard indicator
 </code></pre></p><p><h2>
       <a href="##h-0.10" id="#h-0.10">
-        0.10
+       ✨ 0.10
       </a>
   soft</h2>
 <pre><code>- notable
 </code></pre></p><p><h2>
       <a href="##h-0.11" id="#h-0.11">
-        0.11
+       ✨ 0.11
       </a>
   note</h2>
 <pre><code>- roam research
@@ -4629,7 +4629,7 @@ yarn upgrade-interactive --latest    # 忽略包json ，升级最新版本
 - Zettelkasten
 </code></pre></p><p><h2>
       <a href="##h-0.12" id="#h-0.12">
-        0.12
+       ✨ 0.12
       </a>
   soft</h2>
 <ul>
@@ -4651,7 +4651,7 @@ papirus-folders -C breeze --theme Papirus-Dark
 </p>
 </p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-ranger</title><link href="https://neotw.netlify.app/#neotw-ranger"></link><link href="https://neotw.netlify.app/static/neotw-ranger.html" rel="alternative" type="text/html"></link><id>74f55e7f-4477-ca1a-526e-943a00418243</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
-        0.1
+       ✨ 0.1
       </a>
   Ranger</h2>
 <p>r # choose open file’s tool.
@@ -4673,7 +4673,7 @@ papirus-folders -C breeze --theme Papirus-Dark
 <p>tsz -i file_name.
 </p></p><p><h2>
       <a href="##h-0.2" id="#h-0.2">
-        0.2
+       ✨ 0.2
       </a>
   Rename</h2>
 <ul>
@@ -4771,7 +4771,7 @@ echo “default_linemode devicons” &gt;&gt; $HOME/.config/ranger/rc.conf   # a
 </center>
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-shellscripts</title><link href="https://neotw.netlify.app/#neotw-shellscripts"></link><link href="https://neotw.netlify.app/static/neotw-shellscripts.html" rel="alternative" type="text/html"></link><id>69bde0c4-f726-a36b-094d-5c53c426d511</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
-        0.1
+       ✨ 0.1
       </a>
   some shell brackets</h2>
 <p>@shell
@@ -4791,7 +4791,7 @@ echo “default_linemode devicons” &gt;&gt; $HOME/.config/ranger/rc.conf   # a
 </p>
 </p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-soft</title><link href="https://neotw.netlify.app/#neotw-soft"></link><link href="https://neotw.netlify.app/static/neotw-soft.html" rel="alternative" type="text/html"></link><id>f9618360-957f-620c-cba3-b2882c2347e6</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
-        0.1
+       ✨ 0.1
       </a>
   Gnome</h2>
 <ul>
@@ -4835,7 +4835,7 @@ echo “default_linemode devicons” &gt;&gt; $HOME/.config/ranger/rc.conf   # a
 </li>
 </ul></p><p><h2>
       <a href="##h-0.2" id="#h-0.2">
-        0.2
+       ✨ 0.2
       </a>
   Office</h2>
 <ul>
@@ -4883,7 +4883,7 @@ echo “default_linemode devicons” &gt;&gt; $HOME/.config/ranger/rc.conf   # a
 </li>
 </ul></p><p><h2>
       <a href="##h-0.3" id="#h-0.3">
-        0.3
+       ✨ 0.3
       </a>
   bootiso</h2>
 <ul>
@@ -4891,7 +4891,7 @@ echo “default_linemode devicons” &gt;&gt; $HOME/.config/ranger/rc.conf   # a
 <li>etcher <a class="tc-tiddlylink-external _codified_" href="https://www.balena.io/etcher/" rel="noopener noreferrer" target="_blank">etcher-link</a></li>
 </ul></p><p><h2>
       <a href="##h-0.4" id="#h-0.4">
-        0.4
+       ✨ 0.4
       </a>
   IME</h2>
 <ul>
@@ -4913,7 +4913,7 @@ echo “default_linemode devicons” &gt;&gt; $HOME/.config/ranger/rc.conf   # a
 </li>
 </ul></p><p><h2>
       <a href="##h-0.5" id="#h-0.5">
-        0.5
+       ✨ 0.5
       </a>
   QQ</h2>
 <ul>
@@ -4952,7 +4952,7 @@ echo “default_linemode devicons” &gt;&gt; $HOME/.config/ranger/rc.conf   # a
 </li>
 </ul></p><p><h2>
       <a href="##h-0.6" id="#h-0.6">
-        0.6
+       ✨ 0.6
       </a>
   MusicPlayer</h2>
 <ul>
@@ -4997,14 +4997,14 @@ echo “default_linemode devicons” &gt;&gt; $HOME/.config/ranger/rc.conf   # a
 </li>
 </ul></p><p><h2>
       <a href="##h-0.7" id="#h-0.7">
-        0.7
+       ✨ 0.7
       </a>
   analyse memory</h2>
 <p>valgrind
 massif-visualizer
 </p></p><p><h2>
       <a href="##h-0.8" id="#h-0.8">
-        0.8
+       ✨ 0.8
       </a>
   picture show</h2>
 <ul>
@@ -5030,7 +5030,7 @@ massif-visualizer
 </li>
 </ul></p><p><h2>
       <a href="##h-0.9" id="#h-0.9">
-        0.9
+       ✨ 0.9
       </a>
   better pdf</h2>
 <ul>
@@ -5047,7 +5047,7 @@ massif-visualizer
 </li>
 </ul></p><p><h2>
       <a href="##h-0.10" id="#h-0.10">
-        0.10
+       ✨ 0.10
       </a>
   mysql tools</h2>
 <ul>
@@ -5063,7 +5063,7 @@ massif-visualizer
 
 </p><p><h2>
       <a href="##h-0.11" id="#h-0.11">
-        0.11
+       ✨ 0.11
       </a>
   MarkdownEditor</h2>
 <ul>
@@ -5142,14 +5142,14 @@ meld
 
 </p><p><h2>
       <a href="##h-0.12" id="#h-0.12">
-        0.12
+       ✨ 0.12
       </a>
   Image</h2>
 <ul>
 <li>picgo <a class="tc-tiddlylink-external _codified_" href="https://picgo.github.io/PicGo-Doc/zh/guide/config.html#%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E9%A2%84%E8%A7%88" rel="noopener noreferrer" target="_blank">picgo</a></li>
 </ul></p><p><h2>
       <a href="##h-0.13" id="#h-0.13">
-        0.13
+       ✨ 0.13
       </a>
   Dictionary</h2>
 <ul>
@@ -5177,7 +5177,7 @@ meld
 </li>
 </ul></p><p><h2>
       <a href="##h-0.14" id="#h-0.14">
-        0.14
+       ✨ 0.14
       </a>
   System</h2>
 <ul>
@@ -5196,7 +5196,7 @@ meld
 <li>gpaste</li>
 </ul></p><p><h2>
       <a href="##h-0.15" id="#h-0.15">
-        0.15
+       ✨ 0.15
       </a>
   Brower</h2>
 <ul>
@@ -5229,7 +5229,7 @@ meld
 </li>
 </ul></p><p><h2>
       <a href="##h-0.16" id="#h-0.16">
-        0.16
+       ✨ 0.16
       </a>
   Video</h2>
 <ul>
@@ -5239,7 +5239,7 @@ meld
 <li>flameshot <a class="tc-tiddlylink-external _codified_" href="https://github.com/flameshot-org/flameshot" rel="noopener noreferrer" target="_blank">flameshot-link</a></li>
 </ul></p><p><h2>
       <a href="##h-0.17" id="#h-0.17">
-        0.17
+       ✨ 0.17
       </a>
   Typing expercise</h2>
 <ul>
@@ -5256,7 +5256,7 @@ meld
 </li>
 </ul></p><p><h2>
       <a href="##h-0.18" id="#h-0.18">
-        0.18
+       ✨ 0.18
       </a>
   Font</h2>
 <ul>
@@ -5323,7 +5323,7 @@ meld
 </li>
 </ul></p><p><h2>
       <a href="##h-0.19" id="#h-0.19">
-        0.19
+       ✨ 0.19
       </a>
   terminal</h2>
 <ul>
@@ -5351,7 +5351,7 @@ meld
 </li>
 </ul></p><p><h2>
       <a href="##h-0.20" id="#h-0.20">
-        0.20
+       ✨ 0.20
       </a>
   Image Viewer</h2>
 <ul>
@@ -5395,7 +5395,7 @@ meld
 </li>
 </ul></p><p><h2>
       <a href="##h-0.21" id="#h-0.21">
-        0.21
+       ✨ 0.21
       </a>
   Reader Viewer</h2>
 <ul>
@@ -5406,7 +5406,7 @@ meld
 <li>foliate                    # book read</li>
 </ul></p><p><h2>
       <a href="##h-0.22" id="#h-0.22">
-        0.22
+       ✨ 0.22
       </a>
   Video editor</h2>
 <ul>
@@ -5552,7 +5552,7 @@ button.tc-unfold-banner {
 	font-size: 18x;
 }</p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-tar</title><link href="https://neotw.netlify.app/#neotw-tar"></link><link href="https://neotw.netlify.app/static/neotw-tar.html" rel="alternative" type="text/html"></link><id>d5e39fbc-35da-f3da-2d50-3612ffbbbec7</id><updated>2023-05-20T16:22:52</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
-        0.1
+       ✨ 0.1
       </a>
   tar</h2>
 <pre class="hljs"><code class="bash hljs"> tar xvf ... <span class="hljs-comment"># tar a file</span>
@@ -5572,7 +5572,7 @@ button.tc-unfold-banner {
 </code></pre>
 </p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-tmux</title><link href="https://neotw.netlify.app/#neotw-tmux"></link><link href="https://neotw.netlify.app/static/neotw-tmux.html" rel="alternative" type="text/html"></link><id>b0d26239-5b3e-69a4-daf3-ee0dbdd1d0f3</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
-        0.1
+       ✨ 0.1
       </a>
   Tmux</h2>
 <p>ctrl + a /  ctrl + b      # prefix
@@ -5613,7 +5613,7 @@ prefix and press x   # 关闭整个tmux
 <li><a class="tc-tiddlylink-external _codified_" href="https://louiszhai.github.io/2017/09/30/tmux/#%E4%BF%9D%E5%AD%98Tmux%E4%BC%9A%E8%AF%9D" rel="noopener noreferrer" target="_blank">tmux-tutor</a></li>
 </ul></p><p><h1>
       <a href="##h-1" id="#h-1">
-        1
+       ✨ 1
       </a>
   tips</h1>
 <ul>
@@ -5623,7 +5623,7 @@ prefix and press x   # 关闭整个tmux
 </ul>
 </p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-translate</title><link href="https://neotw.netlify.app/#neotw-translate"></link><link href="https://neotw.netlify.app/static/neotw-translate.html" rel="alternative" type="text/html"></link><id>81481f3d-5ad4-e2d7-955c-a47d98e21a3d</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
-        0.1
+       ✨ 0.1
       </a>
   translate</h2>
 <pre class="hljs"><code class="shell hljs">* trans -T
@@ -5648,7 +5648,7 @@ trans :ja xxx -p -b
 </code></pre>
 </p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-ui</title><link href="https://neotw.netlify.app/#neotw-ui"></link><link href="https://neotw.netlify.app/static/neotw-ui.html" rel="alternative" type="text/html"></link><id>c8ad1db5-73e9-33ff-9587-926398d0e692</id><updated>2023-03-06T20:22:30</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-wiki</title><link href="https://neotw.netlify.app/#neotw-wiki"></link><link href="https://neotw.netlify.app/static/neotw-wiki.html" rel="alternative" type="text/html"></link><id>83ea464e-a748-8a77-fddb-46f5b12b5c23</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
-        0.1
+       ✨ 0.1
       </a>
   Language</h2>
 <ul>
@@ -5673,7 +5673,7 @@ systemctl enable gdm
 systemctl enable networkmanager ?
 </p></p><p><h2>
       <a href="##h-0.2" id="#h-0.2">
-        0.2
+       ✨ 0.2
       </a>
   tmp</h2>
 <ul>
@@ -5681,7 +5681,7 @@ systemctl enable networkmanager ?
 <li>LC_ALL=en_US.UTF-8 for /etc/locale.conf to resolve ago zh-CN questions</li>
 </ul></p><p><h2>
       <a href="##h-0.3" id="#h-0.3">
-        0.3
+       ✨ 0.3
       </a>
   lyx</h2>
 <p>insert =&gt; math =&gt; latex
@@ -5689,7 +5689,7 @@ insert latex environment, and you can directly input latex code
 shortkey: ctrl + m
 </p></p><p><h2>
       <a href="##h-0.4" id="#h-0.4">
-        0.4
+       ✨ 0.4
       </a>
   mysql</h2>
 <ul>
@@ -5739,7 +5739,7 @@ skip-grant-tables=1
 
     <h2>
       <a href="##h-0.5" id="#h-0.5">
-        0.5
+       ✨ 0.5
       </a>
   wine</h2>
 <pre><code>- use wine64 *.exe to use huawei idea to install it
@@ -5749,7 +5749,7 @@ skip-grant-tables=1
 
     <h2>
       <a href="##h-0.6" id="#h-0.6">
-        0.6
+       ✨ 0.6
       </a>
   nvim</h2>
 <ul>
@@ -5761,7 +5761,7 @@ skip-grant-tables=1
 
     <h2>
       <a href="##h-0.7" id="#h-0.7">
-        0.7
+       ✨ 0.7
       </a>
   kvm</h2>
 <ul>
@@ -5824,7 +5824,7 @@ sudo virsh net-start default
 
     <h2>
       <a href="##h-0.8" id="#h-0.8">
-        0.8
+       ✨ 0.8
       </a>
   v2raya</h2>
 
@@ -5848,7 +5848,7 @@ sudo virsh net-start default
 
     <h2>
       <a href="##h-0.9" id="#h-0.9">
-        0.9
+       ✨ 0.9
       </a>
   sound</h2>
 <ul>
@@ -5884,7 +5884,7 @@ sudo virsh net-start default
 
     <h2>
       <a href="##h-0.10" id="#h-0.10">
-        0.10
+       ✨ 0.10
       </a>
   timedatectl</h2>
 <ul>
@@ -5895,7 +5895,7 @@ sudo virsh net-start default
 
     <h2>
       <a href="##h-0.11" id="#h-0.11">
-        0.11
+       ✨ 0.11
       </a>
   ssh</h2>
 <ul>
@@ -5932,7 +5932,7 @@ ssh-copy-id 将本机的公钥复制到远程机器的authorized_keys文件中�
 
     <h2>
       <a href="##h-0.12" id="#h-0.12">
-        0.12
+       ✨ 0.12
       </a>
   google-chrome</h2>
 <ul>
@@ -5944,7 +5944,7 @@ ssh-copy-id 将本机的公钥复制到远程机器的authorized_keys文件中�
 
     <h2>
       <a href="##h-0.13" id="#h-0.13">
-        0.13
+       ✨ 0.13
       </a>
   staruml</h2>
 <ul>
@@ -5963,7 +5963,7 @@ ssh-copy-id 将本机的公钥复制到远程机器的authorized_keys文件中�
 
     <h2>
       <a href="##h-0.14" id="#h-0.14">
-        0.14
+       ✨ 0.14
       </a>
   gitlab</h2>
 <ul>
@@ -5972,7 +5972,7 @@ ssh-copy-id 将本机的公钥复制到远程机器的authorized_keys文件中�
 
     <h2>
       <a href="##h-0.15" id="#h-0.15">
-        0.15
+       ✨ 0.15
       </a>
   gnome</h2>
 <ul>
@@ -5993,7 +5993,7 @@ That’s all!</li>
 
     <h2>
       <a href="##h-0.16" id="#h-0.16">
-        0.16
+       ✨ 0.16
       </a>
   WallPaper</h2>
 <ul>
@@ -6002,7 +6002,7 @@ That’s all!</li>
 
     <h2>
       <a href="##h-0.17" id="#h-0.17">
-        0.17
+       ✨ 0.17
       </a>
   gnome Settings</h2>
 <ul>
@@ -6024,7 +6024,7 @@ That’s all!</li>
 
     <h2>
       <a href="##h-0.18" id="#h-0.18">
-        0.18
+       ✨ 0.18
       </a>
   github</h2>
 <ul>
@@ -6039,7 +6039,7 @@ Github</li>
 
     <h2>
       <a href="##h-0.19" id="#h-0.19">
-        0.19
+       ✨ 0.19
       </a>
   Email</h2>
 <ul>
@@ -6053,7 +6053,7 @@ Github</li>
 
     <h2>
       <a href="##h-0.20" id="#h-0.20">
-        0.20
+       ✨ 0.20
       </a>
   PATH</h2>
 <p>export PATH=$PATH:/…
@@ -6087,7 +6087,7 @@ Github</li>
 <ul>
 <li><p><h1>
       <a href="##h-1" id="#h-1">
-        1
+       ✨ 1
       </a>
   we usually to set some settings in .xprofil or .profile</h1>
 </p></li>
@@ -6119,7 +6119,7 @@ Github</li>
 
     <h2>
       <a href="##h-1.1" id="#h-1.1">
-        1.1
+       ✨ 1.1
       </a>
   IPTABLES</h2>
 <pre><code>- systemctl status iptables.service # check firewall
@@ -6155,7 +6155,7 @@ Github</li>
 
     <h2>
       <a href="##h-1.2" id="#h-1.2">
-        1.2
+       ✨ 1.2
       </a>
   tomcat</h2>
 <ul>
@@ -6165,7 +6165,7 @@ cat /etc/shells</li>
 
     <h2>
       <a href="##h-1.3" id="#h-1.3">
-        1.3
+       ✨ 1.3
       </a>
   curl</h2>
 <ul>
@@ -6175,7 +6175,7 @@ cat /etc/shells</li>
 
     <h2>
       <a href="##h-1.4" id="#h-1.4">
-        1.4
+       ✨ 1.4
       </a>
   alias</h2>
 <ul>
@@ -6188,7 +6188,7 @@ cat /etc/shells</li>
 
     <h2>
       <a href="##h-1.5" id="#h-1.5">
-        1.5
+       ✨ 1.5
       </a>
   yay</h2>
 <ul>
@@ -6202,7 +6202,7 @@ cat /etc/shells</li>
 
     <h2>
       <a href="##h-1.6" id="#h-1.6">
-        1.6
+       ✨ 1.6
       </a>
   Pacman</h2>
 <ul>
@@ -6217,7 +6217,7 @@ cat /etc/shells</li>
 
     <h2>
       <a href="##h-1.7" id="#h-1.7">
-        1.7
+       ✨ 1.7
       </a>
   jetbrain</h2>
 <ul>
@@ -6231,7 +6231,7 @@ cat /etc/shells</li>
 
     <h2>
       <a href="##h-1.8" id="#h-1.8">
-        1.8
+       ✨ 1.8
       </a>
   obs</h2>
 <ul>
@@ -6241,7 +6241,7 @@ cat /etc/shells</li>
 
     <h2>
       <a href="##h-1.9" id="#h-1.9">
-        1.9
+       ✨ 1.9
       </a>
   mpv</h2>
 <ul>
@@ -6258,7 +6258,7 @@ cat /etc/shells</li>
 
     <h2>
       <a href="##h-1.10" id="#h-1.10">
-        1.10
+       ✨ 1.10
       </a>
   Grub</h2>
 <ul>
@@ -6271,13 +6271,13 @@ cat /etc/shells</li>
 
     <h2>
       <a href="##h-1.11" id="#h-1.11">
-        1.11
+       ✨ 1.11
       </a>
   Direction</h2>
 
     <h1>
       <a href="##h-2" id="#h-2">
-        2
+       ✨ 2
       </a>
   modify chinese-dir for system</h1>
 <ul>
@@ -6286,7 +6286,7 @@ cat /etc/shells</li>
 
     <h2>
       <a href="##h-2.1" id="#h-2.1">
-        2.1
+       ✨ 2.1
       </a>
   add user</h2>
 <ul>
@@ -6301,7 +6301,7 @@ cat /etc/shells</li>
 
     <h2>
       <a href="##h-2.2" id="#h-2.2">
-        2.2
+       ✨ 2.2
       </a>
   fonts</h2>
 <p>/usr/share/fonts/winfonts/   # 建立软链接 可以使用$PWD
@@ -6310,7 +6310,7 @@ path: $HOME/.config/libreoffice/4/fonts/  # 将 C:\Windows\Fonts 的字体拷贝
 
     <h2>
       <a href="##h-2.3" id="#h-2.3">
-        2.3
+       ✨ 2.3
       </a>
   journalctl</h2>
 <ul>
@@ -6325,7 +6325,7 @@ path: $HOME/.config/libreoffice/4/fonts/  # 将 C:\Windows\Fonts 的字体拷贝
 
     <h2>
       <a href="##h-2.4" id="#h-2.4">
-        2.4
+       ✨ 2.4
       </a>
   new archwikich for mariadb</h2>
 <ul>
@@ -6379,7 +6379,7 @@ mycli -uroot -p 123</li>
 
     <h2>
       <a href="##h-2.5" id="#h-2.5">
-        2.5
+       ✨ 2.5
       </a>
   Jetbrain</h2>
 <ul>
@@ -6403,7 +6403,7 @@ mycli -uroot -p 123</li>
 </li>
 <li><p><h3>
       <a href="##h-2.5.1" id="#h-2.5.1">
-        2.5.1
+       ✨ 2.5.1
       </a>
   downgrade</h3>
 </p></li>
@@ -6411,7 +6411,7 @@ mycli -uroot -p 123</li>
 <ul>
 <li><p><h2>
       <a href="##h-2.6" id="#h-2.6">
-        2.6
+       ✨ 2.6
       </a>
   yay -Syyuu</h2>
 </p></li>
@@ -6421,7 +6421,7 @@ mycli -uroot -p 123</li>
 
     <h2>
       <a href="##h-2.7" id="#h-2.7">
-        2.7
+       ✨ 2.7
       </a>
   Date-synchronize</h2>
 <ul>
@@ -6459,7 +6459,7 @@ mycli -uroot -p 123</li>
 <ul>
 <li><p><h2>
       <a href="##h-2.8" id="#h-2.8">
-        2.8
+       ✨ 2.8
       </a>
   timedatectl status</h2>
 </p></li>
@@ -6467,7 +6467,7 @@ mycli -uroot -p 123</li>
 </li>
 <li><p><h3>
       <a href="##h-2.8.1" id="#h-2.8.1">
-        2.8.1
+       ✨ 2.8.1
       </a>
   Auto login</h3>
 </p></li>
@@ -6480,7 +6480,7 @@ mycli -uroot -p 123</li>
 <ul>
 <li><p><h2>
       <a href="##h-2.9" id="#h-2.9">
-        2.9
+       ✨ 2.9
       </a>
   comment /etc/sddm.conf <code class="_codified_">relogin</code> (for sddm)</h2>
 </p></li>
@@ -6488,7 +6488,7 @@ mycli -uroot -p 123</li>
 <ul>
 <li><p><h3>
       <a href="##h-2.9.1" id="#h-2.9.1">
-        2.9.1
+       ✨ 2.9.1
       </a>
   fast shutdown</h3>
 </p></li>
@@ -6501,7 +6501,7 @@ mycli -uroot -p 123</li>
 
     <h2>
       <a href="##h-2.10" id="#h-2.10">
-        2.10
+       ✨ 2.10
       </a>
   Logout</h2>
 <ul>
@@ -6513,7 +6513,7 @@ mycli -uroot -p 123</li>
 
     <h2>
       <a href="##h-2.11" id="#h-2.11">
-        2.11
+       ✨ 2.11
       </a>
   Redirect</h2>
 <ul>
@@ -6522,7 +6522,7 @@ mycli -uroot -p 123</li>
 
     <h2>
       <a href="##h-2.12" id="#h-2.12">
-        2.12
+       ✨ 2.12
       </a>
   Stow</h2>
 <ul>
@@ -6538,7 +6538,7 @@ mycli -uroot -p 123</li>
 
     <h2>
       <a href="##h-2.13" id="#h-2.13">
-        2.13
+       ✨ 2.13
       </a>
   pacman error</h2>
 <ul>
@@ -6547,7 +6547,7 @@ mycli -uroot -p 123</li>
 
     <h2>
       <a href="##h-2.14" id="#h-2.14">
-        2.14
+       ✨ 2.14
       </a>
   Gnome</h2>
 <ul>
@@ -6559,7 +6559,7 @@ mycli -uroot -p 123</li>
 
     <h2>
       <a href="##h-2.15" id="#h-2.15">
-        2.15
+       ✨ 2.15
       </a>
   Tim dpi</h2>
 <p>env WINEPREFIX=“<span><span class="katex-error" title="ParseError: KaTeX parse error: Expected &#x27;EOF&#x27;, got &#x27;#&#x27; at position 38: …n-TIM&quot; winecfg #̲ 弹窗 下载 点击取消  需要…" style="color:#cc0000">HOME/.deepinwine/Deepin-TIM&quot; winecfg # 弹窗 下载 点击取消  需要提前退出 qq
@@ -6569,7 +6569,7 @@ env WINEPREFIX=“$HOME/.deepinwine/Deepin-WeChat” winecfg
 
     <h2>
       <a href="##h-2.16" id="#h-2.16">
-        2.16
+       ✨ 2.16
       </a>
   livecd grubk mount</h2>
 <ul>
@@ -6605,7 +6605,7 @@ env WINEPREFIX=“$HOME/.deepinwine/Deepin-WeChat” winecfg
 
     <h2>
       <a href="##h-2.17" id="#h-2.17">
-        2.17
+       ✨ 2.17
       </a>
   tmp</h2>
 <ul>
@@ -6634,7 +6634,7 @@ https://zhuanlan.zhihu.com/p/157260502</li>
 
     <h2>
       <a href="##h-2.18" id="#h-2.18">
-        2.18
+       ✨ 2.18
       </a>
   Version</h2>
 <ul>
@@ -6645,7 +6645,7 @@ https://zhuanlan.zhihu.com/p/157260502</li>
 
     <h2>
       <a href="##h-2.19" id="#h-2.19">
-        2.19
+       ✨ 2.19
       </a>
   rar</h2>
 <ul>
@@ -6662,7 +6662,7 @@ https://zhuanlan.zhihu.com/p/157260502</li>
 
     <h2>
       <a href="##h-2.20" id="#h-2.20">
-        2.20
+       ✨ 2.20
       </a>
   cp</h2>
 <ul>
@@ -6671,7 +6671,7 @@ https://zhuanlan.zhihu.com/p/157260502</li>
 
     <h2>
       <a href="##h-2.21" id="#h-2.21">
-        2.21
+       ✨ 2.21
       </a>
   keyboard</h2>
 <p>ek861: win is doesn’t work
@@ -6680,7 +6680,7 @@ first press fn + w and press fn + win(lock win key)
 
     <h2>
       <a href="##h-2.22" id="#h-2.22">
-        2.22
+       ✨ 2.22
       </a>
   Reset passwd</h2>
 <ul>
@@ -6713,7 +6713,7 @@ mode
 
     <h2>
       <a href="##h-2.23" id="#h-2.23">
-        2.23
+       ✨ 2.23
       </a>
   Games for browser</h2>
 <ul>
@@ -6761,7 +6761,7 @@ mode
 
     <h2>
       <a href="##h-2.24" id="#h-2.24">
-        2.24
+       ✨ 2.24
       </a>
   gnome-keyring</h2>
 <ul>
@@ -6790,7 +6790,7 @@ mode
 
     <h2>
       <a href="##h-2.25" id="#h-2.25">
-        2.25
+       ✨ 2.25
       </a>
   reveal</h2>
 <ul>
@@ -6807,7 +6807,7 @@ mode
 
     <h2>
       <a href="##h-2.26" id="#h-2.26">
-        2.26
+       ✨ 2.26
       </a>
   youtube double cc</h2>
 <ul>
@@ -6816,7 +6816,7 @@ mode
 
     <h2>
       <a href="##h-2.27" id="#h-2.27">
-        2.27
+       ✨ 2.27
       </a>
   disk</h2>
 <ul>
@@ -6874,13 +6874,13 @@ archlinux-java status
 </li>
 <li><p><h2>
       <a href="##h-2.28" id="#h-2.28">
-        2.28
+       ✨ 2.28
       </a>
   换行 \n 本义是光标往下一行（不一定到下一行行首），n的英文newline，控制字符可以写成LF，即Line Feed</h2>
 </p></li>
 <li><p><h2>
       <a href="##h-2.29" id="#h-2.29">
-        2.29
+       ✨ 2.29
       </a>
   在不同的<strong>操作系统</strong>这几个字符表现不同，比如在WIN系统下，这两个字符就是表现的本义，在UNIX类系统，换行\n就表现为光标下一行并回到行首，在MAC上，\r就表现为回到本行开头并往下一行，至于ENTER键的定义是与操作系统有关的。通常用的Enter是两个加起来。</h2>
 </p></li>
@@ -6894,7 +6894,7 @@ archlinux-java status
 </li>
 <li><p><h2>
       <a href="##h-2.30" id="#h-2.30">
-        2.30
+       ✨ 2.30
       </a>
   \r: MAC OS 系统行末结束符</h2>
 </p></li>
@@ -7302,14 +7302,14 @@ map.forEach((value, key) =&gt; arr.push([key, value])); // 遍历 Map</code></pr
 </p>
 </div></div></content><author><name>oeyoews</name></author></entry><entry><title>process-tiddlywiki-img-to-img-shield</title><link href="https://neotw.netlify.app/#process-tiddlywiki-img-to-img-shield"></link><link href="https://neotw.netlify.app/static/process-tiddlywiki-img-to-img-shield.html" rel="alternative" type="text/html"></link><id>9ad9406d-712b-37d3-7aea-fd0802a854dc</id><updated>2023-03-31T23:05:47</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
-        0.1
+       ✨ 0.1
       </a>
   Steps</h2>
 <ul>
 <li>首先需要将图片大小调整为24, 这使用inkscape很容易做到， 但是无法清楚style属性， 因此我继续使用了svgo进行处理，仅仅保留有一个path, 但是正式由于这一步图片不再是正方型， 难道是由于这个 widthxheight is 283.464x283.466导致的问题吗</li>
 </ul></p><p><h2>
       <a href="##h-0.2" id="#h-0.2">
-        0.2
+       ✨ 0.2
       </a>
   Some Links</h2>
 <hr></hr>
@@ -7430,7 +7430,7 @@ JS中定义的所有函数都可以增加参数，所谓"纯函数"是指函数�
 
     <h2>
       <a href="##h-0.1" id="#h-0.1">
-        0.1
+       ✨ 0.1
       </a>
   声明式开发" 概念解释</h2>
 <p>“声明式开发”：基于数据定义和数据改变，视图层自动更新。
@@ -7916,7 +7916,7 @@ const listItems = numbers.map((number) =&gt; (
 </p>
 </div></div></content><author><name>oeyoews</name></author></entry><entry><title>react-single-date</title><link href="https://neotw.netlify.app/#react-single-date"></link><link href="https://neotw.netlify.app/static/react-single-date.html" rel="alternative" type="text/html"></link><id>c037970e-4124-5975-9e4a-25b8cac150cf</id><updated>2023-04-28T16:45:33</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
-        0.1
+       ✨ 0.1
       </a>
   单项数据流" 概念解释</h2>
 <p>react框架的原则中规定，子组件只可以使用父组件传递过来的xxx属性对应的值或方法，不可以改变。
@@ -7932,25 +7932,25 @@ const listItems = numbers.map((number) =&gt; (
 </p>
 </p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>react-snippets</title><link href="https://neotw.netlify.app/#react-snippets"></link><link href="https://neotw.netlify.app/static/react-snippets.html" rel="alternative" type="text/html"></link><id>137a0075-7bef-0c58-c89e-87a8ebfbc334</id><updated>2023-04-24T15:02:12</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
-        0.1
+       ✨ 0.1
       </a>
   shortcuts</h2>
 <p><code class="_codified_">ctrl alt r</code> to search snippets(based vscode extensions)
 </p></p><p><h2>
       <a href="##h-0.2" id="#h-0.2">
-        0.2
+       ✨ 0.2
       </a>
   imrc</h2>
 <p><code class="_codified_">import React, { Component } from 'react'</code>
 </p></p><p><h2>
       <a href="##h-0.3" id="#h-0.3">
-        0.3
+       ✨ 0.3
       </a>
   imr</h2>
 <p><code class="_codified_">import React from 'react'</code>
 </p></p><p><h2>
       <a href="##h-0.4" id="#h-0.4">
-        0.4
+       ✨ 0.4
       </a>
   rsc(React Stateless Component)</h2>
 <pre class="hljs"><code class="jsx hljs">
@@ -8046,7 +8046,7 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 4th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#4">4</a></span>)
 
 <div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#markdown-test"></a>
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#markdown-examples"></a>
 </div>
 
 <div class="tc-menu-list-subitem">
@@ -8523,7 +8523,7 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-note-record</title><link href="https://neotw.netlify.app/#recent-note-record"></link><link href="https://neotw.netlify.app/static/recent-note-record.html" rel="alternative" type="text/html"></link><id>2619840e-dc84-d69e-3d32-c2258f306a66</id><updated>2023-04-11T09:39:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><ul>
   
     <li>
-		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#markdown-test">markdown-test</a>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#markdown-examples">markdown-examples</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
         
     </li>
@@ -12216,7 +12216,7 @@ dmeo dmeo dmeo dmeo dmoe dmeo
 
     <h2>
       <a href="##h-0.1" id="#h-0.1">
-        0.1
+       ✨ 0.1
       </a>
   TODO</h2>
 <ul class="task-list">
@@ -12224,11 +12224,11 @@ dmeo dmeo dmeo dmeo dmoe dmeo
 </ul>
 </div></div></content><author><name>oeyoews</name></author></entry><entry><title>this</title><link href="https://neotw.netlify.app/#this"></link><link href="https://neotw.netlify.app/static/this.html" rel="alternative" type="text/html"></link><id>9e925e93-41b4-90bf-d3b4-c4ca3b0c1ef2</id><updated>2023-05-29T13:20:14</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
-        0.1
+       ✨ 0.1
       </a>
   JavaScript this 关键字</h2></p><p><h3>
       <a href="##h-0.1.1" id="#h-0.1.1">
-        0.1.1
+       ✨ 0.1.1
       </a>
   面向对象语言中 this 表示当前对象的一个引用。</h3>
 <p>但在 JavaScript 中 this 不是固定不变的，它会随着执行环境的改变而改变。
@@ -12325,17 +12325,17 @@ dmeo dmeo dmeo dmeo dmoe dmeo
 </p>
 </p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>three-pig</title><link href="https://neotw.netlify.app/#three-pig"></link><link href="https://neotw.netlify.app/static/three-pig.html" rel="alternative" type="text/html"></link><id>13c25fdf-b5db-5d2d-db6a-3573a149ee0e</id><updated>2023-05-25T10:58:03</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h1>
       <a href="##h-1" id="#h-1">
-        1
+       ✨ 1
       </a>
   三只小猪</h1></p><p><h2>
       <a href="##h-1.1" id="#h-1.1">
-        1.1
+       ✨ 1.1
       </a>
   题目背景</h2>
 <p>你听说过三只小猪的故事吗？这是一个经典的故事。很久很久以前，有三只小猪。第一只小猪用稻草建的房子，第二个小猪用木棍建的房子，第三个小猪则使用砖做为材料。一只大灰狼想吃掉它们并吹倒了稻草和木棍建的房子。但是砖盖的房子很结实，狼最终也没有破坏掉，最后小猪们战胜了大灰狼并把它尾巴烧掉了。
 </p></p><p><h2>
       <a href="##h-1.2" id="#h-1.2">
-        1.2
+       ✨ 1.2
       </a>
   题目描述</h2>
 <p>为了自己的安全，小猪们又建造了一个新砖房。但是现在问题出现了，怎样把三个小猪分配到两个房子里呢？第三只小猪是三只小猪中最聪明的一只，为了不浪费任何一个房子，它总共考虑了三种方案，如下图
@@ -12345,51 +12345,51 @@ dmeo dmeo dmeo dmeo dmoe dmeo
 <p>“但是将来怎么办呢？”第三只小猪知道将来随着成员的增多，它们将会盖更多的房子。它想知道给定了房子和猪的数目后，房子的分配方案有多少，但这个问题对于它来说，很明显有点难了，你能帮小猪解决这个问题吗？
 </p></p><p><h2>
       <a href="##h-1.3" id="#h-1.3">
-        1.3
+       ✨ 1.3
       </a>
   输入格式</h2>
 <p>输入文件piggy.in，仅有一行，包含两个整数n和m，分别表示小猪的数目和房间数（1≤n≤50，0≤m≤50）。
 </p></p><p><h2>
       <a href="##h-1.4" id="#h-1.4">
-        1.4
+       ✨ 1.4
       </a>
   输出格式</h2>
 <p>输出文件piggy.out，仅一个整数，表示将n只小猪安置在m个房间且没有房间空闲的方案数。
 </p></p><p><h2>
       <a href="##h-1.5" id="#h-1.5">
-        1.5
+       ✨ 1.5
       </a>
   样例 #1</h2></p><p><h3>
       <a href="##h-1.5.1" id="#h-1.5.1">
-        1.5.1
+       ✨ 1.5.1
       </a>
   样例输入 #1</h3>
 <pre><code>4 2
 </code></pre></p><p><h3>
       <a href="##h-1.5.2" id="#h-1.5.2">
-        1.5.2
+       ✨ 1.5.2
       </a>
   样例输出 #1</h3>
 <pre><code>7
 </code></pre></p><p><h2>
       <a href="##h-1.6" id="#h-1.6">
-        1.6
+       ✨ 1.6
       </a>
   样例 #2</h2></p><p><h3>
       <a href="##h-1.6.1" id="#h-1.6.1">
-        1.6.1
+       ✨ 1.6.1
       </a>
   样例输入 #2</h3>
 <pre><code>6 7
 </code></pre></p><p><h3>
       <a href="##h-1.6.2" id="#h-1.6.2">
-        1.6.2
+       ✨ 1.6.2
       </a>
   样例输出 #2</h3>
 <pre><code>0
 </code></pre></p><p><h2>
       <a href="##h-1.7" id="#h-1.7">
-        1.7
+       ✨ 1.7
       </a>
   题目分析</h2>
 <p>可以令<span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false">[</mo><mi>i</mi><mo stretchy="false">]</mo><mo stretchy="false">[</mo><mi>j</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">f[i][j]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">[</span><span class="mord mathnormal">i</span><span class="mclose">]</span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.05724em;">j</span><span class="mclose">]</span></span></span></span></span>表示将<span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6595em;"></span><span class="mord mathnormal">i</span></span></span></span></span>只小猪分配到<span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi></mrow><annotation encoding="application/x-tex">j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.854em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.05724em;">j</span></span></span></span></span>个房间里且至少有一个房间空闲的方案数。那么，<span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false">[</mo><mi>i</mi><mo stretchy="false">]</mo><mo stretchy="false">[</mo><mi>j</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">f[i][j]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">[</span><span class="mord mathnormal">i</span><span class="mclose">]</span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.05724em;">j</span><span class="mclose">]</span></span></span></span></span>可以通过以下方式计算得出：
@@ -12417,7 +12417,7 @@ dmeo dmeo dmeo dmeo dmoe dmeo
 <p>其中，<span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mi>n</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">ans</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">an</span><span class="mord mathnormal">s</span></span></span></span></span>表示最终的答案。
 </p></p><p><h2>
       <a href="##h-1.8" id="#h-1.8">
-        1.8
+       ✨ 1.8
       </a>
   Python 实现</h2>
 <pre class="hljs"><code class="python hljs"><span class="hljs-keyword">def</span> <span class="hljs-title function_">work</span>(<span class="hljs-params">n, m</span>):
@@ -12460,7 +12460,7 @@ dmeo dmeo dmeo dmeo dmoe dmeo
 <p>在主函数 main() 中，从控制台读取两个字符串参数，并转换为整型，然后调用 work 函数计算结果并输出到控制台。
 </p></p><p><h2>
       <a href="##h-1.9" id="#h-1.9">
-        1.9
+       ✨ 1.9
       </a>
   C++ 实现</h2>
 <pre class="hljs"><code class="c++ hljs"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;iostream&gt;</span></span>
@@ -12727,7 +12727,7 @@ process.env.TIDDLYWIKI_EDITION_PATH = `${repoFolder}/editions`;</code></pre><ul>
 
     <h2>
       <a href="##h-0.1" id="#h-0.1">
-        0.1
+       ✨ 0.1
       </a>
   TODO</h2>
 <ul>
@@ -12736,7 +12736,7 @@ process.env.TIDDLYWIKI_EDITION_PATH = `${repoFolder}/editions`;</code></pre><ul>
 
     <h2>
       <a href="##h-0.2" id="#h-0.2">
-        0.2
+       ✨ 0.2
       </a>
   Why Rss</h2>
 <ul>
@@ -12745,7 +12745,7 @@ process.env.TIDDLYWIKI_EDITION_PATH = `${repoFolder}/editions`;</code></pre><ul>
 
     <h2>
       <a href="##h-0.3" id="#h-0.3">
-        0.3
+       ✨ 0.3
       </a>
   Backup</h2>
 <ul>
@@ -12754,7 +12754,7 @@ process.env.TIDDLYWIKI_EDITION_PATH = `${repoFolder}/editions`;</code></pre><ul>
 
     <h2>
       <a href="##h-0.4" id="#h-0.4">
-        0.4
+       ✨ 0.4
       </a>
   Rsshub</h2>
 <ul>
@@ -12763,7 +12763,7 @@ process.env.TIDDLYWIKI_EDITION_PATH = `${repoFolder}/editions`;</code></pre><ul>
 
     <h2>
       <a href="##h-0.5" id="#h-0.5">
-        0.5
+       ✨ 0.5
       </a>
   Apps</h2>
 <ul>
@@ -12787,7 +12787,7 @@ process.env.TIDDLYWIKI_EDITION_PATH = `${repoFolder}/editions`;</code></pre><ul>
 
     <h2>
       <a href="##h-0.6" id="#h-0.6">
-        0.6
+       ✨ 0.6
       </a>
   Q&amp;A</h2>
 <ul>
@@ -12807,7 +12807,7 @@ process.env.TIDDLYWIKI_EDITION_PATH = `${repoFolder}/editions`;</code></pre><ul>
 
     <h2>
       <a href="##h-0.7" id="#h-0.7">
-        0.7
+       ✨ 0.7
       </a>
   Links</h2>
 <ul>
@@ -12818,7 +12818,7 @@ process.env.TIDDLYWIKI_EDITION_PATH = `${repoFolder}/editions`;</code></pre><ul>
 
     <h2>
       <a href="##h-0.8" id="#h-0.8">
-        0.8
+       ✨ 0.8
       </a>
   Subscribe Github</h2>
 <pre><code>/* Repo releases */
@@ -12862,7 +12862,7 @@ https://github.com/:user.atom
 
     <h2>
       <a href="##h-0.9" id="#h-0.9">
-        0.9
+       ✨ 0.9
       </a>
   Notion</h2>
 <ul>
@@ -12871,7 +12871,7 @@ https://github.com/:user.atom
 
     <h2>
       <a href="##h-0.10" id="#h-0.10">
-        0.10
+       ✨ 0.10
       </a>
   Atom template</h2>
 <ul>
@@ -12881,7 +12881,7 @@ https://github.com/:user.atom
 
     <h2>
       <a href="##h-0.11" id="#h-0.11">
-        0.11
+       ✨ 0.11
       </a>
   Links</h2>
 <ul>
@@ -12901,13 +12901,13 @@ https://github.com/:user.atom
 
     <h2>
       <a href="##h-0.1" id="#h-0.1">
-        0.1
+       ✨ 0.1
       </a>
   <code class="_codified_">useState</code> 的用例</h2>
 
     <h3>
       <a href="##h-0.1.1" id="#h-0.1.1">
-        0.1.1
+       ✨ 0.1.1
       </a>
   基本用法</h3>
 <pre class="hljs"><code class="jsx hljs"><span class="hljs-keyword">import</span> <span class="hljs-title class_">React</span>, { useState } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
@@ -12928,7 +12928,7 @@ https://github.com/:user.atom
 
     <h3>
       <a href="##h-0.1.2" id="#h-0.1.2">
-        0.1.2
+       ✨ 0.1.2
       </a>
   使用对象作为状态值</h3>
 <pre class="hljs"><code class="jsx hljs"><span class="hljs-keyword">import</span> <span class="hljs-title class_">React</span>, { useState } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
@@ -12958,13 +12958,13 @@ https://github.com/:user.atom
 
     <h2>
       <a href="##h-0.2" id="#h-0.2">
-        0.2
+       ✨ 0.2
       </a>
   <code class="_codified_">let</code> 变量的用例</h2>
 
     <h3>
       <a href="##h-0.2.1" id="#h-0.2.1">
-        0.2.1
+       ✨ 0.2.1
       </a>
   计数器的实现</h3>
 <pre class="hljs"><code class="jsx hljs"><span class="hljs-keyword">import</span> <span class="hljs-title class_">React</span>, { useState } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
@@ -13046,7 +13046,7 @@ cons [count, setCount] = <span class="hljs-title function_">useState</span>(<spa
 
     <h3>
       <a href="##h-0.0.1" id="#h-0.0.1">
-        0.0.1
+       ✨ 0.0.1
       </a>
   Webpack</h3>
 <p>Webpack 是一个模块打包工具，主要用于打包 JavaScript 文件，但也可以处理 CSS、图片等资源文件。它将多个文件打包成一个或多个 bundle 文件，以便在浏览器中使用。Webpack 最重要的功能是代码分割和生成 source map，这些都有助于提高应用程序性能并方便调试。此外，Webpack 还具有插件系统，可以通过插件实现代码压缩、文件拆分、语法检查等功能。
@@ -13062,7 +13062,7 @@ cons [count, setCount] = <span class="hljs-title function_">useState</span>(<spa
 
     <h3>
       <a href="##h-0.0.2" id="#h-0.0.2">
-        0.0.2
+       ✨ 0.0.2
       </a>
   Babel</h3>
 <p>Babel 是一个 JavaScript 编译器，它可以将新版本的 ECMAScript 代码转换为兼容性更好的旧版代码，以便于在老旧的浏览器中运行。Babel 可以将 ES6/7/8 等新语法转换为 ES5 代码，也可以将 React 的 JSX 语法转换为普通的 JavaScript 代码，以便于在浏览器环境中运行。
