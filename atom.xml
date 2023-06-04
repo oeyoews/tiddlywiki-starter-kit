@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Neotw rolling
 </title><subtitle>A modern notebook based on TiddlyWiki5
-</subtitle><link href="https://neotw.netlify.app/atom.xml" rel="self"></link><link href="https://neotw.netlify.app/"></link><author><name>oeyoews</name></author><id>462a8bca-7c57-8f8a-27a3-d6cb4c75a727</id><updated>2023-06-04T17:20:35</updated><entry><title>/home/runner/work/neotw/neotw/tiddlers/hi-oeyoews.svg</title><link href="https://neotw.netlify.app/#%2Fhome%2Frunner%2Fwork%2Fneotw%2Fneotw%2Ftiddlers%2Fhi-oeyoews.svg"></link><link href="https://neotw.netlify.app/static/%252Fhome%252Frunner%252Fwork%252Fneotw%252Fneotw%252Ftiddlers%252Fhi-oeyoews.svg.html" rel="alternative" type="text/html"></link><id>3798d5df-8b06-4ca4-8046-0c87bf3b437d</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><img src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20viewBox%3D%220%200%20600%20300%22%20width%3D%22600%22%20height%3D%22300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3CforeignObject%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%0A%20%20%20%20%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%0A%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%40keyframes%20hi%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%200%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2010%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2020%25%20%7B%20transform%3A%20rotate(-8.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2030%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2040%25%20%7B%20transform%3A%20rotate(-4.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2050%25%20%7B%20transform%3A%20rotate(10.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2060%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40keyframes%20gradient%20%7B%0A%20%20%20%20%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%2050%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%20100%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%235452ee%3B%0A%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%23e73c7e%3B%0A%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%2323a6d5%3B%0A%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23ffff%3B%0A%0A%20%20%20%20%20%20%20%20%20%20background%3A%20linear-gradient(-45deg%2C%20var(--color-main)%2C%20var(--color-primary)%2C%20var(--color-secondary)%2C%20var(--color-tertiary))%3B%0A%20%20%20%20%20%20%20%20%20%20background-size%3A%20400%25%20400%25%3B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20gradient%2015s%20ease%20infinite%3B%0A%0A%20%20%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20%20%20height%3A%20300px%3B%0A%0A%20%20%20%20%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20color%3A%20white%3B%0A%0A%20%20%20%20%20%20%20%20%20%20font-family%3A%20-apple-system%2C%20BlinkMacSystemFont%2C%20%22Segoe%20UI%22%2C%20Roboto%2C%20Helvetica%2C%20Arial%2C%20sans-serif%2C%20%22Apple%20Color%20Emoji%22%2C%20%22Segoe%20UI%20Emoji%22%2C%20%22Segoe%20UI%20Symbol%22%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20hi%201.5s%20linear%20-0.5s%20infinite%3B%0A%20%20%20%20%20%20%20%20%20%20display%3A%20inline-block%3B%0A%20%20%20%20%20%20%20%20%20%20transform-origin%3A%2070%25%2070%25%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-color-scheme%3A%20light)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%23F15BB5%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%2324b0ef%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%234526f6%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23f6f645%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-reduced-motion)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%3C%2Fstyle%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%20%20%3Ch1%3EHi%20there%2C%20my%20name%20is%20oeyoews%20%3Cdiv%20class%3D%22hi%22%3E%F0%9F%91%8B%3C%2Fdiv%3E%3C%2Fh1%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2FforeignObject%3E%0A%3C%2Fsvg%3E"></img></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-02-28</title><link href="https://neotw.netlify.app/#2023-02-28"></link><link href="https://neotw.netlify.app/static/2023-02-28.html" rel="alternative" type="text/html"></link><id>90d001b4-d8df-ae9a-ba70-fe38459a71c5</id><updated>2023-02-28T00:12:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div>无论人生上了哪一层台阶 ，阶下有人在仰望你，阶上亦有人在俯视你；你抬头自卑，低头自得，唯有平视，才能看到真实的自已。 @杨绛语录</div></blockquote></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-16</title><link href="https://neotw.netlify.app/#2023-04-16"></link><link href="https://neotw.netlify.app/static/2023-04-16.html" rel="alternative" type="text/html"></link><id>b720eb79-6a7f-86f0-c39b-4c456f2916fb</id><updated>2023-04-16T09:56:15</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>初级赚钱方式靠信息差，
+</subtitle><link href="https://neotw.netlify.app/atom.xml" rel="self"></link><link href="https://neotw.netlify.app/"></link><author><name>oeyoews</name></author><id>462a8bca-7c57-8f8a-27a3-d6cb4c75a727</id><updated>2023-06-04T22:18:18</updated><entry><title>/home/runner/work/neotw/neotw/tiddlers/hi-oeyoews.svg</title><link href="https://neotw.netlify.app/#%2Fhome%2Frunner%2Fwork%2Fneotw%2Fneotw%2Ftiddlers%2Fhi-oeyoews.svg"></link><link href="https://neotw.netlify.app/static/%252Fhome%252Frunner%252Fwork%252Fneotw%252Fneotw%252Ftiddlers%252Fhi-oeyoews.svg.html" rel="alternative" type="text/html"></link><id>3798d5df-8b06-4ca4-8046-0c87bf3b437d</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><img src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20viewBox%3D%220%200%20600%20300%22%20width%3D%22600%22%20height%3D%22300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3CforeignObject%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%0A%20%20%20%20%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%0A%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%40keyframes%20hi%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%200%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2010%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2020%25%20%7B%20transform%3A%20rotate(-8.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2030%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2040%25%20%7B%20transform%3A%20rotate(-4.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2050%25%20%7B%20transform%3A%20rotate(10.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2060%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40keyframes%20gradient%20%7B%0A%20%20%20%20%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%2050%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%20100%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%235452ee%3B%0A%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%23e73c7e%3B%0A%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%2323a6d5%3B%0A%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23ffff%3B%0A%0A%20%20%20%20%20%20%20%20%20%20background%3A%20linear-gradient(-45deg%2C%20var(--color-main)%2C%20var(--color-primary)%2C%20var(--color-secondary)%2C%20var(--color-tertiary))%3B%0A%20%20%20%20%20%20%20%20%20%20background-size%3A%20400%25%20400%25%3B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20gradient%2015s%20ease%20infinite%3B%0A%0A%20%20%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20%20%20height%3A%20300px%3B%0A%0A%20%20%20%20%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20color%3A%20white%3B%0A%0A%20%20%20%20%20%20%20%20%20%20font-family%3A%20-apple-system%2C%20BlinkMacSystemFont%2C%20%22Segoe%20UI%22%2C%20Roboto%2C%20Helvetica%2C%20Arial%2C%20sans-serif%2C%20%22Apple%20Color%20Emoji%22%2C%20%22Segoe%20UI%20Emoji%22%2C%20%22Segoe%20UI%20Symbol%22%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20hi%201.5s%20linear%20-0.5s%20infinite%3B%0A%20%20%20%20%20%20%20%20%20%20display%3A%20inline-block%3B%0A%20%20%20%20%20%20%20%20%20%20transform-origin%3A%2070%25%2070%25%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-color-scheme%3A%20light)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%23F15BB5%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%2324b0ef%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%234526f6%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23f6f645%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-reduced-motion)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%3C%2Fstyle%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%20%20%3Ch1%3EHi%20there%2C%20my%20name%20is%20oeyoews%20%3Cdiv%20class%3D%22hi%22%3E%F0%9F%91%8B%3C%2Fdiv%3E%3C%2Fh1%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2FforeignObject%3E%0A%3C%2Fsvg%3E"></img></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-02-28</title><link href="https://neotw.netlify.app/#2023-02-28"></link><link href="https://neotw.netlify.app/static/2023-02-28.html" rel="alternative" type="text/html"></link><id>90d001b4-d8df-ae9a-ba70-fe38459a71c5</id><updated>2023-02-28T00:12:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div>无论人生上了哪一层台阶 ，阶下有人在仰望你，阶上亦有人在俯视你；你抬头自卑，低头自得，唯有平视，才能看到真实的自已。 @杨绛语录</div></blockquote></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-16</title><link href="https://neotw.netlify.app/#2023-04-16"></link><link href="https://neotw.netlify.app/static/2023-04-16.html" rel="alternative" type="text/html"></link><id>b720eb79-6a7f-86f0-c39b-4c456f2916fb</id><updated>2023-04-16T09:56:15</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>初级赚钱方式靠信息差，
 高级赚钱方式靠认知差，
 顶级赚钱方式靠资源差</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-20</title><link href="https://neotw.netlify.app/#2023-04-20"></link><link href="https://neotw.netlify.app/static/2023-04-20.html" rel="alternative" type="text/html"></link><id>66fbd211-302a-90f1-43e7-1f0ea4e0f181</id><updated>2023-04-20T20:53:27</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>多端同步的便捷和本地存储的安全，就是鱼与熊掌不可兼得。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-23</title><link href="https://neotw.netlify.app/#2023-04-23"></link><link href="https://neotw.netlify.app/static/2023-04-23.html" rel="alternative" type="text/html"></link><id>eb28f00e-453b-d5a1-967b-e984799ea2d8</id><updated>2023-04-24T00:16:36</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div>延迟满足</div><div>用书籍增加三倍人生体验时长</div><div>不以成喜，不以败悲</div></blockquote><p>“止观止心，无妄无碍”是禅宗的一种修行方法，也是佛教徒在生活中追求内心平静和解脱的方式。</p><p>其中，“止”指的是停止杂念、烦恼等不必要的思考和行为，如止诸恶、止杀戮、止谤言等。这样可以使内心得到安定和净化，有利于后续的修行。</p><p>“观”则指观察事物的真相和本质，排除偏见和执着。通过观想自己和世界的真实性质，认识自己的本性和命运，从而达到身心合一、彻底了解自己和世界的目的。</p><p>“无妄”则表示去除「妄念」、「妄想」和「妄语」等，即清空心灵中荒谬无稽的幻想和自我，让自己的内心变得更加安宁、平静。</p><p>“无碍”则是指避免心态上的障碍和物质层面的附着，为达到自由和解脱而努力。</p><p>总之，这个修行方法要求个人通过内省、检视和拯救自己，消除恶念与烦恼，培养慈悲之心，领悟事物的真实本质，从而找到内心的平静和解放。</p><blockquote><div>客观事物发展规律不以人的主观意志，然而掌握事物的发展规律，却可以从必然王国到自由王国</div></blockquote><p>这句话的意思是，客观事物的发展规律是客观存在的，不受人的主观意志的影响。但是，如果我们能够掌握这些规律并对它们进行改变和运用，我们就可以从必然王国（受客观规律支配的领域）进入自由王国（自由创造或创新的领域）。</p><p>在许多领域中，我们都可以看到这一点。例如，在科学技术领域，我们通过研究和掌握客观规律，开发出了许多有用的工具和技术，使我们的生产和生活更加便利和高效。同样，在社会和经济领域中，通过深入了解客观规律，我们可以制定出更好的政策和管理方法，以促进社会和经济的稳定和发展。</p><p>尽管客观规律的存在使我们受到限制，但如果我们学会理解和运用这些规律，我们就可以发挥自己的主动性和创造性，实现更高的自由度，并不断推动事物的进步和发展。因此，掌握客观规律是实现自由和创造的关键之一。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-25</title><link href="https://neotw.netlify.app/#2023-04-25"></link><link href="https://neotw.netlify.app/static/2023-04-25.html" rel="alternative" type="text/html"></link><id>07baca31-a4c1-d735-df41-8cf857fe4d13</id><updated>2023-04-25T23:01:46</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://space.bilibili.com/43109229/channel/collectiondetail?sid=1234748" rel="noopener noreferrer" target="_blank">https://space.bilibili.com/43109229/channel/collectiondetail?sid=1234748</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-05-06</title><link href="https://neotw.netlify.app/#2023-05-06"></link><link href="https://neotw.netlify.app/static/2023-05-06.html" rel="alternative" type="text/html"></link><id>ac8c3ae3-20fd-c971-eb36-7e3608c51b59</id><updated>2023-05-06T22:55:30</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>拥有能让自己快乐的能力,有一件让自己兴奋一点的事情</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-05-15</title><link href="https://neotw.netlify.app/#2023-05-15"></link><link href="https://neotw.netlify.app/static/2023-05-15.html" rel="alternative" type="text/html"></link><id>5ae2dacd-4932-0fb6-3754-327b31a02c7f</id><updated>2023-05-15T09:19:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>社交的本质是价值交换</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-05-17</title><link href="https://neotw.netlify.app/#2023-05-17"></link><link href="https://neotw.netlify.app/static/2023-05-17.html" rel="alternative" type="text/html"></link><id>5cfc6d08-80d6-3230-a52e-29ee0b651757</id><updated>2023-05-17T10:46:31</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <ul>
@@ -325,7 +325,7 @@ React
 JavaScript
 </div>
 <div class="inline p-0 m-0 p-1 capitalize bg-yellow-400 rounded">
-<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#77">77</a></span>
+<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#78">78</a></span>
 </div>
 </div>
 <div>
@@ -465,7 +465,7 @@ Tailwindcss
 <div class="relative">
         <div class="absolute top-0 right-0">
             <div class="inline-block text-slate-400 rounded-full">
-                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#77">77</a></span>
+                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#78">78</a></span>
             </div>
         </div>
     </div>
@@ -2154,7 +2154,171 @@ arr.forEach((item, index) =&gt; {
 元素值为2，索引为1
 元素值为3，索引为2
 元素值为4，索引为3
-元素值为5，索引为4</code></pre><p>可以看到，forEach 方法遍历了整个数组，并在每次遍历时执行了指定的函数。</p><p>需要注意的是，forEach 方法不会修改原数组，也不会返回任何值，它仅仅是用来遍历数组并执行指定的函数。如果需要修改原数组，可以在函数内部进行操作，或者使用其他的数组方法，例如 map、filter 等。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>freepik-images</title><link href="https://neotw.netlify.app/#freepik-images"></link><link href="https://neotw.netlify.app/static/freepik-images.html" rel="alternative" type="text/html"></link><id>01be9fe5-a446-7b92-e4f7-ba0deae8ee49</id><updated>2023-04-12T09:21:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://www.freepik.com/free-photos-vectors/background" rel="noopener noreferrer" target="_blank">https://www.freepik.com/free-photos-vectors/background</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>fullscreen</title><link href="https://neotw.netlify.app/#fullscreen"></link><link href="https://neotw.netlify.app/static/fullscreen.html" rel="alternative" type="text/html"></link><id>74ba0736-dad9-b723-6e2c-7db4f4f4b874</id><updated>2023-04-30T22:07:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>在 Web 开发中，浏览器不允许页面自动全屏，这是为了保证用户体验和安全性。如果网站可以在未经用户授权的情况下自动全屏，那么恶意网站就有可能利用这个漏洞对用户进行攻击（如欺诈、诱导下载等），从而危害用户的利益。</p><p>因此，浏览器对于自动全屏行为采取了一系列防护措施，在浏览器中无法通过代码实现页面自动全屏。如果您希望让用户进入全屏模式，应该通过用户手动操作（如点击按钮、执行特定操作等）触发 Fullscreen API（全屏 API），以获取用户的明确授权。</p><p>需要注意的是，即使用户已经进入全屏模式，浏览器也会在用户滑动页面等操作时自动退出全屏。这是浏览器的默认行为，无法通过代码控制。</p><hr></hr><p>在 Web 开发中，元素全屏有两种：内部全屏和外部全屏。</p><p>内部全屏
+元素值为5，索引为4</code></pre><p>可以看到，forEach 方法遍历了整个数组，并在每次遍历时执行了指定的函数。</p><p>需要注意的是，forEach 方法不会修改原数组，也不会返回任何值，它仅仅是用来遍历数组并执行指定的函数。如果需要修改原数组，可以在函数内部进行操作，或者使用其他的数组方法，例如 map、filter 等。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>freepik-images</title><link href="https://neotw.netlify.app/#freepik-images"></link><link href="https://neotw.netlify.app/static/freepik-images.html" rel="alternative" type="text/html"></link><id>01be9fe5-a446-7b92-e4f7-ba0deae8ee49</id><updated>2023-04-12T09:21:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://www.freepik.com/free-photos-vectors/background" rel="noopener noreferrer" target="_blank">https://www.freepik.com/free-photos-vectors/background</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>full-type-support-with-plain-javascript</title><link href="https://neotw.netlify.app/#full-type-support-with-plain-javascript"></link><link href="https://neotw.netlify.app/static/full-type-support-with-plain-javascript.html" rel="alternative" type="text/html"></link><id>759c3b9a-f34f-ba8f-54d5-1fae25808710</id><updated>2023-06-04T22:18:18</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+<p><div class="toc" id="toc">
+        <h3>🌴 Table of Contents</h3>
+    <ul class="toc-level"><ul class="toc-level">
+          <li class="capitalize">
+            <a href="##h-0.1">
+              ⭐️ 0.1 使用纯 JavaScript 获得完整的类型支持
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.2">
+              ⭐️ 0.2 你实际上并不需要 TypeScript
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.3">
+              ⭐️ 0.3 JSDoc
+            </a>
+          </li>
+        </ul></ul></div>
+</p>
+<hr></hr>
+
+    <h2>
+      <a href="##h-0.1" id="#h-0.1">
+       ✨ 0.1
+      </a>
+  使用纯 JavaScript 获得完整的类型支持</h2>
+<ul>
+<li>
+<p>这听起来是不是很熟悉：你想写一个小脚本——无论是用于网络、命令行工具还是其他任何东西——你从 JavaScript 开始……直到你想起编写没有类型的代码是多么痛苦。因此，您将文件从 重命名.js为.ts… 并意识到您已经打开了一罐蠕虫。
+</p>
+</li>
+<li>
+<p>如果您正在为网站或图书馆编写代码，那么您需要进行编译步骤。如果你正在构建一个 CLI 脚本，你可以求助于 Deno（它支持开箱即用的 TypeScript），但是你需要设置你的 IDE 来理解 Deno API，而且混合和匹配 Deno 和节点并不总是那么容易。
+</p>
+</li>
+<li>
+<p>一旦一切都在本地运行，您需要考虑如何分发您的代码。你检查你的编译.js文件吗？您是否创建了一个 CI 管道来自动编译您的.ts文件？如果您正在编写一个库，您如何发布您的库以便其他项目可以使用它？
+</p>
+</li>
+</ul>
+
+    <h2>
+      <a href="##h-0.2" id="#h-0.2">
+       ✨ 0.2
+      </a>
+  你实际上并不需要 TypeScript</h2>
+<blockquote>
+<p>问题是您无需编写 TypeScript 即可获得静态类型分析！
+</p>
+</blockquote>
+<ul>
+<li>
+<p>通过使用 JSDoc，您可以在 JavaScript 中获得 TypeScript 的所有好处
+</p>
+</li>
+<li>
+<p>TypeScript 提供的是静态类型系统。这意味着类型信息对运行代码没有影响。当你的 TypeScript 被执行时，所有的类型信息都完全丢失了（这就是为什么你不能在不编写类型保护的情况下测试变量是否属于某种类型的原因）。
+</p>
+</li>
+<li>
+<p>这也意味着 TypeScript 只是提供给 TypeScript 分析器的附加类型信息，对运行代码的 JavaScript 引擎没有任何意义。当您将 TypeScript 编译为 JavaScript 时，它基本上只是从您的代码中删除所有类型信息，因此它再次成为有效的 JavaScript 代码。
+</p>
+</li>
+</ul>
+
+    <h2>
+      <a href="##h-0.3" id="#h-0.3">
+       ✨ 0.3
+      </a>
+  JSDoc</h2>
+<p>在 25 年前 JavaScript 诞生的三年后，JSDoc 被引入作为一种注释 JavaScript 代码的方式。它是一种形式化的标记语言，允许 IDE 在开发人员看到功能时为他们提供额外的上下文。
+</p>
+<p>大多数语言中都存在类似的注释标记，我相信您已经知道了。这是它的样子：
+</p>
+<pre class="hljs"><code class="js hljs"><span class="hljs-comment">/**
+ * This is the JSDOC block. IDEs will show this text when you hover the
+ * printName function.
+ *
+ * <span class="hljs-doctag">@param</span> {<span class="hljs-type">string</span>} <span class="hljs-variable">name</span>
+ */</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">printName</span>(<span class="hljs-params">name</span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(name)
+}
+</code></pre>
+<p>很少有人知道，JSDoc 是您充分利用 TypeScript 所需要的全部。TypeScript 分析器理解用 JSDoc 编写的类型，并为您提供与.ts文件相同的静态分析。
+</p>
+<p>JSDoc 中类型的语法
+我不会在这里提供语法的完整文档。最重要的是你知道，几乎所有你可以在.ts文件中做的事情，你都可以用 JSDoc 做。但这里有几个例子：
+</p>
+<p>具有本机类型的函数参数：
+</p>
+<pre class="hljs"><code class="js hljs"><span class="hljs-comment">/**
+ * <span class="hljs-doctag">@param</span> {<span class="hljs-type">string</span>} <span class="hljs-variable">a</span>
+ * <span class="hljs-doctag">@param</span> {<span class="hljs-type">number</span>} <span class="hljs-variable">b</span>
+ */</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">foo</span>(<span class="hljs-params">a, b</span>) {}
+使用 <span class="hljs-title class_">TypeScript</span> 开箱即用的类型：
+
+<span class="hljs-comment">/**
+ * <span class="hljs-doctag">@param</span> {<span class="hljs-type">HTMLElement</span>} <span class="hljs-variable">element</span>
+ * <span class="hljs-doctag">@param</span> {<span class="hljs-type">Window</span>} <span class="hljs-variable">window</span>
+ */</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">foo</span>(<span class="hljs-params">element, <span class="hljs-variable language_">window</span></span>) {}
+
+<span class="hljs-comment">/** <span class="hljs-doctag">@type</span> {<span class="hljs-type">number[]</span>} */</span>
+<span class="hljs-keyword">let</span> years
+定义对象字面量和函数：
+
+<span class="hljs-comment">/** <span class="hljs-doctag">@type</span> {<span class="hljs-type">{ name: string; age: number </span>}} */</span>
+<span class="hljs-keyword">let</span> person
+
+<span class="hljs-comment">/** <span class="hljs-doctag">@type</span> {<span class="hljs-type">(s: string, b: boolean) =&gt; void</span>} */</span>
+<span class="hljs-keyword">let</span> myCallback
+*.<span class="hljs-property">d</span>.<span class="hljs-property">ts</span>从文件导入类型：
+
+<span class="hljs-comment">/** <span class="hljs-doctag">@param</span> {<span class="hljs-type">import(&#x27;./types&#x27;).User</span>} user */</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">deleteUser</span> = (<span class="hljs-params">user</span>) =&gt; {}
+定义一个类型供以后使用：
+
+<span class="hljs-comment">/**
+ * <span class="hljs-doctag">@typedef</span> {<span class="hljs-type">object</span>} <span class="hljs-variable">Color</span>
+ * <span class="hljs-doctag">@property</span> {<span class="hljs-type">number</span>} <span class="hljs-variable">chroma</span>
+ * <span class="hljs-doctag">@property</span> {<span class="hljs-type">number</span>} <span class="hljs-variable">hue</span>
+ */</span>
+
+<span class="hljs-comment">/** <span class="hljs-doctag">@type</span> {<span class="hljs-type">Color[]</span>} */</span>
+<span class="hljs-keyword">const</span> colors = [
+  { <span class="hljs-attr">chroma</span>: <span class="hljs-number">0.2</span>, <span class="hljs-attr">hue</span>: <span class="hljs-number">262</span> },
+  { <span class="hljs-attr">chroma</span>: <span class="hljs-number">0.2</span>, <span class="hljs-attr">hue</span>: <span class="hljs-number">28.3</span> },
+]
+有关详尽列表，请参阅官方<span class="hljs-title class_">TypeScript</span> <span class="hljs-title class_">JSDoc</span> 文档。
+</code></pre>
+<p>如果您有复杂的类型，您仍然可以创作您的*.d.ts文件并将它们导入您的 JSDoc 注释中。
+</p>
+<p>tsconfig.json请注意，您仍然需要为打字稿设置您的项目（和 IDE），并且您需要使用编译器选项创建一个文件allowJs并将 checkJs其设置为 true：
+</p>
+<pre class="hljs"><code class="json hljs"><span class="hljs-comment">// tsconfig.json</span>
+<span class="hljs-punctuation">{</span>
+  <span class="hljs-attr">&quot;compilerOptions&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+    <span class="hljs-attr">&quot;allowJs&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-keyword">true</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">&quot;checkJs&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-keyword">true</span>
+    <span class="hljs-comment">// ...</span>
+  <span class="hljs-punctuation">}</span>
+<span class="hljs-punctuation">}</span>
+</code></pre>
+<p>什么时候写 TypeScript
+尽管完全使用 JSDoc 进行类型声明是可能的，但这并不是最方便的。TypeScript 语法更好，重复更少。
+</p>
+<p>TypeScript 团队创建了一个“类型作为注释”的 ECMAScript 提案，允许您编写 TypeScript 并在 JavaScript 引擎中运行它而无需修改（JavaScript 引擎会将这些类型注释视为注释。）
+</p>
+<p>但在这个提案被接受之前，我们一直坚持使用 JSDoc 或 TypeScript 工具链的决定。
+</p>
+<p>所以现在我的建议是：当你处理一个无论如何都有编译步骤的项目时，使用 TypeScript 没有任何缺点。这包括您想要优化生产脚本的典型网站。
+</p>
+<p>但如果您不需要编译步骤，那么坚持使用 JSDoc 类型注释可能更容易。这方面的例子是库和简单的脚本。
+</p>
+<blockquote>
+<p>ref: https://www.pausly.app/blog/full-type-support-with-plain-javascript
+</p>
+</blockquote>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>fullscreen</title><link href="https://neotw.netlify.app/#fullscreen"></link><link href="https://neotw.netlify.app/static/fullscreen.html" rel="alternative" type="text/html"></link><id>74ba0736-dad9-b723-6e2c-7db4f4f4b874</id><updated>2023-04-30T22:07:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>在 Web 开发中，浏览器不允许页面自动全屏，这是为了保证用户体验和安全性。如果网站可以在未经用户授权的情况下自动全屏，那么恶意网站就有可能利用这个漏洞对用户进行攻击（如欺诈、诱导下载等），从而危害用户的利益。</p><p>因此，浏览器对于自动全屏行为采取了一系列防护措施，在浏览器中无法通过代码实现页面自动全屏。如果您希望让用户进入全屏模式，应该通过用户手动操作（如点击按钮、执行特定操作等）触发 Fullscreen API（全屏 API），以获取用户的明确授权。</p><p>需要注意的是，即使用户已经进入全屏模式，浏览器也会在用户滑动页面等操作时自动退出全屏。这是浏览器的默认行为，无法通过代码控制。</p><hr></hr><p>在 Web 开发中，元素全屏有两种：内部全屏和外部全屏。</p><p>内部全屏
 内部全屏是指将某个元素全屏显示，此时元素内的其他元素也会随之全屏。这种方式常用于视频播放器、幻灯片等场景，用户只需看到特定的内容而不会被其他 UI 元素干扰。</p><p>外部全屏
 外部全屏是指将某个元素及其外部区域全屏显示，此时元素内的其他元素不会全屏显示。这种方式适用于需要展示较大的元素（如地图、图片等）并且需要让用户看到周围的环境。</p><p>通过 Fullscreen API（全屏 API）可以实现以上两种类型的元素全屏，具体实现方式请参考我之前的回答。</p><p>需要注意的是，使用全屏效果应该谨慎，应根据具体情况选择合适的全屏方式。同时，为了提高用户体验，最好能够给用户提供明显的退出全屏按钮，方便用户随时退出全屏模式。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>fullscreen-browsers</title><link href="https://neotw.netlify.app/#fullscreen-browsers"></link><link href="https://neotw.netlify.app/static/fullscreen-browsers.html" rel="alternative" type="text/html"></link><id>cf1806ad-3051-7505-a1a7-94468aa16137</id><updated>2023-04-29T16:00:21</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre class="hljs"><code class="javascript hljs"><span class="hljs-comment">// ==UserScript==</span>
 <span class="hljs-comment">// @name         Disable F Key in Input Fields and Toggle Full Screen</span>
@@ -2235,8 +2399,8 @@ arr.forEach((item, index) =&gt; {
 </div>
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>GettingStarted</title><link href="https://neotw.netlify.app/#GettingStarted"></link><link href="https://neotw.netlify.app/static/GettingStarted.html" rel="alternative" type="text/html"></link><id>fc927313-83cf-7e0a-53c1-21853f695851</id><updated>2023-05-30T12:43:41</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:bg-white">
 <div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-644-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-46-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-70-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-4 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-646-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-47-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-70-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-38 seconds ago-green?style=social"></img>  
 </div>
 
 
@@ -2294,7 +2458,7 @@ arr.forEach((item, index) =&gt; {
 <div class="relative">
         <div class="absolute top-0 right-0">
             <div class="inline-block text-slate-400 rounded-full">
-                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#77">77</a></span>
+                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#78">78</a></span>
             </div>
         </div>
     </div>
@@ -3839,8 +4003,8 @@ M1001 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 <li>aria2c -d <dirname> <url>&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;</url></dirname></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-badges</title><link href="https://neotw.netlify.app/#neotw-badges"></link><link href="https://neotw.netlify.app/static/neotw-badges.html" rel="alternative" type="text/html"></link><id>f934e3aa-d36d-34bb-609b-922693d9b993</id><updated>2023-06-01T21:41:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-644-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-46-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-70-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-4 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-646-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-47-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-70-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-38 seconds ago-green?style=social"></img>  
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-command</title><link href="https://neotw.netlify.app/#neotw-command"></link><link href="https://neotw.netlify.app/static/neotw-command.html" rel="alternative" type="text/html"></link><id>188385e0-6b3a-4916-a54a-061d9d29e18f</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
        ✨ 0.1
@@ -8043,7 +8207,15 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 }</code></pre><p>在这个例子中，我们使用try-catch语句块来处理可能的异常情况。在try块中，我们使用fs.readFileSync()方法同步读取JSON文件，并将文件内容存储在data变量中。如果读取文件时出现错误，catch块将捕获该错误，并输出错误信息。</p><p>以上是使用fs模块读取文件的示例，需要注意的是，在使用fs模块读取文件时，我们需要处理可能的异常情况，并根据实际情况选择异步或同步方法。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-count</title><link href="https://neotw.netlify.app/#recent-count"></link><link href="https://neotw.netlify.app/static/recent-count.html" rel="alternative" type="text/html"></link><id>6a131e9a-b046-19c3-08bd-35ef7c9ffbfc</id><updated>2023-02-08T18:16:06</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="tc-timeline">
 
 <div class="tc-menu-list-item">
-4th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#4">4</a></span>)
+4th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#6">6</a></span>)
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#full-type-support-with-plain-javascript"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyPDF%20Plugin%20Design%20Discussion"></a>
+</div>
 
 <div class="tc-menu-list-subitem">
 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#markdown-examples"></a>
@@ -8499,28 +8671,19 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 
 </div>
 
-<div class="tc-menu-list-item">
-22nd May 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#4">4</a></span>)
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#react-methods"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#badge-cards"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#session-cookie-token"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#equals"></a>
-</div>
-
-</div>
-
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-note-record</title><link href="https://neotw.netlify.app/#recent-note-record"></link><link href="https://neotw.netlify.app/static/recent-note-record.html" rel="alternative" type="text/html"></link><id>2619840e-dc84-d69e-3d32-c2258f306a66</id><updated>2023-04-11T09:39:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><ul>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#full-type-support-with-plain-javascript">full-type-support-with-plain-javascript</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyPDF%20Plugin%20Design%20Discussion">TiddlyPDF Plugin Design Discussion</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#markdown-examples">markdown-examples</a>
@@ -12559,7 +12722,10 @@ dmeo dmeo dmeo dmeo dmoe dmeo
 </p>
 <p>需要注意的是，在进行高精度加法时，应该先将 _ans 数组置零，避免多次加法产生错误。同时，在将数字存入 f 数组中时，可以先对其取模再记录进位，并将次高位与进位一起加入下一位的计算中，提高计算效率。
 </p>
-</p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>tiddlywiki-bugs</title><link href="https://neotw.netlify.app/#tiddlywiki-bugs"></link><link href="https://neotw.netlify.app/static/tiddlywiki-bugs.html" rel="alternative" type="text/html"></link><id>0b0cbc5e-3eb8-41d8-5c0c-f84013a0eb1b</id><updated>2023-02-27T12:21:28</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>translate page from en to cn</li><li>ios chrome click tiddlywiki page</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>tiddlywiki-heatmap</title><link href="https://neotw.netlify.app/#tiddlywiki-heatmap"></link><link href="https://neotw.netlify.app/static/tiddlywiki-heatmap.html" rel="alternative" type="text/html"></link><id>a35108cc-90cf-8e74-51a5-e6718323544d</id><updated>2023-01-18T10:57:42</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><center>
+</p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>TiddlyPDF Plugin Design Discussion</title><link href="https://neotw.netlify.app/#TiddlyPDF%20Plugin%20Design%20Discussion"></link><link href="https://neotw.netlify.app/static/TiddlyPDF%2520Plugin%2520Design%2520Discussion.html" rel="alternative" type="text/html"></link><id>f679ada5-83d8-1d21-067a-18540108ca23</id><updated>2023-06-04T21:00:08</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+<p>I have tried to export a single tiddler to PDF using the third-party library jspdf, but I didn’t study the aspect ratio of the exported PDF in depth, so the result was not good. Therefore, I tried exporting it in PNG format, and the effect seemed to be better. In addition, images are easier to share than PDFs, while PDFs are more suitable for document viewing. The above image content was exported using tiddlywiki-tid2pdf.
+</p>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>tiddlywiki-bugs</title><link href="https://neotw.netlify.app/#tiddlywiki-bugs"></link><link href="https://neotw.netlify.app/static/tiddlywiki-bugs.html" rel="alternative" type="text/html"></link><id>0b0cbc5e-3eb8-41d8-5c0c-f84013a0eb1b</id><updated>2023-02-27T12:21:28</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>translate page from en to cn</li><li>ios chrome click tiddlywiki page</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>tiddlywiki-heatmap</title><link href="https://neotw.netlify.app/#tiddlywiki-heatmap"></link><link href="https://neotw.netlify.app/static/tiddlywiki-heatmap.html" rel="alternative" type="text/html"></link><id>a35108cc-90cf-8e74-51a5-e6718323544d</id><updated>2023-01-18T10:57:42</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><center>
 <button class="tc-btn-invisible tc-tiddlylink">
 				<svg enable-background="new 0 0 48 48" fill="currentColor" height="1em" stroke="currentColor" stroke-width="0" version="1" viewBox="0 0 48 48" width="1em" xmlns="http://www.w3.org/2000/svg"><polygon fill="#2196F3" points="30.9,43 34,39.9 18.1,24 34,8.1 30.9,5 12,24"></polygon></svg>
         </button> <strong>2023</strong> <button class="tc-btn-invisible tc-tiddlylink">
