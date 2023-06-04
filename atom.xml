@@ -594,7 +594,7 @@ RESPONSE=$(curl -s -X POST -H <span class="hljs-string">&quot;Content-Type: appl
 </li>
 </ul>
 </blockquote>
-<h3><a href="##h-1.2.1" id="#h-1.2.1">1.2.1.</a> 类似官网风格</h3>
+<h3><a href="##h-1.2.NaN" id="#h-1.2.NaN">1.2.NaN.</a> 类似官网风格</h3>
 <ul>
 <li>
 <p>[ 🆓🔔 ] <a class="tc-tiddlylink-external _codified_" href="https://gpt4.gravityengine.cc/" rel="noopener noreferrer" target="_blank">https://gpt4.gravityengine.cc/</a> - 2023-05-16
@@ -799,7 +799,7 @@ RESPONSE=$(curl -s -X POST -H <span class="hljs-string">&quot;Content-Type: appl
 </li>
 </ul>
 <hr></hr>
-<h3><a href="##h-1.2.2" id="#h-1.2.2">1.2.2.</a> <a class="tc-tiddlylink-external _codified_" href="https://github.com/ddiu8081/chatgpt-demo" rel="noopener noreferrer" target="_blank">chatgpt-demo</a> 风格</h3>
+<h3><a href="##h-1.2.NaN" id="#h-1.2.NaN">1.2.NaN.</a> <a class="tc-tiddlylink-external _codified_" href="https://github.com/ddiu8081/chatgpt-demo" rel="noopener noreferrer" target="_blank">chatgpt-demo</a> 风格</h3>
 <ul>
 <li>
 <p>[ 🆓 ] <a class="tc-tiddlylink-external _codified_" href="https://index.chat.bnu120.space" rel="noopener noreferrer" target="_blank">https://index.chat.bnu120.space</a> - 2023-04-28
@@ -855,7 +855,7 @@ RESPONSE=$(curl -s -X POST -H <span class="hljs-string">&quot;Content-Type: appl
 </li>
 </ul>
 <hr></hr>
-<h3><a href="##h-1.2.3" id="#h-1.2.3">1.2.3.</a> 其他风格</h3>
+<h3><a href="##h-1.2.NaN" id="#h-1.2.NaN">1.2.NaN.</a> 其他风格</h3>
 <ul>
 <li>
 <p>[ 🆓 ] <a class="tc-tiddlylink-external _codified_" href="https://ai.heptax.com" rel="noopener noreferrer" target="_blank">askwise https://ai.heptax.com</a>
@@ -1043,7 +1043,7 @@ RESPONSE=$(curl -s -X POST -H <span class="hljs-string">&quot;Content-Type: appl
 </li>
 </ul>
 <hr></hr>
-<h3><a href="##h-1.2.4" id="#h-1.2.4">1.2.4.</a> 替代方案</h3>
+<h3><a href="##h-1.2.NaN" id="#h-1.2.NaN">1.2.NaN.</a> 替代方案</h3>
 <ul>
 <li>
 <p>[ 🆓 ] <a class="tc-tiddlylink-external _codified_" href="https://huggingface.co/chat" rel="noopener noreferrer" target="_blank">https://huggingface.co/chat</a> from https://huggingface.co - 2023-04-26
@@ -1087,12 +1087,12 @@ RESPONSE=$(curl -s -X POST -H <span class="hljs-string">&quot;Content-Type: appl
 </li>
 </ul>
 <hr></hr>
-<h3><a href="##h-1.2.5" id="#h-1.2.5">1.2.5.</a> 软件</h3>
+<h3><a href="##h-1.2.NaN" id="#h-1.2.NaN">1.2.NaN.</a> 软件</h3>
 <ul>
 <li>[ 🆓🔔 ] <a class="tc-tiddlylink-external _codified_" href="https://www.cursor.so/" rel="noopener noreferrer" target="_blank">Cursor</a></li>
 </ul>
 <hr></hr>
-<h3><a href="##h-1.2.6" id="#h-1.2.6">1.2.6.</a> 🚫 已失效</h3>
+<h3><a href="##h-1.2.NaN" id="#h-1.2.NaN">1.2.NaN.</a> 🚫 已失效</h3>
 <details>
 <summary>点击展开</summary>
 <ul>
@@ -1943,7 +1943,7 @@ Undefined widget 'english'
 <h2><a href="##h-0.2" id="#h-0.2">0.2.</a> event 委托</h2>
 <p>简单来说，就是利用事件冒泡，将某个元素上的事件委托给他的父级。
 </p>
-<h3><a href="##h-0.2.1" id="#h-0.2.1">0.2.1.</a> 优点</h3>
+<h3><a href="##h-0.2.NaN" id="#h-0.2.NaN">0.2.NaN.</a> 优点</h3>
 <ul>
 <li>减少内存消耗</li>
 <li>动态绑定事件</li>
@@ -2179,7 +2179,7 @@ arr.forEach((item, index) =&gt; {
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>GettingStarted</title><link href="https://neotw.netlify.app/#GettingStarted"></link><link href="https://neotw.netlify.app/static/GettingStarted.html" rel="alternative" type="text/html"></link><id>fc927313-83cf-7e0a-53c1-21853f695851</id><updated>2023-05-30T12:43:41</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:bg-white">
 <div class="dark:hidden">
 <img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-644-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-46-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-70-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-20 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-39 minutes ago-green?style=social"></img>  
 </div>
 
 
@@ -3263,14 +3263,14 @@ arr.forEach(item =&gt; {
 // 使用 map 方法
 const newArr = arr.map(item =&gt; item * 2);
 console.log(newArr);</code></pre><p>在使用这两种方法时，需要注意的是，回调函数的参数不同。<code>forEach</code> 方法的回调函数有三个参数：当前遍历的元素、当前元素的索引和整个数组。而 <code>map</code> 方法的回调函数只有两个参数：当前遍历的元素和当前元素的索引。</p><p>希望这些信息可以帮助您更好地理解 <code>forEach</code> 和 <code>map</code> 方法之间的区别。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>maple-hand</title><link href="https://neotw.netlify.app/#maple-hand"></link><link href="https://neotw.netlify.app/static/maple-hand.html" rel="alternative" type="text/html"></link><id>027ea563-1e2a-e6cf-d184-c314fcc15dae</id><updated>2023-04-18T10:08:25</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>maple hand</p></div></content><author><name>oeyoews</name></author></entry><entry><title>margin-order</title><link href="https://neotw.netlify.app/#margin-order"></link><link href="https://neotw.netlify.app/static/margin-order.html" rel="alternative" type="text/html"></link><id>92b8eb3a-ee84-e2ae-265b-09aae86d6866</id><updated>2023-03-20T22:24:27</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>top right bottom left(clock)</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>markdown-resume</title><link href="https://neotw.netlify.app/#markdown-resume"></link><link href="https://neotw.netlify.app/static/markdown-resume.html" rel="alternative" type="text/html"></link><id>c8069c2c-e807-797b-a0fd-0c16ed3adb5c</id><updated>2023-03-30T13:40:28</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li><a class="tc-tiddlylink-external" href="http://cv.ftqq.com/?fr=github" rel="noopener noreferrer" target="_blank">http://cv.ftqq.com/?fr=github</a>#</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>markdown-test</title><link href="https://neotw.netlify.app/#markdown-test"></link><link href="https://neotw.netlify.app/static/markdown-test.html" rel="alternative" type="text/html"></link><id>13a076a3-1f1c-7d8e-6144-3b028dbbba0b</id><updated>2023-06-04T18:10:27</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
-<p><div class="toc" id="toc"><h3>Table of Contents</h3><ul class="toc-level"><li><a href="##h-1">1.</a> 标题</li><ul class="toc-level"><li><a href="##h-1.1">1.1.</a> 二级标题</li><ul class="toc-level"><li><a href="##h-1.1.1">1.1.1.</a> 三级标题</li></ul></ul><li><a href="##h-2">2.</a> 段落</li><li><a href="##h-3">3.</a> 列表</li><ul class="toc-level"><li><a href="##h-3.1">3.1.</a> 无序列表</li><li><a href="##h-3.2">3.2.</a> 有序列表</li></ul><li><a href="##h-4">4.</a> 引用</li><li><a href="##h-5">5.</a> 代码</li><ul class="toc-level"><li><a href="##h-5.1">5.1.</a> 行内代码</li><li><a href="##h-5.2">5.2.</a> 代码块</li><li><a href="##h-5.3">5.3.</a> Markdown Task</li><li><a href="##h-5.4">5.4.</a> emoji</li><li><a href="##h-5.5">5.5.</a> better render</li><li><a href="##h-5.6">5.6.</a> fancybox macro image</li><li><a href="##h-5.7">5.7.</a> image</li><li><a href="##h-5.8">5.8.</a> link</li><li><a href="##h-5.9">5.9.</a> underline</li><li><a href="##h-5.10">5.10.</a> mark</li><li><a href="##h-5.11">5.11.</a> table</li><li><a href="##h-5.12">5.12.</a> footnote</li><li><a href="##h-5.13">5.13.</a> Katex</li></ul></ul></div>
+<p><div class="toc" id="toc"><h3>Table of Contents</h3><ul class="toc-level"><li><a href="##h-1">⭐️ 1.</a> 标题</li><ul class="toc-level"><li><a href="##h-1.1">⭐️ 1.1.</a> 二级标题</li><ul class="toc-level"><li><a href="##h-1.1.NaN">⭐️ 1.1.NaN.</a> 三级标题</li></ul></ul><li><a href="##h-2">⭐️ 2.</a> 段落</li><li><a href="##h-3">⭐️ 3.</a> 列表</li><ul class="toc-level"><li><a href="##h-3.1">⭐️ 3.1.</a> 无序列表</li><li><a href="##h-3.2">⭐️ 3.2.</a> 有序列表</li></ul><li><a href="##h-4">⭐️ 4.</a> 引用</li><li><a href="##h-5">⭐️ 5.</a> 代码</li><ul class="toc-level"><li><a href="##h-5.1">⭐️ 5.1.</a> 行内代码</li><li><a href="##h-5.2">⭐️ 5.2.</a> 代码块</li><li><a href="##h-5.3">⭐️ 5.3.</a> Markdown Task</li><li><a href="##h-5.4">⭐️ 5.4.</a> emoji</li><li><a href="##h-5.5">⭐️ 5.5.</a> better render</li><li><a href="##h-5.6">⭐️ 5.6.</a> fancybox macro image</li><li><a href="##h-5.7">⭐️ 5.7.</a> image</li><li><a href="##h-5.8">⭐️ 5.8.</a> link</li><li><a href="##h-5.9">⭐️ 5.9.</a> underline</li><li><a href="##h-5.10">⭐️ 5.10.</a> mark</li><li><a href="##h-5.11">⭐️ 5.11.</a> table</li><li><a href="##h-5.12">⭐️ 5.12.</a> footnote</li><li><a href="##h-5.13">⭐️ 5.13.</a> Katex</li></ul></ul></div>
 </p>
 <h1><a href="##h-1" id="#h-1">1.</a> 标题</h1>
 <h2><a href="##h-1.1" id="#h-1.1">1.1.</a> 二级标题</h2>
-<h3><a href="##h-1.1.1" id="#h-1.1.1">1.1.1.</a> 三级标题</h3>
-<h4><a href="##h-1.1.1.1" id="#h-1.1.1.1">1.1.1.1.</a> 四级标题</h4>
-<h5><a href="##h-1.1.1.1.1" id="#h-1.1.1.1.1">1.1.1.1.1.</a> 五级标题</h5>
-<h6><a href="##h-1.1.1.1.1.1" id="#h-1.1.1.1.1.1">1.1.1.1.1.1.</a> 六级标题</h6>
+<h3><a href="##h-1.1.NaN" id="#h-1.1.NaN">1.1.NaN.</a> 三级标题</h3>
+<h4><a href="##h-1.1.NaN.NaN" id="#h-1.1.NaN.NaN">1.1.NaN.NaN.</a> 四级标题</h4>
+<h5><a href="##h-1.1.NaN.NaN.NaN" id="#h-1.1.NaN.NaN.NaN">1.1.NaN.NaN.NaN.</a> 五级标题</h5>
+<h6><a href="##h-1.1.NaN.NaN.NaN.NaN" id="#h-1.1.NaN.NaN.NaN.NaN">1.1.NaN.NaN.NaN.NaN.</a> 六级标题</h6>
 <h1><a href="##h-2" id="#h-2">2.</a> 段落</h1>
 <p>这是一段普通的文本。
 </p>
@@ -3505,7 +3505,7 @@ M1001 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 &lt;/ul&gt;
 &lt;/div&gt;</url></dirname></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-badges</title><link href="https://neotw.netlify.app/#neotw-badges"></link><link href="https://neotw.netlify.app/static/neotw-badges.html" rel="alternative" type="text/html"></link><id>f934e3aa-d36d-34bb-609b-922693d9b993</id><updated>2023-06-01T21:41:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:hidden">
 <img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-644-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-46-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-70-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-20 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-39 minutes ago-green?style=social"></img>  
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-command</title><link href="https://neotw.netlify.app/#neotw-command"></link><link href="https://neotw.netlify.app/static/neotw-command.html" rel="alternative" type="text/html"></link><id>188385e0-6b3a-4916-a54a-061d9d29e18f</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <h2><a href="##h-0.1" id="#h-0.1">0.1.</a> cp</h2>
 <pre class="hljs"><code class="shell hljs">eg: dir: 1/2/3
@@ -3634,39 +3634,39 @@ docker rename old_name new_name    # 容器重新命名
 <li>echo $XDG_SECCION_TYPE # show x11</li>
 </ul>
 &lt;/div&gt;</ALIDAS></ID></p></li></ID></p></li></ID></p></li></ID></p></li></ID></p></li></ID></p></li></ID></p></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-gettingstarted</title><link href="https://neotw.netlify.app/#neotw-gettingstarted"></link><link href="https://neotw.netlify.app/static/neotw-gettingstarted.html" rel="alternative" type="text/html"></link><id>c57ae495-bd9a-6e00-25d8-f13f23fda7e1</id><updated>2023-03-01T13:54:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>GettingStarted</p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-git</title><link href="https://neotw.netlify.app/#neotw-git"></link><link href="https://neotw.netlify.app/static/neotw-git.html" rel="alternative" type="text/html"></link><id>3e952baf-6028-6657-583b-eb758a0534f2</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
-<h3><a href="##h-0.0.1" id="#h-0.0.1">0.0.1.</a> Reverd</h3>
+<h3><a href="##h-0.0.NaN" id="#h-0.0.NaN">0.0.NaN.</a> Reverd</h3>
 <ul>
 <li>git revert id    # 会有冲突出现  ？</li>
 </ul>
-<h3><a href="##h-0.0.2" id="#h-0.0.2">0.0.2.</a> Log</h3>
+<h3><a href="##h-0.0.NaN" id="#h-0.0.NaN">0.0.NaN.</a> Log</h3>
 <ul>
 <li>git log --stat    # 查看变动的具体文件</li>
 <li>git reflog    # show local log</li>
 <li>git log --all --graph   #查看所有的分支记录  直观</li>
 <li>git log --all -n 4 --graph  --oneline     # 结合  部分的参数</li>
 </ul>
-<h3><a href="##h-0.0.3" id="#h-0.0.3">0.0.3.</a> Misc</h3>
+<h3><a href="##h-0.0.NaN" id="#h-0.0.NaN">0.0.NaN.</a> Misc</h3>
 <ul>
 <li>git -b develop https://github.com/… # only to clone a appointment</li>
 <li>git ls-remote  //  detail</li>
 </ul>
-<h3><a href="##h-0.0.4" id="#h-0.0.4">0.0.4.</a> Status</h3>
+<h3><a href="##h-0.0.NaN" id="#h-0.0.NaN">0.0.NaN.</a> Status</h3>
 <ul>
 <li>git show -sb</li>
 </ul>
-<h3><a href="##h-0.0.5" id="#h-0.0.5">0.0.5.</a> Count</h3>
+<h3><a href="##h-0.0.NaN" id="#h-0.0.NaN">0.0.NaN.</a> Count</h3>
 <ul>
 <li>git rev-list --count branch_name</li>
 </ul>
-<h3><a href="##h-0.0.6" id="#h-0.0.6">0.0.6.</a> Gc</h3>
+<h3><a href="##h-0.0.NaN" id="#h-0.0.NaN">0.0.NaN.</a> Gc</h3>
 <ul>
 <li>git gc</li>
 </ul>
-<h3><a href="##h-0.0.7" id="#h-0.0.7">0.0.7.</a> Show</h3>
+<h3><a href="##h-0.0.NaN" id="#h-0.0.NaN">0.0.NaN.</a> Show</h3>
 <ul>
 <li>git show main:readme.md</li>
 </ul>
-<h3><a href="##h-0.0.8" id="#h-0.0.8">0.0.8.</a> Tag</h3>
+<h3><a href="##h-0.0.NaN" id="#h-0.0.NaN">0.0.NaN.</a> Tag</h3>
 <ul>
 <li>git tag name</li>
 <li>git tag -a tagname commit_id</li>
@@ -3680,31 +3680,31 @@ docker rename old_name new_name    # 容器重新命名
 <ul>
 <li>git push --tags</li>
 </ul>
-<h3><a href="##h-0.0.9" id="#h-0.0.9">0.0.9.</a> Reset</h3>
+<h3><a href="##h-0.0.NaN" id="#h-0.0.NaN">0.0.NaN.</a> Reset</h3>
 <ul>
 <li>git reset – filename  or git restore --staged/-S <filename>&lt;/li&gt;
 <li>git restore file (workspace)</li>
 <li>git reset --hard id / tag</li>
 &lt;/ul&gt;
-<h3><a href="##h-0.0.10" id="#h-0.0.10">0.0.10.</a> Diff</h3>
+<h3><a href="##h-0.0.NaN" id="#h-0.0.NaN">0.0.NaN.</a> Diff</h3>
 <ul>
 <li>git diff main dev</li>
 <li>git diff --staged</li>
 </ul>
-<h3><a href="##h-0.0.11" id="#h-0.0.11">0.0.11.</a> Gitignore</h3>
+<h3><a href="##h-0.0.NaN" id="#h-0.0.NaN">0.0.NaN.</a> Gitignore</h3>
 <ul>
 <li>doc/*.txt # 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt</li>
 <li>匹配模式最后跟"/"说明要忽略的是目录</li>
 <li>可以忽略该仓库的所有文件,不用写递归的路径</li>
 <li>deploy*/   # 忽略以deploy开头任意字符结束的目录</li>
 </ul>
-<h3><a href="##h-0.0.12" id="#h-0.0.12">0.0.12.</a> Remote</h3>
+<h3><a href="##h-0.0.NaN" id="#h-0.0.NaN">0.0.NaN.</a> Remote</h3>
 <ul>
 <li>git remote rm origin           # 删除已经关联的远程仓库</li>
 <li>git remote add github git@github:oeyoews/src-gitee.git</li>
 <li>git remote [-v]</li>
 </ul>
-<h3><a href="##h-0.0.13" id="#h-0.0.13">0.0.13.</a> Branch</h3>
+<h3><a href="##h-0.0.NaN" id="#h-0.0.NaN">0.0.NaN.</a> Branch</h3>
 <ul>
 <li>git branch -vv # only show local branchh</li>
 <li>git  branch branchname   # 建立新分支</li>
@@ -3717,7 +3717,7 @@ docker rename old_name new_name    # 容器重新命名
 <ul>
 <li>git branch -a/-r</li>
 </ul>
-<h3><a href="##h-0.0.14" id="#h-0.0.14">0.0.14.</a> Checkout</h3>
+<h3><a href="##h-0.0.NaN" id="#h-0.0.NaN">0.0.NaN.</a> Checkout</h3>
 <ul>
 <li>git checkout – name //使用head的最新内容替换工作目录的内容LL ( only workspace)</li>
 <li>git checkout branchname         # switch anotherbranch (git branch dev    &amp;&amp; git checkout dev)</li>
@@ -3727,7 +3727,7 @@ docker rename old_name new_name    # 容器重新命名
 <li>git checkout filename # in workspace</li>
 <li>git checkout -                  # 切换到上个分支</li>
 &lt;/ul&gt;
-<h3><a href="##h-0.0.15" id="#h-0.0.15">0.0.15.</a> Push</h3>
+<h3><a href="##h-0.0.NaN" id="#h-0.0.NaN">0.0.NaN.</a> Push</h3>
 <ul>
 <li>git push -f</li>
 <li>git pull -p # 在拉去的时候自动删除远程分支已经不存在的本地分支  prune</li>
@@ -3744,11 +3744,11 @@ docker rename old_name new_name    # 容器重新命名
 <code class="_codified_">git push -f -u origin master            </code>
 版本回退 但是会抹去远程库的提交信息 首先进行本地的版本回退，由于进行里本地的版本回滚，版本将落后于远程分支，因此必须要使用强制推送进行版本覆盖，然后进行向远程仓库强制推送  master 为默认本仓库创建的第一个分支， 而 origin为默认是指向这一个仓库，相当于别名</li>
 </ul>
-<h3><a href="##h-0.0.16" id="#h-0.0.16">0.0.16.</a> Commit</h3>
+<h3><a href="##h-0.0.NaN" id="#h-0.0.NaN">0.0.NaN.</a> Commit</h3>
 <ul>
 <li>git commit -am ’ ’  // commit file message already added</li>
 </ul>
-<h3><a href="##h-0.0.17" id="#h-0.0.17">0.0.17.</a> Merge</h3>
+<h3><a href="##h-0.0.NaN" id="#h-0.0.NaN">0.0.NaN.</a> Merge</h3>
 <ul>
 <li>git branch --merged    # 显示已经合并到当前分支的分支列表  --no-merged</li>
 <li>git pull  --rebase origin master  # 根据远端的readme生成readme文件，在本地生成readme文件</li>
@@ -3756,16 +3756,16 @@ docker rename old_name new_name    # 容器重新命名
 <li>git push origin --all # 推送所有的分支到远程仓库</li>
 <li>git push -u origin bugs    #    将本地的bugs分支推送到远程的bugs，如果没有则会被建立，并且建立两者的关联，之后直接使用git push  就可以</li>
 </ul>
-<h3><a href="##h-0.0.18" id="#h-0.0.18">0.0.18.</a> Cache</h3>
+<h3><a href="##h-0.0.NaN" id="#h-0.0.NaN">0.0.NaN.</a> Cache</h3>
 <ul>
 <li>git rm -r --cached .</li>
 <li>git rm --cached [file]</li>
 </ul>
-<h3><a href="##h-0.0.19" id="#h-0.0.19">0.0.19.</a> Mv</h3>
+<h3><a href="##h-0.0.NaN" id="#h-0.0.NaN">0.0.NaN.</a> Mv</h3>
 <ul>
 <li>git mv xxx xxxx   # 可以在暂存区直接修改，不用再次提交</li>
 </ul>
-<h3><a href="##h-0.0.20" id="#h-0.0.20">0.0.20.</a> Config</h3>
+<h3><a href="##h-0.0.NaN" id="#h-0.0.NaN">0.0.NaN.</a> Config</h3>
 <ul>
 <li>~/.gitconfig   # 全局配置文件</li>
 <li>git config --global core.editor vim</li>
@@ -3774,25 +3774,25 @@ docker rename old_name new_name    # 容器重新命名
 <li>git config --global user.name “oeyoews”</li>
 <li>git config --global user.email “2956398608@qq.com” # 带有空格</li>
 </ul>
-<h3><a href="##h-0.0.21" id="#h-0.0.21">0.0.21.</a> Ssh</h3>
+<h3><a href="##h-0.0.NaN" id="#h-0.0.NaN">0.0.NaN.</a> Ssh</h3>
 <ul>
 <li>ssh-keygen</li>
 <li>~/.ssh/id_ras.pub</li>
 <li>ssh -T git@github.com</li>
 </ul>
-<h3><a href="##h-0.0.22" id="#h-0.0.22">0.0.22.</a> Multi_repository_address</h3>
+<h3><a href="##h-0.0.NaN" id="#h-0.0.NaN">0.0.NaN.</a> Multi_repository_address</h3>
 <ul>
 <li>在.git 文件里面的url下面添加一个新的url，可以同时推送到github和gitee上。</li>
 </ul>
-<h3><a href="##h-0.0.23" id="#h-0.0.23">0.0.23.</a> Gitlab</h3>
+<h3><a href="##h-0.0.NaN" id="#h-0.0.NaN">0.0.NaN.</a> Gitlab</h3>
 <ul>
 <li>settings -&gt; general -&gt; advance  # 修改clone的地址 gitlab</li>
 </ul>
-<h3><a href="##h-0.0.24" id="#h-0.0.24">0.0.24.</a> Enhance_speed</h3>
+<h3><a href="##h-0.0.NaN" id="#h-0.0.NaN">0.0.NaN.</a> Enhance_speed</h3>
 <ul>
 <li>https://raw.githubusercontent.com/ 进行了代理，地址为 https://raw.fastgit.org/ 。</li>
 </ul>
-<h3><a href="##h-0.0.25" id="#h-0.0.25">0.0.25.</a> GitReset</h3>
+<h3><a href="##h-0.0.NaN" id="#h-0.0.NaN">0.0.NaN.</a> GitReset</h3>
 <p><code class="_codified_">git reset --hard id  </code>
 hard 表示将工作区 暂存区 版本库记录 恢复到某一定版本，commit的信息会被删除，并且不会保存之前错误的源码， id不确定要写几位，一般写前面几位就行了，git会自动寻找   HEAD 表示当前版本
 <code class="_codified_">git reset  --mixed </code>
@@ -3801,12 +3801,12 @@ hard 表示将工作区 暂存区 版本库记录 恢复到某一定版本，com
 <p>等于 <code class="_codified_"> git reset</code> ，会保留源码，就是之前的所有提交信息都会被保留，只是将commit和index的信息回退，即更改指针的指向,reset 的指针向后移动了，删除里一些commit，而revert的指针是一直向前的，在commit之后有commit一次
 </p>
 </blockquote>
-<h3><a href="##h-0.0.26" id="#h-0.0.26">0.0.26.</a> Relative_web</h3>
+<h3><a href="##h-0.0.NaN" id="#h-0.0.NaN">0.0.NaN.</a> Relative_web</h3>
 <p><a class="tc-tiddlylink-external _codified_" href="https://gitee.com/help/articles/4232#article-header0" rel="noopener noreferrer" target="_blank">thin_large_repository</a>
 <a class="tc-tiddlylink-external _codified_" href="https://www.cnblogs.com/sxdcgaq8080/p/10530176.html" rel="noopener noreferrer" target="_blank">auto push in gitlab github gitee</a>
 <a class="tc-tiddlylink-external _codified_" href="https://www.tag1consulting.com/blog/interview-linus-torvalds-linux-and-git" rel="noopener noreferrer" target="_blank">Linux and Git</a>
 </p>
-<h3><a href="##h-0.0.27" id="#h-0.0.27">0.0.27.</a> git_submoudle(子模块)</h3>
+<h3><a href="##h-0.0.NaN" id="#h-0.0.NaN">0.0.NaN.</a> git_submoudle(子模块)</h3>
 <ul>
 <li>https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97</li>
 <li>git clone url --recurse-submoudles</li>
@@ -3815,11 +3815,11 @@ hard 表示将工作区 暂存区 版本库记录 恢复到某一定版本，com
 <li>git submoudle add url /path/name</li>
 <li>git submoudle update --remote</li>
 </ul>
-<h3><a href="##h-0.0.28" id="#h-0.0.28">0.0.28.</a> git pull</h3>
+<h3><a href="##h-0.0.NaN" id="#h-0.0.NaN">0.0.NaN.</a> git pull</h3>
 <ul>
 <li>git pull origin --depth 1 develop:main</li>
 </ul>
-<h3><a href="##h-0.0.29" id="#h-0.0.29">0.0.29.</a> commit</h3>
+<h3><a href="##h-0.0.NaN" id="#h-0.0.NaN">0.0.NaN.</a> commit</h3>
 <ul>
 <li>
 <p>git commit -m " empty commit " --allow-empty
@@ -3909,7 +3909,7 @@ q w
 <h2><a href="##h-0.1" id="#h-0.1">0.1.</a> lua</h2>
 <p><a class="tc-tiddlylink-external _codified_" href="https://www.2n.pl/blog/how-to-write-neovim-plugins-in-lua" rel="noopener noreferrer" target="_blank">make_lua_plugin</a>
 </p>
-<h3><a href="##h-0.1.1" id="#h-0.1.1">0.1.1.</a> NOTE:</h3>
+<h3><a href="##h-0.1.NaN" id="#h-0.1.NaN">0.1.NaN.</a> NOTE:</h3>
 <ul>
 <li>
 <p>unpack(v5.1)  ==&gt; table.unpack(v5.4)
@@ -3920,7 +3920,7 @@ q w
 </p>
 </li>
 </ul>
-<h3><a href="##h-0.1.2" id="#h-0.1.2">0.1.2.</a> logical operator</h3>
+<h3><a href="##h-0.1.NaN" id="#h-0.1.NaN">0.1.NaN.</a> logical operator</h3>
 <ul>
 <li>
 <p>and: if has false, return fasle
@@ -3935,7 +3935,7 @@ q w
 </p>
 </li>
 </ul>
-<h3><a href="##h-0.1.3" id="#h-0.1.3">0.1.3.</a> Type</h3>
+<h3><a href="##h-0.1.NaN" id="#h-0.1.NaN">0.1.NaN.</a> Type</h3>
 <ul>
 <li>number string</li>
 <li>nil boolean function</li>
@@ -5571,7 +5571,7 @@ mycli -uroot -p 123</li>
 </ul>
 </li>
 <li>
-<h3><a href="##h-2.5.1" id="#h-2.5.1">2.5.1.</a> downgrade</h3>
+<h3><a href="##h-2.5.NaN" id="#h-2.5.NaN">2.5.NaN.</a> downgrade</h3>
 </li>
 <li>
 <ul>
@@ -11240,7 +11240,7 @@ dmeo dmeo dmeo dmeo dmoe dmeo
 </ul>
 </div></div></content><author><name>oeyoews</name></author></entry><entry><title>this</title><link href="https://neotw.netlify.app/#this"></link><link href="https://neotw.netlify.app/static/this.html" rel="alternative" type="text/html"></link><id>9e925e93-41b4-90bf-d3b4-c4ca3b0c1ef2</id><updated>2023-05-29T13:20:14</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <h2><a href="##h-0.1" id="#h-0.1">0.1.</a> JavaScript this 关键字</h2>
-<h3><a href="##h-0.1.1" id="#h-0.1.1">0.1.1.</a> 面向对象语言中 this 表示当前对象的一个引用。</h3>
+<h3><a href="##h-0.1.NaN" id="#h-0.1.NaN">0.1.NaN.</a> 面向对象语言中 this 表示当前对象的一个引用。</h3>
 <p>但在 JavaScript 中 this 不是固定不变的，它会随着执行环境的改变而改变。
 </p>
 <p>在方法中，this 表示该方法所属的对象。
@@ -11352,10 +11352,10 @@ dmeo dmeo dmeo dmeo dmoe dmeo
 <p>输出文件piggy.out，仅一个整数，表示将n只小猪安置在m个房间且没有房间空闲的方案数。
 </p>
 <h2><a href="##h-1.5" id="#h-1.5">1.5.</a> 样例 #1</h2>
-<h3><a href="##h-1.5.1" id="#h-1.5.1">1.5.1.</a> 样例输入 #1</h3>
+<h3><a href="##h-1.5.NaN" id="#h-1.5.NaN">1.5.NaN.</a> 样例输入 #1</h3>
 <pre><code>4 2
 </code></pre>
-<h3><a href="##h-1.5.2" id="#h-1.5.2">1.5.2.</a> 样例输出 #1</h3>
+<h3><a href="##h-1.5.NaN" id="#h-1.5.NaN">1.5.NaN.</a> 样例输出 #1</h3>
 <pre><code>7
 </code></pre>
 <h2><a href="##h-1.6" id="#h-1.6">1.6.</a> 样例 #2</h2>
@@ -11812,7 +11812,7 @@ https://github.com/:user.atom
 <p>下面是 <code class="_codified_">useState</code> 和 <code class="_codified_">let</code> 变量的一些使用示例：
 </p>
 <h2><a href="##h-0.1" id="#h-0.1">0.1.</a> <code class="_codified_">useState</code> 的用例</h2>
-<h3><a href="##h-0.1.1" id="#h-0.1.1">0.1.1.</a> 基本用法</h3>
+<h3><a href="##h-0.1.NaN" id="#h-0.1.NaN">0.1.NaN.</a> 基本用法</h3>
 <pre class="hljs"><code class="jsx hljs"><span class="hljs-keyword">import</span> <span class="hljs-title class_">React</span>, { useState } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
 
 <span class="hljs-keyword">function</span> <span class="hljs-title function_">Counter</span>(<span class="hljs-params"></span>) {
@@ -11828,7 +11828,7 @@ https://github.com/:user.atom
 </code></pre>
 <p>在这个例子中，我们使用 <code class="_codified_">useState</code> 钩子来保存一个计数器状态。初始值为 <code class="_codified_">0</code>，每次点击按钮时，通过调用 <code class="_codified_">setCount</code> 更新状态值，从而触发组件的重新渲染，并更新页面上的计数器。
 </p>
-<h3><a href="##h-0.1.2" id="#h-0.1.2">0.1.2.</a> 使用对象作为状态值</h3>
+<h3><a href="##h-0.1.NaN" id="#h-0.1.NaN">0.1.NaN.</a> 使用对象作为状态值</h3>
 <pre class="hljs"><code class="jsx hljs"><span class="hljs-keyword">import</span> <span class="hljs-title class_">React</span>, { useState } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
 
 <span class="hljs-keyword">function</span> <span class="hljs-title function_">UserInfo</span>(<span class="hljs-params"></span>) {
@@ -11931,7 +11931,7 @@ cons [count, setCount] = <span class="hljs-title function_">useState</span>(<spa
 </div></div></content><author><name>oeyoews</name></author></entry><entry><title>web3-xlog</title><link href="https://neotw.netlify.app/#web3-xlog"></link><link href="https://neotw.netlify.app/static/web3-xlog.html" rel="alternative" type="text/html"></link><id>1f9b0b5c-b750-8e49-b903-47cbdc26994c</id><updated>2023-03-30T14:07:12</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div>一种比较新的写作方式</div></blockquote><ul><li>xlog.app</li></ul><blockquote><div>personal xlog: <a class="tc-tiddlylink-external" href="https://oeyoews-6659.xlog.app/" rel="noopener noreferrer" target="_blank">https://oeyoews-6659.xlog.app/</a></div></blockquote></div></content><author><name>oeyoews</name></author></entry><entry><title>webflow-university</title><link href="https://neotw.netlify.app/#webflow-university"></link><link href="https://neotw.netlify.app/static/webflow-university.html" rel="alternative" type="text/html"></link><id>7403b0b5-dd8c-aae3-8535-a00cd1bd955b</id><updated>2023-03-31T11:15:54</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></content><author><name>oeyoews</name></author></entry><entry><title>webgpu</title><link href="https://neotw.netlify.app/#webgpu"></link><link href="https://neotw.netlify.app/static/webgpu.html" rel="alternative" type="text/html"></link><id>5e6fa19d-e6c4-1918-b1c2-4f7cb6b2b02c</id><updated>2023-04-09T19:35:36</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>webgpu</p></div></content><author><name>oeyoews</name></author></entry><entry><title>webpack</title><link href="https://neotw.netlify.app/#webpack"></link><link href="https://neotw.netlify.app/static/webpack.html" rel="alternative" type="text/html"></link><id>424516ca-53b4-ad4b-ef37-ed04f8795a88</id><updated>2023-05-02T13:43:56</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <p>Webpack和Babel是两个常用的前端工具，通常会一起使用，下面对它们分别进行简单介绍。
 </p>
-<h3><a href="##h-0.0.1" id="#h-0.0.1">0.0.1.</a> Webpack</h3>
+<h3><a href="##h-0.0.NaN" id="#h-0.0.NaN">0.0.NaN.</a> Webpack</h3>
 <p>Webpack 是一个模块打包工具，主要用于打包 JavaScript 文件，但也可以处理 CSS、图片等资源文件。它将多个文件打包成一个或多个 bundle 文件，以便在浏览器中使用。Webpack 最重要的功能是代码分割和生成 source map，这些都有助于提高应用程序性能并方便调试。此外，Webpack 还具有插件系统，可以通过插件实现代码压缩、文件拆分、语法检查等功能。
 </p>
 <p>Webpack 具有以下特点：
@@ -11942,7 +11942,7 @@ cons [count, setCount] = <span class="hljs-title function_">useState</span>(<spa
 <li>插件机制：插件可以自定义 webpack 的行为。</li>
 <li>优化功能：支持 tree shaking、Scope Hoisting、Code Splitting 等优化功能。</li>
 </ul>
-<h3><a href="##h-0.0.2" id="#h-0.0.2">0.0.2.</a> Babel</h3>
+<h3><a href="##h-0.0.NaN" id="#h-0.0.NaN">0.0.NaN.</a> Babel</h3>
 <p>Babel 是一个 JavaScript 编译器，它可以将新版本的 ECMAScript 代码转换为兼容性更好的旧版代码，以便于在老旧的浏览器中运行。Babel 可以将 ES6/7/8 等新语法转换为 ES5 代码，也可以将 React 的 JSX 语法转换为普通的 JavaScript 代码，以便于在浏览器环境中运行。
 </p>
 <p>Babel 具有以下特点：
