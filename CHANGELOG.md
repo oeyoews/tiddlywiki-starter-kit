@@ -1,3 +1,10 @@
+# [3.279.0](https://github.com/oeyoews/neotw/compare/v3.278.0...v3.279.0) (2023-06-04)
+
+
+### Features
+
+* support paramObject for newTiddler(markdown) ([9e5ca40](https://github.com/oeyoews/neotw/commit/9e5ca401addd278a64ceef28ccefd57db9854341))
+
 # [3.278.0](https://github.com/oeyoews/neotw/compare/v3.277.0...v3.278.0) (2023-06-03)
 
 
