@@ -56,11 +56,11 @@ href: https://github.com/peoplefund-tech/markdown-it-wiki-toc/blob/master/index.
 
     md.core.ruler.push('init_toc', function (state) {
       // For each rendering, initialize heading count
-      var headingCounts = [null, 0, 0, 0, 0, 0, 0];
+      var headingCounts = [0, 0, 0];
       var tokens = state.tokens;
 
       // Parses all heading information to render the TOC
-      for (var i = 0; i < tokens.length; i++)
+      for (var i = 0; i < tokens.length; i++) {
         if (tokens[i].type === 'heading_open') {
           var tagLevel = parseInt(tokens[i].tag[1]);
           var numbering = [];
@@ -82,6 +82,7 @@ href: https://github.com/peoplefund-tech/markdown-it-wiki-toc/blob/master/index.
 
           headingInfos.push(hInfo);
         }
+      }
     });
 
     md.renderer.rules.toc_open = function (tokens, index) {
@@ -131,6 +132,7 @@ href: https://github.com/peoplefund-tech/markdown-it-wiki-toc/blob/master/index.
           '<li><a href="#' +
             anchor +
             '">' +
+            '⭐️ ' + // 添加 Emoji
             numberingStr +
             '.</a> ' +
             hInfo.content +
@@ -149,6 +151,14 @@ href: https://github.com/peoplefund-tech/markdown-it-wiki-toc/blob/master/index.
     };
 
     md.renderer.rules.heading_open = function (tokens, index) {
+      // 添加 h1 信息,如果文档没有 h1
+      /* if (tokens[index].tag === 'h2' && headingInfos.length === 0) {
+        headingInfos.unshift({
+          numbering: [1],
+          content: '',
+        });
+      } */
+
       var hInfo = headingInfos.shift();
       var numberingStr = hInfo.numbering.join('.');
       var anchor = options.anchorIdPrefix + numberingStr;
