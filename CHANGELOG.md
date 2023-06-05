@@ -1,3 +1,10 @@
+# [3.282.0](https://github.com/oeyoews/neotw/compare/v3.281.1...v3.282.0) (2023-06-05)
+
+
+### Features
+
+* enable tid2pdf ([d3bbb2f](https://github.com/oeyoews/neotw/commit/d3bbb2f2852809a12f9f53d90d62e397fe7ddecb))
+
 ## [3.281.1](https://github.com/oeyoews/neotw/compare/v3.281.0...v3.281.1) (2023-06-05)
 
 
