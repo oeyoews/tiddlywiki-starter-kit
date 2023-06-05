@@ -2551,8 +2551,8 @@ Undefined widget 'tid2pdf'
 </div>
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>GettingStarted</title><link href="https://neotw.netlify.app/#GettingStarted"></link><link href="https://neotw.netlify.app/static/GettingStarted.html" rel="alternative" type="text/html"></link><id>fc927313-83cf-7e0a-53c1-21853f695851</id><updated>2023-06-05T19:42:02</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:bg-white">
 <div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-649-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-46-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-70-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-4 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-651-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-46-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-70-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-13 minutes ago-green?style=social"></img>  
 </div>
 
 
@@ -4219,8 +4219,8 @@ M1001 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 <li>aria2c -d <dirname> <url>&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;</url></dirname></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-badges</title><link href="https://neotw.netlify.app/#neotw-badges"></link><link href="https://neotw.netlify.app/static/neotw-badges.html" rel="alternative" type="text/html"></link><id>f934e3aa-d36d-34bb-609b-922693d9b993</id><updated>2023-06-01T21:41:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-649-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-46-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-70-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-4 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-651-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-46-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-70-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-13 minutes ago-green?style=social"></img>  
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-command</title><link href="https://neotw.netlify.app/#neotw-command"></link><link href="https://neotw.netlify.app/static/neotw-command.html" rel="alternative" type="text/html"></link><id>188385e0-6b3a-4916-a54a-061d9d29e18f</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
        ✨ 0.1
@@ -8425,7 +8425,15 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 }</code></pre><p>在这个例子中，我们使用try-catch语句块来处理可能的异常情况。在try块中，我们使用fs.readFileSync()方法同步读取JSON文件，并将文件内容存储在data变量中。如果读取文件时出现错误，catch块将捕获该错误，并输出错误信息。</p><p>以上是使用fs模块读取文件的示例，需要注意的是，在使用fs模块读取文件时，我们需要处理可能的异常情况，并根据实际情况选择异步或同步方法。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-count</title><link href="https://neotw.netlify.app/#recent-count"></link><link href="https://neotw.netlify.app/static/recent-count.html" rel="alternative" type="text/html"></link><id>6a131e9a-b046-19c3-08bd-35ef7c9ffbfc</id><updated>2023-02-08T18:16:06</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="tc-timeline">
 
 <div class="tc-menu-list-item">
-5th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#7">7</a></span>)
+5th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#9">9</a></span>)
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#UX-DX"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#star-principle"></a>
+</div>
 
 <div class="tc-menu-list-subitem">
 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#debounce-throttle-code"></a>
@@ -8890,6 +8898,18 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 </div>
 
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-note-record</title><link href="https://neotw.netlify.app/#recent-note-record"></link><link href="https://neotw.netlify.app/static/recent-note-record.html" rel="alternative" type="text/html"></link><id>2619840e-dc84-d69e-3d32-c2258f306a66</id><updated>2023-04-11T09:39:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><ul>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#UX-DX">UX-DX</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#star-principle">star-principle</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#debounce-throttle-code">debounce-throttle-code</a>
@@ -12379,7 +12399,10 @@ Undefined widget 'ocover'
 const arr = str.split(' ');
 console.log(arr); // ["hello", "world"]</code></pre><p>在这个例子中，我们将字符串 'hello world' 按照空格进行分割，得到了一个包含 'hello' 和 'world' 的数组。</p><p>另外，如果我们要将一个字符串按照某个字符串进行分割，可以将该字符串作为参数传入 split 方法，例如：</p><pre><code>const str = 'apple,orange,banana';
 const arr = str.split(',');
-console.log(arr); // ["apple", "orange", "banana"]</code></pre><p>在这个例子中，我们将字符串 'apple,orange,banana' 按照逗号进行分割，得到了一个包含 'apple'、'orange' 和 'banana' 的数组。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>springboot-update</title><link href="https://neotw.netlify.app/#springboot-update"></link><link href="https://neotw.netlify.app/static/springboot-update.html" rel="alternative" type="text/html"></link><id>8f1d2a6a-7fa0-eca5-c4f0-dcb830b020de</id><updated>2023-05-27T19:42:42</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>Spring Boot的热更新是增量更新，而不是全部刷新。这意味着在修改并保存Java源代码之后，只有更改的部分会被重新编译和加载，而不需要重新启动整个应用程序。</p><p>Spring Boot中的热更新是通过使用Spring Boot DevTools实现的。DevTools将监视您的类路径，并在检测到更改时自动重新启动应用程序。这样，您可以在进行更改时保持应用程序处于运行状态，并立即查看更改的效果，无需手动停止并重新启动应用程序。</p><p>但是，需要注意的是，某些更改可能不会触发热更新，并且仍然需要重新启动应用程序。例如，在添加或删除新的JAR文件或静态资源时，需要重新启动应用程序才能使更改生效。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>state-managent</title><link href="https://neotw.netlify.app/#state-managent"></link><link href="https://neotw.netlify.app/static/state-managent.html" rel="alternative" type="text/html"></link><id>b4cb680b-f447-a9e2-6310-86f6b77a07ca</id><updated>2023-04-30T19:02:57</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>状态管理对于前端应用的开发非常重要。在一个典型的 Web 应用中，应用的状态通常分散在各个组件中，并且可能会有多种状态，如用户身份认证、UI 布局信息、网络请求数据等。在这种情况下，如果没有一个良好的状态管理方案，就很难维护和扩展应用。</p><p>以下是状态管理的一些重要性：</p><p>简化了组件之间的通信：通过将应用程序的状态放入一个单一的位置，可以减少组件之间的通信和传递 props。</p><p>易于调试和维护：在一个适当的状态管理系统中，可以更轻松地跟踪和理解应用程序的状态，以及对状态的任何更改。同时，它也可以减少由于深度嵌套组件引起的代码复杂性。</p><p>提高了代码的可读性和可测试性：在一个适当的状态管理系统中，可以更容易地理解应用程序的状态和 UI 的变化，从而提高代码的可读性和可测试性。</p><p>更好的用户体验：当应用的状态得到更好的管理时，可以减少因为状态不同步或者不可控制而引起的用户体验问题。</p><p>综上所述，状态管理对于 Web 应用程序的开发和维护都是非常重要的，一个良好的状态管理方案可以提高代码质量、可读性、可维护性和用户体验。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>static-method</title><link href="https://neotw.netlify.app/#static-method"></link><link href="https://neotw.netlify.app/static/static-method.html" rel="alternative" type="text/html"></link><id>68b193af-8800-cd22-4eed-a93debe5de76</id><updated>2023-06-03T00:10:01</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre class="hljs"><code class="js hljs"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MathUtils</span> {
+console.log(arr); // ["apple", "orange", "banana"]</code></pre><p>在这个例子中，我们将字符串 'apple,orange,banana' 按照逗号进行分割，得到了一个包含 'apple'、'orange' 和 'banana' 的数组。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>springboot-update</title><link href="https://neotw.netlify.app/#springboot-update"></link><link href="https://neotw.netlify.app/static/springboot-update.html" rel="alternative" type="text/html"></link><id>8f1d2a6a-7fa0-eca5-c4f0-dcb830b020de</id><updated>2023-05-27T19:42:42</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>Spring Boot的热更新是增量更新，而不是全部刷新。这意味着在修改并保存Java源代码之后，只有更改的部分会被重新编译和加载，而不需要重新启动整个应用程序。</p><p>Spring Boot中的热更新是通过使用Spring Boot DevTools实现的。DevTools将监视您的类路径，并在检测到更改时自动重新启动应用程序。这样，您可以在进行更改时保持应用程序处于运行状态，并立即查看更改的效果，无需手动停止并重新启动应用程序。</p><p>但是，需要注意的是，某些更改可能不会触发热更新，并且仍然需要重新启动应用程序。例如，在添加或删除新的JAR文件或静态资源时，需要重新启动应用程序才能使更改生效。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>star-principle</title><link href="https://neotw.netlify.app/#star-principle"></link><link href="https://neotw.netlify.app/static/star-principle.html" rel="alternative" type="text/html"></link><id>7bdd04fd-3c4a-20f5-2d44-11918328826a</id><updated>2023-06-05T19:55:31</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+<p>“STAR”法则是在面试中用于回答问题的一种技巧。它代表的是 Situation（情境）、Task（任务）、Action（行动）和Result（结果）四个单词的缩写。在面试中，当你被问到一个问题时，可以按照这个技巧来回答，从而使回答更加清晰，结构更加明确。具体来说，你需要先描述一个具体的情境，然后说出你需要完成的任务，接着说明你采取了哪些行动，最后阐述你所取得的结果。这样的回答方式能够有效地展示你的思考能力、行动力以及解决问题的能力，从而提高你在面试中的竞争力。
+</p>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>state-managent</title><link href="https://neotw.netlify.app/#state-managent"></link><link href="https://neotw.netlify.app/static/state-managent.html" rel="alternative" type="text/html"></link><id>b4cb680b-f447-a9e2-6310-86f6b77a07ca</id><updated>2023-04-30T19:02:57</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>状态管理对于前端应用的开发非常重要。在一个典型的 Web 应用中，应用的状态通常分散在各个组件中，并且可能会有多种状态，如用户身份认证、UI 布局信息、网络请求数据等。在这种情况下，如果没有一个良好的状态管理方案，就很难维护和扩展应用。</p><p>以下是状态管理的一些重要性：</p><p>简化了组件之间的通信：通过将应用程序的状态放入一个单一的位置，可以减少组件之间的通信和传递 props。</p><p>易于调试和维护：在一个适当的状态管理系统中，可以更轻松地跟踪和理解应用程序的状态，以及对状态的任何更改。同时，它也可以减少由于深度嵌套组件引起的代码复杂性。</p><p>提高了代码的可读性和可测试性：在一个适当的状态管理系统中，可以更容易地理解应用程序的状态和 UI 的变化，从而提高代码的可读性和可测试性。</p><p>更好的用户体验：当应用的状态得到更好的管理时，可以减少因为状态不同步或者不可控制而引起的用户体验问题。</p><p>综上所述，状态管理对于 Web 应用程序的开发和维护都是非常重要的，一个良好的状态管理方案可以提高代码质量、可读性、可维护性和用户体验。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>static-method</title><link href="https://neotw.netlify.app/#static-method"></link><link href="https://neotw.netlify.app/static/static-method.html" rel="alternative" type="text/html"></link><id>68b193af-8800-cd22-4eed-a93debe5de76</id><updated>2023-06-03T00:10:01</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre class="hljs"><code class="js hljs"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MathUtils</span> {
     <span class="hljs-keyword">static</span> pi = <span class="hljs-number">3.14159</span>;
     <span class="hljs-keyword">static</span> <span class="hljs-title function_">add</span>(<span class="hljs-params">a, b</span>) {
         <span class="hljs-keyword">return</span> a + b;
@@ -13387,7 +13410,16 @@ https://github.com/:user.atom
 </p>
 </div></div></content><author><name>oeyoews</name></author></entry><entry><title>usestate-count</title><link href="https://neotw.netlify.app/#usestate-count"></link><link href="https://neotw.netlify.app/static/usestate-count.html" rel="alternative" type="text/html"></link><id>0944d01f-06fb-7c37-5722-6a5ebf83dc5c</id><updated>2023-04-28T21:31:19</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre class="hljs"><code class="jsx hljs"><span class="hljs-keyword">import</span> <span class="hljs-title class_">React</span>, { useState } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>
 
-cons [count, setCount] = <span class="hljs-title function_">useState</span>(<span class="hljs-number">0</span>); <span class="hljs-comment">// deconstruction</span></code></pre></div></content><author><name>oeyoews</name></author></entry><entry><title>utools</title><link href="https://neotw.netlify.app/#utools"></link><link href="https://neotw.netlify.app/static/utools.html" rel="alternative" type="text/html"></link><id>50950185-197e-4cd8-ad58-7f413ff4819f</id><updated>2023-04-19T14:57:02</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>utools have many plugins, so it have too much memory also</p></div></content><author><name>oeyoews</name></author></entry><entry><title>v2raya-tray-git</title><link href="https://neotw.netlify.app/#v2raya-tray-git"></link><link href="https://neotw.netlify.app/static/v2raya-tray-git.html" rel="alternative" type="text/html"></link><id>530e7973-d44c-4e17-5ac4-d2b9b87c98b6</id><updated>2023-03-18T23:13:20</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></content><author><name>oeyoews</name></author></entry><entry><title>vercel-ai</title><link href="https://neotw.netlify.app/#vercel-ai"></link><link href="https://neotw.netlify.app/static/vercel-ai.html" rel="alternative" type="text/html"></link><id>e539a3a7-6189-44d3-b54e-68823dad92b1</id><updated>2023-04-28T08:41:46</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://play.vercel.ai/" rel="noopener noreferrer" target="_blank">https://play.vercel.ai/</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>vertical-button</title><link href="https://neotw.netlify.app/#vertical-button"></link><link href="https://neotw.netlify.app/static/vertical-button.html" rel="alternative" type="text/html"></link><id>61d47d9a-396c-026a-d96f-e9320a97ae36</id><updated>2023-03-21T23:02:03</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>.tc-tab-buttons.tc-vertical button {
+cons [count, setCount] = <span class="hljs-title function_">useState</span>(<span class="hljs-number">0</span>); <span class="hljs-comment">// deconstruction</span></code></pre></div></content><author><name>oeyoews</name></author></entry><entry><title>utools</title><link href="https://neotw.netlify.app/#utools"></link><link href="https://neotw.netlify.app/static/utools.html" rel="alternative" type="text/html"></link><id>50950185-197e-4cd8-ad58-7f413ff4819f</id><updated>2023-04-19T14:57:02</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>utools have many plugins, so it have too much memory also</p></div></content><author><name>oeyoews</name></author></entry><entry><title>UX-DX</title><link href="https://neotw.netlify.app/#UX-DX"></link><link href="https://neotw.netlify.app/static/UX-DX.html" rel="alternative" type="text/html"></link><id>8023a422-b94c-7299-c852-fe2aa38b5d55</id><updated>2023-06-05T20:25:12</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+<p>UX和DX都是缩写词，常用于描述软件或产品设计领域的概念。
+</p>
+<p>UX代表用户体验（User Experience），是指用户在使用产品或服务时所感受到的整体体验，包括用户的情感、感觉和行为等方面。UX设计旨在提高用户的满意度和忠诚度，通过优化用户体验来提高产品或服务的价值。
+</p>
+<p>DX代表开发者体验（Developer Experience），是指开发者在开发软件或应用程序时所感受到的整体体验，包括使用的工具、开发环境、文档和支持等方面。DX设计旨在提高开发者的效率和满意度，通过优化开发者体验来提高软件或应用程序的质量和可靠性。
+</p>
+<p>在软件或产品设计中，优秀的UX和DX设计都是非常重要的，因为它们能够提高用户和开发者的满意度，增加产品或服务的价值，同时也能够提高产品或应用程序的市场竞争力。
+</p>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>v2raya-tray-git</title><link href="https://neotw.netlify.app/#v2raya-tray-git"></link><link href="https://neotw.netlify.app/static/v2raya-tray-git.html" rel="alternative" type="text/html"></link><id>530e7973-d44c-4e17-5ac4-d2b9b87c98b6</id><updated>2023-03-18T23:13:20</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></content><author><name>oeyoews</name></author></entry><entry><title>vercel-ai</title><link href="https://neotw.netlify.app/#vercel-ai"></link><link href="https://neotw.netlify.app/static/vercel-ai.html" rel="alternative" type="text/html"></link><id>e539a3a7-6189-44d3-b54e-68823dad92b1</id><updated>2023-04-28T08:41:46</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://play.vercel.ai/" rel="noopener noreferrer" target="_blank">https://play.vercel.ai/</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>vertical-button</title><link href="https://neotw.netlify.app/#vertical-button"></link><link href="https://neotw.netlify.app/static/vertical-button.html" rel="alternative" type="text/html"></link><id>61d47d9a-396c-026a-d96f-e9320a97ae36</id><updated>2023-03-21T23:02:03</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>.tc-tab-buttons.tc-vertical button {
     display: block;
     width: 100%;
     margin-top: none;
