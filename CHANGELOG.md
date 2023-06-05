@@ -1,3 +1,10 @@
+# [3.281.0](https://github.com/oeyoews/neotw/compare/v3.280.0...v3.281.0) (2023-06-05)
+
+
+### Features
+
+* enable Usecors ([a1043ac](https://github.com/oeyoews/neotw/commit/a1043ac06e99e9fbf77c385d8d2d84311aac0b9d))
+
 # [3.280.0](https://github.com/oeyoews/neotw/compare/v3.279.0...v3.280.0) (2023-06-04)
 
 
