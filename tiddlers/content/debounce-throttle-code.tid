@@ -1,0 +1,85 @@
+created: 20230605112003013
+creator: oeyoews
+modified: 20230605112118107
+modifier: oeyoews
+tags: JavaScript
+title: debounce-throttle-code
+type: text/markdown
+
+@[toc]
+
+<hr>
+
+# 防抖和节流的立即执行和非立即执行版本的代码。
+
+## 防抖
+
+### 立即执行版本
+
+```javascript
+function debounceImmediate(fn, wait) {
+  let timer = null;
+  return function (...args) {
+    if (timer) {
+      clearTimeout(timer);
+    } else {
+      fn.apply(this, args);
+    }
+    timer = setTimeout(() => {
+      timer = null;
+    }, wait);
+  };
+}
+```
+
+### 非立即执行版本
+
+```javascript
+function debounce(fn, wait) {
+  let timer = null;
+  return function (...args) {
+    const context = this;
+    timer && clearTimeout(timer);
+    timer = setTimeout(() => {
+      fn.apply(context, args);
+    }, wait);
+  };
+}
+```
+
+## 节流
+
+### 立即执行版本
+
+```javascript
+function throttleImmediate(fn, wait) {
+  let timer = null;
+  return function (...args) {
+    if (!timer) {
+      fn.apply(this, args);
+      timer = setTimeout(() => {
+        timer = null;
+      }, wait);
+    }
+  };
+}
+```
+
+### 非立即执行版本
+
+```javascript
+function throttle(fn, wait) {
+  let timer = null;
+  return function (...args) {
+    if (!timer) {
+      const context = this;
+      fn.apply(context, args);
+      timer = setTimeout(() => {
+        timer = null;
+      }, wait);
+    }
+  };
+}
+```
+
+在这些代码中，立即执行版本的函数会在第一次触发时立即执行，而非立即执行版本的函数会在等待一定时间后执行。这两种函数都可以根据需要使用防抖或节流功能来限制函数的执行次数。
