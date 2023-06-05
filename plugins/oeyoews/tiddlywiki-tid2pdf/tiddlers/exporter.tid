@@ -1,0 +1,7 @@
+title: $:/plugins/oeyoews/tiddlywiki-tid2pdf/exporter
+description: export pdf
+caption: Tid2Pdf
+<!-- tags: $:/tags/Exporter -->
+extension: .pdf
+
+<!-- <$macrocall $name="tid2pdf" filter=<<exportFilter>> $output="text/raw"/> -->
