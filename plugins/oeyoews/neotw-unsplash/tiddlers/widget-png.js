@@ -24,6 +24,7 @@ widget-unsplash widget
       this.computeAttributes();
       this.execute();
 
+      // use has
       const local = this.getAttribute('local', '');
       // online https
       if (window.location.protocol === 'http:' && !local) return;
