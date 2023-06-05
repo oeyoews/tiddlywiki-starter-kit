@@ -72,7 +72,7 @@ tid2pdf/widget
 
       // TODO: option
       const scale = 1.5;
-      const width = originWidth + 32;
+      const width = originWidth;
 
       const PDF_WIDTH = (width * scale) / 4;
       const PDF_HEIGHT = (width * 1.414 * scale) / 4;
