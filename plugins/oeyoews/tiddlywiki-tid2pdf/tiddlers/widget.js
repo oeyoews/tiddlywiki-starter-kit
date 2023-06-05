@@ -68,6 +68,7 @@ tid2pdf/widget
       document.body.appendChild(container);
       container.appendChild(element.cloneNode(true));
 
+      // TODO: option
       const scale = 1.5;
       const width = originWidth + 32;
 
@@ -77,7 +78,7 @@ tid2pdf/widget
       const render = function () {
         html2canvas(container, {
           useCORS: true,
-          scale: scale,
+          scale,
         }).then(function (canvas) {
           const contentWidth = canvas.width;
           const contentHeight = canvas.height;
