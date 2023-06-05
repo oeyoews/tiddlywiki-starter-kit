@@ -1,11 +1,13 @@
 created: 20230604030141179
 creator: oeyoews
-modified: 20230605022853474
+modified: 20230605094612575
 modifier: oeyoews
 page-cover: https://source.unsplash.com/random?fm=blurhash&w=50&event-objectParam
 tags: JavaScript
 title: event-objectParam
 type: text/markdown
+
+<$tid2pdf />
 
 ```js
 // 获取按钮元素
