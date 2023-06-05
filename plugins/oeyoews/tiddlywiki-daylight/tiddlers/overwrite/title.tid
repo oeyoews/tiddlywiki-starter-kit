@@ -1,11 +1,5 @@
-created: 20230330071028521
-creator: oeyoews
-draft.title: 
-modified: 20230502153111217
-modifier: oeyoews
-tags: $:/tags/EditTemplate
 title: $:/core/ui/EditTemplate/title
-type: text/vnd.tiddlywiki
+tags: $:/tags/EditTemplate
 
 \whitespace trim
 <$edit-text field="draft.title" class="tc-titlebar tc-edit-texteditor bg-gray-200 outline-none placeholder:text-slate-400 dark:bg-transparent" focus="true" tabindex={{$:/config/EditTabIndex}} placeholder="title here"/>
