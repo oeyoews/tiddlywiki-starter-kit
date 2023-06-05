@@ -1,6 +1,6 @@
 created: 20230604141122805
 creator: oeyoews
-modified: 20230605023049603
+modified: 20230605034039055
 modifier: oeyoews
 page-cover: https://source.unsplash.com/random?fm=blurhash&w=50&full-type-support-with-plain-javascript
 tags: JavaScript
@@ -10,6 +10,8 @@ type: text/markdown
 @[toc]
 
 <hr>
+
+<$tid2pdf />
 
 ## 使用纯 JavaScript 获得完整的类型支持
 
