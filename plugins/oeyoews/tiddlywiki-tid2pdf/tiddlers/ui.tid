@@ -7,6 +7,7 @@ caption: Tid2Pdf
 \whitespace trim
 <$button message="om-export-png" tooltip="" aria-label="" class=<<tv-config-toolbar-class>>>
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
+  <$action-sendmessage $message="om-confetti-launch" $param=""/>
 {{$:/plugins/oeyoews/tiddlywiki-tid2pdf/icon}}
 </$list>
 <$list filter="[<tv-config-toolbar-text>match[yes]]">

@@ -43,7 +43,7 @@ tid2png/widget
           {
             name: 'click',
             handlerObject: this,
-            handlerMethod: '',
+            handlerMethod: 'handleClick',
           },
         ],
       });
@@ -53,25 +53,12 @@ tid2png/widget
 
       const downloadPng = imgData => {
         const linkNode = $tw.utils.domMaker('a', {
-          class: '',
           attributes: {
             href: imgData,
             download: this.title,
           },
-          eventListeners: [
-            {
-              name: 'click',
-              handlerObject: this,
-              handlerMethod: 'handleClick',
-            },
-          ],
         });
-
-        document.body.appendChild(linkNode);
         linkNode.click();
-
-        // 将<a>元素从页面上移除
-        document.body.removeChild(linkNode);
       };
 
       buttonNode.onclick = () => {

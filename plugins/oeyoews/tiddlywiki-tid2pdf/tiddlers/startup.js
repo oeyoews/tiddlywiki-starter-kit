@@ -38,14 +38,7 @@ tid2pdf module
             download: title,
           },
         });
-
-        pushNotify('info', 'PNG', `Wait a moment to export ${title}.png`);
-        confetti();
-        // 模拟单击事件以触发下载
         linkNode.click();
-
-        // 将<a>元素从页面上移除
-        document.body.removeChild(linkNode);
       });
     });
   };
