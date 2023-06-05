@@ -7,7 +7,8 @@ tid2pdf/widget
 
 \*/
 // TODO: 文字截断
-(function() {
+// 不要分页
+(function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -65,8 +66,9 @@ tid2pdf/widget
 
       const originWidth = element.offsetWidth || 700;
       const container = document.createElement('div');
-      container.style.cssText = `position:fixed;left: ${-2 * originWidth
-        }px; top:0;padding:16px;width:${originWidth}px;box-sizing:content-box;`;
+      container.style.cssText = `position:fixed;left: ${
+        -2 * originWidth
+      }px; top:0;padding:16px;width:${originWidth}px;box-sizing:content-box;`;
       document.body.appendChild(container);
       container.appendChild(element.cloneNode(true));
 
@@ -77,25 +79,29 @@ tid2pdf/widget
       const PDF_WIDTH = (width * scale) / 4;
       const PDF_HEIGHT = (width * 1.414 * scale) / 4;
 
-      const render = function() {
+      const render = function () {
         html2canvas(container, {
+          allowTaint: true,
           useCORS: true,
           scale,
-        }).then(function(canvas) {
-          const contentWidth = canvas.width;
+        }).then(function (canvas) {
+          /* const contentWidth = canvas.width;
           const contentHeight = canvas.height;
 
           const pageHeight = (contentWidth / PDF_WIDTH) * PDF_HEIGHT;
 
           const imgWidth = PDF_WIDTH;
-          const imgHeight = (PDF_WIDTH / contentWidth) * contentHeight;
+          const imgHeight = (PDF_WIDTH / contentWidth) * contentHeight; */
 
-          let leftHeight = contentHeight;
-          let position = 0;
-
+          /* let leftHeight = contentHeight;
+          let position = 0; */
+          const aspectRatio = canvas.width / canvas.height;
+          const PDF_WIDTH = 210; // A4 size in mm
+          const PDF_HEIGHT = PDF_WIDTH / aspectRatio;
           const doc = new jsPDF('p', 'px', [PDF_WIDTH, PDF_HEIGHT]);
+          doc.addImage(canvas, 'PNG', 0, 0, PDF_WIDTH, PDF_HEIGHT);
 
-          if (leftHeight < pageHeight) {
+          /* if (leftHeight < pageHeight) {
             doc.addImage(canvas, 'PNG', 0, 0, imgWidth, imgHeight);
           } else {
             while (leftHeight > 0) {
@@ -106,7 +112,7 @@ tid2pdf/widget
                 doc.addPage();
               }
             }
-          }
+          } */
 
           doc.save(filename);
           container.remove();

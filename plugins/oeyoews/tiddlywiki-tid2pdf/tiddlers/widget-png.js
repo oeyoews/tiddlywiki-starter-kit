@@ -67,7 +67,7 @@ tid2png/widget
 
         // 转换canvas为PNG格式的数据URL
         html2canvas(element, {
-          allowTaint: false,
+          allowTaint: true,
           useCORS: true,
           letterRendering: 1,
         }).then(canvas => {
