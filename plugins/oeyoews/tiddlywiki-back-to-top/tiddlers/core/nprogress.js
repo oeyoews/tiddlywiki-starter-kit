@@ -17,12 +17,13 @@ nprogress module
   exports.synchronous = true;
   exports.startup = () => {
     window.NProgress = require('nprogress.min.js');
+    const startTime = performance.now();
     window.onload = function () {
       NProgress.start();
-      setTimeout(function () {
-        NProgress.done();
-        // pushNotify('success', 'Loading finished');
-      }, 1000);
+      NProgress.done();
+      const endTime = performance.now();
+      const loadTime = Math.floor(endTime - startTime);
+      console.log(`🎉 Page loaded in ${loadTime}ms`);
     };
   };
 })();
