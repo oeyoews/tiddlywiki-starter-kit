@@ -52,15 +52,22 @@ tid2png/widget
       this.domNodes.push(buttonNode);
 
       const downloadPng = imgData => {
-        // 创建一个<a>元素，并指定其href属性为图像数据URL
-        const linkNode = document.createElement('a');
-        linkNode.href = imgData;
+        const linkNode = $tw.utils.domMaker('a', {
+          class: '',
+          attributes: {
+            href: imgData,
+            download: this.title,
+          },
+          eventListeners: [
+            {
+              name: 'click',
+              handlerObject: this,
+              handlerMethod: 'handleClick',
+            },
+          ],
+        });
 
-        // 指定文件名并将<a>元素添加到页面上
-        linkNode.download = `${this.title}`;
         document.body.appendChild(linkNode);
-
-        // 模拟单击事件以触发下载
         linkNode.click();
 
         // 将<a>元素从页面上移除
@@ -74,14 +81,15 @@ tid2png/widget
         // 转换canvas为PNG格式的数据URL
         html2canvas(element, {
           allowTaint: false,
-          useCORS: false,
+          useCORS: true,
           letterRendering: 1,
         }).then(canvas => {
           const imgData = canvas.toDataURL('image/png');
 
-          // 创建一个<img>元素，并将PNG格式的数据URL赋值给src属性
-          const imgNode = document.createElement('img');
+          // https://www.zhangxinxu.com/wordpress/2018/02/crossorigin-canvas-getimagedata-cors/
+          const imgNode = new Image();
           imgNode.src = imgData;
+          imgNode.crossOrigin = '';
 
           if (this.preview) {
             swal({
@@ -108,6 +116,10 @@ tid2png/widget
           }
         });
       };
+    }
+
+    handleClick() {
+      confetti();
     }
   }
 

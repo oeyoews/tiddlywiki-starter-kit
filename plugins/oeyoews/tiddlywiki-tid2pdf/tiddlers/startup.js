@@ -27,7 +27,9 @@ tid2pdf module
       const selector = `[data-tiddler-title="${title}"]`;
       const element = document.querySelector(selector);
 
-      html2canvas(element).then(canvas => {
+      html2canvas(element, {
+        useCORS: true,
+      }).then(canvas => {
         const imgData = canvas.toDataURL('image/png'); // 转换canvas为PNG格式的数据URL
 
         const linkNode = $tw.utils.domMaker('a', {
