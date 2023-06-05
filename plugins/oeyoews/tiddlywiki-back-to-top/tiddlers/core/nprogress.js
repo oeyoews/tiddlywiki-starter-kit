@@ -16,7 +16,7 @@ nprogress module
   exports.after = ['load-modules'];
   exports.synchronous = true;
   exports.startup = () => {
-    const NProgress = require('nprogress.min.js');
+    window.NProgress = require('nprogress.min.js');
     window.onload = function () {
       NProgress.start();
       setTimeout(function () {

@@ -6,16 +6,12 @@ module-type: widget
 tid2pdf/widget
 
 \*/
-// TODO: 文字截断
-// 不要分页
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
 
-  if (!$tw.browser) {
-    return;
-  }
+  if (!$tw.browser) return;
 
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
 
@@ -40,82 +36,46 @@ tid2pdf/widget
         attributes: {},
       });
 
-      buttonNode.addEventListener('click', async () => {
-        confetti();
-        const selector = `[data-tiddler-title="${title}"]`;
-        const element = document.querySelector(selector);
+      const selector = `[data-tiddler-title="${title}"]`;
+      const element = document.querySelector(selector);
 
-        try {
-          await this.exportPdf(element, `${title}.pdf`);
-        } catch (error) {
-          console.error(error);
-        }
+      buttonNode.addEventListener('click', async () => {
+        await this.exportPdf(element, `${title}.pdf`);
       });
 
       parent.insertBefore(buttonNode, nextSibling);
       this.domNodes.push(buttonNode);
     }
 
-    async exportPdf(element, filename = '未命名') {
+    async exportPdf(element, filename = 'untitled.pdf') {
+      confetti();
+      NProgress.start();
       const html2canvas = require('html2canvas.min.js');
-      const jsPDF = require('jspdf.umd.min.js').jsPDF;
+      const { jsPDF } = require('jspdf.umd.min.js');
 
-      if (!element) {
-        return;
-      }
-
-      const originWidth = element.offsetWidth || 700;
       const container = document.createElement('div');
-      container.style.cssText = `position:fixed;left: ${
-        -2 * originWidth
-      }px; top:0;padding:16px;width:${originWidth}px;box-sizing:content-box;`;
-      document.body.appendChild(container);
       container.appendChild(element.cloneNode(true));
+      document.body.appendChild(container);
 
-      // TODO: option
       const scale = 1.5;
-      const width = originWidth;
-
-      const PDF_WIDTH = (width * scale) / 4;
-      const PDF_HEIGHT = (width * 1.414 * scale) / 4;
-
       const render = function () {
         html2canvas(container, {
           allowTaint: true,
           useCORS: true,
           scale,
         }).then(function (canvas) {
-          /* const contentWidth = canvas.width;
-          const contentHeight = canvas.height;
-
-          const pageHeight = (contentWidth / PDF_WIDTH) * PDF_HEIGHT;
-
-          const imgWidth = PDF_WIDTH;
-          const imgHeight = (PDF_WIDTH / contentWidth) * contentHeight; */
-
-          /* let leftHeight = contentHeight;
-          let position = 0; */
           const aspectRatio = canvas.width / canvas.height;
           const PDF_WIDTH = 210; // A4 size in mm
           const PDF_HEIGHT = PDF_WIDTH / aspectRatio;
-          const doc = new jsPDF('p', 'px', [PDF_WIDTH, PDF_HEIGHT]);
+          const doc = new jsPDF({
+            orientation: 'portrait', // landscape
+            unit: 'px',
+            format: [PDF_WIDTH, PDF_HEIGHT],
+          });
           doc.addImage(canvas, 'PNG', 0, 0, PDF_WIDTH, PDF_HEIGHT);
-
-          /* if (leftHeight < pageHeight) {
-            doc.addImage(canvas, 'PNG', 0, 0, imgWidth, imgHeight);
-          } else {
-            while (leftHeight > 0) {
-              doc.addImage(canvas, 'PNG', 0, position, imgWidth, imgHeight);
-              leftHeight -= pageHeight;
-              position -= PDF_HEIGHT;
-              if (leftHeight > 0) {
-                doc.addPage();
-              }
-            }
-          } */
-
           doc.save(filename);
           container.remove();
+          NProgress.done();
         });
       };
       render();

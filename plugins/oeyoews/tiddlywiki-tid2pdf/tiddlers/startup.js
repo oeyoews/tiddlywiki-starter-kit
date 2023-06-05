@@ -19,6 +19,7 @@ tid2pdf module
     window.html2canvas = require('html2canvas.min.js');
 
     $tw.rootWidget.addEventListener('om-export-png', event => {
+      NProgress.start();
       // add judge
       const paramObject = event.paramObject || {};
       // NOTE: this tid must have storylist be rendered by tw
@@ -39,6 +40,7 @@ tid2pdf module
           },
         });
         linkNode.click();
+        NProgress.done();
       });
     });
   };

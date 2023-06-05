@@ -59,6 +59,7 @@ tid2png/widget
           },
         });
         linkNode.click();
+        NProgress.done();
       };
 
       buttonNode.onclick = () => {
@@ -107,6 +108,7 @@ tid2png/widget
 
     handleClick() {
       confetti();
+      NProgress.start();
     }
   }
 
