@@ -38,3 +38,17 @@ Export PNG
 * https://github.com/niklasvh/html2canvas/issues/722
 * minify png
 * https://www.zhangxinxu.com/wordpress/2023/06/js-canvas-jspdf-export-pdf/
+
+* use exporter
+
+```wikitext
+title: export-pdf
+description: PDF
+tags: $:/tags/Exporter
+extension: .pdf
+
+\define renderContent()
+<$text text=<<atomtiddlers filter:"""$(exportFilter)$""">>/>
+\end
+<<renderContent>>
+```
