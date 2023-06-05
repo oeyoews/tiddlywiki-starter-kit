@@ -53,7 +53,7 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
       var isCenter = this.getAttribute('center');
       const link = this.getAttribute('link');
       var width = this.getAttribute('width', '56');
-      var type = this.getAttribute('type', 'qq');
+      var type = this.getAttribute('type');
       var email = this.getAttribute(
         'email',
         getDefaultEmail || '2956398608@qq.com',
@@ -78,11 +78,11 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
           src = `https://cn.gravatar.com/avatar/${hash}.png?s=${size}`;
           break;
         default:
-          src = `https://q1.qlogo.cn/g?b=qq&nk=${email}&s=${size}`;
+          src = `https://gravatar.com/avatar/${hash}.png?d=identicon&s=${size}`;
           break;
       }
 
-      var img = this.document.createElement('img');
+      const img = new Image();
       img.className =
         'rounded-full align-middle m-1 duration-200 transition object-cover object-center';
       if (isCenter) {
@@ -116,7 +116,7 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
         });
       } else {
         ele = img;
-        // img.crossOrigin = 'anonymous';
+        // img.crossOrigin = '';
       }
 
       // 在图片加载失败时使用渐变圆形背景

@@ -2,7 +2,6 @@ title: $:/core/ui/ViewTemplate/subtitle
 tags: $:/tags/ViewTemplate
 
 \define tid() $:/plugins/oeyoews/tiddlywiki-tiddler-info/config
-\define tidGravatar() $:/plugins/oeyoews/tiddlywiki-tiddler-info/gravatar.png
 
 <$reveal type="nomatch" stateTitle=<<folded-state>> text="hide" tag="div" retain="yes" animate="yes">
 <div class="tc-subtitle">
