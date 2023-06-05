@@ -1,7 +1,8 @@
 created: 20230605112003013
 creator: oeyoews
-modified: 20230605112118107
+modified: 20230605114048921
 modifier: oeyoews
+publish: public
 tags: JavaScript
 title: debounce-throttle-code
 type: text/markdown
@@ -16,21 +17,23 @@ type: text/markdown
 
 ### 立即执行版本
 
-```javascript
+```js
 function debounceImmediate(fn, wait) {
-  let timer = null;
-  return function (...args) {
-    if (timer) {
-      clearTimeout(timer);
-    } else {
-      fn.apply(this, args);
+  let timer = null; // 定义计时器，初始值为null
+  return function (...args) { // 返回一个函数，利用闭包来保存timer变量
+    if (timer) { // 如果timer存在，则说明函数还在等待执行
+      clearTimeout(timer); // 清除计时器
+    } else { // 如果timer不存在，则说明可以立即执行函数
+      fn.apply(this, args); // 执行函数，并将上下文和参数传递进去
     }
-    timer = setTimeout(() => {
+    timer = setTimeout(() => { // 设置计时器，在规定时间后将timer设为null
       timer = null;
     }, wait);
   };
 }
 ```
+
+这个函数实现了立即执行一次函数，并在规定的时间内限制函数的调用次数。在函数被调用时，会判断计时器是否存在，如果存在则说明函数还在等待执行，此时需要清除计时器。如果计时器不存在，则说明可以立即执行函数，并将上下文和参数传递进去。在函数执行后，会设置一个计时器，在规定时间内将计时器设为null，从而限制接下来的函数调用。这个函数也使用了闭包来保存计时器变量，从而实现了防抖的效果。
 
 ### 非立即执行版本
 
@@ -51,19 +54,21 @@ function debounce(fn, wait) {
 
 ### 立即执行版本
 
-```javascript
+```js
 function throttleImmediate(fn, wait) {
-  let timer = null;
-  return function (...args) {
-    if (!timer) {
-      fn.apply(this, args);
-      timer = setTimeout(() => {
+  let timer = null; // 定义计时器，初始值为null
+  return function (...args) { // 返回一个函数，利用闭包来保存timer变量
+    if (!timer) { // 如果timer不存在，则说明可以立即执行函数
+      fn.apply(this, args); // 执行函数，并将上下文和参数传递进去
+      timer = setTimeout(() => { // 设置计时器，在规定时间后将timer设为null
         timer = null;
       }, wait);
     }
   };
 }
 ```
+
+这个函数实现了立即执行一次函数，并在规定的时间内限制函数的调用次数。在函数被调用时，会判断计时器是否存在，如果不存在则说明可以立即执行函数。在函数执行后，会设置一个计时器，在规定时间内将计时器设为null，从而限制接下来的函数调用。这个函数也使用了闭包来保存计时器变量，从而实现了节流的效果。
 
 ### 非立即执行版本
 
