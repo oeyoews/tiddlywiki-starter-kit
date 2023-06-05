@@ -1,10 +1,13 @@
 created: 20230530104134783
 creator: oeyoews
-modified: 20230530104218367
+modified: 20230605030130095
 modifier: oeyoews
+page-cover: https://source.unsplash.com/random?fm=blurhash&w=50&Typescript-compare-to-Javascript
 tags: TypeScript
 title: Typescript-compare-to-Javascript
 type: text/vnd.tiddlywiki
+
+<$tid2pdf />
 
 TypeScript 相对于 JavaScript 来说，需要更多的类型注解和类型定义，因此在某些情况下会需要更多的代码。但是，这也正是 TypeScript 的优点之一，它使得代码更加健壮、可维护和易于理解。
 
