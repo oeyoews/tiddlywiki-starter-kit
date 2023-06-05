@@ -6,7 +6,8 @@ module-type: widget
 tid2pdf/widget
 
 \*/
-(function() {
+// TODO: 文字截断
+(function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -63,8 +64,9 @@ tid2pdf/widget
 
       const originWidth = element.offsetWidth || 700;
       const container = document.createElement('div');
-      container.style.cssText = `position:fixed;left: ${-2 * originWidth
-        }px; top:0;padding:16px;width:${originWidth}px;box-sizing:content-box;`;
+      container.style.cssText = `position:fixed;left: ${
+        -2 * originWidth
+      }px; top:0;padding:16px;width:${originWidth}px;box-sizing:content-box;`;
       document.body.appendChild(container);
       container.appendChild(element.cloneNode(true));
 
@@ -75,11 +77,11 @@ tid2pdf/widget
       const PDF_WIDTH = width * scale;
       const PDF_HEIGHT = width * 1.414 * scale;
 
-      const render = function() {
+      const render = function () {
         html2canvas(container, {
           useCORS: true,
           scale,
-        }).then(function(canvas) {
+        }).then(function (canvas) {
           const contentWidth = canvas.width;
           const contentHeight = canvas.height;
 
@@ -110,43 +112,7 @@ tid2pdf/widget
           container.remove();
         });
       };
-
-      const eleImgs = container.querySelectorAll('img');
-      const length = eleImgs.length;
-      let start = 0;
-
-      container.querySelectorAll('img').forEach(ele => {
-        let src = ele.src;
-
-        if (!src) {
-          return;
-        }
-
-        ele.onload = function() {
-          if (!/^http/.test(ele.src)) {
-            start++;
-            if (start == length) {
-              render();
-            }
-          }
-        };
-
-        fetch(src)
-          .then(res => res.blob())
-          .then(blob => {
-            var reader = new FileReader();
-            reader.onload = function() {
-              ele.src = this.result;
-            };
-            reader.readAsDataURL(blob);
-          })
-          .catch(() => {
-            start++;
-            if (start == length) {
-              render();
-            }
-          });
-      });
+      render();
     }
   }
 
