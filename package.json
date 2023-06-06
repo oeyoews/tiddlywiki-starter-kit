@@ -7,6 +7,10 @@
     "url": "git+https://github.com/oeyoews/neotw.git"
   },
   "author": "oeyoews <jyao4783@gmail.com>",
+  "os": [
+    "darwin",
+    "linux"
+  ],
   "license": "MIT",
   "scripts": {
     "update:template": "yarn run build:neotw && sh ./scripts/make-template.sh",

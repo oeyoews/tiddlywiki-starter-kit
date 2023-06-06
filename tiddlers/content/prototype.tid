@@ -1,6 +1,6 @@
 created: 20230521035830056
 creator: oeyoews
-modified: 20230521035908904
+modified: 20230605130135306
 modifier: oeyoews
 tags: JavaScript
 title: prototype
@@ -43,3 +43,11 @@ console.log(Object.prototype.__proto__ === null); // true
 ```
 
 在JavaScript中，原型和原型链是非常重要的概念。理解它们可以帮助我们更好地理解JavaScript中的面向对象编程方式，并进一步提高我们的JavaScript编程能力。
+
+```js
+function Role() {}
+
+const role1 = new Role();
+
+console.log(role1.__proto__ === Role.prototype); // true
+```
