@@ -1,0 +1,9 @@
+created: 20230606111405803
+creator: oeyoews
+modified: 20230606111416898
+modifier: oeyoews
+tags: 
+title: 水合作用
+type: text/markdown
+
+React 是一个 JavaScript 库，用于构建用户界面。在 React 中，水合作用是指在服务器端渲染时，React 在将 HTML 发送到客户端之前，将组件的初始数据和事件处理程序注入到 HTML 中。这样，当客户端加载 HTML 时，React 就可以快速重建组件的状态，从而提高应用程序的性能和响应速度。这种注入初始数据和事件处理程序的过程就被称为水合作用。
