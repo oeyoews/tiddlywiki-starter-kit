@@ -34,6 +34,8 @@ Export PNG
 
 !! TODO
 
+* 由于分页功能会截断文字, 效果不佳, 暂时移除
+* 对页码样式进行调整
 * support pdf preview
 * https://github.com/niklasvh/html2canvas/issues/722
 * minify png
