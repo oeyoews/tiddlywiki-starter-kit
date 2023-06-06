@@ -2574,8 +2574,8 @@ Undefined widget 'tid2pdf'
 </div>
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>GettingStarted</title><link href="https://neotw.netlify.app/#GettingStarted"></link><link href="https://neotw.netlify.app/static/GettingStarted.html" rel="alternative" type="text/html"></link><id>fc927313-83cf-7e0a-53c1-21853f695851</id><updated>2023-06-05T19:42:02</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:bg-white">
 <div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-661-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-48-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-71-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-4 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-662-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-48-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-71-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-67 minutes ago-green?style=social"></img>  
 </div>
 
 
@@ -4261,8 +4261,8 @@ Undefined widget 'tid2pdf'<hr class="footnotes-sep"></hr>
 <li>aria2c -d <dirname> <url>&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;</url></dirname></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-badges</title><link href="https://neotw.netlify.app/#neotw-badges"></link><link href="https://neotw.netlify.app/static/neotw-badges.html" rel="alternative" type="text/html"></link><id>f934e3aa-d36d-34bb-609b-922693d9b993</id><updated>2023-06-01T21:41:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-661-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-48-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-71-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-4 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-662-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-48-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-71-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-67 minutes ago-green?style=social"></img>  
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-command</title><link href="https://neotw.netlify.app/#neotw-command"></link><link href="https://neotw.netlify.app/static/neotw-command.html" rel="alternative" type="text/html"></link><id>188385e0-6b3a-4916-a54a-061d9d29e18f</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
        ✨ 0.1
@@ -8482,18 +8482,10 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 }</code></pre><p>在这个例子中，我们使用try-catch语句块来处理可能的异常情况。在try块中，我们使用fs.readFileSync()方法同步读取JSON文件，并将文件内容存储在data变量中。如果读取文件时出现错误，catch块将捕获该错误，并输出错误信息。</p><p>以上是使用fs模块读取文件的示例，需要注意的是，在使用fs模块读取文件时，我们需要处理可能的异常情况，并根据实际情况选择异步或同步方法。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-count</title><link href="https://neotw.netlify.app/#recent-count"></link><link href="https://neotw.netlify.app/static/recent-count.html" rel="alternative" type="text/html"></link><id>6a131e9a-b046-19c3-08bd-35ef7c9ffbfc</id><updated>2023-02-08T18:16:06</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="tc-timeline">
 
 <div class="tc-menu-list-item">
-6th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#11">11</a></span>)
+6th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#12">12</a></span>)
 
 <div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E5%A4%9A%E5%8E%BB%E7%9D%A1%E8%A7%89"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#markdown-examples"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E5%A4%9A%E5%8E%BB%E6%9C%97%E8%AF%BB"></a>
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E6%B0%B4%E5%90%88%E4%BD%9C%E7%94%A8"></a>
 </div>
 
 <div class="tc-menu-list-subitem">
@@ -8501,7 +8493,19 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 </div>
 
 <div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E5%A4%9A%E5%8E%BB%E7%9D%A1%E8%A7%89"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E5%A4%9A%E5%8E%BB%E6%9C%97%E8%AF%BB"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E5%A4%9A%E5%96%9D%E7%83%AD%E6%B0%B4"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#markdown-examples"></a>
 </div>
 
 <div class="tc-menu-list-subitem">
@@ -8937,67 +8941,10 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 
 </div>
 
-<div class="tc-menu-list-item">
-25th May 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#10">10</a></span>)
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#equal-compare"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#handsontable"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#js-data-type"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#three-pig"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#center-btn"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#change-this"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#obj-clone"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E4%BA%BA%E4%BD%93%E5%B7%A5%E7%A8%8B%E5%AD%A6"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E7%BB%A7%E6%89%BF"></a>
-</div>
-
-</div>
-
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-note-record</title><link href="https://neotw.netlify.app/#recent-note-record"></link><link href="https://neotw.netlify.app/static/recent-note-record.html" rel="alternative" type="text/html"></link><id>2619840e-dc84-d69e-3d32-c2258f306a66</id><updated>2023-04-11T09:39:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><ul>
   
     <li>
-		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E5%A4%9A%E5%8E%BB%E7%9D%A1%E8%A7%89">多去睡觉</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
-    </li>
-  
-    <li>
-		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#markdown-examples">markdown-examples</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
-    </li>
-  
-    <li>
-		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E5%A4%9A%E5%8E%BB%E6%9C%97%E8%AF%BB">多去朗读</a>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E6%B0%B4%E5%90%88%E4%BD%9C%E7%94%A8">水合作用</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
         
     </li>
@@ -9009,7 +8956,25 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
     </li>
   
     <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E5%A4%9A%E5%8E%BB%E7%9D%A1%E8%A7%89">多去睡觉</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E5%A4%9A%E5%8E%BB%E6%9C%97%E8%AF%BB">多去朗读</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E5%A4%9A%E5%96%9D%E7%83%AD%E6%B0%B4">多喝热水</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#markdown-examples">markdown-examples</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
         
     </li>
@@ -13758,16 +13723,16 @@ cons [count, setCount] = <span class="hljs-title function_">useState</span>(<spa
 <li>https://juejin.cn/post/7241114001323819063</li>
 <li>https://www.bilibili.com/video/BV11h411F7nd/?spm_id_from=333.1007.tianma.4-2-12.click&amp;vd_source=d6afd7eedd9f9c940321c63f0a1539e3</li>
 </ul>
-</div></div></content><author><name>oeyoews</name></author></entry><entry><title>垂直居中</title><link href="https://neotw.netlify.app/#%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD"></link><link href="https://neotw.netlify.app/static/%25E5%259E%2582%25E7%259B%25B4%25E5%25B1%2585%25E4%25B8%25AD.html" rel="alternative" type="text/html"></link><id>4117e80d-2c2e-52f7-95ec-64160f399364</id><updated>2023-05-25T10:28:42</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>垂直居中是指在一个容器（如一个盒子或一个网格单元格）中，将其中的内容在垂直方向上居中对齐。通常用于布局设计中，使页面或元素看起来更加整齐美观。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>多去朗读</title><link href="https://neotw.netlify.app/#%E5%A4%9A%E5%8E%BB%E6%9C%97%E8%AF%BB"></link><link href="https://neotw.netlify.app/static/%25E5%25A4%259A%25E5%258E%25BB%25E6%259C%2597%25E8%25AF%25BB.html" rel="alternative" type="text/html"></link><id>d5e05e0e-8f85-a60e-c62b-f64ce7506693</id><updated>2023-06-06T17:43:12</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>垂直居中</title><link href="https://neotw.netlify.app/#%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD"></link><link href="https://neotw.netlify.app/static/%25E5%259E%2582%25E7%259B%25B4%25E5%25B1%2585%25E4%25B8%25AD.html" rel="alternative" type="text/html"></link><id>4117e80d-2c2e-52f7-95ec-64160f399364</id><updated>2023-05-25T10:28:42</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>垂直居中是指在一个容器（如一个盒子或一个网格单元格）中，将其中的内容在垂直方向上居中对齐。通常用于布局设计中，使页面或元素看起来更加整齐美观。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>多去朗读</title><link href="https://neotw.netlify.app/#%E5%A4%9A%E5%8E%BB%E6%9C%97%E8%AF%BB"></link><link href="https://neotw.netlify.app/static/%25E5%25A4%259A%25E5%258E%25BB%25E6%259C%2597%25E8%25AF%25BB.html" rel="alternative" type="text/html"></link><id>d5e05e0e-8f85-a60e-c62b-f64ce7506693</id><updated>2023-06-06T18:51:42</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <p>朗读可以帮助我们更好地理解和记忆。朗读可以激活大脑的语言中心和听觉中心，提高我们对所读内容的理解和记忆能力。此外，把所读内容解释给他人听，可以帮助我们更深入地理解和掌握所学知识，并且可以发现自己在阅读时可能忽略的细节或问题。因此，尝试朗读和解释所学内容，可以帮助我们更有效地学习和掌握知识
 </p>
-</div></div></content><author><name>oeyoews</name></author></entry><entry><title>多去睡觉</title><link href="https://neotw.netlify.app/#%E5%A4%9A%E5%8E%BB%E7%9D%A1%E8%A7%89"></link><link href="https://neotw.netlify.app/static/%25E5%25A4%259A%25E5%258E%25BB%25E7%259D%25A1%25E8%25A7%2589.html" rel="alternative" type="text/html"></link><id>7a4b2c1a-14da-d26f-2066-d07d9434881d</id><updated>2023-06-06T18:47:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>多去睡觉</title><link href="https://neotw.netlify.app/#%E5%A4%9A%E5%8E%BB%E7%9D%A1%E8%A7%89"></link><link href="https://neotw.netlify.app/static/%25E5%25A4%259A%25E5%258E%25BB%25E7%259D%25A1%25E8%25A7%2589.html" rel="alternative" type="text/html"></link><id>7a4b2c1a-14da-d26f-2066-d07d9434881d</id><updated>2023-06-06T18:51:50</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <p>睡眠对于学习编程等需要大量新的关联的任务非常重要。睡眠可以促进大脑的记忆、巩固和再现过程，这对于学习编程等需要记忆和理解的任务非常重要。此外，睡眠还可以帮助大脑清理代谢产物，维持大脑健康。因此，要学好编程，我们需要保证充足的睡眠时间，并且尽量保持规律的作息时间。建议成年人每天睡眠时间在 7-9 小时之间，而青少年和儿童需要更多的睡眠时间。
 </p>
-</div></div></content><author><name>oeyoews</name></author></entry><entry><title>多去锻炼</title><link href="https://neotw.netlify.app/#%E5%A4%9A%E5%8E%BB%E9%94%BB%E7%82%BC"></link><link href="https://neotw.netlify.app/static/%25E5%25A4%259A%25E5%258E%25BB%25E9%2594%25BB%25E7%2582%25BC.html" rel="alternative" type="text/html"></link><id>22b77e06-9e65-fa25-8b4a-527617b9d284</id><updated>2023-06-06T17:41:54</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>多去锻炼</title><link href="https://neotw.netlify.app/#%E5%A4%9A%E5%8E%BB%E9%94%BB%E7%82%BC"></link><link href="https://neotw.netlify.app/static/%25E5%25A4%259A%25E5%258E%25BB%25E9%2594%25BB%25E7%2582%25BC.html" rel="alternative" type="text/html"></link><id>22b77e06-9e65-fa25-8b4a-527617b9d284</id><updated>2023-06-06T18:51:52</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <p>做体力活动可以帮助我们保持身体健康和提高学习效率。研究表明，适量的身体运动可以促进身体内的血液循环，增加大脑的氧气供应，提高注意力和专注力，并且有助于缓解焦虑和压力。因此，我们可以在学习期间适当进行一些体力活动，例如散步、跑步、打球等，这些活动可以帮助我们放松身心、提高学习效率。同时，我们应该养成良好的习惯，自觉参与体育活动，保持身体健康，这对于我们的身体和大脑健康都非常重要。
 </p>
-</div></div></content><author><name>oeyoews</name></author></entry><entry><title>多喝热水</title><link href="https://neotw.netlify.app/#%E5%A4%9A%E5%96%9D%E7%83%AD%E6%B0%B4"></link><link href="https://neotw.netlify.app/static/%25E5%25A4%259A%25E5%2596%259D%25E7%2583%25AD%25E6%25B0%25B4.html" rel="alternative" type="text/html"></link><id>44b1ff2e-ce99-11c1-b503-da6436ea0310</id><updated>2023-06-06T17:40:26</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>多喝热水</title><link href="https://neotw.netlify.app/#%E5%A4%9A%E5%96%9D%E7%83%AD%E6%B0%B4"></link><link href="https://neotw.netlify.app/static/%25E5%25A4%259A%25E5%2596%259D%25E7%2583%25AD%25E6%25B0%25B4.html" rel="alternative" type="text/html"></link><id>44b1ff2e-ce99-11c1-b503-da6436ea0310</id><updated>2023-06-06T18:51:38</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <p>身体水分充足对于大脑功能的正常运转非常重要，因为大脑的大部分成分都是水。如果身体缺水，就会导致血液黏稠度增加，从而减少血流量，导致大脑供氧不足、代谢缓慢，进而影响认知能力、注意力、记忆力等。因此，保持足够的水分摄入对于保持大脑健康非常重要。建议每天至少饮用 6-8 杯水，如果进行剧烈运动或在高温环境下工作，应适当增加水分摄入量。
 </p>
 </div></div></content><author><name>oeyoews</name></author></entry><entry><title>太微-ChatGPT-十问</title><link href="https://neotw.netlify.app/#%E5%A4%AA%E5%BE%AE-ChatGPT-%E5%8D%81%E9%97%AE"></link><link href="https://neotw.netlify.app/static/%25E5%25A4%25AA%25E5%25BE%25AE-ChatGPT-%25E5%258D%2581%25E9%2597%25AE.html" rel="alternative" type="text/html"></link><id>976d78d5-c80b-4557-f957-02b43fa2909c</id><updated>2023-03-30T17:11:49</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p style="height:calc(100vh - 120px);">Undefined widget 'chat-gpt'
@@ -13779,7 +13744,10 @@ cons [count, setCount] = <span class="hljs-title function_">useState</span>(<spa
 <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(result); <span class="hljs-comment">// 输出 &#x27;a &lt;= b&#x27;</span>
 
 <span class="hljs-keyword">const</span> isDemo = <span class="hljs-literal">false</span>;
-<span class="hljs-keyword">const</span> demo = (isDemo) ? <span class="hljs-string">&#x27;isdmeo&#x27;</span> : <span class="hljs-string">&#x27;notdemo&#x27;</span></code></pre><p>在这个示例代码中，我们定义了两个变量 a 和 b，并将它们的值分别设置为 5 和 10。然后，我们使用条件运算符号来比较 a 和 b 的大小，如果 a 大于 b，则返回 'a &gt; b'，否则返回 'a &lt;= b'。最后，我们将返回的值保存在 result 变量中，并使用 console.log() 方法将其输出到控制台中。</p><p>需要注意的是，在使用条件运算符号时，需要仔细考虑条件表达式的取值和返回值的类型，以避免出现不必要的错误。同时，也需要在代码中添加适当的注释和格式化，以提高代码的可读性和可维护性。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>火山翻译</title><link href="https://neotw.netlify.app/#%E7%81%AB%E5%B1%B1%E7%BF%BB%E8%AF%91"></link><link href="https://neotw.netlify.app/static/%25E7%2581%25AB%25E5%25B1%25B1%25E7%25BF%25BB%25E8%25AF%2591.html" rel="alternative" type="text/html"></link><id>a6599705-86fb-4fb3-379c-9eab59618447</id><updated>2023-04-23T13:48:47</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></content><author><name>oeyoews</name></author></entry><entry><title>继承</title><link href="https://neotw.netlify.app/#%E7%BB%A7%E6%89%BF"></link><link href="https://neotw.netlify.app/static/%25E7%25BB%25A7%25E6%2589%25BF.html" rel="alternative" type="text/html"></link><id>2dde3029-c417-0a1c-8e96-1a90766e0194</id><updated>2023-05-25T10:28:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>JavaScript中的继承可以通过原型链实现。具体来说，可以使用<code>Object.create()</code>方法创建一个新对象，将父类的原型作为参数传入，然后再将子类的原型设置为这个新对象。这样，子类就可以继承父类的属性和方法了。</p><p>下面是一个简单的例子，展示了如何使用原型链实现继承：</p><pre class="hljs"><code class="javascript hljs"><span class="hljs-comment">// 定义一个父类</span>
+<span class="hljs-keyword">const</span> demo = (isDemo) ? <span class="hljs-string">&#x27;isdmeo&#x27;</span> : <span class="hljs-string">&#x27;notdemo&#x27;</span></code></pre><p>在这个示例代码中，我们定义了两个变量 a 和 b，并将它们的值分别设置为 5 和 10。然后，我们使用条件运算符号来比较 a 和 b 的大小，如果 a 大于 b，则返回 'a &gt; b'，否则返回 'a &lt;= b'。最后，我们将返回的值保存在 result 变量中，并使用 console.log() 方法将其输出到控制台中。</p><p>需要注意的是，在使用条件运算符号时，需要仔细考虑条件表达式的取值和返回值的类型，以避免出现不必要的错误。同时，也需要在代码中添加适当的注释和格式化，以提高代码的可读性和可维护性。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>水合作用</title><link href="https://neotw.netlify.app/#%E6%B0%B4%E5%90%88%E4%BD%9C%E7%94%A8"></link><link href="https://neotw.netlify.app/static/%25E6%25B0%25B4%25E5%2590%2588%25E4%25BD%259C%25E7%2594%25A8.html" rel="alternative" type="text/html"></link><id>216d4bca-204c-e99a-0e16-b8c76fc796e5</id><updated>2023-06-06T19:14:16</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+<p>React 是一个 JavaScript 库，用于构建用户界面。在 React 中，水合作用是指在服务器端渲染时，React 在将 HTML 发送到客户端之前，将组件的初始数据和事件处理程序注入到 HTML 中。这样，当客户端加载 HTML 时，React 就可以快速重建组件的状态，从而提高应用程序的性能和响应速度。这种注入初始数据和事件处理程序的过程就被称为水合作用。
+</p>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>火山翻译</title><link href="https://neotw.netlify.app/#%E7%81%AB%E5%B1%B1%E7%BF%BB%E8%AF%91"></link><link href="https://neotw.netlify.app/static/%25E7%2581%25AB%25E5%25B1%25B1%25E7%25BF%25BB%25E8%25AF%2591.html" rel="alternative" type="text/html"></link><id>a6599705-86fb-4fb3-379c-9eab59618447</id><updated>2023-04-23T13:48:47</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></content><author><name>oeyoews</name></author></entry><entry><title>继承</title><link href="https://neotw.netlify.app/#%E7%BB%A7%E6%89%BF"></link><link href="https://neotw.netlify.app/static/%25E7%25BB%25A7%25E6%2589%25BF.html" rel="alternative" type="text/html"></link><id>2dde3029-c417-0a1c-8e96-1a90766e0194</id><updated>2023-05-25T10:28:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>JavaScript中的继承可以通过原型链实现。具体来说，可以使用<code>Object.create()</code>方法创建一个新对象，将父类的原型作为参数传入，然后再将子类的原型设置为这个新对象。这样，子类就可以继承父类的属性和方法了。</p><p>下面是一个简单的例子，展示了如何使用原型链实现继承：</p><pre class="hljs"><code class="javascript hljs"><span class="hljs-comment">// 定义一个父类</span>
 <span class="hljs-keyword">function</span> <span class="hljs-title function_">Animal</span>(<span class="hljs-params">name</span>) {
   <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name;
 }
