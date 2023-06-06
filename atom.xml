@@ -2575,7 +2575,7 @@ Undefined widget 'tid2pdf'
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>GettingStarted</title><link href="https://neotw.netlify.app/#GettingStarted"></link><link href="https://neotw.netlify.app/static/GettingStarted.html" rel="alternative" type="text/html"></link><id>fc927313-83cf-7e0a-53c1-21853f695851</id><updated>2023-06-05T19:42:02</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:bg-white">
 <div class="dark:hidden">
 <img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-661-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-48-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-71-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-16 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-4 minutes ago-green?style=social"></img>  
 </div>
 
 
@@ -3687,7 +3687,8 @@ arr.forEach(item =&gt; {
 
 // 使用 map 方法
 const newArr = arr.map(item =&gt; item * 2);
-console.log(newArr);</code></pre><p>在使用这两种方法时，需要注意的是，回调函数的参数不同。<code>forEach</code> 方法的回调函数有三个参数：当前遍历的元素、当前元素的索引和整个数组。而 <code>map</code> 方法的回调函数只有两个参数：当前遍历的元素和当前元素的索引。</p><p>希望这些信息可以帮助您更好地理解 <code>forEach</code> 和 <code>map</code> 方法之间的区别。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>maple-hand</title><link href="https://neotw.netlify.app/#maple-hand"></link><link href="https://neotw.netlify.app/static/maple-hand.html" rel="alternative" type="text/html"></link><id>027ea563-1e2a-e6cf-d184-c314fcc15dae</id><updated>2023-04-18T10:08:25</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>maple hand</p></div></content><author><name>oeyoews</name></author></entry><entry><title>margin-order</title><link href="https://neotw.netlify.app/#margin-order"></link><link href="https://neotw.netlify.app/static/margin-order.html" rel="alternative" type="text/html"></link><id>92b8eb3a-ee84-e2ae-265b-09aae86d6866</id><updated>2023-03-20T22:24:27</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>top right bottom left(clock)</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>markdown-examples</title><link href="https://neotw.netlify.app/#markdown-examples"></link><link href="https://neotw.netlify.app/static/markdown-examples.html" rel="alternative" type="text/html"></link><id>ea3dd8d5-e410-f5d1-cd24-2786e05a9fd7</id><updated>2023-06-06T13:39:19</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+console.log(newArr);</code></pre><p>在使用这两种方法时，需要注意的是，回调函数的参数不同。<code>forEach</code> 方法的回调函数有三个参数：当前遍历的元素、当前元素的索引和整个数组。而 <code>map</code> 方法的回调函数只有两个参数：当前遍历的元素和当前元素的索引。</p><p>希望这些信息可以帮助您更好地理解 <code>forEach</code> 和 <code>map</code> 方法之间的区别。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>maple-hand</title><link href="https://neotw.netlify.app/#maple-hand"></link><link href="https://neotw.netlify.app/static/maple-hand.html" rel="alternative" type="text/html"></link><id>027ea563-1e2a-e6cf-d184-c314fcc15dae</id><updated>2023-04-18T10:08:25</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>maple hand</p></div></content><author><name>oeyoews</name></author></entry><entry><title>margin-order</title><link href="https://neotw.netlify.app/#margin-order"></link><link href="https://neotw.netlify.app/static/margin-order.html" rel="alternative" type="text/html"></link><id>92b8eb3a-ee84-e2ae-265b-09aae86d6866</id><updated>2023-03-20T22:24:27</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>top right bottom left(clock)</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>markdown-examples</title><link href="https://neotw.netlify.app/#markdown-examples"></link><link href="https://neotw.netlify.app/static/markdown-examples.html" rel="alternative" type="text/html"></link><id>ea3dd8d5-e410-f5d1-cd24-2786e05a9fd7</id><updated>2023-06-06T18:44:29</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+Undefined widget 'tid2pdf'
 <details class="text-indigo-400 font-bold hover:text-indigo-600 trannsition duration-200 cursor-pointer ml-2 my-2 hover:bg-slate-200 px-2 rounded-md">
 <summary>🌴 目录</summary>
 <p><div class="toc" id="toc">
@@ -4261,7 +4262,7 @@ Undefined widget 'tid2pdf'<hr class="footnotes-sep"></hr>
 &lt;/ul&gt;
 &lt;/div&gt;</url></dirname></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-badges</title><link href="https://neotw.netlify.app/#neotw-badges"></link><link href="https://neotw.netlify.app/static/neotw-badges.html" rel="alternative" type="text/html"></link><id>f934e3aa-d36d-34bb-609b-922693d9b993</id><updated>2023-06-01T21:41:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:hidden">
 <img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-661-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-48-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-71-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-16 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-4 minutes ago-green?style=social"></img>  
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-command</title><link href="https://neotw.netlify.app/#neotw-command"></link><link href="https://neotw.netlify.app/static/neotw-command.html" rel="alternative" type="text/html"></link><id>188385e0-6b3a-4916-a54a-061d9d29e18f</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
        ✨ 0.1
@@ -7331,8 +7332,6 @@ archlinux-java status
 &lt;/div&gt;</exec></li></ul></filename></li></ul></time></li></ul></li></ul></username></li></username></li></username></li></ul></directions></li></ul></li></ul></server-id></p></li></id></p></li></ul></PID></p></li></ul></p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw/action/base-time-darkmode</title><link href="https://neotw.netlify.app/#neotw%2Faction%2Fbase-time-darkmode"></link><link href="https://neotw.netlify.app/static/neotw%252Faction%252Fbase-time-darkmode.html" rel="alternative" type="text/html"></link><id>ca300897-59c7-394f-ab70-18ef3e8afa20</id><updated>2022-09-10T11:55:09</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>
 
 
-
-
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw/actions/base-browser-darkmode</title><link href="https://neotw.netlify.app/#neotw%2Factions%2Fbase-browser-darkmode"></link><link href="https://neotw.netlify.app/static/neotw%252Factions%252Fbase-browser-darkmode.html" rel="alternative" type="text/html"></link><id>c06b7073-601c-a135-522e-8d52eb62e6db</id><updated>2022-09-10T11:09:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p></p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw/archive/restore-button</title><link href="https://neotw.netlify.app/#neotw%2Farchive%2Frestore-button"></link><link href="https://neotw.netlify.app/static/neotw%252Farchive%252Frestore-button.html" rel="alternative" type="text/html"></link><id>51399bbb-0860-5f76-e517-a4cedcb6a20c</id><updated>2022-09-07T13:28:13</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div style="text-align: right;">
 <button class=""> 
 
@@ -8490,6 +8489,10 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 </div>
 
 <div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#markdown-examples"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E5%A4%9A%E5%8E%BB%E6%9C%97%E8%AF%BB"></a>
 </div>
 
@@ -8511,10 +8514,6 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 
 <div class="tc-menu-list-subitem">
 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#open-closed-principle"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#markdown-examples"></a>
 </div>
 
 <div class="tc-menu-list-subitem">
@@ -8992,6 +8991,12 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
     </li>
   
     <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#markdown-examples">markdown-examples</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E5%A4%9A%E5%8E%BB%E6%9C%97%E8%AF%BB">多去朗读</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
         
@@ -9023,12 +9028,6 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#open-closed-principle">open-closed-principle</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
-    </li>
-  
-    <li>
-		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#markdown-examples">markdown-examples</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
         
     </li>
@@ -13762,7 +13761,7 @@ cons [count, setCount] = <span class="hljs-title function_">useState</span>(<spa
 </div></div></content><author><name>oeyoews</name></author></entry><entry><title>垂直居中</title><link href="https://neotw.netlify.app/#%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD"></link><link href="https://neotw.netlify.app/static/%25E5%259E%2582%25E7%259B%25B4%25E5%25B1%2585%25E4%25B8%25AD.html" rel="alternative" type="text/html"></link><id>4117e80d-2c2e-52f7-95ec-64160f399364</id><updated>2023-05-25T10:28:42</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>垂直居中是指在一个容器（如一个盒子或一个网格单元格）中，将其中的内容在垂直方向上居中对齐。通常用于布局设计中，使页面或元素看起来更加整齐美观。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>多去朗读</title><link href="https://neotw.netlify.app/#%E5%A4%9A%E5%8E%BB%E6%9C%97%E8%AF%BB"></link><link href="https://neotw.netlify.app/static/%25E5%25A4%259A%25E5%258E%25BB%25E6%259C%2597%25E8%25AF%25BB.html" rel="alternative" type="text/html"></link><id>d5e05e0e-8f85-a60e-c62b-f64ce7506693</id><updated>2023-06-06T17:43:12</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <p>朗读可以帮助我们更好地理解和记忆。朗读可以激活大脑的语言中心和听觉中心，提高我们对所读内容的理解和记忆能力。此外，把所读内容解释给他人听，可以帮助我们更深入地理解和掌握所学知识，并且可以发现自己在阅读时可能忽略的细节或问题。因此，尝试朗读和解释所学内容，可以帮助我们更有效地学习和掌握知识
 </p>
-</div></div></content><author><name>oeyoews</name></author></entry><entry><title>多去睡觉</title><link href="https://neotw.netlify.app/#%E5%A4%9A%E5%8E%BB%E7%9D%A1%E8%A7%89"></link><link href="https://neotw.netlify.app/static/%25E5%25A4%259A%25E5%258E%25BB%25E7%259D%25A1%25E8%25A7%2589.html" rel="alternative" type="text/html"></link><id>7a4b2c1a-14da-d26f-2066-d07d9434881d</id><updated>2023-06-06T17:44:15</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>多去睡觉</title><link href="https://neotw.netlify.app/#%E5%A4%9A%E5%8E%BB%E7%9D%A1%E8%A7%89"></link><link href="https://neotw.netlify.app/static/%25E5%25A4%259A%25E5%258E%25BB%25E7%259D%25A1%25E8%25A7%2589.html" rel="alternative" type="text/html"></link><id>7a4b2c1a-14da-d26f-2066-d07d9434881d</id><updated>2023-06-06T18:47:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <p>睡眠对于学习编程等需要大量新的关联的任务非常重要。睡眠可以促进大脑的记忆、巩固和再现过程，这对于学习编程等需要记忆和理解的任务非常重要。此外，睡眠还可以帮助大脑清理代谢产物，维持大脑健康。因此，要学好编程，我们需要保证充足的睡眠时间，并且尽量保持规律的作息时间。建议成年人每天睡眠时间在 7-9 小时之间，而青少年和儿童需要更多的睡眠时间。
 </p>
 </div></div></content><author><name>oeyoews</name></author></entry><entry><title>多去锻炼</title><link href="https://neotw.netlify.app/#%E5%A4%9A%E5%8E%BB%E9%94%BB%E7%82%BC"></link><link href="https://neotw.netlify.app/static/%25E5%25A4%259A%25E5%258E%25BB%25E9%2594%25BB%25E7%2582%25BC.html" rel="alternative" type="text/html"></link><id>22b77e06-9e65-fa25-8b4a-527617b9d284</id><updated>2023-06-06T17:41:54</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
