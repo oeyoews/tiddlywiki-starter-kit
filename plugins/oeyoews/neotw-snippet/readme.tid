@@ -1,6 +1,8 @@
 title: $:/plugins/oeyoews/neotw-snippet/readme
 type: text/markdown
 
+@[toc]
+
 ## TODO
 
 * [ ] enable snippets hint for markdown type

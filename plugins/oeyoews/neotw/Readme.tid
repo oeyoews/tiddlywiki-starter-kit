@@ -1,6 +1,8 @@
 title: $:/plugins/oeyoews/neotw/Readme
 caption: Readme
 
+@[toc]
+
 <$list filter="[[$:/language]get[text]match[$:/languages/zh-Hans]]">
   {{$:/plugins/oeyoews/neotw/README-CN}}
 </$list>
