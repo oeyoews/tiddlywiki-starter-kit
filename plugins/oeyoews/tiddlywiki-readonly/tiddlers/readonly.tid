@@ -11,6 +11,10 @@ tags: $:/tags/Stylesheet
 </$list>
 </$list>
 
-<$list filter='[tag[Journal]]'>
-[data-tiddler-title='{{!!title}}'] { border: 1px dashed blue !important; }
-</$list>
+<!-- <$list filter='[tag[Journal]]'> -->
+<!-- [data-tiddler-title='{{!!title}}'] { border: 1px dashed blue !important; } -->
+<!-- </$list> -->
+
+[data-tags='Journal'] {
+  border: 1px dashed blue !important;
+}
