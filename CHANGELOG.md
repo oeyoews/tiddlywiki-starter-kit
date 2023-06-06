@@ -1,3 +1,10 @@
+# [3.285.0](https://github.com/oeyoews/neotw/compare/v3.284.0...v3.285.0) (2023-06-06)
+
+
+### Features
+
+* enable neotw-snippet ([f792bf0](https://github.com/oeyoews/neotw/commit/f792bf0c750d1e8f09ac7701db08b381ded648ca))
+
 # [3.284.0](https://github.com/oeyoews/neotw/compare/v3.283.0...v3.284.0) (2023-06-06)
 
 
