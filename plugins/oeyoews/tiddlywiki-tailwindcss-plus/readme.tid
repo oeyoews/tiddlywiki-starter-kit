@@ -16,7 +16,7 @@ title: $:/plugins/oeyoews/tiddlywiki-tailwindcss-plus/readme
   Explore
 </$button>
 
-<div class="prose max-x-none">
+<div class="prose max-w-none">
 
 !! Tiddlywiki Tailwindcss Plus
 
