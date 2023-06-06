@@ -15,6 +15,6 @@ tags: $:/tags/Stylesheet
 <!-- [data-tiddler-title='{{!!title}}'] { border: 1px dashed blue !important; } -->
 <!-- </$list> -->
 
-[data-tags='Journal'] {
+[data-tags*='Journal'] {
   border: 1px dashed blue !important;
 }
