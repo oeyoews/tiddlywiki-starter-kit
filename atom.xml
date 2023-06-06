@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Neotw rolling
 </title><subtitle>A modern notebook based on TiddlyWiki5
-</subtitle><link href="https://neotw.netlify.app/atom.xml" rel="self"></link><link href="https://neotw.netlify.app/"></link><author><name>oeyoews</name></author><id>462a8bca-7c57-8f8a-27a3-d6cb4c75a727</id><updated>2023-06-05T19:44:07</updated><entry><title>/home/runner/work/neotw/neotw/tiddlers/hi-oeyoews.svg</title><link href="https://neotw.netlify.app/#%2Fhome%2Frunner%2Fwork%2Fneotw%2Fneotw%2Ftiddlers%2Fhi-oeyoews.svg"></link><link href="https://neotw.netlify.app/static/%252Fhome%252Frunner%252Fwork%252Fneotw%252Fneotw%252Ftiddlers%252Fhi-oeyoews.svg.html" rel="alternative" type="text/html"></link><id>3798d5df-8b06-4ca4-8046-0c87bf3b437d</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><img src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20viewBox%3D%220%200%20600%20300%22%20width%3D%22600%22%20height%3D%22300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3CforeignObject%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%0A%20%20%20%20%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%0A%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%40keyframes%20hi%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%200%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2010%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2020%25%20%7B%20transform%3A%20rotate(-8.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2030%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2040%25%20%7B%20transform%3A%20rotate(-4.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2050%25%20%7B%20transform%3A%20rotate(10.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2060%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40keyframes%20gradient%20%7B%0A%20%20%20%20%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%2050%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%20100%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%235452ee%3B%0A%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%23e73c7e%3B%0A%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%2323a6d5%3B%0A%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23ffff%3B%0A%0A%20%20%20%20%20%20%20%20%20%20background%3A%20linear-gradient(-45deg%2C%20var(--color-main)%2C%20var(--color-primary)%2C%20var(--color-secondary)%2C%20var(--color-tertiary))%3B%0A%20%20%20%20%20%20%20%20%20%20background-size%3A%20400%25%20400%25%3B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20gradient%2015s%20ease%20infinite%3B%0A%0A%20%20%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20%20%20height%3A%20300px%3B%0A%0A%20%20%20%20%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20color%3A%20white%3B%0A%0A%20%20%20%20%20%20%20%20%20%20font-family%3A%20-apple-system%2C%20BlinkMacSystemFont%2C%20%22Segoe%20UI%22%2C%20Roboto%2C%20Helvetica%2C%20Arial%2C%20sans-serif%2C%20%22Apple%20Color%20Emoji%22%2C%20%22Segoe%20UI%20Emoji%22%2C%20%22Segoe%20UI%20Symbol%22%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20hi%201.5s%20linear%20-0.5s%20infinite%3B%0A%20%20%20%20%20%20%20%20%20%20display%3A%20inline-block%3B%0A%20%20%20%20%20%20%20%20%20%20transform-origin%3A%2070%25%2070%25%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-color-scheme%3A%20light)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%23F15BB5%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%2324b0ef%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%234526f6%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23f6f645%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-reduced-motion)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%3C%2Fstyle%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%20%20%3Ch1%3EHi%20there%2C%20my%20name%20is%20oeyoews%20%3Cdiv%20class%3D%22hi%22%3E%F0%9F%91%8B%3C%2Fdiv%3E%3C%2Fh1%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2FforeignObject%3E%0A%3C%2Fsvg%3E"></img></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-02-28</title><link href="https://neotw.netlify.app/#2023-02-28"></link><link href="https://neotw.netlify.app/static/2023-02-28.html" rel="alternative" type="text/html"></link><id>90d001b4-d8df-ae9a-ba70-fe38459a71c5</id><updated>2023-02-28T00:12:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div>无论人生上了哪一层台阶 ，阶下有人在仰望你，阶上亦有人在俯视你；你抬头自卑，低头自得，唯有平视，才能看到真实的自已。 @杨绛语录</div></blockquote></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-16</title><link href="https://neotw.netlify.app/#2023-04-16"></link><link href="https://neotw.netlify.app/static/2023-04-16.html" rel="alternative" type="text/html"></link><id>b720eb79-6a7f-86f0-c39b-4c456f2916fb</id><updated>2023-04-16T09:56:15</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>初级赚钱方式靠信息差，
+</subtitle><link href="https://neotw.netlify.app/atom.xml" rel="self"></link><link href="https://neotw.netlify.app/"></link><author><name>oeyoews</name></author><id>462a8bca-7c57-8f8a-27a3-d6cb4c75a727</id><updated>2023-06-06T10:22:02</updated><entry><title>/home/runner/work/neotw/neotw/tiddlers/hi-oeyoews.svg</title><link href="https://neotw.netlify.app/#%2Fhome%2Frunner%2Fwork%2Fneotw%2Fneotw%2Ftiddlers%2Fhi-oeyoews.svg"></link><link href="https://neotw.netlify.app/static/%252Fhome%252Frunner%252Fwork%252Fneotw%252Fneotw%252Ftiddlers%252Fhi-oeyoews.svg.html" rel="alternative" type="text/html"></link><id>3798d5df-8b06-4ca4-8046-0c87bf3b437d</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><img src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20viewBox%3D%220%200%20600%20300%22%20width%3D%22600%22%20height%3D%22300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3CforeignObject%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%0A%20%20%20%20%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%0A%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%40keyframes%20hi%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%200%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2010%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2020%25%20%7B%20transform%3A%20rotate(-8.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2030%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2040%25%20%7B%20transform%3A%20rotate(-4.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2050%25%20%7B%20transform%3A%20rotate(10.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2060%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40keyframes%20gradient%20%7B%0A%20%20%20%20%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%2050%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%20100%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%235452ee%3B%0A%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%23e73c7e%3B%0A%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%2323a6d5%3B%0A%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23ffff%3B%0A%0A%20%20%20%20%20%20%20%20%20%20background%3A%20linear-gradient(-45deg%2C%20var(--color-main)%2C%20var(--color-primary)%2C%20var(--color-secondary)%2C%20var(--color-tertiary))%3B%0A%20%20%20%20%20%20%20%20%20%20background-size%3A%20400%25%20400%25%3B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20gradient%2015s%20ease%20infinite%3B%0A%0A%20%20%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20%20%20height%3A%20300px%3B%0A%0A%20%20%20%20%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20color%3A%20white%3B%0A%0A%20%20%20%20%20%20%20%20%20%20font-family%3A%20-apple-system%2C%20BlinkMacSystemFont%2C%20%22Segoe%20UI%22%2C%20Roboto%2C%20Helvetica%2C%20Arial%2C%20sans-serif%2C%20%22Apple%20Color%20Emoji%22%2C%20%22Segoe%20UI%20Emoji%22%2C%20%22Segoe%20UI%20Symbol%22%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20hi%201.5s%20linear%20-0.5s%20infinite%3B%0A%20%20%20%20%20%20%20%20%20%20display%3A%20inline-block%3B%0A%20%20%20%20%20%20%20%20%20%20transform-origin%3A%2070%25%2070%25%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-color-scheme%3A%20light)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%23F15BB5%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%2324b0ef%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%234526f6%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23f6f645%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-reduced-motion)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%3C%2Fstyle%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%20%20%3Ch1%3EHi%20there%2C%20my%20name%20is%20oeyoews%20%3Cdiv%20class%3D%22hi%22%3E%F0%9F%91%8B%3C%2Fdiv%3E%3C%2Fh1%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2FforeignObject%3E%0A%3C%2Fsvg%3E"></img></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-02-28</title><link href="https://neotw.netlify.app/#2023-02-28"></link><link href="https://neotw.netlify.app/static/2023-02-28.html" rel="alternative" type="text/html"></link><id>90d001b4-d8df-ae9a-ba70-fe38459a71c5</id><updated>2023-02-28T00:12:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div>无论人生上了哪一层台阶 ，阶下有人在仰望你，阶上亦有人在俯视你；你抬头自卑，低头自得，唯有平视，才能看到真实的自已。 @杨绛语录</div></blockquote></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-16</title><link href="https://neotw.netlify.app/#2023-04-16"></link><link href="https://neotw.netlify.app/static/2023-04-16.html" rel="alternative" type="text/html"></link><id>b720eb79-6a7f-86f0-c39b-4c456f2916fb</id><updated>2023-04-16T09:56:15</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>初级赚钱方式靠信息差，
 高级赚钱方式靠认知差，
 顶级赚钱方式靠资源差</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-20</title><link href="https://neotw.netlify.app/#2023-04-20"></link><link href="https://neotw.netlify.app/static/2023-04-20.html" rel="alternative" type="text/html"></link><id>66fbd211-302a-90f1-43e7-1f0ea4e0f181</id><updated>2023-04-20T20:53:27</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>多端同步的便捷和本地存储的安全，就是鱼与熊掌不可兼得。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-23</title><link href="https://neotw.netlify.app/#2023-04-23"></link><link href="https://neotw.netlify.app/static/2023-04-23.html" rel="alternative" type="text/html"></link><id>eb28f00e-453b-d5a1-967b-e984799ea2d8</id><updated>2023-04-24T00:16:36</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div>延迟满足</div><div>用书籍增加三倍人生体验时长</div><div>不以成喜，不以败悲</div></blockquote><p>“止观止心，无妄无碍”是禅宗的一种修行方法，也是佛教徒在生活中追求内心平静和解脱的方式。</p><p>其中，“止”指的是停止杂念、烦恼等不必要的思考和行为，如止诸恶、止杀戮、止谤言等。这样可以使内心得到安定和净化，有利于后续的修行。</p><p>“观”则指观察事物的真相和本质，排除偏见和执着。通过观想自己和世界的真实性质，认识自己的本性和命运，从而达到身心合一、彻底了解自己和世界的目的。</p><p>“无妄”则表示去除「妄念」、「妄想」和「妄语」等，即清空心灵中荒谬无稽的幻想和自我，让自己的内心变得更加安宁、平静。</p><p>“无碍”则是指避免心态上的障碍和物质层面的附着，为达到自由和解脱而努力。</p><p>总之，这个修行方法要求个人通过内省、检视和拯救自己，消除恶念与烦恼，培养慈悲之心，领悟事物的真实本质，从而找到内心的平静和解放。</p><blockquote><div>客观事物发展规律不以人的主观意志，然而掌握事物的发展规律，却可以从必然王国到自由王国</div></blockquote><p>这句话的意思是，客观事物的发展规律是客观存在的，不受人的主观意志的影响。但是，如果我们能够掌握这些规律并对它们进行改变和运用，我们就可以从必然王国（受客观规律支配的领域）进入自由王国（自由创造或创新的领域）。</p><p>在许多领域中，我们都可以看到这一点。例如，在科学技术领域，我们通过研究和掌握客观规律，开发出了许多有用的工具和技术，使我们的生产和生活更加便利和高效。同样，在社会和经济领域中，通过深入了解客观规律，我们可以制定出更好的政策和管理方法，以促进社会和经济的稳定和发展。</p><p>尽管客观规律的存在使我们受到限制，但如果我们学会理解和运用这些规律，我们就可以发挥自己的主动性和创造性，实现更高的自由度，并不断推动事物的进步和发展。因此，掌握客观规律是实现自由和创造的关键之一。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-25</title><link href="https://neotw.netlify.app/#2023-04-25"></link><link href="https://neotw.netlify.app/static/2023-04-25.html" rel="alternative" type="text/html"></link><id>07baca31-a4c1-d735-df41-8cf857fe4d13</id><updated>2023-04-25T23:01:46</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://space.bilibili.com/43109229/channel/collectiondetail?sid=1234748" rel="noopener noreferrer" target="_blank">https://space.bilibili.com/43109229/channel/collectiondetail?sid=1234748</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-05-06</title><link href="https://neotw.netlify.app/#2023-05-06"></link><link href="https://neotw.netlify.app/static/2023-05-06.html" rel="alternative" type="text/html"></link><id>ac8c3ae3-20fd-c971-eb36-7e3608c51b59</id><updated>2023-05-06T22:55:30</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>拥有能让自己快乐的能力,有一件让自己兴奋一点的事情</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-05-15</title><link href="https://neotw.netlify.app/#2023-05-15"></link><link href="https://neotw.netlify.app/static/2023-05-15.html" rel="alternative" type="text/html"></link><id>5ae2dacd-4932-0fb6-3754-327b31a02c7f</id><updated>2023-05-15T09:19:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>社交的本质是价值交换</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-05-17</title><link href="https://neotw.netlify.app/#2023-05-17"></link><link href="https://neotw.netlify.app/static/2023-05-17.html" rel="alternative" type="text/html"></link><id>5cfc6d08-80d6-3230-a52e-29ee0b651757</id><updated>2023-05-17T10:46:31</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <ul>
@@ -54,7 +54,7 @@
 <p>认知半径限制了自己不知道该干什么,
 </p>
 </blockquote>
-</div></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-05-31</title><link href="https://neotw.netlify.app/#2023-05-31"></link><link href="https://neotw.netlify.app/static/2023-05-31.html" rel="alternative" type="text/html"></link><id>d64d60ce-f97c-e7e0-6368-084f8621b116</id><updated>2023-05-31T19:18:58</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><code>得其神, 忘其形</code> 出自《道德经》第三十二章，意思是说，我们应该追求事物的本质和内在意义，而不是被表面形式所迷惑或束缚。</p><p>在编程中，我们也可以将这句话运用到实践中。即，我们应该专注于解决问题的本质，而不是过于关注表面的细节或繁琐的实现步骤。例如，在编写代码时，我们应该首先考虑如何实现功能，而不是过于关注具体的语法细节或编写繁琐的代码。我们应该以简洁、高效的方式解决问题，而不是被过多的细节所干扰。</p><p>总之，得其神，忘其形，是一种追求本质、简洁和高效的态度，它可以帮助我们更好地解决问题和提高编程效率。</p><p>如果一下子便深入到 某件事情中，就会像是一个在沙漠中没有地图的人，即使可以找到一个绿洲，但是他也不会知道下一个绿洲在哪</p></div></content><author><name>oeyoews</name></author></entry><entry><title>about-gpt</title><link href="https://neotw.netlify.app/#about-gpt"></link><link href="https://neotw.netlify.app/static/about-gpt.html" rel="alternative" type="text/html"></link><id>38cc78fa-2df2-2c0b-3bf2-38ba392333b8</id><updated>2023-04-09T16:19:27</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>准确性会提高，但永远不会完美</li><li>事情将会改变，但不会像人们所说的那样可怕。</li><li>所有内容都是基于我的真实信念。你可以自己决定这些信念是否有偏见。</li><li>增强，而不是替代</li><li>在过去的 10 年里，很多复杂性已经从服务器转移到客户端。Monolithic Express 应用程序已经转变为无服务器功能的集合，而我们的前端已经从超链接数字文档发展为成熟的桌面质量应用程序。</li></ul><blockquote><div><a class="tc-tiddlylink-external" href="https://www.joshwcomeau.com/blog/the-end-of-frontend-development/" rel="noopener noreferrer" target="_blank">https://www.joshwcomeau.com/blog/the-end-of-frontend-development/</a></div></blockquote></div></content><author><name>oeyoews</name></author></entry><entry><title>about-TIDDLYWIKI_PLUGIN_PATH-not-working</title><link href="https://neotw.netlify.app/#about-TIDDLYWIKI_PLUGIN_PATH-not-working"></link><link href="https://neotw.netlify.app/static/about-TIDDLYWIKI_PLUGIN_PATH-not-working.html" rel="alternative" type="text/html"></link><id>a319f11b-c22a-815e-57c6-0ec1d80d06cc</id><updated>2023-03-18T10:58:05</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><ul class="checklist"><li><span class="checklist-newitem-icon" for="checklist-new"></span><input class="checklist-newitem" id="checklist-new" placeholder="New list item (WikiText)"></input><label class="checklist-vh" for="checklist-new">Write a new item for the list.</label><button class="tc-btn-invisible tc-btn-mini checklist-add" title="add to list"><span class="checklist-vh">add list item</span></button></li><li><input id="0" pos="0" type="checkbox"></input><button class="tc-btn-invisible tc-btn-mini checklist-remove" title="delete"><span class="checklist-vh">delete list item</span></button><label for="0"><code>tiddlywiki</code>  卸载tiddlywiki全局包(我不理解)，一切正常 </label></li></ul></p></div></content><author><name>oeyoews</name></author></entry><entry><title>about-unsplash-random</title><link href="https://neotw.netlify.app/#about-unsplash-random"></link><link href="https://neotw.netlify.app/static/about-unsplash-random.html" rel="alternative" type="text/html"></link><id>cd943b3d-e923-c582-3be9-62c6e06ab1e4</id><updated>2023-04-09T11:50:05</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li><a class="tc-tiddlylink-external" href="https://www.reddit.com/r/unsplash/comments/s13x4h/what_happened_to_sourceunsplashcom/" rel="noopener noreferrer" target="_blank">https://www.reddit.com/r/unsplash/comments/s13x4h/what_happened_to_sourceunsplashcom/</a></li><li><a class="tc-tiddlylink-external" href="https://unsplash.com/documentation#get-a-random-photo" rel="noopener noreferrer" target="_blank">https://unsplash.com/documentation#get-a-random-photo</a></li></ul><p><img class=" tc-image-loading" src="https://source.unsplash.com/44x44/daily"></img></p></div></content><author><name>oeyoews</name></author></entry><entry><title>add-animation-for-layout</title><link href="https://neotw.netlify.app/#add-animation-for-layout"></link><link href="https://neotw.netlify.app/static/add-animation-for-layout.html" rel="alternative" type="text/html"></link><id>3fd05268-b6d2-e723-f720-9df8b9bfb06f</id><updated>2023-03-31T22:01:07</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div>maybe can add animation on switch different layout, such as from landing layout to home page layout</div></blockquote></div></content><author><name>oeyoews</name></author></entry><entry><title>add-copyright-footer</title><link href="https://neotw.netlify.app/#add-copyright-footer"></link><link href="https://neotw.netlify.app/static/add-copyright-footer.html" rel="alternative" type="text/html"></link><id>9e2da7ea-e6c8-7f38-d70a-6bd8b9b433d4</id><updated>2023-04-01T19:46:42</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>知识产权保护：版权符号表示网站的内容、设计和代码受法律保护。它是对潜在侵权者的警告，如果其版权受到侵犯，网站所有者将采取法律行动。</p><p>所有权：版权符号表明网站所有者是其网站内容的合法所有者。它有助于建立他们对知识产权的所有权和控制权。</p><p>专业性：在网站页脚添加版权符号给人一种专业的印象。这表明网站所有者认真对待他们的内容和知识产权，并致力于保护它。</p><p>法律要求：在某些国家/地区，向网站添加版权符号是一项法律要求。否则可能会导致法律后果。</p><p>威慑力：版权符号对潜在的侵权者起到威慑作用。这表明网站所有者了解他们的权利并准备采取行动保护他们。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>add-transition-mode</title><link href="https://neotw.netlify.app/#add-transition-mode"></link><link href="https://neotw.netlify.app/static/add-transition-mode.html" rel="alternative" type="text/html"></link><id>0d58f07e-4f14-6e65-8e98-29aeba7831d9</id><updated>2023-05-01T11:47:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>切换主题时晃眼的问题通常是由于主题颜色变化过程中没有进行过渡处理导致的。要解决这个问题，可以通过添加 CSS 过渡效果来实现平滑的主题切换。</p><p>具体来说，在切换主题时，可以使用 JavaScript 动态向页面头部插入一个新的样式表，并在这个样式表中定义主题颜色的过渡效果。以下是一种可能的实现方式：</p><pre class="hljs"><code class="javascript hljs">(<span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) {
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-05-31</title><link href="https://neotw.netlify.app/#2023-05-31"></link><link href="https://neotw.netlify.app/static/2023-05-31.html" rel="alternative" type="text/html"></link><id>d64d60ce-f97c-e7e0-6368-084f8621b116</id><updated>2023-05-31T19:18:58</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><code>得其神, 忘其形</code> 出自《道德经》第三十二章，意思是说，我们应该追求事物的本质和内在意义，而不是被表面形式所迷惑或束缚。</p><p>在编程中，我们也可以将这句话运用到实践中。即，我们应该专注于解决问题的本质，而不是过于关注表面的细节或繁琐的实现步骤。例如，在编写代码时，我们应该首先考虑如何实现功能，而不是过于关注具体的语法细节或编写繁琐的代码。我们应该以简洁、高效的方式解决问题，而不是被过多的细节所干扰。</p><p>总之，得其神，忘其形，是一种追求本质、简洁和高效的态度，它可以帮助我们更好地解决问题和提高编程效率。</p><p>如果一下子便深入到 某件事情中，就会像是一个在沙漠中没有地图的人，即使可以找到一个绿洲，但是他也不会知道下一个绿洲在哪</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-06-05</title><link href="https://neotw.netlify.app/#2023-06-05"></link><link href="https://neotw.netlify.app/static/2023-06-05.html" rel="alternative" type="text/html"></link><id>b9971e23-4f1f-83a0-08c5-f915a9be6a3e</id><updated>2023-06-05T21:50:39</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>潮水终会退去，只有那些真正会游泳的才能继续在大海中徜徉。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>about-gpt</title><link href="https://neotw.netlify.app/#about-gpt"></link><link href="https://neotw.netlify.app/static/about-gpt.html" rel="alternative" type="text/html"></link><id>38cc78fa-2df2-2c0b-3bf2-38ba392333b8</id><updated>2023-04-09T16:19:27</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>准确性会提高，但永远不会完美</li><li>事情将会改变，但不会像人们所说的那样可怕。</li><li>所有内容都是基于我的真实信念。你可以自己决定这些信念是否有偏见。</li><li>增强，而不是替代</li><li>在过去的 10 年里，很多复杂性已经从服务器转移到客户端。Monolithic Express 应用程序已经转变为无服务器功能的集合，而我们的前端已经从超链接数字文档发展为成熟的桌面质量应用程序。</li></ul><blockquote><div><a class="tc-tiddlylink-external" href="https://www.joshwcomeau.com/blog/the-end-of-frontend-development/" rel="noopener noreferrer" target="_blank">https://www.joshwcomeau.com/blog/the-end-of-frontend-development/</a></div></blockquote></div></content><author><name>oeyoews</name></author></entry><entry><title>about-TIDDLYWIKI_PLUGIN_PATH-not-working</title><link href="https://neotw.netlify.app/#about-TIDDLYWIKI_PLUGIN_PATH-not-working"></link><link href="https://neotw.netlify.app/static/about-TIDDLYWIKI_PLUGIN_PATH-not-working.html" rel="alternative" type="text/html"></link><id>a319f11b-c22a-815e-57c6-0ec1d80d06cc</id><updated>2023-03-18T10:58:05</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><ul class="checklist"><li><span class="checklist-newitem-icon" for="checklist-new"></span><input class="checklist-newitem" id="checklist-new" placeholder="New list item (WikiText)"></input><label class="checklist-vh" for="checklist-new">Write a new item for the list.</label><button class="tc-btn-invisible tc-btn-mini checklist-add" title="add to list"><span class="checklist-vh">add list item</span></button></li><li><input id="0" pos="0" type="checkbox"></input><button class="tc-btn-invisible tc-btn-mini checklist-remove" title="delete"><span class="checklist-vh">delete list item</span></button><label for="0"><code>tiddlywiki</code>  卸载tiddlywiki全局包(我不理解)，一切正常 </label></li></ul></p></div></content><author><name>oeyoews</name></author></entry><entry><title>about-unsplash-random</title><link href="https://neotw.netlify.app/#about-unsplash-random"></link><link href="https://neotw.netlify.app/static/about-unsplash-random.html" rel="alternative" type="text/html"></link><id>cd943b3d-e923-c582-3be9-62c6e06ab1e4</id><updated>2023-04-09T11:50:05</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li><a class="tc-tiddlylink-external" href="https://www.reddit.com/r/unsplash/comments/s13x4h/what_happened_to_sourceunsplashcom/" rel="noopener noreferrer" target="_blank">https://www.reddit.com/r/unsplash/comments/s13x4h/what_happened_to_sourceunsplashcom/</a></li><li><a class="tc-tiddlylink-external" href="https://unsplash.com/documentation#get-a-random-photo" rel="noopener noreferrer" target="_blank">https://unsplash.com/documentation#get-a-random-photo</a></li></ul><p><img class=" tc-image-loading" src="https://source.unsplash.com/44x44/daily"></img></p></div></content><author><name>oeyoews</name></author></entry><entry><title>add-animation-for-layout</title><link href="https://neotw.netlify.app/#add-animation-for-layout"></link><link href="https://neotw.netlify.app/static/add-animation-for-layout.html" rel="alternative" type="text/html"></link><id>3fd05268-b6d2-e723-f720-9df8b9bfb06f</id><updated>2023-03-31T22:01:07</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div>maybe can add animation on switch different layout, such as from landing layout to home page layout</div></blockquote></div></content><author><name>oeyoews</name></author></entry><entry><title>add-copyright-footer</title><link href="https://neotw.netlify.app/#add-copyright-footer"></link><link href="https://neotw.netlify.app/static/add-copyright-footer.html" rel="alternative" type="text/html"></link><id>9e2da7ea-e6c8-7f38-d70a-6bd8b9b433d4</id><updated>2023-04-01T19:46:42</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>知识产权保护：版权符号表示网站的内容、设计和代码受法律保护。它是对潜在侵权者的警告，如果其版权受到侵犯，网站所有者将采取法律行动。</p><p>所有权：版权符号表明网站所有者是其网站内容的合法所有者。它有助于建立他们对知识产权的所有权和控制权。</p><p>专业性：在网站页脚添加版权符号给人一种专业的印象。这表明网站所有者认真对待他们的内容和知识产权，并致力于保护它。</p><p>法律要求：在某些国家/地区，向网站添加版权符号是一项法律要求。否则可能会导致法律后果。</p><p>威慑力：版权符号对潜在的侵权者起到威慑作用。这表明网站所有者了解他们的权利并准备采取行动保护他们。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>add-transition-mode</title><link href="https://neotw.netlify.app/#add-transition-mode"></link><link href="https://neotw.netlify.app/static/add-transition-mode.html" rel="alternative" type="text/html"></link><id>0d58f07e-4f14-6e65-8e98-29aeba7831d9</id><updated>2023-05-01T11:47:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>切换主题时晃眼的问题通常是由于主题颜色变化过程中没有进行过渡处理导致的。要解决这个问题，可以通过添加 CSS 过渡效果来实现平滑的主题切换。</p><p>具体来说，在切换主题时，可以使用 JavaScript 动态向页面头部插入一个新的样式表，并在这个样式表中定义主题颜色的过渡效果。以下是一种可能的实现方式：</p><pre class="hljs"><code class="javascript hljs">(<span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) {
   <span class="hljs-comment">/*jslint node: true, browser: true */</span>
   <span class="hljs-comment">/*global $tw: false */</span>
   <span class="hljs-string">&#x27;use strict&#x27;</span>;
@@ -325,7 +325,7 @@ React
 JavaScript
 </div>
 <div class="inline p-0 m-0 p-1 capitalize bg-yellow-400 rounded">
-<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#79">79</a></span>
+<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#80">80</a></span>
 </div>
 </div>
 <div>
@@ -341,7 +341,7 @@ CSS
 Journal
 </div>
 <div class="inline p-0 m-0 p-1 capitalize bg-yellow-400 rounded">
-<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#13">13</a></span>
+<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#14">14</a></span>
 </div>
 </div>
 <div>
@@ -465,7 +465,7 @@ Tailwindcss
 <div class="relative">
         <div class="absolute top-0 right-0">
             <div class="inline-block text-slate-400 rounded-full">
-                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#79">79</a></span>
+                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#80">80</a></span>
             </div>
         </div>
     </div>
@@ -477,7 +477,7 @@ Tailwindcss
 <div class="relative">
         <div class="absolute top-0 right-0">
             <div class="inline-block text-slate-400 rounded-full">
-                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#13">13</a></span>
+                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#14">14</a></span>
             </div>
         </div>
     </div>
@@ -2551,8 +2551,8 @@ Undefined widget 'tid2pdf'
 </div>
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>GettingStarted</title><link href="https://neotw.netlify.app/#GettingStarted"></link><link href="https://neotw.netlify.app/static/GettingStarted.html" rel="alternative" type="text/html"></link><id>fc927313-83cf-7e0a-53c1-21853f695851</id><updated>2023-06-05T19:42:02</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:bg-white">
 <div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-651-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-46-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-70-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-13 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-654-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-48-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-70-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-76 seconds ago-green?style=social"></img>  
 </div>
 
 
@@ -2610,7 +2610,7 @@ Undefined widget 'tid2pdf'
 <div class="relative">
         <div class="absolute top-0 right-0">
             <div class="inline-block text-slate-400 rounded-full">
-                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#79">79</a></span>
+                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#80">80</a></span>
             </div>
         </div>
     </div>
@@ -2622,7 +2622,7 @@ Undefined widget 'tid2pdf'
 <div class="relative">
         <div class="absolute top-0 right-0">
             <div class="inline-block text-slate-400 rounded-full">
-                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#13">13</a></span>
+                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#14">14</a></span>
             </div>
         </div>
     </div>
@@ -2831,7 +2831,23 @@ Undefined widget 'tid2pdf'
       <span class="hljs-comment">// 更新页面内容</span>
       <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;#content&#x27;</span>).<span class="hljs-property">innerHTML</span> = html;
     });
-});</code></pre><p>在上面的示例中，我们使用 <code>history.pushState()</code> 方法将新的 URL 添加到浏览器历史记录中，并使用 <code>history.popstate</code> 事件处理程序监听浏览器的前进或后退操作。在异步加载新页面数据时，我们可以通过 <code>fetch()</code> 函数获取新页面的 HTML，然后将其渲染到页面中指定的区域内。当用户点击浏览器的前进或后退按钮时，我们可以使用 <code>fetch()</code> 函数重新加载当前页面的 HTML，并将其渲染到页面中指定的区域内。</p><p>需要注意的是，为了保证 Web 应用程序在不同浏览器之间的兼容性，开发人员还需要考虑到一些额外的问题，例如使用 <code>popstate</code> 事件处理程序时的各种兼容性问题。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>hmr</title><link href="https://neotw.netlify.app/#hmr"></link><link href="https://neotw.netlify.app/static/hmr.html" rel="alternative" type="text/html"></link><id>98c3bc17-5de5-dd9d-486a-621c6b6c2b63</id><updated>2023-04-08T14:11:16</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>hot module replacement</p></div></content><author><name>oeyoews</name></author></entry><entry><title>hooks</title><link href="https://neotw.netlify.app/#hooks"></link><link href="https://neotw.netlify.app/static/hooks.html" rel="alternative" type="text/html"></link><id>4e819c83-7d54-a6ed-09ab-c77a8560a66f</id><updated>2023-04-28T13:27:53</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+});</code></pre><p>在上面的示例中，我们使用 <code>history.pushState()</code> 方法将新的 URL 添加到浏览器历史记录中，并使用 <code>history.popstate</code> 事件处理程序监听浏览器的前进或后退操作。在异步加载新页面数据时，我们可以通过 <code>fetch()</code> 函数获取新页面的 HTML，然后将其渲染到页面中指定的区域内。当用户点击浏览器的前进或后退按钮时，我们可以使用 <code>fetch()</code> 函数重新加载当前页面的 HTML，并将其渲染到页面中指定的区域内。</p><p>需要注意的是，为了保证 Web 应用程序在不同浏览器之间的兼容性，开发人员还需要考虑到一些额外的问题，例如使用 <code>popstate</code> 事件处理程序时的各种兼容性问题。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>hmr</title><link href="https://neotw.netlify.app/#hmr"></link><link href="https://neotw.netlify.app/static/hmr.html" rel="alternative" type="text/html"></link><id>98c3bc17-5de5-dd9d-486a-621c6b6c2b63</id><updated>2023-04-08T14:11:16</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>hot module replacement</p></div></content><author><name>oeyoews</name></author></entry><entry><title>hooks</title><link href="https://neotw.netlify.app/#hooks"></link><link href="https://neotw.netlify.app/static/hooks.html" rel="alternative" type="text/html"></link><id>4e819c83-7d54-a6ed-09ab-c77a8560a66f</id><updated>2023-06-06T10:13:49</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+<p><div class="toc" id="toc">
+        <h3>🌴 Table of Contents</h3>
+    <ul class="toc-level"><ul class="toc-level">
+          <li class="capitalize">
+            <a href="##h-0.1">
+              ⭐️ 0.1 useEffect
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.2">
+              ⭐️ 0.2 useContext
+            </a>
+          </li>
+        </ul></ul></div>
+</p>
 <p>useState 被称为 React Hooks 中的一员，是因为它是 React 16.8 版本中推出的其中一种钩子函数。React Hooks 提供了一种全新的编写 React 组件的方式，它可以使代码更加简洁、易于理解和维护。在使用 Hooks 的过程中，开发者可以直接在函数组件中使用状态（useState）、效应（useEffect）和上下文（useContext），而无需再编写类组件。这种方式大大降低了 React 开发的学习成本，同时也可以提高代码的可读性和可维护性。
 </p>
 <p>之前，React 组件通常只能使用类组件来管理状态。类组件虽然功能强大，但它往往需要在类中定义许多方法，并且容易产生问题，导致代码复杂难以维护。Hooks 是 React 团队为了解决这些问题而推出的一种新的解决方案。Hooks 可以将组件逻辑拆分为可复用的代码段，并且让代码更易于测试和重构。而 useState 则是最基本、也是最常用的一个 Hook，它被广泛地应用于 React 函数式组件中，用于管理组件内部的状态。
@@ -2845,7 +2861,7 @@ Undefined widget 'tid2pdf'
       <a href="##h-0.1" id="#h-0.1">
        ✨ 0.1
       </a>
-  <code class="_codified_">useEffect</code></h2>
+  useEffect</h2>
 <p>有些组件需要在挂载、卸载或更新时执行一些副作用操作（比如调用接口请求数据或者修改 DOM）。<code class="_codified_">useEffect</code> 就是用来管理这些副作用的钩子函数。它在每次渲染后都会执行，并且可以返回一个清除副作用的函数，以避免内存泄漏。
 </p>
 <p>使用方式：
@@ -2870,7 +2886,7 @@ Undefined widget 'tid2pdf'
       <a href="##h-0.2" id="#h-0.2">
        ✨ 0.2
       </a>
-  <code class="_codified_">useContext</code></h2>
+  useContext</h2>
 <p><code class="_codified_">useContext</code> 允许在组件树中跨层级传递数据而不必一级一级地手动传递 props。它是一个接收 React 上下文对象（通过 <code class="_codified_">React.createContext()</code> 创建）并返回当前上下文值的钩子函数。
 </p>
 <p>使用方式：
@@ -4048,7 +4064,7 @@ M1001 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 </li>
 </ol>
 </section>
-</div></div></content><author><name>oeyoews</name></author></entry><entry><title>markdown-resume</title><link href="https://neotw.netlify.app/#markdown-resume"></link><link href="https://neotw.netlify.app/static/markdown-resume.html" rel="alternative" type="text/html"></link><id>c8069c2c-e807-797b-a0fd-0c16ed3adb5c</id><updated>2023-03-30T13:40:28</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li><a class="tc-tiddlylink-external" href="http://cv.ftqq.com/?fr=github" rel="noopener noreferrer" target="_blank">http://cv.ftqq.com/?fr=github</a>#</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>mdn-search</title><link href="https://neotw.netlify.app/#mdn-search"></link><link href="https://neotw.netlify.app/static/mdn-search.html" rel="alternative" type="text/html"></link><id>ca98d367-bafa-9eca-7127-54f030961751</id><updated>2023-03-31T21:17:45</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://developer.mozilla.org/zh-CN/" rel="noopener noreferrer" target="_blank">https://developer.mozilla.org/zh-CN/</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>mdx</title><link href="https://neotw.netlify.app/#mdx"></link><link href="https://neotw.netlify.app/static/mdx.html" rel="alternative" type="text/html"></link><id>93c3b60a-8b8c-46fe-78ba-27927b2280e7</id><updated>2023-03-24T22:00:08</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>use mdx</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>memos-docker-compose</title><link href="https://neotw.netlify.app/#memos-docker-compose"></link><link href="https://neotw.netlify.app/static/memos-docker-compose.html" rel="alternative" type="text/html"></link><id>66cc4474-77be-e7d2-0c7d-444665ceec23</id><updated>2023-03-31T21:18:33</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre class="hljs"><code class="bash hljs">docker-compose up -d  <span class="hljs-comment">#docker-compose.yml`</span></code></pre><pre class="hljs"><code class="yml hljs"><span class="hljs-attr">version:</span> <span class="hljs-string">&quot;3.0&quot;</span>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>markdown-resume</title><link href="https://neotw.netlify.app/#markdown-resume"></link><link href="https://neotw.netlify.app/static/markdown-resume.html" rel="alternative" type="text/html"></link><id>c8069c2c-e807-797b-a0fd-0c16ed3adb5c</id><updated>2023-03-30T13:40:28</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li><a class="tc-tiddlylink-external" href="http://cv.ftqq.com/?fr=github" rel="noopener noreferrer" target="_blank">http://cv.ftqq.com/?fr=github</a>#</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>markdown-toc</title><link href="https://neotw.netlify.app/#markdown-toc"></link><link href="https://neotw.netlify.app/static/markdown-toc.html" rel="alternative" type="text/html"></link><id>cf1ce52f-3a2b-c900-d6cc-40b72ed1704c</id><updated>2023-06-06T10:22:02</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>@[toc]</p></div></content><author><name>oeyoews</name></author></entry><entry><title>mdn-search</title><link href="https://neotw.netlify.app/#mdn-search"></link><link href="https://neotw.netlify.app/static/mdn-search.html" rel="alternative" type="text/html"></link><id>ca98d367-bafa-9eca-7127-54f030961751</id><updated>2023-03-31T21:17:45</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://developer.mozilla.org/zh-CN/" rel="noopener noreferrer" target="_blank">https://developer.mozilla.org/zh-CN/</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>mdx</title><link href="https://neotw.netlify.app/#mdx"></link><link href="https://neotw.netlify.app/static/mdx.html" rel="alternative" type="text/html"></link><id>93c3b60a-8b8c-46fe-78ba-27927b2280e7</id><updated>2023-03-24T22:00:08</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>use mdx</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>memos-docker-compose</title><link href="https://neotw.netlify.app/#memos-docker-compose"></link><link href="https://neotw.netlify.app/static/memos-docker-compose.html" rel="alternative" type="text/html"></link><id>66cc4474-77be-e7d2-0c7d-444665ceec23</id><updated>2023-03-31T21:18:33</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre class="hljs"><code class="bash hljs">docker-compose up -d  <span class="hljs-comment">#docker-compose.yml`</span></code></pre><pre class="hljs"><code class="yml hljs"><span class="hljs-attr">version:</span> <span class="hljs-string">&quot;3.0&quot;</span>
 <span class="hljs-attr">services:</span>
   <span class="hljs-attr">memos:</span>
     <span class="hljs-attr">image:</span> <span class="hljs-string">neosmemo/memos:latest</span>
@@ -4219,8 +4235,8 @@ M1001 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 <li>aria2c -d <dirname> <url>&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;</url></dirname></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-badges</title><link href="https://neotw.netlify.app/#neotw-badges"></link><link href="https://neotw.netlify.app/static/neotw-badges.html" rel="alternative" type="text/html"></link><id>f934e3aa-d36d-34bb-609b-922693d9b993</id><updated>2023-06-01T21:41:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-651-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-46-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-70-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-13 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-654-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-48-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-70-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-76 seconds ago-green?style=social"></img>  
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-command</title><link href="https://neotw.netlify.app/#neotw-command"></link><link href="https://neotw.netlify.app/static/neotw-command.html" rel="alternative" type="text/html"></link><id>188385e0-6b3a-4916-a54a-061d9d29e18f</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
        ✨ 0.1
@@ -7487,6 +7503,8 @@ current neotw version is <u></u>
 
 <option value="page-cover">page-cover</option>
 
+<option value="preview">preview</option>
+
 <option value="publish">publish</option>
 
 <option value="summary">summary</option>
@@ -7729,7 +7747,7 @@ map.forEach((value, key) =&gt; arr.push([key, value])); // 遍历 Map</code></pr
   })
   .<span class="hljs-title function_">catch</span>(<span class="hljs-function"><span class="hljs-params">error</span> =&gt;</span> {
     <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">`Async task failed, error: <span class="hljs-subst">${error}</span>`</span>);
-  });</code></pre><p>在以上示例中，我们创建了一个名为asyncTask的异步任务，并将它封装成了一个Promise对象。在这个任务中，我们使用setTimeout模拟了一个耗时1秒的异步操作，并随机生成了一个数值，当数值大于0.5时，任务会成功完成并返回随机数值，否则任务会失败并抛出一个Error对象。</p><p>我们通过调用asyncTask方法来执行这个异步任务，并使用then和catch方法处理异步操作成功和失败的情况。当异步任务成功完成后，then方法会被调用，并接受异步操作返回的结果作为参数。当异步任务失败时，catch方法会被调用，并接受异步操作抛出的错误对象作为参数。</p><p>Promise对象可以方便地处理异步操作，避免了回调函数嵌套和代码复杂度增加的问题，因此在JavaScript中得到了广泛的应用。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>prose-table</title><link href="https://neotw.netlify.app/#prose-table"></link><link href="https://neotw.netlify.app/static/prose-table.html" rel="alternative" type="text/html"></link><id>f409ca1e-3585-d90d-86e1-64ee6a40b651</id><updated>2023-03-22T16:20:10</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><table><thead><tr class="evenRow"><td align="center">header</td><td align="center">dmeo</td><td align="center">dmeo</td><td align="center">dmeo</td></tr></thead><tbody><tr class="oddRow"><td align="center">dmeo</td><td align="center">dmeo</td><td align="center">dmeo</td><td align="center">dmeo</td></tr></tbody><tfoot><tr class="evenRow"><td align="center">footer</td><td align="center">dmeo</td><td align="center">dmeo</td><td align="center">dmeo</td></tr></tfoot></table><table><tbody><tr class="evenRow"><td align="center">dmeo</td><td align="center">dmeo</td></tr><tr class="oddRow"><td align="center">dmeo</td><td align="center">dmeo</td></tr><tr class="evenRow"><td align="center">dmeo</td><td align="center">dmeo</td></tr></tbody></table></div></content><author><name>oeyoews</name></author></entry><entry><title>prototype</title><link href="https://neotw.netlify.app/#prototype"></link><link href="https://neotw.netlify.app/static/prototype.html" rel="alternative" type="text/html"></link><id>c18462a3-5a7a-f69a-3eea-94f84b7d6a46</id><updated>2023-05-21T11:59:08</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>JavaScript中的每一个对象都有一个内部属性<a class="tc-tiddlylink tc-tiddlylink-missing" href="#Prototype">Prototype</a>，也称为原型。如果我们需要访问一个对象的属性或方法，但该对象本身没有定义这个属性或方法，那么JavaScript引擎就会沿着该对象的原型链向上查找，直到找到该属性或方法为止。</p><p>JavaScript中的原型可以通过以下方式来处理：</p><p>1. 构造函数（Constructor）：构造函数是一种特殊的函数，用于创建新的对象。在使用构造函数创建对象时，该对象会自动继承构造函数的原型。</p><pre class="hljs"><code class="js hljs"><span class="hljs-keyword">function</span> <span class="hljs-title function_">Person</span>(<span class="hljs-params">name, age</span>) {
+  });</code></pre><p>在以上示例中，我们创建了一个名为asyncTask的异步任务，并将它封装成了一个Promise对象。在这个任务中，我们使用setTimeout模拟了一个耗时1秒的异步操作，并随机生成了一个数值，当数值大于0.5时，任务会成功完成并返回随机数值，否则任务会失败并抛出一个Error对象。</p><p>我们通过调用asyncTask方法来执行这个异步任务，并使用then和catch方法处理异步操作成功和失败的情况。当异步任务成功完成后，then方法会被调用，并接受异步操作返回的结果作为参数。当异步任务失败时，catch方法会被调用，并接受异步操作抛出的错误对象作为参数。</p><p>Promise对象可以方便地处理异步操作，避免了回调函数嵌套和代码复杂度增加的问题，因此在JavaScript中得到了广泛的应用。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>prose-table</title><link href="https://neotw.netlify.app/#prose-table"></link><link href="https://neotw.netlify.app/static/prose-table.html" rel="alternative" type="text/html"></link><id>f409ca1e-3585-d90d-86e1-64ee6a40b651</id><updated>2023-03-22T16:20:10</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><table><thead><tr class="evenRow"><td align="center">header</td><td align="center">dmeo</td><td align="center">dmeo</td><td align="center">dmeo</td></tr></thead><tbody><tr class="oddRow"><td align="center">dmeo</td><td align="center">dmeo</td><td align="center">dmeo</td><td align="center">dmeo</td></tr></tbody><tfoot><tr class="evenRow"><td align="center">footer</td><td align="center">dmeo</td><td align="center">dmeo</td><td align="center">dmeo</td></tr></tfoot></table><table><tbody><tr class="evenRow"><td align="center">dmeo</td><td align="center">dmeo</td></tr><tr class="oddRow"><td align="center">dmeo</td><td align="center">dmeo</td></tr><tr class="evenRow"><td align="center">dmeo</td><td align="center">dmeo</td></tr></tbody></table></div></content><author><name>oeyoews</name></author></entry><entry><title>prototype</title><link href="https://neotw.netlify.app/#prototype"></link><link href="https://neotw.netlify.app/static/prototype.html" rel="alternative" type="text/html"></link><id>c18462a3-5a7a-f69a-3eea-94f84b7d6a46</id><updated>2023-06-05T21:01:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>JavaScript中的每一个对象都有一个内部属性<a class="tc-tiddlylink tc-tiddlylink-missing" href="#Prototype">Prototype</a>，也称为原型。如果我们需要访问一个对象的属性或方法，但该对象本身没有定义这个属性或方法，那么JavaScript引擎就会沿着该对象的原型链向上查找，直到找到该属性或方法为止。</p><p>JavaScript中的原型可以通过以下方式来处理：</p><p>1. 构造函数（Constructor）：构造函数是一种特殊的函数，用于创建新的对象。在使用构造函数创建对象时，该对象会自动继承构造函数的原型。</p><pre class="hljs"><code class="js hljs"><span class="hljs-keyword">function</span> <span class="hljs-title function_">Person</span>(<span class="hljs-params">name, age</span>) {
   <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name;
   <span class="hljs-variable language_">this</span>.<span class="hljs-property">age</span> = age;
 }</code></pre><p>2. 原型对象（Prototype Object）：每个函数都有一个prototype属性，该属性指向函数的原型对象。该原型对象包含了该函数的所有公共属性和方法。</p><pre class="hljs"><code class="js hljs"><span class="hljs-title class_">Person</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>.<span class="hljs-property">greet</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
@@ -7737,7 +7755,11 @@ map.forEach((value, key) =&gt; arr.push([key, value])); // 遍历 Map</code></pr
 };</code></pre><p>3. 实例化对象（Instance Object）：通过new关键字调用构造函数来实例化一个新对象，该对象会自动继承构造函数的原型对象。</p><pre class="hljs"><code class="js hljs"><span class="hljs-keyword">const</span> person = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>(<span class="hljs-string">&#x27;John Doe&#x27;</span>, <span class="hljs-number">30</span>);
 person.<span class="hljs-title function_">greet</span>(); <span class="hljs-comment">// Hi, my name is John Doe and I&#x27;m 30 years old.</span></code></pre><p>4. 原型链（Prototype Chain）：每个对象都有一个内部属性<a class="tc-tiddlylink tc-tiddlylink-missing" href="#Prototype">Prototype</a>，该属性指向该对象的原型。如果一个对象的属性或方法没有被找到，JavaScript引擎会沿着该对象的原型链向上查找，直到找到该属性或方法为止。</p><pre class="hljs"><code class="js hljs"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(person.<span class="hljs-property">__proto__</span> === <span class="hljs-title class_">Person</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>); <span class="hljs-comment">// true</span>
 <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title class_">Person</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>.<span class="hljs-property">__proto__</span> === <span class="hljs-title class_">Object</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>); <span class="hljs-comment">// true</span>
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title class_">Object</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>.<span class="hljs-property">__proto__</span> === <span class="hljs-literal">null</span>); <span class="hljs-comment">// true</span></code></pre><p>在JavaScript中，原型和原型链是非常重要的概念。理解它们可以帮助我们更好地理解JavaScript中的面向对象编程方式，并进一步提高我们的JavaScript编程能力。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>puppeteer</title><link href="https://neotw.netlify.app/#puppeteer"></link><link href="https://neotw.netlify.app/static/puppeteer.html" rel="alternative" type="text/html"></link><id>dafa8152-77d3-bbc4-9978-68647f09a9f2</id><updated>2023-05-28T11:53:24</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title class_">Object</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>.<span class="hljs-property">__proto__</span> === <span class="hljs-literal">null</span>); <span class="hljs-comment">// true</span></code></pre><p>在JavaScript中，原型和原型链是非常重要的概念。理解它们可以帮助我们更好地理解JavaScript中的面向对象编程方式，并进一步提高我们的JavaScript编程能力。</p><pre class="hljs"><code class="js hljs"><span class="hljs-keyword">function</span> <span class="hljs-title function_">Role</span>(<span class="hljs-params"></span>) {}
+
+<span class="hljs-keyword">const</span> role1 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Role</span>();
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(role1.<span class="hljs-property">__proto__</span> === <span class="hljs-title class_">Role</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>); <span class="hljs-comment">// true</span></code></pre></div></content><author><name>oeyoews</name></author></entry><entry><title>puppeteer</title><link href="https://neotw.netlify.app/#puppeteer"></link><link href="https://neotw.netlify.app/static/puppeteer.html" rel="alternative" type="text/html"></link><id>dafa8152-77d3-bbc4-9978-68647f09a9f2</id><updated>2023-05-28T11:53:24</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <p>Puppeteer是一个由Google Chrome团队开发的Node.js库，可以通过编写JavaScript代码来控制Chrome或Chromium浏览器的行为。Puppeteer提供了一组API，可以让开发人员编写脚本来模拟用户在浏览器中的操作，例如点击、填写表单、截图等等。这使得开发人员能够自动化测试和爬取网站，以及进行其他与浏览器交互相关的任务。
 </p>
 <p>Puppeteer的特点包括：
@@ -8425,7 +8447,32 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 }</code></pre><p>在这个例子中，我们使用try-catch语句块来处理可能的异常情况。在try块中，我们使用fs.readFileSync()方法同步读取JSON文件，并将文件内容存储在data变量中。如果读取文件时出现错误，catch块将捕获该错误，并输出错误信息。</p><p>以上是使用fs模块读取文件的示例，需要注意的是，在使用fs模块读取文件时，我们需要处理可能的异常情况，并根据实际情况选择异步或同步方法。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-count</title><link href="https://neotw.netlify.app/#recent-count"></link><link href="https://neotw.netlify.app/static/recent-count.html" rel="alternative" type="text/html"></link><id>6a131e9a-b046-19c3-08bd-35ef7c9ffbfc</id><updated>2023-02-08T18:16:06</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="tc-timeline">
 
 <div class="tc-menu-list-item">
-5th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#9">9</a></span>)
+6th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#3">3</a></span>)
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#markdown-toc"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#hooks"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E5%86%85%E9%83%A8%E5%A4%96%E9%83%A8%E6%96%B9%E6%B3%95"></a>
+</div>
+
+</div>
+
+<div class="tc-menu-list-item">
+5th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#11">11</a></span>)
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#2023-06-05"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#prototype"></a>
+</div>
 
 <div class="tc-menu-list-subitem">
 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#UX-DX"></a>
@@ -8872,32 +8919,37 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 
 </div>
 
-<div class="tc-menu-list-item">
-24th May 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#5">5</a></span>)
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#click-more"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E5%AE%B9%E6%96%A5%E5%8E%9F%E7%90%86"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#nav-humber-menu"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#humber-menu"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#class-compare"></a>
-</div>
-
-</div>
-
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-note-record</title><link href="https://neotw.netlify.app/#recent-note-record"></link><link href="https://neotw.netlify.app/static/recent-note-record.html" rel="alternative" type="text/html"></link><id>2619840e-dc84-d69e-3d32-c2258f306a66</id><updated>2023-04-11T09:39:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><ul>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#markdown-toc">markdown-toc</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#hooks">hooks</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E5%86%85%E9%83%A8%E5%A4%96%E9%83%A8%E6%96%B9%E6%B3%95">内部外部方法</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#2023-06-05">2023-06-05</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#prototype">prototype</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#UX-DX">UX-DX</a>
@@ -9154,84 +9206,84 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#obj-create">obj-create</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#ts-document-unoffical">ts-document-unoffical</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#instance">instance</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#Object">Object</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#2023-05-30">2023-05-30</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#index">index</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#process">process</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#LinkItem">LinkItem</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#debounce">debounce</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#js-void">js-void</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#readFile">readFile</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#this">this</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#js-fullscreen">js-fullscreen</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#2023-05-29">2023-05-29</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
@@ -9585,12 +9637,6 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#function-adjust">function-adjust</a>
-        
-         <span style="color:black;"><sup>recent</sup></span>
-    </li>
-  
-    <li>
-		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#prototype">prototype</a>
         
          <span style="color:black;"><sup>recent</sup></span>
     </li>
@@ -10454,12 +10500,6 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
     </li>
   
     <li>
-		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#hooks">hooks</a>
-        
-         <span style="color:black;"><sup>recent</sup></span>
-    </li>
-  
-    <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#usestate">usestate</a>
         
          <span style="color:black;"><sup>recent</sup></span>
@@ -11200,31 +11240,31 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#beta-nextjs">beta-nextjs</a>
         
-         <span style="color:black;"><sup>recent</sup></span>
+        
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#cname-file">cname-file</a>
         
-         <span style="color:black;"><sup>recent</sup></span>
+        
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#several-render-method">several-render-method</a>
         
-         <span style="color:black;"><sup>recent</sup></span>
+        
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#link-icons">link-icons</a>
         
-         <span style="color:black;"><sup>recent</sup></span>
+        
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#seveal-framworks">seveal-framworks</a>
         
-         <span style="color:black;"><sup>recent</sup></span>
+        
     </li>
   
     <li>
@@ -13571,7 +13611,49 @@ cons [count, setCount] = <span class="hljs-title function_">useState</span>(<spa
     </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
-```html</code></pre></div></content><author><name>oeyoews</name></author></entry><entry><title>xstate-redux</title><link href="https://neotw.netlify.app/#xstate-redux"></link><link href="https://neotw.netlify.app/static/xstate-redux.html" rel="alternative" type="text/html"></link><id>dbbfdccb-9913-651d-71bc-0f3d0835df31</id><updated>2023-04-30T20:06:06</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>XState 和 Redux 都是用于管理应用程序状态的工具，但它们的设计和实现不同，因此存在以下区别：</p><p>状态管理方式不同：XState 中使用有限状态机（FSM）来表示应用程序状态，每个状态都定义为状态节点，并通过转换函数进行连接；而 Redux 中则将状态表示为单一数据源，通过 Reducers 处理 Action 对状态进行更新。</p><p>数据流管理方式不同：在 Redux 中，数据是单向流动的，即从组件到 store 再到组件，而在 XState 中，状态转换是基于事件的，即当某些事件发生时，状态会转换到另一个状态。</p><p>应用场景不同：Redux 更适用于对大量数据进行 CRUD 操作的应用程序，而 XState 更适合处理更复杂的业务逻辑，例如多个有依赖关系和并发操作的状态。</p><p>基础概念不同：Redux 的核心概念是 Store、Action 和 Reducer，而 XState 的核心概念是 状态机、状态、事件 和 转换函数。</p><p>总的来说，XState 和 Redux 都有其优劣，开发人员可以根据项目需求和个人偏好进行选择。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>yarn-bug</title><link href="https://neotw.netlify.app/#yarn-bug"></link><link href="https://neotw.netlify.app/static/yarn-bug.html" rel="alternative" type="text/html"></link><id>aa9004c2-61e9-1fdb-4b9b-48f79ba13844</id><updated>2023-04-21T11:23:31</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>error package.json: Name contains illegal characters</p><blockquote><div>yarn not support whitespace like <code>deee ddd</code></div></blockquote></div></content><author><name>oeyoews</name></author></entry><entry><title>yiyan</title><link href="https://neotw.netlify.app/#yiyan"></link><link href="https://neotw.netlify.app/static/yiyan.html" rel="alternative" type="text/html"></link><id>6c406fbc-9903-eaf1-9af5-2a6d5d6cfb94</id><updated>2023-04-08T14:05:38</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://yiyan.baidu.com/" rel="noopener noreferrer" target="_blank">https://yiyan.baidu.com/</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>youtbe-video</title><link href="https://neotw.netlify.app/#youtbe-video"></link><link href="https://neotw.netlify.app/static/youtbe-video.html" rel="alternative" type="text/html"></link><id>788231e8-79dc-959e-b22b-12ae163d40e9</id><updated>2023-04-19T22:05:22</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="flex justify-center item-center"><iframe allowfullscreen="" allowsInlineMediaPlayback="true" class="border-none shadow-lg rounded-lg" frameborder="0" height="450" playsinline="1" src="https://www.youtube.com/embed/o7GyFa90klg" title="" width="800"></iframe></div><p><div class="flex justify-center item-center"><iframe allowfullscreen="" allowsInlineMediaPlayback="true" class="border-none shadow-lg rounded-lg" frameborder="0" height="450" playsinline="1" src="https://www.youtube.com/embed/videoseries?list=PLjNhkoz3yGwG9ISeHEYsdUSQdQarKJ8u3" title="" width="800"></iframe></div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>zoomin-view</title><link href="https://neotw.netlify.app/#zoomin-view"></link><link href="https://neotw.netlify.app/static/zoomin-view.html" rel="alternative" type="text/html"></link><id>b7ddf2f7-ead6-2893-adb7-3bca4c5d9efd</id><updated>2023-04-14T14:37:23</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>This zoom view will have some margin bugs on mobile for notebook</p></div></content><author><name>oeyoews</name></author></entry><entry><title>人体工程学</title><link href="https://neotw.netlify.app/#%E4%BA%BA%E4%BD%93%E5%B7%A5%E7%A8%8B%E5%AD%A6"></link><link href="https://neotw.netlify.app/static/%25E4%25BA%25BA%25E4%25BD%2593%25E5%25B7%25A5%25E7%25A8%258B%25E5%25AD%25A6.html" rel="alternative" type="text/html"></link><id>72e7fb1f-5d83-cc22-f809-a14239426d6a</id><updated>2023-05-25T10:28:47</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>人体工程学（Ergonomics）是研究人体与工作环境之间相互作用的一门学科。它主要关注人体的生理特征、心理特征、行为特征和社会特征等方面，以及这些特征与工作环境之间的关系，旨在设计和评估人机系统的可用性、安全性和效率。</p><p>人体工程学应用于许多领域，包括工业设计、交通运输、医疗保健、航空航天、体育和娱乐等。在工业设计方面，人体工程学可以帮助设计人性化的产品，使产品更加符合人体工程学原则，减少使用者的疲劳和不适感，提高产品的使用效率和安全性。在医疗保健方面，人体工程学可以帮助设计适合人体特征的医疗设备和康复设备，促进患者的康复。</p><p>在计算机领域中，人体工程学也是一个重要的概念。在设计用户界面和交互设计时，需要考虑人体工程学原则，以确保用户可以舒适、高效地使用软件和硬件产品。比如，设计符合人体工程学原则的键盘和鼠标，可以减少用户的手部疲劳和损伤；设计符合人体工程学原则的网页和应用程序，可以提高用户的使用效率和满意度。</p><p>总之，人体工程学是一门多学科交叉的学科，它的应用领域非常广泛，对于提高人类生产力和生活质量有着重要的作用。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>兜底</title><link href="https://neotw.netlify.app/#%E5%85%9C%E5%BA%95"></link><link href="https://neotw.netlify.app/static/%25E5%2585%259C%25E5%25BA%2595.html" rel="alternative" type="text/html"></link><id>49607653-3812-3133-0e1e-63f271e6b652</id><updated>2023-04-21T16:29:01</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>在JavaScript中，所谓的"兜底"是指在代码执行出现异常情况时，可以给出一个备用方案，避免程序崩溃或不可用的情况。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>垂直居中</title><link href="https://neotw.netlify.app/#%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD"></link><link href="https://neotw.netlify.app/static/%25E5%259E%2582%25E7%259B%25B4%25E5%25B1%2585%25E4%25B8%25AD.html" rel="alternative" type="text/html"></link><id>4117e80d-2c2e-52f7-95ec-64160f399364</id><updated>2023-05-25T10:28:42</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>垂直居中是指在一个容器（如一个盒子或一个网格单元格）中，将其中的内容在垂直方向上居中对齐。通常用于布局设计中，使页面或元素看起来更加整齐美观。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>太微-ChatGPT-十问</title><link href="https://neotw.netlify.app/#%E5%A4%AA%E5%BE%AE-ChatGPT-%E5%8D%81%E9%97%AE"></link><link href="https://neotw.netlify.app/static/%25E5%25A4%25AA%25E5%25BE%25AE-ChatGPT-%25E5%258D%2581%25E9%2597%25AE.html" rel="alternative" type="text/html"></link><id>976d78d5-c80b-4557-f957-02b43fa2909c</id><updated>2023-03-30T17:11:49</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p style="height:calc(100vh - 120px);">Undefined widget 'chat-gpt'
+```html</code></pre></div></content><author><name>oeyoews</name></author></entry><entry><title>xstate-redux</title><link href="https://neotw.netlify.app/#xstate-redux"></link><link href="https://neotw.netlify.app/static/xstate-redux.html" rel="alternative" type="text/html"></link><id>dbbfdccb-9913-651d-71bc-0f3d0835df31</id><updated>2023-04-30T20:06:06</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>XState 和 Redux 都是用于管理应用程序状态的工具，但它们的设计和实现不同，因此存在以下区别：</p><p>状态管理方式不同：XState 中使用有限状态机（FSM）来表示应用程序状态，每个状态都定义为状态节点，并通过转换函数进行连接；而 Redux 中则将状态表示为单一数据源，通过 Reducers 处理 Action 对状态进行更新。</p><p>数据流管理方式不同：在 Redux 中，数据是单向流动的，即从组件到 store 再到组件，而在 XState 中，状态转换是基于事件的，即当某些事件发生时，状态会转换到另一个状态。</p><p>应用场景不同：Redux 更适用于对大量数据进行 CRUD 操作的应用程序，而 XState 更适合处理更复杂的业务逻辑，例如多个有依赖关系和并发操作的状态。</p><p>基础概念不同：Redux 的核心概念是 Store、Action 和 Reducer，而 XState 的核心概念是 状态机、状态、事件 和 转换函数。</p><p>总的来说，XState 和 Redux 都有其优劣，开发人员可以根据项目需求和个人偏好进行选择。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>yarn-bug</title><link href="https://neotw.netlify.app/#yarn-bug"></link><link href="https://neotw.netlify.app/static/yarn-bug.html" rel="alternative" type="text/html"></link><id>aa9004c2-61e9-1fdb-4b9b-48f79ba13844</id><updated>2023-04-21T11:23:31</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>error package.json: Name contains illegal characters</p><blockquote><div>yarn not support whitespace like <code>deee ddd</code></div></blockquote></div></content><author><name>oeyoews</name></author></entry><entry><title>yiyan</title><link href="https://neotw.netlify.app/#yiyan"></link><link href="https://neotw.netlify.app/static/yiyan.html" rel="alternative" type="text/html"></link><id>6c406fbc-9903-eaf1-9af5-2a6d5d6cfb94</id><updated>2023-04-08T14:05:38</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://yiyan.baidu.com/" rel="noopener noreferrer" target="_blank">https://yiyan.baidu.com/</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>youtbe-video</title><link href="https://neotw.netlify.app/#youtbe-video"></link><link href="https://neotw.netlify.app/static/youtbe-video.html" rel="alternative" type="text/html"></link><id>788231e8-79dc-959e-b22b-12ae163d40e9</id><updated>2023-04-19T22:05:22</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="flex justify-center item-center"><iframe allowfullscreen="" allowsInlineMediaPlayback="true" class="border-none shadow-lg rounded-lg" frameborder="0" height="450" playsinline="1" src="https://www.youtube.com/embed/o7GyFa90klg" title="" width="800"></iframe></div><p><div class="flex justify-center item-center"><iframe allowfullscreen="" allowsInlineMediaPlayback="true" class="border-none shadow-lg rounded-lg" frameborder="0" height="450" playsinline="1" src="https://www.youtube.com/embed/videoseries?list=PLjNhkoz3yGwG9ISeHEYsdUSQdQarKJ8u3" title="" width="800"></iframe></div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>zoomin-view</title><link href="https://neotw.netlify.app/#zoomin-view"></link><link href="https://neotw.netlify.app/static/zoomin-view.html" rel="alternative" type="text/html"></link><id>b7ddf2f7-ead6-2893-adb7-3bca4c5d9efd</id><updated>2023-04-14T14:37:23</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>This zoom view will have some margin bugs on mobile for notebook</p></div></content><author><name>oeyoews</name></author></entry><entry><title>人体工程学</title><link href="https://neotw.netlify.app/#%E4%BA%BA%E4%BD%93%E5%B7%A5%E7%A8%8B%E5%AD%A6"></link><link href="https://neotw.netlify.app/static/%25E4%25BA%25BA%25E4%25BD%2593%25E5%25B7%25A5%25E7%25A8%258B%25E5%25AD%25A6.html" rel="alternative" type="text/html"></link><id>72e7fb1f-5d83-cc22-f809-a14239426d6a</id><updated>2023-05-25T10:28:47</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>人体工程学（Ergonomics）是研究人体与工作环境之间相互作用的一门学科。它主要关注人体的生理特征、心理特征、行为特征和社会特征等方面，以及这些特征与工作环境之间的关系，旨在设计和评估人机系统的可用性、安全性和效率。</p><p>人体工程学应用于许多领域，包括工业设计、交通运输、医疗保健、航空航天、体育和娱乐等。在工业设计方面，人体工程学可以帮助设计人性化的产品，使产品更加符合人体工程学原则，减少使用者的疲劳和不适感，提高产品的使用效率和安全性。在医疗保健方面，人体工程学可以帮助设计适合人体特征的医疗设备和康复设备，促进患者的康复。</p><p>在计算机领域中，人体工程学也是一个重要的概念。在设计用户界面和交互设计时，需要考虑人体工程学原则，以确保用户可以舒适、高效地使用软件和硬件产品。比如，设计符合人体工程学原则的键盘和鼠标，可以减少用户的手部疲劳和损伤；设计符合人体工程学原则的网页和应用程序，可以提高用户的使用效率和满意度。</p><p>总之，人体工程学是一门多学科交叉的学科，它的应用领域非常广泛，对于提高人类生产力和生活质量有着重要的作用。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>兜底</title><link href="https://neotw.netlify.app/#%E5%85%9C%E5%BA%95"></link><link href="https://neotw.netlify.app/static/%25E5%2585%259C%25E5%25BA%2595.html" rel="alternative" type="text/html"></link><id>49607653-3812-3133-0e1e-63f271e6b652</id><updated>2023-04-21T16:29:01</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>在JavaScript中，所谓的"兜底"是指在代码执行出现异常情况时，可以给出一个备用方案，避免程序崩溃或不可用的情况。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>内部外部方法</title><link href="https://neotw.netlify.app/#%E5%86%85%E9%83%A8%E5%A4%96%E9%83%A8%E6%96%B9%E6%B3%95"></link><link href="https://neotw.netlify.app/static/%25E5%2586%2585%25E9%2583%25A8%25E5%25A4%2596%25E9%2583%25A8%25E6%2596%25B9%25E6%25B3%2595.html" rel="alternative" type="text/html"></link><id>f981cc01-0395-e87d-6c67-6cef8aa0fbe2</id><updated>2023-06-06T09:54:12</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+<p>为了使<code class="_codified_">sayName</code>方法在实例之间共享，我们可以使用原型（prototype）来优化代码。使用原型的方式，可以将方法定义在构造函数的原型对象上，从而使所有实例对象都共享同一个方法。
+</p>
+<p>下面是使用原型来优化<code class="_codified_">Student</code>构造函数的示例代码：
+</p>
+<pre class="hljs"><code class="js hljs"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Student</span> {
+    <span class="hljs-title function_">constructor</span>(<span class="hljs-params">name, gender, age</span>) {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name;
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">gender</span> = gender;
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">age</span> = age;
+    }
+    <span class="hljs-title function_">sayName</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span>); 
+    }
+}
+</code></pre>
+<pre class="hljs"><code class="javascript hljs"><span class="hljs-keyword">function</span> <span class="hljs-title function_">Student</span>(<span class="hljs-params">name, gender, age</span>) {
+  <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name;
+  <span class="hljs-variable language_">this</span>.<span class="hljs-property">gender</span> = gender;
+  <span class="hljs-variable language_">this</span>.<span class="hljs-property">age</span> = age;
+}
+
+<span class="hljs-title class_">Student</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>.<span class="hljs-property">sayName</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&quot;我是&quot;</span> + <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span>);
+}
+
+<span class="hljs-keyword">let</span> 小明 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Student</span>(<span class="hljs-string">&quot;小明&quot;</span>, <span class="hljs-string">&#x27;男&#x27;</span>, <span class="hljs-number">12</span>);
+<span class="hljs-keyword">let</span> 小红 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Student</span>(<span class="hljs-string">&quot;小红&quot;</span>, <span class="hljs-string">&#x27;女&#x27;</span>, <span class="hljs-number">13</span>);
+
+小明.<span class="hljs-title function_">sayName</span>(); <span class="hljs-comment">// -&gt; &quot;我是小明&quot;</span>
+小红.<span class="hljs-title function_">sayName</span>(); <span class="hljs-comment">// -&gt; &quot;我是小红&quot;</span>
+</code></pre>
+<p>在上面的代码中，我们将<code class="_codified_">sayName</code>方法定义在<code class="_codified_">Student</code>构造函数的原型对象上，而不是在构造函数内部定义。这样，所有使用<code class="_codified_">Student</code>构造函数创建的实例对象都可以共享同一个<code class="_codified_">sayName</code>方法。
+</p>
+<p>接着，我们创建了两个<code class="_codified_">Student</code>实例对象<code class="_codified_">小明</code>和<code class="_codified_">小红</code>，并分别调用它们的<code class="_codified_">sayName</code>方法，输出了它们的姓名。
+</p>
+<p>需要注意的是，使用原型定义方法时，方法中的<code class="_codified_">this</code>关键字指向的是调用该方法的实例对象，而不是构造函数本身。因此，在<code class="_codified_">sayName</code>方法中的<code class="_codified_">this.name</code>实际上是指实例对象的<code class="_codified_">name</code>属性，而不是构造函数的<code class="_codified_">name</code>属性。
+</p>
+<ul>
+<li>https://juejin.cn/post/7241114001323819063</li>
+<li>https://www.bilibili.com/video/BV11h411F7nd/?spm_id_from=333.1007.tianma.4-2-12.click&amp;vd_source=d6afd7eedd9f9c940321c63f0a1539e3</li>
+</ul>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>垂直居中</title><link href="https://neotw.netlify.app/#%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD"></link><link href="https://neotw.netlify.app/static/%25E5%259E%2582%25E7%259B%25B4%25E5%25B1%2585%25E4%25B8%25AD.html" rel="alternative" type="text/html"></link><id>4117e80d-2c2e-52f7-95ec-64160f399364</id><updated>2023-05-25T10:28:42</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>垂直居中是指在一个容器（如一个盒子或一个网格单元格）中，将其中的内容在垂直方向上居中对齐。通常用于布局设计中，使页面或元素看起来更加整齐美观。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>太微-ChatGPT-十问</title><link href="https://neotw.netlify.app/#%E5%A4%AA%E5%BE%AE-ChatGPT-%E5%8D%81%E9%97%AE"></link><link href="https://neotw.netlify.app/static/%25E5%25A4%25AA%25E5%25BE%25AE-ChatGPT-%25E5%258D%2581%25E9%2597%25AE.html" rel="alternative" type="text/html"></link><id>976d78d5-c80b-4557-f957-02b43fa2909c</id><updated>2023-03-30T17:11:49</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p style="height:calc(100vh - 120px);">Undefined widget 'chat-gpt'
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>容斥原理</title><link href="https://neotw.netlify.app/#%E5%AE%B9%E6%96%A5%E5%8E%9F%E7%90%86"></link><link href="https://neotw.netlify.app/static/%25E5%25AE%25B9%25E6%2596%25A5%25E5%258E%259F%25E7%2590%2586.html" rel="alternative" type="text/html"></link><id>f90b124f-ea4f-e3f3-e8d6-a6f45b272f1e</id><updated>2023-05-24T20:04:53</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>容斥原理是概率论和组合数学中常用的一种计数方法。它用于计算多个集合的交集和并集的大小，特别是当这些集合的大小不一致或者它们之间存在重叠部分时。容斥原理的基本思想是通过减去重复计数来得到正确的计数结果。</p><p>具体来说，对于两个集合A和B，它们的并集大小为|A∪B|=|A|+|B|-|A∩B|，其中|A|表示集合A的大小，|B|表示集合B的大小，|A∩B|表示集合A和B的交集大小。这个公式可以推广到多个集合的情况下，即：</p><table><tbody><tr class="evenRow"><td>A1∪A2∪...∪An</td><td>=∑</td><td>Ai</td><td>−∑</td><td>Ai∩Aj</td><td>+∑</td><td>Ai∩Aj∩Ak</td><td>−...+（−1）n−1</td><td>A1∩A2∩...∩An</td></tr></tbody></table><p>其中，n表示集合的个数，|Ai|表示第i个集合的大小，|Ai∩Aj|表示第i个集合和第j个集合的交集大小，以此类推。这个公式就是容斥原理的基本形式。</p><p>容斥原理的应用非常广泛，可以用于解决各种计数问题，例如排列组合问题、概率问题、图论问题等。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>心智模型</title><link href="https://neotw.netlify.app/#%E5%BF%83%E6%99%BA%E6%A8%A1%E5%9E%8B"></link><link href="https://neotw.netlify.app/static/%25E5%25BF%2583%25E6%2599%25BA%25E6%25A8%25A1%25E5%259E%258B.html" rel="alternative" type="text/html"></link><id>602f90d7-35f4-3870-dd64-449b09c00331</id><updated>2023-04-09T16:07:28</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>心智模型</p></div></content><author><name>oeyoews</name></author></entry><entry><title>条件运算符</title><link href="https://neotw.netlify.app/#%E6%9D%A1%E4%BB%B6%E8%BF%90%E7%AE%97%E7%AC%A6"></link><link href="https://neotw.netlify.app/static/%25E6%259D%25A1%25E4%25BB%25B6%25E8%25BF%2590%25E7%25AE%2597%25E7%25AC%25A6.html" rel="alternative" type="text/html"></link><id>bd699510-d84b-e19a-9b8d-644a15d42a95</id><updated>2023-05-31T13:02:31</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>条件运算符号是 JavaScript 中的一个运算符，用于根据某个条件返回不同的值。条件运算符号通常包含三个部分，分别是条件表达式、如果条件为真时返回的值和如果条件为假时返回的值。当条件表达式为真时，返回第二个部分的值，否则返回第三个部分的值。</p><p>下面是一个示例代码，用于演示条件运算符号的使用：</p><pre class="hljs"><code class="js hljs"><span class="hljs-keyword">const</span> a = <span class="hljs-number">5</span>;
 <span class="hljs-keyword">const</span> b = <span class="hljs-number">10</span>;
 
