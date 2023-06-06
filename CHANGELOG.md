@@ -1,3 +1,10 @@
+# [3.286.0](https://github.com/oeyoews/neotw/compare/v3.285.0...v3.286.0) (2023-06-06)
+
+
+### Features
+
+* use data-tags ([7581edf](https://github.com/oeyoews/neotw/commit/7581edfb950f024fcc99390303253c7538a48992))
+
 # [3.285.0](https://github.com/oeyoews/neotw/compare/v3.284.0...v3.285.0) (2023-06-06)
 
 
