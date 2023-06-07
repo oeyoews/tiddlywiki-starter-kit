@@ -1,6 +1,6 @@
 created: 20230607142246917
 creator: oeyoews
-modified: 20230607142713762
+modified: 20230607145500444
 modifier: oeyoews
 tags: 
 title: 静态方法-实例方法-原型方法
@@ -30,12 +30,22 @@ type: text/markdown
 静态方法通常用于创建工具函数或者实现一些通用的操作。例如，假设我们需要实现一个计算两个数之和的函数，可以使用静态方法来实现：
 
 ```js
+// es6
 class MathUtils {
   static add(a, b) {
     return a + b;
   }
 }
 
+// es5
+function MathUtils() {}
+
+// static method
+MathUtils.add = function () {
+	return a + b;
+}
+
+// test
 const sum = MathUtils.add(1, 2);
 console.log(sum); // 3
 ```
@@ -47,6 +57,7 @@ console.log(sum); // 3
 实例方法通常用于处理类实例的属性和状态。例如，假设我们需要实现一个表示人的类，并实现一个方法来输出人的名字：
 
 ```js
+// es6
 class Person {
   constructor(name) {
     this.name = name;
@@ -57,7 +68,19 @@ class Person {
   }
 }
 
+// es5
+function Person {
+	this.sayHello = function() {
+		console.log('xxx')
+	}
+}
+
+// 构造函数中定义的方法会在每个实例中复制一份
 const john = new Person('John');
+// instance method
+john.sayHello = function() {
+	console.log('xxx')
+}
 john.sayHello(); // Hello, my name is John
 ```
 
