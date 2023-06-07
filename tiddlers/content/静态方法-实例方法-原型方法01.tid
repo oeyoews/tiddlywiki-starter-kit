@@ -1,12 +1,12 @@
 created: 20230607150354831
 creator: oeyoews
-modified: 20230607150421177
+modified: 20230607153426189
 modifier: oeyoews
-tags: 
+tags: JavaScript
 title: 静态方法-实例方法-原型方法01
 type: text/markdown
 
-好的，静态属性、原型属性、实例属性、静态方法、原型方法和实例方法在ES5和ES6中的对比如下：
+> https://es6.ruanyifeng.com/#docs/class
 
 1. 静态属性
 
