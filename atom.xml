@@ -2682,7 +2682,7 @@ Undefined widget 'tid2pdf'
 </div>
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>GettingStarted</title><link href="https://neotw.netlify.app/#GettingStarted"></link><link href="https://neotw.netlify.app/static/GettingStarted.html" rel="alternative" type="text/html"></link><id>fc927313-83cf-7e0a-53c1-21853f695851</id><updated>2023-06-05T19:42:02</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:bg-white">
 <div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-669-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-48-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-71-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-668-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-47-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-71-green?style=social"></img>
 <img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-5 hours ago-green?style=social"></img>  
 </div>
 
@@ -4741,7 +4741,7 @@ Undefined widget 'tid2pdf'<hr class="footnotes-sep"></hr>
 </li>
 </ol>
 </section>
-</div></div></content><author><name>oeyoews</name></author></entry><entry><title>markdown-resume</title><link href="https://neotw.netlify.app/#markdown-resume"></link><link href="https://neotw.netlify.app/static/markdown-resume.html" rel="alternative" type="text/html"></link><id>c8069c2c-e807-797b-a0fd-0c16ed3adb5c</id><updated>2023-03-30T13:40:28</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li><a class="tc-tiddlylink-external" href="http://cv.ftqq.com/?fr=github" rel="noopener noreferrer" target="_blank">http://cv.ftqq.com/?fr=github</a>#</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>markdown-toc</title><link href="https://neotw.netlify.app/#markdown-toc"></link><link href="https://neotw.netlify.app/static/markdown-toc.html" rel="alternative" type="text/html"></link><id>cf1ce52f-3a2b-c900-d6cc-40b72ed1704c</id><updated>2023-06-06T10:22:02</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>@[toc]</p></div></content><author><name>oeyoews</name></author></entry><entry><title>mdn-search</title><link href="https://neotw.netlify.app/#mdn-search"></link><link href="https://neotw.netlify.app/static/mdn-search.html" rel="alternative" type="text/html"></link><id>ca98d367-bafa-9eca-7127-54f030961751</id><updated>2023-03-31T21:17:45</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://developer.mozilla.org/zh-CN/" rel="noopener noreferrer" target="_blank">https://developer.mozilla.org/zh-CN/</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>mdx</title><link href="https://neotw.netlify.app/#mdx"></link><link href="https://neotw.netlify.app/static/mdx.html" rel="alternative" type="text/html"></link><id>93c3b60a-8b8c-46fe-78ba-27927b2280e7</id><updated>2023-03-24T22:00:08</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>use mdx</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>memos-docker-compose</title><link href="https://neotw.netlify.app/#memos-docker-compose"></link><link href="https://neotw.netlify.app/static/memos-docker-compose.html" rel="alternative" type="text/html"></link><id>66cc4474-77be-e7d2-0c7d-444665ceec23</id><updated>2023-03-31T21:18:33</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre class="hljs"><code class="bash hljs">docker-compose up -d  <span class="hljs-comment">#docker-compose.yml`</span></code></pre><pre class="hljs"><code class="yml hljs"><span class="hljs-attr">version:</span> <span class="hljs-string">&quot;3.0&quot;</span>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>markdown-resume</title><link href="https://neotw.netlify.app/#markdown-resume"></link><link href="https://neotw.netlify.app/static/markdown-resume.html" rel="alternative" type="text/html"></link><id>c8069c2c-e807-797b-a0fd-0c16ed3adb5c</id><updated>2023-03-30T13:40:28</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li><a class="tc-tiddlylink-external" href="http://cv.ftqq.com/?fr=github" rel="noopener noreferrer" target="_blank">http://cv.ftqq.com/?fr=github</a>#</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>mdn-search</title><link href="https://neotw.netlify.app/#mdn-search"></link><link href="https://neotw.netlify.app/static/mdn-search.html" rel="alternative" type="text/html"></link><id>ca98d367-bafa-9eca-7127-54f030961751</id><updated>2023-03-31T21:17:45</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://developer.mozilla.org/zh-CN/" rel="noopener noreferrer" target="_blank">https://developer.mozilla.org/zh-CN/</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>mdx</title><link href="https://neotw.netlify.app/#mdx"></link><link href="https://neotw.netlify.app/static/mdx.html" rel="alternative" type="text/html"></link><id>93c3b60a-8b8c-46fe-78ba-27927b2280e7</id><updated>2023-03-24T22:00:08</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>use mdx</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>memos-docker-compose</title><link href="https://neotw.netlify.app/#memos-docker-compose"></link><link href="https://neotw.netlify.app/static/memos-docker-compose.html" rel="alternative" type="text/html"></link><id>66cc4474-77be-e7d2-0c7d-444665ceec23</id><updated>2023-03-31T21:18:33</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre class="hljs"><code class="bash hljs">docker-compose up -d  <span class="hljs-comment">#docker-compose.yml`</span></code></pre><pre class="hljs"><code class="yml hljs"><span class="hljs-attr">version:</span> <span class="hljs-string">&quot;3.0&quot;</span>
 <span class="hljs-attr">services:</span>
   <span class="hljs-attr">memos:</span>
     <span class="hljs-attr">image:</span> <span class="hljs-string">neosmemo/memos:latest</span>
@@ -4912,7 +4912,7 @@ Undefined widget 'tid2pdf'<hr class="footnotes-sep"></hr>
 <li>aria2c -d <dirname> <url>&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;</url></dirname></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-badges</title><link href="https://neotw.netlify.app/#neotw-badges"></link><link href="https://neotw.netlify.app/static/neotw-badges.html" rel="alternative" type="text/html"></link><id>f934e3aa-d36d-34bb-609b-922693d9b993</id><updated>2023-06-01T21:41:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-669-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-48-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-71-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-668-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-47-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-71-green?style=social"></img>
 <img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-5 hours ago-green?style=social"></img>  
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-command</title><link href="https://neotw.netlify.app/#neotw-command"></link><link href="https://neotw.netlify.app/static/neotw-command.html" rel="alternative" type="text/html"></link><id>188385e0-6b3a-4916-a54a-061d9d29e18f</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
@@ -8180,8 +8180,6 @@ current neotw version is <u></u>
 
 <option value="page-cover">page-cover</option>
 
-<option value="preview">preview</option>
-
 <option value="publish">publish</option>
 
 <option value="summary">summary</option>
@@ -9170,7 +9168,7 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 </div>
 
 <div class="tc-menu-list-item">
-6th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#12">12</a></span>)
+6th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#11">11</a></span>)
 
 <div class="tc-menu-list-subitem">
 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E6%B0%B4%E5%90%88%E4%BD%9C%E7%94%A8"></a>
@@ -9206,10 +9204,6 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 
 <div class="tc-menu-list-subitem">
 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#open-closed-principle"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#markdown-toc"></a>
 </div>
 
 <div class="tc-menu-list-subitem">
@@ -9716,12 +9710,6 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#open-closed-principle">open-closed-principle</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
-    </li>
-  
-    <li>
-		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#markdown-toc">markdown-toc</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
         
     </li>
