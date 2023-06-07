@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/neotw-unsplash/snippets/unsplash
+caption: Unsplash Widget
+description: Unsplash Widget
+tags: $:/tags/TextEditor/Snippet
+
+<$unsplash />$1

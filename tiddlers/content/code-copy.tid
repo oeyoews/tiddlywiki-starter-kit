@@ -1,0 +1,70 @@
+created: 20230607050134251
+creator: oeyoews
+modified: 20230607050245388
+modifier: oeyoews
+tags: 
+title: code-copy
+type: text/vnd.tiddlywiki
+
+\define code(tx)
+<style>
+table.mycodeblock {
+border: none;
+margin: 0px;
+vertical-align: middle;
+display: inline-table;
+}
+table.mycodeblock pre {
+margin: 0px;
+}
+table.mycodeblock td {
+border: none;
+padding: 0.1em;
+position: relative;
+}
+table.mycodeblock button {
+position: absolute;
+left: -30px;
+top: 12px;
+}
+table.mycodeblock button svg.tc-image-button {
+height: 2em;
+width: 2em;
+fill: none;
+}
+table.mycodeblock:hover button svg.tc-image-button {
+fill: <<color tiddler-controls-foreground>>;
+animation: 0.30s cubic-bezier(.35, 0, .35, 1) 2 alternate;
+animation-name: breathe,blink;
+}
+table.mycodeblock button:hover svg.tc-image-button {
+fill: <<color orange>>;
+}
+@keyframes blink {
+from { opacity: 1; }
+to { opacity: .35; }
+}
+@keyframes breathe {
+from { transform: scale(1); }
+to { transform: scale(1.5); }
+}
+</style>
+
+<$wikify name="tx_copy" text={{{ [<__tx__>trim[]]+[addprefix[<p>]]+[addsuffix[</p>]] }}}>
+<$set name="tx_show" value={{{ [<tx_copy>]+[addprefix[<pre>]]+[addprefix<charcode 13 10>]+[addsuffix[</pre>]]+[addsuffix<charcode 13 10>] }}}>
+<table class="mycodeblock">
+<tr>
+<td>
+<<tx_show>>
+</td>
+<td>
+<$button class="tc-btn-invisible" message="tm-copy-to-clipboard" param=<<tx_copy>> tooltip={{$:/language/Buttons/CopyToClipboard/Hint}}>{{$:/core/images/copy-clipboard}}
+</$button>
+</td>
+</tr>
+</table>
+</$set>
+</$wikify>
+\end
+
+<<code 'dmeo'>>
