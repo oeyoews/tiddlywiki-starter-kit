@@ -2682,8 +2682,8 @@ Undefined widget 'tid2pdf'
 </div>
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>GettingStarted</title><link href="https://neotw.netlify.app/#GettingStarted"></link><link href="https://neotw.netlify.app/static/GettingStarted.html" rel="alternative" type="text/html"></link><id>fc927313-83cf-7e0a-53c1-21853f695851</id><updated>2023-06-05T19:42:02</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:bg-white">
 <div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-668-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-47-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-71-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-5 hours ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-669-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-47-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-71-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-51 seconds ago-green?style=social"></img>  
 </div>
 
 
@@ -4912,8 +4912,8 @@ Undefined widget 'tid2pdf'<hr class="footnotes-sep"></hr>
 <li>aria2c -d <dirname> <url>&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;</url></dirname></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-badges</title><link href="https://neotw.netlify.app/#neotw-badges"></link><link href="https://neotw.netlify.app/static/neotw-badges.html" rel="alternative" type="text/html"></link><id>f934e3aa-d36d-34bb-609b-922693d9b993</id><updated>2023-06-01T21:41:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-668-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-47-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-71-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-5 hours ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-669-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-47-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-71-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-51 seconds ago-green?style=social"></img>  
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-command</title><link href="https://neotw.netlify.app/#neotw-command"></link><link href="https://neotw.netlify.app/static/neotw-command.html" rel="alternative" type="text/html"></link><id>188385e0-6b3a-4916-a54a-061d9d29e18f</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
        ✨ 0.1
@@ -9131,7 +9131,11 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 }</code></pre><p>在这个例子中，我们使用try-catch语句块来处理可能的异常情况。在try块中，我们使用fs.readFileSync()方法同步读取JSON文件，并将文件内容存储在data变量中。如果读取文件时出现错误，catch块将捕获该错误，并输出错误信息。</p><p>以上是使用fs模块读取文件的示例，需要注意的是，在使用fs模块读取文件时，我们需要处理可能的异常情况，并根据实际情况选择异步或同步方法。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-count</title><link href="https://neotw.netlify.app/#recent-count"></link><link href="https://neotw.netlify.app/static/recent-count.html" rel="alternative" type="text/html"></link><id>6a131e9a-b046-19c3-08bd-35ef7c9ffbfc</id><updated>2023-02-08T18:16:06</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="tc-timeline">
 
 <div class="tc-menu-list-item">
-7th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#8">8</a></span>)
+7th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#9">9</a></span>)
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95-%E5%AE%9E%E4%BE%8B%E6%96%B9%E6%B3%95-%E5%8E%9F%E5%9E%8B%E6%96%B9%E6%B3%95"></a>
+</div>
 
 <div class="tc-menu-list-subitem">
 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#code-copy"></a>
@@ -9611,6 +9615,12 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 </div>
 
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-note-record</title><link href="https://neotw.netlify.app/#recent-note-record"></link><link href="https://neotw.netlify.app/static/recent-note-record.html" rel="alternative" type="text/html"></link><id>2619840e-dc84-d69e-3d32-c2258f306a66</id><updated>2023-04-11T09:39:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><ul>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95-%E5%AE%9E%E4%BE%8B%E6%96%B9%E6%B3%95-%E5%8E%9F%E5%9E%8B%E6%96%B9%E6%B3%95">静态方法-实例方法-原型方法</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#code-copy">code-copy</a>
@@ -14595,5 +14605,182 @@ myDog.<span class="hljs-title function_">bark</span>(); <span class="hljs-commen
 }
 
 <span class="hljs-keyword">var</span> button = <span class="hljs-title function_">createButton</span>();
-<span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-title function_">appendChild</span>(button);</code></pre><p>在上述代码中，<code>createButton</code> 函数返回一个新的按钮元素，并向其添加了一个 <code>click</code> 事件监听器。这个事件监听器访问了 <code>count</code> 变量，而 <code>count</code> 变量是在 <code>createButton</code> 函数内部定义的，并且只有事件监听器才能访问它。因此，事件监听器形成了一个闭包，可以访问 <code>count</code> 变量并在每次点击按钮时将其值加一。</p><p>通过使用闭包，可以将 <code>count</code> 变量封装在函数作用域内，避免了全局变量的污染，同时也让代码更加模块化和可维护。</p></div></content><author><name>oeyoews</name></author></entry></feed>
+<span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-title function_">appendChild</span>(button);</code></pre><p>在上述代码中，<code>createButton</code> 函数返回一个新的按钮元素，并向其添加了一个 <code>click</code> 事件监听器。这个事件监听器访问了 <code>count</code> 变量，而 <code>count</code> 变量是在 <code>createButton</code> 函数内部定义的，并且只有事件监听器才能访问它。因此，事件监听器形成了一个闭包，可以访问 <code>count</code> 变量并在每次点击按钮时将其值加一。</p><p>通过使用闭包，可以将 <code>count</code> 变量封装在函数作用域内，避免了全局变量的污染，同时也让代码更加模块化和可维护。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>静态方法-实例方法-原型方法</title><link href="https://neotw.netlify.app/#%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95-%E5%AE%9E%E4%BE%8B%E6%96%B9%E6%B3%95-%E5%8E%9F%E5%9E%8B%E6%96%B9%E6%B3%95"></link><link href="https://neotw.netlify.app/static/%25E9%259D%2599%25E6%2580%2581%25E6%2596%25B9%25E6%25B3%2595-%25E5%25AE%259E%25E4%25BE%258B%25E6%2596%25B9%25E6%25B3%2595-%25E5%258E%259F%25E5%259E%258B%25E6%2596%25B9%25E6%25B3%2595.html" rel="alternative" type="text/html"></link><id>f971ede9-8729-07f6-d337-813b0ce68e84</id><updated>2023-06-07T22:27:13</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+<p><div class="toc" id="toc">
+        <h3>🌴 Table of Contents</h3>
+    <ul class="toc-level"><ul class="toc-level">
+          <li class="capitalize">
+            <a href="##h-0.1">
+              ⭐️ 0.1 静态方法
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.2">
+              ⭐️ 0.2 实例方法
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.3">
+              ⭐️ 0.3 原型方法
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.4">
+              ⭐️ 0.4 静态属性
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.5">
+              ⭐️ 0.5 原型属性
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.6">
+              ⭐️ 0.6 实例属性
+            </a>
+          </li>
+        </ul></ul></div>
+</p>
+
+    <h2>
+      <a href="##h-0.1" id="#h-0.1">
+       ✨ 0.1
+      </a>
+  静态方法</h2>
+<p>静态方法是属于类的方法，不需要实例化类就可以使用，可以直接通过类名调用。静态方法通常用于与类本身相关的操作，例如创建工具函数等。
+</p>
+
+    <h2>
+      <a href="##h-0.2" id="#h-0.2">
+       ✨ 0.2
+      </a>
+  实例方法</h2>
+<p>实例方法是属于类的实例的方法，需要实例化类后才能使用。实例方法通常用于处理类实例的属性和状态，例如对实例属性的修改、获取等操作。
+</p>
+
+    <h2>
+      <a href="##h-0.3" id="#h-0.3">
+       ✨ 0.3
+      </a>
+  原型方法</h2>
+<p>原型方法是属于类的原型的方法，需要实例化类后才能使用。原型方法通过类的原型对象来定义和访问。原型方法通常用于处理类实例的属性和状态，例如对实例属性的修改、获取等操作。
+</p>
+<p>总之，静态方法、实例方法和原型方法都是类中定义的方法，主要区别在于访问方式和用途。其中静态方法是属于类本身的方法，实例方法和原型方法是属于类的实例的方法，且原型方法的效率通常比实例方法高。
+</p>
+<p>好的，以下是举例说明静态方法、实例方法和原型方法的区别：
+</p>
+<ol>
+<li>静态方法</li>
+</ol>
+<p>静态方法通常用于创建工具函数或者实现一些通用的操作。例如，假设我们需要实现一个计算两个数之和的函数，可以使用静态方法来实现：
+</p>
+<pre class="hljs"><code class="js hljs"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MathUtils</span> {
+  <span class="hljs-keyword">static</span> <span class="hljs-title function_">add</span>(<span class="hljs-params">a, b</span>) {
+    <span class="hljs-keyword">return</span> a + b;
+  }
+}
+
+<span class="hljs-keyword">const</span> sum = <span class="hljs-title class_">MathUtils</span>.<span class="hljs-title function_">add</span>(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(sum); <span class="hljs-comment">// 3</span>
+</code></pre>
+<p>在上面的代码中，<code class="_codified_">add</code>是一个静态方法，可以直接通过类名调用。
+</p>
+<ol start="2">
+<li>实例方法</li>
+</ol>
+<p>实例方法通常用于处理类实例的属性和状态。例如，假设我们需要实现一个表示人的类，并实现一个方法来输出人的名字：
+</p>
+<pre class="hljs"><code class="js hljs"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Person</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">name</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name;
+  }
+
+  <span class="hljs-title function_">sayHello</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Hello, my name is <span class="hljs-subst">${<span class="hljs-variable language_">this</span>.name}</span>`</span>);
+  }
+}
+
+<span class="hljs-keyword">const</span> john = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>(<span class="hljs-string">&#x27;John&#x27;</span>);
+john.<span class="hljs-title function_">sayHello</span>(); <span class="hljs-comment">// Hello, my name is John</span>
+</code></pre>
+<p>在上面的代码中，<code class="_codified_">sayHello</code>是一个实例方法，只能通过类的实例来调用。
+</p>
+<ol start="3">
+<li>原型方法</li>
+</ol>
+<p>原型方法通常用于处理类实例的属性和状态，与实例方法类似。例如，假设我们需要实现一个表示人的类，并实现一个方法来输出人的名字：
+</p>
+<pre class="hljs"><code class="js hljs"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Person</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">name</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name;
+  }
+}
+
+<span class="hljs-title class_">Person</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>.<span class="hljs-property">sayHello</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Hello, my name is <span class="hljs-subst">${<span class="hljs-variable language_">this</span>.name}</span>`</span>);
+};
+
+<span class="hljs-keyword">const</span> john = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>(<span class="hljs-string">&#x27;John&#x27;</span>);
+john.<span class="hljs-title function_">sayHello</span>(); <span class="hljs-comment">// Hello, my name is John</span>
+</code></pre>
+<p>在上面的代码中，<code class="_codified_">sayHello</code>是一个原型方法，可以通过类的实例来调用，与实例方法类似。区别是原型方法通过类的原型对象来定义和访问。
+</p>
+
+    <h2>
+      <a href="##h-0.4" id="#h-0.4">
+       ✨ 0.4
+      </a>
+  静态属性</h2>
+<p>静态属性是属于类本身的属性，不需要实例化类就可以使用，可以直接通过类名调用。静态属性通常用于存储类的元信息或者与类本身相关的数据。
+</p>
+
+    <h2>
+      <a href="##h-0.5" id="#h-0.5">
+       ✨ 0.5
+      </a>
+  原型属性</h2>
+<p>原型属性是属于类的原型的属性，需要实例化类后才能使用。原型属性通过类的原型对象来定义和访问。原型属性通常用于存储类的共享数据或者与类实例相关的数据。
+</p>
+
+    <h2>
+      <a href="##h-0.6" id="#h-0.6">
+       ✨ 0.6
+      </a>
+  实例属性</h2>
+<p>实例属性是属于类实例的属性，需要实例化类后才能使用。实例属性通常用于存储类实例的数据和状态。
+</p>
+<p>以下是一个使用ES6语法定义静态属性、原型属性和实例属性的例子：
+</p>
+<pre class="hljs"><code class="js hljs"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Person</span> {
+  <span class="hljs-comment">// 静态属性</span>
+  <span class="hljs-keyword">static</span> <span class="hljs-variable constant_">COUNT</span> = <span class="hljs-number">0</span>;
+
+  <span class="hljs-comment">// 原型属性</span>
+  logging = {
+    <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;name&#x27;</span>,
+    <span class="hljs-attr">age</span>: <span class="hljs-number">20</span>,
+  };
+
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">name, age</span>) {
+    <span class="hljs-comment">// 实例属性</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">age</span> = age;
+    <span class="hljs-title class_">Person</span>.<span class="hljs-property">COUNT</span>++; <span class="hljs-comment">// 计数器自增</span>
+  }
+}
+
+<span class="hljs-keyword">const</span> p1 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>(<span class="hljs-string">&#x27;demo&#x27;</span>, <span class="hljs-number">20</span>);
+<span class="hljs-keyword">const</span> p2 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>(<span class="hljs-string">&#x27;demo1&#x27;</span>, <span class="hljs-number">21</span>);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title class_">Person</span>.<span class="hljs-property">COUNT</span>); <span class="hljs-comment">// 输出2</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(p1.<span class="hljs-property">logging</span>); <span class="hljs-comment">// 输出 { name: &#x27;name&#x27;, age: 20 }</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(p2.<span class="hljs-property">logging</span>); <span class="hljs-comment">// 输出 { name: &#x27;name&#x27;, age: 20 }</span>
+</code></pre>
+<p>在上面的代码中，我们使用ES6语法定义了一个<code class="_codified_">Person</code>类，包含了静态属性、原型属性和实例属性。静态属性通过<code class="_codified_">static</code>关键字来定义，原型属性和实例属性则直接在类的构造函数中定义。我们创建了两个<code class="_codified_">Person</code>类的实例，每创建一个实例，静态属性<code class="_codified_">COUNT</code>都会自增1。我们还输出了每个实例的<code class="_codified_">logging</code>属性，可以看到它是原型属性，可以被所有实例共享。
+</p>
+</div></div></content><author><name>oeyoews</name></author></entry></feed>
 
