@@ -43,5 +43,5 @@ module.exports = {
     zoom: false,
     wheel: 'close',
   },
-  Hash: false,
+  Hash: false, // custom hash  https://fancyapps.com/fancybox/plugins/hash/
 };
