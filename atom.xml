@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Neotw rolling
 </title><subtitle>A modern notebook based on TiddlyWiki5
-</subtitle><link href="https://neotw.netlify.app/atom.xml" rel="self"></link><link href="https://neotw.netlify.app/"></link><author><name>oeyoews</name></author><id>462a8bca-7c57-8f8a-27a3-d6cb4c75a727</id><updated>2023-06-06T17:35:11</updated><entry><title>/home/runner/work/neotw/neotw/tiddlers/hi-oeyoews.svg</title><link href="https://neotw.netlify.app/#%2Fhome%2Frunner%2Fwork%2Fneotw%2Fneotw%2Ftiddlers%2Fhi-oeyoews.svg"></link><link href="https://neotw.netlify.app/static/%252Fhome%252Frunner%252Fwork%252Fneotw%252Fneotw%252Ftiddlers%252Fhi-oeyoews.svg.html" rel="alternative" type="text/html"></link><id>3798d5df-8b06-4ca4-8046-0c87bf3b437d</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><img src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20viewBox%3D%220%200%20600%20300%22%20width%3D%22600%22%20height%3D%22300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3CforeignObject%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%0A%20%20%20%20%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%0A%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%40keyframes%20hi%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%200%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2010%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2020%25%20%7B%20transform%3A%20rotate(-8.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2030%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2040%25%20%7B%20transform%3A%20rotate(-4.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2050%25%20%7B%20transform%3A%20rotate(10.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2060%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40keyframes%20gradient%20%7B%0A%20%20%20%20%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%2050%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%20100%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%235452ee%3B%0A%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%23e73c7e%3B%0A%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%2323a6d5%3B%0A%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23ffff%3B%0A%0A%20%20%20%20%20%20%20%20%20%20background%3A%20linear-gradient(-45deg%2C%20var(--color-main)%2C%20var(--color-primary)%2C%20var(--color-secondary)%2C%20var(--color-tertiary))%3B%0A%20%20%20%20%20%20%20%20%20%20background-size%3A%20400%25%20400%25%3B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20gradient%2015s%20ease%20infinite%3B%0A%0A%20%20%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20%20%20height%3A%20300px%3B%0A%0A%20%20%20%20%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20color%3A%20white%3B%0A%0A%20%20%20%20%20%20%20%20%20%20font-family%3A%20-apple-system%2C%20BlinkMacSystemFont%2C%20%22Segoe%20UI%22%2C%20Roboto%2C%20Helvetica%2C%20Arial%2C%20sans-serif%2C%20%22Apple%20Color%20Emoji%22%2C%20%22Segoe%20UI%20Emoji%22%2C%20%22Segoe%20UI%20Symbol%22%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20hi%201.5s%20linear%20-0.5s%20infinite%3B%0A%20%20%20%20%20%20%20%20%20%20display%3A%20inline-block%3B%0A%20%20%20%20%20%20%20%20%20%20transform-origin%3A%2070%25%2070%25%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-color-scheme%3A%20light)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%23F15BB5%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%2324b0ef%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%234526f6%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23f6f645%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-reduced-motion)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%3C%2Fstyle%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%20%20%3Ch1%3EHi%20there%2C%20my%20name%20is%20oeyoews%20%3Cdiv%20class%3D%22hi%22%3E%F0%9F%91%8B%3C%2Fdiv%3E%3C%2Fh1%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2FforeignObject%3E%0A%3C%2Fsvg%3E"></img></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-02-28</title><link href="https://neotw.netlify.app/#2023-02-28"></link><link href="https://neotw.netlify.app/static/2023-02-28.html" rel="alternative" type="text/html"></link><id>90d001b4-d8df-ae9a-ba70-fe38459a71c5</id><updated>2023-02-28T00:12:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div>无论人生上了哪一层台阶 ，阶下有人在仰望你，阶上亦有人在俯视你；你抬头自卑，低头自得，唯有平视，才能看到真实的自已。 @杨绛语录</div></blockquote></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-16</title><link href="https://neotw.netlify.app/#2023-04-16"></link><link href="https://neotw.netlify.app/static/2023-04-16.html" rel="alternative" type="text/html"></link><id>b720eb79-6a7f-86f0-c39b-4c456f2916fb</id><updated>2023-04-16T09:56:15</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>初级赚钱方式靠信息差，
+</subtitle><link href="https://neotw.netlify.app/atom.xml" rel="self"></link><link href="https://neotw.netlify.app/"></link><author><name>oeyoews</name></author><id>462a8bca-7c57-8f8a-27a3-d6cb4c75a727</id><updated>2023-06-07T12:09:42</updated><entry><title>/home/runner/work/neotw/neotw/tiddlers/hi-oeyoews.svg</title><link href="https://neotw.netlify.app/#%2Fhome%2Frunner%2Fwork%2Fneotw%2Fneotw%2Ftiddlers%2Fhi-oeyoews.svg"></link><link href="https://neotw.netlify.app/static/%252Fhome%252Frunner%252Fwork%252Fneotw%252Fneotw%252Ftiddlers%252Fhi-oeyoews.svg.html" rel="alternative" type="text/html"></link><id>3798d5df-8b06-4ca4-8046-0c87bf3b437d</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><img src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20viewBox%3D%220%200%20600%20300%22%20width%3D%22600%22%20height%3D%22300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3CforeignObject%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%0A%20%20%20%20%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%0A%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%40keyframes%20hi%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%200%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2010%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2020%25%20%7B%20transform%3A%20rotate(-8.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2030%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2040%25%20%7B%20transform%3A%20rotate(-4.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2050%25%20%7B%20transform%3A%20rotate(10.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2060%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40keyframes%20gradient%20%7B%0A%20%20%20%20%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%2050%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%20100%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%235452ee%3B%0A%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%23e73c7e%3B%0A%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%2323a6d5%3B%0A%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23ffff%3B%0A%0A%20%20%20%20%20%20%20%20%20%20background%3A%20linear-gradient(-45deg%2C%20var(--color-main)%2C%20var(--color-primary)%2C%20var(--color-secondary)%2C%20var(--color-tertiary))%3B%0A%20%20%20%20%20%20%20%20%20%20background-size%3A%20400%25%20400%25%3B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20gradient%2015s%20ease%20infinite%3B%0A%0A%20%20%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20%20%20height%3A%20300px%3B%0A%0A%20%20%20%20%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20color%3A%20white%3B%0A%0A%20%20%20%20%20%20%20%20%20%20font-family%3A%20-apple-system%2C%20BlinkMacSystemFont%2C%20%22Segoe%20UI%22%2C%20Roboto%2C%20Helvetica%2C%20Arial%2C%20sans-serif%2C%20%22Apple%20Color%20Emoji%22%2C%20%22Segoe%20UI%20Emoji%22%2C%20%22Segoe%20UI%20Symbol%22%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20hi%201.5s%20linear%20-0.5s%20infinite%3B%0A%20%20%20%20%20%20%20%20%20%20display%3A%20inline-block%3B%0A%20%20%20%20%20%20%20%20%20%20transform-origin%3A%2070%25%2070%25%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-color-scheme%3A%20light)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%23F15BB5%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%2324b0ef%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%234526f6%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23f6f645%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-reduced-motion)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%3C%2Fstyle%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%20%20%3Ch1%3EHi%20there%2C%20my%20name%20is%20oeyoews%20%3Cdiv%20class%3D%22hi%22%3E%F0%9F%91%8B%3C%2Fdiv%3E%3C%2Fh1%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2FforeignObject%3E%0A%3C%2Fsvg%3E"></img></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-02-28</title><link href="https://neotw.netlify.app/#2023-02-28"></link><link href="https://neotw.netlify.app/static/2023-02-28.html" rel="alternative" type="text/html"></link><id>90d001b4-d8df-ae9a-ba70-fe38459a71c5</id><updated>2023-02-28T00:12:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div>无论人生上了哪一层台阶 ，阶下有人在仰望你，阶上亦有人在俯视你；你抬头自卑，低头自得，唯有平视，才能看到真实的自已。 @杨绛语录</div></blockquote></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-16</title><link href="https://neotw.netlify.app/#2023-04-16"></link><link href="https://neotw.netlify.app/static/2023-04-16.html" rel="alternative" type="text/html"></link><id>b720eb79-6a7f-86f0-c39b-4c456f2916fb</id><updated>2023-04-16T09:56:15</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>初级赚钱方式靠信息差，
 高级赚钱方式靠认知差，
 顶级赚钱方式靠资源差</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-20</title><link href="https://neotw.netlify.app/#2023-04-20"></link><link href="https://neotw.netlify.app/static/2023-04-20.html" rel="alternative" type="text/html"></link><id>66fbd211-302a-90f1-43e7-1f0ea4e0f181</id><updated>2023-04-20T20:53:27</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>多端同步的便捷和本地存储的安全，就是鱼与熊掌不可兼得。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-23</title><link href="https://neotw.netlify.app/#2023-04-23"></link><link href="https://neotw.netlify.app/static/2023-04-23.html" rel="alternative" type="text/html"></link><id>eb28f00e-453b-d5a1-967b-e984799ea2d8</id><updated>2023-04-24T00:16:36</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div>延迟满足</div><div>用书籍增加三倍人生体验时长</div><div>不以成喜，不以败悲</div></blockquote><p>“止观止心，无妄无碍”是禅宗的一种修行方法，也是佛教徒在生活中追求内心平静和解脱的方式。</p><p>其中，“止”指的是停止杂念、烦恼等不必要的思考和行为，如止诸恶、止杀戮、止谤言等。这样可以使内心得到安定和净化，有利于后续的修行。</p><p>“观”则指观察事物的真相和本质，排除偏见和执着。通过观想自己和世界的真实性质，认识自己的本性和命运，从而达到身心合一、彻底了解自己和世界的目的。</p><p>“无妄”则表示去除「妄念」、「妄想」和「妄语」等，即清空心灵中荒谬无稽的幻想和自我，让自己的内心变得更加安宁、平静。</p><p>“无碍”则是指避免心态上的障碍和物质层面的附着，为达到自由和解脱而努力。</p><p>总之，这个修行方法要求个人通过内省、检视和拯救自己，消除恶念与烦恼，培养慈悲之心，领悟事物的真实本质，从而找到内心的平静和解放。</p><blockquote><div>客观事物发展规律不以人的主观意志，然而掌握事物的发展规律，却可以从必然王国到自由王国</div></blockquote><p>这句话的意思是，客观事物的发展规律是客观存在的，不受人的主观意志的影响。但是，如果我们能够掌握这些规律并对它们进行改变和运用，我们就可以从必然王国（受客观规律支配的领域）进入自由王国（自由创造或创新的领域）。</p><p>在许多领域中，我们都可以看到这一点。例如，在科学技术领域，我们通过研究和掌握客观规律，开发出了许多有用的工具和技术，使我们的生产和生活更加便利和高效。同样，在社会和经济领域中，通过深入了解客观规律，我们可以制定出更好的政策和管理方法，以促进社会和经济的稳定和发展。</p><p>尽管客观规律的存在使我们受到限制，但如果我们学会理解和运用这些规律，我们就可以发挥自己的主动性和创造性，实现更高的自由度，并不断推动事物的进步和发展。因此，掌握客观规律是实现自由和创造的关键之一。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-25</title><link href="https://neotw.netlify.app/#2023-04-25"></link><link href="https://neotw.netlify.app/static/2023-04-25.html" rel="alternative" type="text/html"></link><id>07baca31-a4c1-d735-df41-8cf857fe4d13</id><updated>2023-04-25T23:01:46</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://space.bilibili.com/43109229/channel/collectiondetail?sid=1234748" rel="noopener noreferrer" target="_blank">https://space.bilibili.com/43109229/channel/collectiondetail?sid=1234748</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-05-06</title><link href="https://neotw.netlify.app/#2023-05-06"></link><link href="https://neotw.netlify.app/static/2023-05-06.html" rel="alternative" type="text/html"></link><id>ac8c3ae3-20fd-c971-eb36-7e3608c51b59</id><updated>2023-05-06T22:55:30</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>拥有能让自己快乐的能力,有一件让自己兴奋一点的事情</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-05-15</title><link href="https://neotw.netlify.app/#2023-05-15"></link><link href="https://neotw.netlify.app/static/2023-05-15.html" rel="alternative" type="text/html"></link><id>5ae2dacd-4932-0fb6-3754-327b31a02c7f</id><updated>2023-05-15T09:19:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>社交的本质是价值交换</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-05-17</title><link href="https://neotw.netlify.app/#2023-05-17"></link><link href="https://neotw.netlify.app/static/2023-05-17.html" rel="alternative" type="text/html"></link><id>5cfc6d08-80d6-3230-a52e-29ee0b651757</id><updated>2023-05-17T10:46:31</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <ul>
@@ -202,7 +202,51 @@ xhr.<span class="hljs-title function_">send</span>();
 </p>
 <p>需要注意的是，以上示例仅演示了如何使用 Ajax、Fetch 和 Axios 发送 GET 请求并处理响应。实际开发中，您可能需要使用其他 HTTP 方法（例如 POST、PUT 或 DELETE）来与服务器进行交互，并针对具体业务需求进行相关设置和处理。
 </p>
-</div></div></content><author><name>oeyoews</name></author></entry><entry><title>antd</title><link href="https://neotw.netlify.app/#antd"></link><link href="https://neotw.netlify.app/static/antd.html" rel="alternative" type="text/html"></link><id>12f83809-7e88-fad5-93fa-cf1260572402</id><updated>2023-05-03T17:10:06</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>Ant Design 是一个基于 Ant Design 设计语言的 UI 库，提供了一套丰富的 React 组件和样式，可以帮助你快速构建美观、可重复使用的用户界面。</p><p>Ant Design 设计语言是由蚂蚁金服推出的一套设计规范，旨在帮助开发者在多种场景下创建一致性的用户体验。Ant Design UI 库则是根据这个设计语言进行开发的，提供了一些常用组件，如按钮、表单、布局、列表和模态框等。这些组件都具有良好的可访问性，并支持响应式设计，适合用于开发 Web 和移动设备应用程序。</p><p>除了基础组件外，Ant Design 还提供了一些高级组件和工具，如数据表格、图标、颜色选择器和国际化支持等。这些组件不仅易于使用，而且支持主题样式和自定义属性，使得开发者可以轻松地创建符合其品牌形象的 UI 组件。</p><p>Ant Design 遵循 MIT 许可证，是一个完全开源的项目，并拥有活跃的社区支持。它已经成为 React 生态系统中最受欢迎的 UI 库之一，并在许多企业和组织中得到广泛的应用。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>array-prototype-last</title><link href="https://neotw.netlify.app/#array-prototype-last"></link><link href="https://neotw.netlify.app/static/array-prototype-last.html" rel="alternative" type="text/html"></link><id>d54a0dac-8ad6-5314-959e-304c6906d33a</id><updated>2023-05-28T00:20:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre class="hljs"><code class="js hljs"><span class="hljs-comment">/**
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>antd</title><link href="https://neotw.netlify.app/#antd"></link><link href="https://neotw.netlify.app/static/antd.html" rel="alternative" type="text/html"></link><id>12f83809-7e88-fad5-93fa-cf1260572402</id><updated>2023-05-03T17:10:06</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>Ant Design 是一个基于 Ant Design 设计语言的 UI 库，提供了一套丰富的 React 组件和样式，可以帮助你快速构建美观、可重复使用的用户界面。</p><p>Ant Design 设计语言是由蚂蚁金服推出的一套设计规范，旨在帮助开发者在多种场景下创建一致性的用户体验。Ant Design UI 库则是根据这个设计语言进行开发的，提供了一些常用组件，如按钮、表单、布局、列表和模态框等。这些组件都具有良好的可访问性，并支持响应式设计，适合用于开发 Web 和移动设备应用程序。</p><p>除了基础组件外，Ant Design 还提供了一些高级组件和工具，如数据表格、图标、颜色选择器和国际化支持等。这些组件不仅易于使用，而且支持主题样式和自定义属性，使得开发者可以轻松地创建符合其品牌形象的 UI 组件。</p><p>Ant Design 遵循 MIT 许可证，是一个完全开源的项目，并拥有活跃的社区支持。它已经成为 React 生态系统中最受欢迎的 UI 库之一，并在许多企业和组织中得到广泛的应用。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>apply-call-bind</title><link href="https://neotw.netlify.app/#apply-call-bind"></link><link href="https://neotw.netlify.app/static/apply-call-bind.html" rel="alternative" type="text/html"></link><id>63ddc4c7-8d1e-91d0-e74f-252572d8490d</id><updated>2023-06-07T12:09:42</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><code>call</code>、<code>apply</code> 和 <code>bind</code> 是 JavaScript 中的三个方法，它们都是用于改变函数的 <code>this</code> 指向。</p><p><code>call</code> 和 <code>apply</code> 的作用一样，它们都可以在指定的作用域中调用函数，并将 <code>this</code> 指向第一个参数。区别在于，<code>call</code> 的参数是逐个传入的，而 <code>apply</code> 的参数是以数组的形式传入的。</p><p><code>bind</code> 的作用是创建一个新的函数，新函数的 <code>this</code> 指向第一个参数，后续的参数作为新函数的参数传入。与 <code>call</code> 和 <code>apply</code> 不同的是，<code>bind</code> 方法不会立即执行函数，而是返回一个新函数，需要手动调用才会执行。</p><p>下面是这三个方法的用法示例：</p><pre class="hljs"><code class="javascript hljs"><span class="hljs-keyword">const</span> obj = {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;Alice&#x27;</span>,
+  <span class="hljs-attr">age</span>: <span class="hljs-number">18</span>,
+};
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">sayHi</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Hi, my name is <span class="hljs-subst">${<span class="hljs-variable language_">this</span>.name}</span>, I&#x27;m <span class="hljs-subst">${<span class="hljs-variable language_">this</span>.age}</span> years old.`</span>);
+}
+
+<span class="hljs-comment">// 使用 call 方法调用函数</span>
+sayHi.<span class="hljs-title function_">call</span>(obj);
+
+<span class="hljs-comment">// 使用 apply 方法调用函数</span>
+sayHi.<span class="hljs-title function_">apply</span>(obj);
+
+<span class="hljs-comment">// 使用 bind 方法创建新函数并调用</span>
+<span class="hljs-keyword">const</span> newSayHi = sayHi.<span class="hljs-title function_">bind</span>(obj);
+<span class="hljs-title function_">newSayHi</span>();</code></pre><p>在实际开发中，这三个方法经常用于改变函数的 <code>this</code> 指向，例如在回调函数中使用，或者在函数式编程中使用柯里化等技术。</p><pre class="hljs"><code class="js hljs"><span class="hljs-keyword">const</span> demo = {
+  <span class="hljs-attr">version</span>: <span class="hljs-number">1</span>,
+  <span class="hljs-attr">log</span>: <span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">version</span>);
+  },
+};
+
+<span class="hljs-keyword">const</span> { log } = demo;
+<span class="hljs-comment">// log.apply(demo, []);</span>
+<span class="hljs-comment">// log.bind(demo, null);</span>
+<span class="hljs-keyword">const</span> bunLog = log.<span class="hljs-title function_">bind</span>(demo);
+<span class="hljs-title function_">bunLog</span>();</code></pre><p>在这个例子中，<code>demo</code> 对象的 <code>log</code> 方法被定义为一个箭头函数。箭头函数的一个重要特点是它们继承了定义时的上下文，而不是在运行时绑定到一个新的上下文。因此，在这个例子中，箭头函数的 <code>this</code> 值将继承自它的父级上下文，即全局上下文。</p><p>在这个例子中，当 <code>log</code> 方法被解构并作为独立函数调用时，它的 <code>this</code> 值将指向全局上下文，因为它的父级上下文是全局上下文。在浏览器环境中，全局上下文通常是 <code>window</code> 对象。由于 <code>window</code> 对象没有名为 <code>version</code> 的属性，因此 <code>console.log(this.version)</code> 表达式将输出 <code>undefined</code>。</p><p>因此，箭头函数的 <code>this</code> 值与普通函数的 <code>this</code> 值有很大的区别。普通函数的 <code>this</code> 值在运行时根据调用方式和上下文动态绑定，而箭头函数的 <code>this</code> 值在定义时就已经确定，无法通过 <code>call()</code>、<code>apply()</code> 或 <code>bind()</code> 等方法进行修改。</p><pre class="hljs"><code class="js hljs"><span class="hljs-keyword">const</span> version = <span class="hljs-number">1</span>;
+<span class="hljs-keyword">const</span> demo = {
+  <span class="hljs-attr">log</span>: <span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">version</span>);
+  },
+};
+
+<span class="hljs-keyword">const</span> { log } = demo;
+<span class="hljs-title function_">log</span>();</code></pre><p>如果想使箭头函数的 <code>this</code> 值指向 <code>demo</code> 对象，可以将 <code>log</code> 方法改为普通函数，或者使用 <code>Function.prototype.bind()</code> 方法将 <code>log</code> 方法绑定到 <code>demo</code> 对象上，如下所示：</p><pre class="hljs"><code class="javascript hljs"><span class="hljs-keyword">const</span> demo = {
+  <span class="hljs-attr">version</span>: <span class="hljs-number">1</span>,
+  <span class="hljs-attr">log</span>: <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">version</span>);
+  },
+};
+
+<span class="hljs-keyword">const</span> { log } = demo;
+log.<span class="hljs-title function_">bind</span>(demo)(); <span class="hljs-comment">// 输出：1</span></code></pre><p>在这个例子中，<code>log</code> 方法被改为普通函数，它的 <code>this</code> 值将根据调用方式和上下文动态绑定。接下来，使用 <code>bind()</code> 方法将 <code>log</code> 方法绑定到 <code>demo</code> 对象上，并立即调用返回的新函数。这样，<code>log</code> 方法就会在 <code>demo</code> 对象的上下文中被调用，从而正确地输出 <code>version</code> 属性。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>array-prototype-last</title><link href="https://neotw.netlify.app/#array-prototype-last"></link><link href="https://neotw.netlify.app/static/array-prototype-last.html" rel="alternative" type="text/html"></link><id>d54a0dac-8ad6-5314-959e-304c6906d33a</id><updated>2023-05-28T00:20:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre class="hljs"><code class="js hljs"><span class="hljs-comment">/**
  * link: https://leetcode.cn/problems/array-prototype-last/
  * Order: 2619
  * Type: Javascript
@@ -325,7 +369,7 @@ React
 JavaScript
 </div>
 <div class="inline p-0 m-0 p-1 capitalize bg-yellow-400 rounded">
-<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#81">81</a></span>
+<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#84">84</a></span>
 </div>
 </div>
 <div>
@@ -465,7 +509,7 @@ Tailwindcss
 <div class="relative">
         <div class="absolute top-0 right-0">
             <div class="inline-block text-slate-400 rounded-full">
-                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#81">81</a></span>
+                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#84">84</a></span>
             </div>
         </div>
     </div>
@@ -523,24 +567,7 @@ Tailwindcss
 			</button>
 </div></p><p><small class="text-rose-500 flex justify-center font-bold">
 以上部分内容来自<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#AIGC">AIGC</a>, 准确性有待验证 
-</small></p></div></content><author><name>oeyoews</name></author></entry><entry><title>cat.svg</title><link href="https://neotw.netlify.app/#cat.svg"></link><link href="https://neotw.netlify.app/static/cat.svg.html" rel="alternative" type="text/html"></link><id>ecb86074-b52b-eb4d-dabc-9d5963d03d03</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><img src="data:image/svg+xml,%3Csvg%20width%3D%22600%22%20height%3D%2275%22%20viewBox%3D%220%200%20600%2075%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20style%3D%22stroke-linecap%3A%20round%3B%20stroke-linejoin%3A%20round%3B%20stroke-miterlimit%3A%201.5%3B%22%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(1%2C0%2C0%2C1%2C92.3579%2C4.11772)%22%20d%3D%22M105.809%2C48.397C105.809%2C44.506%20102.473%2C43.931%20102.473%2C33.503%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%201.5px%3B%22%2F%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(1%2C0%2C0%2C1%2C92.3579%2C4.11772)%22%20d%3D%22M109.397%2C38.324L109.397%2C48.321%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%201.5px%3B%22%2F%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(1%2C0%2C0%2C1%2C92.3579%2C4.11772)%22%20d%3D%22M112.883%2C48.152C112.883%2C44.717%20115.053%2C40.554%20115.053%2C35.084C115.053%2C29.613%20114.393%2C24.795%20114.216%2C21.81%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%201.5px%3B%22%2F%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(1%2C0%2C0%2C1%2C92.3579%2C4.11772)%22%20d%3D%22M112.951%2C22.241C112.951%2C22.241%20116.335%2C21.976%20117.504%2C16.695%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%201.5px%3B%22%2F%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(1%2C0%2C0%2C1%2C92.3579%2C4.11772)%22%20d%3D%22M107.788%2C11.843C107.788%2C11.843%20106.369%2C7.434%20105.169%2C7.434C103.969%2C7.434%20101.87%2C13.187%20101.87%2C21.862C101.87%2C24.103%2090.181%2C29.985%2092.659%2C43.571C93.057%2C45.751%2094.053%2C49.908%2094.053%2C49.924C94.053%2C49.94%2096.571%2C59.453%2091.184%2C59.453C90.063%2C59.453%2089.526%2C58.833%2088.405%2C58.833C87.285%2C58.833%2086.381%2C59.598%2086.381%2C60.591C86.381%2C61.584%2087.491%2C64.025%2091.446%2C64.025C98.593%2C64.025%2098.865%2C58.038%2098.865%2C54.158C98.865%2C50.278%2098.829%2C51.479%2098.829%2C50.844C98.829%2C48.717%20100.601%2C48.284%20101.259%2C48.043%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%201.5px%3B%22%2F%3E%0A%20%20%20%20%3Cellipse%20transform%3D%22matrix(1.00474%2C-0.404483%2C0.370766%2C0.920982%2C85.4108%2C49.8267)%22%20cx%3D%22111.892%22%20cy%3D%2215.766%22%20rx%3D%221.032%22%20ry%3D%221.449%22%20style%3D%22fill%3A%20rgb(47%2C%2044%2C%2062)%3B%22%2F%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(1%2C0%2C0%2C1%2C92.3579%2C4.11772)%22%20d%3D%22M110.074%2C10.347C113.617%2C10.347%20114.448%2C14.635%20117.14%2C14.635%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%201.5px%3B%22%2F%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(1%2C0%2C0%2C1%2C92.3579%2C4.11772)%22%20d%3D%22M112.568%2C9.074C112.568%2C9.074%20111.553%2C6.74%20110.677%2C6.74C109.801%2C6.74%20108.537%2C9.169%20108.537%2C9.169%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%201.5px%3B%22%2F%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(3.96613%2C0%2C0%2C5.89452%2C-177.012%2C-336.835)%22%20d%3D%22M93.717%2C66.428L195.647%2C66.428%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%200.3px%3B%22%2F%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(1.78906%2C0%2C0%2C2.78204%2C-166.7%2C-130.078)%22%20d%3D%22M93.717%2C66.428L195.647%2C66.428%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%200.64px%3B%22%2F%3E%0A%3C%2Fsvg%3E%0A"></img></div></content><author><name>oeyoews</name></author></entry><entry><title>center-btn</title><link href="https://neotw.netlify.app/#center-btn"></link><link href="https://neotw.netlify.app/static/center-btn.html" rel="alternative" type="text/html"></link><id>0caf4987-db28-f695-f931-7b367fcd563c</id><updated>2023-05-25T10:29:01</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>transform: translate(-50%, -50%);</p><p>This CSS property is used to move an element from its original position using percentage values. It moves the element horizontally and vertically by a certain percentage amount, calculated from its own dimensions.</p><p>The "translate" property takes two values: a horizontal value and a vertical value. The first value represents the horizontal distance that the element should be moved, and the second value represents the vertical distance that the element should be moved.</p><p>The values are expressed as percentages relative to the element's own size, with "0%" being the default position. A negative value will move the element in the opposite direction.</p><p>The "translate" property is often used in conjunction with the "position" property to center an element on the page. By setting the element's position to "absolute" or "fixed", and then using "translate(-50%, -50%)" to move it halfway across both the horizontal and vertical axes, the element will be centered precisely in the middle of its parent container.</p></div></content><author><name>oeyoews</name></author></entry><entry><title>cf</title><link href="https://neotw.netlify.app/#cf"></link><link href="https://neotw.netlify.app/static/cf.html" rel="alternative" type="text/html"></link><id>4e29342d-9904-d64e-9e25-fd3b92558e2f</id><updated>2023-04-22T12:17:17</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>但ChatGPT 配备了 CloudFlare 防火墙，不仅会检测用户访问页面时的IP, 还会每隔一段时间就断开用户（包含ChatGPT PLUS用户）的连接，</p></div></content><author><name>oeyoews</name></author></entry><entry><title>change-this</title><link href="https://neotw.netlify.app/#change-this"></link><link href="https://neotw.netlify.app/static/change-this.html" rel="alternative" type="text/html"></link><id>52a93cfe-b0b5-fdf2-20c1-b3a5d38d6bdd</id><updated>2023-05-25T10:28:57</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><code>call</code>、<code>apply</code> 和 <code>bind</code> 是 JavaScript 中的三个方法，它们都是用于改变函数的 <code>this</code> 指向。</p><p><code>call</code> 和 <code>apply</code> 的作用一样，它们都可以在指定的作用域中调用函数，并将 <code>this</code> 指向第一个参数。区别在于，<code>call</code> 的参数是逐个传入的，而 <code>apply</code> 的参数是以数组的形式传入的。</p><p><code>bind</code> 的作用是创建一个新的函数，新函数的 <code>this</code> 指向第一个参数，后续的参数作为新函数的参数传入。与 <code>call</code> 和 <code>apply</code> 不同的是，<code>bind</code> 方法不会立即执行函数，而是返回一个新函数，需要手动调用才会执行。</p><p>下面是这三个方法的用法示例：</p><pre class="hljs"><code class="javascript hljs"><span class="hljs-keyword">const</span> obj = {
-  <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;Alice&#x27;</span>,
-  <span class="hljs-attr">age</span>: <span class="hljs-number">18</span>,
-};
-
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">sayHi</span>(<span class="hljs-params"></span>) {
-  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Hi, my name is <span class="hljs-subst">${<span class="hljs-variable language_">this</span>.name}</span>, I&#x27;m <span class="hljs-subst">${<span class="hljs-variable language_">this</span>.age}</span> years old.`</span>);
-}
-
-<span class="hljs-comment">// 使用 call 方法调用函数</span>
-sayHi.<span class="hljs-title function_">call</span>(obj);
-
-<span class="hljs-comment">// 使用 apply 方法调用函数</span>
-sayHi.<span class="hljs-title function_">apply</span>(obj);
-
-<span class="hljs-comment">// 使用 bind 方法创建新函数并调用</span>
-<span class="hljs-keyword">const</span> newSayHi = sayHi.<span class="hljs-title function_">bind</span>(obj);
-<span class="hljs-title function_">newSayHi</span>();</code></pre><p>在实际开发中，这三个方法经常用于改变函数的 <code>this</code> 指向，例如在回调函数中使用，或者在函数式编程中使用柯里化等技术。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>chatbase-button</title><link href="https://neotw.netlify.app/#chatbase-button"></link><link href="https://neotw.netlify.app/static/chatbase-button.html" rel="alternative" type="text/html"></link><id>f53099af-4fdf-6d95-c507-abc81dd74366</id><updated>2023-04-16T09:51:00</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><safe-script id="neotw-oeyoewl-top-laaqdvwta" src="https://cdn.jsdelivr.net/gh/yasserelsaid/chatbot@latest/index.min.js"></safe-script></p></div></content><author><name>oeyoews</name></author></entry><entry><title>chatbot</title><link href="https://neotw.netlify.app/#chatbot"></link><link href="https://neotw.netlify.app/static/chatbot.html" rel="alternative" type="text/html"></link><id>00f2b1ea-d3a0-990b-8185-17356cb40280</id><updated>2023-04-16T09:38:47</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://www.chatbase.co/create-new-chatbot" rel="noopener noreferrer" target="_blank">https://www.chatbase.co/create-new-chatbot</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>chatgpt-bash</title><link href="https://neotw.netlify.app/#chatgpt-bash"></link><link href="https://neotw.netlify.app/static/chatgpt-bash.html" rel="alternative" type="text/html"></link><id>d42724db-e418-d07e-a052-38b0123c1daf</id><updated>2023-03-19T18:02:58</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre class="hljs"><code class="bash hljs"><span class="hljs-meta">#!/bin/bash</span>
+</small></p></div></content><author><name>oeyoews</name></author></entry><entry><title>cat.svg</title><link href="https://neotw.netlify.app/#cat.svg"></link><link href="https://neotw.netlify.app/static/cat.svg.html" rel="alternative" type="text/html"></link><id>ecb86074-b52b-eb4d-dabc-9d5963d03d03</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><img src="data:image/svg+xml,%3Csvg%20width%3D%22600%22%20height%3D%2275%22%20viewBox%3D%220%200%20600%2075%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20style%3D%22stroke-linecap%3A%20round%3B%20stroke-linejoin%3A%20round%3B%20stroke-miterlimit%3A%201.5%3B%22%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(1%2C0%2C0%2C1%2C92.3579%2C4.11772)%22%20d%3D%22M105.809%2C48.397C105.809%2C44.506%20102.473%2C43.931%20102.473%2C33.503%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%201.5px%3B%22%2F%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(1%2C0%2C0%2C1%2C92.3579%2C4.11772)%22%20d%3D%22M109.397%2C38.324L109.397%2C48.321%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%201.5px%3B%22%2F%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(1%2C0%2C0%2C1%2C92.3579%2C4.11772)%22%20d%3D%22M112.883%2C48.152C112.883%2C44.717%20115.053%2C40.554%20115.053%2C35.084C115.053%2C29.613%20114.393%2C24.795%20114.216%2C21.81%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%201.5px%3B%22%2F%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(1%2C0%2C0%2C1%2C92.3579%2C4.11772)%22%20d%3D%22M112.951%2C22.241C112.951%2C22.241%20116.335%2C21.976%20117.504%2C16.695%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%201.5px%3B%22%2F%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(1%2C0%2C0%2C1%2C92.3579%2C4.11772)%22%20d%3D%22M107.788%2C11.843C107.788%2C11.843%20106.369%2C7.434%20105.169%2C7.434C103.969%2C7.434%20101.87%2C13.187%20101.87%2C21.862C101.87%2C24.103%2090.181%2C29.985%2092.659%2C43.571C93.057%2C45.751%2094.053%2C49.908%2094.053%2C49.924C94.053%2C49.94%2096.571%2C59.453%2091.184%2C59.453C90.063%2C59.453%2089.526%2C58.833%2088.405%2C58.833C87.285%2C58.833%2086.381%2C59.598%2086.381%2C60.591C86.381%2C61.584%2087.491%2C64.025%2091.446%2C64.025C98.593%2C64.025%2098.865%2C58.038%2098.865%2C54.158C98.865%2C50.278%2098.829%2C51.479%2098.829%2C50.844C98.829%2C48.717%20100.601%2C48.284%20101.259%2C48.043%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%201.5px%3B%22%2F%3E%0A%20%20%20%20%3Cellipse%20transform%3D%22matrix(1.00474%2C-0.404483%2C0.370766%2C0.920982%2C85.4108%2C49.8267)%22%20cx%3D%22111.892%22%20cy%3D%2215.766%22%20rx%3D%221.032%22%20ry%3D%221.449%22%20style%3D%22fill%3A%20rgb(47%2C%2044%2C%2062)%3B%22%2F%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(1%2C0%2C0%2C1%2C92.3579%2C4.11772)%22%20d%3D%22M110.074%2C10.347C113.617%2C10.347%20114.448%2C14.635%20117.14%2C14.635%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%201.5px%3B%22%2F%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(1%2C0%2C0%2C1%2C92.3579%2C4.11772)%22%20d%3D%22M112.568%2C9.074C112.568%2C9.074%20111.553%2C6.74%20110.677%2C6.74C109.801%2C6.74%20108.537%2C9.169%20108.537%2C9.169%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%201.5px%3B%22%2F%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(3.96613%2C0%2C0%2C5.89452%2C-177.012%2C-336.835)%22%20d%3D%22M93.717%2C66.428L195.647%2C66.428%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%200.3px%3B%22%2F%3E%0A%20%20%20%20%3Cpath%20transform%3D%22matrix(1.78906%2C0%2C0%2C2.78204%2C-166.7%2C-130.078)%22%20d%3D%22M93.717%2C66.428L195.647%2C66.428%22%20style%3D%22fill%3A%20none%3B%20stroke%3A%20rgb(110%2C%20108%2C%20126)%3B%20stroke-width%3A%200.64px%3B%22%2F%3E%0A%3C%2Fsvg%3E%0A"></img></div></content><author><name>oeyoews</name></author></entry><entry><title>center-btn</title><link href="https://neotw.netlify.app/#center-btn"></link><link href="https://neotw.netlify.app/static/center-btn.html" rel="alternative" type="text/html"></link><id>0caf4987-db28-f695-f931-7b367fcd563c</id><updated>2023-05-25T10:29:01</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>transform: translate(-50%, -50%);</p><p>This CSS property is used to move an element from its original position using percentage values. It moves the element horizontally and vertically by a certain percentage amount, calculated from its own dimensions.</p><p>The "translate" property takes two values: a horizontal value and a vertical value. The first value represents the horizontal distance that the element should be moved, and the second value represents the vertical distance that the element should be moved.</p><p>The values are expressed as percentages relative to the element's own size, with "0%" being the default position. A negative value will move the element in the opposite direction.</p><p>The "translate" property is often used in conjunction with the "position" property to center an element on the page. By setting the element's position to "absolute" or "fixed", and then using "translate(-50%, -50%)" to move it halfway across both the horizontal and vertical axes, the element will be centered precisely in the middle of its parent container.</p></div></content><author><name>oeyoews</name></author></entry><entry><title>cf</title><link href="https://neotw.netlify.app/#cf"></link><link href="https://neotw.netlify.app/static/cf.html" rel="alternative" type="text/html"></link><id>4e29342d-9904-d64e-9e25-fd3b92558e2f</id><updated>2023-04-22T12:17:17</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>但ChatGPT 配备了 CloudFlare 防火墙，不仅会检测用户访问页面时的IP, 还会每隔一段时间就断开用户（包含ChatGPT PLUS用户）的连接，</p></div></content><author><name>oeyoews</name></author></entry><entry><title>chatbase-button</title><link href="https://neotw.netlify.app/#chatbase-button"></link><link href="https://neotw.netlify.app/static/chatbase-button.html" rel="alternative" type="text/html"></link><id>f53099af-4fdf-6d95-c507-abc81dd74366</id><updated>2023-04-16T09:51:00</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><safe-script id="neotw-oeyoewl-top-laaqdvwta" src="https://cdn.jsdelivr.net/gh/yasserelsaid/chatbot@latest/index.min.js"></safe-script></p></div></content><author><name>oeyoews</name></author></entry><entry><title>chatbot</title><link href="https://neotw.netlify.app/#chatbot"></link><link href="https://neotw.netlify.app/static/chatbot.html" rel="alternative" type="text/html"></link><id>00f2b1ea-d3a0-990b-8185-17356cb40280</id><updated>2023-04-16T09:38:47</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://www.chatbase.co/create-new-chatbot" rel="noopener noreferrer" target="_blank">https://www.chatbase.co/create-new-chatbot</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>chatgpt-bash</title><link href="https://neotw.netlify.app/#chatgpt-bash"></link><link href="https://neotw.netlify.app/static/chatgpt-bash.html" rel="alternative" type="text/html"></link><id>d42724db-e418-d07e-a052-38b0123c1daf</id><updated>2023-03-19T18:02:58</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre class="hljs"><code class="bash hljs"><span class="hljs-meta">#!/bin/bash</span>
 
 API_KEY=<span class="hljs-variable">$OPENAI_API_KEY</span>
 <span class="hljs-comment"># Set the endpoint URL</span>
@@ -2574,8 +2601,8 @@ Undefined widget 'tid2pdf'
 </div>
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>GettingStarted</title><link href="https://neotw.netlify.app/#GettingStarted"></link><link href="https://neotw.netlify.app/static/GettingStarted.html" rel="alternative" type="text/html"></link><id>fc927313-83cf-7e0a-53c1-21853f695851</id><updated>2023-06-05T19:42:02</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:bg-white">
 <div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-662-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-48-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-71-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-4 hours ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-665-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-48-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-71-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-49 seconds ago-green?style=social"></img>  
 </div>
 
 
@@ -2633,7 +2660,7 @@ Undefined widget 'tid2pdf'
 <div class="relative">
         <div class="absolute top-0 right-0">
             <div class="inline-block text-slate-400 rounded-full">
-                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#81">81</a></span>
+                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#84">84</a></span>
             </div>
         </div>
     </div>
@@ -3085,7 +3112,32 @@ Undefined widget 'tid2pdf'
 </p>
 <p>此外，如果 <code class="_codified_">constructor</code> 不是一个函数，<code class="_codified_">instanceof</code> 运算符会抛出一个 <code class="_codified_">TypeError</code> 异常。因此，在使用 <code class="_codified_">instanceof</code> 运算符时，需要确保 <code class="_codified_">constructor</code> 是一个函数。
 </p>
-</div></div></content><author><name>oeyoews</name></author></entry><entry><title>instapaper</title><link href="https://neotw.netlify.app/#instapaper"></link><link href="https://neotw.netlify.app/static/instapaper.html" rel="alternative" type="text/html"></link><id>346303fb-5d49-84fb-ad77-c4b78f2cf702</id><updated>2023-03-31T21:18:18</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>pure reader asist rss</p></div></content><author><name>oeyoews</name></author></entry><entry><title>itabb</title><link href="https://neotw.netlify.app/#itabb"></link><link href="https://neotw.netlify.app/static/itabb.html" rel="alternative" type="text/html"></link><id>cfb8fdff-5783-5674-8e0e-6480a163bde4</id><updated>2023-04-23T11:48:28</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>itab</p></div></content><author><name>oeyoews</name></author></entry><entry><title>JavaScript</title><link href="https://neotw.netlify.app/#JavaScript"></link><link href="https://neotw.netlify.app/static/JavaScript.html" rel="alternative" type="text/html"></link><id>686155af-75a6-0a0f-6e9d-80c1f7edd3e9</id><updated>2023-05-01T14:58:27</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></content><author><name>oeyoews</name></author></entry><entry><title>javascript.info</title><link href="https://neotw.netlify.app/#javascript.info"></link><link href="https://neotw.netlify.app/static/javascript.info.html" rel="alternative" type="text/html"></link><id>96f3bffc-e83e-f1c0-4e7d-05f41e7ef9e6</id><updated>2023-04-08T09:41:00</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://javascript.info/" rel="noopener noreferrer" target="_blank">https://javascript.info/</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>Journal</title><link href="https://neotw.netlify.app/#Journal"></link><link href="https://neotw.netlify.app/static/Journal.html" rel="alternative" type="text/html"></link><id>6b2b5614-a23a-bed4-834b-7cb7b91c6887</id><updated>2023-05-01T19:04:05</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></content><author><name>oeyoews</name></author></entry><entry><title>js-books</title><link href="https://neotw.netlify.app/#js-books"></link><link href="https://neotw.netlify.app/static/js-books.html" rel="alternative" type="text/html"></link><id>8705013a-284d-ed3c-68a9-b765513755d4</id><updated>2023-02-13T13:12:44</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://books.goalkicker.com/JavaScriptBook/" rel="noopener noreferrer" target="_blank">https://books.goalkicker.com/JavaScriptBook/</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>js-data-type</title><link href="https://neotw.netlify.app/#js-data-type"></link><link href="https://neotw.netlify.app/static/js-data-type.html" rel="alternative" type="text/html"></link><id>e81e29b1-9f2a-a4bd-b440-d3c4663fc10a</id><updated>2023-05-25T12:59:29</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div><a class="tc-tiddlylink-external" href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Language_overview" rel="noopener noreferrer" target="_blank">https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Language_overview</a></div></blockquote><h2 class="">Data type</h2><ul><li>Number（数字）</li><li>String（字符串）</li><li>Boolean（布尔）</li><li>Symbol（符号）（ES2015 新增）</li><li>Object（对象）<ul><li>Function（函数）</li><li>Array（数组）</li><li>Date（日期）</li><li>RegExp（正则表达式）</li></ul></li><li>null（空）</li><li>undefined（未定义）</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>js-event</title><link href="https://neotw.netlify.app/#js-event"></link><link href="https://neotw.netlify.app/static/js-event.html" rel="alternative" type="text/html"></link><id>652e8b98-742f-cb8a-4125-e47d7d873edb</id><updated>2023-04-20T20:50:29</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>JavaScript中的 "event" 是指代表事件的对象。当用户与网页交互时，比如点击鼠标、按下键盘、滚动页面等等，就会触发一些事件。这些事件都有对应的事件处理函数，可以通过JavaScript来绑定和调用。</p><p>在事件处理函数中，我们可以使用 "event" 对象来获取事件的相关信息，比如事件类型、触发元素、鼠标位置等等。例如：</p><pre class="hljs"><code class="javascript hljs"><span class="hljs-variable language_">document</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) {
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>instapaper</title><link href="https://neotw.netlify.app/#instapaper"></link><link href="https://neotw.netlify.app/static/instapaper.html" rel="alternative" type="text/html"></link><id>346303fb-5d49-84fb-ad77-c4b78f2cf702</id><updated>2023-03-31T21:18:18</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>pure reader asist rss</p></div></content><author><name>oeyoews</name></author></entry><entry><title>itabb</title><link href="https://neotw.netlify.app/#itabb"></link><link href="https://neotw.netlify.app/static/itabb.html" rel="alternative" type="text/html"></link><id>cfb8fdff-5783-5674-8e0e-6480a163bde4</id><updated>2023-04-23T11:48:28</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>itab</p></div></content><author><name>oeyoews</name></author></entry><entry><title>JavaScript</title><link href="https://neotw.netlify.app/#JavaScript"></link><link href="https://neotw.netlify.app/static/JavaScript.html" rel="alternative" type="text/html"></link><id>686155af-75a6-0a0f-6e9d-80c1f7edd3e9</id><updated>2023-05-01T14:58:27</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></content><author><name>oeyoews</name></author></entry><entry><title>javascript.info</title><link href="https://neotw.netlify.app/#javascript.info"></link><link href="https://neotw.netlify.app/static/javascript.info.html" rel="alternative" type="text/html"></link><id>96f3bffc-e83e-f1c0-4e7d-05f41e7ef9e6</id><updated>2023-04-08T09:41:00</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://javascript.info/" rel="noopener noreferrer" target="_blank">https://javascript.info/</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>Journal</title><link href="https://neotw.netlify.app/#Journal"></link><link href="https://neotw.netlify.app/static/Journal.html" rel="alternative" type="text/html"></link><id>6b2b5614-a23a-bed4-834b-7cb7b91c6887</id><updated>2023-05-01T19:04:05</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></content><author><name>oeyoews</name></author></entry><entry><title>js-books</title><link href="https://neotw.netlify.app/#js-books"></link><link href="https://neotw.netlify.app/static/js-books.html" rel="alternative" type="text/html"></link><id>8705013a-284d-ed3c-68a9-b765513755d4</id><updated>2023-02-13T13:12:44</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://books.goalkicker.com/JavaScriptBook/" rel="noopener noreferrer" target="_blank">https://books.goalkicker.com/JavaScriptBook/</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>js-data-type</title><link href="https://neotw.netlify.app/#js-data-type"></link><link href="https://neotw.netlify.app/static/js-data-type.html" rel="alternative" type="text/html"></link><id>e81e29b1-9f2a-a4bd-b440-d3c4663fc10a</id><updated>2023-05-25T12:59:29</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div><a class="tc-tiddlylink-external" href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Language_overview" rel="noopener noreferrer" target="_blank">https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Language_overview</a></div></blockquote><h2 class="">Data type</h2><ul><li>Number（数字）</li><li>String（字符串）</li><li>Boolean（布尔）</li><li>Symbol（符号）（ES2015 新增）</li><li>Object（对象）<ul><li>Function（函数）</li><li>Array（数组）</li><li>Date（日期）</li><li>RegExp（正则表达式）</li></ul></li><li>null（空）</li><li>undefined（未定义）</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>js-error-example01</title><link href="https://neotw.netlify.app/#js-error-example01"></link><link href="https://neotw.netlify.app/static/js-error-example01.html" rel="alternative" type="text/html"></link><id>6c22bc0a-f2ec-1021-5682-705c76f75626</id><updated>2023-06-07T11:38:45</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+<pre class="hljs"><code class="js hljs"><span class="hljs-keyword">const</span> demo = {
+  <span class="hljs-attr">version</span>: <span class="hljs-number">1</span>,
+  <span class="hljs-attr">log</span>: <span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">version</span>);
+  },
+};
+
+<span class="hljs-keyword">const</span> { log } = demo;
+<span class="hljs-title function_">log</span>()
+</code></pre>
+<p>在这个代码片段中，首先定义了一个名为 <code class="_codified_">demo</code> 的对象，它包含一个 <code class="_codified_">version</code> 属性和一个名为 <code class="_codified_">log</code> 的方法。<code class="_codified_">log</code> 方法使用 <code class="_codified_">console.log</code> 函数输出当前对象的 <code class="_codified_">version</code> 属性。
+</p>
+<p>接下来，使用对象解构将 <code class="_codified_">demo</code> 对象中的 <code class="_codified_">log</code> 方法分配给变量 <code class="_codified_">log</code>。然后，调用 <code class="_codified_">log()</code> 方法，但是此时 <code class="_codified_">log</code> 方法已经脱离了原来的对象，因此它的 <code class="_codified_">this</code> 指向已经发生了变化。
+</p>
+<p>在 JavaScript 中，函数的 <code class="_codified_">this</code> 值是在函数被调用时确定的，它的值取决于函数的调用方式和上下文。在这个例子中，当 <code class="_codified_">log()</code> 方法被调用时，它已经被解构到了全局作用域中，因此它的 <code class="_codified_">this</code> 值将指向全局对象（在浏览器中通常是 <code class="_codified_">window</code> 对象）。
+</p>
+<p>由于全局对象没有 <code class="_codified_">version</code> 属性，因此当 <code class="_codified_">log()</code> 方法被调用时，会在控制台中输出 <code class="_codified_">undefined</code>。要正确地输出 <code class="_codified_">version</code> 属性，可以使用 <code class="_codified_">Function.prototype.bind()</code> 方法将 <code class="_codified_">log</code> 方法绑定到原始的 <code class="_codified_">demo</code> 对象上，如下所示：
+</p>
+<pre class="hljs"><code class="javascript hljs"><span class="hljs-keyword">const</span> { log } = demo;
+<span class="hljs-keyword">const</span> boundLog = log.<span class="hljs-title function_">bind</span>(demo);
+<span class="hljs-title function_">boundLog</span>(); <span class="hljs-comment">// 输出：1</span>
+</code></pre>
+<p>这样，<code class="_codified_">log</code> 方法就会在 <code class="_codified_">demo</code> 对象的上下文中被调用，它的 <code class="_codified_">this</code> 值将指向 <code class="_codified_">demo</code> 对象，从而正确地输出 <code class="_codified_">version</code> 属性。
+</p>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>js-event</title><link href="https://neotw.netlify.app/#js-event"></link><link href="https://neotw.netlify.app/static/js-event.html" rel="alternative" type="text/html"></link><id>652e8b98-742f-cb8a-4125-e47d7d873edb</id><updated>2023-04-20T20:50:29</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>JavaScript中的 "event" 是指代表事件的对象。当用户与网页交互时，比如点击鼠标、按下键盘、滚动页面等等，就会触发一些事件。这些事件都有对应的事件处理函数，可以通过JavaScript来绑定和调用。</p><p>在事件处理函数中，我们可以使用 "event" 对象来获取事件的相关信息，比如事件类型、触发元素、鼠标位置等等。例如：</p><pre class="hljs"><code class="javascript hljs"><span class="hljs-variable language_">document</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) {
   <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;You clicked on element:&#x27;</span>, event.<span class="hljs-property">target</span>);
   <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;Mouse position:&#x27;</span>, event.<span class="hljs-property">pageX</span>, event.<span class="hljs-property">pageY</span>);
 });</code></pre><p>上述代码中，我们使用addEventListener方法为文档添加了一个 "click" 事件处理函数。在函数中，我们可以通过 "event" 对象获取到被点击的元素（即 "target" 属性），以及鼠标点击的位置（即 "pageX" 和 "pageY" 属性）。</p><p>需要注意的是，不同的浏览器在 "event" 对象的属性和方法方面可能存在差异，需要进行一定的兼容性处理。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>js-event-delegation</title><link href="https://neotw.netlify.app/#js-event-delegation"></link><link href="https://neotw.netlify.app/static/js-event-delegation.html" rel="alternative" type="text/html"></link><id>fe6b5b9d-5546-4bb5-ebbc-781f6a937b00</id><updated>2023-06-01T20:01:53</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>JavaScript 事件代理（Event Delegation）(事件委托)是一种常用的事件处理技术，它利用事件冒泡机制，在父元素上监听事件，通过判断事件源来触发对应的处理函数，可以避免在每个子元素上单独绑定事件处理函数，提高程序效率和可维护性。</p><p>具体来说，事件代理的实现方式是在父元素上绑定事件处理函数，当子元素触发事件时，事件会沿着 DOM 树向上传递，直到被父元素捕获并触发事件处理函数。在事件处理函数中，可以通过事件对象的 <code>target</code> 属性来获取实际触发事件的子元素，进而根据需要进行相应的操作。</p><p>使用事件代理可以避免在子元素上频繁绑定和解绑事件处理函数，从而提高程序的性能和可维护性。同时，当子元素动态增加或删除时，事件代理也能够自动适应，无需重新绑定事件处理函数。</p><p>下面是一个使用事件代理的示例代码：</p><pre class="hljs"><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;parent&quot;</span>&gt;</span>
@@ -3572,7 +3624,525 @@ const element = (
 );</code></pre><p>备注： 上一个代码段中的括号并非 JSX 的一部分，它对您的应用程序没有任何影响，括号只是用来向您（和您的计算机）表明其中的多行代码属于同一个表达式 (译者注：原文表述实在有点啰嗦)。因此上面的代码等同于：</p><pre class="hljs"><code class="jsx hljs"><span class="hljs-keyword">const</span> header = <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Mozilla Developer Network<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span></span></code></pre><p>这看起来多少有点不适感，因为表达式前面的 <header> 标记没有缩进与其对应的结束标记相同的位置。</header></p></div></content><author><name>oeyoews</name></author></entry><entry><title>jsx-mdx</title><link href="https://neotw.netlify.app/#jsx-mdx"></link><link href="https://neotw.netlify.app/static/jsx-mdx.html" rel="alternative" type="text/html"></link><id>2ad81ee9-db93-80cc-ea8a-20a628a21853</id><updated>2023-05-06T13:13:55</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>是的，JS 和 JSX 文件与 MD 和 MDX 文件类似。MD 是指 Markdown 文件，是一种轻量级标记语言，用于编写纯文本格式的文档和内容。MDX 是指 Markdown + JSX 文件，是一种扩展了 Markdown 的语法，允许您在 Markdown 中嵌入 JSX 代码并创建 React 组件。</p><p>类似地，JS 和 JSX 文件也是两种不同类型的文件，使用不同的文件扩展名（<code>.js</code> 和 <code>.jsx</code>），并具有不同的语法和功能。JS 文件通常用于编写标准的 JavaScript 代码，而 JSX 文件则允许您在 JavaScript 中编写带有 JSX 语法的 React 组件。</p><p>与此类似，MD 和 MDX 文件也具有不同的后缀名（<code>.md</code> 和 <code>.mdx</code>），并且具有不同的语法和功能。MD 文件通常用于编写文档、博客文章或其他纯文本内容，而 MDX 文件则允许您在 Markdown 中嵌入 JSX 代码，并将其转换为 React 组件。</p><p>总之，JS/JSX 和 MD/MDX 文件是在不同上下文中使用的不同文件类型，但它们都具有对应关系，并且充分利用了各自的语法和技术。</p><p>Undefined widget 'tid2png'
-Undefined widget 'tid2pdf'</p><h2 class="">preview</h2><p>Undefined widget 'tid2png'</p></div></content><author><name>oeyoews</name></author></entry><entry><title>jwt</title><link href="https://neotw.netlify.app/#jwt"></link><link href="https://neotw.netlify.app/static/jwt.html" rel="alternative" type="text/html"></link><id>cfd61b8a-7397-fa7c-10b2-ae548f5bfaef</id><updated>2023-04-08T16:35:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>json web token</p></div></content><author><name>oeyoews</name></author></entry><entry><title>keyboards-conflict</title><link href="https://neotw.netlify.app/#keyboards-conflict"></link><link href="https://neotw.netlify.app/static/keyboards-conflict.html" rel="alternative" type="text/html"></link><id>0bf0cd6b-5836-498d-e07d-3af2c18f3399</id><updated>2023-04-23T19:41:05</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>screenity conflict for neotw tiddlywiki shortcuts</p></div></content><author><name>oeyoews</name></author></entry><entry><title>learn-faster-how</title><link href="https://neotw.netlify.app/#learn-faster-how"></link><link href="https://neotw.netlify.app/static/learn-faster-how.html" rel="alternative" type="text/html"></link><id>378d8d4b-f730-293d-c661-d4c053b7b931</id><updated>2023-04-01T20:34:25</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li><a class="tc-tiddlylink-external" href="https://www.joshwcomeau.com/blog/how-to-learn-stuff-quickly/" rel="noopener noreferrer" target="_blank">https://www.joshwcomeau.com/blog/how-to-learn-stuff-quickly/</a></li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>left-bar</title><link href="https://neotw.netlify.app/#left-bar"></link><link href="https://neotw.netlify.app/static/left-bar.html" rel="alternative" type="text/html"></link><id>73e9c3bf-85d0-7b9f-b359-f4469d756a38</id><updated>2023-05-18T12:43:09</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="hidden fixed lg:block left-8 w-36 bg-transparent top-10 rounded-md p-2"><p><div class="tc-sidebar-tab-open prose capitalize"></div></p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>link-icons</title><link href="https://neotw.netlify.app/#link-icons"></link><link href="https://neotw.netlify.app/static/link-icons.html" rel="alternative" type="text/html"></link><id>ecc0a513-2e8a-29c2-4826-c4a874feb0f4</id><updated>2023-04-06T11:05:15</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><svg fill="currentColor" height="1em" stroke="currentColor" stroke-width="0" viewBox="0 0 512 512" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"></path></svg></p><p><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z" fill-rule="evenodd"></path></svg></p><p><svg fill="currentColor" height="1em" stroke="currentColor" stroke-width="0" viewBox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"></path><path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"></path></svg></p><p><svg fill="currentColor" height="1em" stroke="currentColor" stroke-width="0" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M8.465 11.293c1.133-1.133 3.109-1.133 4.242 0l.707.707 1.414-1.414-.707-.707c-.943-.944-2.199-1.465-3.535-1.465s-2.592.521-3.535 1.465L4.929 12a5.008 5.008 0 0 0 0 7.071 4.983 4.983 0 0 0 3.535 1.462A4.982 4.982 0 0 0 12 19.071l.707-.707-1.414-1.414-.707.707a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.122-2.121z"></path><path d="m12 4.929-.707.707 1.414 1.414.707-.707a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.122 2.121c-1.133 1.133-3.109 1.133-4.242 0L10.586 12l-1.414 1.414.707.707c.943.944 2.199 1.465 3.535 1.465s2.592-.521 3.535-1.465L19.071 12a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0z"></path></svg></p></div></content><author><name>oeyoews</name></author></entry><entry><title>LinkItem</title><link href="https://neotw.netlify.app/#LinkItem"></link><link href="https://neotw.netlify.app/static/LinkItem.html" rel="alternative" type="text/html"></link><id>737fe6c9-0484-37b5-0c4c-9ea05db0e476</id><updated>2023-05-29T22:51:44</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><h2 class="">Link Dashboard</h2><ul><li>get tiddler</li></ul><ul><li><button class="bg-transparent text-indigo-500 capitalize m-0 p-0 pr-4" title="neotw">
+Undefined widget 'tid2pdf'</p><h2 class="">preview</h2><p>Undefined widget 'tid2png'</p></div></content><author><name>oeyoews</name></author></entry><entry><title>jwt</title><link href="https://neotw.netlify.app/#jwt"></link><link href="https://neotw.netlify.app/static/jwt.html" rel="alternative" type="text/html"></link><id>cfd61b8a-7397-fa7c-10b2-ae548f5bfaef</id><updated>2023-04-08T16:35:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>json web token</p></div></content><author><name>oeyoews</name></author></entry><entry><title>keyboards-conflict</title><link href="https://neotw.netlify.app/#keyboards-conflict"></link><link href="https://neotw.netlify.app/static/keyboards-conflict.html" rel="alternative" type="text/html"></link><id>0bf0cd6b-5836-498d-e07d-3af2c18f3399</id><updated>2023-04-23T19:41:05</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>screenity conflict for neotw tiddlywiki shortcuts</p></div></content><author><name>oeyoews</name></author></entry><entry><title>learn-faster-how</title><link href="https://neotw.netlify.app/#learn-faster-how"></link><link href="https://neotw.netlify.app/static/learn-faster-how.html" rel="alternative" type="text/html"></link><id>378d8d4b-f730-293d-c661-d4c053b7b931</id><updated>2023-04-01T20:34:25</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li><a class="tc-tiddlylink-external" href="https://www.joshwcomeau.com/blog/how-to-learn-stuff-quickly/" rel="noopener noreferrer" target="_blank">https://www.joshwcomeau.com/blog/how-to-learn-stuff-quickly/</a></li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>learnxinyminutes-javascript</title><link href="https://neotw.netlify.app/#learnxinyminutes-javascript"></link><link href="https://neotw.netlify.app/static/learnxinyminutes-javascript.html" rel="alternative" type="text/html"></link><id>58b8801a-4b46-a92b-789b-d32b14dfcf86</id><updated>2023-06-07T11:21:55</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+Undefined widget 'tid2pdf'
+<p><div class="toc" id="toc">
+        <h3>🌴 Table of Contents</h3>
+    <ul class="toc-level">
+          <li class="capitalize">
+            <a href="##h-1">
+              ⭐️ 1 learnxinyminutes-javascript
+            </a>
+          </li>
+        <ul class="toc-level">
+          <li class="capitalize">
+            <a href="##h-1.1">
+              ⭐️ 1.1 数字、字符串与操作符
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-1.2">
+              ⭐️ 1.2 变量、数组和对象
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-1.3">
+              ⭐️ 1.3 逻辑与控制结构
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-1.4">
+              ⭐️ 1.4 函数、作用域、闭包
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-1.5">
+              ⭐️ 1.5 对象、构造函数与原型
+            </a>
+          </li>
+        </ul></ul></div>
+</p>
+
+    <h1>
+      <a href="##h-1" id="#h-1">
+       ✨ 1
+      </a>
+  learnxinyminutes-javascript</h1>
+<pre class="hljs"><code class="js hljs"><span class="hljs-comment">// 注释方式和C很像，这是单行注释</span>
+<span class="hljs-comment">/* 这是多行
+   注释 */</span>
+
+<span class="hljs-comment">// 语句可以以分号结束</span>
+<span class="hljs-title function_">doStuff</span>();
+
+<span class="hljs-comment">// ... 但是分号也可以省略，每当遇到一个新行时，分号会自动插入（除了一些特殊情况）。</span>
+<span class="hljs-title function_">doStuff</span>()
+
+<span class="hljs-comment">// 因为这些特殊情况会导致意外的结果，所以我们在这里保留分号。</span>
+</code></pre>
+
+    <h2>
+      <a href="##h-1.1" id="#h-1.1">
+       ✨ 1.1
+      </a>
+  数字、字符串与操作符</h2>
+<pre class="hljs"><code class="js hljs"><span class="hljs-comment">///////////////////////////////////</span>
+
+<span class="hljs-comment">// Javascript 只有一种数字类型(即 64位 IEEE 754 双精度浮点 double)。</span>
+<span class="hljs-comment">// double 有 52 位表示尾数，足以精确存储大到 9✕10¹⁵ 的整数。</span>
+<span class="hljs-number">3</span>; <span class="hljs-comment">// = 3</span>
+<span class="hljs-number">1.5</span>; <span class="hljs-comment">// = 1.5</span>
+
+<span class="hljs-comment">// 所有基本的算数运算都如你预期。</span>
+<span class="hljs-number">1</span> + <span class="hljs-number">1</span>; <span class="hljs-comment">// = 2</span>
+<span class="hljs-number">0.1</span> + <span class="hljs-number">0.2</span>; <span class="hljs-comment">// = 0.30000000000000004</span>
+<span class="hljs-number">8</span> - <span class="hljs-number">1</span>; <span class="hljs-comment">// = 7</span>
+<span class="hljs-number">10</span> * <span class="hljs-number">2</span>; <span class="hljs-comment">// = 20</span>
+<span class="hljs-number">35</span> / <span class="hljs-number">5</span>; <span class="hljs-comment">// = 7</span>
+
+<span class="hljs-comment">// 包括无法整除的除法。</span>
+<span class="hljs-number">5</span> / <span class="hljs-number">2</span>; <span class="hljs-comment">// = 2.5</span>
+
+<span class="hljs-comment">// 位运算也和其他语言一样；当你对浮点数进行位运算时，</span>
+<span class="hljs-comment">// 浮点数会转换为*至多* 32 位的无符号整数。</span>
+<span class="hljs-number">1</span> &lt;&lt; <span class="hljs-number">2</span>; <span class="hljs-comment">// = 4</span>
+
+<span class="hljs-comment">// 括号可以决定优先级。</span>
+(<span class="hljs-number">1</span> + <span class="hljs-number">3</span>) * <span class="hljs-number">2</span>; <span class="hljs-comment">// = 8</span>
+
+<span class="hljs-comment">// 有三种非数字的数字类型</span>
+<span class="hljs-title class_">Infinity</span>; <span class="hljs-comment">// 1/0 的结果</span>
+-<span class="hljs-title class_">Infinity</span>; <span class="hljs-comment">// -1/0 的结果</span>
+<span class="hljs-title class_">NaN</span>; <span class="hljs-comment">// 0/0 的结果</span>
+
+<span class="hljs-comment">// 也有布尔值。</span>
+<span class="hljs-literal">true</span>;
+<span class="hljs-literal">false</span>;
+
+<span class="hljs-comment">// 可以通过单引号或双引号来构造字符串。</span>
+<span class="hljs-string">&#x27;abc&#x27;</span>;
+<span class="hljs-string">&quot;Hello, world&quot;</span>;
+
+<span class="hljs-comment">// 用！来取非</span>
+!<span class="hljs-literal">true</span>; <span class="hljs-comment">// = false</span>
+!<span class="hljs-literal">false</span>; <span class="hljs-comment">// = true</span>
+
+<span class="hljs-comment">// 相等 ===</span>
+<span class="hljs-number">1</span> === <span class="hljs-number">1</span>; <span class="hljs-comment">// = true</span>
+<span class="hljs-number">2</span> === <span class="hljs-number">1</span>; <span class="hljs-comment">// = false</span>
+
+<span class="hljs-comment">// 不等 !=</span>
+<span class="hljs-number">1</span> !== <span class="hljs-number">1</span>; <span class="hljs-comment">// = false</span>
+<span class="hljs-number">2</span> !== <span class="hljs-number">1</span>; <span class="hljs-comment">// = true</span>
+
+<span class="hljs-comment">// 更多的比较操作符 </span>
+<span class="hljs-number">1</span> &lt; <span class="hljs-number">10</span>; <span class="hljs-comment">// = true</span>
+<span class="hljs-number">1</span> &gt; <span class="hljs-number">10</span>; <span class="hljs-comment">// = false</span>
+<span class="hljs-number">2</span> &lt;= <span class="hljs-number">2</span>; <span class="hljs-comment">// = true</span>
+<span class="hljs-number">2</span> &gt;= <span class="hljs-number">2</span>; <span class="hljs-comment">// = true</span>
+
+<span class="hljs-comment">// 字符串用+连接</span>
+<span class="hljs-string">&quot;Hello &quot;</span> + <span class="hljs-string">&quot;world!&quot;</span>; <span class="hljs-comment">// = &quot;Hello world!&quot;</span>
+
+<span class="hljs-comment">// 字符串也可以用 &lt; 、&gt; 来比较</span>
+<span class="hljs-string">&quot;a&quot;</span> &lt; <span class="hljs-string">&quot;b&quot;</span>; <span class="hljs-comment">// = true</span>
+
+<span class="hljs-comment">// 使用“==”比较时会进行类型转换...</span>
+<span class="hljs-string">&quot;5&quot;</span> == <span class="hljs-number">5</span>; <span class="hljs-comment">// = true</span>
+<span class="hljs-literal">null</span> == <span class="hljs-literal">undefined</span>; <span class="hljs-comment">// = true</span>
+
+<span class="hljs-comment">// ...除非你是用 ===</span>
+<span class="hljs-string">&quot;5&quot;</span> === <span class="hljs-number">5</span>; <span class="hljs-comment">// = false</span>
+<span class="hljs-literal">null</span> === <span class="hljs-literal">undefined</span>; <span class="hljs-comment">// = false </span>
+
+<span class="hljs-comment">// ...但会导致奇怪的行为</span>
+<span class="hljs-number">13</span> + !<span class="hljs-number">0</span>; <span class="hljs-comment">// 14</span>
+<span class="hljs-string">&quot;13&quot;</span> + !<span class="hljs-number">0</span>; <span class="hljs-comment">// &#x27;13true&#x27;</span>
+
+<span class="hljs-comment">// 你可以用`charAt`来得到字符串中的字符</span>
+<span class="hljs-string">&quot;This is a string&quot;</span>.<span class="hljs-title function_">charAt</span>(<span class="hljs-number">0</span>);  <span class="hljs-comment">// = &#x27;T&#x27;</span>
+
+<span class="hljs-comment">// ...或使用 `substring` 来获取更大的部分。</span>
+<span class="hljs-string">&quot;Hello world&quot;</span>.<span class="hljs-title function_">substring</span>(<span class="hljs-number">0</span>, <span class="hljs-number">5</span>); <span class="hljs-comment">// = &quot;Hello&quot;</span>
+
+<span class="hljs-comment">// `length` 是一个属性，所以不要使用 ().</span>
+<span class="hljs-string">&quot;Hello&quot;</span>.<span class="hljs-property">length</span>; <span class="hljs-comment">// = 5</span>
+
+<span class="hljs-comment">// 还有两个特殊的值：`null`和`undefined`</span>
+<span class="hljs-literal">null</span>;      <span class="hljs-comment">// 用来表示刻意设置的空值</span>
+<span class="hljs-literal">undefined</span>; <span class="hljs-comment">// 用来表示还没有设置的值(尽管`undefined`自身实际是一个值)</span>
+
+<span class="hljs-comment">// false, null, undefined, NaN, 0 和 &quot;&quot; 都是假的；其他的都视作逻辑真</span>
+<span class="hljs-comment">// 注意 0 是逻辑假而  &quot;0&quot;是逻辑真，尽管 0 == &quot;0&quot;。</span>
+</code></pre>
+
+    <h2>
+      <a href="##h-1.2" id="#h-1.2">
+       ✨ 1.2
+      </a>
+  变量、数组和对象</h2>
+<pre class="hljs"><code class="js hljs"><span class="hljs-comment">///////////////////////////////////</span>
+
+<span class="hljs-comment">// 变量需要用`var`关键字声明。Javascript是动态类型语言，</span>
+<span class="hljs-comment">// 所以你无需指定类型。 赋值需要用 `=` </span>
+<span class="hljs-keyword">var</span> someVar = <span class="hljs-number">5</span>;
+
+<span class="hljs-comment">// 如果你在声明时没有加var关键字，你也不会得到错误...</span>
+someOtherVar = <span class="hljs-number">10</span>;
+
+<span class="hljs-comment">// ...但是此时这个变量就会在全局作用域被创建，而非你定义的当前作用域</span>
+
+<span class="hljs-comment">// 没有被赋值的变量都会被设置为undefined</span>
+<span class="hljs-keyword">var</span> someThirdVar; <span class="hljs-comment">// = undefined</span>
+
+<span class="hljs-comment">// 对变量进行数学运算有一些简写法：</span>
+someVar += <span class="hljs-number">5</span>; <span class="hljs-comment">// 等价于 someVar = someVar + 5; someVar 现在是 10 </span>
+someVar *= <span class="hljs-number">10</span>; <span class="hljs-comment">// 现在 someVar 是 100</span>
+
+<span class="hljs-comment">// 自增和自减也有简写</span>
+someVar++; <span class="hljs-comment">// someVar 是 101</span>
+someVar--; <span class="hljs-comment">// 回到 100</span>
+
+<span class="hljs-comment">// 数组是任意类型组成的有序列表</span>
+<span class="hljs-keyword">var</span> myArray = [<span class="hljs-string">&quot;Hello&quot;</span>, <span class="hljs-number">45</span>, <span class="hljs-literal">true</span>];
+
+<span class="hljs-comment">// 数组的元素可以用方括号下标来访问。</span>
+<span class="hljs-comment">// 数组的索引从0开始。</span>
+myArray[<span class="hljs-number">1</span>]; <span class="hljs-comment">// = 45</span>
+
+<span class="hljs-comment">// 数组是可变的，并拥有变量 length。</span>
+myArray.<span class="hljs-title function_">push</span>(<span class="hljs-string">&quot;World&quot;</span>);
+myArray.<span class="hljs-property">length</span>; <span class="hljs-comment">// = 4</span>
+
+<span class="hljs-comment">// 在指定下标添加/修改</span>
+myArray[<span class="hljs-number">3</span>] = <span class="hljs-string">&quot;Hello&quot;</span>;
+
+<span class="hljs-comment">// javascript中的对象相当于其他语言中的“字典”或“映射”：是键-值对的无序集合。</span>
+<span class="hljs-keyword">var</span> myObj = {<span class="hljs-attr">key1</span>: <span class="hljs-string">&quot;Hello&quot;</span>, <span class="hljs-attr">key2</span>: <span class="hljs-string">&quot;World&quot;</span>};
+
+<span class="hljs-comment">// 键是字符串，但如果键本身是合法的js标识符，则引号并非是必须的。</span>
+<span class="hljs-comment">// 值可以是任意类型。</span>
+<span class="hljs-keyword">var</span> myObj = {<span class="hljs-attr">myKey</span>: <span class="hljs-string">&quot;myValue&quot;</span>, <span class="hljs-string">&quot;my other key&quot;</span>: <span class="hljs-number">4</span>};
+
+<span class="hljs-comment">// 对象属性的访问可以通过下标</span>
+myObj[<span class="hljs-string">&quot;my other key&quot;</span>]; <span class="hljs-comment">// = 4</span>
+
+<span class="hljs-comment">// ... 或者也可以用 . ，如果属性是合法的标识符</span>
+myObj.<span class="hljs-property">myKey</span>; <span class="hljs-comment">// = &quot;myValue&quot;</span>
+
+<span class="hljs-comment">// 对象是可变的；值也可以被更改或增加新的键</span>
+myObj.<span class="hljs-property">myThirdKey</span> = <span class="hljs-literal">true</span>;
+
+<span class="hljs-comment">// 如果你想要获取一个还没有被定义的值，那么会返回undefined</span>
+myObj.<span class="hljs-property">myFourthKey</span>; <span class="hljs-comment">// = undefined</span>
+</code></pre>
+
+    <h2>
+      <a href="##h-1.3" id="#h-1.3">
+       ✨ 1.3
+      </a>
+  逻辑与控制结构</h2>
+<pre class="hljs"><code class="js hljs"><span class="hljs-comment">///////////////////////////////////</span>
+
+<span class="hljs-comment">// 本节介绍的语法与Java的语法几乎完全相同</span>
+
+<span class="hljs-comment">// `if`语句和其他语言中一样。</span>
+<span class="hljs-keyword">var</span> count = <span class="hljs-number">1</span>;
+<span class="hljs-keyword">if</span> (count == <span class="hljs-number">3</span>){
+    <span class="hljs-comment">// count 是 3 时执行</span>
+} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (count == <span class="hljs-number">4</span>){
+    <span class="hljs-comment">// count 是 4 时执行</span>
+} <span class="hljs-keyword">else</span> {
+    <span class="hljs-comment">// 其他情况下执行 </span>
+}
+
+<span class="hljs-comment">// while循环</span>
+<span class="hljs-keyword">while</span> (<span class="hljs-literal">true</span>) {
+    <span class="hljs-comment">// 无限循环</span>
+}
+
+<span class="hljs-comment">// Do-while 和 While 循环很像 ，但前者会至少执行一次</span>
+<span class="hljs-keyword">var</span> input;
+<span class="hljs-keyword">do</span> {
+    input = <span class="hljs-title function_">getInput</span>();
+} <span class="hljs-keyword">while</span> (!<span class="hljs-title function_">isValid</span>(input))
+
+<span class="hljs-comment">// `for`循环和C、Java中的一样：</span>
+<span class="hljs-comment">// 初始化; 继续执行的条件; 迭代。</span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">5</span>; i++){
+    <span class="hljs-comment">// 遍历5次</span>
+}
+
+<span class="hljs-comment">// &amp;&amp; 是逻辑与, || 是逻辑或</span>
+<span class="hljs-keyword">if</span> (house.<span class="hljs-property">size</span> == <span class="hljs-string">&quot;big&quot;</span> &amp;&amp; house.<span class="hljs-property">colour</span> == <span class="hljs-string">&quot;blue&quot;</span>){
+    house.<span class="hljs-property">contains</span> = <span class="hljs-string">&quot;bear&quot;</span>;
+}
+<span class="hljs-keyword">if</span> (colour == <span class="hljs-string">&quot;red&quot;</span> || colour == <span class="hljs-string">&quot;blue&quot;</span>){
+    <span class="hljs-comment">// colour是red或者blue时执行</span>
+}
+
+<span class="hljs-comment">// &amp;&amp; 和 || 是“短路”语句，它在设定初始化值时特别有用 </span>
+<span class="hljs-keyword">var</span> name = otherName || <span class="hljs-string">&quot;default&quot;</span>;
+
+<span class="hljs-comment">// `switch`语句使用`===`检查相等性。</span>
+<span class="hljs-comment">// 在每一个case结束时使用 &#x27;break&#x27;</span>
+<span class="hljs-comment">// 否则其后的case语句也将被执行。 </span>
+grade = <span class="hljs-string">&#x27;B&#x27;</span>;
+<span class="hljs-keyword">switch</span> (grade) {
+  <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;A&#x27;</span>:
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&quot;Great job&quot;</span>);
+    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;B&#x27;</span>:
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&quot;OK job&quot;</span>);
+    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;C&#x27;</span>:
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&quot;You can do better&quot;</span>);
+    <span class="hljs-keyword">break</span>;
+  <span class="hljs-attr">default</span>:
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&quot;Oy vey&quot;</span>);
+    <span class="hljs-keyword">break</span>;
+}
+</code></pre>
+
+    <h2>
+      <a href="##h-1.4" id="#h-1.4">
+       ✨ 1.4
+      </a>
+  函数、作用域、闭包</h2>
+<pre class="hljs"><code class="js hljs"><span class="hljs-comment">///////////////////////////////////</span>
+
+<span class="hljs-comment">// JavaScript 函数由`function`关键字定义</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">myFunction</span>(<span class="hljs-params">thing</span>){
+    <span class="hljs-keyword">return</span> thing.<span class="hljs-title function_">toUpperCase</span>();
+}
+<span class="hljs-title function_">myFunction</span>(<span class="hljs-string">&quot;foo&quot;</span>); <span class="hljs-comment">// = &quot;FOO&quot;</span>
+
+<span class="hljs-comment">// 注意被返回的值必须开始于`return`关键字的那一行，</span>
+<span class="hljs-comment">// 否则由于自动的分号补齐，你将返回`undefined`。</span>
+<span class="hljs-comment">// 在使用Allman风格的时候要注意.</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">myFunction</span>(<span class="hljs-params"></span>)
+{
+    <span class="hljs-keyword">return</span> <span class="hljs-comment">// &lt;- 分号自动插在这里</span>
+    {
+        <span class="hljs-attr">thisIsAn</span>: <span class="hljs-string">&#x27;object literal&#x27;</span>
+    }
+}
+<span class="hljs-title function_">myFunction</span>(); <span class="hljs-comment">// = undefined</span>
+
+<span class="hljs-comment">// javascript中函数是一等对象，所以函数也能够赋给一个变量，</span>
+<span class="hljs-comment">// 并且被作为参数传递 —— 比如一个事件处理函数：</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">myFunction</span>(<span class="hljs-params"></span>){
+    <span class="hljs-comment">// 这段代码将在5秒钟后被调用</span>
+}
+<span class="hljs-built_in">setTimeout</span>(myFunction, <span class="hljs-number">5000</span>);
+<span class="hljs-comment">// 注意：setTimeout不是js语言的一部分，而是由浏览器和Node.js提供的。</span>
+
+<span class="hljs-comment">// 函数对象甚至不需要声明名称 —— 你可以直接把一个函数定义写到另一个函数的参数中</span>
+<span class="hljs-built_in">setTimeout</span>(<span class="hljs-keyword">function</span>(<span class="hljs-params"></span>){
+    <span class="hljs-comment">// 这段代码将在5秒钟后被调用</span>
+}, <span class="hljs-number">5000</span>);
+
+<span class="hljs-comment">// JavaScript 有函数作用域；函数有其自己的作用域而其他的代码块则没有。</span>
+<span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>){
+    <span class="hljs-keyword">var</span> i = <span class="hljs-number">5</span>;
+}
+i; <span class="hljs-comment">// = 5 - 并非我们在其他语言中所期望得到的undefined</span>
+
+<span class="hljs-comment">// 这就导致了人们经常使用的“立即执行匿名函数”的模式，</span>
+<span class="hljs-comment">// 这样可以避免一些临时变量扩散到全局作用域去。</span>
+(<span class="hljs-keyword">function</span>(<span class="hljs-params"></span>){
+    <span class="hljs-keyword">var</span> temporary = <span class="hljs-number">5</span>;
+    <span class="hljs-comment">// 我们可以访问修改全局对象（&quot;global object&quot;）来访问全局作用域，</span>
+    <span class="hljs-comment">// 在web浏览器中是`window`这个对象。 </span>
+    <span class="hljs-comment">// 在其他环境如Node.js中这个对象的名字可能会不同。</span>
+    <span class="hljs-variable language_">window</span>.<span class="hljs-property">permanent</span> = <span class="hljs-number">10</span>;
+})();
+temporary; <span class="hljs-comment">// 抛出引用异常ReferenceError</span>
+permanent; <span class="hljs-comment">// = 10</span>
+
+<span class="hljs-comment">// javascript最强大的功能之一就是闭包。</span>
+<span class="hljs-comment">// 如果一个函数在另一个函数中定义，那么这个内部函数就拥有外部函数的所有变量的访问权，</span>
+<span class="hljs-comment">// 即使在外部函数结束之后。</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">sayHelloInFiveSeconds</span>(<span class="hljs-params">name</span>){
+    <span class="hljs-keyword">var</span> prompt = <span class="hljs-string">&quot;Hello, &quot;</span> + name + <span class="hljs-string">&quot;!&quot;</span>;
+    <span class="hljs-comment">// 内部函数默认是放在局部作用域的，</span>
+    <span class="hljs-comment">// 就像是用`var`声明的。</span>
+    <span class="hljs-keyword">function</span> <span class="hljs-title function_">inner</span>(<span class="hljs-params"></span>){
+        <span class="hljs-title function_">alert</span>(prompt);
+    }
+    <span class="hljs-built_in">setTimeout</span>(inner, <span class="hljs-number">5000</span>);
+    <span class="hljs-comment">// setTimeout是异步的，所以 sayHelloInFiveSeconds 函数会立即退出，</span>
+    <span class="hljs-comment">// 而 setTimeout 会在后面调用inner</span>
+    <span class="hljs-comment">// 然而，由于inner是由sayHelloInFiveSeconds“闭合包含”的，</span>
+    <span class="hljs-comment">// 所以inner在其最终被调用时仍然能够访问`prompt`变量。</span>
+}
+<span class="hljs-title function_">sayHelloInFiveSeconds</span>(<span class="hljs-string">&quot;Adam&quot;</span>); <span class="hljs-comment">// 会在5秒后弹出 &quot;Hello, Adam!&quot;</span>
+</code></pre>
+
+    <h2>
+      <a href="##h-1.5" id="#h-1.5">
+       ✨ 1.5
+      </a>
+  对象、构造函数与原型</h2>
+<pre class="hljs"><code class="js hljs"><span class="hljs-comment">///////////////////////////////////</span>
+
+<span class="hljs-comment">//  对象可以包含方法。</span>
+<span class="hljs-keyword">var</span> myObj = {
+    <span class="hljs-attr">myFunc</span>: <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>){
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Hello world!&quot;</span>;
+    }
+};
+myObj.<span class="hljs-title function_">myFunc</span>(); <span class="hljs-comment">// = &quot;Hello world!&quot;</span>
+
+<span class="hljs-comment">// 当对象中的函数被调用时，这个函数可以通过`this`关键字访问其依附的这个对象。</span>
+myObj = {
+    <span class="hljs-attr">myString</span>: <span class="hljs-string">&quot;Hello world!&quot;</span>,
+    <span class="hljs-attr">myFunc</span>: <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>){
+        <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">myString</span>;
+    }
+};
+myObj.<span class="hljs-title function_">myFunc</span>(); <span class="hljs-comment">// = &quot;Hello world!&quot;</span>
+
+<span class="hljs-comment">// 但这个函数访问的其实是其运行时环境，而非定义时环境，即取决于函数是如何调用的。</span>
+<span class="hljs-comment">// 所以如果函数被调用时不在这个对象的上下文中，就不会运行成功了。</span>
+<span class="hljs-keyword">var</span> myFunc = myObj.<span class="hljs-property">myFunc</span>;
+<span class="hljs-title function_">myFunc</span>(); <span class="hljs-comment">// = undefined</span>
+
+<span class="hljs-comment">// 相应的，一个函数也可以被指定为一个对象的方法，并且可以通过`this`访问</span>
+<span class="hljs-comment">// 这个对象的成员，即使在函数被定义时并没有依附在对象上。</span>
+<span class="hljs-keyword">var</span> myOtherFunc = <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>){
+    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">myString</span>.<span class="hljs-title function_">toUpperCase</span>();
+}
+myObj.<span class="hljs-property">myOtherFunc</span> = myOtherFunc;
+myObj.<span class="hljs-title function_">myOtherFunc</span>(); <span class="hljs-comment">// = &quot;HELLO WORLD!&quot;</span>
+
+<span class="hljs-comment">// 当我们通过`call`或者`apply`调用函数的时候，也可以为其指定一个执行上下文。</span>
+<span class="hljs-keyword">var</span> anotherFunc = <span class="hljs-keyword">function</span>(<span class="hljs-params">s</span>){
+    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">myString</span> + s;
+}
+anotherFunc.<span class="hljs-title function_">call</span>(myObj, <span class="hljs-string">&quot; And Hello Moon!&quot;</span>); <span class="hljs-comment">// = &quot;Hello World! And Hello Moon!&quot;</span>
+
+<span class="hljs-comment">// `apply`函数几乎完全一样，只是要求一个array来传递参数列表。</span>
+anotherFunc.<span class="hljs-title function_">apply</span>(myObj, [<span class="hljs-string">&quot; And Hello Sun!&quot;</span>]); <span class="hljs-comment">// = &quot;Hello World! And Hello Sun!&quot;</span>
+
+<span class="hljs-comment">// 当一个函数接受一系列参数，而你想传入一个array时特别有用。</span>
+<span class="hljs-title class_">Math</span>.<span class="hljs-title function_">min</span>(<span class="hljs-number">42</span>, <span class="hljs-number">6</span>, <span class="hljs-number">27</span>); <span class="hljs-comment">// = 6</span>
+<span class="hljs-title class_">Math</span>.<span class="hljs-title function_">min</span>([<span class="hljs-number">42</span>, <span class="hljs-number">6</span>, <span class="hljs-number">27</span>]); <span class="hljs-comment">// = NaN (uh-oh!)</span>
+<span class="hljs-title class_">Math</span>.<span class="hljs-property">min</span>.<span class="hljs-title function_">apply</span>(<span class="hljs-title class_">Math</span>, [<span class="hljs-number">42</span>, <span class="hljs-number">6</span>, <span class="hljs-number">27</span>]); <span class="hljs-comment">// = 6</span>
+
+<span class="hljs-comment">// 但是`call`和`apply`只是临时的。如果我们希望函数附着在对象上，可以使用`bind`。</span>
+<span class="hljs-keyword">var</span> boundFunc = anotherFunc.<span class="hljs-title function_">bind</span>(myObj);
+<span class="hljs-title function_">boundFunc</span>(<span class="hljs-string">&quot; And Hello Saturn!&quot;</span>); <span class="hljs-comment">// = &quot;Hello World! And Hello Saturn!&quot;</span>
+
+<span class="hljs-comment">// `bind` 也可以用来部分应用一个函数（柯里化）。</span>
+<span class="hljs-keyword">var</span> product = <span class="hljs-keyword">function</span>(<span class="hljs-params">a, b</span>){ <span class="hljs-keyword">return</span> a * b; }
+<span class="hljs-keyword">var</span> doubler = product.<span class="hljs-title function_">bind</span>(<span class="hljs-variable language_">this</span>, <span class="hljs-number">2</span>);
+<span class="hljs-title function_">doubler</span>(<span class="hljs-number">8</span>); <span class="hljs-comment">// = 16</span>
+
+<span class="hljs-comment">// 当你通过`new`关键字调用一个函数时，就会创建一个对象，</span>
+<span class="hljs-comment">// 而且可以通过this关键字访问该函数。</span>
+<span class="hljs-comment">// 设计为这样调用的函数就叫做构造函数。</span>
+<span class="hljs-keyword">var</span> <span class="hljs-title class_">MyConstructor</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>){
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">myNumber</span> = <span class="hljs-number">5</span>;
+}
+myNewObj = <span class="hljs-keyword">new</span> <span class="hljs-title class_">MyConstructor</span>(); <span class="hljs-comment">// = {myNumber: 5}</span>
+myNewObj.<span class="hljs-property">myNumber</span>; <span class="hljs-comment">// = 5</span>
+
+<span class="hljs-comment">// 每一个js对象都有一个‘原型’。当你要访问一个实际对象中没有定义的一个属性时，</span>
+<span class="hljs-comment">// 解释器就回去找这个对象的原型。</span>
+
+<span class="hljs-comment">// 一些JS实现会让你通过`__proto__`属性访问一个对象的原型。</span>
+<span class="hljs-comment">// 这虽然对理解原型很有用，但是它并不是标准的一部分；</span>
+<span class="hljs-comment">// 我们后面会介绍使用原型的标准方式。</span>
+<span class="hljs-keyword">var</span> myObj = {
+    <span class="hljs-attr">myString</span>: <span class="hljs-string">&quot;Hello world!&quot;</span>
+};
+<span class="hljs-keyword">var</span> myPrototype = {
+    <span class="hljs-attr">meaningOfLife</span>: <span class="hljs-number">42</span>,
+    <span class="hljs-attr">myFunc</span>: <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>){
+        <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">myString</span>.<span class="hljs-title function_">toLowerCase</span>()
+    }
+};
+
+myObj.<span class="hljs-property">__proto__</span> = myPrototype;
+myObj.<span class="hljs-property">meaningOfLife</span>; <span class="hljs-comment">// = 42</span>
+
+<span class="hljs-comment">// 函数也可以工作。</span>
+myObj.<span class="hljs-title function_">myFunc</span>() <span class="hljs-comment">// = &quot;hello world!&quot;</span>
+
+<span class="hljs-comment">// 当然，如果你要访问的成员在原型当中也没有定义的话，解释器就会去找原型的原型，以此类推。</span>
+myPrototype.<span class="hljs-property">__proto__</span> = {
+    <span class="hljs-attr">myBoolean</span>: <span class="hljs-literal">true</span>
+};
+myObj.<span class="hljs-property">myBoolean</span>; <span class="hljs-comment">// = true</span>
+
+<span class="hljs-comment">// 这其中并没有对象的拷贝；每个对象实际上是持有原型对象的引用。</span>
+<span class="hljs-comment">// 这意味着当我们改变对象的原型时，会影响到其他以这个原型为原型的对象。</span>
+myPrototype.<span class="hljs-property">meaningOfLife</span> = <span class="hljs-number">43</span>;
+myObj.<span class="hljs-property">meaningOfLife</span>; <span class="hljs-comment">// = 43</span>
+
+<span class="hljs-comment">// 我们知道 `__proto__` 并非标准规定，实际上也没有标准办法来修改一个已存在对象的原型。</span>
+<span class="hljs-comment">// 然而，我们有两种方式为指定原型创建一个新的对象。</span>
+
+<span class="hljs-comment">// 第一种方式是 Object.create，这个方法是在最近才被添加到Js中的，</span>
+<span class="hljs-comment">// 因此并不是所有的JS实现都有这个方法</span>
+<span class="hljs-keyword">var</span> myObj = <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">create</span>(myPrototype);
+myObj.<span class="hljs-property">meaningOfLife</span>; <span class="hljs-comment">// = 43</span>
+
+<span class="hljs-comment">// 第二种方式可以在任意版本中使用，不过必须通过构造函数。</span>
+<span class="hljs-comment">// 构造函数有一个属性prototype。但是它 *不是* 构造函数本身的原型；相反，</span>
+<span class="hljs-comment">// 是通过构造函数和new关键字创建的新对象的原型。</span>
+<span class="hljs-title class_">MyConstructor</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span> = {
+    <span class="hljs-attr">myNumber</span>: <span class="hljs-number">5</span>,
+    <span class="hljs-attr">getMyNumber</span>: <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>){
+        <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">myNumber</span>;
+    }
+};
+<span class="hljs-keyword">var</span> myNewObj2 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">MyConstructor</span>();
+myNewObj2.<span class="hljs-title function_">getMyNumber</span>(); <span class="hljs-comment">// = 5</span>
+myNewObj2.<span class="hljs-property">myNumber</span> = <span class="hljs-number">6</span>
+myNewObj2.<span class="hljs-title function_">getMyNumber</span>(); <span class="hljs-comment">// = 6</span>
+
+<span class="hljs-comment">// 字符串和数字等内置类型也有通过构造函数来创建的包装类型</span>
+<span class="hljs-keyword">var</span> myNumber = <span class="hljs-number">12</span>;
+<span class="hljs-keyword">var</span> myNumberObj = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Number</span>(<span class="hljs-number">12</span>);
+myNumber == myNumberObj; <span class="hljs-comment">// = true</span>
+
+<span class="hljs-comment">// 但是它们并非严格等价</span>
+<span class="hljs-keyword">typeof</span> myNumber; <span class="hljs-comment">// = &#x27;number&#x27;</span>
+<span class="hljs-keyword">typeof</span> myNumberObj; <span class="hljs-comment">// = &#x27;object&#x27;</span>
+myNumber === myNumberObj; <span class="hljs-comment">// = false</span>
+<span class="hljs-keyword">if</span> (<span class="hljs-number">0</span>){
+    <span class="hljs-comment">// 这段代码不会执行，因为0代表假</span>
+}
+
+<span class="hljs-comment">// 不过，包装类型和内置类型共享一个原型，</span>
+<span class="hljs-comment">// 所以你实际可以给内置类型也增加一些功能，例如对string：</span>
+<span class="hljs-title class_">String</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>.<span class="hljs-property">firstCharacter</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>){
+    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">charAt</span>(<span class="hljs-number">0</span>);
+}
+<span class="hljs-string">&quot;abc&quot;</span>.<span class="hljs-title function_">firstCharacter</span>(); <span class="hljs-comment">// = &quot;a&quot;</span>
+
+<span class="hljs-comment">// 这个技巧经常用在“代码填充”中，来为老版本的javascript子集增加新版本js的特性，</span>
+<span class="hljs-comment">// 这样就可以在老的浏览器中使用新功能了。</span>
+
+<span class="hljs-comment">// 比如，我们知道Object.create并没有在所有的版本中都实现，</span>
+<span class="hljs-comment">// 但是我们仍然可以通过“代码填充”来实现兼容：</span>
+<span class="hljs-keyword">if</span> (<span class="hljs-title class_">Object</span>.<span class="hljs-property">create</span> === <span class="hljs-literal">undefined</span>){ <span class="hljs-comment">// 如果存在则不覆盖</span>
+    <span class="hljs-title class_">Object</span>.<span class="hljs-property">create</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params">proto</span>){
+        <span class="hljs-comment">// 用正确的原型来创建一个临时构造函数</span>
+        <span class="hljs-keyword">var</span> <span class="hljs-title class_">Constructor</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>){};
+        <span class="hljs-title class_">Constructor</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span> = proto;
+        <span class="hljs-comment">// 之后用它来创建一个新的对象</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Constructor</span>();
+    }
+}
+</code></pre>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>left-bar</title><link href="https://neotw.netlify.app/#left-bar"></link><link href="https://neotw.netlify.app/static/left-bar.html" rel="alternative" type="text/html"></link><id>73e9c3bf-85d0-7b9f-b359-f4469d756a38</id><updated>2023-05-18T12:43:09</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="hidden fixed lg:block left-8 w-36 bg-transparent top-10 rounded-md p-2"><p><div class="tc-sidebar-tab-open prose capitalize"></div></p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>link-icons</title><link href="https://neotw.netlify.app/#link-icons"></link><link href="https://neotw.netlify.app/static/link-icons.html" rel="alternative" type="text/html"></link><id>ecc0a513-2e8a-29c2-4826-c4a874feb0f4</id><updated>2023-04-06T11:05:15</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><svg fill="currentColor" height="1em" stroke="currentColor" stroke-width="0" viewBox="0 0 512 512" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"></path></svg></p><p><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z" fill-rule="evenodd"></path></svg></p><p><svg fill="currentColor" height="1em" stroke="currentColor" stroke-width="0" viewBox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"></path><path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"></path></svg></p><p><svg fill="currentColor" height="1em" stroke="currentColor" stroke-width="0" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M8.465 11.293c1.133-1.133 3.109-1.133 4.242 0l.707.707 1.414-1.414-.707-.707c-.943-.944-2.199-1.465-3.535-1.465s-2.592.521-3.535 1.465L4.929 12a5.008 5.008 0 0 0 0 7.071 4.983 4.983 0 0 0 3.535 1.462A4.982 4.982 0 0 0 12 19.071l.707-.707-1.414-1.414-.707.707a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.122-2.121z"></path><path d="m12 4.929-.707.707 1.414 1.414.707-.707a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.122 2.121c-1.133 1.133-3.109 1.133-4.242 0L10.586 12l-1.414 1.414.707.707c.943.944 2.199 1.465 3.535 1.465s2.592-.521 3.535-1.465L19.071 12a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0z"></path></svg></p></div></content><author><name>oeyoews</name></author></entry><entry><title>LinkItem</title><link href="https://neotw.netlify.app/#LinkItem"></link><link href="https://neotw.netlify.app/static/LinkItem.html" rel="alternative" type="text/html"></link><id>737fe6c9-0484-37b5-0c4c-9ea05db0e476</id><updated>2023-05-29T22:51:44</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><h2 class="">Link Dashboard</h2><ul><li>get tiddler</li></ul><ul><li><button class="bg-transparent text-indigo-500 capitalize m-0 p-0 pr-4" title="neotw">
 neotw 
 
 </button>  demo</li></ul><ul><li><button class="bg-transparent text-indigo-500 capitalize m-0 p-0 pr-4" title="neotw">
@@ -4261,8 +4831,8 @@ Undefined widget 'tid2pdf'<hr class="footnotes-sep"></hr>
 <li>aria2c -d <dirname> <url>&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;</url></dirname></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-badges</title><link href="https://neotw.netlify.app/#neotw-badges"></link><link href="https://neotw.netlify.app/static/neotw-badges.html" rel="alternative" type="text/html"></link><id>f934e3aa-d36d-34bb-609b-922693d9b993</id><updated>2023-06-01T21:41:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-662-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-48-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-71-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-4 hours ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-665-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-48-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-71-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-49 seconds ago-green?style=social"></img>  
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-command</title><link href="https://neotw.netlify.app/#neotw-command"></link><link href="https://neotw.netlify.app/static/neotw-command.html" rel="alternative" type="text/html"></link><id>188385e0-6b3a-4916-a54a-061d9d29e18f</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
        ✨ 0.1
@@ -8482,6 +9052,27 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 }</code></pre><p>在这个例子中，我们使用try-catch语句块来处理可能的异常情况。在try块中，我们使用fs.readFileSync()方法同步读取JSON文件，并将文件内容存储在data变量中。如果读取文件时出现错误，catch块将捕获该错误，并输出错误信息。</p><p>以上是使用fs模块读取文件的示例，需要注意的是，在使用fs模块读取文件时，我们需要处理可能的异常情况，并根据实际情况选择异步或同步方法。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-count</title><link href="https://neotw.netlify.app/#recent-count"></link><link href="https://neotw.netlify.app/static/recent-count.html" rel="alternative" type="text/html"></link><id>6a131e9a-b046-19c3-08bd-35ef7c9ffbfc</id><updated>2023-02-08T18:16:06</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="tc-timeline">
 
 <div class="tc-menu-list-item">
+7th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#4">4</a></span>)
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#apply-call-bind"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#js-error-example01"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E8%A7%A3%E6%9E%84%E8%AF%AD%E6%B3%95"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#learnxinyminutes-javascript"></a>
+</div>
+
+</div>
+
+<div class="tc-menu-list-item">
 6th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#12">12</a></span>)
 
 <div class="tc-menu-list-subitem">
@@ -8928,20 +9519,31 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 
 </div>
 
-<div class="tc-menu-list-item">
-26th May 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#2">2</a></span>)
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#self"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#fetch-api"></a>
-</div>
-
-</div>
-
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-note-record</title><link href="https://neotw.netlify.app/#recent-note-record"></link><link href="https://neotw.netlify.app/static/recent-note-record.html" rel="alternative" type="text/html"></link><id>2619840e-dc84-d69e-3d32-c2258f306a66</id><updated>2023-04-11T09:39:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><ul>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#apply-call-bind">apply-call-bind</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#js-error-example01">js-error-example01</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E8%A7%A3%E6%9E%84%E8%AF%AD%E6%B3%95">解构语法</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#learnxinyminutes-javascript">learnxinyminutes-javascript</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E6%B0%B4%E5%90%88%E4%BD%9C%E7%94%A8">水合作用</a>
@@ -9228,90 +9830,90 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#reflow-repaint">reflow-repaint</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#event-bubble">event-bubble</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#2023-05-31">2023-05-31</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#swift-flutter">swift-flutter</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#textcontent-innerHTML">textcontent-innerHTML</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#try-catch">try-catch</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E6%9D%A1%E4%BB%B6%E8%BF%90%E7%AE%97%E7%AC%A6">条件运算符</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#set-timeout-interval">set-timeout-interval</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#obj-create">obj-create</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#ts-document-unoffical">ts-document-unoffical</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#instance">instance</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#Object">Object</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#2023-05-30">2023-05-30</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#index">index</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#process">process</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
@@ -9569,12 +10171,6 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#center-btn">center-btn</a>
-        
-         <span style="color:black;"><sup>recent</sup></span>
-    </li>
-  
-    <li>
-		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#change-this">change-this</a>
         
          <span style="color:black;"><sup>recent</sup></span>
     </li>
@@ -11280,31 +11876,31 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#import-react">import-react</a>
         
-         <span style="color:black;"><sup>recent</sup></span>
+        
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#use-microsoft-drop">use-microsoft-drop</a>
         
-         <span style="color:black;"><sup>recent</sup></span>
+        
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#use-github-cli">use-github-cli</a>
         
-         <span style="color:black;"><sup>recent</sup></span>
+        
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#color-text">color-text</a>
         
-         <span style="color:black;"><sup>recent</sup></span>
+        
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#xiaofamao">xiaofamao</a>
         
-         <span style="color:black;"><sup>recent</sup></span>
+        
     </li>
   
     <li>
@@ -12113,18 +12709,6 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#reveal-icon">reveal-icon</a>
-        
-        
-    </li>
-  
-    <li>
-		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#pang-test">pang-test</a>
-        
-        
-    </li>
-  
-    <li>
-		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#name-your-tid">name-your-tid</a>
         
         
     </li>
@@ -13853,7 +14437,36 @@ myDog.<span class="hljs-title function_">sayName</span>(); <span class="hljs-com
 myDog.<span class="hljs-title function_">sayName</span>(); <span class="hljs-comment">// 输出 &quot;My name is Fido&quot;</span>
 
 <span class="hljs-comment">// 调用子类的方法</span>
-myDog.<span class="hljs-title function_">bark</span>(); <span class="hljs-comment">// 输出 &quot;Woof!&quot;</span></code></pre><p>以上是几种常见的JavaScript继承方式，每种方式都有其优缺点，选择哪种方式取决于具体的需求和场景。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>闭包</title><link href="https://neotw.netlify.app/#%E9%97%AD%E5%8C%85"></link><link href="https://neotw.netlify.app/static/%25E9%2597%25AD%25E5%258C%2585.html" rel="alternative" type="text/html"></link><id>0edb4c85-0355-84e9-3bb3-2a3c516c29b4</id><updated>2023-06-03T22:34:19</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>一个常见的实际应用闭包的例子是事件监听器。在 JavaScript 中，可以使用闭包来实现事件监听器，以便在函数之外访问事件处理程序中的变量。下面是一个示例：</p><pre class="hljs"><code class="javascript hljs"><span class="hljs-keyword">function</span> <span class="hljs-title function_">createButton</span>(<span class="hljs-params"></span>) {
+myDog.<span class="hljs-title function_">bark</span>(); <span class="hljs-comment">// 输出 &quot;Woof!&quot;</span></code></pre><p>以上是几种常见的JavaScript继承方式，每种方式都有其优缺点，选择哪种方式取决于具体的需求和场景。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>解构语法</title><link href="https://neotw.netlify.app/#%E8%A7%A3%E6%9E%84%E8%AF%AD%E6%B3%95"></link><link href="https://neotw.netlify.app/static/%25E8%25A7%25A3%25E6%259E%2584%25E8%25AF%25AD%25E6%25B3%2595.html" rel="alternative" type="text/html"></link><id>6d74846d-f9f2-cebf-e9ed-d232344aec55</id><updated>2023-06-07T11:23:57</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+<p>解构语法是一种方便的 JavaScript 语法，用于从对象或数组中提取数据，然后将提取的数据赋值给变量。解构语法通常使用花括号 <code class="_codified_">{}</code> 或方括号 <code class="_codified_">[]</code> 来表示要提取的数据的结构。
+</p>
+<p>以下是一个从对象中提取数据的示例：
+</p>
+<pre class="hljs"><code class="javascript hljs"><span class="hljs-keyword">const</span> person = { <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Alice&quot;</span>, <span class="hljs-attr">age</span>: <span class="hljs-number">30</span>, <span class="hljs-attr">gender</span>: <span class="hljs-string">&quot;female&quot;</span> };
+
+<span class="hljs-comment">// 使用解构语法从 person 对象中提取 name 和 age 属性</span>
+<span class="hljs-comment">// const name = person.name;</span>
+<span class="hljs-comment">// const age = person.age;</span>
+<span class="hljs-keyword">const</span> { name, age } = person;
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(name); <span class="hljs-comment">// 输出 &quot;Alice&quot;</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(age);  <span class="hljs-comment">// 输出 30</span>
+</code></pre>
+<p>在这个示例中，我们使用解构语法从 <code class="_codified_">person</code> 对象中提取 <code class="_codified_">name</code> 和 <code class="_codified_">age</code> 属性，并将它们分别赋值给变量 <code class="_codified_">name</code> 和 <code class="_codified_">age</code>。因此，在调用 <code class="_codified_">console.log(name)</code> 和 <code class="_codified_">console.log(age)</code> 时，分别输出了 “Alice” 和 30。
+</p>
+<p>解构语法也可以用于从数组中提取数据。以下是一个从数组中提取数据的示例：
+</p>
+<pre class="hljs"><code class="javascript hljs"><span class="hljs-keyword">const</span> numbers = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>];
+
+<span class="hljs-comment">// 使用解构语法从 numbers 数组中提取第一个和第二个元素</span>
+<span class="hljs-keyword">const</span> [first, second] = numbers;
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(first);  <span class="hljs-comment">// 输出 1</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(second); <span class="hljs-comment">// 输出 2</span>
+</code></pre>
+<p>在这个示例中，我们使用解构语法从 <code class="_codified_">numbers</code> 数组中提取第一个和第二个元素，并将它们分别赋值给变量 <code class="_codified_">first</code> 和 <code class="_codified_">second</code>。因此，在调用 <code class="_codified_">console.log(first)</code> 和 <code class="_codified_">console.log(second)</code> 时，分别输出了 1 和 2。
+</p>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>闭包</title><link href="https://neotw.netlify.app/#%E9%97%AD%E5%8C%85"></link><link href="https://neotw.netlify.app/static/%25E9%2597%25AD%25E5%258C%2585.html" rel="alternative" type="text/html"></link><id>0edb4c85-0355-84e9-3bb3-2a3c516c29b4</id><updated>2023-06-03T22:34:19</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>一个常见的实际应用闭包的例子是事件监听器。在 JavaScript 中，可以使用闭包来实现事件监听器，以便在函数之外访问事件处理程序中的变量。下面是一个示例：</p><pre class="hljs"><code class="javascript hljs"><span class="hljs-keyword">function</span> <span class="hljs-title function_">createButton</span>(<span class="hljs-params"></span>) {
   <span class="hljs-keyword">var</span> count = <span class="hljs-number">0</span>;
   <span class="hljs-keyword">var</span> button = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">&#x27;button&#x27;</span>);
   button.<span class="hljs-property">innerHTML</span> = <span class="hljs-string">&#x27;Click me&#x27;</span>;
