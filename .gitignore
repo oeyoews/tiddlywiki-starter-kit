@@ -65,3 +65,4 @@ upload
 .vercel
 
 tiddlers/keepstate/**/*
+main.js
