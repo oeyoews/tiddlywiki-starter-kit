@@ -176,10 +176,10 @@ input[type="search"]::-webkit-search-cancel-button {
 
 @keyframes sidebar-appear {
   0%   {
-    left: -{{$:/themes/nico/notebook/metrics/sidebar-width}};
+    right: -{{$:/themes/nico/notebook/metrics/sidebar-width}};
   }
   100% {
-    left: 0;
+    right: 0;
   }
 }
 
@@ -286,7 +286,7 @@ input[type="search"]::-webkit-search-cancel-button {
 @media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
   .nc-sidebar {
     position: fixed;
-    left: 0;
+    right: 0;
     top:  0;
     bottom: 0;
   }
@@ -296,10 +296,13 @@ input[type="search"]::-webkit-search-cancel-button {
 @media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
   @keyframes sidebar-slide {
     0%   {
-      left: -100vw;
+      right: -100vw;
+    }
+    50%   {
+      right: -50vw;
     }
     100% {
-      left: 0;
+      right: 0;
     }
   }
   .nc-sidebar {
@@ -317,11 +320,11 @@ input[type="search"]::-webkit-search-cancel-button {
 
 @media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
   .tc-page-container {
-    margin-left: {{$:/themes/nico/notebook/metrics/sidebar-width}} !important;
+    margin-right: {{$:/themes/nico/notebook/metrics/sidebar-width}} !important;
   }
 
   .nc-topbar-wrapper {
-    left: {{$:/themes/nico/notebook/metrics/sidebar-width}};
+    right: {{$:/themes/nico/notebook/metrics/sidebar-width}};
   }
 }
 """>>

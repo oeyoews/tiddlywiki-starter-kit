@@ -1,5 +1,9 @@
 title: $:/themes/nico/notebook/ui/Buttons/menu
-type: text/vnd.tiddlywiki
+
+<!-- tags: $:/tags/PageControls -->
+<!-- description: -->
+<!-- list-after: -->
+<!-- caption: -->
 
 <$reveal state="$:/state/notebook-sidebar" type="match" text="yes" default="no" retain="yes" animate="no">
   <$button set="$:/state/notebook-sidebar" setTo="no" tooltip="Toggle menu" class="tc-btn-invisible sidebar-toggle open">

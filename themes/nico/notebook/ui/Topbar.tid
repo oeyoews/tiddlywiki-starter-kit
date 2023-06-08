@@ -4,18 +4,18 @@ type: text/vnd.tiddlywiki
 
 <$reveal state="$:/state/notebook-topbar" type="match" text="yes" default="yes" retain="yes" animate="yes">
   <div class="nc-topbar-wrapper">
-    <div class="nc-bar nc-topbar tc-adjust-top-of-scroll mb-4 shadow-md rounded">
+    <div class="nc-bar nc-topbar tc-adjust-top-of-scroll mb-4 rounded">
       <$list filter="[all[shadows+tiddlers]tag[$:/tags/NotebookTopbar]!has[draft.of]]" variable="listItem">
         <$reveal type="nomatch" state=<<config-title>> text="hide" tag="div">
           <$transclude tiddler=<<listItem>> mode="block"/>
         </$reveal>
       </$list>
-      <div class="left">
-	{{$:/themes/nico/notebook/ui/Buttons/menu}}
-        {{$:/themes/nico/notebook/ui/Search}}
-      </div>
       <div class="right">
         {{$:/core/ui/SideBarSegments/page-controls}}
+      </div>
+      <div class="left">
+        <!-- {{$:/themes/nico/notebook/ui/Search}} -->
+      	{{$:/themes/nico/notebook/ui/Buttons/menu}}
       </div>
     </div>
   </div>
