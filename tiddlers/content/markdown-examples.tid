@@ -1,15 +1,13 @@
 cn-title: markdown 语法测试
 created: 20230221073554683
 creator: oeyoews
-modified: 20230608034335920
+modified: 20230608095034998
 modifier: oeyoews
 page-cover: https://images.unsplash.com/photo-1455390582262-044cdead277a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d3JpdGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60
 publish: public
 tags: 
 title: markdown-examples
 type: text/markdown
-
-<$tid2pdf />
 
 <details class="text-indigo-400 font-bold hover:text-indigo-600 trannsition duration-200 cursor-pointer ml-2 my-2 hover:bg-slate-200 px-2 rounded-md">
 <summary>🌴 目录</summary>
