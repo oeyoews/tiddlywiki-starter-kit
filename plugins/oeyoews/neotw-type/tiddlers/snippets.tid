@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/neotw-type/snippets/type
+caption: Type Widget
+description: Type Widget
+tags: $:/tags/TextEditor/Snippet
+
+<$typing />$1
