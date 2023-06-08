@@ -13,3 +13,9 @@ title: $:/plugins/oeyoews/neotw-copy-code/readme
 * add hover style
 * support hover scroll for code preview
 * add transform style
+
+!! Example
+
+```lua
+local M = {}
+```
