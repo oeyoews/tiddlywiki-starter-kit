@@ -10,6 +10,11 @@ module.exports = {
             // '--tw-prose-body': theme('colors.white'),
             'blockquote p:first-of-type::before': null,
             'blockquote p:last-of-type::after': null,
+            pre: {
+              backgroundColor: theme('colors.neutral.100'),
+              color: theme('colors.neutral.900'),
+              border: `none`,
+            },
             code: {
               fontFamily: 'serif',
               backgroundColor: theme('colors.slate.100'),
