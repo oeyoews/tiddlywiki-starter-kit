@@ -2627,8 +2627,8 @@ Undefined widget 'tid2pdf'
 </div>
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>GettingStarted</title><link href="https://neotw.netlify.app/#GettingStarted"></link><link href="https://neotw.netlify.app/static/GettingStarted.html" rel="alternative" type="text/html"></link><id>fc927313-83cf-7e0a-53c1-21853f695851</id><updated>2023-06-05T19:42:02</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:bg-white">
 <div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-670-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-47-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-71-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-5 hours ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-670-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-47-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-72-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-4 hours ago-green?style=social"></img>  
 </div>
 
 
@@ -4298,8 +4298,7 @@ arr.forEach(item =&gt; {
 
 // 使用 map 方法
 const newArr = arr.map(item =&gt; item * 2);
-console.log(newArr);</code></pre><p>在使用这两种方法时，需要注意的是，回调函数的参数不同。<code>forEach</code> 方法的回调函数有三个参数：当前遍历的元素、当前元素的索引和整个数组。而 <code>map</code> 方法的回调函数只有两个参数：当前遍历的元素和当前元素的索引。</p><p>希望这些信息可以帮助您更好地理解 <code>forEach</code> 和 <code>map</code> 方法之间的区别。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>maple-hand</title><link href="https://neotw.netlify.app/#maple-hand"></link><link href="https://neotw.netlify.app/static/maple-hand.html" rel="alternative" type="text/html"></link><id>027ea563-1e2a-e6cf-d184-c314fcc15dae</id><updated>2023-04-18T10:08:25</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>maple hand</p></div></content><author><name>oeyoews</name></author></entry><entry><title>margin-order</title><link href="https://neotw.netlify.app/#margin-order"></link><link href="https://neotw.netlify.app/static/margin-order.html" rel="alternative" type="text/html"></link><id>92b8eb3a-ee84-e2ae-265b-09aae86d6866</id><updated>2023-03-20T22:24:27</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>top right bottom left(clock)</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>markdown-examples</title><link href="https://neotw.netlify.app/#markdown-examples"></link><link href="https://neotw.netlify.app/static/markdown-examples.html" rel="alternative" type="text/html"></link><id>ea3dd8d5-e410-f5d1-cd24-2786e05a9fd7</id><updated>2023-06-08T11:43:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
-Undefined widget 'tid2pdf'
+console.log(newArr);</code></pre><p>在使用这两种方法时，需要注意的是，回调函数的参数不同。<code>forEach</code> 方法的回调函数有三个参数：当前遍历的元素、当前元素的索引和整个数组。而 <code>map</code> 方法的回调函数只有两个参数：当前遍历的元素和当前元素的索引。</p><p>希望这些信息可以帮助您更好地理解 <code>forEach</code> 和 <code>map</code> 方法之间的区别。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>maple-hand</title><link href="https://neotw.netlify.app/#maple-hand"></link><link href="https://neotw.netlify.app/static/maple-hand.html" rel="alternative" type="text/html"></link><id>027ea563-1e2a-e6cf-d184-c314fcc15dae</id><updated>2023-04-18T10:08:25</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>maple hand</p></div></content><author><name>oeyoews</name></author></entry><entry><title>margin-order</title><link href="https://neotw.netlify.app/#margin-order"></link><link href="https://neotw.netlify.app/static/margin-order.html" rel="alternative" type="text/html"></link><id>92b8eb3a-ee84-e2ae-265b-09aae86d6866</id><updated>2023-03-20T22:24:27</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>top right bottom left(clock)</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>markdown-examples</title><link href="https://neotw.netlify.app/#markdown-examples"></link><link href="https://neotw.netlify.app/static/markdown-examples.html" rel="alternative" type="text/html"></link><id>ea3dd8d5-e410-f5d1-cd24-2786e05a9fd7</id><updated>2023-06-08T17:50:34</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <details class="text-indigo-400 font-bold hover:text-indigo-600 trannsition duration-200 cursor-pointer ml-2 my-2 hover:bg-slate-200 px-2 rounded-md">
 <summary>🌴 目录</summary>
 
@@ -4866,8 +4865,8 @@ Undefined widget 'tid2pdf'<hr class="footnotes-sep"></hr>
 <li>aria2c -d <dirname> <url>&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;</url></dirname></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-badges</title><link href="https://neotw.netlify.app/#neotw-badges"></link><link href="https://neotw.netlify.app/static/neotw-badges.html" rel="alternative" type="text/html"></link><id>f934e3aa-d36d-34bb-609b-922693d9b993</id><updated>2023-06-01T21:41:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-670-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-47-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-71-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-5 hours ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-670-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-47-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-72-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-4 hours ago-green?style=social"></img>  
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-command</title><link href="https://neotw.netlify.app/#neotw-command"></link><link href="https://neotw.netlify.app/static/neotw-command.html" rel="alternative" type="text/html"></link><id>188385e0-6b3a-4916-a54a-061d9d29e18f</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
        ✨ 0.1
@@ -9088,11 +9087,11 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 8th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#2">2</a></span>)
 
 <div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#grayscale"></a>
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#markdown-examples"></a>
 </div>
 
 <div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#markdown-examples"></a>
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#grayscale"></a>
 </div>
 
 </div>
@@ -9584,13 +9583,13 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-note-record</title><link href="https://neotw.netlify.app/#recent-note-record"></link><link href="https://neotw.netlify.app/static/recent-note-record.html" rel="alternative" type="text/html"></link><id>2619840e-dc84-d69e-3d32-c2258f306a66</id><updated>2023-04-11T09:39:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><ul>
   
     <li>
-		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#grayscale">grayscale</a>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#markdown-examples">markdown-examples</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
         
     </li>
   
     <li>
-		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#markdown-examples">markdown-examples</a>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#grayscale">grayscale</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
         
     </li>
