@@ -17,6 +17,7 @@ function addCopyButton() {
       existingButton.remove();
     } else {
       const copyButton = document.createElement('button');
+      copyButton.title = 'Copy code';
       copyButton.textContent = '📋 Copy';
       copyButton.classList.add(
         'copy-button',
