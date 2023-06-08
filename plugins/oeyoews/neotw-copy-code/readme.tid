@@ -4,3 +4,12 @@ title: $:/plugins/oeyoews/neotw-copy-code/readme
 
 * [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/neotw-copy-code]]
 * [[Demo|https://oeyoews.github.io/neotw]]
+
+!! TODO
+
+* update copied icon
+* update style for button
+* add viewtoolbar not pagecontrol
+* add hover style
+* support hover scroll for code preview
+* add transform style
