@@ -83,9 +83,10 @@ tid2png/widget
             swal({
               icon: 'success',
               title: `${this.title}`,
-              content: {
+              content: imgNode,
+              /* content: {
                 element: imgNode,
-              },
+              }, */
               buttons: {
                 download: {
                   text: 'Download',

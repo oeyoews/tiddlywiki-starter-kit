@@ -47,6 +47,7 @@ axios
         title: 'Welcom to Neotw 👋',
         text: 'The version of neotw is ' + version,
         icon: 'success',
+        timer: 3000, // 3 seconds
         buttons: {
           no: {
             text: 'Silent',
