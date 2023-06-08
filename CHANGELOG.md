@@ -1,3 +1,10 @@
+## [3.287.1](https://github.com/oeyoews/neotw/compare/v3.287.0...v3.287.1) (2023-06-08)
+
+
+### Performance Improvements
+
+* sidebar to right ([ae80b66](https://github.com/oeyoews/neotw/commit/ae80b669d7a67837c30f4dd1dfbc9e38677e060f))
+
 # [3.287.0](https://github.com/oeyoews/neotw/compare/v3.286.0...v3.287.0) (2023-06-08)
 
 
