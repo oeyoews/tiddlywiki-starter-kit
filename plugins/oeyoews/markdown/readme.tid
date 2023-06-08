@@ -3,8 +3,46 @@ type: text/markdown
 
 <div class="prose max-w-none">
 
+# Markdown Examples
+
+@[toc]
+
 :::warning
  * Incompatible wiki link parse with extended markdown plugins by @oeyoews
 :::
+
+## Toc
+
+### Code
+
+```
+@[toc]
+```
+
+### Example
+
+@[toc]
+
+## Emoji
+
+### Code
+
+```
+:tada:
+```
+
+:tada:
+
+## Checkbox
+
+```
+- [ ]
+- [x]
+```
+
+- [ ] undone
+- [x] done
+
+## ...
 
 </div>
