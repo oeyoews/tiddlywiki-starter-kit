@@ -5,7 +5,7 @@ description: copy code button
 caption: Copy Button
 
 \whitespace trim
-<$button message="om-copy-code" tooltip="" aria-label="" class=<<tv-config-toolbar-class>>>
+<$button message="om-copy-code" tooltip="Copy Code" aria-label="copy" class=<<tv-config-toolbar-class>>>
 <$action-sendmessage $message="om-confetti-launch"/>
 <$action-sendmessage $message="om-sound"/>
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
@@ -13,7 +13,7 @@ caption: Copy Button
 </$list>
 <$list filter="[<tv-config-toolbar-text>match[yes]]">
 <span class="tc-btn-text">
-<$text text=""/>
+<$text text="Copy"/>
 </span>
 </$list>
 </$button>
