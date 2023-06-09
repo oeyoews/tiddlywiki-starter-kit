@@ -1,3 +1,10 @@
+# [3.290.0](https://github.com/oeyoews/neotw/compare/v3.289.0...v3.290.0) (2023-06-09)
+
+
+### Features
+
+* add Shortcuts for tiddlywiki-fancybox-ui ([3f0a08c](https://github.com/oeyoews/neotw/commit/3f0a08c9062f7468795d98b89e0113c7b60c4ee6))
+
 # [3.289.0](https://github.com/oeyoews/neotw/compare/v3.288.0...v3.289.0) (2023-06-09)
 
 
