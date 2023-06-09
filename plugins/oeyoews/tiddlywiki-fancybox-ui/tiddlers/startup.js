@@ -15,6 +15,12 @@ fancybox
   exports.platforms = ['browser'];
   exports.after = ['load-modules'];
   exports.synchronous = true;
-  exports.startup = () =>
+  exports.startup = () => {
     require('$:/plugins/oeyoews/tiddlywiki-fancybox-ui/init.js');
+    const { addDataFancy } = require('addDataFancy.js');
+    // window.addDataFancy = addDataFancy;
+    $tw.rootWidget.addEventListener('om-fancybox', () => {
+      addDataFancy();
+    });
+  };
 })();
