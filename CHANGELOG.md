@@ -1,3 +1,10 @@
+# [3.291.0](https://github.com/oeyoews/neotw/compare/v3.290.0...v3.291.0) (2023-06-09)
+
+
+### Features
+
+* support highlight for preview ([a67a0a5](https://github.com/oeyoews/neotw/commit/a67a0a56cfb1ffe83e3ee3e92cfcdb7239ee07b5))
+
 # [3.290.0](https://github.com/oeyoews/neotw/compare/v3.289.0...v3.290.0) (2023-06-09)
 
 
