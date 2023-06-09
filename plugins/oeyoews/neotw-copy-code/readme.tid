@@ -5,6 +5,14 @@ title: $:/plugins/oeyoews/neotw-copy-code/readme
 * [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/neotw-copy-code]]
 * [[Demo|https://oeyoews.github.io/neotw]]
 
+This plugin is designed to add a copy code button to code blocks in TiddlyWiki, making it easier to copy code snippets with their formatting and indentation intact. In TiddlyWiki, code blocks are typically wrapped in the `<pre>` tag to preserve their formatting and indentation. However, copying the code manually can be inconvenient.
+
+This plugin solves this problem by adding a “Copy Code” button next to the code block. Clicking the button copies the code to the clipboard, and the copied code is also displayed in a popup using the SweetAlert2 plugin, making it easy to verify that the code was copied successfully.
+
+This plugin can greatly improve the efficiency and convenience of displaying and sharing code in TiddlyWiki, especially when you need to copy code frequently.
+
+The only downside at the moment is that the copy button needs to be manually triggered for display.
+
 !! Example
 
 <$button message="om-copy-code" >
