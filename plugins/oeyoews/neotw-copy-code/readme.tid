@@ -13,13 +13,14 @@ title: $:/plugins/oeyoews/neotw-copy-code/readme
 * add hover style
 * support hover scroll for code preview
 * add transform style
+* update plugin dependencies
 
 !! Example
 
 <$button message="om-copy-code" param=<<currentTiddler>>>
 <$action-sendmessage $message="om-confetti-launch" />
 <$action-sendmessage $message="om-sound" />
-  Click to show copy code button
+{{$:/plugins/oeyoews/neotw-copy-code/icon}} Click to show copy code button
 </$button>
 
 ```lua
