@@ -6,6 +6,7 @@ module-type: widget
 tid2png/widget
 
 \*/
+// TODO: count img size
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
@@ -24,7 +25,7 @@ tid2png/widget
       super.computeAttributes();
       this.title = this.getVariable('currentTiddler', 'default title');
       this.param = this.getAttribute('param', `Download ${this.title}.png`);
-      this.preview = this.getAttribute('preview', false);
+      this.preview = this.getAttribute('preview', true);
     }
 
     render(parent, nextSibling) {
@@ -78,12 +79,15 @@ tid2png/widget
           const imgNode = new Image();
           imgNode.src = imgData;
           imgNode.crossOrigin = '';
+          const cloneImgNode = imgNode.cloneNode(true);
+          cloneImgNode.style.width = '512px';
+          cloneImgNode.classList.add('shadow-sm');
 
           if (this.preview) {
             swal({
               icon: 'success',
               title: `${this.title}`,
-              content: imgNode,
+              content: cloneImgNode,
               /* content: {
                 element: imgNode,
               }, */

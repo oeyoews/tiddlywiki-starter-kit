@@ -6,6 +6,7 @@ module-type: startup
 tid2pdf module
 
 \*/
+// TODO: merge om-export-png and widget code
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
