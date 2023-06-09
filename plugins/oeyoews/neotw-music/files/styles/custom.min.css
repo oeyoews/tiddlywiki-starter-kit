@@ -6,29 +6,38 @@
   left: 0px !important;
 }
 
-@media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
 .aplayer.aplayer-fixed {
-  position: fixed;
-  bottom: {{$:/plugins/oeyoews/neotw-music/config!!bottom}}px;
-  left: 0;
-  right: 0;
-  margin: 0;
-  z-index: 9;
-  overflow: visible;
-  max-width: 400px;
-  box-shadow: none;
+  opacity: 0;
 }
 
-.aplayer.aplayer-fixed .aplayer-body {
-  position: fixed;
-  bottom: {{$:/plugins/oeyoews/neotw-music/config!!bottom}}px;
-  left: 0;
-  right: 0;
-  margin: 0;
-  z-index: 99;
-  background: #fff;
-  padding-right: 18px;
+.aplayer.aplayer-fixed:hover {
   transition: all 0.3s ease;
-  max-width: 400px;
+  opacity: 0.8;
 }
+
+@media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+  .aplayer.aplayer-fixed {
+    position: fixed;
+    bottom: {{$:/plugins/oeyoews/neotw-music/config!!bottom}}px;
+    left: 0;
+    right: 0;
+    margin: 0;
+    z-index: 9;
+    overflow: visible;
+    max-width: 400px;
+    box-shadow: none;
+  }
+
+  .aplayer.aplayer-fixed .aplayer-body {
+    position: fixed;
+    bottom: {{$:/plugins/oeyoews/neotw-music/config!!bottom}}px;
+    left: 0;
+    right: 0;
+    margin: 0;
+    z-index: 99;
+    background: #fff;
+    padding-right: 18px;
+    transition: all 0.3s ease;
+    max-width: 400px;
+  }
 }
