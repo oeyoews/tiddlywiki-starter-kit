@@ -95,8 +95,8 @@ fun main() {
 
 * update copied icon
 * update style for button
-* add viewtoolbar not pagecontrol
+<!-- * add viewtoolbar not pagecontrol -->
+<!-- * support hover scroll for code preview -->
 * add hover style
-* support hover scroll for code preview
 * add transform style
 * update plugin dependencies

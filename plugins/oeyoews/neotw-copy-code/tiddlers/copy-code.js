@@ -28,6 +28,7 @@ function addCopyButton() {
       });
       // TODO: splict this
       copyButton.addEventListener('click', () => {
+        copyButton.textContent = '✅ Copied!';
         const range = document.createRange();
         range.selectNode(codeElement);
         window.getSelection().removeAllRanges();
