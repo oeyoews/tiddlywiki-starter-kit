@@ -19,7 +19,7 @@ function addCopyButton() {
       existingButton.remove();
     } else {
       const copyButton = $tw.utils.domMaker('button', {
-        text: `${fileType}📋`,
+        text: fileType ? `${fileType} 📋` : '📋',
         class: 'copy-button float-right hover:bg-gray-200',
         attributes: {
           title: 'Copy code',
