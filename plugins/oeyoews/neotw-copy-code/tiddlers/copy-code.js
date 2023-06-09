@@ -12,6 +12,7 @@ function addCopyButton() {
   codeBlocks.forEach(codeBlock => {
     const existingButton = codeBlock.querySelector('.copy-button');
     const codeElement = codeBlock.querySelector('code');
+    const cloneCodeElement = codeElement.cloneNode(true);
     // default ??
     const fileType = codeElement?.className.split(' ')[0] ?? null; // get file type from first class name
     // ??
@@ -36,12 +37,12 @@ function addCopyButton() {
         if (isSuccess) {
           confetti();
           howler();
-          const copiedCode = range.toString();
           const copiedCodeNode = document.createElement('pre');
-          copiedCodeNode.textContent = copiedCode;
+          copiedCodeNode.appendChild(cloneCodeElement);
           copiedCodeNode.classList.add(
-            'bg-gray-100',
-            'p-2',
+            'bg-gray-200',
+            'shadow-sm',
+            'p-0',
             'rounded',
             'text-base',
             'font-mono',
@@ -54,7 +55,9 @@ function addCopyButton() {
             'break-words',
           );
           swal({
-            title: 'Copied to clipboard',
+            title: fileType
+              ? `Copied to clipboard (filetype: ${fileType})`
+              : `Copied to clipboard`,
             content: copiedCodeNode,
             icon: 'success',
             timer: 5000,
