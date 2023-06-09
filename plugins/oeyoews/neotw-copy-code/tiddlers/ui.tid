@@ -7,6 +7,7 @@ caption: Copy Button
 \whitespace trim
 <$button message="om-copy-code" tooltip="" aria-label="" class=<<tv-config-toolbar-class>>>
 <$action-sendmessage $message="om-confetti-launch"/>
+<$action-sendmessage $message="om-sound"/>
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
 {{$:/plugins/oeyoews/neotw-copy-code/icon}}
 </$list>

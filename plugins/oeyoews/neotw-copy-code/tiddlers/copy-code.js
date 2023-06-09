@@ -33,6 +33,7 @@ function addCopyButton() {
         window.getSelection().removeAllRanges();
         if (isSuccess) {
           confetti();
+          howler();
           const copiedCode = range.toString();
           const copiedCodeNode = document.createElement('pre');
           copiedCodeNode.textContent = copiedCode;
