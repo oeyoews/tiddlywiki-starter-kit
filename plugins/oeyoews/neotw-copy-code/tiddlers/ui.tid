@@ -1,11 +1,12 @@
 title: $:/plugins/oeyoews/neotw-copy-code/ui
 tags: $:/tags/PageControls
 list-before:
-description:
-caption:
+description: copy code button
+caption: Copy Button
 
 \whitespace trim
 <$button message="om-copy-code" tooltip="" aria-label="" class=<<tv-config-toolbar-class>>>
+<$action-sendmessage $message="om-confetti-launch"/>
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
 {{$:/plugins/oeyoews/neotw-copy-code/icon}}
 </$list>
