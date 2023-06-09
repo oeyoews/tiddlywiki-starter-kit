@@ -67,6 +67,7 @@ function addCopyButton() {
             'max-h-48', // 添加最大高度限制，例如48像素
           );
           container.appendChild(copiedCodeNode);
+          // TODO: add preview option configuration
           swal({
             title: fileType
               ? `Copied to clipboard (filetype: ${fileType})`
