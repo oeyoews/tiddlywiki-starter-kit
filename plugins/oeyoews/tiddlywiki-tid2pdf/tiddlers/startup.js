@@ -34,14 +34,41 @@ tid2pdf module
       }).then(canvas => {
         const imgData = canvas.toDataURL('image/png'); // 转换canvas为PNG格式的数据URL
 
-        const linkNode = $tw.utils.domMaker('a', {
-          attributes: {
-            href: imgData,
-            download: title,
+        const imgNode = new Image();
+        imgNode.src = imgData;
+        imgNode.crossOrigin = '';
+        const cloneImgNode = imgNode.cloneNode(true);
+        cloneImgNode.style.width = '512px';
+        cloneImgNode.classList.add('shadow-sm');
+
+        const downloadPng = imgData => {
+          const linkNode = $tw.utils.domMaker('a', {
+            attributes: {
+              href: imgData,
+              download: title,
+            },
+          });
+          linkNode.click();
+          NProgress.done();
+        };
+
+        swal({
+          icon: 'success',
+          title,
+          content: cloneImgNode,
+          buttons: {
+            download: {
+              text: 'Download',
+              value: true,
+            },
+            cancel: 'Cancel',
           },
+          className: 'w-auto',
+        }).then(value => {
+          if (value) {
+            downloadPng(imgData);
+          }
         });
-        linkNode.click();
-        NProgress.done();
       });
     });
   };
