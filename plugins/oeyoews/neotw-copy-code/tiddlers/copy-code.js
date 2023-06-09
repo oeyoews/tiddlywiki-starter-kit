@@ -12,18 +12,20 @@ function addCopyButton() {
   codeBlocks.forEach(codeBlock => {
     const existingButton = codeBlock.querySelector('.copy-button');
     const codeElement = codeBlock.querySelector('code');
+    // default ??
+    const fileType = codeElement?.className.split(' ')[0] ?? null; // get file type from first class name
     // ??
     if (existingButton && codeElement) {
       existingButton.remove();
     } else {
-      const copyButton = document.createElement('button');
-      copyButton.title = 'Copy code';
-      copyButton.textContent = '📋';
-      copyButton.classList.add(
-        'copy-button',
-        'float-right',
-        'hover:bg-gray-200',
-      );
+      const copyButton = $tw.utils.domMaker('button', {
+        text: `${fileType}📋`,
+        class: 'copy-button float-right hover:bg-gray-200',
+        attributes: {
+          title: 'Copy code',
+        },
+      });
+      // TODO: splict this
       copyButton.addEventListener('click', () => {
         const range = document.createRange();
         range.selectNode(codeElement);
