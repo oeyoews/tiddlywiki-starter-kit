@@ -1,3 +1,10 @@
+# [3.293.0](https://github.com/oeyoews/neotw/compare/v3.292.0...v3.293.0) (2023-06-09)
+
+
+### Features
+
+* show size for exported png ([c0925ab](https://github.com/oeyoews/neotw/commit/c0925abab160398a5983f6fa0bf57ec9be3d74d0))
+
 # [3.292.0](https://github.com/oeyoews/neotw/compare/v3.291.0...v3.292.0) (2023-06-09)
 
 
