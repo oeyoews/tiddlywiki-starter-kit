@@ -32,43 +32,48 @@ tid2pdf module
       html2canvas(element, {
         useCORS: true,
       }).then(canvas => {
-        const imgData = canvas.toDataURL('image/png'); // 转换canvas为PNG格式的数据URL
+        canvas.toBlob(blob => {
+          const sizeInBytes = blob.size;
+          const sizeInMB = sizeInBytes / (1024 * 1024);
+          const imgData = canvas.toDataURL('image/png'); // 转换canvas为PNG格式的数据URL
 
-        const imgNode = new Image();
-        imgNode.src = imgData;
-        imgNode.crossOrigin = '';
-        const cloneImgNode = imgNode.cloneNode(true);
-        cloneImgNode.style.width = '512px';
-        cloneImgNode.classList.add('shadow-sm');
+          const imgNode = new Image();
+          imgNode.src = imgData;
+          imgNode.crossOrigin = '';
+          const cloneImgNode = imgNode.cloneNode(true);
+          cloneImgNode.style.width = '512px';
+          cloneImgNode.classList.add('shadow-sm');
 
-        const downloadPng = imgData => {
-          const linkNode = $tw.utils.domMaker('a', {
-            attributes: {
-              href: imgData,
-              download: title,
+          const downloadPng = imgData => {
+            const linkNode = $tw.utils.domMaker('a', {
+              attributes: {
+                href: imgData,
+                download: title,
+              },
+            });
+            linkNode.click();
+            NProgress.done();
+          };
+
+          swal({
+            icon: 'success',
+            title,
+            content: cloneImgNode,
+            text: `Image size: ${sizeInMB.toFixed(2)} MB`,
+            buttons: {
+              download: {
+                text: 'Download',
+                value: true,
+              },
+              cancel: 'Cancel',
             },
+            className: 'w-auto',
+          }).then(value => {
+            if (value) {
+              downloadPng(imgData);
+            }
           });
-          linkNode.click();
-          NProgress.done();
-        };
-
-        swal({
-          icon: 'success',
-          title,
-          content: cloneImgNode,
-          buttons: {
-            download: {
-              text: 'Download',
-              value: true,
-            },
-            cancel: 'Cancel',
-          },
-          className: 'w-auto',
-        }).then(value => {
-          if (value) {
-            downloadPng(imgData);
-          }
-        });
+        }, 'image/png');
       });
     });
   };
