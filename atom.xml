@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Neotw rolling
 </title><subtitle>A modern notebook based on TiddlyWiki5
-</subtitle><link href="https://neotw.netlify.app/atom.xml" rel="self"></link><link href="https://neotw.netlify.app/"></link><author><name>oeyoews</name></author><id>462a8bca-7c57-8f8a-27a3-d6cb4c75a727</id><updated>2023-06-09T12:41:27</updated><entry><title>/home/runner/work/neotw/neotw/tiddlers/hi-oeyoews.svg</title><link href="https://neotw.netlify.app/#%2Fhome%2Frunner%2Fwork%2Fneotw%2Fneotw%2Ftiddlers%2Fhi-oeyoews.svg"></link><link href="https://neotw.netlify.app/static/%252Fhome%252Frunner%252Fwork%252Fneotw%252Fneotw%252Ftiddlers%252Fhi-oeyoews.svg.html" rel="alternative" type="text/html"></link><id>3798d5df-8b06-4ca4-8046-0c87bf3b437d</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><img src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20viewBox%3D%220%200%20600%20300%22%20width%3D%22600%22%20height%3D%22300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3CforeignObject%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%0A%20%20%20%20%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%0A%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%40keyframes%20hi%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%200%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2010%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2020%25%20%7B%20transform%3A%20rotate(-8.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2030%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2040%25%20%7B%20transform%3A%20rotate(-4.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2050%25%20%7B%20transform%3A%20rotate(10.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2060%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40keyframes%20gradient%20%7B%0A%20%20%20%20%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%2050%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%20100%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%235452ee%3B%0A%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%23e73c7e%3B%0A%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%2323a6d5%3B%0A%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23ffff%3B%0A%0A%20%20%20%20%20%20%20%20%20%20background%3A%20linear-gradient(-45deg%2C%20var(--color-main)%2C%20var(--color-primary)%2C%20var(--color-secondary)%2C%20var(--color-tertiary))%3B%0A%20%20%20%20%20%20%20%20%20%20background-size%3A%20400%25%20400%25%3B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20gradient%2015s%20ease%20infinite%3B%0A%0A%20%20%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20%20%20height%3A%20300px%3B%0A%0A%20%20%20%20%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20color%3A%20white%3B%0A%0A%20%20%20%20%20%20%20%20%20%20font-family%3A%20-apple-system%2C%20BlinkMacSystemFont%2C%20%22Segoe%20UI%22%2C%20Roboto%2C%20Helvetica%2C%20Arial%2C%20sans-serif%2C%20%22Apple%20Color%20Emoji%22%2C%20%22Segoe%20UI%20Emoji%22%2C%20%22Segoe%20UI%20Symbol%22%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20hi%201.5s%20linear%20-0.5s%20infinite%3B%0A%20%20%20%20%20%20%20%20%20%20display%3A%20inline-block%3B%0A%20%20%20%20%20%20%20%20%20%20transform-origin%3A%2070%25%2070%25%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-color-scheme%3A%20light)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%23F15BB5%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%2324b0ef%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%234526f6%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23f6f645%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-reduced-motion)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%3C%2Fstyle%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%20%20%3Ch1%3EHi%20there%2C%20my%20name%20is%20oeyoews%20%3Cdiv%20class%3D%22hi%22%3E%F0%9F%91%8B%3C%2Fdiv%3E%3C%2Fh1%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2FforeignObject%3E%0A%3C%2Fsvg%3E"></img></div></content><author><name>oeyoews</name></author></entry><entry><title>/home/runner/work/neotw/neotw/tiddlers/plugins/oeyoews/neotw/custom/snippet/.tid</title><link href="https://neotw.netlify.app/#%2Fhome%2Frunner%2Fwork%2Fneotw%2Fneotw%2Ftiddlers%2Fplugins%2Foeyoews%2Fneotw%2Fcustom%2Fsnippet%2F.tid"></link><link href="https://neotw.netlify.app/static/%252Fhome%252Frunner%252Fwork%252Fneotw%252Fneotw%252Ftiddlers%252Fplugins%252Foeyoews%252Fneotw%252Fcustom%252Fsnippet%252F.tid.html" rel="alternative" type="text/html"></link><id>62e2fab9-28bc-cce8-0ec4-0ecd403b2248</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre><code>caption: 
+</subtitle><link href="https://neotw.netlify.app/atom.xml" rel="self"></link><link href="https://neotw.netlify.app/"></link><author><name>oeyoews</name></author><id>462a8bca-7c57-8f8a-27a3-d6cb4c75a727</id><updated>2023-06-09T21:19:40</updated><entry><title>/home/runner/work/neotw/neotw/tiddlers/hi-oeyoews.svg</title><link href="https://neotw.netlify.app/#%2Fhome%2Frunner%2Fwork%2Fneotw%2Fneotw%2Ftiddlers%2Fhi-oeyoews.svg"></link><link href="https://neotw.netlify.app/static/%252Fhome%252Frunner%252Fwork%252Fneotw%252Fneotw%252Ftiddlers%252Fhi-oeyoews.svg.html" rel="alternative" type="text/html"></link><id>3798d5df-8b06-4ca4-8046-0c87bf3b437d</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><img src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20viewBox%3D%220%200%20600%20300%22%20width%3D%22600%22%20height%3D%22300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3CforeignObject%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%0A%20%20%20%20%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%0A%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%40keyframes%20hi%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%200%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2010%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2020%25%20%7B%20transform%3A%20rotate(-8.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2030%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2040%25%20%7B%20transform%3A%20rotate(-4.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2050%25%20%7B%20transform%3A%20rotate(10.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2060%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40keyframes%20gradient%20%7B%0A%20%20%20%20%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%2050%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%20100%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%235452ee%3B%0A%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%23e73c7e%3B%0A%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%2323a6d5%3B%0A%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23ffff%3B%0A%0A%20%20%20%20%20%20%20%20%20%20background%3A%20linear-gradient(-45deg%2C%20var(--color-main)%2C%20var(--color-primary)%2C%20var(--color-secondary)%2C%20var(--color-tertiary))%3B%0A%20%20%20%20%20%20%20%20%20%20background-size%3A%20400%25%20400%25%3B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20gradient%2015s%20ease%20infinite%3B%0A%0A%20%20%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20%20%20height%3A%20300px%3B%0A%0A%20%20%20%20%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20color%3A%20white%3B%0A%0A%20%20%20%20%20%20%20%20%20%20font-family%3A%20-apple-system%2C%20BlinkMacSystemFont%2C%20%22Segoe%20UI%22%2C%20Roboto%2C%20Helvetica%2C%20Arial%2C%20sans-serif%2C%20%22Apple%20Color%20Emoji%22%2C%20%22Segoe%20UI%20Emoji%22%2C%20%22Segoe%20UI%20Symbol%22%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20hi%201.5s%20linear%20-0.5s%20infinite%3B%0A%20%20%20%20%20%20%20%20%20%20display%3A%20inline-block%3B%0A%20%20%20%20%20%20%20%20%20%20transform-origin%3A%2070%25%2070%25%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-color-scheme%3A%20light)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%23F15BB5%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%2324b0ef%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%234526f6%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23f6f645%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-reduced-motion)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%3C%2Fstyle%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%20%20%3Ch1%3EHi%20there%2C%20my%20name%20is%20oeyoews%20%3Cdiv%20class%3D%22hi%22%3E%F0%9F%91%8B%3C%2Fdiv%3E%3C%2Fh1%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2FforeignObject%3E%0A%3C%2Fsvg%3E"></img></div></content><author><name>oeyoews</name></author></entry><entry><title>/home/runner/work/neotw/neotw/tiddlers/plugins/oeyoews/neotw/custom/snippet/.tid</title><link href="https://neotw.netlify.app/#%2Fhome%2Frunner%2Fwork%2Fneotw%2Fneotw%2Ftiddlers%2Fplugins%2Foeyoews%2Fneotw%2Fcustom%2Fsnippet%2F.tid"></link><link href="https://neotw.netlify.app/static/%252Fhome%252Frunner%252Fwork%252Fneotw%252Fneotw%252Ftiddlers%252Fplugins%252Foeyoews%252Fneotw%252Fcustom%252Fsnippet%252F.tid.html" rel="alternative" type="text/html"></link><id>62e2fab9-28bc-cce8-0ec4-0ecd403b2248</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre><code>caption: 
 created: 20230607102106149
 creator: oeyoews
 modified: 20230607102108097
@@ -376,7 +376,7 @@ React
 JavaScript
 </div>
 <div class="inline p-0 m-0 p-1 capitalize bg-yellow-400 rounded">
-<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#88">88</a></span>
+<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#90">90</a></span>
 </div>
 </div>
 <div>
@@ -535,7 +535,7 @@ Tailwindcss
 <div class="relative">
         <div class="absolute top-0 right-0">
             <div class="inline-block text-slate-400 rounded-full">
-                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#88">88</a></span>
+                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#90">90</a></span>
             </div>
         </div>
     </div>
@@ -2627,8 +2627,8 @@ Undefined widget 'tid2pdf'
 </div>
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>GettingStarted</title><link href="https://neotw.netlify.app/#GettingStarted"></link><link href="https://neotw.netlify.app/static/GettingStarted.html" rel="alternative" type="text/html"></link><id>fc927313-83cf-7e0a-53c1-21853f695851</id><updated>2023-06-05T19:42:02</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:bg-white">
 <div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-671-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-47-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-72-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-24 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-673-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-47-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-72-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-16 minutes ago-green?style=social"></img>  
 </div>
 
 
@@ -2686,7 +2686,7 @@ Undefined widget 'tid2pdf'
 <div class="relative">
         <div class="absolute top-0 right-0">
             <div class="inline-block text-slate-400 rounded-full">
-                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#88">88</a></span>
+                <span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#90">90</a></span>
             </div>
         </div>
     </div>
@@ -4745,6 +4745,22 @@ Undefined widget 'tid2pdf'<hr class="footnotes-sep"></hr>
 </code></pre>
 <p>在此示例中，第一个 useEffect 在组件挂载时初始化 data，第二个 useEffect 在 id 更改时更新 data。这两个 useEffect 是独立的，它们可以在同一个组件中使用，而不会相互干扰。
 </p>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>mutations</title><link href="https://neotw.netlify.app/#mutations"></link><link href="https://neotw.netlify.app/static/mutations.html" rel="alternative" type="text/html"></link><id>6b8adeaf-1e0f-97d5-aced-3cad972e36ed</id><updated>2023-06-09T21:06:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+<pre class="hljs"><code class="js hljs"><span class="hljs-comment">// 要观察的元素</span>
+<span class="hljs-keyword">const</span> targetElement = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&quot;my-element&quot;</span>);
+
+<span class="hljs-comment">// 创建 MutationObserver 对象</span>
+<span class="hljs-keyword">const</span> observer = <span class="hljs-keyword">new</span> <span class="hljs-title class_">MutationObserver</span>(<span class="hljs-function">(<span class="hljs-params">mutations</span>) =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&quot;元素变化啦！&quot;</span>, mutations);
+
+  <span class="hljs-comment">// 隐藏按钮</span>
+  <span class="hljs-keyword">const</span> button = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&quot;my-button&quot;</span>);
+  button.<span class="hljs-property">style</span>.<span class="hljs-property">display</span> = <span class="hljs-string">&quot;none&quot;</span>;
+});
+
+<span class="hljs-comment">// 指定要观察的元素以及要观察的变化类型</span>
+observer.<span class="hljs-title function_">observe</span>(targetElement, { <span class="hljs-attr">childList</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">attributes</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">subtree</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">characterData</span>: <span class="hljs-literal">true</span> });
+</code></pre>
 </div></div></content><author><name>oeyoews</name></author></entry><entry><title>mvc-mvvm</title><link href="https://neotw.netlify.app/#mvc-mvvm"></link><link href="https://neotw.netlify.app/static/mvc-mvvm.html" rel="alternative" type="text/html"></link><id>68259b31-db41-2e2b-13e8-b4530b3c75cb</id><updated>2023-05-03T11:13:38</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>MVC（Model-View-Controller）和MVVM（Model-View-ViewModel）是两种常见的前端应用程序架构模式，它们的主要区别如下：</p><p>1. 模型与视图的关系不同：在MVC中，视图和模型是分离的。控制器作为桥梁，将模型和视图链接在一起。而在MVVM中，视图通过数据绑定直接绑定到ViewModel上，ViewModel与模型交互并提供必要的方法。</p><p>2. 数据双向绑定：MVVM引入了数据双向绑定的概念，使得视图和ViewModel之间的交互更加便捷。当ViewModel中的数据发生变化时，视图会自动更新；当用户在视图中输入数据时，ViewModel会自动更新数据模型。</p><p>3. 控制器与ViewModel的区别：MVVM中没有控制器的概念，而是引入了ViewModel。ViewModel既可以处理视图的显示逻辑，也可以与模型进行交互。而控制器则只负责处理视图和模型之间的通信。</p><p>4. 独立性不同：在MVC中，视图、模型和控制器都是独立的组件，彼此之间没有强耦合。而在MVVM中，ViewModel是视图和模型之间的桥梁，它们之间的联系更加紧密。</p><p>总的来说，MVC和MVVM都是优秀的前端应用程序架构模式，它们各有优缺点，适用于不同的场景和需求。对于需要频繁更新视图的复杂单页应用程序，MVVM更为适合；而对于传统的多页Web应用程序，MVC则更加适用。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>mvvm</title><link href="https://neotw.netlify.app/#mvvm"></link><link href="https://neotw.netlify.app/static/mvvm.html" rel="alternative" type="text/html"></link><id>53c877f0-9f41-36f9-acb4-48480ad5aac4</id><updated>2023-04-26T12:12:53</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>Vue.js和React.js是两个不同的JavaScript框架，都可以用于构建现代Web应用程序。在数据绑定方面，Vue.js使用了MVVM（Model-View-ViewModel）模式，而React.js使用了单向数据流模式。</p><p>MVVM模式将应用程序分为三个部分：模型（Model）、视图（View）和视图模型（ViewModel）。视图是用户界面，模型是数据层，而视图模型则是连接两者之间的桥梁。在Vue.js中，Vue实例作为视图模型，处理用户交互和渲染输出。当数据更新时，Vue的响应式系统会自动更新DOM元素。</p><p>React.js没有显式地使用MVVM模式，而是基于单向数据流的思想。React.js中的组件是基于数据的，当数据发生变化时，React.js会重新计算和渲染组件，然后更新DOM元素。React.js还提供了一种称为“hooks”的特性，使开发人员能够更好地管理组件状态和行为。</p><p>因此，尽管Vue.js和React.js都可以用于构建现代Web应用程序，它们在数据绑定方面采用了不同的方法。Vue.js使用了MVVM模式，而React.js使用了单向数据流模式。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>name-your-tid</title><link href="https://neotw.netlify.app/#name-your-tid"></link><link href="https://neotw.netlify.app/static/name-your-tid.html" rel="alternative" type="text/html"></link><id>7e291c3d-54f0-243a-ac41-f342d5f89bb5</id><updated>2023-02-26T16:16:55</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>in tiddlywiki, if you want some better ui for permalink, pelease use tolower case and use one dash to connnect(ps: if use cn, please pass this tid)</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>nav-humber-menu</title><link href="https://neotw.netlify.app/#nav-humber-menu"></link><link href="https://neotw.netlify.app/static/nav-humber-menu.html" rel="alternative" type="text/html"></link><id>6e4649d2-5629-6e7a-dd1d-c475555ffc7b</id><updated>2023-05-24T19:39:16</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre class="hljs"><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">nav</span>
       <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;flex items-center justify-between flex-wrap bg-gray-900 py-3 px-4&quot;</span>
     &gt;</span>
@@ -4812,8 +4828,8 @@ Undefined widget 'tid2pdf'<hr class="footnotes-sep"></hr>
 <li>aria2c -d <dirname> <url>&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;</url></dirname></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-badges</title><link href="https://neotw.netlify.app/#neotw-badges"></link><link href="https://neotw.netlify.app/static/neotw-badges.html" rel="alternative" type="text/html"></link><id>f934e3aa-d36d-34bb-609b-922693d9b993</id><updated>2023-06-01T21:41:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-671-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-47-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-72-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-24 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-673-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-47-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-72-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-16 minutes ago-green?style=social"></img>  
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-command</title><link href="https://neotw.netlify.app/#neotw-command"></link><link href="https://neotw.netlify.app/static/neotw-command.html" rel="alternative" type="text/html"></link><id>188385e0-6b3a-4916-a54a-061d9d29e18f</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
        ✨ 0.1
@@ -9111,7 +9127,56 @@ http
   })
   .<span class="hljs-title function_">listen</span>(port);
 
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Server running at http://localhost:<span class="hljs-subst">${port}</span>/`</span>);</code></pre></div></content><author><name>oeyoews</name></author></entry><entry><title>nodejs-jvm</title><link href="https://neotw.netlify.app/#nodejs-jvm"></link><link href="https://neotw.netlify.app/static/nodejs-jvm.html" rel="alternative" type="text/html"></link><id>91887e22-5f4c-3ee4-e18d-f1542450e13b</id><updated>2023-04-25T16:43:55</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>nodejs vs jvm</p></div></content><author><name>oeyoews</name></author></entry><entry><title>noreferrer</title><link href="https://neotw.netlify.app/#noreferrer"></link><link href="https://neotw.netlify.app/static/noreferrer.html" rel="alternative" type="text/html"></link><id>e60e18f5-0426-90e3-6a10-d4eed7c43afe</id><updated>2023-04-20T11:35:10</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Server running at http://localhost:<span class="hljs-subst">${port}</span>/`</span>);</code></pre></div></content><author><name>oeyoews</name></author></entry><entry><title>nodejs-jvm</title><link href="https://neotw.netlify.app/#nodejs-jvm"></link><link href="https://neotw.netlify.app/static/nodejs-jvm.html" rel="alternative" type="text/html"></link><id>91887e22-5f4c-3ee4-e18d-f1542450e13b</id><updated>2023-04-25T16:43:55</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>nodejs vs jvm</p></div></content><author><name>oeyoews</name></author></entry><entry><title>NodeList</title><link href="https://neotw.netlify.app/#NodeList"></link><link href="https://neotw.netlify.app/static/NodeList.html" rel="alternative" type="text/html"></link><id>d4ec1081-50d9-373c-611f-c1cff29ce663</id><updated>2023-06-09T21:19:40</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+<p><code class="_codified_">NodeList</code> 是一个类数组对象，它包含一组 <code class="_codified_">Node</code> 对象，这些对象通常是由 <code class="_codified_">querySelectorAll</code> 方法返回的。<code class="_codified_">NodeList</code> 对象具有以下特点：
+</p>
+<ul>
+<li>它是一个类数组对象，它的每个成员都是一个 <code class="_codified_">Node</code> 对象。</li>
+<li>它是只读的，不能修改它的成员。</li>
+<li>它是动态的，意味着它会随着文档的变化而自动更新。</li>
+</ul>
+<p>你可以使用 <code class="_codified_">NodeList</code> 对象的属性和方法来访问和操作它的成员。例如，你可以使用 <code class="_codified_">length</code> 属性获取 <code class="_codified_">NodeList</code> 对象的长度，使用 <code class="_codified_">item</code> 方法或方括号语法访问 <code class="_codified_">NodeList</code> 对象的成员，使用 <code class="_codified_">forEach</code> 方法迭代 <code class="_codified_">NodeList</code> 对象的成员，等等。
+</p>
+<p>以下是一个使用 <code class="_codified_">NodeList</code> 对象的示例：
+</p>
+<pre class="hljs"><code class="js hljs"><span class="hljs-comment">// 获取所有 p 元素</span>
+<span class="hljs-keyword">const</span> paragraphs = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelectorAll</span>(<span class="hljs-string">&#x27;p&#x27;</span>);
+
+<span class="hljs-comment">// 获取 paragraphs 的长度</span>
+<span class="hljs-keyword">const</span> length = paragraphs.<span class="hljs-property">length</span>;
+
+<span class="hljs-comment">// 访问 paragraphs 的第一个元素</span>
+<span class="hljs-keyword">const</span> firstParagraph = paragraphs[<span class="hljs-number">0</span>];
+<span class="hljs-keyword">const</span> firstParagraph2 = paragraphs.<span class="hljs-title function_">item</span>(<span class="hljs-number">0</span>);
+
+<span class="hljs-comment">// 迭代 paragraphs 中的每个元素</span>
+paragraphs.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">paragraph</span>) =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(paragraph.<span class="hljs-property">textContent</span>);
+});
+</code></pre>
+<p>在这个例子中，我们使用 <code class="_codified_">querySelectorAll</code> 方法获取了所有 <code class="_codified_">p</code> 元素，并将它们存储在一个 <code class="_codified_">NodeList</code> 对象 <code class="_codified_">paragraphs</code> 中。然后，我们使用 <code class="_codified_">length</code> 属性获取 <code class="_codified_">paragraphs</code> 的长度，使用方括号语法和 <code class="_codified_">item</code> 方法访问 <code class="_codified_">paragraphs</code> 的第一个元素，使用 <code class="_codified_">forEach</code> 方法迭代 <code class="_codified_">paragraphs</code> 中的每个元素，并在控制台中打印每个段落元素的文本内容。
+</p>
+<pre class="hljs"><code class="js hljs"><span class="hljs-comment">// 创建 MutationObserver 对象</span>
+<span class="hljs-keyword">const</span> observer = <span class="hljs-keyword">new</span> <span class="hljs-title class_">MutationObserver</span>(<span class="hljs-function">(<span class="hljs-params">mutations</span>) =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&quot;tc-story-river 元素变化啦！&quot;</span>, mutations);
+
+  <span class="hljs-comment">// 暂停观察目标元素</span>
+  observer.<span class="hljs-title function_">disconnect</span>();
+  <span class="hljs-title function_">copyButton</span>();
+  <span class="hljs-comment">// 恢复观察目标元素</span>
+  observer.<span class="hljs-title function_">observe</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&quot;.tc-story-river&quot;</span>), {
+    <span class="hljs-attr">childList</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">subtree</span>: <span class="hljs-literal">true</span>,
+  });
+});
+
+<span class="hljs-comment">// 指定要观察的元素选择器以及要观察的变化类型</span>
+observer.<span class="hljs-title function_">observe</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&quot;.tc-story-river&quot;</span>), {
+  <span class="hljs-attr">childList</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">subtree</span>: <span class="hljs-literal">true</span>,
+});
+</code></pre>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>noreferrer</title><link href="https://neotw.netlify.app/#noreferrer"></link><link href="https://neotw.netlify.app/static/noreferrer.html" rel="alternative" type="text/html"></link><id>e60e18f5-0426-90e3-6a10-d4eed7c43afe</id><updated>2023-04-20T11:35:10</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <p>当您使用一个链接（标签）将用户从您的站点带到另一个站点时，为了保护您的站点安全，应该在链接中添加 rel=“noreferrer” 属性。
 </p>
 <p>这个属性指示浏览器不要向其他站点提供任何更多的信息（即 referrer 信息），例如从哪里来的访问者和他们在您的站点上做了什么。这可防止其他站点通过 referrer 信息了解您的站点的敏感信息。
@@ -9993,7 +10058,15 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 }</code></pre><p>在这个例子中，我们使用try-catch语句块来处理可能的异常情况。在try块中，我们使用fs.readFileSync()方法同步读取JSON文件，并将文件内容存储在data变量中。如果读取文件时出现错误，catch块将捕获该错误，并输出错误信息。</p><p>以上是使用fs模块读取文件的示例，需要注意的是，在使用fs模块读取文件时，我们需要处理可能的异常情况，并根据实际情况选择异步或同步方法。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-count</title><link href="https://neotw.netlify.app/#recent-count"></link><link href="https://neotw.netlify.app/static/recent-count.html" rel="alternative" type="text/html"></link><id>6a131e9a-b046-19c3-08bd-35ef7c9ffbfc</id><updated>2023-02-08T18:16:06</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="tc-timeline">
 
 <div class="tc-menu-list-item">
-9th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#9">9</a></span>)
+9th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#11">11</a></span>)
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#NodeList"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#mutations"></a>
+</div>
 
 <div class="tc-menu-list-subitem">
 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#neotw-npm-yarn"></a>
@@ -10523,6 +10596,18 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 </div>
 
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-note-record</title><link href="https://neotw.netlify.app/#recent-note-record"></link><link href="https://neotw.netlify.app/static/recent-note-record.html" rel="alternative" type="text/html"></link><id>2619840e-dc84-d69e-3d32-c2258f306a66</id><updated>2023-04-11T09:39:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><ul>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#NodeList">NodeList</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#mutations">mutations</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#neotw-npm-yarn">neotw-npm-yarn</a>
