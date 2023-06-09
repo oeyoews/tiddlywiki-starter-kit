@@ -1,3 +1,11 @@
+# [3.294.0](https://github.com/oeyoews/neotw/compare/v3.293.1...v3.294.0) (2023-06-09)
+
+
+### Features
+
+* support scroll ([0231f68](https://github.com/oeyoews/neotw/commit/0231f68fe2175a6b6af245a02c6a16ece019f0bb))
+* update copy icon ([b517327](https://github.com/oeyoews/neotw/commit/b517327d9a6c847a8683a0a69ff86f1ec2136e49))
+
 ## [3.293.1](https://github.com/oeyoews/neotw/compare/v3.293.0...v3.293.1) (2023-06-09)
 
 
