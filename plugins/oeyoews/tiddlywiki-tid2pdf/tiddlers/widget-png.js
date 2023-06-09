@@ -7,7 +7,7 @@ tid2png/widget
 
 \*/
 // TODO: count img size
-(function() {
+(function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -80,19 +80,19 @@ tid2png/widget
         }).then(canvas => {
           const imgData = canvas.toDataURL('image/png');
 
+          // TODO: support data-fancybox arrtibute
           // https://www.zhangxinxu.com/wordpress/2018/02/crossorigin-canvas-getimagedata-cors/
           const imgNode = new Image();
           imgNode.src = imgData;
           imgNode.crossOrigin = '';
-          const cloneImgNode = imgNode.cloneNode(true);
-          cloneImgNode.style.width = '512px';
-          cloneImgNode.classList.add('shadow-sm');
+          imgNode.style.width = '512px';
+          imgNode.classList.add('shadow-sm');
 
           if (this.preview) {
             swal({
               icon: 'success',
               title: `${this.title}`,
-              content: cloneImgNode,
+              content: imgNode,
               /* content: {
                 element: imgNode,
               }, */

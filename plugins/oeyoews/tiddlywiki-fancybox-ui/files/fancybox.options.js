@@ -1,4 +1,5 @@
 module.exports = {
+  // Toolbar: false,
   Toolbar: {
     display: {
       left: ['infobar'],
@@ -12,17 +13,20 @@ module.exports = {
         'flipY', */
       ],
       right: [
-        // 'slideshow', 'fullscreen', 'download', 'thumbs', 'close'
+        // 'slideshow', 'fullscreen', 'download', 'thumbs', 'close',
       ],
     },
+    enabled: true,
   },
   Fullscreen: {
     autoStart: false,
   },
-  Thumbs: {
+  /* Thumbs: {
     type: 'modern', // modern, classic
+    showOnStart: false,
     key: 'o',
-  },
+  }, */
+  Thumbs: false,
   keyboard: {
     Delete: 'close',
     Escape: 'close',
@@ -39,9 +43,8 @@ module.exports = {
     ArrowRight: 'next',
     ArrowLeft: 'prev',
   },
-  Image: {
-    zoom: false,
-    wheel: 'close',
+  Images: {
+    initialSize: 'cover', // cover; fit;
   },
   Hash: false, // custom hash  https://fancyapps.com/fancybox/plugins/hash/
 };
