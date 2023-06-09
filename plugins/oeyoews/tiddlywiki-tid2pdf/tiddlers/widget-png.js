@@ -7,7 +7,7 @@ tid2png/widget
 
 \*/
 // TODO: count img size
-(function () {
+(function() {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -24,6 +24,11 @@ tid2png/widget
     computeAttributes() {
       super.computeAttributes();
       this.title = this.getVariable('currentTiddler', 'default title');
+      if (this.title.length > 12) {
+        const firstHalf = this.title.substring(0, 6);
+        const secondHalf = this.title.substring(this.title.length - 6);
+        this.title = `${firstHalf}...${secondHalf}`;
+      }
       this.param = this.getAttribute('param', `Download ${this.title}.png`);
       this.preview = this.getAttribute('preview', true);
     }
