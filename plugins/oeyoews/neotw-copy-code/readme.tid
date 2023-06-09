@@ -96,7 +96,8 @@ fun main() {
 <!-- * update copied icon -->
 <!-- * add viewtoolbar not pagecontrol -->
 <!-- * support hover scroll for code preview -->
-* update style for button
-* add hover style
+<!-- * update style for button -->
+<!-- * add hover style -->
+* make preview is optional
 * add transform style
 * update plugin dependencies
