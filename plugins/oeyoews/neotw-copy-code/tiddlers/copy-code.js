@@ -21,7 +21,8 @@ function addCopyButton() {
     } else {
       const copyButton = $tw.utils.domMaker('button', {
         text: fileType ? `${fileType} 📋` : '📋',
-        class: 'copy-button float-right hover:bg-gray-200',
+        class:
+          'copy-button float-right hover:bg-gray-200 transition duration-200',
         attributes: {
           title: 'Copy code',
         },
@@ -29,6 +30,11 @@ function addCopyButton() {
       // TODO: splict this
       copyButton.addEventListener('click', () => {
         copyButton.textContent = '✅ Copied!';
+        copyButton.classList.add('bg-lime-300');
+        setTimeout(() => {
+          (copyButton.textContent = fileType ? `${fileType} 📋` : '📋'),
+            copyButton.classList.remove('bg-lime-300');
+        }, 2000);
         const range = document.createRange();
         range.selectNode(codeElement);
         window.getSelection().removeAllRanges();
