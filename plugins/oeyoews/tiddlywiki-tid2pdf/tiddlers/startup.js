@@ -7,7 +7,7 @@ tid2pdf module
 
 \*/
 // TODO: merge om-export-png and widget code
-(function() {
+(function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -66,6 +66,7 @@ tid2pdf module
               },
               cancel: 'Cancel',
             },
+            // TODO: suitable mobile style
             className: 'w-auto',
           }).then(value => {
             if (value) {
