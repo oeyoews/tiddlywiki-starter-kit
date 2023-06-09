@@ -42,8 +42,8 @@ function addCopyButton() {
         const isSuccess = document.execCommand('copy');
         window.getSelection().removeAllRanges();
         if (isSuccess) {
-          confetti();
-          howler();
+          // confetti();
+          // howler();
 
           const container = document.createElement('div');
           container.classList.add('max-w-full', 'overflow-auto'); // 添加适当的容器样式
