@@ -2628,7 +2628,7 @@ Undefined widget 'tid2pdf'
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>GettingStarted</title><link href="https://neotw.netlify.app/#GettingStarted"></link><link href="https://neotw.netlify.app/static/GettingStarted.html" rel="alternative" type="text/html"></link><id>fc927313-83cf-7e0a-53c1-21853f695851</id><updated>2023-06-05T19:42:02</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:bg-white">
 <div class="dark:hidden">
 <img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-671-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-47-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-72-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-5 hours ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-47 seconds ago-green?style=social"></img>  
 </div>
 
 
@@ -4813,7 +4813,7 @@ Undefined widget 'tid2pdf'<hr class="footnotes-sep"></hr>
 &lt;/ul&gt;
 &lt;/div&gt;</url></dirname></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-badges</title><link href="https://neotw.netlify.app/#neotw-badges"></link><link href="https://neotw.netlify.app/static/neotw-badges.html" rel="alternative" type="text/html"></link><id>f934e3aa-d36d-34bb-609b-922693d9b993</id><updated>2023-06-01T21:41:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:hidden">
 <img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-671-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-47-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-72-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-5 hours ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-47 seconds ago-green?style=social"></img>  
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-command</title><link href="https://neotw.netlify.app/#neotw-command"></link><link href="https://neotw.netlify.app/static/neotw-command.html" rel="alternative" type="text/html"></link><id>188385e0-6b3a-4916-a54a-061d9d29e18f</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
        ✨ 0.1
@@ -4960,14 +4960,202 @@ docker rename old_name new_name    # 容器重新命名
 <li>systemctl list-times --all</li>
 <li>echo $XDG_SECCION_TYPE # show x11</li>
 </ul>
-&lt;/div&gt;</ALIDAS></ID></p></li></ID></p></li></ID></p></li></ID></p></li></ID></p></li></ID></p></li></ID></p></li></ul></p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-gettingstarted</title><link href="https://neotw.netlify.app/#neotw-gettingstarted"></link><link href="https://neotw.netlify.app/static/neotw-gettingstarted.html" rel="alternative" type="text/html"></link><id>c57ae495-bd9a-6e00-25d8-f13f23fda7e1</id><updated>2023-03-01T13:54:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>GettingStarted</p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-git</title><link href="https://neotw.netlify.app/#neotw-git"></link><link href="https://neotw.netlify.app/static/neotw-git.html" rel="alternative" type="text/html"></link><id>3e952baf-6028-6657-583b-eb758a0534f2</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h3>
+&lt;/div&gt;</ALIDAS></ID></p></li></ID></p></li></ID></p></li></ID></p></li></ID></p></li></ID></p></li></ID></p></li></ul></p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-gettingstarted</title><link href="https://neotw.netlify.app/#neotw-gettingstarted"></link><link href="https://neotw.netlify.app/static/neotw-gettingstarted.html" rel="alternative" type="text/html"></link><id>c57ae495-bd9a-6e00-25d8-f13f23fda7e1</id><updated>2023-03-01T13:54:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>GettingStarted</p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-git</title><link href="https://neotw.netlify.app/#neotw-git"></link><link href="https://neotw.netlify.app/static/neotw-git.html" rel="alternative" type="text/html"></link><id>3e952baf-6028-6657-583b-eb758a0534f2</id><updated>2023-06-09T20:17:27</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+<p><div class="toc" id="toc">
+        <h3>🌴 Table of Contents</h3>
+    <ul class="toc-level"><ul class="toc-level"><ul class="toc-level">
+          <li class="capitalize">
+            <a href="##h-0.0.1">
+              ⭐️ 0.0.1 Reverd
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.0.2">
+              ⭐️ 0.0.2 Log
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.0.3">
+              ⭐️ 0.0.3 Misc
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.0.4">
+              ⭐️ 0.0.4 Status
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.0.5">
+              ⭐️ 0.0.5 Count
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.0.6">
+              ⭐️ 0.0.6 Gc
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.0.7">
+              ⭐️ 0.0.7 Show
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.0.8">
+              ⭐️ 0.0.8 Tag
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.0.9">
+              ⭐️ 0.0.9 Reset
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.0.10">
+              ⭐️ 0.0.10 Diff
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.0.11">
+              ⭐️ 0.0.11 Gitignore
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.0.12">
+              ⭐️ 0.0.12 Remote
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.0.13">
+              ⭐️ 0.0.13 Branch
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.0.14">
+              ⭐️ 0.0.14 Checkout
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.0.15">
+              ⭐️ 0.0.15 Push
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.0.16">
+              ⭐️ 0.0.16 Commit
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.0.17">
+              ⭐️ 0.0.17 Merge
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.0.18">
+              ⭐️ 0.0.18 Cache
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.0.19">
+              ⭐️ 0.0.19 Mv
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.0.20">
+              ⭐️ 0.0.20 Config
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.0.21">
+              ⭐️ 0.0.21 Ssh
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.0.22">
+              ⭐️ 0.0.22 Multi_repository_address
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.0.23">
+              ⭐️ 0.0.23 Gitlab
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.0.24">
+              ⭐️ 0.0.24 Enhance_speed
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.0.25">
+              ⭐️ 0.0.25 GitReset
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.0.26">
+              ⭐️ 0.0.26 Relative_web
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.0.27">
+              ⭐️ 0.0.27 git_submoudle(子模块)
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.0.28">
+              ⭐️ 0.0.28 git pull
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.0.29">
+              ⭐️ 0.0.29 commit
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.0.30">
+              ⭐️ 0.0.30 Note
+            </a>
+          </li>
+        </ul></ul></ul></div>
+</p>
+
+    <h3>
       <a href="##h-0.0.1" id="#h-0.0.1">
        ✨ 0.0.1
       </a>
   Reverd</h3>
 <ul>
 <li>git revert id    # 会有冲突出现  ？</li>
-</ul></p><p><h3>
+</ul>
+
+    <h3>
       <a href="##h-0.0.2" id="#h-0.0.2">
        ✨ 0.0.2
       </a>
@@ -4977,7 +5165,9 @@ docker rename old_name new_name    # 容器重新命名
 <li>git reflog    # show local log</li>
 <li>git log --all --graph   #查看所有的分支记录  直观</li>
 <li>git log --all -n 4 --graph  --oneline     # 结合  部分的参数</li>
-</ul></p><p><h3>
+</ul>
+
+    <h3>
       <a href="##h-0.0.3" id="#h-0.0.3">
        ✨ 0.0.3
       </a>
@@ -4985,35 +5175,45 @@ docker rename old_name new_name    # 容器重新命名
 <ul>
 <li>git -b develop https://github.com/… # only to clone a appointment</li>
 <li>git ls-remote  //  detail</li>
-</ul></p><p><h3>
+</ul>
+
+    <h3>
       <a href="##h-0.0.4" id="#h-0.0.4">
        ✨ 0.0.4
       </a>
   Status</h3>
 <ul>
 <li>git show -sb</li>
-</ul></p><p><h3>
+</ul>
+
+    <h3>
       <a href="##h-0.0.5" id="#h-0.0.5">
        ✨ 0.0.5
       </a>
   Count</h3>
 <ul>
 <li>git rev-list --count branch_name</li>
-</ul></p><p><h3>
+</ul>
+
+    <h3>
       <a href="##h-0.0.6" id="#h-0.0.6">
        ✨ 0.0.6
       </a>
   Gc</h3>
 <ul>
 <li>git gc</li>
-</ul></p><p><h3>
+</ul>
+
+    <h3>
       <a href="##h-0.0.7" id="#h-0.0.7">
        ✨ 0.0.7
       </a>
   Show</h3>
 <ul>
 <li>git show main:readme.md</li>
-</ul></p><p><h3>
+</ul>
+
+    <h3>
       <a href="##h-0.0.8" id="#h-0.0.8">
        ✨ 0.0.8
       </a>
@@ -5030,7 +5230,9 @@ docker rename old_name new_name    # 容器重新命名
 </ul>
 <ul>
 <li>git push --tags</li>
-</ul></p><p><h3>
+</ul>
+
+    <h3>
       <a href="##h-0.0.9" id="#h-0.0.9">
        ✨ 0.0.9
       </a>
@@ -5289,17 +5491,17 @@ hard 表示将工作区 暂存区 版本库记录 恢复到某一定版本，com
 </li>
 </ul>
 
-    <h2>
-      <a href="##h-0.1" id="#h-0.1">
-       ✨ 0.1
+    <h3>
+      <a href="##h-0.0.30" id="#h-0.0.30">
+       ✨ 0.0.30
       </a>
-  Note</h2>
+  Note</h3>
 <ul>
 <li>if a new file never recorded by git, even you switch new branch, modify anyaway, it’s influencd for all branch</li>
 <li>and if the file is recorded, if you don’t add or Commit to switch another branch, it’s will fetch current file jobs to
 next branch, unless you commit it’s job</li>
 </ul>
-&lt;/div&gt;</branch></li></ul></filename></li></ul></p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-go</title><link href="https://neotw.netlify.app/#neotw-go"></link><link href="https://neotw.netlify.app/static/neotw-go.html" rel="alternative" type="text/html"></link><id>bb81689f-383d-fb73-a038-30f994f372a4</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
+&lt;/div&gt;</branch></li></ul></filename></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-go</title><link href="https://neotw.netlify.app/#neotw-go"></link><link href="https://neotw.netlify.app/static/neotw-go.html" rel="alternative" type="text/html"></link><id>bb81689f-383d-fb73-a038-30f994f372a4</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
        ✨ 0.1
       </a>
@@ -5376,13 +5578,45 @@ q w
        ✨ 0.1
       </a>
   Hello TiddlyWiki</h2>
-</p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-keymaps</title><link href="https://neotw.netlify.app/#neotw-keymaps"></link><link href="https://neotw.netlify.app/static/neotw-keymaps.html" rel="alternative" type="text/html"></link><id>cdbc2621-d929-352b-6f71-4aa243333b72</id><updated>2023-03-01T13:57:14</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-lua</title><link href="https://neotw.netlify.app/#neotw-lua"></link><link href="https://neotw.netlify.app/static/neotw-lua.html" rel="alternative" type="text/html"></link><id>5fc9b516-ecc3-33dc-8f11-8e995d8e8abf</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
+</p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-keymaps</title><link href="https://neotw.netlify.app/#neotw-keymaps"></link><link href="https://neotw.netlify.app/static/neotw-keymaps.html" rel="alternative" type="text/html"></link><id>cdbc2621-d929-352b-6f71-4aa243333b72</id><updated>2023-03-01T13:57:14</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-lua</title><link href="https://neotw.netlify.app/#neotw-lua"></link><link href="https://neotw.netlify.app/static/neotw-lua.html" rel="alternative" type="text/html"></link><id>5fc9b516-ecc3-33dc-8f11-8e995d8e8abf</id><updated>2023-06-09T20:22:28</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+<p><div class="toc" id="toc">
+        <h3>🌴 Table of Contents</h3>
+    <ul class="toc-level"><ul class="toc-level">
+          <li class="capitalize">
+            <a href="##h-0.1">
+              ⭐️ 0.1 lua
+            </a>
+          </li>
+        <ul class="toc-level">
+          <li class="capitalize">
+            <a href="##h-0.1.1">
+              ⭐️ 0.1.1 NOTE:
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.1.2">
+              ⭐️ 0.1.2 logical operator
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.1.3">
+              ⭐️ 0.1.3 Type
+            </a>
+          </li>
+        </ul></ul></ul></div>
+</p>
+
+    <h2>
       <a href="##h-0.1" id="#h-0.1">
        ✨ 0.1
       </a>
   lua</h2>
 <p><a class="tc-tiddlylink-external _codified_" href="https://www.2n.pl/blog/how-to-write-neovim-plugins-in-lua" rel="noopener noreferrer" target="_blank">make_lua_plugin</a>
-</p></p><p><h3>
+</p>
+
+    <h3>
       <a href="##h-0.1.1" id="#h-0.1.1">
        ✨ 0.1.1
       </a>
@@ -5396,7 +5630,9 @@ q w
 <p>system yay site : /usr/libs/lua…(by pkgbuild)
 </p>
 </li>
-</ul></p><p><h3>
+</ul>
+
+    <h3>
       <a href="##h-0.1.2" id="#h-0.1.2">
        ✨ 0.1.2
       </a>
@@ -5414,7 +5650,9 @@ q w
 <p>print(package.path)
 </p>
 </li>
-</ul></p><p><h3>
+</ul>
+
+    <h3>
       <a href="##h-0.1.3" id="#h-0.1.3">
        ✨ 0.1.3
       </a>
@@ -5424,7 +5662,7 @@ q w
 <li>nil boolean function</li>
 <li>table userdata thread</li>
 </ul>
-</p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-markdown</title><link href="https://neotw.netlify.app/#neotw-markdown"></link><link href="https://neotw.netlify.app/static/neotw-markdown.html" rel="alternative" type="text/html"></link><id>bf312cfb-ebce-331c-476a-9b694bc688a7</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-markdown</title><link href="https://neotw.netlify.app/#neotw-markdown"></link><link href="https://neotw.netlify.app/static/neotw-markdown.html" rel="alternative" type="text/html"></link><id>bf312cfb-ebce-331c-476a-9b694bc688a7</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
        ✨ 0.1
       </a>
@@ -5460,7 +5698,37 @@ This is <a class="tc-tiddlylink-external _codified_" href="http://example.com/" 
 <li>how to config this config : change this default directory</li>
 <li>sudo systemctl reload nginx.versice</li>
 </ul>
-</p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-npm&amp;yarn</title><link href="https://neotw.netlify.app/#neotw-npm%26yarn"></link><link href="https://neotw.netlify.app/static/neotw-npm%2526yarn.html" rel="alternative" type="text/html"></link><id>79145287-6943-8957-5288-8b0ebca74473</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
+</p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-npm-yarn</title><link href="https://neotw.netlify.app/#neotw-npm-yarn"></link><link href="https://neotw.netlify.app/static/neotw-npm-yarn.html" rel="alternative" type="text/html"></link><id>66dee807-e791-6360-3444-3728fe0728d5</id><updated>2023-06-09T20:22:57</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+<p><div class="toc" id="toc">
+        <h3>🌴 Table of Contents</h3>
+    <ul class="toc-level"><ul class="toc-level">
+          <li class="capitalize">
+            <a href="##h-0.1">
+              ⭐️ 0.1 Change source
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.2">
+              ⭐️ 0.2 Nvm
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.3">
+              ⭐️ 0.3 Npm
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.4">
+              ⭐️ 0.4 Yarn
+            </a>
+          </li>
+        </ul></ul></div>
+</p>
+
+    <h2>
       <a href="##h-0.1" id="#h-0.1">
        ✨ 0.1
       </a>
@@ -5469,7 +5737,9 @@ This is <a class="tc-tiddlylink-external _codified_" href="http://example.com/" 
 </p>
 <ul>
 <li>npm config set registry https://registry.npm.taobao.org                 # npm换源</li>
-</ul></p><p><h2>
+</ul>
+
+    <h2>
       <a href="##h-0.2" id="#h-0.2">
        ✨ 0.2
       </a>
@@ -5478,7 +5748,9 @@ This is <a class="tc-tiddlylink-external _codified_" href="http://example.com/" 
 nvm alias default 12.14
 nvm use default
 npm init # 用来生成一个新的package.json 文件
-</p></p><p><h2>
+</p>
+
+    <h2>
       <a href="##h-0.3" id="#h-0.3">
        ✨ 0.3
       </a>
@@ -5509,7 +5781,9 @@ npm-check -u -i # 更新
 npm upgrade   # 升级所有可以更新包
 npm -g outdated   # 查看已经过时的包
 npm install -g npm-check  # npm-check -u -g  检查依赖关系
-</p></p><p><h2>
+</p>
+
+    <h2>
       <a href="##h-0.4" id="#h-0.4">
        ✨ 0.4
       </a>
@@ -5521,42 +5795,130 @@ yarn add
 yarn init -y #
 yarn upgrade-interactive --latest    # 忽略包json ，升级最新版本
 </p>
-</p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-plugins</title><link href="https://neotw.netlify.app/#neotw-plugins"></link><link href="https://neotw.netlify.app/static/neotw-plugins.html" rel="alternative" type="text/html"></link><id>ed441761-6c6e-6b37-db79-1349a4096086</id><updated>2023-01-18T10:58:50</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-question</title><link href="https://neotw.netlify.app/#neotw-question"></link><link href="https://neotw.netlify.app/static/neotw-question.html" rel="alternative" type="text/html"></link><id>69607510-a2c0-16c6-cf8c-4f7d52518b2c</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-plugins</title><link href="https://neotw.netlify.app/#neotw-plugins"></link><link href="https://neotw.netlify.app/static/neotw-plugins.html" rel="alternative" type="text/html"></link><id>ed441761-6c6e-6b37-db79-1349a4096086</id><updated>2023-01-18T10:58:50</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-question</title><link href="https://neotw.netlify.app/#neotw-question"></link><link href="https://neotw.netlify.app/static/neotw-question.html" rel="alternative" type="text/html"></link><id>69607510-a2c0-16c6-cf8c-4f7d52518b2c</id><updated>2023-06-09T20:18:02</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+<p><div class="toc" id="toc">
+        <h3>🌴 Table of Contents</h3>
+    <ul class="toc-level"><ul class="toc-level">
+          <li class="capitalize">
+            <a href="##h-0.1">
+              ⭐️ 0.1 libreoffice
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.2">
+              ⭐️ 0.2 Gnome workspace
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.3">
+              ⭐️ 0.3 Github
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.4">
+              ⭐️ 0.4 latex
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.5">
+              ⭐️ 0.5 wiki
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.6">
+              ⭐️ 0.6 tiddlywiki
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.7">
+              ⭐️ 0.7 github
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.8">
+              ⭐️ 0.8 debug
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.9">
+              ⭐️ 0.9 gnome another clipboard
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.10">
+              ⭐️ 0.10 soft
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.11">
+              ⭐️ 0.11 note
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.12">
+              ⭐️ 0.12 soft
+            </a>
+          </li>
+        </ul></ul></div>
+</p>
+
+    <h2>
       <a href="##h-0.1" id="#h-0.1">
        ✨ 0.1
       </a>
   libreoffice</h2>
 <ul>
 <li>page number: right click, to select style and setup first page options</li>
-</ul></p><p><h2>
+</ul>
+
+    <h2>
       <a href="##h-0.2" id="#h-0.2">
        ✨ 0.2
       </a>
   Gnome workspace</h2>
 <ul>
 <li>up and down in dash dock to switch workspace</li>
-</ul></p><p><h2>
+</ul>
+
+    <h2>
       <a href="##h-0.3" id="#h-0.3">
        ✨ 0.3
       </a>
   Github</h2>
 <ul class="task-list">
 <li class="task-list-item"><input disabled="true" id="cbx_0" type="checkbox"></input><label for="cbx_0"> github project’s item archived, how to check out?</label></li>
-</ul></p><p><h2>
+</ul>
+
+    <h2>
       <a href="##h-0.4" id="#h-0.4">
        ✨ 0.4
       </a>
   latex</h2>
 <ul class="task-list">
 <li class="task-list-item"><input disabled="true" id="cbx_1" type="checkbox"></input><label for="cbx_1"> how to type arrrange number?</label></li>
-</ul></p><p><h2>
+</ul>
+
+    <h2>
       <a href="##h-0.5" id="#h-0.5">
        ✨ 0.5
       </a>
   wiki</h2>
 <ul class="task-list">
 <li class="task-list-item"><input disabled="true" id="cbx_2" type="checkbox"></input><label for="cbx_2"> learn short tiddlywiki</label></li>
-</ul></p><p><h2>
+</ul>
+
+    <h2>
       <a href="##h-0.6" id="#h-0.6">
        ✨ 0.6
       </a>
@@ -5566,31 +5928,41 @@ yarn upgrade-interactive --latest    # 忽略包json ，升级最新版本
 <li>bug: add other plugins to tiddylwikidesktop, this app will exit(for 太微 拼音插件)</li>
 <li>bug: <s>save to github is still bug, save is keep fail</s>, this push speed very slow</li>
 <li>note: don’t use tiddly plugin, it’s hard to uninstall plugin, and more troubles, less is simple, is more</li>
-</ul></p><p><h2>
+</ul>
+
+    <h2>
       <a href="##h-0.7" id="#h-0.7">
        ✨ 0.7
       </a>
   github</h2>
 <pre><code>- notes: git checkout -b dev [commitid]
-</code></pre></p><p><h2>
+</code></pre>
+
+    <h2>
       <a href="##h-0.8" id="#h-0.8">
        ✨ 0.8
       </a>
   debug</h2>
 <pre><code>- when have browser cache, don't use to clean the cache, just open private mode to debug it
-</code></pre></p><p><h2>
+</code></pre>
+
+    <h2>
       <a href="##h-0.9" id="#h-0.9">
        ✨ 0.9
       </a>
   gnome another clipboard</h2>
 <pre><code>- clipboard indicator
-</code></pre></p><p><h2>
+</code></pre>
+
+    <h2>
       <a href="##h-0.10" id="#h-0.10">
        ✨ 0.10
       </a>
   soft</h2>
 <pre><code>- notable
-</code></pre></p><p><h2>
+</code></pre>
+
+    <h2>
       <a href="##h-0.11" id="#h-0.11">
        ✨ 0.11
       </a>
@@ -5600,7 +5972,9 @@ yarn upgrade-interactive --latest    # 忽略包json ，升级最新版本
 - logseq
 - zotero
 - Zettelkasten
-</code></pre></p><p><h2>
+</code></pre>
+
+    <h2>
       <a href="##h-0.12" id="#h-0.12">
        ✨ 0.12
       </a>
@@ -5622,7 +5996,7 @@ papirus-folders
 papirus-folders -C breeze --theme Papirus-Dark
 .icons /usr/share/icons
 </p>
-</p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-ranger</title><link href="https://neotw.netlify.app/#neotw-ranger"></link><link href="https://neotw.netlify.app/static/neotw-ranger.html" rel="alternative" type="text/html"></link><id>74f55e7f-4477-ca1a-526e-943a00418243</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-ranger</title><link href="https://neotw.netlify.app/#neotw-ranger"></link><link href="https://neotw.netlify.app/static/neotw-ranger.html" rel="alternative" type="text/html"></link><id>74f55e7f-4477-ca1a-526e-943a00418243</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
        ✨ 0.1
       </a>
@@ -5762,7 +6136,145 @@ echo “default_linemode devicons” &gt;&gt; $HOME/.config/ranger/rc.conf   # a
 </ul>
 <p>@endshell
 </p>
-</p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-soft</title><link href="https://neotw.netlify.app/#neotw-soft"></link><link href="https://neotw.netlify.app/static/neotw-soft.html" rel="alternative" type="text/html"></link><id>f9618360-957f-620c-cba3-b2882c2347e6</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
+</p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-soft</title><link href="https://neotw.netlify.app/#neotw-soft"></link><link href="https://neotw.netlify.app/static/neotw-soft.html" rel="alternative" type="text/html"></link><id>f9618360-957f-620c-cba3-b2882c2347e6</id><updated>2023-06-09T20:13:27</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+<p><div class="toc" id="toc">
+        <h3>🌴 Table of Contents</h3>
+    <ul class="toc-level"><ul class="toc-level">
+          <li class="capitalize">
+            <a href="##h-0.1">
+              ⭐️ 0.1 Gnome
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.2">
+              ⭐️ 0.2 Office
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.3">
+              ⭐️ 0.3 bootiso
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.4">
+              ⭐️ 0.4 IME
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.5">
+              ⭐️ 0.5 QQ
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.6">
+              ⭐️ 0.6 MusicPlayer
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.7">
+              ⭐️ 0.7 analyse memory
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.8">
+              ⭐️ 0.8 picture show
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.9">
+              ⭐️ 0.9 better pdf
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.10">
+              ⭐️ 0.10 mysql tools
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.11">
+              ⭐️ 0.11 MarkdownEditor
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.12">
+              ⭐️ 0.12 Image
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.13">
+              ⭐️ 0.13 Dictionary
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.14">
+              ⭐️ 0.14 System
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.15">
+              ⭐️ 0.15 Brower
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.16">
+              ⭐️ 0.16 Video
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.17">
+              ⭐️ 0.17 Typing expercise
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.18">
+              ⭐️ 0.18 Font
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.19">
+              ⭐️ 0.19 terminal
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.20">
+              ⭐️ 0.20 Image Viewer
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.21">
+              ⭐️ 0.21 Reader Viewer
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.22">
+              ⭐️ 0.22 Video editor
+            </a>
+          </li>
+        </ul></ul></div>
+</p>
+
+    <h2>
       <a href="##h-0.1" id="#h-0.1">
        ✨ 0.1
       </a>
@@ -5806,7 +6318,9 @@ echo “default_linemode devicons” &gt;&gt; $HOME/.config/ranger/rc.conf   # a
 <p>fcitx5-material-color
 </p>
 </li>
-</ul></p><p><h2>
+</ul>
+
+    <h2>
       <a href="##h-0.2" id="#h-0.2">
        ✨ 0.2
       </a>
@@ -5854,7 +6368,9 @@ echo “default_linemode devicons” &gt;&gt; $HOME/.config/ranger/rc.conf   # a
   
   
 </li>
-</ul></p><p><h2>
+</ul>
+
+    <h2>
       <a href="##h-0.3" id="#h-0.3">
        ✨ 0.3
       </a>
@@ -5862,7 +6378,9 @@ echo “default_linemode devicons” &gt;&gt; $HOME/.config/ranger/rc.conf   # a
 <ul>
 <li>ventoy</li>
 <li>etcher <a class="tc-tiddlylink-external _codified_" href="https://www.balena.io/etcher/" rel="noopener noreferrer" target="_blank">etcher-link</a></li>
-</ul></p><p><h2>
+</ul>
+
+    <h2>
       <a href="##h-0.4" id="#h-0.4">
        ✨ 0.4
       </a>
@@ -5884,7 +6402,9 @@ echo “default_linemode devicons” &gt;&gt; $HOME/.config/ranger/rc.conf   # a
 </li>
 </ul>
 </li>
-</ul></p><p><h2>
+</ul>
+
+    <h2>
       <a href="##h-0.5" id="#h-0.5">
        ✨ 0.5
       </a>
@@ -5923,7 +6443,9 @@ echo “default_linemode devicons” &gt;&gt; $HOME/.config/ranger/rc.conf   # a
 <li>git-open</li>
 </ul>
 </li>
-</ul></p><p><h2>
+</ul>
+
+    <h2>
       <a href="##h-0.6" id="#h-0.6">
        ✨ 0.6
       </a>
@@ -5968,14 +6490,18 @@ echo “default_linemode devicons” &gt;&gt; $HOME/.config/ranger/rc.conf   # a
 <p>kate
 </p>
 </li>
-</ul></p><p><h2>
+</ul>
+
+    <h2>
       <a href="##h-0.7" id="#h-0.7">
        ✨ 0.7
       </a>
   analyse memory</h2>
 <p>valgrind
 massif-visualizer
-</p></p><p><h2>
+</p>
+
+    <h2>
       <a href="##h-0.8" id="#h-0.8">
        ✨ 0.8
       </a>
@@ -6001,7 +6527,9 @@ massif-visualizer
 <p>shuffle(command is shuf)
 </p>
 </li>
-</ul></p><p><h2>
+</ul>
+
+    <h2>
       <a href="##h-0.9" id="#h-0.9">
        ✨ 0.9
       </a>
@@ -6018,7 +6546,9 @@ massif-visualizer
 <p>awesome-terminal-fonts
 </p>
 </li>
-</ul></p><p><h2>
+</ul>
+
+    <h2>
       <a href="##h-0.10" id="#h-0.10">
        ✨ 0.10
       </a>
@@ -6034,7 +6564,9 @@ massif-visualizer
 
 
 
-</p><p><h2>
+
+
+    <h2>
       <a href="##h-0.11" id="#h-0.11">
        ✨ 0.11
       </a>
@@ -6113,14 +6645,18 @@ meld
 <p>imagemagick(cmd: display)
 </p>
 
-</p><p><h2>
+
+
+    <h2>
       <a href="##h-0.12" id="#h-0.12">
        ✨ 0.12
       </a>
   Image</h2>
 <ul>
 <li>picgo <a class="tc-tiddlylink-external _codified_" href="https://picgo.github.io/PicGo-Doc/zh/guide/config.html#%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E9%A2%84%E8%A7%88" rel="noopener noreferrer" target="_blank">picgo</a></li>
-</ul></p><p><h2>
+</ul>
+
+    <h2>
       <a href="##h-0.13" id="#h-0.13">
        ✨ 0.13
       </a>
@@ -6148,7 +6684,9 @@ meld
 </li>
 </ul>
 </li>
-</ul></p><p><h2>
+</ul>
+
+    <h2>
       <a href="##h-0.14" id="#h-0.14">
        ✨ 0.14
       </a>
@@ -6167,7 +6705,9 @@ meld
 <li>gtop</li>
 <li>gotop(like htop be made by go)</li>
 <li>gpaste</li>
-</ul></p><p><h2>
+</ul>
+
+    <h2>
       <a href="##h-0.15" id="#h-0.15">
        ✨ 0.15
       </a>
@@ -6200,7 +6740,9 @@ meld
 <li>downgrade</li>
 </ul>
 </li>
-</ul></p><p><h2>
+</ul>
+
+    <h2>
       <a href="##h-0.16" id="#h-0.16">
        ✨ 0.16
       </a>
@@ -6210,7 +6752,9 @@ meld
 <li>kooha</li>
 <li>gromit-mpx(painting)</li>
 <li>flameshot <a class="tc-tiddlylink-external _codified_" href="https://github.com/flameshot-org/flameshot" rel="noopener noreferrer" target="_blank">flameshot-link</a></li>
-</ul></p><p><h2>
+</ul>
+
+    <h2>
       <a href="##h-0.17" id="#h-0.17">
        ✨ 0.17
       </a>
@@ -6227,7 +6771,9 @@ meld
   
   
 </li>
-</ul></p><p><h2>
+</ul>
+
+    <h2>
       <a href="##h-0.18" id="#h-0.18">
        ✨ 0.18
       </a>
@@ -6294,7 +6840,9 @@ meld
 </li>
 </ul>
 </li>
-</ul></p><p><h2>
+</ul>
+
+    <h2>
       <a href="##h-0.19" id="#h-0.19">
        ✨ 0.19
       </a>
@@ -6322,7 +6870,9 @@ meld
   
   
 </li>
-</ul></p><p><h2>
+</ul>
+
+    <h2>
       <a href="##h-0.20" id="#h-0.20">
        ✨ 0.20
       </a>
@@ -6366,7 +6916,9 @@ meld
   
   
 </li>
-</ul></p><p><h2>
+</ul>
+
+    <h2>
       <a href="##h-0.21" id="#h-0.21">
        ✨ 0.21
       </a>
@@ -6377,7 +6929,9 @@ meld
 <li>kchmviewer</li>
 <li>calibre</li>
 <li>foliate                    # book read</li>
-</ul></p><p><h2>
+</ul>
+
+    <h2>
       <a href="##h-0.22" id="#h-0.22">
        ✨ 0.22
       </a>
@@ -6392,7 +6946,7 @@ meld
 
 <pre><code>  &lt;!---  beamer(todo)--&gt;
 </code></pre>
-</p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-stylesheet</title><link href="https://neotw.netlify.app/#neotw-stylesheet"></link><link href="https://neotw.netlify.app/static/neotw-stylesheet.html" rel="alternative" type="text/html"></link><id>f893749d-752a-5e78-ed56-717d02c583bb</id><updated>2023-04-29T00:17:36</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p></p><p>.tc-tiddler-frame .tc-tiddler-body {
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-stylesheet</title><link href="https://neotw.netlify.app/#neotw-stylesheet"></link><link href="https://neotw.netlify.app/static/neotw-stylesheet.html" rel="alternative" type="text/html"></link><id>f893749d-752a-5e78-ed56-717d02c583bb</id><updated>2023-04-29T00:17:36</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p></p><p>.tc-tiddler-frame .tc-tiddler-body {
     font-size: 20px;
 }</p><p>.tc-tiddler-preview-preview {
     border: 0px !important;
@@ -6619,7 +7173,409 @@ trans -S
 trans -M
 trans :ja xxx -p -b
 </code></pre>
-</p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-ui</title><link href="https://neotw.netlify.app/#neotw-ui"></link><link href="https://neotw.netlify.app/static/neotw-ui.html" rel="alternative" type="text/html"></link><id>c8ad1db5-73e9-33ff-9587-926398d0e692</id><updated>2023-03-06T20:22:30</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-wiki</title><link href="https://neotw.netlify.app/#neotw-wiki"></link><link href="https://neotw.netlify.app/static/neotw-wiki.html" rel="alternative" type="text/html"></link><id>83ea464e-a748-8a77-fddb-46f5b12b5c23</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
+</p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-ui</title><link href="https://neotw.netlify.app/#neotw-ui"></link><link href="https://neotw.netlify.app/static/neotw-ui.html" rel="alternative" type="text/html"></link><id>c8ad1db5-73e9-33ff-9587-926398d0e692</id><updated>2023-03-06T20:22:30</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-wiki</title><link href="https://neotw.netlify.app/#neotw-wiki"></link><link href="https://neotw.netlify.app/static/neotw-wiki.html" rel="alternative" type="text/html"></link><id>83ea464e-a748-8a77-fddb-46f5b12b5c23</id><updated>2023-06-09T20:12:50</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+<p><div class="toc" id="toc">
+        <h3>🌴 Table of Contents</h3>
+    <ul class="toc-level"><ul class="toc-level">
+          <li class="capitalize">
+            <a href="##h-0.1">
+              ⭐️ 0.1 Language
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.2">
+              ⭐️ 0.2 tmp
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.3">
+              ⭐️ 0.3 lyx
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.4">
+              ⭐️ 0.4 mysql
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.5">
+              ⭐️ 0.5 wine
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.6">
+              ⭐️ 0.6 nvim
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.7">
+              ⭐️ 0.7 kvm
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.8">
+              ⭐️ 0.8 v2raya
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.9">
+              ⭐️ 0.9 sound
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.10">
+              ⭐️ 0.10 timedatectl
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.11">
+              ⭐️ 0.11 ssh
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.12">
+              ⭐️ 0.12 google-chrome
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.13">
+              ⭐️ 0.13 staruml
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.14">
+              ⭐️ 0.14 gitlab
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.15">
+              ⭐️ 0.15 gnome
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.16">
+              ⭐️ 0.16 WallPaper
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.17">
+              ⭐️ 0.17 gnome Settings
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.18">
+              ⭐️ 0.18 github
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.19">
+              ⭐️ 0.19 Email
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.20">
+              ⭐️ 0.20 PATH
+            </a>
+          </li>
+        </ul>
+          <li class="capitalize">
+            <a href="##h-1">
+              ⭐️ 1 we usually to set some settings in .xprofil or .profile
+            </a>
+          </li>
+        <ul class="toc-level">
+          <li class="capitalize">
+            <a href="##h-1.1">
+              ⭐️ 1.1 IPTABLES
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-1.2">
+              ⭐️ 1.2 tomcat
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-1.3">
+              ⭐️ 1.3 curl
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-1.4">
+              ⭐️ 1.4 alias
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-1.5">
+              ⭐️ 1.5 yay
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-1.6">
+              ⭐️ 1.6 Pacman
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-1.7">
+              ⭐️ 1.7 jetbrain
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-1.8">
+              ⭐️ 1.8 obs
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-1.9">
+              ⭐️ 1.9 mpv
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-1.10">
+              ⭐️ 1.10 Grub
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-1.11">
+              ⭐️ 1.11 Direction
+            </a>
+          </li>
+        </ul>
+          <li class="capitalize">
+            <a href="##h-2">
+              ⭐️ 2 modify chinese-dir for system
+            </a>
+          </li>
+        <ul class="toc-level">
+          <li class="capitalize">
+            <a href="##h-2.1">
+              ⭐️ 2.1 add user
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-2.2">
+              ⭐️ 2.2 fonts
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-2.3">
+              ⭐️ 2.3 journalctl
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-2.4">
+              ⭐️ 2.4 new archwikich for mariadb
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-2.5">
+              ⭐️ 2.5 Jetbrain
+            </a>
+          </li>
+        <ul class="toc-level">
+          <li class="capitalize">
+            <a href="##h-2.5.1">
+              ⭐️ 2.5.1 downgrade
+            </a>
+          </li>
+        </ul>
+          <li class="capitalize">
+            <a href="##h-2.6">
+              ⭐️ 2.6 yay -Syyuu
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-2.7">
+              ⭐️ 2.7 Date-synchronize
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-2.8">
+              ⭐️ 2.8 timedatectl status
+            </a>
+          </li>
+        <ul class="toc-level">
+          <li class="capitalize">
+            <a href="##h-2.8.1">
+              ⭐️ 2.8.1 Auto login
+            </a>
+          </li>
+        </ul>
+          <li class="capitalize">
+            <a href="##h-2.9">
+              ⭐️ 2.9 comment /etc/sddm.conf `relogin` (for sddm)
+            </a>
+          </li>
+        <ul class="toc-level">
+          <li class="capitalize">
+            <a href="##h-2.9.1">
+              ⭐️ 2.9.1 fast shutdown
+            </a>
+          </li>
+        </ul>
+          <li class="capitalize">
+            <a href="##h-2.10">
+              ⭐️ 2.10 Logout
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-2.11">
+              ⭐️ 2.11 Redirect
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-2.12">
+              ⭐️ 2.12 Stow
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-2.13">
+              ⭐️ 2.13 pacman error
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-2.14">
+              ⭐️ 2.14 Gnome
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-2.15">
+              ⭐️ 2.15 Tim dpi
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-2.16">
+              ⭐️ 2.16 livecd grubk mount
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-2.17">
+              ⭐️ 2.17 tmp
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-2.18">
+              ⭐️ 2.18 Version
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-2.19">
+              ⭐️ 2.19 rar
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-2.20">
+              ⭐️ 2.20 cp
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-2.21">
+              ⭐️ 2.21 keyboard
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-2.22">
+              ⭐️ 2.22 Reset passwd
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-2.23">
+              ⭐️ 2.23 Games for browser
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-2.24">
+              ⭐️ 2.24 gnome-keyring
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-2.25">
+              ⭐️ 2.25 reveal
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-2.26">
+              ⭐️ 2.26 youtube double cc
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-2.27">
+              ⭐️ 2.27 disk
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-2.28">
+              ⭐️ 2.28 换行 \n 本义是光标往下一行（不一定到下一行行首），n的英文newline，控制字符可以写成LF，即Line Feed
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-2.29">
+              ⭐️ 2.29 在不同的**操作系统**这几个字符表现不同，比如在WIN系统下，这两个字符就是表现的本义，在UNIX类系统，换行\n就表现为光标下一行并回到行首，在MAC上，\r就表现为回到本行开头并往下一行，至于ENTER键的定义是与操作系统有关的。通常用的Enter是两个加起来。
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-2.30">
+              ⭐️ 2.30 \r: MAC OS 系统行末结束符
+            </a>
+          </li>
+        </ul></ul></div>
+</p>
+
+    <h2>
       <a href="##h-0.1" id="#h-0.1">
        ✨ 0.1
       </a>
@@ -6644,7 +7600,9 @@ grub-mkconfig -o /boot/grub/grub.cfg
 pacman gnome gdm
 systemctl enable gdm
 systemctl enable networkmanager ?
-</p></p><p><h2>
+</p>
+
+    <h2>
       <a href="##h-0.2" id="#h-0.2">
        ✨ 0.2
       </a>
@@ -6652,7 +7610,9 @@ systemctl enable networkmanager ?
 <ul>
 <li>localedef --list-archive</li>
 <li>LC_ALL=en_US.UTF-8 for /etc/locale.conf to resolve ago zh-CN questions</li>
-</ul></p><p><h2>
+</ul>
+
+    <h2>
       <a href="##h-0.3" id="#h-0.3">
        ✨ 0.3
       </a>
@@ -6660,7 +7620,9 @@ systemctl enable networkmanager ?
 <p>insert =&gt; math =&gt; latex
 insert latex environment, and you can directly input latex code
 shortkey: ctrl + m
-</p></p><p><h2>
+</p>
+
+    <h2>
       <a href="##h-0.4" id="#h-0.4">
        ✨ 0.4
       </a>
@@ -7880,7 +8842,7 @@ archlinux-java status
 </p>
 </li>
 </ul>
-&lt;/div&gt;</exec></li></ul></filename></li></ul></time></li></ul></li></ul></username></li></username></li></username></li></ul></directions></li></ul></li></ul></server-id></p></li></id></p></li></ul></PID></p></li></ul></p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw/action/base-time-darkmode</title><link href="https://neotw.netlify.app/#neotw%2Faction%2Fbase-time-darkmode"></link><link href="https://neotw.netlify.app/static/neotw%252Faction%252Fbase-time-darkmode.html" rel="alternative" type="text/html"></link><id>ca300897-59c7-394f-ab70-18ef3e8afa20</id><updated>2022-09-10T11:55:09</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>
+&lt;/div&gt;</exec></li></ul></filename></li></ul></time></li></ul></li></ul></username></li></username></li></username></li></ul></directions></li></ul></li></ul></server-id></p></li></id></p></li></ul></PID></p></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw/action/base-time-darkmode</title><link href="https://neotw.netlify.app/#neotw%2Faction%2Fbase-time-darkmode"></link><link href="https://neotw.netlify.app/static/neotw%252Faction%252Fbase-time-darkmode.html" rel="alternative" type="text/html"></link><id>ca300897-59c7-394f-ab70-18ef3e8afa20</id><updated>2022-09-10T11:55:09</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>
 
 
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw/actions/base-browser-darkmode</title><link href="https://neotw.netlify.app/#neotw%2Factions%2Fbase-browser-darkmode"></link><link href="https://neotw.netlify.app/static/neotw%252Factions%252Fbase-browser-darkmode.html" rel="alternative" type="text/html"></link><id>c06b7073-601c-a135-522e-8d52eb62e6db</id><updated>2022-09-10T11:09:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p></p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw/archive/restore-button</title><link href="https://neotw.netlify.app/#neotw%2Farchive%2Frestore-button"></link><link href="https://neotw.netlify.app/static/neotw%252Farchive%252Frestore-button.html" rel="alternative" type="text/html"></link><id>51399bbb-0860-5f76-e517-a4cedcb6a20c</id><updated>2022-09-07T13:28:13</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div style="text-align: right;">
@@ -9031,7 +9993,31 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 }</code></pre><p>在这个例子中，我们使用try-catch语句块来处理可能的异常情况。在try块中，我们使用fs.readFileSync()方法同步读取JSON文件，并将文件内容存储在data变量中。如果读取文件时出现错误，catch块将捕获该错误，并输出错误信息。</p><p>以上是使用fs模块读取文件的示例，需要注意的是，在使用fs模块读取文件时，我们需要处理可能的异常情况，并根据实际情况选择异步或同步方法。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-count</title><link href="https://neotw.netlify.app/#recent-count"></link><link href="https://neotw.netlify.app/static/recent-count.html" rel="alternative" type="text/html"></link><id>6a131e9a-b046-19c3-08bd-35ef7c9ffbfc</id><updated>2023-02-08T18:16:06</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="tc-timeline">
 
 <div class="tc-menu-list-item">
-9th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#3">3</a></span>)
+9th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#9">9</a></span>)
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#neotw-npm-yarn"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#neotw-lua"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#neotw-question"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#neotw-git"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#neotw-soft"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#neotw-wiki"></a>
+</div>
 
 <div class="tc-menu-list-subitem">
 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#markdown-examples"></a>
@@ -9537,6 +10523,42 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 </div>
 
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-note-record</title><link href="https://neotw.netlify.app/#recent-note-record"></link><link href="https://neotw.netlify.app/static/recent-note-record.html" rel="alternative" type="text/html"></link><id>2619840e-dc84-d69e-3d32-c2258f306a66</id><updated>2023-04-11T09:39:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><ul>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#neotw-npm-yarn">neotw-npm-yarn</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#neotw-lua">neotw-lua</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#neotw-question">neotw-question</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#neotw-git">neotw-git</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#neotw-soft">neotw-soft</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#neotw-wiki">neotw-wiki</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#markdown-examples">markdown-examples</a>
