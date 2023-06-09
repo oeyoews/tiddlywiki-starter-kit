@@ -1,3 +1,10 @@
+## [3.293.1](https://github.com/oeyoews/neotw/compare/v3.293.0...v3.293.1) (2023-06-09)
+
+
+### Bug Fixes
+
+* adjust nprogress ([1fb1ce7](https://github.com/oeyoews/neotw/commit/1fb1ce7ae0c9f4f30b480a80c32a387fa7947d74))
+
 # [3.293.0](https://github.com/oeyoews/neotw/compare/v3.292.0...v3.293.0) (2023-06-09)
 
 
