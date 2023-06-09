@@ -1,5 +1,7 @@
 title: $:/plugins/oeyoews/motion/config/Shortcuts/
 
+ShowCopyButton/Key: g m
+ShowCopyButton/Caption: Copy Code
 FocusSearch/Key: /
 FocusSearch/Caption: Focus search
 GoToSearch/Key: s

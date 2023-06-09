@@ -1,6 +1,6 @@
 created: 20230607150354831
 creator: oeyoews
-modified: 20230607153426189
+modified: 20230609015557532
 modifier: oeyoews
 tags: JavaScript
 title: 静态方法-实例方法-原型方法01
@@ -12,7 +12,7 @@ type: text/markdown
 
 ES5中通常使用类的构造函数来定义静态属性：
 
-```
+```js
 function Person(name, age) {
   this.name = name;
   this.age = age;
@@ -23,7 +23,7 @@ Person.COUNT = 0;
 
 ES6中使用`static`关键字来定义静态属性：
 
-```
+```js
 class Person {
   static COUNT = 0;
 
@@ -39,7 +39,7 @@ class Person {
 
 ES5中通常使用类的原型对象来定义原型属性：
 
-```
+```js
 function Person(name, age) {
   this.name = name;
   this.age = age;
@@ -53,7 +53,7 @@ Person.prototype.logging = {
 
 ES6中可以直接在类的构造函数中定义原型属性：
 
-```
+```js
 class Person {
   logging = {
     name: 'name',
@@ -71,7 +71,7 @@ class Person {
 
 ES5中通常在类的构造函数中使用`this`关键字来定义实例属性：
 
-```
+```js
 function Person(name, age) {
   this.name = name;
   this.age = age;
@@ -80,7 +80,7 @@ function Person(name, age) {
 
 ES6中也是在类的构造函数中定义实例属性：
 
-```
+```js
 class Person {
   constructor(name, age) {
     this.name = name;
@@ -93,7 +93,7 @@ class Person {
 
 ES5中可以使用类的构造函数来定义静态方法：
 
-```
+```js
 function Person(name, age) {
   this.name = name;
   this.age = age;
@@ -106,7 +106,7 @@ Person.hello = function() {
 
 ES6中使用`static`关键字来定义静态方法：
 
-```
+```js
 class Person {
   static hello() {
     console.log('hello method');
@@ -123,7 +123,7 @@ class Person {
 
 ES5中可以使用类的原型对象来定义原型方法：
 
-```
+```js
 function Person(name, age) {
   this.name = name;
   this.age = age;
@@ -136,7 +136,7 @@ Person.prototype.log = function() {
 
 ES6中可以直接在类的原型对象上定义原型方法：
 
-```
+```js
 class Person {
   constructor(name, age) {
     this.name = name;
@@ -153,7 +153,7 @@ class Person {
 
 ES5中可以在类的构造函数中使用`this`关键字来定义实例方法：
 
-```
+```js
 function Person(name, age) {
   this.name = name;
   this.age = age;
@@ -166,7 +166,7 @@ function Person(name, age) {
 
 ES6中也是在类的构造函数中定义实例方法：
 
-```
+```js
 class Person {
   constructor(name, age) {
     this.name = name;
