@@ -29,8 +29,8 @@ function addCopyButton() {
       });
       // TODO: splict this
       copyButton.addEventListener('click', () => {
-        copyButton.textContent = '✅ Copied!';
         copyButton.classList.add('bg-lime-300');
+        copyButton.textContent = '✅ Copied!';
         setTimeout(() => {
           (copyButton.textContent = fileType ? `${fileType} 📋` : '📋'),
             copyButton.classList.remove('bg-lime-300');
@@ -68,16 +68,16 @@ function addCopyButton() {
           );
           container.appendChild(copiedCodeNode);
           // TODO: add preview option configuration
-          swal({
+          /* swal({
             title: fileType
               ? `Copied to clipboard (filetype: ${fileType})`
               : `Copied to clipboard`,
             content: container,
             icon: 'success',
             // timer: 5000,
-          });
+          }); */
         } else {
-          swal('Copy failed', '', 'error');
+          // swal('Copy failed', '', 'error');
         }
       });
       if (codeElement) {
