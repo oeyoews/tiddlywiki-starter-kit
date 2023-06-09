@@ -37,6 +37,10 @@ function addCopyButton() {
         if (isSuccess) {
           confetti();
           howler();
+
+          const container = document.createElement('div');
+          container.classList.add('max-w-full', 'overflow-auto'); // 添加适当的容器样式
+
           const copiedCodeNode = document.createElement('pre');
           copiedCodeNode.appendChild(cloneCodeElement);
           copiedCodeNode.classList.add(
@@ -53,14 +57,16 @@ function addCopyButton() {
             'border',
             'border-none',
             'break-words',
+            'max-h-48', // 添加最大高度限制，例如48像素
           );
+          container.appendChild(copiedCodeNode);
           swal({
             title: fileType
               ? `Copied to clipboard (filetype: ${fileType})`
               : `Copied to clipboard`,
-            content: copiedCodeNode,
+            content: container,
             icon: 'success',
-            timer: 5000,
+            // timer: 5000,
           });
         } else {
           swal('Copy failed', '', 'error');
