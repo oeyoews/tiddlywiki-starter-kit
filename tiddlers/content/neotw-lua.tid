@@ -1,3 +1,12 @@
+created: 20230609122224832
+creator: oeyoews
+modified: 20230609122228461
+modifier: oeyoews
+title: neotw-lua
+type: text/markdown
+
+@[toc]
+
 ## lua
 
 [make_lua_plugin](https://www.2n.pl/blog/how-to-write-neovim-plugins-in-lua)

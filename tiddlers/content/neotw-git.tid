@@ -1,7 +1,18 @@
+created: 20230609121653253
+creator: oeyoews
+modified: 20230609121727205
+modifier: oeyoews
+title: neotw-git
+type: text/markdown
+
+@[toc]
+
 ### Reverd
+
 * git revert id    # 会有冲突出现  ？
 
 ### Log
+
 * git log --stat    # 查看变动的具体文件
 * git reflog    # show local log
 * git log --all --graph   #查看所有的分支记录  直观
@@ -153,7 +164,8 @@ hard 表示将工作区 暂存区 版本库记录 恢复到某一定版本，com
 
 - git fetch (get all branches ???)
 
-## Note
+### Note
+	
 - if a new file never recorded by git, even you switch new branch, modify anyaway, it's influencd for all branch
 - and if the file is recorded, if you don't add or Commit to switch another branch, it's will fetch current file jobs to
   next branch, unless you commit it's job
