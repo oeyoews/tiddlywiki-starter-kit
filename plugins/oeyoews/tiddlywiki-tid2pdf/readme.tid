@@ -1,11 +1,21 @@
 title: $:/plugins/oeyoews/tiddlywiki-tid2pdf/readme
 
+<div class="prose max-w-none">
+
 !! Tiddlywiki Tid2pdf
 
 * [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/tiddlywiki-tid2pdf]]
 * [[Demo|https://oeyoews.github.io/neotw]]
 
 I have tried to export a single tiddler to PDF using the third-party library jspdf, but I didn't study the aspect ratio of the exported PDF in depth, so the result was not good. Therefore, I tried exporting it in PNG format, and the effect seemed to be better. In addition, images are easier to share than PDFs, while PDFs are more suitable for document viewing. The above image content was exported using tiddlywiki-tid2pdf.
+
+!! Usage
+
+; widgetName
+: tid2png; tid2pdf
+
+; param
+: preview:true
 
 !! Example
 
@@ -37,3 +47,5 @@ I have tried to export a single tiddler to PDF using the third-party library jsp
 <!-- \end -->
 <!-- <<renderContent>> -->
 <!-- ``` -->
+
+</div>

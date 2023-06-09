@@ -1,5 +1,7 @@
 title: $:/plugins/oeyoews/motion/README
 
+<div class="prose max-w-none">
+
 Vim-like keyboard shortcuts for TiddlyWiki. modified `based benwebber/motion`
 
 <hr>
@@ -28,3 +30,5 @@ Press <kbd>{{$:/plugins/oeyoews/motion/config/Shortcuts/ShowHelp/Key}}</kbd> to 
         return false;
     });
 ```
+
+</div>

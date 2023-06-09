@@ -1,5 +1,7 @@
 title: $:/plugins/oeyoews/tiddlywiki-giscus/readme
 
+<div class="prose max-w-none">
+
 <a style="text-decoration:none;" href="https://github.com/oeyoews/neotw" target="_blank">
   <img src="https://img.shields.io/badge/Powered by-Neotw-green?style=flat" />
 </a>
@@ -48,3 +50,5 @@ title: $:/plugins/oeyoews/tiddlywiki-giscus/readme
 * 统一button样式
 * 提供未配置检测警告
 * 提供依赖检测警告
+
+</div>

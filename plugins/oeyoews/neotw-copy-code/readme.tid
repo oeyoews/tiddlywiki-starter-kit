@@ -1,5 +1,7 @@
 title: $:/plugins/oeyoews/neotw-copy-code/readme
 
+<div class="prose max-w-none">
+
 !! Neotw Copy Code
 
 * [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/neotw-copy-code]]
@@ -101,3 +103,5 @@ fun main() {
 * make preview is optional
 * add transform style
 * update plugin dependencies
+
+</div>

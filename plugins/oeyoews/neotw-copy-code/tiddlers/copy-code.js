@@ -29,11 +29,11 @@ function addCopyButton() {
       });
       // TODO: splict this
       copyButton.addEventListener('click', () => {
-        copyButton.classList.add('bg-lime-300');
+        // copyButton.classList.add('bg-lime-300');
         copyButton.textContent = '✅ Copied!';
         setTimeout(() => {
-          (copyButton.textContent = fileType ? `${fileType} 📋` : '📋'),
-            copyButton.classList.remove('bg-lime-300');
+          copyButton.textContent = fileType ? `${fileType} 📋` : '📋'
+          // copyButton.classList.remove('bg-lime-300');
         }, 2000);
         const range = document.createRange();
         range.selectNode(codeElement);

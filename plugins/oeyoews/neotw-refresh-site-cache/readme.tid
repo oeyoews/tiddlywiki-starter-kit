@@ -1,5 +1,7 @@
 title: $:/plugins/oeyoews/neotw-refresh-site-cache/readme
 
+<div class="prose max-w-none">
+
 !! Neotw Refresh Site Cache
 
 * [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/neotw-refresh-site-cache]]
@@ -8,3 +10,5 @@ title: $:/plugins/oeyoews/neotw-refresh-site-cache/readme
 !! Demo
 
 <$refresh-site-cache />
+
+</div>
