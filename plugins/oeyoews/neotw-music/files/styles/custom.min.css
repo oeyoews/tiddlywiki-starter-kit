@@ -12,7 +12,7 @@
 
 .aplayer.aplayer-fixed:hover {
   transition: all 0.3s ease;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 @media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {

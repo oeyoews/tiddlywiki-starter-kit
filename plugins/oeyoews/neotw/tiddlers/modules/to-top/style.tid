@@ -5,7 +5,6 @@ tags: $:/tags/Stylesheet
 \rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
 
 .o-btn-back {
-    <!-- background-color: #efefef; -->
     background-color: #00000008;
     border-radius: 50%;
     padding: 0 0 5px;
@@ -17,7 +16,6 @@ tags: $:/tags/Stylesheet
 .o-btn-back:hover {
   transform: scale(1.1);
   transition: transform 0.2s;
-  <!-- color: black; -->
 }
 
 #stx-story-top {
@@ -29,15 +27,22 @@ tags: $:/tags/Stylesheet
 }
 
 #stx-story-top button {
-  width: 40px;
-  height: 40px;
-   <!-- background-color: red; -->
+   width: 40px;
+   height: 40px;
    display: flex;
    align-items: center;
    justify-content: center;
    border: none;
-   opacity: 0.7;
    min-width: 1.5em;
+}
+
+#stx-story-top {
+   opacity: 0;
+}
+
+#stx-story-top:hover {
+   transition: all 0.2s ease;
+   opacity: 1;
 }
 
 #stx-story-top .tc-btn-text {
@@ -48,30 +53,3 @@ tags: $:/tags/Stylesheet
 #stx-story-top .tc-btn-invisible {
    font-size: 0.75em;
 }
-
-#stx-story-top .tc-btn-invisible:hover,
-#stx-story-top .tc-btn-invisible:focus {
-   opacity: 1;
-}
-
-<!-- #stx-story-top .tc-btn-rounded, -->
-<!-- #stx-story-top .tc-btn-boxed { -->
-<!--    min-width: 2.5em; -->
-<!-- } -->
-<!---->
-<!-- #stx-story-top .tc-btn-rounded { -->
-<!--    font-size: 0.5em; -->
-<!--    height: 2.5em; -->
-<!-- } -->
-<!---->
-<!-- #stx-story-top .tc-btn-boxed { -->
-<!--    font-size: 0.6em; -->
-<!--    padding-left: 0.5em; -->
-<!--    padding-right: 0.5em; -->
-<!-- } -->
-<!---->
-<!-- #stx-story-top .tc-btn-rounded:focus, -->
-<!-- #stx-story-top .tc-btn-rounded:active { -->
-<!--    padding-left: 0.75em; -->
-<!--    padding-right: 1em; -->
-<!-- } -->
