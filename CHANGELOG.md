@@ -1,3 +1,10 @@
+# [3.292.0](https://github.com/oeyoews/neotw/compare/v3.291.0...v3.292.0) (2023-06-09)
+
+
+### Features
+
+* support preview for export png ([7df0562](https://github.com/oeyoews/neotw/commit/7df056238a37062479690c03bc208df251e00f59))
+
 # [3.291.0](https://github.com/oeyoews/neotw/compare/v3.290.0...v3.291.0) (2023-06-09)
 
 
