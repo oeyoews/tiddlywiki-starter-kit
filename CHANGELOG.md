@@ -1,3 +1,10 @@
+# [3.289.0](https://github.com/oeyoews/neotw/compare/v3.288.0...v3.289.0) (2023-06-09)
+
+
+### Features
+
+* add Shortcuts for copy code with motion ([a85957b](https://github.com/oeyoews/neotw/commit/a85957bd14d99ecb2a3e8a0a7b80e4300fd4273d))
+
 # [3.288.0](https://github.com/oeyoews/neotw/compare/v3.287.1...v3.288.0) (2023-06-08)
 
 
