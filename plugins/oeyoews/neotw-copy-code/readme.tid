@@ -16,6 +16,12 @@ title: $:/plugins/oeyoews/neotw-copy-code/readme
 
 !! Example
 
+<$button message="om-copy-code" param=<<currentTiddler>>>
+<$action-sendmessage $message="om-confetti-launch" />
+<$action-sendmessage $message="om-sound" />
+  Click to show copy code button
+</$button>
+
 ```lua
 local M = {}
 ```
