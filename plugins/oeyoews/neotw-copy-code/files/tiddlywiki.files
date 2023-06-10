@@ -1,11 +1,11 @@
 {
   "directories": [
     {
-      "path": "./",
+      "path": ".",
       "filesRegExp": "^.*\\.min.js$",
       "fields": {
         "title": {
-          "source": "filename",
+          "source": "filename"
         },
         "type": "application/javascript",
         "module-type": "library"

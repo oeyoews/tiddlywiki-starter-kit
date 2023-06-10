@@ -108,3 +108,7 @@ fun main() {
 * support copy image to clipboard
 
 </div>
+
+!! Performace
+
+* lazy load button
