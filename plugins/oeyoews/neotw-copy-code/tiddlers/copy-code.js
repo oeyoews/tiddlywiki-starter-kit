@@ -12,7 +12,7 @@ function addCopyButton() {
   codeBlocks.forEach(codeBlock => {
     const existingButton = codeBlock.querySelector('.copy-button');
     const codeElement = codeBlock.querySelector('code');
-    const cloneCodeElement = codeElement.cloneNode(true);
+    // const cloneCodeElement = codeElement.cloneNode(true);
     // default ??
     const fileType = codeElement?.className.split(' ')[0] ?? null; // get file type from first class name
     // ??
@@ -27,14 +27,18 @@ function addCopyButton() {
           title: 'Copy code',
         },
       });
-      // TODO: splict this
       copyButton.addEventListener('click', () => {
-        copyButton.textContent = '✅ Copied!';
-        setTimeout(() => {
-          copyButton.textContent = fileType ? `${fileType} 📋` : '📋';
-          // copyButton.classList.remove('bg-lime-300');
-        }, 2000);
-        navigator.clipboard.writeText(codeElement.textContent);
+        navigator.clipboard
+          .writeText(codeElement.textContent)
+          .then(() => {
+            copyButton.textContent = '✅ Copied!';
+            setTimeout(() => {
+              copyButton.textContent = fileType ? `${fileType} 📋` : '📋';
+            }, 2000);
+          })
+          .catch(err => {
+            console.log(err);
+          });
         window.getSelection().removeAllRanges();
 
         /**
@@ -80,9 +84,7 @@ function addCopyButton() {
           // swal('Copy failed', '', 'error');
         } */
       });
-      if (codeElement) {
-        codeElement.parentNode.insertBefore(copyButton, codeElement);
-      }
+      codeElement?.parentNode?.insertBefore(copyButton, codeElement);
     }
   });
 }
