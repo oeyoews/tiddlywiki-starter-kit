@@ -1,6 +1,6 @@
 created: 20230607210059118
 creator: carlo
-modified: 20230610064113433
+modified: 20230610070954489
 modifier: oeyoews
 tags: 
 title: $:/manifest.json
@@ -15,7 +15,7 @@ type: text/vnd.tiddlywiki
   "display": "standalone",
   "orientation": "standalone",
   "id": "/",
-  "start_url": "`{{$:/info/url/full}}`",
+  "start_url": "https://neotw.vercel.app/neotw",
 	"lang": "en-US",
 	"orientation": "any",
   "icons": [
