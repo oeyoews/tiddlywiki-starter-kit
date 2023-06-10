@@ -1,0 +1,18 @@
+title: $:/plugins/oeyoews/neotw-manifest/readme
+
+<div class="prose max-w-none">
+
+!! Neotw Manifest
+
+* [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/neotw-manifest]]
+* [[Demo|https://oeyoews.github.io/neotw]]
+
+!! Usage
+
+; widgetName
+:
+
+; param
+: Null
+
+</div>
