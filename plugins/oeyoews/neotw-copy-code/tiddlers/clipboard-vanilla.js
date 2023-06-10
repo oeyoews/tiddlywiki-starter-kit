@@ -19,10 +19,11 @@ function addCopyButton() {
       // to remove not hidden because of new codeblocks should add new copy button if dom has new pre>code
       existingButton.remove();
     } else {
+      classNames =
+        'copy-button float-right hover:bg-gray-200 transition duration-200';
       const copyButton = $tw.utils.domMaker('button', {
         text: fileType ? `${fileType} 📋` : '📋',
-        class:
-          'copy-button float-right hover:bg-gray-200 transition duration-200',
+        class: fileType ? classNames : classNames + ' -m-4',
         attributes: {
           title: 'Copy code',
         },
