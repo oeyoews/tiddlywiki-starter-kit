@@ -1,3 +1,10 @@
+## [3.295.1](https://github.com/oeyoews/neotw/compare/v3.295.0...v3.295.1) (2023-06-10)
+
+
+### Bug Fixes
+
+* remove clipboard.js from plugin ([e7e5b5f](https://github.com/oeyoews/neotw/commit/e7e5b5fd8be2a64694a4c458ec47b6da4930406f))
+
 # [3.295.0](https://github.com/oeyoews/neotw/compare/v3.294.1...v3.295.0) (2023-06-10)
 
 
