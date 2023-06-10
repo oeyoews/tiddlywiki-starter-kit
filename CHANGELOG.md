@@ -1,3 +1,10 @@
+## [3.295.3](https://github.com/oeyoews/neotw/compare/v3.295.2...v3.295.3) (2023-06-10)
+
+
+### Performance Improvements
+
+* remove last extra line because of vim ([c861674](https://github.com/oeyoews/neotw/commit/c861674b1523e37a7432750091eddab976168ab3))
+
 ## [3.295.2](https://github.com/oeyoews/neotw/compare/v3.295.1...v3.295.2) (2023-06-10)
 
 
