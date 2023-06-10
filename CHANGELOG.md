@@ -1,3 +1,10 @@
+## [3.295.2](https://github.com/oeyoews/neotw/compare/v3.295.1...v3.295.2) (2023-06-10)
+
+
+### Bug Fixes
+
+* add -m-4 for empty filetype ([3e8abf3](https://github.com/oeyoews/neotw/commit/3e8abf34137ae54ffb709647689ef54017b618f9))
+
 ## [3.295.1](https://github.com/oeyoews/neotw/compare/v3.295.0...v3.295.1) (2023-06-10)
 
 
