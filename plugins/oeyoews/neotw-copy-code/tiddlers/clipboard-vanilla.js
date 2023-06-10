@@ -89,4 +89,6 @@ function addCopyButton() {
   });
 }
 
-exports.addCopyButton = addCopyButton;
+module.exports = {
+  addCopyButton,
+};

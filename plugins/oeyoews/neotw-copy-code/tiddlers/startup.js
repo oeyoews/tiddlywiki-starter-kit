@@ -6,7 +6,7 @@ module-type: startup
 copyButton module
 
 \*/
-(function() {
+(function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -19,7 +19,7 @@ copyButton module
     const {
       addCopyButton,
     } = require('$:/plugins/oeyoews/neotw-copy-code/copyCode.js');
-    window.copyButton = addCopyButton;
+    // window.copyButton = addCopyButton;
     $tw.rootWidget.addEventListener('om-copy-code', () => {
       addCopyButton();
     });
