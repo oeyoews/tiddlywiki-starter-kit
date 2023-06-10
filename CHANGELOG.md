@@ -1,3 +1,10 @@
+# [3.295.0](https://github.com/oeyoews/neotw/compare/v3.294.1...v3.295.0) (2023-06-10)
+
+
+### Features
+
+* try to use clipboard.js to support more functions ([a847971](https://github.com/oeyoews/neotw/commit/a84797124ef10efd1deb9b0be8dc5e7385dadf56))
+
 ## [3.294.1](https://github.com/oeyoews/neotw/compare/v3.294.0...v3.294.1) (2023-06-10)
 
 
