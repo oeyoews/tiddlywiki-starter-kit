@@ -29,19 +29,19 @@ function addCopyButton() {
       });
       // TODO: splict this
       copyButton.addEventListener('click', () => {
-        // copyButton.classList.add('bg-lime-300');
         copyButton.textContent = '✅ Copied!';
         setTimeout(() => {
-          copyButton.textContent = fileType ? `${fileType} 📋` : '📋'
+          copyButton.textContent = fileType ? `${fileType} 📋` : '📋';
           // copyButton.classList.remove('bg-lime-300');
         }, 2000);
-        const range = document.createRange();
-        range.selectNode(codeElement);
+        navigator.clipboard.writeText(codeElement.textContent);
         window.getSelection().removeAllRanges();
-        window.getSelection().addRange(range);
-        const isSuccess = document.execCommand('copy');
-        window.getSelection().removeAllRanges();
-        if (isSuccess) {
+
+        /**
+         * preview
+         *
+         */
+        /* if (isSuccess) {
           // confetti();
           // howler();
 
@@ -68,17 +68,17 @@ function addCopyButton() {
           );
           container.appendChild(copiedCodeNode);
           // TODO: add preview option configuration
-          /* swal({
+          swal({
             title: fileType
               ? `Copied to clipboard (filetype: ${fileType})`
               : `Copied to clipboard`,
             content: container,
             icon: 'success',
             // timer: 5000,
-          }); */
+          });
         } else {
           // swal('Copy failed', '', 'error');
-        }
+        } */
       });
       if (codeElement) {
         codeElement.parentNode.insertBefore(copyButton, codeElement);
