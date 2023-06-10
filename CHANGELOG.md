@@ -1,3 +1,10 @@
+# [3.296.0](https://github.com/oeyoews/neotw/compare/v3.295.3...v3.296.0) (2023-06-10)
+
+
+### Features
+
+* try to add manifest.json ([a251281](https://github.com/oeyoews/neotw/commit/a25128110ba941bd3c4e81101166dde8834e8cce))
+
 ## [3.295.3](https://github.com/oeyoews/neotw/compare/v3.295.2...v3.295.3) (2023-06-10)
 
 
