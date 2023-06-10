@@ -1,0 +1,26 @@
+created: 20230607210059118
+creator: carlo
+modified: 20230610043359759
+modifier: oeyoews
+tags: 
+title: $:/manifest.json
+type: text/vnd.tiddlywiki
+
+`{
+  "name": "`{{$:/SiteTitle}}`",
+  "description": "`{{$:/SiteSubtitle}}`",
+  "short_name": "`{{$:/SiteTitle}}`",
+  "theme_color": "#4682B4",
+  "background_color": "#4682B4",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "`{{$:/info/url/full}}`",
+  "icons": [
+    {
+      "src": "`<<datauri "icon-192x192.png">>`",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}`

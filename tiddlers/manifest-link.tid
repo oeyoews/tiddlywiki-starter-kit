@@ -1,0 +1,24 @@
+created: 20230608065627119
+creator: carlo
+modified: 20230609144135797
+modifier: carlo
+tags: $:/tags/RawMarkupWikified/TopHead
+title: $:/manifest-link
+type: text/vnd.tiddlywiki
+
+<$wikify
+  name=manifest
+  text={{$:/manifest.json}}>
+
+`<link
+    rel="manifest"
+    crossorigin="use-credentials" 
+    href="`<$macrocall
+                $name="makedatauri"
+                text=<<manifest>>
+                type="application/json"
+                $output="text/plain" 
+           />`"
+>`
+
+</$wikify>

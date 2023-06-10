@@ -1,6 +1,7 @@
 list-after: $:/core/ui/EditTemplate/title
-<!-- tags: $:/tags/EditTemplate -->
 title: $:/ContributionBanner
+
+<!-- tags: $:/tags/EditTemplate -->
 
 \define base-github()
 https://github.com/oeyoews/neotw/edit/main/tiddlers/
