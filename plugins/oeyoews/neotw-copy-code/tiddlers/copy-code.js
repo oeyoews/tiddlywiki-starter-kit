@@ -13,10 +13,10 @@ function addCopyButton() {
     const existingButton = codeBlock.querySelector('.copy-button');
     const codeElement = codeBlock.querySelector('code');
     // const cloneCodeElement = codeElement.cloneNode(true);
-    // default ??
-    const fileType = codeElement?.className.split(' ')[0] ?? null; // get file type from first class name
+    const fileType = codeElement?.className.split(' ')[0] ?? null; // get file type from first class name default ??
     // ??
     if (existingButton && codeElement) {
+      // to remove not hidden because of new codeblocks should add new copy button if dom has new pre>code
       existingButton.remove();
     } else {
       const copyButton = $tw.utils.domMaker('button', {
