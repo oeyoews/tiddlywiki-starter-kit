@@ -1,6 +1,6 @@
 created: 20230607210059118
 creator: carlo
-modified: 20230610043359759
+modified: 20230610050406032
 modifier: oeyoews
 tags: 
 title: $:/manifest.json
@@ -13,9 +13,11 @@ type: text/vnd.tiddlywiki
   "theme_color": "#4682B4",
   "background_color": "#4682B4",
   "display": "standalone",
-  "orientation": "portrait",
-  "scope": "/",
-  "start_url": "`{{$:/info/url/full}}`",
+  "orientation": "standalone",
+  "id": "/",
+  "start_url": "/",
+	"lang": "en-US",
+	"orientation": "any",
   "icons": [
     {
       "src": "`<<datauri "icon-192x192.png">>`",
