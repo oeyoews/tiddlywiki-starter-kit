@@ -1,3 +1,10 @@
+## [3.294.1](https://github.com/oeyoews/neotw/compare/v3.294.0...v3.294.1) (2023-06-10)
+
+
+### Performance Improvements
+
+* use navigator.clipboard api ([6df5568](https://github.com/oeyoews/neotw/commit/6df556820a089978912830b02211fa9ec236e4b2))
+
 # [3.294.0](https://github.com/oeyoews/neotw/compare/v3.293.1...v3.294.0) (2023-06-09)
 
 
