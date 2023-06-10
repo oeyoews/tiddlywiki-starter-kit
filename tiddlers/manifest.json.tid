@@ -1,6 +1,6 @@
 created: 20230607210059118
 creator: carlo
-modified: 20230610050406032
+modified: 20230610064113433
 modifier: oeyoews
 tags: 
 title: $:/manifest.json
@@ -15,7 +15,7 @@ type: text/vnd.tiddlywiki
   "display": "standalone",
   "orientation": "standalone",
   "id": "/",
-  "start_url": "/",
+  "start_url": "`{{$:/info/url/full}}`",
 	"lang": "en-US",
 	"orientation": "any",
   "icons": [
