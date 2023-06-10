@@ -1518,7 +1518,14 @@ element.<span class="hljs-property">className</span> += <span class="hljs-string
       });
     </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre></div></content><author><name>oeyoews</name></author></entry><entry><title>cloneNode</title><link href="https://neotw.netlify.app/#cloneNode"></link><link href="https://neotw.netlify.app/static/cloneNode.html" rel="alternative" type="text/html"></link><id>5f2acb4a-df12-97a0-6be5-1a33b0f15653</id><updated>2023-06-09T22:14:41</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre></div></content><author><name>oeyoews</name></author></entry><entry><title>clipboard</title><link href="https://neotw.netlify.app/#clipboard"></link><link href="https://neotw.netlify.app/static/clipboard.html" rel="alternative" type="text/html"></link><id>bbc4df40-47bb-91ef-515c-e03a6317fd65</id><updated>2023-06-10T10:31:54</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+<p><code class="_codified_">clipboard.js</code> 使用了浏览器自带的复制 API，而不是通过 JavaScript 直接操作剪贴板，可以避免一些安全问题。
+</p>
+<p>在过去，网页通常使用 Flash 或 Java 等插件来实现复制操作，这些插件会通过 JavaScript 直接访问剪贴板，并将剪贴板中的内容复制到网页中。这种方式存在很多安全问题，例如可以通过篡改剪贴板中的内容来攻击用户或窃取用户的敏感信息。
+</p>
+<p>为了解决这些安全问题，浏览器引入了新的复制 API，例如 <code class="_codified_">document.execCommand('copy')</code> 和 <code class="_codified_">navigator.clipboard.writeText()</code> 等，可以让网页在不直接访问剪贴板的情况下实现复制操作。<code class="_codified_">clipboard.js</code> 利用了这些浏览器提供的 API，避免了直接访问剪贴板带来的安全风险。
+</p>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>cloneNode</title><link href="https://neotw.netlify.app/#cloneNode"></link><link href="https://neotw.netlify.app/static/cloneNode.html" rel="alternative" type="text/html"></link><id>5f2acb4a-df12-97a0-6be5-1a33b0f15653</id><updated>2023-06-09T22:14:41</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <p>cloneNode是一个DOM API中的方法，用于复制一个节点并返回它的副本。该方法可以接受一个布尔值参数deep，表示是否复制节点的子节点。如果deep为true，则会同时复制该节点的所有子孙节点，否则只复制该节点本身。
 </p>
 <blockquote>
@@ -2627,8 +2634,8 @@ Undefined widget 'tid2pdf'
 </div>
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>GettingStarted</title><link href="https://neotw.netlify.app/#GettingStarted"></link><link href="https://neotw.netlify.app/static/GettingStarted.html" rel="alternative" type="text/html"></link><id>fc927313-83cf-7e0a-53c1-21853f695851</id><updated>2023-06-05T19:42:02</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:bg-white">
 <div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-674-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-47-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-72-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-11 hours ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-675-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-47-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-72-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-25 minutes ago-green?style=social"></img>  
 </div>
 
 
@@ -4828,8 +4835,8 @@ observer.<span class="hljs-title function_">observe</span>(targetElement, { <spa
 <li>aria2c -d <dirname> <url>&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;</url></dirname></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-badges</title><link href="https://neotw.netlify.app/#neotw-badges"></link><link href="https://neotw.netlify.app/static/neotw-badges.html" rel="alternative" type="text/html"></link><id>f934e3aa-d36d-34bb-609b-922693d9b993</id><updated>2023-06-01T21:41:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-674-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-47-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-72-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-11 hours ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-675-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-47-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-72-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-25 minutes ago-green?style=social"></img>  
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-command</title><link href="https://neotw.netlify.app/#neotw-command"></link><link href="https://neotw.netlify.app/static/neotw-command.html" rel="alternative" type="text/html"></link><id>188385e0-6b3a-4916-a54a-061d9d29e18f</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
        ✨ 0.1
@@ -10078,6 +10085,15 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 }</code></pre><p>在这个例子中，我们使用try-catch语句块来处理可能的异常情况。在try块中，我们使用fs.readFileSync()方法同步读取JSON文件，并将文件内容存储在data变量中。如果读取文件时出现错误，catch块将捕获该错误，并输出错误信息。</p><p>以上是使用fs模块读取文件的示例，需要注意的是，在使用fs模块读取文件时，我们需要处理可能的异常情况，并根据实际情况选择异步或同步方法。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-count</title><link href="https://neotw.netlify.app/#recent-count"></link><link href="https://neotw.netlify.app/static/recent-count.html" rel="alternative" type="text/html"></link><id>6a131e9a-b046-19c3-08bd-35ef7c9ffbfc</id><updated>2023-02-08T18:16:06</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="tc-timeline">
 
 <div class="tc-menu-list-item">
+10th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#1">1</a></span>)
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#clipboard"></a>
+</div>
+
+</div>
+
+<div class="tc-menu-list-item">
 9th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#13">13</a></span>)
 
 <div class="tc-menu-list-subitem">
@@ -10624,6 +10640,12 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 </div>
 
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-note-record</title><link href="https://neotw.netlify.app/#recent-note-record"></link><link href="https://neotw.netlify.app/static/recent-note-record.html" rel="alternative" type="text/html"></link><id>2619840e-dc84-d69e-3d32-c2258f306a66</id><updated>2023-04-11T09:39:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><ul>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#clipboard">clipboard</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#new-obj">new-obj</a>
