@@ -35,6 +35,7 @@ I have tried to export a single tiddler to PDF using the third-party library jsp
 * minify png
 * https://www.zhangxinxu.com/wordpress/2023/06/js-canvas-jspdf-export-pdf/
 * use exporter
+* remove cors warning
 
 <!-- ```wikitext -->
 <!-- title: export-pdf -->
