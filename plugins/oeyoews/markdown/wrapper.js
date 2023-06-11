@@ -6,16 +6,12 @@ module-type: parser
 Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
 
 \*/
-(function (realRequire) {
+(function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
 
-  var require = function (m) {
-    return realRequire('$:/plugins/tiddlywiki/markdown/' + m + '.js');
-  };
-
-  var MarkdownIt = require('markdown-it');
+  var MarkdownIt = require('./markdown-it');
 
   function parseAsBoolean(tiddlerName) {
     return (
@@ -66,8 +62,13 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
       return rulesInfo;
     }
 
+    var WikiParser =
+      require('$:/core/modules/parsers/wikiparser/wikiparser.js')[
+        'text/vnd.tiddlywiki'
+      ];
+
     // first pass: get all rule classes
-    var wikiParser = new $tw.Wiki.parsers['text/vnd.tiddlywiki'](null, '', {
+    var wikiParser = new WikiParser(null, '', {
       parseAsInline: true,
       wiki: $tw.wiki,
     });
@@ -115,50 +116,21 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
     return results;
   }
 
-  // TODO
-  // 定义公共样式
-  const containerCommonStyle =
-    'rounded-md border-l-4 px-2 my-2 font-bold content';
-
-  function renderContainer(tokens, idx, className) {
-    if (tokens[idx].nesting === 1) {
-      return (
-        `<div class="${className}" ">\n` +
-        '<div class="' +
-        containerCommonStyle +
-        '">'
-      );
-    } else {
-      return '</div>\n</div>\n';
-    }
-  }
-
-  // 定义 warning 容器
-  /* .use(require('markdown-it-container'), 'warning', {
-    render: function (tokens, idx) {
-        const className = 'bg-yellow-100 border-yellow-500';
-        return renderContainer(tokens, idx, className, 'yellow');
-    }
-}) */
-
   // Creates markdown-it parser
   function createMarkdownEngine(markdownItOptions, pluginOptions) {
-    const container = require('markdown-it-container');
+    const container = require('./markdown-it-container');
     var md = new MarkdownIt(markdownItOptions)
-      .use(require('markdown-it-sub'))
-      .use(require('markdown-it-sup'))
-      .use(require('markdown-it-ins'))
-      .use(require('markdown-it-mark'))
-      .use(require('markdown-it-footnote'))
-      // .use(require('markdown-it-emoji'))
+      .use(require('./markdown-it-sub'))
+      .use(require('./markdown-it-sup'))
+      .use(require('./markdown-it-ins'))
+      .use(require('./markdown-it-mark'))
+      .use(require('./markdown-it-footnote'))
+      // .use(require('./markdown-it-emoji'))
       // TODO Fix [[xxx]]
       // .use(require('markdown-it-task'))
       // .use(require('markdown-it-toc'))
-      // .use(require('markdown-it-container'), 'warning')
-      // .use(require('markdown-it-container'), 'info')
-      // .use(require('markdown-it-container'), 'error')
 
-      .use(container, 'todo', {
+      /* .use(container, 'todo', {
         render: function (tokens, idx) {
           if (tokens[idx].nesting === 1) {
             return (
@@ -213,8 +185,8 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
             return '</div>\n</div>\n';
           }
         },
-      })
-      .use(require('markdown-it-deflist'));
+      }) */
+      .use(require('./markdown-it-deflist'));
 
     var results = setupWikiRules(pluginOptions);
 
@@ -228,10 +200,10 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
       pluginOptions.renderWikiText &&
       $tw.modules.titles['$:/plugins/tiddlywiki/katex/katex.min.js']
     ) {
-      md.use(require('markdown-it-katex'));
+      md.use(require('./markdown-it-katex'));
     }
 
-    md.use(require('markdown-it-tiddlywiki'), {
+    md.use(require('./markdown-it-tiddlywiki'), {
       renderWikiText: pluginOptions.renderWikiText,
       blockRules: results.blockRules,
       inlineRules: results.inlineRules,
@@ -336,8 +308,9 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
   }
 
   // to extend MarkdownIt outside of this module, do:
-  // var emoji = require('markdown-it-emoji');
-  // md.use(emoji);
+  //
+  // md = $tw.Wiki.parsers["text/markdown"].prototype.md;
+  // md.use(plugin[, options]);
   MarkdownParser.prototype.md = createMarkdownEngine(markdownOpts, pluginOpts);
 
   function MarkdownParser(type, text, options) {
@@ -401,4 +374,4 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
 
   exports['text/markdown'] = MarkdownParser;
   exports['text/x-markdown'] = MarkdownParser;
-})(require);
+})();
