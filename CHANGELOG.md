@@ -1,3 +1,16 @@
+# [3.299.0](https://github.com/oeyoews/neotw/compare/v3.298.0...v3.299.0) (2023-06-11)
+
+
+### Features
+
+* support emoji toc task container extensions ([082bd03](https://github.com/oeyoews/neotw/commit/082bd038da6e0c8312071894bf778e6ba8945d8f))
+
+
+### Performance Improvements
+
+* better container function ([a3bf946](https://github.com/oeyoews/neotw/commit/a3bf946ea9d20656de6ec6f15c0dcbb9152fd4ce))
+* update markdown require ([e6b87bd](https://github.com/oeyoews/neotw/commit/e6b87bd32869131329f4dde1904e875b7a4c90e1))
+
 # [3.298.0](https://github.com/oeyoews/neotw/compare/v3.297.0...v3.298.0) (2023-06-11)
 
 
