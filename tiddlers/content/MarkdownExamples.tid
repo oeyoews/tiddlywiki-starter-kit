@@ -1,12 +1,12 @@
 cn-title: markdown 语法测试
 created: 20230221073554683
 creator: oeyoews
-modified: 20230611042627843
+modified: 20230611044744533
 modifier: oeyoews
 page-cover: https://images.unsplash.com/photo-1455390582262-044cdead277a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d3JpdGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60
 publish: public
 tags: 
-title: markdown-examples
+title: MarkdownExamples
 type: text/markdown
 
 # 标题
@@ -14,6 +14,26 @@ type: text/markdown
 @[toc]
 	
 <hr>
+
+## Link
+
+* MarkdownExamples Link test
+
+```
+MarkdownExamples Link test(need enable camelCase)
+```
+
+* [[MarkdownExamples]] Link(include double brackets)
+
+```
+[[MarkdownExamples]] Link(include double brackets)
+```
+
+* [MarkdownExamples](#MarkdownExamples)
+
+```
+[MarkdownExamples](#MarkdownExamples)
+```
 
 ## Container
 
@@ -42,7 +62,7 @@ type: text/markdown
 ###### 六级标题
 
 
-# 段落
+## 段落
 
 这是一段普通的文本。
 
@@ -54,8 +74,6 @@ type: text/markdown
 
 删除线可以使用 ~~删除线~~。
 
-
-# 列表
 
 ## 无序列表
 
@@ -70,12 +88,9 @@ type: text/markdown
 3. 列表项 3
 
 
-# 引用
+## 引用
 
 > 这是一段引用的文本。
-
-
-# 代码
 
 ## 行内代码
 
