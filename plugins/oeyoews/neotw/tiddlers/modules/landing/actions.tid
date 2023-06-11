@@ -3,6 +3,11 @@ title: $:/plugins/oeyoews/neotw/modules/landing/layout-url
 
 <!-- tags: $:/tags/StartupAction -->
 
+<!-- announcement -->
+<$list filter="[{$:/info/url/search}match[?announcement=yes]]">
+  <$action-sendmessage $message="tm-modal" $param="announcement"/>
+</$list>
+
 <!-- for landing layout -->
 <$list filter="[{$:/info/url/search}match[?layout=lockscreen]]">
   <$action-setfield $tiddler="$:/layout" text="$:/plugins/oeyoews/neotw/modules/landing/layout"/>

@@ -1,7 +1,7 @@
 /*\
-title: $:/plugins/oeyoews/neotw-markdown-extensions/extensions.js
+title: $:/plugins/oeyoews/neotw-markdown-extensions/dev.js
 type: application/javascript
-module-type: startup
+// module-type: parser
 
 Extension markdown-it
 
@@ -29,11 +29,10 @@ Extension markdown-it
 
   function LoadExtensions() {
     const md = $tw.Wiki.parsers['text/markdown'].prototype.md;
-    window.emoji = require('./markdown-it-emoji');
+    const emoji = require('./markdown-it-emoji');
     const toc = require('./markdown-it-toc');
     const task = require('./markdown-it-task');
     const containerPlugin = require('./markdown-it-container');
-
     md.use(emoji).use(toc).use(task);
 
     const containers = [
@@ -48,17 +47,6 @@ Extension markdown-it
       const config = createContainerConfig(label, color);
       md.use(containerPlugin, name, config);
     });
-    console.log('🎉 LoadExtensions');
   }
-
-  function LoadEmoji() {
-    window.emoji = require('./markdown-it-emoji');
-  }
-
-  exports.name = 'markdown-extension-startup-hook';
-  exports.platforms = ['browser'];
-  exports.after = ['load-modules'];
-  exports.synchronous = true;
-  // exports.startup = LoadExtensions;
-  exports.startup = LoadEmoji;
+  exports['type/markdown'] = LoadExtensions;
 })();
