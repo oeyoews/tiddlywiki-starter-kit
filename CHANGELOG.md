@@ -1,3 +1,10 @@
+## [3.300.1](https://github.com/oeyoews/neotw/compare/v3.300.0...v3.300.1) (2023-06-11)
+
+
+### Bug Fixes
+
+* remove giscus tempory ([69a81be](https://github.com/oeyoews/neotw/commit/69a81beb9761d72733fd129e00cb94d13c40f5cb))
+
 # [3.300.0](https://github.com/oeyoews/neotw/compare/v3.299.0...v3.300.0) (2023-06-11)
 
 
