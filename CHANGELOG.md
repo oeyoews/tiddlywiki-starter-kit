@@ -1,3 +1,10 @@
+# [3.298.0](https://github.com/oeyoews/neotw/compare/v3.297.0...v3.298.0) (2023-06-11)
+
+
+### Features
+
+* enable CamleCase ([addea08](https://github.com/oeyoews/neotw/commit/addea0897d741734867cb2d30b8caeebb208ed23))
+
 # [3.297.0](https://github.com/oeyoews/neotw/compare/v3.296.0...v3.297.0) (2023-06-10)
 
 
