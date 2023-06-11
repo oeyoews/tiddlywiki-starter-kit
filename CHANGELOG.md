@@ -1,3 +1,10 @@
+# [3.301.0](https://github.com/oeyoews/neotw/compare/v3.300.1...v3.301.0) (2023-06-11)
+
+
+### Features
+
+* enable tiddlywiki-static-page ([3072c9f](https://github.com/oeyoews/neotw/commit/3072c9f26037a22d799af81ba130de477f903984))
+
 ## [3.300.1](https://github.com/oeyoews/neotw/compare/v3.300.0...v3.300.1) (2023-06-11)
 
 
