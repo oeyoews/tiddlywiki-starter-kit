@@ -63,6 +63,7 @@ gisucs widget
           ['tiddler-title']: currentTiddler,
         },
       });
+      console.log(`👨 ${currentTiddler}`);
       parent.insertBefore(commentNode, nextSibling);
       this.domNodes.push(commentNode);
     }

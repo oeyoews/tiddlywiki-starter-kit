@@ -44,9 +44,9 @@ title: $:/config/EmptyStoryMessage
 </$list>
 
 <!-- giscus -->
-<div class="mt-4">
-<$inline-giscus local="no"/>
-</div>
+<!-- <div class="mt-4"> -->
+<!-- <$inline-giscus local="no"/> -->
+<!-- </div> -->
 
 <!-- {{$:/plugins/oeyoews/tiddlywiki-cards/tips}} -->
 
