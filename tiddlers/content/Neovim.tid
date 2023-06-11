@@ -1,9 +1,9 @@
 created: 20230610123232908
 creator: oeyoews
-modified: 20230610123343680
+modified: 20230611024038249
 modifier: oeyoews
 tags: 
-title: neovim
+title: Neovim
 type: text/markdown
 
 Neovim 是一个高度可定制的文本编辑器，被广泛应用于编写代码和文本处理。它是 Vim 编辑器的一个分支，旨在改进 Vim 的一些缺陷和限制。Neovim 提供了许多新的特性和功能，包括异步任务支持、插件管理、Lua 脚本支持、更好的 Windows 支持等等。它的目标是成为一个现代化的、可扩展的编辑器，适用于各种编程语言和开发环境。
