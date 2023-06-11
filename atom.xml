@@ -2650,8 +2650,8 @@ Undefined widget 'tid2pdf'
 </div>
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>GettingStarted</title><link href="https://neotw.netlify.app/#GettingStarted"></link><link href="https://neotw.netlify.app/static/GettingStarted.html" rel="alternative" type="text/html"></link><id>fc927313-83cf-7e0a-53c1-21853f695851</id><updated>2023-06-05T19:42:02</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:bg-white">
 <div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-686-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-49-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-73-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-17 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-689-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-49-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-73-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-5 minutes ago-green?style=social"></img>  
 </div>
 
 
@@ -5040,8 +5040,8 @@ observer.<span class="hljs-title function_">observe</span>(targetElement, { <spa
 <li>aria2c -d <dirname> <url>&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;</url></dirname></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-badges</title><link href="https://neotw.netlify.app/#neotw-badges"></link><link href="https://neotw.netlify.app/static/neotw-badges.html" rel="alternative" type="text/html"></link><id>f934e3aa-d36d-34bb-609b-922693d9b993</id><updated>2023-06-01T21:41:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-686-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-49-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-73-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-17 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-689-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-49-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-73-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-5 minutes ago-green?style=social"></img>  
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-command</title><link href="https://neotw.netlify.app/#neotw-command"></link><link href="https://neotw.netlify.app/static/neotw-command.html" rel="alternative" type="text/html"></link><id>188385e0-6b3a-4916-a54a-061d9d29e18f</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
        ✨ 0.1
@@ -9819,6 +9819,35 @@ current neotw version is <u></u>
 <p>核心应该尽可能地独立和稳定，不应该依赖于插件。插件应该尽可能地独立和可移植，不应该依赖于特定版本的核心。同时，核心和插件之间应该有良好的接口和协议，以便插件可以与核心进行交互和通信。这种低耦合高内聚的关系可以使程序更加灵活和可扩展。
 </p>
 </blockquote>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>NerdFont</title><link href="https://neotw.netlify.app/#NerdFont"></link><link href="https://neotw.netlify.app/static/NerdFont.html" rel="alternative" type="text/html"></link><id>388b0098-5281-2909-3dce-a296e6c89c51</id><updated>2023-06-12T00:20:12</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+<p>Nerd Font 是一种开源字体项目，旨在扩展常见等宽字体的功能，使其适用于开发人员和计算机爱好者。Nerd Font 将大量图标、图形和特殊字符添加到字体中，以增强其在代码编辑器和终端应用程序中的使用。
+</p>
+<p>Nerd Font 最初基于 Font Awesome 项目，但现在已经扩展到支持其他常见的图标集，如Devicons、Powerline、Octicons等。它还提供了一些额外的补充字符，如箭头、数学符号、终端相关符号等。
+</p>
+<p>Nerd Font 具有以下特点和优势：
+</p>
+<ol>
+<li>
+<p>图标支持：Nerd Font 包含了大量的图标和符号，用于表示文件类型、操作系统、版本控制工具、编程语言等。这些图标可以用于代码编辑器、终端提示符、文件管理器等应用中，使其更加可视化和有趣。
+</p>
+</li>
+<li>
+<p>等宽字体：Nerd Font 大多数情况下都是等宽字体，这对于编写和排列代码非常有用，可以使代码在屏幕上对齐整齐，提高可读性。
+</p>
+</li>
+<li>
+<p>兼容性：Nerd Font 兼容许多常见的编辑器和终端应用程序，包括 Vim、Emacs、Visual Studio Code、Sublime Text、iTerm2、Hyper 等。因此，你可以在自己喜欢的开发环境中使用 Nerd Font。
+</p>
+</li>
+<li>
+<p>开源和可定制性：Nerd Font 是一个开源项目，你可以自由地使用、修改和贡献代码。你可以根据自己的喜好和需求进行定制，添加或删除特定的符号和图标。
+</p>
+</li>
+</ol>
+<p>要使用 Nerd Font，你需要先下载并安装所选的字体文件。然后，在你的编辑器或终端应用程序中选择该字体作为显示字体。一旦设置完成，你就可以在代码中使用 Nerd Font 提供的图标和符号了。
+</p>
+<p>总的来说，Nerd Font 是一个为开发人员和计算机爱好者设计的字体项目，它通过添加图标和特殊字符，提供了更丰富的视觉元素，使代码编辑和终端应用程序使用更加有趣和便捷。
+</p>
 </div></div></content><author><name>oeyoews</name></author></entry><entry><title>nest.js</title><link href="https://neotw.netlify.app/#nest.js"></link><link href="https://neotw.netlify.app/static/nest.js.html" rel="alternative" type="text/html"></link><id>d8aa67fa-99b6-277a-86c6-6199d50f614a</id><updated>2023-04-11T20:19:47</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>nest.js</p></div></content><author><name>oeyoews</name></author></entry><entry><title>network-school</title><link href="https://neotw.netlify.app/#network-school"></link><link href="https://neotw.netlify.app/static/network-school.html" rel="alternative" type="text/html"></link><id>ab8fbb3b-b370-eb9b-52f8-01215eaed750</id><updated>2023-04-11T14:16:33</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>school network not allow proxy</p></div></content><author><name>oeyoews</name></author></entry><entry><title>New</title><link href="https://neotw.netlify.app/#New"></link><link href="https://neotw.netlify.app/static/New.html" rel="alternative" type="text/html"></link><id>03c2e7e4-1ffc-181a-4e84-080b4710e81e</id><updated>2023-05-02T01:30:57</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></content><author><name>oeyoews</name></author></entry><entry><title>New Tiddler</title><link href="https://neotw.netlify.app/#New%20Tiddler"></link><link href="https://neotw.netlify.app/static/New%2520Tiddler.html" rel="alternative" type="text/html"></link><id>3ee3aec7-6661-7c62-52d5-b1d0ba31607c</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 </div></div></content><author><name>oeyoews</name></author></entry><entry><title>new-destructe</title><link href="https://neotw.netlify.app/#new-destructe"></link><link href="https://neotw.netlify.app/static/new-destructe.html" rel="alternative" type="text/html"></link><id>06884cd2-3b9e-6d1c-75f0-8cd1ca2cd17c</id><updated>2023-05-27T19:43:05</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre class="hljs"><code class="js hljs"><span class="hljs-keyword">const</span> demo = {
   <span class="hljs-attr">rawname</span>: <span class="hljs-string">&#x27;tom&#x27;</span>,
@@ -9920,7 +9949,10 @@ observer.<span class="hljs-title function_">observe</span>(<span class="hljs-var
 </p>
 <p>需要注意的是，除非您有特殊原因需要传递 referrer 信息，否则最好一直使用 rel=“noreferrer” 属性来确保您的站点安全。
 </p>
-</div></div></content><author><name>oeyoews</name></author></entry><entry><title>npm-create</title><link href="https://neotw.netlify.app/#npm-create"></link><link href="https://neotw.netlify.app/static/npm-create.html" rel="alternative" type="text/html"></link><id>d787eda3-1037-c02f-13a2-e069ae982b8b</id><updated>2023-05-27T19:44:29</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre class="hljs"><code class="bash hljs">npx create-next-app nextjs-learning
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>NotoEmoji</title><link href="https://neotw.netlify.app/#NotoEmoji"></link><link href="https://neotw.netlify.app/static/NotoEmoji.html" rel="alternative" type="text/html"></link><id>96d1595f-b96c-1334-19bf-3b30ea0b9dfa</id><updated>2023-06-12T00:19:24</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+<link href="https://fonts.googleapis.com" rel="preconnect"></link>
+<link crossorigin="true" href="https://fonts.gstatic.com" rel="preconnect"></link>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@300&amp;display=swap" rel="stylesheet"></link></div></div></content><author><name>oeyoews</name></author></entry><entry><title>npm-create</title><link href="https://neotw.netlify.app/#npm-create"></link><link href="https://neotw.netlify.app/static/npm-create.html" rel="alternative" type="text/html"></link><id>d787eda3-1037-c02f-13a2-e069ae982b8b</id><updated>2023-05-27T19:44:29</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre class="hljs"><code class="bash hljs">npx create-next-app nextjs-learning
 yarn create next-app nextjs-learning</code></pre></div></content><author><name>oeyoews</name></author></entry><entry><title>npm-run-all</title><link href="https://neotw.netlify.app/#npm-run-all"></link><link href="https://neotw.netlify.app/static/npm-run-all.html" rel="alternative" type="text/html"></link><id>6dafca49-9190-c6f7-4c35-d603810165f9</id><updated>2023-05-01T20:18:02</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://tailwindcss.com/docs/content-configuration#safelisting-classes:~:text=%E6%82%A8%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8%E5%83%8Fnpm%2Drun%2Dall%E6%88%96%20%E8%BF%99%E6%A0%B7%E7%9A%84%E5%8C%85concurrently%E6%9D%A5%E7%BC%96%E8%AF%91%E6%82%A8%E7%9A%84%20CSS%20%E4%BB%A5%E5%8F%8A%E6%82%A8%E9%80%9A%E5%B8%B8%E7%9A%84%E5%BC%80%E5%8F%91%E5%91%BD%E4%BB%A4%EF%BC%8C%E6%96%B9%E6%B3%95%E6%98%AF%E5%B0%86%E4%B8%80%E4%BA%9B%E8%84%9A%E6%9C%AC%E6%B7%BB%E5%8A%A0%E5%88%B0%E6%82%A8%E7%9A%84%E9%A1%B9%E7%9B%AE%E4%B8%AD%EF%BC%8C%E5%A6%82%E4%B8%8B%E6%89%80%E7%A4%BA%EF%BC%9A" rel="noopener noreferrer" target="_blank">https://tailwindcss.com/docs/content-configuration#safelisting-classes:~:text=%E6%82%A8%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8%E5%83%8Fnpm%2Drun%2Dall%E6%88%96%20%E8%BF%99%E6%A0%B7%E7%9A%84%E5%8C%85concurrently%E6%9D%A5%E7%BC%96%E8%AF%91%E6%82%A8%E7%9A%84%20CSS%20%E4%BB%A5%E5%8F%8A%E6%82%A8%E9%80%9A%E5%B8%B8%E7%9A%84%E5%BC%80%E5%8F%91%E5%91%BD%E4%BB%A4%EF%BC%8C%E6%96%B9%E6%B3%95%E6%98%AF%E5%B0%86%E4%B8%80%E4%BA%9B%E8%84%9A%E6%9C%AC%E6%B7%BB%E5%8A%A0%E5%88%B0%E6%82%A8%E7%9A%84%E9%A1%B9%E7%9B%AE%E4%B8%AD%EF%BC%8C%E5%A6%82%E4%B8%8B%E6%89%80%E7%A4%BA%EF%BC%9A</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>obj-clone</title><link href="https://neotw.netlify.app/#obj-clone"></link><link href="https://neotw.netlify.app/static/obj-clone.html" rel="alternative" type="text/html"></link><id>ff8a539a-de4f-2cc5-918b-f3bb585a5067</id><updated>2023-05-25T10:28:52</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>我们可以通过生活中的例子来更加形象地理解深拷贝和浅拷贝。</p><p>假设你有一本书，书中有很多章节，每个章节有许多页，每页上有文字和图片。这本书就可以看作是一个对象，每个章节就是一个数组，每页就是一个对象，文字和图片就是属性值。</p><p>现在你想要把这本书借给你的朋友，但是你不想让朋友修改这本书的内容。如果你使用浅拷贝的方式，就相当于把这本书复制了一份，让你的朋友也可以看到这本书，但是你们两个人看到的是同一本书，如果你的朋友在书中做了标记或修改了内容，你也会看到这些标记和修改。</p><p>如果你使用深拷贝的方式，就相当于把这本书复制了一份，但是你和你的朋友看到的是两本不同的书，你朋友对他的那本书做了任何修改，都不会影响你看到的那本书。</p><p>另外，我们也可以举一个更加简单的例子来理解深拷贝和浅拷贝。假设你有一个盒子，里面放了一个苹果。如果你使用浅拷贝的方式，就相当于你把这个盒子复制了一份，但是两个盒子里面放的还是同一个苹果，如果你从一个盒子里取出苹果，另一个盒子里的苹果也会被取出。如果你使用深拷贝的方式，就相当于你把这个盒子复制了一份，但是两个盒子里面放的是两个完全一样的苹果，如果你从一个盒子里取出苹果，另一个盒子里的苹果还是在原地。</p><p>深拷贝（deep copy）和浅拷贝（shallow copy）是在 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#JavaScript">JavaScript</a> 中经常用到的概念。</p><p>浅拷贝是指将一个对象的属性值复制到另一个对象，如果属性值是基本数据类型（如字符串、数字、布尔值等），则复制的是基本数据类型的值；如果属性值是引用数据类型（如数组、对象、函数等），则复制的是内存地址，也就是说两个对象会共享同一个引用类型的值。如果其中一个对象修改了这个引用类型的值，另一个对象也会受到影响。</p><p>深拷贝则是将一个对象的所有属性值都复制到另一个对象，包括基本数据类型和引用数据类型。即使原始对象中的引用类型属性值发生了改变，拷贝后的对象中的引用类型属性值也不会受到影响，因为它们指向的是不同的内存地址。</p><p>举个例子，如果我们有一个对象 obj1：</p><pre class="hljs"><code class="javascript hljs"><span class="hljs-keyword">const</span> obj1 = {
   <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;Alice&#x27;</span>,
   <span class="hljs-attr">age</span>: <span class="hljs-number">18</span>,
@@ -10788,6 +10820,23 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 }</code></pre><p>在这个例子中，我们使用try-catch语句块来处理可能的异常情况。在try块中，我们使用fs.readFileSync()方法同步读取JSON文件，并将文件内容存储在data变量中。如果读取文件时出现错误，catch块将捕获该错误，并输出错误信息。</p><p>以上是使用fs模块读取文件的示例，需要注意的是，在使用fs模块读取文件时，我们需要处理可能的异常情况，并根据实际情况选择异步或同步方法。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-count</title><link href="https://neotw.netlify.app/#recent-count"></link><link href="https://neotw.netlify.app/static/recent-count.html" rel="alternative" type="text/html"></link><id>6a131e9a-b046-19c3-08bd-35ef7c9ffbfc</id><updated>2023-02-08T18:16:06</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="tc-timeline">
 
 <div class="tc-menu-list-item">
+12th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#3">3</a></span>)
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TwEmoji"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#NerdFont"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#NotoEmoji"></a>
+</div>
+
+</div>
+
+<div class="tc-menu-list-item">
 11th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#13">13</a></span>)
 
 <div class="tc-menu-list-subitem">
@@ -11244,40 +11293,25 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 
 </div>
 
-<div class="tc-menu-list-item">
-29th May 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#7">7</a></span>)
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#LinkItem"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#debounce"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#js-void"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#readFile"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#this"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#js-fullscreen"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#2023-05-29"></a>
-</div>
-
-</div>
-
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-note-record</title><link href="https://neotw.netlify.app/#recent-note-record"></link><link href="https://neotw.netlify.app/static/recent-note-record.html" rel="alternative" type="text/html"></link><id>2619840e-dc84-d69e-3d32-c2258f306a66</id><updated>2023-04-11T09:39:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><ul>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TwEmoji">TwEmoji</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#NerdFont">NerdFont</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#NotoEmoji">NotoEmoji</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#how-to-use-tiddlywiki%40oeyoews">how-to-use-tiddlywiki@oeyoews</a>
@@ -15604,6 +15638,35 @@ Undefined widget 'echarts'
 </p>
 </div></div></content><author><name>oeyoews</name></author></entry><entry><title>tw-icon</title><link href="https://neotw.netlify.app/#tw-icon"></link><link href="https://neotw.netlify.app/static/tw-icon.html" rel="alternative" type="text/html"></link><id>32d28ae5-fece-ffa3-e723-c05e8c087982</id><updated>2023-06-10T12:04:34</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <p><a class="tc-tiddlylink-external _codified_" href="https://morosanuae.github.io/tw-icons/" rel="noopener noreferrer" target="_blank">tw-icon</a>
+</p>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>TwEmoji</title><link href="https://neotw.netlify.app/#TwEmoji"></link><link href="https://neotw.netlify.app/static/TwEmoji.html" rel="alternative" type="text/html"></link><id>e1572710-1ebb-3cb1-1c30-20d38d7acf01</id><updated>2023-06-12T00:21:28</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+<p>Twemoji 是一个开源的项目，旨在为网络上的表情符号提供一套标准化的图像资源。它是由 Twitter 开发和维护的，目的是提供一种跨平台、一致性的表情符号图像集，使用户在各种设备和平台上能够显示和共享相同的表情符号。
+</p>
+<p>Twemoji 基于 Unicode 标准中定义的表情符号字符集。Unicode 是一种用于标准化和表示文本字符的编码标准，它为世界上几乎所有的文字系统提供了唯一的编码，包括表情符号。Twemoji 将 Unicode 中的表情符号字符映射到相应的图像文件，以便在网页、应用程序和操作系统中使用。
+</p>
+<p>Twemoji 的主要特点和优势包括：
+</p>
+<ol>
+<li>
+<p>跨平台支持：Twemoji 提供了一套统一的表情符号图像资源，适用于各种操作系统、浏览器和应用程序。无论你是在桌面、移动设备还是 Web 上使用，Twemoji 都可以确保你看到的表情符号与其他用户保持一致。
+</p>
+</li>
+<li>
+<p>高质量图像：Twemoji 提供了精心设计的高质量表情符号图像，以便在各种显示设备上呈现清晰和细致的细节。这些图像符号经过细致制作，以尽可能准确地呈现原始的表情和情感。
+</p>
+</li>
+<li>
+<p>不断更新：随着 Unicode 标准中表情符号字符集的扩展和更新，Twemoji 也随之更新和发布新的图像资源。这意味着你可以始终使用最新的表情符号，无论是新的表情符号还是修改过的设计。
+</p>
+</li>
+<li>
+<p>开源和定制性：Twemoji 是一个开源项目，你可以自由地使用、修改和贡献代码。如果你希望自定义表情符号的外观或添加自定义符号，你可以通过 Twemoji 的开源代码进行修改。
+</p>
+</li>
+</ol>
+<p>要在你的应用程序或网页中使用 Twemoji，你需要引入 Twemoji 的 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#JavaScript">JavaScript</a> 库，并在需要显示表情符号的地方使用相应的 HTML 实体或 CSS 类来表示表情符号字符。然后，Twemoji 将自动将这些字符替换为相应的图像，使其在用户界面中显示。
+</p>
+<p>总的来说，Twemoji 是一个开源项目，为网络上的表情符号提供了一套统一的图像资源。通过 Twemoji，你可以确保在各种平台和设备上使用相同的表情符号，提供一致的用户体验。
 </p>
 </div></div></content><author><name>oeyoews</name></author></entry><entry><title>twitter-example</title><link href="https://neotw.netlify.app/#twitter-example"></link><link href="https://neotw.netlify.app/static/twitter-example.html" rel="alternative" type="text/html"></link><id>1a2ce178-6ae4-de74-9265-6f102349b6f7</id><updated>2023-04-19T20:26:43</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><center>
 Undefined widget 'twitter'
