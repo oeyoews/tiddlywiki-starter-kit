@@ -1,8 +1,8 @@
 created: 20230611123805993
 creator: oeyoews
-modified: 20230611151610873
+modified: 20230611152318708
 modifier: oeyoews
-publish: no
+publish: article
 tags: TiddlyWiki
 title: how-to-use-tiddlywiki@oeyoews
 type: text/markdown
@@ -32,3 +32,10 @@ type: text/markdown
 ## 自己写的一些插件
 
 <<callout-details "Tiddlywiki Neotw Plugins" "{{Neotw-PluginList}}">>
+
+## Tiddlywiki 高级使用技巧
+
+- [ ] 文字版: 待整理
+- [x] 代码版: 大多都在上面写的插件代码里面了, 包括但不限于 ...
+
+<$inline-giscus />
