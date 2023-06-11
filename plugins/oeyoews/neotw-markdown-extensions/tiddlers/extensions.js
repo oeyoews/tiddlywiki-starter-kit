@@ -48,17 +48,17 @@ Extension markdown-it
       const config = createContainerConfig(label, color);
       md.use(containerPlugin, name, config);
     });
-    console.log('🎉 LoadExtensions');
+    // console.log('🎉 LoadExtensions');
   }
 
-  function LoadEmoji() {
+  /* function LoadEmoji() {
     window.emoji = require('./markdown-it-emoji');
-  }
+  } */
 
   exports.name = 'markdown-extension-startup-hook';
   exports.platforms = ['browser'];
   exports.after = ['load-modules'];
   exports.synchronous = true;
-  // exports.startup = LoadExtensions;
-  exports.startup = LoadEmoji;
+  exports.startup = LoadExtensions;
+  // exports.startup = LoadEmoji;
 })();
