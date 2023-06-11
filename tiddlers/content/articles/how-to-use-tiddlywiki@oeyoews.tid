@@ -1,6 +1,6 @@
 created: 20230611123805993
 creator: oeyoews
-modified: 20230611154443801
+modified: 20230611155243837
 modifier: oeyoews
 publish: article
 tags: TiddlyWiki
@@ -11,15 +11,16 @@ type: text/markdown
 
 ## 使用操作系统(平台)
 
-* Linux
+* Linux(:penguin:)
 
 ## 启动方式
 
-* Pm2+NodeJs
+* Pm2+NodeJs 
 
 ## 笔记录入
 
 * 使用快捷键<kbd>g + n</kbd>(通过扩展motion插件, 自定义快捷键位) 写入markdown笔记, 使用<kbd>alt + j</kbd> 录入日记
+* 大多是随心所记, 不存在所谓的笔记哲学存在(常青笔记, 卢曼笔记 ...), 最多闲下来的时候, 整理一下过去的笔记, 很少特意去看, 有时会对过去的一些笔记进行更新补充;
 
 ## 编辑器模式
 
@@ -39,5 +40,13 @@ type: text/markdown
 - [x] 代码版: 大多都在上面写的插件代码里面了, 包括但不限于 ...
 
 <!-- <$inline-giscus /> -->
+
+## 我接触Tiddlywiki的过程
+
+> Coming :smile:
+
+## 我是如何学习(折腾)Tiddlywiki的
+
+> Coming :smile:
 
 ## ...
