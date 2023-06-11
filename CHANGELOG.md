@@ -1,3 +1,11 @@
+# [3.300.0](https://github.com/oeyoews/neotw/compare/v3.299.0...v3.300.0) (2023-06-11)
+
+
+### Features
+
+* add freelinks ([12af95b](https://github.com/oeyoews/neotw/commit/12af95bb3be30151372bf34a697c806f00d6e099))
+* support ./ for require js file ([dde37c2](https://github.com/oeyoews/neotw/commit/dde37c24b976d43ca62c8c504da68bff74c20966))
+
 # [3.299.0](https://github.com/oeyoews/neotw/compare/v3.298.0...v3.299.0) (2023-06-11)
 
 
