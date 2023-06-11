@@ -2,10 +2,11 @@
   "directories": [
     {
       "path": "./",
-      "filesRegExp": "^.*\\.min.js$",
+      "filesRegExp": "^.*\\.js$",
       "fields": {
         "title": {
-          "source": "filename"
+          "source": "filename",
+          "prefix": "$:/plugins/oeyoews/${pluginname}/"
         },
         "module-type": "library",
         "type": "application/javascript",

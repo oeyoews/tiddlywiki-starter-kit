@@ -51,7 +51,8 @@ ${pluginname} widget
     }
 
     handlerClick = () => {
-      console.log('button clicked');
+      require('./demo.min');
+      console.log('This require just load once');
     };
   }
 
