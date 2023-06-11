@@ -58,7 +58,7 @@ git clone --depth 1 -b template https://github.com/oeyoews/neotw
 😜 最简单的使用办法就是打开Neotw模板站点, 直接保存网页到本地;
 或者直接下载Release里面的[Zip](https://github.com/oeyoews/neotw/releases) 压缩包
 
-[oeyoews 如何使用Tiddlywiki](https://neotw.oeyoewl.top/#how-to-use-tiddlywiki%40oeyoews)
+[oeyoews 是如何使用Tiddlywiki的](https://neotw.oeyoewl.top/#how-to-use-tiddlywiki%40oeyoews)
 
 ## Deploy :gear:
 
