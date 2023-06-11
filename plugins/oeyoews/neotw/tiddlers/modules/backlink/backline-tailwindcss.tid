@@ -8,7 +8,7 @@ title: $:/plugins/oeyoews/neotw/modules/backline-tailwindcss
     <$button popup=<<stateTiddler>> class="inline-flex items-center px-2 py-1 border border-transparent rounded-md font-semibold text-xs text-white bg-indigo-500 hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" tooltip="Show backlinks">
       {{$:/core/images/link}}&nbsp;<strong><<backlinkCount>> backlink<$reveal type="nomatch" text=<<backlinkCount>> default="1">s</$reveal></strong>
     </$button>
-    <$reveal type="popup" state=<<stateTiddler>> position="below" tag="div" class="border rounded-md bg-white  max-h-72 w-min-90vw md:w-72 shadow-md overflow-hidden filter-contrast-90 pb-1">
+    <$reveal type="popup" state=<<stateTiddler>> position="below" tag="div" class="border rounded-md bg-white  max-h-72 w-min-90vw md:w-72 shadow-md overflow-hidden filter-contrast-90 pb-1 mt-2">
       <div class="text-sm leading-4 text-ellipsis overflow-hidden my-3 mx-2 flex-1 pl-2">Linked to <$reveal type="nomatch" text=<<backlinkCount>> default="1">these pages</$reveal><$reveal type="match" text=<<backlinkCount>> default="1">this page</$reveal>:</div>
       <$list filter="[<currentTiddler>!is[draft]backlinks[]!is[draft]!is[shadow]!is[system]]">
         <$link class="cursor-pointer w-full text-black capitalize text-indigo-500 hover:underline filter-contrast-70 flex items-center mb-2 mr-4 py-1 px-3 border-b border-gray-300 transition-all duration-300" to=<<currentTiddler>>>

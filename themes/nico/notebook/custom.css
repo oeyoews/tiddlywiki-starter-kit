@@ -157,3 +157,8 @@ button {
 .tc-plugin-info-dropdown {
   border: none;
 }
+
+/* prose a tailwindcss */
+/* .tc-tiddlylink: hover {
+  background-color: rgb(241 245 249);
+} */
