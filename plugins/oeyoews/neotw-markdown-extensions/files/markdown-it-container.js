@@ -1,12 +1,5 @@
-/*\
-title: $:/plugins/tiddlywiki/markdown/markdown-it-container.js
-type: application/javascript
-module-type: library
-hide-body: yes
+// markdown-it-container 3.0.0 https://github.com//markdown-it/markdown-it-container @license MIT
 
-markdown-it-container 3.0.0 https://github.com//markdown-it/markdown-it-container @license MIT
-
-\*/
 !(function (e) {
   if ('object' == typeof exports && 'undefined' != typeof module)
     module.exports = e();

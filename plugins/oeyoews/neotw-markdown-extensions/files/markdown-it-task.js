@@ -1,12 +1,4 @@
-/*\
-title: $:/plugins/tiddlywiki/markdown/markdown-it-task.js
-type: application/javascript
-module-type: library
-hide-body: yes
-
-markdown-it-task-lists 2.1.0 https://github.com/revin/markdown-it-task-lists#readme by  @license {ISC}
-
-\*/
+// markdown-it-task-lists 2.1.0 https://github.com/revin/markdown-it-task-lists#readme by  @license {ISC}
 
 // Markdown-it plugin to render GitHub-style task lists; see
 //

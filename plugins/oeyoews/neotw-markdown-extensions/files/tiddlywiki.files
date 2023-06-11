@@ -1,0 +1,17 @@
+{
+  "directories": [
+    {
+      "path": "./",
+      "filesRegExp": "^.*\\.js$",
+      "fields": {
+        "title": {
+          "source": "filename",
+          "prefix": "$:/plugins/oeyoews/neotw-markdown-extensions/"
+        },
+        "module-type": "library",
+        "type": "application/javascript",
+        "hide-body": "yes"
+      }
+    }
+  ]
+}
