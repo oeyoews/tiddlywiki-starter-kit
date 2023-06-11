@@ -1,10 +1,34 @@
 created: 20230611123805993
 creator: oeyoews
-modified: 20230611124019791
+modified: 20230611151610873
 modifier: oeyoews
 publish: no
 tags: TiddlyWiki
 title: how-to-use-tiddlywiki@oeyoews
 type: text/markdown
 
-> :smile: Coming
+@[toc]
+
+## 使用操作系统(平台)
+
+* Linux
+
+## 启动方式
+
+* Pm2+NodeJs
+
+## 笔记录入
+
+* 使用快捷键<kbd>g + n</kbd>(通过扩展motion插件, 自定义快捷键位) 写入markdown笔记, 使用<kbd>alt + j</kbd> 录入日记
+
+## 编辑器模式
+
+* Neovim(vim) 重度使用者, 几乎所有的Tiddlywiki 都是使用 Neovim 写的, 所以在Tiddlywiki 里面也是使用vim的编辑方式
+
+## Tiddlywiki 样式
+
+* 全部使用tailwindcss来写, 省去手写样式, 并且节省空间和时间
+
+## 自己写的一些插件
+
+<<callout-details "Tiddlywiki Neotw Plugins" "{{Neotw-PluginList}}">>
