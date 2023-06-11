@@ -13,6 +13,7 @@
     "tiddlywiki/codemirror-mode-css",
     "tiddlywiki/codemirror-search-replace",
     "tiddlywiki/codemirror-closebrackets",
+    "tiddlywiki/freelinks",
     "tiddlywiki/codemirror-mode-markdown",
     "tiddlywiki/codemirror-mode-xml",
     "tiddlywiki/codemirror-mode-javascript",
