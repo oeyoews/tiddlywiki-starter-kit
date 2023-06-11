@@ -1,12 +1,12 @@
 created: 20230610121817720
 creator: oeyoews
-modified: 20230611024012172
+modified: 20230611091458071
 modifier: oeyoews
 tags: 
 title: neovim-plugin
 type: text/markdown
 
-* [Neovim](#Neovim) 插件一般是对core功能的二次封装, 只不过是增加易用性, 便捷性; 
+* Neovim 插件一般是对core功能的二次封装, 只不过是增加易用性, 便捷性; 
 
 * 核心与插件之间的关系更符合低耦合高内聚原则
 

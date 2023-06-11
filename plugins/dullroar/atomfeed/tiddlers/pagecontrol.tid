@@ -13,7 +13,7 @@ list-after:
 </$list>
 <$list filter="[<tv-config-toolbar-text>match[yes]]">
 <span class="tc-btn-text">
-<$text text=""/>
+  <$text text="Rss"/>
 </span>
 </$list>
 </$button>
