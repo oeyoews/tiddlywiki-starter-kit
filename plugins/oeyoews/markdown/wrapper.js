@@ -6,16 +6,12 @@ module-type: parser
 Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
 
 \*/
-(function (realRequire) {
+(function() {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
 
-  var require = function (m) {
-    return realRequire('$:/plugins/tiddlywiki/markdown/' + m + '.js');
-  };
-
-  var MarkdownIt = require('markdown-it');
+  var MarkdownIt = require('./markdown-it');
 
   function parseAsBoolean(tiddlerName) {
     return (
@@ -66,8 +62,13 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
       return rulesInfo;
     }
 
+    var WikiParser =
+      require('$:/core/modules/parsers/wikiparser/wikiparser.js')[
+      'text/vnd.tiddlywiki'
+      ];
+
     // first pass: get all rule classes
-    var wikiParser = new $tw.Wiki.parsers['text/vnd.tiddlywiki'](null, '', {
+    var wikiParser = new WikiParser(null, '', {
       parseAsInline: true,
       wiki: $tw.wiki,
     });
@@ -88,7 +89,7 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
 
     var pragma = pluginOptions.renderWikiText
       ? '\\rules except latex-parser extlink\n' +
-        pluginOptions.renderWikiTextPragma
+      pluginOptions.renderWikiTextPragma
       : '\\rules only html entity commentinline commentblock';
 
     wikiParser.pos = 0;
@@ -104,117 +105,49 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
     results.inlineRuleClasses = {};
 
     // save the rule sets for future markdown parsing
-    wikiParser.blockRules.forEach(function (ruleinfo) {
+    wikiParser.blockRules.forEach(function(ruleinfo) {
       results.blockRules[ruleinfo.rule.name] = ruleinfo;
       results.blockRuleClasses[ruleinfo.rule.name] = ruleinfo.rule.class;
     });
-    wikiParser.inlineRules.forEach(function (ruleinfo) {
+    wikiParser.inlineRules.forEach(function(ruleinfo) {
       results.inlineRules[ruleinfo.rule.name] = ruleinfo;
       results.inlineRuleClasses[ruleinfo.rule.name] = ruleinfo.rule.class;
     });
     return results;
   }
-
-  // TODO
-  // 定义公共样式
-  const containerCommonStyle =
-    'rounded-md border-l-4 px-2 my-2 font-bold content';
-
-  function renderContainer(tokens, idx, className) {
-    if (tokens[idx].nesting === 1) {
-      return (
-        `<div class="${className}" ">\n` +
-        '<div class="' +
-        containerCommonStyle +
-        '">'
-      );
-    } else {
-      return '</div>\n</div>\n';
-    }
+  function createContainerConfig(type, color) {
+    return {
+      render: function(tokens, idx) {
+        if (tokens[idx].nesting === 1) {
+          return (
+            `<div class="rounded-md border-left border-l-4 px-1 my-2 bg-${color}-100 border-${color}-500 text-${color}-700">\n` +
+            `<div class="font-bold">${type}</div>` +
+            '<div class="content">'
+          );
+        } else {
+          return '</div>\n</div>\n';
+        }
+      },
+    };
   }
-
-  // 定义 warning 容器
-  /* .use(require('markdown-it-container'), 'warning', {
-    render: function (tokens, idx) {
-        const className = 'bg-yellow-100 border-yellow-500';
-        return renderContainer(tokens, idx, className, 'yellow');
-    }
-}) */
 
   // Creates markdown-it parser
   function createMarkdownEngine(markdownItOptions, pluginOptions) {
-    const container = require('markdown-it-container');
+    const container = require('./markdown-it-container');
     var md = new MarkdownIt(markdownItOptions)
-      .use(require('markdown-it-sub'))
-      .use(require('markdown-it-sup'))
-      .use(require('markdown-it-ins'))
-      .use(require('markdown-it-mark'))
-      .use(require('markdown-it-footnote'))
-      // .use(require('markdown-it-emoji'))
-      // TODO Fix [[xxx]]
-      // .use(require('markdown-it-task'))
-      // .use(require('markdown-it-toc'))
-      // .use(require('markdown-it-container'), 'warning')
-      // .use(require('markdown-it-container'), 'info')
-      // .use(require('markdown-it-container'), 'error')
-
-      .use(container, 'todo', {
-        render: function (tokens, idx) {
-          if (tokens[idx].nesting === 1) {
-            return (
-              '<div class="bg-green-100 rounded-md border-left border-l-4 border-green-500 text-green-700 px-1 my-2">\n' +
-              '<div class="font-bold">✅ 任务</div>' +
-              '<div class="content">'
-            );
-          } else {
-            return '</div>\n</div>\n';
-          }
-        },
-      })
-
-      // 定义 warning 容器
-      .use(container, 'warning', {
-        render: function (tokens, idx) {
-          if (tokens[idx].nesting === 1) {
-            return (
-              '<div class="bg-yellow-100 rounded-md border-left border-l-4 border-yellow-500 text-yellow-700 px-2 my-2">\n' +
-              '<div class="font-bold">注意</div>' +
-              '<div class="content">'
-            );
-          } else {
-            return '</div>\n</div>\n';
-          }
-        },
-      })
-
-      // 定义 info 容器
-      .use(container, 'info', {
-        render: function (tokens, idx) {
-          if (tokens[idx].nesting === 1) {
-            return (
-              '<div class="bg-blue-100 rounded-md border-left border-l-4 border-blue-500 text-blue-700 px-1 my-2">\n' +
-              '<div class="font-bold">提示</div>' +
-              '<div class="content">'
-            );
-          } else {
-            return '</div>\n</div>\n';
-          }
-        },
-      })
-      .use(container, 'error', {
-        render: function (tokens, idx) {
-          if (tokens[idx].nesting === 1) {
-            return (
-              '<div class="bg-red-100 border-left rounded-md border-l-4 border-red-500 text-red-700 px-1 my-10">\n' +
-              '<div class="font-bold">警告</div>' +
-              '<div class="content">'
-            );
-          } else {
-            return '</div>\n</div>\n';
-          }
-        },
-      })
-      .use(require('markdown-it-deflist'));
+      .use(require('./markdown-it-sub'))
+      .use(require('./markdown-it-sup'))
+      .use(require('./markdown-it-ins'))
+      .use(require('./markdown-it-mark'))
+      .use(require('./markdown-it-footnote'))
+      .use(require('./markdown-it-emoji'))
+      .use(require('./markdown-it-task'))
+      .use(require('./markdown-it-toc'))
+      .use(container, 'todo', createContainerConfig('✅ 任务', 'green'))
+      .use(container, 'warning', createContainerConfig('注意', 'yellow'))
+      .use(container, 'info', createContainerConfig('提示', 'blue'))
+      .use(container, 'error', createContainerConfig('警告', 'red'))
+      .use(require('./markdown-it-deflist'));
 
     var results = setupWikiRules(pluginOptions);
 
@@ -228,16 +161,16 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
       pluginOptions.renderWikiText &&
       $tw.modules.titles['$:/plugins/tiddlywiki/katex/katex.min.js']
     ) {
-      md.use(require('markdown-it-katex'));
+      md.use(require('./markdown-it-katex'));
     }
 
-    md.use(require('markdown-it-tiddlywiki'), {
+    md.use(require('./markdown-it-tiddlywiki'), {
       renderWikiText: pluginOptions.renderWikiText,
       blockRules: results.blockRules,
       inlineRules: results.inlineRules,
     });
 
-    $tw.utils.each(['image', 'prettylink', 'prettyextlink'], function (rule) {
+    $tw.utils.each(['image', 'prettylink', 'prettyextlink'], function(rule) {
       if (MarkdownParser.prototype.inlineRules[rule]) {
         // delegate to md; ignore the rule class in WikiParser
         delete MarkdownParser.prototype.inlineRuleClasses[rule];
@@ -249,7 +182,7 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
   /// Parse tree post processing ///
 
   function deactivateLinks(tree) {
-    $tw.utils.each(tree, function (node) {
+    $tw.utils.each(tree, function(node) {
       if (node.type === 'link') {
         node.type = 'text';
         node.text = node.children[0].text;
@@ -291,8 +224,8 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
         match[1] !== undefined
           ? match[1]
           : match[2] !== undefined
-          ? match[2]
-          : match[3];
+            ? match[2]
+            : match[3];
       node.end = pos + match[0].length;
       if (match[0].charAt(0) === 'e') {
         node.value = decodeEntities(node.value);
@@ -306,7 +239,7 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
   function processWikiTree(tree, hasWikiLinkRule) {
     var stack = [].concat(tree);
 
-    var mergeable = function (node) {
+    var mergeable = function(node) {
       return (
         node.type === 'element' &&
         node.tag === 'p' &&
@@ -336,8 +269,9 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
   }
 
   // to extend MarkdownIt outside of this module, do:
-  // var emoji = require('markdown-it-emoji');
-  // md.use(emoji);
+  //
+  // md = $tw.Wiki.parsers["text/markdown"].prototype.md;
+  // md.use(plugin[, options]);
   MarkdownParser.prototype.md = createMarkdownEngine(markdownOpts, pluginOpts);
 
   function MarkdownParser(type, text, options) {
@@ -375,8 +309,8 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
       wikiParser = $tw.wiki.parseText(
         'text/vnd.tiddlywiki',
         '<strong>Error encountered while parsing the tiddler:</strong><p>' +
-          err.message +
-          '</p>',
+        err.message +
+        '</p>',
         { parseAsInline: false, wiki: options.wiki },
       );
     } finally {
@@ -385,7 +319,7 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
     if (wikiParser.tree.length > 0) {
       var hasWikiLinkRule = false;
       // see if wikilink rule has been invoked
-      $tw.utils.each(wikiParser.inlineRules, function (ruleInfo) {
+      $tw.utils.each(wikiParser.inlineRules, function(ruleInfo) {
         if (ruleInfo.rule.name === 'wikilink') {
           hasWikiLinkRule = true;
           return false;
@@ -401,4 +335,4 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
 
   exports['text/markdown'] = MarkdownParser;
   exports['text/x-markdown'] = MarkdownParser;
-})(require);
+})();
