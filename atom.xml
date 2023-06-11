@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Neotw rolling</title><subtitle>A modern notebook based on TiddlyWiki5</subtitle><link href="https://neotw.netlify.app/atom.xml" rel="self"></link><link href="https://neotw.netlify.app/"></link><author><name>oeyoews</name></author><id>416f5e39-b874-91f8-e7ac-3ce66e36ac39</id><updated>2023-06-11T23:44:43</updated><entry><title>/home/runner/work/neotw/neotw/tiddlers/hi-oeyoews.svg</title><link href="https://neotw.netlify.app/#%2Fhome%2Frunner%2Fwork%2Fneotw%2Fneotw%2Ftiddlers%2Fhi-oeyoews.svg"></link><link href="https://neotw.netlify.app/static/%252Fhome%252Frunner%252Fwork%252Fneotw%252Fneotw%252Ftiddlers%252Fhi-oeyoews.svg.html" rel="alternative" type="text/html"></link><id>3798d5df-8b06-4ca4-8046-0c87bf3b437d</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><img src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20viewBox%3D%220%200%20600%20300%22%20width%3D%22600%22%20height%3D%22300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3CforeignObject%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%0A%20%20%20%20%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%0A%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%40keyframes%20hi%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%200%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2010%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2020%25%20%7B%20transform%3A%20rotate(-8.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2030%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2040%25%20%7B%20transform%3A%20rotate(-4.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2050%25%20%7B%20transform%3A%20rotate(10.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2060%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40keyframes%20gradient%20%7B%0A%20%20%20%20%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%2050%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%20100%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%235452ee%3B%0A%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%23e73c7e%3B%0A%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%2323a6d5%3B%0A%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23ffff%3B%0A%0A%20%20%20%20%20%20%20%20%20%20background%3A%20linear-gradient(-45deg%2C%20var(--color-main)%2C%20var(--color-primary)%2C%20var(--color-secondary)%2C%20var(--color-tertiary))%3B%0A%20%20%20%20%20%20%20%20%20%20background-size%3A%20400%25%20400%25%3B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20gradient%2015s%20ease%20infinite%3B%0A%0A%20%20%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20%20%20height%3A%20300px%3B%0A%0A%20%20%20%20%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20color%3A%20white%3B%0A%0A%20%20%20%20%20%20%20%20%20%20font-family%3A%20-apple-system%2C%20BlinkMacSystemFont%2C%20%22Segoe%20UI%22%2C%20Roboto%2C%20Helvetica%2C%20Arial%2C%20sans-serif%2C%20%22Apple%20Color%20Emoji%22%2C%20%22Segoe%20UI%20Emoji%22%2C%20%22Segoe%20UI%20Symbol%22%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20hi%201.5s%20linear%20-0.5s%20infinite%3B%0A%20%20%20%20%20%20%20%20%20%20display%3A%20inline-block%3B%0A%20%20%20%20%20%20%20%20%20%20transform-origin%3A%2070%25%2070%25%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-color-scheme%3A%20light)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%23F15BB5%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%2324b0ef%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%234526f6%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23f6f645%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-reduced-motion)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%3C%2Fstyle%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%20%20%3Ch1%3EHi%20there%2C%20my%20name%20is%20oeyoews%20%3Cdiv%20class%3D%22hi%22%3E%F0%9F%91%8B%3C%2Fdiv%3E%3C%2Fh1%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2FforeignObject%3E%0A%3C%2Fsvg%3E"></img></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-02-28</title><link href="https://neotw.netlify.app/#2023-02-28"></link><link href="https://neotw.netlify.app/static/2023-02-28.html" rel="alternative" type="text/html"></link><id>90d001b4-d8df-ae9a-ba70-fe38459a71c5</id><updated>2023-02-28T00:12:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div>无论人生上了哪一层台阶 ，阶下有人在仰望你，阶上亦有人在俯视你；你抬头自卑，低头自得，唯有平视，才能看到真实的自已。 @杨绛语录</div></blockquote></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-16</title><link href="https://neotw.netlify.app/#2023-04-16"></link><link href="https://neotw.netlify.app/static/2023-04-16.html" rel="alternative" type="text/html"></link><id>b720eb79-6a7f-86f0-c39b-4c456f2916fb</id><updated>2023-04-16T09:56:15</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>初级赚钱方式靠信息差，
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Neotw rolling</title><subtitle>A modern notebook based on TiddlyWiki5</subtitle><link href="https://neotw.netlify.app/atom.xml" rel="self"></link><link href="https://neotw.netlify.app/"></link><author><name>oeyoews</name></author><id>416f5e39-b874-91f8-e7ac-3ce66e36ac39</id><updated>2023-06-11T23:52:43</updated><entry><title>/home/runner/work/neotw/neotw/tiddlers/hi-oeyoews.svg</title><link href="https://neotw.netlify.app/#%2Fhome%2Frunner%2Fwork%2Fneotw%2Fneotw%2Ftiddlers%2Fhi-oeyoews.svg"></link><link href="https://neotw.netlify.app/static/%252Fhome%252Frunner%252Fwork%252Fneotw%252Fneotw%252Ftiddlers%252Fhi-oeyoews.svg.html" rel="alternative" type="text/html"></link><id>3798d5df-8b06-4ca4-8046-0c87bf3b437d</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><img src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20viewBox%3D%220%200%20600%20300%22%20width%3D%22600%22%20height%3D%22300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3CforeignObject%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%0A%20%20%20%20%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%0A%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%40keyframes%20hi%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%200%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2010%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2020%25%20%7B%20transform%3A%20rotate(-8.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2030%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2040%25%20%7B%20transform%3A%20rotate(-4.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2050%25%20%7B%20transform%3A%20rotate(10.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2060%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40keyframes%20gradient%20%7B%0A%20%20%20%20%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%2050%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%20100%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%235452ee%3B%0A%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%23e73c7e%3B%0A%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%2323a6d5%3B%0A%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23ffff%3B%0A%0A%20%20%20%20%20%20%20%20%20%20background%3A%20linear-gradient(-45deg%2C%20var(--color-main)%2C%20var(--color-primary)%2C%20var(--color-secondary)%2C%20var(--color-tertiary))%3B%0A%20%20%20%20%20%20%20%20%20%20background-size%3A%20400%25%20400%25%3B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20gradient%2015s%20ease%20infinite%3B%0A%0A%20%20%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20%20%20height%3A%20300px%3B%0A%0A%20%20%20%20%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20color%3A%20white%3B%0A%0A%20%20%20%20%20%20%20%20%20%20font-family%3A%20-apple-system%2C%20BlinkMacSystemFont%2C%20%22Segoe%20UI%22%2C%20Roboto%2C%20Helvetica%2C%20Arial%2C%20sans-serif%2C%20%22Apple%20Color%20Emoji%22%2C%20%22Segoe%20UI%20Emoji%22%2C%20%22Segoe%20UI%20Symbol%22%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20hi%201.5s%20linear%20-0.5s%20infinite%3B%0A%20%20%20%20%20%20%20%20%20%20display%3A%20inline-block%3B%0A%20%20%20%20%20%20%20%20%20%20transform-origin%3A%2070%25%2070%25%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-color-scheme%3A%20light)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%23F15BB5%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%2324b0ef%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%234526f6%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23f6f645%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-reduced-motion)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%3C%2Fstyle%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%20%20%3Ch1%3EHi%20there%2C%20my%20name%20is%20oeyoews%20%3Cdiv%20class%3D%22hi%22%3E%F0%9F%91%8B%3C%2Fdiv%3E%3C%2Fh1%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2FforeignObject%3E%0A%3C%2Fsvg%3E"></img></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-02-28</title><link href="https://neotw.netlify.app/#2023-02-28"></link><link href="https://neotw.netlify.app/static/2023-02-28.html" rel="alternative" type="text/html"></link><id>90d001b4-d8df-ae9a-ba70-fe38459a71c5</id><updated>2023-02-28T00:12:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div>无论人生上了哪一层台阶 ，阶下有人在仰望你，阶上亦有人在俯视你；你抬头自卑，低头自得，唯有平视，才能看到真实的自已。 @杨绛语录</div></blockquote></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-16</title><link href="https://neotw.netlify.app/#2023-04-16"></link><link href="https://neotw.netlify.app/static/2023-04-16.html" rel="alternative" type="text/html"></link><id>b720eb79-6a7f-86f0-c39b-4c456f2916fb</id><updated>2023-04-16T09:56:15</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>初级赚钱方式靠信息差，
 高级赚钱方式靠认知差，
 顶级赚钱方式靠资源差</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-20</title><link href="https://neotw.netlify.app/#2023-04-20"></link><link href="https://neotw.netlify.app/static/2023-04-20.html" rel="alternative" type="text/html"></link><id>66fbd211-302a-90f1-43e7-1f0ea4e0f181</id><updated>2023-04-20T20:53:27</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>多端同步的便捷和本地存储的安全，就是鱼与熊掌不可兼得。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-23</title><link href="https://neotw.netlify.app/#2023-04-23"></link><link href="https://neotw.netlify.app/static/2023-04-23.html" rel="alternative" type="text/html"></link><id>eb28f00e-453b-d5a1-967b-e984799ea2d8</id><updated>2023-04-24T00:16:36</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div>延迟满足</div><div>用书籍增加三倍人生体验时长</div><div>不以成喜，不以败悲</div></blockquote><p>“止观止心，无妄无碍”是禅宗的一种修行方法，也是佛教徒在生活中追求内心平静和解脱的方式。</p><p>其中，“止”指的是停止杂念、烦恼等不必要的思考和行为，如止诸恶、止杀戮、止谤言等。这样可以使内心得到安定和净化，有利于后续的修行。</p><p>“观”则指观察事物的真相和本质，排除偏见和执着。通过观想自己和世界的真实性质，认识自己的本性和命运，从而达到身心合一、彻底了解自己和世界的目的。</p><p>“无妄”则表示去除「妄念」、「妄想」和「妄语」等，即清空心灵中荒谬无稽的幻想和自我，让自己的内心变得更加安宁、平静。</p><p>“无碍”则是指避免心态上的障碍和物质层面的附着，为达到自由和解脱而努力。</p><p>总之，这个修行方法要求个人通过内省、检视和拯救自己，消除恶念与烦恼，培养慈悲之心，领悟事物的真实本质，从而找到内心的平静和解放。</p><blockquote><div>客观事物发展规律不以人的主观意志，然而掌握事物的发展规律，却可以从必然王国到自由王国</div></blockquote><p>这句话的意思是，客观事物的发展规律是客观存在的，不受人的主观意志的影响。但是，如果我们能够掌握这些规律并对它们进行改变和运用，我们就可以从必然王国（受客观规律支配的领域）进入自由王国（自由创造或创新的领域）。</p><p>在许多领域中，我们都可以看到这一点。例如，在科学技术领域，我们通过研究和掌握客观规律，开发出了许多有用的工具和技术，使我们的生产和生活更加便利和高效。同样，在社会和经济领域中，通过深入了解客观规律，我们可以制定出更好的政策和管理方法，以促进社会和经济的稳定和发展。</p><p>尽管客观规律的存在使我们受到限制，但如果我们学会理解和运用这些规律，我们就可以发挥自己的主动性和创造性，实现更高的自由度，并不断推动事物的进步和发展。因此，掌握客观规律是实现自由和创造的关键之一。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-25</title><link href="https://neotw.netlify.app/#2023-04-25"></link><link href="https://neotw.netlify.app/static/2023-04-25.html" rel="alternative" type="text/html"></link><id>07baca31-a4c1-d735-df41-8cf857fe4d13</id><updated>2023-04-25T23:01:46</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://space.bilibili.com/43109229/channel/collectiondetail?sid=1234748" rel="noopener noreferrer" target="_blank">https://space.bilibili.com/43109229/channel/collectiondetail?sid=1234748</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-05-06</title><link href="https://neotw.netlify.app/#2023-05-06"></link><link href="https://neotw.netlify.app/static/2023-05-06.html" rel="alternative" type="text/html"></link><id>ac8c3ae3-20fd-c971-eb36-7e3608c51b59</id><updated>2023-05-06T22:55:30</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>拥有能让自己快乐的能力,有一件让自己兴奋一点的事情</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-05-15</title><link href="https://neotw.netlify.app/#2023-05-15"></link><link href="https://neotw.netlify.app/static/2023-05-15.html" rel="alternative" type="text/html"></link><id>5ae2dacd-4932-0fb6-3754-327b31a02c7f</id><updated>2023-05-15T09:19:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>社交的本质是价值交换</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-05-17</title><link href="https://neotw.netlify.app/#2023-05-17"></link><link href="https://neotw.netlify.app/static/2023-05-17.html" rel="alternative" type="text/html"></link><id>5cfc6d08-80d6-3230-a52e-29ee0b651757</id><updated>2023-05-17T10:46:31</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <ul>
@@ -2651,7 +2651,7 @@ Undefined widget 'tid2pdf'
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>GettingStarted</title><link href="https://neotw.netlify.app/#GettingStarted"></link><link href="https://neotw.netlify.app/static/GettingStarted.html" rel="alternative" type="text/html"></link><id>fc927313-83cf-7e0a-53c1-21853f695851</id><updated>2023-06-05T19:42:02</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:bg-white">
 <div class="dark:hidden">
 <img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-686-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-49-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-73-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-69 seconds ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-17 minutes ago-green?style=social"></img>  
 </div>
 
 
@@ -3010,7 +3010,7 @@ Undefined widget 'tid2pdf'
 </code></pre>
 <p>在这个例子中，我们创建了一个上下文对象 <code class="_codified_">MyContext</code>，并在组件中调用 <code class="_codified_">useContext</code> 来获取当前上下文的值。如果没有找到上下文提供者（即该组件的父组件未提供该上下文），则默认值将被返回。在使用这种方式时，需要保证上下文提供者和依赖于上下文的消费者组件处于同一个组件树中，才能使用上下文来进行数据交换。
 </p>
-</div></div></content><author><name>oeyoews</name></author></entry><entry><title>how-to-use-tiddlywiki@oeyoews</title><link href="https://neotw.netlify.app/#how-to-use-tiddlywiki%40oeyoews"></link><link href="https://neotw.netlify.app/static/how-to-use-tiddlywiki%2540oeyoews.html" rel="alternative" type="text/html"></link><id>851ae300-e0ab-80dc-faf4-aa0ad13057f2</id><updated>2023-06-11T23:44:43</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>how-to-use-tiddlywiki@oeyoews</title><link href="https://neotw.netlify.app/#how-to-use-tiddlywiki%40oeyoews"></link><link href="https://neotw.netlify.app/static/how-to-use-tiddlywiki%2540oeyoews.html" rel="alternative" type="text/html"></link><id>851ae300-e0ab-80dc-faf4-aa0ad13057f2</id><updated>2023-06-11T23:52:43</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <p><div class="toc" id="toc">
         <h3>🌴 Table of Contents</h3>
     <ul class="toc-level"><ul class="toc-level">
@@ -3058,7 +3058,19 @@ Undefined widget 'tid2pdf'
         
           <li class="capitalize">
             <a href="##h-0.8">
-              ⭐️ 0.8 ...
+              ⭐️ 0.8 我接触Tiddlywiki的过程
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.9">
+              ⭐️ 0.9 我是如何学习(折腾)Tiddlywiki的
+            </a>
+          </li>
+        
+          <li class="capitalize">
+            <a href="##h-0.10">
+              ⭐️ 0.10 ...
             </a>
           </li>
         </ul></ul></div>
@@ -3070,7 +3082,7 @@ Undefined widget 'tid2pdf'
       </a>
   使用操作系统(平台)</h2>
 <ul>
-<li>Linux</li>
+<li>Linux(🐧)</li>
 </ul>
 
     <h2>
@@ -3079,7 +3091,7 @@ Undefined widget 'tid2pdf'
       </a>
   启动方式</h2>
 <ul>
-<li>Pm2+<a class="tc-tiddlylink tc-tiddlylink-missing" href="#NodeJs">NodeJs</a></li>
+<li>Pm2+<a class="tc-tiddlylink tc-tiddlylink-missing" href="#NodeJs">NodeJs</a> </li>
 </ul>
 
     <h2>
@@ -3089,6 +3101,7 @@ Undefined widget 'tid2pdf'
   笔记录入</h2>
 <ul>
 <li>使用快捷键<kbd>g + n</kbd>(通过扩展motion插件, 自定义快捷键位) 写入markdown笔记, 使用<kbd>alt + j</kbd> 录入日记</li>
+<li>大多是随心所记, 不存在所谓的笔记哲学存在(常青笔记, 卢曼笔记 …), 最多闲下来的时候, 整理一下过去的笔记, 很少特意去看, 有时会对过去的一些笔记进行更新补充;</li>
 </ul>
 
     <h2>
@@ -3130,6 +3143,26 @@ Undefined widget 'tid2pdf'
     <h2>
       <a href="##h-0.8" id="#h-0.8">
        ✨ 0.8
+      </a>
+  我接触Tiddlywiki的过程</h2>
+<blockquote>
+<p>Coming 😄
+</p>
+</blockquote>
+
+    <h2>
+      <a href="##h-0.9" id="#h-0.9">
+       ✨ 0.9
+      </a>
+  我是如何学习(折腾)Tiddlywiki的</h2>
+<blockquote>
+<p>Coming 😄
+</p>
+</blockquote>
+
+    <h2>
+      <a href="##h-0.10" id="#h-0.10">
+       ✨ 0.10
       </a>
   …</h2>
 </div></div></content><author><name>oeyoews</name></author></entry><entry><title>href</title><link href="https://neotw.netlify.app/#href"></link><link href="https://neotw.netlify.app/static/href.html" rel="alternative" type="text/html"></link><id>e8fab833-730f-3a93-9d0b-3812fe043b5d</id><updated>2023-04-19T16:44:43</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>href: hyperlink</p></div></content><author><name>oeyoews</name></author></entry><entry><title>html-to-image</title><link href="https://neotw.netlify.app/#html-to-image"></link><link href="https://neotw.netlify.app/static/html-to-image.html" rel="alternative" type="text/html"></link><id>41c2677d-e54e-22b7-614d-4c29538dcc51</id><updated>2023-05-17T09:10:31</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre class="hljs"><code class="html hljs"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span>
@@ -5008,7 +5041,7 @@ observer.<span class="hljs-title function_">observe</span>(targetElement, { <spa
 &lt;/ul&gt;
 &lt;/div&gt;</url></dirname></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-badges</title><link href="https://neotw.netlify.app/#neotw-badges"></link><link href="https://neotw.netlify.app/static/neotw-badges.html" rel="alternative" type="text/html"></link><id>f934e3aa-d36d-34bb-609b-922693d9b993</id><updated>2023-06-01T21:41:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:hidden">
 <img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-686-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-49-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-73-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-69 seconds ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-17 minutes ago-green?style=social"></img>  
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-command</title><link href="https://neotw.netlify.app/#neotw-command"></link><link href="https://neotw.netlify.app/static/neotw-command.html" rel="alternative" type="text/html"></link><id>188385e0-6b3a-4916-a54a-061d9d29e18f</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
        ✨ 0.1
@@ -9285,6 +9318,8 @@ archlinux-java status
 &lt;/div&gt;</exec></li></ul></filename></li></ul></time></li></ul></li></ul></username></li></username></li></username></li></ul></directions></li></ul></li></ul></server-id></p></li></id></p></li></ul></PID></p></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw/action/base-time-darkmode</title><link href="https://neotw.netlify.app/#neotw%2Faction%2Fbase-time-darkmode"></link><link href="https://neotw.netlify.app/static/neotw%252Faction%252Fbase-time-darkmode.html" rel="alternative" type="text/html"></link><id>ca300897-59c7-394f-ab70-18ef3e8afa20</id><updated>2022-09-10T11:55:09</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>
 
 
+
+
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw/actions/base-browser-darkmode</title><link href="https://neotw.netlify.app/#neotw%2Factions%2Fbase-browser-darkmode"></link><link href="https://neotw.netlify.app/static/neotw%252Factions%252Fbase-browser-darkmode.html" rel="alternative" type="text/html"></link><id>c06b7073-601c-a135-522e-8d52eb62e6db</id><updated>2022-09-10T11:09:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p></p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw/archive/restore-button</title><link href="https://neotw.netlify.app/#neotw%2Farchive%2Frestore-button"></link><link href="https://neotw.netlify.app/static/neotw%252Farchive%252Frestore-button.html" rel="alternative" type="text/html"></link><id>51399bbb-0860-5f76-e517-a4cedcb6a20c</id><updated>2022-09-07T13:28:13</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div style="text-align: right;">
 <button class=""> 
 
@@ -11535,84 +11570,84 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#2023-06-05">2023-06-05</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#prototype">prototype</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#UX-DX">UX-DX</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#star-principle">star-principle</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#debounce-throttle-code">debounce-throttle-code</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-shadow tc-tiddlylink-resolves" href="#GettingStarted">GettingStarted</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#module-type">module-type</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#event-objectParam">event-objectParam</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#full-type-support-with-plain-javascript">full-type-support-with-plain-javascript</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#Typescript-compare-to-Javascript">Typescript-compare-to-Javascript</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#popover-114">popover-114</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyPDF%20Plugin%20Design%20Discussion">TiddlyPDF Plugin Design Discussion</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#dispatchEvent">dispatchEvent</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#chatgpt-plus-api">chatgpt-plus-api</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
@@ -13545,19 +13580,19 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#input-bug-on-office-365">input-bug-on-office-365</a>
         
-         <span style="color:black;"><sup>recent</sup></span>
+        
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#paper-for-chatgpt">paper-for-chatgpt</a>
         
-         <span style="color:black;"><sup>recent</sup></span>
+        
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#freepik-images">freepik-images</a>
         
-         <span style="color:black;"><sup>recent</sup></span>
+        
     </li>
   
     <li>
@@ -14504,12 +14539,6 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#use-deepl-extend-on-chrome">use-deepl-extend-on-chrome</a>
-        
-        
-    </li>
-  
-    <li>
-		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#colorful-png">colorful-png</a>
         
         
     </li>
