@@ -42,7 +42,6 @@ neotw-gli widget
         'https://api.github.com/repos/oeyoews/neotw/commits?per_page=1';
 
       const gliNode = this.document.createElement('div');
-      gliNode.className = 'text-slate-400';
       gliNode.textContent = 'Loading ...'; // 显示loading
 
       try {
