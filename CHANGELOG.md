@@ -1,3 +1,10 @@
+# [3.305.0](https://github.com/oeyoews/neotw/compare/v3.304.1...v3.305.0) (2023-06-12)
+
+
+### Features
+
+* add parent-plugins fields ([a0df9a0](https://github.com/oeyoews/neotw/commit/a0df9a065f31678c50876d980681230a24a12233))
+
 ## [3.304.1](https://github.com/oeyoews/neotw/compare/v3.304.0...v3.304.1) (2023-06-12)
 
 
