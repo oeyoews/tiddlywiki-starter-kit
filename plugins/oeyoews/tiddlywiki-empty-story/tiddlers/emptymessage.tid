@@ -43,6 +43,11 @@ title: $:/config/EmptyStoryMessage
   </center>
 </$list>
 
+<!-- TODO -->
+<div class="dark:bg-white flex justify-center">
+  {{neotw-badges}}
+</div>
+
 <!-- giscus -->
 <!-- <div class="mt-4"> -->
 <!-- <$inline-giscus local="no"/> -->

@@ -3,7 +3,7 @@ created: 20230117102714737
 creator: oeyoews
 giscus: yes
 icon: tom.svg
-modified: 20230605114202316
+modified: 20230612052601901
 modifier: oeyoews
 page-cover: banner.png
 pin: yes
@@ -12,10 +12,6 @@ sticky-footer:
 tags: 
 title: GettingStarted
 type: text/vnd.tiddlywiki
-
-<div class="dark:bg-white">
-{{neotw-badges}}
-</div>
 
 {{Cards}}
 
