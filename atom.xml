@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Neotw rolling</title><subtitle>A modern notebook based on TiddlyWiki5</subtitle><link href="https://neotw.netlify.app/atom.xml" rel="self"></link><link href="https://neotw.netlify.app/"></link><author><name>oeyoews</name></author><id>416f5e39-b874-91f8-e7ac-3ce66e36ac39</id><updated>2023-06-12T12:51:26</updated><entry><title>/home/runner/work/neotw/neotw/tiddlers/hi-oeyoews.svg</title><link href="https://neotw.netlify.app/#%2Fhome%2Frunner%2Fwork%2Fneotw%2Fneotw%2Ftiddlers%2Fhi-oeyoews.svg"></link><link href="https://neotw.netlify.app/static/%252Fhome%252Frunner%252Fwork%252Fneotw%252Fneotw%252Ftiddlers%252Fhi-oeyoews.svg.html" rel="alternative" type="text/html"></link><id>3798d5df-8b06-4ca4-8046-0c87bf3b437d</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><img src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20viewBox%3D%220%200%20600%20300%22%20width%3D%22600%22%20height%3D%22300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3CforeignObject%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%0A%20%20%20%20%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%0A%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%40keyframes%20hi%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%200%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2010%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2020%25%20%7B%20transform%3A%20rotate(-8.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2030%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2040%25%20%7B%20transform%3A%20rotate(-4.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2050%25%20%7B%20transform%3A%20rotate(10.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2060%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40keyframes%20gradient%20%7B%0A%20%20%20%20%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%2050%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%20100%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%235452ee%3B%0A%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%23e73c7e%3B%0A%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%2323a6d5%3B%0A%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23ffff%3B%0A%0A%20%20%20%20%20%20%20%20%20%20background%3A%20linear-gradient(-45deg%2C%20var(--color-main)%2C%20var(--color-primary)%2C%20var(--color-secondary)%2C%20var(--color-tertiary))%3B%0A%20%20%20%20%20%20%20%20%20%20background-size%3A%20400%25%20400%25%3B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20gradient%2015s%20ease%20infinite%3B%0A%0A%20%20%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20%20%20height%3A%20300px%3B%0A%0A%20%20%20%20%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20color%3A%20white%3B%0A%0A%20%20%20%20%20%20%20%20%20%20font-family%3A%20-apple-system%2C%20BlinkMacSystemFont%2C%20%22Segoe%20UI%22%2C%20Roboto%2C%20Helvetica%2C%20Arial%2C%20sans-serif%2C%20%22Apple%20Color%20Emoji%22%2C%20%22Segoe%20UI%20Emoji%22%2C%20%22Segoe%20UI%20Symbol%22%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20hi%201.5s%20linear%20-0.5s%20infinite%3B%0A%20%20%20%20%20%20%20%20%20%20display%3A%20inline-block%3B%0A%20%20%20%20%20%20%20%20%20%20transform-origin%3A%2070%25%2070%25%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-color-scheme%3A%20light)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%23F15BB5%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%2324b0ef%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%234526f6%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23f6f645%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-reduced-motion)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%3C%2Fstyle%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%20%20%3Ch1%3EHi%20there%2C%20my%20name%20is%20oeyoews%20%3Cdiv%20class%3D%22hi%22%3E%F0%9F%91%8B%3C%2Fdiv%3E%3C%2Fh1%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2FforeignObject%3E%0A%3C%2Fsvg%3E"></img></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-02-28</title><link href="https://neotw.netlify.app/#2023-02-28"></link><link href="https://neotw.netlify.app/static/2023-02-28.html" rel="alternative" type="text/html"></link><id>90d001b4-d8df-ae9a-ba70-fe38459a71c5</id><updated>2023-02-28T00:12:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div>无论人生上了哪一层台阶 ，阶下有人在仰望你，阶上亦有人在俯视你；你抬头自卑，低头自得，唯有平视，才能看到真实的自已。 @杨绛语录</div></blockquote></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-16</title><link href="https://neotw.netlify.app/#2023-04-16"></link><link href="https://neotw.netlify.app/static/2023-04-16.html" rel="alternative" type="text/html"></link><id>b720eb79-6a7f-86f0-c39b-4c456f2916fb</id><updated>2023-04-16T09:56:15</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>初级赚钱方式靠信息差，
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Neotw rolling</title><subtitle>A modern notebook based on TiddlyWiki5</subtitle><link href="https://neotw.netlify.app/atom.xml" rel="self"></link><link href="https://neotw.netlify.app/"></link><author><name>oeyoews</name></author><id>416f5e39-b874-91f8-e7ac-3ce66e36ac39</id><updated>2023-06-12T13:10:51</updated><entry><title>/home/runner/work/neotw/neotw/tiddlers/hi-oeyoews.svg</title><link href="https://neotw.netlify.app/#%2Fhome%2Frunner%2Fwork%2Fneotw%2Fneotw%2Ftiddlers%2Fhi-oeyoews.svg"></link><link href="https://neotw.netlify.app/static/%252Fhome%252Frunner%252Fwork%252Fneotw%252Fneotw%252Ftiddlers%252Fhi-oeyoews.svg.html" rel="alternative" type="text/html"></link><id>3798d5df-8b06-4ca4-8046-0c87bf3b437d</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><img src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20viewBox%3D%220%200%20600%20300%22%20width%3D%22600%22%20height%3D%22300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3CforeignObject%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%0A%20%20%20%20%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%0A%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%40keyframes%20hi%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%200%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2010%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2020%25%20%7B%20transform%3A%20rotate(-8.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2030%25%20%7B%20transform%3A%20rotate(14.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2040%25%20%7B%20transform%3A%20rotate(-4.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2050%25%20%7B%20transform%3A%20rotate(10.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20%2060%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%20transform%3A%20rotate(%200.0deg)%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40keyframes%20gradient%20%7B%0A%20%20%20%20%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%2050%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%20100%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background-position%3A%200%25%2050%25%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%235452ee%3B%0A%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%23e73c7e%3B%0A%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%2323a6d5%3B%0A%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23ffff%3B%0A%0A%20%20%20%20%20%20%20%20%20%20background%3A%20linear-gradient(-45deg%2C%20var(--color-main)%2C%20var(--color-primary)%2C%20var(--color-secondary)%2C%20var(--color-tertiary))%3B%0A%20%20%20%20%20%20%20%20%20%20background-size%3A%20400%25%20400%25%3B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20gradient%2015s%20ease%20infinite%3B%0A%0A%20%20%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20%20%20height%3A%20300px%3B%0A%0A%20%20%20%20%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20color%3A%20white%3B%0A%0A%20%20%20%20%20%20%20%20%20%20font-family%3A%20-apple-system%2C%20BlinkMacSystemFont%2C%20%22Segoe%20UI%22%2C%20Roboto%2C%20Helvetica%2C%20Arial%2C%20sans-serif%2C%20%22Apple%20Color%20Emoji%22%2C%20%22Segoe%20UI%20Emoji%22%2C%20%22Segoe%20UI%20Symbol%22%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20animation%3A%20hi%201.5s%20linear%20-0.5s%20infinite%3B%0A%20%20%20%20%20%20%20%20%20%20display%3A%20inline-block%3B%0A%20%20%20%20%20%20%20%20%20%20transform-origin%3A%2070%25%2070%25%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-color-scheme%3A%20light)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-main%3A%20%23F15BB5%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-primary%3A%20%2324b0ef%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-secondary%3A%20%234526f6%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20--color-tertiary%3A%20%23f6f645%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%40media%20(prefers-reduced-motion)%20%7B%0A%20%20%20%20%20%20%20%20%20%20.container%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%20%20.hi%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20animation%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%3C%2Fstyle%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%20%20%3Ch1%3EHi%20there%2C%20my%20name%20is%20oeyoews%20%3Cdiv%20class%3D%22hi%22%3E%F0%9F%91%8B%3C%2Fdiv%3E%3C%2Fh1%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2FforeignObject%3E%0A%3C%2Fsvg%3E"></img></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-02-28</title><link href="https://neotw.netlify.app/#2023-02-28"></link><link href="https://neotw.netlify.app/static/2023-02-28.html" rel="alternative" type="text/html"></link><id>90d001b4-d8df-ae9a-ba70-fe38459a71c5</id><updated>2023-02-28T00:12:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div>无论人生上了哪一层台阶 ，阶下有人在仰望你，阶上亦有人在俯视你；你抬头自卑，低头自得，唯有平视，才能看到真实的自已。 @杨绛语录</div></blockquote></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-16</title><link href="https://neotw.netlify.app/#2023-04-16"></link><link href="https://neotw.netlify.app/static/2023-04-16.html" rel="alternative" type="text/html"></link><id>b720eb79-6a7f-86f0-c39b-4c456f2916fb</id><updated>2023-04-16T09:56:15</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>初级赚钱方式靠信息差，
 高级赚钱方式靠认知差，
 顶级赚钱方式靠资源差</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-20</title><link href="https://neotw.netlify.app/#2023-04-20"></link><link href="https://neotw.netlify.app/static/2023-04-20.html" rel="alternative" type="text/html"></link><id>66fbd211-302a-90f1-43e7-1f0ea4e0f181</id><updated>2023-04-20T20:53:27</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>多端同步的便捷和本地存储的安全，就是鱼与熊掌不可兼得。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-23</title><link href="https://neotw.netlify.app/#2023-04-23"></link><link href="https://neotw.netlify.app/static/2023-04-23.html" rel="alternative" type="text/html"></link><id>eb28f00e-453b-d5a1-967b-e984799ea2d8</id><updated>2023-04-24T00:16:36</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><blockquote><div>延迟满足</div><div>用书籍增加三倍人生体验时长</div><div>不以成喜，不以败悲</div></blockquote><p>“止观止心，无妄无碍”是禅宗的一种修行方法，也是佛教徒在生活中追求内心平静和解脱的方式。</p><p>其中，“止”指的是停止杂念、烦恼等不必要的思考和行为，如止诸恶、止杀戮、止谤言等。这样可以使内心得到安定和净化，有利于后续的修行。</p><p>“观”则指观察事物的真相和本质，排除偏见和执着。通过观想自己和世界的真实性质，认识自己的本性和命运，从而达到身心合一、彻底了解自己和世界的目的。</p><p>“无妄”则表示去除「妄念」、「妄想」和「妄语」等，即清空心灵中荒谬无稽的幻想和自我，让自己的内心变得更加安宁、平静。</p><p>“无碍”则是指避免心态上的障碍和物质层面的附着，为达到自由和解脱而努力。</p><p>总之，这个修行方法要求个人通过内省、检视和拯救自己，消除恶念与烦恼，培养慈悲之心，领悟事物的真实本质，从而找到内心的平静和解放。</p><blockquote><div>客观事物发展规律不以人的主观意志，然而掌握事物的发展规律，却可以从必然王国到自由王国</div></blockquote><p>这句话的意思是，客观事物的发展规律是客观存在的，不受人的主观意志的影响。但是，如果我们能够掌握这些规律并对它们进行改变和运用，我们就可以从必然王国（受客观规律支配的领域）进入自由王国（自由创造或创新的领域）。</p><p>在许多领域中，我们都可以看到这一点。例如，在科学技术领域，我们通过研究和掌握客观规律，开发出了许多有用的工具和技术，使我们的生产和生活更加便利和高效。同样，在社会和经济领域中，通过深入了解客观规律，我们可以制定出更好的政策和管理方法，以促进社会和经济的稳定和发展。</p><p>尽管客观规律的存在使我们受到限制，但如果我们学会理解和运用这些规律，我们就可以发挥自己的主动性和创造性，实现更高的自由度，并不断推动事物的进步和发展。因此，掌握客观规律是实现自由和创造的关键之一。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-04-25</title><link href="https://neotw.netlify.app/#2023-04-25"></link><link href="https://neotw.netlify.app/static/2023-04-25.html" rel="alternative" type="text/html"></link><id>07baca31-a4c1-d735-df41-8cf857fe4d13</id><updated>2023-04-25T23:01:46</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://space.bilibili.com/43109229/channel/collectiondetail?sid=1234748" rel="noopener noreferrer" target="_blank">https://space.bilibili.com/43109229/channel/collectiondetail?sid=1234748</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-05-06</title><link href="https://neotw.netlify.app/#2023-05-06"></link><link href="https://neotw.netlify.app/static/2023-05-06.html" rel="alternative" type="text/html"></link><id>ac8c3ae3-20fd-c971-eb36-7e3608c51b59</id><updated>2023-05-06T22:55:30</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>拥有能让自己快乐的能力,有一件让自己兴奋一点的事情</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-05-15</title><link href="https://neotw.netlify.app/#2023-05-15"></link><link href="https://neotw.netlify.app/static/2023-05-15.html" rel="alternative" type="text/html"></link><id>5ae2dacd-4932-0fb6-3754-327b31a02c7f</id><updated>2023-05-15T09:19:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>社交的本质是价值交换</p></div></content><author><name>oeyoews</name></author></entry><entry><title>2023-05-17</title><link href="https://neotw.netlify.app/#2023-05-17"></link><link href="https://neotw.netlify.app/static/2023-05-17.html" rel="alternative" type="text/html"></link><id>5cfc6d08-80d6-3230-a52e-29ee0b651757</id><updated>2023-05-17T10:46:31</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <ul>
@@ -2670,7 +2670,7 @@ Undefined widget 'tid2pdf'
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>GettingStarted</title><link href="https://neotw.netlify.app/#GettingStarted"></link><link href="https://neotw.netlify.app/static/GettingStarted.html" rel="alternative" type="text/html"></link><id>fc927313-83cf-7e0a-53c1-21853f695851</id><updated>2023-06-05T19:42:02</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:bg-white">
 <div class="dark:hidden">
 <img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-692-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-50-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-74-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-18 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-4 minutes ago-green?style=social"></img>  
 </div>
 
 
@@ -5070,7 +5070,7 @@ observer.<span class="hljs-title function_">observe</span>(targetElement, { <spa
 &lt;/ul&gt;
 &lt;/div&gt;</url></dirname></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-badges</title><link href="https://neotw.netlify.app/#neotw-badges"></link><link href="https://neotw.netlify.app/static/neotw-badges.html" rel="alternative" type="text/html"></link><id>f934e3aa-d36d-34bb-609b-922693d9b993</id><updated>2023-06-01T21:41:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:hidden">
 <img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-692-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-50-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-74-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-18 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-4 minutes ago-green?style=social"></img>  
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-command</title><link href="https://neotw.netlify.app/#neotw-command"></link><link href="https://neotw.netlify.app/static/neotw-command.html" rel="alternative" type="text/html"></link><id>188385e0-6b3a-4916-a54a-061d9d29e18f</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
        ✨ 0.1
@@ -6052,12 +6052,247 @@ yarn add
 yarn init -y #
 yarn upgrade-interactive --latest    # 忽略包json ，升级最新版本
 </p>
-</div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-personal-tiddlywiki-plugins</title><link href="https://neotw.netlify.app/#neotw-personal-tiddlywiki-plugins"></link><link href="https://neotw.netlify.app/static/neotw-personal-tiddlywiki-plugins.html" rel="alternative" type="text/html"></link><id>bacf0f35-0f96-7671-10e2-6462653a3e09</id><updated>2023-06-10T21:26:59</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h1>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-personal-tiddlywiki-plugins</title><link href="https://neotw.netlify.app/#neotw-personal-tiddlywiki-plugins"></link><link href="https://neotw.netlify.app/static/neotw-personal-tiddlywiki-plugins.html" rel="alternative" type="text/html"></link><id>bacf0f35-0f96-7671-10e2-6462653a3e09</id><updated>2023-06-12T13:13:23</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h1>
       <a href="##h-1" id="#h-1">
        ✨ 1
       </a>
   Plugins List</h1>
-<p></p>
+<p><div class="markdown">
+<table>
+<thead>
+<tr>
+<th>插件名</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Ftiddlywiki%2Ftiddlyweb">tiddlywiki/tiddlyweb</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-missing" href="#TiddlyWeb">TiddlyWeb</a> 插件，用于支持 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 的网络功能</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Ftiddlywiki%2Ffilesystem">tiddlywiki/filesystem</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，提供文件系统相关功能</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Ftiddlywiki%2Fhighlight">tiddlywiki/highlight</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，用于语法高亮显示</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Ftiddlywiki%2Fkatex">tiddlywiki/katex</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，支持数学公式显示</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Ftiddlywiki%2Fbrowser-sniff">tiddlywiki/browser-sniff</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，用于浏览器识别</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Ftiddlywiki%2Fcodemirror">tiddlywiki/codemirror</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，提供代码编辑器功能</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Ftiddlywiki%2Fcodemirror-trailingspace">tiddlywiki/codemirror-trailingspace</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，用于处理代码尾部空格</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Ftiddlywiki%2Fcodemirror-autocomplete">tiddlywiki/codemirror-autocomplete</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，提供代码自动完成功能</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Ftiddlywiki%2Fcodemirror-mode-css">tiddlywiki/codemirror-mode-css</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，提供 CSS 代码编辑模式</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Ftiddlywiki%2Fcodemirror-search-replace">tiddlywiki/codemirror-search-replace</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，提供搜索替换功能</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Ftiddlywiki%2Fcodemirror-closebrackets">tiddlywiki/codemirror-closebrackets</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，自动闭合括号和引号</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Ftiddlywiki%2Fcodemirror-mode-markdown">tiddlywiki/codemirror-mode-markdown</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，提供 Markdown 代码编辑模式</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Ftiddlywiki%2Fcodemirror-mode-xml">tiddlywiki/codemirror-mode-xml</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，提供 XML 代码编辑模式</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Ftiddlywiki%2Fcodemirror-mode-javascript">tiddlywiki/codemirror-mode-javascript</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，提供 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#JavaScript">JavaScript</a> 代码编辑模式</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Ftiddlywiki%2Fpluginlibrary">tiddlywiki/pluginlibrary</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，提供插件库和管理功能</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-sweetalert">oeyoews/tiddlywiki-sweetalert</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，集成了 <a class="tc-tiddlylink tc-tiddlylink-missing" href="#SweetAlert">SweetAlert</a> 库</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-notify">oeyoews/tiddlywiki-notify</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，用于显示通知消息</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Ftiddlywiki%2Fmarkdown">oeyoews/markdown</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，提供 Markdown 功能</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Fneotw-snippet">oeyoews/neotw-snippet</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，提供代码片段功能</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Fneotw-copy-code">oeyoews/neotw-copy-code</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，用于复制代码块</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Fneotw-time">oeyoews/neotw-time</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，显示当前时间</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Fneotw-battery">oeyoews/neotw-battery</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，显示电池状态</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Fneotw-refresh-site-cache">oeyoews/neotw-refresh-site-cache</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，刷新站点缓存</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-cards">oeyoews/tiddlywiki-cards</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，提供卡片式布局功能</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-missing _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-giscus">oeyoews/tiddlywiki-giscus</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，集成了 Giscus 评论系统</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Fneotw-type">oeyoews/neotw-type</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，显示键盘按键类型</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Fneotw-gli">oeyoews/neotw-gli</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，显示 <a class="tc-tiddlylink tc-tiddlylink-missing" href="#GitLab">GitLab</a> Issues</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Fneotw-unsplash">oeyoews/neotw-unsplash</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，集成了 Unsplash 图库</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Fneotw-fetch">oeyoews/neotw-fetch</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，显示 Fetch 请求</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Fneotw-music">oeyoews/neotw-music</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，显示音乐播放器</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Fneotw-lodash">oeyoews/neotw-lodash</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，集成了 Lodash 库</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-tid2pdf">oeyoews/tiddlywiki-tid2pdf</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，将 Tiddler 转换为 PDF</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-github-share">oeyoews/tiddlywiki-github-share</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，集成了 <a class="tc-tiddlylink tc-tiddlylink-missing" href="#GitHub">GitHub</a> 分享功能</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-update-check">oeyoews/tiddlywiki-update-check</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，检查更新</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-axios">oeyoews/tiddlywiki-axios</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，集成了 Axios 库</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-daylight">oeyoews/tiddlywiki-daylight</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，提供日间/夜间模式切换功能</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Fneotw-confetti">oeyoews/neotw-confetti</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，显示彩带效果</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-videos">oeyoews/tiddlywiki-videos</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，集成了视频播放器功能</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Fneotw">oeyoews/neotw</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，集成了 Neovim 功能</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Fneotw-hitokoto">oeyoews/neotw-hitokoto</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，显示一言</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Fcodemirror-keymap-vimjk">oeyoews/neotw-vimjk</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，集成了 Vim 风格快捷键</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2FNPL">oeyoews/NPL</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，提供 NPL 脚本功能</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-back-to-top">oeyoews/tiddlywiki-back-to-top</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，回到顶部功能</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-edition-macro">oeyoews/tiddlywiki-edition-macro</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，提供版本信息宏功能</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-fancybox-ui">oeyoews/tiddlywiki-fancybox-ui</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，集成了 Fancybox 图片浏览器</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-keyboard-hint">oeyoews/tiddlywiki-keyboard-hint</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，提供键盘提示功能</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-modal-ui">oeyoews/tiddlywiki-modal-ui</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，提供模态框 UI 功能</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Fmotion">oeyoews/tiddlywiki-motion</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，提供动画效果</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-publish-tiddler">oeyoews/tiddlywiki-publish-tiddler</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，发布 Tiddler</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-tailwindcss-plus">oeyoews/tiddlywiki-tailwindcss-plus</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，集成了 Tailwind CSS 扩展</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Fdullroar%2Fatomfeed">dullroar/atomfeed</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，提供 Atom Feed 功能</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-tiddler-info">oeyoews/tiddlywiki-tiddler-info</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，显示 Tiddler  信息</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-gravatar">oeyoews/tiddlywiki-gravatar</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，集成了 Gravatar 头像服务</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-sounds">oeyoews/tiddlywiki-sounds</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，提供声音效果</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-empty-story">oeyoews/tiddlywiki-empty-story</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，清空整个故事</td>
+</tr>
+<tr>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-readonly">oeyoews/tiddlywiki-readonly</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，将整个故事设置为只读</td>
+</tr>
+</tbody>
+</table>
+</div></p>
 <p>这些插件提供了许多不同的功能和扩展，可以增强 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 的能力，使其更加适应个人需求和定制化要求。请注意，插件的具体用法和配置可能需要参考它们的文档或相关资源。
 </p>
 <small>
@@ -10847,7 +11082,15 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 }</code></pre><p>在这个例子中，我们使用try-catch语句块来处理可能的异常情况。在try块中，我们使用fs.readFileSync()方法同步读取JSON文件，并将文件内容存储在data变量中。如果读取文件时出现错误，catch块将捕获该错误，并输出错误信息。</p><p>以上是使用fs模块读取文件的示例，需要注意的是，在使用fs模块读取文件时，我们需要处理可能的异常情况，并根据实际情况选择异步或同步方法。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-count</title><link href="https://neotw.netlify.app/#recent-count"></link><link href="https://neotw.netlify.app/static/recent-count.html" rel="alternative" type="text/html"></link><id>6a131e9a-b046-19c3-08bd-35ef7c9ffbfc</id><updated>2023-02-08T18:16:06</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="tc-timeline">
 
 <div class="tc-menu-list-item">
-12th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#9">9</a></span>)
+12th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#11">11</a></span>)
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#neotw-personal-tiddlywiki-plugins"></a>
+</div>
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#This"></a>
+</div>
 
 <div class="tc-menu-list-subitem">
 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#flex-col"></a>
@@ -10941,11 +11184,7 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 </div>
 
 <div class="tc-menu-list-item">
-10th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#4">4</a></span>)
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#neotw-personal-tiddlywiki-plugins"></a>
-</div>
+10th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#3">3</a></span>)
 
 <div class="tc-menu-list-subitem">
 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#neovim-personal-plugins"></a>
@@ -11339,6 +11578,18 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-note-record</title><link href="https://neotw.netlify.app/#recent-note-record"></link><link href="https://neotw.netlify.app/static/recent-note-record.html" rel="alternative" type="text/html"></link><id>2619840e-dc84-d69e-3d32-c2258f306a66</id><updated>2023-04-11T09:39:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><ul>
   
     <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#neotw-personal-tiddlywiki-plugins">neotw-personal-tiddlywiki-plugins</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#This">This</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#flex-col">flex-col</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
         
@@ -11460,12 +11711,6 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#Neovim">Neovim</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
-    </li>
-  
-    <li>
-		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#neotw-personal-tiddlywiki-plugins">neotw-personal-tiddlywiki-plugins</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
         
     </li>
@@ -11988,12 +12233,6 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#readFile">readFile</a>
-        
-         <span style="color:black;"><sup>recent</sup></span>
-    </li>
-  
-    <li>
-		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#this">this</a>
         
          <span style="color:black;"><sup>recent</sup></span>
     </li>
@@ -15262,7 +15501,7 @@ dmeo dmeo dmeo dmeo dmoe dmeo
 <ul class="task-list">
 <li class="task-list-item"><input checked="true" disabled="true" id="cbx_0" type="checkbox"></input><label for="cbx_0"> Auth module</label></li>
 </ul>
-</div></div></content><author><name>oeyoews</name></author></entry><entry><title>this</title><link href="https://neotw.netlify.app/#this"></link><link href="https://neotw.netlify.app/static/this.html" rel="alternative" type="text/html"></link><id>9e925e93-41b4-90bf-d3b4-c4ca3b0c1ef2</id><updated>2023-05-29T13:20:14</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>This</title><link href="https://neotw.netlify.app/#This"></link><link href="https://neotw.netlify.app/static/This.html" rel="alternative" type="text/html"></link><id>77631ca4-f0e0-8419-b707-26a447333ab6</id><updated>2023-06-12T13:10:51</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
        ✨ 0.1
       </a>
