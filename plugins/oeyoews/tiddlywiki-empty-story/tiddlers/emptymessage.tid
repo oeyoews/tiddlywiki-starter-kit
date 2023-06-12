@@ -8,8 +8,11 @@ title: $:/config/EmptyStoryMessage
     <$avatar center="yes"/>
 </div>
   </$button>
+<div class="dark:bg-white flex justify-center my-4">
+  {{neotw-badges}}
+</div>
   <div>
-    <$typing-hitokoto />
+    <$typing text="A modern style and elegant notebook based on Tiddlywiki by oeyoews" gradient />
   </div>
 </center>
 
@@ -17,11 +20,6 @@ title: $:/config/EmptyStoryMessage
 <!-- <div class="m-6"> -->
 <!--   <$image source="leaf.png" class="w-32 mx-auto block"/> -->
 <!-- </div> -->
-
-<!-- TODO -->
-<div class="dark:bg-white flex justify-center">
-  {{neotw-badges}}
-</div>
 
 <!-- commit info on github -->
 <$list filter="[{$:/info/url/protocol}match[https:]]">
