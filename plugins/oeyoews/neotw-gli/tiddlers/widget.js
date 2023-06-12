@@ -42,7 +42,7 @@ neotw-gli widget
         'https://api.github.com/repos/oeyoews/neotw/commits?per_page=1';
 
       const gliNode = this.document.createElement('div');
-      gliNode.className = this.getAttribute('class') || '';
+      gliNode.className = 'text-slate-400';
       gliNode.textContent = 'Loading ...'; // 显示loading
 
       try {
@@ -58,7 +58,7 @@ neotw-gli widget
         console.error(error);
         const apiLimitMessage = 'API rate limit exceeded 😭';
         gliNode.textContent = 'Error loading data; ' + apiLimitMessage; // 显示错误信息
-        gliNode.className = 'text-red-500';
+        gliNode.classList.add('font-bold', 'text-red-500');
       }
 
       parent.insertBefore(gliNode, nextSibling);
