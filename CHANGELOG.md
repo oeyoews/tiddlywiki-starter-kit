@@ -1,3 +1,15 @@
+# [3.302.0](https://github.com/oeyoews/neotw/compare/v3.301.0...v3.302.0) (2023-06-12)
+
+
+### Features
+
+* enable linkify for markdown-it ([f499c00](https://github.com/oeyoews/neotw/commit/f499c000a4cbff6cf4f9e8ce9466deaa301fc90e))
+
+
+### Performance Improvements
+
+* better regex for code-block filetype ([df877f3](https://github.com/oeyoews/neotw/commit/df877f3430832846f14276bafb98a1d00f056c31))
+
 # [3.301.0](https://github.com/oeyoews/neotw/compare/v3.300.1...v3.301.0) (2023-06-11)
 
 
