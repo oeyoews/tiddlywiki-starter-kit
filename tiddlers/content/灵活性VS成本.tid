@@ -1,0 +1,13 @@
+created: 20230612142417407
+creator: oeyoews
+modified: 20230612142504910
+modifier: oeyoews
+tags: 
+title: 灵活性VS成本
+type: text/markdown
+
+## 灵活性 VS 成本
+
+- [x] 高灵活性往往带来高成本
+      不要过分追求灵活性，灵活性往往带来很多额外成本(高开发成本、高维护成本、高复用成本)
+- [x] 限制灵活性反而能释放生产力
