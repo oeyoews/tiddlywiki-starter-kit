@@ -153,12 +153,11 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
     const containers = [
       // success warning error
       { name: 'success', label: '✅ Success', color: 'green' },
-      { name: 'warning', label: '⚠️  Warning', color: 'yellow' },
-      { name: 'error', label: '❌ Error', color: 'red' },
-      // tips todo note
-      { name: 'tips', label: '💡 Tips', color: 'blue' },
       { name: 'todo', label: '✅ TODO', color: 'green' },
+      { name: 'warning', label: '⚠️  Warning', color: 'yellow' },
       { name: 'note', label: '📚 Note', color: 'yellow' },
+      { name: 'error', label: '❌ Error', color: 'red' },
+      { name: 'tips', label: '💡 Tips', color: 'blue' },
     ];
 
     containers.forEach(container => {

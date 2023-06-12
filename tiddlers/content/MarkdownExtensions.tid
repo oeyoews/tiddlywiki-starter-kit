@@ -1,7 +1,7 @@
 cn-title: markdown 语法测试
 created: 20230221073554683
 creator: oeyoews
-modified: 20230612011237910
+modified: 20230612011637689
 modifier: oeyoews
 page-cover: https://source.unsplash.com/random?fm=blurhash&w=50&MarkdownExtensions
 publish: public
@@ -27,7 +27,8 @@ type: text/markdown
 :::warning
 :::
 
-:::info
+:::tips
+This is a tips
 :::
 
 :::error
