@@ -1,7 +1,7 @@
 cn-title: markdown 语法测试
 created: 20230221073554683
 creator: oeyoews
-modified: 20230612011637689
+modified: 20230612013101768
 modifier: oeyoews
 page-cover: https://source.unsplash.com/random?fm=blurhash&w=50&MarkdownExtensions
 publish: public
@@ -34,7 +34,6 @@ This is a tips
 :::error
 :::
 
-
 ### Toc
 
 ### Markdown Task
@@ -48,11 +47,9 @@ This is a tips
 
 ### Abbr
 
-This is HTML abbreviation example.
+* Tiddlywiki
+* 太微
 
-It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
-
-*[HTML]: Hyper Text Markup Language
 
 ## 测试
 
@@ -180,3 +177,6 @@ $$c = \pm\sqrt{a^2 + b^2}$$
     `{ my code }`
 
     Add as many paragraphs as you like.
+		
+*[Tiddlywiki]: TiddlyWiki is a unique non-linear personal web notebook that allows users to create, organize, and share content in a highly flexible and customizable manner. It is an open-source wiki software written in JavaScript and designed to run entirely in the web browser. TiddlyWiki is known for its simplicity, portability, and powerful features.
+*[太微]: Chinese Name of Tiddlywiki

@@ -143,10 +143,11 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
       .use(require('./markdown-it-deflist'));
 
     // extension unofficial
-    // TODO: toggle enable these plugins on tiddlywiki
+    // TODO: toggle enable these plugins in tiddlywiki
     md.use(require('./markdown-it-emoji'))
       .use(require('./markdown-it-task'))
       .use(require('./markdown-it-toc'))
+      // BUG: cursor is not correct in tiddlywiki
       .use(require('./markdown-it-abbr'));
 
     // container customize
