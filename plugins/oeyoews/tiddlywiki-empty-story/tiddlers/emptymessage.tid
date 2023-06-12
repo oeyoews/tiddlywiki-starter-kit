@@ -14,9 +14,9 @@ title: $:/config/EmptyStoryMessage
 </center>
 
 <!-- leaft.png -->
-<div class="m-6">
-<$image source="leaf.png" class="w-32 mx-auto block"/>
-</div>
+<!-- <div class="m-6"> -->
+<!--   <$image source="leaf.png" class="w-32 mx-auto block"/> -->
+<!-- </div> -->
 
 <!-- TODO -->
 <div class="dark:bg-white flex justify-center">
