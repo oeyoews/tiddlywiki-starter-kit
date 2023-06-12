@@ -151,10 +151,14 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
     // container customize
     const containerPlugin = require('./markdown-it-container');
     const containers = [
-      { name: 'todo', label: '✅ Task', color: 'green' },
-      { name: 'warning', label: '📚 Note', color: 'yellow' },
-      { name: 'info', label: '💡 Tips', color: 'blue' },
-      { name: 'error', label: '⚠️ Warning', color: 'red' },
+      // success warning error
+      { name: 'success', label: '✅ Success', color: 'green' },
+      { name: 'warning', label: '⚠️  Warning', color: 'yellow' },
+      { name: 'error', label: '❌ Error', color: 'red' },
+      // tips todo note
+      { name: 'tips', label: '💡 Tips', color: 'blue' },
+      { name: 'todo', label: '✅ TODO', color: 'green' },
+      { name: 'note', label: '📚 Note', color: 'yellow' },
     ];
 
     containers.forEach(container => {
