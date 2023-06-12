@@ -38,7 +38,7 @@ function addCopyButton() {
             copyButton.textContent = '✅ Copied!';
             setTimeout(() => {
               copyButton.textContent = fileType ? `${fileType} 📋` : '📋';
-            }, 2000);
+            }, 1000);
           })
           .catch(err => {
             console.log(err);
