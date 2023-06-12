@@ -1,7 +1,7 @@
 caption: {{$:/language/SideBar/Open/Caption}}
 created: 20230428120100719
 creator: oeyoews
-modified: 20230428120106597
+modified: 20230612043151561
 modifier: oeyoews
 tags: $:/tags/SideBar
 title: $:/core/ui/SideBar/Open
@@ -28,9 +28,15 @@ $button$
 </$droppable>
 \end
 
+<$set name="ftid" value={{{ [{$:/temp/focussedTiddler}] }}}>
+<div class="flex justify-center">
+    <$link class="p-1 rounded-sm inline text-indigo-500 mt-2 truncate bg-gray-200 inline text-md font-bold px-4" to=<<ftid>>><$view tiddler=<<ftid>> field='title'/></$link>
+		</div>
+</$set>
+
 <div class="tc-sidebar-tab-open prose capitalize">
 <$list filter="[list<tv-story-list>]" history=<<tv-history-list>> storyview="pop">
-<div class="tc-sidebar-tab-open-item">
+<div class="tc-sidebar-tab-open-item truncate">
 <$macrocall $name="droppable-item" button="<$button message='tm-close-tiddler' tooltip={{$:/language/Buttons/Close/Hint}} aria-label={{$:/language/Buttons/Close/Caption}} class='tc-btn-invisible tc-btn-mini tc-small-gap-right'>{{$:/core/images/close-button}}</$button><$link to={{!!title}}><$view field='title'/></$link>"/>
 </div>
 </$list>
