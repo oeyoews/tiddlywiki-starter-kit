@@ -2651,7 +2651,7 @@ Undefined widget 'tid2pdf'
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>GettingStarted</title><link href="https://neotw.netlify.app/#GettingStarted"></link><link href="https://neotw.netlify.app/static/GettingStarted.html" rel="alternative" type="text/html"></link><id>fc927313-83cf-7e0a-53c1-21853f695851</id><updated>2023-06-05T19:42:02</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:bg-white">
 <div class="dark:hidden">
 <img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-690-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-49-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-73-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-89 seconds ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-7 minutes ago-green?style=social"></img>  
 </div>
 
 
@@ -4483,12 +4483,12 @@ console.log(newArr);</code></pre><p>在使用这两种方法时，需要注意�
       <a href="##h-0.1" id="#h-0.1">
        ✨ 0.1
       </a>
-  <abbr title="TiddlyWiki is a unique non-linear personal web notebook that allows users to create, organize, and share content in a highly flexible and customizable manner. It is an open-source wiki software written in JavaScript and designed to run entirely in the web browser. TiddlyWiki is known for its simplicity, portability, and powerful features.">Tiddlywiki</abbr> 相关术语解释</h2>
+  <abbr style="cursor: help" title="TiddlyWiki is a unique non-linear personal web notebook that allows users to create, organize, and share content in a highly flexible and customizable manner. It is an open-source wiki software written in JavaScript and designed to run entirely in the web browser. TiddlyWiki is known for its simplicity, portability, and powerful features.">Tiddlywiki</abbr> 相关术语解释</h2>
 <ul>
-<li><abbr title="TiddlyWiki is a unique non-linear personal web notebook that allows users to create, organize, and share content in a highly flexible and customizable manner. It is an open-source wiki software written in JavaScript and designed to run entirely in the web browser. TiddlyWiki is known for its simplicity, portability, and powerful features.">Tiddlywiki</abbr></li>
-<li><abbr title="Chinese Name of Tiddlywiki">太微</abbr></li>
-<li><abbr title="About TidGi is an privatcy-in-mind, automated, auto-git-backup, freely-deployed Tiddlywiki knowledge management Desktop note app, with local REST API.">太记</abbr></li>
-<li><abbr title="Coming">…</abbr></li>
+<li><abbr style="cursor: help" title="TiddlyWiki is a unique non-linear personal web notebook that allows users to create, organize, and share content in a highly flexible and customizable manner. It is an open-source wiki software written in JavaScript and designed to run entirely in the web browser. TiddlyWiki is known for its simplicity, portability, and powerful features.">Tiddlywiki</abbr></li>
+<li><abbr style="cursor: help" title="Chinese Name of Tiddlywiki">太微</abbr></li>
+<li><abbr style="cursor: help" title="About TidGi is an privatcy-in-mind, automated, auto-git-backup, freely-deployed Tiddlywiki knowledge management Desktop note app, with local REST API.">太记</abbr></li>
+<li><abbr style="cursor: help" title="Coming">…</abbr></li>
 </ul>
 </p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>markdown-resume</title><link href="https://neotw.netlify.app/#markdown-resume"></link><link href="https://neotw.netlify.app/static/markdown-resume.html" rel="alternative" type="text/html"></link><id>c8069c2c-e807-797b-a0fd-0c16ed3adb5c</id><updated>2023-03-30T13:40:28</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li><a class="tc-tiddlylink-external" href="http://cv.ftqq.com/?fr=github" rel="noopener noreferrer" target="_blank">http://cv.ftqq.com/?fr=github</a>#</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>MarkdownExtensions</title><link href="https://neotw.netlify.app/#MarkdownExtensions"></link><link href="https://neotw.netlify.app/static/MarkdownExtensions.html" rel="alternative" type="text/html"></link><id>6c6e16a6-4816-754d-995b-e27ffae039ca</id><updated>2023-06-12T09:31:01</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h1>
       <a href="##h-1" id="#h-1">
@@ -4682,8 +4682,8 @@ console.log(newArr);</code></pre><p>在使用这两种方法时，需要注意�
       </a>
   Abbr</h3>
 <ul>
-<li><abbr title="TiddlyWiki is a unique non-linear personal web notebook that allows users to create, organize, and share content in a highly flexible and customizable manner. It is an open-source wiki software written in JavaScript and designed to run entirely in the web browser. TiddlyWiki is known for its simplicity, portability, and powerful features.">Tiddlywiki</abbr></li>
-<li><abbr title="Chinese Name of Tiddlywiki">太微</abbr></li>
+<li><abbr style="cursor: help" title="TiddlyWiki is a unique non-linear personal web notebook that allows users to create, organize, and share content in a highly flexible and customizable manner. It is an open-source wiki software written in JavaScript and designed to run entirely in the web browser. TiddlyWiki is known for its simplicity, portability, and powerful features.">Tiddlywiki</abbr></li>
+<li><abbr style="cursor: help" title="Chinese Name of Tiddlywiki">太微</abbr></li>
 </ul></p><p><h2>
       <a href="##h-1.2" id="#h-1.2">
        ✨ 1.2
@@ -5051,7 +5051,7 @@ observer.<span class="hljs-title function_">observe</span>(targetElement, { <spa
 &lt;/ul&gt;
 &lt;/div&gt;</url></dirname></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-badges</title><link href="https://neotw.netlify.app/#neotw-badges"></link><link href="https://neotw.netlify.app/static/neotw-badges.html" rel="alternative" type="text/html"></link><id>f934e3aa-d36d-34bb-609b-922693d9b993</id><updated>2023-06-01T21:41:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:hidden">
 <img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-690-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-49-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-73-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-90 seconds ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-7 minutes ago-green?style=social"></img>  
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-command</title><link href="https://neotw.netlify.app/#neotw-command"></link><link href="https://neotw.netlify.app/static/neotw-command.html" rel="alternative" type="text/html"></link><id>188385e0-6b3a-4916-a54a-061d9d29e18f</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
        ✨ 0.1
