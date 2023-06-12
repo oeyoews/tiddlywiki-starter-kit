@@ -5096,8 +5096,8 @@ observer.<span class="hljs-title function_">observe</span>(targetElement, { <spa
 <li>aria2c -d <dirname> <url>&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;</url></dirname></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-badges</title><link href="https://neotw.netlify.app/#neotw-badges"></link><link href="https://neotw.netlify.app/static/neotw-badges.html" rel="alternative" type="text/html"></link><id>f934e3aa-d36d-34bb-609b-922693d9b993</id><updated>2023-06-01T21:41:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-693-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-50-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-74-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-26 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-694-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-50-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-75-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-52 minutes ago-green?style=social"></img>  
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-command</title><link href="https://neotw.netlify.app/#neotw-command"></link><link href="https://neotw.netlify.app/static/neotw-command.html" rel="alternative" type="text/html"></link><id>188385e0-6b3a-4916-a54a-061d9d29e18f</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
        ✨ 0.1
@@ -11109,7 +11109,11 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 }</code></pre><p>在这个例子中，我们使用try-catch语句块来处理可能的异常情况。在try块中，我们使用fs.readFileSync()方法同步读取JSON文件，并将文件内容存储在data变量中。如果读取文件时出现错误，catch块将捕获该错误，并输出错误信息。</p><p>以上是使用fs模块读取文件的示例，需要注意的是，在使用fs模块读取文件时，我们需要处理可能的异常情况，并根据实际情况选择异步或同步方法。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-count</title><link href="https://neotw.netlify.app/#recent-count"></link><link href="https://neotw.netlify.app/static/recent-count.html" rel="alternative" type="text/html"></link><id>6a131e9a-b046-19c3-08bd-35ef7c9ffbfc</id><updated>2023-02-08T18:16:06</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="tc-timeline">
 
 <div class="tc-menu-list-item">
-12th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#14">14</a></span>)
+12th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#15">15</a></span>)
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E7%81%B5%E6%B4%BB%E6%80%A7VS%E6%88%90%E6%9C%AC"></a>
+</div>
 
 <div class="tc-menu-list-subitem">
 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#MethodChaining"></a>
@@ -11578,6 +11582,12 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 </div>
 
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-note-record</title><link href="https://neotw.netlify.app/#recent-note-record"></link><link href="https://neotw.netlify.app/static/recent-note-record.html" rel="alternative" type="text/html"></link><id>2619840e-dc84-d69e-3d32-c2258f306a66</id><updated>2023-04-11T09:39:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><ul>
+  
+    <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E7%81%B5%E6%B4%BB%E6%80%A7VS%E6%88%90%E6%9C%AC">灵活性VS成本</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#MethodChaining">MethodChaining</a>
@@ -16567,7 +16577,17 @@ cons [count, setCount] = <span class="hljs-title function_">useState</span>(<spa
 <span class="hljs-keyword">const</span> demo = (isDemo) ? <span class="hljs-string">&#x27;isdmeo&#x27;</span> : <span class="hljs-string">&#x27;notdemo&#x27;</span></code></pre><p>在这个示例代码中，我们定义了两个变量 a 和 b，并将它们的值分别设置为 5 和 10。然后，我们使用条件运算符号来比较 a 和 b 的大小，如果 a 大于 b，则返回 'a &gt; b'，否则返回 'a &lt;= b'。最后，我们将返回的值保存在 result 变量中，并使用 console.log() 方法将其输出到控制台中。</p><p>需要注意的是，在使用条件运算符号时，需要仔细考虑条件表达式的取值和返回值的类型，以避免出现不必要的错误。同时，也需要在代码中添加适当的注释和格式化，以提高代码的可读性和可维护性。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>水合作用</title><link href="https://neotw.netlify.app/#%E6%B0%B4%E5%90%88%E4%BD%9C%E7%94%A8"></link><link href="https://neotw.netlify.app/static/%25E6%25B0%25B4%25E5%2590%2588%25E4%25BD%259C%25E7%2594%25A8.html" rel="alternative" type="text/html"></link><id>216d4bca-204c-e99a-0e16-b8c76fc796e5</id><updated>2023-06-06T19:14:16</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <p>React 是一个 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#JavaScript">JavaScript</a> 库，用于构建用户界面。在 React 中，水合作用是指在服务器端渲染时，React 在将 HTML 发送到客户端之前，将组件的初始数据和事件处理程序注入到 HTML 中。这样，当客户端加载 HTML 时，React 就可以快速重建组件的状态，从而提高应用程序的性能和响应速度。这种注入初始数据和事件处理程序的过程就被称为水合作用。
 </p>
-</div></div></content><author><name>oeyoews</name></author></entry><entry><title>火山翻译</title><link href="https://neotw.netlify.app/#%E7%81%AB%E5%B1%B1%E7%BF%BB%E8%AF%91"></link><link href="https://neotw.netlify.app/static/%25E7%2581%25AB%25E5%25B1%25B1%25E7%25BF%25BB%25E8%25AF%2591.html" rel="alternative" type="text/html"></link><id>a6599705-86fb-4fb3-379c-9eab59618447</id><updated>2023-04-23T13:48:47</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></content><author><name>oeyoews</name></author></entry><entry><title>继承</title><link href="https://neotw.netlify.app/#%E7%BB%A7%E6%89%BF"></link><link href="https://neotw.netlify.app/static/%25E7%25BB%25A7%25E6%2589%25BF.html" rel="alternative" type="text/html"></link><id>2dde3029-c417-0a1c-8e96-1a90766e0194</id><updated>2023-05-25T10:28:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#JavaScript">JavaScript</a>中的继承可以通过原型链实现。具体来说，可以使用<code>Object.create()</code>方法创建一个新对象，将父类的原型作为参数传入，然后再将子类的原型设置为这个新对象。这样，子类就可以继承父类的属性和方法了。</p><p>下面是一个简单的例子，展示了如何使用原型链实现继承：</p><pre class="hljs"><code class="javascript hljs"><span class="hljs-comment">// 定义一个父类</span>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>火山翻译</title><link href="https://neotw.netlify.app/#%E7%81%AB%E5%B1%B1%E7%BF%BB%E8%AF%91"></link><link href="https://neotw.netlify.app/static/%25E7%2581%25AB%25E5%25B1%25B1%25E7%25BF%25BB%25E8%25AF%2591.html" rel="alternative" type="text/html"></link><id>a6599705-86fb-4fb3-379c-9eab59618447</id><updated>2023-04-23T13:48:47</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></content><author><name>oeyoews</name></author></entry><entry><title>灵活性VS成本</title><link href="https://neotw.netlify.app/#%E7%81%B5%E6%B4%BB%E6%80%A7VS%E6%88%90%E6%9C%AC"></link><link href="https://neotw.netlify.app/static/%25E7%2581%25B5%25E6%25B4%25BB%25E6%2580%25A7VS%25E6%2588%2590%25E6%259C%25AC.html" rel="alternative" type="text/html"></link><id>79c6c591-0bbe-60de-4289-8dba0bea01ae</id><updated>2023-06-12T22:25:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
+      <a href="##h-0.1" id="#h-0.1">
+       ✨ 0.1
+      </a>
+  灵活性 VS 成本</h2>
+<ul class="task-list">
+<li class="task-list-item"><input checked="true" disabled="true" id="cbx_0" type="checkbox"></input><label for="cbx_0"> 高灵活性往往带来高成本
+不要过分追求灵活性，灵活性往往带来很多额外成本(高开发成本、高维护成本、高复用成本)</label></li>
+<li class="task-list-item"><input checked="true" disabled="true" id="cbx_1" type="checkbox"></input><label for="cbx_1"> 限制灵活性反而能释放生产力</label></li>
+</ul>
+</p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>继承</title><link href="https://neotw.netlify.app/#%E7%BB%A7%E6%89%BF"></link><link href="https://neotw.netlify.app/static/%25E7%25BB%25A7%25E6%2589%25BF.html" rel="alternative" type="text/html"></link><id>2dde3029-c417-0a1c-8e96-1a90766e0194</id><updated>2023-05-25T10:28:35</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#JavaScript">JavaScript</a>中的继承可以通过原型链实现。具体来说，可以使用<code>Object.create()</code>方法创建一个新对象，将父类的原型作为参数传入，然后再将子类的原型设置为这个新对象。这样，子类就可以继承父类的属性和方法了。</p><p>下面是一个简单的例子，展示了如何使用原型链实现继承：</p><pre class="hljs"><code class="javascript hljs"><span class="hljs-comment">// 定义一个父类</span>
 <span class="hljs-keyword">function</span> <span class="hljs-title function_">Animal</span>(<span class="hljs-params">name</span>) {
   <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name;
 }
