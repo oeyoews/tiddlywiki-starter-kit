@@ -1,3 +1,10 @@
+# [3.304.0](https://github.com/oeyoews/neotw/compare/v3.303.2...v3.304.0) (2023-06-12)
+
+
+### Features
+
+* add highlight focuesd tiddler on sidebar ([f6e3096](https://github.com/oeyoews/neotw/commit/f6e309699ec0fe80ad3eb405776369d52abc4887))
+
 ## [3.303.2](https://github.com/oeyoews/neotw/compare/v3.303.1...v3.303.2) (2023-06-12)
 
 
