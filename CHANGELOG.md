@@ -1,3 +1,10 @@
+## [3.303.2](https://github.com/oeyoews/neotw/compare/v3.303.1...v3.303.2) (2023-06-12)
+
+
+### Performance Improvements
+
+* use zoom view to prevent multi tiddlers slowly operation ([8a40f70](https://github.com/oeyoews/neotw/commit/8a40f70f74756f1ee0fc9e39b8a6d3eef759e431))
+
 ## [3.303.1](https://github.com/oeyoews/neotw/compare/v3.303.0...v3.303.1) (2023-06-12)
 
 
