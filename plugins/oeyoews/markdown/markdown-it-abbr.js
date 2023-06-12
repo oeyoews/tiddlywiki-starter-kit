@@ -190,6 +190,12 @@ hide-body: yes
                             (c.content = l.slice(p)),
                             b.push(c)),
                           (y[t].children = u = i(u, n, b)));
+                        // Set cursor pointer to help for each abbr element
+                        u.forEach(token => {
+                          if (token.type === 'abbr_open') {
+                            token.attrPush(['style', 'cursor: help']);
+                          }
+                        });
                       }
             }
             var r = e.utils.escapeRE,
