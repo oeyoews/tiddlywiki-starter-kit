@@ -2651,7 +2651,7 @@ Undefined widget 'tid2pdf'
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>GettingStarted</title><link href="https://neotw.netlify.app/#GettingStarted"></link><link href="https://neotw.netlify.app/static/GettingStarted.html" rel="alternative" type="text/html"></link><id>fc927313-83cf-7e0a-53c1-21853f695851</id><updated>2023-06-05T19:42:02</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:bg-white">
 <div class="dark:hidden">
 <img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-689-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-49-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-73-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-3 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-104 seconds ago-green?style=social"></img>  
 </div>
 
 
@@ -4479,7 +4479,7 @@ const newArr = arr.map(item =&gt; item * 2);
 console.log(newArr);</code></pre><p>在使用这两种方法时，需要注意的是，回调函数的参数不同。<code>forEach</code> 方法的回调函数有三个参数：当前遍历的元素、当前元素的索引和整个数组。而 <code>map</code> 方法的回调函数只有两个参数：当前遍历的元素和当前元素的索引。</p><p>希望这些信息可以帮助您更好地理解 <code>forEach</code> 和 <code>map</code> 方法之间的区别。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>maple-hand</title><link href="https://neotw.netlify.app/#maple-hand"></link><link href="https://neotw.netlify.app/static/maple-hand.html" rel="alternative" type="text/html"></link><id>027ea563-1e2a-e6cf-d184-c314fcc15dae</id><updated>2023-04-18T10:08:25</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>maple hand</p></div></content><author><name>oeyoews</name></author></entry><entry><title>margin-order</title><link href="https://neotw.netlify.app/#margin-order"></link><link href="https://neotw.netlify.app/static/margin-order.html" rel="alternative" type="text/html"></link><id>92b8eb3a-ee84-e2ae-265b-09aae86d6866</id><updated>2023-03-20T22:24:27</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>top right bottom left(clock)</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>Markdown</title><link href="https://neotw.netlify.app/#Markdown"></link><link href="https://neotw.netlify.app/static/Markdown.html" rel="alternative" type="text/html"></link><id>2182a74b-ab71-88d9-59e7-95d9301e87ff</id><updated>2023-06-11T17:56:40</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <p>Markdown是一种轻量级的标记语言，用于简单、易读易写的文本格式化。它具有简洁明了的语法，可以快速转换为HTML或其他格式，并广泛用于编写文档、博客、注释和文本编辑器中。Markdown使得文本排版变得简单直观，使用者可以通过简单的符号和结构来标记标题、列表、链接、代码块等，以达到格式化和呈现内容的目的。
 </p>
-</div></div></content><author><name>oeyoews</name></author></entry><entry><title>markdown-resume</title><link href="https://neotw.netlify.app/#markdown-resume"></link><link href="https://neotw.netlify.app/static/markdown-resume.html" rel="alternative" type="text/html"></link><id>c8069c2c-e807-797b-a0fd-0c16ed3adb5c</id><updated>2023-03-30T13:40:28</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li><a class="tc-tiddlylink-external" href="http://cv.ftqq.com/?fr=github" rel="noopener noreferrer" target="_blank">http://cv.ftqq.com/?fr=github</a>#</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>MarkdownExtensions</title><link href="https://neotw.netlify.app/#MarkdownExtensions"></link><link href="https://neotw.netlify.app/static/MarkdownExtensions.html" rel="alternative" type="text/html"></link><id>6c6e16a6-4816-754d-995b-e27ffae039ca</id><updated>2023-06-12T09:12:37</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h1>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>markdown-resume</title><link href="https://neotw.netlify.app/#markdown-resume"></link><link href="https://neotw.netlify.app/static/markdown-resume.html" rel="alternative" type="text/html"></link><id>c8069c2c-e807-797b-a0fd-0c16ed3adb5c</id><updated>2023-03-30T13:40:28</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li><a class="tc-tiddlylink-external" href="http://cv.ftqq.com/?fr=github" rel="noopener noreferrer" target="_blank">http://cv.ftqq.com/?fr=github</a>#</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>MarkdownExtensions</title><link href="https://neotw.netlify.app/#MarkdownExtensions"></link><link href="https://neotw.netlify.app/static/MarkdownExtensions.html" rel="alternative" type="text/html"></link><id>6c6e16a6-4816-754d-995b-e27ffae039ca</id><updated>2023-06-12T09:16:37</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h1>
       <a href="##h-1" id="#h-1">
        ✨ 1
       </a>
@@ -4639,9 +4639,11 @@ console.log(newArr);</code></pre><p>在使用这两种方法时，需要注意�
 <div class="rounded-md border-left border-l-4 px-1 my-2 bg-yellow-100 border-yellow-500 text-yellow-700">
 <div class="font-bold">⚠️  Warning</div><div class="content"></div>
 </div>
-<p>:::info
-:::
+<div class="rounded-md border-left border-l-4 px-1 my-2 bg-blue-100 border-blue-500 text-blue-700">
+<div class="font-bold">💡 Tips</div><div class="content"><p>This is a tips
 </p>
+</div>
+</div>
 <div class="rounded-md border-left border-l-4 px-1 my-2 bg-red-100 border-red-500 text-red-700">
 <div class="font-bold">❌ Error</div><div class="content"></div>
 </div></p><p><h3>
@@ -5038,7 +5040,7 @@ observer.<span class="hljs-title function_">observe</span>(targetElement, { <spa
 &lt;/ul&gt;
 &lt;/div&gt;</url></dirname></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-badges</title><link href="https://neotw.netlify.app/#neotw-badges"></link><link href="https://neotw.netlify.app/static/neotw-badges.html" rel="alternative" type="text/html"></link><id>f934e3aa-d36d-34bb-609b-922693d9b993</id><updated>2023-06-01T21:41:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:hidden">
 <img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-689-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-49-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-73-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-3 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-104 seconds ago-green?style=social"></img>  
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-command</title><link href="https://neotw.netlify.app/#neotw-command"></link><link href="https://neotw.netlify.app/static/neotw-command.html" rel="alternative" type="text/html"></link><id>188385e0-6b3a-4916-a54a-061d9d29e18f</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
        ✨ 0.1
