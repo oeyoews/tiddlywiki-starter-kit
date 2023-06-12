@@ -1,11 +1,6 @@
 caption: {{$:/language/SideBar/Open/Caption}}
-created: 20230428120100719
-creator: oeyoews
-modified: 20230612043151561
-modifier: oeyoews
 tags: $:/tags/SideBar
 title: $:/core/ui/SideBar/Open
-type: text/vnd.tiddlywiki
 
 \whitespace trim
 \define lingo-base() $:/language/CloseAll/
@@ -28,11 +23,15 @@ $button$
 </$droppable>
 \end
 
+<!-- highlight currentTiddler -->
+<!-- TODO: if null set default value for set name -->
 <$set name="ftid" value={{{ [{$:/temp/focussedTiddler}] }}}>
-<div class="flex justify-center">
-    <$link class="p-1 rounded-sm inline text-indigo-500 mt-2 truncate bg-gray-200 inline text-md font-bold px-4" to=<<ftid>>><$view tiddler=<<ftid>> field='title'/></$link>
-		</div>
+<div class="flex flex-col justify-center capitalize items-center">
+  <$link class="p-1 rounded-sm inline text-indigo-500 mt-2 truncate bg-gray-200 inline text-md font-bold px-4" to=<<ftid>>><$view tiddler=<<ftid>> field='title'/></$link>
+  <small class="pt-2 text-gray-400"> 当前正在查看的条目👆</small>
+</div>
 </$set>
+<hr>
 
 <div class="tc-sidebar-tab-open prose capitalize">
 <$list filter="[list<tv-story-list>]" history=<<tv-history-list>> storyview="pop">

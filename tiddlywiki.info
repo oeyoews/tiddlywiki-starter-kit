@@ -19,6 +19,7 @@
     "tiddlywiki/codemirror-mode-javascript",
     "tiddlywiki/pluginlibrary",
     "oeyoews/markdown",
+    "oeyoews/neotw-highlight-current-tiddler",
     "oeyoews/tiddlywiki-sweetalert",
     "oeyoews/tiddlywiki-notify",
     "oeyoews/neotw-snippet",

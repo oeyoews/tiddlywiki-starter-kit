@@ -1,0 +1,12 @@
+{
+  "title": "$:/plugins/oeyoews/neotw-highlight-current-tiddler",
+  "description": "Neotw Highlight Current Tiddler",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.2.5",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "Neotw Highlight Current Tiddler",
+  "dependents": ["$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"],
+  "list": "readme"
+}
