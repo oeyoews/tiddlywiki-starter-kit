@@ -146,7 +146,9 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
     // TODO: toggle enable these plugins in tiddlywiki
     md.use(require('./markdown-it-emoji'))
       .use(require('./markdown-it-task'))
+      // TODO: click to center toc page
       .use(require('./markdown-it-toc'))
+      // intergrate docutils https://github.com/executablebooks/markdown-it-docutils
       // BUG: cursor is not correct in tiddlywiki
       .use(require('./markdown-it-abbr'));
 
