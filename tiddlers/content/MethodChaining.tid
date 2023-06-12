@@ -1,6 +1,6 @@
 created: 20230612052402680
 creator: oeyoews
-modified: 20230612052435488
+modified: 20230612135713480
 modifier: oeyoews
 tags: JavaScript
 title: MethodChaining
@@ -12,6 +12,29 @@ type: text/markdown
 
 ```js
 obj.method1().method2().method3();
+```
+
+```js
+// obj method
+
+class Person {
+  constructor() {
+    this.name = "John";
+    this.age = 30;
+  }
+  log1 = () => {
+    console.log("one");
+    return this;
+  };
+
+  log2 = () => {
+    console.log("two");
+    return this;
+  };
+}
+
+const p = new Person();
+p.log1().log2();
 ```
 
 上述代码中，obj 是一个对象，method1、method2 和 method3 是该对象上的三个方法。通过方法链的方式，可以依次调用这三个方法，并且每个方法的返回值都是该对象本身，所以可以连续调用下一个方法。
