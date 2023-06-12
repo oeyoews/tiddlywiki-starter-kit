@@ -1,3 +1,10 @@
+## [3.304.1](https://github.com/oeyoews/neotw/compare/v3.304.0...v3.304.1) (2023-06-12)
+
+
+### Bug Fixes
+
+* online just copy for tiddlywiki-static-page ([899bedb](https://github.com/oeyoews/neotw/commit/899bedb62a5c797a87d78ec6f1f353aa4697f41e))
+
 # [3.304.0](https://github.com/oeyoews/neotw/compare/v3.303.2...v3.304.0) (2023-06-12)
 
 
