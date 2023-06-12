@@ -1,9 +1,9 @@
 created: 20230521114614640
 creator: oeyoews
-modified: 20230521142719725
+modified: 20230612052115530
 modifier: oeyoews
 tags: ES6
-title: class
+title: Class
 type: text/vnd.tiddlywiki
 
 在 JavaScript 中，使用原型对象的方式可以实现对类的属性和方法进行共享。以下是一个使用原型对象的写法示例：
