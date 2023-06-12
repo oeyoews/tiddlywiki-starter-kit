@@ -56,7 +56,8 @@ neotw-gli widget
         gliNode.textContent = `Last commit: ${timeStr}`; // 显示时间字符串
       } catch (error) {
         console.error(error);
-        gliNode.textContent = 'Error loading data'; // 显示错误信息
+        const apiLimitMessage = 'API rate limit exceeded 😭';
+        gliNode.textContent = 'Error loading data; ' + apiLimitMessage; // 显示错误信息
         gliNode.className = 'text-red-500';
       }
 
