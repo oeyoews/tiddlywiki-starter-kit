@@ -5,6 +5,7 @@
   "version": "0.0.1",
   "core-version": ">=5.2.5",
   "type": "application/json",
+  "parent-plugin": "$:/plugins/oeyoews/neotw",
   "plugin-type": "plugin",
   "name": "Neotw Highlight Current Tiddler",
   "dependents": ["$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"],
