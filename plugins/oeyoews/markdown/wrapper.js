@@ -115,6 +115,7 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
     });
     return results;
   }
+
   function createContainerConfig(type, color) {
     return {
       render: function (tokens, idx) {
@@ -133,21 +134,34 @@ Wraps up the markdown-it parser for use as a Parser in TiddlyWiki
 
   // Creates markdown-it parser
   function createMarkdownEngine(markdownItOptions, pluginOptions) {
-    const container = require('./markdown-it-container');
     var md = new MarkdownIt(markdownItOptions)
       .use(require('./markdown-it-sub'))
       .use(require('./markdown-it-sup'))
       .use(require('./markdown-it-ins'))
       .use(require('./markdown-it-mark'))
       .use(require('./markdown-it-footnote'))
-      .use(require('./markdown-it-emoji'))
+      .use(require('./markdown-it-deflist'));
+
+    // extension unofficial
+    md.use(require('./markdown-it-emoji'))
       .use(require('./markdown-it-task'))
       .use(require('./markdown-it-toc'))
-      .use(container, 'todo', createContainerConfig('✅ 任务', 'green'))
-      .use(container, 'warning', createContainerConfig('注意', 'yellow'))
-      .use(container, 'info', createContainerConfig('提示', 'blue'))
-      .use(container, 'error', createContainerConfig('警告', 'red'))
-      .use(require('./markdown-it-deflist'));
+      .use(require('./markdown-it-abbr'));
+
+    // container customize
+    const containerPlugin = require('./markdown-it-container');
+    const containers = [
+      { name: 'todo', label: '✅ Task', color: 'green' },
+      { name: 'warning', label: '📚 Note', color: 'yellow' },
+      { name: 'info', label: '💡 Tips', color: 'blue' },
+      { name: 'error', label: '⚠️ Warning', color: 'red' },
+    ];
+
+    containers.forEach(container => {
+      const { name, label, color } = container;
+      const config = createContainerConfig(label, color);
+      md.use(containerPlugin, name, config);
+    });
 
     var results = setupWikiRules(pluginOptions);
 

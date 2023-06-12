@@ -1,7 +1,7 @@
 cn-title: markdown 语法测试
 created: 20230221073554683
 creator: oeyoews
-modified: 20230611145141477
+modified: 20230612010157497
 modifier: oeyoews
 page-cover: https://images.unsplash.com/photo-1455390582262-044cdead277a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d3JpdGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60
 publish: public
@@ -15,7 +15,47 @@ type: text/markdown
 	
 <hr>
 
-## Link
+## Markdown-it Plugins
+
+### Container
+
+:::todo
+- [ ] demo
+...
+:::
+
+:::warning
+:::
+
+:::info
+:::
+
+:::error
+:::
+
+
+### Toc
+
+### Markdown Task
+
+- [ ] undone
+- [x] done
+
+### Emoji
+
+* :tada: :smile: :cat: 
+
+### Abbr
+
+This is HTML abbreviation example.
+
+It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
+
+*[HTML]: Hyper Text Markup Language
+
+## 测试
+
+### Link Support
 
 * MarkdownExamples Link test
 
@@ -35,34 +75,7 @@ MarkdownExamples Link test(need enable camelCase)
 [MarkdownExamples](#MarkdownExamples)
 ```
 
-## Container
-
-:::todo
-- [ ] demo
-...
-:::
-
-:::warning
-:::
-
-:::info
-:::
-
-:::error
-:::
-
-## 二级标题
-
-### 三级标题
-
-#### 四级标题
-
-##### 五级标题
-
-###### 六级标题
-
-
-## 段落
+### 段落
 
 这是一段普通的文本。
 
@@ -75,28 +88,28 @@ MarkdownExamples Link test(need enable camelCase)
 删除线可以使用 ~~删除线~~。
 
 
-## 无序列表
+### 无序列表
 
 - 列表项 1
 - 列表项 2
 - 列表项 3
 
-## 有序列表
+### 有序列表
 
 1. 列表项 1
 2. 列表项 2
 3. 列表项 3
 
 
-## 引用
+### 引用
 
 > 这是一段引用的文本。
 
-## 行内代码
+### 行内代码
 
 这是一段代码：`print("Hello world!")`
 
-## 代码块
+### 代码块
 
 ```python
 def hello():
@@ -107,18 +120,7 @@ hello()
 
 <hr>
 
-## Markdown Task
-
-- [ ] undone
-- [x] done
-
-## emoji
-
-* :tada:
-* :smile:
-* :cat:
-
-## better render
+### Better render
 
 * (c) 
 * (tm)
@@ -127,46 +129,45 @@ hello()
 * !!!!!! 
 * ......
 
-## fancybox macro image
+### Macro Support
 
-<center>
-<<fbox width:"32" "https://neotw.oeyoewl.top/favicon.ico">>
-</center>
+### image
 
-## image
+```
+![http image](https://neotw.oeyoewl.top/favicon.ico)
+```
 
 ![http image](https://neotw.oeyoewl.top/favicon.ico)
 
+```
 ![alt text](<#tom.png>)
+```
 
-## link
-[link text](#Index "optional tooltip")
+### underline 
 
-## underline 
 ++inserted text++
 
-## mark
+### mark
+
 ==dmeo==
 
 X^2^
 
-## table
+### table
 
 |Left Aligned |Centered   |Right Aligned |
 |:---         |   :---:   |          ---:|
 |apple        |bat        |candle        |
 
-## footnote
+### footnote
 
 Here's a simple footnote,[^1] and here's a longer one.[^bignote]
 
-## Katex
+### Katex
 
 $$\KaTeX$$
 
 $$c = \pm\sqrt{a^2 + b^2}$$
-
-
 
 
 [^1]: This is the first footnote.
@@ -178,5 +179,3 @@ $$c = \pm\sqrt{a^2 + b^2}$$
     `{ my code }`
 
     Add as many paragraphs as you like.
-		
-<$tid2pdf />
