@@ -12,7 +12,7 @@
 <p>曲士不可以语于道者，束于教也。//认识局限
 </p>
 <blockquote>
-<p>https://coolshell.cn/articles/20276.html
+<p><a class="tc-tiddlylink-external _codified_" href="https://coolshell.cn/articles/20276.html" rel="noopener noreferrer" target="_blank">https://coolshell.cn/articles/20276.html</a>
 </p>
 </blockquote>
 <p>遵循个规范而已，把“正常”叫“优雅”，可见标准有多低。这么低的标准也只能“为了吃饭而生存了”
@@ -1135,7 +1135,7 @@ RESPONSE=$(curl -s -X POST -H <span class="hljs-string">&quot;Content-Type: appl
   替代方案</h3>
 <ul>
 <li>
-<p>[ 🆓 ] <a class="tc-tiddlylink-external _codified_" href="https://huggingface.co/chat" rel="noopener noreferrer" target="_blank">https://huggingface.co/chat</a> from https://huggingface.co - 2023-04-26
+<p>[ 🆓 ] <a class="tc-tiddlylink-external _codified_" href="https://huggingface.co/chat" rel="noopener noreferrer" target="_blank">https://huggingface.co/chat</a> from <a class="tc-tiddlylink-external _codified_" href="https://huggingface.co" rel="noopener noreferrer" target="_blank">https://huggingface.co</a> - 2023-04-26
 </p>
 </li>
 <li>
@@ -1314,7 +1314,7 @@ RESPONSE=$(curl -s -X POST -H <span class="hljs-string">&quot;Content-Type: appl
 <p><a class="tc-tiddlylink-external _codified_" href="https://github.com/LiLittleCat/awesome-free-chatgpt/graphs/contributors" rel="noopener noreferrer" target="_blank"><img alt="Contributors" class=" tc-image-loading" src="https://contrib.rocks/image?repo=LiLittleCat/awesome-free-chatgpt"></img></a>
 </p>
 </p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>chatgpt-plus-api</title><link href="https://neotw.netlify.app/#chatgpt-plus-api"></link><link href="https://neotw.netlify.app/static/chatgpt-plus-api.html" rel="alternative" type="text/html"></link><id>45ff65c0-ca84-6056-db01-89943e409ebd</id><updated>2023-06-04T13:23:32</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
-<p>https://chatgpt-plus.github.io/chatgpt-plus/
+<p><a class="tc-tiddlylink-external _codified_" href="https://chatgpt-plus.github.io/chatgpt-plus/" rel="noopener noreferrer" target="_blank">https://chatgpt-plus.github.io/chatgpt-plus/</a>
 </p>
 </div></div></content><author><name>oeyoews</name></author></entry><entry><title>chatgpt-website-oeyoews</title><link href="https://neotw.netlify.app/#chatgpt-website-oeyoews"></link><link href="https://neotw.netlify.app/static/chatgpt-website-oeyoews.html" rel="alternative" type="text/html"></link><id>1f4cf6c5-a89b-d17f-e2b1-ef67c84423ac</id><updated>2023-03-21T21:15:15</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li><a class="tc-tiddlylink-external" href="https://oeyoews-chatgpt.netlify.app/" rel="noopener noreferrer" target="_blank">https://oeyoews-chatgpt.netlify.app/</a></li><li>chatbox(extensions and tarui app)</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>Cheatsheet-fontawesome</title><link href="https://neotw.netlify.app/#Cheatsheet-fontawesome"></link><link href="https://neotw.netlify.app/static/Cheatsheet-fontawesome.html" rel="alternative" type="text/html"></link><id>544e94cf-f55b-bd5d-2a32-f903c44376f4</id><updated>2023-04-23T11:13:12</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://thediveo.github.io/TW5FontAwesome/output/fontawesome.html#Cheatsheet" rel="noopener noreferrer" target="_blank">https://thediveo.github.io/TW5FontAwesome/output/fontawesome.html#Cheatsheet</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>check-binary-with-ldd</title><link href="https://neotw.netlify.app/#check-binary-with-ldd"></link><link href="https://neotw.netlify.app/static/check-binary-with-ldd.html" rel="alternative" type="text/html"></link><id>28e6dd72-988a-9c9f-f3db-ebe647e635f9</id><updated>2023-03-29T15:35:45</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre class="hljs"><code class="sh hljs">ldd /usr/bin/xx</code></pre></div></content><author><name>oeyoews</name></author></entry><entry><title>check-update-version</title><link href="https://neotw.netlify.app/#check-update-version"></link><link href="https://neotw.netlify.app/static/check-update-version.html" rel="alternative" type="text/html"></link><id>d2850be8-1310-c02b-1e33-ba3c33e487e7</id><updated>2023-05-11T21:47:08</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre class="hljs"><code class="javascript hljs"><span class="hljs-comment">// check tiddlywiki update</span>
 
@@ -1825,7 +1825,7 @@ demo
 <p>在这些代码中，立即执行版本的函数会在第一次触发时立即执行，而非立即执行版本的函数会在等待一定时间后执行。这两种函数都可以根据需要使用防抖或节流功能来限制函数的执行次数。
 </p>
 <blockquote>
-<p>https://juejin.cn/post/7087286029551403015
+<p><a class="tc-tiddlylink-external _codified_" href="https://juejin.cn/post/7087286029551403015" rel="noopener noreferrer" target="_blank">https://juejin.cn/post/7087286029551403015</a>
 </p>
 </blockquote>
 </div></div></content><author><name>oeyoews</name></author></entry><entry><title>debounce-throttle2</title><link href="https://neotw.netlify.app/#debounce-throttle2"></link><link href="https://neotw.netlify.app/static/debounce-throttle2.html" rel="alternative" type="text/html"></link><id>25bd37c1-f04c-e785-fc8d-9c26ed89a783</id><updated>2023-05-13T20:07:45</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#JavaScript">JavaScript</a> 中的防抖（debounce）是一种常用的优化技术，它可以有效地降低高频事件触发时的资源消耗和性能问题。主要是因为以下几个原因：</p><p>1. 防止高频触发事件导致的性能问题：例如，当用户连续快速输入搜索关键词时，每次输入都会触发一次搜索请求，这可能会导致浏览器出现卡顿或崩溃等问题。使用防抖技术可以延迟事件处理，从而避免过多的请求和计算工作。</p><p>2. 减少不必要的网络请求：例如，当用户在短时间内多次点击提交按钮时，每次点击都会触发一次表单提交操作，这可能会导致服务器端出现重复的请求或者数据丢失等问题。使用防抖技术可以确保只有最后一次点击事件被执行，从而避免重复提交。</p><p>3. 提高用户体验：通过合理使用防抖技术，可以让用户获得更加流畅的交互体验，同时也能够减少冗余的操作以及对系统资源的浪费。</p><p>因此，在 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#JavaScript">JavaScript</a> 开发中，通常会使用防抖技术来控制高频事件的触发，从而提高程序的性能和稳定性。常见的防抖实现方式包括基于定时器的简单防抖和基于时间戳的立即执行防抖等。</p><p>防抖和节流都是常用的事件优化技术，它们可以避免高频事件触发导致的性能问题，但它们的实现方式和使用场景有所不同：</p><p>1. 防抖（debounce）：指的是在事件被触发 n 秒后才执行回调函数（如果在这段时间内事件又被触发，则重新计时），主要应用于一些高频触发事件（如窗口缩放、搜索框输入等）。通过使用防抖，可以有效地减少事件处理的次数，从而提高程序的性能和稳定性。</p><p>2. 节流（throttle）：指的是在 n 秒内最多只执行一次回调函数，主要应用于一些频率较高但处理逻辑简单的事件（如鼠标滚轮、页面滚动等）。通过使用节流，可以限制事件处理的频率，从而降低计算机资源的负担，并提高程序的响应速度。</p><p>总体来说，防抖和节流都是为了优化事件处理效率而产生的技术。二者的选择取决于具体的场景需求，如果是针对高频触发事件，可以考虑使用防抖；如果是针对频率较高且处理逻辑简单的事件，则可以考虑使用节流。需要注意的是，在实际应用中，还需要根据具体情况来调整防抖和节流的时间参数，以达到最佳效果。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>declare-interface</title><link href="https://neotw.netlify.app/#declare-interface"></link><link href="https://neotw.netlify.app/static/declare-interface.html" rel="alternative" type="text/html"></link><id>acff82b3-6703-a43a-80ad-9b7011c56c0c</id><updated>2023-05-10T00:19:02</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>虽然<code>declare</code>和<code>interface</code>关键字都用于定义类型，但它们的作用和使用方式有所不同。</p><p><code>declare</code>关键字用于声明一个变量、函数、类或模块的类型，通常用于描述已经存在的<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#JavaScript">JavaScript</a>代码。它告诉<a class="tc-tiddlylink tc-tiddlylink-missing" href="#TypeScript">TypeScript</a>编译器，某个标识符的类型信息已经存在，无需再进行检查和分析。因此，<code>declare</code>关键字常用于解决<a class="tc-tiddlylink tc-tiddlylink-missing" href="#TypeScript">TypeScript</a>无法识别第三方<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#JavaScript">JavaScript</a>库或模块的类型问题。</p><p>例如，可以使用<code>declare</code>关键字声明一个名为<code>$</code>的全局变量，使<a class="tc-tiddlylink tc-tiddlylink-missing" href="#TypeScript">TypeScript</a>能够正确地识别jQuery库：</p><pre class="hljs"><code class="typescript hljs"><span class="hljs-keyword">declare</span> <span class="hljs-keyword">const</span> <span class="hljs-attr">$</span>: {
@@ -2566,7 +2566,7 @@ Undefined widget 'tid2pdf'
 <p>但如果您不需要编译步骤，那么坚持使用 JSDoc 类型注释可能更容易。这方面的例子是库和简单的脚本。
 </p>
 <blockquote>
-<p>ref: https://www.pausly.app/blog/full-type-support-with-plain-javascript
+<p>ref: <a class="tc-tiddlylink-external _codified_" href="https://www.pausly.app/blog/full-type-support-with-plain-javascript" rel="noopener noreferrer" target="_blank">https://www.pausly.app/blog/full-type-support-with-plain-javascript</a>
 </p>
 </blockquote>
 </div></div></content><author><name>oeyoews</name></author></entry><entry><title>fullscreen</title><link href="https://neotw.netlify.app/#fullscreen"></link><link href="https://neotw.netlify.app/static/fullscreen.html" rel="alternative" type="text/html"></link><id>74ba0736-dad9-b723-6e2c-7db4f4f4b874</id><updated>2023-04-30T22:07:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>在 Web 开发中，浏览器不允许页面自动全屏，这是为了保证用户体验和安全性。如果网站可以在未经用户授权的情况下自动全屏，那么恶意网站就有可能利用这个漏洞对用户进行攻击（如欺诈、诱导下载等），从而危害用户的利益。</p><p>因此，浏览器对于自动全屏行为采取了一系列防护措施，在浏览器中无法通过代码实现页面自动全屏。如果您希望让用户进入全屏模式，应该通过用户手动操作（如点击按钮、执行特定操作等）触发 Fullscreen API（全屏 API），以获取用户的明确授权。</p><p>需要注意的是，即使用户已经进入全屏模式，浏览器也会在用户滑动页面等操作时自动退出全屏。这是浏览器的默认行为，无法通过代码控制。</p><hr></hr><p>在 Web 开发中，元素全屏有两种：内部全屏和外部全屏。</p><p>内部全屏
@@ -3327,7 +3327,7 @@ Undefined widget 'tid2pdf'
 </p>
 </div></div></content><author><name>oeyoews</name></author></entry><entry><title>instapaper</title><link href="https://neotw.netlify.app/#instapaper"></link><link href="https://neotw.netlify.app/static/instapaper.html" rel="alternative" type="text/html"></link><id>346303fb-5d49-84fb-ad77-c4b78f2cf702</id><updated>2023-03-31T21:18:18</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>pure reader asist rss</p></div></content><author><name>oeyoews</name></author></entry><entry><title>itabb</title><link href="https://neotw.netlify.app/#itabb"></link><link href="https://neotw.netlify.app/static/itabb.html" rel="alternative" type="text/html"></link><id>cfb8fdff-5783-5674-8e0e-6480a163bde4</id><updated>2023-04-23T11:48:28</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>itab</p></div></content><author><name>oeyoews</name></author></entry><entry><title>JavaScript</title><link href="https://neotw.netlify.app/#JavaScript"></link><link href="https://neotw.netlify.app/static/JavaScript.html" rel="alternative" type="text/html"></link><id>686155af-75a6-0a0f-6e9d-80c1f7edd3e9</id><updated>2023-06-11T13:19:39</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></content><author><name>oeyoews</name></author></entry><entry><title>javascript.info</title><link href="https://neotw.netlify.app/#javascript.info"></link><link href="https://neotw.netlify.app/static/javascript.info.html" rel="alternative" type="text/html"></link><id>96f3bffc-e83e-f1c0-4e7d-05f41e7ef9e6</id><updated>2023-04-08T09:41:00</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://javascript.info/" rel="noopener noreferrer" target="_blank">https://javascript.info/</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>Journal</title><link href="https://neotw.netlify.app/#Journal"></link><link href="https://neotw.netlify.app/static/Journal.html" rel="alternative" type="text/html"></link><id>6b2b5614-a23a-bed4-834b-7cb7b91c6887</id><updated>2023-05-01T19:04:05</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"></div></content><author><name>oeyoews</name></author></entry><entry><title>js-books</title><link href="https://neotw.netlify.app/#js-books"></link><link href="https://neotw.netlify.app/static/js-books.html" rel="alternative" type="text/html"></link><id>8705013a-284d-ed3c-68a9-b765513755d4</id><updated>2023-06-07T23:36:25</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <ul>
-<li>https://books.goalkicker.com/<a class="tc-tiddlylink tc-tiddlylink-missing" href="#JavaScriptBook">JavaScriptBook</a>/</li>
+<li><a class="tc-tiddlylink-external _codified_" href="https://books.goalkicker.com/JavaScriptBook/" rel="noopener noreferrer" target="_blank">https://books.goalkicker.com/JavaScriptBook/</a></li>
 <li><a class="tc-tiddlylink-external _codified_" href="https://wangdoc.com/javascript/" rel="noopener noreferrer" target="_blank">Js</a></li>
 <li><a class="tc-tiddlylink-external _codified_" href="https://es6.ruanyifeng.com/#README" rel="noopener noreferrer" target="_blank">Es6</a></li>
 </ul>
@@ -5401,7 +5401,7 @@ docker rename old_name new_name    # 容器重新命名
       </a>
   Misc</h3>
 <ul>
-<li>git -b develop https://github.com/… # only to clone a appointment</li>
+<li>git -b develop <a class="tc-tiddlylink-external _codified_" href="https://github.com/" rel="noopener noreferrer" target="_blank">https://github.com/</a>… # only to clone a appointment</li>
 <li>git ls-remote  //  detail</li>
 </ul>
 
@@ -5610,8 +5610,8 @@ docker rename old_name new_name    # 容器重新命名
 <li>git config --global core.editor vim</li>
 <li>git config --global credential.helper store    # 存储账户密码，但是需要输入一次</li>
 <li>git config -l # 列出git的初始化信息。  可以查看当前的仓库链接的是那个具体仓库</li>
-<li>git config --global user.name “oeyoews”</li>
-<li>git config --global user.email “2956398608@qq.com” # 带有空格</li>
+<li>git config --global <a class="tc-tiddlylink-external _codified_" href="http://user.name" rel="noopener noreferrer" target="_blank">user.name</a> “oeyoews”</li>
+<li>git config --global user.email “<a class="tc-tiddlylink-external _codified_" href="mailto:2956398608@qq.com" rel="noopener noreferrer" target="_blank">2956398608@qq.com</a>” # 带有空格</li>
 </ul>
 
     <h3>
@@ -5622,7 +5622,7 @@ docker rename old_name new_name    # 容器重新命名
 <ul>
 <li>ssh-keygen</li>
 <li>~/.ssh/id_ras.pub</li>
-<li>ssh -T git@github.com</li>
+<li>ssh -T <a class="tc-tiddlylink-external _codified_" href="mailto:git@github.com" rel="noopener noreferrer" target="_blank">git@github.com</a></li>
 </ul>
 
     <h3>
@@ -5649,7 +5649,7 @@ docker rename old_name new_name    # 容器重新命名
       </a>
   Enhance_speed</h3>
 <ul>
-<li>https://raw.githubusercontent.com/ 进行了代理，地址为 https://raw.fastgit.org/ 。</li>
+<li><a class="tc-tiddlylink-external _codified_" href="https://raw.githubusercontent.com/" rel="noopener noreferrer" target="_blank">https://raw.githubusercontent.com/</a> 进行了代理，地址为 <a class="tc-tiddlylink-external _codified_" href="https://raw.fastgit.org/" rel="noopener noreferrer" target="_blank">https://raw.fastgit.org/</a> 。</li>
 </ul>
 
     <h3>
@@ -5682,7 +5682,7 @@ hard 表示将工作区 暂存区 版本库记录 恢复到某一定版本，com
       </a>
   git_submoudle(子模块)</h3>
 <ul>
-<li>https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97</li>
+<li><a class="tc-tiddlylink-external _codified_" href="https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97" rel="noopener noreferrer" target="_blank">https://git-scm.com/book/zh/v2/Git-工具-子模块</a></li>
 <li>git clone url --recurse-submoudles</li>
 <li>git submodule init &amp;&amp; git submoudle update</li>
 <li>git submoudle update --init --recursive</li>
@@ -5738,7 +5738,7 @@ next branch, unless you commit it’s job</li>
 <li>go env -json</li>
 <li>1.13</li>
 <li>go env -w GO111MODULE=on</li>
-<li>go env -w GOPROXY=https://goproxy.cn,direct</li>
+<li>go env -w GOPROXY=<a class="tc-tiddlylink-external _codified_" href="https://goproxy.cn" rel="noopener noreferrer" target="_blank">https://goproxy.cn</a>,direct</li>
 <li>go env -u GOPROXY</li>
 </ul></p><p><h2>
       <a href="##h-0.2" id="#h-0.2">
@@ -5763,7 +5763,7 @@ next branch, unless you commit it’s job</li>
 <li>go install …/src/xxx  安装二进制文件到~/go (default)
 <ul>
 <li>
-<p>使用到了绝对绝对路径 项目名/src/package, go.md 的项目名关系到import 首先要包括模块名
+<p>使用到了绝对绝对路径 项目名/src/package, <a class="tc-tiddlylink-external _codified_" href="http://go.md" rel="noopener noreferrer" target="_blank">go.md</a> 的项目名关系到import 首先要包括模块名
 </p>
 </li>
 <li>
@@ -5776,7 +5776,7 @@ next branch, unless you commit it’s job</li>
 </li>
 </ul>
 </li>
-<li>go.mod  moudle github.com/oeyoews(no slash)</li>
+<li>go.mod  moudle <a class="tc-tiddlylink-external _codified_" href="http://github.com/oeyoews" rel="noopener noreferrer" target="_blank">github.com/oeyoews</a>(no slash)</li>
 </ul>
 </p></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-gource</title><link href="https://neotw.netlify.app/#neotw-gource"></link><link href="https://neotw.netlify.app/static/neotw-gource.html" rel="alternative" type="text/html"></link><id>a1c57a48-3db0-7d14-e4d8-d9345beae6d6</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <p><code class="_codified_">gource --output-custom-log my-project-custom.log</code>
@@ -5964,7 +5964,7 @@ This is <a class="tc-tiddlylink-external _codified_" href="http://example.com/" 
 <p><code class="_codified_"> export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node  # 对nvm换源</code>
 </p>
 <ul>
-<li>npm config set registry https://registry.npm.taobao.org                 # npm换源</li>
+<li>npm config set registry <a class="tc-tiddlylink-external _codified_" href="https://registry.npm.taobao.org" rel="noopener noreferrer" target="_blank">https://registry.npm.taobao.org</a>                 # npm换源</li>
 </ul>
 
     <h2>
@@ -6001,7 +6001,7 @@ npm config list      # 查看npm源
 npm install -g npm-check   #  包管理器
 npm-check -u -i # 更新
 </p>
-<p>npm install -g cnpm --registry=https://registry.npm.taobao.org           # 安装cnpm 不加参数可能会出现一些问题
+<p>npm install -g cnpm --registry=<a class="tc-tiddlylink-external _codified_" href="https://registry.npm.taobao.org" rel="noopener noreferrer" target="_blank">https://registry.npm.taobao.org</a>           # 安装cnpm 不加参数可能会出现一些问题
 </p>
 <p>npm info underscore     # 查看
 </p>
@@ -6537,7 +6537,7 @@ sudo pacman -S  --noconfirm libcaca highlight atool lynx w3m elinks  mediainfo  
 <p>#找出含有docx的一行，然后将其注释起来：
 #ext docx?, has catdoc,       terminal = catdoc – “<span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">@</mi><mi mathvariant="normal">&quot;</mi><mi mathvariant="normal">∣</mi><mi mathvariant="normal">&quot;</mi></mrow><annotation encoding="application/x-tex">@&quot; | &quot;</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">@&quot;∣&quot;</span></span></span></span></span>PAGER”
 s # enter this shell environment.
-git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
+git clone <a class="tc-tiddlylink-external _codified_" href="https://github.com/alexanderjeurissen/ranger_devicons" rel="noopener noreferrer" target="_blank">https://github.com/alexanderjeurissen/ranger_devicons</a> ~/.config/ranger/plugins/ranger_devicons
 echo “default_linemode devicons” &gt;&gt; $HOME/.config/ranger/rc.conf   # add devicons
 </p>
 <ul>
@@ -7167,7 +7167,7 @@ meld
 <ul>
 <li>base-devel</li>
 <li>trash-cli</li>
-<li>nodejs-lts-erbium # 12.xxx</li>
+<li>nodejs-lts-erbium # <a class="tc-tiddlylink-external _codified_" href="http://12.xxx" rel="noopener noreferrer" target="_blank">12.xxx</a></li>
 <li>tmux</li>
 <li>lunar-date</li>
 <li>utools(recomment system: window)</li>
@@ -8265,7 +8265,7 @@ sudo virsh net-start default
 </p>
 </li>
 <li>
-<p>https://bbs.archlinuxcn.org/viewtopic.php?id=10479
+<p><a class="tc-tiddlylink-external _codified_" href="https://bbs.archlinuxcn.org/viewtopic.php?id=10479" rel="noopener noreferrer" target="_blank">https://bbs.archlinuxcn.org/viewtopic.php?id=10479</a>
 </p>
 </li>
 <li>
@@ -8455,8 +8455,8 @@ Github</li>
 <li>git-filter-repo</li>
 <li>将所有用户名中包含的foo替换成ttys3 （注意，不支持中文)</li>
 <li>git filter-repo --name-callback ‘return name.replace(b"foo", b"ttys3")’</li>
-<li>将所有commit信息的email中包含的 foo@example.com 替换成 my-email@example.com</li>
-<li>git filter-repo --email-callback ‘return email.replace(b"foo@example.com", b"my-email@example.com")’</li>
+<li>将所有commit信息的email中包含的 <a class="tc-tiddlylink-external _codified_" href="mailto:foo@example.com" rel="noopener noreferrer" target="_blank">foo@example.com</a> 替换成 <a class="tc-tiddlylink-external _codified_" href="mailto:my-email@example.com" rel="noopener noreferrer" target="_blank">my-email@example.com</a></li>
+<li>git filter-repo --email-callback ‘return email.replace(<a class="tc-tiddlylink-external _codified_" href="mailto:b%22foo@example.com" rel="noopener noreferrer" target="_blank">b"foo@example.com</a>", <a class="tc-tiddlylink-external _codified_" href="mailto:b%22my-email@example.com" rel="noopener noreferrer" target="_blank">b"my-email@example.com</a>")’</li>
 </ul>
 
     <h2>
@@ -8516,7 +8516,7 @@ Github</li>
 </p>
 </li>
 <li>
-<p>go env -w GOPROXY=https://goproxy.cn # solve golang error .
+<p>go env -w GOPROXY=<a class="tc-tiddlylink-external _codified_" href="https://goproxy.cn" rel="noopener noreferrer" target="_blank">https://goproxy.cn</a> # solve golang error .
 </p>
 </li>
 </ul>
@@ -8752,7 +8752,7 @@ flush privileges;                               #  关键  mysql</li>
 <li>mysqld --initialize --user=mysql --basedir=/usr --datadir=/var/lib/mysql</li>
 </ul>
 <ul>
-<li>systemctl start mysql https://wiki.archlinux.org/title/<a class="tc-tiddlylink tc-tiddlylink-missing" href="#MariaDB">MariaDB</a>
+<li>systemctl start mysql <a class="tc-tiddlylink-external _codified_" href="https://wiki.archlinux.org/title/MariaDB" rel="noopener noreferrer" target="_blank">https://wiki.archlinux.org/title/MariaDB</a>
 mycli -uroot -p 123</li>
 </ul>
 <ul>
@@ -8769,7 +8769,7 @@ mycli -uroot -p 123</li>
 </p>
 </li>
 <li>
-<p>vim /etc/mysql/my.cnf # 修改/etc/my.cnf，在 [mysqld] 小节下添加一行：skip-grant-tables=1 这一行配置让 mysqld 启动时不对密码进行验证…https://blog.csdn.net/qq_31854907/article/details/81235991
+<p>vim /etc/mysql/my.cnf # 修改/etc/my.cnf，在 [mysqld] 小节下添加一行：skip-grant-tables=1 这一行配置让 mysqld 启动时不对密码进行验证…<a class="tc-tiddlylink-external _codified_" href="https://blog.csdn.net/qq_31854907/article/details/81235991" rel="noopener noreferrer" target="_blank">https://blog.csdn.net/qq_31854907/article/details/81235991</a>
 </p>
 </li>
 <li>
@@ -8792,7 +8792,7 @@ mycli -uroot -p 123</li>
   Jetbrain</h2>
 <ul>
 <li>
-<p>add https://plugins.zhile.io and install IDE Eval Reset
+<p>add <a class="tc-tiddlylink-external _codified_" href="https://plugins.zhile.io" rel="noopener noreferrer" target="_blank">https://plugins.zhile.io</a> and install IDE Eval Reset
 </p>
 </li>
 <li>
@@ -8855,7 +8855,7 @@ mycli -uroot -p 123</li>
 </li>
 <li>
 <ul>
-<li>yay ntp &amp;&amp; sudo ntpdate -u  ntp5.aliyun.com</li>
+<li>yay ntp &amp;&amp; sudo ntpdate -u  <a class="tc-tiddlylink-external _codified_" href="http://ntp5.aliyun.com" rel="noopener noreferrer" target="_blank">ntp5.aliyun.com</a></li>
 </ul>
 </li>
 <li>
@@ -8881,7 +8881,7 @@ mycli -uroot -p 123</li>
 </p></li>
 <li>
 <ul>
-<li>gdm https://help.gnome.org/admin/gdm/stable/configuration.html.zh_CN#xsessionscript</li>
+<li>gdm <a class="tc-tiddlylink-external _codified_" href="https://help.gnome.org/admin/gdm/stable/configuration.html.zh_CN#xsessionscript" rel="noopener noreferrer" target="_blank">https://help.gnome.org/admin/gdm/stable/configuration.html.zh_CN#xsessionscript</a></li>
 </ul>
 </li>
 <li>
@@ -8950,7 +8950,7 @@ mycli -uroot -p 123</li>
       </a>
   pacman error</h2>
 <ul>
-<li>https://www.archlinuxcn.org/gnupg-2-1-and-the-pacman-keyring/</li>
+<li><a class="tc-tiddlylink-external _codified_" href="https://www.archlinuxcn.org/gnupg-2-1-and-the-pacman-keyring/" rel="noopener noreferrer" target="_blank">https://www.archlinuxcn.org/gnupg-2-1-and-the-pacman-keyring/</a></li>
 </ul>
 
     <h2>
@@ -8993,7 +8993,7 @@ env WINEPREFIX=“$HOME/.deepinwine/Deepin-WeChat” winecfg
 </li>
 <li>
 <ul>
-<li>https://www.w3cschool.cn/working_on_gnu_linux/working_on_gnu_linux-v8s527ok.html ### ascii</li>
+<li><a class="tc-tiddlylink-external _codified_" href="https://www.w3cschool.cn/working_on_gnu_linux/working_on_gnu_linux-v8s527ok.html" rel="noopener noreferrer" target="_blank">https://www.w3cschool.cn/working_on_gnu_linux/working_on_gnu_linux-v8s527ok.html</a> ### ascii</li>
 </ul>
 </li>
 <li>showkey -a</li>
@@ -9028,8 +9028,8 @@ env WINEPREFIX=“$HOME/.deepinwine/Deepin-WeChat” winecfg
 free -h
 swapon --show
 pacman -Syu iwd
-https://starrycat.me/archlinux-install-gnome-desktop.html
-https://zhuanlan.zhihu.com/p/157260502</li>
+<a class="tc-tiddlylink-external _codified_" href="https://starrycat.me/archlinux-install-gnome-desktop.html" rel="noopener noreferrer" target="_blank">https://starrycat.me/archlinux-install-gnome-desktop.html</a>
+<a class="tc-tiddlylink-external _codified_" href="https://zhuanlan.zhihu.com/p/157260502" rel="noopener noreferrer" target="_blank">https://zhuanlan.zhihu.com/p/157260502</a></li>
 </ul>
 </li>
 <li>mktemp -d /tmp/jst.XXXXX</li>
@@ -9110,7 +9110,7 @@ mode
 </p>
 </li>
 <li>
-<p>[passwd](https://wiki.archlinux.org/title/Reset_lost_root_password_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
+<p>[passwd](<a class="tc-tiddlylink-external _codified_" href="https://wiki.archlinux.org/title/Reset_lost_root_password_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)" rel="noopener noreferrer" target="_blank">https://wiki.archlinux.org/title/Reset_lost_root_password_(简体中文)</a>
 </p>
 </li>
 <li>
@@ -9154,11 +9154,11 @@ mode
 </p>
 </li>
 <li>
-<p>scp lighthouse@101.43.122.185:/home/lighthouse/testscp.md .
+<p>scp <a class="tc-tiddlylink-external _codified_" href="mailto:lighthouse@101.43.122.185" rel="noopener noreferrer" target="_blank">lighthouse@101.43.122.185</a>:/home/lighthouse/testscp.md .
 </p>
 </li>
 <li>
-<p>rsync lighthouse@101.43.122.185:/home/lighthouse/testscp.md 1/
+<p>rsync <a class="tc-tiddlylink-external _codified_" href="mailto:lighthouse@101.43.122.185" rel="noopener noreferrer" target="_blank">lighthouse@101.43.122.185</a>:/home/lighthouse/testscp.md 1/
 </p>
 </li>
 <li>
@@ -9202,7 +9202,7 @@ mode
       </a>
   reveal</h2>
 <ul>
-<li>reveal.md xxx.md -w</li>
+<li><a class="tc-tiddlylink-external _codified_" href="http://reveal.md" rel="noopener noreferrer" target="_blank">reveal.md</a> <a class="tc-tiddlylink-external _codified_" href="http://xxx.md" rel="noopener noreferrer" target="_blank">xxx.md</a> -w</li>
 <li>f(fullscreen)</li>
 <li>(h/l/j/k/n/p)</li>
 <li>esc: show all slides</li>
@@ -9210,7 +9210,7 @@ mode
 <li>s(speakview)</li>
 <li>b(board)(need install plugin)</li>
 <li>b</li>
-<li>reveal.md xxx.md --print xx.pdf</li>
+<li><a class="tc-tiddlylink-external _codified_" href="http://reveal.md" rel="noopener noreferrer" target="_blank">reveal.md</a> <a class="tc-tiddlylink-external _codified_" href="http://xxx.md" rel="noopener noreferrer" target="_blank">xxx.md</a> --print xx.pdf</li>
 </ul>
 
     <h2>
@@ -15325,7 +15325,7 @@ dmeo dmeo dmeo dmeo dmoe dmeo
        ✨ 1.3
       </a>
   输入格式</h2>
-<p>输入文件piggy.in，仅有一行，包含两个整数n和m，分别表示小猪的数目和房间数（1≤n≤50，0≤m≤50）。
+<p><a class="tc-tiddlylink-external _codified_" href="http://xn--piggy-ln2hk9lc24c3c9e.in" rel="noopener noreferrer" target="_blank">输入文件piggy.in</a>，仅有一行，包含两个整数n和m，分别表示小猪的数目和房间数（1≤n≤50，0≤m≤50）。
 </p></p><p><h2>
       <a href="##h-1.4" id="#h-1.4">
        ✨ 1.4
@@ -15590,7 +15590,7 @@ Undefined widget 'echarts'
   <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(error.<span class="hljs-property">message</span>); <span class="hljs-comment">// 输出 &quot;Something went wrong&quot;</span>
 }</code></pre><ul><li>需要注意的是，catch 代码块中的参数名（如上面的 error）是任意的，只要符合标识符的命名规范即可。通常情况下，它被命名为 error 或 err，以表明它是一个异常对象。</li><li>finally 代码块时，通常用于释放资源或执行清理操作</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>ts-01</title><link href="https://neotw.netlify.app/#ts-01"></link><link href="https://neotw.netlify.app/static/ts-01.html" rel="alternative" type="text/html"></link><id>2f634752-3aa6-7169-6bf4-583505a441bd</id><updated>2023-05-08T18:43:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>"ts" 是 <a class="tc-tiddlylink tc-tiddlylink-missing" href="#TypeScript">TypeScript</a> 的缩写，尖括号 "&lt;&gt;" 在 <a class="tc-tiddlylink tc-tiddlylink-missing" href="#TypeScript">TypeScript</a> 中通常用于表示泛型类型。例如：</p><pre class="hljs"><code class="typescript hljs"><span class="hljs-comment">// 定义一个泛型数组类型</span>
 <span class="hljs-keyword">const</span> <span class="hljs-attr">array</span>: <span class="hljs-title class_">Array</span>&lt;<span class="hljs-built_in">number</span>&gt; = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>];</code></pre><p>在这个例子中，"<number>" 表示了这个数组只能存储数字类型的元素。泛型是 <a class="tc-tiddlylink tc-tiddlylink-missing" href="#TypeScript">TypeScript</a> 中非常强大和灵活的特性，它可以让代码更加抽象和可复用。</number></p></div></content><author><name>oeyoews</name></author></entry><entry><title>ts-document-unoffical</title><link href="https://neotw.netlify.app/#ts-document-unoffical"></link><link href="https://neotw.netlify.app/static/ts-document-unoffical.html" rel="alternative" type="text/html"></link><id>8bad826c-2dde-ed32-9d34-05638f5bb79d</id><updated>2023-05-30T20:42:44</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
-<p>https://ts.xcatliu.com/
+<p><a class="tc-tiddlylink-external _codified_" href="https://ts.xcatliu.com/" rel="noopener noreferrer" target="_blank">https://ts.xcatliu.com/</a>
 </p>
 </div></div></content><author><name>oeyoews</name></author></entry><entry><title>turndown</title><link href="https://neotw.netlify.app/#turndown"></link><link href="https://neotw.netlify.app/static/turndown.html" rel="alternative" type="text/html"></link><id>e62e00e0-2543-fad6-96ab-7bd3f2be6502</id><updated>2023-05-28T11:24:36</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre class="hljs"><code class="html hljs"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
@@ -15741,7 +15741,7 @@ process.env.TIDDLYWIKI_EDITION_PATH = `${repoFolder}/editions`;</code></pre><ul>
 </p>
 </blockquote>
 <blockquote>
-<p>personal atom feed: https://neotw.oeyoewl.top/atom.xml
+<p>personal atom feed: <a class="tc-tiddlylink-external _codified_" href="https://neotw.oeyoewl.top/atom.xml" rel="noopener noreferrer" target="_blank">https://neotw.oeyoewl.top/atom.xml</a>
 </p>
 </blockquote>
 
@@ -15778,7 +15778,7 @@ process.env.TIDDLYWIKI_EDITION_PATH = `${repoFolder}/editions`;</code></pre><ul>
       </a>
   Rsshub</h2>
 <ul>
-<li>https://docs.rsshub.app/</li>
+<li><a class="tc-tiddlylink-external _codified_" href="https://docs.rsshub.app/" rel="noopener noreferrer" target="_blank">https://docs.rsshub.app/</a></li>
 </ul>
 
     <h2>
@@ -15788,21 +15788,21 @@ process.env.TIDDLYWIKI_EDITION_PATH = `${repoFolder}/editions`;</code></pre><ul>
   Apps</h2>
 <ul>
 <li>dinorss</li>
-<li>https://rss.cafe</li>
-<li>https://www.qireader.com.cn/(mirror)</li>
+<li><a class="tc-tiddlylink-external _codified_" href="https://rss.cafe" rel="noopener noreferrer" target="_blank">https://rss.cafe</a></li>
+<li><a class="tc-tiddlylink-external _codified_" href="https://www.qireader.com.cn/(mirror)" rel="noopener noreferrer" target="_blank">https://www.qireader.com.cn/(mirror)</a></li>
 <li>fluent reader(app)</li>
 <li>netnewswire</li>
-<li>feeder.co</li>
+<li><a class="tc-tiddlylink-external _codified_" href="http://feeder.co" rel="noopener noreferrer" target="_blank">feeder.co</a></li>
 <li>feedbro</li>
 <li>desktop: rssowl</li>
 <li>inoreader</li>
 <li>briefcake(email)</li>
-<li>feedly.com</li>
+<li><a class="tc-tiddlylink-external _codified_" href="http://feedly.com" rel="noopener noreferrer" target="_blank">feedly.com</a></li>
 <li>newblur</li>
 <li>ego reader(格式似乎有问题)</li>
 <li>unread</li>
 <li>newsflash</li>
-<li>http://webfollow.cc/welcome</li>
+<li><a class="tc-tiddlylink-external _codified_" href="http://webfollow.cc/welcome" rel="noopener noreferrer" target="_blank">http://webfollow.cc/welcome</a></li>
 </ul>
 
     <h2>
@@ -15831,9 +15831,9 @@ process.env.TIDDLYWIKI_EDITION_PATH = `${repoFolder}/editions`;</code></pre><ul>
       </a>
   Links</h2>
 <ul>
-<li>https://www.ruanyifeng.com/blog/2006/01/rss.html</li>
-<li>https://zhuanlan.zhihu.com/p/133452043</li>
-<li>https://zhuanlan.zhihu.com/p/395100455</li>
+<li><a class="tc-tiddlylink-external _codified_" href="https://www.ruanyifeng.com/blog/2006/01/rss.html" rel="noopener noreferrer" target="_blank">https://www.ruanyifeng.com/blog/2006/01/rss.html</a></li>
+<li><a class="tc-tiddlylink-external _codified_" href="https://zhuanlan.zhihu.com/p/133452043" rel="noopener noreferrer" target="_blank">https://zhuanlan.zhihu.com/p/133452043</a></li>
+<li><a class="tc-tiddlylink-external _codified_" href="https://zhuanlan.zhihu.com/p/395100455" rel="noopener noreferrer" target="_blank">https://zhuanlan.zhihu.com/p/395100455</a></li>
 </ul>
 
     <h2>
@@ -15863,7 +15863,7 @@ https://github.com/:user.atom
 </code></pre>
 <ul>
 <li>
-<p>https://ronalds.eu/2020/03/26/rss-feeds-for-your-github-releases-tags-and-activity/
+<p><a class="tc-tiddlylink-external _codified_" href="https://ronalds.eu/2020/03/26/rss-feeds-for-your-github-releases-tags-and-activity/" rel="noopener noreferrer" target="_blank">https://ronalds.eu/2020/03/26/rss-feeds-for-your-github-releases-tags-and-activity/</a>
 </p>
 </li>
 <li>
@@ -15871,11 +15871,11 @@ https://github.com/:user.atom
 </p>
 </li>
 <li>
-<p>deploy: https://docs.rsshub.app/install/#bu-shu-dao-vercel-zeit-now
+<p>deploy: <a class="tc-tiddlylink-external _codified_" href="https://docs.rsshub.app/install/#bu-shu-dao-vercel-zeit-now" rel="noopener noreferrer" target="_blank">https://docs.rsshub.app/install/#bu-shu-dao-vercel-zeit-now</a>
 </p>
 </li>
 <li>
-<p>https://chrome.google.com/webstore/detail/web-monitor/fipadnnmmoiomfllhbbnhjnghopkgfpb?utm_source=official
+<p><a class="tc-tiddlylink-external _codified_" href="https://chrome.google.com/webstore/detail/web-monitor/fipadnnmmoiomfllhbbnhjnghopkgfpb?utm_source=official" rel="noopener noreferrer" target="_blank">https://chrome.google.com/webstore/detail/web-monitor/fipadnnmmoiomfllhbbnhjnghopkgfpb?utm_source=official</a>
 </p>
 </li>
 </ul>
@@ -15895,8 +15895,8 @@ https://github.com/:user.atom
       </a>
   Atom template</h2>
 <ul>
-<li>https://github.com/Alinshans/alinshans.github.io/blob/master/atom.xml</li>
-<li>https://feedburner.google.com/</li>
+<li><a class="tc-tiddlylink-external _codified_" href="https://github.com/Alinshans/alinshans.github.io/blob/master/atom.xml" rel="noopener noreferrer" target="_blank">https://github.com/Alinshans/alinshans.github.io/blob/master/atom.xml</a></li>
+<li><a class="tc-tiddlylink-external _codified_" href="https://feedburner.google.com/" rel="noopener noreferrer" target="_blank">https://feedburner.google.com/</a></li>
 </ul>
 
     <h2>
@@ -15905,7 +15905,7 @@ https://github.com/:user.atom
       </a>
   Links</h2>
 <ul>
-<li>https://feedx.net/</li>
+<li><a class="tc-tiddlylink-external _codified_" href="https://feedx.net/" rel="noopener noreferrer" target="_blank">https://feedx.net/</a></li>
 </ul>
 </div></div></content><author><name>oeyoews</name></author></entry><entry><title>usercase-graph</title><link href="https://neotw.netlify.app/#usercase-graph"></link><link href="https://neotw.netlify.app/static/usercase-graph.html" rel="alternative" type="text/html"></link><id>f6571b52-e378-0492-6549-6ee78e9fe399</id><updated>2023-04-16T12:48:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>参与者, 用例及两者之间的关系</p></div></content><author><name>oeyoews</name></author></entry><entry><title>useReducer</title><link href="https://neotw.netlify.app/#useReducer"></link><link href="https://neotw.netlify.app/static/useReducer.html" rel="alternative" type="text/html"></link><id>46773aa2-3466-2ff9-1b99-0431dce94ee8</id><updated>2023-04-30T17:22:12</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>useReducer是useState的升级版(实际上应该是原始版)，可以实现复杂逻辑修改，而不是像useState那样只是直接赋值修改。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>usestate</title><link href="https://neotw.netlify.app/#usestate"></link><link href="https://neotw.netlify.app/static/usestate.html" rel="alternative" type="text/html"></link><id>1fe96d87-7685-dd6b-b6cd-d9d28bfde6fe</id><updated>2023-04-28T13:09:33</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <p>useState 和 let 都可以用于在 React 中保存状态，但它们有一些区别。
@@ -16211,8 +16211,8 @@ cons [count, setCount] = <span class="hljs-title function_">useState</span>(<spa
 <p>需要注意的是，使用原型定义方法时，方法中的<code class="_codified_">this</code>关键字指向的是调用该方法的实例对象，而不是构造函数本身。因此，在<code class="_codified_">sayName</code>方法中的<code class="_codified_">this.name</code>实际上是指实例对象的<code class="_codified_">name</code>属性，而不是构造函数的<code class="_codified_">name</code>属性。
 </p>
 <ul>
-<li>https://juejin.cn/post/7241114001323819063</li>
-<li>https://www.bilibili.com/video/BV11h411F7nd/?spm_id_from=333.1007.tianma.4-2-12.click&amp;vd_source=d6afd7eedd9f9c940321c63f0a1539e3</li>
+<li><a class="tc-tiddlylink-external _codified_" href="https://juejin.cn/post/7241114001323819063" rel="noopener noreferrer" target="_blank">https://juejin.cn/post/7241114001323819063</a></li>
+<li><a class="tc-tiddlylink-external _codified_" href="https://www.bilibili.com/video/BV11h411F7nd/?spm_id_from=333.1007.tianma.4-2-12.click&amp;vd_source=d6afd7eedd9f9c940321c63f0a1539e3" rel="noopener noreferrer" target="_blank">https://www.bilibili.com/video/BV11h411F7nd/?spm_id_from=333.1007.tianma.4-2-12.click&amp;vd_source=d6afd7eedd9f9c940321c63f0a1539e3</a></li>
 </ul>
 </div></div></content><author><name>oeyoews</name></author></entry><entry><title>函数柯里化</title><link href="https://neotw.netlify.app/#%E5%87%BD%E6%95%B0%E6%9F%AF%E9%87%8C%E5%8C%96"></link><link href="https://neotw.netlify.app/static/%25E5%2587%25BD%25E6%2595%25B0%25E6%259F%25AF%25E9%2587%258C%25E5%258C%2596.html" rel="alternative" type="text/html"></link><id>e4456f24-5cb2-ac9e-60ee-e15140f36491</id><updated>2023-06-07T12:33:06</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <pre class="hljs"><code class="js hljs"><span class="hljs-comment">// bind 也可以用来部分应用一个函数（柯里化）。</span>
@@ -16602,7 +16602,7 @@ john.<span class="hljs-title function_">sayHello</span>(); <span class="hljs-com
 </div></div></content><author><name>oeyoews</name></author></entry><entry><title>静态方法-实例方法-原型方法01</title><link href="https://neotw.netlify.app/#%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95-%E5%AE%9E%E4%BE%8B%E6%96%B9%E6%B3%95-%E5%8E%9F%E5%9E%8B%E6%96%B9%E6%B3%9501"></link><link href="https://neotw.netlify.app/static/%25E9%259D%2599%25E6%2580%2581%25E6%2596%25B9%25E6%25B3%2595-%25E5%25AE%259E%25E4%25BE%258B%25E6%2596%25B9%25E6%25B3%2595-%25E5%258E%259F%25E5%259E%258B%25E6%2596%25B9%25E6%25B3%259501.html" rel="alternative" type="text/html"></link><id>84a7a5da-1c97-8a1a-809d-c000f6ef1f48</id><updated>2023-06-09T12:41:27</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 
 <blockquote>
-<p>https://es6.ruanyifeng.com/#docs/class
+<p><a class="tc-tiddlylink-external _codified_" href="https://es6.ruanyifeng.com/#docs/class" rel="noopener noreferrer" target="_blank">https://es6.ruanyifeng.com/#docs/class</a>
 </p>
 </blockquote>
 <ol>
