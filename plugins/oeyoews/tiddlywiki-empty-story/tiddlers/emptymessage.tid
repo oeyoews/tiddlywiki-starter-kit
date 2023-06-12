@@ -13,58 +13,20 @@ title: $:/config/EmptyStoryMessage
   </div>
 </center>
 
-<!-- <div class="my-4"> -->
-<!-- {{$:/plugins/Gk0Wk/echarts/Snippets/GitHubHeatMap}} -->
-<!-- </div> -->
-
-<!-- <div class="my-4"> -->
-<!-- <$echarts $tiddler="$:/plugins/Gk0Wk/echarts/addons/TheBrain.js" aliasField="caption" levels=1 focussedTiddler="index" graphTitle="Index" $height="500px" /> -->
-<!-- </div> -->
-
 <!-- leaft.png -->
 <div class="m-6">
 <$image source="leaf.png" class="w-32 mx-auto block"/>
 </div>
-
-<!-- polarbear -->
-<!-- <div class="polarbear"></div> -->
-
-<!--TODO custom-->
-<!-- <center class="my-2"> -->
-<!--   <$otime /> -->
-<!-- </center> -->
-
-<!-- commit info on github -->
-<$list filter="[{$:/info/url/protocol}match[https:]]">
-  <$gli class="text-center mt-4 text-gray-500"/>
-
-  <center>
-  <$hitokoto />
-  </center>
-</$list>
 
 <!-- TODO -->
 <div class="dark:bg-white flex justify-center">
   {{neotw-badges}}
 </div>
 
-<!-- giscus -->
-<!-- <div class="mt-4"> -->
-<!-- <$inline-giscus local="no"/> -->
-<!-- </div> -->
-
-<!-- {{$:/plugins/oeyoews/tiddlywiki-cards/tips}} -->
-
-<!-- <<folded-ribbon text:"Neotw" class:oleft style:"--c: #F8CA00;color: #000;--f:0px" >> -->
-<!-- <<folded-ribbon text:"Home" class:oright style:"--c: #F8CA00;color: #000;--f:0px" >> -->
-<!-- <<oribbon>> -->
-
-    <!-- <div class="nc-sidebar p-2 rounded-lg shadow-lg my-8 mx-4 z-[1000] hover:bg-gray-100 transition duration-500 relative w-3/5"> -->
-    <!--   <$list filter="[all[shadows+tiddlers]tag[$:/themes/nico/notebook/tags/Sidebar]!has[draft.of]]" variable="listItem"> -->
-    <!--     <$reveal type="nomatch" state=<<config-title>> text="hide" tag="div"> -->
-    <!--       <$transclude tiddler=<<listItem>> mode="inline"/> -->
-    <!--     </$reveal> -->
-    <!--   </$list> -->
-    <!-- </div> -->
-
-<!-- {{{ [[GettingStarted]] ||$:/core/ui/ViewTemplate }}} -->
+<!-- commit info on github -->
+<$list filter="[{$:/info/url/protocol}match[https:]]">
+  <!-- <$gli class="text-center mt-4 text-gray-500"/> -->
+  <center>
+    <$hitokoto />
+  </center>
+</$list>
