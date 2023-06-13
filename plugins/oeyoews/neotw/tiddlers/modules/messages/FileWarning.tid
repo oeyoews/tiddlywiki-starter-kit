@@ -1,0 +1,7 @@
+class: o-tm
+mask-closable: yes
+title: FileWarning
+
+<center class="font-bold text-red-400">
+你正在使用单文件版本的 TiddlyWiki, 望悉知!
+</center>
