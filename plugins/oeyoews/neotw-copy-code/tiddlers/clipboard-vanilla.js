@@ -3,7 +3,7 @@ title: $:/plugins/oeyoews/neotw-copy-code/copyCode.js
 type: application/javascript
 module-type: library
 
-neotw-copy-code widget
+eotw-copy-code widget
 
 \*/
 function addCopyButton() {
@@ -17,20 +17,44 @@ function addCopyButton() {
     const regex = /language-(\w+)/;
     const match = codeElement?.className?.match(regex);
     const fileType = match ? match[1] : null;
+
+    // use hidden ???
+    const showButton = buttonStatus => {
+      codeBlock.addEventListener('mousehover', () => {
+        buttonStatus.classList.remove('opacity-0');
+        buttonStatus.classList.add('opacity-100');
+      });
+
+      codeBlock.addEventListener('mouseenter', () => {
+        buttonStatus.classList.remove('opacity-0');
+        buttonStatus.classList.add('opacity-100');
+      });
+
+      codeBlock.addEventListener('mouseleave', () => {
+        buttonStatus.classList.remove('opacity-100');
+        buttonStatus.classList.add('opacity-0');
+      });
+    };
     // ??
     if (existingButton && codeElement) {
       // to remove not hidden because of new codeblocks should add new copy button if dom has new pre>code
-      existingButton.remove();
+      // existingButton.remove();
+      // TODO: need remove addEventListener ???
+      showButton(existingButton);
     } else {
+      // TODO: option this hidden or not
       classNames =
-        'copy-button float-right hover:bg-gray-200 transition duration-200 opacity-0 hover:opacity-100';
+        'copy-button float-right hover:bg-gray-200 transition duration-200 opacity-0 ease-in'; //  opacity-0 hover:opacity-100
       const copyButton = $tw.utils.domMaker('button', {
         text: fileType ? `${fileType} 📋` : '📋',
         class: fileType ? classNames : classNames + ' -m-4',
         attributes: {
-          title: 'Copy code',
+          title: '',
         },
       });
+
+      showButton(copyButton);
+
       copyButton.addEventListener('click', () => {
         navigator.clipboard
           .writeText(codeElement.textContent)
@@ -43,7 +67,6 @@ function addCopyButton() {
           .catch(err => {
             console.log(err);
           });
-        window.getSelection().removeAllRanges();
 
         /**
          * preview
