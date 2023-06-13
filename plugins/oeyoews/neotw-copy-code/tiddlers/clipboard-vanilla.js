@@ -20,19 +20,14 @@ function addCopyButton() {
 
     // use hidden ???
     const showButton = buttonStatus => {
-      codeBlock.addEventListener('mousehover', () => {
-        buttonStatus.classList.remove('opacity-0');
-        buttonStatus.classList.add('opacity-100');
-      });
-
       codeBlock.addEventListener('mouseenter', () => {
-        buttonStatus.classList.remove('opacity-0');
-        buttonStatus.classList.add('opacity-100');
+        buttonStatus.classList.remove('hidden');
+        buttonStatus.classList.add('block');
       });
 
       codeBlock.addEventListener('mouseleave', () => {
-        buttonStatus.classList.remove('opacity-100');
-        buttonStatus.classList.add('opacity-0');
+        buttonStatus.classList.remove('block');
+        buttonStatus.classList.add('hidden');
       });
     };
     // ??
@@ -40,11 +35,12 @@ function addCopyButton() {
       // to remove not hidden because of new codeblocks should add new copy button if dom has new pre>code
       // existingButton.remove();
       // TODO: need remove addEventListener ???
+      // TODO transition hidden
       showButton(existingButton);
     } else {
       // TODO: option this hidden or not
       classNames =
-        'copy-button float-right hover:bg-gray-200 transition duration-200 opacity-0 ease-in'; //  opacity-0 hover:opacity-100
+        'copy-button float-right hover:bg-gray-200 transition duration-200 hidden ease-in'; //  opacity-0 hover:opacity-100
       const copyButton = $tw.utils.domMaker('button', {
         text: fileType ? `${fileType} 📋` : '📋',
         class: fileType ? classNames : classNames + ' -m-4',
