@@ -1,6 +1,6 @@
 created: 20230613021039755
 creator: oeyoews
-modified: 20230613024429119
+modified: 20230613093343166
 modifier: oeyoews
 publish: article
 tags: TiddlyWiki
@@ -16,10 +16,10 @@ type: text/markdown
 ## shadow
 
 ``` 
-[is[shadow]]
+[all[shadows]]
 ```
 
-被修改过的插件条目
+被修改过的影子条目
 
 ``` 
 [!is[system]is[shadow]]
@@ -56,3 +56,5 @@ type: text/markdown
 
 > add filter here to test 
 
+
+https://talk.tiddlywiki.org/t/problem-system-links-and-freelink-plugin/7270/3
