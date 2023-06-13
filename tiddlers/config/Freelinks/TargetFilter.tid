@@ -1,8 +1,8 @@
 created: 20230611100729097
 creator: oeyoews
-modified: 20230611101001897
+modified: 20230613020732410
 modifier: oeyoews
 title: $:/config/Freelinks/TargetFilter
 type: text/vnd.tiddlywiki
 
-[!is[system]sort[title]]
+[all[tiddlers+shadows]!prefix[$:/]]
