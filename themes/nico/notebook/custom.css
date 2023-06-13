@@ -164,7 +164,12 @@ button {
 } */
 
 /* remove safari browser summary arrow */
-summary::marker,
+/* summary::marker,
 summary::-webkit-details-marker {
+  display: none;
+} */
+
+/* fix calllout plugin */
+details[data-callout] summary::-webkit-details-marker {
   display: none;
 }
