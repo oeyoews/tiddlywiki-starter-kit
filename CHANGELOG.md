@@ -1,3 +1,10 @@
+## [3.305.1](https://github.com/oeyoews/neotw/compare/v3.305.0...v3.305.1) (2023-06-13)
+
+
+### Performance Improvements
+
+* remove safari arrow summary ([59a06da](https://github.com/oeyoews/neotw/commit/59a06da779a81b2f90fea8a8e3e5d3e3a75eaec3))
+
 # [3.305.0](https://github.com/oeyoews/neotw/compare/v3.304.1...v3.305.0) (2023-06-12)
 
 
