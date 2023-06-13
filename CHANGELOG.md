@@ -1,3 +1,15 @@
+# [3.306.0](https://github.com/oeyoews/neotw/compare/v3.305.1...v3.306.0) (2023-06-13)
+
+
+### Bug Fixes
+
+* use startup instead of load-modules ([b24e1ee](https://github.com/oeyoews/neotw/commit/b24e1eebd58eb09c1960ce72261fcfc202222aa0))
+
+
+### Features
+
+* add neotw-markdown-extensions ([ea852fb](https://github.com/oeyoews/neotw/commit/ea852fb638ec72db243ff66d36aaa0d5c22da9a9))
+
 ## [3.305.1](https://github.com/oeyoews/neotw/compare/v3.305.0...v3.305.1) (2023-06-13)
 
 
