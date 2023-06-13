@@ -6,13 +6,3 @@ title: $:/plugins/${username}/${pluginname}/readme
 
 * [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/${pluginname}]]
 * [[Demo|https://oeyoews.github.io/neotw]]
-
-!! Usage
-
-; widgetName
-:
-
-; param
-: Null
-
-</div>

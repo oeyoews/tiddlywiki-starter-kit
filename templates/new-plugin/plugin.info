@@ -3,7 +3,7 @@
   "description": "${description}",
   "author": "${username}",
   "version": "0.0.1",
-  "core-version": ">=5.2.5",
+  "core-version": ">=5.2.7",
   "type": "application/json",
   "parent-plugin": "$:/plugins/oeyoews/neotw",
   "plugin-type": "plugin",
