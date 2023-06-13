@@ -162,3 +162,9 @@ button {
 /* .tc-tiddlylink: hover {
   background-color: rgb(241 245 249);
 } */
+
+/* remove safari browser summary arrow */
+summary::marker,
+summary::-webkit-details-marker {
+  display: none;
+}
