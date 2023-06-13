@@ -4143,179 +4143,7 @@ console.log(newArr);</code></pre><p>在使用这两种方法时，需要注意�
 </p>
 <p>*[…]: Coming
 </p>
-</div></div></content><author><name>oeyoews</name></author></entry><entry><title>markdown-resume</title><link href="https://neotw.netlify.app/#markdown-resume"></link><link href="https://neotw.netlify.app/static/markdown-resume.html" rel="alternative" type="text/html"></link><id>c8069c2c-e807-797b-a0fd-0c16ed3adb5c</id><updated>2023-03-30T13:40:28</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li><a class="tc-tiddlylink-external" href="http://cv.ftqq.com/?fr=github" rel="noopener noreferrer" target="_blank">http://cv.ftqq.com/?fr=github</a>#</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>MarkdownExtensions</title><link href="https://neotw.netlify.app/#MarkdownExtensions"></link><link href="https://neotw.netlify.app/static/MarkdownExtensions.html" rel="alternative" type="text/html"></link><id>6c6e16a6-4816-754d-995b-e27ffae039ca</id><updated>2023-06-12T09:31:01</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
-<h1>Markdown Extensions</h1>
-<p>@[toc]
-</p>
-<hr></hr>
-<h2>Markdown-it Plugins</h2>
-<h3>Container</h3>
-<p>:::todo
-</p>
-<ul>
-<li>[ ] demo
-…
-:::</li>
-</ul>
-<p>:::warning
-:::
-</p>
-<p>:::tips
-This is a tips
-:::
-</p>
-<p>:::error
-:::
-</p>
-<h3>Toc</h3>
-<h3>Markdown Task</h3>
-<ul>
-<li>[ ] undone</li>
-<li>[x] done</li>
-</ul>
-<h3>Emoji</h3>
-<ul>
-<li>:tada: :smile: :cat:</li>
-</ul>
-<h3>Abbr</h3>
-<ul>
-<li>Tiddlywiki</li>
-<li>太微</li>
-</ul>
-<h2>测试</h2>
-<h3>Link Support</h3>
-<ul>
-<li><a class="tc-tiddlylink tc-tiddlylink-missing" href="#MarkdownExamples">MarkdownExamples</a> Link test</li>
-</ul>
-<pre><code>MarkdownExamples Link test(need enable camelCase)
-</code></pre>
-<ul>
-<li><a class="tc-tiddlylink tc-tiddlylink-missing _codified_" href="#MarkdownExamples">MarkdownExamples</a> Link(include double brackets)</li>
-</ul>
-<pre><code>[[MarkdownExamples]] Link(include double brackets)
-</code></pre>
-<ul>
-<li><a class="tc-tiddlylink tc-tiddlylink-missing _codified_" href="#MarkdownExamples">MarkdownExamples</a></li>
-</ul>
-<pre><code>[MarkdownExamples](#MarkdownExamples)
-</code></pre>
-<h3>段落</h3>
-<p>这是一段普通的文本。
-</p>
-<p>段落之间需要空行。
-</p>
-<p>换行需要使用 <code class="_codified_">&lt;br&gt;</code> 或者加上两个空格。
-</p>
-<p>字体可以使用 <em>斜体</em> 或者 <strong>粗体</strong> 或者 <em><strong>斜粗体</strong></em>。
-</p>
-<p>删除线可以使用 <s>删除线</s>。
-</p>
-<h3>无序列表</h3>
-<ul>
-<li>列表项 1</li>
-<li>列表项 2</li>
-<li>列表项 3</li>
-</ul>
-<h3>有序列表</h3>
-<ol>
-<li>列表项 1</li>
-<li>列表项 2</li>
-<li>列表项 3</li>
-</ol>
-<h3>引用</h3>
-<blockquote>
-<p>这是一段引用的文本。
-</p>
-</blockquote>
-<h3>行内代码</h3>
-<p>这是一段代码：<code class="_codified_">print("Hello world!")</code>
-</p>
-<h3>代码块</h3>
-<pre class="hljs"><code class="python hljs"><span class="hljs-keyword">def</span> <span class="hljs-title function_">hello</span>():
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Hello world!&quot;</span>)
-    
-hello()
-</code></pre>
-<hr></hr>
-<h3>Better render</h3>
-<ul>
-<li>©</li>
-<li>™</li>
-<li>®</li>
-<li>???</li>
-<li>!!!</li>
-<li>…</li>
-</ul>
-<h3>Macro Support</h3>
-<h3>image</h3>
-<pre><code>![http image](https://neotw.oeyoewl.top/favicon.ico)
-</code></pre>
-<p><img alt="http image" class=" tc-image-loading" src="https://neotw.oeyoewl.top/favicon.ico"></img>
-</p>
-<pre><code>![alt text](&lt;#tom.png&gt;)
-</code></pre>
-<h3>underline</h3>
-<p><ins>inserted text</ins>
-</p>
-<h3>mark</h3>
-<p><mark>dmeo</mark>
-</p>
-<p>X<sup>2</sup>
-</p>
-<h3>table</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Left Aligned</th>
-<th style="text-align:center">Centered</th>
-<th style="text-align:right">Right Aligned</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">apple</td>
-<td style="text-align:center">bat</td>
-<td style="text-align:right">candle</td>
-</tr>
-</tbody>
-</table>
-<h3>footnote</h3>
-<p>Here’s a simple footnote,<a class="footnote-ref" href="##fn1-0" id="#fnref1-0">[1]</a> and here’s a longer one.<a class="footnote-ref" href="##fn2-0" id="#fnref2-0">[2]</a>
-</p>
-<h3>Katex</h3>
-<p><span><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>KaTeX</mtext></mrow><annotation encoding="application/x-tex">\KaTeX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8988em;vertical-align:-0.2155em;"></span><span class="mord text"><span class="mord textrm">K</span><span class="mspace" style="margin-right:-0.17em;"></span><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6833em;"><span style="top:-2.905em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord"><span class="mord textrm mtight sizing reset-size6 size3">A</span></span></span></span></span></span><span class="mspace" style="margin-right:-0.15em;"></span><span class="mord text"><span class="mord textrm">T</span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.4678em;"><span style="top:-2.7845em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord textrm">E</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2155em;"><span></span></span></span></span><span class="mspace" style="margin-right:-0.125em;"></span><span class="mord textrm">X</span></span></span></span></span></span></span></span></p>
-<p><span><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>c</mi><mo>=</mo><mo>±</mo><msqrt><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding="application/x-tex">c = \pm\sqrt{a^2 + b^2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">c</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.24em;vertical-align:-0.1777em;"></span><span class="mord">±</span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0623em;"><span class="svg-align" style="top:-3.2em;"><span class="pstrut" style="height:3.2em;"></span><span class="mord" style="padding-left:1em;"><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7401em;"><span style="top:-2.989em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7401em;"><span style="top:-2.989em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span><span style="top:-3.0223em;"><span class="pstrut" style="height:3.2em;"></span><span class="hide-tail" style="min-width:1.02em;height:1.28em;"><svg xmlns="http://www.w3.org/2000/svg" width='400em' height='1.28em' viewBox='0 0 400000 1296' preserveAspectRatio='xMinYMin slice'><path d='M263,681c0.7,0,18,39.7,52,119
-c34,79.3,68.167,158.7,102.5,238c34.3,79.3,51.8,119.3,52.5,120
-c340,-704.7,510.7,-1060.3,512,-1067
-l0 -0
-c4.7,-7.3,11,-11,19,-11
-H40000v40H1012.3
-s-271.3,567,-271.3,567c-38.7,80.7,-84,175,-136,283c-52,108,-89.167,185.3,-111.5,232
-c-22.3,46.7,-33.8,70.3,-34.5,71c-4.7,4.7,-12.3,7,-23,7s-12,-1,-12,-1
-s-109,-253,-109,-253c-72.7,-168,-109.3,-252,-110,-252c-10.7,8,-22,16.7,-34,26
-c-22,17.3,-33.3,26,-34,26s-26,-26,-26,-26s76,-59,76,-59s76,-60,76,-60z
-M1001 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1777em;"><span></span></span></span></span></span></span></span></span></span></span></p>
-<p>*[Tiddlywiki]: <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> is a unique non-linear personal web notebook that allows users to create, organize, and share content in a highly flexible and customizable manner. It is an open-source wiki software written in <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#JavaScript">JavaScript</a> and designed to run entirely in the web browser. <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> is known for its simplicity, portability, and powerful features.
-*[太微]: Chinese Name of Tiddlywiki
-</p>
-<hr class="footnotes-sep"></hr>
-<section class="footnotes">
-<ol class="footnotes-list">
-<li class="footnote-item" id="#fn1-0"><p>This is the first footnote.<a class="footnote-backref" href="##fnref1-0">↥︎</a>
-</p>
-</li>
-<li class="footnote-item" id="#fn2-0"><p>Here’s one with multiple paragraphs and code.
-</p>
-<p>Indent paragraphs to include them in the footnote.
-</p>
-<p><code class="_codified_">{ my code }</code>
-</p>
-<p>Add as many paragraphs as you like.<a class="footnote-backref" href="##fnref2-0">↥︎</a>
-</p>
-</li>
-</ol>
-</section>
-</div></div></content><author><name>oeyoews</name></author></entry><entry><title>mdn-search</title><link href="https://neotw.netlify.app/#mdn-search"></link><link href="https://neotw.netlify.app/static/mdn-search.html" rel="alternative" type="text/html"></link><id>ca98d367-bafa-9eca-7127-54f030961751</id><updated>2023-03-31T21:17:45</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://developer.mozilla.org/zh-CN/" rel="noopener noreferrer" target="_blank">https://developer.mozilla.org/zh-CN/</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>mdx</title><link href="https://neotw.netlify.app/#mdx"></link><link href="https://neotw.netlify.app/static/mdx.html" rel="alternative" type="text/html"></link><id>93c3b60a-8b8c-46fe-78ba-27927b2280e7</id><updated>2023-03-24T22:00:08</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>use mdx</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>memos-docker-compose</title><link href="https://neotw.netlify.app/#memos-docker-compose"></link><link href="https://neotw.netlify.app/static/memos-docker-compose.html" rel="alternative" type="text/html"></link><id>66cc4474-77be-e7d2-0c7d-444665ceec23</id><updated>2023-03-31T21:18:33</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre class="hljs"><code class="bash hljs">docker-compose up -d  <span class="hljs-comment">#docker-compose.yml`</span></code></pre><pre class="hljs"><code class="yml hljs"><span class="hljs-attr">version:</span> <span class="hljs-string">&quot;3.0&quot;</span>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>markdown-resume</title><link href="https://neotw.netlify.app/#markdown-resume"></link><link href="https://neotw.netlify.app/static/markdown-resume.html" rel="alternative" type="text/html"></link><id>c8069c2c-e807-797b-a0fd-0c16ed3adb5c</id><updated>2023-03-30T13:40:28</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li><a class="tc-tiddlylink-external" href="http://cv.ftqq.com/?fr=github" rel="noopener noreferrer" target="_blank">http://cv.ftqq.com/?fr=github</a>#</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>mdn-search</title><link href="https://neotw.netlify.app/#mdn-search"></link><link href="https://neotw.netlify.app/static/mdn-search.html" rel="alternative" type="text/html"></link><id>ca98d367-bafa-9eca-7127-54f030961751</id><updated>2023-03-31T21:17:45</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><a class="tc-tiddlylink-external" href="https://developer.mozilla.org/zh-CN/" rel="noopener noreferrer" target="_blank">https://developer.mozilla.org/zh-CN/</a></p></div></content><author><name>oeyoews</name></author></entry><entry><title>mdx</title><link href="https://neotw.netlify.app/#mdx"></link><link href="https://neotw.netlify.app/static/mdx.html" rel="alternative" type="text/html"></link><id>93c3b60a-8b8c-46fe-78ba-27927b2280e7</id><updated>2023-03-24T22:00:08</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>use mdx</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>memos-docker-compose</title><link href="https://neotw.netlify.app/#memos-docker-compose"></link><link href="https://neotw.netlify.app/static/memos-docker-compose.html" rel="alternative" type="text/html"></link><id>66cc4474-77be-e7d2-0c7d-444665ceec23</id><updated>2023-03-31T21:18:33</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre class="hljs"><code class="bash hljs">docker-compose up -d  <span class="hljs-comment">#docker-compose.yml`</span></code></pre><pre class="hljs"><code class="yml hljs"><span class="hljs-attr">version:</span> <span class="hljs-string">&quot;3.0&quot;</span>
 <span class="hljs-attr">services:</span>
   <span class="hljs-attr">memos:</span>
     <span class="hljs-attr">image:</span> <span class="hljs-string">neosmemo/memos:latest</span>
@@ -4544,8 +4372,8 @@ observer.<span class="hljs-title function_">observe</span>(targetElement, { <spa
 <li>aria2c -d <dirname> <url>&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;</url></dirname></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-badges</title><link href="https://neotw.netlify.app/#neotw-badges"></link><link href="https://neotw.netlify.app/static/neotw-badges.html" rel="alternative" type="text/html"></link><id>f934e3aa-d36d-34bb-609b-922693d9b993</id><updated>2023-06-01T21:41:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-697-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-49-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-76-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-15 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-696-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-49-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-76-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-28 minutes ago-green?style=social"></img>  
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-command</title><link href="https://neotw.netlify.app/#neotw-command"></link><link href="https://neotw.netlify.app/static/neotw-command.html" rel="alternative" type="text/html"></link><id>188385e0-6b3a-4916-a54a-061d9d29e18f</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <h2>cp</h2>
 <pre class="hljs"><code class="shell hljs">eg: dir: 1/2/3
@@ -8985,7 +8813,7 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 </div>
 
 <div class="tc-menu-list-item">
-12th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#16">16</a></span>)
+12th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#15">15</a></span>)
 
 <div class="tc-menu-list-subitem">
 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#myst.js"></a>
@@ -9029,10 +8857,6 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 
 <div class="tc-menu-list-subitem">
 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#tw-icon"></a>
-</div>
-
-<div class="tc-menu-list-subitem">
-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#MarkdownExtensions"></a>
 </div>
 
 <div class="tc-menu-list-subitem">
@@ -9549,12 +9373,6 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#tw-icon">tw-icon</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
-    </li>
-  
-    <li>
-		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#MarkdownExtensions">MarkdownExtensions</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
         
     </li>
