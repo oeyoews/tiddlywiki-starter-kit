@@ -1,0 +1,10 @@
+created: 20230613005400378
+modified: 20230613005439474
+tags: $:/tags/Stylesheet
+title: remove-arrow
+type: text/markdown
+
+summary::marker,
+  summary::-webkit-details-marker {
+    display: none;
+  }
