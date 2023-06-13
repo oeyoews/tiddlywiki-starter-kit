@@ -1,0 +1,21 @@
+created: 20230613042644173
+creator: oeyoews
+modified: 20230613042707150
+modifier: oeyoews
+tags: JavaScript
+title: 解构01
+type: text/markdown
+
+```js
+// const widget = require('widget').widget
+// const { widget } = require("widget");
+
+const obj = {
+  a: 1,
+  b: 2,
+  c: 3,
+};
+
+// const { a } = obj;
+const a = obj.a;
+```

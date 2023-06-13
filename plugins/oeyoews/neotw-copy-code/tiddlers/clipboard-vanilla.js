@@ -23,7 +23,7 @@ function addCopyButton() {
       existingButton.remove();
     } else {
       classNames =
-        'copy-button float-right hover:bg-gray-200 transition duration-200';
+        'copy-button float-right hover:bg-gray-200 transition duration-200 opacity-0 hover:opacity-100';
       const copyButton = $tw.utils.domMaker('button', {
         text: fileType ? `${fileType} 📋` : '📋',
         class: fileType ? classNames : classNames + ' -m-4',
