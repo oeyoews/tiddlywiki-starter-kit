@@ -29,18 +29,22 @@ Extension markdown-it
 
   function LoadExtensions() {
     const md = $tw.Wiki.parsers['text/markdown'].prototype.md;
-    window.emoji = require('./markdown-it-emoji');
+
+    const emoji = require('./markdown-it-emoji');
     const toc = require('./markdown-it-toc');
     const task = require('./markdown-it-task');
+    const abbr = require('./markdown-it-abbr');
+
+    md.use(emoji).use(toc).use(task).use(abbr);
+
     const containerPlugin = require('./markdown-it-container');
-
-    md.use(emoji).use(toc).use(task);
-
     const containers = [
-      { name: 'todo', label: '✅ 任务', color: 'green' },
-      { name: 'warning', label: '注意', color: 'yellow' },
-      { name: 'info', label: '提示', color: 'blue' },
-      { name: 'error', label: '警告', color: 'red' },
+      { name: 'success', label: '✅ Success', color: 'green' },
+      { name: 'todo', label: '✅ TODO', color: 'green' },
+      { name: 'warning', label: '⚠️  Warning', color: 'yellow' },
+      { name: 'note', label: '📚 Note', color: 'yellow' },
+      { name: 'error', label: '❌ Error', color: 'red' },
+      { name: 'tips', label: '💡 Tips', color: 'blue' },
     ];
 
     containers.forEach(container => {
@@ -57,7 +61,7 @@ Extension markdown-it
 
   exports.name = 'markdown-extension-startup-hook';
   exports.platforms = ['browser'];
-  exports.after = ['load-modules'];
+  exports.after = ['startup'];
   exports.synchronous = true;
   exports.startup = LoadExtensions;
   // exports.startup = LoadEmoji;
