@@ -13,7 +13,7 @@ daylight module
 
   exports.name = 'daylight-startup-hook';
   exports.platforms = ['browser'];
-  exports.after = ['load-modules'];
+  exports.after = ['startup'];
   exports.synchronous = true;
   exports.startup = () => {
     /* window.addEventListener('color-scheme', e => {
