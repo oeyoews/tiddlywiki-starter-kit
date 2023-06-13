@@ -13,7 +13,7 @@ simple notify
 
   exports.name = 'notify-startup-hook';
   exports.platforms = ['browser'];
-  exports.after = ['load-modules'];
+  exports.after = ['startup'];
   exports.synchronous = true;
   exports.startup = () => {
     const defaultOptions = {};
