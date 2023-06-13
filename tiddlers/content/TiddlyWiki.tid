@@ -1,8 +1,12 @@
 created: 20230611095052116
 creator: oeyoews
-modified: 20230611095110209
+modified: 20230613024807805
 modifier: oeyoews
 title: TiddlyWiki
 type: text/vnd.tiddlywiki
 
-TiddlyWiki是一款功能强大的个人知识管理和笔记工具，可以帮助用户创建、组织和共享信息。
+<$image source="banner.png" class="rounded-lg h-12 w-auto block mx-auto animate-pulse" />
+
+<<.preamble "TiddlyWiki是一款功能强大的个人知识管理和笔记工具，可以帮助用户创建、组织和共享信息。">>
+
+<<table-dynamic filter:[tag[TiddlyWiki]] fields:"title created tags tbl-expand" caption:"" class:"capitalize" editButton:"no" pagination:"yes" sortOp:'sortan' emptyMessage:"Nothing">>
