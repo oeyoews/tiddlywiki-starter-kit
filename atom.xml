@@ -5029,7 +5029,20 @@ p.<span class="hljs-title function_">log1</span>().<span class="hljs-title funct
 <span class="hljs-comment">// 指定要观察的元素以及要观察的变化类型</span>
 observer.<span class="hljs-title function_">observe</span>(targetElement, { <span class="hljs-attr">childList</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">attributes</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">subtree</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">characterData</span>: <span class="hljs-literal">true</span> });
 </code></pre>
-</div></div></content><author><name>oeyoews</name></author></entry><entry><title>mvc-mvvm</title><link href="https://neotw.netlify.app/#mvc-mvvm"></link><link href="https://neotw.netlify.app/static/mvc-mvvm.html" rel="alternative" type="text/html"></link><id>68259b31-db41-2e2b-13e8-b4530b3c75cb</id><updated>2023-05-03T11:13:38</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>MVC（Model-View-Controller）和MVVM（Model-View-ViewModel）是两种常见的前端应用程序架构模式，它们的主要区别如下：</p><p>1. 模型与视图的关系不同：在MVC中，视图和模型是分离的。控制器作为桥梁，将模型和视图链接在一起。而在MVVM中，视图通过数据绑定直接绑定到<a class="tc-tiddlylink tc-tiddlylink-missing" href="#ViewModel">ViewModel</a>上，<a class="tc-tiddlylink tc-tiddlylink-missing" href="#ViewModel">ViewModel</a>与模型交互并提供必要的方法。</p><p>2. 数据双向绑定：MVVM引入了数据双向绑定的概念，使得视图和<a class="tc-tiddlylink tc-tiddlylink-missing" href="#ViewModel">ViewModel</a>之间的交互更加便捷。当<a class="tc-tiddlylink tc-tiddlylink-missing" href="#ViewModel">ViewModel</a>中的数据发生变化时，视图会自动更新；当用户在视图中输入数据时，<a class="tc-tiddlylink tc-tiddlylink-missing" href="#ViewModel">ViewModel</a>会自动更新数据模型。</p><p>3. 控制器与<a class="tc-tiddlylink tc-tiddlylink-missing" href="#ViewModel">ViewModel</a>的区别：MVVM中没有控制器的概念，而是引入了<a class="tc-tiddlylink tc-tiddlylink-missing" href="#ViewModel">ViewModel</a>。<a class="tc-tiddlylink tc-tiddlylink-missing" href="#ViewModel">ViewModel</a>既可以处理视图的显示逻辑，也可以与模型进行交互。而控制器则只负责处理视图和模型之间的通信。</p><p>4. 独立性不同：在MVC中，视图、模型和控制器都是独立的组件，彼此之间没有强耦合。而在MVVM中，<a class="tc-tiddlylink tc-tiddlylink-missing" href="#ViewModel">ViewModel</a>是视图和模型之间的桥梁，它们之间的联系更加紧密。</p><p>总的来说，MVC和MVVM都是优秀的前端应用程序架构模式，它们各有优缺点，适用于不同的场景和需求。对于需要频繁更新视图的复杂单页应用程序，MVVM更为适合；而对于传统的多页Web应用程序，MVC则更加适用。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>mvvm</title><link href="https://neotw.netlify.app/#mvvm"></link><link href="https://neotw.netlify.app/static/mvvm.html" rel="alternative" type="text/html"></link><id>53c877f0-9f41-36f9-acb4-48480ad5aac4</id><updated>2023-04-26T12:12:53</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>Vue.js和React.js是两个不同的<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#JavaScript">JavaScript</a>框架，都可以用于构建现代Web应用程序。在数据绑定方面，Vue.js使用了MVVM（Model-View-ViewModel）模式，而React.js使用了单向数据流模式。</p><p>MVVM模式将应用程序分为三个部分：模型（Model）、视图（View）和视图模型（<a class="tc-tiddlylink tc-tiddlylink-missing" href="#ViewModel">ViewModel</a>）。视图是用户界面，模型是数据层，而视图模型则是连接两者之间的桥梁。在Vue.js中，Vue实例作为视图模型，处理用户交互和渲染输出。当数据更新时，Vue的响应式系统会自动更新DOM元素。</p><p>React.js没有显式地使用MVVM模式，而是基于单向数据流的思想。React.js中的组件是基于数据的，当数据发生变化时，React.js会重新计算和渲染组件，然后更新DOM元素。React.js还提供了一种称为“hooks”的特性，使开发人员能够更好地管理组件状态和行为。</p><p>因此，尽管Vue.js和React.js都可以用于构建现代Web应用程序，它们在数据绑定方面采用了不同的方法。Vue.js使用了MVVM模式，而React.js使用了单向数据流模式。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>name-your-tid</title><link href="https://neotw.netlify.app/#name-your-tid"></link><link href="https://neotw.netlify.app/static/name-your-tid.html" rel="alternative" type="text/html"></link><id>7e291c3d-54f0-243a-ac41-f342d5f89bb5</id><updated>2023-02-26T16:16:55</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>in tiddlywiki, if you want some better ui for permalink, pelease use tolower case and use one dash to connnect(ps: if use cn, please pass this tid)</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>nav-humber-menu</title><link href="https://neotw.netlify.app/#nav-humber-menu"></link><link href="https://neotw.netlify.app/static/nav-humber-menu.html" rel="alternative" type="text/html"></link><id>6e4649d2-5629-6e7a-dd1d-c475555ffc7b</id><updated>2023-05-24T19:39:16</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre class="hljs"><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">nav</span>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>mvc-mvvm</title><link href="https://neotw.netlify.app/#mvc-mvvm"></link><link href="https://neotw.netlify.app/static/mvc-mvvm.html" rel="alternative" type="text/html"></link><id>68259b31-db41-2e2b-13e8-b4530b3c75cb</id><updated>2023-05-03T11:13:38</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>MVC（Model-View-Controller）和MVVM（Model-View-ViewModel）是两种常见的前端应用程序架构模式，它们的主要区别如下：</p><p>1. 模型与视图的关系不同：在MVC中，视图和模型是分离的。控制器作为桥梁，将模型和视图链接在一起。而在MVVM中，视图通过数据绑定直接绑定到<a class="tc-tiddlylink tc-tiddlylink-missing" href="#ViewModel">ViewModel</a>上，<a class="tc-tiddlylink tc-tiddlylink-missing" href="#ViewModel">ViewModel</a>与模型交互并提供必要的方法。</p><p>2. 数据双向绑定：MVVM引入了数据双向绑定的概念，使得视图和<a class="tc-tiddlylink tc-tiddlylink-missing" href="#ViewModel">ViewModel</a>之间的交互更加便捷。当<a class="tc-tiddlylink tc-tiddlylink-missing" href="#ViewModel">ViewModel</a>中的数据发生变化时，视图会自动更新；当用户在视图中输入数据时，<a class="tc-tiddlylink tc-tiddlylink-missing" href="#ViewModel">ViewModel</a>会自动更新数据模型。</p><p>3. 控制器与<a class="tc-tiddlylink tc-tiddlylink-missing" href="#ViewModel">ViewModel</a>的区别：MVVM中没有控制器的概念，而是引入了<a class="tc-tiddlylink tc-tiddlylink-missing" href="#ViewModel">ViewModel</a>。<a class="tc-tiddlylink tc-tiddlylink-missing" href="#ViewModel">ViewModel</a>既可以处理视图的显示逻辑，也可以与模型进行交互。而控制器则只负责处理视图和模型之间的通信。</p><p>4. 独立性不同：在MVC中，视图、模型和控制器都是独立的组件，彼此之间没有强耦合。而在MVVM中，<a class="tc-tiddlylink tc-tiddlylink-missing" href="#ViewModel">ViewModel</a>是视图和模型之间的桥梁，它们之间的联系更加紧密。</p><p>总的来说，MVC和MVVM都是优秀的前端应用程序架构模式，它们各有优缺点，适用于不同的场景和需求。对于需要频繁更新视图的复杂单页应用程序，MVVM更为适合；而对于传统的多页Web应用程序，MVC则更加适用。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>mvvm</title><link href="https://neotw.netlify.app/#mvvm"></link><link href="https://neotw.netlify.app/static/mvvm.html" rel="alternative" type="text/html"></link><id>53c877f0-9f41-36f9-acb4-48480ad5aac4</id><updated>2023-04-26T12:12:53</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>Vue.js和React.js是两个不同的<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#JavaScript">JavaScript</a>框架，都可以用于构建现代Web应用程序。在数据绑定方面，Vue.js使用了MVVM（Model-View-ViewModel）模式，而React.js使用了单向数据流模式。</p><p>MVVM模式将应用程序分为三个部分：模型（Model）、视图（View）和视图模型（<a class="tc-tiddlylink tc-tiddlylink-missing" href="#ViewModel">ViewModel</a>）。视图是用户界面，模型是数据层，而视图模型则是连接两者之间的桥梁。在Vue.js中，Vue实例作为视图模型，处理用户交互和渲染输出。当数据更新时，Vue的响应式系统会自动更新DOM元素。</p><p>React.js没有显式地使用MVVM模式，而是基于单向数据流的思想。React.js中的组件是基于数据的，当数据发生变化时，React.js会重新计算和渲染组件，然后更新DOM元素。React.js还提供了一种称为“hooks”的特性，使开发人员能够更好地管理组件状态和行为。</p><p>因此，尽管Vue.js和React.js都可以用于构建现代Web应用程序，它们在数据绑定方面采用了不同的方法。Vue.js使用了MVVM模式，而React.js使用了单向数据流模式。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>myst.js</title><link href="https://neotw.netlify.app/#myst.js"></link><link href="https://neotw.netlify.app/static/myst.js.html" rel="alternative" type="text/html"></link><id>1771474f-d653-54b1-7895-fff4a5bf2b0d</id><updated>2023-06-12T23:59:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
+<p><a class="tc-tiddlylink-external _codified_" href="https://github.com/executablebooks/mystjs" rel="noopener noreferrer" target="_blank">https://github.com/executablebooks/mystjs</a>
+</p>
+<p>Myst.js 是一个工具集，用于使用 Markdown 和 Jupyter Notebooks 创建交互式文档。它是由 Executable Books 项目开发的开源项目。
+</p>
+<p>Myst.js 扩展了 Markdown 的功能，允许您通过添加数学方程、代码单元格、交互式小部件等功能来创建丰富的交互式内容。它与 Jupyter Notebooks 集成，使您可以将 Jupyter 的交互式计算环境的强大功能与 Markdown 的简洁灵活性相结合。
+</p>
+<p>使用 myst.js，您可以编写结合了解释性文本、代码片段、可视化和其他媒体元素的文档。这些文档可以转换为不同的格式，如 HTML、PDF 和 <a class="tc-tiddlylink tc-tiddlylink-missing" href="#LaTeX">LaTeX</a>，使您能够以不同的方式共享您的工作成果。
+</p>
+<p>您提供的 <a class="tc-tiddlylink tc-tiddlylink-missing" href="#GitHub">GitHub</a> 存储库为 myst.js 提供了源代码、文档和使用示例。它为希望在项目中利用 myst.js 功能的开发人员和用户提供了资源。
+</p>
+<p>如果您有兴趣使用 myst.js 或了解更多信息，我建议访问该存储库，并探索提供的文档和示例。
+</p>
+</div></div></content><author><name>oeyoews</name></author></entry><entry><title>name-your-tid</title><link href="https://neotw.netlify.app/#name-your-tid"></link><link href="https://neotw.netlify.app/static/name-your-tid.html" rel="alternative" type="text/html"></link><id>7e291c3d-54f0-243a-ac41-f342d5f89bb5</id><updated>2023-02-26T16:16:55</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>in tiddlywiki, if you want some better ui for permalink, pelease use tolower case and use one dash to connnect(ps: if use cn, please pass this tid)</li></ul></div></content><author><name>oeyoews</name></author></entry><entry><title>nav-humber-menu</title><link href="https://neotw.netlify.app/#nav-humber-menu"></link><link href="https://neotw.netlify.app/static/nav-humber-menu.html" rel="alternative" type="text/html"></link><id>6e4649d2-5629-6e7a-dd1d-c475555ffc7b</id><updated>2023-05-24T19:39:16</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><pre class="hljs"><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">nav</span>
       <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;flex items-center justify-between flex-wrap bg-gray-900 py-3 px-4&quot;</span>
     &gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;flex items-center flex-shrink-0 text-white mr-6&quot;</span>&gt;</span>
@@ -5096,8 +5109,8 @@ observer.<span class="hljs-title function_">observe</span>(targetElement, { <spa
 <li>aria2c -d <dirname> <url>&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;</url></dirname></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-badges</title><link href="https://neotw.netlify.app/#neotw-badges"></link><link href="https://neotw.netlify.app/static/neotw-badges.html" rel="alternative" type="text/html"></link><id>f934e3aa-d36d-34bb-609b-922693d9b993</id><updated>2023-06-01T21:41:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-694-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-50-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-75-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-76 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-695-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-50-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-75-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-9 hours ago-green?style=social"></img>  
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-command</title><link href="https://neotw.netlify.app/#neotw-command"></link><link href="https://neotw.netlify.app/static/neotw-command.html" rel="alternative" type="text/html"></link><id>188385e0-6b3a-4916-a54a-061d9d29e18f</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown"><p><h2>
       <a href="##h-0.1" id="#h-0.1">
        ✨ 0.1
@@ -11109,7 +11122,11 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 }</code></pre><p>在这个例子中，我们使用try-catch语句块来处理可能的异常情况。在try块中，我们使用fs.readFileSync()方法同步读取JSON文件，并将文件内容存储在data变量中。如果读取文件时出现错误，catch块将捕获该错误，并输出错误信息。</p><p>以上是使用fs模块读取文件的示例，需要注意的是，在使用fs模块读取文件时，我们需要处理可能的异常情况，并根据实际情况选择异步或同步方法。</p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-count</title><link href="https://neotw.netlify.app/#recent-count"></link><link href="https://neotw.netlify.app/static/recent-count.html" rel="alternative" type="text/html"></link><id>6a131e9a-b046-19c3-08bd-35ef7c9ffbfc</id><updated>2023-02-08T18:16:06</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="tc-timeline">
 
 <div class="tc-menu-list-item">
-12th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#15">15</a></span>)
+12th June 2023 (<span><a class="tc-tiddlylink tc-tiddlylink-missing" href="#16">16</a></span>)
+
+<div class="tc-menu-list-subitem">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#myst.js"></a>
+</div>
 
 <div class="tc-menu-list-subitem">
 <a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E7%81%B5%E6%B4%BB%E6%80%A7VS%E6%88%90%E6%9C%AC"></a>
@@ -11584,6 +11601,12 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>recent-note-record</title><link href="https://neotw.netlify.app/#recent-note-record"></link><link href="https://neotw.netlify.app/static/recent-note-record.html" rel="alternative" type="text/html"></link><id>2619840e-dc84-d69e-3d32-c2258f306a66</id><updated>2023-04-11T09:39:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><ul>
   
     <li>
+		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#myst.js">myst.js</a>
+         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
+    </li>
+  
+    <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E7%81%B5%E6%B4%BB%E6%80%A7VS%E6%88%90%E6%9C%AC">灵活性VS成本</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
         
@@ -11886,114 +11909,114 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E6%B0%B4%E5%90%88%E4%BD%9C%E7%94%A8">水合作用</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E5%A4%9A%E5%8E%BB%E9%94%BB%E7%82%BC">多去锻炼</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E5%A4%9A%E5%8E%BB%E7%9D%A1%E8%A7%89">多去睡觉</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E5%A4%9A%E5%8E%BB%E6%9C%97%E8%AF%BB">多去朗读</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E5%A4%9A%E5%96%9D%E7%83%AD%E6%B0%B4">多喝热水</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#decorator">decorator</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#error-widget">error-widget</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#open-closed-principle">open-closed-principle</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#hooks">hooks</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E5%86%85%E9%83%A8%E5%A4%96%E9%83%A8%E6%96%B9%E6%B3%95">内部外部方法</a>
          <span class="text-rose-500 ml-1"><sup>new</sup></span>
-        
+         <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#2023-06-05">2023-06-05</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#prototype">prototype</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#UX-DX">UX-DX</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#star-principle">star-principle</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#debounce-throttle-code">debounce-throttle-code</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#module-type">module-type</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#event-objectParam">event-objectParam</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#full-type-support-with-plain-javascript">full-type-support-with-plain-javascript</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#Typescript-compare-to-Javascript">Typescript-compare-to-Javascript</a>
-         <span class="text-rose-500 ml-1"><sup>new</sup></span>
+        
          <span style="color:black;"><sup>recent</sup></span>
     </li>
   
@@ -13932,7 +13955,7 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
     <li>
 		<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#office-tool-plus">office-tool-plus</a>
         
-         <span style="color:black;"><sup>recent</sup></span>
+        
     </li>
   
     <li>
