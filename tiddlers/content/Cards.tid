@@ -1,6 +1,6 @@
 created: 20230501062851560
 creator: oeyoews
-modified: 20230613024853821
+modified: 20230614013756646
 modifier: oeyoews
 page-cover: https://source.unsplash.com/random?fm=blurhash&w=50&Cards
 tags: 
@@ -24,15 +24,16 @@ type: text/vnd.tiddlywiki
 
 <h3 class="hidden lg:block text-center dark:text-white"> Personal Notes </h3>
 <div class="grid-cols-5 overflow-auto gap-8 rounded-lg p-4 hidden lg:grid">
-<<img tag:'TiddlyWiki' img:'banner.png'>>
+<<img tag:'TiddlyWiki' img:'plugin.png'>>
 <<img tag:'Article' img:'articles.png'>>
 <<img tag:'React' img:'react.png' >>
 <<img tag:'Vue' img:'vue.png'>>
 <<img tag:'JavaScript' img:'js.png'>>
 <<img tag:'Journal' img:'Journal.png'>>
 <<img tag:'Tailwindcss' img:'Tailwindcss.png'>>
-<<img tag:'Private' img:'private.png'>>
+<<img tag:'books' img:'books.png'>>
 <<img tag:'CSS' img:'CSS.png'>>
+<<img tag:'Private' img:'private.png'>>
 </div>
 
 <small class="text-rose-500 flex justify-center font-bold">

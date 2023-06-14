@@ -1,11 +1,11 @@
 created: 20230611095052116
 creator: oeyoews
-modified: 20230613024807805
+modified: 20230614013721352
 modifier: oeyoews
 title: TiddlyWiki
 type: text/vnd.tiddlywiki
 
-<$image source="banner.png" class="rounded-lg h-12 w-auto block mx-auto animate-pulse" />
+<$image source="plugin.png" class="rounded-lg h-12 w-auto block mx-auto animate-pulse" />
 
 <<.preamble "TiddlyWiki是一款功能强大的个人知识管理和笔记工具，可以帮助用户创建、组织和共享信息。">>
 
