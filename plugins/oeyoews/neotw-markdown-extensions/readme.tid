@@ -11,6 +11,22 @@ type: text/markdown
 
 ## Markdown-it Plugins
 
+### SmartArrows
+
+:::
+--> →
+
+<-- ←
+
+<--> ↔
+
+==> ⇒
+
+<== ⇐
+
+<==> ⇔
+:::
+
 ### Container
 
 :::todo

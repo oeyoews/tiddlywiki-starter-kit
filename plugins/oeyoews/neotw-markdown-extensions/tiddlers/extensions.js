@@ -42,6 +42,8 @@ Extension markdown-it
     const toc = require('./markdown-it-toc');
     const task = require('./markdown-it-task');
     const abbr = require('./markdown-it-abbr');
+    const smartarrows = require('./markdown-it-smartarrows');
+    // https://github.com/silvandiepen/markdown-it-alert
     const containerPlugin = require('./markdown-it-container');
     const containers = [
       { name: 'success', label: '✅', color: 'green' },
@@ -55,7 +57,7 @@ Extension markdown-it
       { name: '', label: '🍉', color: 'purple' },
     ];
 
-    md.use(emoji).use(toc).use(task).use(abbr);
+    md.use(emoji).use(toc).use(task).use(abbr).use(smartarrows);
 
     containers.forEach(container => {
       const { name, label, color } = container;
