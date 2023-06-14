@@ -16,9 +16,9 @@ Extension markdown-it
       render: function (tokens, idx) {
         if (tokens[idx].nesting === 1) {
           return (
-            `<div class="rounded-md border-left border-l-4 px-1 my-2 bg-${color}-100 border-${color}-500 text-${color}-700">\n` +
-            `<div class="font-bold">${type}</div>` +
-            '<div class="content">'
+            `<div class="border border-y-0 border-r-0 border-l-4 border-s-${color}-400 rounded-l-md my-2">\n` +
+            `<div class="font-bold bg-${color}-200 text-${color}-600 px-2 py-1 rounded-t-sm">${type}</div>` +
+            '<div class="content pl-2 shadow-sm rounde-md">'
           );
         } else {
           return '</div>\n</div>\n';
