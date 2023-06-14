@@ -53,14 +53,31 @@ neotw-swal2 widget
       this.domNodes.push(buttonNode);
     }
 
-    handlerClick = () => {
-      Swal.fire({
-        position: 'top-end',
+    // TODO TO Global
+    swalDefaultOption() {
+      return {
         icon: 'success',
-        title: 'Your work has been saved',
+        title: 'swal',
+        titleText: 'text',
+        toast: true,
+        position: 'top', // top center bottom; start end
         showConfirmButton: false,
         timer: 1500,
-      });
+        timerProgressBar: true,
+        didOpen: toast => {
+          toast.addEventListener('mouseenter', Swal.stopTimer);
+          toast.addEventListener('mouseleave', Swal.resumeTimer);
+        },
+        footer: '',
+        backdrop: true,
+        target: '#demo',
+        width: '300px',
+        height: '200px',
+      };
+    }
+
+    handlerClick = () => {
+      Swal.fire(this.swalDefaultOption());
     };
   }
 
