@@ -1,3 +1,10 @@
+## [3.308.2](https://github.com/oeyoews/neotw/compare/v3.308.1...v3.308.2) (2023-06-14)
+
+
+### Performance Improvements
+
+* update container style ([2144d66](https://github.com/oeyoews/neotw/commit/2144d66294c52912c72f32af0fd497020252be1e))
+
 ## [3.308.1](https://github.com/oeyoews/neotw/compare/v3.308.0...v3.308.1) (2023-06-14)
 
 
