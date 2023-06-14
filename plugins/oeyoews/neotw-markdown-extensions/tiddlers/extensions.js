@@ -39,9 +39,10 @@ Extension markdown-it
       { name: 'success', label: '✅ Success', color: 'green' },
       { name: 'todo', label: '✅ TODO', color: 'green' },
       { name: 'warning', label: '⚠️  Warning', color: 'yellow' },
-      { name: 'note', label: '📚 Note', color: 'yellow' },
-      { name: 'error', label: '❌ Error', color: 'red' },
+      { name: 'note', label: '📝 Note', color: 'yellow' },
+      { name: 'error', label: '❌ Error', color: 'red' }, //  ❎
       { name: 'tips', label: '💡 Tips', color: 'blue' },
+      { name: 'info', label: '💡 Info', color: 'blue' },
     ];
 
     md.use(emoji).use(toc).use(task).use(abbr);
