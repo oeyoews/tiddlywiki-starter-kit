@@ -6,17 +6,17 @@ module-type: startup
 swealalert
 
 \*/
-(function() {
+(function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
 
   exports.name = 'swal-startup-hook';
   exports.platforms = ['browser'];
-  exports.after = ['load-modules'];
+  exports.after = ['startup'];
   exports.synchronous = true;
 
-  exports.startup = function() {
+  exports.startup = function () {
     window.swal = require('$:/plugins/oeyoews/sweetalert/sweetalert.min.js');
     if (window.location.protocol === 'https:') {
       require('$:/plugins/oeyoews/tiddlywiki-sweetalert/startup-message.js');

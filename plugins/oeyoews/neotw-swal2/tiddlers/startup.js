@@ -1,9 +1,9 @@
 /*\
-title: type/startup.js
 type: application/javascript
-// module-type: startup
+title: $:/plugins/oeyoews/neotw-swal2/startup.js
+module-type: startup
 
-type module
+swal2 module
 
 \*/
 (function () {
@@ -11,11 +11,11 @@ type module
   /*global $tw: false */
   'use strict';
 
-  exports.name = 'type-startup-hook';
+  exports.name = 'swal2-startup-hook';
   exports.platforms = ['browser'];
   exports.after = ['startup'];
   exports.synchronous = true;
   exports.startup = () => {
-    window.Typed = require('typed.min.js');
+    window.Swal = require('$:/plugins/oeyoews/neotw-swal2/swal2.min.js');
   };
 })();

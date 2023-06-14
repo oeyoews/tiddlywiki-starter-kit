@@ -1,4 +1,0 @@
-title: $:/plugins/${username}/${pluginname}/snippets/${pluginname}
-caption: ${pluginname} Widget
-description: ${description} Widget
-tags: $:/tags/TextEditor/Snippet

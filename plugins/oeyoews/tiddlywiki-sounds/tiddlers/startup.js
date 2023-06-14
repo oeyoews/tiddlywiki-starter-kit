@@ -5,19 +5,19 @@ module-type: startup
 
 \*/
 
-(function() {
+(function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
 
   exports.name = 'howl-startup-hook';
   exports.platforms = ['browser'];
-  exports.after = ['load-modules'];
+  exports.after = ['startup'];
   exports.synchronous = true;
 
-  exports.startup = function() {
+  exports.startup = function () {
     const Howl = require('howler.min.js').Howl;
-    window.howler = function(param = 'menu-open.mp3') {
+    window.howler = function (param = 'menu-open.mp3') {
       // TODO add pagecontrol button to toggle sound, and support dynamic buttons
       // if () return
       new Howl({

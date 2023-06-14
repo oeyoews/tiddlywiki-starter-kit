@@ -14,7 +14,7 @@ tid2pdf module
 
   exports.name = 'tid2pdf-startup-hook';
   exports.platforms = ['browser'];
-  exports.after = ['load-modules'];
+  exports.after = ['startup'];
   exports.synchronous = true;
   exports.startup = () => {
     window.html2canvas = require('html2canvas.min.js');

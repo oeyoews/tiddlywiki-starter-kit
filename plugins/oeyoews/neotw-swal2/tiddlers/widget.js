@@ -1,9 +1,9 @@
 /*\
-title: $:/plugins/${username}/${pluginname}/widget.js
+title: $:/plugins/oeyoews/neotw-swal2/widget.js
 type: application/javascript
 module-type: widget
 
-${pluginname} widget
+neotw-swal2 widget
 
 \*/
 (function () {
@@ -13,7 +13,10 @@ ${pluginname} widget
 
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
 
-  class DivWidget extends Widget {
+  /**
+   * support sweetalert2
+   */
+  class SwalWidget extends Widget {
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
     }
@@ -51,9 +54,32 @@ ${pluginname} widget
     }
 
     handlerClick = () => {
-      console.log('This require just load once');
+      Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Your work has been saved',
+        showConfirmButton: false,
+        timer: 1500,
+      });
     };
   }
 
-  exports[''] = DivWidget;
+  exports['swal2'] = SwalWidget;
 })();
+
+/* const Toast = Swal.mixin({
+  toast: true,
+  position: 'top-end',
+  showConfirmButton: false,
+  timer: 3000,
+  timerProgressBar: true,
+  didOpen: (toast) => {
+    toast.addEventListener('mouseenter', Swal.stopTimer)
+    toast.addEventListener('mouseleave', Swal.resumeTimer)
+  }
+})
+
+Toast.fire({
+  icon: 'success',
+  title: 'Signed in successfully'
+}) */

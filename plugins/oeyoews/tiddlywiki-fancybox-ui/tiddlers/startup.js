@@ -13,7 +13,7 @@ fancybox
 
   exports.name = 'fancybox-startup-hook';
   exports.platforms = ['browser'];
-  exports.after = ['load-modules'];
+  exports.after = ['startup'];
   exports.synchronous = true;
   exports.startup = () => {
     require('$:/plugins/oeyoews/tiddlywiki-fancybox-ui/init.js');
