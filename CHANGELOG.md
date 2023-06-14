@@ -1,3 +1,10 @@
+# [3.308.0](https://github.com/oeyoews/neotw/compare/v3.307.0...v3.308.0) (2023-06-14)
+
+
+### Features
+
+* add swal2 library plugin ([72f5a5f](https://github.com/oeyoews/neotw/commit/72f5a5f3addd7dea02805a74efe6d3426ff5413f))
+
 # [3.307.0](https://github.com/oeyoews/neotw/compare/v3.306.0...v3.307.0) (2023-06-14)
 
 
