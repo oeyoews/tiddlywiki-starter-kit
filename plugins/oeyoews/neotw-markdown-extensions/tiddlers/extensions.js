@@ -11,13 +11,13 @@ Extension markdown-it
   /*global $tw: false */
   'use strict';
 
-  function createContainerConfig(type, color) {
+  function createContainerConfig(name, type, color) {
     return {
       render: function (tokens, idx) {
         if (tokens[idx].nesting === 1) {
           return (
             `<div class="border border-y-0 border-r-0 border-l-4 border-s-${color}-400 rounded-l-md my-2">\n` +
-            `<div class="font-bold bg-${color}-200 text-${color}-600 px-2 py-1 rounded-t-sm">${type}</div>` +
+            `<div class="font-bold bg-${color}-200 text-${color}-600 px-2 py-1 rounded-t-sm">${type} ${name}</div>` +
             '<div class="content pl-2 shadow-sm rounde-md">'
           );
         } else {
@@ -36,21 +36,22 @@ Extension markdown-it
     const abbr = require('./markdown-it-abbr');
     const containerPlugin = require('./markdown-it-container');
     const containers = [
-      { name: 'success', label: '✅ Success', color: 'green' },
-      { name: 'todo', label: '✅ TODO', color: 'green' },
-      { name: 'warning', label: '⚠️  Warning', color: 'yellow' },
-      { name: 'note', label: '📝 Note', color: 'yellow' },
-      { name: 'error', label: '❌ Error', color: 'red' }, //  ❎
-      { name: 'tips', label: '💡 Tips', color: 'blue' },
-      { name: 'info', label: '💡 Info', color: 'blue' },
+      { name: 'success', label: '✅', color: 'green' },
+      { name: 'todo', label: '✅', color: 'green' },
+      { name: 'warning', label: '⚠️', color: 'yellow' },
+      { name: 'note', label: '📝', color: 'yellow' },
+      { name: 'error', label: '❌', color: 'red' }, //  ❎
+      { name: 'tips', label: '💡', color: 'blue' },
+      { name: 'info', label: '💡', color: 'blue' },
     ];
 
     md.use(emoji).use(toc).use(task).use(abbr);
 
     containers.forEach(container => {
       const { name, label, color } = container;
-      const config = createContainerConfig(label, color);
-      md.use(containerPlugin, name, config);
+      const config = createContainerConfig(name.toUpperCase(), label, color);
+      md.use(containerPlugin, name.toLowerCase(), config);
+      md.use(containerPlugin, name.toUpperCase(), config);
     });
     // console.log('🎉 LoadExtensions');
   }
