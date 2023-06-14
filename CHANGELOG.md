@@ -1,3 +1,10 @@
+# [3.307.0](https://github.com/oeyoews/neotw/compare/v3.306.0...v3.307.0) (2023-06-14)
+
+
+### Features
+
+* update tiddlywiki to support destory ([02864d4](https://github.com/oeyoews/neotw/commit/02864d4ebda9d51e6f316bbb15e25382fc45d5b0))
+
 # [3.306.0](https://github.com/oeyoews/neotw/compare/v3.305.1...v3.306.0) (2023-06-13)
 
 
