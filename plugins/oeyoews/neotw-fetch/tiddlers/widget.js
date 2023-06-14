@@ -43,10 +43,12 @@ fetch-mdfile widget
       parent.insertBefore(buttonNode, nextSibling);
       this.domNodes.push(buttonNode);
       buttonNode.onclick = async () => {
+        console.log('fetching ...');
         const response = await fetch(url);
         const text = await response.text();
         $tw.wiki.setText(fileName, 'text', null, text);
         $tw.wiki.setText(fileName, 'type', null, 'text/markdown');
+        console.log('fetch mdfile end ');
         // buttonNode.textContent = `${fileName} updated ${modified}`;
       };
     }

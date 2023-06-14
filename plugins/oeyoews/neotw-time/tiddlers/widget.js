@@ -65,13 +65,8 @@ neotw-time widget
         const timeString = now.toLocaleTimeString();
         // this.dom节点的内容更新为当前时间字符串;
         this.domNodes[0].textContent = timeString;
-        console.log('updated widget');
+        // console.log('updated widget');
       }
-    }
-
-    destructor() {
-      // 清除定时器，避免内存泄漏
-      clearInterval(this.timer);
     }
   }
 
