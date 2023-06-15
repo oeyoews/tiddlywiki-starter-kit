@@ -1,3 +1,10 @@
+## [3.309.1](https://github.com/oeyoews/neotw/compare/v3.309.0...v3.309.1) (2023-06-15)
+
+
+### Bug Fixes
+
+* remove markdown from library ([d2f5022](https://github.com/oeyoews/neotw/commit/d2f5022cd9d771c8f3357a31cd8ba59840adb200))
+
 # [3.309.0](https://github.com/oeyoews/neotw/compare/v3.308.2...v3.309.0) (2023-06-15)
 
 
