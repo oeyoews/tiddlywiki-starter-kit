@@ -20,15 +20,16 @@ function emojiComponent() {
     debouncedSearchEmoji(event);
   };
   input.className =
-    'border border-gray-300 px-2 py-2 rounded-r-none rounded-l-md focus:outline-none flex-1';
+    'px-2 py-2 rounded-r-none rounded-l-md border border-y-2 border-l-2 border-rose-500 border-r-0';
+  input.placeholder = '🍉 Search emoji ...';
 
   // Create button element
   var button = document.createElement('button');
   button.type = 'button';
   button.onclick = clearSearch;
   button.className =
-    'bg-red-500 text-white px-4 py-2 rounded-l-none rounded-r-md ml-0 hover:bg-red-600 duration-200 transition';
-  button.textContent = 'Clear';
+    'bg-red-500 text-white px-4 py-2 rounded-l-none rounded-r-md ml-0 hover:bg-red-600 duration-200 transition hidden lg:inline border border-y-2 border-r-2 border-y-red-500 border-r-red-500 border-l-0';
+  button.textContent = '🍃 Clear';
 
   // Append label, input, and button to form
   form.appendChild(label);
@@ -67,7 +68,7 @@ function emojiComponent() {
     var gridContainer = document.createElement('div');
     gridContainer.classList.add(
       'grid',
-      'grid-cols-4',
+      'grid-cols-5',
       'gap-4',
       'overflow-y-scroll',
       // 'h-screen',
@@ -87,6 +88,9 @@ function emojiComponent() {
           'flex',
           'justify-center',
           'items-center',
+          'h-16',
+          'w-16',
+          'text-4xl',
         );
         emoji.textContent = emojis[key];
         emoji.title = key;
@@ -107,9 +111,10 @@ function emojiComponent() {
       await navigator.clipboard.writeText(emoji);
       Swal.fire({
         icon: 'success',
-        title: 'Emoji Picker',
-        titleText: `${emoji} Copied`,
+        // title: 'Emoji Picker',
+        titleText: `${emoji} Copied To Clipboard`,
         toast: true,
+        footer: 'Emoji Picker @by oeyoews',
         position: 'top-end', // top center bottom; start end
         showConfirmButton: false,
         timer: 1500,
@@ -128,7 +133,18 @@ function emojiComponent() {
 
   function clearSearch() {
     document.getElementById('emoji-input').value = '';
-    document.getElementById('emoji-container').innerHTML = '';
+    document.getElementById('emoji-container').textContent = '';
+    Swal.fire({
+      icon: 'info',
+      // title: 'Emoji Picker',
+      titleText: 'Emoji Picker Cleared',
+      footer: 'Emoji Picker @by oeyoews',
+      toast: true,
+      position: 'top-end', // top center bottom; start end
+      showConfirmButton: false,
+      timer: 1500,
+      timerProgressBar: false,
+    });
   }
 
   return virtualRoot;
