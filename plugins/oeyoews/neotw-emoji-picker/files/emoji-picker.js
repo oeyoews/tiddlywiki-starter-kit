@@ -115,7 +115,7 @@ function emojiComponent() {
         // title: 'Emoji Picker',
         titleText: `${emoji} Copied Clipboard`,
         toast: true,
-        footer: 'Emoji Picker @by oeyoews',
+        footer: 'Emoji Picker by @oeyoews',
         position: 'top-end', // top center bottom; start end
         showConfirmButton: false,
         timer: 1500,
@@ -139,7 +139,7 @@ function emojiComponent() {
       icon: 'info',
       // title: 'Emoji Picker',
       titleText: 'Emoji Picker Cleared',
-      footer: 'Emoji Picker @by oeyoews',
+      footer: 'Emoji Picker by @oeyoews',
       toast: true,
       position: 'top-end', // top center bottom; start end
       showConfirmButton: false,
