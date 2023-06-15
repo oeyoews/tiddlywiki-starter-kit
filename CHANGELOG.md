@@ -1,3 +1,10 @@
+# [3.309.0](https://github.com/oeyoews/neotw/compare/v3.308.2...v3.309.0) (2023-06-15)
+
+
+### Features
+
+* add neotw-emoji-picker ([85f59fe](https://github.com/oeyoews/neotw/commit/85f59febbdc1f8fb1e901b80d1cece3572e2f65f))
+
 ## [3.308.2](https://github.com/oeyoews/neotw/compare/v3.308.1...v3.308.2) (2023-06-14)
 
 
