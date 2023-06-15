@@ -30,10 +30,6 @@ neotw-emoji-picker widget
       parent.insertBefore(root, nextSibling);
       this.domNodes.push(root);
     }
-
-    handlerClick = () => {
-      console.log('This require just load once');
-    };
   }
 
   exports['emoji-picker'] = EmojiPickerWidget;
