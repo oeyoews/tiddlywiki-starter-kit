@@ -2,10 +2,7 @@ title: $:/plugins/oeyoews/neotw-emoji-picker/readme
 
 <div class="prose max-w-none">
 
-!! Neotw Emoji Picker
-
-* [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/neotw-emoji-picker]]
-* [[Demo|https://oeyoews.github.io/neotw]]
+<h2 class="text-center"> Neotw Emoji Picker </h2>
 
 <$emoji-picker />
 

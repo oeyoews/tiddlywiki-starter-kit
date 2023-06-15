@@ -65,6 +65,7 @@ function emojiComponent() {
     var emojiContainer = document.getElementById('emoji-container');
     emojiContainer.textContent = ''; // Clear previous results
 
+    // add tips node
     var gridContainer = document.createElement('div');
     gridContainer.classList.add(
       'grid',
