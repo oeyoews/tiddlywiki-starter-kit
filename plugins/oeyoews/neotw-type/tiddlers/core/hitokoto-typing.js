@@ -55,7 +55,7 @@ neotw-type widget with hitokoto
 
       new Typed(this.domNodes[0], {
         strings: [text],
-        cursorChar: ' 🐬',
+        cursorChar: ' 🐳',
         typeSpeed: 100,
         loop: loop,
         fadeOut: true,

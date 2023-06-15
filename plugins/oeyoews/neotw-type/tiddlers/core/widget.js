@@ -6,7 +6,7 @@ module-type: widget
 neotw-type widget
 
 \*/
-(function () {
+(function() {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -47,7 +47,7 @@ neotw-type widget
 
       new Typed(this.domNodes[0], {
         strings: [text],
-        cursorChar: ' 🐬',
+        cursorChar: ' 🐳',
         typeSpeed: 150,
         loop: loop,
         fadeOut: true,
