@@ -112,7 +112,7 @@ function emojiComponent() {
       Swal.fire({
         icon: 'success',
         // title: 'Emoji Picker',
-        titleText: `${emoji} Copied To Clipboard`,
+        titleText: `${emoji} Copied Clipboard`,
         toast: true,
         footer: 'Emoji Picker @by oeyoews',
         position: 'top-end', // top center bottom; start end
