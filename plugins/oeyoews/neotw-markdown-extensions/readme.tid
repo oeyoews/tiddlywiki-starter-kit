@@ -30,8 +30,7 @@ type: text/markdown
 ### Container
 
 :::todo
-- [ ] demo
-...
+- [ ] support markdown mermaid https://mermaid.js.org/ecosystem/integrations.html
 :::
 
 :::warning
