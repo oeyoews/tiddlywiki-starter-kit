@@ -63,7 +63,7 @@ function emojiComponent() {
   function searchEmoji(event) {
     var input = event.target.value.trim().toLowerCase();
     var emojiContainer = document.getElementById('emoji-container');
-    emojiContainer.textContent = ''; // Clear previous results
+    emojiContainer.innerHTML = ''; // Clear previous results
 
     // add tips node
     var gridContainer = document.createElement('div');
@@ -72,7 +72,6 @@ function emojiComponent() {
       'grid-cols-5',
       'gap-4',
       'overflow-y-scroll',
-      // 'h-screen',
     );
 
     for (var key in emojis) {
@@ -93,7 +92,7 @@ function emojiComponent() {
           'w-16',
           'text-4xl',
         );
-        emoji.textContent = emojis[key];
+        emoji.innerHTML = emojis[key];
         emoji.title = key;
         gridContainer.appendChild(emoji);
 
