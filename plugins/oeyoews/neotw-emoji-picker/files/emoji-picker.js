@@ -1,3 +1,4 @@
+// TODO: fix mobile style
 function emojiComponent() {
   var form = document.createElement('form');
   form.className = 'mb-4';
@@ -9,7 +10,7 @@ function emojiComponent() {
   var label = document.createElement('label');
   label.htmlFor = 'emoji-input';
   label.className = 'text-lg mb-2 block';
-  label.innerText = 'Enter an emoji:';
+  label.innerText = '';
 
   // Create input element
   var input = document.createElement('input');
@@ -26,8 +27,8 @@ function emojiComponent() {
   button.type = 'button';
   button.onclick = clearSearch;
   button.className =
-    'bg-blue-500 text-white px-4 py-2 rounded-l-none rounded-r-md ml-0';
-  button.textContent = 'Search';
+    'bg-red-500 text-white px-4 py-2 rounded-l-none rounded-r-md ml-0 hover:bg-red-600 duration-200 transition';
+  button.textContent = 'Clear';
 
   // Append label, input, and button to form
   form.appendChild(label);
@@ -37,11 +38,10 @@ function emojiComponent() {
   // Create emoji container
   var emojiContainer = document.createElement('div');
   emojiContainer.id = 'emoji-container';
-  emojiContainer.className = '';
 
   // Create main container
   var container = document.createElement('div');
-  container.className = 'max-w-md w-full bg-white p-6 rounded-lg';
+  container.className = 'max-w-md w-full bg-white p-4 rounded-lg';
   container.appendChild(form);
   container.appendChild(emojiContainer);
   const virtualRoot = document.createElement('div');
@@ -65,7 +65,12 @@ function emojiComponent() {
     emojiContainer.innerHTML = ''; // Clear previous results
 
     var gridContainer = document.createElement('div');
-    gridContainer.classList.add('grid', 'grid-cols-4', 'gap-4');
+    gridContainer.classList.add(
+      'grid',
+      'grid-cols-4',
+      'gap-4',
+      // 'overflow-x-auto',
+    );
 
     for (var key in emojis) {
       if (emojis.hasOwnProperty(key) && key.indexOf(input) !== -1) {
@@ -82,7 +87,8 @@ function emojiComponent() {
           'justify-center',
           'items-center',
         );
-        emoji.innerHTML = emojis[key];
+        emoji.textContent = emojis[key];
+        emoji.title = key;
         gridContainer.appendChild(emoji);
 
         // 添加点击事件处理程序
@@ -101,7 +107,7 @@ function emojiComponent() {
       Swal.fire({
         icon: 'success',
         title: 'Emoji Picker',
-        titleText: 'Copied',
+        titleText: `${emoji} Copied`,
         toast: true,
         position: 'top-end', // top center bottom; start end
         showConfirmButton: false,
