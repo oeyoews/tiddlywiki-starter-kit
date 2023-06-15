@@ -62,14 +62,15 @@ function emojiComponent() {
   function searchEmoji(event) {
     var input = event.target.value.trim().toLowerCase();
     var emojiContainer = document.getElementById('emoji-container');
-    emojiContainer.innerHTML = ''; // Clear previous results
+    emojiContainer.textContent = ''; // Clear previous results
 
     var gridContainer = document.createElement('div');
     gridContainer.classList.add(
       'grid',
       'grid-cols-4',
       'gap-4',
-      // 'overflow-x-auto',
+      'overflow-y-scroll',
+      // 'h-screen',
     );
 
     for (var key in emojis) {
