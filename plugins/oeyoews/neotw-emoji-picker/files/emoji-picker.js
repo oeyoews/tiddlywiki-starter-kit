@@ -62,24 +62,28 @@ function emojiComponent() {
   function searchEmoji(event) {
     var input = event.target.value.trim().toLowerCase();
     var emojiContainer = document.getElementById('emoji-container');
-    emojiContainer.textContent = '';
+    emojiContainer.innerHTML = ''; // Clear previous results
+
+    var gridContainer = document.createElement('div');
+    gridContainer.classList.add('grid', 'grid-cols-4', 'gap-4');
 
     for (var key in emojis) {
       if (emojis.hasOwnProperty(key) && key.indexOf(input) !== -1) {
         var emoji = document.createElement('span');
         emoji.classList.add(
           'cursor-pointer',
-          'm-2',
-          'bg-slate-100',
+          'py-4',
+          'bg-gray-100',
           'rounded',
-          'p-4',
-          'hover:bg-slate-200',
+          'hover:bg-gray-200',
           'transition',
           'duration-200',
+          'flex',
+          'justify-center',
+          'items-center',
         );
         emoji.innerHTML = emojis[key];
-        emojiContainer.appendChild(emoji);
-        // document.getElementById('copy-button').classList.remove('hidden');
+        gridContainer.appendChild(emoji);
 
         // 添加点击事件处理程序
         emoji.addEventListener('click', function () {
@@ -87,6 +91,8 @@ function emojiComponent() {
         });
       }
     }
+
+    emojiContainer.appendChild(gridContainer);
   }
 
   async function copyEmojiToClipboard(emoji) {

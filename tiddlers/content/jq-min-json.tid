@@ -1,0 +1,11 @@
+created: 20230615054226071
+creator: oeyoews
+modified: 20230615054241664
+modifier: oeyoews
+tags: 
+title: jq-min-json
+type: text/markdown
+
+```bash
+jq -c . input.json > output.json
+```
