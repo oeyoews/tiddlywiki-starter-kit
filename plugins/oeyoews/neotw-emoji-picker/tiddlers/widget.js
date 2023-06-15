@@ -13,7 +13,7 @@ neotw-emoji-picker widget
 
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
 
-  class DivWidget extends Widget {
+  class EmojiPickerWidget extends Widget {
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
     }
@@ -25,29 +25,10 @@ neotw-emoji-picker widget
       this.computeAttributes();
       this.execute();
 
-      const param = this.getAttribute('param', 'Test Param');
-      const classNames = this.getAttribute('class', '').split('');
-
-      const buttonNode = $tw.utils.domMaker('button', {
-        text: param,
-        class: '',
-        attributes: {},
-        children: [],
-        eventListeners: [
-          {
-            name: 'click',
-            handlerObject: this,
-            handlerMethod: 'handlerClick',
-          },
-        ],
-      });
-      classNames.forEach(className => {
-        if (className) {
-          buttonNode.classList.add(className);
-        }
-      });
-      parent.insertBefore(buttonNode, nextSibling);
-      this.domNodes.push(buttonNode);
+      const { emojiComponent } = require('./emoji-picker');
+      const root = emojiComponent();
+      parent.insertBefore(root, nextSibling);
+      this.domNodes.push(root);
     }
 
     handlerClick = () => {
@@ -55,5 +36,5 @@ neotw-emoji-picker widget
     };
   }
 
-  exports[''] = DivWidget;
+  exports['emoji-picker'] = EmojiPickerWidget;
 })();

@@ -19,15 +19,15 @@ function emojiComponent() {
     debouncedSearchEmoji(event);
   };
   input.className =
-    'border border-gray-300 px-3 py-2 rounded-l-md focus:outline-none focus:ring focus:border-blue-500 flex-1';
+    'border border-gray-300 px-2 py-2 rounded-r-none rounded-l-md focus:outline-none flex-1';
 
   // Create button element
   var button = document.createElement('button');
   button.type = 'button';
   button.onclick = clearSearch;
   button.className =
-    'bg-red-500 text-white px-4 py-2 rounded-r-md focus:outline-none focus:ring focus:border-red-500';
-  button.innerText = 'Clear';
+    'bg-blue-500 text-white px-4 py-2 rounded-l-none rounded-r-md ml-0';
+  button.textContent = 'Search';
 
   // Append label, input, and button to form
   form.appendChild(label);
@@ -49,22 +49,22 @@ function emojiComponent() {
 
   // Create main container
   var container = document.createElement('div');
-  container.className = 'max-w-md w-full bg-white p-6 rounded-lg shadow-md';
+  container.className = 'max-w-md w-full bg-white p-6 rounded-lg';
   container.appendChild(form);
   container.appendChild(emojiContainer);
   container.appendChild(copyButton);
   const virtualRoot = document.createElement('div');
-  virtualRoot.className =
-    'min-h-screen flex items-center justify-center bg-gray-100';
+  virtualRoot.className = 'flex items-center justify-center m-2 rounded p-2';
   virtualRoot.appendChild(container);
 
   // Append main container to root element
-  var root = document.getElementById('root');
-  root.appendChild(virtualRoot);
+  /* var root = document.getElementById('root');
+  root.appendChild(virtualRoot); */
 
   var emojis = {
     tada: '🎉',
     smile: '😊',
+    smiles: '😼',
     heart: '❤️',
     // Add more emojis here
   };
@@ -118,12 +118,14 @@ function emojiComponent() {
       var emoji = emojiContainer.innerText;
       try {
         await navigator.clipboard.writeText(emoji);
-        alert('Copied!');
+        // alert('Copied!');
       } catch (error) {
         console.error('Failed to copy:', error);
       }
     }
   }
+
+  return virtualRoot;
 }
 
 module.exports = {
