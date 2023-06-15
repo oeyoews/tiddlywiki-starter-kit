@@ -1,6 +1,6 @@
 created: 20230615124517285
 creator: oeyoews
-modified: 20230615124925623
+modified: 20230615133432616
 modifier: oeyoews
 tags: 
 title: Emoji Picker Demo
@@ -9,3 +9,5 @@ type: text/markdown
 ## Emoji Picker Demo
 
 ✋
+
+<$emoji-picker />
