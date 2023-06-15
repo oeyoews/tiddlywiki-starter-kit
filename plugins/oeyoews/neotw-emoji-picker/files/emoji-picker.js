@@ -37,37 +37,20 @@ function emojiComponent() {
   // Create emoji container
   var emojiContainer = document.createElement('div');
   emojiContainer.id = 'emoji-container';
-  emojiContainer.className = 'mt-4 text-5xl flex items-center';
-
-  // Create copy button
-  var copyButton = document.createElement('button');
-  copyButton.id = 'copy-button';
-  copyButton.onclick = copyEmoji;
-  copyButton.className =
-    'ml-4 bg-blue-500 text-white px-4 py-2 rounded focus:outline-none focus:ring focus:border-blue-500 hidden';
-  copyButton.innerText = 'Copy';
+  emojiContainer.className = '';
 
   // Create main container
   var container = document.createElement('div');
   container.className = 'max-w-md w-full bg-white p-6 rounded-lg';
   container.appendChild(form);
   container.appendChild(emojiContainer);
-  container.appendChild(copyButton);
   const virtualRoot = document.createElement('div');
   virtualRoot.className = 'flex items-center justify-center m-2 rounded p-2';
   virtualRoot.appendChild(container);
 
-  // Append main container to root element
-  /* var root = document.getElementById('root');
-  root.appendChild(virtualRoot); */
-
-  var emojis = {
-    tada: '🎉',
-    smile: '😊',
-    smiles: '😼',
-    heart: '❤️',
-    // Add more emojis here
-  };
+  const emojis = $tw.wiki.getTiddlerData(
+    '$:/plugins/oeyoews/neotw-emoji-picker/emojis.json',
+  );
 
   var debounceTimeout;
 
@@ -79,24 +62,48 @@ function emojiComponent() {
   function searchEmoji(event) {
     var input = event.target.value.trim().toLowerCase();
     var emojiContainer = document.getElementById('emoji-container');
-    emojiContainer.innerHTML = '';
-
-    if (input === '') {
-      document.getElementById('copy-button').classList.add('hidden');
-      return;
-    }
+    emojiContainer.textContent = '';
 
     for (var key in emojis) {
       if (emojis.hasOwnProperty(key) && key.indexOf(input) !== -1) {
         var emoji = document.createElement('span');
+        emoji.classList.add(
+          'cursor-pointer',
+          'm-2',
+          'bg-slate-100',
+          'rounded',
+          'p-4',
+          'hover:bg-slate-200',
+          'transition',
+          'duration-200',
+        );
         emoji.innerHTML = emojis[key];
         emojiContainer.appendChild(emoji);
-        document.getElementById('copy-button').classList.remove('hidden');
+        // document.getElementById('copy-button').classList.remove('hidden');
+
+        // 添加点击事件处理程序
+        emoji.addEventListener('click', function () {
+          copyEmojiToClipboard(this.innerHTML);
+        });
       }
     }
+  }
 
-    if (emojiContainer.innerHTML === '') {
-      document.getElementById('copy-button').classList.add('hidden');
+  async function copyEmojiToClipboard(emoji) {
+    try {
+      await navigator.clipboard.writeText(emoji);
+      Swal.fire({
+        icon: 'success',
+        title: 'Emoji Picker',
+        titleText: 'Copied',
+        toast: true,
+        position: 'top-end', // top center bottom; start end
+        showConfirmButton: false,
+        timer: 1500,
+        timerProgressBar: false,
+      });
+    } catch (error) {
+      console.error('Failed to copy:', error);
     }
   }
 
@@ -109,20 +116,6 @@ function emojiComponent() {
   function clearSearch() {
     document.getElementById('emoji-input').value = '';
     document.getElementById('emoji-container').innerHTML = '';
-    document.getElementById('copy-button').classList.add('hidden');
-  }
-
-  async function copyEmoji() {
-    var emojiContainer = document.getElementById('emoji-container');
-    if (emojiContainer.innerText !== '') {
-      var emoji = emojiContainer.innerText;
-      try {
-        await navigator.clipboard.writeText(emoji);
-        // alert('Copied!');
-      } catch (error) {
-        console.error('Failed to copy:', error);
-      }
-    }
   }
 
   return virtualRoot;
