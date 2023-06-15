@@ -1,7 +1,7 @@
 // href: https://github.com/peoplefund-tech/markdown-it-wiki-toc/blob/master/index.js
 
 // TODO: 各级标题折叠, 目录折叠, 样式控制, 一级标题序号zero
-(function() {
+(function () {
   'use strict';
 
   var defaultOptions = {
@@ -14,14 +14,14 @@
     reverseLink: false,
   };
 
-  module.exports = function(md, options) {
+  module.exports = function (md, options) {
     // Set default options
     var options = Object.assign({}, defaultOptions, options);
 
     // Global variables
     var headingInfos = [];
 
-    md.inline.ruler.after('emphasis', 'toc', function(state, silent) {
+    md.inline.ruler.after('emphasis', 'toc', function (state, silent) {
       if (silent) {
         return false;
       }
@@ -29,9 +29,9 @@
       var match = options.tocRegexp.exec(state.src);
       match = !match
         ? []
-        : match.filter(function(m) {
-          return m;
-        });
+        : match.filter(function (m) {
+            return m;
+          });
       if (match.length < 1) {
         return false;
       }
@@ -51,7 +51,7 @@
     // TODO: NAN
     // 折叠
     // 悬浮显示标题
-    md.core.ruler.push('init_toc', function(state) {
+    md.core.ruler.push('init_toc', function (state) {
       // For each rendering, initialize heading count
       var headingCounts = [0, 0, 0, 0, 0, 0, 0];
       var tokens = state.tokens;
@@ -82,18 +82,18 @@
       }
     });
 
-    md.renderer.rules.toc_open = function(tokens, index) {
+    md.renderer.rules.toc_open = function (tokens, index) {
       return `
       <div id="${options.tocId}" class="${options.tocWrapperClass}">
         <h3>${options.tocTitle}</h3>
     `;
     };
 
-    md.renderer.rules.toc_close = function(token, index) {
+    md.renderer.rules.toc_close = function (token, index) {
       return '</div>';
     };
 
-    md.renderer.rules.toc_body = function(tokens, index) {
+    md.renderer.rules.toc_body = function (tokens, index) {
       var results = [];
       var previousLevel = 0;
 
@@ -123,7 +123,7 @@
         results.push(`
           <li class="capitalize">
             <a href="#${anchor}">
-              ⭐️ ${numberingStr} ${hInfo.content}
+              📝 ${numberingStr} ${hInfo.content}
             </a>
           </li>
         `);
@@ -139,7 +139,7 @@
       return results.join('');
     };
 
-    md.renderer.rules.heading_open = function(tokens, index) {
+    md.renderer.rules.heading_open = function (tokens, index) {
       // 添加 h1 信息,如果文档没有 h1
       /* if (tokens[index].tag === 'h2' && headingInfos.length === 0) {
         headingInfos.unshift({
@@ -155,7 +155,7 @@
       return `
     <${tokens[index].tag}>
       <a href="#${options.reverseLink ? options.tocId : anchor}" id="${anchor}">
-       ✨ ${numberingStr}
+       ✏️  ${numberingStr}
       </a>
   `;
     };
