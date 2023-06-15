@@ -712,17 +712,5 @@
         "type": "application/json",
         "requires-reload": "no",
         "icon": "data:image/svg+xml,%3Csvg%20stroke%3D%22%23aaa%22%20fill%3D%22none%22%20stroke-width%3D%222%22%20viewBox%3D%220%200%2024%2024%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20height%3D%221em%22%20width%3D%221em%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20stroke%3D%22none%22%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M6%204h11a2%202%200%200%201%202%202v12a2%202%200%200%201%20-2%202h-11a1%201%200%200%201%20-1%20-1v-14a1%201%200%200%201%201%20-1m3%200v18%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M13%208l2%200%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M13%2012l2%200%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%0A"
-    },
-    {
-        "title": "$:/plugins/tiddlywiki/markdown",
-        "name": "Markdown",
-        "description": "Markdown parser based on markdown-it",
-        "list": "readme config syntax license",
-        "version": "5.3.0-prerelease",
-        "plugin-type": "plugin",
-        "dependents": "",
-        "type": "application/json",
-        "readme": "This plugin provides Markdown support via the [[markdown-it|https://github.com/markdown-it/markdown-it]] parser and its associated plugins:\n\n* markdown-it-deflist\n* markdown-it-footnote\n* markdown-it-ins\n* markdown-it-mark\n* markdown-it-sub\n* markdown-it-sup\n\n!! Compatibility Notes\n\n* <p>A tab character in Markdown has a size of four spaces. Configure the tab size of your code editor accordingly. For example, if you use <$text text=\"CodeMirror\"/>, it is recommended that you set $:/config/codemirror/indentUnit and $:/config/codemirror/tabSize to `4` to avoid inconsistent indentations.</p>\n* <p>HTML blocks are ultimately parsed by the <$text text=WikiText/> parser: //an opening tag followed by a blank line will activate block-level parsing for its content//. When working with tags designed to contain literal content, such as `<pre>` and `<style>` tags, refrain from adding blank lines after the opening tags.</p>\n* <p>You must terminate a table with either a blank line or another block-level structure.</p>\n* <p>`latex-parser` in $:/config/markdown/renderWikiTextPragma is no longer required and will be ignored.</p>\n* <p>Config option `linkNewWindow` is removed.</p>\n\n!! Extending the Parser\n\nYou can extend the parser by loading additional markdown-it plugins this way:\n\n```js\nvar plugin1 = require(...);\nvar plugin2 = require(...);\n\nvar md = $tw.Wiki.parsers[\"text/markdown\"].prototype.md;\n\nmd.use(plugin1)\n  .use(plugin2, opts, ...);\n```",
-        "requires-reload": "yes"
     }
 ]
