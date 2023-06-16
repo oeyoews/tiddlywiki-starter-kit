@@ -1,8 +1,8 @@
 created: 20230614015843626
 creator: oeyoews
-modified: 20230614015843626
+modified: 20230616110650802
 modifier: oeyoews
 title: $:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/network-activity
 type: text/vnd.tiddlywiki
 
-show
+hide
