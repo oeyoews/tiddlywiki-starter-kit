@@ -11,10 +11,16 @@ neotw startup descption
   exports.synchronous = true;
   exports.startup = function () {
     if (!$tw.browser) return;
+
+    // TODO
+    const tempTitle = $tw.wiki.getTiddlerText('$:/temp/focussedTiddler');
+
     if (window.location.protocol === 'http:') {
       document.title = `🐬 ${document.title}`;
+      // document.title = `🐬 ${tempTitle}`;
       return;
     }
+    // setInterval(updateTitle, 1000); // 每秒检查一次标题变化
 
     /* 这行代码是一个箭头函数，用于将响应体转换成一个JSON格式的对象。在fetch函数中，响应体返回的是一个ReadableStream对象，需要通过调用json()方法来获取JSON格式的数据。
 response.json()方法返回一个Promise对象，该Promise对象会在解析完成后，resolve一个JSON格式的对象。由于Promise对象的then方法可以接受一个回调函数作为参数，因此我们可以直接将response.json()作为回调函数传递给第一个then方法，让它自动处理响应数据并返回一个JSON格式的对象。

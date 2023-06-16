@@ -7,15 +7,6 @@ neotw-emoji-picker widget
 
 \*/
 
-/* TODO:
-$tw.rootWidget.dispatchEvent({
-  type: "tm-edit-text-operation",
-  paramObject: {
-  text: "👍",
-  }
-});
-*/
-
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */

@@ -120,6 +120,13 @@ function emojiComponent() {
         timer: 1500,
         timerProgressBar: false,
       });
+      /* $tw.rootWidget.dispatchEvent({
+        type: 'tm-edit-text-operation',
+        param: 'focsu-editor',
+        paramObject: {
+          text: '👍',
+        },
+      }); */
     } catch (error) {
       console.error('Failed to copy:', error);
     }
