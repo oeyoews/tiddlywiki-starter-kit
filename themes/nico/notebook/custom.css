@@ -170,6 +170,6 @@ summary::-webkit-details-marker {
 } */
 
 /* fix calllout plugin */
-details[data-callout] summary::-webkit-details-marker {
-  display: none;
-}
+/* details[data-callout] summary::-webkit-details-marker { */
+/*   display: none; */
+/* } */

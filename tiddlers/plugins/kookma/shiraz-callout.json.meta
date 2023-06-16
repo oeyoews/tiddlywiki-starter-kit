@@ -4,9 +4,10 @@ dependents:
 description: Admonitions for Shiraz
 list: readme license history
 name: Shiraz Callout
-parent-plugin: $:/plugins/kookma/shiraz
+parent-plugin: $:/plugin/kookma/shiraz
 plugin-type: plugin
 source: https://github.com/kookma/TW-Shiraz
+tags: 
 title: $:/plugins/kookma/shiraz-callout
 type: application/json
-version: 0.6.0
+version: 0.7.0
