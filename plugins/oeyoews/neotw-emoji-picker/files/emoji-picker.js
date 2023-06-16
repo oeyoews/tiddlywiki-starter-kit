@@ -1,4 +1,5 @@
 // TODO: fix popup position
+// navigator.clipboard.writeText no need permissions ???
 function emojiComponent() {
   var form = document.createElement('form');
   form.className = 'flex justify-center items-center mb-4';
