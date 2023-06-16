@@ -1,6 +1,6 @@
 created: 20230611123805993
 creator: oeyoews
-modified: 20230616131312962
+modified: 20230616142840887
 modifier: oeyoews
 publish: article
 tags: TiddlyWiki
@@ -18,7 +18,7 @@ type: text/markdown
 
 ## 使用Tiddlywiki 时长
 
-<$otime />
+<$ostage />
 
 ## 使用操作系统(平台)
 
