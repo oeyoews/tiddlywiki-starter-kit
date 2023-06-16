@@ -22,6 +22,8 @@ stage widget
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
       this.interval = this.getAttribute('interval', 1000);
+      this.timestamp = '2021-12-23';
+      this.timeStage = calculateTimeDiff(this.timestamp);
     }
 
     startTimer() {
@@ -37,8 +39,7 @@ stage widget
         clearInterval(this.timer);
         return;
       } else {
-        const timeStage = calculateTimeDiff('2021-12-23');
-        this.domNodes[0].textContent = timeStage;
+        this.domNodes[0].textContent = calculateTimeDiff(this.timestamp);
       }
     }
 
@@ -47,21 +48,10 @@ stage widget
       this.computeAttributes();
       this.execute();
 
-      const timeStage = calculateTimeDiff('2021-12-23');
-      const classNames = this.getAttribute('class', '').split(' ');
-
       const buttonNode = $tw.utils.domMaker('span', {
-        text: timeStage,
-        attributes: {
-          title: timeStage,
-        },
+        text: this.timeStage,
       });
 
-      classNames.forEach(className => {
-        if (className) {
-          buttonNode.classList.add(className);
-        }
-      });
       parent.insertBefore(buttonNode, nextSibling);
       this.domNodes.push(buttonNode);
 
