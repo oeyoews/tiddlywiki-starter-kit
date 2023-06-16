@@ -97,7 +97,17 @@ neotw-unsplash widget
         copyBtn.addEventListener('click', () => {
           navigator.clipboard.writeText(copyBtn.dataset.photoUrl);
           // confetti(); // z-index need add options for confetti
-          pushNotify('info', 'Unplash', 'copyed');
+          // pushNotify('info', 'Unplash', 'copyed');
+          Swal.fire({
+            icon: 'success',
+            titleText: `Copied Clipboard`,
+            toast: true,
+            footer: 'Unsplash by @oeyoews',
+            position: 'top-end', // top center bottom; start end
+            showConfirmButton: false,
+            timer: 1500,
+            timerProgressBar: false,
+          });
         });
 
         // 在照片元素内部创建一个文本元素，显示图片描述信息

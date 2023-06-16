@@ -2,7 +2,6 @@ title: $:/plugins/oeyoews/neotw-unsplash/editorbar
 tags: $:/tags/EditorToolbar
 caption: Unsplash
 condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]] [<targetTiddler>type[text/markdown]]
+dropdown: $:/plugins/oeyoews/neotw-unsplash/unsplash
 
-<$button message="tm-modal" param="$:/plugins/oeyoews/neotw-unsplash/unsplash" class="bg-transparent hover:text-black">
 Unsplash
-</$button>
