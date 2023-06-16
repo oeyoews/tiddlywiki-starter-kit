@@ -1,3 +1,4 @@
+// TODO: fix popup position
 function emojiComponent() {
   var form = document.createElement('form');
   form.className = 'flex justify-center items-center mb-4';
