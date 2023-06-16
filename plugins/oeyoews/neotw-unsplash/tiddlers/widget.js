@@ -50,14 +50,23 @@ neotw-unsplash widget
       // 在 Unsplash 上搜索照片
       async function searchPhotos(query) {
         const apiKey = window.localStorage.getItem('unsplashApiKey') || '';
+        // baKbPgwlhbBfF7mHcGf0DS0TmFzi8GknZ4hbUhuNkrA
         if (!apiKey) {
-          const input = window.prompt(
-            'Please enter your Unsplash API Key:',
-            '',
-          );
-          if (input) {
-            window.localStorage.setItem('unsplashApiKey', input.trim());
-          }
+          Swal.fire({
+            title: 'Please enter your Unsplash API Key:',
+            input: 'text',
+            inputAttributes: {
+              autocapitalize: 'off',
+            },
+            showCancelButton: true,
+            confirmButtonText: 'Save',
+            showLoaderOnConfirm: true,
+            preConfirm: input => {
+              if (input) {
+                window.localStorage.setItem('unsplashApiKey', input.trim());
+              }
+            },
+          });
         }
         const apiUrl = `https://api.unsplash.com/search/photos?query=${query}&orientation=landscape&client_id=${apiKey}&lang=en&per_page=21`;
         const response = await fetch(apiUrl);
