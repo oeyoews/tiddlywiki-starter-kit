@@ -6,6 +6,8 @@ module-type: widget
 stage widget
 
 \*/
+// TODO: add param
+// update logic
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
@@ -35,7 +37,7 @@ stage widget
         clearInterval(this.timer);
         return;
       } else {
-        const timeStage = calculateTimeDiff('2022-02-02');
+        const timeStage = calculateTimeDiff('2021-12-23');
         this.domNodes[0].textContent = timeStage;
       }
     }
@@ -45,7 +47,7 @@ stage widget
       this.computeAttributes();
       this.execute();
 
-      const timeStage = calculateTimeDiff('2022-02-02');
+      const timeStage = calculateTimeDiff('2021-12-23');
       const classNames = this.getAttribute('class', '').split(' ');
 
       const buttonNode = $tw.utils.domMaker('span', {
