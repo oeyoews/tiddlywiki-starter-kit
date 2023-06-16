@@ -18,9 +18,10 @@ swealalert
 
   exports.startup = function () {
     window.swal = require('$:/plugins/oeyoews/sweetalert/sweetalert.min.js');
-    if (window.location.protocol === 'https:') {
+
+    /* if (window.location.protocol === 'https:') {
       require('$:/plugins/oeyoews/tiddlywiki-sweetalert/startup-message.js');
-    }
+    } */
 
     // https://github.com/Jermolene/TiddlyWiki5/compare/master...confetti-plugin
     $tw.rootWidget.addEventListener('om-swal', event => {

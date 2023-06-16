@@ -17,5 +17,7 @@ swal2 module
   exports.synchronous = true;
   exports.startup = () => {
     window.Swal = require('$:/plugins/oeyoews/neotw-swal2/swal2.min.js');
+    window.location.protocol === 'https:' &&
+      require('$:/plugins/oeyoews/neotw-swal2/startup-message-swal.js');
   };
 })();
