@@ -39,22 +39,12 @@ neotw-unsplash widget
           },
         });
 
-        const searchBtn = $tw.utils.domMaker('button', {
-          text: '🔍',
-          class:
-            'mx-2 rounded-sm w-1/5 duration-400 transition bg-indigo-400 hover:bg-indigo-500',
-          attributes: {
-            type: 'submit',
-          },
-        });
-
         const searchForm = $tw.utils.domMaker('form', {
           class: 'flex justify-center items-center my-4',
-          children: [searchInput, searchBtn],
+          children: [searchInput],
         });
-        searchForm.addEventListener('submit', performSearch);
 
-        return { searchForm };
+        return { searchForm, searchInput };
       }
 
       // 在 Unsplash 上搜索照片
@@ -109,16 +99,19 @@ neotw-unsplash widget
         return elementWrapper;
       }
 
-      // 监听提交事件
-      async function performSearch(event) {
-        event.preventDefault();
-        resultsContainer.textContent = 'Searching...';
-        resultsContainer.classList.add('h-96', 'overflow-y-scroll');
-        const query = event.target.elements.query.value.trim();
-
+      // 实时搜索处理函数
+      const handleSearchInput = _.debounce(function (event) {
+        const query = event.target.value.trim();
         if (!query) {
           return;
         }
+        performSearch(query);
+      }, 300);
+
+      // 执行搜索
+      async function performSearch(query) {
+        resultsContainer.textContent = 'Searching...';
+        resultsContainer.classList.add('h-96', 'overflow-y-scroll');
 
         try {
           const photos = await searchPhotos(query);
@@ -135,7 +128,8 @@ neotw-unsplash widget
         }
       }
 
-      const { searchForm } = createSearchBar();
+      const { searchForm, searchInput } = createSearchBar();
+      searchInput.addEventListener('input', handleSearchInput);
 
       const resultsContainer = $tw.utils.domMaker('div', {
         text: '',
