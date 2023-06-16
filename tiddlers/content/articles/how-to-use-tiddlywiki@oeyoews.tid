@@ -1,11 +1,14 @@
 created: 20230611123805993
 creator: oeyoews
-modified: 20230611155243837
+modified: 20230616123729668
 modifier: oeyoews
 publish: article
 tags: TiddlyWiki
 title: how-to-use-tiddlywiki@oeyoews
 type: text/markdown
+
+<<.preamble "🛤️ 不同群体, 不同背景, 不同需求..., 注定了笔记软件的选择和使用是多样化的, 也注定会有观点的争论不休...">>
+
 
 @[toc]
 
@@ -32,6 +35,10 @@ type: text/markdown
 
 ## 自己写的一些插件
 
+:::
+个人的需求总是在不断变化的, 如果 Tiddlywiki 现有的功能不够好或者没有, 就自己写一个嘛, 全 AI 时代写什么都快, 又不费事, 目前主要使用 Javascript 写插件(wikitext 没有代码高亮等功能, 写插件能不用就不用)
+:::
+
 <<callout-details "Tiddlywiki Neotw Plugins" "{{Neotw-PluginList}}">>
 
 ## Tiddlywiki 高级使用技巧
@@ -49,4 +56,14 @@ type: text/markdown
 
 > Coming :smile:
 
-## ...
+## 最后
+
+`Out of box` 开箱即用是每个人都喜欢的, 不用付出什么就可以拥有完美的体验; 但是得与失有时同时存在的; 
+
+:::tips
+* 不要过分依赖他人, 从而获得自由;如何做到, 唯有学习,使其自身强大;
+* 如果想要得心应手, 有行云流水的那种体验, 每个人必须需要付出时间精力, 或早或玩, 不存在一看就会的美事; (观白嫖二字及个人多年经历有感)
+... 道理很多, 道理很大, 点到为止, 仅此而而.
+:::
+
+<<translink 灵活性VS成本>>
