@@ -6,6 +6,7 @@ module-type: widget
 neotw-unsplash widget
 
 \*/
+// TODO: directly to copy image
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
