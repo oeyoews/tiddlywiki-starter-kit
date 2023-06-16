@@ -1,7 +1,6 @@
-// TODO: fix mobile style
 function emojiComponent() {
   var form = document.createElement('form');
-  form.className = 'mb-4';
+  form.className = 'flex justify-center items-center mb-4';
   form.onsubmit = function (event) {
     event.preventDefault();
   };
@@ -9,7 +8,6 @@ function emojiComponent() {
   // Create label element
   var label = document.createElement('label');
   label.htmlFor = 'emoji-input';
-  label.className = 'text-lg mb-2 block';
   label.innerText = '';
 
   // Create input element
@@ -20,7 +18,7 @@ function emojiComponent() {
     debouncedSearchEmoji(event);
   };
   input.className =
-    'px-2 py-2 rounded-r-none rounded-l-md border border-y-2 border-l-2 border-rose-500 border-r-0';
+    'px-4 py-2 bg-white border border-gray-300 rounded shadow-sm focus:outline-none focus:border-indigo-300 w-4/5';
   input.placeholder = '🍉 Search emoji ...';
 
   // Create button element
@@ -28,8 +26,9 @@ function emojiComponent() {
   button.type = 'button';
   button.onclick = clearSearch;
   button.className =
-    'bg-red-500 text-white px-4 py-2 rounded-l-none rounded-r-md ml-0 hover:bg-red-600 duration-200 transition hidden lg:inline border border-y-2 border-r-2 border-y-red-500 border-r-red-500 border-l-0';
+    'bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 mx-2 rounded shadow w-auto';
   button.textContent = '🍃 Clear';
+  button.title = 'Clear';
 
   // Append label, input, and button to form
   form.appendChild(label);
@@ -72,6 +71,7 @@ function emojiComponent() {
       'grid-cols-5',
       'gap-4',
       'overflow-y-scroll',
+      'h-48',
     );
 
     for (var key in emojis) {

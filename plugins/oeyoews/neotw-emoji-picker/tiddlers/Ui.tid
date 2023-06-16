@@ -1,11 +1,9 @@
 caption: Emoji Picker
 title: $:/plugins/oeyoews/neotw-emoji-picker/emoji-picker
 mask-closable: yes
-subtitle: 🌊 Emoji Picker
+subtitle: {{$:/plugins/oeyoews/neotw-emoji-picker/icon}} Emoji Picker
 class: o-tm
 
-<!-- tc-modal-centered -->
-
-<h2 class="text-center"> Emoji Picker</h2>
+<h3 class="text-center m-0">Select Emoji</h3>
 
 <$emoji-picker />

@@ -25,6 +25,6 @@ TiddlyWiki Emoji Picker 是一个功能强大的插件，为 TiddlyWiki 用户�
 
 ## TODO
 
-* get cursor position to insert codemirror textarea
+* emulate insert link to insert emoji button
 
 </div>

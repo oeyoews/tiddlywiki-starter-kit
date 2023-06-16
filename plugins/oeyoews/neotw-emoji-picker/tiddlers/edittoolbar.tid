@@ -2,7 +2,9 @@ title: $:/plugins/oeyoews/neotw-emoji-picker/EditorToolbar
 tags: $:/tags/EditorToolbar
 caption: Emoji Picker
 condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]] [<targetTiddler>type[text/markdown]]
+dropdown: $:/plugins/oeyoews/neotw-emoji-picker/emoji-picker
+button-classes: tc-text-editor-toolbar-item-start-group
 
-<$button message="tm-modal" param="$:/plugins/oeyoews/neotw-emoji-picker/emoji-picker" class="bg-transparent hover:text-black">
+<!-- icon: $:/plugins/oeyoews/neotw-emoji-picker/icon -->
+
 Emoji Picker
-</$button>
