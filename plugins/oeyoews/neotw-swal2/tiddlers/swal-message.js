@@ -3,11 +3,9 @@ title: $:/plugins/oeyoews/neotw-swal2/startup-message-swal.js
 type: application/javascript
 module-type: library
 
-sweetalert startup message
-
+sweetalert2 startup message
 \*/
 
-// const swal = require('$:/plugins/oeyoews/sweetalert/sweetalert.min.js');
 const neotw = JSON.parse(localStorage.getItem('neotw')) || {};
 const currentDate = new Date().toDateString();
 const noNotifyDate = neotw.noNotifyDate;

@@ -13,7 +13,7 @@ lodash module
 
   exports.name = 'lodash-startup-hook';
   exports.platforms = ['browser'];
-  exports.after = ['startup'];
+  exports.after = ['load-modules'];
   exports.synchronous = true;
   exports.startup = () => {
     window._ = require('lodash.min.js');
