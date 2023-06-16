@@ -6,7 +6,7 @@ module-type: widget
 neotw-unsplash widget
 
 \*/
-(function () {
+(function() {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -29,7 +29,7 @@ neotw-unsplash widget
       function createSearchBar() {
         const searchInput = $tw.utils.domMaker('input', {
           class:
-            'w-4/5 px-3 py-2 bg-white border border-gray-300 rounded shadow-sm focus:outline-none focus:border-blue-300',
+            'px-2 py-2 bg-white border border-gray-300 rounded shadow-sm focus:outline-none focus:border-blue-300',
           attributes: {
             autofocus: '',
             placeholder: 'Search photos...',
@@ -45,16 +45,16 @@ neotw-unsplash widget
         // 事件委托的应用场景很多，例如对于动态生成的元素、列表、表格等，都可以使用事件委托来处理事件，以提高代码的效率和可维护性。
         // 在这个代码中，由于使用了事件委托的方式来监听表单的提交事件，所以存在事件冒泡。具体来说，当用户点击搜索按钮时，会触发按钮的点击事件，然后该事件会向上冒泡到表单元素，最终触发表单的提交事件。在 performSearch 函数中，可以通过调用 event.preventDefault() 方法来阻止事件的默认行为，从而避免表单的自动提交。
         const searchBtn = $tw.utils.domMaker('button', {
-          text: 'Search',
+          text: '🔍',
           class:
-            'bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 mx-2 rounded shadow',
+            'mx-2 rounded-sm w-1/5 duration-400 transition bg-indigo-400 hover:bg-indigo-500',
           attributes: {
             type: 'submit',
           },
         });
 
         const searchForm = $tw.utils.domMaker('form', {
-          class: 'flex justify-center items-center',
+          class: 'flex justify-center items-center my-4',
           children: [searchInput, searchBtn],
         });
         searchForm.addEventListener('submit', performSearch);
@@ -96,8 +96,6 @@ neotw-unsplash widget
         // 监听复制图片 URL 的按钮点击事件
         copyBtn.addEventListener('click', () => {
           navigator.clipboard.writeText(copyBtn.dataset.photoUrl);
-          // confetti(); // z-index need add options for confetti
-          // pushNotify('info', 'Unplash', 'copyed');
           Swal.fire({
             icon: 'success',
             titleText: `Copied Clipboard`,
@@ -145,6 +143,7 @@ neotw-unsplash widget
         // 阻止表单提交
         event.preventDefault();
         resultsContainer.textContent = 'Searching...';
+        resultsContainer.classList.add('h-96', 'overflow-y-scroll');
         const query = event.target.elements.query.value.trim();
 
         if (!query) {
