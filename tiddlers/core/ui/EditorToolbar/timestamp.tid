@@ -1,0 +1,18 @@
+caption: {{$:/language/Buttons/TimeStamp/Caption}}
+condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]] [<targetTiddler>type[text/markdown]]
+created: 20161118171456554
+creator: TonGerner
+description: {{$:/language/Buttons/TimeStamp/Hint}}
+icon: $:/core/images/timestamp
+modified: 20230616042047269
+modifier: oeyoews
+shortcuts: ((timestamp))
+tags: $:/tags/EditorToolbar
+title: $:/core/ui/EditorToolbar/timestamp
+type: text/vnd.tiddlywiki
+
+<$action-sendmessage
+	$message="tm-edit-text-operation"
+	$param="replace-selection"
+	text=<<now>>
+/>

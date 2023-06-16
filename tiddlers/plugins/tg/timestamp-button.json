@@ -1,0 +1,75 @@
+{
+    "tiddlers": {
+        "$:/core/images/timestamp": {
+            "created": "20161204161241276",
+            "text": "<svg class=\"tgc-timestamp tc-image-button\"height=\"20pt\" width=\"20pt\" viewBox=\"0 0 20 20\"><path d=\"M10,0 C4.5,0 0,4.5 0,10 C0,15.5 4.5,20 10,20 C15.5,20 20,15.5 20,10 C20,4.5 15.5,0 10,0 L10,0 Z M10,18 C5.6,18 2,14.4 2,10 C2,5.6 5.6,2 10,2 C14.4,2 18,5.6 18,10 C18,14.4 14.4,18 10,18 Z M10.5,5 L9,5 L9,11 L14.2,14.2 L15,12.9 L10.5,10.2 L10.5,5 Z\"></svg>",
+            "title": "$:/core/images/timestamp",
+            "tags": "$:/tags/Image",
+            "modifier": "TonGerner",
+            "modified": "20170726075430605",
+            "creator": "TonGerner"
+        },
+        "$:/core/ui/EditorToolbar/timestamp": {
+            "created": "20161118171456554",
+            "text": "<$action-sendmessage\n\t$message=\"tm-edit-text-operation\"\n\t$param=\"replace-selection\"\n\ttext=<<now>>\n/>",
+            "title": "$:/core/ui/EditorToolbar/timestamp",
+            "tags": "$:/tags/EditorToolbar",
+            "shortcuts": "((timestamp))",
+            "modifier": "TonGerner",
+            "modified": "20170726074415991",
+            "icon": "$:/core/images/timestamp",
+            "description": "{{$:/language/Buttons/TimeStamp/Hint}}",
+            "creator": "TonGerner",
+            "condition": "[<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]]",
+            "caption": "{{$:/language/Buttons/TimeStamp/Caption}}"
+        },
+        "$:/language/Buttons/TimeStamp/Caption": {
+            "text": "insert timestamp",
+            "title": "$:/language/Buttons/TimeStamp/Caption",
+            "modifier": "TonGerner",
+            "modified": "20170409182351950",
+            "creator": "TonGerner",
+            "created": "20170409182341874"
+        },
+        "$:/language/Buttons/TimeStamp/Hint": {
+            "text": "Insert timestamp",
+            "title": "$:/language/Buttons/TimeStamp/Hint",
+            "modifier": "TonGerner",
+            "modified": "20170409182417864",
+            "creator": "TonGerner",
+            "created": "20170409182409954"
+        },
+        "$:/config/ShortcutInfo/timestamp": {
+            "created": "20161204162358226",
+            "text": "{{$:/language/Buttons/TimeStamp/Hint}}",
+            "title": "$:/config/ShortcutInfo/timestamp",
+            "modifier": "TonGerner",
+            "modified": "20171030143250967",
+            "creator": "TonGerner"
+        },
+        "$:/config/shortcuts/timestamp": {
+            "text": "ctrl+D",
+            "title": "$:/config/shortcuts/timestamp",
+            "modified": "20161204165605507",
+            "created": "20161204162542451"
+        },
+        "$:/plugins/tg/timestamp-button/readme": {
+            "created": "20170511200701782",
+            "creator": "TonGerner",
+            "text": "\\define icn(icon)\n<button class=\"tc-btn-invisible\"> {{$icon$}}</button>\n\\end\n\nA button (<<icn $:/core/images/timestamp>>) for the Editor toolbar that inserts a timestamp.<br>Adapt the date/time format - `<<now [format]>>` in $:/core/ui/EditorToolbar/timestamp - to your liking.<br>\nAssigned shortcut: {{$:/config/shortcuts/timestamp}}\n\n\n\n",
+            "title": "$:/plugins/tg/timestamp-button/readme",
+            "tags": "",
+            "modifier": "TonGerner",
+            "modified": "20210104201738736"
+        },
+        "$:/plugins/tg/timestamp-button/license": {
+            "created": "20210104201817496",
+            "creator": "TonGerner",
+            "text": "[[Timestamp button|http://www.tongerner.nl/TW5/TW5_playground.html]] &copy; Ton Gerner &mdash; 2018-2021\n\nMIT License: https://opensource.org/licenses/MIT\n",
+            "tags": "",
+            "title": "$:/plugins/tg/timestamp-button/license",
+            "modified": "20210104201910462",
+            "modifier": "TonGerner"
+        }
+    }
+}
