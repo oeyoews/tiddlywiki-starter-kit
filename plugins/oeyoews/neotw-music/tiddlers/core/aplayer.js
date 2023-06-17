@@ -22,6 +22,7 @@ A music player widget that uses the APlayer library.
 
     render(parent, nextSibling) {
       if (!$tw.browser) return;
+      const APlayer = require('$:/plugins/oeyoews/neotw-music/aplayer.min.js');
 
       this.parentDomNode = parent;
       this.computeAttributes();
@@ -57,6 +58,7 @@ A music player widget that uses the APlayer library.
           timer: 1500,
           position: 'top-end',
         });
+        // use destory method to remove event, optimize this variables order
         this.aplayer.toggle();
       });
 
@@ -70,7 +72,7 @@ A music player widget that uses the APlayer library.
       const container = $tw.utils.domMaker('div', {
         class: 'flex justify-center items-center',
         attributes: {},
-        children: [playButtonNode],
+        children: [aplayerNode, playButtonNode],
       });
 
       parent.insertBefore(container, nextSibling);
@@ -97,7 +99,6 @@ A music player widget that uses the APlayer library.
         ],
       };
 
-      const APlayer = require('$:/plugins/oeyoews/neotw-music/aplayer.min.js');
       this.aplayer = new APlayer(aplayerOptions);
     }
   }
