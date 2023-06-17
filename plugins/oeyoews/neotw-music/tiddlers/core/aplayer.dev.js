@@ -68,20 +68,27 @@ A music player widget that uses the APlayer library.
         }
       });
 
+      const notify = (icon = 'success') => {
+        Swal.fire({
+          title: `🎶 ${name} by ${artist}`,
+          icon,
+          toast: true,
+          showCancelButton: false,
+          showConfirmButton: false,
+          timer: 1500,
+          position: 'top-end',
+        });
+      };
+
       playButtonNode.addEventListener('click', () => {
         this.aplayer.toggle();
-        !this.playing &&
-          // TODO: support image use imageUrl or html key
-          Swal.fire({
-            toast: true,
-            title: `🎶 ${name} by ${artist}`,
-            icon: 'success',
-            showCancelButton: false,
-            showConfirmButton: false,
-            timer: 1500,
-            position: 'top-end',
-          });
+        !this.playing && notify();
+        this.playing && notify('info');
         this.playing = !this.playing;
+
+        // TODO
+        // this.aplayer.on('playing', notify());
+        // this.aplayer.on('pause', notify('info'));
       });
 
       const aplayerNode = $tw.utils.domMaker('div', {
