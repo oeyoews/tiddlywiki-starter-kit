@@ -27,7 +27,7 @@ function calculateTimeDiff(pastDateString) {
 
   // console.clear(); ???
 
-  const timeStage = `距离 ${pastDate.toDateString()} 已经过去了 ${days} 天 ${hours} 小时 ${minutes} 分钟 ${seconds} 秒。`;
+  const timeStage = `距离 ${pastDate.toLocaleDateString()} 已经过去了 ${days} 天 ${hours} 小时 ${minutes} 分钟 ${seconds} 秒。`;
   return timeStage;
 }
 

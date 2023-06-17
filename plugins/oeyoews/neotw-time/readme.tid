@@ -25,9 +25,12 @@ title: $:/plugins/oeyoews/neotw-time/readme
 
 ```
 <$ostage />
+<$ostage timestamp='2023-6-1'/>
 <$ostage timestamp='2022-01-01'/>
 ```
 
 <$ostage />
+
+<$ostage timestamp='2023-6-1'/>
 
 <$ostage timestamp='2022-01-01'/>

@@ -49,9 +49,21 @@ stage widget
       this.computeAttributes();
       this.execute();
 
-      const StageNode = $tw.utils.domMaker('span', {
+      const gradient = this.hasAttribute('gradient');
+      const StageNode = $tw.utils.domMaker('div', {
+        class: 'my-2',
         text: calculateTimeDiff(this.timestamp),
       });
+
+      gradient &&
+        StageNode.classList.add(
+          'text-transparent',
+          'bg-clip-text',
+          'bg-gradient-to-r',
+          'from-teal-400',
+          'via-pink-500',
+          'to-yellow-500',
+        );
 
       parent.insertBefore(StageNode, nextSibling);
       this.domNodes.push(StageNode);
