@@ -39,7 +39,9 @@ stage widget
         clearInterval(this.timer);
         return;
       } else {
-        this.domNodes[0].textContent = calculateTimeDiff(this.timestamp);
+        this.domNodes[0].textContent = calculateTimeDiff(
+          this.getAttribute('timestamp', this.timestamp),
+        );
       }
     }
 
@@ -49,7 +51,7 @@ stage widget
       this.execute();
 
       const buttonNode = $tw.utils.domMaker('span', {
-        text: this.timeStage,
+        text: calculateTimeDiff(this.getAttribute('timestamp', this.timestamp)),
       });
 
       parent.insertBefore(buttonNode, nextSibling);
