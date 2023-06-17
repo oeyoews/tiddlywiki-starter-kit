@@ -1,12 +1,11 @@
 /*\
-title: $:/plugins/oeyoews/neotw-music/widget-aplayer.js
+title: $:/plugins/oeyoews/neotw-music/widget-aplayer.dev.js
 type: application/javascript
 module-type: widget
 
 A music player widget that uses the APlayer library.
 
 \*/
-
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
@@ -18,6 +17,7 @@ A music player widget that uses the APlayer library.
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
       this.aplayer = null;
+      this.playing = null;
     }
 
     render(parent, nextSibling) {
@@ -36,28 +36,38 @@ A music player widget that uses the APlayer library.
       );
       const coverUrl = this.getAttribute('coverUrl', '');
 
-      const playButtonNode = this.document.createElement('button');
-      playButtonNode.textContent = '🎶';
-      playButtonNode.classList.add(
-        'bg-slate-100',
-        'rounded',
-        'hover:bg-slate-200',
-        'transition',
-        'duration-400',
+      const playIcon = $tw.wiki.getTiddlerText(
+        '$:/plugins/oeyoews/neotw-music/icon',
       );
 
-      // add toggle , stop, button
+      const playButtonNode = $tw.utils.domMaker('button', {
+        text: 'button',
+        class: 'p-0 m-0 bg-transparent',
+        innerHTML: playIcon,
+        attributes: {},
+        children: [],
+        eventListeners: [
+          {
+            name: 'click',
+            handlerObject: this,
+            handlerMethod: '',
+          },
+        ],
+      });
+
       playButtonNode.addEventListener('click', () => {
-        Swal.fire({
-          toast: true,
-          title: `🎶 ${audioName} by ${artistName}`,
-          icon: 'info',
-          showCancelButton: false,
-          showConfirmButton: false,
-          timer: 1500,
-          position: 'top-end',
-        });
         this.aplayer.toggle();
+        !this.playing &&
+          Swal.fire({
+            toast: true,
+            title: `🎶 ${audioName} by ${artistName}`,
+            icon: 'success',
+            showCancelButton: false,
+            showConfirmButton: false,
+            timer: 1500,
+            position: 'top-end',
+          });
+        this.playing = !this.playing;
       });
 
       const aplayerNode = $tw.utils.domMaker('div', {
@@ -102,5 +112,5 @@ A music player widget that uses the APlayer library.
     }
   }
 
-  exports.aplayer = APlayerWidget;
+  exports['aplayer-dev'] = APlayerWidget;
 })();

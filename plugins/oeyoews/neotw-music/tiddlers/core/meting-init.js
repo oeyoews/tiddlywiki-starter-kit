@@ -6,11 +6,7 @@ module-type: library
 meting-init
 
 \*/
-
-(function () {
-  window.APlayer = require('$:/plugins/oeyoews/neotw-music/aplayer.min.js');
-  require('$:/plugins/oeyoews/neotw-music/meting.min.js');
-
+(function() {
   const { fields = {} } =
     $tw.wiki.getTiddler('$:/plugins/oeyoews/neotw-music/config') || {};
 
