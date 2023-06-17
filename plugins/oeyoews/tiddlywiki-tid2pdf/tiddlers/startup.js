@@ -64,23 +64,18 @@ tid2pdf module
             });
             linkNode.click();
           };
-
-          swal({
+          // BUG: on phone, it's nothing even preview is normal on pck'iphone emulate env
+          Swal.fire({
             icon: 'success',
-            title,
-            content: containerNode,
+            title: title,
+            html: containerNode,
             text: `Image size: ${sizeInMB.toFixed(2)} MB`,
-            buttons: {
-              download: {
-                text: 'Download',
-                value: true,
-              },
-              cancel: 'Cancel',
-            },
-            // TODO: suitable mobile style
-            className: 'w-auto',
-          }).then(value => {
-            value && downloadPng(imgData);
+            showCancelButton: true,
+            confirmButtonText: 'Download',
+            cancelButtonText: 'Cancel',
+            customClass: 'w-auto',
+          }).then(result => {
+            result.isConfirmed && downloadPng(imgData);
             NProgress.done();
           });
         }, 'image/png');
