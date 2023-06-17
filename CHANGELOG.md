@@ -1,3 +1,10 @@
+## [3.309.3](https://github.com/oeyoews/neotw/compare/v3.309.2...v3.309.3) (2023-06-17)
+
+
+### Performance Improvements
+
+* remove depreacted cmd for tailwindcss plugin ([d589017](https://github.com/oeyoews/neotw/commit/d589017b3bc859d19f9a8ba29522a760c8639adf))
+
 ## [3.309.2](https://github.com/oeyoews/neotw/compare/v3.309.1...v3.309.2) (2023-06-17)
 
 
