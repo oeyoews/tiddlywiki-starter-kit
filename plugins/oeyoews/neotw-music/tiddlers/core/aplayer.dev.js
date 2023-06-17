@@ -31,7 +31,7 @@ A music player widget that uses the APlayer library.
       this.computeAttributes();
       this.execute();
 
-      const audios = [
+      const audiosDefault = [
         {
           audioName: '清风',
           artistName: '陈壹千',
@@ -44,17 +44,17 @@ A music player widget that uses the APlayer library.
         },
       ];
 
-      // const id = randomId[Math.floor(Math.random() * randomId.length)];
-      // randomId
+      const audios =
+        $tw.wiki.getTiddlerText('$:/plugins/oeyoews/neotw-music/audios') ||
+        audiosDefault;
+
       const randomNum = Math.floor(Math.random() * audios.length);
       const id = audios[randomNum].id;
-      const { audioName, artistName } = audios[randomNum];
-      // const id = this.getAttribute('id', '1947926942');
+      const { audioName, artistName, coverUrl } = audios[randomNum];
       const audioUrl = this.getAttribute(
         'audioUrl',
         'https://music.163.com/song/media/outer/url?id=' + id,
       );
-      const coverUrl = this.getAttribute('coverUrl', '');
       const classNames = this.getAttribute('class', '').split(' ');
 
       const playIcon = $tw.wiki.getTiddlerText(
@@ -75,6 +75,7 @@ A music player widget that uses the APlayer library.
       playButtonNode.addEventListener('click', () => {
         this.aplayer.toggle();
         !this.playing &&
+          // TODO: support image use imageUrl or html key
           Swal.fire({
             toast: true,
             title: `🎶 ${audioName} by ${artistName}`,

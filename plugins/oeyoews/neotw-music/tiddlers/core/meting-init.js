@@ -41,7 +41,7 @@ function metingOption(id = document.body) {
   }
 
   id.appendChild(metingNode);
-  console.log(`🎶 当前歌单为 ${fields.server} && ${fields.id} ${id}`);
+  // console.log(`🎶 当前歌单为 ${fields.server} && ${fields.id} ${id}`);
 }
 
 module.exports = {
