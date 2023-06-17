@@ -1,3 +1,10 @@
+# [3.310.0](https://github.com/oeyoews/neotw/compare/v3.309.5...v3.310.0) (2023-06-17)
+
+
+### Features
+
+* use module.exports for Notify ([e8ae044](https://github.com/oeyoews/neotw/commit/e8ae044eb405908bb80354f84198decfd4d4b153))
+
 ## [3.309.5](https://github.com/oeyoews/neotw/compare/v3.309.4...v3.309.5) (2023-06-17)
 
 
