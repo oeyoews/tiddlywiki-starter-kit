@@ -85,14 +85,25 @@ tid2png/widget
           const imgNode = new Image();
           imgNode.src = imgData;
           imgNode.crossOrigin = 'anonymous'; // 允许跨域访问
-          imgNode.style.width = '512px';
-          imgNode.classList.add('shadow-sm');
+          imgNode.style.width = '712px';
+
+          const containerNode = document.createElement('div');
+          containerNode.classList.add(
+            'border',
+            'border-2',
+            'p-1',
+            'rounded',
+            'overflow-y-scroll',
+            'h-screen',
+            'shadow-md',
+          );
+          containerNode.appendChild(imgNode);
 
           const previewImg = () => {
             Swal.fire({
               icon: 'success',
               title: `${this.title}`,
-              html: imgNode,
+              html: containerNode,
               showCancelButton: true,
               confirmButtonText: 'Download',
               cancelButtonText: 'Cancel',

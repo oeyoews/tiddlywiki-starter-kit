@@ -41,8 +41,19 @@ tid2pdf module
           imgNode.src = imgData;
           imgNode.crossOrigin = '';
           const cloneImgNode = imgNode.cloneNode(true);
-          cloneImgNode.style.width = '512px';
-          cloneImgNode.classList.add('shadow-sm');
+          cloneImgNode.style.width = '712px';
+
+          const containerNode = document.createElement('div');
+          containerNode.classList.add(
+            'border',
+            'border-2',
+            'p-1',
+            'rounded',
+            'overflow-y-scroll',
+            'h-screen',
+            'shadow-md',
+          );
+          containerNode.appendChild(cloneImgNode);
 
           const downloadPng = imgData => {
             const linkNode = $tw.utils.domMaker('a', {
@@ -57,7 +68,7 @@ tid2pdf module
           swal({
             icon: 'success',
             title,
-            content: cloneImgNode,
+            content: containerNode,
             text: `Image size: ${sizeInMB.toFixed(2)} MB`,
             buttons: {
               download: {
@@ -69,9 +80,7 @@ tid2pdf module
             // TODO: suitable mobile style
             className: 'w-auto',
           }).then(value => {
-            if (value) {
-              downloadPng(imgData);
-            }
+            value && downloadPng(imgData);
             NProgress.done();
           });
         }, 'image/png');
