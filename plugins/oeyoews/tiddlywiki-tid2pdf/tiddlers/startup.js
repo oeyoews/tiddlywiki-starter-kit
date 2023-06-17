@@ -55,6 +55,20 @@ tid2pdf module
           );
           containerNode.appendChild(cloneImgNode);
 
+          /* function isPC() {
+  var platform = navigator.platform;
+  return platform.indexOf("Win") === 0 || platform.indexOf("Mac") === 0 || platform.indexOf("Linux") === 0;
+}
+// 调用函数判断当前环境是否是PC
+var isCurrentEnvironmentPC = isPC();
+
+// 输出结果
+console.log("当前环境是否是PC：", isCurrentEnvironmentPC); */
+
+          // if is pc to preview
+          const preview = true;
+          // const isPc = $tw.utils.isPc();
+
           const downloadPng = imgData => {
             const linkNode = $tw.utils.domMaker('a', {
               attributes: {
@@ -65,19 +79,21 @@ tid2pdf module
             linkNode.click();
           };
           // BUG: on phone, it's nothing even preview is normal on pck'iphone emulate env
-          Swal.fire({
-            icon: 'success',
-            title: title,
-            html: containerNode,
-            text: `Image size: ${sizeInMB.toFixed(2)} MB`,
-            showCancelButton: true,
-            confirmButtonText: 'Download',
-            cancelButtonText: 'Cancel',
-            customClass: 'w-auto',
-          }).then(result => {
-            result.isConfirmed && downloadPng(imgData);
-            NProgress.done();
-          });
+          !preview && downloadPng(imgData);
+          preview &&
+            Swal.fire({
+              icon: 'success',
+              title: title,
+              html: containerNode,
+              text: `Image size: ${sizeInMB.toFixed(2)} MB`,
+              showCancelButton: true,
+              confirmButtonText: 'Download',
+              cancelButtonText: 'Cancel',
+              customClass: 'w-auto',
+            }).then(result => {
+              result.isConfirmed && downloadPng(imgData);
+              NProgress.done();
+            });
         }, 'image/png');
       });
     });
