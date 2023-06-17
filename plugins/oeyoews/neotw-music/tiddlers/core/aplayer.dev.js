@@ -49,7 +49,6 @@ A music player widget that uses the APlayer library.
         audiosDefault;
 
       const randomNum = Math.floor(Math.random() * audios.length);
-      // set default value
       const { name, artist, cover, id } = audios[randomNum];
       const url = `https://music.163.com/song/media/outer/url?id=${id}`;
 
@@ -59,8 +58,7 @@ A music player widget that uses the APlayer library.
         '$:/plugins/oeyoews/neotw-music/icon',
       );
 
-      const playButtonNode = $tw.utils.domMaker('button', {
-        class: 'p-0 m-0 bg-transparent',
+      const playButtonNode = $tw.utils.domMaker('div', {
         innerHTML: playIcon,
       });
 
