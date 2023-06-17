@@ -33,28 +33,26 @@ A music player widget that uses the APlayer library.
 
       const audiosDefault = [
         {
-          audioName: '清风',
-          artistName: '陈壹千',
+          name: '清风',
+          artist: '陈壹千',
           id: '1947926942',
         },
         {
-          audioName: '脱水蓝鲸',
-          artistName: 'Vicky宣宣',
+          name: '脱水蓝鲸',
+          artist: 'Vicky宣宣',
           id: '1931552540',
         },
       ];
 
       const audios =
-        $tw.wiki.getTiddlerText('$:/plugins/oeyoews/neotw-music/audios') ||
+        $tw.wiki.getTiddlerData('$:/plugins/oeyoews/neotw-music/audios.json') ||
         audiosDefault;
 
       const randomNum = Math.floor(Math.random() * audios.length);
-      const id = audios[randomNum].id;
-      const { audioName, artistName, coverUrl } = audios[randomNum];
-      const audioUrl = this.getAttribute(
-        'audioUrl',
-        'https://music.163.com/song/media/outer/url?id=' + id,
-      );
+      // set default value
+      const { name, artist, cover, id } = audios[randomNum];
+      const url = `https://music.163.com/song/media/outer/url?id=${id}`;
+
       const classNames = this.getAttribute('class', '').split(' ');
 
       const playIcon = $tw.wiki.getTiddlerText(
@@ -78,7 +76,7 @@ A music player widget that uses the APlayer library.
           // TODO: support image use imageUrl or html key
           Swal.fire({
             toast: true,
-            title: `🎶 ${audioName} by ${artistName}`,
+            title: `🎶 ${name} by ${artist}`,
             icon: 'success',
             showCancelButton: false,
             showConfirmButton: false,
@@ -116,10 +114,10 @@ A music player widget that uses the APlayer library.
         preload: 'auto',
         audio: [
           {
-            name: audioName,
-            artist: artistName,
-            url: audioUrl,
-            cover: coverUrl,
+            name,
+            artist,
+            url,
+            cover,
             theme: '#f64f59',
           },
         ],
