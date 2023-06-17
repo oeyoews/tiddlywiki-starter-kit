@@ -7,7 +7,7 @@ tid2png/widget
 
 \*/
 // TODO: count img size
-(function() {
+(function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -84,30 +84,26 @@ tid2png/widget
           // https://www.zhangxinxu.com/wordpress/2018/02/crossorigin-canvas-getimagedata-cors/
           const imgNode = new Image();
           imgNode.src = imgData;
-          img.crossOrigin = 'anonymous'; // 允许跨域访问
+          imgNode.crossOrigin = 'anonymous'; // 允许跨域访问
           imgNode.style.width = '512px';
           imgNode.classList.add('shadow-sm');
 
           const previewImg = () => {
-            swal({
+            Swal.fire({
               icon: 'success',
               title: `${this.title}`,
-              content: imgNode,
-              /* content: {
-                element: imgNode,
-              }, */
-              buttons: {
-                download: {
-                  text: 'Download',
-                  value: true,
-                },
-                cancel: 'Cancel',
-              },
-              className: 'w-auto',
-            }).then(value => {
-              value && downloadPng(imgData);
+              html: imgNode,
+              showCancelButton: true,
+              confirmButtonText: 'Download',
+              cancelButtonText: 'Cancel',
+              customClass: 'w-auto',
+            }).then(result => {
+              if (result.isConfirmed) {
+                downloadPng(imgData);
+              }
             });
           };
+
           this.preview ? previewImg() : downloadPng(imgData);
         });
       };
