@@ -1,3 +1,10 @@
+## [3.309.4](https://github.com/oeyoews/neotw/compare/v3.309.3...v3.309.4) (2023-06-17)
+
+
+### Performance Improvements
+
+* hide sidebar on small screen ([459dfb9](https://github.com/oeyoews/neotw/commit/459dfb98851672e52d573d5a4d327fa0b7e18ad2))
+
 ## [3.309.3](https://github.com/oeyoews/neotw/compare/v3.309.2...v3.309.3) (2023-06-17)
 
 
