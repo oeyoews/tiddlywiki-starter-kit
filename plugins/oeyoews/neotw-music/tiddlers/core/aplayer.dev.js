@@ -87,20 +87,13 @@ A music player widget that uses the APlayer library.
       });
 
       const aplayerNode = $tw.utils.domMaker('div', {
-        // class: 'w-96 roudned-lg',
         attributes: {
           id: 'aplayer',
         },
       });
 
-      const container = $tw.utils.domMaker('div', {
-        class: 'flex justify-center items-center',
-        attributes: {},
-        children: [playButtonNode],
-      });
-
-      parent.insertBefore(container, nextSibling);
-      this.domNodes.push(container);
+      parent.insertBefore(playButtonNode, nextSibling);
+      this.domNodes.push(playButtonNode);
 
       const aplayerOptions = {
         container: aplayerNode,
