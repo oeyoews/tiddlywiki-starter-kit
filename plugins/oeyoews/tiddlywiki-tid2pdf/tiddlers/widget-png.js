@@ -100,6 +100,7 @@ tid2png/widget
           containerNode.appendChild(imgNode);
 
           const previewImg = () => {
+            //  手机上异常, 对于个别tiddler
             Swal.fire({
               icon: 'success',
               title: `${this.title}`,
