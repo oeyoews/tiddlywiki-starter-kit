@@ -18,6 +18,7 @@ A music player widget that uses the APlayer library.
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
       this.aplayer = null;
+      this.playButtonNode = null;
     }
 
     render(parent, nextSibling) {
@@ -37,9 +38,9 @@ A music player widget that uses the APlayer library.
       );
       const coverUrl = this.getAttribute('coverUrl', '');
 
-      const playButtonNode = this.document.createElement('button');
-      playButtonNode.textContent = '🎶';
-      playButtonNode.classList.add(
+      this.playButtonNode = this.document.createElement('button');
+      this.playButtonNode.textContent = '🎶';
+      this.playButtonNode.classList.add(
         'bg-slate-100',
         'rounded',
         'hover:bg-slate-200',
@@ -47,20 +48,10 @@ A music player widget that uses the APlayer library.
         'duration-400',
       );
 
-      // add toggle , stop, button
-      playButtonNode.addEventListener('click', () => {
-        Swal.fire({
-          toast: true,
-          title: `🎶 ${audioName} by ${artistName}`,
-          icon: 'info',
-          showCancelButton: false,
-          showConfirmButton: false,
-          timer: 1500,
-          position: 'top-end',
-        });
-        // use destory method to remove event, optimize this variables order
-        this.aplayer.toggle();
-      });
+      this.playButtonNode.addEventListener(
+        'click',
+        this.handleClick.bind(this),
+      );
 
       const aplayerNode = $tw.utils.domMaker('div', {
         class: 'w-96 roudned-lg',
@@ -72,7 +63,8 @@ A music player widget that uses the APlayer library.
       const container = $tw.utils.domMaker('div', {
         class: 'flex justify-center items-center',
         attributes: {},
-        children: [aplayerNode, playButtonNode],
+        // children: [aplayerNode, this.playButtonNode],
+        children: [aplayerNode],
       });
 
       parent.insertBefore(container, nextSibling);
@@ -100,6 +92,33 @@ A music player widget that uses the APlayer library.
       };
 
       this.aplayer = new APlayer(aplayerOptions);
+    }
+
+    handleClick() {
+      Swal.fire({
+        toast: true,
+        title: `🎶 ${this.getAttribute(
+          'audioName',
+          '清风',
+        )} by ${this.getAttribute('artistName', 'Chen')}`,
+        icon: 'info',
+        showCancelButton: false,
+        showConfirmButton: false,
+        timer: 1500,
+        position: 'top-end',
+      });
+      this.aplayer.toggle();
+    }
+
+    destroy() {
+      if (this.playButtonNode) {
+        this.playButtonNode.removeEventListener('click', this.handleClick);
+        this.playButtonNode = null;
+      }
+      if (this.aplayer) {
+        this.aplayer.destroy();
+        this.aplayer = null;
+      }
     }
   }
 

@@ -9,6 +9,8 @@
   "author": "oeyoews",
   "dependents": [
     "$:/plugins/oeyoews/tiddlywiki-modal-ui",
+    "$:/plugins/oeyoews/neotw-swal2",
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
     "$:/plugins/kookma/shiraz-callout"
   ],
   "list": "readme explore"

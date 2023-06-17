@@ -1,7 +1,7 @@
 /*\
 title: $:/plugins/oeyoews/neotw-music/startup.js
 type: application/javascript
-// module-type: startup
+module-type: startup
 
 neotw music
 
@@ -17,9 +17,14 @@ neotw music
   exports.synchronous = true;
 
   exports.startup = function () {
-    // window.APlayer =
-    require('$:/plugins/oeyoews/neotw-music/aplayer.min.js');
+    // global music window.APlayer is key
+    window.APlayer = require('$:/plugins/oeyoews/neotw-music/aplayer.min.js');
+    // metingjs
     require('$:/plugins/oeyoews/neotw-music/meting.min.js');
-    require('$:/plugins/oeyoews/neotw-music/meting-init.js');
+    // add html tag
+    const {
+      metingOption,
+    } = require('$:/plugins/oeyoews/neotw-music/meting-init.js');
+    metingOption();
   };
 })();
