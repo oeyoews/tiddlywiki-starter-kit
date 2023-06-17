@@ -6,7 +6,6 @@ module-type: widget
 neotw-time widget
 
 \*/
-// TODO 实现翻转效果
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
@@ -19,8 +18,6 @@ neotw-time widget
   class TimeWidget extends Widget {
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
-
-      // 设置默认更新间隔为 1 秒
       this.interval = this.getAttribute('interval', 1000);
     }
 
@@ -35,6 +32,7 @@ neotw-time widget
         text: '',
         class: 'bg-black text-white rounded inline py-2 px-4 text-xl',
       });
+
       classNames.forEach(className => {
         if (className) {
           divNode.classList.add(className);
@@ -43,14 +41,13 @@ neotw-time widget
 
       parent.insertBefore(divNode, nextSibling);
       this.domNodes.push(divNode);
-      this.update();
+
       this.startTimer();
     }
 
     startTimer() {
-      // 使用箭头函数来绑定正确的 this 引用
+      this.update();
       this.timer = setInterval(() => {
-        // 更新 widget 的内容
         this.update();
       }, this.interval);
     }
@@ -59,14 +56,11 @@ neotw-time widget
       if (!this.domNodes || !this.domNodes[0]) {
         clearInterval(this.timer);
         return;
-      } else {
-        // 获取当前时间并更新 widget 的内容
-        const now = new Date();
-        const timeString = now.toLocaleTimeString();
-        // this.dom节点的内容更新为当前时间字符串;
-        this.domNodes[0].textContent = timeString;
-        // console.log('updated widget');
       }
+
+      const now = new Date();
+      const timeString = now.toLocaleTimeString();
+      this.domNodes[0].textContent = timeString;
     }
   }
 

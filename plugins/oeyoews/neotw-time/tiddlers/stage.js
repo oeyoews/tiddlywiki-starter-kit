@@ -30,6 +30,7 @@ stage widget
     }
 
     startTimer() {
+      this.update();
       this.timer = setInterval(() => {
         this.update();
       }, this.interval);
