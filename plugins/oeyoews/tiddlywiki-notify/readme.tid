@@ -21,4 +21,4 @@ title: $:/plugins/oeyoews/tiddlywiki-notify/readme
 * [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/tiddlywiki-notify]]
 * [[Demo|https://oeyoews.github.io/neotw]]
 
-!! NOT support nodejs this simple-notify library
+<$notify />
