@@ -6,6 +6,9 @@ module-type: widget
 A music player widget that uses the APlayer library.
 
 \*/
+// TODO: 支持多个音乐
+// 显示歌单
+// 支持自动或主动destory
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
