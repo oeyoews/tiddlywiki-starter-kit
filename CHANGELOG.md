@@ -1,3 +1,10 @@
+## [3.309.2](https://github.com/oeyoews/neotw/compare/v3.309.1...v3.309.2) (2023-06-17)
+
+
+### Bug Fixes
+
+* add missing uri ([e767c3d](https://github.com/oeyoews/neotw/commit/e767c3d87b0cefb4d45df01e8d8946500877255c))
+
 ## [3.309.1](https://github.com/oeyoews/neotw/compare/v3.309.0...v3.309.1) (2023-06-15)
 
 
