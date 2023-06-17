@@ -6,8 +6,6 @@ module-type: widget
 stage widget
 
 \*/
-// TODO: add param
-// update logic
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
@@ -21,15 +19,18 @@ stage widget
   class StageWidget extends Widget {
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
+      this.timestamp = null; // 初始设为 null
+      this.interval = null; // 初始设为 null
+    }
+
+    computeAttributes() {
+      super.computeAttributes();
+      this.timestamp = this.getAttribute('timestamp', '2021-12-23');
       this.interval = this.getAttribute('interval', 1000);
-      this.timestamp = '2021-12-23';
-      this.timeStage = calculateTimeDiff(this.timestamp);
     }
 
     startTimer() {
-      // 使用箭头函数来绑定正确的 this 引用
       this.timer = setInterval(() => {
-        // 更新 widget 的内容
         this.update();
       }, this.interval);
     }
@@ -38,11 +39,8 @@ stage widget
       if (!this.domNodes || !this.domNodes[0]) {
         clearInterval(this.timer);
         return;
-      } else {
-        this.domNodes[0].textContent = calculateTimeDiff(
-          this.getAttribute('timestamp', this.timestamp),
-        );
       }
+      this.domNodes[0].textContent = calculateTimeDiff(this.timestamp);
     }
 
     render(parent, nextSibling) {
@@ -50,14 +48,13 @@ stage widget
       this.computeAttributes();
       this.execute();
 
-      const buttonNode = $tw.utils.domMaker('span', {
-        text: calculateTimeDiff(this.getAttribute('timestamp', this.timestamp)),
+      const StageNode = $tw.utils.domMaker('span', {
+        text: calculateTimeDiff(this.timestamp),
       });
 
-      parent.insertBefore(buttonNode, nextSibling);
-      this.domNodes.push(buttonNode);
+      parent.insertBefore(StageNode, nextSibling);
+      this.domNodes.push(StageNode);
 
-      this.update();
       this.startTimer();
     }
   }
