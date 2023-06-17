@@ -12,10 +12,10 @@ list-before: $:/core/ui/Buttons/close
 <!-- https -->
 <$list filter="[{$:/info/url/protocol}prefix[https]]">
 <$set name="pathname" value={{{ [[$:/info/url/pathname]get[text]] }}}>
+<$set name=uri value={{{ [[$:/info/url/full]get[text]search-replace<pathname>,[/]addsuffix[]] [[]addsuffix<storyTiddler>encodeuricomponent[]] +[join[]] }}} >
 <$action-sendmessage $message="tm-copy-to-clipboard" $param=<<uri>> />
-<!-- <$set name=uri value={{{ [[$:/info/url/full]get[text]search-replace<pathname>,[/]addsuffix[]] [[]addsuffix<storyTiddler>encodeuricomponent[]] +[join[]] }}} > -->
 <!-- <$action-sendmessage $message="tm-open-external-window" $param=<<uri>>/> -->
-<!-- </$set> -->
+</$set>
 </$set>
 </$list>
 <!-- http  -->
