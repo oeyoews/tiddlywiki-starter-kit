@@ -1,3 +1,10 @@
+## [3.309.5](https://github.com/oeyoews/neotw/compare/v3.309.4...v3.309.5) (2023-06-17)
+
+
+### Performance Improvements
+
+* not use encodeurl ([697ecf2](https://github.com/oeyoews/neotw/commit/697ecf26b2b7504282e90055fb64b94700d7c9f1))
+
 ## [3.309.4](https://github.com/oeyoews/neotw/compare/v3.309.3...v3.309.4) (2023-06-17)
 
 
