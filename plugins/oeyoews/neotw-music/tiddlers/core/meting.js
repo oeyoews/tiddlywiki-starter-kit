@@ -6,6 +6,7 @@ module-type: widget
 Meting widget
 
 \*/
+// if use fixed, this always be left bottom; TODO
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
@@ -24,26 +25,25 @@ Meting widget
       // just load meting lib
       require('$:/plugins/oeyoews/neotw-music/meting.min.js');
 
+      const {
+        metingOption,
+      } = require('$:/plugins/oeyoews/neotw-music/meting-init.js');
+
       this.parentDomNode = parent;
       this.computeAttributes();
       this.execute();
 
-      const server = this.getAttribute('server', 'netease');
-      const id = this.getAttribute('id', '1947926942');
-      const type = this.getAttribute('type', 'song');
-      const fold = this.getAttribute('fold', true);
-
+      const currentTiddler = this.getVariable('currentTiddler');
+      // container -> metingNode(meting-js)
       // just add meting html tag, not key
-      const metingNode = this.document.createElement('meting-js');
-      const container = $tw.utils.domMaker('div', {
-        // class: 'm-0 p-0',
-        children: [metingNode],
-      });
+      const customMetingContainer = document.createElement('div');
+      customMetingContainer.setAttribute('id', 'custom-meting-js');
+      // append meting-js tag
+      metingOption(customMetingContainer);
 
-      metingNode.setAttribute('server', server);
-      metingNode.setAttribute('id', id);
-      metingNode.setAttribute('type', type);
-      metingNode.setAttribute('list-folded', fold);
+      const container = $tw.utils.domMaker('div', {
+        children: [customMetingContainer],
+      });
 
       parent.insertBefore(container, nextSibling);
       this.domNodes.push(container);

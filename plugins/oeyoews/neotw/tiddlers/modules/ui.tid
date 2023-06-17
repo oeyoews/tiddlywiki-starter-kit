@@ -73,6 +73,10 @@ tags: $:/tags/PageTemplate
 </$button>
 \end
 
+\define music-button()
+  <$aplayer-dev class='shadow-lg rounded-full hover:scale-110 duration-300 transition' />
+\end
+
 \define load-articles()
 <$set name="a-total" value={{{ [field:publish[article]count[]] }}}>
 <$set name="a-num" value={{{ [[$:/temp/articles/number]get[number]else[1]add[1]] }}}>
@@ -149,6 +153,7 @@ tags: $:/tags/PageTemplate
   <!-- <<switch-lang>> -->
   <!-- <<toggle-theme>> -->
   <<home-button>>
+  <<music-button>>
   <!-- <<load-articles>> -->
 </div>
 </$list>

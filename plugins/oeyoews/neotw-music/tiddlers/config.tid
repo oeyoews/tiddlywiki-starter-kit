@@ -11,7 +11,8 @@ volumn: 0.7
 storyage_name: meting-js
 enablelrc: no
 bottom: 52
-list_folded: true
+
+<!-- list_folded: true -->
 
 \define tid() $:/plugins/oeyoews/neotw-music/config
 

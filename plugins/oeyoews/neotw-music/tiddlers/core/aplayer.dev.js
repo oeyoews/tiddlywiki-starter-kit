@@ -25,37 +25,51 @@ A music player widget that uses the APlayer library.
 
     render(parent, nextSibling) {
       if (!$tw.browser) return;
+      const APlayer = require('$:/plugins/oeyoews/neotw-music/aplayer.min.js');
 
       this.parentDomNode = parent;
       this.computeAttributes();
       this.execute();
 
-      const audioName = this.getAttribute('audioName', '清风');
-      const artistName = this.getAttribute('artistName', 'Chen');
-      const id = this.getAttribute('id', '1947926942');
+      const audios = [
+        {
+          audioName: '清风',
+          artistName: '陈壹千',
+          id: '1947926942',
+        },
+        {
+          audioName: '脱水蓝鲸',
+          artistName: 'Vicky宣宣',
+          id: '1931552540',
+        },
+      ];
+
+      // const id = randomId[Math.floor(Math.random() * randomId.length)];
+      // randomId
+      const randomNum = Math.floor(Math.random() * audios.length);
+      const id = audios[randomNum].id;
+      const { audioName, artistName } = audios[randomNum];
+      // const id = this.getAttribute('id', '1947926942');
       const audioUrl = this.getAttribute(
         'audioUrl',
         'https://music.163.com/song/media/outer/url?id=' + id,
       );
       const coverUrl = this.getAttribute('coverUrl', '');
+      const classNames = this.getAttribute('class', '').split(' ');
 
       const playIcon = $tw.wiki.getTiddlerText(
         '$:/plugins/oeyoews/neotw-music/icon',
       );
 
       const playButtonNode = $tw.utils.domMaker('button', {
-        text: 'button',
         class: 'p-0 m-0 bg-transparent',
         innerHTML: playIcon,
-        attributes: {},
-        children: [],
-        eventListeners: [
-          {
-            name: 'click',
-            handlerObject: this,
-            handlerMethod: '',
-          },
-        ],
+      });
+
+      classNames.forEach(className => {
+        if (className) {
+          playButtonNode.classList.add(className);
+        }
       });
 
       playButtonNode.addEventListener('click', () => {
@@ -74,7 +88,7 @@ A music player widget that uses the APlayer library.
       });
 
       const aplayerNode = $tw.utils.domMaker('div', {
-        class: 'w-96 roudned-lg',
+        // class: 'w-96 roudned-lg',
         attributes: {
           id: 'aplayer',
         },
@@ -110,7 +124,6 @@ A music player widget that uses the APlayer library.
         ],
       };
 
-      const APlayer = require('$:/plugins/oeyoews/neotw-music/aplayer.min.js');
       this.aplayer = new APlayer(aplayerOptions);
     }
   }

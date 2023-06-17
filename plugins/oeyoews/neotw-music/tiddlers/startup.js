@@ -3,7 +3,7 @@ title: $:/plugins/oeyoews/neotw-music/startup.js
 type: application/javascript
 module-type: startup
 
-neotw music
+neotw music startup
 
 \*/
 (function () {
