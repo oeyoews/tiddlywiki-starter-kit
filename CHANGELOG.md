@@ -1,3 +1,10 @@
+## [3.313.1](https://github.com/oeyoews/neotw/compare/v3.313.0...v3.313.1) (2023-06-18)
+
+
+### Performance Improvements
+
+* remove tiddlywiki-sweetalert ([58cbbfd](https://github.com/oeyoews/neotw/commit/58cbbfdf023708c642ee5dc7f77e5a365fefff94))
+
 # [3.313.0](https://github.com/oeyoews/neotw/compare/v3.312.1...v3.313.0) (2023-06-18)
 
 
