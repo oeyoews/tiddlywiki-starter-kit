@@ -28,7 +28,7 @@ neotw-swal2 widget
       this.computeAttributes();
       this.execute();
 
-      const param = this.getAttribute('param', 'Test Param');
+      const param = this.getAttribute('param', 'Swal');
       const classNames = this.getAttribute('class', '').split('');
 
       const buttonNode = $tw.utils.domMaker('button', {
@@ -58,17 +58,17 @@ neotw-swal2 widget
       return {
         icon: 'success',
         title: 'swal',
-        titleText: 'text',
+        titleText: 'Text',
         toast: true,
-        position: 'top', // top center bottom; start end
+        position: 'top-end', // top center bottom; start end
         showConfirmButton: false,
         timer: 1500,
-        timerProgressBar: true,
+        timerProgressBar: false,
         didOpen: toast => {
           toast.addEventListener('mouseenter', Swal.stopTimer);
           toast.addEventListener('mouseleave', Swal.resumeTimer);
         },
-        footer: '',
+        footer: 'Just Test SweetAlert2',
         backdrop: true,
         target: '#demo',
         width: '300px',
@@ -83,20 +83,3 @@ neotw-swal2 widget
 
   exports['swal2'] = SwalWidget;
 })();
-
-/* const Toast = Swal.mixin({
-  toast: true,
-  position: 'top-end',
-  showConfirmButton: false,
-  timer: 3000,
-  timerProgressBar: true,
-  didOpen: (toast) => {
-    toast.addEventListener('mouseenter', Swal.stopTimer)
-    toast.addEventListener('mouseleave', Swal.resumeTimer)
-  }
-})
-
-Toast.fire({
-  icon: 'success',
-  title: 'Signed in successfully'
-}) */

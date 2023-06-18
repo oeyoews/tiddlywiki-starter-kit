@@ -1,6 +1,6 @@
 created: 20230611123805993
 creator: oeyoews
-modified: 20230617042702893
+modified: 20230618130547545
 modifier: oeyoews
 page-cover: https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGxlYXJufGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60
 publish: article
@@ -26,6 +26,12 @@ type: text/markdown
 ## 使用操作系统(平台)
 
 * Linux(:penguin:)
+
+## Tiddlywiki 通知UI
+
+`Sweetalert2`
+
+<$swal2 />
 
 ## 启动方式
 
