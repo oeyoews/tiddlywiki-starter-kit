@@ -1,5 +1,8 @@
 title: $:/plugins/oeyoews/neotw-markdown-extensions/readme
 type: text/markdown
+tags: $:/tags/Layout
+name: {{$:/plugins/oeyoews/neotw-markdown-extensions/icon}} Markdown Extensions
+description: ~Markdown Extensions
 
 <div class="prose max-w-none prose-indigo">
 

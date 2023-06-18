@@ -1,6 +1,9 @@
 title: $:/plugins/oeyoews/neotw-copy-code/readme
+tags: $:/tags/Layout
+name: 🎓 ~Copy Code
+description: ~Copy Code
 
-<div class="prose max-w-none">
+<div class="prose max-w-none prose-indigo">
 
 !! Neotw Copy Code
 
@@ -107,8 +110,8 @@ fun main() {
 * copy code to image
 * support copy image to clipboard
 
-</div>
-
 !! Performace
 
 * lazy load button
+
+</div>

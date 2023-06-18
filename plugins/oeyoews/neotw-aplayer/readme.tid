@@ -1,6 +1,9 @@
 title: $:/plugins/oeyoews/neotw-aplayer/readme
+name: 🎶 ~Aplayer
+description: ~Aplayer
+tags: $:/tags/Layout
 
-<div class="prose max-w-none">
+<div class="prose max-w-none prose-indigo">
 
 <$aplayer />
 

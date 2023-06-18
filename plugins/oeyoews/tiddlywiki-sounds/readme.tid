@@ -1,5 +1,8 @@
 title: $:/plugins/oeyoews/tiddlywiki-sounds/readme
 type: text/markdown
+name: {{$:/plugins/oeyoews/tiddlywiki-sounds/icon}} ~TiddlyWiki Sounds
+description: ~TiddlyWiki Sounds
+tags: $:/tags/Layout
 
 <div class="prose prose-indigo max-w-none">
 

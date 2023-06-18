@@ -1,5 +1,8 @@
 title: $:/plugins/oeyoews/neotw/Readme
 caption: Readme
+name: {{$:/plugins/oeyoews/neotw/icon}} Neotw
+description: Neotw Readme
+tags: $:/tags/Layout
 
 <$list filter="[[$:/language]get[text]match[$:/languages/zh-Hans]]">
   {{$:/plugins/oeyoews/neotw/README-CN}}
