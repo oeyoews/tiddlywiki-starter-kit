@@ -22,6 +22,8 @@ GoToInbox/Key: g I
 GoToInbox/Caption: Go to inbox
 TogglePalette/Key: g t
 TogglePalette/Caption: togglePalette
+ToggleClockLayout/Key: g L
+ToggleClockLayout/Caption: ToggleClockLayout
 ToggleLayout/Key: g l
 ToggleLayout/Caption: ToggleLayout
 ToggleSidebar/Key: g s
