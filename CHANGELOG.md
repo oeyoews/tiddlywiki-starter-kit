@@ -1,3 +1,10 @@
+# [3.312.0](https://github.com/oeyoews/neotw/compare/v3.311.0...v3.312.0) (2023-06-18)
+
+
+### Features
+
+* use neotw-aplayer ([819070e](https://github.com/oeyoews/neotw/commit/819070e976355b16bab56825aca12b030912ce8d))
+
 # [3.311.0](https://github.com/oeyoews/neotw/compare/v3.310.1...v3.311.0) (2023-06-17)
 
 
