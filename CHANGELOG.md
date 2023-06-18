@@ -1,3 +1,10 @@
+## [3.312.1](https://github.com/oeyoews/neotw/compare/v3.312.0...v3.312.1) (2023-06-18)
+
+
+### Bug Fixes
+
+* append aplayerNode but hidden ([16464e9](https://github.com/oeyoews/neotw/commit/16464e93b4eef6d35db8476daa270905a76ba780))
+
 # [3.312.0](https://github.com/oeyoews/neotw/compare/v3.311.0...v3.312.0) (2023-06-18)
 
 
