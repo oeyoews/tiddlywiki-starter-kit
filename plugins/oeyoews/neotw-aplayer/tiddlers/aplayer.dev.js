@@ -22,6 +22,8 @@ A music player widget that uses the APlayer library.
       this.aplayer = null;
       this.playing = null;
       this.fixed = false;
+      this.mutex = true;
+      this.mini = true;
     }
 
     render(parent, nextSibling) {
@@ -79,10 +81,10 @@ A music player widget that uses the APlayer library.
         loop: 'all',
         volume: 0.7,
         // disaple play multi sounds
-        mutex: true,
+        mutex: this.mutex,
         // show left bottom music player
         fixed: this.fixed,
-        mini: true,
+        mini: this.mini,
         order: 'list',
         preload: 'auto',
         // TODO: support multi random songs
