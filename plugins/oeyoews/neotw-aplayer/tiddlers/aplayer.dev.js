@@ -27,6 +27,7 @@ A music player widget that uses the APlayer library.
     }
 
     render(parent, nextSibling) {
+      // if browser, load aplayer library
       if (!$tw.browser) return;
       const APlayer = require('$:/plugins/oeyoews/neotw-aplayer/aplayer.min.js');
 
@@ -50,11 +51,12 @@ A music player widget that uses the APlayer library.
       ];
 
       const audios =
-        $tw.wiki.getTiddlerData('$:/plugins/oeyoews/neotw-music/audios.json') ||
-        audiosDefault;
+        $tw.wiki.getTiddlerData(
+          '$:/plugins/oeyoews/neotw-aplayer/audios.json',
+        ) || audiosDefault;
 
       const randomNum = Math.floor(Math.random() * audios.length);
-      const { name, artist, id, cover } = audios[randomNum];
+      const { name, artist, id } = audios[randomNum];
       const url = `https://music.163.com/song/media/outer/url?id=${id}`;
 
       const classNames = this.getAttribute('class', '').split(' ');
@@ -92,7 +94,6 @@ A music player widget that uses the APlayer library.
             name,
             artist,
             url,
-            cover,
           },
         ],
       };
