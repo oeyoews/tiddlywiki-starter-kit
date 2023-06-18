@@ -51,14 +51,31 @@ function addCopyButton() {
 
       showButton(copyButton);
 
+      const notify = () => {
+        Swal.fire({
+          title: `Copied to clipboard`,
+          icon: 'success',
+          toast: true,
+          showCancelButton: false,
+          showConfirmButton: false,
+          timer: 1500,
+          position: 'top-end',
+          // timer: 5000,
+        });
+      };
+
       copyButton.addEventListener('click', () => {
         navigator.clipboard
           .writeText(codeElement.textContent)
           .then(() => {
-            copyButton.textContent = '✅ Copied!';
-            setTimeout(() => {
-              copyButton.textContent = fileType ? `${fileType} 📋` : '📋';
-            }, 1000);
+            if (typeof Swal?.fire === 'function') {
+              notify();
+            } else {
+              copyButton.textContent = '✅ Copied!';
+              setTimeout(() => {
+                copyButton.textContent = fileType ? `${fileType} 📋` : '📋';
+              }, 1000);
+            }
           })
           .catch(err => {
             console.log(err);
@@ -95,17 +112,7 @@ function addCopyButton() {
           );
           container.appendChild(copiedCodeNode);
           // TODO: add preview option configuration
-          swal({
-            title: fileType
-              ? `Copied to clipboard (filetype: ${fileType})`
-              : `Copied to clipboard`,
-            content: container,
-            icon: 'success',
-            // timer: 5000,
-          });
-        } else {
-          // swal('Copy failed', '', 'error');
-        } */
+        */
       });
       codeElement?.parentNode?.insertBefore(copyButton, codeElement);
     }

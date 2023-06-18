@@ -159,4 +159,5 @@ A music player widget that uses the APlayer library.
   }
 
   exports['aplayer-dev'] = APlayerWidget;
+  exports['aplayer'] = APlayerWidget;
 })();

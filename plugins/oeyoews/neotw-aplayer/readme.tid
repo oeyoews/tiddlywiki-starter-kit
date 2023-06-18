@@ -2,7 +2,6 @@ title: $:/plugins/oeyoews/neotw-aplayer/readme
 
 <div class="prose max-w-none">
 
-!! Neotw Aplayer
+<$aplayer />
 
-* [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/neotw-aplayer]]
-* [[Demo|https://oeyoews.github.io/neotw]]
+<div>
