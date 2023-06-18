@@ -5,11 +5,12 @@ type: application/javascript
 
 neotw startup descption
 \*/
-(function () {
+(function() {
   exports.platforms = ['browser'];
-  exports.after = ['story'];
+  exports.after = ['startup'];
+  exports.before = ['story'];
   exports.synchronous = true;
-  exports.startup = function () {
+  exports.startup = function() {
     if (!$tw.browser) return;
 
     // const tempTitle = $tw.wiki.getTiddlerText('$:/temp/focussedTiddler');
