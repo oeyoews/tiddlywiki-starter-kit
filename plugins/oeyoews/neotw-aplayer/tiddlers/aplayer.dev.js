@@ -61,8 +61,13 @@ A music player widget that uses the APlayer library.
 
       const classNames = this.getAttribute('class', '').split(' ');
 
+      // no color on pagecontrol ui
       const playIcon = $tw.wiki.getTiddlerText(
         '$:/plugins/oeyoews/neotw-aplayer/icon',
+      );
+
+      const playGradientIcon = $tw.wiki.getTiddlerText(
+        '$:/plugins/oeyoews/neotw-aplayer/icon-gradient',
       );
 
       const aplayerNode = $tw.utils.domMaker('div', {
@@ -72,6 +77,9 @@ A music player widget that uses the APlayer library.
       });
 
       const playButtonNode = $tw.utils.domMaker('button', {
+        attributes: {
+          title: `播放 ${name}`,
+        },
         class: `p-0 m-0 bg-transparent ${classNames.join(' ')}`,
         innerHTML: playIcon,
       });
@@ -114,7 +122,17 @@ A music player widget that uses the APlayer library.
       };
 
       playButtonNode.addEventListener('click', () => {
-        this.aplayer.toggle();
+        if (this.playing) {
+          this.aplayer.pause();
+          playButtonNode.innerHTML = playIcon;
+          playButtonNode.title = `播放 ${name}`;
+        }
+        if (!this.playing) {
+          this.aplayer.play();
+          playButtonNode.innerHTML = playGradientIcon;
+          playButtonNode.title = `暂停 ${name}`;
+        }
+        // this.aplayer.toggle();
         // bug: if paused by others , this status is switched
         !this.playing && notify();
         this.playing && notify('info');
