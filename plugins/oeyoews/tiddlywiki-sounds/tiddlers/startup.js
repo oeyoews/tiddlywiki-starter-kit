@@ -25,6 +25,7 @@ module-type: startup
         src: [
           '/files/' + param,
           'https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/plugins/oeyoews/tiddlywiki-sounds/files/sounds/menu-open.mp3',
+          // 'click.mp3',
         ],
         format: ['mp3'],
         autoplay: true,
