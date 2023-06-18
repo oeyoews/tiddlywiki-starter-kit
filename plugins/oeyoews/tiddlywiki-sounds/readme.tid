@@ -1,6 +1,8 @@
 title: $:/plugins/oeyoews/tiddlywiki-sounds/readme
 type: text/markdown
 
+<div class="prose prose-indigo max-w-none">
+
 ## 使用 TiddlyWiki Sounds 插件为您的 TiddlyWiki 添加声音效果
 
 如果您正在寻找一种在 TiddlyWiki 中添加声音效果的方式，我强烈推荐使用 TiddlyWiki Sounds 插件。这个插件可以让您在 TiddlyWiki 中创建具有音频播放功能的按钮，以增强用户体验或提供其他有趣的功能。
@@ -27,3 +29,9 @@ type: text/markdown
 您可以根据需要在不同的 Tiddler 中创建多个声音按钮，为每个按钮指定不同的声音和样式。
 
 这就是使用 TiddlyWiki Sounds 插件为您的 TiddlyWiki 添加声音效果的简单步骤。尝试使用这个插件，为您的 TiddlyWiki 增添一些乐趣和交互性吧！
+
+</div>
+
+## TODO
+
+* use mp3 as target ele, to trigger this mp3

@@ -27,19 +27,21 @@ sounds widget
       this.execute();
 
       let count = 0;
-      const param = this.getAttribute('param', 'Click');
       const className = this.getAttribute('className');
       const widgetId = this.getAttribute('id');
 
+      const icon = $tw.wiki.getTiddlerText(
+        '$:/plugins/oeyoews/tiddlywiki-sounds/icon',
+      );
       const buttonNode = this.document.createElement('button');
       buttonNode.id = widgetId;
-      buttonNode.textContent = param;
+      buttonNode.innerHTML = icon;
       buttonNode.className = className;
 
       buttonNode.onclick = () => {
         count++;
         howler();
-        buttonNode.textContent = `${param} (${count})`;
+        buttonNode.innerHTML = `${icon} (${count})`;
       };
 
       parent.insertBefore(buttonNode, nextSibling);
