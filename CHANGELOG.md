@@ -1,3 +1,10 @@
+# [3.315.0](https://github.com/oeyoews/neotw/compare/v3.314.0...v3.315.0) (2023-06-18)
+
+
+### Features
+
+* add pagelayout for plugin readme ([c3fdb06](https://github.com/oeyoews/neotw/commit/c3fdb062a08847b813241ca60c231f73299d797c))
+
 # [3.314.0](https://github.com/oeyoews/neotw/compare/v3.313.1...v3.314.0) (2023-06-18)
 
 
