@@ -9,7 +9,7 @@ A music player widget that uses the APlayer library.
 // TODO: 支持多个音乐
 // 显示歌单
 // 支持自动或主动destory
-(function () {
+(function() {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -59,7 +59,7 @@ A music player widget that uses the APlayer library.
       );
 
       const playButtonNode = $tw.utils.domMaker('button', {
-        class: 'p-0 b-0 bg-transparent',
+        class: 'p-0 m-0 bg-transparent',
         innerHTML: playIcon,
       });
 
