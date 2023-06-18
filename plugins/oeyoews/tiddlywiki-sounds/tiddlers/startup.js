@@ -20,6 +20,7 @@ module-type: startup
     window.howler = function (param = 'menu-open.mp3') {
       // TODO add pagecontrol button to toggle sound, and support dynamic buttons
       // if () return
+      // TODO
       new Howl({
         src: [
           '/files/' + param,
