@@ -21,6 +21,7 @@ A music player widget that uses the APlayer library.
       super(parseTreeNode, options);
       this.aplayer = null;
       this.playing = null;
+      this.fixed = false;
     }
 
     render(parent, nextSibling) {
@@ -30,6 +31,8 @@ A music player widget that uses the APlayer library.
       this.parentDomNode = parent;
       this.computeAttributes();
       this.execute();
+
+      this.fixed = this.hasAttribute('fixed', false);
 
       const audiosDefault = [
         {
@@ -49,7 +52,7 @@ A music player widget that uses the APlayer library.
         audiosDefault;
 
       const randomNum = Math.floor(Math.random() * audios.length);
-      const { name, artist, id } = audios[randomNum];
+      const { name, artist, id, cover } = audios[randomNum];
       const url = `https://music.163.com/song/media/outer/url?id=${id}`;
 
       const classNames = this.getAttribute('class', '').split(' ');
@@ -59,7 +62,7 @@ A music player widget that uses the APlayer library.
       );
 
       const aplayerNode = $tw.utils.domMaker('div', {
-        class: 'hidden',
+        // class: 'hidden',
         attributes: {
           id: 'aplayer',
         },
@@ -68,7 +71,6 @@ A music player widget that uses the APlayer library.
       const playButtonNode = $tw.utils.domMaker('button', {
         class: `p-0 m-0 bg-transparent ${classNames.join(' ')}`,
         innerHTML: playIcon,
-        children: [aplayerNode],
       });
 
       const aplayerOptions = {
@@ -78,8 +80,9 @@ A music player widget that uses the APlayer library.
         volume: 0.7,
         // disaple play multi sounds
         mutex: true,
-        fixed: false,
-        mini: false,
+        // show left bottom music player
+        fixed: this.fixed,
+        mini: true,
         order: 'list',
         preload: 'auto',
         // TODO: support multi random songs
@@ -88,6 +91,7 @@ A music player widget that uses the APlayer library.
             name,
             artist,
             url,
+            cover,
           },
         ],
       };
@@ -121,6 +125,11 @@ A music player widget that uses the APlayer library.
 
       parent.insertBefore(playButtonNode, nextSibling);
       this.domNodes.push(playButtonNode);
+
+      if (this.fixed) {
+        parent.insertBefore(aplayerNode, nextSibling);
+        this.domNodes.push(aplayerNode);
+      }
     }
 
     destroy() {
