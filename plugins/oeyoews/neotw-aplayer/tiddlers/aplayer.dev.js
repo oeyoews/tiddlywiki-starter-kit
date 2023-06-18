@@ -58,15 +58,17 @@ A music player widget that uses the APlayer library.
         '$:/plugins/oeyoews/neotw-aplayer/icon',
       );
 
-      const playButtonNode = $tw.utils.domMaker('button', {
-        class: `p-0 m-0 bg-transparent ${classNames.join(' ')}`,
-        innerHTML: playIcon,
-      });
-
       const aplayerNode = $tw.utils.domMaker('div', {
+        class: 'hidden',
         attributes: {
           id: 'aplayer',
         },
+      });
+
+      const playButtonNode = $tw.utils.domMaker('button', {
+        class: `p-0 m-0 bg-transparent ${classNames.join(' ')}`,
+        innerHTML: playIcon,
+        children: [aplayerNode],
       });
 
       const aplayerOptions = {
@@ -74,7 +76,7 @@ A music player widget that uses the APlayer library.
         theme: '#f64f59',
         loop: 'all',
         volume: 0.7,
-        mutex: true,
+        mutex: false,
         fixed: false,
         mini: false,
         order: 'list',
@@ -106,6 +108,7 @@ A music player widget that uses the APlayer library.
 
       playButtonNode.addEventListener('click', () => {
         this.aplayer.toggle();
+        // bug: if paused by others , this status is switched
         !this.playing && notify();
         this.playing && notify('info');
         this.playing = !this.playing;
@@ -117,6 +120,11 @@ A music player widget that uses the APlayer library.
 
       parent.insertBefore(playButtonNode, nextSibling);
       this.domNodes.push(playButtonNode);
+    }
+
+    destroy() {
+      this.aplayer?.destroy();
+      this.aplayer = null;
     }
   }
 

@@ -1,9 +1,9 @@
 /*\
-title: $:/plugins/oeyoews/neotw-aplayer/widget.js
+title: $:/plugins/oeyoews/neotw-aplayer/widget-aplayer.js
 type: application/javascript
 module-type: widget
 
-neotw-aplayer widget
+A music player widget that uses the APlayer library.
 
 \*/
 (function () {
@@ -13,47 +13,111 @@ neotw-aplayer widget
 
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
 
-  class DivWidget extends Widget {
+  class APlayerWidget extends Widget {
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
+      this.aplayer = null;
+      this.playButtonNode = null;
     }
 
     render(parent, nextSibling) {
       if (!$tw.browser) return;
+      const APlayer = require('$:/plugins/oeyoews/neotw-aplayer/aplayer.min.js');
 
       this.parentDomNode = parent;
       this.computeAttributes();
       this.execute();
 
-      const param = this.getAttribute('param', 'Test Param');
-      const classNames = this.getAttribute('class', '').split('');
+      const audioName = this.getAttribute('audioName', '清风');
+      const artistName = this.getAttribute('artistName', 'Chen');
+      const id = this.getAttribute('id', '1947926942');
+      const audioUrl = this.getAttribute(
+        'audioUrl',
+        'https://music.163.com/song/media/outer/url?id=' + id,
+      );
+      const coverUrl = this.getAttribute('coverUrl', '');
 
-      const buttonNode = $tw.utils.domMaker('button', {
-        text: param,
-        class: '',
+      this.playButtonNode = this.document.createElement('button');
+      this.playButtonNode.textContent = '🎶';
+      this.playButtonNode.classList.add(
+        'bg-slate-100',
+        'rounded',
+        'hover:bg-slate-200',
+        'transition',
+        'duration-400',
+      );
+
+      this.playButtonNode.addEventListener(
+        'click',
+        this.handleClick.bind(this),
+      );
+
+      const aplayerNode = $tw.utils.domMaker('div', {
+        class: 'w-96 roudned-lg',
+        attributes: {
+          id: 'aplayer',
+        },
+      });
+
+      const container = $tw.utils.domMaker('div', {
+        class: 'flex justify-center items-center',
         attributes: {},
-        children: [],
-        eventListeners: [
+        // children: [aplayerNode, this.playButtonNode],
+        children: [aplayerNode],
+      });
+
+      parent.insertBefore(container, nextSibling);
+      this.domNodes.push(container);
+
+      const aplayerOptions = {
+        container: aplayerNode,
+        theme: '#f64f59',
+        loop: 'all',
+        volume: 0.7,
+        mutex: true,
+        fixed: false,
+        mini: false,
+        order: 'list',
+        preload: 'auto',
+        audio: [
           {
-            name: 'click',
-            handlerObject: this,
-            handlerMethod: 'handlerClick',
+            name: audioName,
+            artist: artistName,
+            url: audioUrl,
+            cover: coverUrl,
+            theme: '#f64f59',
           },
         ],
-      });
-      classNames.forEach(className => {
-        if (className) {
-          buttonNode.classList.add(className);
-        }
-      });
-      parent.insertBefore(buttonNode, nextSibling);
-      this.domNodes.push(buttonNode);
+      };
+
+      this.aplayer = new APlayer(aplayerOptions);
     }
 
-    handlerClick = () => {
-      console.log('This require just load once');
-    };
+    handleClick() {
+      Swal.fire({
+        toast: true,
+        title: `🎶 ${this.getAttribute(
+          'audioName',
+          '清风',
+        )} by ${this.getAttribute('artistName', 'Chen')}`,
+        icon: 'info',
+        showCancelButton: false,
+        showConfirmButton: false,
+        timer: 1500,
+        position: 'top-end',
+      });
+      this.aplayer.toggle();
+    }
+
+    destroy() {
+      if (this.playButtonNode) {
+        this.playButtonNode.removeEventListener('click', this.handleClick);
+        this.playButtonNode = null;
+      }
+      this.aplayer?.destroy();
+      this.aplayer = null;
+    }
   }
 
-  exports[''] = DivWidget;
+  exports.aplayer = APlayerWidget;
 })();
