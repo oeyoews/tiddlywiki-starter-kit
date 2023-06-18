@@ -1,3 +1,10 @@
+# [3.313.0](https://github.com/oeyoews/neotw/compare/v3.312.1...v3.313.0) (2023-06-18)
+
+
+### Features
+
+* add clock layout ([fea78d0](https://github.com/oeyoews/neotw/commit/fea78d09a50a1de0ddcec55f17b59f030f3065fc))
+
 ## [3.312.1](https://github.com/oeyoews/neotw/compare/v3.312.0...v3.312.1) (2023-06-18)
 
 
