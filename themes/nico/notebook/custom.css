@@ -173,3 +173,9 @@ summary::-webkit-details-marker {
 /* details[data-callout] summary::-webkit-details-marker { */
 /*   display: none; */
 /* } */
+
+/* switch layout */
+.tc-chosen,
+.tc-chooser-item:hover {
+  border: none;
+}
