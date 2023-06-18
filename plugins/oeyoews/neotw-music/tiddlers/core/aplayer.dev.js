@@ -9,7 +9,7 @@ A music player widget that uses the APlayer library.
 // TODO: 支持多个音乐
 // 显示歌单
 // 支持自动或主动destory
-(function() {
+(function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -49,7 +49,7 @@ A music player widget that uses the APlayer library.
         audiosDefault;
 
       const randomNum = Math.floor(Math.random() * audios.length);
-      const { name, artist, cover, id } = audios[randomNum];
+      const { name, artist, id } = audios[randomNum];
       const url = `https://music.163.com/song/media/outer/url?id=${id}`;
 
       const classNames = this.getAttribute('class', '').split(' ');
@@ -69,8 +69,37 @@ A music player widget that uses the APlayer library.
         }
       });
 
+      const aplayerNode = $tw.utils.domMaker('div', {
+        attributes: {
+          id: 'aplayer',
+        },
+      });
+
+      const aplayerOptions = {
+        container: aplayerNode,
+        theme: '#f64f59',
+        loop: 'all',
+        volume: 0.7,
+        mutex: true,
+        fixed: false,
+        mini: false,
+        order: 'list',
+        preload: 'auto',
+        // TODO: support multi random songs
+        audio: [
+          {
+            name,
+            artist,
+            url,
+          },
+        ],
+      };
+
+      this.aplayer = new APlayer(aplayerOptions);
+
       const notify = (icon = 'success') => {
         Swal.fire({
+          // ${this.aplayer.audio.duration}`,
           title: `🎶 ${name} by ${artist}`,
           icon,
           toast: true,
@@ -92,37 +121,8 @@ A music player widget that uses the APlayer library.
         // this.aplayer.on('pause', notify('info'));
       });
 
-      const aplayerNode = $tw.utils.domMaker('div', {
-        attributes: {
-          id: 'aplayer',
-        },
-      });
-
       parent.insertBefore(playButtonNode, nextSibling);
       this.domNodes.push(playButtonNode);
-
-      const aplayerOptions = {
-        container: aplayerNode,
-        theme: '#f64f59',
-        loop: 'all',
-        volume: 0.7,
-        mutex: true,
-        fixed: false,
-        mini: false,
-        order: 'list',
-        preload: 'auto',
-        audio: [
-          {
-            name,
-            artist,
-            url,
-            cover,
-            theme: '#f64f59',
-          },
-        ],
-      };
-
-      this.aplayer = new APlayer(aplayerOptions);
     }
   }
 
