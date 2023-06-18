@@ -6,7 +6,7 @@ module-type: startup
 load confetti
 
 \*/
-(function() {
+(function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -16,21 +16,16 @@ load confetti
   exports.after = ['startup'];
   exports.synchronous = true;
 
-  exports.startup = function() {
-    // <$button>
-    // <$action-sendmessage $message="om-confetti-launch" type="centerSound" />
+  exports.startup = function () {
+    require('$:/plugins/oeyoews/neotw-confetti/library/confetti.min.js');
+    const Confetti = require('$:/plugins/oeyoews/neotw-confetti/example/fireworks.js');
     $tw.rootWidget.addEventListener('om-confetti-launch', event => {
-      try {
-        const paramObject = event.paramObject || {};
-        const type = paramObject.type || 'center';
-        // const sound = paramObject.sound || '';
-        Confetti[type]();
-      } catch { }
+      const paramObject = event.paramObject || {};
+      const type = paramObject.type || 'center';
+      // const sound = paramObject.sound || '';
+      // canot use &&
+      confetti?.reset();
+      Confetti[type]?.();
     });
-    // startup first first
-
-    window.Confetti = require('$:/plugins/oeyoews/neotw-confetti/example/fireworks.js');
-    // use landing instead
-    // Confetti.fireworks();
   };
 })();

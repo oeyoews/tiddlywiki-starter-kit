@@ -1,11 +1,7 @@
-// load confetti
-require('$:/plugins/oeyoews/neotw-confetti/library/confetti.min.js');
-
 const fireworks = () => {
-  const isDev = $tw.wiki.getTiddlerText('$:/info/url/protocol');
-  const confettiType = 'fireworks';
+  /* const isDev = $tw.wiki.getTiddlerText('$:/info/url/protocol');
 
-  if (isDev === 'http:') return;
+  if (isDev === 'http:') return; */
 
   var duration = 3 * 1000;
   var animationEnd = Date.now() + duration;
@@ -14,7 +10,8 @@ const fireworks = () => {
     spread: 360,
     ticks: 60,
     scalar: 0.8,
-    zIndex: -10000,
+    // zIndex: -10000,
+    zIndex: 10000,
     shapes: ['circle', 'circle', 'square'],
     disableForReducedMotion: false,
   };
@@ -65,8 +62,6 @@ const pride = () => {
 };
 
 const snow = () => {
-  const confettiType = 'snow';
-
   var duration = 15 * 1000;
   var animationEnd = Date.now() + duration;
   var skew = 1;
@@ -100,7 +95,6 @@ const snow = () => {
       requestAnimationFrame(frame);
     }
   })();
-  // console.log(confettiType);
 };
 
 const realistic = () => {
@@ -163,7 +157,7 @@ const center = () => {
 };
 
 const centerSound = () => {
-  howler();
+  typeof howler !== 'undefined' && howler();
   confetti({
     particleCount: 100,
     spread: 70,
@@ -209,7 +203,7 @@ const msg = () => {
   }, 250);
 };
 
-module.exports = {
+const moduleExports = {
   fireworks,
   snow,
   pride,
@@ -219,3 +213,5 @@ module.exports = {
   centerSound,
   msg,
 };
+
+module.exports = moduleExports;

@@ -9,8 +9,6 @@ module-type: widget
   /*global $tw: false */
   'use strict';
 
-  if (!$tw.browser) return;
-
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
 
   class ConfettiButtonWidget extends Widget {
@@ -19,6 +17,8 @@ module-type: widget
     }
 
     render(parent, nextSibling) {
+      if (!$tw.browser) return;
+
       this.parentDomNode = parent;
       this.computeAttributes();
       this.execute();
@@ -26,7 +26,8 @@ module-type: widget
       const text = this.getAttribute('text', 'Click Me!');
       const buttonNode = $tw.utils.domMaker('button', {
         text,
-        class: 'bg-red-200 rounded m-1',
+        class:
+          'bg-indigo-300 rounded-sm m-1 hover:bg-indigo-400 duration-300 transition',
         eventListeners: [
           {
             name: 'click',
@@ -41,27 +42,26 @@ module-type: widget
     }
 
     handleClick() {
-      const confettiMethods = Object.values(Confetti);
+      require('$:/plugins/oeyoews/neotw-confetti/library/confetti.min.js');
+      confetti?.reset();
+      const Confetti = require('$:/plugins/oeyoews/neotw-confetti/example/fireworks.js');
       const type = this.getAttribute('type');
 
-      // how use reset method
-      function randomConfetti() {
-        const index = Math.floor(Math.random() * confettiMethods.length);
-        if (method && typeof method === 'function') {
-          confettiMethods[index];
-        }
-      }
-
-      try {
-        if (type) {
-          Confetti[type]();
-        } else {
-          randomConfetti();
-        }
-      } catch {
-        console.warn(`${type} is not supported params `);
+      if (type === 'random' || !type) {
+        const types = Object.keys(Confetti);
+        const randomType = types[Math.floor(Math.random() * types.length)];
+        confetti.reset();
+        Confetti[randomType]();
+      } else {
+        type && Confetti[type]?.();
       }
     }
+
+    /* handleClick() {
+      const Confetti = require('$:/plugins/oeyoews/neotw-confetti/example/fireworks.js');
+      const type = this.getAttribute('type');
+      type && Confetti[type]?.();
+    } */
   }
 
   exports.confetti = ConfettiButtonWidget;
