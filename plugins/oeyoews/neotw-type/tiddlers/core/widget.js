@@ -6,7 +6,7 @@ module-type: widget
 neotw-type widget
 
 \*/
-(function() {
+(function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -36,7 +36,8 @@ neotw-type widget
         attributes: {},
       });
       const classNames =
-        'text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-500 to-yellow-500';
+        // 'text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-500 to-yellow-500';
+        'text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400 inline';
       if (gradient) {
         classNames.split(' ').forEach(className => {
           divNode.classList.add(className);

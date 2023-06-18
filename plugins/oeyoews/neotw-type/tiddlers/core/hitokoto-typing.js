@@ -45,9 +45,11 @@ neotw-type widget with hitokoto
           'text-transparent',
           'bg-clip-text',
           'bg-gradient-to-r',
-          'from-teal-400',
+          /* 'from-teal-400',
           'via-pink-500',
-          'to-yellow-500',
+          'to-yellow-500', */
+          'from-cyan-400',
+          'to-purple-400',
         );
       }
       parent.insertBefore(divNode, nextSibling);

@@ -60,9 +60,9 @@ stage widget
           'text-transparent',
           'bg-clip-text',
           'bg-gradient-to-r',
-          'from-teal-400',
-          'via-pink-500',
-          'to-yellow-500',
+          'from-cyan-400',
+          'to-purple-400',
+          'inline',
         );
 
       parent.insertBefore(StageNode, nextSibling);
