@@ -1,3 +1,10 @@
+# [3.314.0](https://github.com/oeyoews/neotw/compare/v3.313.1...v3.314.0) (2023-06-18)
+
+
+### Features
+
+* support reset for confetti ([341c4c6](https://github.com/oeyoews/neotw/commit/341c4c6f4cf5d9158d598fa3b0b364818d6618f6))
+
 ## [3.313.1](https://github.com/oeyoews/neotw/compare/v3.313.0...v3.313.1) (2023-06-18)
 
 
