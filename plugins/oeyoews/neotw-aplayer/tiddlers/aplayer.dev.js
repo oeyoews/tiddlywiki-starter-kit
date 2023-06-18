@@ -76,7 +76,8 @@ A music player widget that uses the APlayer library.
         theme: '#f64f59',
         loop: 'all',
         volume: 0.7,
-        mutex: false,
+        // disaple play multi sounds
+        mutex: true,
         fixed: false,
         mini: false,
         order: 'list',
