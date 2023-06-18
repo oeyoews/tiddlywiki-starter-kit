@@ -59,14 +59,8 @@ A music player widget that uses the APlayer library.
       );
 
       const playButtonNode = $tw.utils.domMaker('button', {
-        class: 'p-0 m-0 bg-transparent',
+        class: `p-0 m-0 bg-transparent ${classNames.join(' ')}`,
         innerHTML: playIcon,
-      });
-
-      classNames.forEach(className => {
-        if (className) {
-          playButtonNode.classList.add(className);
-        }
       });
 
       const aplayerNode = $tw.utils.domMaker('div', {
