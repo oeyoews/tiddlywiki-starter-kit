@@ -58,7 +58,8 @@ A music player widget that uses the APlayer library.
         '$:/plugins/oeyoews/neotw-music/icon',
       );
 
-      const playButtonNode = $tw.utils.domMaker('div', {
+      const playButtonNode = $tw.utils.domMaker('button', {
+        class: 'p-0 b-0 bg-transparent',
         innerHTML: playIcon,
       });
 
