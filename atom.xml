@@ -4469,8 +4469,8 @@ observer.<span class="hljs-title function_">observe</span>(targetElement, { <spa
 <li>aria2c -d <dirname> <url>&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;</url></dirname></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-badges</title><link href="https://neotw.netlify.app/#neotw-badges"></link><link href="https://neotw.netlify.app/static/neotw-badges.html" rel="alternative" type="text/html"></link><id>f934e3aa-d36d-34bb-609b-922693d9b993</id><updated>2023-06-01T21:41:11</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div class="dark:hidden">
-<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-717-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-50-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-79-green?style=social"></img>
-<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-67 minutes ago-green?style=social"></img>  
+<img class=" tc-image-loading" src="https://img.shields.io/badge/🐟 Tiddlers-717-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🏷️ Tags-50-green?style=social"></img> <img class=" tc-image-loading" src="https://img.shields.io/badge/🧩 Plugins-77-green?style=social"></img>
+<img class=" tc-image-loading" src="https://img.shields.io/badge/⏰ Updated-104 minutes ago-green?style=social"></img>  
 </div></p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw-command</title><link href="https://neotw.netlify.app/#neotw-command"></link><link href="https://neotw.netlify.app/static/neotw-command.html" rel="alternative" type="text/html"></link><id>188385e0-6b3a-4916-a54a-061d9d29e18f</id><updated></updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown">
 <h2>cp</h2>
 <pre class="hljs"><code class="shell hljs">eg: dir: 1/2/3
@@ -5063,7 +5063,7 @@ yarn upgrade-interactive --latest    # 忽略包json ，升级最新版本
 <td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，提供插件库和管理功能</td>
 </tr>
 <tr>
-<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-sweetalert">oeyoews/tiddlywiki-sweetalert</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-missing _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-sweetalert">oeyoews/tiddlywiki-sweetalert</a></td>
 <td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，集成了 <a class="tc-tiddlylink tc-tiddlylink-missing" href="#SweetAlert">SweetAlert</a> 库</td>
 </tr>
 <tr>
@@ -5135,7 +5135,7 @@ yarn upgrade-interactive --latest    # 忽略包json ，升级最新版本
 <td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，集成了 <a class="tc-tiddlylink tc-tiddlylink-missing" href="#GitHub">GitHub</a> 分享功能</td>
 </tr>
 <tr>
-<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-update-check">oeyoews/tiddlywiki-update-check</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-missing _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-update-check">oeyoews/tiddlywiki-update-check</a></td>
 <td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，检查更新</td>
 </tr>
 <tr>
@@ -5303,7 +5303,7 @@ yarn upgrade-interactive --latest    # 忽略包json ，升级最新版本
 <td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，提供插件库和管理功能</td>
 </tr>
 <tr>
-<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-sweetalert">oeyoews/tiddlywiki-sweetalert</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-missing _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-sweetalert">oeyoews/tiddlywiki-sweetalert</a></td>
 <td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，集成了 <a class="tc-tiddlylink tc-tiddlylink-missing" href="#SweetAlert">SweetAlert</a> 库</td>
 </tr>
 <tr>
@@ -5375,7 +5375,7 @@ yarn upgrade-interactive --latest    # 忽略包json ，升级最新版本
 <td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，集成了 <a class="tc-tiddlylink tc-tiddlylink-missing" href="#GitHub">GitHub</a> 分享功能</td>
 </tr>
 <tr>
-<td><a class="tc-tiddlylink tc-tiddlylink-resolves _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-update-check">oeyoews/tiddlywiki-update-check</a></td>
+<td><a class="tc-tiddlylink tc-tiddlylink-missing _codified_" href="#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-update-check">oeyoews/tiddlywiki-update-check</a></td>
 <td><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#TiddlyWiki">TiddlyWiki</a> 插件，检查更新</td>
 </tr>
 <tr>
@@ -7409,6 +7409,8 @@ archlinux-java status
 </li>
 </ul>
 &lt;/div&gt;</exec></li></ul></filename></li></ul></time></li></ul></li></ul></username></li></username></li></username></li></ul></directions></li></ul></li></ul></server-id></p></li></id></p></li></ul></PID></p></li></ul></div></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw/action/base-time-darkmode</title><link href="https://neotw.netlify.app/#neotw%2Faction%2Fbase-time-darkmode"></link><link href="https://neotw.netlify.app/static/neotw%252Faction%252Fbase-time-darkmode.html" rel="alternative" type="text/html"></link><id>ca300897-59c7-394f-ab70-18ef3e8afa20</id><updated>2022-09-10T11:55:09</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>
+
+
 
 
 </p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw/actions/base-browser-darkmode</title><link href="https://neotw.netlify.app/#neotw%2Factions%2Fbase-browser-darkmode"></link><link href="https://neotw.netlify.app/static/neotw%252Factions%252Fbase-browser-darkmode.html" rel="alternative" type="text/html"></link><id>c06b7073-601c-a135-522e-8d52eb62e6db</id><updated>2022-09-10T11:09:04</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p></p></div></content><author><name>oeyoews</name></author></entry><entry><title>neotw/archive/restore-button</title><link href="https://neotw.netlify.app/#neotw%2Farchive%2Frestore-button"></link><link href="https://neotw.netlify.app/static/neotw%252Farchive%252Frestore-button.html" rel="alternative" type="text/html"></link><id>51399bbb-0860-5f76-e517-a4cedcb6a20c</id><updated>2022-09-07T13:28:13</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p><div style="text-align: right;">
