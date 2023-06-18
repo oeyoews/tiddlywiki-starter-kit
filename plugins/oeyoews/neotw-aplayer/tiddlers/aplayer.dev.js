@@ -64,7 +64,6 @@ A music player widget that uses the APlayer library.
       );
 
       const aplayerNode = $tw.utils.domMaker('div', {
-        // class: 'hidden',
         attributes: {
           id: 'aplayer',
         },
