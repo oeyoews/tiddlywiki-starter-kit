@@ -21,12 +21,11 @@ module.exports = {
   Fullscreen: {
     autoStart: false,
   },
-  /* Thumbs: {
+  Thumbs: {
     type: 'modern', // modern, classic
-    showOnStart: false,
+    showOnStart: true,
     key: 'o',
-  }, */
-  Thumbs: false,
+  },
   keyboard: {
     Delete: 'close',
     Escape: 'close',
@@ -44,7 +43,7 @@ module.exports = {
     ArrowLeft: 'prev',
   },
   Images: {
-    initialSize: 'cover', // cover; fit;
+    initialSize: 'fit', // cover; fit;
   },
   Hash: false, // custom hash  https://fancyapps.com/fancybox/plugins/hash/
 };
