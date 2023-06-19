@@ -1,0 +1,8 @@
+title: $:/plugins/oeyoews/neotw-emoji-picker/Layout
+tags: $:/tags/Layout
+name: 😼 Emoji Picker
+description: ~Emoji Picker
+
+<div class="prose max-w-none prose-indigo m-auto w-1/2 my-4">
+  <$transclude tiddler="$:/plugins/oeyoews/neotw-emoji-picker/readme" />
+</div>

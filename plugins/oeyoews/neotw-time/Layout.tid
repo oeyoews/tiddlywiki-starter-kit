@@ -1,0 +1,8 @@
+title: $:/plugins/oeyoews/neotw-time/Layout
+tags: $:/tags/Layout
+name: {{$:/plugins/oeyoews/neotw-time/icon}} Neotw Time
+description: {{$:/plugins/oeyoews/neotw-time/readme!!description}}
+
+<div class="prose max-w-none prose-indigo m-auto w-1/2 my-4">
+  <$transclude tiddler="$:/plugins/oeyoews/neotw-time/readme" />
+</div>

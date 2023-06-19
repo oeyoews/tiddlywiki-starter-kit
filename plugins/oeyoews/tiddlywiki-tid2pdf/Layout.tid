@@ -1,0 +1,8 @@
+title: $:/plugins/oeyoews/tiddlywiki-tid2pdf/Layout
+tags: $:/tags/Layout
+name: {{$:/plugins/oeyoews/tiddlywiki-tid2pdf/icon}} ~TiddlyWiki Tid2pdf
+description: ~TiddlyWiki Tid2pdf
+
+<div class="prose max-w-none prose-indigo m-auto w-1/2 my-4">
+  <$transclude tiddler="$:/plugins/oeyoews/tiddlywiki-tid2pdf/readme" />
+</div>

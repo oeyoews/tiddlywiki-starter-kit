@@ -1,0 +1,8 @@
+title: $:/plugins/oeyoews/neotw-unsplash/Layout
+tags: $:/tags/Layout
+name: {{$:/plugins/oeyoews/neotw-unsplash/icon}} Unsplash
+description: Unsplash
+
+<div class="prose max-w-none prose-indigo m-auto w-1/2 my-4">
+  <$transclude tiddler="$:/plugins/oeyoews/neotw-unsplash/readme" />
+</div>

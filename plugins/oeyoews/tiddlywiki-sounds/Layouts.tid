@@ -1,0 +1,8 @@
+title: $:/plugins/oeyoews/NPL/Layout
+tags: $:/tags/Layout
+name: {{$:/plugins/oeyoews/NPL/icon}} ~NPL
+description: ~NPL
+
+<div class="prose max-w-none prose-indigo m-auto w-1/2 my-4">
+  <$transclude tiddler="$:/plugins/oeyoews/NPL/readme" />
+</div>

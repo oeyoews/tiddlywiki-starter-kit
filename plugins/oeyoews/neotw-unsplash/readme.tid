@@ -1,16 +1,7 @@
 title: $:/plugins/oeyoews/neotw-unsplash/readme
-tags: $:/tags/Layout
-name: {{$:/plugins/oeyoews/neotw-unsplash/icon}} Unsplash
 description: Unsplash
 
 <div class="prose max-w-none prose-indigo">
-
-<$button setTitle=<<tabsState>> setField="text" setTo="contents">
-  Contents
-</$button>
-<$button setTitle=<<tabsState>> setField="text" setTo="explore">
-  Explore
-</$button>
 
 !! Neotw Unsplash
 

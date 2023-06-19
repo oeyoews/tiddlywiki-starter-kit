@@ -1,9 +1,7 @@
 title: $:/plugins/oeyoews/NPL/readme
-tags: $:/tags/Layout
-name: {{$:/plugins/oeyoews/NPL/icon}} ~NPL
 description: ~NPL
 
-<div class="prose max-w-none prose-indigo">
+<div class="prose max-w-none prose-indigo m-auto">
 
 !! Npl
 

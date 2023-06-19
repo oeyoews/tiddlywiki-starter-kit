@@ -1,0 +1,8 @@
+tags: $:/tags/Layout
+title: $:/plugins/oeyoews/NPL/Layout
+name: {{$:/plugins/oeyoews/neotw-unsplash/icon}} NPL
+description: {{$:/plugins/oeyoews/neotw-unsplash/icon!!description}}
+
+<div class="prose max-w-none prose-indigo m-auto w-1/2 my-4">
+  <$transclude tiddler="$:/plugins/oeyoews/neotw-NPL/readme" />
+</div>

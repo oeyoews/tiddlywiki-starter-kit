@@ -4,7 +4,7 @@ name: {{$:/plugins/oeyoews/tiddlywiki-sounds/icon}} ~TiddlyWiki Sounds
 description: ~TiddlyWiki Sounds
 tags: $:/tags/Layout
 
-<div class="prose prose-indigo max-w-none">
+<div class="prose max-w-none prose-indigo m-auto w-1/2 my-4">
 
 ## 使用 TiddlyWiki Sounds 插件为您的 TiddlyWiki 添加声音效果
 
@@ -33,8 +33,8 @@ tags: $:/tags/Layout
 
 这就是使用 TiddlyWiki Sounds 插件为您的 TiddlyWiki 添加声音效果的简单步骤。尝试使用这个插件，为您的 TiddlyWiki 增添一些乐趣和交互性吧！
 
-</div>
-
 ## TODO
 
 * use mp3 as target ele, to trigger this mp3
+
+</div>
