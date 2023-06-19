@@ -18,4 +18,4 @@ title: $:/config/EmptyStoryMessage
   </div>
 </center>
 
-{{{ [[$:/plugins/oeyoews/tiddlywiki-cards/bing]] ||$:/core/ui/ViewTemplate }}}
+<!-- {{{ [[$:/plugins/oeyoews/tiddlywiki-cards/bing]] ||$:/core/ui/ViewTemplate }}} -->
