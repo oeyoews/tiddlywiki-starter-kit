@@ -1,3 +1,10 @@
+## [3.316.3](https://github.com/oeyoews/neotw/compare/v3.316.2...v3.316.3) (2023-06-19)
+
+
+### Performance Improvements
+
+* remove rss plugins ([af55a01](https://github.com/oeyoews/neotw/commit/af55a01f9bb9c1bde3f50d97000fb92dde3f1860))
+
 ## [3.316.2](https://github.com/oeyoews/neotw/compare/v3.316.1...v3.316.2) (2023-06-19)
 
 
