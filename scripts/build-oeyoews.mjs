@@ -28,7 +28,7 @@ oraSpinner.start();
 await $`rm -rf ${dist}`;
 
 // rss
-await $`npx ${bin} --build feed`;
+// await $`npx ${bin} --build feed`;
 
 // library
 await $`npx ${bin} --build library`;
