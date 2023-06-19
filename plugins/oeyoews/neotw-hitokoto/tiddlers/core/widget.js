@@ -10,11 +10,9 @@ Hitokoto widget
   /*jslint node: true, browser: true */
   /*global $tw: false */
 
-  if (!$tw.browser) return;
-
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
 
-  class Hitokoto extends Widget {
+  class HitokotoWidget extends Widget {
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
       this.executing = false;
@@ -22,6 +20,8 @@ Hitokoto widget
     }
 
     render(parent, nextSibling) {
+      if (!$tw.browser) return;
+
       this.parentDomNode = parent;
       this.computeAttributes();
       this.execute();
@@ -30,8 +30,6 @@ Hitokoto widget
         text: 'Loading ...',
         class:
           'text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400 cursor-pointer text-xs inline',
-        attributes: {},
-        children: [],
         eventListeners: [
           {
             name: 'click',
@@ -68,5 +66,5 @@ Hitokoto widget
     handlerClick = this.throttle(this.fetchHitokoto, 500);
   }
 
-  exports.hitokoto = Hitokoto;
+  exports.hitokoto = HitokotoWidget;
 })();
