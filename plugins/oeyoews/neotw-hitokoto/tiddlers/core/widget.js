@@ -63,7 +63,21 @@ Hitokoto widget
       };
     }
 
-    handlerClick = this.throttle(this.fetchHitokoto, 500);
+    notify() {
+      Swal.fire({
+        toast: true,
+        icon: 'success',
+        position: 'top-end',
+        timer: 1500,
+        title: 'Hitokoto Updated',
+        showConfirmButton: false,
+      });
+    }
+
+    handlerClick = this.throttle(function () {
+      this.fetchHitokoto();
+      this.notify();
+    }, 500);
   }
 
   exports.hitokoto = HitokotoWidget;
