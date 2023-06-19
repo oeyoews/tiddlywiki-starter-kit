@@ -1,7 +1,7 @@
-title: $:/plugins/oeyoews/neotw-unsplash/Layout
+title: $:/plugins/oeyoews/neotw-aplayer/Layout
 tags: $:/tags/Layout
-name: {{$:/plugins/oeyoews/neotw-unsplash/icon}} Unsplash
-description: Unsplash
+name: {{$:/plugins/oeyoews/neotw-aplayer/icon}} Aplayer
+description: ~Aplayer
 
 \import [[$:/core/ui/PageMacros]] [all[shadows+tiddlers]tag[$:/tags/Macro]!has[draft.of]]
 
@@ -15,5 +15,5 @@ description: Unsplash
   languageTitle={{{ [{$:/language}get[name]] }}}>
 
 <div class="prose max-w-none prose-indigo m-auto sm:w-auto md:w-3/4">
-{{{ [[$:/plugins/oeyoews/neotw-unsplash/readme]] ||$:/core/ui/ViewTemplate }}}
+{{{ [[$:/plugins/oeyoews/neotw-aplayer/readme]] ||$:/core/ui/ViewTemplate }}}
 </div>
