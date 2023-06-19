@@ -1,3 +1,10 @@
+# [3.316.0](https://github.com/oeyoews/neotw/compare/v3.315.1...v3.316.0) (2023-06-19)
+
+
+### Features
+
+* use template ([64bfd4d](https://github.com/oeyoews/neotw/commit/64bfd4dd4090fc9b5cab3bfab5ae82fb7236f578))
+
 ## [3.315.1](https://github.com/oeyoews/neotw/compare/v3.315.0...v3.315.1) (2023-06-19)
 
 
