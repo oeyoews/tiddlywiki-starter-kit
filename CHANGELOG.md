@@ -1,3 +1,10 @@
+## [3.316.2](https://github.com/oeyoews/neotw/compare/v3.316.1...v3.316.2) (2023-06-19)
+
+
+### Bug Fixes
+
+* suitable wikify param for 5.3.0 images ([d928ef8](https://github.com/oeyoews/neotw/commit/d928ef88e0695cf9769ff45ed7ff3a47c5632990))
+
 ## [3.316.1](https://github.com/oeyoews/neotw/compare/v3.316.0...v3.316.1) (2023-06-19)
 
 
