@@ -17,3 +17,5 @@ title: $:/config/EmptyStoryMessage
     <$typing text="A modern style and elegant notebook based on Tiddlywiki by oeyoews" gradient />
   </div>
 </center>
+
+{{{ [[$:/plugins/oeyoews/tiddlywiki-cards/bing]] ||$:/core/ui/ViewTemplate }}}

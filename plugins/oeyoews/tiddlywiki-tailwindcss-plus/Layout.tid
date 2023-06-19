@@ -3,6 +3,8 @@ tags: $:/tags/Layout
 title: $:/plugins/oeyoews/tiddlywiki-tailwindcss-plus/Layout
 description: {{$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus/readme!!description}}
 
-<div class="prose max-w-none prose-indigo m-auto w-1/2 my-4">
-  <$transclude tiddler="$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus/readme" />
+\import [[$:/core/ui/PageMacros]] [all[shadows+tiddlers]tag[$:/tags/Macro]!has[draft.of]]
+
+<div class="prose max-w-none prose-indigo m-auto sm:w-auto md:w-3/4 sm:my-0 md:my-4">
+  {{{ [[$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus/readme]] ||$:/core/ui/ViewTemplate }}}
 </div>

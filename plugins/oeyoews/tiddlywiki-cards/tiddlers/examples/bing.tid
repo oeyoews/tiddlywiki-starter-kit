@@ -7,7 +7,7 @@ cards: yes
 </div>
 \end
 
-<div class="flex gap-4 snap-x overflow-auto p-8 shadow-lg rounded-lg">
+<div class="flex gap-4 snap-x overflow-auto p-8 rounded-lg">
 <<img 0>>
 <<img 1>>
 <<img 2>>

@@ -18,3 +18,7 @@ tags: $:/tags/Stylesheet
 [data-tags*='Journal'] {
   border: 1px dashed blue !important;
 }
+
+[data-tiddler-title="$:/plugins/oeyoews/tiddlywiki-cards/bing"] .tc-titlebar {
+	display: none;
+}
