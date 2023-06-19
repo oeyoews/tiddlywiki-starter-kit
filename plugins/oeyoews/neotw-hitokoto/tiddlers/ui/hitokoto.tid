@@ -1,4 +1,5 @@
 title: $:/plugins/oeyoews/neotw-hitokoto/ui/hitokoto
+
 <!-- tags: $:/tags/ViewTemplate -->
 
 <$list filter="[all[current]!is[system]!field:hitokoto[no]]">
