@@ -1,12 +1,15 @@
 created: 20230619150240359
 creator: oeyoews
-modified: 20230619150640284
+modified: 20230619151220775
 modifier: oeyoews
+publish: public
 tags: TiddlyWiki Plugins
-title: 想要写的插件
+title: (即将)想要写的TiddlyWiki5插件
 type: text/markdown
 
 @[toc]
+
+<<.preamble "🔌 (即将)想要写的TiddlyWiki5插件">>
 
 ## TODO
 
@@ -16,4 +19,10 @@ type: text/markdown
 - [ ] 日间模式插件
 - [ ] Tiddlywiki LSP
 - [ ] 插件更新提示插件
+- [ ] 工作区切换插件
+:::
+
+## Done
+
+:::
 :::
