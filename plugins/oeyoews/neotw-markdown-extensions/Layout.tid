@@ -1,0 +1,8 @@
+title: $:/plugins/oeyoews/neotw-markdown-extensions/Layout
+tags: $:/tags/Layout
+name: {{$:/plugins/oeyoews/neotw-markdown-extensions/icon}} Neotw Markdown Extensions
+description: {{$:/plugins/oeyoews/neotw-markdown-extensions/readme!!description}}
+
+<div class="prose max-w-none prose-indigo m-auto w-1/2 my-4">
+  <$transclude tiddler="$:/plugins/oeyoews/neotw-markdown-extensions/readme" />
+</div>

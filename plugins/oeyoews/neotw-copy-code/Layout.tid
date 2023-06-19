@@ -1,0 +1,8 @@
+title: $:/plugins/oeyoews/neotw-copy-code/Layout
+tags: $:/tags/Layout
+name: {{$:/plugins/oeyoews/neotw-copy-code/icon}} Neotw Copy Code
+description: {{$:/plugins/oeyoews/neotw-copy-code/readme!!description}}
+
+<div class="prose max-w-none prose-indigo m-auto w-1/2 my-4">
+  <$transclude tiddler="$:/plugins/oeyoews/neotw-copy-code/readme" />
+</div>

@@ -1,7 +1,5 @@
 title: $:/plugins/oeyoews/tiddlywiki-tailwindcss-plus/readme
 description: ~TailwindCss
-name: {{$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus/icon}} ~TailwindCss
-tags: $:/tags/Layout
 
 <div class="prose max-w-none mx-auto prose-indigo">
 

@@ -1,0 +1,8 @@
+tags: $:/tags/Layout
+title: $:/plugins/oeyoews/neotw/Layout
+description: {{$:/plugins/oeyoews/neotw!!description}}
+name: {{$:/plugins/oeyoews/neotw/icon}} Neotw
+
+<div class="prose max-w-none prose-indigo m-auto w-1/2 my-4">
+  <$transclude tiddler="$:/plugins/oeyoews/neotw/Readme" />
+</div>

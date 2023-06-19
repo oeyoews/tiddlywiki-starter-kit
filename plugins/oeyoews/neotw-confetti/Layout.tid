@@ -1,0 +1,8 @@
+title: $:/plugins/oeyoews/neotw-confetti/Layout
+tags: $:/tags/Layout
+name: {{$:/plugins/oeyoews/neotw-confetti/icon}} Neotw Confetti
+description: {{$:/plugins/oeyoews/neotw-confetti/readme!!description}}
+
+<div class="prose max-w-none prose-indigo m-auto w-1/2 my-4">
+  <$transclude tiddler="$:/plugins/oeyoews/neotw-confetti/readme" />
+</div>
