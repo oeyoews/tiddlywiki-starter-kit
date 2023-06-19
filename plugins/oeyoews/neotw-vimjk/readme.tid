@@ -1,6 +1,4 @@
 title: $:/plugins/oeyoews/codemirror-keymap-vimjk/readme
-tags: $:/tags/Layout
-name: {{$:/plugins/oeyoews/codemirror-keymap-vimjk/icon}} ~VimJk
 description: ~Codemirror ~VimJK
 
 <div class="prose max-w-none prose-indigo">

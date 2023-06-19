@@ -1,7 +1,6 @@
-title: $:/plugins/oeyoews/tiddlywiki-sounds/Layout
 tags: $:/tags/Layout
-name: {{$:/plugins/oeyoews/tiddlywiki-sounds/icon}} Sounds
-description: {{$:/plugins/oeyoews/tiddlywiki-sounds/readme!!description}}
+name: {{$:/plugins/oeyoews/codemirror-keymap-vimjk/icon}} ~VimJk
+description: {{$:/plugins/oeyoews/codemirror-keymap-vimjk/readme!!description}}
 
 \import [[$:/core/ui/PageMacros]] [all[shadows+tiddlers]tag[$:/tags/Macro]!has[draft.of]]
 
@@ -15,5 +14,5 @@ description: {{$:/plugins/oeyoews/tiddlywiki-sounds/readme!!description}}
   languageTitle={{{ [{$:/language}get[name]] }}}>
 
 <div class="prose max-w-none prose-indigo m-auto sm:w-auto md:w-3/4">
-  {{{ [[$:/plugins/oeyoews/tiddlywiki-sounds/readme]] ||$:/core/ui/ViewTemplate }}}
+  {{{ [[$:/plugins/oeyoews/codemirror-keymap-vimjk/readme]] ||$:/core/ui/ViewTemplate }}}
 </div>

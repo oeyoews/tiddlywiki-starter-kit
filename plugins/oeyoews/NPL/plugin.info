@@ -8,5 +8,5 @@
   "plugin-type": "plugin",
   "name": "Npl",
   "dependents": [],
-  "list": "readme explore"
+  "list": "readme"
 }
