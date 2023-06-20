@@ -1,3 +1,10 @@
+## [3.318.1](https://github.com/oeyoews/neotw/compare/v3.318.0...v3.318.1) (2023-06-20)
+
+
+### Bug Fixes
+
+* disable publish-filter ([2b6ce59](https://github.com/oeyoews/neotw/commit/2b6ce59bd01c46ee6888ba71c5949000504159fc))
+
 # [3.318.0](https://github.com/oeyoews/neotw/compare/v3.317.0...v3.318.0) (2023-06-20)
 
 
