@@ -2,7 +2,7 @@ tags: $:/tags/Stylesheet
 title: $:/themes/nico/notebook/base
 type: text/vnd.tiddlywiki
 
-\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
+<!-- \rules only filteredtranscludeinline transcludeinline macrodef macrocallinline -->
 
 \define if-sidebar(text)
   <$reveal state="$:/state/notebook-sidebar" type="match" text="yes">
@@ -16,7 +16,7 @@ type: text/vnd.tiddlywiki
   </$reveal>
 \end
 
-\define sidebarPosition() {{sidebar-position!!position}}
+\define sidebarPosition() {{{ [[sidebar-position]get[position]else[right]] }}}
 
 /* Top and bottom bars */
 
@@ -189,7 +189,7 @@ input[type="search"]::-webkit-search-cancel-button {
 <<if-sidebar """
 @media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
   .nc-sidebar {
-    animation: sidebar-appear .14s;
+    animation: sidebar-appear ease-in .2s;
     padding-top: 10px;
   }
 }
