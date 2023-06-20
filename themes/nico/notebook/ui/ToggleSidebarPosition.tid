@@ -1,0 +1,18 @@
+title: $:/themes/nico/notebook/ui/toggle-sidebar-positon
+tags: $:/tags/PageControls
+list-before: $:/core/ui/Buttons/more-page-actions
+description: Position
+caption: Position
+
+\whitespace trim
+<$button tooltip="Position" aria-label="Position" class=<<tv-config-toolbar-class>>>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+🪐
+  <$action-listops $tiddler="$:/themes/nico/notebook/metrics/sidebar-position" $field="position" $subfilter="+[toggle[left],[right]]" />
+</$list>
+<$list filter="[<tv-config-toolbar-text>match[yes]]">
+<span class="tc-btn-text">
+<$text text="Toggle Sidebar Position"/>
+</span>
+</$list>
+</$button>

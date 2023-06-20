@@ -16,7 +16,7 @@ type: text/vnd.tiddlywiki
   </$reveal>
 \end
 
-\define sidebarPosition() {{{ [[sidebar-position]get[position]else[right]] }}}
+\define sidebarPosition() {{{ [[$:/themes/nico/notebook/metrics/sidebar-position]get[position]else[right]] }}}
 
 /* Top and bottom bars */
 
