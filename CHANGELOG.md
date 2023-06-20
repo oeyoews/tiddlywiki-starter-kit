@@ -1,3 +1,10 @@
+# [3.318.0](https://github.com/oeyoews/neotw/compare/v3.317.0...v3.318.0) (2023-06-20)
+
+
+### Features
+
+* better setup toggle position ([0c3dc0d](https://github.com/oeyoews/neotw/commit/0c3dc0d8bcc60e43b9301b27f470b08d6fcf34d1))
+
 # [3.317.0](https://github.com/oeyoews/neotw/compare/v3.316.3...v3.317.0) (2023-06-20)
 
 
