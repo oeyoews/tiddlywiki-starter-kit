@@ -1,3 +1,10 @@
+# [3.317.0](https://github.com/oeyoews/neotw/compare/v3.316.3...v3.317.0) (2023-06-20)
+
+
+### Features
+
+* support left/right sidebar ([5358063](https://github.com/oeyoews/neotw/commit/5358063c87b45e098ebd8a22db07da551a203752))
+
 ## [3.316.3](https://github.com/oeyoews/neotw/compare/v3.316.2...v3.316.3) (2023-06-19)
 
 
