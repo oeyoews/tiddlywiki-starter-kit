@@ -1,3 +1,10 @@
+## [3.318.2](https://github.com/oeyoews/neotw/compare/v3.318.1...v3.318.2) (2023-06-20)
+
+
+### Performance Improvements
+
+* because of remove publishTiddler macro bug, this ([7dc9250](https://github.com/oeyoews/neotw/commit/7dc92503c7bd5b35abfe2cb5aaabd219b3f30d14))
+
 ## [3.318.1](https://github.com/oeyoews/neotw/compare/v3.318.0...v3.318.1) (2023-06-20)
 
 
