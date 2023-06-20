@@ -41,11 +41,14 @@ tid2pdf module
           imgNode.src = imgData;
           imgNode.crossOrigin = '';
           const cloneImgNode = imgNode.cloneNode(true);
-          cloneImgNode.style.width = '712px';
+          cloneImgNode.classList.add('md:w-3/4', 'm-auto');
+          // cloneImgNode.style.width = '712px';
 
           const containerNode = document.createElement('div');
           containerNode.classList.add(
             'border',
+            'md:w-3/4',
+            'm-auto',
             'border-2',
             'p-1',
             'rounded',
@@ -83,9 +86,8 @@ console.log("当前环境是否是PC：", isCurrentEnvironmentPC); */
           preview &&
             Swal.fire({
               icon: 'success',
-              title: title,
               html: containerNode,
-              text: `Image size: ${sizeInMB.toFixed(2)} MB`,
+              title: `${title} Image size: ${sizeInMB.toFixed(2)} MB`,
               showCancelButton: true,
               confirmButtonText: 'Download',
               cancelButtonText: 'Cancel',

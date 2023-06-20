@@ -1,12 +1,13 @@
 /*\
 title: tid2png/widget
 type: application/javascript
-module-type: widget
+// module-type: widget
 
 tid2png/widget
 
 \*/
 // TODO: count img size
+//
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
@@ -47,7 +48,7 @@ tid2png/widget
       const icon = container.firstChild.innerHTML;
       const html2canvas = require('html2canvas.min.js');
       const buttonNode = $tw.utils.domMaker('button', {
-        innerHTML: `${icon} ${this.param}`,
+        innerHTML: `${this.param}`,
         class:
           'bg-lime-200 hover:bg-lime-300 duration-200 transition rounded-sm py-1 px-2 transition duration-200 m-1',
         attributes: {},
@@ -62,7 +63,7 @@ tid2png/widget
       });
 
       parent.insertBefore(buttonNode, nextSibling);
-      this.domNodes.push(buttonNode);
+      // this.domNodes.push(buttonNode);
 
       const downloadPng = imgData => {
         NProgress.start();
@@ -86,6 +87,7 @@ tid2png/widget
           useCORS: true,
           letterRendering: 1,
         }).then(canvas => {
+          // BUG HERE
           const imgData = canvas.toDataURL('image/png');
 
           // TODO: support data-fancybox arrtibute
