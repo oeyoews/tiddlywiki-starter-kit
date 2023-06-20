@@ -6,41 +6,22 @@ module-type: widget
 Gravatar and QQ  Github Avatar Widget(Lastest gqg)
 
 \*/
-
-/**
- * 提供一个名为 $avatar 的自定义标签, 用于生成用户的头像。
- * 这个插件的实现依赖了 md5.min.js 这个 JavaScript 库，用于计算 Gravatar 头像的哈希值.
- *
- * 该自定义标签支持以下属性：
- * type：头像类型，可选值为 qq、github、gravatar、gravatar-cn。默认值是 qq。
- * email：用户电子邮件地址，用于计算 Gravatar 头像哈希值。默认值是作者的 QQ 邮箱。
- * size：头像大小，单位是像素。默认值是 100。
- * alt：图片的 alt 属性值，用于文字替换或说明。默认值是 Avatar。
- * width：设置图片的最大宽度，如果没有指定 width 属性，则默认为 56px。
- * username：在 GitHub 中使用的用户名，仅在 type 设置为 github 时有效。
- * center：bool 类型，默认值为 false。当设置为 true 时，图片将居中显示。
- * link：要链接到的网址。如果设置了 link，则会为图片添加链接，并且点击头像将跳转到指定网站。
- *
- * 在 render 方法中，该标签会根据属性的设置来生成头像，并添加到 TiddlyWiki 页面中。
- * 整个插件是一个 IIFE（Immediately Invoked Function Expression）函数，其中定义了一个 AvatarWidget 类，在类的内部实现了 render 方法来生成头像。最后通过 exports.avatar = AvatarWidget; 部分将 AvatarWidget 类导出为 $avatar 标签供 TiddlyWiki 使用。
- *
- */
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
 
-  if (!$tw.browser) return;
-
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
-  const md5 = require('$:/plugins/oeyoews/tiddlywiki-gravatar/md5.min.js');
 
   class AvatarWidget extends Widget {
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
     }
 
-    render = function (parent, nextSibling) {
+    render(parent, nextSibling) {
+      if (!$tw.browser) return;
+      const md5 = require('$:/plugins/oeyoews/tiddlywiki-gravatar/md5.min.js');
+
       this.parentDomNode = parent;
       this.computeAttributes();
       this.execute();
@@ -103,7 +84,7 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
       img.setAttribute('alt', alt);
       img.title = "Click to open this user's profile";
 
-      let ele = null;
+      let ele = img;
       if (link) {
         ele = $tw.utils.domMaker('a', {
           attributes: {
@@ -114,9 +95,6 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
           },
           children: [img],
         });
-      } else {
-        ele = img;
-        // img.crossOrigin = '';
       }
 
       // 在图片加载失败时使用渐变圆形背景
@@ -135,7 +113,7 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
 
       parent.insertBefore(ele, nextSibling);
       this.domNodes.push(ele);
-    };
+    }
   }
 
   exports.avatar = AvatarWidget;

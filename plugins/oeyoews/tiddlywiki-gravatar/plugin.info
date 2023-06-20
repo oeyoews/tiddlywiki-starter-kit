@@ -8,5 +8,5 @@
   "plugin-type": "plugin",
   "name": "Tiddlywiki Gravatar",
   "dependents": [],
-  "list": "readme explore"
+  "list": "readme"
 }
