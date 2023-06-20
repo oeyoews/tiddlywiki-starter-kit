@@ -16,6 +16,8 @@ type: text/vnd.tiddlywiki
   </$reveal>
 \end
 
+\define sidebarPosition() {{sidebar-position!!position}}
+
 /* Top and bottom bars */
 
 /* Hide the top-right bar */
@@ -177,10 +179,10 @@ input[type="search"]::-webkit-search-cancel-button {
 <!-- TODO: overwrite this effect  -->
 @keyframes sidebar-appear {
   0%   {
-    right: -{{$:/themes/nico/notebook/metrics/sidebar-width}};
+    <<sidebarPosition>>: -{{$:/themes/nico/notebook/metrics/sidebar-width}};
   }
   100% {
-    right: 0;
+    <<sidebarPosition>>: 0;
   }
 }
 
@@ -287,7 +289,7 @@ input[type="search"]::-webkit-search-cancel-button {
 @media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
   .nc-sidebar {
     position: fixed;
-    right: 0;
+    <<sidebarPosition>>: 0;
     top:  0;
     bottom: 0;
   }
@@ -297,13 +299,13 @@ input[type="search"]::-webkit-search-cancel-button {
 @media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
   @keyframes sidebar-slide {
     0%   {
-      right: -100vw;
+      <<sidebarPosition>>: -100vw;
     }
     50%   {
-      right: -50vw;
+      <<sidebarPosition>>: -50vw;
     }
     100% {
-      right: 0;
+      <<sidebarPosition>>: 0;
     }
   }
   .nc-sidebar {
@@ -320,12 +322,13 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 @media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+
   .tc-page-container {
-    margin-right: {{$:/themes/nico/notebook/metrics/sidebar-width}} !important;
+    margin-<<sidebarPosition>>: {{$:/themes/nico/notebook/metrics/sidebar-width}} !important;
   }
 
   .nc-topbar-wrapper {
-    right: {{$:/themes/nico/notebook/metrics/sidebar-width}};
+    <<sidebarPosition>>: {{$:/themes/nico/notebook/metrics/sidebar-width}};
   }
 }
 """>>
