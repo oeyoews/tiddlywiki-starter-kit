@@ -1,6 +1,6 @@
 created: 20230619150240359
 creator: oeyoews
-modified: 20230619181734621
+modified: 20230620110356401
 modifier: oeyoews
 publish: public
 tags: TiddlyWiki Plugins
@@ -29,6 +29,7 @@ type: text/markdown
 
 :::info
 - [ ] 时钟翻页效果 https://www.qireader.com.cn/tags/!readlater/entries/2pWeqXJNm71VrbXM
+- [ ] update toggle sidebar position icon
 :::
 
 ## Done
