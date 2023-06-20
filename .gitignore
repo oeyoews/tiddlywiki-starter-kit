@@ -67,3 +67,5 @@ upload
 tiddlers/keepstate/**/*
 main.js
 markdown-dev
+
+tiddlers/themes/nico/notebook/metrics/sidebar-position.tid
