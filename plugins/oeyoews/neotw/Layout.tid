@@ -17,6 +17,6 @@ name: {{$:/plugins/oeyoews/neotw/icon}} Neotw
 <!-- \import [all[shadows]tag[$:/tags/Image]] -->
 <!-- \import [all[shadows]tag[$:/tags/ViewToolbar]] -->
 
-<div class="prose max-w-none prose-indigo m-auto sm:w-auto md:w-3/4">
+<div class="prose max-w-none prose-indigo m-auto sm:w-auto md:w-2/3">
   {{{ [[$:/plugins/oeyoews/neotw/Readme]] ||$:/core/ui/ViewTemplate }}}
 </div>

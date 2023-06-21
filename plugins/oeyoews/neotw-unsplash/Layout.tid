@@ -14,6 +14,6 @@ description: Unsplash
   storyviewTitle={{$:/view}}
   languageTitle={{{ [{$:/language}get[name]] }}}>
 
-<div class="prose max-w-none prose-indigo m-auto sm:w-auto md:w-3/4">
+<div class="prose max-w-none prose-indigo m-auto sm:w-auto md:w-2/3">
 {{{ [[$:/plugins/oeyoews/neotw-unsplash/readme]] ||$:/core/ui/ViewTemplate }}}
 </div>

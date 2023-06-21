@@ -1,7 +1,7 @@
-title: $:/plugins/oeyoews/neotw-aplayer/Layout
+title: $:/plugins/oeyoews/neotw-hitokoto/Layout
 tags: $:/tags/Layout
-name: {{$:/plugins/oeyoews/neotw-aplayer/icon}} Aplayer
-description: ~Aplayer
+name: {{$:/plugins/oeyoews/neotw-hitokoto/icon}} Hitokoto
+description: Hitokoto
 
 \import [[$:/core/ui/PageMacros]] [all[shadows+tiddlers]tag[$:/tags/Macro]!has[draft.of]]
 
@@ -15,5 +15,5 @@ description: ~Aplayer
   languageTitle={{{ [{$:/language}get[name]] }}}>
 
 <div class="prose max-w-none prose-indigo m-auto sm:w-auto md:w-2/3">
-{{{ [[$:/plugins/oeyoews/neotw-aplayer/readme]] ||$:/core/ui/ViewTemplate }}}
+{{{ [[$:/plugins/oeyoews/neotw-hitokoto/readme]] ||$:/core/ui/ViewTemplate }}}
 </div>
