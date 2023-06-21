@@ -1,3 +1,10 @@
+# [3.319.0](https://github.com/oeyoews/neotw/compare/v3.318.2...v3.319.0) (2023-06-21)
+
+
+### Features
+
+* support svg icons for neotw-markdown-extensions containers ([1a4809e](https://github.com/oeyoews/neotw/commit/1a4809ea79755472bc12438bd3fde4490c40ecca))
+
 ## [3.318.2](https://github.com/oeyoews/neotw/compare/v3.318.1...v3.318.2) (2023-06-20)
 
 
