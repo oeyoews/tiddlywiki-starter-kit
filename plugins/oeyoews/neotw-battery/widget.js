@@ -1,5 +1,5 @@
 /*\
-title: $:/plugins/oeyoews/neotw-battery/widget.js
+title: $:/plugins/oeyoews/neotw-battery/battery.js
 type: application/javascript
 module-type: widget
 
@@ -13,7 +13,7 @@ neotw-battery widget
 
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
 
-  class DivWidget extends Widget {
+  class BatteryWidget extends Widget {
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
       this.intervalId = null;
@@ -25,11 +25,10 @@ neotw-battery widget
       this.computeAttributes();
       this.execute();
 
-      const classNames = this.getAttribute('class', '').split('');
-      const isGradient = this.hasAttribute('gradient', false);
+      const classNames = this.getAttribute('class', '').split(' ');
 
       const divNode = $tw.utils.domMaker('div', {
-        class: '',
+        class: `inline` + classNames.join(' '),
         attributes: {
           id: 'battery-level',
         },
@@ -48,21 +47,12 @@ neotw-battery widget
       };
 
       showBatteryLevel();
-      // TODO: how to disabled this on dom removed
       const batteryId = document.getElementById('battery-level');
       if (batteryId) {
         this.intervalId = setInterval(showBatteryLevel, 60000);
-        console.log('updated');
       } else {
         clearInterval(this.intervalId);
-        console.log('cleared');
       }
-
-      classNames.forEach(className => {
-        if (className) {
-          divNode.classList.add(className);
-        }
-      });
     }
 
     destroy() {
@@ -71,5 +61,5 @@ neotw-battery widget
     }
   }
 
-  exports['battery'] = DivWidget;
+  exports['battery'] = BatteryWidget;
 })();
