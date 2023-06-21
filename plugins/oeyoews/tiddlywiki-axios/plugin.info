@@ -8,5 +8,5 @@
   "plugin-type": "plugin",
   "name": "Tiddlywiki Axios",
   "dependents": ["$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"],
-  "list": "readme explore"
+  "list": "readme"
 }
