@@ -1,3 +1,10 @@
+# [3.320.0](https://github.com/oeyoews/neotw/compare/v3.319.0...v3.320.0) (2023-06-21)
+
+
+### Features
+
+* try to add grayscale for subtitle ([08bfed7](https://github.com/oeyoews/neotw/commit/08bfed729b182992ceb07de486295d61ef7cccf9))
+
 # [3.319.0](https://github.com/oeyoews/neotw/compare/v3.318.2...v3.319.0) (2023-06-21)
 
 
