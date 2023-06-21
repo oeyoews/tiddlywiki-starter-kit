@@ -9,21 +9,27 @@ tags: $:/tags/ViewTemplate
     <$avatar width=16 link="https://github.com/oeyoews" />
 {{!!creator}}&nbsp;
 </$list>
+<span class="grayscale hover:filter-none">
 <$list filter="[all[current]has[created]]">
 <$text text={{{[<tid>get[ocreated]else[👉]]}}} /> created <$view field="created" format="date" template="YYYY/0MM/0DD"/>&nbsp;&nbsp;
 </$list>
+</span>
+<span class="grayscale hover:filter-none">
 <$list filter="[all[current]has[modified]]">
 <$text text={{{[<tid>get[omodified]else[📝]]}}} /> modified <$view field="modified" format="relativedate" />&nbsp;&nbsp;
 </$list>
+</span>
+<span class="grayscale hover:filter-none">
 <$list filter="[all[current]has[description]]">
 <$text text={{{[<tid>get[odescription]else[✅]]}}} />&nbsp;{{!!description}} &nbsp;&nbsp;
 </$list>
+</span>
 
 <!-- another view -->
 <!-- on dev -->
 <!-- not work ??? -->
 <!-- <$list filter="[{$:/info/url/protocol}prefix[http:]]"> -->
-<span class="text-violet-500">
+<span class="grayscale hover:filter-none text-violet-500">
 <$list filter="[<currentTiddler>!is[system]!days:created[-300]] -[days:modified[-300]]" >
 <!-- add style -->
 
@@ -41,10 +47,12 @@ tags: $:/tags/ViewTemplate
 <!-- local manage -->
 <!-- https have bug, will creat http: tid -->
 <!-- GettingStarted not work filter -->
+<span class="grayscale hover:filter-none">
 <$list filter="[all[current]!is[system]!is[binary]]">
 <<opublish>>
 <!-- <<AddTags>> -->
 </$list>
+</span>
 
 </div>
 </$reveal>
