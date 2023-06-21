@@ -35,6 +35,12 @@ Extension markdown-it
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
 
+  function loadIcons(icon) {
+    return $tw.wiki.getTiddlerText(
+      '$:/plugins/oeyoews/neotw-markdown-extensions/icons/' + icon,
+    );
+  }
+
   function LoadExtensions() {
     const md = $tw.Wiki.parsers['text/markdown'].prototype.md;
 
@@ -53,8 +59,10 @@ Extension markdown-it
       { name: 'error', label: '❌', color: 'red' }, //  ❎
       { name: 'tips', label: '💡', color: 'blue' },
       { name: 'info', label: '💡', color: 'blue' },
-      { name: 'tada', label: '🎉', color: 'blue' },
+      { name: 'tada', label: loadIcons('tada'), color: 'blue' },
       { name: '', label: '🍉', color: 'purple' },
+      { name: 'fire', label: '🔥', color: 'blue' },
+      { name: 'sparkles', label: loadIcons('sparkles'), color: 'blue' },
     ];
 
     md.use(emoji).use(toc).use(task).use(abbr).use(smartarrows);
