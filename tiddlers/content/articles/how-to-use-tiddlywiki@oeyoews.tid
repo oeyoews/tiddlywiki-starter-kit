@@ -1,7 +1,7 @@
 created: 20230611123805993
 creator: oeyoews
 description: Personal Tiddlywiki Introduce
-modified: 20230620154134483
+modified: 20230621094538359
 modifier: oeyoews
 name: 🤔 Thinking
 page-cover: https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGxlYXJufGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60
@@ -42,8 +42,12 @@ type: text/markdown
 
 ## 如何记笔记
 
+:::tada
+不谈知识管理, 不谈第二大脑, 只要能够帮助记忆即可
+:::
+
 * 使用快捷键<kbd>g + n</kbd>(通过扩展motion插件, 自定义快捷键位和新笔记模板) 写入markdown笔记, 使用<kbd>alt + j</kbd> 录入日记
-* 大多是随心所记, 不存在所谓的笔记哲学存在(常青笔记, 卢曼笔记 ...), 最多闲下来的时候, 整理一下过去的笔记, 很少特意去看, 有时会对过去的一些笔记进行更新补充;
+* 大多是随心所记, 不存在所谓的(知识管理)笔记哲学(常青笔记, 卢曼笔记 ...), 最多闲下来的时候, 整理一下过去的笔记, 很少特意去看, 有时会对过去的一些笔记进行更新补充;
 
 ## 编辑器模式
 
