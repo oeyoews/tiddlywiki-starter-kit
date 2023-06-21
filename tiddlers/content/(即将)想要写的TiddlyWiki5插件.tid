@@ -1,6 +1,6 @@
 created: 20230619150240359
 creator: oeyoews
-modified: 20230621030323855
+modified: 20230621100519714
 modifier: oeyoews
 publish: public
 tags: TiddlyWiki Plugins
@@ -16,6 +16,7 @@ type: text/markdown
 ## TODO
 
 :::todo
+- [ ] 可拖动tiddler, 调整顺序
 - [ ] 全文输出 Rss 插件
 - [ ] 全文搜索插件 
 - [ ] 日间模式插件
