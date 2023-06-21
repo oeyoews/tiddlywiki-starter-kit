@@ -17,5 +17,6 @@ I have tried to export a single tiddler to PDF using the third-party library jsp
 * https://www.zhangxinxu.com/wordpress/2023/06/js-canvas-jspdf-export-pdf/
 * use exporter
 * remove cors warning
+* 如果后缀是.js .pdf, 需要额处理
 
 </div>
