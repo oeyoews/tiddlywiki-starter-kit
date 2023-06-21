@@ -5,10 +5,11 @@ description: Position
 caption: Position
 
 \whitespace trim
-<$button tooltip="Position" aria-label="Position" class=<<tv-config-toolbar-class>>>
+<!-- this positon not refreshed -->
+<!-- <$button tooltip={{{ [[$:/themes/nico/notebook/metrics/sidebar-position]get[position]addprefix[Toggle sidebar position ]] }}} aria-label="Position" class="tc-btn-invisible grayscale hover:filter-none"> -->
+<$button tooltip={{{ [[Toggle sidebar position]] }}} aria-label="Position" class="tc-btn-invisible grayscale hover:filter-none">
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
-🪐
-  <$action-listops $tiddler="$:/themes/nico/notebook/metrics/sidebar-position" $field="position" $subfilter="+[toggle[left],[right]]" />
+🪐 <$action-listops $tiddler="$:/themes/nico/notebook/metrics/sidebar-position" $field="position" $subfilter="+[toggle[left],[right]]" />
   <$action-setfield $tiddler="$:/state/notebook-sidebar" text="yes"/>
 </$list>
 <$list filter="[<tv-config-toolbar-text>match[yes]]">

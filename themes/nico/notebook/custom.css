@@ -179,3 +179,13 @@ summary::-webkit-details-marker {
 .tc-chooser-item:hover {
   border: none;
 }
+
+/* support use emoji as icon */
+/* .oemoji { */
+/*   filter: grayscale(100%);
+/*   transition: filter 0.3s;
+/* } */
+/**/
+/* .oemoji:hover { */
+/*   filter: grayscale(0%);
+/* } */
