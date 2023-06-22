@@ -486,7 +486,12 @@ Command Palette Widget
       let inputAndMainHintWrapper = this.createElement('div', {
         className: 'inputhintwrapper',
       });
-      this.div = this.createElement(
+      this.mask = this.createElement('div', {
+        className: 'backdrop-blur z-[9998] fixed left-0 top-0 w-full h-full',
+      }, {
+        opacity: 0,
+      })
+      this.container = this.createElement(
         'div',
         // add transform
         {
@@ -501,14 +506,15 @@ Command Palette Widget
         className: 'commandpalettehint commandpalettehintmain',
       });
       inputAndMainHintWrapper.append(this.input, this.hint);
-      this.scrollDiv = this.createElement('div', { className: 'cp-scroll' });
-      this.div.append(inputAndMainHintWrapper, this.scrollDiv);
+      this.scrollDiv = this.createElement('div', { className: 'cp-scroll my-4' });
+      this.container.append(inputAndMainHintWrapper, this.scrollDiv);
       this.input.addEventListener('keydown', e => this.onKeyDown(e));
       this.input.addEventListener('input', () =>
         this.onInput(this.input.value),
       );
       window.addEventListener('click', e => this.onClick(e));
-      parent.insertBefore(this.div, nextSibling);
+      parent.insertBefore(this.mask, nextSibling)
+      parent.insertBefore(this.container, nextSibling);
 
       this.refreshCommandPalette();
 
@@ -670,7 +676,7 @@ Command Palette Widget
       return { resolver, provider, terms };
     }
     onClick(e) {
-      if (this.isOpened && !this.div.contains(e.target)) {
+      if (this.isOpened && !this.container.contains(e.target)) {
         this.closePalette();
       }
     }
@@ -700,7 +706,9 @@ Command Palette Widget
       }
       this.currentSelection = 0;
       this.onInput(this.input.value); //Trigger results on open
-      this.div.style.display = 'flex ';
+      this.container.style.display = 'flex ';
+      this.mask.style.opacity = '0.8';
+      // this.mask.classList.add('not-allow-cursor')
       this.input.focus();
     }
 
@@ -728,7 +736,8 @@ Command Palette Widget
     }
 
     closePalette() {
-      this.div.style.display = 'none';
+      this.container.style.display = 'none';
+      this.mask.style.opacity = '0';
       this.isOpened = false;
       this.focusAtCaretPosition(
         this.previouslyFocused.element,
@@ -778,7 +787,7 @@ Command Palette Widget
     }
     addResult(result, id) {
       let resultDiv = this.createElement('div', {
-        className: 'commandpaletteresult p-2',
+        className: 'commandpaletteresult p-2 rounded',
         innerText: result.name,
       });
       if (result.hint !== undefined) {
