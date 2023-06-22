@@ -487,7 +487,7 @@ Command Palette Widget
         className: 'inputhintwrapper',
       });
       this.mask = this.createElement('div', {
-        className: 'backdrop-blur z-[9998] fixed left-0 top-0 w-full h-full',
+        className: 'backdrop-blur z-[9998] fixed left-0 top-0 w-full h-full bg-neutral-600',
       }, {
         opacity: 0,
       })
