@@ -487,7 +487,7 @@ Command Palette Widget
         className: 'inputhintwrapper',
       });
       this.mask = this.createElement('div', {
-        className: 'backdrop-blur z-[9998] fixed left-0 top-0 w-full h-full bg-neutral-600',
+        className: 'backdrop-blur z-0 fixed left-0 top-0 w-full h-full bg-neutral-600',
       }, {
         opacity: 0,
       })
@@ -708,7 +708,6 @@ Command Palette Widget
       this.onInput(this.input.value); //Trigger results on open
       this.container.style.display = 'flex ';
       this.mask.style.opacity = '0.8';
-      // this.mask.classList.add('not-allow-cursor')
       this.input.focus();
     }
 
