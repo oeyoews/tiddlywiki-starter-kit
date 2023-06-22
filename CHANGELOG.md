@@ -1,3 +1,10 @@
+# [3.322.0](https://github.com/oeyoews/neotw/compare/v3.321.2...v3.322.0) (2023-06-22)
+
+
+### Features
+
+* add souk21 plugins folder ([6a2f4da](https://github.com/oeyoews/neotw/commit/6a2f4da9acbcde6fcfa943916ada619a0ec4a27f))
+
 ## [3.321.2](https://github.com/oeyoews/neotw/compare/v3.321.1...v3.321.2) (2023-06-22)
 
 
