@@ -104,6 +104,7 @@ fun main() {
 * make preview is optional
 * add transform style
 * update plugin dependencies
+* float right modify too long code view when hover
 
 * copy code to image
 * support copy image to clipboard
