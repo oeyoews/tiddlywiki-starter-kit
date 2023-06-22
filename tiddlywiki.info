@@ -20,6 +20,7 @@
     "tiddlywiki/pluginlibrary",
     "tiddlywiki/internals",
     "tiddlywiki/markdown",
+    "souk21/commandpalette",
     "oeyoews/neotw-markdown-extensions",
     "oeyoews/neotw-highlight-current-tiddler",
     "oeyoews/tiddlywiki-sweetalert",

@@ -1,0 +1,8 @@
+{
+    "title": "$:/plugins/souk21/commandpalette",
+    "author": "Souk21",
+    "core-version": ">=5.2.7",
+    "description": "Command palette",
+    "plugin-type": "plugin",
+    "version": "0.0.8"
+}
