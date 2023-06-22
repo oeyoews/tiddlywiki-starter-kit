@@ -488,7 +488,7 @@ Command Palette Widget
       });
       // pointer-events-none fix z-index bug
       this.mask = this.createElement('div', {
-        className: 'backdrop-blur z-[9998] fixed left-0 top-0 w-full h-full bg-neutral-600 transition pointer-events-none duration-500',
+        className: 'backdrop-blur z-[9998] fixed left-0 top-0 w-full h-full bg-neutral-600 transition-all pointer-events-none duration-500',
       }, {
         opacity: 0,
       })
