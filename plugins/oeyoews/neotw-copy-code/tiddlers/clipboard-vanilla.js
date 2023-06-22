@@ -60,7 +60,6 @@ function addCopyButton() {
           showConfirmButton: false,
           timer: 1500,
           position: 'top-end',
-          // timer: 5000,
         });
       };
 
