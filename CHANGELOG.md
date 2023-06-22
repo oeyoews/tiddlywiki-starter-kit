@@ -1,3 +1,10 @@
+## [3.321.2](https://github.com/oeyoews/neotw/compare/v3.321.1...v3.321.2) (2023-06-22)
+
+
+### Bug Fixes
+
+* remove array error cause ui bug ([070a39d](https://github.com/oeyoews/neotw/commit/070a39d51ceaf475ea7cb7f8d2ab0011a31011a8))
+
 ## [3.321.1](https://github.com/oeyoews/neotw/compare/v3.321.0...v3.321.1) (2023-06-22)
 
 
