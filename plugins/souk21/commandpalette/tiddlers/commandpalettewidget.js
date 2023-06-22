@@ -486,8 +486,9 @@ Command Palette Widget
       let inputAndMainHintWrapper = this.createElement('div', {
         className: 'inputhintwrapper',
       });
+      // pointer-events-none fix z-index bug
       this.mask = this.createElement('div', {
-        className: 'backdrop-blur z-0 fixed left-0 top-0 w-full h-full bg-neutral-600',
+        className: 'backdrop-blur z-[199] fixed left-0 top-0 w-full h-full bg-neutral-600 transition pointer-events-none',
       }, {
         opacity: 0,
       })
