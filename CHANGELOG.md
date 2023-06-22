@@ -1,3 +1,10 @@
+# [3.321.0](https://github.com/oeyoews/neotw/compare/v3.320.0...v3.321.0) (2023-06-22)
+
+
+### Features
+
+* support stickytitles and hide menu bar ([33f50cb](https://github.com/oeyoews/neotw/commit/33f50cba14003393798d4fa30e533d951d28d069))
+
 # [3.320.0](https://github.com/oeyoews/neotw/compare/v3.319.0...v3.320.0) (2023-06-21)
 
 
