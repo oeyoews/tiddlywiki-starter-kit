@@ -6,6 +6,6 @@
   "version": "v2.0.0",
   "core-version": ">=5.2.7",
   "list": "readme LICENSE changelog",
-  "dependents": "$:/themes/tiddlywiki/vanilla $:/plugins/nico/notebook-mobile",
+  "dependents": ["$:/themes/tiddlywiki/vanilla $:/plugins/nico/notebook-mobile", "$:/plugins/oeyoews/tailwindcss-plus"],
   "plugin-type": "theme"
 }
