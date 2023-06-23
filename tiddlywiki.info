@@ -8,7 +8,6 @@
     "tiddlywiki/katex",
     "tiddlywiki/browser-sniff",
     "tiddlywiki/codemirror",
-    "tiddlywiki/codemirror-trailingspace",
     "tiddlywiki/codemirror-autocomplete",
     "tiddlywiki/codemirror-mode-css",
     "tiddlywiki/codemirror-search-replace",
