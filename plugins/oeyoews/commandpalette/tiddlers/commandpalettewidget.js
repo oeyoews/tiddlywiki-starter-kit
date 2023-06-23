@@ -497,18 +497,18 @@ Command Palette Widget
         // add transform
         {
           className:
-            'bg-slate-200 flex-col z-[9999] transform shadow-lg p-2 mt-4 fixed left-1/2 -translate-x-1/2 w-1/2 rounded transition-all duration-500',
+            'bg-white flex-col z-[9999] transform shadow-lg py-2 mt-4 fixed left-1/2 -translate-x-1/2 w-1/2 rounded transition-all duration-500',
         },
         { display: 'none' },
       );
       this.searchContainer = this.createElement('input', { type: 'text' });
-      this.searchContainer.classList.add('w-full')
+      this.searchContainer.classList.add('w-full', 'border-none')
       this.searchContainer.placeholder = '🔥 Search ...';
       this.searchHint = this.createElement('div', {
         className: 'commandpalettehint commandpalettehintmain',
       });
       inputAndMainHintWrapper.append(this.searchHint, this.searchContainer);
-      this.scrollDiv = this.createElement('div', { className: 'cp-scroll my-4' });
+      this.scrollDiv = this.createElement('div', { className: 'cp-scroll my-2' });
       this.container.append(inputAndMainHintWrapper, this.scrollDiv);
       this.searchContainer.addEventListener('keydown', e => this.onKeyDown(e));
       this.searchContainer.addEventListener('input', () =>
@@ -794,7 +794,7 @@ Command Palette Widget
     }
     addResult(result, id) {
       let resultDiv = this.createElement('div', {
-        className: 'commandpaletteresult p-2 rounded',
+        className: 'commandpaletteresult py-2 rounded',
         innerText: result.name,
       });
       if (result.hint !== undefined) {
@@ -877,8 +877,8 @@ Command Palette Widget
       for (let i = 0; i < this.currentResults.length; i++) {
         let selected = this.currentSelection === i + 1;
         this.currentResults[i].className = selected
-          ? 'commandpaletteresult commandpaletteresultselected p-2'
-          : 'commandpaletteresult p-2';
+          ? 'commandpaletteresult commandpaletteresultselected py-2'
+          : 'commandpaletteresult py-2';
       }
       if (this.currentSelection === 0) {
         this.scrollDiv.scrollTop = 0;
