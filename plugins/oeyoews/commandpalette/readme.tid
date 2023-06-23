@@ -2,6 +2,8 @@ title: $:/plugins/oeyoews/commandpalette/readme
 
 !! 改于 $:/plugins/souk21/commandpalette
 
+* https://github.com/Souk21/TW-commandpalette
+
 !! Readme
 
 * 使用tailwindcss, 重写部分样式
@@ -10,6 +12,8 @@ title: $:/plugins/oeyoews/commandpalette/readme
 
 !! TODO
 
+* ctrl-shift-I 不起作用
+* support create tiddlers with tag
 <!-- * add masklayer -->
 * prevent stop scrollable
 <!-- * add search plugins -->
