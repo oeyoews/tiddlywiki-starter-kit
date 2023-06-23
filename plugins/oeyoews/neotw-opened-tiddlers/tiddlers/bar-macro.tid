@@ -43,7 +43,9 @@ tags: $:/tags/Macro
       </$reveal>
     </$list>
     <div class="text-slate-400 py-1 px-2 mr-2 font-bold">
+      <$list filter="[list[$:/StoryList]!has[draft.of]count[]compare:number:gt[0]]">
       {{{ [list[$:/StoryList]count[]] }}}
+    </$list>
     </div>
   </div>
   <!-- <div class="opened-tiddlers-bar-drag-area" /> -->
