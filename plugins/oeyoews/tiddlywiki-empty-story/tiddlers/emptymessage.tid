@@ -1,5 +1,6 @@
 title: $:/config/EmptyStoryMessage
 
+<!-- online -->
 <!-- avatar -->
 <center>
   <$button class="bg-transparent">
@@ -22,4 +23,10 @@ title: $:/config/EmptyStoryMessage
   </div>
 </center>
 
-<!-- {{{ [[$:/plugins/oeyoews/tiddlywiki-cards/bing]] ||$:/core/ui/ViewTemplate }}} -->
+<$list filter="[{$:/info/url/protocol}match[http:]]">
+<!-- 滚动random filter 会刷新 -->
+<div class="flex justify-center items-center">
+<$link to={{{ [all[tiddlers]!is[system]random[1]] ||$:/core/ui/ViewTemplate }}}>
+  <<.icon "$:/plugins/oeyoews/neotw/module/random-button/icon">> Random Tiddler</$link>
+</div>
+</$list>
