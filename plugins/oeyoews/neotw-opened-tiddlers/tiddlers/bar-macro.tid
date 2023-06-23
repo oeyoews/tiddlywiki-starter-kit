@@ -3,9 +3,10 @@ tags: $:/tags/Macro
 
 \define onMiddleClick()
 <$list filter="[<event-mousebutton>match[middle]]">
-<$action-sendmessage $message="tm-close-tiddler" $param=<<currentTab>>/>
+  <$action-sendmessage $message="tm-close-tiddler" $param=<<currentTab>>/>
 </$list>
 \end
+
 \define opened-tiddlers-bar()
 \whitespace trim
 <div class="tc-tab-buttons opened-tiddlers-bar" >
@@ -16,12 +17,12 @@ tags: $:/tags/Macro
         <$eventcatcher $auxclick=<<onMiddleClick>>>
           <div style="display:inline">
             <!-- tc-tab-selected -->
-            <$button to=<<currentTab>> class=" tc-tab bg-slate-200 text-slate-700">
+            <$button to=<<currentTab>> class="tc-tab bg-slate-200 text-slate-700 py-2">
               <$view tiddler=<<currentTab>> field="name">
               <$view tiddler=<<currentTab>> field="title" /></$view>
-              <$button message="tm-close-tiddler" param=<<currentTab>> class="tc-image-button opened-tiddlers-bar-close-button">
-                &times;
-              </$button>
+              <!-- <$button message="tm-close-tiddler" param=<<currentTab>> class="tc-image-button opened-tiddlers-bar-close-button"> -->
+              <!--   &times; -->
+              <!-- </$button> -->
             </$button>
           </div>
         </$eventcatcher>
@@ -29,13 +30,13 @@ tags: $:/tags/Macro
       <$reveal type="nomatch" state="$:/HistoryList!!current-tiddler" text=<<currentTab>>>
         <$eventcatcher $auxclick=<<onMiddleClick>>>
           <div>
-              <$button to=<<currentTab>> class="tc-tab" >
+              <$button to=<<currentTab>> class="tc-tab text-neutral-400 py-2">
                 <$view tiddler=<<currentTab>> field="name">
                   <$view tiddler=<<currentTab>> field="title" />
                 </$view>
-                <$button message="tm-close-tiddler" param=<<currentTab>> class="tc-image-button opened-tiddlers-bar-close-button">
-                  &times;
-                </$button>
+                <!-- <$button message="tm-close-tiddler" param=<<currentTab>> class="tc-image-button opened-tiddlers-bar-close-button"> -->
+                <!--   &times; -->
+                <!-- </$button> -->
               </$button>
           </div>
         </$eventcatcher>

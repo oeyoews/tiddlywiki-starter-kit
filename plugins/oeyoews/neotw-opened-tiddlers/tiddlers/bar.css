@@ -9,6 +9,7 @@ section.story-backdrop .opened-tiddlers-bar-container {
   white-space: nowrap;
   overflow: -moz-scrollbars-none;
   scrollbar-width: none;
+  opacity: 0;
 }
 
 section.story-backdrop .opened-tiddlers-bar-container::-webkit-scrollbar {
@@ -57,8 +58,8 @@ section.story-backdrop > p > .opened-tiddlers-bar-container, section.story-backd
   margin: 0;
   display: flex;
   /* background-color: white; */
-  backdrop-filter: blur(3px);
-  /* background: <<colour tab-background-selected>>; */
+  background: <<colour tab-background-selected>>;
+  /* backdrop-filter: blur(3px); */
 }
 
 div.opened-tiddlers-bar-tabs button {
