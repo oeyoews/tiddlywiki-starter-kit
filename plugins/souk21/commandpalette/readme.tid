@@ -2,7 +2,8 @@ title: $:/plugins/souk21/commandpalette/readme
 
 !! TODO
 
-* add masklayer
+<!-- * add masklayer -->
+* prevent stop scrollable
 * add search plugins
-* right search tips
+<!-- * right search tips -->
 * suitable mobile style

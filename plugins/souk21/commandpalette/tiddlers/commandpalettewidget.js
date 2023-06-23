@@ -59,17 +59,17 @@ Command Palette Widget
     actionStringInput(action, hint, e) {
       this.blockProviderChange = true;
       this.allowInputFieldSelection = true;
-      this.hint.innerText = hint;
-      this.input.value = '';
+      this.searchHint.innerText = hint;
+      this.searchContainer.value = '';
       this.currentProvider = () => { };
       this.currentResolver = e => {
         this.invokeActionString(action, this, e, {
-          commandpaletteinput: this.input.value,
+          commandpaletteinput: this.searchContainer.value,
         });
         this.closePalette();
       };
       this.showResults([]);
-      this.onInput(this.input.value);
+      this.onInput(this.searchContainer.value);
     }
 
     invokeFieldMangler(tiddler, message, param, e) {
@@ -90,18 +90,18 @@ Command Palette Widget
           this.currentResults[this.currentSelection - 1].result.name;
         this.currentProvider = terms => {
           this.currentSelection = 0;
-          this.hint.innerText = hintTag;
+          this.searchHint.innerText = hintTag;
           let searches = filter(tiddler, terms);
           searches = searches.map(s => {
             return { name: s };
           });
           this.showResults(searches);
         };
-        this.input.value = '';
-        this.onInput(this.input.value);
+        this.searchContainer.value = '';
+        this.onInput(this.searchContainer.value);
         this.currentResolver = e => {
           if (!allowNoSelection && this.currentSelection === 0) return;
-          let tag = this.input.value;
+          let tag = this.searchContainer.value;
           if (this.currentSelection !== 0) {
             tag = this.currentResults[this.currentSelection - 1].result.name;
           }
@@ -109,12 +109,12 @@ Command Palette Widget
           if (!e.getModifierState('Shift')) {
             this.closePalette();
           } else {
-            this.onInput(this.input.value);
+            this.onInput(this.searchContainer.value);
           }
         };
       };
-      this.input.value = '';
-      this.onInput(this.input.value);
+      this.searchContainer.value = '';
+      this.onInput(this.searchContainer.value);
     }
 
     refreshThemes(e) {
@@ -305,15 +305,15 @@ Command Palette Widget
 
     newCommandWizard() {
       this.blockProviderChange = true;
-      this.input.value = '';
-      this.hint.innerText = 'Command Name';
+      this.searchContainer.value = '';
+      this.searchHint.innerText = 'Command Name';
       let name = '';
       let type = '';
       let hint = '';
 
       let messageStep = () => {
-        this.input.value = '';
-        this.hint.innerText = 'Enter Message';
+        this.searchContainer.value = '';
+        this.searchHint.innerText = 'Enter Message';
         this.currentResolver = e => {
           this.tmMessageBuilder('tm-new-tiddler', {
             title: '$:/' + name,
@@ -321,27 +321,27 @@ Command Palette Widget
             [this.typeField]: type,
             [this.nameField]: name,
             [this.hintField]: hint,
-            text: this.input.value,
+            text: this.searchContainer.value,
           })(e);
           this.closePalette();
         };
       };
 
       let hintStep = () => {
-        this.input.value = '';
-        this.hint.innerText = 'Enter hint';
+        this.searchContainer.value = '';
+        this.searchHint.innerText = 'Enter hint';
         this.currentResolver = e => {
-          hint = this.input.value;
+          hint = this.searchContainer.value;
           messageStep();
         };
       };
 
       let typeStep = () => {
-        this.input.value = '';
-        this.hint.innerText =
+        this.searchContainer.value = '';
+        this.searchHint.innerText =
           'Enter type (prompt, prompt-basic, message, actionString, history)';
         this.currentResolver = e => {
-          type = this.input.value;
+          type = this.searchContainer.value;
           if (type === 'history') {
             hintStep();
           } else {
@@ -358,8 +358,8 @@ Command Palette Widget
 
       this.currentProvider = terms => { };
       this.currentResolver = e => {
-        if (this.input.value.length === 0) return;
-        name = this.input.value;
+        if (this.searchContainer.value.length === 0) return;
+        name = this.searchContainer.value;
         typeStep();
       };
       this.showResults([]);
@@ -367,9 +367,9 @@ Command Palette Widget
 
     explorer(e) {
       this.blockProviderChange = true;
-      this.input.value = '$:/';
+      this.searchContainer.value = '$:/';
       this.lastExplorerInput = '$:/';
-      this.hint.innerText = 'Explorer (⇧⏎ to add multiple)';
+      this.searchHint.innerText = 'Explorer';
       this.currentProvider = terms => this.explorerProvider('$:/', terms);
       this.currentResolver = e => {
         if (this.currentSelection === 0) return;
@@ -380,17 +380,17 @@ Command Palette Widget
 
     explorerProvider(url, terms) {
       let switchFolder = url => {
-        this.input.value = url;
-        this.lastExplorerInput = this.input.value;
+        this.searchContainer.value = url;
+        this.lastExplorerInput = this.searchContainer.value;
         this.currentProvider = terms => this.explorerProvider(url, terms);
         this.onInput();
       };
-      if (!this.input.value.startsWith(url)) {
-        this.input.value = this.lastExplorerInput;
+      if (!this.searchContainer.value.startsWith(url)) {
+        this.searchContainer.value = this.lastExplorerInput;
       }
-      this.lastExplorerInput = this.input.value;
+      this.lastExplorerInput = this.searchContainer.value;
       this.currentSelection = 0;
-      let search = this.input.value.substr(url.length);
+      let search = this.searchContainer.value.substr(url.length);
       let tiddlers = $tw.wiki.filterTiddlers(
         `[removeprefix[${url}]splitbefore[/]sort[]search[${search}]]`,
       );
@@ -501,19 +501,21 @@ Command Palette Widget
         },
         { display: 'none' },
       );
-      this.input = this.createElement('input', { type: 'text' });
-      this.input.placeholder = '🔥 Search ...';
-      this.hint = this.createElement('div', {
+      this.searchContainer = this.createElement('input', { type: 'text' });
+      this.searchContainer.classList.add('w-full')
+      this.searchContainer.placeholder = '🔥 Search ...';
+      this.searchHint = this.createElement('div', {
         className: 'commandpalettehint commandpalettehintmain',
       });
-      inputAndMainHintWrapper.append(this.input, this.hint);
+      inputAndMainHintWrapper.append(this.searchHint, this.searchContainer);
       this.scrollDiv = this.createElement('div', { className: 'cp-scroll my-4' });
       this.container.append(inputAndMainHintWrapper, this.scrollDiv);
-      this.input.addEventListener('keydown', e => this.onKeyDown(e));
-      this.input.addEventListener('input', () =>
-        this.onInput(this.input.value),
+      this.searchContainer.addEventListener('keydown', e => this.onKeyDown(e));
+      this.searchContainer.addEventListener('input', () =>
+        this.onInput(this.searchContainer.value),
       );
       window.addEventListener('click', e => this.onClick(e));
+
       parent.insertBefore(this.mask, nextSibling)
       parent.insertBefore(this.container, nextSibling);
 
@@ -579,7 +581,7 @@ Command Palette Widget
     historyProviderBuilder(hint, mode) {
       return terms => {
         this.currentSelection = 0;
-        this.hint.innerText = hint;
+        this.searchHint.innerText = hint;
         let results;
         if (mode !== undefined && mode === 'drafts') {
           results = $tw.wiki.filterTiddlers('[has:field[draft.of]]');
@@ -601,8 +603,8 @@ Command Palette Widget
         this.allowInputFieldSelection = true;
         this.currentProvider = provider;
         this.currentResolver = resolver;
-        this.input.value = '';
-        this.onInput(this.input.value);
+        this.searchContainer.value = '';
+        this.onInput(this.searchContainer.value);
       };
       let provider = this.historyProviderBuilder(hint, mode);
       let resolver = e => {
@@ -641,7 +643,7 @@ Command Palette Widget
       let shortcut = this.triggers.find(t => text.startsWith(t.trigger));
       if (shortcut !== undefined) {
         resolver = e => {
-          let inputWithoutShortcut = this.input.value.substr(
+          let inputWithoutShortcut = this.searchContainer.value.substr(
             shortcut.trigger.length,
           );
           this.invokeActionString(shortcut.text, this, e, {
@@ -650,7 +652,7 @@ Command Palette Widget
           this.closePalette();
         };
         provider = terms => {
-          this.hint.innerText = shortcut.hint;
+          this.searchHint.innerText = shortcut.hint;
           this.showResults([]);
         };
       } else {
@@ -698,18 +700,21 @@ Command Palette Widget
         end: activeElement.selectionEnd,
         caretPos: activeElement.selectionEnd,
       };
-      this.input.value = '';
+      this.searchContainer.value = '';
       if (e.param !== undefined) {
-        this.input.value = e.param;
+        this.searchContainer.value = e.param;
       }
       if (this.settings.alwaysPassSelection) {
-        this.input.value += this.getCurrentSelection();
+        this.searchContainer.value += this.getCurrentSelection();
       }
       this.currentSelection = 0;
-      this.onInput(this.input.value); //Trigger results on open
+      this.onInput(this.searchContainer.value); //Trigger results on open
       this.container.style.display = 'flex ';
       this.mask.style.opacity = '0.8';
-      this.input.focus();
+      this.mask.classList.remove('pointer-events-none')
+      this.mask.addEventListener('scroll', e => e.stopPropagation());
+      // this.container.classList.add('translate-y-40')
+      this.searchContainer.focus();
     }
 
     insertSelectedResult() {
@@ -738,6 +743,8 @@ Command Palette Widget
     closePalette() {
       this.container.style.display = 'none';
       this.mask.style.opacity = '0';
+      this.mask.classList.add('pointer-events-none')
+      // this.mask.classList.remove('translate-y-40')
       this.isOpened = false;
       this.focusAtCaretPosition(
         this.previouslyFocused.element,
@@ -810,7 +817,7 @@ Command Palette Widget
     }
     defaultResolver(e) {
       if (e.getModifierState('Shift')) {
-        this.input.value = '+' + this.input.value; //this resolver expects that the input starts with +
+        this.searchContainer.value = '+' + this.searchContainer.value; //this resolver expects that the input starts with +
         this.createTiddlerResolver(e);
         return;
       }
@@ -829,7 +836,7 @@ Command Palette Widget
     }
 
     showHistory() {
-      this.hint.innerText = 'History';
+      this.searchHint.innerText = 'History';
       this.currentProvider = terms => {
         let results;
         if (terms.length === 0) {
@@ -852,9 +859,9 @@ Command Palette Widget
         if (this.currentSelection === 0) return;
         this.currentResults[this.currentSelection - 1].result.action(e);
       };
-      this.input.value = '';
+      this.searchContainer.value = '';
       this.blockProviderChange = true;
-      this.onInput(this.input.value);
+      this.onInput(this.searchContainer.value);
     }
 
     setSelectionToFirst() {
@@ -921,8 +928,8 @@ Command Palette Widget
     }
 
     defaultProvider(terms) {
-      this.hint.innerText = '🔍 Search tiddlers (⇧⏎ to create)';
-      this.hint.className = 'ml-4';
+      this.searchHint.innerText = '🔍';
+      this.searchHint.className = 'mr-2';
       let searches;
       if (terms.startsWith('\\')) terms = terms.substr(1);
       if (terms.length === 0) {
@@ -952,7 +959,7 @@ Command Palette Widget
 
     tagListProvider(terms) {
       this.currentSelection = 0;
-      this.hint.innerText = 'Search tags';
+      this.searchHint.innerText = 'Search tags';
       let searches;
       if (terms.length === 0) {
         searches = $tw.wiki.filterTiddlers(
@@ -976,23 +983,23 @@ Command Palette Widget
     }
     tagListResolver(e) {
       if (this.currentSelection === 0) {
-        let input = this.input.value.substr(1);
+        let input = this.searchContainer.value.substr(1);
         let exist = $tw.wiki.filterTiddlers('[tag[' + input + ']]');
         if (!exist) return;
-        this.input.value = '@' + input;
+        this.searchContainer.value = '@' + input;
         return;
       }
       let result = this.currentResults[this.currentSelection - 1];
-      this.input.value = '@' + result.innerText;
-      this.onInput(this.input.value);
+      this.searchContainer.value = '@' + result.innerText;
+      this.onInput(this.searchContainer.value);
     }
     tagProvider(terms) {
       this.currentSelection = 0;
-      this.hint.innerText = 'Search tiddlers with @tag(s)';
+      this.searchHint.innerText = 'Search tiddlers with @tag(s)';
       let searches = [];
       if (terms.length !== 0) {
         let { tags, searchTerms, tagsFilter } = this.parseTags(
-          this.input.value,
+          this.searchContainer.value,
         );
         let taggedTiddlers = $tw.wiki.filterTiddlers(tagsFilter);
 
@@ -1035,7 +1042,7 @@ Command Palette Widget
 
     settingsProvider(terms) {
       this.currentSelection = 0;
-      this.hint.innerText = 'Select the setting you want to change';
+      this.searchHint.innerText = 'Select the setting you want to change';
       let isNumerical = terms =>
         terms.length !== 0 && terms.match(/\D/gm) === null;
       let isBoolean = terms =>
@@ -1102,9 +1109,9 @@ Command Palette Widget
     settingsResolver(e) {
       if (this.currentSelection === 0) return;
       this.goBack = () => {
-        this.input.value = '|';
+        this.searchContainer.value = '|';
         this.blockProviderChange = false;
-        this.onInput(this.input.value);
+        this.onInput(this.searchContainer.value);
       };
       this.currentResults[this.currentSelection - 1].result.action();
     }
@@ -1114,7 +1121,7 @@ Command Palette Widget
       this.allowInputFieldSelection = false;
       this.currentProvider = terms => {
         this.currentSelection = 0;
-        this.hint.innerText = 'Choose a theme';
+        this.searchHint.innerText = 'Choose a theme';
         let defaultValue = this.defaultSettings['theme'];
         let results = [
           {
@@ -1139,8 +1146,8 @@ Command Palette Widget
       this.currentResolver = e => {
         this.currentResults[this.currentSelection - 1].result.action(e);
       };
-      this.input.value = '';
-      this.onInput(this.input.value);
+      this.searchContainer.value = '';
+      this.onInput(this.searchContainer.value);
     }
 
     //Validator = (terms) => bool
@@ -1149,7 +1156,7 @@ Command Palette Widget
       this.allowInputFieldSelection = true;
       this.currentProvider = terms => {
         this.currentSelection = 0;
-        this.hint.innerText = hint;
+        this.searchHint.innerText = hint;
         let defaultValue = this.defaultSettings[settingName];
         let results = [
           {
@@ -1164,7 +1171,7 @@ Command Palette Widget
       };
       this.currentResolver = e => {
         if (this.currentSelection === 0) {
-          let input = this.input.value;
+          let input = this.searchContainer.value;
           if (validator(input)) {
             this.setSetting(settingName, input);
             this.goBack = undefined;
@@ -1184,8 +1191,8 @@ Command Palette Widget
           }
         }
       };
-      this.input.value = this.settings[settingName];
-      this.onInput(this.input.value);
+      this.searchContainer.value = this.settings[settingName];
+      this.onInput(this.searchContainer.value);
     }
 
     showResults(results) {
@@ -1213,7 +1220,7 @@ Command Palette Widget
     }
     actionProvider(terms) {
       this.currentSelection = 0;
-      this.hint.innerText = 'Search commands';
+      this.searchHint.innerText = '💻';
       let results;
       if (terms.length === 0) {
         results = this.getCommandHistory();
@@ -1228,7 +1235,7 @@ Command Palette Widget
     helpProvider(terms) {
       //TODO: tiddlerify?
       this.currentSelection = 0;
-      this.hint.innerText = 'Help';
+      this.searchHint.innerText = '🐚';
       let searches = [
         { name: '... Search', action: () => this.promptCommand('') },
         { name: '> Commands', action: () => this.promptCommand('>') },
@@ -1263,7 +1270,7 @@ Command Palette Widget
 
     filterProvider(terms, hint) {
       this.currentSelection = 0;
-      this.hint.innerText = hint === undefined ? 'Filter operation' : hint;
+      this.searchHint.innerText = hint === undefined ? 'Filter operation' : hint;
       terms = '[' + terms;
       let fields = $tw.wiki.filterTiddlers('[fields[]]');
       let results = $tw.wiki.filterTiddlers(terms).map(r => {
@@ -1316,7 +1323,7 @@ Command Palette Widget
           }
           let parsed;
           try {
-            parsed = $tw.wiki.parseFilter(this.input.value);
+            parsed = $tw.wiki.parseFilter(this.searchContainer.value);
           } catch (e) { } //The error is already displayed to the user
           let foundTitles = [];
           for (let node of parsed || []) {
@@ -1366,12 +1373,12 @@ Command Palette Widget
 
     createTiddlerProvider(terms) {
       this.currentSelection = 0;
-      this.hint.innerText = 'Create new tiddler with title @tag(s)';
+      this.searchHint.innerText = '🟦';
       this.showResults([]);
     }
 
     createTiddlerResolver(e) {
-      let { tags, searchTerms } = this.parseTags(this.input.value.substr(1));
+      let { tags, searchTerms } = this.parseTags(this.searchContainer.value.substr(1));
       let title = searchTerms.join(' ');
       tags = tags.join(' ');
       this.tmMessageBuilder('tm-new-tiddler', { title: title, tags: tags })(e);
@@ -1380,12 +1387,12 @@ Command Palette Widget
 
     promptCommand(value, caret) {
       this.blockProviderChange = false;
-      this.input.value = value;
-      this.input.focus();
+      this.searchContainer.value = value;
+      this.searchContainer.focus();
       if (caret !== undefined) {
-        this.input.setSelectionRange(caret, caret);
+        this.searchContainer.setSelectionRange(caret, caret);
       }
-      this.onInput(this.input.value);
+      this.onInput(this.searchContainer.value);
     }
 
     promptCommandBasic(value, caret, hint) {
@@ -1397,10 +1404,10 @@ Command Palette Widget
         this.promptCommand(value, caret);
         return;
       }
-      this.input.value = '';
+      this.searchContainer.value = '';
       this.blockProviderChange = true;
       this.currentProvider = this.basicProviderBuilder(value, caret, hint);
-      this.onInput(this.input.value);
+      this.onInput(this.searchContainer.value);
     }
 
     basicProviderBuilder(value, caret, hint) {
@@ -1449,11 +1456,11 @@ Command Palette Widget
           a.name === this.currentResults[this.currentSelection - 1].innerText,
       );
       if (result.keepPalette) {
-        let curInput = this.input.value;
+        let curInput = this.searchContainer.value;
         this.goBack = () => {
-          this.input.value = curInput;
+          this.searchContainer.value = curInput;
           this.blockProviderChange = false;
-          this.onInput(this.input.value);
+          this.onInput(this.searchContainer.value);
         };
       }
       this.updateCommandHistory(result);
