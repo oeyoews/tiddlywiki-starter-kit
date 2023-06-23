@@ -37,12 +37,12 @@ tags: $:/tags/Stylesheet
 }
 
 #stx-story-top {
-   opacity: 0;
+   <!-- opacity: 0; -->
 }
 
 #stx-story-top:hover {
    transition: all 0.3s ease;
-   opacity: 1;
+   <!-- opacity: 1; -->
 }
 
 #stx-story-top .tc-btn-text {
