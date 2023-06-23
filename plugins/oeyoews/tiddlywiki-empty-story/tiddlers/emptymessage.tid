@@ -2,6 +2,9 @@ title: $:/config/EmptyStoryMessage
 
 <!-- online -->
 <!-- avatar -->
+
+<!-- <div class="w-full fixed h-full left-0 top-0 bg-gradient-to-r from-teal-200 to-lime-200"> -->
+
 <center>
   <$button class="bg-transparent">
     <$action-sendmessage $message="tm-modal" $param="oeyoews"/>
@@ -22,6 +25,8 @@ title: $:/config/EmptyStoryMessage
     <$typing text="A modern style and elegant notebook based on Tiddlywiki by oeyoews" gradient />
   </div>
 </center>
+
+<!-- </div> -->
 
 <!-- 滚动random filter 会刷新 -->
 <!-- <$list filter="[{$:/info/url/protocol}match[http:]]"> -->
