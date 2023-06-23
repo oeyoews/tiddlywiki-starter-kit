@@ -42,7 +42,10 @@ tags: $:/tags/Macro
         </$eventcatcher>
       </$reveal>
     </$list>
+    <div class="text-slate-400 py-1 px-2 mr-2 font-bold">
+      {{{ [list[$:/StoryList]count[]] }}}
+    </div>
   </div>
-  <div class="opened-tiddlers-bar-drag-area" />
+  <!-- <div class="opened-tiddlers-bar-drag-area" /> -->
 </div>
 \end
