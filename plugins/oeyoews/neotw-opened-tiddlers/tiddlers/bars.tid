@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/neotw-opended-tiddlers/bars
+tags: $:/tags/AboveStory
+
+<div class="opened-tiddlers-bar-container hidden lg:block">
+  <<opened-tiddlers-bar>>
+</div>
