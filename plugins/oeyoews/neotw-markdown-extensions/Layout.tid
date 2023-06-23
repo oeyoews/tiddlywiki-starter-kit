@@ -15,5 +15,10 @@ description: {{$:/plugins/oeyoews/neotw-markdown-extensions/readme!!description}
   languageTitle={{{ [{$:/language}get[name]] }}}>
 
 <div class="prose max-w-none prose-indigo m-auto sm:w-auto md:w-2/3">
+
+<div class="relative inline-block my-4 flex">
+    <$avatar center="yes"/>
+</div>
+
 {{{ [[$:/plugins/oeyoews/neotw-markdown-extensions/readme]] ||$:/core/ui/ViewTemplate }}}
 </div>
