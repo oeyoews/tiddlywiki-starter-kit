@@ -1,0 +1,11 @@
+created: 20230623154326876
+creator: oeyoews
+modified: 20230623154353072
+modifier: oeyoews
+tags: 
+title: down-full-website
+type: text/markdown
+
+```bash
+wget -m https://revealjs.com/
+```
