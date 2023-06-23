@@ -1,3 +1,10 @@
+# [3.326.0](https://github.com/oeyoews/neotw/compare/v3.325.0...v3.326.0) (2023-06-23)
+
+
+### Features
+
+* use neotw-opened-tiddlers instead of neotw-highlight-current-tiddler ([657e15d](https://github.com/oeyoews/neotw/commit/657e15d4902748a4c103bcc46817b9645330993a))
+
 # [3.325.0](https://github.com/oeyoews/neotw/compare/v3.324.0...v3.325.0) (2023-06-23)
 
 
