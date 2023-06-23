@@ -148,21 +148,6 @@
         "icon": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221em%22%20height%3D%221em%22%20fill%3D%22%23aaa%22%20stroke%3D%22currentColor%22%20stroke-width%3D%220%22%20version%3D%221%22%20viewBox%3D%220%200%2048%2048%22%3E%3Cpath%20fill%3D%22%238BC34A%22%20stroke%3D%22none%22%20d%3D%22M39%2015c0-2.2-1.8-4-4-4h-6c-.7%200-1.1-.8-.7-1.4.6-1%20.9-2.2.6-3.5-.4-2-1.9-3.6-3.8-4C21.8%201.4%2019%203.9%2019%207c0%201%20.3%201.8.7%202.6.4.6%200%201.4-.8%201.4h-6c-2.2%200-4%201.8-4%204v7c0%20.7.8%201.1%201.4.7%201-.6%202.2-.9%203.5-.6%202%20.4%203.6%201.9%204%203.8.7%203.2-1.8%206.1-4.9%206.1-1%200-1.8-.3-2.6-.7-.5-.4-1.3%200-1.3.7v6c0%202.2%201.8%204%204%204h22c2.2%200%204-1.8%204-4V15z%22%2F%3E%3C%2Fsvg%3E"
     },
     {
-        "title": "$:/plugins/oeyoews/neotw-highlight-current-tiddler",
-        "description": "Neotw Highlight Current Tiddler",
-        "author": "oeyoews",
-        "version": "0.0.1",
-        "core-version": ">=5.2.5",
-        "type": "application/json",
-        "parent-plugin": "$:/plugins/oeyoews/neotw",
-        "plugin-type": "plugin",
-        "name": "Neotw Highlight Current Tiddler",
-        "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
-        "list": "readme",
-        "readme": "<div class=\"prose max-w-none\">\n\n!! Neotw Highlight Current Tiddler\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/neotw-highlight-current-tiddler]]\n* [[Demo|https://oeyoews.github.io/neotw]]\n",
-        "requires-reload": "no"
-    },
-    {
         "version": "1.5.1",
         "type": "application/json",
         "title": "$:/plugins/oeyoews/neotw-hitokoto",
@@ -206,6 +191,21 @@
         "readme": "<div class=\"prose max-w-none prose-indigo\">\n\n## Neotw Markdown Extensions\n\n@[toc]\n\n<hr>\n\n## Markdown-it Plugins\n\n### SmartArrows\n\n:::\n--> →\n\n<-- ←\n\n<--> ↔\n\n==> ⇒\n\n<== ⇐\n\n<==> ⇔\n:::\n\n### Container\n\n:::todo\n- [ ] support markdown mermaid https://mermaid.js.org/ecosystem/integrations.html\n:::\n\n:::warning\n:::\n\n:::tips\nThis is a tips\n:::\n\n:::error\n:::\n\n### Toc\n\n### Markdown Task\n\n- [ ] undone\n- [x] done\n\n### Emoji\n\n* :tada: :smile: :cat:\n\n### Abbr\n\n* Tiddlywiki\n* 太微\n\n## 测试\n\n### Link Support\n\n* [[Readme|$:/plugins/oeyoews/neotw-markdown-extensions/readme]] Link(include double brackets)\n\n* [Readme](#$:/plugins/oeyoews/neotw-markdown-extensions/readme)\n\n### 段落\n\n这是一段普通的文本。\n\n段落之间需要空行。\n\n换行需要使用 `<br>` 或者加上两个空格。\n\n字体可以使用 *斜体* 或者 **粗体** 或者 ***斜粗体***。\n\n删除线可以使用 ~~删除线~~。\n\n### 无序列表\n\n- 列表项 1\n- 列表项 2\n- 列表项 3\n\n### 有序列表\n\n1. 列表项 1\n2. 列表项 2\n3. 列表项 3\n\n### 引用\n\n> 这是一段引用的文本。\n\n### 行内代码\n\n这是一段代码：`print(\"Hello world!\")`\n\n### 代码块\n\n```python\ndef hello():\n    print(\"Hello world!\")\n\nhello()\n```\n\n<hr>\n\n### Better render\n\n* (c)\n* (tm)\n* (r)\n* ?????\n* !!!!!!\n* ......\n\n### Macro Support\n\n### image\n\n```\n![http image](https://neotw.oeyoewl.top/favicon.ico)\n```\n\n![http image](https://neotw.oeyoewl.top/favicon.ico)\n\n```\n![alt text](<#tom.png>)\n```\n\n### underline\n\n++inserted text++\n\n### mark\n\n==dmeo==\n\nX^2^\n\n### table\n\n|Left Aligned |Centered   |Right Aligned |\n|:---         |   :---:   |          ---:|\n|apple        |bat        |candle        |\n\n### footnote\n\nHere's a simple footnote,[^1] and here's a longer one.[^bignote]\n\n### Katex\n\n$$\\KaTeX$$\n\n$$c = \\pm\\sqrt{a^2 + b^2}$$\n\n[^1]: This is the first footnote.\n\n[^bignote]: Here's one with multiple paragraphs and code.\n\n    Indent paragraphs to include them in the footnote.\n\n    `{ my code }`\n\n    Add as many paragraphs as you like.\n\n*[Tiddlywiki]: TiddlyWiki is a unique non-linear personal web notebook that allows users to create, organize, and share content in a highly flexible and customizable manner. It is an open-source wiki software written in JavaScript and designed to run entirely in the web browser. TiddlyWiki is known for its simplicity, portability, and powerful features.\n*[太微]: Chinese Name of Tiddlywiki\n",
         "requires-reload": "yes",
         "icon": "data:image/svg+xml,%3Csvg%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20width%3D%2216%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cpath%20d%3D%22m7.26803385%208%203.12819015-7.125h4.1745047v11h1.4292713l-3.0298438%204-3.1951562-4h1.5640519v-8.0170583l-3.3390519%208.0646417h-1.52615114l-3.24217209-5.92647752-.05636645.00964426v5.91683326h-3.17531032v-11.0475834h3.48007812z%22%20fill%3D%22%23293040%22%20fill-rule%3D%22nonzero%22%2F%3E%3Cpath%20d%3D%22m0%2012.875h3.2v2h-3.2z%22%20fill%3D%22%235170ff%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+    },
+    {
+        "title": "$:/plugins/oeyoews/neotw-opened-tiddlers",
+        "description": "Neotw Opened Tiddlers",
+        "author": "oeyoews",
+        "version": "0.0.1",
+        "core-version": ">=5.2.7",
+        "type": "application/json",
+        "parent-plugin": "$:/plugins/oeyoews/neotw",
+        "plugin-type": "plugin",
+        "name": "Neotw Opened Tiddlers",
+        "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
+        "list": "readme",
+        "readme": "<div class=\"prose max-w-none\">\n\n!! 改于 $:/plugins/linonetwo/opened-tiddlers\n\n</div>\n",
+        "requires-reload": "no"
     },
     {
         "version": "0.0.2",
