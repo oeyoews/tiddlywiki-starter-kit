@@ -9,6 +9,7 @@ tags: $:/tags/Macro
 
 \define opened-tiddlers-bar()
 \whitespace trim
+<$list filter="[list[$:/StoryList]!has[draft.of]count[]compare:number:gt[2]]">
 <div class="tc-tab-buttons opened-tiddlers-bar" >
   <div class="opened-tiddlers-bar-drag-area" />
   <div class="opened-tiddlers-bar-tabs">
@@ -43,11 +44,10 @@ tags: $:/tags/Macro
       </$reveal>
     </$list>
     <div class="text-slate-400 py-1 px-2 mr-2 font-bold">
-      <$list filter="[list[$:/StoryList]!has[draft.of]count[]compare:number:gt[0]]">
       {{{ [list[$:/StoryList]count[]] }}}
-    </$list>
     </div>
   </div>
   <!-- <div class="opened-tiddlers-bar-drag-area" /> -->
 </div>
+</$list>
 \end
