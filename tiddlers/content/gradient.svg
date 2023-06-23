@@ -1,0 +1,7 @@
+<svg width="1400" height="700" xmlns="http://www.w3.org/2000/svg">
+  <linearGradient id="gradient" gradientUnits="userSpaceOnUse" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#aee3ff"/>
+    <stop offset="100%" stop-color="#cefdb6"/>
+  </linearGradient>
+  <rect width="1400" height="700" x="4" fill="url(#gradient)"/>
+</svg>
