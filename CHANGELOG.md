@@ -1,3 +1,10 @@
+# [3.323.0](https://github.com/oeyoews/neotw/compare/v3.322.1...v3.323.0) (2023-06-23)
+
+
+### Features
+
+* add oeyoews/commandpalette ([2706120](https://github.com/oeyoews/neotw/commit/2706120f4d9f8eea3f80287502cdb5846b712870))
+
 ## [3.322.1](https://github.com/oeyoews/neotw/compare/v3.322.0...v3.322.1) (2023-06-22)
 
 
