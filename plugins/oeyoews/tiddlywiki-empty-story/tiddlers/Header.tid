@@ -1,6 +1,8 @@
 title: $:/plugins/oeyoews/tiddlywiki-empty-story/Header
 tags: $:/tags/AboveStory
 
+<$list filter="[{$:/info/url/protocol}match[https:]]">
 <$list filter="[list[$:/StoryList]!has[draft.of]count[]compare:number:et[1]]">
 {{$:/config/EmptyStoryMessage}}
+</$list>
 </$list>
