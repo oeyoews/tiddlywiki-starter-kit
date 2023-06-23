@@ -1,5 +1,9 @@
 title: $:/plugins/souk21/commandpalette/readme
 
+!! Readme
+
+* 使用tailwindcss, 重写部分样式
+
 !! TODO
 
 <!-- * add masklayer -->
