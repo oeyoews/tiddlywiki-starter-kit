@@ -1,3 +1,10 @@
+# [3.325.0](https://github.com/oeyoews/neotw/compare/v3.324.0...v3.325.0) (2023-06-23)
+
+
+### Features
+
+* use svg replace banner.svg ([8a1a328](https://github.com/oeyoews/neotw/commit/8a1a328d013e611a7be9fe5dcce9e22090a9fac9))
+
 # [3.324.0](https://github.com/oeyoews/neotw/compare/v3.323.0...v3.324.0) (2023-06-23)
 
 
