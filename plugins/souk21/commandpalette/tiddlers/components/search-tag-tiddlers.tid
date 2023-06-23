@@ -1,6 +1,0 @@
-command-palette-name: Search tiddlers with tag
-command-palette-type: prompt
-tags: $:/tags/CommandPaletteCommand
-title: $:/plugins/souk21/commandpalette/Search tiddlers with tag
-
-@

@@ -1,0 +1,8 @@
+command-palette-hint: Choose Draft to save
+command-palette-mode: drafts
+command-palette-name: Save Tiddler
+command-palette-type: history
+tags: $:/tags/CommandPaletteCommand
+title: $:/plugins/oeyoews/commandpalette/Save Tiddler
+
+tm-save-tiddler

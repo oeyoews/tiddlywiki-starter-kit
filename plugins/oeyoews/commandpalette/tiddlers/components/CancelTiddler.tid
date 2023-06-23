@@ -1,0 +1,8 @@
+command-palette-hint: Choose Draft to cancel
+command-palette-mode: drafts
+command-palette-name: Cancel Tiddler
+command-palette-type: history
+tags: $:/tags/CommandPaletteCommand
+title: $:/plugins/oeyoews/commandpalette/Cancel Tiddler
+
+tm-cancel-tiddler

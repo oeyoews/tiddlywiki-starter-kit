@@ -1,0 +1,7 @@
+command-palette-caret: 16
+command-palette-name: Search fields
+command-palette-type: prompt-basic
+tags: $:/tags/CommandPaletteCommand
+title: $:/plugins/oeyoews/commandpalette/Search fields
+
+[fields[]search[]]

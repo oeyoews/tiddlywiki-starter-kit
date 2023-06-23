@@ -1,0 +1,5 @@
+key: ((open-command-palette-selection))
+tags: $:/tags/KeyboardShortcut
+title: $:/plugins/oeyoews/commandpalette/CommandPaletteSelection
+
+<$action-sendmessage $message="open-command-palette-selection"/>

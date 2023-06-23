@@ -1,0 +1,7 @@
+command-palette-hint: Choose tiddler to close
+command-palette-name: Close Tiddler
+command-palette-type: history
+tags: $:/tags/CommandPaletteCommand
+title: $:/plugins/oeyoews/commandpalette/Close Tiddler
+
+tm-close-tiddler

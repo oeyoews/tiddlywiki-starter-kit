@@ -1,0 +1,6 @@
+command-palette-name: Show help
+command-palette-type: prompt
+tags: $:/tags/CommandPaletteCommand
+title: $:/plugins/oeyoews/commandpalette/Show help
+
+?

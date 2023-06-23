@@ -1,0 +1,9 @@
+{
+  "title": "$:/plugins/oeyoews/commandpalette",
+  "author": "oeyoews",
+  "core-version": ">=5.2.7",
+  "description": "Command palette",
+  "plugin-type": "plugin",
+  "version": "0.0.8",
+  "list": "readme"
+}

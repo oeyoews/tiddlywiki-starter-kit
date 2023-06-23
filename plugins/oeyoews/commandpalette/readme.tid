@@ -1,0 +1,17 @@
+title: $:/plugins/oeyoews/commandpalette/readme
+
+!! 改于 $:/plugins/souk21/commandpalette
+
+!! Readme
+
+* 使用tailwindcss, 重写部分样式
+
+[img[https://i.imgur.com/JNF1NKg.png]]
+
+!! TODO
+
+<!-- * add masklayer -->
+* prevent stop scrollable
+* add search plugins
+<!-- * right search tips -->
+* suitable mobile style

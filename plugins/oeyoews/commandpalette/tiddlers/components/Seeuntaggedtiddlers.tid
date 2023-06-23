@@ -1,0 +1,7 @@
+command-palette-caret: 29
+command-palette-name: See untagged Tiddlers
+command-palette-type: prompt-basic
+tags: $:/tags/CommandPaletteCommand
+title: $:/plugins/oeyoews/commandpalette/See untagged tiddlers
+
+[untagged[]!is[system]search[]]

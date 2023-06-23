@@ -8,7 +8,6 @@ module.exports = {
       script: './node_modules/tiddlywiki/tiddlywiki.js',
       args: '--build listen',
       watch: [
-        './plugins/souk21',
         './plugins/oeyoews',
         './themes',
         './tiddlywiki.info',

@@ -1,0 +1,7 @@
+command-palette-caret: 43
+command-palette-name: See Languages
+command-palette-type: prompt-basic
+tags: $:/tags/CommandPaletteCommand
+title: $:/plugins/oeyoews/commandpalette/See Languages
+
+[!has[draft.of]plugin-type[language]search[]]

@@ -1,0 +1,6 @@
+command-palette-name: Search Tags
+command-palette-type: prompt
+tags: $:/tags/CommandPaletteCommand
+title: $:/plugins/oeyoews/commandpalette/Search Tags
+
+#

@@ -1,0 +1,5 @@
+key: ((open-command-palette-command-mode))
+tags: $:/tags/KeyboardShortcut
+title: $:/plugins/oeyoews/commandpalette/CommandPaletteCommandMode
+
+<$action-sendmessage $message="open-command-palette" $param=">"/>

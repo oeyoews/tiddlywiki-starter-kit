@@ -1,0 +1,6 @@
+command-palette-name: Fold All Tiddlers
+command-palette-type: message
+tags: $:/tags/CommandPaletteCommand
+title: $:/plugins/oeyoews/commandpalette/Fold All Tiddlers
+
+tm-fold-all-tiddlers

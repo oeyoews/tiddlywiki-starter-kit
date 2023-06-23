@@ -1,5 +1,0 @@
-key: ((insert-command-palette-result))
-tags: $:/tags/KeyboardShortcut
-title: $:/plugins/souk21/commandpalette/InsertCommandPaletteResult
-
-<$action-sendmessage $message="insert-command-palette-result"/>

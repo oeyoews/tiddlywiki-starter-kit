@@ -1,0 +1,7 @@
+command-palette-caret: 20
+command-palette-name: See Orphans Tiddlers
+command-palette-type: prompt-basic
+tags: $:/tags/CommandPaletteCommand
+title: $:/plugins/oeyoews/commandpalette/See Orphans Tiddlers
+
+[all[orphans]search[]]
