@@ -1,4 +1,5 @@
 title: $:/plugins/${username}/${pluginname}/readme
+description: ${description}
 
 <div class="prose max-w-none">
 
