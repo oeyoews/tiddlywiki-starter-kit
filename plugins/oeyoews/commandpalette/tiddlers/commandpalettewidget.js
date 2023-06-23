@@ -487,6 +487,7 @@ Command Palette Widget
         className: 'inputhintwrapper',
       });
       // pointer-events-none fix z-index bug
+      // backdrop-blur not effect with bg-neutral-600
       this.mask = this.createElement('div', {
         className: 'backdrop-blur z-[9998] fixed left-0 top-0 w-full h-full bg-neutral-600 transition-all pointer-events-none duration-500',
       }, {
