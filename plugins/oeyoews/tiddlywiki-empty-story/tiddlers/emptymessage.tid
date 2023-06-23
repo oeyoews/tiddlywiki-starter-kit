@@ -23,10 +23,10 @@ title: $:/config/EmptyStoryMessage
   </div>
 </center>
 
-<$list filter="[{$:/info/url/protocol}match[http:]]">
 <!-- 滚动random filter 会刷新 -->
-<div class="flex justify-center items-center">
-<$link to={{{ [all[tiddlers]!is[system]random[1]] ||$:/core/ui/ViewTemplate }}}>
-  <<.icon "$:/plugins/oeyoews/neotw/module/random-button/icon">> Random Tiddler</$link>
-</div>
-</$list>
+<!-- <$list filter="[{$:/info/url/protocol}match[http:]]"> -->
+<!-- <div class="flex justify-center items-center"> -->
+<!-- <$link to={{{ [all[tiddlers]!is[system]random[1]] ||$:/core/ui/ViewTemplate }}}> -->
+<!--   <<.icon "$:/plugins/oeyoews/neotw/module/random-button/icon">> Random Tiddler</$link> -->
+<!-- </div> -->
+<!-- </$list> -->

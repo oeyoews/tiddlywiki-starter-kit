@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/tiddlywiki-empty-story/Header
+tags: $:/tags/AboveStory
+
+<$list filter="[list[$:/StoryList]count[]compare:number:et[1]]">
+{{$:/config/EmptyStoryMessage}}
+</$list>
