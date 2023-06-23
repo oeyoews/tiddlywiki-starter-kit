@@ -72,6 +72,6 @@
   "engines": {
     "node": ">=16"
   },
-  "version": "3.323.0",
+  "version": "3.324.0",
   "packageManager": "yarn@3.5.0"
 }
