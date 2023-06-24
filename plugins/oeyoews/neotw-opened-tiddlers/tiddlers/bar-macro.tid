@@ -18,7 +18,7 @@ tags: $:/tags/Macro
         <$eventcatcher $auxclick=<<onMiddleClick>>>
           <div style="display:inline">
             <!-- tc-tab-selected -->
-            <$button to=<<currentTab>> class="tc-tab bg-slate-200 text-slate-700 py-2">
+            <$button to=<<currentTab>> class="tc-tab bg-neutral-200 text-slate-700 py-2">
               <$view tiddler=<<currentTab>> field="name">
               <$view tiddler=<<currentTab>> field="title" /></$view>
               <!-- <$button message="tm-close-tiddler" param=<<currentTab>> class="tc-image-button opened-tiddlers-bar-close-button"> -->
