@@ -72,7 +72,7 @@ h1.tc-site-title {
 
 .nc-bar.nc-topbar {
   top: 0;
-  background: <<colour page-background>>ee;
+  background: <<colour page-background>>;
   max-width: calc({{$:/themes/nico/notebook/metrics/story-width}} + 40px);
   padding: 10px 20px;
   margin: 0 auto;
