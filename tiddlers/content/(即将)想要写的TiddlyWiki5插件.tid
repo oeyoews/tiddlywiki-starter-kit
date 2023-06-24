@@ -1,6 +1,6 @@
 created: 20230619150240359
 creator: oeyoews
-modified: 20230623123416995
+modified: 20230624013336111
 modifier: oeyoews
 publish: public
 tags: TiddlyWiki Plugins
@@ -25,7 +25,7 @@ type: text/markdown
 - [ ] Tiddlywiki LSP
 - [ ] 插件更新提示插件
 - [ ] 类vscode 插件商店
-- [ ] 工作区切换插件
+- [ ] 工作区切换插件; 多故事河管理
 - [ ] breadcrumbs
 - [ ] layouts 搜索菜单
 :::
