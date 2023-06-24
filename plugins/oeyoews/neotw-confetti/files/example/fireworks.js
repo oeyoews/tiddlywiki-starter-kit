@@ -253,7 +253,7 @@ const msg = () => {
 };
 
 const moduleExports = {
-  prideCurrentTiddler,
+  // prideCurrentTiddler,
   fireworks,
   snow,
   pride,
