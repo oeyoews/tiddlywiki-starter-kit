@@ -2,7 +2,8 @@ tags: $:/tags/CommandPaletteTheme $:/tags/Stylesheet
 title: $:/plugins/oeyoews/commandpalette/Compact.css
 type: text/vnd.tiddlywiki
 
-\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline html
+<!-- \rules only filteredtranscludeinline transcludeinline macrodef macrocallinline html -->
+
 :root {
     --palette-radius: 5px;
 }
@@ -24,7 +25,7 @@ type: text/vnd.tiddlywiki
 .inputhintwrapper {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid <<colour page-background>>;
+    border-bottom: 2px solid <<colour page-background>>;
 }
 .commandpalette input {
     border: 0;

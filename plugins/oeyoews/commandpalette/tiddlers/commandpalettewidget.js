@@ -489,7 +489,7 @@ Command Palette Widget
       // pointer-events-none fix z-index bug
       // backdrop-blur not effect with bg-neutral-600
       this.mask = this.createElement('div', {
-        className: 'backdrop-blur z-[9998] fixed left-0 top-0 w-full h-full bg-neutral-600 transition-all pointer-events-none duration-500',
+        className: 'backdrop-blur z-[9998] fixed left-0 top-0 w-full h-full bg-neutral-500 transition-all pointer-events-none duration-500',
       }, {
         opacity: 0,
       })
@@ -800,7 +800,7 @@ Command Palette Widget
       });
       if (result.hint !== undefined) {
         let hint = this.createElement('div', {
-          className: 'commandpalettehint',
+          className: 'commandpalettehint text-neutral-600',
           innerText: result.hint,
         });
         resultDiv.append(hint);
@@ -878,7 +878,7 @@ Command Palette Widget
       for (let i = 0; i < this.currentResults.length; i++) {
         let selected = this.currentSelection === i + 1;
         this.currentResults[i].className = selected
-          ? 'commandpaletteresult commandpaletteresultselected py-2'
+          ? 'commandpaletteresult commandpaletteresultselected py-2 bg-neutral-200 text-neutral-900 rounded-sm'
           : 'commandpaletteresult py-2';
       }
       if (this.currentSelection === 0) {
