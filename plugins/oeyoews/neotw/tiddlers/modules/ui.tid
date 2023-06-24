@@ -153,7 +153,9 @@ tags: $:/tags/PageTemplate
   <!-- <<github-cat>> -->
   <!-- <<switch-lang>> -->
   <!-- <<toggle-theme>> -->
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
   <<home-button>>
+</$list>
   <<music-button>>
   <!-- <<load-articles>> -->
 </div>
@@ -189,7 +191,9 @@ tags: $:/tags/PageTemplate
       <<readonly-mode>>
       <!-- <<toggle-theme>> -->
       <<zen-mode>>
-      <<home-button>>
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
+  <<home-button>>
+</$list>
     </div>
   <!-- </$list> -->
 </$list>
