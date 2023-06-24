@@ -1,0 +1,17 @@
+created: 20230624031534207
+creator: oeyoews
+modified: 20230624031759431
+modifier: oeyoews
+tags: 
+title: unicodes
+type: text/markdown
+
+&laquo;  `&laquo;`
+
+&raquo;  `&raquo;`
+
+&middot; `&middot`
+
+&para; `&para;`
+
+https://www.w3schools.com/charsets/ref_html_entities_4.asp
