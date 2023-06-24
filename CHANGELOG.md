@@ -1,3 +1,10 @@
+# [3.327.0](https://github.com/oeyoews/neotw/compare/v3.326.0...v3.327.0) (2023-06-24)
+
+
+### Features
+
+* disable mobile ([b63b857](https://github.com/oeyoews/neotw/commit/b63b8572c32aba36e8b92c236555718934c622cf))
+
 # [3.326.0](https://github.com/oeyoews/neotw/compare/v3.325.0...v3.326.0) (2023-06-23)
 
 
