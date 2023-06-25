@@ -70,13 +70,20 @@ h1.tc-site-title {
   z-index: 199;
 }
 
+<$list filter="[[$:/state/notebook-sidebar]get[text]match[no]]">
 .nc-bar.nc-topbar {
   top: 0;
   background: <<colour page-background>>;
   padding: 10px 20px;
-  <!-- max-width: calc({{$:/themes/nico/notebook/metrics/story-width}} + 40px); -->
-  <!-- margin: 0 auto; -->
 }
+</$list>
+
+<$list filter="[[$:/state/notebook-sidebar]get[text]match[yes]]">
+.nc-bar.nc-topbar {
+  max-width: calc({{$:/themes/nico/notebook/metrics/story-width}} + 40px);
+  margin: 0 auto;
+}
+</$list>
 
 .nc-bar.nc-bottombar {
   position: fixed;
