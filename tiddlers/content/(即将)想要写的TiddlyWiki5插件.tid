@@ -1,6 +1,6 @@
 created: 20230619150240359
 creator: oeyoews
-modified: 20230624013336111
+modified: 20230625050902552
 modifier: oeyoews
 publish: public
 tags: TiddlyWiki Plugins
@@ -28,6 +28,7 @@ type: text/markdown
 - [ ] 工作区切换插件; 多故事河管理
 - [ ] breadcrumbs
 - [ ] layouts 搜索菜单
+- [ ] topbar to leftbar just like itab homepage
 :::
 
 ## Ing
