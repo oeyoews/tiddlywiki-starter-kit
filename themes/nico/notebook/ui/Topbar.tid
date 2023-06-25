@@ -2,8 +2,9 @@ tags: $:/tags/PageTemplate
 title: $:/themes/nico/notebook/ui/Topbar
 
 <!-- todo add option -->
+<!-- add indicator like ios bottom bar -->
 <$reveal state="$:/state/notebook-topbar" type="match" text="yes" default="yes" retain="yes" animate="yes">
-  <div class="nc-topbar-wrapper opacity-0 hover:opacity-100 transition duration-500 transform -translate-y-1/2 transition-all hover:translate-y-0 hover:cursor-pointer">
+  <div class="nc-topbar-wrapper opacity-0 hover:opacity-100 transition duration-500 transform -translate-y-1/2 transition-all hover:translate-y-0 hover:cursor-pointer ease-in-out">
     <div class="nc-bar nc-topbar tc-adjust-top-of-scroll mb-4 rounded bg-transparent">
       <$list filter="[all[shadows+tiddlers]tag[$:/tags/NotebookTopbar]!has[draft.of]]" variable="listItem">
         <$reveal type="nomatch" state=<<config-title>> text="hide" tag="div">
