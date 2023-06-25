@@ -1,7 +1,7 @@
 created: 20230611123805993
 creator: oeyoews
 description: Personal Tiddlywiki Introduce
-modified: 20230621094538359
+modified: 20230625130815891
 modifier: oeyoews
 name: 🤔 Thinking
 page-cover: https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGxlYXJufGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60
@@ -58,6 +58,9 @@ type: text/markdown
 * 全部使用tailwindcss来写, 省去手写样式, 并且节省空间和时间
 
 ## 自己写的一些插件
+
+* 插件优先适配主题Notebook(oeyoews 魔改版)
+* 插件使用tailwindcss进行样式编写
 
 [[Neotw-PluginList]]
 
