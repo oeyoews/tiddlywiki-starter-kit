@@ -1,6 +1,6 @@
 created: 20230619150240359
 creator: oeyoews
-modified: 20230625050902552
+modified: 20230625124133547
 modifier: oeyoews
 publish: public
 tags: TiddlyWiki Plugins
@@ -45,6 +45,7 @@ type: text/markdown
 
 ## 写插件遇到的一些问题
 
+- [ ] pageControl 会把有颜色的图标变成黑白的
 - [ ] 启动时使用别的layout, 切换到主layout后topbar 消失
 - [ ] 某些widget的条目出现在故事河如果刷新, widget 会渲染两次
 - [ ] filter 在页面滚动时会进行刷新

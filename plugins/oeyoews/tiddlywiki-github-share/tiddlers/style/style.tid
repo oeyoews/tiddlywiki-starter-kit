@@ -1,6 +1,5 @@
 title: $:/plugins/oeyoews/tiddlywiki-github-share/style
 tags: $:/tags/Stylesheet
-type: text/css
 
 @media (max-width: 1360px) {
   .githubCorner {

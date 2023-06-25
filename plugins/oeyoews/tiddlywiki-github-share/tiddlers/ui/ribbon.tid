@@ -22,7 +22,7 @@ list-after:
 </$list>
 </$button>
 
-<$list filter="[{$:/info/url/protocol}prefix[https]]">
+<$list filter="[{$:/info/url/protocol}match[https:]]">
 <a style="text-decoration: none;"
   href={{{ [<tid>get[text]addprefix<base-repo>] }}}
   target="_blank"
