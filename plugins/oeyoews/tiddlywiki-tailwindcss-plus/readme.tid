@@ -44,6 +44,7 @@ description: ~TailwindCss
 
 !! TODO
 
+* button border 优先级有冲突
 * use preset config
 
 </div>

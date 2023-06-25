@@ -428,15 +428,15 @@ input:focus, textarea:focus {
   border-color: <<colour primary>>;
 }
 
-button {
-  border-radius: 1.5em;
-  border: 1px solid #ccc;
-  background: <<colour tiddler-background>>;
-  padding: .3em 1em;
-  cursor: pointer;
-  transition: box-shadow ease-in .1s;
-  color: <<color foreground>>;
-}
+<!-- button { -->
+<!--   border-radius: 1.5em; -->
+<!--   border: 1px solid #ccc; -->
+<!--   background: <<colour tiddler-background>>; -->
+<!--   padding: .3em 1em; -->
+<!--   cursor: pointer; -->
+<!--   transition: box-shadow ease-in .1s; -->
+<!--   color: <<color foreground>>; -->
+<!-- } -->
 
 button:focus, button:active {
   outline: 0 none;
