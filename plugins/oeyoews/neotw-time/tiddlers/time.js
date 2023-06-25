@@ -7,8 +7,18 @@ time.js
 
 \*/
 // +8 timezone
-function calculateTimeDiff(dateString) {
-  const targetDate = new Date(dateString);
+function convertToISODate(dateString) {
+  const dateParts = dateString.split('-');
+  const year = dateParts[0];
+  const month = dateParts[1].padStart(2, '0');
+  const day = dateParts[2].padStart(2, '0');
+  return `${year}-${month}-${day}`;
+}
+
+function calculateTimeDiff(dateString, timeZoneOffset = 0) {
+  const isoDateString = convertToISODate(dateString);
+  const targetDate = new Date(isoDateString);
+
   const currentDate = new Date();
 
   const timeDiff = Math.abs(targetDate.getTime() - currentDate.getTime());
@@ -25,14 +35,21 @@ function calculateTimeDiff(dateString) {
   const minuteString = minutes > 0 ? `${minutes} 分钟 ` : '';
   const secondString = seconds > 0 ? `${seconds} 秒` : '';
 
+  const options = {
+    timeZone: 'UTC',
+    timeZoneOffset: timeZoneOffset * 60, // Convert hours to minutes
+  };
+
   const timeStage =
     targetDate.getTime() > currentDate.getTime()
-      ? `距离 ${targetDate.toLocaleString('zh-CN', {
-          timeZone: 'Asia/Shanghai',
-        })} 还有 ${dayString}${hourString}${minuteString}${secondString}。`
-      : `距离 ${targetDate.toLocaleString('zh-CN', {
-          timeZone: 'Asia/Shanghai',
-        })} 已经过去了 ${dayString}${hourString}${minuteString}${secondString}。`;
+      ? `距离 ${targetDate.toLocaleString(
+          'zh-CN',
+          options,
+        )} 还有 ${dayString}${hourString}${minuteString}${secondString}。`
+      : `距离 ${targetDate.toLocaleString(
+          'zh-CN',
+          options,
+        )} 已经过去了 ${dayString}${hourString}${minuteString}${secondString}。`;
 
   return timeStage;
 }
