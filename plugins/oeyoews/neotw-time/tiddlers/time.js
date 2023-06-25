@@ -42,14 +42,8 @@ function calculateTimeDiff(dateString, timeZoneOffset = 0) {
 
   const timeStage =
     targetDate.getTime() > currentDate.getTime()
-      ? `距离 ${targetDate.toLocaleString(
-          'zh-CN',
-          options,
-        )} 还有 ${dayString}${hourString}${minuteString}${secondString}。`
-      : `距离 ${targetDate.toLocaleString(
-          'zh-CN',
-          options,
-        )} 已经过去了 ${dayString}${hourString}${minuteString}${secondString}。`;
+      ? `距离 ${isoDateString} 还有 ${dayString}${hourString}${minuteString}${secondString}。`
+      : `距离 ${isoDateString} 已经过去了 ${dayString}${hourString}${minuteString}${secondString}。`;
 
   return timeStage;
 }
