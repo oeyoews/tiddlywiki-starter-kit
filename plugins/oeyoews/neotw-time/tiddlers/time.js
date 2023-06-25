@@ -6,6 +6,7 @@ module-type: library
 time.js
 
 \*/
+// +8 timezone
 function calculateTimeDiff(dateString) {
   const targetDate = new Date(dateString);
   const currentDate = new Date();
@@ -26,8 +27,12 @@ function calculateTimeDiff(dateString) {
 
   const timeStage =
     targetDate.getTime() > currentDate.getTime()
-      ? `距离 ${targetDate.toLocaleDateString()} 还有 ${dayString}${hourString}${minuteString}${secondString}。`
-      : `距离 ${targetDate.toLocaleDateString()} 已经过去了 ${dayString}${hourString}${minuteString}${secondString}。`;
+      ? `距离 ${targetDate.toLocaleString('zh-CN', {
+          timeZone: 'Asia/Shanghai',
+        })} 还有 ${dayString}${hourString}${minuteString}${secondString}。`
+      : `距离 ${targetDate.toLocaleString('zh-CN', {
+          timeZone: 'Asia/Shanghai',
+        })} 已经过去了 ${dayString}${hourString}${minuteString}${secondString}。`;
 
   return timeStage;
 }
