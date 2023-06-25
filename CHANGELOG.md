@@ -1,3 +1,10 @@
+# [3.328.0](https://github.com/oeyoews/neotw/compare/v3.327.0...v3.328.0) (2023-06-25)
+
+
+### Features
+
+* full topbar ([febd2ee](https://github.com/oeyoews/neotw/commit/febd2eea6d94b8b32204848f834e5c99777d89a3))
+
 # [3.327.0](https://github.com/oeyoews/neotw/compare/v3.326.0...v3.327.0) (2023-06-24)
 
 
