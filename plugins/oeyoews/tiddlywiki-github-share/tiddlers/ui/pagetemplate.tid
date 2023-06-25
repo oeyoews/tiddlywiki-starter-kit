@@ -5,6 +5,7 @@ tags: $:/tags/PageTemplate
 \define tip() Github Repo
 \define tid() $:/config/oeyoews/tiddlywiki-github-share/config
 
+<$list filter="[[$:/StoryList]get[list]count[]match[0]]">
 <$list filter="[{$:/info/url/protocol}match[https:]]">
 <$list filter="[[$:/state/notebook-sidebar]get[text]else[no]match[no]]">
 <div class="fixed top-0 right-0">
@@ -18,5 +19,6 @@ tags: $:/tags/PageTemplate
   {{$:/plugins/oeyoews/tiddlywiki-github-share/icon/corner}}
 </a>
 </div>
+</$list>
 </$list>
 </$list>
