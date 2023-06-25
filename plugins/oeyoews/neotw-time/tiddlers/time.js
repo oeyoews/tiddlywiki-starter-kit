@@ -7,6 +7,7 @@ time.js
 
 \*/
 // +8 timezone
+// support now
 function convertToISODate(dateString) {
   const dateParts = dateString.split('-');
   const year = dateParts[0];
@@ -15,11 +16,13 @@ function convertToISODate(dateString) {
   return `${year}-${month}-${day}`;
 }
 
-function calculateTimeDiff(dateString, timeZoneOffset = 0) {
+function calculateTimeDiff(dateString) {
   const isoDateString = convertToISODate(dateString);
   const targetDate = new Date(isoDateString);
 
   const currentDate = new Date();
+
+  targetDate.setHours(targetDate.getHours() - 8);
 
   const timeDiff = Math.abs(targetDate.getTime() - currentDate.getTime());
 
@@ -34,11 +37,6 @@ function calculateTimeDiff(dateString, timeZoneOffset = 0) {
   const hourString = hours > 0 ? `${hours} 小时 ` : '';
   const minuteString = minutes > 0 ? `${minutes} 分钟 ` : '';
   const secondString = seconds > 0 ? `${seconds} 秒` : '';
-
-  const options = {
-    timeZone: 'UTC',
-    timeZoneOffset: timeZoneOffset * 60, // Convert hours to minutes
-  };
 
   const timeStage =
     targetDate.getTime() > currentDate.getTime()
