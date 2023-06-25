@@ -1,16 +1,16 @@
 /*\
 title: $:/plugins/oeyoews/neotw/startup/neotw.js
 type: application/javascript
+
 // module-type: startup
 
 neotw startup descption
 \*/
-(function() {
+(function () {
   exports.platforms = ['browser'];
-  exports.after = ['startup'];
-  exports.before = ['story'];
+  exports.after = ['story'];
   exports.synchronous = true;
-  exports.startup = function() {
+  exports.startup = function () {
     if (!$tw.browser) return;
 
     // const tempTitle = $tw.wiki.getTiddlerText('$:/temp/focussedTiddler');
