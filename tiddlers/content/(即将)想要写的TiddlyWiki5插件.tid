@@ -1,21 +1,21 @@
 created: 20230619150240359
 creator: oeyoews
-modified: 20230625124133547
+modified: 20230625125832777
 modifier: oeyoews
 publish: public
 tags: TiddlyWiki Plugins
 title: (即将)想要写的TiddlyWiki5插件
 type: text/markdown
 
+<<.preamble "🔌 (即将)想要写的TiddlyWiki5插件; 仅作为个人练习记录, 无意优化TiddlyWiki5的使用体验, 如果有那就算是无意的吧 😄">>
+
+
 @[toc]
-
-<<.preamble "🔌 (即将)想要写的TiddlyWiki5插件">>
-
-
 
 ## TODO
 
 :::todo
+- [ ] 整屏滑动页面
 - [ ] 结合motion插件和commandpalette插件
 - [ ] grayscale page plugin
 - [ ] 可拖动tiddler, 调整顺序
