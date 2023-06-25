@@ -75,7 +75,7 @@ tags: $:/tags/PageTemplate
 \end
 
 \define music-button()
-  <$aplayer-dev class='shadow-lg rounded-full hover:scale-110 duration-300 transition' />
+  <$aplayer-dev class='shadow-lg rounded-full hover:scale-110 duration-300 transition cursor-pointer' />
 \end
 
 \define load-articles()
