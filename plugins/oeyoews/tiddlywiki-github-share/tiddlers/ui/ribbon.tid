@@ -21,15 +21,3 @@ list-after:
   </span>
 </$list>
 </$button>
-
-<$list filter="[{$:/info/url/protocol}match[https:]]">
-<a style="text-decoration: none;"
-  href={{{ [<tid>get[text]addprefix<base-repo>] }}}
-  target="_blank"
-  rel="noopener noreferrer"
-  class="githubCorner"
-  aria-label="View source on GitHub"
->
-  {{$:/plugins/oeyoews/tiddlywiki-github-share/icon/corner}}
-</a>
-</$list>
