@@ -1,6 +1,6 @@
 created: 20230619150240359
 creator: oeyoews
-modified: 20230626024332381
+modified: 20230626152207106
 modifier: oeyoews
 publish: public
 tags: TiddlyWiki Plugins
@@ -15,6 +15,12 @@ type: text/markdown
 ## TODO
 
 :::todo
+- [ ] 盘古插件
+- [ ] 标题支持fold
+- [ ] autolist plugin
+- [ ] 浮动目录(markdown)
+- [ ] 所见即所得(个人并不是其爱好者, 更喜欢所写即所见)
+- [ ] 双链插件 链出/入 icon
 - [ ] 看板插件
 - [ ] 整屏滑动页面
 - [ ] 结合motion插件和commandpalette插件
