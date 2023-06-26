@@ -1,6 +1,6 @@
 title: $:/plugins/oeyoews/neotw-opended-tiddlers/bars
 tags: $:/tags/AboveStory
 
-<div class="opened-tiddlers-bar-container hidden lg:block opacity-0 hover:opacity-100 duration-500 transition-all translate-y-2 hover:translate-y-0 shadow-lg">
+<div class="opened-tiddlers-bar-container hidden lg:block opacity-0 hover:opacity-100 duration-500 transition-all translate-y-2 hover:translate-y-0 shadow-lg -translate-x-1/2 left-1/2 overflow-x-scroll">
   <<opened-tiddlers-bar>>
 </div>

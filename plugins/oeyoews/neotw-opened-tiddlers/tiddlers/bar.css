@@ -3,8 +3,8 @@ section.story-backdrop .opened-tiddlers-bar-container {
   position: fixed;
   bottom: 0;
   z-index: 1000;
-  width: 100vw;
-  left: 0;
+  /* width: 100vw; */
+  /* left: 0; */
   overflow-x: auto;
   white-space: nowrap;
   overflow: -moz-scrollbars-none;
@@ -27,7 +27,7 @@ section.story-backdrop div.opened-tiddlers-bar div.opened-tiddlers-bar-tabs {
   state='$:/state/titleBarOpened'
   text='no'
   > div.opened-tiddlers-bar-tabs {
-  width: 90vw;
+  /* width: 90vw; */
   overflow-x: auto;
   white-space: nowrap;
   overflow: -moz-scrollbars-none;
@@ -37,7 +37,7 @@ div.opened-tiddlers-bar-tabs::-webkit-scrollbar {
   display: none;
 }
 div.opened-tiddlers-bar-drag-area {
-  width: 5vw;
+  /* width: 5vw; */
   -webkit-app-region: drag;
 }
 </$reveal>
@@ -46,7 +46,7 @@ div.opened-tiddlers-bar-drag-area {
 <$reveal type="match" state="$:/state/titleBarOpened" text="no">
 <$reveal type="match" state="$:/state/sideBarOpened" text="no">
 section.story-backdrop {
-  width: 100vw;
+  /* width: 100vw; */
   padding-left: 68px;
 }
 </$reveal>
@@ -54,7 +54,7 @@ section.story-backdrop {
 
 /** tiddlers bar */
 section.story-backdrop > p > .opened-tiddlers-bar-container, section.story-backdrop > p > .opened-tiddlers-bar-container > div.tc-tab-buttons {
-  width: 100%;
+  /* width: 100%; */
   margin: 0;
   display: flex;
   /* background-color: white; */
