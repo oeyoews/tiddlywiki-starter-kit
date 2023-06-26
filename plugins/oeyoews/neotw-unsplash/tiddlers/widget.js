@@ -45,6 +45,10 @@ neotw-unsplash widget
           children: [searchInput],
         });
 
+        searchForm.addEventListener('submit', function (event) {
+          event.preventDefault(); // Prevent the form from submitting
+        });
+
         return { searchForm, searchInput };
       }
 
