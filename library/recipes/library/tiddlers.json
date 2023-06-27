@@ -208,6 +208,21 @@
         "requires-reload": "no"
     },
     {
+        "title": "$:/plugins/oeyoews/neotw-pangu",
+        "description": "Neotw Pangu",
+        "author": "oeyoews",
+        "version": "0.0.1",
+        "core-version": ">=5.2.7",
+        "type": "application/json",
+        "parent-plugin": "$:/plugins/oeyoews/neotw",
+        "plugin-type": "plugin",
+        "name": "Neotw Pangu",
+        "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
+        "list": "readme",
+        "readme": "<div class=\"prose max-w-none prose-indigo\">\n\n!! Neotw Pangu\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/neotw-pangu]]\n* [[Demo|https://oeyoews.github.io/neotw]]\n",
+        "requires-reload": "yes"
+    },
+    {
         "version": "0.0.2",
         "type": "application/json",
         "title": "$:/plugins/oeyoews/neotw-snippet",
