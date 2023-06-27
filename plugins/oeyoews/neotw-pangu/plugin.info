@@ -1,0 +1,13 @@
+{
+  "title": "$:/plugins/oeyoews/neotw-pangu",
+  "description": "Neotw Pangu",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.2.7",
+  "type": "application/json",
+  "parent-plugin": "$:/plugins/oeyoews/neotw",
+  "plugin-type": "plugin",
+  "name": "Neotw Pangu",
+  "dependents": ["$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"],
+  "list": "readme"
+}
