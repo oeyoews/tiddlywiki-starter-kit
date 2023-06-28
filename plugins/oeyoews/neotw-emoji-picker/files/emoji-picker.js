@@ -28,8 +28,8 @@ function emojiComponent() {
   button.type = 'button';
   button.onclick = clearSearch;
   button.className =
-    'bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 mx-2 rounded shadow w-auto';
-  button.textContent = '🍃 Clear';
+    'bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 mx-2 rounded shadow w-auto cursor-pointer';
+  button.textContent = '🍃';
   button.title = 'Clear';
 
   // Append label, input, and button to form
