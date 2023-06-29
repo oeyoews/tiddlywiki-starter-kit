@@ -1,6 +1,7 @@
 {
-  "description": "neotw edition",
-  "languages": [],
+  "description": "Neotw Edition",
+  "languages": [
+  ],
   "plugins": [
     "tiddlywiki/tiddlyweb",
     "tiddlywiki/filesystem",

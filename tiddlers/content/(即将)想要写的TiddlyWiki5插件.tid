@@ -1,6 +1,6 @@
 created: 20230619150240359
 creator: oeyoews
-modified: 20230628140306397
+modified: 20230629122352564
 modifier: oeyoews
 publish: public
 tags: TiddlyWiki Plugins
@@ -15,6 +15,7 @@ type: text/markdown
 ## TODO
 
 :::todo
+- [ ] https://tiddlywiki.com/editions/translators/
 - [ ] tm-modal to write tiddler linke notion
 - [ ] 盘古插件 neotw-pangu
 - [ ] 标题支持fold
