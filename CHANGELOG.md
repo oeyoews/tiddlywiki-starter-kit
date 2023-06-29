@@ -1,3 +1,10 @@
+# [3.330.0](https://github.com/oeyoews/neotw/compare/v3.329.0...v3.330.0) (2023-06-29)
+
+
+### Features
+
+* support current focused tiddler ([65bdcfc](https://github.com/oeyoews/neotw/commit/65bdcfc2db70f0154144dbed4154c84d5856b40c))
+
 # [3.329.0](https://github.com/oeyoews/neotw/compare/v3.328.1...v3.329.0) (2023-06-25)
 
 
