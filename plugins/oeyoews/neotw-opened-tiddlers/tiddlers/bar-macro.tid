@@ -1,53 +1,32 @@
 title: $:/plugins/oeyoews/neotw-opended-tiddlers/bar-macro
 tags: $:/tags/Macro
 
-\define onMiddleClick()
-<$list filter="[<event-mousebutton>match[middle]]">
-  <$action-sendmessage $message="tm-close-tiddler" $param=<<currentTab>>/>
-</$list>
-\end
-
 \define opened-tiddlers-bar()
 \whitespace trim
 <$list filter="[list[$:/StoryList]!has[draft.of]count[]compare:number:gt[2]]">
 <div class="tc-tab-buttons opened-tiddlers-bar" >
-  <div class="opened-tiddlers-bar-drag-area" />
   <div class="opened-tiddlers-bar-tabs">
+    <!-- todo: FIXED ORDER NOT DYNAMICJK -->
+    <div class="text-indigo-500 bg-gray-200 text-md font-bold py-1 px-2 capitalize" >
+      <$link to={{$:/temp/focussedTiddler}} >
+         <$view tiddler={{$:/temp/focussedTiddler}} field='title'/>
+      </$link>
+    </div>
     <$list filter="[list[$:/StoryList]]" history="$:/HistoryList" variable="currentTab">
-      <$reveal type="match" state="$:/HistoryList!!current-tiddler" text=<<currentTab>>>
-        <$eventcatcher $auxclick=<<onMiddleClick>>>
-          <div style="display:inline">
-            <!-- tc-tab-selected -->
-            <$button to=<<currentTab>> class="tc-tab bg-neutral-200 text-slate-700 py-2">
-              <$view tiddler=<<currentTab>> field="name">
-              <$view tiddler=<<currentTab>> field="title" /></$view>
-              <!-- <$button message="tm-close-tiddler" param=<<currentTab>> class="tc-image-button opened-tiddlers-bar-close-button"> -->
-              <!--   &times; -->
-              <!-- </$button> -->
-            </$button>
-          </div>
-        </$eventcatcher>
-      </$reveal>
       <$reveal type="nomatch" state="$:/HistoryList!!current-tiddler" text=<<currentTab>>>
-        <$eventcatcher $auxclick=<<onMiddleClick>>>
           <div>
               <$button to=<<currentTab>> class="tc-tab text-neutral-400 py-2">
                 <$view tiddler=<<currentTab>> field="name">
                   <$view tiddler=<<currentTab>> field="title" />
                 </$view>
-                <!-- <$button message="tm-close-tiddler" param=<<currentTab>> class="tc-image-button opened-tiddlers-bar-close-button"> -->
-                <!--   &times; -->
-                <!-- </$button> -->
               </$button>
           </div>
-        </$eventcatcher>
       </$reveal>
     </$list>
-    <div class="text-slate-400 py-1 px-2 mr-2 font-bold">
-      {{{ [list[$:/StoryList]count[]] }}}
-    </div>
+    <!-- <div class="text-slate-400 py-1 px-2 mr-2 font-bold"> -->
+    <!--   {{{ [list[$:/StoryList]count[]] }}} -->
+    <!-- </div> -->
   </div>
-  <!-- <div class="opened-tiddlers-bar-drag-area" /> -->
 </div>
 </$list>
 \end
