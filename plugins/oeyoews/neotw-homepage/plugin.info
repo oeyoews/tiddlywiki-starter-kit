@@ -1,0 +1,11 @@
+{
+  "title": "$:/plugins/oeyoews/neotw-homepage",
+  "description": "主页展示",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.2.7",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "Neotw Homepage",
+  "list": "readme"
+}

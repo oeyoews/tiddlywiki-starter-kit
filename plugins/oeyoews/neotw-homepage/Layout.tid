@@ -1,5 +1,6 @@
-name: {{$:/plugins/oeyoews/tiddlywiki-empty-story/icon}} Empty Story
-description: {{$:/plugins/oeyoews/tiddlywiki-empty-story/readme!!description}}
+title: $:/plugins/oeyoews/neotw-homepage/Layout
+name: {{$:/plugins/oeyoews/neotw-homepage/icon}} Empty Story
+description: {{$:/plugins/oeyoews/neotw-homepage/readme!!description}}
 tags: $:/tags/Layout
 
 \import [[$:/core/ui/PageMacros]] [all[shadows+tiddlers]tag[$:/tags/Macro]!has[draft.of]]
@@ -14,5 +15,5 @@ tags: $:/tags/Layout
   languageTitle={{{ [{$:/language}get[name]] }}}>
 
 <div class="prose max-w-none prose-indigo m-auto sm:w-auto md:w-2/3">
-{{{ [[$:/plugins/oeyoews/tiddlywiki-empty-story/readme]] ||$:/core/ui/ViewTemplate }}}
+{{{ [[$:/plugins/oeyoews/neotw-homepage/readme]] ||$:/core/ui/ViewTemplate }}}
 </div>

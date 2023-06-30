@@ -27,7 +27,7 @@
     "oeyoews/neotw-copy-code",
     "oeyoews/neotw-time",
     "oeyoews/neotw-emoji-picker",
-    "oeyoews/neotw-emoji-picker-zh-CN",
+    "oeyoews/neotw-zh-CN",
     "oeyoews/neotw-battery",
     "oeyoews/tiddlywiki-cards",
     "oeyoews/neotw-type",
@@ -58,7 +58,7 @@
     "oeyoews/tiddlywiki-tiddler-info",
     "oeyoews/tiddlywiki-gravatar",
     "oeyoews/tiddlywiki-sounds",
-    "oeyoews/tiddlywiki-empty-story",
+    "oeyoews/neotw-homepage",
     "oeyoews/tiddlywiki-readonly"
   ],
   "themes": [
