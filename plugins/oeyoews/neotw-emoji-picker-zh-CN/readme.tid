@@ -41,6 +41,7 @@ $tw.wiki.getTiddlerText('$:/language/emoji-picker/placeholder')
 !! 待办事项
 
 * 如果作为语言插件安装, 需要切换语言, tw本身的语言切换是切换tw系统的语言, 写一个切换插件语言的功能, 所以插件类型暂时先由luanguages改为plugins(tw暂时还没有插件冲突处理检测, 需要注意语言包的冲突), 可以定义一个plugins-type: plugins-languages 字段, tw核心如何处理这个字段, 是否会有影响?
+* fishing plugin how to use two languages? wired
 
 !! 注意事项
 
