@@ -1,4 +1,3 @@
-/** make things in $:/tags/AboveStory position fixed, so it will always on the top */
 section.story-backdrop .opened-tiddlers-bar-container {
   position: fixed;
   bottom: 0;
