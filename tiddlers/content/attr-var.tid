@@ -1,0 +1,15 @@
+created: 20230630152956204
+creator: oeyoews
+modified: 20230630153334979
+modifier: oeyoews
+tags: TiddlyWiki
+title: attr-var
+type: text/vnd.tiddlywiki
+
+\define hash() 
+https://github.com/oeyoews
+\end
+
+
+<a href=`$(hash)$`> Link Template
+	</a>
