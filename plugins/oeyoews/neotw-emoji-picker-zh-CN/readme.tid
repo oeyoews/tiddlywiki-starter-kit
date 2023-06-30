@@ -4,9 +4,11 @@ title: $:/plugins/oeyoews/neotw-zh-CN/readme
 
 <div class="prose prose-indigo max-w-none">
 
+! 当前Wiki(neotw)的 oeyoews 系列插件的中文语言包
+
 !! 用法
 
-建议插件使用$:/languaage/plugin-name/xxx的方式进行引用, 不要直接写死字段内容, 以便后期更改。 插件语言包可以进行重写对应的条目, 在加载的时候通过加载优先级的高低进行条目覆盖, 从而实现翻译的效果(仅仅需要修高Docs.multids即可进行翻译)
+建议插件使用$:/languaage/plugin-name/xxx的方式进行引用, 不要直接写死字段内容, 以便后期更改。 插件语言包可以进行重写对应的条目, 在加载的时候通过加载优先级的高低进行条目覆盖, 从而实现翻译的效果(仅仅需要修改xxx.multids即可进行翻译)
 
 ```
 title: $:/language/emoji-picker/
