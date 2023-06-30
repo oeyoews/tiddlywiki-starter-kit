@@ -1,9 +1,9 @@
 {
   "title": "$:/plugins/neotw-emoji-picker/zh-CN",
   "author": "oeyoews",
-  "name": "Neotw Emoji Picker Cn",
+  "name": "Neotw Emoji Picker 中文",
   "plugin-type": "plugin",
-  "description": "Neotw Emoji Picker Cn",
+  "description": "Neotw Emoji Picker 中文",
   "parent-plugins": "$:/plugins/oeyoews/neotw-emoji-picker",
   "type": "application/json",
   "core-version": ">=5.2.7",
