@@ -1,9 +1,4 @@
 title: $:/plugins/${username}/${pluginname}/readme
 description: ${description}
 
-<div class="prose max-w-none prose-indigo">
-
-!! ${description}
-
-* [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/${pluginname}]]
-* [[Demo|https://oeyoews.github.io/neotw]]
+{{$:/languages/${pluginname}/readme}}
