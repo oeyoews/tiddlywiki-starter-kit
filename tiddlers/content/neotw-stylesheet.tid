@@ -1,7 +1,7 @@
 created: 20230202124524313
 creator: oeyoews
 empty: yes
-modified: 20230428161736674
+modified: 20230630110236239
 modifier: oeyoews
 page-cover: 
 tags: $:/tags/Stylesheet
@@ -160,23 +160,6 @@ button.tc-unfold-banner {
 .tw-context {
   border:2px solid none;
   word-break: break-all; word-wrap: break-word;}
-
-.b1 {
-	background-color: #DCE2F1;
-}
-.b2 {
-	background-color: #E3EDCD;
-}
-.b3 {
-	background-color: #FAF9DE;
-}
-.b4 {
-	background-color: #FDE6E0;
-}
-
-.yellow {
-	background-color: yellow;
-}
 
 input:focus, textarea:focus {
 		box-shadow: none;
