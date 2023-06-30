@@ -11006,7 +11006,7 @@ __metadata:
     surge: ^0.23.1
     tailwindcss: ^3.3.2
     terser: ^5.17.1
-    tiddlywiki: "github:Jermolene/TiddlyWiki5#f90eb386ae7cd7da0f18b8d53fb0e454d9486d75"
+    tiddlywiki: "github:Jermolene/TiddlyWiki5#d6c77f549f3ed7c07469cc82e1c531e795bc269c"
     tw5-typed: ^0.2.27
     vercel: ^29.0.0
     zx: ^7.2.1
@@ -15501,12 +15501,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tiddlywiki@github:Jermolene/TiddlyWiki5#f90eb386ae7cd7da0f18b8d53fb0e454d9486d75":
+"tiddlywiki@github:Jermolene/TiddlyWiki5#d6c77f549f3ed7c07469cc82e1c531e795bc269c":
   version: 5.3.0-prerelease
-  resolution: "tiddlywiki@https://github.com/Jermolene/TiddlyWiki5.git#commit=f90eb386ae7cd7da0f18b8d53fb0e454d9486d75"
+  resolution: "tiddlywiki@https://github.com/Jermolene/TiddlyWiki5.git#commit=d6c77f549f3ed7c07469cc82e1c531e795bc269c"
   bin:
     tiddlywiki: ./tiddlywiki.js
-  checksum: 8f5e92aa330620c9988409cd7ed1281a8b0b97bcb8bdd5b3433c7df07bd092142be7ba77133c6330126757930c5c865a772f705c7f60810bb947445c8eda1503
+  checksum: 9a583dd78259e35d1c014d1f55c69984ae1a1ca490f7c2ccadbf1f0d8584f54d4e70a2a5570a9ed911e7d72bed30860a2f736b12d19520938977b906a35ed3bf
   languageName: node
   linkType: hard
 
