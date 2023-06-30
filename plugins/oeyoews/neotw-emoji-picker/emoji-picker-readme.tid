@@ -1,0 +1,34 @@
+title: $:/language/neotw-emoji-picker/readme
+description: ~Emoji Picker
+type: text/markdown
+
+<div class="prose max-w-none prose-indigo">
+
+@[toc]
+
+## Emoji Picker
+
+TiddlyWiki Emoji Picker is a powerful plugin that provides TiddlyWiki users with a convenient and quick emoji selector. Whether you are editing notes, writing articles, or communicating with others, using emojis can better express emotions and enrich content. The Emoji Picker plugin allows you to easily browse and insert various emoji symbols, providing an intuitive interface and simple operation.
+
+## Features
+
+1. Emoji search: The Emoji Picker plugin provides a search box that allows you to quickly find the desired emoji. Simply enter relevant keywords to filter and display emoji symbols that match your input, helping you quickly find the emojis you need.
+
+2. Emoji selection: With the Emoji Picker plugin, you can directly click on emoji symbols to insert them into the text you are currently editing. Whether in notes, articles, or comments, this plugin allows for easy insertion of emoji symbols, adding liveliness and fun.
+
+3. Copy to clipboard: The Emoji Picker plugin also provides the ability to copy the selected emoji symbol to the clipboard. With one click, you can conveniently paste the emoji symbol into other applications or text editors.
+
+4. Beautiful interface: The Emoji Picker plugin features a clean and attractive interface design, using modern styles and animation effects. It is harmonious with TiddlyWiki's default theme and other commonly used theme styles, providing a consistent and comfortable user experience.
+
+<h2 class="text-center"> Neotw Emoji Picker </h2>
+
+<$emoji-picker />
+
+## TODO
+
+* Emulate "insert link" to insert emoji button.
+* Add shortcuts.
+
+* Data source: [https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json](https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json)
+
+</div>

@@ -1,0 +1,50 @@
+title: $:/plugins/neotw-emoji-picker/zh-CN/readme
+
+\define lingo-base() $:/language/emoji-picker/
+
+<div class="prose prose-indigo max-w-none">
+
+!! 用法
+
+建议插件使用$:/languaage/plugin-name/xxx的方式进行引用, 不要直接写死字段内容, 以便后期更改。 插件语言包可以进行重写对应的条目, 在加载的时候通过加载优先级的高低进行条目覆盖, 从而实现翻译的效果(仅仅需要修高Docs.multids即可进行翻译)
+
+```
+title: $:/language/emoji-picker/
+
+# placeholder: 🍉 Search emoji ...
+placeholder: 🍉 搜索Emoji表情
+```
+
+!!! Lingo 宏
+
+```
+\define lingo-base() $:/language/emoji-picker/
+<<lingo "placeholder">>
+```
+
+<<lingo "placeholder">>
+
+!!! 直接复制条目内容
+
+* Wikitext
+
+```
+{{$:/language/emoji-picker/placeholder}}
+```
+
+* JavaScript
+
+```
+$tw.wiki.getTiddlerText('$:/language/emoji-picker/placeholder')
+```
+
+!! 待办事项
+
+* 如果作为语言插件安装, 需要切换语言, tw本身的语言切换是切换tw系统的语言, 写一个切换插件语言的功能, 所以插件类型暂时先由luanguages改为plugins(tw暂时还没有插件冲突处理检测, 需要注意语言包的冲突), 可以定义一个plugins-type: plugins-languages 字段, tw核心如何处理这个字段, 是否会有影响?
+
+!! 注意事项
+
+* "plugin-priority": 100, 插件建议加上优先级, 插件语言包的plugin-priority决定插件的优先级, 其数值应该大于其对应插件, 建议分别设置为100 and 110, 数值越小, 加载越早
+* 由于以$:/language 开头的条目和插件使用的模板不同, 所以呈现json数据, 不会显示disable 按钮, 只能在插件列表那里进行禁用插件(需要手动刷新), 或者插件名字改为$:/plugins开头(推荐), 后期有可能再修改为语言插件, 建议命名为 $:/plugins/plugin-name/language-type(结合插件命名和语言插件命名规则), 如`$:/plugins/neotw-emoji-picker/zh-CN`
+
+</div>

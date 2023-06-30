@@ -8,6 +8,7 @@
   "parent-plugin": "$:/plugins/oeyoews/neotw",
   "plugin-type": "plugin",
   "name": "Neotw Emoji Picker",
+  "plugin-priority": 100,
   "dependents": ["$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"],
   "list": "readme"
 }

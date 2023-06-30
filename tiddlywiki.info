@@ -1,7 +1,6 @@
 {
   "description": "Neotw Edition",
-  "languages": [
-  ],
+  "languages": [],
   "plugins": [
     "tiddlywiki/tiddlyweb",
     "tiddlywiki/filesystem",
@@ -23,12 +22,12 @@
     "oeyoews/commandpalette",
     "oeyoews/neotw-opened-tiddlers",
     "oeyoews/neotw-markdown-extensions",
-    "oeyoews/tiddlywiki-sweetalert",
     "oeyoews/neotw-swal2",
     "oeyoews/neotw-snippet",
     "oeyoews/neotw-copy-code",
     "oeyoews/neotw-time",
     "oeyoews/neotw-emoji-picker",
+    "oeyoews/neotw-emoji-picker-zh-CN",
     "oeyoews/neotw-battery",
     "oeyoews/tiddlywiki-cards",
     "oeyoews/neotw-type",
@@ -40,7 +39,6 @@
     "oeyoews/neotw-lodash",
     "oeyoews/tiddlywiki-tid2pdf",
     "oeyoews/tiddlywiki-github-share",
-    "oeyoews/tiddlywiki-update-check",
     "oeyoews/tiddlywiki-axios",
     "oeyoews/tiddlywiki-daylight",
     "oeyoews/neotw-confetti",
