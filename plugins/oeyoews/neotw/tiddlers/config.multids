@@ -1,0 +1,6 @@
+title: $:/config/
+
+AnimationDuration: 350
+NewJournal/Title: YYYY/0MM/0DD
+WikiParserRules/Inline/wikilink: disable
+DefaultTiddlerColour: #cccccc50
