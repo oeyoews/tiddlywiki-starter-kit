@@ -1,0 +1,6 @@
+title: $:/config/ShortcutInfo/
+
+open-command-palette: Open the command palette
+open-command-palette-command-mode: Open the command palette in command mode
+insert-command-palette-result: Insert the current result in the previously focused element
+open-command-palette-selection: Open the command palette with current selection

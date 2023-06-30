@@ -1,0 +1,6 @@
+title: $:/config/shortcuts/
+
+open-command-palette: ctrl-P
+open-command-palette-command-mode: ctrl-shift-P
+insert-command-palette-result: ctrl+shift+I
+open-command-palette-selection:
