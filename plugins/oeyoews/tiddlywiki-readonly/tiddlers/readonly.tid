@@ -2,7 +2,7 @@ title: $:/temp/oeyoews/neotw/style/readonly
 tags: $:/tags/Stylesheet
 
 \define hide-tiddler-controls()
-  [data-tiddler-title="$(currentTiddler)$"] .tc-tiddler-controls  {display: none;}
+  [data-tiddler-title="$(currentTiddler)$"] .tc-tiddler-controls  {display: none !important;}
 \end
 
 <$list filter="[{$:/info/url/protocol}match[https:]]">
