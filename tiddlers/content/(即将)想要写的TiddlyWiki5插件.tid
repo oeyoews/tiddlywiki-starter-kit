@@ -1,6 +1,6 @@
 created: 20230619150240359
 creator: oeyoews
-modified: 20230629122352564
+modified: 20230701120120089
 modifier: oeyoews
 publish: public
 tags: TiddlyWiki Plugins
@@ -15,6 +15,7 @@ type: text/markdown
 ## TODO
 
 :::todo
+- [ ] 使用单独布局, https://github.com/casualwriter/vanilla-chatgpt 模仿官网ui
 - [ ] https://tiddlywiki.com/editions/translators/
 - [ ] tm-modal to write tiddler linke notion
 - [ ] 盘古插件 neotw-pangu
