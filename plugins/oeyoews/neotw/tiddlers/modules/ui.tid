@@ -10,25 +10,25 @@ tags: $:/tags/PageTemplate
 <!-- </span> -->
 \end
 
-\define giscus-app()
-<$list filter="[[$:/temp/focussedTiddler]!is[missing]]">
-<$list filter="[[$:/temp/focussedTiddler]get[text]!is[system]]">
-<$button tooltip="Comment" class="o-btn-back">
-<$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/tiddlywiki-giscus/giscus-modal"/>
-{{$:/plugins/oeyoews/tiddlywiki-giscus/icon-gem}}
-</$button>
-</$list>
-</$list>
-\end
+<!-- \define giscus-app() -->
+<!-- <$list filter="[[$:/temp/focussedTiddler]!is[missing]]"> -->
+<!-- <$list filter="[[$:/temp/focussedTiddler]get[text]!is[system]]"> -->
+<!-- <$button tooltip="Comment" class="o-btn-back"> -->
+<!-- <$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/tiddlywiki-giscus/giscus-modal"/> -->
+<!-- {{$:/plugins/oeyoews/tiddlywiki-giscus/icon-gem}} -->
+<!-- </$button> -->
+<!-- </$list> -->
+<!-- </$list> -->
+<!-- \end -->
 
-\define reveal-js()
-<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
-<$button tooltip="Reveal Slides" class="o-btn-back">
-{{$:/plugins/oeyoews/neotw/icon/revea-js}}
-<$action-navigate $to="neotw-reveal-js" />
-</$button>
-</$list>
-\end
+<!-- \define reveal-js() -->
+<!-- <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]"> -->
+<!-- <$button tooltip="Reveal Slides" class="o-btn-back"> -->
+<!-- {{$:/plugins/oeyoews/neotw/icon/revea-js}} -->
+<!-- <$action-navigate $to="neotw-reveal-js" /> -->
+<!-- </$button> -->
+<!-- </$list> -->
+<!-- \end -->
 
 \define random-article()
 <$list filter="[{$:/info/url/protocol}match[https:]]">

@@ -19,7 +19,7 @@ tags: $:/tags/Stylesheet
 
 <!-- https://talk.tiddlywiki.org/t/is-blank-seems-to-return-nothing/4713/5 -->
 <$list filter="[[$:/StoryList]get[list]count[]match[0]]">
-.tc-tiddler-controls  {display: none !important;}
+  .tc-tiddler-controls  {display: none !important;}
 </$list>
 
 <$list filter="[[$:/StoryList]get[list]count[]match[0]]">
@@ -29,11 +29,14 @@ tags: $:/tags/Stylesheet
 </$list>
 
 <$list filter="[[$:/temp/zen-mode]get[text]match[yes]]">
-footer {display:none !important;}
-.tc-tiddler-controls,
+<!-- footer {display:none !important;} -->
+<!-- .tc-tiddler-controls, -->
+.gk0wk-notionpagebg,
 .nc-topbar {
   display: none !important;
 }
+
+[data-tiddler-title] .tc-tiddler-controls  {display: none !important;}
 </$list>
 
 <$list filter="[[$:/StoryList]get[list]count[]match[0]]">
