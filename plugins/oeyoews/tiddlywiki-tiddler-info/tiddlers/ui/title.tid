@@ -6,11 +6,12 @@ tags: $:/tags/ViewTemplate
 fill:$(foregroundColor)$;
 \end
 
-<div class="tc-tiddler-title font-serif text-center mb-8">
-<div class="tc-titlebar">
-<span class="tc-tiddler-controls float-none flex justify-end">
+<span class="tc-tiddler-controls float-none flex justify-end text-xl mb-4">
 <$list filter="[all[shadows+tiddlers]tag[$:/tags/ViewToolbar]!has[draft.of]] :filter[lookup[$:/config/ViewToolbarButtons/Visibility/]!match[hide]]" storyview="pop" variable="listItem"><$set name="tv-config-toolbar-class" filter="[<tv-config-toolbar-class>] [<listItem>encodeuricomponent[]addprefix[tc-btn-]]"><$transclude tiddler=<<listItem>>/></$set></$list>
 </span>
+
+<div class="tc-tiddler-title font-serif text-center mb-8">
+<div class="tc-titlebar">
 <$set name="tv-wikilinks" value={{$:/config/Tiddlers/TitleLinks}}>
 <$link>
 <$list filter="[<currentTiddler>] :cascade[all[shadows+tiddlers]tag[$:/tags/TiddlerIconFilter]!is[draft]get[text]] +[!is[blank]]" variable="ignore">
