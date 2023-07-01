@@ -1,18 +1,13 @@
-created: 20230430112728372
-creator: oeyoews
-modified: 20230430112730943
-modifier: oeyoews
-tags: $:/tags/ViewTemplate
 title: $:/core/ui/ViewTemplate/title
-type: text/vnd.tiddlywiki
+tags: $:/tags/ViewTemplate
 
 \whitespace trim
 \define title-styles()
 fill:$(foregroundColor)$;
 \end
-<div class="tc-tiddler-title font-serif">
+<div class="tc-tiddler-title font-serif text-center">
 <div class="tc-titlebar">
-<span class="tc-tiddler-controls">
+<span class="tc-tiddler-controls float-none flex justify-end">
 <$list filter="[all[shadows+tiddlers]tag[$:/tags/ViewToolbar]!has[draft.of]] :filter[lookup[$:/config/ViewToolbarButtons/Visibility/]!match[hide]]" storyview="pop" variable="listItem"><$set name="tv-config-toolbar-class" filter="[<tv-config-toolbar-class>] [<listItem>encodeuricomponent[]addprefix[tc-btn-]]"><$transclude tiddler=<<listItem>>/></$set></$list>
 </span>
 <$set name="tv-wikilinks" value={{$:/config/Tiddlers/TitleLinks}}>
