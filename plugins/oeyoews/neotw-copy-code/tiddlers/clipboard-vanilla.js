@@ -40,7 +40,7 @@ function addCopyButton() {
     } else {
       // TODO: option this hidden or not
       classNames =
-        'copy-button float-right hover:bg-gray-200 transition duration-200 hidden ease-in'; //  opacity-0 hover:opacity-100
+        'copy-button float-right hover:bg-gray-200 transition duration-200 hidden ease-in p-2'; //  opacity-0 hover:opacity-100
       const copyButton = $tw.utils.domMaker('button', {
         text: fileType ? `${fileType} 📋` : '📋',
         class: fileType ? classNames : classNames + ' -m-4',

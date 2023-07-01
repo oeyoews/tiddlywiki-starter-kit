@@ -1,9 +1,9 @@
 created: 20230701045745739
 creator: oeyoews
-modified: 20230701050033298
+modified: 20230701050126622
 modifier: oeyoews
 tags: Tailwindcss
-title: tailwindcss-sticke
+title: tailwindcss-sticky
 type: text/vnd.tiddlywiki
 
 <div class="relative max-w-md mx-auto bg-white dark:bg-slate-800 shadow-lg h-80 overflow-auto ring-1 ring-slate-900/5 -my-px">
