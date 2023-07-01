@@ -1,3 +1,10 @@
+## [3.332.1](https://github.com/oeyoews/neotw/compare/v3.332.0...v3.332.1) (2023-07-01)
+
+
+### Bug Fixes
+
+* add important for tc-tiddler-control ([96e003e](https://github.com/oeyoews/neotw/commit/96e003e1935c832bedbce0b2ef934cbb38dde87d))
+
 # [3.332.0](https://github.com/oeyoews/neotw/compare/v3.331.1...v3.332.0) (2023-07-01)
 
 
