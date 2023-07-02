@@ -1,4 +1,4 @@
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
   background-color: transparent;
 }
 
@@ -22,10 +22,11 @@
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
-}
+} */
+
 /* hide scrollbar */
 
-/* * {
+* {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
@@ -39,7 +40,7 @@ scrollbar-width {
 }
 ::-moz-scrollbar {
   display: none;
-} */
+}
 
 /* gradient hr */
 hr {
