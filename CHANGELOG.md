@@ -1,3 +1,10 @@
+# [3.333.0](https://github.com/oeyoews/neotw/compare/v3.332.1...v3.333.0) (2023-07-03)
+
+
+### Features
+
+* add deepl plugin ([a064881](https://github.com/oeyoews/neotw/commit/a064881dfa09a9e8e50c200ca6f1d74feba09c72))
+
 ## [3.332.1](https://github.com/oeyoews/neotw/compare/v3.332.0...v3.332.1) (2023-07-01)
 
 
