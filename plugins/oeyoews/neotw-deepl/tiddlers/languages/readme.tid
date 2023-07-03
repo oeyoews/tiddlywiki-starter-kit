@@ -5,3 +5,8 @@ title: $:/languages/neotw-deepl/readme
 !! Deepl Translator
 
 <$deepl />
+
+!! TODO
+
+* support editmode
+* support tm-modal(with shortcuts)
