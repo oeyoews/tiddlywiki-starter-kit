@@ -23,7 +23,7 @@ title: $:/core/ui/EditorToolbar/picture-dropdown
 </span>
 </$wikify>
 <$vars userInput={{{ [<storeTitle>get[text]] }}}
-    searchFilter="[is[image]search<userInput>]"
+    searchFilter="[is[image]search<userInput>limit[5]]"
     resultCount="<$count filter=<<searchFilter>>/>">
 <$reveal state=<<storeTitle>> type="nomatch" text="">
 <span class="tc-search-results"><<lingo System/Matches>></span>
