@@ -6,7 +6,7 @@ module-type: widget
 neotw-deepl widget
 
 \*/
-(function () {
+(function() {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -84,7 +84,7 @@ neotw-deepl widget
         children: [deeplLeftContainer, deeplRightContainer],
       });
 
-      // 移除重复节点
+      // TODO: 移除重复节点
       const deeplContainer = $tw.utils.domMaker('div', {
         class: 'container mx-auto p-4',
         children: [deeplSecContainer],

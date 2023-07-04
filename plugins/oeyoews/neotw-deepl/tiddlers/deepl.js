@@ -54,7 +54,7 @@ function deepl() {
       });
   }
 
-  const debouncedTranslate = debounce(translateText, 100);
+  const debouncedTranslate = debounce(translateText, 200);
 
   // 监听输入框和语言选择框的变化
   document
