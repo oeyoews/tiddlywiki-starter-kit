@@ -51,7 +51,7 @@ function emojiComponent() {
   container.appendChild(form);
   container.appendChild(emojiContainer);
   const virtualRoot = document.createElement('div');
-  virtualRoot.className = 'flex items-center justify-center m-2 rounded p-2';
+  virtualRoot.className = 'flex items-center justify-center rounded p-2';
   virtualRoot.appendChild(container);
 
   const emojis = $tw.wiki.getTiddlerData(
