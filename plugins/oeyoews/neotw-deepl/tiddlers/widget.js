@@ -25,9 +25,9 @@ neotw-deepl widget
 
       const textareaClass =
         'shadow border-0 resize-none h-48 w-full rounded p-2 focus:outline-none focus:ring-0 focus:ring-blue-500';
-      const buttonClass = 'mt-2 p-2 text-white rounded';
+      const buttonClass = 'mt-2 p-2 text-white rounded w-auto';
       const selectClass =
-        'mt-2 p-2 border rounded focus:outline-none border-none shadow focus:ring-2 focus:ring-blue-500';
+        'mt-2 p-2 border rounded focus:outline-none border-none shadow focus:ring-2 focus:ring-blue-500 flex';
 
       const leftOptionEN = $tw.utils.domMaker('option', {
         text: 'EN',
@@ -84,6 +84,7 @@ neotw-deepl widget
         children: [deeplLeftContainer, deeplRightContainer],
       });
 
+      // 移除重复节点
       const deeplContainer = $tw.utils.domMaker('div', {
         class: 'container mx-auto p-4',
         children: [deeplSecContainer],
