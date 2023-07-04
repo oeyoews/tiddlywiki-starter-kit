@@ -20,6 +20,7 @@ title: $:/core/ui/EditorToolbar/picture-dropdown
 <!-- {{$:/core/images/close-button}} -->
 <!-- </$button> -->
 <!-- </$reveal> -->
+    <!-- support filter -->
 </span>
 </$wikify>
 <$vars userInput={{{ [<storeTitle>get[text]] }}}
