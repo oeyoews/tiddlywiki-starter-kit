@@ -9,7 +9,7 @@ dotenv.config();
 // process.env.TIDDLYWIKI_THEME_PATH = './';
 
 // impress msg
-$.verbose = true;
+$.verbose = false;
 
 /* const PUBLIC = process.env.PUBLIC || true;
 if (!PUBLIC) {
