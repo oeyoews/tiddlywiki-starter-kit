@@ -1,9 +1,9 @@
 created: 20230601134216651
 creator: oeyoews
-modified: 20230601134253084
+modified: 20230704114258262
 modifier: oeyoews
 tags: React
-title: react-render
+title: react 生命周期
 type: text/markdown
 
 React 组件的生命周期方法指的是在组件的生命周期中由 React 自动调用的一系列方法，这些方法可以用于在组件的不同阶段执行一些操作，例如初始化状态、更新 UI、处理错误等。React 组件的生命周期方法分为三个阶段：挂载、更新和卸载。下面是每个阶段的生命周期方法：

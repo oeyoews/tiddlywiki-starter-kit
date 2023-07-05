@@ -1,10 +1,7 @@
 $.verbose = false;
 
-import { cyan, blue, yellow, bold, dim, green } from 'kolorist';
 import prompts from 'prompts';
 import replace from 'replace';
-import signale from 'signale';
-import msg from '../lib/info.mjs';
 import base from '../lib/base.mjs';
 
 export default async function newPlugin() {
