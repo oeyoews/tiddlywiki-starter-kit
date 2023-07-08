@@ -8,7 +8,7 @@ fetch-mdfile widget
 \*/
 // TODO: refresh textContent
 // debounce
-(function () {
+(function() {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -28,27 +28,30 @@ fetch-mdfile widget
       this.execute();
 
       const timestamp = new Date().getTime();
-      const fileName = this.getAttribute('fileName', `MDFile-${timestamp}`);
-      const modified = $tw.wiki.getTiddler(fileName)?.fields.modified;
+      let filename = this.getAttribute('filename', `MDFile-${timestamp}`);
+      filename += " 📝";
+      const modified = $tw.wiki.getTiddler(filename)?.fields.modified;
       const url = this.getAttribute(
         'url',
         'https://raw.githubusercontent.com/oeyoews/neotw/main/README.md',
       );
 
       const buttonNode = this.document.createElement('button');
-      buttonNode.textContent = `${fileName}`;
+      buttonNode.textContent = `${filename}`;
       if (modified) {
-        buttonNode.textContent = `${fileName} updated ${modified}`;
+        buttonNode.textContent = `${filename} updated ${modified}`;
       }
+
       parent.insertBefore(buttonNode, nextSibling);
       this.domNodes.push(buttonNode);
+
       buttonNode.onclick = async () => {
-        console.log('fetching ...');
+        NProgress.start();
         const response = await fetch(url);
         const text = await response.text();
-        $tw.wiki.setText(fileName, 'text', null, text);
-        $tw.wiki.setText(fileName, 'type', null, 'text/markdown');
-        console.log('fetch mdfile end ');
+        $tw.wiki.setText(filename, 'text', null, text);
+        $tw.wiki.setText(filename, 'type', null, 'text/markdown');
+        NProgress.done();
         // buttonNode.textContent = `${fileName} updated ${modified}`;
       };
     }
