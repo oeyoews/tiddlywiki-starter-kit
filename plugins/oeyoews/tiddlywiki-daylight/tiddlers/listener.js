@@ -35,8 +35,20 @@ isDarkMode && setPalette(githubDark);
 isDarkMode && setThemeMode('dark');
 
 function handleThemeChange(event) {
-  setThemeMode((event.matches && 'dark') || 'light');
+  NProgress.start();
   setPalette((event.matches && githubDark) || notebookPalette);
+  setThemeMode((event.matches && 'dark') || 'light');
+  NProgress.done();
+  // 一闪而过
+  /* Swal.fire({
+    title: `🌈 Theme 模式切换结束`,
+    icon: 'success',
+    toast: true,
+    showCancelButton: false,
+    showConfirmButton: false,
+    timer: 1500,
+    position: 'top-end',
+  }); */
 }
 
 darkMode.addEventListener('change', handleThemeChange);
