@@ -1,6 +1,6 @@
 created: 20230619150240359
 creator: oeyoews
-modified: 20230702125815386
+modified: 20230710122637064
 modifier: oeyoews
 publish: public
 tags: TiddlyWiki Plugins
@@ -15,6 +15,7 @@ type: text/markdown
 ## TODO
 
 :::todo
+- [ ] for two thousands tiddler, daylight plugins will be slow to automatcially switch mode
 - [ ] 自动预览导入内容或者图片, 选择是否需要修改名字
 - [ ] 使用单独布局, https://github.com/casualwriter/vanilla-chatgpt 模仿官网ui
 - [ ] https://tiddlywiki.com/editions/translators/
