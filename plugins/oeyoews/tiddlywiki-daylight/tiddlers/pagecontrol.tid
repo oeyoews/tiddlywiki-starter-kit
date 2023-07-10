@@ -2,9 +2,8 @@ title: $:/plugins/oeyoews/tiddlywiki-daylight/pagecontrol
 list-before: $:/core/ui/Buttons/more-page-actions
 description: Toggle mode
 caption: Toggle Mode
+tags: $:/tags/PageControls
 list-after:
-
-<!-- tags: $:/tags/PageControls -->
 
 <!-- todo: add dynamic icon, support hover color -->
 

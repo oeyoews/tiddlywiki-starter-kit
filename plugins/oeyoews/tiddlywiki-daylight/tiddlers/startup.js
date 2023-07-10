@@ -16,11 +16,15 @@ daylight module
   exports.after = ['startup'];
   exports.synchronous = true;
   exports.startup = () => {
-    window.toggle = require('toggle.js').toggle;
-    window.setTheme = require('toggle.js').setTheme;
-    require('./daylight-listener.js');
+    const {
+      checkMode,
+      checkModeListener,
+      toggleMode,
+    } = require('./daylight-listener.js');
+    checkMode();
+    checkModeListener();
     $tw.rootWidget.addEventListener('om-toggle-theme', () => {
-      toggle();
+      toggleMode();
     });
   };
 })();
