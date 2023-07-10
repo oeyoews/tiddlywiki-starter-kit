@@ -6,10 +6,10 @@
 // https://github.com/blog/1825-task-lists-in-all-markdown-documents
 // https://github.com/linsir/markdown-it-task-checkbox
 
-module.exports = function (md, options) {
+module.exports = function(md, options) {
   var defaults;
   defaults = {
-    disabled: true,
+    disabled: false,
     divWrap: false,
     divClass: 'checkbox',
     idPrefix: 'cbx_',
@@ -17,7 +17,7 @@ module.exports = function (md, options) {
     liClass: 'task-list-item',
   };
   options = Object.assign({}, defaults, options);
-  md.core.ruler.after('inline', 'github-task-lists', function (state) {
+  md.core.ruler.after('inline', 'github-task-lists', function(state) {
     var tokens = state.tokens;
     var lastId = 0;
     for (var i = 2; i < tokens.length; i++) {
@@ -81,6 +81,7 @@ function makeCheckbox(token, id, options, TokenConstructor) {
   checkbox.attrs = [
     ['type', 'checkbox'],
     ['id', id],
+    ['class', 'accent-lime-400'],
   ];
   var checked = /^\[[xX]\][ \u00A0]/.test(token.content); // if token.content starts with '[x] ' or '[X] '
   if (checked === true) {
@@ -89,7 +90,6 @@ function makeCheckbox(token, id, options, TokenConstructor) {
   if (options.disabled === true) {
     checkbox.attrs.push(['disabled', 'true']);
   }
-
   return checkbox;
 }
 
