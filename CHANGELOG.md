@@ -1,3 +1,10 @@
+## [3.337.1](https://github.com/oeyoews/neotw/compare/v3.337.0...v3.337.1) (2023-07-10)
+
+
+### Performance Improvements
+
+* remove two thousand tiddler to fix daylight slow switch ([7b8a88e](https://github.com/oeyoews/neotw/commit/7b8a88ecc3dc5b25839f3b3e6d6385c6f78f63e9))
+
 # [3.337.0](https://github.com/oeyoews/neotw/compare/v3.336.0...v3.337.0) (2023-07-10)
 
 
