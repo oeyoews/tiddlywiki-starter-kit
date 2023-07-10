@@ -12,6 +12,7 @@ title: $:/plugins/oeyoews/commandpalette/readme
 
 !! TODO
 
+* suitable dark:invert
 * ctrl-shift-I 不起作用
 * support create tiddlers with tag
 <!-- * add masklayer -->
