@@ -6,7 +6,7 @@ module-type: widget
 Command Palette Widget
 
 \*/
-(function() {
+(function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -61,7 +61,7 @@ Command Palette Widget
       this.allowInputFieldSelection = true;
       this.searchHint.innerText = hint;
       this.searchContainer.value = '';
-      this.currentProvider = () => { };
+      this.currentProvider = () => {};
       this.currentResolver = e => {
         this.invokeActionString(action, this, e, {
           commandpaletteinput: this.searchContainer.value,
@@ -356,7 +356,7 @@ Command Palette Widget
         };
       };
 
-      this.currentProvider = terms => { };
+      this.currentProvider = terms => {};
       this.currentResolver = e => {
         if (this.searchContainer.value.length === 0) return;
         name = this.searchContainer.value;
@@ -484,32 +484,43 @@ Command Palette Widget
       );
 
       let inputAndMainHintWrapper = this.createElement('div', {
-        className: 'inputhintwrapper',
+        className: 'flex justify-center items-center',
       });
       // pointer-events-none fix z-index bug
       // backdrop-blur not effect with bg-neutral-600
-      this.mask = this.createElement('div', {
-        className: 'backdrop-blur z-[9998] fixed left-0 top-0 w-full h-full bg-neutral-500 transition-all pointer-events-none duration-500',
-      }, {
-        opacity: 0,
-      })
+      this.mask = this.createElement(
+        'div',
+        {
+          className:
+            'backdrop-blur z-[9998] fixed left-0 top-0 w-full h-full bg-neutral-500 transition-all pointer-events-none duration-500',
+        },
+        {
+          opacity: 0,
+        },
+      );
       this.container = this.createElement(
         'div',
         // add transform
         {
           className:
-            'bg-white flex-col z-[9999] transform shadow-lg py-2 mt-4 fixed left-1/2 -translate-x-1/2 w-1/2 rounded transition-all duration-500',
+            'bg-white flex-col z-[9999] transform shadow-lg py-2 mt-4 fixed left-1/2 -translate-x-1/2 w-1/2 rounded transition-all duration-500 dark:invert',
         },
         { display: 'none' },
       );
       this.searchContainer = this.createElement('input', { type: 'text' });
-      this.searchContainer.classList.add('w-full', 'border-none')
+      this.searchContainer.classList.add(
+        'w-full',
+        'border-none',
+        'dark:invert',
+      );
       this.searchContainer.placeholder = '🔥 Search ...';
       this.searchHint = this.createElement('div', {
         className: 'commandpalettehint commandpalettehintmain',
       });
       inputAndMainHintWrapper.append(this.searchHint, this.searchContainer);
-      this.scrollDiv = this.createElement('div', { className: 'cp-scroll my-2' });
+      this.scrollDiv = this.createElement('div', {
+        className: 'cp-scroll my-2',
+      });
       this.container.append(inputAndMainHintWrapper, this.scrollDiv);
       this.searchContainer.addEventListener('keydown', e => this.onKeyDown(e));
       this.searchContainer.addEventListener('input', () =>
@@ -517,7 +528,7 @@ Command Palette Widget
       );
       window.addEventListener('click', e => this.onClick(e));
 
-      parent.insertBefore(this.mask, nextSibling)
+      parent.insertBefore(this.mask, nextSibling);
       parent.insertBefore(this.container, nextSibling);
 
       this.refreshCommandPalette();
@@ -712,7 +723,7 @@ Command Palette Widget
       this.onInput(this.searchContainer.value); //Trigger results on open
       this.container.style.display = 'flex ';
       this.mask.style.opacity = '0.8';
-      this.mask.classList.remove('pointer-events-none')
+      this.mask.classList.remove('pointer-events-none');
       this.mask.addEventListener('scroll', e => e.stopPropagation());
       // this.container.classList.add('translate-y-40')
       this.searchContainer.focus();
@@ -744,7 +755,7 @@ Command Palette Widget
     closePalette() {
       this.container.style.display = 'none';
       this.mask.style.opacity = '0';
-      this.mask.classList.add('pointer-events-none')
+      this.mask.classList.add('pointer-events-none');
       // this.mask.classList.remove('translate-y-40')
       this.isOpened = false;
       this.focusAtCaretPosition(
@@ -879,7 +890,7 @@ Command Palette Widget
         let selected = this.currentSelection === i + 1;
         this.currentResults[i].className = selected
           ? 'commandpaletteresult commandpaletteresultselected py-2 bg-neutral-200 text-neutral-900 rounded-sm'
-          : 'commandpaletteresult py-2';
+          : 'commandpaletteresult py-2 dark:invert';
       }
       if (this.currentSelection === 0) {
         this.scrollDiv.scrollTop = 0;
@@ -969,12 +980,12 @@ Command Palette Widget
       } else {
         searches = $tw.wiki.filterTiddlers(
           '[all[]tags[]!is[system]search[' +
-          terms +
-          ']][all[]tags[]is[system]search[' +
-          terms +
-          ']][all[shadows]tags[]search[' +
-          terms +
-          ']]',
+            terms +
+            ']][all[]tags[]is[system]search[' +
+            terms +
+            ']][all[shadows]tags[]search[' +
+            terms +
+            ']]',
         );
       }
       searches = searches.map(s => {
@@ -1271,7 +1282,8 @@ Command Palette Widget
 
     filterProvider(terms, hint) {
       this.currentSelection = 0;
-      this.searchHint.innerText = hint === undefined ? 'Filter operation' : hint;
+      this.searchHint.innerText =
+        hint === undefined ? 'Filter operation' : hint;
       terms = '[' + terms;
       let fields = $tw.wiki.filterTiddlers('[fields[]]');
       let results = $tw.wiki.filterTiddlers(terms).map(r => {
@@ -1288,7 +1300,7 @@ Command Palette Widget
         }
         if (date !== 'Invalid Date') {
           results[i].hint = date;
-          results[i].action = () => { };
+          results[i].action = () => {};
           alreadyMatched = true;
         }
         let isTag =
@@ -1325,7 +1337,7 @@ Command Palette Widget
           let parsed;
           try {
             parsed = $tw.wiki.parseFilter(this.searchContainer.value);
-          } catch (e) { } //The error is already displayed to the user
+          } catch (e) {} //The error is already displayed to the user
           let foundTitles = [];
           for (let node of parsed || []) {
             if (node.operators.length !== 2) continue;
@@ -1352,7 +1364,7 @@ Command Palette Widget
             }
           }
           results[i].hint = hint;
-          results[i].action = () => { };
+          results[i].action = () => {};
           alreadyMatched = true;
         }
         // let isContentType = terms.includes('content-type');
@@ -1379,7 +1391,9 @@ Command Palette Widget
     }
 
     createTiddlerResolver(e) {
-      let { tags, searchTerms } = this.parseTags(this.searchContainer.value.substr(1));
+      let { tags, searchTerms } = this.parseTags(
+        this.searchContainer.value.substr(1),
+      );
       let title = searchTerms.join(' ');
       tags = tags.join(' ');
       this.tmMessageBuilder('tm-new-tiddler', { title: title, tags: tags })(e);

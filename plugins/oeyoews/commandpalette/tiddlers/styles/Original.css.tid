@@ -58,7 +58,7 @@ type: text/vnd.tiddlywiki
     cursor: pointer;
 }
 .commandpaletteresult:not(:last-child) {
-    border-bottom: <<colour page-background>> solid 1px;
+    <!-- border-bottom: <<colour page-background>> solid 1px; -->
 }
 .commandpaletteresult:hover:not(.commandpaletteresultselected) {
     background: <<colour page-background>>;
