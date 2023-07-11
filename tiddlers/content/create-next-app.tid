@@ -1,12 +1,12 @@
 created: 20230709140514063
 creator: oeyoews
-modified: 20230709154712570
+modified: 20230711052042239
 modifier: oeyoews
 tags: React
 title: create-next-app
 type: text/markdown
 
 ```
-yarn create next-app --tailwind with-tailwindcss-app
+yarn create next-app --tailwind <project-folder-name>
 yarn next telemetry disable
 ```
