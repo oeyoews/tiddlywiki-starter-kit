@@ -12,7 +12,7 @@ tags: $:/tags/ViewTemplate
 </$list>
 
 <$list filter="[all[current]!is[system]]">
-<$reveal tag="div" class="prose prose-indigo max-w-none prose-img:my-0 prose-a:no-underline prose-h2:mt-4 prose-blockquote:not-italic prose-li:marker:text-indigo-500 text-neutral-700 mt-4 prose-pre:bg-neutral-100 prose-pre:text-neutral-900 dark:invert" type="nomatch" stateTitle=<<folded-state>> text="hide" retain="yes" animate="yes">
+<$reveal tag="div" class="prose prose-indigo max-w-none prose-img:my-0 prose-a:no-underline prose-h2:mt-4 prose-blockquote:not-italic prose-li:marker:text-indigo-500 text-neutral-700 mt-4 prose-pre:bg-neutral-100 prose-pre:text-neutral-900 dark:invert selection:bg-[#d7d4f0] selection:text-black" type="nomatch" stateTitle=<<folded-state>> text="hide" retain="yes" animate="yes">
 
 <$transclude tiddler={{{ [<currentTiddler>] :cascade[all[shadows+tiddlers]tag[$:/tags/ViewTemplateBodyFilter]!is[draft]get[text]] :and[!is[blank]else[$:/core/ui/ViewTemplate/body/default]] }}} />
 

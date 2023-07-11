@@ -101,13 +101,6 @@ a {
   text-decoration: none !important;
 }
 
-/* selection */
-*::selection {
-  background-color: #d7d4f0;
-  border-radius: 20px;
-  color: black;
-}
-
 /* remove more border */
 .tc-tab-content.tc-vertical {
   border-left: 0;
@@ -119,12 +112,6 @@ a {
 
 .tc-more-sidebar > .tc-tab-set > .tc-tab-buttons > button {
   border: none;
-}
-
-/* selection */
-* ::selection {
-  background-color: #d7d4f0;
-  color: black;
 }
 
 /* tc-notification */
