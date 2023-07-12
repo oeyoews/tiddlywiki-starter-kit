@@ -1,3 +1,10 @@
+## [3.339.1](https://github.com/oeyoews/neotw/compare/v3.339.0...v3.339.1) (2023-07-12)
+
+
+### Performance Improvements
+
+* optimize build scripts ([07ae020](https://github.com/oeyoews/neotw/commit/07ae02085eeeca295cdd153b782193fe6f4723ee))
+
 # [3.339.0](https://github.com/oeyoews/neotw/compare/v3.338.0...v3.339.0) (2023-07-10)
 
 
