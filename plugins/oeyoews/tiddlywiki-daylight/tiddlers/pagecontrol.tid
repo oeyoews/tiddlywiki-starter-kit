@@ -8,7 +8,8 @@ list-after:
 \whitespace trim
 <$button message="om-toggle-theme" tooltip="toggle" aria-label="toggle" class="tc-btn-invisible grayscale hover:filter-none" >
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
-🌅
+<!-- // TODO return button with widget -->
+🌙 ☀️
 <!-- <$list filter="[{$:/info/darkmode}match[yes]]">☀️</$list> -->
 <!-- <$list filter="[{$:/info/darkmode}match[no]]">🥮</$list> -->
 </$list>
@@ -18,3 +19,11 @@ list-after:
 </span>
 </$list>
 </$button>
+
+<!-- <div class="fixed bottom-4 right-4"> -->
+<!-- <div class="flex inline space-x-4 cursor-pointer bg-black w-[90px] h-[44px] px-2 py-1 rounded-full"> -->
+<!--     <span id="moon">🌙</span> -->
+<!--     <span id="sun">🔆</span> -->
+<!--     <span id="ball" class="-translate-x-[47px] scale-125">️🟢</span> -->
+<!--   </div> -->
+<!--   </div> -->
