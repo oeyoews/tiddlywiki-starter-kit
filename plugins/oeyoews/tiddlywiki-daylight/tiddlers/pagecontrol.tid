@@ -2,28 +2,17 @@ title: $:/plugins/oeyoews/tiddlywiki-daylight/pagecontrol
 list-before: $:/core/ui/Buttons/more-page-actions
 description: Toggle mode
 caption: Toggle Mode
-<!-- tags: $:/tags/PageControls -->
-list-after:
+tags: $:/tags/PageControls
 
 \whitespace trim
-<$button message="om-toggle-theme" tooltip="toggle" aria-label="toggle" class="tc-btn-invisible grayscale hover:filter-none" >
+<$button tooltip="Toggle Mode" aria-label="" class=<<tv-config-toolbar-class>> message="om-toggle-theme">
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
-<!-- // TODO return button with widget -->
-🌙 ☀️
-<!-- <$list filter="[{$:/info/darkmode}match[yes]]">☀️</$list> -->
-<!-- <$list filter="[{$:/info/darkmode}match[no]]">🥮</$list> -->
+    <span class="hidden dark:inline">{{$:/plugins/oeyoews/tiddlywiki-daylight/sun}}</span>
+    <span class="inline dark:hidden">{{$:/plugins/oeyoews/tiddlywiki-daylight/dark}}</span>
 </$list>
 <$list filter="[<tv-config-toolbar-text>match[yes]]">
 <span class="tc-btn-text">
-<$text text="Toggle Mode"/>
+<$text text=""/>
 </span>
 </$list>
 </$button>
-
-<!-- <div class="fixed bottom-4 right-4"> -->
-<!-- <div class="flex inline space-x-4 cursor-pointer bg-black w-[90px] h-[44px] px-2 py-1 rounded-full"> -->
-<!--     <span id="moon">🌙</span> -->
-<!--     <span id="sun">🔆</span> -->
-<!--     <span id="ball" class="-translate-x-[47px] scale-125">️🟢</span> -->
-<!--   </div> -->
-<!--   </div> -->
