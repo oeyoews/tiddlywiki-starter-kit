@@ -1,3 +1,5 @@
+## [3.339.2](https://github.com/oeyoews/neotw/compare/v3.339.1...v3.339.2) (2023-07-14)
+
 ## [3.339.1](https://github.com/oeyoews/neotw/compare/v3.339.0...v3.339.1) (2023-07-12)
 
 
