@@ -79,7 +79,9 @@
       "text/plain",
       "--savetiddler",
       "$:/favicon.ico",
-      "favicon.ico"
+      "favicon.ico",
+      "--deletetiddlers",
+      "$:/StoryList"
     ],
     "editions": [
       "--verbose",
@@ -103,7 +105,9 @@
       "[all[tiddlers+shadows]plugin-type[plugin]author[oeyoews]]",
       "[removeprefix[$:/plugins/oeyoews/]slugify[]addsuffix[.json]]",
       "text/plain",
-      "$:/core/templates/json-tiddler"
+      "$:/core/templates/json-tiddler",
+      "--deletetiddlers",
+      "$:/StoryList"
     ],
     "themes": [
       "--verbose",
@@ -113,7 +117,9 @@
       "[all[tiddlers+shadows]plugin-type[theme]author[NicolasPetton]]",
       "[removeprefix[$:/themes/nico]slugify[]addsuffix[.json]]",
       "text/plain",
-      "$:/core/templates/json-tiddler"
+      "$:/core/templates/json-tiddler",
+      "--deletetiddlers",
+      "$:/StoryList"
     ],
     "listen": [
       "--listen",

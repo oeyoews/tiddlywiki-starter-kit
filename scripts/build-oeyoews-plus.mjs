@@ -4,37 +4,48 @@ import ora from 'ora';
 import * as dotenv from 'dotenv';
 
 dotenv.config();
+$.verbose = false;
 
-const tiddlyWikiBin = 'tiddlywiki';
 const buildDir = 'dist';
-const oraSpinner = ora('Building ...');
+const log = ora('Building ...');
 
-const cleanBuildDir = () => $`rm -rf ${buildDir}`;
-
-const buildLibrary = () => $`npx ${tiddlyWikiBin} --build library`;
-const buildEditions = () =>
-  $`npx ${tiddlyWikiBin} editions/neotw --build editions`;
-const buildIndex = () => $`npx ${tiddlyWikiBin} --build index`;
-const buildPlugins = () => $`npx ${tiddlyWikiBin} --build plugins`;
-const buildThemes = () => $`npx ${tiddlyWikiBin} --build themes`;
-
-const copyFiles = () => $`cp -r files vercel.json ${buildDir}`;
-const minifyIndexHtml = () =>
-  $`npx html-minifier-terser -c ./config/html-minifier-terser-config.json -o dist/index.html dist/index.html`;
-
-const build = async () => {
-  oraSpinner.start();
-  await cleanBuildDir();
-  await Promise.all([
-    buildLibrary(),
-    buildEditions(),
-    buildIndex(),
-    buildPlugins(),
-    buildThemes(),
-  ]);
-  await copyFiles();
-  await minifyIndexHtml();
-  oraSpinner.succeed('Done');
+const cleanBuildDir = () => {
+  $`rm -rf dist && mkdir dist`;
+  log.succeed('🗑️ Clean dist directory');
 };
 
-build();
+const copyFiles = () => {
+  $`cp -r files vercel.json ${buildDir}`;
+  log.succeed('📁 copied files');
+};
+
+const steps = [
+  { cmd: 'index', description: '📟 Build index' },
+  { cmd: 'library', description: '📚 Build library' },
+  { cmd: 'plugins', description: '🧩 Build plugins' },
+  { cmd: 'themes', description: '🎨 Build themes' },
+];
+
+const buildStep = (name, description) => {
+  log.start(description);
+  $`npx tiddlywiki . --build ${name}`;
+  log.succeed(description);
+};
+
+const buildAll = async () => {
+  steps.map(step => {
+    buildStep(step.cmd, step.description);
+  });
+};
+
+const buildEditions = () => {
+  $`npx tiddlywiki editions/neotw --build editions`;
+  log.succeed('🚀 Build editions');
+};
+
+log.start();
+cleanBuildDir();
+buildEditions();
+await buildAll();
+copyFiles();
+log.succeed('🎉 Done');
