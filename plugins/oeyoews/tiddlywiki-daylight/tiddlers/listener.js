@@ -31,9 +31,12 @@ function toggleMode() {
 }
 
 function setThemeMode(mode) {
-  // document.documentElement.classList.remove('light', 'dark');
-  // document.documentElement.classList.add(mode);
-  document.body.classList.toggle(mode);
+  // TODO
+  // document.documentElement.style.transition = 'all .3s ease .3s';
+  document.documentElement.classList.remove('light', 'dark');
+  document.documentElement.classList.add(mode);
+  // bug
+  // document.body.classList.toggle(mode);
   localStorage.theme = mode;
 
   const tips = mode === 'dark' ? '🌜深色' : '🌅 浅色';
