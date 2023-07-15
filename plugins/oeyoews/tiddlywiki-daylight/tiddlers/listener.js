@@ -10,6 +10,9 @@ daylight module
 
 // TODO: set localstorage
 
+// window.matchMedia || alert('您的浏览器不支持prefers-color-scheme媒体查询');
+// 浏览器支持, 但是浏览器不兼容系统;
+
 // pagecontrol, like three notebookPalette
 const currentMode = 'auto'; // dark || light || auto
 
