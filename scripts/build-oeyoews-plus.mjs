@@ -43,9 +43,7 @@ const buildEditions = () => {
   log.succeed('🚀 Build editions');
 };
 
-log.start();
 cleanBuildDir();
 buildEditions();
 await buildAll();
 copyFiles();
-log.succeed('🎉 Done');
