@@ -35,7 +35,7 @@ function toggleMode() {
 
 function setThemeMode(mode) {
   // TODO
-  // document.documentElement.style.transition = 'all .3s ease .3s';
+  // document.documentElement.style.animation = 'expand 0.5s ease-in-out';
   document.documentElement.classList.remove('light', 'dark');
   document.documentElement.classList.add(mode);
   // bug
