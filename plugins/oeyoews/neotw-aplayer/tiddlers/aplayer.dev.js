@@ -79,6 +79,7 @@ A music player widget that uses the APlayer library.
       const playButtonNode = $tw.utils.domMaker('button', {
         attributes: {
           title: `播放 ${name}`,
+          ['aria-label']: 'player',
         },
         class: `p-0 m-0 bg-transparent ${classNames.join(' ')}`,
         innerHTML: playIcon,
