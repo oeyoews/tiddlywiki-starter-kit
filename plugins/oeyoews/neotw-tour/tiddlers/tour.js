@@ -28,7 +28,7 @@ function tour() {
       element: document.querySelector('[aria-label="player"]'),
       popover: {
         title: 'Player',
-        description: 'Aplayer',
+        description: '音乐播放器',
         position: 'left',
       },
     },
