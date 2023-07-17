@@ -1,13 +1,12 @@
 /*\
-title: dirver-startup.js
+title: $:/plugins/oeyoews/neotw-tour/driver-startup.js
 type: application/javascript
 module-type: startup
 
- module
+module
 
 \*/
-
-(function () {
+(function() {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -19,6 +18,7 @@ module-type: startup
   exports.startup = () => {
     require('./driver.min.js');
     window.driver = window.driver.js.driver;
-    // window.driverObj = driver();
+    const { tour } = require('./tour.js');
+    $tw.rootWidget.addEventListener('om-tours', tour);
   };
 })();
