@@ -1,12 +1,17 @@
 title: $:/languages/neotw-tour/readme
+type: text/markdown
 
 <div class="prose max-w-none prose-indigo">
 
-!! Neotw Tour
+## Driver.js TiddlyWiki 插件
+
+这是一个用于为TiddlyWiki添加引导教程功能的插件。它使用了 [driver.js](https://github.com/kamranahmedse/driver.js) 库来实现高亮显示页面元素并显示弹出窗口的功能。
+
+## 示例
 
 <h1 id="h1">Hello World</h1>
 <h2 id='h2'>Hello World</h2>
 
-<$tour />
+<$tour class="p-2"/>
 
 </div>

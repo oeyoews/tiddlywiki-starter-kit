@@ -25,7 +25,7 @@ neotw-tour widget
       this.computeAttributes();
       this.execute();
 
-      const classNames = this.getAttribute('class', '').split('');
+      const classNames = this.getAttribute('class', '').split(' ');
 
       const buttonNode = $tw.utils.domMaker('button', {
         text: 'start',
@@ -55,6 +55,11 @@ neotw-tour widget
         showProgress: true,
         animate: true,
         showButtons: ['next', 'previous', 'close'],
+        nextBtnText: '➡️',
+        prevBtnText: '⬅️',
+        doneBtnText: '❌',
+        allowClose: true,
+        // overlayColor: 'red',
         steps: [
           {
             element: '#h1',
@@ -75,14 +80,19 @@ neotw-tour widget
         ],
       });
       driverObj.drive();
-      /* driverObj.highlight({
-        element: document.querySelector('h1'),
-        popover: {
-          title: 'Page Heading',
-          description: 'This is the main heading of the page.',
-          position: 'left',
-        },
-      }); */
+
+      function highlight() {
+        driverObj.highlight({
+          // element: document.querySelector('h1'),
+          popover: {
+            description:
+              "<img src='https://i.imgur.com/EAQhHu5.gif' style='height: 202.5px; width: 270px;' /><span style='font-size: 15px; display: block; margin-top: 10px; text-align: center;'>Yet another highlight example.</span>",
+            // title: 'Page Heading',
+            // description: 'This is the main heading of the page.',
+            // position: 'left',
+          },
+        });
+      }
     }
   }
 
