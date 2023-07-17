@@ -3,14 +3,14 @@ type: text/markdown
 
 <div class="prose max-w-none prose-indigo">
 
-## Driver.js TiddlyWiki 插件
+## Driver.js TiddlyWiki Plugin
 
-这是一个用于为TiddlyWiki添加引导教程功能的插件。它使用了 [driver.js](https://github.com/kamranahmedse/driver.js) 库来实现高亮显示页面元素并显示弹出窗口的功能。
+This is a plugin designed to add guided tutorial functionality to TiddlyWiki. It utilizes the [driver.js](https://github.com/kamranahmedse/driver.js) library to highlight page elements and display pop-up windows.
 
 ## 示例
 
-<h1 id="h1">Hello World</h1>
-<h2 id='h2'>Hello World</h2>
+<h1 id="h1">H1</h1>
+<h2 id='h2'>H2</h2>
 
 <$tour class="p-2"/>
 
