@@ -18,7 +18,7 @@ module-type: startup
   exports.synchronous = true;
   exports.startup = () => {
     require('./driver.min.js');
-    const driver = window.driver.js.driver;
-    window.driverObj = driver();
+    window.driver = window.driver.js.driver;
+    // window.driverObj = driver();
   };
 })();

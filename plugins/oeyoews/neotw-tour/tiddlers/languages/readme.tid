@@ -4,7 +4,9 @@ title: $:/languages/neotw-tour/readme
 
 !! Neotw Tour
 
-* [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/neotw-tour]]
-* [[Demo|https://oeyoews.github.io/neotw]]
+<h1 id="h1">Hello World</h1>
+<h2 id='h2'>Hello World</h2>
+
+<$tour />
 
 </div>

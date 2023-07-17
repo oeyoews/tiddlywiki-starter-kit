@@ -51,14 +51,38 @@ neotw-tour widget
 
     handlerClick() {
       // 高亮元素
-      driverObj.highlight({
+      const driverObj = driver({
+        showProgress: true,
+        animate: true,
+        showButtons: ['next', 'previous', 'close'],
+        steps: [
+          {
+            element: '#h1',
+            popover: {
+              title: 'Page Heading 1',
+              description: 'This is the main heading of the page.',
+              position: 'left',
+            },
+          },
+          {
+            element: '#h2',
+            popover: {
+              title: 'Page Heading 2',
+              description: 'This is the main heading of the page.',
+              position: 'left',
+            },
+          },
+        ],
+      });
+      driverObj.drive();
+      /* driverObj.highlight({
         element: document.querySelector('h1'),
         popover: {
           title: 'Page Heading',
           description: 'This is the main heading of the page.',
           position: 'left',
         },
-      });
+      }); */
     }
   }
 
