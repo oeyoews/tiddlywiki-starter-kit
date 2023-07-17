@@ -38,12 +38,20 @@ function tour() {
         title: 'Home',
         description: '进入故事河',
         position: 'left',
+        onNextClick: () => {
+          confetti();
+          driverObj.moveNext();
+          // TODO swal
+        },
       },
     },
   ];
 
   const driverObj = driver({
+    // https://driverjs.com/docs/theming/
+    // popoverClass: 'bg-slate-300',
     showProgress: true,
+    // progressText: 'Step {{current}} of {{total}}',
     animate: true,
     showButtons: ['next', 'previous', 'close'],
     allowClose: false,
