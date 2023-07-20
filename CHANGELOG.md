@@ -1,3 +1,10 @@
+# [3.344.0](https://github.com/oeyoews/neotw/compare/v3.343.0...v3.344.0) (2023-07-20)
+
+
+### Features
+
+* support json file ([f4f1b01](https://github.com/oeyoews/neotw/commit/f4f1b01c2cf3100ca1cb488db02e883dd7f4363e))
+
 # [3.343.0](https://github.com/oeyoews/neotw/compare/v3.342.0...v3.343.0) (2023-07-17)
 
 
