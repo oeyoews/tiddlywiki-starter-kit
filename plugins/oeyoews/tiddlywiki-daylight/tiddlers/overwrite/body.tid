@@ -11,6 +11,7 @@ tags: $:/tags/ViewTemplate
 </$reveal>
 </$list>
 
+<!-- prose-invert -->
 <!-- prose-li:marker:text-indigo-500  -->
 <$list filter="[all[current]!is[system]]">
 <$reveal tag="div" class="prose prose-indigo max-w-none prose-img:my-0 prose-a:no-underline prose-h2:mt-4 prose-blockquote:not-italic text-neutral-700 mt-4 prose-pre:bg-neutral-100 prose-pre:text-neutral-900 dark:invert selection:bg-[#d7d4f0] selection:text-black" type="nomatch" stateTitle=<<folded-state>> text="hide" retain="yes" animate="yes">

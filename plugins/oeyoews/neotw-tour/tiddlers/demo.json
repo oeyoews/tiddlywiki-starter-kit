@@ -1,0 +1,26 @@
+[
+  {
+    "element": ".tc-story-river",
+    "popover": {
+      "title": "stroy river",
+      "description": "tc-story-river",
+      "position": "right"
+    }
+  },
+  {
+    "element": ".tc-tiddler-title",
+    "popover": {
+      "title": "Page Heading 2",
+      "description": "This is the main heading of the page.",
+      "position": "right"
+    }
+  },
+  {
+    "element": ".tc-subtitle",
+    "popover": {
+      "title": "subtitle",
+      "description": "This is the main heading of the page.",
+      "position": "bottom"
+    }
+  }
+]
