@@ -83,13 +83,24 @@ function makeCheckbox(token, id, options, TokenConstructor) {
     ['id', id],
     ['class', 'accent-lime-400'],
   ];
-  var checked = /^\[[xX]\][ \u00A0]/.test(token.content); // if token.content starts with '[x] ' or '[X] '
+  var checked = /^\[[xXrit]\][ \u00A0]/.test(token.content); // if token.content starts with '[x] ' or '[X] '
   if (checked === true) {
     checkbox.attrs.push(['checked', 'true']);
   }
   if (options.disabled === true) {
     checkbox.attrs.push(['disabled', 'true']);
   }
+
+  // 匹配 [x]、[i]、[t] 并分别加上 data-task 属性
+  var match = /\[(.)\][ \u00A0]/.exec(token.content);
+  if (match) {
+    var taskType = match[1];
+    checkbox.attrs.push(['data-task', taskType]);
+  }
+
+  // 渲染 [x]、[i]、[t] 为复选框
+  // checkbox.content = token.content.replace(/^\[(.)\][ \u00A0]/, '');
+
   return checkbox;
 }
 
@@ -131,5 +142,5 @@ function startsWithTodoMarkdown(token) {
   // The leading whitespace in a list item (token.content) is already trimmed off by markdown-it.
   // The regex below checks for '[ ] ' or '[x] ' or '[X] ' at the start of the string token.content,
   // where the space is either a normal space or a non-breaking space (character 160 = \u00A0).
-  return /^\[[xX \u00A0]\][ \u00A0]/.test(token.content);
+  return /^\[[xXrit \u00A0]\][ \u00A0]/.test(token.content);
 }
