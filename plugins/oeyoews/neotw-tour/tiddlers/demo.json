@@ -10,8 +10,8 @@
   {
     "element": ".tc-tiddler-title",
     "popover": {
-      "title": "Page Heading 2",
-      "description": "This is the main heading of the page.",
+      "title": "Tiddler Title",
+      "description": "Tiddler Title",
       "position": "right"
     }
   },
@@ -19,7 +19,7 @@
     "element": ".tc-subtitle",
     "popover": {
       "title": "subtitle",
-      "description": "This is the main heading of the page.",
+      "description": "subTitle",
       "position": "bottom"
     }
   }
