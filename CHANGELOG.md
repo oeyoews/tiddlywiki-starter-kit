@@ -1,3 +1,10 @@
+## [3.344.1](https://github.com/oeyoews/neotw/compare/v3.344.0...v3.344.1) (2023-07-26)
+
+
+### Performance Improvements
+
+* use .md extension ([005b1d1](https://github.com/oeyoews/neotw/commit/005b1d1f5ef8a52481e6aedbdfcf53ccba308575))
+
 # [3.344.0](https://github.com/oeyoews/neotw/compare/v3.343.0...v3.344.0) (2023-07-20)
 
 
