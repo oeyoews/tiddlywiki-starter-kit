@@ -1,0 +1,1 @@
+https://github.com/casualwriter/vanilla-chatgpt

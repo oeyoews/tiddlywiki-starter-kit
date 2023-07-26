@@ -1,9 +1,0 @@
-created: 20230722060707325
-creator: oeyoews
-modified: 20230722060746897
-modifier: oeyoews
-tags: Next.Js
-title: turbo-notfound
-type: text/markdown
-
-`next dev --turbo` not support notfound 

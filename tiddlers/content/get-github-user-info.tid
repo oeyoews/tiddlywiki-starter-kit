@@ -1,9 +1,0 @@
-created: 20230614022529006
-creator: oeyoews
-modified: 20230614022539924
-modifier: oeyoews
-tags: 
-title: get-github-user-info
-type: text/markdown
-
-https://api.github.com/users/oeyoews

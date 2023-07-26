@@ -1,0 +1,11 @@
+author: Mohammad Rahmani
+core-version: >=5.2.0
+description: Tiddler Commander
+list: readme license history
+name: Tiddler Commander
+plugin-type: plugin
+source: https://github.com/kookma/TW-Commander
+tags: 
+title: $:/plugins/kookma/commander
+type: application/json
+version: 2.1.6
