@@ -14,7 +14,6 @@
   "license": "MIT",
   "scripts": {
     "update:template": "yarn run build:neotw && sh ./scripts/make-template.sh",
-    "update:npm": "npm-check-updates -u",
     "deploy:surge-private": "surge dist --domain neotw.surge.sh",
     "deploy:surge-curl": "curl -o dist/index.html https://neotw.vercel.app && surge dist --domain neotw.surge.sh",
     "git:update": "git pull origin main && git push",
@@ -24,41 +23,38 @@
     "build:neotw": "zx scripts/build-oeyoews-plus.mjs",
     "pm2:start": "pm2 start ecosystem.config.js",
     "semantic-release": "semantic-release",
-    "start": "node startup.js --listen host='0.0.0.0'",
-    "minify:png": "sh ./scripts/minify.png.hooks.sh"
+    "start": "node startup.js --listen host='0.0.0.0'"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.14",
     "pm2": "^5.3.0",
-    "pngquant-bin": "^8.0.1",
-    "postcss": "^8.4.23",
+    "postcss": "^8.4.27",
     "postcss-import": "^15.1.0",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.2.8",
-    "tailwindcss": "^3.3.2",
-    "terser": "^5.17.1",
+    "tailwindcss": "^3.3.3",
+    "terser": "^5.19.2",
     "tw5-typed": "^0.2.27",
-    "vercel": "^29.0.0"
+    "vercel": "^29.4.0"
   },
   "dependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "cssnano-cli": "^1.0.5",
     "dateformat": "^5.0.3",
-    "dotenv": "^16.0.3",
+    "dotenv": "^16.3.1",
     "gradient-string": "^2.0.2",
     "html-minifier-terser": "^7.2.0",
     "kolorist": "^1.8.0",
-    "npm-check-updates": "^16.10.9",
     "ora": "^6.3.1",
     "prompts": "^2.4.2",
     "replace": "^1.2.2",
-    "semantic-release": "^21.0.2",
+    "semantic-release": "^21.0.7",
     "signale": "^1.4.0",
     "surge": "^0.23.1",
     "tiddlywiki": "github:Jermolene/TiddlyWiki5#0c64b58cfbded7a3d46e55e2705ab4a724f8d4d6",
-    "zx": "^7.2.1"
+    "zx": "^7.2.3"
   },
   "bugs": {
     "url": "https://github.com/oeyoews/neotw/issues"
