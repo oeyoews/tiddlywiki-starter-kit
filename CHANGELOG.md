@@ -1,3 +1,10 @@
+# [3.345.0](https://github.com/oeyoews/neotw/compare/v3.344.1...v3.345.0) (2023-07-29)
+
+
+### Features
+
+* use pnpm ([029f33a](https://github.com/oeyoews/neotw/commit/029f33a1a5d6301f16088ccfd31918ad37069d15))
+
 ## [3.344.1](https://github.com/oeyoews/neotw/compare/v3.344.0...v3.344.1) (2023-07-26)
 
 
