@@ -1,3 +1,10 @@
+## [3.345.1](https://github.com/oeyoews/neotw/compare/v3.345.0...v3.345.1) (2023-08-02)
+
+
+### Bug Fixes
+
+* enable timestamp for tiddler ([e79b8ec](https://github.com/oeyoews/neotw/commit/e79b8ecb7212f5504d7468ce0e6cbcad6455e4e4))
+
 # [3.345.0](https://github.com/oeyoews/neotw/compare/v3.344.1...v3.345.0) (2023-07-29)
 
 
