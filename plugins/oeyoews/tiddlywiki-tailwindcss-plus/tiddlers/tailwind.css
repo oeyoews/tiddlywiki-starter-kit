@@ -1,0 +1,8 @@
+h1,
+h2 {
+  text-wrap: balance !important;
+}
+
+.tc-titlebar {
+  text-wrap: balance !important;
+}

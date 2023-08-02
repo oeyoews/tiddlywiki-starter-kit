@@ -1,8 +1,0 @@
-<!-- need as a shadow -->
-<style type="text/tailwindcss">
-@layer base {
-  button {
-         @apply border-none;
-     }
-}
-</style>
