@@ -1,3 +1,10 @@
+# [3.346.0](https://github.com/oeyoews/neotw/compare/v3.345.1...v3.346.0) (2023-08-02)
+
+
+### Features
+
+* support text-balance ([8264096](https://github.com/oeyoews/neotw/commit/8264096b9b9ae8936c87c1fc310e6ac88c707127))
+
 ## [3.345.1](https://github.com/oeyoews/neotw/compare/v3.345.0...v3.345.1) (2023-08-02)
 
 
