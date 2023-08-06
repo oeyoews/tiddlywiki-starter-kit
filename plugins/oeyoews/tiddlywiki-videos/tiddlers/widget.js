@@ -6,7 +6,6 @@ module-type: widget
 youtube widget
 
 \*/
-
 (function () {
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
 
