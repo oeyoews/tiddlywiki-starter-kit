@@ -1,6 +1,6 @@
 ## translate
 
-```shell
+```
 * trans -T
 https://github.com/soimort/translate-shell
 https://www.clloz.com/programming/assorted/2019/11/19/translate-shell-usage/
