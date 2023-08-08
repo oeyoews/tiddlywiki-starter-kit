@@ -86,9 +86,7 @@ function emojiComponent() {
         emoji.classList.add(
           'cursor-pointer',
           'py-4',
-          'bg-gray-100',
           'rounded',
-          'hover:bg-gray-200',
           'transition',
           'duration-200',
           'flex',
