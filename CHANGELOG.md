@@ -1,3 +1,10 @@
+# [3.347.0](https://github.com/oeyoews/neotw/compare/v3.346.0...v3.347.0) (2023-08-08)
+
+
+### Features
+
+* use prose-invert ([f09c28a](https://github.com/oeyoews/neotw/commit/f09c28a249a00eeaf4f962504f03cde63370a9c0))
+
 # [3.346.0](https://github.com/oeyoews/neotw/compare/v3.345.1...v3.346.0) (2023-08-02)
 
 
