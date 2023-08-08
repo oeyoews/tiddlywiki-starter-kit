@@ -47,7 +47,7 @@ function emojiComponent() {
 
   // Create main container
   var container = document.createElement('div');
-  container.className = 'max-w-md w-full bg-white p-4 rounded-lg';
+  container.className = 'max-w-md w-full p-4 rounded-lg';
   container.appendChild(form);
   container.appendChild(emojiContainer);
   const virtualRoot = document.createElement('div');
