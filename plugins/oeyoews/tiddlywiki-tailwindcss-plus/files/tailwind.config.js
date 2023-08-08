@@ -17,7 +17,7 @@ module.exports = {
             },
             code: {
               fontFamily: 'serif',
-              backgroundColor: theme('colors.slate.100'),
+              // backgroundColor: theme('colors.slate.100'),
               borderRadius: theme('borderRadius.sm'),
               padding: `${theme('padding.1')} ${theme('padding.1.5')}`,
               border: `none`,

@@ -82,7 +82,7 @@ neotw-unsplash widget
       // 创建一个照片元素
       function createPhotoElement(photo) {
         const elementWrapper = document.createElement('div');
-        elementWrapper.classList.add('w-full', 'md:w-1/2', 'lg:w-1/3', 'p-4');
+        elementWrapper.classList.add('w-full', 'md:w-1/2', 'lg:w-1/3');
 
         const element = $tw.utils.domMaker('div', {
           class:
@@ -125,7 +125,7 @@ neotw-unsplash widget
       // 执行搜索
       async function performSearch(query) {
         resultsContainer.textContent = 'Searching...';
-        resultsContainer.classList.add('h-96', 'overflow-y-scroll');
+        resultsContainer.classList.add('overflow-y-scroll');
 
         try {
           const photos = await searchPhotos(query);
@@ -147,7 +147,7 @@ neotw-unsplash widget
 
       const resultsContainer = $tw.utils.domMaker('div', {
         text: '',
-        class: 'flex flex-wrap justify-center mt-4',
+        class: 'columns-1 lg:columns-3 space-y-4',
       });
 
       const container = $tw.utils.domMaker('div', {
