@@ -30,7 +30,7 @@ neotw-unsplash widget
       function createSearchBar() {
         const searchInput = $tw.utils.domMaker('input', {
           class:
-            'px-2 py-2 bg-white border border-gray-300 rounded shadow-sm focus:outline-none focus:border-blue-300',
+            'px-2 py-2 border border-gray-300 rounded shadow-sm focus:outline-none focus:border-blue-300',
           attributes: {
             autofocus: '',
             placeholder: 'Search photos...',
