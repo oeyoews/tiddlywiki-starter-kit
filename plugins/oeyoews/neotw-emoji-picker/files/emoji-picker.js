@@ -20,7 +20,7 @@ function emojiComponent() {
     debouncedSearchEmoji(event);
   };
   input.className =
-    'px-4 py-2 bg-white border border-gray-300 rounded shadow-sm focus:outline-none focus:border-indigo-300 w-4/5';
+    'px-4 py-2 border border-gray-300 rounded shadow-sm focus:outline-none focus:border-indigo-300 w-4/5';
 
   const placeholder = $tw.wiki.getTiddlerText(
     '$:/language/emoji-picker/placeholder',
