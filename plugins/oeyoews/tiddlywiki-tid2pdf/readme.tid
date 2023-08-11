@@ -9,7 +9,7 @@ I have tried to export a single tiddler to PDF using the third-party library jsp
 
 !! 注意
 
-* 此插件未经过充分测试, 没有写使用文档, 偶发各种BUG, 正处于 Alpha 阶段(不定时更新修复)
+* 此插件未经过充分测试, 没有写使用文档, 偶发各种BUG, 正处于 Alpha 阶段(精力时间有限, 不定时更新修复)
 
 !! 依赖插件
 
