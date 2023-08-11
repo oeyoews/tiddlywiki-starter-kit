@@ -7,6 +7,17 @@ description: ~TiddlyWiki Tid2pdf
 
 I have tried to export a single tiddler to PDF using the third-party library jspdf, but I didn't study the aspect ratio of the exported PDF in depth, so the result was not good. Therefore, I tried exporting it in PNG format, and the effect seemed to be better. In addition, images are easier to share than PDFs, while PDFs are more suitable for document viewing. The above image content was exported using tiddlywiki-tid2pdf.
 
+!! 注意
+
+* 此插件未经过充分测试, 没有写使用文档, 偶发各种BUG, 正处于 Alpha 阶段(不定时更新修复)
+
+!! 依赖插件
+
+* neotw-swal2(预览导出图片)
+* tiddlywiki-tailwindcss(样式)
+* neotw-back-to-top(nprogress)
+* neotw-confetti(图片导出提示)
+
 !! TODO
 
 * 由于分页功能会截断文字, 效果不佳, 暂时移除
