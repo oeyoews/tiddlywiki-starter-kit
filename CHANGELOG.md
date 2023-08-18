@@ -1,3 +1,10 @@
+## [3.347.1](https://github.com/oeyoews/neotw/compare/v3.347.0...v3.347.1) (2023-08-18)
+
+
+### Performance Improvements
+
+* remove warning(tailwindcss) ([21aca2f](https://github.com/oeyoews/neotw/commit/21aca2f474e0fd1836e0cbdcf9c7e61cff6acede))
+
 # [3.347.0](https://github.com/oeyoews/neotw/compare/v3.346.0...v3.347.0) (2023-08-08)
 
 
