@@ -1,3 +1,10 @@
+# [3.348.0](https://github.com/oeyoews/neotw/compare/v3.347.1...v3.348.0) (2023-08-19)
+
+
+### Features
+
+* add iconify plugins ([919f9de](https://github.com/oeyoews/neotw/commit/919f9deb23125136f5ea6a25750f38a6b5e1bb8a))
+
 ## [3.347.1](https://github.com/oeyoews/neotw/compare/v3.347.0...v3.347.1) (2023-08-18)
 
 
