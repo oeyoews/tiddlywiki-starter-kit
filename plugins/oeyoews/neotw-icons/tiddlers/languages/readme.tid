@@ -13,28 +13,28 @@ type: text/markdown
 
 <center>
 
-<iconify-icon icon="skill-icons:react-dark"></iconify-icon>
-<iconify-icon icon="simple-icons:tiddlywiki"  />
-<iconify-icon icon="flat-color-icons:approval" />
-<iconify-icon icon="vscode-icons:file-type-js-official"></iconify-icon>
-<iconify-icon icon="noto:confetti-ball"></iconify-icon>
-<iconify-icon icon="simple-icons:apacheecharts" style="color: lightblue;"></iconify-icon>
-<iconify-icon icon="skill-icons:markdown-dark"></iconify-icon>
-<iconify-icon icon="flat-color-icons:advertising" />
-<iconify-icon icon="devicon:vercel-wordmark" style="color: lightblue;"></iconify-icon>
+<iconify-icon icon="skill-icons:react-dark" />
+<iconify-icon icon="simple-icons:tiddlywiki"   />
+<iconify-icon icon="flat-color-icons:approval"  />
+<iconify-icon icon="vscode-icons:file-type-js-official" />
+<iconify-icon icon="noto:confetti-ball" />
+<iconify-icon icon="simple-icons:apacheecharts" style="color: lightblue;" />
+<iconify-icon icon="skill-icons:markdown-dark" />
+<iconify-icon icon="flat-color-icons:advertising"  />
+<iconify-icon icon="devicon:vercel-wordmark" style="color: lightblue;" />
 
 </center>
 
 ```html
-<iconify-icon icon="skill-icons:react-dark"></iconify-icon>
-<iconify-icon icon="simple-icons:tiddlywiki"  />
-<iconify-icon icon="flat-color-icons:approval" />
-<iconify-icon icon="vscode-icons:file-type-js-official"></iconify-icon>
-<iconify-icon icon="noto:confetti-ball"></iconify-icon>
-<iconify-icon icon="simple-icons:apacheecharts" style="color: lightblue;"></iconify-icon>
-<iconify-icon icon="skill-icons:markdown-dark"></iconify-icon>
-<iconify-icon icon="flat-color-icons:advertising" />
-<iconify-icon icon="devicon:vercel-wordmark" style="color: lightblue;"></iconify-icon>
+<iconify-icon icon="skill-icons:react-dark" />
+<iconify-icon icon="simple-icons:tiddlywiki"   />
+<iconify-icon icon="flat-color-icons:approval"  />
+<iconify-icon icon="vscode-icons:file-type-js-official" />
+<iconify-icon icon="noto:confetti-ball" />
+<iconify-icon icon="simple-icons:apacheecharts" style="color: lightblue;" />
+<iconify-icon icon="skill-icons:markdown-dark" />
+<iconify-icon icon="flat-color-icons:advertising"  />
+<iconify-icon icon="devicon:vercel-wordmark" style="color: lightblue;" />
 ```
 
 </div>
