@@ -492,7 +492,7 @@ Command Palette Widget
         'div',
         {
           className:
-            'backdrop-blur z-[9998] fixed left-0 top-0 w-full h-full bg-neutral-500 transition-all pointer-events-none duration-500',
+            'backdrop-blur z-[9998] fixed inset-0 bg-black/40 transition-all pointer-events-none duration-500',
         },
         {
           opacity: 0,
