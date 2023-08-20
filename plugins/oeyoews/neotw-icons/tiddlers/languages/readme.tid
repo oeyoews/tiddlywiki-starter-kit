@@ -22,6 +22,7 @@ type: text/markdown
 <iconify-icon icon="skill-icons:markdown-dark" title="Markdown"/>
 <iconify-icon icon="flat-color-icons:advertising"  title="Advertising"/>
 <iconify-icon icon="devicon:vercel-wordmark" style="color: lightblue;" title="Vercel"/>
+<iconify-icon icon="fluent-emoji:rocket" title="Rocket"/>
 
 </center>
 

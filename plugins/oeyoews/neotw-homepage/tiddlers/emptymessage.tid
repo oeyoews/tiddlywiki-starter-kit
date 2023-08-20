@@ -24,6 +24,19 @@ title: $:/config/EmptyStoryMessage
   <div class="my-4">
     <$typing text="A modern style and elegant notebook based on Tiddlywiki by oeyoews" gradient />
   </div>
+
+<iconify-icon icon="skill-icons:nextjs-light" title="Next.js" />
+<iconify-icon icon="skill-icons:react-dark" title="React"/>
+<iconify-icon icon="skill-icons:tailwindcss-dark" title="Tailwind" />
+<iconify-icon icon="vscode-icons:file-type-js-official" title="JavaScript" />
+<iconify-icon icon="vscode-icons:file-type-html" title="HTML" />
+<iconify-icon icon="vscode-icons:file-type-css" title="CSS" />
+<iconify-icon icon="simple-icons:tiddlywiki"  title="TiddlyWiki"/>
+<iconify-icon icon="skill-icons:neovim-light" title="Neovim" />
+<iconify-icon icon="skill-icons:linux-dark" title="Linux" />
+<iconify-icon icon="skill-icons:bash-dark"title="Bash" />
+<iconify-icon icon="skill-icons:git" title="Git" />
+
 </center>
 
 <!-- </div> -->
