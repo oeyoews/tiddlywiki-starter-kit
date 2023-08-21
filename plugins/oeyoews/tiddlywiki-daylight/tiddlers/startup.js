@@ -4,7 +4,6 @@ type: application/javascript
 module-type: startup
 
 daylight module
-
 \*/
 (function () {
   /*jslint node: true, browser: true */
