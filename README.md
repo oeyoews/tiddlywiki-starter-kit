@@ -15,7 +15,7 @@
 # Intro :tada:
 
 <figcaption class="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-500 to-yellow-500 line-clamp-1">
-A modern style and elegant notebook based on Tiddlywiki by oeyoews
+A modern style and elegant notebook built with Tiddlywiki5 and Tailwindcss
 </figcaption>
 
 <a id="#neotw-readme-top"></a>
