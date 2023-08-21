@@ -33,7 +33,7 @@ module.exports = {
       }),
     },
   },
-  darkMode: 'class',
+  darkMode: 'media',
   variants: {
     extend: {
       appearance: ['hover', 'focus'],
