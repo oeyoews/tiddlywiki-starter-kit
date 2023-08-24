@@ -66,28 +66,6 @@ git clone --depth 1 -b template https://github.com/oeyoews/neotw
 <img src="https://www.netlify.com/img/deploy/button.svg">
 </a>
 
-<!-- ## Online Preview :eyes:
-
-<a href="https://neotw.oeyoewl.top" target="_blank">
-<img src="https://img.shields.io/badge/Main-1374EF?style=for-the-badge&logo=">
-</a>
-
-<a href="https://oeyoews.github.io/neotw" target="_blank">
-<img src="https://img.shields.io/badge/Github Page-1374EF?style=for-the-badge&logo=github">
-</a>
-
-<a href="https://neotw.netlify.app" target="_blank">
-<img src="https://img.shields.io/badge/Netlify-1374EF?style=for-the-badge&logo=netlify">
-</a>
-
-<a href="https://neotw.vercel.app" target="_blank">
-<img src="https://img.shields.io/badge/Vercel-1374EF?style=for-the-badge&logo=vercel">
-</a>
-
-<a href="https://neotw.tiddlyhost.com" target="_blank">
-<img src="https://img.shields.io/badge/Tiddlyhost-1374EF?style=for-the-badge&logo=">
-</a> -->
-
 ## Repobeats :headphones:
 
 <center>
