@@ -1,12 +1,8 @@
 name: release-and-page
 on:
   push:
-    tags:
-      - 'v*.*.*'
     branches:
       - main
-    # paths-ignore:
-    # - 'README.md'
   workflow_dispatch:
 
 env:
@@ -25,24 +21,20 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setup Node.js and Yarn
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: yarn
-          cache-dependency-path: yarn.lock
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
           registry-url: 'https://registry.yarnpkg.com'
 
       - name: Install Dependency
-        run: |
-          # yarn install --production
-          yarn workspaces focus --all --production
-          # sudo apt-get install libimagequant
-          # npm install -g pngquant-bin && pngquant
+        run: pnpm install
 
       - name: Build Neotw
         run: |
-          npm run build:neotw
+          pnpm run build:neotw
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
@@ -50,8 +42,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: |
             ./dist
-
-      - name: Release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: yarn semantic-release

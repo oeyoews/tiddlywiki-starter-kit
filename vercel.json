@@ -1,6 +1,6 @@
 {
   "outputDirectory": "dist",
-  "buildCommand": "pnpm build:oeyoews",
+  "buildCommand": "pnpm build:neotw",
   "installCommand": "pnpm install",
   "cleanUrls": true,
   "trailingSlash": false,
