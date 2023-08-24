@@ -1,6 +1,0 @@
-# https://docs.netlify.com/site-deploys/create-deploys/
-[build]
-  publish = "dist"
-  command = "yarn install --production && yarn build:oeyoews"
-[build.environment]
-TZ = "Asia/Shanghai"
