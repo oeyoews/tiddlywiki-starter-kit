@@ -1,3 +1,10 @@
+## [3.349.1](https://github.com/oeyoews/neotw/compare/v3.349.0...v3.349.1) (2023-08-24)
+
+
+### Performance Improvements
+
+* remove archive folder ([ed8ba2f](https://github.com/oeyoews/neotw/commit/ed8ba2fa4f869d8b1bb421feb56840eff40814bb))
+
 # [3.349.0](https://github.com/oeyoews/neotw/compare/v3.348.0...v3.349.0) (2023-08-19)
 
 
