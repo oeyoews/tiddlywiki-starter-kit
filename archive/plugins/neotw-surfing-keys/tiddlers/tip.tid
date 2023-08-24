@@ -1,9 +1,0 @@
-title: $:/plugins/oeyoews/neotw-surfing-keys/tips
-mask-closable: yes
-subtitle: {{$:/plugins/oeyoews/tiddlywiki-random-tid/did-you-know}}
-tags: Tiddlywiki5Tip
-author: oeyoews
-class: o-random-tip tc-modal-centered
-
-> 按住<kbd>Ctrl-Slash</kbd>可以显示快捷键
-> <<random-author>>

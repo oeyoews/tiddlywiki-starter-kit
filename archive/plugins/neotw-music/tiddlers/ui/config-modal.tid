@@ -1,6 +1,0 @@
-title: $:/plugins/oeyoews/neotw-music/config-modal
-mask-closable: yes
-subtitle: {{$:/plugins/oeyoews/neotw-music/icon}} TWM {{$:/plugins/oeyoews/tiddlywiki-modal-ui/close-modal}}
-class: o-tm
-
-{{$:/plugins/oeyoews/neotw-music/config}}

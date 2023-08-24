@@ -1,3 +1,0 @@
-title: $:/plugins/dullroar/atomfeed/atom.template.xml
-
-<$set name="exportFilter" value={{$:/config/atomfilter}}>{{$:/plugins/dullroar/atomfeed/atomexport}}</$set>

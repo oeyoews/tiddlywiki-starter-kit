@@ -1,7 +1,0 @@
-title: $:/plugins/oeyoews/tiddlywiki-mobile-warning/test
-tags: $:/tags/RawMarkupWikified/BottomBody
-type: application/javascript
-
-`<script>`
-{{$:/plugins/oeyoews/tiddlywiki-mobile-warning/core/alert.mobile.js}}
-`</script>`

@@ -1,5 +1,0 @@
-title: $:/plugins/oeyoews/neotw/script/disable-rightclick
-type: application/javascript
-<!-- tags: $:/tags/RawMarkupWikified/BottomBody -->
-
-`<script> document.oncontextmenu = function(){ return false; }` `</script>`

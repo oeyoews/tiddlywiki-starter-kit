@@ -1,8 +1,0 @@
-caption: search-filter
-key: ((get-plugins))
-tags: $:/tags/KeyboardShortcut
-title: $:/plugins/oeyoews/neotw-surfing-keys/get-plugins
-
-<$navigator story="$:/StoryList" history="$:/HistoryList">
-  <$action-navigate $to="$:/core/ui/ControlPanel/Plugins" $scroll="yes"/>
-</$navigator>

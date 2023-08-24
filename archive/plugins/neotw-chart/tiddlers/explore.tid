@@ -1,3 +1,0 @@
-title: $:/plugins/oeyoews/neotw-chart/explore
-
-<$macrocall $name="tree" prefix={{{ [<currentTiddler>addsuffix[/]] }}}>

@@ -1,9 +1,0 @@
-code-body: yes
-key: ((home-page))
-tags: $:/tags/KeyboardShortcut
-title: $:/plugins/oeyoews/neotw-surfing-keys/home-page
-
-<$navigator story="$:/StoryList" history="$:/HistoryList">
-<$action-sendmessage $message="tm-close-all-tiddlers"/>
-<$action-sendmessage $message="tm-home"/>
-</$navigator>

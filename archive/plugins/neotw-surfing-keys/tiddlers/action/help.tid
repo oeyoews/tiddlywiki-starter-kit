@@ -1,5 +1,0 @@
-key: ((surfing-help))
-tags: $:/tags/KeyboardShortcut
-title: $:/plugins/oeyoews/neotw-surfing-keys/help
-
-<$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/neotw-surfing-keys/keyboard-list"/>
