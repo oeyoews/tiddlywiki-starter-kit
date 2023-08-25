@@ -1,6 +1,6 @@
 <center>
 <figure>
-<img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/015.png" class="hidden" alt="neotw banner" title="neotw"/>
+<img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/snapshot.png" class="hidden" alt="neotw banner" title="neotw"/>
 </figure>
 </center>
 
