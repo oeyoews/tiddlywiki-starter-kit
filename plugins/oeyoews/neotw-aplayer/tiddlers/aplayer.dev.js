@@ -72,7 +72,6 @@ A music player widget that uses the APlayer library.
 
       const playButtonNode = $tw.utils.domMaker('button', {
         attributes: {
-          title: `播放 ${name}`,
           ['aria-label']: 'player',
         },
         class: `p-0 m-0 bg-transparent ${classNames.join(' ')}`,
@@ -103,6 +102,7 @@ A music player widget that uses the APlayer library.
       });
 
       playButtonNode.addEventListener('click', () => {
+        playButtonNode.innerHTML = playGradientIcon;
         aplayerRef.toggle();
       });
 
@@ -115,10 +115,11 @@ A music player widget that uses the APlayer library.
       }
     }
 
-    destroy() {
-      this.aplayer?.destroy();
-      this.aplayer = null;
-    }
+    // 支持了多首音乐后(上两次提交), 会触发classList错误, 暂时不进行destory事件
+    // destroy() {
+    // this.aplayer?.destroy();
+    // this.aplayer = null;
+    // }
   }
 
   exports['aplayer-dev'] = APlayerWidget;
