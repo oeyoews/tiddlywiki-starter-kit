@@ -97,12 +97,14 @@ A music player widget that uses the APlayer library.
       const aplayerRef = this.aplayer;
 
       playButtonNode.addEventListener('dblclick', () => {
+        console.log('clicked');
         aplayerRef.skipForward();
         aplayerRef.play();
       });
 
       playButtonNode.addEventListener('click', () => {
-        playButtonNode.innerHTML = playGradientIcon;
+        // 如果替换这个icon, dblclick事件无法响应
+        // playButtonNode.innerHTML = playGradientIcon;
         aplayerRef.toggle();
       });
 
