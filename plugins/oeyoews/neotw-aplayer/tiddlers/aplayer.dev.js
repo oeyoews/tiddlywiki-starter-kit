@@ -20,7 +20,6 @@ A music player widget that uses the APlayer library.
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
       this.aplayer = null;
-      this.playing = null;
       this.fixed = false;
       this.mutex = true;
       this.mini = true;
@@ -38,16 +37,8 @@ A music player widget that uses the APlayer library.
       this.fixed = this.hasAttribute('fixed', false);
 
       const audiosDefault = [
-        {
-          name: '清风',
-          artist: '陈壹千',
-          id: '1947926942',
-        },
-        {
-          name: '脱水蓝鲸',
-          artist: 'Vicky宣宣',
-          id: '1931552540',
-        },
+        { name: '清风', artist: '陈壹千', id: '1947926942' },
+        { name: '脱水蓝鲸', artist: 'Vicky宣宣', id: '1931552540' },
       ];
 
       const audios =
@@ -55,9 +46,12 @@ A music player widget that uses the APlayer library.
           '$:/plugins/oeyoews/neotw-aplayer/audios.json',
         ) || audiosDefault;
 
-      const randomNum = Math.floor(Math.random() * audios.length);
-      const { name, artist, id } = audios[randomNum];
-      const url = `https://music.163.com/song/media/outer/url?id=${id}`;
+      const formatedSongs = audios.map(item => {
+        return {
+          ...item,
+          url: `https://music.163.com/song/media/outer/url?id=${item.id}`,
+        };
+      });
 
       const classNames = this.getAttribute('class', '').split(' ');
 
@@ -89,59 +83,27 @@ A music player widget that uses the APlayer library.
         container: aplayerNode,
         theme: '#f64f59',
         loop: 'all',
-        volume: 0.7,
+        // volume: 0.7,
+        order: 'random',
         // disaple play multi sounds
         mutex: this.mutex,
         // show left bottom music player
         fixed: this.fixed,
         mini: this.mini,
-        order: 'list',
         preload: 'auto',
-        // TODO: support multi random songs
-        audio: [
-          {
-            name,
-            artist,
-            url,
-          },
-        ],
+        audio: formatedSongs,
       };
 
       this.aplayer = new APlayer(aplayerOptions);
+      const aplayerRef = this.aplayer;
 
-      const notify = (icon = 'success') => {
-        Swal.fire({
-          // ${this.aplayer.audio.duration}`,
-          title: `🎶 ${name} by ${artist}`,
-          icon,
-          toast: true,
-          showCancelButton: false,
-          showConfirmButton: false,
-          timer: 1500,
-          position: 'top-end',
-        });
-      };
+      playButtonNode.addEventListener('dblclick', () => {
+        aplayerRef.skipForward();
+        aplayerRef.play();
+      });
 
       playButtonNode.addEventListener('click', () => {
-        if (this.playing) {
-          this.aplayer.pause();
-          playButtonNode.innerHTML = playIcon;
-          playButtonNode.title = `播放 ${name}`;
-        }
-        if (!this.playing) {
-          this.aplayer.play();
-          playButtonNode.innerHTML = playGradientIcon;
-          playButtonNode.title = `暂停 ${name}`;
-        }
-        // this.aplayer.toggle();
-        // bug: if paused by others , this status is switched
-        !this.playing && notify();
-        this.playing && notify('info');
-        this.playing = !this.playing;
-
-        // TODO
-        // this.aplayer.on('playing', notify());
-        // this.aplayer.on('pause', notify('info'));
+        aplayerRef.toggle();
       });
 
       parent.insertBefore(playButtonNode, nextSibling);
