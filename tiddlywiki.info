@@ -1,6 +1,5 @@
 {
-  "description": "Neotw Edition",
-  "languages": [],
+  "description": "A modern style and elegant notebook built with Tiddlywiki5 and Tailwindcss",
   "plugins": [
     "tiddlywiki/tiddlyweb",
     "tiddlywiki/filesystem",
@@ -182,15 +181,6 @@
       "--render",
       "$:/core/templates/tiddlywiki5.js",
       "[[tiddlywikicore-]addsuffix<version>addsuffix[.js]]",
-      "text/plain"
-    ],
-    "feed": [
-      "--verbose",
-      "--output",
-      "dist",
-      "--render",
-      "$:/plugins/dullroar/atomfeed/atom.template.xml",
-      "atom.xml",
       "text/plain"
     ]
   },
