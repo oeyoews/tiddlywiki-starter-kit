@@ -87,7 +87,7 @@ Extension markdown-it
 
   exports.name = 'markdown-extension-startup-hook';
   exports.platforms = ['browser'];
-  exports.after = ['startup'];
+  exports.before = ['story'];
   exports.synchronous = true;
   exports.startup = LoadExtensions;
 })();
