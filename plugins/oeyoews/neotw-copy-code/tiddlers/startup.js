@@ -22,15 +22,6 @@ copyButton module
     // window.copyButton = addCopyButton;
     $tw.rootWidget.addEventListener('om-copy-code', () => {
       addCopyButton();
-      Swal.fire({
-        title: `Enable copy code`,
-        icon: 'success',
-        toast: true,
-        showCancelButton: false,
-        showConfirmButton: false,
-        timer: 1500,
-        position: 'top-end',
-      });
     });
   };
 })();
