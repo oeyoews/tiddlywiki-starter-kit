@@ -16,9 +16,7 @@ copyButton module
   exports.after = ['startup'];
   exports.synchronous = true;
   exports.startup = () => {
-    const {
-      addCopyButton,
-    } = require('$:/plugins/oeyoews/neotw-copy-code/copyCode.js');
+    const addCopyButton = require('$:/plugins/oeyoews/neotw-copy-code/copyCode.js');
     // window.copyButton = addCopyButton;
     $tw.rootWidget.addEventListener('om-copy-code', () => {
       addCopyButton();

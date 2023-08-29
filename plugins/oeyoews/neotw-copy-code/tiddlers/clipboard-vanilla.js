@@ -6,7 +6,7 @@ module-type: library
 eotw-copy-code widget
 
 \*/
-function addCopyButton() {
+module.exports = function addCopyButton() {
   // 找到当前页面的所有代码块
   const codeBlocks = document.querySelectorAll('pre');
 
@@ -83,8 +83,4 @@ function addCopyButton() {
 
     codeElement?.parentNode?.insertBefore(copyButton, codeElement);
   });
-}
-
-module.exports = {
-  addCopyButton,
 };
