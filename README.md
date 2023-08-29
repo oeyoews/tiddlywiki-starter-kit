@@ -6,11 +6,15 @@
 
 <hr>
 
-# Intro :tada:
+# Intro
 
 <figcaption class="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-500 to-yellow-500 line-clamp-1">
     A modern style and elegant notebook built with Tiddlywiki5 and Tailwindcss
 </figcaption>
+
+## Status :tada:
+
+> [neotw](https://github.com/oeyoews/neotw) 的所有配置及插件全部处于**稳定状态**
 
 <a id="#neotw-readme-top"></a>
 
