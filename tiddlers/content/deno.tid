@@ -1,6 +1,6 @@
 created: 20230509220428949
 creator: oeyoews
-modified: 20230509220452349
+modified: 20230828060646051
 modifier: oeyoews
 tags: 
 title: deno
@@ -18,4 +18,5 @@ Deno具有以下特点：
 - 简单易用：Deno的API设计简单且易用，与Node.js API相比更加一致。
 """
 
-如果您想学习更多关于Deno的信息，可以访问官方网站 https://deno.land/ ，其中还包括完整的文档和示例。
+logo: dinosaur(恐龙) <iconify-icon icon="skill-icons:deno-light" />
+
