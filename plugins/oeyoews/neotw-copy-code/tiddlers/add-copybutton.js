@@ -1,5 +1,5 @@
 /*\
-title: $:/plugins/oeyoews/neotw-copy-code/copyCode.js
+title: $:/plugins/oeyoews/neotw-copy-code/add-copybutton.js
 type: application/javascript
 module-type: library
 
