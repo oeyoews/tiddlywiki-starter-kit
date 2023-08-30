@@ -8,7 +8,7 @@ import tiged from 'tiged';
 
 const spinner = ora('Loading ...');
 
-async function init() {
+export default async function createApp() {
   const { template } = await prompts({
     type: 'select',
     name: 'template',
@@ -55,7 +55,3 @@ async function init() {
       process.exit(0);
     });
 }
-
-init().catch(e => {
-  console.error(e);
-});

@@ -1,6 +1,6 @@
 {
   "name": "create-neotw-app",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "",
   "main": "index.js",
   "keywords": [],
@@ -11,7 +11,7 @@
   "license": "ISC",
   "scripts": {
     "dev": "ncc build ./index.ts -w -o dist/",
-    "release": "ncc build ./create-app.ts -o ./dist/ --minify --no-cache --no-source-map-register"
+    "release": "ncc build ./index.ts -o ./dist/ --minify --no-cache --no-source-map-register"
   },
   "dependencies": {
     "@types/prompts": "^2.4.4",
