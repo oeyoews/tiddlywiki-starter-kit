@@ -25,7 +25,7 @@
 
 ```bash
 # neotw-app cli
-pnpm dlx create neotw-app
+pnpm dlx create neotw-app@latest
 # git
 git clone --depth 1 https://github.com/oeyoews/tiddlywiki-starter-kit
 cd tiddlywiki-starter-kit && pnpm install  # install packages

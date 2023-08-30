@@ -3,7 +3,6 @@
     "action": "remove",
     "files": [
       "LICENSE",
-      "README.md",
       "degit.json",
       "packages",
       "README-CN.md",
