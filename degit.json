@@ -9,6 +9,7 @@
       "img",
       ".gitignore",
       "editions",
+      "public",
       "templates"
     ]
   }

@@ -13,8 +13,6 @@
   ],
   "license": "MIT",
   "scripts": {
-    "deploy:surge-private": "surge dist --domain neotw.surge.sh",
-    "deploy:surge-curl": "curl -o dist/index.html https://neotw.vercel.app && surge dist --domain neotw.surge.sh",
     "vercel:dev": "vercel dev",
     "vercel:tiddlers": "tiged oeyoews/neotw-tiddlers tiddlers",
     "guide": "zx scripts/guide.mjs",
@@ -27,16 +25,13 @@
     "pm2": "^5.3.0"
   },
   "dependencies": {
-    "dateformat": "^5.0.3",
     "dotenv": "^16.3.1",
-    "gradient-string": "^2.0.2",
     "html-minifier-terser": "^7.2.0",
     "kolorist": "^1.8.0",
     "ora": "^6.3.1",
     "prompts": "^2.4.2",
     "replace": "^1.2.2",
     "signale": "^1.4.0",
-    "surge": "^0.23.1",
     "tiddlywiki": "github:Jermolene/TiddlyWiki5#0c64b58cfbded7a3d46e55e2705ab4a724f8d4d6",
     "tiged": "^2.12.5",
     "zx": "^7.2.3"

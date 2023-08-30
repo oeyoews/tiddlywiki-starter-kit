@@ -3,7 +3,6 @@
 \$__q*.tid
 
 Import.tid
-!public/
 subwiki/
 !tiddlers/subwiki/
 tiddlers/theme.tid
