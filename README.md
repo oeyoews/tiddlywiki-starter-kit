@@ -13,6 +13,8 @@
     A modern style and elegant notebook built with Tiddlywiki5 and Tailwindcss
 </figcaption>
 
+> 面向neovim(vim)用户的 tiddlywiki starter kit
+
 ## Status :tada:
 
 > [neotw](https://github.com/oeyoews/neotw) 的所有配置及插件现在全部处于**稳定状态**
