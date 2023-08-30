@@ -27,11 +27,9 @@
   "dependencies": {
     "dotenv": "^16.3.1",
     "html-minifier-terser": "^7.2.0",
-    "kolorist": "^1.8.0",
     "ora": "^6.3.1",
     "prompts": "^2.4.2",
     "replace": "^1.2.2",
-    "signale": "^1.4.0",
     "tiddlywiki": "github:Jermolene/TiddlyWiki5#0c64b58cfbded7a3d46e55e2705ab4a724f8d4d6",
     "tiged": "^2.12.5",
     "zx": "^7.2.3"
