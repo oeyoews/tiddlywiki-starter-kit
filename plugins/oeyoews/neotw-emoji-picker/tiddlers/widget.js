@@ -26,7 +26,7 @@ neotw-emoji-picker widget
       this.computeAttributes();
       this.execute();
 
-      const { emojiComponent } = require('./emoji-picker');
+      const emojiComponent = require('./emoji-picker');
       const root = emojiComponent();
       parent.insertBefore(root, nextSibling);
       this.domNodes.push(root);

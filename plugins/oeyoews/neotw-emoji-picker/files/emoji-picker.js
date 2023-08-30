@@ -161,6 +161,4 @@ function emojiComponent() {
   return virtualRoot;
 }
 
-module.exports = {
-  emojiComponent,
-};
+module.exports = emojiComponent;
