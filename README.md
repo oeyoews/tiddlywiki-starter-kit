@@ -17,7 +17,7 @@
 
 > [neotw](https://github.com/oeyoews/neotw) 的所有配置及插件现在全部处于**稳定状态**
 
-> 为了减少tiddlers文件夹变动导致diff困难, 因此将tiddlers单独放置到一个[仓库](https://github.com/oeyoews/neotw-tiddler), 构建时使用tiged获取tiddlers文件夹, 借助pnpm和vercel的缓存, 整个构建时间平均在9s~13s之间(主要是tiddlywiki build 耗时)
+> 为了减少tiddlers文件夹变动导致diff困难, 因此将tiddlers单独放置到一个[仓库](https://github.com/oeyoews/neotw-tiddlers), 构建时使用tiged获取tiddlers文件夹, 借助pnpm和vercel的缓存, 整个构建时间平均在9s~13s之间(主要是tiddlywiki build 耗时)
 
 <a id="#neotw-readme-top"></a>
 
