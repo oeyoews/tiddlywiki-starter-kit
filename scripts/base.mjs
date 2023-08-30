@@ -1,8 +1,3 @@
-// enable quiet mode
-$.verbose = true;
-
-import dateFormat from 'dateformat';
-
 function titleCase(str) {
   const splitStr = str.toLowerCase().split(' ');
   for (let i = 0; i < splitStr.length; i++) {
@@ -15,9 +10,4 @@ function titleCase(str) {
   return splitStr.join(' ');
 }
 
-const base = {
-  titleCase,
-  timestamp: () => dateFormat(new Date(), 'yyyymmddHHMM'),
-};
-
-export default base;
+export default titleCase;

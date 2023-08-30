@@ -1,4 +1,4 @@
 title: $:/plugins/${username}/${pluginname}/readme
-description: ${description}
+description:
 
 {{$:/languages/${pluginname}/readme}}

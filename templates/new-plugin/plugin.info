@@ -1,6 +1,6 @@
 {
   "title": "$:/plugins/${username}/${pluginname}",
-  "description": "${description}",
+  "description": "",
   "author": "${username}",
   "version": "0.0.1",
   "core-version": ">=5.3.0",
@@ -8,6 +8,8 @@
   "parent-plugin": "$:/plugins/oeyoews/neotw",
   "plugin-type": "plugin",
   "name": "${upperpluginname}",
-  "dependents": ["$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"],
+  "dependents": [
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
+  ],
   "list": "readme"
 }

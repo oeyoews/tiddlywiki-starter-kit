@@ -2,9 +2,9 @@ $.verbose = false;
 
 import prompts from 'prompts';
 import replace from 'replace';
-import base from '../lib/base.mjs';
+import titleCase from './base.mjs';
 
-export default async function newPlugin() {
+async function newPlugin() {
   const template = 'templates/new-plugin';
   const questions = [
     {
@@ -12,12 +12,6 @@ export default async function newPlugin() {
       name: 'pluginname', // variable
       message: 'create plugin',
       initial: 'pluginname',
-    },
-    {
-      type: 'text',
-      name: 'description', // variable
-      message: 'plugin description', // not support sed space
-      initial: '',
     },
     {
       type: 'toggle',
@@ -30,20 +24,15 @@ export default async function newPlugin() {
   ];
 
   // get answer
-  let { newPluginStatus, pluginname, description } = await prompts(questions);
+  let { newPluginStatus, pluginname } = await prompts(questions);
 
   if (newPluginStatus) {
     await $`rm -rf plugins/pluginname*`;
     // ???
     pluginname = pluginname.trim().replace(/\s+/g, '-');
-    const upperpluginname = base.titleCase(
-      pluginname.trim().replace(/-/g, ' '),
-    );
-    description =
-      base.titleCase(description.trim().replace(/-/g, ' ')) || upperpluginname;
+    const upperpluginname = titleCase(pluginname.trim().replace(/-/g, ' '));
     const target = 'plugins/oeyoews/' + pluginname;
 
-    // TODO
     if (fs.existsSync(target)) {
       console.log(
         chalk.red.bold(
@@ -59,7 +48,6 @@ export default async function newPlugin() {
     const regexPlace = {
       upperpluginname,
       pluginname,
-      description,
       username,
     };
 
@@ -76,3 +64,5 @@ export default async function newPlugin() {
     console.log(chalk.yellow('🍃 I can see the first leaf falling.'));
   }
 }
+
+newPlugin();

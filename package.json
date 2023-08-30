@@ -15,7 +15,7 @@
   "scripts": {
     "vercel:dev": "vercel dev",
     "vercel:tiddlers": "tiged oeyoews/neotw-tiddlers tiddlers",
-    "guide": "zx scripts/guide.mjs",
+    "new-plugin": "zx scripts/new-plugin.mjs",
     "build:oeyoews": "zx scripts/build-oeyoews-plus.mjs",
     "build:neotw": "zx scripts/build-oeyoews-plus.mjs",
     "pm2:start": "pm2 delete neotw && pm2 start ecosystem.config.js",
