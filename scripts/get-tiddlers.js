@@ -10,6 +10,6 @@ emitter.on('info', info => {
   console.log(info.message);
 });
 
-emitter.clone('tiddlers_bk').then(() => {
+emitter.clone('tiddlers').then(() => {
   console.log('done');
 });
