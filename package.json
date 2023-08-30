@@ -20,7 +20,7 @@
     "guide": "zx scripts/guide.mjs",
     "build:oeyoews": "zx scripts/build-oeyoews-plus.mjs",
     "build:neotw": "zx scripts/build-oeyoews-plus.mjs",
-    "pm2:start": "pm2 start ecosystem.config.js",
+    "pm2:start": "pm2 delete neotw && pm2 start ecosystem.config.js",
     "start": "node startup.js --listen host='0.0.0.0'"
   },
   "devDependencies": {
