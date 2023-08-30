@@ -9,52 +9,24 @@ tiddlers/theme.tid
 \$__theme.tid
 output/
 dist
-todo.norg
 tiddlers/gtd/
 node_modules/
 
-# misc
-tiddlers/config/TiddlerTail/Default.tid
-tidgi/
-# library/
-neotw-temp/
-# dev/tiddlers/
-dev/archrepo/
 tiddlers/config/ShowHelp.tid
 tiddlers/commit.tid
 tiddlers/config/RecentTab/Mode.tid
-# tiddlywiki.info
-PluginName*
 .idea
 *.tgz
 tiddlers/layout*.tid
-# tiddlers/**/readonly.tid
-# stickytitles.tid
 
 # pm2
 .logs/
-patch/footer.tid
 untitled*
 tiddlers/palette.tid
 tiddlers/language.tid
 tiddlers/static-patch
-openai-api-key.tid
-yarn-error.log
-# plugins/oeyoews/tiddlywiki-tailwindcss/files/styles.dev.css
 upload
 
-# yarn betrry
-.yarn/*
-# !.yarn/cache
-# !.yarn/patches
-# !.yarn/plugins
-# !.yarn/releases
-# !.yarn/sdks
-# !.yarn/versions
-
 .vercel
-
-main.js
-markdown-dev
 
 tiddlers
