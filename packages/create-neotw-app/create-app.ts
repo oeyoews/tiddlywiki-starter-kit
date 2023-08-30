@@ -9,13 +9,14 @@ import tiged from 'tiged';
 const spinner = ora('Loading ...');
 
 export default async function createApp() {
+  const user = 'oeyoews';
+  const repo = 'tiddlywiki-starter-kit';
+  const initial = `${user}/${repo}`;
   const { template } = await prompts({
     type: 'select',
     name: 'template',
     message: 'Select template',
-    choices: [
-      { title: 'tiddlywiki-starter-kit', value: 'tiddlywiki-starter-kit' },
-    ],
+    choices: [{ title: initial, value: initial }],
   });
   if (!template) process.exit(0);
   let targetDir: string;
@@ -29,7 +30,7 @@ export default async function createApp() {
       }
       return true;
     },
-    initial: 'tiddlywiki-starter-kit',
+    initial,
   });
   if (!projectName) process.exit(0);
 
@@ -41,7 +42,7 @@ export default async function createApp() {
     message: `Do you want to clone ${template}?`,
   });
 
-  const emitter = tiged(`${template}`, {
+  const emitter = tiged(initial, {
     disableCache: true,
     force: true,
     verbose: false,
@@ -50,7 +51,7 @@ export default async function createApp() {
   confirm &&
     spinner.start() &&
     emitter.clone(template).then(() => {
-      spinner.succeed(chalk.green(`Cloned ${template} to ${targetDir}`));
+      spinner.succeed(chalk.green(`Cloned ${initial} to ${targetDir}`));
       spinner.succeed(
         chalk.cyan(`cd ${targetDir} && pnpm install && pnpm dev`),
       );
