@@ -99,13 +99,10 @@ tid2png/widget
 
           const containerNode = document.createElement('div');
           containerNode.classList.add(
-            'border',
-            'border-2',
-            'p-1',
-            'rounded',
+            'rounded-md',
             'overflow-y-scroll',
-            'h-screen',
-            'shadow-md',
+            'max-h-screen',
+            'max-w-xl',
           );
           containerNode.appendChild(imgNode);
 
@@ -118,7 +115,7 @@ tid2png/widget
               showCancelButton: true,
               confirmButtonText: 'Download',
               cancelButtonText: 'Cancel',
-              customClass: 'w-auto',
+              // customClass: 'inset-0 m-4',
             }).then(result => {
               if (result.isConfirmed) {
                 downloadPng(imgData);

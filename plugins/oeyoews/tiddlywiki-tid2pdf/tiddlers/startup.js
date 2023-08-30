@@ -41,42 +41,26 @@ tid2pdf module
           imgNode.src = imgData;
           imgNode.crossOrigin = '';
           const cloneImgNode = imgNode.cloneNode(true);
-          cloneImgNode.classList.add('md:w-3/4', 'm-auto');
-          // cloneImgNode.style.width = '712px';
+          cloneImgNode.classList.add('max-w-3xl');
 
           const containerNode = document.createElement('div');
           containerNode.classList.add(
-            'border',
-            'md:w-3/4',
-            'm-auto',
-            'border-2',
-            'p-1',
-            'rounded',
-            'overflow-y-scroll',
-            'h-screen',
-            'shadow-md',
+            'rounded-lg',
+            // disable scroll
+            'overflow-y-hidden',
+            'max-h-screen',
+            'max-w-3xl',
+            'm-0',
           );
           containerNode.appendChild(cloneImgNode);
 
-          /* function isPC() {
-  var platform = navigator.platform;
-  return platform.indexOf("Win") === 0 || platform.indexOf("Mac") === 0 || platform.indexOf("Linux") === 0;
-}
-// 调用函数判断当前环境是否是PC
-var isCurrentEnvironmentPC = isPC();
-
-// 输出结果
-console.log("当前环境是否是PC：", isCurrentEnvironmentPC); */
-
-          // if is pc to preview
           const preview = true;
-          // const isPc = $tw.utils.isPc();
 
           const downloadPng = imgData => {
             const linkNode = $tw.utils.domMaker('a', {
               attributes: {
                 href: imgData,
-                download: title,
+                download: `${title}.png`,
               },
             });
             linkNode.click();
@@ -85,13 +69,12 @@ console.log("当前环境是否是PC：", isCurrentEnvironmentPC); */
           !preview && downloadPng(imgData);
           preview &&
             Swal.fire({
-              icon: 'success',
               html: containerNode,
-              title: `${title} Image size: ${sizeInMB.toFixed(2)} MB`,
+              title: `Image size: ${sizeInMB.toFixed(2)} MB`,
               showCancelButton: true,
               confirmButtonText: 'Download',
               cancelButtonText: 'Cancel',
-              customClass: 'w-auto',
+              customClass: 'w-auto my-8',
             }).then(result => {
               result.isConfirmed && downloadPng(imgData);
               NProgress.done();
