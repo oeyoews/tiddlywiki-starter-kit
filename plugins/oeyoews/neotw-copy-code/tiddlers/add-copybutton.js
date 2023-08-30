@@ -64,6 +64,8 @@ module.exports = function addCopyButton() {
     };
 
     copyButton.addEventListener('click', () => {
+      // TODO: add click sound
+      // copy to clipboard
       navigator.clipboard
         .writeText(codeElement.textContent)
         .then(() => {

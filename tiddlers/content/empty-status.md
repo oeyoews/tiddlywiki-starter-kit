@@ -1,0 +1,1 @@
+<div class="empty:hidden bg-black w-12 h-12"></div>
