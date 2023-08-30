@@ -1,1 +1,0 @@
-<input class="placeholder-shown:border-red-500" placeholder="you@example.com" />

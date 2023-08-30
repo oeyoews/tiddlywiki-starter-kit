@@ -1,1 +1,0 @@
-https://chatgpt-plus.github.io/chatgpt-plus/

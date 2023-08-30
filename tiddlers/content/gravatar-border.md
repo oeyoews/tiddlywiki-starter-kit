@@ -1,1 +1,0 @@
-<img src="https://www.gravatar.com/avatar/1de1d1f594efdf7906ce8dba84a8b73e" class="w-[120px] h-[120px] border-2 p-1 border border-dashed border-indigo-500 rounded-full shadow-lg" />

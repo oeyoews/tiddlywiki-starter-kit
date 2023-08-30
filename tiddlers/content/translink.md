@@ -1,1 +1,0 @@
-<<translink gallary>>

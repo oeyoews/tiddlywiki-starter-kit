@@ -1,1 +1,0 @@
-AI Generated Content (AIGC，人工智能自动生成内容)，是继专业生产内容（PGC, Professional-generated Content）、用户生产内容（UGC, User-generated Content）之后的新型内容创作方式，可以在创意、表现力、迭代、传播、个性化等方面，充分发挥技术优势，打造新的数字内容生成与交互形态。随着科技的发展，AI 写作、AI 配乐、AI 视频生成、 AI 语音合成、以及近段时间火遍全网的 AI 绘画，都为创作领域带来一波热议, 只要简单输入几个关键词几秒钟之内一幅画作就能诞生。
