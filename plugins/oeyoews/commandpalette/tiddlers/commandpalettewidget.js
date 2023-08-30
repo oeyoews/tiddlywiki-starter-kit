@@ -507,7 +507,8 @@ Command Palette Widget
         },
         { display: 'none' },
       );
-      this.searchContainer = this.createElement('input', { type: 'text' });
+      // if add type: "text", google-chrome always tip
+      this.searchContainer = this.createElement('input', { type: '' });
       this.searchContainer.classList.add(
         'w-full',
         'border-none',
