@@ -1,6 +1,14 @@
 [
   {
     "action": "remove",
-    "files": ["LICENSE", "README.md", "degit.json"]
+    "files": [
+      "LICENSE",
+      "README.md",
+      "degit.json",
+      "packages",
+      "README-CN.md",
+      "img",
+      "editions"
+    ]
   }
 ]
