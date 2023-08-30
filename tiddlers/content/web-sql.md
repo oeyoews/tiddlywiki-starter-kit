@@ -1,3 +1,0 @@
-**Web SQL** is a deprecated API that allowed web developers to interact with a client-side SQL database using JavaScript. It was a part of the HTML5 specification but was not widely adopted by browsers, and has since been superseded by newer technologies like IndexedDB. 
-
-Web SQL allowed developers to create, read, update and delete records in a structured query language (SQL) database within the browser. It was useful for web applications that needed to store large amounts of structured data and perform complex queries on that data. However, due to its limited support, it is not recommended to use Web SQL in modern web development projects.

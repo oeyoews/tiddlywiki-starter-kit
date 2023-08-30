@@ -41,6 +41,7 @@
     "signale": "^1.4.0",
     "surge": "^0.23.1",
     "tiddlywiki": "github:Jermolene/TiddlyWiki5#0c64b58cfbded7a3d46e55e2705ab4a724f8d4d6",
+    "tiged": "^2.12.5",
     "zx": "^7.2.3"
   },
   "homepage": "https://github.com/oeyoews/neotw#readme",

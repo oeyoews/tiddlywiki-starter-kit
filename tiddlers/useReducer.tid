@@ -1,9 +1,0 @@
-created: 20230430092155254
-creator: oeyoews
-modified: 20230430092212968
-modifier: oeyoews
-tags: React
-title: useReducer
-type: text/vnd.tiddlywiki
-
-useReducer是useState的升级版(实际上应该是原始版)，可以实现复杂逻辑修改，而不是像useState那样只是直接赋值修改。
