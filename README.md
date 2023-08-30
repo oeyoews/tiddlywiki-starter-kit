@@ -24,6 +24,9 @@
 ## Installation :package:
 
 ```bash
+# cli
+pnpm dlx create neotw-app
+# git
 git clone --depth 1 https://github.com/oeyoews/tiddlywiki-starter-kit
 cd tiddlywiki-starter-kit && pnpm install  # install packages
 pnpm start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm2:start
