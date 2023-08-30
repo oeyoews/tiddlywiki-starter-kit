@@ -1,7 +1,7 @@
 {
   "outputDirectory": "dist",
+  "installCommand": "pnpm install && pnpm run vercel:getTiddlers",
   "buildCommand": "pnpm build:neotw",
-  "installCommand": "pnpm install",
   "cleanUrls": true,
   "trailingSlash": false,
   "github": {
