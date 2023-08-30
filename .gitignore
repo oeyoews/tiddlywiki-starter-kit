@@ -1,16 +1,10 @@
 # TiddlyWiki folder
 \$__Import.tid
-\$__StoryList*.tid
 dev/tiddlers/\$__StoryList*.tid
-\$__trashbin*
 \$__q*.tid
 
 Import.tid
-StoryList*.tid
-tiddlers/config/trashbin/
-tiddlers/trashbin/
 !public/
-Draft*
 subwiki/
 !tiddlers/subwiki/
 tiddlers/theme.tid
@@ -44,11 +38,9 @@ logs
 patch/footer.tid
 untitled*
 tiddlers/palette.tid
-# tiddlers/plugins/ahanniga/storyriver/css.tid
 tiddlers/language.tid
 tiddlers/static-patch
 openai-api-key.tid
-tiddlers/oeyoews-chatgpt-history*
 yarn-error.log
 # plugins/oeyoews/tiddlywiki-tailwindcss/files/styles.dev.css
 upload
@@ -64,11 +56,7 @@ upload
 
 .vercel
 
-# tiddlers/keepstate/**/*
 main.js
 markdown-dev
 
-# tiddlers/themes/nico/notebook/metrics/sidebar-position.tid
-# tiddlers/plugins/souk21/commandpalette/
-# tiddlers/plugins/oeyoews/commandpalette/
 tiddlers
