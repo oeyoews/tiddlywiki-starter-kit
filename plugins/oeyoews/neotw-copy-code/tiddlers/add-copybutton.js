@@ -6,6 +6,19 @@ module-type: library
 eotw-copy-code widget
 
 \*/
+
+// 不适合
+/* function copybuttonListener() {
+  document.addEventListener('mouseenter', () => {
+    const codeBlocks = document.querySelectorAll('pre');
+    codeBlocks.forEach(codeBlock => {
+      codeBlock.addEventListener('mouseenter', () => {
+        addCopyButton();
+      });
+    });
+  });
+} */
+
 module.exports = function addCopyButton() {
   // 找到当前页面的所有代码块
   const codeBlocks = document.querySelectorAll('pre');
@@ -26,6 +39,9 @@ module.exports = function addCopyButton() {
   }
 
   codeBlocks.forEach(codeBlock => {
+    // codeBlock.addEventListener('mouseenter', () => {
+    //   console.log('updated');
+    // });
     // 查找 copybutton 按钮
     const existingButton = codeBlock.querySelector('.copy-button');
     // 如果已经添加过copybutton, 结束
