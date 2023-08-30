@@ -4,7 +4,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oeyoews/neotw.git"
+    "url": "git+https://github.com/oeyoews/tiddlywiki-starter-kit.git"
   },
   "author": "oeyoews <jyao4783@gmail.com>",
   "os": [
