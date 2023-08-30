@@ -34,6 +34,10 @@ pnpm start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm
 
 [oeyoews 是如何使用Tiddlywiki的](https://neotw.oeyoewl.top/#how-to-use-tiddlywiki%40oeyoews)
 
+## usage
+
+* 所有编辑的内容都会自动保存在项目的tiddlers文件夹下, tiddlywiki默认读取这个文件夹, 但是也可以通过配置指定其他的文件夹(不过强烈不建议修改)
+
 ## Deploy :gear:
 
 <!-- https://vercel.com/docs/deploy-button -->
