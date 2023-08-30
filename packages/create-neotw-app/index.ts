@@ -2,4 +2,4 @@
 
 import createApp from './create-app';
 
-createApp();
+createApp().catch(e => {});

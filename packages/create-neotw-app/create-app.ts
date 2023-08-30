@@ -17,6 +17,7 @@ export default async function createApp() {
       { title: 'tiddlywiki-starter-kit', value: 'tiddlywiki-starter-kit' },
     ],
   });
+  if (!template) process.exit(0);
   let targetDir: string;
   const { projectName } = await prompts({
     type: 'text',
@@ -30,6 +31,7 @@ export default async function createApp() {
     },
     initial: 'tiddlywiki-starter-kit',
   });
+  if (!projectName) process.exit(0);
 
   targetDir = projectName.trim();
 
