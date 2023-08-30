@@ -30,6 +30,7 @@ pnpm dlx create neotw-app@latest
 git clone --depth 1 https://github.com/oeyoews/tiddlywiki-starter-kit
 cd tiddlywiki-starter-kit && pnpm install  # install packages
 pnpm start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm2:start
+# 单文件版本 打开 https://neotw.oeyoewl.top/editions, 直接保存网页到本地
 ```
 
 😜 最简单的使用办法就是打开Neotw模板站点, 直接保存网页到本地;
