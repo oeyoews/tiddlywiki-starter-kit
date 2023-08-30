@@ -17,7 +17,7 @@ fancybox
   exports.synchronous = true;
   exports.startup = () => {
     require('$:/plugins/oeyoews/tiddlywiki-fancybox-ui/init.js');
-    const { addDataFancy } = require('addDataFancy.js');
+    const addDataFancy = require('addDataFancy.js');
     // window.addDataFancy = addDataFancy;
     $tw.rootWidget.addEventListener('om-fancybox', () => {
       addDataFancy();
