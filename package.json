@@ -8,7 +8,6 @@
   },
   "author": "oeyoews <jyao4783@gmail.com>",
   "os": [
-    "darwin",
     "linux"
   ],
   "license": "MIT",
