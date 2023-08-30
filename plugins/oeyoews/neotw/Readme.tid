@@ -2,10 +2,4 @@ title: $:/plugins/oeyoews/neotw/Readme
 description: Neotw Readme
 caption: Readme
 
-<$list filter="[[$:/language]get[text]match[$:/languages/zh-Hans]]">
-  {{$:/plugins/oeyoews/neotw/README-CN}}
-</$list>
-
-<$list filter="[[$:/language]get[text]!match[$:/languages/zh-Hans]]">
-  {{$:/plugins/oeyoews/neotw/README}}
-</$list>
+{{$:/plugins/oeyoews/neotw/README}}
