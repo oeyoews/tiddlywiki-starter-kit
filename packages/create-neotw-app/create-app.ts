@@ -36,10 +36,10 @@ async function init() {
   const { confirm } = await prompts({
     type: 'confirm',
     name: 'confirm',
-    message: 'Do you want to clone tiddlywiki-starter-kit?',
+    message: `Do you want to clone ${template}?`,
   });
 
-  const emitter = tiged('oeyoews/tiddlywiki-starter-kit', {
+  const emitter = tiged(`${template}`, {
     disableCache: true,
     force: true,
     verbose: false,
