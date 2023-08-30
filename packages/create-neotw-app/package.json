@@ -3,7 +3,11 @@
   "version": "2.0.3",
   "description": "",
   "main": "index.js",
-  "keywords": [],
+  "keywords": [
+    "neotw",
+    "tiddlywiki-starter-kit",
+    "tiddlywiki"
+  ],
   "bin": {
     "create-neotw-app": "./dist/index.js"
   },
