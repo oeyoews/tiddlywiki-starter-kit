@@ -14,7 +14,7 @@
     "dev": "ncc build ./index.ts -w -o dist/",
     "release": "ncc build ./index.ts -o ./dist/ --minify --no-cache --no-source-map-register"
   },
-  "dependencies": {
+  "devDependencies": {
     "@types/prompts": "^2.4.4",
     "@vercel/ncc": "^0.36.1",
     "chalk": "^5.3.0",
