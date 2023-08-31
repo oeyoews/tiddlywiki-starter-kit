@@ -91,10 +91,10 @@ export default async function createApp() {
       stdio: "inherit",
       cwd: targetDir,
     })) &&
-    spinner.info(chalk.green.bold("\nPackages installing ...")) &&
+    spinner.info(chalk.green.bold("Packages installing ...\n")) &&
     spinner.succeed(
       chalk.cyan.bold(
-        `\nCreated ${targetDir} \n cd ${targetDir} && ${packageManager} run start`
+        `Created ${targetDir}\ncd ${targetDir} && ${packageManager} run start \n`
       )
     );
 }
