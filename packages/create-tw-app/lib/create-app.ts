@@ -93,8 +93,6 @@ export default async function createApp() {
     })) &&
     spinner.info(chalk.green.bold("Packages installing ...\n")) &&
     spinner.succeed(
-      chalk.cyan.bold(
-        `Created ${targetDir}\ncd ${targetDir} && ${packageManager} run start \n`
-      )
+      chalk.cyan.bold(`cd ${targetDir} && ${packageManager} run start \n`)
     );
 }
