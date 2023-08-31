@@ -2,7 +2,6 @@
   "name": "create-neotw-app",
   "version": "2.1.2",
   "description": "",
-  "main": "index.js",
   "keywords": [
     "neotw",
     "tiddlywiki-starter-kit",
