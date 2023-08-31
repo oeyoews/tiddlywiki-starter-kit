@@ -10,8 +10,6 @@ import { notifyUpdate } from "./update-check";
 import { randomSixLetters } from "./randomSixLetters";
 import { onPromptState } from "./onPromptState";
 
-// @ts-ignore
-import tiged from "tiged";
 import { getPkgManager } from "./get-pkg-manager";
 
 const spinner = ora("Loading ...");
@@ -67,7 +65,7 @@ export default async function createApp() {
     inactive: "no",
     name: "confirmInstallPackage",
     message: `Do you want to install packages now?`,
-    initial: false,
+    initial: true,
   });
 
   const { confirm } = await prompts({
