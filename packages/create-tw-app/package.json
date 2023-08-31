@@ -1,0 +1,33 @@
+{
+  "name": "create-tw-app",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "keywords": [
+    "tiddlywiki"
+  ],
+  "bin": {
+    "create-neotw-app": "./dist/index.js"
+  },
+  "author": "oeyoews <jyao4783@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ncc build ./index.ts -w -o dist/",
+    "release": "ncc build ./index.ts -o ./dist/ --minify --no-cache --no-source-map-register"
+  },
+  "dependencies": {
+    "@types/prompts": "^2.4.4",
+    "@vercel/ncc": "^0.36.1",
+    "chalk": "^5.3.0",
+    "ora": "^7.0.1",
+    "prompts": "^2.4.2",
+    "tiged": "^2.12.5",
+    "typescript": "^5.2.2",
+    "update-check": "^1.5.4",
+    "validate-npm-package-name": "^5.0.0"
+  },
+  "files": [
+    "dist/index.js",
+    "README.md"
+  ]
+}
