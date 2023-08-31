@@ -5,6 +5,7 @@ import chalk from "chalk";
 import prompts from "prompts";
 import { validateNpmName } from "./vaildate-pkg";
 import { notifyUpdate } from "./update-check";
+import { onPromptState } from "./onPromptState";
 
 // @ts-ignore
 import tiged from "tiged";
@@ -17,14 +18,15 @@ export default async function createApp() {
   const repo = "tiddlywiki-starter-kit";
   const initial = `${user}/${repo}`;
   const { template } = await prompts({
+    onState: onPromptState,
     type: "select",
     name: "template",
     message: "Select template",
     choices: [{ title: initial, value: initial }],
   });
-  if (!template) process.exit(0);
   let targetDir: string;
   const { projectName } = await prompts({
+    onState: onPromptState,
     type: "text",
     name: "projectName",
     message: "Project name",
@@ -40,7 +42,6 @@ export default async function createApp() {
     },
     initial,
   });
-  if (!projectName) process.exit(0);
 
   targetDir = projectName.trim();
 
