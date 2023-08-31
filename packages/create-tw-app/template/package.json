@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "tiddlywiki --listen"
+    "start": "tiddlywiki --listen",
+    "build": "tiddlywiki --build"
   },
   "keywords": [
     "template"
