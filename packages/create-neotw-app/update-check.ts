@@ -9,11 +9,11 @@ export async function notifyUpdate(): Promise<void> {
     if (res?.latest) {
       console.log(
         chalk.yellow(
-          chalk.bold("🚀 A new version of `create-next-app` is available!")
+          chalk.bold(`🚀 A new version of ${packageJson.name}  is available!`)
         ) +
           "\n" +
           "You can update by running: " +
-          chalk.cyan("pnpm dlx create-next-app@latest") +
+          chalk.cyan(`pnpm dlx ${packageJson.name}@latest`) +
           "\n"
       );
     } else {
