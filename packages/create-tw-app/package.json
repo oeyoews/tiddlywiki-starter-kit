@@ -1,6 +1,6 @@
 {
   "name": "create-tw-apps",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "",
   "keywords": [
     "tiddlywiki"
@@ -28,7 +28,7 @@
     "validate-npm-package-name": "^5.0.0"
   },
   "files": [
-    "dist/index.js",
+    "dist",
     "README.md"
   ]
 }
