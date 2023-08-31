@@ -16,12 +16,12 @@ export default async function createApp() {
   const user = "Jermolene";
   const repo = "TiddlyWiki5";
   const edition = "server";
-  const tiddlywikiInfo = `${user}/${repo}/editions/${edition}/tiddlywiki.info`;
+  const tiddlywikiInfo = `${user}/${repo}/editions/${edition}`;
   const { template } = await prompts({
     type: "select",
     name: "template",
     message: "Select template",
-    choices: [{ title: edition, value: `app/${edition}` }],
+    choices: [{ title: `app/${edition}`, value: `app/${edition}` }],
   });
   if (!template) process.exit(0);
   let targetDir: string;
@@ -39,7 +39,7 @@ export default async function createApp() {
       }
       return true;
     },
-    initial: tiddlywikiInfo,
+    initial: `app/${edition}`,
   });
   if (!projectName) process.exit(0);
 
