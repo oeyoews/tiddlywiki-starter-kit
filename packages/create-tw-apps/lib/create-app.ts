@@ -77,11 +77,15 @@ export default async function createApp() {
     message: `Do you want to create ${targetDir} directory ?`,
   });
 
+  const templateDir = path.join(__dirname, "template");
   if (confirm) {
     fs.mkdirSync(targetDir);
-    fs.copyFileSync("./template/package.json", `${targetDir}/package.json`);
     fs.copyFileSync(
-      "./template/tiddlywiki.info",
+      path.join(templateDir, "package.json"),
+      `${targetDir}/package.json`
+    );
+    fs.copyFileSync(
+      path.join(templateDir, "tiddlywiki.info"),
       `${targetDir}/tiddlywiki.info`
     );
 

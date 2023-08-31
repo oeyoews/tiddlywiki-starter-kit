@@ -1,6 +1,6 @@
 {
   "name": "create-tw-apps",
-  "version": "0.5.4",
+  "version": "0.5.6",
   "description": "",
   "keywords": [
     "tiddlywiki"
@@ -20,7 +20,6 @@
     "@vercel/ncc": "^0.36.1",
     "chalk": "^5.3.0",
     "cross-spawn": "^7.0.3",
-    "fast-glob": "^3.3.1",
     "ora": "^7.0.1",
     "prompts": "^2.4.2",
     "typescript": "^5.2.2",
