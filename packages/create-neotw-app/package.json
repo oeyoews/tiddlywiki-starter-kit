@@ -1,6 +1,6 @@
 {
   "name": "create-neotw-app",
-  "version": "2.0.9",
+  "version": "2.1.1",
   "description": "",
   "main": "index.js",
   "keywords": [
@@ -29,7 +29,7 @@
     "validate-npm-package-name": "^5.0.0"
   },
   "files": [
-    "dist/",
+    "dist/index.js",
     "README.md"
   ]
 }
