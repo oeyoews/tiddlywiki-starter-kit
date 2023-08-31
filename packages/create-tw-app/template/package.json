@@ -1,0 +1,16 @@
+{
+  "name": "tiddlyWiki5-nodeJs-template",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "tiddlywiki --listen"
+  },
+  "keywords": [
+    "template"
+  ],
+  "author": "oeyoews <jyao4783@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "tiddlywiki": "^5.3.1"
+  }
+}
