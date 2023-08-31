@@ -66,7 +66,7 @@ export default async function createApp() {
     active: "yes",
     inactive: "no",
     name: "confirmInstallPackage",
-    message: `Do you want to install packages?`,
+    message: `Do you want to install packages now?`,
     initial: false,
   });
 
@@ -83,6 +83,10 @@ export default async function createApp() {
     fs.copyFileSync(
       "./template/tiddlywiki.info",
       `${targetDir}/tiddlywiki.info`
+    );
+
+    spinner.succeed(
+      chalk.cyan.bold(`\ncd ${targetDir} && ${packageManager} run start \n`)
     );
   } else return;
 
