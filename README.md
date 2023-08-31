@@ -24,7 +24,7 @@
 ## Installation :package:
 
 ```bash
-# neotw-app cli
+# neotw-app cli 零依赖, 包仅有450kb
 pnpm dlx create neotw-app@latest
 # git
 git clone --depth 1 https://github.com/oeyoews/tiddlywiki-starter-kit
