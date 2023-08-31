@@ -13,14 +13,15 @@ const spinner = ora("Loading ...");
 
 export default async function createApp() {
   await notifyUpdate();
-  const user = "oeyoews";
-  const repo = "tiddlywiki-starter-kit";
-  const initial = `${user}/${repo}`;
+  const user = "Jermolene";
+  const repo = "TiddlyWiki5";
+  const edition = "server";
+  const tiddlywikiInfo = `${user}/${repo}/editions/${edition}/tiddlywiki.info`;
   const { template } = await prompts({
     type: "select",
     name: "template",
     message: "Select template",
-    choices: [{ title: initial, value: initial }],
+    choices: [{ title: edition, value: `app/${edition}` }],
   });
   if (!template) process.exit(0);
   let targetDir: string;
@@ -38,7 +39,7 @@ export default async function createApp() {
       }
       return true;
     },
-    initial,
+    initial: tiddlywikiInfo,
   });
   if (!projectName) process.exit(0);
 
@@ -51,7 +52,7 @@ export default async function createApp() {
   });
 
   // 仓库路径
-  const emitter = tiged(initial, {
+  const emitter = tiged(tiddlywikiInfo, {
     disableCache: true,
     force: true,
     verbose: false,
@@ -61,7 +62,7 @@ export default async function createApp() {
     spinner.start() &&
     // 仓库克隆到本地的路径
     emitter.clone(targetDir).then(() => {
-      spinner.succeed(chalk.green(`Cloned ${initial} to ${targetDir}`));
+      spinner.succeed(chalk.green(`Cloned ${edition} to ${targetDir}`));
       spinner.succeed(
         chalk.cyan(`cd ${targetDir} && pnpm install && pnpm dev`)
       );

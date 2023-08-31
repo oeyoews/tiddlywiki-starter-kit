@@ -2,12 +2,11 @@
   "name": "create-tw-app",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
   "keywords": [
     "tiddlywiki"
   ],
   "bin": {
-    "create-neotw-app": "./dist/index.js"
+    "create-tw-app": "./dist/index.js"
   },
   "author": "oeyoews <jyao4783@gmail.com>",
   "license": "MIT",

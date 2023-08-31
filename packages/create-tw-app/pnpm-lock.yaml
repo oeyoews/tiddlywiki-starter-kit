@@ -17,9 +17,6 @@ dependencies:
   ora:
     specifier: ^7.0.1
     version: 7.0.1
-  picocolors:
-    specifier: ^1.0.0
-    version: 1.0.0
   prompts:
     specifier: ^2.4.2
     version: 2.4.2
@@ -366,10 +363,6 @@ packages:
   /path-is-absolute@1.0.1:
     resolution: {integrity: sha512-AVbw3UJ2e9bq64vSaS9Am0fje1Pa8pbGqTTsmXfaIiMpnr5DlDhfJOuLj9Sf95ZPVDAUerDfEk88MPmPe7UCQg==}
     engines: {node: '>=0.10.0'}
-    dev: false
-
-  /picocolors@1.0.0:
-    resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
     dev: false
 
   /prompts@2.4.2:
