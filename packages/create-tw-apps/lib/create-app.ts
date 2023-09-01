@@ -62,9 +62,23 @@ export default async function createApp() {
   });
 
   const versionChoices = ["latest", "5.3.0", "5.2.0"];
-  const commit = await getLatestCommit();
-  if (commit) {
-    versionChoices.push("prerelease");
+
+  const { askedVersion } = await prompts({
+    onState: onPromptState,
+    type: "toggle",
+    name: "askedVersion",
+    message: "Do you want to use prerelease version ?",
+    active: "yes",
+    inactive: "no",
+    initial: false,
+  });
+
+  let commit: string;
+  if (askedVersion) {
+    commit = await getLatestCommit();
+    if (commit) {
+      versionChoices.push("prerelease");
+    }
   }
 
   const { tiddlywikiPackage } = await prompts({
