@@ -25,6 +25,5 @@ export async function notifyUpdate(): Promise<void> {
         )
       );
     }
-    // process.exit(0);
   } catch {}
 }
