@@ -58,7 +58,7 @@ export default async function createApp() {
     initial: 0,
   });
 
-  const versionChoices = ["latest", "5.3.0", "5.2.0"];
+  const versionChoices = ["latest", "5.3.1", "5.2.7", "other"];
 
   const { askedVersion } = await prompts({
     onState: onPromptState,
@@ -81,7 +81,7 @@ export default async function createApp() {
     }
   }
 
-  const { tiddlywikiPackage } = await prompts({
+  let { tiddlywikiPackage } = await prompts({
     onState: onPromptState,
     type: "select",
     choices: versionChoices.map((v) => ({
@@ -95,6 +95,17 @@ export default async function createApp() {
     message: `select tiddlywiki version`,
     initial: 0,
   });
+
+  if (tiddlywikiPackage === "tiddlywiki@other") {
+    const { otherTiddlyWikiPackage } = await prompts({
+      onState: onPromptState,
+      type: "text",
+      name: "otherTiddlyWikiPackage",
+      message: `Enter tiddlywiki package name`,
+      initial: "tiddlywiki@latest",
+    });
+    tiddlywikiPackage = otherTiddlyWikiPackage;
+  }
 
   const { confirm } = await prompts({
     onState: onPromptState,
