@@ -1,12 +1,12 @@
 {
   "name": "create-tw-apps",
-  "version": "0.7.5",
+  "version": "0.7.6",
   "description": "",
   "keywords": [
     "tiddlywiki"
   ],
   "bin": {
-    "create-tw-app": "./dist/index.js"
+    "create-tw-apps": "./dist/index.js"
   },
   "author": "oeyoews <jyao4783@gmail.com>",
   "license": "MIT",
