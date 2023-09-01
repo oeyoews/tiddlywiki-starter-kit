@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
-import ora from "ora";
 import chalk from "chalk";
+import ora from "ora";
 // @ts-ignore
 import spawn from "cross-spawn";
 import prompts from "prompts";
@@ -12,11 +12,10 @@ import { onPromptState } from "./onPromptState";
 
 import { getPkgManager } from "./get-pkg-manager";
 
-const spinner = ora("Loading ...");
-
 export default async function createApp() {
   await notifyUpdate();
 
+  const spinner = ora("Creating project...");
   let targetDir: string;
   const defaultPackageManager = getPkgManager();
   // console.log(defaultPackageManager, typeof defaultPackageManager);
@@ -58,14 +57,16 @@ export default async function createApp() {
     initial: 0,
   });
 
-  const { confirmInstallPackage } = await prompts({
+  const { version } = await prompts({
     onState: onPromptState,
-    type: "toggle",
-    active: "yes",
-    inactive: "no",
-    name: "confirmInstallPackage",
-    message: `Do you want to install packages now?`,
-    initial: true,
+    type: "select",
+    choices: ["latest", "5.3.0", "5.2.0"].map((v) => ({
+      title: v,
+      value: v,
+    })),
+    name: "version",
+    message: `select tiddlywiki version`,
+    initial: 0,
   });
 
   const { confirm } = await prompts({
@@ -77,6 +78,7 @@ export default async function createApp() {
 
   const templateDir = path.join(__dirname, "template");
   if (confirm) {
+    spinner.start();
     fs.mkdirSync(targetDir);
     fs.copyFileSync(
       path.join(templateDir, "package.json"),
@@ -87,18 +89,18 @@ export default async function createApp() {
       `${targetDir}/tiddlywiki.info`
     );
 
-    spinner.succeed(
-      chalk.cyan.bold(`\ncd ${targetDir} && ${packageManager} run start \n`)
-    );
-  } else return;
-
-  confirmInstallPackage &&
-    (await spawn(packageManager, ["install"], {
-      stdio: "inherit",
+    const child = spawn(packageManager, ["install", `tiddlywiki@${version}`], {
+      stdio: "ignore",
       cwd: targetDir,
-    })) &&
-    spinner.info(chalk.green.bold("Packages installing ...\n")) &&
-    spinner.succeed(
-      chalk.cyan.bold(`cd ${targetDir} && ${packageManager} run start \n`)
-    );
+    });
+
+    child.on("close", (code: number) => {
+      if (code === 0) {
+        spinner.succeed(chalk.green.bold("Packages installed\n"));
+        spinner.succeed(
+          chalk.cyan.bold(`cd ${targetDir} && ${packageManager} run start \n`)
+        );
+      }
+    });
+  }
 }
