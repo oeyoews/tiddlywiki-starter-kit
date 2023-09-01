@@ -20,3 +20,6 @@ npm run build
 ```
 
 ## TODO
+
+* 增加一个语言的选择
+* 增加dev

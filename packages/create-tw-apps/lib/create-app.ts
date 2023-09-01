@@ -9,8 +9,12 @@ import { validateNpmName } from "./vaildate-pkg";
 import { notifyUpdate } from "./update-check";
 import { randomSixLetters } from "./randomSixLetters";
 import { onPromptState } from "./onPromptState";
+import { getLatestCommit } from "./get-latest-commit";
 
 import { getPkgManager } from "./get-pkg-manager";
+
+// remove all warnings(because fetch is experimental api)
+process.removeAllListeners("warning");
 
 export default async function createApp() {
   await notifyUpdate();
@@ -57,14 +61,19 @@ export default async function createApp() {
     initial: 0,
   });
 
-  const { version } = await prompts({
+  const commit = await getLatestCommit();
+
+  const { tiddlywikiPackage } = await prompts({
     onState: onPromptState,
     type: "select",
-    choices: ["latest", "5.3.0", "5.2.0"].map((v) => ({
+    choices: ["latest", "5.3.0", "5.2.0", "prerelease"].map((v) => ({
       title: v,
-      value: v,
+      value:
+        v === "prerelease"
+          ? `github:Jermolene/TiddlyWiki5#${commit}`
+          : `tiddlywiki@${v}`,
     })),
-    name: "version",
+    name: "tiddlywikiPackage",
     message: `select tiddlywiki version`,
     initial: 0,
   });
@@ -89,9 +98,12 @@ export default async function createApp() {
       `${targetDir}/tiddlywiki.info`
     );
 
-    const child = spawn(packageManager, ["install", `tiddlywiki@${version}`], {
-      stdio: "ignore",
+    const child = spawn(packageManager, ["install", tiddlywikiPackage], {
+      // stdio: "inherit", // ignore
       cwd: targetDir,
+      env: {
+        // NODE_NO_WARNINGS: 1,
+      },
     });
 
     child.on("close", (code: number) => {
