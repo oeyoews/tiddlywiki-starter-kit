@@ -1,10 +1,9 @@
 /*\
-title: $:/core/modules/widgets/commandpalettewidget.js
+title: $:/plugins/oeyoews/cmp/commandpalettewidget.js
 type: application/javascript
 module-type: widget
 
 Command Palette Widget
-
 \*/
 (function () {
   /*jslint node: true, browser: true */
@@ -12,6 +11,7 @@ Command Palette Widget
   "use strict";
 
   var Widget = require("$:/core/modules/widgets/widget.js").widget;
+const getTiddlersWithTag = require('./lib/getTiddlersWithTag')
 
   class CommandPaletteWidget extends Widget {
     constructor(parseTreeNode, options) {
@@ -118,7 +118,7 @@ Command Palette Widget
     }
 
     refreshThemes(e) {
-      this.themes = this.getTiddlersWithTag(this.themesTag);
+      this.themes = getTiddlersWithTag(this.themesTag);
       let found = false;
       for (let theme of this.themes) {
         let themeName = theme.fields.title;
@@ -210,7 +210,7 @@ Command Palette Widget
         keepPalette: true,
       });
 
-      let commandTiddlers = this.getTiddlersWithTag(this.customCommandsTag);
+      let commandTiddlers = getTiddlersWithTag(this.customCommandsTag);
       for (let tiddler of commandTiddlers) {
         if (!tiddler.fields[this.typeField] === undefined) continue;
         let type = tiddler.fields[this.typeField];
@@ -460,11 +460,6 @@ Command Palette Widget
       }
     }
 
-    //helper function to retrieve all tiddlers (+ their fields) with a tag
-    getTiddlersWithTag(tag) {
-      let tiddlers = $tw.wiki.getTiddlersWithTag(tag);
-      return tiddlers.map((t) => $tw.wiki.getTiddler(t));
-    }
 
     render(parent, nextSibling) {
       this.parentDomNode = parent;
