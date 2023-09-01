@@ -8,14 +8,14 @@ export async function notifyUpdate(): Promise<void> {
     const res = await update;
     if (res?.latest) {
       console.log(
-        chalk.yellow(
-          chalk.bold(
-            "🚀 A new version of " + packageJson.name + " is available!"
-          )
+        chalk.yellow.bold(
+          "🚀 A new version of " + packageJson.name + " is available!"
         ) +
           "\n" +
           "You can update by running: " +
-          chalk.cyan(`pnpm dlx ${packageJson.name}@latest`) +
+          chalk.cyan(
+            `pnpm dlx ${packageJson.name}@latest, ${packageJson.version}`
+          ) +
           "\n"
       );
     } else {

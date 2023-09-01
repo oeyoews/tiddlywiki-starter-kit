@@ -53,7 +53,7 @@ export default async function createApp() {
     onState: onPromptState,
     type: "select",
     name: "packageManager",
-    message: "Select package manager",
+    message: "Select manager",
     choices,
     initial: 0,
   });
@@ -64,23 +64,24 @@ export default async function createApp() {
     onState: onPromptState,
     type: "toggle",
     name: "askedVersion",
-    message: "Do you want to use prerelease version ?",
+    message: "Use prerelease?",
     active: "yes",
     inactive: "no",
     initial: false,
   });
 
-  let commit: string;
+  let commit: string | undefined;
   if (askedVersion) {
     // remove all warnings(because fetch is experimental api)
     process.removeAllListeners("warning");
 
-    commit = await getLatestCommit();
+    const commit = await getLatestCommit();
     if (commit) {
-      versionChoices.push("prerelease");
+      versionChoices.unshift("prerelease");
     }
   }
 
+  // @ts-ignore
   let { tiddlywikiPackage } = await prompts({
     onState: onPromptState,
     type: "select",
@@ -101,7 +102,7 @@ export default async function createApp() {
       onState: onPromptState,
       type: "text",
       name: "otherTiddlyWikiPackage",
-      message: `Enter tiddlywiki package name`,
+      message: `Enter version`,
       initial: "5.2.1",
       validate: (input) => {
         const versionPattern = /^\d+\.\d+\.\d+$/; // 正则表达式模式
@@ -149,7 +150,7 @@ export default async function createApp() {
     onState: onPromptState,
     type: "confirm",
     name: "confirm",
-    message: `Do you want to create ${targetDir} directory ?`,
+    message: `Create ${targetDir} ?`,
   });
 
   const templateDir = path.join(__dirname, "template");
