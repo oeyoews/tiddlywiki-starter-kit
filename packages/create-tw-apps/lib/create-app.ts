@@ -61,12 +61,16 @@ export default async function createApp() {
     initial: 0,
   });
 
+  const versionChoices = ["latest", "5.3.0", "5.2.0"];
   const commit = await getLatestCommit();
+  if (commit) {
+    versionChoices.push("prerelease");
+  }
 
   const { tiddlywikiPackage } = await prompts({
     onState: onPromptState,
     type: "select",
-    choices: ["latest", "5.3.0", "5.2.0", "prerelease"].map((v) => ({
+    choices: versionChoices.map((v) => ({
       title: v,
       value:
         v === "prerelease"
