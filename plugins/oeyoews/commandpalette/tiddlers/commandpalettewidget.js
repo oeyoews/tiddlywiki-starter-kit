@@ -728,6 +728,8 @@ Command Palette Widget
       this.mask.classList.remove("pointer-events-none");
       this.mask.style.opacity = "1";
       this.mask.addEventListener("scroll", (e) => e.stopPropagation());
+      // 打开命令面板时, 禁用滚动
+      document.body.style.overflow = "hidden";
       // this.container.classList.add('translate-y-40')
       this.searchContainer.focus();
     }
@@ -765,6 +767,9 @@ Command Palette Widget
         this.previouslyFocused.element,
         this.previouslyFocused.caretPos
       );
+
+      // 打开命令面板时, 启用滚动
+      document.body.style.overflow = "auto";
     }
     onKeyDown(e) {
       if (e.key === "Escape") {
