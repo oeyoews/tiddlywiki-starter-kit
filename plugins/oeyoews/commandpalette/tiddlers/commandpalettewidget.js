@@ -9,9 +9,9 @@ Command Palette Widget
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
-  'use strict';
+  "use strict";
 
-  var Widget = require('$:/core/modules/widgets/widget.js').widget;
+  var Widget = require("$:/core/modules/widgets/widget.js").widget;
 
   class CommandPaletteWidget extends Widget {
     constructor(parseTreeNode, options) {
@@ -30,39 +30,39 @@ Command Palette Widget
         showHistoryOnOpen: true,
         escapeGoesBack: true,
         alwaysPassSelection: true,
-        theme: '$:/plugins/oeyoews/commandpalette/Compact.css',
+        theme: "$:/plugins/oeyoews/commandpalette/Compact.css",
       };
       this.settings = {};
       this.commandHistoryPath =
-        '$:/plugins/oeyoews/commandpalette/CommandPaletteHistory';
+        "$:/plugins/oeyoews/commandpalette/CommandPaletteHistory";
       this.settingsPath =
-        '$:/plugins/oeyoews/commandpalette/CommandPaletteSettings';
+        "$:/plugins/oeyoews/commandpalette/CommandPaletteSettings";
       this.searchStepsPath =
-        '$:/plugins/oeyoews/commandpalette/CommandPaletteSearchSteps';
-      this.customCommandsTag = '$:/tags/CommandPaletteCommand';
-      this.themesTag = '$:/tags/CommandPaletteTheme';
-      this.typeField = 'command-palette-type';
-      this.nameField = 'command-palette-name';
-      this.hintField = 'command-palette-hint';
-      this.modeField = 'command-palette-mode';
-      this.userInputField = 'command-palette-user-input';
-      this.caretField = 'command-palette-caret';
-      this.immediateField = 'command-palette-immediate';
-      this.triggerField = 'command-palette-trigger';
-      this.prefixField = 'command-palette-prefix';
+        "$:/plugins/oeyoews/commandpalette/CommandPaletteSearchSteps";
+      this.customCommandsTag = "$:/tags/CommandPaletteCommand";
+      this.themesTag = "$:/tags/CommandPaletteTheme";
+      this.typeField = "command-palette-type";
+      this.nameField = "command-palette-name";
+      this.hintField = "command-palette-hint";
+      this.modeField = "command-palette-mode";
+      this.userInputField = "command-palette-user-input";
+      this.caretField = "command-palette-caret";
+      this.immediateField = "command-palette-immediate";
+      this.triggerField = "command-palette-trigger";
+      this.prefixField = "command-palette-prefix";
     }
 
     actionStringBuilder(text) {
-      return e => this.invokeActionString(text, this, e);
+      return (e) => this.invokeActionString(text, this, e);
     }
 
     actionStringInput(action, hint, e) {
       this.blockProviderChange = true;
       this.allowInputFieldSelection = true;
       this.searchHint.innerText = hint;
-      this.searchContainer.value = '';
+      this.searchContainer.value = "";
       this.currentProvider = () => {};
-      this.currentResolver = e => {
+      this.currentResolver = (e) => {
         this.invokeActionString(action, this, e, {
           commandpaletteinput: this.searchContainer.value,
         });
@@ -84,36 +84,36 @@ Command Palette Widget
       this.blockProviderChange = true;
       if (allowNoSelection) this.allowInputFieldSelection = true;
       this.currentProvider = this.historyProviderBuilder(hintTiddler);
-      this.currentResolver = e => {
+      this.currentResolver = (e) => {
         if (this.currentSelection === 0) return;
         let tiddler =
           this.currentResults[this.currentSelection - 1].result.name;
-        this.currentProvider = terms => {
+        this.currentProvider = (terms) => {
           this.currentSelection = 0;
           this.searchHint.innerText = hintTag;
           let searches = filter(tiddler, terms);
-          searches = searches.map(s => {
+          searches = searches.map((s) => {
             return { name: s };
           });
           this.showResults(searches);
         };
-        this.searchContainer.value = '';
+        this.searchContainer.value = "";
         this.onInput(this.searchContainer.value);
-        this.currentResolver = e => {
+        this.currentResolver = (e) => {
           if (!allowNoSelection && this.currentSelection === 0) return;
           let tag = this.searchContainer.value;
           if (this.currentSelection !== 0) {
             tag = this.currentResults[this.currentSelection - 1].result.name;
           }
           this.invokeFieldMangler(tiddler, message, tag, e);
-          if (!e.getModifierState('Shift')) {
+          if (!e.getModifierState("Shift")) {
             this.closePalette();
           } else {
             this.onInput(this.searchContainer.value);
           }
         };
       };
-      this.searchContainer.value = '';
+      this.searchContainer.value = "";
       this.onInput(this.searchContainer.value);
     }
 
@@ -124,28 +124,28 @@ Command Palette Widget
         let themeName = theme.fields.title;
         if (themeName === this.settings.theme) {
           found = true;
-          this.addTagIfNecessary(themeName, '$:/tags/Stylesheet', e);
+          this.addTagIfNecessary(themeName, "$:/tags/Stylesheet", e);
         } else {
           this.invokeFieldMangler(
             themeName,
-            'tm-remove-tag',
-            '$:/tags/Stylesheet',
-            e,
+            "tm-remove-tag",
+            "$:/tags/Stylesheet",
+            e
           );
         }
       }
       if (found) return;
       this.addTagIfNecessary(
         this.defaultSettings.theme,
-        '$:/tags/Stylesheet',
-        e,
+        "$:/tags/Stylesheet",
+        e
       );
     }
 
     //Re-adding an existing tag changes modification date
     addTagIfNecessary(tiddler, tag, e) {
       if (this.hasTag(tiddler, tag)) return;
-      this.invokeFieldMangler(tiddler, 'tm-add-tag', tag, e);
+      this.invokeFieldMangler(tiddler, "tm-add-tag", tag, e);
     }
 
     hasTag(tiddler, tag) {
@@ -155,57 +155,57 @@ Command Palette Widget
     refreshCommands() {
       this.actions = [];
       this.actions.push({
-        name: 'Refresh Command Palette',
-        action: e => {
+        name: "Refresh Command Palette",
+        action: (e) => {
           this.refreshCommandPalette();
-          this.promptCommand('');
+          this.promptCommand("");
         },
         keepPalette: true,
       });
       this.actions.push({
-        name: 'Explorer',
-        action: e => this.explorer(e),
+        name: "Explorer",
+        action: (e) => this.explorer(e),
         keepPalette: true,
       });
       this.actions.push({
-        name: 'See History',
-        action: e => this.showHistory(e),
+        name: "See History",
+        action: (e) => this.showHistory(e),
         keepPalette: true,
       });
       this.actions.push({
-        name: 'New Command Wizard',
-        action: e => this.newCommandWizard(e),
+        name: "New Command Wizard",
+        action: (e) => this.newCommandWizard(e),
         keepPalette: true,
       });
       this.actions.push({
-        name: 'Add tag to tiddler',
-        action: e =>
+        name: "Add tag to tiddler",
+        action: (e) =>
           this.tagOperation(
             e,
-            'Pick tiddler to tag',
-            'Pick tag to add (⇧⏎ to add multiple)',
+            "Pick tiddler to tag",
+            "Pick tag to add (⇧⏎ to add multiple)",
             (tiddler, terms) =>
               $tw.wiki.filterTiddlers(
-                `[!is[system]tags[]] [is[system]tags[]] -[[${tiddler}]tags[]] +[search[${terms}]]`,
+                `[!is[system]tags[]] [is[system]tags[]] -[[${tiddler}]tags[]] +[search[${terms}]]`
               ),
             true,
-            'tm-add-tag',
+            "tm-add-tag"
           ),
         keepPalette: true,
       });
       this.actions.push({
-        name: 'Remove tag',
-        action: e =>
+        name: "Remove tag",
+        action: (e) =>
           this.tagOperation(
             e,
-            'Pick tiddler to untag',
-            'Pick tag to remove (⇧⏎ to remove multiple)',
+            "Pick tiddler to untag",
+            "Pick tag to remove (⇧⏎ to remove multiple)",
             (tiddler, terms) =>
               $tw.wiki.filterTiddlers(
-                `[[${tiddler}]tags[]] +[search[${terms}]]`,
+                `[[${tiddler}]tags[]] +[search[${terms}]]`
               ),
             false,
-            'tm-remove-tag',
+            "tm-remove-tag"
           ),
         keepPalette: true,
       });
@@ -215,12 +215,12 @@ Command Palette Widget
         if (!tiddler.fields[this.typeField] === undefined) continue;
         let type = tiddler.fields[this.typeField];
         let text = tiddler.fields.text;
-        if (text === undefined) text = '';
+        if (text === undefined) text = "";
         let textFirstLine = text.match(/^.*/)[0];
         let hint = tiddler.fields[this.hintField];
         if (hint === undefined) hint = tiddler.fields[this.nameField];
-        if (hint === undefined) hint = '';
-        if (type === 'shortcut') {
+        if (hint === undefined) hint = "";
+        if (type === "shortcut") {
           let trigger = tiddler.fields[this.triggerField];
           if (trigger === undefined) continue;
           this.triggers.push({ trigger, text, hint });
@@ -228,7 +228,7 @@ Command Palette Widget
         }
         if (!tiddler.fields[this.nameField] === undefined) continue;
         let name = tiddler.fields[this.nameField];
-        if (type === 'prompt') {
+        if (type === "prompt") {
           let immediate = !!tiddler.fields[this.immediateField];
           let caret = tiddler.fields[this.caretField];
           let action = {
@@ -240,7 +240,7 @@ Command Palette Widget
           this.actions.push(action);
           continue;
         }
-        if (type === 'prompt-basic') {
+        if (type === "prompt-basic") {
           let caret = tiddler.fields[this.caretField];
           let action = {
             name: name,
@@ -253,7 +253,7 @@ Command Palette Widget
               provider: this.prefixedBasicProviderBuilder(
                 textFirstLine,
                 caret,
-                hint,
+                hint
               ),
               //resolver is set in provider after parsing the input without the prefix
               resolver: undefined,
@@ -263,38 +263,38 @@ Command Palette Widget
           this.actions.push(action);
           continue;
         }
-        if (type === 'message') {
+        if (type === "message") {
           this.actions.push({
             name: name,
-            action: e => this.tmMessageBuilder(textFirstLine)(e),
+            action: (e) => this.tmMessageBuilder(textFirstLine)(e),
           });
           continue;
         }
-        if (type === 'actionString') {
+        if (type === "actionString") {
           let userInput =
             tiddler.fields[this.userInputField] !== undefined &&
-            tiddler.fields[this.userInputField] === 'true';
+            tiddler.fields[this.userInputField] === "true";
           if (userInput) {
             this.actions.push({
               name: name,
-              action: e => this.actionStringInput(text, hint, e),
+              action: (e) => this.actionStringInput(text, hint, e),
               keepPalette: true,
             });
           } else {
             this.actions.push({
               name: name,
-              action: e => this.actionStringBuilder(text)(e),
+              action: (e) => this.actionStringBuilder(text)(e),
             });
           }
           continue;
         }
-        if (type === 'history') {
+        if (type === "history") {
           let mode = tiddler.fields[this.modeField];
           this.actions.push({
             name: name,
-            action: e =>
+            action: (e) =>
               this.commandWithHistoryPicker(textFirstLine, hint, mode).handler(
-                e,
+                e
               ),
             keepPalette: true,
           });
@@ -305,18 +305,18 @@ Command Palette Widget
 
     newCommandWizard() {
       this.blockProviderChange = true;
-      this.searchContainer.value = '';
-      this.searchHint.innerText = 'Command Name';
-      let name = '';
-      let type = '';
-      let hint = '';
+      this.searchContainer.value = "";
+      this.searchHint.innerText = "Command Name";
+      let name = "";
+      let type = "";
+      let hint = "";
 
       let messageStep = () => {
-        this.searchContainer.value = '';
-        this.searchHint.innerText = 'Enter Message';
-        this.currentResolver = e => {
-          this.tmMessageBuilder('tm-new-tiddler', {
-            title: '$:/' + name,
+        this.searchContainer.value = "";
+        this.searchHint.innerText = "Enter Message";
+        this.currentResolver = (e) => {
+          this.tmMessageBuilder("tm-new-tiddler", {
+            title: "$:/" + name,
             tags: this.customCommandsTag,
             [this.typeField]: type,
             [this.nameField]: name,
@@ -328,25 +328,25 @@ Command Palette Widget
       };
 
       let hintStep = () => {
-        this.searchContainer.value = '';
-        this.searchHint.innerText = 'Enter hint';
-        this.currentResolver = e => {
+        this.searchContainer.value = "";
+        this.searchHint.innerText = "Enter hint";
+        this.currentResolver = (e) => {
           hint = this.searchContainer.value;
           messageStep();
         };
       };
 
       let typeStep = () => {
-        this.searchContainer.value = '';
+        this.searchContainer.value = "";
         this.searchHint.innerText =
-          'Enter type (prompt, prompt-basic, message, actionString, history)';
-        this.currentResolver = e => {
+          "Enter type (prompt, prompt-basic, message, actionString, history)";
+        this.currentResolver = (e) => {
           type = this.searchContainer.value;
-          if (type === 'history') {
+          if (type === "history") {
             hintStep();
           } else {
-            this.tmMessageBuilder('tm-new-tiddler', {
-              title: '$:/' + name,
+            this.tmMessageBuilder("tm-new-tiddler", {
+              title: "$:/" + name,
               tags: this.customCommandsTag,
               [this.typeField]: type,
               [this.nameField]: name,
@@ -356,8 +356,8 @@ Command Palette Widget
         };
       };
 
-      this.currentProvider = terms => {};
-      this.currentResolver = e => {
+      this.currentProvider = (terms) => {};
+      this.currentResolver = (e) => {
         if (this.searchContainer.value.length === 0) return;
         name = this.searchContainer.value;
         typeStep();
@@ -367,11 +367,11 @@ Command Palette Widget
 
     explorer(e) {
       this.blockProviderChange = true;
-      this.searchContainer.value = '$:/';
-      this.lastExplorerInput = '$:/';
-      this.searchHint.innerText = 'Explorer';
-      this.currentProvider = terms => this.explorerProvider('$:/', terms);
-      this.currentResolver = e => {
+      this.searchContainer.value = "$:/";
+      this.lastExplorerInput = "$:/";
+      this.searchHint.innerText = "Explorer";
+      this.currentProvider = (terms) => this.explorerProvider("$:/", terms);
+      this.currentResolver = (e) => {
         if (this.currentSelection === 0) return;
         this.currentResults[this.currentSelection - 1].result.action(e);
       };
@@ -379,10 +379,10 @@ Command Palette Widget
     }
 
     explorerProvider(url, terms) {
-      let switchFolder = url => {
+      let switchFolder = (url) => {
         this.searchContainer.value = url;
         this.lastExplorerInput = this.searchContainer.value;
-        this.currentProvider = terms => this.explorerProvider(url, terms);
+        this.currentProvider = (terms) => this.explorerProvider(url, terms);
         this.onInput();
       };
       if (!this.searchContainer.value.startsWith(url)) {
@@ -392,22 +392,22 @@ Command Palette Widget
       this.currentSelection = 0;
       let search = this.searchContainer.value.substr(url.length);
       let tiddlers = $tw.wiki.filterTiddlers(
-        `[removeprefix[${url}]splitbefore[/]sort[]search[${search}]]`,
+        `[removeprefix[${url}]splitbefore[/]sort[]search[${search}]]`
       );
       let folders = [];
       let files = [];
       for (let tiddler of tiddlers) {
-        if (tiddler.endsWith('/')) {
+        if (tiddler.endsWith("/")) {
           folders.push({
             name: tiddler,
-            action: e => switchFolder(`${url}${tiddler}`),
+            action: (e) => switchFolder(`${url}${tiddler}`),
           });
         } else {
           files.push({
             name: tiddler,
-            action: e => {
+            action: (e) => {
               this.navigateTo(`${url}${tiddler}`);
-              if (!e.getModifierState('Shift')) {
+              if (!e.getModifierState("Shift")) {
                 this.closePalette();
               }
             },
@@ -415,11 +415,11 @@ Command Palette Widget
         }
       }
       let topResult;
-      if (url !== '$:/') {
-        let splits = url.split('/');
+      if (url !== "$:/") {
+        let splits = url.split("/");
         splits.splice(splits.length - 2);
-        let parent = splits.join('/') + '/';
-        topResult = { name: '..', action: e => switchFolder(parent) };
+        let parent = splits.join("/") + "/";
+        topResult = { name: "..", action: (e) => switchFolder(parent) };
         this.showResults([topResult, ...folders, ...files]);
         return;
       }
@@ -428,9 +428,9 @@ Command Palette Widget
 
     setSetting(name, value) {
       //doing the validation here too (it's also done in refreshSettings, so you can load you own settings with a json file)
-      if (typeof value === 'string') {
-        if (value === 'true') value = true;
-        if (value === 'false') value = false;
+      if (typeof value === "string") {
+        if (value === "true") value = true;
+        if (value === "false") value = false;
       }
       this.settings[name] = value;
       $tw.wiki.setTiddlerData(this.settingsPath, this.settings);
@@ -452,10 +452,10 @@ Command Palette Widget
       //cast all booleans
       for (let prop in this.settings) {
         if (!this.settings.hasOwnProperty(prop)) continue;
-        if (typeof this.settings[prop] !== 'string') continue;
-        if (this.settings[prop].toLowerCase() === 'true')
+        if (typeof this.settings[prop] !== "string") continue;
+        if (this.settings[prop].toLowerCase() === "true")
           this.settings[prop] = true;
-        if (this.settings[prop].toLowerCase() === 'false')
+        if (this.settings[prop].toLowerCase() === "false")
           this.settings[prop] = false;
       }
     }
@@ -463,7 +463,7 @@ Command Palette Widget
     //helper function to retrieve all tiddlers (+ their fields) with a tag
     getTiddlersWithTag(tag) {
       let tiddlers = $tw.wiki.getTiddlersWithTag(tag);
-      return tiddlers.map(t => $tw.wiki.getTiddler(t));
+      return tiddlers.map((t) => $tw.wiki.getTiddler(t));
     }
 
     render(parent, nextSibling) {
@@ -473,94 +473,96 @@ Command Palette Widget
         history: [],
       }).history;
 
-      $tw.rootWidget.addEventListener('open-command-palette', e =>
-        this.openPalette(e),
+      $tw.rootWidget.addEventListener("open-command-palette", (e) =>
+        this.openPalette(e)
       );
-      $tw.rootWidget.addEventListener('open-command-palette-selection', e =>
-        this.openPaletteSelection(e),
+      $tw.rootWidget.addEventListener("open-command-palette-selection", (e) =>
+        this.openPaletteSelection(e)
       );
-      $tw.rootWidget.addEventListener('insert-command-palette-result', e =>
-        this.insertSelectedResult(e),
+      $tw.rootWidget.addEventListener("insert-command-palette-result", (e) =>
+        this.insertSelectedResult(e)
       );
 
-      let inputAndMainHintWrapper = this.createElement('div', {
-        className: 'flex justify-center items-center',
+      let inputAndMainHintWrapper = this.createElement("div", {
+        className: "flex justify-center items-center",
       });
       // pointer-events-none fix z-index bug
       // backdrop-blur not effect with bg-neutral-600
       this.mask = this.createElement(
-        'div',
+        "div",
         {
           className:
-            'backdrop-blur z-[9998] fixed inset-0 bg-black/40 transition-all pointer-events-none duration-500',
+            "backdrop-blur z-[9998] fixed inset-0 bg-black/20 transition-all pointer-events-none",
         },
         {
           opacity: 0,
-        },
+        }
       );
       this.container = this.createElement(
-        'div',
+        "div",
         // add transform
         {
           className:
-            'bg-white flex-col z-[9999] transform shadow-lg py-2 mt-4 fixed left-1/2 -translate-x-1/2 w-1/2 rounded transition-all duration-500 dark:invert',
+            "bg-white flex-col z-[9999] transform shadow-lg py-2 mt-4 fixed left-1/2 -translate-x-1/2 w-1/2 rounded transition-all dark:invert",
         },
-        { display: 'none' },
+        { display: "none" }
       );
       // if add type: "text", google-chrome always tip
-      this.searchContainer = this.createElement('input', { type: '' });
+      this.searchContainer = this.createElement("input", { type: "" });
       this.searchContainer.classList.add(
-        'w-full',
-        'border-none',
-        'dark:invert',
+        "w-full",
+        "border-none",
+        "dark:invert"
       );
-      this.searchContainer.placeholder = '🔥 Search ...';
-      this.searchHint = this.createElement('div', {
-        className: 'commandpalettehint commandpalettehintmain',
+      this.searchContainer.placeholder = "🔥 Search ...";
+      this.searchHint = this.createElement("div", {
+        className: "commandpalettehint commandpalettehintmain",
       });
       inputAndMainHintWrapper.append(this.searchHint, this.searchContainer);
-      this.scrollDiv = this.createElement('div', {
-        className: 'cp-scroll my-2',
+      this.scrollDiv = this.createElement("div", {
+        className: "cp-scroll my-2",
       });
       this.container.append(inputAndMainHintWrapper, this.scrollDiv);
-      this.searchContainer.addEventListener('keydown', e => this.onKeyDown(e));
-      this.searchContainer.addEventListener('input', () =>
-        this.onInput(this.searchContainer.value),
+      this.searchContainer.addEventListener("keydown", (e) =>
+        this.onKeyDown(e)
       );
-      window.addEventListener('click', e => this.onClick(e));
+      this.searchContainer.addEventListener("input", () =>
+        this.onInput(this.searchContainer.value)
+      );
+      window.addEventListener("click", (e) => this.onClick(e));
 
       parent.insertBefore(this.mask, nextSibling);
       parent.insertBefore(this.container, nextSibling);
 
       this.refreshCommandPalette();
 
-      this.symbolProviders['>'] = {
-        provider: terms => this.actionProvider(terms),
-        resolver: e => this.actionResolver(e),
+      this.symbolProviders[">"] = {
+        provider: (terms) => this.actionProvider(terms),
+        resolver: (e) => this.actionResolver(e),
       };
-      this.symbolProviders['#'] = {
-        provider: terms => this.tagListProvider(terms),
-        resolver: e => this.tagListResolver(e),
+      this.symbolProviders["#"] = {
+        provider: (terms) => this.tagListProvider(terms),
+        resolver: (e) => this.tagListResolver(e),
       };
-      this.symbolProviders['@'] = {
-        provider: terms => this.tagProvider(terms),
-        resolver: e => this.defaultResolver(e),
+      this.symbolProviders["@"] = {
+        provider: (terms) => this.tagProvider(terms),
+        resolver: (e) => this.defaultResolver(e),
       };
-      this.symbolProviders['?'] = {
-        provider: terms => this.helpProvider(terms),
-        resolver: e => this.helpResolver(e),
+      this.symbolProviders["?"] = {
+        provider: (terms) => this.helpProvider(terms),
+        resolver: (e) => this.helpResolver(e),
       };
-      this.symbolProviders['['] = {
+      this.symbolProviders["["] = {
         provider: (terms, hint) => this.filterProvider(terms, hint),
-        resolver: e => this.filterResolver(e),
+        resolver: (e) => this.filterResolver(e),
       };
-      this.symbolProviders['+'] = {
-        provider: terms => this.createTiddlerProvider(terms),
-        resolver: e => this.createTiddlerResolver(),
+      this.symbolProviders["+"] = {
+        provider: (terms) => this.createTiddlerProvider(terms),
+        resolver: (e) => this.createTiddlerResolver(),
       };
-      this.symbolProviders['|'] = {
-        provider: terms => this.settingsProvider(terms),
-        resolver: e => this.settingsResolver(),
+      this.symbolProviders["|"] = {
+        provider: (terms) => this.settingsProvider(terms),
+        resolver: (e) => this.settingsResolver(),
       };
       this.currentResults = [];
       this.currentProvider = {};
@@ -572,7 +574,7 @@ Command Palette Widget
       steps = steps.steps;
       for (let step of steps) {
         this.searchSteps.push(
-          this.searchStepBuilder(step.filter, step.caret, step.hint),
+          this.searchStepBuilder(step.filter, step.caret, step.hint)
         );
       }
     }
@@ -592,18 +594,18 @@ Command Palette Widget
     }
 
     historyProviderBuilder(hint, mode) {
-      return terms => {
+      return (terms) => {
         this.currentSelection = 0;
         this.searchHint.innerText = hint;
         let results;
-        if (mode !== undefined && mode === 'drafts') {
-          results = $tw.wiki.filterTiddlers('[has:field[draft.of]]');
-        } else if (mode !== undefined && mode === 'story') {
-          results = $tw.wiki.filterTiddlers('[list[$:/StoryList]]');
+        if (mode !== undefined && mode === "drafts") {
+          results = $tw.wiki.filterTiddlers("[has:field[draft.of]]");
+        } else if (mode !== undefined && mode === "story") {
+          results = $tw.wiki.filterTiddlers("[list[$:/StoryList]]");
         } else {
           results = this.getHistory();
         }
-        results = results.map(r => {
+        results = results.map((r) => {
           return { name: r };
         });
         this.showResults(results);
@@ -611,16 +613,16 @@ Command Palette Widget
     }
 
     commandWithHistoryPicker(message, hint, mode) {
-      let handler = e => {
+      let handler = (e) => {
         this.blockProviderChange = true;
         this.allowInputFieldSelection = true;
         this.currentProvider = provider;
         this.currentResolver = resolver;
-        this.searchContainer.value = '';
+        this.searchContainer.value = "";
         this.onInput(this.searchContainer.value);
       };
       let provider = this.historyProviderBuilder(hint, mode);
-      let resolver = e => {
+      let resolver = (e) => {
         if (this.currentSelection === 0) return;
         let title = this.currentResults[this.currentSelection - 1].result.name;
         this.parentWidget.dispatchEvent({
@@ -650,21 +652,21 @@ Command Palette Widget
       this.setSelectionToFirst();
     }
     parseCommand(text) {
-      let terms = '';
+      let terms = "";
       let resolver;
       let provider;
-      let shortcut = this.triggers.find(t => text.startsWith(t.trigger));
+      let shortcut = this.triggers.find((t) => text.startsWith(t.trigger));
       if (shortcut !== undefined) {
-        resolver = e => {
+        resolver = (e) => {
           let inputWithoutShortcut = this.searchContainer.value.substr(
-            shortcut.trigger.length,
+            shortcut.trigger.length
           );
           this.invokeActionString(shortcut.text, this, e, {
             commandpaletteinput: inputWithoutShortcut,
           });
           this.closePalette();
         };
-        provider = terms => {
+        provider = (terms) => {
           this.searchHint.innerText = shortcut.hint;
           this.showResults([]);
         };
@@ -713,7 +715,7 @@ Command Palette Widget
         end: activeElement.selectionEnd,
         caretPos: activeElement.selectionEnd,
       };
-      this.searchContainer.value = '';
+      this.searchContainer.value = "";
       if (e.param !== undefined) {
         this.searchContainer.value = e.param;
       }
@@ -722,10 +724,10 @@ Command Palette Widget
       }
       this.currentSelection = 0;
       this.onInput(this.searchContainer.value); //Trigger results on open
-      this.container.style.display = 'flex ';
-      this.mask.style.opacity = '0.8';
-      this.mask.classList.remove('pointer-events-none');
-      this.mask.addEventListener('scroll', e => e.stopPropagation());
+      this.container.style.display = "flex ";
+      this.mask.classList.remove("pointer-events-none");
+      this.mask.style.opacity = "1";
+      this.mask.addEventListener("scroll", (e) => e.stopPropagation());
       // this.container.classList.add('translate-y-40')
       this.searchContainer.focus();
     }
@@ -754,18 +756,18 @@ Command Palette Widget
     }
 
     closePalette() {
-      this.container.style.display = 'none';
-      this.mask.style.opacity = '0';
-      this.mask.classList.add('pointer-events-none');
+      this.container.style.display = "none";
+      this.mask.style.opacity = "0";
+      this.mask.classList.add("pointer-events-none");
       // this.mask.classList.remove('translate-y-40')
       this.isOpened = false;
       this.focusAtCaretPosition(
         this.previouslyFocused.element,
-        this.previouslyFocused.caretPos,
+        this.previouslyFocused.caretPos
       );
     }
     onKeyDown(e) {
-      if (e.key === 'Escape') {
+      if (e.key === "Escape") {
         //									\/ There's no previous state
         if (!this.settings.escapeGoesBack || this.goBack === undefined) {
           this.closePalette();
@@ -773,7 +775,7 @@ Command Palette Widget
           this.goBack();
           this.goBack = undefined;
         }
-      } else if (e.key === 'ArrowUp') {
+      } else if (e.key === "ArrowUp") {
         e.preventDefault();
         e.stopPropagation();
         let sel = this.currentSelection - 1;
@@ -786,7 +788,7 @@ Command Palette Widget
           sel = this.currentResults.length;
         }
         this.setSelection(sel);
-      } else if (e.key === 'ArrowDown') {
+      } else if (e.key === "ArrowDown") {
         e.preventDefault();
         e.stopPropagation();
         let sel =
@@ -799,27 +801,27 @@ Command Palette Widget
           sel = 1;
         }
         this.setSelection(sel);
-      } else if (e.key === 'Enter') {
+      } else if (e.key === "Enter") {
         e.preventDefault();
         e.stopPropagation();
         this.validateSelection(e);
       }
     }
     addResult(result, id) {
-      let resultDiv = this.createElement('div', {
-        className: 'commandpaletteresult py-2 rounded',
+      let resultDiv = this.createElement("div", {
+        className: "commandpaletteresult py-2 rounded",
         innerText: result.name,
       });
       if (result.hint !== undefined) {
-        let hint = this.createElement('div', {
-          className: 'commandpalettehint text-neutral-600',
+        let hint = this.createElement("div", {
+          className: "commandpalettehint text-neutral-600",
           innerText: result.hint,
         });
         resultDiv.append(hint);
       }
       resultDiv.result = result;
       this.currentResults.push(resultDiv);
-      resultDiv.addEventListener('click', e => {
+      resultDiv.addEventListener("click", (e) => {
         this.setSelection(id + 1);
         this.validateSelection(e);
       });
@@ -829,8 +831,8 @@ Command Palette Widget
       this.currentResolver(e);
     }
     defaultResolver(e) {
-      if (e.getModifierState('Shift')) {
-        this.searchContainer.value = '+' + this.searchContainer.value; //this resolver expects that the input starts with +
+      if (e.getModifierState("Shift")) {
+        this.searchContainer.value = "+" + this.searchContainer.value; //this resolver expects that the input starts with +
         this.createTiddlerResolver(e);
         return;
       }
@@ -842,22 +844,22 @@ Command Palette Widget
     }
     navigateTo(title) {
       this.parentWidget.dispatchEvent({
-        type: 'tm-navigate',
+        type: "tm-navigate",
         param: title,
         navigateTo: title,
       });
     }
 
     showHistory() {
-      this.searchHint.innerText = 'History';
-      this.currentProvider = terms => {
+      this.searchHint.innerText = "History";
+      this.currentProvider = (terms) => {
         let results;
         if (terms.length === 0) {
           results = this.getHistory();
         } else {
-          results = this.getHistory().filter(h => h.includes(terms));
+          results = this.getHistory().filter((h) => h.includes(terms));
         }
-        results = results.map(r => {
+        results = results.map((r) => {
           return {
             name: r,
             action: () => {
@@ -868,11 +870,11 @@ Command Palette Widget
         });
         this.showResults(results);
       };
-      this.currentResolver = e => {
+      this.currentResolver = (e) => {
         if (this.currentSelection === 0) return;
         this.currentResults[this.currentSelection - 1].result.action(e);
       };
-      this.searchContainer.value = '';
+      this.searchContainer.value = "";
       this.blockProviderChange = true;
       this.onInput(this.searchContainer.value);
     }
@@ -890,8 +892,8 @@ Command Palette Widget
       for (let i = 0; i < this.currentResults.length; i++) {
         let selected = this.currentSelection === i + 1;
         this.currentResults[i].className = selected
-          ? 'commandpaletteresult commandpaletteresultselected py-2 bg-neutral-200 text-neutral-900 rounded-sm'
-          : 'commandpaletteresult py-2 dark:invert';
+          ? "commandpaletteresult commandpaletteresultselected py-2 bg-neutral-200 text-neutral-900 rounded-sm"
+          : "commandpaletteresult py-2 dark:invert";
       }
       if (this.currentSelection === 0) {
         this.scrollDiv.scrollTop = 0;
@@ -923,16 +925,16 @@ Command Palette Widget
     }
 
     getHistory() {
-      let history = $tw.wiki.getTiddlerData('$:/HistoryList');
+      let history = $tw.wiki.getTiddlerData("$:/HistoryList");
       if (history === undefined) {
         history = [];
       }
       history = [
-        ...history.reverse().map(x => x.title),
-        ...$tw.wiki.filterTiddlers('[list[$:/StoryList]]'),
+        ...history.reverse().map((x) => x.title),
+        ...$tw.wiki.filterTiddlers("[list[$:/StoryList]]"),
       ];
       return Array.from(
-        new Set(history.filter(t => this.tiddlerOrShadowExists(t))),
+        new Set(history.filter((t) => this.tiddlerOrShadowExists(t)))
       );
     }
 
@@ -941,14 +943,14 @@ Command Palette Widget
     }
 
     defaultProvider(terms) {
-      this.searchHint.innerText = '🔍';
-      this.searchHint.className = 'mr-2';
+      this.searchHint.innerText = "🔍";
+      this.searchHint.className = "mr-2";
       let searches;
-      if (terms.startsWith('\\')) terms = terms.substr(1);
+      if (terms.startsWith("\\")) terms = terms.substr(1);
       if (terms.length === 0) {
         if (this.settings.showHistoryOnOpen) {
-          searches = this.getHistory().map(s => {
-            return { name: s, hint: 'history' };
+          searches = this.getHistory().map((s) => {
+            return { name: s, hint: "history" };
           });
         } else {
           searches = [];
@@ -961,9 +963,9 @@ Command Palette Widget
     }
 
     searchStepBuilder(filter, caret, hint) {
-      return terms => {
+      return (terms) => {
         let search = filter.substr(0, caret) + terms + filter.substr(caret);
-        let results = $tw.wiki.filterTiddlers(search).map(s => {
+        let results = $tw.wiki.filterTiddlers(search).map((s) => {
           return { name: s, hint: hint };
         });
         return results;
@@ -972,24 +974,24 @@ Command Palette Widget
 
     tagListProvider(terms) {
       this.currentSelection = 0;
-      this.searchHint.innerText = 'Search tags';
+      this.searchHint.innerText = "Search tags";
       let searches;
       if (terms.length === 0) {
         searches = $tw.wiki.filterTiddlers(
-          '[!is[system]tags[]][is[system]tags[]][all[shadows]tags[]]',
+          "[!is[system]tags[]][is[system]tags[]][all[shadows]tags[]]"
         );
       } else {
         searches = $tw.wiki.filterTiddlers(
-          '[all[]tags[]!is[system]search[' +
+          "[all[]tags[]!is[system]search[" +
             terms +
-            ']][all[]tags[]is[system]search[' +
+            "]][all[]tags[]is[system]search[" +
             terms +
-            ']][all[shadows]tags[]search[' +
+            "]][all[shadows]tags[]search[" +
             terms +
-            ']]',
+            "]]"
         );
       }
-      searches = searches.map(s => {
+      searches = searches.map((s) => {
         return { name: s };
       });
       this.showResults(searches);
@@ -997,22 +999,22 @@ Command Palette Widget
     tagListResolver(e) {
       if (this.currentSelection === 0) {
         let input = this.searchContainer.value.substr(1);
-        let exist = $tw.wiki.filterTiddlers('[tag[' + input + ']]');
+        let exist = $tw.wiki.filterTiddlers("[tag[" + input + "]]");
         if (!exist) return;
-        this.searchContainer.value = '@' + input;
+        this.searchContainer.value = "@" + input;
         return;
       }
       let result = this.currentResults[this.currentSelection - 1];
-      this.searchContainer.value = '@' + result.innerText;
+      this.searchContainer.value = "@" + result.innerText;
       this.onInput(this.searchContainer.value);
     }
     tagProvider(terms) {
       this.currentSelection = 0;
-      this.searchHint.innerText = 'Search tiddlers with @tag(s)';
+      this.searchHint.innerText = "Search tiddlers with @tag(s)";
       let searches = [];
       if (terms.length !== 0) {
         let { tags, searchTerms, tagsFilter } = this.parseTags(
-          this.searchContainer.value,
+          this.searchContainer.value
         );
         let taggedTiddlers = $tw.wiki.filterTiddlers(tagsFilter);
 
@@ -1020,100 +1022,100 @@ Command Palette Widget
           if (tags.length === 1) {
             let tag = tags[0];
             let tagTiddlerExists = this.tiddlerOrShadowExists(tag);
-            if (tagTiddlerExists && searchTerms.some(s => tag.includes(s)))
+            if (tagTiddlerExists && searchTerms.some((s) => tag.includes(s)))
               searches.push(tag);
           }
           searches = [...searches, ...taggedTiddlers];
         }
       }
-      searches = searches.map(s => {
+      searches = searches.map((s) => {
         return { name: s };
       });
       this.showResults(searches);
     }
 
     parseTags(input) {
-      let splits = input.split(' ').filter(s => s !== '');
+      let splits = input.split(" ").filter((s) => s !== "");
       let tags = [];
       let searchTerms = [];
       for (let i = 0; i < splits.length; i++) {
-        if (splits[i].startsWith('@')) {
+        if (splits[i].startsWith("@")) {
           tags.push(splits[i].substr(1));
           continue;
         }
         searchTerms.push(splits[i]);
       }
       let tagsFilter = `[all[tiddlers+system+shadows]${tags.reduce((a, c) => {
-        return a + 'tag[' + c + ']';
-      }, '')}]`;
+        return a + "tag[" + c + "]";
+      }, "")}]`;
       if (searchTerms.length !== 0) {
         tagsFilter = tagsFilter.substr(0, tagsFilter.length - 1); //remove last ']'
-        tagsFilter += `search[${searchTerms.join(' ')}]]`;
+        tagsFilter += `search[${searchTerms.join(" ")}]]`;
       }
       return { tags, searchTerms, tagsFilter };
     }
 
     settingsProvider(terms) {
       this.currentSelection = 0;
-      this.searchHint.innerText = 'Select the setting you want to change';
-      let isNumerical = terms =>
+      this.searchHint.innerText = "Select the setting you want to change";
+      let isNumerical = (terms) =>
         terms.length !== 0 && terms.match(/\D/gm) === null;
-      let isBoolean = terms =>
+      let isBoolean = (terms) =>
         terms.length !== 0 && terms.match(/(true\b)|(false\b)/gim) !== null;
       this.showResults([
         {
           name:
-            'Theme (currently ' + this.settings.theme.match(/[^\/]*$/) + ')',
+            "Theme (currently " + this.settings.theme.match(/[^\/]*$/) + ")",
           action: () => this.promptForThemeSetting(),
         },
         this.settingResultBuilder(
-          'Max results',
-          'maxResults',
-          'Choose the maximum number of results',
+          "Max results",
+          "maxResults",
+          "Choose the maximum number of results",
           isNumerical,
-          'Error: value must be a positive integer',
+          "Error: value must be a positive integer"
         ),
         this.settingResultBuilder(
-          'Show history on open',
-          'showHistoryOnOpen',
-          'Chose whether to show the history when you open the palette',
+          "Show history on open",
+          "showHistoryOnOpen",
+          "Chose whether to show the history when you open the palette",
           isBoolean,
-          "Error: value must be 'true' or 'false'",
+          "Error: value must be 'true' or 'false'"
         ),
         this.settingResultBuilder(
-          'Escape to go back',
-          'escapeGoesBack',
-          'Chose whether ESC should go back when possible',
+          "Escape to go back",
+          "escapeGoesBack",
+          "Chose whether ESC should go back when possible",
           isBoolean,
-          "Error: value must be 'true' or 'false'",
+          "Error: value must be 'true' or 'false'"
         ),
         this.settingResultBuilder(
-          'Use selection as search query',
-          'alwaysPassSelection',
-          'Chose your current selection is passed to the command palette',
+          "Use selection as search query",
+          "alwaysPassSelection",
+          "Chose your current selection is passed to the command palette",
           isBoolean,
-          "Error: value must be 'true' or 'false'",
+          "Error: value must be 'true' or 'false'"
         ),
         this.settingResultBuilder(
-          'Never Basic',
-          'neverBasic',
-          'Chose whether to override basic prompts to show filter operation',
+          "Never Basic",
+          "neverBasic",
+          "Chose whether to override basic prompts to show filter operation",
           isBoolean,
-          "Error: value must be 'true' or 'false'",
+          "Error: value must be 'true' or 'false'"
         ),
         this.settingResultBuilder(
-          'Field preview max size',
-          'maxResultHintSize',
-          'Choose the maximum hint length for field preview',
+          "Field preview max size",
+          "maxResultHintSize",
+          "Choose the maximum hint length for field preview",
           isNumerical,
-          'Error: value must be a positive integer',
+          "Error: value must be a positive integer"
         ),
       ]);
     }
 
     settingResultBuilder(name, settingName, hint, validator, errorMsg) {
       return {
-        name: name + ' (currently ' + this.settings[settingName] + ')',
+        name: name + " (currently " + this.settings[settingName] + ")",
         action: () =>
           this.promptForSetting(settingName, hint, validator, errorMsg),
       };
@@ -1122,7 +1124,7 @@ Command Palette Widget
     settingsResolver(e) {
       if (this.currentSelection === 0) return;
       this.goBack = () => {
-        this.searchContainer.value = '|';
+        this.searchContainer.value = "|";
         this.blockProviderChange = false;
         this.onInput(this.searchContainer.value);
       };
@@ -1132,15 +1134,15 @@ Command Palette Widget
     promptForThemeSetting() {
       this.blockProviderChange = true;
       this.allowInputFieldSelection = false;
-      this.currentProvider = terms => {
+      this.currentProvider = (terms) => {
         this.currentSelection = 0;
-        this.searchHint.innerText = 'Choose a theme';
-        let defaultValue = this.defaultSettings['theme'];
+        this.searchHint.innerText = "Choose a theme";
+        let defaultValue = this.defaultSettings["theme"];
         let results = [
           {
-            name: 'Revert to default value: ' + defaultValue.match(/[^\/]*$/),
+            name: "Revert to default value: " + defaultValue.match(/[^\/]*$/),
             action: () => {
-              this.setSetting('theme', defaultValue);
+              this.setSetting("theme", defaultValue);
               this.refreshThemes();
             },
           },
@@ -1149,17 +1151,17 @@ Command Palette Widget
           let name = theme.fields.title;
           let shortName = name.match(/[^\/]*$/);
           let action = () => {
-            this.setSetting('theme', name);
+            this.setSetting("theme", name);
             this.refreshThemes();
           };
           results.push({ name: shortName, action: action });
         }
         this.showResults(results);
       };
-      this.currentResolver = e => {
+      this.currentResolver = (e) => {
         this.currentResults[this.currentSelection - 1].result.action(e);
       };
-      this.searchContainer.value = '';
+      this.searchContainer.value = "";
       this.onInput(this.searchContainer.value);
     }
 
@@ -1167,13 +1169,13 @@ Command Palette Widget
     promptForSetting(settingName, hint, validator, errorMsg) {
       this.blockProviderChange = true;
       this.allowInputFieldSelection = true;
-      this.currentProvider = terms => {
+      this.currentProvider = (terms) => {
         this.currentSelection = 0;
         this.searchHint.innerText = hint;
         let defaultValue = this.defaultSettings[settingName];
         let results = [
           {
-            name: 'Revert to default value: ' + defaultValue,
+            name: "Revert to default value: " + defaultValue,
             action: () => this.setSetting(settingName, defaultValue),
           },
         ];
@@ -1182,7 +1184,7 @@ Command Palette Widget
         }
         this.showResults(results);
       };
-      this.currentResolver = e => {
+      this.currentResolver = (e) => {
         if (this.currentSelection === 0) {
           let input = this.searchContainer.value;
           if (validator(input)) {
@@ -1190,7 +1192,7 @@ Command Palette Widget
             this.goBack = undefined;
             this.blockProviderChange = false;
             this.allowInputFieldSelection = false;
-            this.promptCommand('|');
+            this.promptCommand("|");
           }
         } else {
           let action =
@@ -1200,7 +1202,7 @@ Command Palette Widget
             this.goBack = undefined;
             this.blockProviderChange = false;
             this.allowInputFieldSelection = false;
-            this.promptCommand('|');
+            this.promptCommand("|");
           }
         }
       };
@@ -1222,7 +1224,7 @@ Command Palette Widget
     }
 
     tmMessageBuilder(message, params = {}) {
-      return e => {
+      return (e) => {
         let event = {
           type: message,
           paramObject: params,
@@ -1233,13 +1235,13 @@ Command Palette Widget
     }
     actionProvider(terms) {
       this.currentSelection = 0;
-      this.searchHint.innerText = '💻';
+      this.searchHint.innerText = "💻";
       let results;
       if (terms.length === 0) {
         results = this.getCommandHistory();
       } else {
-        results = this.actions.filter(a =>
-          a.name.toLowerCase().includes(terms.toLowerCase()),
+        results = this.actions.filter((a) =>
+          a.name.toLowerCase().includes(terms.toLowerCase())
         );
       }
       this.showResults(results);
@@ -1248,35 +1250,35 @@ Command Palette Widget
     helpProvider(terms) {
       //TODO: tiddlerify?
       this.currentSelection = 0;
-      this.searchHint.innerText = '🐚';
+      this.searchHint.innerText = "🐚";
       let searches = [
-        { name: '... Search', action: () => this.promptCommand('') },
-        { name: '> Commands', action: () => this.promptCommand('>') },
+        { name: "... Search", action: () => this.promptCommand("") },
+        { name: "> Commands", action: () => this.promptCommand(">") },
         {
-          name: '+ Create tiddler with title',
-          action: () => this.promptCommand('+'),
+          name: "+ Create tiddler with title",
+          action: () => this.promptCommand("+"),
         },
-        { name: '# Search tags', action: () => this.promptCommand('#') },
+        { name: "# Search tags", action: () => this.promptCommand("#") },
         {
-          name: '@ List tiddlers with tag',
-          action: () => this.promptCommand('@'),
+          name: "@ List tiddlers with tag",
+          action: () => this.promptCommand("@"),
         },
-        { name: '[ Filter operation', action: () => this.promptCommand('[') },
+        { name: "[ Filter operation", action: () => this.promptCommand("[") },
         {
-          name: '| Command Palette Settings',
-          action: () => this.promptCommand('|'),
+          name: "| Command Palette Settings",
+          action: () => this.promptCommand("|"),
         },
         {
-          name: '\\ Escape first character',
-          action: () => this.promptCommand('\\'),
+          name: "\\ Escape first character",
+          action: () => this.promptCommand("\\"),
         },
-        { name: '? Help', action: () => this.promptCommand('?') },
+        { name: "? Help", action: () => this.promptCommand("?") },
       ];
-      this.prefixes.forEach(p =>
+      this.prefixes.forEach((p) =>
         searches.push({
-          name: p.prefix + ' ' + p.hint,
+          name: p.prefix + " " + p.hint,
           action: () => this.promptCommand(p.prefix),
-        }),
+        })
       );
       this.showResults(searches);
     }
@@ -1284,22 +1286,22 @@ Command Palette Widget
     filterProvider(terms, hint) {
       this.currentSelection = 0;
       this.searchHint.innerText =
-        hint === undefined ? 'Filter operation' : hint;
-      terms = '[' + terms;
-      let fields = $tw.wiki.filterTiddlers('[fields[]]');
-      let results = $tw.wiki.filterTiddlers(terms).map(r => {
+        hint === undefined ? "Filter operation" : hint;
+      terms = "[" + terms;
+      let fields = $tw.wiki.filterTiddlers("[fields[]]");
+      let results = $tw.wiki.filterTiddlers(terms).map((r) => {
         return { name: r };
       });
       let insertResult = (i, result) => results.splice(i + 1, 0, result);
       for (let i = 0; i < results.length; i++) {
         let initialResult = results[i];
         let alreadyMatched = false;
-        let date = 'Invalid Date';
+        let date = "Invalid Date";
         if (initialResult.name.length === 17) {
           //to be sure to only match tiddly dates (17 char long)
           date = $tw.utils.parseDate(initialResult.name).toLocaleString();
         }
-        if (date !== 'Invalid Date') {
+        if (date !== "Invalid Date") {
           results[i].hint = date;
           results[i].action = () => {};
           alreadyMatched = true;
@@ -1312,8 +1314,8 @@ Command Palette Widget
             i += 1;
           }
           results[i].action = () =>
-            this.promptCommand('@' + initialResult.name);
-          results[i].hint = 'Tag'; //Todo more info?
+            this.promptCommand("@" + initialResult.name);
+          results[i].hint = "Tag"; //Todo more info?
           alreadyMatched = true;
         }
         let isTiddler = this.tiddlerOrShadowExists(initialResult.name);
@@ -1326,7 +1328,7 @@ Command Palette Widget
             this.navigateTo(initialResult.name);
             this.closePalette();
           };
-          results[i].hint = 'Tiddler';
+          results[i].hint = "Tiddler";
           alreadyMatched = true;
         }
         let isField = fields.includes(initialResult.name);
@@ -1343,13 +1345,13 @@ Command Palette Widget
           for (let node of parsed || []) {
             if (node.operators.length !== 2) continue;
             if (
-              node.operators[0].operator === 'title' &&
-              node.operators[1].operator === 'fields'
+              node.operators[0].operator === "title" &&
+              node.operators[1].operator === "fields"
             ) {
               foundTitles.push(node.operators[0].operand);
             }
           }
-          let hint = 'Field';
+          let hint = "Field";
           if (foundTitles.length === 1) {
             hint = $tw.wiki.getTiddler(foundTitles[0]).fields[
               initialResult.name
@@ -1357,11 +1359,11 @@ Command Palette Widget
             if (hint instanceof Date) {
               hint = hint.toLocaleString();
             }
-            hint = hint.toString().replace(/(\r\n|\n|\r)/gm, '');
+            hint = hint.toString().replace(/(\r\n|\n|\r)/gm, "");
             let maxSize = this.settings.maxResultHintSize - 3;
             if (hint.length > maxSize) {
               hint = hint.substring(0, maxSize);
-              hint += '...';
+              hint += "...";
             }
           }
           results[i].hint = hint;
@@ -1387,17 +1389,17 @@ Command Palette Widget
 
     createTiddlerProvider(terms) {
       this.currentSelection = 0;
-      this.searchHint.innerText = '🟦';
+      this.searchHint.innerText = "🟦";
       this.showResults([]);
     }
 
     createTiddlerResolver(e) {
       let { tags, searchTerms } = this.parseTags(
-        this.searchContainer.value.substr(1),
+        this.searchContainer.value.substr(1)
       );
-      let title = searchTerms.join(' ');
-      tags = tags.join(' ');
-      this.tmMessageBuilder('tm-new-tiddler', { title: title, tags: tags })(e);
+      let title = searchTerms.join(" ");
+      tags = tags.join(" ");
+      this.tmMessageBuilder("tm-new-tiddler", { title: title, tags: tags })(e);
       this.closePalette();
     }
 
@@ -1413,14 +1415,14 @@ Command Palette Widget
 
     promptCommandBasic(value, caret, hint) {
       if (
-        this.settings.neverBasic === 'true' ||
+        this.settings.neverBasic === "true" ||
         this.settings.neverBasic === true
       ) {
         //TODO: validate settings to avoid unnecessary checks
         this.promptCommand(value, caret);
         return;
       }
-      this.searchContainer.value = '';
+      this.searchContainer.value = "";
       this.blockProviderChange = true;
       this.currentProvider = this.basicProviderBuilder(value, caret, hint);
       this.onInput(this.searchContainer.value);
@@ -1429,9 +1431,9 @@ Command Palette Widget
     basicProviderBuilder(value, caret, hint) {
       let start = value.substr(0, caret);
       let end = value.substr(caret);
-      return input => {
+      return (input) => {
         let { resolver, provider, terms } = this.parseCommand(
-          start + input + end,
+          start + input + end
         );
         let backgroundProvider = provider;
         backgroundProvider(terms, hint);
@@ -1442,10 +1444,10 @@ Command Palette Widget
     prefixedBasicProviderBuilder(value, caret, hint, prefixLength) {
       let start = value.substr(0, caret);
       let end = value.substr(caret);
-      return input => {
+      return (input) => {
         input = input.substring(prefixLength);
         let { resolver, provider, terms } = this.parseCommand(
-          start + input + end,
+          start + input + end
         );
         let backgroundProvider = provider;
         backgroundProvider(terms, hint);
@@ -1454,12 +1456,14 @@ Command Palette Widget
     }
 
     getCommandHistory() {
-      this.history = this.history.filter(h =>
-        this.actions.some(a => a.name === h),
+      this.history = this.history.filter((h) =>
+        this.actions.some((a) => a.name === h)
       ); //get rid of deleted command that are still in history;
-      let results = this.history.map(h => this.actions.find(a => a.name === h));
+      let results = this.history.map((h) =>
+        this.actions.find((a) => a.name === h)
+      );
       while (results.length <= this.settings.maxResults) {
-        let nextDefaultAction = this.actions.find(a => !results.includes(a));
+        let nextDefaultAction = this.actions.find((a) => !results.includes(a));
         if (nextDefaultAction === undefined) break;
         results.push(nextDefaultAction);
       }
@@ -1468,8 +1472,8 @@ Command Palette Widget
     actionResolver(e) {
       if (this.currentSelection === 0) return;
       let result = this.actions.find(
-        a =>
-          a.name === this.currentResults[this.currentSelection - 1].innerText,
+        (a) =>
+          a.name === this.currentResults[this.currentSelection - 1].innerText
       );
       if (result.keepPalette) {
         let curInput = this.searchContainer.value;
@@ -1493,22 +1497,22 @@ Command Palette Widget
 
     getCurrentSelection() {
       let selection = window.getSelection().toString();
-      if (selection !== '') return selection;
+      if (selection !== "") return selection;
       let activeElement = this.getActiveElement();
       if (
         activeElement === undefined ||
         activeElement.selectionStart === undefined
       )
-        return '';
+        return "";
       if (activeElement.selectionStart > activeElement.selectionEnd) {
         return activeElement.value.substring(
           activeElement.selectionStart,
-          activeElement.selectionEnd,
+          activeElement.selectionEnd
         );
       } else {
         return activeElement.value.substring(
           activeElement.selectionEnd,
-          activeElement.selectionStart,
+          activeElement.selectionStart
         );
       }
     }
@@ -1534,7 +1538,7 @@ Command Palette Widget
         // (it causes an issue in chrome, and having it doesn't hurt any other browser)
         if (el.createTextRange) {
           var range = el.createTextRange();
-          range.move('character', caretPos);
+          range.move("character", caretPos);
           range.select();
           return true;
         } else {

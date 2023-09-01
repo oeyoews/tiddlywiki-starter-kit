@@ -1,7 +1,7 @@
 /*\
 title: $:/plugins/oeyoews/tiddlywiki-back-top-top/progress.js
 type: application/javascript
-module-type: startup
+// module-type: startup
 
 progress
 
@@ -13,25 +13,25 @@ progress
 (function() {
   /*jslint node: true, browser: true */
   /*global $tw: false */
-  'use strict';
+  "use strict";
 
   if (!$tw.browser) return;
 
   // Export name and synchronous status
-  exports.name = 'progressbar';
-  exports.platforms = ['browser'];
-  exports.after = ['startup'];
+  exports.name = "progressbar";
+  exports.platforms = ["browser"];
+  exports.after = ["startup"];
   exports.synchronous = true;
 
-  const progress = document.createElement('div');
-  progress.id = 'page-progress';
-  const progressBar = document.createElement('div');
-  progressBar.id = 'page-progress-bar';
+  const progress = document.createElement("div");
+  progress.id = "page-progress";
+  const progressBar = document.createElement("div");
+  progressBar.id = "page-progress-bar";
   progress.appendChild(progressBar);
   document.body.appendChild(progress);
 
   function progressbarListener() {
-    window.addEventListener('scroll', function() {
+    window.addEventListener("scroll", function() {
       const pageHeight = window.document.documentElement.scrollHeight;
       const windowHeight = window.innerHeight;
 
@@ -40,8 +40,8 @@ progress
       const denominator = pageHeight - windowHeight;
       const scrollProgress =
         denominator !== 0 ? (scrollTop / denominator) * 100 : 0;
-      const progressBar = document.getElementById('page-progress-bar');
-      progressBar.style.width = scrollProgress + '%';
+      const progressBar = document.getElementById("page-progress-bar");
+      progressBar.style.width = scrollProgress + "%";
     });
   }
 
