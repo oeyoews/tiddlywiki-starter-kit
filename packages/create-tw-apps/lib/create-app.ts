@@ -13,9 +13,6 @@ import { getLatestCommit } from "./get-latest-commit";
 
 import { getPkgManager } from "./get-pkg-manager";
 
-// remove all warnings(because fetch is experimental api)
-process.removeAllListeners("warning");
-
 export default async function createApp() {
   await notifyUpdate();
 
@@ -75,6 +72,9 @@ export default async function createApp() {
 
   let commit: string;
   if (askedVersion) {
+    // remove all warnings(because fetch is experimental api)
+    process.removeAllListeners("warning");
+
     commit = await getLatestCommit();
     if (commit) {
       versionChoices.push("prerelease");
