@@ -21,4 +21,5 @@ npm run build
 
 ## TODO
 
-* 增加一个语言的选择
+* replace language.tid
+> 如果在安装tw后直接运行tw --init zh-Hans 命令也可以(这不是直接复制editions的文件夹, tiddlywiki.info 不同)

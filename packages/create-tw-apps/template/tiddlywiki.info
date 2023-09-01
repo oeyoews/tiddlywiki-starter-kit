@@ -1,5 +1,6 @@
 {
   "description": "Basic client-server edition",
+  "languages": [],
   "plugins": [
     "tiddlywiki/tiddlyweb",
     "tiddlywiki/filesystem",

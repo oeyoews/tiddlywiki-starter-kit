@@ -103,9 +103,47 @@ export default async function createApp() {
       name: "otherTiddlyWikiPackage",
       message: `Enter tiddlywiki package name`,
       initial: "5.2.1",
+      validate: (input) => {
+        const versionPattern = /^\d+\.\d+\.\d+$/; // 正则表达式模式
+        if (versionPattern.test(input)) {
+          return true; // 验证通过
+        } else {
+          return "输入值必须是 x.x.x 数字格式"; // 验证失败时返回错误消息
+        }
+      },
     });
     tiddlywikiPackage = `tiddlywiki@${otherTiddlyWikiPackage}`;
   }
+
+  /* const { installLanguage } = await prompts({
+    onState: onPromptState,
+    type: "toggle",
+    name: "installLanguage",
+    message: "Do you want to install extra language packages?",
+    active: "yes",
+    inactive: "no",
+    initial: false,
+  });
+
+  // TODO 支持多选
+  let installLanguageNames: string | undefined;
+  if (installLanguage) {
+    const { installLanguageName } = await prompts({
+      onState: onPromptState,
+      type: "select",
+      choices: [
+        { title: "简体中文", value: "zh-Hans" },
+        {
+          title: "English",
+          value: "en",
+          disabled: true,
+        },
+      ],
+      name: "installLanguageName",
+      message: "Enter language name",
+    });
+    installLanguageNames = installLanguageName;
+  } */
 
   const { confirm } = await prompts({
     onState: onPromptState,
@@ -118,14 +156,25 @@ export default async function createApp() {
   if (confirm) {
     spinner.start();
     fs.mkdirSync(targetDir);
-    fs.copyFileSync(
-      path.join(templateDir, "package.json"),
-      `${targetDir}/package.json`
-    );
-    fs.copyFileSync(
-      path.join(templateDir, "tiddlywiki.info"),
-      `${targetDir}/tiddlywiki.info`
-    );
+    await Promise.all([
+      fs.copyFileSync(
+        path.join(templateDir, "package.json"),
+        `${targetDir}/package.json`
+      ),
+      fs.copyFileSync(
+        path.join(templateDir, "tiddlywiki.info"),
+        `${targetDir}/tiddlywiki.info`
+      ),
+    ]);
+
+    /* if (installLanguage) {
+      const infoFilePath = `${targetDir}/tiddlywiki.info`;
+      const configFile = fs.readFileSync(infoFilePath, "utf-8");
+      const config = JSON.parse(configFile);
+      config.languages = [installLanguageNames];
+      const updatedConfig = JSON.stringify(config, null, 2);
+      fs.writeFileSync(infoFilePath, updatedConfig, "utf8");
+    } */
 
     const child = spawn(packageManager, ["install", tiddlywikiPackage], {
       // stdio: "inherit", // ignore
