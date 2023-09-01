@@ -19,7 +19,6 @@ export default async function createApp() {
   const spinner = ora("Creating project...");
   let targetDir: string;
   const defaultPackageManager = getPkgManager();
-  // console.log(defaultPackageManager, typeof defaultPackageManager);
 
   const { projectName } = await prompts({
     onState: onPromptState,
@@ -60,7 +59,7 @@ export default async function createApp() {
 
   const versionChoices = ["latest", "5.3.1", "5.2.7", "other"];
 
-  const { askedVersion } = await prompts({
+  /* const { askedVersion } = await prompts({
     onState: onPromptState,
     type: "toggle",
     name: "askedVersion",
@@ -70,16 +69,18 @@ export default async function createApp() {
     initial: false,
   });
 
-  let commit: string | undefined;
+  let commit: string;
   if (askedVersion) {
     // remove all warnings(because fetch is experimental api)
     process.removeAllListeners("warning");
 
-    const commit = await getLatestCommit();
+    commit = await getLatestCommit();
+    console.log(commit);
     if (commit) {
       versionChoices.unshift("prerelease");
     }
-  }
+  } */
+  // console.log(JSON.stringify(versionChoices, null, 2));
 
   // @ts-ignore
   let { tiddlywikiPackage } = await prompts({
@@ -87,10 +88,10 @@ export default async function createApp() {
     type: "select",
     choices: versionChoices.map((v) => ({
       title: v,
-      value:
-        v === "prerelease"
+      value: `tiddlywiki@${v}`,
+      /* v === "prerelease"
           ? `github:Jermolene/TiddlyWiki5#${commit}`
-          : `tiddlywiki@${v}`,
+          : `tiddlywiki@${v}`, */
     })),
     name: "tiddlywikiPackage",
     message: `select tiddlywiki version`,
@@ -186,12 +187,13 @@ export default async function createApp() {
     });
 
     child.on("close", (code: number) => {
-      if (code === 0) {
-        spinner.succeed(chalk.green.bold("Packages installed\n"));
-        spinner.succeed(
-          chalk.cyan.bold(`cd ${targetDir} && ${packageManager} run start \n`)
-        );
+      if (code !== 0) {
+        spinner.fail(chalk.red.bold("Failed to install packages"));
       }
+      spinner.succeed(chalk.green.bold("Packages installed\n"));
+      spinner.succeed(
+        chalk.cyan.bold(`cd ${targetDir} && ${packageManager} run start\n`)
+      );
     });
   }
 }
