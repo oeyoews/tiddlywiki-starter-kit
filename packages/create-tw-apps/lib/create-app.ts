@@ -102,9 +102,9 @@ export default async function createApp() {
       type: "text",
       name: "otherTiddlyWikiPackage",
       message: `Enter tiddlywiki package name`,
-      initial: "tiddlywiki@latest",
+      initial: "5.2.1",
     });
-    tiddlywikiPackage = otherTiddlyWikiPackage;
+    tiddlywikiPackage = `tiddlywiki@${otherTiddlyWikiPackage}`;
   }
 
   const { confirm } = await prompts({
