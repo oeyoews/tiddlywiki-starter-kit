@@ -1,8 +1,11 @@
 // load environment variables
-require('dotenv').config();
+import dotenv from "dotenv";
 
-// load tiddlywiki
-var $tw = require('./node_modules/tiddlywiki/boot/boot.js').TiddlyWiki();
+import { TiddlyWiki } from "tiddlywiki";
+
+dotenv.config();
+
+const $tw = TiddlyWiki();
 
 // pass the command line arguments to the boot kernel
 $tw.boot.argv = Array.prototype.slice.call(process.argv, 2);

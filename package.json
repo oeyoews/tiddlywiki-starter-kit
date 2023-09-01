@@ -14,11 +14,11 @@
   "scripts": {
     "vercel:dev": "vercel dev",
     "vercel:tiddlers": "tiged oeyoews/neotw-tiddlers tiddlers",
-    "new-plugin": "zx scripts/new-plugin.mjs",
-    "build:oeyoews": "zx scripts/build-oeyoews-plus.mjs",
-    "build:neotw": "zx scripts/build-oeyoews-plus.mjs",
+    "new-plugin": "node scripts/new-plugin.mjs",
+    "build:oeyoews": "node scripts/build-oeyoews-plus.mjs",
+    "build:neotw": "node scripts/build-oeyoews-plus.mjs",
     "pm2:start": "pm2 delete neotw && pm2 start ecosystem.config.js",
-    "start": "node startup.js --listen host='0.0.0.0'"
+    "start": "node scripts/startup.js --listen host='0.0.0.0'"
   },
   "devDependencies": {
     "pm2": "^5.3.0"
@@ -29,14 +29,13 @@
     "prompts": "^2.4.2",
     "replace": "^1.2.2",
     "tiddlywiki": "github:Jermolene/TiddlyWiki5#0c64b58cfbded7a3d46e55e2705ab4a724f8d4d6",
-    "tiged": "^2.12.5",
-    "zx": "^7.2.3"
+    "tiged": "^2.12.5"
   },
   "homepage": "https://github.com/oeyoews/neotw#readme",
   "keywords": [
     "neotw",
     "tiddlywiki",
-    "notebook"
+    "template"
   ],
   "engines": {
     "node": ">=16"
