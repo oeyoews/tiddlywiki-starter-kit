@@ -5,5 +5,13 @@ module-type: library
 
 \*/
 
-//helper function to retrieve all tiddlers (+ their fields) with a tag
-// module.exports =   function
+module.exports = function createElement(name, proprieties, styles) {
+	let el = this.document.createElement(name);
+	for (let [propriety, value] of Object.entries(proprieties || {})) {
+		el[propriety] = value;
+	}
+	for (let [style, value] of Object.entries(styles || {})) {
+		el.style[style] = value;
+	}
+	return el;
+}

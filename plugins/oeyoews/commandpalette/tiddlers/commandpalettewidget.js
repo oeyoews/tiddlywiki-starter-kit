@@ -10,8 +10,12 @@ Command Palette Widget
   /*global $tw: false */
   "use strict";
 
-  var Widget = require("$:/core/modules/widgets/widget.js").widget;
-const getTiddlersWithTag = require('./lib/getTiddlersWithTag')
+  const Widget = require("$:/core/modules/widgets/widget.js").widget;
+  const getTiddlersWithTag = require('./lib/getTiddlersWithTag')
+  const createElement = require('./lib/createElement')
+  const getActiveElement = require('./lib/getActiveElement')
+  const focusAtCaretPosition = require('./lib/focusAtCaretPosition')
+  const getCurrentSelection = require('./lib/getCurrentSelection')
 
   class CommandPaletteWidget extends Widget {
     constructor(parseTreeNode, options) {
@@ -61,7 +65,7 @@ const getTiddlersWithTag = require('./lib/getTiddlersWithTag')
       this.allowInputFieldSelection = true;
       this.searchHint.innerText = hint;
       this.searchContainer.value = "";
-      this.currentProvider = () => {};
+      this.currentProvider = () => { };
       this.currentResolver = (e) => {
         this.invokeActionString(action, this, e, {
           commandpaletteinput: this.searchContainer.value,
@@ -356,7 +360,7 @@ const getTiddlersWithTag = require('./lib/getTiddlersWithTag')
         };
       };
 
-      this.currentProvider = (terms) => {};
+      this.currentProvider = (terms) => { };
       this.currentResolver = (e) => {
         if (this.searchContainer.value.length === 0) return;
         name = this.searchContainer.value;
@@ -478,12 +482,12 @@ const getTiddlersWithTag = require('./lib/getTiddlersWithTag')
         this.insertSelectedResult(e)
       );
 
-      let inputAndMainHintWrapper = this.createElement("div", {
+      let inputAndMainHintWrapper = createElement("div", {
         className: "flex justify-center items-center",
       });
       // pointer-events-none fix z-index bug
       // backdrop-blur not effect with bg-neutral-600
-      this.mask = this.createElement(
+      this.mask = createElement(
         "div",
         {
           className:
@@ -493,7 +497,7 @@ const getTiddlersWithTag = require('./lib/getTiddlersWithTag')
           opacity: 0,
         }
       );
-      this.container = this.createElement(
+      this.container = createElement(
         "div",
         // add transform
         {
@@ -503,18 +507,18 @@ const getTiddlersWithTag = require('./lib/getTiddlersWithTag')
         { display: "none" }
       );
       // if add type: "text", google-chrome always tip
-      this.searchContainer = this.createElement("input", { type: "" });
+      this.searchContainer = createElement("input", { type: "" });
       this.searchContainer.classList.add(
         "w-full",
         "border-none",
         "dark:invert"
       );
       this.searchContainer.placeholder = "🔥 Search ...";
-      this.searchHint = this.createElement("div", {
+      this.searchHint = createElement("div", {
         className: "commandpalettehint commandpalettehintmain",
       });
       inputAndMainHintWrapper.append(this.searchHint, this.searchContainer);
-      this.scrollDiv = this.createElement("div", {
+      this.scrollDiv = createElement("div", {
         className: "cp-scroll my-2",
       });
       this.container.append(inputAndMainHintWrapper, this.scrollDiv);
@@ -694,7 +698,7 @@ const getTiddlersWithTag = require('./lib/getTiddlersWithTag')
       }
     }
     openPaletteSelection(e) {
-      let selection = this.getCurrentSelection();
+      let selection = getCurrentSelection();
       e.param = selection;
       this.openPalette(e);
     }
@@ -703,7 +707,7 @@ const getTiddlersWithTag = require('./lib/getTiddlersWithTag')
       this.allowInputFieldSelection = false;
       this.goBack = undefined;
       this.blockProviderChange = false;
-      let activeElement = this.getActiveElement();
+      let activeElement = getActiveElement();
       this.previouslyFocused = {
         element: activeElement,
         start: activeElement.selectionStart,
@@ -715,7 +719,7 @@ const getTiddlersWithTag = require('./lib/getTiddlersWithTag')
         this.searchContainer.value = e.param;
       }
       if (this.settings.alwaysPassSelection) {
-        this.searchContainer.value += this.getCurrentSelection();
+        this.searchContainer.value += getCurrentSelection();
       }
       this.currentSelection = 0;
       this.onInput(this.searchContainer.value); //Trigger results on open
@@ -758,7 +762,7 @@ const getTiddlersWithTag = require('./lib/getTiddlersWithTag')
       this.mask.classList.add("pointer-events-none");
       // this.mask.classList.remove('translate-y-40')
       this.isOpened = false;
-      this.focusAtCaretPosition(
+      focusAtCaretPosition(
         this.previouslyFocused.element,
         this.previouslyFocused.caretPos
       );
@@ -808,12 +812,12 @@ const getTiddlersWithTag = require('./lib/getTiddlersWithTag')
       }
     }
     addResult(result, id) {
-      let resultDiv = this.createElement("div", {
+      let resultDiv = createElement("div", {
         className: "commandpaletteresult py-2 rounded",
         innerText: result.name,
       });
       if (result.hint !== undefined) {
-        let hint = this.createElement("div", {
+        let hint = createElement("div", {
           className: "commandpalettehint text-neutral-600",
           innerText: result.hint,
         });
@@ -983,12 +987,12 @@ const getTiddlersWithTag = require('./lib/getTiddlersWithTag')
       } else {
         searches = $tw.wiki.filterTiddlers(
           "[all[]tags[]!is[system]search[" +
-            terms +
-            "]][all[]tags[]is[system]search[" +
-            terms +
-            "]][all[shadows]tags[]search[" +
-            terms +
-            "]]"
+          terms +
+          "]][all[]tags[]is[system]search[" +
+          terms +
+          "]][all[shadows]tags[]search[" +
+          terms +
+          "]]"
         );
       }
       searches = searches.map((s) => {
@@ -1303,7 +1307,7 @@ const getTiddlersWithTag = require('./lib/getTiddlersWithTag')
         }
         if (date !== "Invalid Date") {
           results[i].hint = date;
-          results[i].action = () => {};
+          results[i].action = () => { };
           alreadyMatched = true;
         }
         let isTag =
@@ -1340,7 +1344,7 @@ const getTiddlersWithTag = require('./lib/getTiddlersWithTag')
           let parsed;
           try {
             parsed = $tw.wiki.parseFilter(this.searchContainer.value);
-          } catch (e) {} //The error is already displayed to the user
+          } catch (e) { } //The error is already displayed to the user
           let foundTitles = [];
           for (let node of parsed || []) {
             if (node.operators.length !== 2) continue;
@@ -1367,7 +1371,7 @@ const getTiddlersWithTag = require('./lib/getTiddlersWithTag')
             }
           }
           results[i].hint = hint;
-          results[i].action = () => {};
+          results[i].action = () => { };
           alreadyMatched = true;
         }
         // let isContentType = terms.includes('content-type');
@@ -1495,76 +1499,6 @@ const getTiddlersWithTag = require('./lib/getTiddlersWithTag')
       }
     }
 
-    getCurrentSelection() {
-      let selection = window.getSelection().toString();
-      if (selection !== "") return selection;
-      let activeElement = this.getActiveElement();
-      if (
-        activeElement === undefined ||
-        activeElement.selectionStart === undefined
-      )
-        return "";
-      if (activeElement.selectionStart > activeElement.selectionEnd) {
-        return activeElement.value.substring(
-          activeElement.selectionStart,
-          activeElement.selectionEnd
-        );
-      } else {
-        return activeElement.value.substring(
-          activeElement.selectionEnd,
-          activeElement.selectionStart
-        );
-      }
-    }
-    getActiveElement(element = document.activeElement) {
-      const shadowRoot = element.shadowRoot;
-      const contentDocument = element.contentDocument;
-
-      if (shadowRoot && shadowRoot.activeElement) {
-        return this.getActiveElement(shadowRoot.activeElement);
-      }
-
-      if (contentDocument && contentDocument.activeElement) {
-        return this.getActiveElement(contentDocument.activeElement);
-      }
-
-      return element;
-    }
-    focusAtCaretPosition(el, caretPos) {
-      if (el !== null) {
-        el.value = el.value;
-        // ^ this is used to not only get "focus", but
-        // to make sure we don't have it everything -selected-
-        // (it causes an issue in chrome, and having it doesn't hurt any other browser)
-        if (el.createTextRange) {
-          var range = el.createTextRange();
-          range.move("character", caretPos);
-          range.select();
-          return true;
-        } else {
-          // (el.selectionStart === 0 added for Firefox bug)
-          if (el.selectionStart || el.selectionStart === 0) {
-            el.focus();
-            el.setSelectionRange(caretPos, caretPos);
-            return true;
-          } else {
-            // fail city, fortunately this never happens (as far as I've tested) :)
-            el.focus();
-            return false;
-          }
-        }
-      }
-    }
-    createElement(name, proprieties, styles) {
-      let el = this.document.createElement(name);
-      for (let [propriety, value] of Object.entries(proprieties || {})) {
-        el[propriety] = value;
-      }
-      for (let [style, value] of Object.entries(styles || {})) {
-        el.style[style] = value;
-      }
-      return el;
-    }
     /*
       Selectively refreshes the widget if needed. Returns true if the widget or any of its children needed re-rendering
       */
@@ -1575,3 +1509,4 @@ const getTiddlersWithTag = require('./lib/getTiddlersWithTag')
 
   exports.commandpalettewidget = CommandPaletteWidget;
 })();
+
