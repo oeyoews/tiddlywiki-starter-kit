@@ -1,4 +1,5 @@
 export default {
+  // 构建网站的index.html
   index: [
     "--verbose",
     "--output",
@@ -15,6 +16,7 @@ export default {
     "--deletetiddlers",
     "$:/StoryList",
   ],
+  // 空模板
   editions: [
     "--verbose",
     "--output",
@@ -29,6 +31,7 @@ export default {
     "--deletetiddlers",
     "$:/StoryList",
   ],
+  // 生成json格式插件
   plugins: [
     "--verbose",
     "--output",
@@ -53,32 +56,9 @@ export default {
     "--deletetiddlers",
     "$:/StoryList",
   ],
+  // 启动 tiddlywiki
   listen: ["--listen", "port=8099", "anon-username=oeyoews"],
-  static: [
-    "--verbose",
-    "--output",
-    ".tiddlywiki",
-    "--rendertiddlers",
-    "[!is[system]]",
-    "$:/core/templates/static.tiddler.html",
-    "static",
-    "text/plain",
-    "--rendertiddler",
-    "$:/core/templates/static.template.css",
-    "static/static.css",
-    "text/plain",
-    "--savetiddler",
-    "$:/favicon.ico",
-    "static/favicon.ico",
-  ],
-  tiddlywikicore: [
-    "--output",
-    ".tiddlywiki",
-    "--render",
-    "$:/core/templates/tiddlywiki5.js",
-    "[[tiddlywikicore-]addsuffix<version>addsuffix[.js]]",
-    "text/plain",
-  ],
+  // 生成 plugin library
   library: [
     "--output",
     ".tiddlywiki/library",
