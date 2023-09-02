@@ -1,5 +1,4 @@
 import fs from "fs";
-
 import plugins from "./config/plugins.mjs";
 import build from "./config/build.mjs";
 
