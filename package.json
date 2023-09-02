@@ -22,5 +22,8 @@
   "engines": {
     "node": ">=16"
   },
-  "version": "3.349.0"
+  "version": "3.349.0",
+  "devDependencies": {
+    "tw5-typed": "^0.3.9"
+  }
 }

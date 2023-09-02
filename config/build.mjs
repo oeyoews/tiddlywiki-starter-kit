@@ -1,5 +1,6 @@
+/** @type {import('tw5-typed').ITiddlyWikiInfoJSONBuild} */
 export default {
-  // 构建网站的index.html
+  // build index.html
   index: [
     "--verbose",
     "--output",
@@ -16,7 +17,7 @@ export default {
     "--deletetiddlers",
     "$:/StoryList",
   ],
-  // 空模板
+  // empty edition
   editions: [
     "--verbose",
     "--output",
@@ -31,7 +32,7 @@ export default {
     "--deletetiddlers",
     "$:/StoryList",
   ],
-  // 生成json格式插件
+  // Generate plugins json format
   plugins: [
     "--verbose",
     "--output",

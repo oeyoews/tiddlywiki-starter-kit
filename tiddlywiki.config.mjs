@@ -4,6 +4,8 @@ import build from "./config/build.mjs";
 
 export default function generateTiddlyWikiInfo() {
   const tiddlywikiInfoPath = "./tiddlywiki.info";
+
+  /** @type {import('tw5-typed').ITiddlyWikiInfoJSON} */
   const tiddlywikiConfig = {
     description:
       "A modern style and elegant notebook built with Tiddlywiki5 and Tailwindcss",
@@ -14,7 +16,7 @@ export default function generateTiddlyWikiInfo() {
     ],
     plugins,
     build,
-    // 命令
+    /** @type {import('tw5-typed').ITiddlyWikiInfoJSONConfig} */
     config: {
       "retain-original-tiddler-path": false,
       // 不建议修改, 如果修改了filesystem
