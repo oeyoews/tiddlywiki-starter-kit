@@ -40,7 +40,7 @@ export default async function createApp() {
 
   targetDir = projectName.trim();
 
-  const allPackManagers = ["pnpm", "yarn", "npm"];
+  const allPackManagers = ["npm", "yarn", "pnpm"];
   const choices = allPackManagers.map((pm) => ({
     title: pm,
     value: pm,
