@@ -4,7 +4,7 @@ import { exec } from "child_process";
 
 dotenv.config();
 
-const buildDir = "dist";
+const buildDir = ".tiddlywiki";
 const log = ora("Building ...");
 
 const cleanBuildDir = () => {

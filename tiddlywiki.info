@@ -70,7 +70,7 @@
     "index": [
       "--verbose",
       "--output",
-      "dist",
+      ".tiddlywiki",
       "--deletetiddlers",
       "$:/StoryList",
       "--render",
@@ -86,7 +86,7 @@
     "editions": [
       "--verbose",
       "--output",
-      "dist/editions",
+      ".tiddlywiki/editions",
       "--render",
       "$:/plugins/tiddlywiki/tiddlyweb/save/offline",
       "index.html",
@@ -100,7 +100,7 @@
     "plugins": [
       "--verbose",
       "--output",
-      "dist/plugins",
+      ".tiddlywiki/plugins",
       "--render",
       "[all[tiddlers+shadows]plugin-type[plugin]author[oeyoews]]",
       "[removeprefix[$:/plugins/oeyoews/]slugify[]addsuffix[.json]]",
@@ -112,7 +112,7 @@
     "themes": [
       "--verbose",
       "--output",
-      "dist/themes",
+      ".tiddlywiki/themes",
       "--render",
       "[all[tiddlers+shadows]plugin-type[theme]author[NicolasPetton]]",
       "[removeprefix[$:/themes/nico]slugify[]addsuffix[.json]]",
@@ -129,7 +129,7 @@
     "static": [
       "--verbose",
       "--output",
-      "dist",
+      ".tiddlywiki",
       "--rendertiddlers",
       "[!is[system]]",
       "$:/core/templates/static.tiddler.html",
@@ -145,7 +145,7 @@
     ],
     "tiddlywikicore": [
       "--output",
-      "dist",
+      ".tiddlywiki",
       "--render",
       "$:/core/templates/tiddlywiki5.js",
       "[[tiddlywikicore-]addsuffix<version>addsuffix[.js]]",
@@ -153,7 +153,7 @@
     ],
     "library": [
       "--output",
-      "dist/library",
+      ".tiddlywiki/library",
       "--makelibrary",
       "$:/UpgradeLibrary",
       "--savelibrarytiddlers",
@@ -170,18 +170,6 @@
       "text/plain",
       "--deletetiddlers",
       "[[$:/UpgradeLibrary]] [[$:/UpgradeLibrary/List]]"
-    ],
-    "debug": [
-      "--output",
-      "dist",
-      "--render",
-      "$:/core/save/offline-external-js",
-      "debug.html",
-      "text/plain",
-      "--render",
-      "$:/core/templates/tiddlywiki5.js",
-      "[[tiddlywikicore-]addsuffix<version>addsuffix[.js]]",
-      "text/plain"
     ]
   },
   "config": {

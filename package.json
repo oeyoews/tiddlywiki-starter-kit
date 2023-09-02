@@ -1,15 +1,7 @@
 {
   "name": "neotw",
   "description": "A modern style notebook based on tiddlywiki",
-  "private": true,
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/oeyoews/tiddlywiki-starter-kit.git"
-  },
   "author": "oeyoews <jyao4783@gmail.com>",
-  "os": [
-    "linux"
-  ],
   "license": "MIT",
   "scripts": {
     "vercel:dev": "vercel dev",
@@ -20,10 +12,8 @@
     "pm2:start": "pm2 delete neotw && pm2 start ecosystem.config.js",
     "start": "node scripts/startup.js --listen host='0.0.0.0'"
   },
-  "devDependencies": {
-    "pm2": "^5.3.0"
-  },
   "dependencies": {
+    "pm2": "^5.3.0",
     "dotenv": "^16.3.1",
     "ora": "^6.3.1",
     "prompts": "^2.4.2",
