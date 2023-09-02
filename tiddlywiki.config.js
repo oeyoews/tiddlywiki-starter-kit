@@ -4,7 +4,7 @@ const path = require("path");
 const plugins = require("./config/plugins");
 const build = require("./config/build");
 const tiddlywikiInfoPath = path.join(__dirname, "tiddlywiki.info");
-const configData = {
+const tiddlywikiConfig = {
   description:
     "A modern style and elegant notebook built with Tiddlywiki5 and Tailwindcss",
   themes: [
@@ -22,6 +22,6 @@ const configData = {
   },
 };
 
-fs.writeFileSync(tiddlywikiInfoPath, JSON.stringify(configData));
+fs.writeFileSync(tiddlywikiInfoPath, JSON.stringify(tiddlywikiConfig));
 
 console.log("新的tiddlywiki.info配置文件已生成！");
