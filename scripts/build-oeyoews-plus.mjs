@@ -1,6 +1,7 @@
 import ora from "ora";
 import dotenv from "dotenv";
 import { exec } from "child_process";
+import generateTiddlyWikiInfo from "../tiddlywiki.config.mjs";
 
 dotenv.config();
 
@@ -65,6 +66,7 @@ const copyFiles = () => {
   });
 };
 
+generateTiddlyWikiInfo();
 cleanBuildDir();
 buildEditions();
 buildAll();

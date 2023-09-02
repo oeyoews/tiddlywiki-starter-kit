@@ -4,13 +4,10 @@
   "author": "oeyoews <jyao4783@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "update:config": "node tiddlywiki.config.js",
-    "vercel:dev": "vercel dev",
     "vercel:tiddlers": "tiged oeyoews/neotw-tiddlers tiddlers",
     "new-plugin": "node scripts/new-plugin.mjs",
-    "build:oeyoews": "node scripts/build-oeyoews-plus.mjs",
-    "build:neotw": "node scripts/build-oeyoews-plus.mjs",
-    "pm2:start": "pm2 delete neotw && pm2 start ecosystem.config.js",
+    "build": "node scripts/build-oeyoews-plus.mjs",
+    "start:pm2": "pm2 delete neotw && pm2 start ecosystem.config.js",
     "start": "node scripts/startup.mjs --listen host='0.0.0.0'"
   },
   "dependencies": {

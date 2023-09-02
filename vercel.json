@@ -1,7 +1,7 @@
 {
   "outputDirectory": ".tiddlywiki",
   "installCommand": "pnpm install",
-  "buildCommand": "pnpm vercel:tiddlers && pnpm build:neotw",
+  "buildCommand": "pnpm vercel:tiddlers && pnpm build",
   "cleanUrls": true,
   "trailingSlash": false,
   "github": {

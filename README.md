@@ -33,16 +33,10 @@ pnpm start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm
 # 单文件版本 打开 https://neotw.oeyoewl.top/editions, 直接保存网页到本地
 ```
 
-😜 最简单的使用办法就是打开Neotw模板站点, 直接保存网页到本地;
-或者直接下载Release里面的[Zip](https://github.com/oeyoews/tiddlywiki-starter-kit/releases) 压缩包
-
-[oeyoews 是如何使用Tiddlywiki的](https://neotw.oeyoewl.top/#how-to-use-tiddlywiki%40oeyoews)
-
 ## usage
 
+* 配置文件: tiddlywiki.config.js
 * 所有编辑的内容都会自动保存在项目的tiddlers文件夹下, tiddlywiki默认读取这个文件夹, 但是也可以通过配置指定其他的文件夹(不过强烈不建议修改)
-
-* 理论上你也复制不同内容的tiddlers到这个目录下, 比如你曾经使用obsdian写的markdown文件
 
 ## Deploy :gear:
 

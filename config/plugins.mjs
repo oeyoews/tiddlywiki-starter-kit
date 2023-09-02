@@ -1,4 +1,4 @@
-module.exports = [
+export default [
   // 必选依赖
   "tiddlywiki/tiddlyweb",
   "tiddlywiki/filesystem",
