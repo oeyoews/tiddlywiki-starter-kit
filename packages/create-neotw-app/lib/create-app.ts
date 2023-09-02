@@ -62,9 +62,13 @@ export default async function createApp() {
     spinner.start() &&
     // 仓库克隆到本地的路径
     emitter.clone(targetDir).then(() => {
-      spinner.succeed(chalk.green(`Cloned ${initial} to ${targetDir}`));
+      spinner.succeed(chalk.green(`Cloned ${initial} to ${targetDir}\n`));
       spinner.succeed(
-        chalk.cyan(`cd ${targetDir} && pnpm install && pnpm dev`)
+        chalk.cyan(
+          "cd " +
+            chalk.green.underline(targetDir) +
+            " && pnpm install && pnpm dev\n"
+        )
       );
       process.exit(0);
     });

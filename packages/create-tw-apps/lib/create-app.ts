@@ -192,7 +192,13 @@ export default async function createApp() {
       }
       spinner.succeed(chalk.green.bold("Packages installed\n"));
       spinner.succeed(
-        chalk.cyan.bold(`cd ${targetDir} && ${packageManager} run start\n`)
+        chalk.cyan.bold(
+          "cd " +
+            chalk.yellow.underline(targetDir) +
+            " && " +
+            packageManager +
+            " run start\n"
+        )
       );
     });
   }
