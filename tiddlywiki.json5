@@ -1,6 +1,7 @@
 {
-  "description": "A modern style and elegant notebook built with Tiddlywiki5 and Tailwindcss",
-  "plugins": [
+  description: "A modern style and elegant notebook built with Tiddlywiki5 and Tailwindcss",
+  plugins: [
+  // 官方插件
     "tiddlywiki/tiddlyweb",
     "tiddlywiki/filesystem",
     "tiddlywiki/highlight",
@@ -18,6 +19,7 @@
     "tiddlywiki/pluginlibrary",
     "tiddlywiki/internals",
     "tiddlywiki/markdown",
+    // 自定义插件
     "oeyoews/commandpalette",
     "oeyoews/neotw-opened-tiddlers",
     "oeyoews/neotw-tour",
@@ -63,9 +65,11 @@
     "oeyoews/tiddlywiki-readonly"
   ],
   "themes": [
+     // vanilla 主题, 必选
     "tiddlywiki/vanilla",
     "nico/notebook"
   ],
+  // 命令
   "build": {
     "index": [
       "--verbose",
@@ -174,6 +178,7 @@
   },
   "config": {
     "retain-original-tiddler-path": false,
+    // 不建议修改, 如果修改了filesystem
     "default-tiddler-location": "tiddlers"
   }
 }

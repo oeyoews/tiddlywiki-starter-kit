@@ -4,6 +4,7 @@
   "author": "oeyoews <jyao4783@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "update:config": "node tiddlywiki.config.js",
     "vercel:dev": "vercel dev",
     "vercel:tiddlers": "tiged oeyoews/neotw-tiddlers tiddlers",
     "new-plugin": "node scripts/new-plugin.mjs",
@@ -13,9 +14,10 @@
     "start": "node scripts/startup.mjs --listen host='0.0.0.0'"
   },
   "dependencies": {
-    "pm2": "^5.3.0",
     "dotenv": "^16.3.1",
+    "json5": "^2.2.3",
     "ora": "^6.3.1",
+    "pm2": "^5.3.0",
     "prompts": "^2.4.2",
     "replace": "^1.2.2",
     "tiddlywiki": "github:Jermolene/TiddlyWiki5#0c64b58cfbded7a3d46e55e2705ab4a724f8d4d6",
