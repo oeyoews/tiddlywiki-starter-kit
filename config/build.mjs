@@ -1,4 +1,5 @@
 /** @type {import('tw5-typed').ITiddlyWikiInfoJSONBuild} */
+
 export default {
   // build index.html
   index: [
