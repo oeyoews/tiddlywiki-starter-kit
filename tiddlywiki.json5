@@ -1,10 +1,11 @@
 {
   description: "A modern style and elegant notebook built with Tiddlywiki5 and Tailwindcss",
   plugins: [
-  // 官方插件
+    // 必选依赖
     "tiddlywiki/tiddlyweb",
     "tiddlywiki/filesystem",
     "tiddlywiki/highlight",
+    // 支持数学公式
     "tiddlywiki/katex",
     "tiddlywiki/browser-sniff",
     "tiddlywiki/codemirror",
@@ -16,7 +17,9 @@
     "tiddlywiki/codemirror-mode-markdown",
     "tiddlywiki/codemirror-mode-xml",
     "tiddlywiki/codemirror-mode-javascript",
+    // 构建插件
     "tiddlywiki/pluginlibrary",
+    // dom
     "tiddlywiki/internals",
     "tiddlywiki/markdown",
     // 自定义插件
