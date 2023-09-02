@@ -10,7 +10,7 @@
     "build:oeyoews": "node scripts/build-oeyoews-plus.mjs",
     "build:neotw": "node scripts/build-oeyoews-plus.mjs",
     "pm2:start": "pm2 delete neotw && pm2 start ecosystem.config.js",
-    "start": "node scripts/startup.js --listen host='0.0.0.0'"
+    "start": "node scripts/startup.mjs --listen host='0.0.0.0'"
   },
   "dependencies": {
     "pm2": "^5.3.0",
