@@ -1,11 +1,13 @@
 import checkForUpdate from "update-check";
 import chalk from "chalk";
 import packageJson from ".././package.json";
-const update = checkForUpdate(packageJson).catch(() => null);
 
 export async function notifyUpdate(): Promise<void> {
   try {
-    const res = await update;
+    const res = await checkForUpdate(packageJson, {
+      interval: 24 * 60 * 60 * 1000,
+      distTag: "latest",
+    });
     console.log(
       chalk.green(
         res?.latest
