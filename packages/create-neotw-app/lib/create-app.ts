@@ -6,6 +6,7 @@ import prompts from "prompts";
 import { validateNpmName } from "./vaildate-pkg";
 import { notifyUpdate } from "./update-check";
 import { onPromptState } from "./onPromptState";
+import { checkGitInstallation } from "./check-git";
 
 // @ts-ignore
 import tiged from "tiged";
@@ -13,6 +14,7 @@ import tiged from "tiged";
 const spinner = ora("Loading ...");
 
 export default async function createApp() {
+  checkGitInstallation();
   await notifyUpdate();
   const user = "oeyoews";
   const repo = "tiddlywiki-starter-kit";
