@@ -2,8 +2,10 @@ version: "3" # Docker Compose 版本
 
 services:
   web:
-    image: oeyoews/tiddlywiki:5.3.1-6
+    image: oeyoews/tiddlywiki:5.3.1-7
     ports:
       - "8080:8080" # 映射端口，将主机的 8080 端口映射到容器的 8080 端口
     volumes:
       - ./:/app # 挂载本地目录到容器/app中
+    command: ["--build", "index"]
+    # command: ["--listen", "port=8080"]

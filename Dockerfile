@@ -12,9 +12,6 @@ COPY . /resources
 ENV TIDDLYWIKI_PLUGIN_PATH="/resources/plugins"
 ENV TIDDLYWIKI_THEME_PATH="/resources/themes"
 
-ADD startup.sh /usr/local/bin/startup
-
-ENTRYPOINT ["/bin/sh"]
-CMD [ "/usr/local/bin/startup" ]
+ENTRYPOINT ["sh", "/resources/startup.sh"]
 
 EXPOSE 8080
