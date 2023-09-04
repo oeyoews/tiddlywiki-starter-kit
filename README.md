@@ -25,6 +25,7 @@
 
 ```bash
 # docker
+docker pull oeyoews/tiddlywiki
 docker run -d -p 8080:8080 -v $(pwd)/tiddlywiki:/app oeyoews/tiddlywiki:latest --listen port=8080 host=0.0.0.0
 
 # or use docker-compose
