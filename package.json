@@ -7,7 +7,7 @@
     "vercel:tiddlers": "tiged oeyoews/neotw-tiddlers tiddlers",
     "new-plugin": "node scripts/new-plugin.mjs",
     "build": "node scripts/build-oeyoews-plus.mjs",
-    "start:pm2": "pm2 delete neotw && pm2 start ecosystem.config.js",
+    "start:pm2": "pm2 start ecosystem.config.js",
     "start": "node scripts/startup.mjs --build listen"
   },
   "dependencies": {

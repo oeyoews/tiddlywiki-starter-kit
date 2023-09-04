@@ -59,7 +59,7 @@ export default {
     "$:/StoryList",
   ],
   // 启动 tiddlywiki
-  listen: ["--listen", "port=8099", "anon-username=oeyoews"],
+  listen: ["--listen", "port=8080", "anon-username=oeyoews", "host=0.0.0.0"],
   // 生成 plugin library
   library: [
     "--output",
