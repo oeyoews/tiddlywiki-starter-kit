@@ -12,6 +12,6 @@ COPY . /resources
 ENV TIDDLYWIKI_PLUGIN_PATH="/resources/plugins"
 ENV TIDDLYWIKI_THEME_PATH="/resources/themes"
 
-ENTRYPOINT ["sh", "/resources/startup.sh"]
+CMD ["sh", "/resources/startup.sh"]
 
 EXPOSE 8080
