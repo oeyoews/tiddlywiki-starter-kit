@@ -14,4 +14,4 @@ jobs:
           fetch-depth: 2
       - name: Use Docker Image
         run: |
-          docker run -d -p 8080:80 docker://oeyoews/tiddlywiki:latest
+          docker-compose up
