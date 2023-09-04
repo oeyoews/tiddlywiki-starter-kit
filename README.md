@@ -28,7 +28,7 @@
 docker run -d --name tiddlywiki-starter-kit-docker -p 8080:8080 -v ~/.tiddlywiki/:/app oeyoews/tiddlywiki:latest
 
 # or use docker-compose
-# docker-compose.yml 参考 https://github.com/oeyoews/tiddlywiki-starter-kit-docker/blob/main/docker-compose.yml
+# docker-compose.yml 参考 [docker-compose.yml](./docker-compose.yml)
 docker-compose up
 
 # cli: neotw-app cli 零依赖, 包仅有450kb
@@ -51,11 +51,7 @@ pnpm start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm
 
 <!-- https://vercel.com/docs/deploy-button -->
 <a target="_blank" href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Foeyoews%2Fneotw">
-<img src="https://vercel.com/button" alt="Deploy with Vercel" />
-</a>
-<!-- https://docs.netlify.com/site-deploys/create-deploys/ -->
-<a target="_blank" href="https://app.netlify.com/start/deploy?repository=https://github.com/oeyoews/neotw">
-<img src="https://www.netlify.com/img/deploy/button.svg">
+    <img src="https://vercel.com/button" alt="Deploy with Vercel" />
 </a>
 
 <center>
