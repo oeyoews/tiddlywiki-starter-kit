@@ -123,7 +123,8 @@
     ],
     "listen": [
       "--listen",
-      "port=8099",
+      "port=8080",
+      "host=0.0.0.0",
       "anon-username=oeyoews"
     ],
     "library": [
