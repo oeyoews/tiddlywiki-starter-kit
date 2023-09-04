@@ -25,7 +25,7 @@
 
 ```bash
 # docker
-docker run -d --name tiddlywiki-starter-kit-docker -p 8080:8080 -v ~/.tiddlywiki/:/app oeyoews/tiddlywiki:latest
+docker run -d -p 8080:8080 -v $(pwd)/tiddlywiki:/app oeyoews/tiddlywiki:latest --listen port=8080 host=0.0.0.0
 
 # or use docker-compose
 # docker-compose.yml 参考 [docker-compose.yml](./docker-compose.yml)
