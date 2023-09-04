@@ -60,3 +60,7 @@ pnpm start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm
 ![cat](https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/cat.svg 'cat') ↥︎
 
 </center>
+
+## TODO
+
+- [ ] 配置ci https://github.com/elgohr/Publish-Docker-Github-Action
