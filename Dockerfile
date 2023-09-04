@@ -12,6 +12,7 @@ COPY . /resources
 ENV TIDDLYWIKI_PLUGIN_PATH="/resources/plugins"
 ENV TIDDLYWIKI_THEME_PATH="/resources/themes"
 
-CMD ["sh", "/resources/startup.sh"]
+# 使用sh, not bash, and use chmod +x for this scriptshell
+ENTRYPOINT ["/resources/startup.sh"]
 
 EXPOSE 8080
