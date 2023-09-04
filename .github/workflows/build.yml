@@ -1,0 +1,17 @@
+name: CI
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+        with:
+          fetch-depth: 2
+      - name: Use Docker Image
+        run: |
+          docker run -d -p 8080:80 docker://oeyoews/tiddlywiki:latest
