@@ -14,4 +14,5 @@ jobs:
           fetch-depth: 2
       - name: Use Docker Image
         run: |
-          docker-compose up
+          # docker-compose up
+          docker run -d -p 8080:8080 -v $(pwd)/tiddlywiki:/app oeyoews/tiddlywiki:latest --build index
