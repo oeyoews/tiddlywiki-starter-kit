@@ -31,12 +31,14 @@ title: $:/config/EmptyStoryMessage
 <iconify-icon icon="vscode-icons:file-type-js-official" title="JavaScript" />
 <iconify-icon icon="vscode-icons:file-type-html" title="HTML" />
 <iconify-icon icon="vscode-icons:file-type-css" title="CSS" />
+<iconify-icon icon="skill-icons:vscode-dark" title="VSCode" />
 <iconify-icon icon="simple-icons:tiddlywiki"  title="TiddlyWiki"/>
 <iconify-icon icon="skill-icons:neovim-light" title="Neovim" />
 <iconify-icon icon="skill-icons:linux-dark" title="Linux" />
 <iconify-icon icon="skill-icons:bash-dark"title="Bash" />
 <iconify-icon icon="skill-icons:git" title="Git" />
-<iconify-icon icon="devicon:webstorm" title="Websotrm">
+<iconify-icon icon="devicon:webstorm" title="Websotrm" />
+<iconify-icon icon="skill-icons:docker" title="Docker" />
 
 </center>
 
