@@ -24,12 +24,21 @@
 ## Installation :package:
 
 ```bash
-# neotw-app cli 零依赖, 包仅有450kb
+# docker
+docker run -d --name tiddlywiki-starter-kit-docker -p 8080:8080 -v ~/.tiddlywiki/:/app oeyoews/tiddlywiki:latest
+
+# or use docker-compose
+# docker-compose.yml 参考 https://github.com/oeyoews/tiddlywiki-starter-kit-docker/blob/main/docker-compose.yml
+docker-compose up
+
+# cli: neotw-app cli 零依赖, 包仅有450kb
 pnpm create neotw-app@latest
+
 # git
 git clone --depth 1 https://github.com/oeyoews/tiddlywiki-starter-kit
 cd tiddlywiki-starter-kit && pnpm install  # install packages
 pnpm start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm2:start
+
 # 单文件版本 打开 https://neotw.oeyoewl.top/editions, 直接保存网页到本地
 ```
 

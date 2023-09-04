@@ -31,5 +31,4 @@ upload
 
 ## 仅仅忽略根目录下的tiddler文件夹
 /tiddlers/
-.tiddlywiki
-tiddlywiki.info
+/.tiddlywiki
