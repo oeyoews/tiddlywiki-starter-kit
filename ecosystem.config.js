@@ -4,12 +4,7 @@ module.exports = {
       name: "neotw",
       script: "./scripts/startup.mjs",
       args: "--build listen",
-      watch: [
-        "./plugins/oeyoews",
-        "./themes",
-        "./tiddlywiki.info",
-        "README.md",
-      ],
+      watch: ["./plugins/oeyoews", "./themes"],
       ignore_watch: ["./tiddlers"],
       cwd: "./",
       watch_delay: 100,
