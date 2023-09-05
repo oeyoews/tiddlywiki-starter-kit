@@ -1,7 +1,6 @@
 <center>
 <figure>
 <img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/snapshot.png" class="hidden" alt="neotw banner" title="neotw"/>
-<!-- <img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/snapshot01.png" class="hidden" alt="neotw banner" title="neotw"/> -->
 </figure>
 </center>
 
@@ -24,29 +23,23 @@
 ## Installation :package:
 
 ```bash
-# docker
+# method 01: docker
 docker pull oeyoews/tiddlywiki:latest
 docker run -d -p 8080:8080 -v $(pwd)/tiddlywiki:/app/tiddlywiki oeyoews/tiddlywiki:latest --listen port=8080 host=0.0.0.0
 
-# or use docker-compose
-# docker-compose.yml 参考 [docker-compose.yml](./docker-compose.yml)
-docker-compose up -d
+# method 02: use docker-compose
+docker-compose up -d ## docker-compose.yml 参考 [docker-compose.yml](./docker-compose.yml)
 
-# cli: neotw-app cli 零依赖, 包仅有450kb
+# method 03: cli: neotw-app cli 零依赖, 包仅有450kb
 pnpm create neotw-app@latest
 
-# git
+# method 04: git
 git clone --depth 1 https://github.com/oeyoews/tiddlywiki-starter-kit
 cd tiddlywiki-starter-kit && pnpm install  # install packages
 pnpm start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm2:start
 
-# 单文件版本 打开 https://neotw.oeyoewl.top/editions, 直接保存网页到本地
+# method 05: 单文件版本 打开 https://neotw.oeyoewl.top/editions, 直接保存网页到本地
 ```
-
-## usage
-
-* 配置文件: tiddlywiki.config.js
-* 所有编辑的内容都会自动保存在项目的tiddlers文件夹下, tiddlywiki默认读取这个文件夹, 但是也可以通过配置指定其他的文件夹(不过强烈不建议修改)
 
 ## Deploy :gear:
 
