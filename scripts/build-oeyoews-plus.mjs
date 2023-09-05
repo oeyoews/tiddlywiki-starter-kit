@@ -57,6 +57,7 @@ const buildAll = () => {
 };
 
 const copyFiles = () => {
+  exec(`cp -r files/manifest.json ${buildDir}`, (error, stdout, stderr) => {});
   exec(`cp -r files vercel.json ${buildDir}`, (error, stdout, stderr) => {
     if (error) {
       console.error(`复制文件时出错： ${error.message}`);
@@ -66,8 +67,12 @@ const copyFiles = () => {
   });
 };
 
-generateTiddlyWikiInfo();
-cleanBuildDir();
-buildEditions();
-buildAll();
-copyFiles();
+async function build() {
+  generateTiddlyWikiInfo();
+  cleanBuildDir();
+  buildEditions();
+  buildAll();
+  copyFiles();
+}
+
+build();

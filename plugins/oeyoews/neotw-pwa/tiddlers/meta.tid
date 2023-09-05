@@ -2,4 +2,3 @@ title: $:/plugins/oeyoews/neotw-pwa/meta
 tags: $:/tags/RawMarkupWikified/TopHead
 
 `<link rel="manifest" href="/manifest.json" />`
-`<link rel="manifest" href="/files/manifest.json" />`
