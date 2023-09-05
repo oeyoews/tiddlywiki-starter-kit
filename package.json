@@ -16,7 +16,7 @@
     "pm2": "^5.3.0",
     "prompts": "^2.4.2",
     "replace": "^1.2.2",
-    "tiddlywiki": "github:Jermolene/TiddlyWiki5#0c64b58cfbded7a3d46e55e2705ab4a724f8d4d6",
+    "tiddlywiki": "github:oeyoews/TiddlyWiki5Lite#v5.3.2-pre",
     "tiged": "^2.12.5"
   },
   "engines": {
