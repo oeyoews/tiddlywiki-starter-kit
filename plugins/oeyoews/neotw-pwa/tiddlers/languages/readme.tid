@@ -11,5 +11,6 @@ title: $:/languages/neotw-pwa/readme
 
 * 需要提前有manifest.json, 或者让get-menifest.json 变成shadow, 以保证启动的时候可以正确读取menifest.json即可, 注意使用startupaction 修改变成shadow 是无效的
 * 不支持http, 只支持https和localhost
+* 如果构建成了index.html静态文件自然也不支持
 
 </div>
