@@ -22,6 +22,7 @@
     "tiddlywiki/pluginlibrary",
     "tiddlywiki/internals",
     "tiddlywiki/markdown",
+    "oeyoews/neotw-read-files",
     "oeyoews/commandpalette",
     "oeyoews/neotw-opened-tiddlers",
     "oeyoews/neotw-tour",
