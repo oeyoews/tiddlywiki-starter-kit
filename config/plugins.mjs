@@ -21,6 +21,7 @@ export default [
   "tiddlywiki/internals",
   "tiddlywiki/markdown",
   // 自定义插件
+  "oeyoews/neotw-pwa",
   "oeyoews/neotw-read-files",
   "oeyoews/commandpalette",
   "oeyoews/neotw-opened-tiddlers",

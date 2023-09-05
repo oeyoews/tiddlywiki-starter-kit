@@ -1,0 +1,10 @@
+title: $:/languages/neotw-pwa/readme
+
+<div class="prose max-w-none prose-indigo">
+
+* [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/neotw-pwa]]
+* [[Demo|https://oeyoews.github.io/neotw]]
+
+让你的tiddlywiki网页可以安装, 这并不是真正的pwa, 注意需要获取files/文件夹内的图片, 具体请看 $:/manifest.json
+
+</div>
