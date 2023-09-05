@@ -17,5 +17,5 @@ type: application/json
   "display": "standalone",
   "scope": "/",
   "theme_color": "white",
-  "description": "tiddlywiki",
+  "description": "tiddlywiki"
 }
