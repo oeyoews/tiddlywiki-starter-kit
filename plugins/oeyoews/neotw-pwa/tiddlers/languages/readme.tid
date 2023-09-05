@@ -7,4 +7,8 @@ title: $:/languages/neotw-pwa/readme
 
 让你的tiddlywiki网页可以安装, 这并不是真正的pwa, 注意需要获取files/文件夹内的图片, 具体请看 $:/manifest.json
 
+!! Note
+
+需要提前有manifest.json, 或者让get-menifest.json 变成shadow, 以保证启动的时候可以正确读取menifest.json即可, 注意使用startupaction 修改变成shadow 是无效的
+
 </div>

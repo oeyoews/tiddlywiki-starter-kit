@@ -1,5 +1,5 @@
 /*\
-title: $:/core/modules/server/routes/get-manifest.js
+title: $:/plugins/oeyoews/neotw-pwa/routes/get-manifest.js
 type: application/javascript
 module-type: route
 
@@ -17,10 +17,6 @@ GET /manifest.json
 
   exports.handler = function (request, response, state) {
     var buffer = state.wiki.getTiddlerText("$:/manifest.json", ""); // 修改文件名
-    state.sendResponse(
-      200,
-      { "Content-Type": "application/manifest+json" },
-      buffer
-    ); // 修改响应类型
+    state.sendResponse(200, { "Content-Type": "application/json" }, buffer);
   };
 })();
