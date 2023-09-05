@@ -8,7 +8,7 @@ ENV TIDDLYWIKI_THEME_PATH="/app/themes"
 
 WORKDIR /app
 RUN corepack enable && \
-    pnpm -g install tiddlywiki@latest
+    pnpm install -g tiddlywiki@5.3.0
 COPY . .
 
 EXPOSE 8080
