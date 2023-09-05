@@ -1,0 +1,18 @@
+{
+  "short_name": "tiddlywiki",
+  "name": "tiddlywiki",
+  "icons": [
+    {
+      "src": "/files/oeyoews.webp",
+      "sizes": "640x640",
+      "type": "image/webp"
+    }
+  ],
+  "id": "/",
+  "start_url": "/",
+  "background_color": "white",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "white",
+  "description": "tiddlywiki"
+}
