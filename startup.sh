@@ -1,9 +1,10 @@
 #!/bin/sh
 set -e
 
-if [ ! -f /app/tiddlywiki.info ]; then
-  cp /resources/tiddlywiki.info .
-  cp -r /resources/files .
+# /app/tiddlywiki -> ${PWD}/tiddlywiki
+if [ ! -f ./tiddlywiki/tiddlywiki.info ]; then
+  cp ./tiddlywiki.info ./tiddlywiki
+  cp -r ./files ./tiddlywiki
   echo '初始化 wiki 成功'
 fi
 

@@ -25,12 +25,12 @@
 
 ```bash
 # docker
-docker pull oeyoews/tiddlywiki
-docker run -d -p 8080:8080 -v $(pwd)/tiddlywiki:/app oeyoews/tiddlywiki:latest --listen port=8080 host=0.0.0.0
+docker pull oeyoews/tiddlywiki:latest
+docker run -d -p 8080:8080 -v $(pwd)/tiddlywiki:/app/tiddlywiki oeyoews/tiddlywiki:latest --listen port=8080 host=0.0.0.0
 
 # or use docker-compose
 # docker-compose.yml 参考 [docker-compose.yml](./docker-compose.yml)
-docker-compose up
+docker-compose up -d
 
 # cli: neotw-app cli 零依赖, 包仅有450kb
 pnpm create neotw-app@latest

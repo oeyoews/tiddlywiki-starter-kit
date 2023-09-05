@@ -7,3 +7,4 @@ docker-compose.yml
 editions/
 /packages/
 /templates/
+/subwiki
