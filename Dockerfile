@@ -1,18 +1,15 @@
 FROM node:alpine
 
-# RUN corepack enable && pnpm install tiddlywiki@latest
-RUN npm install -g tiddlywiki@latest
-
-# VOLUME /app
-WORKDIR /app
-
-# 复制到其他目录, 不要在app目录, 否则挂载后, 会被覆盖
-COPY . /resources
-
+# 支持全局安装
+ENV PNPM_HOME="/pnpm"
+ENV PATH="$PNPM_HOME:$PATH"
 ENV TIDDLYWIKI_PLUGIN_PATH="/resources/plugins"
 ENV TIDDLYWIKI_THEME_PATH="/resources/themes"
 
-# 使用sh, not bash, and use chmod +x for this scriptshell
-ENTRYPOINT ["/resources/startup.sh"]
+WORKDIR /app
+RUN corepack enable && \
+    pnpm -g install tiddlywiki@latest
+COPY . /resources
 
 EXPOSE 8080
+ENTRYPOINT ["/resources/startup.sh"] # 使用sh, not bash, and use chmod +x for this scriptshell
