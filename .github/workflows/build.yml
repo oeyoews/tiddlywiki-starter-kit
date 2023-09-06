@@ -31,7 +31,9 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build Page
-        run: pnpm vercel:tiddlers && pnpm build
+        # run: pnpm vercel:tiddlers && pnpm build
+        # github 上使用tiged巨慢, vercel几乎一秒完成
+        run: pnpm build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
