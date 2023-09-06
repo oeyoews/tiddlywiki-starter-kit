@@ -5,6 +5,7 @@ description: export png
 caption: Tid2PNG
 
 \whitespace trim
+<$list filter="[all[current]!is[system]]">
 <$button message="om-export-png" tooltip="export current tiddler as png" aria-label="Tid2PNG" class=<<tv-config-toolbar-class>>>
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
 <!-- <$action-sendmessage $message="om-confetti-launch"/> -->
@@ -16,3 +17,4 @@ caption: Tid2PNG
 </span>
 </$list>
 </$button>
+</$list>
