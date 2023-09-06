@@ -3,15 +3,14 @@ title: $:/plugins/oeyoews/tiddlywiki-tid2png/export-png.js
 type: application/javascript
 module-type: library
 
-window.resvers tiddlerscreenshot
-add download button
-remove then
-
 export
 \*/
 const html2canvas = require("html2canvas.min.js");
 
 module.exports = function exportPng(event) {
+  const downloadSvg = $tw.wiki.getTiddlerText(
+    "$:/plugins/oeyoews/tiddlywiki-tid2png/download.svg"
+  );
   NProgress.start();
   // 必须使用可选链运算符, 否则会报错, 或者类似下面那种写法, 声明一个空对象, 就不会有undefined 错误
   // const paramObject = event.paramObject || {};
@@ -26,10 +25,10 @@ module.exports = function exportPng(event) {
     useCORS: true,
   }).then((canvas) => {
     canvas.toBlob((blob) => {
-      const sizeInBytes = blob.size;
-      const sizeInMB = sizeInBytes / (1024 * 1024);
-      const imgData = canvas.toDataURL("image/png"); // 转换canvas为PNG格式的数据URL
+      const sizeInMB = (blob.size / (1024 * 1024)).toFixed(2);
+      const imgData = canvas.toDataURL("image/png", 0.8); // 转换canvas为PNG格式的数据URL
 
+      // 这个图片是用来预览的
       const imgNode = new Image();
       imgNode.src = imgData;
       imgNode.crossOrigin = "";
@@ -37,6 +36,7 @@ module.exports = function exportPng(event) {
 
       const containerNode = document.createElement("div");
 
+      // 只预览部分内容
       containerNode.classList.add(
         "rounded-lg",
         "overflow-y-hidden",
@@ -45,30 +45,32 @@ module.exports = function exportPng(event) {
         "m-0"
       );
       containerNode.appendChild(imgNode);
+      NProgress.done();
 
       const downloadPng = (href) => {
-        const linkNode = $tw.utils.domMaker("a", {
-          attributes: {
-            href,
-            download: `${title}.png`,
-          },
-        });
-
+        const linkNode = document.createElement("a");
+        linkNode.href = href;
+        linkNode.download = `${title}.png`;
+        linkNode.style.display = "none";
+        document.body.appendChild(linkNode);
         linkNode.click();
+        document.body.removeChild(linkNode);
       };
 
       Swal.fire({
         html: containerNode,
-        title: `Image size: ${sizeInMB.toFixed(2)} MB`,
+        title: `Image size: ${sizeInMB} MB`,
         showCancelButton: true,
-        confirmButtonText: "Download ",
+        // confirmButtonColor: "bg-blue-300",
+        // cancelButtonColor: "bg-red-300",
         cancelButtonText: "Cancel",
+        reverseButtons: true,
+        confirmButtonText: `Download ${downloadSvg}`,
         customClass: "w-auto my-8",
       }).then((result) => {
         result.isConfirmed && downloadPng(imgData);
-        NProgress.done();
       });
-    }, "image/png");
+    });
   });
 
   // remove hidden

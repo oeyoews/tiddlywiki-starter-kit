@@ -9,4 +9,8 @@ description: ~TiddlyWiki Tid2png
 * tiddlywiki-tailwindcss(样式)
 * neotw-back-to-top(nprogress)
 
+!! Tip
+
+* 如果想要减小图片大小, 可以移除 Notion page 提供的cover, 因为这些图片会被转换成二进制, 每张图片都会占用很大的尺寸
+
 </div>
