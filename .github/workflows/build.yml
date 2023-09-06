@@ -10,7 +10,7 @@ on:
 
 # 允许 job 克隆 repo 并创建一个 page deployment
 permissions:
-  contents: read
+  contents: write
   pages: write
   # id-token: write
 
@@ -18,7 +18,7 @@ jobs:
   release-and-page:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       pages: write
     steps:
       - uses: actions/checkout@v3
