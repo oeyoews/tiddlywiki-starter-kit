@@ -31,7 +31,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build Page
-        run: pnpm build
+        run: pnpm vercel:tiddlers && pnpm build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
