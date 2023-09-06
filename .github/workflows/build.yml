@@ -17,9 +17,6 @@ permissions:
 jobs:
   release-and-page:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pages: write
     steps:
       - uses: actions/checkout@v3
       - uses: pnpm/action-setup@v2
