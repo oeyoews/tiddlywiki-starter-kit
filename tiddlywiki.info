@@ -22,6 +22,7 @@
     "tiddlywiki/pluginlibrary",
     "tiddlywiki/internals",
     "tiddlywiki/markdown",
+    "oeyoews/neotw-permalink",
     "oeyoews/neotw-pwa",
     "oeyoews/neotw-read-files",
     "oeyoews/commandpalette",

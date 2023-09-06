@@ -12,6 +12,7 @@ GET /manifest.json
   "use strict";
 
   exports.method = "GET";
+  exports.synchronous = true;
 
   // exports.after = "story";
 
