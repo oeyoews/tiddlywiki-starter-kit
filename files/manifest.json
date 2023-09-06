@@ -1,0 +1,18 @@
+{
+  "short_name": "tiddlywiki",
+  "name": "tiddlywiki",
+  "icons": [
+    {
+      "src": "/files/tiddlywiki.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "id": "/",
+  "start_url": "/",
+  "background_color": "white",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "white",
+  "description": "tiddlywiki"
+}

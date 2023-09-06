@@ -1,7 +1,7 @@
 {
-  "outputDirectory": "dist",
-  "buildCommand": "pnpm build:oeyoews",
-  "installCommand": "pnpm install",
+  "outputDirectory": ".tiddlywiki",
+  "installCommand": "pnpm i --frozen-lockfile --prod",
+  "buildCommand": "pnpm vercel:tiddlers && pnpm build",
   "cleanUrls": true,
   "trailingSlash": false,
   "github": {
