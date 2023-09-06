@@ -13,7 +13,9 @@ GET /manifest.json
 
   exports.method = "GET";
 
-  exports.path = /^\/manifest.json$/; // 修改路径匹配
+  // exports.after = "story";
+
+  exports.path = /^\/manifest.json$/;
 
   exports.handler = function (request, response, state) {
     var buffer = state.wiki.getTiddlerText("$:/manifest.json", ""); // 修改文件名
