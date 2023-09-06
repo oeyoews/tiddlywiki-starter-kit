@@ -44,7 +44,7 @@ export default [
   "oeyoews/neotw-fetch",
   "oeyoews/neotw-aplayer",
   "oeyoews/neotw-lodash",
-  "oeyoews/tiddlywiki-tid2pdf",
+  "oeyoews/tiddlywiki-tid2png",
   "oeyoews/tiddlywiki-github-share",
   "oeyoews/tiddlywiki-axios",
   "oeyoews/tiddlywiki-daylight",

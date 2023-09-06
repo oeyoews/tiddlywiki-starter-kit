@@ -1,12 +1,12 @@
 {
-  "title": "$:/plugins/oeyoews/tiddlywiki-tid2pdf",
-  "description": "Tiddlywiki Tid2pdf",
+  "title": "$:/plugins/oeyoews/tiddlywiki-tid2png",
+  "description": "Tiddlywiki Tid2png",
   "author": "oeyoews",
   "version": "0.0.1",
   "core-version": ">=5.2.5",
   "type": "application/json",
   "plugin-type": "plugin",
-  "name": "Tiddlywiki Tid2pdf",
+  "name": "Tiddlywiki Tid2png",
   "dependents": [
     "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
   ],

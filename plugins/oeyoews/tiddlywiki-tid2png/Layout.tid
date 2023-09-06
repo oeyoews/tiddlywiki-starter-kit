@@ -1,7 +1,7 @@
-title: $:/plugins/oeyoews/tiddlywiki-tid2pdf/Layout
+title: $:/plugins/oeyoews/tiddlywiki-tid2png/Layout
 tags: $:/tags/Layout
-name: {{$:/plugins/oeyoews/tiddlywiki-tid2pdf/icon}} ~TiddlyWiki Tid2pdf
-description: ~TiddlyWiki Tid2pdf
+name: {{$:/plugins/oeyoews/tiddlywiki-tid2png/icon}} ~TiddlyWiki Tid2png
+description: ~TiddlyWiki Tid2png
 
 \import [[$:/core/ui/PageMacros]] [all[shadows+tiddlers]tag[$:/tags/Macro]!has[draft.of]]
 
@@ -15,5 +15,5 @@ description: ~TiddlyWiki Tid2pdf
   languageTitle={{{ [{$:/language}get[name]] }}}>
 
 <div class="prose max-w-none prose-indigo m-auto sm:w-auto md:w-2/3">
-{{{ [[$:/plugins/oeyoews/tiddlywiki-tid2pdf/readme]] ||$:/core/ui/ViewTemplate }}}
+{{{ [[$:/plugins/oeyoews/tiddlywiki-tid2png/readme]] ||$:/core/ui/ViewTemplate }}}
 </div>

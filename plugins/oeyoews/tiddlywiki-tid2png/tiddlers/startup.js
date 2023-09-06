@@ -11,7 +11,7 @@ tid2pdf module
   /*global $tw: false */
   "use strict";
 
-  exports.name = "tid2pdf-startup-hook";
+  exports.name = "tid2png-startup-hook";
   exports.platforms = ["browser"];
   exports.after = ["startup"];
   exports.synchronous = true;

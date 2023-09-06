@@ -1,0 +1,12 @@
+title: $:/plugins/oeyoews/tiddlywiki-tid2png/readme
+description: ~TiddlyWiki Tid2png
+
+<div class="prose max-w-none">
+
+!! 依赖插件
+
+* neotw-swal2(预览导出图片)
+* tiddlywiki-tailwindcss(样式)
+* neotw-back-to-top(nprogress)
+
+</div>
