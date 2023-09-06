@@ -7,6 +7,8 @@
   "type": "application/json",
   "plugin-type": "plugin",
   "name": "Tiddlywiki Tid2pdf",
-  "dependents": ["$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"],
-  "list": "readme explore"
+  "dependents": [
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
+  ],
+  "list": "readme"
 }
