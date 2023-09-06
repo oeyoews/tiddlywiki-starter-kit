@@ -6,9 +6,9 @@ type: application/json
   "name": "tiddlywiki",
   "icons": [
     {
-      "src": "/files/oeyoews.webp",
-      "sizes": "640x640",
-      "type": "image/webp"
+      "src": "/files/tiddlywiki.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
   "id": "/",
