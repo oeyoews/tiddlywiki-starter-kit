@@ -37,19 +37,6 @@ const buildStep = (name, description) => {
   });
 };
 
-const buildEditions = () => {
-  exec(
-    "npx tiddlywiki editions/neotw --build editions",
-    (error, stdout, stderr) => {
-      if (error) {
-        console.error(`构建editions时出错： ${error.message}`);
-        return;
-      }
-      log.info("🚀 构建editions");
-    }
-  );
-};
-
 const buildAll = () => {
   steps.forEach((step) => {
     buildStep(step.cmd, step.description);
@@ -70,7 +57,6 @@ const copyFiles = () => {
 async function build() {
   generateTiddlyWikiInfo();
   cleanBuildDir();
-  buildEditions();
   buildAll();
   copyFiles();
 }
