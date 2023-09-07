@@ -22,6 +22,7 @@ GET /manifest.json
 //   };
 // })();
 
+// 也许我们可以尝试模仿favicon.ico, 支持manifest, 构建的时候也可以自动生成在根目录下, 唯一的区别就是manifest.json只在启动的时候寻找, 之后不会自动刷新, 暂时放在file文件夹内, server和online共用一个文件(需要修改link /manifest.json -> /files/manifest.json)
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
@@ -35,13 +36,12 @@ GET /manifest.json
   exports.handler = function (request, response, state) {
     var path = require("path"),
       fs = require("fs"),
-      baseFilename = path.resolve(state.boot.wikiPath, "files"), // 设置基础路径为 "static"
-      filename = path.resolve(baseFilename, "manifest.json"); // 设置文件名为 "manifest.json"
+      baseFilename = path.resolve(state.boot.wikiPath, "files"),
+      filename = path.resolve(baseFilename, "manifest.json");
 
-    // 读取 manifest.json 文件
     fs.readFile(filename, function (err, content) {
       var status,
-        type = "application/json"; // 设置响应的内容类型为 JSON
+        type = "application/json";
       if (err) {
         console.log("Error accessing file " + filename + ": " + err.toString());
         status = 404;
