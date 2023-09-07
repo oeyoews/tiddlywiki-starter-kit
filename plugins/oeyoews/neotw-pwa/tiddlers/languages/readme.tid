@@ -3,12 +3,11 @@ title: $:/languages/neotw-pwa/readme
 <div class="prose max-w-none prose-indigo">
 
 * [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/neotw-pwa]]
-* [[Demo|https://oeyoews.github.io/neotw]]
 
-> 2023 年, server-worker 不再是 PWA 的必选项, 让你的tiddlywiki网页可以安装,
+> 让你的TiddlyWiki网页像app一样启动
 
-* 在https状态下, 只需要提供manifest.json文件即可
-* 在nodejs环境下, tw可以直接link files/manifest.json的内容, 但建议直接加载内部的manifest.json, 不依赖files文件夹
+<!-- * 在https状态下, 只需要提供manifest.json文件即可 -->
+<!-- * 在nodejs环境下, tw可以直接link files/manifest.json的内容, 但建议直接加载内部的manifest.json, 不依赖files文件夹 -->
 
 <$button>
 <$action-setfield $tiddler="$:/plugins/oeyoews/neotw-pwa/routes/get-tiddlywiki-image.js" $field="overwrite" $value="yes"/>
@@ -23,14 +22,9 @@ Reset PWA ♻️
 
 > 设置后需要重启tw, 不是刷新浏览器
 
-!! TODO
+<!-- * get-menifest.json 变成shadow, 注意使用startupaction 修改变成shadow 是无效的,shadows文件不会保存 -->
 
-* add enable pwa button
-
-!! Note
-
-* get-menifest.json 变成shadow, 注意使用startupaction 修改变成shadow 是无效的,shadows文件不会保存
-*  注意需要本地需要获取files/文件夹内的图片, 具体请看 $:/manifest.json
+> 下面是针对构建在线版本支持pwa的参数
 
 ```
 "--savetiddler",
@@ -41,8 +35,8 @@ Reset PWA ♻️
     "tiddlywiki.png",
 ```
 
-!! Tools
-
-https://maskable.app/editor
+<!-- !! Tools -->
+<!---->
+<!-- https://maskable.app/editor -->
 
 </div>
