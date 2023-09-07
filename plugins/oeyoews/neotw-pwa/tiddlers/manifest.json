@@ -3,7 +3,7 @@
   "name": "tiddlywiki",
   "icons": [
     {
-      "src": "/files/tiddlywiki.png",
+      "src": "/tiddlywiki.png",
       "sizes": "512x512",
       "type": "image/png"
     }

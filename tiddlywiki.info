@@ -86,6 +86,9 @@
       "--savetiddler",
       "$:/manifest.json",
       "manifest.json",
+      "--savetiddler",
+      "$:/tiddlywiki.png",
+      "tiddlywiki.png",
       "--deletetiddlers",
       "$:/StoryList"
     ],
