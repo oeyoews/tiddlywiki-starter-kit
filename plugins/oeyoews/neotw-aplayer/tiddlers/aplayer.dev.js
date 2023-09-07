@@ -57,10 +57,6 @@ A music player widget that uses the APlayer library.
         '$:/plugins/oeyoews/neotw-aplayer/icon',
       );
 
-      const playGradientIcon = $tw.wiki.getTiddlerText(
-        '$:/plugins/oeyoews/neotw-aplayer/icon-gradient',
-      );
-
       const aplayerNode = $tw.utils.domMaker('div', {
         attributes: {
           id: 'aplayer',
@@ -101,7 +97,6 @@ A music player widget that uses the APlayer library.
 
       playButtonNode.addEventListener('click', () => {
         // 如果替换这个icon, dblclick事件无法响应
-        // playButtonNode.innerHTML = playGradientIcon;
         aplayerRef.toggle();
       });
 
