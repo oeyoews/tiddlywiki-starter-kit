@@ -12,5 +12,6 @@ description: ~TiddlyWiki Tid2png
 !! Tip
 
 * 如果想要减小图片大小, 可以移除 Notion page 提供的cover, 因为这些图片会被转换成二进制, 每张图片都会占用很大的尺寸
+* if yout want to reduce image size, you can remove the cover provided by Notion page, because these images will be converted into binary, and each image will take up a large size
 
 </div>
