@@ -1,7 +1,7 @@
 /*\
 title: $:/plugins/oeyoews/neotw-pwa/routes/get-manifest.js
 type: application/javascript
-// module-type: route
+module-type: route
 
 GET /manifest.json
 
@@ -16,7 +16,6 @@ NOTE: 不能提前访问xxx.js文件从buffer
 NOTE: 无论是从files 文件夹, 还是tw里面读取文件, js文件都必须是shadow(favicon.ico为什么可以)
 
 \*/
-
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
@@ -36,34 +35,3 @@ NOTE: 无论是从files 文件夹, 还是tw里面读取文件, js文件都必须
     );
   };
 })();
-
-// (function () {
-//   /*jslint node: true, browser: true */
-//   /*global $tw: false */
-//   "use strict";
-//
-//   exports.method = "GET";
-//
-//   // 设置路径以匹配 manifest.json 文件
-//   exports.path = /^\/manifest\.json$/;
-//
-//   exports.handler = function (request, response, state) {
-//     var path = require("path"),
-//       fs = require("fs"),
-//       baseFilename = path.resolve(state.boot.wikiPath, "files"),
-//       filename = path.resolve(baseFilename, "manifest.json");
-//
-//     fs.readFile(filename, function (err, content) {
-//       var status,
-//         type = "application/json";
-//       if (err) {
-//         console.log("Error accessing file " + filename + ": " + err.toString());
-//         status = 404;
-//         content = JSON.stringify({ error: "File 'manifest.json' not found" });
-//       } else {
-//         status = 200;
-//       }
-//       state.sendResponse(status, { "Content-Type": type }, content);
-//     });
-//   };
-// })();
