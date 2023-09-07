@@ -15,6 +15,9 @@ export default {
     "--savetiddler",
     "$:/favicon.ico",
     "favicon.ico",
+    // "--savetiddler",
+    // "$:/manifest.json",
+    // "manifest.json",
     "--deletetiddlers",
     "$:/StoryList",
   ],
@@ -59,7 +62,13 @@ export default {
     "$:/StoryList",
   ],
   // 启动 tiddlywiki
-  listen: ["--listen", "port=8080", "anon-username=oeyoews", "host=0.0.0.0"],
+  listen: [
+    "--listen",
+    "port=8080",
+    "anon-username=oeyoews",
+    "host=0.0.0.0",
+    "--verbose",
+  ],
   // 生成 plugin library
   library: [
     "--output",

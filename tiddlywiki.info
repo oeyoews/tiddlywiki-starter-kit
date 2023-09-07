@@ -128,7 +128,8 @@
       "--listen",
       "port=8080",
       "anon-username=oeyoews",
-      "host=0.0.0.0"
+      "host=0.0.0.0",
+      "--verbose"
     ],
     "library": [
       "--output",

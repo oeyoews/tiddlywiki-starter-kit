@@ -1,6 +1,3 @@
-title: $:/manifest.json
-type: application/json
-
 {
   "short_name": "tiddlywiki",
   "name": "tiddlywiki",
