@@ -83,6 +83,9 @@
       "--savetiddler",
       "$:/favicon.ico",
       "favicon.ico",
+      "--savetiddler",
+      "$:/manifest.json",
+      "manifest.json",
       "--deletetiddlers",
       "$:/StoryList"
     ],
