@@ -7,6 +7,9 @@ title: $:/languages/neotw-pwa/readme
 
 > 2023 年, server-worker 不再是 PWA 的必选项, 让你的tiddlywiki网页可以安装,
 
+* 在https状态下, 只需要提供manifest.json文件即可
+* 在nodejs环境下, tw可以直接link files/manifest.json的内容, 但建议直接加载内部的manifest.json, 不依赖files文件夹
+
 !! TODO
 
 * add enable pwa
