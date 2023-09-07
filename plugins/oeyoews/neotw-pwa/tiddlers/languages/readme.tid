@@ -5,7 +5,7 @@ title: $:/languages/neotw-pwa/readme
 * [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/neotw-pwa]]
 * [[Demo|https://oeyoews.github.io/neotw]]
 
-> 2023 年, server-worker不再是 PWA 的必选项, 让你的tiddlywiki网页可以安装,
+> 2023 年, server-worker 不再是 PWA 的必选项, 让你的tiddlywiki网页可以安装,
 
 !! TODO
 
@@ -17,7 +17,7 @@ title: $:/languages/neotw-pwa/readme
 * get-menifest.json 变成shadow, 注意使用startupaction 修改变成shadow 是无效的,shadows文件不会保存
 *  注意需要本地需要获取files/文件夹内的图片, 具体请看 $:/manifest.json
 
-```bash
+```
 "--savetiddler",
     "$:/manifest.json",
     "manifest.json",
