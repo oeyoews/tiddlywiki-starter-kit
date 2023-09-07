@@ -10,9 +10,9 @@
   ],
   "id": "/",
   "start_url": "/",
-  "background_color": "white",
+  "background_color": "#F5F5EE",
   "display": "standalone",
   "scope": "/",
-  "theme_color": "white",
+  "theme_color": "#F5F5EE",
   "description": "tiddlywiki"
 }
