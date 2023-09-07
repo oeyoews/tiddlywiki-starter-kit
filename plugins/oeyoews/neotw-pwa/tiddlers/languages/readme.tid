@@ -5,9 +5,7 @@ title: $:/languages/neotw-pwa/readme
 * [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/neotw-pwa]]
 
 > 让你的TiddlyWiki网页像app一样启动
-
-<!-- * 在https状态下, 只需要提供manifest.json文件即可 -->
-<!-- * 在nodejs环境下, tw可以直接link files/manifest.json的内容, 但建议直接加载内部的manifest.json, 不依赖files文件夹 -->
+> make your TiddlyWiki web page start like an app
 
 <$button>
 <$action-setfield $tiddler="$:/plugins/oeyoews/neotw-pwa/routes/get-tiddlywiki-image.js" $field="overwrite" $value="yes"/>
@@ -21,10 +19,13 @@ Reset PWA ♻️
 </$button>
 
 > 设置后需要重启tw, 不是刷新浏览器
+> After setting, you need to restart tw, not refresh the browser
 
 <!-- * get-menifest.json 变成shadow, 注意使用startupaction 修改变成shadow 是无效的,shadows文件不会保存 -->
 
 > 下面是针对构建在线版本支持pwa的参数
+> The following are parameters for building online version to support pwa
+
 
 ```
 "--savetiddler",
