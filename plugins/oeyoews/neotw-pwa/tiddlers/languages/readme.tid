@@ -10,6 +10,19 @@ title: $:/languages/neotw-pwa/readme
 * 在https状态下, 只需要提供manifest.json文件即可
 * 在nodejs环境下, tw可以直接link files/manifest.json的内容, 但建议直接加载内部的manifest.json, 不依赖files文件夹
 
+<$button>
+<$action-setfield $tiddler="$:/plugins/oeyoews/neotw-pwa/routes/get-tiddlywiki-image.js" $field="overwrite" $value="yes"/>
+<$action-setfield $tiddler="$:/plugins/oeyoews/neotw-pwa/routes/get-manifest.js" $field="overwrite" $value="yes"/>
+Enable PWA 📦
+</$button>
+<$button>
+<$action-deletetiddler $tiddler="$:/plugins/oeyoews/neotw-pwa/routes/get-tiddlywiki-image.js"/>
+<$action-deletetiddler $tiddler="$:/plugins/oeyoews/neotw-pwa/routes/get-manifest.js"/>
+Reset PWA ♻️
+</$button>
+
+> 设置后需要重启tw, 不是刷新浏览器
+
 !! TODO
 
 * add enable pwa button
@@ -23,6 +36,9 @@ title: $:/languages/neotw-pwa/readme
 "--savetiddler",
     "$:/manifest.json",
     "manifest.json",
+"--savetiddler",
+    "$:/tiddlywiki.png",
+    "tiddlywiki.png",
 ```
 
 !! Tools
