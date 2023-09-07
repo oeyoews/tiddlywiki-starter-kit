@@ -5,15 +5,23 @@ title: $:/languages/neotw-pwa/readme
 * [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/neotw-pwa]]
 * [[Demo|https://oeyoews.github.io/neotw]]
 
-让你的tiddlywiki网页可以安装, 注意需要本地需要获取files/文件夹内的图片, 具体请看 $:/manifest.json
+> 2023 年, server-worker不再是 PWA 的必选项, 让你的tiddlywiki网页可以安装,
+
+!! TODO
+
+* add enable pwa
+* add route to embed manifest-512x512.png and add relate build cmd to generate images
 
 !! Note
 
-<!-- * localhost: 需要提前有manifest.json, 或者让get-menifest.json 变成shadow, 以保证启动的时候可以正确读取menifest.json即可, 注意使用startupaction 修改变成shadow 是无效的 -->
-<!-- * online: 如果构建成了index.html静态文件, 需要复制manifest.json到根目录 -->
+* get-menifest.json 变成shadow, 注意使用startupaction 修改变成shadow 是无效的,shadows文件不会保存
+*  注意需要本地需要获取files/文件夹内的图片, 具体请看 $:/manifest.json
 
-<!-- > 不支持http -->
-> 2023 年, server-worker不再是 PWA 的必选项
+```bash
+"--savetiddler",
+    "$:/manifest.json",
+    "manifest.json",
+```
 
 !! Tools
 
