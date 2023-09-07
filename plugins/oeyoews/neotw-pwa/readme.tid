@@ -1,4 +1,5 @@
 title: $:/plugins/oeyoews/neotw-pwa/readme
 description: PWA
+name: PWA
 
 {{$:/languages/neotw-pwa/readme}}
