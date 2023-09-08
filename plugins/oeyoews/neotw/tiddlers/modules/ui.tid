@@ -21,7 +21,7 @@ tags: $:/tags/PageTemplate
 \end
 
 \define twbot()
-<$button class="mt-2 rounded-full shadow-md hover:scale-110 duration-300 transition bg-transparent" tooltip="bot">
+<$button class="mt-2 rounded-full hover:scale-110 transition" tooltip="bot">
 <$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/neotw-tw-bot/tw-bot.tid"/>
 {{$:/plugins/oeyoews/neotw-tw-bot/icon}}
 </$button>
@@ -208,8 +208,9 @@ tags: $:/tags/PageTemplate
       <!-- <<o-sidebar>> -->
       <!-- <<switch-lang>> -->
       <<readonly-mode>>
+      <<twbot>>
       <!-- <<toggle-theme>> -->
-      <<zen-mode>>
+      <!-- <<zen-mode>> -->
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
   <<home-button>>
 </$list>
