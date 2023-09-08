@@ -1,7 +1,6 @@
 {
   "title": "$:/plugins/oeyoews/tiddlywiki-tid2png",
-  "description": "Allow export single tiddler as image
-",
+  "description": "Allow export single tiddler as image",
   "author": "oeyoews",
   "version": "1.0.0",
   "core-version": ">=5.2.5",
