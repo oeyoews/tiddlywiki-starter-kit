@@ -7,7 +7,8 @@ module-type: library
 // line color
 
 \*/
-module.exports = function twBot() {
+module.exports = function twBot(tag) {
+  const tags = tag || "想法";
   // 直接使用fakeDocument会报错
   const form = document.createElement("form");
   form.classList.add(
@@ -45,7 +46,7 @@ module.exports = function twBot() {
     "placeholder-gray-300",
     "caret-indigo-500"
   );
-  inputMessage.placeholder = "任何想法 ...";
+  inputMessage.placeholder = `任何${tags} ...`;
   inputMessage.addEventListener("input", function () {
     // 检查输入框的值是否为空，然后设置按钮的禁用状态
     button.disabled = !inputMessage.value;
@@ -76,16 +77,16 @@ module.exports = function twBot() {
     $tw.wiki.addTiddler({
       title: `tw-bot/messages/${timestamp}`,
       text: inputMessage.value,
-      tags: "想法",
+      tags,
       ...options,
     });
     // 需要await
     // inputMessage.value = "";
     // 统计当天记录的想法数量
-    const count = $tw.wiki.filterTiddlers(`[tag[想法]days[-1]]`).length;
+    const count = $tw.wiki.filterTiddlers(`[tag[${tags}]days[-1]]`).length;
     Swal.fire({
       icon: "success",
-      title: `这是你今天的第${count}条想法`,
+      title: `这是你今天的第 ${count} 条${tags}`,
       showConfirmButton: false,
       timer: 1500,
       toast: true,
