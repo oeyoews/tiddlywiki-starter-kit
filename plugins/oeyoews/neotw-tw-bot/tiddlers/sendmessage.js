@@ -61,6 +61,13 @@ module.exports = function twBot() {
   };
 
   function sentMessage() {
+    if (!inputMessage.value) {
+      Swal.fire({
+        icon: "error",
+        title: "请输入想法",
+      });
+      return;
+    }
     // create new tiddler
     $tw.wiki.addTiddler({
       title: `tw-bot/messages/${timestamp}`,
@@ -72,8 +79,7 @@ module.exports = function twBot() {
     const count = $tw.wiki.filterTiddlers(`[tag[想法]days[-1]]`).length;
     Swal.fire({
       icon: "success",
-      title: "想法记录成功",
-      text: `这是你今天的第${count}条想法`,
+      title: `这是你今天的第${count}条想法`,
       showConfirmButton: false,
       timer: 1500,
       toast: true,
