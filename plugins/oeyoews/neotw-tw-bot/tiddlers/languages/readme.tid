@@ -2,13 +2,15 @@ title: $:/languages/neotw-tw-bot/readme
 
 <div class="prose max-w-none prose-indigo">
 
+<$tw-bot />
+
 !! Usage
 
+```
 <$tw-bot />
+```
 
-```
-<$tw-bot />
-```
+> 快速记录想法,单行模式直接回车或者点击发送按钮即可
 
 !! 配置
 
