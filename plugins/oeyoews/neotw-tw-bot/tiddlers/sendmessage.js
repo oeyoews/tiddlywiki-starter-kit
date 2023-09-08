@@ -8,11 +8,19 @@ module-type: library
 
 \*/
 module.exports = function twBot() {
-  const tags = ["想法", "任务", "工作", "生活", "其他"];
+  const tags = $tw.wiki.getTiddlerData(
+    "$:/plugins/oeyoews/neotw-tw-bot/tags.json"
+  );
   const selectedTag = localStorage.getItem("selectedTag");
   const defaultTag = selectedTag || tags[0]; // 如果localStorage中没有存储标签，则使用第一个标签作为默认标签
   const selectTag = document.createElement("select");
-  selectTag.classList.add("appearance-none", "border-none", "p-2", "rounded");
+  selectTag.classList.add(
+    "appearance-none",
+    "border-none",
+    "p-2",
+    "rounded",
+    "cursor-pointer"
+  );
   tags.forEach((tag) => {
     const option = document.createElement("option");
     option.value = tag;
@@ -103,7 +111,7 @@ module.exports = function twBot() {
     const count = $tw.wiki.filterTiddlers(`[tag[${tags}]days[-1]]`).length;
     Swal.fire({
       icon: "success",
-      title: `这是你今天的第 ${count} 条${tags}`,
+      title: `这是你今天的第 ${count} 条记录`,
       showConfirmButton: false,
       timer: 1500,
       toast: true,
