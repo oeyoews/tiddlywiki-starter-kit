@@ -61,6 +61,7 @@ module.exports = function twBot() {
   button.title = "send";
   button.disabled = true; // 不需要使用readonly
   const inputMessage = document.createElement("input");
+  inputMessage.autofocus = true;
   inputMessage.classList.add(
     "w-full",
     "mx-2",
