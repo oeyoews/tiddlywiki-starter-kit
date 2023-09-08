@@ -75,7 +75,7 @@ module.exports = function addCopyButton() {
         showCancelButton: false,
         showConfirmButton: false,
         timer: 1500,
-        position: "top-end",
+        position: "top-center",
       });
     };
 

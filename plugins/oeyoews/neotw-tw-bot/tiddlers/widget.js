@@ -18,18 +18,23 @@ neotw-tw-bot widget
   class TwBot extends Widget {
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
+      this.virtualRoot = null;
     }
 
     render(parent, nextSibling) {
       if (!$tw.browser) return;
-      const virtualRoot = twBot();
+      this.virtualRoot = twBot();
 
       this.parentDomNode = parent;
       this.computeAttributes();
       this.execute();
 
-      parent.insertBefore(virtualRoot, nextSibling);
-      this.domNodes.push(virtualRoot);
+      parent.insertBefore(this.virtualRoot, nextSibling);
+      this.domNodes.push(this.virtualRoot);
+    }
+
+    refresh() {
+      this.refreshSelf();
     }
   }
 

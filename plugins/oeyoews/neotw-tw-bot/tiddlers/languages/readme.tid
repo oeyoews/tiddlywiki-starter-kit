@@ -4,12 +4,28 @@ title: $:/languages/neotw-tw-bot/readme
 
 * [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/neotw-tw-bot]]
 
-```js
-$tw.wiki.addTiddler({
-      title: "hi",
-      text: "demo",
-      creator: 'bot'
-});
+!! Usage
+
 ```
+<$tw-bot />
+```
+
+<$tw-bot />
+
+!! 依赖插件
+
+* tailwindcss: 样式依赖
+* swal2: 通知依赖
+
+!! TODO
+
+* 想法条目的自动检索
+
+---
+
+<$button class="bg-rose-400 p-2 rounded">
+  delete tw-bot created tiddlers
+  <$action-deletetiddler $filter="[prefix[tw-bot/messages/]creator[tw-bot]]"/>
+</$button>
 
 </div>
