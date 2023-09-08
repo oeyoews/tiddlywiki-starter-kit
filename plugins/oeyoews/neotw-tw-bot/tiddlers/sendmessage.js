@@ -92,7 +92,7 @@ module.exports = function twBot() {
   const options = {
     created: timestamp,
     modified: timestamp,
-    creator: "tw-bot",
+    creator: "tw-bot", // TODO: 抽离出来配置
   };
 
   function sentMessage(selectedTag) {
@@ -100,7 +100,7 @@ module.exports = function twBot() {
     localStorage.setItem("selectedTag", selectedTag);
     // create new tiddler
     $tw.wiki.addTiddler({
-      title: `tw-bot/messages/${timestamp}`,
+      title: `tw-bot-${selectedTag}-${timestamp}`,
       text: inputMessage.value,
       tags,
       ...options,
