@@ -4,7 +4,7 @@ type: application/javascript
 module-type: library
 
 // 配置UI
-// ...
+// line color
 
 \*/
 module.exports = function twBot() {
@@ -32,17 +32,29 @@ module.exports = function twBot() {
     "mx-2",
     "bg-transparent",
     "hover:fill-green-700",
-    "scale-125"
+    "scale-125",
+    "cursor-not-allowed"
   );
   button.title = "send";
+  button.disabled = true; // 不需要使用readonly
   const inputMessage = document.createElement("input");
   inputMessage.classList.add(
     "w-full",
     "mx-2",
     "border-none",
-    "placeholder-gray-300"
+    "placeholder-gray-300",
+    "caret-indigo-500"
   );
   inputMessage.placeholder = "任何想法 ...";
+  inputMessage.addEventListener("input", function () {
+    // 检查输入框的值是否为空，然后设置按钮的禁用状态
+    button.disabled = !inputMessage.value;
+    if (button.disabled) {
+      button.classList.add("cursor-not-allowed");
+    } else {
+      button.classList.remove("cursor-not-allowed");
+    }
+  });
   form.appendChild(inputMessage);
   form.appendChild(button);
 
@@ -50,7 +62,6 @@ module.exports = function twBot() {
     e.preventDefault();
     sentMessage();
   });
-  button.addEventListener("click", sentMessage);
 
   const timestamp = new Date().toISOString().replace(/\D/g, "");
 
@@ -61,13 +72,6 @@ module.exports = function twBot() {
   };
 
   function sentMessage() {
-    if (!inputMessage.value) {
-      Swal.fire({
-        icon: "error",
-        title: "请输入想法",
-      });
-      return;
-    }
     // create new tiddler
     $tw.wiki.addTiddler({
       title: `tw-bot/messages/${timestamp}`,
@@ -75,6 +79,8 @@ module.exports = function twBot() {
       tags: "想法",
       ...options,
     });
+    // 需要await
+    // inputMessage.value = "";
     // 统计当天记录的想法数量
     const count = $tw.wiki.filterTiddlers(`[tag[想法]days[-1]]`).length;
     Swal.fire({
