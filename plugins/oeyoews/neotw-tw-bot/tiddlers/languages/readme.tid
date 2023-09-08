@@ -2,8 +2,6 @@ title: $:/languages/neotw-tw-bot/readme
 
 <div class="prose max-w-none prose-indigo">
 
-* [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/neotw-tw-bot]]
-
 !! Usage
 
 ```
@@ -12,23 +10,26 @@ title: $:/languages/neotw-tw-bot/readme
 
 * 所有tiddlers都是由creator: tw-bot创建, 可以使用筛选器选择比如 [creator[tw-bot]] 查找tw-bot创建的所有tiddlers
 
+!! 示例
+
 <$tw-bot />
+
+!! 配置
+
+* [[配置|$:/plugins/oeyoews/neotw-tw-bot/tags.json]]
+* <$button class="p-2 bg-rose-500">
+Reset 🛺
+<$action-deletetiddler $filter="[[$:/plugins/oeyoews/neotw-tw-bot/tags.json]]"/>
+</$button>
+
+<!-- <$button class="bg-rose-400 p-2 rounded"> -->
+<!--   delete tw-bot created tiddlers -->
+<!--   <$action-deletetiddler $filter="[prefix[tw-bot/messages/]creator[tw-bot]]"/> -->
+<!-- </$button> -->
 
 !! 依赖插件
 
 * tailwindcss: 样式依赖
 * swal2: 通知依赖
-
-!! TODO
-
-* 想法条目的自动检索
-* 自定义option组件
-
----
-
-<$button class="bg-rose-400 p-2 rounded">
-  delete tw-bot created tiddlers
-  <$action-deletetiddler $filter="[prefix[tw-bot/messages/]creator[tw-bot]]"/>
-</$button>
 
 </div>
