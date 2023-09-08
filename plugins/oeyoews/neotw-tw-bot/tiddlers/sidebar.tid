@@ -1,0 +1,9 @@
+title: $:/plugins/oeyoews/neotw-tw-bot/tw-bot.tid
+caption: {{$:/plugins/oeyoews/neotw-tw-bot/icon}} 记录一闪而过的瞬间
+icon: $:/plugins/oeyoews/neotw-tw-bot/icon
+
+<!-- tags: $:/tags/SideBar -->
+
+<div class="my-4">
+  <$tw-bot />
+</div>

@@ -4,7 +4,7 @@ title: $:/languages/neotw-tw-bot/readme
 
 <$tw-bot />
 
-!! Usage
+!! 用法
 
 ```
 <$tw-bot />
@@ -13,6 +13,11 @@ title: $:/languages/neotw-tw-bot/readme
 > 快速记录想法,单行模式直接回车或者点击发送按钮即可
 
 !! 配置
+
+* <$button class="p-2 bg-indigo-400/60">
+  🩹 放置在侧边栏
+  <$action-listops  $tiddler="$:/plugins/oeyoews/neotw-tw-bot/tw-bot.tid" $tags="+[toggle[$:/tags/SideBar]]" />
+</$button>
 
 * 生成条目的固定格式为 `<creator>-<tag>-<timestamp>`
 * [[配置👉|$:/plugins/oeyoews/neotw-tw-bot/tags.json]]
