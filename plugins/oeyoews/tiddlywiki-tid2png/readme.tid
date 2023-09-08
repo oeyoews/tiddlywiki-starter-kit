@@ -3,15 +3,14 @@ description: ~TiddlyWiki Tid2png
 
 <div class="prose max-w-none">
 
-!! 依赖插件
+!! optional plugins dependencies
 
-* neotw-swal2(预览导出图片)
-* tiddlywiki-tailwindcss(样式)
-* neotw-back-to-top(nprogress)
+* neotw-swal2: preview exported png
+* neotw-back-to-top(nprogress): progress bar for export png
 
 !! Tip
 
-* 如果想要减小图片大小, 可以移除 Notion page 提供的cover, 因为这些图片会被转换成二进制, 每张图片都会占用很大的尺寸
-* if yout want to reduce image size, you can remove the cover provided by Notion page, because these images will be converted into binary, and each image will take up a large size
+* 如果想要减小图片大小, 可以移除 Notion page 插件 提供的cover, 因为这些图片会被转换成二进制, 每张图片都会占用很大的尺寸
+* if yout want to reduce image size, you can remove the cover provided by Notion page plugins, because these images will be converted into binary, and each image will take up a large size
 
 </div>

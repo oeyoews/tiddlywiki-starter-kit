@@ -74,18 +74,18 @@ module.exports = function exportPng(event) {
 
       typeof Swal !== "undefined"
         ? Swal.fire({
-            html: containerNode,
-            title: `Image size: ${sizeInMB} MB`,
-            showCancelButton: true,
-            // confirmButtonColor: "bg-blue-300",
-            // cancelButtonColor: "bg-red-300",
-            cancelButtonText: "Cancel",
-            reverseButtons: true,
-            confirmButtonText: `Download ${downloadSvg}`,
-            customClass: "w-auto my-8",
-          }).then((result) => {
-            result.isConfirmed && downloadPng(imgData);
-          })
+          html: containerNode,
+          title: `Image size: ${sizeInMB} MB`,
+          showCancelButton: true,
+          // confirmButtonColor: "bg-blue-300",
+          // cancelButtonColor: "bg-red-300",
+          cancelButtonText: "Cancel",
+          reverseButtons: true,
+          confirmButtonText: `Download ${downloadSvg}`,
+          customClass: "w-auto my-8",
+        }).then((result) => {
+          result.isConfirmed && downloadPng(imgData);
+        })
         : downloadPng(imgData);
     });
   });
