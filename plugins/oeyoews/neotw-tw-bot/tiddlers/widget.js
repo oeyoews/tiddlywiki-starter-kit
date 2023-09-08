@@ -23,8 +23,7 @@ neotw-tw-bot widget
 
     render(parent, nextSibling) {
       if (!$tw.browser) return;
-      const tag = this.getAttribute("tag");
-      this.virtualRoot = twBot(tag);
+      this.virtualRoot = twBot();
 
       this.parentDomNode = parent;
       this.computeAttributes();

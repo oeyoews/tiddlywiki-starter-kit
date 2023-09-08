@@ -7,8 +7,17 @@ module-type: library
 // line color
 
 \*/
-module.exports = function twBot(tag) {
-  const tags = tag || "想法";
+module.exports = function twBot() {
+  const tags = ["想法", "任务", "工作", "生活", "其他"];
+  const selectTag = document.createElement("select");
+  selectTag.classList.add("appearance-none", "border-none", "p-2", "rounded");
+  tags.forEach((tag) => {
+    const option = document.createElement("option");
+    option.value = tag;
+    option.text = tag;
+    selectTag.appendChild(option);
+  });
+
   // 直接使用fakeDocument会报错
   const form = document.createElement("form");
   form.classList.add(
@@ -56,12 +65,13 @@ module.exports = function twBot(tag) {
       button.classList.remove("cursor-not-allowed");
     }
   });
+  form.appendChild(selectTag);
   form.appendChild(inputMessage);
   form.appendChild(button);
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-    sentMessage();
+    sentMessage(selectTag);
   });
 
   const timestamp = new Date().toISOString().replace(/\D/g, "");
@@ -72,7 +82,8 @@ module.exports = function twBot(tag) {
     creator: "tw-bot",
   };
 
-  function sentMessage() {
+  function sentMessage(selectTag) {
+    const tags = selectTag.value;
     // create new tiddler
     $tw.wiki.addTiddler({
       title: `tw-bot/messages/${timestamp}`,
