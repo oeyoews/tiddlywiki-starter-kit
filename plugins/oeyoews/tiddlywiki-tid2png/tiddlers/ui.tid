@@ -6,11 +6,11 @@ caption: Tid2PNG
 
 \whitespace trim
 <$list filter="[all[current]!is[system]]">
-<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
 <$button message="om-export-png" tooltip="export current tiddler as png" aria-label="Tid2PNG" class=<<tv-config-toolbar-class>>>
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
-<!-- <$action-sendmessage $message="om-confetti-launch"/> -->
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
 {{$:/core/images/picture}}
+</$list>
 </$list>
 <$list filter="[<tv-config-toolbar-text>match[yes]]">
 <span class="tc-btn-text">
@@ -18,5 +18,4 @@ caption: Tid2PNG
 </span>
 </$list>
 </$button>
-</$list>
 </$list>
