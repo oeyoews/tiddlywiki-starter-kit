@@ -4,15 +4,11 @@ title: $:/languages/neotw-tw-bot/readme
 
 !! Usage
 
+<$tw-bot />
+
 ```
 <$tw-bot />
 ```
-
-* 所有tiddlers都是由creator: tw-bot创建, 可以使用筛选器选择比如 [creator[tw-bot]] 查找tw-bot创建的所有tiddlers
-
-!! 示例
-
-<$tw-bot />
 
 !! 配置
 
