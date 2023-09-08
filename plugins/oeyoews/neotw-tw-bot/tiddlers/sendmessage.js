@@ -9,12 +9,17 @@ module-type: library
 \*/
 module.exports = function twBot() {
   const tags = ["想法", "任务", "工作", "生活", "其他"];
+  const selectedTag = localStorage.getItem("selectedTag");
+  const defaultTag = selectedTag || tags[0]; // 如果localStorage中没有存储标签，则使用第一个标签作为默认标签
   const selectTag = document.createElement("select");
   selectTag.classList.add("appearance-none", "border-none", "p-2", "rounded");
   tags.forEach((tag) => {
     const option = document.createElement("option");
     option.value = tag;
     option.text = tag;
+    if (tag === defaultTag) {
+      option.selected = true; // 设置默认选中标签
+    }
     selectTag.appendChild(option);
   });
 
@@ -71,7 +76,7 @@ module.exports = function twBot() {
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-    sentMessage(selectTag);
+    sentMessage(selectTag.value);
   });
 
   const timestamp = new Date().toISOString().replace(/\D/g, "");
@@ -82,8 +87,9 @@ module.exports = function twBot() {
     creator: "tw-bot",
   };
 
-  function sentMessage(selectTag) {
-    const tags = selectTag.value;
+  function sentMessage(selectedTag) {
+    const tags = selectedTag;
+    localStorage.setItem("selectedTag", selectedTag);
     // create new tiddler
     $tw.wiki.addTiddler({
       title: `tw-bot/messages/${timestamp}`,
