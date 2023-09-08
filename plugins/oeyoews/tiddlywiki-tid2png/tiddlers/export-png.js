@@ -11,15 +11,30 @@ module.exports = function exportPng(event) {
   const downloadSvg = $tw.wiki.getTiddlerText(
     "$:/plugins/oeyoews/tiddlywiki-tid2png/download.svg"
   );
-  NProgress.start();
-  // 必须使用可选链运算符, 否则会报错, 或者类似下面那种写法, 声明一个空对象, 就不会有undefined 错误
-  // const paramObject = event.paramObject || {};
+
+  typeof NProgress !== "undefined" && NProgress.start();
   const title = event.paramObject?.title || event.tiddlerTitle;
   const selector = `[data-tiddler-title="${title}"]`;
-  // html2canvas 不支持 cloneNode, 在widget中可以直接移除popup,因为widget会重新渲染, popup 会自动恢复? 但是这是一个listener, 不建议直接修改dom; 下面使用了hidden隐藏titlebar元素, 实际页面不会被用户感知到有所抖动
+  // html2canvas 不支持 cloneNode, 在widget中可以直接移除popup,因为widget会重新渲染, popup 会自动恢复? 但是这是一个listener, 不建议直接修改dom;
+  // 下面使用了hidden隐藏titlebar元素, 实际页面不会被用户感知到有所抖动(由于html2canvas是异步)
   const element = document.querySelector(selector);
-  const titlebar = element.querySelector(".tc-titlebar");
-  titlebar.classList.add("hidden");
+
+  const hideElements = [
+    ".tc-tiddler-controls",
+    ".tc-subtitle",
+    ".tc-tags-wrapper",
+  ];
+
+  function hideElementsWithSelectors(selectors, display) {
+    selectors.forEach((selector) => {
+      const elements = document.querySelectorAll(selector);
+      elements.forEach((el) => {
+        el.style.display = display;
+      });
+    });
+  }
+
+  hideElementsWithSelectors(hideElements, "none");
 
   html2canvas(element, {
     useCORS: true,
@@ -45,7 +60,7 @@ module.exports = function exportPng(event) {
         "m-0"
       );
       containerNode.appendChild(imgNode);
-      NProgress.done();
+      typeof NProgress !== "undefined" && NProgress.done();
 
       const downloadPng = (href) => {
         const linkNode = document.createElement("a");
@@ -57,22 +72,23 @@ module.exports = function exportPng(event) {
         document.body.removeChild(linkNode);
       };
 
-      Swal.fire({
-        html: containerNode,
-        title: `Image size: ${sizeInMB} MB`,
-        showCancelButton: true,
-        // confirmButtonColor: "bg-blue-300",
-        // cancelButtonColor: "bg-red-300",
-        cancelButtonText: "Cancel",
-        reverseButtons: true,
-        confirmButtonText: `Download ${downloadSvg}`,
-        customClass: "w-auto my-8",
-      }).then((result) => {
-        result.isConfirmed && downloadPng(imgData);
-      });
+      typeof Swal !== "undefined"
+        ? Swal.fire({
+            html: containerNode,
+            title: `Image size: ${sizeInMB} MB`,
+            showCancelButton: true,
+            // confirmButtonColor: "bg-blue-300",
+            // cancelButtonColor: "bg-red-300",
+            cancelButtonText: "Cancel",
+            reverseButtons: true,
+            confirmButtonText: `Download ${downloadSvg}`,
+            customClass: "w-auto my-8",
+          }).then((result) => {
+            result.isConfirmed && downloadPng(imgData);
+          })
+        : downloadPng(imgData);
     });
   });
 
-  // remove hidden
-  titlebar.classList.remove("hidden");
+  hideElementsWithSelectors(hideElements, "");
 };
