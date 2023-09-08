@@ -22,6 +22,7 @@ export default [
   "tiddlywiki/markdown",
   // 自定义插件
   "oeyoews/neotw-permalink",
+  "oeyoews/neotw-tw-bot",
   "oeyoews/neotw-pwa",
   "oeyoews/neotw-read-files",
   "oeyoews/commandpalette",

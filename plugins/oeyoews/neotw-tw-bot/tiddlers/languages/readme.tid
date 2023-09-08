@@ -1,0 +1,15 @@
+title: $:/languages/neotw-tw-bot/readme
+
+<div class="prose max-w-none prose-indigo">
+
+* [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/neotw-tw-bot]]
+
+```js
+$tw.wiki.addTiddler({
+      title: "hi",
+      text: "demo",
+      creator: 'bot'
+});
+```
+
+</div>
