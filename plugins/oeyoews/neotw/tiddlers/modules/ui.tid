@@ -20,6 +20,13 @@ tags: $:/tags/PageTemplate
 </$list>
 \end
 
+\define twbot()
+<$button class="mt-2 rounded-full shadow-md hover:scale-110 duration-300 transition bg-transparent" tooltip="bot">
+<$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/neotw-tw-bot/tw-bot.tid"/>
+{{$:/plugins/oeyoews/neotw-tw-bot/icon}}
+</$button>
+\end
+
 <!-- \define giscus-app() -->
 <!-- <$list filter="[[$:/temp/focussedTiddler]!is[missing]]"> -->
 <!-- <$list filter="[[$:/temp/focussedTiddler]get[text]!is[system]]"> -->
@@ -167,7 +174,8 @@ tags: $:/tags/PageTemplate
   <<home-button>>
 </$list>
   <<music-button>>
-  <<tours>>
+  <<twbot>>
+  <!-- <<tours>> -->
   <!-- <<load-articles>> -->
 </div>
 </$list>
