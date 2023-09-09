@@ -12,7 +12,7 @@ module.exports = function twBot() {
     "$:/plugins/oeyoews/neotw-tw-bot/tags.json"
   );
   const selectedTag = localStorage.getItem("selectedTag");
-  const defaultTag = selectedTag || tags[0]; // 如果localStorage中没有存储标签，则使用第一个标签作为默认标签
+  const defaultTag = selectedTag || tags[0].tag; // 如果localStorage中没有存储标签，则使用第一个标签作为默认标签
   const selectTag = document.createElement("select");
   selectTag.classList.add(
     "appearance-none",
@@ -20,11 +20,13 @@ module.exports = function twBot() {
     "p-2",
     "rounded",
     "cursor-pointer"
+    //todo
   );
-  tags.forEach((tag) => {
+  tags.forEach(({ tag, color }) => {
     const option = document.createElement("option");
     option.value = tag;
     option.text = tag;
+    option.classList.add(`bg-${color}-300`);
     if (tag === defaultTag) {
       option.selected = true; // 设置默认选中标签
     }
@@ -69,7 +71,7 @@ module.exports = function twBot() {
     "placeholder-gray-300",
     "caret-indigo-500"
   );
-  inputMessage.placeholder = `任何${tags} ...`;
+  inputMessage.placeholder = `任何${tags.map(({ tag }) => tag).join(",")}`;
   inputMessage.addEventListener("input", function () {
     // 检查输入框的值是否为空，然后设置按钮的禁用状态
     button.disabled = !inputMessage.value;

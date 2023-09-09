@@ -1,1 +1,26 @@
-["一言", "想法", "任务", "工作", "生活", "其他"]
+[
+  {
+    "tag": "一言",
+    "color": "indigo"
+  },
+  {
+    "tag": "想法",
+    "color": "blue"
+  },
+  {
+    "tag": "任务",
+    "color": "green"
+  },
+  {
+    "tag": "工作",
+    "color": "yellow"
+  },
+  {
+    "tag": "生活",
+    "color": "orange"
+  },
+  {
+    "tag": "其他",
+    "color": "red"
+  }
+]
