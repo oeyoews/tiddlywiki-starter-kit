@@ -9,12 +9,11 @@ import { validateNpmName } from "./vaildate-pkg";
 import { notifyUpdate } from "./update-check";
 import { randomSixLetters } from "./randomSixLetters";
 import { onPromptState } from "./onPromptState";
-import { getLatestCommit } from "./get-latest-commit";
 
 import { getPkgManager } from "./get-pkg-manager";
 
 export default async function createApp() {
-  await notifyUpdate();
+  // await notifyUpdate();
 
   const spinner = ora("Creating project...");
   let targetDir: string;
