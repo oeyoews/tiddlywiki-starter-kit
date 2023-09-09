@@ -124,9 +124,10 @@ module.exports = function twBot() {
     const tags = tag;
     // create new tiddler
     $tw.wiki.addTiddler({
-      // title: `${options.creator}-${tag}-${timestamp}`,
-      title: inputMessage.value.slice(0, 5),
+      title: `${options.creator}-${tag}-${timestamp}`,
+      // title: inputMessage.value.slice(0, 5),
       text: inputMessage.value,
+      caption: inputMessage.value.slice(0, 7),
       tags,
       ...options,
     });
