@@ -20,7 +20,6 @@ module.exports = function twBot() {
     "p-2",
     "rounded",
     "cursor-pointer"
-    //todo
   );
   tags.forEach(({ tag, color }) => {
     const option = document.createElement("option");
@@ -29,6 +28,8 @@ module.exports = function twBot() {
     option.classList.add(`bg-${color}-300`);
     if (tag === defaultTag) {
       option.selected = true; // 设置默认选中标签
+      // need listener
+      // selectTag.classList.add(`bg-${color}-400`);
     }
     selectTag.appendChild(option);
   });
@@ -98,12 +99,12 @@ module.exports = function twBot() {
     creator: "tw-bot", // TODO: 抽离出来配置
   };
 
-  function sentMessage(selectedTag) {
-    const tags = selectedTag;
-    localStorage.setItem("selectedTag", selectedTag);
+  function sentMessage(tag) {
+    const tags = tag;
+    localStorage.setItem("selectedTag", tag);
     // create new tiddler
     $tw.wiki.addTiddler({
-      title: `${options.creator}-${selectedTag}-${timestamp}`,
+      title: `${options.creator}-${tag}-${timestamp}`,
       text: inputMessage.value,
       tags,
       ...options,
