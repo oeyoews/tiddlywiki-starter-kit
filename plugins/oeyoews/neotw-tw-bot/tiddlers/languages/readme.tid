@@ -23,7 +23,8 @@ title: $:/languages/neotw-tw-bot/readme
   <$action-listops  $tiddler="$:/plugins/oeyoews/neotw-tw-bot/ui" $tags="+[toggle[$:/tags/PageControls]]" />
 </$button>
 
-* 生成条目的固定格式为 `<creator>-<tag>-<timestamp>`
+<!-- * 生成条目的固定格式为 `<creator>-<tag>-<timestamp>` -->
+* 自动选取文本内容的前五个字符作为标题
 * <$button class="p-2 bg-rose-500">
 重置 🛺
 <$action-deletetiddler $filter="[[$:/plugins/oeyoews/neotw-tw-bot/tags.json]]"/>
