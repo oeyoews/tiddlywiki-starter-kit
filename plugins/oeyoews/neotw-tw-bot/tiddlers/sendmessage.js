@@ -3,9 +3,6 @@ title: $:/plugins/oeyoews/neotw-tw-bot/sendmessage.js
 type: application/javascript
 module-type: library
 
-// 配置UI
-// line color
-
 \*/
 module.exports = function twBot() {
   const tagsDict = $tw.wiki.getTiddlerData(
@@ -20,6 +17,10 @@ module.exports = function twBot() {
   const selectedTag = localStorage.getItem('selectedTag');
   const defaultTag = selectedTag || tags[0].tag; // 如果localStorage中没有存储标签，则使用第一个标签作为默认标签
   const selectTag = document.createElement('select');
+  const tagCount = document.createElement('span');
+  const tagCountText = $tw.wiki.filterTiddlers(`[tag[${defaultTag}]]`).length;
+  tagCount.classList.add('text-gray-400', '-ml-1', '-mt-2');
+  tagCount.textContent = tagCountText;
   selectTag.classList.add(
     'appearance-none',
     'border-none',
@@ -29,6 +30,9 @@ module.exports = function twBot() {
     `bg-${tagsDict[defaultTag]}-300`,
   );
   selectTag.addEventListener('change', function () {
+    tagCount.textContent = $tw.wiki.filterTiddlers(
+      `[tag[${selectTag.value}]count[]]`,
+    );
     // 移除以"bg-"开头的类名
     localStorage.setItem('selectedTag', selectTag.value);
     selectTag.classList.forEach((className) => {
@@ -104,6 +108,7 @@ module.exports = function twBot() {
     }
   });
   form.appendChild(selectTag);
+  form.appendChild(tagCount);
   form.appendChild(inputMessage);
   form.appendChild(button);
 
@@ -135,8 +140,8 @@ module.exports = function twBot() {
     // inputMessage.value = "";
     // 统计当天记录的想法数量
     const count = $tw.wiki.filterTiddlers(
-      `[creator[${options.creator}]days[-1]]`,
-    ).length;
+      `[creator[${options.creator}]days[-1]count[]]`,
+    );
 
     function createAndDisplayNotification(count) {
       const tempTiddler = '$:/temp/tw-bot/notify';
