@@ -1,10 +1,11 @@
 title: $:/plugins/oeyoews/neotw-tw-bot/tw-bot.tid
-caption: {{$:/plugins/oeyoews/neotw-tw-bot/icon}} 记录一闪而过的瞬间
+caption: 记录一闪而过的瞬间
 icon: $:/plugins/oeyoews/neotw-tw-bot/icon
 mask-closable: yes
 class: o-tm
 subtitle: {{$:/plugins/oeyoews/tiddlywiki-modal-ui/close-modal}}
 
+<!-- caption: {{$:/plugins/oeyoews/neotw-tw-bot/icon}} 记录一闪而过的瞬间 -->
 <!-- tags: $:/tags/SideBar -->
 
 <div class="my-4">
