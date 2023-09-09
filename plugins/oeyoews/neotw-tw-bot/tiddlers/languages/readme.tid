@@ -35,9 +35,12 @@ title: $:/languages/neotw-tw-bot/readme
   <$action-deletetiddler $filter="[prefix[tw-bot/messages/]creator[tw-bot]]"/>
 </$button>
 
-!! 依赖插件
+!! 可选样式美化插件
+
+> 本插件默认采用零样式, 如果安装了下面插件, 则自动采用相关美化样式,建议安装
 
 * tailwindcss: 样式依赖
 * swal2: 通知依赖
+* modal: 弹窗依赖
 
 </div>
