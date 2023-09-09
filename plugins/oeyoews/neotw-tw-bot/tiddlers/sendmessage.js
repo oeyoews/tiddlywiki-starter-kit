@@ -20,7 +20,7 @@ module.exports = function twBot() {
   const tagCount = document.createElement('span');
   const tagCountText = $tw.wiki.filterTiddlers(`[tag[${defaultTag}]]`).length;
   tagCount.classList.add('text-gray-400', '-ml-1', '-mt-2');
-  tagCount.textContent = tagCountText;
+  tagCount.textContent = tagCountText ? tagCountText : '';
   selectTag.classList.add(
     'appearance-none',
     'border-none',
