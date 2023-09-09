@@ -64,12 +64,14 @@ module.exports = function twBot() {
   button.title = "send";
   button.disabled = true; // 不需要使用readonly
   const inputMessage = document.createElement("input");
-  inputMessage.autofocus = true;
+  // bug
+  // inputMessage.setAttribute("autofocus", true);
   inputMessage.classList.add(
     "w-full",
     "mx-2",
     "border-none",
     "placeholder-gray-300",
+    "bg-transparent",
     "caret-indigo-500"
   );
   inputMessage.placeholder = `任何${tags.map(({ tag }) => tag).join(",")}`;
