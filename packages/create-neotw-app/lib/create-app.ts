@@ -4,7 +4,7 @@ import ora from "ora";
 import chalk from "chalk";
 import prompts from "prompts";
 import { validateNpmName } from "./vaildate-pkg";
-import { notifyUpdate } from "./update-check";
+// import { notifyUpdate } from "./update-check";
 import { onPromptState } from "./onPromptState";
 import { checkGitInstallation } from "./check-git";
 
@@ -15,7 +15,7 @@ const spinner = ora("Loading ...");
 
 export default async function createApp() {
   checkGitInstallation();
-  await notifyUpdate();
+  // await notifyUpdate();
   const user = "oeyoews";
   const repo = "tiddlywiki-starter-kit";
   const initial = `${user}/${repo}`;
