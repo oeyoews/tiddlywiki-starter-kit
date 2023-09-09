@@ -2,6 +2,7 @@ import ora from "ora";
 import dotenv from "dotenv";
 import { exec } from "child_process";
 import generateTiddlyWikiInfo from "../tiddlywiki.config.mjs";
+import fs from 'fs'
 
 dotenv.config();
 
@@ -9,14 +10,8 @@ const buildDir = ".tiddlywiki";
 const log = ora("Building ...");
 
 const cleanBuildDir = () => {
-  log.start("开始清理");
-  exec(`rm -rf ${buildDir} && mkdir ${buildDir}`, (error, stdout, stderr) => {
-    if (error) {
-      console.error(`清理dist目录时出错： ${error.message}`);
-      return;
-    }
-    log.info("🗑️  清理dist目录");
-  });
+  fs.rmSync(buildDir, { recursive: true, force: true });
+  fs.mkdirSync(buildDir, { recursive: true });
 };
 
 const steps = [
@@ -28,11 +23,7 @@ const steps = [
 
 const buildStep = (name: string, description: string) => {
   log.start(description);
-  exec(`npx tiddlywiki . --build ${name}`, (error, stdout, stderr) => {
-    if (error) {
-      console.error(`构建${name}时出错： ${error.message}`);
-      return;
-    }
+  exec(`npx tiddlywiki . --build ${name}`, () => {
     log.info(description);
   });
 };
@@ -44,13 +35,8 @@ const buildAll = () => {
 };
 
 const copyFiles = () => {
-  exec(`cp -r files vercel.json ${buildDir}`, (error, stdout, stderr) => {
-    if (error) {
-      console.error(`复制文件时出错： ${error.message}`);
-      return;
-    }
-    log.info("📁 复制文件");
-  });
+  log.info("📁 复制文件");
+  exec(`cp -r files vercel.json ${buildDir}`);
 };
 
 async function build() {
