@@ -101,7 +101,7 @@ module.exports = function twBot() {
     localStorage.setItem("selectedTag", selectedTag);
     // create new tiddler
     $tw.wiki.addTiddler({
-      title: `tw-bot-${selectedTag}-${timestamp}`,
+      title: `${options.creator}-${selectedTag}-${timestamp}`,
       text: inputMessage.value,
       tags,
       ...options,
@@ -109,7 +109,9 @@ module.exports = function twBot() {
     // 需要await
     // inputMessage.value = "";
     // 统计当天记录的想法数量
-    const count = $tw.wiki.filterTiddlers(`[tag[${tags}]days[-1]]`).length;
+    const count = $tw.wiki.filterTiddlers(
+      `[creator[${options.creator}]days[-1]]`
+    ).length;
     Swal.fire({
       icon: "success",
       title: `这是你今天的第 ${count} 条记录`,
