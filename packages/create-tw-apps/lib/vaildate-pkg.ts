@@ -1,5 +1,5 @@
 // @ts-ignore
-import validate from "validate-npm-package-name";
+import validate from 'validate-npm-package-name';
 
 export function validateNpmName(name: string): {
   valid: boolean;

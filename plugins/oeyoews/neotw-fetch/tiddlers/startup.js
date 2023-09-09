@@ -17,7 +17,7 @@ fetch-readme module
   exports.after = ['startup'];
   exports.synchronous = true;
   exports.startup = async () => {
-    $tw.rootWidget.addEventListener('om-fetch-mdfile', async event => {
+    $tw.rootWidget.addEventListener('om-fetch-mdfile', async (event) => {
       const paramObject = event.paramObject || {};
       const time = new Date().getTime();
       const fileName = paramObject.fileName || `fetch-${time}`;

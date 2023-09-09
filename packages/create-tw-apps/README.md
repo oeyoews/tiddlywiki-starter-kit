@@ -2,7 +2,7 @@
 
 ![snapshot](https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/create-tw-app.png)
 
-* 快速创建一个 tiddlywiki-application(nodejs)
+- 快速创建一个 tiddlywiki-application(nodejs)
 
 ## usage
 
@@ -21,5 +21,5 @@ npm run build
 
 ## TODO
 
-* replace language.tid
-> 如果在安装tw后直接运行tw --init zh-Hans 命令也可以(这不是直接复制editions的文件夹, tiddlywiki.info 不同)
+- replace language.tid
+  > 如果在安装tw后直接运行tw --init zh-Hans 命令也可以(这不是直接复制editions的文件夹, tiddlywiki.info 不同)

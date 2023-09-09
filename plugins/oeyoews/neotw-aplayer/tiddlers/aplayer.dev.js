@@ -43,7 +43,7 @@ A music player widget that uses the APlayer library.
           '$:/plugins/oeyoews/neotw-aplayer/audios.json',
         ) || audiosDefault;
 
-      const formatedSongs = audios.map(item => {
+      const formatedSongs = audios.map((item) => {
         return {
           ...item,
           url: `https://music.163.com/song/media/outer/url?id=${item.id}`,

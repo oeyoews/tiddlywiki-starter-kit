@@ -10,35 +10,35 @@ neotw-read-files GET /images/:filepath
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
-  "use strict";
+  'use strict';
 
-  exports.method = "GET";
+  exports.method = 'GET';
 
   // exports.path = /^\/static\/(.+)$/;
   const customPath =
     $tw.wiki.getTiddlerText(
-      "$:/plugins/oeyoews/neotw-read-files/custom-path"
-    ) || "static";
+      '$:/plugins/oeyoews/neotw-read-files/custom-path',
+    ) || 'static';
   exports.path = new RegExp(`^/${customPath}/(.+)`);
 
   exports.handler = function (request, response, state) {
-    var path = require("path"),
-      fs = require("fs"),
-      util = require("util"),
+    var path = require('path'),
+      fs = require('fs'),
+      util = require('util'),
       suppliedFilename = $tw.utils.decodeURIComponentSafe(state.params[0]),
       baseFilename = path.resolve(state.boot.wikiPath, customPath),
       filename = path.resolve(baseFilename, suppliedFilename),
       extension = path.extname(filename);
     // Check that the filename is inside the wiki files folder
-    if (path.relative(baseFilename, filename).indexOf("..") !== 0) {
+    if (path.relative(baseFilename, filename).indexOf('..') !== 0) {
       // Send the file
       fs.readFile(filename, function (err, content) {
         var status,
           content,
-          type = "text/plain";
+          type = 'text/plain';
         if (err) {
           console.log(
-            "Error accessing file " + filename + ": " + err.toString()
+            'Error accessing file ' + filename + ': ' + err.toString(),
           );
           status = 404;
           content = "File '" + suppliedFilename + "' not found";
@@ -47,15 +47,15 @@ neotw-read-files GET /images/:filepath
           content = content;
           type = $tw.config.fileExtensionInfo[extension]
             ? $tw.config.fileExtensionInfo[extension].type
-            : "application/octet-stream";
+            : 'application/octet-stream';
         }
-        state.sendResponse(status, { "Content-Type": type }, content);
+        state.sendResponse(status, { 'Content-Type': type }, content);
       });
     } else {
       state.sendResponse(
         404,
-        { "Content-Type": "text/plain" },
-        "File '" + suppliedFilename + "' not found"
+        { 'Content-Type': 'text/plain' },
+        "File '" + suppliedFilename + "' not found",
       );
     }
   };

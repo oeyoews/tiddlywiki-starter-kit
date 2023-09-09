@@ -37,12 +37,12 @@ UnplashAPI widget
         showCancelButton: true,
         confirmButtonText: 'Save',
         showLoaderOnConfirm: true,
-        preConfirm: input => {
+        preConfirm: (input) => {
           if (input) {
             localStorage.setItem('unsplashApiKey', input.trim());
           }
         },
-      }).then(result => {
+      }).then((result) => {
         if (result.isConfirmed) {
           const inputNode = $tw.utils.domMaker('input', {
             type: 'text',
@@ -51,7 +51,7 @@ UnplashAPI widget
               placeholder: result.value,
             },
           });
-          inputNode.addEventListener('input', event => {
+          inputNode.addEventListener('input', (event) => {
             const unsplashAPI = event.target.value;
             localStorage.setItem('unsplashApiKey', unsplashAPI);
           });

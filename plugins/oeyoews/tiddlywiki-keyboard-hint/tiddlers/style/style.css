@@ -13,7 +13,9 @@
   font-weight: bold;
   border-radius: 4px;
   opacity: 0;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition:
+    transform 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
 }
 
 .key-container.visible {

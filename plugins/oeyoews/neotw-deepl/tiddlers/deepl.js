@@ -43,8 +43,8 @@ function deepl() {
       method: 'POST',
       body: params,
     })
-      .then(response => response.json())
-      .then(data => {
+      .then((response) => response.json())
+      .then((data) => {
         if (!data.message) {
           outputText.value = data.translations[0].text;
         } else {
@@ -80,7 +80,7 @@ function deepl() {
           showConfirmButton: false,
         });
       })
-      .catch(error => {
+      .catch((error) => {
         console.error('Error:', error);
       });
   });

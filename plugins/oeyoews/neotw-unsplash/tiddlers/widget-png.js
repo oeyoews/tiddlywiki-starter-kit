@@ -43,7 +43,7 @@ widget-unsplash widget
           ['data-fancybox']: '',
         },
       });
-      classNames.forEach(className => {
+      classNames.forEach((className) => {
         if (className) {
           imgNode.classList.add(className);
         }

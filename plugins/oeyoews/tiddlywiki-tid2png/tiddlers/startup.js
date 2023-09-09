@@ -9,15 +9,15 @@ tid2pdf module
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
-  "use strict";
+  'use strict';
 
-  exports.name = "tid2png-startup-hook";
-  exports.platforms = ["browser"];
-  exports.after = ["startup"];
+  exports.name = 'tid2png-startup-hook';
+  exports.platforms = ['browser'];
+  exports.after = ['startup'];
   exports.synchronous = true;
   exports.startup = () => {
-    const exportPng = require("./export-png.js");
-    $tw.rootWidget.addEventListener("om-export-png", (event) => {
+    const exportPng = require('./export-png.js');
+    $tw.rootWidget.addEventListener('om-export-png', (event) => {
       exportPng(event);
     });
   };

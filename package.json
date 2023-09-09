@@ -9,6 +9,7 @@
     "build": "bun run scripts/build-oeyoews-plus.ts",
     "vercel-build": "node scripts/build-oeyoews-plus.mjs",
     "start-pm2": "pm2 start ecosystem.config.js",
+    "format": "prettier --write .",
     "start": "node scripts/startup.mjs --build listen"
   },
   "dependencies": {
@@ -22,6 +23,7 @@
   "version": "3.349.0",
   "devDependencies": {
     "@types/prompts": "^2.4.4",
+    "prettier": "^3.0.3",
     "tw5-typed": "^0.3.9"
   }
 }

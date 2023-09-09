@@ -6,7 +6,7 @@ module-type: startup
 module
 
 \*/
-(function() {
+(function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';

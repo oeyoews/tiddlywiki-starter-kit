@@ -134,7 +134,9 @@ progress {
   right: 0;
   width: 100px;
   height: 100%;
-  box-shadow: 0 0 10px #f87171, 0 0 5px #f87171;
+  box-shadow:
+    0 0 10px #f87171,
+    0 0 5px #f87171;
   opacity: 1;
   -webkit-transform: rotate(3deg) translate(0, -4px);
   -ms-transform: rotate(3deg) translate(0, -4px);

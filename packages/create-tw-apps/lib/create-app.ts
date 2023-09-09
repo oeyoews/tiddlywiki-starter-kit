@@ -1,33 +1,32 @@
-import fs from "fs";
-import path from "path";
-import chalk from "chalk";
-import ora from "ora";
+import fs from 'fs';
+import path from 'path';
+import chalk from 'chalk';
+import ora from 'ora';
 // @ts-ignore
-import spawn from "cross-spawn";
-import prompts from "prompts";
-import { validateNpmName } from "./vaildate-pkg";
-import { notifyUpdate } from "./update-check";
-import { randomSixLetters } from "./randomSixLetters";
-import { onPromptState } from "./onPromptState";
+import spawn from 'cross-spawn';
+import prompts from 'prompts';
+import { validateNpmName } from './vaildate-pkg';
+import { notifyUpdate } from './update-check';
+import { randomSixLetters } from './randomSixLetters';
+import { onPromptState } from './onPromptState';
 
-import { getPkgManager } from "./get-pkg-manager";
+import { getPkgManager } from './get-pkg-manager';
 
 export default async function createApp() {
   // await notifyUpdate();
-
-  const spinner = ora("Creating project...");
+  const spinner = ora('Creating project...');
   let targetDir: string;
   const defaultPackageManager = getPkgManager();
 
   const { projectName } = await prompts({
     onState: onPromptState,
-    type: "text",
-    name: "projectName",
-    message: "Project name",
+    type: 'text',
+    name: 'projectName',
+    message: 'Project name',
     validate: (value) => {
       const validation = validateNpmName(path.basename(path.resolve(value)));
       if (!validation.valid) {
-        return "Invalid project name: " + validation.problems![0];
+        return 'Invalid project name: ' + validation.problems![0];
       }
       if (fs.existsSync(value)) {
         return `${value} already exists`;
@@ -39,24 +38,24 @@ export default async function createApp() {
 
   targetDir = projectName.trim();
 
-  const allPackManagers = ["npm", "yarn", "pnpm"];
+  const allPackManagers = ['npm', 'yarn', 'pnpm'];
   const choices = allPackManagers.map((pm) => ({
     title: pm,
     value: pm,
     selected: defaultPackageManager === pm,
-    description: defaultPackageManager === pm ? "Default" : "",
+    description: defaultPackageManager === pm ? 'Default' : '',
   }));
 
   const { packageManager } = await prompts({
     onState: onPromptState,
-    type: "select",
-    name: "packageManager",
-    message: "Select manager",
+    type: 'select',
+    name: 'packageManager',
+    message: 'Select manager',
     choices,
     initial: 0,
   });
 
-  const versionChoices = ["latest", "5.3.1", "5.2.7", "other"];
+  const versionChoices = ['latest', '5.3.1', '5.2.7', 'other'];
 
   /* const { askedVersion } = await prompts({
     onState: onPromptState,
@@ -84,7 +83,7 @@ export default async function createApp() {
   // @ts-ignore
   let { tiddlywikiPackage } = await prompts({
     onState: onPromptState,
-    type: "select",
+    type: 'select',
     choices: versionChoices.map((v) => ({
       title: v,
       value: `tiddlywiki@${v}`,
@@ -92,24 +91,24 @@ export default async function createApp() {
           ? `github:Jermolene/TiddlyWiki5#${commit}`
           : `tiddlywiki@${v}`, */
     })),
-    name: "tiddlywikiPackage",
+    name: 'tiddlywikiPackage',
     message: `select tiddlywiki version`,
     initial: 0,
   });
 
-  if (tiddlywikiPackage === "tiddlywiki@other") {
+  if (tiddlywikiPackage === 'tiddlywiki@other') {
     const { otherTiddlyWikiPackage } = await prompts({
       onState: onPromptState,
-      type: "text",
-      name: "otherTiddlyWikiPackage",
+      type: 'text',
+      name: 'otherTiddlyWikiPackage',
       message: `Enter version`,
-      initial: "5.2.1",
+      initial: '5.2.1',
       validate: (input) => {
         const versionPattern = /^\d+\.\d+\.\d+$/; // 正则表达式模式
         if (versionPattern.test(input)) {
           return true; // 验证通过
         } else {
-          return "输入值必须是 x.x.x 数字格式"; // 验证失败时返回错误消息
+          return '输入值必须是 x.x.x 数字格式'; // 验证失败时返回错误消息
         }
       },
     });
@@ -148,23 +147,23 @@ export default async function createApp() {
 
   const { confirm } = await prompts({
     onState: onPromptState,
-    type: "confirm",
-    name: "confirm",
+    type: 'confirm',
+    name: 'confirm',
     message: `Create ${targetDir} ?`,
   });
 
-  const templateDir = path.join(__dirname, "template");
+  const templateDir = path.join(__dirname, 'template');
   if (confirm) {
     spinner.start();
     fs.mkdirSync(targetDir);
     await Promise.all([
       fs.copyFileSync(
-        path.join(templateDir, "package.json"),
-        `${targetDir}/package.json`
+        path.join(templateDir, 'package.json'),
+        `${targetDir}/package.json`,
       ),
       fs.copyFileSync(
-        path.join(templateDir, "tiddlywiki.info"),
-        `${targetDir}/tiddlywiki.info`
+        path.join(templateDir, 'tiddlywiki.info'),
+        `${targetDir}/tiddlywiki.info`,
       ),
     ]);
 
@@ -177,7 +176,7 @@ export default async function createApp() {
       fs.writeFileSync(infoFilePath, updatedConfig, "utf8");
     } */
 
-    const child = spawn(packageManager, ["install", tiddlywikiPackage], {
+    const child = spawn(packageManager, ['install', tiddlywikiPackage], {
       // stdio: "inherit", // ignore
       cwd: targetDir,
       env: {
@@ -185,19 +184,19 @@ export default async function createApp() {
       },
     });
 
-    child.on("close", (code: number) => {
+    child.on('close', (code: number) => {
       if (code !== 0) {
-        spinner.fail(chalk.red.bold("Failed to install packages"));
+        spinner.fail(chalk.red.bold('Failed to install packages'));
       }
-      spinner.succeed(chalk.green.bold("Packages installed\n"));
+      spinner.succeed(chalk.green.bold('Packages installed\n'));
       spinner.succeed(
         chalk.cyan.bold(
-          "cd " +
+          'cd ' +
             chalk.yellow.underline(targetDir) +
-            " && " +
+            ' && ' +
             packageManager +
-            " run start\n"
-        )
+            ' run start\n',
+        ),
       );
     });
   }

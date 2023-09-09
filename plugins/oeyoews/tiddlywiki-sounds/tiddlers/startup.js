@@ -37,7 +37,7 @@ module-type: startup
       }).play();
     };
 
-    $tw.rootWidget.addEventListener('om-sound', event => {
+    $tw.rootWidget.addEventListener('om-sound', (event) => {
       const paramObject = event.paramObject || {};
       const sound = paramObject.sound || 'menu-open.mp3';
       howler(sound);

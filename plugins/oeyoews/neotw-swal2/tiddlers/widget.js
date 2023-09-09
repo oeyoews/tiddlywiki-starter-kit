@@ -44,7 +44,7 @@ neotw-swal2 widget
           },
         ],
       });
-      classNames.forEach(className => {
+      classNames.forEach((className) => {
         if (className) {
           buttonNode.classList.add(className);
         }
@@ -64,7 +64,7 @@ neotw-swal2 widget
         showConfirmButton: false,
         timer: 1500,
         timerProgressBar: false,
-        didOpen: toast => {
+        didOpen: (toast) => {
           toast.addEventListener('mouseenter', Swal.stopTimer);
           toast.addEventListener('mouseleave', Swal.resumeTimer);
         },

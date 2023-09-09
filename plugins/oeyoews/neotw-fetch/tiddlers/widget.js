@@ -8,7 +8,7 @@ fetch-mdfile widget
 \*/
 // TODO: refresh textContent
 // debounce
-(function() {
+(function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
@@ -29,7 +29,7 @@ fetch-mdfile widget
 
       const timestamp = new Date().getTime();
       let filename = this.getAttribute('filename', `MDFile-${timestamp}`);
-      filename += " 📝";
+      filename += ' 📝';
       const modified = $tw.wiki.getTiddler(filename)?.fields.modified;
       const url = this.getAttribute(
         'url',

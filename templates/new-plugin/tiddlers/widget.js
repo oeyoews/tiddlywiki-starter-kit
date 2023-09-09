@@ -41,7 +41,7 @@ ${pluginname} widget
           },
         ],
       });
-      classNames.forEach(className => {
+      classNames.forEach((className) => {
         if (className) {
           buttonNode.classList.add(className);
         }

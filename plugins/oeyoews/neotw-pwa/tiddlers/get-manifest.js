@@ -9,19 +9,19 @@ GET /manifest.json
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
-  "use strict";
+  'use strict';
 
-  exports.method = "GET";
+  exports.method = 'GET';
 
   exports.path = /^\/manifest.json$/;
 
   exports.handler = function (request, response, state) {
-    const data = state.wiki.getTiddlerText("$:/manifest.json");
+    const data = state.wiki.getTiddlerText('$:/manifest.json');
     state.sendResponse(
       200,
-      { "Content-Type": "application/json" },
+      { 'Content-Type': 'application/json' },
       data,
-      "utf8"
+      'utf8',
     );
   };
 })();

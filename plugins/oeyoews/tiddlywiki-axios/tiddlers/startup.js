@@ -21,14 +21,14 @@ axios module
     $tw.rootWidget.addEventListener('om-axios-test', () => {
       axios
         .get('https://htk.vercel.app/api')
-        .then(response => {
+        .then((response) => {
           Swal.fire({
             title: 'Axios Test',
             icon: 'success',
             text: `${response.data.text} @${response.data.author}`,
           });
         })
-        .catch(error => {
+        .catch((error) => {
           console.log(error);
         });
     });

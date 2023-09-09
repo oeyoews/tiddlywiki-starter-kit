@@ -5,14 +5,14 @@ module-type: library
 
 export
 \*/
-const html2canvas = require("html2canvas.min.js");
+const html2canvas = require('html2canvas.min.js');
 
 module.exports = function exportPng(event) {
   const downloadSvg = $tw.wiki.getTiddlerText(
-    "$:/plugins/oeyoews/tiddlywiki-tid2png/download.svg"
+    '$:/plugins/oeyoews/tiddlywiki-tid2png/download.svg',
   );
 
-  typeof NProgress !== "undefined" && NProgress.start();
+  typeof NProgress !== 'undefined' && NProgress.start();
   const title = event.paramObject?.title || event.tiddlerTitle;
   const selector = `[data-tiddler-title="${title}"]`;
   // html2canvas 不支持 cloneNode, 在widget中可以直接移除popup,因为widget会重新渲染, popup 会自动恢复? 但是这是一个listener, 不建议直接修改dom;
@@ -20,9 +20,9 @@ module.exports = function exportPng(event) {
   const element = document.querySelector(selector);
 
   const hideElements = [
-    ".tc-tiddler-controls",
-    ".tc-subtitle",
-    ".tc-tags-wrapper",
+    '.tc-tiddler-controls',
+    '.tc-subtitle',
+    '.tc-tags-wrapper',
   ];
 
   function hideElementsWithSelectors(selectors, display) {
@@ -34,61 +34,61 @@ module.exports = function exportPng(event) {
     });
   }
 
-  hideElementsWithSelectors(hideElements, "none");
+  hideElementsWithSelectors(hideElements, 'none');
 
   html2canvas(element, {
     useCORS: true,
   }).then((canvas) => {
     canvas.toBlob((blob) => {
       const sizeInMB = (blob.size / (1024 * 1024)).toFixed(2);
-      const imgData = canvas.toDataURL("image/png", 0.8); // 转换canvas为PNG格式的数据URL
+      const imgData = canvas.toDataURL('image/png', 0.8); // 转换canvas为PNG格式的数据URL
 
       // 这个图片是用来预览的
       const imgNode = new Image();
       imgNode.src = imgData;
-      imgNode.crossOrigin = "";
-      imgNode.classList.add("max-w-3xl");
+      imgNode.crossOrigin = '';
+      imgNode.classList.add('max-w-3xl');
 
-      const containerNode = document.createElement("div");
+      const containerNode = document.createElement('div');
 
       // 只预览部分内容
       containerNode.classList.add(
-        "rounded-lg",
-        "overflow-y-hidden",
-        "max-h-screen",
-        "max-w-3xl",
-        "m-0"
+        'rounded-lg',
+        'overflow-y-hidden',
+        'max-h-screen',
+        'max-w-3xl',
+        'm-0',
       );
       containerNode.appendChild(imgNode);
-      typeof NProgress !== "undefined" && NProgress.done();
+      typeof NProgress !== 'undefined' && NProgress.done();
 
       const downloadPng = (href) => {
-        const linkNode = document.createElement("a");
+        const linkNode = document.createElement('a');
         linkNode.href = href;
         linkNode.download = `${title}.png`;
-        linkNode.style.display = "none";
+        linkNode.style.display = 'none';
         document.body.appendChild(linkNode);
         linkNode.click();
         document.body.removeChild(linkNode);
       };
 
-      typeof Swal !== "undefined"
+      typeof Swal !== 'undefined'
         ? Swal.fire({
-          html: containerNode,
-          title: `Image size: ${sizeInMB} MB`,
-          showCancelButton: true,
-          // confirmButtonColor: "bg-blue-300",
-          // cancelButtonColor: "bg-red-300",
-          cancelButtonText: "Cancel",
-          reverseButtons: true,
-          confirmButtonText: `Download ${downloadSvg}`,
-          customClass: "w-auto my-8",
-        }).then((result) => {
-          result.isConfirmed && downloadPng(imgData);
-        })
+            html: containerNode,
+            title: `Image size: ${sizeInMB} MB`,
+            showCancelButton: true,
+            // confirmButtonColor: "bg-blue-300",
+            // cancelButtonColor: "bg-red-300",
+            cancelButtonText: 'Cancel',
+            reverseButtons: true,
+            confirmButtonText: `Download ${downloadSvg}`,
+            customClass: 'w-auto my-8',
+          }).then((result) => {
+            result.isConfirmed && downloadPng(imgData);
+          })
         : downloadPng(imgData);
     });
   });
 
-  hideElementsWithSelectors(hideElements, "");
+  hideElementsWithSelectors(hideElements, '');
 };

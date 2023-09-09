@@ -4,7 +4,7 @@
 
 - 在window上需要git, 不知道为什么git 检测在windows上没用
 - support packagemanager option
-https://github.com/vercel/next.js/blob/canary/packages/create-next-app/index.ts#L24
+  https://github.com/vercel/next.js/blob/canary/packages/create-next-app/index.ts#L24
 - 使用commander支持options arg
 - 使用cross-spawn 执行跨平台命令
 - version

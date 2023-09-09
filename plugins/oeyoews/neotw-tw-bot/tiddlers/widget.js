@@ -9,11 +9,11 @@ neotw-tw-bot widget
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
-  "use strict";
+  'use strict';
   // 是$:/plugins/oeyoews/neotw-tw-bot/sendmessage.js 的简写, 和真实文件路径无关, 但最好相同, 方便编辑器识别, 就不用写.js 后缀
-  const twBot = require("./sendmessage");
+  const twBot = require('./sendmessage');
 
-  const Widget = require("$:/core/modules/widgets/widget.js").widget;
+  const Widget = require('$:/core/modules/widgets/widget.js').widget;
 
   class TwBot extends Widget {
     constructor(parseTreeNode, options) {
@@ -38,5 +38,5 @@ neotw-tw-bot widget
     }
   }
 
-  exports["tw-bot"] = TwBot;
+  exports['tw-bot'] = TwBot;
 })();

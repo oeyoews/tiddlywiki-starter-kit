@@ -67,7 +67,7 @@ Extension markdown-it
 
     md.use(emoji).use(toc).use(task).use(abbr).use(smartarrows);
 
-    containers.forEach(container => {
+    containers.forEach((container) => {
       const { name, label, color } = container;
       const config = createContainerConfig(name.toUpperCase(), label, color);
       md.use(containerPlugin, name.toLowerCase(), config);

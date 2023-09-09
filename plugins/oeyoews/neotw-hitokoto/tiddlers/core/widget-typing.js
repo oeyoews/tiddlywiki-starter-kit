@@ -46,8 +46,8 @@ Hitokoto typing widget
 
       const fetchHitokoto = () => {
         fetch('https://v1.hitokoto.cn')
-          .then(response => response.json())
-          .then(data => {
+          .then((response) => response.json())
+          .then((data) => {
             const hitokotoText = data.hitokoto;
             const hitokotoFrom = '@' + data.from;
             hitokotoNode.textContent = `${hitokotoText} ${hitokotoFrom}`;

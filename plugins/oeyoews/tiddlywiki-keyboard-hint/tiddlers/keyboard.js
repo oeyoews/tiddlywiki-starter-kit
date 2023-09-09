@@ -74,7 +74,7 @@ function updateKey(
     while (keysEl.firstChild) {
       keysEl.removeChild(keysEl.firstChild);
     }
-    pressedKeys.forEach(key => {
+    pressedKeys.forEach((key) => {
       const keyEl = document.createElement('span');
       keyEl.classList.add('key');
       const keyName = key === ' ' ? 'Space' : key;

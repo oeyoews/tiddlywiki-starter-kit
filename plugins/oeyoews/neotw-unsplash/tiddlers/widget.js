@@ -66,7 +66,7 @@ neotw-unsplash widget
             showCancelButton: true,
             confirmButtonText: 'Save',
             showLoaderOnConfirm: true,
-            preConfirm: input => {
+            preConfirm: (input) => {
               if (input) {
                 window.localStorage.setItem('unsplashApiKey', input.trim());
               }
@@ -132,7 +132,7 @@ neotw-unsplash widget
           resultsContainer.textContent = '';
 
           if (Array.isArray(photos)) {
-            photos.forEach(photo => {
+            photos.forEach((photo) => {
               const element = createPhotoElement(photo);
               resultsContainer.appendChild(element);
             });

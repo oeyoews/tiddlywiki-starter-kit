@@ -1,12 +1,12 @@
-import prompts from "prompts";
-import fs from "fs";
-import { exec } from "child_process";
-import path from "path";
+import prompts from 'prompts';
+import fs from 'fs';
+import { exec } from 'child_process';
+import path from 'path';
 
 const onPromptState = (state: { aborted: any }) => {
   if (state.aborted) {
-    process.stdout.write("\x1B[?25h");
-    process.stdout.write("\n");
+    process.stdout.write('\x1B[?25h');
+    process.stdout.write('\n');
     process.exit(0);
   }
 };
@@ -21,7 +21,7 @@ async function processFilesRecursively(directory: string, pluginname: string) {
     if (stats.isDirectory()) {
       await processFilesRecursively(filePath, pluginname);
     } else {
-      let content = fs.readFileSync(filePath, "utf8");
+      let content = fs.readFileSync(filePath, 'utf8');
       content = content.replace(/\$\{pluginname\}/g, pluginname);
       fs.writeFileSync(filePath, content);
     }
@@ -29,14 +29,14 @@ async function processFilesRecursively(directory: string, pluginname: string) {
 }
 
 async function newPlugin() {
-  const template = "templates/new-plugin";
+  const template = 'templates/new-plugin';
 
   const { pluginname } = await prompts({
     onState: onPromptState,
-    type: "text",
-    name: "pluginname",
-    message: "create plugin",
-    initial: "pluginname",
+    type: 'text',
+    name: 'pluginname',
+    message: 'create plugin',
+    initial: 'pluginname',
     validate: (value) => {
       if (fs.existsSync(`plugins/oeyoews/${value}`)) {
         return `${value} folder already exists`;
@@ -45,7 +45,7 @@ async function newPlugin() {
     },
   });
 
-  const target = path.join("plugins/oeyoews", pluginname);
+  const target = path.join('plugins/oeyoews', pluginname);
 
   fs.mkdirSync(target, { recursive: true });
   exec(`cp -r ${template}/* ${target}`, () => {
@@ -56,8 +56,8 @@ async function newPlugin() {
     } catch (error) {
       fs.rmSync(target, { recursive: true });
       console.log(error);
-    };
-  })
+    }
+  });
 }
 
 newPlugin();

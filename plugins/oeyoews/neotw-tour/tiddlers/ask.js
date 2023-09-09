@@ -20,7 +20,7 @@ type: application/javascript
       showCancelButton: true,
       confirmButtonText: '需要,我是新手',
       cancelButtonText: '我是老手, 不需要',
-    }).then(result => {
+    }).then((result) => {
       if (result.value) {
         const driverObj = driver({
           showProgress: true,

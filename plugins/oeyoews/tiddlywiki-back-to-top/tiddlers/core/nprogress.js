@@ -9,15 +9,15 @@ nprogress module
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
-  "use strict";
+  'use strict';
 
-  exports.name = "nprogress-startup-hook";
-  exports.platforms = ["browser"];
-  exports.after = ["load-modules"];
+  exports.name = 'nprogress-startup-hook';
+  exports.platforms = ['browser'];
+  exports.after = ['load-modules'];
   exports.synchronous = true;
   exports.startup = () => {
     try {
-      window.NProgress = require("nprogress.min.js");
+      window.NProgress = require('nprogress.min.js');
       NProgress.start();
       const startTime = performance.now();
       window.onload = function () {

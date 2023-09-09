@@ -1,7 +1,7 @@
 // load environment variables
-import dotenv from "dotenv";
-import { TiddlyWiki } from "tiddlywiki";
-import generateTiddlyWikiInfo from "../tiddlywiki.config.mjs";
+import dotenv from 'dotenv';
+import { TiddlyWiki } from 'tiddlywiki';
+import generateTiddlyWikiInfo from '../tiddlywiki.config.mjs';
 
 dotenv.config();
 

@@ -7,8 +7,8 @@ deprecated hitokoto
 
 function hitokoto_footer(text = '#htext', author = '#hauthor') {
   fetch('https://v1.hitokoto.cn')
-    .then(response => response.json())
-    .then(data => {
+    .then((response) => response.json())
+    .then((data) => {
       const hitokoto = document.querySelector(text);
       let data_ = data.hitokoto;
       // if (data_.length > 28) {

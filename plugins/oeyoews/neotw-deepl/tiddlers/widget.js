@@ -6,7 +6,7 @@ module-type: widget
 neotw-deepl widget
 
 \*/
-(function() {
+(function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
