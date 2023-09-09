@@ -135,14 +135,26 @@ module.exports = function twBot() {
     const count = $tw.wiki.filterTiddlers(
       `[creator[${options.creator}]days[-1]]`
     ).length;
-    Swal.fire({
-      icon: "success",
-      title: `这是你今天的第 ${count} 条记录`,
-      showConfirmButton: false,
-      timer: 1500,
-      toast: true,
-      position: "top-end",
-    });
+
+    function createAndDisplayNotification(count) {
+      const tempTiddler = "$:/temp/tw-bot/notify";
+      $tw.wiki.addTiddler({
+        title: tempTiddler,
+        text: `这是你今天的第 ${count} 条记录`,
+      });
+      $tw.notifier.display(tempTiddler);
+    }
+
+    typeof Swal !== "undefined"
+      ? Swal.fire({
+          icon: "success",
+          title: `这是你今天的第 ${count} 条记录`,
+          showConfirmButton: false,
+          timer: 1500,
+          toast: true,
+          position: "top-end",
+        })
+      : createAndDisplayNotification(count);
   }
   return form;
 };
