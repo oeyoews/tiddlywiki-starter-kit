@@ -12,10 +12,10 @@ subtitle: {{$:/plugins/oeyoews/tiddlywiki-modal-ui/close-modal}}
   <$tw-bot />
 </div>
 
+<!-- use grid -->
 <div class="space-y-4">
 <$list filter="[creator[tw-bot]days[-1]!sort[created]limit[3]]" variable="tiddler">
 <div class="rounded bg-indigo-300/80 p-2">
   <$macrocall $name="translink" title={{{ [<tiddler>] }}}}/>
 </div>
 </$list>
-</div>
