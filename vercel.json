@@ -1,6 +1,6 @@
 {
   "outputDirectory": ".tiddlywiki",
-  "installCommand": "pnpm i --frozen-lockfile --prod",
+  "installCommand": "pnpm i --prod",
   "buildCommand": "pnpm vercel:tiddlers && pnpm vercel-build",
   "cleanUrls": true,
   "trailingSlash": false,
