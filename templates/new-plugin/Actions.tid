@@ -1,5 +1,5 @@
 tags: $:/tags/StartupAction/PostRender
-title: $:/plugins/${username}/${pluginname}/Action
+title: $:/plugins/oeyoews/${pluginname}/Action
 
 <$list filter="[{$:/info/url/search}match[?layout=${pluginname}]]">
   <$action-setfield $tiddler="$:/layout" text="$:/plugins/oeyoews/${pluginname}/Layout"/>

@@ -1,5 +1,5 @@
 /*\
-title: $:/plugins/${username}/${pluginname}/widget.js
+title: $:/plugins/oeyoews/${pluginname}/widget.js
 type: application/javascript
 module-type: widget
 

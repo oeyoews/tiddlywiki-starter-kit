@@ -1,4 +1,4 @@
-title: $:/plugins/${username}/${pluginname}/Layout
+title: $:/plugins/oeyoews/${pluginname}/Layout
 tags: $:/tags/Layout
 name: {{$:/plugins/oeyoews/${pluginname}/icon}}
 description: {{$:/plugins/oeyoews/${pluginname}/readme!!description}}
