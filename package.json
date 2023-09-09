@@ -7,6 +7,7 @@
     "vercel:tiddlers": "tiged oeyoews/neotw-tiddlers tiddlers",
     "new-plugin": "bun run scripts/new-plugin.ts",
     "build": "bun run scripts/build-oeyoews-plus.ts",
+    "vercel-build": "node run scripts/build-oeyoews-plus.ts",
     "start-pm2": "pm2 start ecosystem.config.js",
     "start": "node scripts/startup.mjs --build listen"
   },
