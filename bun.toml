@@ -1,0 +1,19 @@
+[install]
+
+# whether to install optionalDependencies
+optional = true
+
+# whether to install devDependencies
+dev = true
+
+# whether to install peerDependencies
+peer = false
+
+# equivalent to `--production` flag
+production = false
+
+# equivalent to `--frozen-lockfile` flag
+frozenLockfile = true
+
+# equivalent to `--dry-run` flag
+dryRun = false
