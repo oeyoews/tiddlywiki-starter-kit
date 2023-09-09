@@ -1,26 +1,9 @@
-[
-  {
-    "tag": "一言",
-    "color": "indigo"
-  },
-  {
-    "tag": "想法",
-    "color": "blue"
-  },
-  {
-    "tag": "任务",
-    "color": "green"
-  },
-  {
-    "tag": "工作",
-    "color": "yellow"
-  },
-  {
-    "tag": "生活",
-    "color": "orange"
-  },
-  {
-    "tag": "其他",
-    "color": "red"
-  }
-]
+{
+  "creator": "tw-bot",
+  "一言": "indigo",
+  "想法": "blue",
+  "任务": "green",
+  "工作": "yellow",
+  "生活": "orange",
+  "其他": "red"
+}

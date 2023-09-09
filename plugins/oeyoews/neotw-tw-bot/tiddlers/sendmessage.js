@@ -8,9 +8,15 @@ module-type: library
 
 \*/
 module.exports = function twBot() {
-  const tags = $tw.wiki.getTiddlerData(
+  const tagsDict = $tw.wiki.getTiddlerData(
     "$:/plugins/oeyoews/neotw-tw-bot/tags.json"
   );
+  const tags = Object.entries(tagsDict)
+    .filter(([creator]) => creator !== "creator")
+    .map(([tag, color]) => ({
+      tag,
+      color,
+    }));
   const selectedTag = localStorage.getItem("selectedTag");
   const defaultTag = selectedTag || tags[0].tag; // 如果localStorage中没有存储标签，则使用第一个标签作为默认标签
   const selectTag = document.createElement("select");
@@ -18,9 +24,21 @@ module.exports = function twBot() {
     "appearance-none",
     "border-none",
     "p-2",
-    "rounded",
-    "cursor-pointer"
+    "rounded-sm",
+    "cursor-pointer",
+    `bg-${tagsDict[defaultTag]}-300`
   );
+  selectTag.addEventListener("change", function () {
+    // 移除以"bg-"开头的类名
+    localStorage.setItem("selectedTag", selectTag.value);
+    selectTag.classList.forEach((className) => {
+      if (className.startsWith("bg-")) {
+        selectTag.classList.remove(className);
+      }
+    });
+    // add new color
+    selectTag.classList.add(`bg-${tagsDict[selectTag.value]}-300`);
+  });
   tags.forEach(({ tag, color }) => {
     const option = document.createElement("option");
     option.value = tag;
@@ -77,6 +95,7 @@ module.exports = function twBot() {
   inputMessage.placeholder = `任何${tags.map(({ tag }) => tag).join(",")}`;
   inputMessage.addEventListener("input", function () {
     // 检查输入框的值是否为空，然后设置按钮的禁用状态
+    // inputMessage.classList.add(`bg-${tagsDict[selectTag.value]}-300`);
     button.disabled = !inputMessage.value;
     if (button.disabled) {
       button.classList.add("cursor-not-allowed");
@@ -98,12 +117,11 @@ module.exports = function twBot() {
   const options = {
     created: timestamp,
     modified: timestamp,
-    creator: "tw-bot", // TODO: 抽离出来配置
+    creator: tagsDict.creator,
   };
 
   function sentMessage(tag) {
     const tags = tag;
-    localStorage.setItem("selectedTag", tag);
     // create new tiddler
     $tw.wiki.addTiddler({
       title: `${options.creator}-${tag}-${timestamp}`,

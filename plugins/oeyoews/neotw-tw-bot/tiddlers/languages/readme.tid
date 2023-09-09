@@ -14,30 +14,26 @@ title: $:/languages/neotw-tw-bot/readme
 
 !! 配置
 
-* <$button class="p-2 bg-indigo-400/60">
+* <$button class="p-2 bg-indigo-300/60">
   🩹 放置在侧边栏
   <$action-listops  $tiddler="$:/plugins/oeyoews/neotw-tw-bot/tw-bot.tid" $tags="+[toggle[$:/tags/SideBar]]" />
 </$button>
-* <$button class="p-2 bg-indigo-400/60">
+* <$button class="p-2 bg-purple-300/60">
   🩹 放置在控制栏
   <$action-listops  $tiddler="$:/plugins/oeyoews/neotw-tw-bot/ui" $tags="+[toggle[$:/tags/PageControls]]" />
 </$button>
 
 * 生成条目的固定格式为 `<creator>-<tag>-<timestamp>`
-* [[配置👉|$:/plugins/oeyoews/neotw-tw-bot/tags.json]]
 * <$button class="p-2 bg-rose-500">
 重置 🛺
 <$action-deletetiddler $filter="[[$:/plugins/oeyoews/neotw-tw-bot/tags.json]]"/>
 </$button>
-
-!! 提示
-
-生成的每个条目都有 `creator` 字段, 默认值是 `tw-bot`
-
-<!-- <$button class="bg-rose-400 p-2 rounded"> -->
-<!--   delete tw-bot created tiddlers -->
-<!--   <$action-deletetiddler $filter="[prefix[tw-bot/messages/]creator[tw-bot]]"/> -->
-<!-- </$button> -->
+* 生成的每个条目都有 `creator` 字段, 默认值是 `tw-bot`, 支持更改 [[creator👉|$:/plugins/oeyoews/neotw-tw-bot/tags.json]]
+* 生成的每个条目都有 `tag` 字段, 支持更改 [[tag👉|$:/plugins/oeyoews/neotw-tw-bot/tags.json]]
+* <$button class="bg-rose-400 p-2 rounded">
+ 🔥 删除此插件产生的所有记录条目
+  <$action-deletetiddler $filter="[prefix[tw-bot/messages/]creator[tw-bot]]"/>
+</$button>
 
 !! 依赖插件
 
