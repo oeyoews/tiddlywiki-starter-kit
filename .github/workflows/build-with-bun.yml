@@ -24,7 +24,7 @@ jobs:
           version: 8
       - uses: oven-sh/setup-bun@v1
         with:
-        bun-version: latest
+          bun-version: latest
       - name: Install Dependency
         run: bun install
 
