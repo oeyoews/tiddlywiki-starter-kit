@@ -26,7 +26,7 @@ const steps = [
   { cmd: "themes", description: "🎨 构建主题" },
 ];
 
-const buildStep = (name, description) => {
+const buildStep = (name: string, description: string) => {
   log.start(description);
   exec(`npx tiddlywiki . --build ${name}`, (error, stdout, stderr) => {
     if (error) {
