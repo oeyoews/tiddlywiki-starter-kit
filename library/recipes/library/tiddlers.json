@@ -1,16 +1,16 @@
 [
     {
         "title": "$:/plugins/oeyoews/NPL",
-        "description": "Npl",
+        "description": "NPL",
         "author": "oeyoews",
         "version": "0.0.1",
-        "core-version": ">=5.2.5",
+        "core-version": ">=5.3.0",
         "type": "application/json",
         "plugin-type": "plugin",
-        "name": "Npl",
-        "dependents": "",
+        "name": "NPL",
         "list": "readme",
-        "readme": "<div class=\"prose max-w-none prose-indigo m-auto\">\n\n!! Npl\n\n</div>\n",
+        "dependents": "",
+        "readme": "!! Npl\n",
         "requires-reload": "no",
         "icon": "data:image/svg+xml,%3Csvg%20stroke%3D%22currentColor%22%20fill%3D%22%23aaa%22%20stroke-width%3D%220%22%20viewBox%3D%220%200%2024%2024%22%20height%3D%221em%22%20width%3D%221em%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M7%203h2v18H7zM4%203h2v18H4zm6%200h2v18h-2zm9.062%2017.792-6.223-16.89%201.877-.692%206.223%2016.89z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%0A"
     },
