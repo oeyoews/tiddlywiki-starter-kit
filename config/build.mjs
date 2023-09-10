@@ -1,11 +1,16 @@
-/** @type {import('tw5-typed').ITiddlyWikiInfoJSONBuild} */
+import dotenv from 'dotenv';
 
+dotenv.config;
+
+const OUTPUTDIR = process.env.OUTPUTDIR || '.tiddlywiki';
+
+/** @type {import('tw5-typed').ITiddlyWikiInfoJSONBuild} */
 export default {
   // build index.html
   index: [
     '--verbose',
     '--output',
-    '.tiddlywiki',
+    OUTPUTDIR,
     '--deletetiddlers',
     '$:/StoryList',
     '--render',
@@ -24,22 +29,28 @@ export default {
     '--deletetiddlers',
     '$:/StoryList',
   ],
-  // empty edition
-  editions: [
-    '--verbose',
+  // 生成 plugin library
+  library: [
     '--output',
-    '.tiddlywiki/editions',
-    '--render',
-    '$:/plugins/tiddlywiki/tiddlyweb/save/offline',
+    `${OUTPUTDIR}/library`,
+    '--makelibrary',
+    '$:/UpgradeLibrary',
+    '--savelibrarytiddlers',
+    '$:/UpgradeLibrary',
+    '[prefix[$:/plugins/oeyoews]] [prefix[$:/themes/nico]]',
+    'recipes/library/tiddlers/',
+    '$:/UpgradeLibrary/List',
+    '--savetiddler',
+    '$:/UpgradeLibrary/List',
+    'recipes/library/tiddlers.json',
+    '--rendertiddler',
+    '$:/plugins/tiddlywiki/pluginlibrary/library.template.html',
     'index.html',
     'text/plain',
-    '--savetiddler',
-    '$:/favicon.ico',
-    'favicon.ico',
     '--deletetiddlers',
-    '$:/StoryList',
+    '[[$:/UpgradeLibrary]] [[$:/UpgradeLibrary/List]]',
   ],
-  // Generate plugins json format
+  /* // Generate plugins json format
   plugins: [
     '--verbose',
     '--output',
@@ -63,34 +74,5 @@ export default {
     '$:/core/templates/json-tiddler',
     '--deletetiddlers',
     '$:/StoryList',
-  ],
-  // 启动 tiddlywiki
-  listen: [
-    '--listen',
-    'port=8080',
-    'anon-username=oeyoews',
-    'host=0.0.0.0',
-    '--verbose',
-  ],
-  // 生成 plugin library
-  library: [
-    '--output',
-    '.tiddlywiki/library',
-    '--makelibrary',
-    '$:/UpgradeLibrary',
-    '--savelibrarytiddlers',
-    '$:/UpgradeLibrary',
-    '[prefix[$:/plugins/oeyoews]] [prefix[$:/themes/nico]]',
-    'recipes/library/tiddlers/',
-    '$:/UpgradeLibrary/List',
-    '--savetiddler',
-    '$:/UpgradeLibrary/List',
-    'recipes/library/tiddlers.json',
-    '--rendertiddler',
-    '$:/plugins/tiddlywiki/pluginlibrary/library.template.html',
-    'index.html',
-    'text/plain',
-    '--deletetiddlers',
-    '[[$:/UpgradeLibrary]] [[$:/UpgradeLibrary/List]]',
-  ],
+  ], */
 };

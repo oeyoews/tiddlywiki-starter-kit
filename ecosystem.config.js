@@ -3,7 +3,7 @@ module.exports = {
     {
       name: 'neotw',
       script: './scripts/startup.mjs',
-      args: '--build listen',
+      args: '--listen port=PORT --verbose',
       watch: ['./plugins/oeyoews/', './themes'],
       ignore_watch: ['./tiddlers'],
       cwd: './',

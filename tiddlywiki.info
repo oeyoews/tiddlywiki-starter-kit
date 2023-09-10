@@ -93,51 +93,6 @@
       "--deletetiddlers",
       "$:/StoryList"
     ],
-    "editions": [
-      "--verbose",
-      "--output",
-      ".tiddlywiki/editions",
-      "--render",
-      "$:/plugins/tiddlywiki/tiddlyweb/save/offline",
-      "index.html",
-      "text/plain",
-      "--savetiddler",
-      "$:/favicon.ico",
-      "favicon.ico",
-      "--deletetiddlers",
-      "$:/StoryList"
-    ],
-    "plugins": [
-      "--verbose",
-      "--output",
-      ".tiddlywiki/plugins",
-      "--render",
-      "[all[tiddlers+shadows]plugin-type[plugin]author[oeyoews]]",
-      "[removeprefix[$:/plugins/oeyoews/]slugify[]addsuffix[.json]]",
-      "text/plain",
-      "$:/core/templates/json-tiddler",
-      "--deletetiddlers",
-      "$:/StoryList"
-    ],
-    "themes": [
-      "--verbose",
-      "--output",
-      ".tiddlywiki/themes",
-      "--render",
-      "[all[tiddlers+shadows]plugin-type[theme]author[NicolasPetton]]",
-      "[removeprefix[$:/themes/nico]slugify[]addsuffix[.json]]",
-      "text/plain",
-      "$:/core/templates/json-tiddler",
-      "--deletetiddlers",
-      "$:/StoryList"
-    ],
-    "listen": [
-      "--listen",
-      "port=8080",
-      "anon-username=oeyoews",
-      "host=0.0.0.0",
-      "--verbose"
-    ],
     "library": [
       "--output",
       ".tiddlywiki/library",

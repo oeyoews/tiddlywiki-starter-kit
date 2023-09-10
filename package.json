@@ -6,11 +6,11 @@
   "scripts": {
     "vercel:tiddlers": "tiged oeyoews/neotw-tiddlers tiddlers",
     "new-plugin": "bun run scripts/new-plugin.ts",
-    "build": "bun run scripts/build-oeyoews-plus.ts",
-    "vercel-build": "node scripts/build-oeyoews-plus.mjs",
+    "build": "bun run scripts/build.ts",
+    "vercel-build": "node scripts/build.mjs",
     "start-pm2": "pm2 start ecosystem.config.js",
     "format": "prettier --write .",
-    "start": "node scripts/startup.mjs --build listen"
+    "start": "node scripts/startup.mjs --listen"
   },
   "dependencies": {
     "dotenv": "^16.3.1",
