@@ -94,8 +94,9 @@ neotw-unsplash widget
 
         // 监听图片元素的点击事件，复制图片 URL
         element.addEventListener('click', () => {
-          const imageUrl = `<$image source="${photo.urls.regular}" alt="Unsplash Image" fancybox="yes"/>`;
-          navigator.clipboard.writeText(imageUrl);
+          // const imageUrl = `<$image source="${photo.urls.regular}" alt="Unsplash Image" fancybox="yes"/>`;
+          const imageUrl = `<img src="${photo.urls.regular}" alt="Unsplash Image" class="rounded" />`;
+          navigator?.clipboard?.writeText(imageUrl);
           Swal.fire({
             icon: 'success',
             titleText: `Copied to Clipboard`,
