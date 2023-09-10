@@ -7,14 +7,16 @@ export default [
   'tiddlywiki/katex',
   'tiddlywiki/browser-sniff',
   'tiddlywiki/codemirror',
+  // 'BTC/tiddlywiki-codemirror-6',
+  // codemirror-6 not support this yet
   'tiddlywiki/codemirror-autocomplete',
   'tiddlywiki/codemirror-mode-css',
   'tiddlywiki/codemirror-search-replace',
   'tiddlywiki/codemirror-closebrackets',
-  'tiddlywiki/freelinks',
   'tiddlywiki/codemirror-mode-markdown',
   'tiddlywiki/codemirror-mode-xml',
   'tiddlywiki/codemirror-mode-javascript',
+  'tiddlywiki/freelinks',
   // 构建插件
   'tiddlywiki/pluginlibrary',
   // dom
