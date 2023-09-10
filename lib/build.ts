@@ -17,6 +17,7 @@ function copyFiles() {
 }
 
 const build = () => {
+  log.start();
   generateTiddlyWikiInfo();
   Bun.spawn(['npx', 'tiddlywiki', '--build'], {
     onExit: (proc, exitCode, signalCode, error) => {
