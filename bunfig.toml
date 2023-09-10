@@ -13,7 +13,7 @@ peer = false
 production = false
 
 # equivalent to `--frozen-lockfile` flag
-frozenLockfile = true
+frozenLockfile = false
 
 # equivalent to `--dry-run` flag
 dryRun = false
