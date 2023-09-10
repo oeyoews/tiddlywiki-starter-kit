@@ -10,26 +10,24 @@ const onPromptState = (state: { aborted: any }) => {
   }
 };
 
-async function processFilesRecursively(directory: string, pluginname: string) {
-  if (!fs.existsSync(directory)) {
-    console.log(`${directory} does not exist`);
-    return;
-  }
-  const files = fs.readdirSync(directory);
-
-  for (const file of files) {
-    const filePath = path.join(directory, file);
-    console.log(filePath);
-    const stats = fs.statSync(filePath);
-
-    if (stats.isDirectory()) {
-      await processFilesRecursively(filePath, pluginname);
-    } else {
-      let content = fs.readFileSync(filePath, 'utf8');
-      content = content.replace(/\$\{pluginname\}/g, pluginname);
-      fs.writeFileSync(filePath, content);
-    }
-  }
+function traverseFilesAndDirectories(
+  directoryPath: string,
+  replaceString: string,
+) {
+  fs.readdir(directoryPath, (err, filesAndDirectories) => {
+    filesAndDirectories.forEach((item) => {
+      const itemPath = path.join(directoryPath, item);
+      fs.stat(itemPath, (err, stats) => {
+        if (stats.isFile()) {
+          let content = fs.readFileSync(itemPath, 'utf8');
+          content = content.replace(/\$\{pluginname\}/g, replaceString);
+          fs.writeFileSync(itemPath, content);
+        } else if (stats.isDirectory()) {
+          traverseFilesAndDirectories(itemPath, replaceString); // Recursively call to handle subdirectories
+        }
+      });
+    });
+  });
 }
 
 async function main() {
@@ -59,7 +57,7 @@ async function main() {
         console.log(error);
       }
       try {
-        processFilesRecursively(target, pluginname);
+        traverseFilesAndDirectories(target, pluginname);
       } catch (e) {
         fs.rmSync(target, { recursive: true });
         console.log(e);
