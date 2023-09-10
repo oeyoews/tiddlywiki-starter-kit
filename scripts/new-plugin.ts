@@ -1,6 +1,5 @@
 import prompts from 'prompts';
 import fs from 'fs';
-import { exec } from 'child_process';
 import path from 'path';
 
 const onPromptState = (state: { aborted: any }) => {
@@ -12,10 +11,15 @@ const onPromptState = (state: { aborted: any }) => {
 };
 
 async function processFilesRecursively(directory: string, pluginname: string) {
+  if (!fs.existsSync(directory)) {
+    console.log(`${directory} does not exist`);
+    return;
+  }
   const files = fs.readdirSync(directory);
 
   for (const file of files) {
     const filePath = path.join(directory, file);
+    console.log(filePath);
     const stats = fs.statSync(filePath);
 
     if (stats.isDirectory()) {
@@ -28,8 +32,8 @@ async function processFilesRecursively(directory: string, pluginname: string) {
   }
 }
 
-async function newPlugin() {
-  const template = 'templates/new-plugin';
+async function main() {
+  const template = 'templates/new-plugin/';
 
   const { pluginname } = await prompts({
     onState: onPromptState,
@@ -47,17 +51,21 @@ async function newPlugin() {
 
   const target = path.join('plugins/oeyoews', pluginname);
 
-  fs.mkdirSync(target, { recursive: true });
-  exec(`cp -r ${template}/* ${target}`, () => {
-    const targetFiles = fs.readdirSync(target);
-
-    try {
-      processFilesRecursively(target, pluginname);
-    } catch (error) {
-      fs.rmSync(target, { recursive: true });
-      console.log(error);
-    }
+  // @ts-ignore
+  Bun.spawn(['cp', '-r', template, `${target}`], {
+    // @ts-ignore
+    onExit: (proc, exitCode, signalCode, error) => {
+      if (error) {
+        console.log(error);
+      }
+      try {
+        processFilesRecursively(target, pluginname);
+      } catch (e) {
+        fs.rmSync(target, { recursive: true });
+        console.log(e);
+      }
+    },
   });
 }
 
-newPlugin();
+main();
