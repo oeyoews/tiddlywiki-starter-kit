@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "vercel:tiddlers": "tiged oeyoews/neotw-tiddlers tiddlers",
-    "new-plugin": "bun run scripts/new-plugin.ts",
+    "newplugin": "bun run scripts/newplugin.ts",
     "build": "bun run scripts/build.ts",
     "vercel-build": "node scripts/build.mjs",
     "start-pm2": "pm2 start ecosystem.config.js",
