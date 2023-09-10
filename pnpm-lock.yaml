@@ -28,6 +28,9 @@ devDependencies:
   '@types/prompts':
     specifier: ^2.4.4
     version: 2.4.4
+  bun-types:
+    specifier: ^1.0.1
+    version: 1.0.1
   prettier:
     specifier: ^3.0.3
     version: 3.0.3
@@ -323,6 +326,10 @@ packages:
       base64-js: 1.5.1
       ieee754: 1.2.1
     dev: false
+
+  /bun-types@1.0.1:
+    resolution: {integrity: sha512-7NrXqhMIaNKmWn2dSWEQ50znMZqrN/5Z0NBMXvQTRu/+Y1CvoXRznFy0pnqLe024CeZgVdXoEpARNO1JZLAPGw==}
+    dev: true
 
   /chalk@3.0.0:
     resolution: {integrity: sha512-4D3B6Wf41KOYRFdszmDqMCGq5VV/uMAB273JILmO+3jAlh8X4qDtdtgCR3fxtbLEMzSx22QdhnDcJvu2u1fVwg==}

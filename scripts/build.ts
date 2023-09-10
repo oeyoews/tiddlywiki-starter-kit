@@ -18,9 +18,7 @@ function copyFiles() {
 
 const build = () => {
   generateTiddlyWikiInfo();
-  // @ts-ignore
   Bun.spawn(['npx', 'tiddlywiki', '--build'], {
-    // @ts-ignore
     onExit: (proc, exitCode, signalCode, error) => {
       if (exitCode === 0) {
         log.succeed(`构建完成 ${buildDir}`);

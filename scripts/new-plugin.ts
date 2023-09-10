@@ -49,9 +49,7 @@ async function main() {
 
   const target = path.join('plugins/oeyoews', pluginname);
 
-  // @ts-ignore
   Bun.spawn(['cp', '-r', template, `${target}`], {
-    // @ts-ignore
     onExit: (proc, exitCode, signalCode, error) => {
       if (error) {
         console.log(error);
