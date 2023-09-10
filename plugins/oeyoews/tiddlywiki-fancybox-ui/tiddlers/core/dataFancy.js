@@ -24,10 +24,13 @@ function addDataFancy() {
   }
 
   imgs.forEach((img, index) => {
-    if (!img.hasAttribute('data-fancybox')) {
+    img.addEventListener('click', () => {
+      img.setAttribute('data-fancybox', index.toString());
+    });
+    /* if (!img.hasAttribute('data-fancybox')) {
       img.setAttribute('data-fancybox', index.toString());
       img.classList.add('cursor-pointer');
-    }
+    } */
   });
 }
 
