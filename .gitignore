@@ -4,31 +4,21 @@
 
 Import.tid
 subwiki/
-!tiddlers/subwiki/
-tiddlers/theme.tid
 \$__theme.tid
 output/
 dist
-tiddlers/gtd/
 node_modules/
 
-tiddlers/config/ShowHelp.tid
-tiddlers/commit.tid
-tiddlers/config/RecentTab/Mode.tid
 .idea
 *.tgz
-tiddlers/layout*.tid
 
 # pm2
 .logs/
 untitled*
-tiddlers/palette.tid
-tiddlers/language.tid
-tiddlers/static-patch
 upload
 
 .vercel
 
 ## 仅仅忽略根目录下的tiddler文件夹
 /tiddlers/
-/.tiddlywiki
+.tiddlywiki
