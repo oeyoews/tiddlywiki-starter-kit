@@ -3,8 +3,14 @@ import generateTiddlyWikiInfo from '../tiddlywiki.config.mjs';
 import ci from 'ci-info';
 // @ts-ignore
 import tiged from 'tiged';
+import { spawn } from 'bun';
 
+/**
+ * load env from .env file with bun
+ */
 const TIDDLERSREPO = process.env.TIDDLERSREPO || 'neotw-tiddlers';
+const BUILDDIR = process.env.OUTPURDIR || '.tiddlywiki';
+const log = ora('Building ...');
 
 const emitter = tiged(TIDDLERSREPO, {
   disableCache: true,
@@ -12,6 +18,9 @@ const emitter = tiged(TIDDLERSREPO, {
   verbose: false,
 });
 
+/**
+ * only clone tiddlers repo on ci environment
+ */
 function cloneTiddlers() {
   if (ci.isCI) {
     emitter.clone('tiddlers').then(() => {
@@ -20,11 +29,11 @@ function cloneTiddlers() {
   }
 }
 
-const buildDir = process.env.OUTPURDIR || '.tiddlywiki';
-const log = ora('Building ...');
-
+/**
+ * copy files folder, and verce.json file
+ */
 function copyFiles() {
-  Bun.spawn(['cp', '-r', 'files', 'vercel.json', buildDir], {
+  spawn(['cp', '-r', 'files', 'vercel.json', BUILDDIR], {
     onExit: (proc, exitCode, signalCode, error) => {
       if (exitCode === 0) {
         log.succeed('复制文件完成');
@@ -33,18 +42,18 @@ function copyFiles() {
   });
 }
 
-const build = () => {
+const main = () => {
   log.start();
   generateTiddlyWikiInfo();
   cloneTiddlers();
-  Bun.spawn(['npx', 'tiddlywiki', '--build'], {
+  spawn(['npx', 'tiddlywiki', '--build'], {
     onExit: (proc, exitCode, signalCode, error) => {
       if (exitCode === 0) {
-        log.succeed(`构建完成 ${buildDir}`);
+        log.succeed(`构建完成 ${BUILDDIR}`);
         copyFiles();
       }
     },
   });
 };
 
-build();
+main();

@@ -2,6 +2,9 @@ import fs from 'fs';
 import plugins from './config/plugins.mjs';
 import build from './config/build.mjs';
 
+/**
+ * generate latest tiddlywiki.info file from config folder
+ */
 export default function generateTiddlyWikiInfo() {
   const tiddlywikiInfoPath = './tiddlywiki.info';
 
