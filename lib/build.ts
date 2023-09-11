@@ -29,7 +29,6 @@ function cloneTiddlers() {
   if (ci.isCI) {
     emitter.clone('tiddlers').then(() => {
       log.succeed(`tiddlers 文件夹复制完成(${ci.name})`);
-      process.exit(0);
     });
   }
 }
