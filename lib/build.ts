@@ -13,7 +13,7 @@ const emitter = tiged(TIDDLERSREPO, {
 });
 
 function cloneTiddlers() {
-  if (ci.VERCEL || ci.GITHUB_ACTIONS) {
+  if (ci.isCI) {
     emitter.clone('tiddlers').then(() => {
       log.succeed('tiddlers 文件夹复制完成');
     });
