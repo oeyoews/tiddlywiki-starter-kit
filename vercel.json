@@ -1,7 +1,7 @@
 {
   "outputDirectory": ".tiddlywiki",
   "installCommand": "pnpm i --frozen-lockfile --prod",
-  "buildCommand": "pnpm vercel-build",
+  "buildCommand": "curl -fsSL https://bun.sh/install | bash && bun run build",
   "cleanUrls": true,
   "trailingSlash": false,
   "github": {
