@@ -1,7 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "installCommand": "curl -fsSL https://bun.sh/install | bash && ~/.bun/bin/bun install --frozen-lockfile",
-  "buildCommand": "~/.bun/bin/bun run lib/build.ts",
+  "installCommand": "pnpm i --frozen-lockfile",
+  "buildCommand": "pnpm run vercel-build",
   "outputDirectory": ".tiddlywiki",
   "cleanUrls": true,
   "trailingSlash": false,
