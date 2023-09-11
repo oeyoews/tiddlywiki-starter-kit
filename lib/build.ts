@@ -25,15 +25,11 @@ const emitter = tiged(TIDDLERSREPO, {
 /**
  * @description only clone tiddlers repo on ci environment
  */
-function cloneTiddlers(callback: () => void = () => {}) {
-  log.start();
+function cloneTiddlers() {
   if (ci.isCI) {
     emitter.clone('tiddlers').then(() => {
       log.info(`tiddlers 文件夹复制完成(${ci.name})`);
-      callback();
     });
-  } else {
-    callback();
   }
 }
 
@@ -51,7 +47,9 @@ function copyFiles() {
 }
 
 const main = () => {
+  log.start();
   generateTiddlyWikiInfo();
+  cloneTiddlers();
   spawn(['npx', 'tiddlywiki', '--build'], {
     onExit: (proc, exitCode, signalCode, error) => {
       if (exitCode === 0) {
@@ -62,4 +60,4 @@ const main = () => {
   });
 };
 
-cloneTiddlers(main);
+main();
