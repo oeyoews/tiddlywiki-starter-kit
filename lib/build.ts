@@ -24,6 +24,7 @@ const emitter = tiged(TIDDLERSREPO, {
 
 /**
  * @description only clone tiddlers repo on ci environment
+ * 用callback 反而会缺少插件??
  */
 function cloneTiddlers() {
   if (ci.isCI) {
