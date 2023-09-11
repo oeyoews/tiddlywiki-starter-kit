@@ -1,4 +1,4 @@
-title: $:/plugins/oeyoews/tiddlywiki-fancybox/action/overwrite-cover
+title: $:/plugins/oeyoews/neotw/action/overwrite-cover
 tags: $:/tags/StartupAction
 
 \define set-shadows(tid)
