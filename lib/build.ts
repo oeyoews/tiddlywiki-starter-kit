@@ -18,15 +18,18 @@ const log = ora(`${hasBun ? '🥟' : '📦'} Building ...`);
  * @description only clone tiddlers repo on ci environment
  * 用callback 反而会缺少插件??
  */
-function cloneTiddlers() {
+function cloneTiddlers(callback: () => void) {
   if (ci.isCI) {
     spawn(['tiged', TIDDLERSREPO], {
       onExit: (proc, exitCode, signalCode, error) => {
         if (exitCode === 0) {
           log.info(`tiddlers 文件夹复制完成(${ci.name})`);
+          callback();
         }
       },
     });
+  } else {
+    callback();
   }
 }
 
@@ -46,7 +49,6 @@ function copyFiles() {
 const main = () => {
   log.start();
   generateTiddlyWikiInfo();
-  cloneTiddlers();
   spawn(['npx', 'tiddlywiki', '--build'], {
     onExit: (proc, exitCode, signalCode, error) => {
       if (exitCode === 0) {
@@ -57,4 +59,4 @@ const main = () => {
   });
 };
 
-main();
+cloneTiddlers(main);
