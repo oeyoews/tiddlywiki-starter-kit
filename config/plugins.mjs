@@ -61,7 +61,7 @@ export default [
   'oeyoews/neotw-vimjk',
   'oeyoews/NPL',
   'oeyoews/tiddlywiki-back-to-top',
-  'oeyoews/tiddlywiki-edition-macro',
+  // 'oeyoews/tiddlywiki-edition-macro',
   // lightbox plugins
   'oeyoews/neotw-view-image',
   // 'oeyoews/tiddlywiki-fancybox-ui',
