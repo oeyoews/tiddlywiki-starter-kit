@@ -20,7 +20,7 @@ const log = ora(`${hasBun ? '🥟' : '📦'} Building ...`);
  */
 function cloneTiddlers(callback: () => void) {
   if (ci.isCI) {
-    spawn(['tiged', TIDDLERSREPO], {
+    spawn(['tiged', TIDDLERSREPO, 'tiddlers'], {
       onExit: (proc, exitCode, signalCode, error) => {
         if (exitCode === 0) {
           log.info(`tiddlers 文件夹复制完成(${ci.name})`);
