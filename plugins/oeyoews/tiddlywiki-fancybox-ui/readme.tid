@@ -4,7 +4,6 @@ title: $:/plugins/oeyoews/tiddlywiki-fancybox-ui/readme
 
 !! New Fancybox
 
-* [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/tiddlywiki-fancybox-ui]]
-* [[Demo|https://oeyoews.github.io/neotw]]
+> 推荐使用轻量的 neotw-view-image插件代替
 
 </div>

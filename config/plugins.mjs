@@ -27,7 +27,6 @@ export default [
   'tiddlywiki/markdown',
   // 自定义插件
   'oeyoews/neotw-permalink',
-  'oeyoews/neotw-view-image',
   'oeyoews/neotw-tw-bot',
   'oeyoews/neotw-pwa',
   'oeyoews/neotw-read-files',
@@ -63,7 +62,9 @@ export default [
   'oeyoews/NPL',
   'oeyoews/tiddlywiki-back-to-top',
   'oeyoews/tiddlywiki-edition-macro',
-  'oeyoews/tiddlywiki-fancybox-ui',
+  // lightbox plugins
+  'oeyoews/neotw-view-image',
+  // 'oeyoews/tiddlywiki-fancybox-ui',
   'oeyoews/tiddlywiki-keyboard-hint',
   'oeyoews/tiddlywiki-modal-ui',
   'oeyoews/tiddlywiki-motion',

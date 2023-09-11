@@ -2,14 +2,15 @@ title: $:/plugins/oeyoews/tiddlywiki-cards/gallary
 cards: yes
 
 \define img(number)
-<img data-fancybox="gallary" class="cursor-pointer h-48 w-full object-cover hover:scale-105 duration-200 rounded-lg" src={{{ [[https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/]addsuffix<__number__>addsuffix[.png]] }}} alt="Card Image">
+<!-- data-fancybox="gallary"  -->
+<img class="cursor-pointer h-48 w-full object-cover hover:scale-105 duration-200 rounded-lg" src={{{ [[https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/]addsuffix<__number__>addsuffix[.png]] }}} alt="Card Image">
 \end
 
 <div class="flex overflow-auto gap-4 rounded-lg p-8 shadow-lg">
 <<img 015>>
 <<img 016>>
 <<img 017>>
-<img data-fancybox="gallary" class="cursor-pointer h-48 w-full object-cover hover:scale-105 duration-200 rounded-lg" src={{{ [[https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/014.webp]] }}} alt="Card Image">
+<img class="cursor-pointer h-48 w-full object-cover hover:scale-105 duration-200 rounded-lg" src={{{ [[https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/014.webp]] }}} alt="Card Image">
 <<img 011>>
 <<img 012>>
 <<img 013>>
