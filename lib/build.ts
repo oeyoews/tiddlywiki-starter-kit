@@ -20,7 +20,7 @@ const log = ora(`${hasBun ? '🥟' : '📦'} Building ...`);
  */
 function cloneTiddlers(callback: () => void) {
   if (ci.isCI) {
-    spawn(['tiged', TIDDLERSREPO, 'tiddlers'], {
+    Bun.spawn(['tiged', TIDDLERSREPO, 'tiddlers'], {
       onExit: (proc, exitCode, signalCode, error) => {
         if (exitCode === 0) {
           log.info(`tiddlers 文件夹复制完成(${ci.name})`);
@@ -37,7 +37,7 @@ function cloneTiddlers(callback: () => void) {
  * @description copy files folder, and verce.json file
  */
 function copyFiles() {
-  spawn(['cp', '-r', 'files', 'vercel.json', BUILDDIR], {
+  Bun.spawn(['cp', '-r', 'files', 'vercel.json', BUILDDIR], {
     onExit: (proc, exitCode, signalCode, error) => {
       if (exitCode === 0) {
         log.succeed('复制文件完成');
@@ -49,7 +49,7 @@ function copyFiles() {
 const main = () => {
   log.start();
   generateTiddlyWikiInfo();
-  spawn(['npx', 'tiddlywiki', '--build'], {
+  Bun.spawn(['npx', 'tiddlywiki', '--build'], {
     onExit: (proc, exitCode, signalCode, error) => {
       if (exitCode === 0) {
         log.succeed(`构建完成 ${BUILDDIR}`);
