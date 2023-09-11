@@ -4,7 +4,6 @@
   "author": "oeyoews <jyao4783@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "vercel:tiddlers": "tiged oeyoews/neotw-tiddlers tiddlers",
     "newplugin": "bun run lib/newplugin.ts",
     "build": "bun run lib/build.ts",
     "vercel-build": "node lib/build.mjs",
@@ -13,6 +12,7 @@
     "start": "node lib/startup.mjs --listen"
   },
   "dependencies": {
+    "ci-info": "^3.8.0",
     "dotenv": "^16.3.1",
     "ora": "^6.3.1",
     "pm2": "^5.3.0",
