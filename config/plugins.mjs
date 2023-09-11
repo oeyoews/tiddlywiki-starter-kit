@@ -23,7 +23,7 @@ export default [
   // 构建插件
   'tiddlywiki/pluginlibrary',
   // dom
-  'tiddlywiki/internals',
+  // 'tiddlywiki/internals',
   'tiddlywiki/markdown',
   // 自定义插件
   'oeyoews/neotw-permalink',
