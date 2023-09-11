@@ -26,34 +26,35 @@ function cloneTiddlers() {
           log.info(`tiddlers 文件夹复制完成(${ci.name})`);
         }
       },
-    })
-  }
-
-  /**
-   * @description copy files folder, and verce.json file
-   */
-  function copyFiles() {
-    spawn(['cp', '-r', 'files', 'vercel.json', BUILDDIR], {
-      onExit: (proc, exitCode, signalCode, error) => {
-        if (exitCode === 0) {
-          log.succeed('复制文件完成');
-        }
-      },
     });
   }
+}
 
-  const main = () => {
-    log.start();
-    generateTiddlyWikiInfo();
-    cloneTiddlers();
-    spawn(['npx', 'tiddlywiki', '--build'], {
-      onExit: (proc, exitCode, signalCode, error) => {
-        if (exitCode === 0) {
-          log.succeed(`构建完成 ${BUILDDIR}`);
-          copyFiles();
-        }
-      },
-    });
-  };
+/**
+ * @description copy files folder, and verce.json file
+ */
+function copyFiles() {
+  spawn(['cp', '-r', 'files', 'vercel.json', BUILDDIR], {
+    onExit: (proc, exitCode, signalCode, error) => {
+      if (exitCode === 0) {
+        log.succeed('复制文件完成');
+      }
+    },
+  });
+}
 
-  main();
+const main = () => {
+  log.start();
+  generateTiddlyWikiInfo();
+  cloneTiddlers();
+  spawn(['npx', 'tiddlywiki', '--build'], {
+    onExit: (proc, exitCode, signalCode, error) => {
+      if (exitCode === 0) {
+        log.succeed(`构建完成 ${BUILDDIR}`);
+        copyFiles();
+      }
+    },
+  });
+};
+
+main();
