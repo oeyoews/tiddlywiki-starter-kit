@@ -4,7 +4,10 @@ dotenv.config;
 
 const OUTPUTDIR = process.env.OUTPUTDIR || '.tiddlywiki';
 
-/** @type {import('tw5-typed').ITiddlyWikiInfoJSONBuild} */
+/**
+ * @type {import('tw5-typed').ITiddlyWikiInfoJSONBuild}
+ * @description tiddlywiki 构建命令
+ */
 export default {
   // build index.html
   index: [

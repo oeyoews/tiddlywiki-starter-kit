@@ -1,3 +1,6 @@
+/**
+ * @description tiddlywiki 启用插件列表
+ */
 export default [
   // 必选依赖
   'tiddlywiki/tiddlyweb',
