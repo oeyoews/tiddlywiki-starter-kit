@@ -4,7 +4,9 @@ import ci from 'ci-info';
 // @ts-ignore
 import tiged from 'tiged';
 
-const emitter = tiged('oeyoews/tiddlywiki-starter-kit', {
+const TIDDLERSREPO = process.env.TIDDLERSREPO || 'neotw-tiddlers';
+
+const emitter = tiged(TIDDLERSREPO, {
   disableCache: true,
   force: true,
   verbose: false,
