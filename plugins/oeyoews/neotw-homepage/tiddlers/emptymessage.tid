@@ -39,6 +39,7 @@ title: $:/config/EmptyStoryMessage
 <iconify-icon icon="skill-icons:git" title="Git" />
 <iconify-icon icon="devicon:webstorm" title="Websotrm" />
 <iconify-icon icon="skill-icons:docker" title="Docker" />
+<iconify-icon icon="devicon:bun" title="Bun" />
 
 </center>
 
