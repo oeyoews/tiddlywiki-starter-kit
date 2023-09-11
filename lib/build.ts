@@ -27,8 +27,11 @@ const emitter = tiged(TIDDLERSREPO, {
  */
 function cloneTiddlers() {
   if (ci.isCI) {
+    emitter.on((info: string) => {
+      log.info(info);
+    });
     emitter.clone('tiddlers').then(() => {
-      log.succeed(`tiddlers 文件夹复制完成(${ci.name})`);
+      log.info(`tiddlers 文件夹复制完成(${ci.name})`);
     });
   }
 }
