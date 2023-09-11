@@ -1,11 +1,11 @@
 /*\
-title: addDataFancy.js
+title: $:/plugins/oeyoews/tiddlywiki-fancybox/addDataFancy.js
 type: application/javascript
 module-type: library
 
 addDataFancy
 \*/
-function addDataFancy() {
+module.exports = function addDataFancy() {
   const imgs = document.querySelectorAll('img');
   console.log(imgs);
 
@@ -27,11 +27,5 @@ function addDataFancy() {
     img.addEventListener('click', () => {
       img.setAttribute('data-fancybox', index.toString());
     });
-    /* if (!img.hasAttribute('data-fancybox')) {
-      img.setAttribute('data-fancybox', index.toString());
-      img.classList.add('cursor-pointer');
-    } */
   });
-}
-
-module.exports = addDataFancy;
+};

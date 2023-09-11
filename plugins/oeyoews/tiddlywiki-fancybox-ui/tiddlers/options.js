@@ -1,3 +1,9 @@
+/*\
+title: $:/plugins/oeyoews/tiddlywiki-fancybox-ui/options.js
+type: application/javascript
+module-type: library
+
+\*/
 module.exports = {
   // Toolbar: false,
   Toolbar: {
