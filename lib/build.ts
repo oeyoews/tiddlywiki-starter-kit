@@ -10,10 +10,12 @@ const emitter = tiged('oeyoews/tiddlywiki-starter-kit', {
   verbose: false,
 });
 
-if (ci.VERCEL || ci.GITHUB_ACTIONS) {
-  emitter.clone('tiddlers').then(() => {
-    log.succeed('tiddlers 文件夹复制完成');
-  });
+function cloneTiddlers() {
+  if (ci.VERCEL || ci.GITHUB_ACTIONS) {
+    emitter.clone('tiddlers').then(() => {
+      log.succeed('tiddlers 文件夹复制完成');
+    });
+  }
 }
 
 const buildDir = process.env.OUTPURDIR || '.tiddlywiki';
@@ -32,6 +34,7 @@ function copyFiles() {
 const build = () => {
   log.start();
   generateTiddlyWikiInfo();
+  cloneTiddlers();
   Bun.spawn(['npx', 'tiddlywiki', '--build'], {
     onExit: (proc, exitCode, signalCode, error) => {
       if (exitCode === 0) {
