@@ -16,11 +16,10 @@ const log = ora(`${hasBun ? '🥟' : '📦'} Building ...`);
 
 /**
  * @description only clone tiddlers repo on ci environment
- * 用callback 反而会缺少插件??
  */
 function cloneTiddlers(callback: () => void) {
   if (ci.isCI) {
-    Bun.spawn(['tiged', TIDDLERSREPO, 'tiddlers'], {
+    spawn(['tiged', TIDDLERSREPO, 'tiddlers'], {
       onExit: (proc, exitCode, signalCode, error) => {
         if (exitCode === 0) {
           log.info(`tiddlers 文件夹复制完成(${ci.name})`);
@@ -37,7 +36,7 @@ function cloneTiddlers(callback: () => void) {
  * @description copy files folder, and verce.json file
  */
 function copyFiles() {
-  Bun.spawn(['cp', '-r', 'files', 'vercel.json', BUILDDIR], {
+  spawn(['cp', '-r', 'files', 'vercel.json', BUILDDIR], {
     onExit: (proc, exitCode, signalCode, error) => {
       if (exitCode === 0) {
         log.succeed('复制文件完成');
@@ -49,7 +48,7 @@ function copyFiles() {
 const main = () => {
   log.start();
   generateTiddlyWikiInfo();
-  Bun.spawn(['npx', 'tiddlywiki', '--build'], {
+  spawn(['npx', 'tiddlywiki', '--build'], {
     onExit: (proc, exitCode, signalCode, error) => {
       if (exitCode === 0) {
         log.succeed(`构建完成 ${BUILDDIR}`);
