@@ -1,7 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "installCommand": "curl -fsSL https://bun.sh/install | bash",
-  "buildCommand": "~/.bun/bin/bun run build --production",
   "outputDirectory": ".tiddlywiki",
   "cleanUrls": true,
   "trailingSlash": false,
