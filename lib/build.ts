@@ -10,7 +10,8 @@ import { spawn } from 'bun';
  */
 const TIDDLERSREPO = process.env.TIDDLERSREPO || 'neotw-tiddlers';
 const BUILDDIR = process.env.OUTPURDIR || '.tiddlywiki';
-const log = ora('Building ...');
+const hasBun = process.versions.bun;
+const log = ora(`${hasBun ? '🥟' : '📦'} Building ...`);
 
 const emitter = tiged(TIDDLERSREPO, {
   disableCache: true,
