@@ -3,8 +3,6 @@
 import ora from 'ora';
 import generateTiddlyWikiInfo from '@/tiddlywiki.config.mjs';
 import ci from 'ci-info';
-// @ts-ignore
-import tiged from 'tiged';
 import { spawn } from 'bun';
 
 /**
@@ -16,49 +14,46 @@ const BUILDDIR = process.env.OUTPURDIR || '.tiddlywiki';
 const hasBun = process.versions.bun;
 const log = ora(`${hasBun ? '🥟' : '📦'} Building ...`);
 
-const emitter = tiged(TIDDLERSREPO, {
-  disableCache: true,
-  force: true,
-  verbose: false,
-});
-
 /**
  * @description only clone tiddlers repo on ci environment
  * 用callback 反而会缺少插件??
  */
 function cloneTiddlers() {
   if (ci.isCI) {
-    emitter.clone('tiddlers').then(() => {
-      log.info(`tiddlers 文件夹复制完成(${ci.name})`);
+    spawn(['tiged', TIDDLERSREPO], {
+      onExit: (proc, exitCode, signalCode, error) => {
+        if (exitCode === 0) {
+          log.info(`tiddlers 文件夹复制完成(${ci.name})`);
+        }
+      },
+    })
+  }
+
+  /**
+   * @description copy files folder, and verce.json file
+   */
+  function copyFiles() {
+    spawn(['cp', '-r', 'files', 'vercel.json', BUILDDIR], {
+      onExit: (proc, exitCode, signalCode, error) => {
+        if (exitCode === 0) {
+          log.succeed('复制文件完成');
+        }
+      },
     });
   }
-}
 
-/**
- * @description copy files folder, and verce.json file
- */
-function copyFiles() {
-  spawn(['cp', '-r', 'files', 'vercel.json', BUILDDIR], {
-    onExit: (proc, exitCode, signalCode, error) => {
-      if (exitCode === 0) {
-        log.succeed('复制文件完成');
-      }
-    },
-  });
-}
+  const main = () => {
+    log.start();
+    generateTiddlyWikiInfo();
+    cloneTiddlers();
+    spawn(['npx', 'tiddlywiki', '--build'], {
+      onExit: (proc, exitCode, signalCode, error) => {
+        if (exitCode === 0) {
+          log.succeed(`构建完成 ${BUILDDIR}`);
+          copyFiles();
+        }
+      },
+    });
+  };
 
-const main = () => {
-  log.start();
-  generateTiddlyWikiInfo();
-  cloneTiddlers();
-  spawn(['npx', 'tiddlywiki', '--build'], {
-    onExit: (proc, exitCode, signalCode, error) => {
-      if (exitCode === 0) {
-        log.succeed(`构建完成 ${BUILDDIR}`);
-        copyFiles();
-      }
-    },
-  });
-};
-
-main();
+  main();
