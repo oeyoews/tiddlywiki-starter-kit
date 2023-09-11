@@ -1,7 +1,12 @@
 import prompts from 'prompts';
 import fs from 'fs';
 import path from 'path';
+import { spawn } from 'bun';
 
+/**
+ * @description prompts elegant exit cmd
+ * @param state
+ */
 const onPromptState = (state: { aborted: any }) => {
   if (state.aborted) {
     process.stdout.write('\x1B[?25h');
@@ -10,6 +15,11 @@ const onPromptState = (state: { aborted: any }) => {
   }
 };
 
+/**
+ * @description 递归读取文件, 并且批量替换pluginname
+ * @param directoryPath 目录
+ * @param replaceString 替换字符串
+ */
 function traverseFilesAndDirectories(
   directoryPath: string,
   replaceString: string,
@@ -49,7 +59,7 @@ async function main() {
 
   const target = path.join('plugins/oeyoews', pluginname);
 
-  Bun.spawn(['cp', '-r', template, `${target}`], {
+  spawn(['cp', '-r', template, `${target}`], {
     onExit: (proc, exitCode, signalCode, error) => {
       if (error) {
         console.log(error);
