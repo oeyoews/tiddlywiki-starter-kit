@@ -1,5 +1,5 @@
 import ora from 'ora';
-import generateTiddlyWikiInfo from '../tiddlywiki.config.mjs';
+import generateTiddlyWikiInfo from '@/tiddlywiki.config.mjs';
 import ci from 'ci-info';
 // @ts-ignore
 import tiged from 'tiged';

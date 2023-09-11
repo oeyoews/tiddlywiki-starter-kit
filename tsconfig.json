@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
-    "lib": ["ESNext"],
+    "lib": [
+      "ESNext"
+    ],
     "module": "esnext",
     "target": "esnext",
     "moduleResolution": "bundler",
@@ -17,7 +19,15 @@
     "allowJs": true,
     "types": [
       "bun-types" // add Bun global
-    ]
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    },
   },
-  "exclude": ["plugins"]
+  "exclude": [
+    "plugins"
+  ]
 }
