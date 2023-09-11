@@ -6,7 +6,7 @@ import tiged from 'tiged';
 import { spawn } from 'bun';
 
 /**
- * load env from .env file with bun
+ * @description load env from .env file with bun
  */
 const TIDDLERSREPO = process.env.TIDDLERSREPO || 'neotw-tiddlers';
 const BUILDDIR = process.env.OUTPURDIR || '.tiddlywiki';
@@ -19,7 +19,7 @@ const emitter = tiged(TIDDLERSREPO, {
 });
 
 /**
- * only clone tiddlers repo on ci environment
+ * @description only clone tiddlers repo on ci environment
  */
 function cloneTiddlers() {
   if (ci.isCI) {
@@ -30,7 +30,7 @@ function cloneTiddlers() {
 }
 
 /**
- * copy files folder, and verce.json file
+ * @description copy files folder, and verce.json file
  */
 function copyFiles() {
   spawn(['cp', '-r', 'files', 'vercel.json', BUILDDIR], {
