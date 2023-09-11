@@ -1,3 +1,5 @@
+#!/usr/bin/env bun
+
 import prompts from 'prompts';
 import fs from 'fs';
 import path from 'path';

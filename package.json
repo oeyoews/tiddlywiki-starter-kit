@@ -4,12 +4,12 @@
   "author": "oeyoews <jyao4783@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "newplugin": "bun run lib/newplugin.ts",
-    "build": "bun run lib/build.ts",
+    "newplugin": "./lib/newplugin.ts",
+    "build": "./lib/build.ts",
     "vercel-build": "node lib/build.mjs",
     "start-pm2": "pm2 start ecosystem.config.js",
     "format": "prettier --write .",
-    "start": "node lib/startup.mjs --listen"
+    "start": "./lib/startup.mjs --listen"
   },
   "dependencies": {
     "ci-info": "^3.8.0",
