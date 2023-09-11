@@ -1,7 +1,8 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "outputDirectory": ".tiddlywiki",
-  "installCommand": "pnpm i --frozen-lockfile --prod",
-  "buildCommand": "curl -fsSL https://bun.sh/install | bash && bun run build",
+  "installCommand": "curl -fsSL https://bun.sh/install | bash && ~/.bun/bin/bun install --production",
+  "buildCommand": "~/.bun/bin/bun run build --production",
   "cleanUrls": true,
   "trailingSlash": false,
   "github": {
