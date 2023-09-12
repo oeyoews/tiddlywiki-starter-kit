@@ -7,6 +7,7 @@ services:
       - '8080:8080' # 映射端口，将主机的 8080 端口映射到容器的 8080 端口
     volumes:
       - ${PWD}/tiddlywiki:/app/tiddlywiki # 映射对应的目录
+      - ${PWD}/.tiddlywiki/:/app/.tiddlywiki # 映射对应的目录
     # 接受tw的任何参数
     # start
     command: [
