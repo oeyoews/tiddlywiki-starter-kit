@@ -31,6 +31,9 @@ devDependencies:
   bun-types:
     specifier: ^1.0.1
     version: 1.0.1
+  chalk:
+    specifier: ^5.3.0
+    version: 5.3.0
   pm2:
     specifier: ^5.3.0
     version: 5.3.0
@@ -342,7 +345,6 @@ packages:
   /chalk@5.3.0:
     resolution: {integrity: sha512-dLitG79d+GV1Nb/VYcCDFivJeK1hiukt9QjRNVOsUtTy1rR1YJsmpGGTZ3qJos+uw7WmWF4wUwBd9jxjocFC2w==}
     engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
-    dev: false
 
   /charm@0.1.2:
     resolution: {integrity: sha512-syedaZ9cPe7r3hoQA9twWYKu5AIyCswN5+szkmPBe9ccdLrj4bYaCnLVPTLd2kgVRc7+zoX4tyPgRnFKCj5YjQ==}

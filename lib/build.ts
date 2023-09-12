@@ -1,5 +1,6 @@
 #!/usr/bin/env bun
 
+import chalk from 'chalk';
 import ora from 'ora';
 import generateTiddlyWikiInfo from '@/tiddlywiki.config.mjs';
 import ci from 'ci-info';
@@ -22,12 +23,14 @@ function cloneTiddlers(callback: () => void) {
     spawn(['tiged', TIDDLERSREPO, 'tiddlers'], {
       onExit: (proc, exitCode, signalCode, error) => {
         if (exitCode === 0) {
-          log.info(`tiddlers 文件夹复制完成(${ci.name})`);
+          log.info(`tiddlers 文件夹复制完成`);
+          log.start(`${ci.name} 构建`);
           callback();
         }
       },
     });
   } else {
+    log.succeed(chalk.cyan(' 本地构建'));
     callback();
   }
 }
@@ -46,7 +49,6 @@ function copyFiles() {
 }
 
 const main = () => {
-  log.start();
   generateTiddlyWikiInfo();
   spawn(['npx', 'tiddlywiki', '--build'], {
     onExit: (proc, exitCode, signalCode, error) => {
