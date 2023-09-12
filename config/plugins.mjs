@@ -6,8 +6,7 @@ export default [
   'tiddlywiki/tiddlyweb',
   'tiddlywiki/filesystem',
   'tiddlywiki/highlight',
-  // 支持数学公式
-  'tiddlywiki/katex',
+  'tiddlywiki/katex', // 支持数学公式
   'tiddlywiki/browser-sniff',
   'tiddlywiki/codemirror',
   // 'BTC/tiddlywiki-codemirror-6',
@@ -20,8 +19,7 @@ export default [
   'tiddlywiki/codemirror-mode-xml',
   'tiddlywiki/codemirror-mode-javascript',
   'tiddlywiki/freelinks',
-  // 构建插件
-  'tiddlywiki/pluginlibrary',
+  'tiddlywiki/pluginlibrary', // 构建插件
   // dom
   // 'tiddlywiki/internals',
   'tiddlywiki/markdown',
