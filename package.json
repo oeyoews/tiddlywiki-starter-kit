@@ -7,7 +7,6 @@
     "newplugin": "./lib/newplugin.ts",
     "build": "./lib/build.ts",
     "vercel-build": "node lib/build.mjs",
-    "start-pm2": "pm2 start ecosystem.config.js",
     "format": "prettier --write .",
     "start": "./lib/startup.mjs --listen"
   },
@@ -24,7 +23,6 @@
     "@types/prompts": "^2.4.4",
     "bun-types": "^1.0.1",
     "chalk": "^5.3.0",
-    "pm2": "^5.3.0",
     "prettier": "^3.0.3",
     "tw5-typed": "^0.3.10"
   }
