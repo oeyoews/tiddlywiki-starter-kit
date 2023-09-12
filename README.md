@@ -2,7 +2,7 @@
 <img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/snapshot.png" class="hidden" alt="neotw banner" title="neotw"/>
 </center>
 
-## Intro
+## TiddlyWiki starter kit
 
 <figcaption class="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-500 to-yellow-500 line-clamp-1">
     A modern style and elegant notebook built with Tiddlywiki5 and Tailwindcss
