@@ -17,4 +17,4 @@ services:
         'host=0.0.0.0',
       ] # 第一个tiddlywiki 是命令，第二个tiddlywiki 是目录
     # build
-    # command: ["tiddlywiki", "--build", "index"]
+    # command: ["tiddlywiki", "tiddlywiki", "--build", "index"]
