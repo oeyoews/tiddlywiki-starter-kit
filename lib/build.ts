@@ -13,7 +13,9 @@ const TIDDLERSREPO = process.env.TIDDLERSREPO || 'neotw-tiddlers';
 const BUILDDIR = process.env.OUTPURDIR || '.tiddlywiki';
 // 实际上可以直接写 import {isBun} from 'process', 但是如果安装了 @types/node 会有ts 警告
 const hasBun = process.versions.bun;
-const log = ora(`${ci.isCI && ci.name} ${hasBun ? '🥟' : '📦'} Building ...`);
+const log = ora(
+  chalk.cyan(`${ci.isCI ? ci.name : ''} ${hasBun ? '🥟' : '📦'} Building ...`),
+);
 
 /**
  * @description only clone tiddlers repo on ci environment
