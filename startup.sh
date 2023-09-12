@@ -5,6 +5,7 @@ set -e
 if [ ! -f ./tiddlywiki/tiddlywiki.info ]; then
   cp ./tiddlywiki.info ./tiddlywiki
   cp -r ./files ./tiddlywiki
+  chmod 755 ./tiddlywiki
   echo '初始化 wiki 成功'
 fi
 
