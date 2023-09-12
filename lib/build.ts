@@ -13,24 +13,23 @@ const TIDDLERSREPO = process.env.TIDDLERSREPO || 'neotw-tiddlers';
 const BUILDDIR = process.env.OUTPURDIR || '.tiddlywiki';
 // 实际上可以直接写 import {isBun} from 'process', 但是如果安装了 @types/node 会有ts 警告
 const hasBun = process.versions.bun;
-const log = ora(`${hasBun ? '🥟' : '📦'} Building ...`);
+const log = ora(`${ci.isCI && ci.name} ${hasBun ? '🥟' : '📦'} Building ...`);
 
 /**
  * @description only clone tiddlers repo on ci environment
  */
 function cloneTiddlers(callback: () => void) {
+  log.start();
   if (ci.isCI) {
     spawn(['tiged', TIDDLERSREPO, 'tiddlers'], {
       onExit: (proc, exitCode, signalCode, error) => {
         if (exitCode === 0) {
           log.info(`tiddlers 文件夹复制完成`);
-          log.start(`${ci.name} 构建`);
           callback();
         }
       },
     });
   } else {
-    log.succeed(chalk.cyan(' 本地构建'));
     callback();
   }
 }
