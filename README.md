@@ -23,12 +23,12 @@
 ## Installation :package:
 
 ```bash
-# method 01: docker
+# method 01: use docker-compose(推荐使用, 最为方便快捷的方法)
+docker-compose up -d ## docker-compose.yml 参考 [docker-compose.yml](./docker-compose.yml)
+
+# method 02: docker
 docker pull oeyoews/tiddlywiki:latest
 docker run -d -p 8080:8080 -v $(pwd)/tiddlywiki:/app/tiddlywiki oeyoews/tiddlywiki:latest --listen port=8080 host=0.0.0.0
-
-# method 02: use docker-compose
-docker-compose up -d ## docker-compose.yml 参考 [docker-compose.yml](./docker-compose.yml)
 
 # method 03: cli: neotw-app cli 零依赖, 包仅有450kb
 pnpm create neotw-app@latest
