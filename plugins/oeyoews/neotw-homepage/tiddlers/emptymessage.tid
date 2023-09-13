@@ -26,6 +26,7 @@ title: $:/config/EmptyStoryMessage
   </div>
 
 <iconify-icon icon="skill-icons:nextjs-light" title="Next.js" />
+<iconify-icon icon="skill-icons:typescript" title="TypeScript" />
 <iconify-icon icon="skill-icons:react-dark" title="React"/>
 <iconify-icon icon="skill-icons:tailwindcss-dark" title="Tailwind" />
 <iconify-icon icon="vscode-icons:file-type-js-official" title="JavaScript" />
