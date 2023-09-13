@@ -69,6 +69,7 @@ export default [
   'oeyoews/tiddlywiki-motion',
   'oeyoews/tiddlywiki-publish-tiddler',
   'oeyoews/tiddlywiki-tailwindcss-plus',
+  // 'oeyoews/neotw-unocss',
   'oeyoews/tiddlywiki-tiddler-info',
   'oeyoews/tiddlywiki-gravatar',
   'oeyoews/tiddlywiki-sounds',
