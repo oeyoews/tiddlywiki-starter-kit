@@ -52,3 +52,5 @@ title: $:/config/EmptyStoryMessage
 <!--   <<.icon "$:/plugins/oeyoews/neotw/module/random-button/icon">> Random Tiddler</$link> -->
 <!-- </div> -->
 <!-- </$list> -->
+
+{{$:/plugins/Gk0Wk/echarts/Snippets/GitHubHeatMap}}
