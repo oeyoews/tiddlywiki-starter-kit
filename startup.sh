@@ -1,11 +1,17 @@
 #!/bin/sh
 set -e
 
-# /app/tiddlywiki -> ${PWD}/tiddlywiki
-if [ ! -f ./tiddlywiki/tiddlywiki.info ]; then
-  cp ./tiddlywiki.info ./tiddlywiki
-  cp -r ./files ./tiddlywiki
-  chmod 755 ./tiddlywiki
+# /app/wiki -> ${PWD}/wiki
+if [ -d ./wiki ]; then
+  if [ ! -e ./wiki/tiddlywiki.info ]; then
+    cp ./tiddlywiki.info ./wiki/tiddlywiki.info
+    echo '更新 tiddlywiki.info 文件成功'
+  fi
+else
+  mkdir -p ./wiki
+  cp ./tiddlywiki.info ./wiki/tiddlywiki.info
+  cp -r ./files ./wiki
+  chmod 755 ./wiki
   echo '初始化 wiki 成功'
 fi
 
