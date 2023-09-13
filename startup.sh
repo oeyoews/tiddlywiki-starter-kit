@@ -7,6 +7,4 @@ if [ ! -f ./wiki/tiddlywiki.info ]; then
     echo '更新 tiddlywiki.info 文件成功'
 fi
 
-# 必须要开局域网共享
-# exec tiddlywiki --listen host=0.0.0.0 port=8080
 exec "$@"
