@@ -8,7 +8,7 @@
     "build": "./lib/build.ts",
     "vercel-build": "node lib/build.mjs",
     "format": "prettier --write .",
-    "start": "./lib/startup.mjs --listen"
+    "start": "./lib/startup.mjs --listen port=8000"
   },
   "dependencies": {
     "ci-info": "^3.8.0",
