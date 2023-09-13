@@ -67,6 +67,7 @@ export default [
   'oeyoews/tiddlywiki-keyboard-hint',
   'oeyoews/tiddlywiki-modal-ui',
   'oeyoews/tiddlywiki-motion',
+  // 'oeyoews/neotw-hotkeys',
   'oeyoews/tiddlywiki-publish-tiddler',
   'oeyoews/tiddlywiki-tailwindcss-plus',
   // 'oeyoews/neotw-unocss',
