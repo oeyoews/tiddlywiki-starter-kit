@@ -2,17 +2,11 @@
 set -e
 
 # /app/wiki -> ${PWD}/wiki
-if [ -d ./wiki ]; then
-  if [ ! -e ./wiki/tiddlywiki.info ]; then
+if [ ! -f ./wiki/tiddlywiki.info ]; then
+    chmod 755 ./wiki
     cp ./tiddlywiki.info ./wiki/tiddlywiki.info
+    chmod 755 ./wiki/tiddlywiki.info
     echo '更新 tiddlywiki.info 文件成功'
-  fi
-else
-  mkdir -p ./wiki
-  cp ./tiddlywiki.info ./wiki/tiddlywiki.info
-  cp -r ./files ./wiki
-  chmod 755 ./wiki
-  echo '初始化 wiki 成功'
 fi
 
 # 必须要开局域网共享
