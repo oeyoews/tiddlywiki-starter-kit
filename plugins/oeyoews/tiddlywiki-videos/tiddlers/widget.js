@@ -21,18 +21,14 @@ youtube widget
 
       var youtubeId = this.getAttribute('youtubeId');
       var playlist = this.getAttribute('playlist');
-      var iframeSrc = 'https://www.youtube.com/embed/';
+      const prefix = 'https://www.youtube.com/embed/';
 
-      if (playlist) {
-        iframeSrc += `videoseries?list=${youtubeId}`;
-      } else {
-        iframeSrc += `${youtubeId}`;
-      }
+      const iframeSrc = playlist
+        ? `${prefix}videoseries?list=${youtubeId}`
+        : `${prefix}${youtubeId}`;
 
       const container = this.document.createElement('div');
-      container.className = 'flex justify-center item-center';
-      parent.insertBefore(container, nextSibling);
-      this.domNodes.push(container);
+      container.className = 'flex justify-center item-center my-4';
 
       // Create an object to represent the iframe attributes
       const iframeAttributes = {
@@ -54,6 +50,9 @@ youtube widget
       }
 
       container.appendChild(iframe);
+
+      parent.insertBefore(container, nextSibling);
+      this.domNodes.push(container);
     }
   }
 
