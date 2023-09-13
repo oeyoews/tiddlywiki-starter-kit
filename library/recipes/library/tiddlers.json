@@ -195,6 +195,21 @@
         "icon": "data:image/svg+xml,%3Csvg%20stroke%3D%22currentColor%22%20fill%3D%22currentColor%22%20stroke-width%3D%220%22%20version%3D%221%22%20viewBox%3D%220%200%2048%2048%22%20enable-background%3D%22new%200%200%2048%2048%22%20height%3D%221em%22%20width%3D%221em%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20fill%3D%22%23E8EAF6%22%20points%3D%2242%2C39%206%2C39%206%2C23%2024%2C6%2042%2C23%22%3E%3C%2Fpolygon%3E%3Cg%20fill%3D%22%23C5CAE9%22%3E%3Cpolygon%20points%3D%2239%2C21%2034%2C16%2034%2C9%2039%2C9%22%3E%3C%2Fpolygon%3E%3Crect%20x%3D%226%22%20y%3D%2239%22%20width%3D%2236%22%20height%3D%225%22%3E%3C%2Frect%3E%3C%2Fg%3E%3Cpolygon%20fill%3D%22%23B71C1C%22%20points%3D%2224%2C4.3%204%2C22.9%206%2C25.1%2024%2C8.4%2042%2C25.1%2044%2C22.9%22%3E%3C%2Fpolygon%3E%3Crect%20x%3D%2218%22%20y%3D%2228%22%20fill%3D%22%23D84315%22%20width%3D%2212%22%20height%3D%2216%22%3E%3C%2Frect%3E%3Crect%20x%3D%2221%22%20y%3D%2217%22%20fill%3D%22%2301579B%22%20width%3D%226%22%20height%3D%226%22%3E%3C%2Frect%3E%3Cpath%20fill%3D%22%23FF8A65%22%20d%3D%22M27.5%2C35.5c-0.3%2C0-0.5%2C0.2-0.5%2C0.5v2c0%2C0.3%2C0.2%2C0.5%2C0.5%2C0.5S28%2C38.3%2C28%2C38v-2C28%2C35.7%2C27.8%2C35.5%2C27.5%2C35.5z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%0A"
     },
     {
+        "title": "$:/plugins/oeyoews/neotw-hotkeys",
+        "description": "",
+        "author": "oeyoews",
+        "version": "0.0.1",
+        "core-version": ">=5.3.0",
+        "type": "application/json",
+        "parent-plugin": "$:/plugins/oeyoews/neotw",
+        "plugin-type": "plugin",
+        "name": "neotw-hotkeys",
+        "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
+        "list": "readme",
+        "readme": "{{$:/languages/neotw-hotkeys/readme}}\n",
+        "requires-reload": "yes"
+    },
+    {
         "title": "$:/plugins/oeyoews/neotw-icons",
         "description": "Neotw Icons",
         "author": "oeyoews",
