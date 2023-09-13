@@ -53,4 +53,8 @@ title: $:/config/EmptyStoryMessage
 <!-- </div> -->
 <!-- </$list> -->
 
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
+<div class="dark:hidden">
 {{$:/plugins/Gk0Wk/echarts/Snippets/GitHubHeatMap}}
+</div>
+</$list>
