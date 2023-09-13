@@ -23,5 +23,6 @@
       "@/*": ["./*"]
     }
   },
-  "exclude": ["plugins"]
+  "exclude": ["plugins", "node_modules"],
+  "include": ["**/*.ts", "**/*.tsx"]
 }
