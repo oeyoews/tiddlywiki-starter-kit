@@ -3,9 +3,7 @@ set -e
 
 # /app/wiki -> ${PWD}/wiki
 if [ ! -f ./wiki/tiddlywiki.info ]; then
-    chmod 755 ./wiki
     cp ./tiddlywiki.info ./wiki/tiddlywiki.info
-    chmod 755 ./wiki/tiddlywiki.info
     echo '更新 tiddlywiki.info 文件成功'
 fi
 
