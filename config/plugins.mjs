@@ -24,6 +24,7 @@ export default [
   // 'tiddlywiki/internals',
   'tiddlywiki/markdown',
   // 自定义插件
+  'oeyoews/neotw-zen-mode',
   'oeyoews/neotw-notranslate',
   'oeyoews/neotw-permalink',
   'oeyoews/neotw-tw-bot',

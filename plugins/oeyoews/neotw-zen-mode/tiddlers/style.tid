@@ -1,0 +1,8 @@
+title: $:/plugins/oeyoews/neotw-zen-mode/style.css
+tags: $:/tags/Stylesheet
+
+.tc-edit-field-add,
+.tc-edit-add-tag,
+.tc-edit-type-selector-wrapper {
+  display: none;
+}
