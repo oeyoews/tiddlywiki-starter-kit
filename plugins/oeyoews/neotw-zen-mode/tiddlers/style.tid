@@ -7,3 +7,7 @@ tags: $:/tags/Stylesheet
 .tc-edit-type-selector-wrapper {
   display: none !important;
 }
+
+<!-- [role="region"] .tc-tiddler-frame { -->
+<!--   background: transparent !important; -->
+<!-- } -->
