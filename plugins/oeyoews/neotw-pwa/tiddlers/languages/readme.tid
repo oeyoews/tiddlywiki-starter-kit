@@ -7,6 +7,8 @@ title: $:/languages/neotw-pwa/readme
 > 让你的TiddlyWiki网页像app一样启动
 > make your TiddlyWiki web page start like an app
 
+> 注意: 额外提供了favicon.ico
+
 !! Setup
 
 <$reveal type="nomatch" state="$:/plugins/oeyoews/neotw-pwa/routes/get-manifest.js!!overwrite" text="yes">
