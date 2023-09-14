@@ -1,6 +1,6 @@
 {
-  "short_name": "tiddlywiki",
-  "name": "tiddlywiki",
+  "short_name": "TiddlyWiki5",
+  "name": "TiddlyWiki5",
   "icons": [
     {
       "src": "/tiddlywiki.png",
@@ -14,5 +14,5 @@
   "display": "standalone",
   "scope": "/",
   "theme_color": "#F5F5EE",
-  "description": "tiddlywiki"
+  "description": "TiddlyWiki5"
 }
