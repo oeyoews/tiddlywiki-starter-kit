@@ -8,7 +8,6 @@
     "tiddlywiki/tiddlyweb",
     "tiddlywiki/filesystem",
     "tiddlywiki/highlight",
-    "tiddlywiki/katex",
     "tiddlywiki/browser-sniff",
     "tiddlywiki/codemirror",
     "tiddlywiki/codemirror-autocomplete",
