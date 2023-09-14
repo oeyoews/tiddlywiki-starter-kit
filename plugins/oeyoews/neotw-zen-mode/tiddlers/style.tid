@@ -3,6 +3,7 @@ tags: $:/tags/Stylesheet
 
 .tc-edit-tags,
 .tc-edit-field-add,
+[role="region"] .tc-tiddler-title,
 .tc-edit-type-selector-wrapper {
   display: none !important;
 }
