@@ -3,11 +3,8 @@ description: ~Codemirror ~VimJK
 
 <div class="prose max-w-none prose-indigo">
 
-Overwrite codemirror-keymap-vim by [[@oeyoews|https://github.com/oeyoews]]
+* support `jk`, H L replace 0 $
 
-* support `jk` mapping
-* support H L replace 0 $
-
-<!-- * https://github.com/codemirror/codemirror5/pull/6765 -->
+> vim 不能没有jk, 就像西方不能没有耶路撒冷
 
 </div>
