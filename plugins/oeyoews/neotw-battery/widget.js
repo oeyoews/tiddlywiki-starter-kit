@@ -42,7 +42,6 @@ neotw-battery widget
           const level = (battery.level * 100).toFixed(0);
           const batteryLevelEl = this.domNodes[0];
           batteryLevelEl.textContent = level + '%';
-          console.log('updated');
         });
       };
 

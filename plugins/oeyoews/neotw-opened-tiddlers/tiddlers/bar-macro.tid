@@ -7,11 +7,11 @@ tags: $:/tags/Macro
 <div class="tc-tab-buttons opened-tiddlers-bar" >
   <div class="opened-tiddlers-bar-tabs">
     <!-- todo: FIXED ORDER NOT DYNAMICJK -->
-    <div class="text-indigo-500 bg-gray-200 text-md font-bold py-1 px-2 capitalize" >
-      <$link to={{$:/temp/focussedTiddler}} >
-         <$view tiddler={{$:/temp/focussedTiddler}} field='title'/>
-      </$link>
-    </div>
+    <!-- <div class="text-indigo-500 bg-gray-200 text-md font-bold py-1 px-2 capitalize" > -->
+    <!--   <$link to={{$:/temp/focussedTiddler}} > -->
+    <!--      <$view tiddler={{$:/temp/focussedTiddler}} field='title'/> -->
+    <!--   </$link> -->
+    <!-- </div> -->
     <$list filter="[list[$:/StoryList]]" history="$:/HistoryList" variable="currentTab">
       <$reveal type="nomatch" state="$:/HistoryList!!current-tiddler" text=<<currentTab>>>
           <div>
