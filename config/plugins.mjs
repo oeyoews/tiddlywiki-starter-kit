@@ -6,7 +6,7 @@ export default [
   'tiddlywiki/tiddlyweb',
   'tiddlywiki/filesystem',
   'tiddlywiki/highlight',
-  'tiddlywiki/katex', // 支持数学公式
+  // 'tiddlywiki/katex', // 支持数学公式
   'tiddlywiki/browser-sniff',
   'tiddlywiki/codemirror',
   // 'BTC/tiddlywiki-codemirror-6',
