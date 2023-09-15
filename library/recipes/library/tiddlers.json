@@ -238,6 +238,21 @@
         "requires-reload": "yes"
     },
     {
+        "title": "$:/plugins/oeyoews/neotw-login",
+        "description": "",
+        "author": "oeyoews",
+        "version": "0.0.1",
+        "core-version": ">=5.3.0",
+        "type": "application/json",
+        "parent-plugin": "$:/plugins/oeyoews/neotw",
+        "plugin-type": "plugin",
+        "name": "neotw-login",
+        "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
+        "list": "readme",
+        "readme": "{{$:/languages/neotw-login/readme}}\n",
+        "requires-reload": "yes"
+    },
+    {
         "title": "$:/plugins/oeyoews/neotw-markdown-extensions",
         "description": "Neotw Markdown Extensions",
         "author": "oeyoews",
