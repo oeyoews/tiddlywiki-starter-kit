@@ -8,7 +8,6 @@ if [ ! -f ./wiki/tiddlywiki.info ]; then
     fi
     cp ./tiddlywiki.info ./wiki/tiddlywiki.info
     cp -r ./files ./wiki/files
-    # tree -L 2
     echo '更新 tiddlywiki.info 文件成功'
 fi
 
