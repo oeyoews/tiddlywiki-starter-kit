@@ -167,7 +167,7 @@ tags: $:/tags/PageTemplate
   <<home-button>>
 </$list>
   <!-- <<music-button>> -->
-    <$tw-bot-popup />
+    <!-- <$tw-bot-popup /> -->
   <!-- <<tours>> -->
   <!-- <<load-articles>> -->
 </div>
@@ -201,7 +201,7 @@ tags: $:/tags/PageTemplate
       <!-- <<o-sidebar>> -->
       <!-- <<switch-lang>> -->
       <<readonly-mode>>
-      <$tw-bot-popup />
+      <!-- <$tw-bot-popup /> -->
       <!-- <<toggle-theme>> -->
       <!-- <<zen-mode>> -->
 <!-- <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]"> -->

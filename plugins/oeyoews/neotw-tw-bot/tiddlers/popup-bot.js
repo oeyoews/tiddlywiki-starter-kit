@@ -32,22 +32,20 @@ neotw-tw-bot widget
       );
       span.classList.add('cursor-pointer');
       span.addEventListener('click', () => {
-        botNode.style.scale = '1';
-        masklayer.style.scale = '1';
+        botNode.classList.remove('scale-0');
+        masklayer.classList.remove('scale-0');
       });
       container.appendChild(span);
       const masklayer = document.createElement('div');
       masklayer.className =
-        'fixed inset-0 bg-black/10 backdrop-blur z-[9998] cursor-pointer';
-      masklayer.style.scale = '0';
+        'fixed inset-0 bg-black/10 backdrop-blur z-[9998] cursor-pointer scale-0';
       masklayer.addEventListener('click', () => {
-        botNode.style.scale = '0';
-        masklayer.style.scale = '0';
+        botNode.classList.add('scale-0');
+        masklayer.classList.add('scale-0');
       });
       const botNode = document.createElement('div');
       botNode.className =
-        'fixed top-8 -translate-x-1/2 left-1/2 w-full z-[9999] transition-all duration-300 ease-in-out';
-      botNode.style.scale = '0';
+        'fixed top-8 -translate-x-1/2 left-1/2 w-full z-[9999] transition-all duration-300 ease-in-out scale-0';
       botNode.appendChild(this.virtualRoot);
       container.appendChild(masklayer);
       container.appendChild(botNode);
