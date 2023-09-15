@@ -25,35 +25,12 @@ ${pluginname} widget
       this.computeAttributes();
       this.execute();
 
-      const param = this.getAttribute('param', 'Test Param');
-      const classNames = this.getAttribute('class', '').split('');
+      const buttonNode = document.createElement('div');
 
-      const buttonNode = $tw.utils.domMaker('button', {
-        text: param,
-        class: '',
-        attributes: {},
-        children: [],
-        eventListeners: [
-          {
-            name: 'click',
-            handlerObject: this,
-            handlerMethod: 'handlerClick',
-          },
-        ],
-      });
-      classNames.forEach((className) => {
-        if (className) {
-          buttonNode.classList.add(className);
-        }
-      });
       parent.insertBefore(buttonNode, nextSibling);
       this.domNodes.push(buttonNode);
     }
-
-    handlerClick = () => {
-      console.log('This require just load once');
-    };
   }
 
-  exports[''] = DivWidget;
+  exports.test = DivWidget;
 })();

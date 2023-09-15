@@ -1,4 +1,2 @@
 title: $:/plugins/oeyoews/${pluginname}/readme
 description: ${pluginname}
-
-{{$:/languages/${pluginname}/readme}}
