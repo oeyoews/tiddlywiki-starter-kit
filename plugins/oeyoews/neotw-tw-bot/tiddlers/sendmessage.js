@@ -22,13 +22,16 @@ module.exports = function twBot() {
   tagCount.classList.add('text-gray-400', '-ml-1', '-mt-2');
   tagCount.textContent = tagCountText ? tagCountText : '';
   selectTag.classList.add(
-    'text-black',
+    'text-white',
     'appearance-none',
     'border-none',
-    'p-2',
+    'p-1',
+    'ml-2',
+    'font-bold',
     'rounded-full',
     'cursor-pointer',
-    `bg-${tagsDict[defaultTag]}-300`,
+    'bg-transparent',
+    `text-${tagsDict[defaultTag]}-400`,
   );
   selectTag.addEventListener('change', function () {
     tagCount.textContent = $tw.wiki.filterTiddlers(
@@ -37,18 +40,18 @@ module.exports = function twBot() {
     // 移除以"bg-"开头的类名
     localStorage.setItem('selectedTag', selectTag.value);
     selectTag.classList.forEach((className) => {
-      if (className.startsWith('bg-')) {
+      if (className.startsWith('text-')) {
         selectTag.classList.remove(className);
       }
     });
     // add new color
-    selectTag.classList.add(`bg-${tagsDict[selectTag.value]}-300`);
+    selectTag.classList.add(`text-${tagsDict[selectTag.value]}-400`);
   });
   tags.forEach(({ tag, color }) => {
     const option = document.createElement('option');
     option.value = tag;
     option.text = tag;
-    option.classList.add(`bg-${color}-300`);
+    option.classList.add(`text-${color}-300`, 'font-bold');
     if (tag === defaultTag) {
       option.selected = true; // 设置默认选中标签
       // need listener
@@ -94,7 +97,6 @@ module.exports = function twBot() {
   // inputMessage.setAttribute("autofocus", true);
   inputMessage.classList.add(
     'w-full',
-    'mx-2',
     'border-none',
     'placeholder-zinc-400',
     'bg-transparent',
@@ -114,7 +116,7 @@ module.exports = function twBot() {
     }
   });
   form.appendChild(selectTag);
-  form.appendChild(tagCount);
+  // form.appendChild(tagCount);
   form.appendChild(inputMessage);
   form.appendChild(button);
 
