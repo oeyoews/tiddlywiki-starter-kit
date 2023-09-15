@@ -501,7 +501,7 @@ Command Palette Widget
         // add transform
         {
           className:
-            'bg-white flex-col z-[9999] transform shadow-lg p-2 mt-4 fixed left-1/2 -translate-x-1/2 w-1/2 rounded transition-all dark:invert',
+            'bg-white flex-col z-[9999] transform shadow-lg p-2 mt-4 fixed left-1/2 -translate-x-1/2 w-1/2 rounded transition-all dark:invert w-3/4 md:w-1/2',
         },
         { display: 'none' },
       );
