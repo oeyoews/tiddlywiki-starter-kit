@@ -68,8 +68,7 @@ module.exports = function twBot() {
     'justify-between',
     'max-w-xl',
     'mx-auto',
-    'border',
-    'border-2',
+    'border-none',
     'rounded-full',
     'bg-black',
   );
