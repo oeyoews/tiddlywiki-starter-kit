@@ -13,7 +13,7 @@
 ## Installation :package:
 
 ```bash
-docker run -d --name tiddlywiki -p 8080:8080 -v $(pwd)/wiki:/app/wiki oeyoews/tiddlywiki:latest --listen port=8080 host=0.0.0.0
+docker run -d --name tiddlywiki -p 8080:8080 -v $(pwd)/wiki:/app/wiki oeyoews/tiddlywiki:latest tiddlywiki wiki --listen port=8080 host=0.0.0.0
 ```
 
 <details>
