@@ -482,7 +482,7 @@ Command Palette Widget
       );
 
       let inputAndMainHintWrapper = createElement('div', {
-        className: 'flex justify-center items-center',
+        className: 'flex justify-center items-center p-2',
       });
       // pointer-events-none fix z-index bug
       // backdrop-blur not effect with bg-neutral-600
@@ -501,7 +501,7 @@ Command Palette Widget
         // add transform
         {
           className:
-            'bg-white flex-col z-[9999] transform shadow-lg py-2 mt-4 fixed left-1/2 -translate-x-1/2 w-1/2 rounded transition-all dark:invert',
+            'bg-white flex-col z-[9999] transform shadow-lg p-2 mt-4 fixed left-1/2 -translate-x-1/2 w-1/2 rounded transition-all dark:invert',
         },
         { display: 'none' },
       );
@@ -509,6 +509,7 @@ Command Palette Widget
       this.searchContainer = createElement('input', { type: '' });
       this.searchContainer.classList.add(
         'w-full',
+        'shadow-none',
         'border-none',
         'dark:invert',
       );
