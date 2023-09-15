@@ -15,15 +15,15 @@ title: $:/config/EmptyStoryMessage
 <div class="dark:bg-white flex justify-center my-4">
   {{neotw-badges}}
 </div>
-  <$ostage gradient/>
+  <!-- <$ostage gradient/> -->
 
   <div class='my-4'>
    <$hitokoto />
   </div>
 
-  <div class="my-4">
-    <$typing text="A modern style and elegant notebook based on Tiddlywiki by oeyoews" gradient />
-  </div>
+  <!-- <div class="my-4"> -->
+  <!--   <$typing text="A modern style and elegant notebook based on Tiddlywiki by oeyoews" gradient /> -->
+  <!-- </div> -->
 
 <iconify-icon icon="skill-icons:nextjs-light" title="Next.js" />
 <iconify-icon icon="skill-icons:typescript" title="TypeScript" />
@@ -55,7 +55,7 @@ title: $:/config/EmptyStoryMessage
 <!-- </$list> -->
 
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
-<div class="dark:hidden">
+<div class="dark:hidden my-4">
 {{$:/plugins/Gk0Wk/echarts/Snippets/GitHubHeatMap}}
 </div>
 </$list>
