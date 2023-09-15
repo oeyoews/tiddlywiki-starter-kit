@@ -7,16 +7,10 @@ services:
     ports:
       - '8080:8080' # 映射端口，将主机的 8080 端口映射到容器的 8080 端口
     volumes:
-      - ${PWD}/tiddlywiki:/app/tiddlywiki # 映射对应的目录
+      - ${PWD}/wiki:/app/wiki # 映射对应的目录
       - ${PWD}/.tiddlywiki/:/app/.tiddlywiki # 映射对应的目录
     # 接受tw的任何参数
     # start
-    command: [
-        'tiddlywiki',
-        'tiddlywiki',
-        '--listen',
-        'port=8080',
-        'host=0.0.0.0',
-      ] # 第一个tiddlywiki 是命令，第二个tiddlywiki 是目录
+    command: ['tiddlywiki', 'wiki', '--listen', 'port=8080', 'host=0.0.0.0'] # 第�个tiddlywiki 是命令，第二个tiddlywiki 是目录
     # build
-    # command: ["tiddlywiki", "tiddlywiki", "--build", "index"]
+    # command: ["tiddlywiki", "wiki", "--build", "index"]
