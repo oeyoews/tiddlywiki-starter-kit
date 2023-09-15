@@ -24,6 +24,7 @@ export default [
   // 自定义插件
   'oeyoews/neotw-zen-mode',
   'oeyoews/neotw-notranslate',
+  'oeyoews/neotw-placeholder',
   'oeyoews/neotw-permalink',
   'oeyoews/neotw-tw-bot',
   'oeyoews/neotw-pwa',
