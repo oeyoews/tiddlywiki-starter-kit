@@ -1,5 +1,5 @@
 <center>
-<img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/snapshot.png" class="hidden" alt="neotw banner" title="neotw"/>
+<img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/snapshot02.png" class="hidden" alt="neotw banner" title="neotw"/>
 </center>
 
 ## TiddlyWiki starter kit
