@@ -211,9 +211,9 @@ tags: $:/tags/PageTemplate
       <<twbot>>
       <!-- <<toggle-theme>> -->
       <!-- <<zen-mode>> -->
-<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
-  <!-- <<home-button>> -->
-</$list>
+<!-- <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]"> -->
+<!--   <<home-button>> -->
+<!-- </$list> -->
     </div>
   <!-- </$list> -->
 </$list>
