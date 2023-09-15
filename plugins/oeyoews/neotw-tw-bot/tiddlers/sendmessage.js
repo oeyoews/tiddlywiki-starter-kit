@@ -22,10 +22,11 @@ module.exports = function twBot() {
   tagCount.classList.add('text-gray-400', '-ml-1', '-mt-2');
   tagCount.textContent = tagCountText ? tagCountText : '';
   selectTag.classList.add(
+    'text-black',
     'appearance-none',
     'border-none',
     'p-2',
-    'rounded-sm',
+    'rounded-full',
     'cursor-pointer',
     `bg-${tagsDict[defaultTag]}-300`,
   );
@@ -59,14 +60,15 @@ module.exports = function twBot() {
   // 直接使用fakeDocument会报错
   const form = document.createElement('form');
   form.classList.add(
-    'p-2',
+    'p-1',
     'flex',
     'justify-between',
     'max-w-xl',
     'mx-auto',
     'border',
     'border-2',
-    'rounded',
+    'rounded-full',
+    'bg-black',
   );
 
   const button = document.createElement('button');
@@ -79,9 +81,11 @@ module.exports = function twBot() {
     'p-2',
     'mx-2',
     'bg-transparent',
-    'hover:fill-green-700',
     'scale-125',
+    'hover:scale-150',
+    'transition',
     'cursor-not-allowed',
+    'rounded-full',
   );
   button.title = 'send';
   button.disabled = true; // 不需要使用readonly
@@ -92,9 +96,11 @@ module.exports = function twBot() {
     'w-full',
     'mx-2',
     'border-none',
-    'placeholder-gray-300',
+    'placeholder-zinc-400',
     'bg-transparent',
     'caret-indigo-500',
+    'shadow-none',
+    'text-white',
   );
   inputMessage.placeholder = `任何${tags.map(({ tag }) => tag).join(',')}`;
   inputMessage.addEventListener('input', function () {
