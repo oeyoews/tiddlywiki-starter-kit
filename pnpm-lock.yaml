@@ -28,6 +28,9 @@ devDependencies:
   '@types/prompts':
     specifier: ^2.4.4
     version: 2.4.4
+  address:
+    specifier: ^1.2.2
+    version: 1.2.2
   bun-types:
     specifier: ^1.0.1
     version: 1.0.1
@@ -37,6 +40,9 @@ devDependencies:
   prettier:
     specifier: ^3.0.3
     version: 3.0.3
+  qrcode-terminal:
+    specifier: ^0.12.0
+    version: 0.12.0
   tw5-typed:
     specifier: ^0.3.10
     version: 0.3.10
@@ -78,6 +84,11 @@ packages:
 
   /@types/zrender@4.0.4:
     resolution: {integrity: sha512-oLm5ULgmBZh2Fw3G0BbhKaES0nUkmxwC+j932+0hBX+/MrNCAkUy3vOfZ7Mhub1IuBe3ApCy6MzgTw0Atu2RwA==}
+    dev: true
+
+  /address@1.2.2:
+    resolution: {integrity: sha512-4B/qKCfeE/ODUaAUpSwfzazo5x29WD4r3vXiWsB7I2mSDAihwEqKO+g8GELZUQSSAo5e1XTYh3ZVfLyxBc12nA==}
+    engines: {node: '>= 10.0.0'}
     dev: true
 
   /agent-base@6.0.2:
@@ -396,6 +407,11 @@ packages:
       kleur: 3.0.3
       sisteransi: 1.0.5
     dev: false
+
+  /qrcode-terminal@0.12.0:
+    resolution: {integrity: sha512-EXtzRZmC+YGmGlDFbXKxQiMZNwCLEO6BANKXG4iCtSIM0yqc/pappSx3RIKr4r0uh5JsBckOXeKrB3Iz7mdQpQ==}
+    hasBin: true
+    dev: true
 
   /readable-stream@3.6.2:
     resolution: {integrity: sha512-9u/sniCrY3D5WdsERHzHE4G2YCXqoG5FTHUiCC4SIbr6XcLZBY05ya9EKjYek9O5xOAwjGq+1JdGBAS7Q9ScoA==}
