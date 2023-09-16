@@ -1,80 +1,6 @@
 title: $:/plugins/oeyoews/neotw/modules/to-top/ui
 tags: $:/tags/PageTemplate
 
-<!-- todo: add random button -->
-\define backToTopBtn()
-<!-- <span class="nav"> -->
-<button class="back-to-top-btn">
-<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M8 11h3v10h2V11h3l-4-4-4 4zM4 3v2h16V3H4z"></path></svg>
-</button>
-<!-- </span> -->
-\end
-
-\define tours()
-<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
-<$button message="om-tours" class="mt-2 rounded-full shadow-md hover:scale-110 duration-300 transition bg-slate-200/30" tooltip="Tours">
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-6 h-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
-</svg>
-</$button>
-</$list>
-\end
-
-<!-- \define giscus-app() -->
-<!-- <$list filter="[[$:/temp/focussedTiddler]!is[missing]]"> -->
-<!-- <$list filter="[[$:/temp/focussedTiddler]get[text]!is[system]]"> -->
-<!-- <$button tooltip="Comment" class="o-btn-back"> -->
-<!-- <$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/tiddlywiki-giscus/giscus-modal"/> -->
-<!-- {{$:/plugins/oeyoews/tiddlywiki-giscus/icon-gem}} -->
-<!-- </$button> -->
-<!-- </$list> -->
-<!-- </$list> -->
-<!-- \end -->
-
-<!-- \define reveal-js() -->
-<!-- <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]"> -->
-<!-- <$button tooltip="Reveal Slides" class="o-btn-back"> -->
-<!-- {{$:/plugins/oeyoews/neotw/icon/revea-js}} -->
-<!-- <$action-navigate $to="neotw-reveal-js" /> -->
-<!-- </$button> -->
-<!-- </$list> -->
-<!-- \end -->
-
-\define random-article()
-<$list filter="[{$:/info/url/protocol}match[https:]]">
-<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
-<$button tooltip="random tiddler" class="o-btn-back" actions={{$:/plugins/oeyoews/neotw/modules/random-button/actions-article}}>
-<$action-sendmessage $message="tm-close-all-tiddlers" />
-<$list filter="[<tv-config-toolbar-icons>match[yes]]">
-  {{$:/plugins/oeyoews/neotw/module/random-button/icon}}
-</$list>
-</$button>
-</$list>
-</$list>
-\end
-
-\define scroll-top-bottom()
-<!-- top -->
-<$button tooltip="Back to top" class="o-btn-back">
-<$list variable="target" filter="[list[$:/StoryList]first[]]">
-  <$action-navigate $to=<<target>> $scroll="yes"/>
-</$list>
-<$list filter="[<tv-config-toolbar-icons>match[yes]]">
-  <svg id="backToTopBtn" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M8 11h3v10h2V11h3l-4-4-4 4zM4 3v2h16V3H4z"></path></svg>
-</$list>
-</$button>
-<!-- bottom -->
-<!-- <$button tooltip="Back to bottom" class="o-btn-back"> -->
-<!-- <$list variable="target" filter="[list[$:/StoryList]last[]]"> -->
-<!-- <$action-navigate $to=<<target>> $scroll="yes"/> -->
-<!-- </$list> -->
-<!-- <$list filter="[<tv-config-toolbar-icons>match[yes]]"> -->
-<!-- <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M16 13h-3V3h-2v10H8l4 4 4-4zM4 19v2h16v-2H4z"></path></svg> -->
-<!-- </$list> -->
-<!-- </$button> -->
-
-\end
-
 \define home-button()
 <$button tooltip="Back to home" class="o-btn-back" aria-label='home'>
 <$action-navigate $to="GettingStarted" $scroll="yes"/>
@@ -84,129 +10,18 @@ tags: $:/tags/PageTemplate
 </$button>
 \end
 
-\define music-button()
-  <$aplayer-dev class='shadow-lg rounded-full hover:scale-110 duration-300 transition cursor-pointer' />
-\end
-
-\define load-articles()
-<$set name="a-total" value={{{ [field:publish[article]count[]] }}}>
-<$set name="a-num" value={{{ [[$:/temp/articles/number]get[number]else[1]add[1]] }}}>
-<$list filter="[<a-num>compare:number:lteq<a-total>]">
-<center>
-	<$button class="o-btn-back" tooltip="Load rencent articles">
-     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path></svg>
-  <$action-setfield $tiddler="$:/temp/articles/number" number={{{ [<a-num>] }}}/>
-	</$button>
-</center>
-</$list>
-</$set>
-</$set>
-\end
-
-<!-- TODO; intergrate to fullscreen shortcuts -->
-\define zen-mode()
-<!-- zen mode -->
-<$list filter="[[$:/temp/zen-mode]get[text]else[no]match[no]]">
-<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
-<$button tooltip="Zen mode" class="o-btn-back">
-<$action-setfield $tiddler="$:/temp/zen-mode" text="yes"/>
-<!-- <$action-setfield $tiddler="$:/temp/style/toggle-footer" text="footer, .aplayer {display:none !important;}" tags="$:/tags/Stylesheet"/> -->
-<$action-sendmessage $message="tm-full-screen" $param="enter"/>
-  <$list filter="[<tv-config-toolbar-icons>match[yes]]">
-    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M5 5h5V3H3v7h2zm5 14H5v-5H3v7h7zm11-5h-2v5h-5v2h7zm-2-4h2V3h-7v2h5z"></path></svg>
-  </$list>
-</$button>
-</$list>
-</$list>
-
-<!-- exit zen-mode -->
-<$list filter="[[$:/temp/zen-mode]get[text]match[yes]]">
-<$button class=<<tv-config-toolbar-class>> tooltip="Non-zen mode" class="o-btn-back">
-<$action-setfield $tiddler="$:/temp/zen-mode" text="no"/>
-<$action-setfield $tiddler="$:/temp/style/toggle-footer" text="" tags="$:/tags/Stylesheet"/>
-<$action-sendmessage $message="tm-full-screen" $param="exit"/>
-  <$list filter="[<tv-config-toolbar-icons>match[yes]]">
-<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10 4H8v4H4v2h6zM8 20h2v-6H4v2h4zm12-6h-6v6h2v-4h4zm0-6h-4V4h-2v6h6z"></path></svg>
-  </$list>
-</$button>
-</$list>
-\end
-
-<!-- darkmode automatically -->
-\define toggle-theme()
-<!-- theme -->
-<$list filter="[[$:/palette]get[text]else[$:/themes/nico/notebook/palettes/palette-beige]match[$:/themes/nico/notebook/palettes/palette-beige]]">
-<!-- to night -->
-<$button  tooltip="Night" class="o-btn-back">
-<$action-setfield $tiddler="$:/palette" text="$:/palettes/GithubDark"/>
-  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M9.5 4c4.41 0 8 3.59 8 8s-3.59 8-8 8c-.34 0-.68-.02-1.01-.07 1.91-2.16 3.01-4.98 3.01-7.93s-1.1-5.77-3.01-7.93C8.82 4.02 9.16 4 9.5 4m0-2c-1.82 0-3.53.5-5 1.35 2.99 1.73 5 4.95 5 8.65s-2.01 6.92-5 8.65c1.47.85 3.18 1.35 5 1.35 5.52 0 10-4.48 10-10S15.02 2 9.5 2z"></path></svg>
-</$button>
-</$list>
-<$list filter="[[$:/palette]get[text]!match[$:/themes/nico/notebook/palettes/palette-beige]]">
-<!-- to sun -->
-<$button tooltip="Sun" class="o-btn-back">
-<$action-setfield $tiddler="$:/palette" text="$:/themes/nico/notebook/palettes/palette-beige"/>
-  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path></svg>
-</$button>
-</$list>
-\end
-
-\whitespace trim
-
 <!-- emptystorymessage -->
 <$list filter="[[$:/StoryList]get[list]count[]match[0]]">
 <div id="stx-story-top">
-  <!-- <<backToTopBtn>> -->
-  <!-- <<giscus-app>> -->
-  <!-- <<reveal-js>> -->
-  <!-- <<random-article>> -->
-  <!-- <<github-cat>> -->
-  <!-- <<switch-lang>> -->
-  <!-- <<toggle-theme>> -->
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
   <<home-button>>
 </$list>
-  <!-- <<music-button>> -->
-    <!-- <$tw-bot-popup /> -->
-  <!-- <<tours>> -->
-  <!-- <<load-articles>> -->
 </div>
 </$list>
 
-<!-- non-storyriver -->
-<!-- more two tiddler -->
-<!-- <$list filter="[[$:/StoryList]get[list]!is[blank]]"> -->
-<!-- <$list filter="[list[$:/StoryList]count[]compare:number:gt[2]]"> -->
-<!-- <div id="stx-story-top"> -->
-<!--   <<giscus-app>> -->
-<!--   <<o-sidebar>> -->
-<!--   <<switch-lang>> -->
-<!--   <<readonly-mode>> -->
-<!--   <<toggle-theme>> -->
-<!--   <<zen-mode>> -->
-<!--   <<scroll-top-bottom>> -->
-<!--   <<home-button>> -->
-<!-- </div> -->
-<!-- </$list> -->
-<!-- </$list> -->
-
 <!-- non-storyriver && less two -->
 <$list filter="[[$:/StoryList]get[list]!is[blank]]">
-  <!-- <$list filter="[list[$:/StoryList]count[]compare:number:lteq[2]]"> -->
     <div id="stx-story-top">
-      <!-- <<backToTopBtn>> -->
-      <!-- <<giscus-app>> -->
-      <!-- <<random-article>> -->
-      <!-- right padding conflict for backtotop -->
-      <!-- <<o-sidebar>> -->
-      <!-- <<switch-lang>> -->
       <<readonly-mode>>
-      <!-- <$tw-bot-popup /> -->
-      <!-- <<toggle-theme>> -->
-      <!-- <<zen-mode>> -->
-<!-- <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]"> -->
-<!--   <<home-button>> -->
-<!-- </$list> -->
     </div>
-  <!-- </$list> -->
 </$list>
