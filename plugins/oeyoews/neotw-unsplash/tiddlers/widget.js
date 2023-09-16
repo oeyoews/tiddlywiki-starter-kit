@@ -114,8 +114,24 @@ neotw-unsplash widget
         return elementWrapper;
       }
 
+      function debounce(func, wait, immediate) {
+        let timeout;
+        return function () {
+          const context = this,
+            args = arguments;
+          const later = function () {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+          };
+          const callNow = immediate && !timeout;
+          clearTimeout(timeout);
+          timeout = setTimeout(later, wait);
+          if (callNow) func.apply(context, args);
+        };
+      }
+
       // 实时搜索处理函数
-      const handleSearchInput = _.debounce(function (event) {
+      const handleSearchInput = debounce(function (event) {
         const query = event.target.value.trim();
         if (!query) {
           return;
@@ -148,7 +164,7 @@ neotw-unsplash widget
 
       const resultsContainer = $tw.utils.domMaker('div', {
         text: '',
-        class: 'columns-1 lg:columns-3 space-y-4',
+        class: 'columns-1 lg:columns-3 space-y-4 m-4 h-56',
       });
 
       const container = $tw.utils.domMaker('div', {
