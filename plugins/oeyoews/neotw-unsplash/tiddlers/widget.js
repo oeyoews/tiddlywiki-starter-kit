@@ -146,7 +146,7 @@ neotw-unsplash widget
       searchInput.addEventListener('input', handleSearchInput);
 
       const resultsContainer = $tw.utils.domMaker('div', {
-        class: 'columns-1 space-y-4 m-4 h-56',
+        class: 'columns-1 lg:coulmns-3 space-y-4 m-4 h-56',
       });
 
       const container = $tw.utils.domMaker('div', {
