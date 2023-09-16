@@ -54,7 +54,7 @@ neotw-unsplash widget
 
       // 在 Unsplash 上搜索照片
       async function searchPhotos(query) {
-        const apiKey = window.localStorage.getItem('unsplashApiKey') || '';
+        const apiKey = window.localStorage.getItem('unsplashApiKey');
         if (!apiKey) {
           Swal.fire({
             title: 'Please enter your Unsplash API Key:',
@@ -83,6 +83,7 @@ neotw-unsplash widget
         const elementWrapper = document.createElement('div');
         elementWrapper.classList.add('w-full', 'md:w-1/2', 'lg:w-1/3');
 
+        // 不使用img, 防止view-image插件
         const element = $tw.utils.domMaker('div', {
           class:
             'bg-white rounded-lg shadow-lg overflow-hidden w-44 h-44 cursor-pointer',
@@ -145,7 +146,7 @@ neotw-unsplash widget
       searchInput.addEventListener('input', handleSearchInput);
 
       const resultsContainer = $tw.utils.domMaker('div', {
-        class: 'columns-1 lg:columns-3 space-y-4 m-4 h-56',
+        class: 'columns-1 space-y-4 m-4 h-56',
       });
 
       const container = $tw.utils.domMaker('div', {
