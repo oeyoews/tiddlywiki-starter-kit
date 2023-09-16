@@ -26,7 +26,6 @@ export default [
   'oeyoews/neotw-notranslate',
   'oeyoews/neotw-placeholder',
   'oeyoews/neotw-pwa',
-  'oeyoews/neotw-read-files',
   'oeyoews/commandpalette',
   'oeyoews/neotw-icons',
   'oeyoews/neotw-markdown-extensions',
