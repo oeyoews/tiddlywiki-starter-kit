@@ -6,11 +6,8 @@ export default [
   'tiddlywiki/tiddlyweb',
   'tiddlywiki/filesystem',
   'tiddlywiki/highlight',
-  // 'tiddlywiki/katex', // 支持数学公式
   'tiddlywiki/browser-sniff',
   'tiddlywiki/codemirror',
-  // 'BTC/tiddlywiki-codemirror-6',
-  // codemirror-6 not support this yet
   'tiddlywiki/codemirror-autocomplete',
   'tiddlywiki/codemirror-mode-css',
   'tiddlywiki/codemirror-search-replace',
@@ -19,7 +16,7 @@ export default [
   'tiddlywiki/codemirror-mode-xml',
   'tiddlywiki/codemirror-mode-javascript',
   'tiddlywiki/freelinks',
-  'tiddlywiki/pluginlibrary', // 构建插件
+  'tiddlywiki/pluginlibrary',
   'tiddlywiki/markdown',
   // 自定义插件
   'oeyoews/neotw-zen-mode',
