@@ -8,18 +8,5 @@
         "type": "application/javascript"
       }
     }
-  ],
-  "directories": [
-    {
-      "path": "sounds",
-      "filesRegExp": "^.*\\.mp3$",
-      "fields": {
-        "title": {
-          "source": "filename",
-          "prefix": ""
-        },
-        "type": "audio/mpeg"
-      }
-    }
   ]
 }

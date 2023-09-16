@@ -4,7 +4,6 @@ type: application/javascript
 module-type: startup
 
 \*/
-
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */

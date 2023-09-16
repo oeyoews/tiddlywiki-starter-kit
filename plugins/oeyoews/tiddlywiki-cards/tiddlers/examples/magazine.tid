@@ -3,7 +3,7 @@ description: cards-view this view have some bugs, because its width not fixed, s
 cards: yes
 caption: magazine view
 
-<$button class="text-left border-none bg-transparent p-0 m-2" message="om-confetti-launch">
+<$button class="text-left border-none bg-transparent p-0 m-2">
 <div class="bg-slate-100 rounded-lg overflow-hidden shadow-lg flex hover:scale-105 duration-200 transiton">
   <div class="w-1/4 relative">
     <img class="hidden absolute h-full w-full object-cover rounded -ml-24 md:inline" src="https://picsum.photos/500/500" alt="Article Image">

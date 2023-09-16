@@ -31,7 +31,6 @@ export default [
   'oeyoews/neotw-read-files',
   'oeyoews/commandpalette',
   'oeyoews/neotw-opened-tiddlers',
-  'oeyoews/neotw-tour',
   'oeyoews/neotw-icons',
   'oeyoews/neotw-markdown-extensions',
   'oeyoews/neotw-swal2',
@@ -49,7 +48,6 @@ export default [
   'oeyoews/tiddlywiki-github-share',
   'oeyoews/tiddlywiki-axios',
   'oeyoews/tiddlywiki-daylight',
-  'oeyoews/neotw-confetti',
   'oeyoews/tiddlywiki-videos',
   'oeyoews/neotw',
   'oeyoews/neotw-hitokoto',
@@ -65,7 +63,6 @@ export default [
   'oeyoews/tiddlywiki-tailwindcss-plus',
   'oeyoews/tiddlywiki-tiddler-info',
   'oeyoews/tiddlywiki-gravatar',
-  'oeyoews/tiddlywiki-sounds',
   'oeyoews/neotw-homepage',
   'oeyoews/tiddlywiki-readonly',
 ];

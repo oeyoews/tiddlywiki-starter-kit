@@ -24,8 +24,6 @@ The only downside at the moment is that the copy button needs to be manually tri
 !! Example
 
 <$button message="om-copy-code" >
-<$action-sendmessage $message="om-confetti-launch" />
-<$action-sendmessage $message="om-sound" />
 {{$:/plugins/oeyoews/neotw-copy-code/icon}} Click to show copy code button
 </$button>
 

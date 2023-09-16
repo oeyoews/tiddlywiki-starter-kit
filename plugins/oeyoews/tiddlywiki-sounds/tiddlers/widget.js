@@ -6,7 +6,6 @@ module-type: widget
 sounds widget
 
 \*/
-
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
