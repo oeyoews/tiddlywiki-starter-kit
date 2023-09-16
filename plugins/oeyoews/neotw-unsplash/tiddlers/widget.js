@@ -6,7 +6,6 @@ module-type: widget
 neotw-unsplash widget
 
 \*/
-// TODO: directly to copy image
 (function () {
   /*jslint node: true, browser: true */
   /*global $tw: false */
@@ -55,7 +54,6 @@ neotw-unsplash widget
       // 在 Unsplash 上搜索照片
       async function searchPhotos(query) {
         const apiKey = window.localStorage.getItem('unsplashApiKey') || '';
-        // baKbPgwlhbBfF7mHcGf0DS0TmFzi8GknZ4hbUhuNkrA
         if (!apiKey) {
           Swal.fire({
             title: 'Please enter your Unsplash API Key:',
@@ -94,8 +92,7 @@ neotw-unsplash widget
 
         // 监听图片元素的点击事件，复制图片 URL
         element.addEventListener('click', () => {
-          // const imageUrl = `<$image source="${photo.urls.regular}" alt="Unsplash Image" fancybox="yes"/>`;
-          const imageUrl = `<img src="${photo.urls.regular}" alt="Unsplash Image" class="rounded" />`;
+          const imageUrl = `<img src="${photo.urls.regular}" alt="Unsplash Image" />`;
           navigator?.clipboard?.writeText(imageUrl);
           Swal.fire({
             icon: 'success',
@@ -163,7 +160,6 @@ neotw-unsplash widget
       searchInput.addEventListener('input', handleSearchInput);
 
       const resultsContainer = $tw.utils.domMaker('div', {
-        text: '',
         class: 'columns-1 lg:columns-3 space-y-4 m-4 h-56',
       });
 
