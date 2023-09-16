@@ -15,15 +15,6 @@ title: $:/config/EmptyStoryMessage
 <div class="dark:bg-white flex justify-center my-4">
   {{neotw-badges}}
 </div>
-  <!-- <$ostage gradient/> -->
-
-  <div class='my-4'>
-   <$hitokoto />
-  </div>
-
-  <!-- <div class="my-4"> -->
-  <!--   <$typing text="A modern style and elegant notebook based on Tiddlywiki by oeyoews" gradient /> -->
-  <!-- </div> -->
 
 <iconify-icon icon="skill-icons:nextjs-light" title="Next.js" />
 <iconify-icon icon="skill-icons:typescript" title="TypeScript" />
