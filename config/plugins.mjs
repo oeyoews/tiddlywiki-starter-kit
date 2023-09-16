@@ -30,7 +30,6 @@ export default [
   'oeyoews/neotw-pwa',
   'oeyoews/neotw-read-files',
   'oeyoews/commandpalette',
-  'oeyoews/neotw-opened-tiddlers',
   'oeyoews/neotw-icons',
   'oeyoews/neotw-markdown-extensions',
   'oeyoews/neotw-swal2',
