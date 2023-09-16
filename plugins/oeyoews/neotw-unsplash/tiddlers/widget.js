@@ -14,6 +14,7 @@ neotw-unsplash widget
   if (!$tw.browser) return;
 
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
+  const debounce = require('./debounce');
 
   class UnsplashWidget extends Widget {
     constructor(parseTreeNode, options) {
@@ -109,22 +110,6 @@ neotw-unsplash widget
         elementWrapper.appendChild(element);
 
         return elementWrapper;
-      }
-
-      function debounce(func, wait, immediate) {
-        let timeout;
-        return function () {
-          const context = this,
-            args = arguments;
-          const later = function () {
-            timeout = null;
-            if (!immediate) func.apply(context, args);
-          };
-          const callNow = immediate && !timeout;
-          clearTimeout(timeout);
-          timeout = setTimeout(later, wait);
-          if (callNow) func.apply(context, args);
-        };
       }
 
       // 实时搜索处理函数
