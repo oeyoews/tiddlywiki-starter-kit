@@ -5,11 +5,14 @@
     "nico/notebook"
   ],
   "plugins": [
+    "tiddlywiki/filesystem",
+    "tiddlywiki/tiddlyweb",
     "tiddlywiki/highlight",
     "tiddlywiki/browser-sniff",
     "tiddlywiki/freelinks",
     "tiddlywiki/pluginlibrary",
     "tiddlywiki/markdown",
+    "oeyoews/neotw-pwa",
     "oeyoews/neotw-zen-mode",
     "oeyoews/neotw-notranslate",
     "oeyoews/neotw-placeholder",
@@ -31,8 +34,6 @@
     "oeyoews/tiddlywiki-gravatar",
     "oeyoews/neotw-homepage",
     "oeyoews/tiddlywiki-readonly",
-    "tiddlywiki/tiddlyweb",
-    "tiddlywiki/filesystem",
     "tiddlywiki/codemirror",
     "tiddlywiki/codemirror-autocomplete",
     "tiddlywiki/codemirror-mode-css",

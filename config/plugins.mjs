@@ -1,7 +1,6 @@
 import ci from 'ci-info';
 
 const localPlugins = [
-  'tiddlywiki/tiddlyweb',
   'tiddlywiki/codemirror',
   'tiddlywiki/codemirror-autocomplete',
   'tiddlywiki/codemirror-mode-css',
@@ -16,7 +15,6 @@ const localPlugins = [
 ];
 
 const onlinePlugins = [
-  'oeyoews/neotw-pwa',
   'oeyoews/NPL',
   'oeyoews/neotw-fetch',
   'oeyoews/tiddlywiki-github-share',
@@ -28,11 +26,13 @@ const onlinePlugins = [
 let plugins = [
   // 必选依赖
   'tiddlywiki/filesystem',
+  'tiddlywiki/tiddlyweb',
   'tiddlywiki/highlight',
   'tiddlywiki/browser-sniff',
   'tiddlywiki/freelinks',
   'tiddlywiki/pluginlibrary',
   'tiddlywiki/markdown',
+  'oeyoews/neotw-pwa',
   'oeyoews/neotw-zen-mode',
   'oeyoews/neotw-notranslate',
   'oeyoews/neotw-placeholder',

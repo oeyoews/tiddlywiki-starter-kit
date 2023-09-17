@@ -50,7 +50,7 @@ export default {
     '$:/plugins/tiddlywiki/pluginlibrary/library.template.html',
     'index.html',
     'text/plain',
-    '--deletetiddlers',
+    '--deletetiddlers', // 如果构建失败总是会产生17M的文件
     '[[$:/UpgradeLibrary]] [[$:/UpgradeLibrary/List]]',
   ],
   /* // Generate plugins json format
