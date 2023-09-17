@@ -56,10 +56,8 @@ let plugins = [
   'oeyoews/tiddlywiki-readonly',
 ];
 
-if (!ci.isCI) {
-  plugins.push(...localPlugins);
-} else {
-  plugins.push(...onlinePlugins);
-}
+const dynamicPlugins = ci.isCI ? onlinePlugins : localPlugins;
+
+plugins.push(...dynamicPlugins);
 
 export default plugins;
