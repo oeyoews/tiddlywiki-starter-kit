@@ -1,5 +1,5 @@
 <center>
-<img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/snapshot02.png" alt="neotw banner" title="neotw"/>
+    <img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/snapshot02.png" alt="neotw banner" title="neotw"/>
 </center>
 
 ## TiddlyWiki starter kit
@@ -24,7 +24,7 @@ docker run -d --name tiddlywiki -p 8080:8080 -v $(pwd)/wiki:/app/wiki oeyoews/ti
 docker-compose up -d ## docker-compose.yml 参考 [docker-compose.yml](./docker-compose.yml)
 
 # method 03: cli: neotw-app cli 零依赖, 包仅有450kb
-pnpm create neotw-app@latest
+pnpm dlx create-neotw-app@latest
 
 # method 04: git
 git clone --depth 1 https://github.com/oeyoews/tiddlywiki-starter-kit
