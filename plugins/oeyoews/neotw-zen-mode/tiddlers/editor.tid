@@ -4,4 +4,4 @@ caption: zen-mode
 condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]] [<targetTiddler>type[text/markdown]]
 
 Advance
-  <$action-listops $tiddler="$:/plugins/oeyoews/neotw-zen-mode/style.css" $field="tags" $subfilter="+[toggle[$:/tags/Stylesheet]]" />
+  <$action-listops $tiddler="$:/temp/zenmode" $field="text" $subfilter="+[toggle[no],[yes]]" />
