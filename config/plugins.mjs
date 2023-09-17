@@ -1,6 +1,8 @@
 import ci from 'ci-info';
 
 const localPlugins = [
+  'tiddlywiki/tiddlyweb',
+  'tiddlywiki/filesystem',
   'tiddlywiki/codemirror',
   'tiddlywiki/codemirror-autocomplete',
   'tiddlywiki/codemirror-mode-css',
@@ -26,8 +28,6 @@ const onlinePlugins = [
  */
 let plugins = [
   // 必选依赖
-  'tiddlywiki/tiddlyweb',
-  'tiddlywiki/filesystem',
   'tiddlywiki/highlight',
   'tiddlywiki/browser-sniff',
   'tiddlywiki/freelinks',

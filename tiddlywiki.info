@@ -5,8 +5,6 @@
     "nico/notebook"
   ],
   "plugins": [
-    "tiddlywiki/tiddlyweb",
-    "tiddlywiki/filesystem",
     "tiddlywiki/highlight",
     "tiddlywiki/browser-sniff",
     "tiddlywiki/freelinks",
@@ -33,6 +31,8 @@
     "oeyoews/tiddlywiki-gravatar",
     "oeyoews/neotw-homepage",
     "oeyoews/tiddlywiki-readonly",
+    "tiddlywiki/tiddlyweb",
+    "tiddlywiki/filesystem",
     "tiddlywiki/codemirror",
     "tiddlywiki/codemirror-autocomplete",
     "tiddlywiki/codemirror-mode-css",
