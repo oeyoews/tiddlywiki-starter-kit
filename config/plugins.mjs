@@ -1,12 +1,6 @@
-/**
- * @description tiddlywiki 启用插件列表
- */
-export default [
-  // 必选依赖
-  'tiddlywiki/tiddlyweb',
-  'tiddlywiki/filesystem',
-  'tiddlywiki/highlight',
-  'tiddlywiki/browser-sniff',
+import ci from 'ci-info';
+
+const localPlugins = [
   'tiddlywiki/codemirror',
   'tiddlywiki/codemirror-autocomplete',
   'tiddlywiki/codemirror-mode-css',
@@ -15,33 +9,45 @@ export default [
   'tiddlywiki/codemirror-mode-markdown',
   'tiddlywiki/codemirror-mode-xml',
   'tiddlywiki/codemirror-mode-javascript',
+  'oeyoews/neotw-unsplash',
+  'oeyoews/tiddlywiki-motion',
+  'oeyoews/neotw-vimjk',
+];
+
+const onlinePlugins = [
+  'oeyoews/neotw-pwa',
+  'oeyoews/NPL',
+  'oeyoews/neotw-fetch',
+  'oeyoews/tiddlywiki-github-share',
+];
+
+/**
+ * @description tiddlywiki 启用插件列表
+ */
+let plugins = [
+  // 必选依赖
+  'tiddlywiki/tiddlyweb',
+  'tiddlywiki/filesystem',
+  'tiddlywiki/highlight',
+  'tiddlywiki/browser-sniff',
   'tiddlywiki/freelinks',
   'tiddlywiki/pluginlibrary',
   'tiddlywiki/markdown',
-  // 自定义插件
   'oeyoews/neotw-zen-mode',
   'oeyoews/neotw-notranslate',
   'oeyoews/neotw-placeholder',
-  'oeyoews/neotw-pwa',
   'oeyoews/commandpalette',
   'oeyoews/neotw-icons',
   'oeyoews/neotw-markdown-extensions',
   'oeyoews/neotw-swal2',
   'oeyoews/neotw-copy-code',
   'oeyoews/tiddlywiki-cards',
-  'oeyoews/neotw-unsplash',
-  'oeyoews/neotw-fetch',
   'oeyoews/neotw-aplayer',
-  'oeyoews/tiddlywiki-github-share',
   'oeyoews/tiddlywiki-daylight',
   'oeyoews/tiddlywiki-videos',
   'oeyoews/neotw',
-  'oeyoews/neotw-vimjk',
-  'oeyoews/NPL',
   'oeyoews/tiddlywiki-back-to-top',
-  'oeyoews/neotw-view-image',
   'oeyoews/tiddlywiki-modal-ui',
-  'oeyoews/tiddlywiki-motion',
   'oeyoews/tiddlywiki-publish-tiddler',
   'oeyoews/tiddlywiki-tailwindcss-plus',
   'oeyoews/tiddlywiki-tiddler-info',
@@ -49,3 +55,11 @@ export default [
   'oeyoews/neotw-homepage',
   'oeyoews/tiddlywiki-readonly',
 ];
+
+if (!ci.isCI) {
+  plugins.push(...localPlugins);
+} else {
+  plugins.push(...onlinePlugins);
+}
+
+export default plugins;
