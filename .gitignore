@@ -1,24 +1,15 @@
-# TiddlyWiki folder
-\$__Import.tid
-\$__q*.tid
-
-Import.tid
-subwiki/
-\$__theme.tid
-output/
-dist
 node_modules/
+
+/subwiki/
+dist
 
 .idea
 *.tgz
 
-# pm2
-.logs/
 untitled*
-upload
 
 .vercel
 
-## 仅仅忽略根目录下的tiddler文件夹
 /tiddlers/
 .tiddlywiki
+output/
