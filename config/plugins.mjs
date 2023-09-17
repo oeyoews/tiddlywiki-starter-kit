@@ -20,9 +20,7 @@ const onlinePlugins = [
   'oeyoews/tiddlywiki-github-share',
 ];
 
-/**
- * @description tiddlywiki 启用插件列表
- */
+/** @description tiddlywiki 启用插件列表 */
 let plugins = [
   // 必选依赖
   'tiddlywiki/filesystem',

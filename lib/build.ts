@@ -6,9 +6,7 @@ import generateTiddlyWikiInfo from '@/tiddlywiki.config.mjs';
 import ci from 'ci-info';
 import { spawn } from 'bun';
 
-/**
- * @description load env from .env file with bun
- */
+/** @description load env from .env file with bun */
 const TIDDLERSREPO = process.env.TIDDLERSREPO || 'neotw-tiddlers';
 const BUILDDIR = process.env.OUTPURDIR || '.tiddlywiki';
 // 实际上可以直接写 import {isBun} from 'process', 但是如果安装了 @types/node 会有ts 警告
@@ -17,9 +15,7 @@ const log = ora(
   chalk.cyan(`${ci.isCI ? ci.name : ''} ${hasBun ? '🥟' : '📦'} Building ...`),
 );
 
-/**
- * @description only clone tiddlers repo on ci environment
- */
+/** @description only clone tiddlers repo on ci environment */
 function cloneTiddlers(callback: () => void) {
   log.start();
   if (ci.isCI) {
@@ -36,9 +32,7 @@ function cloneTiddlers(callback: () => void) {
   }
 }
 
-/**
- * @description copy files folder, and verce.json file
- */
+/** @description copy files folder, and verce.json file */
 function copyFiles() {
   spawn(['cp', '-r', 'files', 'vercel.json', BUILDDIR], {
     onExit: (proc, exitCode, signalCode, error) => {
