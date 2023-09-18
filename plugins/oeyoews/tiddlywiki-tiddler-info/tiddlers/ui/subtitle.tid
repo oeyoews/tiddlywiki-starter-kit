@@ -19,24 +19,18 @@ tags: $:/tags/ViewTemplate
 <$text text={{{[<tid>get[odescription]else[✅]]}}} />&nbsp;{{!!description}} &nbsp;&nbsp;
 </$list>
 
-<!-- another view -->
-<!-- on dev -->
-<!-- not work ??? -->
-<!-- <$list filter="[{$:/info/url/protocol}prefix[http:]]"> -->
-<span class="text-violet-500">
-<$list filter="[<currentTiddler>!is[system]!days:created[-300]] -[days:modified[-300]]" >
-<!-- add style -->
-
-<$list filter="[all[current]!is[system]has[created]]">
-🤖  此条目创建于 <$view field="created" format="date" template="YYYY/0MM/0DD"/>
-</$list>
-<$list filter="[all[current]!is[system]has[modified]]">
-, 修改于 <$view field="modified" format="relativedate" />
-</$list>
-, 内容可能已经不够准确， 请酌情参考 ⚠️ &nbsp;
-</$list>
-</span>
+<!-- <span class="text-violet-500"> -->
+<!-- <$list filter="[<currentTiddler>!is[system]!days:created[-300]] -[days:modified[-300]]" > -->
+<!---->
+<!-- <$list filter="[all[current]!is[system]has[created]]"> -->
+<!-- 🤖  此条目创建于 <$view field="created" format="date" template="YYYY/0MM/0DD"/> -->
 <!-- </$list> -->
+<!-- <$list filter="[all[current]!is[system]has[modified]]"> -->
+<!-- , 修改于 <$view field="modified" format="relativedate" /> -->
+<!-- </$list> -->
+<!-- , 内容可能已经不够准确， 请酌情参考 ⚠️ &nbsp; -->
+<!-- </$list> -->
+<!-- </span> -->
 
 <!-- local manage -->
 <!-- https have bug, will creat http: tid -->
