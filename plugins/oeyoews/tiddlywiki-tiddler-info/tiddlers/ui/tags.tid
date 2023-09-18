@@ -1,7 +1,7 @@
 title: $:/core/ui/ViewTemplate/tags
 tags: $:/tags/ViewTemplate
 
-<div class="tc-tags-wrapper text-center">
+<div class="tc-tags-wrapper text-center hidden">
   <$list filter="[all[current]tags[]limit[1]sort[title]]">
    <$text text={{{ [[$:/plugins/oeyoews/tiddlywiki-tiddler-info/config]get[otags]else[🎯]] }}} />
   </$list>
