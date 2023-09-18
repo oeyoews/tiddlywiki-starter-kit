@@ -75,7 +75,7 @@ neotw-recent-cards widget
         img.classList.add(
           'w-full',
           'h-48',
-          'rounded-sm',
+          'rounded-md',
           'group-hover:scale-105',
           'transition',
           'duration-400',
