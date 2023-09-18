@@ -1,10 +1,5 @@
 title: $:/config/EmptyStoryMessage
 
-<!-- online -->
-<!-- avatar -->
-
-<!-- <div class="w-full fixed h-full left-0 top-0 bg-gradient-to-r from-teal-200 to-lime-200"> -->
-
 <center>
   <$button class="bg-transparent">
     <$action-sendmessage $message="tm-modal" $param="oeyoews"/>
@@ -16,6 +11,21 @@ title: $:/config/EmptyStoryMessage
   {{neotw-badges}}
 </div>
 
+</center>
+
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
+<div class="dark:hidden my-4">
+{{$:/plugins/Gk0Wk/echarts/Snippets/GitHubHeatMap}}
+</div>
+</$list>
+
+<center>
+  <h2>近期更新动态</h2>
+</center>
+
+<$cards />
+
+<div class="my-4">
 <iconify-icon icon="skill-icons:nextjs-light" title="Next.js" />
 <iconify-icon icon="skill-icons:typescript" title="TypeScript" />
 <iconify-icon icon="skill-icons:react-dark" title="React"/>
@@ -32,17 +42,4 @@ title: $:/config/EmptyStoryMessage
 <iconify-icon icon="devicon:webstorm" title="Websotrm" />
 <iconify-icon icon="skill-icons:docker" title="Docker" />
 <iconify-icon icon="devicon:bun" title="Bun" />
-
-</center>
-
-<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
-<div class="dark:hidden my-4">
-{{$:/plugins/Gk0Wk/echarts/Snippets/GitHubHeatMap}}
 </div>
-</$list>
-
-<center>
-  <h2>近期更新动态</h2>
-</center>
-
-<$cards />
