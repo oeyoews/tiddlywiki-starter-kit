@@ -14,7 +14,6 @@ const localPlugins = [
 ];
 
 const onlinePlugins = [
-  'oeyoews/NPL',
   'oeyoews/neotw-fetch',
   'oeyoews/tiddlywiki-github-share',
 ];
@@ -39,7 +38,6 @@ let plugins = [
   'oeyoews/neotw-swal2',
   'oeyoews/neotw-copy-code',
   'oeyoews/tiddlywiki-cards',
-  'oeyoews/neotw-aplayer',
   'oeyoews/tiddlywiki-daylight',
   'oeyoews/tiddlywiki-videos',
   'oeyoews/neotw',
