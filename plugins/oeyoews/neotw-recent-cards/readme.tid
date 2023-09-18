@@ -2,3 +2,5 @@ title: $:/plugins/oeyoews/neotw-recent-cards/readme
 description: neotw-recent-cards
 
 !! 显示最近更新动态
+
+> 其实使用wikitext可以很快写一个, 但是wikitext的enlist, set, var(用法), 每次都记不住(文档搜索真的不好用), 头疼
