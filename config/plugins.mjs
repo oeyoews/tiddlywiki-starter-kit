@@ -9,7 +9,6 @@ const localPlugins = [
   'tiddlywiki/codemirror-mode-markdown',
   'tiddlywiki/codemirror-mode-xml',
   'tiddlywiki/codemirror-mode-javascript',
-  'oeyoews/neotw-unsplash',
   'oeyoews/tiddlywiki-motion',
   'oeyoews/neotw-vimjk',
 ];
