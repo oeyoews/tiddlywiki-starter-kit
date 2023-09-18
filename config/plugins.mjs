@@ -45,6 +45,7 @@ let plugins = [
   'oeyoews/tiddlywiki-modal-ui',
   'oeyoews/tiddlywiki-publish-tiddler',
   'oeyoews/tiddlywiki-tailwindcss-plus',
+  'oeyoews/neotw-recent-cards',
   'oeyoews/tiddlywiki-tiddler-info',
   'oeyoews/tiddlywiki-gravatar',
   'oeyoews/neotw-homepage',
