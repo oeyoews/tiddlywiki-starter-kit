@@ -8,6 +8,7 @@ neotw-recent-cards widget
 \*/
 (function () {
   /*jslint node: true, browser: true */
+
   /*global $tw: false */
   'use strict';
 
@@ -16,6 +17,9 @@ neotw-recent-cards widget
   class cardsWidget extends Widget {
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
+      this.recentTiddlers = $tw.wiki.filterTiddlers(
+        '[!is[system]!has[draft.of]!sort[created]limit[9]]',
+      );
     }
 
     render(parent, nextSibling) {
@@ -27,9 +31,7 @@ neotw-recent-cards widget
 
       const wiki = $tw.wiki;
 
-      const recentTiddlers = $tw.wiki.filterTiddlers(
-        '[!is[system]!has[draft.of]!sort[created]limit[9]]',
-      );
+      const recentTiddlers = this.recentTiddlers;
 
       const data = recentTiddlers.map((tiddler) => {
         const { fields } = wiki.getTiddler(tiddler);
@@ -43,13 +45,19 @@ neotw-recent-cards widget
       });
 
       const container = document.createElement('div');
-      container.classList.add('grid', 'grid-cols-3', 'gap-3');
+      container.classList.add(
+        'grid',
+        'grid-cols-1',
+        'sm:grid-cols-2',
+        'md:grid-cols-3',
+        'gap-3',
+      );
       container.innerHTML = data
         .map((item) => {
           return `
     <div class="flex flex-col items-center group p-0">
       <a class="text-black truncate group-hover:underline mb-2" href="#${item.title}">${item.title}</a>
-       <img class="w-48 h-48 rounded-sm group-hover:scale-105 transition" src="${item.cover}" />
+       <img class="w-48 h-48 rounded-sm group-hover:scale-105 transition duration-400 ease-in-out" src="${item.cover}" />
     </div>
   `;
         })
@@ -58,6 +66,16 @@ neotw-recent-cards widget
       parent.insertBefore(container, nextSibling);
       this.domNodes.push(container);
     }
+    // 不要进行实时更新
+    /* refresh() {
+      const recentTiddlers = $tw.wiki.filterTiddlers(
+        '[!is[system]!has[draft.of]!sort[created]limit[9]]',
+      );
+      if (recentTiddlers[0] !== this.recentTiddlers[0]) {
+        this.refreshSelf();
+        console.log('updated');
+      }
+    } */
   }
 
   exports.cards = cardsWidget;
