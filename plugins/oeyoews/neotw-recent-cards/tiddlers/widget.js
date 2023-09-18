@@ -52,6 +52,8 @@ neotw-recent-cards widget
         'md:grid-cols-3',
         'gap-3',
       );
+
+      // TODP: use navigate not href directly
       container.innerHTML = data
         .map((item) => {
           return `
@@ -66,6 +68,7 @@ neotw-recent-cards widget
       parent.insertBefore(container, nextSibling);
       this.domNodes.push(container);
     }
+
     // 不要进行实时更新
     /* refresh() {
       const recentTiddlers = $tw.wiki.filterTiddlers(
