@@ -53,15 +53,29 @@ neotw-recent-cards widget
         'gap-3',
       );
 
+      // 必须使用箭头函数
+      const navigate = (title) => {
+        this.parentWidget.dispatchEvent({
+          type: 'tm-navigate',
+          param: title,
+          navigateTo: title,
+        });
+      };
+
       function createCard(title, cover) {
         const item = document.createElement('div');
         item.classList.add('flex', 'flex-col', 'items-center', 'group');
-        const a = document.createElement('a');
-        a.classList.add('text-black', 'truncate', 'group-hover:underline');
-        a.setAttribute('href', `#${title}`);
-        a.textContent = title;
-        item.appendChild(a);
-        const img = new Image();
+        const h3 = document.createElement('h3');
+        h3.classList.add(
+          'text-black',
+          'truncate',
+          'group-hover:underline',
+          'cursor-pointer',
+        );
+        h3.textContent = title;
+        h3.addEventListener('click', () => navigate(title));
+        item.appendChild(h3);
+        const img = document.createElement('img');
         img.classList.add(
           'w-48',
           'h-48',
@@ -76,8 +90,8 @@ neotw-recent-cards widget
         return item;
       }
 
-      data.forEach((item) => {
-        container.appendChild(createCard(item.title, item.cover));
+      data.forEach(({ title, cover }) => {
+        container.appendChild(createCard(title, cover));
       });
 
       parent.insertBefore(container, nextSibling);
