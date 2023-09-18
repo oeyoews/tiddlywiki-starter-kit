@@ -53,17 +53,32 @@ neotw-recent-cards widget
         'gap-3',
       );
 
-      // TODP: use navigate not href directly
-      container.innerHTML = data
-        .map((item) => {
-          return `
-    <div class="flex flex-col items-center group p-0">
-      <a class="text-black truncate group-hover:underline mb-2" href="#${item.title}">${item.title}</a>
-       <img class="w-48 h-48 rounded-sm group-hover:scale-105 transition duration-400 ease-in-out" src="${item.cover}" />
-    </div>
-  `;
-        })
-        .join('');
+      function createCard(title, cover) {
+        const item = document.createElement('div');
+        item.classList.add('flex', 'flex-col', 'items-center', 'group');
+        const a = document.createElement('a');
+        a.classList.add('text-black', 'truncate', 'group-hover:underline');
+        a.setAttribute('href', `#${title}`);
+        a.textContent = title;
+        item.appendChild(a);
+        const img = new Image();
+        img.classList.add(
+          'w-48',
+          'h-48',
+          'rounded-sm',
+          'group-hover:scale-105',
+          'transition',
+          'duration-400',
+          'ease-in-out',
+        );
+        img.src = cover;
+        item.appendChild(img);
+        return item;
+      }
+
+      data.forEach((item) => {
+        container.appendChild(createCard(item.title, item.cover));
+      });
 
       parent.insertBefore(container, nextSibling);
       this.domNodes.push(container);
