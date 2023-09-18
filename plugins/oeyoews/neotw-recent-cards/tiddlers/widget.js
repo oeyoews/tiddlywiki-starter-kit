@@ -50,7 +50,7 @@ neotw-recent-cards widget
         'grid-cols-1',
         'sm:grid-cols-2',
         'md:grid-cols-3',
-        'gap-3',
+        'gap-4',
       );
 
       // 必须使用箭头函数
@@ -66,24 +66,21 @@ neotw-recent-cards widget
         const item = document.createElement('div');
         item.classList.add('flex', 'flex-col', 'items-center', 'group');
         const h3 = document.createElement('h3');
-        h3.classList.add(
-          'text-black',
-          'truncate',
-          'group-hover:underline',
-          'cursor-pointer',
-        );
+        h3.classList.add('text-black', 'truncate');
         h3.textContent = title;
-        h3.addEventListener('click', () => navigate(title));
+        item.addEventListener('click', () => navigate(title));
         item.appendChild(h3);
         const img = document.createElement('img');
+        img.title = '点击查看';
         img.classList.add(
-          'w-48',
+          'w-full',
           'h-48',
           'rounded-sm',
           'group-hover:scale-105',
           'transition',
           'duration-400',
           'ease-in-out',
+          'cursor-pointer',
         );
         img.src = cover;
         item.appendChild(img);
