@@ -1,5 +1,6 @@
 title: $:/plugins/oeyoews/tiddlywiki-empty-story/Header
-tags: $:/tags/AboveStory
+
+<!-- tags: $:/tags/AboveStory -->
 
 <$list filter="[[$:/state/notebook-sidebar]get[text]else[no]match[no]]">
 <$list filter="[{$:/info/url/protocol}match[https:]]">
