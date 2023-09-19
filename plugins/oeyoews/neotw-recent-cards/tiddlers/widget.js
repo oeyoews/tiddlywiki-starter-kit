@@ -17,9 +17,6 @@ neotw-recent-cards widget
   class cardsWidget extends Widget {
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
-      this.recentTiddlers = $tw.wiki.filterTiddlers(
-        '[!is[system]!has[draft.of]!sort[created]limit[9]]',
-      );
     }
 
     render(parent, nextSibling) {
@@ -31,7 +28,9 @@ neotw-recent-cards widget
 
       const wiki = $tw.wiki;
 
-      const recentTiddlers = this.recentTiddlers;
+      const defaultFilter = '[!is[system]!has[draft.of]!sort[created]limit[9]]';
+      const filter = this.getAttribute('filter', defaultFilter);
+      const recentTiddlers = wiki.filterTiddlers(filter);
 
       const data = recentTiddlers.map((tiddler) => {
         const { fields } = wiki.getTiddler(tiddler);
@@ -51,6 +50,7 @@ neotw-recent-cards widget
         'sm:grid-cols-2',
         'md:grid-cols-3',
         'gap-8',
+        'my-4',
       );
 
       // 必须使用箭头函数
