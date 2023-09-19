@@ -37,7 +37,7 @@ neotw-recent-cards widget
         const { fields } = wiki.getTiddler(tiddler);
         const cover =
           fields['page-cover'] ||
-          `https://source.unsplash.com/random?fm=blurhash&w=50&${fields.title}`;
+          `https://source.unsplash.com/random/1920x1080?fm=blurhash&${fields.title}`;
         return {
           title: fields.title,
           cover,
@@ -75,6 +75,7 @@ neotw-recent-cards widget
         const img = document.createElement('img');
         img.title = '点击查看';
         img.classList.add(
+          'object-cover',
           'w-full',
           'h-48',
           'rounded-md',
