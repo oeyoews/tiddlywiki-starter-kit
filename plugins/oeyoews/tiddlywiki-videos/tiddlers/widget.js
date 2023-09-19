@@ -36,7 +36,7 @@ youtube widget
         height: '450',
         frameborder: '0',
         allowfullscreen: '',
-        class: 'border-none shadow-lg rounded-lg',
+        class: 'border-none shadow-lg rounded-lg w-full',
         allowsInlineMediaPlayback: 'true',
         playsinline: '1',
         title: '', // example attribute
