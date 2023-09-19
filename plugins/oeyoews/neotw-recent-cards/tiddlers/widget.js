@@ -99,33 +99,35 @@ neotw-recent-cards widget
         h3.textContent = title;
         item.addEventListener('click', () => navigate(title));
         const img = document.createElement('img');
-        const realImage = new Image();
         img.loading = 'lazy';
         img.classList.add(
+          'aspect-video',
           'object-cover',
           'w-full',
           'h-full',
           'rounded-md',
+          // 'bg-gradient-to-r', 'from-teal-100', 'to-lime-200',
           'group-hover:scale-105',
           'transition-all',
           'duration-800',
           'ease-in-out',
           'scale-105',
           'blur-lg',
+          'bg-black/10',
         );
-        img.src =
-          'https://images.unsplash.com/photo-1505860125062-3ce932953cf5?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=270&ixid=MnwxfDB8MXxyYW5kb218MHx8Zm0sc2VhfHx8fHx8MTY5NTEzNjk4NQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=480';
+
+        // img.src =
+        //   'https://images.unsplash.com/photo-1505860125062-3ce932953cf5?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=270&ixid=MnwxfDB8MXxyYW5kb218MHx8Zm0sc2VhfHx8fHx8MTY5NTEzNjk4NQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=480';
 
         img.alt = title;
-        realImage.classList.add();
-        realImage.src = cover;
-        realImage.onload = () => {
-          img.src = cover;
-          img.classList.remove('scale-105', 'blur-lg');
+        img.src = cover;
+        img.onload = () => {
+          img.classList.remove('scale-105', 'blur-lg', 'bg-black/10');
         };
 
         item.appendChild(img);
         item.appendChild(h3);
+
         return item;
       }
 
