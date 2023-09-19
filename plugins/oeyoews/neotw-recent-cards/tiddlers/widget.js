@@ -73,6 +73,7 @@ neotw-recent-cards widget
           'justify-center',
           'group',
           'relative',
+          'p-0',
         );
         const h3 = document.createElement('h3');
         h3.classList.add(
