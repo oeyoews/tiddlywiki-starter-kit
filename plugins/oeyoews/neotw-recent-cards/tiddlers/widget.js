@@ -66,9 +66,34 @@ neotw-recent-cards widget
 
       function createCard(title, cover) {
         const item = document.createElement('div');
-        item.classList.add('flex', 'flex-col', 'items-start', 'group');
+        item.classList.add(
+          'flex',
+          'flex-col',
+          'items-start',
+          'group',
+          'relative',
+        );
         const h3 = document.createElement('h3');
-        h3.classList.add('font-normal', 'text-base', 'truncate', 'my-1');
+        h3.classList.add(
+          'font-normal',
+          'text-sm',
+          'truncate',
+          'm-0',
+          'absolute',
+          'bottom-0',
+          'left-0',
+          'w-full',
+          'bg-black',
+          'backdrop-blur',
+          'bg-opacity-50',
+          'text-white',
+          'p-2',
+          'rounded-md',
+          'scale-0',
+          'ease-in-out',
+          'transition',
+          'group-hover:scale-105',
+        );
         h3.textContent = title;
         item.addEventListener('click', () => navigate(title));
         const img = document.createElement('img');
@@ -76,7 +101,7 @@ neotw-recent-cards widget
         img.classList.add(
           'object-cover',
           'w-full',
-          'h-48',
+          'h-full',
           'rounded-md',
           'group-hover:scale-105',
           'transition',
