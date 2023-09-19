@@ -84,9 +84,8 @@ neotw-recent-cards widget
           'text-sm',
           'truncate',
           'm-0',
+          'inset-0',
           'absolute',
-          'bottom-0',
-          'left-0',
           'w-full',
           'bg-black',
           'backdrop-blur',
@@ -103,6 +102,7 @@ neotw-recent-cards widget
         item.addEventListener('click', () => navigate(title));
         const img = document.createElement('img');
         const realImage = new Image();
+        img.loading = 'lazy';
         img.classList.add(
           'object-cover',
           'w-full',
