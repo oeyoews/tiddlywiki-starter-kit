@@ -109,11 +109,11 @@ neotw-recent-cards widget
           'h-full',
           'rounded-md',
           'group-hover:scale-105',
-          'scale-105',
           'transition-all',
           'duration-800',
           'ease-in-out',
           'cursor-pointer',
+          'scale-105',
           'blur',
         );
         img.src =
