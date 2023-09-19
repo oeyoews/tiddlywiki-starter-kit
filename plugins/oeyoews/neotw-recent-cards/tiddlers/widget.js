@@ -76,26 +76,24 @@ neotw-recent-cards widget
           'p-0',
         );
         const h3 = document.createElement('h3');
+        h3.title = '点击查看';
         h3.classList.add(
+          'cursor-pointer',
           'flex',
           'justify-center',
           'items-center',
-          'font-normal',
-          'text-sm',
           'truncate',
           'm-0',
           'inset-0',
           'absolute',
-          'w-full',
           'bg-black',
           'backdrop-blur',
           'bg-opacity-50',
           'text-white',
-          'p-2',
           'rounded-md',
           'scale-0',
           'ease-in-out',
-          'transition',
+          'transition-all',
           'group-hover:scale-105',
         );
         h3.textContent = title;
@@ -112,7 +110,6 @@ neotw-recent-cards widget
           'transition-all',
           'duration-800',
           'ease-in-out',
-          'cursor-pointer',
           'scale-105',
           'blur',
         );
@@ -126,7 +123,6 @@ neotw-recent-cards widget
           img.src = cover;
           img.classList.remove('scale-105', 'blur');
         };
-        img.title = '点击查看';
 
         item.appendChild(img);
         item.appendChild(h3);
