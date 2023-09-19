@@ -371,7 +371,7 @@
         "name": "neotw-recent-cards",
         "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
         "list": "readme",
-        "readme": "!! 使用方法\n\n```bash\n<$cards />\n\n## 可选参数filter, filter 默认为 [!is[system]!has[draft.of]!sort[created]limit[9]]\n<$cards filter=\"[tag[Journal]limit[9]]\"/>\n```\n\n> 图片默认使用每个tiddler的page-cover字段, 如果page-cover字段不存在, 则使用 `https://source.unsplash.com/random/1920x1080?fm=blurhash&${title}`\n\n!! 显示最近更新动态\n\n<$cards />\n\n!! 最近的日志\n\n<$cards filter=\"[tag[Journal]limit[9]]\"/>\n\n<!-- > 其实使用wikitext可以很快写一个, 但是wikitext的enlist, set, var(用法), 每次都记不住(文档搜索真的不好用), 头疼 -->\n",
+        "readme": "!! 使用方法\n\n```bash\n<$cards />\n\n## 可选参数filter, filter 默认为 [!is[system]!has[draft.of]!sort[created]limit[9]]\n<$cards filter=\"[tag[Journal]limit[9]]\"/>\n```\n\n> 图片默认使用每个tiddler的page-cover字段, 如果page-cover字段不存在, 则使用 `https://source.unsplash.com/random/1920x1080?fm=blurhash&${title}`\n\n!! 显示最近更新动态\n\n<$cards />\n\n!! 最近的日志\n\n<$cards filter=\"[tag[Journal]limit[9]]\"/>\n\n<!-- > 其实使用wikitext可以很快写一个, 但是wikitext的enlist, set, var(用法), 每次都记不住(文档搜索真的不好用), 头疼 -->\n<!-- 会有闪烁, 由于tailwindcss为加载完成 -->\n",
         "requires-reload": "yes"
     },
     {
