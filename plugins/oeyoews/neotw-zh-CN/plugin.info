@@ -4,7 +4,6 @@
   "name": "Neotw 中文",
   "plugin-type": "plugin",
   "description": "Neotw 系列插件中文翻译",
-  "parent-plugins": "$:/plugins/oeyoews/neotw",
   "type": "application/json",
   "core-version": ">=5.2.7",
   "list": "readme",
