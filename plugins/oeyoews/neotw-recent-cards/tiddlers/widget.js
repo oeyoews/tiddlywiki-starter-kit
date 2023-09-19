@@ -103,36 +103,28 @@ neotw-recent-cards widget
         item.addEventListener('click', () => navigate(title));
         const img = document.createElement('img');
         const realImage = new Image();
-        img.src =
-          'https://images.unsplash.com/photo-1586042091284-bd35c8c1d917?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGtpdHR5fGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=1920&h=1080&q=60';
-        img.alt = title;
-        realImage.classList.add(
-          'object-cover',
-          'w-full',
-          'h-full',
-          'rounded-md',
-          'group-hover:scale-105',
-          'transition',
-          'duration-400',
-          'ease-in-out',
-          'cursor-pointer',
-        );
-        realImage.src = cover;
-        realImage.onload = () => {
-          img.src = cover;
-        };
-        img.title = '点击查看';
         img.classList.add(
           'object-cover',
           'w-full',
           'h-full',
           'rounded-md',
           'group-hover:scale-105',
-          'transition',
-          'duration-400',
+          'scale-105',
+          'transition-all',
+          'duration-800',
           'ease-in-out',
           'cursor-pointer',
         );
+        img.src =
+          'https://images.unsplash.com/photo-1586042091284-bd35c8c1d917?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGtpdHR5fGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=1920&h=1080&q=60';
+        img.alt = title;
+        realImage.classList.add();
+        realImage.src = cover;
+        realImage.onload = () => {
+          img.src = cover;
+          img.classList.remove('scale-105');
+        };
+        img.title = '点击查看';
 
         item.appendChild(img);
         item.appendChild(h3);
