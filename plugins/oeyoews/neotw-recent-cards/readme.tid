@@ -12,6 +12,8 @@ description: 卡片视图
 
 > 图片默认使用每个tiddler的page-cover字段, 如果page-cover字段不存在, 则使用 `https://source.unsplash.com/random/1920x1080?fm=blurhash&${title}`
 
+> 依赖插件: tailwindcss
+
 !! 显示最近更新动态
 
 <$cards />
