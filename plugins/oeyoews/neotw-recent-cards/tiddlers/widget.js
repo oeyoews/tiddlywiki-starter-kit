@@ -54,6 +54,7 @@ neotw-recent-cards widget
       );
 
       // 必须使用箭头函数
+      // 会触发notebook的closing
       const navigate = (title) => {
         this.parentWidget.dispatchEvent({
           type: 'tm-navigate',
