@@ -111,17 +111,17 @@ neotw-recent-cards widget
           'duration-800',
           'ease-in-out',
           'scale-105',
-          'blur',
+          'blur-lg',
         );
         img.src =
-          'https://images.unsplash.com/photo-1534270804882-6b5048b1c1fc?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixid=MnwxfDB8MXxyYW5kb218MHx8Zm0sTmV3IFRpZGRsZXJ8fHx8fHwxNjk1MTI1MDEw&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1920';
+          'https://images.unsplash.com/photo-1505860125062-3ce932953cf5?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=270&ixid=MnwxfDB8MXxyYW5kb218MHx8Zm0sc2VhfHx8fHx8MTY5NTEzNjk4NQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=480';
 
         img.alt = title;
         realImage.classList.add();
         realImage.src = cover;
         realImage.onload = () => {
           img.src = cover;
-          img.classList.remove('scale-105', 'blur');
+          img.classList.remove('scale-105', 'blur-lg');
         };
 
         item.appendChild(img);
