@@ -7,8 +7,6 @@
   "type": "application/json",
   "plugin-type": "plugin",
   "name": "neotw-placeholder",
-  "dependents": [
-    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
-  ],
+  "dependents": [],
   "list": "readme"
 }
