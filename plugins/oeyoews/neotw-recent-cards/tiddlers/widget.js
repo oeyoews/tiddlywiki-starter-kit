@@ -60,6 +60,7 @@ neotw-recent-cards widget
           param: title,
           navigateTo: title,
         });
+        return false;
       };
 
       function createCard(title, cover) {
