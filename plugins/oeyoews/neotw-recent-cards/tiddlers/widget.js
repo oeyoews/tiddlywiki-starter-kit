@@ -36,7 +36,7 @@ neotw-recent-cards widget
         const { fields } = wiki.getTiddler(tiddler);
         const cover =
           fields['page-cover'] ||
-          `https://source.unsplash.com/random/480x270?fm=blurhash&${fields.title}`;
+          `https://source.unsplash.com/random/1920x1080?fm=blurhash&${fields.title}`;
         return {
           title: fields.title,
           cover,
