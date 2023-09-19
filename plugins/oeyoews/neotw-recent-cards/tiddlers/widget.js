@@ -76,6 +76,9 @@ neotw-recent-cards widget
         );
         const h3 = document.createElement('h3');
         h3.classList.add(
+          'flex',
+          'justify-center',
+          'items-center',
           'font-normal',
           'text-sm',
           'truncate',
