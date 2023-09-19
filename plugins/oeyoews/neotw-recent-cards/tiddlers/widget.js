@@ -128,7 +128,7 @@ neotw-recent-cards widget
       this.domNodes.push(container);
     }
 
-    // 不要进行实时更新
+    // 不要进行实时更新, unsplash 的图片不会进行缓存, 每次更新都需要进行网络请求
     /* refresh() {
       const recentTiddlers = $tw.wiki.filterTiddlers(
         '[!is[system]!has[draft.of]!sort[created]limit[9]]',
