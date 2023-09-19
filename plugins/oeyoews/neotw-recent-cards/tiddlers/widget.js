@@ -69,7 +69,8 @@ neotw-recent-cards widget
         item.classList.add(
           'flex',
           'flex-col',
-          'items-start',
+          'items-center',
+          'justify-center',
           'group',
           'relative',
         );
