@@ -41,6 +41,7 @@ let plugins = [
   'oeyoews/tiddlywiki-daylight',
   'oeyoews/tiddlywiki-videos',
   'oeyoews/neotw',
+  'oeyoews/NPL',
   'oeyoews/tiddlywiki-back-to-top',
   'oeyoews/tiddlywiki-modal-ui',
   'oeyoews/tiddlywiki-publish-tiddler',

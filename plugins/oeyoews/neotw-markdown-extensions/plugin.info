@@ -5,11 +5,11 @@
   "version": "0.0.1",
   "core-version": ">=5.2.7",
   "type": "application/json",
+  "parent-plugin": "$:/plugins/tiddlywiki/markdown",
   "plugin-type": "plugin",
   "name": "Neotw Markdown Extensions",
   "dependents": [
-    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
-    "$:/plugins/tiddlywiki/markdown"
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
   ],
   "list": "readme"
 }
