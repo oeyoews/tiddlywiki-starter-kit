@@ -5,7 +5,6 @@
   "version": "0.0.1",
   "core-version": ">=5.2.7",
   "type": "application/json",
-  "parent-plugin": "$:/plugins/tiddlywiki/markdown",
   "plugin-type": "plugin",
   "name": "Neotw Markdown Extensions",
   "dependents": [

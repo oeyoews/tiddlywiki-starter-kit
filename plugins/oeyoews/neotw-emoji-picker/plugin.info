@@ -5,10 +5,11 @@
   "version": "0.0.1",
   "core-version": ">=5.2.7",
   "type": "application/json",
-  "parent-plugin": "$:/plugins/oeyoews/neotw",
   "plugin-type": "plugin",
   "name": "Neotw Emoji Picker",
   "plugin-priority": 100,
-  "dependents": ["$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"],
+  "dependents": [
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
+  ],
   "list": "readme"
 }
