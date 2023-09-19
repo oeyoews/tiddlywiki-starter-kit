@@ -13,11 +13,11 @@ title: $:/config/EmptyStoryMessage
 
 </center>
 
-<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
-<div class="dark:hidden my-4">
-{{$:/plugins/Gk0Wk/echarts/Snippets/GitHubHeatMap}}
-</div>
-</$list>
+<!-- <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]"> -->
+<!-- <div class="dark:hidden my-4"> -->
+<!-- {{$:/plugins/Gk0Wk/echarts/Snippets/GitHubHeatMap}} -->
+<!-- </div> -->
+<!-- </$list> -->
 
 <$list filter="[{$:/info/url/protocol}match[https:]]">
 <center>
