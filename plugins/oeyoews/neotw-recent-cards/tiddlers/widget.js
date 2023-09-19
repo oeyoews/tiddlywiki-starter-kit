@@ -114,15 +114,17 @@ neotw-recent-cards widget
           'duration-800',
           'ease-in-out',
           'cursor-pointer',
+          'blur',
         );
         img.src =
-          'https://images.unsplash.com/photo-1586042091284-bd35c8c1d917?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGtpdHR5fGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=1920&h=1080&q=60';
+          'https://images.unsplash.com/photo-1534270804882-6b5048b1c1fc?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixid=MnwxfDB8MXxyYW5kb218MHx8Zm0sTmV3IFRpZGRsZXJ8fHx8fHwxNjk1MTI1MDEw&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1920';
+
         img.alt = title;
         realImage.classList.add();
         realImage.src = cover;
         realImage.onload = () => {
           img.src = cover;
-          img.classList.remove('scale-105');
+          img.classList.remove('scale-105', 'blur');
         };
         img.title = '点击查看';
 
