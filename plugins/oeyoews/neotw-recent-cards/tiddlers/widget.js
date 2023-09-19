@@ -66,12 +66,11 @@ neotw-recent-cards widget
 
       function createCard(title, cover) {
         const item = document.createElement('div');
-        item.classList.add('flex', 'flex-col', 'items-center', 'group');
+        item.classList.add('flex', 'flex-col', 'items-start', 'group');
         const h3 = document.createElement('h3');
-        h3.classList.add('text-black', 'truncate');
+        h3.classList.add('font-normal', 'text-base', 'truncate', 'my-1');
         h3.textContent = title;
         item.addEventListener('click', () => navigate(title));
-        item.appendChild(h3);
         const img = document.createElement('img');
         img.title = '点击查看';
         img.classList.add(
@@ -87,6 +86,7 @@ neotw-recent-cards widget
         );
         img.src = cover;
         item.appendChild(img);
+        item.appendChild(h3);
         return item;
       }
 
