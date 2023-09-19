@@ -1,7 +1,8 @@
 title: $:/plugins/oeyoews/neotw/modules/landing/layout
 description: neotw landing page
 name: 💻 ~LockScreen
-tags: $:/tags/Layout
+
+<!-- tags: $:/tags/Layout -->
 
 <!-- TODO: use js to overwrite this page -->
 <!-- NOTE: if startupaction, this tailwindcss and some css are not working -->
