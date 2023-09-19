@@ -25,7 +25,6 @@ let plugins = [
   'tiddlywiki/tiddlyweb',
   'tiddlywiki/highlight',
   'tiddlywiki/browser-sniff',
-  'tiddlywiki/freelinks',
   'tiddlywiki/pluginlibrary',
   'tiddlywiki/markdown',
   'oeyoews/neotw-pwa',
