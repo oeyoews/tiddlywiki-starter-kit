@@ -31,15 +31,18 @@ neotw-recent-cards widget
 
       const wiki = $tw.wiki;
 
-      const defaultFilter = '[!is[system]!has[draft.of]!sort[created]limit[9]]';
+      const defaultFilter =
+        '[!is[system]!has[draft.of]!sort[modified]limit[9]]';
       const filter = this.getAttribute('filter', defaultFilter);
       const recentTiddlers = wiki.filterTiddlers(filter);
 
       const data = recentTiddlers.map((tiddler) => {
         const { fields } = wiki.getTiddler(tiddler);
-        const cover =
-          fields['page-cover'] ||
-          `https://source.unsplash.com/random/1920x1080?fm=blurhash&${fields.title}`;
+        // just support online images
+        let cover = fields['page-cover'];
+        if (!cover || !cover.startsWith('http')) {
+          cover = `https://source.unsplash.com/random/1920x1080?fm=blurhash&${fields.title}`;
+        }
         return {
           title: fields.title,
           cover,

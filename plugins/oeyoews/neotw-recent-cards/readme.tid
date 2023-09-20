@@ -8,6 +8,14 @@ description: 卡片视图
 
 ## 可选参数filter, filter 默认为 [!is[system]!has[draft.of]!sort[created]limit[9]]
 <$cards filter="[tag[Journal]limit[9]]"/>
+
+## 指定某一个(或者多个)固定tiddler
+<$cards filter="[[$:/core/ui/ControlPanel/Plugins]] [[GettingStarted]]" />
+
+## 杂合(混用)
+## tiddler 的筛选器用法没有明确的术语表达,导致教程只能`show me the code`, 不像大众化的编程语言(比如JS,React,Vue),官方统一制定了术语, 比较浅显易懂
+<$cards filter="[[$:/core/ui/ControlPanel/Plugins]] [[GettingStarted]] [!is[system]!has[draft.of]!sort[modified]limit[9]] " />
+
 ```
 
 > 图片默认使用每个tiddler的page-cover字段, 如果page-cover字段不存在, 则使用 `https://source.unsplash.com/random/1920x1080?fm=blurhash&${title}`
