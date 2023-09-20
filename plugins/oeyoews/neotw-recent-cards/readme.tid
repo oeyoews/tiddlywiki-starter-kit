@@ -15,7 +15,6 @@ description: 卡片视图
 ## 杂合(混用)
 ## tiddler 的筛选器用法没有明确的术语表达,导致教程只能`show me the code`, 不像大众化的编程语言(比如JS,React,Vue),官方统一制定了术语, 比较浅显易懂
 <$cards filter="[[GettingStarted]] [!is[system]!has[draft.of]!sort[modified]!is[shadow]limit[8]]" />
-
 ```
 
 > 图片默认使用每个tiddler的page-cover字段, 如果page-cover字段不存在, 则使用 `https://source.unsplash.com/random/1920x1080?fm=blurhash&${title}`
@@ -24,7 +23,9 @@ description: 卡片视图
 
 > 默认使用(16:9)1920x1080的分辨率(分辨率越大, 图片加载速度就相对较慢)
 
-## Recipes
+> 已经借助tailwindcss对页面进行了防抖动处理
+
+!! Recipes
 
 > 每个tiddler的标题不要像论文标题那样过长(也许我正文的部分还没你的标题长 😀), 尽量简短扼要
 

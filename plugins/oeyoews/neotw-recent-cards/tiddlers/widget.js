@@ -17,6 +17,7 @@ neotw-recent-cards widget
   class cardsWidget extends Widget {
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
+      this.maxCards = 30;
       this.tiddlersLength = $tw.wiki.filterTiddlers(
         '[!is[system]!has[draft.of]]',
       ).length;
@@ -137,7 +138,17 @@ neotw-recent-cards widget
         return item;
       }
 
-      data.forEach(({ title, cover }) => {
+      if (recentTiddlers.length > this.maxCards) {
+        console.warn(
+          `${recentTiddlers.length} 张卡片即将渲染, 超过最大限制 ${this.maxCards} @neotw-recent-cards`,
+        );
+      }
+
+      data.forEach(({ title, cover }, index) => {
+        /* 防止用户渲染过多的卡片, */
+        if (index >= this.maxCards) {
+          return;
+        }
         container.appendChild(createCard(title, cover));
       });
 
