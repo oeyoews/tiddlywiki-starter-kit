@@ -35,8 +35,8 @@ module.exports = function twBot() {
   );
   selectTag.addEventListener('change', function () {
     tagCount.textContent = $tw.wiki.filterTiddlers(
-      `[tag[${selectTag.value}]count[]]`,
-    );
+      `[tag[${selectTag.value}]]`,
+    ).length;
     // 移除以"bg-"开头的类名
     localStorage.setItem('selectedTag', selectTag.value);
     selectTag.classList.forEach((className) => {
@@ -147,8 +147,8 @@ module.exports = function twBot() {
     // inputMessage.value = "";
     // 统计当天记录的想法数量
     const count = $tw.wiki.filterTiddlers(
-      `[creator[${options.creator}]days[-1]count[]]`,
-    );
+      `[creator[${options.creator}]days[-1]]`,
+    ).length;
 
     function createAndDisplayNotification(count) {
       const tempTiddler = '$:/temp/tw-bot/notify';
