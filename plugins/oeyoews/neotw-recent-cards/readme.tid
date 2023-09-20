@@ -14,7 +14,7 @@ description: 卡片视图
 
 ## 杂合(混用)
 ## tiddler 的筛选器用法没有明确的术语表达,导致教程只能`show me the code`, 不像大众化的编程语言(比如JS,React,Vue),官方统一制定了术语, 比较浅显易懂
-<$cards filter="[[$:/core/ui/ControlPanel/Plugins]] [[GettingStarted]] [!is[system]!has[draft.of]!sort[modified]limit[9]] " />
+<$cards filter="[[GettingStarted]] [!is[system]!has[draft.of]!sort[modified]!is[shadow]limit[8]]" />
 
 ```
 
