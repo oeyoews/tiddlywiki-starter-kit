@@ -29,6 +29,7 @@ let plugins = [
   'tiddlywiki/markdown',
   'oeyoews/neotw-image-better',
   'oeyoews/neotw-pwa',
+  'oeyoews/neotw-error-better',
   'oeyoews/neotw-zen-mode',
   'oeyoews/neotw-notranslate',
   'oeyoews/neotw-placeholder',

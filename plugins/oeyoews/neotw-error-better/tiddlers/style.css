@@ -1,0 +1,26 @@
+.tc-error-form {
+  background: linear-gradient(135deg, #ff00adc9, #ff3b3b) !important
+	color: transparent !important;
+	border: none !important;
+	cursor: pointer;
+  bottom: 8px;
+  right: 8px;
+	text-align: center;
+  padding: 8px !important;
+  height: 44px !important;
+  width: 44px !important;
+	border-radius: 50% !important;
+	overflow-flow: hidden;
+	box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.5)
+	transition: all 0.2s ease;
+}
+
+.tc-error-form:hover {
+	background: #00000018 !important;
+	text-align: inherit;
+  width: auto !important;
+  height: auto !important;
+	color: black !important;
+	border-radius: 4px !important;
+	cursor: auto;
+}
