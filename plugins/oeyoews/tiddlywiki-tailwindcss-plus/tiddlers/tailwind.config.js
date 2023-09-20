@@ -1,3 +1,9 @@
+/*\
+title: $:/plugins/oeyoews/tiddlywiki-tailwindcss-plus/tailwind.config.js
+type: application/javascript
+module-type: library
+
+\*/
 module.exports = {
   theme: {
     extend: {

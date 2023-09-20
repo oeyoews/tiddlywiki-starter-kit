@@ -2,9 +2,8 @@
 title: $:/plugins/oeyoews/tiddlywiki-tailwindcss-plus/startup.js
 type: application/javascript
 module-type: startup
-hide-body: yes
 
-tailwindcss startup
+tailwindcss init
 \*/
 (function () {
   /*jslint node: true, browser: true */
@@ -16,7 +15,7 @@ tailwindcss startup
   exports.after = ['startup'];
   exports.synchronous = true;
   exports.startup = () => {
-    tailwind = require('tailwindcss.min.js');
-    tailwind.config = require('tailwind.config.js');
+    const tailwind = require('tailwindcss.min.js');
+    tailwind.config = require('./tailwind.config');
   };
 })();

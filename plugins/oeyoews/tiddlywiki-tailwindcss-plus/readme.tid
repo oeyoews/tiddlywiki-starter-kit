@@ -5,22 +5,15 @@ description: ~TailwindCss
 
 !! Tiddlywiki Tailwindcss Plus
 
-* [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/tiddlywiki-tailwindcss-plus]]
-* [[Demo|https://oeyoews.github.io/neotw]]
-
-!! daysyui have some preset(note)
-
-!! Tailwindcss All In One
-
-```wikitext
-<style type="text/tailwindcss">
-.btn {
- 	@apply font-bold underline border-none
-}
-</style>
-
-<button class="btn"> demo </button>
-```
+<!-- ```wikitext -->
+<!-- <style type="text/tailwindcss"> -->
+<!-- .btn { -->
+<!--  	@apply font-bold underline border-none -->
+<!-- } -->
+<!-- </style> -->
+<!---->
+<!-- <button class="btn"> demo </button> -->
+<!-- ``` -->
 
 !! Why Tailwindcss
 
