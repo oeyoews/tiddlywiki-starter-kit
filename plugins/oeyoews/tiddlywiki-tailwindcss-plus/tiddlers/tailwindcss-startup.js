@@ -15,7 +15,7 @@ tailwindcss init
   exports.after = ['startup'];
   exports.synchronous = true;
   exports.startup = () => {
-    const tailwind = require('tailwindcss.min.js');
+    window.tailwind = require('tailwindcss.min.js');
     tailwind.config = require('./tailwind.config');
   };
 })();

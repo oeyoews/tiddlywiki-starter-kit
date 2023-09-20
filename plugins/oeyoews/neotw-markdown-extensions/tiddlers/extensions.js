@@ -4,7 +4,6 @@ type: application/javascript
 module-type: startup
 
 Extension markdown-it
-
 \*/
 (function () {
   /*jslint node: true, browser: true */

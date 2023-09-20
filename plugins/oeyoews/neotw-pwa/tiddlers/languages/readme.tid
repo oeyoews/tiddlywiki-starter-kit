@@ -9,6 +9,8 @@ title: $:/languages/neotw-pwa/readme
 
 > 注意: 额外提供了favicon.ico
 
+> 注意: 不要使用0.0.0.0:xxx, 请使用127.0.0.1:xxx
+
 > 由于tiddlywiki.png 使用了全透明, 中间的白色部分是透明的, 在iphone上看不到(全部自动补充成了黑色)
 
 * ref: https://github.com/oeyoews/tiddlywiki-starter-kit/commit/47b9530a2049a43b26f30094c77d8483282e59d7
