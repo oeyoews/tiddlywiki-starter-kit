@@ -17,6 +17,7 @@ neotw-recent-cards widget
   class cardsWidget extends Widget {
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
+      // TODO: 预设配置化
       this.maxCards = 30;
       this.tiddlersLength = $tw.wiki.filterTiddlers(
         '[!is[system]!has[draft.of]]',
