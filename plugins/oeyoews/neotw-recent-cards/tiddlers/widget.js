@@ -121,12 +121,11 @@ neotw-recent-cards widget
 
         img.alt = title;
         img.src = cover;
+        item.appendChild(img);
         img.onload = () => {
           img.classList.remove('scale-105', 'blur-lg', 'bg-black/10');
+          item.appendChild(h3);
         };
-
-        item.appendChild(img);
-        item.appendChild(h3);
 
         return item;
       }
