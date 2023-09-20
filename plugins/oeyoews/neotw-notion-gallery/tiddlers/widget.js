@@ -1,9 +1,9 @@
 /*\
-title: $:/plugins/oeyoews/neotw-recent-cards/widget.js
+title: $:/plugins/oeyoews/neotw-notion-gallery/widget.js
 type: application/javascript
 module-type: widget
 
-neotw-recent-cards widget
+neotw-notion-gallery widget
 
 \*/
 (function () {
@@ -141,7 +141,7 @@ neotw-recent-cards widget
 
       if (recentTiddlers.length > this.maxCards) {
         console.warn(
-          `${recentTiddlers.length} 张卡片即将渲染, 超过最大限制 ${this.maxCards} @neotw-recent-cards`,
+          `${recentTiddlers.length} 张卡片即将渲染, 超过最大限制 ${this.maxCards} @neotw-notion-gallery`,
         );
       }
 
