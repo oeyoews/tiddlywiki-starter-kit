@@ -81,6 +81,7 @@ neotw-recent-cards widget
         const h3 = document.createElement('h3');
         h3.title = '点击查看';
         h3.classList.add(
+          'delay-100',
           'text-lg',
           'cursor-pointer',
           'flex',
