@@ -17,6 +17,9 @@ neotw-recent-cards widget
   class cardsWidget extends Widget {
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
+      this.tiddlersLength = $tw.wiki.filterTiddlers(
+        '[!is[system]!has[draft.of]]',
+      ).length;
     }
 
     render(parent, nextSibling) {
@@ -138,16 +141,17 @@ neotw-recent-cards widget
       this.domNodes.push(container);
     }
 
-    // 不要进行实时更新, unsplash 的图片不会进行缓存, 每次更新都需要进行网络请求
-    /* refresh() {
-      const recentTiddlers = $tw.wiki.filterTiddlers(
-        '[!is[system]!has[draft.of]!sort[created]limit[9]]',
-      );
-      if (recentTiddlers[0] !== this.recentTiddlers[0]) {
+    // 如果新增或者删除tiddler, 进行重新渲染(重命名不会)
+    // TODO: 粒度更细 -> 使用传入的filter的length
+    refresh() {
+      let tiddlersLength = $tw.wiki.filterTiddlers(
+        '[!is[system]!has[draft.of]]',
+      ).length;
+      if (tiddlersLength !== this.tiddlersLength) {
         this.refreshSelf();
-        console.log('updated');
+        this.tiddlersLength = tiddlersLength;
       }
-    } */
+    }
   }
 
   exports.cards = cardsWidget;
