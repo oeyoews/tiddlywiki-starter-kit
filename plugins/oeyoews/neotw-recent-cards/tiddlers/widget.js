@@ -57,7 +57,7 @@ neotw-recent-cards widget
       );
 
       // 必须使用箭头函数
-      // 会触发notebook的closing
+      // TODO: 会触发notebook theme的closing
       const navigate = (title) => {
         this.parentWidget.dispatchEvent({
           type: 'tm-navigate',
@@ -81,6 +81,7 @@ neotw-recent-cards widget
         const h3 = document.createElement('h3');
         h3.title = '点击查看';
         h3.classList.add(
+          'text-lg',
           'cursor-pointer',
           'flex',
           'justify-center',
@@ -103,20 +104,19 @@ neotw-recent-cards widget
         h3.addEventListener('click', () => navigate(title));
         const img = document.createElement('img');
         img.loading = 'lazy';
+        const dynamicClassNames = ['scale-105', 'blur-lg', 'bg-black/10'];
         img.classList.add(
           'aspect-video',
           'object-cover',
           'w-full',
           'h-full',
           'rounded-md',
-          // 'bg-gradient-to-r', 'from-teal-100', 'to-lime-200',
           'group-hover:scale-105',
           'transition-all',
           'duration-800',
           'ease-in-out',
-          'scale-105',
-          'blur-lg',
-          'bg-black/10',
+          ...dynamicClassNames,
+          // 'bg-gradient-to-r', 'from-teal-100', 'to-lime-200',
         );
 
         // img.src =
@@ -126,7 +126,7 @@ neotw-recent-cards widget
         img.src = cover;
         item.appendChild(img);
         img.onload = () => {
-          img.classList.remove('scale-105', 'blur-lg', 'bg-black/10');
+          img.classList.remove(...dynamicClassNames);
           item.appendChild(h3);
         };
 
