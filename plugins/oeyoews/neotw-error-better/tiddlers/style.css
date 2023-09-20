@@ -1,5 +1,5 @@
 .tc-error-form {
-  background: linear-gradient(135deg, #ff00adc9, #ff3b3b) !important
+  background: linear-gradient(135deg, #ff00adc9, #ff3b3b) !important;
 	color: transparent !important;
 	border: none !important;
 	cursor: pointer;
@@ -10,7 +10,7 @@
   height: 44px !important;
   width: 44px !important;
 	border-radius: 50% !important;
-	overflow-flow: hidden;
+	overflow: hidden;
 	box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.5)
 	transition: all 0.2s ease;
 }
@@ -21,6 +21,10 @@
   width: auto !important;
   height: auto !important;
 	color: black !important;
+  inset: 0px !important;
 	border-radius: 4px !important;
+  backdrop-filter: blur(10px);
+  margin: 16px !important;
+  padding: 16px;
 	cursor: auto;
 }
