@@ -53,7 +53,7 @@ neotw-recent-cards widget
         'sm:grid-cols-2',
         'md:grid-cols-3',
         'gap-8',
-        'my-4',
+        'm-4',
       );
 
       // 必须使用箭头函数
@@ -100,7 +100,7 @@ neotw-recent-cards widget
           'group-hover:scale-105',
         );
         h3.textContent = title;
-        item.addEventListener('click', () => navigate(title));
+        h3.addEventListener('click', () => navigate(title));
         const img = document.createElement('img');
         img.loading = 'lazy';
         img.classList.add(
