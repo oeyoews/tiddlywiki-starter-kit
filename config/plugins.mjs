@@ -27,6 +27,7 @@ let plugins = [
   'tiddlywiki/browser-sniff',
   'tiddlywiki/pluginlibrary',
   'tiddlywiki/markdown',
+  'oeyoews/neotw-image-better',
   'oeyoews/neotw-pwa',
   'oeyoews/neotw-zen-mode',
   'oeyoews/neotw-notranslate',
