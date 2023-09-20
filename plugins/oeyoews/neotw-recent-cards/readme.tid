@@ -25,4 +25,6 @@ description: 卡片视图
 <$cards filter="[tag[Journal]limit[9]]"/>
 
 <!-- > 其实使用wikitext可以很快写一个, 但是wikitext的enlist, set, var(用法), 每次都记不住(文档搜索真的不好用), 头疼 -->
-<!-- 会有闪烁, 由于tailwindcss为加载完成 -->
+<!-- 会有闪烁, 由于tailwindcss为加载完成应用样式 -->
+
+<!-- 事实证明js写的widget更具有扩展性,灵活性 -->
