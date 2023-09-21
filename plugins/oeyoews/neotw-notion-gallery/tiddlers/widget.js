@@ -13,6 +13,7 @@ neotw-notion-gallery widget
   'use strict';
 
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
+  const createCard = require('./createCard');
 
   class cardsWidget extends Widget {
     constructor(parseTreeNode, options) {
@@ -31,6 +32,16 @@ neotw-notion-gallery widget
       this.execute();
 
       const wiki = $tw.wiki;
+
+      // 需要this指向parentWidget, 使用箭头函数
+      const navigate = (title) => {
+        this.parentWidget.dispatchEvent({
+          type: 'tm-navigate',
+          param: title,
+          navigateTo: title,
+        });
+        return false;
+      };
 
       /** load config */
       const config = require('./config');
@@ -65,80 +76,6 @@ neotw-notion-gallery widget
         'm-4',
       );
 
-      // 必须使用箭头函数
-      // TODO: 会触发notebook theme的closing
-      const navigate = (title) => {
-        this.parentWidget.dispatchEvent({
-          type: 'tm-navigate',
-          param: title,
-          navigateTo: title,
-        });
-        return false;
-      };
-
-      function createCard(title, cover) {
-        const item = document.createElement('div');
-        item.classList.add(
-          'flex',
-          'flex-col',
-          'items-center',
-          'justify-center',
-          'group',
-          'relative',
-          'p-0',
-        );
-        const h3 = document.createElement('h3');
-        h3.title = '点击查看';
-        h3.classList.add(
-          'delay-100',
-          'text-lg',
-          'cursor-pointer',
-          'flex',
-          'justify-center',
-          'items-center',
-          'truncate',
-          'm-0',
-          'inset-0',
-          'absolute',
-          'bg-black',
-          'backdrop-blur',
-          'bg-opacity-50',
-          'text-white',
-          'rounded-md',
-          'scale-0',
-          'ease-in-out',
-          'transition-all',
-          'group-hover:scale-105',
-        );
-        h3.textContent = title;
-        h3.addEventListener('click', () => navigate(title));
-        const img = document.createElement('img');
-        img.loading = 'lazy';
-        const dynamicClassNames = ['scale-105', 'blur-lg', 'bg-black/10'];
-        img.classList.add(
-          'aspect-video',
-          'object-cover',
-          'w-full',
-          'h-full',
-          'rounded-md',
-          'group-hover:scale-105',
-          'transition-all',
-          'duration-800',
-          'ease-in-out',
-          ...dynamicClassNames,
-        );
-
-        img.alt = title;
-        img.src = cover;
-        item.appendChild(img);
-        img.onload = () => {
-          img.classList.remove(...dynamicClassNames);
-          item.appendChild(h3);
-        };
-
-        return item;
-      }
-
       if (recentTiddlers.length > this.maxCards) {
         console.warn(
           `${recentTiddlers.length} 张卡片即将渲染, 超过最大限制 ${this.maxCards} @neotw-notion-gallery`,
@@ -150,7 +87,7 @@ neotw-notion-gallery widget
         if (index >= this.maxCards) {
           return;
         }
-        container.appendChild(createCard(title, cover));
+        container.appendChild(createCard(title, cover, navigate));
       });
 
       parent.insertBefore(container, nextSibling);
@@ -165,6 +102,7 @@ neotw-notion-gallery widget
       ).length;
       if (tiddlersLength !== this.tiddlersLength) {
         this.refreshSelf();
+        // update tiddlers length
         this.tiddlersLength = tiddlersLength;
       }
     }
