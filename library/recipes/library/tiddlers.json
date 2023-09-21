@@ -33,6 +33,7 @@
         "type": "application/json",
         "title": "$:/plugins/oeyoews/neotw",
         "plugin-type": "plugin",
+        "plugin-priority": 1,
         "name": "Neotw",
         "description": "Neotw",
         "author": "oeyoews",
