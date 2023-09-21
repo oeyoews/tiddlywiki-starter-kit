@@ -55,8 +55,8 @@ function setPalette(mode) {
 
 function handleThemeChange(event) {
   // 这一步由于插件加载顺序的问题, 可能还没有加载nprogress
-  const NProgress = require('nprogress.min.js');
-  NProgress.start();
+  // const NProgress = require('nprogress.min.js');
+  // NProgress.start();
   if (currentMode === 'auto') {
     const autoMode = (event.matches && 'dark') || 'light';
     setPalette(autoMode);
@@ -65,7 +65,7 @@ function handleThemeChange(event) {
     setPalette(currentMode);
     setThemeMode(currentMode);
   }
-  NProgress.done();
+ // NProgress.done();
 }
 
 function checkModeListener() {
