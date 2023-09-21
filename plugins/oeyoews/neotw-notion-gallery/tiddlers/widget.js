@@ -18,7 +18,6 @@ neotw-notion-gallery widget
   class cardsWidget extends Widget {
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
-      // TODO: 预设配置化
       this.maxCards = null;
       this.defaultFilter = null;
       this.tiddlersLength = null;
@@ -29,6 +28,9 @@ neotw-notion-gallery widget
 
     render(parent, nextSibling) {
       if (!$tw.browser) return;
+      // check if tailwind is installed
+      !tailwind && console.warn('tailwindcss plugin is not installed');
+
       this.parentDomNode = parent;
       this.computeAttributes();
       this.execute();
@@ -48,7 +50,8 @@ neotw-notion-gallery widget
       /** load config */
       const config = require('./config');
 
-      const { defaultFilter, resoultion, maxCards, imageSource } = config;
+      const { defaultFilter, imageField, resoultion, maxCards, imageSource } =
+        config;
       this.defaultFilter = defaultFilter;
 
       this.tiddlersLength = this.getFilterLength();
@@ -61,7 +64,7 @@ neotw-notion-gallery widget
       const data = recentTiddlers.map((tiddler) => {
         const { fields } = wiki.getTiddler(tiddler);
         // just support online images
-        let cover = fields['page-cover'];
+        let cover = fields[imageField];
         if (!cover || !cover.startsWith('http')) {
           cover = `${imageSource}/${resoultion}?fm=blurhash&${fields.title}`;
         }
