@@ -12,6 +12,14 @@ services:
       - ${PWD}/.tiddlywiki/:/app/.tiddlywiki # 映射对应的目录
     # 接受tw的任何参数
     # start
-    command: ['tiddlywiki', 'wiki', '--listen', 'port=8080', 'host=0.0.0.0'] # 第�个tiddlywiki 是命令，第二个tiddlywiki 是目录
+    command: [
+        'tiddlywiki',
+        'wiki',
+        '--listen',
+        'port=8080',
+        'host=0.0.0.0',
+        'root-tiddler=$:/core/save/all-external-js',
+        'use-browser-cache=yes',
+      ] # 第1个tiddlywiki 是命令，第2个tiddlywiki 是目录
     # build
     # command: ["tiddlywiki", "wiki", "--build", "index"]
