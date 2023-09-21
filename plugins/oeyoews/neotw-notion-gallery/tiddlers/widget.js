@@ -64,18 +64,19 @@ neotw-notion-gallery widget
       const filter = this.getAttribute('filter', this.defaultFilter);
       const recentTiddlers = wiki.filterTiddlers(filter);
 
-      const data = recentTiddlers.map((tiddler) => {
-        const { fields } = wiki.getTiddler(tiddler);
-        // just support online images
-        let cover = fields[imageField];
-        if (!cover || !cover.startsWith('http')) {
-          cover = `${imageSource}/${resoultion}?fm=blurhash&${fields.title}`;
-        }
-        return {
-          title: fields.title,
-          cover,
-        };
-      });
+      const loadData = (tiddlers) => {
+        return tiddlers.map((tiddler) => {
+          const { fields } = wiki.getTiddler(tiddler);
+          let cover = fields[imageField];
+          if (!cover || !cover.startsWith('http')) {
+            cover = `${imageSource}/${resoultion}?fm=blurhash&${fields.title}`;
+          }
+          return {
+            title: fields.title,
+            cover,
+          };
+        });
+      };
 
       const container = document.createElement('div');
       container.classList.add(
@@ -92,6 +93,8 @@ neotw-notion-gallery widget
           `${recentTiddlers.length} 张卡片即将渲染, 超过最大限制 ${this.maxCards} @neotw-notion-gallery`,
         );
       }
+
+      const data = loadData(recentTiddlers);
 
       data.forEach(({ title, cover }, index) => {
         /* 防止用户渲染过多的卡片, */
