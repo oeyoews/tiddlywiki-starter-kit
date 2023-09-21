@@ -29,7 +29,10 @@ neotw-notion-gallery widget
     render(parent, nextSibling) {
       if (!$tw.browser) return;
       // check if tailwind is installed
-      !tailwind && console.warn('tailwindcss plugin is not installed');
+      // need add window on browser
+      if (!window.tailwind) {
+        console.warn('tailwind not installed by @neotw-notion-gallery');
+      }
 
       this.parentDomNode = parent;
       this.computeAttributes();
