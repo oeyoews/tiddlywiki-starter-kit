@@ -117,13 +117,10 @@ neotw-notion-gallery widget
 
     // 如果新增或者删除tiddler, 进行重新渲染(重命名不会)
     refresh() {
-      // 获取最新值
-      let tiddlersLength = this.getFilterLength();
+      let tiddlersLength = this.getFilterLength(); // 获取最新值
       if (tiddlersLength !== this.tiddlersLength) {
-        // 重新渲染
-        this.refreshSelf();
-        // update tiddlers length
-        this.tiddlersLength = tiddlersLength;
+        this.refreshSelf(); // 重新渲染
+        this.tiddlersLength = tiddlersLength; // update tiddlers length
       }
     }
   }
