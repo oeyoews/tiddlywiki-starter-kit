@@ -43,3 +43,7 @@ description: 卡片视图
 <!-- 会有闪烁, 由于tailwindcss为加载完成应用样式 -->
 
 <!-- 事实证明js写的widget更具有扩展性,灵活性 -->
+
+!! TODO
+
+1. add dynamic filter interface

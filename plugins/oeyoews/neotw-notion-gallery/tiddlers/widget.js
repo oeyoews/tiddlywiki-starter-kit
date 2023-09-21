@@ -18,7 +18,7 @@ neotw-notion-gallery widget
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
       // TODO: 预设配置化
-      this.maxCards = 30;
+      this.maxCards = null;
       this.tiddlersLength = $tw.wiki.filterTiddlers(
         '[!is[system]!has[draft.of]]',
       ).length;
@@ -26,15 +26,19 @@ neotw-notion-gallery widget
 
     render(parent, nextSibling) {
       if (!$tw.browser) return;
-
       this.parentDomNode = parent;
       this.computeAttributes();
       this.execute();
 
       const wiki = $tw.wiki;
 
-      const defaultFilter =
-        '[!is[system]!has[draft.of]!sort[modified]limit[9]]';
+      /** load config */
+      const config = require('./config');
+
+      const { defaultFilter, resoultion, maxCards, imageSource } = config;
+      this.maxCards = maxCards;
+
+      // TODO: 支持filter interface ui
       const filter = this.getAttribute('filter', defaultFilter);
       const recentTiddlers = wiki.filterTiddlers(filter);
 
@@ -43,7 +47,7 @@ neotw-notion-gallery widget
         // just support online images
         let cover = fields['page-cover'];
         if (!cover || !cover.startsWith('http')) {
-          cover = `https://source.unsplash.com/random/1920x1080?fm=blurhash&${fields.title}`;
+          cover = `${imageSource}/${resoultion}?fm=blurhash&${fields.title}`;
         }
         return {
           title: fields.title,
@@ -122,11 +126,7 @@ neotw-notion-gallery widget
           'duration-800',
           'ease-in-out',
           ...dynamicClassNames,
-          // 'bg-gradient-to-r', 'from-teal-100', 'to-lime-200',
         );
-
-        // img.src =
-        //   'https://images.unsplash.com/photo-1505860125062-3ce932953cf5?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=270&ixid=MnwxfDB8MXxyYW5kb218MHx8Zm0sc2VhfHx8fHx8MTY5NTEzNjk4NQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=480';
 
         img.alt = title;
         img.src = cover;
