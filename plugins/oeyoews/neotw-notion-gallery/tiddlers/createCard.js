@@ -6,8 +6,32 @@ module-type: library
 \*/
 /** create card */
 module.exports = function createCard(title, cover, clickEvents) {
+  const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.3, // 当图片50%进入可视区域时加载
+  };
+
+  function callback(entries, observer) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const image = entry.target;
+        image.src = cover;
+        image.onload = () => {
+          image.classList.remove(...dynamicClassNames);
+          item.appendChild(h3);
+        };
+        observer.unobserve(image); // 加载后取消监测
+      }
+    });
+  }
+
+  const observer = new IntersectionObserver(callback, options);
+
   const item = document.createElement('div');
+
   const navigate = clickEvents;
+
   item.classList.add(
     'flex',
     'flex-col',
@@ -65,12 +89,9 @@ module.exports = function createCard(title, cover, clickEvents) {
   );
 
   img.alt = title;
-  img.src = cover;
   item.appendChild(img);
-  img.onload = () => {
-    img.classList.remove(...dynamicClassNames);
-    item.appendChild(h3);
-  };
+
+  observer.observe(img);
 
   return item;
 };
