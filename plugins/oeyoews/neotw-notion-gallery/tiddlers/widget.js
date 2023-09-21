@@ -60,7 +60,7 @@ neotw-notion-gallery widget
       const recentTiddlers = wiki.filterTiddlers(filter);
 
       const loadData = (tiddlers) => {
-        return tiddlers.map((tiddler) => {
+        return tiddlers.slice(0, this.maxCards).map((tiddler) => {
           const { fields } = wiki.getTiddler(tiddler);
           let cover = fields[imageField];
           if (!cover || !cover.startsWith('http')) {
@@ -83,19 +83,16 @@ neotw-notion-gallery widget
         'm-4',
       );
 
+      // TODO: 分页
       if (recentTiddlers.length > this.maxCards) {
         console.warn(
-          `${recentTiddlers.length} 张卡片即将渲染, 超过最大限制 ${this.maxCards} @neotw-notion-gallery`,
+          `${recentTiddlers.length} 张卡片即将渲染, 超过最大限制 ${this.maxCards}, 仅渲染前三十张卡片 @neotw-notion-gallery`,
         );
       }
 
       const data = loadData(recentTiddlers);
 
-      data.forEach(({ title, cover }, index) => {
-        /* 防止用户渲染过多的卡片, */
-        if (index >= this.maxCards) {
-          return;
-        }
+      data.forEach(({ title, cover }) => {
         container.appendChild(createCard(title, cover, navigate));
       });
 
