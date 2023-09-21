@@ -8,5 +8,5 @@
   "description": "Neotw",
   "author": "oeyoews",
   "dependents": "$:/plugins/tiddlywiki/markdown",
-  "list": "Readme explore"
+  "list": "Readme"
 }
