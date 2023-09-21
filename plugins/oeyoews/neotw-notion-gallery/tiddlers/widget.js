@@ -14,12 +14,13 @@ neotw-notion-gallery widget
 
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
   const createCard = require('./createCard');
+  const config = require('./config');
 
   class cardsWidget extends Widget {
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
-      this.maxCards = null;
-      this.defaultFilter = null;
+      this.maxCards = config.maxCards;
+      this.defaultFilter = config.defaultFilter;
       this.tiddlersLength = null;
       // this.tiddlersLength = $tw.wiki.filterTiddlers(
       //   '[!is[system]!has[draft.of]]',
@@ -50,15 +51,9 @@ neotw-notion-gallery widget
         return false;
       };
 
-      /** load config */
-      const config = require('./config');
-
-      const { defaultFilter, imageField, resoultion, maxCards, imageSource } =
-        config;
-      this.defaultFilter = defaultFilter;
+      const { imageField, resoultion, imageSource } = config;
 
       this.tiddlersLength = this.getFilterLength();
-      this.maxCards = maxCards;
 
       // TODO: 支持filter interface ui
       const filter = this.getAttribute('filter', this.defaultFilter);
