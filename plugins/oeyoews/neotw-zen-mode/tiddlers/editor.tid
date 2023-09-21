@@ -1,7 +1,9 @@
 title: $:/plugins/oeyoews/neotw-zen-mode/editorbar
 tags: $:/tags/EditorToolbar
 caption: zen-mode
-condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]] [<targetTiddler>type[text/markdown]]
+condition: [<targetTiddler>]
+
+<!-- condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]] [<targetTiddler>type[text/markdown]] -->
 
 Advance
   <$action-listops $tiddler="$:/temp/zenmode" $field="text" $subfilter="+[toggle[no],[yes]]" />
