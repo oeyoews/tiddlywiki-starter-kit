@@ -5,19 +5,15 @@ description: Unsplash
 
 !! Neotw Unsplash
 
-* [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/neotw-unsplash]]
-* [[Demo|https://oeyoews.github.io/neotw]]
+> https://help.unsplash.com/en/articles/3887917-when-should-i-apply-for-a-higher-rate-limit
 
-!! TODO
+<!-- !! TODO -->
 
-* use other image api <19-05-23, oeyoews>
-* use tm-notify or others notify
-* hover style bug
+<!-- * use other image api <19-05-23, oeyoews> -->
+<!-- * use tm-notify or others notify -->
+<!-- * hover style bug -->
+
 <!-- * add tm-modal on edittoolbar to call unsplash <19-05-23, oeyoews> -->
-
-!! Video
-
-<!-- <iframe src="https://player.bilibili.com/player.html?aid=614007063&bvid=BV19h4y1x7kg&cid=1141229148&page=1" width="100%" height="500" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"> </iframe> -->
 
 !! UnsplashAPI
 

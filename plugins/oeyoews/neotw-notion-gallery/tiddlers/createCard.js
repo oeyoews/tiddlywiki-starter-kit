@@ -67,7 +67,7 @@ module.exports = function createCard(title, cover, clickEvents) {
   h3.textContent = title;
   h3.addEventListener('click', () => navigate(title));
   const img = document.createElement('img');
-  // 动态加载图片的数量取决于视图的宽度和高度, 不是可见视图
+  // 动态懒加载图片的数量取决于视图的宽度和高度, 不是可见视图, 所以需要使用IntersectionObserver 来监测
   img.loading = 'lazy';
   const dynamicClassNames = [
     'scale-105',
@@ -85,6 +85,7 @@ module.exports = function createCard(title, cover, clickEvents) {
     'transition-all',
     'duration-800',
     'ease-in-out',
+    'shadow-md',
     ...dynamicClassNames,
   );
 

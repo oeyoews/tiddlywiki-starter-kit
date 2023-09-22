@@ -21,10 +21,9 @@ neotw-notion-gallery widget
       super(parseTreeNode, options);
       this.maxCards = config.maxCards;
       this.defaultFilter = config.defaultFilter;
-      this.tiddlersLength = null;
-      // this.tiddlersLength = $tw.wiki.filterTiddlers(
-      //   '[!is[system]!has[draft.of]]',
-      // ).length;
+      this.state = {
+        tiddlersLength: null,
+      };
     }
 
     render(parent, nextSibling) {
@@ -53,7 +52,8 @@ neotw-notion-gallery widget
 
       const { imageField, resoultion, imageSource } = config;
 
-      this.tiddlersLength = this.getFilterLength();
+      // 初始化
+      this.state.tiddlersLength = this.getFilterLength();
 
       // TODO: 支持filter interface ui
       const filter = this.getAttribute('filter', this.defaultFilter);
@@ -113,9 +113,9 @@ neotw-notion-gallery widget
     // 如果新增或者删除tiddler, 进行重新渲染(重命名不会)
     refresh() {
       let tiddlersLength = this.getFilterLength(); // 获取最新值
-      if (tiddlersLength !== this.tiddlersLength) {
+      if (tiddlersLength !== this.state.tiddlersLength) {
         this.refreshSelf(); // 重新渲染
-        this.tiddlersLength = tiddlersLength; // update tiddlers length
+        this.state.tiddlersLength = tiddlersLength; // update tiddlers length
       }
     }
   }
