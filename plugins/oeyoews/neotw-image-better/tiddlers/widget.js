@@ -11,8 +11,6 @@ om-img widget
   /*global $tw: false */
   'use strict';
 
-  if (!$tw.browser) return;
-
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
 
   class ImageWidget extends Widget {
@@ -21,6 +19,8 @@ om-img widget
     }
 
     render(parent, nextSibling) {
+      if (!$tw.browser) return;
+
       this.parentDomNode = parent;
       this.computeAttributes();
       this.execute();
