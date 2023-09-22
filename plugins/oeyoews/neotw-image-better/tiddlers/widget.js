@@ -57,8 +57,8 @@ om-img widget
   /**
    * unsplash keyword image
    * @description 使用unsplash的图片组件
-   * @param {class} image classed
-   * @param {keyword} unsplash keywork
+   * @param {string} keyword
+   * @param {string} class
    */
   exports['ukimg'] = ImageWidget;
 })();

@@ -120,5 +120,9 @@ neotw-notion-gallery widget
     }
   }
 
+  /**
+   * @description notion-gallery widget
+   * @param {string} filter
+   */
   exports.cards = cardsWidget;
 })();

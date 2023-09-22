@@ -105,5 +105,16 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
     }
   }
 
+  /**
+   * @description Gravatar and QQ  Github Avatar Widget
+   * @param {string} username
+   * @param {string} email
+   * @param {string} type
+   * @param {string} size
+   * @param {string} link
+   * @param {string} center
+   * @param {string} alt
+   * @param {string} width
+   */
   exports.avatar = AvatarWidget;
 })();

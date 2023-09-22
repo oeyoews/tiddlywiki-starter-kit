@@ -32,5 +32,9 @@ ${pluginname} widget
     }
   }
 
+  /**
+   * @description ${pluginname} widget
+   * @param xxx
+   */
   exports.test = DivWidget;
 })();
