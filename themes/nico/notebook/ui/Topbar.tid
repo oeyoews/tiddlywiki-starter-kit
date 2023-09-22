@@ -4,8 +4,9 @@ title: $:/themes/nico/notebook/ui/Topbar
 <!-- todo add option -->
 <!-- add indicator like ios bottom bar -->
 <$reveal state="$:/state/notebook-topbar" type="match" text="yes" default="yes" retain="yes" animate="yes">
-  <div class="nc-topbar-wrapper opacity-0 hover:opacity-100 duration-500 transform translate-y-1/2 transition-all hover:translate-y-0 hover:cursor-pointer ease-in-out">
-    <div class="nc-bar nc-topbar tc-adjust-top-of-scroll mb-4 rounded bg-transparent">
+  <div class="hidden md:block transition-all w-32 h-4 rounded-t-md hover:rounded-none hover:w-full hover:h-auto hover:bg-transparent bg-neutral-200 dark:bg-black backdrop-blur fixed left-1/2 -translate-x-1/2 hover:translate-x-0 bottom-0 hover:left-0 cursor-pointer group p-1 duration-600 ease-in">
+  <!-- <div class="text-center group-hover:hidden text-sm">控制台</div> -->
+    <div class="nc-bar nc-topbar tc-adjust-top-of-scroll mb-4 bg-transparent scale-0 group-hover:scale-100">
       <$list filter="[all[shadows+tiddlers]tag[$:/tags/NotebookTopbar]!has[draft.of]]" variable="listItem">
         <$reveal type="nomatch" state=<<config-title>> text="hide" tag="div">
           <$transclude tiddler=<<listItem>> mode="block"/>

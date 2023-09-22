@@ -1,6 +1,7 @@
-tags: $:/tags/PageTemplate
 title: $:/themes/nico/notebook/ui/Bottombar
 type: text/vnd.tiddlywiki
+
+<!-- tags: $:/tags/PageTemplate -->
 
 <$reveal state="$:/state/notebook-bottombar" type="match" text="yes" default="yes" retain="yes" animate="yes">
   <div class="nc-bar nc-bottombar">
