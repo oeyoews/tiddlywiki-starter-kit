@@ -65,22 +65,25 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
 
       const img = new Image();
       img.className =
-        'rounded-full align-middle m-1 duration-200 transition object-cover object-center';
-      if (isCenter) {
-        img.classList.add(
-          'block',
-          'mx-auto',
-          'shadow-lg',
-          'border-dashed',
-          'border',
-          'border-indigo-400',
-          'p-1',
-          'hover:scale-105',
-          'delay-200',
-        );
-      }
+        'rounded-full align-middle m-1 duration-200 transition object-cover object-center blur scale-105';
       img.setAttribute('style', `max-width: ${width}px`);
       img.setAttribute('src', src);
+      img.onload = () => {
+        img.classList.remove('blur', 'scale-105');
+        if (isCenter) {
+          img.classList.add(
+            'block',
+            'mx-auto',
+            'shadow-lg',
+            'border-dashed',
+            'border',
+            'border-indigo-400',
+            'p-1',
+            'hover:scale-105',
+            'delay-200',
+          );
+        }
+      };
       img.setAttribute('alt', alt);
       img.title = "Click to open this user's profile";
 

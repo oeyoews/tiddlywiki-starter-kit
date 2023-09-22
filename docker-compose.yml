@@ -20,6 +20,7 @@ services:
         'host=0.0.0.0',
         'root-tiddler=$:/core/save/all-external-js',
         'use-browser-cache=yes',
+        'anon-username=oeyoews',
       ] # 第1个tiddlywiki 是命令，第2个tiddlywiki 是目录
     # build
     # command: ["tiddlywiki", "wiki", "--build", "index"]

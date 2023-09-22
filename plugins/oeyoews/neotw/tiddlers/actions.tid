@@ -5,7 +5,7 @@ tags: $:/tags/StartupAction
 <$action-setfield $tiddler="$:/theme" text="$:/themes/nico/notebook"/>
 <!-- sidebar -->
 <!-- <$action-setfield $tiddler="$:/state/notebook-sidebar" text="yes"/> -->
-<!-- set username -->
+<!-- set username  just for single file, nodejs need cmd-->
 <$action-setfield $tiddler="$:/status/UserName" text="oeyoews"/>
 <!-- layout -->
 <$action-setfield $tiddler="$:/layout" text="$:/core/ui/PageTemplate"/>
