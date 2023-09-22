@@ -18,7 +18,10 @@ module.exports = function createCard(title, cover, clickEvents) {
         const image = entry.target;
         image.src = cover;
         image.onload = () => {
+          img.alt = title;
+          img.title = '';
           image.classList.remove(...dynamicClassNames);
+          img.classList.add('cursor-pointer');
           item.appendChild(h3);
         };
         observer.unobserve(image); // 加载后取消监测
@@ -73,6 +76,7 @@ module.exports = function createCard(title, cover, clickEvents) {
     'bg-black/10',
     'cursor-wait',
   ];
+  img.title = 'loading ...';
   img.classList.add(
     'aspect-video',
     'object-cover',
@@ -87,7 +91,6 @@ module.exports = function createCard(title, cover, clickEvents) {
     ...dynamicClassNames,
   );
 
-  img.alt = title;
   // img.src = 'favicon.ico';
   item.appendChild(img);
 
