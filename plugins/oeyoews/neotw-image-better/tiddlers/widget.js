@@ -4,7 +4,6 @@ type: application/javascript
 module-type: widget
 
 om-img widget
-
 \*/
 (function () {
   /*jslint node: true, browser: true */
@@ -55,5 +54,11 @@ om-img widget
     }
   }
 
-  exports['om-img'] = ImageWidget;
+  /**
+   * unsplash keyword image
+   * @description 使用unsplash的图片组件
+   * @param {class} image classed
+   * @param {keyword} unsplash keywork
+   */
+  exports['ukimg'] = ImageWidget;
 })();
