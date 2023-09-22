@@ -22,11 +22,12 @@ tags: $:/tags/Stylesheet
   .tc-tiddler-controls  {display: none !important;}
 </$list>
 
-<$list filter="[[$:/StoryList]get[list]count[]match[0]]">
-.nc-topbar {
-  display: none !important;
-}
-</$list>
+<!-- 如果在主页不显示topbar -->
+<!-- <$list filter="[[$:/StoryList]get[list]count[]match[0]]"> -->
+<!-- .nc-topbar { -->
+<!--   display: none !important; -->
+<!-- } -->
+<!-- </$list> -->
 
 <$list filter="[[$:/temp/zen-mode]get[text]match[yes]]">
 <!-- footer {display:none !important;} -->
@@ -37,12 +38,6 @@ tags: $:/tags/Stylesheet
 }
 
 [data-tiddler-title] .tc-tiddler-controls  {display: none !important;}
-</$list>
-
-<$list filter="[[$:/StoryList]get[list]count[]match[0]]">
-.nc-topbar {
-    display: none !important;
-}
 </$list>
 
 .custom-details {
