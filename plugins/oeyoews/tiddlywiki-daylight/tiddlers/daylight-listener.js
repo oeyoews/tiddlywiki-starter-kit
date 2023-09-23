@@ -3,56 +3,56 @@ title: $:/plugins/oeyoews/tiddlywiki-daylight/daylight-listener.js
 type: application/javascript
 module-type: library
 
-daylight listener module
+Daylight Listener Module
 \*/
 
-// 01: system: 跟随操作系统模式
-// 02: light/dark: 跟随用户配置更新, 这里是 $:config/theme-mode
+// 01: system: Follow the operating system mode
+// 02: light/dark: Follow user configuration updates, here it is $:config/theme-mode
 
-// 如果修改了配置需要重新启动才能生效, 因为配置是从文件读取的,tw不会自动更新, 如果是使用localstorage,就可以自动更新配置
+// If configuration is modified, a restart is needed for it to take effect because the configuration is read from a file, and tw won't automatically update. If using localstorage, it can update the configuration automatically.
 localStorage.theme =
   $tw.wiki.getTiddlerText('$:/config/theme-mode') || 'system';
 const currentMode = localStorage.theme;
 
-// 注意操作系统是否支持切换系统的暗亮模式, 理论上都支持(Linux 的各种发行版和个别移动端除外)
+// Pay attention to whether the operating system supports switching between dark and light modes; in theory, it's supported everywhere (except for some Linux distributions and certain mobile platforms).
 
 let isDarkMode = $tw.wiki.getTiddlerText('$:/info/darkmode') === 'yes'; // let isDarkMode = darkMode?.matches;
 
-// TODO: 配置ui
-// preset: 默认的浅色和深色调色板
+// TODO: Configure UI
+// preset: Default light and dark palettes
 const lightPalette = '$:/themes/nico/notebook/palettes/palette-beige';
 const darkPalette = '$:/palettes/GithubDark';
 
 function updateMode(mode) {
   document.documentElement.className = mode;
-  // palette
+  // Palette
   const palette = mode === 'dark' ? darkPalette : lightPalette;
   $tw.wiki.setText('$:/palette', 'text', null, palette);
-  // update mode
+  // Update mode
   localStorage.theme = mode;
 }
 
-// 手动切换light/dark
+// Manually toggle light/dark
 function toggleMode() {
-  const NProgress = require('nprogress.min.js'); // 这一步由于插件加载顺序的问题, 可能还没有加载nprogress,会报错, 需要手动加载
+  const NProgress = require('nprogress.min.js'); // This step may cause an error due to plugin loading order; NProgress might not be loaded yet, so manual loading is needed.
   NProgress?.start();
-  // 需要获取到当前tiddlywiki的模式
+  // Need to get the current tiddlywiki mode
   const nextMode = isDarkMode ? 'light' : 'dark';
-  // 更新mode
+  // Update mode
   isDarkMode = !isDarkMode;
   updateMode(nextMode);
   NProgress?.done();
 }
 
-// 监听
+// Listener
 function checkModeListener() {
-  // 注意浏览器是否支持 window.matchMedia
+  // Pay attention to whether the browser supports window.matchMedia
   const darkMode = window.matchMedia?.('(prefers-color-scheme: dark)');
   darkMode?.addEventListener?.('change', (event) => {
     const systemMode = (event?.matches && 'dark') || 'light';
-    // 更新mode
+    // Update mode
     if (!systemMode === 'dark') isDarkMode = false;
-    // 仅仅监听跟随系统
+    // Only listen to system mode
     if (currentMode === 'system') {
       updateMode(systemMode);
     }
