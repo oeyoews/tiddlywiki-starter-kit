@@ -3,7 +3,7 @@ title: $:/config/EmptyStoryMessage
 <center>
   <$button class="bg-transparent">
     <$action-sendmessage $message="tm-modal" $param="oeyoews"/>
-<div class="relative inline-block my-4">
+<div class="relative inline-block">
     <$avatar center="yes"/>
 </div>
   </$button>
