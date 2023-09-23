@@ -11,7 +11,7 @@ list-after:
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
   <$action-sendmessage $message="tm-modal" $param="oeyoews"/>
 <div class="relative inline-block">
-    <$avatar />
+    <$avatar class="w-[22px]"/>
   <span class="absolute -top-3 -right-0">
     <span class="relative inline-flex rounded-full h-1 w-1 bg-sky-500">
       <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>

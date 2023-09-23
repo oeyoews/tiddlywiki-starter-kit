@@ -45,8 +45,7 @@ module.exports = {
       appearance: ['hover', 'focus'],
     },
   },
-  // Don't modify it, unless you know what you are doing !
-  important: true,
+  important: true, // Don't modify it, unless you know what you are doing !
   corePlugins: {
     preflight: false,
   },

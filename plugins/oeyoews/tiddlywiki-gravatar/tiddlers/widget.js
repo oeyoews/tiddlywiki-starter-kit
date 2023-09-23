@@ -26,23 +26,23 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
       this.computeAttributes();
       this.execute();
 
-      var getDefaultEmail = $tw.wiki.getTiddlerText(
+      let getDefaultEmail = $tw.wiki.getTiddlerText(
         '$:/config/plugins/oeyoews/tiddlywiki-gravatar/email',
       );
       const Username = $tw.wiki.getTiddlerText('$:/status/UserName');
       const username = this.getAttribute('username', Username || 'oeyoews');
-      var isCenter = this.getAttribute('center');
+      let isCenter = this.getAttribute('center');
       const link = this.getAttribute('link');
-      var width = this.getAttribute('width', '56');
-      var type = this.getAttribute('type');
-      var email = this.getAttribute(
+      let className = this.getAttribute('class', 'w-14');
+      let type = this.getAttribute('type');
+      let email = this.getAttribute(
         'email',
         getDefaultEmail || '2956398608@qq.com',
       );
 
-      var size = this.getAttribute('size', '100');
-      var alt = this.getAttribute('alt', 'Avatar');
-      var src = `https://q1.qlogo.cn/g?b=qq&nk=${email}&s=${size}`;
+      let size = this.getAttribute('size', '100');
+      let alt = this.getAttribute('alt', 'Avatar');
+      let src = `https://q1.qlogo.cn/g?b=qq&nk=${email}&s=${size}`;
       const hash = md5(email.trim().toLowerCase());
 
       switch (type) {
@@ -64,12 +64,13 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
       }
 
       const img = new Image();
-      img.className =
-        'rounded-full align-middle m-1 duration-200 transition object-cover object-center blur scale-105';
-      img.setAttribute('style', `max-width: ${width}px`);
+      const dynamicClasses = ['blur', 'scale-105'];
+      const imgClass = `rounded-full align-middle m-1 duration-200 transition object-cover object-center ${className}`;
+      img.className = imgClass;
+      img.classList.add(...dynamicClasses);
       img.setAttribute('src', src);
       img.onload = () => {
-        img.classList.remove('blur', 'scale-105');
+        img.classList.remove(...dynamicClasses);
         if (isCenter) {
           img.classList.add(
             'block',
@@ -114,7 +115,6 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
    * @param {string} link
    * @param {string} center
    * @param {string} alt
-   * @param {string} width
    */
   exports.avatar = AvatarWidget;
 })();
