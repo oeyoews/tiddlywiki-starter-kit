@@ -6,78 +6,71 @@ module-type: library
 daylight module
 \*/
 
-// 总共分为两个阶段, 启动时候设置的主题, 和监听系统主题
-
-// TODO: set localstorage
-
+// matchMedit bug 浏览器支持, 但是浏览器不兼容系统;
 // window.matchMedia || alert('您的浏览器不支持prefers-color-scheme媒体查询');
-// 浏览器支持, 但是浏览器不兼容系统;
 
-// pagecontrol, like three notebookPalette
-const currentMode = 'auto'; // dark || light || auto
+// 01: system: 跟随系统模式
+// 02: light/dark: 跟随localStorage.theme更新
+
+// 如果修改了配置需要重新启动才能生效, 因为配置是从文件读取的,tw不会自动更新, 如果是使用localstorage,就可以自动更新配置
+localStorage.theme =
+  $tw.wiki.getTiddlerText('$:/config/theme-mode') || 'system';
+const currentMode = localStorage.theme;
 
 const darkMode = window.matchMedia?.('(prefers-color-scheme: dark)');
-// const isDarkMode = darkMode?.matches;
-let isDarkMode = $tw.wiki.getTiddlerText('$:/info/darkmode');
-isDarkMode === 'yes' ? (isDarkMode = true) : (isDarkMode = false);
+let isDarkMode = $tw.wiki.getTiddlerText('$:/info/darkmode') === 'yes'; // let isDarkMode = darkMode?.matches;
+
+// preset for theme and palette
+// TODO: 配置ui
 const lightPalette = '$:/themes/nico/notebook/palettes/palette-beige';
 const darkPalette = '$:/palettes/GithubDark';
 
-// 检测浏览器是否支持prefers-color-scheme媒体查询
-isDarkMode && console.log('💻 操作系统当前处于 🌕 深色模式');
-
-function toggleMode() {
-  const currentStorageMode = localStorage.theme;
-  const nextMode = currentStorageMode === 'dark' ? 'light' : 'dark';
-  setThemeMode(nextMode);
-  setPalette(nextMode);
-}
-
-function setThemeMode(mode) {
-  // TODO
+function updateMode(mode) {
   // document.documentElement.style.animation = 'expand 0.5s ease-in-out';
   document.documentElement.classList.remove('light', 'dark');
   document.documentElement.classList.add(mode);
-  // bug
-  // document.body.classList.toggle(mode);
-  localStorage.theme = mode;
-
-  const tips = mode === 'dark' ? '🌜深色' : '🌅 浅色';
-  console.log(`🌈 Theme 切换到了 ${tips}模式`);
-}
-
-function setPalette(mode) {
+  // palette
   const palette = mode === 'dark' ? darkPalette : lightPalette;
-  const tips = mode === 'dark' ? '🌜GithubDark' : '🌅 Notebook';
   $tw.wiki.setText('$:/palette', 'text', null, palette);
-  console.log(`🎨 Palette 切换到了 ${tips}`);
+  // update mode
+  localStorage.theme = mode;
 }
 
+// step 01: 启动设置
 function handleThemeChange(event) {
-  // 这一步由于插件加载顺序的问题, 可能还没有加载nprogress
-  const NProgress = require('nprogress.min.js');
-  NProgress.start();
-  if (currentMode === 'auto') {
-    const autoMode = (event.matches && 'dark') || 'light';
-    setPalette(autoMode);
-    setThemeMode(autoMode);
-  } else {
-    setPalette(currentMode);
-    setThemeMode(currentMode);
-  }
-  NProgress.done();
+  // 这一步由于插件加载顺序的问题, 可能还没有加载nprogress,会报错, 需要手动加载
+  // const NProgress = require('nprogress.min.js');
+  // NProgress?.start();
+  const systemMode = (event?.matches && 'dark') || 'light';
+  const nextMode = currentMode === 'system' ? systemMode : currentMode;
+  updateMode(nextMode);
+  // NProgress?.done();
 }
 
+// step 02: 手动监听变换
+function toggleMode() {
+  // 需要获取到当前tiddlywiki的模式
+  const nextMode = isDarkMode ? 'light' : 'dark';
+  // 更新mode
+  isDarkMode = !isDarkMode;
+  updateMode(nextMode);
+}
+
+// 监听
 function checkModeListener() {
-  darkMode.addEventListener('change', handleThemeChange);
-}
-
-function checkMode() {
-  handleThemeChange(darkMode);
+  darkMode.addEventListener('change', (event) => {
+    const systemMode = (event?.matches && 'dark') || 'light';
+    // 更新mode
+    if (!systemMode === 'dark') isDarkMode = false;
+    // 仅仅监听跟随系统
+    if (currentMode === 'system') {
+      updateMode(systemMode);
+    }
+  });
 }
 
 module.exports = {
-  checkMode,
+  checkMode: () => handleThemeChange(darkMode),
   checkModeListener,
   toggleMode,
 };
