@@ -490,7 +490,7 @@ Command Palette Widget
         'div',
         {
           className:
-            'backdrop-blur z-[9998] fixed inset-0 bg-black/20 transition-all pointer-events-none cursor-pointer',
+            'backdrop-blur-lg z-[9998] fixed inset-0 bg-black/20 transition-all pointer-events-none cursor-pointer',
         },
         {
           opacity: 0,
