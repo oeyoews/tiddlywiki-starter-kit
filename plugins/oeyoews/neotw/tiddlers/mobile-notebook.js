@@ -22,7 +22,7 @@ Closes the notebook sidebar on mobile when navigating
 
   const closeSidebarOnMobile = () => {
     if (isOnMobile()) {
-      console.log('closing sidebar');
+      // console.log('closing sidebar');
       closeSidebar();
     }
   };

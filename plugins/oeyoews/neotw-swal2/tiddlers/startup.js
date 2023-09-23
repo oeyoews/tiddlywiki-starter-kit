@@ -4,7 +4,6 @@ title: $:/plugins/oeyoews/neotw-swal2/startup.js
 module-type: startup
 
 swal2 module
-
 \*/
 (function () {
   /*jslint node: true, browser: true */
