@@ -6,6 +6,8 @@ title: $:/plugins/oeyoews/tiddlywiki-daylight/readme
 
 > 本插件目前仅支持githubdark和notebook主题
 
+<!-- > 针对tailwindcss -->
+
 !! TODO
 
 * 添加切换动画
