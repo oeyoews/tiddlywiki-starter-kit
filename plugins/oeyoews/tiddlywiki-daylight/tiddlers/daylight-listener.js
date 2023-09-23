@@ -23,6 +23,12 @@ let isDarkMode = $tw.wiki.getTiddlerText('$:/info/darkmode') === 'yes'; // let i
 const lightPalette = '$:/themes/nico/notebook/palettes/palette-beige';
 const darkPalette = '$:/palettes/GithubDark';
 
+function preset(event) {
+  const systemMode = (event?.matches && 'dark') || 'light';
+  const mode = currentMode === 'system' ? systemMode : currentMode;
+  updateMode(mode);
+}
+
 function updateMode(mode) {
   document.documentElement.className = mode;
   // Palette
@@ -46,8 +52,9 @@ function toggleMode() {
 
 // Listener
 function checkModeListener() {
-  // Pay attention to whether the browser supports window.matchMedia
   const darkMode = window.matchMedia?.('(prefers-color-scheme: dark)');
+  preset(darkMode);
+  // Pay attention to whether the browser supports window.matchMedia
   darkMode?.addEventListener?.('change', (event) => {
     const systemMode = (event?.matches && 'dark') || 'light';
     // Update mode
