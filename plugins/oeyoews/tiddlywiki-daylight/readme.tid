@@ -12,3 +12,9 @@ title: $:/plugins/oeyoews/tiddlywiki-daylight/readme
 
 * 添加切换动画
 * 配置ui
+
+!! Example
+
+<$button message="om-toggle-theme" class="bg-slate-100 font-extrabold text-black dark:text-white dark:bg-black p-2">
+{{$:/plugins/oeyoews/tiddlywiki-daylight/icon}} Toggle theme
+</$button>
