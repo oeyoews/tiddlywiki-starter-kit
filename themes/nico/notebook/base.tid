@@ -78,12 +78,12 @@ h1.tc-site-title {
 }
 </$list>
 
-<$list filter="[[$:/state/notebook-sidebar]get[text]else[no]match[yes]]">
-.nc-bar.nc-topbar {
-  max-width: calc({{$:/themes/nico/notebook/metrics/story-width}} + 40px);
-  margin: 0 auto;
-}
-</$list>
+<!-- <$list filter="[[$:/state/notebook-sidebar]get[text]else[no]match[yes]]"> -->
+<!-- .nc-bar.nc-topbar { -->
+<!--   max-width: calc({{$:/themes/nico/notebook/metrics/story-width}} + 40px); -->
+<!--   margin: 0 auto; -->
+<!-- } -->
+<!-- </$list> -->
 
 .nc-bar .left svg {
   fill: <<colour sidebar-controls-foreground>>;
