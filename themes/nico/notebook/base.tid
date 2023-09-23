@@ -152,10 +152,6 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 @media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
-  .nc-topbar {
-    display: none;
-  }
-
   .tc-story-river {
     padding: 12px;
     margin-top: 0 !important;
