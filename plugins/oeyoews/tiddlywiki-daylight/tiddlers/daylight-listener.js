@@ -36,29 +36,20 @@ function updateMode(mode) {
   localStorage.theme = mode;
 }
 
-// step 01: 启动设置
-function handleThemeChange(event) {
-  // 这一步由于插件加载顺序的问题, 可能还没有加载nprogress,会报错, 需要手动加载
-  // const NProgress = require('nprogress.min.js');
-  // NProgress?.start();
-  const systemMode = (event?.matches && 'dark') || 'light';
-  const mode = currentMode === 'system' ? systemMode : currentMode;
-  updateMode(mode);
-  // NProgress?.done();
-}
-
 // 手动切换light/dark
 function toggleMode() {
+  const NProgress = require('nprogress.min.js'); // 这一步由于插件加载顺序的问题, 可能还没有加载nprogress,会报错, 需要手动加载
+  NProgress?.start();
   // 需要获取到当前tiddlywiki的模式
   const nextMode = isDarkMode ? 'light' : 'dark';
   // 更新mode
   isDarkMode = !isDarkMode;
   updateMode(nextMode);
+  NProgress?.done();
 }
 
 // 监听
 function checkModeListener() {
-  handleThemeChange(darkMode);
   darkMode.addEventListener('change', (event) => {
     const systemMode = (event?.matches && 'dark') || 'light';
     // 更新mode
