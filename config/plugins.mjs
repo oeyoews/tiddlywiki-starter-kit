@@ -11,6 +11,7 @@ const localPlugins = [
   'tiddlywiki/codemirror-mode-javascript',
   'oeyoews/tiddlywiki-motion',
   'oeyoews/neotw-vimjk',
+  'oeyoews/neotw-cli-info',
 ];
 
 const onlinePlugins = [

@@ -45,7 +45,8 @@
     "tiddlywiki/codemirror-mode-xml",
     "tiddlywiki/codemirror-mode-javascript",
     "oeyoews/tiddlywiki-motion",
-    "oeyoews/neotw-vimjk"
+    "oeyoews/neotw-vimjk",
+    "oeyoews/neotw-cli-info"
   ],
   "build": {
     "index": [
