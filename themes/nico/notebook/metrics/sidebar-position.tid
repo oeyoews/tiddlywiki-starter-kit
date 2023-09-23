@@ -1,3 +1,2 @@
 title: $:/themes/nico/notebook/metrics/sidebar-position
-
-left
+position: left
