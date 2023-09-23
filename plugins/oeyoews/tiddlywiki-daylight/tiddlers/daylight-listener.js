@@ -19,6 +19,7 @@ const currentMode = localStorage.theme;
 let isDarkMode = $tw.wiki.getTiddlerText('$:/info/darkmode') === 'yes'; // let isDarkMode = darkMode?.matches;
 
 // TODO: Configure UI
+// check palette if exist
 // preset: Default light and dark palettes
 const lightPalette = '$:/themes/nico/notebook/palettes/palette-beige';
 const darkPalette = '$:/palettes/GithubDark';
@@ -53,7 +54,7 @@ function toggleMode() {
 // Listener
 function checkModeListener() {
   const darkMode = window.matchMedia?.('(prefers-color-scheme: dark)');
-  preset(darkMode);
+  preset(darkMode); // NOTE: this will change your palette
   // Pay attention to whether the browser supports window.matchMedia
   darkMode?.addEventListener?.('change', (event) => {
     const systemMode = (event?.matches && 'dark') || 'light';
