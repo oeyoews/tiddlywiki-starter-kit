@@ -1,21 +1,10 @@
 title: $:/plugins/oeyoews/tiddlywiki-daylight/body-transition
-tags: $:/tags/Stylesheet
-type: text/css
+
+<!-- tags: $:/tags/Stylesheet -->
+
+\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
 
 html {
-  transition: 0.4s ease;
+  transition: 0.8s ease-in-out;
   animation: expand 1s ease-in-out;
 }
-
-<!-- html.dark { -->
-<!--   animation: expand 1s ease-in-out; -->
-<!-- } -->
-<!---->
-<!-- @keyframes expand { -->
-<!--   0% { -->
-<!--     transform: scale(0); -->
-<!--   } -->
-<!--   100% { -->
-<!--     transform: scale(1); -->
-<!--   } -->
-<!-- } -->

@@ -16,8 +16,6 @@ const currentMode = localStorage.theme;
 
 // 注意操作系统是否支持切换系统的暗亮模式, 理论上都支持(Linux 的各种发行版和个别移动端除外)
 
-// 注意浏览器是否支持 window.matchMedia
-const darkMode = window.matchMedia?.('(prefers-color-scheme: dark)');
 let isDarkMode = $tw.wiki.getTiddlerText('$:/info/darkmode') === 'yes'; // let isDarkMode = darkMode?.matches;
 
 // TODO: 配置ui
@@ -26,9 +24,7 @@ const lightPalette = '$:/themes/nico/notebook/palettes/palette-beige';
 const darkPalette = '$:/palettes/GithubDark';
 
 function updateMode(mode) {
-  // document.documentElement.style.animation = 'expand 0.5s ease-in-out';
-  document.documentElement.classList.remove('light', 'dark');
-  document.documentElement.classList.add(mode);
+  document.documentElement.className = mode;
   // palette
   const palette = mode === 'dark' ? darkPalette : lightPalette;
   $tw.wiki.setText('$:/palette', 'text', null, palette);
@@ -50,7 +46,9 @@ function toggleMode() {
 
 // 监听
 function checkModeListener() {
-  darkMode.addEventListener('change', (event) => {
+  // 注意浏览器是否支持 window.matchMedia
+  const darkMode = window.matchMedia?.('(prefers-color-scheme: dark)');
+  darkMode?.addEventListener?.('change', (event) => {
     const systemMode = (event?.matches && 'dark') || 'light';
     // 更新mode
     if (!systemMode === 'dark') isDarkMode = false;
