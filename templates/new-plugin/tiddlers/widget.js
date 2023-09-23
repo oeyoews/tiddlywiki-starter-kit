@@ -19,8 +19,6 @@ ${pluginname} widget
     }
 
     render(parent, nextSibling) {
-      if (!$tw.browser) return;
-
       this.parentDomNode = parent;
       this.computeAttributes();
       this.execute();
