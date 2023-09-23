@@ -519,7 +519,7 @@ Command Palette Widget
       });
       inputAndMainHintWrapper.append(this.searchHint, this.searchContainer);
       this.scrollDiv = createElement('div', {
-        className: 'cp-scroll my-2',
+        className: 'cp-scroll',
       });
       this.container.append(inputAndMainHintWrapper, this.scrollDiv);
       this.searchContainer.addEventListener('keydown', (e) =>
