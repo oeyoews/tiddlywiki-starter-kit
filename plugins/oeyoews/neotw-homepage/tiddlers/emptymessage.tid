@@ -1,16 +1,12 @@
 title: $:/config/EmptyStoryMessage
 
 <center>
-  <$button class="bg-transparent">
-    <$action-sendmessage $message="tm-modal" $param="oeyoews"/>
-<div class="relative inline-block">
+  <div>
     <$avatar center="yes"/>
-</div>
-  </$button>
+  </div>
 <div class="dark:bg-white flex justify-center my-4">
   {{neotw-badges}}
 </div>
-
 </center>
 
 <!-- <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]"> -->
