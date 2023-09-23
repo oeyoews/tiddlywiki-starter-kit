@@ -26,7 +26,8 @@ module-type: startup
     const tiddlersPlugin = totalPlugins - officialPlugins - customPlugins;
     console.log(
       `
-🐠 全部插件 -> ${totalPlugins}
+🐠 太微版本 -> ${$tw.version}
+📦 全部插件 -> ${totalPlugins}
 👮 官方插件 -> ${officialPlugins}
 🔪 用户插件 -> ${customPlugins}
 🧩 其他插件 -> ${tiddlersPlugin}
