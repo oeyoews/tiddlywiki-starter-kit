@@ -60,13 +60,20 @@ module.exports = function addCopyButton() {
     const fileType = codeElement.className.match(/language-(\w+)/)?.[1] || '';
 
     classNames =
-      'opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100 copy-button delay-200 float-right hover:bg-gray-200 transition-all duration-800 ease-in-out p-2';
+      'opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100 copy-button delay-200 float-right hover:bg-gray-200 transition-all duration-800 ease-in-out p-2 flex flex-row';
 
     // 添加 copybutton
     const copyButton = $tw.utils.domMaker('button', {
       text: fileType ? `${fileType}` : 'copy',
       class: fileType ? classNames : classNames + ' -m-4',
     });
+
+    const fileIcon = document.createElement('iconify-icon');
+    fileIcon.setAttribute('icon', `mdi:language-${fileType}`);
+    fileIcon.classList.add('mx-1');
+    if (fileType) {
+      copyButton.appendChild(fileIcon);
+    }
 
     const notify = () => {
       Swal.fire({
