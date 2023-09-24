@@ -17,6 +17,7 @@ const localPlugins = [
 const onlinePlugins = [
   'oeyoews/neotw-fetch',
   'oeyoews/tiddlywiki-github-share',
+  'oeyoews/tiddlywiki-readonly',
 ];
 
 /** @description tiddlywiki 启用插件列表 */
@@ -52,7 +53,6 @@ let plugins = [
   'oeyoews/tiddlywiki-tiddler-info',
   'oeyoews/tiddlywiki-gravatar',
   'oeyoews/neotw-homepage',
-  'oeyoews/tiddlywiki-readonly',
 ];
 
 const dynamicPlugins = ci.isCI ? onlinePlugins : localPlugins;

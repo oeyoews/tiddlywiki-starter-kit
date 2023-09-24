@@ -1,28 +1,8 @@
-title: $:/temp/oeyoews/neotw/style/readonly
+title: $:/temp/oeyoews/style/readonly
 tags: $:/tags/Stylesheet
 
-<!-- \define hide-tiddler-controls() -->
-<!--   [data-tiddler-title="$(currentTiddler)$"] .tc-tiddler-controls  {display: none !important;} -->
-<!-- \end -->
-<!---->
-<!-- <$list filter="[{$:/info/url/protocol}match[https:]]"> -->
-<!-- <$list filter="[!is[system]]"> -->
-<!-- <<hide-tiddler-controls>> -->
-<!-- </$list> -->
-<!-- </$list> -->
-
-<$list filter="[{$:/info/url/protocol}match[https:]]">
-  [data-tiddler-title] .tc-tiddler-controls  {display: none !important;}
-</$list>
-
-<!-- <$list filter='[tag[Journal]]'> -->
-<!-- [data-tiddler-title='{{!!title}}'] { border: 1px dashed blue !important; } -->
-<!-- </$list> -->
+[data-tiddler-title] .tc-tiddler-controls  {display: none !important;}
 
 [data-tags*='Journal'] {
   border: 1px dashed blue !important;
-}
-
-[data-tiddler-title="$:/plugins/oeyoews/tiddlywiki-cards/bing"] .tc-titlebar {
-	display: none;
 }

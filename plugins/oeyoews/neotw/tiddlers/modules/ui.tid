@@ -19,7 +19,7 @@ tags: $:/tags/PageTemplate
 </div>
 </$list>
 
-<!-- non-storyriver && less two -->
+<!-- non-storyriver -->
 <$list filter="[[$:/StoryList]get[list]!is[blank]]">
     <div id="stx-story-top">
       <<readonly-mode>>
