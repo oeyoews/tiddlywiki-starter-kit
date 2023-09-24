@@ -1,7 +1,7 @@
 /*\
 title: $:/plugins/oeyoews/tiddlywiki-daylight/startup.js
 type: application/javascript
-module-type: global
+module-type: startup
 
 daylight module
 \*/
