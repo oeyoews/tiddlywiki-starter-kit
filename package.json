@@ -10,7 +10,7 @@
     "format": "prettier --write .",
     "docker:build": "docker build -t oeyoews/tiddlywiki .",
     "docker:push": "docker push oeyoews/tiddlywiki:latest",
-    "start": "./lib/startup.mjs --listen port=8000 host=0.0.0.0 root-tiddler=$:/core/save/all-external-js use-browser-cache=yes anon-username=oeyoews"
+    "start": "./lib/startup.mjs"
   },
   "dependencies": {
     "ci-info": "^3.8.0",
