@@ -58,9 +58,9 @@ module.exports = function addCopyButton() {
 
     // 获取 code 语言类型
     const fileType = codeElement.className.match(/language-(\w+)/)?.[1] || '';
-
+    // opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100
     classNames =
-      'opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100 copy-button delay-200 float-right hover:bg-gray-200 transition-all duration-800 ease-in-out p-2 flex flex-row';
+      'copy-button delay-200 float-right hover:bg-gray-200 transition-all duration-800 ease-in-out p-2 flex flex-row';
 
     // 添加 copybutton
     const copyButton = $tw.utils.domMaker('button', {
@@ -91,6 +91,7 @@ module.exports = function addCopyButton() {
       // TODO: add click sound
       // copy to clipboard
 
+      // NOTE: 0.0.0.0:xxx 可能自动禁用clipboard
       // IOS 并不支持navigator, 目前不打断写兼容代码
       navigator?.clipboard
         ?.writeText(codeElement.textContent)
