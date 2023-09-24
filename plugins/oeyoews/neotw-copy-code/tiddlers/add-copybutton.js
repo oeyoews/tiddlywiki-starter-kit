@@ -92,7 +92,7 @@ module.exports = function addCopyButton() {
       // copy to clipboard
 
       // NOTE: 0.0.0.0:xxx 可能自动禁用clipboard
-      // IOS 并不支持navigator, 目前不打断写兼容代码
+      // ~~IOS 并不支持navigator, 目前不打断写兼容代码~~
       navigator?.clipboard
         ?.writeText(codeElement.textContent)
         .then(() => {
