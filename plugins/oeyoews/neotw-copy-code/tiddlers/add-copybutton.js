@@ -4,8 +4,9 @@ type: application/javascript
 module-type: library
 
 eotw-copy-code widget
-
 \*/
+
+// TODO: 支持filetype iconify
 
 // 不适合
 /* function copybuttonListener() {
