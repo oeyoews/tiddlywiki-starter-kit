@@ -9,7 +9,7 @@ $:/config/SideBarSegments/Visibility/$(listItem)$
 
 <$reveal state="$:/state/notebook-sidebar" type="match" text="yes" default="no" retain="yes" animate="no">
     <$scrollable fallthrough="no">
-    <div class="nc-sidebar p-2 rounded-lg shadow-md my-12 mx-4 z-[900] hidden lg:block">
+    <div class="nc-sidebar p-2 rounded-lg z-[900] hidden lg:block">
       <$list filter="[all[shadows+tiddlers]tag[$:/themes/nico/notebook/tags/Sidebar]!has[draft.of]]" variable="listItem">
         <$reveal type="nomatch" state=<<config-title>> text="hide" tag="div">
           <$transclude tiddler=<<listItem>> mode="inline"/>
