@@ -60,7 +60,7 @@ module.exports = function addCopyButton() {
     const fileType = codeElement.className.match(/language-(\w+)/)?.[1] || '';
     // opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100
     classNames =
-      'copy-button delay-200 float-right hover:bg-gray-200 transition-all duration-800 ease-in-out p-2 flex flex-row';
+      'copy-button delay-200 float-right bg-transparent hover:bg-gray-200 transition-all duration-600 ease-in-out p-1 flex flex-row';
 
     // 添加 copybutton
     const copyButton = $tw.utils.domMaker('button', {
