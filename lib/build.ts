@@ -6,9 +6,10 @@ import generateTiddlyWikiInfo from '@/tiddlywiki.config.mjs';
 import ci from 'ci-info';
 import { spawn } from 'bun';
 
+const env = process.env;
 /** @description load env from .env file with bun */
-const TIDDLERSREPO = process.env.TIDDLERSREPO || 'neotw-tiddlers';
-const BUILDDIR = process.env.OUTPURDIR || '.tiddlywiki';
+const TIDDLERSREPO = env.TIDDLERSREPO || 'neotw-tiddlers';
+const BUILDDIR = env.OUTPURDIR || '.tiddlywiki';
 // 实际上可以直接写 import {isBun} from 'process', 但是如果安装了 @types/node 会有ts 警告
 const hasBun = process.versions.bun;
 const log = ora(
