@@ -2,7 +2,7 @@ title: $:/plugins/oeyoews/tiddlywiki-readonly/macro
 tags: $:/tags/Macro
 
 \define readonly-mode()
-<$button class="aspect-square rounded-full hover:scale-105 hover:shadow-lg transition hidden md:block object-center bg-transparent">
+<$button class="aspect-square rounded-full hover:scale-105 transition hidden md:block object-center bg-transparent">
  {{$:/plugins/oeyoews/neotw/icon/book}}
  <$action-listops  $tiddler="$:/temp/oeyoews/style/readonly" $tags="+[toggle[$:/tags/Stylesheet]]" />
 </$button>
