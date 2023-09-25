@@ -19,7 +19,7 @@ Extension markdown-it
           /* const spaceIndex = name.indexOf(' ');
           const title = spaceIndex !== -1 ? name.slice(spaceIndex + 1) : ''; */
           return (
-            `<div class="border border-y-0 border-r-0 border-l-4 border-s-${color}-400 rounded-l-md my-2">\n` +
+            `<div class="border text-black border-y-0 border-r-0 border-l-4 border-s-${color}-400 rounded-l-md my-2">\n` +
             `<div class="font-bold bg-${color}-200 text-${color}-600 px-2 py-1 rounded-t-sm">${label} ${name}</div>` +
             `<div class="content px-2 shadow-sm rounde-md py-1 bg-${color}-200">`
           );
