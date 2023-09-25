@@ -21,7 +21,7 @@ Extension markdown-it
           return (
             `<div class="border border-y-0 border-r-0 border-l-4 border-s-${color}-400 rounded-l-md my-2">\n` +
             `<div class="font-bold bg-${color}-200 text-${color}-600 px-2 py-1 rounded-t-sm">${label} ${name}</div>` +
-            '<div class="content pl-2 shadow-sm rounde-md py-1">'
+            `<div class="content pl-2 shadow-sm rounde-md py-1 bg-${color}-200">`
           );
         } else {
           return '</div>\n</div>\n';
