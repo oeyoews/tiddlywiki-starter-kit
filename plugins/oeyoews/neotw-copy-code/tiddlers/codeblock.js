@@ -28,9 +28,12 @@ Code block node widget
       const domNode = this.document.createElement('pre');
       const codeNode = this.document.createElement('code');
       const code = this.getAttribute('code', '');
-      // const fileType = this.language;
+      let fileType = this.language;
+      if (fileType === 'text/plain') {
+        fileType = '';
+      }
       const classNames =
-        'absolute overflow-auto fixed top-0 right-0 delay-200 bg-transparent group-hover:bg-gray-200 transition-all duration-600 ease-in-out p-1 flex flex-row rounded backdrop-blur p-1';
+        'absolute scale-0 group-hover:scale-100 overflow-auto fixed top-0 right-0 bg-transparent group-hover:bg-gray-200 transition-all duration-600 ease-in-out p-1 flex flex-row rounded backdrop-blur p-1';
 
       const copyButton = this.document.createElement('button');
 
@@ -50,7 +53,8 @@ Code block node widget
       codeNode.textContent && domNode.appendChild(copyButton);
       copyButton?.classList?.add(...classNames.split(' '));
       // https://tiddlywiki.com/#View%20Template%20Body%20Cascade:%5B%5BView%20Template%20Body%20Cascade%5D%5D%20%24%3A%2Fcore%2Fui%2FViewTemplate%2Fbody%2Fplugin
-      // copyButton.textContent = fileType || 'copy';
+      // https://talk.tiddlywiki.org/t/how-highlight-js-works-on-codeblock/8083/11
+      copyButton.textContent = fileType;
 
       // icon
       const fileIcon = this.document.createElement('iconify-icon');
@@ -66,7 +70,8 @@ Code block node widget
         scss: 'sass',
         makefile: 'cmake',
         sql: 'mysql',
-        // html: 'html5', // html language-xml bug
+        html: 'html5', // html language-xml bug
+        vbnet: 'visualbasic',
         xml: 'html5',
         '': 'tiddlywiki',
       };
@@ -84,7 +89,7 @@ Code block node widget
           copyButton.textContent = 'copied';
           setTimeout(() => {
             console.log('update');
-            copyButton.textContent = '';
+            copyButton.textContent = fileType;
             copyButton.appendChild(fileIcon);
           }, 1000);
         });
