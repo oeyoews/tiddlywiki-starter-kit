@@ -3,7 +3,7 @@ title: $:/plugins/oeyoews/tiddlywiki-gravatar/gqwidget.js
 type: application/javascript
 module-type: widget
 
-Gravatar and QQ  Github Avatar Widget(Lastest gqg)
+Gravatar and QQ Github Avatar Widget(Lastest gqg)
 
 \*/
 (function () {
@@ -26,19 +26,19 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
       this.computeAttributes();
       this.execute();
 
-      let getDefaultEmail = $tw.wiki.getTiddlerText(
-        '$:/config/plugins/oeyoews/tiddlywiki-gravatar/email',
-      );
-      const Username = $tw.wiki.getTiddlerText('$:/status/UserName');
-      const username = this.getAttribute('username', Username || 'oeyoews');
+      let getDefaultEmail =
+        $tw.wiki.getTiddlerText(
+          '$:/config/plugins/oeyoews/tiddlywiki-gravatar/email',
+        ) || '2956398608@qq.com';
+      const Username =
+        $tw.wiki.getTiddlerText('$:/status/UserName') || 'oeyoews';
+
+      const username = this.getAttribute('username', Username);
       let isCenter = this.getAttribute('center');
       const link = this.getAttribute('link');
-      let className = this.getAttribute('class', 'w-14');
+      let className = this.getAttribute('class', 'w-12');
       let type = this.getAttribute('type');
-      let email = this.getAttribute(
-        'email',
-        getDefaultEmail || '2956398608@qq.com',
-      );
+      let email = this.getAttribute('email', getDefaultEmail);
 
       let size = this.getAttribute('size', '100');
       let alt = this.getAttribute('alt', 'Avatar');
@@ -69,28 +69,27 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
       img.className = imgClass;
       img.classList.add(...dynamicClasses);
       img.setAttribute('src', src);
+      if (isCenter) {
+        img.classList.add(
+          'block',
+          'mx-auto',
+          'shadow-lg',
+          'border-dashed',
+          'border',
+          'border-indigo-400',
+          'p-1',
+          'delay-200',
+        );
+      }
       img.onload = () => {
         img.classList.remove(...dynamicClasses);
-        if (isCenter) {
-          img.classList.add(
-            'block',
-            'mx-auto',
-            'shadow-lg',
-            'border-dashed',
-            'border',
-            'border-indigo-400',
-            'p-1',
-            'hover:scale-105',
-            'delay-200',
-          );
-        }
       };
       img.setAttribute('alt', alt);
       img.title = "Click to open this user's profile";
 
-      let ele = img;
+      let domNode = img;
       if (link) {
-        ele = $tw.utils.domMaker('a', {
+        domNode = $tw.utils.domMaker('a', {
           attributes: {
             target: '_blank',
             rel: 'noopener noreferrer',
@@ -101,8 +100,8 @@ Gravatar and QQ  Github Avatar Widget(Lastest gqg)
         });
       }
 
-      parent.insertBefore(ele, nextSibling);
-      this.domNodes.push(ele);
+      parent.insertBefore(domNode, nextSibling);
+      this.domNodes.push(domNode);
     }
   }
 
