@@ -46,7 +46,7 @@ Code block node widget
       }
 
       // patch: must be called after postrender
-      domNode.className = 'relative group';
+      domNode.className = 'relative group p-1';
       codeNode.textContent && domNode.appendChild(copyButton);
       copyButton?.classList?.add(...classNames.split(' '));
       // BUG: plugin template has extra filetype text/plain ??? 这个模板用到了codeblock ???
