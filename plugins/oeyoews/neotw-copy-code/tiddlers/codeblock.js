@@ -1,0 +1,92 @@
+/*\
+title: $:/core/modules/widgets/codeblock.js
+type: application/javascript
+module-type: widget
+
+Code block node widget
+
+\*/
+(function () {
+  /*jslint node: true, browser: true */
+  /*global $tw: false */
+  'use strict';
+
+  var Widget = require('$:/core/modules/widgets/widget.js').widget;
+
+  class CodeBlockWidget extends Widget {
+    constructor(parseTreeNode, options) {
+      super(parseTreeNode, options);
+    }
+
+    render(parent, nextSibling) {
+      if (!$tw.browser) return;
+
+      this.parentDomNode = parent;
+      this.computeAttributes();
+      this.execute();
+
+      const domNode = this.document.createElement('pre');
+      const codeNode = this.document.createElement('code');
+      const fileType = this.language;
+      const classNames =
+        'absolute fixed top-0 right-0 delay-200 bg-transparent hover:bg-gray-200 transition-all duration-600 ease-in-out p-1 flex flex-row';
+
+      const copyButton = this.document.createElement('button');
+
+      codeNode.appendChild(
+        this.document.createTextNode(this.getAttribute('code')),
+      );
+
+      domNode.appendChild(codeNode);
+
+      parent.insertBefore(domNode, nextSibling);
+      this.domNodes.push(domNode);
+
+      if (this.postRender) {
+        this.postRender();
+      }
+
+      // patch: must be called after postrender
+      domNode.className = 'relative group';
+      codeNode.textContent && domNode.appendChild(copyButton);
+      copyButton?.classList?.add(...classNames.split(' '));
+      copyButton.textContent = fileType || 'copy';
+
+      // icon
+      const fileIcon = this.document.createElement('iconify-icon');
+      const standardIconLanguage =
+        codeNode.className.match(/language-(\w+)/)?.[1] || '';
+      fileIcon.setAttribute('icon', `mdi:language-${standardIconLanguage}`);
+      fileIcon.className = 'mx-1';
+      fileType && copyButton.appendChild(fileIcon);
+
+      copyButton.addEventListener('click', () => {
+        // NOTE: 0.0.0.0:xxx 自动禁用clipboard, 导致无法复制
+        // ~~IOS 并不支持navigator, 目前不打断写兼容代码~~ ???
+        navigator?.clipboard?.writeText(codeNode.textContent).then(() => {
+          copyButton.textContent = 'Copied';
+          setTimeout(() => {
+            copyButton.textContent = fileType || 'copy';
+            fileType && copyButton.appendChild(fileIcon);
+          }, 2000);
+        });
+      });
+    }
+
+    execute() {
+      this.language = this.getAttribute('language');
+    }
+
+    refresh(changedTiddlers) {
+      const changedAttributes = this.computeAttributes();
+      if (changedAttributes.code || changedAttributes.language) {
+        this.refreshSelf();
+        return true;
+      } else {
+        return false;
+      }
+    }
+  }
+
+  exports.codeblock = CodeBlockWidget;
+})();

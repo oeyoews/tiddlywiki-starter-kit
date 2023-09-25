@@ -23,7 +23,7 @@ ${pluginname} widget
       this.computeAttributes();
       this.execute();
 
-      const buttonNode = document.createElement('div');
+      const buttonNode = this.document.createElement('div');
 
       parent.insertBefore(buttonNode, nextSibling);
       this.domNodes.push(buttonNode);

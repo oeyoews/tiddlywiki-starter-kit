@@ -1,7 +1,7 @@
 /*\
 title: $:/plugins/oeyoews/neotw-copy-code/copycode-startup.js
 type: application/javascript
-module-type: startup
+// module-type: startup
 
 copyButton module
 

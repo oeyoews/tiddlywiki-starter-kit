@@ -5,6 +5,9 @@ description: ~Copy Code
 
 !! Neotw Copy Code
 
+> 支持的图标数量取决于hightlight的mapping和mdi图标的交集
+> 重写了codeblock
+
 This plugin is designed to add a copy code button to code blocks in TiddlyWiki, making it easier to copy code snippets with their formatting and indentation intact. In TiddlyWiki, code blocks are typically wrapped in the `<pre>` tag to preserve their formatting and indentation. However, copying the code manually can be inconvenient.
 
 > 这个插件的设计初衷是为了在 TiddlyWiki 中的代码块中添加一个复制代码按钮，使得复制代码片段时能够保留其格式和缩进。在 TiddlyWiki 中，代码块通常会被包裹在 `<pre>` 标签中，以保留其格式和缩进。但是，手动复制代码时会比较麻烦。

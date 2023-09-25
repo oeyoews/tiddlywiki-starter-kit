@@ -1,8 +1,9 @@
 title: $:/plugins/oeyoews/neotw-copy-code/ui
-tags: $:/tags/PageControls
-list-before:
 description: copy code button
 caption: Copy Button
+
+<!-- tags: $:/tags/PageControls -->
+<!-- list-before: -->
 
 \whitespace trim
 <$button message="om-copy-code" tooltip="Copy Code" aria-label="copy" class=<<tv-config-toolbar-class>>>
