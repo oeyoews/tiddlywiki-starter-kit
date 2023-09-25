@@ -61,13 +61,14 @@ neotw-notion-gallery widget
 
       const loadData = (tiddlers) => {
         return tiddlers.slice(0, this.maxCards).map((tiddler) => {
-          const { fields } = wiki.getTiddler(tiddler);
+          const { fields } = wiki.getTiddler(tiddler) || { fields: {} };
+          if (!fields) return;
           let cover = fields[imageField];
           if (!cover || !cover.startsWith('http')) {
             cover = `${imageSource}/${resoultion}?fm=blurhash&${fields.title}`;
           }
           return {
-            title: fields.title,
+            title: fields?.title,
             cover,
           };
         });
@@ -93,6 +94,8 @@ neotw-notion-gallery widget
       const data = loadData(recentTiddlers);
 
       data.forEach(({ title, cover }) => {
+        const isExist = $tw.wiki.tiddlerExists(title);
+        if (!isExist) return;
         container.appendChild(createCard(title, cover, navigate));
       });
 
