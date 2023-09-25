@@ -1,6 +1,5 @@
 FROM node:alpine
 
-# 支持全局安装
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 ENV TIDDLYWIKI_PLUGIN_PATH="/app/plugins"

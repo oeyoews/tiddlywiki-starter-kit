@@ -36,6 +36,10 @@ pnpm start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm
 ```
 </details>
 
+## 如何使用最新的 tiddlywiki-starter-kit
+
+* 克隆这个仓库, 然后运行 `docker-compose build`
+
 ## Deploy :gear:
 
 <!-- https://vercel.com/docs/deploy-button -->

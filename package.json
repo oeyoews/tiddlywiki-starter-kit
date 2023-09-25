@@ -8,8 +8,8 @@
     "build": "./lib/build.ts",
     "vercel-build": "node lib/build.mjs",
     "format": "prettier --write .",
-    "docker:build": "docker build -t oeyoews/tiddlywiki .",
-    "docker:push": "docker push oeyoews/tiddlywiki:latest",
+    "build:docker": "docker-compose build",
+    "docker:push": "docker-compose push",
     "start": "./lib/startup.mjs"
   },
   "dependencies": {

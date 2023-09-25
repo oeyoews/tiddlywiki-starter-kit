@@ -1,7 +1,10 @@
 version: '3' # Docker Compose 版本
 
 services:
-  web:
+  tiddlywiki-starter-kit:
+    build:
+      context: .
+      dockerfile: Dockerfile
     image: oeyoews/tiddlywiki:latest
     # restart: on-failure:3
     ports:
