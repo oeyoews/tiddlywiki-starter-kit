@@ -38,7 +38,7 @@ Code block node widget
         fileType = '';
       }
       const classNames =
-        'absolute scale-0 group-hover:scale-100 overflow-auto fixed top-0 right-0 bg-transparent group-hover:bg-gray-200 transition-all duration-600 ease-in-out p-1 flex flex-row rounded backdrop-blur p-1';
+        'absolute scale-0 group-hover:scale-100 overflow-auto fixed top-0 right-0 bg-transparent group-hover:bg-gray-200 group-hover:dark:bg-gray-700 transition-all duration-600 ease-in-out p-1 flex flex-row rounded backdrop-blur p-1';
 
       const copyButton = this.document.createElement('button');
 
