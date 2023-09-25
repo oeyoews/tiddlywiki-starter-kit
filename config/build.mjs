@@ -43,7 +43,7 @@ export default {
     '$:/StoryList',
   ],
   // 生成 plugin library
-  library: [
+  /* library: [
     '--output',
     `${OUTPUTDIR}/library`,
     '--makelibrary',
@@ -62,7 +62,7 @@ export default {
     'text/plain',
     '--deletetiddlers', // 如果构建失败总是会产生17M的文件
     '[[$:/UpgradeLibrary]] [[$:/UpgradeLibrary/List]]',
-  ],
+  ], */
   /* // Generate plugins json format
   plugins: [
     '--verbose',

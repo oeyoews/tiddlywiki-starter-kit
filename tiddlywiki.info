@@ -9,7 +9,6 @@
     "tiddlywiki/tiddlyweb",
     "tiddlywiki/highlight",
     "tiddlywiki/browser-sniff",
-    "tiddlywiki/pluginlibrary",
     "tiddlywiki/markdown",
     "oeyoews/neotw-image-better",
     "oeyoews/neotw-pwa",
@@ -26,7 +25,6 @@
     "oeyoews/tiddlywiki-daylight",
     "oeyoews/tiddlywiki-videos",
     "oeyoews/neotw",
-    "oeyoews/NPL",
     "oeyoews/tiddlywiki-back-to-top",
     "oeyoews/tiddlywiki-modal-ui",
     "oeyoews/tiddlywiki-publish-tiddler",
@@ -77,26 +75,6 @@
       "tiddlywiki.png",
       "--deletetiddlers",
       "$:/StoryList"
-    ],
-    "library": [
-      "--output",
-      ".tiddlywiki/library",
-      "--makelibrary",
-      "$:/UpgradeLibrary",
-      "--savelibrarytiddlers",
-      "$:/UpgradeLibrary",
-      "[prefix[$:/plugins/oeyoews]] [prefix[$:/themes/nico]]",
-      "recipes/library/tiddlers/",
-      "$:/UpgradeLibrary/List",
-      "--savetiddler",
-      "$:/UpgradeLibrary/List",
-      "recipes/library/tiddlers.json",
-      "--rendertiddler",
-      "$:/plugins/tiddlywiki/pluginlibrary/library.template.html",
-      "index.html",
-      "text/plain",
-      "--deletetiddlers",
-      "[[$:/UpgradeLibrary]] [[$:/UpgradeLibrary/List]]"
     ]
   }
 }

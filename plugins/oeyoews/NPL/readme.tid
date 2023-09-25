@@ -2,3 +2,5 @@ title: $:/plugins/oeyoews/NPL/readme
 description: ~NPL
 
 !! Npl
+
+> 插件库仍然有bug, 如果插件生成的json(一般是readme导致的问题, 或者是图片的格式tid问题)加入了一些特殊符号会导致请求失败, 插件库也无法加载, 目前没有什么好的排查办法,排查较为耗时, 不再构建并维护NPL插件库 2023/09/25
