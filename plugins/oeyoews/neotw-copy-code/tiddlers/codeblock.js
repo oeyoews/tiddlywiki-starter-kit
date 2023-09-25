@@ -87,7 +87,7 @@ Code block node widget
           setTimeout(() => {
             // copyButton.textContent = fileType || 'copy';
             copyButton.textContent = '';
-            fileType && copyButton.appendChild(fileIcon);
+            copyButton.appendChild(fileIcon);
           }, 2000);
         });
       });
