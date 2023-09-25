@@ -9,7 +9,6 @@ const localPlugins = [
   'tiddlywiki/codemirror-mode-markdown',
   'tiddlywiki/codemirror-mode-xml',
   'tiddlywiki/codemirror-mode-javascript',
-  'oeyoews/tiddlywiki-motion',
   'oeyoews/neotw-vimjk',
   'oeyoews/neotw-cli-info',
 ];
@@ -30,6 +29,7 @@ let plugins = [
   // 'tiddlywiki/pluginlibrary',
   'tiddlywiki/markdown',
   'oeyoews/neotw-image-better',
+  'oeyoews/tiddlywiki-motion',
   'oeyoews/neotw-pwa',
   'oeyoews/neotw-error-better',
   'oeyoews/neotw-zen-mode',
