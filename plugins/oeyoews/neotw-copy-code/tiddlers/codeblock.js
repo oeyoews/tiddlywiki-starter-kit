@@ -60,15 +60,15 @@ Code block node widget
         bash: 'gnubash',
         css: 'css3',
         cpp: 'cplusplus',
-        html: 'html5',
         java: 'openjdk',
         ini: 'toml',
         dockerfile: 'docker',
         scss: 'sass',
         makefile: 'cmake',
         sql: 'mysql',
+        // html: 'html5', // html language-xml bug
+        xml: 'html5',
         '': 'tiddlywiki',
-        // html 识别成了xml ???
       };
       if (standardIconLanguage in languageMapping) {
         standardIconLanguage = languageMapping[standardIconLanguage];
