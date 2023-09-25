@@ -11,6 +11,10 @@ description: ~Copy Code
 
 > 这个插件可以极大地提高在 TiddlyWiki 中显示和分享代码的效率和便利性，尤其是在需要频繁复制代码时。
 
+!! TODO
+
+* support filename, such as `main.js`
+
 !! Examples
 
 ```bash
