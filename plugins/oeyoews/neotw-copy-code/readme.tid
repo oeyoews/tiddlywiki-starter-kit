@@ -5,27 +5,14 @@ description: ~Copy Code
 
 !! Neotw Copy Code
 
-> 支持的图标数量取决于hightlight的mapping和mdi图标的交集
+> 支持的图标数量取决于hightlight的mapping和mdi图标的交集(by @iconify plugin)
+
 > 重写了codeblock
-
-This plugin is designed to add a copy code button to code blocks in TiddlyWiki, making it easier to copy code snippets with their formatting and indentation intact. In TiddlyWiki, code blocks are typically wrapped in the `<pre>` tag to preserve their formatting and indentation. However, copying the code manually can be inconvenient.
-
-> 这个插件的设计初衷是为了在 TiddlyWiki 中的代码块中添加一个复制代码按钮，使得复制代码片段时能够保留其格式和缩进。在 TiddlyWiki 中，代码块通常会被包裹在 `<pre>` 标签中，以保留其格式和缩进。但是，手动复制代码时会比较麻烦。
-
-This plugin solves this problem by adding a “Copy Code” button next to the code block. Clicking the button copies the code to the clipboard, and the copied code is also displayed in a popup using the SweetAlert2 plugin, making it easy to verify that the code was copied successfully.
-> 这个插件通过在代码块旁边添加一个“复制代码”按钮来解决这个问题。点击按钮后，代码会被复制到剪贴板中，并且复制的代码也会使用 SweetAlert2 插件在弹出窗口中显示，方便验证代码是否复制成功。
 
 This plugin can greatly improve the efficiency and convenience of displaying and sharing code in TiddlyWiki, especially when you need to copy code frequently.
 > 这个插件可以极大地提高在 TiddlyWiki 中显示和分享代码的效率和便利性，尤其是在需要频繁复制代码时。
 
-The only downside at the moment is that the copy button needs to be manually triggered for display.
-> 目前唯一的缺点是复制按钮需要手动触发才会显示。
-
 !! Example
-
-<$button message="om-copy-code" >
-{{$:/plugins/oeyoews/neotw-copy-code/icon}} Click to show copy code button
-</$button>
 
 ```python
 # Hello World program in Python
@@ -96,25 +83,5 @@ fun main() {
     println("Hello, World!")
 }
 ```
-
-!! TODO
-
-<!-- * update copied icon -->
-<!-- * add viewtoolbar not pagecontrol -->
-<!-- * support hover scroll for code preview -->
-<!-- * update style for button -->
-<!-- * add hover style -->
-* make preview is optional
-* highlight plugin widget code ???
-* add transform style
-* update plugin dependencies
-* float right modify too long code view when hover
-
-* copy code to image
-* support copy image to clipboard
-
-!! Performace
-
-* lazy load button
 
 </div>
