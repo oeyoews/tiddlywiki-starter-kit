@@ -13,6 +13,7 @@
 ## Installation :package:
 
 ```bash
+## 仅作为初始体验方式, 生产环境建议使用 docker-compose 方式
 docker run -d --name tiddlywiki -p 8080:8080 -v $(pwd)/wiki:/app/wiki oeyoews/tiddlywiki:latest tiddlywiki wiki --listen port=8080 host=0.0.0.0
 ```
 
