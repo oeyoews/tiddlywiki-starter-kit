@@ -8,7 +8,7 @@
     A modern style and elegant notebook built with Tiddlywiki5 and Tailwindcss
 </figcaption> -->
 
-> 面向neovim(vim)用户的 tiddlywiki starter kit
+> 面向(neo)vim用户的 tiddlywiki starter kit
 
 ## Installation :package:
 
