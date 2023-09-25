@@ -26,23 +26,19 @@ module.exports = function addCopyButton() {
   }
 
   codeBlocks.forEach((codeBlock) => {
-    // 查找 copybutton 按钮
     const existingButton = codeBlock.querySelector('[data-copy-button]');
-    // 如果已经添加过copybutton, 结束
+
     if (!existingButton) {
       codeBlock.setAttribute('data-copy-button', '');
     } else {
       return;
     }
-    codeBlock.classList.add('relative');
 
-    // TODO: not work
-    // 如果代码为空, 不添加 copybutton 按钮
+    codeBlock.classList.add('relative', 'group');
+
     const codeElement = codeBlock.querySelector('code');
-    if (!codeElement) return;
-
-    // support group with tailwindcss
-    codeBlock.classList.add('group');
+    // if not have any code, dont add copybutton, show codside only have pre, but no code tag error
+    if (!codeElement?.textContent) return;
 
     // 获取 code 语言类型
     const fileType = codeElement.className.match(/language-(\w+)/)?.[1] || '';
