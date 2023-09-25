@@ -49,7 +49,7 @@ Code block node widget
       domNode.className = 'relative group p-1';
       codeNode.textContent && domNode.appendChild(copyButton);
       copyButton?.classList?.add(...classNames.split(' '));
-      // BUG: plugin template has extra filetype text/plain ??? 这个模板用到了codeblock ???
+      // https://tiddlywiki.com/#View%20Template%20Body%20Cascade:%5B%5BView%20Template%20Body%20Cascade%5D%5D%20%24%3A%2Fcore%2Fui%2FViewTemplate%2Fbody%2Fplugin
       // copyButton.textContent = fileType || 'copy';
 
       // icon
