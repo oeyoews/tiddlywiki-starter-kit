@@ -83,9 +83,10 @@ Code block node widget
         // NOTE: 0.0.0.0:xxx 自动禁用clipboard, 导致无法复制
         // ~~IOS 并不支持navigator, 目前不打断写兼容代码~~ ???
         navigator?.clipboard?.writeText(codeNode.textContent).then(() => {
-          copyButton.textContent = 'Copied';
+          copyButton.textContent = '✅';
           setTimeout(() => {
-            copyButton.textContent = fileType || 'copy';
+            // copyButton.textContent = fileType || 'copy';
+            copyButton.textContent = '';
             fileType && copyButton.appendChild(fileIcon);
           }, 2000);
         });
