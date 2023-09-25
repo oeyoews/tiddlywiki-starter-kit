@@ -26,13 +26,14 @@ module.exports = function addCopyButton() {
   }
 
   codeBlocks.forEach((codeBlock) => {
-    // codeBlock.addEventListener('mouseenter', () => {
-    //   console.log('updated');
-    // });
     // 查找 copybutton 按钮
-    const existingButton = codeBlock.querySelector('.copy-button');
+    const existingButton = codeBlock.querySelector('[data-copy-button]');
     // 如果已经添加过copybutton, 结束
-    if (existingButton) return;
+    if (!existingButton) {
+      codeBlock.setAttribute('data-copy-button', '');
+    } else {
+      return;
+    }
     codeBlock.classList.add('relative');
 
     // TODO: not work
@@ -46,7 +47,7 @@ module.exports = function addCopyButton() {
     // 获取 code 语言类型
     const fileType = codeElement.className.match(/language-(\w+)/)?.[1] || '';
     // opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100
-    const classNames = `absolute fixed top-0 right-0 copy-button delay-200 float-right bg-transparent hover:bg-gray-200 transition-all duration-600 ease-in-out p-1 flex flex-row`;
+    const classNames = `absolute fixed top-0 right-0 delay-200 bg-transparent hover:bg-gray-200 transition-all duration-600 ease-in-out p-1 flex flex-row`;
 
     // 添加 copybutton
     const copyButton = $tw.utils.domMaker('button', {
@@ -61,13 +62,13 @@ module.exports = function addCopyButton() {
 
     copyButton.addEventListener('click', () => {
       // NOTE: 0.0.0.0:xxx 自动禁用clipboard, 导致无法复制
-      // ~~IOS 并不支持navigator, 目前不打断写兼容代码~~
+      // ~~IOS 并不支持navigator, 目前不打断写兼容代码~~ ???
       navigator?.clipboard?.writeText(codeElement.textContent).then(() => {
         copyButton.textContent = 'Copied';
         setTimeout(() => {
           copyButton.textContent = fileType || 'copy';
           fileType && copyButton.appendChild(fileIcon);
-        }, 1000);
+        }, 2000);
       });
     });
 
