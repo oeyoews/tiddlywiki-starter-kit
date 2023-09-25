@@ -54,11 +54,29 @@ Code block node widget
 
       // icon
       const fileIcon = this.document.createElement('iconify-icon');
-      const standardIconLanguage =
+      let standardIconLanguage =
         codeNode.className.match(/language-(\w+)/)?.[1] || '';
-      fileIcon.setAttribute('icon', `mdi:language-${standardIconLanguage}`);
+      const languageMapping = {
+        bash: 'gnubash',
+        css: 'css3',
+        cpp: 'cplusplus',
+        html: 'html5',
+        java: 'openjdk',
+        ini: 'toml',
+        dockerfile: 'docker',
+        scss: 'sass',
+        makefile: 'cmake',
+        sql: 'mysql',
+        '': 'tiddlywiki',
+        // html 识别成了xml ???
+      };
+      if (standardIconLanguage in languageMapping) {
+        standardIconLanguage = languageMapping[standardIconLanguage];
+      }
+
+      fileIcon.setAttribute('icon', `simple-icons:${standardIconLanguage}`);
       fileIcon.className = 'mx-1';
-      fileType && copyButton.appendChild(fileIcon);
+      copyButton.appendChild(fileIcon);
 
       copyButton.addEventListener('click', () => {
         // NOTE: 0.0.0.0:xxx 自动禁用clipboard, 导致无法复制

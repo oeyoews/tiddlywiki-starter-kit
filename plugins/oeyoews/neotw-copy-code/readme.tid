@@ -5,84 +5,249 @@ description: ~Copy Code
 
 !! Neotw Copy Code
 
-> 支持的图标数量取决于hightlight的mapping和mdi图标的交集(by @iconify plugin)
+> 图标支持的 highlgiht 识别的全部语言
 
-> 重写了codeblock
-
-This plugin can greatly improve the efficiency and convenience of displaying and sharing code in TiddlyWiki, especially when you need to copy code frequently.
+> This plugin can greatly improve the efficiency and convenience of displaying and sharing code in TiddlyWiki, especially when you need to copy code frequently.
 
 > 这个插件可以极大地提高在 TiddlyWiki 中显示和分享代码的效率和便利性，尤其是在需要频繁复制代码时。
 
-!! Example
+!! Examples
 
-```python
-# Hello World program in Python
-print("Hello, World!")
-```
-
-```java
-// Hello World program in Java
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
-```
-
-```javascript
-// Hello World program in JavaScript
-console.log("Hello, World!");
+```bash
+#!/bin/bash
+echo "Hello, TiddlyWiki!"
 ```
 
 ```c
-/* Hello World program in C */
 #include <stdio.h>
+
 int main() {
-    printf("Hello, World!");
+    printf("Hello, TiddlyWiki!\n");
     return 0;
 }
 ```
 
 ```cpp
-// Hello World program in C++
 #include <iostream>
+
 int main() {
-    std::cout << "Hello, World!";
+    std::cout << "Hello, TiddlyWiki!" << std::endl;
     return 0;
 }
 ```
 
-```ruby
-# Hello World program in Ruby
-puts "Hello, World!"
+```csharp
+using System;
+
+class Program {
+    static void Main(string[] args) {
+        Console.WriteLine("Hello, TiddlyWiki!");
+    }
+}
 ```
 
-```php
-<?php
-// Hello World program in PHP
-echo "Hello, World!";
-?>
-```
-
-```swift
-// Hello World program in Swift
-print("Hello, World!")
+```css
+/* index.css */
+body::before {
+    content: "Hello, TiddlyWiki!";
+}
 ```
 
 ```go
-// Hello World program in Go
 package main
+
 import "fmt"
+
 func main() {
-    fmt.Println("Hello, World!")
+    fmt.Println("Hello, TiddlyWiki!")
+}
+```
+
+```html
+<!DOCTYPE html5>
+<html>
+<head>
+    <title>Hello, TiddlyWiki!</title>
+</head>
+<body>
+    <h1>Hello, TiddlyWiki!</h1>
+</body>
+</html>
+```
+
+```java
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, TiddlyWiki!");
+    }
+}
+```
+
+```javascript
+console.log("Hello, TiddlyWiki!");
+```
+
+```json
+{
+  "message": "Hello, TiddlyWiki!"
 }
 ```
 
 ```kotlin
-// Hello World program in Kotlin
 fun main() {
-    println("Hello, World!")
+    println("Hello, TiddlyWiki!")
 }
 ```
 
-</div>
+```less
+@message: "Hello, TiddlyWiki!";
+body::before {
+    content: @message;
+}
+```
+
+```lua
+print("Hello, TiddlyWiki!")
+```
+
+```makefile
+hello:
+    @echo "Hello, TiddlyWiki!"
+```
+
+```markdown
+# Hello, TiddlyWiki!
+```
+
+```objective-c
+#import <Foundation/Foundation.h>
+
+int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+        NSLog(@"Hello, TiddlyWiki!");
+    }
+    return 0;
+}
+```
+
+```perl
+print "Hello, TiddlyWiki!\n";
+```
+
+```php
+<?php
+echo "Hello, TiddlyWiki!";
+?>
+```
+
+```
+Hello, TiddlyWiki!
+```
+
+```python
+print("Hello, TiddlyWiki!")
+```
+
+```r
+cat("Hello, TiddlyWiki!\n")
+```
+
+```ruby
+puts "Hello, TiddlyWiki!"
+```
+
+```rust
+fn main() {
+    println!("Hello, TiddlyWiki!");
+}
+```
+
+```scss
+$greeting: "Hello, TiddlyWiki!";
+
+body::before {
+    content: $greeting;
+}
+```
+
+```sql
+SELECT 'Hello, TiddlyWiki!';
+```
+
+```
+$ echo "Hello, TiddlyWiki!"
+```
+
+```swift
+import Swift
+
+print("Hello, TiddlyWiki!")
+```
+
+```toml
+message = "Hello, TiddlyWiki!"
+```
+
+```typescript
+console.log("Hello, TiddlyWiki!");
+```
+
+```vb
+Module HelloWorld
+    Sub Main()
+        Console.WriteLine("Hello, TiddlyWiki!")
+    End Sub
+End Module
+```
+
+```xml
+<root>
+    <message>Hello, TiddlyWiki!</message>
+</root>
+```
+
+```yaml
+message: Hello, TiddlyWiki!
+```
+
+```apache
+# httpd.conf
+ServerName localhost
+
+<VirtualHost *:80>
+    DocumentRoot "/path/to/www"
+    ServerName example.com
+</VirtualHost>
+```
+
+```dockerfile
+FROM nginx:latest
+
+COPY index.html /usr/share/nginx/html/index.html
+```
+
+```fortran
+program HelloWorld
+    print *, "Hello, TiddlyWiki!"
+end program HelloWorld
+```
+
+```latex
+\documentclass{article}
+
+\begin{document}
+Hello, TiddlyWiki!
+\end{document}
+```
+
+```nginx
+server {
+    listen 80;
+    server_name example.com;
+
+    location / {
+        root /var/www/html;
+        index index.html;
+    }
+}
+```
