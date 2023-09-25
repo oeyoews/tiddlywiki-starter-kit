@@ -50,7 +50,8 @@ Code block node widget
       domNode.className = 'relative group';
       codeNode.textContent && domNode.appendChild(copyButton);
       copyButton?.classList?.add(...classNames.split(' '));
-      copyButton.textContent = fileType || 'copy';
+      // BUG: plugin template has extra filetype text/plain ??? 这个模板用到了codeblock ???
+      // copyButton.textContent = fileType || 'copy';
 
       // icon
       const fileIcon = this.document.createElement('iconify-icon');
