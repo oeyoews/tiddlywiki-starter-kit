@@ -30,7 +30,7 @@ Code block node widget
       const code = this.getAttribute('code', '');
       // const fileType = this.language;
       const classNames =
-        'absolute fixed top-0 right-0 delay-200 bg-transparent hover:bg-gray-200 transition-all duration-600 ease-in-out p-1 flex flex-row rounded-bl-full backdrop-blur pb-2 pl-2';
+        'absolute overflow-auto fixed top-0 right-0 delay-200 bg-transparent group-hover:bg-gray-200 transition-all duration-600 ease-in-out p-1 flex flex-row rounded backdrop-blur p-1';
 
       const copyButton = this.document.createElement('button');
 
@@ -80,14 +80,13 @@ Code block node widget
 
       copyButton.addEventListener('click', () => {
         // NOTE: 0.0.0.0:xxx 自动禁用clipboard, 导致无法复制
-        // ~~IOS 并不支持navigator, 目前不打断写兼容代码~~ ???
         navigator?.clipboard?.writeText(codeNode.textContent).then(() => {
-          copyButton.classList.add('text-purple-400');
+          copyButton.textContent = 'copied';
           setTimeout(() => {
-            // copyButton.textContent = fileType || 'copy';
-            copyButton.classList.remove('text-purple-400');
+            console.log('update');
+            copyButton.textContent = '';
             copyButton.appendChild(fileIcon);
-          }, 2000);
+          }, 1000);
         });
       });
     }
