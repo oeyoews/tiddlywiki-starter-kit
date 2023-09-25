@@ -33,6 +33,7 @@ module.exports = function addCopyButton() {
     const existingButton = codeBlock.querySelector('.copy-button');
     // 如果已经添加过copybutton, 结束
     if (existingButton) return;
+    codeBlock.classList.add('relative');
 
     // TODO: not work
     // 如果代码为空, 不添加 copybutton 按钮
@@ -45,9 +46,7 @@ module.exports = function addCopyButton() {
     // 获取 code 语言类型
     const fileType = codeElement.className.match(/language-(\w+)/)?.[1] || '';
     // opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100
-    const classNames = `copy-button delay-200 float-right bg-transparent hover:bg-gray-200 transition-all duration-600 ease-in-out p-1 flex flex-row ${
-      fileType ? '' : '-m-4'
-    }`;
+    const classNames = `absolute fixed top-0 right-0 copy-button delay-200 float-right bg-transparent hover:bg-gray-200 transition-all duration-600 ease-in-out p-1 flex flex-row`;
 
     // 添加 copybutton
     const copyButton = $tw.utils.domMaker('button', {
