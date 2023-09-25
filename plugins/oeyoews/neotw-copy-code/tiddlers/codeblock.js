@@ -29,7 +29,12 @@ Code block node widget
       const codeNode = this.document.createElement('code');
       const code = this.getAttribute('code', '');
       let fileType = this.language;
-      if (fileType === 'text/plain') {
+      // 排除一些文件类型, 不要修改默认输出, 比如会影响text/css, 导致样式失效
+      if (
+        fileType.startsWith('text/') ||
+        fileType.startsWith('image/') ||
+        fileType.startsWith('application/')
+      ) {
         fileType = '';
       }
       const classNames =
