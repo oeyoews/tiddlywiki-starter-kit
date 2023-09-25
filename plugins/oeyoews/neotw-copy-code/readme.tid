@@ -17,18 +17,6 @@ description: ~Copy Code
 
 !! Examples
 
-```markdown
-# H1
-
-## H2
-
-1. list
-2. lsit
-
-`inline-code`
-
-```
-
 ```bash
 #!/bin/bash
 echo "Hello, TiddlyWiki!"
