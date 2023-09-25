@@ -59,12 +59,18 @@ Code block node widget
       copyButton?.classList?.add(...classNames.split(' '));
       // https://tiddlywiki.com/#View%20Template%20Body%20Cascade:%5B%5BView%20Template%20Body%20Cascade%5D%5D%20%24%3A%2Fcore%2Fui%2FViewTemplate%2Fbody%2Fplugin
       // https://talk.tiddlywiki.org/t/how-highlight-js-works-on-codeblock/8083/11
+      /* 你可以这样写成 main.js, 但是目前highlgith.js 不识别文件类型
+      bug: text/vnd.tiddlywiki 不能正常渲染main.js, markdown工作正常
+      patch:
+      var tokens = language.split('.');
+      language = tokens[tokens.length - 1]; */
       copyButton.textContent = fileType;
 
       // icon
       const fileIcon = this.document.createElement('iconify-icon');
       let standardIconLanguage =
         codeNode.className.match(/language-(\w+)/)?.[1] || '';
+      // simple-icons some special language mapping
       const languageMapping = {
         bash: 'gnubash',
         css: 'css3',
