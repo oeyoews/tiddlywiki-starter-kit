@@ -27,15 +27,14 @@ Code block node widget
 
       const domNode = this.document.createElement('pre');
       const codeNode = this.document.createElement('code');
-      const fileType = this.language;
+      const code = this.getAttribute('code', '');
+      // const fileType = this.language;
       const classNames =
         'absolute fixed top-0 right-0 delay-200 bg-transparent hover:bg-gray-200 transition-all duration-600 ease-in-out p-1 flex flex-row';
 
       const copyButton = this.document.createElement('button');
 
-      codeNode.appendChild(
-        this.document.createTextNode(this.getAttribute('code')),
-      );
+      codeNode.appendChild(this.document.createTextNode(code));
 
       domNode.appendChild(codeNode);
 
