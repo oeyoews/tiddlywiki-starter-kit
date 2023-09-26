@@ -28,3 +28,7 @@
   padding: 16px;
 	cursor: auto;
 }
+
+.tc-tiddler-frame img {
+  border-radius: 0.375rem;
+}

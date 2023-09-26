@@ -45,7 +45,7 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
       let alt = this.getAttribute('alt', 'Avatar');
       const hash = md5(email.trim().toLowerCase());
 
-      let src = `https://gravatar.com/avatar/${hash}.png?d=identicon&s=${size}`;
+      let src;
 
       const types = {
         qq: 'https://q1.qlogo.cn/g?b=qq&nk=${email}&s=${size}',
@@ -55,11 +55,14 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
         url,
       };
 
-      const type = this.getAttribute('type');
-      // 如果url为空,则url无效
+      const type = this.getAttribute('type', 'gravatar');
       if (types[type]) {
         src = types[type];
       }
+
+      types[type]?.includes(type)
+        ? (src = types[type])
+        : (src = types.gravatar);
 
       const img = new Image();
       const dynamicClasses = ['blur', 'scale-105'];
