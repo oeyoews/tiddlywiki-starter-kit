@@ -52,9 +52,6 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
         case 'github':
           src = `https://github.com/${username}.png?size=${size}`;
           break;
-        case 'gravatar':
-          src = `https://gravatar.com/avatar/${hash}.png?d=identicon&s=${size}`;
-          break;
         case 'gravatar-cn':
           src = `https://cn.gravatar.com/avatar/${hash}.png?s=${size}`;
           break;
@@ -73,7 +70,7 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
         img.classList.add(
           'block',
           'mx-auto',
-          'shadow-lg',
+          'shadow-md',
           'border-dashed',
           'border',
           'border-indigo-400',
@@ -85,7 +82,7 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
         img.classList.remove(...dynamicClasses);
       };
       img.setAttribute('alt', alt);
-      img.title = "Click to open this user's profile";
+      // img.title = "Click to open this user's profile";
 
       let domNode = img;
       if (link) {

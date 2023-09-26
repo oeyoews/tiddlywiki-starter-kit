@@ -61,7 +61,9 @@ Code block node widget
       // https://talk.tiddlywiki.org/t/how-highlight-js-works-on-codeblock/8083/11
       /* 你可以这样写成 main.js, 但是目前highlgith.js 不识别文件类型
       bug: text/vnd.tiddlywiki 不能正常渲染main.js, markdown工作正常
+      bug: but this editor cannot recognize correct code type, need modify relate rules
       patch:
+      or pop
       var tokens = language.split('.');
       language = tokens[tokens.length - 1]; */
       copyButton.textContent = fileType;
