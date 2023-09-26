@@ -3,7 +3,9 @@ type: text/markdown
 
 <div class="prose max-w-none prose-indigo">
 
-## Neotw Icons
+## Neotw Iconify Icons
+
+> 支持原生Tag(iconify-icon)和widget(iconify)
 
 > iconify 将缓存的svg 数据放在了localstorage里面, 所以加载很快, 不会每次都进行网络请求
 
@@ -11,7 +13,7 @@ type: text/markdown
 
 <center>
 
-<iconify-icon icon="skill-icons:react-dark" title="React"/>
+<$iconify icon="skill-icons:react-dark" title="React"/>
 <iconify-icon icon="simple-icons:tiddlywiki"  title="TiddlyWiki"/>
 <iconify-icon icon="flat-color-icons:approval"  title="Approval"/>
 <iconify-icon icon="vscode-icons:file-type-js-official" title="JS"/>
@@ -25,7 +27,7 @@ type: text/markdown
 </center>
 
 ```html
-<iconify-icon icon="skill-icons:react-dark" />
+<$iconify icon="skill-icons:react-dark" title="React"/>
 <iconify-icon icon="simple-icons:tiddlywiki"   />
 <iconify-icon icon="flat-color-icons:approval"  />
 <iconify-icon icon="vscode-icons:file-type-js-official" />

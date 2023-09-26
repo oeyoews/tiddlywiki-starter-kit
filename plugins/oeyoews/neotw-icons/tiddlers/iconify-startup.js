@@ -11,7 +11,7 @@ iconify module
   /*global $tw: false */
   'use strict';
 
-  exports.name = 'iconify-startup-hook';
+  exports.name = 'iconify-startup';
   exports.platforms = ['browser'];
   exports.after = ['startup'];
   exports.synchronous = true;

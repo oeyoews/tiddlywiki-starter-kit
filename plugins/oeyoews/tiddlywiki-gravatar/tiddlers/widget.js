@@ -37,6 +37,7 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
       const url = this.getAttribute('url', '');
       const username = this.getAttribute('username', Username);
       let isCenter = this.getAttribute('center');
+      const inline = this.getAttribute('inline');
       const link = this.getAttribute('link');
       let className = this.getAttribute('class', 'w-12');
       const email = this.getAttribute('email', getDefaultEmail);
@@ -66,10 +67,14 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
 
       const img = new Image();
       const dynamicClasses = ['blur', 'scale-105'];
-      const imgClass = `rounded-full align-middle m-1 duration-200 transition object-cover object-center ${className}`;
+      const imgClass = `rounded-full align-middle duration-200 transition object-cover object-center ${className}`;
       img.className = imgClass;
       img.classList.add(...dynamicClasses);
       img.setAttribute('src', src);
+      if (inline) {
+        img.classList.remove('w-12');
+        img.classList.add('mx-0', 'w-4');
+      }
       if (isCenter) {
         img.classList.add(
           'block',
@@ -79,7 +84,6 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
           'border',
           'border-indigo-400',
           'p-1',
-          'delay-200',
         );
       }
       img.setAttribute('data-type', type);

@@ -13,47 +13,28 @@ neotw-icons widget
 
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
 
-  class DivWidget extends Widget {
+  class IconsWidget extends Widget {
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
     }
 
     render(parent, nextSibling) {
-      if (!$tw.browser) return;
-
       this.parentDomNode = parent;
       this.computeAttributes();
       this.execute();
 
-      const param = this.getAttribute('param', 'Test Param');
-      const classNames = this.getAttribute('class', '').split('');
+      const title = this.getAttribute('title');
+      const style = this.getAttribute('style');
 
-      const buttonNode = $tw.utils.domMaker('button', {
-        text: param,
-        class: '',
-        attributes: {},
-        children: [],
-        eventListeners: [
-          {
-            name: 'click',
-            handlerObject: this,
-            handlerMethod: 'handlerClick',
-          },
-        ],
-      });
-      classNames.forEach((className) => {
-        if (className) {
-          buttonNode.classList.add(className);
-        }
-      });
-      parent.insertBefore(buttonNode, nextSibling);
-      this.domNodes.push(buttonNode);
+      const iconNode = this.document.createElement('iconify-icon');
+      iconNode.setAttribute('icon', this.getAttribute('icon'));
+      iconNode.style = style;
+      iconNode.title = title;
+
+      parent.insertBefore(iconNode, nextSibling);
+      this.domNodes.push(iconNode);
     }
-
-    handlerClick = () => {
-      console.log('This require just load once');
-    };
   }
 
-  exports[''] = DivWidget;
+  exports['iconify'] = IconsWidget;
 })();
