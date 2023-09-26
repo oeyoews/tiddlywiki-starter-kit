@@ -45,26 +45,21 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
       let alt = this.getAttribute('alt', 'Avatar');
       const hash = md5(email.trim().toLowerCase());
 
-      const types = [
-        { key: 'qq', url: `https://q1.qlogo.cn/g?b=qq&nk=${email}&s=${size}` },
-        {
-          key: 'github',
-          url: `https://github.com/${username}.png?size=${size}`,
-        },
-        {
-          key: 'gravatar-cn',
-          url: `https://cn.gravatar.com/avatar/${hash}.png?s=${size}`,
-        },
-        {
-          key: 'url',
-          url,
-        },
-      ];
-
       let src = `https://gravatar.com/avatar/${hash}.png?d=identicon&s=${size}`;
+
+      const types = {
+        qq: 'https://q1.qlogo.cn/g?b=qq&nk=${email}&s=${size}',
+        github: `https://github.com/${username}.png?size=${size}`,
+        gravatar: `https://gravatar.com/avatar/${hash}.png?s=${size}`,
+        gravatar_cn: `https://cn.gravatar.com/avatar/${hash}.png?s=${size}`,
+        url,
+      };
+
       const type = this.getAttribute('type');
-      const matchedType = types.find((item) => item.key === type);
-      matchedType && (src = matchedType.url);
+      // 如果url为空,则url无效
+      if (types[type]) {
+        src = types[type];
+      }
 
       const img = new Image();
       const dynamicClasses = ['blur', 'scale-105'];
@@ -84,6 +79,13 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
           'delay-200',
         );
       }
+      img.setAttribute('data-type', type);
+      // 考虑图片加载失败, 但是不考虑图片加载超时(offline)
+      img.onerror = () => {
+        img.classList.remove(...dynamicClasses);
+        img.src =
+          'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=identicon&s=100';
+      };
       img.onload = () => {
         img.classList.remove(...dynamicClasses);
       };
