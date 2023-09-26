@@ -33,32 +33,38 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
       const Username =
         $tw.wiki.getTiddlerText('$:/status/UserName') || 'oeyoews';
 
+      /** @example url="./files/xxx.png" url="https://xxx.png" */
+      const url = this.getAttribute('url', '');
       const username = this.getAttribute('username', Username);
       let isCenter = this.getAttribute('center');
       const link = this.getAttribute('link');
       let className = this.getAttribute('class', 'w-12');
-      let type = this.getAttribute('type');
-      let email = this.getAttribute('email', getDefaultEmail);
+      const email = this.getAttribute('email', getDefaultEmail);
 
       let size = this.getAttribute('size', '100');
       let alt = this.getAttribute('alt', 'Avatar');
-      let src = `https://q1.qlogo.cn/g?b=qq&nk=${email}&s=${size}`;
       const hash = md5(email.trim().toLowerCase());
 
-      switch (type) {
-        case 'qq':
-          src = `https://q1.qlogo.cn/g?b=qq&nk=${email}&s=${size}`;
-          break;
-        case 'github':
-          src = `https://github.com/${username}.png?size=${size}`;
-          break;
-        case 'gravatar-cn':
-          src = `https://cn.gravatar.com/avatar/${hash}.png?s=${size}`;
-          break;
-        default:
-          src = `https://gravatar.com/avatar/${hash}.png?d=identicon&s=${size}`;
-          break;
-      }
+      const types = [
+        { key: 'qq', url: `https://q1.qlogo.cn/g?b=qq&nk=${email}&s=${size}` },
+        {
+          key: 'github',
+          url: `https://github.com/${username}.png?size=${size}`,
+        },
+        {
+          key: 'gravatar-cn',
+          url: `https://cn.gravatar.com/avatar/${hash}.png?s=${size}`,
+        },
+        {
+          key: 'url',
+          url,
+        },
+      ];
+
+      let src = `https://gravatar.com/avatar/${hash}.png?d=identicon&s=${size}`;
+      const type = this.getAttribute('type');
+      const matchedType = types.find((item) => item.key === type);
+      matchedType && (src = matchedType.url);
 
       const img = new Image();
       const dynamicClasses = ['blur', 'scale-105'];
@@ -82,7 +88,6 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
         img.classList.remove(...dynamicClasses);
       };
       img.setAttribute('alt', alt);
-      // img.title = "Click to open this user's profile";
 
       let domNode = img;
       if (link) {

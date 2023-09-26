@@ -31,9 +31,9 @@ Code block node widget
       let fileType = this.language;
       // 排除一些文件类型, 不要修改默认输出, 比如会影响text/css, 导致样式失效
       if (
-        fileType.startsWith('text/') ||
-        fileType.startsWith('image/') ||
-        fileType.startsWith('application/')
+        fileType?.startsWith('text/') ||
+        fileType?.startsWith('image/') ||
+        fileType?.startsWith('application/')
       ) {
         fileType = '';
       }
@@ -101,7 +101,6 @@ Code block node widget
         navigator?.clipboard?.writeText(codeNode.textContent).then(() => {
           copyButton.textContent = 'copied';
           setTimeout(() => {
-            console.log('update');
             copyButton.textContent = fileType;
             copyButton.appendChild(fileIcon);
           }, 1000);
@@ -110,7 +109,8 @@ Code block node widget
     }
 
     execute() {
-      this.language = this.getAttribute('language');
+      // 不能为undefined, 否则 使用obj 的一些方法会报错(@highlightjs)
+      this.language = this.getAttribute('language', '');
     }
 
     refresh(changedTiddlers) {
