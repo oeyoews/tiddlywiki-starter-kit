@@ -44,6 +44,17 @@ description: 卡片视图
 
 <!-- 事实证明js写的widget更具有扩展性,灵活性 -->
 
-!! TODO
+!! v1.TODO
 
-1. add dynamic filter interface
+1. sort(filter): add dynamic filter interface
+2. peek: 实现peek, 支持全屏, tm-modal可以借鉴, 但是全屏还是要另外想办法
+3. tag: tag可点击, 可以修改tag
+4. dropmenu: 支持tiddler的删除,复制(clone), 链接复制, 重命名, star(favourite 提供支持)
+5. UI: 添加title(支持修改), tag(tag manager)
+6. 支持新增tiddler
+7. search: current filter tiddler search
+8. view: 支持gallary-table的切换, 支持字段可视化实时编辑
+
+> 这里绝对保证不了1:1完全复刻notion
+
+> ps: notion 的功能太花哨了(复刻到tiddlywiki需要很多精力), 如果想要更好的体验, 可以直接使用notion
