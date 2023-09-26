@@ -9,6 +9,8 @@ type: text/markdown
 
 > iconify 将缓存的svg 数据放在了localstorage里面, 所以加载很快, 不会每次都进行网络请求
 
+<!-- https://github.com/iconify/iconify/tree/main/iconify-icon/icon -->
+
 ## Usage
 
 <center>

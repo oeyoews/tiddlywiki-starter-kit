@@ -25,11 +25,15 @@ neotw-icons widget
 
       const title = this.getAttribute('title');
       const style = this.getAttribute('style');
+      const classNames = this.getAttribute('class');
 
       const iconNode = this.document.createElement('iconify-icon');
       iconNode.setAttribute('icon', this.getAttribute('icon'));
       iconNode.style = style;
       iconNode.title = title;
+      iconNode.className = 'align-middle';
+      // 此处使用? 没有用在...
+      classNames && iconNode.classList.add(...classNames?.split(' '));
 
       parent.insertBefore(iconNode, nextSibling);
       this.domNodes.push(iconNode);
