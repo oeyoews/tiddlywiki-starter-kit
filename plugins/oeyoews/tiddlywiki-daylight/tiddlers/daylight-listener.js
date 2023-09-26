@@ -31,7 +31,7 @@ function preset(event) {
 }
 
 function updateMode(mode) {
-  document.documentElement.className = mode;
+  document.documentElement.classList.toggle('dark', mode === 'dark');
   // Palette
   const palette = mode === 'dark' ? darkPalette : lightPalette;
   $tw.wiki.setText('$:/palette', 'text', null, palette);

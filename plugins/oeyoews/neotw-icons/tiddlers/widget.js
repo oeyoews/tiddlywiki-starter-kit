@@ -23,7 +23,7 @@ neotw-icons widget
       this.computeAttributes();
       this.execute();
 
-      const title = this.getAttribute('title');
+      const title = this.getAttribute('title', '');
       const style = this.getAttribute('style');
       const classNames = this.getAttribute('class');
 
