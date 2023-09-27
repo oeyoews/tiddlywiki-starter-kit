@@ -46,6 +46,7 @@ description: 卡片视图
 
 !! v1.TODO
 
+* 图片默认启用, 或者部分可选择性启用, 图片加载速度较慢
 * 🟩 icon: 不使用icon字段(改用page-icon),这里借助iconify插件
 * 🟥 sort(filter): add dynamic filter interface
 * 🟥 peek: 实现peek, 支持全屏, tm-modal可以借鉴, 但是全屏还是要另外想办法square

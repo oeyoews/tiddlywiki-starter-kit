@@ -22,7 +22,6 @@ module.exports = function createCard(title, cover, clickEvents, icon) {
           img.title = '';
           image.classList.remove(...dynamicClassNames);
           img.classList.add('cursor-pointer');
-          item.appendChild(contentNode);
         };
         observer.unobserve(image); // 加载后取消监测
       }
@@ -40,7 +39,7 @@ module.exports = function createCard(title, cover, clickEvents, icon) {
   item.classList.add(...itemClassList.split(' '));
   const contentNode = document.createElement('div');
   const galleryTitleClassList =
-    'delay-100 text-lg cursor-pointer flex justify-center items-center truncate m-0 absolute inset-0 backdrop-blur-lg text-black rounded-md scale-0 ease-in-out transition-all group-hover:scale-105';
+    'delay-100 text-lg cursor-pointer flex justify-center items-center truncate m-0 absolute inset-0 backdrop-blur-lg text-black rounded-md ease-in-out transition-all scale-0 group-hover:scale-105';
   const galleryTitle = document.createElement('h3');
   galleryTitle.className = galleryTitleClassList;
   contentNode.appendChild(galleryTitle);
@@ -79,6 +78,7 @@ module.exports = function createCard(title, cover, clickEvents, icon) {
 
   // img.src = 'favicon.ico';
   item.appendChild(img);
+  item.appendChild(contentNode);
 
   observer.observe(img);
 
