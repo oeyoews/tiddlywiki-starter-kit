@@ -16,7 +16,7 @@ neotw-notion-gallery widget
   const createCard = require('./createCard');
   const config = require('./config');
 
-  class cardsWidget extends Widget {
+  class CardsWidget extends Widget {
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
       this.maxCards = config.maxCards;
@@ -52,9 +52,9 @@ neotw-notion-gallery widget
 
       // update realfilter
       this.realFilter = this.getAttribute('filter', this.defaultFilter);
-      const recentTiddlers = this.removedFilterDraftTiddlers();
+      const cardsTiddlers = this.removedFilterDraftTiddlers();
 
-      const loadData = (tiddlers) => {
+      const prepareCardData = (tiddlers) => {
         return tiddlers.slice(0, this.maxCards).map((tiddler) => {
           const { fields } = wiki.getTiddler(tiddler) || { fields: {} };
           if (!fields) return;
@@ -82,13 +82,13 @@ neotw-notion-gallery widget
       );
 
       // TODO: 分页
-      if (recentTiddlers.length > this.maxCards) {
+      if (cardsTiddlers.length > this.maxCards) {
         console.warn(
-          `${recentTiddlers.length} 张卡片即将渲染, 超过最大限制 ${this.maxCards}, 仅渲染前三十张卡片 @neotw-notion-gallery`,
+          `${cardsTiddlers.length} 张卡片即将渲染, 超过最大限制 ${this.maxCards}, 仅渲染前三十张卡片 @neotw-notion-gallery`,
         );
       }
 
-      const data = loadData(recentTiddlers);
+      const data = prepareCardData(cardsTiddlers);
 
       data.forEach(({ title, cover, icon }) => {
         container.appendChild(createCard(title, cover, navigate, icon));
@@ -101,12 +101,12 @@ neotw-notion-gallery widget
     // 如果更新或者添加了新的tiddler, 则需要重新渲染
     isChanged(changedTiddlers) {
       // 获取最新的tiddlers列表
-      let recentTiddlers = this.removedFilterDraftTiddlers();
+      let cardsTiddlers = this.removedFilterDraftTiddlers();
       const { filteredTiddlers: valuesToCheck, notExistTiddlers } =
         this.removedDraftTiddlers(Object.keys(changedTiddlers));
 
       let isChanged = valuesToCheck.some((value) =>
-        recentTiddlers.includes(value),
+        cardsTiddlers.includes(value),
       );
       // TODO: 如果删除了tiddler, 需要监听长度的变化进行渲染
       // 可以存储第一次渲染的tiddler列表, 如果删除则需要重新渲染, 但是这样不利于以后扩展动态filter
@@ -126,6 +126,7 @@ neotw-notion-gallery widget
       let notExistTiddlers = [];
 
       const filteredTiddlers = filterTiddlers.filter((title) => {
+        // 如果不是用户条目, 即使存在也会返回false
         const isExist = $tw.wiki.tiddlerExists(title);
 
         if (!isExist) {
@@ -160,5 +161,5 @@ neotw-notion-gallery widget
    * @description notion-gallery widget
    * @param {string} filter
    */
-  exports.cards = cardsWidget;
+  exports.cards = CardsWidget;
 })();
