@@ -22,7 +22,7 @@ module.exports = function createCard(title, cover, clickEvents, icon) {
           img.title = '';
           image.classList.remove(...dynamicClassNames);
           img.classList.add('cursor-pointer');
-          item.appendChild(h3);
+          item.appendChild(contentNode);
         };
         observer.unobserve(image); // 加载后取消监测
       }
@@ -38,35 +38,21 @@ module.exports = function createCard(title, cover, clickEvents, icon) {
   const itemClassList =
     'flex flex-col items-center justify-center p-0 group relative';
   item.classList.add(...itemClassList.split(' '));
-  const h3 = document.createElement('h3');
+  const contentNode = document.createElement('div');
+  const galleryTitleClassList =
+    'delay-100 text-lg cursor-pointer flex justify-center items-center truncate m-0 absolute inset-0 backdrop-blur-lg text-white rounded-md scale-0 ease-in-out transition-all group-hover:scale-105';
+  const galleryTitle = document.createElement('h3');
+  galleryTitle.className = galleryTitleClassList;
+  contentNode.appendChild(galleryTitle);
   const iconify = document.createElement('iconify-icon');
   iconify.classList.add('mx-1');
   // icon
   iconify.setAttribute('icon', icon || 'simple-icons:tiddlywiki');
 
-  h3.title = '点击查看';
-  h3.classList.add(
-    'delay-100',
-    'text-lg',
-    'cursor-pointer',
-    'flex',
-    'justify-center',
-    'items-center',
-    'truncate',
-    'm-0',
-    'inset-0',
-    'absolute',
-    'backdrop-blur-lg',
-    'text-white',
-    'rounded-md',
-    'scale-0',
-    'ease-in-out',
-    'transition-all',
-    'group-hover:scale-105',
-  );
-  h3.textContent = title;
-  h3.addEventListener('click', () => navigate(title));
-  h3.appendChild(iconify);
+  galleryTitle.title = '点击查看';
+  galleryTitle.textContent = title;
+  galleryTitle.addEventListener('click', () => navigate(title));
+  galleryTitle.appendChild(iconify);
   const img = document.createElement('img');
   // 动态懒加载图片的数量取决于视图的宽度和高度, 不是可见视图, 所以需要使用IntersectionObserver 来监测
   img.loading = 'lazy';
