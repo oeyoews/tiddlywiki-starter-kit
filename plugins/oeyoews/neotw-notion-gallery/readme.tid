@@ -46,14 +46,15 @@ description: 卡片视图
 
 !! v1.TODO
 
-*  sort(filter): add dynamic filter interface
-*  peek: 实现peek, 支持全屏, tm-modal可以借鉴, 但是全屏还是要另外想办法
-*  tag: tag可点击, 可以修改tag
-*  dropmenu: 支持tiddler的删除,复制(clone), 链接复制, 重命名, star(favourite 提供支持)
-*  UI: 添加title(支持修改), tag(tag manager)
-*  支持新增tiddler
-*  search: current filter tiddler search
-*  view: 支持gallary-table的切换, 支持字段可视化实时编辑
+* 🟩 icon: 不使用icon字段(改用page-icon),这里借助iconify插件
+* 🟥 sort(filter): add dynamic filter interface
+* 🟥 peek: 实现peek, 支持全屏, tm-modal可以借鉴, 但是全屏还是要另外想办法square
+* 🟥 tag: tag可点击, 可以修改tag
+* 🟥 dropmenu: 支持tiddler的删除,复制(clone), 链接复制, 重命名, star(favourite 提供支持)
+* 🟥 UI: 添加title(支持修改), tag(tag manager)
+* 🟥 支持新增tiddler
+* 🟥 search: current filter tiddler search
+* 🟥 view: 支持gallary-table的切换, 支持字段可视化实时编辑
 
 > 这里绝对保证不了1:1完全复刻notion
 

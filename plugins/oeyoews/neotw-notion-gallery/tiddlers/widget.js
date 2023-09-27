@@ -64,12 +64,14 @@ neotw-notion-gallery widget
           const { fields } = wiki.getTiddler(tiddler) || { fields: {} };
           if (!fields) return;
           let cover = fields[imageField];
+          let icon = fields['page-icon'];
           if (!cover || !cover.startsWith('http')) {
             cover = `${imageSource}/${resoultion}?fm=blurhash&${fields.title}`;
           }
           return {
             title: fields?.title,
             cover,
+            icon,
           };
         });
       };
@@ -93,10 +95,10 @@ neotw-notion-gallery widget
 
       const data = loadData(recentTiddlers);
 
-      data.forEach(({ title, cover }) => {
+      data.forEach(({ title, cover, icon }) => {
         const isExist = $tw.wiki.tiddlerExists(title);
         if (!isExist) return;
-        container.appendChild(createCard(title, cover, navigate));
+        container.appendChild(createCard(title, cover, navigate, icon));
       });
 
       parent.insertBefore(container, nextSibling);

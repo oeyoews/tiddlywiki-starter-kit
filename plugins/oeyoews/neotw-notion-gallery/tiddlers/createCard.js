@@ -5,7 +5,7 @@ module-type: library
 
 \*/
 /** create card */
-module.exports = function createCard(title, cover, clickEvents) {
+module.exports = function createCard(title, cover, clickEvents, icon) {
   const options = {
     root: null,
     rootMargin: '0px',
@@ -45,6 +45,11 @@ module.exports = function createCard(title, cover, clickEvents) {
     'p-0',
   );
   const h3 = document.createElement('h3');
+  const iconify = document.createElement('iconify-icon');
+  iconify.classList.add('mx-1');
+  // icon
+  iconify.setAttribute('icon', icon || 'simple-icons:tiddlywiki');
+
   h3.title = '点击查看';
   h3.classList.add(
     'delay-100',
@@ -67,6 +72,7 @@ module.exports = function createCard(title, cover, clickEvents) {
   );
   h3.textContent = title;
   h3.addEventListener('click', () => navigate(title));
+  h3.appendChild(iconify);
   const img = document.createElement('img');
   // 动态懒加载图片的数量取决于视图的宽度和高度, 不是可见视图, 所以需要使用IntersectionObserver 来监测
   img.loading = 'lazy';
