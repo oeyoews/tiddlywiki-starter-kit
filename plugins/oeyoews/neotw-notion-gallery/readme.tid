@@ -54,7 +54,7 @@ description: 卡片视图
 * 🟥 UI: 添加title(支持修改), tag(tag manager)
 * 🟥 支持新增tiddler
 * 🟥 search: current filter tiddler search
-* 🟥 view: 支持gallary-table的切换, 支持字段可视化实时编辑
+* 🟥 view: 支持gallary-table-magazine的切换, 支持字段可视化实时编辑
 
 > 如果过于复杂并且有时间的话,可能会引入xstate进行状态管理
 
