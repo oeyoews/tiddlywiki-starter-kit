@@ -126,7 +126,7 @@ neotw-notion-gallery widget
       let notExistTiddlers = [];
 
       const filteredTiddlers = filterTiddlers.filter((title) => {
-        // 如果不是用户条目, 即使存在也会返回false
+        // NOTE: 如果是系统条目, 即使存在也会返回false
         const isExist = $tw.wiki.tiddlerExists(title);
 
         if (!isExist) {
