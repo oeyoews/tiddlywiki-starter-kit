@@ -40,7 +40,6 @@ let plugins = [
   'oeyoews/neotw-markdown-extensions',
   'oeyoews/neotw-swal2',
   'oeyoews/neotw-copy-code',
-  'oeyoews/tiddlywiki-cards',
   'oeyoews/tiddlywiki-daylight',
   'oeyoews/tiddlywiki-videos',
   'oeyoews/neotw',
