@@ -35,15 +35,9 @@ module.exports = function createCard(title, cover, clickEvents, icon) {
 
   const navigate = clickEvents;
 
-  item.classList.add(
-    'flex',
-    'flex-col',
-    'items-center',
-    'justify-center',
-    'group',
-    'relative',
-    'p-0',
-  );
+  const itemClassList =
+    'flex flex-col items-center justify-center p-0 group relative';
+  item.classList.add(...itemClassList.split(' '));
   const h3 = document.createElement('h3');
   const iconify = document.createElement('iconify-icon');
   iconify.classList.add('mx-1');

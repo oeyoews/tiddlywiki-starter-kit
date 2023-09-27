@@ -72,14 +72,10 @@ neotw-notion-gallery widget
       };
 
       const container = document.createElement('div');
-      container.classList.add(
-        'grid',
-        'grid-cols-1',
-        'sm:grid-cols-2',
-        'md:grid-cols-3',
-        'gap-8',
-        'm-4',
-      );
+      const containerClassList =
+        'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 m-4';
+      // 其实可以直接使用classNames
+      container.classList.add(...containerClassList.split(' '));
 
       // TODO: 分页
       if (cardsTiddlers.length > this.maxCards) {
