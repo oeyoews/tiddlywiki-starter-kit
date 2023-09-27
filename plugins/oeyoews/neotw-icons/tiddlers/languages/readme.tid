@@ -5,6 +5,8 @@ type: text/markdown
 
 ## Neotw Iconify Icons
 
+Iconify 是一个开放的图标集合项目，由多个图标提供商共同贡献图标。目前，Iconify 项目收录了超过 100,000 个图标，涵盖了各种不同的主题和用途。
+
 > 支持原生Tag(iconify-icon)和widget(iconify)
 
 > iconify 将缓存的svg 数据放在了localstorage里面, 所以加载很快, 不会每次都进行网络请求
