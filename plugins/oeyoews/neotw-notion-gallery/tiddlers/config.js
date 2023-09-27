@@ -5,7 +5,7 @@ module-type: library
 
 \*/
 module.exports = {
-  defaultFilter: '[!is[system]!has[draft.of]!sort[modified]limit[9]]',
+  defaultFilter: '[!is[system]!sort[modified]limit[9]]',
   imageField: 'page-cover',
   // minCards: 9,
   maxCards: 30,

@@ -21,6 +21,7 @@ neotw-notion-gallery widget
       super(parseTreeNode, options);
       this.maxCards = config.maxCards;
       this.defaultFilter = config.defaultFilter;
+      this.realFilter = null;
       this.state = {
         tiddlersLength: null,
       };
@@ -52,12 +53,12 @@ neotw-notion-gallery widget
 
       const { imageField, resoultion, imageSource } = config;
 
-      // 初始化
-      this.state.tiddlersLength = this.getFilterLength();
-
       // TODO: 支持filter interface ui
-      const filter = this.getAttribute('filter', this.defaultFilter);
-      const recentTiddlers = wiki.filterTiddlers(filter);
+      this.realFilter = this.getAttribute('filter', this.defaultFilter);
+      const filter = this.realFilter;
+      const recentTiddlers = wiki.filterTiddlers(filter).filter((tiddler) => {
+        return !tiddler.fields?.['draft.of'];
+      });
 
       const loadData = (tiddlers) => {
         return tiddlers.slice(0, this.maxCards).map((tiddler) => {
@@ -105,22 +106,30 @@ neotw-notion-gallery widget
       this.domNodes.push(container);
     }
 
-    removedNumberFilter(filter) {
-      return filter.replace(/limit\[\d+\]/g, '');
+    // 如果更新tiddler进行重新渲染
+    isChanged(changedTiddlers) {
+      // 获取最新的tiddlers列表
+      let recentTiddlers = $tw.wiki
+        .filterTiddlers(this.realFilter)
+        .filter((title) => {
+          // 必须过滤draft, 否则会一直刷新
+          return !title.startsWith('Draft of');
+        });
+      const valuesToCheck = Object.keys(changedTiddlers).filter((title) => {
+        return !(title.startsWith('$:/') || title.startsWith('Draft of'));
+      });
+
+      const isChanged = valuesToCheck.some((value) =>
+        recentTiddlers.includes(value),
+      );
+      return isChanged;
     }
 
-    getFilterLength() {
-      return $tw.wiki.filterTiddlers(
-        this.removedNumberFilter(this.defaultFilter),
-      ).length;
-    }
-
-    // 如果新增或者删除tiddler, 进行重新渲染(重命名不会)
-    refresh() {
-      let tiddlersLength = this.getFilterLength(); // 获取最新值
-      if (tiddlersLength !== this.state.tiddlersLength) {
+    refresh(changedTiddlers) {
+      console.log(changedTiddlers);
+      const isChanged = this.isChanged(changedTiddlers);
+      if (isChanged) {
         this.refreshSelf(); // 重新渲染
-        this.state.tiddlersLength = tiddlersLength; // update tiddlers length
       }
     }
   }
