@@ -11,7 +11,7 @@ ${pluginname} widget
   /*global $tw: false */
   'use strict';
 
-  const Widget = require('$:/core/modules/widgets/widget.js').widget;
+  const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 
   class DivWidget extends Widget {
     constructor(parseTreeNode, options) {

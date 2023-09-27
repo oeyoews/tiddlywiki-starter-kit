@@ -12,7 +12,7 @@ neotw-notion-gallery widget
   /*global $tw: false */
   'use strict';
 
-  const Widget = require('$:/core/modules/widgets/widget.js').widget;
+  const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
   const createCard = require('./createCard');
   const config = require('./config');
 
@@ -22,9 +22,6 @@ neotw-notion-gallery widget
       this.maxCards = config.maxCards;
       this.defaultFilter = config.defaultFilter;
       this.realFilter = null;
-      this.state = {
-        tiddlersLength: null,
-      };
     }
 
     render(parent, nextSibling) {
@@ -53,12 +50,9 @@ neotw-notion-gallery widget
 
       const { imageField, resoultion, imageSource } = config;
 
-      // TODO: 支持filter interface ui
+      // update realfilter
       this.realFilter = this.getAttribute('filter', this.defaultFilter);
-      const filter = this.realFilter;
-      const recentTiddlers = wiki.filterTiddlers(filter).filter((tiddler) => {
-        return !tiddler.fields?.['draft.of'];
-      });
+      const recentTiddlers = this.removedFilterDraftTiddlers();
 
       const loadData = (tiddlers) => {
         return tiddlers.slice(0, this.maxCards).map((tiddler) => {
@@ -97,8 +91,6 @@ neotw-notion-gallery widget
       const data = loadData(recentTiddlers);
 
       data.forEach(({ title, cover, icon }) => {
-        const isExist = $tw.wiki.tiddlerExists(title);
-        if (!isExist) return;
         container.appendChild(createCard(title, cover, navigate, icon));
       });
 
@@ -106,27 +98,57 @@ neotw-notion-gallery widget
       this.domNodes.push(container);
     }
 
-    // 如果更新tiddler进行重新渲染
+    // 如果更新或者添加了新的tiddler, 则需要重新渲染
     isChanged(changedTiddlers) {
       // 获取最新的tiddlers列表
-      let recentTiddlers = $tw.wiki
-        .filterTiddlers(this.realFilter)
-        .filter((title) => {
-          // 必须过滤draft, 否则会一直刷新
-          return !title.startsWith('Draft of');
-        });
-      const valuesToCheck = Object.keys(changedTiddlers).filter((title) => {
-        return !(title.startsWith('$:/') || title.startsWith('Draft of'));
-      });
+      let recentTiddlers = this.removedFilterDraftTiddlers();
+      const { filteredTiddlers: valuesToCheck, notExistTiddlers } =
+        this.removedDraftTiddlers(Object.keys(changedTiddlers));
 
-      const isChanged = valuesToCheck.some((value) =>
+      let isChanged = valuesToCheck.some((value) =>
         recentTiddlers.includes(value),
       );
+      // TODO: 如果删除了tiddler, 需要监听长度的变化进行渲染
+      // 可以存储第一次渲染的tiddler列表, 如果删除则需要重新渲染, 但是这样不利于以后扩展动态filter
+      // 如果删除了tiddler,就重新渲染, 无视过滤器
+      if (notExistTiddlers.length) {
+        isChanged = true;
+      }
       return isChanged;
     }
 
+    /**
+     * @description remove draft.of tiddler
+     * @param {Array} filterTiddlers
+     */
+
+    removedDraftTiddlers(filterTiddlers) {
+      let notExistTiddlers = [];
+
+      const filteredTiddlers = filterTiddlers.filter((title) => {
+        const isExist = $tw.wiki.tiddlerExists(title);
+
+        if (!isExist) {
+          notExistTiddlers.push(title);
+          return false;
+        }
+
+        return !(title.startsWith('$:/') || title.startsWith('Draft of'));
+      });
+
+      return { filteredTiddlers, notExistTiddlers };
+    }
+
+    /**
+     * @description remove draft.of tiddler
+     * @param {string} realFilter
+     */
+    removedFilterDraftTiddlers(realFilter = this.realFilter) {
+      const filterTiddlers = $tw.wiki.filterTiddlers(realFilter);
+      return this.removedDraftTiddlers(filterTiddlers).filteredTiddlers;
+    }
+
     refresh(changedTiddlers) {
-      console.log(changedTiddlers);
       const isChanged = this.isChanged(changedTiddlers);
       if (isChanged) {
         this.refreshSelf(); // 重新渲染
