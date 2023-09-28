@@ -1,2 +1,8 @@
 title: $:/plugins/oeyoews/neotw-reverse-card/readme
 description: neotw-reverse-card
+
+<$rcard />
+
+```
+<$rcard question="xxx" answer="xxx" />
+```
