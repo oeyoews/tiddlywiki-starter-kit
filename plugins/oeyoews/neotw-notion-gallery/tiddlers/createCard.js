@@ -12,6 +12,10 @@ module.exports = function createCard(title, cover, clickEvents, icon) {
     threshold: 0.3, // 当图片50%进入可视区域时加载
   };
 
+  const createElement = (tag) => {
+    return document.createElement(tag);
+  };
+
   function callback(entries, observer) {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -30,20 +34,20 @@ module.exports = function createCard(title, cover, clickEvents, icon) {
 
   const observer = new IntersectionObserver(callback, options);
 
-  const item = document.createElement('div');
+  const item = createElement('div');
 
   const navigate = clickEvents;
 
   const itemClassList =
     'flex flex-col items-center justify-center p-0 group relative';
   item.classList.add(...itemClassList.split(' '));
-  const contentNode = document.createElement('div');
+  const contentNode = createElement('div');
   const galleryTitleClassList =
     'delay-100 text-lg cursor-pointer flex justify-center items-center truncate m-0 absolute inset-0 backdrop-blur-lg text-black rounded-md ease-in-out transition-all scale-0 group-hover:scale-105';
-  const galleryTitle = document.createElement('h3');
+  const galleryTitle = createElement('h3');
   galleryTitle.className = galleryTitleClassList;
   contentNode.appendChild(galleryTitle);
-  const iconify = document.createElement('iconify-icon');
+  const iconify = createElement('iconify-icon');
   iconify.classList.add('mx-1');
   // icon
   iconify.setAttribute('icon', icon || 'simple-icons:tiddlywiki');
@@ -52,7 +56,7 @@ module.exports = function createCard(title, cover, clickEvents, icon) {
   galleryTitle.textContent = title;
   galleryTitle.addEventListener('click', () => navigate(title));
   galleryTitle.appendChild(iconify);
-  const img = document.createElement('img');
+  const img = createElement('img');
   // 动态懒加载图片的数量取决于视图的宽度和高度, 不是可见视图, 所以需要使用IntersectionObserver 来监测
   img.loading = 'lazy';
   const dynamicClassNames = [

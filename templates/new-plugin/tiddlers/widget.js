@@ -13,7 +13,7 @@ ${pluginname} widget
 
   const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 
-  class DivWidget extends Widget {
+  class ExampleWidget extends Widget {
     constructor(parseTreeNode, options) {
       super(parseTreeNode, options);
     }
@@ -23,10 +23,19 @@ ${pluginname} widget
       this.computeAttributes();
       this.execute();
 
-      const buttonNode = this.document.createElement('div');
+      const createElement = $tw.utils.domMaker;
+      const btn = createElement('button', {
+        text: 'click me',
+        class: 'rounded p-1',
+      });
+      const domNode = createElement('div', {
+        text: 'example',
+        class: 'underline font-bold',
+        children: [btn],
+      });
 
-      parent.insertBefore(buttonNode, nextSibling);
-      this.domNodes.push(buttonNode);
+      parent.insertBefore(domNode, nextSibling);
+      this.domNodes.push(domNode);
     }
   }
 
@@ -34,5 +43,5 @@ ${pluginname} widget
    * @description ${pluginname} widget
    * @param xxx
    */
-  exports.test = DivWidget;
+  exports.test = ExampleWidget;
 })();
