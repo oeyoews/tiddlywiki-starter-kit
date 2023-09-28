@@ -149,6 +149,9 @@ neotw-notion-gallery widget
       const isChanged = this.isChanged(changedTiddlers);
       if (isChanged) {
         this.refreshSelf(); // 重新渲染
+        return true;
+      } else {
+        return false;
       }
     }
   }
