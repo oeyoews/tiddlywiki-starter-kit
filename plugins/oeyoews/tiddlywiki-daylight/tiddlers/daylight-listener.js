@@ -10,6 +10,8 @@ localStorage.theme =
   $tw.wiki.getTiddlerText('$:/config/theme-mode') || 'system'; // 如果修改配置, 重启生效
 const currentMode = localStorage.theme;
 
+// 注意: 手动切换和自动切换要共享状态,与此同时还要遵循用户的配置
+
 // 需要浏览器和操作系统支持
 let isDarkMode = $tw.wiki.getTiddlerText('$:/info/darkmode') === 'yes'; // let isDarkMode = darkMode?.matches;
 
