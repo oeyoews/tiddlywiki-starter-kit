@@ -6,23 +6,23 @@ module-type: library
 Daylight Listener Module
 \*/
 
-localStorage.theme =
-  $tw.wiki.getTiddlerText('$:/config/theme-mode') || 'system'; // 如果修改配置, 重启生效
-const currentMode = localStorage.theme;
-
 // 注意: 手动切换和自动切换要共享状态,与此同时还要遵循用户的配置
-
-// 需要浏览器和操作系统支持
-let isDarkMode = $tw.wiki.getTiddlerText('$:/info/darkmode') === 'yes'; // let isDarkMode = darkMode?.matches;
-const mediaQuery = window.matchMedia?.('(prefers-color-scheme: dark)');
-const systemIsDarkMode = mediaQuery?.matches;
 
 // 配置默认调色板
 const lightPalette = '$:/themes/nico/notebook/palettes/palette-beige';
 const darkPalette = '$:/palettes/GithubDark';
 
+localStorage.theme =
+  $tw.wiki.getTiddlerText('$:/config/theme-mode') || 'system'; // 如果修改配置, 重启生效
+const currentMode = localStorage.theme;
+
+// 需要浏览器和操作系统支持
+const mediaQuery = window.matchMedia?.('(prefers-color-scheme: dark)');
+// 后续使用 isDarkmode 存储最新的模式
+let isDarkMode = $tw.wiki.getTiddlerText('$:/info/darkmode') === 'yes'; // or mediaQuery.matches
+
 function preset() {
-  const systemMode = systemIsDarkMode ? 'dark' : 'light';
+  const systemMode = isDarkMode ? 'dark' : 'light';
   const mode = currentMode === 'system' ? systemMode : currentMode;
   updateMode(mode);
 }
@@ -48,7 +48,6 @@ function toggleMode() {
 function checkModeListener() {
   preset(mediaQuery); // NOTE: this will change your palette
   mediaQuery?.addEventListener?.('change', () => {
-    console.log(systemIsDarkMode);
     const systemMode = mediaQuery.matches ? 'dark' : 'light';
     if (systemMode !== 'dark') {
       isDarkMode = false;
