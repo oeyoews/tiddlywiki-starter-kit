@@ -28,14 +28,12 @@ function preset() {
 }
 
 function updateMode(mode) {
-  // 使用toggle,第一次需要多按一次,也可以remove, add
   document.documentElement.classList.toggle('dark', mode === 'dark');
   const palette = mode === 'dark' ? darkPalette : lightPalette;
   $tw.wiki.setText('$:/palette', 'text', null, palette);
   localStorage.theme = mode;
 }
 
-// 自动切换后,如果进行手动切换需要多按一次,状态没有很好的更新
 function toggleMode() {
   const NProgress = require('nprogress.min.js'); // This step may cause an error due to plugin loading order; NProgress might not be loaded yet, so manual loading is needed.
   NProgress?.start();
