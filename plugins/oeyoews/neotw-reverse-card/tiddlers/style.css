@@ -1,0 +1,22 @@
+.card {
+  perspective: 1000px;
+  display: inline-block;
+}
+
+.card-inner {
+  width: 400px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  backface-visibility: hidden;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
