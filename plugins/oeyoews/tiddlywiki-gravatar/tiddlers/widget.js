@@ -26,6 +26,7 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
       this.computeAttributes();
       this.execute();
 
+      const createElement = $tw.utils.domMaker;
       let getDefaultEmail =
         $tw.wiki.getTiddlerText(
           '$:/config/plugins/oeyoews/tiddlywiki-gravatar/email',
@@ -58,10 +59,6 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
         url,
       };
 
-      if (types[type]) {
-        src = types[type];
-      }
-
       types[type]?.includes(type)
         ? (src = types[type])
         : (src = types.gravatar);
@@ -76,21 +73,13 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
         img.classList.remove('w-12');
         img.classList.add('mx-0', 'w-4');
       }
-      if (isCenter) {
-        img.classList.add(
-          'block',
-          'mx-auto',
-          'shadow-md',
-          'border-dashed',
-          'border',
-          'border-indigo-400',
-          'p-1',
-        );
-      }
-      img.setAttribute('data-type', type);
+      const tempClassList =
+        'mx-auto shadow-md border-dashed border block border-indigo-400 p-1';
+      isCenter && img.classList.add(...tempClassList.split(' '));
+      types[type]?.includes(type) && img.setAttribute('data-type', type);
       // 考虑图片加载失败, 但是不考虑图片加载超时(offline)
       img.onerror = () => {
-        console.log(src, '图片加载失败');
+        console.warn(src, '图片加载失败');
         img.classList.remove(...dynamicClasses);
         img.src =
           'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=identicon&s=100';
@@ -102,7 +91,7 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
 
       let domNode = img;
       if (link) {
-        domNode = $tw.utils.domMaker('a', {
+        domNode = createElement('a', {
           attributes: {
             target: '_blank',
             rel: 'noopener noreferrer',
