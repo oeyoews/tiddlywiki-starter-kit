@@ -12,7 +12,7 @@ Command Palette Widget
 
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
   const getTiddlersWithTag = require('./lib/getTiddlersWithTag');
-  const createElement = require('./lib/createElement');
+  const createElement = $tw.utils.domMaker;
   const getActiveElement = require('./lib/getActiveElement');
   const focusAtCaretPosition = require('./lib/focusAtCaretPosition');
   const getCurrentSelection = require('./lib/getCurrentSelection');
@@ -482,44 +482,32 @@ Command Palette Widget
       );
 
       let inputAndMainHintWrapper = createElement('div', {
-        className: 'flex justify-center items-center p-2',
+        class: 'flex justify-center items-center p-2',
       });
       // pointer-events-none fix z-index bug
       // backdrop-blur not effect with bg-neutral-600
-      this.mask = createElement(
-        'div',
-        {
-          className:
-            'backdrop-blur-lg z-[9998] fixed inset-0 bg-black/20 transition-all pointer-events-none cursor-pointer',
-        },
-        {
-          opacity: 0,
-        },
-      );
-      this.container = createElement(
-        'div',
-        // add transform
-        {
-          className:
-            'bg-white flex-col z-[9999] transform shadow-lg p-2 mt-4 fixed left-1/2 -translate-x-1/2 w-1/2 rounded transition-all dark:invert w-3/4 md:w-1/2',
-        },
-        { display: 'none' },
-      );
+      this.mask = createElement('div', {
+        class:
+          'opacity-0 backdrop-blur-lg z-[9998] fixed inset-0 bg-black/20 transition-all pointer-events-none cursor-pointer',
+      });
+      this.container = createElement('div', {
+        class:
+          'hidden bg-white flex-col z-[9999] transform shadow-lg p-2 mt-4 fixed left-1/2 -translate-x-1/2 w-1/2 rounded transition-all dark:invert w-3/4 md:w-1/2',
+      });
       // if add type: "text", google-chrome always tip
-      this.searchContainer = createElement('input', { type: '' });
-      this.searchContainer.classList.add(
-        'w-full',
-        'shadow-none',
-        'border-none',
-        'dark:invert',
-      );
-      this.searchContainer.placeholder = '🔥 Search ...';
+      this.searchContainer = createElement('input', {
+        type: '',
+        class: 'w-full shadow-none border-none dark:invert',
+        attributes: {
+          placeholder: '🔥 Search ...',
+        },
+      });
       this.searchHint = createElement('div', {
-        className: 'commandpalettehint commandpalettehintmain',
+        class: 'commandpalettehint commandpalettehintmain',
       });
       inputAndMainHintWrapper.append(this.searchHint, this.searchContainer);
       this.scrollDiv = createElement('div', {
-        className: 'cp-scroll',
+        class: 'cp-scroll',
       });
       this.container.append(inputAndMainHintWrapper, this.scrollDiv);
       this.searchContainer.addEventListener('keydown', (e) =>
@@ -723,9 +711,12 @@ Command Palette Widget
       }
       this.currentSelection = 0;
       this.onInput(this.searchContainer.value); //Trigger results on open
-      this.container.style.display = 'flex ';
+      /** dynamic start*/
+      this.container.classList.add('flex');
+      this.container.classList.remove('hidden');
       this.mask.classList.remove('pointer-events-none');
-      this.mask.style.opacity = '1';
+      this.mask.classList.add('opacity-100');
+      /** dynamic end */
       this.mask.addEventListener('scroll', (e) => e.stopPropagation());
       // 打开命令面板时, 禁用滚动
       document.body.style.overflow = 'hidden';
@@ -757,10 +748,11 @@ Command Palette Widget
     }
 
     closePalette() {
-      this.container.style.display = 'none';
-      this.mask.style.opacity = '0';
+      this.mask.classList.remove('opacity-100');
       this.mask.classList.add('pointer-events-none');
-      // this.mask.classList.remove('translate-y-40')
+      this.container.classList.remove('flex');
+      this.container.classList.add('hidden');
+
       this.isOpened = false;
       focusAtCaretPosition(
         this.previouslyFocused.element,
@@ -813,13 +805,13 @@ Command Palette Widget
     }
     addResult(result, id) {
       let resultDiv = createElement('div', {
-        className: 'commandpaletteresult py-2 rounded',
-        innerText: result.name,
+        class: 'commandpaletteresult py-2 rounded',
+        text: result.name,
       });
       if (result.hint !== undefined) {
         let hint = createElement('div', {
-          className: 'commandpalettehint text-neutral-600',
-          innerText: result.hint,
+          class: 'commandpalettehint text-neutral-600',
+          text: result.hint,
         });
         resultDiv.append(hint);
       }
