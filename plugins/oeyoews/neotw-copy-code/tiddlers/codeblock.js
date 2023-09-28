@@ -99,7 +99,7 @@ Code block node widget
       if (href.includes('0.0.0.0')) {
         copyButton?.classList?.add('cursor-not-allowed');
         copyButton.disabled = true;
-        copyButton.title = `${href} 没有粘贴版权限`;
+        copyButton.title = `${href} 剪切板不可用`;
       }
 
       copyButton.addEventListener('click', () => {
