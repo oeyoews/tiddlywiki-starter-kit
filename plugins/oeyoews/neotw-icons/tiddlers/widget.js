@@ -31,9 +31,8 @@ neotw-icons widget
       iconNode.setAttribute('icon', this.getAttribute('icon'));
       iconNode.style = style;
       iconNode.title = title;
-      iconNode.className = 'align-middle';
-      // 此处使用? 没有用在...
-      classNames && iconNode.classList.add(...classNames?.split(' '));
+      iconNode.className = classNames;
+      iconNode.classList.add('align-middle');
 
       parent.insertBefore(iconNode, nextSibling);
       this.domNodes.push(iconNode);
