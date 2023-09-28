@@ -8,12 +8,12 @@ Daylight Listener Module
 
 // 注意: 手动切换和自动切换要共享状态,与此同时还要遵循用户的配置
 
-// 配置默认调色板
-const lightPalette = '$:/themes/nico/notebook/palettes/palette-beige';
-const darkPalette = '$:/palettes/GithubDark';
+const { darkPalette, lightPalette, system } = $tw.wiki.getTiddlerData(
+  '$:/plugins/oeyoews/tiddlywiki-daylight/config.json',
+);
 
-localStorage.theme =
-  $tw.wiki.getTiddlerText('$:/config/theme-mode') || 'system'; // 如果修改配置, 重启生效
+localStorage.theme = system;
+
 const currentMode = localStorage.theme;
 
 // 需要浏览器和操作系统支持
@@ -44,7 +44,7 @@ function toggleMode() {
 }
 
 function checkModeListener() {
-  preset(mediaQuery); // NOTE: this will change your palette
+  preset(mediaQuery);
   mediaQuery?.addEventListener?.('change', () => {
     const systemMode = mediaQuery.matches ? 'dark' : 'light';
     if (systemMode !== 'dark') {
