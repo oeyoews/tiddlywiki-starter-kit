@@ -1,58 +1,67 @@
 // TODO: fix popup position
 // navigator.clipboard.writeText no need permissions ???
 function emojiComponent() {
-  var form = document.createElement('form');
-  form.className = 'flex justify-center items-center mb-4';
-  form.onsubmit = function (event) {
-    event.preventDefault();
-  };
+  const createElement = $tw.utils.domMaker
 
   // Create label element
-  var label = document.createElement('label');
+  const label = createElement('label', {
+    text: ''
+  });
   label.htmlFor = 'emoji-input';
-  label.innerText = '';
 
   // Create input element
-  var input = document.createElement('input');
-  input.type = 'text';
-  input.id = 'emoji-input';
-  input.oninput = function (event) {
+  var input = createElement('input', {
+    class: 'px-4 py-2 border-none rounded shadow-sm focus:outline-none w-4/5',
+    attributes: {
+      type: 'text',
+      id: 'emoji-input'
+    }
+  });
+  input.oninput = function(event) {
     debouncedSearchEmoji(event);
   };
-  input.className =
-    'px-4 py-2 border-none rounded shadow-sm focus:outline-none w-4/5';
 
   const placeholder = $tw.wiki.getTiddlerText(
     '$:/language/emoji-picker/placeholder',
   );
   input.placeholder = placeholder;
 
-  // Create button element
-  var button = document.createElement('button');
-  button.type = 'button';
+  const button = createElement('button', {
+    text: '🍃',
+    class: 'bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 mx-2 rounded shadow w-auto cursor-pointer',
+    attributes: {
+      type: 'button',
+      title: 'Clear'
+    }
+  });
   button.onclick = clearSearch;
-  button.className =
-    'bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 mx-2 rounded shadow w-auto cursor-pointer';
-  button.textContent = '🍃';
-  button.title = 'Clear';
 
-  // Append label, input, and button to form
-  form.appendChild(label);
-  form.appendChild(input);
-  form.appendChild(button);
+  const form = createElement('form', {
+    class: 'flex justify-center items-center mb-4',
+    children: [label, input, button]
+  })
+
+  form.onsubmit = function(event) {
+    event.preventDefault();
+  };
 
   // Create emoji container
-  var emojiContainer = document.createElement('div');
-  emojiContainer.id = 'emoji-container';
+  const emojiContainer = createElement('div', {
+    attributes: {
+      id: 'emoji-container'
+    }
+  });
 
   // Create main container
-  var container = document.createElement('div');
-  container.className = 'max-w-md w-full p-4 rounded-lg';
-  container.appendChild(form);
-  container.appendChild(emojiContainer);
-  const virtualRoot = document.createElement('div');
-  virtualRoot.className = 'flex items-center justify-center rounded p-2';
-  virtualRoot.appendChild(container);
+  const container = createElement('div', {
+    class: 'max-w-md w-full p-4 rounded-lg',
+    children: [form, emojiContainer]
+  });
+
+  const virtualRoot = createElement('div', {
+    class: 'flex items-center justify-center rounded p-2',
+    children: [container]
+  });
 
   const emojis = $tw.wiki.getTiddlerData(
     '$:/plugins/oeyoews/neotw-emoji-picker/emojis.json',
@@ -67,8 +76,9 @@ function emojiComponent() {
 
   function searchEmoji(event) {
     var input = event.target.value.trim().toLowerCase();
-    var emojiContainer = document.getElementById('emoji-container');
-    emojiContainer.innerHTML = ''; // Clear previous results
+    const emojiContainer = document.getElementById('emoji-container', {
+    });
+    emojiContainer.innerHTML = ''
 
     // add tips node
     var gridContainer = document.createElement('div');
@@ -82,26 +92,18 @@ function emojiComponent() {
 
     for (var key in emojis) {
       if (emojis.hasOwnProperty(key) && key.indexOf(input) !== -1) {
-        var emoji = document.createElement('span');
-        emoji.classList.add(
-          'cursor-pointer',
-          'py-4',
-          'rounded',
-          'transition',
-          'duration-200',
-          'flex',
-          'justify-center',
-          'items-center',
-          'h-16',
-          'w-16',
-          'text-4xl',
-        );
+        const emoji = createElement('span', {
+          class: 'cursor-pointer py-4 rounded transition duration-200 flex justify-center items-center h-16 w-16 text-4xl',
+          attributes: {
+            title: key
+          }
+        });
         emoji.innerHTML = emojis[key];
-        emoji.title = key;
+
         gridContainer.appendChild(emoji);
 
         // 添加点击事件处理程序
-        emoji.addEventListener('click', function () {
+        emoji.addEventListener('click', function() {
           copyEmojiToClipboard(this.innerHTML);
         });
       }
@@ -137,7 +139,7 @@ function emojiComponent() {
   }
 
   function debouncedSearchEmoji(event) {
-    debounce(function () {
+    debounce(function() {
       searchEmoji(event);
     }, 300);
   }
