@@ -31,6 +31,13 @@ countplusplus widget
       const btnp = createElement('button', {
         text: '加',
         class: 'rounded p-2 bg-green-300 aspect-square',
+        eventListeners: [
+          {
+            name: 'click',
+            handleObject: this,
+            handlerMethod: 'log',
+          },
+        ],
       });
       const btnd = createElement('button', {
         text: '减',
@@ -50,7 +57,6 @@ countplusplus widget
           this.count++;
           this.refreshSelf();
         }
-        console.log(randomColor());
       };
       btnd.onclick = () => {
         if (this.count > 0) {
@@ -62,6 +68,10 @@ countplusplus widget
       parent.insertBefore(domNode, nextSibling);
       this.domNodes.push(domNode);
     }
+
+    log = () => {
+      console.log('clicked');
+    };
   }
 
   /**
