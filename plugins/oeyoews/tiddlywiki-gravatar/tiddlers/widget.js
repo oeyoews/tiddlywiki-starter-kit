@@ -38,7 +38,7 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
         email = getDefaultEmail /** @example url="./files/xxx.png" url="https://xxx.png" */,
         url,
         username = Username,
-        isCenter,
+        center,
         inline,
         link,
         class: className = 'w-12',
@@ -75,7 +75,7 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
       }
       const tempClassList =
         'mx-auto shadow-md border-dashed border block border-indigo-400 p-1';
-      isCenter && img.classList.add(...tempClassList.split(' '));
+      center && img.classList.add(...tempClassList.split(' '));
       types[type]?.includes(type) && img.setAttribute('data-type', type);
       // 考虑图片加载失败, 但是不考虑图片加载超时(offline)
       img.onerror = () => {
