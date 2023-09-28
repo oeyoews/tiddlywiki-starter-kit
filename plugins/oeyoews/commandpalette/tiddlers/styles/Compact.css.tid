@@ -2,7 +2,7 @@ tags: $:/tags/CommandPaletteTheme $:/tags/Stylesheet
 title: $:/plugins/oeyoews/commandpalette/Compact.css
 type: text/vnd.tiddlywiki
 
-<!-- \rules only filteredtranscludeinline transcludeinline macrodef macrocallinline html -->
+\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline html
 
 :root {
     --palette-radius: 5px;
