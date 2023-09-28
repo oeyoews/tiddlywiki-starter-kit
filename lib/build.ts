@@ -9,7 +9,7 @@ import { spawn } from 'bun';
 const env = process.env;
 /** @description load env from .env file with bun */
 const TIDDLERSREPO = env.TIDDLERSREPO || 'neotw-tiddlers';
-const BUILDDIR = env.OUTPURDIR || '.tiddlywiki';
+const OUTPUTDIR = env.OUTPURDIR || '.tiddlywiki';
 // 实际上可以直接写 import {isBun} from 'process', 但是如果安装了 @types/node 会有ts 警告
 const hasBun = process.versions.bun;
 const log = ora(
@@ -35,7 +35,7 @@ function cloneTiddlers(callback: () => void) {
 
 /** @description copy files folder, and verce.json file */
 function copyFiles() {
-  spawn(['cp', '-r', 'files', 'vercel.json', BUILDDIR], {
+  spawn(['cp', '-r', 'files', 'vercel.json', OUTPUTDIR], {
     onExit: (proc, exitCode, signalCode, error) => {
       if (exitCode === 0) {
         log.succeed('复制文件完成');
@@ -49,7 +49,7 @@ const main = () => {
   spawn(['npx', 'tiddlywiki', '--build'], {
     onExit: (proc, exitCode, signalCode, error) => {
       if (exitCode === 0) {
-        log.succeed(`构建完成 ${BUILDDIR}`);
+        log.succeed(`构建完成 ${OUTPUTDIR}`);
         copyFiles();
       }
     },
