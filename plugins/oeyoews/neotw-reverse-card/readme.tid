@@ -2,12 +2,14 @@ title: $:/plugins/oeyoews/neotw-reverse-card/readme
 description: neotw-reverse-card
 
 <$rcard />
+<$rcard json="$:/plugins/oeyoews/neotw-reverse-card/tw.json"/>
 
 ```
 <$rcard question="xxx" answer="xxx" />
+<$rcard json="xxx.json" />
 ```
 
 !! TODO
 
 * 悬浮三秒以上, 自动进行翻转(实现比较容易, 暂时不做)
-* 支持同时设置一组问题, 并且允许next, stop, restart, 得分记录
+* 支持同时设置一组问题, 并且允许next, stop, restart, 得分记录(目前支持json文件)

@@ -34,7 +34,7 @@ function createCard(question, answer) {
 
   // 创建父容器元素
   const container = createElement('div', {
-    class: 'flex justify-center items-center dark:text-black',
+    class: 'flex justify-center items-center dark:text-black my-4',
     children: [card],
   });
 
