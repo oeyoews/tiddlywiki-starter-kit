@@ -23,15 +23,19 @@ neotw-icons widget
       this.computeAttributes();
       this.execute();
 
-      const title = this.getAttribute('title', '');
-      const style = this.getAttribute('style');
-      const classNames = this.getAttribute('class');
+      // https://developer.mozilla.org/zh-CN/docs/Web/API/Element/attributes
+      const { title, style, icon, class: classNames } = this.attributes;
 
-      const iconNode = this.document.createElement('iconify-icon');
-      iconNode.setAttribute('icon', this.getAttribute('icon'));
-      iconNode.style = style;
-      iconNode.title = title;
-      iconNode.className = classNames;
+      const createElement = $tw.utils.domMaker;
+
+      const iconNode = createElement('iconify-icon', {
+        class: classNames,
+        style,
+        attributes: {
+          icon,
+          title,
+        },
+      });
       iconNode.classList.add('align-middle');
 
       parent.insertBefore(iconNode, nextSibling);
