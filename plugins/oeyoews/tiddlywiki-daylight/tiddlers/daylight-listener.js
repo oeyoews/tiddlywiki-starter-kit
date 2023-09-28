@@ -14,13 +14,15 @@ const currentMode = localStorage.theme;
 
 // 需要浏览器和操作系统支持
 let isDarkMode = $tw.wiki.getTiddlerText('$:/info/darkmode') === 'yes'; // let isDarkMode = darkMode?.matches;
+const mediaQuery = window.matchMedia?.('(prefers-color-scheme: dark)');
+const systemIsDarkMode = mediaQuery?.matches;
 
 // 配置默认调色板
 const lightPalette = '$:/themes/nico/notebook/palettes/palette-beige';
 const darkPalette = '$:/palettes/GithubDark';
 
-function preset(event) {
-  const systemMode = (event?.matches && 'dark') || 'light';
+function preset() {
+  const systemMode = systemIsDarkMode ? 'dark' : 'light';
   const mode = currentMode === 'system' ? systemMode : currentMode;
   updateMode(mode);
 }
@@ -44,11 +46,15 @@ function toggleMode() {
 }
 
 function checkModeListener() {
-  const darkMode = window.matchMedia?.('(prefers-color-scheme: dark)');
-  preset(darkMode); // NOTE: this will change your palette
-  darkMode?.addEventListener?.('change', (event) => {
-    const systemMode = (event?.matches && 'dark') || 'light';
-    if (!systemMode === 'dark') isDarkMode = false;
+  preset(mediaQuery); // NOTE: this will change your palette
+  mediaQuery?.addEventListener?.('change', () => {
+    console.log(systemIsDarkMode);
+    const systemMode = mediaQuery.matches ? 'dark' : 'light';
+    if (systemMode !== 'dark') {
+      isDarkMode = false;
+    } else {
+      isDarkMode = true;
+    }
     if (currentMode === 'system') {
       updateMode(systemMode);
     }
