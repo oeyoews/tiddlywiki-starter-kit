@@ -23,8 +23,7 @@ module.exports = function createCard(title, cover, clickEvents, icon) {
         image.src = cover;
         image.onload = () => {
           img.alt = title;
-          img.title = '';
-          image.classList.remove(...dynamicClassNames);
+          image.classList.remove(...dynamicClassNames.split(' '));
           img.classList.add('cursor-pointer');
         };
         observer.unobserve(image); // 加载后取消监测
@@ -59,26 +58,10 @@ module.exports = function createCard(title, cover, clickEvents, icon) {
   const img = createElement('img');
   // 动态懒加载图片的数量取决于视图的宽度和高度, 不是可见视图, 所以需要使用IntersectionObserver 来监测
   img.loading = 'lazy';
-  const dynamicClassNames = [
-    'scale-105',
-    'blur-lg',
-    'bg-black/10',
-    'cursor-wait',
-  ];
-  img.title = 'loading ...';
-  img.classList.add(
-    'aspect-video',
-    'object-cover',
-    'w-full',
-    'h-full',
-    'rounded-md',
-    'group-hover:scale-105',
-    'transition-all',
-    'duration-800',
-    'ease-in-out',
-    'shadow-md',
-    ...dynamicClassNames,
-  );
+  const dynamicClassNames = 'scale-105 blur-md bg-black/10 cursor-wait';
+  img.className =
+    `aspect-video object-cover w-full h-full rounded-md group-hover:scale-105 transition-all duration-800 ease-in-out shadow-md` +
+    dynamicClassNames;
 
   // img.src = 'favicon.ico';
   item.append(img, contentNode);
