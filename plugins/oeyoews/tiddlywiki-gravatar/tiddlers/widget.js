@@ -33,30 +33,31 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
       const Username =
         $tw.wiki.getTiddlerText('$:/status/UserName') || 'oeyoews';
 
-      /** @example url="./files/xxx.png" url="https://xxx.png" */
-      const url = this.getAttribute('url', '');
-      const username = this.getAttribute('username', Username);
-      let isCenter = this.getAttribute('center');
-      const inline = this.getAttribute('inline');
-      const link = this.getAttribute('link');
-      let className = this.getAttribute('class', 'w-12');
-      const email = this.getAttribute('email', getDefaultEmail);
+      let {
+        email = getDefaultEmail /** @example url="./files/xxx.png" url="https://xxx.png" */,
+        url,
+        username = Username,
+        isCenter,
+        inline,
+        link,
+        class: className = 'w-12',
+        size = 100,
+        alt = 'Avatar',
+        type = 'gravatar',
+      } = this.attributes;
 
-      let size = this.getAttribute('size', '100');
-      let alt = this.getAttribute('alt', 'Avatar');
       const hash = md5(email.trim().toLowerCase());
 
       let src;
 
       const types = {
-        qq: 'https://q1.qlogo.cn/g?b=qq&nk=${email}&s=${size}',
+        qq: `https://q1.qlogo.cn/g?b=qq&nk=${email}&s=${size}`,
         github: `https://github.com/${username}.png?size=${size}`,
         gravatar: `https://gravatar.com/avatar/${hash}.png?s=${size}`,
         gravatar_cn: `https://cn.gravatar.com/avatar/${hash}.png?s=${size}`,
         url,
       };
 
-      const type = this.getAttribute('type', 'gravatar');
       if (types[type]) {
         src = types[type];
       }
@@ -89,6 +90,7 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
       img.setAttribute('data-type', type);
       // 考虑图片加载失败, 但是不考虑图片加载超时(offline)
       img.onerror = () => {
+        console.log(src, '图片加载失败');
         img.classList.remove(...dynamicClasses);
         img.src =
           'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=identicon&s=100';
