@@ -81,8 +81,7 @@ module.exports = function createCard(title, cover, clickEvents, icon) {
   );
 
   // img.src = 'favicon.ico';
-  item.appendChild(img);
-  item.appendChild(contentNode);
+  item.append(img, contentNode);
 
   observer.observe(img);
 
