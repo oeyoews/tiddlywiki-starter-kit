@@ -6,21 +6,14 @@ module-type: library
 Daylight Listener Module
 \*/
 
-// 01: system: Follow the operating system mode
-// 02: light/dark: Follow user configuration updates, here it is $:config/theme-mode
-
-// If configuration is modified, a restart is needed for it to take effect because the configuration is read from a file, and tw won't automatically update. If using localstorage, it can update the configuration automatically.
 localStorage.theme =
-  $tw.wiki.getTiddlerText('$:/config/theme-mode') || 'system';
+  $tw.wiki.getTiddlerText('$:/config/theme-mode') || 'system'; // 如果修改配置, 重启生效
 const currentMode = localStorage.theme;
 
-// Pay attention to whether the operating system supports switching between dark and light modes; in theory, it's supported everywhere (except for some Linux distributions and certain mobile platforms).
-
+// 需要浏览器和操作系统支持
 let isDarkMode = $tw.wiki.getTiddlerText('$:/info/darkmode') === 'yes'; // let isDarkMode = darkMode?.matches;
 
-// TODO: Configure UI
-// check palette if exist
-// preset: Default light and dark palettes
+// 配置默认调色板
 const lightPalette = '$:/themes/nico/notebook/palettes/palette-beige';
 const darkPalette = '$:/palettes/GithubDark';
 
@@ -31,36 +24,28 @@ function preset(event) {
 }
 
 function updateMode(mode) {
+  // 使用toggle,第一次需要多按一次,也可以remove, add
   document.documentElement.classList.toggle('dark', mode === 'dark');
-  // Palette
   const palette = mode === 'dark' ? darkPalette : lightPalette;
   $tw.wiki.setText('$:/palette', 'text', null, palette);
-  // Update mode
   localStorage.theme = mode;
 }
 
-// Manually toggle light/dark
 function toggleMode() {
   const NProgress = require('nprogress.min.js'); // This step may cause an error due to plugin loading order; NProgress might not be loaded yet, so manual loading is needed.
   NProgress?.start();
-  // Need to get the current tiddlywiki mode
   const nextMode = isDarkMode ? 'light' : 'dark';
-  // Update mode
   isDarkMode = !isDarkMode;
   updateMode(nextMode);
   NProgress?.done();
 }
 
-// Listener
 function checkModeListener() {
   const darkMode = window.matchMedia?.('(prefers-color-scheme: dark)');
   preset(darkMode); // NOTE: this will change your palette
-  // Pay attention to whether the browser supports window.matchMedia
   darkMode?.addEventListener?.('change', (event) => {
     const systemMode = (event?.matches && 'dark') || 'light';
-    // Update mode
     if (!systemMode === 'dark') isDarkMode = false;
-    // Only listen to system mode
     if (currentMode === 'system') {
       updateMode(systemMode);
     }
