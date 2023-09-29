@@ -31,7 +31,7 @@ widget-unsplash widget
 
       const title = this.getVariable('currentTiddler');
       const alt = title;
-      const src = `https://source.unsplash.com/random?fm=blurhash&w=50&${title}`;
+      const src = `https://source.unsplash.com/random/1920x1080?fm=blurhash&${title}`;
       const classNames = this.getAttribute('class', '').split(' ');
 
       const imgNode = $tw.utils.domMaker('img', {

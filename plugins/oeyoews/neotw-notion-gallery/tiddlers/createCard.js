@@ -5,7 +5,13 @@ module-type: library
 
 \*/
 /** create card */
-module.exports = function createCard(title, cover, clickEvents, icon) {
+module.exports = function createCard(
+  title,
+  cover,
+  clickEvents,
+  icon,
+  standard = true,
+) {
   const options = {
     root: null,
     rootMargin: '0px',
@@ -60,9 +66,11 @@ module.exports = function createCard(title, cover, clickEvents, icon) {
   img.loading = 'lazy';
   const dynamicClassNames = 'scale-105 blur-md bg-black/10 cursor-wait';
   // 移除aspect-video 布局自适应图片比例
-  img.className =
-    `object-cover w-full h-full rounded-md group-hover:scale-105 transition-all duration-800 ease-in-out shadow-md` +
-    dynamicClassNames;
+  img.className = `object-cover w-full h-full rounded-md group-hover:scale-105 transition-all duration-800 ease-in-out shadow-md aspect-video ${dynamicClassNames}`;
+
+  console.log(standard);
+  console.log(!standard);
+  standard === 'false' && img.classList.remove('aspect-video');
 
   // img.src = 'favicon.ico';
   item.append(img, contentNode);

@@ -52,6 +52,7 @@ neotw-notion-gallery widget
 
       // update realfilter
       this.realFilter = this.getAttribute('filter', this.defaultFilter);
+      const standard = this.getAttribute('standard');
       const cardsTiddlers = this.removedFilterDraftTiddlers();
 
       const prepareCardData = (tiddlers) => {
@@ -87,7 +88,9 @@ neotw-notion-gallery widget
       const data = prepareCardData(cardsTiddlers);
 
       data.forEach(({ title, cover, icon }) => {
-        container.appendChild(createCard(title, cover, navigate, icon));
+        container.appendChild(
+          createCard(title, cover, navigate, icon, standard),
+        );
       });
 
       parent.insertBefore(container, nextSibling);
