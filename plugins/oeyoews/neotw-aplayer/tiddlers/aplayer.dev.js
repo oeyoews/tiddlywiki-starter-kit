@@ -50,7 +50,7 @@ A music player widget that uses the APlayer library.
         };
       });
 
-      const classNames = this.getAttribute('class', '').split(' ');
+      const classNames = this.getAttribute('class', '').split(' ').join(' ');
 
       // no color on pagecontrol ui
       const playIcon = $tw.wiki.getTiddlerText(
@@ -67,7 +67,7 @@ A music player widget that uses the APlayer library.
         attributes: {
           ['aria-label']: 'player',
         },
-        class: `p-0 m-0 bg-transparent ${classNames.join(' ')}`,
+        class: `p-0 m-0 bg-transparent ${classNames}`,
         innerHTML: playIcon,
       });
 
@@ -89,33 +89,29 @@ A music player widget that uses the APlayer library.
       this.aplayer = new APlayer(aplayerOptions);
       const aplayerRef = this.aplayer;
 
-      playButtonNode.addEventListener('dblclick', () => {
-        console.log('clicked');
+      /* playButtonNode.addEventListener('dblclick', () => {
         aplayerRef.skipForward();
         aplayerRef.play();
-      });
+      }); */
 
       playButtonNode.addEventListener('click', () => {
         // 如果替换这个icon, dblclick事件无法响应
         aplayerRef.toggle();
+        playButtonNode.classList.toggle('animate-spin');
       });
 
-      parent.insertBefore(playButtonNode, nextSibling);
-      this.domNodes.push(playButtonNode);
+      const domNode = this.fixed ? aplayerNode : playButtonNode;
 
-      if (this.fixed) {
-        parent.insertBefore(aplayerNode, nextSibling);
-        this.domNodes.push(aplayerNode);
-      }
+      parent.insertBefore(domNode, nextSibling);
+      this.domNodes.push(domNode);
     }
 
     // 支持了多首音乐后(上两次提交), 会触发classList错误, 暂时不进行destory事件
-    // destroy() {
-    // this.aplayer?.destroy();
-    // this.aplayer = null;
-    // }
+    destroy() {
+      /* this.aplayer?.destroy();
+      this.aplayer = null; */
+    }
   }
 
-  exports['aplayer-dev'] = APlayerWidget;
   exports['aplayer'] = APlayerWidget;
 })();

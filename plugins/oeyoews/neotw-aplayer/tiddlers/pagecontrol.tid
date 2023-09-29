@@ -7,7 +7,7 @@ list-before:
 \whitespace trim
 <$button tooltip="Aplayer" aria-label="Aplayer" class=<<tv-config-toolbar-class>>>
   <$list filter="[<tv-config-toolbar-icons>match[yes]]">
-    <$aplayer-dev />
+    <$aplayer />
   </$list>
 <$list filter="[<tv-config-toolbar-text>match[yes]]">
   <span class="tc-btn-text">
