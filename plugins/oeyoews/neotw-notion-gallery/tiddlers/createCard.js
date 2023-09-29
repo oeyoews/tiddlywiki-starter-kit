@@ -18,9 +18,7 @@ module.exports = function createCard(
     threshold: 0.3, // 当图片50%进入可视区域时加载
   };
 
-  const createElement = (tag) => {
-    return document.createElement(tag);
-  };
+  const createElement = $tw.utils.domMaker;
 
   function callback(entries, observer) {
     entries.forEach((entry) => {
@@ -39,38 +37,47 @@ module.exports = function createCard(
 
   const observer = new IntersectionObserver(callback, options);
 
-  const item = createElement('div');
-
-  const navigate = clickEvents;
-
+  const dynamicClassNames = 'scale-105 blur-md bg-black/10 cursor-wait';
   const itemClassList =
     'flex flex-col items-center justify-center p-0 group relative';
-  item.classList.add(...itemClassList.split(' '));
-  const contentNode = createElement('div');
   const galleryTitleClassList =
     'delay-100 text-lg cursor-pointer flex justify-center items-center truncate m-0 absolute inset-0 backdrop-blur-lg text-black rounded-md ease-in-out transition-all scale-0 group-hover:scale-105';
-  const galleryTitle = createElement('h3');
-  galleryTitle.className = galleryTitleClassList;
-  contentNode.appendChild(galleryTitle);
-  const iconify = createElement('iconify-icon');
-  iconify.classList.add('mx-1');
-  // icon
-  iconify.setAttribute('icon', icon || 'simple-icons:tiddlywiki');
 
-  galleryTitle.title = '点击查看';
-  galleryTitle.textContent = title;
-  galleryTitle.addEventListener('click', () => navigate(title));
-  galleryTitle.appendChild(iconify);
-  const img = createElement('img');
-  // 动态懒加载图片的数量取决于视图的宽度和高度, 不是可见视图, 所以需要使用IntersectionObserver 来监测
-  img.loading = 'lazy';
-  const dynamicClassNames = 'scale-105 blur-md bg-black/10 cursor-wait';
-  img.className = `object-cover w-full h-full rounded-md group-hover:scale-105 transition-all duration-800 ease-in-out shadow-md aspect-video ${dynamicClassNames}`;
+  const iconify = createElement('iconify-icon', {
+    class: 'mx-1',
+    attributes: {
+      icon: icon || 'simple-icons:tiddlywiki',
+    },
+  });
+
+  const galleryTitle = createElement('h3', {
+    class: galleryTitleClassList,
+    text: title,
+    children: [iconify],
+    attributes: {
+      title: '点击查看',
+    },
+  });
+
+  const contentNode = createElement('div', {
+    children: [galleryTitle],
+  });
+
+  galleryTitle.addEventListener('click', () => clickEvents(title));
+
+  const img = createElement('img', {
+    class: `object-cover w-full h-full rounded-md group-hover:scale-105 transition-all duration-800 ease-in-out shadow-md aspect-video ${dynamicClassNames}`,
+    attributes: {
+      loading: 'lazy',
+    },
+  });
 
   standard === 'false' && img.classList.remove('aspect-video');
 
-  // img.src = 'favicon.ico';
-  item.append(img, contentNode);
+  const item = createElement('div', {
+    class: itemClassList,
+    children: [img, contentNode],
+  });
 
   observer.observe(img);
 
