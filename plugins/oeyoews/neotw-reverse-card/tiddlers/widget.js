@@ -27,7 +27,9 @@ neotw-reverse-card widget
       const { q = '点击翻转', a = '这是背面', json } = this.attributes;
 
       const domNode = $tw.utils.domMaker('div', {
-        class: json ? 'flex flex-row overflow-scroll space-x-4' : '',
+        class: json
+          ? 'flex flex-row overflow-scroll space-x-4 snap-x px-12'
+          : '',
       });
 
       // TODO: 验证json是否有语法错误
