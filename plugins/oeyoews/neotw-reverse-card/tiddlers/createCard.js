@@ -11,14 +11,14 @@ function createCard(question, answer) {
   // 创建正面卡片元素
   const frontCard = createElement('div', {
     class:
-      'flex justify-center items-center card-face bg-[#f2f2f2] p-2 rounded-lg w-full h-full absolute cursor-pointer',
+      'shadow flex justify-center items-center p-4 card-face bg-[#f2f2f2] p-2 rounded-lg w-full h-full absolute cursor-pointer',
     text: question,
   });
 
   // 创建背面卡片元素
   const backCard = createElement('div', {
     class:
-      'card-face h-full w-full flex justify-center items-center bg-neutral-200 card-back rounded-lg absolute cursor-pointer',
+      'shadow card-face h-full w-full flex p-4 justify-center items-center bg-neutral-200 card-back rounded-lg absolute cursor-pointer',
     text: answer,
   });
 

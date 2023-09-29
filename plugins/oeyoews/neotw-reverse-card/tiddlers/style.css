@@ -5,7 +5,8 @@
 
 .card-inner {
   width: 400px;
-  transition: transform 0.6s;
+  /* height: 600px; */
+  transition: transform 0.3s ease-in-out;
   transform-style: preserve-3d;
 }
 

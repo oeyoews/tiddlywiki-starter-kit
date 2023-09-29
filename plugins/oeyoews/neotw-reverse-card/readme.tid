@@ -13,3 +13,4 @@ description: neotw-reverse-card
 
 * 悬浮三秒以上, 自动进行翻转(实现比较容易, 暂时不做)
 * 支持同时设置一组问题, 并且允许next, stop, restart, 得分记录(目前支持json文件)
+* 使用2:3的经典卡片比例
