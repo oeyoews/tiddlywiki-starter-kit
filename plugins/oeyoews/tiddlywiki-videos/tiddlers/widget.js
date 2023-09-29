@@ -23,13 +23,15 @@ youtube widget
 
       const createElement = $tw.utils.domMaker;
 
-      let { youtubeId, playlist } = this.attributes;
+      const { youtubeId = 'o7GyFa90klg', playlist } = this.attributes;
 
       const prefix = 'https://www.youtube.com/embed/';
 
-      const iframeSrc = playlist
+      /* const iframeSrc = playlist
         ? `${prefix}videoseries?list=${youtubeId}`
-        : `${prefix}${youtubeId}`;
+        : `${prefix}${youtubeId}`; */
+      const midleUrl = playlist ? 'videoseries?list=' : '';
+      const iframeSrc = prefix + midleUrl + youtubeId;
 
       // Create an object to represent the iframe attributes
       const iframeAttributes = {
@@ -61,4 +63,5 @@ youtube widget
   }
 
   exports.youtube = YoutubeWidget;
+  exports.yt = YoutubeWidget;
 })();
