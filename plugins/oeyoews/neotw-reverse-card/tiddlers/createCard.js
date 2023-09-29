@@ -9,7 +9,8 @@ function createCard(question, answer) {
   const createElement = $tw.utils.domMaker;
 
   const iconify = createElement('iconify-icon', {
-    class: 'absolute fixed top-2 left-2',
+    class:
+      'absolute fixed top-2 left-2 transition-all duration-300 ease-in-out',
     attributes: {
       icon: 'simple-icons:tiddlywiki',
     },
@@ -31,12 +32,12 @@ function createCard(question, answer) {
 
   const cardInner = createElement('div', {
     class: 'card-inner aspect-video',
-    children: [frontCard, backCard],
+    children: [frontCard, backCard, iconify],
   });
 
   const card = createElement('div', {
     class: 'ocard border-none',
-    children: [cardInner, iconify],
+    children: [cardInner],
   });
 
   // 创建父容器元素
