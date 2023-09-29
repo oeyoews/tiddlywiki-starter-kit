@@ -32,7 +32,6 @@ let plugins = [
   'oeyoews/neotw-image-better',
   'oeyoews/tiddlywiki-motion',
   'oeyoews/neotw-pwa',
-  'oeyoews/neotw-error-better',
   'oeyoews/neotw-zen-mode',
   'oeyoews/neotw-placeholder',
   'oeyoews/commandpalette',
