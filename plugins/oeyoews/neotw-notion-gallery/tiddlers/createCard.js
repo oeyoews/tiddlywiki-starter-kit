@@ -59,8 +59,9 @@ module.exports = function createCard(title, cover, clickEvents, icon) {
   // 动态懒加载图片的数量取决于视图的宽度和高度, 不是可见视图, 所以需要使用IntersectionObserver 来监测
   img.loading = 'lazy';
   const dynamicClassNames = 'scale-105 blur-md bg-black/10 cursor-wait';
+  // 移除aspect-video 布局自适应图片比例
   img.className =
-    `aspect-video object-cover w-full h-full rounded-md group-hover:scale-105 transition-all duration-800 ease-in-out shadow-md` +
+    `object-cover w-full h-full rounded-md group-hover:scale-105 transition-all duration-800 ease-in-out shadow-md` +
     dynamicClassNames;
 
   // img.src = 'favicon.ico';
