@@ -5,7 +5,7 @@ title: $:/config/EmptyStoryMessage
     <$avatar center="yes"/>
   </div>
 <div class="dark:bg-white flex justify-center my-4">
-  {{neotw-badges}}
+  <$oinfo />
 </div>
 </center>
 

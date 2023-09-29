@@ -43,6 +43,7 @@ let plugins = [
   'oeyoews/tiddlywiki-daylight',
   'oeyoews/tiddlywiki-videos',
   'oeyoews/neotw',
+  'oeyoews/neotw-info',
   'oeyoews/neotw-reverse-card',
   'oeyoews/tiddlywiki-back-to-top',
   'oeyoews/tiddlywiki-modal-ui',
