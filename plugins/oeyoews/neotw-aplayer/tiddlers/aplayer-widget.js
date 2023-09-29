@@ -106,10 +106,9 @@ A music player widget that uses the APlayer library.
       this.domNodes.push(domNode);
     }
 
-    // 支持了多首音乐后(上两次提交), 会触发classList错误, 暂时不进行destory事件
     destroy() {
-      /* this.aplayer?.destroy();
-      this.aplayer = null; */
+      // 支持了多首音乐后(上两次提交), 会触发classList错误, 暂时不进行aplayer.destory事件
+      // this.aplayer.destroy();
     }
   }
 
