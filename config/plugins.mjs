@@ -17,6 +17,7 @@ const onlinePlugins = [
   'oeyoews/neotw-fetch',
   'oeyoews/tiddlywiki-github-share',
   'oeyoews/tiddlywiki-readonly',
+  'oeyoews/neotw-notranslate',
 ];
 
 /** @description tiddlywiki 启用插件列表 */
@@ -33,7 +34,6 @@ let plugins = [
   'oeyoews/neotw-pwa',
   'oeyoews/neotw-error-better',
   'oeyoews/neotw-zen-mode',
-  'oeyoews/neotw-notranslate',
   'oeyoews/neotw-placeholder',
   'oeyoews/commandpalette',
   'oeyoews/neotw-icons',
