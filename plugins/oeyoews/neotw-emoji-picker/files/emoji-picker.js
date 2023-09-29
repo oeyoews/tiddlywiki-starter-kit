@@ -63,7 +63,7 @@ function emojiComponent() {
     children: [container]
   });
 
-  const emojis = $tw.wiki.getTiddlerData(
+  const emojis = $tw.wiki.getTiddlerDataCached(
     '$:/plugins/oeyoews/neotw-emoji-picker/emojis.json',
   );
 

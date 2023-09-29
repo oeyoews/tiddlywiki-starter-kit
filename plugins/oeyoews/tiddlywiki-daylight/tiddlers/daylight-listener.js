@@ -8,7 +8,7 @@ Daylight Listener Module
 
 // 注意: 手动切换和自动切换要共享状态,与此同时还要遵循用户的配置
 
-const { darkPalette, lightPalette, system } = $tw.wiki.getTiddlerData(
+const { darkPalette, lightPalette, system } = $tw.wiki.getTiddlerDataCached(
   '$:/plugins/oeyoews/tiddlywiki-daylight/config.json',
 );
 

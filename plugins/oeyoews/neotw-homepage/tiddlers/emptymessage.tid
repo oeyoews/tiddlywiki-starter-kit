@@ -4,7 +4,7 @@ title: $:/config/EmptyStoryMessage
   <div>
     <$avatar center="yes"/>
   </div>
-<div class="dark:bg-white flex justify-center my-4">
+<div class="dark:invisible flex justify-center my-4">
   <$oinfo />
 </div>
 </center>

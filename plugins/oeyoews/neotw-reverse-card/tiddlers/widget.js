@@ -31,7 +31,7 @@ neotw-reverse-card widget
       });
 
       // TODO: 验证json是否有语法错误
-      const list = $tw.wiki.getTiddlerData(json) || [{ q, a }];
+      const list = $tw.wiki.getTiddlerDataCached(json) || [{ q, a }];
       list.forEach(({ q, a }) => {
         domNode.append(createCard(q, a));
       });

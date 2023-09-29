@@ -5,7 +5,7 @@ module-type: library
 
 \*/
 
-function createContainer() {
+module.exports = function createContainer() {
   const createElement = $tw.utils.domMaker;
   const wiki = $tw.wiki;
 
@@ -25,11 +25,6 @@ function createContainer() {
   const tagsCount = wiki.filterTiddlers('[tags[]]').length;
   const tiddlersCount = wiki.filterTiddlers('[!is[system]]').length;
 
-  /* const updateImage = createImg('update', updateTime);
-  const plugins = createImg('plugins', pluginsCount);
-  const tags = createImg('tags', tagsCount);
-  const tiddlers = createImg('tiddlers', tiddlersCount); */
-
   const list = [
     { msg: '✏️ update', text: updateTime },
     { msg: '🧩 plugins', text: pluginsCount },
@@ -47,6 +42,4 @@ function createContainer() {
     children,
   });
   return container;
-}
-
-module.exports = createContainer;
+};
