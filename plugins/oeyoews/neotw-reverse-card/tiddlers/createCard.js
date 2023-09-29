@@ -53,10 +53,16 @@ function createCard(question, answer) {
     children: [card],
   });
 
+  let flipTimer;
   card.addEventListener('click', () => {
     card.classList.toggle('flipped');
     iconq.classList.toggle('scale-0');
     icona.classList.toggle('scale-0');
+    clearTimeout(flipTimer);
+
+    flipTimer = setTimeout(() => {
+      card.classList.toggle('flipped');
+    }, 5000);
   });
 
   return container;
