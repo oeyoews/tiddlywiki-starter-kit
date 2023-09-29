@@ -5,6 +5,7 @@
       "LICENSE",
       "degit.json",
       "packages",
+      "dev",
       "img",
       ".gitignore",
       "public",
