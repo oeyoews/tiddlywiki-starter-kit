@@ -8,13 +8,16 @@ module-type: library
 function createCard(question, answer) {
   const createElement = $tw.utils.domMaker;
 
-  const iconify = createElement('iconify-icon', {
-    class:
-      'absolute fixed top-2 left-2 transition-all duration-300 ease-in-out',
-    attributes: {
-      icon: 'simple-icons:tiddlywiki',
-    },
-  });
+  function iconify(icon = 'flat-color-icons:questions', visible = true) {
+    return createElement('iconify-icon', {
+      class: `absolute fixed top-2 left-2 transition-all duration-300 ease-in-out ${
+        visible ? '' : 'scale-0'
+      }`,
+      attributes: {
+        icon,
+      },
+    });
+  }
 
   // 创建正面卡片元素
   const frontCard = createElement('div', {
@@ -32,12 +35,15 @@ function createCard(question, answer) {
 
   const cardInner = createElement('div', {
     class: 'card-inner aspect-video',
-    children: [frontCard, backCard, iconify],
+    children: [frontCard, backCard],
   });
+
+  const iconq = iconify();
+  const icona = iconify('flat-color-icons:approval', false);
 
   const card = createElement('div', {
     class: 'ocard border-none',
-    children: [cardInner],
+    children: [cardInner, iconq, icona],
   });
 
   // 创建父容器元素
@@ -49,7 +55,8 @@ function createCard(question, answer) {
 
   card.addEventListener('click', () => {
     card.classList.toggle('flipped');
-    iconify.classList.toggle('blur');
+    iconq.classList.toggle('scale-0');
+    icona.classList.toggle('scale-0');
   });
 
   return container;
