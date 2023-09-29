@@ -5,8 +5,9 @@ module-type: widget
 
 youtube widget
 \*/
+
 (function () {
-  const Widget = require('$:/core/modules/widgets/widget.js').widget;
+  const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 
   class YoutubeWidget extends Widget {
     constructor(parseTreeNode, options) {
@@ -14,20 +15,21 @@ youtube widget
     }
 
     render(parent, nextSibling) {
+      if (!$tw.browser) return;
+
       this.parentDomNode = parent;
       this.computeAttributes();
       this.execute();
 
-      var youtubeId = this.getAttribute('youtubeId');
-      var playlist = this.getAttribute('playlist');
+      const createElement = $tw.utils.domMaker;
+
+      let { youtubeId, playlist } = this.attributes;
+
       const prefix = 'https://www.youtube.com/embed/';
 
       const iframeSrc = playlist
         ? `${prefix}videoseries?list=${youtubeId}`
         : `${prefix}${youtubeId}`;
-
-      const container = this.document.createElement('div');
-      container.className = 'flex justify-center item-center my-4';
 
       // Create an object to represent the iframe attributes
       const iframeAttributes = {
@@ -42,16 +44,19 @@ youtube widget
         title: '', // example attribute
       };
 
-      // Create the iframe element and set its attributes using a loop
-      const iframe = this.document.createElement('iframe');
-      for (const [key, value] of Object.entries(iframeAttributes)) {
-        iframe.setAttribute(key, value);
-      }
+      const iframeNode = this.document.createElement('iframe');
 
-      container.appendChild(iframe);
+      const domNode = createElement('div', {
+        class: 'flex justify-center item-center my-4',
+        children: [iframeNode],
+      });
 
-      parent.insertBefore(container, nextSibling);
-      this.domNodes.push(container);
+      Object.entries(iframeAttributes).forEach(([key, value]) => {
+        iframeNode.setAttribute(key, value);
+      });
+
+      parent.insertBefore(domNode, nextSibling);
+      this.domNodes.push(domNode);
     }
   }
 
