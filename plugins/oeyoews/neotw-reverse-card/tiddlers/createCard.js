@@ -8,6 +8,13 @@ module-type: library
 function createCard(question, answer) {
   const createElement = $tw.utils.domMaker;
 
+  const iconify = createElement('iconify-icon', {
+    class: 'absolute fixed top-2 left-2',
+    attributes: {
+      icon: 'simple-icons:tiddlywiki',
+    },
+  });
+
   // 创建正面卡片元素
   const frontCard = createElement('div', {
     class:
@@ -29,7 +36,7 @@ function createCard(question, answer) {
 
   const card = createElement('div', {
     class: 'ocard border-none',
-    children: [cardInner],
+    children: [cardInner, iconify],
   });
 
   // 创建父容器元素
@@ -41,6 +48,7 @@ function createCard(question, answer) {
 
   card.addEventListener('click', () => {
     card.classList.toggle('flipped');
+    iconify.classList.toggle('blur');
   });
 
   return container;
