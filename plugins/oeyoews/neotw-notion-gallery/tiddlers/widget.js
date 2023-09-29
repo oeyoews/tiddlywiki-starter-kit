@@ -130,6 +130,7 @@ neotw-notion-gallery widget
           return false;
         }
 
+        // NOTE: 过滤掉系统条目
         return !(title.startsWith('$:/') || title.startsWith('Draft of'));
       });
 

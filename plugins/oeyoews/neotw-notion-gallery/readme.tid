@@ -56,6 +56,7 @@ description: 卡片视图
 * 🟥 支持新增tiddler
 * 🟥 search: current filter tiddler search
 * 🟥 view: 支持gallary-table-magazine的切换, 支持字段可视化实时编辑
+* 支持列出所有的插件: 使用plugin-name 代替过长的title
 
 > 如果过于复杂并且有时间的话,可能会引入xstate进行状态管理
 
