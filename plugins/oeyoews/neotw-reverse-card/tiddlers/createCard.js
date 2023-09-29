@@ -54,15 +54,21 @@ function createCard(question, answer) {
   });
 
   let flipTimer;
+
   card.addEventListener('click', () => {
     card.classList.toggle('flipped');
     iconq.classList.toggle('scale-0');
     icona.classList.toggle('scale-0');
+    const hasFlipped = card.classList.contains('flipped');
     clearTimeout(flipTimer);
 
-    flipTimer = setTimeout(() => {
-      card.classList.toggle('flipped');
-    }, 5000);
+    if (hasFlipped) {
+      flipTimer = setTimeout(() => {
+        card.classList.remove('flipped');
+        iconq.classList.toggle('scale-0');
+        icona.classList.toggle('scale-0');
+      }, 5000);
+    }
   });
 
   return container;
