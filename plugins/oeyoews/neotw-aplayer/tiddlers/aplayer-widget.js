@@ -108,6 +108,7 @@ A music player widget that uses the APlayer library.
 
     destroy() {
       // 支持了多首音乐后(上两次提交), 会触发classList错误, 暂时不进行aplayer.destory事件
+      this.aplayer.pause(); // hack: 暂停音乐
       // this.aplayer.destroy();
     }
   }
