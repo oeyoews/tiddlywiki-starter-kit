@@ -28,7 +28,7 @@ function createCard(question, answer) {
   });
 
   const card = createElement('div', {
-    class: 'card border-none',
+    class: 'ocard border-none',
     children: [cardInner],
   });
 

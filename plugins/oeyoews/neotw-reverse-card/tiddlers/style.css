@@ -1,4 +1,4 @@
-.card {
+.ocard {
   perspective: 1000px;
   display: inline-block;
 }
@@ -11,7 +11,7 @@
 }
 
 /* tailwindcss 居然还不支持rotate-y-180 可恶, 否则利用group,js 都不需要写了 */
-.card.flipped .card-inner {
+.ocard.flipped .card-inner {
   transform: rotateY(180deg);
 }
 
