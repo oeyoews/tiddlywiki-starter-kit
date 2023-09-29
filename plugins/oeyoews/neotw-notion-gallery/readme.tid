@@ -1,6 +1,12 @@
 title: $:/plugins/oeyoews/neotw-notion-gallery/readme
 description: 卡片视图
 
+!! 插件介绍
+
+> 支持书单, 博客, 日志等卡片视图
+
+ps: 支持豆瓣图片链接(不受防盗链影响)
+
 !! 使用方法
 
 ```bash
