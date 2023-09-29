@@ -31,19 +31,19 @@ youtube widget
         ? `${prefix}videoseries?list=${youtubeId}`
         : `${prefix}${youtubeId}`; */
       const midleUrl = playlist ? 'videoseries?list=' : '';
-      const iframeSrc = prefix + midleUrl + youtubeId;
+      const src = prefix + midleUrl + youtubeId;
 
       // Create an object to represent the iframe attributes
       const iframeAttributes = {
-        src: iframeSrc,
-        width: '800',
-        height: '450',
-        frameborder: '0',
+        src,
+        width: 800,
+        height: 450,
+        frameborder: 0,
         allowfullscreen: '',
-        class: 'border-none shadow-lg rounded-lg w-full',
+        class: 'border-none shadow-lg rounded-lg', // w-full
         allowsInlineMediaPlayback: 'true',
         playsinline: '1',
-        title: '', // example attribute
+        title: 'youtube video', // example attribute
       };
 
       const iframeNode = this.document.createElement('iframe');
