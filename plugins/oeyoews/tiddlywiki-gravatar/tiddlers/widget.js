@@ -64,13 +64,16 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
         ? (src = types[type])
         : (src = types.gravatar);
 
-      const img = new Image();
-
       const dynamicClasses = 'blur scale-105';
       const imgClass = `rounded-full align-middle duration-200 transition object-cover object-center ${className} ${dynamicClasses}`;
 
-      img.className = imgClass;
-      img.src = src;
+      const img = createElement('img', {
+        class: imgClass,
+        attributes: {
+          src,
+          alt,
+        },
+      });
 
       if (inline) {
         img.classList.remove('w-12');
@@ -95,8 +98,6 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
         img.classList.remove(...dynamicClasses.split(' '));
       };
 
-      img.alt = alt;
-
       const linkNode = createElement('a', {
         attributes: {
           target: '_blank',
@@ -106,6 +107,7 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
         },
         children: [img],
       });
+
       const domNode = link ? linkNode : img;
 
       parent.insertBefore(domNode, nextSibling);
