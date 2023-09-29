@@ -27,6 +27,7 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
       this.execute();
 
       const createElement = $tw.utils.domMaker;
+
       let getDefaultEmail =
         $tw.wiki.getTiddlerText(
           '$:/config/plugins/oeyoews/tiddlywiki-gravatar/email',
@@ -64,43 +65,48 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
         : (src = types.gravatar);
 
       const img = new Image();
-      const dynamicClasses = ['blur', 'scale-105'];
-      const imgClass = `rounded-full align-middle duration-200 transition object-cover object-center ${className}`;
+
+      const dynamicClasses = 'blur scale-105';
+      const imgClass = `rounded-full align-middle duration-200 transition object-cover object-center ${className} ${dynamicClasses}`;
+
       img.className = imgClass;
-      img.classList.add(...dynamicClasses);
-      img.setAttribute('src', src);
+      img.src = src;
+
       if (inline) {
         img.classList.remove('w-12');
         img.classList.add('mx-0', 'w-4');
       }
+
       const tempClassList =
         'mx-auto shadow-md border-dashed border block border-indigo-400 p-1';
+
       center && img.classList.add(...tempClassList.split(' '));
       types[type]?.includes(type) && img.setAttribute('data-type', type);
+
       // 考虑图片加载失败, 但是不考虑图片加载超时(offline)
       img.onerror = () => {
         console.warn(src, '图片加载失败');
-        img.classList.remove(...dynamicClasses);
+        img.classList.remove(...dynamicClasses.split(' '));
         img.src =
           'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=identicon&s=100';
       };
-      img.onload = () => {
-        img.classList.remove(...dynamicClasses);
-      };
-      img.setAttribute('alt', alt);
 
-      let domNode = img;
-      if (link) {
-        domNode = createElement('a', {
-          attributes: {
-            target: '_blank',
-            rel: 'noopener noreferrer',
-            style: 'text-decoration: none;',
-            href: link,
-          },
-          children: [img],
-        });
-      }
+      img.onload = () => {
+        img.classList.remove(...dynamicClasses.split(' '));
+      };
+
+      img.alt = alt;
+
+      const linkNode = createElement('a', {
+        attributes: {
+          target: '_blank',
+          rel: 'noopener noreferrer',
+          style: 'text-decoration: none;',
+          href: link,
+        },
+        children: [img],
+      });
+      const domNode = link ? linkNode : img;
 
       parent.insertBefore(domNode, nextSibling);
       this.domNodes.push(domNode);
