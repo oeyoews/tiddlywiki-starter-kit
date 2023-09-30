@@ -33,7 +33,6 @@ let plugins = [
   'oeyoews/tiddlywiki-motion',
   'oeyoews/neotw-pwa',
   'oeyoews/neotw-zen-mode',
-  'oeyoews/neotw-placeholder',
   'oeyoews/commandpalette',
   'oeyoews/neotw-icons',
   'oeyoews/neotw-markdown-extensions',
