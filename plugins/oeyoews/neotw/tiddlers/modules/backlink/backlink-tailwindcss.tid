@@ -1,6 +1,6 @@
+title: $:/plugins/oeyoews/neotw/modules/backline-tailwindcss
 list-before: $:/core/ui/ViewTemplate/subtitle
 tags: $:/tags/ViewTemplate
-title: $:/plugins/oeyoews/neotw/modules/backline-tailwindcss
 
 <$list filter="[<currentTiddler>!is[draft]backlinks[]!is[draft]!is[shadow]!is[system]count[]!match[0]]" variable="backlinkCount">
   <$list filter="[<currentTiddler>addprefix[$:/temp/oeyoews/BacklinkBox/]]" variable="stateTiddler">
