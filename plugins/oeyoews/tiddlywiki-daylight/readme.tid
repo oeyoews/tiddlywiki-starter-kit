@@ -2,6 +2,11 @@ title: $:/plugins/oeyoews/tiddlywiki-daylight/readme
 
 !! Tiddlywiki Daylight
 
-<$daylight btn />
+<$daylight btn class="rounded-full p-2 hover:scale-105 transition"/>
 
 > 主流的经典三模式切换(浅色模式, 深色模式, 系统模式)
+
+!! TODO
+
+* 配置UI: 模拟shiraz的两种 palette 选择
+* 去除插件依赖: nprogress, tailwindcss, overwrite template
