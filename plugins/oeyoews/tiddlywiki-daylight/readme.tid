@@ -8,5 +8,6 @@ title: $:/plugins/oeyoews/tiddlywiki-daylight/readme
 
 !! TODO
 
-* 配置UI: 模拟shiraz的两种 palette 选择
+* 添加配置UI: 模拟shiraz的两种 palette 选择
 * 去除插件依赖: nprogress, tailwindcss, overwrite template
+* 添加过渡动画: https://antfu.me/posts
