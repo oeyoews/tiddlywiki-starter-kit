@@ -95,22 +95,34 @@ Code block node widget
       fileIcon.setAttribute('icon', `simple-icons:${standardIconLanguage}`);
       fileIcon.className = 'mx-1';
       copyButton.appendChild(fileIcon);
-      const { href } = window.location;
+
+      /* const { href } = window.location;
       if (href.includes('0.0.0.0')) {
         copyButton?.classList?.add('cursor-not-allowed');
         copyButton.disabled = true;
         copyButton.title = `${href} 剪切板不可用`;
-      }
+      } */
 
+      let clipboardTimer;
       copyButton.addEventListener('click', () => {
+        clearTimeout(clipboardTimer);
         // clipboard api 不会向用户发出询问, 在不安全的上下文中(0.0.0.0), clipboard api 不会被允许
-        navigator?.clipboard?.writeText(codeNode.textContent).then(() => {
+        const copyToClipboard = $tw.utils.copyToClipboard;
+        copyToClipboard(codeNode.textContent, {
+          doNotNotify: true,
+        });
+        copyButton.textContent = 'copied';
+        clipboardTimer = setTimeout(() => {
+          copyButton.textContent = fileType;
+          copyButton.appendChild(fileIcon);
+        }, 1000);
+        /* navigator?.clipboard?.writeText(codeNode.textContent).then(() => {
           copyButton.textContent = 'copied';
-          setTimeout(() => {
+          clipboardTimer = setTimeout(() => {
             copyButton.textContent = fileType;
             copyButton.appendChild(fileIcon);
           }, 1000);
-        });
+        }); */
       });
     }
 
