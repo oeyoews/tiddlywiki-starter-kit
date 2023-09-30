@@ -17,8 +17,6 @@ daylight module
   exports.startup = () => {
     const { checkModeListener, toggleMode } = require('./daylight-listener');
     checkModeListener();
-    $tw.rootWidget.addEventListener('om-toggle-theme', () => {
-      toggleMode();
-    });
+    $tw.rootWidget.addEventListener('om-toggle-theme', toggleMode);
   };
 })();
