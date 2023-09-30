@@ -24,6 +24,8 @@ tags: $:/tags/PageTemplate
 <$list filter="[[$:/StoryList]get[list]!is[blank]]">
     <div id="stx-story-top">
       <<readonly-mode>>
-      <$daylight btn class="rounded-full"/>
+      <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
+        <$daylight btn class="rounded-full"/>
+      </$list>
     </div>
 </$list>
