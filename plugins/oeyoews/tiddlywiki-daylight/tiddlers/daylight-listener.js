@@ -18,8 +18,9 @@ const currentMode = localStorage.theme;
 
 // 需要浏览器和操作系统支持
 const mediaQuery = window.matchMedia?.('(prefers-color-scheme: dark)');
-// 后续使用 isDarkmode 存储最新的模式
-let isDarkMode = $tw.wiki.getTiddlerText('$:/info/darkmode') === 'yes'; // or mediaQuery.matches
+// 后续使用 isDarkmode 存储最新的模式, $:/info/darkmode 有一个listener, 会自动更新, 但是使用yes/no
+// let isDarkMode = $tw.wiki.getTiddlerText('$:/info/darkmode') === 'yes'; // or mediaQuery.matches
+let isDarkMode = mediaQuery.matches;
 
 function preset() {
   const systemMode = isDarkMode ? 'dark' : 'light';
