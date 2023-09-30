@@ -36,6 +36,7 @@ module-type: widget
 
       const { btn, class: classNames } = this.attributes;
 
+      // NOTE: 由于require不会多次加载, 所以如果这个节点是require过来的, 永远不会被刷新
       function createThemeSpan(theme) {
         const storageTheme = localStorage.theme;
 

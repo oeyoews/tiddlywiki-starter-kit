@@ -3,3 +3,5 @@ title: $:/plugins/oeyoews/tiddlywiki-daylight/readme
 !! Tiddlywiki Daylight
 
 <$daylight btn />
+
+> 主流的经典三模式切换(浅色模式, 深色模式, 系统模式)
