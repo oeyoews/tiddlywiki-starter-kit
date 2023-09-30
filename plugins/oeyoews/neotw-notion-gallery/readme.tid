@@ -52,10 +52,12 @@ ps: 支持豆瓣图片链接(不受防盗链影响)
 
 !! v1.TODO
 
+* support gallery to show all images(暂时不做)
+* 自动生成 today jounal card(use bing today wallpaper)(暂时不做)
 * 图片默认启用, 或者部分可选择性启用, 图片加载速度较慢
 * 🟩 icon: 不使用icon字段(改用page-icon),这里借助iconify插件
 * 🟥 sort(filter): add dynamic filter interface
-* 🟥 peek: 实现peek, 支持全屏, tm-modal可以借鉴, 但是全屏还是要另外想办法square
+* 🟥 peek: 实现peek, 支持全屏, tm-modal可以借鉴(灵活性不够), 但是全屏还是要另外想办法square
 * 🟥 tag: tag可点击, 可以修改tag
 * 🟥 dropmenu: 支持tiddler的删除,复制(clone), 链接复制, 重命名, star(favourite 提供支持)
 * 🟥 UI: 添加title(支持修改), tag(tag manager)
