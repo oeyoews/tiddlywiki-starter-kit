@@ -35,7 +35,7 @@ module-type: widget
       }
       const sun = getIcon('sun');
       const dark = getIcon('dark');
-      const { btn } = this.attributes;
+      const { btn, class: classNames } = this.attributes;
 
       const lightNode = createElement('span', {
         class: 'inline dark:hidden',
@@ -53,6 +53,7 @@ module-type: widget
       });
 
       btn && domNode.classList.remove('bg-transparent');
+      classNames && domNode.classList.add(...classNames.split(' '));
 
       domNode.addEventListener('click', toggleMode);
 
