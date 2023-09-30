@@ -24,7 +24,7 @@ neotw-icons widget
       this.execute();
 
       // https://developer.mozilla.org/zh-CN/docs/Web/API/Element/attributes
-      const { title, style, icon, class: classNames } = this.attributes;
+      const { title = '', style, icon, class: classNames } = this.attributes;
 
       const createElement = $tw.utils.domMaker;
 
