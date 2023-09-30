@@ -33,32 +33,43 @@ module-type: widget
           '$:/plugins/oeyoews/tiddlywiki-daylight/' + mode,
         );
       }
-      const sun = getIcon('sun');
-      const dark = getIcon('dark');
+
       const { btn, class: classNames } = this.attributes;
 
-      const lightNode = createElement('span', {
-        class: 'inline dark:hidden',
-      });
-      lightNode.innerHTML = sun;
+      function createThemeSpan(theme) {
+        const storageTheme = localStorage.theme;
 
-      const darkNode = createElement('span', {
-        class: 'hidden dark:inline',
-      });
-      darkNode.innerHTML = dark;
+        const icon = getIcon(theme);
+        const spanNode = createElement('span', {
+          class: storageTheme === theme ? '' : 'hidden',
+        });
+        spanNode.innerHTML = icon;
+        return spanNode;
+      }
+
+      const lightNode = createThemeSpan('light');
+      const darkNode = createThemeSpan('dark');
+      const systemNode = createThemeSpan('system');
 
       const domNode = createElement('button', {
         class: 'aspect-square bg-transparent m-0',
-        children: [lightNode, darkNode],
+        children: [systemNode, lightNode, darkNode],
       });
 
       btn && domNode.classList.remove('bg-transparent');
       classNames && domNode.classList.add(...classNames.split(' '));
 
-      domNode.addEventListener('click', toggleMode);
+      domNode.addEventListener('click', () => {
+        toggleMode();
+        this.refreshSelf();
+      });
 
       parent.insertBefore(domNode, nextSibling);
       this.domNodes.push(domNode);
+    }
+
+    refresh() {
+      return false;
     }
   }
 

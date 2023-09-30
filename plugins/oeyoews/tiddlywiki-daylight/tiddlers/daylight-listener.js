@@ -12,9 +12,9 @@ const { darkPalette, lightPalette, system } = $tw.wiki.getTiddlerDataCached(
   '$:/plugins/oeyoews/tiddlywiki-daylight/config.json',
 );
 
-localStorage.theme = system;
-
-const currentMode = localStorage.theme;
+if (!localStorage.theme) {
+  localStorage.theme = 'system';
+}
 
 // 需要浏览器和操作系统支持
 const mediaQuery = window.matchMedia?.('(prefers-color-scheme: dark)');
@@ -22,39 +22,40 @@ const mediaQuery = window.matchMedia?.('(prefers-color-scheme: dark)');
 // let isDarkMode = $tw.wiki.getTiddlerText('$:/info/darkmode') === 'yes'; // or mediaQuery.matches
 let isDarkMode = mediaQuery.matches;
 
-function updateMode(mode) {
+function updateMode(mode, store = true) {
   document.documentElement.classList.toggle('dark', mode === 'dark');
   const palette = mode === 'dark' ? darkPalette : lightPalette;
   $tw.wiki.setText('$:/palette', 'text', null, palette);
-  localStorage.theme = mode;
+  // 随着系统模式切换, 不需要更新localstorage
+  if (store) {
+    localStorage.theme = mode;
+  }
 }
 
+const listmode = ['system', 'light', 'dark'];
+
+// TODO: 切换system/dark/light 配置, 并且刷新theme, 配置存在localstorage里面
+const NProgress = require('nprogress.min.js'); // This step may cause an error due to plugin loading order; NProgress might not be loaded yet, so manual loading is needed.
 function toggleMode() {
-  const NProgress = require('nprogress.min.js'); // This step may cause an error due to plugin loading order; NProgress might not be loaded yet, so manual loading is needed.
   NProgress?.start();
-  const nextMode = isDarkMode ? 'light' : 'dark';
-  isDarkMode = !isDarkMode;
+  const nextMode = listmode[(listmode.indexOf(localStorage.theme) + 1) % 3];
   updateMode(nextMode);
   NProgress?.done();
 }
 
 function preset() {
   const systemMode = isDarkMode ? 'dark' : 'light';
-  const mode = currentMode === 'system' ? systemMode : currentMode;
-  updateMode(mode);
+  const mode =
+    localStorage.theme === 'system' ? systemMode : localStorage.theme;
+  updateMode(mode, false);
 }
 
 function checkModeListener() {
   preset(mediaQuery);
   mediaQuery?.addEventListener?.('change', () => {
     const systemMode = mediaQuery.matches ? 'dark' : 'light';
-    if (systemMode !== 'dark') {
-      isDarkMode = false;
-    } else {
-      isDarkMode = true;
-    }
-    if (currentMode === 'system') {
-      updateMode(systemMode);
+    if (localStorage.theme === 'system') {
+      updateMode(systemMode, false);
     }
   });
 }

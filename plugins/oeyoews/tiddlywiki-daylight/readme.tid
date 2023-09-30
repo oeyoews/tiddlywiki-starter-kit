@@ -2,8 +2,4 @@ title: $:/plugins/oeyoews/tiddlywiki-daylight/readme
 
 !! Tiddlywiki Daylight
 
-* 配置文件: $:/plugins/oeyoews/tiddlywiki-daylight/config.json
-
-!! Example
-
-{{$:/plugins/oeyoews/tiddlywiki-daylight/pagecontrol}}
+<$daylight btn />
