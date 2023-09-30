@@ -15,7 +15,7 @@ tags: $:/tags/PageTemplate
 <div id="stx-story-top">
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
   <<home-button>>
-  <$daylight btn class="rounded-full transition hover:scale-105 ease-in-out"/>
+  <$daylight btn class="rounded-full transition hover:scale-105 ease-in-out hover:shadow"/>
 </$list>
 </div>
 </$list>
