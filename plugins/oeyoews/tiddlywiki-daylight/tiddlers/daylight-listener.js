@@ -22,12 +22,6 @@ const mediaQuery = window.matchMedia?.('(prefers-color-scheme: dark)');
 // let isDarkMode = $tw.wiki.getTiddlerText('$:/info/darkmode') === 'yes'; // or mediaQuery.matches
 let isDarkMode = mediaQuery.matches;
 
-function preset() {
-  const systemMode = isDarkMode ? 'dark' : 'light';
-  const mode = currentMode === 'system' ? systemMode : currentMode;
-  updateMode(mode);
-}
-
 function updateMode(mode) {
   document.documentElement.classList.toggle('dark', mode === 'dark');
   const palette = mode === 'dark' ? darkPalette : lightPalette;
@@ -42,6 +36,12 @@ function toggleMode() {
   isDarkMode = !isDarkMode;
   updateMode(nextMode);
   NProgress?.done();
+}
+
+function preset() {
+  const systemMode = isDarkMode ? 'dark' : 'light';
+  const mode = currentMode === 'system' ? systemMode : currentMode;
+  updateMode(mode);
 }
 
 function checkModeListener() {
