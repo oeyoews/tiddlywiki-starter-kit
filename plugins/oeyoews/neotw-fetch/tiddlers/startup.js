@@ -15,7 +15,7 @@ fetch-readme module
   exports.name = 'fetch-readme-startup-hook';
   exports.platforms = ['browser'];
   exports.after = ['startup'];
-  exports.synchronous = false;
+  exports.synchronous = true;
   exports.startup = async () => {
     $tw.rootWidget.addEventListener('om-fetch-mdfile', async (event) => {
       const paramObject = event.paramObject || {};
