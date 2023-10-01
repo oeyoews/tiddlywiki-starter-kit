@@ -21,6 +21,8 @@ docker run -d --name tiddlywiki -p 8080:8080 -v $(pwd)/wiki:/app/wiki oeyoews/ti
 <summary>其他安装方式</summary>
 
 ```bash
+# dependcies: git node bun docker docker-compose
+
 # method 01: use docker-compose(推荐使用, 最为方便快捷的方法)
 docker-compose up -d ## docker-compose.yml 参考 [docker-compose.yml](./docker-compose.yml)
 
