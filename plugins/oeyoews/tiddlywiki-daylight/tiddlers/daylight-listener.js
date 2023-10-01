@@ -13,10 +13,9 @@ const config = $tw.wiki.getTiddlerData(
 );
 
 const { darkPalette, lightPalette, system } = config;
+const store = localStorage;
 
-if (!localStorage.theme) {
-  localStorage.theme = system;
-}
+store.theme = store.theme || system;
 
 // 需要浏览器和操作系统支持
 const mediaQuery = window.matchMedia?.('(prefers-color-scheme: dark)');
@@ -28,13 +27,13 @@ function updateMode(mode, store = true) {
   document.documentElement.classList.toggle('dark', mode === 'dark');
   const palette = mode === 'dark' ? darkPalette : lightPalette;
   $tw.wiki.setText('$:/palette', 'text', null, palette);
-  // 随着系统模式切换, 不需要更新localstorage
+  // 随着系统模式切换, 不需要更新store
   if (store) {
-    localStorage.theme = mode;
+    store.theme = mode;
   }
 }
 
-// TODO: 切换system/dark/light 配置, 并且刷新theme, 配置存在localstorage里面
+// TODO: 切换system/dark/light 配置, 并且刷新theme, 配置存在store里面
 const NProgress = require('nprogress.min.js'); // This step may cause an error due to plugin loading order; NProgress might not be loaded yet, so manual loading is needed.
 // TODO: 添加一个参数， 是2/3色转换
 function toggleMode() {
@@ -46,17 +45,16 @@ function toggleMode() {
     listmode.push('system');
   } */
 
-  // 需要考虑localStorage.theme = 'system'的情况
+  // 需要考虑store.theme = 'system'的情况
   const nextMode =
-    listmode[(listmode.indexOf(localStorage.theme) + 1) % listmode.length];
+    listmode[(listmode.indexOf(store.theme) + 1) % listmode.length];
   updateMode(nextMode);
   NProgress?.done();
 }
 
 function preset() {
   const systemMode = isDarkMode ? 'dark' : 'light';
-  const mode =
-    localStorage.theme === 'system' ? systemMode : localStorage.theme;
+  const mode = store.theme === 'system' ? systemMode : localStorage.theme;
   updateMode(mode, false);
 }
 
@@ -64,7 +62,7 @@ function checkModeListener() {
   preset(mediaQuery);
   mediaQuery?.addEventListener?.('change', () => {
     const systemMode = mediaQuery.matches ? 'dark' : 'light';
-    if (localStorage.theme === 'system') {
+    if (store.theme === 'system') {
       updateMode(systemMode, false);
     }
   });
