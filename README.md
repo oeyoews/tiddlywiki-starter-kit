@@ -33,6 +33,17 @@ cd tiddlywiki-starter-kit && pnpm install  # install packages
 pnpm start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm2:start
 
 # method 05: 单文件版本 打开 https://neotw.oeyoewl.top/editions, 直接保存网页到本地
+
+```
+
+```bash
+📂 wiki(任意目录名字)
+   ├── 🐋 docker-compose.yml(关键文件)
+   └── 📂 wiki(wiki目录, 名字由docker-compose.yml决定)
+       ├── 📂 files
+       ├── 🔒 subwiki(私密wiki)
+       ├── 📂 tiddlers(wiki内容)
+       └── 📦 tiddlywiki.info(系统配置信息)
 ```
 
 </details>
