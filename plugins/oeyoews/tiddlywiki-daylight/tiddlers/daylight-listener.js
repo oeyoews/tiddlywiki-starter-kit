@@ -34,13 +34,21 @@ function updateMode(mode, store = true) {
   }
 }
 
-const listmode = ['system', 'light', 'dark'];
-
 // TODO: 切换system/dark/light 配置, 并且刷新theme, 配置存在localstorage里面
 const NProgress = require('nprogress.min.js'); // This step may cause an error due to plugin loading order; NProgress might not be loaded yet, so manual loading is needed.
+// TODO: 添加一个参数， 是2/3色转换
 function toggleMode() {
   NProgress?.start();
-  const nextMode = listmode[(listmode.indexOf(localStorage.theme) + 1) % 3];
+
+  const listmode = ['system', 'light', 'dark'];
+
+  /* if (hasSystemMode) {
+    listmode.push('system');
+  } */
+
+  // 需要考虑localStorage.theme = 'system'的情况
+  const nextMode =
+    listmode[(listmode.indexOf(localStorage.theme) + 1) % listmode.length];
   updateMode(nextMode);
   NProgress?.done();
 }
