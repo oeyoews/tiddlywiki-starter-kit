@@ -2,7 +2,7 @@
     <img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/snapshot02.png" alt="neotw banner" title="neotw"/>
 </center>
 
-> cme的粘贴无效导致无法编辑（无法稳定复现), 甚至会导致系统直接卡死（无法排查）， 不确定是不是tw导致的， 此仓库截至2023/10/01不再更新
+> cme的粘贴无效导致无法编辑（无法稳定复现), 甚至会导致系统直接卡死（无法排查）， 不确定是不是tw导致的， 此分支（main)截至2023/10/01不再更新
 
 ## TiddlyWiki starter kit
 
