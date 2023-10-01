@@ -4,10 +4,6 @@
 
 ## TiddlyWiki starter kit
 
-<!-- <figcaption class="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-500 to-yellow-500 line-clamp-1">
-    A modern style and elegant notebook built with Tiddlywiki5 and Tailwindcss
-</figcaption> -->
-
 > 面向(neo)vim用户的 tiddlywiki starter kit
 
 ## Installation :package:
@@ -36,6 +32,7 @@ pnpm start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm
 
 # method 05: 单文件版本 打开 https://neotw.oeyoewl.top/editions, 直接保存网页到本地
 ```
+
 </details>
 
 ## 如何使用最新的 tiddlywiki-starter-kit
