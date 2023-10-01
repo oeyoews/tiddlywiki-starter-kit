@@ -9,14 +9,12 @@
     "tiddlywiki/tiddlyweb",
     "tiddlywiki/highlight",
     "tiddlywiki/browser-sniff",
-    "tiddlywiki/markdown",
     "oeyoews/neotw-image-better",
     "oeyoews/tiddlywiki-motion",
     "oeyoews/neotw-pwa",
     "oeyoews/neotw-zen-mode",
     "oeyoews/commandpalette",
     "oeyoews/neotw-icons",
-    "oeyoews/neotw-markdown-extensions",
     "oeyoews/neotw-swal2",
     "oeyoews/neotw-copy-code",
     "oeyoews/tiddlywiki-daylight",
@@ -32,6 +30,8 @@
     "oeyoews/tiddlywiki-tiddler-info",
     "oeyoews/tiddlywiki-gravatar",
     "oeyoews/neotw-homepage",
+    "tiddlywiki/markdown",
+    "oeyoews/neotw-markdown-extensions",
     "oeyoews/neotw-cli-info"
   ],
   "build": {

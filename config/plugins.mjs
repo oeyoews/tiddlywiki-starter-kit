@@ -23,22 +23,25 @@ const onlinePlugins = [
   'oeyoews/neotw-notranslate',
 ];
 
-/** @description tiddlywiki 启用插件列表 */
+const markdowPlugins = [
+  'tiddlywiki/markdown',
+  'oeyoews/neotw-markdown-extensions',
+];
+
+/** @description tiddlywiki plugins list */
 let plugins = [
-  // 必选依赖
+  // necessary dependencies
   'tiddlywiki/filesystem',
   'tiddlywiki/tiddlyweb',
   'tiddlywiki/highlight',
   'tiddlywiki/browser-sniff',
   // 'tiddlywiki/pluginlibrary',
-  'tiddlywiki/markdown',
   'oeyoews/neotw-image-better',
   'oeyoews/tiddlywiki-motion',
   'oeyoews/neotw-pwa',
   'oeyoews/neotw-zen-mode',
   'oeyoews/commandpalette',
   'oeyoews/neotw-icons',
-  'oeyoews/neotw-markdown-extensions',
   'oeyoews/neotw-swal2',
   'oeyoews/neotw-copy-code',
   'oeyoews/tiddlywiki-daylight',
@@ -55,6 +58,8 @@ let plugins = [
   'oeyoews/tiddlywiki-gravatar',
   'oeyoews/neotw-homepage',
 ];
+
+process.env.ENABLEMARKDOWN === 'true' && plugins.push(...markdowPlugins);
 
 const dynamicPlugins = ci.isCI ? onlinePlugins : localPlugins;
 
