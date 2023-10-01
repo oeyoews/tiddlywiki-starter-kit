@@ -13,9 +13,8 @@ const config = $tw.wiki.getTiddlerData(
 );
 
 const { darkPalette, lightPalette, system } = config;
-const store = localStorage;
 
-store.theme = store.theme || system;
+localStorage.theme = localStorage.theme || system;
 
 // 需要浏览器和操作系统支持
 const mediaQuery = window.matchMedia?.('(prefers-color-scheme: dark)');
@@ -29,7 +28,7 @@ function updateMode(mode, store = true) {
   $tw.wiki.setText('$:/palette', 'text', null, palette);
   // 随着系统模式切换, 不需要更新store
   if (store) {
-    store.theme = mode;
+    localStorage.theme = mode;
   }
 }
 
@@ -45,16 +44,17 @@ function toggleMode() {
     listmode.push('system');
   } */
 
-  // 需要考虑store.theme = 'system'的情况
+  // 需要考虑localStorage.theme = 'system'的情况
   const nextMode =
-    listmode[(listmode.indexOf(store.theme) + 1) % listmode.length];
+    listmode[(listmode.indexOf(localStorage.theme) + 1) % listmode.length];
   updateMode(nextMode);
   NProgress?.done();
 }
 
 function preset() {
   const systemMode = isDarkMode ? 'dark' : 'light';
-  const mode = store.theme === 'system' ? systemMode : localStorage.theme;
+  const mode =
+    localStorage.theme === 'system' ? systemMode : localStorage.theme;
   updateMode(mode, false);
 }
 
@@ -62,7 +62,7 @@ function checkModeListener() {
   preset(mediaQuery);
   mediaQuery?.addEventListener?.('change', () => {
     const systemMode = mediaQuery.matches ? 'dark' : 'light';
-    if (store.theme === 'system') {
+    if (localStorage.theme === 'system') {
       updateMode(systemMode, false);
     }
   });
