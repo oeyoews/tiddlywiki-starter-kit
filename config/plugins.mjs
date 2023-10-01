@@ -1,6 +1,9 @@
 import ci from 'ci-info';
 
-const CMEPlugins = [
+const enableCME = process.env.ENABLECME === 'true';
+const enableMarkdown = process.env.ENABLEMARKDOWN === 'true';
+
+const cmePlugins = [
   'tiddlywiki/codemirror',
   'tiddlywiki/codemirror-autocomplete',
   'tiddlywiki/codemirror-mode-css',
@@ -12,9 +15,7 @@ const CMEPlugins = [
   'oeyoews/neotw-vimjk',
 ];
 
-let localPlugins = ['oeyoews/neotw-cli-info'];
-
-process.env.ENABLECME === 'true' && localPlugins.push(...CMEPlugins);
+const localPlugins = ['oeyoews/neotw-cli-info'];
 
 const onlinePlugins = [
   'oeyoews/neotw-fetch',
@@ -28,14 +29,11 @@ const markdowPlugins = [
   'oeyoews/neotw-markdown-extensions',
 ];
 
-/** @description tiddlywiki plugins list */
-let plugins = [
-  // necessary dependencies
+const plugins = [
   'tiddlywiki/filesystem',
   'tiddlywiki/tiddlyweb',
   'tiddlywiki/highlight',
   'tiddlywiki/browser-sniff',
-  // 'tiddlywiki/pluginlibrary',
   'oeyoews/neotw-image-better',
   'oeyoews/tiddlywiki-motion',
   'oeyoews/neotw-pwa',
@@ -59,9 +57,10 @@ let plugins = [
   'oeyoews/neotw-homepage',
 ];
 
-process.env.ENABLEMARKDOWN === 'true' && plugins.push(...markdowPlugins);
-
 const dynamicPlugins = ci.isCI ? onlinePlugins : localPlugins;
+
+enableMarkdown && plugins.push(...markdowPlugins);
+enableCME && localPlugins.push(...cmePlugins);
 
 plugins.push(...dynamicPlugins);
 
