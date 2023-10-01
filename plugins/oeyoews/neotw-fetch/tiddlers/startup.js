@@ -30,16 +30,13 @@ fetch-readme module
       $tw.wiki.setText(fileName, 'type', null, 'text/markdown');
     });
 
-    // can use action with renderStartup tag
-    // https
-    if (window.location.protocol === 'http:') return;
+    // if (window.location.protocol === 'http:') return;
     const url =
-      'https://raw.githubusercontent.com/oeyoews/neotw/main/README.md';
+      'https://cdn.jsdelivr.net/gh/oeyoews/tiddlywiki-starter-kit@main/README.md';
     const response = await fetch(url);
     const text = await response.text();
     const fileName = '$:/plugins/oeyoews/neotw/README';
     $tw.wiki.setText(fileName, 'text', null, text);
     $tw.wiki.setText(fileName, 'type', null, 'text/markdown');
-    // navigator for widget button, emulate motion plugins
   };
 })();
