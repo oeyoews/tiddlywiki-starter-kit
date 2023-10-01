@@ -1,6 +1,6 @@
 import ci from 'ci-info';
 
-const localPlugins = [
+const CMEPlugins = [
   'tiddlywiki/codemirror',
   'tiddlywiki/codemirror-autocomplete',
   'tiddlywiki/codemirror-mode-css',
@@ -10,8 +10,14 @@ const localPlugins = [
   'tiddlywiki/codemirror-mode-xml',
   'tiddlywiki/codemirror-mode-javascript',
   'oeyoews/neotw-vimjk',
-  'oeyoews/neotw-cli-info',
 ];
+
+let localPlugins = ['oeyoews/neotw-cli-info'];
+
+console.log(typeof process.env.ENABLECME);
+process.env.ENABLECME === 'true' && localPlugins.push(...CMEPlugins);
+
+console.log('localPlugins', localPlugins);
 
 const onlinePlugins = [
   'oeyoews/neotw-fetch',
