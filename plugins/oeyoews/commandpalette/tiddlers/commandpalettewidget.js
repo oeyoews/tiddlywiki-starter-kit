@@ -497,7 +497,7 @@ Command Palette Widget
       // if add type: "text", google-chrome always tip
       this.searchContainer = createElement('input', {
         type: '',
-        class: 'w-full shadow-none border-none dark:invert',
+        class: 'w-full shadow-none border-none bg-transparent',
         attributes: {
           placeholder: '🔥 Search ...',
         },
