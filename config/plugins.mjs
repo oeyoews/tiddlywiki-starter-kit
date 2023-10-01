@@ -14,10 +14,7 @@ const CMEPlugins = [
 
 let localPlugins = ['oeyoews/neotw-cli-info'];
 
-console.log(typeof process.env.ENABLECME);
 process.env.ENABLECME === 'true' && localPlugins.push(...CMEPlugins);
-
-console.log('localPlugins', localPlugins);
 
 const onlinePlugins = [
   'oeyoews/neotw-fetch',
