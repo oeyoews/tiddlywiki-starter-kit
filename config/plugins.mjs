@@ -29,32 +29,41 @@ const markdowPlugins = [
   'oeyoews/neotw-markdown-extensions',
 ];
 
+// oeyoews plugins
+const oeyoewsPlugins = [
+  'neotw-image-better',
+  'tiddlywiki-motion',
+  'neotw-pwa',
+  'neotw-zen-mode',
+  'commandpalette',
+  'neotw-icons',
+  'neotw-swal2',
+  'neotw-copy-code',
+  'tiddlywiki-daylight',
+  'tiddlywiki-videos',
+  'neotw',
+  'neotw-info',
+  'neotw-reverse-card',
+  'tiddlywiki-back-to-top',
+  'tiddlywiki-modal-ui',
+  'tiddlywiki-publish-tiddler',
+  'tiddlywiki-tailwindcss-plus',
+  'neotw-notion-gallery',
+  'tiddlywiki-tiddler-info',
+  'tiddlywiki-gravatar',
+  'neotw-homepage',
+];
+
+const oeyoewsFormatedPlugins = oeyoewsPlugins.map((plugin) => {
+  return `oeyoews/${plugin}`;
+});
+
 const plugins = [
   'tiddlywiki/filesystem',
   'tiddlywiki/tiddlyweb',
   'tiddlywiki/highlight',
   'tiddlywiki/browser-sniff',
-  'oeyoews/neotw-image-better',
-  'oeyoews/tiddlywiki-motion',
-  'oeyoews/neotw-pwa',
-  'oeyoews/neotw-zen-mode',
-  'oeyoews/commandpalette',
-  'oeyoews/neotw-icons',
-  'oeyoews/neotw-swal2',
-  'oeyoews/neotw-copy-code',
-  'oeyoews/tiddlywiki-daylight',
-  'oeyoews/tiddlywiki-videos',
-  'oeyoews/neotw',
-  'oeyoews/neotw-info',
-  'oeyoews/neotw-reverse-card',
-  'oeyoews/tiddlywiki-back-to-top',
-  'oeyoews/tiddlywiki-modal-ui',
-  'oeyoews/tiddlywiki-publish-tiddler',
-  'oeyoews/tiddlywiki-tailwindcss-plus',
-  'oeyoews/neotw-notion-gallery',
-  'oeyoews/tiddlywiki-tiddler-info',
-  'oeyoews/tiddlywiki-gravatar',
-  'oeyoews/neotw-homepage',
+  ...oeyoewsFormatedPlugins,
 ];
 
 const dynamicPlugins = ci.isCI ? onlinePlugins : localPlugins;
