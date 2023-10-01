@@ -3,6 +3,15 @@ import ci from 'ci-info';
 const enableCME = process.env.ENABLECME === 'true';
 const enableMarkdown = process.env.ENABLEMARKDOWN === 'true';
 
+const localPlugins = ['oeyoews/neotw-cli-info'];
+
+const onlinePlugins = [
+  'oeyoews/neotw-fetch',
+  'oeyoews/tiddlywiki-github-share',
+  'oeyoews/tiddlywiki-readonly',
+  'oeyoews/neotw-notranslate',
+];
+
 const cmePlugins = [
   'tiddlywiki/codemirror',
   'tiddlywiki/codemirror-autocomplete',
@@ -13,15 +22,6 @@ const cmePlugins = [
   'tiddlywiki/codemirror-mode-xml',
   'tiddlywiki/codemirror-mode-javascript',
   'oeyoews/neotw-vimjk',
-];
-
-const localPlugins = ['oeyoews/neotw-cli-info'];
-
-const onlinePlugins = [
-  'oeyoews/neotw-fetch',
-  'oeyoews/tiddlywiki-github-share',
-  'oeyoews/tiddlywiki-readonly',
-  'oeyoews/neotw-notranslate',
 ];
 
 const markdowPlugins = [
