@@ -32,7 +32,16 @@
     "oeyoews/neotw-homepage",
     "tiddlywiki/markdown",
     "oeyoews/neotw-markdown-extensions",
-    "oeyoews/neotw-cli-info"
+    "oeyoews/neotw-cli-info",
+    "tiddlywiki/codemirror",
+    "tiddlywiki/codemirror-autocomplete",
+    "tiddlywiki/codemirror-mode-css",
+    "tiddlywiki/codemirror-search-replace",
+    "tiddlywiki/codemirror-closebrackets",
+    "tiddlywiki/codemirror-mode-markdown",
+    "tiddlywiki/codemirror-mode-xml",
+    "tiddlywiki/codemirror-mode-javascript",
+    "oeyoews/neotw-vimjk"
   ],
   "build": {
     "index": [
