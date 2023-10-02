@@ -28,11 +28,8 @@ module-type: widget
       const createElement = $tw.utils.domMaker;
       const wiki = $tw.wiki;
 
-      function getIcon(mode) {
-        return wiki.getTiddlerText(
-          '$:/plugins/oeyoews/tiddlywiki-daylight/' + mode,
-        );
-      }
+      const getIcon = (mode) =>
+        wiki.getTiddlerText('$:/plugins/oeyoews/tiddlywiki-daylight/' + mode);
 
       const { btn, class: classNames } = this.attributes;
 
