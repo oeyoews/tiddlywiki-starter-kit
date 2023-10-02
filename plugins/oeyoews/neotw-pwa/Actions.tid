@@ -1,6 +1,0 @@
-tags: $:/tags/StartupAction/PostRender
-title: $:/plugins/oeyoews/neotw-pwa/Action
-
-<$list filter="[{$:/info/url/search}match[?layout=neotw-pwa]]">
-  <$action-setfield $tiddler="$:/layout" text="$:/plugins/oeyoews/neotw-pwa/Layout"/>
-</$list>
