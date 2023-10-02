@@ -39,7 +39,8 @@ function updateMode(mode, isSaveMode = true) {
   if (!listmode.includes(mode)) return;
   // BUG: 如果使用switch 会将里面的情况都过一遍， 有问题
   document.documentElement.classList.remove('light', 'dark');
-  let nextMode, nextPalette;
+  let nextMode,
+    nextPalette = null;
 
   if (mode === 'system') {
     nextMode = mediaQuery.matches ? 'dark' : 'light';
