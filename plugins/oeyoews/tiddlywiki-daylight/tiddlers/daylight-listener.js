@@ -12,9 +12,10 @@ const config = $tw.wiki.getTiddlerData(
   '$:/plugins/oeyoews/tiddlywiki-daylight/config',
 );
 
-const { darkPalette, lightPalette, system } = config;
+const { darkPalette, lightPalette } = config;
 
-localStorage.theme = localStorage.theme || system;
+// if theme is empty，setup to system
+localStorage.theme = localStorage.theme || 'system';
 
 // 需要浏览器和操作系统支持
 const mediaQuery = window.matchMedia?.('(prefers-color-scheme: dark)');

@@ -69,6 +69,8 @@ module-type: widget
       this.domNodes.push(domNode);
     }
 
+    // TODO: when mode is changed, refresh this widget
+    // tailwindcss example: 如果是system, 直接删除了localStorage.theme
     refresh() {
       return false;
     }
