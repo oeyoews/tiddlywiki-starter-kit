@@ -24,7 +24,15 @@ neotw-reverse-card widget
       this.computeAttributes();
       this.execute();
 
-      const { q = '点击翻转', a = '这是背面', json } = this.attributes;
+      // priority: attribute -> fiedlds -> default
+      let { q, a, json } = this.attributes;
+      const currentTiddler = this.getVariable('currentTiddler');
+      const { fields } = $tw.wiki.getTiddler(currentTiddler);
+
+      // 仅仅支持一个rcard
+      const { question, answer } = fields;
+      if (!q) q = question || 'question';
+      if (!a) a = answer || 'answer';
 
       const domNode = $tw.utils.domMaker('div', {
         class: json ? 'flex overflow-scroll space-x-4 snap-x px-12' : '',
