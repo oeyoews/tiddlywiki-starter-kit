@@ -71,6 +71,12 @@ module-type: widget
         }
       });
 
+      // 右键配置palette
+      domNode.addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+        $tw.modal.display('$:/plugins/oeyoews/tiddlywiki-daylight/config');
+      });
+
       /* const mediaQuery = window.matchMedia?.('(prefers-color-scheme: dark)');
       mediaQuery?.addEventListener?.('change', () => {
         // TODO: 由于change不会修改配置, 所以class没有变化， ui也没有变化

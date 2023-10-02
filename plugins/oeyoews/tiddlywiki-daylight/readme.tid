@@ -6,6 +6,8 @@ title: $:/plugins/oeyoews/tiddlywiki-daylight/readme
 
 > 提供了daylight widget
 
+> 右键点击图标查看配置
+
 <$daylight btn class="rounded-full p-2 hover:scale-105 transition"/>
 
 ```wiki
