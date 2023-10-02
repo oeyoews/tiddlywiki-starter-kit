@@ -120,6 +120,7 @@
         var numberingStr = hInfo.numbering.join('.');
         var anchor = options.anchorIdPrefix + numberingStr;
 
+        // TODO: how to support multiple tiddlers anchors
         results.push(`
           <li class="capitalize">
             <a href="#${anchor}">
