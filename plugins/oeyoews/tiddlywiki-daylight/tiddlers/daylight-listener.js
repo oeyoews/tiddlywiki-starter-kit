@@ -14,8 +14,14 @@ const config = $tw.wiki.getTiddlerData(
 
 const { darkPalette, lightPalette } = config;
 
+const listmode = ['system', 'light', 'dark'];
 // if theme is empty，setup to system
 localStorage.theme = localStorage.theme || 'system';
+
+// 放置用户手动修改该数值
+if (!listmode.includes(localStorage.theme)) {
+  localStorage.theme = 'system';
+}
 
 // 需要浏览器和操作系统支持
 const mediaQuery = window.matchMedia?.('(prefers-color-scheme: dark)');
@@ -28,6 +34,9 @@ let isDarkMode = mediaQuery.matches;
  * @param {boolean} isSaveMode 是否保存到localStorage
  */
 function updateMode(mode, isSaveMode = true) {
+  // support storage share
+  mode = mode === 'null' ? 'system' : mode;
+  if (!listmode.includes(mode)) return;
   // BUG: 如果使用switch 会将里面的情况都过一遍， 有问题
   document.documentElement.classList.remove('light', 'dark');
   let nextMode, nextPalette;
@@ -55,8 +64,6 @@ const NProgress = require('nprogress.min.js'); // This step may cause an error d
 function toggleMode() {
   NProgress?.start();
 
-  const listmode = ['system', 'light', 'dark'];
-
   /* if (hasSystemMode) {
     listmode.push('system');
   } */
@@ -81,6 +88,25 @@ function checkModeListener() {
     const systemMode = mediaQuery.matches ? 'dark' : 'light';
     if (localStorage.theme === 'system') {
       updateMode(systemMode, false);
+    }
+  });
+
+  // 共享数据
+  window.addEventListener('storage', function (event) {
+    if (event.key === 'theme') {
+      const newTheme = event.newValue;
+      // 发送消息给其他页面
+      window.postMessage(
+        {
+          type: 'localStorageUpdate',
+          key: 'theme',
+          value: newTheme,
+        },
+        '*',
+      );
+      if (event.oldValue !== newTheme) {
+        updateMode(newTheme);
+      }
     }
   });
 }

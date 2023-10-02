@@ -65,6 +65,21 @@ module-type: widget
         this.refreshSelf();
       });
 
+      // 仅仅刷新ui, 不更新配置
+      window.addEventListener('storage', (event) => {
+        if (event.oldValue !== event.newValue) {
+          if (['system', 'light', 'dark'].includes(event.newValue)) {
+            this.refreshSelf();
+          }
+        }
+      });
+
+      /* const mediaQuery = window.matchMedia?.('(prefers-color-scheme: dark)');
+      mediaQuery?.addEventListener?.('change', () => {
+        // TODO: 由于change不会修改配置, 所以class没有变化， ui也没有变化
+        this.refreshSelf();
+      }); */
+
       parent.insertBefore(domNode, nextSibling);
       this.domNodes.push(domNode);
     }
