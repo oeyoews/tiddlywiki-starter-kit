@@ -22,19 +22,35 @@ const mediaQuery = window.matchMedia?.('(prefers-color-scheme: dark)');
 // let isDarkMode = $tw.wiki.getTiddlerText('$:/info/darkmode') === 'yes'; // or mediaQuery.matches
 let isDarkMode = mediaQuery.matches;
 
-function updateMode(mode, store = true) {
-  document.documentElement.classList.toggle('dark', mode === 'dark');
-  const palette = mode === 'dark' ? darkPalette : lightPalette;
-  $tw.wiki.setText('$:/palette', 'text', null, palette);
-  // 随着系统模式切换, 不需要更新store
-  if (store) {
-    localStorage.theme = mode;
+/**
+ * @param {string} mode 获取需要切换到的模式
+ * @param {boolean} isSaveMode 是否保存到localStorage
+ */
+function updateMode(mode, isSaveMode = true) {
+  // BUG: 如果使用switch 会将里面的情况都过一遍， 有问题
+  document.documentElement.classList.remove('light', 'dark');
+  let nextMode, nextPalette;
+
+  if (mode === 'system') {
+    nextMode = mediaQuery.matches ? 'dark' : 'light';
+  }
+
+  document.documentElement.classList.add(nextMode || mode);
+
+  const nextPaletteMode = nextMode || mode;
+
+  nextPalette = nextPaletteMode === 'light' ? lightPalette : darkPalette;
+
+  $tw.wiki.setText('$:/palette', 'text', null, nextPalette);
+  // change event dont need storage
+  if (isSaveMode) {
+    localStorage.theme = nextMode ? 'system' : mode;
   }
 }
 
 // TODO: 切换system/dark/light 配置, 并且刷新theme, 配置存在store里面
 const NProgress = require('nprogress.min.js'); // This step may cause an error due to plugin loading order; NProgress might not be loaded yet, so manual loading is needed.
-// TODO: 添加一个参数， 是2/3色转换
+
 function toggleMode() {
   NProgress?.start();
 
@@ -44,7 +60,7 @@ function toggleMode() {
     listmode.push('system');
   } */
 
-  // 需要考虑localStorage.theme = 'system'的情况
+  // 获取下一个模式light/dark/system
   const nextMode =
     listmode[(listmode.indexOf(localStorage.theme) + 1) % listmode.length];
   updateMode(nextMode);
