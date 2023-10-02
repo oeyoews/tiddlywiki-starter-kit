@@ -1,10 +1,11 @@
 import ci from 'ci-info';
 import chalk from 'chalk';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const enableCME = process.env.ENABLECME === 'true';
 const enableMarkdown = process.env.ENABLEMARKDOWN === 'true';
-
-console.log(process.env.ENABLEMARKDOWN);
 
 console.log(`
   CODEMIRROR: ${chalk.green(enableCME)}
