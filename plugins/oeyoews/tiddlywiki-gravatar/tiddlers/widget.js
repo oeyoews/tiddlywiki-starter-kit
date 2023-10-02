@@ -50,19 +50,17 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
 
       const hash = md5(email.trim().toLowerCase());
 
-      let src;
-
       const types = {
         qq: `https://q1.qlogo.cn/g?b=qq&nk=${email}&s=${size}`,
         github: `https://github.com/${username}.png?size=${size}`,
         gravatar: `https://gravatar.com/avatar/${hash}.png?s=${size}`,
-        gravatar_cn: `https://cn.gravatar.com/avatar/${hash}.png?s=${size}`,
+        gcn: `https://cn.gravatar.com/avatar/${hash}.png?s=${size}`,
         url,
       };
 
-      types[type]?.includes(type)
-        ? (src = types[type])
-        : (src = types.gravatar);
+      const hasType = Object.keys(types).includes(type);
+
+      const src = hasType ? types[type] : types.gravatar;
 
       const dynamicClasses = 'blur scale-105';
       const imgClass = `rounded-full align-middle duration-200 transition object-cover object-center ${className} ${dynamicClasses}`;
