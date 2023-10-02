@@ -78,5 +78,6 @@ enableMarkdown && plugins.push(...markdowPlugins);
 enableCME && localPlugins.push(...cmePlugins);
 
 plugins.push(...dynamicPlugins);
+console.log(plugins);
 
 export default plugins;
