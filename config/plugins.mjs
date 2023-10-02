@@ -1,7 +1,13 @@
 import ci from 'ci-info';
+import chalk from 'chalk';
 
 const enableCME = process.env.ENABLECME === 'true';
 const enableMarkdown = process.env.ENABLEMARKDOWN === 'true';
+
+console.log(`
+  CODEMIRROR: ${chalk.green(enableCME)}
+  MARKDOWN: ${chalk.green(enableMarkdown)}
+`);
 
 const localPlugins = ['oeyoews/neotw-cli-info'];
 
