@@ -81,5 +81,9 @@ module.exports = function createCard(
 
   observer.observe(img);
 
+  item.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+  });
+
   return item;
 };
