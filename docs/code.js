@@ -1,3 +1,8 @@
+/**
+ * @description: tw-typed is a tw api declaration for typescript, it also works for javascript
+ *
+ */
+
 // wiki api
 const wiki = $tw.wiki;
 
