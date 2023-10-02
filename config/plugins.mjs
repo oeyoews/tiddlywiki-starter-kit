@@ -4,6 +4,8 @@ import chalk from 'chalk';
 const enableCME = process.env.ENABLECME === 'true';
 const enableMarkdown = process.env.ENABLEMARKDOWN === 'true';
 
+console.log(process.env.ENABLEMARKDOWN);
+
 console.log(`
   CODEMIRROR: ${chalk.green(enableCME)}
   MARKDOWN: ${chalk.green(enableMarkdown)}
@@ -78,6 +80,5 @@ enableMarkdown && plugins.push(...markdowPlugins);
 enableCME && localPlugins.push(...cmePlugins);
 
 plugins.push(...dynamicPlugins);
-console.log(plugins);
 
 export default plugins;
