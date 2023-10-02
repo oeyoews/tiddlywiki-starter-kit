@@ -1,9 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun-moon" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-   <path d="M9.173 14.83a4 4 0 1 1 5.657 -5.657"></path>
-   <path d="M11.294 12.707l.174 .247a7.5 7.5 0 0 0 8.845 2.492a9 9 0 0 1 -14.671 2.914"></path>
-   <path d="M3 12h1"></path>
-   <path d="M12 3v1"></path>
-   <path d="M5.6 5.6l.7 .7"></path>
-   <path d="M3 21l18 -18"></path>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M24 11.974L13.908 35.478l-2.033-6.315l-4.365 8.692"/><circle cx="13.419" cy="15.733" r="3.578" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m9.94 12.254l-.915-.916m8.789 8.79l-.916-.916m-3.478-8.399V9.518m0 12.43v-1.296m4.919-4.919h1.296m-12.431 0H8.5m8.398-3.479l.916-.916m-8.789 8.79l.916-.916m25.167-7.708l-.069.005a4.225 4.225 0 0 1-2.88 7.24a4.225 4.225 0 1 0 2.949-7.246Z"/><circle cx="31.117" cy="12.443" r=".333" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32.005" cy="16.319" r=".333" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m24 11.974l10.092 23.504l2.033-6.315l4.302 8.567M24 45.406V11.974"/><circle cx="24" cy="24" r="21.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
