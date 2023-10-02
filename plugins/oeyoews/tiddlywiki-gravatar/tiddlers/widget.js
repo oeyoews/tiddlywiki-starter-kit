@@ -46,11 +46,13 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
         size = 100,
         alt = 'Avatar',
         type = 'gravatar',
+        key = 'sea',
       } = this.attributes;
 
       const hash = md5(email.trim().toLowerCase());
 
       const types = {
+        unsplash: `http://source.unsplash.com/random?${key}`,
         qq: `https://q1.qlogo.cn/g?b=qq&nk=${email}&s=${size}`,
         github: `https://github.com/${username}.png?size=${size}`,
         gravatar: `https://gravatar.com/avatar/${hash}.png?s=${size}`,
@@ -63,7 +65,7 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
       const src = hasType ? types[type] : types.gravatar;
 
       const dynamicClasses = 'blur scale-105';
-      const imgClass = `rounded-full align-middle duration-200 transition object-cover object-center ${className} ${dynamicClasses}`;
+      const imgClass = `rounded-full align-middle duration-200 transition object-cover object-center ${className} ${dynamicClasses} aspect-square`;
 
       const img = createElement('img', {
         class: imgClass,
