@@ -14,7 +14,7 @@ wiki.getTiddler().fields;
 wiki.getTiddlerData();
 wiki.getTiddlerText();
 wiki.addTiddler();
-wiki.setText();
+wiki.setText(title, key, null, value);
 wiki.deleteTiddler();
 wiki.filterTiddlers('[!is[system]]');
 wiki.getTiddlersWithTag(tag);
@@ -28,3 +28,6 @@ $tw.utils.domMaker; // createElement
 // ui
 $tw.notifier(); // send notification
 $tw.modal.display(title); // show dialog
+
+// widget
+this.getVariable('currentTiddler');
