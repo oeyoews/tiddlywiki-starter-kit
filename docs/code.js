@@ -17,6 +17,8 @@ wiki.addTiddler();
 wiki.setText();
 wiki.deleteTiddler();
 wiki.filterTiddlers('[!is[system]]');
+wiki.getTiddlersWithTag(tag);
+$tw.wiki.getTiddlersAsJson(title);
 
 wiki.setTiddlerData(title, data, fields, options);
 
