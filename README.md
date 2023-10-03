@@ -2,7 +2,8 @@
     <img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/snapshot02.png" alt="neotw banner" title="neotw"/>
 </center>
 
-> CME的粘贴无效导致无法编辑（无法稳定复现), 甚至会导致系统直接卡死（无法排查）， 不确定是不是tw导致的，默认禁用cme, 如果你想要启用，修改.env 文件即可
+<!-- > CME的粘贴无效导致无法编辑（无法稳定复现), 甚至会导致系统直接卡死（无法排查）， 不确定是不是tw导致的，默认禁用cme, 如果你想要启用，修改.env 文件即可 -->
+> 使用docker运行总是会导致系统卡死（不确定）
 
 ## TiddlyWiki starter kit
 
