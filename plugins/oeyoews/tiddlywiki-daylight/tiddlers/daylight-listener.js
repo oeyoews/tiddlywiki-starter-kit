@@ -15,9 +15,6 @@ const config = $tw.wiki.getTiddlerData(
 const { darkPalette, lightPalette } = config;
 
 const listmode = ['system', 'light', 'dark'];
-// if theme is empty，setup to system
-localStorage.theme = localStorage.theme || 'system';
-
 // 放置用户手动修改该数值
 if (!listmode.includes(localStorage.theme)) {
   localStorage.theme = 'system';
