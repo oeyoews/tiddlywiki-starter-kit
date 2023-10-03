@@ -34,6 +34,8 @@ pnpm start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm
 
 # method 05: 单文件版本 打开 https://neotw.oeyoewl.top/editions, 直接保存网页到本地
 
+# method 06: systemd https://www.freedesktop.org/software/systemd/man/systemd.service.html
+
 ```
 
 ```bash
