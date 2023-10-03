@@ -23,7 +23,7 @@ jobs:
         with:
           bun-version: latest
       - name: Install Dependency
-        run: bun install --production
+        run: bun install # --production
 
       - name: Build Page
         run: bun run --silent build
