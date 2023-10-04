@@ -8,4 +8,9 @@
 
 ## How to write tiddlywiki plugin for yourself ?
 
+## Plugins template
+
+[template](https://github.com/oeyoews/tiddlywiki-starter-kit/tree/main/templates/new-plugin)
+
+
 > Coming
