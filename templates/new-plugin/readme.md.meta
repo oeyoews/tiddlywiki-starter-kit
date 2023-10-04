@@ -1,2 +1,3 @@
 title: $:/plugins/oeyoews/${pluginname}/readme
 description: ${pluginname}
+type: text/markdown
