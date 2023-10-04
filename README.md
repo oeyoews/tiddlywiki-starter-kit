@@ -61,6 +61,8 @@ pnpm start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm
     <img src="https://vercel.com/button" alt="Deploy with Vercel" />
 </a>
 
+> NOTE: vercel不会进行浅克隆，很大几率导致部署失败，此仓库提交次数过多，建议用户手动潜浅克隆仓库，手动在vercel上进行部署
+
 
 ![cat](https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/cat.svg 'cat')
 
