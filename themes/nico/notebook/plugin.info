@@ -5,7 +5,7 @@
   "author": "NicolasPetton",
   "version": "v2.0.1",
   "core-version": ">=5.2.7",
-  "list": "readme LICENSE changelog",
+  "list": "readme",
   "dependents": [
     "$:/themes/tiddlywiki/vanilla",
     "$:/plugins/oeyoews/tailwindcss-plus"
