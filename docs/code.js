@@ -1,6 +1,6 @@
 /**
  * @description: tw-typed is a tw api declaration for typescript, it also works for javascript
- *
+ * 下面是插件开发中经常使用到的一些方法
  */
 
 // wiki api
@@ -23,11 +23,11 @@ $tw.wiki.getTiddlersAsJson(title);
 wiki.setTiddlerData(title, data, fields, options);
 
 // dom
-$tw.utils.domMaker; // createElement
+$tw.utils.domMaker; // createElement 
 
 // ui
 $tw.notifier(); // send notification
-$tw.modal.display(title); // show dialog
+$tw.modal.display(title); // show a dialog
 
 // widget
-this.getVariable('currentTiddler');
+this.getVariable('currentTiddler'); 获取当前条目名称
