@@ -10,6 +10,7 @@
 
 ## Plugins template
 
+- [ ] 将wiki的内容同步到这里
 [template](https://github.com/oeyoews/tiddlywiki-starter-kit/tree/main/templates/new-plugin)
 
 
