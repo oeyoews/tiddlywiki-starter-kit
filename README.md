@@ -57,9 +57,10 @@ pnpm start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm
 ## Deploy :gear:
 
 <!-- https://vercel.com/docs/deploy-button -->
-<a target="_blank" href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Foeyoews%2Fneotw">
+<a target="_blank" href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Foeyoews%2Ftiddlywiki-starter-kit">
     <img src="https://vercel.com/button" alt="Deploy with Vercel" />
 </a>
+
 
 ![cat](https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/cat.svg 'cat')
 
