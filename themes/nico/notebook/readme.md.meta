@@ -1,7 +1,3 @@
 title: $:/themes/nico/notebook/readme
 description: Notebook Theme Variant
 type: text/markdown
-
-## Note
-
-需要搭配 tiddlywiki-starter-kit 使用(依赖tailwindcss)
