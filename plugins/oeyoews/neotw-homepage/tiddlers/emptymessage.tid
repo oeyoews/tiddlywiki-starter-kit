@@ -22,9 +22,6 @@ title: $:/config/EmptyStoryMessage
 </center>
 <$cards />
 </$list>
-<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
-    <$rcard json="$:/plugins/oeyoews/neotw-reverse-card/01.json"/>
-</$list>
 </$list>
 
 <!-- <div class="my-4"> -->
