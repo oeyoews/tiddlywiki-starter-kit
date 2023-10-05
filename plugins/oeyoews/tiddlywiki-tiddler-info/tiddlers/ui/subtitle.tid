@@ -4,7 +4,7 @@ tags: $:/tags/ViewTemplate
 \define tid() $:/plugins/oeyoews/tiddlywiki-tiddler-info/config
 
 <$reveal type="nomatch" stateTitle=<<folded-state>> text="hide" tag="div" retain="yes" animate="yes">
-<div class="tc-subtitle text-center my-2">
+<div class="tc-subtitle text-center my-2 print:hidden">
 <$list filter="[all[current]has[creator]]">
     <$avatar inline link="https://github.com/oeyoews" />
 {{!!creator}}&nbsp;
