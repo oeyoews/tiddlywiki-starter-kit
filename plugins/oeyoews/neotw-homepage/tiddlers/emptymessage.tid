@@ -20,8 +20,10 @@ title: $:/config/EmptyStoryMessage
 <center>
   <h2>近期更新动态</h2>
 </center>
-
 <$cards />
+</$list>
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
+    <$rcard json="$:/plugins/oeyoews/neotw-reverse-card/01.json"/>
 </$list>
 </$list>
 
