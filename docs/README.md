@@ -28,11 +28,40 @@
 
 
 * tw5里面的插件开发由于其独特的风格，开发方式有很多种，tw 官方的dev文档也没有明确说明，仅仅展示了一些具体的插件代码示例，并没有具体说明（tw的文档是多个tiddler组成的，全靠链接进行联系， 如果没有按照官方的顺序来看，很容易犹豫不知道tiddler的上下文环境感到迷惑
-* 如果你对tw的插件代码编写熟悉后，建议在tw源代码仓库里面搜索相关的关键词，查看对应的源码，或者直接看tw官方的插件是如何编写的（js 插件官方使用es5编写，建议直接使用es6 的class编写代码）
+* 如果你对tw的插件代码编写熟悉后，建议在tw源代码仓库里面搜索相关的关键词，查看对应的源码，或者直接看tw官方的插件是如何编写的（js 插件官方使用es5编写，建议直接使用es6 的class编写代码
 
 * 由于wikitext编写体验没有js/ts代码体验好（wikitext没有lsp，提示全靠snippet， 我个人写的更多是js插件，下面如果没有特殊说明，默认就是js插件开发细节
 
 * 你可以直接在tw里面新建一个文件，文件类型选择javascript，额外添加一个key-value 字段 module-type: widget
+
+## UI
+
+在tw经常需要操作一些dom， 一般js的写法就是使用`document.createElement('xxx')`的做法， 但是如果有多个节点需要插入，就需要不断进行append， 看起来比较混乱， tw基于createElement 封装了了一个函数 `$tw.utils.domMaker` 
+
+```js
+const createElement = $tw.utils.domMaker
+
+const div = createElement('div', {
+    class: 'm-2',
+    text: 'this is a div node', 
+    attributes:{
+        title: 'tooptip',
+            },
+    children: [divNode1, divNode2, xxx]
+})
+```
+
+## Data
+
+* tw里面的数据有两种格式json和tw自带的x-dictionary-tiddler类型的文件， 但是获取后都是一个json对象，没有区别， x-dictionary-tiddler的形式都是key- value的类型，形式比较固定， 直接使用require（'xxx.json')即可加载，就像加载普通的json文件一样， 唯一需要注意的是文件名字需要使用tw里面的文件名字
+
+## meta
+
+* tw识别每个tiddler的title全靠meta数据， 如果一个tiddler没有title字段，就会默认使用文件系统的真实路径作为title， 比如 `/home/username/workspace/wiki/tiddlers/GettingStarted.tid`，
+
+## 相对路径
+
+* require 在tw里面同样支持相对路径， 只不过是基于tw的虚拟文件路由
 
 ## 插件文档
 
