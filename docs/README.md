@@ -111,6 +111,10 @@ const div = createElement('div', {
 
 - 除了写出好的插件代码，详尽的插件文档或者是教程也是很重要的，因为你的插件面向的是用户，用户只有通过文档才能了解作者的插件应当如何使用，进而完全发挥插件的最大作用，尽可能简洁扼要的说明插件的功能，用法，注意事项，使用示例等必要的说明
 
+## 插件示例
+
+[template](https://github.com/oeyoews/tiddlywiki-starter-kit/tree/main/plugins/oeyoews)
+
 
 ## Concepts
 
