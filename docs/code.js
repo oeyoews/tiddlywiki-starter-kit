@@ -1,7 +1,8 @@
-/**
- * @description: tw-typed is a tw api declaration for typescript, it also works for javascript
- * 下面是插件开发中经常使用到的一些方法
- */
+/*\
+title: docs/code.js
+type: application/javascript
+description: tw-typed is a tw api declaration for typescript, it also works for javascript;下面是插件开发中经常使用到的一些方法
+\*/
 
 // wiki api
 const wiki = $tw.wiki;
