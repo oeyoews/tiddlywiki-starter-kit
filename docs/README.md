@@ -4,6 +4,10 @@
 
 这无疑增加了每个开发者的复旦，并且严重影响效率，tw的用户很少很少，一直坚持使用的大概是真爱了吧，使用tw并且进行开发tw插件的就少上加少了，tw没有进行商业化开发，所以很多功能虽然有了，但是使用体验过上并不好，但tw真的是一款令人瞬间眼前一亮的软件.
 
+
+> **Warning** </br>
+> 此文件处于alpha阶段，正在不断整理并更新， 仅仅作为参考
+
 # Tutorials
 
 ## Introduce
@@ -21,6 +25,46 @@
 ## 插件加载顺序
 
 很抱歉，tw并不支持指定插件的加载顺序，但是你可以决定条目的优先级 ...未完待续
+
+## 文件后缀
+
+一般文件后缀都是tid开头，但是如果你看过tw的官方插件的写法，你会发现也可以直接使用js后缀， 而不需要使用tid，
+那么tw是靠什么识别的呢， 就是文件开头的注释，tw会自动识别注释中的一些特殊格式的数据（注释删除真的会影响代码运行）
+
+```js
+/*\
+title: plugin/username/pluginname/widget.js
+type: application/javascript
+module-type: widget
+
+here is a js file description
+
+filename: widget.js
+
+\*/
+```
+
+就是类似上面的那种格式， 或者你也可以直接写js代码，将这些数据注释放在widget.js.meta 的文件中去， 写法和tid写法一致， 注意meta前面的名字文件一定要保持一致，其它类型的文件也同理，比如 style.css 和 style.css.meta
+
+## 插件名字
+
+$:/plugins/author/pluginname (插件名字可以任意命名但不推荐，建议使用官方写法）
+
+## 插件介绍
+
+```bash
+--- tiddlers
+--- readme.tid
+--- plugin.info
+--- icon.tid
+```
+
+在tw里面存储tiddler的文件目录默认是tiddlers，所以在插件目录里面也默认使用tiddlers名字，可以看作src的意思，核心代码都在这个木里面;
+
+icon.tid 提供插件的图标，就是插件logo的意思
+
+readme.tid 是关于插件的readme， 同样你也可以使用readme.md 代替，你可以在readme.md 文件里面使用markdown语法，但是需要安装markdown插件，在tw里面才能识别
+
 
 ## 插件的开发方式
 
@@ -78,6 +122,10 @@ const div = createElement('div', {
 
 * 如果你的插件经常需要添加样式，请考虑使用css library， 手写样式真的很影响插件的编写体验，如果你熟悉一个css library， 就不需要为此烦恼（css library 不要过大， 在tw里面如果一个插件的大小超过500开， 就可以算得上一个大插件了，一定程度上会影响加载速度）
 * tw源代码使用es5， 但是你也可以使用es6，这主要取决于你的浏览器的支持程度（2023年了， 只要你的浏览器不是很旧，几乎都支持）， 但是注意import机制在这里肯定是不支持的，tw使用require； 使用es6可以极大程度上简化代码，比如最常使用的箭头函数，解构赋值，展开运算符，模版字符串， Promise等
+
+## 关于中文教程
+
+中文教程里面也有一些相关的插件开发介绍， 但是不够系统，在tw里面分散为多个文件，很容易失去文章的上下文，不利于快速通读了解tw的大致插件开发流程
 
 ## Plugins template
 
