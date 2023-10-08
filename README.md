@@ -2,7 +2,9 @@
     <img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/snapshot02.png" alt="neotw banner" title="neotw"/>
 </center>
 
-![Static Badge](https://img.shields.io/badge/Tiddlywiki5-neotw-green?style=for-the-badge&logo=tiddlywiki)
+![TIDDLY Static Badge](https://img.shields.io/badge/Tiddlywiki5-neotw-green?style=for-the-badge&logo=tiddlywiki)
+![Version JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2Foeyoews%2Ftiddlywiki-starter-kit%2Fraw%2Fmain%2Fpackage.json&query=version&style=for-the-badge&logo=tiddlywiki&label=version)
+
 
 
 ## TiddlyWiki starter kit
