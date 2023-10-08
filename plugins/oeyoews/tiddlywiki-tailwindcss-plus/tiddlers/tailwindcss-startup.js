@@ -13,7 +13,7 @@ tailwindcss init
   exports.name = 'tailwindcss-startup-hook';
   exports.platforms = ['browser'];
   exports.before = ['render'];
-  exports.after = ['story'];
+  exports.after = ['startup'];
   exports.synchronous = true;
   exports.startup = () => {
     window.tailwind = require('tailwindcss.min.js');
