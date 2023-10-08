@@ -20,6 +20,16 @@
 2. neotw-tiddlers（用户markdown文件）
 3. subwiki（用户个人wiki）
 
+`tiddlywiki.info` 实际上一个json类型的文件，但是json文件不支持注释，每次只能手动编辑这个文件手动更新， 因此tiddlywiki-starter-kit 借助dotenv将配置放在.env文件中， 每次启动tw的时候动态生成tiddlywiki.info文件，这可以在不同的环境使用不同的配置，目前主要针对本地和部署环境， 部署环境下可以自动移除不需要的插件，并且使用仅仅在部署时使用的插件， 因此不建议手动编辑tiddlywiki.info 文件，此文件仅仅用来让tw来读取启动
+
+## 构建
+
+* 在tiddlywiki.info文件中， build是一个数组， 在里面可以添加多个构建步骤， 在构建的时候如果build 后面不加具体的构建步骤， 默认会执行里面的所有步骤，在tiddlywiki-starter-kit 里面默认支持目录为.tiddlywiki, 默认使用external.js 同时生成offline.html/index.html
+
+## 部署
+
+* tw 生成的是单文件可部署文件，因此不限制部署平台，甚至可以直接使用tw server， tiddlywiki-starter-kit使用的vercel/github pages 方式
+
 ## How to use tiddlywiki starter kit with docker ?
 
 ## How to write tiddlywiki plugin for yourself ？ 
