@@ -2,6 +2,9 @@
     <img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/snapshot02.png" alt="neotw banner" title="neotw"/>
 </center>
 
+![Static Badge](https://img.shields.io/badge/Tiddlywiki5-neotw-green?style=for-the-badge&logo=tiddlywiki)
+
+
 ## TiddlyWiki starter kit
 
 > 面向但不限于(neo)vim用户的 tiddlywiki starter kit
