@@ -14,6 +14,12 @@
 
 ## How to use tiddlywiki starter kit with locally ?
 
+* 事实上tiddlywiki starter kit 由三部分组成
+
+1. tiddlywiki-starter-kit（核心）
+2. neotw-tiddlers（用户markdown文件）
+3. subwiki（用户个人wiki）
+
 ## How to use tiddlywiki starter kit with docker ?
 
 ## How to write tiddlywiki plugin for yourself ？ 
