@@ -9,7 +9,7 @@
 ## Installation :package:
 
 ```bash
-## 仅作为初始体验方式, 生产环境建议使用 docker-compose 方式
+## 此方式仅作为初始体验, 生产环境建议搭配 docker compose 使用
 docker run -d --name tiddlywiki -p 8080:8080 -v $(pwd)/wiki:/app/wiki oeyoews/tiddlywiki:latest tiddlywiki wiki --listen port=8080 host=0.0.0.0
 ```
 
@@ -34,7 +34,7 @@ pnpm start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm
 
 # method 06: systemd https://www.freedesktop.org/software/systemd/man/systemd.service.html
 
-# method 07: pnpm pm2 start
+# method 07: pnpm pm2 start（我目前使用的方式， 因为我主要在本地使用，需要频繁更新tiddlywiki-starter-kit源码，避免每次都要构建docker mirror的步骤）
 
 ```
 
@@ -50,9 +50,12 @@ pnpm start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm
 
 </details>
 
-## 如何使用最新的 tiddlywiki-starter-kit
+## 如何使用最新的 tiddlywiki-starter-kit docker 镜像？
 
-* 克隆这个仓库, 然后运行 `docker-compose build`
+```bash
+git clone --depth 1 https://github.com/oeyoews/tiddlywiki-starter-kit.git 
+docker-compose build
+```
 
 ## Deploy :gear:
 
