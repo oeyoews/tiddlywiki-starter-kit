@@ -10,7 +10,7 @@
     "format": "prettier --write .",
     "build:docker": "docker-compose build",
     "docker:push": "docker-compose push",
-    "start": "./lib/startup.mjs"
+    "start": "node ./lib/startup.mjs"
   },
   "dependencies": {
     "ci-info": "^3.8.0",
