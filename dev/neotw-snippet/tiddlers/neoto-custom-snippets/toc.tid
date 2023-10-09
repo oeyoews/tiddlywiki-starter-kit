@@ -1,5 +1,3 @@
 title: $:/language/Snippets/toc
 tags: $:/tags/TextEditor/Snippet
 caption: Markdown Toc
-
-@[toc]$1

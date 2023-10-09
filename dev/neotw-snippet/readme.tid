@@ -3,8 +3,6 @@ type: text/markdown
 
 > 不再维护
 
-@[toc]
-
 ## TODO
 
 * [ ] enable snippets hint for markdown type

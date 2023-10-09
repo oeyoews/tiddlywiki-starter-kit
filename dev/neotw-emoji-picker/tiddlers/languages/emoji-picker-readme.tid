@@ -4,8 +4,6 @@ type: text/markdown
 
 <div class="prose max-w-none prose-indigo">
 
-@[toc]
-
 ## Emoji Picker
 
 TiddlyWiki Emoji Picker is a powerful plugin that provides TiddlyWiki users with a convenient and quick emoji selector. Whether you are editing notes, writing articles, or communicating with others, using emojis can better express emotions and enrich content. The Emoji Picker plugin allows you to easily browse and insert various emoji symbols, providing an intuitive interface and simple operation.

@@ -4,8 +4,6 @@ type: text/markdown
 
 <div class="prose max-w-none prose-indigo">
 
-@[toc]
-
 ## Aplayer
 
 <$aplayer />

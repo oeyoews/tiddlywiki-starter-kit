@@ -4,8 +4,6 @@ type: text/markdown
 
 <div class="prose max-w-none prose-indigo">
 
-@[toc]
-
 ## Emoji Picker
 
 TiddlyWiki Emoji Picker 是一个功能强大的插件，为 TiddlyWiki 用户提供了一个方便快捷的表情选择器。无论您是在编辑笔记、编写文章还是与他人交流，使用表情可以更好地表达情感和丰富内容。Emoji Picker 插件使您可以轻松地浏览和插入各种表情符号，提供了一个直观的界面和简单的操作方式。

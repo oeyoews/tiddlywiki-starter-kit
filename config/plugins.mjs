@@ -37,7 +37,7 @@ const cmePlugins = [
 
 const markdowPlugins = [
   'tiddlywiki/markdown',
-  'oeyoews/neotw-markdown-extensions',
+  // 'oeyoews/neotw-markdown-extensions', // use markdown-more instead of it
 ];
 
 // oeyoews plugins
