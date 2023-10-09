@@ -1,5 +1,5 @@
 /*\
-title: $:/plugins/oeyoews/tiddlywiki-gravatar/gqwidget.js
+title: $:/plugins/oeyoews/tiddlywiki-gravatar/widget.js
 type: application/javascript
 module-type: widget
 
@@ -62,7 +62,7 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
 
       const hasType = Object.keys(types).includes(type);
 
-      const src = hasType ? types[type] : types.gravatar;
+      const src = hasType ? types[type] : types.qq;
 
       const dynamicClasses = 'blur scale-105';
       const imgClass = `rounded-full align-middle duration-200 transition object-cover object-center ${className} ${dynamicClasses} aspect-square`;
