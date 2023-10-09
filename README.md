@@ -10,7 +10,7 @@
 
 > 面向但不限于(neo)vim用户的 tiddlywiki starter kit
 
-## Installation :package:
+## Installation
 
 ```bash
 ## 此方式仅作为初始体验, 生产环境建议搭配 docker compose 使用
@@ -61,7 +61,7 @@ git clone --depth 1 https://github.com/oeyoews/tiddlywiki-starter-kit.git
 docker-compose build
 ```
 
-## Deploy :gear:
+## Deploy
 
 <!-- https://vercel.com/docs/deploy-button -->
 <a target="_blank" href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Foeyoews%2Ftiddlywiki-starter-kit">
