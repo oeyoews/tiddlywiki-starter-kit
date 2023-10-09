@@ -17,16 +17,16 @@
     "dotenv": "^16.3.1",
     "ora": "^6.3.1",
     "prompts": "^2.4.2",
-    "tiddlywiki": "5.3.0",
+    "tiddlywiki": "github:Jermolene/TiddlyWiki5#66a8e2dbf28503a514da2bea5114187b8b84a04f",
     "tiged": "^2.12.5"
   },
   "version": "4.0.0",
   "devDependencies": {
     "@types/prompts": "^2.4.4",
     "address": "^1.2.2",
-    "pm2": "^5.3.0",
     "bun-types": "^1.0.1",
     "chalk": "^5.3.0",
+    "pm2": "^5.3.0",
     "prettier": "^3.0.3",
     "qrcode-terminal": "^0.12.0",
     "tw5-typed": "^0.3.10"
