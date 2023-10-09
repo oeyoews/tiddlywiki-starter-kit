@@ -45,7 +45,7 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
         class: className = 'w-12',
         size = 100,
         alt = 'Avatar',
-        type = 'gravatar',
+        type,
         key = 'sea',
       } = this.attributes;
 
@@ -84,7 +84,8 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
         'mx-auto shadow-md border-dashed border block border-indigo-400 p-1';
 
       center && img.classList.add(...tempClassList.split(' '));
-      types[type]?.includes(type) && img.setAttribute('data-type', type);
+
+      // types[type]?.includes(type) && img.setAttribute('data-type', type);
 
       // 考虑图片加载失败, 但是不考虑图片加载超时(offline)
       img.onerror = () => {
