@@ -19,10 +19,9 @@
 
 ## 开发依赖
 
-* pnpm/npm
-* git
-* nodejs/bun
-* vscode/neovim/others
+* FONTS: maple
+* ENV: nodejs/bun pnpm/npm git
+* EDITOR: vscode/neovim/others
 
 ## How to use tiddlywiki starter kit with locally ?
 

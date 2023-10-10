@@ -9,7 +9,7 @@ title: $:/core/ui/SideBar/Recent
 \define cancel-search-actions() <$action-deletetiddler $filter=<<storeTitle>>/><$action-sendmessage $message="tm-focus-selector" $param=""".search-recent input"""/>
 
 \define timeline-searchable(is:"!is",limit:"100",format:"DDth MMM YYYY",subfilter:"!tag[done]!tag[todo]!field:publish[private]",dateField:"modified")
-<div class="tc-timeline prose capitalize font-bold h-screen overflow-y-scroll">
+<div class="tc-timeline prose capitalize text-[16px] font-bold h-screen overflow-y-scroll">
 <$list filter="[$is$[system]$subfilter$has[$dateField$]!sort[$dateField$]limit[$limit$]eachday[$dateField$]]">
 <div class="tc-menu-list-item">
 <$view field="$dateField$" format="date" template="$format$"/>
