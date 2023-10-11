@@ -2,8 +2,7 @@ title: $:/plugins/oeyoews/tiddlywiki-daylight/pagecontrol
 list-before: $:/core/ui/Buttons/more-page-actions
 description: Toggle mode
 caption: Toggle Mode
-
-<!-- tags: $:/tags/PageControls -->
+tags: $:/tags/PageControls
 
 \whitespace trim
 <$button tooltip="Toggle Mode" aria-label="" class=<<tv-config-toolbar-class>>>
