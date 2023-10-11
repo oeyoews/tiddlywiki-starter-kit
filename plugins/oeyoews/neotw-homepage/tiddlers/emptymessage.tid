@@ -29,7 +29,10 @@ title: $:/config/EmptyStoryMessage
          <$iconify icon="simple-icons:apacheecharts" class="text-rose-600"/>
           Echarts
          <$iconify icon="system-uicons:arrow-top-right" />
-      </a>创建的网站。 支持drawio,mermaid,iconify.
+      </a>创建的网站。 同时支持
+       <$iconify-icon icon="vscode-icons:file-type-drawio" /> Drawio,
+       <$iconify-icon icon="vscode-icons:file-type-mermaid" /> Mermaid,
+       <$iconify-icon icon="line-md:iconify1" /> iconify.
 
       </p>
 			<$button class="hover:scale-105 transition bg-blue-400 text-white px-4 py-2 rounded-md hover:bg-blue-500">
