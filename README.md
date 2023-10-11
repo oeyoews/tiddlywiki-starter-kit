@@ -75,6 +75,7 @@ docker-compose build
 
 * [Tiddlyhost Site](https://tiddlywiki-starter-kit.tiddlyhost.com/)
 * [Github Pages](https://oeyoews.github.io/tiddlywiki-starter-kit/)
+* [Vercel Site](https://tiddlywiki-starter-kit.vercel.app/)
 
 
 
