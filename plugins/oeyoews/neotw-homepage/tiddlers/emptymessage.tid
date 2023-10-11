@@ -18,6 +18,11 @@ title: $:/config/EmptyStoryMessage
          <$iconify icon="devicon:tailwindcss" />
           Tailwindcss
          <$iconify icon="system-uicons:arrow-top-right" />
+      </a>,
+      <a target="_blank" href="https://echarts.apache.org">
+         <$iconify icon="simple-icons:apacheecharts" class="text-rose-600"/>
+          Echarts
+         <$iconify icon="system-uicons:arrow-top-right" />
       </a>
       和
       <a target="_blank" href="https://tiddlywiki.com">
