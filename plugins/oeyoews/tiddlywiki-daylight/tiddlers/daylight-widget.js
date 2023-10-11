@@ -50,11 +50,12 @@ module-type: widget
       const systemNode = createThemeSpan('system');
 
       const domNode = createElement('button', {
-        class: 'aspect-square bg-transparent m-0',
+        class: 'bg-transparent m-0 p-0',
         children: [systemNode, lightNode, darkNode],
       });
 
-      btn && domNode.classList.remove('bg-transparent');
+      btn && domNode.classList.remove('bg-transparent', 'm-0', 'p-0');
+      btn && domNode.classList.add('aspect-square');
       classNames && domNode.classList.add(...classNames.split(' '));
 
       domNode.addEventListener('click', () => {

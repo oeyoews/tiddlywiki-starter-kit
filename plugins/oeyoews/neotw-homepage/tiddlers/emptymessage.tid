@@ -36,7 +36,7 @@ title: $:/config/EmptyStoryMessage
        <span class="underline decoration-wavy decoration-sky-300 decoration-2"> Mermaid </span>,
        <$iconify-icon icon="line-md:iconify1" />
        <span class="underline decoration-wavy decoration-rose-300 decoration-2"> Iconify </span>.
-       <$daylight />
+       <$daylight btn/>
       </p>
 			<$button class="hover:scale-105 transition bg-blue-400 text-white px-4 py-2 rounded-md hover:bg-blue-500">
         <$action-navigate $to="GettingStarted" $scroll="yes"/>
