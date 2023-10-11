@@ -14,13 +14,13 @@ title: $:/config/EmptyStoryMessage
 		<div class="bg-white dark:bg-black p-8 rounded-lg shadow">
 			<h1 class="text-[22px] font-semibold mb-4">欢迎来到 tiddlywiki starter kit</h1>
 			<p class="mb-4">这是一个使用
-      <a href="https://tiddlywiki.com">
+      <a target="_blank" href="https://tiddlywiki.com">
          <$iconify icon="devicon:tailwindcss" />
           Tailwindcss
          <$iconify icon="system-uicons:arrow-top-right" />
       </a>
       和
-      <a href="https://tiddlywiki.com">
+      <a target="_blank" href="https://tiddlywiki.com">
          <$iconify icon="simple-icons:tiddlywiki" class="text-black" />
           TiddlyWiki5
          <$iconify icon="system-uicons:arrow-top-right" />
