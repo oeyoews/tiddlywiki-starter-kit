@@ -41,7 +41,7 @@ module.exports = function createCard(
   const itemClassList =
     'flex flex-col items-center justify-center p-0 group relative';
   const galleryTitleClassList =
-    'delay-100 text-lg cursor-pointer flex justify-center items-center truncate m-0 absolute inset-0 backdrop-blur-lg text-black rounded-md ease-in-out transition-all scale-0 group-hover:scale-105';
+    'delay-100 text-[22px] cursor-pointer flex justify-center items-center truncate m-0 absolute inset-0 backdrop-blur-lg text-black rounded-md ease-in-out transition-all scale-0 group-hover:scale-105';
 
   const iconify = createElement('iconify-icon', {
     class: 'mx-1',
