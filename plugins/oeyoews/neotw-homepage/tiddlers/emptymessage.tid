@@ -14,26 +14,26 @@ title: $:/config/EmptyStoryMessage
 		<div class="bg-white dark:bg-black p-8 rounded-lg shadow">
 			<h1 class="text-[22px] font-semibold mb-4">欢迎来到 tiddlywiki starter kit</h1>
 			<p class="mb-4">这是一个使用
-      <a target="_blank" href="https://tailwindcss.com">
-         <$iconify icon="devicon:tailwindcss" />
-          Tailwindcss
-         <$iconify icon="system-uicons:arrow-top-right" />
-      </a>,
-      <a target="_blank" href="https://echarts.apache.org">
-         <$iconify icon="simple-icons:apacheecharts" class="text-rose-600"/>
-          Echarts
-         <$iconify icon="system-uicons:arrow-top-right" />
-      </a>
-      和
       <a target="_blank" href="https://tiddlywiki.com">
          <$iconify icon="simple-icons:tiddlywiki" class="text-black" />
           TiddlyWiki5
          <$iconify icon="system-uicons:arrow-top-right" />
-      </a> 创建的网站。
+      </a>,
+      <a target="_blank" href="https://tailwindcss.com">
+         <$iconify icon="devicon:tailwindcss" />
+          Tailwindcss
+         <$iconify icon="system-uicons:arrow-top-right" />
+      </a>
+      和
+      <a target="_blank" href="https://echarts.apache.org">
+         <$iconify icon="simple-icons:apacheecharts" class="text-rose-600"/>
+          Echarts
+         <$iconify icon="system-uicons:arrow-top-right" />
+      </a>创建的网站。
       </p>
-			<$button class="bg-blue-400 text-white px-4 py-2 rounded-md hover:bg-blue-500">
+			<$button class="hover:scale-105 transition bg-blue-400 text-white px-4 py-2 rounded-md hover:bg-blue-500">
         <$action-navigate $to="GettingStarted" $scroll="yes"/>
-        点击了解更多
+        点击进入主页 <iconify-icon icon="flat-color-icons:home" />
       </$button>
 		</div>
 	</div>
