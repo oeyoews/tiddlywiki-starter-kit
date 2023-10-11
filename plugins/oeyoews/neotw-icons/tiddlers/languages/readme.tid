@@ -13,6 +13,10 @@ Iconify 是一个开放的图标集合项目，由多个图标提供商共同贡
 
 <!-- https://github.com/iconify/iconify/tree/main/iconify-icon/icon -->
 
+## NOTE
+
+* 当在侧边栏使用这个宏的时候会报错
+
 ## Usage
 
 <center>
