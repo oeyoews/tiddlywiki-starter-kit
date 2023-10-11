@@ -15,6 +15,20 @@ title: $:/config/EmptyStoryMessage
 <!-- </div> -->
 <!-- </$list> -->
 
+<div class="">
+	<div class="p-0 m-4">
+		<div class="bg-white p-8 rounded-lg shadow">
+			<h1 class="text-[22px] font-semibold mb-4">欢迎来到 tiddlywiki starter kit</h1>
+			<p class="text-gray-600 mb-4">这是一个使用Tailwind && TiddlyWiki5 创建的网站。</p>
+			<$button class="bg-blue-400 text-white px-4 py-2 rounded-md hover:bg-blue-500">
+        <$action-navigate $to="GettingStarted" $scroll="yes"/>
+        点击了解更多
+      </$button>
+		</div>
+	</div>
+</div>
+
+
 <$list filter="[{$:/info/url/protocol}match[https:]]">
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
 <center>
@@ -23,22 +37,3 @@ title: $:/config/EmptyStoryMessage
 <$cards />
 </$list>
 </$list>
-
-<!-- <div class="my-4"> -->
-<!-- <iconify-icon icon="skill-icons:nextjs-light" title="Next.js" /> -->
-<!-- <iconify-icon icon="skill-icons:typescript" title="TypeScript" /> -->
-<!-- <iconify-icon icon="skill-icons:react-dark" title="React"/> -->
-<!-- <iconify-icon icon="skill-icons:tailwindcss-dark" title="Tailwind" /> -->
-<!-- <iconify-icon icon="vscode-icons:file-type-js-official" title="JavaScript" /> -->
-<!-- <iconify-icon icon="vscode-icons:file-type-html" title="HTML" /> -->
-<!-- <iconify-icon icon="vscode-icons:file-type-css" title="CSS" /> -->
-<!-- <iconify-icon icon="skill-icons:vscode-dark" title="VSCode" /> -->
-<!-- <iconify-icon icon="simple-icons:tiddlywiki"  title="TiddlyWiki"/> -->
-<!-- <iconify-icon icon="skill-icons:neovim-light" title="Neovim" /> -->
-<!-- <iconify-icon icon="skill-icons:linux-dark" title="Linux" /> -->
-<!-- <iconify-icon icon="skill-icons:bash-dark"title="Bash" /> -->
-<!-- <iconify-icon icon="skill-icons:git" title="Git" /> -->
-<!-- <iconify-icon icon="devicon:webstorm" title="Websotrm" /> -->
-<!-- <iconify-icon icon="skill-icons:docker" title="Docker" /> -->
-<!-- <iconify-icon icon="devicon:bun" title="Bun" /> -->
-<!-- </div> -->
