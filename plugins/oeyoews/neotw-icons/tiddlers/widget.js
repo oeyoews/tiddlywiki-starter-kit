@@ -24,13 +24,14 @@ neotw-icons widget
       this.execute();
 
       // https://developer.mozilla.org/zh-CN/docs/Web/API/Element/attributes
+      // TODO: style bug
       const { title = '', style, icon, class: classNames } = this.attributes;
 
       const createElement = $tw.utils.domMaker;
 
       const iconNode = createElement('iconify-icon', {
         class: classNames,
-        style,
+        // style,
         attributes: {
           icon,
           title,
@@ -44,4 +45,5 @@ neotw-icons widget
   }
 
   exports['iconify'] = IconsWidget;
+  exports['iconify-icon'] = IconsWidget;
 })();

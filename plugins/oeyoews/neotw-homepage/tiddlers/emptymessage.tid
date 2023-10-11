@@ -9,17 +9,23 @@ title: $:/config/EmptyStoryMessage
 </div>
 </center>
 
-<!-- <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]"> -->
-<!-- <div class="dark:hidden my-4"> -->
-<!-- {{$:/plugins/Gk0Wk/echarts/Snippets/GitHubHeatMap}} -->
-<!-- </div> -->
-<!-- </$list> -->
-
 <div class="">
 	<div class="p-0 m-4">
-		<div class="bg-white p-8 rounded-lg shadow">
+		<div class="bg-white dark:bg-black p-8 rounded-lg shadow">
 			<h1 class="text-[22px] font-semibold mb-4">欢迎来到 tiddlywiki starter kit</h1>
-			<p class="text-gray-600 mb-4">这是一个使用Tailwind && TiddlyWiki5 创建的网站。</p>
+			<p class="mb-4">这是一个使用
+      <a href="https://tiddlywiki.com">
+         <$iconify icon="devicon:tailwindcss" />
+          Tailwindcss
+         <$iconify icon="system-uicons:arrow-top-right" />
+      </a>
+      和
+      <a href="https://tiddlywiki.com">
+         <$iconify icon="simple-icons:tiddlywiki" class="text-black" />
+          TiddlyWiki5
+         <$iconify icon="system-uicons:arrow-top-right" />
+      </a> 创建的网站。
+      </p>
 			<$button class="bg-blue-400 text-white px-4 py-2 rounded-md hover:bg-blue-500">
         <$action-navigate $to="GettingStarted" $scroll="yes"/>
         点击了解更多
