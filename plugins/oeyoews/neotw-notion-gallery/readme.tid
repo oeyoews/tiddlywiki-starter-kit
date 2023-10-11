@@ -53,6 +53,7 @@ pss: 建议开启浏览器GPU加速,浏览效果更佳(tailwindcss 影响)
 
 !! v1.TODO
 
+* add title params
 * support gallery to show all images(暂时不做)
 * 自动生成 today jounal card(use bing today wallpaper)(暂时不做)
 * 图片默认启用, 或者部分可选择性启用, 图片加载速度较慢

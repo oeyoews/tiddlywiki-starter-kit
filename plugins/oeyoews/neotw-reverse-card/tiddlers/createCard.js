@@ -10,9 +10,8 @@ function createCard(question, answer) {
 
   function iconify(icon = 'flat-color-icons:questions', visible = true) {
     return createElement('iconify-icon', {
-      class: `absolute fixed top-2 left-2 transition-all duration-300 ease-in-out ${
-        visible ? '' : 'scale-0'
-      }`,
+      class: `absolute fixed top-2 left-2 transition-all duration-300 ease-in-out ${visible ? '' : 'scale-0'
+        }`,
       attributes: {
         icon,
       },
@@ -49,7 +48,7 @@ function createCard(question, answer) {
   // 创建父容器元素
   const container = createElement('div', {
     class:
-      'flex justify-center items-center dark:text-black my-4 snap-center text-lg',
+      'flex justify-center items-center dark:text-black my-4 snap-center text-[22px]',
     children: [card],
   });
 

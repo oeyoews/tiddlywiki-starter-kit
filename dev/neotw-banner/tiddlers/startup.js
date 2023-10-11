@@ -18,7 +18,7 @@ test module
   exports.startup = () => {
     const Node = document.createElement('div');
     Node.className =
-      'h-screen bg-white flex justify-center items-center text-lg font-bld';
+      'h-screen bg-white flex justify-center items-center text-[22px] font-bld';
     Node.textContent = '待完工...';
     document.body.insertBefore(Node, document.body.firstChild);
   };
