@@ -2,7 +2,7 @@ title: $:/config/EmptyStoryMessage
 
 <center>
   <div>
-    <$avatar center="yes" type="gravatar_cn"/>
+    <$avatar center="yes"/>
   </div>
 <div class="dark:invisible flex justify-center my-4">
   <$oinfo />

@@ -42,7 +42,7 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
         center,
         inline,
         link,
-        class: className = 'w-12',
+        class: className = 'w-[48px]',
         size = 100,
         alt = 'Avatar',
         type,
@@ -76,7 +76,7 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
       });
 
       if (inline) {
-        img.classList.remove('w-12');
+        img.classList.remove('w-[48px]');
         img.classList.add('mx-0', 'w-[16px]');
       }
 
