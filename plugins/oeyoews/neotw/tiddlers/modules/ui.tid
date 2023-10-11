@@ -1,5 +1,6 @@
 title: $:/plugins/oeyoews/neotw/modules/to-top/ui
-tags: $:/tags/PageTemplate
+
+<!-- tags: $:/tags/PageTemplate -->
 
 <!-- \define home-button()
 <$button tooltip="Back to home" class="o-btn-back" aria-label='home'>
