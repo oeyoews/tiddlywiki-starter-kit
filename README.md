@@ -5,7 +5,6 @@
 ![TIDDLY Static Badge](https://img.shields.io/badge/Tiddlywiki5-neotw-green?style=for-the-badge&logo=tiddlywiki) ![Version JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2Foeyoews%2Ftiddlywiki-starter-kit%2Fraw%2Fmain%2Fpackage.json&query=version&style=for-the-badge&logo=tiddlywiki&label=version)
 
 
-
 ## TiddlyWiki starter kit
 
 > 面向但不限于(neo)vim用户的 tiddlywiki starter kit
@@ -57,7 +56,7 @@ pnpm start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm
 ## 如何使用最新的 tiddlywiki-starter-kit docker 镜像？
 
 ```bash
-git clone --depth 1 https://github.com/oeyoews/tiddlywiki-starter-kit.git 
+git clone --depth 1 https://github.com/oeyoews/tiddlywiki-starter-kit.git
 docker-compose build
 ```
 
@@ -69,6 +68,14 @@ docker-compose build
 </a>
 
 > NOTE: vercel不会进行浅克隆，很大几率导致部署失败，此仓库提交次数过多，建议用户手动潜浅克隆仓库，手动在vercel上进行部署
+
+## Preview
+
+<!-- [tiddlywiki starter kit](https://tiddlywiki-starter-kit.xxx) -->
+
+* [Tiddlyhost Site](https://tiddlywiki-starter-kit.tiddlyhost.com/)
+* [Github Pages](https://oeyoews.github.io/tiddlywiki-starter-kit/)
+
 
 
 ![cat](https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/cat.svg 'cat')
