@@ -29,7 +29,8 @@ title: $:/config/EmptyStoryMessage
          <$iconify icon="simple-icons:apacheecharts" class="text-rose-600"/>
           Echarts
          <$iconify icon="system-uicons:arrow-top-right" />
-      </a>创建的网站。
+      </a>创建的网站。 支持drawio,mermaid,iconify.
+
       </p>
 			<$button class="hover:scale-105 transition bg-blue-400 text-white px-4 py-2 rounded-md hover:bg-blue-500">
         <$action-navigate $to="GettingStarted" $scroll="yes"/>
