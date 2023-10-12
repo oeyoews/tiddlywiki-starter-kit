@@ -74,9 +74,9 @@ function onUpdate(myChart, _, addonAttributes) {
       formatter: function (params) {
         const { name, value, percent } = params;
         if (value) {
-          return `${name} 标签 有 ${value}个条目, ${percent}%`;
+          return `${name} 标签 有 ${value} 个条目 (${percent}%)`;
         } else {
-          return name;
+          return `name 条目`;
         }
       },
     },
@@ -115,16 +115,17 @@ function onUpdate(myChart, _, addonAttributes) {
 
   myChart.setOption(option);
   myChart.on('click', 'series', gotoTagTiddler);
+  // 如何在这里监听change 事件, 从而实现自动刷新主题
 }
 
 // TODO: need refresh manually here
 function shouldUpdate(_, changedTiddlers) {
+  // tw里面即使是一个state tiddler变换都会触发这个函数的调用
   // changeTiddlers 会包含一些系统tiddler的状态变换tiddler, 应该去掉
-  const changedTiddlersLength = Object.keys(changedTiddlers).filter(
-    (tiddler) =>
-      !(tiddler.startsWith('$:/') || tiddler.startsWith('Draft of')).length,
+  const filteredChangedTiddlers = Object.keys(changedTiddlers).filter(
+    (tiddler) => !(tiddler.startsWith('$:/') || tiddler.startsWith('Draft of')),
   );
-  return changedTiddlersLength ? true : false;
+  return filteredChangedTiddlers.length ? true : false;
 }
 
 // function onMount() { }
