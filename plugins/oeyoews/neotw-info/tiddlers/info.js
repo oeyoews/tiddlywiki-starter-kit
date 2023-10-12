@@ -24,12 +24,14 @@ module.exports = function createContainer() {
   const pluginsCount = wiki.filterTiddlers('[plugin-type[plugin]]').length;
   const tagsCount = wiki.filterTiddlers('[tags[]]').length;
   const tiddlersCount = wiki.filterTiddlers('[!is[system]]').length;
+  const version = $tw.version.replace(/-/g, ' ');
 
   const list = [
+    { msg: '️🐟 version', text: version },
     { msg: '✏️ update', text: updateTime },
     { msg: '🧩 plugins', text: pluginsCount },
     { msg: '🏷️ tags', text: tagsCount },
-    { msg: '🐟 tiddlers', text: tiddlersCount },
+    { msg: '🐸 tiddlers', text: tiddlersCount },
   ];
 
   let children = [];
