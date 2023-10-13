@@ -54,7 +54,8 @@ const TagPie = {
     const data = [];
 
     // alpha sort default
-    const tags = $tw.wiki.filterTiddlers(filter).sort();
+    // 超过50不显示
+    const tags = $tw.wiki.filterTiddlers(filter).slice(0, 50).sort();
     tags.forEach((tag) => data.push(getData(tag)));
 
     const borderWidth = data.length > 10 ? 0 : width;
