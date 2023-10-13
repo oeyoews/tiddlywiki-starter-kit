@@ -93,8 +93,8 @@ const Sevendays = {
           const realDate = parsesixDate(date).toLocaleDateString();
           if (seriesName === 'created') {
             return count
-              ? `${realDate} 写了 ${count} 篇文章`
-              : `${realDate} 没有写新的文章`;
+              ? `${realDate} 新增了 ${count} 篇文章`
+              : `${realDate} 没有新增文章`;
           } else {
             return count
               ? `${realDate} 更新了 ${count} 篇文章`
