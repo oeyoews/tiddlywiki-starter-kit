@@ -50,7 +50,7 @@ const TagPie = {
       focusSelf,
       legend,
     } = addonAttributes;
-    // data必须在执行onUpdate函数的时候获取到最新数据,不要写在函数外面
+    // NOTE: data必须在执行onUpdate函数的时候获取到最新数据,不要写在onUpdate函数外面
     const data = [];
 
     // alpha sort default
@@ -132,11 +132,15 @@ const TagPie = {
   shouldUpdate(_, changedTiddlers) {
     // tw里面即使是一个state tiddler变换都会触发这个函数的调用
     // changeTiddlers 会包含一些系统tiddler的状态变换tiddler, 应该去掉
+    // log 输出不了, 但是alert却可以
     const filteredChangedTiddlers = Object.keys(changedTiddlers).filter(
       (tiddler) =>
-        !(tiddler.startsWith('$:/') || tiddler.startsWith('Draft of')),
+        tiddler === '$:/info/darkmode' ||
+        (!tiddler.startsWith('$:/') && !tiddler.startsWith('Draft of')),
     );
+    // TODO
     return filteredChangedTiddlers.length ? true : false;
+    // return true;
   },
 };
 
