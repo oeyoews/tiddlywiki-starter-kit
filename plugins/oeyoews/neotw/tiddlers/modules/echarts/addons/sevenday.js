@@ -194,6 +194,9 @@ const Sevendays = {
       goto.navigateTiddler('$:/AdvancedSearch');
     });
   },
+  shouldUpdate() {
+    return false;
+  },
 };
 
 module.exports = Sevendays;
