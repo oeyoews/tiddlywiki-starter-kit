@@ -21,6 +21,7 @@ const onlinePlugins = [
   'oeyoews/tiddlywiki-github-share',
   'oeyoews/tiddlywiki-readonly',
   'oeyoews/neotw-notranslate',
+  'tiddlywiki/pluginlibrary'
 ];
 
 const cmePlugins = [
