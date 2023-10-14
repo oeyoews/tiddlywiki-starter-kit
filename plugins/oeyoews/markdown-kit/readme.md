@@ -1,5 +1,4 @@
 <h2 id="markdown-kit">Markdown Kit</h2>
-test<body>test</body>
 <p>coming</p>
 <h2 id="note">NOTE</h2>
 <ul>
