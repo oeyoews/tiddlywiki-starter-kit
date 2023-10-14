@@ -13,7 +13,7 @@
     "start": "node ./lib/startup.mjs"
   },
   "dependencies": {
-    "ci-info": "^3.8.0",
+    "ci-info": "^3.9.0",
     "dotenv": "^16.3.1",
     "ora": "^6.3.1",
     "prompts": "^2.4.2",
@@ -22,13 +22,13 @@
   },
   "version": "4.0.0",
   "devDependencies": {
-    "@types/prompts": "^2.4.4",
+    "@types/prompts": "^2.4.6",
     "address": "^1.2.2",
-    "bun-types": "^1.0.1",
+    "bun-types": "^1.0.6",
     "chalk": "^5.3.0",
     "pm2": "^5.3.0",
     "prettier": "^3.0.3",
     "qrcode-terminal": "^0.12.0",
-    "tw5-typed": "^0.3.10"
+    "tw5-typed": "^0.3.11"
   }
 }
