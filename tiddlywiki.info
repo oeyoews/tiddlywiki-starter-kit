@@ -31,6 +31,7 @@
     "oeyoews/tiddlywiki-gravatar",
     "oeyoews/neotw-homepage",
     "tiddlywiki/markdown",
+    "oeyoews/markdown-kit",
     "oeyoews/neotw-cli-info",
     "tiddlywiki/codemirror",
     "tiddlywiki/codemirror-autocomplete",
@@ -72,6 +73,26 @@
       "tiddlywiki.png",
       "--deletetiddlers",
       "$:/StoryList"
+    ],
+    "library": [
+      "--output",
+      ".tiddlywiki/library",
+      "--makelibrary",
+      "$:/UpgradeLibrary",
+      "--savelibrarytiddlers",
+      "$:/UpgradeLibrary",
+      "[prefix[$:/plugins/oeyoews]] [prefix[$:/themes/nico]]",
+      "recipes/library/tiddlers/",
+      "$:/UpgradeLibrary/List",
+      "--savetiddler",
+      "$:/UpgradeLibrary/List",
+      "recipes/library/tiddlers.json",
+      "--rendertiddler",
+      "$:/plugins/tiddlywiki/pluginlibrary/library.template.html",
+      "index.html",
+      "text/plain",
+      "--deletetiddlers",
+      "[[$:/UpgradeLibrary]] [[$:/UpgradeLibrary/List]]"
     ]
   }
 }

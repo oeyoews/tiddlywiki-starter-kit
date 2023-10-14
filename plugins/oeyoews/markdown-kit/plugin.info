@@ -1,0 +1,18 @@
+{
+	"version": "0.0.1",
+	"type": "application/json",
+	"title": "$:/plugins/oeyoews/markdown-kit",
+	"plugin-type": "plugin",
+	"name": "Markdown Kit",
+	"description": "Markdown Kit",
+	"author": "oeyoews",
+	"dependents": [
+		"$:/plugins/tiddlywiki/markdown",
+		"$:/plugins/tiddlywiki/codemirror",
+		"$:/plugins/tiddlywiki/codemirror-mode-markdown",
+		"$:/plugins/tiddlywiki/codemirror-mode-xml",
+		"$:/plugins/whitefall/obsidian-vault",
+		"$:/plugins/cdr/markdownmore"
+	],
+	"list": "readme"
+}

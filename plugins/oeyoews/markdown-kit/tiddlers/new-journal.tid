@@ -1,6 +1,6 @@
-title: $:/core/ui/Actions/new-journal
-tags: $:/tags/Actions
 description: create a new journal tiddler
+tags: $:/tags/Actions
+title: $:/core/ui/Actions/new-journal
 
 \define get-tags() $(textFieldTags)$ $(tagsFieldTags)$
 \whitespace trim
