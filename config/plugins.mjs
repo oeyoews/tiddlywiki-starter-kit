@@ -21,7 +21,6 @@ const onlinePlugins = [
   'oeyoews/tiddlywiki-github-share',
   'oeyoews/tiddlywiki-readonly',
   'oeyoews/neotw-notranslate',
-  'tiddlywiki/pluginlibrary', // 不会影响json 文件的生成, 负责生成index.html
 ];
 
 const cmePlugins = [
@@ -40,6 +39,7 @@ const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
 
 // oeyoews plugins
 const oeyoewsPlugins = [
+  'NPL',
   'neotw-image-better',
   'tiddlywiki-motion',
   'neotw-pwa',
@@ -72,6 +72,7 @@ const plugins = [
   'tiddlywiki/tiddlyweb',
   'tiddlywiki/highlight',
   'tiddlywiki/browser-sniff',
+  'tiddlywiki/pluginlibrary', // 不会影响json 文件的生成, 负责生成index.html
   ...oeyoewsFormatedPlugins,
 ];
 

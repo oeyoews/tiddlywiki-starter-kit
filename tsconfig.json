@@ -23,6 +23,6 @@
       "@/*": ["./*"]
     }
   },
-  "exclude": ["plugins", "node_modules"],
-  "include": ["**/*.ts", "**/*.tsx", "**/*.mjs"]
+  "exclude": ["plugins_bk", "node_modules"],
+  "include": ["**/*.ts", "**/*.tsx", "**/*.mjs", "lib/pm2-control.js"]
 }
