@@ -1,5 +1,4 @@
 @echo off
 title starup tiddlywiki
-pnpm pm2 delete tiddlywiki-starter-kit
-pnpm pm2 start
+node lib/pm2-control.js
 exit
