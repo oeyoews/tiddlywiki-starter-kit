@@ -45,7 +45,8 @@ function copyFiles() {
 const main = () => {
   generateTiddlyWikiInfo();
   // 线上构建 dev 插件
-  isCI && spawn(['cp', '-r', 'dev', 'plugins/oeyoews']);
+  // BUG: maybe need await
+  // isCI && spawn(['cp', '-r', 'dev', 'plugins/oeyoews']);
   spawn(['npx', 'tiddlywiki', '--build'], {
     onExit: (proc, exitCode, signalCode, error) => {
       if (exitCode === 0) {
