@@ -1,5 +1,5 @@
 {
-	"version": "0.0.21",
+	"version": "0.0.3",
 	"type": "application/json",
 	"title": "$:/plugins/oeyoews/markdown-kit",
 	"plugin-type": "plugin",
@@ -9,6 +9,7 @@
 	"dependents": [
 		"$:/plugins/tiddlywiki/markdown",
 		"$:/plugins/tiddlywiki/codemirror",
+		"$:/plugins/tiddlywiki/katex",
 		"$:/plugins/tiddlywiki/codemirror-mode-markdown",
 		"$:/plugins/tiddlywiki/codemirror-mode-xml",
 		"$:/plugins/whitefall/obsidian-vault",
