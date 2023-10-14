@@ -1,5 +1,17 @@
 title: $:/NPL
-description: tiddlywiki starter kit Plugin Library
+description: Tiddlywiki Starter Kit Plugin Library
 tags: $:/tags/PluginLibrary
 caption: TSKPL
-url: https://oeyoews.github.io/tiddlywiki-starter-kit/library/index.html
+url: https://tiddlywiki-starter-kit.vercel.app/library/index.html
+
+Tiddlywiki Starter Kit Plugin Library
+
+<!-- 源
+https://oeyoews.github.io
+顶级网站
+http://127.0.0.1
+属于第三方
+是，因为相应源不属于该顶级网站
+
+github 禁止跨域,(仅支持https) 还是需要vercel
+ -->
