@@ -73,9 +73,6 @@ func main() {
 <head>
     <title>Hello, TiddlyWiki!</title>
 </head>
-<bodyb>
-    <h1>Hello, TiddlyWiki!</h1>
-</bodyb>
 </html>
 ```
 
