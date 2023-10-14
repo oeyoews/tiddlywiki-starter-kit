@@ -1,5 +1,3 @@
-#!/usr/bin/env bun
-
 import chalk from 'chalk';
 import ora from 'ora';
 import generateTiddlyWikiInfo from '@/tiddlywiki.config.mjs';

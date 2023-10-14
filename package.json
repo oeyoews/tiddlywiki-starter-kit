@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "newplugin": "./lib/newplugin.ts",
-    "build": "./lib/build.ts",
+    "build": "bun run ./lib/build.ts",
     "vercel-build": "node lib/build.mjs",
     "format": "prettier --write .",
     "build:docker": "docker-compose build",
