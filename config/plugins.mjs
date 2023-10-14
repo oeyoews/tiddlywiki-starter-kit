@@ -21,7 +21,6 @@ const onlinePlugins = [
   'oeyoews/tiddlywiki-github-share',
   'oeyoews/tiddlywiki-readonly',
   'oeyoews/neotw-notranslate',
-  'tiddlywiki/pluginlibrary',
 ];
 
 const cmePlugins = [
@@ -36,11 +35,7 @@ const cmePlugins = [
   'oeyoews/neotw-vimjk',
 ];
 
-const markdowPlugins = [
-  'tiddlywiki/markdown',
-  'oeyoews/markdown-kit',
-  // 'oeyoews/neotw-markdown-extensions', // use markdown-more instead of it
-];
+const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
 
 // oeyoews plugins
 const oeyoewsPlugins = [
