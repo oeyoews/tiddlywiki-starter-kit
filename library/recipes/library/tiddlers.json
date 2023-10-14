@@ -10,7 +10,7 @@
         "name": "NPL",
         "list": "readme",
         "dependents": "",
-        "readme": "!! Npl\n\n> 插件库展示仍然有bug(但是tiddlers.json 文件都是正常生成的), 如果插件生成的json(一般是readme导致的问题, 或者是图片的格式tid问题)加入了一些特殊符号会导致请求失败, 插件库也无法加载, 目前没有什么好的排查办法,排查较为耗时, 不再构建并维护NPL插件库 2023/09/25\r\n> 调试可以使用本地插件库测试, 但暂时没这个打算测试bug, nodejs的tw, 我自己主要还是使用文件夹的形式配合脚本动态管理插件\n\n!! TODO\n\nlibrary/index.html 重新做一个展示插件列表的区域,就像在tw里面的插件列表\r\n",
+        "readme": "!! Npl\n\n> 插件库展示仍然有bug(但是tiddlers.json 文件都是正常生成的), 如果插件生成的json(一般是readme导致的问题, 或者是图片的格式tid问题)加入了一些特殊符号会导致请求失败, 插件库也无法加载, 目前没有什么好的排查办法,排查较为耗时, 不再构建并维护NPL插件库 2023/09/25\r\n> 调试可以使用本地插件库测试, 但暂时没这个打算测试bug, nodejs的tw, 我自己主要还是使用文件夹的形式配合脚本动态管理插件\n\n已修复: https://github.com/oeyoews/tiddlywiki-starter-kit/issues/104\n\n!! TODO\n\nlibrary/index.html 重新做一个展示插件列表的区域,就像在tw里面的插件列表",
         "requires-reload": "no",
         "icon": "data:image/svg+xml,%3Csvg%20stroke%3D%22currentColor%22%20fill%3D%22%23aaa%22%20stroke-width%3D%220%22%20viewBox%3D%220%200%2024%2024%22%20height%3D%221em%22%20width%3D%221em%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M7%203h2v18H7zM4%203h2v18H4zm6%200h2v18h-2zm9.062%2017.792-6.223-16.89%201.877-.692%206.223%2016.89z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%0D%0A"
     },
