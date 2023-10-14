@@ -1,7 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "installCommand": "pnpm i --frozen-lockfile",
-  "buildCommand": "pnpm run vercel-build",
+  "buildCommand": "pnpm run build",
   "outputDirectory": ".tiddlywiki",
   "cleanUrls": true,
   "trailingSlash": false,
