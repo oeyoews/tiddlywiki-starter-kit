@@ -43,26 +43,26 @@ export default {
     '$:/StoryList',
   ],
   // 生成 plugin library
-   library: [
+  library: [
     '--output',
     `${OUTPUTDIR}/library`,
     '--makelibrary',
     '$:/UpgradeLibrary',
     '--savelibrarytiddlers',
     '$:/UpgradeLibrary',
-    '[prefix[$:/plugins/oeyoews]] [prefix[$:/themes/nico]]',
+    '[prefix[$:/plugins/oeyoews/]]', // [prefix[$:/themes/nico]]
     'recipes/library/tiddlers/',
     '$:/UpgradeLibrary/List',
     '--savetiddler',
     '$:/UpgradeLibrary/List',
     'recipes/library/tiddlers.json',
     '--rendertiddler',
-    '$:/plugins/tiddlywiki/pluginlibrary/library.template.html',
+    '$:/plugins/tiddlywiki/pluginlibrary/library.template.html', // 这里用到了pluginlibrary, 其实就是一个html
     'index.html',
     'text/plain',
-    '--deletetiddlers', // 如果构建失败总是会产生17M的文件
+    '--deletetiddlers', // 如果构建失败总是会产生17M的文件,不会自动删除
     '[[$:/UpgradeLibrary]] [[$:/UpgradeLibrary/List]]',
-  ], 
+  ],
   /* // Generate plugins json format
   plugins: [
     '--verbose',

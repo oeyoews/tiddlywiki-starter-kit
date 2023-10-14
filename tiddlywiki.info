@@ -83,7 +83,7 @@
       "$:/UpgradeLibrary",
       "--savelibrarytiddlers",
       "$:/UpgradeLibrary",
-      "[prefix[$:/plugins/oeyoews]] [prefix[$:/themes/nico]]",
+      "[prefix[$:/plugins/oeyoews/]]",
       "recipes/library/tiddlers/",
       "$:/UpgradeLibrary/List",
       "--savetiddler",
