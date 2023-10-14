@@ -10,6 +10,35 @@
 <script>
 var assetList = [
     {
+        "title": "$:/plugins/oeyoews/NPL",
+        "description": "NPL",
+        "author": "oeyoews",
+        "version": "0.0.1",
+        "core-version": ">=5.3.0",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "NPL",
+        "list": "readme",
+        "dependents": "",
+        "readme": "!! Npl\n\n> 插件库展示仍然有bug(但是tiddlers.json 文件都是正常生成的), 如果插件生成的json(一般是readme导致的问题, 或者是图片的格式tid问题)加入了一些特殊符号会导致请求失败, 插件库也无法加载, 目前没有什么好的排查办法,排查较为耗时, 不再构建并维护NPL插件库 2023/09/25\r\n> 调试可以使用本地插件库测试, 但暂时没这个打算测试bug, nodejs的tw, 我自己主要还是使用文件夹的形式配合脚本动态管理插件\n\n!! TODO\n\nlibrary/index.html 重新做一个展示插件列表的区域,就像在tw里面的插件列表\r\n",
+        "requires-reload": "no",
+        "icon": "data:image/svg+xml,%3Csvg%20stroke%3D%22currentColor%22%20fill%3D%22%23aaa%22%20stroke-width%3D%220%22%20viewBox%3D%220%200%2024%2024%22%20height%3D%221em%22%20width%3D%221em%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M7%203h2v18H7zM4%203h2v18H4zm6%200h2v18h-2zm9.062%2017.792-6.223-16.89%201.877-.692%206.223%2016.89z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%0D%0A"
+    },
+    {
+        "title": "$:/plugins/oeyoews/commandpalette",
+        "author": "oeyoews",
+        "core-version": ">=5.3.0",
+        "description": "Command palette",
+        "plugin-type": "plugin",
+        "version": "0.1.0",
+        "list": "readme",
+        "dependents": "",
+        "type": "application/json",
+        "readme": "!! 改于 $:/plugins/souk21/commandpalette\n\n* https://github.com/Souk21/TW-commandpalette\n\n!! Readme\n\n* 使用tailwindcss, 重写部分样式\n* use tailwindcss, rewrite some styles\n\n[img[https://i.imgur.com/JNF1NKg.png]]\n\n!! TODO\n\n<!-- * suitable dark:invert -->\n* ctrl-shift-I 不起作用\n* support create tiddlers with tag\n<!-- * add masklayer -->\n* prevent stop scrollable\n<!-- * add search plugins -->\n<!-- * right search tips -->\n* suitable mobile style\n* support icons",
+        "requires-reload": "yes",
+        "icon": "data:image/svg+xml,%3Csvg%20stroke%3D%22currentColor%22%20fill%3D%22currentColor%22%20stroke-width%3D%220%22%20viewBox%3D%220%200%2020%2020%22%20aria-hidden%3D%22true%22%20height%3D%221em%22%20width%3D%221em%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20d%3D%22M2%205a2%202%200%20012-2h12a2%202%200%20012%202v10a2%202%200%2001-2%202H4a2%202%200%2001-2-2V5zm3.293%201.293a1%201%200%20011.414%200l3%203a1%201%200%20010%201.414l-3%203a1%201%200%2001-1.414-1.414L7.586%2010%205.293%207.707a1%201%200%20010-1.414zM11%2012a1%201%200%20100%202h3a1%201%200%20100-2h-3z%22%20clip-rule%3D%22evenodd%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%0A"
+    },
+    {
         "version": "0.0.2",
         "type": "application/json",
         "title": "$:/plugins/oeyoews/markdown-kit",
@@ -22,9 +51,474 @@ var assetList = [
         "readme": "<h2 id=\"markdown-kit\">Markdown Kit</h2>\r\n<p>coming</p>\r\n<h2 id=\"note\">NOTE</h2>\r\n<ul>\r\n<li>目前markdown有一个比较严重的错误 <a href=\"https://github.com/Jermolene/TiddlyWiki5/issues/7782\">github issue</a></li>\r\n<li>不要拖拽此插件, 否则插件依赖不会安装, 请使用 <a href=\"https://tw-cpl.netlify.app/#Welcome:Index%20Welcome\">CPL</a> 安装</li>\r\n</ul>\r\n<h2 id=\"todo\">TODO</h2>\r\n<ul>\r\n<li>给重写的配置加上一个用户开关配置,默认开启</li>\r\n<li>测试依赖</li>\r\n<li>将markdown kit 的readme借助工具(比如pandoc)转换成html(假设用户没有安装markdowns所以简介只用用html写)</li>\r\n</ul>\r\n\r\n<!--\r\n ## Markdown Kit\r\n\r\ncoming\r\n\r\n## NOTE\r\n\r\n- 目前markdown有一个比较严重的错误 [github issue](https://github.com/Jermolene/TiddlyWiki5/issues/7782)\r\n- 不要拖拽此插件, 否则插件依赖不会安装, 请使用 [CPL](https://tw-cpl.netlify.app/#Welcome:Index%20Welcome) 安装\r\n- codemirror-mode-markdown依赖插件mode-xml\r\n## TODO\r\n\r\n- 给重写的配置加上一个用户开关配置,默认开启\r\n- 测试依赖\r\n- 将markdown kit 的readme借助工具(比如pandoc)转换成html(假设用户没有安装markdowns所以简介只用用html写)\r\n  - https://markdowntohtml.com/\r\n-->\r\n",
         "requires-reload": "no",
         "icon": "data:text/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0D%0A%3Cg%20clip-path%3D%22url(%23clip0_1_6)%22%3E%0D%0A%3Cpath%20d%3D%22M18.375%200H5.625C2.5184%200%200%202.5184%200%205.625V18.375C0%2021.4816%202.5184%2024%205.625%2024H18.375C21.4816%2024%2024%2021.4816%2024%2018.375V5.625C24%202.5184%2021.4816%200%2018.375%200Z%22%20fill%3D%22%23F4F2ED%22%2F%3E%0D%0A%3Cpath%20d%3D%22M19.5077%2016.8005L12.3216%2020.8653V17.6993L16.7989%2015.2364L19.5077%2016.8005ZM19.9992%2016.3553V7.85438L17.3695%209.372V14.8359L19.9992%2016.3553ZM4.50469%2016.8005L11.6908%2020.8653V17.6993L7.21341%2015.2364L4.50469%2016.8005ZM4.01316%2016.3553V7.85438L6.64284%209.372V14.8359L4.01316%2016.3553ZM4.32075%207.30435L11.6908%203.13472V6.19575L6.96938%208.79281L6.93328%208.81344L4.32075%207.30435ZM19.6915%207.30435L12.3216%203.13472V6.19575L17.043%208.79281L17.0791%208.81344L19.6915%207.30435Z%22%20fill%3D%22%238ED6FB%22%2F%3E%0D%0A%3Cpath%20d%3D%22M11.6908%2016.9792L7.27359%2014.5506V9.73809L11.6908%2012.2887V16.9792ZM12.3216%2016.9792L16.7388%2014.5506V9.73809L12.3216%2012.2887V16.9792ZM7.57266%209.18122L12.007%206.74231L16.4414%209.18122L12.007%2011.7422L7.57266%209.18122Z%22%20fill%3D%22%231C78C0%22%2F%3E%0D%0A%3Cg%20filter%3D%22url(%23filter0_d_1_6)%22%3E%0D%0A%3Cpath%20d%3D%22M2.5%2016.2985V7.70151L6.7985%2016.2985L11.0975%207.70151V16.2985M13.166%2014.421V16.299H21.5V14.421%22%20stroke%3D%22%231E1E1E%22%20stroke-width%3D%220.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%0D%0A%3Cpath%20d%3D%22M14.132%2011.631L17.199%2014.689L20.445%2011.631H18.603V8.1795H15.795V11.631H14.132Z%22%20stroke%3D%22%231E1E1E%22%20stroke-width%3D%220.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%0D%0A%3C%2Fg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cdefs%3E%0D%0A%3Cfilter%20id%3D%22filter0_d_1_6%22%20x%3D%22-4%22%20y%3D%220%22%20width%3D%2232%22%20height%3D%2232%22%20filterUnits%3D%22userSpaceOnUse%22%20color-interpolation-filters%3D%22sRGB%22%3E%0D%0A%3CfeFlood%20flood-opacity%3D%220%22%20result%3D%22BackgroundImageFix%22%2F%3E%0D%0A%3CfeColorMatrix%20in%3D%22SourceAlpha%22%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%20127%200%22%20result%3D%22hardAlpha%22%2F%3E%0D%0A%3CfeOffset%20dy%3D%224%22%2F%3E%0D%0A%3CfeGaussianBlur%20stdDeviation%3D%222%22%2F%3E%0D%0A%3CfeComposite%20in2%3D%22hardAlpha%22%20operator%3D%22out%22%2F%3E%0D%0A%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.25%200%22%2F%3E%0D%0A%3CfeBlend%20mode%3D%22normal%22%20in2%3D%22BackgroundImageFix%22%20result%3D%22effect1_dropShadow_1_6%22%2F%3E%0D%0A%3CfeBlend%20mode%3D%22normal%22%20in%3D%22SourceGraphic%22%20in2%3D%22effect1_dropShadow_1_6%22%20result%3D%22shape%22%2F%3E%0D%0A%3C%2Ffilter%3E%0D%0A%3CclipPath%20id%3D%22clip0_1_6%22%3E%0D%0A%3Crect%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22white%22%2F%3E%0D%0A%3C%2FclipPath%3E%0D%0A%3C%2Fdefs%3E%0D%0A%3C%2Fsvg%3E%0D%0A"
+    },
+    {
+        "version": "0.0.6",
+        "type": "application/json",
+        "title": "$:/plugins/oeyoews/neotw",
+        "plugin-type": "plugin",
+        "name": "Neotw",
+        "description": "Neotw",
+        "author": "oeyoews",
+        "dependents": "$:/plugins/tiddlywiki/markdown",
+        "list": "Readme",
+        "requires-reload": "yes"
+    },
+    {
+        "title": "$:/plugins/oeyoews/neotw-cli-info",
+        "description": "neotw-cli-info",
+        "author": "oeyoews",
+        "version": "0.0.1",
+        "core-version": ">=5.3.0",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "neotw-cli-info",
+        "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
+        "list": "readme",
+        "requires-reload": "yes"
+    },
+    {
+        "title": "$:/plugins/oeyoews/neotw-copy-code",
+        "description": "Neotw Copy Code",
+        "author": "oeyoews",
+        "version": "0.2.1",
+        "core-version": ">=5.3.0",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "plugin-priority": 1,
+        "name": "Neotw Copy Code",
+        "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus $:/plugins/oeyoews/neotw-icons",
+        "list": "readme",
+        "readme": "<div class=\"prose max-w-none prose-indigo\">\n\n!! Neotw Copy Code\n\n> 图标支持的 highlgiht 识别的全部语言\n\n> This plugin can greatly improve the efficiency and convenience of displaying and sharing code in TiddlyWiki, especially when you need to copy code frequently.\n\n> 这个插件可以极大地提高在 TiddlyWiki 中显示和分享代码的效率和便利性，尤其是在需要频繁复制代码时。\n\n!! TODO\n\n* support filename, such as `main.js`\n\n!! Examples\n\n```bash\r\n#!/bin/bash\r\necho \"Hello, TiddlyWiki!\"\r\n```\n\n```c\r\n#include <stdio.h>\n\nint main() {\r\n    printf(\"Hello, TiddlyWiki!\\n\");\r\n    return 0;\r\n}\r\n```\n\n```cpp\r\n#include <iostream>\n\nint main() {\r\n    std::cout << \"Hello, TiddlyWiki!\" << std::endl;\r\n    return 0;\r\n}\r\n```\n\n```csharp\r\nusing System;\n\nclass Program {\r\n    static void Main(string[] args) {\r\n        Console.WriteLine(\"Hello, TiddlyWiki!\");\r\n    }\r\n}\r\n```\n\n```css\r\n/* index.css */\r\nbody::before {\r\n    content: \"Hello, TiddlyWiki!\";\r\n}\r\n```\n\n```go\r\npackage main\n\nimport \"fmt\"\n\nfunc main() {\r\n    fmt.Println(\"Hello, TiddlyWiki!\")\r\n}\r\n```\n\n```html\r\n<!DOCTYPE html5>\r\n<html>\r\n<head>\r\n    <title>Hello, TiddlyWiki!</title>\r\n</head>\r\n</html>\r\n```\n\n```java\r\npublic class HelloWorld {\r\n    public static void main(String[] args) {\r\n        System.out.println(\"Hello, TiddlyWiki!\");\r\n    }\r\n}\r\n```\n\n```javascript\r\nconsole.log(\"Hello, TiddlyWiki!\");\r\n```\n\n```json\r\n{\r\n  \"message\": \"Hello, TiddlyWiki!\"\r\n}\r\n```\n\n```kotlin\r\nfun main() {\r\n    println(\"Hello, TiddlyWiki!\")\r\n}\r\n```\n\n```less\r\n@message: \"Hello, TiddlyWiki!\";\r\nbody::before {\r\n    content: @message;\r\n}\r\n```\n\n```lua\r\nprint(\"Hello, TiddlyWiki!\")\r\n```\n\n```makefile\r\nhello:\r\n    @echo \"Hello, TiddlyWiki!\"\r\n```\n\n```markdown\r\n# Hello, TiddlyWiki!\r\n```\n\n```objective-c\r\n#import <Foundation/Foundation.h>\n\nint main(int argc, const char * argv[]) {\r\n    @autoreleasepool {\r\n        NSLog(@\"Hello, TiddlyWiki!\");\r\n    }\r\n    return 0;\r\n}\r\n```\n\n```perl\r\nprint \"Hello, TiddlyWiki!\\n\";\r\n```\n\n```php\r\n<?php\r\necho \"Hello, TiddlyWiki!\";\r\n?>\r\n```\n\n```\r\nHello, TiddlyWiki!\r\n```\n\n```python\r\nprint(\"Hello, TiddlyWiki!\")\r\n```\n\n```r\r\ncat(\"Hello, TiddlyWiki!\\n\")\r\n```\n\n```ruby\r\nputs \"Hello, TiddlyWiki!\"\r\n```\n\n```rust\r\nfn main() {\r\n    println!(\"Hello, TiddlyWiki!\");\r\n}\r\n```\n\n```scss\r\n$greeting: \"Hello, TiddlyWiki!\";\n\nbody::before {\r\n    content: $greeting;\r\n}\r\n```\n\n```sql\r\nSELECT 'Hello, TiddlyWiki!';\r\n```\n\n```\r\n$ echo \"Hello, TiddlyWiki!\"\r\n```\n\n```swift\r\nimport Swift\n\nprint(\"Hello, TiddlyWiki!\")\r\n```\n\n```toml\r\nmessage = \"Hello, TiddlyWiki!\"\r\n```\n\n```typescript\r\nconsole.log(\"Hello, TiddlyWiki!\");\r\n```\n\n```vb\r\nModule HelloWorld\r\n    Sub Main()\r\n        Console.WriteLine(\"Hello, TiddlyWiki!\")\r\n    End Sub\r\nEnd Module\r\n```\n\n```xml\r\n<root>\r\n    <message>Hello, TiddlyWiki!</message>\r\n</root>\r\n```\n\n```yaml\r\nmessage: Hello, TiddlyWiki!\r\n```\n\n```apache\r\n# httpd.conf\r\nServerName localhost\n\n<VirtualHost *:80>\r\n    DocumentRoot \"/path/to/www\"\r\n    ServerName example.com\r\n</VirtualHost>\r\n```\n\n```dockerfile\r\nFROM nginx:latest\n\nCOPY index.html /usr/share/nginx/html/index.html\r\n```\n\n```fortran\r\nprogram HelloWorld\r\n    print *, \"Hello, TiddlyWiki!\"\r\nend program HelloWorld\r\n```\n\n```latex\r\n\\documentclass{article}\n\n\\begin{document}\r\nHello, TiddlyWiki!\r\n\\end{document}\r\n```\n\n```nginx\r\nserver {\r\n    listen 80;\r\n    server_name example.com;\n\n    location / {\r\n        root /var/www/html;\r\n        index index.html;\r\n    }\r\n}\r\n```\r\n",
+        "requires-reload": "yes",
+        "icon": "data:image/svg+xml,%3Csvg%20stroke%3D%22currentColor%22%20fill%3D%22none%22%20stroke-width%3D%222%22%20viewBox%3D%220%200%2024%2024%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20height%3D%221em%22%20width%3D%221em%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20stroke%3D%22none%22%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M8%208m0%202a2%202%200%200%201%202%20-2h8a2%202%200%200%201%202%202v8a2%202%200%200%201%20-2%202h-8a2%202%200%200%201%20-2%20-2z%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M16%208v-2a2%202%200%200%200%20-2%20-2h-8a2%202%200%200%200%20-2%202v8a2%202%200%200%200%202%202h2%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%0A"
+    },
+    {
+        "title": "$:/plugins/oeyoews/neotw-fetch",
+        "description": "Neotw Fetch",
+        "author": "oeyoews",
+        "version": "0.0.1",
+        "core-version": ">=5.2.5",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "Neotw Fetch",
+        "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
+        "list": "readme explore",
+        "readme": "!! Neotw Fetch\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/neotw-fetch]]\n* [[Demo|https://oeyoews.github.io/neotw]]\n",
+        "requires-reload": "yes",
+        "icon": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221em%22%20height%3D%221em%22%20fill%3D%22%23aaa%22%20stroke%3D%22currentColor%22%20stroke-width%3D%220%22%20version%3D%221%22%20viewBox%3D%220%200%2048%2048%22%3E%3Cpath%20fill%3D%22%238BC34A%22%20stroke%3D%22none%22%20d%3D%22M39%2015c0-2.2-1.8-4-4-4h-6c-.7%200-1.1-.8-.7-1.4.6-1%20.9-2.2.6-3.5-.4-2-1.9-3.6-3.8-4C21.8%201.4%2019%203.9%2019%207c0%201%20.3%201.8.7%202.6.4.6%200%201.4-.8%201.4h-6c-2.2%200-4%201.8-4%204v7c0%20.7.8%201.1%201.4.7%201-.6%202.2-.9%203.5-.6%202%20.4%203.6%201.9%204%203.8.7%203.2-1.8%206.1-4.9%206.1-1%200-1.8-.3-2.6-.7-.5-.4-1.3%200-1.3.7v6c0%202.2%201.8%204%204%204h22c2.2%200%204-1.8%204-4V15z%22%2F%3E%3C%2Fsvg%3E"
+    },
+    {
+        "title": "$:/plugins/oeyoews/neotw-homepage",
+        "description": "主页展示",
+        "author": "oeyoews",
+        "version": "0.0.1",
+        "core-version": ">=5.2.7",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "Neotw Homepage",
+        "list": "readme",
+        "dependents": "",
+        "readme": "{{$:/config/EmptyStoryMessage}}\n\n<!-- !! Not Have Div Tag -->\n<!---->\n<!-- Just vanilla text -->\n<!---->\n<!-- <div class=\"prose max-w-none prose-indigo\"> -->\n<!---->\n<!-- ``` -->\n<!-- {{{ [[index]] ||$:/core/ui/ViewTemplate }}} -->\n<!-- ``` -->\n<!---->\n<!-- * if use viewtemplate on Layout, 页面会崩溃 -->\n<!---->\n<!-- !! Tiddlywiki Empty Story -->\n<!---->\n<!-- </div> -->\n",
+        "requires-reload": "no",
+        "icon": "data:image/svg+xml,%3Csvg%20stroke%3D%22currentColor%22%20fill%3D%22currentColor%22%20stroke-width%3D%220%22%20version%3D%221%22%20viewBox%3D%220%200%2048%2048%22%20enable-background%3D%22new%200%200%2048%2048%22%20height%3D%221em%22%20width%3D%221em%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20fill%3D%22%23E8EAF6%22%20points%3D%2242%2C39%206%2C39%206%2C23%2024%2C6%2042%2C23%22%3E%3C%2Fpolygon%3E%3Cg%20fill%3D%22%23C5CAE9%22%3E%3Cpolygon%20points%3D%2239%2C21%2034%2C16%2034%2C9%2039%2C9%22%3E%3C%2Fpolygon%3E%3Crect%20x%3D%226%22%20y%3D%2239%22%20width%3D%2236%22%20height%3D%225%22%3E%3C%2Frect%3E%3C%2Fg%3E%3Cpolygon%20fill%3D%22%23B71C1C%22%20points%3D%2224%2C4.3%204%2C22.9%206%2C25.1%2024%2C8.4%2042%2C25.1%2044%2C22.9%22%3E%3C%2Fpolygon%3E%3Crect%20x%3D%2218%22%20y%3D%2228%22%20fill%3D%22%23D84315%22%20width%3D%2212%22%20height%3D%2216%22%3E%3C%2Frect%3E%3Crect%20x%3D%2221%22%20y%3D%2217%22%20fill%3D%22%2301579B%22%20width%3D%226%22%20height%3D%226%22%3E%3C%2Frect%3E%3Cpath%20fill%3D%22%23FF8A65%22%20d%3D%22M27.5%2C35.5c-0.3%2C0-0.5%2C0.2-0.5%2C0.5v2c0%2C0.3%2C0.2%2C0.5%2C0.5%2C0.5S28%2C38.3%2C28%2C38v-2C28%2C35.7%2C27.8%2C35.5%2C27.5%2C35.5z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%0A"
+    },
+    {
+        "title": "$:/plugins/oeyoews/neotw-icons",
+        "description": "Neotw Icons",
+        "author": "oeyoews",
+        "version": "0.0.2",
+        "core-version": ">=5.3.0",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "Neotw Icons",
+        "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
+        "list": "readme",
+        "readme": "{{$:/languages/neotw-icons/readme}}\n",
+        "requires-reload": "yes"
+    },
+    {
+        "title": "$:/plugins/oeyoews/neotw-image-better",
+        "description": "neotw-image-better",
+        "author": "oeyoews",
+        "version": "0.0.3",
+        "core-version": ">=5.3.0",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "neotw-image-better",
+        "dependents": "",
+        "list": "readme",
+        "requires-reload": "yes"
+    },
+    {
+        "title": "$:/plugins/oeyoews/neotw-info",
+        "description": "neotw-info",
+        "author": "oeyoews",
+        "version": "0.0.1",
+        "core-version": ">=5.3.0",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "neotw-info",
+        "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
+        "list": "readme",
+        "requires-reload": "yes"
+    },
+    {
+        "title": "$:/plugins/oeyoews/neotw-notion-gallery",
+        "description": "neotw-notion-gallery",
+        "author": "oeyoews",
+        "version": "0.1.0",
+        "core-version": ">=5.3.0",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "neotw-notion-gallery",
+        "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
+        "list": "readme",
+        "readme": "!! 插件介绍\n\n> 支持书单, 博客, 日志等卡片视图\n\nps: 支持豆瓣图片链接(不受防盗链影响)\r\npss: 建议开启浏览器GPU加速,浏览效果更佳(tailwindcss 影响)\n\n!! 使用方法\n\n```bash\r\n<$cards />\n\n## 可选参数filter, filter 默认为 [!is[system]!has[draft.of]!sort[created]limit[9]]\r\n<$cards filter=\"[tag[Journal]limit[9]]\"/>\n\n## 指定某一个(或者多个)固定tiddler\r\n<$cards filter=\"[[$:/core/ui/ControlPanel/Plugins]] [[GettingStarted]]\" />\n\n## 杂合(混用)\r\n## tiddler 的筛选器用法没有明确的术语表达,导致教程只能`show me the code`, 不像大众化的编程语言(比如JS,React,Vue),官方统一制定了术语, 比较浅显易懂\r\n<$cards filter=\"[[GettingStarted]] [!is[system]!has[draft.of]!sort[modified]!is[shadow]limit[8]]\" />\r\n```\n\n> 图片默认使用每个tiddler的page-cover字段, 如果page-cover字段不存在, 则使用 `https://source.unsplash.com/random/1920x1080?fm=blurhash&${title}`\n\n> 依赖插件: tailwindcss\n\n> 默认使用(16:9)1920x1080的分辨率(分辨率越大(图片质量越高), 图片加载速度就相对较慢)\n\n> 已经借助tailwindcss对页面进行了防抖动处理, 图片按需加载\n\n> 之所以目前仅仅显示图片, 而不是像notion的gallery布局, 是因为由于filter的不同会导致不同的样式, 此插件目前处于beta阶段, 暂时不打算支持类似notion的动态字段配置(时间有限, 理论上是完全可以做到)\n\n!! Recipes\n\n> 每个tiddler的标题不要像论文标题那样过长(也许我正文的部分还没你的标题长 😀), 尽量简短扼要\n\n!! 显示最近更新动态\n\n<$cards />\n\n!! 最近的日志\n\n<$cards filter=\"[tag[Journal]limit[9]]\"/>\n\n<!-- > 其实使用wikitext可以很快写一个, 但是wikitext的enlist, set, var(用法), 每次都记不住(文档搜索真的不好用), 头疼 -->\r\n<!-- 会有闪烁, 由于tailwindcss为加载完成应用样式 -->\n\n<!-- 事实证明js写的widget更具有扩展性,灵活性 -->\n\n!! v1.TODO\n\n* add title params\r\n* support gallery to show all images(暂时不做)\r\n* 自动生成 today jounal card(use bing today wallpaper)(暂时不做)\r\n* 图片默认启用, 或者部分可选择性启用, 图片加载速度较慢\r\n* 🟩 icon: 不使用icon字段(改用page-icon),这里借助iconify插件\r\n* 🟥 sort(filter): add dynamic filter interface\r\n* 🟥 peek: 实现peek, 支持全屏, tm-modal可以借鉴(灵活性不够), 但是全屏还是要另外想办法square\r\n* 🟥 tag: tag可点击, 可以修改tag\r\n* 🟥 dropmenu: 支持tiddler的删除,复制(clone), 链接复制, 重命名, star(favourite 提供支持)\r\n* 🟥 UI: 添加title(支持修改), tag(tag manager)\r\n* 🟥 支持新增tiddler\r\n* 🟥 search: current filter tiddler search\r\n* 🟥 view: 支持gallary-table-magazine的切换, 支持字段可视化实时编辑\r\n* 支持列出所有的插件: 使用plugin-name 代替过长的title\n\n> 如果过于复杂并且有时间的话,可能会引入xstate进行状态管理\n\n> 这里绝对保证不了1:1完全复刻notion\n\n> ps: notion 的功能太花哨了(复刻到tiddlywiki需要很多精力), 如果想要更好的体验, 可以直接使用notion\r\n",
+        "requires-reload": "yes"
+    },
+    {
+        "title": "$:/plugins/oeyoews/neotw-notranslate",
+        "description": "No Translate",
+        "author": "oeyoews",
+        "version": "0.0.1",
+        "core-version": ">=5.3.0",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "neotw-notranslate",
+        "dependents": "",
+        "list": "readme",
+        "readme": "{{$:/languages/neotw-notranslate/readme}}\n",
+        "requires-reload": "yes"
+    },
+    {
+        "title": "$:/plugins/oeyoews/neotw-pwa",
+        "description": "让你的TiddlyWiki网页像app一样启动",
+        "author": "oeyoews",
+        "version": "0.0.2",
+        "core-version": ">=5.3.0",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "Neotw Pwa",
+        "dependents": "",
+        "list": "readme",
+        "readme": "{{$:/languages/neotw-pwa/readme}}\n",
+        "requires-reload": "yes",
+        "icon": "data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%20width%3D%2232%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22m15.35%202.1425c.32-.19.71-.19%201.02%200l10.92%206.64c.26.16.42.45.42.75l-11.85%207.9675-11.86-7.86757v-.09993c0-.3.16-.59.42-.74z%22%20fill%3D%22%23f3c07b%22%2F%3E%3Cpath%20d%3D%22m15.856%2016.2463%2011.36-6.89997c.0498-.0297.1067-.04566.1647-.04626.058-.00061.1151.01418.1655.04284.0504.02867.0923.07016.1214.1203.0292.05014.0445.10711.0445.1651v12.33999c.0001.2972-.0762.5894-.2216.8486-.1453.2592-.3549.4765-.6085.6314l-10.6399%206.46c-.0271.0149-.0566.0251-.0871.0301-.0269.008-.0549.0117-.083.011-.1135.0318-.2322.0409-.3493.0267-.1171-.0143-.2301-.0516-.3327-.1097h.006l-2.396-10.8664z%22%20fill%3D%22%23ffce7c%22%2F%3E%3Cpath%20d%3D%22m15.86%2029.6224v-13.37l-11.35-6.89997c-.23-.14-.51.02-.51.28v12.33997c0%20.61.32%201.17.83%201.48l10.57%206.42c.2.13.46-.02.46-.25z%22%20fill%3D%22%23e19747%22%2F%3E%3Cpath%20d%3D%22m14.5%2026.7824v-1.96c0-.23-.12-.44-.31-.56l-2.8-1.69c-.19-.11-.43.02-.43.24v1.96c0%20.23.12.44.31.56l2.8%201.69c.19.11.43-.02.43-.24z%22%20fill%3D%22%23d3d3d3%22%2F%3E%3Cpath%20d%3D%22m11.76%2016.5525v-2.79-1.7699l-3.27999-.2201v3.16c0%20.1.05.2.14.26l2.67999%201.63c.2.11.46-.03.46-.27z%22%20fill%3D%22%238c5543%22%2F%3E%3Cpath%20d%3D%22m20.34%204.5625-11.85999%207.21%203.27999%202%2011.86-7.2z%22%20fill%3D%22%23a56953%22%2F%3E%3C%2Fsvg%3E"
+    },
+    {
+        "title": "$:/plugins/oeyoews/neotw-reverse-card",
+        "description": "翻转卡片",
+        "author": "oeyoews",
+        "version": "0.0.2",
+        "core-version": ">=5.3.0",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "neotw-reverse-card",
+        "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
+        "list": "readme",
+        "readme": "!! 介绍\n\n> 卡片在点击后, 如果五秒内没有被点击, 则重新翻转到正面\n\n<$rcard />\n<$rcard json=\"$:/plugins/oeyoews/neotw-reverse-card/tw.json\"/>\n<$rcard json=\"$:/plugins/oeyoews/neotw-reverse-card/01.json\"/>\n\n```\n<$rcard question=\"xxx\" answer=\"xxx\" />\n<$rcard json=\"xxx.json\" />\n```\n\n!! TODO\n\n* 支持同时设置一组问题, 并且允许next, stop, restart, 得分记录(目前支持json文件)\n* 使用2:3的经典书籍卡片比例\n* 悬浮三秒以上, 自动进行翻转(实现比较容易, 暂时不做)\n* 做成短视频的上下滑动的卡片效果(实现比较容易, 暂时不做)\n",
+        "requires-reload": "yes"
+    },
+    {
+        "title": "$:/plugins/oeyoews/neotw-swal2",
+        "description": "Neotw Swal2",
+        "author": "oeyoews",
+        "version": "0.0.1",
+        "core-version": ">=5.2.7",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "Neotw Swal2",
+        "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
+        "list": "readme",
+        "readme": "<div class=\"prose prose-indigo max-w-none\">\n\n!! Neotw Swal2\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/neotw-swal2]]\n* [[Demo|https://oeyoews.github.io/neotw]]\n* https://sweetalert2.github.io/#configuration\n",
+        "requires-reload": "yes",
+        "icon": "data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20height%3D%2290%22%20viewBox%3D%220%200%20102%2090%22%20width%3D%22102%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Cfilter%20id%3D%22a%22%20color-interpolation-filters%3D%22sRGB%22%20filterUnits%3D%22userSpaceOnUse%22%20height%3D%2260.5894%22%20width%3D%2253.1897%22%20x%3D%225.62938%22%20y%3D%2214.4781%22%3E%3CfeFlood%20flood-opacity%3D%220%22%20result%3D%22BackgroundImageFix%22%2F%3E%3CfeBlend%20in%3D%22SourceGraphic%22%20in2%3D%22BackgroundImageFix%22%20mode%3D%22normal%22%20result%3D%22shape%22%2F%3E%3CfeGaussianBlur%20result%3D%22effect1_foregroundBlur_1_235%22%20stdDeviation%3D%227.5%22%2F%3E%3C%2Ffilter%3E%3Cfilter%20id%3D%22b%22%20color-interpolation-filters%3D%22sRGB%22%20filterUnits%3D%22userSpaceOnUse%22%20height%3D%2299.674%22%20width%3D%22100.724%22%20x%3D%2213.8078%22%20y%3D%22-9.47424%22%3E%3CfeFlood%20flood-opacity%3D%220%22%20result%3D%22BackgroundImageFix%22%2F%3E%3CfeGaussianBlur%20in%3D%22BackgroundImageFix%22%20stdDeviation%3D%227.5%22%2F%3E%3CfeComposite%20in2%3D%22SourceAlpha%22%20operator%3D%22in%22%20result%3D%22effect1_backgroundBlur_1_235%22%2F%3E%3CfeBlend%20in%3D%22SourceGraphic%22%20in2%3D%22effect1_backgroundBlur_1_235%22%20mode%3D%22normal%22%20result%3D%22shape%22%2F%3E%3C%2Ffilter%3E%3Cfilter%20id%3D%22c%22%20color-interpolation-filters%3D%22sRGB%22%20filterUnits%3D%22userSpaceOnUse%22%20height%3D%2245.0994%22%20width%3D%2255.4088%22%20x%3D%2241.6676%22%20y%3D%2258.5806%22%3E%3CfeFlood%20flood-opacity%3D%220%22%20result%3D%22BackgroundImageFix%22%2F%3E%3CfeGaussianBlur%20in%3D%22BackgroundImageFix%22%20stdDeviation%3D%227.5%22%2F%3E%3CfeComposite%20in2%3D%22SourceAlpha%22%20operator%3D%22in%22%20result%3D%22effect1_backgroundBlur_1_235%22%2F%3E%3CfeBlend%20in%3D%22SourceGraphic%22%20in2%3D%22effect1_backgroundBlur_1_235%22%20mode%3D%22normal%22%20result%3D%22shape%22%2F%3E%3C%2Ffilter%3E%3Cfilter%20id%3D%22d%22%20color-interpolation-filters%3D%22sRGB%22%20filterUnits%3D%22userSpaceOnUse%22%20height%3D%2243.39%22%20width%3D%2242.3341%22%20x%3D%2249.2425%22%20y%3D%222.70139%22%3E%3CfeFlood%20flood-opacity%3D%220%22%20result%3D%22BackgroundImageFix%22%2F%3E%3CfeGaussianBlur%20in%3D%22BackgroundImageFix%22%20stdDeviation%3D%227.5%22%2F%3E%3CfeComposite%20in2%3D%22SourceAlpha%22%20operator%3D%22in%22%20result%3D%22effect1_backgroundBlur_1_235%22%2F%3E%3CfeColorMatrix%20in%3D%22SourceAlpha%22%20result%3D%22hardAlpha%22%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%20127%200%22%2F%3E%3CfeOffset%20dx%3D%225%22%20dy%3D%225%22%2F%3E%3CfeGaussianBlur%20stdDeviation%3D%225%22%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200.15375%200%200%200%200%200.522433%200%200%200%200%200.9%200%200%200%200.5%200%22%2F%3E%3CfeBlend%20in2%3D%22effect1_backgroundBlur_1_235%22%20mode%3D%22normal%22%20result%3D%22effect2_dropShadow_1_235%22%2F%3E%3CfeBlend%20in%3D%22SourceGraphic%22%20in2%3D%22effect2_dropShadow_1_235%22%20mode%3D%22normal%22%20result%3D%22shape%22%2F%3E%3C%2Ffilter%3E%3ClinearGradient%20id%3D%22e%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%2339affd%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23477fff%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient%20id%3D%22f%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2261.819%22%20x2%3D%221.64464%22%20xlink%3Ahref%3D%22%23e%22%20y1%3D%2228.3909%22%20y2%3D%2257.4864%22%2F%3E%3ClinearGradient%20id%3D%22g%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2233.5599%22%20x2%3D%2222.3091%22%20xlink%3Ahref%3D%22%23e%22%20y1%3D%2271.6415%22%20y2%3D%2282.476%22%2F%3E%3ClinearGradient%20id%3D%22h%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23fff%22%20stop-opacity%3D%22.25%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23fff%22%20stop-opacity%3D%220%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient%20id%3D%22i%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2232.5803%22%20x2%3D%2283.8985%22%20xlink%3Ahref%3D%22%23h%22%20y1%3D%2219.4834%22%20y2%3D%2263.8996%22%2F%3E%3ClinearGradient%20id%3D%22j%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2260.9519%22%20x2%3D%2268.7465%22%20xlink%3Ahref%3D%22%23h%22%20y1%3D%2278.964%22%20y2%3D%2290.7532%22%2F%3E%3ClinearGradient%20id%3D%22k%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2276.1439%22%20x2%3D%2272.2773%22%20y1%3D%2221.1387%22%20y2%3D%2232.9181%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23fff%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23fff%22%20stop-opacity%3D%22.2%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient%20id%3D%22l%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%2271.3857%22%20x2%3D%2274.065%22%20y1%3D%2229.2475%22%20y2%3D%2220.1915%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23fff%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23fff%22%20stop-opacity%3D%220%22%2F%3E%3C%2FlinearGradient%3E%3Cmask%20id%3D%22m%22%20fill%3D%22%23000%22%20height%3D%2281.3885%22%20maskUnits%3D%22userSpaceOnUse%22%20width%3D%2284.4775%22%20x%3D%2219.0139%22%20y%3D%22-1.30507%22%3E%3Cpath%20d%3D%22m19.0139-1.30507h84.4775v81.3885h-84.4775z%22%20fill%3D%22%23fff%22%2F%3E%3Cpath%20d%3D%22m93.3276%2039.1535c-3.6372-2.7932-5.5861-5.4672-6.6439-10.4852l-.3596-1.7062c-1.3784-6.5391-3.7715-10.435-7.9317-13.9584-6.4224-5.48003-15.7437-7.63396-24.055-5.882l-.3534.0745c-8.1366%201.71514-15.5675%207.2112-19.3748%2014.5701-2.5448%205.0251-3.2983%209.7735-1.8817%2016.4936l.3596%201.7062c1.0578%205.018.4414%208.2328-1.8462%2012.2748-1.6825%202.9772-1.7091%206.3535-.9728%209.8464.7371%203.4969%202.5828%206.5667%205.4535%208.7733%203.6863%202.5937%208.3656%203.7591%2012.7775%203.2032%206.4291-.6071%2012.7641-1.6609%2019.1336-3.0035%206.3655-1.3418%2012.5487-3.1159%2018.718-4.9753%204.2568-1.2714%208.0675-4.2265%2010.3933-8.0875%201.7317-3.1767%202.1852-6.7312%201.4481-10.2281-.7363-3.4929-2.1234-6.5712-4.8645-8.6159z%22%20fill%3D%22%23000%22%2F%3E%3C%2Fmask%3E%3Cmask%20id%3D%22n%22%20fill%3D%22%23000%22%20height%3D%2219.0617%22%20maskUnits%3D%22userSpaceOnUse%22%20width%3D%2228.3286%22%20x%3D%2255.7825%22%20y%3D%2272.2825%22%3E%3Cpath%20d%3D%22m55.7825%2072.2825h28.3286v19.0617h-28.3286z%22%20fill%3D%22%23fff%22%2F%3E%3Cpath%20d%3D%22m76.7546%2074.5806c-2.0873-.0055-14.2584%202.5601-16.1659%203.4077-1.6244.7542-3.2775%202.061-2.8534%204.073.5039%201.8985%201.9848%203.3557%203.7679%204.102l-.0031.0049c2.3441%201.145%204.9172%201.6449%207.4666%201.4816%201.3566-.0969%202.6971-.3878%204.0266-.8488%202.3945-.8788%204.5469-2.3748%206.2294-4.3686l-.0049-.0032c1.3302-1.4025%202.0969-3.3335%201.7915-5.2739-.4241-2.012-2.464-2.5403-4.2547-2.5747z%22%20fill%3D%22%23000%22%2F%3E%3C%2Fmask%3E%3Cpath%20d%3D%22m52.4986%2054.3639c-1.3823-2.8883-1.751-5.1691-.8242-8.6279l.3151-1.176c1.2077-4.5072.9484-7.6891-.5288-11.1975-2.2677-5.4413-7.3912-9.7275-13.12-11.2625l-.2436-.0653c-5.6083-1.5027-11.9717-.4283-16.6674%202.9511-3.1722%202.3249-5.1416%205.0435-6.3827%209.6755l-.3151%201.176c-.9268%203.4587-2.3263%205.2658-5.02775%207.0599-1.98831%201.3222-3.07156%203.4161-3.71665%205.8237-.64584%202.4103-.46647%204.9049.62384%207.1859%201.47594%202.7796%204.02136%204.9837%206.94416%206.0315%204.195%201.6532%208.4726%202.9985%2012.8629%204.1749%204.3875%201.1756%208.7981%202.0245%2013.227%202.8158%203.0523.5533%206.3588-.0828%209.0268-1.752%202.082-1.431%203.4874-3.501%204.1332-5.9113.6451-2.4075.754-4.7625-.3068-6.9018z%22%20fill%3D%22url(%23f)%22%2F%3E%3Cpath%20d%3D%22m30.9857%2071.1881c-1.298-.6629-9.6872-2.9108-11.1427-2.9857-1.2498-.0435-2.692.2478-3.0636%201.6347-.2861%201.3413.1757%202.7166%201.0502%203.7446l-.0035.0021c1.0978%201.4535%202.5421%202.5778%204.1812%203.2815.8752.3683%201.8018.6107%202.7754.7437%201.7686.2093%203.5815-.0422%205.259-.7521l-.002-.0035c1.2714-.453%202.3589-1.4132%202.7818-2.7179.3716-1.3868-.7317-2.3602-1.8358-2.9474z%22%20fill%3D%22url(%23g)%22%2F%3E%3Cg%20filter%3D%22url(%23a)%22%20opacity%3D%22.5%22%3E%3Cpath%20d%3D%22m42.9233%2049.9488c-.5185-1.8048-.5824-3.2655.0307-5.5538l.2085-.7781c.799-2.9819.8317-5.0324.2983-7.2346-.816-3.4166-3.0538-5.9437-5.7163-6.6571l-.1132-.0303c-2.6064-.6984-5.7006.3114-8.1112%202.7337-1.6306%201.6636-2.7056%203.5233-3.5267%206.5879l-.2085.778c-.6131%202.2883-1.3709%203.5289-2.7504%204.8251-1.0153.9553-1.6361%202.3663-2.0629%203.9591-.4273%201.5947-.4643%203.2034-.0554%204.6287.5686%201.7298%201.6767%203.0337%203.022%203.5692%201.9236.8655%203.9018%201.5273%205.9422%202.0741%202.0391.5464%204.1053.8797%206.1832%201.1749%201.4315.2085%203.0431-.3666%204.4004-1.5803%201.0655-1.0303%201.8391-2.4417%202.2664-4.0364.4267-1.5928.5947-3.1252.1929-4.4601z%22%20fill%3D%22%230062ff%22%2F%3E%3C%2Fg%3E%3Cg%20filter%3D%22url(%23b)%22%3E%3Cpath%20d%3D%22m93.3276%2039.1535c-3.6372-2.7932-5.5861-5.4672-6.6439-10.4852l-.3596-1.7062c-1.3784-6.5391-3.7715-10.435-7.9317-13.9584-6.4224-5.48003-15.7437-7.63396-24.055-5.882l-.3534.0745c-8.1366%201.71514-15.5675%207.2112-19.3748%2014.5701-2.5448%205.0251-3.2983%209.7735-1.8817%2016.4936l.3596%201.7062c1.0578%205.018.4414%208.2328-1.8462%2012.2748-1.6825%202.9772-1.7091%206.3535-.9728%209.8464.7371%203.4969%202.5828%206.5667%205.4535%208.7733%203.6863%202.5937%208.3656%203.7591%2012.7775%203.2032%206.4291-.6071%2012.7641-1.6609%2019.1336-3.0035%206.3655-1.3418%2012.5487-3.1159%2018.718-4.9753%204.2568-1.2714%208.0675-4.2265%2010.3933-8.0875%201.7317-3.1767%202.1852-6.7312%201.4481-10.2281-.7363-3.4929-2.1234-6.5712-4.8645-8.6159z%22%20fill%3D%22%233ea0fe%22%20fill-opacity%3D%22.35%22%2F%3E%3Cpath%20d%3D%22m92.7185%2039.9466c.438.3364%201.0658.254%201.4022-.1841.3364-.438.254-1.0658-.1841-1.4021zm-14.3261-26.9429-.6491.7607.0028.0024zm-43.7832%208.7626-.8882-.4595-.0039.0077zm-3.3683%2030.4746-.8703-.4926-.0003.0006zm4.4807%2018.6197-.6094.7929c.0111.0085.0225.0169.034.025zm12.7775%203.2032-.0941-.9956c-.0103.001-.0206.0022-.031.0035zm37.8516-7.9788-.2862-.9582-.0024.0007zm10.3933-8.0875.8566.516c.0074-.0123.0145-.0247.0214-.0373zm-2.8185-19.6456c-.4427-.3302-1.0693-.239-1.3995.2036-.3302.4427-.239%201.0693.2036%201.3995zm.0111.0085c-1.7647-1.3552-3.0689-2.6428-4.0609-4.1619-.9905-1.5169-1.7034-3.3167-2.2135-5.7365l-1.957.4126c.5477%202.5982%201.3382%204.6444%202.4959%206.4173%201.1562%201.7707%202.6449%203.2167%204.5174%204.6547zm-6.2744-9.8984-.3596-1.7062-1.957.4126.3596%201.7062zm-.3596-1.7062c-1.4202-6.7372-3.9199-10.836-8.2639-14.5152l-1.2926%201.5262c3.9763%203.3677%206.2629%207.0607%207.5995%2013.4016zm-8.2611-14.5128c-6.6729-5.69377-16.3148-7.91167-24.9104-6.09979l.4125%201.95699c8.0271-1.69205%2017.0277.3979%2023.1997%205.6642zm-24.9104-6.09979-.3534.07449.4125%201.957.3534-.0745zm-.3534.07449c-8.4187%201.7746-16.1061%207.4533-20.0566%2015.0891l1.7763.9191c3.664-7.0821%2010.8383-12.39553%2018.6928-14.0512zm-20.0606%2015.0968c-2.6522%205.2371-3.4296%2010.2186-1.9681%2017.1517l1.957-.4126c-1.3717-6.5072-.6422-11.0223%201.7954-15.8355zm-1.9681%2017.1517.3596%201.7062%201.957-.4126-.3596-1.7062zm.3596%201.7062c.5116%202.4271.6057%204.3574.3223%206.1401-.2833%201.7823-.9542%203.4815-2.0603%205.4358l1.7406.9851c1.1815-2.0877%201.9626-4.0168%202.2949-6.1069.3322-2.0898.2056-4.2759-.3405-6.8667zm-1.7383%2011.5765c-1.8512%203.2757-1.8419%206.9333-1.0807%2010.5446l1.957-.4125c-.7113-3.3744-.649-6.4693.8649-9.1481zm-1.0807%2010.5446c.7835%203.7171%202.7526%207.0002%205.8226%209.36l1.2188-1.5857c-2.6713-2.0534-4.3937-4.9101-5.0844-8.1868zm5.8566%209.385c3.8884%202.7358%208.8171%203.9648%2013.4779%203.3775l-.2501-1.9843c-4.1629.5245-8.5927-.5775-12.077-3.0289zm13.4469%203.3809c6.4756-.6115%2012.849-1.6722%2019.2458-3.0206l-.4125-1.957c-6.3422%201.3369-12.6387%202.3837-19.0214%202.9864zm19.2458-3.0206c6.4089-1.351%2012.6255-3.1353%2018.8003-4.9964l-.5771-1.9149c-6.1638%201.8578-12.3135%203.6216-18.6357%204.9543zm18.7979-4.9957c4.4974-1.3431%208.5106-4.4571%2010.9638-8.5296l-1.7132-1.032c-2.1983%203.6494-5.8065%206.4457-9.8229%207.6453zm10.9852-8.5669c1.8515-3.3964%202.3323-7.1953%201.5486-10.9131l-1.957.4125c.6906%203.276.2644%206.5862-1.3476%209.5433zm1.5486-10.9131c-.7612-3.6113-2.2292-6.9615-5.2451-9.2112l-1.1959%201.6031c2.4664%201.8398%203.7727%204.6462%204.484%208.0206z%22%20fill%3D%22url(%23i)%22%20mask%3D%22url(%23m)%22%2F%3E%3C%2Fg%3E%3Cg%20filter%3D%22url(%23c)%22%3E%3Cpath%20d%3D%22m76.7546%2074.5806c-2.0873-.0055-14.2584%202.5601-16.1659%203.4077-1.6244.7542-3.2775%202.061-2.8534%204.073.5039%201.8985%201.9848%203.3557%203.7679%204.102l-.0031.0049c2.3441%201.145%204.9172%201.6449%207.4666%201.4816%201.3566-.0969%202.6971-.3878%204.0266-.8488%202.3945-.8788%204.5469-2.3748%206.2294-4.3686l-.0049-.0032c1.3302-1.4025%202.0969-3.3335%201.7915-5.2739-.4241-2.012-2.464-2.5403-4.2547-2.5747z%22%20fill%3D%22%233ea0fe%22%20fill-opacity%3D%22.35%22%2F%3E%3Cpath%20d%3D%22m76.752%2075.5806c.5523.0014%201.0012-.4451%201.0026-.9974.0015-.5523-.445-1.0012-.9973-1.0026zm-16.1633%202.4077-.4061-.9139c-.005.0023-.0101.0045-.0151.0069zm-2.8534%204.073-.9785.2062c.0035.0169.0075.0337.012.0503zm3.7679%204.102.8413.5406c.1598-.2487.2014-.5554.1135-.8377-.0878-.2822-.296-.5112-.5687-.6253zm-.0031.0049-.8414-.5405c-.1543.2402-.1986.5349-.1217.8098.0769.275.2676.5039.5242.6292zm7.4666%201.4816.064.9979.0072-.0005zm4.0266-.8488.3276.9448c.0057-.002.0113-.004.017-.0061zm6.2294-4.3686.7642.6449c.1841-.2182.2662-.5047.2256-.7873-.0407-.2826-.2002-.5344-.4384-.6918zm-.0049-.0032-.7256-.6881c-.2034.2145-.3015.508-.2679.8018.0336.2937.1955.5575.4421.7205zm1.7915-5.2739.9879-.1555c-.0027-.017-.0058-.0339-.0094-.0508zm-4.2354-3.5745c-.5522-.0106-1.0085.4284-1.0191.9806s.4284%201.0084.9806%201.019zm-.0166-.0002c-.6263-.0017-1.8703.1766-3.3112.4255-1.4796.2556-3.2687.6048-5.0481.9799-1.7795.3751-3.5573.7778-5.0142%201.1412-1.4188.3538-2.6289.6929-3.2012.9472l.8122%201.8277c.3814-.1695%201.408-.469%202.873-.8344%201.427-.3559%203.18-.7531%204.9427-1.1247s3.5269-.7157%204.9761-.9661c1.4879-.257%202.548-.3974%202.9654-.3963zm-16.5898%203.5007c-.8764.4069-1.8437.9981-2.5403%201.8297-.724.8642-1.1566%201.9987-.8704%203.3565l1.957-.4125c-.1379-.6542.0439-1.1791.4466-1.6597.43-.5134%201.1015-.9527%201.8495-1.3001zm-3.3987%205.2365c.598%202.2534%202.3355%203.9256%204.3483%204.768l.7722-1.8449c-1.5535-.6502-2.7778-1.8924-3.1875-3.4361zm3.8931%203.305-.0032.0049%201.6827%201.081.0031-.0048zm.3993%201.4439c2.5006%201.2215%205.2471%201.7554%207.9695%201.581l-.1279-1.9959c-2.3765.1523-4.7763-.3136-6.9638-1.3821zm7.9767%201.5805c1.4528-.1037%202.8795-.4148%204.283-.9014l-.6552-1.8896c-1.2555.4353-2.5099.7061-3.7702.7961zm4.3-.9075c2.5571-.9384%204.8542-2.5356%206.649-4.6624l-1.5285-1.2898c-1.5702%201.8607-3.5778%203.2556-5.8096%204.0747zm6.4362-6.1415-.0048-.0032-1.1029%201.6684.0048.0032zm.1693%201.5192c1.5015-1.5832%202.4162-3.8145%202.0538-6.1176l-1.9757.3109c.2483%201.5778-.3704%203.2085-1.5293%204.4304zm2.0444-6.1684c-.2862-1.3578-1.1399-2.2211-2.1512-2.7196-.973-.4796-2.0966-.6301-3.0627-.6486l-.0385%201.9996c.8246.0159%201.6162.1468%202.2169.4429.5624.2772.9406.684%201.0785%201.3382z%22%20fill%3D%22url(%23j)%22%20mask%3D%22url(%23n)%22%2F%3E%3C%2Fg%3E%3Cg%20filter%3D%22url(%23d)%22%3E%3Cpath%20d%3D%22m67.6674%2017.7709c-1.4482-.325-2.9103.5207-3.3622%201.8903-.152.7621-.0311%201.5695.3997%202.213s1.1053%201.0995%201.8957%201.2672l.1044.0314c2.3539.7074%204.0447%202.7906%204.2042%205.1921.0768%201.5652%201.4032%202.7716%202.9593%202.7252%201.5662-.0801%202.7658-1.3719%202.7059-2.8953-.3437-4.8434-3.758-8.9867-8.5063-10.3035z%22%20fill%3D%22url(%23k)%22%2F%3E%3Cpath%20d%3D%22m66.6213%2023.0436.0001-.0003.0079.0024.1044.0313c2.3926.719%204.1129%202.8369%204.2753%205.2813l.0001.0017c.074%201.5098%201.3535%202.6744%202.8554%202.6301%201.5123-.0779%202.6668-1.3241%202.61-2.7898-.3412-4.7998-3.7254-8.9071-8.4331-10.2126l-.0021-.0006-.3973-.1194c-1.3947-.3112-2.8023.5027-3.24%201.819-.1456.7381-.0269%201.5151.386%202.1318.416.6214%201.0678%201.0626%201.8333%201.2251z%22%20stroke%3D%22url(%23l)%22%20stroke-opacity%3D%22.5%22%20stroke-width%3D%22.2%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+    },
+    {
+        "title": "$:/plugins/oeyoews/codemirror-keymap-vimjk",
+        "name": "CodeMirror Keymap VimJK",
+        "description": "VimJK",
+        "author": "oeyoews",
+        "version": "0.2.0",
+        "core-version": "5.2.3",
+        "source": "",
+        "list": "readme",
+        "dependents": "[[$:/plugins/tiddlywiki/codemirror-search-replace $:/plugins/tiddlywiki/codemirror-closebrackets]]",
+        "plugin-type": "plugin",
+        "type": "application/json",
+        "readme": "<div class=\"prose max-w-none prose-indigo\">\n\n* support `jk`, H L replace 0 $\n\n> vim 不能没有jk, 就像西方不能没有耶路撒冷\n\n* 需要等宽字体(安装字体需要重启)\n\n</div>\n",
+        "requires-reload": "yes",
+        "icon": "data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20height%3D%2292%22%20viewBox%3D%220%200%2092%2092%22%20width%3D%2292%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20fill%3D%22%2332b8e8%22%20height%3D%2291.56%22%20rx%3D%2245.78%22%20width%3D%2291.56%22%20y%3D%22.123047%22%2F%3E%3Cpath%20d%3D%22m68.4438%2036.8541c-.1984%204.1055-3.2294%209.7273-9.0918%2016.8624-6.0612%207.4533-11.1894%2011.1795-15.3844%2011.1795-2.5978%200-4.7978-2.2689-6.5935-6.8084-1.2002-4.1611-2.3989-8.3217-3.5986-12.4828-1.3343-4.537-2.7649-6.8084-4.2945-6.8084-.3335%200-1.5006.6638-3.4987%201.9864l-2.0975-2.5564c2.2-1.829%204.3707-3.6576%206.5061-5.4887%202.9343-2.399%205.1371-3.6606%206.6051-3.7881%203.4697-.3153%205.6052%201.9283%206.4067%206.7313.8662%205.1819%201.4654%208.4051%201.8024%209.6667%201%204.2991%202.1002%206.446%203.3026%206.446.9331%200%202.3347-1.3942%204.2035-4.1826%201.8671-2.7892%202.867-4.9112%203.0021-6.3689.2657-2.407-.7347-3.6134-3.0021-3.6134-1.0672%200-2.1675.2323-3.2994.6916%202.1907-6.7895%206.3769-10.0868%2012.5558-9.8986%204.5807.1271%206.7402%202.9378%206.4762%208.4324z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E%0A"
+    },
+    {
+        "title": "$:/plugins/oeyoews/neotw-zen-mode",
+        "description": "zen-mode",
+        "author": "oeyoews",
+        "version": "0.0.2",
+        "core-version": ">=5.3.0",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "neotw-zen-mode",
+        "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
+        "list": "readme",
+        "readme": "{{$:/languages/neotw-zen-mode/readme}}\n",
+        "requires-reload": "no"
+    },
+    {
+        "title": "$:/plugins/oeyoews/tiddlywiki-back-to-top",
+        "description": "Tiddlywiki Back To Top",
+        "author": "oeyoews",
+        "version": "0.0.4",
+        "core-version": ">=5.2.5",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "Tiddlywiki Back To Top",
+        "list": "readme",
+        "dependents": "",
+        "readme": "!! Tiddlywiki Back To Top\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/tiddlywiki-back-to-top]]\n* [[Demo|https://oeyoews.github.io/neotw]]\n\n!! TOOD\n\n* 固定滚动到顶部的时间\n* background with palette primary\n",
+        "requires-reload": "yes",
+        "icon": "data:image/svg+xml,%3Csvg%20stroke%3D%22currentColor%22%20fill%3D%22%23aaa%22%20stroke-width%3D%220%22%20viewBox%3D%220%200%2024%2024%22%20height%3D%221em%22%20width%3D%221em%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0z%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M8%2011h3v10h2V11h3l-4-4-4%204zM4%203v2h16V3H4z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%0A"
+    },
+    {
+        "title": "$:/plugins/oeyoews/tiddlywiki-daylight",
+        "description": "Tiddlywiki Daylight",
+        "author": "oeyoews",
+        "version": "0.2.1",
+        "core-version": ">=5.3.0",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "Tiddlywiki Daylight",
+        "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus $:/plugins/oeyoews/neotw-swal2 $:/plugins/oeyoews/neotw-back-to-top",
+        "list": "readme",
+        "readme": "!! Tiddlywiki Daylight\n\n> 主流的经典三模式切换(浅色模式, 深色模式, 系统模式)\n\n> 提供了daylight widget\n\n> 右键点击图标查看配置\n\n<$daylight btn class=\"rounded-full p-2 hover:scale-105 transition\"/>\n\n```wiki\n<$daylight btn class=\"rounded-full p-2 hover:scale-105 transition\"/>\n```\n\n!! TODO\n\n* 添加配置UI: 模拟shiraz的两种 palette 选择, $:/plugins/kookma/shiraz/ui/set-dark-light-palette\n* 去除插件依赖: nprogress, tailwindcss, overwrite template\n* 添加过渡动画: https://antfu.me/posts\n* palette 是如何修改x-tiddler-dictionary\n\n> darkmode 写起来不难，但是如果想要写得很完备， 细节真的不少(darmode.js是一个简单的库，不过不具备很好的扩展性)\n\n<!-- darkmode.js 大概是重写了body.bg, 带有动画 -->\n",
+        "requires-reload": "yes",
+        "icon": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2236%22%20height%3D%2236%22%20viewBox%3D%220%200%2036%2036%22%3E%3Cpath%20fill%3D%22%23FFD983%22%20d%3D%22M18%200v36C8.059%2036%200%2027.941%200%2018S8.059%200%2018%200z%22%2F%3E%3Cpath%20fill%3D%22%2366757F%22%20d%3D%22M36%2018c0%209.941-8.059%2018-18%2018V0c9.941%200%2018%208.059%2018%2018z%22%2F%3E%3Ccircle%20cx%3D%2210.5%22%20cy%3D%228.5%22%20r%3D%223.5%22%20fill%3D%22%23FFCC4D%22%2F%3E%3Ccircle%20cx%3D%2224%22%20cy%3D%2216%22%20r%3D%223%22%20fill%3D%22%235B6876%22%2F%3E%3Ccircle%20cx%3D%2222.5%22%20cy%3D%2227.5%22%20r%3D%223.5%22%20fill%3D%22%235B6876%22%2F%3E%3Ccircle%20cx%3D%2221%22%20cy%3D%226%22%20r%3D%222%22%20fill%3D%22%235B6876%22%2F%3E%3Ccircle%20cx%3D%223%22%20cy%3D%2218%22%20r%3D%221%22%20fill%3D%22%23FFCC4D%22%2F%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%229%22%20r%3D%221%22%20fill%3D%22%235B6876%22%2F%3E%3Ccircle%20cx%3D%2215%22%20cy%3D%2231%22%20r%3D%221%22%20fill%3D%22%23FFCC4D%22%2F%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2219%22%20r%3D%222%22%20fill%3D%22%235B6876%22%2F%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2223%22%20r%3D%222%22%20fill%3D%22%23FFCC4D%22%2F%3E%3C%2Fsvg%3E"
+    },
+    {
+        "title": "$:/plugins/oeyoews/tiddlywiki-github-share",
+        "description": "Github Share Button",
+        "author": "oeyoews",
+        "version": "0.3.0",
+        "core-version": ">=5.2.7",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "Tiddlywiki Github Share",
+        "list": "readme config",
+        "dependents": "",
+        "readme": "<div class=\"prose max-w-none\">\n\n* Github Share Button\n* compatiable font-awesome plugin\n\n!! TODO\n\n* add macro to embed single tid, not copy tid\n\n<!-- * if you use tiddlywiki menu plugin, this share button maybe  -->\n\n</div>\n",
+        "requires-reload": "no",
+        "icon": "data:image/svg+xml,%3Csvg%20stroke%3D%22currentColor%22%20fill%3D%22gray%22%20stroke-width%3D%220%22%20viewBox%3D%220%200%2024%2024%22%20height%3D%221em%22%20width%3D%221em%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M21.035%205.257c.91%201.092%201.364%202.366%201.364%203.822%200%205.277-3.002%206.824-5.823%207.279.364.637.455%201.365.455%202.093v3.73c0%20.455-.273.728-.637.728a.718.718%200%200%201-.728-.728v-3.73a2.497%202.497%200%200%200-.728-2.093l.455-1.183c2.821-.364%205.733-1.274%205.733-6.187%200-1.183-.455-2.275-1.274-3.185l-.182-.727a4.04%204.04%200%200%200%20.09-2.73c-.454.09-1.364.273-2.91%201.365l-.547.09a13.307%2013.307%200%200%200-6.55%200l-.547-.09C7.57%202.71%206.66%202.437%206.204%202.437c-.273.91-.273%201.91.09%202.73l-.181.727c-.91.91-1.365%202.093-1.365%203.185%200%204.822%202.73%205.823%205.732%206.187l.364%201.183c-.546.546-.819%201.274-.728%202.002v3.821a.718.718%200%200%201-.728.728.718.718%200%200%201-.728-.728V20.18c-3.002.637-4.185-.91-5.095-2.092-.455-.546-.819-1.001-1.274-1.092-.09-.091-.364-.455-.273-.819.091-.364.455-.637.82-.455.91.182%201.455.91%202%201.547.82%201.092%201.639%202.092%204.095%201.547v-.364c-.09-.728.091-1.456.455-2.093-2.73-.546-5.914-2.093-5.914-7.279%200-1.456.455-2.73%201.365-3.822-.273-1.273-.182-2.638.273-3.73l.455-.364C5.749%201.073%207.023.8%209.66%202.437a13.673%2013.673%200%200%201%206.642%200C18.851.708%2020.216.98%2020.398%201.072l.455.364c.455%201.274.546%202.548.182%203.821z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%0A"
+    },
+    {
+        "title": "$:/plugins/oeyoews/tiddlywiki-gravatar",
+        "description": "Tiddlywiki Gravatar",
+        "author": "oeyoews",
+        "version": "0.5.0",
+        "core-version": ">=5.3.0",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "Tiddlywiki Gravatar",
+        "list": "readme",
+        "dependents": "",
+        "readme": "!! Tiddlywiki Gravatar\n\nThis plugin provides a convenient way to use Gravatar in TiddlyWiki. Gravatar is a service that allows users to create a unique avatar, which is an image that represents them online. This plugin supports Gravatar, QQ, and GitHub avatars, and allows users to easily maintain a consistent online identity across different platforms. The plugin also provides an example of how to use the different avatar types and includes a configuration file for setting the default email address.\n\n!! Intro\n\n> Gravatar stands for Globally Recognized Avatar. It is a service that allows users to create a unique avatar, which is an image that represents them online. This avatar can then be used across different websites, forums, and platforms that support Gravatar.\n> Gravatar is a free service that is owned by Automattic, the company behind WordPress. It works by linking an email address to an avatar, so whenever a user comments or posts on a website that supports Gravatar, their avatar will automatically appear next to their name.\n> Gravatar is a convenient way for users to maintain a consistent online identity across different platforms. It also helps website owners to easily identify and recognize their regular commenters and engage with them.\n\n!! Example\n\n* <$avatar type=\"github\"/>\n* <$avatar email=\"xxx\"/>\n* <$avatar email=\"xxx\" type=\"gravatar\"/>\n\n!! usage\n\n* 支持 qq gravatar github\n\n`$:/config/plugins/oeyoews/tiddlywiki-gravatar/email` is email config file\n\n```\n<$avatar />\n```\n",
+        "requires-reload": "yes",
+        "icon": "data:image/svg+xml,%3Csvg%20stroke%3D%22currentColor%22%20fill%3D%22%230477B6%22%20stroke-width%3D%220%22%20role%3D%22img%22%20viewBox%3D%220%200%2024%2024%22%20height%3D%221em%22%20width%3D%221em%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3E%3C%2Ftitle%3E%3Cpath%20d%3D%22M12%200c-1.326%200-2.4%201.074-2.4%202.4v8.4c0%201.324%201.074%202.398%202.4%202.398s2.4-1.074%202.4-2.398V5.21c2.795.99%204.799%203.654%204.799%206.789%200%203.975-3.225%207.199-7.199%207.199S4.801%2015.975%204.801%2012c0-1.989.805-3.789%202.108-5.091.938-.938.938-2.458%200-3.396s-2.458-.938-3.396%200C1.344%205.686%200%208.686%200%2012c0%206.627%205.373%2012%2012%2012s12-5.373%2012-12S18.627%200%2012%200%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%0A"
+    },
+    {
+        "title": "$:/plugins/oeyoews/tiddlywiki-modal-ui",
+        "description": "Tiddlywiki Modal Ui",
+        "author": "oeyoews",
+        "version": "0.0.1",
+        "core-version": ">=5.2.5",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "Tiddlywiki Modal Ui",
+        "list": "readme",
+        "dependents": "",
+        "readme": "```wiki\nclass: o-tm\nmask-closable: yes\n```",
+        "requires-reload": "no"
+    },
+    {
+        "title": "$:/plugins/oeyoews/motion",
+        "name": "motion",
+        "description": "Vim-like keyboard shortcuts for TiddlyWiki",
+        "author": "oeyoews",
+        "version": "0.3.45",
+        "core-version": ">=5.2.5",
+        "source": "https://github.com/oeyoews/neotw/plugins/tiddlywiki-motion",
+        "plugin-type": "plugin",
+        "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss",
+        "list": "README",
+        "type": "application/json",
+        "requires-reload": "yes",
+        "icon": "data:image/svg+xml,%3Csvg%20stroke%3D%22currentColor%22%20fill%3D%22%23389BD2%22%20stroke-width%3D%220%22%20viewBox%3D%220%200%2016%2016%22%20height%3D%221em%22%20width%3D%221em%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M15.992%204.204c-.071%201.556-1.158%203.687-3.262%206.393-2.175%202.829-4.016%204.243-5.522%204.243-.933%200-1.722-.861-2.367-2.583L3.55%207.523C3.07%205.8%202.556%204.94%202.007%204.94c-.118%200-.537.253-1.254.754L0%204.724a209.56%20209.56%200%200%200%202.334-2.081c1.054-.91%201.845-1.388%202.373-1.437%201.243-.123%202.01.728%202.298%202.553.31%201.968.526%203.19.646%203.666.36%201.631.756%202.446%201.186%202.445.334%200%20.836-.53%201.508-1.587.671-1.058%201.03-1.863%201.077-2.415.096-.913-.263-1.37-1.077-1.37a3.022%203.022%200%200%200-1.185.261c.789-2.573%202.291-3.825%204.508-3.756%201.644.05%202.419%201.117%202.324%203.2z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%0A"
+    },
+    {
+        "title": "$:/plugins/oeyoews/tiddlywiki-publish-tiddler",
+        "description": "Publish Tiddler Manager",
+        "author": "oeyoews",
+        "version": "0.5.1",
+        "core-version": ">=5.2.7",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "Tiddlywiki Publish Tiddler",
+        "list": "readme publish-config tiddlers",
+        "dependents": "",
+        "readme": "<a href=\"https://github.com/oeyoews/neotw\" target=\"_blank\">\n  <img src=\"https://img.shields.io/badge/Powered by-Neotw-green?style=flat\" />\n</a>\n\n* Publish Tiddler Manager\n* not save storylist to html\n* support Publish or not manager\n\n!! NOTE\n\n<!-- * 需要手动启用FileSystem 文件 -->\n* 此插件重写 [[FileSystem Tid|$:/config/FileSystemPaths]]\n* 虽然此插件兼容单文件tiddlywiki, 但是只工作在nodejs tiddlywiki\n* maybe should use public is more understandable better publish\n<!-- * 在nodejs tiddlywiki第一次启动时, 控制台可能会多出很多 `syncer-browser-tiddlyweb: Checking dirty status` 类似与这样的日志 -->\n\n!! TODO\n\n* use viewtoolbar replace template\n* add plugin work details with tiddlywiki\n* enable only dev\n* maybe should use stattiddler to use http\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/tiddlywiki-publish-tiddler]]\n* [[Demo|https://oeyoews.github.io/neotw]]\n",
+        "requires-reload": "no",
+        "icon": "data:image/svg+xml,%3Csvg%20stroke%3D%22currentColor%22%20fill%3D%22currentColor%22%20stroke-width%3D%220%22%20version%3D%221%22%20viewBox%3D%220%200%2048%2048%22%20enable-background%3D%22new%200%200%2048%2048%22%20height%3D%221em%22%20width%3D%221em%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20fill%3D%22%23F57C00%22%20points%3D%2229%2C23%2019%2C23%207%2C9%2041%2C9%22%3E%3C%2Fpolygon%3E%3Cg%20fill%3D%22%23FF9800%22%3E%3Cpolygon%20points%3D%2229%2C38%2019%2C44%2019%2C23%2029%2C23%22%3E%3C%2Fpolygon%3E%3Cpath%20d%3D%22M41.5%2C9h-35C5.7%2C9%2C5%2C8.3%2C5%2C7.5v0C5%2C6.7%2C5.7%2C6%2C6.5%2C6h35C42.3%2C6%2C43%2C6.7%2C43%2C7.5v0C43%2C8.3%2C42.3%2C9%2C41.5%2C9z%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3Ccircle%20fill%3D%22%23F44336%22%20cx%3D%2238%22%20cy%3D%2238%22%20r%3D%2210%22%3E%3C%2Fcircle%3E%3Crect%20x%3D%2232%22%20y%3D%2236%22%20fill%3D%22%23fff%22%20width%3D%2212%22%20height%3D%224%22%3E%3C%2Frect%3E%3C%2Fsvg%3E%0A"
+    },
+    {
+        "title": "$:/plugins/oeyoews/tiddlywiki-readonly",
+        "description": "Tiddlywiki Readonly",
+        "author": "oeyoews",
+        "version": "0.0.1",
+        "core-version": ">=5.2.5",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "Tiddlywiki Readonly",
+        "dependents": "",
+        "list": "readme explore",
+        "requires-reload": "no"
+    },
+    {
+        "title": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
+        "description": "Tiddlywiki Tailwindcss Plus",
+        "author": "oeyoews",
+        "version": "0.0.5",
+        "core-version": ">=5.3.0",
+        "type": "application/json",
+        "plugin-priority": 1,
+        "plugin-type": "plugin",
+        "name": "Tiddlywiki Tailwindcss Plus",
+        "list": "readme",
+        "dependents": "",
+        "readme": "<div class=\"prose max-w-none mx-auto prose-indigo\">\n\n!! Tiddlywiki Tailwindcss Plus\n\n<!-- ```wikitext -->\n<!-- <style type=\"text/tailwindcss\"> -->\n<!-- .btn { -->\n<!--  \t@apply font-bold underline border-none -->\n<!-- } -->\n<!-- </style> -->\n<!---->\n<!-- <button class=\"btn\"> demo </button> -->\n<!-- ``` -->\n\n!! Why Tailwindcss\n\n* 一致性：使用 Tailwind CSS 可确保您的样式在整个 TiddlyWiki 中保持一致。使用 Tailwind 的实用程序类，您可以快速轻松地将样式应用到您的元素，而无需担心跟踪自定义类名称。\n> use tailwindcss in tiddlywiki, you can make your style more consistent. use tailwindcss utility class, you can apply style to your element quickly and easily, without worrying about tracking custom class names.\n\n* 模块化：Tailwind CSS 被设计成模块化的，这意味着您可以只使用您需要的部分。这有助于保持您的 TiddlyWiki 精简并避免使用不必要的 CSS 使其膨胀。\n* modularity: Tailwind CSS is designed to be modular, which means you can only use the parts you need. This helps keep your TiddlyWiki lean and avoid bloating it with unnecessary CSS.\n\n* 易于使用：Tailwind CSS 使用简单，无需设置或配置。您可以立即开始使用它并立即提高工作效率。\n* easy to use: Tailwind CSS is easy to use, no setup or configuration required. You can start using it right away and improve your productivity immediately.\n\n* 可定制性：虽然 Tailwind CSS 提供了一套全面的开箱即用样式，但它还允许您自定义和扩展样式以满足您的特定需求。这可以通过其配置文件或创建您自己的自定义实用程序类来完成。\n* customizability: While Tailwind CSS provides a comprehensive set of out-of-the-box styles, it also allows you to customize and extend styles to meet your specific needs. This can be done through its configuration file or by creating your own custom utility classes.j\n\n* 总体而言，在 TiddlyWiki 中仅使用 Tailwind CSS 可以简化您的样式设置过程，使您的样式更加一致，并减少您需要编写和维护的 CSS 数量。\n* Overall, using Tailwind CSS alone in TiddlyWiki can simplify your style setup process, make your style more consistent, and reduce the amount of CSS you need to write and maintain.\n\n<!-- !! TODO\n\n* button border 优先级有冲突\n* use preset config -->\n\n</div>\n",
+        "requires-reload": "yes",
+        "icon": "data:image/svg+xml,%3Csvg%20stroke%3D%22currentColor%22%20%20fill%3D%22%2338bdf8%22%20stroke-width%3D%220%22%20role%3D%22img%22%20viewBox%3D%220%200%2024%2024%22%20height%3D%221em%22%20width%3D%221em%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3E%3C%2Ftitle%3E%3Cpath%20d%3D%22M12.001%2C4.8c-3.2%2C0-5.2%2C1.6-6%2C4.8c1.2-1.6%2C2.6-2.2%2C4.2-1.8c0.913%2C0.228%2C1.565%2C0.89%2C2.288%2C1.624%20C13.666%2C10.618%2C15.027%2C12%2C18.001%2C12c3.2%2C0%2C5.2-1.6%2C6-4.8c-1.2%2C1.6-2.6%2C2.2-4.2%2C1.8c-0.913-0.228-1.565-0.89-2.288-1.624%20C16.337%2C6.182%2C14.976%2C4.8%2C12.001%2C4.8z%20M6.001%2C12c-3.2%2C0-5.2%2C1.6-6%2C4.8c1.2-1.6%2C2.6-2.2%2C4.2-1.8c0.913%2C0.228%2C1.565%2C0.89%2C2.288%2C1.624%20c1.177%2C1.194%2C2.538%2C2.576%2C5.512%2C2.576c3.2%2C0%2C5.2-1.6%2C6-4.8c-1.2%2C1.6-2.6%2C2.2-4.2%2C1.8c-0.913-0.228-1.565-0.89-2.288-1.624%20C10.337%2C13.382%2C8.976%2C12%2C6.001%2C12z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%0A"
+    },
+    {
+        "title": "$:/plugins/oeyoews/tiddlywiki-tiddler-info",
+        "description": "Show Tiddler Info",
+        "author": "oeyoews",
+        "version": "0.2.1",
+        "core-version": ">=5.2.5",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "Tiddlywiki Tiddler Info",
+        "list": "readme info-config",
+        "dependents": "",
+        "readme": "* Show Tiddler Info\n* note: reoverwrite [[$:/core/ui/ViewTemplate/subtitle]] tiddler\n",
+        "requires-reload": "no",
+        "icon": "data:image/svg+xml,%3Csvg%20stroke%3D%22currentColor%22%20fill%3D%22currentColor%22%20stroke-width%3D%220%22%20version%3D%221%22%20viewBox%3D%220%200%2048%2048%22%20enable-background%3D%22new%200%200%2048%2048%22%20height%3D%221em%22%20width%3D%221em%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ccircle%20fill%3D%22%232196F3%22%20cx%3D%2224%22%20cy%3D%2224%22%20r%3D%2221%22%3E%3C%2Fcircle%3E%3Crect%20x%3D%2222%22%20y%3D%2222%22%20fill%3D%22%23fff%22%20width%3D%224%22%20height%3D%2211%22%3E%3C%2Frect%3E%3Ccircle%20fill%3D%22%23fff%22%20cx%3D%2224%22%20cy%3D%2216.5%22%20r%3D%222.5%22%3E%3C%2Fcircle%3E%3C%2Fsvg%3E%0A"
+    },
+    {
+        "title": "$:/plugins/oeyoews/tiddlywiki-videos",
+        "description": "Tiddlywiki Videos",
+        "author": "oeyoews",
+        "version": "0.0.1",
+        "core-version": ">=5.2.5",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "Tiddlywiki Videos",
+        "list": "readme",
+        "dependents": "",
+        "readme": "!! Tiddlywiki Videos\n\n<$youtube youtubeId=\"o7GyFa90klg\" />\n<$youtube youtubeId=\"PLjNhkoz3yGwG9ISeHEYsdUSQdQarKJ8u3\" playlist/>\n\n!! Ref\n\n* https://developers.google.com/youtube/player_parameters?hl=zh-cn\n",
+        "requires-reload": "yes"
     }
 ];
 
+/*\
+title: $:/plugins/tiddlywiki/pluginlibrary/libraryserver.js
+type: application/javascript
+module-type: library
+
+A simple HTTP-over-window.postMessage implementation of a standard TiddlyWeb-compatible server. It uses real HTTP to load the individual tiddler JSON files.
+
+\*/
+(function(){
+
+/*jslint node: true, browser: true */
+/*global $tw: false */
+"use strict";
+
+// Listen for window messages
+window.addEventListener("message",function listener(event){
+	console.log("plugin library: Received message from",event.origin);
+	console.log("plugin library: Message content",event.data);
+	switch(event.data.verb) {
+		case "GET":
+			if(event.data.url === "recipes/library/tiddlers.json") {
+				// Route for recipes/library/tiddlers.json
+				event.source.postMessage({
+					verb: "GET-RESPONSE",
+					status: "200",
+					cookies: event.data.cookies,
+					url: event.data.url,
+					type: "application/json",
+					body: JSON.stringify(assetList,null,4)
+				},"*");
+			} else if(event.data.url.indexOf("recipes/library/tiddlers/") === 0) {
+				var url = "recipes/library/tiddlers/" + encodeURIComponent(removePrefix(event.data.url,"recipes/library/tiddlers/"));
+				// Route for recipes/library/tiddlers/<uri-encoded-tiddler-title>.json
+				httpGet(url,function(err,responseText) {
+					if(err) {
+						event.source.postMessage({
+							verb: "GET-RESPONSE",
+							status: "404",
+							cookies: event.data.cookies,
+							url: event.data.url,
+							type: "text/plain",
+							body: "Not found"
+						},"*");
+					} else {
+						event.source.postMessage({
+							verb: "GET-RESPONSE",
+							status: "200",
+							cookies: event.data.cookies,
+							url: event.data.url,
+							type: "application/json",
+							body: responseText
+						},"*");
+					}
+				});
+			} else {
+				event.source.postMessage({
+					verb: "GET-RESPONSE",
+					status: "404",
+					cookies: event.data.cookies,
+					url: event.data.url,
+					type: "text/plain",
+					body: "Not found"
+				},"*");
+			}
+			break;
+	}
+},false);
+
+// Helper to remove string prefixes
+function removePrefix(string,prefix) {
+	if(string.indexOf(prefix) === 0) {
+		return string.substr(prefix.length);
+	} else {
+		return string;
+	}
+}
+
+// Helper for HTTP GET
+function httpGet(url,callback) {
+	var http = new XMLHttpRequest();
+	http.open("GET",url,true);
+	http.onreadystatechange = function() {
+		if(http.readyState == 4 && http.status == 200) {
+			callback(null,http.responseText);
+		}
+	};
+	http.send();
+}
+
+})();
 
 </script>
 </head>
