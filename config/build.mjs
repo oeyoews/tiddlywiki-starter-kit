@@ -50,7 +50,7 @@ export default {
     '$:/UpgradeLibrary',
     '--savelibrarytiddlers',
     '$:/UpgradeLibrary',
-    '[prefix[$:/plugins/oeyoews/markdown-kit]]', // [prefix[$:/themes/nico]]
+    '[prefix[$:/plugins/oeyoews/]]', // [prefix[$:/themes/nico]]
     'recipes/library/tiddlers/',
     '$:/UpgradeLibrary/List',
     '--savetiddler',

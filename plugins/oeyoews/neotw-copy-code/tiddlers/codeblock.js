@@ -19,7 +19,8 @@ Code block node widget
     }
 
     render(parent, nextSibling) {
-      if (!$tw.browser) return;
+      // 不要加这句话, 构建library的时候需要使用到这个widget(server)
+      // if (!$tw.browser) return;
 
       this.parentDomNode = parent;
       this.computeAttributes();
