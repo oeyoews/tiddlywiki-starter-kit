@@ -4,10 +4,13 @@
 
 ![TIDDLY Static Badge](https://img.shields.io/badge/Tiddlywiki5-neotw-green?style=for-the-badge&logo=tiddlywiki) ![Version JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2Foeyoews%2Ftiddlywiki-starter-kit%2Fraw%2Fmain%2Fpackage.json&query=version&style=for-the-badge&logo=tiddlywiki&label=version)
 
-
 ## TiddlyWiki starter kit
 
 > 面向但不限于(neo)vim用户的 tiddlywiki starter kit
+
+## Features
+
+- UI: 借助 Tailwindcss 快速优化页面展示, 响应式页面
 
 ## Installation
 
@@ -73,11 +76,9 @@ docker-compose build
 
 <!-- [tiddlywiki starter kit](https://tiddlywiki-starter-kit.xxx) -->
 
-* [Tiddlyhost Site](https://tiddlywiki-starter-kit.tiddlyhost.com/)
-* [Github Pages](https://oeyoews.github.io/tiddlywiki-starter-kit/)
-* [Vercel Site](https://tiddlywiki-starter-kit.vercel.app/)
-
-
+- [Tiddlyhost Site](https://tiddlywiki-starter-kit.tiddlyhost.com/)
+- [Github Pages](https://oeyoews.github.io/tiddlywiki-starter-kit/)
+- [Vercel Site](https://tiddlywiki-starter-kit.vercel.app/)
 
 ![cat](https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/cat.svg 'cat')
 
