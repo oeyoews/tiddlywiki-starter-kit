@@ -1,5 +1,5 @@
 {
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"type": "application/json",
 	"title": "$:/plugins/oeyoews/markdown-kit",
 	"plugin-type": "plugin",
@@ -13,6 +13,7 @@
 		"$:/plugins/tiddlywiki/codemirror-mode-markdown",
 		"$:/plugins/tiddlywiki/codemirror-mode-xml",
 		"$:/plugins/whitefall/obsidian-vault",
+		"$:/plugins/cdaven/markdown-export",
 		"$:/plugins/cdr/markdown-more"
 	],
 	"list": "readme"
