@@ -31,10 +31,10 @@ neotw-icons widget
 
       const iconNode = createElement('iconify-icon', {
         class: classNames,
-        // style,
         attributes: {
           icon,
           title,
+          style,
         },
       });
       iconNode.classList.add('align-middle');

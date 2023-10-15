@@ -125,7 +125,7 @@ const TagPie = {
     });
 
     myChart.setOption(option);
-    myChart.on('dblclick', 'series', gotoTagTiddler);
+    myChart.on('click', 'series', gotoTagTiddler);
     // 如何在这里监听change 事件, 从而实现自动刷新主题
   },
 
