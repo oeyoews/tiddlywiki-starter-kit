@@ -1,8 +1,8 @@
 title: $:/config/EmptyStoryMessage
 
-<div class="flex justify-center my-8">
+<center class="flex justify-center my-8">
     <$oinfo />
-</div>
+</center>
 
 <div class="prose prose-indigo max-w-none dark:prose-invert">
   <div class="p-0 m-4">
