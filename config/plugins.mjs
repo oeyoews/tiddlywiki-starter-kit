@@ -51,6 +51,7 @@ const oeyoewsPlugins = [
   'tiddlywiki-daylight',
   'tiddlywiki-videos',
   'neotw',
+  'echarts-addons',
   'neotw-info',
   'neotw-reverse-card',
   'tiddlywiki-back-to-top',
