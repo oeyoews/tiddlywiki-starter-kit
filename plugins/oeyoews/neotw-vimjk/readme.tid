@@ -5,7 +5,7 @@ description: ~Codemirror ~VimJK
 
 * support `jk`, H L replace 0 $
 
-> vim 不能没有jk, 就像西方不能没有耶路撒冷
+> vim 不能失去jk, 就像Linux不能失去terminal
 
 * 需要等宽字体(安装字体需要重启)
 
