@@ -1,13 +1,8 @@
 title: $:/config/EmptyStoryMessage
 
-<center>
-  <div>
-    <$avatar center="yes" />
-  </div>
-  <div class="dark:invisible flex justify-center my-4">
+<div class="flex justify-center my-8">
     <$oinfo />
-  </div>
-</center>
+</div>
 
 <div class="prose prose-indigo max-w-none dark:prose-invert">
   <div class="p-0 m-4">
