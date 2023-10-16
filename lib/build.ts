@@ -1,7 +1,7 @@
 import chalk from 'chalk';
 import ora from 'ora';
 import generateTiddlyWikiInfo from '@/tiddlywiki.config.mjs';
-import {isCI, name as ciName } from 'ci-info';
+import { isCI, name as ciName } from 'ci-info';
 import { spawn } from 'bun';
 
 const env = process.env;
@@ -21,7 +21,7 @@ function cloneTiddlers(callback: () => void) {
     spawn(['tiged', TIDDLERSREPO, 'tiddlers'], {
       onExit: (proc, exitCode, signalCode, error) => {
         if (exitCode === 0) {
-          log.info(`tiddlers 文件夹复制完成`);
+          log.info(`tiddlers 内容 获取完成`);
           callback();
         }
       },
@@ -57,4 +57,6 @@ const main = () => {
   });
 };
 
-cloneTiddlers(main);
+// cloneTiddlers(main);
+// dont get tiddler, as a empty
+main();
