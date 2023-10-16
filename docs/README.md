@@ -4,10 +4,8 @@
 
 这无疑增加了每个开发者的负担，并且严重影响效率，tw的用户很少很少，一直坚持使用的大概是真爱了吧，使用tw并且进行开发tw插件的就少上加少了，tw没有进行商业化开发，所以很多功能虽然有了，但是使用体验过上并不好，但tw真的是一款令人瞬间眼前一亮的软件.
 
-
 > :warning:
 > 此文件处于alpha阶段，正在不断整理并更新（并没有什么整理计划，比较凌乱，目前放在仓库的docs目录中，并且也可以在网站中预览，后期可能会将此文档单独分离出来做一个网站），此文件根据个人时间安排不定期更新， 前期主要以文字代码为主， 相关示例图片会在后期添加..
->
 
 ## 为什么写tiddlywiki starter kit？
 
@@ -19,32 +17,31 @@
 
 ## 开发依赖
 
-* FONTS: maple
-* ENV: nodejs/bun pnpm/npm git
-* EDITOR: vscode/neovim/others
+- FONTS: maple
+- ENV: nodejs/bun pnpm/npm git
+- EDITOR: vscode/neovim/others
 
 ## How to use tiddlywiki starter kit with locally ?
 
-* 事实上tiddlywiki starter kit 由三部分组成
+- 事实上tiddlywiki starter kit 由三部分组成
 
 1. tiddlywiki-starter-kit（核心）
 2. neotw-tiddlers（用户markdown文件）
 3. subwiki（用户个人wiki）
 
-
 `tiddlywiki.info` 实际上一个json类型的文件，但是json文件不支持注释，每次只能手动编辑这个文件手动更新， 因此tiddlywiki-starter-kit 借助dotenv将配置放在.env文件中， 每次启动tw的时候动态生成tiddlywiki.info文件，这可以在不同的环境使用不同的配置，目前主要针对本地和部署环境， 部署环境下可以自动移除不需要的插件，并且使用仅仅在部署时使用的插件， 因此不建议手动编辑tiddlywiki.info 文件，此文件仅仅用来让tw来读取启动
 
 ## Playground
 
-* 每个tw网页都可以看作是一个playground,你可以在上面任情玩耍,而不用担心弄坏什么
+- 每个tw网页都可以看作是一个playground,你可以在上面任情玩耍,而不用担心弄坏什么
 
 ## 构建
 
-* 在tiddlywiki.info文件中， build是一个数组， 在里面可以添加多个构建步骤， 在构建的时候如果build 后面不加具体的构建步骤， 默认会执行里面的所有步骤，在tiddlywiki-starter-kit 里面默认支持目录为.tiddlywiki, 默认使用external.js 同时生成offline.html/index.html
+- 在tiddlywiki.info文件中， build是一个数组， 在里面可以添加多个构建步骤， 在构建的时候如果build 后面不加具体的构建步骤， 默认会执行里面的所有步骤，在tiddlywiki-starter-kit 里面默认支持目录为.tiddlywiki, 默认使用external.js 同时生成offline.html/index.html
 
 ## 部署
 
-* tw 生成的是单文件可部署文件，因此不限制部署平台，甚至可以直接使用tw server， tiddlywiki-starter-kit使用的vercel/github pages 方式
+- tw 生成的是单文件可部署文件，因此不限制部署平台，甚至可以直接使用tw server， tiddlywiki-starter-kit使用的vercel/github pages 方式
 
 ## How to use tiddlywiki starter kit with docker ?
 
@@ -97,47 +94,45 @@ icon.tid 提供插件的图标，就是插件logo的意思
 
 readme.tid 是关于插件的readme， 同样你也可以使用readme.md 代替，你可以在readme.md 文件里面使用markdown语法，但是需要安装markdown插件，在tw里面才能识别
 
-
 ## 插件的开发方式
 
 > 下面顺序还没有经过整理，想到哪写到哪，如有错误遗漏之处欢迎pr。
 
+- tw5里面的插件开发由于其独特的风格，开发方式有很多种，tw 官方的dev文档也没有明确说明，仅仅展示了一些具体的插件代码示例，并没有具体说明（tw的文档是多个tiddler组成的，全靠链接进行联系， 如果没有按照官方的顺序来看，很容易犹豫不知道tiddler的上下文环境感到迷惑
+- 如果你对tw的插件代码编写熟悉后，建议在tw源代码仓库里面搜索相关的关键词，查看对应的源码，或者直接看tw官方的插件是如何编写的（js 插件官方使用es5编写，建议直接使用es6 的class编写代码
 
-* tw5里面的插件开发由于其独特的风格，开发方式有很多种，tw 官方的dev文档也没有明确说明，仅仅展示了一些具体的插件代码示例，并没有具体说明（tw的文档是多个tiddler组成的，全靠链接进行联系， 如果没有按照官方的顺序来看，很容易犹豫不知道tiddler的上下文环境感到迷惑
-* 如果你对tw的插件代码编写熟悉后，建议在tw源代码仓库里面搜索相关的关键词，查看对应的源码，或者直接看tw官方的插件是如何编写的（js 插件官方使用es5编写，建议直接使用es6 的class编写代码
+- 由于wikitext编写体验没有js/ts代码体验好（wikitext没有lsp，提示全靠snippet， 我个人写的更多是js插件，下面如果没有特殊说明，默认就是js插件开发细节
 
-* 由于wikitext编写体验没有js/ts代码体验好（wikitext没有lsp，提示全靠snippet， 我个人写的更多是js插件，下面如果没有特殊说明，默认就是js插件开发细节
-
-* 你可以直接在tw里面新建一个文件，文件类型选择javascript，额外添加一个key-value 字段 module-type: widget
+- 你可以直接在tw里面新建一个文件，文件类型选择javascript，额外添加一个key-value 字段 module-type: widget
 
 ## UI
 
 在tw经常需要操作一些dom， 一般js的写法就是使用`document.createElement('xxx')`的做法， 但是如果有多个节点需要插入，就需要不断进行append， 看起来比较混乱， tw基于createElement 封装了了一个函数 `$tw.utils.domMaker`
 
 ```js
-const createElement = $tw.utils.domMaker
+const createElement = $tw.utils.domMaker;
 
 const div = createElement('div', {
-    class: 'm-2',
-    text: 'this is a div node',
-    attributes:{
-        title: 'tooptip',
-            },
-    children: [divNode1, divNode2, xxx]
-})
+  class: 'm-2',
+  text: 'this is a div node',
+  attributes: {
+    title: 'tooptip',
+  },
+  children: [divNode1, divNode2, xxx],
+});
 ```
 
 ## Data
 
-* tw里面的数据有两种格式json和tw自带的x-dictionary-tiddler类型的文件， 但是获取后都是一个json对象，没有区别， x-dictionary-tiddler的形式都是key- value的类型，形式比较固定， 直接使用require（'xxx.json')即可加载，就像加载普通的json文件一样， 唯一需要注意的是文件名字需要使用tw里面的文件名字
+- tw里面的数据有两种格式json和tw自带的x-dictionary-tiddler类型的文件， 但是获取后都是一个json对象，没有区别， x-dictionary-tiddler的形式都是key- value的类型，形式比较固定， 直接使用require（'xxx.json')即可加载，就像加载普通的json文件一样， 唯一需要注意的是文件名字需要使用tw里面的文件名字
 
 ## meta
 
-* tw识别每个tiddler的title全靠meta数据， 如果一个tiddler没有title字段，就会默认使用文件系统的真实路径作为title， 比如 `/home/username/workspace/wiki/tiddlers/GettingStarted.tid`，
+- tw识别每个tiddler的title全靠meta数据， 如果一个tiddler没有title字段，就会默认使用文件系统的真实路径作为title， 比如 `/home/username/workspace/wiki/tiddlers/GettingStarted.tid`，
 
 ## 相对路径
 
-* require 在tw里面同样支持相对路径， 只不过是基于tw的虚拟文件路由
+- require 在tw里面同样支持相对路径， 只不过是基于tw的虚拟文件路由
 
 ## 插件文档
 
@@ -147,23 +142,26 @@ const div = createElement('div', {
 
 [template](https://github.com/oeyoews/tiddlywiki-starter-kit/tree/main/plugins/oeyoews)
 
-
 ## Concepts
 
-* 数据原子：tiddlywiki(以下简称tw）的每一个tiddler都可以看作是一条数据，所有的tiddler可以类比为一个数据库，我们可以重新拿到这些数据以适当的形式重新展示这些数据， 比如写一个卡片组件，时间线组件，轮播图组件，文件树组件等各种ui组件， UI本身没有任何意义， 有了数据后才有了灵魂。每个组件（widget）都可以看作是react的组件（component），可以在tw的任何地方嵌入使用。
+- 数据原子：tiddlywiki(以下简称tw）的每一个tiddler都可以看作是一条数据，所有的tiddler可以类比为一个数据库，我们可以重新拿到这些数据以适当的形式重新展示这些数据， 比如写一个卡片组件，时间线组件，轮播图组件，文件树组件等各种ui组件， UI本身没有任何意义， 有了数据后才有了灵魂。每个组件（widget）都可以看作是react的组件（component），可以在tw的任何地方嵌入使用。
 
-* 灵活性： 可以任意操作dom
+- 灵活性： 可以任意操作dom
 
 ## Recipes
 
-* 如果你的插件经常需要添加样式，请考虑使用css library， 手写样式真的很影响插件的编写体验，如果你熟悉一个css library， 就不需要为此烦恼（css library 不要过大， 在tw里面如果一个插件的大小超过500开， 就可以算得上一个大插件了，一定程度上会影响加载速度）
-* tw源代码使用es5， 但是你也可以使用es6，这主要取决于你的浏览器的支持程度（2023年了， 只要你的浏览器不是很旧，几乎都支持）， 但是注意import机制在这里肯定是不支持的，tw使用require； 使用es6可以极大程度上简化代码，比如最常使用的箭头函数，解构赋值，展开运算符，模版字符串， Promise等
+- 如果你的插件经常需要添加样式，请考虑使用css library， 手写样式真的很影响插件的编写体验，如果你熟悉一个css library， 就不需要为此烦恼（css library 不要过大， 在tw里面如果一个插件的大小超过500开， 就可以算得上一个大插件了，一定程度上会影响加载速度）
+- tw源代码使用es5， 但是你也可以使用es6，这主要取决于你的浏览器的支持程度（2023年了， 只要你的浏览器不是很旧，几乎都支持）， 但是注意import机制在这里肯定是不支持的，tw使用require； 使用es6可以极大程度上简化代码，比如最常使用的箭头函数，解构赋值，展开运算符，模版字符串， Promise等
 
-* 由于tw为了兼容性，没有什么es6，只能手动封装一些比较常用的函数
+- 由于tw为了兼容性，没有什么es6，只能手动封装一些比较常用的函数
 
 ## 源码解读系列
 
 [code.js](./code.js)
+
+## bug 排查
+
+- tiddlywiki starter kit 含有大量的定制化插件, 插件可以使用配置文件动态加载, tiddlers 文件夹默认为空, 尽量保持了高内聚低耦合, 但是仍然会有一些奇怪的问题排查起来很费时费力(尤其是多个bug)
 
 ## 关于中文教程
 
@@ -173,8 +171,6 @@ const div = createElement('div', {
 
 [template](https://github.com/oeyoews/tiddlywiki-starter-kit/tree/main/templates/new-plugin)
 
-
 > Coming
-
 
 > 这个目录的文件已经通过软链接的相对路径链接到tiddlers（neotw-tiddlers）里面， 所以你也可以在 [website](https://neotw.oeyoewl.top) 里面看到这些文章（docs开头）
