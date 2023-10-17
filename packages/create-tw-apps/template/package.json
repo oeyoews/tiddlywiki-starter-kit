@@ -1,13 +1,15 @@
 {
   "name": "create-tw-apps",
   "version": "1.0.0",
-  "description": "",
+  "description": "TiddlyWiki5 GettingStart",
   "scripts": {
     "start": "tiddlywiki --listen",
     "build": "tiddlywiki --build"
   },
   "keywords": [
-    "template"
+    "template",
+    "tiddlywiki",
+    "nodejs"
   ],
   "author": "oeyoews <jyao4783@gmail.com>",
   "license": "MIT",

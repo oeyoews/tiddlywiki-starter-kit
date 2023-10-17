@@ -1,5 +1,5 @@
 {
-  "description": "Basic client-server edition",
+  "description": "TiddlyWiki5 GettingStart",
   "languages": [],
   "plugins": [
     "tiddlywiki/tiddlyweb",
