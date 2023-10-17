@@ -20,11 +20,20 @@ Tiddlywiki Starter Kit for (neo)Vim Users, but not limited to
   🔧 Simplified configuration: Easily customize the TiddlyWiki Starter Kit by editing the .env file.
 - 💡 One-click installation: Quickly install the TiddlyWiki Starter Kit using the npm create create-neotw-app command.
 
-## Installation
+## Requirements
+
+- Node.js
+- Git(optional)
+
+## Getting Started
 
 ```bash
 npm create neotw-app@latest
 ```
+
+## Configuration
+
+- [config](.env)
 
 ## Deploy
 
