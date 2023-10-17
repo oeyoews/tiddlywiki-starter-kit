@@ -1,5 +1,5 @@
 <center>
-    <img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/snapshot02.png" alt="neotw banner" title="neotw"/>
+    <img src="https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/snapshot02.png" alt="neotw banner" title="tiddlywiki starter kit"/>
 </center>
 
 ![TIDDLY Static Badge](https://img.shields.io/badge/Tiddlywiki5-neotw-green?style=for-the-badge&logo=tiddlywiki) ![Version JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2Foeyoews%2Ftiddlywiki-starter-kit%2Fraw%2Fmain%2Fpackage.json&query=version&style=for-the-badge&logo=tiddlywiki&label=version)
@@ -10,11 +10,11 @@
 
 ## Features
 
-- 开箱即用: tiddlywiki starter kit 已经最大程度上封装了所有配置, 可根据个人习惯修改配置
-- UI: 借助 Tailwindcss 快速设计响应式界面, 节省样式文件占用
-- 多wiki支持: 支持wiki文件夹切换, 比如home/work/life/reading等自定义目录
-- 快捷操作: 针对常用功能, 提供快捷键操作, 支持全键盘流操作
-- 配置: 用户仅仅需要编辑 .env 文件即可, 配置简单化
+📦 简化配置: TiddlyWiki Starter Kit 已封装了大部分配置，减少了繁琐设置的需求。
+🎨 借助Tailwindcss设计: 使用Tailwindcss设计响应式界面，减少样式文件占用。
+📚️ 多wiki支持: 支持自定义文件夹，如工作、生活、阅读等，切换轻松。
+🚀 快捷操作: 提供快捷键操作，全键盘流操作，提高效率。
+🔧 简化配置: 通过编辑.env文件轻松进行个性化配置。
 
 ## Installation
 
@@ -22,36 +22,7 @@
 npm create neotw-app@latest
 ```
 
-<details>
-<summary>其他安装方式</summary>
-
-```bash
-# dependcies: git node bun docker docker-compose
-
-# method 01: docker
-docker run -d --name tiddlywiki -p 8080:8080 -v $(pwd)/wiki:/app/wiki oeyoews/tiddlywiki:latest tiddlywiki wiki --listen port=8080 host=0.0.0.0
-
-# method 02: use docker-compose(推荐使用, 最为方便快捷的方法)
-docker-compose up -d ## docker-compose.yml 参考 [docker-compose.yml](./docker-compose.yml)
-
-# method 03: clone repo directly
-git clone --depth 1 https://github.com/oeyoews/tiddlywiki-starter-kit
-cd tiddlywiki-starter-kit && pnpm install  # install packages
-pnpm start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm2:start
-
-# method 04: 单文件版本 打开 https://neotw.oeyoewl.top/editions, 直接保存网页到本地
-
-# method 05: systemd https://www.freedesktop.org/software/systemd/man/systemd.service.html
-
-# method 06: pnpm pm2 start（我目前使用的方式， 因为我主要在本地使用，需要频繁更新tiddlywiki-starter-kit源码，避免每次都要构建docker mirror的步骤）
-
-```
-
-</details>
-
 ## Deploy
-
-> 点击下面的按钮, 一键部署到Vercel.
 
 <!-- https://vercel.com/docs/deploy-button -->
 <a target="_blank" href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Foeyoews%2Ftiddlywiki-starter-kit">
@@ -62,16 +33,10 @@ pnpm start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm
 
 ## Documentaion
 
-> WIP
+> 正在精心制作中 ...
 
 ## Preview
 
-<!-- [tiddlywiki starter kit](https://tiddlywiki-starter-kit.xxx) -->
-
 - [Tiddlyhost Site](https://tiddlywiki-starter-kit.tiddlyhost.com/)
-- [Github Pages](https://oeyoews.github.io/tiddlywiki-starter-kit/) Empty
+- [Github Pages](https://oeyoews.github.io/tiddlywiki-starter-kit/) Empty Preview
 - [Vercel Site](https://tiddlywiki-starter-kit.vercel.app/)
-
-![cat](https://cdn.jsdelivr.net/gh/oeyoews/neotw@main/img/cat.svg 'cat')
-
-<!-- - [ ] 配置ci https://github.com/elgohr/Publish-Docker-Github-Action -->

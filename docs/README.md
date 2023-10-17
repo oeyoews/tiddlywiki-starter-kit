@@ -15,6 +15,34 @@
 
 # Tutorials
 
+## 安装方式
+
+```bash
+npm create neotw-app@latest
+```
+
+```bash
+# dependcies: git node bun docker docker-compose
+
+# method 01: docker
+docker run -d --name tiddlywiki -p 8080:8080 -v $(pwd)/wiki:/app/wiki oeyoews/tiddlywiki:latest tiddlywiki wiki --listen port=8080 host=0.0.0.0
+
+# method 02: use docker-compose(推荐使用, 最为方便快捷的方法)
+docker-compose up -d ## docker-compose.yml 参考 [docker-compose.yml](./docker-compose.yml)
+
+# method 03: clone repo directly
+git clone --depth 1 https://github.com/oeyoews/tiddlywiki-starter-kit
+cd tiddlywiki-starter-kit && pnpm install  # install packages
+pnpm start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm2:start
+
+# method 04: 单文件版本 打开 https://neotw.oeyoewl.top/editions, 直接保存网页到本地
+
+# method 05: systemd https://www.freedesktop.org/software/systemd/man/systemd.service.html
+
+# method 06: pnpm pm2 start（我目前使用的方式， 因为我主要在本地使用，需要频繁更新tiddlywiki-starter-kit源码，避免每次都要构建docker mirror的步骤）
+
+```
+
 ## Introduce
 
 ## 开发依赖
