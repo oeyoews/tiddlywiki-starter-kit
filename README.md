@@ -9,7 +9,7 @@
 
 ## TiddlyWiki starter kit
 
-> 面向但不限于(neo)vim用户的 tiddlywiki starter kit
+面向但不限于(neo)vim用户的 Tiddlywiki Starter Kit
 
 ## Features
 
