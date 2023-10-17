@@ -7,10 +7,6 @@
 
 <hr>
 
-## TiddlyWiki starter kit
-
-Tiddlywiki Starter Kit for (neo)Vim Users, but not limited to
-
 ## Features
 
 - 📦 Out of the box: TiddlyWiki Starter Kit comes with most configurations pre-packaged, reducing the need for tedious setup.
