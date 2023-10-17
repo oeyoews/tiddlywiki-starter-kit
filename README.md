@@ -36,10 +36,5 @@ npm create neotw-app@latest
 
 ## Documentaion
 
-> 正在精心制作中 ...
+> 连夜制作中 ...
 
-## Preview
-
-- [Tiddlyhost Site](https://tiddlywiki-starter-kit.tiddlyhost.com/)
-- [Github Pages](https://oeyoews.github.io/tiddlywiki-starter-kit/) Empty Preview
-- [Vercel Site](https://tiddlywiki-starter-kit.vercel.app/)
