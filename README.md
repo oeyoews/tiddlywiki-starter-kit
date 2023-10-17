@@ -10,7 +10,7 @@
 
 ## Features
 
-- 📦 简化配置: TiddlyWiki Starter Kit 已封装了大部分配置，减少了繁琐设置的需求.
+- 📦 开箱即用: TiddlyWiki Starter Kit 已封装了大部分配置，减少了繁琐设置的需求.
 - 🎨 借助Tailwindcss设计: 使用Tailwindcss设计响应式界面，减少样式文件占用.
 - 📚️ 多wiki支持: 支持自定义文件夹，如工作、生活、阅读等，切换轻松.
 - 🚀 快捷操作: 提供快捷键操作，全键盘流操作，提高效率.
