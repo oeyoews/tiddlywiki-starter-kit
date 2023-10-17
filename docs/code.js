@@ -24,50 +24,89 @@ $tw.wiki.getTiddlersAsJson(title);
 wiki.setTiddlerData(title, data, fields, options);
 
 // dom
-$tw.utils.domMaker; // createElement 
+$tw.utils.domMaker; // createElement
 
 // ui
 $tw.notifier(); // send notification
 $tw.modal.display(title); // show a dialog
 
 // widget
-this.getVariable('currentTiddler'); 获取当前条目名称
+this.getVariable('currentTiddler');
+获取当前条目名称;
 
-/** class 
-  * 
-  */
+/** class
+ *
+ */
 
 // 如果目标元素没有class可以使用，仅支持单个class
 // $tw.utils.addClass(commode, 'font-bold')
 // tiddler的field的class支持设置样式就是来源于此，除了这一点，在写第三方插件的过程中感觉这种这种写法并没有比className有什么优势， 更推荐使用classList方法
-exports.addClass = function(el,className) {
-	var c = (el.getAttribute("class") || "").split(" ");
-	if(c.indexOf(className) === -1) {
-		c.push(className);
-		el.setAttribute("class",c.join(" "));
-	}
+exports.addClass = function (el, className) {
+  var c = (el.getAttribute('class') || '').split(' ');
+  if (c.indexOf(className) === -1) {
+    c.push(className);
+    el.setAttribute('class', c.join(' '));
+  }
 };
 
 // 移除class
-exports.removeClass = function(el,className) {
-	var c = (el.getAttribute("class") || "").split(" "),
-		p = c.indexOf(className);
-	if(p !== -1) {
-		c.splice(p,1);
-		el.setAttribute("class",c.join(" "));
-	}
+exports.removeClass = function (el, className) {
+  var c = (el.getAttribute('class') || '').split(' '),
+    p = c.indexOf(className);
+  if (p !== -1) {
+    c.splice(p, 1);
+    el.setAttribute('class', c.join(' '));
+  }
 };
 
 // 切换class
-exports.toggleClass = function(el,className,status) {
-	if(status === undefined) {
-		status = !exports.hasClass(el,className);
-	}
-	if(status) {
-		exports.addClass(el,className);
-	} else {
-		exports.removeClass(el,className);
-	}
+exports.toggleClass = function (el, className, status) {
+  if (status === undefined) {
+    status = !exports.hasClass(el, className);
+  }
+  if (status) {
+    exports.addClass(el, className);
+  } else {
+    exports.removeClass(el, className);
+  }
 };
 
+// tw会将你写的widget使用两个function 进行包裹起来, 可以看到这里最外层有tw require console exports module等等, 这也就是为什么可以使用require tw的原因
+(function (
+  module,
+  exports,
+  console,
+  setInterval,
+  clearInterval,
+  setTimeout,
+  clearTimeout,
+  Buffer,
+  $tw,
+  require,
+) {
+  (function () {
+    /*\
+title: nprogress/startup.js
+type: application/javascript
+module-type: startup
 
+nprogress module
+
+\*/
+    (function () {
+      /*jslint node: true, browser: true */
+      /*global $tw: false */
+      'use strict';
+
+      exports.name = 'nprogress-startup-hook';
+      exports.platforms = ['browser'];
+      exports.after = ['load-modules'];
+      exports.synchronous = true;
+      exports.startup = xxx;
+    })();
+  })();
+
+  return exports;
+});
+
+//# sourceURL=nprogress/startup.js
