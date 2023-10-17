@@ -5,9 +5,6 @@ import path from 'path';
 
 /** @description generate latest tiddlywiki.info file from config folder */
 export default function generateTiddlyWikiInfo() {
-  // process.cwd()
-  const tiddlywikiInfoPath = path.join('tiddlywiki.info');
-
   /** @type {import('tw5-typed').ITiddlyWikiInfoJSON} */
   const tiddlywikiConfig = {
     description:
@@ -19,11 +16,14 @@ export default function generateTiddlyWikiInfo() {
     plugins,
     build,
     /** @type {import('tw5-typed').ITiddlyWikiInfoJSONConfig} */
-    /* config: {
+    config: {
       'retain-original-tiddler-path': false,
       'default-tiddler-location': 'tiddlers', // 不建议修改, 如果修改了filesystem
-    }, */
+    },
   };
+
+  // process.cwd()
+  const tiddlywikiInfoPath = path.join('tiddlywiki.info');
 
   fs.writeFileSync(
     tiddlywikiInfoPath,
