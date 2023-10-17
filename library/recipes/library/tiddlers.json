@@ -138,7 +138,7 @@
         "name": "Neotw Icons",
         "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
         "list": "readme",
-        "readme": "{{$:/languages/neotw-icons/readme}}\n",
+        "readme": "{{$:/languages/neotw-icons/readme}}",
         "requires-reload": "yes"
     },
     {
