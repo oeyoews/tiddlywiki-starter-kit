@@ -23,21 +23,20 @@ neotw-icons widget
       this.computeAttributes();
       this.execute();
 
-      // https://developer.mozilla.org/zh-CN/docs/Web/API/Element/attributes
-      // TODO: style bug
-      const { title = '', style, icon, class: classNames } = this.attributes;
-
-      const createElement = $tw.utils.domMaker;
-
-      const iconNode = createElement('iconify-icon', {
+      const {
+        title = '',
+        style,
+        icon = 'simple-icons:tiddlywiki',
         class: classNames,
-        attributes: {
-          icon,
-          title,
-          style,
-        },
-      });
-      iconNode.classList.add('align-middle');
+      } = this.attributes;
+
+      const iconNode = this.document.createElement('iconify-icon');
+
+      iconNode.setAttribute('icon', icon);
+      iconNode.title = title;
+      iconNode.style = style;
+      iconNode.className = classNames;
+      iconNode.style.verticalAlign = 'middle';
 
       parent.insertBefore(iconNode, nextSibling);
       this.domNodes.push(iconNode);
