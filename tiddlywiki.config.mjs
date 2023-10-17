@@ -29,7 +29,6 @@ export default function generateTiddlyWikiInfo() {
     },
   };
 
-  // process.cwd()
   const tiddlywikiInfoPath = path.join('tiddlywiki.info');
 
   fs.writeFileSync(
