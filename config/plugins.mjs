@@ -7,11 +7,15 @@ dotenv.config();
 const enableCME = process.env.ENABLECME === 'true';
 const enableMarkdown = process.env.ENABLEMARKDOWN === 'true';
 const enableQRCode = process.env.ENABLE_QRCODE === 'true';
+const wikiLocation = process.env.wikiLocation;
+
+const addColor = (enableOption, color = 'green') => chalk[color](enableOption);
 
 console.log(`
-  CODEMIRROR: ${chalk.green(enableCME)}
-  MARKDOWN: ${chalk.green(enableMarkdown)}
-  QRCODE: ${chalk.green(enableQRCode)}
+  CODEMIRROR: ${addColor(enableCME)}
+  MARKDOWN: ${addColor(enableMarkdown)}
+  QRCODE: ${addColor(enableQRCode)}
+  wikiLocation: ${addColor(wikiLocation, 'cyan')}
 `);
 
 const localPlugins = ['oeyoews/neotw-cli-info'];

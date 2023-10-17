@@ -4,6 +4,12 @@
     "tiddlywiki/vanilla",
     "nico/notebook"
   ],
+  "includeWikis": [
+    {
+      "read-only": false,
+      "path": "src"
+    }
+  ],
   "plugins": [
     "tiddlywiki/filesystem",
     "tiddlywiki/tiddlyweb",
@@ -100,6 +106,6 @@
   },
   "config": {
     "retain-original-tiddler-path": false,
-    "default-tiddler-location": "tiddlers"
+    "default-tiddler-location": "src/tiddlers"
   }
 }

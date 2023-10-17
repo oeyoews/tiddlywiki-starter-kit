@@ -122,6 +122,14 @@ const div = createElement('div', {
 });
 ```
 
+## 指定保存目录
+
+```bash
+'default-tiddler-location': 'tiddlers'
+```
+
+tw 会一直读取这个文件的内容, 无论修改成什么值, 可以看作值public folder, 但是注意, 如果在改成了别的之后, 如果修改了tiddlers文件夹的内容, 对应的文件会转移到新的文件. https://github.com/oeyoews/tiddlywiki-starter-kit/issues/117
+
 ## Data
 
 - tw里面的数据有两种格式json和tw自带的x-dictionary-tiddler类型的文件， 但是获取后都是一个json对象，没有区别， x-dictionary-tiddler的形式都是key- value的类型，形式比较固定， 直接使用require（'xxx.json')即可加载，就像加载普通的json文件一样， 唯一需要注意的是文件名字需要使用tw里面的文件名字
