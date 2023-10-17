@@ -97,5 +97,9 @@
       "--deletetiddlers",
       "[[$:/UpgradeLibrary]] [[$:/UpgradeLibrary/List]]"
     ]
+  },
+  "config": {
+    "retain-original-tiddler-path": false,
+    "default-tiddler-location": "tiddlers"
   }
 }
