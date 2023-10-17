@@ -38,7 +38,7 @@ title: $:/config/EmptyStoryMessage
       <div class="flex justify-center">
       <$button class="animate-bounce hover:scale-105 transition bg-blue-400 text-white p-4 text-[16px] rounded-md hover:bg-blue-500">
         <$action-navigate $to="GettingStarted" $scroll="yes" />
-        点击进入主页 <iconify-icon icon="flat-color-icons:home" />
+        GettingStarted <iconify-icon icon="flat-color-icons:home" />
       </$button>
       </div>
     </div>
