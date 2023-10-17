@@ -10,9 +10,11 @@
 
 ## Features
 
-- UI: 借助 Tailwindcss 快速优化页面展示, 响应式页面
-- 动态目录: 直接切换读取的tiddlers
-- 快捷操作: 针对常用功能, 提供快捷键操作, 支持全键盘流编辑
+- 开箱即用: tiddlywiki starter kit 已经最大程度上封装了所有配置, 可根据个人习惯修改配置
+- UI: 借助 Tailwindcss 快速设计响应式界面, 节省样式文件占用
+- 多wiki支持: 支持wiki文件夹切换, 比如home/work/life/reading等自定义目录
+- 快捷操作: 针对常用功能, 提供快捷键操作, 支持全键盘流操作
+- 配置: 用户仅仅需要编辑 .env 文件即可, 配置简单化
 
 ## Installation
 
