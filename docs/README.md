@@ -7,6 +7,8 @@
 > :warning:
 > 此文件处于alpha阶段，正在不断整理并更新（并没有什么整理计划，比较凌乱，目前放在仓库的docs目录中，并且也可以在网站中预览，后期可能会将此文档单独分离出来做一个网站），此文件根据个人时间安排不定期更新， 前期主要以文字代码为主， 相关示例图片会在后期添加..
 
+[online preview](https://tiddlywiki-starter-kit.vercel.app/#docs%2FREADME)
+
 ## 为什么写tiddlywiki starter kit？
 
 本身nodejs启动tw也就是一条命令行的事，很简单，但是为了满足自己的各种需求，命令行就显得很吃力了，tiddlywiki starter kit 经过多版本迭代，历经两年打磨而成.
