@@ -1,6 +1,7 @@
 {
   "name": "tiddlywiki-starter-kit",
   "description": "A modern style notebook based on tiddlywiki",
+  "version": "4.1.0",
   "author": "oeyoews <jyao4783@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -21,7 +22,6 @@
     "tiddlywiki": "github:Jermolene/TiddlyWiki5#66a8e2dbf28503a514da2bea5114187b8b84a04f",
     "tiged": "^2.12.5"
   },
-  "version": "4.0.0",
   "devDependencies": {
     "@types/prompts": "^2.4.6",
     "address": "^1.2.2",
