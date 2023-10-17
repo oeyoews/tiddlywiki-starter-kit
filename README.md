@@ -34,9 +34,11 @@ npm create neotw-app@latest
 ## Deploy
 
 <!-- https://vercel.com/docs/deploy-button -->
-<a target="_blank" href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Foeyoews%2Ftiddlywiki-starter-kit">
+<!-- <a target="_blank" href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Foeyoews%2Ftiddlywiki-starter-kit">
     <img src="https://vercel.com/button" alt="Deploy with Vercel" />
-</a>
+</a> -->
+
+[Fork](https://github.com/oeyoews/tiddlywiki-starter-kit/fork) this project, Go to vercel to deploy it manually
 
 > I recommend shallow cloning this project and deploying it manually on Vercel
 
