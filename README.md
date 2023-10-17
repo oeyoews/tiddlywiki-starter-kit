@@ -32,7 +32,7 @@ npm create neotw-app@latest
     <img src="https://vercel.com/button" alt="Deploy with Vercel" />
 </a>
 
-> NOTE: vercel不会进行浅克隆，很大几率导致部署失败，此仓库提交次数过多，建议用户手动潜浅克隆仓库，手动在vercel上进行部署
+> 建议浅克隆这个项目，手动在vercel上进行部署
 
 ## Documentaion
 
