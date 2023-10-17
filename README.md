@@ -11,6 +11,7 @@
 ## Features
 
 - UI: 借助 Tailwindcss 快速优化页面展示, 响应式页面
+- 动态目录: 直接切换读取的tiddlers
 
 ## Installation
 

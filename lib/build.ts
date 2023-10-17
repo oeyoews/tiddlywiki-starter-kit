@@ -13,12 +13,13 @@ const hasBun = process.versions.bun;
 const log = ora(
   chalk.cyan(`${isCI ? ciName : ''} ${hasBun ? '🥟' : '📦'} Building ...`),
 );
+const wikiLocation = process.env.wikiLocation;
 
 /** @description only clone tiddlers repo on ci environment */
 function cloneTiddlers(callback: () => void) {
   log.start();
   if (isCI) {
-    spawn(['tiged', TIDDLERSREPO, 'tiddlers'], {
+    spawn(['tiged', TIDDLERSREPO, `${wikiLocation}/tiddlers`], {
       onExit: (proc, exitCode, signalCode, error) => {
         if (exitCode === 0) {
           log.info(`tiddlers 内容 获取完成`);
