@@ -1,6 +1,6 @@
 node_modules/
 
-/subwiki/
+subwiki/
 dist
 
 .idea
@@ -11,7 +11,7 @@ test
 
 .vercel
 
-/tiddlers/
+src/tiddlers/
 .tiddlywiki
 output/
 .logs
