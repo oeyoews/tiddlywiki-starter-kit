@@ -9,15 +9,16 @@
 
 ## TiddlyWiki starter kit
 
-面向但不限于(neo)vim用户的 Tiddlywiki Starter Kit
+Tiddlywiki Starter Kit for (neo)Vim Users, but not limited to
 
 ## Features
 
-- 📦 开箱即用: TiddlyWiki Starter Kit 已封装了大部分配置，减少了繁琐设置的需求.
-- 🎨 借助Tailwindcss设计: 使用Tailwindcss设计响应式界面，减少样式文件占用.
-- 📚️ 多wiki支持: 支持自定义文件夹，如工作、生活、阅读等，切换轻松.
-- 🚀 快捷操作: 提供快捷键操作，全键盘流操作，提高效率.
-- 🔧 简化配置: 通过编辑.env文件轻松进行个性化配置.
+- 📦 Out of the box: TiddlyWiki Starter Kit comes with most configurations pre-packaged, reducing the need for tedious setup.
+- 🎨 Powered by Tailwind CSS: Utilizes Tailwind CSS for responsive design, minimizing the need for extensive style files.
+- 📚️ Multiple wiki support: Supports custom folders for different purposes such as work, life, reading, etc., making switching between them effortless.
+- 🚀 Quick operations: Provides keyboard shortcuts and full keyboard navigation for efficient workflow.
+  🔧 Simplified configuration: Easily customize the TiddlyWiki Starter Kit by editing the .env file.
+- 💡 One-click installation: Quickly install the TiddlyWiki Starter Kit using the npm create create-neotw-app command.
 
 ## Installation
 
@@ -32,9 +33,8 @@ npm create neotw-app@latest
     <img src="https://vercel.com/button" alt="Deploy with Vercel" />
 </a>
 
-> 建议浅克隆这个项目，手动在vercel上进行部署
+> I recommend shallow cloning this project and deploying it manually on Vercel
 
 ## Documentaion
 
-> 连夜制作中 ...
-
+Working through the night...
