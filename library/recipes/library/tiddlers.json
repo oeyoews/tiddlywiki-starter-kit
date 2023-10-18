@@ -442,7 +442,7 @@
         "name": "workspaces",
         "list": "readme",
         "dependents": "",
-        "readme": "正在制作中 ...\r\n",
+        "readme": "正在制作中 ...\n\n<$workspaces workspace=\"previous\"/>\n\n<$workspaces workspace=\"new\"/>",
         "requires-reload": "yes"
     }
 ]
