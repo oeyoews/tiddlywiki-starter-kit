@@ -25,7 +25,7 @@ neotw-icons widget
 
       const {
         title = '',
-        style,
+        style = '',
         icon = 'simple-icons:tiddlywiki',
         class: classNames = '',
       } = this.attributes;
