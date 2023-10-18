@@ -2,6 +2,16 @@ title: $:/plugins/oeyoews/tiddlywiki-videos/readme
 
 !! Tiddlywiki Videos
 
+!! Usage
+
+
+```wikitext
+<$youtube youtubeId="o7GyFa90klg" />
+<$youtube youtubeId="PLjNhkoz3yGwG9ISeHEYsdUSQdQarKJ8u3" playlist/>
+<$youtube url='' />
+// support url, such as bilibili
+```
+
 <$youtube youtubeId="o7GyFa90klg" />
 <$youtube youtubeId="PLjNhkoz3yGwG9ISeHEYsdUSQdQarKJ8u3" playlist/>
 
