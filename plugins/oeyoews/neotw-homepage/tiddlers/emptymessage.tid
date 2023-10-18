@@ -46,6 +46,7 @@ title: $:/config/EmptyStoryMessage
 </div>
 
 
+<$list filter="[{$:/info/url/protocol}match[https:]]">
 <center>
       <h2>近期更新动态</h2>
 <% if [{$:/info/browser/is/mobile}match[no]] %>
@@ -54,3 +55,4 @@ title: $:/config/EmptyStoryMessage
   移动端不显示近期更新动态卡片
 <% endif %>
 </center>
+</$list>
