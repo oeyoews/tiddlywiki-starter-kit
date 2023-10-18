@@ -19,7 +19,7 @@
     "dotenv": "^16.3.1",
     "ora": "^6.3.1",
     "prompts": "^2.4.2",
-    "tiddlywiki": "github:Jermolene/TiddlyWiki5#66a8e2dbf28503a514da2bea5114187b8b84a04f",
+    "tiddlywiki": "github:Jermolene/TiddlyWiki5#c93d56667e9382bb72a490d1ec21f3ca59c49ce6",
     "tiged": "^2.12.5"
   },
   "devDependencies": {
