@@ -1,5 +1,5 @@
 /*\
-title: nprogress/startup.js
+title: nprogress-startup.js
 type: application/javascript
 module-type: startup
 
