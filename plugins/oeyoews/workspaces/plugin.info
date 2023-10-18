@@ -1,0 +1,11 @@
+{
+  "title": "$:/plugins/oeyoews/workspaces",
+  "description": "workspaces",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.3.1",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "workspaces",
+  "list": "readme"
+}

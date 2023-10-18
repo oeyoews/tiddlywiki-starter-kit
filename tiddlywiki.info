@@ -16,6 +16,7 @@
     "tiddlywiki/highlight",
     "tiddlywiki/browser-sniff",
     "tiddlywiki/pluginlibrary",
+    "oeyoews/workspaces",
     "oeyoews/NPL",
     "oeyoews/neotw-image-better",
     "oeyoews/tiddlywiki-motion",
