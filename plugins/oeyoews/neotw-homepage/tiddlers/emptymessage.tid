@@ -46,11 +46,11 @@ title: $:/config/EmptyStoryMessage
 </div>
 
 
-<$list filter="[{$:/info/url/protocol}match[https:]]">
-  <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
-    <center>
+<center>
       <h2>近期更新动态</h2>
-    </center>
+<% if [{$:/info/browser/is/mobile}match[yes]] %>
     <$cards />
-  </$list>
-</$list>
+<% else %>
+  本地wiki不加载 近期动态卡片
+<% endif %>
+</center>
