@@ -1,3 +1,4 @@
+// NOTE: vercel not support use { isCi } ???
 import ci from 'ci-info';
 import chalk from 'chalk';
 import dotenv from 'dotenv';
@@ -72,6 +73,7 @@ const oeyoewsFormatedPlugins = oeyoewsPlugins.map((plugin) => {
   return `oeyoews/${plugin}`;
 });
 
+// based plugins
 const plugins = [
   'tiddlywiki/filesystem',
   'tiddlywiki/tiddlyweb',
@@ -81,6 +83,7 @@ const plugins = [
   ...oeyoewsFormatedPlugins,
 ];
 
+// judge local/online
 const dynamicPlugins = ci.isCI ? onlinePlugins : localPlugins;
 
 enableMarkdown && plugins.push(...markdowPlugins);
@@ -88,6 +91,7 @@ enableCME && localPlugins.push(...cmePlugins);
 
 plugins.push(...dynamicPlugins);
 
-ci.GITHUB_ACTIONS && plugins.push(...localPlugins, ...onlinePlugins);
+// if on github, use all plugins
+ci.GITHUB_ACTIONS && plugins.push(...localPlugins);
 
 export default plugins;
