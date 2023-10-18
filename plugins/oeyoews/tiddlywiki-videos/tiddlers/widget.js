@@ -63,3 +63,4 @@ class YoutubeWidget extends Widget {
 
 exports.youtube = YoutubeWidget;
 exports.yt = YoutubeWidget;
+exports.video = YoutubeWidget;
