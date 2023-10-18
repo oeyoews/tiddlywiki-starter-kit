@@ -104,7 +104,7 @@ const Sevendays = {
       },
       // color: [''],
       xAxis: {
-        boundaryGap: false,
+        boundaryGap: true, // option
         type: 'category',
         data: sevendays,
         name: '日期',
