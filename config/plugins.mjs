@@ -1,4 +1,4 @@
-import { isCI, GITHUB_ACTIONS } from 'ci-info';
+import ci from 'ci-info';
 import chalk from 'chalk';
 import dotenv from 'dotenv';
 
@@ -81,13 +81,13 @@ const plugins = [
   ...oeyoewsFormatedPlugins,
 ];
 
-const dynamicPlugins = isCI ? onlinePlugins : localPlugins;
+const dynamicPlugins = ci.isCI ? onlinePlugins : localPlugins;
 
 enableMarkdown && plugins.push(...markdowPlugins);
 enableCME && localPlugins.push(...cmePlugins);
 
 plugins.push(...dynamicPlugins);
 
-// GITHUB_ACTIONS && plugins.push(...localPlugins, ...onlinePlugins);
+ci.GITHUB_ACTIONS && plugins.push(...localPlugins, ...onlinePlugins);
 
 export default plugins;
