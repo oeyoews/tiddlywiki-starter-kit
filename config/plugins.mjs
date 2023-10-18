@@ -83,15 +83,15 @@ const plugins = [
   ...oeyoewsFormatedPlugins,
 ];
 
-// judge local/online
-const dynamicPlugins = ci.isCI ? onlinePlugins : localPlugins;
-
 enableMarkdown && plugins.push(...markdowPlugins);
 enableCME && localPlugins.push(...cmePlugins);
 
-plugins.push(...dynamicPlugins);
-
-// if on github, use all plugins
-ci.GITHUB_ACTIONS && plugins.push(...localPlugins);
+switch (ci.name) {
+  case 'VERCEL':
+    plugins.push(...onlinePlugins);
+    break;
+  default:
+    plugins.push(...localPlugins);
+}
 
 export default plugins;
