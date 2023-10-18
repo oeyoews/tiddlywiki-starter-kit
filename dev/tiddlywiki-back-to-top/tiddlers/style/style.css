@@ -1,0 +1,186 @@
+/* progress number */
+.back-to-top-progress {
+  display: none;
+  font-size: 14px;
+  background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.back-to-top-progress.is-visible {
+  display: flex;
+}
+
+/* button */
+#oeyoews-story-top {
+  position: fixed;
+  bottom: 0.1rem;
+  right: 1rem;
+  font-size: 24px;
+  z-index: 899;
+}
+
+#oeyoews-story-top button {
+  opacity: 0.7;
+  min-width: 1.5em;
+  border: none;
+}
+
+/* todo */
+.back-to-top-btn {
+  background-color: #00000008;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  display: none;
+  box-shadow: 0 5px 20px #0000001f;
+}
+
+.back-to-top-btn.is-visible {
+  /* background-color: red; */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  display: inline; /* inline */
+}
+
+.back-to-top-btn:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
+
+/* bar */
+#page-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  /* background-color: #ddd; */
+  z-index: 899;
+}
+
+#page-progress-bar {
+  background: linear-gradient(135deg, #12c2e9, #ffafbd, #c9ffbf);
+  height: 100%;
+  background-color: #007bff;
+  width: 0;
+  border-radius: 9px;
+  transition: width 0.3s ease-in-out;
+  /* animation: progress-bar 1s ease-out infinite; */
+}
+
+progress {
+  width: 100%;
+  height: 4px;
+  border-radius: 9px;
+  overflow: hidden;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* 手机端样式 */
+@media (max-width: 767px) {
+  .progress {
+    height: 2px;
+    border-radius: 4px;
+  }
+}
+
+::-webkit-progress-bar {
+  background-color: white;
+}
+
+::-webkit-progress-value {
+  /* background: linear-gradient(to right, #007aff, #00d4ff); */
+  background: linear-gradient(135deg, #12c2e9, #ffafbd, #c9ffbf);
+  /* filter: brightness(0.8); */
+  width: 50%;
+  /* transition: width 0.5s ease; */
+  animation: progress-bar 1s ease-out infinite;
+}
+
+@keyframes progress-bar {
+  0% {
+    box-shadow: 0 0 1px #007aff;
+  }
+  50% {
+    box-shadow: 0 0 2px #007aff;
+  }
+  100% {
+    box-shadow: 0 0 1px #007aff;
+  }
+}
+
+/* nprogress */
+#nprogress {
+  pointer-events: none;
+}
+#nprogress .bar {
+  background: #f87171;
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+#nprogress .peg {
+  display: block;
+  position: absolute;
+  right: 0;
+  width: 100px;
+  height: 100%;
+  box-shadow:
+    0 0 10px #f87171,
+    0 0 5px #f87171;
+  opacity: 1;
+  -webkit-transform: rotate(3deg) translate(0, -4px);
+  -ms-transform: rotate(3deg) translate(0, -4px);
+  transform: rotate(3deg) translate(0, -4px);
+}
+#nprogress .spinner {
+  display: block;
+  position: fixed;
+  z-index: 1031;
+  top: 15px;
+  right: 15px;
+}
+#nprogress .spinner-icon {
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  border-top-color: #f87171;
+  border-left-color: #29d;
+  border-radius: 50%;
+  -webkit-animation: nprogress-spinner 400ms linear infinite;
+  animation: nprogress-spinner 400ms linear infinite;
+}
+.nprogress-custom-parent {
+  overflow: hidden;
+  position: relative;
+}
+.nprogress-custom-parent #nprogress .bar,
+.nprogress-custom-parent #nprogress .spinner {
+  position: absolute;
+}
+@-webkit-keyframes nprogress-spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes nprogress-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

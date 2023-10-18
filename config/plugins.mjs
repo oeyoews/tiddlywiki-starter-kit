@@ -58,7 +58,7 @@ const oeyoewsPlugins = [
   'echarts-addons',
   'neotw-info',
   // 'neotw-reverse-card',
-  'tiddlywiki-back-to-top',
+  'nprogress',
   'tiddlywiki-modal-ui',
   'tiddlywiki-publish-tiddler',
   'tiddlywiki-tailwindcss-plus',
