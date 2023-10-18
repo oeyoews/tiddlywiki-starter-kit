@@ -36,6 +36,7 @@ class WorkSpacesWidget extends Widget {
     };
 
     // save and new
+    // TODO: support saved List name, such home, work, life, like pc workspace
     const createNewWorkspace = () => {
       saveCurrentStoryList();
       setWorkspace();
