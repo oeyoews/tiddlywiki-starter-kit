@@ -19,72 +19,45 @@ class WorkSpacesWidget extends Widget {
 
     const createElement = $tw.utils.domMaker;
     const wiki = $tw.wiki;
+
     const storyListTiddler = '$:/StoryList';
-    const workspaceDataTiddler = '$:/workspaces';
+    const workspaceListTiddler = '$:/workspaces';
 
-    const { workspace = 'new' } = this.attributes;
+    const { workspace } = this.attributes;
 
-    // draft 自动会用双引号, 这里暂不处理
-    const getCurrentStoryList = () => {
-      const { list } = wiki.getTiddler(storyListTiddler).fields || [];
+    const getList = (tiddler) => {
+      const { list } = wiki.getTiddler(tiddler).fields;
       return list.filter((title) => !title.startsWith('Draft of')).join(' ');
     };
 
-    const saveCurrentStoryList = () => {
-      const currentList = getCurrentStoryList();
-      wiki.setText(workspaceDataTiddler, 'one', null, currentList);
+    const saveListToWorkspace = () => {
+      const storyList = getList(storyListTiddler);
+      wiki.setText(workspaceListTiddler, 'list', null, storyList);
     };
 
-    // save and new
-    // TODO: support saved List name, such home, work, life, like pc workspace
-    const createNewWorkspace = () => {
-      saveCurrentStoryList();
-      setWorkspace();
-    };
-
-    const setWorkspace = (list = '') => {
+    const setStoryList = (list) => {
       wiki.setText(storyListTiddler, 'list', null, list); // create
     };
 
-    // list all workspace, and support click to switch
-    const listAllWorkspaces = () => {};
-
-    const getoneWorkSpace = () => {
-      const { one: oneList } = wiki.getTiddler(workspaceDataTiddler)?.fields;
-      return oneList;
-    };
-
-    // maybe use timestamp
-    const getPreviousWorkspace = () => {
-      const oneList = getoneWorkSpace();
-      setWorkspace(oneList);
-    };
-
-    // DONE: create new workspace
-    // TODO: switch workspace
-    // workspace naming
-    // reset, next, previous, recycle
     const domNode = createElement('button', {
+      class: 'p-2',
       text: workspace,
     });
 
-    function main() {
-      console.log(workspace);
-      switch (workspace) {
-        case 'new':
-          createNewWorkspace();
-          console.log('create new workspace');
-          break;
-        case 'previous':
-          getPreviousWorkspace();
-          console.log('previous');
-          break;
-        default:
-        //   nothing;
-      }
-    }
+    // TOOD: just use save and new, 循环切换需要考虑的情况太多了
 
-    domNode.addEventListener('click', main);
+    domNode.addEventListener('click', () => {
+      if (workspace === 'previous') {
+        const currentList = getList(storyListTiddler);
+        const previous = getList(workspaceListTiddler);
+        setStoryList(previous);
+        saveListToWorkspace(currentList);
+      }
+      if (workspace === 'new') {
+        saveListToWorkspace();
+        setStoryList();
+      }
+    });
 
     parent.insertBefore(domNode, nextSibling);
     this.domNodes.push(domNode);
