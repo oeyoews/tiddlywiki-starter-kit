@@ -87,7 +87,7 @@ enableMarkdown && plugins.push(...markdowPlugins);
 enableCME && localPlugins.push(...cmePlugins);
 
 switch (ci.name) {
-  case 'VERCEL':
+  case 'Vercel':
     plugins.push(...onlinePlugins);
     break;
   default:
