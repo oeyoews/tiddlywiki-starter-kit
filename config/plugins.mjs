@@ -88,6 +88,6 @@ enableCME && localPlugins.push(...cmePlugins);
 
 plugins.push(...dynamicPlugins);
 
-GITHUB_ACTIONS && plugins.push(...localPlugins, ...onlinePlugins);
+// GITHUB_ACTIONS && plugins.push(...localPlugins, ...onlinePlugins);
 
 export default plugins;
