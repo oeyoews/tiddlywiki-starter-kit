@@ -11,6 +11,9 @@ dependencies:
   dotenv:
     specifier: ^16.3.1
     version: 16.3.1
+  get-port:
+    specifier: ^7.0.0
+    version: 7.0.0
   ora:
     specifier: ^6.3.1
     version: 6.3.1
@@ -635,6 +638,11 @@ packages:
 
   /fuzzysearch@1.0.3:
     resolution: {integrity: sha512-s+kNWQuI3mo9OALw0HJ6YGmMbLqEufCh2nX/zzV5CrICQ/y4AwPxM+6TIiF9ItFCHXFCyM/BfCCmN57NTIJuPg==}
+    dev: false
+
+  /get-port@7.0.0:
+    resolution: {integrity: sha512-mDHFgApoQd+azgMdwylJrv2DX47ywGq1i5VFJE7fZ0dttNq3iQMfsU4IvEgBHojA3KqEudyu7Vq+oN8kNaNkWw==}
+    engines: {node: '>=16'}
     dev: false
 
   /get-uri@6.0.2:
