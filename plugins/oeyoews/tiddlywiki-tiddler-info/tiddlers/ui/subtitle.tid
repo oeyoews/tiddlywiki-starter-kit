@@ -40,6 +40,17 @@ tags: $:/tags/ViewTemplate
 <!-- <<AddTags>> -->
 </$list>
 
+<$set name='type' value={{!!type}}>
+<% if [<type>match[text/markdown]] %>
+	<$iconify icon="simple-icons:markdown" />
+<% elseif [<type>match[text/vnd.tiddlywiki]] %>
+<$iconify icon="simple-icons:tiddlywiki" />
+<% elseif [<type>match[application/javascript]] %>
+<$iconify icon="simple-icons:javascript" />
+<% else %>
+<% endif %>
+</$set>
+
 <$list filter="[all[current]!is[system]!is[binary]]">
 <$select field="type" tooltip="选择文件类型" class="appearance-none border-none m-0 bg-gray-100 dark:bg-black rounded p-0.5" default='filetype'>
 <option disabled value='filetype' tiddler=<<currentTiddler>> >
