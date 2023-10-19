@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "newplugin": "./lib/newplugin.ts",
-    "build": "pnpm run format:md && node lib/build.mjs",
+    "build": "node lib/build.mjs",
     "build-with-bun": "bun run ./lib/build.ts",
     "format": "prettier  --write ./plugins",
     "format:md": "lint-md ** --fix",
