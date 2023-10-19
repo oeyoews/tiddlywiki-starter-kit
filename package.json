@@ -8,7 +8,7 @@
     "newplugin": "./lib/newplugin.ts",
     "build": "node lib/build.mjs",
     "build-with-bun": "bun run ./lib/build.ts",
-    "format": "prettier --write .",
+    "format": "prettier  --write ./plugins",
     "build:docker": "docker-compose build",
     "docker:push": "docker-compose push",
     "start": "node ./lib/startup.mjs",

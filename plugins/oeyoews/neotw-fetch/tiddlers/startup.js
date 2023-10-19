@@ -19,14 +19,13 @@ fetch-readme module
 
   // jsdelivr.com 有缓存, 所以有时候readme 不是最新的, 使用@latest也会限制, 如果直接使用 raw GitHub readme, 会有请求速率限制
   exports.startup = async () => {
-    const readmeURL = 'https://raw.githubusercontent.com/oeyoews/neotw/main/README.md'
+    const readmeURL =
+      'https://raw.githubusercontent.com/oeyoews/neotw/main/README.md';
     $tw.rootWidget.addEventListener('om-fetch-mdfile', async (event) => {
       const paramObject = event.paramObject || {};
       const time = new Date().getTime();
       const fileName = paramObject.fileName || `fetch-${time}`;
-      const url =
-        paramObject.url ||
-        readmeURL;
+      const url = paramObject.url || readmeURL;
       const response = await fetch(url);
       const text = await response.text();
       $tw.wiki.setText(fileName, 'text', null, text);
