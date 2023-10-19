@@ -22,6 +22,7 @@ Markdown
 </option>
 </$select> -->
 
+<$list filter="[all[current]!type[text/markdown]]">
 <$select tiddler=<<currentTiddler>> field='type' default='text/markdown' class="appearance-none border-none m-0 bg-gray-100 dark:bg-black rounded p-0.5">
 <$list filter='[all[shadows+tiddlers]prefix[$:/language/Docs/Types/]each[group]sort[group]]'>
 <optgroup label={{!!group}}>
@@ -33,3 +34,4 @@ Markdown
 </optgroup>
 </$list>
 </$select>
+</$list>
