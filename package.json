@@ -15,6 +15,7 @@
     "start:pm2": "node ./lib/pm2-control.js"
   },
   "dependencies": {
+    "@lint-md/cli": "^2.0.0",
     "ci-info": "^3.9.0",
     "dotenv": "^16.3.1",
     "get-port": "^7.0.0",

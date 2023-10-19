@@ -1,0 +1,14 @@
+{
+	"rules": {
+		"no-empty-code-lang": 1,
+		"no-long-code": [
+			1,
+			{
+				"length": 100,
+				"exclude": [
+					"dot"
+				]
+			}
+		]
+	}
+}
