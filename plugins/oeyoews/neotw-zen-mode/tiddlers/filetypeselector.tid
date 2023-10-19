@@ -1,0 +1,21 @@
+title: $:/plugins/oeyoews/neotw-zen-mode/FileTypeSelector
+tags: $:/tags/EditTemplate
+caption: filetype selector
+
+<!-- $:/tags/ViewTemplate -->
+
+<!-- group -->
+<$select field="type" tooltip="选择文件类型" class="appearance-none border-none m-0 bg-gray-100 dark:bg-black rounded p-0.5" default='filetype'>
+<option disabled value='filetype' tiddler=<<currentTiddler>> >
+Filetype
+</option>
+<option value="text/markdown">
+Markdown
+</option>
+<option value="text/vnd.tiddlywiki">
+	Wikitext
+</option>
+<option value="application/javascript">
+	Javascript
+</option>
+</$select>
