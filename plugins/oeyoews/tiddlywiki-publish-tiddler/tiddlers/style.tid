@@ -3,21 +3,21 @@ tags: $:/tags/Stylesheet
 
 \define hide-tiddler-controls()  [data-tiddler-title="$(currentTiddler)$"] .tc-tiddler-controls  {display: none;}
 
-<$list filter="[{$:/info/url/protocol}!match[http:]]">
+<!-- <$list filter="[{$:/info/url/protocol}!match[http:]]">
 .o-publish {
   display: none;
 }
-</$list>
+</$list> -->
 
-<$list filter="[list[$:/StoryList]count[]match[0]]">
+<!-- <$list filter="[list[$:/StoryList]count[]match[0]]">
 .o-publish {
   display: none;
 }
-</$list>
+</$list> -->
 
-<$list filter="[field:publish[readonly]]">
+<!-- <$list filter="[field:publish[readonly]]">
 <<hide-tiddler-controls>>
-</$list>
+</$list> -->
 
 <$list filter='[filed:publish[private]]'>
 [data-tiddler-title='{{!!title}}'] { border: 1px dashed red !important; }

@@ -19,7 +19,10 @@ console.log(`
   wikiLocation: ${addColor(wikiLocation, 'cyan')}
 `);
 
-const localPlugins = ['oeyoews/neotw-cli-info'];
+const localPlugins = [
+  'oeyoews/neotw-cli-info',
+  'oeyoews/tiddlywiki-publish-tiddler',
+];
 
 const onlinePlugins = [
   'oeyoews/neotw-fetch',
@@ -60,7 +63,6 @@ const oeyoewsPlugins = [
   'neotw-info',
   'nprogress',
   'tiddlywiki-modal-ui',
-  'tiddlywiki-publish-tiddler',
   'tiddlywiki-tailwindcss-plus',
   'neotw-notion-gallery',
   'tiddlywiki-tiddler-info',
