@@ -10,9 +10,8 @@ tags: $:/tags/Macro
 \end
 
 \define opublish()
-<!-- inline and o-publish conflict -->
 <div class="inline">
-<$select class="o-publish border-none rounded appearance-none p-0.5 capitalize cursor-pointer" field="publish" tiddler=<<currentTiddler>> tooltip='status' default="status">
+<$select class="border-none rounded appearance-none p-0.5 capitalize cursor-pointer" field="publish" tiddler=<<currentTiddler>> tooltip='status' default="status">
   <option disabled class="bg-teal-400" value="status">❓ status</option>
   <option class="bg-lime-400" value="public">🔥 public ({{{ [field:publish[public]count[]] }}})</option>
   <option class="bg-red-400" value="private">🔐 private ({{{ [field:publish[private]count[]] }}})</option>
