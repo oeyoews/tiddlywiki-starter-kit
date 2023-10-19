@@ -41,6 +41,7 @@ const cmePlugins = [
   'tiddlywiki/codemirror-mode-xml',
   'tiddlywiki/codemirror-mode-javascript',
   'oeyoews/neotw-vimjk',
+  'oeyoews/neotw-placeholder',
 ];
 
 const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
