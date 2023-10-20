@@ -11,13 +11,16 @@ const enableQRCode = process.env.ENABLE_QRCODE === 'true';
 const wikiLocation = process.env.wikiLocation;
 
 const addColor = (enableOption, color = 'green') => chalk[color](enableOption);
-
-console.log(`
-  CODEMIRROR: ${addColor(enableCME)}
-  MARKDOWN: ${addColor(enableMarkdown)}
-  QRCODE: ${addColor(enableQRCode)}
-  wikiLocation: ${addColor(wikiLocation, 'cyan')}
-`);
+console.log(
+  chalk.cyan.bold(`
+#################################
+#  CODEMIRROR: ${addColor(enableCME)}
+#  MARKDOWN: ${addColor(enableMarkdown)}
+#  QRCODE: ${addColor(enableQRCode)}
+#  wikiLocation: ${addColor(wikiLocation, 'cyan')}
+#################################
+`),
+);
 
 const localPlugins = [
   'oeyoews/neotw-cli-info',
