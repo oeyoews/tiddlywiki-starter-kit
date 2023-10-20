@@ -22,22 +22,23 @@ class GalleryWidget extends Widget {
     const { json = 'image-list.json' } = this.attributes;
 
     const data = $tw.wiki.getTiddlerData(json);
-    const iamgesURL = Object.values(data);
+    const imagesURL = Object.entries(data).map(([key, url]) => ({ key, url }));
 
-    const createImageNode = (src) =>
+    const createImageNode = (src, title) =>
       createElement('img', {
         // support spotlight
         class: 'rounded object-cover w-full h-full aspect-video spotlight',
         attributes: {
           src,
           loading: 'lazy',
+          title,
         },
       });
 
     const children = [];
 
-    iamgesURL.forEach((url) => {
-      children.push(createImageNode(url));
+    imagesURL.forEach(({ key: title, url }) => {
+      children.push(createImageNode(url, title));
     });
 
     const domNode = createElement('div', {
