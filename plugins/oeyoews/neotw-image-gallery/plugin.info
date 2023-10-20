@@ -1,0 +1,14 @@
+{
+  "title": "$:/plugins/oeyoews/neotw-image-gallery",
+  "description": "neotw-image-gallery",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.3.0",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "neotw-image-gallery",
+  "dependents": [
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
+  ],
+  "list": "readme"
+}

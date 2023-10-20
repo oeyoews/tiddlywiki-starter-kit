@@ -5,7 +5,7 @@
   "author": "oeyoews <jyao4783@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "newplugin": "./lib/newplugin.ts",
+    "newplugin": "node lib/newplugin.mjs",
     "build": "node lib/build.mjs",
     "build-with-bun": "bun run ./lib/build.ts",
     "format": "prettier  --write ./plugins",
@@ -17,8 +17,10 @@
   },
   "dependencies": {
     "@lint-md/cli": "^2.0.0",
+    "@types/fs-extra": "^11.0.3",
     "ci-info": "^3.9.0",
     "dotenv": "^16.3.1",
+    "fs-extra": "^11.1.1",
     "get-port": "^7.0.0",
     "ora": "^6.3.1",
     "prompts": "^2.4.2",
