@@ -35,6 +35,7 @@ const onlinePlugins = [
   'oeyoews/neotw-notranslate',
 ];
 
+// @deprecated, please use cm6
 const cmePlugins = [
   'tiddlywiki/codemirror',
   'tiddlywiki/codemirror-autocomplete',
@@ -90,7 +91,7 @@ const plugins = [
 ];
 
 enableMarkdown && plugins.push(...markdowPlugins);
-enableCME && localPlugins.push(...cmePlugins);
+// enableCME && localPlugins.push(...cmePlugins);
 
 switch (ci.name) {
   case 'Vercel':
