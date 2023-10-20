@@ -26,7 +26,8 @@ class GalleryWidget extends Widget {
 
     const createImageNode = (src) =>
       createElement('img', {
-        class: 'rounded object-cover w-full h-full aspect-video',
+        // support spotlight
+        class: 'rounded object-cover w-full h-full aspect-video spotlight',
         attributes: {
           src,
           loading: 'lazy',

@@ -1,0 +1,14 @@
+{
+  "title": "$:/plugins/oeyoews/neotw-spotlight",
+  "description": "neotw-spotlight",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.3.0",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "neotw-spotlight",
+  "dependents": [
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
+  ],
+  "list": "readme"
+}
