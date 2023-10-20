@@ -1,14 +1,15 @@
 title: $:/config/EmptyStoryMessage
 
 <center class="flex justify-center my-8">
-    <$oinfo />
+  <$oinfo />
 </center>
 
 <div class="prose prose-indigo max-w-none dark:prose-invert">
   <div class="p-0 m-4">
     <div class="dark:bg-black  p-8 rounded-lg shadow bg-white">
       <h1 class="mb-4">欢迎来到
-				<span class="underline font-extrabold decoration-rose-500 decoration-wavy">Tiddlywiki Starter Kit</span></h1>
+        <span class="underline font-extrabold decoration-rose-500 decoration-wavy">Tiddlywiki Starter Kit</span>
+      </h1>
       <p class="text-[16px] mb-4 indent-8">这是一个使用
         <a target="_blank" href="https://tiddlywiki.com">
           <$iconify icon="simple-icons:tiddlywiki" class="text-black dark:text-white" />
@@ -35,16 +36,19 @@ title: $:/config/EmptyStoryMessage
         <span class="underline decoration-wavy decoration-rose-300 decoration-2"> Iconify </span>.
         <$daylight />
       </p>
-      <div class="flex justify-center">
-      <$button class="hover:scale-105 transition bg-blue-400 text-white p-4 text-[16px] rounded-md hover:bg-blue-500">
-        <$action-navigate $to="GettingStarted" $scroll="yes" />
-        GettingStarted <iconify-icon icon="flat-color-icons:home" />
-      </$button>
-      <$list filter="[{$:/info/url/protocol}match[https:]]">
-      <a href="./offline.html" download="index.html" class="mx-2 p-2 bg-green-300 rounded hover:scale-105 hover:underline transition text-gray-900 inline-block" title="download empty version">
-      <$iconify icon="line-md:download-outline-loop" /> Download HTML
-      </a>
-      </$list>
+      <div class="flex justify-center flex-row space-x-2">
+        <$button
+          class="inline-block bg-indigo-300 rounded hover:scale-105 hover:underline transition text-gray-900 p-4 w-full">
+          GettingStarted <iconify-icon icon="flat-color-icons:home" />
+        </$button>
+        <$list filter="[{$:/info/url/protocol}match[https:]]">
+          <$button
+            class="inline-block bg-green-300 rounded hover:scale-105 hover:underline transition text-gray-900 p-4 w-full">
+            <a href="./offline.html" download="index.html" title="download empty version">Download
+              <$iconify icon="line-md:download-outline-loop" />
+            </a>
+          </$button>
+        </$list>
       </div>
     </div>
   </div>
@@ -52,12 +56,12 @@ title: $:/config/EmptyStoryMessage
 
 
 <$list filter="[{$:/info/url/protocol}match[https:]]">
-<center>
-      <h2>近期更新动态</h2>
-<% if [{$:/info/browser/is/mobile}match[no]] %>
-    <$cards />
-<% else %>
-  移动端不显示近期更新动态卡片
-<% endif %>
-</center>
+  <center>
+    <h2>近期更新动态</h2>
+    <% if [{$:/info/browser/is/mobile}match[no]] %>
+      <$cards />
+      <% else %>
+        移动端不显示近期更新动态卡片
+        <% endif %>
+  </center>
 </$list>
