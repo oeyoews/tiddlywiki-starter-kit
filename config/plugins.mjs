@@ -25,7 +25,6 @@ console.log(
 const localPlugins = [
   'oeyoews/neotw-cli-info',
   'oeyoews/tiddlywiki-publish-tiddler',
-  'oeyoews/neotw-image-gallery',
 ];
 
 const onlinePlugins = [
@@ -55,7 +54,7 @@ const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
 const oeyoewsPlugins = [
   'NPL',
   'neotw-spotlight',
-  'neotw-image-better',
+  'neotw-image-gallery',
   'tiddlywiki-motion',
   'neotw-pwa',
   'neotw-zen-mode',

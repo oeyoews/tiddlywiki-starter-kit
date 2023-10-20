@@ -18,7 +18,7 @@
     "tiddlywiki/pluginlibrary",
     "oeyoews/NPL",
     "oeyoews/neotw-spotlight",
-    "oeyoews/neotw-image-better",
+    "oeyoews/neotw-image-gallery",
     "oeyoews/tiddlywiki-motion",
     "oeyoews/neotw-pwa",
     "oeyoews/neotw-zen-mode",
@@ -41,8 +41,7 @@
     "tiddlywiki/markdown",
     "oeyoews/markdown-kit",
     "oeyoews/neotw-cli-info",
-    "oeyoews/tiddlywiki-publish-tiddler",
-    "oeyoews/neotw-image-gallery"
+    "oeyoews/tiddlywiki-publish-tiddler"
   ],
   "build": {
     "index": [
