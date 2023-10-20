@@ -41,6 +41,7 @@
     "oeyoews/markdown-kit",
     "oeyoews/neotw-cli-info",
     "oeyoews/tiddlywiki-publish-tiddler",
+    "oeyoews/neotw-image-gallery",
     "tiddlywiki/codemirror",
     "tiddlywiki/codemirror-autocomplete",
     "tiddlywiki/codemirror-mode-css",

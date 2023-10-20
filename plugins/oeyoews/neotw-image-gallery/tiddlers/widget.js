@@ -8,7 +8,7 @@ neotw-image-gallery widget
 \*/
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 
-class ExampleWidget extends Widget {
+class GalleryWidget extends Widget {
   constructor(parseTreeNode, options) {
     super(parseTreeNode, options);
   }
@@ -19,16 +19,29 @@ class ExampleWidget extends Widget {
     this.execute();
 
     const createElement = $tw.utils.domMaker;
+    const { json = 'image-list.json' } = this.attributes;
 
-    const btn = createElement('button', {
-      text: 'click me',
-      class: 'rounded p-1',
+    const data = $tw.wiki.getTiddlerData(json);
+    const iamgesURL = Object.values(data);
+
+    const createImageNode = (src) =>
+      createElement('img', {
+        class: 'rounded object-cover w-full h-full aspect-video',
+        attributes: {
+          src,
+          loading: 'lazy',
+        },
+      });
+
+    const children = [];
+
+    iamgesURL.forEach((url) => {
+      children.push(createImageNode(url));
     });
 
     const domNode = createElement('div', {
-      text: 'example',
-      class: 'underline font-bold',
-      children: [btn],
+      class: 'grid grid-cols-1 md:grid-cols-3 gap-4',
+      children,
     });
 
     parent.insertBefore(domNode, nextSibling);
@@ -38,6 +51,6 @@ class ExampleWidget extends Widget {
 
 /**
  * @description neotw-image-gallery widget
- * @param xxx
+ * @param {json}
  */
-exports.test = ExampleWidget;
+exports.gallery = GalleryWidget;
