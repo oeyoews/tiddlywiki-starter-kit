@@ -1,0 +1,10 @@
+title: $:/plugins/oeyoews/workspaces/readme
+
+tiddlywiki workspace manager(WIP)
+
+!! TODO
+
+* add workspaces echarts addon to visual all workspaces
+* maybe need history list to restory last sesstion
+
+{{$:/plugins/oeyoews/workspaces/workspace-manager}}

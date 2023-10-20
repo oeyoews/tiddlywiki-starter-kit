@@ -1,0 +1,11 @@
+title: $:/plugins/oeyoews/workspaces/workspace-manager
+tags: $:/tags/AboveStory
+
+<!-- just for test -->
+<center>
+<small>workspace manager </small>
+</center>
+<center>
+<$workspaces workspace="new"/>
+<$workspaces workspace="previous"/>
+</center>
