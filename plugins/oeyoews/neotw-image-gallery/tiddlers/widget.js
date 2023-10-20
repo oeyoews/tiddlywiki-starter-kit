@@ -22,9 +22,9 @@ class GalleryWidget extends Widget {
     const { json = 'image-list.json' } = this.attributes;
 
     const data = $tw.wiki.getTiddlerData(json);
-    const imagesURL = Object.entries(data).map(([key, url]) => ({ key, url }));
+    const imagesURL = Object.entries(data);
 
-    const createImageNode = (src, title) =>
+    const createImageNode = (title, src) =>
       createElement('img', {
         // support spotlight
         class: 'rounded object-cover w-full h-full aspect-video spotlight',
@@ -37,8 +37,8 @@ class GalleryWidget extends Widget {
 
     const children = [];
 
-    imagesURL.forEach(({ key: title, url }) => {
-      children.push(createImageNode(url, title));
+    imagesURL.forEach(([title, src]) => {
+      children.push(createImageNode(title, src));
     });
 
     const domNode = createElement('div', {

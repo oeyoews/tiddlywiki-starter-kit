@@ -59,11 +59,14 @@ Filetype
 <option value="text/markdown">
 Markdown
 </option>
-<option value="text/vnd.tiddlywiki">
-	Wikitext
-</option>
 <option value="application/javascript">
 	Javascript
+</option>
+<option value="application/json">
+	Json
+</option>
+<option value="text/vnd.tiddlywiki">
+	Wikitext
 </option>
 </$select>
 </$list>
