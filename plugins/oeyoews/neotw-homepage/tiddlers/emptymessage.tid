@@ -40,6 +40,11 @@ title: $:/config/EmptyStoryMessage
         <$action-navigate $to="GettingStarted" $scroll="yes" />
         GettingStarted <iconify-icon icon="flat-color-icons:home" />
       </$button>
+      <$list filter="[{$:/info/url/protocol}match[https:]]">
+      <a href="./offline.html" download="index.html" class="mx-2 p-2 bg-green-300 rounded hover:scale-105 hover:underline transition text-gray-900 inline-block" title="download empty version">
+      <$iconify icon="line-md:download-outline-loop" /> Download HTML
+      </a>
+      </$list>
       </div>
     </div>
   </div>
