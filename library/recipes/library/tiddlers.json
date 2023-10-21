@@ -179,7 +179,7 @@
         "name": "neotw-links-gallery",
         "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
         "list": "readme",
-        "readme": "> 这是一个插件模板的 README\r\n",
+        "readme": "## TODO\r\n\r\n* add quickadd links button on widget",
         "requires-reload": "yes"
     },
     {
