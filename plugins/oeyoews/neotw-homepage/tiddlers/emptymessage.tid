@@ -7,9 +7,9 @@ title: $:/config/EmptyStoryMessage
 <div class="prose prose-indigo max-w-none dark:prose-invert">
   <div class="p-0 m-4">
     <div class="dark:bg-black  p-8 rounded-lg shadow bg-white">
-      <h1 class="mb-4">欢迎来到
-        <span class="underline font-extrabold decoration-rose-500 decoration-wavy">Tiddlywiki Starter Kit</span>
-      </h1>
+<h1 class="mb-4 font-extrabold bg-gradient-to-r from-rose-500 via-purple-500 to-pink-400 text-transparent bg-clip-text textsky-400">
+  欢迎来到 Tiddlywiki Starter Kit
+</h1>
       <p class="text-[16px] mb-4 indent-8">这是一个使用
         <a target="_blank" href="https://tiddlywiki.com">
           <$iconify icon="simple-icons:tiddlywiki" class="text-black dark:text-white" />
