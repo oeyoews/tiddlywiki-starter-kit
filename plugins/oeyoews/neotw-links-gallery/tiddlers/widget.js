@@ -29,9 +29,11 @@ class ListlinksWidget extends Widget {
 
 
     let linkcount = 0;
-    const createTableData = (text, href) => {
+    const createTableData = (text, href, order) => {
       const tr = this.document.createElement('tr');
-      const td = this.document.createElement('td');
+      const orderNode = this.document.createElement('td');
+      const descriptionNode = this.document.createElement('td');
+      const linkNode = this.document.createElement('td');
       if (!href.startsWith('http')) return;
 
       try {
@@ -39,7 +41,7 @@ class ListlinksWidget extends Widget {
         const url = `${protocol}//${hostname}`;
         const createLinkNode = (text, href) =>
           createElement('a', {
-            text: `${text}: ${hostname}`,
+            text: hostname,
             attributes: {
               href,
               title: url,
@@ -47,9 +49,15 @@ class ListlinksWidget extends Widget {
             },
           });
 
-        td.className = 'p-2 bg-gray-200 dark:bg-black';
-        tr.append(td);
-        td.append(createLinkNode(text, href));
+        descriptionNode.className =
+          'p-2 bg-gray-200 dark:bg-black font-bold capitalize';
+        linkNode.className = 'p-2 bg-gray-200 dark:bg-black font-bold';
+        descriptionNode.textContent = text;
+        orderNode.textContent = order;
+        orderNode.className = 'font-bold bg-gray-100 dark:bg-black group-hover:bg-gray-300 group-hover:dark:bg-gray-800 transiton'
+        tr.append(orderNode, descriptionNode, linkNode);
+        tr.className = "group"
+        linkNode.append(createLinkNode(text, href));
       } catch (e) {
         console.warn(e);
       }
@@ -58,18 +66,23 @@ class ListlinksWidget extends Widget {
 
     const createThNode = (caption) => {
       const tr = this.document.createElement('tr');
-      const th = this.document.createElement('th');
-      tr.append(th);
-      th.textContent = `${caption} (${linkcount} links)`;
-      th.className = 'font-bold capitalize';
+      const orderNode = this.document.createElement('th');
+      const descriptionNode = this.document.createElement('th');
+      const linkNode = this.document.createElement('th');
+      tr.append(orderNode, descriptionNode, linkNode);
+      // orderNode.textContent = `${caption} (${linkcount} links)`;
+      orderNode.textContent = 'Order';
+      descriptionNode.textContent = 'Description'
+      linkNode.textContent = 'Link'
+      tr.className = 'font-bold capitalize';
       return tr;
     };
 
     const children = [];
 
     linksURL.forEach(([text, href]) => {
-      children.push(createTableData(text, href));
       linkcount++;
+      children.push(createTableData(text, href, linkcount));
     });
     children.unshift(createThNode(caption));
 
