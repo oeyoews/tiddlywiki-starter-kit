@@ -179,7 +179,7 @@
         "name": "neotw-links-gallery",
         "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
         "list": "readme",
-        "readme": "## TODO\r\n\r\n* add quickadd links button on widget",
+        "readme": "## TODO\r\n\r\n* add quickadd links button on widget\r\n* add description links order for table",
         "requires-reload": "yes"
     },
     {
