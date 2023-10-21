@@ -1,0 +1,17 @@
+title: $:/core/ui/Buttons/edit
+tags: $:/tags/ViewToolbar
+description: Code edit
+caption: {{$:/plugins/oeyoews/codemirror-keymap-vimjk/icon/vim}} edit
+list-before: $:/core/ui/Buttons/close
+
+\whitespace trim
+<$button message="tm-edit-tiddler" tooltip={{$:/language/Buttons/Edit/Hint}} aria-label={{$:/language/Buttons/Edit/Caption}} class=<<tv-config-toolbar-class>>>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+{{$:/plugins/oeyoews/codemirror-keymap-vimjk/icon/vim}}
+</$list>
+<$list filter="[<tv-config-toolbar-text>match[yes]]">
+<span class="tc-btn-text">
+<$text text={{$:/language/Buttons/Edit/Caption}}/>
+</span>
+</$list>
+</$button>
