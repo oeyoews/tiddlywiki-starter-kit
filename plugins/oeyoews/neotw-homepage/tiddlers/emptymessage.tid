@@ -53,7 +53,6 @@ title: $:/config/EmptyStoryMessage
       </div>
     <div class="flex justify-center items-center">
       <$codeblock code="npx create neotw@latest" language="bash"/>
-      <$iconify class="mx-2" />
     </div>
     </div>
   </div>

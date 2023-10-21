@@ -55,6 +55,7 @@ tags: $:/tags/ViewTemplate
 <% endif %>
 </$set>
 
+<$list filter="[all[current]!is[system]]">
 <$select tiddler=<<currentTiddler>> field='type' default='text/markdown' class="lowercase appearance-none border-none m-0 bg-gray-100 dark:bg-black rounded p-0.5">
 <$list filter='[all[shadows+tiddlers]prefix[$:/language/Docs/Types/]each[group]sort[group]]'>
 <$list filter='[all[shadows+tiddlers]prefix[$:/language/Docs/Types/]group{!!group}] +[sort[description]]'>
@@ -63,6 +64,7 @@ tags: $:/tags/ViewTemplate
 </$list>
 </$list>
 </$select>
+</$list>
 
 
 </div>
