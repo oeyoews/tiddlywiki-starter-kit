@@ -15,14 +15,11 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "allowJs": true,
-    "types": [
-      "bun-types" // add Bun global
-    ],
     "baseUrl": ".",
     "paths": {
       "@/*": ["./*"]
     }
   },
-  "exclude": ["plugins_bk", "node_modules"],
+  "exclude": ["node_modules"],
   "include": ["**/*.ts", "**/*.tsx", "**/*.mjs", "lib/pm2-control.js"]
 }
