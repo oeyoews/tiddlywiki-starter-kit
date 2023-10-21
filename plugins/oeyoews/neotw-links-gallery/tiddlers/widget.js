@@ -27,22 +27,32 @@ class ListlinksWidget extends Widget {
     const data = $tw.wiki.getTiddlerData(json) || {};
     const linksURL = Object.entries(data);
 
+
     let linkcount = 0;
     const createTableData = (text, href) => {
-      const createLinkNode = (text, href) =>
-        createElement('a', {
-          text,
-          attributes: {
-            href,
-            target: '_blank',
-          },
-        });
-
       const tr = this.document.createElement('tr');
       const td = this.document.createElement('td');
-      td.className = 'p-2 bg-gray-200 dark:bg-black capitalize';
-      tr.append(td);
-      td.append(createLinkNode(text, href));
+      if (!href.startsWith('http')) return;
+
+      try {
+        const { protocol, hostname } = new URL(href);
+        const url = `${protocol}//${hostname}`;
+        const createLinkNode = (text, href) =>
+          createElement('a', {
+            text: `${text}: ${hostname}`,
+            attributes: {
+              href,
+              title: url,
+              target: '_blank',
+            },
+          });
+
+        td.className = 'p-2 bg-gray-200 dark:bg-black';
+        tr.append(td);
+        td.append(createLinkNode(text, href));
+      } catch (e) {
+        console.warn(e);
+      }
       return tr;
     };
 
