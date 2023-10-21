@@ -27,6 +27,7 @@ class ListlinksWidget extends Widget {
     const data = $tw.wiki.getTiddlerData(json) || {};
     const linksURL = Object.entries(data);
 
+    let linkcount = 0;
     const createTableData = (text, href) => {
       const createLinkNode = (text, href) =>
         createElement('a', {
@@ -39,7 +40,7 @@ class ListlinksWidget extends Widget {
 
       const tr = this.document.createElement('tr');
       const td = this.document.createElement('td');
-      td.className = 'p-2 bg-gray-200 dark:bg-black';
+      td.className = 'p-2 bg-gray-200 dark:bg-black capitalize';
       tr.append(td);
       td.append(createLinkNode(text, href));
       return tr;
@@ -49,17 +50,18 @@ class ListlinksWidget extends Widget {
       const tr = this.document.createElement('tr');
       const th = this.document.createElement('th');
       tr.append(th);
-      th.textContent = caption;
-      th.className = 'font-bold';
+      th.textContent = `${caption} (${linkcount} links)`;
+      th.className = 'font-bold capitalize';
       return tr;
     };
 
     const children = [];
 
-    children.push(createThNode(caption));
     linksURL.forEach(([text, href]) => {
       children.push(createTableData(text, href));
+      linkcount++;
     });
+    children.unshift(createThNode(caption));
 
     const domNode = createElement('table', {
       children,
