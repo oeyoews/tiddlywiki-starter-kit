@@ -2,16 +2,10 @@ title: $:/plugins/oeyoews/neotw-notion-gallery/ninecard
 tags: $:/tags/Macro
 
 \procedure card(title)
-<div class="rounded-2xl shadow overflow-hidden not-prose hover:scale-105 transition">
-	<div class="">
-	<img class="rounded-t-xl w-full aspect-video m-0 spotlight cursor-pointer" loading="lazy" src={{{ [<title>addprefix[https://source.unsplash.com/random/1920x1080?fm=blurhash&]] }}} />
-	</div>
-	<div class="p-4 pt-0 pb-4">
-	<$avatar class="h-8 shadow -mt-12 outline outline-2 outline-white"/>
-	<div class="text-sm">
-<$link to=<<title>> class="text-indigo-600 capitalize" />
-	</div>
-	</div>
+<div class="rounded-xl not-prose transition relative group w-full aspect-video overflow-hidden shadow duration-300">
+	<img class="aspectvideo w-full rounded-xl spotlight cursor-pointer" loading="lazy" src={{{ [<title>addprefix[https://source.unsplash.com/random/1920x1080?fm=blurhash&]] }}} />
+	<$avatar class="h-8 shadow outline outline-2 outline-white absolute top-2 left-2 scale-0 group-hover:scale-100"/>
+<$link to=<<title>> class="text-indigo-600 capitalize absolute text-white bottom-0 left-0 group-hover:text-sky-400 backdrop-blur-lg rounded p-2 w-full"/>
 </div>
 \end
 
