@@ -4,7 +4,7 @@ tags: $:/tags/Macro
 \procedure card(title)
 <div class="rounded-2xl shadow overflow-hidden not-prose hover:scale-105 transition">
 	<div class="">
-	<img src={{{ [<title>addprefix[https://source.unsplash.com/random/1920x1080?fm=blurhash&]] }}} class="rounded-t-xl aspect-video m-0 spotlight cursor-pointer" loading="lazy"/>
+	<img class="rounded-t-xl w-full aspect-video m-0 spotlight cursor-pointer" loading="lazy" src={{{ [<title>addprefix[https://source.unsplash.com/random/1920x1080?fm=blurhash&]] }}} />
 	</div>
 	<div class="p-4 pt-0 pb-4">
 	<$avatar class="h-8 shadow -mt-12 outline outline-2 outline-white"/>
