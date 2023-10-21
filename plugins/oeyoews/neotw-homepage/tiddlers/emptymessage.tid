@@ -6,32 +6,22 @@ title: $:/config/EmptyStoryMessage
 
 <div class="prose prose-indigo max-w-none dark:prose-invert">
   <div class="p-0 m-4">
-    <div class="p-8 rounded-lg">
+    <div class="">
 <h1 class="mb-4 font-extrabold bg-gradient-to-r from-rose-500 via-purple-500 to-pink-400 text-transparent bg-clip-text text-5xl text-center">
-  Welcome to Tiddlywiki Starter Kit
+  Welcome to TiddlyWiki Starter Kit
 </h1>
-      <p class="text-lg m-8 indent-8">这是一个使用
+      <p class="text-lg text-center">
+      This is an online website built using
         <a target="_blank" href="https://tiddlywiki.com">
           <$iconify icon="simple-icons:tiddlywiki" class="text-black dark:text-white" />
-          TiddlyWiki5
-          <$iconify icon="system-uicons:arrow-top-right" />
-        </a>,
+        </a>
         <a target="_blank" href="https://tailwindcss.com">
           <$iconify icon="devicon:tailwindcss" />
-          Tailwindcss
-          <$iconify icon="system-uicons:arrow-top-right" />
         </a>
-        和
         <a target="_blank" href="https://echarts.apache.org">
           <$iconify icon="simple-icons:apacheecharts" class="text-rose-600" />
-          Echarts
-          <$iconify icon="system-uicons:arrow-top-right" />
-        </a>创建的网站。 同时支持
-        <$iconify-icon icon="vscode-icons:file-type-drawio" />
-        <span class="underline decoration-wavy decoration-indigo-300 hover:decoration-indigo-400 decoration-2"> Drawio
-        </span>,
-        <$iconify-icon icon="vscode-icons:file-type-mermaid" />
-        <span class="underline decoration-wavy decoration-sky-300 decoration-2"> Mermaid </span>,
+        </a>.
+        and also support
         <$iconify-icon icon="line-md:iconify1" />
         <span class="underline decoration-wavy decoration-rose-300 decoration-2"> Iconify </span>.
         <$daylight class="w-4"/>
