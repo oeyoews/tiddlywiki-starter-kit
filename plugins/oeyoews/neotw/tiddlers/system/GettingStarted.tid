@@ -1,6 +1,5 @@
 title: GettingStarted
-cn-title: Neotw 介绍
-description: Neotw 介绍
+description: tiddlywiki starter kit homepage
 
 {{sevenday}}
 {{tagpie}}
@@ -15,6 +14,5 @@ description: Neotw 介绍
 本地wiki不加载相关线上卡片.
 </center>
 <% endif %>
-
 
 {{tags}}
