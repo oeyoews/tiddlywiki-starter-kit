@@ -1,8 +1,10 @@
 title: $:/plugins/oeyoews/neotw-zen-mode/FileTypeSelector
-tags: $:/tags/EditTemplate
 caption: filetype selector
 
 <!-- $:/tags/ViewTemplate -->
+<!-- tags: $:/tags/EditTemplate -->
+
+<!-- @see: https://github.com/oeyoews/tiddlywiki-starter-kit/issues/138 -->
 
 <!-- https://github.com/Jermolene/TiddlyWiki5/pull/7764 -->
 <!-- group -->
@@ -25,13 +27,13 @@ Markdown
 <$list filter="[all[current]!type[text/markdown]]">
 <$select tiddler=<<currentTiddler>> field='type' default='text/markdown' class="appearance-none border-none m-0 bg-gray-100 dark:bg-black rounded p-0.5">
 <$list filter='[all[shadows+tiddlers]prefix[$:/language/Docs/Types/]each[group]sort[group]]'>
-<optgroup label={{!!group}}>
+<!-- <optgroup label={{!!group}}> -->
 <$list filter='[all[shadows+tiddlers]prefix[$:/language/Docs/Types/]group{!!group}] +[sort[description]]'>
 <option value={{!!name}}><$view field='description'><$view field='title'/></$view>
 <!-- (<$view field='name'/>) -->
 </option>
 </$list>
-</optgroup>
+<!-- </optgroup> -->
 </$list>
 </$select>
 </$list>

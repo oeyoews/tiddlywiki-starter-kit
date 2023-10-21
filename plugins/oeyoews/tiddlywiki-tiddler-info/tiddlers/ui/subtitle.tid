@@ -42,34 +42,27 @@ tags: $:/tags/ViewTemplate
 
 <$set name='type' value={{!!type}}>
 <% if [<type>match[text/markdown]] %>
-	<$iconify icon="simple-icons:markdown" />
+	<$iconify icon="skill-icons:markdown-dark" />
 <% elseif [<type>match[text/vnd.tiddlywiki]] %>
 <$iconify icon="simple-icons:tiddlywiki" />
 <% elseif [<type>match[application/javascript]] %>
-<$iconify icon="simple-icons:javascript" />
+<$iconify icon="skill-icons:javascript" />
+<% elseif [<type>match[image/png]] %>
+<$iconify icon="vscode-icons:file-type-image" />
+<% elseif [<type>match[application/json]] %>
+<$iconify icon="carbon:json" />
 <% else %>
 <% endif %>
 </$set>
 
-<$list filter="[all[current]!is[system]!is[binary]]">
-<$select field="type" tooltip="选择文件类型" class="appearance-none border-none m-0 bg-gray-100 dark:bg-black rounded p-0.5" default='filetype'>
-<option disabled value='filetype' tiddler=<<currentTiddler>> >
-Filetype
+<$select tiddler=<<currentTiddler>> field='type' default='text/markdown' class="lowercase appearance-none border-none m-0 bg-gray-100 dark:bg-black rounded p-0.5">
+<$list filter='[all[shadows+tiddlers]prefix[$:/language/Docs/Types/]each[group]sort[group]]'>
+<$list filter='[all[shadows+tiddlers]prefix[$:/language/Docs/Types/]group{!!group}] +[sort[description]]'>
+<option value={{!!name}}><$view field='description'><$view field='title'/></$view>
 </option>
-<option value="text/markdown">
-Markdown
-</option>
-<option value="application/javascript">
-	Javascript
-</option>
-<option value="application/json">
-	Json
-</option>
-<option value="text/vnd.tiddlywiki">
-	Wikitext
-</option>
-</$select>
 </$list>
+</$list>
+</$select>
 
 
 </div>
