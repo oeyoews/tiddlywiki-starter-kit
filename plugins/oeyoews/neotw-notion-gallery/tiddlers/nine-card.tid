@@ -9,9 +9,9 @@ tags: $:/tags/Macro
 </div>
 \end
 
-\procedure ninecards()
+\procedure ninecards(subfilter:"[!is[system]]", limit:9)
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-<$list filter='[!is[system]!sort[modified]!has[draft.of]limit[9]]' >
+<$list filter='[!is[system]!sort[modified]!has[draft.of]subfilter<subfilter>limit<limit>]'  >
 <$transclude $variable="card" title={{!!title}} />
 </$list>
 </div>
