@@ -13,7 +13,7 @@
 - 🎨 Powered by Tailwind CSS: Utilizes Tailwind CSS for responsive design, minimizing the need for extensive style files.
 - 📚️ Multiple wiki support: Supports custom folders for different purposes such as work, life, reading, etc., making switching between them effortless.
 - 🚀 Quick operations: Provides keyboard shortcuts and full keyboard navigation for efficient workflow.
-  🔧 Simplified configuration: Easily customize the TiddlyWiki Starter Kit by editing the .env file.
+- 🔧 Simplified configuration: Easily customize the TiddlyWiki Starter Kit by editing the .env file.
 - 💡 One-click installation: Quickly install the TiddlyWiki Starter Kit using the npm create create-neotw-app command.
 
 ## Requirements
