@@ -22,7 +22,12 @@ class YoutubeWidget extends Widget {
 
     const createElement = $tw.utils.domMaker;
 
-    const { youtubeId = 'o7GyFa90klg', playlist, url } = this.attributes;
+    const {
+      youtubeId = 'o7GyFa90klg',
+      playlist,
+      url,
+      yid = youtubeId,
+    } = this.attributes;
 
     const prefix = 'https://www.youtube.com/embed/';
 
@@ -30,7 +35,7 @@ class YoutubeWidget extends Widget {
         ? `${prefix}videoseries?list=${youtubeId}`
         : `${prefix}${youtubeId}`; */
     const midleUrl = playlist ? 'videoseries?list=' : '';
-    const src = url || prefix + midleUrl + youtubeId;
+    const src = url || prefix + midleUrl + yid;
 
     // Create an object to represent the iframe attributes
     const iframeAttributes = {
@@ -48,7 +53,8 @@ class YoutubeWidget extends Widget {
     const iframeNode = this.document.createElement('iframe');
 
     const domNode = createElement('div', {
-      class: 'flex justify-center item-center my-4',
+      class:
+        'flex justify-center item-center my-4 blur-lg hover:blur-none transition',
       children: [iframeNode],
     });
 
@@ -61,6 +67,6 @@ class YoutubeWidget extends Widget {
   }
 }
 
+exports.video = YoutubeWidget;
 exports.youtube = YoutubeWidget;
 exports.yt = YoutubeWidget;
-exports.video = YoutubeWidget;
