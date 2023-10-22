@@ -21,12 +21,12 @@ class ListlinksWidget extends Widget {
 
     const createElement = $tw.utils.domMaker;
     const { json = 'list-links.json' } = this.attributes;
-    const { caption } =
-      $tw.wiki.getTiddler(json).fields || {}
+    const { caption } = $tw.wiki.getTiddler(json).fields || {};
+    const isStoryRiver = this.getVariable('storyTiddler') !== undefined;
+    console.log(isStoryRiver, 'xx');
 
     const data = $tw.wiki.getTiddlerData(json) || {};
     const linksURL = Object.entries(data);
-
 
     let linkcount = 0;
     const createTableData = (text, href, order) => {
@@ -54,9 +54,13 @@ class ListlinksWidget extends Widget {
         linkNode.className = 'p-2 bg-gray-200 dark:bg-black font-bold';
         descriptionNode.textContent = text;
         orderNode.textContent = order;
-        orderNode.className = 'font-bold bg-gray-100 dark:bg-black group-hover:bg-gray-300 group-hover:dark:bg-gray-800 transiton'
-        tr.append(orderNode, descriptionNode, linkNode);
-        tr.className = "group"
+        orderNode.className =
+          'font-bold bg-gray-100 dark:bg-black group-hover:bg-gray-300 group-hover:dark:bg-gray-800 transiton';
+        const children = [descriptionNode, linkNode];
+        isStoryRiver && children.unshift(orderNode);
+        tr.append(...children);
+
+        tr.className = 'group';
         linkNode.append(createLinkNode(text, href));
       } catch (e) {
         console.warn(e);
@@ -69,11 +73,13 @@ class ListlinksWidget extends Widget {
       const orderNode = this.document.createElement('th');
       const descriptionNode = this.document.createElement('th');
       const linkNode = this.document.createElement('th');
-      tr.append(orderNode, descriptionNode, linkNode);
-      // orderNode.textContent = `${caption} (${linkcount} links)`;
+
+      const children = [orderNode, descriptionNode, linkNode];
+      tr.append(...children);
+
       orderNode.textContent = 'Order';
-      descriptionNode.textContent = 'Description'
-      linkNode.textContent = 'Link'
+      descriptionNode.textContent = 'Description';
+      linkNode.textContent = 'Link';
       tr.className = 'font-bold capitalize';
       return tr;
     };
@@ -84,7 +90,8 @@ class ListlinksWidget extends Widget {
       linkcount++;
       children.push(createTableData(text, href, linkcount));
     });
-    children.unshift(createThNode(caption));
+
+    isStoryRiver && children.unshift(createThNode(caption));
 
     const domNode = createElement('table', {
       children,
