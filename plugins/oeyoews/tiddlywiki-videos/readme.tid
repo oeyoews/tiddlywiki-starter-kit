@@ -4,16 +4,11 @@ title: $:/plugins/oeyoews/tiddlywiki-videos/readme
 
 !! Usage
 
-
 ```wikitext
-<$youtube youtubeId="o7GyFa90klg" />
-<$youtube youtubeId="PLjNhkoz3yGwG9ISeHEYsdUSQdQarKJ8u3" playlist/>
-<$youtube url='' />
-// support url, such as bilibili
+<$video yid="o7GyFa90klg" />
+<$video bid='' />
+<$video url='' />
 ```
-
-<$youtube youtubeId="o7GyFa90klg" />
-<$youtube youtubeId="PLjNhkoz3yGwG9ISeHEYsdUSQdQarKJ8u3" playlist/>
 
 !! Ref
 

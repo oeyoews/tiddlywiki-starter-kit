@@ -24,18 +24,36 @@ class YoutubeWidget extends Widget {
 
     const {
       youtubeId = 'o7GyFa90klg',
-      playlist,
       url,
+      bid,
       yid = youtubeId,
+      title,
     } = this.attributes;
 
-    const prefix = 'https://www.youtube.com/embed/';
+    // 创建一个对象来映射不同视频来源
+    const videoSources = {
+      youtube: {
+        prefix: 'https://www.youtube.com/embed/',
+        id: yid,
+      },
+      bilibili: {
+        prefix: 'https://player.bilibili.com/player.html?aid=',
+        id: bid,
+      },
+    };
 
-    /* const iframeSrc = playlist
-        ? `${prefix}videoseries?list=${youtubeId}`
-        : `${prefix}${youtubeId}`; */
-    const midleUrl = playlist ? 'videoseries?list=' : '';
-    const src = url || prefix + midleUrl + yid;
+    const isBilibili = this.hasAttribute('bid');
+    const isYouTube =
+      this.hasAttribute('yid') || this.hasAttribute('youtubeId');
+
+    const selectedSource = isBilibili
+      ? videoSources.bilibili
+      : videoSources.youtube;
+
+    const { prefix, id } = selectedSource;
+
+    // 如果没有bid或yid属性，则使用url
+    const src = isBilibili || isYouTube ? prefix + id : url;
 
     // Create an object to represent the iframe attributes
     const iframeAttributes = {
@@ -44,17 +62,16 @@ class YoutubeWidget extends Widget {
       height: 450,
       frameborder: 0,
       allowfullscreen: '',
-      class: 'border-none shadow-lg rounded-lg', // w-full
+      class: 'border-none shadow rounded-lg',
       allowsInlineMediaPlayback: 'true',
       playsinline: '1',
-      title: 'youtube video', // example attribute
+      title: this.getVariable('currentTiddler') || 'video',
     };
 
     const iframeNode = this.document.createElement('iframe');
 
     const domNode = createElement('div', {
-      class:
-        'flex justify-center item-center my-4 blur-lg hover:blur-none transition',
+      class: 'my-4 blur hover:blur-none transition mx-auto text-center',
       children: [iframeNode],
     });
 
