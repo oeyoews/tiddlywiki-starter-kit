@@ -4,17 +4,12 @@
     {
       "name": "tiddlywiki-starter-kit",
       "script": "./lib/startup.mjs",
-      "watch": [
-        "./plugins",
-        "./themes"
-      ],
+      "watch": ["./plugins", "./themes"],
       "max_memory_restart": "1024M",
       "max_resart": 5,
       "exec_mode": "cluster",
       "cron_restart": "0 */6 * * *",
-      "ignore_watch": [
-        "./tiddlers"
-      ],
+      "ignore_watch": ["./tiddlers"],
       "cwd": "./",
       "watch_delay": 100,
       "log_file": "./.logs/combined.outerr.log",

@@ -10,8 +10,9 @@ function createCard(question, answer) {
 
   function iconify(icon = 'flat-color-icons:questions', visible = true) {
     return createElement('iconify-icon', {
-      class: `absolute fixed top-2 left-2 transition-all duration-300 ease-in-out ${visible ? '' : 'scale-0'
-        }`,
+      class: `absolute fixed top-2 left-2 transition-all duration-300 ease-in-out ${
+        visible ? '' : 'scale-0'
+      }`,
       attributes: {
         icon,
       },
