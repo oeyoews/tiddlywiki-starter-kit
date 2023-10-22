@@ -56,7 +56,8 @@ Code block node widget
       }
 
       // patch: must be called after postrender
-      domNode.className = 'relative group p-1 bg-neutral-200/70 dark:bg-gray-400';
+      domNode.className =
+        'relative group p-1 bg-neutral-200/70 dark:bg-gray-400';
       codeNode.textContent && domNode.appendChild(copyButton);
       copyButton?.classList?.add(...classNames.split(' '));
       // https://tiddlywiki.com/#View%20Template%20Body%20Cascade:%5B%5BView%20Template%20Body%20Cascade%5D%5D%20%24%3A%2Fcore%2Fui%2FViewTemplate%2Fbody%2Fplugin

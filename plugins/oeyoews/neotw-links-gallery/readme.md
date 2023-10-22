@@ -1,5 +1,6 @@
 ## TODO
 
-* add quickadd links button on widget
-- [ ] add description links order for table
-- [ ] support revese
+- add quickadd links button on widget
+
+* [ ] add description links order for table
+* [ ] support revese
