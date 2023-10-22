@@ -28,7 +28,7 @@
     "tiged": "^2.12.5"
   },
   "devDependencies": {
-    "@types/prompts": "^2.4.6",
+    "@types/prompts": "^2.4.7",
     "address": "^1.2.2",
     "chalk": "^5.3.0",
     "cross-spawn": "^7.0.3",
