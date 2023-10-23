@@ -24,7 +24,7 @@ title: $:/config/EmptyStoryMessage
         and also support
         <$iconify-icon icon="line-md:iconify1" />
         <span class="underline decoration-wavy decoration-rose-300 decoration-2"> Iconify </span>.
-        <$daylight class="w-4"/>
+         <span class="scale-125 mx-2 inline-block">{{$:/plugins/oeyoews/commandpalette/cmd}}</span> <$daylight class="w-3 mx-2"/>
       </p>
       <div class="flex justify-center flex-row space-x-2 block">
         <$button

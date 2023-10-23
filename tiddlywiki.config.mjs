@@ -18,7 +18,14 @@ export default function generateTiddlyWikiInfo() {
       'tiddlywiki/vanilla', // vanilla 主题, 必选
       'nico/notebook', // nico 主题, 必选
     ],
-    includeWikis: [{ 'read-only': false, path: wikiLocation }], // wiki need .info file to like a wiki folder
+    includeWikis: [
+      { 'read-only': false, path: wikiLocation },
+      // TODO: 动态检查目录是否存在以及是否是一个wiki
+      // {
+      //   'read-only': true,
+      //   path: './books',
+      // },
+    ], // wiki need .info file to like a wiki folder
     plugins,
     build,
     /** @type {import('tw5-typed').ITiddlyWikiInfoJSONConfig} */
