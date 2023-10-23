@@ -23,11 +23,12 @@ class SpotlightWidget extends Widget {
       require('spotlight.bundle.js');
     }
 
-    const { src, title, alt } = this.attributes;
+    const { src, title = '', alt = '', classname } = this.attributes;
     const createElement = $tw.utils.domMaker;
 
     const domNode = createElement('img', {
       attributes: {
+        class: classname + ' not-prose rounded',
         src,
         title,
         alt,
