@@ -5,7 +5,7 @@ module-type: library
 
 \*/
 module.exports = {
-  status: 'success',
+  status: 'success', // error, warning
   title: 'Notify Title',
   text: 'Notify text lorem ipsum',
   effect: 'slide', // fade
@@ -19,5 +19,5 @@ module.exports = {
   gap: 20,
   distance: 20,
   type: 1, // 1, 2, 3
-  position: 'right top',
+  position: 'right top', // top bottom center // left right
 };
