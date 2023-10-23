@@ -8,13 +8,22 @@ export
 const html2canvas = require('html2canvas.min.js');
 
 module.exports = function exportPng(event) {
+  const eventSelector = event.paramObject?.selector;
+  if (!this.document.querySelector(eventSelector)) {
+    $tw.wiki.addTiddler({
+      title: '$:/temp/export-png',
+      text: `不存在 ${eventSelector} 节点, 操作取消`,
+    });
+    $tw.notifier.display('$:/temp/export-png');
+    return;
+  }
+  const title = event.paramObject?.title || event.tiddlerTitle;
   const downloadSvg = $tw.wiki.getTiddlerText(
     '$:/plugins/oeyoews/tiddlywiki-tid2png/download.svg',
   );
 
   typeof NProgress !== 'undefined' && NProgress.start();
-  const title = event.paramObject?.title || event.tiddlerTitle;
-  const selector = `[data-tiddler-title="${title}"]`;
+  const selector = eventSelector || `[data-tiddler-title="${title}"]`;
   // html2canvas 不支持 cloneNode, 在widget中可以直接移除popup,因为widget会重新渲染, popup 会自动恢复? 但是这是一个listener, 不建议直接修改dom;
   // 下面使用了hidden隐藏titlebar元素, 实际页面不会被用户感知到有所抖动(由于html2canvas是异步)
   const element = document.querySelector(selector);
