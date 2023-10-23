@@ -7,8 +7,6 @@ notify widget
 
 \*/
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
-// const defaultOptions = require('./options');
-// const { Notify } = require('simple-notify.min.js');
 
 class NotifyWidget extends Widget {
   render(parent, nextSibling) {

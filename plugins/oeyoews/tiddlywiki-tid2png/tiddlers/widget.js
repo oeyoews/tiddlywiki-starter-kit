@@ -15,19 +15,19 @@ class Tid2PngWidget extends Widget {
     this.computeAttributes();
     this.execute();
 
-    const { text = 'export png', selector } = this.attributes;
+    const options = this.attributes;
     const title = this.getVariable('currentTiddler');
 
     const createElement = $tw.utils.domMaker;
     const buttonNode = createElement('button', {
-      text,
+      text: options.text || title,
     });
 
     buttonNode.onclick = () => {
       this.dispatchEvent({
         type: 'om-export-png',
+        paramObject: options,
         tiddlerTitle: title,
-        selector,
       });
     };
 
