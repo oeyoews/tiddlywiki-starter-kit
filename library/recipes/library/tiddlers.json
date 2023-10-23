@@ -237,7 +237,7 @@
         "name": "neotw-spotlight",
         "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
         "list": "readme",
-        "readme": "> 这是一个插件模板的 README\n",
+        "readme": "## spotlight\n\n## params\n\n> src, title, alt\n\n",
         "requires-reload": "yes"
     },
     {
