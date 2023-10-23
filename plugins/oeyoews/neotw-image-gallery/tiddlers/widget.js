@@ -7,6 +7,7 @@ neotw-image-gallery widget
 
 \*/
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
+const createImage = require('./createImage');
 
 class GalleryWidget extends Widget {
   constructor(parseTreeNode, options) {
@@ -24,21 +25,10 @@ class GalleryWidget extends Widget {
     const data = $tw.wiki.getTiddlerData(json);
     const imagesURL = Object.entries(data);
 
-    const createImageNode = (title, src) =>
-      createElement('img', {
-        // support spotlight
-        class: 'rounded object-cover w-full h-full aspect-video spotlight',
-        attributes: {
-          src,
-          loading: 'lazy',
-          title,
-        },
-      });
-
     const children = [];
 
     imagesURL.forEach(([title, src]) => {
-      children.push(createImageNode(title, src));
+      children.push(createImage(title, src));
     });
 
     const domNode = createElement('div', {
@@ -48,6 +38,9 @@ class GalleryWidget extends Widget {
 
     parent.insertBefore(domNode, nextSibling);
     this.domNodes.push(domNode);
+  }
+  refresh() {
+    return false;
   }
 }
 

@@ -1,1 +1,6 @@
-> 这是一个插件模板的 README
+## spotlight
+
+## params
+
+> src, title, alt
+
