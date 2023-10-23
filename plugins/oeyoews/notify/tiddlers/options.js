@@ -8,7 +8,7 @@ module.exports = {
   status: 'success', // error, warning
   title: 'Notify Title',
   text: '',
-  effect: 'slide', // fade
+  effect: 'fade', // slide, fade // NOTE: slide on safari will shrink
   speed: 300,
   customClass: null,
   customIcon: null,
