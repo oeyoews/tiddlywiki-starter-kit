@@ -7,7 +7,7 @@ module-type: library
 module.exports = {
   status: 'success', // error, warning
   title: 'Notify Title',
-  text: 'Notify text lorem ipsum',
+  text: '',
   effect: 'slide', // fade
   speed: 300,
   customClass: null,
