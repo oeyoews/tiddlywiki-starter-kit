@@ -17,7 +17,6 @@
     "tiddlywiki/browser-sniff",
     "tiddlywiki/pluginlibrary",
     "oeyoews/notify",
-    "oeyoews/tiddlywiki-tid2png",
     "oeyoews/NPL",
     "oeyoews/neotw-spotlight",
     "oeyoews/neotw-image-gallery",
@@ -44,7 +43,8 @@
     "tiddlywiki/markdown",
     "oeyoews/markdown-kit",
     "oeyoews/neotw-cli-info",
-    "oeyoews/tiddlywiki-publish-tiddler"
+    "oeyoews/tiddlywiki-publish-tiddler",
+    "oeyoews/tiddlywiki-tid2png"
   ],
   "build": {
     "index": [
