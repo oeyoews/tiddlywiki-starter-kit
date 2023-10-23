@@ -106,19 +106,27 @@ Code block node widget
         copyButton.title = `${href} 剪切板不可用`;
       } */
 
-      let clipboardTimer;
+      // let clipboardTimer;
       copyButton.addEventListener('click', () => {
-        clearTimeout(clipboardTimer);
+        // clearTimeout(clipboardTimer);
         // clipboard api 不会向用户发出询问, 在不安全的上下文中(0.0.0.0), clipboard api 不会被允许
         const copyToClipboard = $tw.utils.copyToClipboard;
         copyToClipboard(codeNode.textContent, {
           doNotNotify: true,
         });
-        copyButton.textContent = 'copied';
-        clipboardTimer = setTimeout(() => {
-          copyButton.textContent = fileType;
-          copyButton.appendChild(fileIcon);
-        }, 1000);
+        // TODO: add judge
+        this.parentWidget.dispatchEvent({
+          type: 'om-notify',
+          paramObject: {
+            title: '复制成功',
+            text: '',
+          },
+        });
+        // copyButton.textContent = 'copied';
+        // clipboardTimer = setTimeout(() => {
+        //   copyButton.textContent = fileType;
+        //   copyButton.appendChild(fileIcon);
+        // }, 1000);
         /* navigator?.clipboard?.writeText(codeNode.textContent).then(() => {
           copyButton.textContent = 'copied';
           clipboardTimer = setTimeout(() => {
