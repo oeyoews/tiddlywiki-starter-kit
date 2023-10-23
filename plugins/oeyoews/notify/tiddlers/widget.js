@@ -25,10 +25,9 @@ class NotifyWidget extends Widget {
     });
 
     buttonNode.onclick = () => {
-      // new Notify(Object.assign({}, defaultOptions, options));
       this.parentWidget.dispatchEvent({
         type: 'om-notify',
-        title: 'hihhh',
+        paramObject: options,
       });
     };
 

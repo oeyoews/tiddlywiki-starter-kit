@@ -8,7 +8,7 @@ module.exports = {
   status: 'success',
   title: 'Notify Title',
   text: 'Notify text lorem ipsum',
-  effect: 'fade',
+  effect: 'slide', // fade
   speed: 300,
   customClass: null,
   customIcon: null,
@@ -18,6 +18,6 @@ module.exports = {
   autotimeout: 3000,
   gap: 20,
   distance: 20,
-  type: 1,
+  type: 1, // 1, 2, 3
   position: 'right top',
 };
