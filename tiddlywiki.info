@@ -16,6 +16,7 @@
     "tiddlywiki/highlight",
     "tiddlywiki/browser-sniff",
     "tiddlywiki/pluginlibrary",
+    "oeyoews/notify",
     "oeyoews/NPL",
     "oeyoews/neotw-spotlight",
     "oeyoews/neotw-image-gallery",

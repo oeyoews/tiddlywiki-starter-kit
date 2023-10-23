@@ -26,13 +26,22 @@ wiki.setTiddlerData(title, data, fields, options);
 // dom
 $tw.utils.domMaker; // createElement
 
-// ui
-$tw.notifier(); // send notification
+wiki.addTiddler(
+  new $tw.Tiddler({
+    title: 'title content',
+    text: 'text content',
+  }),
+);
+wiki.addTiddler({
+  title: 'title content',
+  text: 'text content',
+});
+$tw.notifier.display(tiddler); // send notification
 $tw.modal.display(title); // show a dialog
 
 // widget
-this.getVariable('currentTiddler');
-获取当前条目名称;
+this.getVariable('currentTiddler'); // 获取当前条目名称;
+this.getVariable('storyTiddler'); // 判断是否是处于story river
 
 /** class
  *
