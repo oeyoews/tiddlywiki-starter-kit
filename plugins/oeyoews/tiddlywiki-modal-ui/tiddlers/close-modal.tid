@@ -1,6 +1,7 @@
-title: $:/plugins/oeyoews/tiddlywiki-modal-ui/close-modal
+title: $:/esc
 
-<div class="flex justify-end">
+<div class="flex justify-between">
+{{!!caption}}
 <$button class="bg-transparent">
   <span class="hover:bg-rose-200 rounded px-2 py-1 text-xs">Esc</span>
 <$action-sendmessage $message="tm-close-tiddler" $param=<<currentTiddler>>/>

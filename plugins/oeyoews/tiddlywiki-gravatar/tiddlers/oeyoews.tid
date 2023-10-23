@@ -1,6 +1,6 @@
 title: oeyoews
 mask-closable: yes
-subtitle: {{$:/plugins/oeyoews/tiddlywiki-modal-ui/close-modal}}
+subtitle: {{||$:/esc}}
 type: text/markdown
 class: o-tm
 

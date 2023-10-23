@@ -1,7 +1,8 @@
 title: $:/plugins/oeyoews/motion/Help
 class: motion-help o-tm
-subtitle: Keyboard shortcuts {{$:/plugins/oeyoews/tiddlywiki-modal-ui/close-modal}}
+subtitle: {{||$:/esc}}
 mask-closable: yes
+caption: Keyboard shortcuts
 
 \define shortcut(shortcut)
 <$set name=kbd filter="[enlist:raw{$:/plugins/oeyoews/motion/config/Shortcuts/$shortcut$/Key}addprefix[<kbd>]addsuffix[</kbd>]]">
