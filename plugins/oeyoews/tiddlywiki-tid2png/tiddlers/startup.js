@@ -18,7 +18,10 @@ tid2pdf module
   exports.startup = () => {
     const exportPng = require('./export-png.js');
     $tw.rootWidget.addEventListener('om-export-png', (event) => {
-      exportPng(event);
+      const tiddlerTitle = event.tiddlerTitle;
+      const selector = event.selector;
+      const { customSelector } = event.paramObject || {};
+      exportPng(tiddlerTitle, customSelector || selector);
     });
   };
 })();

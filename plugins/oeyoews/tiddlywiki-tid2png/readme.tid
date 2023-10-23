@@ -3,17 +3,15 @@ description: ~TiddlyWiki Tid2png
 
 <div class="prose max-w-none">
 
-> Allow export single tiddler as image
-> 允许导出单个 tiddler 为图片(支持渲染tiddlers里的图片)
+支持导出图片, 包括指定tiddler, 固定区域, 甚至直接当作窗口截图工具
 
 !! optional plugins dependencies
 
 * neotw-swal2: preview exported png
-* neotw-back-to-top(nprogress): progress bar for export png
+* nprogress: progress bar for export png
 
-!! Tip
+!! usage
 
-* if yout want to reduce image size, you can remove the cover provided by Notion page plugins, because these images will be converted into binary, and each image will take up some size
-* 如果想要减小图片大小, 可以移除 Notion page 插件 提供的cover, 因为这些图片会被转换成二进制, 每张图片都会占用尺寸
+> coming ...
 
 </div>
