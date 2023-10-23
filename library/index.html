@@ -290,7 +290,7 @@ var assetList = [
         "name": "notify",
         "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
         "list": "readme",
-        "readme": "## simple-notify\n\n<$notify title=\"Test simple notify\" />\n\n<$button>\n\t<$action-sendmessage $message=\"om-notify\" title=\"Just test simple notify\" autoclose=\"false\" />\n\tom-notify\n</$button>\n",
+        "readme": "## simple-notify\n\n![img](https://i.imgur.com/ubW13li.png)\n\n\n* use [simple-notify](https://github.com/simple-notify/simple-notify) instead of `tm-notify` for no status condition tiddler\n\n## Examples\n\n```\n// widget\n<$notify title=\"Test simple notify\" />\n\n// wikitext\n<$button>\n\t<$action-sendmessage $message=\"om-notify\" title=\"Just test simple notify\" autoclose=\"false\" />\n\tom-notify\n</$button>\n```\n\n```js\n// For Developers, you can use `om-notify` to instead of `tm-notify`\nthis.parentWidget.dispatchEvent({\n  type: 'om-notify',\n  paramObject: options,\n});\n```\n\n<$notify title=\"Test simple notify\" />\n\n<$button>\n\t<$action-sendmessage $message=\"om-notify\" title=\"Just test simple notify\" autoclose=\"false\" />\n\tom-notify\n</$button>\n",
         "requires-reload": "yes"
     },
     {
