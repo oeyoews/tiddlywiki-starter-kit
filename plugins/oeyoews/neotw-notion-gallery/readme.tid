@@ -53,6 +53,8 @@ pss: 建议开启浏览器GPU加速,浏览效果更佳(tailwindcss 影响)
 
 !! v1.TODO
 
+* ninecards support get default cover field
+* 修复 //xxx开头的链接 // 符号丢失
 * add title params
 * support gallery to show all images(暂时不做)
 * 自动生成 today jounal card(use bing today wallpaper)(暂时不做)

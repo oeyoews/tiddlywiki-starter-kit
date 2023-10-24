@@ -58,7 +58,7 @@ class CardsWidget extends Widget {
         if (!fields) return;
         let cover = fields[imageField];
         let icon = fields['page-icon'];
-        if (!cover || !cover.startsWith('http')) {
+        if (!cover || !cover.startsWith('http') || !cover.startsWith('//')) {
           cover = `${imageSource}/${resoultion}?fm=blurhash&${fields.title}`;
         }
         return {
