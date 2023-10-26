@@ -18,6 +18,8 @@ class CardsWidget extends Widget {
     this.subfilter = `[!is[system]!sort[modified]limit[${this.count}]]`;
   }
 
+  // subfilter: https://talk.tiddlywiki.org/t/filter-vs-subfilter-operators/3161/5
+
   render(parent, nextSibling) {
     if (!$tw.browser) return;
     // check if tailwind is installed

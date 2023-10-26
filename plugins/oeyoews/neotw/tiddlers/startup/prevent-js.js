@@ -3,7 +3,7 @@ title: $:/plugins/oeyoews/neotw/prevent-edit.js
 type: application/javascript
 module-type: startup
 
-prevent-edit
+退出网页不提示??.
 \*/
 
 exports.startup = () => {
