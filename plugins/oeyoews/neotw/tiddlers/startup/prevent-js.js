@@ -6,10 +6,8 @@ module-type: startup
 prevent-edit
 \*/
 
-(function () {
-  exports.startup = function () {
-    $tw.unloadTasks = $tw.unloadTasks.filter(
-      (task) => !task.toString().includes('confirmationMessage'),
-    );
-  };
-})();
+exports.startup = () => {
+  $tw.unloadTasks = $tw.unloadTasks.filter(
+    (task) => !task.toString().includes('confirmationMessage'),
+  );
+};

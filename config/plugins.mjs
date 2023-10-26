@@ -26,6 +26,7 @@ const localPlugins = [
   'oeyoews/neotw-cli-info',
   'oeyoews/tiddlywiki-publish-tiddler',
   'oeyoews/tiddlywiki-tid2png',
+  'oeyoews/test',
 ];
 
 const onlinePlugins = [
