@@ -26,7 +26,6 @@ const localPlugins = [
   'oeyoews/neotw-cli-info',
   'oeyoews/tiddlywiki-publish-tiddler',
   'oeyoews/tiddlywiki-tid2png',
-  'oeyoews/test',
 ];
 
 const onlinePlugins = [
@@ -54,6 +53,7 @@ const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
 
 // oeyoews plugins
 const oeyoewsPlugins = [
+  'image-better',
   'notify',
   'NPL',
   'neotw-spotlight',
