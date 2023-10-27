@@ -10,6 +10,9 @@ const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 const mergeObj = require('./mergeObj');
 
 class BookStatusWidget extends Widget {
+  static STATUS_UNREAD = '未读';
+  static STATUS_READ = '已读';
+
   constructor(parseTreeNode, options) {
     super(parseTreeNode, options);
     this.configfile = 'bookstatus.json';
@@ -30,7 +33,7 @@ class BookStatusWidget extends Widget {
     let config = wiki.getTiddlerData(this.configfile) || {};
     this.status = config?.[book]?.[title] || '未读';
 
-    const createConfigFile = () => {
+    const updateStatus = () => {
       // may set map
       if (!wiki.tiddlerExists(this.configfile)) {
         wiki.addTiddler({
@@ -59,7 +62,8 @@ class BookStatusWidget extends Widget {
       this.parentWidget.dispatchEvent({
         type: 'om-notify',
         paramObject: {
-          status: this.status === '已读' ? 'success' : 'info',
+          status:
+            this.status === BookStatusWidget.STATUS_READ ? 'success' : 'info',
           title,
           text: `更新状态: ${this.status}`,
         },
@@ -68,15 +72,16 @@ class BookStatusWidget extends Widget {
       this.refreshSelf();
     };
 
-    const statusclass =
-      this.status === '已读' ? 'text-green-400' : 'text-rose-400';
-
+    const statusClass =
+      this.status === BookStatusWidget.STATUS_READ
+        ? 'text-green-400'
+        : 'text-rose-400';
     const btn = createElement('button', {
       text: this.status,
-      class: `p-2 ${statusclass}`,
+      class: `p-2 ${statusClass}`,
     });
 
-    btn.addEventListener('click', createConfigFile);
+    btn.addEventListener('click', updateStatus);
 
     const domNode = createElement('div', {
       class: 'flex justify-end',
