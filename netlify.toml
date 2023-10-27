@@ -1,13 +1,3 @@
 [build]
-  command = "pnpm run build"
   publish = ".tiddlywiki"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-
-[[headers]]
-  for = "/*"
-    [headers.values]
-    Access-Control-Allow-Origin = "*"
+  command = "pnpm run build"
