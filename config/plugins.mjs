@@ -100,6 +100,7 @@ enableMarkdown && plugins.push(...markdowPlugins);
 
 switch (ci.name) {
   case 'Vercel':
+  case 'Netlify CI':
     plugins.push(...onlinePlugins);
     break;
   default:
