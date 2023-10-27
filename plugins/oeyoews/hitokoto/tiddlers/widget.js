@@ -20,10 +20,10 @@ class HitokotoWidget extends Widget {
     this.execute();
 
     const createElement = $tw.utils.domMaker;
+    const { filter = '[tag[Journal]!sort[created]limit[99]]' } =
+      this.attributes;
     // getall journal tiddler
-    const journalTiddlers = $tw.wiki.filterTiddlers(
-      '[tag[Journal]!sort[created]]',
-    );
+    const journalTiddlers = $tw.wiki.filterTiddlers(filter);
 
     const children = [];
 
@@ -34,19 +34,25 @@ class HitokotoWidget extends Widget {
       const { created, creator, title } = $tw.wiki.getTiddler(tiddler).fields;
       const footerNode = this.document.createElement('div');
       const timeNode = this.document.createElement('div');
-      timeNode.textContent = created;
-      timeNode.className = 'mb-2 w-full md:mb-0 md:w-auto';
+      const timeFormated = created.toLocaleDateString();
+      timeNode.textContent = timeFormated;
+      timeNode.addEventListener('click', () => {
+        this.dispatchEvent({
+          type: 'tm-navigate',
+          param: timeFormated,
+          navigateTo: timeFormated,
+        });
+      });
+      timeNode.className =
+        'mb-2 w-full md:mb-0 md:w-auto hover:underline hover:text-indigo-400 hover:cursor-pointer transition';
       const authorNode = this.document.createElement('div');
       authorNode.className = 'mb-2 w-full md:mb-0 md:w-auto text-right';
       authorNode.textContent = `@${creator}`;
       footerNode.className = 'flex flex-wrap text-sm md:justify-between';
       footerNode.append(timeNode, authorNode);
       content = $tw.wiki.renderTiddler('text/html', title);
-      // TODO: use eventlisteners
-      // const link = `[[${title}]]`;
-      // content += $tw.wiki.renderText('text/html', 'text/vnd.tiddlywiki', link);
       const htNode = this.document.createElement('blockquote');
-      htNode.className = `mt-4 md:mt-8 mb-1 bg-${color}-100/50 px-2 rounded border-l-[3px] border-l-${color}-300 mx-0`;
+      htNode.className = `mt-4 md:mt-8 mb-1 bg-${color}-100/50 px-2 rounded border-l-[3px] border-l-${color}-300 mx-0 py-2`;
       htNode.innerHTML = content;
       children.push(htNode, footerNode);
     });
