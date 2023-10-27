@@ -16,6 +16,7 @@
     "tiddlywiki/highlight",
     "tiddlywiki/browser-sniff",
     "tiddlywiki/pluginlibrary",
+    "oeyoews/book-status",
     "oeyoews/hitokoto",
     "oeyoews/neotw-image-better",
     "oeyoews/notify",

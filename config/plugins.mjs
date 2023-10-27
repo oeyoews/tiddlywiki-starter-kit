@@ -53,6 +53,7 @@ const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
 
 // oeyoews plugins
 const oeyoewsPlugins = [
+  'book-status',
   'hitokoto',
   'neotw-image-better',
   'notify',

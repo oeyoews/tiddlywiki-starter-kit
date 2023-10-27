@@ -15,11 +15,14 @@ class HitokotoWidget extends Widget {
   }
 
   render(parent, nextSibling) {
+    // server or tw static to return
+    if (!$tw.browser) return;
     this.parentDomNode = parent;
     this.computeAttributes();
     this.execute();
 
     const createElement = $tw.utils.domMaker;
+
     const { filter = '[tag[Journal]!sort[created]limit[99]]' } =
       this.attributes;
     // getall journal tiddler
