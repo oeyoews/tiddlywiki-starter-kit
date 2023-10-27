@@ -69,6 +69,7 @@ class BookStatusWidget extends Widget {
         },
       });
       // 刷新
+      btn.removeEventListener('click', updateStatus);
       this.refreshSelf();
     };
 

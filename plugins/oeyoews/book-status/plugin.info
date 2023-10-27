@@ -9,7 +9,8 @@
   "name": "book-status",
   "meat#disabled": "yes",
   "dependents": [
-    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
+    "$:/plugins/oeyoews/notify"
   ],
   "list": "readme"
 }
