@@ -39,8 +39,8 @@ class HitokotoWidget extends Widget {
       timeNode.addEventListener('click', () => {
         this.dispatchEvent({
           type: 'tm-navigate',
-          param: timeFormated,
-          navigateTo: timeFormated,
+          param: title,
+          navigateTo: title,
         });
       });
       timeNode.className =
