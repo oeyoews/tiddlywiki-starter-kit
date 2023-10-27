@@ -43,6 +43,21 @@
         "requires-reload": "yes"
     },
     {
+        "title": "$:/plugins/oeyoews/hitokoto",
+        "description": "hitokoto",
+        "author": "oeyoews",
+        "version": "0.0.1",
+        "core-version": ">=5.3.0",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "hitokoto",
+        "meat#disabled": "yes",
+        "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
+        "list": "readme",
+        "readme": "<!-- plugin template readme -->\n",
+        "requires-reload": "yes"
+    },
+    {
         "version": "0.0.5",
         "type": "application/json",
         "title": "$:/plugins/oeyoews/markdown-kit",
