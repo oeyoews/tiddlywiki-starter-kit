@@ -6,13 +6,14 @@ module-type: widget
 book-status widget
 
 \*/
-const { jsonStringify, log } = require('$:/core/modules/utils/utils.js');
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
+const mergeObj = require('./mergeObj');
 
 class BookStatusWidget extends Widget {
   constructor(parseTreeNode, options) {
     super(parseTreeNode, options);
     this.configfile = 'bookstatus.json';
+    this.status = '';
   }
 
   render(parent, nextSibling) {
@@ -23,14 +24,19 @@ class BookStatusWidget extends Widget {
 
     const createElement = $tw.utils.domMaker;
     const wiki = $tw.wiki;
+    const title = this.getVariable('storyTiddler');
+    const pluginname = wiki.getShadowSource(title);
+    const { book } = wiki.getTiddler(pluginname).fields;
+    let config = wiki.getTiddlerData(this.configfile) || {};
+    this.status = config?.[book]?.[title];
 
     const createConfigFile = () => {
       // may set map
-      let config = null;
       if (!wiki.tiddlerExists(this.configfile)) {
         wiki.addTiddler({
           type: 'application/json',
           title: 'bookstatus.json',
+          'meta#disabled': 'yes', // disable meta file
           text: '',
         });
         this.parentWidget.dispatchEvent({
@@ -39,41 +45,36 @@ class BookStatusWidget extends Widget {
             title: `create ${this.configfile} config file`,
           },
         });
-      } else {
-        // default config
-        config = wiki.getTiddlerData(this.configfile) || {};
-        const title = this.getVariable('storyTiddler');
-        if (title.startsWith('Draft of')) return;
-        const pluginname = wiki.getShadowSource(title);
-        if (!pluginname) return;
-        const { book } = wiki.getTiddler(pluginname).fields;
-        if (!book) return;
-        let status = config?.[book]?.[title];
-        status = status === '已读' ? '未读' : '已读';
-        const obj = {
-          [book]: {
-            [title]: status,
-          },
-        };
-        Object.assign(config, obj);
-        wiki.setText(this.configfile, 'text', null, JSON.stringify(config));
-        this.parentWidget.dispatchEvent({
-          type: 'om-notify',
-          paramObject: {
-            // TODO: success or info for book status
-            status: 'info',
-            title: title,
-            text: `Update ${status}`,
-          },
-        });
       }
+      if (title.startsWith('Draft of' || !pluginname || !book)) return;
+      this.status = this.status === '已读' ? '未读' : '已读';
+      const obj = {
+        [book]: {
+          [title]: this.status,
+        },
+      };
+      // update book status file
+      mergeObj(config, obj);
+      wiki.setText(this.configfile, 'text', null, JSON.stringify(config));
+      this.parentWidget.dispatchEvent({
+        type: 'om-notify',
+        paramObject: {
+          status: this.status === '已读' ? 'success' : 'info',
+          title,
+          text: `更新状态: ${this.status}`,
+        },
+      });
+      // 刷新
+      this.refreshSelf();
     };
+
+    const statusclass =
+      this.status === '已读' ? 'text-green-400' : 'text-rose-400';
 
     const btn = createElement('button', {
       // TODO: status
-      text: `update ${this.configfile} `,
-      class: 'p-2',
-      attributes: {},
+      text: this.status,
+      class: `p-2 ${statusclass}`,
     });
 
     btn.addEventListener('click', createConfigFile);
@@ -89,6 +90,6 @@ class BookStatusWidget extends Widget {
 
 /**
  * @description book-status widget
- * @param
+ * @param configfilename
  */
 exports.bookstatus = BookStatusWidget;
