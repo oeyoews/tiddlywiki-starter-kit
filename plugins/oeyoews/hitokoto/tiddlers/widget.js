@@ -8,6 +8,7 @@ hitokoto widget
 \*/
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 const MarkdownIt = require('$:/plugins/tiddlywiki/markdown/markdown-it');
+const getRandomColor = require('./getRandomColor');
 
 class HitokotoWidget extends Widget {
   constructor(parseTreeNode, options) {
@@ -42,42 +43,16 @@ class HitokotoWidget extends Widget {
       linkify: parseAsBoolean('$:/config/markdown/linkify'),
     });
 
-    md.use(require('$:/plugins/cdr/markdown-more/markdown-it-checklist.js'))
-      // bug
-      // .use(require('$:/plugins/tiddlywiki/markdown/markdown-it-tiddlywiki.js'))
-      .use(require('$:/plugins/cdr/markdown-more/markdown-it-admonition'));
-
-    function getRandomColor(colors) {
-      const randomIndex = Math.floor(Math.random() * colors.length);
-      return colors[randomIndex];
+    // bug
+    // .use(require('$:/plugins/tiddlywiki/markdown/markdown-it-tiddlywiki.js'))
+    const admonition = '$:/plugins/cdr/markdown-more/markdown-it-admonition.js';
+    const checklist = '$:/plugins/cdr/markdown-more/markdown-it-checklist.js';
+    if ($tw.wiki.tiddlerExists('$:/plugins/cdr/markdown-more')) {
+      md.use(require(admonition)).use(require(checklist));
     }
 
-    const colors = [
-      'slate',
-      'gray',
-      'zinc',
-      'neutral',
-      'stone',
-      'red',
-      'orange',
-      'amber',
-      'yellow',
-      'lime',
-      'green',
-      'emerald',
-      'teal',
-      'cyan',
-      'sky blue',
-      'indigo',
-      'violet',
-      'purple',
-      'fuchsia',
-      'pink',
-      'rose',
-    ];
-
     journalTiddlers.map((tiddler) => {
-      const color = getRandomColor(colors);
+      const color = getRandomColor();
       const { text, created, creator, type, title } =
         $tw.wiki.getTiddler(tiddler).fields;
       let content;
@@ -88,9 +63,10 @@ class HitokotoWidget extends Widget {
         content = $tw.wiki.renderText('text/html', 'text/vnd.tiddlywiki', text);
       }
       const link = `[[${title}]]`;
-      content += $tw.wiki.renderText('text/html', 'text/vnd.tiddlywiki', link);
+      // TODO: use eventlisteners
+      // content += $tw.wiki.renderText('text/html', 'text/vnd.tiddlywiki', link);
       const htNode = this.document.createElement('blockquote');
-      htNode.className = `my-4 bg-${color}-200 p-2 rounded border-l-[3px] border-l-${color}-300`;
+      htNode.className = `my-4 bg-${color}-200 p-2 rounded border-l-[3px] border-l-${color}-300 mx-0`;
       htNode.innerHTML = content;
       children.push(htNode);
     });
