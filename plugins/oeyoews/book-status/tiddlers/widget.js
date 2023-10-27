@@ -29,9 +29,9 @@ class BookStatusWidget extends Widget {
     const wiki = $tw.wiki;
     const title = this.getVariable('storyTiddler');
     const pluginname = wiki.getShadowSource(title);
-    const { book } = wiki.getTiddler(pluginname).fields;
+    const { book: bookname } = wiki.getTiddler(pluginname)?.fields || {};
     let config = wiki.getTiddlerData(this.configfile) || {};
-    this.status = config?.[book]?.[title] || '未读';
+    this.status = config?.[bookname]?.[title] || '未读';
 
     const updateStatus = () => {
       // may set map
@@ -49,10 +49,10 @@ class BookStatusWidget extends Widget {
           },
         });
       }
-      if (title.startsWith('Draft of' || !pluginname || !book)) return;
+      if (title.startsWith('Draft of') || !pluginname || !bookname) return;
       this.status = this.status === '已读' ? '未读' : '已读';
       const obj = {
-        [book]: {
+        [bookname]: {
           [title]: this.status,
         },
       };
