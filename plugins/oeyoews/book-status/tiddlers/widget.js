@@ -28,7 +28,7 @@ class BookStatusWidget extends Widget {
     const pluginname = wiki.getShadowSource(title);
     const { book } = wiki.getTiddler(pluginname).fields;
     let config = wiki.getTiddlerData(this.configfile) || {};
-    this.status = config?.[book]?.[title];
+    this.status = config?.[book]?.[title] || '未读';
 
     const createConfigFile = () => {
       // may set map
@@ -72,7 +72,6 @@ class BookStatusWidget extends Widget {
       this.status === '已读' ? 'text-green-400' : 'text-rose-400';
 
     const btn = createElement('button', {
-      // TODO: status
       text: this.status,
       class: `p-2 ${statusclass}`,
     });
@@ -80,6 +79,7 @@ class BookStatusWidget extends Widget {
     btn.addEventListener('click', createConfigFile);
 
     const domNode = createElement('div', {
+      class: 'flex justify-end',
       children: [btn],
     });
 
