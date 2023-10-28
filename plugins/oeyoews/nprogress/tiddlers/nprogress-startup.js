@@ -16,16 +16,6 @@ exports.startup = () => {
     progress.start();
     const startTime = performance.now();
 
-    /*
-      <$button message="om-nprogress">
-      start
-      </$button >
-
-      <$button >
-        <$action-sendmessage $message="om-nprogress" type="start" />
-        start
-      </$button>
-       */
     $tw.rootWidget.addEventListener('om-nprogress', (event) => {
       const { type } = event.paramObject || { type: 'start' };
       progress[type]();
