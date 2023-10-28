@@ -6,7 +6,7 @@ module-type: startup
 退出网页不提示??.
 \*/
 
-exports.startup = () => {
+exports.startup = function () {
   $tw.unloadTasks = $tw.unloadTasks.filter(
     (task) => !task.toString().includes('confirmationMessage'),
   );
