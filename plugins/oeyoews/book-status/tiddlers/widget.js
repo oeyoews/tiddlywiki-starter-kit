@@ -42,9 +42,11 @@ class BookStatusWidget extends Widget {
   }
 
   updateStatus(bookname, title) {
+    this.parentWidget.dispatchEvent({
+      type: 'om-nprogress',
+    });
     if (title.startsWith('Draft of') || !bookname) return;
     const wiki = $tw.wiki;
-    console.log(JSON.stringify(this.statuses.entries()));
 
     const defaultconfig = wiki.getTiddlerData(this.bookstatusfilename) || {};
     if (!wiki.tiddlerExists(this.bookstatusfilename)) {
@@ -89,6 +91,9 @@ class BookStatusWidget extends Widget {
       this.updateStatus(bookname, title),
     );
     this.refreshSelf();
+    this.parentWidget.dispatchEvent({
+      type: 'om-nprogress-done',
+    });
   }
 
   render(parent, nextSibling) {
