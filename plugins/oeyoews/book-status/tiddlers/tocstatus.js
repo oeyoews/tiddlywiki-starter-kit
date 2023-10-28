@@ -26,16 +26,26 @@ class BookTocStatusWidget extends Widget {
     const pluginname = '$:/plugins/books/' + bookname;
     if (!wiki.tiddlerExists(pluginname)) return;
     const { tiddlers } = wiki.getPluginInfo(pluginname);
-    const toc = Object.keys(tiddlers).filter(
-      (title) => !title.startsWith('$:/'),
+    const toc = Object.keys(tiddlers)
+      .filter((title) => !title.startsWith('$:/'))
+      .map((title) => ({
+        title,
+        status: '未读',
+      }));
+    const readlist = Object.entries(statuses?.[bookname]).map(
+      ([title, status]) => ({
+        title,
+        status,
+      }),
     );
-    const status = statuses?.[bookname];
+    const tocstatuslist = new Map();
+    toc.forEach(({ title, status }) => {
+      tocstatuslist.set(title, status);
+    });
+    readlist.forEach(({ title, status }) => {
+      tocstatuslist.set(title, status);
+    });
 
-    // TODO: 顺序会乱掉, 使用map
-    const tocStatusData = toc.map((title) => [title, '未读']);
-    const mergedStatus = status
-      ? Object.assign(tocStatusData, Object.entries(status))
-      : tocStatusData;
     const children = [];
 
     // update status
@@ -58,7 +68,7 @@ class BookTocStatusWidget extends Widget {
       });
     };
 
-    mergedStatus.forEach(([title, status]) => {
+    tocstatuslist.forEach((status, title) => {
       createLi(title, status);
     });
 
