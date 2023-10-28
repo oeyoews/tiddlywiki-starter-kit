@@ -2,7 +2,7 @@
   "title": "$:/plugins/oeyoews/book-status",
   "description": "book-status",
   "author": "oeyoews",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "core-version": ">=5.3.1",
   "type": "application/json",
   "plugin-type": "plugin",
