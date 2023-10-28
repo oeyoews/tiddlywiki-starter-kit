@@ -22,7 +22,7 @@ module.exports = function exportPng(tiddlerTitle, customSelector) {
     '$:/plugins/oeyoews/tiddlywiki-tid2png/download.svg',
   );
 
-  typeof NProgress !== 'undefined' && NProgress.start();
+  new $tw.NProgress().start();
   const selector = customSelector || `[data-tiddler-title="${title}"]`;
   console.log(customSelector, selector);
   // html2canvas 不支持 cloneNode, 在widget中可以直接移除popup,因为widget会重新渲染, popup 会自动恢复? 但是这是一个listener, 不建议直接修改dom;
@@ -70,7 +70,7 @@ module.exports = function exportPng(tiddlerTitle, customSelector) {
         'm-0',
       );
       containerNode.appendChild(imgNode);
-      typeof NProgress !== 'undefined' && NProgress.done();
+      new $tw.NProgress().done();
 
       const downloadPng = (href) => {
         const linkNode = document.createElement('a');

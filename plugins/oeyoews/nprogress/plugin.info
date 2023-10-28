@@ -2,9 +2,10 @@
   "title": "$:/plugins/oeyoews/nprogress",
   "description": "nprogress",
   "author": "oeyoews",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "core-version": ">=5.3.1",
   "type": "application/json",
+  "meta#disabled": "yes",
   "plugin-type": "plugin",
   "name": "nprogress",
   "list": "readme"

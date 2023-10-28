@@ -57,10 +57,9 @@ function updateMode(mode, isSaveMode = true) {
 }
 
 // TODO: 切换system/dark/light 配置, 并且刷新theme, 配置存在store里面
-const NProgress = require('nprogress.min.js'); // This step may cause an error due to plugin loading order; NProgress might not be loaded yet, so manual loading is needed.
-
 function toggleMode() {
-  NProgress?.start();
+  const progress = new $tw.NProgress().start();
+  progress.start();
 
   /* if (hasSystemMode) {
     listmode.push('system');
@@ -70,7 +69,7 @@ function toggleMode() {
   const nextMode =
     listmode[(listmode.indexOf(localStorage.theme) + 1) % listmode.length];
   updateMode(nextMode);
-  NProgress?.done();
+  progress.done();
 }
 
 function preset() {

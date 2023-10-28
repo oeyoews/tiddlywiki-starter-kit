@@ -47,8 +47,11 @@ class BookTocStatusWidget extends Widget {
       li.innerHTML = content;
       children.push(li);
       li.addEventListener('click', (e) => {
+        const progress = $tw.NProgress();
+        progress.start();
         e.preventDefault();
         new $tw.Story().navigateTiddler(title);
+        progress.done();
       });
     };
 

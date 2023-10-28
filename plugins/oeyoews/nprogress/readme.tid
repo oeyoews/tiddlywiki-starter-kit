@@ -1,0 +1,24 @@
+title: $:/plugins/oeyoews/nprogress/readme
+
+> nprogress tiddlywiki版本
+
+```js
+new $tw.Nprogress().start()
+new $tw.Nprogress().done()
+
+// widget
+this.parentWidget.dispatchEvent({
+	type: 'om-nprogress',
+});
+```
+
+```html
+<$button message="om-nprogress">
+start
+</$button >
+
+<$button >
+<$action-sendmessage $message="om-nprogress" type="start" />
+start
+</$button>
+```
