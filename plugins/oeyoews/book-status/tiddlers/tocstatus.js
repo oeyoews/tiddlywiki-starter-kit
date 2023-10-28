@@ -52,10 +52,15 @@ class BookTocStatusWidget extends Widget {
     const createLi = (title, status) => {
       const li = this.document.createElement('li');
       const color = status === '已读' ? 'green' : 'red';
+      const icon = status === '已读' ? 'emojione-v1:left-check-mark' : '未读';
       const content = $tw.wiki.renderText(
         'text/html',
         'text/vnd.tiddlywiki',
-        `[[${title}]] <sup>@@color:${color};${status}@@</sup>`,
+        `[[${title}]]
+<% if [[$:/plugins/oeyoews/neotw-icons]has[plugin-type]] %>
+  <$iconify icon=${icon} />
+<% endif %>
+<sup>@@color:${color};font-size:10px;${status}@@</sup>`,
       );
       li.innerHTML = content;
       children.push(li);
