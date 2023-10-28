@@ -32,17 +32,18 @@ class BookTocStatusWidget extends Widget {
         title,
         status: '未读',
       }));
-    const readlist = Object.entries(statuses?.[bookname]).map(
-      ([title, status]) => ({
+    const readlist =
+      statuses?.[bookname] &&
+      Object.entries(statuses?.[bookname]).map(([title, status]) => ({
         title,
         status,
-      }),
-    );
+      }));
     const tocstatuslist = new Map();
+
     toc.forEach(({ title, status }) => {
       tocstatuslist.set(title, status);
     });
-    readlist.forEach(({ title, status }) => {
+    readlist?.forEach(({ title, status }) => {
       tocstatuslist.set(title, status);
     });
 
