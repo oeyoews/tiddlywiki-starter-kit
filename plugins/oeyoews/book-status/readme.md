@@ -1,5 +1,9 @@
 ## book status
 
+记录你读过的每一个笔记
+
+## TODO
+
 * [x] getstorytiddler
 * [x] click event
 * [x] status json

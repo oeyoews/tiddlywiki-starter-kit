@@ -92,6 +92,7 @@ const plugins = [
   'tiddlywiki/tiddlyweb',
   'tiddlywiki/highlight',
   'tiddlywiki/browser-sniff',
+  // 'tiddlywiki/comments',
   'tiddlywiki/pluginlibrary', // 不会影响json 文件的生成, 负责生成index.html
   ...oeyoewsFormatedPlugins,
 ];
