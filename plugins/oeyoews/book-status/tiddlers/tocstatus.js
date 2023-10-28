@@ -26,9 +26,12 @@ class BookTocStatusWidget extends Widget {
     const pluginname = '$:/plugins/books/' + bookname;
     if (!wiki.tiddlerExists(pluginname)) return;
     const { tiddlers } = wiki.getPluginInfo(pluginname);
-    const toc = Object.keys(tiddlers);
+    const toc = Object.keys(tiddlers).filter(
+      (title) => !title.startsWith('$:/'),
+    );
     const status = statuses?.[bookname];
 
+    // TODO: 顺序会乱掉, 使用map
     const tocStatusData = toc.map((title) => [title, '未读']);
     const mergedStatus = status
       ? Object.assign(tocStatusData, Object.entries(status))
