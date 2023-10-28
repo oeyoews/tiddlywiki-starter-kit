@@ -4,6 +4,7 @@ type: application/javascript
 module-type: library
 
 \*/
+// TODO: Object.assign
 module.exports = function mergeObjects(target, ...sources) {
   for (const source of sources) {
     for (const key in source) {

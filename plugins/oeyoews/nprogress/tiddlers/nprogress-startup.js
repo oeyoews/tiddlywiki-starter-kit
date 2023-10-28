@@ -20,6 +20,23 @@ nprogress module
       window.NProgress = require('nprogress.min.js');
       NProgress.start();
       const startTime = performance.now();
+
+      /*
+      <$button >
+        <$action-sendmessage $message="om-nprogress" type="start" />
+        start
+      </$button>
+       */
+      $tw.rootWidget.addEventListener('om-nprogress', (event) => {
+        const {type} = event.paramObject || { type: 'start' };
+        NProgress[type]()
+      })
+
+      $tw.rootWidget.addEventListener('om-nprogress-done', (event) => {
+        const {type} = event.paramObject || { type: 'done' };
+        NProgress[type]()
+      })
+
       window.onload = function () {
         NProgress.done();
         const endTime = performance.now();
