@@ -15,8 +15,80 @@ class BookStatusWidget extends Widget {
 
   constructor(parseTreeNode, options) {
     super(parseTreeNode, options);
-    this.configfile = 'bookstatus.json';
-    this.status = '';
+    this.bookstatusfilename = 'bookstatus.json';
+    this.statuses = new Map();
+    this.btn;
+  }
+
+  readStatuses() {
+    const config = $tw.wiki.getTiddlerData(this.bookstatusfilename) || {};
+    // json对象转Map
+    Object.entries(config).forEach(([bookname, book]) => {
+      Object.entries(book).forEach(([title, status]) => {
+        const key = `${bookname}/${title}`;
+        this.statuses.set(key, status);
+      });
+    });
+  }
+
+  // 当需要获取某个书籍的阅读状态时，会先从 Map 中查找，如果没有找到则从配置文件中读取数据并进行解析，
+  // 然后将结果存入 Map 中以备下次使用。
+  getStatus(bookname, title) {
+    const key = `${bookname}/${title}`;
+    if (!this.statuses.has(key)) {
+      this.readStatuses();
+    }
+    return this.statuses.get(key) || '未读';
+  }
+
+  updateStatus(bookname, title) {
+    if (title.startsWith('Draft of') || !bookname) return;
+    const wiki = $tw.wiki;
+    console.log(JSON.stringify(this.statuses.entries()));
+
+    const defaultconfig = wiki.getTiddlerData(this.bookstatusfilename) || {};
+    if (!wiki.tiddlerExists(this.bookstatusfilename)) {
+      wiki.addTiddler({
+        type: 'application/json',
+        title: this.bookstatusfilename,
+        'meta#disabled': 'yes', // disable meta file
+        text: '',
+      });
+    }
+    const key = `${bookname}/${title}`;
+    const status = this.getStatus(bookname, title);
+    const newStatus =
+      status === BookStatusWidget.STATUS_READ
+        ? BookStatusWidget.STATUS_UNREAD
+        : BookStatusWidget.STATUS_READ;
+    this.statuses.set(key, newStatus);
+    const obj = {
+      [bookname]: {
+        [title]: newStatus,
+      },
+    };
+    mergeObj(defaultconfig, obj);
+    wiki.setText(
+      this.bookstatusfilename,
+      'text',
+      null,
+      JSON.stringify(defaultconfig),
+      {
+        suppressTimestamp: true,
+      },
+    );
+    this.parentWidget.dispatchEvent({
+      type: 'om-notify',
+      paramObject: {
+        status: newStatus === BookStatusWidget.STATUS_READ ? 'success' : 'info',
+        title,
+        text: `更新状态: ${newStatus}`,
+      },
+    });
+    this.btn.removeEventListener('click', () =>
+      this.updateStatus(bookname, title),
+    );
+    this.refreshSelf();
   }
 
   render(parent, nextSibling) {
@@ -30,63 +102,24 @@ class BookStatusWidget extends Widget {
     const title = this.getVariable('storyTiddler');
     const pluginname = wiki.getShadowSource(title);
     const { book: bookname } = wiki.getTiddler(pluginname)?.fields || {};
-    let config = wiki.getTiddlerData(this.configfile) || {};
-    this.status = config?.[bookname]?.[title] || '未读';
-
-    const updateStatus = () => {
-      // may set map
-      if (!wiki.tiddlerExists(this.configfile)) {
-        wiki.addTiddler({
-          type: 'application/json',
-          title: 'bookstatus.json',
-          'meta#disabled': 'yes', // disable meta file
-          text: '',
-        });
-        this.parentWidget.dispatchEvent({
-          type: 'om-notify',
-          paramObject: {
-            title: `create ${this.configfile} config file`,
-          },
-        });
-      }
-      if (title.startsWith('Draft of') || !pluginname || !bookname) return;
-      this.status = this.status === '已读' ? '未读' : '已读';
-      const obj = {
-        [bookname]: {
-          [title]: this.status,
-        },
-      };
-      // update book status file
-      mergeObj(config, obj);
-      wiki.setText(this.configfile, 'text', null, JSON.stringify(config));
-      this.parentWidget.dispatchEvent({
-        type: 'om-notify',
-        paramObject: {
-          status:
-            this.status === BookStatusWidget.STATUS_READ ? 'success' : 'info',
-          title,
-          text: `更新状态: ${this.status}`,
-        },
-      });
-      // 刷新
-      btn.removeEventListener('click', updateStatus);
-      this.refreshSelf();
-    };
+    const status = this.getStatus(bookname, title);
 
     const statusClass =
-      this.status === BookStatusWidget.STATUS_READ
+      status === BookStatusWidget.STATUS_READ
         ? 'text-green-400'
         : 'text-rose-400';
-    const btn = createElement('button', {
-      text: this.status,
+    this.btn = createElement('button', {
+      text: status,
       class: `p-2 ${statusClass}`,
     });
 
-    btn.addEventListener('click', updateStatus);
+    this.btn.addEventListener('click', () =>
+      this.updateStatus(bookname, title),
+    );
 
     const domNode = createElement('div', {
       class: 'flex justify-end',
-      children: [btn],
+      children: [this.btn],
     });
 
     parent.insertBefore(domNode, nextSibling);
