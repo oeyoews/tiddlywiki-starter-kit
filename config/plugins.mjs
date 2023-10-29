@@ -92,6 +92,7 @@ const plugins = [
   'tiddlywiki/tiddlyweb',
   'tiddlywiki/highlight',
   'tiddlywiki/browser-sniff',
+  // 'tiddlywiki/qrcode', // 感觉不如 node-qrcode 美观, 使用base64, 有时候如果内容过多会卡顿
   // 'tiddlywiki/comments',
   'tiddlywiki/pluginlibrary', // 不会影响json 文件的生成, 负责生成index.html
   ...oeyoewsFormatedPlugins,

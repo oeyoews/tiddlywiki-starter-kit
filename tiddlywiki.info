@@ -15,6 +15,7 @@
     "tiddlywiki/tiddlyweb",
     "tiddlywiki/highlight",
     "tiddlywiki/browser-sniff",
+    "tiddlywiki/qrcode",
     "tiddlywiki/pluginlibrary",
     "oeyoews/book-status",
     "oeyoews/hitokoto",
