@@ -34,8 +34,8 @@ class QRCodeWidget extends Widget {
     const {
       text = $tw.wiki.getTiddlerText('$:/info/url/full'),
       width = 256,
-      // title = 'tiddlywiki-starter-kit-qrcode.svg',
-      //   save = false,
+      title = 'tiddlywiki-starter-kit-qrcode.svg',
+      save = false,
       //   timestamp = false
     } = this.attributes;
     let domNode;
@@ -47,13 +47,15 @@ class QRCodeWidget extends Widget {
         width,
       },
       (_, svgString) => {
-        //  $tw.wiki.addTiddler({
-        //     type,
-        //     title,
-        //     text: svgString,
-        //   });
+        save === 'true' &&
+          $tw.wiki.addTiddler({
+            type,
+            title,
+            text: svgString,
+          });
         const svgDoc = parser.parseFromString(svgString, type);
         domNode = svgDoc.documentElement;
+        // domNode.className = 'spotlight';
       },
     );
 
