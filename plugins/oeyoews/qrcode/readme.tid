@@ -1,0 +1,17 @@
+title: $:/plugins/oeyoews/qrcode/readme
+
+! QRCode svg format
+
+<$qrcode />
+
+!! Params
+
+* `text`: string
+* `width`: number
+
+!! Credits
+
+* https://github.com/soldair/node-qrcode
+
+<!-- > qrcode-node 似乎最近不再维护, 1.5.1 后有一个打包错误, umd  -->
+<!-- * title -->
