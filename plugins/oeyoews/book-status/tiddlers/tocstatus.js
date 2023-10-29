@@ -84,12 +84,13 @@ class BookTocStatusWidget extends Widget {
 
     const progressNode = createElement('progress', {
       attributes: {
+        id: 'om-progress',
         value: progressvalue,
         max: 100,
       },
     });
 
-    const statusprogressNode = createElement('button', {
+    const statusprogressNode = createElement('center', {
       text: `${bookname} 阅读进度: ${statusprogress}%`,
     });
     children.unshift(statusprogressNode);

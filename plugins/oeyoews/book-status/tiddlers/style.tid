@@ -1,0 +1,33 @@
+title: $:/plugins/oeyoews/book-status/style
+tags: $:/tags/Stylesheet
+type: text/css
+
+#om-progress {
+  height: 10px;
+  width: 100%;
+  border-radius: 9px;
+  overflow: hidden;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+#om-progress::-webkit-progress-bar {
+  background-color: #efefef;
+}
+
+#om-progress::-webkit-progress-value {
+  background: linear-gradient(135deg, #12c2e9, #ffafbd, #c9ffbf);
+  animation: progress-bar 1s ease-out infinite;
+}
+
+@keyframes progress-bar {
+  0% {
+    box-shadow: 0 0 1px #007aff;
+  }
+  50% {
+    box-shadow: 0 0 2px #007aff;
+  }
+  100% {
+    box-shadow: 0 0 1px #007aff;
+  }
+}
