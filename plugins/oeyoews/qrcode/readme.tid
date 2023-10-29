@@ -9,6 +9,20 @@ title: $:/plugins/oeyoews/qrcode/readme
 * `text`: string
 * `width`: number
 
+!! Recipes
+
+```html
+<$set name="url" value={{$:/info/url/full}}>
+<$set name="hash" filter="[<currentTiddler>encodeuricomponent[]]" select="0">
+<$qrcode text={{{ [<url>addsuffix[#]addsuffix<hash>] }}} />
+</$set>
+</$set>
+
+<$qrcode renderType="url"
+```
+
+
+
 !! Credits
 
 * https://github.com/soldair/node-qrcode

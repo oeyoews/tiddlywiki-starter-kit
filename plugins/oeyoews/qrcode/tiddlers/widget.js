@@ -30,9 +30,16 @@ class QRCodeWidget extends Widget {
     // });
 
     const parser = new DOMParser();
+    const storyTiddler = this.getVariable('storyTiddler');
+    const href = location.href;
+    const hashurl = encodeURIComponent(storyTiddler);
+    const currentTiddlerUrl = `${href}#${hashurl}`;
     const type = 'image/svg+xml';
     const {
-      text = $tw.wiki.getTiddlerText('$:/info/url/full'),
+      renderType,
+      text = renderType === 'url'
+        ? currentTiddlerUrl
+        : $tw.wiki.getTiddlerText('$:/info/url/full'),
       width = 256,
       title = 'info-qrcode.svg',
       save = false,
