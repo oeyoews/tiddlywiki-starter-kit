@@ -48,7 +48,7 @@ class BookTocStatusWidget extends Widget {
       status === '已读' && readcount++;
       tocstatuslist.set(title, status);
     });
-    const statusprogress = (readcount / toc.length).toFixed(2);
+    const statusprogress = ((readcount / toc.length) * 100).toFixed(2);
 
     const children = [];
 
