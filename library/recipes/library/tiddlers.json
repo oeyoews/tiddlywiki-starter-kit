@@ -344,6 +344,21 @@
         "requires-reload": "yes"
     },
     {
+        "title": "$:/plugins/oeyoews/qrcode",
+        "description": "qrcode",
+        "author": "oeyoews",
+        "version": "0.0.2",
+        "core-version": ">=5.3.1",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "qrcode",
+        "meat#disabled": "yes",
+        "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
+        "list": "readme",
+        "readme": "! QRCode svg format\n\n<$qrcode />\n\n!! Params\n\n* `text`: string\n* `width`: number\n\n!! Credits\n\n* https://github.com/soldair/node-qrcode\n\n<!-- > qrcode-node 似乎最近不再维护, 1.5.1 后有一个打包错误, umd  -->\n<!-- * title -->",
+        "requires-reload": "yes"
+    },
+    {
         "title": "$:/plugins/oeyoews/tiddlywiki-daylight",
         "description": "Tiddlywiki Daylight",
         "author": "oeyoews",
