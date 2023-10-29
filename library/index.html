@@ -365,7 +365,7 @@ var assetList = [
         "meat#disabled": "yes",
         "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
         "list": "readme",
-        "readme": "! QRCode svg format\n\n<$qrcode />\n\n!! Params\n\n* `text`: string\n* `width`: number\n\n!! Credits\n\n* https://github.com/soldair/node-qrcode\n\n<!-- > qrcode-node 似乎最近不再维护, 1.5.1 后有一个打包错误, umd  -->\n<!-- * title -->",
+        "readme": "! QRCode svg format\n\n<$qrcode />\n\n!! Params\n\n* `text`: string\n* `width`: number\n\n!! Recipes\n\n```html\n<$set name=\"url\" value={{$:/info/url/full}}>\n<$set name=\"hash\" filter=\"[<currentTiddler>encodeuricomponent[]]\" select=\"0\">\n<$qrcode text={{{ [<url>addsuffix[#]addsuffix<hash>] }}} />\n</$set>\n</$set>\n\n<$qrcode renderType=\"url\"\n```\n\n\n\n!! Credits\n\n* https://github.com/soldair/node-qrcode\n\n<!-- > qrcode-node 似乎最近不再维护, 1.5.1 后有一个打包错误, umd  -->\n<!-- * title -->",
         "requires-reload": "yes"
     },
     {
