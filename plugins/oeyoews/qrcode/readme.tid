@@ -8,6 +8,7 @@ title: $:/plugins/oeyoews/qrcode/readme
 
 * `text`: string
 * `width`: number
+* `renderType`: {url}
 
 !! Recipes
 

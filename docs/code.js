@@ -36,6 +36,7 @@ wiki.addTiddler({
   title: 'title content',
   text: 'text content',
 });
+// https://github.com/Jermolene/TiddlyWiki5/blob/4b56cb42983d4134715eb7fe7b083fdcc04980f0/core/modules/startup/rootwidget.js#L58
 $tw.notifier.display(tiddler); // send notification
 $tw.modal.display(title); // show a dialog
 
