@@ -103,6 +103,14 @@ class BookTocStatusWidget extends Widget {
     parent.insertBefore(domNode, nextSibling);
     this.domNodes.push(domNode);
   }
+  refresh(changedTiddlers) {
+    if (Object.keys(changedTiddlers).includes('bookstatus.json')) {
+      this.refreshSelf();
+      return true;
+    } else {
+      return false;
+    }
+  }
 }
 
 /**
