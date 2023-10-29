@@ -48,7 +48,8 @@ class BookTocStatusWidget extends Widget {
       status === '已读' && readcount++;
       tocstatuslist.set(title, status);
     });
-    const statusprogress = ((readcount / toc.length) * 100).toFixed(2);
+    const progressvalue = (readcount / toc.length) * 100;
+    const statusprogress = progressvalue.toFixed(2);
 
     const children = [];
 
@@ -81,10 +82,18 @@ class BookTocStatusWidget extends Widget {
       createLi(title, status);
     });
 
+    const progressNode = createElement('progress', {
+      attributes: {
+        value: progressvalue,
+        max: 100,
+      },
+    });
+
     const statusprogressNode = createElement('button', {
       text: `${bookname} 阅读进度: ${statusprogress}%`,
     });
     children.unshift(statusprogressNode);
+    children.unshift(progressNode);
 
     const domNode = createElement('ol', {
       children,
