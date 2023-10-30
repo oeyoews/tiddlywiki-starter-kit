@@ -369,7 +369,7 @@
         "meat#disabled": "yes",
         "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
         "list": "readme",
-        "readme": "! QRCode svg format\n\n<$qrcode />\n\n!! Params\n\n* `renderType`: {url}\n* `text`: string\n* `width`: number\n\n!! TODO\n\n* viewtoolbar\n\n!! Credits\n\n* https://github.com/soldair/node-qrcode\n\n<!-- > qrcode-node 似乎最近不再维护, 1.5.1 后有一个打包错误, umd  -->\n<!-- * title -->",
+        "readme": "! QRCode svg format\n\n<$qrcode />\n\n!! Params\n\n* `renderType`: {url}\n* `text`: string\n* `width`: number\n\n!! TODO\n\n* viewtoolbar\n* support icon(logo), color https://github.com/soldair/node-qrcode/issues/240\n\n!! Credits\n\n* https://github.com/soldair/node-qrcode\n\n<!-- > qrcode-node 似乎最近不再维护, 1.5.1 后有一个打包错误, umd  -->\n<!-- * title -->",
         "requires-reload": "yes"
     },
     {
