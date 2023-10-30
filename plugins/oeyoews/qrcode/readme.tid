@@ -13,7 +13,7 @@ title: $:/plugins/oeyoews/qrcode/readme
 !! TODO
 
 * viewtoolbar
-* support icon(logo), color https://github.com/soldair/node-qrcode/issues/240
+* support icon(logo), color https://github.com/soldair/node-qrcode/issues/240, https://github.com/ushelp/EasyQRCodeJS-NodeJS
 
 !! Credits
 
