@@ -1,8 +1,18 @@
+const { tmpdir } = require('node:os');
+const dotenv = require('dotenv');
+const path = require('path');
+
+dotenv.config();
+
+const tiddlywikiName = process.env.tiddlywikiName;
+const logdir = path.join(tmpdir(), tiddlywikiName);
+console.log(`日志路径: ${logdir}`);
+
 module.exports = {
   // https://github.com/Unitech/pm2/blob/master/lib/API/schema.json
   apps: [
     {
-      name: 'tiddlywiki-starter-kit',
+      name: tiddlywikiName,
       script: './lib/startup.mjs',
       watch: ['./plugins', './themes'],
       ignore_watch: ['./tiddlers', '**/tiddlers'],
@@ -12,9 +22,9 @@ module.exports = {
       cron_restart: '0 */8 * * *',
       cwd: './',
       watch_delay: 100,
-      log_file: './.logs/combined.outerr.log',
-      out_file: './.logs/out.log',
-      err_file: './.logs/err.log',
+      log_file: `${logdir}/logs/combined.outerr.log`,
+      out_file: `${logdir}/logs/out.log`,
+      err_file: `${logdir}/logs/err.log`,
       log_date_format: 'YYYY-MM-DD HH:mm:ss',
       // env:{}
     },
