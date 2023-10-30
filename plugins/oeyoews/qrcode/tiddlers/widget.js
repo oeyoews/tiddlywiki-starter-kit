@@ -32,7 +32,8 @@ class QRCodeWidget extends Widget {
     const {
       renderType,
       text = renderType === 'url' && storyTiddler ? currentTiddlerUrl : href,
-      width = 256,
+      width = 512,
+      // size
     } = this.attributes;
 
     QRCode.toString(
@@ -49,7 +50,8 @@ class QRCodeWidget extends Widget {
     const domNode = this.document.createElement('img');
     const svghashtext = encodeURIComponent(this.svgString);
     domNode.src = `data:${this.type},${svghashtext}`;
-    domNode.className = 'spotlight';
+    domNode.className = 'spotlight w-0 md:w-32';
+
 
     parent.insertBefore(domNode, nextSibling);
     this.domNodes.push(domNode);
