@@ -12,6 +12,7 @@ const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 class ListlinksWidget extends Widget {
   constructor(parseTreeNode, options) {
     super(parseTreeNode, options);
+    this.jsonfile = null;
   }
 
   render(parent, nextSibling) {
@@ -21,9 +22,9 @@ class ListlinksWidget extends Widget {
 
     const createElement = $tw.utils.domMaker;
     const { json = 'list-links.json' } = this.attributes;
+    this.jsonfile = json;
     const { caption } = $tw.wiki.getTiddler(json).fields || {};
     const isStoryRiver = this.getVariable('storyTiddler') !== undefined;
-    console.log(isStoryRiver, 'xx');
 
     const data = $tw.wiki.getTiddlerData(json) || {};
     const linksURL = Object.entries(data);
@@ -34,7 +35,9 @@ class ListlinksWidget extends Widget {
       const orderNode = this.document.createElement('td');
       const descriptionNode = this.document.createElement('td');
       const linkNode = this.document.createElement('td');
-      if (!href.startsWith('http')) return;
+      if (!href.startsWith('http')) {
+        console.warn(`${href} is not a valid link`);
+      }
 
       try {
         const { protocol, hostname } = new URL(href);
@@ -99,6 +102,14 @@ class ListlinksWidget extends Widget {
 
     parent.insertBefore(domNode, nextSibling);
     this.domNodes.push(domNode);
+  }
+  refresh(changedTiddlers) {
+    if (Object.keys(changedTiddlers).includes(this.jsonfile)) {
+      this.refreshSelf();
+      return true;
+    } else {
+      return false;
+    }
   }
 }
 

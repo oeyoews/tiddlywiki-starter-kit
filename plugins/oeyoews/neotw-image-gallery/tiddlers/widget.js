@@ -12,6 +12,7 @@ const createImage = require('./createImage');
 class GalleryWidget extends Widget {
   constructor(parseTreeNode, options) {
     super(parseTreeNode, options);
+    this.jsonfile = null;
   }
 
   render(parent, nextSibling) {
@@ -21,6 +22,7 @@ class GalleryWidget extends Widget {
 
     const createElement = $tw.utils.domMaker;
     const { json = 'image-list.json' } = this.attributes;
+    this.jsonfile = json;
 
     const data = $tw.wiki.getTiddlerData(json);
     const imagesURL = Object.entries(data);
@@ -39,8 +41,14 @@ class GalleryWidget extends Widget {
     parent.insertBefore(domNode, nextSibling);
     this.domNodes.push(domNode);
   }
-  refresh() {
-    return false;
+
+  refresh(changedTiddlers) {
+    if (Object.keys(changedTiddlers).includes(this.jsonfile)) {
+      this.refreshSelf();
+      return true;
+    } else {
+      return false;
+    }
   }
 }
 
