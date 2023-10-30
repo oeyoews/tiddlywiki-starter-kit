@@ -26,7 +26,7 @@ class QRCodeWidget extends Widget {
     this.execute();
 
     const storyTiddler = this.getVariable('storyTiddler');
-    const href = location.href;
+    const href = $tw.wiki.getTiddlerText('$:/info/url/full');
     const hashurl = encodeURIComponent(storyTiddler);
     const currentTiddlerUrl = `${href}#${hashurl}`;
     const {
