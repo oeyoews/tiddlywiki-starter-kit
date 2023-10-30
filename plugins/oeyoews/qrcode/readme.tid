@@ -6,9 +6,13 @@ title: $:/plugins/oeyoews/qrcode/readme
 
 !! Params
 
+* `renderType`: {url}
 * `text`: string
 * `width`: number
-* `renderType`: {url}
+
+!! TODO
+
+* viewtoolbar
 
 !! Credits
 

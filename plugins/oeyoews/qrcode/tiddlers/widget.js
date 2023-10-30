@@ -31,13 +31,36 @@ class QRCodeWidget extends Widget {
     const currentTiddlerUrl = `${href}#${hashurl}`;
     const {
       renderType,
-      text = renderType === 'url' && storyTiddler ? currentTiddlerUrl : href,
+      text = href,
       width = 512,
       // size
     } = this.attributes;
+    let textcontent = text;
+
+    if (storyTiddler) {
+      switch (renderType) {
+        // 常用的是url类型
+        case 'url':
+          textcontent = currentTiddlerUrl;
+          break;
+        // rendered 类型除了支持了 wikitext 变量的渲染, 其他的和raw没有什么区别, 都是纯文本
+        case 'raw':
+          textcontent = $tw.wiki.getTiddlerText(storyTiddler);
+          break;
+        case 'rendered':
+          textcontent = $tw.wiki.renderText(
+            'text/plain-formatted',
+            'text/vnd.tiddlywiki',
+            `${$tw.wiki.getTiddlerText(storyTiddler)}`,
+          );
+          break;
+        default:
+          textcontent = currentTiddlerUrl;
+      }
+    }
 
     QRCode.toString(
-      text,
+      textcontent,
       {
         type: 'terminal',
         width,
