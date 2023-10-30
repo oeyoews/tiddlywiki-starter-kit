@@ -1,5 +1,7 @@
 # Simple Notify
 
+> 你知道在太微中发送一个消息通知有几种写法吗 ?
+
 Simple Notify is a pure Javascript library to show nice and customizable alert notifications.
 
 ![img](https://github.com/oeyoews/simple-notify/raw/master/demo/assets/types.png)
@@ -13,6 +15,9 @@ Simple Notify is a pure Javascript library to show nice and customizable alert n
 <$notify title="Test simple notify" />
 
 // for wikitext
+<$button message="om-notify">
+send notify
+<$button>
 <$button>
 	<$action-sendmessage $message="om-notify" title="Just test simple notify" autoclose="false" />
 	om-notify
@@ -20,7 +25,13 @@ Simple Notify is a pure Javascript library to show nice and customizable alert n
 ```
 
 ```js
+// send a simple notify
 new $tw.Notify().display();
+
+// close notifier
+const notifyinstance = new $tw.Notify();
+notifyinstance.display(options)
+notifyinstance.close()
 
 // For Developers, you can use `om-notify` to instead of `tm-notify`
 this.parentWidget.dispatchEvent({
