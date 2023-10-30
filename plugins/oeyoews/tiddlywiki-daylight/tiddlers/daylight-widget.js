@@ -19,12 +19,11 @@ module-type: widget
     render(parent, nextSibling) {
       if (!$tw.browser) return;
 
-      const { toggleMode } = require('./daylight-listener');
-
       this.parentDomNode = parent;
       this.computeAttributes();
       this.execute();
 
+      const { toggleMode } = require('./daylight-listener');
       const createElement = $tw.utils.domMaker;
       const wiki = $tw.wiki;
 
@@ -60,6 +59,7 @@ module-type: widget
 
       domNode.addEventListener('click', () => {
         toggleMode();
+        new $tw.Notify().display({ title: '更新模式' });
         this.refreshSelf();
       });
 

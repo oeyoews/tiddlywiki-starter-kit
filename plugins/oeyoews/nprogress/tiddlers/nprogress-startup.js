@@ -1,10 +1,9 @@
 /*\
-title: nprogress-startup.js
+title: $:/plugins/oeyoews/nprogress/nprogress-startup.js
 type: application/javascript
 module-type: startup
 
 nprogress module
-
 \*/
 exports.name = 'nprogress-startup-hook';
 exports.platforms = ['browser'];
@@ -13,8 +12,9 @@ exports.synchronous = true;
 exports.startup = () => {
   try {
     const progress = new $tw.NProgress();
-    progress.start();
     const startTime = performance.now();
+
+    progress.start();
 
     $tw.rootWidget.addEventListener('om-nprogress', (event) => {
       const { type } = event.paramObject || { type: 'start' };
@@ -26,11 +26,10 @@ exports.startup = () => {
       progress[type]();
     });
 
-    window.onload = function () {
+    window.addEventListener('load', () => {
       progress.done();
-      const endTime = performance.now();
-      const loadTime = Math.floor(endTime - startTime);
+      const loadTime = Math.floor(performance.now() - startTime);
       console.log(`🎉 Page loaded in ${loadTime}ms`);
-    };
+    });
   } catch (e) {}
 };
