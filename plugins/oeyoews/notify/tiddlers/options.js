@@ -15,7 +15,7 @@ module.exports = {
   showIcon: true,
   showCloseButton: true,
   autoclose: true,
-  autotimeout: 3000,
+  autotimeout: 1500,
   gap: 20,
   distance: 20,
   type: 1, // 1, 2, 3
