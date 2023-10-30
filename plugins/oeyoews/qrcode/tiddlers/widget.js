@@ -50,8 +50,8 @@ class QRCodeWidget extends Widget {
     const domNode = this.document.createElement('img');
     const svghashtext = encodeURIComponent(this.svgString);
     domNode.src = `data:${this.type},${svghashtext}`;
+    // TODO: add dblclick to toggle visibility
     domNode.className = 'spotlight w-0 md:w-32';
-
 
     parent.insertBefore(domNode, nextSibling);
     this.domNodes.push(domNode);
