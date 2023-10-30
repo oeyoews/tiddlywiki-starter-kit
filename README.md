@@ -6,7 +6,7 @@
 </center>
 
 > [!IMPORTANT]
-> TiddlyWiki starter kit has a large number of dependencies and can be complex. I have done my best to fill in the dependency information and handle any exceptions appropriately. However, it is recommended not to install the plugin blindly unless you know how to handle it properly. The tiddlywiki starter kit will prioritize fixing bugs within this wiki under the time management's allowance. It is not fully compatible with other plugins. It is recommended to use the tiddlywiki starter kit as a base for user
+> TiddlyWiki starter kit has a large number of dependencies and can be complex. I have done my best to fill in the dependency information and handle any exceptions appropriately. However, it is recommended not to install the plugin separately unless you know how to handle it(bug or error) properly. The tiddlywiki starter kit will prioritize fixing bugs within this wiki under the time management's allowance. It is not fully compatible with other tiddlywiki plugins. It is recommended to use the tiddlywiki starter kit as a base for user
 
 <hr>
 
