@@ -5,7 +5,7 @@ caption: rememberme
 <!-- add enable option -->
 <div class="fixed bottom-0 right-0">
 <% if [{$:/info/url/protocol}match[http:]] %>
-<$qrcode text={{info-ip}} width=512/>
+<$qrcode text={{$:/info/url/ip}} width=512/>
 <% else %>
 <$qrcode width=128/>
 <% endif %>
