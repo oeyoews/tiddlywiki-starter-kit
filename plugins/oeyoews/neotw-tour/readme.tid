@@ -1,0 +1,25 @@
+title: $:/plugins/oeyoews/neotw-tour/readme
+description: Neotw Tour
+
+<div class="prose max-w-none prose-indigo">
+
+!! Driver.js TiddlyWiki Plugin
+
+This is a plugin designed to add guided tutorial functionality to TiddlyWiki. It utilizes the https://github.com/kamranahmedse/driver.js library to highlight page elements and display pop-up windows.
+
+!! 示例
+
+<h1 id="h1">H1</h1>
+<h2 id='h2'>H2</h2>
+
+<$tour class="p-2"/>
+
+!! 使用
+
+* 可以使用键盘上的方向键
+
+!! TODO
+
+* update to 1.2.0
+
+</div>
