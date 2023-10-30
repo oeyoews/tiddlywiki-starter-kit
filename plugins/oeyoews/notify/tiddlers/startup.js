@@ -9,11 +9,8 @@ exports.platforms = ['browser'];
 exports.after = ['startup'];
 exports.synchronous = true;
 exports.startup = () => {
-  const { Notify } = require('simple-notify.min.js');
-  const defaultOptions = require('./options');
-
   $tw.rootWidget.addEventListener('om-notify', (event) => {
     const paramObject = event.paramObject || {};
-    new Notify(Object.assign({}, defaultOptions, paramObject));
+    new $tw.Notify().display(paramObject);
   });
 };

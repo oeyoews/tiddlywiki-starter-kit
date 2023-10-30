@@ -20,6 +20,8 @@ Simple Notify is a pure Javascript library to show nice and customizable alert n
 ```
 
 ```js
+new $tw.Notify().display();
+
 // For Developers, you can use `om-notify` to instead of `tm-notify`
 this.parentWidget.dispatchEvent({
   type: 'om-notify',
