@@ -9,6 +9,8 @@ qrcode widget
 // 1.4.4  https://cdn.jsdelivr.net/npm/qrcode@1.4.4/build/qrcode.min.js
 // 1.5.1 有问题, 之后的版本没有构建这个min.js, 可以借助modern.dev, 直接打包插件
 // moderndev 打包后只有32kb, 这里min.js 有54kb
+// @ts-check
+// @ts-ignore
 const QRCode = require('qrcode.min.js');
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 
@@ -59,7 +61,7 @@ class QRCodeWidget extends Widget {
       }
     }
 
-    if (textcontent.length) textcontent = 'This is a empty';
+    if (textcontent?.length) textcontent = 'This is a empty';
     QRCode.toString(
       textcontent,
       {
@@ -71,11 +73,13 @@ class QRCodeWidget extends Widget {
       },
     );
 
-    const domNode = this.document.createElement('img');
     const svghashtext = encodeURIComponent(this.svgString);
-    domNode.src = `data:${this.type},${svghashtext}`;
-    // TODO: add dblclick to toggle visibility
-    domNode.className = 'spotlight w-0 md:w-32';
+    const domNode = $tw.utils.domMaker('img', {
+      class: 'spotlight w-0 md:w-32',
+      attributes: {
+        src: `data:${this.type},${svghashtext}`,
+      },
+    });
 
     parent.insertBefore(domNode, nextSibling);
     this.domNodes.push(domNode);
