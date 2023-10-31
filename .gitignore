@@ -15,3 +15,4 @@ src/tiddlers/
 .tiddlywiki
 output/
 .logs
+twmd/
