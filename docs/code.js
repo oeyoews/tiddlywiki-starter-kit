@@ -40,6 +40,8 @@ wiki.addTiddler({
 $tw.notifier.display(tiddler); // send notification
 $tw.modal.display(title); // show a dialog
 
+$tw.syncer.logger.alert('alert');
+
 // widget
 this.getVariable('currentTiddler'); // 获取当前条目名称;
 this.getVariable('storyTiddler'); // 判断是否是处于story river
