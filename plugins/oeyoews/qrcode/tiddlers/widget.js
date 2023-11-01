@@ -61,7 +61,7 @@ class QRCodeWidget extends Widget {
       }
     }
 
-    if (textcontent?.length) textcontent = 'This is a empty';
+    if (!textcontent?.length) textcontent = 'This is a empty';
     QRCode.toString(
       textcontent,
       {
