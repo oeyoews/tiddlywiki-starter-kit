@@ -35,4 +35,3 @@ class Swal2Widget extends Widget {
 }
 
 exports.swal2 = Swal2Widget;
-

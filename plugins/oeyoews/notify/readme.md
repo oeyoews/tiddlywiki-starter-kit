@@ -30,8 +30,8 @@ new $tw.Notify().display();
 
 // close notifier
 const notifyinstance = new $tw.Notify();
-notifyinstance.display(options)
-notifyinstance.close()
+notifyinstance.display(options);
+notifyinstance.close();
 
 // For Developers, you can use `om-notify` to instead of `tm-notify`
 this.parentWidget.dispatchEvent({

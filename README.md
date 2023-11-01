@@ -45,7 +45,6 @@ npm create neotw-app@latest
 
 > I recommend shallow cloning this project and deploying it manually on Vercel
 
-
 ## Documentaion
 
 Working through the night...
