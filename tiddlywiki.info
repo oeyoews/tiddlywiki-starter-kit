@@ -52,6 +52,15 @@
     "oeyoews/tiddlywiki-tid2png"
   ],
   "build": {
+    "json": [
+      "--render",
+      ".",
+      "tiddlers.json",
+      "text/plain",
+      "$:/core/templates/exporters/JsonFile",
+      "exportFilter",
+      "[!is[system]]"
+    ],
     "index": [
       "--verbose",
       "--output",
@@ -61,6 +70,10 @@
       "--render",
       "$:/plugins/tiddlywiki/tiddlyweb/save/offline",
       "offline.html",
+      "text/plain",
+      "--render",
+      "$:/plugins/tiddlywiki/tiddlyweb/save/offline",
+      "tiddlers.json",
       "text/plain",
       "--render",
       "$:/core/save/offline-external-js",

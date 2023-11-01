@@ -9,6 +9,16 @@ const OUTPUTDIR = process.env.OUTPUTDIR || '.tiddlywiki';
  * @description tiddlywiki 构建命令
  */
 export default {
+  // 需要before index.html 构建 ???
+  json: [
+    '--render',
+    '.',
+    'tiddlers.json',
+    'text/plain',
+    '$:/core/templates/exporters/JsonFile',
+    'exportFilter',
+    '[!is[system]]',
+  ],
   // build index.html
   index: [
     '--verbose',
@@ -18,8 +28,11 @@ export default {
     '$:/StoryList',
     '--render',
     '$:/plugins/tiddlywiki/tiddlyweb/save/offline',
-    // '[[external-]addsuffix<version>addsuffix[.html]]',
-    'offline.html',
+    'offline.html', // '[[external-]addsuffix<version>addsuffix[.html]]',
+    'text/plain',
+    '--render',
+    '$:/plugins/tiddlywiki/tiddlyweb/save/offline',
+    'tiddlers.json', // '[[external-]addsuffix<version>addsuffix[.html]]',
     'text/plain',
     '--render',
     '$:/core/save/offline-external-js',
