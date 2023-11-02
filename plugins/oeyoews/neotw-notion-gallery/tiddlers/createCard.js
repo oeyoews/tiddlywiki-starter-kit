@@ -46,8 +46,8 @@ module.exports = function createCard(
   const imageNode = createElement('img', {
     class: `object-cover w-full h-full rounded-md group-hover:scale-105 transition-all duration-800 ease-in-out shadow-md aspect-video`,
     attributes: {
-      loading: 'lazy',
       ['data-src']: cover,
+      alt: title, // '如果不设置, 会有黑边'
     },
   });
 

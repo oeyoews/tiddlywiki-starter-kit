@@ -32,7 +32,13 @@ class ImageWidget extends Widget {
 
     const imageNode = this.document.createElement('img');
 
-    imageNode.classList.add('bg-cover', 'aspect-video', 'rounded', 'spotlight');
+    imageNode.classList.add(
+      'bg-cover',
+      'aspect-video',
+      'rounded',
+      'spotlight',
+      'w-full',
+    );
     imageNode.setAttribute('data-src', src);
     if (!this.hasAttribute('src')) {
       imageNode.title = keyword;
