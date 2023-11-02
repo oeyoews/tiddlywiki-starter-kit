@@ -24,33 +24,32 @@ om-img widget
       this.computeAttributes();
       this.execute();
 
-      const keyword = this.getAttribute('keyword', 'sea');
-      const resolution = this.getAttribute('resolution', '1920x1080');
-      const src = `https://source.unsplash.com/random/${resolution}/?${keyword}`;
-      const img = new Image();
+      const twimageobserver = require('$:/plugins/oeyoews/neotw-notion-gallery/twimageobserver.js');
 
-      const classNames = this.getAttribute('class', '');
+      const {
+        keyword = 'sea',
+        resolution = '1920x1080',
+        class: classNames,
+        src = `https://source.unsplash.com/random/${resolution}/?${keyword}`,
+      } = this.attributes;
 
-      const dynamicClasses = [
-        'blur',
-        'w-64',
-        'h-full',
+      const imageNode = this.document.createElement('img');
+
+      imageNode.classList.add(
+        'bg-cover',
+        'aspect-video',
         'rounded',
-        'scale-105',
-        'transition-all',
-        'durtaion-400',
-        'bg-black/10',
-      ];
+        'spotlight',
+      );
+      imageNode.setAttribute('data-src', src);
+      if (!this.hasAttribute('src')) {
+        imageNode.title = keyword;
+      }
+      classNames && imageNode.classList.add(...classNames.split(' '));
+      twimageobserver.observe(imageNode);
 
-      img.classList.add('bg-cover', 'aspect-video', ...dynamicClasses);
-      img.src = src;
-      classNames && img.classList.add(...classNames.split(' '));
-      img.onload = () => {
-        img.classList.remove(...dynamicClasses);
-      };
-
-      parent.insertBefore(img, nextSibling);
-      this.domNodes.push(img);
+      parent.insertBefore(imageNode, nextSibling);
+      this.domNodes.push(imageNode);
     }
   }
 
@@ -60,5 +59,5 @@ om-img widget
    * @param {string} keyword
    * @param {string} class
    */
-  exports['ukimg'] = ImageWidget;
+  exports['oimg'] = ImageWidget;
 })();

@@ -11,6 +11,7 @@ const imagecallback = (entries, observer) => {
   entries.forEach((entry) => {
     const image = entry.target;
     image.classList.add(...dynamicClassed.split(' '));
+    image.setAttribute('loading', 'lazy');
     // 开始加载图片
     if (entry.isIntersecting) {
       image.src = image.getAttribute(dataSrc);
