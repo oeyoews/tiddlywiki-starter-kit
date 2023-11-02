@@ -4,7 +4,6 @@ type: application/javascript
 module-type: widget
 
 hitokoto widget
-
 \*/
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 const getRandomColor = require('./getRandomColor');
