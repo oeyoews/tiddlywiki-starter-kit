@@ -17,6 +17,7 @@ om-img widget
       super(parseTreeNode, options);
     }
 
+    // TODO: support preset width height
     render(parent, nextSibling) {
       if (!$tw.browser) return;
 
