@@ -6,119 +6,119 @@ module-type: widget
 Gravatar and QQ Github Avatar Widget(Lastest gqg)
 
 \*/
-  const Widget = require('$:/core/modules/widgets/widget.js').widget;
+const Widget = require('$:/core/modules/widgets/widget.js').widget;
 
-  class AvatarWidget extends Widget {
-    constructor(parseTreeNode, options) {
-      super(parseTreeNode, options);
-    }
-
-    render(parent, nextSibling) {
-      if (!$tw.browser) return;
-      this.parentDomNode = parent;
-      this.computeAttributes();
-      this.execute();
-
-      const createElement = $tw.utils.domMaker;
-  const md5 = require('$:/plugins/oeyoews/tiddlywiki-gravatar/md5.min.js');
-  const twimageobserver = require('$:/plugins/oeyoews/neotw-notion-gallery/twimageobserver.js');
-
-  let getDefaultEmail =
-    $tw.wiki.getTiddlerText(
-      '$:/config/plugins/oeyoews/tiddlywiki-gravatar/email',
-    ) || '2956398608@qq.com';
-  const Username = $tw.wiki.getTiddlerText('$:/status/UserName') || 'oeyoews';
-
-  const {
-    email = getDefaultEmail /** @example url="./files/xxx.png" url="https://xxx.png" */,
-    url,
-    username = Username,
-    center,
-    inline,
-    link,
-    class: className = 'w-[48px]',
-    size = 100,
-    alt = 'Avatar',
-    type,
-    key = 'sea',
-  } = this.attributes;
-
-      const hash = md5(email.trim().toLowerCase());
-
-      const types = {
-        unsplash: `http://source.unsplash.com/random?${key}`,
-        qq: `https://q1.qlogo.cn/g?b=qq&nk=${email}&s=${size}`,
-        github: `https://github.com/${username}.png?size=${size}`,
-        gravatar: `https://gravatar.com/avatar/${hash}.png?s=${size}`,
-        gcn: `https://cn.gravatar.com/avatar/${hash}.png?s=${size}`,
-        url,
-      };
-
-      const hasType = Object.keys(types).includes(type);
-
-      const src = hasType ? types[type] : types.qq;
-
-      const imgClass = `rounded-full align-middle duration-200 transition object-cover object-center ${className} aspect-square`;
-
-      const imageNode = createElement('img', {
-        class: imgClass,
-        attributes: {
-          'data-src': src,
-          // alt,
-        },
-      });
-
-      twimageobserver.observe(imageNode);
-
-      if (inline) {
-        imageNode.classList.remove('w-[48px]');
-        imageNode.classList.add(
-          'mx-0',
-          'w-[20px]',
-          'outline',
-          'outline-1',
-          'p-0.5',
-        );
-      }
-
-      const tempClassList = 'mx-auto shadow-md block outline outline-1 p-1';
-
-      center && imageNode.classList.add(...tempClassList.split(' '));
-
-      // types[type]?.includes(type) && img.setAttribute('data-type', type);
-
-      // 考虑图片加载失败, 但是不考虑图片加载超时(offline)
-      imageNode.onerror = () => {
-        // console.warn(src, '图片加载失败');
-        imageNode.src =
-          'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=identicon&s=100';
-      };
-
-      const linkNode = createElement('a', {
-        attributes: {
-          target: '_blank',
-          rel: 'noopener noreferrer',
-          style: 'text-decoration: none;',
-          href: link,
-        },
-        children: [imageNode],
-      });
-
-      const domNode = link ? linkNode : imageNode;
-
-      parent.insertBefore(domNode, nextSibling);
-      this.domNodes.push(domNode);
-    }
+class AvatarWidget extends Widget {
+  constructor(parseTreeNode, options) {
+    super(parseTreeNode, options);
   }
 
-  /**
-   * @description Gravatar and QQ  Github Avatar Widget
-   * @param {string} username
-   * @param {string} email
-   * @param {string} type
-   * @param {string} size
-   * @param {string} link
-   * @param {string} center
-   * @param {string} alt
-   */
-  exports.avatar = AvatarWidget;
+  render(parent, nextSibling) {
+    if (!$tw.browser) return;
+    this.parentDomNode = parent;
+    this.computeAttributes();
+    this.execute();
+
+    const createElement = $tw.utils.domMaker;
+    const md5 = require('$:/plugins/oeyoews/tiddlywiki-gravatar/md5.min.js');
+    const twimageobserver = require('$:/plugins/oeyoews/neotw-notion-gallery/twimageobserver.js');
+
+    let getDefaultEmail =
+      $tw.wiki.getTiddlerText(
+        '$:/config/plugins/oeyoews/tiddlywiki-gravatar/email',
+      ) || '2956398608@qq.com';
+    const Username = $tw.wiki.getTiddlerText('$:/status/UserName') || 'oeyoews';
+
+    const {
+      email = getDefaultEmail /** @example url="./files/xxx.png" url="https://xxx.png" */,
+      url,
+      username = Username,
+      center,
+      inline,
+      link,
+      class: className = 'w-[48px]',
+      size = 100,
+      alt = 'Avatar',
+      type,
+      key = 'sea',
+    } = this.attributes;
+
+    const hash = md5(email.trim().toLowerCase());
+
+    const types = {
+      unsplash: `http://source.unsplash.com/random?${key}`,
+      qq: `https://q1.qlogo.cn/g?b=qq&nk=${email}&s=${size}`,
+      github: `https://github.com/${username}.png?size=${size}`,
+      gravatar: `https://gravatar.com/avatar/${hash}.png?s=${size}`,
+      gcn: `https://cn.gravatar.com/avatar/${hash}.png?s=${size}`,
+      url,
+    };
+
+    const hasType = Object.keys(types).includes(type);
+
+    const src = hasType ? types[type] : types.qq;
+
+    const imgClass = `rounded-full align-middle duration-200 transition object-cover object-center ${className} aspect-square`;
+
+    const imageNode = createElement('img', {
+      class: imgClass,
+      attributes: {
+        'data-src': src,
+        // alt,
+      },
+    });
+
+    twimageobserver.observe(imageNode);
+
+    if (inline) {
+      imageNode.classList.remove('w-[48px]');
+      imageNode.classList.add(
+        'mx-0',
+        'w-[20px]',
+        'outline',
+        'outline-1',
+        'p-0.5',
+      );
+    }
+
+    const tempClassList = 'mx-auto shadow-md block outline outline-1 p-1';
+
+    center && imageNode.classList.add(...tempClassList.split(' '));
+
+    // types[type]?.includes(type) && img.setAttribute('data-type', type);
+
+    // 考虑图片加载失败, 但是不考虑图片加载超时(offline)
+    imageNode.onerror = () => {
+      // console.warn(src, '图片加载失败');
+      imageNode.src =
+        'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=identicon&s=100';
+    };
+
+    const linkNode = createElement('a', {
+      attributes: {
+        target: '_blank',
+        rel: 'noopener noreferrer',
+        style: 'text-decoration: none;',
+        href: link,
+      },
+      children: [imageNode],
+    });
+
+    const domNode = link ? linkNode : imageNode;
+
+    parent.insertBefore(domNode, nextSibling);
+    this.domNodes.push(domNode);
+  }
+}
+
+/**
+ * @description Gravatar and QQ  Github Avatar Widget
+ * @param {string} username
+ * @param {string} email
+ * @param {string} type
+ * @param {string} size
+ * @param {string} link
+ * @param {string} center
+ * @param {string} alt
+ */
+exports.avatar = AvatarWidget;
