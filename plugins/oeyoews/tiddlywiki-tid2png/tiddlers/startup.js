@@ -6,22 +6,20 @@ module-type: startup
 tid2pdf module
 
 \*/
-(function () {
-  /*jslint node: true, browser: true */
-  /*global $tw: false */
-  'use strict';
 
-  exports.name = 'tid2png-startup-hook';
-  exports.platforms = ['browser'];
-  exports.after = ['startup'];
-  exports.synchronous = true;
-  exports.startup = () => {
-    const exportPng = require('./export-png.js');
-    $tw.rootWidget.addEventListener('om-export-png', (event) => {
-      const tiddlerTitle = event.tiddlerTitle;
-      const selector = event.selector;
-      const { customSelector } = event.paramObject || {};
-      exportPng(tiddlerTitle, customSelector || selector);
-    });
-  };
-})();
+exports.name = 'tid2png-startup-hook';
+exports.platforms = ['browser'];
+exports.after = ['startup'];
+exports.synchronous = true;
+exports.startup = () => {
+  const exportPng = require('./export-png.js');
+  $tw.rootWidget.addEventListener('om-export-png', (event) => {
+    const {
+      tiddlerTitle,
+      selector,
+      paramObject: { customSelector } = {},
+    } = event;
+
+    exportPng(tiddlerTitle, customSelector || selector);
+  });
+};

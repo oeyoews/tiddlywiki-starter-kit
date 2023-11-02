@@ -24,7 +24,6 @@ module.exports = function exportPng(tiddlerTitle, customSelector) {
 
   new $tw.NProgress().start();
   const selector = customSelector || `[data-tiddler-title="${title}"]`;
-  console.log(customSelector, selector);
   // html2canvas 不支持 cloneNode, 在widget中可以直接移除popup,因为widget会重新渲染, popup 会自动恢复? 但是这是一个listener, 不建议直接修改dom;
   // 下面使用了hidden隐藏titlebar元素, 实际页面不会被用户感知到有所抖动(由于html2canvas是异步)
   const element = document.querySelector(selector);
