@@ -24,9 +24,11 @@ class CardsWidget extends Widget {
     if (!$tw.browser) return;
     // check if tailwind is installed
     // need add window on browser
-    if (!window.tailwind) {
-      console.warn('tailwind not installed by @neotw-notion-gallery');
-    }
+    	if (!$tw.modules.titles['tailwindcss.min.js']) {
+        logger.alert(
+          "The plugin 'oeyoews/neotw-notion-gallery' requires the 'tiddlywiki/tailwindcss-plus' plugin to be installed",
+        );
+      }
     // one browser env
     const twimageobserver = require('./twimageobserver');
 

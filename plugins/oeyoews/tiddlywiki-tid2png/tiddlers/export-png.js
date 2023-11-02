@@ -7,7 +7,7 @@ export
 \*/
 const html2canvas = require('html2canvas.min.js');
 
-module.exports = function exportPng(tiddlerTitle, customSelector) {
+module.exports = function exportPng(title, customSelector) {
   if (customSelector && !this.document.querySelector(customSelector)) {
     $tw.wiki.addTiddler({
       title: '$:/temp/export-png',
@@ -16,13 +16,13 @@ module.exports = function exportPng(tiddlerTitle, customSelector) {
     $tw.notifier.display('$:/temp/export-png');
     return;
   }
-  const title = tiddlerTitle;
 
   const downloadSvg = $tw.wiki.getTiddlerText(
     '$:/plugins/oeyoews/tiddlywiki-tid2png/download.svg',
   );
+  const progress = new $tw.NProgress();
 
-  new $tw.NProgress().start();
+  progress.start();
   const selector = customSelector || `[data-tiddler-title="${title}"]`;
   // html2canvas 不支持 cloneNode, 在widget中可以直接移除popup,因为widget会重新渲染, popup 会自动恢复? 但是这是一个listener, 不建议直接修改dom;
   // 下面使用了hidden隐藏titlebar元素, 实际页面不会被用户感知到有所抖动(由于html2canvas是异步)
@@ -53,26 +53,24 @@ module.exports = function exportPng(tiddlerTitle, customSelector) {
       const imgData = canvas.toDataURL('image/png', 0.8); // 转换canvas为PNG格式的数据URL
 
       // 这个图片是用来预览的
-      const imgNode = new Image();
-      imgNode.src = imgData;
-      imgNode.crossOrigin = '';
-      imgNode.classList.add('max-w-3xl');
-
-      const containerNode = document.createElement('div');
+      const imgNode = $tw.utils.domMaker('img', {
+        class: 'max-w-3xl',
+        attributes: {
+          src: imgData,
+          crossOrigin: '',
+        },
+      });
 
       // 只预览部分内容
-      containerNode.classList.add(
-        'rounded-lg',
-        'overflow-y-hidden',
-        'max-h-screen',
-        'max-w-3xl',
-        'm-0',
-      );
-      containerNode.appendChild(imgNode);
-      new $tw.NProgress().done();
+      const containerNode = $tw.utils.domMaker('div', {
+        class: 'rounded-lg overflow-y-hidden max-h-screen max-w-3xl m-0',
+        children: [imgNode],
+      });
+
+      progress.done();
 
       const downloadPng = (href) => {
-        const linkNode = document.createElement('a');
+        const linkNode = this.document.createElement('a');
         linkNode.href = href;
         linkNode.download = `${title}.png`;
         linkNode.style.display = 'none';
@@ -81,8 +79,7 @@ module.exports = function exportPng(tiddlerTitle, customSelector) {
         document.body.removeChild(linkNode);
       };
 
-      // TODO
-      typeof Swal !== 'undefined'
+      $tw.modules.titles['$:/plugins/oeyoews/neotw-swal2/swal2.min.js']
         ? Swal.fire({
             html: containerNode,
             title: `Image size: ${sizeInMB} MB`,
