@@ -10,19 +10,22 @@ const imagecallback = (entries, observer) => {
 
   entries.forEach((entry) => {
     const image = entry.target;
+    const src = image.getAttribute('data-src');
     image.classList.add(...dynamicClassed.split(' '));
+    image.src = ''; // 设置一张后备图片
     image.setAttribute('loading', 'lazy');
     // 开始加载图片
     if (entry.isIntersecting) {
-      image.src = image.getAttribute(dataSrc);
-      image.removeAttribute(dataSrc);
+      image.src = src;
       // 加载动效
       image.onload = () => {
+        // 必须加载后???
+        image.removeAttribute(dataSrc);
         image.classList.remove(...dynamicClassed.split(' '));
         image.classList.add('cursor-pointer');
       };
       // 加载图片后取消监测
-      observer.unobserve(image) && console.log('en');
+      observer.unobserve(image);
     }
   });
 };

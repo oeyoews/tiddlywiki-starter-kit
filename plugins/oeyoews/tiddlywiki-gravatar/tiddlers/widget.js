@@ -27,6 +27,7 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
       this.execute();
 
       const createElement = $tw.utils.domMaker;
+      const twimageobserver = require('$:/plugins/oeyoews/neotw-notion-gallery/twimageobserver.js');
 
       let getDefaultEmail =
         $tw.wiki.getTiddlerText(
@@ -64,38 +65,40 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
 
       const src = hasType ? types[type] : types.qq;
 
-      const dynamicClasses = 'blur scale-105';
-      const imgClass = `rounded-full align-middle duration-200 transition object-cover object-center ${className} ${dynamicClasses} aspect-square`;
+      const imgClass = `rounded-full align-middle duration-200 transition object-cover object-center ${className} aspect-square`;
 
-      const img = createElement('img', {
+      const imageNode = createElement('img', {
         class: imgClass,
         attributes: {
-          src,
-          alt,
+          'data-src': src,
+          // alt,
         },
       });
 
+      twimageobserver.observe(imageNode);
+
       if (inline) {
-        img.classList.remove('w-[48px]');
-        img.classList.add('mx-0', 'w-[20px]', 'outline', 'outline-1', 'p-0.5');
+        imageNode.classList.remove('w-[48px]');
+        imageNode.classList.add(
+          'mx-0',
+          'w-[20px]',
+          'outline',
+          'outline-1',
+          'p-0.5',
+        );
       }
 
       const tempClassList = 'mx-auto shadow-md block outline outline-1 p-1';
 
-      center && img.classList.add(...tempClassList.split(' '));
+      center && imageNode.classList.add(...tempClassList.split(' '));
 
       // types[type]?.includes(type) && img.setAttribute('data-type', type);
 
       // 考虑图片加载失败, 但是不考虑图片加载超时(offline)
-      img.onerror = () => {
+      imageNode.onerror = () => {
         console.warn(src, '图片加载失败');
-        img.classList.remove(...dynamicClasses.split(' '));
-        img.src =
+        imageNode.src =
           'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=identicon&s=100';
-      };
-
-      img.onload = () => {
-        img.classList.remove(...dynamicClasses.split(' '));
       };
 
       const linkNode = createElement('a', {
@@ -105,10 +108,10 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
           style: 'text-decoration: none;',
           href: link,
         },
-        children: [img],
+        children: [imageNode],
       });
 
-      const domNode = link ? linkNode : img;
+      const domNode = link ? linkNode : imageNode;
 
       parent.insertBefore(domNode, nextSibling);
       this.domNodes.push(domNode);
