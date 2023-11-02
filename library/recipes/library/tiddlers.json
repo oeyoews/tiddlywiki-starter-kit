@@ -183,6 +183,7 @@
         "name": "neotw-image-better",
         "dependents": "",
         "list": "readme",
+        "readme": "## oimg\n\n<$oimg src=\"\"/>",
         "requires-reload": "yes"
     },
     {
