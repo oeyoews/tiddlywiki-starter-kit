@@ -9,6 +9,7 @@ neotw-notion-gallery widget
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 const createCard = require('./createCard');
 const config = require('./config');
+const imagecallback = require('./imagecallback');
 
 class CardsWidget extends Widget {
   constructor(parseTreeNode, options) {
@@ -79,9 +80,26 @@ class CardsWidget extends Widget {
 
     const data = prepareCardData(cardsTiddlers);
 
-    data.forEach(({ title, cover, icon }) => {
-      container.appendChild(createCard(title, cover, navigate, icon, standard));
-    });
+
+  const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.3, // 当图片50%进入可视区域时加载
+  };
+
+  const observer = new IntersectionObserver(imagecallback, options);
+
+  data.forEach(({ title, cover, icon }) => {
+    const { imageNode, item } = createCard(
+      title,
+      cover,
+      navigate,
+      icon,
+      standard,
+    );
+    container.appendChild(item);
+    observer.observe(imageNode);
+  });
 
     parent.insertBefore(container, nextSibling);
     this.domNodes.push(container);
