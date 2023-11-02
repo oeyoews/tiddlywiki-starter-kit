@@ -6,12 +6,6 @@ module-type: widget
 Gravatar and QQ Github Avatar Widget(Lastest gqg)
 
 \*/
-(function () {
-  /*jslint node: true, browser: true */
-  /*global $tw: false */
-  'use strict';
-
-  const md5 = require('$:/plugins/oeyoews/tiddlywiki-gravatar/md5.min.js');
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
 
   class AvatarWidget extends Widget {
@@ -21,34 +15,33 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
 
     render(parent, nextSibling) {
       if (!$tw.browser) return;
-
       this.parentDomNode = parent;
       this.computeAttributes();
       this.execute();
 
       const createElement = $tw.utils.domMaker;
-      const twimageobserver = require('$:/plugins/oeyoews/neotw-notion-gallery/twimageobserver.js');
+  const md5 = require('$:/plugins/oeyoews/tiddlywiki-gravatar/md5.min.js');
+  const twimageobserver = require('$:/plugins/oeyoews/neotw-notion-gallery/twimageobserver.js');
 
-      let getDefaultEmail =
-        $tw.wiki.getTiddlerText(
-          '$:/config/plugins/oeyoews/tiddlywiki-gravatar/email',
-        ) || '2956398608@qq.com';
-      const Username =
-        $tw.wiki.getTiddlerText('$:/status/UserName') || 'oeyoews';
+  let getDefaultEmail =
+    $tw.wiki.getTiddlerText(
+      '$:/config/plugins/oeyoews/tiddlywiki-gravatar/email',
+    ) || '2956398608@qq.com';
+  const Username = $tw.wiki.getTiddlerText('$:/status/UserName') || 'oeyoews';
 
-      let {
-        email = getDefaultEmail /** @example url="./files/xxx.png" url="https://xxx.png" */,
-        url,
-        username = Username,
-        center,
-        inline,
-        link,
-        class: className = 'w-[48px]',
-        size = 100,
-        alt = 'Avatar',
-        type,
-        key = 'sea',
-      } = this.attributes;
+  const {
+    email = getDefaultEmail /** @example url="./files/xxx.png" url="https://xxx.png" */,
+    url,
+    username = Username,
+    center,
+    inline,
+    link,
+    class: className = 'w-[48px]',
+    size = 100,
+    alt = 'Avatar',
+    type,
+    key = 'sea',
+  } = this.attributes;
 
       const hash = md5(email.trim().toLowerCase());
 
@@ -129,4 +122,3 @@ Gravatar and QQ Github Avatar Widget(Lastest gqg)
    * @param {string} alt
    */
   exports.avatar = AvatarWidget;
-})();
