@@ -39,6 +39,7 @@ class ImageWidget extends Widget {
       'spotlight',
       'w-full',
     );
+    imageNode.alt = ' ';
     imageNode.setAttribute('data-src', src);
     if (!this.hasAttribute('src')) {
       imageNode.title = keyword;
