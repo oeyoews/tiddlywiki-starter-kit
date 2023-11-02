@@ -34,7 +34,6 @@ class SpotlightWidget extends Widget {
         alt,
       },
     });
-    Spotlight;
 
     domNode.addEventListener('click', () => {
       Spotlight.show([
