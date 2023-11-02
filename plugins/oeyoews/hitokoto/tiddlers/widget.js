@@ -22,6 +22,7 @@ class HitokotoWidget extends Widget {
 
     const createElement = $tw.utils.domMaker;
 
+    // 限制99条, 否则文字多了后会卡顿
     const { filter = '[tag[Journal]!sort[created]limit[99]]' } =
       this.attributes;
     // getall journal tiddler
