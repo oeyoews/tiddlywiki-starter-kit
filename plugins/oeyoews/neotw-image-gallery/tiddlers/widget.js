@@ -16,9 +16,12 @@ class GalleryWidget extends Widget {
   }
 
   render(parent, nextSibling) {
+    if (!$tw.browser) return;
     this.parentDomNode = parent;
     this.computeAttributes();
     this.execute();
+
+    const twimageobserver = require('$:/plugins/oeyoews/neotw-notion-gallery/twimageobserver.js');
 
     const createElement = $tw.utils.domMaker;
     const { json = 'image-list.json' } = this.attributes;
@@ -30,7 +33,9 @@ class GalleryWidget extends Widget {
     const children = [];
 
     imagesURL.forEach(([title, src]) => {
-      children.push(createImage(title, src));
+      const imageNode = createImage(title, src);
+      twimageobserver.observe(imageNode);
+      children.push(imageNode);
     });
 
     const domNode = createElement('div', {

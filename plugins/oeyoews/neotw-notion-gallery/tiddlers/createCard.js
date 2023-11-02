@@ -16,7 +16,6 @@ module.exports = function createCard(
 ) {
   const createElement = $tw.utils.domMaker;
 
-  const dynamicClassNames = 'scale-105 blur-md bg-black/10 cursor-wait';
   const itemClassList =
     'flex flex-col items-center justify-center p-0 group relative';
   const galleryTitleClassList =
@@ -45,7 +44,7 @@ module.exports = function createCard(
   galleryTitle.addEventListener('click', () => clickEvents(title));
 
   const imageNode = createElement('img', {
-    class: `object-cover w-full h-full rounded-md group-hover:scale-105 transition-all duration-800 ease-in-out shadow-md aspect-video ${dynamicClassNames}`,
+    class: `object-cover w-full h-full rounded-md group-hover:scale-105 transition-all duration-800 ease-in-out shadow-md aspect-video`,
     attributes: {
       loading: 'lazy',
       ['data-src']: cover,
