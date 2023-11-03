@@ -29,7 +29,6 @@ const localPlugins = [
 ];
 
 const onlinePlugins = [
-  'oeyoews/neotw-fetch',
   'oeyoews/tiddlywiki-github-share',
   'oeyoews/tiddlywiki-readonly',
   'oeyoews/neotw-notranslate',

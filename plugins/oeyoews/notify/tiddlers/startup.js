@@ -10,7 +10,7 @@ exports.after = ['startup'];
 exports.synchronous = true;
 exports.startup = () => {
   $tw.rootWidget.addEventListener('om-notify', (event) => {
-    const paramObject = event.paramObject || {};
+    const { paramObject = {} } = event;
     new $tw.Notify().display(paramObject);
   });
 };
