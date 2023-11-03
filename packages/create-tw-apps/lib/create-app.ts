@@ -102,7 +102,7 @@ export default async function createApp() {
       type: 'text',
       name: 'otherTiddlyWikiPackage',
       message: `Enter version`,
-      initial: '5.2.1',
+      initial: '5.3.1',
       validate: (input) => {
         const versionPattern = /^\d+\.\d+\.\d+$/; // 正则表达式模式
         if (versionPattern.test(input)) {

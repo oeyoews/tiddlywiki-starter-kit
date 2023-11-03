@@ -1,6 +1,6 @@
 {
   "name": "create-tw-apps",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "",
   "keywords": [
     "tiddlywiki"
@@ -12,7 +12,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "ncc build ./index.ts -w -o dist/",
-    "release": "ncc build ./index.ts -o ./dist/ --minify --no-cache --no-source-map-register && pnpm run add:template",
+    "start": "node dist/index.js",
+    "build": "ncc build ./index.ts -o ./dist/ --minify --no-cache --no-source-map-register && pnpm run add:template",
     "add:template": "cp template dist/ -r"
   },
   "devDependencies": {
