@@ -5,9 +5,7 @@ module-type: library
 
 仅支持简单的两层数据嵌套
 \*/
-module.exports = (url, filename, type = 'text') => {
-  if (!url) alert('url 为空');
-  console.log(filename, url);
+exports.addfile = (url, filename, type = 'text') => {
   fetch(url)
     .then((res) => {
       if (!res.ok) return;
@@ -25,4 +23,12 @@ module.exports = (url, filename, type = 'text') => {
         text: data,
       });
     });
+};
+
+// cache
+exports.getText = (url) => {
+  return fetch(url).then((res) => {
+    if (!res.ok) return;
+    return res.text();
+  });
 };

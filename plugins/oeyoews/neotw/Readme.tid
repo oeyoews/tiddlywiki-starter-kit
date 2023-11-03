@@ -2,4 +2,4 @@ title: $:/plugins/oeyoews/neotw/Readme
 description: Neotw Readme
 caption: Readme
 
-{{$:/plugins/oeyoews/neotw/README}}
+<$fetch />

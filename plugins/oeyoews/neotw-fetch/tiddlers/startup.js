@@ -11,7 +11,7 @@ exports.after = ['startup'];
 exports.synchronous = true;
 
 exports.startup = () => {
-  const addfile = require('./addfile');
+  const { addfile } = require('./addfile');
 
   const readmeURL =
     'https://raw.githubusercontent.com/oeyoews/neotw/main/README.md';
@@ -23,7 +23,4 @@ exports.startup = () => {
     } = event;
     addfile(url, fileName);
   });
-
-  const fileName = '$:/plugins/oeyoews/neotw/README';
-  addfile(readmeURL, fileName);
 };
