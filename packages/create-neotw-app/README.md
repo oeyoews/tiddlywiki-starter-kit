@@ -8,7 +8,6 @@
 - support packagemanager option
   https://github.com/vercel/next.js/blob/canary/packages/create-next-app/index.ts#L24
 - 使用 commander 支持 options arg
-- 使用 cross-spawn 执行跨平台命令
 - version
 - check npm package update automatically
 - (待定,问题比较多)继承 kookma 的一些模板, 和 tiddlyhost 一些比较火的 edition(需要支持 nodejs, 不使用单文件)
