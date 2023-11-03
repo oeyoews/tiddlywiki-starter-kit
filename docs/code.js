@@ -20,6 +20,8 @@ wiki.deleteTiddler();
 wiki.filterTiddlers('[!is[system]]');
 wiki.getTiddlersWithTag(tag);
 $tw.wiki.getTiddlersAsJson(title);
+const logger = new $tw.utils.Logger('alert title');
+logger.alert('xxx');
 
 wiki.setTiddlerData(title, data, fields, options);
 

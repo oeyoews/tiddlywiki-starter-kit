@@ -1,61 +1,59 @@
 /*\
-title: fetch-mdfile/widget
+title: $:/plugins/oeyoews/neotw-fetch/widget.js
 type: application/javascript
 module-type: widget
 
 fetch-mdfile widget
-
 \*/
-// TODO: refresh textContent
-// debounce
-(function () {
-  /*jslint node: true, browser: true */
-  /*global $tw: false */
-  'use strict';
+const Widget = require('$:/core/modules/widgets/widget.js').widget;
+const addfile = require('./addfile');
 
-  if (!$tw.browser) return;
-
-  const Widget = require('$:/core/modules/widgets/widget.js').widget;
-
-  class FetchWidget extends Widget {
-    constructor(parseTreeNode, options) {
-      super(parseTreeNode, options);
-    }
-
-    render(parent, nextSibling) {
-      this.parentDomNode = parent;
-      this.computeAttributes();
-      this.execute();
-
-      const timestamp = new Date().getTime();
-      let filename = this.getAttribute('filename', `MDFile-${timestamp}`);
-      filename += ' 📝';
-      const modified = $tw.wiki.getTiddler(filename)?.fields.modified;
-      const url = this.getAttribute(
-        'url',
-        'https://raw.githubusercontent.com/oeyoews/neotw/main/README.md',
-      );
-
-      const buttonNode = this.document.createElement('button');
-      buttonNode.textContent = `${filename}`;
-      if (modified) {
-        buttonNode.textContent = `${filename} updated ${modified}`;
-      }
-
-      parent.insertBefore(buttonNode, nextSibling);
-      this.domNodes.push(buttonNode);
-
-      buttonNode.onclick = async () => {
-        NProgress.start();
-        const response = await fetch(url);
-        const text = await response.text();
-        $tw.wiki.setText(filename, 'text', null, text);
-        $tw.wiki.setText(filename, 'type', null, 'text/markdown');
-        NProgress.done();
-        // buttonNode.textContent = `${fileName} updated ${modified}`;
-      };
-    }
+class FetchWidget extends Widget {
+  constructor(parseTreeNode, options) {
+    super(parseTreeNode, options);
   }
 
-  exports['fetch-mdfile'] = FetchWidget;
-})();
+  render(parent, nextSibling) {
+    if (!$tw.browser) return;
+    this.parentDomNode = parent;
+    this.computeAttributes();
+    this.execute();
+
+    if (!$tw.modules.titles['nprogress.min.js']) {
+      const notify = new $tw.Notify();
+      notify.display({
+        title: 'neotw-fetch',
+        status: 'warning',
+        autoclose: false,
+        type: 1,
+        text: '缺失 NProgress 插件',
+      });
+    }
+    const progress = new $tw.NProgress();
+    const timestamp = new Date().getTime();
+
+    const defaulturl =
+      'https://raw.githubusercontent.com/oeyoews/neotw/main/README.md';
+
+    const { url = defaulturl, filename = `MDFile-${timestamp}` } =
+      this.attributes;
+
+    const buttonNode = this.document.createElement('button');
+    buttonNode.textContent = `${filename} - ${url}`;
+
+    parent.insertBefore(buttonNode, nextSibling);
+    this.domNodes.push(buttonNode);
+
+    buttonNode.addEventListener('click', () => {
+      progress.start();
+      addfile(url, filename);
+      this.refreshSelf();
+      progress.done();
+    });
+  }
+  refresh() {
+    return false;
+  }
+}
+
+exports['fetch'] = FetchWidget;
