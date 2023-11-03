@@ -6,7 +6,7 @@ title: $:/plugins/oeyoews/qrcode/readme
 
 !! Params
 
-* `renderType`: {url}
+* `renderType`: {url} 当前条目地址
 * `text`: string
 * `width`: number
 

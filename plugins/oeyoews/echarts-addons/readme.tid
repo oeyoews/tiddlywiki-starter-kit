@@ -1,4 +1,7 @@
 title: $:/plugins/oeyoews/echarts-addons/readme
+type: text/markdown
+
+<$qrcode type=url />
 
 目前有 clockc, tagpie, sevenday, 三种addon
 
