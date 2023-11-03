@@ -262,7 +262,7 @@ var assetList = [
         "name": "neotw-notranslate",
         "dependents": "",
         "list": "readme",
-        "readme": "{{$:/languages/neotw-notranslate/readme}}\n",
+        "readme": "<div class=\"prose max-w-none prose-indigo\">\n\n* 不要翻译 !!!\n* 不要翻译 !!!\n* 不要翻译 !!!\n\n> 翻译类的浏览器插件会对页面的内容进行修改(DOM), 而TiddlyWiki经常会因此报错(尤其中文环境下), 但是官方一直没有明确表示具体的原因, 目前来看官方修复的几率很小\n\n> 此插件目前禁用谷歌翻译, 微软翻译,沉浸式翻译以及遵循`notranslate` 规则的翻译, 对于不遵守此规则的浏览器插件无效(浏览器的语言类插件层出不穷,希望遵守这个规则,向沉浸式翻译学习)\n\nhttps://saqimtiaz.github.io/tw5-plugins-sandbox/(沉浸式翻译也会出错)\n\n</div>",
         "requires-reload": "yes"
     },
     {
@@ -276,7 +276,7 @@ var assetList = [
         "name": "Neotw Pwa",
         "dependents": "",
         "list": "readme",
-        "readme": "{{$:/languages/neotw-pwa/readme}}\n",
+        "readme": "<div class=\"prose max-w-none prose-indigo\">\n\n* [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/neotw-pwa]]\n\n> 让你的TiddlyWiki网页像app一样启动\n> make your TiddlyWiki web page start like an app\n\n> 注意: 额外提供了favicon.ico\n\n> 注意: 不要使用0.0.0.0:xxx, 请使用127.0.0.1:xxx\n\n> 由于tiddlywiki.png 使用了全透明, 中间的白色部分是透明的, 在iphone上看不到(全部自动补充成了黑色)\n\n* ref: https://github.com/oeyoews/tiddlywiki-starter-kit/commit/47b9530a2049a43b26f30094c77d8483282e59d7\n\n!! Setup\n\n<$reveal type=\"nomatch\" state=\"$:/plugins/oeyoews/neotw-pwa/routes/get-manifest.js!!overwrite\" text=\"yes\">\n<$button class=\"bg-green-400 p-2\">\n<$action-setfield $tiddler=\"$:/plugins/oeyoews/neotw-pwa/routes/get-tiddlywiki-image.js\" $field=\"overwrite\" $value=\"yes\"/>\n<$action-setfield $tiddler=\"$:/plugins/oeyoews/neotw-pwa/routes/get-manifest.js\" $field=\"overwrite\" $value=\"yes\"/>\nEnable PWA 📦\n</$button>\n</$reveal>\n\n<$reveal type=\"match\" state=\"$:/plugins/oeyoews/neotw-pwa/routes/get-manifest.js!!overwrite\" text=\"yes\">\n<$button class=\"bg-rose-400 p-2\">\n<$action-deletetiddler $filter=\"[prefix[$:/plugins/oeyoews/neotw-pwa]field:overwrite[yes]]\"/>\nReset PWA ♻️\n</$button>\n</$reveal>\n\n> 设置后需要重启tw, 不是刷新浏览器\n> After setting, you need to restart tw, not refresh the browser\n\n<!-- * get-menifest.json 变成shadow, 注意使用startupaction 修改变成shadow 是无效的,shadows文件不会保存 -->\n\n> 下面是针对构建在线版本支持pwa的参数\n> The following are parameters for building online version to support pwa\n\n```\n\"--savetiddler\",\n    \"$:/manifest.json\",\n    \"manifest.json\",\n\"--savetiddler\",\n    \"$:/tiddlywiki.png\",\n    \"tiddlywiki.png\",\n```\n\n<!-- !! Tools -->\n<!---->\n<!-- https://maskable.app/editor -->\n\n</div>",
         "requires-reload": "yes",
         "icon": "data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%20width%3D%2232%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22m15.35%202.1425c.32-.19.71-.19%201.02%200l10.92%206.64c.26.16.42.45.42.75l-11.85%207.9675-11.86-7.86757v-.09993c0-.3.16-.59.42-.74z%22%20fill%3D%22%23f3c07b%22%2F%3E%3Cpath%20d%3D%22m15.856%2016.2463%2011.36-6.89997c.0498-.0297.1067-.04566.1647-.04626.058-.00061.1151.01418.1655.04284.0504.02867.0923.07016.1214.1203.0292.05014.0445.10711.0445.1651v12.33999c.0001.2972-.0762.5894-.2216.8486-.1453.2592-.3549.4765-.6085.6314l-10.6399%206.46c-.0271.0149-.0566.0251-.0871.0301-.0269.008-.0549.0117-.083.011-.1135.0318-.2322.0409-.3493.0267-.1171-.0143-.2301-.0516-.3327-.1097h.006l-2.396-10.8664z%22%20fill%3D%22%23ffce7c%22%2F%3E%3Cpath%20d%3D%22m15.86%2029.6224v-13.37l-11.35-6.89997c-.23-.14-.51.02-.51.28v12.33997c0%20.61.32%201.17.83%201.48l10.57%206.42c.2.13.46-.02.46-.25z%22%20fill%3D%22%23e19747%22%2F%3E%3Cpath%20d%3D%22m14.5%2026.7824v-1.96c0-.23-.12-.44-.31-.56l-2.8-1.69c-.19-.11-.43.02-.43.24v1.96c0%20.23.12.44.31.56l2.8%201.69c.19.11.43-.02.43-.24z%22%20fill%3D%22%23d3d3d3%22%2F%3E%3Cpath%20d%3D%22m11.76%2016.5525v-2.79-1.7699l-3.27999-.2201v3.16c0%20.1.05.2.14.26l2.67999%201.63c.2.11.46-.03.46-.27z%22%20fill%3D%22%238c5543%22%2F%3E%3Cpath%20d%3D%22m20.34%204.5625-11.85999%207.21%203.27999%202%2011.86-7.2z%22%20fill%3D%22%23a56953%22%2F%3E%3C%2Fsvg%3E"
     },
@@ -285,7 +285,7 @@ var assetList = [
         "description": "neotw-spotlight",
         "author": "oeyoews",
         "version": "0.0.1",
-        "core-version": ">=5.3.0",
+        "core-version": ">=5.3.1",
         "type": "application/json",
         "plugin-type": "plugin",
         "meta#disabled": "yes",
