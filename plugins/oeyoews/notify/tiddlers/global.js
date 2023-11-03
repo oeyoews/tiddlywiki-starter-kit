@@ -12,14 +12,12 @@ class NotifyWidget {
     this.notifyInstance = null;
   }
   display(options) {
-
     const convertBooleanStringsToBoolean = (options) => {
       return Object.entries(options).reduce((acc, [key, val]) => {
         acc[key] = val === 'true' ? true : val === 'false' ? false : val;
         return acc;
       }, {});
     };
-
 
     this.notifyInstance = new TWNotify(
       Object.assign(
