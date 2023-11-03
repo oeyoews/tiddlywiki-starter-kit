@@ -139,7 +139,7 @@
         "name": "Neotw Fetch",
         "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
         "list": "readme",
-        "readme": "!! Getfile",
+        "readme": "!! Getfile\n\n\n!! TODO\n\n* [ ] 借鉴tw的tm-http\n* [ ] markdown img语法会残留tc-imag-loading",
         "requires-reload": "yes"
     },
     {
