@@ -14,3 +14,7 @@ type: text/markdown
 ## TODO
 
 * update tooltip style to fix darkmode
+
+## TODO
+
+* support qrcode field to show current tiddler url qrcode

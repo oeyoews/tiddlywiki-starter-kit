@@ -1,6 +1,6 @@
 title: $:/plugins/oeyoews/qrcode/rememberme
-tags: $:/tags/PageTemplate
 caption: rememberme
+tags: $:/tags/PageTemplate
 
 <!-- add enable option -->
 <div class="fixed bottom-0 right-0">
