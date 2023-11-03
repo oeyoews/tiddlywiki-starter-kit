@@ -13,23 +13,13 @@ class NotifyWidget {
   }
   display(options) {
 
-    function convertBooleanStringsToBoolean(options) {
-      const convertedOptions = {};
-      for (const key in options) {
-        if (typeof options[key] === 'string') {
-          if (options[key] === 'true') {
-            convertedOptions[key] = true;
-          } else if (options[key] === 'false') {
-            convertedOptions[key] = false;
-          } else {
-            convertedOptions[key] = options[key];
-          }
-        } else {
-          convertedOptions[key] = options[key];
-        }
-      }
-      return convertedOptions;
-    }
+    const convertBooleanStringsToBoolean = (options) => {
+      return Object.entries(options).reduce((acc, [key, val]) => {
+        acc[key] = val === 'true' ? true : val === 'false' ? false : val;
+        return acc;
+      }, {});
+    };
+
 
     this.notifyInstance = new TWNotify(
       Object.assign(
