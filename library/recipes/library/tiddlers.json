@@ -55,7 +55,7 @@
         "parent-plugin": "$:/plugins/Gk0Wk/echarts",
         "list": "readme",
         "dependents": "",
-        "readme": "目前有 clockc, tagpie, sevenday, 三种addon\n\n* 将echarts的addons独立出来, 使用js编写,不依赖外部环境, 即使在tw里面也能快速修改, 方便用户修改\n\n## Usage\n\n> coming ...\n\n## TODO\n\n* update tooltip style to fix darkmode",
+        "readme": "<$qrcode type=url />\n\n目前有 clockc, tagpie, sevenday, 三种addon\n\n* 将echarts的addons独立出来, 使用js编写,不依赖外部环境, 即使在tw里面也能快速修改, 方便用户修改\n\n## Usage\n\n> coming ...\n\n## TODO\n\n* update tooltip style to fix darkmode",
         "requires-reload": "yes"
     },
     {
@@ -370,7 +370,7 @@
         "meat#disabled": "yes",
         "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
         "list": "readme",
-        "readme": "! QRCode svg format\n\n<$qrcode />\n\n!! Params\n\n* `renderType`: {url}\n* `text`: string\n* `width`: number\n\n!! TODO\n\n* viewtoolbar\n* support icon(logo), color https://github.com/soldair/node-qrcode/issues/240, https://github.com/ushelp/EasyQRCodeJS-NodeJS\n\n!! Credits\n\n* https://github.com/soldair/node-qrcode\n\n<!-- > qrcode-node 似乎最近不再维护, 1.5.1 后有一个打包错误, umd  -->\n<!-- * title -->",
+        "readme": "! QRCode svg format\n\n<$qrcode />\n\n!! Params\n\n* `renderType`: {url} 当前条目地址\n* `text`: string\n* `width`: number\n\n!! TODO\n\n* viewtoolbar\n* support icon(logo), color https://github.com/soldair/node-qrcode/issues/240, https://github.com/ushelp/EasyQRCodeJS-NodeJS\n\n!! Credits\n\n* https://github.com/soldair/node-qrcode\n\n<!-- > qrcode-node 似乎最近不再维护, 1.5.1 后有一个打包错误, umd  -->\n<!-- * title -->",
         "requires-reload": "yes"
     },
     {
