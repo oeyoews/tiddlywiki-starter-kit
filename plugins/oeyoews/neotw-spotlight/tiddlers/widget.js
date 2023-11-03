@@ -4,9 +4,7 @@ type: application/javascript
 module-type: widget
 
 neotw-spotlight widget
-
 \*/
-
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 
 class SpotlightWidget extends Widget {
@@ -15,6 +13,7 @@ class SpotlightWidget extends Widget {
   }
 
   render(parent, nextSibling) {
+    if (!$tw.browser) return;
     this.parentDomNode = parent;
     this.computeAttributes();
     this.execute();
@@ -35,14 +34,18 @@ class SpotlightWidget extends Widget {
       },
     });
 
+    const spotlightOptions = {
+      control: 'autofit, close',
+      animation: 'scale',
+      // download: true,
+    };
+
     domNode.addEventListener('click', () => {
       Spotlight.show([
         {
           src,
           title,
-          control: 'autofit, close',
-          animation: 'scale',
-          // download: true,
+          ...spotlightOptions,
         },
       ]);
     });

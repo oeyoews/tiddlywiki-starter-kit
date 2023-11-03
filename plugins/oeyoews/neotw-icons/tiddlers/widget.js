@@ -4,13 +4,7 @@ type: application/javascript
 module-type: widget
 
 neotw-icons widget
-
 \*/
-(function () {
-  /*jslint node: true, browser: true */
-  /*global $tw: false */
-  'use strict';
-
   const Widget = require('$:/core/modules/widgets/widget.js').widget;
 
   class IconsWidget extends Widget {
@@ -19,6 +13,7 @@ neotw-icons widget
     }
 
     render(parent, nextSibling) {
+      if (!$tw.browser) return;
       this.parentDomNode = parent;
       this.computeAttributes();
       this.execute();
@@ -30,6 +25,7 @@ neotw-icons widget
         class: classNames = '',
       } = this.attributes;
 
+      // NOTE: dont use dommaker
       const iconNode = this.document.createElement('iconify-icon');
 
       iconNode.setAttribute('icon', icon);
@@ -45,4 +41,3 @@ neotw-icons widget
 
   exports['iconify'] = IconsWidget;
   exports['iconify-icon'] = IconsWidget;
-})();

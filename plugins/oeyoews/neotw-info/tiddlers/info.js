@@ -4,7 +4,6 @@ type: application/javascript
 module-type: library
 
 \*/
-
 module.exports = function createContainer() {
   const createElement = $tw.utils.domMaker;
   const wiki = $tw.wiki;
@@ -36,7 +35,7 @@ module.exports = function createContainer() {
     { msg: '🐟 Tiddlers', text: tiddlersCount }, //  🐸
   ];
 
-  let children = [];
+  const children = [];
   list.forEach(({ msg, text, logo }) => {
     children.push(createImg(msg, text, logo));
   });
