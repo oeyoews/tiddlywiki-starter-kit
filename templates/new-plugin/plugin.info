@@ -8,6 +8,7 @@
   "plugin-type": "plugin",
   "name": "${pluginname}",
   "meat#disabled": "yes",
+  "qrcode": "yes",
   "dependents": [
     "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
   ],
