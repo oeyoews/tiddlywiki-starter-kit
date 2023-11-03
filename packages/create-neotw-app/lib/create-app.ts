@@ -63,7 +63,7 @@ export default async function createApp() {
   confirm &&
     spinner.start() &&
     // 仓库克隆到本地的路径
-    emitter.clone(targetDir).then(() => {
+    emitter.clone(path.resolve('.', targetDir)).then(() => {
       spinner.succeed(chalk.green(`Cloned ${initial} to ${targetDir}\n`));
       spinner.succeed(
         chalk.cyan(
