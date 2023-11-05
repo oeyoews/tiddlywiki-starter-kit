@@ -138,7 +138,10 @@ class CardsWidget extends Widget {
       }
 
       // NOTE: 过滤掉系统条目
-      return !(title.startsWith('$:/') || title.startsWith('Draft of'));
+      return !(
+        (!title.startsWith('$:/plugins/books') && title.startsWith('$:/')) ||
+        title.startsWith('Draft of')
+      );
     });
 
     return { filteredTiddlers, notExistTiddlers };
