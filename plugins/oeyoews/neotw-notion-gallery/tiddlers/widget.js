@@ -51,7 +51,12 @@ class CardsWidget extends Widget {
 
     const { imageField, resoultion, imageSource } = config;
 
-    const { filter = this.subfilter, standard, count } = this.attributes;
+    const {
+      filter = this.subfilter,
+      standard,
+      count,
+      cols = 3,
+    } = this.attributes;
 
     this.count = count;
 
@@ -78,8 +83,7 @@ class CardsWidget extends Widget {
     };
 
     const container = document.createElement('div');
-    const containerClassList =
-      'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 m-4';
+    const containerClassList = `grid grid-cols-1 sm:grid-cols-2 md:grid-cols-${cols} gap-8 m-4`;
     // 其实可以直接使用classNames
     container.classList.add(...containerClassList.split(' '));
 
