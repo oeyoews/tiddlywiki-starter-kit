@@ -1,8 +1,9 @@
 /*\
 title: addon/bookprogress.js
-module-type: echarts-component
 type: application/javascript
 description:
+
+// module-type: echarts-component
 
 \*/
 const getData = (tag) => {
