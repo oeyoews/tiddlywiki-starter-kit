@@ -70,12 +70,12 @@ class CardsWidget extends Widget {
         if (!fields) return;
         let cover = fields[imageField];
         let icon = fields['page-icon'];
-        // if (!cover || !cover.startsWith('http') || !cover.startsWith('//')) {
         if (!cover || (!cover.startsWith('//') && !cover.startsWith('http'))) {
           cover = `${imageSource}/${resoultion}?fm=blurhash&${fields.title}`;
         }
         return {
           title: fields?.title,
+          caption: fields?.caption,
           cover,
           icon,
         };
@@ -89,9 +89,10 @@ class CardsWidget extends Widget {
 
     const data = prepareCardData(cardsTiddlers);
 
-    data.forEach(({ title, cover, icon }) => {
+    data.forEach(({ title, caption, cover, icon }) => {
       const { imageNode, item } = createCard(
         title,
+        caption,
         cover,
         navigate,
         icon,

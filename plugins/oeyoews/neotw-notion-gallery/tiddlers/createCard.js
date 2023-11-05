@@ -9,6 +9,7 @@ module-type: library
 /** create card */
 module.exports = function createCard(
   title,
+  caption,
   cover,
   clickEvents,
   icon,
@@ -30,7 +31,7 @@ module.exports = function createCard(
 
   const galleryTitle = createElement('h3', {
     class: galleryTitleClassList,
-    text: title,
+    text: caption || title,
     children: [iconify],
     attributes: {
       title: '点击查看',
@@ -47,7 +48,7 @@ module.exports = function createCard(
     class: `object-cover w-full h-full rounded-md group-hover:scale-105 transition-all duration-800 ease-in-out shadow-md aspect-video`,
     attributes: {
       ['data-src']: cover,
-      alt: title, // '如果不设置, 会有黑边'
+      alt: caption || title, // '如果不设置, 会有黑边'
     },
   });
 
