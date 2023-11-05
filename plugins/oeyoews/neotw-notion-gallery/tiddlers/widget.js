@@ -25,11 +25,11 @@ class CardsWidget extends Widget {
     // check if tailwind is installed
     // need add window on browser
     const logger = new $tw.utils.Logger('neotw-notion-gallery');
-    	if (!$tw.modules.titles['tailwindcss.min.js']) {
-        logger.alert(
-          "The plugin 'oeyoews/neotw-notion-gallery' requires the 'tiddlywiki/tailwindcss-plus' plugin to be installed",
-        );
-      }
+    if (!$tw.modules.titles['tailwindcss.min.js']) {
+      logger.alert(
+        "The plugin 'oeyoews/neotw-notion-gallery' requires the 'tiddlywiki/tailwindcss-plus' plugin to be installed",
+      );
+    }
     // one browser env
     const twimageobserver = require('./twimageobserver');
 
@@ -65,7 +65,8 @@ class CardsWidget extends Widget {
         if (!fields) return;
         let cover = fields[imageField];
         let icon = fields['page-icon'];
-        if (!cover || !cover.startsWith('http') || !cover.startsWith('//')) {
+        // if (!cover || !cover.startsWith('http') || !cover.startsWith('//')) {
+        if (!cover || (!cover.startsWith('//') && !cover.startsWith('http'))) {
           cover = `${imageSource}/${resoultion}?fm=blurhash&${fields.title}`;
         }
         return {
