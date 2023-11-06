@@ -19,6 +19,15 @@ export default {
     'exportFilter',
     '[!is[system]]',
   ],
+  markdown: [
+    '--render',
+    '.',
+    'markdown.json',
+    'text/plain',
+    '$:/core/templates/exporters/JsonFile',
+    'exportFilter',
+    '[!is[system]field:type[text/markdown]!is[binary]] -[[.gitignore]]',
+  ],
   // build index.html
   index: [
     '--verbose',
