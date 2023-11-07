@@ -2,7 +2,7 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "headers": [
     {
-      "source": "/(.*)",
+      "source": "/library/recipes/library/(.*)",
       "headers": [
         {
           "key": "Access-Control-Allow-Credentials",
