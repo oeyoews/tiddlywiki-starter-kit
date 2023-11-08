@@ -2,8 +2,19 @@ title: $:/plugins/oeyoews/font-geist/style.css
 tags: $:/tags/Stylesheet
 
 @font-face {
-	font-family: "Geist Regular";
-	font-style: regular;
-	<!-- font-weight: 400; -->
-	src: local("Geist Regular"), url(<<datauri "$:/plugins/oeyoews/Geist-Regular.woff2">>) format("woff2");
+	font-family: "Geist";
+	font-weight: 400;
+	src: url(<<datauri "$:/plugins/oeyoews/Geist-Regular.woff2">>) format("woff2");
+}
+
+@font-face {
+	font-family: "Geist";
+	font-weight: 600;
+	src: url(<<datauri "$:/plugins/oeyoews/Geist-Bold.woff2">>) format("woff2");
+}
+
+@font-face {
+	font-family: "Geist Mono";
+	font-weight: 400;
+	src: url(<<datauri "$:/plugins/oeyoews/GeistMono-Regular.woff2">>) format("woff2");
 }
