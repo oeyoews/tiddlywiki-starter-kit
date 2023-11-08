@@ -9,17 +9,10 @@ tags: $:/tags/Stylesheet
 }
 
 @font-face {
-	font-family: "Geist";
-	font-weight: 600;
-	font-style: normal;
-	src: url(<<datauri "$:/plugins/oeyoews/Geist-Bold.woff2">>) format("woff2");
-}
-
-@font-face {
-	font-family: "Geist";
+	font-family: "GeistBlack";
 	font-weight: 800;
 	font-style: normal;
-	src: url(<<datauri "$:/plugins/oeyoews/Geist-SemiBold.woff2">>) format("woff2");
+	src: url(<<datauri "$:/plugins/oeyoews/Geist-Black.woff2">>) format("woff2");
 }
 
 @font-face {
