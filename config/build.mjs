@@ -26,7 +26,7 @@ export default {
     'text/plain',
     '$:/core/templates/exporters/JsonFile',
     'exportFilter',
-    '[!is[system]field:type[text/markdown]!is[binary]] -[[.gitignore]] -[tag[video]]',
+    '[!is[system]field:type[text/markdown]!is[binary]!field:public[readonly]] -[[.gitignore]] -[tag[video]] -[tag[Journal]]',
   ],
   // build index.html
   index: [
