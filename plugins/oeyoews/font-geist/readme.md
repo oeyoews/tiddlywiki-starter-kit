@@ -6,4 +6,4 @@
 
 ## TODO
 
-font-weight 是如何使用的, 目前仅仅支持normal, bold, mono
+- [ ] font-weight 是如何使用的, 目前仅仅支持normal, bold, mono https://github.com/vercel/geist-font/issues/27
