@@ -71,7 +71,7 @@
         "qrcode": "yes",
         "dependents": "",
         "list": "readme",
-        "readme": "## Geist\n\n- https://vercel.com/font\n- https://github.com/vercel/geist-font/releases/latest\n- https://talk.tiddlywiki.org/t/tw5-re-tw5-how-to-embed-a-font-using-font-face-and-data-url/6318/2\n\n## TODO\n\n- [ ] font-weight 是如何使用的, 目前仅仅支持normal, bold, mono https://github.com/vercel/geist-font/issues/27\n",
+        "readme": "## Geist\n\n- https://vercel.com/font\n- https://github.com/vercel/geist-font/releases/latest\n- https://talk.tiddlywiki.org/t/tw5-re-tw5-how-to-embed-a-font-using-font-face-and-data-url/6318/2\n\n## TODO\n\n- [ ] font-weight 是如何使用的(字体自动支持???), 目前仅仅支持Geist GeistBlack `Geist Mono` https://github.com/vercel/geist-font/issues/27\n",
         "requires-reload": "no"
     },
     {
