@@ -22,7 +22,7 @@ module.exports = {
               border: `none`,
             },
             code: {
-              fontFamily: 'serif',
+              // fontFamily: 'serif',
               // backgroundColor: theme('colors.slate.100'),
               borderRadius: theme('borderRadius.sm'),
               padding: `${theme('padding.1')} ${theme('padding.1.5')}`,
