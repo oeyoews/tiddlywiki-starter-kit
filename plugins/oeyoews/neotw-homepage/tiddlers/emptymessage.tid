@@ -7,7 +7,7 @@ title: $:/config/EmptyStoryMessage
 <div class="prose prose-indigo max-w-none dark:prose-invert">
   <div class="p-0 m-4">
     <div class="">
-<h1 class="mb-4 font-extrabold font-[GeistBlack] bg-gradient-to-r from-rose-500 via-purple-500 to-pink-400 text-transparent bg-clip-text text-5xl text-center">
+<h1 class="mb-4 font-extrabold bg-gradient-to-r from-rose-500 via-purple-500 to-pink-400 text-transparent bg-clip-text text-5xl text-center">
   Welcome to TiddlyWiki Starter Kit
 </h1>
       <p class="text-lg text-center">

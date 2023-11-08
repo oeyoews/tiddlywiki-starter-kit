@@ -1,0 +1,15 @@
+{
+	"directories": [
+		{
+			"path": "./",
+			"filesRegExp": "^.*\\.woff2$",
+			"fields": {
+				"title": {
+					"prefix": "$:/plugins/oeyoews/font-geist/",
+					"source": "filename"
+				},
+				"type": "application/font-woff2"
+			}
+		}
+	]
+}
