@@ -1,4 +1,4 @@
 title: $:/themes/nico/notebook/settings/codefontfamily
 type: text/vnd.tiddlywiki
 
-"Fira Mono","Liberation Mono",Menlo,Courier,monospace
+"Geist Regular","Fira Mono","Liberation Mono",Menlo,Courier,monospace

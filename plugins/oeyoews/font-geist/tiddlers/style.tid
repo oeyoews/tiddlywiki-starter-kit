@@ -1,0 +1,9 @@
+title: $:/plugins/oeyoews/font-geist/style.css
+tags: $:/tags/Stylesheet
+
+@font-face {
+	font-family: "Geist Regular";
+	font-style: regular;
+	<!-- font-weight: 400; -->
+	src: local("Geist Regular"), url(<<datauri "$:/plugins/oeyoews/Geist-Regular.woff2">>) format("woff2");
+}
