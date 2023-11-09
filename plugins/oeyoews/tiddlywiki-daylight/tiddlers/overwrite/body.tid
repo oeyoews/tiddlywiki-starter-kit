@@ -16,7 +16,7 @@ tags: $:/tags/ViewTemplate
 <!-- prose-img:rounded-md  important 导致 border-radius 无法覆盖-->
 <!-- rem px 混用了 -->
 <$list filter="[all[current]!is[system]]">
-<$reveal tag="div" class="prose prose-indigo text-[16px] max-w-none prose-img:my-0 prose-a:no-underline prose-h2:mt-4 prose-blockquote:not-italic dark:prose-invert dark:prose-pre:bg-black" type="nomatch" stateTitle=<<folded-state>> text="hide" retain="yes" animate="yes">
+<$reveal tag="div" class="antialiased prose prose-indigo text-[16px] max-w-none prose-img:my-0 prose-a:no-underline prose-h2:mt-4 prose-blockquote:not-italic dark:prose-invert dark:prose-pre:bg-black" type="nomatch" stateTitle=<<folded-state>> text="hide" retain="yes" animate="yes">
 
 <$transclude tiddler={{{ [<currentTiddler>] :cascade[all[shadows+tiddlers]tag[$:/tags/ViewTemplateBodyFilter]!is[draft]get[text]] :and[!is[blank]else[$:/core/ui/ViewTemplate/body/default]] }}} />
 
