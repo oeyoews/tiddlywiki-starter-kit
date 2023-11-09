@@ -24,7 +24,9 @@ module.exports = function createContainer() {
   );
   const pluginsCount = wiki.filterTiddlers('[plugin-type[plugin]]').length;
   const tagsCount = wiki.filterTiddlers('[tags[]]').length;
-  const tiddlersCount = wiki.filterTiddlers('[!is[system]]').length;
+  const tiddlersCount = wiki
+    .filterTiddlers('[!is[system]]')
+    .length.toLocaleString();
   const version = $tw.version.replace(/-/g, ' ');
 
   const list = [
