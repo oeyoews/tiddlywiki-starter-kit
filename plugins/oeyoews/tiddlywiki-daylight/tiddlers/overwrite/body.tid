@@ -15,10 +15,22 @@ tags: $:/tags/ViewTemplate
 <!-- prose-li:marker:text-indigo-500  -->
 <!-- prose-img:rounded-md  important 导致 border-radius 无法覆盖-->
 <!-- rem px 混用了 -->
-<$list filter="[all[current]!is[system]]">
+<$list filter="[all[current]!is[system]!publish[no]]">
 <$reveal tag="div" class="antialiased prose prose-indigo text-[16px] max-w-none prose-img:my-0 prose-a:no-underline prose-h2:mt-4 prose-blockquote:not-italic dark:prose-invert dark:prose-pre:bg-black" type="nomatch" stateTitle=<<folded-state>> text="hide" retain="yes" animate="yes">
 
 <$transclude tiddler={{{ [<currentTiddler>] :cascade[all[shadows+tiddlers]tag[$:/tags/ViewTemplateBodyFilter]!is[draft]get[text]] :and[!is[blank]else[$:/core/ui/ViewTemplate/body/default]] }}} />
+
+</$reveal>
+</$list>
+
+
+<!-- 使用caacade 好麻烦, 先在这里写 -->
+<$list filter="[all[current]!is[system]publish[no]]">
+<$reveal tag="div" class="antialiased prose prose-indigo text-[16px] max-w-none prose-img:my-0 prose-a:no-underline prose-h2:mt-4 prose-blockquote:not-italic dark:prose-invert dark:prose-pre:bg-black" type="nomatch" stateTitle=<<folded-state>> text="hide" retain="yes" animate="yes">
+
+<div class="flex justify-center items-center bg-neutral-200 h-48 w-full">
+正在努力编写中
+</div>
 
 </$reveal>
 </$list>
