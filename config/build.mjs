@@ -10,23 +10,24 @@ const OUTPUTDIR = process.env.OUTPUTDIR || '.tiddlywiki';
  */
 export default {
   // 需要before index.html 构建 ???
-  json: [
+  // json: [
+  //   '--render',
+  //   '.',
+  //   'tiddlers.json',
+  //   'text/plain',
+  //   '$:/core/templates/exporters/JsonFile',
+  //   'exportFilter',
+  //   '[!is[system]]',
+  // ],
+  tiddlers: [
     '--render',
     '.',
     'tiddlers.json',
     'text/plain',
     '$:/core/templates/exporters/JsonFile',
     'exportFilter',
-    '[!is[system]]',
-  ],
-  markdown: [
-    '--render',
-    '.',
-    'markdown.json',
-    'text/plain',
-    '$:/core/templates/exporters/JsonFile',
-    'exportFilter',
-    '[!is[system]field:type[text/markdown]!is[binary]!field:publish[readonly]!field:publish[no]] -[[.gitignore]] -[tag[video]] -[tag[Journal]] -[tag[剪藏]]',
+    // '[!is[system]field:type[text/markdown]!is[binary]!field:publish[readonly]!field:publish[no]] -[[.gitignore]] -[tag[video]] -[tag[Journal]] -[tag[剪藏]]',
+    '[publish[public]] [publish[article]]',
   ],
   // build index.html
   index: [
