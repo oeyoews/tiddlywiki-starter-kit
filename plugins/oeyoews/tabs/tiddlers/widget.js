@@ -19,19 +19,19 @@ class TabsWidget extends Widget {
     this.computeAttributes();
     this.execute();
 
-    const { tiddlers } = this.attributes;
+    const { filter } = this.attributes;
     const createElement = $tw.utils.domMaker;
 
+    const tiddlers = $tw.wiki.filterTiddlers(filter);
     const buttonsContainer = this.document.createElement('div');
     buttonsContainer.className = 'rounded-lg flex justify-center items-center';
     const buttons = this.document.createElement('div');
-    buttons.className = 'space-x-2 p-1 bg-neutral-200';
+    buttons.className = 'space-x-2 space-y-2 p-1 bg-neutral-200';
     buttonsContainer.append(buttons);
 
     let children = [buttonsContainer];
-    let tiddlersList = tiddlers.split(' ');
 
-    tiddlersList.forEach((tiddler, index) => {
+    tiddlers.forEach((tiddler, index) => {
       const btn = this.document.createElement('button');
       btn.textContent = tiddler;
       btn.className = 'p-2 rounded transiton-all duration-400';
