@@ -12,6 +12,10 @@ class NotifyWidget {
     this.notifyInstance = null;
   }
   display(options) {
+    if (!options) {
+      console.warn('参数不允许为空');
+      return;
+    }
     const convertBooleanStringsToBoolean = (options) => {
       return Object.entries(options).reduce((acc, [key, val]) => {
         acc[key] = val === 'true' ? true : val === 'false' ? false : val;

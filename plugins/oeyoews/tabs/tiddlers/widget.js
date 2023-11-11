@@ -29,15 +29,25 @@ class TabsWidget extends Widget {
     buttonsContainer.append(buttons);
 
     let children = [buttonsContainer];
-    tiddlers.split(' ').forEach((tiddler) => {
+    let tiddlersList = tiddlers.split(' ');
+
+    tiddlersList.forEach((tiddler, index) => {
       const btn = this.document.createElement('button');
       btn.textContent = tiddler;
       btn.className = 'p-2 rounded bg-neutral-200';
       buttons.append(btn);
       const content = document.createElement('div');
-      const tiddlerContent = $tw.wiki.renderTiddler('text/html', tiddler);
-      content.innerHTML = tiddlerContent;
-      children.push(content);
+      if (index === 0) {
+        const tiddlerContent = $tw.wiki.renderTiddler('text/html', tiddler);
+        content.innerHTML = tiddlerContent;
+        children.push(content);
+      }
+    });
+
+    buttons.addEventListener('click', () => {
+      new $tw.Notify().display({ text: 'update' });
+      this.refreshSelf();
+      domNode.classList.add('bg-black');
     });
 
     const domNode = createElement('div', {
@@ -46,6 +56,9 @@ class TabsWidget extends Widget {
 
     parent.insertBefore(domNode, nextSibling);
     this.domNodes.push(domNode);
+  }
+  refresh() {
+    return false;
   }
 }
 
