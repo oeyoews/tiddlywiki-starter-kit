@@ -35,19 +35,18 @@ class TabsWidget extends Widget {
       const btn = this.document.createElement('button');
       btn.textContent = tiddler;
       btn.className = 'p-2 rounded bg-neutral-200';
+      index === 0 && btn.classList.add('bg-neutral-300');
+      btn.setAttribute('data-tab-id', index);
       buttons.append(btn);
       const content = document.createElement('div');
-      if (index === 0) {
-        const tiddlerContent = $tw.wiki.renderTiddler('text/html', tiddler);
-        content.innerHTML = tiddlerContent;
-        children.push(content);
-      }
-    });
-
-    buttons.addEventListener('click', () => {
-      new $tw.Notify().display({ text: 'update' });
-      this.refreshSelf();
-      domNode.classList.add('bg-black');
+      content.className = 'tab-content';
+      const tiddlerContent = $tw.wiki.renderTiddler('text/html', tiddler);
+      content.innerHTML = tiddlerContent;
+      index !== 0 && content.classList.add('hidden');
+      children.push(content);
+      btn.addEventListener('click', () => {
+        content.classList.add('hidden');
+      });
     });
 
     const domNode = createElement('div', {
