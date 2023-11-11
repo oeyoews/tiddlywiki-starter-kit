@@ -45,7 +45,7 @@ class TabsWidget extends Widget {
       index !== 0 && content.classList.add('hidden');
       children.push(content);
       btn.addEventListener('click', () => {
-        content.classList.add('hidden');
+        content.classList.remove('hidden');
       });
     });
 
