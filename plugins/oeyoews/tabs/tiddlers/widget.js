@@ -19,13 +19,13 @@ class TabsWidget extends Widget {
     this.computeAttributes();
     this.execute();
 
-    const { tiddlers = 'HMAC' } = this.attributes;
+    const { tiddlers } = this.attributes;
     const createElement = $tw.utils.domMaker;
 
     const buttonsContainer = this.document.createElement('div');
-    buttonsContainer.className = 'rounded flex justify-center items-center';
+    buttonsContainer.className = 'rounded-lg flex justify-center items-center';
     const buttons = this.document.createElement('div');
-    buttons.className = 'space-x-2 bg-neutral-100 p-2 rounded';
+    buttons.className = 'space-x-2 p-1 bg-neutral-200';
     buttonsContainer.append(buttons);
 
     let children = [buttonsContainer];
@@ -34,20 +34,33 @@ class TabsWidget extends Widget {
     tiddlersList.forEach((tiddler, index) => {
       const btn = this.document.createElement('button');
       btn.textContent = tiddler;
-      btn.className = 'p-2 rounded bg-neutral-200';
-      index === 0 && btn.classList.add('bg-neutral-300');
-      btn.setAttribute('data-tab-id', index);
+      btn.className = 'p-2 rounded transiton-all duration-400';
+      btn.id = `btn-${index}`;
       buttons.append(btn);
       const content = document.createElement('div');
-      content.className = 'tab-content';
+      content.className = 'tab';
+      content.id = `tab-${index}`;
       const tiddlerContent = $tw.wiki.renderTiddler('text/html', tiddler);
       content.innerHTML = tiddlerContent;
-      index !== 0 && content.classList.add('hidden');
+      if (index !== 0) {
+        content.style.display = 'none';
+      }
       children.push(content);
-      btn.addEventListener('click', () => {
-        content.classList.remove('hidden');
-      });
+      btn.addEventListener('click', () =>
+        openTab(`tab-${index}`, `btn-${index}`),
+      );
     });
+
+    const openTab = (tab, btn) => {
+      const buttons = buttonsContainer.querySelectorAll('button');
+      const tabs = document.getElementsByClassName('tab');
+      Array.from(buttons).forEach((btn) =>
+        btn.classList.remove('bg-neutral-100'),
+      );
+      Array.from(tabs).forEach((tab) => (tab.style.display = 'none'));
+      document.getElementById(tab).style.display = 'block';
+      document.getElementById(btn).classList.add('bg-neutral-100');
+    };
 
     const domNode = createElement('div', {
       children,
