@@ -20,7 +20,6 @@
     "oeyoews/neotw-fetch",
     "oeyoews/neotw-tour",
     "oeyoews/qrcode",
-    "oeyoews/book-status",
     "oeyoews/hitokoto",
     "oeyoews/neotw-image-better",
     "oeyoews/notify",
@@ -33,7 +32,6 @@
     "oeyoews/neotw-zen-mode",
     "oeyoews/commandpalette",
     "oeyoews/neotw-icons",
-    "oeyoews/neotw-swal2",
     "oeyoews/neotw-copy-code",
     "oeyoews/tiddlywiki-daylight",
     "oeyoews/tiddlywiki-videos",
@@ -50,8 +48,7 @@
     "tiddlywiki/markdown",
     "oeyoews/markdown-kit",
     "oeyoews/neotw-cli-info",
-    "oeyoews/tiddlywiki-publish-tiddler",
-    "oeyoews/tiddlywiki-tid2png"
+    "oeyoews/tiddlywiki-publish-tiddler"
   ],
   "build": {
     "tiddlers": [

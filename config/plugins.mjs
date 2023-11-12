@@ -25,7 +25,7 @@ console.log(
 const localPlugins = [
   'oeyoews/neotw-cli-info',
   'oeyoews/tiddlywiki-publish-tiddler',
-  'oeyoews/tiddlywiki-tid2png',
+  // 'oeyoews/tiddlywiki-tid2png',
 ];
 
 const onlinePlugins = [
@@ -68,7 +68,6 @@ const oeyoewsPlugins = [
   'neotw-zen-mode',
   'commandpalette',
   'neotw-icons',
-  'neotw-swal2',
   'neotw-copy-code',
   'tiddlywiki-daylight',
   'tiddlywiki-videos',

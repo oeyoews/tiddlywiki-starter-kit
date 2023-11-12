@@ -10,7 +10,6 @@
   "name": "Tiddlywiki Daylight",
   "dependents": [
     "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
-    "$:/plugins/oeyoews/neotw-swal2",
     "$:/plugins/oeyoews/neotw-back-to-top"
   ],
   "list": "readme"
