@@ -56,7 +56,6 @@ const oeyoewsPlugins = [
   'neotw-fetch',
   'neotw-tour',
   'qrcode',
-  'book-status',
   'hitokoto',
   'neotw-image-better',
   'notify',
@@ -95,15 +94,12 @@ const plugins = [
   'tiddlywiki/tiddlyweb',
   'tiddlywiki/highlight',
   'tiddlywiki/browser-sniff',
-  // 'tiddlywiki/qrcode', // 感觉不如 node-qrcode 美观, 使用base64, 有时候如果内容过多会卡顿
-  // 'tiddlywiki/comments',
-  'tiddlywiki/pluginlibrary', // 不会影响json 文件的生成, 负责生成index.html
-  // 'tiddlywiki/dynannotate', // 还是卡顿
+  'tiddlywiki/pluginlibrary', // 不影响json 文件的生成, 但是需要负责生成index.html
   ...oeyoewsFormatedPlugins,
 ];
 
 enableMarkdown && plugins.push(...markdowPlugins);
-// enableCME && localPlugins.push(...cmePlugins);
+// enableCME && localPlugins.push(...cmePlugins); // @deprecated
 
 switch (ci.name) {
   case 'Vercel':
