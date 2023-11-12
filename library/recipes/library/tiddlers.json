@@ -421,7 +421,7 @@
         "plugin-type": "plugin",
         "meta#disabled": "yes",
         "name": "Tiddlywiki Daylight",
-        "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus $:/plugins/oeyoews/neotw-swal2 $:/plugins/oeyoews/neotw-back-to-top",
+        "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus $:/plugins/oeyoews/neotw-back-to-top",
         "list": "readme",
         "readme": "!! Tiddlywiki Daylight\n\n> 主流的经典三模式切换(浅色模式, 深色模式, 系统模式)\n\n> 提供了daylight widget\n\n> 右键点击图标查看配置\n\n<$daylight btn class=\"rounded-full p-2 hover:scale-105 transition\"/>\n\n```wiki\n<$daylight btn class=\"rounded-full p-2 hover:scale-105 transition\"/>\n```\n\n!! TODO\n\n* 添加配置UI: 模拟shiraz的两种 palette 选择, $:/plugins/kookma/shiraz/ui/set-dark-light-palette\n* 去除插件依赖: nprogress, tailwindcss, overwrite template\n* 添加过渡动画: https://antfu.me/posts\n* palette 是如何修改x-tiddler-dictionary\n\n> darkmode 写起来不难，但是如果想要写得很完备， 细节真的不少(darmode.js是一个简单的库，不过不具备很好的扩展性)\n\n<!-- darkmode.js 大概是重写了body.bg, 带有动画 -->\n",
         "requires-reload": "yes",
