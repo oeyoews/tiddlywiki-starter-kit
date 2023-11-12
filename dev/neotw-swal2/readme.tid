@@ -1,0 +1,10 @@
+title: $:/plugins/oeyoews/neotw-swal2/readme
+tags: $:/tags/Layout
+name: {{$:/plugins/oeyoews/neotw-swal2/icon}} ~Sweetalert2
+description: ~Sweetalert2
+
+<div class="prose prose-indigo max-w-none">
+
+swal2
+
+</div>
