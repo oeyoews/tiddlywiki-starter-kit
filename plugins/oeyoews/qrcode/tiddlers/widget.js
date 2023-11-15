@@ -56,12 +56,14 @@ class QRCodeWidget extends Widget {
             `${$tw.wiki.getTiddlerText(storyTiddler)}`,
           );
           break;
+        case 'text':
+          textcontent = text;
+          break;
         default:
           textcontent = currentTiddlerUrl;
       }
     }
 
-    if (!textcontent?.length) textcontent = 'This is a empty';
     QRCode.toString(
       textcontent,
       {

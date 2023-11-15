@@ -54,7 +54,6 @@ const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
 const oeyoewsPlugins = [
   'font-geist',
   'neotw-fetch',
-  'neotw-tour',
   'qrcode',
   'hitokoto',
   'neotw-image-better',
