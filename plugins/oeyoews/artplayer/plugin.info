@@ -1,0 +1,16 @@
+{
+  "title": "$:/plugins/oeyoews/artplayer",
+  "description": "artplayer",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.3.1",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "artplayer",
+  "meat#disabled": "yes",
+  "qrcode": "yes",
+  "dependents": [
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
+  ],
+  "list": "readme"
+}
