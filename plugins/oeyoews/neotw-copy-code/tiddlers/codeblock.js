@@ -31,6 +31,7 @@ Code block node widget
       const code = this.getAttribute('code', '');
       let fileType = this.language;
       // 排除一些文件类型, 不要修改默认输出, 比如会影响text/css, 导致样式失效
+      // @see-also https://talk.tiddlywiki.org/t/how-highlight-js-works-on-codeblock/8083/17
       if (
         fileType?.startsWith('text/') ||
         fileType?.startsWith('image/') ||
