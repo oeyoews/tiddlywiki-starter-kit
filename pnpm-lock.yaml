@@ -36,8 +36,8 @@ dependencies:
     specifier: ^1.5.3
     version: 1.5.3
   tiddlywiki:
-    specifier: github:Jermolene/TiddlyWiki5#4c2979286b6836f4331b31649e3d17b7b074ca6f
-    version: github.com/Jermolene/TiddlyWiki5/4c2979286b6836f4331b31649e3d17b7b074ca6f
+    specifier: github:Jermolene/TiddlyWiki5#64812f5c062e3eaeaa8ef158851ffcece4babb13
+    version: github.com/Jermolene/TiddlyWiki5/64812f5c062e3eaeaa8ef158851ffcece4babb13
   tiged:
     specifier: ^2.12.5
     version: 2.12.5
@@ -4870,8 +4870,8 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: false
 
-  github.com/Jermolene/TiddlyWiki5/4c2979286b6836f4331b31649e3d17b7b074ca6f:
-    resolution: {tarball: https://codeload.github.com/Jermolene/TiddlyWiki5/tar.gz/4c2979286b6836f4331b31649e3d17b7b074ca6f}
+  github.com/Jermolene/TiddlyWiki5/64812f5c062e3eaeaa8ef158851ffcece4babb13:
+    resolution: {tarball: https://codeload.github.com/Jermolene/TiddlyWiki5/tar.gz/64812f5c062e3eaeaa8ef158851ffcece4babb13}
     name: tiddlywiki
     version: 5.3.2-prerelease
     engines: {node: '>=0.8.2'}
