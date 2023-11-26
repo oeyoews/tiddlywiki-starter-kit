@@ -27,7 +27,8 @@ export default {
     '$:/core/templates/exporters/JsonFile',
     'exportFilter',
     // '[!is[system]field:type[text/markdown]!is[binary]!field:publish[readonly]!field:publish[no]] -[[.gitignore]] -[tag[video]] -[tag[Journal]] -[tag[剪藏]]',
-    '[publish[public]] [publish[article]]',
+    // '[publish[public]] [publish[article]]',
+    '[publish[blog]]',
   ],
   // build index.html
   index: [

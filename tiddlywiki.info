@@ -58,7 +58,7 @@
       "text/plain",
       "$:/core/templates/exporters/JsonFile",
       "exportFilter",
-      "[publish[public]] [publish[article]]"
+      "[publish[blog]]"
     ],
     "index": [
       "--verbose",
