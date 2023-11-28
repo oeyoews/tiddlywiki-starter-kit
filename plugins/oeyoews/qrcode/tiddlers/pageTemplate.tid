@@ -3,7 +3,7 @@ caption: rememberme
 tags: $:/tags/PageTemplate
 
 <!-- add enable option -->
-<div class="fixed bottom-0 right-0">
+<div class="fixed bottom-0 right-0 opacity-0 hover:opacity-100 transition-all">
 <% if [{$:/info/url/protocol}match[http:]] %>
 <$qrcode text={{$:/info/url/ip}} />
 <% else %>
