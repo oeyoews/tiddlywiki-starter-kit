@@ -7,7 +7,7 @@
   "scripts": {
     "new": "node lib/newplugin.mjs",
     "build": "node lib/build.mjs",
-    "update:tw": "pnpm install https://github.com/Jermolene/TiddlyWiki5",
+    "update:tw": "pnpm install github:Jermolene/TiddlyWiki5",
     "build-with-bun": "bun run ./lib/build.ts",
     "format": "prettier  --write .",
     "format:md": "lint-md ** --fix",
@@ -27,7 +27,7 @@
     "ora": "^6.3.1",
     "prompts": "^2.4.2",
     "qrcode": "^1.5.3",
-    "tiddlywiki": "github:Jermolene/TiddlyWiki5#4c2979286b6836f4331b31649e3d17b7b074ca6f",
+    "tiddlywiki": "github:Jermolene/TiddlyWiki5#fe17f16675431af8ab84e5847736db845c2c6865",
     "tiged": "^2.12.5"
   },
   "devDependencies": {
