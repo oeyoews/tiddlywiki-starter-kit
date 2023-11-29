@@ -7,6 +7,7 @@
   "scripts": {
     "new": "node lib/newplugin.mjs",
     "build": "node lib/build.mjs",
+    "update:tw": "pnpm install https://github.com/Jermolene/TiddlyWiki5",
     "build-with-bun": "bun run ./lib/build.ts",
     "format": "prettier  --write .",
     "format:md": "lint-md ** --fix",
@@ -17,11 +18,11 @@
   },
   "dependencies": {
     "@lint-md/cli": "^2.0.0",
-    "@types/fs-extra": "^11.0.3",
-    "@types/qrcode": "^1.5.4",
+    "@types/fs-extra": "^11.0.4",
+    "@types/qrcode": "^1.5.5",
     "ci-info": "^3.9.0",
     "dotenv": "^16.3.1",
-    "fs-extra": "^11.1.1",
+    "fs-extra": "^11.2.0",
     "get-port": "^7.0.0",
     "ora": "^6.3.1",
     "prompts": "^2.4.2",
@@ -30,12 +31,12 @@
     "tiged": "^2.12.5"
   },
   "devDependencies": {
-    "@types/prompts": "^2.4.7",
+    "@types/prompts": "^2.4.9",
     "address": "^1.2.2",
     "chalk": "^5.3.0",
     "cross-spawn": "^7.0.3",
     "pm2": "^5.3.0",
-    "prettier": "^3.0.3",
+    "prettier": "^3.1.0",
     "tw5-typed": "^0.3.11"
   }
 }
