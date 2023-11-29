@@ -152,3 +152,7 @@ button {
 .tc-chooser-item:hover {
   border: none;
 }
+
+select {
+  border: none;
+}
