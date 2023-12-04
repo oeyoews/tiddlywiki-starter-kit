@@ -50,6 +50,15 @@
     "oeyoews/tiddlywiki-publish-tiddler"
   ],
   "build": {
+    "journal": [
+      "--render",
+      ".",
+      "journal.json",
+      "text/plain",
+      "$:/core/templates/exporters/JsonFile",
+      "exportFilter",
+      "[tag[Journal]type[text/markdown]!sort[created]]"
+    ],
     "tiddlers": [
       "--render",
       ".",
