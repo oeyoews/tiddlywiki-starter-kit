@@ -18,6 +18,7 @@ exports.startup = () => {
   const emoji = require('./markdown-it-emoji');
   const abbr = require('./markdown-it-abbr');
   const smartarrows = require('./markdown-it-smartarrows');
+  const githubAlert = require('./markdown-it-github-alert');
 
-  md.use(emoji).use(abbr).use(smartarrows);
+  md.use(emoji).use(abbr).use(smartarrows).use(githubAlert);
 };
