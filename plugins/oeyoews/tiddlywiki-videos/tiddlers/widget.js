@@ -24,7 +24,7 @@ class YoutubeWidget extends Widget {
 
     const {
       youtubeId = 'o7GyFa90klg',
-      url,
+      url, // TODO: support youtube url directly(not embed url, use replace to adjudge that)
       bid,
       yid = youtubeId,
       title,
