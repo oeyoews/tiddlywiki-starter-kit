@@ -1,0 +1,13 @@
+{
+	"tiddlers": [
+		{
+			"file": "vue.global.js",
+			"fields": {
+				"title": "vue.global.js",
+				"module-type": "library",
+				"type": "application/javascript",
+				"hide-body": "yes"
+			}
+		}
+	]
+}
