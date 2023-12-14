@@ -18,3 +18,7 @@ title: $:/plugins/oeyoews/tiddlywiki-videos/readme
 !! Ref
 
 * https://developers.google.com/youtube/player_parameters?hl=zh-cn
+
+<!-- !! See Also -->
+
+<!-- artplayer 是支持直接嵌入mp4文件的tiddlywiki 插件 -->
