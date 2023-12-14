@@ -25,7 +25,7 @@ class YoutubeWidget extends Widget {
     const {
       youtubeId = 'o7GyFa90klg',
       url, // TODO: support youtube url directly(not embed url, use replace to adjudge that)
-      bid,
+      bvid,
       yid = youtubeId,
       title,
     } = this.attributes;
@@ -37,12 +37,13 @@ class YoutubeWidget extends Widget {
         id: yid,
       },
       bilibili: {
-        prefix: 'https://player.bilibili.com/player.html?aid=',
-        id: bid,
+        prefix: 'https://player.bilibili.com/player.html?bvid=',
+        // aid=792307371&bvid=BV1LC4y1Q7Kr&cid=1366942100
+        id: bvid,
       },
     };
 
-    const isBilibili = this.hasAttribute('bid');
+    const isBilibili = this.hasAttribute('bvid');
     const isYouTube =
       this.hasAttribute('yid') || this.hasAttribute('youtubeId');
 
@@ -52,7 +53,7 @@ class YoutubeWidget extends Widget {
 
     const { prefix, id } = selectedSource;
 
-    // 如果没有bid或yid属性，则使用url
+    // 如果没有bvid或yid属性，则使用url
     const src = isBilibili || isYouTube ? prefix + id : url;
 
     // Create an object to represent the iframe attributes
