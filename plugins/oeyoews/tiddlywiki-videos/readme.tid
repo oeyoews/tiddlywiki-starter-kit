@@ -2,13 +2,18 @@ title: $:/plugins/oeyoews/tiddlywiki-videos/readme
 
 !! Tiddlywiki Videos
 
+> 对youtube, bilibili 等视频平台的嵌入提供了一个快捷可定制的方法, 免去手动复制iframe的操作, 仅仅需要粘贴id即可
+
 !! Usage
 
 ```wikitext
 <$video yid="o7GyFa90klg" />
-<$video bid='' />
+<$video bvid='BV1F14y1f7qp' />
 <$video url='' />
 ```
+
+<$video yid="o7GyFa90klg" />
+<$video bvid='BV1F14y1f7qp' />
 
 !! Ref
 

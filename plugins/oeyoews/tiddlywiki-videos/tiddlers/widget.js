@@ -8,7 +8,7 @@ youtube widget
 
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 
-class YoutubeWidget extends Widget {
+class VideoWidget extends Widget {
   constructor(parseTreeNode, options) {
     super(parseTreeNode, options);
   }
@@ -85,6 +85,6 @@ class YoutubeWidget extends Widget {
   }
 }
 
-exports.video = YoutubeWidget;
-exports.youtube = YoutubeWidget;
-exports.yt = YoutubeWidget;
+exports.video = VideoWidget;
+exports.youtube = VideoWidget;
+exports.yt = VideoWidget;
