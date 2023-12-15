@@ -6,6 +6,7 @@
 * tiddlywiki banner(WIP)
 * 自定义图库
 * Bing 每日壁纸
+* ...
 
 ## Usage
 
