@@ -230,7 +230,7 @@
         "name": "neotw-image-gallery",
         "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
         "list": "readme",
-        "readme": "## usage\n\n```wikitext\n<$gallery json=\"image-list.json\">\n```\n\n<$gallery json=\"image-list.json\">\n\n## TODO\n\n<!-- * - [ ] 优化布局, tailwindcss or http://macyjs.com/ -->\n",
+        "readme": "## usage\n\n```wikitext\n<$gallery json=\"image-list.json\">\n```\n\n<$gallery json=\"image-list.json\">\n\n<$banners />\n",
         "requires-reload": "yes"
     },
     {
