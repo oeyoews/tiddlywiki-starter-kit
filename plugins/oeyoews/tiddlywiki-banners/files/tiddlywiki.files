@@ -1,0 +1,15 @@
+{
+	"directories": [
+		{
+			"path": "./",
+			"filesRegExp": "^.*\\.png$",
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/tiddlywiki-banners/"
+				},
+				"type": "image/png"
+			}
+		}
+	]
+}

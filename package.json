@@ -13,7 +13,7 @@
     "format:md": "lint-md ** --fix",
     "build:docker": "docker-compose build",
     "docker:push": "docker-compose push",
-    "start": "node ./lib/startup.mjs",
+    "dev": "node ./lib/startup.mjs",
     "start:pm2": "node ./lib/pm2-control.js"
   },
   "dependencies": {

@@ -16,6 +16,7 @@
     "tiddlywiki/highlight",
     "tiddlywiki/browser-sniff",
     "tiddlywiki/pluginlibrary",
+    "oeyoews/tiddlywiki-banners",
     "oeyoews/neotw-markdown-extensions",
     "oeyoews/font-geist",
     "oeyoews/neotw-fetch",
