@@ -1,5 +1,5 @@
 /*\
-title: $:/plugins/oeyoews/neotw-image-gallery/banners.js
+title: $:/plugins/oeyoews/neotw-image-gallery/tiddlywiki-banners.js
 type: application/javascript
 module-type: widget
 
@@ -51,15 +51,6 @@ class BannersWidget extends Widget {
 
     parent.insertBefore(domNode, nextSibling);
     this.domNodes.push(domNode);
-  }
-
-  refresh(changedTiddlers) {
-    if (Object.keys(changedTiddlers).includes(this.jsonfile)) {
-      this.refreshSelf();
-      return true;
-    } else {
-      return false;
-    }
   }
 }
 
