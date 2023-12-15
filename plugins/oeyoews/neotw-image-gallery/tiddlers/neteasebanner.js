@@ -40,9 +40,9 @@ class BannersWidget extends Widget {
     });
 
     // TODO: add skeleton loading
-    // const loading = createElement('div', {
-    //   text: 'loading',
-    // });
+    const loading = createElement('div', {
+      text: 'loading',
+    });
 
     parent.insertBefore(domNode, nextSibling);
     this.domNodes.push(domNode);
