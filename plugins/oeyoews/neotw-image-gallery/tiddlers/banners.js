@@ -26,14 +26,16 @@ class BannersWidget extends Widget {
 
     const children = [];
 
-    // https://cdn.jsdelivr.net/gh/oeyoews/tiddlywiki-starter-kit@main/img/012.png?raw=true
-    const imageProvider = 'https://cdn.jsdelivr.net/gh/';
-    const urlPrefix = imageProvider + 'oeyoews/tiddlywiki-starter-kit/img/';
-    const versions = ['012'];
+    // https://cdn.jsdelivr.net/gh/oeyoews/tiddlywiki-starter-kit@main/plugins/oeyoews/tiddlywiki-banners/files/523.png?raw=true
+    const imageProvider = 'https://cdn.jsdelivr.net/gh';
+    const repo = 'oeyoews/tiddlywiki-starter-kit@main';
+    const path = 'plugins/oeyoews/tiddlywiki-banners/files';
+    const urlPrefix = `${imageProvider}/${repo}/${path}`;
+    const versions = [520, 523, 530, 532];
 
     const imageURLs = versions.map((version) => ({
       title: version,
-      src: `${urlPrefix}${version}.png`,
+      src: `${urlPrefix}/${version}.png?raw=true`,
     }));
 
     imageURLs.forEach(({ title, src }) => {
