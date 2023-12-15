@@ -223,14 +223,15 @@
         "title": "$:/plugins/oeyoews/neotw-image-gallery",
         "description": "neotw-image-gallery",
         "author": "oeyoews",
-        "version": "0.0.1",
-        "core-version": ">=5.3.0",
+        "version": "0.1.0",
+        "core-version": ">=5.3.1",
         "type": "application/json",
         "plugin-type": "plugin",
         "name": "neotw-image-gallery",
+        "meta#disabled": "true",
         "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
         "list": "readme",
-        "readme": "## usage\n\n```wikitext\n<$gallery json=\"image-list.json\" />\n```\n\n<$gallery json=\"image-list.json\" />\n\n<$banners />\n",
+        "readme": "## Introducion\n\n- 这是一个支持各种数据源的图库(WIP), 图片已经进行按需加载优化\n\n* 网易云首页轮播图自动更新\n* tiddlywiki banner(WIP)\n* 自定义图库\n* Bing 每日壁纸\n* ...\n\n## Usage\n\n```wikitext\n<$gallery json=\"image-list.json\" />\n```\n\n<$gallery json=\"image-list.json\" />\n\n<$banners />\n\n<$nbanners />\n",
         "requires-reload": "yes"
     },
     {
