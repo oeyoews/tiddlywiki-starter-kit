@@ -84,6 +84,11 @@ pnpm start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm
 - ENV: nodejs/bun pnpm/npm git
 - EDITOR: vscode/neovim/others
 
+## 使用 moderndev 构建 的插件
+
+- cm6: https://github.com/oeyoews/tiddlywiki-codemirror6
+- echarts: https://github.com/oeyoews/tw-echarts(forked)
+
 ## How to use tiddlywiki starter kit with locally ?
 
 - 事实上 tiddlywiki starter kit 由三部分组成
@@ -262,3 +267,12 @@ on tw: [[docs/code.js]]
 > Coming
 
 > 这个目录的文件已经通过软链接的相对路径链接到 tiddlers（neotw-tiddlers）里面， 所以你也可以在 [website](https://neotw.oeyoewl.top) 里面看到这些文章（docs 开头）
+
+## Related Links
+
+- moderndev: https://github.com/tiddly-gittly/Modern.TiddlyDev
+- tiddlywiki: https://tiddlywiki.com and https://github.com/Jermolene/TiddlyWiki5
+- tiddlywiki talk: https://talk.tiddlywiki.org and ~~https://talk.tidgi.fun/ (时常离线无法访问)~~
+- tiddlywiki dev: https://tiddlywiki.com/dev
+- prelease: https://tiddlywiki.com/prerelease
+- full editions: https://tiddlywiki.com/editions/full
