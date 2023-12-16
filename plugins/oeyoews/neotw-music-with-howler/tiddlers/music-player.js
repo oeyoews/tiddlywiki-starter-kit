@@ -25,7 +25,7 @@ class MusicWidget extends Widget {
     // TODO: use api to get random id
     // TODO: support tiddler mid field
     // TODO: support multi id
-    const { id = '1947926942', autoplay = 'false' } = this.attributes;
+    const { id = '1947926942', autoplay = 'false', title } = this.attributes;
     const { Howl } = require('howler.min.js');
 
     const baseURL = 'https://music.163.com/song/media/outer/url?id=';
@@ -50,6 +50,8 @@ class MusicWidget extends Widget {
       onload: () => {},
       onend: () => {},
       onplay: () => {
+        // TODO: 换算成秒
+        // this.duration = sound.duration();
         new $tw.Notify().display({
           title: '开始播放',
         });
@@ -64,15 +66,13 @@ class MusicWidget extends Widget {
       window.sound.unload();
     }
     window.sound = new Howl(options);
-    sound.on('load', () => {
-      console.log('sound loaded');
-      // TODO: not work, 难道是重定向导致的???
-      // this.duration = sound.duration();
-    });
 
     const btn = createElement('button', {
       class:
         'rounded-full p-1 bg-gray-200/70 hover:scale-125 transition-all duration-500',
+      attributes: {
+        title: this.duration,
+      },
     });
     btn.innerHTML = MusicIcon;
 
@@ -91,9 +91,6 @@ class MusicWidget extends Widget {
       // TODO: add more function button
       children: [btn],
     });
-
-    // TODO: destory sound
-    // sound.unload()
 
     parent.insertBefore(domNode, nextSibling);
     this.domNodes.push(domNode);
