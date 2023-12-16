@@ -24,6 +24,7 @@ class MusicWidget extends Widget {
 
     // TODO: use api to get random id
     // TODO: support tiddler mid field
+    // TODO: support multi id
     const { id = '1947926942', autoplay = 'false' } = this.attributes;
     const { Howl } = require('howler.min.js');
 
@@ -58,7 +59,11 @@ class MusicWidget extends Widget {
 
     // TODO: how read meta info on mp3 file
     // TODO: how to uninstall
-    const sound = new Howl(options);
+    if (window.sound) {
+      window.sound.pause();
+      window.sound.unload();
+    }
+    window.sound = new Howl(options);
     sound.on('load', () => {
       console.log('sound loaded');
       // TODO: not work, 难道是重定向导致的???
