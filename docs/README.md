@@ -9,7 +9,7 @@
 
 ## 大致会写什么
 
-- js 系列插件开发经验,技巧, 关于js, 在项目中我会为每个项目都是用ts, 不管多大规模, 类型推断,自动提示可以获得更好的开发体验, moderndev 对于一些比较复杂的tw 插件就很有帮助, 不过大多数情况下, 每个插件的代码函数不会超过300行, 我更倾向于使用无依赖的js单文件来写, 不依赖构建工具, 干净整洁
+- js 系列插件开发经验(会对比react vue 来说, 便于理解),技巧, 关于js, 在项目中我会为每个项目都是用ts, 不管多大规模, 类型推断,自动提示可以获得更好的开发体验, moderndev 对于一些比较复杂的tw 插件就很有帮助, 不过大多数情况下, 每个插件的代码函数不会超过300行, 我更倾向于使用无依赖的js单文件来写, 不依赖构建工具, 干净整洁
 - tw 的一些使用技巧
 
 [online preview](https://tiddlywiki-starter-kit.vercel.app/#docs%2FREADME)
@@ -224,6 +224,10 @@ tw 会一直读取这个文件的内容, 无论修改成什么值, 可以看作�
 - 如果你使用过react,vue, 你可能希望在这里也使用上suspense, 大致思路就是, 先把suspense的内容放在dom中, 然后开始获取数据, 数据就绪后, 移除之前suspense 的内容, 然后把新的内容放在dom中
 
 @see-also $:/plugins/oeyoews/neotw-image-gallery/netease-banners.js
+
+## 插件: export
+
+- 类似vue的单文件组件SFC, nextjs的文件路由的组件默认导出, 每一个widget的都是一个默认导出 exports.xxx =xxx
 
 ## 插件: Require
 
