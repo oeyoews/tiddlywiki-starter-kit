@@ -34,7 +34,7 @@ class BannersWidget extends Widget {
 
     const children = [];
 
-    data.forEach(({ src }) => {
+    data.slice(0, 9).forEach(({ src }) => {
       const imageNode = createImage('', src);
       twimageobserver.observe(imageNode);
       children.push(imageNode);

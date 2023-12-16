@@ -4,7 +4,13 @@ type: application/javascript
 module-type: library
 
 \*/
-/** create image node */
+/**
+ * @function createImage
+ * @description Creates an image node.
+ * @param {string} title - The title of the image.
+ * @param {string} src - The source URL of the image.
+ * @returns {HTMLImageElement} The created image node.
+ */
 module.exports = function createImage(title, src) {
   const createElement = $tw.utils.domMaker;
 
