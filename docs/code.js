@@ -124,3 +124,10 @@ nprogress module
 });
 
 //# sourceURL=nprogress/startup.js
+
+// NOTE: rendertext always add p tag automatically
+const icon = $tw.wiki.renderText(
+  'text/html',
+  'text/vnd.tiddlywiki',
+  '<$iconify />',
+);
