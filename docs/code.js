@@ -130,4 +130,7 @@ const icon = $tw.wiki.renderText(
   'text/html',
   'text/vnd.tiddlywiki',
   '<$iconify />',
+  {
+    parseAsInline: true, // no extra tag
+  },
 );
