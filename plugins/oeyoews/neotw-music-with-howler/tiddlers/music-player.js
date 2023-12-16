@@ -27,7 +27,7 @@ class MusicWidget extends Widget {
       autoplay = 'false',
       title = '',
     } = this.attributes;
-    const { Howl } = require('howler.min.js');
+    const { Howl, Howler } = require('howler.min.js');
 
     const baseURL = 'https://music.163.com/song/media/outer/url?id=';
     const src = `${baseURL}${id}.mp3`;
@@ -38,6 +38,9 @@ class MusicWidget extends Widget {
     const options = {
       src: url || src,
       format: ['mp3'],
+      loop: true,
+      preload: 'metadata',
+      mute: false,
       autoplay: autoplay === 'false' ? false : true, // mobile not support autoplay
       volume: 0.8,
       html5: true,
@@ -66,6 +69,8 @@ class MusicWidget extends Widget {
       },
     });
     btn.innerHTML = MusicIcon;
+
+    // Howler.mute()
 
     btn.addEventListener('click', () => {
       if (sound.playing()) {
