@@ -279,6 +279,22 @@
         "icon": "data:image/svg+xml,%3Csvg%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20width%3D%2216%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cpath%20d%3D%22m7.26803385%208%203.12819015-7.125h4.1745047v11h1.4292713l-3.0298438%204-3.1951562-4h1.5640519v-8.0170583l-3.3390519%208.0646417h-1.52615114l-3.24217209-5.92647752-.05636645.00964426v5.91683326h-3.17531032v-11.0475834h3.48007812z%22%20fill%3D%22%23293040%22%20fill-rule%3D%22nonzero%22%2F%3E%3Cpath%20d%3D%22m0%2012.875h3.2v2h-3.2z%22%20fill%3D%22%235170ff%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E"
     },
     {
+        "title": "$:/plugins/oeyoews/neotw-music-with-howler",
+        "description": "neotw-music-with-howler",
+        "author": "oeyoews",
+        "version": "0.0.1",
+        "core-version": ">=5.3.1",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "neotw-music-with-howler",
+        "meat#disabled": "yes",
+        "qrcode": "yes",
+        "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
+        "list": "readme",
+        "readme": "<!-- plugin template readme -->\n",
+        "requires-reload": "yes"
+    },
+    {
         "title": "$:/plugins/oeyoews/neotw-notion-gallery",
         "description": "neotw-notion-gallery",
         "author": "oeyoews",
