@@ -291,7 +291,7 @@
         "qrcode": "yes",
         "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
         "list": "readme",
-        "readme": "<!-- plugin template readme -->\n",
+        "readme": "<!-- plugin template readme -->\n\n<$music />\n",
         "requires-reload": "yes"
     },
     {
