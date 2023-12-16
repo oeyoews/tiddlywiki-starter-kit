@@ -276,3 +276,4 @@ on tw: [[docs/code.js]]
 - tiddlywiki dev: https://tiddlywiki.com/dev
 - prelease: https://tiddlywiki.com/prerelease
 - full editions: https://tiddlywiki.com/editions/full
+- tiddlywiki host: https://tiddlyhost.com/
