@@ -22,8 +22,9 @@ class MusicWidget extends Widget {
 
     const createElement = $tw.utils.domMaker;
 
+    // TODO: use api to get random id
     // TODO: support tiddler mid field
-    const { id = '2010499842' } = this.attributes;
+    const { id = '1947926942', autoplay = 'false' } = this.attributes;
     const { Howl } = require('howler.min.js');
 
     const baseURL = 'https://music.163.com/song/media/outer/url?id=';
@@ -42,21 +43,17 @@ class MusicWidget extends Widget {
     const options = {
       src,
       format: ['mp3'],
-      autoplay: true,
-      volume: 0.5,
+      autoplay: autoplay === 'false' ? false : true, // mobile not support autoplay
+      volume: 0.8,
       html5: true,
       onload: () => {},
-      onend: () => {
-        console.log('end');
-      },
+      onend: () => {},
       onplay: () => {
         new $tw.Notify().display({
           title: '开始播放',
         });
       },
-      onpause: () => {
-        console.log('pause');
-      },
+      onpause: () => {},
     };
 
     // TODO: how read meta info on mp3 file
@@ -69,7 +66,8 @@ class MusicWidget extends Widget {
     });
 
     const btn = createElement('button', {
-      class: 'rounded p-1',
+      class:
+        'rounded-full p-1 bg-gray-200/70 hover:scale-125 transition-all duration-500',
     });
     btn.innerHTML = MusicIcon;
 
@@ -80,6 +78,7 @@ class MusicWidget extends Widget {
         sound.play();
       }
       // toggle spin icon
+      // TODO: add slow css spin
       btn.classList.toggle('animate-spin');
     });
 

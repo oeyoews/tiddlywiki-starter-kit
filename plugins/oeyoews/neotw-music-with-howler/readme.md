@@ -1,1 +1,3 @@
 <!-- plugin template readme -->
+
+<$music />
