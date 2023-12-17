@@ -18,6 +18,7 @@ class MusicWidget extends Widget {
   checkSound() {
     window.player?.unload();
   }
+
   render(parent, nextSibling) {
     if (!$tw.browser) return;
     this.parentDomNode = parent;
@@ -90,7 +91,6 @@ class MusicWidget extends Widget {
     if (enableImg !== 'true') {
       btn.innerHTML = MusicIcon;
     }
-
     // global settings
     // Howler.mute()
 
@@ -107,6 +107,18 @@ class MusicWidget extends Widget {
 
     parent.insertBefore(btn, nextSibling);
     this.domNodes.push(btn);
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        // 如果元素不可见
+        if (!entry.isIntersecting) {
+          // 调用unload方法卸载音频
+          this.sound?.unload();
+        }
+      });
+    });
+
+    observer.observe(btn);
   }
 }
 
