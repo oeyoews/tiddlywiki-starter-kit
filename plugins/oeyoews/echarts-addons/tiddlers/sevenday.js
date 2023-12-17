@@ -47,12 +47,6 @@ function getSevenDaysBefore(dateString, daysLength = 7) {
 
 const Sevendays = {
   onUpdate(myChart, _state, addonAttributes) {
-    /**
-     * @param days 指定天数
-     * @param date 指定日期
-     * @param title 标题
-     * @param subtitle 副标题
-     */
     const {
       days,
       date,
@@ -87,7 +81,14 @@ const Sevendays = {
         },
       },
       tooltip: {
-        trigger: 'item', // item
+        // item, axis
+        trigger: 'item',
+        // axisPointer: {
+        //   type: 'cross',
+        //   label: {
+        //     backgroundColor: '#6a7985',
+        //   },
+        // },
         formatter: function (params) {
           const { name: date, value: count, seriesName } = params;
           const realDate = parsesixDate(date).toLocaleDateString();
@@ -104,7 +105,7 @@ const Sevendays = {
       },
       // color: [''],
       xAxis: {
-        boundaryGap: true, // option
+        boundaryGap: true, // 是否在数据点两侧留白，
         type: 'category',
         data: sevendays,
         name: '日期',
@@ -118,9 +119,15 @@ const Sevendays = {
         {
           name: 'created',
           data: createdData,
-          showSymbol: true,
           type: 'line',
+          showSymbol: false,
           symbolSize: 0, // 数据点大小
+          stack: 'Total',
+          lineStyle: {
+            // 折线宽度
+            width: 0,
+            // color: 'purple'
+          },
           endLabel: {
             show: true,
             formatter: '{a}',
@@ -140,11 +147,6 @@ const Sevendays = {
               },
             ]),
           },
-          lineStyle: {
-            // 折线宽度
-            width: 0,
-            // color: 'purple'
-          },
           emphasis: {
             focus: 'series',
             itemStyle: {
@@ -162,8 +164,9 @@ const Sevendays = {
             width: 0,
           },
           symbolSize: 0,
+          stack: 'Total',
           type: 'line',
-          showSymbol: true,
+          showSymbol: false,
           endLabel: {
             show: true,
             formatter: '{a}',
