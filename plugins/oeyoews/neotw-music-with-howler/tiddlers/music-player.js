@@ -45,7 +45,7 @@ class MusicWidget extends Widget {
       attributes: {
         alt: title,
         src: img,
-        class: 'rounded-full w-[26px] h-[26px]',
+        class: 'rounded-full w-[26px] h-[26px] object-cover',
         title,
       },
     });
