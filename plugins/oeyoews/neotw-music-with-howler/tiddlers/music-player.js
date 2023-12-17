@@ -7,17 +7,16 @@ neotw-music-with-howler widget
 \*/
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 
+// TODO: 显示 歌曲title on window tab
 class MusicWidget extends Widget {
   constructor(parseTreeNode, options) {
     super(parseTreeNode, options);
     this.duration = null;
+    this.sound = null;
   }
 
   checkSound() {
-    if (window.sound) {
-      window.sound.pause();
-      window.sound.unload();
-    }
+    window.player?.unload();
   }
   render(parent, nextSibling) {
     if (!$tw.browser) return;
@@ -73,7 +72,8 @@ class MusicWidget extends Widget {
     };
 
     this.checkSound();
-    window.sound = new Howl(options);
+    this.sound = new Howl(options);
+    window.player = this.sound;
 
     const children = [];
     if (enableImg === 'true' && img) {
@@ -94,11 +94,12 @@ class MusicWidget extends Widget {
     // global settings
     // Howler.mute()
 
+    // TODO: 如果有多个 widget 同时展示再页面上, 会同时播放
     btn.addEventListener('click', () => {
-      if (sound.playing()) {
-        sound.pause();
+      if (this.sound.playing()) {
+        this.sound.pause();
       } else {
-        sound.play();
+        this.sound.play();
       }
       btn.classList.toggle('rotate');
       btn.classList.toggle('animated');
