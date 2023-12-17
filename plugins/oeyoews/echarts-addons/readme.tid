@@ -3,7 +3,11 @@ type: text/markdown
 
 <$qrcode type=url />
 
-目前有 clockc, tagpie, sevenday, 三种addon
+[img[https://i.imgur.com/9BEZnR3.png]]
+[img[https://i.imgur.com/myoq7V4.png]]
+[img[https://i.imgur.com/Zz1Qe8i.png]]
+
+> 目前支持 clockc, tagpie, sevenday, 三种addon
 
 * 将echarts的addons独立出来, 使用js编写,不依赖外部环境, 即使在tw里面也能快速修改, 方便用户修改
 
@@ -14,7 +18,4 @@ type: text/markdown
 ## TODO
 
 * update tooltip style to fix darkmode
-
-## TODO
-
 * support qrcode field to show current tiddler url qrcode

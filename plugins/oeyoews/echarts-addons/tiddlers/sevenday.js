@@ -120,22 +120,29 @@ const Sevendays = {
           data: createdData,
           showSymbol: true,
           type: 'line',
-          symbolSize: 10,
+          symbolSize: 0, // 数据点大小
           endLabel: {
             show: true,
             formatter: '{a}',
             distance: 20,
           },
-          // areaStyle: {
-          // normal: {
-          //   color: "green", //改变区域颜色
-          //   lineStyle: {
-          //     color: "green", //改变折线颜色
-          //   },
-          // },
-          // },
+          // 区域颜色
+          areaStyle: {
+            opacity: 0.8,
+            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+              {
+                offset: 0,
+                color: 'rgb(55, 162, 255)',
+              },
+              {
+                offset: 1,
+                color: 'rgb(116, 21, 219)',
+              },
+            ]),
+          },
           lineStyle: {
-            width: 4,
+            // 折线宽度
+            width: 0,
             // color: 'purple'
           },
           emphasis: {
@@ -152,9 +159,9 @@ const Sevendays = {
           name: 'modified',
           data: modifiedData,
           lineStyle: {
-            width: 4,
+            width: 0,
           },
-          symbolSize: 10,
+          symbolSize: 0,
           type: 'line',
           showSymbol: true,
           endLabel: {
@@ -162,7 +169,19 @@ const Sevendays = {
             formatter: '{a}',
             distance: 20,
           },
-          // areaStyle: {},
+          areaStyle: {
+            opacity: 0.9,
+            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+              {
+                offset: 0,
+                color: 'rgb(128, 255, 165)',
+              },
+              {
+                offset: 1,
+                color: 'rgb(1, 191, 236)',
+              },
+            ]),
+          },
           emphasis: {
             focus: 'series',
             itemStyle: {
