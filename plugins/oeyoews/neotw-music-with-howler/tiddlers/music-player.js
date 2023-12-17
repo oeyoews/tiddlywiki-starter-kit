@@ -105,6 +105,7 @@ class MusicWidget extends Widget {
     btn.addEventListener('click', () => {
       if (this.sound.playing()) {
         this.sound.pause();
+        btn.classList.remove('rotate');
       } else {
         const playingsongs = this.getPlayingSongs();
         if (playingsongs) {
@@ -112,8 +113,8 @@ class MusicWidget extends Widget {
           this.updatePlaylistStatus(playingsongs.title, this.PAUSE);
         }
         this.sound.play();
+        btn.classList.add('rotate');
       }
-      btn.classList.toggle('rotate');
     });
 
     parent.insertBefore(btn, nextSibling);
