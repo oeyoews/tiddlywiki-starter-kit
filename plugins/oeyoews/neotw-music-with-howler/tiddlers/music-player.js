@@ -117,6 +117,11 @@ class MusicWidget extends Widget {
       }
     });
 
+    // TODO: support config dialog model
+    btn.addEventListener('contextmenu', (e) => {
+      e.preventDefault();
+    });
+
     parent.insertBefore(btn, nextSibling);
     this.domNodes.push(btn);
 

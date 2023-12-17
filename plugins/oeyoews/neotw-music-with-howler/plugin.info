@@ -2,7 +2,7 @@
   "title": "$:/plugins/oeyoews/neotw-music-with-howler",
   "description": "neotw-music-with-howler",
   "author": "oeyoews",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "core-version": ">=5.3.1",
   "type": "application/json",
   "plugin-type": "plugin",

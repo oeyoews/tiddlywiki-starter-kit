@@ -13,5 +13,6 @@ exports.after = ['startup'];
 exports.synchronous = true;
 exports.startup = () => {
   window.tailwind = require('tailwindcss.min.js');
+  window.tailwind.version = '3.3.5';
   window.tailwind.config = require('./tailwind.config');
 };
