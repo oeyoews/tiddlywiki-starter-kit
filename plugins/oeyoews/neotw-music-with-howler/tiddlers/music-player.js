@@ -13,6 +13,12 @@ class MusicWidget extends Widget {
     this.duration = null;
   }
 
+  checkSound() {
+    if (window.sound) {
+      window.sound.pause();
+      window.sound.unload();
+    }
+  }
   render(parent, nextSibling) {
     if (!$tw.browser) return;
     this.parentDomNode = parent;
@@ -55,10 +61,7 @@ class MusicWidget extends Widget {
       onpause: () => {},
     };
 
-    if (window.sound) {
-      window.sound.pause();
-      window.sound.unload();
-    }
+    this.checkSound();
     window.sound = new Howl(options);
 
     const btn = createElement('button', {
