@@ -27,6 +27,12 @@ class GalleryWidget extends Widget {
     const { json = 'image-list.json' } = this.attributes;
     this.jsonfile = json;
 
+    // need check this file
+    const isFile = $tw.wiki.tiddlerExists(json);
+    if (!isFile) {
+      console.warn(json, 'file not founded !');
+      return;
+    }
     const data = $tw.wiki.getTiddlerData(json);
     const imagesURL = Object.entries(data);
 
