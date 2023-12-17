@@ -5,7 +5,8 @@ module-type: widget
 
 fetch-mdfile widget
 \*/
-const Widget = require('$:/core/modules/widgets/widget.js').widget;
+
+const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 const { getText } = require('./addfile');
 
 class FetchWidget extends Widget {
@@ -36,10 +37,18 @@ class FetchWidget extends Widget {
 
     const { url = defaulturl } = this.attributes;
 
-    const domNode = this.document.createElement('div');
+    const loading = this.document.createElement('div');
 
+    loading.className = 'h-48 w-full rounded animate-pulse bg-gray-200';
+
+    parent.insertBefore(loading, nextSibling);
+    this.domNodes.push(loading);
     progress.start();
+
     const text = await getText(url);
+    this.removeChildDomNodes(loading);
+
+    const domNode = this.document.createElement('div');
     const textContent = $tw.wiki.renderText('text/html', 'text/markdown', text);
     domNode.innerHTML = textContent;
     progress.done();
@@ -47,6 +56,7 @@ class FetchWidget extends Widget {
     parent.insertBefore(domNode, nextSibling);
     this.domNodes.push(domNode);
   }
+
   refresh() {
     return false;
   }
