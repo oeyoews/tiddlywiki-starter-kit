@@ -13,7 +13,7 @@ class FetchWidget extends Widget {
     super(parseTreeNode, options);
   }
 
-  render(parent, nextSibling) {
+  async render(parent, nextSibling) {
     if (!$tw.browser) return;
     this.parentDomNode = parent;
     this.computeAttributes();
@@ -38,17 +38,11 @@ class FetchWidget extends Widget {
 
     const domNode = this.document.createElement('div');
 
-    getText(url).then((text) => {
-      if (!text) console.log('text null');
-      progress.start();
-      const textContent = $tw.wiki.renderText(
-        'text/html',
-        'text/markdown',
-        text,
-      );
-      domNode.innerHTML = textContent;
-      progress.done();
-    });
+    progress.start();
+    const text = await getText(url);
+    const textContent = $tw.wiki.renderText('text/html', 'text/markdown', text);
+    domNode.innerHTML = textContent;
+    progress.done();
 
     parent.insertBefore(domNode, nextSibling);
     this.domNodes.push(domNode);

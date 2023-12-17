@@ -12,7 +12,7 @@ exports.synchronous = true;
 
 exports.startup = () => {
   const { addfile } = require('./addfile');
-  $tw.rootWidget.addEventListener('om-fetch', (event) => {
+  $tw.rootWidget.addEventListener('om-fetch', async (event) => {
     const time = new Date().getTime();
     const {
       paramObject: {
@@ -20,6 +20,6 @@ exports.startup = () => {
         fileName = `fetch-${time}`,
       } = {},
     } = event;
-    addfile(url, fileName);
+    await addfile(url, fileName);
   });
 };
