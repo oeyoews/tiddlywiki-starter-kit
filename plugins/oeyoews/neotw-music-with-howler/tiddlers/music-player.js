@@ -114,6 +114,7 @@ class MusicWidget extends Widget {
         if (!entry.isIntersecting) {
           // 调用unload方法卸载音频
           this.sound?.unload();
+          observer.unobserve(btn);
         }
       });
     });
