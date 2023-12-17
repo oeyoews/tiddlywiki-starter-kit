@@ -11,7 +11,7 @@ module-type: library
  * @param {string} src - The source URL of the image.
  * @returns {HTMLImageElement} The created image node.
  */
-module.exports = function createImage(title, src) {
+module.exports = function createImage(title, src, standard = true) {
   const createElement = $tw.utils.domMaker;
 
   const imageNode = createElement('img', {
@@ -23,6 +23,7 @@ module.exports = function createImage(title, src) {
     },
   });
 
+  standard === 'false' && imageNode.classList.remove('aspect-video');
   imageNode.addEventListener('contextmenu', (e) => {
     e.preventDefault();
   });
