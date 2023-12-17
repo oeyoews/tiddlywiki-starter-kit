@@ -7,12 +7,9 @@
   }
 }
 
-.animated {
+.rotate {
+  animation-name: rotate; /* 使用定义的 rotate 关键帧动画 */
   animation-duration: 10s; /* 可以根据需要调整动画的持续时间 */
   animation-timing-function: linear; /* 调整动画的缓动函数 */
   animation-iteration-count: infinite; /* 使动画无限循环 */
-}
-
-.rotate {
-  animation-name: rotate; /* 使用定义的 rotate 关键帧动画 */
 }

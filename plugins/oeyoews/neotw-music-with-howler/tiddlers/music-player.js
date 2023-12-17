@@ -13,10 +13,8 @@ class MusicWidget extends Widget {
     super(parseTreeNode, options);
     this.duration = null;
     this.sound = null;
-  }
-
-  checkSound() {
-    window.player?.unload();
+    this.PLAYING = 'playing';
+    this.PAUSE = 'pause';
   }
 
   render(parent, nextSibling) {
@@ -31,7 +29,7 @@ class MusicWidget extends Widget {
       url,
       id = '1947926942',
       autoplay = 'false',
-      title = '',
+      title = 'default',
       img = 'http://p2.music.126.net/AxfyFEr9GO_OnC5WBevzbw==/109951167425399843.jpg?param=130y130',
       enableImg = 'false',
     } = this.attributes;
@@ -65,16 +63,26 @@ class MusicWidget extends Widget {
       onend: () => {},
       onplay: () => {
         // this.duration = sound.duration();
+        this.updatePlaylistStatus(title, this.PLAYING);
         new $tw.Notify().display({
           title: '开始播放' + title,
         });
       },
-      onpause: () => {},
+      onpause: () => {
+        this.updatePlaylistStatus(title, this.PAUSE);
+      },
     };
 
-    this.checkSound();
     this.sound = new Howl(options);
-    window.player = this.sound;
+    if (!window.playlist) {
+      const playlist = [];
+      window.playlist = playlist;
+    }
+
+    const existingItem = window.playlist.find((item) => item.title === title);
+    if (!existingItem) {
+      window.playlist.push({ title, sound: this.sound });
+    }
 
     const children = [];
     if (enableImg === 'true' && img) {
@@ -94,15 +102,18 @@ class MusicWidget extends Widget {
     // global settings
     // Howler.mute()
 
-    // TODO: 如果有多个 widget 同时展示再页面上, 会同时播放
     btn.addEventListener('click', () => {
       if (this.sound.playing()) {
         this.sound.pause();
       } else {
+        const playingsongs = this.getPlayingSongs();
+        if (playingsongs) {
+          playingsongs.sound.unload();
+          this.updatePlaylistStatus(playingsongs.title, this.PAUSE);
+        }
         this.sound.play();
       }
       btn.classList.toggle('rotate');
-      btn.classList.toggle('animated');
     });
 
     parent.insertBefore(btn, nextSibling);
@@ -113,13 +124,35 @@ class MusicWidget extends Widget {
         // 如果元素不可见
         if (!entry.isIntersecting) {
           // 调用unload方法卸载音频
+          btn.classList.remove('rotate');
+          // 不能使用window.sound, 因为无法确定哪个是当前的实例
           this.sound?.unload();
+          this.updatePlaylistStatus(this.title, this.PAUSE);
           observer.unobserve(btn);
         }
       });
     });
 
     observer.observe(btn);
+  }
+
+  updatePlaylistStatus(title, status) {
+    const existingItemIndex = window.playlist.findIndex(
+      (item) => item.title === title,
+    );
+
+    if (existingItemIndex !== -1) {
+      // 如果存在相同 title 的项，则更新现有对象的 status
+      window.playlist[existingItemIndex].status = status;
+    }
+    // 进行其他可能的更新操作
+  }
+  getPlayingSongs() {
+    return window.playlist.filter((item) => item.status === this.PLAYING)[0];
+  }
+
+  refresh() {
+    return false;
   }
 }
 
