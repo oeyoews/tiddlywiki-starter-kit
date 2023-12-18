@@ -26,19 +26,19 @@ const gotoTagTiddler = (params) => {
   goto.navigateTiddler(title);
 };
 
+/**
+ * @description 理论上所有的option配置都可以暴露出来, 这里仅仅暴露一些常用的配置, echarts将这些工作交给了addon, 大概是不同类型的addon处理起来比较复杂,但是与此同时,addon就更具有扩展性
+ * @param filter 默认是用户的所有tiddler, 但是你也可以使用 filter='[tag[Journal]]' 列出所有的 Journal tiddler
+ * @param title
+ * @param radius
+ * @param sort {descend|ascend}
+ * @param doughnut {'yes'}
+ * @param width {0}
+ * @param legend {'yes'}
+ * @param toolbox {'show'|'hide'}
+ */
 const TagPie = {
   onUpdate(myChart, _, addonAttributes) {
-    /*
-     * @description 理论上所有的option配置都可以暴露出来, 这里仅仅暴露一些常用的配置, echarts将这些工作交给了addon, 大概是不同类型的addon处理起来比较复杂,但是与此同时,addon就更具有扩展性
-     * @param filter 默认是用户的所有tiddler, 但是你也可以使用 filter='[tag[Journal]]' 列出所有的 Journal tiddler
-     * @param title
-     * @param radius
-     * @param sort {descend|ascend}
-     * @param doughnut {'yes'}
-     * @param width {0}
-     * @param legend {'yes'}
-     * @param toolbox {'show'|'hide'}
-     */
     const {
       title: text,
       filter = '[tags[]!prefix[$:/]]',

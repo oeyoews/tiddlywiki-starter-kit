@@ -134,7 +134,8 @@ class MusicWidget extends Widget {
           // 不能使用window.sound, 因为无法确定哪个是当前的实例
           this.sound?.unload();
           this.updatePlaylistStatus(this.title, this.PAUSE);
-          observer.unobserve(btn);
+          // NOTE: 不要取消观察
+          // observer.unobserve(btn);
         }
       });
     });
