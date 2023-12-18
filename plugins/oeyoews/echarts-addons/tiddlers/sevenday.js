@@ -7,22 +7,24 @@ description: 折线图
 \*/
 
 /** @description: echarts 几乎支持每一处的样式设置, 这里仅根据需要设置必要的样式 */
+
 const getData = (date, type = 'created') =>
   $tw.wiki.filterTiddlers(`[sameday:${type}[${date}]!is[system]!has[draft.of]]`)
     .length;
 
-function parsesixDate(dateString) {
-  const year = parseInt(dateString.substr(0, 4));
-  const month = parseInt(dateString.substr(4, 2)) - 1; // 月份从0开始，需要减1
-  const day = parseInt(dateString.substr(6, 2));
-  const realDate = new Date(year, month, day);
-  return realDate;
-}
+const parsesixDate = (dateString) =>
+  new Date(
+    `${dateString.substr(0, 4)}-${dateString.substr(4, 2)}-${dateString.substr(
+      6,
+      2,
+    )}`,
+  );
 
 /**
  * @description sevenday echart some config
  */
 const config = {
+  title: '最近文章动态',
   opacity: 0.8,
   xLegend: '日期',
   yLegend: '文章数量',
@@ -36,18 +38,13 @@ function getSevenDaysBefore(dateString, daysLength = 7) {
   const sevenDays = [];
 
   for (let i = 0; i < daysLength; i++) {
-    // 获取当前日期的年、月、日
     const year = currentDate.getFullYear();
-    const month = currentDate.getMonth() + 1; // 月份从0开始，需要加1
-    const day = currentDate.getDate();
+    const month = String(currentDate.getMonth() + 1).padStart(2, '0');
+    const day = String(currentDate.getDate()).padStart(2, '0');
 
-    // 将年、月、日格式化成字符串，并添加到数组
-    const dateString = `${year}${month < 10 ? '0' : ''}${month}${
-      day < 10 ? '0' : ''
-    }${day}`;
-    sevenDays.unshift(dateString); // 使用unshift方法将日期添加到数组头部
+    sevenDays.unshift(year + month + day);
 
-    // 将当前日期减一天，以便生成前一天的日期
+    // Subtract one day from currentDate
     currentDate.setDate(currentDate.getDate() - 1);
   }
 
@@ -59,7 +56,7 @@ const Sevendays = {
     const {
       days,
       date,
-      title: text = '最近文章动态',
+      title: text = config.title,
       subtitle: subtext = '',
       disableClick = 'no',
       // smooth = 'true',
