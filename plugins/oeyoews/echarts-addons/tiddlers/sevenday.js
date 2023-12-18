@@ -2,12 +2,11 @@
 title: addon/sevenday.js
 module-type: echarts-component
 type: application/javascript
-description: seven
+description: 折线图
+
 \*/
 
-// TODO: 简化时间的处理
-// TODO: 指定线的颜色, 区域的颜色
-// @description: echarts 几乎支持每一处的样式设置, 这里仅根据需要设置必要的样式
+/** @description: echarts 几乎支持每一处的样式设置, 这里仅根据需要设置必要的样式 */
 const getData = (date, type = 'created') =>
   $tw.wiki.filterTiddlers(`[sameday:${type}[${date}]!is[system]!has[draft.of]]`)
     .length;
@@ -17,9 +16,19 @@ function parsesixDate(dateString) {
   const month = parseInt(dateString.substr(4, 2)) - 1; // 月份从0开始，需要减1
   const day = parseInt(dateString.substr(6, 2));
   const realDate = new Date(year, month, day);
-  //.toLocaleDateString();
   return realDate;
 }
+
+/**
+ * @description sevenday echart some config
+ */
+const config = {
+  opacity: 0.8,
+  xLegend: '日期',
+  yLegend: '文章数量',
+  lineWidth: 0,
+  symbolSize: 0,
+};
 
 function getSevenDaysBefore(dateString, daysLength = 7) {
   const currentDate = dateString ? parsesixDate(dateString) : new Date();
@@ -81,7 +90,7 @@ const Sevendays = {
         },
       },
       tooltip: {
-        // item, axis
+        // options: item, axis
         trigger: 'item',
         // axisPointer: {
         //   type: 'cross',
@@ -108,11 +117,11 @@ const Sevendays = {
         boundaryGap: true, // 是否在数据点两侧留白，
         type: 'category',
         data: sevendays,
-        name: '日期',
+        name: config.xLegend,
       },
       yAxis: {
         type: 'value',
-        name: '文章数量',
+        name: config.yLegend,
       },
       animationDuration: 2000,
       series: [
@@ -121,11 +130,11 @@ const Sevendays = {
           data: createdData,
           type: 'line',
           showSymbol: false,
-          symbolSize: 0, // 数据点大小
+          symbolSize: config.symbolSize,
           stack: 'Total',
           lineStyle: {
             // 折线宽度
-            width: 0,
+            width: config.lineWidth,
             // color: 'purple'
           },
           endLabel: {
@@ -133,9 +142,9 @@ const Sevendays = {
             formatter: '{a}',
             distance: 20,
           },
-          // 区域颜色
+          // 区域颜色渐变
           areaStyle: {
-            opacity: 0.8,
+            opacity: config.opacity,
             color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
               {
                 offset: 0,
@@ -161,9 +170,9 @@ const Sevendays = {
           name: 'modified',
           data: modifiedData,
           lineStyle: {
-            width: 0,
+            width: config.lineWidth,
           },
-          symbolSize: 0,
+          symbolSize: config.symbolSize,
           stack: 'Total',
           type: 'line',
           showSymbol: false,
@@ -173,7 +182,7 @@ const Sevendays = {
             distance: 20,
           },
           areaStyle: {
-            opacity: 0.9,
+            opacity: config.opacity,
             color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
               {
                 offset: 0,
@@ -199,7 +208,10 @@ const Sevendays = {
       ],
     };
 
+    // 更新配置
     myChart.setOption(option);
+
+    // 监听双击事件
     myChart.on('dblclick', 'series', function (params) {
       const { name: date, value: count, seriesName } = params;
       const goto = new $tw.Story();
@@ -216,6 +228,7 @@ const Sevendays = {
       goto.navigateTiddler('$:/AdvancedSearch');
     });
   },
+  // 没有频繁更新的需要, 禁止刷新
   shouldUpdate() {
     return false;
   },
