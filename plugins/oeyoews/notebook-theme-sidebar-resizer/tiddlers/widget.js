@@ -15,6 +15,7 @@ class NotebookResizer extends Widget {
     this.isResizing = false;
     this.tiddler = '$:/themes/nico/notebook/metrics/sidebar-width';
     this.positionTiddler = '$:/themes/nico/notebook/metrics/sidebar-position';
+    this.width;
   }
 
   getSidebarPosition() {
@@ -59,13 +60,21 @@ class NotebookResizer extends Widget {
     });
 
     const resize = (e) => {
-      // TODO: throttle requestanimation
+      // TODO: use percent
       if (this.isResizing) {
-        // TODO: use percent
-        if (e.clientX > 750 || e.clientX < 250) {
-          return;
+        if (this.getSidebarPosition() === 'left') {
+          this.width = e.clientX;
+          if (this.width > 750 || this.width < 250) {
+            return;
+          }
+          this.updateSidebarWidth(this.width);
+        } else {
+          this.width = window.innerWidth - e.clientX;
+          if (this.width > 750 || this.width < 250) {
+            return;
+          }
+          this.updateSidebarWidth(this.width);
         }
-        this.updateSidebarWidth(e.clientX);
       }
     };
 
@@ -79,6 +88,7 @@ class NotebookResizer extends Widget {
   }
 
   updateSidebarWidth(width) {
+    // 由于动画帧的刷新, 边界条件不会很精确
     requestAnimationFrame(() => {
       $tw.wiki.setText(this.tiddler, null, null, `${width}px`);
     });
