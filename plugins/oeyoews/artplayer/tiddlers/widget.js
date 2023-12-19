@@ -20,7 +20,7 @@ class ArtPlayerWidget extends Widget {
     this.execute();
 
     const defaultURL =
-      '//vodkgeyttp8.vod.126.net/cloudmusic/NjE0NDI0MjQ=/108f6ce022ef4d9b9f7f032935758e3d/19e3accd15e1594adba3045d50b5d1d9.mp4?wsSecret=f8ebb8454597800736106d4089e22c24&wsTime=1700318823';
+      'https://mdn.github.io/dom-examples/picture-in-picture/assets/bigbuckbunny.mp4';
     const { url = defaultURL } = this.attributes;
     if (typeof url === 'number') return;
 

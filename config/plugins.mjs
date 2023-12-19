@@ -52,6 +52,7 @@ const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
 
 // oeyoews plugins
 const oeyoewsPlugins = [
+  'artplayer',
   'notebook-theme-sidebar-resizer',
   'neotw-music-with-howler',
   'tiddlywiki-banners',
