@@ -39,7 +39,7 @@ class NotebookResizer extends Widget {
 
     const resizer = createElement('div', {
       class:
-        'hover:cursor-ew-resize bg-gray-100 dark:bg-gray-500 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-full transition-all h-full w-[6px] absolute top-0',
+        'hover:cursor-ew-resize bg-gray-100 dark:bg-gray-500 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-full transition-all h-full w-[5px] absolute top-0',
       // attributes: { id: 'om-resizer' },
     });
 
