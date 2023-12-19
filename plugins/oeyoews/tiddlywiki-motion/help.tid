@@ -13,7 +13,7 @@ caption: Keyboard shortcuts
 </$set>
 \end
 
-<div class="grid grid-cols-2 gap-2">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-2 dark:bg-black rounded">
 <table class="border-2">
 <$list filter="[enlist[Fullscreen ToggleSidebar GoToInbox RefreshWiki GoToGettingStarted GoToControlPanel GoToSearch ToggleLayout TogglePalette GoToPlugins]]">
 <$macrocall $name="shortcut" shortcut=<<currentTiddler>> />
