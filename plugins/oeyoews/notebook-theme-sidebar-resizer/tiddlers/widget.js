@@ -4,10 +4,9 @@ type: application/javascript
 module-type: widget
 
 notebook-theme-sidebar-resizer widget
-
 \*/
+
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
-// const zh = require('./locales/zh');
 const en = require('./locales/en');
 
 // TODO: add some button on bar to reset, close or open
@@ -55,6 +54,7 @@ class NotebookResizer extends Widget {
     }
     const createElement = $tw.utils.domMaker;
 
+    // NOTE: Tailwindcss class here, if you dont want install the extra tailwindcss dependency, you can rewrite it use general style()
     const resizer = createElement('div', {
       class:
         'hover:cursor-ew-resize bg-gray-100 dark:bg-gray-500 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-full transition-all h-full w-[5px] absolute top-0',
@@ -72,7 +72,7 @@ class NotebookResizer extends Widget {
     // TODO: support reset sidebar width
     resizer.addEventListener('pointerdown', (e) => {
       this.isResizing = true;
-      e.preventDefault(); // 阻止默认的文本选择行为
+      e.preventDefault(); // prevent select text on move sidebar width
       document.addEventListener('pointermove', resize);
 
       document.addEventListener('pointerup', stopResize);
@@ -132,7 +132,4 @@ class NotebookResizer extends Widget {
   }
 }
 
-/**
- * @description notebook-theme-sidebar-resizer widget
- */
 exports.nbresizer = NotebookResizer;

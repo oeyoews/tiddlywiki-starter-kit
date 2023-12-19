@@ -4,20 +4,21 @@ type: application/javascript
 module-type: library
 
 \*/
-module.exports = function createContainer() {
+module.exports = () => {
   const createElement = $tw.utils.domMaker;
   const wiki = $tw.wiki;
+  const baseURL = 'https://img.shields.io/badge';
 
-  function createImg(msg, text, logo = '') {
+  const createImg = (msg, text, logo = '') => {
     return createElement('img', {
       class: 'rounded-none',
       attributes: {
         src: logo
-          ? `https://img.shields.io/badge/${msg}-${text}-green?style=social&logo=${logo}`
-          : `https://img.shields.io/badge/${msg}-${text}-green?style=social`,
+          ? `${baseURL}/${msg}-${text}-green?style=social&logo=${logo}`
+          : `${baseURL}/${msg}-${text}-green?style=social`,
       },
     });
-  }
+  };
 
   const updateTime = wiki.filterTiddlers(
     '[!is[system]!prefix[$:/]!has[draft.of]!sort[modified]limit[1]get[modified]format:relativedate[]]',
@@ -42,9 +43,8 @@ module.exports = function createContainer() {
     children.push(createImg(msg, text, logo));
   });
 
-  const container = createElement('div', {
+  return createElement('div', {
     class: 'space-x-2',
     children,
   });
-  return container;
 };
