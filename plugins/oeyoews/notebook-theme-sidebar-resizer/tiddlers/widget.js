@@ -61,31 +61,22 @@ class NotebookResizer extends Widget {
     });
 
     const resize = (e) => {
-      // TODO: use percent
+      const clientX = e.clientX;
       if (this.isResizing) {
         if (this.getSidebarPosition() === 'left') {
-          this.width = e.clientX;
-          if (this.width > 750) {
-            return;
-          }
-          if (this.width < 10) {
-            this.closeSidebar();
-            this.isResizing = false;
-            return;
-          }
-          this.updateSidebarWidth(this.width);
+          this.width = clientX;
         } else {
-          this.width = window.innerWidth - e.clientX;
-          if (this.width > 750) {
-            return;
-          }
-          if (this.width < 10) {
-            this.closeSidebar();
-            this.isResizing = false;
-            return;
-          }
-          this.updateSidebarWidth(this.width);
+          this.width = window.innerWidth - clientX;
         }
+        if (this.width / window.innerWidth > 0.75) {
+          return;
+        }
+        if (this.width / window.innerWidth < 0.01) {
+          this.closeSidebar();
+          this.isResizing = false;
+          return;
+        }
+        this.updateSidebarWidth(this.width);
       }
     };
 
