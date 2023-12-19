@@ -35,6 +35,12 @@ class NotebookResizer extends Widget {
     this.computeAttributes();
     this.execute();
 
+    const logger = new $tw.utils.Logger('notebook-theme-sidebar-resizer');
+    if (!$tw.modules.titles['tailwindcss.min.js']) {
+      logger.alert(
+        "[notebook-theme-sidebar-resizer]: requires the 'tiddlywiki/tailwindcss-plus' plugin to be installed",
+      );
+    }
     const createElement = $tw.utils.domMaker;
 
     const resizer = createElement('div', {
