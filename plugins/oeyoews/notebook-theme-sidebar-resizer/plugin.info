@@ -9,6 +9,7 @@
   "name": "notebook-theme-sidebar-resizer",
   "meat#disabled": "yes",
   "qrcode": "yes",
+  "created": "2023-12-19",
   "dependents": [
     "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
   ],
