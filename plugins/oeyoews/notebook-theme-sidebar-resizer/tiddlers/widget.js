@@ -14,6 +14,17 @@ class NotebookResizer extends Widget {
     super(parseTreeNode, options);
     this.isResizing = false;
     this.tiddler = '$:/themes/nico/notebook/metrics/sidebar-width';
+    this.positionTiddler = '$:/themes/nico/notebook/metrics/sidebar-position';
+  }
+
+  getSidebarPosition() {
+    if (!$tw.wiki.tiddlerExists(this.positionTiddler)) {
+      return right;
+    }
+    const { position = 'left' } = $tw.wiki.getTiddler(
+      this.positionTiddler,
+    ).fields;
+    return position;
   }
 
   render(parent, nextSibling) {
@@ -26,9 +37,15 @@ class NotebookResizer extends Widget {
 
     const resizer = createElement('div', {
       class:
-        'hover:cursor-ew-resize hover:bg-gray-200 rounded-full transition-all h-full w-[6px] absolute top-0 right-0',
+        'hover:cursor-ew-resize bg-gray-100 hover:bg-gray-200 rounded-full transition-all h-full w-[6px] absolute top-0',
       // attributes: { id: 'om-resizer' },
     });
+
+    if (this.getSidebarPosition() === 'left') {
+      resizer.classList.add('right-0');
+    } else {
+      resizer.classList.add('left-0');
+    }
 
     // let width = $tw.wiki.getTiddlerText(this.tiddler).replace('px', '');
 
@@ -67,7 +84,11 @@ class NotebookResizer extends Widget {
     });
   }
 
-  refresh() {
+  refresh(changedTiddlers) {
+    if (Object.keys(changedTiddlers).includes(this.positionTiddler)) {
+      this.refreshSelf();
+      return true;
+    }
     return false;
   }
 }
