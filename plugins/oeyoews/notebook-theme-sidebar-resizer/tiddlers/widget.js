@@ -7,8 +7,8 @@ notebook-theme-sidebar-resizer widget
 
 \*/
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
-// TODO: support left or right
 
+// TODO: add some button on bar to reset, close or open
 class NotebookResizer extends Widget {
   constructor(parseTreeNode, options) {
     super(parseTreeNode, options);
