@@ -384,7 +384,7 @@
         "created": "2023-12-19",
         "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
         "list": "readme",
-        "readme": "## Notebook theme sidebar resizer\n\n- support left/right sidebar resizer\n\n## TODO\n\n- use css file instead of tailwindcss plugin dependency\n- 拖动时,光标样式会抖动\n",
+        "readme": "## Notebook theme sidebar resizer\n\n- support left/right sidebar resizer\n\n## TODO\n\n- use css file instead of tailwindcss plugin dependency\n- 拖动时,光标样式会抖动\n\n## Motivation\n\n- 希望 notebook theme 也可以自由拖动从而调整侧边栏.\n",
         "requires-reload": "yes"
     },
     {
