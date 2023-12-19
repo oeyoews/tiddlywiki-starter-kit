@@ -7,6 +7,8 @@ notebook-theme-sidebar-resizer widget
 
 \*/
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
+// const zh = require('./locales/zh');
+const en = require('./locales/en');
 
 // TODO: add some button on bar to reset, close or open
 class NotebookResizer extends Widget {
@@ -29,17 +31,27 @@ class NotebookResizer extends Widget {
     return position;
   }
 
+  // getLocale() {
+  //   const currentLanguage = $tw.wiki
+  //     .getTiddlerText('$:/language')
+  //     .replace('$:/language/');
+  //   switch (currentLanguage) {
+  //     case 'en-GB':
+  //       return 'en';
+  //       break;
+  //     default:
+  //   }
+  // }
+
   render(parent, nextSibling) {
     if (!$tw.browser) return;
     this.parentDomNode = parent;
     this.computeAttributes();
     this.execute();
 
-    const logger = new $tw.utils.Logger('notebook-theme-sidebar-resizer');
+    const logger = new $tw.utils.Logger(en.pluginname);
     if (!$tw.modules.titles['tailwindcss.min.js']) {
-      logger.alert(
-        "[notebook-theme-sidebar-resizer]: requires the 'tiddlywiki/tailwindcss-plus' plugin to be installed",
-      );
+      logger.alert(en.warning);
     }
     const createElement = $tw.utils.domMaker;
 
@@ -107,7 +119,12 @@ class NotebookResizer extends Widget {
   }
 
   refresh(changedTiddlers) {
-    if (Object.keys(changedTiddlers).includes(this.positionTiddler)) {
+    // TODO: refresh on change tw languages
+    const tiddlers = Object.keys(changedTiddlers);
+    if (
+      tiddlers.includes(this.positionTiddler) ||
+      tiddlers.includes('$:/language')
+    ) {
       this.refreshSelf();
       return true;
     }
