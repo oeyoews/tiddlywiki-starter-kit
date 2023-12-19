@@ -90,7 +90,8 @@ class NotebookResizer extends Widget {
   updateSidebarWidth(width) {
     // 由于动画帧的刷新, 边界条件不会很精确
     requestAnimationFrame(() => {
-      $tw.wiki.setText(this.tiddler, null, null, `${width}px`);
+      // NOTE: 这里不是精确的宽度
+      $tw.wiki.setText(this.tiddler, null, null, `${width.toFixed(0)}px`);
     });
   }
 
