@@ -1,9 +1,10 @@
 {
   "name": "create-tw-apps",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "TiddlyWiki5 GettingStart",
   "scripts": {
     "start": "tiddlywiki --listen",
+    "dev": "tiddlywiki --listen",
     "build": "tiddlywiki --build"
   },
   "keywords": [

@@ -8,3 +8,7 @@ npm create tw-apps@latest
 # start
 npm run start
 ```
+
+## TODO
+
+- [ ] builtin notebook theme and self plugins library
