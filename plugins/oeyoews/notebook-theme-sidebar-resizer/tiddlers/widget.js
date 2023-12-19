@@ -9,7 +9,6 @@ notebook-theme-sidebar-resizer widget
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 const en = require('./locales/en');
 
-// TODO: add some button on bar to reset, close or open
 class NotebookResizer extends Widget {
   constructor(parseTreeNode, options) {
     super(parseTreeNode, options);
@@ -17,7 +16,40 @@ class NotebookResizer extends Widget {
     this.tiddler = '$:/themes/nico/notebook/metrics/sidebar-width';
     this.positionTiddler = '$:/themes/nico/notebook/metrics/sidebar-position';
     this.stateSidebar = '$:/state/notebook-sidebar';
-    this.width;
+    this.width = 0;
+  }
+
+  render(parent, nextSibling) {
+    if (!$tw.browser) return;
+    this.parentDomNode = parent;
+    this.computeAttributes();
+    this.execute();
+
+    this.checker();
+    const createElement = $tw.utils.domMaker;
+
+    // NOTE: Tailwindcss class here, if you dont want install the extra tailwindcss dependency, you can rewrite it use general style()
+    const resizer = createElement('div', {
+      class:
+        'hover:cursor-ew-resize bg-gray-100 dark:bg-gray-500 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-full transition-all h-full w-[5px] absolute top-0',
+    });
+
+    if (this.getSidebarPosition() === 'left') {
+      resizer.classList.add('right-0');
+    } else {
+      resizer.classList.add('left-0');
+    }
+
+    resizer.addEventListener('pointerdown', (e) => {
+      e.preventDefault(); // prevent select text on move sidebar width
+
+      this.isResizing = true;
+      document.addEventListener('pointermove', (e) => this.resize(e));
+      document.addEventListener('pointerup', (e) => this.stopResize(e));
+    });
+
+    parent.insertBefore(resizer, nextSibling);
+    this.domNodes.push(resizer);
   }
 
   getSidebarPosition() {
@@ -30,81 +62,29 @@ class NotebookResizer extends Widget {
     return position;
   }
 
-  // getLocale() {
-  //   const currentLanguage = $tw.wiki
-  //     .getTiddlerText('$:/language')
-  //     .replace('$:/language/');
-  //   switch (currentLanguage) {
-  //     case 'en-GB':
-  //       return 'en';
-  //       break;
-  //     default:
-  //   }
-  // }
-
-  render(parent, nextSibling) {
-    if (!$tw.browser) return;
-    this.parentDomNode = parent;
-    this.computeAttributes();
-    this.execute();
-
-    const logger = new $tw.utils.Logger(en.pluginname);
-    if (!$tw.modules.titles['tailwindcss.min.js']) {
-      logger.alert(en.warning);
-    }
-    const createElement = $tw.utils.domMaker;
-
-    // NOTE: Tailwindcss class here, if you dont want install the extra tailwindcss dependency, you can rewrite it use general style()
-    const resizer = createElement('div', {
-      class:
-        'hover:cursor-ew-resize bg-gray-100 dark:bg-gray-500 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-full transition-all h-full w-[5px] absolute top-0',
-      // attributes: { id: 'om-resizer' },
-    });
-
-    if (this.getSidebarPosition() === 'left') {
-      resizer.classList.add('right-0');
-    } else {
-      resizer.classList.add('left-0');
-    }
-
-    // let width = $tw.wiki.getTiddlerText(this.tiddler).replace('px', '');
-
-    // TODO: support reset sidebar width
-    resizer.addEventListener('pointerdown', (e) => {
-      this.isResizing = true;
-      e.preventDefault(); // prevent select text on move sidebar width
-      document.addEventListener('pointermove', resize);
-
-      document.addEventListener('pointerup', stopResize);
-    });
-
-    const resize = (e) => {
-      const clientX = e.clientX;
-      if (this.isResizing) {
-        if (this.getSidebarPosition() === 'left') {
-          this.width = clientX;
-        } else {
-          this.width = window.innerWidth - clientX;
-        }
-        if (this.width / window.innerWidth > 0.75) {
-          return;
-        }
-        if (this.width / window.innerWidth < 0.01) {
-          this.closeSidebar();
-          this.isResizing = false;
-          return;
-        }
-        this.updateSidebarWidth(this.width);
+  resize(e) {
+    const clientX = e.clientX;
+    if (this.isResizing) {
+      if (this.getSidebarPosition() === 'left') {
+        this.width = clientX;
+      } else {
+        this.width = window.innerWidth - clientX;
       }
-    };
+      if (this.width / window.innerWidth > 0.75) {
+        return;
+      }
+      if (this.width / window.innerWidth < 0.01) {
+        this.closeSidebar();
+        this.isResizing = false;
+        return;
+      }
+      this.updateSidebarWidth(this.width);
+    }
+  }
 
-    const stopResize = () => {
-      this.isResizing = false;
-      document.removeEventListener('pointermove', resize);
-    };
-
-    parent.insertBefore(resizer, nextSibling);
-    this.domNodes.push(resizer);
+  stopResize(e) {
+    this.isResizing = false;
+    document.removeEventListener('pointermove', (e) => this.resize(e));
   }
 
   closeSidebar() {
@@ -116,6 +96,13 @@ class NotebookResizer extends Widget {
     requestAnimationFrame(() => {
       $tw.wiki.setText(this.tiddler, null, null, `${width.toFixed(0)}px`);
     });
+  }
+
+  checker() {
+    const logger = new $tw.utils.Logger(en.pluginname);
+    if (!$tw.modules.titles['tailwindcss.min.js']) {
+      logger.alert(en.warning);
+    }
   }
 
   refresh(changedTiddlers) {
