@@ -20,7 +20,7 @@ class NotebookResizer extends Widget {
 
   getSidebarPosition() {
     if (!$tw.wiki.tiddlerExists(this.positionTiddler)) {
-      return right;
+      return 'left';
     }
     const { position = 'left' } = $tw.wiki.getTiddler(
       this.positionTiddler,
