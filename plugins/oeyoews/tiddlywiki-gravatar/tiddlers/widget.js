@@ -45,10 +45,14 @@ class AvatarWidget extends Widget {
 
     const hash = md5(email.trim().toLowerCase());
 
+    const UNSPLASH = 'http://source.unsplash.com';
+    const QQ = 'https://q1.qlogo.cn';
+    const GitHub = 'https://github.com';
+
     const types = {
-      unsplash: `http://source.unsplash.com/random?${key}`,
-      qq: `https://q1.qlogo.cn/g?b=qq&nk=${email}&s=${size}`,
-      github: `https://github.com/${username}.png?size=${size}`,
+      unsplash: `${UNSPLASH}/random?${key}`,
+      qq: `${QQ}/g?b=qq&nk=${email}&s=${size}`,
+      github: `${GitHub}/${username}.png?size=${size}`,
       gravatar: `https://gravatar.com/avatar/${hash}.png?s=${size}`,
       gcn: `https://cn.gravatar.com/avatar/${hash}.png?s=${size}`,
       url,
@@ -58,7 +62,7 @@ class AvatarWidget extends Widget {
 
     const src = hasType ? types[type] : types.qq;
 
-    const imgClass = `rounded-full align-middle duration-200 transition object-cover object-center ${className} aspect-square`;
+    const imgClass = `rounded-full align-middle transition-all object-cover object-center ${className} aspect-square`;
 
     const imageNode = createElement('img', {
       class: imgClass,
@@ -108,6 +112,10 @@ class AvatarWidget extends Widget {
 
     parent.insertBefore(domNode, nextSibling);
     this.domNodes.push(domNode);
+  }
+
+  refresh() {
+    return false;
   }
 }
 

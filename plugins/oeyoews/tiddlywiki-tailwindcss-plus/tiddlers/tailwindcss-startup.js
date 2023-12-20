@@ -12,7 +12,10 @@ exports.before = ['render'];
 exports.after = ['startup'];
 exports.synchronous = true;
 exports.startup = () => {
+  const { version } = $tw.wiki.getTiddler(
+    '$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus',
+  ).fields;
   window.tailwind = require('tailwindcss.min.js');
-  window.tailwind.version = '3.3.5';
+  window.tailwind.version = version;
   window.tailwind.config = require('./tailwind.config');
 };

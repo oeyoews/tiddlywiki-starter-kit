@@ -4,6 +4,7 @@ type: application/javascript
 module-type: library
 
 \*/
+
 module.exports = {
   theme: {
     extend: {
