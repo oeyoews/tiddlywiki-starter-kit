@@ -1,9 +1,9 @@
 {
-  "title": "$:/plugins/oeyoews/${pluginname}",
+  "title": "$:/plugins/{{ plugin_author }}/${pluginname}",
   "description": "${pluginname}",
-  "author": "oeyoews",
+  "author": "{{ plugin_author }}",
   "version": "0.0.1",
-  "core-version": ">=5.3.1",
+  "core-version": ">={{ tw_version }}",
   "type": "application/json",
   "plugin-type": "plugin",
   "name": "${pluginname}",
