@@ -1,4 +1,3 @@
-import 'dotenv/config';
 import config from './index.js';
 
 const OUTPUTDIR = config.output;

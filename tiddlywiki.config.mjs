@@ -2,7 +2,6 @@ import fs from 'fs';
 import plugins from './config/plugins.mjs';
 import build from './config/build.mjs';
 import path from 'path';
-import 'dotenv/config';
 import config from './config/index.js';
 
 const wikiLocation = config.wiki;
