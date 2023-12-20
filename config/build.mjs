@@ -1,8 +1,7 @@
-import dotenv from 'dotenv';
+import 'dotenv/config';
+import config from './index.mjs';
 
-dotenv.config;
-
-const OUTPUTDIR = process.env.OUTPUTDIR || '.tiddlywiki';
+const OUTPUTDIR = config.output;
 
 /**
  * @type {import('tw5-typed').ITiddlyWikiInfoJSONBuild}
@@ -93,7 +92,7 @@ export default {
     '$:/plugins/tiddlywiki/pluginlibrary/library.template.html', // 这里用到了pluginlibrary, 其实就是一个html
     'index.html',
     'text/plain',
-    '--deletetiddlers', // 如果构建失败总是会产生17M的文件,不会自动删除
+    '--deletetiddlers', // NOTE: 如果构建失败总是会产生17M的文件,不会自动删除
     '[[$:/UpgradeLibrary]] [[$:/UpgradeLibrary/List]]',
   ],
   /* // Generate plugins json format

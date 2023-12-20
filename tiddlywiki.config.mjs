@@ -3,8 +3,9 @@ import plugins from './config/plugins.mjs';
 import build from './config/build.mjs';
 import path from 'path';
 import 'dotenv/config';
+import config from './config/index.mjs';
 
-const wikiLocation = process.env.wikiLocation;
+const wikiLocation = config.wiki;
 
 /** @description generate latest tiddlywiki.info file from config folder */
 export default function generateTiddlyWikiInfo() {
