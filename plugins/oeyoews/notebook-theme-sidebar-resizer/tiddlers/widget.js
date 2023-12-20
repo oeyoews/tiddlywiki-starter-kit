@@ -16,6 +16,8 @@ class NotebookResizer extends Widget {
     this.tiddler = '$:/themes/nico/notebook/metrics/sidebar-width';
     this.positionTiddler = '$:/themes/nico/notebook/metrics/sidebar-position';
     this.stateSidebar = '$:/state/notebook-sidebar';
+    this.defaultTiddler =
+      '$:/plugins/oeyoews/notebook-theme-sidebar-resizer/default-sidebar-width';
     this.width = 0;
   }
 
@@ -62,6 +64,10 @@ class NotebookResizer extends Widget {
     return position;
   }
 
+  getDefaultSidebarWidth() {
+    return $tw.wiki.getTiddlerText(this.defaultTiddler).replace('px', '');
+  }
+
   resize(e) {
     const clientX = e.clientX;
     if (this.isResizing) {
@@ -89,12 +95,17 @@ class NotebookResizer extends Widget {
 
   closeSidebar() {
     $tw.wiki.setText(this.stateSidebar, 'text', null, 'no');
-    this.updateSidebarWidth(350);
+    this.updateSidebarWidth(this.getDefaultSidebarWidth());
   }
 
   updateSidebarWidth(width) {
     requestAnimationFrame(() => {
-      $tw.wiki.setText(this.tiddler, null, null, `${width.toFixed(0)}px`);
+      $tw.wiki.setText(
+        this.tiddler,
+        null,
+        null,
+        `${Number(width).toFixed(0)}px`,
+      );
     });
   }
 
