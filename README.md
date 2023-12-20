@@ -39,10 +39,6 @@
 npm create neotw-app@latest
 ```
 
-## Configuration
-
-- [config](.env)
-
 ## Deploy
 
 <!-- https://vercel.com/docs/deploy-button -->
