@@ -2,12 +2,18 @@
     <img src="https://cdn.jsdelivr.net/gh/oeyoews/tiddlywiki-starter-kit@main/img/snapshot02.png" title="tiddlywiki starter kit" class="spotlight rounded-lg" />
     <img src="https://cdn.jsdelivr.net/gh/oeyoews/tiddlywiki-starter-kit@main/img/banner.png"  class="spotlight rounded-lg" />
 
-<img src="https://img.shields.io/badge/Tiddlywiki5-neotw-green?style=for-the-badge&logo=tiddlywiki"> <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2Foeyoews%2Ftiddlywiki-starter-kit%2Fraw%2Fmain%2Fpackage.json&query=version&style=for-the-badge&logo=tiddlywiki&label=version">
+<!-- <img src="https://img.shields.io/badge/Tiddlywiki5-neotw-green?style=for-the-badge&logo=tiddlywiki"> <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2Foeyoews%2Ftiddlywiki-starter-kit%2Fraw%2Fmain%2Fpackage.json&query=version&style=for-the-badge&logo=tiddlywiki&label=version"> -->
+
+<img src="https://img.shields.io/badge/tiddlywiki-black?style=flat-square&amp;logo=tiddlywiki&amp;logoColor=white" alt="badge">
+<img src="https://img.shields.io/badge/tailwindcss-black?style=flat-square&amp;logo=tailwindcss&amp;logoColor=white" alt="badge">
+<img src="https://img.shields.io/badge/nodejs-black?style=flat-square&amp;logo=node.js&amp;logoColor=white" alt="badge">
+<img src="https://img.shields.io/badge/docker-black?style=flat-square&amp;logo=docker&amp;logoColor=white" alt="badge">
+<img src="https://img.shields.io/badge/typescript-black?style=flat-square&amp;logo=typescript&amp;logoColor=white" alt="badge">
 
 </center>
 
-> [!TIP]
-> 当前版本(2023/11/22)进入维护模式，仅遇到重大问题时会进行修复
+<!-- > [!TIP]
+> 当前版本(2023/11/22)进入维护模式，仅遇到重大问题时会进行修复 -->
 
 <!-- > [!WARNING]
 > Tiddlywiki 以后在此仓库不会再进行升级(4c2979286b6836f4331b31649e3d17b7b074ca6f) -->
