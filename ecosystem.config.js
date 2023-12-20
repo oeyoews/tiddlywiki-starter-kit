@@ -1,10 +1,11 @@
 const { tmpdir } = require('node:os');
 const dotenv = require('dotenv');
 const path = require('path');
+const config = require('./config/index');
 
 dotenv.config();
 
-const tiddlywikiName = process.env.tiddlywikiName;
+const tiddlywikiName = config.name;
 const logdir = path.join(tmpdir(), tiddlywikiName);
 console.log(`日志路径: ${logdir}`);
 

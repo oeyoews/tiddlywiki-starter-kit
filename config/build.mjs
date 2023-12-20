@@ -1,5 +1,5 @@
 import 'dotenv/config';
-import config from './index.mjs';
+import config from './index.js';
 
 const OUTPUTDIR = config.output;
 
