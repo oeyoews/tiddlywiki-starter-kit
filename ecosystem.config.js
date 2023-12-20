@@ -1,10 +1,6 @@
 const { tmpdir } = require('node:os');
 const path = require('path');
 const config = require('./config/index');
-const dotenv = require('dotenv');
-
-// pm2 启动需要
-dotenv.config();
 
 const tiddlywikiName = config.name;
 const logdir = path.join(tmpdir(), tiddlywikiName);
