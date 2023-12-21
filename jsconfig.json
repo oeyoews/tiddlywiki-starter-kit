@@ -4,9 +4,12 @@
     "target": "ES6",
   },
   "exclude": [
-    "node_modules/"
+    "node_modules/",
+    ".tiddlywiki/",
+    "src/",
+    "dev/"
   ],
   "include": [
-    "**/*.ts"
+    "**/*.js",
   ]
 }

@@ -6,7 +6,7 @@ module-type: widget
 Gravatar and QQ Github Avatar Widget(Lastest gqg)
 
 \*/
-const Widget = require('$:/core/modules/widgets/widget.js').widget;
+const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 
 class AvatarWidget extends Widget {
   constructor(parseTreeNode, options) {
@@ -20,7 +20,9 @@ class AvatarWidget extends Widget {
     this.execute();
 
     const createElement = $tw.utils.domMaker;
+    // @ts-ignore
     const md5 = require('$:/plugins/oeyoews/tiddlywiki-gravatar/md5.min.js');
+    // @ts-ignore
     const twimageobserver = require('$:/plugins/oeyoews/neotw-notion-gallery/twimageobserver.js');
 
     let getDefaultEmail =
