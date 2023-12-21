@@ -2,6 +2,7 @@
   "compilerOptions": {
     "checkJs": true,
     "target": "ES6",
+    "skipLibCheck": true
   },
   "exclude": [
     "node_modules/",
@@ -10,9 +11,10 @@
     "dev/",
     "output",
     "dist",
-    "files/"
+    "files/",
+    "packages/"
   ],
   "include": [
-    "**/*.js",
+    "plugins/oeyoews/**/*.js",
   ]
 }
