@@ -5,7 +5,7 @@ module-type: widget
 
 neotw-icons widget
 \*/
-const Widget = require('$:/core/modules/widgets/widget.js').widget;
+const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 
 class IconsWidget extends Widget {
   constructor(parseTreeNode, options) {
@@ -22,16 +22,23 @@ class IconsWidget extends Widget {
       title = '',
       style = '',
       icon = 'simple-icons:tiddlywiki',
-      class: classNames = '',
+      class: className = '',
     } = this.attributes;
 
     // NOTE: dont use dommaker
     const iconNode = this.document.createElement('iconify-icon');
 
-    iconNode.setAttribute('icon', icon);
-    iconNode.title = title;
-    iconNode.style = style;
-    iconNode.className = classNames;
+    const attributes = {
+      icon,
+      title,
+      style,
+      class: className,
+    };
+
+    Object.keys(attributes).forEach((key) => {
+      iconNode.setAttribute(key, attributes[key]);
+    });
+
     iconNode.style.verticalAlign = 'middle';
 
     parent.insertBefore(iconNode, nextSibling);
@@ -39,5 +46,5 @@ class IconsWidget extends Widget {
   }
 }
 
-exports['iconify'] = IconsWidget;
+exports.iconify = IconsWidget;
 exports['iconify-icon'] = IconsWidget;
