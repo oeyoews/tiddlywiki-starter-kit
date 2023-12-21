@@ -4,7 +4,8 @@ type: application/javascript
 module-type: widget
 
 \*/
-const Widget = require('$:/core/modules/widgets/widget.js').widget;
+
+const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 
 class DaylightWidget extends Widget {
   constructor(parseTreeNode, options) {
@@ -71,6 +72,7 @@ class DaylightWidget extends Widget {
     // 右键配置palette
     domNode.addEventListener('contextmenu', (e) => {
       e.preventDefault();
+      // tw5-typed not include this yet
       $tw.modal.display('$:/plugins/oeyoews/tiddlywiki-daylight/config');
     });
 

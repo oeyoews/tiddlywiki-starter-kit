@@ -6,7 +6,7 @@ module-type: widget
 oimg widget
 \*/
 
-const Widget = require('$:/core/modules/widgets/widget.js').widget;
+const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 
 class ImageWidget extends Widget {
   constructor(parseTreeNode, options) {

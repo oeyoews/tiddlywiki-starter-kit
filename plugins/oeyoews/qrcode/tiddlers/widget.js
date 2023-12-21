@@ -9,8 +9,7 @@ qrcode widget
 // 1.4.4  https://cdn.jsdelivr.net/npm/qrcode@1.4.4/build/qrcode.min.js
 // 1.5.1 有问题, 之后的版本没有构建这个min.js, 可以借助modern.dev, 直接打包插件
 // moderndev 打包后只有32kb, 这里min.js 有54kb
-// @ts-check
-// @ts-ignore
+
 const QRCode = require('qrcode.min.js');
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 
