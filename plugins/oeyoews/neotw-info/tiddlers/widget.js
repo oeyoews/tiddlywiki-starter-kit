@@ -7,7 +7,6 @@ neotw-info widget
 \*/
 
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
-const createContainer = require('./info');
 
 class InfoWidget extends Widget {
   constructor(parseTreeNode, options) {
@@ -20,7 +19,18 @@ class InfoWidget extends Widget {
     this.computeAttributes();
     this.execute();
 
-    const domNode = createContainer();
+    const getdata = require('./data');
+    const data = getdata();
+
+    const ejs = require('$:/plugins/oeyoews/ejs/ejs.min.js');
+    const template = $tw.wiki.getTiddlerText(
+      '$:/plugins/oeyoews/neotw-info/template.ejs',
+    );
+
+    const html = ejs.render(template, data);
+
+    const domNode = this.document.createElement('div');
+    domNode.innerHTML = html;
 
     parent.insertBefore(domNode, nextSibling);
     this.domNodes.push(domNode);

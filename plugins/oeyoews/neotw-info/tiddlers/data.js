@@ -11,19 +11,19 @@ module.exports = () => {
     return $tw.wiki.filterTiddlers(filter);
   };
 
-  const updateTime = getString(
+  const update = getString(
     '[!is[system]!prefix[$:/]!has[draft.of]!sort[modified]limit[1]get[modified]format:relativedate[]]',
   )[0];
-  const pluginsCount = getString('[plugin-type[plugin]]').length;
-  const tagsCount = getString('[tags[]]').length;
-  const tiddlersCount = getString('[!is[system]]').length.toLocaleString();
+  const plugins = getString('[plugin-type[plugin]]').length;
+  const tags = getString('[tags[]]').length;
+  const tiddlers = getString('[!is[system]]').length.toLocaleString();
   const version = $tw.version.replace(/-/g, ' ');
 
-  return [
-    { msg: 'Version', text: version, logo: 'tiddlywiki' },
-    { msg: '✏️ Update', text: updateTime },
-    { msg: '🧩 Plugins', text: pluginsCount },
-    { msg: '🏷️ Tags', text: tagsCount },
-    { msg: '🐟 Tiddlers', text: tiddlersCount }, //  🐸
-  ];
+  return {
+    update,
+    plugins,
+    tags,
+    tiddlers,
+    version,
+  };
 };
