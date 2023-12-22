@@ -12,8 +12,12 @@ const en = require('./locales/en');
 class NotebookResizer extends Widget {
   constructor(parseTreeNode, options) {
     super(parseTreeNode, options);
+    this.VANILLA = 'vanilla';
+    this.NOTEBOOK = 'notebook';
     this.themeTiddler = '$:/theme';
     this.theme = null;
+    this.sidebarLayoutTiddler =
+      '$:/themes/tiddlywiki/vanilla/options/sidebarlayout';
     this.isResizing = false;
     this.notebookWidthTiddler = '$:/themes/nico/notebook/metrics/sidebar-width';
     this.vanillaWidthTiddler =
@@ -33,9 +37,12 @@ class NotebookResizer extends Widget {
     this.execute();
 
     this.checker();
+    // update theme
     const theme = this.checkTheme();
+    this.theme = theme;
+    // after update this.theme
+    this.presetForVanillaTheme();
 
-    console.log(theme);
     const createElement = $tw.utils.domMaker;
 
     // NOTE: Tailwindcss class here, if you dont want install the extra tailwindcss dependency, you can rewrite it use general style()
@@ -43,8 +50,6 @@ class NotebookResizer extends Widget {
       class:
         'hover:cursor-ew-resize bg-gray-100 dark:bg-gray-500 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-full transition-all h-full w-[5px] absolute top-0',
     });
-    // update theme
-    this.theme = theme;
 
     if (this.getSidebarPosition() === 'left') {
       resizer.classList.add('right-0');
@@ -70,14 +75,24 @@ class NotebookResizer extends Widget {
       currentTiddler === '$:/themes/nico/notebook' ||
       currentTiddler === '$:/themes/oeyoews/notebook-plus' // for my custom notebook theme
     ) {
-      return 'notebook';
+      return this.NOTEBOOK;
     } else {
-      return 'vanilla';
+      return this.VANILLA;
+    }
+  }
+
+  presetForVanillaTheme() {
+    const sidebarLayout = $tw.wiki.getTiddlerText(this.sidebarLayoutTiddler);
+    if (this.theme === this.VANILLA) {
+      if (sidebarLayout !== 'fluid-fixed') {
+        console.warn('you should set sidebar layout to fluid-fixed');
+        $tw.wiki.setText(this.sidebarLayoutTiddler, null, null, 'fluid-fixed');
+      }
     }
   }
 
   getSidebarPosition() {
-    if (this.theme === 'vanilla') {
+    if (this.theme === this.VANILLA) {
       return 'right';
     }
     if (!$tw.wiki.tiddlerExists(this.positionTiddler)) {
@@ -120,7 +135,7 @@ class NotebookResizer extends Widget {
 
   closeSidebar() {
     const stateTiddler =
-      this.theme === 'notebook'
+      this.theme === this.NOTEBOOK
         ? this.notebookStateSidebar
         : this.vanillaStateSidebar;
     $tw.wiki.setText(stateTiddler, 'text', null, 'no');
@@ -129,7 +144,7 @@ class NotebookResizer extends Widget {
 
   updateSidebarWidth(width) {
     const targetTiddler =
-      this.theme === 'notebook'
+      this.theme === this.NOTEBOOK
         ? this.notebookWidthTiddler
         : this.vanillaWidthTiddler;
     requestAnimationFrame(() => {
@@ -155,7 +170,8 @@ class NotebookResizer extends Widget {
     if (
       tiddlers.includes(this.positionTiddler) ||
       tiddlers.includes('$:/language') ||
-      tiddlers.includes(this.themeTiddler)
+      tiddlers.includes(this.themeTiddler) ||
+      tiddlers.includes(this.sidebarLayoutTiddler)
     ) {
       this.refreshSelf();
       return true;

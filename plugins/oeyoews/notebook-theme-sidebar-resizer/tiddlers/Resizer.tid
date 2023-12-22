@@ -1,6 +1,4 @@
 tags: $:/themes/nico/notebook/tags/Sidebar $:/tags/SideBarSegment
 title: $:/themes/nico/notebook/ui/Sidebar/resizer
 
-<!-- to widget  -->
-<!-- <div id='om-resizer' class="hover:cursor-ew-resize hover:bg-gray-200 bg-red-300 h-full w-[5px] absolute top-0 right-0"></div> -->
 <$nbresizer />
