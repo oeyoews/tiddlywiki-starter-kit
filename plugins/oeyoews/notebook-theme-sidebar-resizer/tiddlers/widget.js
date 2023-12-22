@@ -47,14 +47,13 @@ class NotebookResizer extends Widget {
 
     // NOTE: Tailwindcss class here, if you dont want install the extra tailwindcss dependency, you can rewrite it use general style()
     const resizer = createElement('div', {
-      class:
-        'hover:cursor-ew-resize bg-gray-100 dark:bg-gray-500 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-full transition-all h-full w-[5px] absolute top-0',
+      class: 'oresizer',
     });
 
     if (this.getSidebarPosition() === 'left') {
-      resizer.classList.add('right-0');
+      resizer.classList.add('oresizer-right');
     } else {
-      resizer.classList.add('left-0');
+      resizer.classList.add('oresizer-left');
     }
 
     resizer.addEventListener('pointerdown', (e) => {
