@@ -1,20 +1,15 @@
 // NOTE: vercel not support use { isCi } ???
 import ci from 'ci-info';
 import chalk from 'chalk';
-import 'dotenv/config';
 import config from './index.js';
 
-const enableCME = process.env.ENABLECME === 'true';
-const enableMarkdown = process.env.ENABLEMARKDOWN === 'true';
-const enableQRCode = process.env.ENABLE_QRCODE === 'true';
+const enableMarkdown = config.markdown;
 
 const addColor = (enableOption, color = 'green') => chalk[color](enableOption);
 console.log(
   chalk.cyan.bold(`
 #################################
-#  CODEMIRROR: ${addColor(enableCME)}
 #  MARKDOWN: ${addColor(enableMarkdown)}
-#  QRCODE: ${addColor(enableQRCode)}
 #  wikiLocation: ${addColor(config.wiki, 'cyan')}
 #################################
 `),
