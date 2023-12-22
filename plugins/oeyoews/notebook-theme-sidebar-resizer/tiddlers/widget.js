@@ -12,12 +12,15 @@ const en = require('./locales/en');
 class NotebookResizer extends Widget {
   constructor(parseTreeNode, options) {
     super(parseTreeNode, options);
+    this.themeTiddler = '$:/theme';
+    this.theme = null;
     this.isResizing = false;
     this.notebookWidthTiddler = '$:/themes/nico/notebook/metrics/sidebar-width';
     this.vanillaWidthTiddler =
       '$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth';
     this.positionTiddler = '$:/themes/nico/notebook/metrics/sidebar-position';
-    this.stateSidebar = '$:/state/notebook-sidebar';
+    this.notebookStateSidebar = '$:/state/notebook-sidebar';
+    this.vanillaStateSidebar = '$:/state/sidebar';
     this.defaultTiddler =
       '$:/plugins/oeyoews/notebook-theme-sidebar-resizer/default-sidebar-width';
     this.width = 0;
@@ -30,6 +33,9 @@ class NotebookResizer extends Widget {
     this.execute();
 
     this.checker();
+    const theme = this.checkTheme();
+
+    console.log(theme);
     const createElement = $tw.utils.domMaker;
 
     // NOTE: Tailwindcss class here, if you dont want install the extra tailwindcss dependency, you can rewrite it use general style()
@@ -37,6 +43,8 @@ class NotebookResizer extends Widget {
       class:
         'hover:cursor-ew-resize bg-gray-100 dark:bg-gray-500 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-full transition-all h-full w-[5px] absolute top-0',
     });
+    // update theme
+    this.theme = theme;
 
     if (this.getSidebarPosition() === 'left') {
       resizer.classList.add('right-0');
@@ -56,9 +64,22 @@ class NotebookResizer extends Widget {
     this.domNodes.push(resizer);
   }
 
-  checkTheme() {}
+  checkTheme() {
+    const currentTiddler = $tw.wiki.getTiddlerText(this.themeTiddler);
+    if (
+      currentTiddler === '$:/themes/nico/notebook' ||
+      currentTiddler === '$:/themes/oeyoews/notebook-plus' // for my custom notebook theme
+    ) {
+      return 'notebook';
+    } else {
+      return 'vanilla';
+    }
+  }
 
   getSidebarPosition() {
+    if (this.theme === 'vanilla') {
+      return 'right';
+    }
     if (!$tw.wiki.tiddlerExists(this.positionTiddler)) {
       return 'left';
     }
@@ -83,7 +104,7 @@ class NotebookResizer extends Widget {
       if (this.width / window.innerWidth > 0.75) {
         return;
       }
-      if (this.width / window.innerWidth < 0.01) {
+      if (this.width / window.innerWidth < 0.05) {
         this.closeSidebar();
         this.isResizing = false;
         return;
@@ -98,14 +119,22 @@ class NotebookResizer extends Widget {
   }
 
   closeSidebar() {
-    $tw.wiki.setText(this.stateSidebar, 'text', null, 'no');
+    const stateTiddler =
+      this.theme === 'notebook'
+        ? this.notebookStateSidebar
+        : this.vanillaStateSidebar;
+    $tw.wiki.setText(stateTiddler, 'text', null, 'no');
     this.updateSidebarWidth(this.getDefaultSidebarWidth());
   }
 
   updateSidebarWidth(width) {
+    const targetTiddler =
+      this.theme === 'notebook'
+        ? this.notebookWidthTiddler
+        : this.vanillaWidthTiddler;
     requestAnimationFrame(() => {
       $tw.wiki.setText(
-        this.notebookWidthTiddler,
+        targetTiddler,
         null,
         null,
         `${Number(width).toFixed(0)}px`,
@@ -125,7 +154,8 @@ class NotebookResizer extends Widget {
     const tiddlers = Object.keys(changedTiddlers);
     if (
       tiddlers.includes(this.positionTiddler) ||
-      tiddlers.includes('$:/language')
+      tiddlers.includes('$:/language') ||
+      tiddlers.includes(this.themeTiddler)
     ) {
       this.refreshSelf();
       return true;
