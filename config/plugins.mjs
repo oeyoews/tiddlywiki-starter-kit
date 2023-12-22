@@ -50,6 +50,7 @@ const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
 
 // oeyoews plugins
 const oeyoewsPlugins = [
+  'ejs',
   'skill-badges',
   'artplayer',
   'notebook-theme-sidebar-resizer',
