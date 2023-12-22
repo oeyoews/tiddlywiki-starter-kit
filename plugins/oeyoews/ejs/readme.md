@@ -1,8 +1,13 @@
 <$ejsTest />
 
+## USage
+
+- 官网介绍的用法需要结合tw的实际情况灵活使用
+- coming ...
+
 ## TIPS
 
-使用 vscode 的 ejs 插件获得自动补全, 并且将ejs 文件类型设置为html,重新获得高亮.
+使用 vscode 的 ejs 插件获得自动补全, 并且将 ejs 文件类型设置为html,重新获得高亮.
 
 ## Motivation
 
