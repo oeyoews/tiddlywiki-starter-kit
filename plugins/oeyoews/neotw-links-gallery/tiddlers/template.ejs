@@ -1,0 +1,21 @@
+<%# NOTE: table 的优先级有所改变 %>
+	<table>
+		<% if (isStoryRiver) { %>
+			<tr class="font-bold capitalize">
+				<th>Description</th>
+				<th>Link</th>
+			</tr>
+			<% } %>
+				<% linksURL.forEach(([text, href])=> { %>
+					<tr class="group">
+						<td class="capitalize font-semibold">
+							<%= text %>
+						</td>
+						<td>
+							<a href="<%= href %>" title="<%= href %>" target="_blank">
+								<%= new URL(href).hostname %>
+							</a>
+						</td>
+					</tr>
+					<% }); %>
+	</table>
