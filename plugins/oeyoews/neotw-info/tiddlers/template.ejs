@@ -1,62 +1,62 @@
-<!-- 以下内容是v0.dev根据旧版的neotw-info ui 重构而来, 根据 ejs 需要做了少量更改 -->
-<!-- @see-also: https://v0.dev/r/jLkrqzcE3ff -->
+<%# 以下内容是v0.dev根据旧版的neotw-info ui 重构而来, 根据 ejs 需要做了少量更改 link: https://v0.dev/r/jLkrqzcE3ff %>
 
-<div class="hidden md:block">
-	<div class="flex items-center space-x-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-			viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-			stroke-linejoin="round" class="text-black">
-			<path d="m12 14 4-4"></path>
-			<path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
-		</svg>
-		<div class="flex items-center"><span class="font-semibold">Version</span>
-			<div
-				class="inline-flex items-center rounded-full border px-2.5 py-0.5 w-fit text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 ml-2">
-				<%= version %>
+	<div class="hidden md:block">
+		<div class="flex items-center space-x-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+				viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+				stroke-linejoin="round" class="text-black">
+				<path d="m12 14 4-4"></path>
+				<path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
+			</svg>
+			<div class="flex items-center"><span class="font-semibold">Version</span>
+				<div
+					class="inline-flex items-center rounded-full border px-2.5 py-0.5 w-fit text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 ml-2">
+					<%= version %>
+				</div>
 			</div>
-		</div>
-		<div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-				viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-				stroke-linejoin="round" class="text-red-500">
-				<circle cx="12" cy="12" r="10"></circle>
-				<line x1="12" x2="12" y1="8" y2="12"></line>
-				<line x1="12" x2="12.01" y1="16" y2="16"></line>
-			</svg><span class="ml-2 font-semibold text-red-500">Update</span><span class="ml-2 text-sm text-gray-600">
-				<%= update %>
-			</span></div>
-		<div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-				viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-				stroke-linejoin="round" class="text-green-500">
-				<path d="M12 22v-5"></path>
-				<path d="M9 8V2"></path>
-				<path d="M15 8V2"></path>
-				<path d="M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z"></path>
-			</svg><span class="ml-2 font-semibold">Plugins</span>
-			<div
-				class="inline-flex items-center rounded-full border px-2.5 py-0.5 w-fit text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80 ml-2">
-				<%= plugins %>
+			<div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+					viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+					stroke-linejoin="round" class="text-red-500">
+					<circle cx="12" cy="12" r="10"></circle>
+					<line x1="12" x2="12" y1="8" y2="12"></line>
+					<line x1="12" x2="12.01" y1="16" y2="16"></line>
+				</svg><span class="ml-2 font-semibold text-red-500">Update</span><span
+					class="ml-2 text-sm text-gray-600">
+					<%= update %>
+				</span></div>
+			<div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+					viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+					stroke-linejoin="round" class="text-green-500">
+					<path d="M12 22v-5"></path>
+					<path d="M9 8V2"></path>
+					<path d="M15 8V2"></path>
+					<path d="M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z"></path>
+				</svg><span class="ml-2 font-semibold">Plugins</span>
+				<div
+					class="inline-flex items-center rounded-full border px-2.5 py-0.5 w-fit text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80 ml-2">
+					<%= plugins %>
+				</div>
 			</div>
-		</div>
-		<div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-				viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-				stroke-linejoin="round" class="text-yellow-500">
-				<path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z"></path>
-				<path d="M7 7h.01"></path>
-			</svg><span class="ml-2 font-semibold">Tags</span>
-			<div
-				class="inline-flex items-center rounded-full border px-2.5 py-0.5 w-fit text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80 ml-2">
-				<%= tags %>
+			<div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+					viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+					stroke-linejoin="round" class="text-yellow-500">
+					<path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z"></path>
+					<path d="M7 7h.01"></path>
+				</svg><span class="ml-2 font-semibold">Tags</span>
+				<div
+					class="inline-flex items-center rounded-full border px-2.5 py-0.5 w-fit text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80 ml-2">
+					<%= tags %>
+				</div>
 			</div>
-		</div>
-		<div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-				viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-				stroke-linejoin="round" class="text-blue-500">
-				<path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
-				<polyline points="14 2 14 8 20 8"></polyline>
-			</svg><span class="ml-2 font-semibold">Tiddlers</span>
-			<div
-				class="inline-flex items-center rounded-full border px-2.5 py-0.5 w-fit text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80 ml-2">
-				<%= tiddlers %>
+			<div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+					viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+					stroke-linejoin="round" class="text-blue-500">
+					<path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+					<polyline points="14 2 14 8 20 8"></polyline>
+				</svg><span class="ml-2 font-semibold">Tiddlers</span>
+				<div
+					class="inline-flex items-center rounded-full border px-2.5 py-0.5 w-fit text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80 ml-2">
+					<%= tiddlers %>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
