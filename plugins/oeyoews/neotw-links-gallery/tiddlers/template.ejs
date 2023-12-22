@@ -1,13 +1,15 @@
-<%# NOTE: table 的优先级有所改变 %>
-	<table>
-		<% if (isStoryRiver) { %>
+<table>
+	<% if (isStoryRiver) { %>
+		<thead>
 			<tr class="font-bold capitalize">
 				<th>Description</th>
 				<th>Link</th>
 			</tr>
-			<% } %>
+		</thead>
+		<% } %>
+			<tbody>
 				<% linksURL.forEach(([text, href])=> { %>
-					<tr class="group">
+					<tr>
 						<td class="capitalize font-semibold">
 							<%= text %>
 						</td>
@@ -18,4 +20,5 @@
 						</td>
 					</tr>
 					<% }); %>
-	</table>
+			</tbody>
+</table>
