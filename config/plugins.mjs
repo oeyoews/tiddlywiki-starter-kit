@@ -2,11 +2,11 @@
 import ci from 'ci-info';
 import chalk from 'chalk';
 import 'dotenv/config';
+import config from './index.js';
 
 const enableCME = process.env.ENABLECME === 'true';
 const enableMarkdown = process.env.ENABLEMARKDOWN === 'true';
 const enableQRCode = process.env.ENABLE_QRCODE === 'true';
-const wikiLocation = process.env.wikiLocation;
 
 const addColor = (enableOption, color = 'green') => chalk[color](enableOption);
 console.log(
@@ -15,7 +15,7 @@ console.log(
 #  CODEMIRROR: ${addColor(enableCME)}
 #  MARKDOWN: ${addColor(enableMarkdown)}
 #  QRCODE: ${addColor(enableQRCode)}
-#  wikiLocation: ${addColor(wikiLocation, 'cyan')}
+#  wikiLocation: ${addColor(config.wiki, 'cyan')}
 #################################
 `),
 );
@@ -50,6 +50,7 @@ const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
 
 // oeyoews plugins
 const oeyoewsPlugins = [
+  'skill-badges',
   'artplayer',
   'notebook-theme-sidebar-resizer',
   'neotw-music-with-howler',

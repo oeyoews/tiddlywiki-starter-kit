@@ -12,7 +12,8 @@
     "output",
     "dist",
     "files/",
-    "packages/"
+    "packages/",
+    "**/*.min.js"
   ],
   "include": [
     "plugins/oeyoews/**/*.js",
