@@ -1,7 +1,5 @@
 import config from './index.js';
 
-const OUTPUTDIR = config.output;
-
 /**
  * @type {import('tw5-typed').ITiddlyWikiInfoJSONBuild}
  * @description tiddlywiki 构建命令
@@ -41,7 +39,7 @@ export default {
   index: [
     '--verbose',
     '--output',
-    OUTPUTDIR,
+    config.output,
     '--deletetiddlers',
     '$:/StoryList',
     '--render',
@@ -76,7 +74,7 @@ export default {
   // 生成 plugin library
   library: [
     '--output',
-    `${OUTPUTDIR}/library`,
+    `${config.output}/library`,
     '--makelibrary',
     '$:/UpgradeLibrary',
     '--savelibrarytiddlers',
