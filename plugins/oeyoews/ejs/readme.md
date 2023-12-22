@@ -1,13 +1,24 @@
-<$ejsTest />
-
 ## USage
 
-- 官网介绍的用法需要结合tw的实际情况灵活使用
-- coming ...
+```ejs
+// template.ejs
+<%= name %>
+```
 
-## TIPS
+```js
+// 模板放在单独的文件里面是为了代码高亮
+// 使用 vscode 的 ejs 插件获得有限的自动补全, 并且将 ejs 文件类型设置为html,重新获得高亮.
+const template = $tw.wiki.getTiddlerText('template.ejs');
+const ejs = require('ejs.min.js');
+const html = ejs.render(template, { name: 'ejs', desc: 'ejs awesome !!!' });
+console.log(html);
+```
 
-使用 vscode 的 ejs 插件获得自动补全, 并且将 ejs 文件类型设置为html,重新获得高亮.
+- 更多用法还请查阅 ejs 官网
+
+## Examples
+
+<$ejsTest />
 
 ## Motivation
 
