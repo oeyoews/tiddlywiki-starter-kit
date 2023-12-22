@@ -13,7 +13,9 @@ class NotebookResizer extends Widget {
   constructor(parseTreeNode, options) {
     super(parseTreeNode, options);
     this.isResizing = false;
-    this.tiddler = '$:/themes/nico/notebook/metrics/sidebar-width';
+    this.notebookWidthTiddler = '$:/themes/nico/notebook/metrics/sidebar-width';
+    this.vanillaWidthTiddler =
+      '$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth';
     this.positionTiddler = '$:/themes/nico/notebook/metrics/sidebar-position';
     this.stateSidebar = '$:/state/notebook-sidebar';
     this.defaultTiddler =
@@ -53,6 +55,8 @@ class NotebookResizer extends Widget {
     parent.insertBefore(resizer, nextSibling);
     this.domNodes.push(resizer);
   }
+
+  checkTheme() {}
 
   getSidebarPosition() {
     if (!$tw.wiki.tiddlerExists(this.positionTiddler)) {
@@ -101,7 +105,7 @@ class NotebookResizer extends Widget {
   updateSidebarWidth(width) {
     requestAnimationFrame(() => {
       $tw.wiki.setText(
-        this.tiddler,
+        this.notebookWidthTiddler,
         null,
         null,
         `${Number(width).toFixed(0)}px`,
