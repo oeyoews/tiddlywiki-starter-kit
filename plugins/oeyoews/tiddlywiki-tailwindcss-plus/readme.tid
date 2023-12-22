@@ -1,6 +1,8 @@
 title: $:/plugins/oeyoews/tiddlywiki-tailwindcss-plus/readme
 description: ~TailwindCss
 
+<$badge icon="tailwindcss" />
+
 <div class="prose max-w-none mx-auto prose-indigo">
 
 !! Tiddlywiki Tailwindcss Plus

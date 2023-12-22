@@ -1,7 +1,7 @@
 title: $:/plugins/oeyoews/echarts-addons/readme
 type: text/markdown
 
-<$qrcode type=url />
+<$badge icon="echarts" />
 
 [img[https://i.imgur.com/9BEZnR3.png]]
 [img[https://i.imgur.com/myoq7V4.png]]
@@ -19,3 +19,5 @@ type: text/markdown
 
 * update tooltip style to fix darkmode
 * support qrcode field to show current tiddler url qrcode
+
+<$qrcode type=url />
