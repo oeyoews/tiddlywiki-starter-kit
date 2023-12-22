@@ -18,6 +18,7 @@ module.exports = () => {
   const tags = getString('[tags[]]').length;
   const tiddlers = getString('[!is[system]]').length.toLocaleString();
   const version = $tw.version.replace(/-/g, ' ');
+  const textClass = 'ml-2 text-sm text-gray-600';
 
   return {
     update,
@@ -25,5 +26,6 @@ module.exports = () => {
     tags,
     tiddlers,
     version,
+    textClass,
   };
 };
