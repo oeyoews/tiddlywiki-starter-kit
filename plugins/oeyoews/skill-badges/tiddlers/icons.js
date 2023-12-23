@@ -19,7 +19,7 @@ class SkillIconsWidget extends Widget {
     this.computeAttributes();
     this.execute();
 
-    const { default: badges } = require('./skill-badges.min.js');
+    const { badges } = require('./skill-badges.min.js');
     const createElement = $tw.utils.domMaker;
 
     const children = [];
