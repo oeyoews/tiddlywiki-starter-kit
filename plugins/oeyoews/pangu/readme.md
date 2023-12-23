@@ -2,11 +2,16 @@
 
 ## Note
 
-pangu 格式化 markdown, 还是需要 remark 等额外 package 才能完美支持，否则会有一些异常的小问题
+pangu 格式化 markdown/wikitext, 还是需要 remark 等额外 package 才能完美支持 (在 tiddlywiki 可能不会支持)，否则会有一些异常的小问题，请谨慎使用!!!
+
+@see-also: https://github.com/vinta/pangu.js/issues/91
 
 ## TODO
 
-pangu 格式化 markdown, 还是需要 remark 等额外 package 才能完美支持，否则会有一些异常的小问题
+- [ ] 借鉴 remark-pangu /markdown-it-pangu(cdn) 支持 pangu format markdown cdn
+
+- pangu 格式化 markdown, 还是需要 remark 等额外 package 才能完美支持，否则会有一些异常的小问题
+- 图标颜色问题
 
 ```md
 **中文**
@@ -20,6 +25,6 @@ pangu 格式化 markdown, 还是需要 remark 等额外 package 才能完美支�
 
 ## Tips
 
-* 翻 pangu issue 的时候看到了 autocorrect(CJK 支持友好), 建议安装 vscode 的对应 autocorrect extension
+- 翻 pangu issue 的时候看到了 autocorrect(CJK 支持友好), 建议安装 vscode 的对应 autocorrect extension
 
-* markdown-it-pangu 我将会移植到 tiddlywiki 中，但是它不修改 tiddler 文件，仅仅针对 UI 界面，就不会出现不支持 markdown 的情况了，不过仅仅支持 md 的 tiddler.
+- markdown-it-pangu 我将会移植到 tiddlywiki 中，但是它不修改 tiddler 文件，仅仅针对 UI 界面，就不会出现不支持 markdown 的情况了，不过仅仅支持 md 的 tiddler.
