@@ -36,7 +36,7 @@ class NotebookResizer extends Widget {
     this.computeAttributes();
     this.execute();
 
-    this.checker();
+    // this.checker();
     // update theme
     const theme = this.checkTheme();
     this.theme = theme;
