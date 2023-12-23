@@ -1,0 +1,39 @@
+{
+  "name": "randomstring-plus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://github.com/oeyoews/tiddlywiki-starter-kit/pakcages/randomstring-plus",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oeyoews/tiddlywiki-starter-kit/pakcages/randomstring-plus"
+  },
+  "tsup": {
+    "entry": [
+      "index.ts"
+    ],
+    "splitting": false,
+    "sourcemap": false,
+    "minify": true,
+    "dts": true,
+    "format": [
+      "cjs"
+    ],
+    "shims": true,
+    "clean": true
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "keywords": [
+    "randomstring"
+  ],
+  "files": [
+    "dist"
+  ],
+  "author": "oeyoews",
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^8.0.1"
+  }
+}
