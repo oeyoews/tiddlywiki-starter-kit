@@ -46,15 +46,15 @@ $tw.syncer.logger.alert('alert');
 
 // widget
 this.getVariable('currentTiddler'); // 获取当前条目名称;
-this.getVariable('storyTiddler'); // 判断是否是处于story river
+this.getVariable('storyTiddler'); // 判断是否是处于 story river
 
 /** class
  *
  */
 
-// 如果目标元素没有class可以使用，仅支持单个class
+// 如果目标元素没有 class 可以使用，仅支持单个 class
 // $tw.utils.addClass(commode, 'font-bold')
-// tiddler的field的class支持设置样式就是来源于此，除了这一点，在写第三方插件的过程中感觉这种这种写法并没有比className有什么优势， 更推荐使用classList方法
+// tiddler 的 field 的 class 支持设置样式就是来源于此，除了这一点，在写第三方插件的过程中感觉这种这种写法并没有比 className 有什么优势，更推荐使用 classList 方法
 exports.addClass = function (el, className) {
   var c = (el.getAttribute('class') || '').split(' ');
   if (c.indexOf(className) === -1) {
@@ -63,7 +63,7 @@ exports.addClass = function (el, className) {
   }
 };
 
-// 移除class
+// 移除 class
 exports.removeClass = function (el, className) {
   var c = (el.getAttribute('class') || '').split(' '),
     p = c.indexOf(className);
@@ -73,7 +73,7 @@ exports.removeClass = function (el, className) {
   }
 };
 
-// 切换class
+// 切换 class
 exports.toggleClass = function (el, className, status) {
   if (status === undefined) {
     status = !exports.hasClass(el, className);
@@ -85,7 +85,7 @@ exports.toggleClass = function (el, className, status) {
   }
 };
 
-// tw会将你写的widget使用两个function 进行包裹起来, 可以看到这里最外层有tw require console exports module等等, 这也就是为什么可以使用require tw的原因
+// tw 会将你写的 widget 使用两个 function 进行包裹起来，可以看到这里最外层有 tw require console exports module 等等，这也就是为什么可以使用 require tw 的原因
 (function (
   module,
   exports,

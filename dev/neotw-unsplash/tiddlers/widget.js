@@ -83,7 +83,7 @@ neotw-unsplash widget
         const elementWrapper = document.createElement('div');
         elementWrapper.classList.add('w-full', 'md:w-1/2', 'lg:w-1/3');
 
-        // 不使用img, 防止view-image插件
+        // 不使用 img, 防止 view-image 插件
         const element = $tw.utils.domMaker('div', {
           class:
             'bg-white rounded-lg shadow-lg overflow-hidden w-44 h-44 cursor-pointer',

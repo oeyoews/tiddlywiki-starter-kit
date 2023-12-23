@@ -4,7 +4,7 @@ const config = require('./config/index');
 
 const tiddlywikiName = config.name;
 const logdir = path.join(tmpdir(), tiddlywikiName);
-console.log(`日志路径: ${logdir}`);
+console.log(`日志路径：${logdir}`);
 
 module.exports = {
   // https://github.com/Unitech/pm2/blob/master/lib/API/schema.json
@@ -14,7 +14,7 @@ module.exports = {
       script: './lib/startup.mjs',
       watch: ['./plugins', './themes'],
       ignore_watch: ['./tiddlers', '**/tiddlers'],
-      max_memory_restart: '1024M', // 更多的情况是，tw的浏览器实例卡死，而不是server端内存泄露，所以内存限制基本没用
+      max_memory_restart: '1024M', // 更多的情况是，tw 的浏览器实例卡死，而不是 server 端内存泄露，所以内存限制基本没用
       max_restarts: 3, // 似乎不生效
       exec_mode: 'cluster',
       cron_restart: '0 0 * * *',

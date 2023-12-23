@@ -19,7 +19,7 @@ module-type: startup
       $tw.rootWidget.addEventListener('om-permalink', function (event) {
         const title = event.paramObject?.title || event.tiddlerTitle;
         const perflink = `${window.location.href}#${title}`;
-        // IOS 并不支持navigator, 目前不打断写兼容代码
+        // IOS 并不支持 navigator, 目前不打断写兼容代码
         navigator?.clipboard?.writeText(perflink).then(() => {
           /* $tw.wiki.addTiddler(
             new $tw.Tiddler({

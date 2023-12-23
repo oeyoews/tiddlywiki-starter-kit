@@ -6,7 +6,7 @@ module-type: library
 Daylight Listener Module
 \*/
 
-// 注意: 手动切换和自动切换要共享状态,与此同时还要遵循用户的配置
+// 注意：手动切换和自动切换要共享状态，与此同时还要遵循用户的配置
 
 const config = $tw.wiki.getTiddlerData(
   '$:/plugins/oeyoews/tiddlywiki-daylight/config',
@@ -22,19 +22,19 @@ if (!listmode.includes(localStorage.theme)) {
 
 // 需要浏览器和操作系统支持
 const mediaQuery = window.matchMedia?.('(prefers-color-scheme: dark)');
-// 后续使用 isDarkmode 存储最新的模式, $:/info/darkmode 有一个listener, 会自动更新, 但是使用yes/no
+// 后续使用 isDarkmode 存储最新的模式，$:/info/darkmode 有一个 listener, 会自动更新，但是使用 yes/no
 // let isDarkMode = $tw.wiki.getTiddlerText('$:/info/darkmode') === 'yes'; // or mediaQuery.matches
 let isDarkMode = mediaQuery.matches;
 
 /**
  * @param {string} mode 获取需要切换到的模式
- * @param {boolean} isSaveMode 是否保存到localStorage
+ * @param {boolean} isSaveMode 是否保存到 localStorage
  */
 function updateMode(mode, isSaveMode = true) {
   // support storage share
   mode = mode === 'null' ? 'system' : mode;
   if (!listmode.includes(mode)) return;
-  // BUG: 如果使用switch 会将里面的情况都过一遍， 有问题
+  // BUG: 如果使用 switch 会将里面的情况都过一遍，有问题
   document.documentElement.classList.remove('light', 'dark');
   let nextMode,
     nextPalette = null;
@@ -56,7 +56,7 @@ function updateMode(mode, isSaveMode = true) {
   }
 }
 
-// TODO: 切换system/dark/light 配置, 并且刷新theme, 配置存在store里面
+// TODO: 切换 system/dark/light 配置，并且刷新 theme, 配置存在 store 里面
 function toggleMode() {
   const progress = new $tw.NProgress();
   progress.start();
@@ -65,7 +65,7 @@ function toggleMode() {
     listmode.push('system');
   } */
 
-  // 获取下一个模式light/dark/system
+  // 获取下一个模式 light/dark/system
   const nextMode =
     listmode[(listmode.indexOf(localStorage.theme) + 1) % listmode.length];
   updateMode(nextMode);

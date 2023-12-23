@@ -29,7 +29,7 @@ neotw-reverse-card widget
       const currentTiddler = this.getVariable('currentTiddler');
       const { fields } = $tw.wiki.getTiddler(currentTiddler);
 
-      // 仅仅支持一个rcard
+      // 仅仅支持一个 rcard
       const { question, answer } = fields;
       if (!q) q = question || 'question';
       if (!a) a = answer || 'answer';
@@ -38,7 +38,7 @@ neotw-reverse-card widget
         class: json ? 'flex overflow-scroll space-x-4 snap-x px-12' : '',
       });
 
-      // TODO: 验证json是否有语法错误
+      // TODO: 验证 json 是否有语法错误
       const list = $tw.wiki.getTiddlerDataCached(json) || [{ q, a }];
       list.forEach(({ q, a }) => {
         domNode.append(createCard(q, a));

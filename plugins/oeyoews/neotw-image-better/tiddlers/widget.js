@@ -54,7 +54,7 @@ class ImageWidget extends Widget {
 
 /**
  * unsplash keyword image
- * @description 使用unsplash的图片组件
+ * @description 使用 unsplash 的图片组件
  * @param {string} keyword
  * @param {string} class
  */

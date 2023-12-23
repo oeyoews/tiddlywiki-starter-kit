@@ -6,7 +6,7 @@ description: 折线图
 
 \*/
 
-/** @description: echarts 几乎支持每一处的样式设置, 这里仅根据需要设置必要的样式 */
+/** @description: echarts 几乎支持每一处的样式设置，这里仅根据需要设置必要的样式 */
 
 const getData = (date, type = 'created') =>
   $tw.wiki.filterTiddlers(`[sameday:${type}[${date}]!is[system]!has[draft.of]]`)
@@ -225,7 +225,7 @@ const Sevendays = {
       goto.navigateTiddler('$:/AdvancedSearch');
     });
   },
-  // 没有频繁更新的需要, 禁止刷新
+  // 没有频繁更新的需要，禁止刷新
   shouldUpdate() {
     return false;
   },

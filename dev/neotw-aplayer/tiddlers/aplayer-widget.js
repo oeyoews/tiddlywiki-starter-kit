@@ -35,7 +35,7 @@ A music player widget that uses the APlayer library.
 
       const audiosDefault = [
         { name: '清风', artist: '陈壹千', id: '1947926942' },
-        { name: '脱水蓝鲸', artist: 'Vicky宣宣', id: '1931552540' },
+        { name: '脱水蓝鲸', artist: 'Vicky 宣宣', id: '1931552540' },
       ];
 
       const audios =
@@ -95,7 +95,7 @@ A music player widget that uses the APlayer library.
       }); */
 
       playButtonNode.addEventListener('click', () => {
-        // 如果替换这个icon, dblclick事件无法响应
+        // 如果替换这个 icon, dblclick 事件无法响应
         aplayerRef.toggle();
         playButtonNode.classList.toggle('animate-spin');
       });
@@ -107,7 +107,7 @@ A music player widget that uses the APlayer library.
     }
 
     destroy() {
-      // 支持了多首音乐后(上两次提交), 会触发classList错误, 暂时不进行aplayer.destory事件
+      // 支持了多首音乐后 (上两次提交), 会触发 classList 错误，暂时不进行 aplayer.destory 事件
       this.aplayer.pause(); // hack: 暂停音乐
       // this.aplayer.destroy();
     }

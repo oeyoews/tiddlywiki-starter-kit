@@ -703,7 +703,7 @@ class CommandPaletteWidget extends Widget {
     this.mask.classList.add('opacity-100');
     /** dynamic end */
     this.mask.addEventListener('scroll', (e) => e.stopPropagation());
-    // 打开命令面板时, 禁用滚动
+    // 打开命令面板时，禁用滚动
     document.body.style.overflow = 'hidden';
     // this.container.classList.add('translate-y-40')
     this.searchContainer.focus();
@@ -743,7 +743,7 @@ class CommandPaletteWidget extends Widget {
       this.previouslyFocused.caretPos,
     );
 
-    // 打开命令面板时, 启用滚动
+    // 打开命令面板时，启用滚动
     document.body.style.overflow = 'auto';
   }
   onKeyDown(e) {

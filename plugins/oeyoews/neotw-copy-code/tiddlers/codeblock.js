@@ -19,7 +19,7 @@ Code block node widget
     }
 
     render(parent, nextSibling) {
-      // 不要加这句话, 构建library的时候需要使用到这个widget(server)
+      // 不要加这句话，构建 library 的时候需要使用到这个 widget(server)
       // if (!$tw.browser) return;
 
       this.parentDomNode = parent;
@@ -30,7 +30,7 @@ Code block node widget
       const codeNode = this.document.createElement('code');
       const code = this.getAttribute('code', '');
       let fileType = this.language;
-      // 排除一些文件类型, 不要修改默认输出, 比如会影响text/css, 导致样式失效
+      // 排除一些文件类型，不要修改默认输出，比如会影响 text/css, 导致样式失效
       // @see-also https://talk.tiddlywiki.org/t/how-highlight-js-works-on-codeblock/8083/17
       if (
         fileType?.startsWith('text/') ||
@@ -63,8 +63,8 @@ Code block node widget
       copyButton?.classList?.add(...classNames.split(' '));
       // https://tiddlywiki.com/#View%20Template%20Body%20Cascade:%5B%5BView%20Template%20Body%20Cascade%5D%5D%20%24%3A%2Fcore%2Fui%2FViewTemplate%2Fbody%2Fplugin
       // https://talk.tiddlywiki.org/t/how-highlight-js-works-on-codeblock/8083/11
-      /* 你可以这样写成 main.js, 但是目前highlgith.js 不识别文件类型
-      bug: text/vnd.tiddlywiki 不能正常渲染main.js, markdown工作正常
+      /* 你可以这样写成 main.js, 但是目前 highlgith.js 不识别文件类型
+      bug: text/vnd.tiddlywiki 不能正常渲染 main.js, markdown 工作正常
       bug: but this editor cannot recognize correct code type, need modify relate rules
       patch:
       or pop
@@ -110,7 +110,7 @@ Code block node widget
       // let clipboardTimer;
       copyButton.addEventListener('click', () => {
         // clearTimeout(clipboardTimer);
-        // clipboard api 不会向用户发出询问, 在不安全的上下文中(0.0.0.0), clipboard api 不会被允许
+        // clipboard api 不会向用户发出询问，在不安全的上下文中 (0.0.0.0), clipboard api 不会被允许
         const copyToClipboard = $tw.utils.copyToClipboard;
         copyToClipboard(codeNode.textContent, {
           doNotNotify: true,
@@ -139,7 +139,7 @@ Code block node widget
     }
 
     execute() {
-      // 不能为undefined, 否则 使用obj 的一些方法会报错(@highlightjs)
+      // 不能为 undefined, 否则 使用 obj 的一些方法会报错 (@highlightjs)
       this.language = this.getAttribute('language', '');
     }
 

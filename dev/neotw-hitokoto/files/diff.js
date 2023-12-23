@@ -34,5 +34,5 @@ fs.writeFileSync(outputFilename, uniqueHitokotosString);
 
 console.log(`无重复项已写入文件 '${outputFilename}'`);
 if (duplicateHitokotos.length > 0) {
-  console.log(`以下行出现重复 'hitokoto' 值: ${duplicateHitokotos.join(', ')}`);
+  console.log(`以下行出现重复 'hitokoto' 值：${duplicateHitokotos.join(', ')}`);
 }

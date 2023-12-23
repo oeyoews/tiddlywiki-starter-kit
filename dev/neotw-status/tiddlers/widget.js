@@ -28,7 +28,7 @@ neotw-status widget
       const { field } = this.attributes;
 
       // TODO: support group, count
-      // TODO: 支持 读取上次的状态, 参考tw-bot
+      // TODO: 支持 读取上次的状态，参考 tw-bot
       const options = [
         ['public', { color: 'red', icon: '🔥' }],
         ['private', { color: 'green', icon: '🔐' }],

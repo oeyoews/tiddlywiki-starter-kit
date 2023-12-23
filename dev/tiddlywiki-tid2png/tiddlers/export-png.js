@@ -11,7 +11,7 @@ module.exports = function exportPng(title, customSelector) {
   if (customSelector && !this.document.querySelector(customSelector)) {
     $tw.wiki.addTiddler({
       title: '$:/temp/export-png',
-      text: `不存在 ${customSelector} 节点, 操作取消`,
+      text: `不存在 ${customSelector} 节点，操作取消`,
     });
     $tw.notifier.display('$:/temp/export-png');
     return;
@@ -24,8 +24,8 @@ module.exports = function exportPng(title, customSelector) {
 
   progress.start();
   const selector = customSelector || `[data-tiddler-title="${title}"]`;
-  // html2canvas 不支持 cloneNode, 在widget中可以直接移除popup,因为widget会重新渲染, popup 会自动恢复? 但是这是一个listener, 不建议直接修改dom;
-  // 下面使用了hidden隐藏titlebar元素, 实际页面不会被用户感知到有所抖动(由于html2canvas是异步)
+  // html2canvas 不支持 cloneNode, 在 widget 中可以直接移除 popup，因为 widget 会重新渲染，popup 会自动恢复？但是这是一个 listener, 不建议直接修改 dom;
+  // 下面使用了 hidden 隐藏 titlebar 元素，实际页面不会被用户感知到有所抖动 (由于 html2canvas 是异步)
   const element = document.querySelector(selector);
 
   const hideElements = [
@@ -50,7 +50,7 @@ module.exports = function exportPng(title, customSelector) {
   }).then((canvas) => {
     canvas.toBlob((blob) => {
       const sizeInMB = (blob.size / (1024 * 1024)).toFixed(2);
-      const imgData = canvas.toDataURL('image/png', 0.8); // 转换canvas为PNG格式的数据URL
+      const imgData = canvas.toDataURL('image/png', 0.8); // 转换 canvas 为 PNG 格式的数据 URL
 
       // 这个图片是用来预览的
       const imgNode = $tw.utils.domMaker('img', {

@@ -48,7 +48,7 @@ module.exports = function createCard(
     class: `object-cover w-full h-full rounded-md group-hover:scale-105 transition-all duration-800 ease-in-out shadow-md aspect-video`,
     attributes: {
       ['data-src']: cover,
-      alt: caption || title, // '如果不设置, 会有黑边'
+      alt: caption || title, // '如果不设置，会有黑边'
     },
   });
 

@@ -27,8 +27,8 @@ const gotoTagTiddler = (params) => {
 };
 
 /**
- * @description 理论上所有的option配置都可以暴露出来, 这里仅仅暴露一些常用的配置, echarts将这些工作交给了addon, 大概是不同类型的addon处理起来比较复杂,但是与此同时,addon就更具有扩展性
- * @param filter 默认是用户的所有tiddler, 但是你也可以使用 filter='[tag[Journal]]' 列出所有的 Journal tiddler
+ * @description 理论上所有的 option 配置都可以暴露出来，这里仅仅暴露一些常用的配置，echarts 将这些工作交给了 addon, 大概是不同类型的 addon 处理起来比较复杂，但是与此同时，addon 就更具有扩展性
+ * @param filter 默认是用户的所有 tiddler, 但是你也可以使用 filter='[tag[Journal]]' 列出所有的 Journal tiddler
  * @param title
  * @param radius
  * @param sort {descend|ascend}
@@ -50,19 +50,19 @@ const TagPie = {
       focusSelf,
       legend,
     } = addonAttributes;
-    // NOTE: data必须在执行onUpdate函数的时候获取到最新数据,不要写在onUpdate函数外面
+    // NOTE: data 必须在执行 onUpdate 函数的时候获取到最新数据，不要写在 onUpdate 函数外面
     const data = [];
 
     // alpha sort default
-    // 超过50不显示
+    // 超过 50 不显示
     const tags = $tw.wiki.filterTiddlers(filter).slice(0, 50).sort();
     tags.forEach((tag) => data.push(getData(tag)));
 
     const borderWidth = data.length > 10 ? 0 : width;
     const borderRadius = data.length > 10 ? 5 : radius;
 
-    // 如果类型过多, width 自动设置为0, 此时无视用户的width配置
-    // 配置具体参考echarts官方文档
+    // 如果类型过多，width 自动设置为 0, 此时无视用户的 width 配置
+    // 配置具体参考 echarts 官方文档
     const option = {
       title: {
         text,
@@ -126,14 +126,14 @@ const TagPie = {
 
     myChart.setOption(option);
     myChart.on('click', 'series', gotoTagTiddler);
-    // 如何在这里监听change 事件, 从而实现自动刷新主题
+    // 如何在这里监听 change 事件，从而实现自动刷新主题
   },
 
   // TODO: need refresh manually here
   shouldUpdate(_, changedTiddlers) {
-    // tw里面即使是一个state tiddler变换都会触发这个函数的调用
-    // changeTiddlers 会包含一些系统tiddler的状态变换tiddler, 应该去掉
-    // log 输出不了, 但是alert却可以
+    // tw 里面即使是一个 state tiddler 变换都会触发这个函数的调用
+    // changeTiddlers 会包含一些系统 tiddler 的状态变换 tiddler, 应该去掉
+    // log 输出不了，但是 alert 却可以
     const filteredChangedTiddlers = Object.keys(changedTiddlers).filter(
       (tiddler) =>
         tiddler === '$:/info/darkmode' ||

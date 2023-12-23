@@ -7,7 +7,7 @@ neotw-music-with-howler widget
 \*/
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 
-// TODO: 显示 歌曲title on window tab
+// TODO: 显示 歌曲 title on window tab
 class MusicWidget extends Widget {
   constructor(parseTreeNode, options) {
     super(parseTreeNode, options);
@@ -129,9 +129,9 @@ class MusicWidget extends Widget {
       entries.forEach((entry) => {
         // 如果元素不可见
         if (!entry.isIntersecting) {
-          // 调用unload方法卸载音频
+          // 调用 unload 方法卸载音频
           btn.classList.remove('rotate');
-          // 不能使用window.sound, 因为无法确定哪个是当前的实例
+          // 不能使用 window.sound, 因为无法确定哪个是当前的实例
           this.sound?.unload();
           this.updatePlaylistStatus(this.title, this.PAUSE);
           // NOTE: 不要取消观察

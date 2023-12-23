@@ -3,7 +3,7 @@ title: $:/plugins/oeyoews/book-status/tocstatus.js
 type: application/javascript
 module-type: widget
 
-使用wikitext 应该也能做, 但是数据在json里面, 比较麻烦
+使用 wikitext 应该也能做，但是数据在 json 里面，比较麻烦
 \*/
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 
@@ -91,7 +91,7 @@ class BookTocStatusWidget extends Widget {
     });
 
     const statusprogressNode = createElement('center', {
-      text: `${bookname} 阅读进度: ${statusprogress}%`,
+      text: `${bookname} 阅读进度：${statusprogress}%`,
     });
     children.unshift(statusprogressNode);
     children.unshift(progressNode);

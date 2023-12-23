@@ -53,7 +53,7 @@ class VideoWidget extends Widget {
 
     const { prefix, id } = selectedSource;
 
-    // 如果没有bvid或yid属性，则使用url
+    // 如果没有 bvid 或 yid 属性，则使用 url
     const src = isBilibili || isYouTube ? prefix + id : url;
 
     // Create an object to represent the iframe attributes

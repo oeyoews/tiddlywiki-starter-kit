@@ -51,7 +51,7 @@ class WorkSpacesWidget extends Widget {
 
     // TOOD: just use save and new, 循环切换需要考虑的情况太多了
 
-    // TODO: 重构数据结构, 支持多列表
+    // TODO: 重构数据结构，支持多列表
     domNode.addEventListener('click', () => {
       if (workspace === 'previous') {
         const previous = getList(workspaceListTiddler);
@@ -59,7 +59,7 @@ class WorkSpacesWidget extends Widget {
         saveListToWorkspace();
       }
       if (workspace === 'new') {
-        // TODO: 允许用户是否选择保存list
+        // TODO: 允许用户是否选择保存 list
         const workspacename = prompt(
           'Please input saved workspace name',
           'desktop 01',
@@ -72,7 +72,7 @@ class WorkSpacesWidget extends Widget {
         saveListToWorkspace();
         setStoryList();
       }
-      // NOTE: 需要确保刷新widget
+      // NOTE: 需要确保刷新 widget
       // this.refreshSelf();
     });
 

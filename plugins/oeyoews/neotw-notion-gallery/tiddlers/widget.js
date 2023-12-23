@@ -39,7 +39,7 @@ class CardsWidget extends Widget {
 
     const wiki = $tw.wiki;
 
-    // 需要this指向parentWidget, 使用箭头函数
+    // 需要 this 指向 parentWidget, 使用箭头函数
     const navigate = (title) => {
       this.parentWidget.dispatchEvent({
         type: 'tm-navigate',
@@ -84,7 +84,7 @@ class CardsWidget extends Widget {
 
     const container = document.createElement('div');
     const containerClassList = `grid grid-cols-1 sm:grid-cols-2 md:grid-cols-${cols} gap-8 m-4`;
-    // 其实可以直接使用classNames
+    // 其实可以直接使用 classNames
     container.classList.add(...containerClassList.split(' '));
 
     const data = prepareCardData(cardsTiddlers);
@@ -106,9 +106,9 @@ class CardsWidget extends Widget {
     this.domNodes.push(container);
   }
 
-  // 如果更新或者添加了新的tiddler, 则需要重新渲染
+  // 如果更新或者添加了新的 tiddler, 则需要重新渲染
   isChanged(changedTiddlers) {
-    // 获取最新的tiddlers列表
+    // 获取最新的 tiddlers 列表
     let cardsTiddlers = this.removedFilterDraftTiddlers();
     const { filteredTiddlers: valuesToCheck, notExistTiddlers } =
       this.removedDraftTiddlers(Object.keys(changedTiddlers));
@@ -116,9 +116,9 @@ class CardsWidget extends Widget {
     let isChanged = valuesToCheck.some((value) =>
       cardsTiddlers.includes(value),
     );
-    // TODO: 如果删除了tiddler, 需要监听长度的变化进行渲染
-    // 可以存储第一次渲染的tiddler列表, 如果删除则需要重新渲染, 但是这样不利于以后扩展动态filter
-    // 如果删除了tiddler,就重新渲染, 无视过滤器
+    // TODO: 如果删除了 tiddler, 需要监听长度的变化进行渲染
+    // 可以存储第一次渲染的 tiddler 列表，如果删除则需要重新渲染，但是这样不利于以后扩展动态 filter
+    // 如果删除了 tiddler，就重新渲染，无视过滤器
     if (notExistTiddlers.length) {
       isChanged = true;
     }
@@ -134,7 +134,7 @@ class CardsWidget extends Widget {
     let notExistTiddlers = [];
 
     const filteredTiddlers = filterTiddlers.filter((title) => {
-      // NOTE: 如果是系统条目, 即使存在也会返回false
+      // NOTE: 如果是系统条目，即使存在也会返回 false
       const isExist = $tw.wiki.tiddlerExists(title);
 
       if (!isExist) {

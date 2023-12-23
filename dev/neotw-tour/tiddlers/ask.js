@@ -18,8 +18,8 @@ type: application/javascript
       title: '是否需要引导教程',
       icon: 'info',
       showCancelButton: true,
-      confirmButtonText: '需要,我是新手',
-      cancelButtonText: '我是老手, 不需要',
+      confirmButtonText: '需要，我是新手',
+      cancelButtonText: '我是老手，不需要',
     }).then((result) => {
       if (result.value) {
         const driverObj = driver({

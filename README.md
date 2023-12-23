@@ -9,10 +9,10 @@
 </center>
 
 <!-- > [!TIP]
-> 当前版本(2023/11/22)进入维护模式，仅遇到重大问题时会进行修复 -->
+> 当前版本 (2023/11/22) 进入维护模式，仅遇到重大问题时会进行修复 -->
 
 <!-- > [!WARNING]
-> Tiddlywiki 以后在此仓库不会再进行升级(4c2979286b6836f4331b31649e3d17b7b074ca6f) -->
+> Tiddlywiki 以后在此仓库不会再进行升级 (4c2979286b6836f4331b31649e3d17b7b074ca6f) -->
 
 <!-- > [!IMPORTANT]
 > TiddlyWiki starter kit has a large number of plugin dependencies and can be complex. I have done my best to fill in the plugin dependency information and handle any exceptions appropriately. However, it is recommended not to install the plugin separately unless you know how to handle it(bug or error) properly. The tiddlywiki starter kit will prioritize fixing bugs within this wiki under the time management's allowance. It is not fully compatible with other tiddlywiki plugins. It is recommended to use the tiddlywiki starter kit as a base for user -->

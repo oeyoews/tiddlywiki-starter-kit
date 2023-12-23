@@ -22,7 +22,7 @@ class BookStatusWidget extends Widget {
 
   readStatuses() {
     const config = $tw.wiki.getTiddlerData(this.bookstatusfilename) || {};
-    // json对象转Map
+    // json 对象转 Map
     Object.entries(config).forEach(([bookname, book]) => {
       Object.entries(book).forEach(([title, status]) => {
         const key = `${bookname}/${title}`;
@@ -84,7 +84,7 @@ class BookStatusWidget extends Widget {
       paramObject: {
         status: newStatus === BookStatusWidget.STATUS_READ ? 'success' : 'info',
         title,
-        text: `更新状态: ${newStatus}`,
+        text: `更新状态：${newStatus}`,
       },
     });
     this.btn.removeEventListener('click', () =>

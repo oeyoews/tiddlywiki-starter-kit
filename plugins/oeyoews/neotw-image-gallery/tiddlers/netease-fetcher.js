@@ -6,7 +6,7 @@ module-type: library
 \*/
 
 // TODO: add error catch
-// TODO: 封装一个fetch
+// TODO: 封装一个 fetch
 /**
  * @description 网易云 banner 模块
  * @returns {Array} An array of banner objects with a `src` property containing the URL of each banner image.

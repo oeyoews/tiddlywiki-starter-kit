@@ -7,8 +7,8 @@ qrcode widget
 
 \*/
 // 1.4.4  https://cdn.jsdelivr.net/npm/qrcode@1.4.4/build/qrcode.min.js
-// 1.5.1 有问题, 之后的版本没有构建这个min.js, 可以借助modern.dev, 直接打包插件
-// moderndev 打包后只有32kb, 这里min.js 有54kb
+// 1.5.1 有问题，之后的版本没有构建这个 min.js, 可以借助 modern.dev, 直接打包插件
+// moderndev 打包后只有 32kb, 这里 min.js 有 54kb
 
 const QRCode = require('qrcode.min.js');
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
@@ -40,11 +40,11 @@ class QRCodeWidget extends Widget {
 
     if (storyTiddler) {
       switch (renderType) {
-        // 常用的是url类型
+        // 常用的是 url 类型
         case 'url':
           textcontent = currentTiddlerUrl;
           break;
-        // rendered 类型除了支持了 wikitext 变量的渲染, 其他的和raw没有什么区别, 都是纯文本
+        // rendered 类型除了支持了 wikitext 变量的渲染，其他的和 raw 没有什么区别，都是纯文本
         case 'raw':
           textcontent = $tw.wiki.getTiddlerText(storyTiddler);
           break;

@@ -91,7 +91,7 @@ class AvatarWidget extends Widget {
 
     // types[type]?.includes(type) && img.setAttribute('data-type', type);
 
-    // 考虑图片加载失败, 但是不考虑图片加载超时(offline)
+    // 考虑图片加载失败，但是不考虑图片加载超时 (offline)
     imageNode.onerror = () => {
       // console.warn(src, '图片加载失败');
       imageNode.src =

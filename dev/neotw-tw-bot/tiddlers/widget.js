@@ -10,7 +10,7 @@ neotw-tw-bot widget
   /*jslint node: true, browser: true */
   /*global $tw: false */
   'use strict';
-  // 是$:/plugins/oeyoews/neotw-tw-bot/sendmessage.js 的简写, 和真实文件路径无关, 但最好相同, 方便编辑器识别, 就不用写.js 后缀
+  // 是$:/plugins/oeyoews/neotw-tw-bot/sendmessage.js 的简写，和真实文件路径无关，但最好相同，方便编辑器识别，就不用写.js 后缀
   const twBot = require('./sendmessage');
 
   const Widget = require('$:/core/modules/widgets/widget.js').widget;

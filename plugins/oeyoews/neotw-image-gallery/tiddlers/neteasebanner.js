@@ -21,7 +21,7 @@ class BannersWidget extends Widget {
     this.computeAttributes();
     this.execute();
     const createElement = $tw.utils.domMaker;
-    // NOTE: tw 支持基于tw 内部路由, 但是仅仅支持js with module-type library(json not support)
+    // NOTE: tw 支持基于 tw 内部路由，但是仅仅支持 js with module-type library(json not support)
     // const twimageobserver = require('$:/plugins/oeyoews/neotw-notion-gallery/twimageobserver.js');
     const twimageobserver = require('../neotw-notion-gallery/twimageobserver.js');
 

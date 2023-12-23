@@ -10,5 +10,5 @@
 - 使用 commander 支持 options arg
 - version
 - check npm package update automatically
-- (待定,问题比较多)继承 kookma 的一些模板, 和 tiddlyhost 一些比较火的 edition(需要支持 nodejs, 不使用单文件)
+- (待定，问题比较多) 继承 kookma 的一些模板，和 tiddlyhost 一些比较火的 edition(需要支持 nodejs, 不使用单文件)
 - 自动发包

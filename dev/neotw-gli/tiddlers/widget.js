@@ -42,7 +42,7 @@ neotw-gli widget
         'https://api.github.com/repos/oeyoews/neotw/commits?per_page=1';
 
       const gliNode = this.document.createElement('div');
-      gliNode.textContent = 'Loading ...'; // 显示loading
+      gliNode.textContent = 'Loading ...'; // 显示 loading
 
       try {
         const response = await fetch(url);

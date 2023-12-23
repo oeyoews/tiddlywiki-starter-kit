@@ -28,7 +28,7 @@ class DaylightWidget extends Widget {
 
     const { btn, class: classNames } = this.attributes;
 
-    // NOTE: 由于require不会多次加载, 所以如果这个节点是require过来的, 永远不会被刷新
+    // NOTE: 由于 require 不会多次加载，所以如果这个节点是 require 过来的，永远不会被刷新
     function createThemeSpan(theme) {
       const storageTheme = localStorage.theme || 'system';
 
@@ -60,7 +60,7 @@ class DaylightWidget extends Widget {
       this.refreshSelf();
     });
 
-    // 仅仅刷新ui, 不更新配置
+    // 仅仅刷新 ui, 不更新配置
     window.addEventListener('storage', (event) => {
       if (event.oldValue !== event.newValue) {
         if (['system', 'light', 'dark'].includes(event.newValue)) {
@@ -69,7 +69,7 @@ class DaylightWidget extends Widget {
       }
     });
 
-    // 右键配置palette
+    // 右键配置 palette
     domNode.addEventListener('contextmenu', (e) => {
       e.preventDefault();
       // tw5-typed not include this yet
@@ -78,7 +78,7 @@ class DaylightWidget extends Widget {
 
     /* const mediaQuery = window.matchMedia?.('(prefers-color-scheme: dark)');
       mediaQuery?.addEventListener?.('change', () => {
-        // TODO: 由于change不会修改配置, 所以class没有变化， ui也没有变化
+        // TODO: 由于 change 不会修改配置，所以 class 没有变化，ui 也没有变化
         this.refreshSelf();
       }); */
 
@@ -87,7 +87,7 @@ class DaylightWidget extends Widget {
   }
 
   // TODO: when changes listener is triggered, widget dont refresh, because it also is config
-  // tailwindcss example: 如果是system, 直接删除了localStorage.theme
+  // tailwindcss example: 如果是 system, 直接删除了 localStorage.theme
   refresh() {
     return false;
   }

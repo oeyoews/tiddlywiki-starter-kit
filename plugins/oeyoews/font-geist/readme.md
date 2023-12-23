@@ -6,7 +6,7 @@
 
 ## TODO
 
-- [ ] font-weight 是如何使用的(字体自动支持???), 目前仅仅支持Geist GeistBlack `Geist Mono` https://github.com/vercel/geist-font/issues/27
+- [ ] font-weight 是如何使用的 (字体自动支持？??), 目前仅仅支持 Geist GeistBlack `Geist Mono` https://github.com/vercel/geist-font/issues/27
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-weight
 https://tailwindcss.com/docs/font-weight

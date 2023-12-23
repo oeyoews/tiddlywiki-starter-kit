@@ -15,7 +15,7 @@ module.exports = function twBot() {
       color,
     }));
   const selectedTag = localStorage.getItem('selectedTag');
-  const defaultTag = selectedTag || tags[0].tag; // 如果localStorage中没有存储标签，则使用第一个标签作为默认标签
+  const defaultTag = selectedTag || tags[0].tag; // 如果 localStorage 中没有存储标签，则使用第一个标签作为默认标签
   const selectTag = document.createElement('select');
   const tagCount = document.createElement('span');
   const tagCountText = $tw.wiki.filterTiddlers(`[tag[${defaultTag}]]`).length;
@@ -60,7 +60,7 @@ module.exports = function twBot() {
     selectTag.appendChild(option);
   });
 
-  // 直接使用fakeDocument会报错
+  // 直接使用 fakeDocument 会报错
   const form = document.createElement('form');
   form.classList.add(
     'p-1',
@@ -90,7 +90,7 @@ module.exports = function twBot() {
     'rounded-full',
   );
   button.title = 'send';
-  button.disabled = true; // 不需要使用readonly
+  button.disabled = true; // 不需要使用 readonly
   const inputMessage = document.createElement('input');
   // bug
   // inputMessage.setAttribute("autofocus", true);
@@ -143,7 +143,7 @@ module.exports = function twBot() {
       tags,
       ...options,
     });
-    // 需要await
+    // 需要 await
     // inputMessage.value = "";
     // 统计当天记录的想法数量
     const count = $tw.wiki.filterTiddlers(

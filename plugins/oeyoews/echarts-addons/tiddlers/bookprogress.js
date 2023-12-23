@@ -28,19 +28,19 @@ const BookProgress = {
       focusSelf,
       legend,
     } = addonAttributes;
-    // NOTE: data必须在执行onUpdate函数的时候获取到最新数据,不要写在onUpdate函数外面
+    // NOTE: data 必须在执行 onUpdate 函数的时候获取到最新数据，不要写在 onUpdate 函数外面
     const data = [];
 
     // alpha sort default
-    // 超过50不显示
+    // 超过 50 不显示
     const tags = $tw.wiki.filterTiddlers(filter).slice(0, 50).sort();
     tags.forEach((tag) => data.push(getData(tag)));
 
     const borderWidth = data.length > 10 ? 0 : width;
     const borderRadius = data.length > 10 ? 5 : radius;
 
-    // 如果类型过多, width 自动设置为0, 此时无视用户的width配置
-    // 配置具体参考echarts官方文档
+    // 如果类型过多，width 自动设置为 0, 此时无视用户的 width 配置
+    // 配置具体参考 echarts 官方文档
     const option = {
       title: {
         text,

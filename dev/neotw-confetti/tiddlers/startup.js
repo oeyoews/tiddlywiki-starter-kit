@@ -20,7 +20,7 @@ load confetti
     require('$:/plugins/oeyoews/neotw-confetti/library/confetti.min.js');
     const Confetti = require('$:/plugins/oeyoews/neotw-confetti/example/fireworks.js');
     $tw.rootWidget.addEventListener('om-confetti-launch', (event) => {
-      // paramObject 通过actionsendmessage 作用传递,不同于param
+      // paramObject 通过 actionsendmessage 作用传递，不同于 param
       const type = event.paramObject?.type || 'center';
       // const sound = paramObject.sound || '';
       // canot use &&

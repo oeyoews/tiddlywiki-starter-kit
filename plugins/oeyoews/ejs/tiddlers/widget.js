@@ -20,7 +20,7 @@ class EJSWidget extends Widget {
     this.execute();
 
     const templateFile = '$:/plugins/oeyoews/ejs/templates/test.ejs';
-    // NOTE: 不要用$tw.wiki.tiddlerExists 判断插件的某一个tiddler是否存在
+    // NOTE: 不要用$tw.wiki.tiddlerExists 判断插件的某一个 tiddler 是否存在
     // if ($tw.wiki.tiddlerExists(templateFile)) {
     //   console.warn(templateFile, '文件不存在');
     //   return;

@@ -45,7 +45,7 @@ class ArtPlayerWidget extends Widget {
       playsInline: true,
       lock: true,
       fastForward: true,
-      autoPlayback: true, // 保存在了localstorage
+      autoPlayback: true, // 保存在了 localstorage
       autoOrientation: true,
       airplay: true,
     };
