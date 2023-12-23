@@ -20,7 +20,7 @@ class SkillIconWidget extends Widget {
     this.execute();
 
     const { icon = 'tiddlywiki5' } = this.attributes;
-    const { icons, default: badges } = require('./skill-badges.min.js');
+    const { icons, badges } = require('./skill-badges.min.js');
     const createElement = $tw.utils.domMaker;
 
     const getIcon = () => {
