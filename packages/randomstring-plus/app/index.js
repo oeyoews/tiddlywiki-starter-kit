@@ -1,3 +1,3 @@
-const random = require('../dist/index').default;
+const { getRandomLowercaseString } = require('../dist/index');
 
-console.log(random());
+console.log(getRandomLowercaseString(12));

@@ -18,3 +18,17 @@ export const getRandomString = (length = defaultLength) => {
   return randomString;
 };
 
+// export const getRandomStringLower = (length = defaultLength) =>
+//   getRandomString(length).toLowerCase();
+
+/**
+ * Generates a random lowercase string of the specified length.
+ *
+ * @param {number} length maxLength=11 - The length of the string to generate. Defaults to the value of `defaultLength`.
+ * @return {string} - The randomly generated lowercase string.
+ */
+export const getRandomLowercaseString = (length = defaultLength) => {
+  return Math.random()
+    .toString(36)
+    .substring(2, length + 2);
+};
