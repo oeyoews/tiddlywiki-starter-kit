@@ -134,3 +134,8 @@ const icon = $tw.wiki.renderText(
     parseAsInline: true, // no extra tag
   },
 );
+
+// disable timestamp
+$tw.wiki.setText(title, null, null, formatedText, {
+  suppressTimestamp: true,
+});
