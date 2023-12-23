@@ -1,9 +1,10 @@
 - 支持 <$pangu /> widget 和 om-format-tiddler 的 wikitext 写法。
 
+> 由于 autocorrect 和对剪藏插件的 remark-pangu 支持，和 markdown-it-pangu 的插件的移植后，外加我在 tiddlywiki 中仅仅使用 markdown, 所以很少使用此插件了
+
 ## Note
 
 pangu 格式化 markdown/wikitext, 还是需要 remark 等额外 package 才能完美支持 (在 tiddlywiki 可能不会支持)，否则会有一些异常的小问题，请谨慎使用!!!
-
 @see-also: https://github.com/vinta/pangu.js/issues/91
 
 ## TODO
@@ -11,13 +12,6 @@ pangu 格式化 markdown/wikitext, 还是需要 remark 等额外 package 才能�
 - [ ] 借鉴 remark-pangu /markdown-it-pangu(cdn) 支持 pangu format markdown cdn
 
 - pangu 格式化 markdown, 还是需要 remark 等额外 package 才能完美支持，否则会有一些异常的小问题
-- 图标颜色问题
-
-```md
-**中文**
-```
-
-会被自动分开
 
 ## Motivation
 
