@@ -460,8 +460,9 @@ var assetList = [
         "created": "2023-12-23",
         "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
         "list": "readme",
-        "readme": "<!-- plugin template readme -->\n\n## Motivation\n\n<!-- your plugin motivation, or why you write this plugin -->\n",
-        "requires-reload": "yes"
+        "readme": "- 支持 <$pangu /> widget 和 om-format-tiddler 的wikitext 写法.\n\n## Note\n\npangu 格式化markdown, 还是需要remark等额外package才能完美支持, 否则会有一些异常的小问题\n\n## TODO\n\npangu 格式化markdown, 还是需要remark等额外package才能完美支持, 否则会有一些异常的小问题\n\n```md\n**中文**\n```\n\n会被自动分开\n\n## Motivation\n\n- 由于中英文掺杂, 有时忘记在中英文之间添加空格,还有些写直接复制粘贴过来的内容, 或者剪藏的文章, 所以我在部署tiddlywiki的过程中加上了自动格式化文本的步骤, 但是总是有一部分没有识别出来, 并且我希望在某些情况下, 我可以直接在本机就可以一键自动在中英文之间加上空格, 由于tiddlywiki的编辑体验很差, 自然就不会像vscode支持格式化了, 所以就把pangu移植到了tiddlywiki里面.\n",
+        "requires-reload": "yes",
+        "icon": "data:image/svg+xml,%3Csvg%20stroke%3D%22currentColor%22%20fill%3D%22currentColor%22%20stroke-width%3D%220%22%20viewBox%3D%220%200%2016%2016%22%20height%3D%221em%22%20width%3D%221em%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M12%202V1H6.5a3.5%203.5%200%200%200%200%207H8v5H7v1h5v-1h-1V2h1zM8%207H6.5a2.5%202.5%200%201%201%200-5H8v5zm2%206H9V2h1v11z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E"
     },
     {
         "title": "$:/plugins/oeyoews/qrcode",
