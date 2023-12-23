@@ -1,0 +1,21 @@
+title: $:/plugins/oeyoews/pangu/ui
+tags: $:/tags/ViewToolbar
+list-before: $:/core/ui/Buttons/close
+description: format tiddler
+caption: Pangu
+
+\whitespace trim
+<$list filter="[all[current]!is[system]]">
+<$button message="om-format-tiddler" tooltip="format tiddler" aria-label="pangu" class=<<tv-config-toolbar-class>>>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
+{{$:/plugins/oeyoews/pangu/icon}}
+</$list>
+</$list>
+<$list filter="[<tv-config-toolbar-text>match[yes]]">
+<span class="tc-btn-text">
+  <$text text="pangu"/>
+</span>
+</$list>
+</$button>
+</$list>
