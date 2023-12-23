@@ -61,6 +61,9 @@ devDependencies:
   prettier:
     specifier: ^3.1.0
     version: 3.1.0
+  randomstring-plus:
+    specifier: ^1.0.0
+    version: 1.0.0
   tw5-typed:
     specifier: ^0.4.0
     version: 0.4.0
@@ -3860,6 +3863,10 @@ packages:
   /queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
     dev: false
+
+  /randomstring-plus@1.0.0:
+    resolution: {integrity: sha512-Mn/Xmw0a27t2wKVNGwkSEinevcxTyICKoSPdCrE/pYxuwqEwdIIWVQCP1Bo1S5kfDIWXs/AjAB27Qt0PhsdmPw==}
+    dev: true
 
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
