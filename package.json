@@ -18,10 +18,7 @@
     "prepare": "simple-git-hooks"
   },
   "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
-  },
-  "lint-staged": {
-    "*": "autocorrect --fix"
+    "pre-commit": "autocorrect --fix"
   },
   "dependencies": {
     "@types/fs-extra": "^11.0.4",
