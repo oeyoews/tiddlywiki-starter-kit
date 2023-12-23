@@ -1,10 +1,7 @@
 # Usage
 
 ```js
-// cjs
-const getRandomString = require('randomstring-plus')
-// esm
-import getRandomString from 'randomstring-plus/dist/index.mjs'
+const getRandomString = require('randomstring-plus');
 
-console.log(getRandomString)
+console.log(getRandomString);
 ```

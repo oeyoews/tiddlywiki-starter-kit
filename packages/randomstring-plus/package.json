@@ -1,13 +1,21 @@
 {
   "name": "randomstring-plus",
-  "version": "1.1.0",
-  "description": "",
-  "main": "index.js",
+  "version": "1.2.0",
+  "description": "generate random string",
   "homepage": "https://github.com/oeyoews/tiddlywiki-starter-kit/pakcages/randomstring-plus",
   "repository": {
     "type": "git",
     "url": "https://github.com/oeyoews/tiddlywiki-starter-kit/pakcages/randomstring-plus"
   },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "types": "./dist/index.d.ts",
   "tsup": {
     "entry": [
       "index.ts"
