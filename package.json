@@ -27,7 +27,7 @@
     "ora": "^6.3.1",
     "prompts": "^2.4.2",
     "qrcode": "^1.5.3",
-    "tiddlywiki": "github:Jermolene/TiddlyWiki5#fe17f16675431af8ab84e5847736db845c2c6865",
+    "tiddlywiki": "5.3.3",
     "tiged": "^2.12.5"
   },
   "devDependencies": {
