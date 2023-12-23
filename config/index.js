@@ -9,4 +9,5 @@ module.exports = {
   markdown: true,
   qrcode: false,
   tiddlersRepo: 'oeyoews/neotw-tiddlers',
+  pluginversion: '5.3.0',
 };
