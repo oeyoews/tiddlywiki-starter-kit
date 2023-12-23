@@ -7,7 +7,7 @@ import characters from './lib/characters';
  * @param {number} length 10 - The length of the random string. Defaults to defaultLength.
  * @return {string} The randomly generated string.
  */
-const getRandomString = (length = defaultLength) => {
+export const getRandomString = (length = defaultLength) => {
   let randomString = '';
 
   for (let i = 0; i < length; i++) {
@@ -18,4 +18,3 @@ const getRandomString = (length = defaultLength) => {
   return randomString;
 };
 
-export default getRandomString;

@@ -1,3 +1,3 @@
-import random from '../dist/index.mjs';
+import { getRandomString } from '../dist/index.mjs';
 
-random();
+console.log(getRandomString())
