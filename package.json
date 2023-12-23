@@ -37,7 +37,7 @@
     "cross-spawn": "^7.0.3",
     "pm2": "^5.3.0",
     "prettier": "^3.1.0",
-    "randomstring-plus": "^1.1.0",
+    "randomstring-plus": "^1.2.0",
     "tw5-typed": "^0.4.0"
   }
 }
