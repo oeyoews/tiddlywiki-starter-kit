@@ -7,6 +7,6 @@ module.exports = {
   output: '.tiddlywiki',
   wiki: 'src',
   markdown: true,
-  qrcode: true,
+  qrcode: false,
   tiddlersRepo: 'oeyoews/neotw-tiddlers',
 };
