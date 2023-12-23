@@ -33,7 +33,7 @@
 - Node.js
 - Git(optional)
 
-## Getting Started 测
+## Getting Started
 
 ```bash
 npm create neotw-app@latest
