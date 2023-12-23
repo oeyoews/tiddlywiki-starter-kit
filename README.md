@@ -28,7 +28,7 @@
 - 🔧 Simplified configuration: Easily customize the TiddlyWiki Starter Kit by editing the .env file.
 - 💡 One-click installation: Quickly install the TiddlyWiki Starter Kit using the npm create create-neotw-app command.
 
-## Requirements测试
+## Requirements
 
 - Node.js
 - Git(optional)
