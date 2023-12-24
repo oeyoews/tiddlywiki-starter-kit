@@ -2,7 +2,7 @@ node_modules/
 **/*.min.js
 pnpm-lock.yaml
 .tiddlywiki/
-files/
+# files/
 .vscode/
 .github/
 src/

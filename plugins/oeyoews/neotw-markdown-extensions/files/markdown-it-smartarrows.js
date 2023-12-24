@@ -15,10 +15,10 @@ hide-body: yes
       'undefined' != typeof window
         ? window
         : 'undefined' != typeof global
-        ? global
-        : 'undefined' != typeof self
-        ? self
-        : this),
+          ? global
+          : 'undefined' != typeof self
+            ? self
+            : this),
       (n.markdownitLinkScheme = e());
   }
 })(function () {
@@ -76,7 +76,6 @@ hide-body: yes
                   f.test(t.content) &&
                   (t.content = t.content
                     .replace(/(^|[^<])<-->([^>]|$)/gm, '$1\u2194$2')
-                    // .replace(/(^|[^-])-->([^>]|$)/gm, '$1\u2192$2')
                     .replace(/(^|[^-])-->([^>]|$)/gm, '👉 ')
                     .replace(/(^|[^<])<--([^-]|$)/gm, '$1\u2190$2')
                     .replace(/(^|[^<])<==>([^>]|$)/gm, '$1\u21d4$2')
