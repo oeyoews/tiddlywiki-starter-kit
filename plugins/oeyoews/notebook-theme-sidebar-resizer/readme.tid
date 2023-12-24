@@ -3,3 +3,15 @@ title: $:/plugins/oeyoews/notebook-theme-sidebar-resizer/readme
 !! Notebook theme sidebar resizer
 
 > support left/right sidebar resizer
+
+<!-- 在切换主题时, theme 会覆盖掉同名非系统文件, 所以需要手动修改 -->
+
+!! for captivate theme
+
+need add `<$nbresizer /> in [[$:/themes/cdr/captivate/ui/SideBar]] tiddler.
+
+```
+<<sidebarTabs>>
+<!-- here -->
+<$nbresizer />
+```
