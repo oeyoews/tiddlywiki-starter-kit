@@ -19,6 +19,9 @@ class NotebookResizer extends Widget {
     this.sidebarLayoutTiddler =
       '$:/themes/tiddlywiki/vanilla/options/sidebarlayout';
     this.isResizing = false;
+    // use object for each theme
+    this.captiveWidthTiddler = '$:/themes/cdr/captivate/settings/tiddlerwidth';
+    // captive state is same as vanilla
     this.notebookWidthTiddler = '$:/themes/nico/notebook/metrics/sidebar-width';
     this.vanillaWidthTiddler =
       '$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth';
