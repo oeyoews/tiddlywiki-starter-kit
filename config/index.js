@@ -6,6 +6,7 @@ module.exports = {
   password: 'oeyoews',
   output: '.tiddlywiki',
   wiki: 'src',
+  // wiki: 'src-dev',
   markdown: true,
   qrcode: false,
   tiddlersRepo: 'oeyoews/neotw-tiddlers',

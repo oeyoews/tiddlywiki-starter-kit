@@ -1,0 +1,58 @@
+title: $:/themes/cdr/captivate/ui/SideBar
+list-before: $:/core/ui/PageTemplate/story
+tags: $:/tags/PageTemplate
+
+\whitespace trim
+
+\define sidebarDefaultFilter() [{$:/info/browser/screen/width}compare:number:gt{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}then[yes]else[no]]
+
+\define sidebarDefaultState() {{{[{$:/info/browser/screen/width}compare:number:gt{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}then[yes]else[no]]}}}
+
+\define sidebarTabs() <$macrocall $name="tabs" tabsList="[all[shadows+tiddlers]tag[$:/tags/SideBar]!has[draft.of]]" default={{$:/config/DefaultSidebarTab}} state="$:/state/tab/sidebar" class="tc-sidebar-tabs-main"/>
+
+<$list filter="[{$:/layout}match[$:/themes/cdr/captivate/ui/PageLayout]]" variable="ignore">
+
+<$set name=defaultState filter=<<sidebarDefaultFilter>> >
+
+<$reveal state="$:/state/sidebar" type="nomatch" text="no" retain="yes" animate="yes" tag="div" class="cv-sidebar" default={{{ [subfilter{$:/themes/cdr/captivate/ui/SideBar/default}] }}} retain="yes" animate="yes">
+
+<div class="cv-sidebar-header">
+
+{{$:/themes/cdr/captivate/ui/TopBar/Menu}}
+
+<span class="cv-topbar-title">
+
+<$view tiddler="$:/SiteTitle" format="plainwikified"/>
+
+</span>
+
+</div>
+
+<div class="tc-sidebar-lists tc-sidebar-tabs">
+
+<!-- auto close the sidebar on link clicks if on narrow screen (i.e. mobile phone) -->
+<!--
+<$list filter="[{$:/info/browser/screen/width}compare:number:lt{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}]"
+       emptyMessage=<<sidebarTabs>>>
+-->
+<$list filter="[subfilter{$:/themes/cdr/captivate/ui/SideBar/default}match[no]]"
+       emptyMessage=<<sidebarTabs>>>
+
+<$linkcatcher actions="""<$action-setfield $tiddler="$:/state/sidebar" $value="no"/><$action-navigate $to=<<navigateTo>>/>""">
+
+<<sidebarTabs>>
+
+<!-- captive theme resizer adapter -->
+<$nbresizer />
+
+</$linkcatcher>
+
+</$list>
+
+</div>
+
+</$reveal>
+
+</$set>
+
+</$list>

@@ -19,9 +19,6 @@ class NotebookResizer extends Widget {
     this.sidebarLayoutTiddler =
       '$:/themes/tiddlywiki/vanilla/options/sidebarlayout';
     this.isResizing = false;
-    // use object for each theme
-    this.captiveWidthTiddler = '$:/themes/cdr/captivate/settings/tiddlerwidth';
-    // captive state is same as vanilla
     this.notebookWidthTiddler = '$:/themes/nico/notebook/metrics/sidebar-width';
     this.vanillaWidthTiddler =
       '$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth';
@@ -78,9 +75,8 @@ class NotebookResizer extends Widget {
       currentTiddler === '$:/themes/oeyoews/notebook-plus' // for my custom notebook theme
     ) {
       return this.NOTEBOOK;
-    } else {
-      return this.VANILLA;
     }
+    return this.VANILLA;
   }
 
   presetForVanillaTheme() {
@@ -94,15 +90,25 @@ class NotebookResizer extends Widget {
   }
 
   getSidebarPosition() {
+    // NOTE: before vanilla adjust
+    if (
+      $tw.wiki.getTiddlerText(this.themeTiddler) === '$:/themes/cdr/captivate'
+    ) {
+      return 'left';
+    }
+
     if (this.theme === this.VANILLA) {
       return 'right';
     }
+
     if (!$tw.wiki.tiddlerExists(this.positionTiddler)) {
       return 'left';
     }
+
     const { position = 'left' } = $tw.wiki.getTiddler(
       this.positionTiddler,
     ).fields;
+
     return position;
   }
 
@@ -172,6 +178,7 @@ class NotebookResizer extends Widget {
     if (
       tiddlers.includes(this.positionTiddler) ||
       tiddlers.includes('$:/language') ||
+      tiddlers.includes('$:/layout') ||
       tiddlers.includes(this.themeTiddler) ||
       tiddlers.includes(this.sidebarLayoutTiddler)
     ) {
