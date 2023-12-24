@@ -17,7 +17,14 @@ exports.startup = () => {
 
   const getname = (name) => `./markdown-it-${name}`;
 
-  const extensions = ['abbr', 'emoji', 'github-alert', 'pangu', 'smartarrows'];
+  const extensions = [
+    'abbr',
+    'emoji',
+    'github-alert',
+    'pangu',
+    'smartarrows',
+    'front-matter',
+  ];
 
   extensions.forEach((extension) => {
     md.use(require(getname(extension)));
