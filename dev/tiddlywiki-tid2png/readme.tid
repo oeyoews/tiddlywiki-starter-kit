@@ -3,7 +3,7 @@ description: ~TiddlyWiki Tid2png
 
 <div class="prose max-w-none">
 
-支持导出图片, 包括指定tiddler, 固定区域, 甚至直接当作窗口截图工具
+支持导出图片，包括指定 tiddler, 固定区域，甚至直接当作窗口截图工具
 
 !! optional plugins dependencies
 

@@ -6,8 +6,8 @@ type: text/markdown
 * [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/neotw-read-files]]
 * [[Demo|https://oeyoews.github.io/neotw]]
 
-* 支持读取images文件夹, 不受 markdown 或者 wikitext 语法限制, 下面使用 markdown 语法演示
-* 默认支持static目录, 编辑 [自定义目录](#$:/plugins/oeyoews/neotw-read-files/custom-path) 文件自定义目录
+* 支持读取 images 文件夹，不受 markdown 或者 wikitext 语法限制，下面使用 markdown 语法演示
+* 默认支持 static 目录，编辑 [自定义目录](#$:/plugins/oeyoews/neotw-read-files/custom-path) 文件自定义目录
 
 ## usage
 

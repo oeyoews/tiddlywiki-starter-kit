@@ -1,19 +1,19 @@
 title: $:/plugins/oeyoews/neotw-slug/readme
 description: neotw-slug
 
-> 个人需求不强烈, 暂时不做
+> 个人需求不强烈，暂时不做
 
 !! 思路
 
-* slugify 处理重复???
+* slugify 处理重复？??
 * 多个条目链接 storylist
-* 判断是否有slug字段
+* 判断是否有 slug 字段
 * 生成处理后的链接 xxxx?slug=shared-title
-* 随机生成一串slugify field(不具有可读性), 手动添加slug字段(可读性更好, 但是会有slug字段冲突的可能)
+* 随机生成一串 slugify field(不具有可读性), 手动添加 slug 字段 (可读性更好，但是会有 slug 字段冲突的可能)
 
 !! 实现
 
-1. method01: 使用startupactions 跳转?(灵活性不强)
-2. method02: 使用startup 模块: 找到所有的slug, 然后判断url, 然后跳转对应的条目
+1. method01: 使用 startupactions 跳转？(灵活性不强)
+2. method02: 使用 startup 模块：找到所有的 slug, 然后判断 url, 然后跳转对应的条目
 
-> slug: 建议使用常规名字或者符号, 比如xxx-xxx-xxx, 不要使用emoji或者特殊符号或者空格(浏览器会自动对中文编码)
+> slug: 建议使用常规名字或者符号，比如 xxx-xxx-xxx, 不要使用 emoji 或者特殊符号或者空格 (浏览器会自动对中文编码)

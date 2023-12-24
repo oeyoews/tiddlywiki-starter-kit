@@ -4,7 +4,7 @@ title: $:/plugins/oeyoews/tiddlywiki-edition-macro/document
 
 ! 一般
 
-|!宏 |!用于 |!示例 |
+|！宏 |！用于 |！示例 |
 |.def |定义术语实例 |<<.def widget>> |
 |.em |句子中的次要强调 |<<.em not>> |
 |.place |用户可以填写的占位符 |<<.place tagname>> |
@@ -14,18 +14,18 @@ title: $:/plugins/oeyoews/tiddlywiki-edition-macro/document
 
 ! 建议
 
-|!宏 |!用于 |!示例 |
+|！宏 |！用于 |！示例 |
 |^.tip |^提示和技巧 |<<.tip "Turn your screen on, otherwise<br>you won't be able to see much.">> |
 |^.warning |^警示建议 |<<.warning "Make a backup of your file<br>before you upgrade.">> |
 
 ! 区块
 
-|!宏 |!用于 |
+|！宏 |！用于 |
 |.preamble |位于条目其余内容之外的开场白 |
 
 ! 条目与字段
 
-|!宏 |!用于 |!示例 |
+|！宏 |！用于 |！示例 |
 |.tid |条目名称 |<<.tid Example>> |
 |.tag |标签 |<<.tag Example>> |
 |.field|字段名称 |<<.field example>> |
@@ -39,7 +39,7 @@ title: $:/plugins/oeyoews/tiddlywiki-edition-macro/document
 
 ! 链接
 
-|!宏 |!用于 |!示例 |
+|！宏 |！用于 |！示例 |
 |.link |包含维基文本的链接 |<<.link "^^an^^ ~~example~~" Example>> |
 |.clink |代码的链接 |<<.clink `<$list>` ListWidget>> |
 |.dlink |术语定义实例上的链接 |<<.dlink widget Widgets>> |
@@ -56,18 +56,18 @@ title: $:/plugins/oeyoews/tiddlywiki-edition-macro/document
 
 ! 用户界面
 
-|!宏 |!用于 |!示例 |
+|！宏 |！用于 |！示例 |
 |.key |键盘上的按键 |<<.key Escape>> |
 |.keycombo |组合键 |<<.keycombo Ctrl Enter>> |
 
 ! 选项卡
 
-|!宏 |!用于 |!示例 |
+|！宏 |！用于 |！示例 |
 |.sidebar-tab |侧边栏选项卡的名称 |<<.sidebar-tab More>> |
 |.more-tab |更多选项卡的子选项卡的名称 |<<.more-tab Shadows>> |
 |.info-tab |条目信息选项卡的名称 |<<.info-tab Fields>> |
 |.controlpanel-tab |控制台选项卡的名称 |<<.controlpanel-tab Settings>> |
-|.advancedsearch-tab |t高级搜索选项卡的名称 |<<.advancedsearch-tab Filter>> |
+|.advancedsearch-tab |t 高级搜索选项卡的名称 |<<.advancedsearch-tab Filter>> |
 |.toc-tab |tw5.com 目录选项卡的名称 |<<.toc-tab>> |
 |.example-tab |示例选项卡名称 |<<.example-tab "Notes">> |
 
@@ -117,7 +117,7 @@ title: $:/plugins/oeyoews/tiddlywiki-edition-macro/document
 
 ! 按钮
 
-|!宏 |!用于 |!示例 |
+|！宏 |！用于 |！示例 |
 |.button |标准按钮名称和图标 |<<.button "new-tiddler">> |
 
 !!.button 的参数

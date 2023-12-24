@@ -7,9 +7,9 @@ type: text/markdown
 [img[https://i.imgur.com/myoq7V4.png]]
 [img[https://i.imgur.com/Zz1Qe8i.png]]
 
-> 目前支持 clockc, tagpie, sevenday, 三种addon
+> 目前支持 clockc, tagpie, sevenday, 三种 addon
 
-* 将echarts的addons独立出来, 使用js编写,不依赖外部环境, 即使在tw里面也能快速修改, 方便用户修改
+* 将 echarts 的 addons 独立出来，使用 js 编写，不依赖外部环境，即使在 tw 里面也能快速修改，方便用户修改
 
 ## Usage
 

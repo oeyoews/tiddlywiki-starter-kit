@@ -2,7 +2,7 @@ title: $:/plugins/oeyoews/tiddlywiki-videos/readme
 
 !! Tiddlywiki Videos
 
-> 对youtube, bilibili 等视频平台的嵌入提供了一个快捷可定制的方法, 免去手动复制iframe的操作, 仅仅需要粘贴id即可
+> 对 youtube, bilibili 等视频平台的嵌入提供了一个快捷可定制的方法，免去手动复制 iframe 的操作，仅仅需要粘贴 id 即可
 
 !! Usage
 
@@ -21,4 +21,4 @@ title: $:/plugins/oeyoews/tiddlywiki-videos/readme
 
 <!-- !! See Also -->
 
-<!-- artplayer 是支持直接嵌入mp4文件的tiddlywiki 插件 -->
+<!-- artplayer 是支持直接嵌入 mp4 文件的 tiddlywiki 插件 -->

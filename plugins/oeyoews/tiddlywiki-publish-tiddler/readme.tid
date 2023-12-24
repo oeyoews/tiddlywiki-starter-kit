@@ -10,11 +10,11 @@ title: $:/plugins/oeyoews/tiddlywiki-publish-tiddler/readme
 
 !! NOTE
 
-<!-- * 需要手动启用FileSystem 文件 -->
+<!-- * 需要手动启用 FileSystem 文件 -->
 * 此插件重写 [[FileSystem Tid|$:/config/FileSystemPaths]]
-* 虽然此插件兼容单文件tiddlywiki, 但是只工作在nodejs tiddlywiki
+* 虽然此插件兼容单文件 tiddlywiki, 但是只工作在 nodejs tiddlywiki
 * maybe should use public is more understandable better publish
-<!-- * 在nodejs tiddlywiki第一次启动时, 控制台可能会多出很多 `syncer-browser-tiddlyweb: Checking dirty status` 类似与这样的日志 -->
+<!-- * 在 nodejs tiddlywiki 第一次启动时，控制台可能会多出很多 `syncer-browser-tiddlyweb: Checking dirty status` 类似与这样的日志 -->
 
 !! TODO
 

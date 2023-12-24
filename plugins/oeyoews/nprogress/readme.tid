@@ -1,6 +1,6 @@
 title: $:/plugins/oeyoews/nprogress/readme
 
-> nprogress tiddlywiki版本
+> nprogress tiddlywiki 版本
 
 ```js
 new $tw.NProgress().start()

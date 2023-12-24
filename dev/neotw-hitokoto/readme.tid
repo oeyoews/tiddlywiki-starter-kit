@@ -8,32 +8,32 @@ type: text/markdown
 <!-- https://hitokoto.tyr.im/ -->
 <!-- https://api.vvhan.com/ -->
 
-<!-- !! 一言(online) -->
+<!-- !! 一言 (online) -->
 <!---->
-<!-- > 使用一言api, 需要联网 -->
+<!-- > 使用一言 api, 需要联网 -->
 <!---->
 <!-- {{$:/plugins/oeyoews/neotw-hitokoto/modal-id}} -->
 <!---->
-<!-- !! 一言tiddlywiki版(local) -->
+<!-- !! 一言 tiddlywiki 版 (local) -->
 <!---->
-<!-- > 使用chatgpt 制卡，txt to json 脚本由chatgpt提供, 以下是制卡规则 -->
+<!-- > 使用 chatgpt 制卡，txt to json 脚本由 chatgpt 提供，以下是制卡规则 -->
 <!---->
 <!-- * 英文名人名言 -->
-<!-- * 长度控制在20 到35 之间 -->
+<!-- * 长度控制在 20 到 35 之间 -->
 <!-- * 不使用双引号 -->
 <!-- * 来源使用@分离 -->
 <!---->
 <!-- {{$:/plugins/oeyoews/neotw-hitokoto/surfing}} -->
-<!-- > 使用json格式存储数据， 可以随时更改句子内容  @chatgpt -->
+<!-- > 使用 json 格式存储数据，可以随时更改句子内容  @chatgpt -->
 <!-- > [[Random Sentences|$:/plugins/oeyoews/neotw-hitokoto/random-sentences.json]] -->
 <!---->
 <!-- {{$:/plugins/oeyoews/neotw-hitokoto/ohitokoto}} -->
 <!---->
-<!-- * 每隔一段时间自动刷新, 点击也可刷新 -->
+<!-- * 每隔一段时间自动刷新，点击也可刷新 -->
 <!---->
 <!-- !! usage -->
 <!---->
-<!-- * 如果想要隐藏当前tiddler的hitokoto,可以添加字段hitokoto:no -->
+<!-- * 如果想要隐藏当前 tiddler 的 hitokoto，可以添加字段 hitokoto:no -->
 <!---->
 <!-- !! param -->
 <!---->
@@ -43,10 +43,10 @@ type: text/markdown
 <!---->
 <!-- !! TODO -->
 <!---->
-<!-- * 使用脚本自动生成json from txt or excel -->
-<!-- * 传入参数, 支持自定义样式, id -->
-<!-- * 支持modal -->
-<!-- * ~~使用级联保持widget在末尾, 不受其他viewtemplate影响~~ -->
+<!-- * 使用脚本自动生成 json from txt or excel -->
+<!-- * 传入参数，支持自定义样式，id -->
+<!-- * 支持 modal -->
+<!-- * ~~使用级联保持 widget 在末尾，不受其他 viewtemplate 影响~~ -->
 <!-- * how to remove shadow no-$ -->
 <!---->
 <!-- !! NOTE -->

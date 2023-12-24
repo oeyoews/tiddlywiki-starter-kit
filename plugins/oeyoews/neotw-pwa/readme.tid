@@ -6,14 +6,14 @@ name: PWA
 
 * [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/neotw-pwa]]
 
-> 让你的TiddlyWiki网页像app一样启动
+> 让你的 TiddlyWiki 网页像 app 一样启动
 > make your TiddlyWiki web page start like an app
 
-> 注意: 额外提供了favicon.ico
+> 注意：额外提供了 favicon.ico
 
-> 注意: 不要使用0.0.0.0:xxx, 请使用127.0.0.1:xxx
+> 注意：不要使用 0.0.0.0:xxx, 请使用 127.0.0.1:xxx
 
-> 由于tiddlywiki.png 使用了全透明, 中间的白色部分是透明的, 在iphone上看不到(全部自动补充成了黑色)
+> 由于 tiddlywiki.png 使用了全透明，中间的白色部分是透明的，在 iphone 上看不到 (全部自动补充成了黑色)
 
 * ref: https://github.com/oeyoews/tiddlywiki-starter-kit/commit/47b9530a2049a43b26f30094c77d8483282e59d7
 
@@ -34,12 +34,12 @@ Reset PWA ♻️
 </$button>
 </$reveal>
 
-> 设置后需要重启tw, 不是刷新浏览器
+> 设置后需要重启 tw, 不是刷新浏览器
 > After setting, you need to restart tw, not refresh the browser
 
-<!-- * get-menifest.json 变成shadow, 注意使用startupaction 修改变成shadow 是无效的,shadows文件不会保存 -->
+<!-- * get-menifest.json 变成 shadow, 注意使用 startupaction 修改变成 shadow 是无效的，shadows 文件不会保存 -->
 
-> 下面是针对构建在线版本支持pwa的参数
+> 下面是针对构建在线版本支持 pwa 的参数
 > The following are parameters for building online version to support pwa
 
 ```

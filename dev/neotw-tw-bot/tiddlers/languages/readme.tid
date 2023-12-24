@@ -10,7 +10,7 @@ title: $:/languages/neotw-tw-bot/readme
 <$tw-bot />
 ```
 
-> 快速记录想法,单行模式直接回车或者点击发送按钮即可
+> 快速记录想法，单行模式直接回车或者点击发送按钮即可
 
 !! 配置
 
@@ -29,8 +29,8 @@ title: $:/languages/neotw-tw-bot/readme
 重置 🛺
 <$action-deletetiddler $filter="[[$:/plugins/oeyoews/neotw-tw-bot/tags.json]]"/>
 </$button>
-* 生成的每个条目都有 `creator` 字段, 默认值是 `tw-bot`, 支持更改 [[creator👉|$:/plugins/oeyoews/neotw-tw-bot/tags.json]]
-* 生成的每个条目都有 `tag` 字段, 支持更改 [[tag👉|$:/plugins/oeyoews/neotw-tw-bot/tags.json]]
+* 生成的每个条目都有 `creator` 字段，默认值是 `tw-bot`, 支持更改 [[creator👉|$:/plugins/oeyoews/neotw-tw-bot/tags.json]]
+* 生成的每个条目都有 `tag` 字段，支持更改 [[tag👉|$:/plugins/oeyoews/neotw-tw-bot/tags.json]]
 * <$button class="bg-rose-400 p-2 rounded">
  🔥 删除此插件产生的所有记录条目
   <$action-deletetiddler $filter="[prefix[tw-bot/messages/]creator[tw-bot]]"/>
@@ -38,7 +38,7 @@ title: $:/languages/neotw-tw-bot/readme
 
 !! 可选样式美化插件
 
-> 本插件默认采用零样式, 如果安装了下面插件, 则自动采用相关美化样式,建议安装
+> 本插件默认采用零样式，如果安装了下面插件，则自动采用相关美化样式，建议安装
 
 * tailwindcss: 样式依赖
 * swal2: 通知依赖
