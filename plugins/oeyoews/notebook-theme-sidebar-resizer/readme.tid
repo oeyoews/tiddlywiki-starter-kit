@@ -8,9 +8,9 @@ title: $:/plugins/oeyoews/notebook-theme-sidebar-resizer/readme
 
 !! for captivate theme
 
-need add `<$nbresizer /> in [[$:/themes/cdr/captivate/ui/SideBar]] tiddler.
+need add `<$nbresizer />` in [[$:/themes/cdr/captivate/ui/SideBar]] tiddler.
 
-```
+```html
 <<sidebarTabs>>
 <!-- here -->
 <$nbresizer />
