@@ -17,7 +17,7 @@ module.exports = {
       max_memory_restart: '1024M', // 更多的情况是，tw 的浏览器实例卡死，而不是 server 端内存泄露，所以内存限制基本没用
       max_restarts: 3, // 似乎不生效
       exec_mode: 'cluster',
-      cron_restart: '0 0 * * *',
+      // cron_restart: '0 0 * * *',
       cwd: './',
       watch_delay: 100,
       log_file: `${logdir}/logs/combined.outerr.log`,
