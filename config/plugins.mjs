@@ -1,30 +1,12 @@
 // NOTE: vercel not support use { isCi } ???
 import ci from 'ci-info';
-import chalk from 'chalk';
 import config from './index.js';
 
 const enableMarkdown = config.markdown;
 
-const addColor = (enableOption, color = 'green') => chalk[color](enableOption);
-
-function recursivePrint(obj, indent = '') {
-  for (const [key, value] of Object.entries(obj)) {
-    if (typeof value === 'object' && value !== null) {
-      console.log(addColor(key, 'yellow'));
-      recursivePrint(value, '  ');
-    } else {
-      console.log(
-        chalk.bold(`${indent}${addColor(key)}: ${addColor(value, 'cyan')}`),
-      );
-    }
-  }
-}
-
-recursivePrint(config);
-
 const localPlugins = [
-  'oeyoews/neotw-cli-info',
   'oeyoews/tiddlywiki-publish-tiddler',
+  // 'oeyoews/neotw-cli-info',
   // 'oeyoews/tiddlywiki-tid2png',
 ];
 

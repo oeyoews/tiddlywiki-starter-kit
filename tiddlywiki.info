@@ -54,7 +54,6 @@
     "oeyoews/neotw-homepage",
     "tiddlywiki/markdown",
     "oeyoews/markdown-kit",
-    "oeyoews/neotw-cli-info",
     "oeyoews/tiddlywiki-publish-tiddler"
   ],
   "build": {
