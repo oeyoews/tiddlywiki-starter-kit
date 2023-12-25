@@ -6,14 +6,21 @@ import config from './index.js';
 const enableMarkdown = config.markdown;
 
 const addColor = (enableOption, color = 'green') => chalk[color](enableOption);
-console.log(
-  chalk.cyan.bold(`
-#################################
-#  MARKDOWN: ${addColor(enableMarkdown)}
-#  wikiLocation: ${addColor(config.wiki, 'cyan')}
-#################################
-`),
-);
+
+function recursivePrint(obj, indent = '') {
+  for (const [key, value] of Object.entries(obj)) {
+    if (typeof value === 'object' && value !== null) {
+      console.log(addColor(key, 'yellow'));
+      recursivePrint(value, '  ');
+    } else {
+      console.log(
+        chalk.bold(`${indent}${addColor(key)}: ${addColor(value, 'cyan')}`),
+      );
+    }
+  }
+}
+
+recursivePrint(config);
 
 const localPlugins = [
   'oeyoews/neotw-cli-info',
