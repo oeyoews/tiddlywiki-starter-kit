@@ -1,4 +1,2 @@
 package-lock.yaml
 **/*.min.js
-**/*.meta
-**/*.json
