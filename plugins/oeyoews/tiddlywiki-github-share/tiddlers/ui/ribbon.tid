@@ -1,13 +1,13 @@
 title: $:/plugins/oeyoews/tiddlywiki-github-share/ui/ribbon
 tags: $:/tags/PageControls
-caption: github share button
-description: github share button
+caption: GitHub share button
+description: GitHub share button
 list-after:
 
 \whitespace trim
 
 \define base-repo() https://github.com/
-\define tip() Github Repo
+\define tip() GitHub Repo
 \define tid() $:/config/oeyoews/tiddlywiki-github-share/config
 
 <$button tooltip=<<tip>> aria-label=<<tip>> class=<<tv-config-toolbar-class>>>

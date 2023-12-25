@@ -21,7 +21,7 @@ rules:
   # Fullwidth punctuations to halfwidth in english. 将中文全角标点符号转换为半角(in english)
   halfwidth-punctuation: 1
   # Spellcheck
-  spellcheck: 2
+  spellcheck: 1
 textRules:
   # Config special rules for some texts
   # For example, if we wants to let "Hello你好" just warning, and "Hi你好" to ignore

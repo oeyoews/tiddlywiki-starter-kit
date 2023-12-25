@@ -2,7 +2,7 @@ title: $:/plugins/oeyoews/tiddlywiki-github-share/ui/pagetemplate
 tags: $:/tags/PageTemplate
 
 \define base-repo() https://github.com/
-\define tip() Github Repo
+\define tip() GitHub Repo
 \define tid() $:/config/oeyoews/tiddlywiki-github-share/config
 
 <$list filter="[[$:/StoryList]get[list]count[]match[0]]">

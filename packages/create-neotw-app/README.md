@@ -4,7 +4,7 @@
 
 ## TODO
 
-- 在 window 上需要 git, 不知道为什么 git 检测在 windows 上没用
+- 在 window 上需要 git, 不知道为什么 Git 检测在 windows 上没用
 - support packagemanager option
   https://github.com/vercel/next.js/blob/canary/packages/create-next-app/index.ts#L24
 - 使用 commander 支持 options arg

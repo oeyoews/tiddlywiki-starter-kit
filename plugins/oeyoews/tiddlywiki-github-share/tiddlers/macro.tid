@@ -5,7 +5,7 @@ title: $:/plugins/oeyoews/tiddlywiki-github-share/macro/github-cat
 \define base-repo() https://github.com/
 \define tid() $:/config/oeyoews/tiddlywiki-github-share/config
 
-<$button tooltip="Github repo" class="o-btn-back">
+<$button tooltip="GitHub repo" class="o-btn-back">
   <$action-sendmessage $message="tm-open-external-window" $param={{{ [<tid>get[text]addprefix<base-repo>]}}}/>
   <$list filter="[<tv-config-toolbar-icons>match[yes]]">
     {{$:/plugins/oeyoews/tiddlywiki-github-share/icon-blue}}

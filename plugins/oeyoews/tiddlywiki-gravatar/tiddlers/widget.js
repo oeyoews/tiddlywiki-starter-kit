@@ -3,7 +3,7 @@ title: $:/plugins/oeyoews/tiddlywiki-gravatar/widget.js
 type: application/javascript
 module-type: widget
 
-Gravatar and QQ Github Avatar Widget(Lastest gqg)
+Gravatar and QQ GitHub Avatar Widget(Lastest gqg)
 
 \*/
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
@@ -120,7 +120,7 @@ class AvatarWidget extends Widget {
 }
 
 /**
- * @description Gravatar and QQ  Github Avatar Widget
+ * @description Gravatar and QQ  GitHub Avatar Widget
  * @param {string} username
  * @param {string} email
  * @param {string} type
