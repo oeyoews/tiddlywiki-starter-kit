@@ -4,6 +4,7 @@ module.exports = {
     port: 8000,
     // host: '0.0.0.0',
     host: false,
+    qrcode: true, // only host not false works
     open: true, // NOTE: pm2 or pm2 cron restart will open also
   },
   username: 'oeyoews',
@@ -12,7 +13,6 @@ module.exports = {
   wiki: 'src',
   // wiki: 'src-dev',
   markdown: true,
-  qrcode: false,
   tiddlersRepo: 'oeyoews/neotw-tiddlers',
   pluginversion: '5.3.0',
 };
