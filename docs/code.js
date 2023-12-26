@@ -34,6 +34,7 @@ wiki.addTiddler(
     text: 'text content',
   }),
 );
+
 wiki.addTiddler({
   title: 'title content',
   text: 'text content',
