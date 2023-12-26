@@ -17,7 +17,6 @@ class NotebookResizer extends Widget {
     this.NOTEBOOK = 'notebook';
     this.LEFT = 'left';
     this.RIGHT = 'right';
-
     // default
     this.defaultWidthTiddler =
       '$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth';
@@ -42,6 +41,15 @@ class NotebookResizer extends Widget {
     this.notebookWidthTiddler = '$:/themes/nico/notebook/metrics/sidebar-width';
     this.positionTiddler = '$:/themes/nico/notebook/metrics/sidebar-position';
     this.notebookStateSidebar = '$:/state/notebook-sidebar';
+    // listen tiddlers
+    this.listenTiddlers = [
+      this.positionTiddler,
+      '$:/language',
+      '$:/layout',
+      this.themeTiddler,
+      this.whitespace.positionTiddler,
+      this.sidebarLayoutTiddler,
+    ];
   }
 
   render(parent, nextSibling) {
@@ -124,6 +132,9 @@ class NotebookResizer extends Widget {
     }
 
     if (this.theme === this.whitespace.name) {
+      if (!$tw.wiki.tiddlerExists(this.whitespace.positionTiddler)) {
+        return this.LEFT;
+      }
       return this.getText(this.whitespace.positionTiddler);
     }
 
@@ -131,6 +142,7 @@ class NotebookResizer extends Widget {
       return this.RIGHT;
     }
 
+    // notebook
     if (!$tw.wiki.tiddlerExists(this.positionTiddler)) {
       return this.LEFT;
     }
@@ -202,18 +214,16 @@ class NotebookResizer extends Widget {
     }
   }
 
+  shouldRefresh(changedTiddlers, tiddlerList) {
+    const changedKeys = Object.keys(changedTiddlers);
+    return tiddlerList.some((tiddler) => changedKeys.includes(tiddler));
+  }
+
   refresh(changedTiddlers) {
     // TODO: refresh on change tw languages
-    const tiddlers = Object.keys(changedTiddlers);
-    if (
-      tiddlers.includes(this.positionTiddler) ||
-      tiddlers.includes('$:/language') ||
-      tiddlers.includes('$:/layout') ||
-      tiddlers.includes(this.themeTiddler) ||
-      tiddlers.includes(this.whitespace.positionTiddler) ||
-      tiddlers.includes(this.sidebarLayoutTiddler)
-    ) {
+    if (this.shouldRefresh(changedTiddlers, this.listenTiddlers)) {
       this.refreshSelf();
+      console.warn('refresh', new Date());
       return true;
     }
     return false;
