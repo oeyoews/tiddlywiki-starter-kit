@@ -4,7 +4,7 @@ title: $:/plugins/oeyoews/notebook-theme-sidebar-resizer/readme
 
 > support left/right sidebar resizer
 
-> 最初仅仅是为了支持 notebook theme 而写的 sidebar resizer, 后来开始支持 vanilla, captivate.
+> 最初仅仅是为了支持 notebook theme 而写的 sidebar resizer, 后来开始支持 vanilla, captivate, whitespace 等主题.
 
 <!-- 在切换主题时，theme 会覆盖掉同名非系统文件，所以需要手动修改 -->
 
@@ -19,6 +19,8 @@ need add `<$nbresizer />` in [[$:/themes/cdr/captivate/ui/SideBar]] tiddler.
 ```
 
 !! For Whitespace theme
+
+> whitespace theme for two 5.1.17 and 5.1.22 version, if use latest version, maybe have some ui problems.
 
 need add `<$nbresizer />` in [[$:/themes/jd/Whitespace/template/sidebar]] tiddler.
 
