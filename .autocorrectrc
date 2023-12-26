@@ -6,7 +6,7 @@ rules:
   space-word: 1
   # Add space between some punctuations.
   space-punctuation: 1
-  # Add space between brackets (), [] when near the CJK.(中文)中文
+  # Add space between brackets (), [] when near the CJK.中文(中文)中文
   space-bracket: 2
   # Add space between ``, when near the CJK.
   space-backticks: 0
