@@ -1,0 +1,1 @@
+var d=Array.from({length:75},(t,r)=>String.fromCharCode(r+48)).filter(t=>/[A-Za-z0-9]/.test(t)).join(""),o=d;var p=(t=10)=>{let r="";for(let e=0;e<t;e++){let m=Math.floor(Math.random()*o.length);r+=o[m]}return r},u=(t=10)=>Math.random().toString(36).substring(2,t+2);export{u as getRandomLowercaseString,p as getRandomString};
