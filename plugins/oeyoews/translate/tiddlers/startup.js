@@ -23,7 +23,7 @@ exports.startup = () => {
     $tw.wiki.addTiddler({
       title: newTitle,
       text,
-      translate: yes,
+      translate: 'yes',
     });
     const story = new $tw.Story();
     story.navigateTiddler(newTitle);
