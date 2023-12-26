@@ -63,6 +63,9 @@ class QRCodeWidget extends Widget {
       }
     }
 
+    if (!textcontent) {
+      return;
+    }
     QRCode.toString(
       textcontent,
       {
