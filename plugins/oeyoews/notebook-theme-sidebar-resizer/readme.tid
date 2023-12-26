@@ -8,7 +8,7 @@ title: $:/plugins/oeyoews/notebook-theme-sidebar-resizer/readme
 
 <!-- 在切换主题时，theme 会覆盖掉同名非系统文件，所以需要手动修改 -->
 
-!! for captivate theme
+!! For captivate theme
 
 need add `<$nbresizer />` in [[$:/themes/cdr/captivate/ui/SideBar]] tiddler.
 
@@ -17,3 +17,14 @@ need add `<$nbresizer />` in [[$:/themes/cdr/captivate/ui/SideBar]] tiddler.
 <!-- here -->
 <$nbresizer />
 ```
+
+!! For Whitespace theme
+
+
+
+!! Recipes
+
+* 一些主题模板没有写过滤条件, 如果你修改了主题的模板 tiddler, 导致了产生了 shadow tiddler, 就会导致在切换到其他主题的情况下, 会受到 shadow tiddler 的影响,
+建议学习 captive 作者的用法.
+
+* 之所以部分主题需要手动修改 tiddler, 是因为他们的 sidebar 模板是写死的, 无法通过动态嵌入 tiddler. 这一点建议先 notebook theme 学习
