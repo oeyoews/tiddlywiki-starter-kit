@@ -9,7 +9,7 @@ module.exports = {
     open: false, // NOTE: pm2 or pm2 cron restart will open also
   },
   username: 'oeyoews',
-  password: 'oeyoews',
+  // password: 'oeyoews',
   output: '.tiddlywiki',
   wiki: 'src',
   // wiki: 'src-dev',
