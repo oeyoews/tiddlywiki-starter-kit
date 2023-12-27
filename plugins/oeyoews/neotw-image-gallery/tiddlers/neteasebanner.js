@@ -26,7 +26,7 @@ class BannersWidget extends Widget {
     const twimageobserver = require('../neotw-notion-gallery/twimageobserver.js');
 
     const loading = createElement('div', {
-      class: 'bg-gray-200 rounded w-full h-48 animate-pulse',
+      class: 'bg-gray-200 rounded w-full h-48 animate-pulse'
     });
     parent.insertBefore(loading, nextSibling);
     this.domNodes.push(loading);
@@ -44,7 +44,7 @@ class BannersWidget extends Widget {
 
     const domNode = createElement('div', {
       class: 'grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4',
-      children,
+      children
     });
     parent.insertBefore(domNode, nextSibling);
     this.domNodes.push(domNode);

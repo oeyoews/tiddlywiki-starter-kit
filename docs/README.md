@@ -188,9 +188,9 @@ const div = createElement('div', {
   class: 'm-2',
   text: 'this is a div node',
   attributes: {
-    title: 'tooptip',
+    title: 'tooptip'
   },
-  children: [divNode1, divNode2, xxx],
+  children: [divNode1, divNode2, xxx]
 });
 ```
 

@@ -47,20 +47,20 @@ class ArtPlayerWidget extends Widget {
       fastForward: true,
       autoPlayback: true, // 保存在了 localstorage
       autoOrientation: true,
-      airplay: true,
+      airplay: true
     };
 
     const createElement = $tw.utils.domMaker;
     const playerContainer = createElement('div', {
       class: 'w-[680px] aspect-video',
       attributes: {
-        id: 'artplayer-app',
-      },
+        id: 'artplayer-app'
+      }
     });
 
     const domNode = createElement('div', {
       class: 'flex justify-center items-center',
-      children: [playerContainer],
+      children: [playerContainer]
     });
 
     parent.insertBefore(domNode, nextSibling);
@@ -70,7 +70,7 @@ class ArtPlayerWidget extends Widget {
       container: '#artplayer-app',
       url,
       ...options,
-      id: url,
+      id: url
     });
   }
 }

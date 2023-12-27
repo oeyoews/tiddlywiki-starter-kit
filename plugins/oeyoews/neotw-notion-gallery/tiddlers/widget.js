@@ -27,7 +27,7 @@ class CardsWidget extends Widget {
     const logger = new $tw.utils.Logger('neotw-notion-gallery');
     if (!$tw.modules.titles['tailwindcss.min.js']) {
       logger.alert(
-        "The plugin 'oeyoews/neotw-notion-gallery' requires the 'tiddlywiki/tailwindcss-plus' plugin to be installed",
+        "The plugin 'oeyoews/neotw-notion-gallery' requires the 'tiddlywiki/tailwindcss-plus' plugin to be installed"
       );
     }
     // one browser env
@@ -44,7 +44,7 @@ class CardsWidget extends Widget {
       this.parentWidget.dispatchEvent({
         type: 'tm-navigate',
         param: title,
-        navigateTo: title,
+        navigateTo: title
       });
       return false;
     };
@@ -55,13 +55,13 @@ class CardsWidget extends Widget {
       filter = this.subfilter,
       standard,
       count,
-      cols = 3,
+      cols = 3
     } = this.attributes;
 
     this.count = count;
 
     const cardsTiddlers = this.removedFilterDraftTiddlers(
-      filter || this.subfilter,
+      filter || this.subfilter
     );
 
     const prepareCardData = (tiddlers) => {
@@ -77,7 +77,7 @@ class CardsWidget extends Widget {
           title: fields?.title,
           caption: fields?.caption,
           cover,
-          icon,
+          icon
         };
       });
     };
@@ -96,7 +96,7 @@ class CardsWidget extends Widget {
         cover,
         navigate,
         icon,
-        standard,
+        standard
       );
       container.appendChild(item);
       twimageobserver.observe(imageNode);
@@ -114,7 +114,7 @@ class CardsWidget extends Widget {
       this.removedDraftTiddlers(Object.keys(changedTiddlers));
 
     let isChanged = valuesToCheck.some((value) =>
-      cardsTiddlers.includes(value),
+      cardsTiddlers.includes(value)
     );
     // TODO: 如果删除了 tiddler, 需要监听长度的变化进行渲染
     // 可以存储第一次渲染的 tiddler 列表，如果删除则需要重新渲染，但是这样不利于以后扩展动态 filter

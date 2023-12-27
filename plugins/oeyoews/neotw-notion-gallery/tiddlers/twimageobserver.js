@@ -34,7 +34,7 @@ const imagecallback = (entries, observer) => {
 const imagecallbackoptions = {
   root: null,
   rootMargin: '0px',
-  threshold: 0.3, // 当图片 50% 进入可视区域时加载};
+  threshold: 0.3 // 当图片 50% 进入可视区域时加载};
 };
 
 module.exports = new IntersectionObserver(imagecallback, imagecallbackoptions);

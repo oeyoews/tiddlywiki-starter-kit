@@ -27,14 +27,14 @@ class SkillIconsWidget extends Widget {
       children.push(
         createElement('img', {
           attributes: {
-            src: icon,
-          },
-        }),
+            src: icon
+          }
+        })
       );
     });
 
     const domNode = createElement('div', {
-      children,
+      children
     });
 
     parent.insertBefore(domNode, nextSibling);

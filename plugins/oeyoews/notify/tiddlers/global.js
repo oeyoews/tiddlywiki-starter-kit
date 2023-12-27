@@ -24,11 +24,7 @@ class NotifyWidget {
     };
 
     this.notifyInstance = new TWNotify(
-      Object.assign(
-        {},
-        defaultOptions,
-        convertBooleanStringsToBoolean(options),
-      ),
+      Object.assign({}, defaultOptions, convertBooleanStringsToBoolean(options))
     );
   }
 

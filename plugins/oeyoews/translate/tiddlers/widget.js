@@ -22,7 +22,7 @@ class ExampleWidget extends Widget {
     const createElement = $tw.utils.domMaker;
 
     const domNode = createElement('button', {
-      text: 'translate',
+      text: 'translate'
     });
 
     domNode.addEventListener('click', () => this.translate());

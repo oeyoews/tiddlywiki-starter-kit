@@ -27,20 +27,20 @@ class VideoWidget extends Widget {
       url, // TODO: support youtube url directly(not embed url, use replace to adjudge that)
       bvid,
       yid = youtubeId,
-      title,
+      title
     } = this.attributes;
 
     // 创建一个对象来映射不同视频来源
     const videoSources = {
       youtube: {
         prefix: 'https://www.youtube.com/embed/',
-        id: yid,
+        id: yid
       },
       bilibili: {
         prefix: 'https://player.bilibili.com/player.html?bvid=',
         // aid=792307371&bvid=BV1LC4y1Q7Kr&cid=1366942100
-        id: bvid,
-      },
+        id: bvid
+      }
     };
 
     const isBilibili = this.hasAttribute('bvid');
@@ -66,14 +66,14 @@ class VideoWidget extends Widget {
       class: 'border-none shadow rounded-lg',
       allowsInlineMediaPlayback: 'true',
       playsinline: '1',
-      title: this.getVariable('currentTiddler') || 'video',
+      title: this.getVariable('currentTiddler') || 'video'
     };
 
     const iframeNode = this.document.createElement('iframe');
 
     const domNode = createElement('div', {
       class: 'my-4 blur hover:blur-none transition mx-auto text-center',
-      children: [iframeNode],
+      children: [iframeNode]
     });
 
     Object.entries(iframeAttributes).forEach(([key, value]) => {

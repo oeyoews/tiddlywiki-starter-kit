@@ -31,13 +31,13 @@ $tw.utils.domMaker; // createElement
 wiki.addTiddler(
   new $tw.Tiddler({
     title: 'title content',
-    text: 'text content',
-  }),
+    text: 'text content'
+  })
 );
 
 wiki.addTiddler({
   title: 'title content',
-  text: 'text content',
+  text: 'text content'
 });
 // https://github.com/Jermolene/TiddlyWiki5/blob/4b56cb42983d4134715eb7fe7b083fdcc04980f0/core/modules/startup/rootwidget.js#L58
 $tw.notifier.display(tiddler); // send notification
@@ -97,7 +97,7 @@ exports.toggleClass = function (el, className, status) {
   clearTimeout,
   Buffer,
   $tw,
-  require,
+  require
 ) {
   (function () {
     /*\
@@ -132,11 +132,11 @@ const icon = $tw.wiki.renderText(
   'text/vnd.tiddlywiki',
   '<$iconify />',
   {
-    parseAsInline: true, // no extra tag
-  },
+    parseAsInline: true // no extra tag
+  }
 );
 
 // disable timestamp
 $tw.wiki.setText(title, null, null, formatedText, {
-  suppressTimestamp: true,
+  suppressTimestamp: true
 });

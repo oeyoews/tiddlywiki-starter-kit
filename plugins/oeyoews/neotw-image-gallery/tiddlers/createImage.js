@@ -19,8 +19,8 @@ module.exports = function createImage(title, src, standard = true) {
     attributes: {
       ['data-src']: src,
       title,
-      loading: 'lazy',
-    },
+      loading: 'lazy'
+    }
   });
 
   standard === 'false' && imageNode.classList.remove('aspect-video');

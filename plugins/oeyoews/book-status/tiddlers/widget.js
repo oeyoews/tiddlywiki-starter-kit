@@ -43,7 +43,7 @@ class BookStatusWidget extends Widget {
 
   updateStatus(bookname, title) {
     this.parentWidget.dispatchEvent({
-      type: 'om-nprogress',
+      type: 'om-nprogress'
     });
     if (title.startsWith('Draft of') || !bookname) return;
     const wiki = $tw.wiki;
@@ -54,7 +54,7 @@ class BookStatusWidget extends Widget {
         type: 'application/json',
         title: this.bookstatusfilename,
         'meta#disabled': 'yes', // disable meta file
-        text: '',
+        text: ''
       });
     }
     const key = `${bookname}/${title}`;
@@ -66,8 +66,8 @@ class BookStatusWidget extends Widget {
     this.statuses.set(key, newStatus);
     const obj = {
       [bookname]: {
-        [title]: newStatus,
-      },
+        [title]: newStatus
+      }
     };
     mergeObj(defaultconfig, obj);
     wiki.setText(
@@ -76,23 +76,23 @@ class BookStatusWidget extends Widget {
       null,
       JSON.stringify(defaultconfig),
       {
-        suppressTimestamp: true,
-      },
+        suppressTimestamp: true
+      }
     );
     this.parentWidget.dispatchEvent({
       type: 'om-notify',
       paramObject: {
         status: newStatus === BookStatusWidget.STATUS_READ ? 'success' : 'info',
         title,
-        text: `更新状态：${newStatus}`,
-      },
+        text: `更新状态：${newStatus}`
+      }
     });
     this.btn.removeEventListener('click', () =>
-      this.updateStatus(bookname, title),
+      this.updateStatus(bookname, title)
     );
     this.refreshSelf();
     this.parentWidget.dispatchEvent({
-      type: 'om-nprogress-done',
+      type: 'om-nprogress-done'
     });
   }
 
@@ -115,16 +115,16 @@ class BookStatusWidget extends Widget {
         : 'text-rose-400';
     this.btn = createElement('button', {
       text: status,
-      class: `p-2 ${statusClass}`,
+      class: `p-2 ${statusClass}`
     });
 
     this.btn.addEventListener('click', () =>
-      this.updateStatus(bookname, title),
+      this.updateStatus(bookname, title)
     );
 
     const domNode = createElement('div', {
       class: 'flex justify-end',
-      children: [this.btn],
+      children: [this.btn]
     });
 
     parent.insertBefore(domNode, nextSibling);

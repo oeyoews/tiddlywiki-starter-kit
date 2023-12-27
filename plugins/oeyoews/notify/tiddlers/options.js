@@ -19,5 +19,5 @@ module.exports = {
   gap: 20,
   distance: 20,
   type: 1, // 1, 2, 3
-  position: 'right top', // top bottom center // left right
+  position: 'right top' // top bottom center // left right
 };

@@ -14,10 +14,10 @@ export default function generateTiddlyWikiInfo() {
       'A modern style and elegant notebook built with Tiddlywiki5 and Tailwindcss',
     themes: [
       'tiddlywiki/vanilla', // vanilla 主题, 必选
-      'nico/notebook', // nico 主题, 必选
+      'nico/notebook' // nico 主题, 必选
     ],
     includeWikis: [
-      { 'read-only': false, path: wikiLocation },
+      { 'read-only': false, path: wikiLocation }
       // TODO: 动态检查目录是否存在以及是否是一个wiki
       // {
       //   'read-only': true,
@@ -30,14 +30,14 @@ export default function generateTiddlyWikiInfo() {
     config: {
       'retain-original-tiddler-path': false,
       // NOTE: 注意不再兼容tiddlers文件
-      'default-tiddler-location': `${wikiLocation}/tiddlers`, // 不是读取tiddler文件夹的地方, 而是保存到的文件夹
-    },
+      'default-tiddler-location': `${wikiLocation}/tiddlers` // 不是读取tiddler文件夹的地方, 而是保存到的文件夹
+    }
   };
 
   const tiddlywikiInfoPath = path.join('tiddlywiki.info');
 
   fs.writeFileSync(
     tiddlywikiInfoPath,
-    JSON.stringify(tiddlywikiConfig, null, 2),
+    JSON.stringify(tiddlywikiConfig, null, 2)
   );
 }

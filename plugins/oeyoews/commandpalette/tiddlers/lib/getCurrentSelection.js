@@ -14,12 +14,12 @@ module.exports = function getCurrentSelection() {
   if (activeElement.selectionStart > activeElement.selectionEnd) {
     return activeElement.value.substring(
       activeElement.selectionStart,
-      activeElement.selectionEnd,
+      activeElement.selectionEnd
     );
   } else {
     return activeElement.value.substring(
       activeElement.selectionEnd,
-      activeElement.selectionStart,
+      activeElement.selectionStart
     );
   }
 };

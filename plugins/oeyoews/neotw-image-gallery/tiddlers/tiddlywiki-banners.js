@@ -35,7 +35,7 @@ class BannersWidget extends Widget {
 
     const imageURLs = versions.map((version) => ({
       title: version,
-      src: `${urlPrefix}/${version}.png?raw=true`,
+      src: `${urlPrefix}/${version}.png?raw=true`
     }));
 
     imageURLs.forEach(({ title, src }) => {
@@ -46,7 +46,7 @@ class BannersWidget extends Widget {
 
     const domNode = createElement('div', {
       class: 'grid grid-cols-1 md:grid-cols-3 gap-4',
-      children,
+      children
     });
 
     parent.insertBefore(domNode, nextSibling);

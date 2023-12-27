@@ -43,7 +43,7 @@ class HitokotoWidget extends Widget {
         this.dispatchEvent({
           type: 'tm-navigate',
           param: title,
-          navigateTo: title,
+          navigateTo: title
         });
       });
       timeNode.className =
@@ -61,7 +61,7 @@ class HitokotoWidget extends Widget {
     });
 
     const domNode = createElement('div', {
-      children,
+      children
     });
 
     parent.insertBefore(domNode, nextSibling);

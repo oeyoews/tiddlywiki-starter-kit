@@ -10,5 +10,5 @@ module.exports = {
   // minCards: 9,
   maxCards: 30,
   resoultion: '1920x1080',
-  imageSource: 'https://source.unsplash.com/random',
+  imageSource: 'https://source.unsplash.com/random'
 };

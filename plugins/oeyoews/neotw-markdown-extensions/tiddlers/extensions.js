@@ -23,7 +23,7 @@ exports.startup = () => {
     'github-alert',
     'pangu',
     'smartarrows',
-    'front-matter',
+    'front-matter'
   ];
 
   extensions.forEach((extension) => {

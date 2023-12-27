@@ -30,7 +30,7 @@ class CommandPaletteWidget extends Widget {
       showHistoryOnOpen: true,
       escapeGoesBack: true,
       alwaysPassSelection: true,
-      theme: '$:/plugins/oeyoews/commandpalette/Compact.css',
+      theme: '$:/plugins/oeyoews/commandpalette/Compact.css'
     };
     this.settings = {};
     this.commandHistoryPath =
@@ -64,7 +64,7 @@ class CommandPaletteWidget extends Widget {
     this.currentProvider = () => {};
     this.currentResolver = (e) => {
       this.invokeActionString(action, this, e, {
-        commandpaletteinput: this.searchContainer.value,
+        commandpaletteinput: this.searchContainer.value
       });
       this.closePalette();
     };
@@ -129,7 +129,7 @@ class CommandPaletteWidget extends Widget {
           themeName,
           'tm-remove-tag',
           '$:/tags/Stylesheet',
-          e,
+          e
         );
       }
     }
@@ -155,22 +155,22 @@ class CommandPaletteWidget extends Widget {
         this.refreshCommandPalette();
         this.promptCommand('');
       },
-      keepPalette: true,
+      keepPalette: true
     });
     this.actions.push({
       name: 'Explorer',
       action: (e) => this.explorer(e),
-      keepPalette: true,
+      keepPalette: true
     });
     this.actions.push({
       name: 'See History',
       action: (e) => this.showHistory(e),
-      keepPalette: true,
+      keepPalette: true
     });
     this.actions.push({
       name: 'New Command Wizard',
       action: (e) => this.newCommandWizard(e),
-      keepPalette: true,
+      keepPalette: true
     });
     this.actions.push({
       name: 'Add tag to tiddler',
@@ -181,12 +181,12 @@ class CommandPaletteWidget extends Widget {
           'Pick tag to add (⇧⏎ to add multiple)',
           (tiddler, terms) =>
             $tw.wiki.filterTiddlers(
-              `[!is[system]tags[]] [is[system]tags[]] -[[${tiddler}]tags[]] +[search[${terms}]]`,
+              `[!is[system]tags[]] [is[system]tags[]] -[[${tiddler}]tags[]] +[search[${terms}]]`
             ),
           true,
-          'tm-add-tag',
+          'tm-add-tag'
         ),
-      keepPalette: true,
+      keepPalette: true
     });
     this.actions.push({
       name: 'Remove tag',
@@ -198,9 +198,9 @@ class CommandPaletteWidget extends Widget {
           (tiddler, terms) =>
             $tw.wiki.filterTiddlers(`[[${tiddler}]tags[]] +[search[${terms}]]`),
           false,
-          'tm-remove-tag',
+          'tm-remove-tag'
         ),
-      keepPalette: true,
+      keepPalette: true
     });
 
     let commandTiddlers = getTiddlersWithTag(this.customCommandsTag);
@@ -228,7 +228,7 @@ class CommandPaletteWidget extends Widget {
           name: name,
           action: () => this.promptCommand(textFirstLine, caret),
           keepPalette: !immediate,
-          immediate: immediate,
+          immediate: immediate
         };
         this.actions.push(action);
         continue;
@@ -238,7 +238,7 @@ class CommandPaletteWidget extends Widget {
         let action = {
           name: name,
           action: () => this.promptCommandBasic(textFirstLine, caret, hint),
-          keepPalette: true,
+          keepPalette: true
         };
         let prefix = tiddler.fields[this.prefixField];
         if (prefix !== undefined) {
@@ -246,10 +246,10 @@ class CommandPaletteWidget extends Widget {
             provider: this.prefixedBasicProviderBuilder(
               textFirstLine,
               caret,
-              hint,
+              hint
             ),
             //resolver is set in provider after parsing the input without the prefix
-            resolver: undefined,
+            resolver: undefined
           };
           this.prefixes.push({ prefix, hint });
         }
@@ -259,7 +259,7 @@ class CommandPaletteWidget extends Widget {
       if (type === 'message') {
         this.actions.push({
           name: name,
-          action: (e) => this.tmMessageBuilder(textFirstLine)(e),
+          action: (e) => this.tmMessageBuilder(textFirstLine)(e)
         });
         continue;
       }
@@ -271,12 +271,12 @@ class CommandPaletteWidget extends Widget {
           this.actions.push({
             name: name,
             action: (e) => this.actionStringInput(text, hint, e),
-            keepPalette: true,
+            keepPalette: true
           });
         } else {
           this.actions.push({
             name: name,
-            action: (e) => this.actionStringBuilder(text)(e),
+            action: (e) => this.actionStringBuilder(text)(e)
           });
         }
         continue;
@@ -287,7 +287,7 @@ class CommandPaletteWidget extends Widget {
           name: name,
           action: (e) =>
             this.commandWithHistoryPicker(textFirstLine, hint, mode).handler(e),
-          keepPalette: true,
+          keepPalette: true
         });
         continue;
       }
@@ -312,7 +312,7 @@ class CommandPaletteWidget extends Widget {
           [this.typeField]: type,
           [this.nameField]: name,
           [this.hintField]: hint,
-          text: this.searchContainer.value,
+          text: this.searchContainer.value
         })(e);
         this.closePalette();
       };
@@ -340,7 +340,7 @@ class CommandPaletteWidget extends Widget {
             title: '$:/' + name,
             tags: this.customCommandsTag,
             [this.typeField]: type,
-            [this.nameField]: name,
+            [this.nameField]: name
           })(e);
           this.closePalette();
         }
@@ -383,7 +383,7 @@ class CommandPaletteWidget extends Widget {
     this.currentSelection = 0;
     let search = this.searchContainer.value.substr(url.length);
     let tiddlers = $tw.wiki.filterTiddlers(
-      `[removeprefix[${url}]splitbefore[/]sort[]search[${search}]]`,
+      `[removeprefix[${url}]splitbefore[/]sort[]search[${search}]]`
     );
     let folders = [];
     let files = [];
@@ -391,7 +391,7 @@ class CommandPaletteWidget extends Widget {
       if (tiddler.endsWith('/')) {
         folders.push({
           name: tiddler,
-          action: (e) => switchFolder(`${url}${tiddler}`),
+          action: (e) => switchFolder(`${url}${tiddler}`)
         });
       } else {
         files.push({
@@ -401,7 +401,7 @@ class CommandPaletteWidget extends Widget {
             if (!e.getModifierState('Shift')) {
               this.closePalette();
             }
-          },
+          }
         });
       }
     }
@@ -431,7 +431,7 @@ class CommandPaletteWidget extends Widget {
   refreshSettings() {
     //get user or default settings
     this.settings = $tw.wiki.getTiddlerData(this.settingsPath, {
-      ...this.defaultSettings,
+      ...this.defaultSettings
     });
     //Adding eventual missing properties to current user settings
     for (let prop in this.defaultSettings) {
@@ -455,51 +455,51 @@ class CommandPaletteWidget extends Widget {
     this.parentDomNode = parent;
     this.execute();
     this.history = $tw.wiki.getTiddlerData(this.commandHistoryPath, {
-      history: [],
+      history: []
     }).history;
 
     $tw.rootWidget.addEventListener('open-command-palette', (e) =>
-      this.openPalette(e),
+      this.openPalette(e)
     );
     $tw.rootWidget.addEventListener('open-command-palette-selection', (e) =>
-      this.openPaletteSelection(e),
+      this.openPaletteSelection(e)
     );
     $tw.rootWidget.addEventListener('insert-command-palette-result', (e) =>
-      this.insertSelectedResult(e),
+      this.insertSelectedResult(e)
     );
 
     let inputAndMainHintWrapper = createElement('div', {
-      class: 'flex justify-center items-center p-2',
+      class: 'flex justify-center items-center p-2'
     });
     // pointer-events-none fix z-index bug
     // backdrop-blur not effect with bg-neutral-600
     this.mask = createElement('div', {
       class:
-        'opacity-0 backdrop-blur-lg z-[9998] fixed inset-0 bg-black/20 transition-all pointer-events-none cursor-pointer',
+        'opacity-0 backdrop-blur-lg z-[9998] fixed inset-0 bg-black/20 transition-all pointer-events-none cursor-pointer'
     });
     this.container = createElement('div', {
       class:
-        'hidden bg-white flex-col z-[9999] transform shadow-lg p-2 mt-4 fixed left-1/2 -translate-x-1/2 w-1/2 rounded transition-all dark:invert w-3/4 md:w-1/2',
+        'hidden bg-white flex-col z-[9999] transform shadow-lg p-2 mt-4 fixed left-1/2 -translate-x-1/2 w-1/2 rounded transition-all dark:invert w-3/4 md:w-1/2'
     });
     // if add type: "text", google-chrome always tip
     this.searchContainer = createElement('input', {
       type: '',
       class: 'w-full shadow-none border-none bg-transparent',
       attributes: {
-        placeholder: '🔥 Search ...',
-      },
+        placeholder: '🔥 Search ...'
+      }
     });
     this.searchHint = createElement('div', {
-      class: 'commandpalettehint commandpalettehintmain',
+      class: 'commandpalettehint commandpalettehintmain'
     });
     inputAndMainHintWrapper.append(this.searchHint, this.searchContainer);
     this.scrollDiv = createElement('div', {
-      class: 'cp-scroll',
+      class: 'cp-scroll'
     });
     this.container.append(inputAndMainHintWrapper, this.scrollDiv);
     this.searchContainer.addEventListener('keydown', (e) => this.onKeyDown(e));
     this.searchContainer.addEventListener('input', () =>
-      this.onInput(this.searchContainer.value),
+      this.onInput(this.searchContainer.value)
     );
     window.addEventListener('click', (e) => this.onClick(e));
 
@@ -510,31 +510,31 @@ class CommandPaletteWidget extends Widget {
 
     this.symbolProviders['>'] = {
       provider: (terms) => this.actionProvider(terms),
-      resolver: (e) => this.actionResolver(e),
+      resolver: (e) => this.actionResolver(e)
     };
     this.symbolProviders['#'] = {
       provider: (terms) => this.tagListProvider(terms),
-      resolver: (e) => this.tagListResolver(e),
+      resolver: (e) => this.tagListResolver(e)
     };
     this.symbolProviders['@'] = {
       provider: (terms) => this.tagProvider(terms),
-      resolver: (e) => this.defaultResolver(e),
+      resolver: (e) => this.defaultResolver(e)
     };
     this.symbolProviders['?'] = {
       provider: (terms) => this.helpProvider(terms),
-      resolver: (e) => this.helpResolver(e),
+      resolver: (e) => this.helpResolver(e)
     };
     this.symbolProviders['['] = {
       provider: (terms, hint) => this.filterProvider(terms, hint),
-      resolver: (e) => this.filterResolver(e),
+      resolver: (e) => this.filterResolver(e)
     };
     this.symbolProviders['+'] = {
       provider: (terms) => this.createTiddlerProvider(terms),
-      resolver: (e) => this.createTiddlerResolver(),
+      resolver: (e) => this.createTiddlerResolver()
     };
     this.symbolProviders['|'] = {
       provider: (terms) => this.settingsProvider(terms),
-      resolver: (e) => this.settingsResolver(),
+      resolver: (e) => this.settingsResolver()
     };
     this.currentResults = [];
     this.currentProvider = {};
@@ -546,7 +546,7 @@ class CommandPaletteWidget extends Widget {
     steps = steps.steps;
     for (let step of steps) {
       this.searchSteps.push(
-        this.searchStepBuilder(step.filter, step.caret, step.hint),
+        this.searchStepBuilder(step.filter, step.caret, step.hint)
       );
     }
   }
@@ -561,7 +561,7 @@ class CommandPaletteWidget extends Widget {
   updateCommandHistory(command) {
     this.history = Array.from(new Set([command.name, ...this.history]));
     $tw.wiki.setTiddlerData(this.commandHistoryPath, {
-      history: this.history,
+      history: this.history
     });
   }
 
@@ -600,14 +600,14 @@ class CommandPaletteWidget extends Widget {
       this.parentWidget.dispatchEvent({
         type: message,
         param: title,
-        tiddlerTitle: title,
+        tiddlerTitle: title
       });
       this.closePalette();
     };
     return {
       handler,
       provider,
-      resolver,
+      resolver
     };
   }
   onInput(text) {
@@ -631,10 +631,10 @@ class CommandPaletteWidget extends Widget {
     if (shortcut !== undefined) {
       resolver = (e) => {
         let inputWithoutShortcut = this.searchContainer.value.substr(
-          shortcut.trigger.length,
+          shortcut.trigger.length
         );
         this.invokeActionString(shortcut.text, this, e, {
-          commandpaletteinput: inputWithoutShortcut,
+          commandpaletteinput: inputWithoutShortcut
         });
         this.closePalette();
       };
@@ -685,7 +685,7 @@ class CommandPaletteWidget extends Widget {
       element: activeElement,
       start: activeElement.selectionStart,
       end: activeElement.selectionEnd,
-      caretPos: activeElement.selectionEnd,
+      caretPos: activeElement.selectionEnd
     };
     this.searchContainer.value = '';
     if (e.param !== undefined) {
@@ -740,7 +740,7 @@ class CommandPaletteWidget extends Widget {
     this.isOpened = false;
     focusAtCaretPosition(
       this.previouslyFocused.element,
-      this.previouslyFocused.caretPos,
+      this.previouslyFocused.caretPos
     );
 
     // 打开命令面板时，启用滚动
@@ -789,12 +789,12 @@ class CommandPaletteWidget extends Widget {
   addResult(result, id) {
     let resultDiv = createElement('div', {
       class: 'commandpaletteresult py-2 rounded',
-      text: result.name,
+      text: result.name
     });
     if (result.hint !== undefined) {
       let hint = createElement('div', {
         class: 'commandpalettehint text-neutral-600',
-        text: result.hint,
+        text: result.hint
       });
       resultDiv.append(hint);
     }
@@ -825,7 +825,7 @@ class CommandPaletteWidget extends Widget {
     this.parentWidget.dispatchEvent({
       type: 'tm-navigate',
       param: title,
-      navigateTo: title,
+      navigateTo: title
     });
   }
 
@@ -844,7 +844,7 @@ class CommandPaletteWidget extends Widget {
           action: () => {
             this.navigateTo(r);
             this.closePalette();
-          },
+          }
         };
       });
       this.showResults(results);
@@ -906,10 +906,10 @@ class CommandPaletteWidget extends Widget {
     }
     history = [
       ...history.reverse().map((x) => x.title),
-      ...$tw.wiki.filterTiddlers('[list[$:/StoryList]]'),
+      ...$tw.wiki.filterTiddlers('[list[$:/StoryList]]')
     ];
     return Array.from(
-      new Set(history.filter((t) => this.tiddlerOrShadowExists(t))),
+      new Set(history.filter((t) => this.tiddlerOrShadowExists(t)))
     );
   }
 
@@ -953,7 +953,7 @@ class CommandPaletteWidget extends Widget {
     let searches;
     if (terms.length === 0) {
       searches = $tw.wiki.filterTiddlers(
-        '[!is[system]tags[]][is[system]tags[]][all[shadows]tags[]]',
+        '[!is[system]tags[]][is[system]tags[]][all[shadows]tags[]]'
       );
     } else {
       searches = $tw.wiki.filterTiddlers(
@@ -963,7 +963,7 @@ class CommandPaletteWidget extends Widget {
           terms +
           ']][all[shadows]tags[]search[' +
           terms +
-          ']]',
+          ']]'
       );
     }
     searches = searches.map((s) => {
@@ -989,7 +989,7 @@ class CommandPaletteWidget extends Widget {
     let searches = [];
     if (terms.length !== 0) {
       let { tags, searchTerms, tagsFilter } = this.parseTags(
-        this.searchContainer.value,
+        this.searchContainer.value
       );
       let taggedTiddlers = $tw.wiki.filterTiddlers(tagsFilter);
 
@@ -1040,50 +1040,50 @@ class CommandPaletteWidget extends Widget {
     this.showResults([
       {
         name: 'Theme (currently ' + this.settings.theme.match(/[^\/]*$/) + ')',
-        action: () => this.promptForThemeSetting(),
+        action: () => this.promptForThemeSetting()
       },
       this.settingResultBuilder(
         'Max results',
         'maxResults',
         'Choose the maximum number of results',
         isNumerical,
-        'Error: value must be a positive integer',
+        'Error: value must be a positive integer'
       ),
       this.settingResultBuilder(
         'Show history on open',
         'showHistoryOnOpen',
         'Chose whether to show the history when you open the palette',
         isBoolean,
-        "Error: value must be 'true' or 'false'",
+        "Error: value must be 'true' or 'false'"
       ),
       this.settingResultBuilder(
         'Escape to go back',
         'escapeGoesBack',
         'Chose whether ESC should go back when possible',
         isBoolean,
-        "Error: value must be 'true' or 'false'",
+        "Error: value must be 'true' or 'false'"
       ),
       this.settingResultBuilder(
         'Use selection as search query',
         'alwaysPassSelection',
         'Chose your current selection is passed to the command palette',
         isBoolean,
-        "Error: value must be 'true' or 'false'",
+        "Error: value must be 'true' or 'false'"
       ),
       this.settingResultBuilder(
         'Never Basic',
         'neverBasic',
         'Chose whether to override basic prompts to show filter operation',
         isBoolean,
-        "Error: value must be 'true' or 'false'",
+        "Error: value must be 'true' or 'false'"
       ),
       this.settingResultBuilder(
         'Field preview max size',
         'maxResultHintSize',
         'Choose the maximum hint length for field preview',
         isNumerical,
-        'Error: value must be a positive integer',
-      ),
+        'Error: value must be a positive integer'
+      )
     ]);
   }
 
@@ -1091,7 +1091,7 @@ class CommandPaletteWidget extends Widget {
     return {
       name: name + ' (currently ' + this.settings[settingName] + ')',
       action: () =>
-        this.promptForSetting(settingName, hint, validator, errorMsg),
+        this.promptForSetting(settingName, hint, validator, errorMsg)
     };
   }
 
@@ -1118,8 +1118,8 @@ class CommandPaletteWidget extends Widget {
           action: () => {
             this.setSetting('theme', defaultValue);
             this.refreshThemes();
-          },
-        },
+          }
+        }
       ];
       for (let theme of this.themes) {
         let name = theme.fields.title;
@@ -1150,8 +1150,8 @@ class CommandPaletteWidget extends Widget {
       let results = [
         {
           name: 'Revert to default value: ' + defaultValue,
-          action: () => this.setSetting(settingName, defaultValue),
-        },
+          action: () => this.setSetting(settingName, defaultValue)
+        }
       ];
       if (!validator(terms)) {
         results.push({ name: errorMsg });
@@ -1202,7 +1202,7 @@ class CommandPaletteWidget extends Widget {
       let event = {
         type: message,
         paramObject: params,
-        event: e,
+        event: e
       };
       this.parentWidget.dispatchEvent(event);
     };
@@ -1215,7 +1215,7 @@ class CommandPaletteWidget extends Widget {
       results = this.getCommandHistory();
     } else {
       results = this.actions.filter((a) =>
-        a.name.toLowerCase().includes(terms.toLowerCase()),
+        a.name.toLowerCase().includes(terms.toLowerCase())
       );
     }
     this.showResults(results);
@@ -1230,29 +1230,29 @@ class CommandPaletteWidget extends Widget {
       { name: '> Commands', action: () => this.promptCommand('>') },
       {
         name: '+ Create tiddler with title',
-        action: () => this.promptCommand('+'),
+        action: () => this.promptCommand('+')
       },
       { name: '# Search tags', action: () => this.promptCommand('#') },
       {
         name: '@ List tiddlers with tag',
-        action: () => this.promptCommand('@'),
+        action: () => this.promptCommand('@')
       },
       { name: '[ Filter operation', action: () => this.promptCommand('[') },
       {
         name: '| Command Palette Settings',
-        action: () => this.promptCommand('|'),
+        action: () => this.promptCommand('|')
       },
       {
         name: '\\ Escape first character',
-        action: () => this.promptCommand('\\'),
+        action: () => this.promptCommand('\\')
       },
-      { name: '? Help', action: () => this.promptCommand('?') },
+      { name: '? Help', action: () => this.promptCommand('?') }
     ];
     this.prefixes.forEach((p) =>
       searches.push({
         name: p.prefix + ' ' + p.hint,
-        action: () => this.promptCommand(p.prefix),
-      }),
+        action: () => this.promptCommand(p.prefix)
+      })
     );
     this.showResults(searches);
   }
@@ -1364,7 +1364,7 @@ class CommandPaletteWidget extends Widget {
 
   createTiddlerResolver(e) {
     let { tags, searchTerms } = this.parseTags(
-      this.searchContainer.value.substr(1),
+      this.searchContainer.value.substr(1)
     );
     let title = searchTerms.join(' ');
     tags = tags.join(' ');
@@ -1402,7 +1402,7 @@ class CommandPaletteWidget extends Widget {
     let end = value.substr(caret);
     return (input) => {
       let { resolver, provider, terms } = this.parseCommand(
-        start + input + end,
+        start + input + end
       );
       let backgroundProvider = provider;
       backgroundProvider(terms, hint);
@@ -1416,7 +1416,7 @@ class CommandPaletteWidget extends Widget {
     return (input) => {
       input = input.substring(prefixLength);
       let { resolver, provider, terms } = this.parseCommand(
-        start + input + end,
+        start + input + end
       );
       let backgroundProvider = provider;
       backgroundProvider(terms, hint);
@@ -1426,10 +1426,10 @@ class CommandPaletteWidget extends Widget {
 
   getCommandHistory() {
     this.history = this.history.filter((h) =>
-      this.actions.some((a) => a.name === h),
+      this.actions.some((a) => a.name === h)
     ); //get rid of deleted command that are still in history;
     let results = this.history.map((h) =>
-      this.actions.find((a) => a.name === h),
+      this.actions.find((a) => a.name === h)
     );
     while (results.length <= this.settings.maxResults) {
       let nextDefaultAction = this.actions.find((a) => !results.includes(a));
@@ -1441,8 +1441,7 @@ class CommandPaletteWidget extends Widget {
   actionResolver(e) {
     if (this.currentSelection === 0) return;
     let result = this.actions.find(
-      (a) =>
-        a.name === this.currentResults[this.currentSelection - 1].innerText,
+      (a) => a.name === this.currentResults[this.currentSelection - 1].innerText
     );
     if (result.keepPalette) {
       let curInput = this.searchContainer.value;

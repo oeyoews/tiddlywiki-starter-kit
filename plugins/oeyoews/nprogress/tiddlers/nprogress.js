@@ -14,7 +14,7 @@ class NprogressGlobal {
 
   configure(config) {
     const defaultConfig = {
-      showSpinner: true,
+      showSpinner: true
     };
     NProgress.configure(config || defaultConfig);
   }

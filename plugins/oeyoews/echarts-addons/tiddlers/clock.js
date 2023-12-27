@@ -11,7 +11,7 @@ const Clock = {
       title: {
         text: '',
         top: 'top',
-        left: 'center',
+        left: 'center'
       },
       series: [
         {
@@ -28,16 +28,16 @@ const Clock = {
               width: 8,
               color: [[1, 'rgba(0,0,0,0.7)']],
               shadowColor: 'rgba(0, 0, 0, 0.5)',
-              shadowBlur: 15,
-            },
+              shadowBlur: 15
+            }
           },
           splitLine: {
             lineStyle: {
               shadowColor: 'rgba(0, 0, 0, 0.3)',
               shadowBlur: 3,
               shadowOffsetX: 1,
-              shadowOffsetY: 2,
-            },
+              shadowOffsetY: 2
+            }
           },
           axisLabel: {
             fontSize: 16,
@@ -47,7 +47,7 @@ const Clock = {
                 return '';
               }
               return value + '';
-            },
+            }
           },
           pointer: {
             icon: 'path://M2.9,0.7L2.9,0.7c1.4,0,2.6,1.2,2.6,2.6v115c0,1.4-1.2,2.6-2.6,2.6l0,0c-1.4,0-2.6-1.2-2.6-2.6V3.3C0.3,1.9,1.4,0.7,2.9,0.7z',
@@ -59,20 +59,20 @@ const Clock = {
               shadowColor: 'rgba(0, 0, 0, 0.3)',
               shadowBlur: 8,
               shadowOffsetX: 2,
-              shadowOffsetY: 4,
-            },
+              shadowOffsetY: 4
+            }
           },
           detail: {
-            show: false,
+            show: false
           },
           title: {
-            offsetCenter: [0, '30%'],
+            offsetCenter: [0, '30%']
           },
           data: [
             {
-              value: 0,
-            },
-          ],
+              value: 0
+            }
+          ]
         },
         {
           name: 'minute',
@@ -83,16 +83,16 @@ const Clock = {
           max: 60,
           clockwise: true,
           axisLine: {
-            show: false,
+            show: false
           },
           splitLine: {
-            show: false,
+            show: false
           },
           axisTick: {
-            show: false,
+            show: false
           },
           axisLabel: {
-            show: false,
+            show: false
           },
           pointer: {
             icon: 'path://M2.9,0.7L2.9,0.7c1.4,0,2.6,1.2,2.6,2.6v115c0,1.4-1.2,2.6-2.6,2.6l0,0c-1.4,0-2.6-1.2-2.6-2.6V3.3C0.3,1.9,1.4,0.7,2.9,0.7z',
@@ -104,8 +104,8 @@ const Clock = {
               shadowColor: 'rgba(0, 0, 0, 0.3)',
               shadowBlur: 8,
               shadowOffsetX: 2,
-              shadowOffsetY: 4,
-            },
+              shadowOffsetY: 4
+            }
           },
           anchor: {
             show: true,
@@ -117,20 +117,20 @@ const Clock = {
               shadowColor: 'rgba(0, 0, 0, 0.3)',
               shadowBlur: 8,
               shadowOffsetX: 2,
-              shadowOffsetY: 4,
-            },
+              shadowOffsetY: 4
+            }
           },
           detail: {
-            show: false,
+            show: false
           },
           title: {
-            offsetCenter: ['0%', '-40%'],
+            offsetCenter: ['0%', '-40%']
           },
           data: [
             {
-              value: 0,
-            },
-          ],
+              value: 0
+            }
+          ]
         },
         {
           name: 'second',
@@ -142,16 +142,16 @@ const Clock = {
           animationEasingUpdate: 'bounceOut',
           clockwise: true,
           axisLine: {
-            show: false,
+            show: false
           },
           splitLine: {
-            show: false,
+            show: false
           },
           axisTick: {
-            show: false,
+            show: false
           },
           axisLabel: {
-            show: false,
+            show: false
           },
           pointer: {
             icon: 'path://M2.9,0.7L2.9,0.7c1.4,0,2.6,1.2,2.6,2.6v115c0,1.4-1.2,2.6-2.6,2.6l0,0c-1.4,0-2.6-1.2-2.6-2.6V3.3C0.3,1.9,1.4,0.7,2.9,0.7z',
@@ -163,8 +163,8 @@ const Clock = {
               shadowColor: 'rgba(0, 0, 0, 0.3)',
               shadowBlur: 8,
               shadowOffsetX: 2,
-              shadowOffsetY: 4,
-            },
+              shadowOffsetY: 4
+            }
           },
           anchor: {
             show: true,
@@ -175,22 +175,22 @@ const Clock = {
               shadowColor: 'rgba(0, 0, 0, 0.3)',
               shadowBlur: 8,
               shadowOffsetX: 2,
-              shadowOffsetY: 4,
-            },
+              shadowOffsetY: 4
+            }
           },
           detail: {
-            show: false,
+            show: false
           },
           title: {
-            offsetCenter: ['0%', '-40%'],
+            offsetCenter: ['0%', '-40%']
           },
           data: [
             {
-              value: 0,
-            },
-          ],
-        },
-      ],
+              value: 0
+            }
+          ]
+        }
+      ]
     };
     setInterval(function () {
       var date = new Date();
@@ -203,19 +203,19 @@ const Clock = {
           {
             name: 'hour',
             animation: hour !== 0,
-            data: [{ value: hour }],
+            data: [{ value: hour }]
           },
           {
             name: 'minute',
             animation: minute !== 0,
-            data: [{ value: minute }],
+            data: [{ value: minute }]
           },
           {
             animation: second !== 0,
             name: 'second',
-            data: [{ value: second }],
-          },
-        ],
+            data: [{ value: second }]
+          }
+        ]
       });
     }, 1000);
 
@@ -224,7 +224,7 @@ const Clock = {
 
   shouldUpdate() {
     return false;
-  },
+  }
 };
 
 module.exports = Clock;

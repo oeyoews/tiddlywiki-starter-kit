@@ -25,7 +25,7 @@ class AvatarWidget extends Widget {
 
     let getDefaultEmail =
       $tw.wiki.getTiddlerText(
-        '$:/config/plugins/oeyoews/tiddlywiki-gravatar/email',
+        '$:/config/plugins/oeyoews/tiddlywiki-gravatar/email'
       ) || '2956398608@qq.com';
     const Username = $tw.wiki.getTiddlerText('$:/status/UserName') || 'oeyoews';
 
@@ -40,7 +40,7 @@ class AvatarWidget extends Widget {
       size = 100,
       alt = 'Avatar',
       type,
-      key = 'sea',
+      key = 'sea'
     } = this.attributes;
 
     const hash = md5(email.trim().toLowerCase());
@@ -55,7 +55,7 @@ class AvatarWidget extends Widget {
       github: `${GitHub}/${username}.png?size=${size}`,
       gravatar: `https://gravatar.com/avatar/${hash}.png?s=${size}`,
       gcn: `https://cn.gravatar.com/avatar/${hash}.png?s=${size}`,
-      url,
+      url
     };
 
     const hasType = Object.keys(types).includes(type);
@@ -67,9 +67,9 @@ class AvatarWidget extends Widget {
     const imageNode = createElement('img', {
       class: imgClass,
       attributes: {
-        'data-src': src,
+        'data-src': src
         // alt,
-      },
+      }
     });
 
     twimageobserver.observe(imageNode);
@@ -81,7 +81,7 @@ class AvatarWidget extends Widget {
         'w-[20px]',
         'outline',
         'outline-1',
-        'p-0.5',
+        'p-0.5'
       );
     }
 
@@ -103,9 +103,9 @@ class AvatarWidget extends Widget {
         target: '_blank',
         rel: 'noopener noreferrer',
         style: 'text-decoration: none;',
-        href: link,
+        href: link
       },
-      children: [imageNode],
+      children: [imageNode]
     });
 
     const domNode = link ? linkNode : imageNode;

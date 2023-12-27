@@ -36,7 +36,7 @@ notifyinstance.close();
 // For Developers, you can use `om-notify` to instead of `tm-notify`
 this.parentWidget.dispatchEvent({
   type: 'om-notify',
-  paramObject: options,
+  paramObject: options
 });
 ```
 

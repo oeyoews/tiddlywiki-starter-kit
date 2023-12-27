@@ -18,7 +18,7 @@ exports.addfile = async (url, filename, type = 'text') => {
     $tw.wiki.addTiddler({
       title: filename,
       type: 'text/markdown',
-      text: data,
+      text: data
     });
   } catch (error) {
     // Handle any errors that occurred during the fetch

@@ -34,7 +34,7 @@ module.exports = () => {
     'purple',
     'fuchsia',
     'pink',
-    'rose',
+    'rose'
   ];
   const randomIndex = Math.floor(Math.random() * colors.length);
   return colors[randomIndex];

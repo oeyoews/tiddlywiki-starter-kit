@@ -14,7 +14,7 @@ function format(title) {
     return;
   }
   $tw.wiki.setText(title, 'text', null, formatedText, {
-    suppressTimestamp: true,
+    suppressTimestamp: true
   });
 }
 

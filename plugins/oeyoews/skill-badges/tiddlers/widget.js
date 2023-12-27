@@ -26,7 +26,7 @@ class SkillIconWidget extends Widget {
     const getIcon = () => {
       if (Array.isArray(icons)) {
         const index = icons.findIndex(
-          (i) => i.toLowerCase() === icon.toLowerCase(),
+          (i) => i.toLowerCase() === icon.toLowerCase()
         );
         return icons[index] || 'tiddlywiki5';
       }
@@ -34,8 +34,8 @@ class SkillIconWidget extends Widget {
 
     const domNode = createElement('img', {
       attributes: {
-        src: badges[getIcon()],
-      },
+        src: badges[getIcon()]
+      }
     });
 
     parent.insertBefore(domNode, nextSibling);

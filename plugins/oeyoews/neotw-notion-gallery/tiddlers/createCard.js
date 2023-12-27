@@ -13,7 +13,7 @@ module.exports = function createCard(
   cover,
   clickEvents,
   icon,
-  standard = true,
+  standard = true
 ) {
   const createElement = $tw.utils.domMaker;
 
@@ -25,8 +25,8 @@ module.exports = function createCard(
   const iconify = createElement('iconify-icon', {
     class: 'mx-1',
     attributes: {
-      icon: icon || 'simple-icons:tiddlywiki',
-    },
+      icon: icon || 'simple-icons:tiddlywiki'
+    }
   });
 
   const galleryTitle = createElement('h3', {
@@ -34,12 +34,12 @@ module.exports = function createCard(
     text: caption || title,
     children: [iconify],
     attributes: {
-      title: '点击查看',
-    },
+      title: '点击查看'
+    }
   });
 
   const contentNode = createElement('div', {
-    children: [galleryTitle],
+    children: [galleryTitle]
   });
 
   galleryTitle.addEventListener('click', () => clickEvents(title));
@@ -48,15 +48,15 @@ module.exports = function createCard(
     class: `object-cover w-full h-full rounded-md group-hover:scale-105 transition-all duration-800 ease-in-out shadow-md aspect-video`,
     attributes: {
       ['data-src']: cover,
-      alt: caption || title, // '如果不设置，会有黑边'
-    },
+      alt: caption || title // '如果不设置，会有黑边'
+    }
   });
 
   standard === 'false' && imageNode.classList.remove('aspect-video');
 
   const item = createElement('div', {
     class: itemClassList,
-    children: [imageNode, contentNode],
+    children: [imageNode, contentNode]
   });
 
   // 禁止右键功能

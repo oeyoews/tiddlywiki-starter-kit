@@ -9,7 +9,7 @@ description:
 const getData = (tag) => {
   return {
     name: tag,
-    value: $tw.wiki.filterTiddlers(`[tag[${tag}]!has[draft.of]]`).length,
+    value: $tw.wiki.filterTiddlers(`[tag[${tag}]!has[draft.of]]`).length
   };
 };
 
@@ -26,7 +26,7 @@ const BookProgress = {
       toolbox = 'hide',
       doughnut,
       focusSelf,
-      legend,
+      legend
     } = addonAttributes;
     // NOTE: data 必须在执行 onUpdate 函数的时候获取到最新数据，不要写在 onUpdate 函数外面
     const data = [];
@@ -46,7 +46,7 @@ const BookProgress = {
         text,
         subtext: '',
         left: 'left',
-        top: 'top',
+        top: 'top'
       },
       toolbox: {
         show: toolbox === 'show' ? true : false,
@@ -55,8 +55,8 @@ const BookProgress = {
         feature: {
           dataView: { show: true, readOnly: false },
           restore: {},
-          saveAsImage: {},
-        },
+          saveAsImage: {}
+        }
       },
       tooltip: {
         trigger: 'item',
@@ -67,7 +67,7 @@ const BookProgress = {
           } else {
             return `${name} 条目`;
           }
-        },
+        }
       },
       legend: {
         show: legend === 'yes' ? true : false,
@@ -75,7 +75,7 @@ const BookProgress = {
         right: 10,
         top: 20,
         bottom: 20,
-        type: 'scroll',
+        type: 'scroll'
       },
       series: [
         {
@@ -87,14 +87,14 @@ const BookProgress = {
           itemStyle: {
             borderRadius,
             borderWidth,
-            borderColor: '#fff',
+            borderColor: '#fff'
           },
           emphasis: {
             focus: focusSelf === 'yes' ? 'self' : '',
-            itemStyle: {},
-          },
-        },
-      ],
+            itemStyle: {}
+          }
+        }
+      ]
     };
 
     // descend or ascend sort
@@ -110,10 +110,10 @@ const BookProgress = {
     const filteredChangedTiddlers = Object.keys(changedTiddlers).filter(
       (tiddler) =>
         tiddler === '$:/info/darkmode' ||
-        (!tiddler.startsWith('$:/') && !tiddler.startsWith('Draft of')),
+        (!tiddler.startsWith('$:/') && !tiddler.startsWith('Draft of'))
     );
     return filteredChangedTiddlers.length ? true : false;
-  },
+  }
 };
 
 // default export

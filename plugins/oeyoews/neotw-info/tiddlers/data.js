@@ -12,7 +12,7 @@ module.exports = () => {
   };
 
   const update = getString(
-    '[!is[system]!prefix[$:/]!has[draft.of]!sort[modified]limit[1]get[modified]format:relativedate[]]',
+    '[!is[system]!prefix[$:/]!has[draft.of]!sort[modified]limit[1]get[modified]format:relativedate[]]'
   )[0];
   const plugins = getString('[plugin-type[plugin]]').length;
   const tags = getString('[tags[]]').length;
@@ -29,6 +29,6 @@ module.exports = () => {
     tags,
     tiddlers,
     version,
-    textClass,
+    textClass
   };
 };

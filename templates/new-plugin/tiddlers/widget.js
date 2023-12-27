@@ -23,13 +23,13 @@ class ExampleWidget extends Widget {
 
     const btn = createElement('button', {
       text: 'click me',
-      class: 'rounded p-1',
+      class: 'rounded p-1'
     });
 
     const domNode = createElement('div', {
       text: 'example',
       class: 'underline font-bold',
-      children: [btn],
+      children: [btn]
     });
 
     parent.insertBefore(domNode, nextSibling);

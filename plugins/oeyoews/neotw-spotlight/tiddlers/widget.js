@@ -30,13 +30,13 @@ class SpotlightWidget extends Widget {
         class: classname + ' not-prose rounded',
         src,
         title,
-        alt,
-      },
+        alt
+      }
     });
 
     const spotlightOptions = {
       control: 'autofit, close',
-      animation: 'scale',
+      animation: 'scale'
       // download: true,
     };
 
@@ -45,8 +45,8 @@ class SpotlightWidget extends Widget {
         {
           src,
           title,
-          ...spotlightOptions,
-        },
+          ...spotlightOptions
+        }
       ]);
     });
 

@@ -19,13 +19,13 @@ class NotifyWidget extends Widget {
 
     const createElement = $tw.utils.domMaker;
     const buttonNode = createElement('button', {
-      text: options.title || 'click',
+      text: options.title || 'click'
     });
 
     buttonNode.onclick = () => {
       this.parentWidget.dispatchEvent({
         type: 'om-notify',
-        paramObject: options,
+        paramObject: options
       });
     };
 

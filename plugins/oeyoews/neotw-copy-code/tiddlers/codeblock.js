@@ -90,7 +90,7 @@ Code block node widget
         html: 'html5', // html language-xml bug
         vbnet: 'visualbasic',
         xml: 'html5',
-        '': 'tiddlywiki',
+        '': 'tiddlywiki'
       };
       if (standardIconLanguage in languageMapping) {
         standardIconLanguage = languageMapping[standardIconLanguage];
@@ -113,15 +113,15 @@ Code block node widget
         // clipboard api 不会向用户发出询问，在不安全的上下文中 (0.0.0.0), clipboard api 不会被允许
         const copyToClipboard = $tw.utils.copyToClipboard;
         copyToClipboard(codeNode.textContent, {
-          doNotNotify: true,
+          doNotNotify: true
         });
         // TODO: add judge
         this.parentWidget.dispatchEvent({
           type: 'om-notify',
           paramObject: {
             title: '复制成功',
-            text: '',
-          },
+            text: ''
+          }
         });
         // copyButton.textContent = 'copied';
         // clipboardTimer = setTimeout(() => {

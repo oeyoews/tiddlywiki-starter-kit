@@ -30,13 +30,13 @@ class BookTocStatusWidget extends Widget {
       .filter((title) => !title.startsWith('$:/'))
       .map((title) => ({
         title,
-        status: '未读',
+        status: '未读'
       }));
     const readlist =
       statuses?.[bookname] &&
       Object.entries(statuses?.[bookname]).map(([title, status]) => ({
         title,
-        status,
+        status
       }));
     const tocstatuslist = new Map();
 
@@ -65,7 +65,7 @@ class BookTocStatusWidget extends Widget {
 <% if [[$:/plugins/oeyoews/neotw-icons]has[plugin-type]] %>
   <$iconify icon=${icon} />
 <% endif %>
-<sup>@@color:${color};font-size:10px;${status}@@</sup>`,
+<sup>@@color:${color};font-size:10px;${status}@@</sup>`
       );
       li.innerHTML = content;
       children.push(li);
@@ -86,18 +86,18 @@ class BookTocStatusWidget extends Widget {
       attributes: {
         id: 'om-progress',
         value: progressvalue,
-        max: 100,
-      },
+        max: 100
+      }
     });
 
     const statusprogressNode = createElement('center', {
-      text: `${bookname} 阅读进度：${statusprogress}%`,
+      text: `${bookname} 阅读进度：${statusprogress}%`
     });
     children.unshift(statusprogressNode);
     children.unshift(progressNode);
 
     const domNode = createElement('ol', {
-      children,
+      children
     });
 
     parent.insertBefore(domNode, nextSibling);

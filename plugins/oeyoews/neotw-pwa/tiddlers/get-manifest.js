@@ -21,7 +21,7 @@ GET /manifest.json
       200,
       { 'Content-Type': 'application/json' },
       data,
-      'utf8',
+      'utf8'
     );
   };
 })();

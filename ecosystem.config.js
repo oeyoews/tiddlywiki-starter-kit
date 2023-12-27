@@ -23,8 +23,8 @@ module.exports = {
       log_file: `${logdir}/logs/combined.outerr.log`,
       out_file: `${logdir}/logs/out.log`,
       err_file: `${logdir}/logs/err.log`,
-      log_date_format: 'YYYY-MM-DD HH:mm:ss',
+      log_date_format: 'YYYY-MM-DD HH:mm:ss'
       // env:{}
-    },
-  ],
+    }
+  ]
 };

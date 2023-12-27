@@ -22,7 +22,7 @@ export default {
     'text/plain',
     '$:/core/templates/exporters/JsonFile',
     'exportFilter',
-    '[tag[Journal]type[text/markdown]!sort[created]]',
+    '[tag[Journal]type[text/markdown]!sort[created]]'
   ],
   tiddlers: [
     '--render',
@@ -33,7 +33,7 @@ export default {
     'exportFilter',
     // '[!is[system]field:type[text/markdown]!is[binary]!field:publish[readonly]!field:publish[no]] -[[.gitignore]] -[tag[video]] -[tag[Journal]] -[tag[剪藏]]',
     // '[publish[public]] [publish[article]]',
-    '[publish[blog]]',
+    '[publish[blog]]'
   ],
   // build index.html
   index: [
@@ -69,7 +69,7 @@ export default {
     '$:/tiddlywiki.png',
     'tiddlywiki.png',
     '--deletetiddlers',
-    '$:/StoryList',
+    '$:/StoryList'
   ],
   // 生成 plugin library
   library: [
@@ -90,8 +90,8 @@ export default {
     'index.html',
     'text/plain',
     '--deletetiddlers', // NOTE: 如果构建失败总是会产生17M的文件,不会自动删除
-    '[[$:/UpgradeLibrary]] [[$:/UpgradeLibrary/List]]',
-  ],
+    '[[$:/UpgradeLibrary]] [[$:/UpgradeLibrary/List]]'
+  ]
   /* // Generate plugins json format
   plugins: [
     '--verbose',

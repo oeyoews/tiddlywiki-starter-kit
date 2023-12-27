@@ -33,7 +33,7 @@ class QRCodeWidget extends Widget {
     const {
       renderType,
       text = href,
-      width = 512,
+      width = 512
       // size
     } = this.attributes;
     let textcontent = text;
@@ -52,7 +52,7 @@ class QRCodeWidget extends Widget {
           textcontent = $tw.wiki.renderText(
             'text/plain-formatted',
             'text/vnd.tiddlywiki',
-            `${$tw.wiki.getTiddlerText(storyTiddler)}`,
+            `${$tw.wiki.getTiddlerText(storyTiddler)}`
           );
           break;
         case 'text':
@@ -70,19 +70,19 @@ class QRCodeWidget extends Widget {
       textcontent,
       {
         type: 'terminal',
-        width,
+        width
       },
       (_, svgString) => {
         this.svgString = svgString;
-      },
+      }
     );
 
     const svghashtext = encodeURIComponent(this.svgString);
     const domNode = $tw.utils.domMaker('img', {
       class: 'spotlight w-0 md:w-32',
       attributes: {
-        src: `data:${this.type},${svghashtext}`,
-      },
+        src: `data:${this.type},${svghashtext}`
+      }
     });
 
     parent.insertBefore(domNode, nextSibling);

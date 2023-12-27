@@ -9,7 +9,7 @@ description: tag pie on tiddlywiki
 const getData = (tag) => {
   return {
     name: tag,
-    value: $tw.wiki.filterTiddlers(`[tag[${tag}]!has[draft.of]]`).length,
+    value: $tw.wiki.filterTiddlers(`[tag[${tag}]!has[draft.of]]`).length
   };
 };
 
@@ -48,7 +48,7 @@ const TagPie = {
       toolbox = 'hide',
       doughnut,
       focusSelf,
-      legend,
+      legend
     } = addonAttributes;
     // NOTE: data 必须在执行 onUpdate 函数的时候获取到最新数据，不要写在 onUpdate 函数外面
     const data = [];
@@ -68,7 +68,7 @@ const TagPie = {
         text,
         subtext: '',
         left: 'left',
-        top: 'top',
+        top: 'top'
       },
       toolbox: {
         show: toolbox === 'show' ? true : false,
@@ -77,8 +77,8 @@ const TagPie = {
         feature: {
           dataView: { show: true, readOnly: false },
           restore: {},
-          saveAsImage: {},
-        },
+          saveAsImage: {}
+        }
       },
       tooltip: {
         trigger: 'item',
@@ -89,7 +89,7 @@ const TagPie = {
           } else {
             return `${name} 条目`;
           }
-        },
+        }
       },
       legend: {
         show: legend === 'yes' ? true : false,
@@ -97,7 +97,7 @@ const TagPie = {
         right: 10,
         top: 20,
         bottom: 20,
-        type: 'scroll',
+        type: 'scroll'
       },
       series: [
         {
@@ -109,14 +109,14 @@ const TagPie = {
           itemStyle: {
             borderRadius,
             borderWidth,
-            borderColor: '#fff',
+            borderColor: '#fff'
           },
           emphasis: {
             focus: focusSelf === 'yes' ? 'self' : '',
-            itemStyle: {},
-          },
-        },
-      ],
+            itemStyle: {}
+          }
+        }
+      ]
     };
 
     // descend or ascend sort
@@ -137,12 +137,12 @@ const TagPie = {
     const filteredChangedTiddlers = Object.keys(changedTiddlers).filter(
       (tiddler) =>
         tiddler === '$:/info/darkmode' ||
-        (!tiddler.startsWith('$:/') && !tiddler.startsWith('Draft of')),
+        (!tiddler.startsWith('$:/') && !tiddler.startsWith('Draft of'))
     );
     // TODO
     return filteredChangedTiddlers.length ? true : false;
     // return true;
-  },
+  }
 };
 
 // default export

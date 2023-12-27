@@ -24,7 +24,7 @@ class PanguWidget extends Widget {
 
     const svg = $tw.wiki.getTiddlerText('$:/plugins/oeyoews/pangu/icon');
     const domNode = createElement('button', {
-      title: 'format tiddler',
+      title: 'format tiddler'
     });
     domNode.innerHTML = svg;
 

@@ -9,7 +9,7 @@ Daylight Listener Module
 // 注意：手动切换和自动切换要共享状态，与此同时还要遵循用户的配置
 
 const config = $tw.wiki.getTiddlerData(
-  '$:/plugins/oeyoews/tiddlywiki-daylight/config',
+  '$:/plugins/oeyoews/tiddlywiki-daylight/config'
 );
 
 const { darkPalette, lightPalette } = config;
@@ -97,9 +97,9 @@ function checkModeListener() {
         {
           type: 'localStorageUpdate',
           key: 'theme',
-          value: newTheme,
+          value: newTheme
         },
-        '*',
+        '*'
       );
       if (event.oldValue !== newTheme) {
         updateMode(newTheme);
@@ -110,5 +110,5 @@ function checkModeListener() {
 
 module.exports = {
   checkModeListener,
-  toggleMode,
+  toggleMode
 };

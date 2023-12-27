@@ -27,7 +27,7 @@ class FetchWidget extends Widget {
         status: 'warning',
         autoclose: false,
         type: 1,
-        text: '缺失 NProgress 插件',
+        text: '缺失 NProgress 插件'
       });
     }
     const progress = new $tw.NProgress();

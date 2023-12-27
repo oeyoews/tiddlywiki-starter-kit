@@ -27,7 +27,7 @@ class ImageWidget extends Widget {
       keyword = 'sea',
       resolution = '1920x1080',
       class: classNames,
-      src = `https://source.unsplash.com/random/${resolution}/?${keyword}`,
+      src = `https://source.unsplash.com/random/${resolution}/?${keyword}`
     } = this.attributes;
 
     const imageNode = this.document.createElement('img');
@@ -37,7 +37,7 @@ class ImageWidget extends Widget {
       'aspect-video',
       'rounded',
       'spotlight',
-      'w-full',
+      'w-full'
     );
     imageNode.alt = ' ';
     imageNode.setAttribute('data-src', src);

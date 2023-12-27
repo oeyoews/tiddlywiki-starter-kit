@@ -42,15 +42,15 @@ exports.startup = () => {
       title: newTitle,
       text,
       type,
-      translate: 'yes',
+      translate: 'yes'
     });
 
     // 添加字段, 为模板数据做准备
     $tw.wiki.setText(title, 'cn', null, newTitle, {
-      suppressTimestamp: true,
+      suppressTimestamp: true
     });
     $tw.wiki.setText(newTitle, 'en', null, title, {
-      suppressTimestamp: true,
+      suppressTimestamp: true
     });
     story.navigateTiddler(newTitle);
     // TODO: add notify

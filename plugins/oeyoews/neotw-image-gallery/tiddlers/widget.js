@@ -46,7 +46,7 @@ class GalleryWidget extends Widget {
 
     const domNode = createElement('div', {
       class: 'grid grid-cols-1 md:grid-cols-3 gap-4',
-      children,
+      children
     });
 
     parent.insertBefore(domNode, nextSibling);

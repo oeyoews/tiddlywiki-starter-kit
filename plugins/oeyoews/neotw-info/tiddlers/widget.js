@@ -24,7 +24,7 @@ class InfoWidget extends Widget {
 
     const ejs = require('ejs.min.js');
     const template = $tw.wiki.getTiddlerText(
-      '$:/plugins/oeyoews/neotw-info/template.ejs',
+      '$:/plugins/oeyoews/neotw-info/template.ejs'
     );
 
     const html = ejs.render(template, data);

@@ -31,7 +31,7 @@ class MusicWidget extends Widget {
       autoplay = 'false',
       title = 'default',
       img = 'http://p2.music.126.net/AxfyFEr9GO_OnC5WBevzbw==/109951167425399843.jpg?param=130y130',
-      enableImg = 'false',
+      enableImg = 'false'
     } = this.attributes;
     const { Howl, Howler } = require('howler.min.js');
 
@@ -46,8 +46,8 @@ class MusicWidget extends Widget {
         alt: title,
         src: img,
         class: 'rounded-full w-[26px] h-[26px] object-cover',
-        title,
-      },
+        title
+      }
     });
 
     const options = {
@@ -65,12 +65,12 @@ class MusicWidget extends Widget {
         // this.duration = sound.duration();
         this.updatePlaylistStatus(title, this.PLAYING);
         new $tw.Notify().display({
-          title: '开始播放' + title,
+          title: '开始播放' + title
         });
       },
       onpause: () => {
         this.updatePlaylistStatus(title, this.PAUSE);
-      },
+      }
     };
 
     this.sound = new Howl(options);
@@ -92,9 +92,9 @@ class MusicWidget extends Widget {
       class:
         'rounded-full p-1 bg-gray-200/70 dark:bg-black hover:scale-105 transition-all duration-500',
       attributes: {
-        title,
+        title
       },
-      children,
+      children
     });
     if (enableImg !== 'true') {
       btn.innerHTML = MusicIcon;
@@ -145,7 +145,7 @@ class MusicWidget extends Widget {
 
   updatePlaylistStatus(title, status) {
     const existingItemIndex = window.playlist.findIndex(
-      (item) => item.title === title,
+      (item) => item.title === title
     );
 
     if (existingItemIndex !== -1) {

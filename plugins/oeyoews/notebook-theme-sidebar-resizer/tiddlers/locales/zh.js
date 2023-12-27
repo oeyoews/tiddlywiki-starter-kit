@@ -8,5 +8,5 @@ notebook-theme-sidebar-resizer locale zh
 
 module.exports = {
   pluginname: '侧边栏宽度调整插件',
-  warning: '需要安装 tailwindcss',
+  warning: '需要安装 tailwindcss'
 };

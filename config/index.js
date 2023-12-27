@@ -6,7 +6,7 @@ module.exports = {
     host: false,
     qrcode: true, // only host not false works
     zen: true,
-    open: false, // NOTE: pm2 or pm2 cron restart will open also
+    open: false // NOTE: pm2 or pm2 cron restart will open also
   },
   username: 'oeyoews',
   // password: 'oeyoews',
@@ -15,5 +15,5 @@ module.exports = {
   wiki: 'src',
   markdown: true,
   tiddlersRepo: 'oeyoews/neotw-tiddlers',
-  pluginversion: '5.3.0',
+  pluginversion: '5.3.0'
 };

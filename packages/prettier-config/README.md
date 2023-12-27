@@ -41,16 +41,9 @@ For example, if you need to change it so that semicolons are required:
 
 ```javascript
 // `prettier.config.js` or `.prettierrc.js`
-const prettierConfigStandard = require('@oeyoews/prettier-config')
+const prettierConfig = require('@oeyoews/prettier-config')
 
-const modifiedConfig = Object.assign(
-  {},
-  prettierConfigStandard,
-  {
-    semi: true,
-    // ... other modified settings here
-  }
-)
-
-module.exports = modifiedConfig
+module.exports = Object.assign({}, prettierConfig, {
+  // semi: true;
+})
 ```

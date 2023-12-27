@@ -27,21 +27,21 @@ table-view widget
       const createElement = $tw.utils.domMaker;
 
       const titleBtn = createElement('button', {
-        text: 'titleBtn',
+        text: 'titleBtn'
       });
       const tagBtn = createElement('button', {
-        text: 'tagBtn',
+        text: 'tagBtn'
       });
 
       const itemNode = createElement('div', {
         class:
           'flex flex-row overflow-scroll justify-start space-x-4 border-t border-t-gray-200',
-        children: [titleBtn, tagBtn],
+        children: [titleBtn, tagBtn]
       });
 
       const domNode = createElement('div', {
         class: 'ntable',
-        children: [itemNode],
+        children: [itemNode]
       });
 
       parent.insertBefore(domNode, nextSibling);

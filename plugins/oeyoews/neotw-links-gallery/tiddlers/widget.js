@@ -29,7 +29,7 @@ class ListlinksWidget extends Widget {
     const linksURL = Object.entries(data);
 
     const template = $tw.wiki.getTiddlerText(
-      '$:/plugins/oeyoews/neotw-links-gallery/template.ejs',
+      '$:/plugins/oeyoews/neotw-links-gallery/template.ejs'
     );
     const html = ejs.render(template, { linksURL, isStoryRiver });
     const domNode = this.document.createElement('div');

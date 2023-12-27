@@ -17,7 +17,7 @@ exports.startup = () => {
   const totalPlugins = count('[plugin-type[plugin]]');
   const customPlugins = count('[plugin-type[plugin]author[oeyoews]]');
   const officialPlugins = count(
-    '[plugin-type[plugin]prefix[$:/plugins/tiddlywiki]] [[$:/core]]',
+    '[plugin-type[plugin]prefix[$:/plugins/tiddlywiki]] [[$:/core]]'
   );
   const tiddlersPlugin = totalPlugins - officialPlugins - customPlugins;
   $tw.utils.log(
@@ -26,6 +26,6 @@ exports.startup = () => {
 👮 官方插件 -> ${officialPlugins}
 🔪 用户插件 -> ${customPlugins}
 🧩 其他插件 -> ${tiddlersPlugin}\n\n`,
-    'cyan',
+    'cyan'
   );
 };

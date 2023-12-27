@@ -22,7 +22,7 @@ class IconsWidget extends Widget {
       title = '',
       style = '',
       icon = 'simple-icons:tiddlywiki',
-      class: className = '',
+      class: className = ''
     } = this.attributes;
 
     // NOTE: dont use dommaker
@@ -32,7 +32,7 @@ class IconsWidget extends Widget {
       icon,
       title,
       style,
-      class: className,
+      class: className
     };
 
     Object.keys(attributes).forEach((key) => {

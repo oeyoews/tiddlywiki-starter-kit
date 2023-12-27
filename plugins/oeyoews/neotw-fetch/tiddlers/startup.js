@@ -17,8 +17,8 @@ exports.startup = () => {
     const {
       paramObject: {
         url = 'https://raw.githubusercontent.com/oeyoews/neotw/main/README.md',
-        fileName = `fetch-${time}`,
-      } = {},
+        fileName = `fetch-${time}`
+      } = {}
     } = event;
     await addfile(url, fileName);
   });

@@ -34,7 +34,7 @@ class DaylightWidget extends Widget {
 
       const icon = getIcon(theme);
       const spanNode = createElement('span', {
-        class: storageTheme === theme ? '' : 'hidden',
+        class: storageTheme === theme ? '' : 'hidden'
       });
       spanNode.innerHTML = icon;
       return spanNode;
@@ -46,7 +46,7 @@ class DaylightWidget extends Widget {
 
     const domNode = createElement('button', {
       class: 'bg-transparent m-0 p-0',
-      children: [systemNode, lightNode, darkNode],
+      children: [systemNode, lightNode, darkNode]
     });
 
     btn &&
