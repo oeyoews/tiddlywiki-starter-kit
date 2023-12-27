@@ -6,7 +6,7 @@ module.exports = {
   endOfLine: "lf", // 换行符使用 LF
   htmlWhitespaceSensitivity: "css", // HTML 文件的全局空白符敏感度
   insertPragma: false, // 是否在文件顶部插入 @format 标记
-  jsxSingleQuote: true, // 在 JSX 中使用单引号而不是双引号
+  jsxSingleQuote: false, // 在 JSX 中使用单引号而不是双引号
   printWidth: 80, // 每行的最大字符数
   proseWrap: "preserve", // 控制 Prettier 是否在 markdown 文件中打包文本
   quoteProps: "as-needed", // 对象属性是否需要引号
@@ -16,5 +16,5 @@ module.exports = {
   singleQuote: true, // 是否使用单引号而不是双引号
   tabWidth: 2, // 每个缩进级别的空格数
   trailingComma: "none", // 在多行结构末尾打印逗号
-  useTabs: false // 是否使用制表符进行缩进
+  useTabs: false, // 是否使用制表符进行缩进
 };
