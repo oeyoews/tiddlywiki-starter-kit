@@ -1,0 +1,16 @@
+{
+	"name": "tw5-plugins-types",
+	"version": "1.0.0",
+	"description": "tw5 plugins types",
+	"types": "index.d.ts",
+	"keywords": [
+		"tiddlywiki"
+	],
+	"author": "oeyoews",
+	"license": "MIT",
+	"peerDependencies": {
+		"@types/ejs": "^3.1.5",
+		"nprogress": "^0.2.0",
+		"simple-notify": "^0.5.5"
+	}
+}

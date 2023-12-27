@@ -4,13 +4,14 @@ type: application/javascript
 module-type: global
 
 \*/
-const { Notify: TWNotify } = require('simple-notify.min.js');
+const Notify = require('simple-notify.min.js');
 const defaultOptions = require('./options');
 
 class NotifyWidget {
   constructor() {
     this.notifyInstance = null;
   }
+
   display(options) {
     if (!options) {
       console.warn('参数不允许为空');
@@ -23,7 +24,7 @@ class NotifyWidget {
       }, {});
     };
 
-    this.notifyInstance = new TWNotify(
+    this.notifyInstance = new Notify(
       Object.assign({}, defaultOptions, convertBooleanStringsToBoolean(options))
     );
   }

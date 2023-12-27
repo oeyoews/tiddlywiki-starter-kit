@@ -32,6 +32,7 @@ class EJSWidget extends Widget {
     }
 
     const ejs = require('ejs.min.js');
+
     const createElement = $tw.utils.domMaker;
     const people = ['geddy', 'neil', 'alex'];
     const html = ejs.render(template, { people });
