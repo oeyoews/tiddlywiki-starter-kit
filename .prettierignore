@@ -1,6 +1,7 @@
 node_modules/
 **/*.min.js
 pnpm-lock.yaml
+pnpm-workspace.yaml
 .tiddlywiki/
 files/
 .vscode/
@@ -8,3 +9,4 @@ files/
 src/
 dev/
 packages/
+.codesanbox/
