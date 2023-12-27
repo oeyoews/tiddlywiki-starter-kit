@@ -28,6 +28,18 @@ class NotebookResizer extends Widget {
     this.width = 0;
     this.defaultStateTiddler = '$:/state/sidebar';
 
+    // notebook
+    this.notebook = {
+      name: 'NOTEBOOK',
+      theme: [
+        '$:/themes/nico/notebook',
+        '$:/themes/oeyoews/notebook-plus', // for my custom notebook theme
+      ],
+      stateTiddler: '$:/state/notebook-sidebar',
+      widthTiddler: '$:/themes/nico/notebook/metrics/sidebar-width',
+      positionTiddler: '$:/themes/nico/notebook/metrics/sidebar-position',
+    };
+
     // theme: whitespace
     this.whitespace = {
       name: 'WHITESPACE',
@@ -38,12 +50,10 @@ class NotebookResizer extends Widget {
 
     this.sidebarLayoutTiddler =
       '$:/themes/tiddlywiki/vanilla/options/sidebarlayout';
-    this.notebookWidthTiddler = '$:/themes/nico/notebook/metrics/sidebar-width';
-    this.positionTiddler = '$:/themes/nico/notebook/metrics/sidebar-position';
-    this.notebookStateSidebar = '$:/state/notebook-sidebar';
+
     // listen tiddlers
     this.listenTiddlers = [
-      this.positionTiddler,
+      this.notebook.positionTiddler,
       '$:/language',
       '$:/layout',
       this.themeTiddler,
@@ -91,18 +101,15 @@ class NotebookResizer extends Widget {
   }
 
   checkTheme() {
-    const name = this.getText(this.themeTiddler);
+    const theme = this.getText(this.themeTiddler);
 
     // notebook
-    if (
-      name === '$:/themes/nico/notebook' ||
-      name === '$:/themes/oeyoews/notebook-plus' // for my custom notebook theme
-    ) {
-      return this.NOTEBOOK;
+    if (this.notebook.theme.includes(theme)) {
+      return this.notebook.name;
     }
 
     // whitespace
-    if (name == this.whitespace.theme) {
+    if (theme == this.whitespace.theme) {
       return this.whitespace.name;
     }
 
@@ -143,15 +150,18 @@ class NotebookResizer extends Widget {
     }
 
     // notebook
-    if (!$tw.wiki.tiddlerExists(this.positionTiddler)) {
-      return this.LEFT;
+    if (this.theme === this.notebook.name) {
+      if (!$tw.wiki.tiddlerExists(this.notebook.positionTiddler)) {
+        return this.LEFT;
+      }
+
+      const { position = this.LEFT } = $tw.wiki.getTiddler(
+        this.notebook.positionTiddler,
+      ).fields;
+
+      return position;
     }
-
-    const { position = this.LEFT } = $tw.wiki.getTiddler(
-      this.positionTiddler,
-    ).fields;
-
-    return position;
+    return this.RIGHT;
   }
 
   getDefaultSidebarWidth() {
@@ -185,8 +195,8 @@ class NotebookResizer extends Widget {
 
   closeSidebar() {
     const stateTiddler =
-      this.theme === this.NOTEBOOK
-        ? this.notebookStateSidebar
+      this.theme === this.notebook.name
+        ? this.notebook.stateTiddler
         : this.defaultStateTiddler;
     $tw.wiki.setText(stateTiddler, 'text', null, 'no');
     this.updateSidebarWidth(this.getDefaultSidebarWidth());
@@ -194,8 +204,8 @@ class NotebookResizer extends Widget {
 
   updateSidebarWidth(width) {
     const targetTiddler =
-      this.theme === this.NOTEBOOK
-        ? this.notebookWidthTiddler
+      this.theme === this.notebook.name
+        ? this.notebook.widthTiddler
         : this.defaultWidthTiddler;
     requestAnimationFrame(() => {
       $tw.wiki.setText(
