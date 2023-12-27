@@ -42,6 +42,9 @@ importers:
         specifier: ^2.12.5
         version: 2.12.5
     devDependencies:
+      '@oeyoews/prettier-config':
+        specifier: workspace:^
+        version: link:packages/prettier-config
       '@types/prompts':
         specifier: ^2.4.9
         version: 2.4.9
@@ -135,6 +138,12 @@ importers:
       validate-npm-package-name:
         specifier: ^5.0.0
         version: 5.0.0
+
+  packages/prettier-config:
+    dependencies:
+      prettier:
+        specifier: ^2.6.0 || ^3.0.0
+        version: 3.1.0
 
   packages/randomstring-plus:
     devDependencies:
@@ -2217,7 +2226,6 @@ packages:
     resolution: {integrity: sha512-TQLvXjq5IAibjh8EpBIkNKxO749UEWABoiIZehEPiY4GNpVdhaFKqSTu+QrlU6D2dPAfubRmtJTi4K4YkQ5eXw==}
     engines: {node: '>=14'}
     hasBin: true
-    dev: true
 
   /promptly@2.2.0:
     resolution: {integrity: sha512-aC9j+BZsRSSzEsXBNBwDnAxujdx19HycZoKgRgzWnS8eOHg1asuf9heuLprfbe739zY3IdUQx+Egv6Jn135WHA==}

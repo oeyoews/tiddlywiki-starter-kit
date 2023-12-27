@@ -37,7 +37,9 @@
     "tiddlywiki": "5.3.3",
     "tiged": "^2.12.5"
   },
+  "prettier": "@oeyoews/prettier-config",
   "devDependencies": {
+    "@oeyoews/prettier-config": "workspace:^",
     "@types/prompts": "^2.4.9",
     "address": "^1.2.2",
     "autocorrect-node": "^2.9.0",
