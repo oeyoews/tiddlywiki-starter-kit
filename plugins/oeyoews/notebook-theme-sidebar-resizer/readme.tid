@@ -4,7 +4,7 @@ title: $:/plugins/oeyoews/notebook-theme-sidebar-resizer/readme
 
 > support left/right sidebar resizer
 
-> 最初仅仅是为了支持 notebook theme 而写的 sidebar resizer, 后来开始支持 vanilla, captivate, whitespace 等主题.
+> 最初仅仅是为了支持 notebook theme 而写的 sidebar resizer, 后来开始支持 vanilla(and based vanilla sidebar theme), captivate, whitespace 等主题.
 
 <!-- 在切换主题时，theme 会覆盖掉同名非系统文件，所以需要手动修改 -->
 
