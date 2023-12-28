@@ -137,7 +137,7 @@
         "created": "2023-12-28",
         "dependents": "$:/plugins/tiddlywiki/markdown",
         "list": "readme",
-        "readme": "<!-- plugin template readme -->\n\n- 声明对应的 markdow-it 插件为 `module-type: markdownit` 即可, tiddlywiki 将会通过此插件 (markdown-extensions-startup) 加载对应的 markdown-it 插件.\n\n## TODO\n\n- 暂不支持 markdown-it plugins option\n\n## Motivation\n\n仿照 codemirror5 的插件模块加载机制, 将 markdown-it 的每个插件单独打包成插件, 按需加载\n\n<!-- your plugin motivation, or why you write this plugin -->\n",
+        "readme": "- 仿照 codemirror5 的插件模块加载机制, 将 markdown-it 的每个插件单独打包成插件, 按需加载\n- 声明对应的 markdow-it 插件为 `module-type: markdownit` 即可, tiddlywiki 将会通过此插件 (markdown-extensions-startup) 加载对应的 markdown-it 插件.\n\n!! TODO\n\n- 暂不支持 markdown-it plugins option\n",
         "requires-reload": "yes"
     },
     {
