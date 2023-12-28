@@ -15,8 +15,5 @@
     "packages/",
     "**/*.min.js"
   ],
-  "include": [
-    "plugins/oeyoews/**/*.js",
-    "types.d.ts"
-  ]
+  "include": ["plugins/oeyoews/**/*.js", "types.d.ts"]
 }
