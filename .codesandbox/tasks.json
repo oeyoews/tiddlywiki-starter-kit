@@ -6,12 +6,11 @@
       "command": "pnpm install"
     }
   ],
-
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
   "tasks": {
     "newplugin": {
-      "name": "newplugin",
-      "command": "pnpm newplugin",
+      "name": "new",
+      "command": "pnpm new",
       "runAtStart": false
     },
     "build": {
