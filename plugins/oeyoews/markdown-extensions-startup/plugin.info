@@ -10,8 +10,6 @@
   "meat#disabled": "yes",
   "qrcode": "yes",
   "created": "2023-12-28",
-  "dependents": [
-    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
-  ],
+  "dependents": [],
   "list": "readme"
 }
