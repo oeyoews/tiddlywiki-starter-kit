@@ -25,11 +25,9 @@ exports.startup = () => {
   if (req) {
     if ($tw.utils.isArray(req)) {
       req.forEach((item) => {
-        console.log(item);
         md.use(require(item));
       });
     } else {
-      console.log(item);
       md.use(require(req));
     }
   }
