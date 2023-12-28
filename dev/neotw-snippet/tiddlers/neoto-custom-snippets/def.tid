@@ -1,7 +1,0 @@
-caption: define macro
-tags: $:/tags/TextEditor/Snippet
-title: $:/language/Snippets/define macro
-
-\define $1()
-
-\end

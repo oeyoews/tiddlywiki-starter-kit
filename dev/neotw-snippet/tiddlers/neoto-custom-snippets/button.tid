@@ -1,8 +1,0 @@
-caption: button widget
-tags: $:/tags/TextEditor/Snippet
-title: neotw/snippet/button
-type: text/vnd.tiddlywiki
-
-<$button>
-$1
-</$button>

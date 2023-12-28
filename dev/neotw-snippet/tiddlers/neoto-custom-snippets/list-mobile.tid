@@ -1,7 +1,0 @@
-caption: mobile filter
-tags: $:/tags/TextEditor/Snippet
-title: $:/language/Snippets/list-mobile
-
-<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
-$1
-</$list>

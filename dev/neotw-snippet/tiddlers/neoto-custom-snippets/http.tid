@@ -1,7 +1,0 @@
-caption: http filter
-tags: $:/tags/TextEditor/Snippet
-title: $:/language/Snippets/http filter
-
-<$list filter="[{$:/info/url/protocol}prefix[https]]">
-$1
-</$list>
