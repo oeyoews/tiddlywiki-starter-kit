@@ -10,6 +10,8 @@
   "meat#disabled": "yes",
   "qrcode": "yes",
   "created": "2023-12-28",
-  "dependents": [],
+  "dependents": [
+    "$:/plugins/tiddlywiki/markdown"
+  ],
   "list": "readme"
 }
