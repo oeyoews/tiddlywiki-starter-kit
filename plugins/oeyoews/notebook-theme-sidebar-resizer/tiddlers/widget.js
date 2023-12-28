@@ -101,20 +101,20 @@ class NotebookResizer extends Widget {
   }
 
   checkTheme() {
+    // TODO: 或许可以借助split 获取主题
     const theme = this.getText(this.themeTiddler);
 
-    // notebook
     if (this.notebook.theme.includes(theme)) {
       return this.notebook.name;
     }
 
-    // whitespace
-    if (theme == this.whitespace.theme) {
-      return this.whitespace.name;
+    // 或许可以做一个映射
+    switch (theme) {
+      case this.whitespace.theme:
+        return this.whitespace.name;
+      default:
+        return this.VANILLA;
     }
-
-    // vanilla
-    return this.VANILLA;
   }
 
   presetForVanillaTheme() {
@@ -138,30 +138,27 @@ class NotebookResizer extends Widget {
       return this.LEFT;
     }
 
-    if (this.theme === this.whitespace.name) {
-      if (!$tw.wiki.tiddlerExists(this.whitespace.positionTiddler)) {
-        return this.LEFT;
-      }
-      return this.getText(this.whitespace.positionTiddler);
+    switch (this.theme) {
+      case this.whitespace.name:
+        if (!$tw.wiki.tiddlerExists(this.whitespace.positionTiddler)) {
+          return this.LEFT;
+        }
+        return this.getText(this.whitespace.positionTiddler);
+
+      case this.notebook.name:
+        if (!$tw.wiki.tiddlerExists(this.notebook.positionTiddler)) {
+          return this.LEFT;
+        }
+
+        const { position = this.LEFT } = $tw.wiki.getTiddler(
+          this.notebook.positionTiddler
+        ).fields;
+
+        return position;
+
+      default:
+        return this.RIGHT;
     }
-
-    if (this.theme === this.VANILLA) {
-      return this.RIGHT;
-    }
-
-    // notebook
-    if (this.theme === this.notebook.name) {
-      if (!$tw.wiki.tiddlerExists(this.notebook.positionTiddler)) {
-        return this.LEFT;
-      }
-
-      const { position = this.LEFT } = $tw.wiki.getTiddler(
-        this.notebook.positionTiddler
-      ).fields;
-
-      return position;
-    }
-    return this.RIGHT;
   }
 
   getDefaultSidebarWidth() {
@@ -190,6 +187,7 @@ class NotebookResizer extends Widget {
 
   stopResize(e) {
     this.isResizing = false;
+    // 监听事件的this 指向全局window, 如果希望指向当前 class 的this , 可以使用箭头函数, 或者手动修改this 指向
     document.removeEventListener('pointermove', (e) => this.resize(e));
   }
 

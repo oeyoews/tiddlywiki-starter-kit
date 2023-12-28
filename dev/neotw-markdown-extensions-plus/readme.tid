@@ -1,0 +1,146 @@
+title: $:/plugins/oeyoews/neotw-markdown-extensions/readme
+type: text/markdown
+description: ~Markdown Extensions
+
+<div class="prose max-w-none prose-indigo">
+
+## Neotw Markdown Extensions
+
+<hr>
+
+## Markdown-it Plugins
+
+## Pangu
+
+當你凝視著 bug，bug 也凝視著你
+
+### SmartArrows
+
+--> →
+
+<-- ←
+
+<--> ↔
+
+==> ⇒
+
+<== ⇐
+
+<==> ⇔
+
+### Emoji
+
+* :tada: :smile: :cat:
+
+### Abbr
+
+* Tiddlywiki
+* 太微
+
+## 测试
+
+### Link Support
+
+* [[Readme|$:/plugins/oeyoews/neotw-markdown-extensions/readme]] Link(include double brackets)
+
+* [Readme](#$:/plugins/oeyoews/neotw-markdown-extensions/readme)
+
+### 段落
+
+这是一段普通的文本。
+
+段落之间需要空行。
+
+换行需要使用 `<br>` 或者加上两个空格。
+
+字体可以使用 *斜体* 或者 **粗体** 或者 ***斜粗体***。
+
+删除线可以使用 ~~删除线~~。
+
+### 无序列表
+
+- 列表项 1
+- 列表项 2
+- 列表项 3
+
+### 有序列表
+
+1. 列表项 1
+2. 列表项 2
+3. 列表项 3
+
+### 引用
+
+> 这是一段引用的文本。
+
+### 行内代码
+
+这是一段代码：`print("Hello world!")`
+
+### 代码块
+
+```js
+console.log('hi')
+```
+
+<hr>
+
+### Better render
+
+* (c)
+* (tm)
+* (r)
+* ?????
+* !!!!!!
+* ......
+
+### Macro Support
+
+### image
+
+```
+![http image](https://neotw.oeyoewl.top/favicon.ico)
+```
+
+![http image](https://neotw.oeyoewl.top/favicon.ico)
+
+```
+![alt text](<#tom.png>)
+```
+
+### underline
+
+++inserted text++
+
+### mark
+
+==dmeo==
+
+X^2^
+
+### table
+
+|Left Aligned |Centered   |Right Aligned |
+|:---         |   :---:   |          ---:|
+|apple        |bat        |candle        |
+
+### footnote
+
+Here's a simple footnote,[^1] and here's a longer one.[^bignote]
+
+[^1]: This is the first footnote.
+
+[^bignote]: Here's one with multiple paragraphs and code.
+
+    Indent paragraphs to include them in the footnote.
+
+    `{ my code }`
+
+    Add as many paragraphs as you like.
+
+*[Tiddlywiki]: TiddlyWiki is a unique non-linear personal web notebook that allows users to create, organize, and share content in a highly flexible and customizable manner. It is an open-source wiki software written in JavaScript and designed to run entirely in the web browser. TiddlyWiki is known for its simplicity, portability, and powerful features.
+*[太微]: Chinese Name of Tiddlywiki
+
+https://pkmer.cn/Pkmer-Docs/10-obsidian/obsidian%E5%A4%96%E8%A7%82/css-%E7%89%87%E6%AE%B5/obsidian%E6%A0%B7%E5%BC%8F-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BE%85%E5%8A%9E%E5%9B%BE%E6%A0%87/
+
+</div>

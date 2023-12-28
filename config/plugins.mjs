@@ -34,6 +34,13 @@ const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
 
 // oeyoews plugins
 const oeyoewsPlugins = [
+  'markdown-it-emoji',
+  'markdown-it-pangu',
+  'markdown-it-abbr',
+  'markdown-it-front-matter',
+  'markdown-it-github-alert',
+  'markdown-it-smartarrows',
+  'markdown-extensions-startup',
   'translate',
   'pangu',
   'ejs',
@@ -42,7 +49,6 @@ const oeyoewsPlugins = [
   'notebook-theme-sidebar-resizer',
   'neotw-music-with-howler',
   'tiddlywiki-banners',
-  'neotw-markdown-extensions',
   'font-geist',
   'neotw-fetch',
   'qrcode',
