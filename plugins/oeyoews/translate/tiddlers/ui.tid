@@ -5,7 +5,7 @@ description: translate tiddler
 caption: Translate
 
 \whitespace trim
-<$list filter="[all[current]!is[system]!field:translate[yes]]">
+<$list filter="[all[current]!is[system]field:translate[yes]]">
 <$button message="om-translate-tiddler" tooltip="format tiddler" aria-label="translate" class=<<tv-config-toolbar-class>>>
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">

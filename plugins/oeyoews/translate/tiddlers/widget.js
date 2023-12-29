@@ -45,6 +45,5 @@ class ExampleWidget extends Widget {
 
 /**
  * @description translate widget
- * @param xxx
  */
 exports.test = ExampleWidget;
