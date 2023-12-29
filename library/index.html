@@ -563,15 +563,15 @@ var assetList = [
         "title": "$:/plugins/oeyoews/nprogress",
         "description": "nprogress",
         "author": "oeyoews",
-        "version": "1.1.0",
-        "core-version": ">=5.3.1",
+        "version": "2.0.0",
+        "core-version": ">=5.3.0",
         "type": "application/json",
         "meta#disabled": "yes",
         "plugin-type": "plugin",
         "name": "nprogress",
         "list": "readme",
         "dependents": "",
-        "readme": "> nprogress tiddlywiki 版本\n\n```js\nnew $tw.NProgress().start()\nnew $tw.NProgress().done()\n\n// widget\nthis.parentWidget.dispatchEvent({\n\ttype: 'om-nprogress',\n});\n```\n\n```html\n<$button message=\"om-nprogress\">\nstart\n</$button >\n\n<$button >\n<$action-sendmessage $message=\"om-nprogress\" type=\"start\" />\nstart\n</$button>\n```",
+        "readme": "> nprogress tiddlywiki 版本\n\n```js\n$tw.NProgress.start()\n$tw.NProgress.done()\n\n// widget\nthis.parentWidget.dispatchEvent({\n\ttype: 'om-nprogress',\n});\n```\n\n```html\n<$button message=\"om-nprogress\">\nstart\n</$button >\n\n<$button >\n<$action-sendmessage $message=\"om-nprogress\" type=\"start\" />\nstart\n</$button>\n```",
         "requires-reload": "yes"
     },
     {
