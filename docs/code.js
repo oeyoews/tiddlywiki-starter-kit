@@ -5,53 +5,81 @@ description: tw-typed is a tw api declaration for typescript, it also works for 
 \*/
 
 // wiki api
-const wiki = $tw.wiki;
+// 主要介绍了一些常用的 tiddlywiki api(JavaScript), 搭配 tw5-typed 效果更好, 代码可在使用tiddlywiki网页的控制台进行测试
 
-// some methods
+// 首先这是 99% 你写插件会用到的 api. 大部分常用的方法都在 wiki 里面了
+const wiki = $tw.wiki;
+const title = 'tiddlywiki-api-tiddler-title';
+
+// json type
+const dataTiddler = {
+  title: 'data-obj',
+  text: 'random text'
+};
+
+// 赋值方法, 其实也可以直接 使用navigator.clipboard(), 不过 tiddlywiki 主要考虑使用es5为了兼容性更高, 所以建议直接使用内置的复制api
 $tw.utils.copyToClipboard();
 
 // get/add/set/delete/search
-wiki.getTiddler().fields;
-wiki.getTiddlerData();
+
+// 获取到某个 tiddler 的所有信息字段
+wiki.getTiddler(title).fields;
+
+// 加载某个 json 类型的tiddler, 作为对象
+wiki.getTiddlerData(dataTiddler);
+
+// 获取到某个tiddler 的正文, 其实就是tiddler 的text 字段
 wiki.getTiddlerText();
-wiki.addTiddler();
-wiki.setText(title, key, null, value);
-wiki.deleteTiddler();
+// 等价于这种写法
+wiki.getTiddler(title).fields.text;
+
+// 编程式写法: 新增加一个tiddler
+wiki.addTiddler({
+  title: 'new tiddler',
+  text: 'random text'
+});
+// 删除某个tiddler
+wiki.deleteTiddler(title);
+
+// 更新某个tiddler 的text
+wiki.setText(title, 'text', null, 'random text', {
+  suppressTimestamp: true // 不更新时间戳, 默认为false更新时间戳
+});
+
+// 根据 tiddlywiki 的筛选器, 批量获取 tiddler
 wiki.filterTiddlers('[!is[system]]');
-wiki.getTiddlersWithTag(tag);
-$tw.wiki.getTiddlersAsJson(title);
+
+// 直接按照 tiddler 的 tag 过滤tiddler
+wiki.getTiddlersWithTag('游戏');
+
+// wip
+wiki.getTiddlersAsJson(title);
+
 const logger = new $tw.utils.Logger('alert title');
+
+// 类似 window.alert
 logger.alert('xxx');
 
+// wip
 wiki.setTiddlerData(title, data, fields, options);
 
 // dom
 $tw.utils.domMaker; // createElement
 
-wiki.addTiddler(
-  new $tw.Tiddler({
-    title: 'title content',
-    text: 'text content'
-  })
-);
-
-wiki.addTiddler({
-  title: 'title content',
-  text: 'text content'
-});
 // https://github.com/Jermolene/TiddlyWiki5/blob/4b56cb42983d4134715eb7fe7b083fdcc04980f0/core/modules/startup/rootwidget.js#L58
-$tw.notifier.display(tiddler); // send notification
+
+// 显示一个通知
+$tw.notifier.display(title); // send notification
+
+// 显示 dialog
 $tw.modal.display(title); // show a dialog
 
+// wip
 $tw.syncer.logger.alert('alert');
 
 // widget
 this.getVariable('currentTiddler'); // 获取当前条目名称;
 this.getVariable('storyTiddler'); // 判断是否是处于 story river
-
-/** class
- *
- */
 
 // 如果目标元素没有 class 可以使用，仅支持单个 class
 // $tw.utils.addClass(commode, 'font-bold')
@@ -126,7 +154,7 @@ nprogress module
 
 //# sourceURL=nprogress/startup.js
 
-// NOTE: rendertext always add p tag automatically
+// 渲染 tiddler, 支持wikitext
 const icon = $tw.wiki.renderText(
   'text/html',
   'text/vnd.tiddlywiki',
@@ -135,8 +163,3 @@ const icon = $tw.wiki.renderText(
     parseAsInline: true // no extra tag
   }
 );
-
-// disable timestamp
-$tw.wiki.setText(title, null, null, formatedText, {
-  suppressTimestamp: true
-});
