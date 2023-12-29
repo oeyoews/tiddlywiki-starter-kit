@@ -1,2 +1,3 @@
 packages:
   - 'packages/*'
+  - '!packages/tw5-plugins-types'

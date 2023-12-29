@@ -75,9 +75,6 @@ importers:
       simple-git-hooks:
         specifier: ^2.9.0
         version: 2.9.0
-      tw5-plugins-types:
-        specifier: workspace:^
-        version: link:packages/tw5-plugins-types
       tw5-typed:
         specifier: ^0.4.0
         version: 0.4.0
@@ -162,18 +159,6 @@ importers:
       typescript:
         specifier: ^5.3.3
         version: 5.3.3
-
-  packages/tw5-plugins-types:
-    dependencies:
-      '@types/ejs':
-        specifier: ^3.1.5
-        version: 3.1.5
-      nprogress:
-        specifier: ^0.2.0
-        version: 0.2.0
-      simple-notify:
-        specifier: ^0.5.5
-        version: 0.5.5
 
 packages:
 
@@ -696,10 +681,6 @@ packages:
     dependencies:
       '@types/zrender': 4.0.6
     dev: true
-
-  /@types/ejs@3.1.5:
-    resolution: {integrity: sha512-nv+GSx77ZtXiJzwKdsASqi+YQ5Z7vwHsTP0JY2SiQgjGckkBRKZnk8nIM+7oUZ1VCtuTz0+By4qVR7fqzp/Dfg==}
-    dev: false
 
   /@types/estree@1.0.5:
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
@@ -1962,10 +1943,6 @@ packages:
       path-key: 3.1.1
     dev: true
 
-  /nprogress@0.2.0:
-    resolution: {integrity: sha512-I19aIingLgR1fmhftnbWWO3dXc0hSxqHQHQb3H8m+K3TnEn/iSeTZZOyvKXWqQESMwuUVnatlCnZdLBZZt2VSA==}
-    dev: false
-
   /nssocket@0.6.0:
     resolution: {integrity: sha512-a9GSOIql5IqgWJR3F/JXG4KpJTA3Z53Cj0MeMvGpglytB1nxE4PdFNC0jINe27CS7cGivoynwc054EzCcT3M3w==}
     engines: {node: '>= 0.10.x'}
@@ -2504,10 +2481,6 @@ packages:
     hasBin: true
     requiresBuild: true
     dev: true
-
-  /simple-notify@0.5.5:
-    resolution: {integrity: sha512-zsFPqTqoSOcAGdvT76NdxkceC0kKiRSLJLVD6fn2o2j17bwUMw3cl9f07aLmojAHeNzQRUeXNxYK4OCumIcC4g==}
-    dev: false
 
   /sisteransi@1.0.5:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
