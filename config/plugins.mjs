@@ -34,6 +34,7 @@ const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
 
 // oeyoews plugins
 const oeyoewsPlugins = [
+  'image-observer',
   'markdown-it-emoji',
   'markdown-it-pangu',
   'markdown-it-abbr',

@@ -16,6 +16,7 @@
     "tiddlywiki/highlight",
     "tiddlywiki/browser-sniff",
     "tiddlywiki/pluginlibrary",
+    "oeyoews/image-observer",
     "oeyoews/markdown-it-emoji",
     "oeyoews/markdown-it-pangu",
     "oeyoews/markdown-it-abbr",
