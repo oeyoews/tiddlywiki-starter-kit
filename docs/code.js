@@ -4,6 +4,7 @@ type: application/javascript
 description: tw-typed is a tw api declaration for typescript, it also works for javascript;下面是插件开发中经常使用到的一些方法
 \*/
 
+// TODO: add tw5-plugin-tutorial plugin
 // wiki api
 // 主要介绍了一些常用的 tiddlywiki api(JavaScript), 搭配 tw5-typed 效果更好, 代码可在使用tiddlywiki网页的控制台进行测试
 
@@ -16,11 +17,6 @@ const dataTiddler = {
   title: 'data-obj',
   text: 'random text'
 };
-
-// 赋值方法, 其实也可以直接 使用navigator.clipboard(), 不过 tiddlywiki 主要考虑使用es5为了兼容性更高, 所以建议直接使用内置的复制api
-$tw.utils.copyToClipboard();
-
-// get/add/set/delete/search
 
 // 获取到某个 tiddler 的所有信息字段
 wiki.getTiddler(title).fields;
@@ -92,6 +88,7 @@ exports.addClass = function (el, className) {
   }
 };
 
+// 不常用
 // 移除 class
 exports.removeClass = function (el, className) {
   var c = (el.getAttribute('class') || '').split(' '),
@@ -102,6 +99,7 @@ exports.removeClass = function (el, className) {
   }
 };
 
+// 不常用
 // 切换 class
 exports.toggleClass = function (el, className, status) {
   if (status === undefined) {
@@ -163,3 +161,6 @@ const icon = $tw.wiki.renderText(
     parseAsInline: true // no extra tag
   }
 );
+
+// 赋值方法, 其实也可以直接 使用navigator.clipboard(), 不过 tiddlywiki 主要考虑使用es5为了兼容性更高, 所以建议直接使用内置的复制api
+$tw.utils.copyToClipboard();
