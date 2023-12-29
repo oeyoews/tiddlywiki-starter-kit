@@ -8,9 +8,7 @@ module-type: global
 const NProgress = require('nprogress.min.js');
 
 class NprogressGlobal {
-  constructor(config) {
-    this.configure(config);
-  }
+  constructor() {}
 
   static configure(config) {
     const defaultConfig = {

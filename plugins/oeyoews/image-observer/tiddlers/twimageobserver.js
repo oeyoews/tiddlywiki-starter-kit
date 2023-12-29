@@ -1,5 +1,5 @@
 /*\
-title: $:/plugins/oeyoews/neotw-notion-gallery/twimageobserver.js
+title: $:/plugins/oeyoews/image-observer/twimageobserver.js
 type: application/javascript
 module-type: global
 
