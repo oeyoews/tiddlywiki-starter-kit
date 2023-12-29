@@ -55,6 +55,7 @@ module.exports = async function (title) {
     // });
     story.navigateTiddler(newTitle);
     nprogress.done();
+    $tw.Confetti.pretty();
   } catch (e) {
     console.warn(e);
     nprogress.done();

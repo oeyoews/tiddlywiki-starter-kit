@@ -11,7 +11,8 @@
   "qrcode": "yes",
   "created": "2023-12-26",
   "dependents": [
-    "$:/plugins/oeyoews/nprogress"
+    "$:/plugins/oeyoews/nprogress",
+    "$:/plugins/oeyoews/confetti"
   ],
   "list": "readme"
 }
