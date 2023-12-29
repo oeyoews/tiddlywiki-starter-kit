@@ -50,7 +50,7 @@
     "prettier": "^3.1.1",
     "randomstring-plus": "workspace:^",
     "simple-git-hooks": "^2.9.0",
-    "tw5-typed": "^0.4.0",
+    "tw5-typed": "^0.4.1",
     "typescript": "^5.3.3"
   }
 }
