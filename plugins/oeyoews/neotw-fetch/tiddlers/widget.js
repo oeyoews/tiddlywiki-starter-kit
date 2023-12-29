@@ -30,7 +30,7 @@ class FetchWidget extends Widget {
         text: '缺失 NProgress 插件'
       });
     }
-    const progress = new $tw.NProgress();
+    const progress = $tw.NProgress;
 
     const defaulturl =
       'https://raw.githubusercontent.com/oeyoews/neotw/main/README.md';

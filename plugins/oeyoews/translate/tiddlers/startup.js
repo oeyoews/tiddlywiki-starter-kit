@@ -20,7 +20,7 @@ exports.startup = () => {
     // TODO: support translate english title
     const type = $tw.wiki.getTiddler(title).fields.type;
     const content = $tw.wiki.getTiddlerText(title);
-    const nprogress = new $tw.NProgress();
+    const nprogress = $tw.NProgress;
 
     nprogress.start();
 

@@ -12,18 +12,18 @@ class NprogressGlobal {
     this.configure(config);
   }
 
-  configure(config) {
+  static configure(config) {
     const defaultConfig = {
       showSpinner: true
     };
-    NProgress.configure(config || defaultConfig);
+    NProgress.configure(Object.assign(defaultConfig, config));
   }
 
-  start() {
+  static start() {
     NProgress.start();
   }
 
-  done() {
+  static done() {
     NProgress.done();
   }
 }

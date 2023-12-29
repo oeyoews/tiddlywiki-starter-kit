@@ -3,8 +3,8 @@ title: $:/plugins/oeyoews/nprogress/readme
 > nprogress tiddlywiki 版本
 
 ```js
-new $tw.NProgress().start()
-new $tw.NProgress().done()
+$tw.NProgress.start()
+$tw.NProgress.done()
 
 // widget
 this.parentWidget.dispatchEvent({

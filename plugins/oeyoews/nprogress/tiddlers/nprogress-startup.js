@@ -11,7 +11,7 @@ exports.after = ['load-modules'];
 exports.synchronous = true;
 exports.startup = () => {
   try {
-    const progress = new $tw.NProgress();
+    const progress = $tw.NProgress;
     const startTime = performance.now();
 
     progress.start();

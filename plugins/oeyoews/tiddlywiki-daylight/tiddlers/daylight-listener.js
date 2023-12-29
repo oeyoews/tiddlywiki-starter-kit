@@ -58,7 +58,7 @@ function updateMode(mode, isSaveMode = true) {
 
 // TODO: 切换 system/dark/light 配置，并且刷新 theme, 配置存在 store 里面
 function toggleMode() {
-  const progress = new $tw.NProgress();
+  const progress = $tw.NProgress;
   progress.start();
 
   /* if (hasSystemMode) {
