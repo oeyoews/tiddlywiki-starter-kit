@@ -25,6 +25,7 @@ exports.startup = () => {
   if (req) {
     if ($tw.utils.isArray(req)) {
       req.forEach((item) => {
+        // TODO: how to load markdown plugins options
         md.use(require(item));
       });
     } else {
