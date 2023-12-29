@@ -21,7 +21,7 @@ class GalleryWidget extends Widget {
     this.computeAttributes();
     this.execute();
 
-    const twimageobserver = require('$:/plugins/oeyoews/neotw-notion-gallery/twimageobserver.js');
+    const { observer } = new $tw.ImageObserver();
 
     const createElement = $tw.utils.domMaker;
     const { json = 'image-list.json' } = this.attributes;
@@ -40,7 +40,7 @@ class GalleryWidget extends Widget {
 
     imagesURL.forEach(([title, src]) => {
       const imageNode = createImage(title, src);
-      twimageobserver.observe(imageNode);
+      observer.observe(imageNode);
       children.push(imageNode);
     });
 

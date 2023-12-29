@@ -21,7 +21,7 @@ class ImageWidget extends Widget {
     this.computeAttributes();
     this.execute();
 
-    const twimageobserver = require('$:/plugins/oeyoews/neotw-notion-gallery/twimageobserver.js');
+    const { observer } = new $tw.ImageObserver();
 
     const {
       keyword = 'sea',
@@ -45,7 +45,7 @@ class ImageWidget extends Widget {
       imageNode.title = keyword;
     }
     classNames && imageNode.classList.add(...classNames.split(' '));
-    twimageobserver.observe(imageNode);
+    observer.observe(imageNode);
 
     parent.insertBefore(imageNode, nextSibling);
     this.domNodes.push(imageNode);

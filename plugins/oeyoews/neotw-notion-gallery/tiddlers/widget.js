@@ -31,7 +31,7 @@ class CardsWidget extends Widget {
       );
     }
     // one browser env
-    const twimageobserver = require('./twimageobserver');
+    const twimageobserver = new $tw.ImageObserver().observer;
 
     this.parentDomNode = parent;
     this.computeAttributes();

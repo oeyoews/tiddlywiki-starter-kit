@@ -23,7 +23,9 @@ class BannersWidget extends Widget {
     const createElement = $tw.utils.domMaker;
     // NOTE: tw 支持基于 tw 内部路由，但是仅仅支持 js with module-type library(json not support)
     // const twimageobserver = require('$:/plugins/oeyoews/neotw-notion-gallery/twimageobserver.js');
-    const twimageobserver = require('../neotw-notion-gallery/twimageobserver.js');
+    // const twimageobserver = require('../neotw-notion-gallery/twimageobserver.js');
+
+    const { observer } = new $tw.ImageObserver();
 
     const loading = createElement('div', {
       class: 'bg-gray-200 rounded w-full h-48 animate-pulse'
@@ -38,7 +40,7 @@ class BannersWidget extends Widget {
 
     data.slice(0, 9).forEach(({ src }) => {
       const imageNode = createImage('', src, 'false');
-      twimageobserver.observe(imageNode);
+      observer.observe(imageNode);
       children.push(imageNode);
     });
 

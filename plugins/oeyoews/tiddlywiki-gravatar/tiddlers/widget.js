@@ -21,7 +21,7 @@ class AvatarWidget extends Widget {
 
     const createElement = $tw.utils.domMaker;
     const md5 = require('$:/plugins/oeyoews/tiddlywiki-gravatar/md5.min.js');
-    const twimageobserver = require('$:/plugins/oeyoews/neotw-notion-gallery/twimageobserver.js');
+    const { observer } = new $tw.ImageObserver();
 
     let getDefaultEmail =
       $tw.wiki.getTiddlerText(
@@ -72,7 +72,7 @@ class AvatarWidget extends Widget {
       }
     });
 
-    twimageobserver.observe(imageNode);
+    observer.observe(imageNode);
 
     if (inline) {
       imageNode.classList.remove('w-[48px]');
