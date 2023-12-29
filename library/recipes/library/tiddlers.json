@@ -803,7 +803,7 @@
         "title": "$:/plugins/oeyoews/translate",
         "description": "translate",
         "author": "oeyoews",
-        "version": "0.1.0",
+        "version": "0.2.0",
         "core-version": ">=5.3.0",
         "type": "application/json",
         "plugin-type": "plugin",
@@ -811,9 +811,9 @@
         "meat#disabled": "yes",
         "qrcode": "yes",
         "created": "2023-12-26",
-        "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus $:/plugins/oeyoews/nprogress",
+        "dependents": "$:/plugins/oeyoews/nprogress",
         "list": "readme",
-        "readme": "<!-- plugin template readme -->\n\n> 默认翻译引擎为 Google Translate\n\n## Recipes\n\n- 建议翻译纯文本, 不建议翻译带有 wikitext, 因为 wikitext 不支持全角字符 ! 等字符, 所以一些标题不会被识别\n\n> 其实也可以将翻译的内容提前渲染成 html, 然后翻译(还没试过)\n\n## Motivation\n\n<!-- your plugin motivation, or why you write this plugin -->\n",
+        "readme": "<!-- plugin template readme -->\n\n> 默认翻译引擎为 Google Translate\n\n## Usage\n\n- 在 tiddler 的字段上添加一个 `translate: yes`, 就会自动显示翻译按钮了.\n\n## Recipes\n\n- 建议翻译纯文本, 不建议翻译带有 wikitext, 因为 wikitext 不支持全角字符 ! 等字符, 所以一些标题不会被识别, markdown 遇到 ## 会报错\n\n~~其实也可以将翻译的内容提前渲染成 html, 然后翻译(还没试过)~~ 试过了, 不行, 有 bug.\n\n## Motivation\n\n<!-- your plugin motivation, or why you write this plugin -->\n",
         "requires-reload": "yes"
     }
 ]
