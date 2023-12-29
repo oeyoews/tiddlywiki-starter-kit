@@ -1,9 +1,10 @@
 {
 	"name": "tw5-plugins-types",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "tw5 plugins types",
 	"types": "index.d.ts",
 	"files": [
+		"src",
 		"index.d.ts"
 	],
 	"keywords": [
