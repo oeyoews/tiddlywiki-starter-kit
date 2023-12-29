@@ -8,5 +8,8 @@
   "meta#disabled": "yes",
   "plugin-type": "plugin",
   "name": "nprogress",
+  "dependents": [
+    "$:/plugins/oeyoews/confetti"
+  ],
   "list": "readme"
 }
