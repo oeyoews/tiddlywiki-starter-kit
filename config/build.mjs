@@ -1,7 +1,7 @@
 import config from './index.js';
 
 /**
- * @type {import('tw5-typed').ITiddlyWikiInfoJSONBuild}
+ * @type {import('tiddlywiki').ITiddlyWikiInfoJSONBuild}
  * @description tiddlywiki 构建命令
  */
 export default {
