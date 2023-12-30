@@ -13,14 +13,19 @@ class ConfettiGlobal {
       require('./confetti.min.js');
     }
   }
+  static reset() {
+    window.confetti.reset();
+  }
   // 暂时不支持实例化.
   static display(option = {}) {
     ConfettiGlobal.initialize();
+    ConfettiGlobal.reset();
     window.confetti(option);
   }
 
   static fireworks() {
     ConfettiGlobal.initialize();
+    ConfettiGlobal.reset();
     var duration = 1 * 1000;
     var animationEnd = Date.now() + duration;
     var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
@@ -53,6 +58,7 @@ class ConfettiGlobal {
 
   static pretty() {
     ConfettiGlobal.initialize();
+    ConfettiGlobal.reset();
     // note: you CAN only use a path for confetti.shapeFrompath(), but for
     // performance reasons it is best to use it once in development and save
     // the result to avoid the performance penalty at runtime
