@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/confetti-background/pageTemplate
+tags: $:/tags/PageTemplate
+
+<div class="fixed inset-0 pointer-events-none print:hidden -z-10">
+	<$confettibg />
+</div>
