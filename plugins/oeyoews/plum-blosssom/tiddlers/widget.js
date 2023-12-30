@@ -20,7 +20,6 @@ class PlumWidget extends Widget {
     this.execute();
 
     const canvas = document.createElement('canvas');
-    canvas.id = 'plum-blosssom';
 
     const plum = require('./plum');
     plum(canvas);
