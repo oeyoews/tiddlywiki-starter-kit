@@ -78,6 +78,23 @@
         "requires-reload": "yes"
     },
     {
+        "title": "$:/plugins/oeyoews/confetti-background",
+        "description": "confetti-background",
+        "author": "oeyoews",
+        "version": "0.0.1",
+        "core-version": ">=5.3.0",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "confetti-background",
+        "meat#disabled": "yes",
+        "qrcode": "yes",
+        "created": "2023-12-30",
+        "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
+        "list": "readme",
+        "readme": "<!-- plugin template readme -->\n\n## Motivation\n\n- https://github.com/Agezao/confetti-js\n\n<!-- your plugin motivation, or why you write this plugin -->\n",
+        "requires-reload": "yes"
+    },
+    {
         "version": "0.0.2",
         "type": "application/json",
         "title": "$:/plugins/oeyoews/echarts-addons",
