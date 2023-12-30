@@ -5,24 +5,31 @@ module-type: global
 
 \*/
 
-const NProgress = require('nprogress.min.js');
-
 class NprogressGlobal {
   constructor() {}
 
+  static requireNProgress() {
+    if (!NprogressGlobal.NProgress) {
+      NprogressGlobal.NProgress = require('nprogress.min.js');
+    }
+  }
+
   static configure(config) {
+    NprogressGlobal.requireNProgress();
     const defaultConfig = {
       showSpinner: true
     };
-    NProgress.configure(Object.assign(defaultConfig, config));
+    NprogressGlobal.NProgress.configure(Object.assign(defaultConfig, config));
   }
 
   static start() {
-    NProgress.start();
+    NprogressGlobal.requireNProgress();
+    NprogressGlobal.NProgress.start();
   }
 
   static done() {
-    NProgress.done();
+    NprogressGlobal.requireNProgress();
+    NprogressGlobal.NProgress.done();
   }
 }
 

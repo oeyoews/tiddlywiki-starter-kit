@@ -1,0 +1,15 @@
+{
+	"name": "tw5-types-patch",
+	"version": "1.0.1",
+	"description": "tw5 types",
+	"types": "index.d.ts",
+	"files": [
+		"index.d.ts"
+	],
+	"keywords": [
+		"tiddlywiki"
+	],
+	"author": "oeyoews",
+	"license": "MIT",
+	"dependencies": {}
+}
