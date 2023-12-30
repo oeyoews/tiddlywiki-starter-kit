@@ -15,7 +15,6 @@ module.exports = function (canvas) {
     const ctx = canvas.getContext('2d');
 
     const dpr = window.devicePixelRatio || 1;
-    // @ts-expect-error vendor
     const bsr =
       ctx.webkitBackingStorePixelRatio ||
       ctx.mozBackingStorePixelRatio ||
