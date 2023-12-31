@@ -28,6 +28,7 @@ hr {
   /* display: inline; */
   background-image: linear-gradient(135deg, #12c2e9, #ffafbd, #c9ffbf);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 
@@ -63,10 +64,6 @@ blockquote > div {
 
 .tc-tiddler-frame input.tc-edit-texteditor {
   border: none;
-}
-
-.CodeMirror {
-  border: 0;
 }
 
 /* remove extra underline with image lin */
@@ -124,9 +121,27 @@ a {
   font-size: 20px;
 }
 
+/* cm5 */
+/* .CodeMirror {
+  border: 0;
+}
+
 .CodeMirror-wrap pre.CodeMirror-line {
   font-size: 20px;
 }
+.CodeMirror-wrap pre.CodeMirror-line {
+	font-size: 18x;
+}
+
+.cm-s-tiddlywiki .CodeMirror-activeline-background,
+.cm-s-tiddlywiki .CodeMirror-activeline-gutter .CodeMirror-linenumber {
+  background: #00000008;
+}
+
+.CodeMirror-wrap pre.CodeMirror-line {
+    font-size: 20px !important;
+}
+*/
 
 /* remove btn border */
 button {
@@ -155,4 +170,14 @@ button {
 
 select {
   border: none;
+}
+
+/* editor view */
+.tc-tiddler-preview-preview {
+  border: none !important;
+  font-size: 20px;
+}
+
+.nc-bar input[type='search']:focus {
+  box-shadow: 0 0 0 0 transparent;
 }

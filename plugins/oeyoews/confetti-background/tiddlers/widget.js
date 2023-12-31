@@ -44,10 +44,15 @@ class ConfettiBgWidget extends Widget {
     };
 
     const confetti = new ConfettiGenerator(options);
+    // confetti.clear()
     confetti.render();
 
     parent.insertBefore(canvas, nextSibling);
     this.domNodes.push(canvas);
+  }
+
+  refresh() {
+    return false;
   }
 }
 

@@ -253,7 +253,12 @@ input[type="search"]::-webkit-search-cancel-button {
   color: <<colour tiddler-background>>;
   fill: <<colour tiddler-background>>;
   background: <<colour primary>>;
-  border-bottom: 1px solid rgba(0,0,0,.1);
+  <!-- border-bottom: 1px solid rgba(0,0,0,.1); -->
+  border: none;
+}
+
+.nc-sidebar .section .label {
+  border-radius: 3px;
 }
 
 .nc-sidebar .section .label .caret {
@@ -634,3 +639,9 @@ div.tc-tab-buttons button.tc-tab-selected {
 }
 
 {{$:/themes/nico/notebook/custom}}
+
+
+<!-- mobile -->
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
+.nc-bottombar, .nc-sidebar { display: none; }
+</$list>
