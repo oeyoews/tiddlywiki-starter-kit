@@ -2,7 +2,7 @@ title: $:/core/ui/EditTemplate/title
 tags: $:/tags/EditTemplate
 
 \whitespace trim
-<$edit-text field="draft.title" class="tc-titlebar tc-edit-texteditor bg-transparent focus:bg-[#F7F7F7] shadow-none placeholder:text-zinc-400 dark:bg-transparent caret-indigo-400" focus="true" tabindex={{$:/config/EditTabIndex}} placeholder="Title"/>
+<$edit-text field="draft.title" class="tc-titlebar tc-edit-texteditor bg-transparent focus:bg-[#F7F7F7] dark:focus:bg-gray-700 shadow-none placeholder:text-zinc-400 dark:bg-transparent caret-indigo-400" focus="true" tabindex={{$:/config/EditTabIndex}} placeholder="Title"/>
 
 <$reveal state="!!draft.title" type="nomatch" text={{!!draft.of}} tag="div">
 

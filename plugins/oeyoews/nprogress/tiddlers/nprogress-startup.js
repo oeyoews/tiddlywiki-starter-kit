@@ -28,7 +28,7 @@ exports.startup = () => {
 
     window.addEventListener('load', () => {
       progress.done();
-      $tw.Confetti.pretty();
+      // $tw.Confetti.pretty();
       const loadTime = Math.floor(performance.now() - startTime);
       console.log(`🎉 Page loaded in ${loadTime}ms`);
     });
