@@ -23,10 +23,15 @@ class ConfettiBgWidget extends Widget {
 
     const canvas = this.document.createElement('canvas');
 
+    const {
+      width = window.innerWidth,
+      height = window.innerHeight,
+      size = '0.8'
+    } = this.attributes;
     const options = {
       target: canvas,
       max: '40',
-      size: '0.8',
+      size,
       animate: true,
       props: ['circle'],
       colors: [
@@ -37,10 +42,10 @@ class ConfettiBgWidget extends Widget {
       ],
       clock: '5',
       rotate: false,
-      width: '1494',
-      height: '845',
       start_from_edge: false,
-      respawn: true
+      respawn: true,
+      width,
+      height
     };
 
     const confetti = new ConfettiGenerator(options);
