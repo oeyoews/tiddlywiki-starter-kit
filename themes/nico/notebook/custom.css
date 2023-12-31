@@ -94,15 +94,17 @@ a {
   box-shadow: 0 5px 20px rgb(0 0 0 / 12%);
 }
 
-/* better editor bar */
-.tc-tiddler-controls .tc-image-delete-button {
-  fill: #ebb;
-}
-.tc-tiddler-controls .tc-image-cancel-button {
-  fill: #ed9;
-}
-.tc-tiddler-controls .tc-image-done-button {
-  fill: #beb;
+/* better editor bar @kookma plugin */
+.tc-tiddler-controls {
+  & .tc-image-delete-button {
+    fill: #ebb;
+  }
+  & .tc-image-cancel-button {
+    fill: #ed9;
+  }
+  & .tc-image-done-button {
+    fill: #beb;
+  }
 }
 
 /* just show btn on hover */
@@ -115,7 +117,6 @@ a {
   filter: alpha(opacity=100);
   opacity: 1;
 }
-
 /* enhance font size */
 .tc-tiddler-frame .tc-tiddler-body {
   font-size: 20px;
