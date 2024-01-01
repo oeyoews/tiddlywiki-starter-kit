@@ -164,3 +164,7 @@ const icon = $tw.wiki.renderText(
 
 // 赋值方法, 其实也可以直接 使用navigator.clipboard(), 不过 tiddlywiki 主要考虑使用es5为了兼容性更高, 所以建议直接使用内置的复制api
 $tw.utils.copyToClipboard();
+
+// ???
+$tw.rootWidget.invokeAction('');
+$tw.rootWidget.invokeActionString();
