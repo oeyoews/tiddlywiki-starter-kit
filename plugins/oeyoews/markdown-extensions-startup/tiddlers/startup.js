@@ -20,6 +20,7 @@ exports.startup = () => {
 
   // load markdownit modules
   const modules = $tw.modules.types['markdownit'];
+  if (!modules) return;
   const req = Object.getOwnPropertyNames(modules);
 
   if (req) {
