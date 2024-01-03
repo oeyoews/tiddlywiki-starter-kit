@@ -173,7 +173,7 @@ class NotebookResizer extends Widget {
       } else {
         this.width = window.innerWidth - clientX;
       }
-      if (this.width / window.innerWidth > 0.75) {
+      if (this.width / window.innerWidth > 0.5) {
         return;
       }
       if (this.width / window.innerWidth < 0.05) {
