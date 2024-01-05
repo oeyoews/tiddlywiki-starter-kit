@@ -50,7 +50,7 @@ const oeyoewsPlugins = [
   'pangu',
   'ejs',
   'skill-badges',
-  'artplayer',
+  // 'artplayer',
   'notebook-theme-sidebar-resizer',
   'neotw-music-with-howler',
   'tiddlywiki-banners',
