@@ -11,5 +11,13 @@ module.exports = [
   {
     title: 'note',
     text: ':::note\n${2:text}\n:::'
+  },
+  {
+    title: 'tip',
+    text: ':::tip\n${2:text}\n:::'
+  },
+  {
+    title: 'unsplash image',
+    text: 'https://source.unsplash.com/random/1920x1080?fm=blurhash&${sea}'
   }
 ];
