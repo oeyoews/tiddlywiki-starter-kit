@@ -6,6 +6,12 @@ module-type: snippets
 tiddlywiki-cmp module
 
 \*/
+const emojis = require('./emojilist');
+
+const emojisnippets = Object.entries(emojis).map((emoji) => ({
+  title: emoji[0],
+  text: emoji[1]
+}));
 
 module.exports = [
   {
@@ -19,5 +25,6 @@ module.exports = [
   {
     title: 'unsplash image',
     text: 'https://source.unsplash.com/random/1920x1080?fm=blurhash&${sea}'
-  }
+  },
+  ...emojisnippets
 ];
