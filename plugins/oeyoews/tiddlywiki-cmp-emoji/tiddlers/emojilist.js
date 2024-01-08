@@ -1,5 +1,5 @@
 /*\
-title: $:/plugins/oeyoews/tiddlywiki-cmp/emojilist.js
+title: $:/plugins/oeyoews/tiddlywiki-cmp-emoji/emojilist.js
 type: application/javascript
 module-type: library
 

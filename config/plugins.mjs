@@ -35,6 +35,7 @@ const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
 // oeyoews plugins
 const oeyoewsPlugins = [
   'tiddlywiki-cmp',
+  'tiddlywiki-cmp-emoji',
   'confetti-background',
   'plum-blosssom',
   'confetti',
