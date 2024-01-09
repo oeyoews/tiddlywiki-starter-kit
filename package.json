@@ -14,6 +14,7 @@
     "update:tw": "pnpm install github:Jermolene/TiddlyWiki5",
     "build-with-bun": "bun run ./lib/build.ts",
     "format": "prettier  --write .",
+    "minify": "node lib/minify.js",
     "format:md": "autocorrect --fix",
     "build:docker": "docker-compose build",
     "docker:push": "docker-compose push",
@@ -50,6 +51,7 @@
     "prettier": "^3.1.1",
     "randomstring-plus": "workspace:^",
     "simple-git-hooks": "^2.9.0",
+    "terser": "^5.26.0",
     "tw5-typed": "^0.4.1",
     "typescript": "^5.3.3"
   }
