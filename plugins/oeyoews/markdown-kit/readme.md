@@ -25,6 +25,7 @@
 
 ## NOTE
 
+- enable markdown past image: https://github.com/Jermolene/TiddlyWiki5/issues/7924
 - 目前 markdown 有一个比较严重的错误，但是可以规避 [github issue](https://github.com/Jermolene/TiddlyWiki5/issues/7782)
 - 不要拖拽此插件，否则插件依赖不会安装，请使用 [CPL](https://tw-cpl.netlify.app/#Welcome:Index%20Welcome) 安装
 - codemirror-mode-markdown 依赖插件 mode-xml
