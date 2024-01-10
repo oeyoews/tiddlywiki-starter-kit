@@ -20,6 +20,7 @@ class VideoWidget extends Widget {
     this.computeAttributes();
     this.execute();
 
+    // fakedom will cause widget preview error
     const createElement = $tw.utils.domMaker;
 
     const {

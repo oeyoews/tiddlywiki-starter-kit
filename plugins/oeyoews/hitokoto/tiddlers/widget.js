@@ -20,7 +20,10 @@ class HitokotoWidget extends Widget {
     this.computeAttributes();
     this.execute();
 
-    const createElement = $tw.utils.domMaker;
+    const domNode = this.document.createElement('div');
+    if (domNode.isTiddlyWikiFakeDom) {
+      return;
+    }
     const widgetTitle = this.getVariable('currentTiddler');
 
     // 限制 99 条，否则文字多了后会卡顿
@@ -61,6 +64,7 @@ class HitokotoWidget extends Widget {
       authorNode.textContent = creator ? `@${creator}` : '';
       footerNode.className = 'flex flex-wrap text-sm md:justify-between';
       footerNode.append(timeNode, authorNode);
+
       if (!$tw.wiki.getTiddlerText(title)) {
         return;
       }
@@ -71,9 +75,7 @@ class HitokotoWidget extends Widget {
       children.push(htNode, footerNode);
     });
 
-    const domNode = createElement('div', {
-      children
-    });
+    domNode.append(...children);
 
     parent.insertBefore(domNode, nextSibling);
     this.domNodes.push(domNode);
