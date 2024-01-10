@@ -24,7 +24,7 @@ tags: $:/tags/ViewTemplate
 
 <!-- 使用 caacade 好麻烦，先在这里写 -->
 <$list filter="[all[current]!is[system]publish[no]]">
-<$reveal tag="div" class="antialiased prose prose-indigo text-[16px] max-w-none prose-img:my-0 prose-a:no-underline prose-h2:mt-4 prose-blockquote:not-italic dark:prose-invert dark:prose-pre:bg-black" type="nomatch" stateTitle=<<folded-state>> text="hide" retain="yes" animate="yes">
+<$reveal tag="div" class={{{ [{$:/core/ui/EditTemplate/body/typography}] }}} type="nomatch" stateTitle=<<folded-state>> text="hide" retain="yes" animate="yes">
 
 <div class="flex justify-center items-center bg-neutral-200 h-48 w-full">
 正在努力编写中
