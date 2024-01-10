@@ -1,0 +1,8 @@
+title: $:/plugins/oeyoews/editor-preview-resizer/style.tid
+width: 1
+
+<!-- tags: $:/tags/Stylesheet -->
+
+.tc-tiddler-preview {
+	grid-template-columns: minmax(0, {{!!width}}fr) minmax(0px, 1fr) !important
+}
