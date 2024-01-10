@@ -66,7 +66,7 @@ class HitokotoWidget extends Widget {
       }
       content = $tw.wiki.renderTiddler('text/html', title);
       const htNode = this.document.createElement('blockquote');
-      htNode.className = `mt-4 md:mt-8 mb-1 bg-${color}-100/50 px-2 rounded border-l-[3px] border-l-${color}-300 mx-0 py-2`;
+      htNode.className = `mt-4 md:mt-8 mb-1 bg-${color}-100/50 dark:bg-${color}-400 px-2 rounded border-l-[3px] border-l-${color}-300 mx-0 py-2`;
       htNode.innerHTML = content;
       children.push(htNode, footerNode);
     });

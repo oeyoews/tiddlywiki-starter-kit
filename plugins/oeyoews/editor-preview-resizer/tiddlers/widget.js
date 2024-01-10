@@ -21,7 +21,7 @@ class EditorResizer extends Widget {
 
     const domNode = this.document.createElement('div');
     domNode.className =
-      'w-1 hover:cursor-ew-resize bg-gray-200 hover:bg-gray-300 transition-all h-3/5 rounded-full absolute left-1/2 -translate-x-1/2';
+      'w-1 hover:cursor-ew-resize bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 transition-all h-3/5 rounded-full absolute left-1/2 -translate-x-1/2';
     // domNode.addEventListener('pointerdown', (e) => {
     //   e.preventDefault();
     //   console.log('resizing');
