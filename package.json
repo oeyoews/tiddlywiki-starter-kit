@@ -51,7 +51,7 @@
     "randomstring-plus": "workspace:^",
     "simple-git-hooks": "^2.9.0",
     "terser": "^5.26.0",
-    "tw5-typed": "^0.4.1",
+    "tw5-typed": "^0.4.4",
     "typescript": "^5.3.3"
   }
 }

@@ -21,12 +21,18 @@ class HitokotoWidget extends Widget {
     this.execute();
 
     const createElement = $tw.utils.domMaker;
+    const widgetTitle = this.getVariable('currentTiddler');
 
     // 限制 99 条，否则文字多了后会卡顿
     const { filter = '[tag[Journal]!sort[created]limit[99]]' } =
       this.attributes;
     // getall journal tiddler
     const journalTiddlers = $tw.wiki.filterTiddlers(filter);
+
+    if (journalTiddlers.includes(widgetTitle)) {
+      console.warn('Dont use ht widget in journal tiddler!!!');
+      return;
+    }
 
     const children = [];
 
@@ -48,9 +54,10 @@ class HitokotoWidget extends Widget {
       });
       timeNode.className =
         'mb-2 w-full md:mb-0 md:w-auto hover:underline hover:text-indigo-400 hover:cursor-pointer transition';
+
       const authorNode = this.document.createElement('div');
       authorNode.className = 'mb-2 w-full md:mb-0 md:w-auto text-right';
-      authorNode.textContent = `@${creator}`;
+      authorNode.textContent = creator ? `@${creator}` : '';
       footerNode.className = 'flex flex-wrap text-sm md:justify-between';
       footerNode.append(timeNode, authorNode);
       content = $tw.wiki.renderTiddler('text/html', title);
