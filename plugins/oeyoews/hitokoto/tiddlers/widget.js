@@ -36,6 +36,7 @@ class HitokotoWidget extends Widget {
 
     const children = [];
 
+    // TODO: use ejs
     // https://github.com/Jermolene/TiddlyWiki5/pull/7413
     journalTiddlers.map((tiddler) => {
       let content;
@@ -60,6 +61,9 @@ class HitokotoWidget extends Widget {
       authorNode.textContent = creator ? `@${creator}` : '';
       footerNode.className = 'flex flex-wrap text-sm md:justify-between';
       footerNode.append(timeNode, authorNode);
+      if (!$tw.wiki.getTiddlerText(title)) {
+        return;
+      }
       content = $tw.wiki.renderTiddler('text/html', title);
       const htNode = this.document.createElement('blockquote');
       htNode.className = `mt-4 md:mt-8 mb-1 bg-${color}-100/50 px-2 rounded border-l-[3px] border-l-${color}-300 mx-0 py-2`;
@@ -78,6 +82,5 @@ class HitokotoWidget extends Widget {
 
 /**
  * @description hitokoto widget
- * @param text
  */
 exports.ht = HitokotoWidget;
