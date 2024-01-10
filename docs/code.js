@@ -158,7 +158,7 @@ const icon = $tw.wiki.renderText(
   'text/vnd.tiddlywiki',
   '<$iconify />',
   {
-    parseAsInline: true // no extra tag
+    parseAsInline: true // no extra tag, note: sometime have a render bug, rencommend to false
   }
 );
 
@@ -168,3 +168,4 @@ $tw.utils.copyToClipboard();
 // ???
 $tw.rootWidget.invokeAction('');
 $tw.rootWidget.invokeActionString();
+$tw.renameTiddler('original', 'newtitle', options);
