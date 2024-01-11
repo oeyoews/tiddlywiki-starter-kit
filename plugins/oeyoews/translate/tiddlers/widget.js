@@ -46,4 +46,4 @@ class ExampleWidget extends Widget {
 /**
  * @description translate widget
  */
-exports.test = ExampleWidget;
+exports.twTranslate = ExampleWidget;

@@ -22,13 +22,13 @@ class ExampleWidget extends Widget {
     const createElement = $tw.utils.domMaker;
 
     const btn = createElement('button', {
-      text: 'click me',
+      text: 'Click me',
       class: 'rounded p-1'
     });
 
     const domNode = createElement('div', {
-      text: 'example',
-      class: 'underline font-bold',
+      // text: 'example',
+      // class: 'underline font-bold',
       children: [btn]
     });
 
@@ -37,8 +37,5 @@ class ExampleWidget extends Widget {
   }
 }
 
-/**
- * @description ${pluginname} widget
- * @param xxx
- */
-exports.test = ExampleWidget;
+/** @description ${pluginname} widget */
+exports['{{ widget_name }}'] = ExampleWidget;
