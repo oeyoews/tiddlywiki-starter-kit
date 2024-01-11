@@ -18,26 +18,26 @@ class TWSRRuby extends Widget {
 
   // Render method
   render(parent, nextSibling) {
-    this.RubyRender(this, parent, nextSibling, true);
+    this.RubyRender(parent, nextSibling, true);
   }
 
   // Custom render method
-  RubyRender(self, parent, nextSibling, useAnswer) {
-    const oc = self.parseTreeNode.children;
+  RubyRender(parent, nextSibling) {
+    const oc = this.parseTreeNode.children;
     if (true) {
-      self.parentDomNode = parent;
-      self.computeAttributes();
+      this.parentDomNode = parent;
+      this.computeAttributes();
       let rubyPosition = 'over';
-      let ruby = self.getAttribute('u');
+      let ruby = this.getAttribute('u');
       if (!ruby || ruby === '') {
-        ruby = self.getAttribute('l');
+        ruby = this.getAttribute('l');
         if (!ruby || ruby === '') {
         } else {
           rubyPosition = 'under';
         }
       }
 
-      let p = self;
+      let p = this;
       let tags = [];
       while (p) {
         const ct = p.getVariable('currentTiddler');
@@ -51,17 +51,17 @@ class TWSRRuby extends Widget {
         p = p.parentWidget;
       }
 
-      const container = self.document.createElement('span');
+      const container = this.document.createElement('span');
       super.render(container, null);
       const wikiParser = $tw.wiki.parseText(
         'text/vnd.tiddlywiki', // 类型空值也没问题
         `<ruby>${container.innerHTML}</ruby>`,
         { parseAsInline: true }
       );
-      self.parseTreeNode.children = wikiParser.tree;
+      this.parseTreeNode.children = wikiParser.tree;
     }
     super.render(parent, nextSibling);
-    self.parseTreeNode.children = oc;
+    this.parseTreeNode.children = oc;
   }
 }
 
