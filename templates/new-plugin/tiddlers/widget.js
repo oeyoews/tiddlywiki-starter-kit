@@ -15,7 +15,7 @@ class ExampleWidget extends Widget {
 
   render(parent, nextSibling) {
     if (!$tw.browser) return;
-    this.parentDomNode = parent;
+
     this.computeAttributes();
     this.execute();
 
