@@ -34,7 +34,7 @@ const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
 
 // oeyoews plugins
 const oeyoewsPlugins = [
-  'children-test',
+  'blockquote',
   'editor-preview-resizer',
   'confetti-background',
   'plum-blosssom',
