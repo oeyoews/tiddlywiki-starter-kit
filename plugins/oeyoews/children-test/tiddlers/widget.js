@@ -11,7 +11,7 @@ children-test widget
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 
 // Define the TWSRRuby class
-class TWSRRuby extends Widget {
+class BlockquoteWidget extends Widget {
   constructor(parseTreeNode, options) {
     super(parseTreeNode, options);
   }
@@ -39,10 +39,18 @@ class TWSRRuby extends Widget {
     super.render(parent, nextSibling);
   }
 
+  // 其实使用 widget wikitext 也可以.
   getWrapperNode(container) {
-    return `<blockquote class="bg-red-300">${container.innerHTML}</blockquote>`;
+    return `<blockquote class="relative border-none">
+    <div class="h-full rounded-full bg-gray-300 dark:bg-gray-500 absolute -left-2 -top-1 w-1"/>
+    ${container.innerHTML}</blockquote>`;
+  }
+
+  // NOTE: 注意默认是会刷新的,  需要明确返回false, 禁止刷新bug
+  refresh(changedTiddlers) {
+    return false;
   }
 }
 
 // Export the TWSRRuby class
-exports.blockquote = TWSRRuby;
+exports.blockquote = BlockquoteWidget;
