@@ -8,7 +8,7 @@ children-test widget
 \*/
 
 // Import the Widget class from the widget.js file
-const Widget = require('$:/core/modules/widgets/widget.js').widget;
+const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 
 // Define the TWSRRuby class
 class TWSRRuby extends Widget {
@@ -16,33 +16,28 @@ class TWSRRuby extends Widget {
     super(parseTreeNode, options);
   }
 
-  // Execute method
-  execute() {
-    super.execute();
-  }
-
   // Render method
   render(parent, nextSibling) {
-    this._RubyRender(this, parent, nextSibling, true);
+    this.RubyRender(this, parent, nextSibling, true);
   }
 
   // Custom render method
-  _RubyRender(_this, parent, nextSibling, useAnswer) {
-    const oc = _this.parseTreeNode.children;
+  RubyRender(self, parent, nextSibling, useAnswer) {
+    const oc = self.parseTreeNode.children;
     if (true) {
-      _this.parentDomNode = parent;
-      _this.computeAttributes();
+      self.parentDomNode = parent;
+      self.computeAttributes();
       let rubyPosition = 'over';
-      let ruby = _this.getAttribute('u');
+      let ruby = self.getAttribute('u');
       if (!ruby || ruby === '') {
-        ruby = _this.getAttribute('l');
+        ruby = self.getAttribute('l');
         if (!ruby || ruby === '') {
         } else {
           rubyPosition = 'under';
         }
       }
 
-      let p = _this;
+      let p = self;
       let tags = [];
       while (p) {
         const ct = p.getVariable('currentTiddler');
@@ -56,26 +51,20 @@ class TWSRRuby extends Widget {
         p = p.parentWidget;
       }
 
-      const container = _this.document.createElement('span');
+      const container = self.document.createElement('span');
       super.render(container, null);
-      const rtTxt =
-        '<rt>' +
-        (useAnswer ? '<$a s>' : '') +
-        ruby +
-        (useAnswer ? '</$a>' : '') +
-        '</rt>';
       const wikiParser = $tw.wiki.parseText(
-        'text/vnd.tiddlywiki',
-        `<ruby style="ruby-position:${rubyPosition}">${container.innerHTML}${rtTxt}</ruby>`,
+        'text/vnd.tiddlywiki', // 类型空值也没问题
+        `<ruby>${container.innerHTML}</ruby>`,
         { parseAsInline: true }
       );
-      console.log(wikiParser.tree);
-      _this.parseTreeNode.children = wikiParser.tree;
+      self.parseTreeNode.children = wikiParser.tree;
     }
     super.render(parent, nextSibling);
-    _this.parseTreeNode.children = oc;
+    self.parseTreeNode.children = oc;
   }
 }
 
 // Export the TWSRRuby class
+exports.blockquote = TWSRRuby;
 exports.r = TWSRRuby;
