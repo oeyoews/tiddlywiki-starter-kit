@@ -21,9 +21,11 @@ class HitokotoWidget extends Widget {
     this.execute();
 
     const domNode = this.document.createElement('div');
+
     if (domNode.isTiddlyWikiFakeDom) {
       return;
     }
+
     const widgetTitle = this.getVariable('currentTiddler');
 
     // 限制 99 条，否则文字多了后会卡顿
@@ -68,7 +70,15 @@ class HitokotoWidget extends Widget {
       if (!$tw.wiki.getTiddlerText(title)) {
         return;
       }
-      content = $tw.wiki.renderTiddler('text/html', title);
+
+      // link 不遵循系统配置, 会更新url, 因为这里就是就是单纯渲染出来一个一个url link没有绑定事件, 而tiddler 上的link, 都加上了一个事件监听.
+      content = $tw.wiki.renderText(
+        'text/html',
+        'text/vnd.tiddlywiki',
+        `!! ${title} \n <$transclude $tiddler="${title}" $mode="block" />`
+      );
+
+      if (!content || content === '<p></p>') return;
       const htNode = this.document.createElement('blockquote');
       htNode.className = `mt-4 md:mt-8 mb-1 bg-${color}-100/50 dark:bg-${color}-400 px-2 rounded border-l-[3px] border-l-${color}-300 mx-0 py-2`;
       htNode.innerHTML = content;
