@@ -169,3 +169,16 @@ $tw.utils.copyToClipboard();
 $tw.rootWidget.invokeAction('');
 $tw.rootWidget.invokeActionString();
 $tw.renameTiddler('original', 'newtitle', options);
+
+/*\
+title: $:/plugins/oeyoews/image-observer/test.js
+type: application/javascript
+module-type: utils
+
+@usage: $tw.utils.sayHi()
+
+\*/
+
+exports.sayHi = () => {
+  console.log('Hello, Tiddlywiki');
+};
