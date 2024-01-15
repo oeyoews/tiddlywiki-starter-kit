@@ -1,13 +1,12 @@
 /*\
-title: $:/plugins/oeyoews/tiddlywiki-settings/settings.js
+title: $:/plugins/oeyoews/tiddlywiki-settings/settings/info.js
 type: application/javascript
 module-type: library
 
 tiddlywiki-settings settings library
 
 \*/
-module.exports = {
-  /** info */
+const info = {
   title: {
     type: 'input',
     text: '',
@@ -39,29 +38,7 @@ module.exports = {
     type: 'number',
     text: '200'
   },
-  storyList: {},
-  /** appearance */
-  palette: {},
-  theme: {},
-  storyview: {},
-  layout: {},
-  stickyTitles: {
-    type: 'boolean',
-    text: 'no'
-  },
-  storyWidth: {},
-  sidebarWidth: {},
-  fontSize: {},
-  fontFamily: {},
-  /** settings */
-  camelcase: {},
-  defaultSidebarTab: {},
-  permalink: {},
-  navigation: {},
-  /** hidden setting */
-  minSearchLength: {},
-  editorRefreshTime: {
-    type: 'number',
-    text: 1000
-  }
+  storyList: {}
 };
+
+module.exports = info;

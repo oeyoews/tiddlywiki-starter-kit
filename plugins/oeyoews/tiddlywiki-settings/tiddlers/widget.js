@@ -8,7 +8,7 @@ tiddlywiki-settings widget
 \*/
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 
-class ExampleWidget extends Widget {
+class SeetingsWidget extends Widget {
   constructor(parseTreeNode, options) {
     super(parseTreeNode, options);
   }
@@ -21,17 +21,14 @@ class ExampleWidget extends Widget {
 
     const createElement = $tw.utils.domMaker;
 
-    const settings = require('./setting');
+    const settings = require('./settings');
 
-    const btn = createElement('button', {
-      text: 'Click me',
-      class: 'rounded p-1'
-    });
+    // filter
+    // click
+    // update
 
     const domNode = createElement('div', {
-      // text: 'example',
-      // class: 'underline font-bold',
-      children: [btn]
+      text: settings.editorRefreshTime.text
     });
 
     parent.insertBefore(domNode, nextSibling);
@@ -40,4 +37,4 @@ class ExampleWidget extends Widget {
 }
 
 /** @description tiddlywiki-settings widget */
-exports['widget-3DU11czCzY'] = ExampleWidget;
+exports['tw-settings'] = SeetingsWidget;

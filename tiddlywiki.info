@@ -16,7 +16,7 @@
     "tiddlywiki/highlight",
     "tiddlywiki/browser-sniff",
     "tiddlywiki/pluginlibrary",
-    "oeyoews/dayjs",
+    "oeyoews/tiddlywiki-settings",
     "oeyoews/blockquote",
     "oeyoews/editor-preview-resizer",
     "oeyoews/confetti-background",
