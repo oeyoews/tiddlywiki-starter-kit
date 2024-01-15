@@ -1,0 +1,15 @@
+title: $:/plugins/oeyoews/tiddlywiki-settings/readme
+
+> WIP
+
+!! TODO
+
+* 加上一些 tiddlywiki 的隐藏配置
+* 支持中英文切换配置界面: 参考 codemirror6 的配置界面
+* 搜索框: 可搜索
+* 为了方便, 使用 js, 而不适用 tid
+* 借鉴一些 commandpalette 的写法.
+* 支持一键初始化
+
+!! Motivation
+
