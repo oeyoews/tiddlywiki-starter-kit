@@ -8,17 +8,21 @@ tiddlywiki-settings settings library
 \*/
 
 const appearance = {
-  palette: {},
-  theme: {},
-  storyview: {},
-  layout: {},
+  palette: {
+    text: '$:/palette/xxx'
+  },
+  theme: {
+    text: '$:/themes/oeyoews/notebook'
+  },
+  // storyview: {},
+  // layout: {},
   stickyTitles: {
     type: 'boolean',
     text: 'no'
   },
   storyWidth: {},
   sidebarWidth: {},
-  fontSize: {},
-  fontFamily: {}
+  fontSize: {}
+  // fontFamily: {}
 };
 module.exports = appearance;

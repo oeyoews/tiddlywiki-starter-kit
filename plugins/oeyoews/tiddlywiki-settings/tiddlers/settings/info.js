@@ -25,7 +25,7 @@ const info = {
   defaultNewJournalTitleFormat: {},
   newTiddlerTags: {},
   defaultNewTiddlersFocus: {},
-  username: {},
+  username: { text: '' },
   description: {
     type: 'input',
     text: '',
@@ -37,8 +37,8 @@ const info = {
   animation: {
     type: 'number',
     text: '200'
-  },
-  storyList: {}
+  }
+  // storyList: {}
 };
 
 module.exports = info;
