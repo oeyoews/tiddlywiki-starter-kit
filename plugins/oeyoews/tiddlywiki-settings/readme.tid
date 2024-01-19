@@ -10,3 +10,4 @@ title: $:/plugins/oeyoews/tiddlywiki-settings/readme
 * 支持一键初始化配置(preset, 类似于 vscode 的 setting.json, 可用于多人分享)
 * 支持多配置
 * 加上一些 tiddlywiki 的隐藏配置
+* 支持配置更改 diff,预览

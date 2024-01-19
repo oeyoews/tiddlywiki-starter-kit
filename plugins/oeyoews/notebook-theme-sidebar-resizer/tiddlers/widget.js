@@ -210,7 +210,10 @@ class NotebookResizer extends Widget {
         targetTiddler,
         null,
         null,
-        `${Number(width).toFixed(0)}px`
+        `${Number(width).toFixed(0)}px`,
+        {
+          suppressTimestamp: true
+        }
       );
     });
   }
