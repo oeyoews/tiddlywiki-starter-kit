@@ -12,11 +12,14 @@ const en = require('./locales/en');
 class NotebookResizer extends Widget {
   constructor(parseTreeNode, options) {
     super(parseTreeNode, options);
-    // static
+    this.leftClass = 'oresizer-left';
+    this.rightClass = 'oresizer-right';
     this.VANILLA = 'vanilla';
     this.NOTEBOOK = 'notebook';
     this.LEFT = 'left';
     this.RIGHT = 'right';
+
+    // static
     // default
     this.defaultWidthTiddler =
       '$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth';
@@ -38,13 +41,6 @@ class NotebookResizer extends Widget {
       stateTiddler: '$:/state/notebook-sidebar',
       widthTiddler: '$:/themes/nico/notebook/metrics/sidebar-width',
       positionTiddler: '$:/themes/nico/notebook/metrics/sidebar-position'
-    };
-
-    this.leftbar = {
-      name: 'LEFTBAR',
-      widthTiddler: '$:/xp/leftopentab/metrics/width',
-      position: 'left',
-      statusTiddler: '$:/config/LeftOpenTab/Status'
     };
 
     // theme: whitespace
@@ -112,10 +108,10 @@ class NotebookResizer extends Widget {
 
     switch (this.LEFT) {
       case this.position:
-        resizer.classList.add('oresizer-right');
+        resizer.classList.add(this.rightClass);
         break;
       default:
-        resizer.classList.add('oresizer-left');
+        resizer.classList.add(this.leftClass);
         break;
     }
 
@@ -132,14 +128,13 @@ class NotebookResizer extends Widget {
   }
 
   checkTheme() {
-    const theme = this.getText(this.themeTiddler); // TODO: 或许可以借助split 获取主题
-
-    if (this.notebook.theme.includes(theme)) {
-      this.theme = this.notebook.name;
-      return;
-    }
+    const theme = this.getText(this.themeTiddler);
 
     switch (theme) {
+      case this.notebook.theme[0]:
+      case this.notebook.theme[1]:
+        this.theme = this.notebook.name;
+        break;
       case this.whitespace.theme:
         this.theme = this.whitespace.name;
         break;
@@ -156,13 +151,14 @@ class NotebookResizer extends Widget {
     if (this.theme === this.VANILLA) {
       if (sidebarLayout !== 'fluid-fixed') {
         console.warn('you should set sidebar layout to fluid-fixed');
-        $tw.wiki.setText(this.sidebarLayoutTiddler, null, null, 'fluid-fixed');
+        $tw.wiki.setText(
+          this.sidebarLayoutTiddler,
+          'text',
+          null,
+          'fluid-fixed'
+        );
       }
     }
-  }
-
-  getText(tiddler) {
-    return $tw.wiki.getTiddlerText(tiddler);
   }
 
   // base theme to get sidebarpositon
@@ -170,6 +166,7 @@ class NotebookResizer extends Widget {
     // NOTE: before vanilla adjust
     if (this.getText(this.themeTiddler) === '$:/themes/cdr/captivate') {
       this.position = this.LEFT;
+      return;
     }
 
     switch (this.theme) {
@@ -202,6 +199,10 @@ class NotebookResizer extends Widget {
 
   getDefaultSidebarWidth() {
     return this.getText(this.nbWidthTiddler).replace('px', '');
+  }
+
+  getText(tiddler) {
+    return $tw.wiki.getTiddlerText(tiddler);
   }
 
   resize(e) {
@@ -281,10 +282,8 @@ class NotebookResizer extends Widget {
   }
 
   refresh(changedTiddlers) {
-    // TODO: refresh on change tw languages
     if (this.shouldRefresh(changedTiddlers, this.listenTiddlers)) {
       this.refreshSelf();
-      console.warn('refresh', new Date());
       return true;
     }
     return false;
