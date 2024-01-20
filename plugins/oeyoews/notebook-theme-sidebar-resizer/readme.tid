@@ -4,9 +4,22 @@ title: $:/plugins/oeyoews/notebook-theme-sidebar-resizer/readme
 
 > support left/right sidebar resizer
 
-> 最初仅仅是为了支持 notebook theme 而写的 sidebar resizer, 后来开始支持 vanilla(and based vanilla sidebar theme), captivate, whitespace 等主题.
+> 最初仅仅是为了支持 notebook theme 而写的 sidebar resizer, 后来开始支持 vanilla(and based vanilla sidebar theme), captivate, whitespace, leftbar 等插件, 布局或主题.
 
 <!-- 在切换主题时，theme 会覆盖掉同名非系统文件，所以需要手动修改 -->
+
+!! For Leftbar
+
+need add `<$nbresizer position="left" widthTiddler="$:/xp/leftopentab/metrics/width" statusTiddler="$:/config/LeftOpenTab/Status" close="hide"/>` in [[$:/xp/ui/PageTemplate/leftsidebar]] tiddler.
+
+```html
+<!-- here -->
+<$nbresizer position="left" widthTiddler="$:/xp/leftopentab/metrics/width" statusTiddler="$:/config/LeftOpenTab/Status" close="hide"/>
+
+</$scrollable>
+
+</$reveal>
+```
 
 !! For captivate theme
 
@@ -36,3 +49,7 @@ need add `<$nbresizer />` in [[$:/themes/jd/Whitespace/template/sidebar]] tiddle
 !! Recipes
 
 * 之所以部分主题需要手动修改 tiddler, 是因为他们的 sidebar 模板是写死的, 无法通过动态嵌入 tiddler. 这一点建议 学习 notebook theme
+
+!! TODO
+
+* resizer widget 暴露出对应的参数, 支持用户自定义

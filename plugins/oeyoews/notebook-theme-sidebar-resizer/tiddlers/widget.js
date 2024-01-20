@@ -40,6 +40,13 @@ class NotebookResizer extends Widget {
       positionTiddler: '$:/themes/nico/notebook/metrics/sidebar-position'
     };
 
+    this.leftbar = {
+      name: 'LEFTBAR',
+      widthTiddler: '$:/xp/leftopentab/metrics/width',
+      position: 'left',
+      statusTiddler: '$:/config/LeftOpenTab/Status'
+    };
+
     // theme: whitespace
     this.whitespace = {
       name: 'WHITESPACE',
@@ -51,6 +58,11 @@ class NotebookResizer extends Widget {
     this.sidebarLayoutTiddler =
       '$:/themes/tiddlywiki/vanilla/options/sidebarlayout';
 
+    this.user = {
+      widthTiddler: '',
+      statusTiddler: '',
+      close: ''
+    };
     // listen tiddlers
     this.listenTiddlers = [
       this.notebook.positionTiddler,
@@ -58,8 +70,10 @@ class NotebookResizer extends Widget {
       '$:/layout',
       this.themeTiddler,
       this.whitespace.positionTiddler,
-      this.sidebarLayoutTiddler
+      this.sidebarLayoutTiddler,
+      this.user.statusTiddler
     ];
+    this.position = this.RIGHT;
   }
 
   render(parent, nextSibling) {
@@ -71,21 +85,38 @@ class NotebookResizer extends Widget {
     const createElement = $tw.utils.domMaker;
 
     // this.checker();
-    // update theme
-    const theme = this.checkTheme();
-    this.theme = theme;
+    this.checkTheme(); // 01: update theme
+    this.updatePosition(); // 02: update position
     // after update this.theme
     this.presetForVanillaTheme();
+
+    const { position, widthTiddler, close, statusTiddler } = this.attributes;
+    if (position) {
+      this.position = position;
+    }
+
+    if (widthTiddler) {
+      this.user.widthTiddler = widthTiddler;
+    }
+    if (close) {
+      this.user.close = close;
+    }
+    if (statusTiddler) {
+      this.user.statusTiddler = statusTiddler;
+    }
 
     // NOTE: Tailwindcss class here, if you dont want install the extra tailwindcss dependency, you can rewrite it use general style()
     const resizer = createElement('div', {
       class: 'oresizer'
     });
 
-    if (this.getSidebarPosition() === this.LEFT) {
-      resizer.classList.add('oresizer-right');
-    } else {
-      resizer.classList.add('oresizer-left');
+    switch (this.LEFT) {
+      case this.position:
+        resizer.classList.add('oresizer-right');
+        break;
+      default:
+        resizer.classList.add('oresizer-left');
+        break;
     }
 
     resizer.addEventListener('pointerdown', (e) => {
@@ -101,19 +132,21 @@ class NotebookResizer extends Widget {
   }
 
   checkTheme() {
-    // TODO: 或许可以借助split 获取主题
-    const theme = this.getText(this.themeTiddler);
+    const theme = this.getText(this.themeTiddler); // TODO: 或许可以借助split 获取主题
 
     if (this.notebook.theme.includes(theme)) {
-      return this.notebook.name;
+      this.theme = this.notebook.name;
+      return;
     }
 
-    // 或许可以做一个映射
     switch (theme) {
       case this.whitespace.theme:
-        return this.whitespace.name;
+        this.theme = this.whitespace.name;
+        break;
+      case this.VANILLA:
+        this.theme = this.VANILLA;
       default:
-        return this.VANILLA;
+        break;
     }
   }
 
@@ -132,32 +165,38 @@ class NotebookResizer extends Widget {
     return $tw.wiki.getTiddlerText(tiddler);
   }
 
-  getSidebarPosition() {
+  // base theme to get sidebarpositon
+  updatePosition() {
     // NOTE: before vanilla adjust
     if (this.getText(this.themeTiddler) === '$:/themes/cdr/captivate') {
-      return this.LEFT;
+      this.position = this.LEFT;
     }
 
     switch (this.theme) {
       case this.whitespace.name:
         if (!$tw.wiki.tiddlerExists(this.whitespace.positionTiddler)) {
-          return this.LEFT;
+          this.position = this.LEFT;
         }
-        return this.getText(this.whitespace.positionTiddler);
+        this.position = this.getText(this.whitespace.positionTiddler);
+        break;
 
       case this.notebook.name:
         if (!$tw.wiki.tiddlerExists(this.notebook.positionTiddler)) {
-          return this.LEFT;
+          this.position = this.LEFT;
+        } else {
+          const { position = this.LEFT } = $tw.wiki.getTiddler(
+            this.notebook.positionTiddler
+          ).fields;
+
+          this.position = position;
         }
 
-        const { position = this.LEFT } = $tw.wiki.getTiddler(
-          this.notebook.positionTiddler
-        ).fields;
-
-        return position;
-
+        break;
+      case this.VANILLA:
+        this.position = this.RIGHT;
+        break;
       default:
-        return this.RIGHT;
+        break;
     }
   }
 
@@ -168,7 +207,7 @@ class NotebookResizer extends Widget {
   resize(e) {
     const clientX = e.clientX;
     if (this.isResizing) {
-      if (this.getSidebarPosition() === this.LEFT) {
+      if (this.position === this.LEFT) {
         this.width = clientX;
       } else {
         this.width = window.innerWidth - clientX;
@@ -192,19 +231,30 @@ class NotebookResizer extends Widget {
   }
 
   closeSidebar() {
-    const stateTiddler =
+    let stateTiddler =
       this.theme === this.notebook.name
         ? this.notebook.stateTiddler
         : this.defaultStateTiddler;
-    $tw.wiki.setText(stateTiddler, 'text', null, 'no');
-    this.updateSidebarWidth(this.getDefaultSidebarWidth());
+    // NOTE: leftbar plugini use show/hide not yes/no
+    if (this.user.statusTiddler) {
+      stateTiddler = this.user.statusTiddler;
+      $tw.wiki.setText(stateTiddler, 'text', null, this.user.close);
+    } else {
+      $tw.wiki.setText(stateTiddler, 'text', null, 'no');
+      this.updateSidebarWidth(this.getDefaultSidebarWidth());
+    }
   }
 
   updateSidebarWidth(width) {
-    const targetTiddler =
+    let targetTiddler =
       this.theme === this.notebook.name
         ? this.notebook.widthTiddler
         : this.defaultWidthTiddler;
+
+    if (this.user.widthTiddler) {
+      targetTiddler = this.user.widthTiddler;
+    }
+
     requestAnimationFrame(() => {
       $tw.wiki.setText(
         targetTiddler,
@@ -218,13 +268,13 @@ class NotebookResizer extends Widget {
     });
   }
 
-  checker() {
+  /*   checker() {
     const logger = new $tw.utils.Logger(en.pluginname);
     if (!$tw.modules.titles['tailwindcss.min.js']) {
       logger.alert(en.warning);
     }
   }
-
+ */
   shouldRefresh(changedTiddlers, tiddlerList) {
     const changedKeys = Object.keys(changedTiddlers);
     return tiddlerList.some((tiddler) => changedKeys.includes(tiddler));
