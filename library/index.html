@@ -631,7 +631,7 @@ var assetList = [
         "title": "$:/plugins/oeyoews/notebook-theme-sidebar-resizer",
         "description": "notebook-theme-sidebar-resizer",
         "author": "oeyoews",
-        "version": "0.2.7",
+        "version": "0.2.10",
         "core-version": ">=5.3.0",
         "type": "application/json",
         "plugin-type": "plugin",
@@ -642,7 +642,7 @@ var assetList = [
         "created": "2023-12-19",
         "list": "readme",
         "dependents": "",
-        "readme": "!! Notebook theme sidebar resizer\n\n> support left/right sidebar resizer\n\n> 最初仅仅是为了支持 notebook theme 而写的 sidebar resizer, 后来开始支持 vanilla(and based vanilla sidebar theme), captivate, whitespace 等主题.\n\n<!-- 在切换主题时，theme 会覆盖掉同名非系统文件，所以需要手动修改 -->\n\n!! For captivate theme\n\nneed add `<$nbresizer />` in [[$:/themes/cdr/captivate/ui/SideBar]] tiddler.\n\n```html\n<<sidebarTabs>>\n<!-- here -->\n<$nbresizer />\n```\n\n!! For Whitespace theme\n\n> whitespace theme for two 5.1.17 and 5.1.22 version, if use latest version, maybe have some ui problems.\n\nneed add `<$nbresizer />` in [[$:/themes/jd/Whitespace/template/sidebar]] tiddler.\n\n```html\n<!-- add resizer widget here  -->\n\n<$transclude/>\n<$nbresizer />\n```\n\n> 如果你在不同的主题切换, 你会发现一些 UI 上的异常, 那是因为 这个 tiddler 被修改后变成了 shadow tiddler, 在所有的主题下都会起作用.\n\n!! Recipes\n\n* 之所以部分主题需要手动修改 tiddler, 是因为他们的 sidebar 模板是写死的, 无法通过动态嵌入 tiddler. 这一点建议 学习 notebook theme",
+        "readme": "!! Notebook theme sidebar resizer\n\n> support left/right sidebar resizer\n\n> 最初仅仅是为了支持 notebook theme 而写的 sidebar resizer, 后来开始支持 vanilla(and based vanilla sidebar theme), captivate, whitespace, leftbar 等插件, 布局或主题.\n\n<!-- 在切换主题时，theme 会覆盖掉同名非系统文件，所以需要手动修改 -->\n\n!! For Leftbar\n\nneed add `<$nbresizer position=\"left\" widthTiddler=\"$:/xp/leftopentab/metrics/width\" statusTiddler=\"$:/config/LeftOpenTab/Status\" close=\"hide\"/>` in [[$:/xp/ui/PageTemplate/leftsidebar]] tiddler.\n\n```html\n<!-- here -->\n<$nbresizer position=\"left\" widthTiddler=\"$:/xp/leftopentab/metrics/width\" statusTiddler=\"$:/config/LeftOpenTab/Status\" close=\"hide\"/>\n\n</$scrollable>\n\n</$reveal>\n```\n\n!! For captivate theme\n\nneed add `<$nbresizer />` in [[$:/themes/cdr/captivate/ui/SideBar]] tiddler.\n\n```html\n<<sidebarTabs>>\n<!-- here -->\n<$nbresizer />\n```\n\n!! For Whitespace theme\n\n> whitespace theme for two 5.1.17 and 5.1.22 version, if use latest version, maybe have some ui problems.\n\nneed add `<$nbresizer />` in [[$:/themes/jd/Whitespace/template/sidebar]] tiddler.\n\n```html\n<!-- add resizer widget here  -->\n\n<$transclude/>\n<$nbresizer />\n```\n\n> 如果你在不同的主题切换, 你会发现一些 UI 上的异常, 那是因为 这个 tiddler 被修改后变成了 shadow tiddler, 在所有的主题下都会起作用.\n\n!! Recipes\n\n* 之所以部分主题需要手动修改 tiddler, 是因为他们的 sidebar 模板是写死的, 无法通过动态嵌入 tiddler. 这一点建议 学习 notebook theme\n\n!! TODO\n\n* resizer widget 暴露出对应的参数, 支持用户自定义",
         "requires-reload": "yes"
     },
     {
@@ -876,7 +876,7 @@ var assetList = [
         "created": "2024-01-15",
         "dependents": "",
         "list": "readme",
-        "readme": "> WIP\n\n!! TODO\n\n* 支持中英文切换配置界面: 参考 codemirror6 的配置界面\n* 可搜索配置关键词: 支持中英文\n* 借鉴一些 commandpalette 的写法.\n* 支持一键初始化配置(preset, 类似于 vscode 的 setting.json, 可用于多人分享)\n* 支持多配置\n* 加上一些 tiddlywiki 的隐藏配置",
+        "readme": "> WIP\n\n!! TODO\n\n* 支持中英文切换配置界面: 参考 codemirror6 的配置界面\n* 可搜索配置关键词: 支持中英文\n* 借鉴一些 commandpalette 的写法.\n* 支持一键初始化配置(preset, 类似于 vscode 的 setting.json, 可用于多人分享)\n* 支持多配置\n* 加上一些 tiddlywiki 的隐藏配置\n* 支持配置更改 diff,预览",
         "requires-reload": "yes"
     },
     {
