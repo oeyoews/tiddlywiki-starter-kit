@@ -263,7 +263,7 @@ class NotebookResizer extends Widget {
         null,
         `${Number(width).toFixed(0)}px`,
         {
-          suppressTimestamp: true // not work???
+          suppressTimestamp: true
         }
       );
     });
