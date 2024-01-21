@@ -89,7 +89,7 @@ module.exports = function (canvas) {
   const frame = () => {
     prevSteps = steps;
     steps = [];
-    console.log('开始绘制');
+    // console.log('开始绘制');
 
     if (!prevSteps.length) {
       console.log('cancle');
