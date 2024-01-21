@@ -11,6 +11,14 @@ module.exports = function (canvas) {
   const r15 = Math.PI / 12;
   const color = '#88888825';
 
+  const randomMiddle = () => random() * 0.6 + 0.2;
+  const { random } = Math;
+  const size = { width: window.innerWidth, height: window.innerHeight };
+
+  const MIN_BRANCH = 20;
+  let len = 6;
+  let stopped = false;
+
   function initCanvas(canvas, width = 400, height = 400, _dpi) {
     const ctx = canvas.getContext('2d');
 
@@ -34,14 +42,19 @@ module.exports = function (canvas) {
     return { ctx, dpi };
   }
 
-  const size = { width: window.innerWidth, height: window.innerHeight };
+  const polar2cart = (x = 0, y = 0, r = 0, theta = 0) => {
+    const dx = r * Math.cos(theta);
+    const dy = r * Math.sin(theta);
+    return [x + dx, y + dy];
+  };
+
   const { ctx } = initCanvas(canvas, size.width, size.height);
 
   let steps = [];
   let prevSteps = [];
 
   const step = (x, y, rad, counter = { value: 0 }) => {
-    const length = Math.random() * 6;
+    const length = random() * len;
     counter.value += 1;
 
     const [nx, ny] = polar2cart(x, y, length, rad);
@@ -51,36 +64,36 @@ module.exports = function (canvas) {
     ctx.lineTo(nx, ny);
     ctx.stroke();
 
-    const rad1 = rad + Math.random() * r15;
-    const rad2 = rad - Math.random() * r15;
+    const rad1 = rad + random() * r15;
+    const rad2 = rad - random() * r15;
 
     if (
       nx < -100 ||
       nx > size.width + 100 ||
       ny < -100 ||
       ny > size.height + 100
-    )
+    ) {
       return;
+    }
 
-    const rate = counter.value <= 30 ? 0.8 : 0.5;
+    const rate = counter.value <= MIN_BRANCH ? 0.8 : 0.5;
 
-    if (Math.random() < rate) steps.push(() => step(nx, ny, rad1, counter));
+    // left branch
+    if (random() < rate) steps.push(() => step(nx, ny, rad1, counter));
 
-    if (Math.random() < rate) steps.push(() => step(nx, ny, rad2, counter));
+    // right branch
+    if (random() < rate) steps.push(() => step(nx, ny, rad2, counter));
   };
 
-  const polar2cart = (x = 0, y = 0, r = 0, theta = 0) => {
-    const dx = r * Math.cos(theta);
-    const dy = r * Math.sin(theta);
-    return [x + dx, y + dy];
-  };
-
+  let raf;
   const frame = () => {
     prevSteps = steps;
     steps = [];
+    console.log('开始绘制');
 
     if (!prevSteps.length) {
-      cancelAnimationFrame(raf);
+      console.log('cancle');
+      raf && cancelAnimationFrame(raf);
       stopped = true;
     }
 
@@ -92,14 +105,13 @@ module.exports = function (canvas) {
     raf = requestAnimationFrame(frame);
   };
 
-  let raf;
-
   const start = () => {
     cancelAnimationFrame(raf);
     ctx.clearRect(0, 0, size.width, size.height);
     ctx.lineWidth = 1;
     ctx.strokeStyle = color;
     prevSteps = [];
+    // 四条边界
     steps = [
       () => step(randomMiddle() * size.width, -5, r90),
       () => step(randomMiddle() * size.width, size.height + 5, -r90),
@@ -107,11 +119,9 @@ module.exports = function (canvas) {
       () => step(size.width + 5, randomMiddle() * size.height, r180)
     ];
     if (size.width < 500) steps = steps.slice(0, 2);
-    raf = requestAnimationFrame(frame);
+    frame();
     stopped = false;
   };
 
-  const randomMiddle = () => Math.random() * 0.6 + 0.2;
-
-  start();
+  window.addEventListener('load', start);
 };
