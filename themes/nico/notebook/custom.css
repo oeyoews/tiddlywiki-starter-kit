@@ -68,7 +68,8 @@ blockquote > div {
 
 /* remove extra underline with image lin */
 a {
-  color: #007bff;
+  /* NOTE: 这个颜色会导致导出的 html 正常的文本也是这个颜色？？？ */
+  /* color: #007bff; */ 
   text-decoration: none !important;
 }
 
