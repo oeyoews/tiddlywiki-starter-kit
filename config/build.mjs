@@ -15,7 +15,20 @@ export default {
   //   'exportFilter',
   //   '[!is[system]]',
   // ],
+  // 似乎不是全部
+  jsMd: [
+    '--verbose',
+    '--output',
+    `${config.output}/markdown`,
+    '--render',
+    '[tag[JavaScript]]',
+    '[addsuffix[.md]]',
+    'text/plain',
+    '$:/plugins/cdaven/markdown-export/md-tiddler'
+  ],
   journal: [
+    '--output',
+    `${config.output}`,
     '--render',
     '.',
     'journal.json',

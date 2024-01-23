@@ -70,7 +70,19 @@
     "oeyoews/tiddlywiki-publish-tiddler"
   ],
   "build": {
+    "jsMd": [
+      "--verbose",
+      "--output",
+      ".tiddlywiki/markdown",
+      "--render",
+      "[tag[JavaScript]]",
+      "[addsuffix[.md]]",
+      "text/plain",
+      "$:/plugins/cdaven/markdown-export/md-tiddler"
+    ],
     "journal": [
+      "--output",
+      ".tiddlywiki",
       "--render",
       ".",
       "journal.json",
