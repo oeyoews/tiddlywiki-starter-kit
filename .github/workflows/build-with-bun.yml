@@ -30,12 +30,12 @@ jobs:
         run: bun run build
 
       - name: Build PDF
-        run: ls
         uses: baileyjm02/markdown-to-pdf@v1
         with:
           input_dir: ./.tiddlywiki/markdown
           output_dir: pdfs
           build_html: true
+        # run: ls
 
 
       - name: Upload
