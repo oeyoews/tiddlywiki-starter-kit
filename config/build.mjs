@@ -16,10 +16,30 @@ export default {
   //   '[!is[system]]',
   // ],
   // 似乎不是全部
+  starMd: [
+    '--verbose',
+    '--output',
+    `${config.output}/markdown/star`,
+    '--render',
+    '[tag[剪藏]]',
+    '[addsuffix[.md]]',
+    'text/plain',
+    '$:/plugins/cdaven/markdown-export/md-tiddler'
+  ],
+  reactMd: [
+    '--verbose',
+    '--output',
+    `${config.output}/markdown/React`,
+    '--render',
+    '[tag[React]]',
+    '[addsuffix[.md]]',
+    'text/plain',
+    '$:/plugins/cdaven/markdown-export/md-tiddler'
+  ],
   jsMd: [
     '--verbose',
     '--output',
-    `${config.output}/markdown`,
+    `${config.output}/markdown/JavaScript`,
     '--render',
     '[tag[JavaScript]]',
     '[addsuffix[.md]]',

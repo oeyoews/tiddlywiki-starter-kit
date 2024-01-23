@@ -70,10 +70,30 @@
     "oeyoews/tiddlywiki-publish-tiddler"
   ],
   "build": {
+    "starMd": [
+      "--verbose",
+      "--output",
+      ".tiddlywiki/markdown/star",
+      "--render",
+      "[tag[剪藏]]",
+      "[addsuffix[.md]]",
+      "text/plain",
+      "$:/plugins/cdaven/markdown-export/md-tiddler"
+    ],
+    "reactMd": [
+      "--verbose",
+      "--output",
+      ".tiddlywiki/markdown/React",
+      "--render",
+      "[tag[React]]",
+      "[addsuffix[.md]]",
+      "text/plain",
+      "$:/plugins/cdaven/markdown-export/md-tiddler"
+    ],
     "jsMd": [
       "--verbose",
       "--output",
-      ".tiddlywiki/markdown",
+      ".tiddlywiki/markdown/JavaScript",
       "--render",
       "[tag[JavaScript]]",
       "[addsuffix[.md]]",
