@@ -22,6 +22,7 @@ jobs:
       - uses: oven-sh/setup-bun@v1
         with:
           bun-version: latest
+
       - name: Install Dependency
         run: bun install # --production
 
@@ -35,13 +36,15 @@ jobs:
           publish_branch: gh-pages
           publish_dir: |
             ./.tiddlywiki
+
       - name: Build PDF
         uses: baileyjm02/markdown-to-pdf@v1
         with:
           input_dir: ./tiddlywiki/markdown
           output_dir: pdfs
-          # Default is true, can set to false to only get PDF files
           build_html: true
+
+      - name: Upload
         uses: actions/upload-artifact@v3
         with:
           name: docs
