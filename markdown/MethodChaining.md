@@ -13,15 +13,10 @@ modifier: 'oeyoews'
 
 方法链的语法通常是在对象上直接调用一个方法，然后在该方法的返回值上继续调用另一个方法，以此类推。例如：
 
-```
 ```js
 obj.method1().method2().method3();
 ```
 
-<button>js</button>
-```
-
-```
 ```js
 // obj method
 
@@ -43,9 +38,6 @@ class Person {
 
 const p = new Person();
 p.log1().log2();
-```
-
-<button>js</button>
 ```
 
 上述代码中，obj 是一个对象，method1、method2 和 method3 是该对象上的三个方法。通过方法链的方式，可以依次调用这三个方法，并且每个方法的返回值都是该对象本身，所以可以连续调用下一个方法。

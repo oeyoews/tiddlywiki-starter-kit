@@ -9,7 +9,6 @@ modifier: 'oeyoews'
 
 # create-style-in-js
 
-```
 ```js
 // Create a style element
     const style = document.createElement('style');
@@ -37,7 +36,4 @@ modifier: 'oeyoews'
 `;
     // Append the style element to the document head
     document.head.appendChild(style);
-```
-
-<button>js</button>
 ```

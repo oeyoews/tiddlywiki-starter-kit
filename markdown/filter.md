@@ -15,14 +15,10 @@ modifier: 'oeyoews'
 
 语法结构如下：
 
-```
 ```javascript
 const newArray = array.filter((element, index, arr) => {
   // 进行条件判断，返回布尔值
 });
-```
-
-<button>javascript</button>
 ```
 
 * `element`：当前正在遍历的元素。
@@ -33,7 +29,6 @@ const newArray = array.filter((element, index, arr) => {
 
 例如，假设我们有一个数字数组，要筛选出其中的偶数：
 
-```
 ```javascript
 const numbers = [1, 2, 3, 4, 5, 6];
 
@@ -42,9 +37,6 @@ const evenNumbers = numbers.filter((number) => {
 });
 
 console.log(evenNumbers); // 输出：[2, 4, 6]
-```
-
-<button>javascript</button>
 ```
 
 在上述例子中，回调函数 `number % 2 === 0` 用于判断元素是否为偶数，满足条件的元素将被保留在 `evenNumbers` 数组中。

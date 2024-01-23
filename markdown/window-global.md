@@ -7,7 +7,6 @@ created: 'Wed Sep 20 2023 10:11:56 GMT+0000 (GMT)'
 
 # window-global
 
-```
 ```js
 function main() {
   demo = 2;
@@ -16,9 +15,6 @@ function main() {
 
 main();
 console.log(demo);
-```
-
-<button>js</button>
 ```
 
 demo = 2 === window.demo = 2

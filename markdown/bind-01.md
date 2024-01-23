@@ -13,7 +13,6 @@ modifier: 'oeyoews'
 
 `bind` 方法返回一个新的函数，这个函数的 `this` 值被永久绑定到指定的对象上。当调用这个新函数时，它会在绑定的对象上下文中执行，而不是在全局上下文中执行。下面是一个简单的例子：
 
-```
 ```javascript
 const obj = {
   name: 'Alice',
@@ -24,9 +23,6 @@ const obj = {
 
 const boundSayName = obj.sayName.bind(obj);
 boundSayName(); // 输出：Alice
-```
-
-<button>javascript</button>
 ```
 
 在这个例子中，我们定义了一个对象 `obj`，它有一个 `sayName` 方法，用于输出对象的 `name` 属性。然后，我们使用 `bind` 方法将 `sayName` 方法绑定到 `obj` 对象上，并将返回的新函数保存在变量 `boundSayName` 中。最后，我们调用 `boundSayName` 函数，它会在 `obj` 对象的上下文中执行，输出 `Alice`。

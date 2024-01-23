@@ -13,7 +13,6 @@ Object.create() 是 JavaScript 中的一个方法，它可以创建一个新的�
 
 举个例子，如果我们想要创建一个新的对象，并让它继承一个现有的对象的属性和方法，可以这样写：
 
-```
 ```js
 const parentObj = {
   sayHello() {
@@ -24,9 +23,6 @@ const parentObj = {
 const childObj = Object.create(parentObj);
 
 childObj.sayHello(); // 输出 "Hello!"
-```
-
-<button>js</button>
 ```
 
 在这个例子中，我们创建了一个名为 parentObj 的对象，并给它定义了一个 sayHello() 方法。然后我们使用 Object.create() 创建了一个新的对象 childObj，并将其原型指向 parentObj。这样，childObj 就继承了 parentObj 的 sayHello() 方法。

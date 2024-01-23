@@ -37,7 +37,6 @@ DOM 事件，也是有一个流程的。从事件触发开始到事件响应是�
 
 在这个示例中，我们为一个包含多个按钮的容器元素添加了一个单击事件处理程序。当用户单击任意一个按钮时，事件将从该按钮开始冒泡，最终到达容器元素，并触发事件处理程序。然后，我们使用事件对象来获取单击按钮的 ID，以便在控制台中输出。
 
-```
 ```html
 <div id="container">
   <button id="btn1">按钮 1</button>
@@ -46,10 +45,6 @@ DOM 事件，也是有一个流程的。从事件触发开始到事件响应是�
 </div>
 ```
 
-<button>html</button>
-```
-
-```
 ```javascript
 var container = document.getElementById('container');
 
@@ -60,16 +55,12 @@ container.addEventListener('click', function(event) {
 });
 ```
 
-<button>javascript</button>
-```
-
 当用户单击任意一个按钮时，事件将从该按钮开始冒泡，最终到达容器元素，并触发事件处理程序。然后，我们使用事件对象来获取单击按钮的 ID，以便在控制台中输出。
 
 1. 事件委托示例
 
 在这个示例中，我们为一个包含多个列表项的列表元素添加了一个单击事件处理程序。但是，我们并没有将事件处理程序直接绑定到每个列表项上，而是将它绑定到列表元素的父元素上。当用户单击任意一个列表项时，事件将冒泡到列表元素，并触发事件处理程序。然后，我们使用事件对象来获取单击列表项的内容，以便在控制台中输出。
 
-```
 ```html
 <ul id="list">
   <li>列表项 1</li>
@@ -78,10 +69,6 @@ container.addEventListener('click', function(event) {
 </ul>
 ```
 
-<button>html</button>
-```
-
-```
 ```javascript
 var list = document.getElementById('list');
 
@@ -90,9 +77,6 @@ list.addEventListener('click', function(event) {
     console.log('您单击了列表项：' + event.target.textContent);
   }
 });
-```
-
-<button>javascript</button>
 ```
 
 当用户单击任意一个列表项时，事件将冒泡到列表元素，并触发事件处理程序。然后，我们使用事件对象来获取单击列表项的内容，以便在控制台中输出。

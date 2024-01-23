@@ -29,7 +29,6 @@ page-cover: 'https://source.unsplash.com/random?fm=blurhash&w=50&js-false'
 
 在条件语句中，可以使用 `!` 运算符来判断一个值是否为 `false`，例如：
 
-```
 ```javascript
 const x = 0;
 // -- 得正
@@ -38,9 +37,6 @@ if (!x) {
 } else {
   console.log("x is true");
 }
-```
-
-<button>javascript</button>
 ```
 
 在上面的代码中，由于 `x` 的值为 `0`，因此它会被判断为 `false`，因此条件语句会输出 `"x is false"`。

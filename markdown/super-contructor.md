@@ -17,7 +17,6 @@ modifier: 'oeyoews'
 
 以下是一个简单的示例代码，演示了如何在子类的构造函数中使用 `super`：
 
-```
 ```javascript
 class Animal {
   constructor(name) {
@@ -35,9 +34,6 @@ class Dog extends Animal {
 const myDog = new Dog("Buddy", "Golden Retriever");
 console.log(myDog.name);  // 输出：Buddy
 console.log(myDog.breed); // 输出：Golden Retriever
-```
-
-<button>javascript</button>
 ```
 
 在这个示例中，`Animal` 是父类，`Dog` 是子类。`Dog` 类的构造函数使用了 `super(name)` 来调用 `Animal` 类的构造函数，并传递了一个参数 `name`。

@@ -15,16 +15,12 @@ modifier: 'oeyoews'
 
 以下是一个示例代码：
 
-```
 ```javascript
 const path = require("path");
 const file = "/home/user/docs/file.txt";
 
 const fileInfo = path.parse(file);
 console.log(fileInfo);
-```
-
-<button>javascript</button>
 ```
 
 上述代码中，我们使用 `path.parse()` 方法将文件路径 `/home/user/docs/file.txt` 解析为一个对象 `fileInfo`。然后，我们通过输出 `fileInfo` 可以看到解析后的结果，其中包含了目录信息、根路径、文件名、扩展名等。
@@ -49,13 +45,9 @@ console.log(fileInfo);
 
 如果你需要去掉扩展名，可以使用 path.parse() 方法来分解文件路径并获取文件名和扩展名，然后再使用 string.slice() 或其他字符串操作方法来删除扩展名。例如：
 
-```
 ```javascript
 const path = require('path');
 const filename = 'example.file.txt';
 const parsed = path.parse(filename);
 const basenameWithoutExt = parsed.name; // "example.file"
-```
-
-<button>javascript</button>
 ```

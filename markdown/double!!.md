@@ -17,14 +17,10 @@ modifier: 'oeyoews'
 
 以下是一个示例：
 
-```
 ```javascript
 const value = "Hello";
 const booleanValue = !!value;
 console.log(booleanValue); // true
-```
-
-<button>javascript</button>
 ```
 
 在上述示例中，将字符串 “Hello” 转换为布尔类型，结果为 `true`。

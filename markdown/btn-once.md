@@ -9,12 +9,8 @@ modifier: 'oeyoews'
 
 # btn-once
 
-```
 ```js
 btn.addEventListener('click', () => {
 }, {
 once: true})
-```
-
-<button>js</button>
 ```

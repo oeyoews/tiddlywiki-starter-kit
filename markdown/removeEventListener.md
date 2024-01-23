@@ -17,7 +17,6 @@ modifier: 'oeyoews'
 
 以下是使用 `removeEventListener` 的示例：
 
-```
 ```javascript
 const element = document.getElementById("elementId");  // 替换 "elementId" 为您要移除事件监听器的元素的 ID
 
@@ -32,9 +31,6 @@ element.addEventListener("click", handleClick);
 if (shouldRemoveListener) {
   element.removeEventListener("click", handleClick);
 }
-```
-
-<button>javascript</button>
 ```
 
 在上述示例中，我们首先使用 `addEventListener` 添加了一个名为 `handleClick` 的事件监听器。然后，在某个条件满足时，我们使用 `removeEventListener` 来移除该事件监听器。通过提供相同的事件类型（如 `"click"`）和相同的事件处理程序（如 `handleClick` 函数），我们可以确保正确地移除监听器。

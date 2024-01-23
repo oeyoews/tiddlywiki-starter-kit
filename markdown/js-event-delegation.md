@@ -17,7 +17,6 @@ JavaScript 事件代理（Event Delegation）(事件委托)是一种常用的事
 
 下面是一个使用事件代理的示例代码：
 
-```
 ```html
 <ul id="parent">
   <li>Item 1</li>
@@ -26,10 +25,6 @@ JavaScript 事件代理（Event Delegation）(事件委托)是一种常用的事
 </ul>
 ```
 
-<button>html</button>
-```
-
-```
 ```javascript
 // 获取父元素
 const parent = document.getElementById('parent');
@@ -42,9 +37,6 @@ parent.addEventListener('click', function(event) {
     console.log(`Clicked on ${event.target.textContent}`);
   }
 });
-```
-
-<button>javascript</button>
 ```
 
 在上述代码中，我们在父元素 `ul` 上绑定了 `click` 事件处理函数，然后通过判断事件源的标签名是否为 `li` 元素，来确定是哪个子元素触发了事件。这样，无论子元素的数量和内容如何变化，只需要维护父元素上的事件处理函数即可。

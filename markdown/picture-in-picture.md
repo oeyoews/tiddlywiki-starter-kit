@@ -11,7 +11,6 @@ modifier: 'oeyoews'
 
 > <https://developer.chrome.com/docs/web-platform/document-picture-in-picture/#acknowledgements>
 
-```
 ```html
 <!DOCTYPE html>
 <html lang="zh-CN">
@@ -53,7 +52,4 @@ modifier: 'oeyoews'
     </script>
   </body>
 </html>
-```
-
-<button>html</button>
 ```

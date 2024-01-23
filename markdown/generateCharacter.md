@@ -9,13 +9,9 @@ modifier: 'oeyoews'
 
 # generateCharacter
 
-```
 ```js
 let result = Array.from({length:75},(_,i)=>String.fromCharCode(i+48)).sort().filter(c=>/[A-Za-z0-9]/.test(c)).join('');
 console.log(result);
-```
-
-<button>js</button>
 ```
 
 在上面提供的 JavaScript 代码中，`Array.from({length:75},(_,i)=>String.fromCharCode(i+48))` 是用于创建包含字符的数组的部分。

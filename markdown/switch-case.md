@@ -15,7 +15,6 @@ type: 'text/vnd.tiddlywiki'
 switch case 语句是 JavaScript 中的一种流程控制语句，用于根据一个变量的值进行分支判断。switch case 语句的基本语法如下：
 
 ```
-```
 switch (variable) {
   case value1:
     // 当 variable 等于 value1 时执行的代码
@@ -29,7 +28,6 @@ switch (variable) {
     break;
 }
 ```
-```
 
 在这个语法中，variable 表示需要进行分支判断的变量，value1、value2 等表示每个分支的值，default 表示当变量不等于任何一个值时需要执行的代码。
 
@@ -39,7 +37,6 @@ switch case 语句的执行流程是先计算 variable 的值，然后与每个 
 
 下面是一个简单的例子，展示了 switch case 语句的基本用法：
 
-```
 ```
 const fruit = 'apple';
 switch (fruit) {
@@ -56,7 +53,6 @@ switch (fruit) {
     console.log('这不是一个水果');
     break;
 }
-```
 ```
 
 在这个例子中，我们定义了一个变量 fruit，然后使用 switch case 语句对其进行分支判断，输出相应的信息。由于变量 fruit 的值为 'apple'，因此执行第一个 case 中的代码，输出 '这是一个苹果'。

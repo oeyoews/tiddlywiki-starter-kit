@@ -17,7 +17,6 @@ modifier: 'oeyoews'
 
 map 是什么呢？在 JavaScript 中，map 是一种数据结构，用于存储键值对的集合。与普通的对象不同，map 的键可以是任意类型的值，包括基本类型和对象等。map 的键值对可以使用 set() 方法添加，使用 get() 方法获取。map 还有一些常用的方法，包括 has() 判断是否存在某个键、delete() 删除某个键值对、clear() 清空所有的键值对等。下面是一个使用 map 的示例：
 
-```
 ```javascript
 const myMap = new Map(); // 创建一个空的 map
 
@@ -42,9 +41,6 @@ console.log(myMap); // 输出：Map(2) { 'name' => '张三', { x: 1, y: 2 } => '
 // 使用 clear() 方法清空所有的键值对
 myMap.clear();
 console.log(myMap); // 输出：Map(0) {}
-```
-
-<button>javascript</button>
 ```
 
 map 是一种非常有用的数据结构，可以用于解决很多问题，比如需要存储键值对的场景、需要按照某种顺序存储元素的场景等。

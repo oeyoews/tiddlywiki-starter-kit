@@ -15,7 +15,6 @@ modifier: 'oeyoews'
 
 1. 无参数：如果函数没有参数，那么可以在括号中省略参数部分，如下所示：
 
-```
 ```javascript
 const sayHello = () => {
   console.log('Hello');
@@ -24,12 +23,8 @@ const sayHello = () => {
 sayHello(); // 输出 "Hello"
 ```
 
-<button>javascript</button>
-```
-
 1. 单个参数：如果函数只有一个参数，则可以省略参数括号。例如：
 
-```
 ```javascript
 const double = x => {
   return x * 2;
@@ -38,21 +33,14 @@ const double = x => {
 console.log(double(5)); // 输出 10
 ```
 
-<button>javascript</button>
-```
-
 1. 多个参数：如果函数有多个参数，则需要使用圆括号将这些参数括起来。例如：
 
-```
 ```javascript
 const add = (x, y) => {
   return x + y;
 };
 
 console.log(add(2, 3)); // 输出 5
-```
-
-<button>javascript</button>
 ```
 
 注意事项：
@@ -63,14 +51,10 @@ console.log(add(2, 3)); // 输出 5
 
 * 如果函数体只有一条语句，可以省略花括号和 return 语句，例如：
 
-```
 ```javascript
 const add = (x, y) => x + y;
 
 console.log(add(2, 3)); // 输出 5
-```
-
-<button>javascript</button>
 ```
 
 * 如果函数体中包含多条语句，就必须使用花括号和 return 语句。

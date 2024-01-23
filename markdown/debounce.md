@@ -15,7 +15,6 @@ type: 'text/vnd.tiddlywiki'
 
 防抖：
 
-```
 ```javascript
 function debounce(func, delay) {
   let timer = null;
@@ -30,9 +29,6 @@ function debounce(func, delay) {
 }
 ```
 
-<button>javascript</button>
-```
-
 好的，这个 `debounce` 函数的作用是用来<u>防止函数在短时间内多次执行</u>，它接收两个参数，第一个参数是要执行的函数，第二个参数是时间间隔。
 
 在函数内部，我们定义了一个变量 `timer`，用来保存定时器的引用。接着，我们返回一个函数，这个函数会在一定时间间隔后执行传入的函数。
@@ -45,7 +41,6 @@ function debounce(func, delay) {
 
 使用方式：
 
-```
 ```javascript
 const debounceFn = debounce(function() {
   console.log('debounce');
@@ -53,12 +48,8 @@ const debounceFn = debounce(function() {
 debounceFn();
 ```
 
-<button>javascript</button>
-```
-
 节流：
 
-```
 ```javascript
 function throttle(func, delay) {
   let timer = null;
@@ -75,9 +66,6 @@ function throttle(func, delay) {
 }
 ```
 
-<button>javascript</button>
-```
-
 好的，这个 `throttle` 函数的作用是用来控制函数的执行频率，避免函数在短时间内多次执行。它接收两个参数，第一个参数是要执行的函数，第二个参数是时间间隔。
 
 在函数内部，我们定义了一个变量 `timer`，用来保存定时器的引用。接着，我们返回一个函数，这个函数会在一定时间间隔后执行传入的函数。
@@ -88,7 +76,6 @@ function throttle(func, delay) {
 
 使用方式：
 
-```
 ```javascript
 const throttleFn = throttle(function() {
   console.log('throttle');
@@ -96,10 +83,6 @@ const throttleFn = throttle(function() {
 throttleFn();
 ```
 
-<button>javascript</button>
-```
-
-```
 ```js
 const debounce = (func, delay) => {
         let timeoutId;
@@ -112,7 +95,4 @@ const debounce = (func, delay) => {
           }, delay);
         };
       };
-```
-
-<button>js</button>
 ```

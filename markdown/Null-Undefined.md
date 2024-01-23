@@ -13,29 +13,21 @@ modifier: 'oeyoews'
 
     以下是一个示例：
 
-```
 ```javascript
 let obj = null;
 console.log(obj); // 输出：null
-```
-
-<button>javascript</button>
 ```
 
 * **undefined**表示一个未定义的值。当变量声明但没有被赋值时，它的默认值就是 undefined。此外，如果你访问一个对象的属性或函数，而该对象本身未被定义，那么该属性或函数的值也将是 undefined。
 
     以下是一些示例：
 
-```
 ```javascript
 let x; // 声明一个变量但未赋值
 console.log(x); // 输出：undefined
 
 let obj; // 声明一个对象变量但未定义
 console.log(obj.property); // 输出：undefined
-```
-
-<button>javascript</button>
 ```
 
 * 在总结上述区别时，可以将 null 视为已定义但空的值，而 undefined 表示未定义的值。

@@ -21,22 +21,14 @@ modifier: 'oeyoews'
 
 例如，我们可以这样创建一个对象：
 
-```
 ```js
 const obj = new Object();
 ```
 
-<button>js</button>
-```
-
 在这个例子中，我们使用 `new` 关键字创建了一个空的 `Object` 对象，并将其赋值给 `obj` 变量。这个过程可以简写成下面这样：
 
-```
 ```js
 const obj = {};
-```
-
-<button>js</button>
 ```
 
 这样就创建了一个空的对象，并将其赋值给 `obj` 变量。

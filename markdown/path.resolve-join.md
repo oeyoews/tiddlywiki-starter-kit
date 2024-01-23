@@ -29,7 +29,6 @@ modifier: 'oeyoews'
 
 下面是两者的使用示例：
 
-```
 ```javascript
 const path = require('path');
 
@@ -40,9 +39,6 @@ console.log(joinedPath); // 输出：/home/user/documents/file.txt
 // 使用 path.resolve
 const resolvedPath = path.resolve('/home', 'user', '..', 'documents', 'file.txt');
 console.log(resolvedPath); // 输出：/home/documents/file.txt
-```
-
-<button>javascript</button>
 ```
 
 总结来说，如果你只是简单地需要将多个路径片段连接起来形成一个路径，可以使用 `path.join`。而如果你需要解析相对路径，并返回一个绝对路径，或者需要考虑当前工作目录，可以使用 `path.resolve`。

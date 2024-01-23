@@ -23,7 +23,6 @@ HTML5 的 history API 提供了一组在 Web 应用程序中以编程方式与�
 
 以下是一个使用 HTML5 的 history API 实现无刷新页面加载并更新浏览器历史记录的示例代码：
 
-```
 ```javascript
 // 监听链接点击事件
 document.addEventListener('click', function(event) {
@@ -54,9 +53,6 @@ window.addEventListener('popstate', function(event) {
       document.querySelector('#content').innerHTML = html;
     });
 });
-```
-
-<button>javascript</button>
 ```
 
 在上面的示例中，我们使用 `history.pushState()` 方法将新的 URL 添加到浏览器历史记录中，并使用 `history.popstate` 事件处理程序监听浏览器的前进或后退操作。在异步加载新页面数据时，我们可以通过 `fetch()` 函数获取新页面的 HTML，然后将其渲染到页面中指定的区域内。当用户点击浏览器的前进或后退按钮时，我们可以使用 `fetch()` 函数重新加载当前页面的 HTML，并将其渲染到页面中指定的区域内。

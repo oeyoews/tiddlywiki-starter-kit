@@ -34,7 +34,6 @@ qrcode: 'yes'
 
 举个例子，如果我们有一个对象 obj1：
 
-```
 ```javascript
 const obj1 = {
   name: 'Alice',
@@ -47,49 +46,30 @@ const obj1 = {
 };
 ```
 
-<button>javascript</button>
-```
-
 那么浅拷贝 obj2 可以通过以下方式实现：
 
-```
 ```javascript
 const obj2 = Object.assign({}, obj1);
 ```
 
-<button>javascript</button>
-```
-
 此时修改 obj1 的 hobbies 属性会影响 obj2：
 
-```
 ```javascript
 obj1.hobbies.push('swimming');
 console.log(obj2.hobbies); // ['reading', 'dancing', 'swimming']
 ```
 
-<button>javascript</button>
-```
-
 而深拷贝 obj3 可以通过以下方式实现：
 
-```
 ```javascript
 const obj3 = JSON.parse(JSON.stringify(obj1));
 ```
 
-<button>javascript</button>
-```
-
 此时修改 obj1 的 hobbies 属性不会影响 obj3：
 
-```
 ```javascript
 obj1.hobbies.push('swimming');
 console.log(obj3.hobbies); // ['reading', 'dancing']
-```
-
-<button>javascript</button>
 ```
 
 需要注意的是，JSON.parse(JSON.stringify()) 这种方式虽然可以实现深拷贝，但是它有一些限制，例如无法拷贝函数、正则表达式等特殊对象。在实际开发中，需要根据具体情况选择合适的方式进行拷贝。
@@ -100,7 +80,6 @@ console.log(obj3.hobbies); // ['reading', 'dancing']
 
 而当你修改 `b` 对象里面的值时，即使你修改了 `b` 对象的属性值，但 `b` 仍然指向的是同一个对象。因此，如果其他地方有引用到 `b` 的地方也会受到影响。
 
-```
 ```javascript
 const sourceObj = {a: 1, b: {c: 2}};
 
@@ -111,9 +90,6 @@ console.log(sourceObj); // {a: 1, b: {d: 3}}
 // 修改 b 对象里面的值
 sourceObj.b.c = 4;
 console.log(sourceObj); // {a: 1, b: {c: 4}}
-```
-
-<button>javascript</button>
 ```
 
 在第一个例子中，我们直接修改了 `sourceObj.b` 对象，将其重新赋值为 `{d: 3}`。这导致 `b` 引用的对象完全改变，与原始对象 `{c: 2}` 不再有任何关联。

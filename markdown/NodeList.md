@@ -21,7 +21,6 @@ modifier: 'oeyoews'
 
 以下是一个使用 `NodeList` 对象的示例：
 
-```
 ```js
 // 获取所有 p 元素
 const paragraphs = document.querySelectorAll('p');
@@ -39,12 +38,8 @@ paragraphs.forEach((paragraph) => {
 });
 ```
 
-<button>js</button>
-```
-
 在这个例子中，我们使用 `querySelectorAll` 方法获取了所有 `p` 元素，并将它们存储在一个 `NodeList` 对象 `paragraphs` 中。然后，我们使用 `length` 属性获取 `paragraphs` 的长度，使用方括号语法和 `item` 方法访问 `paragraphs` 的第一个元素，使用 `forEach` 方法迭代 `paragraphs` 中的每个元素，并在控制台中打印每个段落元素的文本内容。
 
-```
 ```js
 // 创建 MutationObserver 对象
 const observer = new MutationObserver((mutations) => {
@@ -65,7 +60,4 @@ observer.observe(document.querySelector(".tc-story-river"), {
   childList: true,
   subtree: true,
 });
-```
-
-<button>js</button>
 ```

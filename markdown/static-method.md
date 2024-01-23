@@ -9,7 +9,6 @@ type: 'text/vnd.tiddlywiki'
 
 # static-method
 
-```
 ```js
 class MathUtils {
     static pi = 3.14159;
@@ -20,7 +19,4 @@ class MathUtils {
 
 let pi = MathUtils.pi; // 访问静态常量
 let sum = MathUtils.add(3, 5); // 调用静态方法
-```
-
-<button>js</button>
 ```

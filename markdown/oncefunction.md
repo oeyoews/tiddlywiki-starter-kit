@@ -9,7 +9,6 @@ modifier: 'oeyoews'
 
 # oncefunction
 
-```
 ```js
 const once = (fn) => {
   let executed = false;
@@ -20,7 +19,4 @@ const once = (fn) => {
     }
   };
 };
-```
-
-<button>js</button>
 ```

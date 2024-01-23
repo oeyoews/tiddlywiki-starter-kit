@@ -13,7 +13,6 @@ type: 'text/vnd.tiddlywiki'
 
 1. 使用typeof运算符：
 
-```
 ```js
 if (typeof functionName === 'function') {
   // 函数存在，执行相关操作
@@ -22,12 +21,8 @@ if (typeof functionName === 'function') {
 }
 ```
 
-<button>js</button>
-```
-
 2. 直接判断函数名：
 
-```
 ```js
 if (window.functionName) {
   // 函数存在，执行相关操作
@@ -36,14 +31,10 @@ if (window.functionName) {
 }
 ```
 
-<button>js</button>
-```
-
 需要注意的是，在浏览器环境下，全局函数通常会被定义在window对象中。因此，我们可以通过window对象来访问和判断全局函数是否存在。如果在其他环境下使用，可能需要针对不同的上下文对象进行处理。
 
 另外，如果需要判断某个函数是否为对象的属性，也可以使用in运算符。例如：
 
-```
 ```js
 const obj = {
   foo() {
@@ -56,9 +47,6 @@ if ('foo' in obj) {
 } else {
   console.log('Function not found.');
 }
-```
-
-<button>js</button>
 ```
 
 在这个例子中，我们通过in运算符来判断obj对象是否包含名为`foo`的函数，如果存在，则调用该函数。

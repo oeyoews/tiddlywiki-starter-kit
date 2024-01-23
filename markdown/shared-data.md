@@ -24,18 +24,13 @@ modifier: 'oeyoews'
 在源页面中：
 
 ```
-```
 // 源页面
 const targetWindow = window.parent; // 获取目标窗口对象
 targetWindow.postMessage('hello', 'http://localhost:8080'); // 向目标窗口发送消息
 ```
 
-<button>plain</button>
-```
-
 在目标页面中：
 
-```
 ```
 // 目标页面
 window.addEventListener('message', function(event) {
@@ -44,9 +39,6 @@ window.addEventListener('message', function(event) {
     event.source.postMessage('world', event.origin); // 向源页面发送响应消息
   }
 });
-```
-
-<button>plain</button>
 ```
 
 在这个示例中，源页面向目标窗口发送了一个消息`hello`，并指定消息需要发送到`http://localhost:8080`。当目标页面接收到来自源页面的消息时，它会打印出消息内容，并向源页面发送响应消息`world`。

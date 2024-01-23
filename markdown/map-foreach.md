@@ -17,7 +17,6 @@ type: 'text/vnd.tiddlywiki'
 
 下面是 `forEach` 和 `map` 方法的使用示例：
 
-```
 ```js
 const arr = [1, 2, 3, 4];
 
@@ -29,9 +28,6 @@ arr.forEach(item => {
 // 使用 map 方法
 const newArr = arr.map(item => item * 2);
 console.log(newArr);
-```
-
-<button>js</button>
 ```
 
 在使用这两种方法时，需要注意的是，回调函数的参数不同。`forEach` 方法的回调函数有三个参数：当前遍历的元素、当前元素的索引和整个数组。而 `map` 方法的回调函数只有两个参数：当前遍历的元素和当前元素的索引。

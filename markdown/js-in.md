@@ -9,7 +9,6 @@ type: 'text/vnd.tiddlywiki'
 
 # js-in
 
-```
 ```js
 const nav = {
   name: 'tom',
@@ -26,9 +25,6 @@ if (res) {
 }
 ```
 
-<button>js</button>
-```
-
 `'serviceWorker' in window.navigator` 是 JavaScript 中的一个语法，具体来说，它是一种运算符。这个运算符称为“in 运算符”，用于检测一个对象是否包含某个属性。
 
 在这个例子中，`'serviceWorker' in window.navigator` 用于检测 `window.navigator` 对象是否包含名为 `'serviceWorker'` 的属性。如果存在，则表达式的值为 `true`，否则为 `false`。这个表达式可以用于判断当前浏览器是否支持 Service Worker 技术，从而决定是否使用 PWA（渐进式 Web 应用程序）技术。
@@ -36,9 +32,7 @@ if (res) {
 `in` 运算符是 JavaScript 中的一种基本运算符，用于检测一个对象是否包含某个属性。它可以用于检测对象自身的属性，也可以用于检测对象原型链上的属性。`in` 运算符的语法如下：
 
 ```
-```
 propName in object
-```
 ```
 
 其中，`propName` 是要检测的属性名，`object` 是要检测的对象。如果 `object` 包含名为 `propName` 的属性，则表达式的值为 `true`，否则为 `false`。

@@ -9,7 +9,6 @@ modifier: 'oeyoews'
 
 # js默认导出
 
-```
 ```js
 // mjs
 export default {
@@ -20,10 +19,6 @@ import aa from "./d.mjs";
 console.log(aa.a);
 ```
 
-<button>js</button>
-```
-
-```
 ```js
 // cjs
 module.exports = {
@@ -32,7 +27,4 @@ module.exports = {
 
 const ab = require('./d.js')
 console.log(ab.a);
-```
-
-<button>js</button>
 ```

@@ -31,7 +31,6 @@ modifier: 'oeyoews'
 
 以下是一些示例来演示 `arr.sort()` 的使用：
 
-```
 ```javascript
 const numbers = [10, 5, 8, 1, 7];
 numbers.sort();
@@ -47,9 +46,6 @@ const mixed = [10, 'a', 5, 'b', 1];
 mixed.sort();
 console.log(mixed);
 // 输出：[1, 10, 5, 'a', 'b']
-```
-
-<button>javascript</button>
 ```
 
 可以看到，默认情况下 `sort()` 方法会将元素转换成字符串，然后根据字符串的 Unicode 码点值进行比较排序。

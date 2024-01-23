@@ -15,7 +15,6 @@ modifier: 'oeyoews'
 
 例如，考虑以下情况：
 
-```
 ```javascript
 // 创建一个普通对象
 var normalObject = {};
@@ -24,9 +23,6 @@ console.log(normalObject.toString); // [Function: toString]
 // 创建一个使用 Object.create(null) 的纯净对象
 var pureObject = Object.create(null);
 console.log(pureObject.toString); // undefined
-```
-
-<button>javascript</button>
 ```
 
 在上面的例子中，`normalObject` 是一个普通对象，它继承了 `Object` 原型链上的方法，如 `toString`。相比之下，`pureObject` 是使用 `Object.create(null)` 创建的对象，它不继承任何属性，因此 `toString` 是 `undefined`。
@@ -39,7 +35,6 @@ console.log(pureObject.toString); // undefined
 
 1. **对象继承：**
 
-```
 ```javascript
 var parent = {
   // 父对象的属性和方法
@@ -49,12 +44,8 @@ var child = Object.create(parent);
 // child 现在继承了 parent 的属性和方法
 ```
 
-<button>javascript</button>
-```
-
 1. **原型继承：**
 
-```
 ```javascript
 function Animal(name) {
   this.name = name;
@@ -70,12 +61,8 @@ Dog.prototype = Object.create(Animal.prototype);
 var myDog = new Dog('Bulldog');
 ```
 
-<button>javascript</button>
-```
-
 1. **对象模板：**
 
-```
 ```javascript
 var template = {
   // 一些通用的属性和方法
@@ -85,12 +72,8 @@ var instance = Object.create(template);
 // 创建新对象，共享 template 的属性和方法
 ```
 
-<button>javascript</button>
-```
-
 1. **属性复制：**
 
-```
 ```javascript
 var source = {
   prop1: 'value1',
@@ -105,9 +88,6 @@ for (var key in source) {
     target[key] = source[key];
   }
 }
-```
-
-<button>javascript</button>
 ```
 
 在这些场景下，`Object.create` 提供了一种灵活的方式来创建对象，并指定它们的原型链关系。

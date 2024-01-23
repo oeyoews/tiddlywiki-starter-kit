@@ -11,7 +11,6 @@ page-cover: 'https://source.unsplash.com/random?fm=blurhash&w=50&event-objectPar
 # event-objectParam
 
 Undefined widget 'tid2pdf'
-```
 ```js
 // 获取按钮元素
 const myButton = document.getElementById('myButton');
@@ -29,7 +28,4 @@ myButton.addEventListener('click', function(event) {
   console.log('事件类型：', eventType);
   console.log('鼠标点击位置：', clientX, clientY);
 });
-```
-
-<button>js</button>
 ```

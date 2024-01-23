@@ -13,24 +13,16 @@ javascript:void()和#都是用于在HTML中创建链接的特殊URL。它们的�
 
 具体来说，javascript:void()是一个空的JavaScript语句，它不会执行任何操作。如果将javascript:void()作为链接的href属性值，当用户点击该链接时，浏览器将执行javascript:void()语句，并不会有任何变化。例如：
 
-```
 ```html
 <a href="javascript:void()">点击我</a>
-```
-
-<button>html</button>
 ```
 
 在这个例子中，我们创建了一个链接，并将其href属性设置为javascript:void()。当用户点击该链接时，浏览器将执行javascript:void()语句，但不会有任何变化。
 
 相比之下，#是用于创建锚点的特殊URL，它会将用户滚动到页面的顶部。如果将#作为链接的href属性值，当用户点击该链接时，浏览器将滚动到页面的顶部，并不会跳转或刷新页面。例如：
 
-```
 ```html
 <a href="#">回到顶部</a>
-```
-
-<button>html</button>
 ```
 
 在这个例子中，我们创建了一个链接，并将其href属性设置为#。当用户点击该链接时，浏览器将滚动到页面的顶部，但并不会跳转或刷新页面。

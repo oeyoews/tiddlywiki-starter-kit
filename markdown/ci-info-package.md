@@ -7,7 +7,6 @@ type: 'text/vnd.tiddlywiki'
 
 # ci-info-package
 
-```
 ```js
 import ci from 'ci-info';
 
@@ -21,7 +20,4 @@ switch (ci.name) {
   default:
     console.log('Running locally');
 }
-```
-
-<button>js</button>
 ```

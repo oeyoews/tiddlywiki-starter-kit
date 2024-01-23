@@ -11,12 +11,8 @@ modifier: 'oeyoews'
 
 `Array.prototype.find()` 方法是 JavaScript 数组的一个内置方法，用于在数组中查找满足给定条件的第一个元素，并返回该元素。它的语法如下：
 
-```
 ```javascript
 array.find(callback(element[, index[, array]])[, thisArg])
-```
-
-<button>javascript</button>
 ```
 
 参数说明：
@@ -39,7 +35,6 @@ array.find(callback(element[, index[, array]])[, thisArg])
 
 示例代码：
 
-```
 ```javascript
 const numbers = [1, 2, 3, 4, 5];
 
@@ -59,9 +54,6 @@ const users = [
 ];
 const user = users.find((user) => user.name === "Alice");
 console.log(user); // 输出：{ name: "Alice", age: 25 }
-```
-
-<button>javascript</button>
 ```
 
 `find()` 方法在找到符合条件的元素后会停止搜索，不会继续遍历整个数组。如果需要查找所有满足条件的元素，可以使用 `filter()` 方法。

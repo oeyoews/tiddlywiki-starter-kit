@@ -17,14 +17,10 @@ modifier: 'oeyoews'
 
     * 使用 `appendChild` 方法时，需要创建一个节点对象，然后将其添加到目标节点中。
 
-    * 示例代码：```
-```javascript
+    * 示例代码：```javascript
 const parent = document.getElementById('parent'); // 获取父节点
 const child = document.createElement('div'); // 创建一个子节点（div）
 parent.appendChild(child); // 将子节点添加到父节点中
-```
-
-<button>javascript</button>
 ```
 
 1. `append` 方法：
@@ -33,15 +29,11 @@ parent.appendChild(child); // 将子节点添加到父节点中
 
     * 使用 `append` 方法时，可以直接传入一个或多个节点对象、DOM 字符串或其他可以转换为节点的对象。
 
-    * 示例代码：```
-```javascript
+    * 示例代码：```javascript
 const parent = document.getElementById('parent'); // 获取父节点
 const child1 = document.createElement('div'); // 创建子节点 1（div）
 const child2 = document.createElement('span'); // 创建子节点 2（span）
 parent.append(child1, child2); // 将多个子节点添加到父节点中
-```
-
-<button>javascript</button>
 ```
 
 对比：

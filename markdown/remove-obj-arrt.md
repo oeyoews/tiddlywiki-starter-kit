@@ -11,7 +11,6 @@ modifier: 'oeyoews'
 
 如果你想删除 JavaScript 对象的属性，但又不想改变原始对象，则可以使用 `Object.assign()` 或扩展运算符（`...`）等方法来创建新对象并复制原始对象的所有属性，然后再从新对象中删除属性。以下是一个示例：
 
-```
 ```javascript
 const originalObj = {
   name: 'John',
@@ -34,9 +33,6 @@ console.log(originalObj); // 输出 { name: 'John', age: 30, city: 'New York' }
 console.log(anotherObj); // 输出 { name: 'John', age: 30 }
 ```
 
-<button>javascript</button>
-```
-
 在上面的示例中，我们首先创建了一个名为 `originalObj` 的对象，并设置了三个属性：`name`、`age` 和 `city`。然后，我们使用 `Object.assign()` 方法或扩展运算符（`...`）复制 `originalObj` 并将其存储在 `newObj` 或 `anotherObj` 中。接着，我们从 `newObj` 和 `anotherObj` 中分别删除了 `age` 和 `city` 属性。最后，我们分别打印了 `originalObj` 和 `newObj` 或 `anotherObj`，以显示删除属性后的结果。
 
 需要注意的是，这两种方法都只复制了原始对象的浅层副本。如果原始对象包含嵌套的对象或数组，则嵌套对象或数组仍然是通过引用共享的。
@@ -45,7 +41,6 @@ console.log(anotherObj); // 输出 { name: 'John', age: 30 }
 
 如果你想删除 JavaScript 对象的属性，但又不想改变原始对象，并且希望使用其他方法，可以考虑使用解构赋值来创建一个新对象，只包含需要保留的属性。以下是一个示例：
 
-```
 ```javascript
 const originalObj = {
   name: 'John',
@@ -57,9 +52,6 @@ const { age, ...newObj } = originalObj;
 
 console.log(originalObj); // 输出 { name: 'John', age: 30, city: 'New York' }
 console.log(newObj); // 输出 { name: 'John', city: 'New York' }
-```
-
-<button>javascript</button>
 ```
 
 在上面的示例中，我们使用解构赋值语法从 `originalObj` 中提取 `age` 属性，并将其存储在变量 `age` 中。然后，我们使用剩余参数（`...`）来创建一个名为 `newObj` 的新对象，它只包含除了 `age` 以外的其他属性。最后，我们分别打印了 `originalObj` 和 `newObj`，以显示删除属性后的结果。

@@ -13,7 +13,6 @@ modifier: 'oeyoews'
 
 下面是使用`in`运算符的示例：
 
-```
 ```javascript
 const object1 = {
   property1: 42,
@@ -27,9 +26,6 @@ console.log('toString' in object1);
 
 console.log('hasOwnProperty' in object1);
 // 输出：false，因为 hasOwnProperty 是从 Object 原型继承而来的方法
-```
-
-<button>javascript</button>
 ```
 
 在上述示例中，我们使用`in`运算符来检查对象`object1`是否具有指定的属性。如果对象拥有该属性（不论是自有属性还是继承属性），则返回`true`，否则返回`false`。

@@ -16,7 +16,6 @@ Promise对象通常包含两个方法：then和catch。then方法接受两个回
 
 以下是一个Promise对象的基本使用示例：
 
-```
 ```javascript
 function asyncTask() {
   return new Promise((resolve, reject) => {
@@ -38,9 +37,6 @@ asyncTask()
   .catch(error => {
     console.error(`Async task failed, error: ${error}`);
   });
-```
-
-<button>javascript</button>
 ```
 
 在以上示例中，我们创建了一个名为asyncTask的异步任务，并将它封装成了一个Promise对象。在这个任务中，我们使用setTimeout模拟了一个耗时1秒的异步操作，并随机生成了一个数值，当数值大于0.5时，任务会成功完成并返回随机数值，否则任务会失败并抛出一个Error对象。

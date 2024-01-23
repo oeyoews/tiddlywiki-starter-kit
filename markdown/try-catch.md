@@ -13,7 +13,6 @@ type: 'text/vnd.tiddlywiki'
 
 例如，在下面的示例中，try 代码块中的 throw 语句会抛出一个 Error 类型的异常，catch 代码块中的 error 参数就会接收到这个异常对象。
 
-```
 ```javascript
 try {
   throw new Error('Something went wrong');
@@ -21,9 +20,6 @@ try {
   console.error(error.name); // 输出 "Error"
   console.error(error.message); // 输出 "Something went wrong"
 }
-```
-
-<button>javascript</button>
 ```
 
 * 需要注意的是，catch 代码块中的参数名（如上面的 error）是任意的，只要符合标识符的命名规范即可。通常情况下，它被命名为 error 或 err，以表明它是一个异常对象。

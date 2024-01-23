@@ -14,11 +14,7 @@ modifier: 'oeyoews'
 1. **tsc**：这是 TypeScript 编译器的命令行工具。你可以使用它来将 TypeScript 代码编译成 JavaScript 代码。例如，你可以运行以下命令来编译一个 TypeScript 文件：
 
 ```
-```
 tsc myfile.ts
-```
-
-<button>plain</button>
 ```
 
     这将生成一个名为`myfile.js`的 JavaScript 文件。
@@ -26,11 +22,7 @@ tsc myfile.ts
 1. **ts-node**：这是一个 Node.js 运行时 (TypeScript) 的工具。它允许你直接运行 TypeScript 文件，而不需要事先编译成 JavaScript。你可以使用以下命令运行 TypeScript 文件：
 
 ```
-```
 ts-node myfile.ts
-```
-
-<button>plain</button>
 ```
 
     这将在 Node.js 环境中执行`myfile.ts`文件，而不需要手动编译成 JavaScript。

@@ -11,12 +11,8 @@ modifier: 'oeyoews'
 
 `Object.defineProperty` 是 JavaScript 中用于在对象上定义新属性或修改现有属性的方法。它的语法如下：
 
-```
 ```javascript
 Object.defineProperty(obj, prop, descriptor)
-```
-
-<button>javascript</button>
 ```
 
 * `obj`: 要定义属性的对象。
@@ -41,7 +37,6 @@ Object.defineProperty(obj, prop, descriptor)
 
 示例：
 
-```
 ```javascript
 const obj = {};
 
@@ -57,9 +52,6 @@ obj.name = 'Jane'; // 不会改变属性的值，因为 writable 为 false
 for (let key in obj) {
   console.log(key); // 输出："name"
 }
-```
-
-<button>javascript</button>
 ```
 
 注意：使用 `Object.defineProperty` 定义的属性是不可修改的，即无法通过赋值运算符修改其值。要修改属性值，可以使用 `Object.defineProperties` 方法定义多个属性，或者使用 `Object.assign` 方法进行浅拷贝。

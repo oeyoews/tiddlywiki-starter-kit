@@ -10,7 +10,6 @@ publish: 'article'
 
 # learn-x-in-y-minutes-javascript
 
-```
 ```js
 // 注释方式和 C 很像，这是单行注释
 /* 这是多行
@@ -25,12 +24,8 @@ doStuff()
 // 因为这些特殊情况会导致意外的结果，所以我们在这里保留分号。
 ```
 
-<button>js</button>
-```
-
 ## 数字、字符串与操作符
 
-```
 ```js
 ///////////////////////////////////
 
@@ -122,12 +117,8 @@ undefined; // 用来表示还没有设置的值 (尽管 `undefined` 自身实际
 // 注意 0 是逻辑假而  "0"是逻辑真，尽管 0 == "0"。
 ```
 
-<button>js</button>
-```
-
 ## 变量、数组和对象
 
-```
 ```js
 ///////////////////////////////////
 
@@ -185,12 +176,8 @@ myObj.myThirdKey = true;
 myObj.myFourthKey; // = undefined
 ```
 
-<button>js</button>
-```
-
 ## 逻辑与控制结构
 
-```
 ```js
 ///////////////////////////////////
 
@@ -254,12 +241,8 @@ switch (grade) {
 }
 ```
 
-<button>js</button>
-```
-
 ## 函数、作用域、闭包
 
-```
 ```js
 ///////////////////////////////////
 
@@ -331,12 +314,8 @@ function sayHelloInFiveSeconds(name){
 sayHelloInFiveSeconds("Adam"); // 会在 5 秒后弹出 "Hello, Adam!"
 ```
 
-<button>js</button>
-```
-
 ## 对象、构造函数与原型
 
-```
 ```js
 ///////////////////////////////////
 
@@ -491,7 +470,4 @@ if (Object.create === undefined){ // 如果存在则不覆盖
         return new Constructor();
     }
 }
-```
-
-<button>js</button>
 ```

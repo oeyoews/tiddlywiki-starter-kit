@@ -18,7 +18,6 @@ page-cover: 'https://source.unsplash.com/random?fm=blurhash&w=50&instance'
 
 例如：
 
-```
 ```javascript
 function Person(name) {
   this.name = name;
@@ -32,9 +31,6 @@ console.log({} instanceof Object); // true
 console.log([] instanceof Object); // true
 console.log([] instanceof Array); // true
 console.log({} instanceof Array); // false
-```
-
-<button>javascript</button>
 ```
 
 在上面的代码中，`person` 是 `Person` 的实例，因此 `person instanceof Person` 返回 `true`。同时，由于所有对象都是 `Object` 的实例，因此 `person` 也是 `Object` 的实例，`{}，[]` 也是 `Object` 的实例。`[]` 是 `Array` 的实例，因此 `[] instanceof Array` 返回 `true`，而 `{}` 不是 `Array` 的实例，因此 `{} instanceof Array` 返回 `false`。

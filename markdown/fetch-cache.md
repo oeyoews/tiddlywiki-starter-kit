@@ -49,30 +49,22 @@ modifier: 'oeyoews'
 
 在使用 Fetch API 的 `fetch()` 方法时，可以通过设置 `cache` 选项来指定缓存模式。例如：
 
-```
 ```javascript
 fetch(url, {
   cache: 'no-cache'
 })
 ```
 
-<button>javascript</button>
-```
-
 在上面的示例中，我们将缓存模式设置为 `no-cache`，表示可以使用缓存，但首先必须向服务器验证缓存是否过期。如果缓存未过期，则使用缓存；如果缓存已过期，则会向服务器发送请求获取最新数据。
 
 另外，还可以使用第二个参数 `init` 中的 `headers` 选项设置缓存控制头，例如：
 
-```
 ```javascript
 fetch(url, {
   headers: {
     'Cache-Control': 'no-cache'
   }
 })
-```
-
-<button>javascript</button>
 ```
 
 在上面的示例中，我们使用 `Cache-Control` 头设置缓存控制，将缓存模式设置为 `no-cache`。
@@ -119,7 +111,6 @@ fetch(url, {
 
 你可以通过 JavaScript 中的代码来访问这些响应头字段，例如：
 
-```
 ```javascript
 fetch('https://example.com')
   .then(response => {
@@ -132,7 +123,4 @@ fetch('https://example.com')
   .catch(error => {
     console.error('发生错误：', error);
   });
-```
-
-<button>javascript</button>
 ```

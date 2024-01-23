@@ -18,7 +18,6 @@ publish: 'public'
 
 ### 立即执行版本
 
-```
 ```js
 function debounceImmediate(fn, wait) {
   let timer = null; // 定义计时器，初始值为 null
@@ -39,14 +38,10 @@ function debounceImmediate(fn, wait) {
 }
 ```
 
-<button>js</button>
-```
-
 这个函数实现了立即执行一次函数，并在规定的时间内限制函数的调用次数。在函数被调用时，会判断计时器是否存在，如果存在则说明函数还在等待执行，此时需要清除计时器。如果计时器不存在，则说明可以立即执行函数，并将上下文和参数传递进去。在函数执行后，会设置一个计时器，在规定时间内将计时器设为 null，从而限制接下来的函数调用。这个函数也使用了闭包来保存计时器变量，从而实现了防抖的效果。
 
 ### 非立即执行版本
 
-```
 ```javascript
 function debounce(fn, wait) {
   let timer = null;
@@ -60,14 +55,10 @@ function debounce(fn, wait) {
 }
 ```
 
-<button>javascript</button>
-```
-
 ## 节流
 
 ### 立即执行版本
 
-```
 ```js
 function throttleImmediate(fn, wait) {
   let timer = null; // 定义计时器，初始值为 null
@@ -85,14 +76,10 @@ function throttleImmediate(fn, wait) {
 }
 ```
 
-<button>js</button>
-```
-
 这个函数实现了立即执行一次函数，并在规定的时间内限制函数的调用次数。在函数被调用时，会判断计时器是否存在，如果不存在则说明可以立即执行函数。在函数执行后，会设置一个计时器，在规定时间内将计时器设为 null，从而限制接下来的函数调用。这个函数也使用了闭包来保存计时器变量，从而实现了节流的效果。
 
 ### 非立即执行版本
 
-```
 ```javascript
 function throttle(fn, wait) {
   let timer = null;
@@ -106,9 +93,6 @@ function throttle(fn, wait) {
     }
   };
 }
-```
-
-<button>javascript</button>
 ```
 
 在这些代码中，立即执行版本的函数会在第一次触发时立即执行，而非立即执行版本的函数会在等待一定时间后执行。这两种函数都可以根据需要使用防抖或节流功能来限制函数的执行次数。

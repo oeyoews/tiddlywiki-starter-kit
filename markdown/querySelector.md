@@ -19,13 +19,9 @@ modifier: 'oeyoews'
 
 举个例子，如果我们要获取文档中 ID 为 `myDiv` 的 div 元素，可以使用以下两种方式：
 
-```
 ```js
 var myDiv1 = document.querySelector('#myDiv');
 var myDiv2 = document.getElementById('myDiv');
-```
-
-<button>js</button>
 ```
 
 其中，`querySelector` 使用 CSS 选择器 `#myDiv` 来匹配 ID 为 `myDiv` 的元素，并返回第一个匹配的元素；而 `getElementById` 直接根据 ID 字符串 `myDiv` 返回对应的元素。

@@ -19,14 +19,10 @@ modifier: 'oeyoews'
 
     * 返回值：如果对象具有指定名称的自身属性，返回 `true`，否则返回 `false`。
 
-    * 示例：```
-```javascript
+    * 示例：```javascript
 var obj = { key: 'value' };
 console.log(obj.hasOwnProperty('key')); // true
 console.log(obj.hasOwnProperty('toString')); // false，因为 toString 是继承的属性
-```
-
-<button>javascript</button>
 ```
 
 hasOwn 是 es2022, chatgpt(gpt 3.5) 无法回答这个问题

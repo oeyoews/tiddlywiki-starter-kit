@@ -31,7 +31,6 @@ modifier: 'oeyoews'
 
 下面是一个简单的例子，演示了栈和堆的使用：
 
-```
 ```javascript
 // 栈中存储基本类型数据
 let num = 10;
@@ -50,9 +49,6 @@ function example() {
 
 // 调用函数
 example();
-```
-
-<button>javascript</button>
 ```
 
 请注意，以上只是简单的示例，实际上JavaScript的内存管理是由JavaScript引擎负责的，开发者无需手动管理内存。

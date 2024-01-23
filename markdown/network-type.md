@@ -9,10 +9,6 @@ modifier: 'oeyoews'
 
 # network-type
 
-```
 ```js
 navigator.connection
-```
-
-<button>js</button>
 ```

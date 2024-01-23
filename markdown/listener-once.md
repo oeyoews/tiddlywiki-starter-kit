@@ -13,7 +13,6 @@ modifier: 'oeyoews'
 
 以下是一个使用 `{once: true}` 选项的示例：
 
-```
 ```html
 <button id="myButton">点击我</button>
 
@@ -26,9 +25,6 @@ function handleClick() {
 
 button.addEventListener('click', handleClick, {once: true});
 </script>
-```
-
-<button>html</button>
 ```
 
 在上述示例中，我们首先获取了一个 `<button>` 元素，并为其添加了一个点击事件监听器 `handleClick`。通过将 `{once: true}` 对象作为第三个参数传递给 `addEventListener` 方法，我们指示浏览器只触发该事件监听器一次。当用户单击按钮时，将执行 `handleClick` 函数并记录一条消息。

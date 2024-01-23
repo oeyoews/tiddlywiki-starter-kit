@@ -15,7 +15,6 @@ type: 'text/vnd.tiddlywiki'
 
 以下是使用 "super" 关键字的示例：
 
-```
 ```js
 class Animal {
   constructor(name) {
@@ -38,9 +37,6 @@ class Dog extends Animal {
 
 let d = new Dog('Mitzie');
 d.speak(); // 输出 "Mitzie makes a noise." 和 "Mitzie barks."
-```
-
-<button>js</button>
 ```
 
 在这个例子中，子类 `Dog` 继承自父类 `Animal`，并且在子类构造函数中使用 "super" 关键字调用了父类的构造函数，以便为父类的属性进行初始化。在子类方法 `speak` 中，使用 "super" 关键字调用了父类的 `speak` 方法，并在其后添加了额外的行为。

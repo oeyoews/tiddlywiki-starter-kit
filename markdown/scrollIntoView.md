@@ -13,24 +13,16 @@ modifier: 'oeyoews'
 
 基本用法如下：
 
-```
 ```javascript
 element.scrollIntoView();
 ```
 
-<button>javascript</button>
-```
-
 这将使包含该元素的父容器滚动，以确保该元素出现在可见区域内。你还可以传递一个配置对象，以指定滚动行为的各种选项：
 
-```
 ```javascript
 element.scrollIntoView({
   behavior: 'smooth', // 平滑滚动
   block: 'start',      // 开始位置
   inline: 'nearest'    // 最靠近视口的位置
 });
-```
-
-<button>javascript</button>
 ```

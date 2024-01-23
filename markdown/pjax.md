@@ -15,7 +15,6 @@ PJAX（Partial JavaScript and XML）是一种在 Web 应用程序中实现局部
 
 以下是一个使用 PJAX 实现无刷新页面加载的示例代码：
 
-```
 ```javascript
 // 监听链接点击事件
 document.addEventListener('click', function(event) {
@@ -60,9 +59,6 @@ window.addEventListener('popstate', function(event) {
       document.querySelector('#content').innerHTML = content.innerHTML;
     });
 });
-```
-
-<button>javascript</button>
 ```
 
 在上面的示例中，我们使用 `fetch()` 函数来通过 PJAX 进行异步数据请求并处理响应。在点击链接时，我们通过 `fetch()` 函数异步地加载新的页面 HTML，并将其渲染到当前页面中指定的区域中。然后，我们使用浏览器的 pushState 方法将新的 URL 添加到浏览器历史记录中。在浏览器前进或后退时，我们可以通过监听 popstate 事件来异步加载当前页面的 HTML 内容，并将其渲染到当前页面中指定的区域中。

@@ -25,7 +25,6 @@ URLSearchParams 对象提供了一种方便的方式来构建、解析和操作 
 
 下面是一个使用 URLSearchParams 的示例：
 
-```
 ```javascript
 const params = new URLSearchParams();
 params.append("name", "John");
@@ -36,9 +35,6 @@ console.log(params.toString()); // 输出："name=John&age=25"
 
 params.delete("age");
 console.log(params.toString()); // 输出："name=John"
-```
-
-<button>javascript</button>
 ```
 
 在这个示例中，我们首先创建了一个空的 URLSearchParams 对象，然后使用 `append` 方法添加了两个查询参数：`name` 和 `age`。我们可以使用 `get` 方法获取指定名称的查询参数的值，并使用 `toString` 方法将 URLSearchParams 对象转换为字符串，以便于在 URL 中使用。最后，我们使用 `delete` 方法删除了名为 `age` 的查询参数。

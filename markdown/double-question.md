@@ -23,12 +23,8 @@ modifier: 'oeyoews'
 
 例如：
 
-```
 ```javascript
 let value = someValue ?? defaultValue;
-```
-
-<button>javascript</button>
 ```
 
 如果 `someValue` 有值，那么 `value` 将等于 `someValue`。如果 `someValue` 是 null 或 undefined，那么 `value` 将等于 `defaultValue`。
@@ -39,12 +35,8 @@ let value = someValue ?? defaultValue;
 
 例如：
 
-```
 ```javascript
 let result = expression1 || expression2;
-```
-
-<button>javascript</button>
 ```
 
 如果 `expression1` 为真，那么 `result` 将等于 `expression1` 的值。如果 `expression1` 为假，但 `expression2` 为真，那么 `result` 将等于 `expression2` 的值。

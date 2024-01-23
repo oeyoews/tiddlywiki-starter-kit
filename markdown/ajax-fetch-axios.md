@@ -21,7 +21,6 @@ modifier: 'oeyoews'
 
 以下是使用 Ajax 发送 GET 请求并处理响应的示例代码：
 
-```
 ```javascript
 // 创建一个新的 XMLHttpRequest 对象
 const xhr = new XMLHttpRequest();
@@ -43,14 +42,10 @@ xhr.onload = function() {
 xhr.send();
 ```
 
-<button>javascript</button>
-```
-
 在上面的示例中，我们首先创建了一个新的 XMLHttpRequest 对象，并通过 `.open()` 方法设置请求的 URL 和方法。然后，我们使用 `.onload` 事件处理程序处理响应数据，并将其解析为 JSON 格式。最后，使用 `.send()` 方法发送请求。
 
 以下是使用 Fetch 发送 GET 请求并处理响应的示例代码：
 
-```
 ```javascript
 fetch('path/to/data.json')
   .then(response => response.json())
@@ -58,21 +53,14 @@ fetch('path/to/data.json')
   .catch(error => console.error('Request failed:', error));
 ```
 
-<button>javascript</button>
-```
-
 在上面的示例中，我们使用 `fetch()` 函数发送 GET 请求，并在 Promise 链中处理响应数据。如果请求成功，则将响应解析为 JSON 格式并打印到控制台上；如果请求失败，则捕获错误并打印到控制台上。
 
 以下是使用 Axios 发送 GET 请求并处理响应的示例代码：
 
-```
 ```javascript
 axios.get('path/to/data.json')
   .then(response => console.log(response.data))
   .catch(error => console.error('Request failed:', error));
-```
-
-<button>javascript</button>
 ```
 
 在上面的示例中，我们使用 `axios.get()` 方法发送 GET 请求，并在 Promise 链中处理响应数据。如果请求成功，则将响应解析为 JSON 格式并打印到控制台上；如果请求失败，则捕获错误并打印到控制台上。

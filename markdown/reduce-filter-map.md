@@ -15,7 +15,6 @@ modifier: 'oeyoews'
 
 下面是一个使用 `filter()` 和 `map()` 方法的示例代码：
 
-```
 ```python
 # 使用 filter() 和 map() 遍历数组两次
 array = [1, 2, 3, 4, 5]
@@ -27,12 +26,8 @@ result = list(mapped_array)
 print(result)  # 输出 [4, 8]
 ```
 
-<button>python</button>
-```
-
 而下面是使用 `reduce()` 方法实现相同效果的示例代码：
 
-```
 ```python
 # 使用 reduce() 遍历数组一次
 from functools import reduce
@@ -42,9 +37,6 @@ array = [1, 2, 3, 4, 5]
 result = reduce(lambda acc, x: acc + [x * 2] if x % 2 == 0 else acc, array, [])
 
 print(result)  # 输出 [4, 8]
-```
-
-<button>python</button>
 ```
 
 在上述代码中，`reduce()` 方法的回调函数接受两个参数：`acc`（累加器）和 `x`（当前迭代的数组元素）。在每次迭代过程中，如果当前元素 `x` 满足条件（偶数），则将其乘以 2 并添加到累加器 `acc` 中；否则，直接返回累加器 `acc`。最终的结果是一个包含满足条件的元素的列表。

@@ -14,11 +14,7 @@ modifier: 'oeyoews'
 语法如下：
 
 ```
-```
 Object.assign(target, ...sources)
-```
-
-<button>plain</button>
 ```
 
 其中，`target` 参数是目标对象，`...sources` 是一个或多个源对象。
@@ -27,7 +23,6 @@ Object.assign(target, ...sources)
 
 下面是一个简单的示例，演示了如何使用 `Object.assign()` 方法将两个对象合并到一个新对象中：
 
-```
 ```javascript
 const obj1 = { a: 1, b: 2 };
 const obj2 = { c: 3, d: 4 };
@@ -36,22 +31,15 @@ const newObj = Object.assign({}, obj1, obj2);
 console.log(newObj); // { a: 1, b: 2, c: 3, d: 4 }
 ```
 
-<button>javascript</button>
-```
-
 在上面的示例中，我们创建了两个源对象 `obj1` 和 `obj2`，并使用 `Object.assign()` 方法将它们合并到一个新对象 `newObj` 中。注意，我们首先传递了一个空对象 `{}` 作为目标对象，这样就不会修改任何已有的对象。
 
 除了合并对象外，`Object.assign()` 方法还可以用于复制对象。例如，如果你想要创建一个新对象，该对象与现有对象具有相同的属性和值，可以使用 `Object.assign()` 方法：
 
-```
 ```javascript
 const obj = { a: 1, b: 2 };
 const newObj = Object.assign({}, obj);
 
 console.log(newObj); // { a: 1, b: 2 }
-```
-
-<button>javascript</button>
 ```
 
 在上面的示例中，我们创建了一个新对象 `newObj`，它与现有对象 `obj` 具有相同的属性和值。这样做的好处是，你可以修改 `newObj`，而不会影响到原始对象 `obj`。

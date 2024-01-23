@@ -13,19 +13,14 @@ type: 'text/vnd.tiddlywiki'
 
 The syntax for `Object.entries` is as follows:
 
-```
 ```javascript
 Object.entries(obj)
-```
-
-<button>javascript</button>
 ```
 
 Here, `obj` represents the object whose enumerable properties you want to retrieve. When called, `Object.entries` returns an array where each element is an array containing a key-value pair from the object. The order of the key-value pairs in the resulting array is the same as the order in which they are returned by a `for...in` loop (although the `for...in` loop does not guarantee the order).
 
 Here's an example to illustrate its usage:
 
-```
 ```javascript
 const person = {
   name: 'John',
@@ -38,21 +33,14 @@ const entries = Object.entries(person);
 console.log(entries);
 ```
 
-<button>javascript</button>
-```
-
 Output:
 
-```
 ```javascript
 [
   ["name", "John"],
   ["age", 30],
   ["city", "New York"]
 ]
-```
-
-<button>javascript</button>
 ```
 
 In the example above, `Object.entries` returns an array where each element is an array containing a key-value pair from the `person` object. The resulting array can be iterated over using array iteration methods such as `forEach`, `map`, or a `for...of` loop.

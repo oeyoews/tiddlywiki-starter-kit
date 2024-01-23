@@ -13,7 +13,6 @@ modifier: 'oeyoews'
 
 如果给 button 加一个 listener, 你会发现，回车的时候，button 的点击事件也被触发了 (仅仅只会触发第一个捕获到的 submit 事件 btn1)
 
-```
 ```html
 <!DOCTYPE html>
 <html>
@@ -42,10 +41,6 @@ modifier: 'oeyoews'
 </html>
 ```
 
-<button>html</button>
-```
-
-```
 ```html
 <!DOCTYPE html>
 <html>
@@ -77,7 +72,4 @@ modifier: 'oeyoews'
     });
   </script>
 </html>
-```
-
-<button>html</button>
 ```

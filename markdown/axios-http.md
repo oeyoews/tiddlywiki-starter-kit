@@ -15,16 +15,12 @@ axios 是一个基于 Promise 的 HTTP 客户端库，提供了丰富的 API 和
 
 以下是使用 axios 发送 GET 请求的示例代码：
 
-```
 ```javascript
 import axios from 'axios';
 
 axios.get('https://api.github.com/users/octocat')
   .then(response => console.log(response.data))
   .catch(error => console.error(error));
-```
-
-<button>javascript</button>
 ```
 
 上面的代码通过 axios 发送了一个 GET 请求，并在请求成功后打印出响应数据。注意，在 axios 中，响应数据被封装在 response 对象的 data 属性中，我们需要通过 response.data 来获取响应数据。

@@ -24,7 +24,6 @@ modifier: 'oeyoews'
 以下是一个简单示例，演示如何在两个页面之间共享数据：
 
 ```
-```
 // 页面 1
 // 存储数据
 localStorage.setItem('name', '张三');
@@ -40,9 +39,6 @@ window.addEventListener('storage', function(event) {
     console.log('共享的数据已更新为：' + event.newValue);
   }
 });
-```
-
-<button>plain</button>
 ```
 
 上述代码在页面 1 中存储了一个名为`name`的数据，然后在页面 2 中通过`localStorage.getItem()`方法获取存储在`localStorage`中的`name`数据。此外，在页面 2 中使用`window.addEventListener()`方法监听`storage`事件，以便在该数据发生更改时获取通知。当在页面 1 中更改`name`数据时，将触发`storage`事件，在页面 2 中会输出提示消息。

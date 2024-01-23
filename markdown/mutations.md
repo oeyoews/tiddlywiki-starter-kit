@@ -9,7 +9,6 @@ modifier: 'oeyoews'
 
 # mutations
 
-```
 ```js
 // 要观察的元素
 const targetElement = document.getElementById("my-element");
@@ -25,7 +24,4 @@ const observer = new MutationObserver((mutations) => {
 
 // 指定要观察的元素以及要观察的变化类型
 observer.observe(targetElement, { childList: true, attributes: true, subtree: true, characterData: true });
-```
-
-<button>js</button>
 ```

@@ -19,14 +19,10 @@ modifier: 'oeyoews'
 
     示例：
 
-```
 ```javascript
 let originalStr = "apple orange apple banana";
 let newStr = originalStr.replace("apple", "grape");
 console.log(newStr); // 输出: "grape orange apple banana"
-```
-
-<button>javascript</button>
 ```
 
 1. **replaceAll:**
@@ -37,14 +33,10 @@ console.log(newStr); // 输出: "grape orange apple banana"
 
     示例：
 
-```
 ```javascript
 let originalStr = "apple orange apple banana";
 let newStr = originalStr.replaceAll("apple", "grape");
 console.log(newStr); // 输出: "grape orange grape banana"
-```
-
-<button>javascript</button>
 ```
 
 需要注意的是，`replaceAll` 是在 ECMAScript 2021 中引入的，因此在一些较旧的 JavaScript 环境中可能不被支持。在现代环境中，推荐使用 `replaceAll` 来替换所有匹配的文本，而在需要替换第一个匹配时使用 `replace`。

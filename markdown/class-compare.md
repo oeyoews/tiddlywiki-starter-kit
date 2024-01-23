@@ -11,7 +11,6 @@ modifier: 'oeyoews'
 
 > [ref](https://www.bilibili.com/video/BV1UX4y1C7gQ/?spm_id_from=333.788&vd_source=d6afd7eedd9f9c940321c63f0a1539e3)
 
-```
 ```js
 const Person = function (name, age) {
   this.name = name;
@@ -37,7 +36,4 @@ person1.greeting();
 const p = new P("John", 30);
 console.log(p.age);
 p.greeting();
-```
-
-<button>js</button>
 ```

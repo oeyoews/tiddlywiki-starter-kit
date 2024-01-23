@@ -9,7 +9,6 @@ type: 'text/vnd.tiddlywiki'
 
 # array-prototype-last
 
-```
 ```js
 /**
  * link: https://leetcode.cn/problems/array-prototype-last/
@@ -31,7 +30,4 @@ Array.prototype.last = function () {
  * const arr = [1, 2, 3];
  * arr.last(); // 3
  */
-```
-
-<button>js</button>
 ```

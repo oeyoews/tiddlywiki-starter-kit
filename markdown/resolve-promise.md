@@ -15,7 +15,6 @@ modifier: 'oeyoews'
 
 示例用法如下：
 
-```
 ```javascript
 const myPromise = new Promise((resolve, reject) => {
   // 一些异步操作，最终成功后调用 resolve
@@ -27,9 +26,6 @@ const myPromise = new Promise((resolve, reject) => {
 myPromise.then((result) => {
   console.log(result); // 输出：成功的结果
 });
-```
-
-<button>javascript</button>
 ```
 
 在上面的示例中，`resolve`方法被调用，并将字符串"成功的结果"传递给了`.then`方法中的回调函数。这样，当 Promise 对象状态变为已成功时，`.then`中的回调函数就会被执行，并且可以访问到成功的结果。

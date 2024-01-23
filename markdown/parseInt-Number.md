@@ -27,15 +27,11 @@ modifier: 'oeyoews'
 
     例如：
 
-```
 ```javascript
 parseInt("123"); // 返回 123
 parseInt("3.14"); // 返回 3
 parseInt("abc123"); // 返回 NaN
 parseInt("123abc"); // 返回 123
-```
-
-<button>javascript</button>
 ```
 
 1. **Number**:
@@ -50,15 +46,11 @@ parseInt("123abc"); // 返回 123
 
     例如：
 
-```
 ```javascript
 Number("123"); // 返回 123
 Number("3.14"); // 返回 3.14
 Number("abc123"); // 返回 NaN
 Number("123abc"); // 返回 NaN
-```
-
-<button>javascript</button>
 ```
 
 总结：

@@ -15,7 +15,6 @@ modifier: 'oeyoews'
 
 1. **捕获标准输出：** 在使用 spawn 命令时，确保正确地捕获子进程的标准输出。你可以通过设置 spawn 的 `stdout` 选项来实现这一点。
 
-```
 ```javascript
 const { spawn } = require('child_process');
 
@@ -33,12 +32,8 @@ child.on('close', (code) => {
 });
 ```
 
-<button>javascript</button>
-```
-
 1. **查看错误输出：** 除了标准输出外，还可以查看子进程的错误输出，以便及时发现问题。
 
-```
 ```javascript
 const { spawn } = require('child_process');
 
@@ -54,9 +49,6 @@ child.stderr.on('data', (data) => {
 child.on('close', (code) => {
     console.log(`子进程退出，退出码 ${code}`);
 });
-```
-
-<button>javascript</button>
 ```
 
 确保适当地设置 stdio 选项，并处理子进程的标准输出和错误输出，以便及时发现并解决问题。

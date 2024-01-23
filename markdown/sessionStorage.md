@@ -15,7 +15,6 @@ sessionStorage 是会话存储，只能在同一个浏览器窗口（或者标�
 
 因此，如果您希望在刷新浏览器后仍然保留数据，应该使用 localStorage 而不是 sessionStorage。
 
-```
 ```html
 <!DOCTYPE html>
 <html>
@@ -87,7 +86,4 @@ sessionStorage 是会话存储，只能在同一个浏览器窗口（或者标�
     </script>
   </body>
 </html>
-```
-
-<button>html</button>
 ```

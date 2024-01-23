@@ -34,7 +34,6 @@ page-cover: 'https://source.unsplash.com/random?fm=blurhash&w=50&full-type-suppo
 
 大多数语言中都存在类似的注释标记，我相信您已经知道了。这是它的样子：
 
-```
 ```js
 /**
  * This is the JSDOC block. IDEs will show this text when you hover the
@@ -47,9 +46,6 @@ function printName(name) {
 }
 ```
 
-<button>js</button>
-```
-
 很少有人知道，JSDoc 是您充分利用 TypeScript 所需要的全部。TypeScript 分析器理解用 JSDoc 编写的类型，并为您提供与.ts 文件相同的静态分析。
 
 JSDoc 中类型的语法\
@@ -58,7 +54,6 @@ JSDoc 中类型的语法\
 
 具有本机类型的函数参数：
 
-```
 ```js
 /**
  * @param {string} a
@@ -102,14 +97,10 @@ const colors = [
 有关详尽列表，请参阅官方TypeScript JSDoc 文档。
 ```
 
-<button>js</button>
-```
-
 如果您有复杂的类型，您仍然可以创作您的*.d.ts 文件并将它们导入您的 JSDoc 注释中。
 
 tsconfig.json 请注意，您仍然需要为打字稿设置您的项目（和 IDE），并且您需要使用编译器选项创建一个文件 allowJs 并将 checkJs 其设置为 true：
 
-```
 ```json
 // tsconfig.json
 {
@@ -119,9 +110,6 @@ tsconfig.json 请注意，您仍然需要为打字稿设置您的项目（和 ID
     // ...
   }
 }
-```
-
-<button>json</button>
 ```
 
 什么时候写 TypeScript\

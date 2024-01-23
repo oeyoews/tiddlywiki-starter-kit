@@ -9,7 +9,6 @@ modifier: 'oeyoews'
 
 # fullscreen-browsers
 
-```
 ```javascript
 // ==UserScript==
 // @name         Disable F Key in Input Fields and Toggle Full Screen
@@ -40,10 +39,6 @@ modifier: 'oeyoews'
 })();
 ```
 
-<button>javascript</button>
-```
-
-```
 ```javascript
 (function() {
     'use strict';
@@ -70,7 +65,4 @@ modifier: 'oeyoews'
         }
     });
 })();
-```
-
-<button>javascript</button>
 ```
