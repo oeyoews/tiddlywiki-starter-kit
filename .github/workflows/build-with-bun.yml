@@ -29,16 +29,12 @@ jobs:
       - name: Build Page
         run: bun run build
 
-      - name: list
-        run: ls .tiddlywiki
-
       - name: Build PDF
         uses: baileyjm02/markdown-to-pdf@v1
         with:
           input_dir: ./.tiddlywiki/markdown
           output_dir: pdfs
-          build_html: true
-        # run: ls
+          build_html: false
 
 
       - name: Upload
