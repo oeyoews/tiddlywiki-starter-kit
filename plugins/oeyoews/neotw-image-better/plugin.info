@@ -7,6 +7,9 @@
   "type": "application/json",
   "plugin-type": "plugin",
   "name": "neotw-image-better",
-  "dependents": [],
+  "dependents": [
+    "$:/plugins/oeyoews/image-observer",
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
+  ],
   "list": "readme"
 }

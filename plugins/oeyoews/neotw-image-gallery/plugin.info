@@ -9,6 +9,7 @@
   "name": "neotw-image-gallery",
   "meta#disabled": "true",
   "dependents": [
+    "$:/plugins/oeyoews/image-observer",
     "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
   ],
   "list": "readme"

@@ -1,4 +1,8 @@
-<!-- plugin template readme -->
+## Usage
+
+```js
+const { observer } = new $tw.ImageObserver();
+```
 
 ## Motivation
 
