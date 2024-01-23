@@ -19,6 +19,9 @@ class AvatarWidget extends Widget {
     this.computeAttributes();
     this.execute();
 
+    const ssr = parent.isTiddlyWikiFakeDom;
+    if (ssr) return;
+
     const createElement = $tw.utils.domMaker;
     const md5 = require('$:/plugins/oeyoews/tiddlywiki-gravatar/md5.min.js');
     const { observer } = new $tw.ImageObserver();

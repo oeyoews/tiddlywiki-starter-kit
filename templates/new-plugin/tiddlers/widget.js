@@ -19,6 +19,9 @@ class ExampleWidget extends Widget {
     this.computeAttributes();
     this.execute();
 
+    const ssr = parent.isTiddlyWikiFakeDom;
+    if (ssr) return;
+
     const createElement = $tw.utils.domMaker;
 
     const btn = createElement('button', {

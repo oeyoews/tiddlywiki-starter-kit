@@ -15,7 +15,10 @@ class PlumWidget extends Widget {
 
   render(parent, nextSibling) {
     if (!$tw.browser) return;
-    this.parentDomNode = parent;
+
+    const ssr = parent.isTiddlyWikiFakeDom;
+    if (ssr) return;
+
     this.computeAttributes();
     this.execute();
 
