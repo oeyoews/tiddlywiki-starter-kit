@@ -11,7 +11,9 @@
       ".gitignore",
       "public",
       ".codesanbox",
-      "templates"
+      "templates",
+      "packages/create-neotw-app/",
+      "packages/create-tw-apps/"
     ]
   }
 ]

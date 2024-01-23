@@ -36,10 +36,7 @@
     "randomstring-plus": "workspace:^",
     "terser": "^5.27.0",
     "tiddlywiki": "5.3.3",
-    "tiged": "^2.12.5"
-  },
-  "prettier": "@oeyoews/prettier-config",
-  "devDependencies": {
+    "tiged": "^2.12.5",
     "@oeyoews/prettier-config": "workspace:^",
     "@types/fs-extra": "^11.0.4",
     "@types/prompts": "^2.4.9",
@@ -54,5 +51,7 @@
     "simple-git-hooks": "^2.9.0",
     "tw5-typed": "^0.4.4",
     "typescript": "^5.3.3"
-  }
+  },
+  "prettier": "@oeyoews/prettier-config",
+  "devDependencies": {}
 }
