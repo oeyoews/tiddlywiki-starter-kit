@@ -29,6 +29,21 @@ jobs:
       - name: Build Page
         run: bun run build
 
+      - name: Build PDF
+        run: ls
+        uses: baileyjm02/markdown-to-pdf@v1
+        with:
+          input_dir: ./.tiddlywiki/markdown
+          output_dir: pdfs
+          build_html: true
+
+
+      - name: Upload
+        uses: actions/upload-artifact@v3
+        with:
+          name: docs
+          path: pdfs
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
@@ -36,16 +51,3 @@ jobs:
           publish_branch: gh-pages
           publish_dir: |
             ./.tiddlywiki
-
-      - name: Build PDF
-        uses: baileyjm02/markdown-to-pdf@v1
-        with:
-          input_dir: ./.tiddlywiki/markdown
-          output_dir: pdfs
-          build_html: true
-
-      - name: Upload
-        uses: actions/upload-artifact@v3
-        with:
-          name: docs
-          path: pdfs
