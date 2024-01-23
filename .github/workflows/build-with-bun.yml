@@ -42,22 +42,24 @@ jobs:
       #   with:
       #     name: docs
       #     path: pdfs
+      - name: list
+        run: fc :lang=zh
 
-      # - name: create file list
-      #   id: files_list
-      #   run: |
-      #     mkdir output  # create output dir
-      #     # this will also include README.md
-      #     echo "files=$(printf '"%s" ' ./.tiddlywiki/markdown/*.md)" > $GITHUB_OUTPUT
+      - name: create file list
+        id: files_list
+        run: |
+          mkdir output  # create output dir
+          # this will also include README.md
+          echo "files=$(printf '"%s" ' ./.tiddlywiki/markdown/d*.md)" > $GITHUB_OUTPUT
 
-      # - uses: docker://pandoc/latex:2.9
-      #   with:
-      #     args: --output=output/result.pdf ${{ steps.files_list.outputs.files }} --pdf-engine=xelatex -V CJKmainfont="KaiTi"
+      - uses: docker://pandoc/latex:2.9
+        with:
+          args: --output=output/result.pdf ${{ steps.files_list.outputs.files }} --pdf-engine=xelatex -V CJKmainfont="KaiTi"
 
-      # - uses: actions/upload-artifact@v3
-      #   with:
-      #     name: output
-      #     path: output
+      - uses: actions/upload-artifact@v3
+        with:
+          name: output
+          path: output
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

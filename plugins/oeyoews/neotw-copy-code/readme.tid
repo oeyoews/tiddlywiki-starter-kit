@@ -3,6 +3,8 @@ description: ~Copy Code
 
 <div class="prose max-w-none prose-indigo">
 
+> 注意：如果使用 markdown-exporter, 导出的代码块会多出额外的元素。比如 button
+
 !! Neotw Copy Code
 
 > 图标支持的 highlgiht 识别的全部语言
