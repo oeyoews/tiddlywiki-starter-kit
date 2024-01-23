@@ -29,6 +29,9 @@ jobs:
       - name: Build Page
         run: bun run build
 
+      - name: list
+        run: ls .tiddlywiki
+
       - name: Build PDF
         uses: baileyjm02/markdown-to-pdf@v1
         with:
