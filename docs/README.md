@@ -17,7 +17,7 @@
 
 tiddlywiki 的这些插件大多都是几个小时或者几分钟做出来的, 几乎都是 js plugin, 几乎每个插件代码函数都是 200 行以内。
 
-codemirror6插件除外， 大概有3000行代码.
+codemirror6 插件除外，大概有 3000 行代码.
 
 ## 大致会写什么
 
@@ -27,7 +27,7 @@ codemirror6插件除外， 大概有3000行代码.
 
 ## 为什么写 tiddlywiki starter kit？
 
-本身 Node.js 启动 tw 也就是一条命令行的事，很简单，但是为了满足自己的各种需求，命令行就不方便了，tiddlywiki starter kit 经过多版本迭代，历经两年+ 打磨而成。
+本身 Node.js 启动 tw 也就是一条命令行的事，很简单，但是为了满足自己的各种需求，命令行就不方便了，tiddlywiki starter kit 经过多版本迭代，历经两年 + 打磨而成。
 
 tiddlywiki starter kit 目前是极其高度自定义化的，从安装，启动，构建，部署，使用等每个步骤都加入了自定义化配置。
 
