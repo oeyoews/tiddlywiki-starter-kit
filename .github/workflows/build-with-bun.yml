@@ -35,13 +35,14 @@ jobs:
           publish_branch: gh-pages
           publish_dir: |
             ./.tiddlywiki
-       - uses: baileyjm02/markdown-to-pdf@v1
+      - name: Build PDF
+        uses: baileyjm02/markdown-to-pdf@v1
         with:
           input_dir: ./tiddlywiki/markdown
           output_dir: pdfs
           # Default is true, can set to false to only get PDF files
           build_html: true
-      - uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v3
         with:
           name: docs
           path: pdfs
