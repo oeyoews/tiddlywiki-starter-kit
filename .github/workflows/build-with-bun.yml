@@ -52,7 +52,7 @@ jobs:
 
       - uses: docker://pandoc/latex:2.9
         with:
-          args: --output=output/result.pdf ${{ steps.files_list.outputs.files }}
+          args: --output=output/result.pdf ${{ steps.files_list.outputs.files }} --pdf-engine=xelatex
 
       - uses: actions/upload-artifact@v3
         with:
