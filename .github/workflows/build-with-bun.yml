@@ -16,8 +16,11 @@ permissions:
 
 jobs:
   release-and-page:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
+      - run: |
+          choco install --yes pandoc
+          pandoc --help
       - uses: actions/checkout@v3
       - uses: oven-sh/setup-bun@v1
         with:
