@@ -55,6 +55,17 @@ export default {
     'text/plain',
     '$:/plugins/cdaven/markdown-export/md-tiddler'
   ],
+  javascript: [
+    '--output',
+    `${config.output}`,
+    '--render',
+    '.',
+    'javascript.json',
+    'text/plain',
+    '$:/core/templates/exporters/JsonFile',
+    'exportFilter',
+    '[tag[JavaScript]]'
+  ],
   journal: [
     '--output',
     `${config.output}`,
