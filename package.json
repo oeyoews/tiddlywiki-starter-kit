@@ -19,7 +19,7 @@
     "docker:push": "docker-compose push",
     "dev": "node ./lib/startup.mjs",
     "start:pm2": "node ./lib/pm2-control.js",
-    "pandoc": "pandoc --pdf-engine=lualatex .tiddlywiki/markdown/*.md .tiddlywiki/markdown/a*.md -o read.pdf -V CJKmainfont=KaiTi -V geometry:'top=2cm, bottom=1.5cm, left=2cm,right=2cm' --toc -N  --highlight-style kate  -V urlcolor=NavyBlue   -f markdown-raw_tex",
+    "pandoc": "pandoc --pdf-engine=xelatex .tiddlywiki/markdown/JavaScript/a*.md -o read.pdf -V CJKmainfont=KaiTi -V geometry:'top=2cm, bottom=1.5cm, left=2cm,right=2cm' --toc -N  --highlight-style kate  -V urlcolor=NavyBlue   -f markdown-raw_tex --template='templates/temp.latex'",
     "preparebk": "simple-git-hooks"
   },
   "simple-git-hooks": {
