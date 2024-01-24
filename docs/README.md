@@ -64,9 +64,7 @@ tiddlywiki starter kit 目前是极其高度自定义化的，从安装，启动
 ```bash
 # cli: The simplest and easiest way
 npm create neotw-app
-```
 
-```bash
 # dependcies: git node bun docker docker-compose
 
 # method 01: docker
@@ -86,11 +84,6 @@ pnpm start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm
 # method 05: systemd https://www.freedesktop.org/software/systemd/man/systemd.service.html
 
 ```
-
-## 使用 moderndev 构建 的插件
-
-- cm6: https://github.com/oeyoews/tiddlywiki-codemirror6
-- echarts: https://github.com/oeyoews/tw-echarts(forked)
 
 ## How to use tiddlywiki starter kit with locally ?
 
