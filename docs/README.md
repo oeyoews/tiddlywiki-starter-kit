@@ -87,14 +87,6 @@ pnpm start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm
 
 ```
 
-## Introduce
-
-## 开发依赖
-
-- FONTS: maple
-- ENV: nodejs/bun pnpm/npm Git
-- EDITOR: vscode/neovim/others
-
 ## 使用 moderndev 构建 的插件
 
 - cm6: https://github.com/oeyoews/tiddlywiki-codemirror6
