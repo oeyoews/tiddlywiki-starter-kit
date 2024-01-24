@@ -4,6 +4,6 @@ import chalk from 'chalk';
 import createApp from './lib/create-app';
 
 createApp().catch((e) => {
-  console.error(chalk.red.bold('程序错误'));
+  console.error(chalk.red.bold('[ERROR]: Create tw app somethin wrong !!!'));
   console.log(e);
 });
