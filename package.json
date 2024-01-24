@@ -26,17 +26,6 @@
     "pre-commit": "pnpm autocorrect --fix"
   },
   "dependencies": {
-    "ci-info": "^3.9.0",
-    "cross-spawn": "^7.0.3",
-    "dotenv": "^16.3.2",
-    "fs-extra": "^11.2.0",
-    "get-port": "^7.0.0",
-    "ora": "^6.3.1",
-    "prompts": "^2.4.2",
-    "randomstring-plus": "workspace:^",
-    "terser": "^5.27.0",
-    "tiddlywiki": "5.3.3",
-    "tiged": "^2.12.5",
     "@oeyoews/prettier-config": "workspace:^",
     "@types/fs-extra": "^11.0.4",
     "@types/prompts": "^2.4.9",
@@ -44,14 +33,27 @@
     "address": "^1.2.2",
     "autocorrect-node": "^2.9.0",
     "chalk": "^5.3.0",
+    "ci-info": "^3.9.0",
+    "cross-spawn": "^7.0.3",
+    "dotenv": "^16.3.2",
+    "fs-extra": "^11.2.0",
+    "get-port": "^7.0.0",
     "open": "^10.0.3",
+    "ora": "^6.3.1",
     "pm2": "^5.3.1",
     "prettier": "^3.2.4",
+    "prompts": "^2.4.2",
     "qrcode": "^1.5.3",
+    "randomstring-plus": "workspace:^",
     "simple-git-hooks": "^2.9.0",
+    "terser": "^5.27.0",
+    "tiddlywiki": "5.3.3",
+    "tiged": "^2.12.5",
     "tw5-typed": "^0.4.4",
     "typescript": "^5.3.3"
   },
   "prettier": "@oeyoews/prettier-config",
-  "devDependencies": {}
+  "devDependencies": {
+    "md-to-pdf": "^5.2.4"
+  }
 }

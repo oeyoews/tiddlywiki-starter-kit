@@ -45,6 +45,16 @@ export default {
     'text/plain',
     '$:/plugins/cdaven/markdown-export/md-tiddler'
   ],
+  journalMd: [
+    '--verbose',
+    '--output',
+    `${config.output}/markdown/Journal`,
+    '--render',
+    '[tag[Journal]]',
+    '[addsuffix[.md]]',
+    'text/plain',
+    '$:/plugins/cdaven/markdown-export/md-tiddler'
+  ],
   journal: [
     '--output',
     `${config.output}`,
