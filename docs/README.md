@@ -105,7 +105,7 @@ pnpm start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm
 
 ## 部署
 
-- tw 生成的是单文件可部署文件，因此不限制部署平台，甚至可以直接使用 tw server，tiddlywiki-starter-kit 使用的 vercel/github pages 方式
+- tw 生成的是单html文件，因此不限制部署平台，甚至可以直接使用 tw server，tiddlywiki-starter-kit 使用的 vercel/github pages 方式
 
 ## How to use tiddlywiki starter kit with docker ?
 
@@ -173,6 +173,8 @@ readme.tid 是关于插件的 readme，同样你也可以使用 readme.md 代替
 
 在 tw 经常需要操作一些 dom，一般 js 的写法就是使用`document.createElement('xxx')`的做法，但是如果有多个节点需要插入，就需要不断进行 append，看起来比较混乱，tw 基于 createElement 封装了了一个函数 `$tw.utils.domMaker`
 
+建议对每个widget，加上fakdom的特殊处理，防止报错.
+
 ```js
 const createElement = $tw.utils.domMaker;
 
@@ -205,6 +207,8 @@ tw 会一直读取这个文件的内容，无论修改成什么值，可以看�
 ## 相对路径
 
 - require 在 tw 里面同样支持相对路径，只不过是基于 tw 的虚拟文件路由
+
+- tw模拟了一个require机制模块
 
 ## 插件文档
 
