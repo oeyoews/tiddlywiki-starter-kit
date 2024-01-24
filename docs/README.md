@@ -1,5 +1,5 @@
 > [!NOTE]
->  WIP 正在制作中..., 目前文档结构暂未整理.
+> WIP 正在制作中..., 目前文档结构暂未整理.
 
 ## 写在前面
 
@@ -62,7 +62,8 @@ tiddlywiki starter kit 目前是极其高度自定义化的，从安装，启动
 ## 安装方式
 
 ```bash
-npm create neotw-app@latest
+# cli: The simplest and easiest way
+npm create neotw-app
 ```
 
 ```bash
@@ -79,11 +80,10 @@ git clone --depth 1 https://github.com/oeyoews/tiddlywiki-starter-kit
 cd tiddlywiki-starter-kit && pnpm install  # install packages
 pnpm start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm2:start
 
-# method 04: 单文件版本 打开 https://neotw.oeyoewl.top/editions, 直接保存网页到本地
+# method 04:
+单文件版本 打开 https://tiddlywiki-starter-kit.oeyoews.top/offline.html,  直接保存网页到本地
 
 # method 05: systemd https://www.freedesktop.org/software/systemd/man/systemd.service.html
-
-# method 06: pnpm pm2 start（我目前使用的方式， 因为我主要在本地使用，需要频繁更新tiddlywiki-starter-kit源码，避免每次都要构建docker mirror的步骤）
 
 ```
 
