@@ -380,7 +380,7 @@
         "created": "2024-01-26",
         "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
         "list": "readme",
-        "readme": "<!-- plugin template readme -->\n\nWIP\n\n## Motivation\n\n<!-- your plugin motivation, or why you write this plugin -->\n",
+        "readme": "<!-- plugin template readme -->\n\n## Motivation\n\n<!-- your plugin motivation, or why you write this plugin -->\n",
         "requires-reload": "yes"
     },
     {
