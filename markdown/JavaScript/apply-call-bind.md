@@ -1,18 +1,26 @@
 ---
 title: 'apply-call-bind'
 tags: ['JavaScript']
+type: 'text/markdown'
 created: 'Mon May 22 2023 10:56:48 GMT+0000 (GMT)'
 creator: 'oeyoews'
 modifier: 'oeyoews'
 page-cover: 'https://source.unsplash.com/random?fm=blurhash&w=50&change-this'
-type: 'text/vnd.tiddlywiki'
 ---
 
 # apply-call-bind
 
 `call`、`apply` 和 `bind` 是 JavaScript 中的三个方法，它们都是用于改变函数的 `this` 指向。
 
-`call` 和 `apply` 的作用一样，它们都可以在指定的作用域中调用函数，并将 `this` 指向第一个参数。区别在于，`call` 的参数是逐个传入的，而 `apply` 的参数是以数组的形式传入的。
+`call` 和 `apply` 的作用一样，它们都可以在指定的作用域中调用函数，并将 `this` 指向第一个参数。
+
+## apply vs call
+
+1. `call` 的参数是逐个传入的，
+
+1. `apply` 的参数是以数组(array, apply 都是a开头的)的形式传入的。
+
+## bind
 
 `bind` 的作用是创建一个新的函数，新函数的 `this` 指向第一个参数，后续的参数作为新函数的参数传入。与 `call` 和 `apply` 不同的是，`bind` 方法不会立即执行函数，而是返回一个新函数，需要手动调用才会执行。
 
