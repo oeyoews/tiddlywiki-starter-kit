@@ -2,6 +2,10 @@
 
 WIP
 
+## TODO
+
+* use minisearch rewrite directly.
+
 ## Motivation
 
 * 原插件没有加上节流和缓存机制，100% 会导致搜索过程中页面卡死

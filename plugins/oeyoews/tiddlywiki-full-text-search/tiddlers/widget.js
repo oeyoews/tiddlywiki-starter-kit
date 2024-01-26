@@ -39,6 +39,14 @@ class FullTextWidget extends Widget {
     }
   }
 
+  searchBar() {
+    const form = this.document.createElement('form');
+    const input = this.document.createElement('input');
+    input.textContent = $tw.wiki.getTiddlerText('$:/temp/advancedsearch');
+    form.append(input);
+    return form;
+  }
+
   execute() {
     // Get the parameters from the attributes
     this.matchedClass = this.getAttribute('matchClass', 'matched');
@@ -122,7 +130,7 @@ class FullTextWidget extends Widget {
 
   refresh(changedTiddlers) {
     // here use debounce almost no more performace better. because widget selcdom refresh.
-    this.debounce(() => {
+    /*     this.debounce(() => {
       const changedAttributes = this.computeAttributes();
       if (
         changedAttributes.tiddler ||
@@ -134,7 +142,8 @@ class FullTextWidget extends Widget {
         return true;
       }
       return this.refreshChildren(changedTiddlers);
-    }, 400);
+    }, 400); */
+    return false;
   }
 
   debounce(fn, delay = 400) {
