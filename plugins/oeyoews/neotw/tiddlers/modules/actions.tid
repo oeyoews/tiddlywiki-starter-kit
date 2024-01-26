@@ -4,9 +4,9 @@ title: $:/plugins/oeyoews/neotw/modules/landing/layout-url
 <!-- tags: $:/tags/StartupAction -->
 
 <!-- file -->
-<$list filter="[{$:/info/url/protocol}match[file:]]">
+<!-- <$list filter="[{$:/info/url/protocol}match[file:]]">
   <$action-sendmessage $message="tm-modal" $param="FileWarning"/>
-</$list>
+</$list> -->
 
 <!-- announcement -->
 <$list filter="[{$:/info/url/search}match[?announcement=yes]]">
