@@ -16,6 +16,7 @@
     "tiddlywiki/highlight",
     "tiddlywiki/browser-sniff",
     "tiddlywiki/pluginlibrary",
+    "oeyoews/tiddlywiki-full-text-search",
     "oeyoews/medium-zoom",
     "oeyoews/blockquote",
     "oeyoews/editor-preview-resizer",
