@@ -9,8 +9,6 @@
   "meta#disabled": "yes",
   "qrcode": "yes",
   "name": "neotw-spotlight",
-  "dependents": [
-    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
-  ],
+  "dependents": [],
   "list": "readme"
 }
