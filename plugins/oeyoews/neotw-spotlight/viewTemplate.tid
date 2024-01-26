@@ -1,0 +1,4 @@
+title: $:/plugins/oeyoews/neotw-spotlight/viewTemplate
+tags: $:/tags/ViewTemplate
+
+<$spotlightTiddler />
