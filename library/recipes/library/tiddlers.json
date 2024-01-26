@@ -600,7 +600,7 @@
         "name": "neotw-spotlight",
         "dependents": "",
         "list": "readme",
-        "readme": "## spotlight\n\n## params\n\n> src, title, alt\n",
+        "readme": "## spotlight\n\n* 图片放大，开箱即用，零配置",
         "requires-reload": "yes"
     },
     {
