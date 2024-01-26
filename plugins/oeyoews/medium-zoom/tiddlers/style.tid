@@ -1,7 +1,8 @@
 title: $:/plugins/oeyoews/medium-zoom/style.css
 tags: $:/tags/Stylesheet
 
-.medium-zoom-overlay {
+<!-- custom dark overlay -->
+<!-- .medium-zoom-overlay {
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -34,4 +35,4 @@ tags: $:/tags/Stylesheet
 	cursor: pointer;
 	cursor: zoom-out;
 	will-change: transform
-}
+} -->

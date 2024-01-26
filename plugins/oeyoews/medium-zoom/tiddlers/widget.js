@@ -13,7 +13,7 @@ class ExampleWidget extends Widget {
     super(parseTreeNode, options);
   }
 
-  render(parent, nextSibling) {
+  render() {
     if (!$tw.browser) return;
 
     this.computeAttributes();
@@ -22,8 +22,6 @@ class ExampleWidget extends Widget {
       window.mediumZoom = require('./medium-zoom.min.js');
     }
 
-    /* const ssr = parent.isTiddlyWikiFakeDom;
-    if (ssr) return; */
     const title = this.getVariable('currentTiddler');
 
     if (!title || title.startsWith('Draft of')) return;
@@ -31,23 +29,12 @@ class ExampleWidget extends Widget {
     const tiddlerNode = document.querySelector(
       `[data-tiddler-title='${title}']`
     );
+    // 暂时还没有处理图片链接
+    const images = tiddlerNode.querySelectorAll('img');
 
-    tiddlerNode.addEventListener('click', (event) => {
-      const target = event.target;
-      if (
-        target.tagName.toLowerCase() === 'img' &&
-        target.parentNode.tagName.toLowerCase() !== 'a'
-      ) {
-        const zoom = mediumZoom(target, {
-          margin: 24,
-          background: 'green',
-          scrollOffset: 0
-        });
-        zoom.toggle();
-      }
-    });
+    mediumZoom(images);
   }
 }
 
 /** @description medium-zoom widget */
-exports['widget-J7VjxGaRPP'] = ExampleWidget;
+exports['medium-zoom'] = ExampleWidget;
