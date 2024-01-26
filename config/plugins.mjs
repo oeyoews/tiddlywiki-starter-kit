@@ -17,7 +17,7 @@ const onlinePlugins = [
 ];
 
 // @deprecated, please use cm6
-const cmePlugins = [
+/* const cmePlugins = [
   'tiddlywiki/codemirror',
   'tiddlywiki/codemirror-autocomplete',
   'tiddlywiki/codemirror-mode-css',
@@ -28,13 +28,13 @@ const cmePlugins = [
   'tiddlywiki/codemirror-mode-javascript',
   'oeyoews/neotw-vimjk',
   'oeyoews/neotw-placeholder'
-];
+]; */
 
 const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
 
 // oeyoews plugins
 const oeyoewsPlugins = [
-  'tiddlywiki-settings',
+  'medium-zoom',
   'blockquote',
   'editor-preview-resizer',
   'confetti-background',

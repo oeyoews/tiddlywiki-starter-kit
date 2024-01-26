@@ -128,7 +128,8 @@ class NotebookResizer extends Widget {
   }
 
   checkTheme() {
-    const theme = this.getText(this.themeTiddler);
+    // NOTE: $:/theme 条目可能会不存在
+    const theme = this.getText(this.themeTiddler) || this.VANILLA;
 
     switch (theme) {
       case this.notebook.theme[0]:
