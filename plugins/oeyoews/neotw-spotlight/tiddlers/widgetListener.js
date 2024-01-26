@@ -12,9 +12,9 @@ class SpotlightWidget extends Widget {
     super(parseTreeNode, options);
   }
 
-  render(parent, nextSibling) {
+  render() {
     if (!$tw.browser) return;
-    this.parentDomNode = parent;
+
     this.computeAttributes();
     this.execute();
 
@@ -37,7 +37,11 @@ class SpotlightWidget extends Widget {
     // 使用事件委托，将点击事件委托给父元素 tiddlerNode
     tiddlerNode.addEventListener('click', (event) => {
       const target = event.target;
-      if (target.tagName.toLowerCase() === 'img') {
+      // 但是如果中间掺杂有空的p标签就不行了。
+      if (
+        target.tagName.toLowerCase() === 'img' &&
+        target.parentNode.tagName.toLowerCase() !== 'a'
+      ) {
         const src = target.getAttribute('src');
         Spotlight.show([
           {
