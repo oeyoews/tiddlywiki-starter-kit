@@ -29,10 +29,14 @@ class ExampleWidget extends Widget {
     const tiddlerNode = document.querySelector(
       `[data-tiddler-title='${title}']`
     );
-    // 暂时还没有处理图片链接
     const images = tiddlerNode.querySelectorAll('img');
 
-    mediumZoom(images);
+    // Nodelist array to array
+    const filteredImages = Array.from(images).filter(
+      (item) => item.parentElement.tagName !== 'A'
+    );
+
+    mediumZoom(filteredImages);
   }
 }
 
