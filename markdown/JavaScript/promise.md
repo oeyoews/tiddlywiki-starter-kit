@@ -1,16 +1,33 @@
 ---
 title: 'promise'
 tags: ['JavaScript']
+type: 'text/markdown'
 created: 'Wed May 03 2023 02:44:27 GMT+0000 (GMT)'
 creator: 'oeyoews'
 modifier: 'oeyoews'
-page-cover: 'https://source.unsplash.com/random?fm=blurhash&w=50&promise'
-type: 'text/vnd.tiddlywiki'
 ---
 
 # promise
 
-Promise是一种用于异步编程的对象，可以将异步任务封装成一个Promise对象，并在异步任务完成后返回相应的结果或抛出错误。Promise对象有三种状态：Pending、Fulfilled和Rejected。当异步任务完成后，Promise对象会由Pending转换为Fulfilled或Rejected状态。
+:::abstract\
+
+Promise 是一个构造函数， 所以使用的时候需要使用new 关键字。 当然Promise 也有一些静态方法， 比如Promise.all Promise.then\
+
+:::
+
+Promise是一种用于异步编程的对象，可以将异步任务封装成一个Promise对象，并在异步任务完成后返回相应的结果或抛出错误。
+
+## Promise对象有三种状态
+
+1. Pending
+
+1. Fulfilled
+
+1. Rejected
+
+promise-status.mermaid
+
+当异步任务完成后，Promise对象会由Pending转换为Fulfilled或Rejected状态。
 
 Promise对象通常包含两个方法：then和catch。then方法接受两个回调函数作为参数，分别表示异步任务成功和失败后的处理方式。catch方法用来捕获异步任务发生的错误，并进行相应的处理。
 
