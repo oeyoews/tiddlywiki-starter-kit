@@ -2,7 +2,7 @@
   "title": "$:/plugins/oeyoews/medium-zoom",
   "description": "medium-zoom",
   "author": "oeyoews",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "core-version": ">=5.3.0",
   "type": "application/json",
   "plugin-type": "plugin",
@@ -10,8 +10,6 @@
   "meat#disabled": "yes",
   "qrcode": "yes",
   "created": "2024-01-26",
-  "dependents": [
-    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
-  ],
+  "dependents": [],
   "list": "readme"
 }

@@ -8,7 +8,7 @@ medium-zoom widget
 \*/
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 
-class ExampleWidget extends Widget {
+class MediumZoomWidget extends Widget {
   constructor(parseTreeNode, options) {
     super(parseTreeNode, options);
   }
@@ -38,7 +38,20 @@ class ExampleWidget extends Widget {
 
     mediumZoom(filteredImages);
   }
+
+  refresh(changedTiddlers) {
+    if (
+      Object.keys(changedTiddlers).filter((item) =>
+        item.startsWith('$:/state/tab')
+      ).length > 0
+    ) {
+      this.refreshSelf();
+      return true;
+    } else {
+      return false;
+    }
+  }
 }
 
 /** @description medium-zoom widget */
-exports['medium-zoom'] = ExampleWidget;
+exports['medium-zoom'] = MediumZoomWidget;
