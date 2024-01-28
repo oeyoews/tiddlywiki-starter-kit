@@ -23,6 +23,7 @@ class CommandPaletteWidget extends Widget {
     this.triggers = [];
     this.prefixes = [];
     this.blockProviderChange = false;
+    this.composing = false;
     this.defaultSettings = {
       maxResults: 15,
       maxResultHintSize: 45,
@@ -498,10 +499,20 @@ class CommandPaletteWidget extends Widget {
     });
     this.container.append(inputAndMainHintWrapper, this.scrollDiv);
     this.searchContainer.addEventListener('keydown', (e) => this.onKeyDown(e));
-    this.searchContainer.addEventListener('input', () =>
-      this.onInput(this.searchContainer.value)
-    );
-    window.addEventListener('click', (e) => this.onClick(e));
+    this.searchContainer.addEventListener('input', () => {
+      // if (this.composing) return;
+      this.onInput(this.searchContainer.value);
+    });
+
+    this.searchContainer.addEventListener('compositionstart', () => {
+      this.composing = true;
+    });
+    this.searchContainer.addEventListener('compositionend', () => {
+      this.composing = false;
+      // NOTE: 中文输入结束后， 没有输入事件触发， 所以不会触发搜索更新， 所以需要手动更新
+      this.onInput(this.searchContainer.value);
+    });
+    document.documentElement.addEventListener('click', (e) => this.onClick(e));
 
     parent.insertBefore(this.mask, nextSibling);
     parent.insertBefore(this.container, nextSibling);
@@ -611,6 +622,7 @@ class CommandPaletteWidget extends Widget {
     };
   }
   onInput(text) {
+    if (this.composing) return;
     if (this.blockProviderChange) {
       //prevent provider changes
       this.currentProvider(text);
@@ -630,7 +642,7 @@ class CommandPaletteWidget extends Widget {
     let shortcut = this.triggers.find((t) => text.startsWith(t.trigger));
     if (shortcut !== undefined) {
       resolver = (e) => {
-        let inputWithoutShortcut = this.searchContainer.value.substr(
+        let inputWithoutShortcut = this.searchContainer.value.slice(
           shortcut.trigger.length
         );
         this.invokeActionString(shortcut.text, this, e, {
