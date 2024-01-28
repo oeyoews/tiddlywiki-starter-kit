@@ -27,6 +27,26 @@ Promise是一种用于异步编程的对象，可以将异步任务封装成一�
 
 promise-status.mermaid
 
+## Promise.all
+
+* 只有当所有的任务都成功后， 才执行成功
+
+## Promise.allSettled
+
+* 只要所有的任务有结果就可以,无论成功还是失败。
+
+## Promise.any
+
+* 只要有一个成功就可以
+
+## Promise.race
+
+* 只要有一个结果就行， 无论成功还是失败。
+
+## Promise.reject
+
+* 返回一个状态为reject的Promise 对象
+
 当异步任务完成后，Promise对象会由Pending转换为Fulfilled或Rejected状态。
 
 Promise对象通常包含两个方法：then和catch。then方法接受两个回调函数作为参数，分别表示异步任务成功和失败后的处理方式。catch方法用来捕获异步任务发生的错误，并进行相应的处理。

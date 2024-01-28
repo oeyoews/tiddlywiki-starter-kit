@@ -1,13 +1,21 @@
 ---
 title: 'debounce'
 tags: ['JavaScript']
+type: 'text/markdown'
 created: 'Fri May 19 2023 12:02:39 GMT+0000 (GMT)'
 creator: 'oeyoews'
 modifier: 'oeyoews'
-type: 'text/vnd.tiddlywiki'
 ---
 
 # debounce
+
+:::tip\
+
+debounce: 手机息屏\
+
+throttle: 闹钟定时\
+
+:::
 
 防抖和节流都是为了减少函数的执行次数，避免频繁触发函数而影响性能。不同之处在于，防抖是在一定时间内只执行一次函数，而节流是在一定时间内间隔执行函数。
 
@@ -29,7 +37,7 @@ function debounce(func, delay) {
 }
 ```
 
-好的，这个 `debounce` 函数的作用是用来<u>防止函数在短时间内多次执行</u>，它接收两个参数，第一个参数是要执行的函数，第二个参数是时间间隔。
+好的，这个 `debounce` 函数的作用是用来__防止函数在短时间内多次执行__，它接收两个参数，第一个参数是要执行的函数，第二个参数是时间间隔。
 
 在函数内部，我们定义了一个变量 `timer`，用来保存定时器的引用。接着，我们返回一个函数，这个函数会在一定时间间隔后执行传入的函数。
 
