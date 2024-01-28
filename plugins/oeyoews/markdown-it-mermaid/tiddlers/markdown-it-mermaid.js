@@ -3,8 +3,18 @@ const {
 } = require('$:/plugins/orange/mermaid-tw5/mermaid.min.js');
 
 const renderNode = (text, idx) => {
-  const innerHTML = mermaid.render('mermaid_' + idx, text);
-  return `<div>${innerHTML}</div>`;
+  const svg = mermaid.render(id, text);
+  const imageAttrs = [];
+  imageAttrs.push([
+    'style',
+    `max-width:${svg.style.maxWidth};max-height:${svg.style.maxHeight}`
+  ]);
+  const imgHTML = `<img src="data:image/svg+xml,${encodeURIComponent(innerHTML)}" />`;
+  imageAttrs.push([
+    'src',
+    `data:image/svg+xml,${encodeURIComponent(imageHTML)}`
+  ]);
+  return `<div>${imgHTML}</div>`;
 };
 
 const MermaidPlugin = (md) => {
@@ -49,7 +59,26 @@ const MermaidPlugin = (md) => {
           // ...options // 这里会导致渲染问题
         };
         mermaid.initialize(config);
-        return renderNode(code, idx);
+        const id = 'mermaid_' + idx;
+        let imageHTML = '';
+        let imageAttrs = [];
+        mermaid.render(id, code, (html) => {
+          let svg = this.document.getElementById(id);
+          if (svg) {
+            imageAttrs.push([
+              'style',
+              `max-width:${svg.style.maxWidth};max-height:${svg.style.maxHeight}`
+            ]);
+          }
+          // Store HTML
+          imageHTML = html;
+        });
+        imageAttrs.push([
+          'src',
+          `data:image/svg+xml,${encodeURIComponent(imageHTML)}`
+        ]);
+
+        return `<img ${slf.renderAttrs({ attrs: imageAttrs })}>`;
       } catch (e) {
         return `<pre>${code}</pre>`;
       }
