@@ -2,11 +2,6 @@ const {
   mermaidAPI: mermaid
 } = require('$:/plugins/orange/mermaid-tw5/mermaid.min.js');
 
-if (!mermaid) {
-  console.warn('please install orange/mermaid-tw5 tiddlywiki plugin');
-  return;
-}
-
 const renderNode = (text, idx) => {
   const innerHTML = mermaid.render('mermaid_' + idx, text);
   return `<div>${innerHTML}</div>`;
@@ -31,6 +26,12 @@ const MermaidPlugin = (md) => {
     if (type.trim() !== 'mermaid') {
       return defaultFenceRender(tokens, idx, (options = {}), env, slf);
     } else if (type.trim() === 'mermaid') {
+      // return 在外面会导致terser 报错
+      if (!mermaid) {
+        console.warn('please install orange/mermaid-tw5 tiddlywiki plugin');
+        return;
+      }
+
       try {
         // @see-also: https://mermaid.js.org/config/schema-docs/config.html
         /* const palette = $tw.wiki.getTiddlerText('$:/palette');
