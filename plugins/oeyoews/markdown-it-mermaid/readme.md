@@ -39,3 +39,4 @@ And there are some areas in the original mermaid plugin that I would like to imp
 * 不支持 timeline, quadrantChart
 * add config option for png or svg
 * support svg to zoom:  https://github.com/bumbu/svg-pan-zoom
+* 渲染成 image, 导致 markdown export 导出爆粗
