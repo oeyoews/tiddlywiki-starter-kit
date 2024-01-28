@@ -3,48 +3,33 @@ const MermaidPlugin = (md) => {
     mermaidAPI: mermaid
   } = require('$:/plugins/orange/mermaid-tw5/mermaid.min.js');
 
-  // md.mermaid = mermaid;
-  mermaid.loadPreferences = (preferenceStore) => {
-    let mermaidTheme = preferenceStore.get('mermaid-theme');
-    if (mermaidTheme === undefined) {
-      mermaidTheme = 'default';
-    }
-    let ganttAxisFormat = preferenceStore.get('gantt-axis-format');
-    if (ganttAxisFormat === undefined) {
-      ganttAxisFormat = '%Y-%m-%d';
-    }
-    mermaid.initialize({
-      securityLevel: 'loose',
-      theme: mermaidTheme,
-      gantt: {
-        axisFormatter: [
-          [
-            ganttAxisFormat,
-            (d) => {
-              return d.getDay() === 1;
-            }
-          ]
-        ]
-      }
-    });
-    return {
-      'mermaid-theme': mermaidTheme,
-      'gantt-axis-format': ganttAxisFormat
-    };
-  };
+  // extends md api: add mermaid api
+  md.mermaid = mermaid;
 
-  // 其他类型的代码块
   const temp = md.renderer.rules.fence.bind(md.renderer.rules);
 
+  /*   mermaid.parseError = function (err, hash) {
+    console.log(err);
+  };
+ */
   md.renderer.rules.fence = (tokens, idx, options, env, slf) => {
     const token = tokens[idx];
     const code = token.content.trim();
-    if (token.info === 'mermaid') {
+    // TODO: support render title
+    // TODO: use https://github.com/agoose77/markdown-it-mermaid/blob/main/src/index.ts to render as img to encodeurl
+    const [type, theme, ...title] = token.info.split(' ');
+    if (type === 'mermaid') {
       try {
+        const config = {
+          securityLevel: 'loose',
+          theme: theme || 'default',
+          startOnLoad: false,
+          htmlLabels: true,
+          ...options
+        };
+        mermaid.initialize(config);
         return mermaid.render('mermaid' + idx, code);
-      } catch (e) {
-        // console.log(e);
-      }
+      } catch (e) {}
     }
     return temp(tokens, idx, options, env, slf);
   };
