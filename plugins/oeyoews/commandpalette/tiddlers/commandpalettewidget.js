@@ -499,10 +499,12 @@ class CommandPaletteWidget extends Widget {
     });
     this.container.append(inputAndMainHintWrapper, this.scrollDiv);
     this.searchContainer.addEventListener('keydown', (e) => this.onKeyDown(e));
-    this.searchContainer.addEventListener('input', () => {
-      // if (this.composing) return;
-      this.onInput(this.searchContainer.value);
-    });
+    this.searchContainer.addEventListener(
+      'input',
+      this.debounce(() => {
+        this.onInput(this.searchContainer.value);
+      })
+    );
 
     this.searchContainer.addEventListener('compositionstart', () => {
       this.composing = true;
@@ -1480,6 +1482,19 @@ class CommandPaletteWidget extends Widget {
       */
   refresh() {
     return false;
+  }
+
+  debounce(
+    fn,
+    delay = $tw.wiki.getTiddlerText('$:/config/Drafts/TypingTimeout')
+  ) {
+    let timer = null;
+    return function (...args) {
+      if (timer) clearTimeout(timer);
+      timer = setTimeout(() => {
+        fn(...args);
+      }, delay);
+    };
   }
 }
 
