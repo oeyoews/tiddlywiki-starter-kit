@@ -1,4 +1,4 @@
 title: $:/core/ui/EditTemplate/body/typography
 description: some typography class for tiddlers
 
-antialiased prose prose-indigo text-base max-w-none prose-img:my-0 prose-a:no-underline prose-h2:mt-4 prose-blockquote:not-italic dark:prose-invert dark:prose-pre:bg-black prose-p:my-0
+antialiased prose prose-indigo text-base max-w-none prose-img:my-0 prose-a:no-underline prose-h2:mt-4 prose-blockquote:not-italic dark:prose-invert dark:prose-pre:bg-black prose-p:mt-0
