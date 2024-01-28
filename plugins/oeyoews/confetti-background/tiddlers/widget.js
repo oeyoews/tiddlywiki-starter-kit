@@ -15,9 +15,12 @@ class ConfettiBgWidget extends Widget {
 
   render(parent, nextSibling) {
     if (!$tw.browser) return;
-    this.parentDomNode = parent;
+
     this.computeAttributes();
     this.execute();
+
+    const ssr = parent.isTiddlyWikiFakeDom;
+    if (ssr) return;
 
     const ConfettiGenerator = require('./confetti.min.js');
 

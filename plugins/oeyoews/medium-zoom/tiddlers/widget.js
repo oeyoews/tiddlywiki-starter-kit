@@ -29,7 +29,7 @@ class MediumZoomWidget extends Widget {
     const tiddlerNode = document.querySelector(
       `[data-tiddler-title='${title}']`
     );
-    // TODO: not work for mermaid svg
+    // TODO: not work for mermaid svg @see-also:  https://github.com/francoischalifour/medium-zoom/issues/77
     // const images = tiddlerNode.querySelectorAll('img, svg');
     const images = tiddlerNode.querySelectorAll('img');
 
