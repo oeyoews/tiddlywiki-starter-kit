@@ -38,3 +38,4 @@ And there are some areas in the original mermaid plugin that I would like to imp
 * 旧版不支持一些 class 写法，包括 fontawesome
 * 不支持 timeline, quadrantChart
 * add config option for png or svg
+* support svg to zoom:  https://github.com/bumbu/svg-pan-zoom
