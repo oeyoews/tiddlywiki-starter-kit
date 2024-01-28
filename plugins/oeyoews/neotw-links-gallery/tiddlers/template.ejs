@@ -1,24 +1,26 @@
-<table>
-	<% if (isStoryRiver) { %>
-		<thead>
-			<tr class="font-bold capitalize">
-				<th>Description</th>
-				<th>Link</th>
-			</tr>
-		</thead>
-		<% } %>
-			<tbody>
-				<% linksURL.forEach(([text, href])=> { %>
-					<tr>
-						<td class="capitalize font-semibold">
-							<%= text %>
-						</td>
-						<td>
-							<a href="<%= href %>" title="<%= href %>" target="_blank">
-								<%= new URL(href).hostname %>
-							</a>
-						</td>
-					</tr>
-					<% }); %>
-			</tbody>
-</table>
+<div class="overflow-auto">
+	<table>
+		<% if (isStoryRiver) { %>
+			<thead>
+				<tr class="font-bold capitalize">
+					<th>Description</th>
+					<th>Link</th>
+				</tr>
+			</thead>
+			<% } %>
+				<tbody>
+					<% linksURL.forEach(([text, href])=> { %>
+						<tr>
+							<td class="capitalize font-semibold">
+								<%= text %>
+							</td>
+							<td>
+								<a href="<%= href %>" title="<%= href %>" target="_blank">
+									<%= new URL(href).hostname %>
+								</a>
+							</td>
+						</tr>
+						<% }); %>
+				</tbody>
+	</table>
+</div>
