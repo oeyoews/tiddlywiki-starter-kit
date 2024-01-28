@@ -13,11 +13,15 @@ class MediumZoomWidget extends Widget {
     super(parseTreeNode, options);
   }
 
-  render() {
+  render(parent) {
     if (!$tw.browser) return;
+
+    const ssr = parent.isTiddlyWikiFakeDom;
+    if (ssr) return;
 
     this.computeAttributes();
     this.execute();
+
     if (!window.mediumZoom) {
       window.mediumZoom = require('./medium-zoom.min.js');
     }
