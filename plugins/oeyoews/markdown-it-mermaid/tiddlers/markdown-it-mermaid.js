@@ -3,16 +3,7 @@ const MermaidPlugin = (md) => {
     mermaidAPI: mermaid
   } = require('$:/plugins/orange/mermaid-tw5/mermaid.min.js');
 
-  const mermaidChart = (code) => {
-    try {
-      mermaid.parse(code);
-      return `<div class="mermaid">${code}</div>`;
-    } catch ({ str, hash }) {
-      return `<pre>${str}</pre>`;
-    }
-  };
-
-  md.mermaid = mermaid;
+  // md.mermaid = mermaid;
   mermaid.loadPreferences = (preferenceStore) => {
     let mermaidTheme = preferenceStore.get('mermaid-theme');
     if (mermaidTheme === undefined) {
@@ -23,6 +14,7 @@ const MermaidPlugin = (md) => {
       ganttAxisFormat = '%Y-%m-%d';
     }
     mermaid.initialize({
+      securityLevel: 'loose',
       theme: mermaidTheme,
       gantt: {
         axisFormatter: [
@@ -41,20 +33,18 @@ const MermaidPlugin = (md) => {
     };
   };
 
+  // 其他类型的代码块
   const temp = md.renderer.rules.fence.bind(md.renderer.rules);
+
   md.renderer.rules.fence = (tokens, idx, options, env, slf) => {
     const token = tokens[idx];
     const code = token.content.trim();
     if (token.info === 'mermaid') {
-      return mermaidChart(code);
-    }
-    const firstLine = code.split(/\n/)[0].trim();
-    if (
-      firstLine === 'gantt' ||
-      firstLine === 'sequenceDiagram' ||
-      firstLine.match(/^graph (?:TB|BT|RL|LR|TD);?$/)
-    ) {
-      return mermaidChart(code);
+      try {
+        return mermaid.render('mermaid' + idx, code);
+      } catch (e) {
+        // console.log(e);
+      }
     }
     return temp(tokens, idx, options, env, slf);
   };
