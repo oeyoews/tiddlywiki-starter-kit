@@ -5,7 +5,10 @@
 title: plugin dependencies
 ---
 graph LR;
-markdown --> markdown-it-mermaid & orange/mermaid-tw5 & markdown-extensions-startup
+a[(markdown)] --> markdown-it-mermaid & orange/mermaid-tw5 & markdown-extensions-startup
+		linkStyle 0 stroke:red;
+		linkStyle 1 stroke:blue;
+		linkStyle 2 stroke:yellow;
 ```
 
 ## Motivation
