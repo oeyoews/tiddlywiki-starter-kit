@@ -3,6 +3,9 @@
 > [!NOTE]
 > mermaid 使用 9.3.0 版本，9.4.0 体积增加了 2MB(但是官方文档没有明确说明增加了什么，没有找到，), 9.4.0 使最后一个 cjs 版本，v10.0.0 以后是 ESM only, 所以 mermid 的库将会固定为 9.3.0，没有更新的必要。
 
+> [!TIP]
+> 建议 mermaid 代码单独放置在一个 tiddler, 否则预览时会随着每次文本的变化，重新刷新。
+
 ```mermaid forest
 ---
 title: plugin dependencies
