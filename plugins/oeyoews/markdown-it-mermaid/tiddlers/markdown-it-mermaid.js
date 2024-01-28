@@ -1,13 +1,18 @@
+const {
+  mermaidAPI: mermaid
+} = require('$:/plugins/orange/mermaid-tw5/mermaid.min.js');
+
+if (!mermaid) {
+  console.warn('please install orange/mermaid-tw5 tiddlywiki plugin');
+  return;
+}
+
+const renderNode = (text, idx) => {
+  const innerHTML = mermaid.render('mermaid_' + idx, text);
+  return `<div>${innerHTML}</div>`;
+};
+
 const MermaidPlugin = (md) => {
-  const {
-    mermaidAPI: mermaid
-  } = require('$:/plugins/orange/mermaid-tw5/mermaid.min.js');
-
-  if (!mermaid) {
-    console.warn('please install orange/mermaid-tw5 tiddlywiki plugin');
-    return;
-  }
-
   // extends md api: add mermaid api
   md.mermaid = mermaid;
 
@@ -17,11 +22,7 @@ const MermaidPlugin = (md) => {
     console.log(err);
   };
  */
-  const renderNode = (text, idx) => {
-    const innerHTML = mermaid.render('mermaid_' + idx, text);
-    return `<div>${innerHTML}</div>`;
-  };
-  const customMermaidFenceRender = (tokens, idx, options, env, slf) => {
+  const customMermaidFenceRender = (tokens, idx, options = {}, env, slf) => {
     const token = tokens[idx];
     const code = token.content.trim();
     // TODO: support render title
