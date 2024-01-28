@@ -26,7 +26,7 @@ Promise是一种用于异步编程的对象，可以将异步任务封装成一�
 1. Rejected
 
 ```
-graph
+graph TB;
 subgraph promise mermaid graph
 direction TB
 subgraph 状态
