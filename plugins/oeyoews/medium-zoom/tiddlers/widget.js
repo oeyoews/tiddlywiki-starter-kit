@@ -13,14 +13,15 @@ class MediumZoomWidget extends Widget {
     super(parseTreeNode, options);
   }
 
-  render(parent) {
+  // initialise() {}
+  render(parent, nextSibling) {
     if (!$tw.browser) return;
-
-    const ssr = parent.isTiddlyWikiFakeDom;
-    if (ssr) return;
 
     this.computeAttributes();
     this.execute();
+
+    const ssr = parent.isTiddlyWikiFakeDom;
+    if (ssr) return;
 
     if (!window.mediumZoom) {
       window.mediumZoom = require('./medium-zoom.min.js');
@@ -30,7 +31,8 @@ class MediumZoomWidget extends Widget {
 
     if (!title || title.startsWith('Draft of')) return;
 
-    const tiddlerNode = document.querySelector(
+    // NOTE: use this.document not document prevent export tiddlers error because fakedom
+    const tiddlerNode = this.document.querySelector(
       `[data-tiddler-title='${title}']`
     );
     // TODO: not work for mermaid svg @see-also:  https://github.com/francoischalifour/medium-zoom/issues/77

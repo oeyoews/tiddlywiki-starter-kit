@@ -19,12 +19,10 @@ class ConfettiBgWidget extends Widget {
     this.computeAttributes();
     this.execute();
 
-    const ssr = parent.isTiddlyWikiFakeDom;
-    if (ssr) return;
-
     const ConfettiGenerator = require('./confetti.min.js');
 
     const canvas = this.document.createElement('canvas');
+    if (canvas.isTiddlyWikiFakeDom) return;
 
     const {
       width = window.innerWidth,
