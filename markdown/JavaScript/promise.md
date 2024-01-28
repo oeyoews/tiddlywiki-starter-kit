@@ -25,7 +25,24 @@ Promise是一种用于异步编程的对象，可以将异步任务封装成一�
 
 1. Rejected
 
-promise-status.mermaid
+```
+graph
+subgraph promise mermaid graph
+direction TB
+subgraph 状态
+  A[Pending] -->|resolve| B(fulfilled)
+  A -->|reject| C(rejected)
+end
+
+subgraph 实例方法
+  D(Promise 实例方法) --> then & catch & finally
+end
+subgraph 静态方法
+  E(静态方法) --> Promise.all
+  E ==> Promise.any & allSettled & race & reject & resolve
+end
+end
+```
 
 ## Promise.all
 
