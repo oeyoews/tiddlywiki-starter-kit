@@ -2,21 +2,6 @@ const {
   mermaidAPI: mermaid
 } = require('$:/plugins/orange/mermaid-tw5/mermaid.min.js');
 
-const renderNode = (text, idx) => {
-  const svg = mermaid.render(id, text);
-  const imageAttrs = [];
-  imageAttrs.push([
-    'style',
-    `max-width:${svg.style.maxWidth};max-height:${svg.style.maxHeight}`
-  ]);
-  const imgHTML = `<img src="data:image/svg+xml,${encodeURIComponent(innerHTML)}" />`;
-  imageAttrs.push([
-    'src',
-    `data:image/svg+xml,${encodeURIComponent(imageHTML)}`
-  ]);
-  return `<div>${imgHTML}</div>`;
-};
-
 const MermaidPlugin = (md) => {
   // extends md api: add mermaid api
   md.mermaid = mermaid;

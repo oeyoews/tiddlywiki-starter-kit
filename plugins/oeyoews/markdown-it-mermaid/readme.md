@@ -7,16 +7,20 @@
 
 * support to html(orange/mermaid-tw5 not support)
 
-```mermaid forest
+```mermaid
 ---
 title: plugin dependencies
 ---
 graph LR;
-a[(markdown)] --> markdown-it-mermaid & orange/mermaid-tw5 & markdown-extensions-startup
+%% mermaid in tiddlywiki
+a[(<strong>markdown</strong>)] --> markdown-it-mermaid & orange/mermaid-tw5 & markdown-extensions-startup
+a -.->|option dependency| e([medium-zoom])
 		linkStyle 0 stroke:red;
 		linkStyle 1 stroke:blue;
 		linkStyle 2 stroke:yellow;
+		style a stroke-width: 2px,stroke:#333;
 ```
+
 
 ## Motivation
 
@@ -29,5 +33,8 @@ And there are some areas in the original mermaid plugin that I would like to imp
 ## TODO
 
 * https://github.com/mermaid-js/mermaid/issues/4358 v10 以后添加了一个 mermaid.run, 其中有一个 supresserror 选项可以做到这一点，但是由于 esm 的问题，暂时无法升级
-* support export to png/svg
-* support event
+* support event: 只有新版支持 click 的写法.
+* 旧版不支持 markdown 标记语法，比如加粗斜体
+* 旧版不支持一些 class 写法，包括 fontawesome
+* 不支持 timeline, quadrantChart
+* add config option for png or svg
