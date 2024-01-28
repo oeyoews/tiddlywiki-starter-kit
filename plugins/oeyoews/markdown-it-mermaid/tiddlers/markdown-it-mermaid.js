@@ -3,6 +3,11 @@ const MermaidPlugin = (md) => {
     mermaidAPI: mermaid
   } = require('$:/plugins/orange/mermaid-tw5/mermaid.min.js');
 
+  if (!mermaid) {
+    console.warn('please install orange/mermaid-tw5 tiddlywiki plugin');
+    return;
+  }
+
   // extends md api: add mermaid api
   md.mermaid = mermaid;
 
