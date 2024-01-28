@@ -15,22 +15,6 @@
         "icon": "data:image/svg+xml,%3Csvg%20stroke%3D%22currentColor%22%20fill%3D%22%23aaa%22%20stroke-width%3D%220%22%20viewBox%3D%220%200%2024%2024%22%20height%3D%221em%22%20width%3D%221em%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M7%203h2v18H7zM4%203h2v18H4zm6%200h2v18h-2zm9.062%2017.792-6.223-16.89%201.877-.692%206.223%2016.89z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%0D%0A"
     },
     {
-        "title": "$:/plugins/oeyoews/artplayer",
-        "description": "artplayer",
-        "author": "oeyoews",
-        "version": "0.0.1",
-        "core-version": ">=5.3.1",
-        "type": "application/json",
-        "plugin-type": "plugin",
-        "name": "artplayer",
-        "meat#disabled": "yes",
-        "qrcode": "yes",
-        "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
-        "list": "readme",
-        "readme": "## Artplayer\n\n<$artplayer />\n",
-        "requires-reload": "yes"
-    },
-    {
         "title": "$:/plugins/oeyoews/blockquote",
         "description": "blockquote",
         "author": "oeyoews",
@@ -109,23 +93,6 @@
         "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
         "list": "readme",
         "readme": "<!-- plugin template readme -->\n\n## Motivation\n\n- https://github.com/Agezao/confetti-js\n\n<!-- your plugin motivation, or why you write this plugin -->\n",
-        "requires-reload": "yes"
-    },
-    {
-        "title": "$:/plugins/oeyoews/dayjs",
-        "description": "dayjs",
-        "author": "oeyoews",
-        "version": "0.0.1",
-        "core-version": ">=5.3.0",
-        "type": "application/json",
-        "plugin-type": "plugin",
-        "name": "dayjs",
-        "meat#disabled": "yes",
-        "qrcode": "yes",
-        "created": "2024-01-12",
-        "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
-        "list": "readme",
-        "readme": "<!-- plugin template readme -->\n\n## Motivation\n\n<!-- your plugin motivation, or why you write this plugin -->\n",
         "requires-reload": "yes"
     },
     {
