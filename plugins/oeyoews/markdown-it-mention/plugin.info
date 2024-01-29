@@ -1,0 +1,17 @@
+{
+  "title": "$:/plugins/oeyoews/markdown-it-mention",
+  "description": "markdown-it-mention",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.3.0",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "markdown-it-mention",
+  "meat#disabled": "yes",
+  "qrcode": "yes",
+  "created": "2024-01-29",
+  "dependents": [
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
+  ],
+  "list": "readme"
+}

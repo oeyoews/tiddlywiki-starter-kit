@@ -1,3 +1,10 @@
+/*\
+title: $:/plugins/oeyoews/markdown-it-mermaid/markdown-it-mermaid.js
+type: application/javascript
+module-type: markdownit
+
+\*/
+
 const vanilaMermaid = 'mermaid-930.min.js';
 const hasVanillaMermaid =
   $tw.modules.types.library.hasOwnProperty(vanilaMermaid);
