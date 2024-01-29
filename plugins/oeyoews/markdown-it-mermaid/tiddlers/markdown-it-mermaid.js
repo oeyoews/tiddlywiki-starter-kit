@@ -3,6 +3,14 @@ const hasVanillaMermaid =
   $tw.modules.types.library.hasOwnProperty(vanilaMermaid);
 let mermaid;
 
+const generateRandomString = (length) => {
+  const characters =
+    'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  return Array.from({ length }, () =>
+    characters.charAt(Math.floor(Math.random() * characters.length))
+  ).join('');
+};
+
 try {
   const { mermaidAPI } = hasVanillaMermaid
     ? require(vanilaMermaid)
@@ -68,13 +76,13 @@ const MermaidPlugin = (md) => {
         };
         mermaid.initialize(config);
         mermaid.parse(code);
-        const id = 'mermaid_' + idx;
+        // 或者通过查询mermmaid_ 的id个数, 或者判断是否存在相同的id;
+        const id = 'mermaid_' + generateRandomString(5);
         let imageHTML = '';
         let imageAttrs = [];
         // 这里不能使用renderAsync
         mermaid.render(id, code, (html, bingFunctions) => {
-          // 这里的svg 会有引用问题, 也许可以通过回退来解决
-          // https://talk.tiddlywiki.org/t/zoomin-info-messes-with-svg-rendering-somehow/4095/13
+          // @see-also https://talk.tiddlywiki.org/t/zoomin-info-messes-with-svg-rendering-somehow/4095/13
           let svg = this.document.getElementById(id);
           if (svg) {
             imageAttrs.push([
