@@ -37,10 +37,12 @@ And there are some areas in the original mermaid plugin that I would like to imp
 ## TODO
 
 * https://github.com/mermaid-js/mermaid/issues/4358 v10 以后添加了一个 mermaid.run, 其中有一个 supresserror 选项可以做到这一点，但是由于 esm 的问题，暂时无法升级
-* support event: 只有新版支持 click 的写法.
+* support event: 只有新版支持 click 的写法. 渲染成 image 就不支持点击事件
 * 旧版不支持 markdown 标记语法，比如加粗斜体
 * 旧版不支持一些 class 写法，包括 fontawesome
 * 不支持 timeline, quadrantChart
 * add config option for png or svg
 * support svg to zoom:  https://github.com/bumbu/svg-pan-zoom
-* 渲染成 image, 导致 markdown export 导出爆粗
+* 渲染成 image, 导致 markdown export 导出爆错，
+
+https://github.com/mermaid-js/mermaid/pull/4734 希望可以类似 echarts 一样，用户可以选择需要的图标类型。
