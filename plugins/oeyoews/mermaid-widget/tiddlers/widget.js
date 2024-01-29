@@ -105,4 +105,5 @@ class MermaidWidget extends Widget {
 }
 
 // Export the TWSRRuby class
-exports.mermaid = MermaidWidget;
+exports.mermaid2 = MermaidWidget;
+// exports.mermaid = MermaidWidget;
