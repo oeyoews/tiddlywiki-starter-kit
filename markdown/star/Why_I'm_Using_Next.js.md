@@ -221,7 +221,8 @@ Unfortunately, this sentiment does not equal causation.不幸的是，这种情�
 
 [dev_bogdan 回复@dev_bogdan](https://twitter.com/dev_bogdan/status/1649132186472263680)
 
-Only exposing a full route refresh seems like a ploy on Vercel’s part to needlessly re-render SC’s --> Increased compute --> $$$ :) I worry about that a bit with NextJS, actually. That NextJS technical approaches may optimize for their profit when deployed there.仅公开完整的路由刷新似乎是 Vercel 的策略，以不必要地重新渲染 SC 的 --> 增加计算 --> $$$ :) 实际上，我对 NextJS 有点担心。NextJS 技术方法在部署在那里时可能会优化其利润。
+Only exposing a full route refresh seems like a ploy on Vercel’s part to needlessly re-render SC’s --> Increased compute --> 
+$ :) 实际上，我对 NextJS 有点担心。NextJS 技术方法在部署在那里时可能会优化其利润。
 
 [Replying to @](https://twitter.com/matt_kruse/status/1649141645844049939)
 
