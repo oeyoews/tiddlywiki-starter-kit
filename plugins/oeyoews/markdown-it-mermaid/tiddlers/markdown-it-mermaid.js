@@ -1,15 +1,21 @@
 const vanilaMermaid = 'mermaid-930.min.js';
 const hasVanillaMermaid =
   $tw.modules.types.library.hasOwnProperty(vanilaMermaid);
+let mermaid;
 
-const { mermaidAPI: mermaid } = hasVanillaMermaid
-  ? require(vanilaMermaid)
-  : require('$:/plugins/orange/mermaid-tw5/mermaid.min.js');
+try {
+  const { mermaidAPI } = hasVanillaMermaid
+    ? require(vanilaMermaid)
+    : require('$:/plugins/orange/mermaid-tw5/mermaid.min.js');
+  mermaid = mermaidAPI;
+} catch (e) {
+  console.warn(e);
+}
 
-mermaid.parseError = function (err, hash) {
-  // console.log('error');
-  // displayErrorInGui(err);
-};
+// mermaid.parseError = function (err, hash) {
+//   // console.log('error');
+//   // displayErrorInGui(err);
+// };
 
 const MermaidPlugin = (md) => {
   // extends md api: add mermaid api
