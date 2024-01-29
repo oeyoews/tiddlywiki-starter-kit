@@ -1,7 +1,7 @@
 ## markdownit mermaid
 
 > [!NOTE]
-> mermaid 使用 9.3.0 版本，9.4.0 体积增加了 2MB(但是官方文档没有明确说明增加了什么，没有找到，), 9.4.0 使最后一个 cjs 版本，v10.0.0 以后是 ESM only, 所以 mermid 的库将会固定为 9.3.0，没有更新的必要。GitHub 使用的 mermaid 版本目前是 10.0.2.
+> [使用 9.3.0 版本，9.4.0 体积增加了 2MB](https://github.com/orgs/mermaid-js/discussions/4314mermaid), 原因主要是 mindmap 和 flowchart-ejs 使用两个单独的布局引擎 9.4.0 是最后一个 cjs 版本，v10.0.0 以后是 ESM only, 所以 mermid 的库将会固定为 9.3.0，没有更新的必要。GitHub 使用的 mermaid 版本目前是 10.0.2.
 
 ## Features
 
