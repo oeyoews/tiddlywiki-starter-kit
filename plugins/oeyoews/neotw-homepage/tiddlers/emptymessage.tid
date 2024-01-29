@@ -21,6 +21,9 @@ title: $:/config/EmptyStoryMessage
         <a target="_blank" href="https://codemirror.net">
           <$iconify icon="simple-icons:codemirror" />
         </a>
+        <a target="_blank" href="https://mermaid.js.org/">
+          <$iconify icon="vscode-icons:file-type-mermaid" />
+        </a>
         <a target="_blank" href="https://echarts.apache.org">
           <$iconify icon="simple-icons:apacheecharts" class="text-rose-600" />
         </a>.
