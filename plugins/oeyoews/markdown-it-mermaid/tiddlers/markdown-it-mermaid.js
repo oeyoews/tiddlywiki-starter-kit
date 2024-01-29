@@ -73,6 +73,8 @@ const MermaidPlugin = (md) => {
         let imageAttrs = [];
         // 这里不能使用renderAsync
         mermaid.render(id, code, (html, bingFunctions) => {
+          // 这里的svg 会有引用问题, 也许可以通过回退来解决
+          // https://talk.tiddlywiki.org/t/zoomin-info-messes-with-svg-rendering-somehow/4095/13
           let svg = this.document.getElementById(id);
           if (svg) {
             imageAttrs.push([
