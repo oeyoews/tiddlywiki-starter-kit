@@ -1,5 +1,5 @@
 /*\
-title: $:/plugins/oeyoews/blockquote/widget.js
+title: $:/plugins/oeyoews/mermaid-widget/widget.js
 type: application/javascript
 module-type: widget
 
