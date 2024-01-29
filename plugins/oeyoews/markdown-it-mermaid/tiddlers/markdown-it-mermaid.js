@@ -2,16 +2,14 @@ const {
   mermaidAPI: mermaid
 } = require('$:/plugins/orange/mermaid-tw5/mermaid.min.js');
 
-// ESM not support this usage, just support cdn usage, browser support esm load
-// if (!window.mermaid) {
-//   require('./mermaid.tiny.min.js').default;
-// }
-
-// const { mermaidAPI: mermaid } = require('./mermaid.tiny.min.js');
+mermaid.parseError = function (err, hash) {
+  console.log('error');
+  // displayErrorInGui(err);
+};
 
 const MermaidPlugin = (md) => {
   // extends md api: add mermaid api
-  md.mermaid = mermaid;
+  //  md.mermaid = mermaid;
 
   const defaultFenceRender = md.renderer.rules.fence;
 
@@ -59,26 +57,41 @@ const MermaidPlugin = (md) => {
           // ...options // 这里会导致渲染问题
         };
         mermaid.initialize(config);
+        mermaid.parse(code);
         const id = 'mermaid_' + idx;
         let imageHTML = '';
         let imageAttrs = [];
-        mermaid.render(id, code, (html) => {
+        // 这里不能使用renderAsync
+        mermaid.render(id, code, (html, bingFunctions) => {
           let svg = this.document.getElementById(id);
           if (svg) {
             imageAttrs.push([
               'style',
               `max-width:${svg.style.maxWidth};max-height:${svg.style.maxHeight}`
             ]);
+            // console.log(bingFunctions);
+            // bingFunctions(svg);
           }
           // Store HTML
           imageHTML = html;
         });
-        imageAttrs.push([
-          'src',
-          `data:image/svg+xml,${encodeURIComponent(imageHTML)}`
-        ]);
 
-        return `<img ${slf.renderAttrs({ attrs: imageAttrs })}>`;
+        const rendertype = $tw.wiki.getTiddlerText(
+          '$:/config/markdown-it-mermaid/rendertype'
+        );
+
+        switch (rendertype) {
+          case 'svg':
+            return `<div>${imageHTML}</div>`;
+          case 'png':
+            imageAttrs.push([
+              'src',
+              `data:image/svg+xml,${encodeURIComponent(imageHTML)}`
+            ]);
+            return `<img ${slf.renderAttrs({ attrs: imageAttrs })}>`;
+          default:
+            return `<div>${imageHTML}</div>`;
+        }
       } catch (e) {
         return `<pre>${code}</pre>`;
       }
