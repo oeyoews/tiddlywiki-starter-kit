@@ -1,7 +1,31 @@
 <!-- plugin template readme -->
 
-tiddlywiki blockquote components
+## tiddlywiki blockquote components
 
-## Motivation
+```html
+<$blockquote type='markdown' color="red"  number=400>
+## TODO
+- [ ] todo list
+## mermaid test
+</$blockquote>
 
-<!-- your plugin motivation, or why you write this plugin -->
+<$blockquote type='wikitext' color="red"  number=400>
+!! Heading
+* list
+</$blockquote>
+```
+
+<$blockquote type='markdown' color="red"  number=400>
+## TODO
+- [ ] todo list
+## mermaid test
+```mermaid
+graph LR;
+a -->this
+```
+</$blockquote>
+
+<$blockquote type='wikitext' color="red"  number=400>
+!! Heading
+* list
+</$blockquote>

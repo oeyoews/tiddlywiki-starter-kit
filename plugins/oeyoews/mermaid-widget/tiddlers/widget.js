@@ -35,8 +35,13 @@ class MermaidWidget extends Widget {
     parent.insertBefore(domNode, nextSibling);
     this.renderChildren(domNode, null);
     this.domNodes.push(domNode);
-    const text = this.domNodes[0].textContent;
-    domNode.innerHTML = this.renderMermaid(text);
+    domNode.outerHTML = this.renderMermaid(
+      this.removeEmptyLines(domNode.textContent.trim())
+    );
+  }
+
+  removeEmptyLines(str) {
+    return str.replace(/^\s*[\r\n]/gm, '');
   }
 
   getconfig(theme) {
@@ -80,11 +85,11 @@ class MermaidWidget extends Widget {
 
       switch (this.rendertype) {
         case 'svg':
-          return `<div>${imageHTML}</div>`;
+          return `<div class="mermaid">${imageHTML}</div>`;
         case 'png':
           return `<img src="data:image/svg+xml,${encodeURIComponent(imageHTML)}" style="max-width:${maxWidth};" />`;
         default:
-          return `<div>${imageHTML}</div>`;
+          return `<div class="mermaid">${imageHTML}</div>`;
       }
     } catch (e) {
       return `<pre>${code} </pre>`;

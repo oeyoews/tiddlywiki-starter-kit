@@ -18,18 +18,27 @@ class BlockquoteWidget extends Widget {
     this.computeAttributes();
     this.execute();
 
-    const { color = 'gray', number = 300 } = this.attributes;
+    const { color = 'gray', number = 300, type = 'wikitext' } = this.attributes;
 
     const domNode = this.document.createElement('blockquote');
     domNode.className = 'relative border-none';
     const barNode = this.document.createElement('div');
     barNode.className = `h-full rounded-full absolute -left-2 -top-1 w-1`;
     barNode.classList.add(`bg-${color}-${number}`, `dark:bg-${color}-500`);
-    domNode.append(barNode);
 
     parent.insertBefore(domNode, nextSibling);
     this.renderChildren(domNode, null);
     this.domNodes.push(domNode);
+    const text = $tw.wiki.renderText(
+      'text/html',
+      type === 'markdown' ? 'text/markdown' : 'text/vnd.tiddlywiki',
+      this.removeEmptyLines(domNode.textContent.trim())
+    );
+    domNode.innerHTML = barNode.outerHTML + text;
+  }
+
+  removeEmptyLines(str) {
+    return str.replace(/^\s*[\r\n]/gm, '');
   }
 
   // NOTE: 默认是会刷新的
