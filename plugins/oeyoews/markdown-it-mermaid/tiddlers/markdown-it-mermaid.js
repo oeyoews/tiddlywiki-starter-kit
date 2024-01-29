@@ -3,7 +3,7 @@ const {
 } = require('$:/plugins/orange/mermaid-tw5/mermaid.min.js');
 
 mermaid.parseError = function (err, hash) {
-  console.log('error');
+  // console.log('error');
   // displayErrorInGui(err);
 };
 
