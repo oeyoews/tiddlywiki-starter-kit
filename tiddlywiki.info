@@ -16,6 +16,7 @@
     "tiddlywiki/highlight",
     "tiddlywiki/browser-sniff",
     "tiddlywiki/pluginlibrary",
+    "oeyoews/mermaid930",
     "oeyoews/markdown-it-mermaid",
     "oeyoews/markdown-it-math",
     "oeyoews/tiddlywiki-full-text-search",

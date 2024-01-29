@@ -1,6 +1,10 @@
-const {
-  mermaidAPI: mermaid
-} = require('$:/plugins/orange/mermaid-tw5/mermaid.min.js');
+const vanilaMermaid = 'mermaid-930.min.js';
+const hasVanillaMermaid =
+  $tw.modules.types.library.hasOwnProperty(vanilaMermaid);
+
+const { mermaidAPI: mermaid } = hasVanillaMermaid
+  ? require(vanilaMermaid)
+  : require('$:/plugins/orange/mermaid-tw5/mermaid.min.js');
 
 mermaid.parseError = function (err, hash) {
   // console.log('error');

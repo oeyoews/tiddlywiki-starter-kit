@@ -34,6 +34,7 @@ const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
 
 // oeyoews plugins
 const oeyoewsPlugins = [
+  'mermaid930',
   'markdown-it-mermaid',
   'markdown-it-math',
   'tiddlywiki-full-text-search',
