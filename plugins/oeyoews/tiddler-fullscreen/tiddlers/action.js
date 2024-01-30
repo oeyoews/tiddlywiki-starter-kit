@@ -6,10 +6,10 @@ module-type: library
 \*/
 module.exports = function toggleElementFullscreen(title) {
   try {
+    const target = document.querySelector(`[data-tiddler-title="${title}"]`);
+    target.requestFullscreen();
     if (document.fullscreenElement === null) {
-      const target = document.querySelector(`[data-tiddler-title="${title}"]`);
-      target.requestFullscreen();
-    } else {
+    } else if (document.fullscreenElement === target) {
       document.exitFullscreen();
     }
   } catch (e) {
