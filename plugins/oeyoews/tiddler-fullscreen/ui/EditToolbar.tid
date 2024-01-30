@@ -1,0 +1,7 @@
+title: $:/plugins/oeyoews/tiddler-fullscreen/EditToolbar
+tags:  $:/tags/EditToolbar
+list-before: $:/core/ui/Buttons/delete
+description: fullscreen tiddler
+caption: fullscreen tiddler
+
+{{$:/plugins/oeyoews/tiddler-fullscreen/ViewToolbar}}
