@@ -11,16 +11,16 @@ module.exports = function exportPng(title, customSelector) {
   if (customSelector && !this.document.querySelector(customSelector)) {
     $tw.wiki.addTiddler({
       title: '$:/temp/export-png',
-      text: `不存在 ${customSelector} 节点，操作取消`,
+      text: `不存在 ${customSelector} 节点，操作取消`
     });
     $tw.notifier.display('$:/temp/export-png');
     return;
   }
 
   const downloadSvg = $tw.wiki.getTiddlerText(
-    '$:/plugins/oeyoews/tiddlywiki-tid2png/download.svg',
+    '$:/plugins/oeyoews/tiddlywiki-tid2png/download.svg'
   );
-  const progress = new $tw.NProgress();
+  const progress = $tw.NProgress;
 
   progress.start();
   const selector = customSelector || `[data-tiddler-title="${title}"]`;
@@ -31,7 +31,7 @@ module.exports = function exportPng(title, customSelector) {
   const hideElements = [
     '.tc-tiddler-controls',
     '.tc-subtitle',
-    '.tc-tags-wrapper',
+    '.tc-tags-wrapper'
   ];
 
   function hideElementsWithSelectors(selectors, display) {
@@ -46,7 +46,7 @@ module.exports = function exportPng(title, customSelector) {
   hideElementsWithSelectors(hideElements, 'none');
 
   html2canvas(element, {
-    useCORS: true,
+    useCORS: true
   }).then((canvas) => {
     canvas.toBlob((blob) => {
       const sizeInMB = (blob.size / (1024 * 1024)).toFixed(2);
@@ -57,14 +57,14 @@ module.exports = function exportPng(title, customSelector) {
         class: 'max-w-3xl',
         attributes: {
           src: imgData,
-          crossOrigin: '',
-        },
+          crossOrigin: ''
+        }
       });
 
       // 只预览部分内容
       const containerNode = $tw.utils.domMaker('div', {
         class: 'rounded-lg overflow-y-hidden max-h-screen max-w-3xl m-0',
-        children: [imgNode],
+        children: [imgNode]
       });
 
       progress.done();
@@ -89,7 +89,7 @@ module.exports = function exportPng(title, customSelector) {
             cancelButtonText: 'Cancel',
             reverseButtons: true,
             confirmButtonText: `Download ${downloadSvg}`,
-            customClass: 'w-auto my-8',
+            customClass: 'w-auto my-8'
           }).then((result) => {
             result.isConfirmed && downloadPng(imgData);
           })
