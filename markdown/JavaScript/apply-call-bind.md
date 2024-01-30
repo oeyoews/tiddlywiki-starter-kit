@@ -10,6 +10,17 @@ page-cover: 'https://source.unsplash.com/random?fm=blurhash&w=50&change-this'
 
 # apply-call-bind
 
+```
+---
+title: apply bind call(abc)
+---
+graph TB;
+this --> a & b & c
+a[apply] --> 数组
+b[bind] -.-> f[New Function]
+c[call] --> list
+```
+
 `call`、`apply` 和 `bind` 是 JavaScript 中的三个方法，它们都是用于改变函数的 `this` 指向。
 
 `call` 和 `apply` 的作用一样，它们都可以在指定的作用域中调用函数，并将 `this` 指向第一个参数。
