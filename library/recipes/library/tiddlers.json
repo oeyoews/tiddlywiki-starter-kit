@@ -189,7 +189,7 @@
         "created": "2023-12-29",
         "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
         "list": "readme",
-        "readme": "## Usage\n\n```js\nconst { observer } = new $tw.ImageObserver();\n```\n\n## Motivation\n\n<!-- your plugin motivation, or why you write this plugin -->\n",
+        "readme": "## Image Observer\n\n* 用于提供懒加载图片的 lib\n\n## Usage\n\n```js\nconst { observer } = new $tw.ImageObserver();\n```\n\n## Motivation\n",
         "requires-reload": "yes"
     },
     {
@@ -331,7 +331,7 @@
         "parent-plugin": "$:/plugins/oeyoews/markdown-extensions-startup",
         "list": "readme",
         "dependents": "",
-        "readme": "## markdownit mermaid\n\n> [!NOTE]\n> [使用 9.3.0 版本，9.4.0 体积增加了 2MB](https://github.com/orgs/mermaid-js/discussions/4314mermaid), 原因主要是 mindmap 和 flowchart-ejs 使用两个单独的布局引擎 9.4.0 是最后一个 cjs 版本，v10.0.0 以后是 ESM only, 所以 mermid 的库将会固定为 9.3.0，没有更新的必要。GitHub 使用的 mermaid 版本目前是 10.0.2.\n\n\n## Render Type\n\n<$select tiddler=\"$:/config/markdown-it-mermaid/rendertype\" default='svg'><$list filter='[[svg]] [[png]]'>\n<option value=<<currentTiddler>>><$view field='title'/></option>\n</$list>\n</$select>\n\n## Features\n\n* support to html(orange/mermaid-tw5 not support)\n\n```mermaid\ninfo\n```\n\n```mermaid\n---\ntitle: plugin dependencies\n---\ngraph LR;\n%% mermaid in tiddlywiki\na[(<strong>markdown</strong>)] --> markdown-it-mermaid & orange/mermaid-tw5 & markdown-extensions-startup\na -.->|option dependency| e([medium-zoom])\n\t\tlinkStyle 0 stroke:red;\n\t\tlinkStyle 1 stroke:blue;\n\t\tlinkStyle 2 stroke:yellow;\n\t\tstyle a stroke-width: 2px,stroke:#333;\n```\n\n\n## Motivation\n\nAlthough I can use mermaid through `<$mermaid text=\"xxx\" />` or `$$$$text/vnd.tiddlywiki/mermaid xxxx$$$`, or create a new type of text/vnd.tiddlywiki/mermaid tiddler, but these are not very convenient for me.\n\nAnd there are some areas in the original mermaid plugin that I would like to improve, but I have not rewritten that plugin. I created a markdown-it-mermaid plugin suitable for tiddlywiki. Fortunately, github also supports this format, so I can not only browse in tiddlywiki, but users on GitHub can also view mermaid\n\n![img](https://talk.tiddlywiki.org/uploads/default/original/2X/b/b7e4e40f767fb0a27dc5839a1540942808e5c9fc.gif)\n\n## NOTE\n\n* https://github.com/mermaid-js/mermaid/issues/4358 v10 以后添加了一个 mermaid.run, 其中有一个 supresserror 选项可以做到这一点，但是由于 esm 的问题，暂时无法升级\n* event: 只有新版支持 click 的写法.\n* 渲染成 image 就不支持点击事件\n* 旧版不支持 markdown 标记语法，比如加粗斜体\n* 旧版不支持一些 class 写法，包括 fontawesome\n* 不支持 timeline, quadrantChart\n* support svg to zoom:  https://github.com/bumbu/svg-pan-zoom\n* 渲染成 image, 导致 markdown export 导出爆错，\n\nhttps://github.com/mermaid-js/mermaid/pull/4734 希望可以类似 echarts 一样，用户可以选择需要的图标类型。",
+        "readme": "## markdownit mermaid\n\n> 一个 markdownit 的 tiddlywiki mermaid 插件 .\n\n> [!NOTE]\n> [使用 9.3.0 版本，9.4.0 体积增加了 2MB](https://github.com/orgs/mermaid-js/discussions/4314mermaid), 原因主要是 mindmap 和 flowchart-ejs 使用两个单独的布局引擎 9.4.0 是最后一个 cjs 版本，v10.0.0 以后是 ESM only, 所以 mermid 的库将会固定为 9.3.0，没有更新的必要。GitHub 使用的 mermaid 版本目前是 10.0.2.\n\n\n## Render Type\n\n<$select tiddler=\"$:/config/markdown-it-mermaid/rendertype\" default='svg'><$list filter='[[svg]] [[png]]'>\n<option value=<<currentTiddler>>><$view field='title'/></option>\n</$list>\n</$select>\n\n## Features\n\n* support to html(orange/mermaid-tw5 not support)\n\n```mermaid\ninfo\n```\n\n```mermaid\n---\ntitle: plugin dependencies\n---\ngraph LR;\n%% mermaid in tiddlywiki\na[(<strong>markdown</strong>)] --> markdown-it-mermaid & orange/mermaid-tw5 & markdown-extensions-startup\na -.->|option dependency| e([medium-zoom])\n\t\tlinkStyle 0 stroke:red;\n\t\tlinkStyle 1 stroke:blue;\n\t\tlinkStyle 2 stroke:yellow;\n\t\tstyle a stroke-width: 2px,stroke:#333;\n```\n\n\n## Motivation\n\nAlthough I can use mermaid through `<$mermaid text=\"xxx\" />` or `$$$$text/vnd.tiddlywiki/mermaid xxxx$$$`, or create a new type of text/vnd.tiddlywiki/mermaid tiddler, but these are not very convenient for me.\n\nAnd there are some areas in the original mermaid plugin that I would like to improve, but I have not rewritten that plugin. I created a markdown-it-mermaid plugin suitable for tiddlywiki. Fortunately, github also supports this format, so I can not only browse in tiddlywiki, but users on GitHub can also view mermaid\n\n![img](https://talk.tiddlywiki.org/uploads/default/original/2X/b/b7e4e40f767fb0a27dc5839a1540942808e5c9fc.gif)\n\n## NOTE\n\n* https://github.com/mermaid-js/mermaid/issues/4358 v10 以后添加了一个 mermaid.run, 其中有一个 supresserror 选项可以做到这一点，但是由于 esm 的问题，暂时无法升级\n* event: 只有新版支持 click 的写法.\n* 渲染成 image 就不支持点击事件\n* 旧版不支持 markdown 标记语法，比如加粗斜体\n* 旧版不支持一些 class 写法，包括 fontawesome\n* 不支持 timeline, quadrantChart\n* support svg to zoom:  https://github.com/bumbu/svg-pan-zoom\n* 渲染成 image, 导致 markdown export 导出爆错，\n\nhttps://github.com/mermaid-js/mermaid/pull/4734 希望可以类似 echarts 一样，用户可以选择需要的图标类型。",
         "requires-reload": "yes"
     },
     {
@@ -400,7 +400,7 @@
         "created": "2024-01-26",
         "dependents": "",
         "list": "readme",
-        "readme": "<!-- plugin template readme -->\n\n!! Medium Zoom Plugin",
+        "readme": "!! Medium Zoom Plugin\n\n* 拥有 medium 上 放大图片的相同丝滑体验.",
         "requires-reload": "yes"
     },
     {
@@ -417,7 +417,7 @@
         "created": "2024-01-11",
         "list": "readme",
         "dependents": "",
-        "readme": "## Mermaid widget\n\n```html\n<$mermaid2 rendertype=\"png\" theme=\"forest\">\ngraph LR;\na[Another mermaid widget] -.-> b[[mermaid-widget]]\n</$mermaid2>\n```\n\n<$mermaid2 rendertype=\"png\" theme=\"forest\">\ngraph LR;\na[Another mermaid widget] -.-> b[[mermaid-widget]]\n</$mermaid2>",
+        "readme": "## Mermaid widget\n\n> 提供 mermaid widget.\n\n```html\n<$mermaid2 rendertype=\"png\" theme=\"forest\">\ngraph LR;\na[Another mermaid widget] -.-> b[[mermaid-widget]]\n</$mermaid2>\n```\n\n<$mermaid2 rendertype=\"png\" theme=\"forest\">\ngraph LR;\na[Another mermaid widget] -.-> b[[mermaid-widget]]\n</$mermaid2>",
         "requires-reload": "yes"
     },
     {
@@ -434,7 +434,7 @@
         "created": "2024-01-29",
         "list": "readme",
         "dependents": "",
-        "readme": "## Mermaid v9.3.0 library",
+        "readme": "## Mermaid v9.3.0 library\n\n* 这是一个 Mermaid v9.3.0 的 library.",
         "requires-reload": "no"
     },
     {
@@ -640,7 +640,7 @@
         "name": "neotw-notranslate",
         "dependents": "",
         "list": "readme",
-        "readme": "<div class=\"prose max-w-none prose-indigo\">\n\n* 不要翻译 !!!\n* 不要翻译 !!!\n* 不要翻译 !!!\n\n> 翻译类的浏览器插件会对页面的内容进行修改 (DOM), 而 TiddlyWiki 经常会因此报错 (尤其中文环境下), 但是官方一直没有明确表示具体的原因，目前来看官方修复的几率很小\n\n> 此插件目前禁用谷歌翻译，微软翻译，沉浸式翻译以及遵循`notranslate` 规则的翻译，对于不遵守此规则的浏览器插件无效 (浏览器的语言类插件层出不穷，希望遵守这个规则，向沉浸式翻译学习)\n\nhttps://saqimtiaz.github.io/tw5-plugins-sandbox/(沉浸式翻译也会出错)\n\n</div>",
+        "readme": "<div class=\"prose max-w-none prose-indigo\">\n\n> 禁止浏览器翻译扩展修改网页.\n\n* 不要翻译 !!!\n* 不要翻译 !!!\n* 不要翻译 !!!\n\n> 翻译类的浏览器插件会对页面的内容进行修改 (DOM), 而 TiddlyWiki 经常会因此报错 (尤其中文环境下), 但是官方一直没有明确表示具体的原因，目前来看官方修复的几率很小\n\n> 此插件目前禁用谷歌翻译，微软翻译，沉浸式翻译以及遵循`notranslate` 规则的翻译，对于不遵守此规则的浏览器插件无效 (浏览器的语言类插件层出不穷，希望遵守这个规则，向沉浸式翻译学习)\n\nhttps://saqimtiaz.github.io/tw5-plugins-sandbox/(沉浸式翻译也会出错)\n\n</div>",
         "requires-reload": "yes"
     },
     {
@@ -704,7 +704,7 @@
         "created": "2023-12-19",
         "list": "readme",
         "dependents": "",
-        "readme": "!! Notebook theme sidebar resizer\n\n> support left/right sidebar resizer\n\n> 最初仅仅是为了支持 notebook theme 而写的 sidebar resizer, 后来开始支持 vanilla(and based vanilla sidebar theme), captivate, whitespace, leftbar 等插件, 布局或主题.\n\n<!-- 在切换主题时，theme 会覆盖掉同名非系统文件，所以需要手动修改 -->\n\n!! For Leftbar\n\nneed add `<$nbresizer position=\"left\" widthTiddler=\"$:/xp/leftopentab/metrics/width\" statusTiddler=\"$:/config/LeftOpenTab/Status\" close=\"hide\"/>` in [[$:/xp/ui/PageTemplate/leftsidebar]] tiddler.\n\n```html\n<!-- here -->\n<$nbresizer position=\"left\" widthTiddler=\"$:/xp/leftopentab/metrics/width\" statusTiddler=\"$:/config/LeftOpenTab/Status\" close=\"hide\"/>\n\n</$scrollable>\n\n</$reveal>\n```\n\n!! For captivate theme\n\nneed add `<$nbresizer />` in [[$:/themes/cdr/captivate/ui/SideBar]] tiddler.\n\n```html\n<<sidebarTabs>>\n<!-- here -->\n<$nbresizer />\n```\n\n!! For Whitespace theme\n\n> whitespace theme for two 5.1.17 and 5.1.22 version, if use latest version, maybe have some ui problems.\n\nneed add `<$nbresizer />` in [[$:/themes/jd/Whitespace/template/sidebar]] tiddler.\n\n```html\n<!-- add resizer widget here  -->\n\n<$transclude/>\n<$nbresizer />\n```\n\n> 如果你在不同的主题切换, 你会发现一些 UI 上的异常, 那是因为 这个 tiddler 被修改后变成了 shadow tiddler, 在所有的主题下都会起作用.\n\n!! Recipes\n\n* 之所以部分主题需要手动修改 tiddler, 是因为他们的 sidebar 模板是写死的, 无法通过动态嵌入 tiddler. 这一点建议 学习 notebook theme\n\n!! TODO\n\n* resizer widget 暴露出对应的参数, 支持用户自定义",
+        "readme": "!! Notebook theme sidebar resizer\n\n> support left/right sidebar resizer\n\n> 可拖动调整侧边栏宽度.\n\n> 最初仅仅是为了支持 notebook theme 而写的 sidebar resizer, 后来开始支持 vanilla(and based vanilla sidebar theme), captivate, whitespace, leftbar 等插件, 布局或主题.\n\n<!-- 在切换主题时，theme 会覆盖掉同名非系统文件，所以需要手动修改 -->\n\n!! For Leftbar\n\nneed add `<$nbresizer position=\"left\" widthTiddler=\"$:/xp/leftopentab/metrics/width\" statusTiddler=\"$:/config/LeftOpenTab/Status\" close=\"hide\"/>` in [[$:/xp/ui/PageTemplate/leftsidebar]] tiddler.\n\n```html\n<!-- here -->\n<$nbresizer position=\"left\" widthTiddler=\"$:/xp/leftopentab/metrics/width\" statusTiddler=\"$:/config/LeftOpenTab/Status\" close=\"hide\"/>\n\n</$scrollable>\n\n</$reveal>\n```\n\n!! For captivate theme\n\nneed add `<$nbresizer />` in [[$:/themes/cdr/captivate/ui/SideBar]] tiddler.\n\n```html\n<<sidebarTabs>>\n<!-- here -->\n<$nbresizer />\n```\n\n!! For Whitespace theme\n\n> whitespace theme for two 5.1.17 and 5.1.22 version, if use latest version, maybe have some ui problems.\n\nneed add `<$nbresizer />` in [[$:/themes/jd/Whitespace/template/sidebar]] tiddler.\n\n```html\n<!-- add resizer widget here  -->\n\n<$transclude/>\n<$nbresizer />\n```\n\n> 如果你在不同的主题切换, 你会发现一些 UI 上的异常, 那是因为 这个 tiddler 被修改后变成了 shadow tiddler, 在所有的主题下都会起作用.\n\n!! Recipes\n\n* 之所以部分主题需要手动修改 tiddler, 是因为他们的 sidebar 模板是写死的, 无法通过动态嵌入 tiddler. 这一点建议 学习 notebook theme\n\n!! TODO\n\n* resizer widget 暴露出对应的参数, 支持用户自定义",
         "requires-reload": "yes"
     },
     {
@@ -819,7 +819,7 @@
         "created": "2024-01-30",
         "dependents": "",
         "list": "readme",
-        "readme": "## Tiddler Fullscreen\n> Tiddler fullscreen plugin support single tiddler enter fullscreen(include editing tiddler)\n\n![img](https://talk.tiddlywiki.org/uploads/default/original/2X/1/1ab760585501cd791ac9c3655621bfb31134e0ed.gif)\n\n## Motivation\n\n<!-- your plugin motivation, or why you write this plugin -->\nThis tiddler fullscreen plugin Inspired by this [post](https://talk.tiddlywiki.org/t/apply-style-by-data-tiddler-title-view-field-title-transcluded-from-a-temp-tiddler-to-make-another-fullscreen-button/8927?u=oeyoews)\n\n",
+        "readme": "## Tiddler Fullscreen\n> Tiddler fullscreen plugin support single tiddler enter fullscreen(include editing tiddler)\n\n> 方便全屏展示 tiddler, 不用在受限于条目的宽度, 免去手动调整宽度的等不必要的步骤\n\n![img](https://talk.tiddlywiki.org/uploads/default/original/2X/1/1ab760585501cd791ac9c3655621bfb31134e0ed.gif)\n\n## Motivation\n\n<!-- your plugin motivation, or why you write this plugin -->\nThis tiddler fullscreen plugin Inspired by this [post](https://talk.tiddlywiki.org/t/apply-style-by-data-tiddler-title-view-field-title-transcluded-from-a-temp-tiddler-to-make-another-fullscreen-button/8927?u=oeyoews)\n\n",
         "requires-reload": "yes"
     },
     {
