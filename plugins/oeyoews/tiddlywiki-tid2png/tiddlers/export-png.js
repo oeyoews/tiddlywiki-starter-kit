@@ -29,10 +29,9 @@ module.exports = async function exportPng(title, customSelector) {
   const targetEl = document.querySelector(selector);
 
   const hideElements = [
-    '.gk0wk-notionpagebg',
-    '.tc-tiddler-controls',
+    // '.gk0wk-notionpagebg', '.tc-tiddler-controls'
+    // '.tc-tags-wrapper'
     // '.tc-subtitle',
-    '.tc-tags-wrapper'
   ];
 
   async function hideElementsWithSelectors(selectors, show) {
@@ -45,58 +44,61 @@ module.exports = async function exportPng(title, customSelector) {
     });
   }
 
-  await hideElementsWithSelectors(hideElements, true);
+  hideElementsWithSelectors(hideElements, true);
 
   await html2canvas(targetEl, {
     useCORS: true
-  }).then((canvas) => {
-    canvas.toBlob((blob) => {
-      const sizeInMB = (blob.size / (1024 * 1024)).toFixed(2);
-      const imgData = canvas.toDataURL('image/png', 0.8); // 转换 canvas 为 PNG 格式的数据 URL
+  })
+    .then((canvas) => {
+      canvas.toBlob((blob) => {
+        const sizeInMB = (blob.size / (1024 * 1024)).toFixed(2);
+        const imgData = canvas.toDataURL('image/png', 0.8); // 转换 canvas 为 PNG 格式的数据 URL
 
-      // 这个图片是用来预览的
-      const imgNode = $tw.utils.domMaker('img', {
-        class: 'max-w-3xl',
-        attributes: {
-          src: imgData,
-          crossOrigin: ''
-        }
+        // 这个图片是用来预览的
+        const imgNode = $tw.utils.domMaker('img', {
+          class: 'max-w-3xl',
+          attributes: {
+            src: imgData,
+            crossOrigin: ''
+          }
+        });
+
+        // 只预览部分内容
+        const containerNode = $tw.utils.domMaker('div', {
+          class: 'rounded-lg overflow-y-hidden max-h-screen max-w-3xl m-0',
+          children: [imgNode]
+        });
+
+        progress.done();
+
+        const downloadPng = (href) => {
+          const linkNode = this.document.createElement('a');
+          linkNode.href = href;
+          linkNode.download = `${title}.png`;
+          linkNode.style.display = 'none';
+          document.body.appendChild(linkNode);
+          linkNode.click();
+          document.body.removeChild(linkNode);
+        };
+
+        $tw.modules.titles['$:/plugins/oeyoews/neotw-swal2/swal2.min.js']
+          ? Swal.fire({
+              html: containerNode,
+              title: `Image size: ${sizeInMB} MB`,
+              showCancelButton: true,
+              // confirmButtonColor: "bg-blue-300",
+              // cancelButtonColor: "bg-red-300",
+              cancelButtonText: 'Cancel',
+              reverseButtons: true,
+              confirmButtonText: `Download ${downloadSvg}`,
+              customClass: 'w-auto my-8'
+            }).then((result) => {
+              result.isConfirmed && downloadPng(imgData);
+            })
+          : downloadPng(imgData);
       });
-
-      // 只预览部分内容
-      const containerNode = $tw.utils.domMaker('div', {
-        class: 'rounded-lg overflow-y-hidden max-h-screen max-w-3xl m-0',
-        children: [imgNode]
-      });
-
-      progress.done();
-
-      const downloadPng = (href) => {
-        const linkNode = this.document.createElement('a');
-        linkNode.href = href;
-        linkNode.download = `${title}.png`;
-        linkNode.style.display = 'none';
-        document.body.appendChild(linkNode);
-        linkNode.click();
-        document.body.removeChild(linkNode);
-      };
-
-      $tw.modules.titles['$:/plugins/oeyoews/neotw-swal2/swal2.min.js']
-        ? Swal.fire({
-            html: containerNode,
-            title: `Image size: ${sizeInMB} MB`,
-            showCancelButton: true,
-            // confirmButtonColor: "bg-blue-300",
-            // cancelButtonColor: "bg-red-300",
-            cancelButtonText: 'Cancel',
-            reverseButtons: true,
-            confirmButtonText: `Download ${downloadSvg}`,
-            customClass: 'w-auto my-8'
-          }).then((result) => {
-            result.isConfirmed && downloadPng(imgData);
-          })
-        : downloadPng(imgData);
+    })
+    .then(() => {
+      hideElementsWithSelectors(hideElements, false);
     });
-  });
-  await hideElementsWithSelectors(hideElements, false);
 };
