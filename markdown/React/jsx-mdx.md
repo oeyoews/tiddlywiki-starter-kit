@@ -17,8 +17,5 @@ modifier: 'oeyoews'
 
 总之，JS/JSX 和 MD/MDX 文件是在不同上下文中使用的不同文件类型，但它们都具有对应关系，并且充分利用了各自的语法和技术。
 
-Undefined widget 'tid2png'
 Undefined widget 'tid2pdf'
 ## preview
-
-Undefined widget 'tid2png'
