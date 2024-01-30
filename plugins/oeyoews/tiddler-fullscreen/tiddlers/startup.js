@@ -16,10 +16,11 @@ exports.startup = () => {
   });
   document.addEventListener('fullscreenchange', () => {
     if (!document.fullscreenElement) {
-      const statetiddlers = $tw.wiki.filterTiddlers(
+      /*       const statetiddlers = $tw.wiki.filterTiddlers(
         `[prefix[$:/state/tiddler-fullscreen/]text[yes]]`
       );
-      statetiddlers.forEach((tiddler) => $tw.wiki.deleteTiddler(tiddler));
+      statetiddlers.forEach((tiddler) => $tw.wiki.deleteTiddler(tiddler)); */
+      $tw.wiki.deleteTiddler('$:/state/tiddler-fullscreen/fullscreen');
     }
   });
 };

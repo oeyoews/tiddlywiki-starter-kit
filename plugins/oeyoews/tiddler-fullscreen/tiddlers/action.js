@@ -5,12 +5,12 @@ module-type: library
 
 \*/
 module.exports = function toggleElementFullscreen(title) {
-  const prefix = '$:/state/tiddler-fullscreen/';
+  const stateTiddler = '$:/state/tiddler-fullscreen/fullscreen';
   try {
     const target = document.querySelector(`[data-tiddler-title="${title}"]`);
     if (document.fullscreenElement !== target) {
       target.requestFullscreen();
-      $tw.wiki.setText(prefix + title, 'text', '', 'yes');
+      $tw.wiki.setText(stateTiddler, 'text', '', 'yes');
     } else if (document.fullscreenElement === target) {
       document.exitFullscreen();
       // $tw.wiki.setText(prefix + title, 'text', '', 'no');
