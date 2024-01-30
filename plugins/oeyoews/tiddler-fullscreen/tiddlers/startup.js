@@ -14,4 +14,12 @@ exports.startup = () => {
   $tw.rootWidget.addEventListener('om-tiddler-fullscreen', (event) => {
     action(event?.paramObject?.title || event.tiddlerTitle);
   });
+  document.addEventListener('fullscreenchange', () => {
+    if (!document.fullscreenElement) {
+      const statetiddlers = $tw.wiki.filterTiddlers(
+        `[prefix[$:/state/tiddler-fullscreen/]text[yes]]`
+      );
+      statetiddlers.forEach((tiddler) => $tw.wiki.deleteTiddler(tiddler));
+    }
+  });
 };

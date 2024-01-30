@@ -10,15 +10,10 @@ module.exports = function toggleElementFullscreen(title) {
     const target = document.querySelector(`[data-tiddler-title="${title}"]`);
     if (document.fullscreenElement !== target) {
       target.requestFullscreen();
-      const statetiddlers = $tw.wiki.filterTiddlers(
-        `[prefix[$:/state/tiddler-fullscreen/]text[yes]]`
-      );
-      statetiddlers.forEach((tiddler) => $tw.wiki.deleteTiddler(tiddler));
       $tw.wiki.setText(prefix + title, 'text', '', 'yes');
     } else if (document.fullscreenElement === target) {
       document.exitFullscreen();
-      // NOTE: 如果使用esc 退出， 不会更新这个状态
-      $tw.wiki.setText(prefix + title, 'text', '', 'no');
+      // $tw.wiki.setText(prefix + title, 'text', '', 'no');
     }
   } catch (e) {
     console.warn(e);
