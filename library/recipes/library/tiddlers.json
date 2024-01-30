@@ -805,6 +805,23 @@
         "requires-reload": "yes"
     },
     {
+        "title": "$:/plugins/oeyoews/tiddler-fullscreen",
+        "description": "tiddler-fullscreen",
+        "author": "oeyoews",
+        "version": "0.0.1",
+        "core-version": ">=5.3.0",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "tiddler-fullscreen",
+        "meat#disabled": "yes",
+        "qrcode": "yes",
+        "created": "2024-01-30",
+        "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
+        "list": "readme",
+        "readme": "<!-- plugin template readme -->\n\n## Motivation\n\n<!-- your plugin motivation, or why you write this plugin -->\n",
+        "requires-reload": "yes"
+    },
+    {
         "title": "$:/plugins/oeyoews/tiddlywiki-banners",
         "description": "tiddlywiki-banners",
         "author": "oeyoews",
