@@ -38,7 +38,6 @@ module.exports = async function exportPng(title, customSelector) {
   async function hideElementsWithSelectors(selectors, show) {
     await selectors.forEach((selector) => {
       const elements = targetEl.querySelectorAll(selector);
-      console.log(elements);
       elements.forEach((el) => {
         // NOTE: 有的元素无法隐藏掉，maybe use css text and important
         el.hidden = show;
@@ -48,7 +47,6 @@ module.exports = async function exportPng(title, customSelector) {
 
   await hideElementsWithSelectors(hideElements, true);
 
-  console.log(targetEl);
   await html2canvas(targetEl, {
     useCORS: true
   }).then((canvas) => {
