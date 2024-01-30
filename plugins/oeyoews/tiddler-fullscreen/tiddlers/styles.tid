@@ -7,7 +7,7 @@ tags: $:/tags/Stylesheet
 }
 \end
 
-<$list filter="[all[tiddlers]prefix[$:/state/tiddler-fullscreen/]] :filter[get[text]match[yes]] +[limit[1]]" variable="fullscreenStateTiddler">
+<$list filter="[prefix[$:/state/tiddler-fullscreen/]] :filter[get[text]match[yes]] +[limit[1]]" variable="fullscreenStateTiddler">
 
 <$let fullscreenTiddler={{{ [<fullscreenStateTiddler>removeprefix[$:/state/tiddler-fullscreen/]] }}} cssEscapedTitle={{{ [<fullscreenTiddler>escapecss[]] }}}>
 

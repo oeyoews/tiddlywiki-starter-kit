@@ -7,7 +7,7 @@ export
 \*/
 const html2canvas = require('html2canvas.min.js');
 
-module.exports = function exportPng(title, customSelector) {
+module.exports = async function exportPng(title, customSelector) {
   if (customSelector && !this.document.querySelector(customSelector)) {
     $tw.wiki.addTiddler({
       title: '$:/temp/export-png',
@@ -26,26 +26,30 @@ module.exports = function exportPng(title, customSelector) {
   const selector = customSelector || `[data-tiddler-title="${title}"]`;
   // html2canvas 不支持 cloneNode, 在 widget 中可以直接移除 popup，因为 widget 会重新渲染，popup 会自动恢复？但是这是一个 listener, 不建议直接修改 dom;
   // 下面使用了 hidden 隐藏 titlebar 元素，实际页面不会被用户感知到有所抖动 (由于 html2canvas 是异步)
-  const element = document.querySelector(selector);
+  const targetEl = document.querySelector(selector);
 
   const hideElements = [
+    '.gk0wk-notionpagebg',
     '.tc-tiddler-controls',
-    '.tc-subtitle',
+    // '.tc-subtitle',
     '.tc-tags-wrapper'
   ];
 
-  function hideElementsWithSelectors(selectors, display) {
-    selectors.forEach((selector) => {
-      const elements = document.querySelectorAll(selector);
+  async function hideElementsWithSelectors(selectors, show) {
+    await selectors.forEach((selector) => {
+      const elements = targetEl.querySelectorAll(selector);
+      console.log(elements);
       elements.forEach((el) => {
-        el.style.display = display;
+        // NOTE: 有的元素无法隐藏掉，maybe use css text and important
+        el.hidden = show;
       });
     });
   }
 
-  hideElementsWithSelectors(hideElements, 'none');
+  await hideElementsWithSelectors(hideElements, true);
 
-  html2canvas(element, {
+  console.log(targetEl);
+  await html2canvas(targetEl, {
     useCORS: true
   }).then((canvas) => {
     canvas.toBlob((blob) => {
@@ -96,6 +100,5 @@ module.exports = function exportPng(title, customSelector) {
         : downloadPng(imgData);
     });
   });
-
-  hideElementsWithSelectors(hideElements, '');
+  await hideElementsWithSelectors(hideElements, false);
 };
