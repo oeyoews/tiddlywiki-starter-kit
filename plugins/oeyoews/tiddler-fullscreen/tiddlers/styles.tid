@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/tiddler-fullscreen/styles.css
+tags: $:/tags/Stylesheet
+
+.tc-tiddler-frame {
+	overflow: auto;
+}

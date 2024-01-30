@@ -16,6 +16,7 @@
     "tiddlywiki/highlight",
     "tiddlywiki/browser-sniff",
     "tiddlywiki/pluginlibrary",
+    "oeyoews/tiddler-fullscreen",
     "oeyoews/mermaid-widget",
     "oeyoews/mermaid930",
     "oeyoews/markdown-it-mermaid",
