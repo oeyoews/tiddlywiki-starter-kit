@@ -19,34 +19,30 @@ class FullscreenWidget extends Widget {
     this.computeAttributes();
     this.execute();
 
-    // const ssr = parent.isTiddlyWikiFakeDom;
-    // if (ssr) return;
+    const icon = this.geticon('$:/core/images/full-screen-button');
 
-    const createElement = $tw.utils.domMaker;
-
+    const ssr = this.document.isTiddlyWikiFakeDom;
+    if (ssr) return;
     const title = this.getVariable('currentTiddler');
 
-    const btn = createElement('button', {
-      text: 'ToggleFullscreen'
-    });
-
-    btn.addEventListener('click', () => {
-      if (document.fullscreenElement === null) {
-        const target = document.querySelector(
-          `[data-tiddler-title="${title}"]`
-        );
-        target.requestFullscreen();
-      } else {
-        document.exitFullscreen();
-      }
-    });
-
-    const domNode = createElement('div', {
-      children: [btn]
-    });
+    const toggleElementFullscreen = require('./action');
+    const domNode = document.createElement('button');
+    domNode.innerHTML = icon;
+    domNode.addEventListener('click', () => toggleElementFullscreen(title));
 
     parent.insertBefore(domNode, nextSibling);
     this.domNodes.push(domNode);
+  }
+
+  geticon(icon) {
+    const iconwidget = $tw.wiki.makeTranscludeWidget(
+      icon,
+      { document: $tw.fakeDocument, parseAsInline: true } // NOTE: muse use fakedom
+    );
+
+    const container = $tw.fakeDocument.createElement('div');
+    iconwidget.render(container, null);
+    return container.firstChild.innerHTML;
   }
 }
 

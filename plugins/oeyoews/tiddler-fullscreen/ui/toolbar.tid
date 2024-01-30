@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/tiddler-fullscreen/EditorToolbar
+caption: fullscreen
+condition: [<targetTiddler>]
+icon: $:/core/images/full-screen-button
+button-classes: tc-text-editor-toolbar-item-start-group
+tags: $:/tags/EditorToolbar
