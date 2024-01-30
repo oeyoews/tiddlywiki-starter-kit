@@ -1,0 +1,9 @@
+title: $:/plugins/oeyoews/neotw-zen-mode/editortoolbar
+tags: $:/tags/EditorToolbar
+caption: zen-mode
+condition: [<targetTiddler>]
+icon: $:/plugins/oeyoews/neotw-zen-mode/icon
+
+<!-- icon: $:/plugins/oeyoews/tiddler-fullscreen/icons/fullscreen -->
+
+<$action-listops $tiddler="$:/temp/zenmode" $field="text" $subfilter="+[toggle[no],[yes]]" />

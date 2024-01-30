@@ -7,13 +7,11 @@ caption: fullscreen tiddler
 \whitespace trim
 <$button message="om-tiddler-fullscreen" tooltip="fullscreen tiddler" aria-label="fullscreen tiddler" class=<<tv-config-toolbar-class>>>
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
-<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
 {{$:/plugins/oeyoews/tiddler-fullscreen/icons/fullscreen}}
-</$list>
 </$list>
 <$list filter="[<tv-config-toolbar-text>match[yes]]">
 <span class="tc-btn-text">
-  <$text text="pangu"/>
+  <$text text="tiddler-fullscreen"/>
 </span>
 </$list>
 </$button>
