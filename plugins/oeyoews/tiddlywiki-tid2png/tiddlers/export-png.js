@@ -7,6 +7,7 @@ export
 \*/
 const html2canvas = require('html2canvas.min.js');
 
+const swal2 = $tw.modules.titles['$:/plugins/oeyoews/neotw-swal2/swal2.min.js'];
 const downloadSvg = $tw.wiki.getTiddlerText(
   '$:/plugins/oeyoews/tiddlywiki-tid2png/download.svg'
 );
@@ -18,6 +19,19 @@ const hideElements = [
   // '.tc-tags-wrapper'
   // '.tc-subtitle',
 ];
+
+const downloadPng = (href, title) => {
+  const linkNode = this.document.createElement('a');
+  linkNode.href = href;
+  linkNode.download = `${title}.png`;
+  linkNode.style.display = 'none';
+  document.body.appendChild(linkNode);
+  linkNode.click();
+  document.body.removeChild(linkNode);
+
+  localStorage.setItem('tid2png', 'no');
+  progress.done();
+};
 
 function hideElementsWithSelectors(selectors, show) {
   selectors.forEach((selector) => {
@@ -50,58 +64,42 @@ module.exports = async function exportPng(title, customSelector) {
   // 下面使用了 hidden 隐藏 titlebar 元素，实际页面不会被用户感知到有所抖动 (由于 html2canvas 是异步)
   const targetEl = document.querySelector(selector);
 
-  html2canvas(targetEl, {
+  const canvas = await html2canvas(targetEl, {
     useCORS: true
-  })
-    .then((canvas) => {
-      canvas.toBlob((blob) => {
-        const sizeInMB = (blob.size / (1024 * 1024)).toFixed(2);
-        const imgData = canvas.toDataURL('image/png', 0.8); // 转换 canvas 为 PNG 格式的数据 URL
-        // 这个图片是用来预览的
-        const imgNode = $tw.utils.domMaker('img', {
-          class: 'max-w-3xl',
-          attributes: {
-            src: imgData,
-            crossOrigin: ''
-          }
-        });
+  });
 
-        // 只预览部分内容
-        const containerNode = $tw.utils.domMaker('div', {
-          class: 'rounded-lg overflow-y-hidden max-h-screen max-w-3xl m-0',
-          children: [imgNode]
-        });
-
-        progress.done();
-
-        const downloadPng = (href) => {
-          const linkNode = this.document.createElement('a');
-          linkNode.href = href;
-          linkNode.download = `${title}.png`;
-          linkNode.style.display = 'none';
-          document.body.appendChild(linkNode);
-          linkNode.click();
-          document.body.removeChild(linkNode);
-        };
-
-        $tw.modules.titles['$:/plugins/oeyoews/neotw-swal2/swal2.min.js']
-          ? Swal.fire({
-              html: containerNode,
-              title: `Image size: ${sizeInMB} MB`,
-              showCancelButton: true,
-              // confirmButtonColor: "bg-blue-300",
-              // cancelButtonColor: "bg-red-300",
-              cancelButtonText: 'Cancel',
-              reverseButtons: true,
-              confirmButtonText: `Download ${downloadSvg}`,
-              customClass: 'w-auto my-8'
-            }).then((result) => {
-              result.isConfirmed && downloadPng(imgData);
-            })
-          : downloadPng(imgData);
-      });
-    })
-    .then(() => {
-      localStorage.setItem('tid2png', 'no');
+  canvas.toBlob((blob) => {
+    const sizeInMB = (blob.size / (1024 * 1024)).toFixed(2);
+    const imgData = canvas.toDataURL('image/png', 0.8); // 转换 canvas 为 PNG 格式的数据 URL
+    const imgNode = $tw.utils.domMaker('img', {
+      // 这个图片是用来预览的
+      class: 'max-w-3xl',
+      attributes: {
+        src: imgData,
+        crossOrigin: ''
+      }
     });
+
+    // 只预览部分内容
+    const containerNode = $tw.utils.domMaker('div', {
+      class: 'rounded-lg overflow-y-hidden max-h-screen max-w-3xl m-0',
+      children: [imgNode]
+    });
+
+    swal2
+      ? Swal.fire({
+          html: containerNode,
+          title: `Image size: ${sizeInMB} MB`,
+          showCancelButton: true,
+          // confirmButtonColor: "bg-blue-300",
+          // cancelButtonColor: "bg-red-300",
+          cancelButtonText: 'Cancel',
+          reverseButtons: true,
+          confirmButtonText: `Download ${downloadSvg}`,
+          customClass: 'w-auto my-8'
+        }).then((result) => {
+          result.isConfirmed && downloadPng(imgData, title);
+        })
+      : downloadPng(imgData, title);
+  });
 };
