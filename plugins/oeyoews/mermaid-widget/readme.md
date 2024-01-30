@@ -1,5 +1,7 @@
 ## Mermaid widget
 
+> 提供 mermaid widget.
+
 ```html
 <$mermaid2 rendertype="png" theme="forest">
 graph LR;

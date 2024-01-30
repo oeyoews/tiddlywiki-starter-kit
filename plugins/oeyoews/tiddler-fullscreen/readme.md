@@ -1,6 +1,8 @@
 ## Tiddler Fullscreen
 > Tiddler fullscreen plugin support single tiddler enter fullscreen(include editing tiddler)
 
+> 方便全屏展示 tiddler, 不用在受限于条目的宽度, 免去手动调整宽度的等不必要的步骤
+
 ![img](https://talk.tiddlywiki.org/uploads/default/original/2X/1/1ab760585501cd791ac9c3655621bfb31134e0ed.gif)
 
 ## Motivation

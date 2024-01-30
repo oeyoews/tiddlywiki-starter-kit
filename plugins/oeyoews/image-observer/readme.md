@@ -1,3 +1,7 @@
+## Image Observer
+
+* 用于提供懒加载图片的 lib
+
 ## Usage
 
 ```js
@@ -5,5 +9,3 @@ const { observer } = new $tw.ImageObserver();
 ```
 
 ## Motivation
-
-<!-- your plugin motivation, or why you write this plugin -->
