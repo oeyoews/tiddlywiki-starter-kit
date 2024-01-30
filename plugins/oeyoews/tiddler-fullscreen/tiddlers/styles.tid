@@ -1,6 +1,20 @@
 title: $:/plugins/oeyoews/tiddler-fullscreen/styles.css
 tags: $:/tags/Stylesheet
 
-.tc-tiddler-frame {
+\define fullscreen-tiddler()
+.tc-tiddler-frame[data-tiddler-title="$(cssEscapedTitle)$"] {
 	overflow: auto;
 }
+\end
+
+<$list filter="[all[tiddlers]prefix[$:/state/tiddler-fullscreen/]] :filter[get[text]match[yes]] +[limit[1]]" variable="fullscreenStateTiddler">
+
+<$let fullscreenTiddler={{{ [<fullscreenStateTiddler>removeprefix[$:/state/tiddler-fullscreen/]] }}} cssEscapedTitle={{{ [<fullscreenTiddler>escapecss[]] }}}>
+
+<% if [<fullscreenTiddler>!is[missing]] %>
+<<fullscreen-tiddler>>
+<% endif %>
+
+</$let>
+
+</$list>
