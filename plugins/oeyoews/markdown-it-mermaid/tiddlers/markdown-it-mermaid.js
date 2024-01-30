@@ -109,13 +109,13 @@ const MermaidPlugin = (md) => {
 
         switch (rendertype) {
           case 'svg':
-            return `<div>${imageHTML}</div>`;
+            return `<div style="text-align:center;">${imageHTML}</div>`;
           case 'png':
             imageAttrs.push([
               'src',
               `data:image/svg+xml,${encodeURIComponent(imageHTML)}`
             ]);
-            return `<img ${slf.renderAttrs({ attrs: imageAttrs })}>`;
+            return `<div style="text-align:center;"><img ${slf.renderAttrs({ attrs: imageAttrs })}></div>`;
           default:
             return `<div>${imageHTML}</div>`;
         }

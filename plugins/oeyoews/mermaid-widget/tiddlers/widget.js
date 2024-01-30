@@ -85,9 +85,9 @@ class MermaidWidget extends Widget {
 
       switch (this.rendertype) {
         case 'svg':
-          return `<div class="mermaid">${imageHTML}</div>`;
+          return `<div class="mermaid" style="text-align:center;">${imageHTML}</div>`;
         case 'png':
-          return `<img src="data:image/svg+xml,${encodeURIComponent(imageHTML)}" style="max-width:${maxWidth};" />`;
+          return `<div style="text-align:center"><img src="data:image/svg+xml,${encodeURIComponent(imageHTML)}" style="max-width:${maxWidth};" /></div>`;
         default:
           return `<div class="mermaid">${imageHTML}</div>`;
       }
