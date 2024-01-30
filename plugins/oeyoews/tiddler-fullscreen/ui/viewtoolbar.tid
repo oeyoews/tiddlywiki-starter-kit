@@ -1,5 +1,5 @@
 title: $:/plugins/oeyoews/tiddler-fullscreen/ViewToolbar
-tags: $:/tags/ViewToolbar
+tags: $:/tags/ViewToolbar $:/tags/EditToolbar
 list-before: $:/core/ui/Buttons/close
 description: fullscreen tiddler
 caption: fullscreen tiddler
