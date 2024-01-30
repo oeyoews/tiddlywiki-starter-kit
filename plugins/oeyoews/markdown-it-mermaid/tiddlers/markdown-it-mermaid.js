@@ -23,6 +23,9 @@ try {
     ? require(vanilaMermaid)
     : require('$:/plugins/orange/mermaid-tw5/mermaid.min.js');
   mermaid = mermaidAPI;
+  /*   mermaid.flowchartConfig = {
+    width: '100%'
+  }; */
 } catch (e) {
   console.warn(e);
 }
