@@ -20,7 +20,7 @@ class MediumZoomWidget extends Widget {
     this.computeAttributes();
     this.execute();
 
-    const ssr = parent.isTiddlyWikiFakeDom;
+    const ssr = this.document.isTiddlyWikiFakeDom;
     if (ssr) return;
 
     if (!window.mediumZoom) {
