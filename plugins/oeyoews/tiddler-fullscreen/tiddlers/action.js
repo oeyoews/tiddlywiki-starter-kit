@@ -5,10 +5,14 @@ module-type: library
 
 \*/
 module.exports = function toggleElementFullscreen(title) {
-  if (document.fullscreenElement === null) {
-    const target = document.querySelector(`[data-tiddler-title="${title}"]`);
-    target.requestFullscreen();
-  } else {
-    document.exitFullscreen();
+  try {
+    if (document.fullscreenElement === null) {
+      const target = document.querySelector(`[data-tiddler-title="${title}"]`);
+      target.requestFullscreen();
+    } else {
+      document.exitFullscreen();
+    }
+  } catch (e) {
+    console.warn(e);
   }
 };

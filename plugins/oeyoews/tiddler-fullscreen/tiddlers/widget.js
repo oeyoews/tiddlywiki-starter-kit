@@ -19,7 +19,10 @@ class FullscreenWidget extends Widget {
     this.computeAttributes();
     this.execute();
 
-    const icon = this.geticon('$:/core/images/full-screen-button');
+    // const icon = this.geticon('$:/core/images/full-screen-button');
+    const svg = this.wiki.getTiddlerText(
+      '$:/plugins/oeyoews/tiddler-fullscreen/icons/fullscreen'
+    );
 
     const ssr = this.document.isTiddlyWikiFakeDom;
     if (ssr) return;
@@ -27,7 +30,7 @@ class FullscreenWidget extends Widget {
 
     const toggleElementFullscreen = require('./action');
     const domNode = document.createElement('button');
-    domNode.innerHTML = icon;
+    domNode.innerHTML = svg;
     domNode.addEventListener('click', () => toggleElementFullscreen(title));
 
     parent.insertBefore(domNode, nextSibling);
