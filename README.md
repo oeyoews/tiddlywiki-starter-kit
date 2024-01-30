@@ -26,6 +26,12 @@
 - Node.js
 - Git(optional)
 
+```mermaid
+
+graph LR;
+NodeJs & TiddlyWiki5 & Git -.-> Local --> GitHub --> Build -.->  b[[Blog Page]]
+```
+
 ## Getting Started
 
 ```bash
