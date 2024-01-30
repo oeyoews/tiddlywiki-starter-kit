@@ -818,7 +818,7 @@
         "created": "2024-01-30",
         "dependents": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
         "list": "readme",
-        "readme": "<!-- plugin template readme -->\n\n## Motivation\n\n<!-- your plugin motivation, or why you write this plugin -->\n",
+        "readme": "## Tiddler Fullscreen\n> Tiddler fullscreen plugin support single tiddler enter fullscreen(include editing tiddler)\n\n![img](https://talk.tiddlywiki.org/uploads/default/original/2X/1/1ab760585501cd791ac9c3655621bfb31134e0ed.gif)\n\n## Motivation\n\n<!-- your plugin motivation, or why you write this plugin -->\nThis tiddler fullscreen plugin Inspired by this [post](https://talk.tiddlywiki.org/t/apply-style-by-data-tiddler-title-view-field-title-transcluded-from-a-temp-tiddler-to-make-another-fullscreen-button/8927?u=oeyoews)\n\n",
         "requires-reload": "yes"
     },
     {
