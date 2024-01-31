@@ -89,10 +89,11 @@ class MermaidWidget extends Widget {
         case 'png':
           return `<div style="text-align:center"><img src="data:image/svg+xml,${encodeURIComponent(imageHTML)}" style="max-width:${maxWidth};" /></div>`;
         default:
-          return `<div class="mermaid">${imageHTML}</div>`;
+          return `<div style="text-align:center;" class="mermaid">${imageHTML}</div>`;
       }
     } catch (e) {
-      return `<pre>${code} </pre>`;
+      const errormessage = e.toString().split('\n').slice(1).join('\n');
+      return `<pre style="color:#ff1919;">${errormessage}</pre>`;
     }
   }
   generateRandomString(length) {

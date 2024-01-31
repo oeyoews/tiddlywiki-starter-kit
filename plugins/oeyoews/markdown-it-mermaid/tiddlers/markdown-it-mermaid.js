@@ -30,10 +30,10 @@ try {
   console.warn(e);
 }
 
-// mermaid.parseError = function (err, hash) {
-//   // console.log('error');
-//   // displayErrorInGui(err);
-// };
+mermaid.parseError = function (err, hash) {
+  console.log(err, hash);
+  // displayErrorInGui(err);
+};
 
 const MermaidPlugin = (md) => {
   // extends md api: add mermaid api
@@ -85,8 +85,11 @@ const MermaidPlugin = (md) => {
           // ...options // 这里会导致渲染问题
         };
         mermaid.initialize(config);
-        mermaid.parse(code);
+        const parsevalue = mermaid.parse(code);
+        console.log(parsevalue);
+
         // 或者通过查询mermmaid_ 的id个数, 或者判断是否存在相同的id;
+        // NOTE: 多个ID, 将会导致渲染错误的时候一直插入多个错误警告
         const id = 'mermaid_' + generateRandomString(5);
         let imageHTML = '';
         let imageAttrs = [];
@@ -120,10 +123,11 @@ const MermaidPlugin = (md) => {
             ]);
             return `<div style="text-align:center;"><img ${slf.renderAttrs({ attrs: imageAttrs })}></div>`;
           default:
-            return `<div>${imageHTML}</div>`;
+            return `<div style="text-align:center;">${imageHTML}</div>`;
         }
       } catch (e) {
-        return `<pre>${code}</pre>`;
+        const errormessage = e.toString().split('\n').slice(1).join('\n');
+        return `<pre style="color:#ff1919;">${errormessage}</pre>`;
       }
     }
   };
