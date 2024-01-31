@@ -112,10 +112,7 @@ const MermaidPlugin = (md) => {
 
           const svg = this.document.getElementById(id);
           if (svg) {
-            imageAttrs.push([
-              'style',
-              `max-width:${svg.style.maxWidth};max-height:${svg.style.maxHeight}`
-            ]);
+            imageAttrs.push(['style', `max-width:${svg.style.maxWidth};`]);
 
             imageAttrs.push([
               'src',

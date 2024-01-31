@@ -69,33 +69,57 @@ class MermaidWidget extends Widget {
   }
 
   renderMermaid(code) {
+    /* const notSupportedTypes = [
+      'timeline',
+      'quadrantChart',
+      'mindmap',
+      'zenuml',
+      'sankey-beta'
+    ];
+
+    if (notSupportedTypes.includes(firstLine)) {
+      return `<pre style="color:#ff1919;">${firstLine} not supported by mermaid now</pre>`;
+    } */
+
+    const id = 'mermaid_' + this.generateRandomString(5);
+    this.mermaid.initialize(this.getconfig(this.theme));
+    let imageHTML = '';
+    let maxWidth = '';
+    let domNode;
     try {
-      this.mermaid.initialize(this.getconfig(this.theme));
-      this.mermaid.parse(code);
-      const id = 'mermaid_' + this.generateRandomString(5);
-      let imageHTML = '';
-      let maxWidth = '';
       this.mermaid.render(id, code, (html) => {
-        let svg = this.document.getElementById(id);
-        if (svg) {
-          maxWidth = svg.style.maxWidth;
-        }
         imageHTML = html;
+        if (this.rendertype === 'png') {
+          const svg = this.document.getElementById(id);
+          if (svg) {
+            maxWidth = svg.style.maxWidth;
+          }
+        }
       });
 
       switch (this.rendertype) {
         case 'svg':
-          return `<div class="mermaid" style="text-align:center;">${imageHTML}</div>`;
+          domNode = this.getHTML(imageHTML);
+          break;
         case 'png':
-          return `<div style="text-align:center"><img src="data:image/svg+xml,${encodeURIComponent(imageHTML)}" style="max-width:${maxWidth};" /></div>`;
+          domNode = this.getHTML(
+            `<img src="data:image/svg+xml,${encodeURIComponent(imageHTML)}" style="max-width:${maxWidth};" />`
+          );
+          break;
         default:
-          return `<div style="text-align:center;" class="mermaid">${imageHTML}</div>`;
+          domNode = this.getHTML(imageHTML);
+          break;
       }
+      return domNode;
     } catch (e) {
+      const target = document.getElementById('d' + id);
+      target && target.parentNode.removeChild(target);
+
       const errormessage = e.toString().split('\n').slice(1).join('\n');
       return `<pre style="color:#ff1919;">${errormessage}</pre>`;
     }
   }
+
   generateRandomString(length) {
     const characters =
       'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -107,6 +131,10 @@ class MermaidWidget extends Widget {
   // NOTE: 默认是会刷新的
   refresh() {
     return false;
+  }
+
+  getHTML(html) {
+    return `<div style="text-align:center;">${html}</div>`;
   }
 }
 
