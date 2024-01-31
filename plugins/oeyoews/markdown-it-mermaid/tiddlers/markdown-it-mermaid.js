@@ -3,7 +3,12 @@ title: $:/plugins/oeyoews/markdown-it-mermaid/markdown-it-mermaid.js
 type: application/javascript
 module-type: markdownit
 
+@see-also https://talk.tiddlywiki.org/t/zoomin-info-messes-with-svg-rendering-somehow/4095/13
 \*/
+
+const getHTML = (html) => {
+  return `<div style="text-align:center;">${html}</div>`;
+};
 
 const vanilaMermaid = 'mermaid-930.min.js';
 const hasVanillaMermaid =
@@ -23,9 +28,7 @@ try {
     ? require(vanilaMermaid)
     : require('$:/plugins/orange/mermaid-tw5/mermaid.min.js');
   mermaid = mermaidAPI;
-  /*   mermaid.flowchartConfig = {
-    width: '100%'
-  }; */
+  // mermaid.flowchartConfig = { width: '100%' };
 } catch (e) {
   console.warn(e);
 }
@@ -85,46 +88,54 @@ const MermaidPlugin = (md) => {
           // ...options // 这里会导致渲染问题
         };
         mermaid.initialize(config);
-        const parsevalue = mermaid.parse(code);
-        console.log(parsevalue);
 
         // 或者通过查询mermmaid_ 的id个数, 或者判断是否存在相同的id;
         // NOTE: 多个ID, 将会导致渲染错误的时候一直插入多个错误警告
         const id = 'mermaid_' + generateRandomString(5);
         let imageHTML = '';
-        let imageAttrs = [];
-        // 这里不能使用renderAsync
-        mermaid.render(id, code, (html, bingFunctions) => {
-          // @see-also https://talk.tiddlywiki.org/t/zoomin-info-messes-with-svg-rendering-somehow/4095/13
-          let svg = this.document.getElementById(id);
-          if (svg) {
-            imageAttrs.push([
-              'style',
-              `max-width:${svg.style.maxWidth};max-height:${svg.style.maxHeight}`
-            ]);
-            // console.log(bingFunctions);
-            // bingFunctions(svg);
-          }
-          // Store HTML
-          imageHTML = html;
-        });
+        let domNode = '';
+        const imageAttrs = [];
 
         const rendertype = $tw.wiki.getTiddlerText(
           '$:/config/markdown-it-mermaid/rendertype'
         );
 
-        switch (rendertype) {
-          case 'svg':
-            return `<div style="text-align:center;">${imageHTML}</div>`;
-          case 'png':
+        // NOTE: if use async here, markdownit-extensions-startup dont fit this, shouldbe singly load mermaid by md with async
+        mermaid.render(id, code, (html) => {
+          imageHTML = html;
+
+          if (rendertype !== 'png') return;
+
+          const svg = this.document.getElementById(id);
+          if (svg) {
+            imageAttrs.push([
+              'style',
+              `max-width:${svg.style.maxWidth};max-height:${svg.style.maxHeight}`
+            ]);
+
             imageAttrs.push([
               'src',
-              `data:image/svg+xml,${encodeURIComponent(imageHTML)}`
+              `data:image/svg+xml,${encodeURIComponent(html)}`
             ]);
-            return `<div style="text-align:center;"><img ${slf.renderAttrs({ attrs: imageAttrs })}></div>`;
+          }
+        });
+
+        switch (rendertype) {
+          case 'svg':
+            domNode = getHTML(imageHTML);
+            break;
+          case 'png':
+            domNode = getHTML(
+              `<img ${slf.renderAttrs({ attrs: imageAttrs })} />`
+            );
+            console.log(domNode);
+            break;
           default:
-            return `<div style="text-align:center;">${imageHTML}</div>`;
+            domNode = getHTML(imageHTML);
+            break;
         }
+
+        return domNode;
       } catch (e) {
         const errormessage = e.toString().split('\n').slice(1).join('\n');
         return `<pre style="color:#ff1919;">${errormessage}</pre>`;
