@@ -28,8 +28,10 @@ class HitokotoWidget extends Widget {
 
     const widgetTitle = this.getVariable('currentTiddler');
 
+    // TODO: 添加一个load more button
+    const journalCount = 10;
     // 限制 99 条，否则文字多了后会卡顿
-    const { filter = '[tag[Journal]!sort[created]limit[99]]' } =
+    const { filter = `[tag[Journal]!sort[created]limit[99]]` } =
       this.attributes;
     // getall journal tiddler
     const journalTiddlers = $tw.wiki.filterTiddlers(filter);
