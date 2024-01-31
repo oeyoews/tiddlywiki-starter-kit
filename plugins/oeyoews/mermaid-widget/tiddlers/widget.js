@@ -15,9 +15,10 @@ class MermaidWidget extends Widget {
     this.mermaid;
     this.theme = 'default';
     this.rendertype = 'svg';
+    this.tiny = false;
   }
 
-  render(parent, nextSibling) {
+  async render(parent, nextSibling) {
     this.computeAttributes();
     this.execute();
 
@@ -35,7 +36,7 @@ class MermaidWidget extends Widget {
     parent.insertBefore(domNode, nextSibling);
     this.renderChildren(domNode, null);
     this.domNodes.push(domNode);
-    domNode.outerHTML = this.renderMermaid(
+    domNode.outerHTML = await this.renderMermaid(
       this.removeEmptyLines(domNode.textContent.trim())
     );
   }
@@ -54,48 +55,58 @@ class MermaidWidget extends Widget {
   }
 
   getmermaid() {
-    const vanilaMermaid = 'mermaid-930.min.js';
-    const hasVanillaMermaid =
-      $tw.modules.types.library.hasOwnProperty(vanilaMermaid);
+    if (window.mermaid) {
+      this.tiny = true;
+      // this.mermaid = window.mermaid.mermaidAPI;
+      this.mermaid = window.mermaid;
+    } else {
+      const vanilaMermaid = 'mermaid-930.min.js';
+      const hasVanillaMermaid =
+        $tw.modules.types.library.hasOwnProperty(vanilaMermaid);
 
-    try {
-      const { mermaidAPI } = hasVanillaMermaid
-        ? require(vanilaMermaid)
-        : require('$:/plugins/orange/mermaid-tw5/mermaid.min.js');
-      this.mermaid = mermaidAPI;
-    } catch (e) {
-      console.warn(e);
+      try {
+        const { mermaidAPI } = hasVanillaMermaid
+          ? require(vanilaMermaid)
+          : require('$:/plugins/orange/mermaid-tw5/mermaid.min.js');
+        this.mermaid = mermaidAPI;
+      } catch (e) {
+        console.warn(e);
+      }
     }
   }
 
-  renderMermaid(code) {
-    /* const notSupportedTypes = [
-      'timeline',
-      'quadrantChart',
-      'mindmap',
-      'zenuml',
-      'sankey-beta'
-    ];
-
-    if (notSupportedTypes.includes(firstLine)) {
-      return `<pre style="color:#ff1919;">${firstLine} not supported by mermaid now</pre>`;
-    } */
-
+  async renderMermaid(code) {
     const id = 'mermaid_' + this.generateRandomString(5);
-    this.mermaid.initialize(this.getconfig(this.theme));
     let imageHTML = '';
     let maxWidth = '';
     let domNode;
+
     try {
-      this.mermaid.render(id, code, (html) => {
-        imageHTML = html;
+      if (this.tiny) {
+        this.mermaid.initialize(this.getconfig(this.theme));
+        // bug: https://github.com/mermaid-js/mermaid/issues/4369 不要同时混用 mermaid.render 和 mermaid.mermaidAPI.render
+        // NOTE: 如果这里单独使用promise then, 只有then 里面的代码会被阻塞， 下面的代码不会进行等待
+        const { svg } = await this.mermaid.render(id, code);
+        imageHTML = svg;
+
         if (this.rendertype === 'png') {
           const svg = this.document.getElementById(id);
           if (svg) {
             maxWidth = svg.style.maxWidth;
           }
         }
-      });
+      } else {
+        await this.mermaid.initialize(this.getconfig(this.theme));
+        await this.mermaid.render(id, code, (html) => {
+          imageHTML = html;
+          if (this.rendertype === 'png') {
+            const svg = this.document.getElementById(id);
+            if (svg) {
+              maxWidth = svg.style.maxWidth;
+            }
+          }
+        });
+      }
 
       switch (this.rendertype) {
         case 'svg':
@@ -116,7 +127,8 @@ class MermaidWidget extends Widget {
       target && target.parentNode.removeChild(target);
 
       const errormessage = e.toString().split('\n').slice(1).join('\n');
-      return `<pre style="color:#ff1919;">${errormessage}</pre>`;
+
+      return `<pre style="color:#ff1919;">${errormessage || e}</pre>`;
     }
   }
 
