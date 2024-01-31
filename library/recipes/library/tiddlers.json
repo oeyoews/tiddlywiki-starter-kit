@@ -404,6 +404,23 @@
         "requires-reload": "yes"
     },
     {
+        "title": "$:/plugins/oeyoews/mermaid-tiny",
+        "description": "mermaid-tiny",
+        "author": "oeyoews",
+        "version": "0.0.1",
+        "core-version": ">=5.3.0",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "mermaid-tiny",
+        "meat#disabled": "yes",
+        "qrcode": "yes",
+        "created": "2024-01-31",
+        "dependents": "",
+        "list": "readme",
+        "readme": "<!-- plugin template readme -->\n\n## Motivation\n\n<!-- your plugin motivation, or why you write this plugin -->\n",
+        "requires-reload": "no"
+    },
+    {
         "title": "$:/plugins/oeyoews/mermaid-widget",
         "description": "mermaid-widget",
         "author": "oeyoews",
