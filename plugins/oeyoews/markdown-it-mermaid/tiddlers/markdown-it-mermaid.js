@@ -95,7 +95,6 @@ const MermaidPlugin = (md) => {
         mermaid.initialize(config);
 
         // 或者通过查询mermmaid_ 的id个数, 或者判断是否存在相同的id;
-        // NOTE: 多个ID, 将会导致渲染错误的时候一直插入多个错误警告
         let imageHTML = '';
         let domNode = '';
         const imageAttrs = [];
