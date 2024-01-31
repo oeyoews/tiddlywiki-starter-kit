@@ -28,7 +28,6 @@ try {
     ? require(vanilaMermaid)
     : require('$:/plugins/orange/mermaid-tw5/mermaid.min.js');
   mermaid = mermaidAPI;
-  // mermaid.flowchartConfig = { width: '100%' };
 } catch (e) {
   console.warn(e);
 }
@@ -39,7 +38,7 @@ const MermaidPlugin = (md) => {
 
   const defaultFenceRender = md.renderer.rules.fence;
 
-  const customMermaidFenceRender = (tokens, idx, options = {}, env, slf) => {
+  const customMermaidFenceRender = (tokens, idx, options = {}, env, self) => {
     const token = tokens[idx];
     const code = token.content.trim();
     let [type, theme, ...title] = token.info.split(' ');
@@ -67,12 +66,12 @@ const MermaidPlugin = (md) => {
     }
 
     if (type.trim() !== 'mermaid') {
-      return defaultFenceRender(tokens, idx, (options = {}), env, slf);
+      return defaultFenceRender(tokens, idx, (options = {}), env, self);
     } else if (type.trim() === 'mermaid') {
       // return 在外面会导致terser 报错
       if (!mermaid) {
-        console.warn('please install orange/mermaid-tw5 tiddlywiki plugin');
-        return `<pre>${code}</pre>`;
+        // console.warn('please install orange/mermaid-tw5 tiddlywiki plugin');
+        return `<pre style="color:red;">${code}\n Maybe you forget install a mermaid library plugin.</pre>`;
       }
 
       const id = 'mermaid_' + generateRandomString(5);
@@ -119,6 +118,7 @@ const MermaidPlugin = (md) => {
             ]);
           }
         });
+        if (!imageHTML) return `<pre style="color:#ff1919;">${code}</pre>`;
 
         switch (rendertype) {
           case 'svg':
@@ -126,7 +126,7 @@ const MermaidPlugin = (md) => {
             break;
           case 'png':
             domNode = getHTML(
-              `<img ${slf.renderAttrs({ attrs: imageAttrs })} />`
+              `<img ${self.renderAttrs({ attrs: imageAttrs })} />`
             );
             break;
           default:
