@@ -86,6 +86,7 @@ class MermaidWidget extends Widget {
         this.mermaid.initialize(this.getconfig(this.theme));
         // bug: https://github.com/mermaid-js/mermaid/issues/4369 不要同时混用 mermaid.render 和 mermaid.mermaidAPI.render
         // NOTE: 如果这里单独使用promise then, 只有then 里面的代码会被阻塞， 下面的代码不会进行等待
+        // after v10+
         const { svg } = await this.mermaid.render(id, code);
         imageHTML = svg;
 
@@ -96,8 +97,10 @@ class MermaidWidget extends Widget {
           }
         }
       } else {
-        await this.mermaid.initialize(this.getconfig(this.theme));
-        await this.mermaid.render(id, code, (html) => {
+        this.mermaid.initialize(this.getconfig(this.theme));
+        // https://github.com/mermaid-js/mermaid/issues/4484
+        // v9
+        this.mermaid.render(id, code, (html) => {
           imageHTML = html;
           if (this.rendertype === 'png') {
             const svg = this.document.getElementById(id);
@@ -108,6 +111,9 @@ class MermaidWidget extends Widget {
         });
       }
 
+      if (!imageHTML) {
+        return `<pre style="color:#ff1919;">${code}</pre>`;
+      }
       switch (this.rendertype) {
         case 'svg':
           domNode = this.getHTML(imageHTML);
