@@ -46,7 +46,6 @@ And there are some areas in the original mermaid plugin that I would like to imp
 
 ## NOTE
 
-* https://github.com/mermaid-js/mermaid/issues/4358 v10 以后添加了一个 mermaid.run, 其中有一个 supresserror 选项可以做到这一点，但是由于 esm 的问题，暂时无法升级
 * event: 只有新版支持 click 的写法.
 * 渲染成 image 就不支持点击事件
 * 旧版不支持 markdown 标记语法，比如加粗斜体

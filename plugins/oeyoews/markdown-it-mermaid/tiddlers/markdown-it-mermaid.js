@@ -33,23 +33,15 @@ try {
   console.warn(e);
 }
 
-mermaid.parseError = function (err, hash) {
-  console.log(err, hash);
-  // displayErrorInGui(err);
-};
-
 const MermaidPlugin = (md) => {
   // extends md api: add mermaid api
   //  md.mermaid = mermaid;
 
   const defaultFenceRender = md.renderer.rules.fence;
 
-  /* mermaid.parseError = function (err, hash) { console.log(err); }; */
   const customMermaidFenceRender = (tokens, idx, options = {}, env, slf) => {
     const token = tokens[idx];
     const code = token.content.trim();
-    // TODO: support render title
-    // TODO: use https://github.com/agoose77/markdown-it-mermaid/blob/main/src/index.ts to render as img to encodeurl
     let [type, theme, ...title] = token.info.split(' ');
     const firstLine = code.split(/\n/)[0].trim();
     // NOTE: 这种github 不支持
@@ -62,6 +54,18 @@ const MermaidPlugin = (md) => {
       type = 'mermaid';
     }
 
+    const notSupportedTypes = [
+      'timeline',
+      'quadrantChart',
+      'mindmap',
+      'zenuml',
+      'sankey-beta'
+    ];
+
+    if (notSupportedTypes.includes(firstLine)) {
+      return `<pre style="color:#ff1919;">${firstLine} not supported by mermaid now</pre>`;
+    }
+
     if (type.trim() !== 'mermaid') {
       return defaultFenceRender(tokens, idx, (options = {}), env, slf);
     } else if (type.trim() === 'mermaid') {
@@ -71,6 +75,7 @@ const MermaidPlugin = (md) => {
         return `<pre>${code}</pre>`;
       }
 
+      const id = 'mermaid_' + generateRandomString(5);
       try {
         // @see-also: https://mermaid.js.org/config/schema-docs/config.html
         /* const palette = $tw.wiki.getTiddlerText('$:/palette');
@@ -91,7 +96,6 @@ const MermaidPlugin = (md) => {
 
         // 或者通过查询mermmaid_ 的id个数, 或者判断是否存在相同的id;
         // NOTE: 多个ID, 将会导致渲染错误的时候一直插入多个错误警告
-        const id = 'mermaid_' + generateRandomString(5);
         let imageHTML = '';
         let domNode = '';
         const imageAttrs = [];
@@ -128,7 +132,6 @@ const MermaidPlugin = (md) => {
             domNode = getHTML(
               `<img ${slf.renderAttrs({ attrs: imageAttrs })} />`
             );
-            console.log(domNode);
             break;
           default:
             domNode = getHTML(imageHTML);
@@ -137,6 +140,9 @@ const MermaidPlugin = (md) => {
 
         return domNode;
       } catch (e) {
+        // 移除 mermaid 由于渲染错误善生的错误节点.
+        const target = document.getElementById('d' + id);
+        target && target.parentNode.removeChild(target);
         const errormessage = e.toString().split('\n').slice(1).join('\n');
         return `<pre style="color:#ff1919;">${errormessage}</pre>`;
       }
