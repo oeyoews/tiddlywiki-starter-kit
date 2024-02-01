@@ -49,7 +49,7 @@ class MermaidWidget extends Widget {
     return {
       securityLevel: 'loose',
       theme,
-      startOnLoad: false,
+      startOnLoad: false, // 这个对cdn 加载的无用.
       htmlLabels: true
     };
   }
@@ -82,11 +82,13 @@ class MermaidWidget extends Widget {
     let domNode;
 
     try {
+      this.mermaid.initialize(this.getconfig(this.theme));
       if (this.tiny) {
-        this.mermaid.initialize(this.getconfig(this.theme));
         // bug: https://github.com/mermaid-js/mermaid/issues/4369 不要同时混用 mermaid.render 和 mermaid.mermaidAPI.render
         // NOTE: 如果这里单独使用promise then, 只有then 里面的代码会被阻塞， 下面的代码不会进行等待
         // after v10+
+        // (params: id, text, container? Element) ==> Promise
+        // 如果直接通过使用container， 就无法直接处理成image了
         const { svg } = await this.mermaid.render(id, code);
         imageHTML = svg;
 
@@ -97,7 +99,6 @@ class MermaidWidget extends Widget {
           }
         }
       } else {
-        this.mermaid.initialize(this.getconfig(this.theme));
         // https://github.com/mermaid-js/mermaid/issues/4484
         // v9
         this.mermaid.render(id, code, (html) => {

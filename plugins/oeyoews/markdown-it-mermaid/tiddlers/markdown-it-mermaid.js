@@ -14,6 +14,7 @@ const vanilaMermaid = 'mermaid-930.min.js';
 const hasVanillaMermaid =
   $tw.modules.types.library.hasOwnProperty(vanilaMermaid);
 let mermaid;
+let tiny = false;
 
 const generateRandomString = (length) => {
   const characters =
@@ -31,6 +32,11 @@ try {
 } catch (e) {
   console.warn(e);
 }
+
+// if (window.mermaid) {
+//   mermaid = window.mermaid;
+//   tiny = true;
+// }
 
 const MermaidPlugin = (md) => {
   // extends md api: add mermaid api
@@ -102,22 +108,26 @@ const MermaidPlugin = (md) => {
           '$:/config/markdown-it-mermaid/rendertype'
         );
 
-        // NOTE: if use async here, markdownit-extensions-startup dont fit this, shouldbe singly load mermaid by md with async
-        mermaid.render(id, code, (html) => {
-          imageHTML = html;
+        if (tiny) {
+          // mermaid.render(id, code, document.getElementById('test'));
+        } else {
+          // NOTE: if use async here, markdownit-extensions-startup dont fit this, shouldbe singly load mermaid by md with async
+          mermaid.render(id, code, (html) => {
+            imageHTML = html;
 
-          if (rendertype !== 'png') return;
+            if (rendertype !== 'png') return;
 
-          const svg = this.document.getElementById(id);
-          if (svg) {
-            imageAttrs.push(['style', `max-width:${svg.style.maxWidth};`]);
+            const svg = this.document.getElementById(id);
+            if (svg) {
+              imageAttrs.push(['style', `max-width:${svg.style.maxWidth};`]);
 
-            imageAttrs.push([
-              'src',
-              `data:image/svg+xml,${encodeURIComponent(html)}`
-            ]);
-          }
-        });
+              imageAttrs.push([
+                'src',
+                `data:image/svg+xml,${encodeURIComponent(html)}`
+              ]);
+            }
+          });
+        }
         if (!imageHTML) return `<pre style="color:#ff1919;">${code}</pre>`;
 
         switch (rendertype) {

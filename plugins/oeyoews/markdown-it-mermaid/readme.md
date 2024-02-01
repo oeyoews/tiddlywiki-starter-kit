@@ -55,3 +55,7 @@ And there are some areas in the original mermaid plugin that I would like to imp
 * 渲染成 image, 导致 markdown export 导出爆错，
 
 https://github.com/mermaid-js/mermaid/pull/4734 希望可以类似 echarts 一样，用户可以选择需要的图标类型。
+
+## TODO
+
+* [ ] support v11 with async usage https://github.com/markdown-it/markdown-it/blob/master/docs/development.md#i-need-async-rule-how-to-do-it
