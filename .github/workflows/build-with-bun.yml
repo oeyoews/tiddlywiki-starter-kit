@@ -18,7 +18,9 @@ permissions:
 
 jobs:
   release-and-page:
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest
+    # https://github.blog/changelog/2024-01-30-github-actions-introducing-the-new-m1-macos-runner-available-to-open-source/
+    runs-on: macos-14
     steps:
       - uses: actions/checkout@v3
       - uses: oven-sh/setup-bun@v1
