@@ -90,7 +90,7 @@ export default {
   ],
   // build index.html
   index: [
-    '--verbose',
+    // '--verbose',
     '--output',
     config.output,
     '--deletetiddlers',
