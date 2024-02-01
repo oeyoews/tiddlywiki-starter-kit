@@ -34,6 +34,7 @@ const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
 
 // oeyoews plugins
 const oeyoewsPlugins = [
+  'markdown-it-twemoji',
   'mermaid-tiny',
   'tiddlywiki-tid2png',
   'tiddler-fullscreen',
