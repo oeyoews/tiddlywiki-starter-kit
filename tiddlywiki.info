@@ -17,18 +17,15 @@
     "tiddlywiki/browser-sniff",
     "tiddlywiki/pluginlibrary",
     "oeyoews/markdown-it-twemoji",
-    "oeyoews/tiddlywiki-tid2png",
     "oeyoews/tiddler-fullscreen",
     "oeyoews/mermaid-widget",
     "oeyoews/mermaid930",
     "oeyoews/markdown-it-mermaid",
     "oeyoews/markdown-it-math",
-    "oeyoews/tiddlywiki-full-text-search",
     "oeyoews/medium-zoom",
     "oeyoews/blockquote",
     "oeyoews/editor-preview-resizer",
     "oeyoews/confetti-background",
-    "oeyoews/plum-blosssom",
     "oeyoews/confetti",
     "oeyoews/image-observer",
     "oeyoews/markdown-it-emoji",
@@ -36,7 +33,6 @@
     "oeyoews/markdown-it-abbr",
     "oeyoews/markdown-it-front-matter",
     "oeyoews/markdown-it-github-alert",
-    "oeyoews/markdown-it-smartarrows",
     "oeyoews/markdown-extensions-startup",
     "oeyoews/translate",
     "oeyoews/pangu",
@@ -78,46 +74,6 @@
     "oeyoews/tiddlywiki-publish-tiddler"
   ],
   "build": {
-    "reactMd": [
-      "--verbose",
-      "--output",
-      ".tiddlywiki/markdown/React",
-      "--render",
-      "[tag[React]]",
-      "[addsuffix[.md]]",
-      "text/plain",
-      "$:/plugins/cdaven/markdown-export/md-tiddler"
-    ],
-    "jsMd": [
-      "--verbose",
-      "--output",
-      ".tiddlywiki/markdown/JavaScript",
-      "--render",
-      "[tag[JavaScript]]",
-      "[addsuffix[.md]]",
-      "text/plain",
-      "$:/plugins/cdaven/markdown-export/md-tiddler"
-    ],
-    "starMd": [
-      "--verbose",
-      "--output",
-      ".tiddlywiki/markdown/star",
-      "--render",
-      "[tag[剪藏]]",
-      "[addsuffix[.md]]",
-      "text/plain",
-      "$:/plugins/cdaven/markdown-export/md-tiddler"
-    ],
-    "journalMd": [
-      "--verbose",
-      "--output",
-      ".tiddlywiki/markdown/Journal",
-      "--render",
-      "[tag[Journal]]",
-      "[addsuffix[.md]]",
-      "text/plain",
-      "$:/plugins/cdaven/markdown-export/md-tiddler"
-    ],
     "javascript": [
       "--output",
       ".tiddlywiki",
@@ -150,7 +106,6 @@
       "[publish[blog]]"
     ],
     "index": [
-      "--verbose",
       "--output",
       ".tiddlywiki",
       "--deletetiddlers",
