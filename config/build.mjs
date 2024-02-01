@@ -15,7 +15,7 @@ export default {
   //   'exportFilter',
   //   '[!is[system]]',
   // ],
-  reactMd: [
+  /*   reactMd: [
     '--verbose',
     '--output',
     `${config.output}/markdown/React`,
@@ -54,7 +54,7 @@ export default {
     '[addsuffix[.md]]',
     'text/plain',
     '$:/plugins/cdaven/markdown-export/md-tiddler'
-  ],
+  ], */
   javascript: [
     '--output',
     `${config.output}`,
