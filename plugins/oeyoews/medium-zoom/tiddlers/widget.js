@@ -39,10 +39,12 @@ class MediumZoomWidget extends Widget {
     // const images = tiddlerNode.querySelectorAll('img, svg');
     const images = tiddlerNode.querySelectorAll('img');
 
-    // Nodelist array to array
-    const filteredImages = Array.from(images).filter(
-      (item) => item.parentElement.tagName !== 'A'
-    );
+    const filteredImages = Array.from(images).filter((item) => {
+      const tagName = item.parentElement.tagName;
+      if (!['A', 'BUTTON'].includes(tagName)) {
+        return item;
+      }
+    });
 
     mediumZoom(filteredImages);
   }

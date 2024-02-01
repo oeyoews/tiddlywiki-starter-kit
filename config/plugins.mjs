@@ -56,7 +56,6 @@ const oeyoewsPlugins = [
   'translate',
   'ejs',
   'skill-badges',
-  // 'artplayer',
   'notebook-theme-sidebar-resizer',
   'neotw-music-with-howler',
   'tiddlywiki-banners',
