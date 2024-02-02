@@ -8,5 +8,5 @@
   "type": "application/json",
   "plugin-type": "plugin",
   "name": "Tiddlywiki Tiddler Info",
-  "list": "readme info-config"
+  "list": "readme"
 }

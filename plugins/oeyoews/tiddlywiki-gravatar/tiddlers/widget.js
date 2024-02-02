@@ -82,10 +82,12 @@ class AvatarWidget extends Widget {
       imageNode.classList.add(
         'mx-0',
         'w-[20px]',
-        'outline',
-        'outline-1',
+        // 'outline',
+        // 'outline-1',
         'p-0.5'
       );
+      // imageNode.style.width = '1em';
+      // imageNode.style.height = '1em';
     }
 
     const tempClassList = 'mx-auto shadow-md block outline outline-1 p-1';
