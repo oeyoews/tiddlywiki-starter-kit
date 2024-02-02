@@ -7,7 +7,7 @@ module-type: markdownit
 \*/
 
 const getHTML = (html) => {
-  return `<div style="text-align:center;">${html}</div>`;
+  return `<div style="text-align:center;" class="mermaid">${html}</div>`;
 };
 
 const vanilaMermaid = 'mermaid-930.min.js';

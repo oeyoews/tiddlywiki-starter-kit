@@ -23,7 +23,10 @@ class MermaidWidget extends Widget {
     this.execute();
 
     const domNode = this.document.createElement('div');
-    if (domNode.isTiddlyWikiFakeDom) return;
+    if (domNode.isTiddlyWikiFakeDom) {
+      console.warn('SSR not support export mermaid chart');
+      return;
+    }
 
     const { theme, rendertype } = this.attributes;
     theme && (this.theme = theme);
