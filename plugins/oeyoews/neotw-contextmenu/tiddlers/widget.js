@@ -23,23 +23,30 @@ class ContextMenuWidget extends Widget {
     const ssr = this.document.isTiddlyWikiFakeDom;
     if (ssr) return;
 
-    const title = this.getVariable('currentTiddler');
     const menuNode = this.document.createElement('div');
+    menuNode.className = 'context-menu';
     this.menu = menuNode;
 
-    menuNode.id = title;
+    menuNode.id = 'contextMenu';
     menuNode.style.display = 'none';
     menuNode.style.zIndex = '9999';
+    const btn = this.document.createElement('li');
+    btn.textContent = '99';
+    menuNode.append(btn);
 
     parent.addEventListener('contextmenu', (event) => this.contextmenu(event));
+
+    // parent.insertBefore(menuNode, nextSibling);
+    // this.domNodes.push(menuNode);
   }
 
   contextmenu(event) {
     console.log(event.pageX);
     const menu = this.menu;
     if (menu.style.display == 'block') {
-      this.hideMenu();
+      console.log('hide');
     } else {
+      console.log('showmenu');
       menu.style.display = 'block';
       menu.style.left = event.pageX + 'px';
       menu.style.top = event.pageY + 'px';
@@ -65,7 +72,7 @@ class ContextMenuWidget extends Widget {
     var action = event.target.getAttribute('action');
     var targ = event.target.getAttribute('targ');
     let text;
-    this.hideMenu();
+    // this.hideMenu();
 
     switch (action) {
       case 'tm-copy-to-clipboard':

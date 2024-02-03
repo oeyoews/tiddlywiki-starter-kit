@@ -1,0 +1,70 @@
+title: $:/plugins/oeyoews/neotw-contextmenu/styles.css
+tags: $:/tags/Stylesheet
+
+
+.context-menu {
+    position: absolute;
+		min-width: 180px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    background-color: <<colour dropdown-background>>;
+    border-radius: 6px;
+    box-shadow: 0 10px 20px rgb(64 64 64 / 5%);
+    padding: 0;
+    border: 1px solid <<colour dropdown-border>>;
+}
+
+.context-menu > ul {
+    list-style: none;
+    padding: 0;
+    margin: 6px 0;
+}
+
+.context-menu > ul > li > a {
+  font: inherit;
+  border: 0;
+  padding: 2px 12px 2px 8px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-decoration: unset;
+  color: <<colour foreground>>;
+  font-weight: 500;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+
+.context-menu > ul > li > a:hover {
+    background: <<colour tiddler-link-foreground>>;
+    color: <<colour tiddler-link-background>>;
+    fill: <<colour tiddler-link-background>>;
+}
+
+.context-menu > ul > li > a:hover > svg {
+    color: <<colour tiddler-link-background>>;
+    fill: <<colour tiddler-link-background>>;
+}
+
+.context-menu > ul > li > a > i {
+  padding-right: 10px;
+}
+
+.context-menu > ul > li > a > svg {
+    color: <<colour foreground>>;
+    fill: <<colour foreground>>;
+    width: 13px;
+    margin-right: 9px;
+    height: 13px;
+}
+
+ul .menu-separator {
+    border-bottom: 1px solid <<colour dropdown-border>>;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
