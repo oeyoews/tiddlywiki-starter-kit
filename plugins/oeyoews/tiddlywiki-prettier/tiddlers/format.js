@@ -13,6 +13,7 @@ module-type: library
  * @return {Promise<string>} The formatted text
  */
 module.exports = async function (text, type = 'markdown') {
+  const option = require('./option');
   if (!window.prettier) {
     return;
   }
@@ -30,7 +31,8 @@ module.exports = async function (text, type = 'markdown') {
 
   const formatedText = await this.prettier.format(text, {
     parser: type,
-    plugins: [this.plugins[type]]
+    plugins: [this.plugins[type]],
+    ...option
   });
   return formatedText;
 };

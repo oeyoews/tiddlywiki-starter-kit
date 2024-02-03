@@ -17,7 +17,6 @@ module.exports = async function (title, type = 'markdown') {
 
   try {
     const format = require('./format');
-    const option = require('./option');
 
     const formatedText = await format(text);
     if (!formatedText) {
@@ -26,8 +25,7 @@ module.exports = async function (title, type = 'markdown') {
       return;
     }
     $tw.wiki.setText(title, 'text', '', formatedText, {
-      suppressTimestamp: true,
-      ...option
+      suppressTimestamp: true
     });
     $tw.notifier.display(
       '$:/plugins/oeyoews/tiddlywiki-prettier/notify/prettier'
