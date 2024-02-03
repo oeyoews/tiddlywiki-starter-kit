@@ -1,0 +1,8 @@
+title: $:/plugins/oeyoews/neotw-popup-preview/editortoolbar
+tags: $:/tags/EditorToolbar
+caption: preview popup
+condition: [<targetTiddler>]
+icon: $:/plugins/oeyoews/neotw-popup-preview/icon
+
+<$action-setfield $tiddler="$:/plugins/oeyoews/neotw-popup-preview/modal" preview={{{ [<targetTiddler>get[title]] }}} caption={{{ [<targetTiddler>get[draft.title]] }}} />
+<$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/neotw-popup-preview/modal" />

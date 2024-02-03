@@ -5,6 +5,9 @@
   border-radius: 10px;
   border: none;
   background-color: #f5f5f5;
+  min-width: 60%;
+  max-width: calc(100%-80px);
+  min-height: 40%;
 }
 
 .o-tm .tc-modal-footer {
