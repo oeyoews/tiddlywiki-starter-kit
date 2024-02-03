@@ -1001,7 +1001,7 @@
         "title": "$:/plugins/oeyoews/tiddlywiki-prettier",
         "description": "tiddlywiki-prettier",
         "author": "oeyoews",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "core-version": ">=5.3.0",
         "type": "application/json",
         "plugin-type": "plugin",
