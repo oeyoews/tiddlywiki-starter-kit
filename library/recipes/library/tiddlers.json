@@ -421,6 +421,23 @@
         "requires-reload": "yes"
     },
     {
+        "title": "$:/plugins/oeyoews/mermaid-cdn",
+        "description": "mermaid-cdn",
+        "author": "oeyoews",
+        "version": "0.0.1",
+        "core-version": ">=5.3.0",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "mermaid-cdn",
+        "meat#disabled": "yes",
+        "qrcode": "yes",
+        "created": "2024-02-03",
+        "dependents": "",
+        "list": "readme",
+        "readme": "<!-- plugin template readme -->\n\n## 9.3.0\n\n## 9.4.0\n\n## tiny\n\n## latest\n\n## Motivation\n\n<!-- your plugin motivation, or why you write this plugin -->\n",
+        "requires-reload": "yes"
+    },
+    {
         "title": "$:/plugins/oeyoews/mermaid-tiny",
         "description": "mermaid-tiny",
         "author": "oeyoews",
@@ -434,7 +451,7 @@
         "created": "2024-01-31",
         "dependents": "",
         "list": "readme",
-        "readme": "<!-- plugin template readme -->\n\n## Motivation\n\n<!-- your plugin motivation, or why you write this plugin -->\n",
+        "readme": "<!-- plugin template readme -->\n\n## Motivation\n\nbuiltin tiny https://cdn.jsdelivr.net/npm/mermaid@11.0.0-alpha.4/dist/mermaid.tiny.min.js\n\n<!-- ```html\n<script type=\"module\">\nimport mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.0.0-alpha.4/+esm'\n</script>\n``` -->\n\n\n<!-- your plugin motivation, or why you write this plugin -->\n",
         "requires-reload": "no"
     },
     {
@@ -963,6 +980,23 @@
         "type": "application/json",
         "requires-reload": "yes",
         "icon": "data:image/svg+xml,%3Csvg%20stroke%3D%22currentColor%22%20fill%3D%22%23389BD2%22%20stroke-width%3D%220%22%20viewBox%3D%220%200%2016%2016%22%20height%3D%221em%22%20width%3D%221em%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M15.992%204.204c-.071%201.556-1.158%203.687-3.262%206.393-2.175%202.829-4.016%204.243-5.522%204.243-.933%200-1.722-.861-2.367-2.583L3.55%207.523C3.07%205.8%202.556%204.94%202.007%204.94c-.118%200-.537.253-1.254.754L0%204.724a209.56%20209.56%200%200%200%202.334-2.081c1.054-.91%201.845-1.388%202.373-1.437%201.243-.123%202.01.728%202.298%202.553.31%201.968.526%203.19.646%203.666.36%201.631.756%202.446%201.186%202.445.334%200%20.836-.53%201.508-1.587.671-1.058%201.03-1.863%201.077-2.415.096-.913-.263-1.37-1.077-1.37a3.022%203.022%200%200%200-1.185.261c.789-2.573%202.291-3.825%204.508-3.756%201.644.05%202.419%201.117%202.324%203.2z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%0A"
+    },
+    {
+        "title": "$:/plugins/oeyoews/tiddlywiki-prettier",
+        "description": "tiddlywiki-prettier",
+        "author": "oeyoews",
+        "version": "0.0.1",
+        "core-version": ">=5.3.0",
+        "type": "application/json",
+        "plugin-type": "plugin",
+        "name": "tiddlywiki-prettier",
+        "meat#disabled": "yes",
+        "qrcode": "yes",
+        "created": "2024-02-03",
+        "dependents": "",
+        "list": "readme",
+        "readme": "<!-- plugin template readme -->\n\n## Motivation\n\n<!-- your plugin motivation, or why you write this plugin -->\n",
+        "requires-reload": "yes"
     },
     {
         "title": "$:/plugins/oeyoews/tiddlywiki-publish-tiddler",
