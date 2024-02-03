@@ -20,6 +20,11 @@ module.exports = async function (title, type = 'markdown') {
     const option = require('./option');
 
     const formatedText = await format(text);
+    if (!formatedText) {
+      // console.warn(formatedText);
+      // notify here
+      return;
+    }
     $tw.wiki.setText(title, 'text', '', formatedText, {
       suppressTimestamp: true,
       ...option

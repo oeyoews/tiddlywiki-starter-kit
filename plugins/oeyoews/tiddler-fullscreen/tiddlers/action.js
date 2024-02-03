@@ -7,7 +7,9 @@ module-type: library
 module.exports = function toggleElementFullscreen(title) {
   const stateTiddler = '$:/state/tiddler-fullscreen/fullscreen';
   try {
-    const target = document.querySelector(`[data-tiddler-title="${title}"]`);
+    const target = document.querySelector(
+      `[data-tiddler-title="${CSS.escape(title)}"]`
+    );
     if (document.fullscreenElement !== target) {
       target.requestFullscreen();
       $tw.wiki.setText(stateTiddler, 'text', '', 'yes');

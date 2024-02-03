@@ -49,7 +49,10 @@ module.exports = async function exportPng(title, customSelector) {
   let isExporting = localStorage.getItem('tid2png') || 'no';
   if (isExporting === 'yes') alert('正在导出 ...');
   localStorage.setItem('tid2png', 'yes');
-  if (customSelector && !this.document.querySelector(customSelector)) {
+  if (
+    customSelector &&
+    !this.document.querySelector(CSS.escape(customSelector))
+  ) {
     $tw.wiki.addTiddler({
       title: '$:/temp/export-png',
       text: `不存在 ${customSelector} 节点，操作取消`
@@ -62,7 +65,7 @@ module.exports = async function exportPng(title, customSelector) {
   const selector = customSelector || `[data-tiddler-title="${title}"]`;
   // html2canvas 不支持 cloneNode, 在 widget 中可以直接移除 popup，因为 widget 会重新渲染，popup 会自动恢复？但是这是一个 listener, 不建议直接修改 dom;
   // 下面使用了 hidden 隐藏 titlebar 元素，实际页面不会被用户感知到有所抖动 (由于 html2canvas 是异步)
-  const targetEl = document.querySelector(selector);
+  const targetEl = document.querySelector(CSS.escape(selector));
 
   const canvas = await html2canvas(targetEl, {
     useCORS: true

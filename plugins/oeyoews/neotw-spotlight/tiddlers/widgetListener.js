@@ -27,7 +27,7 @@ class SpotlightWidget extends Widget {
     if (!title || title.startsWith('Draft of')) return;
 
     const tiddlerNode = document.querySelector(
-      `[data-tiddler-title='${title}']`
+      `[data-tiddler-title='${CSS.escape(title)}']`
     );
 
     const spotlightOptions = {

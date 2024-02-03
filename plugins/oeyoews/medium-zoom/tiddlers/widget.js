@@ -33,7 +33,8 @@ class MediumZoomWidget extends Widget {
 
     // NOTE: use this.document not document prevent export tiddlers error because fakedom
     const tiddlerNode = this.document.querySelector(
-      `[data-tiddler-title='${title}']`
+      // NOTE: if title include single/dobule quote, will cause error, should use CSS.escape
+      `[data-tiddler-title='${CSS.escape(title)}']`
     );
     // TODO: not work for mermaid svg @see-also:  https://github.com/francoischalifour/medium-zoom/issues/77
     // const images = tiddlerNode.querySelectorAll('img, svg');
