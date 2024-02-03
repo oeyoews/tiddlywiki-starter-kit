@@ -9,7 +9,14 @@
 
 * support markdown
 
+## Option
+
+<$checkbox tag="$:/tags/RawMarkup" tiddler="$:/plugins/oeyoews/tiddlywiki-prettier/scripts">
+Dont use prettier cdn(need install tiddlywiki-prettier-lib plugin)
+</$checkbox>
+
 ## TODO
 
 * support css, html, js with prettier plugins
 * support markdown-it-prettier(markdownit not support async, must use prettier 2.8.0)
+

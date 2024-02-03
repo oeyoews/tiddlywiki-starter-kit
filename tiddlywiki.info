@@ -16,6 +16,7 @@
     "tiddlywiki/highlight",
     "tiddlywiki/browser-sniff",
     "tiddlywiki/pluginlibrary",
+    "oeyoews/tiddlywiki-prettier-lib",
     "oeyoews/markdown-it-twemoji",
     "oeyoews/tiddlywiki-prettier",
     "oeyoews/tiddler-fullscreen",
