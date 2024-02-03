@@ -1,0 +1,8 @@
+title: $:/plugins/oeyoews/tiddlywiki-prettier/EditorToolbar
+caption: prettier
+condition: [<targetTiddler>]
+icon: $:/plugins/oeyoews/tiddlywiki-prettier/icon
+tags:  $:/tags/EditorToolbar
+
+
+<$action-sendmessage $message="om-prettier-tiddler" title=<<targetTiddler>> />

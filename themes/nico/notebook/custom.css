@@ -109,6 +109,9 @@ a {
   & .tc-image-tiddler-fullscreen-button {
     fill: rgb(181, 161, 252);
   }
+  & .tc-image-prettier-button {
+    fill: #f55b50;
+  }
 }
 
 /* just show btn on hover */

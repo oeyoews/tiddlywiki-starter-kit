@@ -18,27 +18,13 @@ class PrettierWidget extends Widget {
 
   render(parent, nextSibling) {
     if (!$tw.browser) return;
+    const format = require('./format');
 
     const ssr = this.document.isTiddlyWikiFakeDom;
     if (ssr) return;
 
     this.computeAttributes();
     this.execute();
-
-    if (!window.prettier) {
-      return;
-    }
-    if (!window.prettierPlugins) {
-      return;
-    }
-
-    this.prettier = window.prettier;
-    this.plugins = window.prettierPlugins;
-
-    if (!this.plugins.markdown) {
-      console.warn('Miss prettier markdown plugin');
-      return;
-    }
 
     const createElement = $tw.utils.domMaker;
 
@@ -47,7 +33,7 @@ class PrettierWidget extends Widget {
     });
 
     btn.addEventListener('click', async () => {
-      this.formatedText = await this.format('one 测试，', 'markdown');
+      this.formatedText = await format('* 测试，', 'markdown');
       console.log(this.formatedText);
     });
 
@@ -58,14 +44,7 @@ class PrettierWidget extends Widget {
     parent.insertBefore(domNode, nextSibling);
     this.domNodes.push(domNode);
   }
-  async format(text, type) {
-    const formatedText = await this.prettier.format(text, {
-      parser: type,
-      plugins: [this.plugins[type]]
-    });
-    return formatedText;
-  }
 }
 
 /** @description tiddlywiki-prettier widget */
-exports['widget-xKmqEelY6V'] = PrettierWidget;
+exports['prettier'] = PrettierWidget;
