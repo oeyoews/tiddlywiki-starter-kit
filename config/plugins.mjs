@@ -35,6 +35,7 @@ const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
 // oeyoews plugins
 const oeyoewsPlugins = [
   'markdown-it-twemoji',
+  'tiddlywiki-prettier',
   // 'mermaid-tiny', // markdown-it-mermaid 支持前，我暂时不用这个版本, 因为同时要装两个版本
   'tiddler-fullscreen',
   'mermaid-widget',
