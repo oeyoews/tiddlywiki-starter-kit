@@ -16,7 +16,6 @@ exports.startup = () => {
       event.navigateFromTitle ||
       event?.paramObject?.title ||
       event.tiddlerTitle;
-    console.log(event);
     formatTiddler(title);
   });
 };

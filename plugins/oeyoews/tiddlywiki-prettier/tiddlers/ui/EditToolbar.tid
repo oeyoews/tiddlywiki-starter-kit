@@ -6,7 +6,7 @@ caption: Prettier
 
 \whitespace trim
 <$list filter="[all[current]!is[system]type[text/markdown]]">
-<$button message="om-prettier-tiddler" tooltip="format tiddler" aria-label="prettier" class=<<tv-config-toolbar-class>>>
+<$button message="om-prettier-tiddler" tooltip="prettier tiddler" aria-label="prettier" class=<<tv-config-toolbar-class>>>
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
 {{$:/plugins/oeyoews/tiddlywiki-prettier/icon}}
 </$list>

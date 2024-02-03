@@ -21,5 +21,7 @@ module.exports = async function (title, type = 'markdown') {
   $tw.wiki.setText(title, 'text', '', formatedText, {
     suppressTimestamp: true
   });
-  $tw.notifier.display('prettier');
+  $tw.notifier.display(
+    '$:/plugins/oeyoews/tiddlywiki-prettier/notify/prettier'
+  );
 };

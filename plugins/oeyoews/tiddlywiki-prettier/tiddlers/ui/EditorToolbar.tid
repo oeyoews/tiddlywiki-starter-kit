@@ -1,8 +1,9 @@
 title: $:/plugins/oeyoews/tiddlywiki-prettier/EditorToolbar
 caption: prettier
-condition: [<targetTiddler>]
+condition: [<targetTiddler>type[text/markdown]]
 icon: $:/plugins/oeyoews/tiddlywiki-prettier/icon
 tags:  $:/tags/EditorToolbar
 
 
+<!-- TODO: use tm-focus-selector, to focus on prettier done -->
 <$action-sendmessage $message="om-prettier-tiddler" title=<<targetTiddler>> />
