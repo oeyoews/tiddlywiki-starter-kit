@@ -1011,7 +1011,7 @@
         "created": "2024-02-03",
         "dependents": "",
         "list": "readme",
-        "readme": "<center>\n<video width=\"300\" controls style=\"border-radius:8px;\">\n  <source src=\"https://github.com/oeyoews/tiddlywiki-starter-kit/assets/72405338/0733a637-c606-4df5-b505-34ea614b22ef\" type=\"video/mp4\">\n</video>\n</center>\n\n\n## Tiddlywiki Prettier\n\n* support markdown\n\n## Option\n\n<$checkbox tag=\"$:/tags/RawMarkup\" tiddler=\"$:/plugins/oeyoews/tiddlywiki-prettier/scripts\">\nDont use prettier cdn(need install tiddlywiki-prettier-lib plugin)\n</$checkbox>\n\n## TODO\n\n* support css, html, js with prettier plugins\n* support markdown-it-prettier(markdownit not support async, must use prettier 2.8.0)\n\n",
+        "readme": "<center>\n<video width=\"300\" controls style=\"border-radius:8px;\">\n  <source src=\"https://github.com/oeyoews/tiddlywiki-starter-kit/assets/72405338/0733a637-c606-4df5-b505-34ea614b22ef\" type=\"video/mp4\">\n</video>\n</center>\n\n\n## Tiddlywiki Prettier\n\n* support markdown\n\n## Option\n\n<$checkbox tag=\"$:/tags/RawMarkup\" tiddler=\"$:/plugins/oeyoews/tiddlywiki-prettier/scripts\">\nUse Prettier CDN\n</$checkbox>\n\n## TODO\n\n* support css, html, js with prettier plugins\n* support markdown-it-prettier(markdownit not support async, must use prettier 2.8.0)\n\n",
         "requires-reload": "yes"
     },
     {
