@@ -12,7 +12,7 @@ class SpotlightWidget extends Widget {
     super(parseTreeNode, options);
   }
 
-  render() {
+  render(parent) {
     if (!$tw.browser) return;
 
     this.computeAttributes();
@@ -22,31 +22,18 @@ class SpotlightWidget extends Widget {
       require('spotlight.bundle.js');
     }
 
-    const title = this.getVariable('currentTiddler');
-
-    if (!title || title.startsWith('Draft of')) return;
-
-    const tiddlerNode = document.querySelector(
-      `[data-tiddler-title='${CSS.escape(title)}']`
-    );
-
     const spotlightOptions = {
       control: 'autofit, close',
       animation: 'scale'
     };
-    // 使用事件委托，将点击事件委托给父元素 tiddlerNode
-    tiddlerNode.addEventListener('click', (event) => {
+
+    parent.addEventListener('click', (event) => {
       const target = event.target;
-      // 但是如果中间掺杂有空的p标签就不行了。
-      if (
-        target.tagName.toLowerCase() === 'img' &&
-        target.parentNode.tagName.toLowerCase() !== 'a'
-      ) {
+      if (target.tagName === 'IMG' && target.parentNode.tagName !== 'A') {
         const src = target.getAttribute('src');
         Spotlight.show([
           {
             src,
-            // title,
             ...spotlightOptions
           }
         ]);
@@ -55,8 +42,4 @@ class SpotlightWidget extends Widget {
   }
 }
 
-/**
- * @description neotw-spotlight widget
- * @param src
- */
 exports.spotlightTiddler = SpotlightWidget;

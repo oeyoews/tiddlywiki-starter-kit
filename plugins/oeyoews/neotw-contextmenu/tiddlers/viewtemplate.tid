@@ -1,0 +1,4 @@
+title: $:/plugins/oeyoews/neotw-contextmenu/viewtemplate
+tags: $:/tags/ViewTemplate
+
+<$contextMenu />

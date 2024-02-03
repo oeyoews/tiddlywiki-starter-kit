@@ -1,0 +1,88 @@
+/*\
+title: $:/plugins/oeyoews/neotw-contextmenu/listener.js
+type: application/javascript
+module-type: widget
+
+neotw-contextmenu widget
+
+\*/
+const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
+
+class ContextMenuWidget extends Widget {
+  constructor(parseTreeNode, options) {
+    super(parseTreeNode, options);
+    this.menu = null;
+  }
+
+  render(parent, nextSibling) {
+    if (!$tw.browser) return;
+
+    this.computeAttributes();
+    this.execute();
+
+    const ssr = this.document.isTiddlyWikiFakeDom;
+    if (ssr) return;
+
+    const title = this.getVariable('currentTiddler');
+    const menuNode = this.document.createElement('div');
+    this.menu = menuNode;
+
+    menuNode.id = title;
+    menuNode.style.display = 'none';
+    menuNode.style.zIndex = '9999';
+
+    parent.addEventListener('contextmenu', (event) => this.contextmenu(event));
+  }
+
+  contextmenu(event) {
+    console.log(event.pageX);
+    const menu = this.menu;
+    if (menu.style.display == 'block') {
+      this.hideMenu();
+    } else {
+      menu.style.display = 'block';
+      menu.style.left = event.pageX + 'px';
+      menu.style.top = event.pageY + 'px';
+    }
+
+    event.preventDefault();
+    return false;
+  }
+  sanitize(string) {
+    const map = {
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      '"': '&quot;',
+      "'": '&#x27;',
+      '/': '&#x2F;'
+    };
+    const reg = /[&<>"'/]/gi;
+    return string.replace(reg, (match) => map[match]);
+  }
+
+  menuClicked(event) {
+    var action = event.target.getAttribute('action');
+    var targ = event.target.getAttribute('targ');
+    let text;
+    this.hideMenu();
+
+    switch (action) {
+      case 'tm-copy-to-clipboard':
+        text = $tw.wiki.getTiddlerText(targ);
+        this.dispatchEvent({ type: action, param: text });
+        break;
+      default:
+        this.dispatchEvent({ type: action, param: targ });
+    }
+
+    event.preventDefault();
+    return false;
+  }
+
+  refresh() {
+    return false;
+  }
+}
+
+exports.contextMenu = ContextMenuWidget;
