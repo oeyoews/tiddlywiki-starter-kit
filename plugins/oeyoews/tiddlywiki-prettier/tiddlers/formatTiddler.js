@@ -16,10 +16,12 @@ module.exports = async function (title, type = 'markdown') {
   const text = $tw.wiki.getTiddlerText(title);
 
   const format = require('./format');
+  const option = require('./option');
 
   const formatedText = await format(text);
   $tw.wiki.setText(title, 'text', '', formatedText, {
-    suppressTimestamp: true
+    suppressTimestamp: true,
+    ...option
   });
   $tw.notifier.display(
     '$:/plugins/oeyoews/tiddlywiki-prettier/notify/prettier'
