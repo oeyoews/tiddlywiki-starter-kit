@@ -6,3 +6,5 @@ mask-closable: yes
 caption: subtitle content
 subtitle: {{||$:/esc}}
 ```
+
+<!-- tc-modal-centered  -->
