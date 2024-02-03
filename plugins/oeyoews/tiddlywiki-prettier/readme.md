@@ -12,7 +12,7 @@
 ## Option
 
 <$checkbox tag="$:/tags/RawMarkup" tiddler="$:/plugins/oeyoews/tiddlywiki-prettier/scripts">
-Dont use prettier cdn(need install tiddlywiki-prettier-lib plugin)
+Use Prettier CDN
 </$checkbox>
 
 ## TODO
