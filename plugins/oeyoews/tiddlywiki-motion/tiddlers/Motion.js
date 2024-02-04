@@ -9,6 +9,7 @@ module.exports = class Motion {
     this.prefix = '$:/plugins/oeyoews/tiddlywiki-motion';
     this.selectedStateTiddlerTitle =
       '$:/state/plugins/oeyoews/tiddlywiki-motion/selected';
+    this.shortcuts = null;
   }
   init() {
     require('./library/mousetrap.min.js');
@@ -21,7 +22,100 @@ module.exports = class Motion {
       'th-closing-tiddler',
       this.handleClosingTiddler.bind(this)
     );
-    const shortcuts = {
+
+    this.shortcuts = this.getShortcuts();
+
+    // bindings
+    const shortcutsArray = Object.entries(this.shortcuts);
+    shortcutsArray.forEach(([name, handler]) => {
+      const shortcut = this.getSetting(`Shortcuts/${name}/Key`);
+      Mousetrap.bind(shortcut, handler);
+    });
+  }
+
+  /* some aid method */
+  getSetting(name) {
+    return $tw.wiki.getTiddlerText(this.getPluginTitle(`config/${name}`));
+  }
+
+  getPluginTitle(title) {
+    return `${this.prefix}/${title}`;
+  }
+
+  handleClosingTiddler(event) {
+    const selectedTiddler = $tw.wiki.getTiddlerText(
+      this.selectedStateTiddlerTitle
+    );
+    if (event.param == selectedTiddler) {
+      $tw.wiki.deleteTiddler(this.selectedStateTiddlerTitle);
+    }
+    return event;
+  }
+
+  toggleTiddler(title) {
+    if ($tw.wiki.getTiddlerText(`$:/state/folded/${title}`) == 'hide') {
+      this.unfoldTiddler(title);
+    } else {
+      this.foldTiddler(title);
+    }
+  }
+
+  foldTiddler(title) {
+    $tw.wiki.setText(`$:/state/folded/${title}`, 'text', null, 'hide');
+  }
+
+  unfoldTiddler(title) {
+    $tw.wiki.deleteTiddler(`$:/state/folded/${title}`);
+  }
+  toggleLayout(
+    targetLayout = '$:/plugins/oeyoews/neotw/modules/landing/layout'
+  ) {
+    const layout = $tw.wiki.getTiddlerText('$:/layout');
+    const vanillaLayout = '$:/core/ui/PageTemplate';
+    if (layout == vanillaLayout) {
+      $tw.wiki.setText('$:/layout', 'text', null, targetLayout);
+    }
+    if (layout == targetLayout) {
+      $tw.wiki.setText('$:/layout', 'text', null, vanillaLayout);
+    }
+  }
+  // toggle notebook-sidebar
+  toggleSidebar(session = 'Recent') {
+    if ($tw.wiki.getTiddlerText(`$:/state/notebook-sidebar`) == 'yes') {
+      $tw.wiki.setText(`$:/state/notebook-sidebar`, 'text', null, 'no');
+    } else {
+      $tw.wiki.setText(`$:/state/notebook-sidebar`, 'text', null, 'yes');
+      $tw.wiki.setText(
+        `$:/state/notebook-sidebar-section`,
+        'text',
+        null,
+        '$:/core/ui/SideBar/' + session
+      );
+    }
+  }
+  getNavigatorWidget(widget) {
+    const child = widget.children[0];
+    if (child.parseTreeNode.type == 'navigator') {
+      return child;
+    }
+    return this.getNavigatorWidget(child);
+  }
+  getTiddlerElement(title) {
+    return document.querySelector(
+      `[data-tiddler-title="${CSS.escape(title)}"]`
+    );
+  }
+  focusTiddler(title) {
+    const focusedTitle = this.getTiddlerElement(title);
+    const focusSelected = this.getSetting('FocusSelected');
+    if (focusedTitle && focusSelected === 'true') {
+      focusedTitle.tabIndex = -1;
+      focusedTitle.focus();
+    }
+  }
+
+  getShortcuts() {
+    return {
       ShowHelp: () => {
         this.navigatorWidget.dispatchEvent({
           type: 'tm-modal',
@@ -324,84 +418,5 @@ module.exports = class Motion {
         $tw.wiki.deleteTiddler(this.selectedStateTiddlerTitle);
       }
     };
-    for (const [name, handler] of Object.entries(shortcuts)) {
-      const shortcut = this.getSetting(`Shortcuts/${name}/Key`);
-      Mousetrap.bind(shortcut, handler);
-    }
-  } // int end
-  /* some aid method */
-  getSetting(name) {
-    return $tw.wiki.getTiddlerText(this.getPluginTitle(`config/${name}`));
-  }
-  getPluginTitle(title) {
-    return `${this.prefix}/${title}`;
-  }
-  handleClosingTiddler(event) {
-    const selectedTiddler = $tw.wiki.getTiddlerText(
-      this.selectedStateTiddlerTitle
-    );
-    if (event.param == selectedTiddler) {
-      $tw.wiki.deleteTiddler(this.selectedStateTiddlerTitle);
-    }
-    return event;
-  }
-  toggleTiddler(title) {
-    if ($tw.wiki.getTiddlerText(`$:/state/folded/${title}`) == 'hide') {
-      this.unfoldTiddler(title);
-    } else {
-      this.foldTiddler(title);
-    }
-  }
-  foldTiddler(title) {
-    $tw.wiki.setText(`$:/state/folded/${title}`, 'text', null, 'hide');
-  }
-  unfoldTiddler(title) {
-    $tw.wiki.deleteTiddler(`$:/state/folded/${title}`);
-  }
-  toggleLayout(
-    targetLayout = '$:/plugins/oeyoews/neotw/modules/landing/layout'
-  ) {
-    const layout = $tw.wiki.getTiddlerText('$:/layout');
-    const vanillaLayout = '$:/core/ui/PageTemplate';
-    if (layout == vanillaLayout) {
-      $tw.wiki.setText('$:/layout', 'text', null, targetLayout);
-    }
-    if (layout == targetLayout) {
-      $tw.wiki.setText('$:/layout', 'text', null, vanillaLayout);
-    }
-  }
-  // toggle notebook-sidebar
-  toggleSidebar(session = 'Recent') {
-    if ($tw.wiki.getTiddlerText(`$:/state/notebook-sidebar`) == 'yes') {
-      $tw.wiki.setText(`$:/state/notebook-sidebar`, 'text', null, 'no');
-    } else {
-      $tw.wiki.setText(`$:/state/notebook-sidebar`, 'text', null, 'yes');
-      $tw.wiki.setText(
-        `$:/state/notebook-sidebar-section`,
-        'text',
-        null,
-        '$:/core/ui/SideBar/' + session
-      );
-    }
-  }
-  getNavigatorWidget(widget) {
-    const child = widget.children[0];
-    if (child.parseTreeNode.type == 'navigator') {
-      return child;
-    }
-    return this.getNavigatorWidget(child);
-  }
-  getTiddlerElement(title) {
-    return document.querySelector(
-      `[data-tiddler-title="${CSS.escape(title)}"]`
-    );
-  }
-  focusTiddler(title) {
-    const focusedTitle = this.getTiddlerElement(title);
-    const focusSelected = this.getSetting('FocusSelected');
-    if (focusedTitle && focusSelected === 'true') {
-      focusedTitle.tabIndex = -1;
-      focusedTitle.focus();
-    }
   }
 };
