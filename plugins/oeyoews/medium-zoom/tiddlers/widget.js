@@ -28,6 +28,7 @@ class MediumZoomWidget extends Widget {
     }
 
     const images = parent.querySelectorAll('img');
+    if(!images) return;
 
     const filteredImages = Array.from(images).filter((item) => {
       const tagName = item.parentElement.tagName;
