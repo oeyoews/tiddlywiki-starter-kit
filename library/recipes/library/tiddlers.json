@@ -53,7 +53,7 @@
         "core-version": ">=5.3.0",
         "description": "Command palette",
         "plugin-type": "plugin",
-        "version": "0.1.1",
+        "version": "0.1.2",
         "list": "readme",
         "dependents": "",
         "type": "application/json",
