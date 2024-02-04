@@ -1,4 +1,4 @@
-title: $:/plugins/oeyoews/motion/README
+title: $:/plugins/oeyoews/tiddlywiki-motion/README
 
 <div class="prose max-w-none">
 
@@ -8,7 +8,7 @@ Vim-like keyboard shortcuts for TiddlyWiki. modified `based benwebber/motion`
 
 !! Usage
 
-Press <kbd>{{$:/plugins/oeyoews/motion/config/Shortcuts/ShowHelp/Key}}</kbd> to show keyboard shortcuts.
+Press <kbd>{{$:/plugins/oeyoews/tiddlywiki-motion/config/Shortcuts/ShowHelp/Key}}</kbd> to show keyboard shortcuts.
 
 !! NOTE
 

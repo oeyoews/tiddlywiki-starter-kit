@@ -6,22 +6,10 @@
       "fields": {
         "title": {
           "source": "filename",
-          "prefix": "$:/plugins/oeyoews/motion/modules/library/"
+          "prefix": "$:/plugins/oeyoews/tiddlywiki-motion/library/"
         },
         "type": "application/javascript",
         "module-type": "library"
-      }
-    },
-    {
-      "path": "startup",
-      "filesRegExp": "^.*\\.min.js$",
-      "fields": {
-        "title": {
-          "source": "filename",
-          "prefix": "$:/plugins/oeyoews/motion/modules/startup/"
-        },
-        "type": "application/javascript",
-        "module-type": "startup"
       }
     }
   ]

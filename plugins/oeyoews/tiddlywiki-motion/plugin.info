@@ -1,5 +1,5 @@
 {
-  "title": "$:/plugins/oeyoews/motion",
+  "title": "$:/plugins/oeyoews/tiddlywiki-motion",
   "name": "motion",
   "description": "Vim-like keyboard shortcuts for TiddlyWiki",
   "author": "oeyoews",
