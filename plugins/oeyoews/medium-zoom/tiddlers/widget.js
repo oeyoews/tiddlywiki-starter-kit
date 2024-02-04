@@ -27,7 +27,7 @@ class MediumZoomWidget extends Widget {
       window.mediumZoom = require('./medium-zoom.min.js');
     }
 
-    const images = parent.querySelectorAll('img');
+    const images = parent?.querySelectorAll('img');
     if(!images) return;
 
     const filteredImages = Array.from(images).filter((item) => {
