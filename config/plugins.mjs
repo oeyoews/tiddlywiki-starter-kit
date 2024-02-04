@@ -11,7 +11,6 @@ const localPlugins = [
 ];
 
 const onlinePlugins = [
-  // 'oeyoews/tiddlywiki-readonly',
   'oeyoews/tiddlywiki-github-share',
   'oeyoews/neotw-notranslate'
 ];
