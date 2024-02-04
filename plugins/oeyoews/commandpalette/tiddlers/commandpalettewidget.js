@@ -757,8 +757,8 @@ class CommandPaletteWidget extends Widget {
       this.previouslyFocused.caretPos
     );
 
-    // 打开命令面板时，启用滚动
-    document.body.style.overflow = 'auto';
+    // close命令面板时，启用滚动
+    document.body.style.overflow = '';
   }
   onKeyDown(e) {
     if (e.key === 'Escape') {
