@@ -1,12 +1,12 @@
 title: $:/plugins/oeyoews/neotw-popup-preview/modal
-class: o-tm tc-modal-centered
+class: o-tm tc-modal-centered o-tm-preview
 mask-closable: yes
 subtitle: {{||$:/esc}}
 caption:
 type:
 preview:
 
-\import [[$:/core/ui/PageMacros]] [all[shadows+tiddlers]tag[$:/tags/Macro]!has[draft.of]]
+<!-- \import [[$:/core/ui/PageMacros]] [all[shadows+tiddlers]tag[$:/tags/Macro]!has[draft.of]]
 
 <$vars
   tv-config-toolbar-icons={{$:/config/Toolbar/Icons}}
@@ -15,6 +15,6 @@ preview:
   tv-enable-drag-and-drop={{$:/config/DragAndDrop/Enable}}
   tv-show-missing-links={{$:/config/MissingLinks}}
   storyviewTitle={{$:/view}}
-  languageTitle={{{ [{$:/language}get[name]] }}}>
+  languageTitle={{{ [{$:/language}get[name]] }}}> -->
 
-{{{ [<currentTiddler>get[preview]] ||$:/core/ui/ViewTemplate }}}
+{{{ [<currentTiddler>get[preview]] ||$:/plugins/oeyoews/neotw-popup-preview/preview-template }}}
