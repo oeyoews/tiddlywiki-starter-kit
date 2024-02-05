@@ -11,7 +11,7 @@ const localPlugins = [
 ];
 
 const onlinePlugins = [
-  'neotw-error-better',
+  'oeyoews/neotw-error-better',
   'oeyoews/tiddlywiki-github-share',
   'oeyoews/neotw-notranslate'
 ];
