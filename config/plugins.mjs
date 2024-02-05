@@ -11,6 +11,7 @@ const localPlugins = [
 ];
 
 const onlinePlugins = [
+  'neotw-error-better',
   'oeyoews/tiddlywiki-github-share',
   'oeyoews/neotw-notranslate'
 ];
@@ -33,7 +34,6 @@ const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
 
 // oeyoews plugins
 const oeyoewsPlugins = [
-  'neotw-error-better',
   // 'tiddlywiki-files',
   'neotw-popup-preview',
   // 'neotw-contextmenu',
