@@ -33,6 +33,8 @@ const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
 
 // oeyoews plugins
 const oeyoewsPlugins = [
+  'neotw-error-better',
+  // 'tiddlywiki-files',
   'neotw-popup-preview',
   // 'neotw-contextmenu',
   'tiddlywiki-prettier-lib',
