@@ -62,7 +62,7 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: output
-          path: output
+          path: ./.tiddlywiki
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
