@@ -16,6 +16,7 @@
     "tiddlywiki/highlight",
     "tiddlywiki/browser-sniff",
     "tiddlywiki/pluginlibrary",
+    "oeyoews/neotw-tour",
     "oeyoews/neotw-popup-preview",
     "oeyoews/tiddlywiki-prettier-lib",
     "oeyoews/markdown-it-twemoji",

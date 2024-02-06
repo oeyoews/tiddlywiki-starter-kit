@@ -11,8 +11,7 @@
     "element": ".tc-tiddler-title",
     "popover": {
       "title": "Tiddler Title",
-      "description": "Tiddler Title",
-      "position": "right"
+      "description": "Tiddler Title"
     }
   },
   {

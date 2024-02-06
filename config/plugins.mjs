@@ -34,6 +34,7 @@ const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
 
 // oeyoews plugins
 const oeyoewsPlugins = [
+  'neotw-tour',
   // 'tiddlywiki-files',
   'neotw-popup-preview',
   // 'neotw-contextmenu',
