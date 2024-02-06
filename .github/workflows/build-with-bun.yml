@@ -64,6 +64,7 @@ jobs:
       #     name: output
       #     path: ./.tiddlywiki
 
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
@@ -71,3 +72,6 @@ jobs:
           publish_branch: gh-pages
           publish_dir: |
             ./.tiddlywiki
+
+      # - name: create-neotw-app-test
+      #   run: pnpm dlx create-neotw-app
