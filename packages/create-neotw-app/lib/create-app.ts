@@ -18,7 +18,8 @@ export default async function createApp() {
   // await notifyUpdate();
   const user = 'oeyoews';
   const repo = 'tiddlywiki-starter-kit';
-  const initial = `${user}/${repo}`;
+  const branch = 'template';
+  const initial = `${user}/${repo}${branch}`;
   const { template } = await prompts({
     onState: onPromptState,
     type: 'select',
