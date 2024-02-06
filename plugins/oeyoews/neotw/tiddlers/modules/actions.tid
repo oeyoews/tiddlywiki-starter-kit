@@ -8,8 +8,10 @@ title: $:/plugins/oeyoews/neotw/modules/landing/layout-url
   <$action-sendmessage $message="tm-modal" $param="FileWarning"/>
 </$list> -->
 
+<$let layout={{{ [{$:/info/url/search}match[?layout=neotw]] }}} >
+
 <!-- announcement -->
-<$list filter="[{$:/info/url/search}match[?announcement=yes]]">
+<$list filter="[<layout>match[?announcement=yes]]">
   <$action-sendmessage $message="tm-modal" $param="announcement"/>
 </$list>
 
@@ -19,16 +21,17 @@ title: $:/plugins/oeyoews/neotw/modules/landing/layout-url
 <!-- </$list> -->
 
 <!-- for neotw layout -->
-<$list filter="[{$:/info/url/search}match[?layout=neotw]]">
+
+<$list filter="[<layout>match[?layout=neotw]]">
   <$action-setfield $tiddler="$:/layout" text="$:/plugins/oeyoews/neotw/Layout"/>
 </$list>
 
-<$list filter="[{$:/info/url/search}match[?layout=tailwindcss]]">
+<$list filter="[<layout>match[?layout=tailwindcss]]">
   <$action-setfield $tiddler="$:/layout" text="$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus/Layout"/>
 </$list>
 
 <!-- for landing layout -->
-<$list filter="[{$:/info/url/search}match[?layout=lockscreen]]">
+<$list filter="[<layout>match[?layout=lockscreen]]">
   <$action-setfield $tiddler="$:/layout" text="$:/plugins/oeyoews/neotw/modules/landing/layout"/>
 </$list>
 
@@ -36,18 +39,20 @@ title: $:/plugins/oeyoews/neotw/modules/landing/layout-url
 <!--   <$action-setfield $tiddler="$:/layout" text="$:/plugins/oeyoews/neotw/modules/landing/layout"/> -->
 <!-- </$list> -->
 
-<$list filter="[{$:/info/url/search}match[?layout=0]]">
+<$list filter="[<layout>match[?layout=0]]">
   <$action-setfield $tiddler="$:/layout" text="$:/plugins/oeyoews/neotw/modules/landing/layout"/>
 </$list>
 
-<$list filter="[{$:/info/url/search}prefix[?filter=temp]]">
+<$list filter="[<layout>prefix[?filter=temp]]">
   <$action-setfield $tiddler="$:/DefaultTiddlers" text="[field:temp[yes]!sort[modified]]"/>
 </$list>
 
-<$list filter="[{$:/info/url/search}prefix[?filter=oeyoews]]">
+<$list filter="[<layout>prefix[?filter=oeyoews]]">
   <$action-setfield $tiddler="$:/DefaultTiddlers" text="[[oeyoews]]"/>
 </$list>
 
-<$list filter="[{$:/info/url/search}prefix[?filter=articles]]">
+<$list filter="[<layout>prefix[?filter=articles]]">
   <$action-setfield $tiddler="$:/DefaultTiddlers" text="[field:publish[article]!sort[modified]]"/>
 </$list>
+
+</$let>
