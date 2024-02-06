@@ -14,17 +14,19 @@ fill:$(foregroundColor)$;
 <div class="tc-tiddler-title text-center mb-8">
 <div class="tc-titlebar">
 <span class="tc-tiddler-controls float-none flex justify-end text-lg mb-4">
-<%if [{$:/info/url/protocol}match[http:]] %>
+<$let env={{{ [[$:/info/url/protocol]get[text]] }}}>
+<%if [<env>match[http:]] %>
   <$list filter="[all[shadows+tiddlers]tag[$:/tags/ViewToolbar]!has[draft.of]] :filter[lookup[$:/config/ViewToolbarButtons/Visibility/]!match[hide]]" storyview="pop" variable="listItem">
   <$set name="tv-config-toolbar-class" filter="[<tv-config-toolbar-class>] [<listItem>encodeuricomponent[]addprefix[tc-btn-]]"><$transclude tiddler=<<listItem>>/></$set>
   </$list>
-<%elseif [{$:/info/url/protocol}match[https:]] %>
+<%elseif [<env>match[https:]] %>
   <$list filter="[[$:/core/ui/Buttons/permalink]] [[$:/core/ui/Buttons/close]]" storyview="pop" variable="listItem">
   <$set name="tv-config-toolbar-class" filter="[<tv-config-toolbar-class>] [<listItem>encodeuricomponent[]addprefix[tc-btn-]]">
   <$transclude tiddler=<<listItem>>/>
   </$set>
   </$list>
 <%endif %>
+</$let>
 </span>
 <$set name="tv-wikilinks" value={{$:/config/Tiddlers/TitleLinks}}>
 <$link>
