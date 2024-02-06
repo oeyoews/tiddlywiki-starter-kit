@@ -18,7 +18,7 @@ jobs:
           cp -r * /tmp/TSKPL
           find . -maxdepth 1 ! -name .git -exec cp -r -t /tmp/TSKPL/ {} +
           mv /tmp/TSKPL upload
-          rm -rf upload/.git upload/.github upload/dev upload/template
+          rm -rf upload/.git upload/.github upload/dev upload/templates upload/packages/create-neotw-app/ upload/packages/create-tw-apps
 
       - name: Install Node.js
         uses: actions/setup-node@v3
