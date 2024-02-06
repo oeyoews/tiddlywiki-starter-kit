@@ -70,7 +70,7 @@ export default async function createApp() {
           chalk.cyan(
             'cd ' +
               chalk.green.underline(targetDir) +
-              ' && pnpm install && pnpm dev\n'
+              ' && pnpm install --only=prod && pnpm dev\n'
           )
         );
         process.exit(0);
