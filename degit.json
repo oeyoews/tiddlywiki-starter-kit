@@ -10,7 +10,6 @@
       "pnpm-lock.yaml",
       ".gitignore",
       "public",
-      ".codesanbox",
       "templates",
       "packages/create-neotw-app/",
       "packages/create-tw-apps/"

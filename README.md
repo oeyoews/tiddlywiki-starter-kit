@@ -12,6 +12,8 @@
 
 <hr>
 
+[stackblitz online demo](https://stackblitz.com/~/github.com/oeyoews/tiddlywiki-starter-kit)
+
 ## Features
 
 - 📦 Out of the box: TiddlyWiki Starter Kit comes with most configurations pre-packaged, reducing the need for tedious setup.
