@@ -108,6 +108,7 @@
       "[publish[blog]]"
     ],
     "index": [
+      "--verbose",
       "--output",
       ".tiddlywiki",
       "--deletetiddlers",

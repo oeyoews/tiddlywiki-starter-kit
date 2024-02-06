@@ -11,7 +11,7 @@ import { checkGitInstallation } from './check-git';
 // @ts-ignore
 import tiged from 'tiged';
 
-const spinner = ora('Loading ...');
+const spinner = ora('processing ...');
 
 export default async function createApp() {
   checkGitInstallation();
@@ -24,7 +24,7 @@ export default async function createApp() {
     type: 'select',
     name: 'template',
     message: 'Select template',
-    choices: [{ title: initial, value: initial }],
+    choices: [{ title: initial, value: initial }]
   });
   let targetDir: string;
   const { projectName } = await prompts({
@@ -42,7 +42,7 @@ export default async function createApp() {
       }
       return true;
     },
-    initial,
+    initial
   });
 
   targetDir = projectName.trim();
@@ -50,28 +50,33 @@ export default async function createApp() {
   const { confirm } = await prompts({
     type: 'confirm',
     name: 'confirm',
-    message: `Do you want to clone ${template}?`,
+    message: `Do you want to clone ${template}?`
   });
 
   // 仓库路径
   const emitter = tiged(initial, {
     disableCache: true,
     force: true,
-    verbose: false,
+    verbose: false
   });
 
-  confirm &&
-    spinner.start() &&
-    // 仓库克隆到本地的路径
-    emitter.clone(path.resolve('.', targetDir)).then(() => {
-      spinner.succeed(chalk.green(`Cloned ${initial} to ${targetDir}\n`));
-      spinner.succeed(
-        chalk.cyan(
-          'cd ' +
-            chalk.green.underline(targetDir) +
-            ' && pnpm install && pnpm dev\n',
-        ),
-      );
-      process.exit(0);
-    });
+  if (confirm) {
+    spinner.start();
+
+    try {
+      emitter.clone(path.resolve('.', targetDir)).then(() => {
+        spinner.succeed(chalk.green(`Cloned ${initial} to ${targetDir}\n`));
+        spinner.succeed(
+          chalk.cyan(
+            'cd ' +
+              chalk.green.underline(targetDir) +
+              ' && pnpm install && pnpm dev\n'
+          )
+        );
+        process.exit(0);
+      });
+    } catch (e) {
+      console.log(e);
+    }
+  }
 }

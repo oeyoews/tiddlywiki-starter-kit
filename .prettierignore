@@ -8,5 +8,5 @@ files/
 .github/
 src/
 dev/
-packages/
+# packages/
 .codesanbox/
