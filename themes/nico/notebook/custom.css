@@ -47,11 +47,6 @@ blockquote > div {
   margin: 4px 1px;
 }
 
-/* remove story border */
-.tc-tiddler-frame {
-  border: 0;
-}
-
 /* remove editor border */
 .tc-editor-toolbar button,
 .tc-editor-toolbar button.tc-btn-invisible {

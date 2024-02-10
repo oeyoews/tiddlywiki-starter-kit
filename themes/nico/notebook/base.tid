@@ -645,3 +645,15 @@ div.tc-tab-buttons button.tc-tab-selected {
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
 .nc-bottombar, .nc-sidebar { display: none; }
 </$list>
+
+<$let dark={{{ [[$:/palette]get[text]get[color-scheme]else[light]] }}} >
+<% if [<dark>match[dark]] %>
+.tc-tiddler-frame {
+  border: 1px solid #444c56;
+}
+<% elseif [<dark>match[light]] %>
+.tc-tiddler-frame {
+  border: 0;
+}
+<% endif %>
+</$let>
