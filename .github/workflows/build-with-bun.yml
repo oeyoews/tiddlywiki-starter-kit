@@ -18,7 +18,7 @@ jobs:
     # https://github.blog/changelog/2024-01-30-github-actions-introducing-the-new-m1-macos-runner-available-to-open-source/
     # runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
       - uses: oven-sh/setup-bun@v1
         with:
           bun-version: latest
