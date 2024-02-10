@@ -1,0 +1,63 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 'latest'
+          run_install: false
+
+      - name: Get pnpm store directory
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+      - uses: actions/cache@v4
+        name: Setup pnpm cache
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install pnpm dependencies
+        run: pnpm install
+
+      - name: Restore Plugin Cache
+        uses: actions/checkout@v4
+        with:
+          ref: cache
+          path: cache
+          fetch-depth: 1
+
+      - name: Build Library
+        run: pnpm run build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: ./.tiddlywiki
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
