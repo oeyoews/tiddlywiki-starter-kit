@@ -4,8 +4,6 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
-  # schedule:
-  #   - cron: "0 0 * * *"
 
 permissions:
   contents: write
@@ -18,7 +16,7 @@ jobs:
     # https://github.blog/changelog/2024-01-30-github-actions-introducing-the-new-m1-macos-runner-available-to-open-source/
     # runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: oven-sh/setup-bun@v1
         with:
           bun-version: latest
@@ -27,8 +25,7 @@ jobs:
         run: bun install # --production
 
       - name: Build Page
-        run: |
-          bun run build
+        run: bun run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
