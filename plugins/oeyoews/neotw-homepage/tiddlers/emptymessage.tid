@@ -57,13 +57,12 @@ title: $:/config/EmptyStoryMessage
 
 
 <$list filter="[{$:/info/url/protocol}match[https:]]">
-  <center>
-    <h2>近期更新动态</h2>
     <% if [{$:/info/browser/is/mobile}match[no]] %>
-      <!-- <$cards /> -->
+    <center>
+     <h2>近期更新动态</h2>
       <<ninecards>>
+    </center>
       <% else %>
-        移动端不显示近期更新动态卡片
-        <% endif %>
-  </center>
+    {{recent-count}}
+      <% endif %>
 </$list>
