@@ -7,7 +7,8 @@ module-type: global
 
 class LazyImageLoader {
   constructor() {
-    this.dynamicClassed = 'scale-105 blur-md bg-black/10 cursor-wait';
+    this.dynamicClassed =
+      'scale-105 blur-none md:blur-md bg-black/10 cursor-wait'; // 移动端上 blur 效果不能及时移除
     this.dataSrc = 'data-src';
 
     this.imageCallback = this.imageCallback.bind(this);
