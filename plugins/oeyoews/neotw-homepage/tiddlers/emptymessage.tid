@@ -57,12 +57,10 @@ title: $:/config/EmptyStoryMessage
 
 
 <$list filter="[{$:/info/url/protocol}match[https:]]">
-    <% if [{$:/info/browser/is/mobile}match[no]] %>
-    <center>
+    <center class="hidden md:block">
      <h2>近期更新动态</h2>
       <<ninecards>>
     </center>
-      <% else %>
+
     {{recent-count}}
-      <% endif %>
 </$list>
