@@ -69,7 +69,7 @@ const oeyoewsPlugins = [
   'neotw-fetch',
   'qrcode',
   'hitokoto',
-  // 'neotw-image-better', 移动端样式有问题
+  // 'neotw-image-better',
   'notify',
   'NPL',
   'neotw-spotlight',
