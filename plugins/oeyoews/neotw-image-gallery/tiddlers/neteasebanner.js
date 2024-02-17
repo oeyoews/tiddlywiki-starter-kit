@@ -17,10 +17,15 @@ class BannersWidget extends Widget {
 
   async render(parent, nextSibling) {
     if (!$tw.browser) return;
-    this.parentDomNode = parent;
+
+    const ssr = this.document.isTiddlyWikiFakeDom;
+    if (ssr) return;
+
     this.computeAttributes();
     this.execute();
+
     const createElement = $tw.utils.domMaker;
+
     // NOTE: tw 支持基于 tw 内部路由，但是仅仅支持 js with module-type library(json not support)
     // const twimageobserver = require('$:/plugins/oeyoews/neotw-notion-gallery/twimageobserver.js');
     // const twimageobserver = require('../neotw-notion-gallery/twimageobserver.js');
@@ -30,6 +35,7 @@ class BannersWidget extends Widget {
     const loading = createElement('div', {
       class: 'bg-gray-200 rounded w-full h-48 animate-pulse'
     });
+
     parent.insertBefore(loading, nextSibling);
     this.domNodes.push(loading);
 

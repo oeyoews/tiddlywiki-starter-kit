@@ -50,6 +50,7 @@ const oeyoewsPlugins = [
   'medium-zoom',
   'blockquote',
   'editor-preview-resizer',
+  'double-click-edit',
   'confetti-background',
   'confetti',
   'image-observer',

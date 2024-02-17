@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/double-click-edit/viewtemplate
+tags: $:/tags/ViewTemplate
+
+<% if [all[current]!is[system]] %>
+	<$edit-dbclick />
+<% endif %>
