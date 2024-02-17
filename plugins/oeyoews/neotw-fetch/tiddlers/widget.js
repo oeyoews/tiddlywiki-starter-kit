@@ -46,15 +46,15 @@ class FetchWidget extends Widget {
     progress.start();
 
     const text = await getText(url);
-    this.removeChildDomNodes(loading);
 
     const domNode = this.document.createElement('div');
     const textContent = $tw.wiki.renderText('text/html', 'text/markdown', text);
     domNode.innerHTML = textContent;
     progress.done();
 
-    parent.insertBefore(domNode, nextSibling);
-    this.domNodes.push(domNode);
+    parent.insertBefore(domNode, loading);
+    this.removeChildDomNodes(loading);
+    // this.domNodes.push(domNode);
   }
 
   refresh() {

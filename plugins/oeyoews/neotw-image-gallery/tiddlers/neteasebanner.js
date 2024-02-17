@@ -34,7 +34,6 @@ class BannersWidget extends Widget {
     this.domNodes.push(loading);
 
     const data = await neteasefetcher();
-    this.removeChildDomNodes(loading);
 
     const children = [];
 
@@ -48,7 +47,8 @@ class BannersWidget extends Widget {
       class: 'grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4',
       children
     });
-    parent.insertBefore(domNode, nextSibling);
+    parent.insertBefore(domNode, loading);
+    this.removeChildDomNodes(loading);
     this.domNodes.push(domNode);
   }
 }
