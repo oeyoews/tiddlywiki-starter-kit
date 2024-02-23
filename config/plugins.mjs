@@ -51,6 +51,7 @@ const oeyoewsPlugins = [
   'blockquote',
   'editor-preview-resizer',
   'double-click-edit',
+  'table-style-fix',
   'confetti-background',
   'confetti',
   'image-observer',
