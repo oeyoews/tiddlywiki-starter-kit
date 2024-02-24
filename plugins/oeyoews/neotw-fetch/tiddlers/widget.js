@@ -46,6 +46,7 @@ class FetchWidget extends Widget {
     progress.start();
 
     const text = await getText(url);
+    console.log(text, !text);
     if (!text) {
       this.removeChildDomNodes(loading);
       return;
@@ -57,7 +58,6 @@ class FetchWidget extends Widget {
     progress.done();
 
     parent.insertBefore(domNode, loading);
-    this.domNodes.push(domNode);
     this.removeChildDomNodes(loading);
   }
 
