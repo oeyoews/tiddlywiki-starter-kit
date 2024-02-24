@@ -548,7 +548,7 @@ div.tc-tab-buttons {
 
 div.tc-tab-buttons button {
   font-weight: bold;
-  font-size: 1.2em;
+  <!-- font-size: 1.2em; -->
   line-height: 1em;
   padding: .6em .8em .4em .8em;
   border: 0;
