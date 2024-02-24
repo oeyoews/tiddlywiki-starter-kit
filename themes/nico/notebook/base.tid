@@ -566,6 +566,7 @@ div.tc-tab-buttons button.tc-tab-selected {
   border: 0;
   background: transparent;
   border-bottom: 4px solid <<colour primary>>;
+  border-radius: 4px;
 }
 
 /* Dropdowns */
