@@ -40,6 +40,10 @@ class BannersWidget extends Widget {
     this.domNodes.push(loading);
 
     const data = await neteasefetcher();
+    if (!data) {
+      this.removeChildDomNodes(loading);
+      return;
+    }
 
     const children = [];
 

@@ -30,10 +30,11 @@ exports.addfile = async (url, filename, type = 'text') => {
 exports.getText = async (url) => {
   try {
     const res = await fetch(url);
-    if (!res.ok) return;
+    if (!res.ok) {
+      return;
+    }
     return await res.text();
   } catch (error) {
     console.error(error);
-    return;
   }
 };

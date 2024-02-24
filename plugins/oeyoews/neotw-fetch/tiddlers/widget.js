@@ -46,6 +46,10 @@ class FetchWidget extends Widget {
     progress.start();
 
     const text = await getText(url);
+    if (!text) {
+      this.removeChildDomNodes(loading);
+      return;
+    }
 
     const domNode = this.document.createElement('div');
     const textContent = $tw.wiki.renderText('text/html', 'text/markdown', text);
@@ -53,8 +57,8 @@ class FetchWidget extends Widget {
     progress.done();
 
     parent.insertBefore(domNode, loading);
+    this.domNodes.push(domNode);
     this.removeChildDomNodes(loading);
-    // this.domNodes.push(domNode);
   }
 
   refresh() {
