@@ -17,9 +17,8 @@ tags: $:/tags/Stylesheet
 
 \define sidebarPosition() {{{ [[$:/themes/nico/notebook/metrics/sidebar-position]get[position]else[right]] }}}
 
-/* Top and bottom bars */
-
-/* Hide the top-right bar */
+<!-- /* Top and bottom bars */ -->
+<!-- /* Hide the top-right bar */ -->
 .tc-topbar.tc-topbar-right {
   display: none;
 }
@@ -162,8 +161,7 @@ input[type="search"]::-webkit-search-cancel-button {
   }
 }
 
-/* Sidebar */
-
+<!-- /* Sidebar */ -->
 <!-- TODO: overwrite this effect  -->
 @keyframes sidebar-appear {
   0%   {
@@ -326,8 +324,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 """>>
 
-/* Animate the hamburger button */
-
+<!-- /* Animate the hamburger button */ -->
 @keyframes menu-bars-1 {
   0%   {}
   100% {
@@ -350,12 +347,12 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .sidebar-toggle {
-  /* position: fixed; */
+<!--   /* position: fixed; */
   /* top: 6px; */
   /* left: 6px; */
-  z-index: 600;
   /* padding: 4px; */
-  /* border-radius: 8px; */
+  /* border-radius: 8px; */ -->
+  z-index: 600;
   margin-right: 10px;
   transition: all ease-in-out .2s;
   fill: <<colour sidebar-controls-foreground>>;
@@ -366,13 +363,13 @@ input[type="search"]::-webkit-search-cancel-button {
   fill: <<colour sidebar-controls-foreground-hover>>;
 }
 
-/* @media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) { */
+<!-- /* @media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) { */
 /*   .sidebar-toggle { */
 /*     top: auto; */
 /*     bottom: 10px; */
 /*     left: 10px; */
 /*   } */
-/* } */
+/* } */ -->
 
 .sidebar-toggle .bars .bar {
     transform: rotate(0) translateY(0) translateX(0);
@@ -404,8 +401,7 @@ input[type="search"]::-webkit-search-cancel-button {
   }
 }
 
-/* Inputs */
-
+<!-- /* Inputs */ -->
 input, textarea {
   transition: border .14s ease-in-out;
   background: <<colour tiddler-editor-background>>;
@@ -501,8 +497,7 @@ button.tc-tag-label, span.tc-tag-label {
   padding: 0.3em 1em !important;
 }
 
-/* Fonts */
-
+<!-- /* Fonts */ -->
 html, body {
   font-family: {{$:/themes/nico/notebook/settings/fontfamily}};
 }
@@ -540,8 +535,7 @@ div.tc-tiddler-frame .tc-tiddler-body {
   line-height: {{$:/themes/nico/notebook/metrics/bodylineheight}};
 }
 
-/* Tabs */
-
+<!-- /* Tabs */ -->
 div.tc-tab-buttons {
   margin-bottom: -4px;
 }
@@ -569,8 +563,7 @@ div.tc-tab-buttons button.tc-tab-selected {
   border-radius: 4px;
 }
 
-/* Dropdowns */
-
+<!-- /* Dropdowns */ -->
 @keyframes pop {
   0% {
     transform: scale(0.8);
@@ -608,8 +601,7 @@ div.tc-tab-buttons button.tc-tab-selected {
   font-style: normal;
 }
 
-/* Draft list */
-
+<!-- /* Draft list */ -->
 .tc-drafts-list {
   font-size: .9em;
   left: auto;
