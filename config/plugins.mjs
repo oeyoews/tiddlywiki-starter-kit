@@ -50,7 +50,7 @@ const oeyoewsPlugins = [
   'markdown-it-math',
   'medium-zoom',
   'blockquote',
-  'editor-preview-resizer',
+  // 'editor-preview-resizer',
   'double-click-edit',
   'neotw-draft-better',
   'table-style-fix',
