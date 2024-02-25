@@ -38,9 +38,9 @@ const oeyoewsPlugins = [
   // 'tiddlywiki-files',
   // 'neotw-popup-preview',
   // 'neotw-contextmenu',
-  'tiddlywiki-prettier-lib',
+  // 'tiddlywiki-prettier-lib',
   'markdown-it-twemoji',
-  'tiddlywiki-prettier',
+  // 'tiddlywiki-prettier',
   // 'mermaid-tiny', // markdown-it-mermaid 支持前，我暂时不用这个版本, 因为同时要装两个版本
   'tiddler-fullscreen',
   'mermaid-widget',
