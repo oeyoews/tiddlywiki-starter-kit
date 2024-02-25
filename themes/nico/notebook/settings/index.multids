@@ -2,4 +2,4 @@ title: $:/themes/nico/notebook/settings/
 
 editorfontfamily:
 fontfamily: Geist,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji
-codefontfamily: "Liberation Mono",Menlo,Courier,monospace
+codefontfamily:  "Maple Mono","Liberation Mono",Menlo,Courier,monospace
