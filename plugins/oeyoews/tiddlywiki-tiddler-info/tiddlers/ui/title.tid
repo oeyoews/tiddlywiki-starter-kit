@@ -13,7 +13,7 @@ fill:$(foregroundColor)$;
 
 <div class="tc-tiddler-title text-center mb-4">
 <div class="tc-titlebar">
-<span class="tc-tiddler-controls float-none flex justify-end text-lg mb-4">
+<span class="tc-tiddler-controls !float-none flex justify-end text-lg mb-4">
 <$let env={{{ [[$:/info/url/protocol]get[text]] }}}>
 <%if [<env>match[http:]] %>
   <$list filter="[all[shadows+tiddlers]tag[$:/tags/ViewToolbar]!has[draft.of]] :filter[lookup[$:/config/ViewToolbarButtons/Visibility/]!match[hide]]" storyview="pop" variable="listItem">
