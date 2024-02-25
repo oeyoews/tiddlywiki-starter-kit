@@ -12,6 +12,7 @@
     "new": "node lib/newplugin.mjs",
     "build": "node lib/build.mjs",
     "update:tw": "pnpm install github:Jermolene/TiddlyWiki5",
+    "update:web": "git commit --allow-empty -m 'update' && git push",
     "build-with-bun": "bun run ./lib/build.ts",
     "format": "prettier  --write .",
     "format:md": "autocorrect --fix",
