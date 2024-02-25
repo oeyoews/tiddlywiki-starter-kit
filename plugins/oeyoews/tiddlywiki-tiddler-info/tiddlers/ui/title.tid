@@ -11,7 +11,7 @@ fill:$(foregroundColor)$;
 fill:$(foregroundColor)$;
 \end
 
-<div class="tc-tiddler-title text-center mb-8">
+<div class="tc-tiddler-title text-center mb-4">
 <div class="tc-titlebar">
 <span class="tc-tiddler-controls float-none flex justify-end text-lg mb-4">
 <$let env={{{ [[$:/info/url/protocol]get[text]] }}}>
