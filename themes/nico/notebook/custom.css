@@ -40,7 +40,8 @@ hr {
 }
 
 blockquote {
-  border-left: 3px solid #dfdfdf;
+  /* border-left: 3px solid #dfdfdf !important; */
+  margin-left: 0 !important;
 }
 
 blockquote > div {
