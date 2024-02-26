@@ -4,7 +4,7 @@ title: $:/core/ui/EditTemplate/body/preview/output
 
 \import [all[shadows+tiddlers]tag[$:/tags/Macro/View]!has[draft.of]] [all[shadows+tiddlers]tag[$:/tags/Macro/View/Body]!has[draft.of]]
 
-<$editorResizer />
+<!-- <$editorResizer /> -->
 
 <div class={{{ [{$:/core/ui/EditTemplate/body/typography}] }}}>
 
