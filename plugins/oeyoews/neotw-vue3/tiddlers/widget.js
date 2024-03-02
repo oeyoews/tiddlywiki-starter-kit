@@ -47,9 +47,16 @@ class ExampleWidget extends Widget {
     // 注册全局组件
     // app.component('TodoDeleteButton', TodoDeleteButton)
     app.mount(domNode);
+    // app.version
+    // @see-also: https://cn.vuejs.org/api/application.html#app-config-compileroptions-delimiters
+    // app.config.compilerOptions.delimiters
 
     parent.insertBefore(domNode, nextSibling);
     this.domNodes.push(domNode);
+  }
+
+  refresh() {
+    return false;
   }
 }
 
