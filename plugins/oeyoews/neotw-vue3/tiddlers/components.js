@@ -5,8 +5,11 @@ module-type: library
 
 \*/
 
-const Vue = require('./vue.global.prod.js');
-const { ref } = Vue;
+if (!window.Vue) {
+  window.Vue = require('./vue.global.prod.js');
+}
+
+const { ref } = window.Vue;
 
 module.exports = {
   // components usage
@@ -14,11 +17,12 @@ module.exports = {
   //   msg: String
   // },
   setup() {
+    // TIPS: ref 用来声明基本数据类型，reactive用来声明引用数据类型
     let count = ref(0);
     let version = ref(3);
     let sidebarText = ref('开启');
 
-    // 这里的this 指向 Window, 如果希望访问到当前vue 示例， 可以使用vue 的内置 getCurrentInstance 方法
+    // 这里的this 指向 Window, 因为setup 函数还没有执行created 声明周期方法, 所以无法使用data, methods, 如果希望访问到当前vue 示例， 可以使用vue 的内置 getCurrentInstance 方法
     // console.log(this);
     let time = ref(new Date().toLocaleTimeString());
 

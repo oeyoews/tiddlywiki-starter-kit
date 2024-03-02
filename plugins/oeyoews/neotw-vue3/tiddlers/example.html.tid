@@ -1,5 +1,6 @@
 title: $:/plugins/oeyoews/neotw-vue3/example.html
 hide-body: yes
+description:
 
 <div :id="version">Hello, Vue {{ version }}! {{ time }} </div>
 

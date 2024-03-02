@@ -35,9 +35,13 @@ class ExampleWidget extends Widget {
       children: [btn]
     });
 
-    const Vue = require('./vue.global.prod.js');
+    if (!window.Vue) {
+      window.Vue = require('./vue.global.prod.js');
+    }
+
+    const { createApp } = window.Vue;
+
     const exampleComponent = require('./components.js');
-    const { createApp } = Vue;
     const app = createApp(exampleComponent);
 
     app.config.errorHandler = (err) => {
