@@ -16,11 +16,16 @@ module.exports = {
     setTimeout(() => {
       count.value = version;
     }, 1000);
+    let time = ref(new Date().toLocaleTimeString());
+    setInterval(() => {
+      time.value = new Date().toLocaleTimeString();
+    }, 1000);
     return {
       count,
-      version
+      version,
+      time
     };
   },
   // TODO: 会有闪烁
-  template: `<div :id="version">Hello, Vue {{ count }}!</div>`
+  template: `<div :id="version">Hello, Vue {{ count }}! time is {{ time }} </div>`
 };
