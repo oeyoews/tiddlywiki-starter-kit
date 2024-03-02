@@ -9,7 +9,7 @@ if (!window.Vue) {
   window.Vue = require('./vue.global.prod.js');
 }
 
-const { ref, reactive } = window.Vue;
+const { nextTick, ref, reactive } = window.Vue;
 
 let id = 0;
 
@@ -61,7 +61,10 @@ module.exports = {
     };
   },
 
-  /** methods 是一些用来更改状态与触发更新的函数 它们可以在模板中作为事件处理器绑定*/
+  /**
+   * methods 是一些用来更改状态与触发更新的函数 它们可以在模板中作为事件处理器绑定
+   * Vue 自动为 methods 中的方法绑定了永远指向组件实例的 this
+   * */
   methods: {
     addTodo() {
       this.todos.push({
@@ -70,13 +73,20 @@ module.exports = {
       });
       this.newTodo = '';
     },
+
     // NOTE: UI 没有及时更新
-    removeTodo(todo) {
+    async removeTodo(todo) {
       this.todos = this.todos.filter((t) => t !== todo);
+      alert(
+        '任务列表没有被更新， 原因排查中。更新输入框的值点击 addtodo 手动更新任务列表'
+      );
+      await nextTick();
     },
+
     toggleRender() {
       this.renderComponent = !this.renderComponent;
     },
+
     toggleSidebar() {
       const statusTiddler = '$:/state/notebook-sidebar';
       const status = $tw.wiki.getTiddlerText(statusTiddler);
@@ -91,21 +101,21 @@ module.exports = {
         this.sidebarText = '开启';
       }
     }
-    // $tw() {
-    //   return window.$tw;
-    // }
   },
 
-  /** data() 返回的属性将会成为响应式的状态 并且暴露在 `this` 上 */
+  /**
+   * data() 返回的属性将会成为响应式的状态 并且暴露在 `this` 上
+   * data 是vue2 的写法， 但vue3 也兼容这种老式写法, 建议使用setup
+   */
   // data() {
   //   return {};
   // },
 
-  // JSX
+  /** template 的另外一种替代写法 jsx */
   // render(h) { },
 
   /**
-   * @description: 一些生命周期函数
+   * @description: 一些生命周期函数, tiddlywiki 插件开发者基本用不到
    * @see: https://cn.vuejs.org/api/options-lifecycle.html
    */
   beforeCreate() {

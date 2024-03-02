@@ -33,18 +33,25 @@ class VueExampleWidget extends Widget {
     const { createApp } = window.Vue;
 
     const exampleComponent = require('./components.js');
+
     const app = createApp(exampleComponent);
 
+    // should before mount
     app.config.errorHandler = (err) => {
-      console.error('[Vue3]: ' + err);
+      const text = `[Vue3](${app.version}): ` + err;
+      console.error(text);
+      domNode.textContent = text;
+      domNode.style.color = 'red';
     };
+
+    // @see-also: https://cn.vuejs.org/api/application.html#app-config-compileroptions-delimiters
+    // app.config.compilerOptions.delimiters
 
     // 注册全局组件
     // app.component('TodoDeleteButton', TodoDeleteButton)
+
+    // 挂载
     app.mount(domNode);
-    // app.version
-    // @see-also: https://cn.vuejs.org/api/application.html#app-config-compileroptions-delimiters
-    // app.config.compilerOptions.delimiters
 
     parent.insertBefore(domNode, nextSibling);
     this.domNodes.push(domNode);

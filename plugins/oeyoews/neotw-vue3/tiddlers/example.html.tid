@@ -40,11 +40,14 @@ description:
 
 
 <form @submit.prevent="addTodo" class="flex">
+<!-- v-model 对 IME 进行了处理 -->
+NOTE: textarea 不支持 插值语法，需要使用 v-model 代替
 <input v-model="newTodo" placeholder="new todo" class="w-full" required/>
 <button class="border-solid"> addTodo </button>
 </form>
 
 <ul>
+<p>当前任务数量：{{todo.length}} </p>
 <li v-for="todo in todos" :key="todo.id" :id="todo.id">
 {{todo.text}}
 <button @click="removeTodo(todo)"> x </button>
