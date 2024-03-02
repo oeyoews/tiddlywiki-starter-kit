@@ -46,13 +46,19 @@ description:
 <button :class="btnClass"> addTodo </button>
 </form>
 
-<ul>
 <p>当前任务数量: {{todos.length}} </p>
-<li v-for="todo in todos" :key="todo.id" :id="todo.id">
-{{todo.text}}
-<button @click="removeTodo(todo)"> x </button>
-</li>
+<button @click="hideCompleted = !hideCompleted" :class="btnClass">
+    {{ hideCompleted ? 'Show all' : 'Hide completed' }}
+</button>
+
+<ul>
+  <li v-for="todo in filteredTodos" :key="todo.id">
+  <input type="checkbox" v-model="todo.done" class="mr-2">
+ <span :class="{ ['line-through']: todo.done }">{{ todo.text }}</span>
+  <button @click="removeTodo(todo)"> x </button>
+  </li>
 </ul>
+
 
 
 <h2>选择框</h2>
@@ -65,3 +71,7 @@ description:
   <option>B</option>
   <option>C</option>
 </select>
+
+<h2>Ref(react 的 useRef)</h2>
+
+  <p ref="pElementRef">还没挂载</p>

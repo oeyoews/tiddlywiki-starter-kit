@@ -9,7 +9,7 @@ if (!window.Vue) {
   window.Vue = require('./vue.global.prod.js');
 }
 
-const { ref, reactive } = window.Vue;
+const { computed, ref, reactive } = window.Vue;
 
 module.exports = {
   // components usage
@@ -17,7 +17,7 @@ module.exports = {
   //   msg: String
   // },
   setup() {
-    // TIPS: ref 用来声明基本数据类型，reactive用来声明引用数据类型
+    // TIPS: ref 用来声明基本数据类型，reactive用来声明复杂数据类型, 比如对象，数组一般用ref
     const count = ref(0);
     const version = ref(3);
     const renderComponent = ref(false);
@@ -50,6 +50,13 @@ module.exports = {
     //   console.log(time.value);
     // }, 1000);
 
+    const hideCompleted = ref(false);
+    const filteredTodos = computed(() => {
+      return hideCompleted.value
+        ? todos.value.filter((t) => !t.done)
+        : todos.value;
+    });
+
     // 返回值会暴露给模板和其他的选项式 API 钩子
     return {
       count,
@@ -61,6 +68,8 @@ module.exports = {
       inputValue,
       todos,
       btnClass,
+      hideCompleted,
+      filteredTodos,
       newTodo
     };
   },
@@ -73,7 +82,8 @@ module.exports = {
     addTodo() {
       this.todos.push({
         id: this.todos.length,
-        text: this.newTodo
+        text: this.newTodo,
+        done: false
       });
       this.newTodo = '';
     },
@@ -125,7 +135,7 @@ module.exports = {
     // console.log('created');
   },
   mounted() {
-    // console.log(this.sidebarText);
+    this.$refs.pElementRef.textContent = '挂载上了';
   },
   // NOTE: unmount 只有在页面切换， 组件被销毁时才起作用, 所以vue仍然不能解决 tiddlywiki 的 destory 问题
   // beforeUnmount() { console.log('unmounted'); },
