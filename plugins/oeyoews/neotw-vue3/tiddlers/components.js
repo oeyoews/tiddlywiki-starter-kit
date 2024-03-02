@@ -20,16 +20,17 @@ module.exports = {
     let count = ref(0);
     let version = ref(3);
 
-    setTimeout(() => {
-      version.value = Vue.version;
-    }, 1000);
-
     let time = ref(new Date().toLocaleTimeString());
 
-    setInterval(() => {
-      time.value = new Date().toLocaleTimeString();
-      console.log(time.value);
-    }, 1000);
+    // NOTE: 定时器暂时无法借助vue 的 beforeUnmount 清除
+    // setTimeout(() => {
+    //   version.value = Vue.version;
+    // }, 1000);
+
+    // setInterval(() => {
+    //   time.value = new Date().toLocaleTimeString();
+    //   console.log(time.value);
+    // }, 1000);
 
     // 返回值会暴露给模板和其他的选项式 API 钩子
     return {
