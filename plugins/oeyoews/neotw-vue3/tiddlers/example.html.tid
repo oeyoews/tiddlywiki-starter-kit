@@ -2,6 +2,14 @@ title: $:/plugins/oeyoews/neotw-vue3/example.html
 hide-body: yes
 description:
 
+
+<h2>Vue3 插件示例</h2>
+<button @click="toggleRender" class="border-solid p-2">点击切换预览</button>
+
+<div v-if="renderComponent">
+
+<h2>Vu3 Version</h2>
+
 <div :id="version">Hello, Vue {{ version }}! {{ time }} </div>
 
 <h2>计数器</h2>
@@ -15,3 +23,5 @@ description:
 <button @click="toggleSidebar" class="border-solid p-2">
 {{ sidebarText }}侧边栏
 <button>
+
+</div>
