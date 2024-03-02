@@ -1,7 +1,7 @@
 title: $:/plugins/oeyoews/neotw-vue3/example.html
 hide-body: yes
 
-<div :id="version">Hello, Vue {{ version }}! time is {{ time }} </div>
+<div :id="version">Hello, Vue {{ version }}! {{ time }} </div>
 
 <h2>计数器</h2>
 
@@ -12,5 +12,5 @@ hide-body: yes
 <h2>切换侧边栏</h2>
 
 <button @click="toggleSidebar" class="border-solid p-2">
-{{ sidebarText }}
+{{ sidebarText }}侧边栏
 <button>

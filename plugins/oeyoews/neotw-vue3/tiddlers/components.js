@@ -7,9 +7,6 @@ module-type: library
 
 const Vue = require('./vue.global.prod.js');
 const { ref } = Vue;
-const template = $tw.wiki.getTiddlerText(
-  '$:/plugins/oeyoews/neotw-vue3/example.html'
-);
 
 module.exports = {
   // components usage
@@ -19,10 +16,13 @@ module.exports = {
   setup() {
     let count = ref(0);
     let version = ref(3);
-    let sidebarText = ref('开启侧边栏');
+    let sidebarText = ref('开启');
 
+    // 这里的this 指向 Window, 如果希望访问到当前vue 示例， 可以使用vue 的内置 getCurrentInstance 方法
+    // console.log(this);
     let time = ref(new Date().toLocaleTimeString());
 
+    // TIPS: 不要忘记使用.value
     // NOTE: 定时器暂时无法借助vue 的 beforeUnmount 清除
     // setTimeout(() => {
     //   version.value = Vue.version;
@@ -51,10 +51,12 @@ module.exports = {
       const nextStatus = status === 'yes' ? 'no' : 'yes';
       $tw.wiki.setText(statusTiddler, 'text', null, nextStatus);
 
+      // TIPS: 使用this 注意箭头函数的影响
+      // methods 里面使用 ref 值不用加value, 会自动解包
       if (status === 'yes') {
-        this.sidebarText = '关闭侧边栏';
+        this.sidebarText = '关闭';
       } else {
-        this.sidebarText = '开启侧边栏';
+        this.sidebarText = '开启';
       }
     }
     // $tw() {
@@ -80,5 +82,8 @@ module.exports = {
   errorCaptured: (err, vm, info) => {},
   renderTracked({ key, target, type }) {},
 
-  template // TIPS: 这里也可以将html 写在外面， 使用selector 来挂载, 从而提升html 的可读性, 但是要注意selector 的重复. 或者可以将api 存在一个单独的tiddler, 如何通过$tw api 读取html 给template 赋值(推荐使用)
+  // 挂载到的 节点
+  template: $tw.wiki.getTiddlerText(
+    '$:/plugins/oeyoews/neotw-vue3/example.html'
+  )
 };
