@@ -44,6 +44,7 @@ const oeyoewsPlugins = [
   // 'mermaid-tiny', // markdown-it-mermaid 支持前，我暂时不用这个版本, 因为同时要装两个版本
   'neotw-dropdown-better',
   'tiddler-fullscreen',
+  'neotw-vue3',
   'mermaid-widget',
   'mermaid930',
   'markdown-it-mermaid',

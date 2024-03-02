@@ -1,0 +1,17 @@
+{
+	"directories": [
+		{
+			"path": "./",
+			"filesRegExp": "^.*\\.js$",
+			"fields": {
+				"title": {
+					"prefix": "$:/plugins/oeyoews/neotw-vue3/",
+					"source": "filename"
+				},
+				"type": "application/javascript",
+				"module-type": "library",
+				"hide-body": "yes"
+			}
+		}
+	]
+}
