@@ -6,8 +6,10 @@ module-type: widget
 neotw-vue3 widget
 
 \*/
+
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 
+/** @preserve */
 class VueExampleWidget extends Widget {
   constructor(parseTreeNode, options) {
     super(parseTreeNode, options);
