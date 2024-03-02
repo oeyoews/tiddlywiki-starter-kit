@@ -14,13 +14,13 @@ module.exports = {
     version = Vue.version;
 
     setTimeout(() => {
-      count.value++;
-    }, 2000);
+      count.value = version;
+    }, 1000);
     return {
       count,
       version
     };
   },
   // TODO: 会有闪烁
-  template: `<div :id="version">Hello, Vue{{ count }} ({{ version }})!</div>`
+  template: `<div :id="version">Hello, Vue {{ count }}!</div>`
 };
