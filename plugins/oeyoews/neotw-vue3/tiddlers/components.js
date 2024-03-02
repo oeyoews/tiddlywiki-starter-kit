@@ -9,7 +9,9 @@ if (!window.Vue) {
   window.Vue = require('./vue.global.prod.js');
 }
 
-const { ref } = window.Vue;
+const { ref, reactive } = window.Vue;
+
+let id = 0;
 
 module.exports = {
   // components usage
@@ -22,6 +24,14 @@ module.exports = {
     const version = ref(3);
     const renderComponent = ref(false);
     const sidebarText = ref('开启');
+    const inputValue = ref('');
+    const newTodo = ref('');
+    const todos = reactive([
+      {
+        id: id++,
+        text: 'HTML'
+      }
+    ]);
 
     // 这里的this 指向 Window, 因为setup 函数还没有执行created 声明周期方法, 所以无法使用data, methods, 如果希望访问到当前vue 示例， 可以使用vue 的内置 getCurrentInstance 方法
     // console.log(this);
@@ -33,10 +43,10 @@ module.exports = {
     //   version.value = Vue.version;
     // }, 1000);
 
-    setInterval(() => {
-      time.value = new Date().toLocaleTimeString();
-      console.log(time.value);
-    }, 1000);
+    // setInterval(() => {
+    //   time.value = new Date().toLocaleTimeString();
+    //   console.log(time.value);
+    // }, 1000);
 
     // 返回值会暴露给模板和其他的选项式 API 钩子
     return {
@@ -44,12 +54,26 @@ module.exports = {
       version,
       time,
       renderComponent,
-      sidebarText
+      sidebarText,
+      inputValue,
+      todos,
+      newTodo
     };
   },
 
   /** methods 是一些用来更改状态与触发更新的函数 它们可以在模板中作为事件处理器绑定*/
   methods: {
+    addTodo() {
+      this.todos.push({
+        id: id++,
+        text: this.newTodo
+      });
+      this.newTodo = '';
+    },
+    // NOTE: UI 没有及时更新
+    removeTodo(todo) {
+      this.todos = this.todos.filter((t) => t !== todo);
+    },
     toggleRender() {
       this.renderComponent = !this.renderComponent;
     },

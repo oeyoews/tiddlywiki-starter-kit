@@ -8,7 +8,7 @@ neotw-vue3 widget
 \*/
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 
-class ExampleWidget extends Widget {
+class VueExampleWidget extends Widget {
   constructor(parseTreeNode, options) {
     super(parseTreeNode, options);
   }
@@ -24,16 +24,7 @@ class ExampleWidget extends Widget {
 
     const createElement = $tw.utils.domMaker;
 
-    const btn = createElement('button', {
-      text: '{{ message}}',
-      class: 'rounded p-1'
-    });
-
-    btn.id = 'app';
-
-    const domNode = createElement('div', {
-      children: [btn]
-    });
+    const domNode = createElement('div', {});
 
     if (!window.Vue) {
       window.Vue = require('./vue.global.prod.js');
@@ -65,4 +56,4 @@ class ExampleWidget extends Widget {
 }
 
 /** @description neotw-vue3 widget */
-exports['vue-example'] = ExampleWidget;
+exports['vue-example'] = VueExampleWidget;

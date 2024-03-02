@@ -27,3 +27,26 @@ description:
 <button>
 
 </div>
+
+<h2>输入框</h2>
+
+<input v-model="inputValue" placeholder="input something" class="w-full my-2" />
+
+<p v-if="inputValue"> {{inputValue}} </p>
+
+<p v-else>这里会被更新</p>
+
+<h2>待办事项</h2>
+
+
+<form @submit.prevent="addTodo" class="flex">
+<input v-model="newTodo" placeholder="new todo" class="w-full" required/>
+<button class="border-solid"> addTodo </button>
+</form>
+
+<ul>
+<li v-for="todo in todos" :key="todo.id" :id="todo.id">
+{{todo.text}}
+<button @click="removeTodo(todo)"> x </button>
+</li>
+</ul>
