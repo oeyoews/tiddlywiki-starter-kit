@@ -46,9 +46,6 @@ module.exports = {
     };
   },
   methods: {
-    log: () => {
-      console.log('time');
-    },
     toggleSidebar() {
       const statusTiddler = '$:/state/notebook-sidebar';
       const status = $tw.wiki.getTiddlerText(statusTiddler);
