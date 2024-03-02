@@ -9,9 +9,7 @@ if (!window.Vue) {
   window.Vue = require('./vue.global.prod.js');
 }
 
-const { nextTick, ref, reactive } = window.Vue;
-
-let id = 0;
+const { ref, reactive } = window.Vue;
 
 module.exports = {
   // components usage
@@ -26,9 +24,13 @@ module.exports = {
     const sidebarText = ref('开启');
     const inputValue = ref('');
     const newTodo = ref('');
-    const todos = reactive([
+    const selected = ref('A');
+    const btnClass = ref(
+      'border-solid border-gray-100 dark:border-gray-400 p-2'
+    );
+    const todos = ref([
       {
-        id: id++,
+        id: 0,
         text: 'HTML'
       }
     ]);
@@ -52,11 +54,13 @@ module.exports = {
     return {
       count,
       version,
+      selected,
       time,
       renderComponent,
       sidebarText,
       inputValue,
       todos,
+      btnClass,
       newTodo
     };
   },
@@ -68,19 +72,15 @@ module.exports = {
   methods: {
     addTodo() {
       this.todos.push({
-        id: id++,
+        id: this.todos.length,
         text: this.newTodo
       });
       this.newTodo = '';
     },
 
     // NOTE: UI 没有及时更新
-    async removeTodo(todo) {
+    removeTodo(todo) {
       this.todos = this.todos.filter((t) => t !== todo);
-      alert(
-        '任务列表没有被更新， 原因排查中。更新输入框的值点击 addtodo 手动更新任务列表'
-      );
-      await nextTick();
     },
 
     toggleRender() {

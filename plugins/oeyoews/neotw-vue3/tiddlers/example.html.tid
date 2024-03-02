@@ -4,7 +4,7 @@ description:
 
 
 <h2>Vue3 插件示例</h2>
-<button @click="toggleRender" class="border-solid p-2">点击切换预览</button>
+<button @click="toggleRender" :class="btnClass">点击切换预览</button>
 
 <div v-if="renderComponent">
 
@@ -16,13 +16,13 @@ description:
 
 <h2>计数器</h2>
 
-<button @click="count++" class="border border-solid p-2">
+<button @click="count++" :class="btnClass">
  Count is {{ count }}
 </button>
 
 <h2>切换侧边栏</h2>
 
-<button @click="toggleSidebar" class="border-solid p-2">
+<button @click="toggleSidebar" :class="btnClass">
 {{ sidebarText }}侧边栏
 <button>
 
@@ -43,13 +43,25 @@ description:
 <!-- v-model 对 IME 进行了处理 -->
 <!-- NOTE: textarea 不支持 插值语法，需要使用 v-model 代替 -->
 <input v-model="newTodo" placeholder="new todo" class="w-full" required/>
-<button class="border-solid"> addTodo </button>
+<button :class="btnClass"> addTodo </button>
 </form>
 
 <ul>
-<p>当前任务数量：{{todos.length}} </p>
+<p>当前任务数量: {{todos.length}} </p>
 <li v-for="todo in todos" :key="todo.id" :id="todo.id">
 {{todo.text}}
 <button @click="removeTodo(todo)"> x </button>
 </li>
 </ul>
+
+
+<h2>选择框</h2>
+
+<div>Selected: {{ selected }}</div>
+
+<select v-model="selected" class="p-2">
+  <option disabled value="">Please select one</option>
+  <option>A</option>
+  <option>B</option>
+  <option>C</option>
+</select>
