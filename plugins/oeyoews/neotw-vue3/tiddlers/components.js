@@ -19,6 +19,7 @@ module.exports = {
   setup() {
     let count = ref(0);
     let version = ref(3);
+    let sidebarText = ref('开启侧边栏');
 
     let time = ref(new Date().toLocaleTimeString());
 
@@ -36,12 +37,25 @@ module.exports = {
     return {
       count,
       version,
-      time
+      time,
+      sidebarText
     };
   },
   methods: {
     log: () => {
       console.log('time');
+    },
+    toggleSidebar() {
+      const statusTiddler = '$:/state/notebook-sidebar';
+      const status = $tw.wiki.getTiddlerText(statusTiddler);
+      const nextStatus = status === 'yes' ? 'no' : 'yes';
+      $tw.wiki.setText(statusTiddler, 'text', null, nextStatus);
+
+      if (status === 'yes') {
+        this.sidebarText = '关闭侧边栏';
+      } else {
+        this.sidebarText = '开启侧边栏';
+      }
     }
     // $tw() {
     //   return window.$tw;
@@ -59,12 +73,10 @@ module.exports = {
     // console.log('created');
   },
   mounted() {
-    // console.log('mounted');
+    // console.log(this.sidebarText);
   },
   // TODO: vue 是如何判断unmounted?
-  beforeUnmount() {
-    console.log('unmounted');
-  },
+  // beforeUnmount() { console.log('unmounted'); },
   errorCaptured: (err, vm, info) => {},
   renderTracked({ key, target, type }) {},
 
