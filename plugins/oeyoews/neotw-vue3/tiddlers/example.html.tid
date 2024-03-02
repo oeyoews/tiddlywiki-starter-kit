@@ -8,7 +8,7 @@ description:
 
 <div v-if="renderComponent">
 
----
+</hr>
 
 <h2>Vu3 Version</h2>
 

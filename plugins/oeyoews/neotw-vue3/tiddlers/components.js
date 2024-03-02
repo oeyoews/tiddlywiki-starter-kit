@@ -93,12 +93,15 @@ module.exports = {
   mounted() {
     // console.log(this.sidebarText);
   },
-  // TODO: vue 是如何判断unmounted?
+  // NOTE: unmount 只有在页面切换， 组件被销毁时才起作用, 所以vue仍然不能解决 tiddlywiki 的 destory 问题
   // beforeUnmount() { console.log('unmounted'); },
   unmounted() {
     console.log('unmounted');
   },
   errorCaptured: (err, vm, info) => {},
+  // prod 模式下不可用
+  // only work for keepalive
+  deactivated() {},
   renderTracked({ key, target, type }) {},
 
   // 挂载到的 节点
