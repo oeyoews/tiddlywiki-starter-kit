@@ -10,16 +10,19 @@ const { ref } = Vue;
 
 module.exports = {
   setup() {
-    let count = ref(3);
-    version = Vue.version;
+    let count = ref(0);
+    let version = ref(3);
 
     setTimeout(() => {
-      count.value = version;
+      version.value = Vue.version;
     }, 1000);
+
     let time = ref(new Date().toLocaleTimeString());
+
     setInterval(() => {
       time.value = new Date().toLocaleTimeString();
     }, 1000);
+
     return {
       count,
       version,
@@ -27,5 +30,9 @@ module.exports = {
     };
   },
   // TODO: 会有闪烁
-  template: `<div :id="version">Hello, Vue {{ count }}! time is {{ time }} </div>`
+  template: `<div :id="version">Hello, Vue {{ version }}! time is {{ time }}
+  </div>
+  <h2>计数器</h2>
+	<button @click="count++" class="border border-solid p-2">Count is {{ count }}</button>
+  `
 };
