@@ -8,6 +8,8 @@ description:
 
 <div v-if="renderComponent">
 
+---
+
 <h2>Vu3 Version</h2>
 
 <div :id="version">Hello, Vue {{ version }}! {{ time }} </div>
