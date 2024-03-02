@@ -1,0 +1,11 @@
+title: $:/plugins/oeyoews/neotw-vue3/example.html
+hide-body: yes
+
+<div :id="version">Hello, Vue {{ version }}! time is {{ time }} </div>
+
+<h2>计数器</h2>
+{{ $tw }}
+
+<button @click="count++" class="border border-solid p-2">
+ Count is {{ count }}
+</button>

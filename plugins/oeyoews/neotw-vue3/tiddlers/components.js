@@ -7,6 +7,9 @@ module-type: library
 
 const Vue = require('./vue.global.prod.js');
 const { ref } = Vue;
+const template = $tw.wiki.getTiddlerText(
+  '$:/plugins/oeyoews/neotw-vue3/example.html'
+);
 
 module.exports = {
   // components usage
@@ -64,12 +67,5 @@ module.exports = {
   errorCaptured: (err, vm, info) => {},
   renderTracked({ key, target, type }) {},
 
-  template: `<div :id="version">Hello, Vue {{ version }}! time is {{ time }}
-  </div>
-  <h2>计数器</h2>
-  {{ $tw }}
-  <button @click="() => console.log($tw())"> log
-  </button>
-	<button @click="count++" class="border border-solid p-2">Count is {{ count }}</button>
-  `
+  template // TIPS: 这里也可以将html 写在外面， 使用selector 来挂载, 从而提升html 的可读性, 但是要注意selector 的重复. 或者可以将api 存在一个单独的tiddler, 如何通过$tw api 读取html 给template 赋值(推荐使用)
 };
