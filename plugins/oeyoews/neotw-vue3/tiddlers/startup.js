@@ -12,5 +12,4 @@ exports.synchronous = true;
 exports.startup = () => {
   const Vue = require('./vue.global.prod.js');
   window.Vue = Vue;
-  console.log(Vue);
 };

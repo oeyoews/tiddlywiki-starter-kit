@@ -38,7 +38,15 @@ class ExampleWidget extends Widget {
     const Vue = require('./vue.global.prod.js');
     const exampleComponent = require('./components.js');
     const { createApp } = Vue;
-    createApp(exampleComponent).mount(domNode);
+    const app = createApp(exampleComponent);
+
+    app.config.errorHandler = (err) => {
+      console.error('[Vue3]: ' + err);
+    };
+
+    // 注册全局组件
+    // app.component('TodoDeleteButton', TodoDeleteButton)
+    app.mount(domNode);
 
     parent.insertBefore(domNode, nextSibling);
     this.domNodes.push(domNode);

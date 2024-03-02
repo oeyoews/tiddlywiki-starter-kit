@@ -11,10 +11,16 @@ const { ref } = Vue;
 module.exports = {
   setup() {
     let count = ref(3);
+    version = Vue.version;
+
     setTimeout(() => {
       count.value++;
     }, 2000);
-    return { count };
+    return {
+      count,
+      version
+    };
   },
-  template: `<div>Hello, Vue{{ count }}!</div>`
+  // TODO: 会有闪烁
+  template: `<div :id="version">Hello, Vue{{ count }} ({{ version }})!</div>`
 };
