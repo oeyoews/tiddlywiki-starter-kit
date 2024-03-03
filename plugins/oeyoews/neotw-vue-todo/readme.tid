@@ -1,3 +1,10 @@
 title: $:/plugins/oeyoews/neotw-vue-todo/readme
 description: neotw-vue-todo
-type: text/markdown
+
+<$vue-todo />
+
+!! Usage
+
+```html
+<$vue-todo json="todo.json"/>
+```

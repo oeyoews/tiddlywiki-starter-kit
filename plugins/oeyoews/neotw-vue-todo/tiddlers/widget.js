@@ -28,8 +28,17 @@ class VueTodoWidget extends Widget {
 
     const domNode = createElement('div', {});
 
+    const vuelib = '$:/plugins/oeyoews/neotw-vue3/vue.global.prod.js';
+
+    if (!$tw.modules.titles[vuelib]) {
+      const logger = new $tw.utils.Logger('neotw-notion-gallery');
+      logger.alert(
+        `${vuelib} is missing, please install neotw-vue plugin by oeyoews`
+      );
+      return;
+    }
     if (!window.Vue) {
-      window.Vue = require('$:/plugins/oeyoews/neotw-vue3/vue.global.prod.js');
+      window.Vue = require(vuelib);
     }
 
     if (!window.Vue) return;

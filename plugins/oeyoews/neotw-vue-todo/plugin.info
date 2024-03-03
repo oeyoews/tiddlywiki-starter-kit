@@ -13,5 +13,8 @@
   "parent-plugin": [
     "$:/plugins/oeyoews/neotw-vue3"
   ],
+  "dependents": [
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
+  ],
   "list": "readme"
 }
