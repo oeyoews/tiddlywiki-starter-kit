@@ -53,8 +53,26 @@ module.exports = {
         : todos.value;
     });
 
+    const showPopup = () => {
+      show.value = true;
+    };
+    const date = ref('');
+    const show = ref(false);
+
+    const formatDate = (date) => `${date.getMonth() + 1}/${date.getDate()}`;
+    const onConfirm = (values) => {
+      const [start, end] = values;
+      show.value = false;
+      date.value = `${formatDate(start)} - ${formatDate(end)}`;
+    };
+
     // 返回值会暴露给模板和其他的选项式 API 钩子
     return {
+      date,
+      show,
+      onConfirm,
+      show,
+      showPopup,
       count,
       version,
       selected,
