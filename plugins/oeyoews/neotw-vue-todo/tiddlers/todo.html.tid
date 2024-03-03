@@ -1,22 +1,25 @@
 title: $:/plugins/oeyoews/neotw-vue-todo/todo.html
 hide-body: yes
 
-<h2>待办事项 {{ undone }}/{{todos.length}} </h2>
+<h2>待办事项 ({{ undone }}/{{todos.length}}) </h2>
 
-<form @submit.prevent="addTodo" class="flex">
-	<input v-model="newTodo" placeholder="new todo" class="w-full my-2" required="请输入任务"/>
-<button :class="btnClass"> addTodo </button>
+<form @submit.prevent="addTodo" class="flex rounded border-solid border-gray-300 dark:border-gray-500">
+	<input v-model="newTodo" placeholder="添加待办事项" class="w-full my-2 border-none" required=""/>
+<button class="w-1/6 md:w-1/12"> 添加 </button>
 </form>
 
+<!-- TODO: support wikitext html -->
 <ul class='list-none'>
   <li v-for="todo in filteredTodos" :key="todo.id">
-  <input type="checkbox" v-model="todo.done" class="mr-2" v-focus>
- <span :class="{ ['line-through']: todo.done }">{{ todo.text }}</span>
-  <button @click="removeTodo(todo)"> x </button>
+    <input type="checkbox" v-model="todo.done" class="mr-2" v-focus id="todo.id">
+    <label :for="todo.id" :class="{ ['line-through']: todo.done }">{{ todo.text }}</label>
+    <button @click="removeTodo(todo)"> x </button>
   </li>
 </ul>
 
-<button @click="hideCompleted = !hideCompleted"  class="!p-1" :class="btnClass" v-if="undone">
-    {{ hideCompleted ? '显示所有待办事项' : '显示未完成代办事项' }}
+<p v-if="!undone && todos.length >0" class="text-sm text-gray-400"> 全都完成了 </p>
+<p v-if="todos.length === 0" class="text-sm text-gray-400"> 还没有待办事项 </p>
+
+<button @click="hideCompleted = !hideCompleted"  class="!p-1 border-solid border-gray-300 dark:border-gray-500 my-2" v-if="undone && undone !== filteredTodos.length">
+    {{ hideCompleted ? '显示所有待办事项' : '仅显示未完成代办事项' }}
 </button>
-<p v-else> 待办事项全部完成了！ </p>

@@ -35,30 +35,18 @@ class VueTodoWidget extends Widget {
     if (!window.Vue) return;
 
     const { createApp } = window.Vue;
+    const { json } = this.attributes;
 
     const todoComponent = require('./component.js');
 
-    const app = createApp(todoComponent);
+    const app = createApp(todoComponent(json));
 
-    // should before mount
     app.config.errorHandler = (err) => {
       const text = `[Vue3](${app.version}): ` + err;
       console.error(text);
       domNode.textContent = text;
       domNode.style.color = 'red';
     };
-
-    // @see-also: https://cn.vuejs.org/api/application.html#app-config-compileroptions-delimiters
-    // app.config.compilerOptions.delimiters
-
-    // 注册全局组件
-    // app.component('TodoDeleteButton', TodoDeleteButton)
-
-    // app.directive('focus', {
-    //   mounted(el) {
-    //     el.focus();
-    //   }
-    // });
 
     // 挂载
     app.mount(domNode);
