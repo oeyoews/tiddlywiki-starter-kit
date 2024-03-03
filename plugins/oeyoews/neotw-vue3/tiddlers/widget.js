@@ -33,7 +33,7 @@ class VueExampleWidget extends Widget {
     }
 
     if (!window.Vue) return;
-    const vant = require('vant.min.js');
+    // const vant = require('vant.min.js');
     // window.vant = vant;
 
     const { createApp } = window.Vue;
@@ -41,7 +41,7 @@ class VueExampleWidget extends Widget {
     const exampleComponent = require('./components.js');
 
     const app = createApp(exampleComponent);
-    app.use(vant).use(vant.Popup).use(vant.Calendar);
+    // app.use(vant).use(vant.Popup).use(vant.Calendar);
     // app.use(vant.Lazyload);
     // 调用工具函数，弹出一个 Toast
     // vant.showToast('vant tips popup');

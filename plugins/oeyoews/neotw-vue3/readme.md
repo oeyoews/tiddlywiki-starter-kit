@@ -20,8 +20,8 @@ const { ref, createApp } = vue
 
 ## vue3 ui 组件库 推荐
 
-* mobile: vant 250kb(cdn)
-* pc: element: 将近 1000kb(cdn)
+* mobile: vant 230kb js+ 200kb css
+* pc: element: 将近 1000kb
 
 ## NOTE
 
