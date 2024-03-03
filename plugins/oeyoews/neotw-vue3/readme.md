@@ -18,6 +18,11 @@ const { ref, createApp } = vue
 
 * 更多用法请参考 [Vue3 官方文档](https://cn.vuejs.org/guide/essentials/application.html)
 
+## vue3 ui 组件库 推荐
+
+* mobile: vant 250kb
+* pc: element: 将近 1000kb
+
 ## NOTE
 
 * v-focus 指令注冊，在 tiddlywiki 似乎不起作用
