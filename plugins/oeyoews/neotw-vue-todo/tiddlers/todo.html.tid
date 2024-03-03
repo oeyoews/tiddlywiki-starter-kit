@@ -11,9 +11,9 @@ hide-body: yes
 <!-- TODO: support wikitext html -->
 <ul class='list-none'>
   <li v-for="todo in filteredTodos" :key="todo.id">
-    <input type="checkbox" v-model="todo.done" class="mr-2" v-focus id="todo.id">
-    <label :for="todo.id" :class="{ ['line-through']: todo.done }">{{ todo.text }}</label>
-    <button @click="removeTodo(todo)"> x </button>
+    <input type="checkbox" v-model="todo.done" class="mr-2 cursor-pointer" v-focus id="todo.id">
+    <label :for="todo.id" :class="{ ['line-through']: todo.done, 'text-gray-600': todo.done }" >{{ todo.text }}</label>
+    <button @click="removeTodo(todo)" title="移除当前待办事项" class="size-4 hover:text-red-400">✕</button>
   </li>
 </ul>
 
