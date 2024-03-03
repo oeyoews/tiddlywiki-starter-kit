@@ -43,10 +43,13 @@ class VueTodoWidget extends Widget {
 
     if (!window.Vue) return;
 
+    // i18n
     const VueI18n = require('vue-i18n.global.prod.js');
+    window.VueI18n = VueI18n;
+
+    // vue ui lib
     // const vant = require('vant.min.js');
     // window.vant = vant;
-    window.VueI18n = VueI18n;
 
     const { createApp } = window.Vue;
     const { json } = this.attributes;

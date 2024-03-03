@@ -79,7 +79,7 @@ const todo = (json = 'todo.json') => {
       }
     },
 
-    mounted() {},
+    // mounted() {},
 
     methods: {
       toggleLang() {
