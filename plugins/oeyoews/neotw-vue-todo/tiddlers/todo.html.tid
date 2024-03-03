@@ -13,7 +13,7 @@ hide-body: yes
   <li v-for="todo in filteredTodos" :key="todo.id">
     <input type="checkbox" v-model="todo.done" class="mr-2 cursor-pointer" v-focus id="todo.id">
     <label :for="todo.id" :class="{ ['line-through']: todo.done, 'text-gray-400': todo.done }" >{{ todo.text }}</label>
-    <button @click="removeTodo(todo)" title="移除当前待办事项" class="p-2 hover:text-red-400">✕</button>
+    <button @click="removeTodo(todo)" title="移除当前待办事项" class="p-1 hover:text-red-400">✕</button>
   </li>
 </ul>
 
