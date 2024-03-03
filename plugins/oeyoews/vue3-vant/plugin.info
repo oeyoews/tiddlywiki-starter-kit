@@ -10,6 +10,8 @@
   "meat#disabled": "yes",
   "qrcode": "yes",
   "created": "2024-03-03",
-  "dependents": [],
+  "parent-plugin": [
+    "$:/plugins/oeyoews/neotw-vue3"
+  ],
   "list": "readme"
 }
