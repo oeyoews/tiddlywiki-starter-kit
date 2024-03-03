@@ -74,7 +74,7 @@ module.exports = {
     // 监听todo变化
     todos: {
       handler() {
-        console.log(toRaw(this.todos));
+        // console.log(toRaw(this.todos));
       },
       deep: true // 深度监听
     }
