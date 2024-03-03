@@ -5,7 +5,7 @@ module-type: library
 
 \*/
 
-const { computed, ref, reactive } = window.Vue;
+const { toRaw, computed, ref, reactive } = window.Vue;
 
 module.exports = {
   // components usage
