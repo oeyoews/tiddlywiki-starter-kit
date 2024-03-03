@@ -16,6 +16,7 @@ module.exports = {
     empty: '还没有待办事项',
     showtodo: '显示所有待办事项',
     hidedone: '仅显示未完成代办事项',
-    setup: '配置'
+    setup: '配置',
+    toggleLang: '切换语言'
   }
 };

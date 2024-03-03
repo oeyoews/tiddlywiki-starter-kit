@@ -15,6 +15,7 @@ module.exports = {
     empty: 'todo is empty',
     showtodo: 'show all todo',
     hidedone: 'hide complted todo',
-    setup: 'Todo Setup'
+    setup: 'Todo Setup',
+    toggleLang: 'toggleLang'
   }
 };

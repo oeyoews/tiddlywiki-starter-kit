@@ -31,6 +31,6 @@ hide-body: yes
 <h2> {{ $t('todo.setup') }} </h2>
 <div>
 <button @click="toggleLang" class="!p-1 border-solid border-gray-300 dark:border-gray-500 my-2">
-Toggle Lang
+{{ $t('todo.toggleLang') }}
 </button>
 </div>
