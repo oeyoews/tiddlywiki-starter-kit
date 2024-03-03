@@ -5,7 +5,7 @@ hide-body: yes
 
 <form @submit.prevent="addTodo" class="flex rounded border-solid border-gray-300 dark:border-gray-500">
 	<input v-model="newTodo" placeholder="添加待办事项" class="w-full my-2 border-none" required=""/>
-<button class="w-1/6 md:w-1/12"> 添加 </button>
+<button class="w-1/6 md:w-1/12 mr-1"> 添加 </button>
 </form>
 
 <!-- TODO: support wikitext html -->
@@ -13,7 +13,7 @@ hide-body: yes
   <li v-for="todo in filteredTodos" :key="todo.id">
     <input type="checkbox" v-model="todo.done" class="mr-2 cursor-pointer" v-focus id="todo.id">
     <label :for="todo.id" :class="{ ['line-through']: todo.done, 'text-gray-400': todo.done }" >{{ todo.text }}</label>
-    <button @click="removeTodo(todo)" title="移除当前待办事项" class="size-4 hover:text-red-400">✕</button>
+    <button @click="removeTodo(todo)" title="移除当前待办事项" class="p-2 hover:text-red-400">✕</button>
   </li>
 </ul>
 
