@@ -1,0 +1,22 @@
+{
+	"tiddlers": [
+		{
+			"file": "./vant.min.js",
+			"fields": {
+				"title": "vant.min.js",
+				"module-type": "library",
+				"type": "application/javascript",
+				"hide-body": "yes"
+			}
+		},
+		{
+			"file": "./vant.min.css",
+			"fields": {
+				"title": "$:/plugins/oeyoews/vue3-vant/vant.min.css",
+				"tags": "$:/tags/Stylesheet",
+				"type": "text/css",
+				"hide-body": "yes"
+			}
+		}
+	]
+}

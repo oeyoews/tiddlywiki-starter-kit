@@ -33,12 +33,18 @@ class VueExampleWidget extends Widget {
     }
 
     if (!window.Vue) return;
+    const vant = require('vant.min.js');
+    // window.vant = vant;
 
     const { createApp } = window.Vue;
 
     const exampleComponent = require('./components.js');
 
     const app = createApp(exampleComponent);
+    app.use(vant);
+    // app.use(vant.Lazyload);
+    // 调用工具函数，弹出一个 Toast
+    vant.showToast('vant tips popup');
 
     // 注册v-focus指令
     // app.directive('focus', {
