@@ -15,9 +15,9 @@ const todo = (json = 'todo.json') => {
         'border-solid border-gray-100 dark:border-gray-400 p-2'
       );
 
-      const searchValue = ref('');
-      const onSearch = (val) => vant.showToast(val);
-      const onClickButton = () => vant.showToast(searchValue.value);
+      // const searchValue = ref('');
+      // const onSearch = (val) => vant.showToast(val);
+      // const onClickButton = () => vant.showToast(searchValue.value);
 
       const todos = ref(
         $tw.wiki.tiddlerExists(json)
@@ -47,11 +47,11 @@ const todo = (json = 'todo.json') => {
 
       // 返回值会暴露给模板和其他的选项式 API 钩子
       return {
-        searchValue,
-        showNotify,
-        show,
-        onSearch,
-        onClickButton,
+        // searchValue,
+        // showNotify,
+        // show,
+        // onSearch,
+        // onClickButton,
         undone,
         todos,
         btnClass,

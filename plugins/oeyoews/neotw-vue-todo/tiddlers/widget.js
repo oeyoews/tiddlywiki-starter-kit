@@ -44,8 +44,8 @@ class VueTodoWidget extends Widget {
     if (!window.Vue) return;
 
     const VueI18n = require('vue-i18n.global.prod.js');
-    const vant = require('vant.min.js');
-    window.vant = vant;
+    // const vant = require('vant.min.js');
+    // window.vant = vant;
     window.VueI18n = VueI18n;
 
     const { createApp } = window.Vue;
@@ -67,7 +67,8 @@ class VueTodoWidget extends Widget {
       messages
     });
 
-    app.use(i18n).use(vant).use(vant.Notify);
+    app.use(i18n);
+    // .use(vant).use(vant.Notify);
 
     app.config.errorHandler = (err) => {
       const text = `[Vue3](${app.version}): ` + err;

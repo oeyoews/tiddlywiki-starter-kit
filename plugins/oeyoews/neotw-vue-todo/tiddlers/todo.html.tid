@@ -48,5 +48,5 @@ hide-body: yes
 
 <h2> {{ $t('todo.setup') }} </h2>
 <div>
-<van-button type="primary" text="Toggle Lang" @click="toggleLang">
+<button v-text="Toggle Lang" @click="toggleLang">
 </div>
