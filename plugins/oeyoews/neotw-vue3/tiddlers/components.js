@@ -160,7 +160,8 @@ module.exports = {
   deactivated() {},
   renderTracked({ key, target, type }) {},
 
-  // 挂载到的 节点
+  // TODO: 如果同时出现多个相同的widget, UI 似乎只会更新第一个widget
+  // 挂载到的节点
   template: $tw.wiki.getTiddlerText(
     '$:/plugins/oeyoews/neotw-vue3/example.html'
   )
