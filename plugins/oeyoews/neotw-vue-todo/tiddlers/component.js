@@ -83,7 +83,7 @@ const todo = (json = 'todo.json') => {
 
     methods: {
       toggleLang() {
-        this.$i18n.locale = this.$i18n.locale === 'en' ? 'cn' : 'en';
+        // this.$i18n.locale = this.$i18n.locale === 'en' ? 'cn' : 'en';
         localStorage.setItem('lang', this.$i18n.locale);
       },
       addTodo() {

@@ -61,12 +61,12 @@ class VueTodoWidget extends Widget {
     const en = require('./i18n/en');
     const cn = require('./i18n/cn');
     const messages = {
-      en,
-      cn
+      English: en,
+      中文: cn
     };
     const i18n = VueI18n.createI18n({
-      locale: localStorage.getItem('lang') || 'zh',
-      fallbackLocale: 'en', // 设置本来的语言
+      locale: localStorage.getItem('lang') || 'English',
+      fallbackLocale: 'English', // 设置本来的语言
       messages
     });
 

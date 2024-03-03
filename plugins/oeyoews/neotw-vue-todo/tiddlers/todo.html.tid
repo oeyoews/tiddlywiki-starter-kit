@@ -29,8 +29,7 @@ hide-body: yes
 </button>
 
 <h2> {{ $t('todo.setup') }} </h2>
-<div>
-<button @click="toggleLang" class="!p-1 border-solid border-gray-300 dark:border-gray-500 my-2">
-{{ $t('todo.toggleLang') }}
-</button>
-</div>
+
+<select v-model="$i18n.locale" @click="toggleLang">
+  <option v-for="locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale" >{{ locale }}</option>
+</select>

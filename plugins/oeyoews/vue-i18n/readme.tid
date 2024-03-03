@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/vue-i18n/readme
+
+* https://vue-i18n.intlify.dev/guide/installation.html
+* https://vue-i18n.intlify.dev/guide/essentials/syntax.html
+
+<!-- jsdelivr 和 unpkg 大小不同，文件较小的有问题 -->
