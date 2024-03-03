@@ -1,7 +1,7 @@
 title: $:/plugins/oeyoews/neotw-vue-todo/todo.html
 hide-body: yes
 
-<h2>待办事项 ({{ undone }}/{{todos.length}}) </h2>
+<h2>待办事项 ({{ todos.length - undone }}/{{todos.length}}) </h2>
 
 <form @submit.prevent="addTodo" class="flex rounded border-solid border-gray-300 dark:border-gray-500">
 	<input v-model="newTodo" placeholder="添加待办事项" class="w-full my-2 border-none" required=""/>
