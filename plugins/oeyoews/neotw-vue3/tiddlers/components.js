@@ -5,10 +5,6 @@ module-type: library
 
 \*/
 
-if (!window.Vue) {
-  window.Vue = require('./vue.global.prod.js');
-}
-
 const { computed, ref, reactive } = window.Vue;
 
 module.exports = {
@@ -74,6 +70,23 @@ module.exports = {
     };
   },
 
+  watch: {
+    // 监听todo变化
+    todos: {
+      handler() {
+        console.log(toRaw(this.todos));
+      },
+      deep: true // 深度监听
+    }
+  },
+
+  // directives: {
+  //   focus: {
+  //     mounted(el) {
+  //       el.focus();
+  //     }
+  //   }
+  // },
   /**
    * methods 是一些用来更改状态与触发更新的函数 它们可以在模板中作为事件处理器绑定
    * Vue 自动为 methods 中的方法绑定了永远指向组件实例的 this
@@ -88,7 +101,6 @@ module.exports = {
       this.newTodo = '';
     },
 
-    // NOTE: UI 没有及时更新
     removeTodo(todo) {
       this.todos = this.todos.filter((t) => t !== todo);
     },

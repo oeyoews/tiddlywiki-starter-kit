@@ -38,7 +38,6 @@ description:
 
 <h2>待办事项</h2>
 
-
 <form @submit.prevent="addTodo" class="flex">
 <!-- v-model 对 IME 进行了处理 -->
 <!-- NOTE: textarea 不支持 插值语法，需要使用 v-model 代替 -->

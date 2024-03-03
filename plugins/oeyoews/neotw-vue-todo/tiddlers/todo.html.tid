@@ -1,0 +1,22 @@
+title: $:/plugins/oeyoews/neotw-vue-todo/todo.html
+hide-body: yes
+
+<h2>待办事项 {{ undone }}/{{todos.length}} </h2>
+
+<form @submit.prevent="addTodo" class="flex">
+	<input v-model="newTodo" placeholder="new todo" class="w-full my-2" required="请输入任务"/>
+<button :class="btnClass"> addTodo </button>
+</form>
+
+<ul class='list-none'>
+  <li v-for="todo in filteredTodos" :key="todo.id">
+  <input type="checkbox" v-model="todo.done" class="mr-2" v-focus>
+ <span :class="{ ['line-through']: todo.done }">{{ todo.text }}</span>
+  <button @click="removeTodo(todo)"> x </button>
+  </li>
+</ul>
+
+<button @click="hideCompleted = !hideCompleted"  class="!p-1" :class="btnClass" v-if="undone">
+    {{ hideCompleted ? '显示所有待办事项' : '显示未完成代办事项' }}
+</button>
+<p v-else> 待办事项全部完成了！ </p>

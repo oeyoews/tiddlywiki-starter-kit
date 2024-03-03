@@ -14,6 +14,10 @@ const { ref, createApp } = vue
 
 * 更多用法请参考 [Vue3 官方文档](https://cn.vuejs.org/guide/essentials/application.html)
 
+## NOTE
+
+* autofocus or v-focus 指令注冊，在 tiddlywiki 似乎不起作用
+
 ## Motivation
 
 <!-- your plugin motivation, or why you write this plugin -->

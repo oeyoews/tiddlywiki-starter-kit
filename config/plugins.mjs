@@ -45,6 +45,7 @@ const oeyoewsPlugins = [
   'neotw-dropdown-better',
   'tiddler-fullscreen',
   'neotw-vue3',
+  'neotw-vue-todo',
   'mermaid-widget',
   'mermaid930',
   'markdown-it-mermaid',
