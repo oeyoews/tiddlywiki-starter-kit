@@ -2,6 +2,10 @@
 
 <$vue-example />
 
+## Latest Vue3 Lib
+
+https://unpkg.com/browse/vue@3.4.21/dist/vue.global.prod.js
+
 ## For developers
 
 ```js
