@@ -1,5 +1,7 @@
-<!-- plugin template readme -->
+<$vue-todo />
 
-## Motivation
+## Usage
 
-<!-- your plugin motivation, or why you write this plugin -->
+```html
+<$vue-todo json="todo.json"/>
+```
