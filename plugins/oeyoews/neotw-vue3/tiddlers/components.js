@@ -180,7 +180,5 @@ module.exports = {
 
   // TODO: 如果同时出现多个相同的widget, UI 似乎更新当前vue 实例. 因为每个widget 都是一个单独的widget. 所以即使数据发生了变化， 也不会跨实例更新ui, 这不同于一个vue 实例的多个相同组件更新。
   // 挂载到的节点
-  template: $tw.wiki.getTiddlerText(
-    '$:/plugins/oeyoews/neotw-vue3/example.html'
-  )
+  template: $tw.wiki.getTiddlerText('$:/plugins/oeyoews/neotw-vue3/example.vue')
 };

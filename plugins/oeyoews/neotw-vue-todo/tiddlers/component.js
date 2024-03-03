@@ -101,7 +101,7 @@ const todo = (json = 'todo.json') => {
     },
 
     template: $tw.wiki.getTiddlerText(
-      '$:/plugins/oeyoews/neotw-vue-todo/todo.html'
+      '$:/plugins/oeyoews/neotw-vue-todo/todo.vue'
     )
   };
   return component;

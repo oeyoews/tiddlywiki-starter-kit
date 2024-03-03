@@ -1,8 +1,3 @@
-title: $:/plugins/oeyoews/neotw-vue3/example.html
-hide-body: yes
-description:
-
-
 <h2>Vue3 插件示例</h2>
 <button @click="toggleRender" :class="btnClass">点击切换预览</button>
 
