@@ -16,7 +16,8 @@ const { ref, createApp } = vue
 
 ## NOTE
 
-* autofocus or v-focus 指令注冊，在 tiddlywiki 似乎不起作用
+* v-focus 指令注冊，在 tiddlywiki 似乎不起作用
+* :autofocus="'autofocus'" is work
 
 ## Motivation
 
