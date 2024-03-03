@@ -15,11 +15,23 @@ const todo = (json = 'todo.json') => {
         'border-solid border-gray-100 dark:border-gray-400 p-2'
       );
 
+      const searchValue = ref('');
+      const onSearch = (val) => vant.showToast(val);
+      const onClickButton = () => vant.showToast(searchValue.value);
+
       const todos = ref(
         $tw.wiki.tiddlerExists(json)
           ? JSON.parse($tw.wiki.getTiddlerData(json))
           : []
       );
+
+      const show = ref(false);
+      const showNotify = () => {
+        show.value = true;
+        setTimeout(() => {
+          show.value = false;
+        }, 2000);
+      };
 
       const hideCompleted = ref(false);
 
@@ -35,6 +47,11 @@ const todo = (json = 'todo.json') => {
 
       // 返回值会暴露给模板和其他的选项式 API 钩子
       return {
+        searchValue,
+        showNotify,
+        show,
+        onSearch,
+        onClickButton,
         undone,
         todos,
         btnClass,
@@ -62,7 +79,13 @@ const todo = (json = 'todo.json') => {
       }
     },
 
+    mounted() {},
+
     methods: {
+      toggleLang() {
+        this.$i18n.locale = this.$i18n.locale === 'en' ? 'cn' : 'en';
+        localStorage.setItem('lang', this.$i18n.locale);
+      },
       addTodo() {
         this.todos.push({
           id: this.todos.length,

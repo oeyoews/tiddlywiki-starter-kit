@@ -44,7 +44,7 @@ class VueExampleWidget extends Widget {
     app.use(vant).use(vant.Popup).use(vant.Calendar);
     // app.use(vant.Lazyload);
     // 调用工具函数，弹出一个 Toast
-    vant.showToast('vant tips popup');
+    // vant.showToast('vant tips popup');
 
     // 注册v-focus指令
     // app.directive('focus', {

@@ -43,12 +43,31 @@ class VueTodoWidget extends Widget {
 
     if (!window.Vue) return;
 
+    const VueI18n = require('vue-i18n.global.prod.js');
+    const vant = require('vant.min.js');
+    window.vant = vant;
+    window.VueI18n = VueI18n;
+
     const { createApp } = window.Vue;
     const { json } = this.attributes;
 
     const todoComponent = require('./component.js');
 
     const app = createApp(todoComponent(json));
+
+    const en = require('./i18n/en');
+    const cn = require('./i18n/cn');
+    const messages = {
+      en,
+      cn
+    };
+    const i18n = VueI18n.createI18n({
+      locale: localStorage.getItem('lang') || 'zh',
+      fallbackLocale: 'en', // 设置本来的语言
+      messages
+    });
+
+    app.use(i18n).use(vant).use(vant.Notify);
 
     app.config.errorHandler = (err) => {
       const text = `[Vue3](${app.version}): ` + err;

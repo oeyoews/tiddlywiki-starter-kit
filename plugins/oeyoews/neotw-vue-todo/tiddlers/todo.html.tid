@@ -1,25 +1,52 @@
 title: $:/plugins/oeyoews/neotw-vue-todo/todo.html
 hide-body: yes
 
-<h2>待办事项 ({{ todos.length - undone }}/{{todos.length}}) </h2>
+<h2>{{ $t('todo.title', {msg: 'title'}) }} ({{ todos.length - undone }}/{{todos.length}}) </h2>
 
 <form @submit.prevent="addTodo" class="flex rounded border-solid border-gray-300 dark:border-gray-500">
-	<input v-model="newTodo" placeholder="添加待办事项" class="w-full my-2 border-none" required="" :autofocus="'autofocus'"/>
-<button class="w-1/6 md:w-1/12 mr-1"> 添加 </button>
+	<input v-model="newTodo" :placeholder="$t('todo.placeholder', { msg: 'placeholder' })" class="w-full my-2 border-none" required="" :autofocus="'autofocus'"/>
+<button class="w-1/6 md:w-1/12 mr-1"> {{ $t('todo.add', {msg: 'add'}) }} </button>
 </form>
 
-<!-- TODO: support wikitext html -->
 <ul class='list-none'>
   <li v-for="todo in filteredTodos" :key="todo.id">
     <input type="checkbox" v-model="todo.done" class="mr-2 cursor-pointer" id="todo.id">
     <label :for="todo.id" :class="{ ['line-through']: todo.done, 'text-gray-400': todo.done }" >{{ todo.text }}</label>
-    <button @click="removeTodo(todo)" title="移除当前待办事项" class="p-1 hover:text-red-400">✕</button>
+    <button @click="removeTodo(todo)" :title="$t('todo.removeTooltip', { msg: 'removeTooltip' })" class="p-1 hover:text-red-400">✕</button>
   </li>
 </ul>
 
-<p v-if="!undone && todos.length >0" class="text-sm text-gray-400"> 全都完成了 </p>
-<p v-if="todos.length === 0" class="text-sm text-gray-400"> 还没有待办事项 </p>
+<p v-if="!undone && todos.length >0" class="text-sm text-gray-400">
+{{ $t('todo.done', {msg: 'done' }) }} </p>
+<p v-if="todos.length === 0" class="text-sm text-gray-400">
+{{ $t('todo.empty') }}
+</p>
+
+</hr>
 
 <button @click="hideCompleted = !hideCompleted"  class="!p-1 border-solid border-gray-300 dark:border-gray-500 my-2" v-if="undone && undone !== todos.length">
-    {{ hideCompleted ? '显示所有待办事项' : '仅显示未完成代办事项' }}
+    {{ hideCompleted ? $t('todo.showtodo') : $t('todo.hidedone') }}
 </button>
+
+<!-- <van-search
+  v-model="searchValue"
+  show-action
+  label=""
+  placeholder="请输入搜索关键词"
+  @search="onSearch"
+>
+  <template #action>
+    <div @click="onClickButton">搜索</div>
+  </template>
+</van-search> -->
+
+<!-- <van-button type="primary" text="组件调用" @click="showNotify" />
+<van-notify v-model:show="show" type="success">
+  <van-icon name="bell" style="margin-right: 4px;" />
+  <span>通知内容</span>
+</van-notify> -->
+
+<h2> {{ $t('todo.setup') }} </h2>
+<div>
+<van-button type="primary" text="Toggle Lang" @click="toggleLang">
+</div>
