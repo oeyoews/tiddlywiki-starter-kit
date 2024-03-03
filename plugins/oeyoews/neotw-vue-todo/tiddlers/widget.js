@@ -29,11 +29,15 @@ class VueTodoWidget extends Widget {
     const domNode = createElement('div', {});
 
     const vuelib = '$:/plugins/oeyoews/neotw-vue3/vue.global.prod.js';
+    const logger = new $tw.utils.Logger('neotw-vue-todo');
+
+    if (!$tw.modules.titles['$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus']) {
+      logger.alert('tailwindcss plugin is missing(optional)');
+    }
 
     if (!$tw.modules.titles[vuelib]) {
-      const logger = new $tw.utils.Logger('neotw-notion-gallery');
       logger.alert(
-        `${vuelib} is missing, please install neotw-vue plugin by oeyoews`
+        `${vuelib} is missing, Please install neotw-vue plugin by @oeyoews`
       );
       return;
     }
