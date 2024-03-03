@@ -20,6 +20,6 @@ hide-body: yes
 <p v-if="!undone && todos.length >0" class="text-sm text-gray-400"> 全都完成了 </p>
 <p v-if="todos.length === 0" class="text-sm text-gray-400"> 还没有待办事项 </p>
 
-<button @click="hideCompleted = !hideCompleted"  class="!p-1 border-solid border-gray-300 dark:border-gray-500 my-2" v-if="undone && undone !== filteredTodos.length">
+<button @click="hideCompleted = !hideCompleted"  class="!p-1 border-solid border-gray-300 dark:border-gray-500 my-2" v-if="undone && undone !== todos.length">
     {{ hideCompleted ? '显示所有待办事项' : '仅显示未完成代办事项' }}
 </button>

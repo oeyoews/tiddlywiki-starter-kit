@@ -31,10 +31,6 @@ class VueTodoWidget extends Widget {
     const vuelib = '$:/plugins/oeyoews/neotw-vue3/vue.global.prod.js';
     const logger = new $tw.utils.Logger('neotw-vue-todo');
 
-    if (!$tw.modules.titles['$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus']) {
-      logger.alert('tailwindcss plugin is missing(optional)');
-    }
-
     if (!$tw.modules.titles[vuelib]) {
       logger.alert(
         `${vuelib} is missing, Please install neotw-vue plugin by @oeyoews`
