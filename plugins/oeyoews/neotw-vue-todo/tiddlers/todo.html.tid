@@ -5,7 +5,7 @@ hide-body: yes
 
 <form @submit.prevent="addTodo" class="flex rounded border-solid border-gray-300 dark:border-gray-500">
 	<input v-model="newTodo" :placeholder="$t('todo.placeholder', { msg: 'placeholder' })" class="w-full my-2 border-none" required="" :autofocus="'autofocus'"/>
-<button class="w-1/6 md:w-1/12 mr-1"> {{ $t('todo.add', {msg: 'add'}) }} </button>
+<button class="w-1/4 md:w-1/12 mr-1"> {{ $t('todo.add', {msg: 'add'}) }} </button>
 </form>
 
 <ul class='list-none'>
@@ -30,6 +30,6 @@ hide-body: yes
 
 <h2> {{ $t('todo.setup') }} </h2>
 
-<select v-model="$i18n.locale" @click="toggleLang">
+<select v-model="$i18n.locale" @click="toggleLang" class="rounded p-1">
   <option v-for="locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale" >{{ locale }}</option>
 </select>
