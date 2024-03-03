@@ -62,10 +62,6 @@ const todo = (json = 'todo.json') => {
       }
     },
 
-    /**
-     * methods 是一些用来更改状态与触发更新的函数 它们可以在模板中作为事件处理器绑定
-     * Vue 自动为 methods 中的方法绑定了永远指向组件实例的 this
-     * */
     methods: {
       addTodo() {
         this.todos.push({
@@ -81,7 +77,6 @@ const todo = (json = 'todo.json') => {
       }
     },
 
-    // 挂载到的 节点
     template: $tw.wiki.getTiddlerText(
       '$:/plugins/oeyoews/neotw-vue-todo/todo.html'
     )
