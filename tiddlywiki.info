@@ -77,7 +77,7 @@
     "tiddlywiki/markdown",
     "oeyoews/markdown-kit",
     "oeyoews/tiddlywiki-publish-tiddler",
-    "oeyoews/neotw-vue3-dev"
+    "oeyoews/neotw-vue3"
   ],
   "build": {
     "javascript": [

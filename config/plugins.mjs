@@ -6,7 +6,7 @@ const enableMarkdown = config.markdown;
 
 const localPlugins = [
   'oeyoews/tiddlywiki-publish-tiddler',
-  'oeyoews/neotw-vue3-dev'
+  'oeyoews/neotw-vue3' // -dev
   // 'oeyoews/neotw-cli-info',
   // 'oeyoews/tiddlywiki-tid2png',
 ];
