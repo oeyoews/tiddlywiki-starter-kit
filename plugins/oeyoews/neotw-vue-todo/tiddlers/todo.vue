@@ -16,7 +16,7 @@
   <li v-for="todo in filteredTodos" :key="todo.id">
     <input type="checkbox" v-model="todo.done" class="mr-2 cursor-pointer" id="todo.id">
     <label :for="todo.id" :class="{ ['line-through']: todo.done, 'text-gray-400': todo.done }" >{{ todo.text }}</label>
-    <button @click="removeTodo(todo)" :title="$t('todo.removeTooltip', { msg: 'removeTooltip' })" class="p-1 hover:text-red-400">✕</button>
+    <button @click="removeTodo(todo)" :title="$t('todo.removeTooltip', { msg: 'removeTooltip' })" class="p-1 hover:text-red-400 rounded-full ml-2 size-8">✕</button>
   </li>
 </ul>
 
