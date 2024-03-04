@@ -17,27 +17,37 @@ hide-body: yes
 
 <!-- task list -->
 <ul class="list-none my-4">
-  <li v-for="(todo, index) in filteredTodos" :key="todo.id" class="group">
-
+<div class="flex justify-between items-center" v-for="(todo, index) in filteredTodos" :key="todo.id"  class="group">
+  <li class="truncate">
     <input type="checkbox" v-model="todo.done" class="mr-2 cursor-pointer" id="todo.id" >
     <label :for="todo.id" :class="{ ['line-through']: todo.done, 'text-gray-400': todo.done }" >{{ todo.text }}</label>
-
-    <span v-if="todo.date" class="text-gray-400 text-sm mx-2">
+  </li>
+    <div v-if="todo.date" class="text-gray-400 text-sm mx-2">
      {{ todo.date }}
-    </span>
     <button @click="removeTodo(index)" :title="t('todo.removeTooltip', { msg: 'removeTooltip' })" class="p-1 hover:text-red-400 rounded-full ml-2 size-8 opacity-0 group-hover:opacity-100 transition-all">
     ✕
     </button>
-  </li>
+    </div>
+</div>
+
 </ul>
 
-<Transition>
+<!-- tip -->
+<!-- <Transition>
 <p v-if="!undone && todos.length > 0" class="text-sm text-gray-400">
 {{ t('todo.done') }} </p>
 <p v-if="todos.length === 0" class="text-sm text-gray-400">
 {{ t('todo.empty') }}
 </p>
-</Transition>
+</Transition> -->
+
+<button
+  @click="resetTodos"
+  class="!p-1 border-solid border-gray-300 dark:border-gray-500 my-2 mx-2"
+  v-if="todos.length"
+>
+    {{ t('todo.resetTodos') }}
+</button>
 
 <Transition>
 <button
@@ -47,16 +57,8 @@ hide-body: yes
 >
     {{ hideCompleted ? t('todo.showtodo') : t('todo.hidedone') }}
 </button>
-
 </Transition>
 
-<button
-  @click="resetTodos"
-  class="!p-1 border-solid border-gray-300 dark:border-gray-500 my-2 mx-2"
-  v-if="todos.length"
->
-    {{ t('todo.resetTodos') }}
-</button>
 
 <h2> {{ t('todo.setup') }} </h2>
 
