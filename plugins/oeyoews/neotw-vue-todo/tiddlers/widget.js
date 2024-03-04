@@ -71,11 +71,12 @@ class VueTodoWidget extends Widget {
       Русский: ru
     };
 
-    let locale;
+    let locale = localStorage.getItem('lang');
     if (!locale) {
       locale = 'English';
       localStorage.setItem('lang', locale);
     }
+
     const i18n = VueI18n.createI18n({
       locale,
       fallbackLocale: 'English', // 设置本来的语言
