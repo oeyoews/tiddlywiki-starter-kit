@@ -7,6 +7,10 @@ module-type: library
 
 const { toRaw, computed, ref } = window.Vue;
 
+// i18n
+const VueI18n = require('vue-i18n.global.prod.js');
+// window.VueI18n = VueI18n;
+
 const todo = (json = 'todo.json') => {
   const component = {
     setup() {
@@ -14,6 +18,8 @@ const todo = (json = 'todo.json') => {
       const btnClass = ref(
         'border-solid border-gray-100 dark:border-gray-400 p-2'
       );
+
+      const { t } = VueI18n.useI18n();
 
       const todos = ref(
         $tw.wiki.tiddlerExists(json)
@@ -34,6 +40,7 @@ const todo = (json = 'todo.json') => {
       });
 
       return {
+        t,
         undone,
         todos,
         btnClass,
@@ -85,7 +92,7 @@ const todo = (json = 'todo.json') => {
       },
 
       resetTodos() {
-        const confirm = window.confirm('remove todos');
+        const confirm = window.confirm(this.t('todo.resetTodos'));
         confirm ? (this.todos = []) : null;
       },
       removeTodo(todo) {

@@ -78,13 +78,13 @@ class VueTodoWidget extends Widget {
     }
 
     const i18n = VueI18n.createI18n({
+      legacy: false,
       locale,
       fallbackLocale: 'English', // 设置本来的语言
       messages
     });
 
     app.use(i18n);
-    // .use(vant).use(vant.Notify);
 
     app.config.errorHandler = (err) => {
       const text = `[Vue3](${app.version}): ` + err;

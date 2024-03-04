@@ -1,5 +1,5 @@
 <h2>
-{{ $t('todo.title', {msg: 'title'}) }} ({{ todos.length - undone }}/{{todos.length}})
+{{ t('todo.title', {msg: 'title'}) }} ({{ todos.length - undone }}/{{todos.length}})
 </h2>
 
 <!-- add todo bar -->
@@ -7,9 +7,9 @@
   @submit.prevent="addTodo"
   class="flex rounded border-solid border-gray-300 dark:border-gray-500"
 >
-	<input v-model="newTodo" :placeholder="$t('todo.placeholder', { msg: 'placeholder' })" class="w-full my-2 border-none" required="" :autofocus="'autofocus'"/>
+	<input v-model="newTodo" :placeholder="t('todo.placeholder', { msg: 'placeholder' })" class="w-full my-2 border-none" required="" :autofocus="'autofocus'"/>
 <button class="w-1/4 md:w-1/12 mr-1">
- {{ $t('todo.add', {msg: 'add'}) }}
+ {{ t('todo.add', {msg: 'add'}) }}
 </button>
 </form>
 
@@ -22,7 +22,7 @@
     <span v-if="todo.date" class="text-gray-400 text-sm mx-2">
      {{ todo.date }}
     </span>
-    <button @click="removeTodo(todo)" :title="$t('todo.removeTooltip', { msg: 'removeTooltip' })" class="p-1 hover:text-red-400 rounded-full ml-2 size-8 opacity-0 group-hover:opacity-100 transition-all">
+    <button @click="removeTodo(todo)" :title="t('todo.removeTooltip', { msg: 'removeTooltip' })" class="p-1 hover:text-red-400 rounded-full ml-2 size-8 opacity-0 group-hover:opacity-100 transition-all">
     ✕
     </button>
   </li>
@@ -30,9 +30,9 @@
 
 <Transition>
 <p v-if="!undone && todos.length > 0" class="text-sm text-gray-400">
-{{ $t('todo.done') }} </p>
+{{ t('todo.done') }} </p>
 <p v-if="todos.length === 0" class="text-sm text-gray-400">
-{{ $t('todo.empty') }}
+{{ t('todo.empty') }}
 </p>
 </Transition>
 
@@ -42,7 +42,7 @@
   class="!p-1 border-solid border-gray-300 dark:border-gray-500 my-2 mx-2"
   v-if="undone && undone !== todos.length"
 >
-    {{ hideCompleted ? $t('todo.showtodo') : $t('todo.hidedone') }}
+    {{ hideCompleted ? t('todo.showtodo') : t('todo.hidedone') }}
 </button>
 
 </Transition>
@@ -52,10 +52,10 @@
   class="!p-1 border-solid border-gray-300 dark:border-gray-500 my-2 mx-2"
   v-if="todos.length"
 >
-    {{ $t('todo.resetTodos') }}
+    {{ t('todo.resetTodos') }}
 </button>
 
-<h2> {{ $t('todo.setup') }} </h2>
+<h2> {{ t('todo.setup') }} </h2>
 
 <!-- lang -->
 <select v-model="$i18n.locale" @click="toggleLang" class="rounded p-1">
