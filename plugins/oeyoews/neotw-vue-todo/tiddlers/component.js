@@ -9,7 +9,6 @@ const { toRaw, computed, ref } = window.Vue;
 
 // i18n
 const VueI18n = require('vue-i18n.global.prod.js');
-// window.VueI18n = VueI18n;
 
 const todo = (json = 'todo.json') => {
   const component = {
