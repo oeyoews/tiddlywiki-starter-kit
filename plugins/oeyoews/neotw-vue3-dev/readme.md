@@ -22,6 +22,8 @@ const { ref, createApp } = vue
 
 * mobile: vant 230kb js+ 200kb css
 * pc: element: 将近 1000kb
+* naive ui: 1.65Mb https://www.naiveui.com/zh-CN/light/docs/umd
+* antd: 1.5mb
 
 ## NOTE
 

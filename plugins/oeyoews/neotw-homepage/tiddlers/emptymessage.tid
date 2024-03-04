@@ -12,6 +12,13 @@ title: $:/config/EmptyStoryMessage
 </h1>
       <p class="text-lg text-center">
       This is an online website built using
+        <a target="_blank" href="https://vuejs.org">
+          <$iconify icon="devicon:vuejs" class="text-black dark:text-white" />
+        </a>
+        <a target="_blank" href="https://github.com/markdown-it/markdown-it">
+          <$iconify icon="material-symbols:markdown-sharp
+" class="text-black dark:text-white" />
+        </a>
         <a target="_blank" href="https://tiddlywiki.com">
           <$iconify icon="simple-icons:tiddlywiki" class="text-black dark:text-white" />
         </a>
