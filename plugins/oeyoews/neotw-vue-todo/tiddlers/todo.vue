@@ -1,5 +1,5 @@
 <h2>
-{{ t('todo.title', {msg: 'title'}) }} ({{ todos.length - undone }}/{{todos.length}})
+{{ t('todo.title') }} ({{ todos.length - undone }}/{{todos.length}})
 </h2>
 
 <!-- add todo bar -->
