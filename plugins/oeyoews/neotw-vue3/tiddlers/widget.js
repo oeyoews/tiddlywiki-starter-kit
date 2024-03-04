@@ -33,8 +33,6 @@ class VueExampleWidget extends Widget {
     }
 
     if (!window.Vue) return;
-    // const vant = require('vant.min.js');
-    // window.vant = vant;
 
     const { createApp } = window.Vue;
 

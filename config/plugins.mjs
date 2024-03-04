@@ -45,6 +45,7 @@ const oeyoewsPlugins = [
   // 'tiddlywiki-prettier',
   // 'mermaid-tiny', // markdown-it-mermaid 支持前，我暂时不用这个版本, 因为同时要装两个版本
   'neotw-dropdown-better',
+  'vue-table',
   'tiddler-fullscreen',
   'neotw-vue-todo',
   // 'vue3-vant',
