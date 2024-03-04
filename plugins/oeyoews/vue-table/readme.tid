@@ -1,0 +1,12 @@
+title: $:/plugins/oeyoews/vue-table/readme
+description: vue-table
+
+<$vue-table />
+
+!! TODO
+
+* 黑暗模式适配
+* add i18n support
+
+!! Motivation
+
