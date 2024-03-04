@@ -15,7 +15,8 @@ const onlinePlugins = [
   'oeyoews/neotw-error-better',
   'oeyoews/tiddlywiki-github-share',
   'oeyoews/neotw-notranslate',
-  'oeyoews/neotw-vue3'
+  'oeyoews/neotw-vue3',
+  'oeyoews/vue-table'
 ];
 
 // @deprecated, please use cm6
@@ -45,7 +46,6 @@ const oeyoewsPlugins = [
   // 'tiddlywiki-prettier',
   // 'mermaid-tiny', // markdown-it-mermaid 支持前，我暂时不用这个版本, 因为同时要装两个版本
   'neotw-dropdown-better',
-  'vue-table',
   'tiddler-fullscreen',
   'neotw-vue-todo',
   // 'vue3-vant',
