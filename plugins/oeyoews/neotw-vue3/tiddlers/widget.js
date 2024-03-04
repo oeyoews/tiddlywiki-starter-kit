@@ -66,6 +66,10 @@ class VueExampleWidget extends Widget {
 
     // 注册全局组件
     // app.component('TodoDeleteButton', TodoDeleteButton)
+    // https://www.kuangstudy.com/bbs/1348786813594001410
+    // app.component('dv', {
+    //   template: `<div><slot /></div>`
+    // });
 
     // 挂载
     app.mount(domNode);
