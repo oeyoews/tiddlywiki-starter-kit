@@ -15,14 +15,15 @@
 
 <!-- task list -->
 <ul class="list-none my-4">
-  <li v-for="todo in filteredTodos" :key="todo.id" class="group">
-    <input type="checkbox" v-model="todo.done" class="mr-2 cursor-pointer" id="todo.id">
+  <li v-for="(todo, index) in filteredTodos" :key="todo.id" class="group">
+
+    <input type="checkbox" v-model="todo.done" class="mr-2 cursor-pointer" id="todo.id" >
     <label :for="todo.id" :class="{ ['line-through']: todo.done, 'text-gray-400': todo.done }" >{{ todo.text }}</label>
 
     <span v-if="todo.date" class="text-gray-400 text-sm mx-2">
      {{ todo.date }}
     </span>
-    <button @click="removeTodo(todo)" :title="t('todo.removeTooltip', { msg: 'removeTooltip' })" class="p-1 hover:text-red-400 rounded-full ml-2 size-8 opacity-0 group-hover:opacity-100 transition-all">
+    <button @click="removeTodo(index)" :title="t('todo.removeTooltip', { msg: 'removeTooltip' })" class="p-1 hover:text-red-400 rounded-full ml-2 size-8 opacity-0 group-hover:opacity-100 transition-all">
     ✕
     </button>
   </li>

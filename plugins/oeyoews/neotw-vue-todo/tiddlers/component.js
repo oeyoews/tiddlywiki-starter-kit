@@ -83,9 +83,10 @@ const todo = (json = 'todo.json') => {
       addTodo() {
         this.todos.push({
           id: this.todos.length,
-          text: this.newTodo,
-          date: new Date().toLocaleString(),
-          done: false
+          text: this.newTodo.trim(),
+          date: new Date().toLocaleString()
+          // done: false,
+          // editing: false
         });
         this.newTodo = '';
       },
@@ -94,8 +95,30 @@ const todo = (json = 'todo.json') => {
         const confirm = window.confirm(this.t('todo.resetTodos'));
         confirm ? (this.todos = []) : null;
       },
-      removeTodo(todo) {
-        this.todos = this.todos.filter((t) => t !== todo);
+
+      startEdit(index) {
+        const todo = this.todos.value[index];
+        if (!Object.prototype.hasOwnProperty.call(todo, 'editing')) {
+          todo.editing = true;
+        } else {
+          todo.editing = true;
+        }
+      },
+      cancelEdit(index) {
+        this.todos[index].editing = false;
+      },
+
+      updateTodoItem(index) {
+        const todo = this.todos[index];
+        if (todo.draftText.trim() === '') {
+          this.removeTodo(index);
+        } else {
+          todo[index].text = todo.draftText;
+        }
+      },
+
+      removeTodo(index) {
+        this.todos.splice(index, 1);
       }
     },
 

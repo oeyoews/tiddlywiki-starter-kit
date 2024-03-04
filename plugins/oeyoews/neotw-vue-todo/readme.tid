@@ -12,4 +12,4 @@ description: neotw-vue-todo
 !! TODO
 
 * 提供清晰的界面展示用户的所有任务，包括标题、描述、截止日期、优先级等信息。
-* 允许编辑已有的任务
+* 允许编辑已有的任务 contenteditable or https://mdn.github.io/todo-vue/
