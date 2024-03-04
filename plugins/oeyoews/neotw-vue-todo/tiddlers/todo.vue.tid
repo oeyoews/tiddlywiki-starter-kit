@@ -16,8 +16,8 @@ hide-body: yes
 </form>
 
 <!-- task list -->
-<ul class="list-none my-4">
-<div class="flex justify-between items-center" v-for="(todo, index) in filteredTodos" :key="todo.text"  class="group" :id="todo.text">
+<ul class="list-none my-4" key="task-list">
+<div class="flex justify-between items-center group" v-for="(todo, index) in filteredTodos" :key="todo.id" >
   <li class="truncate">
     <input type="checkbox" v-model="todo.done" class="mr-2 cursor-pointer" id="todo.id" >
     <label :for="todo.id" :class="{ ['line-through']: todo.done, 'text-gray-400': todo.done }" >{{ todo.text }}</label>
