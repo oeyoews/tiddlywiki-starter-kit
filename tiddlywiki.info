@@ -20,7 +20,6 @@
     "oeyoews/markdown-it-twemoji",
     "oeyoews/neotw-dropdown-better",
     "oeyoews/tiddler-fullscreen",
-    "oeyoews/neotw-vue3",
     "oeyoews/neotw-vue-todo",
     "oeyoews/vue-i18n",
     "oeyoews/mermaid-widget",
@@ -77,7 +76,8 @@
     "oeyoews/neotw-homepage",
     "tiddlywiki/markdown",
     "oeyoews/markdown-kit",
-    "oeyoews/tiddlywiki-publish-tiddler"
+    "oeyoews/tiddlywiki-publish-tiddler",
+    "oeyoews/neotw-vue3-dev"
   ],
   "build": {
     "javascript": [

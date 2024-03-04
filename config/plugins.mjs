@@ -5,7 +5,8 @@ import config from './index.js';
 const enableMarkdown = config.markdown;
 
 const localPlugins = [
-  'oeyoews/tiddlywiki-publish-tiddler'
+  'oeyoews/tiddlywiki-publish-tiddler',
+  'oeyoews/neotw-vue3-dev'
   // 'oeyoews/neotw-cli-info',
   // 'oeyoews/tiddlywiki-tid2png',
 ];
@@ -13,7 +14,8 @@ const localPlugins = [
 const onlinePlugins = [
   'oeyoews/neotw-error-better',
   'oeyoews/tiddlywiki-github-share',
-  'oeyoews/neotw-notranslate'
+  'oeyoews/neotw-notranslate',
+  'oeyoews/neotw-vue3'
 ];
 
 // @deprecated, please use cm6
@@ -44,7 +46,6 @@ const oeyoewsPlugins = [
   // 'mermaid-tiny', // markdown-it-mermaid 支持前，我暂时不用这个版本, 因为同时要装两个版本
   'neotw-dropdown-better',
   'tiddler-fullscreen',
-  'neotw-vue3',
   'neotw-vue-todo',
   // 'vue3-vant',
   'vue-i18n',

@@ -31,17 +31,18 @@ class VueTodoWidget extends Widget {
     const vuelib = '$:/plugins/oeyoews/neotw-vue3/vue.global.prod.js';
     const logger = new $tw.utils.Logger('neotw-vue-todo');
 
-    if (!$tw.modules.titles[vuelib]) {
-      logger.alert(
-        `${vuelib} is missing, Please install neotw-vue plugin by @oeyoews`
-      );
-      return;
-    }
     if (!window.Vue) {
       window.Vue = require(vuelib);
     }
 
-    if (!window.Vue) return;
+    if (!window.Vue) {
+      // if (!$tw.modules.titles[vuelib]) {
+      logger.alert(
+        `${vuelib} is missing, Please install neotw-vue plugin by @oeyoews`
+      );
+      return;
+      // }
+    }
 
     // i18n
     const VueI18n = require('vue-i18n.global.prod.js');
