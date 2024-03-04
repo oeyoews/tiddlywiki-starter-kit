@@ -12,9 +12,7 @@ const vtable = (json = 'table.json') => {
     setup() {
       const xTable = ref();
       const tableData = ref(
-        $tw.wiki.tiddlerExists(json)
-          ? JSON.parse($tw.wiki.getTiddlerData(json))
-          : []
+        $tw.wiki.tiddlerExists(json) ? $tw.wiki.getTiddlerData(json) : []
       );
 
       // TODO: 给json 加上 global.list, 防止已有数据被覆盖
@@ -61,16 +59,23 @@ const vtable = (json = 'table.json') => {
       };
     },
 
-    // mounted() { },
-
     watch: {
       tableData: {
         handler() {
           const data = toRaw(this.xTable.getTableData().tableData);
-          // update stored data
-          $tw.wiki.setTiddlerData(json, JSON.stringify(data));
+          $tw.wiki.setText(json, 'text', null, JSON.stringify(data), {
+            suppressTimestamp: true
+          });
         },
         deep: true // 深度监听
+      }
+    },
+
+    mounted() {
+      if (!$tw.wiki.tiddlerExists(json)) {
+        $tw.wiki.setText(json, 'type', null, 'application/json', {
+          suppressTimestamp: true
+        });
       }
     },
 

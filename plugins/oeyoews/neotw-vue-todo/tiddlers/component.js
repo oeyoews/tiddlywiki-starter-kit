@@ -21,9 +21,7 @@ const todo = (json = 'todo.json') => {
       const { t } = VueI18n.useI18n();
 
       const todos = ref(
-        $tw.wiki.tiddlerExists(json)
-          ? JSON.parse($tw.wiki.getTiddlerData(json))
-          : []
+        $tw.wiki.tiddlerExists(json) ? $tw.wiki.getTiddlerData(json) : []
       );
 
       const hideCompleted = ref(false);
@@ -49,6 +47,14 @@ const todo = (json = 'todo.json') => {
       };
     },
 
+    mounted() {
+      if (!$tw.wiki.tiddlerExists(json)) {
+        $tw.wiki.setText(json, 'type', null, 'application/json', {
+          suppressTimestamp: true
+        });
+      }
+    },
+
     directives: {
       focus: {
         mounted(el) {
@@ -61,7 +67,9 @@ const todo = (json = 'todo.json') => {
       todos: {
         handler() {
           const data = toRaw(this.todos);
-          $tw.wiki.setTiddlerData(json, JSON.stringify(data));
+          $tw.wiki.setText(json, 'text', null, JSON.stringify(data), {
+            suppressTimestamp: true
+          });
         },
         deep: true
       }
