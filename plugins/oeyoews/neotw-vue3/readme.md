@@ -26,6 +26,28 @@ const { ref, createApp } = vue
 
 * 更多用法请参考 [Vue3 官方文档](https://cn.vuejs.org/guide/essentials/application.html)
 
+## devtools
+
+```js
+// 1.获取 Vue 实例, 先定位到 vue 节点，
+let vue3 = $0.__vue_app__; (重点注意 $0)
+
+// 2.强制开启
+window.__VUE_DEVTOOLS_GLOBAL_HOOK__.apps.push({
+    app: vue3,
+    version: vue3.version,
+    types: {
+      Comment: Symbol("Comment"),
+      Fragment: Symbol("Fragment"),
+      Static: Symbol("Static"),
+      Text: Symbol("Text"),
+    },
+})
+window.__VUE_DEVTOOLS_GLOBAL_HOOK__.enabled = true
+
+链接：https://juejin.cn/post/7052955565944733709
+```
+
 ## vue3 ui 组件库 推荐
 
 * mobile: vant 230kb js+ 200kb css
