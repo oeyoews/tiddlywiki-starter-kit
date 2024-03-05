@@ -67,7 +67,7 @@
 
   <p ref="pElementRef">还没挂载</p>
 
-  <h2>Fetch Random dog</h2>
+  <h2>Random dog</h2>
 
   <div class="my-2">
     <button
