@@ -66,8 +66,14 @@ module.exports = {
       date.value = `${formatDate(start)} - ${formatDate(end)}`;
     };
 
+    const dogurl = ref('');
+    const dogvideourl = ref('');
+    const dogurlstatus = ref('');
     // 返回值会暴露给模板和其他的选项式 API 钩子
     return {
+      dogvideourl,
+      dogurlstatus,
+      dogurl,
       date,
       show,
       onConfirm,
@@ -125,6 +131,26 @@ module.exports = {
 
     toggleRender() {
       this.renderComponent = !this.renderComponent;
+    },
+
+    getDogImg() {
+      this.dogurlstatus = 'loading';
+      fetch('https://random.dog/woof.json')
+        .then((res) => {
+          return res.json();
+        })
+        .then((data) => {
+          this.dogurlstatus = 'success';
+          if (data.url.split('.').pop() === 'mp4') {
+            dogvideourl = data.url;
+          } else {
+            this.dogurl = data.url;
+          }
+          // TODO: 判断类型 img or video
+        })
+        .finally(() => {
+          this.dogurlstatus = '';
+        });
     },
 
     toggleSidebar() {
