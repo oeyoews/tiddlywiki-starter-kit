@@ -17,6 +17,7 @@ module.exports = {
     hidedone: 'hide complted todo',
     setup: 'Todo Setup',
     toggleLang: 'toggleLang',
-    resetTodos: 'remove all todos'
+    resetTodos: 'remove all todos',
+    notify: 'task added'
   }
 };

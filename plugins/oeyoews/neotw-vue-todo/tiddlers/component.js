@@ -6,6 +6,7 @@ module-type: library
 \*/
 
 const { toRaw, computed, ref } = window.Vue;
+const { toast } = require('vue3-toastify.js');
 
 // i18n
 const VueI18n = require('vue-i18n.global.prod.js');
@@ -52,6 +53,10 @@ const todo = (json = 'todo.json') => {
         $tw.wiki.setText(json, 'type', null, 'application/json', {
           suppressTimestamp: true
         });
+
+        $tw.wiki.setText(json, 'text', null, '[]', {
+          suppressTimestamp: true
+        });
       }
     },
 
@@ -75,8 +80,6 @@ const todo = (json = 'todo.json') => {
       }
     },
 
-    // mounted() {},
-
     // computed: {
     //   resetTodo: {
     //     get() {},
@@ -85,6 +88,13 @@ const todo = (json = 'todo.json') => {
     // },
 
     methods: {
+      notify() {
+        toast(this.t('todo.notify'), {
+          theme: 'auto',
+          type: 'default',
+          dangerouslyHTMLString: true
+        });
+      },
       toggleLang() {
         localStorage.setItem('lang', this.$i18n.locale);
       },
@@ -97,6 +107,7 @@ const todo = (json = 'todo.json') => {
           // editing: false
         });
         this.newTodo = '';
+        this.notify();
       },
 
       resetTodos() {

@@ -49,6 +49,7 @@ const oeyoewsPlugins = [
   'tiddler-fullscreen',
   'neotw-vue-todo',
   // 'vue3-vant',
+  'vue3-toastify',
   'vue-i18n',
   'mermaid-widget',
   'mermaid930',

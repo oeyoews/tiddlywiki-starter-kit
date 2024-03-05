@@ -1,0 +1,15 @@
+{
+  "title": "$:/plugins/oeyoews/vue3-toastify",
+  "description": "vue3-toastify",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.3.0",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "vue3-toastify",
+  "meat#disabled": "yes",
+  "qrcode": "yes",
+  "created": "2024-03-05",
+  "dependents": [],
+  "list": "readme"
+}

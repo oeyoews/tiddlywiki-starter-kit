@@ -18,6 +18,7 @@ module.exports = {
     hidedone: '仅显示未完成待办事项',
     setup: '配置',
     resetTodos: '清空所有任务',
-    toggleLang: '切换语言'
+    toggleLang: '切换语言',
+    notify: '任务已添加'
   }
 };

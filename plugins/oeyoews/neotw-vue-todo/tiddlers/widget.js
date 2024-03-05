@@ -9,7 +9,6 @@ neotw-vue-todo widget
 
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 
-/** @preserve */
 class VueTodoWidget extends Widget {
   constructor(parseTreeNode, options) {
     super(parseTreeNode, options);
@@ -47,6 +46,7 @@ class VueTodoWidget extends Widget {
     // i18n
     const VueI18n = require('vue-i18n.global.prod.js');
     window.VueI18n = VueI18n;
+    const Vue3Toastify = require('vue3-toastify.js');
 
     // vue ui lib
     // const vant = require('vant.min.js');
@@ -58,6 +58,7 @@ class VueTodoWidget extends Widget {
     const todoComponent = require('./component.js');
 
     const app = createApp(todoComponent(json));
+    app.use(Vue3Toastify);
 
     const en = require('./i18n/en');
     const cn = require('./i18n/cn');

@@ -77,6 +77,10 @@ const vtable = (json = 'table.json') => {
           suppressTimestamp: true
         });
       }
+
+      $tw.wiki.setText(json, 'text', null, '[]', {
+        suppressTimestamp: true
+      });
     },
 
     methods: {
