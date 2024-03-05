@@ -6,6 +6,7 @@ on:
       - main
 
 concurrency:
+  group: make-template
   cancel-in-progress: true
 
 jobs:
