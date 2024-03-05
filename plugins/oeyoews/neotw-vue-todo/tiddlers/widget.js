@@ -57,49 +57,53 @@ class VueTodoWidget extends Widget {
 
     const todoComponent = require('./component.js');
 
-    const app = createApp(todoComponent(json));
-    app.use(Vue3Toastify);
+    try {
+      const app = createApp(todoComponent(json));
+      app.use(Vue3Toastify);
 
-    const en = require('./i18n/en');
-    const cn = require('./i18n/cn');
-    const ja = require('./i18n/ja');
-    const fr = require('./i18n/fr');
-    const ru = require('./i18n/ru');
-    const messages = {
-      English: en,
-      中文: cn,
-      日本語: ja,
-      Français: fr,
-      Русский: ru
-    };
+      const en = require('./i18n/en');
+      const cn = require('./i18n/cn');
+      const ja = require('./i18n/ja');
+      const fr = require('./i18n/fr');
+      const ru = require('./i18n/ru');
+      const messages = {
+        English: en,
+        中文: cn,
+        日本語: ja,
+        Français: fr,
+        Русский: ru
+      };
 
-    let locale = localStorage.getItem('lang');
-    if (!locale) {
-      locale = 'English';
-      localStorage.setItem('lang', locale);
+      let locale = localStorage.getItem('lang');
+      if (!locale) {
+        locale = 'English';
+        localStorage.setItem('lang', locale);
+      }
+
+      const i18n = VueI18n.createI18n({
+        legacy: false,
+        locale,
+        fallbackLocale: 'English', // 设置本来的语言
+        messages
+      });
+
+      app.use(i18n);
+
+      app.config.errorHandler = (err) => {
+        const text = `[Vue3](${app.version}): ` + err;
+        console.error(text);
+        domNode.textContent = text;
+        domNode.style.color = 'red';
+      };
+
+      // 挂载
+      app.mount(domNode);
+
+      parent.insertBefore(domNode, nextSibling);
+      this.domNodes.push(domNode);
+    } catch (e) {
+      console.error(e);
     }
-
-    const i18n = VueI18n.createI18n({
-      legacy: false,
-      locale,
-      fallbackLocale: 'English', // 设置本来的语言
-      messages
-    });
-
-    app.use(i18n);
-
-    app.config.errorHandler = (err) => {
-      const text = `[Vue3](${app.version}): ` + err;
-      console.error(text);
-      domNode.textContent = text;
-      domNode.style.color = 'red';
-    };
-
-    // 挂载
-    app.mount(domNode);
-
-    parent.insertBefore(domNode, nextSibling);
-    this.domNodes.push(domNode);
   }
 
   refresh() {

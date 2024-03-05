@@ -5,7 +5,7 @@ module-type: library
 
 \*/
 
-const { toRaw, computed, ref, reactive } = window.Vue;
+const { onMounted, toRaw, computed, ref, reactive } = window.Vue;
 
 module.exports = {
   // components usage
@@ -69,6 +69,12 @@ module.exports = {
     const dogurl = ref('');
     const dogvideourl = ref('');
     const dogurlstatus = ref('');
+
+    // or use mount method
+    // onMounted(() => {
+    //   console.log('dmeo');
+    // });
+
     // 返回值会暴露给模板和其他的选项式 API 钩子
     return {
       dogvideourl,

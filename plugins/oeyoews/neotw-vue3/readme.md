@@ -8,6 +8,8 @@ https://unpkg.com/browse/vue@3.4.21/dist/vue.global.prod.js
 
 ## For developers
 
+* 组合式 选项式两种风格都支持，也支持两种写法掺杂, 真正原汁原味的 vue 代码, 这两种写法表面上最大的区别就是前者直接将所有的代码放在了 setup 函数里面，后者是将 代码分散到了多个方法里面. 需要注意的是一些微小的区别，比如 this, 解包问题
+
 ```js
 const vue = require('$:/plugins/oeyoews/neotw-vue3/vue.global.prod.js')
 const { ref, createApp } = vue
@@ -21,7 +23,6 @@ const { ref, createApp } = vue
 * vue-vant
 * floating-vue(wip)
 
-* 此插件使用 `vue.global.prod.js`, 所以不依赖于任何构建工具，所以无法使用组合式 (composition)API 的写法，只能使用选项式 (options)API.
 * 使用示例参照 https://github.com/oeyoews/tiddlywiki-starter-kit/blob/main/plugins/oeyoews/neotw-vue3/tiddlers/widget.js
 
 * 更多用法请参考 [Vue3 官方文档](https://cn.vuejs.org/guide/essentials/application.html)

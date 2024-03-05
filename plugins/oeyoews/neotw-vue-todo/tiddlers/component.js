@@ -5,7 +5,7 @@ module-type: library
 
 \*/
 
-const { toRaw, computed, ref } = window.Vue;
+const { watch, watchEffect, onMounted, toRaw, computed, ref } = window.Vue;
 const { toast } = require('vue3-toastify.js');
 
 // i18n
@@ -22,12 +22,16 @@ const todo = (json = 'todo.json') => {
       const { t } = VueI18n.useI18n();
 
       const todos = ref(
-        $tw.wiki.tiddlerExists(json) ? $tw.wiki.getTiddlerData(json) : []
+        // TIP: 使用gettiddlertext 某个条目是否存在或者是否文本温控, 而不是使用tiddlerexist, 并且他也无法检测系统条目
+        $tw.wiki.getTiddlerText(json) ? $tw.wiki.getTiddlerData(json) : []
       );
 
       const hideCompleted = ref(false);
 
       const filteredTodos = computed(() => {
+        if (!Array.isArray(todos.value)) {
+          return [];
+        }
         return hideCompleted.value
           ? todos.value.filter((t) => !t.done) // .reverse()
           : todos.value; // cannot reverse method, use toraw is also
@@ -45,6 +49,21 @@ const todo = (json = 'todo.json') => {
         () => (done.value / todos.value.length).toFixed(2) * 100 + '%'
       );
 
+      watch(
+        todos,
+        () => {
+          const data = toRaw(todos.value);
+          // NOTE: 这里数据没有stringify, settiddlerdata 会自动带上转义符， 如果使用setText, 需要手动检查type 字段
+          // TIP: 这里不进行minify, 便于用户查看数据
+          $tw.wiki.setTiddlerData(json, data, null, {
+            suppressTimestamp: true
+          });
+        },
+        {
+          deep: true
+        }
+      );
+
       return {
         progress,
         t,
@@ -58,35 +77,11 @@ const todo = (json = 'todo.json') => {
       };
     },
 
-    mounted() {
-      if (!$tw.wiki.tiddlerExists(json)) {
-        $tw.wiki.setText(json, 'type', null, 'application/json', {
-          suppressTimestamp: true
-        });
-
-        $tw.wiki.setText(json, 'text', null, '[]', {
-          suppressTimestamp: true
-        });
-      }
-    },
-
     directives: {
       focus: {
         mounted(el) {
           el.focus();
         }
-      }
-    },
-
-    watch: {
-      todos: {
-        handler() {
-          const data = toRaw(this.todos);
-          $tw.wiki.setText(json, 'text', null, JSON.stringify(data), {
-            suppressTimestamp: true
-          });
-        },
-        deep: true
       }
     },
 

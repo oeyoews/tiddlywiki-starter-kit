@@ -63,24 +63,12 @@ const vtable = (json = 'table.json') => {
       tableData: {
         handler() {
           const data = toRaw(this.xTable.getTableData().tableData);
-          $tw.wiki.setText(json, 'text', null, JSON.stringify(data), {
+          $tw.wiki.setTiddlerData(json, data, null, {
             suppressTimestamp: true
           });
         },
         deep: true // 深度监听
       }
-    },
-
-    mounted() {
-      if (!$tw.wiki.tiddlerExists(json)) {
-        $tw.wiki.setText(json, 'type', null, 'application/json', {
-          suppressTimestamp: true
-        });
-      }
-
-      $tw.wiki.setText(json, 'text', null, '[]', {
-        suppressTimestamp: true
-      });
     },
 
     methods: {
