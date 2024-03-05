@@ -13,6 +13,13 @@ const vue = require('$:/plugins/oeyoews/neotw-vue3/vue.global.prod.js')
 const { ref, createApp } = vue
 ```
 
+## 第三方 Vue3 库 的 Tiddlywiki5 插件
+
+* vue-i18n
+* vue-toastify
+* vue-table
+* vue-vant
+
 * 此插件使用 `vue.global.prod.js`, 所以不依赖于任何构建工具，所以无法使用组合式 (composition)API 的写法，只能使用选项式 (options)API.
 * 使用示例参照 https://github.com/oeyoews/tiddlywiki-starter-kit/blob/main/plugins/oeyoews/neotw-vue3/tiddlers/widget.js
 
