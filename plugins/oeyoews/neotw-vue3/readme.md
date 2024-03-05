@@ -28,7 +28,7 @@ const { ref, createApp } = vue
 
 ## devtools
 
-* 由于是局部 vue 应用，所以可以参考这篇文章开启 devtools, 但是似乎元素定位用不了
+* 由于是局部 vue 应用，所以可以参考这篇文章开启 devtools, 注意使用 neotw-vue3-dev 进行调试, 而不是 neotw-vue3 插件, 因为无法调试数据在 prod 模式下
 
 ```js
 // 1.获取 Vue 实例, 先定位到 vue 节点，
