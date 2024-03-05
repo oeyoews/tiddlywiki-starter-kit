@@ -13,7 +13,7 @@ type: text/css
 }
 
 #todo-progress {
-  height: 3px;
+  height: 10px;
   width: 100%;
   border-radius: 2px;
   overflow: hidden;
