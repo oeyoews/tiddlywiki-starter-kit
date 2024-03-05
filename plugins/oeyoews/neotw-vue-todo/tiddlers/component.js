@@ -104,7 +104,7 @@ const todo = (json = 'todo.json') => {
       addTodo() {
         this.todos.push({
           id: this.todos.length,
-          text: this.newTodo.trim(),
+          text: this.newTodo,
           date: new Date().toLocaleString()
           // done: false,
           // editing: false

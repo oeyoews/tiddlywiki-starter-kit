@@ -10,7 +10,7 @@
   class="flex rounded border-solid border-gray-300 dark:border-gray-500"
 >
     <input
-      v-model="newTodo"
+      v-model.trim="newTodo"
       :placeholder="t('todo.placeholder', { msg: 'placeholder' })"
       class="w-full my-2 border-none"
       required=""
