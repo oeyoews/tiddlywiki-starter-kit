@@ -1,7 +1,7 @@
 <!-- NOTE: vue.config.js 出现在 tabs 里面, vscode 就不会有报错了 -->
 <!-- <template> -->
 <h2>
-    {{ t('todo.title') }} ({{ todos.length - undone }}/{{ todos.length }})
+    {{ t('todo.title') }}
   </h2>
 
 <!-- add todo bar -->
@@ -21,6 +21,17 @@
       {{ t('todo.add', { msg: 'add' }) }}
     </button>
   </form>
+
+<!-- progress -->
+<div class="flex gap-2 items-center my-2 justify-between text-gray-400 text-sm mx-8 mt-4" v-if="todos.length">
+<div>
+{{ done }}/{{ todos.length }}
+</div>
+<progress :value="done" :max="todos.length" id="todo-progress"></progress>
+<div>
+{{ (done / todos.length) * 100 }}%
+</div>
+</div>
 
 <!-- task list -->
 <ul class="list-none my-4" key="task-list">

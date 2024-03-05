@@ -37,8 +37,13 @@ const todo = (json = 'todo.json') => {
         return todos.value?.filter((t) => !t.done)?.length || 0;
       });
 
+      const done = computed(() => {
+        return todos.value?.filter((t) => t.done)?.length || 0;
+      });
+
       return {
         t,
+        done,
         undone,
         todos,
         btnClass,
@@ -98,11 +103,13 @@ const todo = (json = 'todo.json') => {
           dangerouslyHTMLString: true
         });
       },
+
       toggleLang() {
         localStorage.setItem('lang', this.$i18n.locale);
       },
+
       addTodo() {
-        this.todos.push({
+        this.todos.unshift({
           id: this.todos.length,
           text: this.newTodo,
           date: new Date().toLocaleString()
@@ -115,33 +122,7 @@ const todo = (json = 'todo.json') => {
 
       async resetTodos() {
         const confirm = window.confirm(this.t('todo.resetTodos'));
-        // const confirm = await toast.promise('', {
-        //   pending: 'Promise is pending',
-        //   success: 'Promise resolved 👌',
-        //   error: 'Promise rejected 🤯'
-        // });
         confirm ? (this.todos = []) : null;
-      },
-
-      startEdit(index) {
-        const todo = this.todos.value[index];
-        if (!Object.prototype.hasOwnProperty.call(todo, 'editing')) {
-          todo.editing = true;
-        } else {
-          todo.editing = true;
-        }
-      },
-      cancelEdit(index) {
-        this.todos[index].editing = false;
-      },
-
-      updateTodoItem(index) {
-        const todo = this.todos[index];
-        if (todo.draftText.trim() === '') {
-          this.removeTodo(index);
-        } else {
-          todo[index].text = todo.draftText;
-        }
       },
 
       removeTodo(index) {
