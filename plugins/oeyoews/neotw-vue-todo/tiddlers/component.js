@@ -113,8 +113,13 @@ const todo = (json = 'todo.json') => {
         this.notify();
       },
 
-      resetTodos() {
+      async resetTodos() {
         const confirm = window.confirm(this.t('todo.resetTodos'));
+        // const confirm = await toast.promise('', {
+        //   pending: 'Promise is pending',
+        //   success: 'Promise resolved 👌',
+        //   error: 'Promise rejected 🤯'
+        // });
         confirm ? (this.todos = []) : null;
       },
 
