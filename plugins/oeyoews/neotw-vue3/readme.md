@@ -19,6 +19,7 @@ const { ref, createApp } = vue
 * vue-toastify
 * vue-table
 * vue-vant
+* floating-vue(wip)
 
 * 此插件使用 `vue.global.prod.js`, 所以不依赖于任何构建工具，所以无法使用组合式 (composition)API 的写法，只能使用选项式 (options)API.
 * 使用示例参照 https://github.com/oeyoews/tiddlywiki-starter-kit/blob/main/plugins/oeyoews/neotw-vue3/tiddlers/widget.js

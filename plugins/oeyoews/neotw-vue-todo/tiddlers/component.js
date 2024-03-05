@@ -91,7 +91,10 @@ const todo = (json = 'todo.json') => {
       notify() {
         toast(this.t('todo.notify'), {
           theme: 'auto',
-          type: 'default',
+          type: 'success',
+          transition: 'slide',
+          position: 'top-left',
+          hideProgressBar: true,
           dangerouslyHTMLString: true
         });
       },
