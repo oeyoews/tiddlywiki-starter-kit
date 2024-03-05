@@ -41,7 +41,10 @@ const todo = (json = 'todo.json') => {
         return todos.value?.filter((t) => t.done)?.length || 0;
       });
 
+      const progress = (done.value / todos.value.length).toFixed(2) * 100 + '%';
+
       return {
+        progress,
         t,
         done,
         undone,
@@ -84,13 +87,6 @@ const todo = (json = 'todo.json') => {
         deep: true
       }
     },
-
-    // computed: {
-    //   resetTodo: {
-    //     get() {},
-    //     set() {}
-    //   }
-    // },
 
     methods: {
       notify() {

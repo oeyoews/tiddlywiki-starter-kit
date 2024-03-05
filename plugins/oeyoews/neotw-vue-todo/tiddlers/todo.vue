@@ -29,7 +29,7 @@
 </div>
 <progress :value="done" :max="todos.length" id="todo-progress"></progress>
 <div>
-{{ (done / todos.length).toFixed(2) * 100 }}%
+  {{ progress }}
 </div>
 </div>
 

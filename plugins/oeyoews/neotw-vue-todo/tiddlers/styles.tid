@@ -13,7 +13,7 @@ type: text/css
 }
 
 #todo-progress {
-  height: 10px;
+  height: 8px;
   width: 100%;
   border-radius: 2px;
   overflow: hidden;
@@ -26,8 +26,9 @@ type: text/css
 }
 
 #todo-progress::-webkit-progress-value {
-  background: linear-gradient(135deg, #ffafbd, #c9ffbf);
+  background: linear-gradient(135deg, #c9ffbf, #ffafbd);
   animation: progress-bar 1s ease-out infinite;
+  transition: all 0.4s;
 }
 
 @keyframes progress-bar {
