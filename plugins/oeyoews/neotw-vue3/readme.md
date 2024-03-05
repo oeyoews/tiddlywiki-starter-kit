@@ -28,6 +28,8 @@ const { ref, createApp } = vue
 
 ## devtools
 
+* 由于是局部 vue 应用，所以可以参考这篇文章开启 devtools, 但是似乎元素定位用不了
+
 ```js
 // 1.获取 Vue 实例, 先定位到 vue 节点，
 let vue3 = $0.__vue_app__; (重点注意 $0)
