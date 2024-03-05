@@ -83,10 +83,12 @@
   </div>
 
   <div class="flex items-center justify-center">
+  <div>
     <video width="320" height="240" v-if="dogvideourl">
       <source :src="dogvideourl" type="video/mp4" />
     </video>
     <img v-if="dogurl" :src="dogurl" alt="dog" class="w-64 rounded" />
     <div v-else-if="dogurlstatus === 'loading'">loading</div>
+  </div>
   </div>
 <!-- </template> -->
