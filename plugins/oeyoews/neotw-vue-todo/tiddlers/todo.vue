@@ -67,7 +67,7 @@
 <button
   @click="resetTodos"
   class="!p-1 border-solid border-gray-300 dark:border-gray-500 my-2 mx-2"
-  v-if="todos.length"
+  v-show="todos.length"
 >
     {{ t('todo.resetTodos') }}
   </button>
@@ -76,7 +76,7 @@
     <button
       @click="hideCompleted = !hideCompleted"
       class="!p-1 border-solid border-gray-300 dark:border-gray-500 my-2 mx-2"
-      v-if="undone && undone !== todos.length"
+      v-show="undone && undone !== todos.length"
     >
       {{ hideCompleted ? t('todo.showtodo') : t('todo.hidedone') }}
     </button>
