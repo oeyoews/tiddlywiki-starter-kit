@@ -10,6 +10,11 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: make-template
+  cancel-in-progress: true
+
+
 jobs:
   release-and-page:
     runs-on: ubuntu-latest
