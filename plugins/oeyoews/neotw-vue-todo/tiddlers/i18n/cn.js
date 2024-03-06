@@ -19,6 +19,8 @@ module.exports = {
     setup: '配置',
     resetTodos: '清空所有任务',
     toggleLang: '切换语言',
-    notify: '任务已添加'
+    notify: '任务已添加',
+    cancel: '取消',
+    save: '保存'
   }
 };

@@ -28,7 +28,7 @@ const { ref, createApp } = vue
 
 * 使用示例参照 https://github.com/oeyoews/tiddlywiki-starter-kit/blob/main/plugins/oeyoews/neotw-vue3/tiddlers/widget.js
 
-* 更多用法请参考 [Vue3 官方文档](https://cn.vuejs.org/guide/essentials/application.html)
+* 更多用法请参考 [Vue3 官方文档](https://cn.vuejs.org/guide/essentials/application.html) 和 neotw-vue-todo 插件
 
 ## devtools
 

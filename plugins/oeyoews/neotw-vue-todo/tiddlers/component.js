@@ -8,6 +8,18 @@ module-type: library
 const { watch, watchEffect, onMounted, toRaw, computed, ref } = window.Vue;
 const { toast } = require('vue3-toastify.js');
 
+const getTemplate = () => {
+  let template = $tw.wiki
+    .getTiddlerText('$:/plugins/oeyoews/neotw-vue-todo/todo.vue')
+    .trim(); // trim to remove linebreak
+
+  if (template.startsWith('<template>') && template.endsWith('</template>')) {
+    template = template.slice(10, -11);
+  }
+
+  return template;
+};
+
 // i18n
 const VueI18n = require('vue-i18n.global.prod.js');
 
@@ -72,8 +84,13 @@ const todo = (json = 'todo.json') => {
       };
 
       const drag = ref(false);
+      const editingIndex = ref(-1);
+
+      const editingText = ref('');
 
       return {
+        editingIndex,
+        editingText,
         drag,
         dragOptions,
         progress,
@@ -97,6 +114,23 @@ const todo = (json = 'todo.json') => {
     },
 
     methods: {
+      startEdit(todo) {
+        this.editingIndex = todo.id;
+        this.editingText = todo.text; // 把当前编辑项的text拷贝到临时变量
+      },
+
+      finishEdit(index) {
+        if (this.editingText) {
+          this.todos[index].text = this.editingText; // 更新原todos数组中的项
+          this.todos[index].date = new Date().toLocaleString();
+        }
+        this.cancelEdit(index);
+      },
+
+      cancelEdit(index) {
+        this.editingIndex = -1; // 重置编辑状态
+        this.editingText = ''; // 清空临时变量
+      },
       sort() {
         this.filteredTodos = this.filteredTodos.sort((a, b) => a.id - b.id);
       },
@@ -137,9 +171,7 @@ const todo = (json = 'todo.json') => {
       }
     },
 
-    template: $tw.wiki.getTiddlerText(
-      '$:/plugins/oeyoews/neotw-vue-todo/todo.vue'
-    )
+    template: getTemplate()
   };
   return component;
 };

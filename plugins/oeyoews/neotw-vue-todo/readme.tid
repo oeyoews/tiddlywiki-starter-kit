@@ -11,8 +11,8 @@ description: neotw-vue-todo
 
 !! TODO
 
-* 提供清晰的界面展示用户的所有任务，包括标题、描述、截止日期、优先级等信息。
-* 允许编辑已有的任务 contenteditable or https://mdn.github.io/todo-vue/
-* 提供 projectify 的功能
-* dragable: https://github.com/SortableJS/vue.draggable.next
-* 支持 undo 操作，类似 gmail
+* 支持 undo 操作，类似 gmail(base watch new old value)
+
+!! Roadmap
+
+* projectify

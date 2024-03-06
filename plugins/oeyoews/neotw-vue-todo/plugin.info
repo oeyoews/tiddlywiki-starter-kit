@@ -15,7 +15,8 @@
   ],
   "dependents": [
     "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
-    "$:/plugins/oeyoews/vue-i18n"
+    "$:/plugins/oeyoews/vue-i18n",
+    "$:/plugins/oeyoews/vue-dragable"
   ],
   "list": "readme"
 }

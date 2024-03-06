@@ -1,5 +1,5 @@
-<!-- NOTE: vue.config.js 出现在 tabs 里面, vscode 就不会有报错了 -->
-<!-- <template> -->
+<template>
+  <!-- NOTE: vue.config.js 出现在 tabs 里面, vscode 就不会有报错了 -->
   <h2>
     {{ t('todo.title') }}
   </h2>
@@ -25,7 +25,7 @@
   <!-- progress -->
   <div
     class="flex gap-2 items-center my-2 justify-between text-gray-400 text-sm mx-8 mt-4"
-    v-if="todos.length"
+    v-show="todos.length"
   >
     <div>{{ done }}/{{ todos.length }}</div>
     <progress :value="done" :max="todos.length" id="todo-progress"></progress>
@@ -50,7 +50,11 @@
   >
     <template #item="{ element }">
       <div class="flex justify-between items-center group" :key="element.id">
-        <li class="truncate">
+        <li
+          class="truncate"
+          @dblclick="startEdit(element, element.id)"
+          v-show="editingIndex !== element.id"
+        >
           <input
             type="checkbox"
             v-model="element.done"
@@ -65,7 +69,26 @@
             >{{ element.text }}</label
           >
         </li>
-        <div v-if="element.date" class="text-gray-400 text-sm mx-2">
+        <li v-show="editingIndex === element.id" class="w-full">
+          <input
+            v-model="editingText"
+            @keyup.enter="finishEdit(element.id)"
+            @blur="cancelEdit(element.id)"
+            class="w-full"
+          />
+          <div class="mt-1">
+            <button @click="cancelEdit(element.id)">
+              {{ t('todo.cancel') }}
+            </button>
+            <button @click="finishEdit(element.id)">
+              {{ t('todo.save') }}
+            </button>
+          </div>
+        </li>
+        <div
+          v-show="element.date && editingIndex !== element.id"
+          class="text-gray-400 text-sm mx-2"
+        >
           {{ element.date }}
           <button
             @click="removeTodo(index)"
@@ -87,7 +110,7 @@
     {{ t('todo.resetTodos') }}
   </button>
 
-<!--
+  <!--
   <transition>
     <button
       @click="hideCompleted = !hideCompleted"
@@ -111,5 +134,4 @@
       {{ locale }}
     </option>
   </select>
-
-<!-- </template> -->
+</template>

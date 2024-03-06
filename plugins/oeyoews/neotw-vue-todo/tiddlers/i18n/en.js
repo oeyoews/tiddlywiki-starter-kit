@@ -18,6 +18,8 @@ module.exports = {
     setup: 'Todo Setup',
     toggleLang: 'toggleLang',
     resetTodos: 'remove all todos',
-    notify: 'task added'
+    notify: 'task added',
+    cancel: 'cancel',
+    save: 'save'
   }
 };
