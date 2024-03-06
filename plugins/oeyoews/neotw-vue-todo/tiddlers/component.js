@@ -126,22 +126,24 @@ const todo = (json = 'todo.json') => {
           this.todos[currentTodoIndex].date = new Date().toLocaleString();
         }
         this.cancelEdit(id);
+        this.notify(this.t('todo.save'));
       },
 
-      cancelEdit(index) {
+      cancelEdit() {
         this.editingIndex = -1; // 重置编辑状态
         this.editingText = ''; // 清空临时变量
       },
       sort() {
         this.filteredTodos = this.filteredTodos.sort((a, b) => a.id - b.id);
       },
-      notify() {
-        toast(this.t('todo.notify'), {
+      notify(msg = 'notify', type = 'success', timeout = 2000) {
+        toast(msg, {
           theme: 'auto',
-          type: 'success',
+          type,
           transition: 'slide',
           position: 'top-left',
           hideProgressBar: true,
+          autoClose: timeout,
           dangerouslyHTMLString: true
         });
       },
@@ -159,7 +161,7 @@ const todo = (json = 'todo.json') => {
           // editing: false
         });
         this.newTodo = '';
-        this.notify();
+        this.notify(this.t('todo.notify'));
       },
 
       async resetTodos() {
