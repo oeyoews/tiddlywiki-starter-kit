@@ -8,7 +8,9 @@ https://unpkg.com/browse/vue@3.4.21/dist/vue.global.prod.js
 
 ## For developers
 
-* 组合式 选项式两种风格都支持，也支持两种写法掺杂, 真正原汁原味的 vue 代码, 这两种写法表面上最大的区别就是前者直接将所有的代码放在了 setup 函数里面，后者是将 代码分散到了多个方法里面. 需要注意的是一些微小的区别，比如 this, 解包问题
+* 组合式 选项式两种风格都支持，也支持两种写法掺杂, 真正原汁原味的 vue 代码, 这两种写法表面上最大的区别就是前者直接将所有的代码放在了 setup 函数里面，后者是将 代码分散到了多个方法里面. 需要注意的是一些微小的区别，比如 this, 解包问题.
+
+* neotw-vue3 的主要实现 正是在选项式(template)中访问组合式 API 暴露的值的一个实践.
 
 ```js
 const vue = require('$:/plugins/oeyoews/neotw-vue3/vue.global.prod.js')

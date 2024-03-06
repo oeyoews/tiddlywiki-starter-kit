@@ -111,5 +111,5 @@ class VueTodoWidget extends Widget {
   }
 }
 
-/** @description neotw-vue3 widget */
+/** @description neotw-vue-todo widget */
 exports['vue-todo'] = VueTodoWidget;
