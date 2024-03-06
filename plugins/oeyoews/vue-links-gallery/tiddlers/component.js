@@ -70,7 +70,12 @@ const links = (json = 'list-links.json') => {
       removeLink: function (index) {
         this.data.splice(index, 1);
       },
+
       addNewLink: function () {
+        if (!this.newLink || !this.newDesc) {
+          toast.error('缺少链接或描述');
+          return;
+        }
         if (this.prettyLinkData.find((item) => item.link === this.newLink)) {
           toast.error('链接已存在');
           return;

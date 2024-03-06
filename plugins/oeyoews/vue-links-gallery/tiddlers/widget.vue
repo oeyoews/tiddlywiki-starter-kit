@@ -1,13 +1,26 @@
 <template>
-  <form @submit.prevent="addNewLink">
-    描述:
-    <input type="text" v-model.trim="newDesc" required placeholder="desc" />
-    链接:
-    <input type="text" v-model.trim="newLink" required placeholder="links" />
-    <button>add</button>
-  </form>
-
-  <button @click="toEdit">Toggle edit</button>
+  <div class="flex gap-2 items-center overflow-auto flex-wrap">
+    <div class="flex gap-2 items-center shrink-0">
+      <label for="desc">描述</label>
+      <input
+        type="text"
+        id="desc"
+        v-model.trim="newDesc"
+        required
+        placeholder="desc"
+      />
+      <label for="link">网址</label>
+      <input
+        type="text"
+        id="link"
+        v-model.trim="newLink"
+        required
+        placeholder="links"
+      />
+    </div>
+    <button class="p-2" @click="addNewLink">add</button>
+    <button @click.stop="toEdit" class="p-2 shrink-0">切换编辑模式</button>
+  </div>
 
   <table>
     <thead>

@@ -94,7 +94,7 @@ const oeyoewsPlugins = [
   'neotw-zen-mode',
   'commandpalette',
   'neotw-icons',
-  'neotw-copy-code',
+  'neotw-copy-code2',
   'tiddlywiki-daylight',
   'tiddlywiki-videos',
   'neotw',
