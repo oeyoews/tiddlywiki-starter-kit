@@ -46,7 +46,6 @@ class FetchWidget extends Widget {
     progress.start();
 
     const text = await getText(url);
-    console.log(text, !text);
     if (!text) {
       this.removeChildDomNodes(loading);
       return;
