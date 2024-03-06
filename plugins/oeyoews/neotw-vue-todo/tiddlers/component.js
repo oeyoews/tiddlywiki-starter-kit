@@ -119,12 +119,13 @@ const todo = (json = 'todo.json') => {
         this.editingText = todo.text; // 把当前编辑项的text拷贝到临时变量
       },
 
-      finishEdit(index) {
+      finishEdit(id) {
         if (this.editingText) {
-          this.todos[index].text = this.editingText; // 更新原todos数组中的项
-          this.todos[index].date = new Date().toLocaleString();
+          const currentTodoIndex = this.todos.findIndex((t) => t.id === id);
+          this.todos[currentTodoIndex].text = this.editingText;
+          this.todos[currentTodoIndex].date = new Date().toLocaleString();
         }
-        this.cancelEdit(index);
+        this.cancelEdit(id);
       },
 
       cancelEdit(index) {
