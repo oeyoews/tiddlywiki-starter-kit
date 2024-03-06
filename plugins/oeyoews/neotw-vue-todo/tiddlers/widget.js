@@ -52,6 +52,8 @@ class VueTodoWidget extends Widget {
     // const vant = require('vant.min.js');
     // window.vant = vant;
 
+    // this.setVariable('tv-enable-drag-and-drop', 'no');
+
     const { createApp } = window.Vue;
     const { json } = this.attributes;
 

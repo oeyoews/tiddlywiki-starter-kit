@@ -23,6 +23,7 @@ const { ref, createApp } = vue
 * vue-toastify
 * vue-table
 * vue-vant
+* vueuse(WIP)
 * floating-vue(wip)
 
 * 使用示例参照 https://github.com/oeyoews/tiddlywiki-starter-kit/blob/main/plugins/oeyoews/neotw-vue3/tiddlers/widget.js
