@@ -12,6 +12,7 @@ description: neotw-vue-todo
 !! TODO
 
 * 支持 undo 操作，类似 gmail(base watch new old value)
+* 处理移动端样式优化
 
 !! Roadmap
 
