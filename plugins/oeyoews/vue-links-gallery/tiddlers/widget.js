@@ -41,9 +41,6 @@ class VueLinkGalleryWidget extends Widget {
       return;
     }
 
-    // i18n
-    const VueI18n = require('vue-i18n.global.prod.js');
-    window.VueI18n = VueI18n;
     const Vue3Toastify = require('vue3-toastify.js');
 
     const { createApp } = window.Vue;
