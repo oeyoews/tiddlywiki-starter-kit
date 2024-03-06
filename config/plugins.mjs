@@ -52,6 +52,7 @@ const oeyoewsPlugins = [
   'vue3-toastify',
   'vue-dragable',
   'sortable',
+  'vue-links-gallery',
   'vue-i18n',
   'mermaid-widget',
   'mermaid930',
