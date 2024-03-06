@@ -64,7 +64,18 @@ const todo = (json = 'todo.json') => {
         }
       );
 
+      const dragOptions = {
+        animation: 200,
+        group: 'description',
+        disabled: false,
+        ghostClass: 'ghost'
+      };
+
+      const drag = ref(false);
+
       return {
+        drag,
+        dragOptions,
         progress,
         t,
         done,
@@ -86,6 +97,9 @@ const todo = (json = 'todo.json') => {
     },
 
     methods: {
+      sort() {
+        this.filteredTodos = this.filteredTodos.sort((a, b) => a.id - b.id);
+      },
       notify() {
         toast(this.t('todo.notify'), {
           theme: 'auto',

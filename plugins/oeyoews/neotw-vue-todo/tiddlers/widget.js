@@ -56,9 +56,23 @@ class VueTodoWidget extends Widget {
     const { json } = this.attributes;
 
     const todoComponent = require('./component.js');
+    const vuedraggable = require('$:/plugins/oeyoews/vue-dragable/vue-dragable.js');
 
     try {
       const app = createApp(todoComponent(json));
+
+      // register components
+      const Vueversion = {
+        setup() {
+          return {
+            version: '321'
+          };
+        },
+        template: '<div>{{ version}}</div>'
+      };
+
+      app.component('draggable', vuedraggable);
+      app.component('Vueversion', Vueversion);
       app.use(Vue3Toastify);
 
       const en = require('./i18n/en');

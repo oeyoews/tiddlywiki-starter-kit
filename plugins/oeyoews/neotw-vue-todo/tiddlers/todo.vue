@@ -1,14 +1,14 @@
 <!-- NOTE: vue.config.js 出现在 tabs 里面, vscode 就不会有报错了 -->
 <!-- <template> -->
-<h2>
+  <h2>
     {{ t('todo.title') }}
   </h2>
 
-<!-- add todo bar -->
-<form
-  @submit.prevent="addTodo"
-  class="flex rounded border-solid border-gray-300 dark:border-gray-500"
->
+  <!-- add todo bar -->
+  <form
+    @submit.prevent="addTodo"
+    class="flex rounded border-solid border-gray-300 dark:border-gray-500"
+  >
     <input
       v-model.trim="newTodo"
       :placeholder="t('todo.placeholder', { msg: 'placeholder' })"
@@ -22,68 +22,73 @@
     </button>
   </form>
 
-<!-- progress -->
-<div class="flex gap-2 items-center my-2 justify-between text-gray-400 text-sm mx-8 mt-4" v-if="todos.length">
-<div>
-{{ done }}/{{ todos.length }}
-</div>
-<progress :value="done" :max="todos.length" id="todo-progress"></progress>
-<div>
-  {{ progress }}
-</div>
-</div>
-
-<!-- task list -->
-<ul class="list-none my-4" key="task-list">
-    <div
-      class="flex justify-between items-center group"
-      v-for="(todo, index) in filteredTodos"
-      :key="todo.id"
-    >
-      <li class="truncate">
-        <input
-          type="checkbox"
-          v-model="todo.done"
-          class="mr-2 cursor-pointer"
-          id="todo.id"
-        />
-        <label
-          :for="todo.id"
-          :class="{ ['line-through']: todo.done, 'text-gray-400': todo.done }"
-          >{{ todo.text }}</label
-        >
-      </li>
-      <div v-if="todo.date" class="text-gray-400 text-sm mx-2">
-        {{ todo.date }}
-        <button
-          @click="removeTodo(index)"
-          :title="t('todo.removeTooltip', { msg: 'removeTooltip' })"
-          class="p-1 hover:text-red-400 rounded-full ml-2 size-8 opacity-0 group-hover:opacity-100 transition-all"
-        >
-          ✕
-        </button>
-      </div>
+  <!-- progress -->
+  <div
+    class="flex gap-2 items-center my-2 justify-between text-gray-400 text-sm mx-8 mt-4"
+    v-if="todos.length"
+  >
+    <div>{{ done }}/{{ todos.length }}</div>
+    <progress :value="done" :max="todos.length" id="todo-progress"></progress>
+    <div>
+      {{ progress }}
     </div>
-  </ul>
+  </div>
 
-<!-- tip -->
-<!-- <Transition>
-<p v-if="!undone && todos.length > 0" class="text-sm text-gray-400">
-{{ t('todo.done') }} </p>
-<p v-if="todos.length === 0" class="text-sm text-gray-400">
-{{ t('todo.empty') }}
-</p>
-</Transition> -->
+  <!-- task list -->
+  <draggable
+    :component-data="{
+      tag: 'ul',
+      type: 'transition-group',
+      class: 'list-none my-4 hover:cursor-move',
+      name: !drag ? 'flip-list' : null
+    }"
+    v-model="todos"
+    v-bind="dragOptions"
+    @start="drag = true"
+    @end="drag = false"
+    item-key="id"
+  >
+    <template #item="{ element }">
+      <div class="flex justify-between items-center group" :key="element.id">
+        <li class="truncate">
+          <input
+            type="checkbox"
+            v-model="element.done"
+            class="mr-2 cursor-pointer"
+          />
+          <label
+            :for="element.id"
+            :class="{
+              ['line-through']: element.done,
+              'text-gray-400': element.done
+            }"
+            >{{ element.text }}</label
+          >
+        </li>
+        <div v-if="element.date" class="text-gray-400 text-sm mx-2">
+          {{ element.date }}
+          <button
+            @click="removeTodo(index)"
+            :title="t('todo.removeTooltip', { msg: 'removeTooltip' })"
+            class="p-1 hover:text-red-400 rounded-full ml-2 size-8 opacity-0 group-hover:opacity-100 transition-all"
+          >
+            ✕
+          </button>
+        </div>
+      </div>
+    </template>
+  </draggable>
 
-<button
-  @click="resetTodos"
-  class="!p-1 border-solid border-gray-300 dark:border-gray-500 my-2 mx-2"
-  v-show="todos.length"
->
+  <button
+    @click="resetTodos"
+    class="!p-1 border-solid border-gray-300 dark:border-gray-500 my-2 mx-2"
+    v-show="todos.length"
+  >
     {{ t('todo.resetTodos') }}
   </button>
 
-<transition>
+<!--
+  <transition>
     <button
       @click="hideCompleted = !hideCompleted"
       class="!p-1 border-solid border-gray-300 dark:border-gray-500 my-2 mx-2"
@@ -92,11 +97,12 @@
       {{ hideCompleted ? t('todo.showtodo') : t('todo.hidedone') }}
     </button>
   </transition>
+-->
 
-<h2>{{ t('todo.setup') }}</h2>
+  <h2>{{ t('todo.setup') }}</h2>
 
-<!-- lang -->
-<select v-model="$i18n.locale" @click="toggleLang" class="rounded p-1">
+  <!-- lang -->
+  <select v-model="$i18n.locale" @click="toggleLang" class="rounded p-1">
     <option
       v-for="locale in $i18n.availableLocales"
       :key="`locale-${locale}`"
@@ -105,4 +111,5 @@
       {{ locale }}
     </option>
   </select>
+
 <!-- </template> -->
