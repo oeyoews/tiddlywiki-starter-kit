@@ -1,4 +1,4 @@
-<!-- <template> -->
+<template>
   <h2>Vue3 插件示例</h2>
   <button @click="toggleRender" :class="btnClass">点击切换预览</button>
 
@@ -73,22 +73,32 @@
     <button
       @click="getDogImg"
       :disabled="dogurlstatus === 'loading'"
-      :class="[btnClass, {
-        'opacity-50': dogurlstatus,
-        'cursor-not-allowed': dogurlstatus,
-      }]"
+      :class="[
+        btnClass,
+        {
+          'opacity-50': dogurlstatus,
+          'cursor-not-allowed': dogurlstatus
+        }
+      ]"
     >
       getDogImg
     </button>
   </div>
 
   <div class="flex items-center justify-center">
-  <div>
-    <video width="320" height="240" v-if="dogvideourl">
-      <source :src="dogvideourl" type="video/mp4" />
-    </video>
-    <img v-if="dogurl" :src="dogurl" alt="dog" class="w-64 rounded" />
-    <div v-else-if="dogurlstatus === 'loading'">loading</div>
+    <div>
+      <video width="320" height="240" v-if="dogvideourl">
+        <source :src="dogvideourl" type="video/mp4" />
+      </video>
+      <img
+        v-if="dogurl"
+        :src="dogurl"
+        alt="dog"
+        class="w-64 rounded object-cover aspect-video"
+      />
+      <div v-show="dogurlstatus === 'loading'" class="h-24 animate-bounce">
+        Loading ...
+      </div>
+    </div>
   </div>
-  </div>
-<!-- </template> -->
+</template>

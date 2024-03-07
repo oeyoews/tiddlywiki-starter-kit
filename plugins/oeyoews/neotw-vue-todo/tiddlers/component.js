@@ -12,10 +12,8 @@ const useId = () => {
   return Math.random().toString(36).substring(2, 11);
 };
 
-const getTemplate = () => {
-  let template = $tw.wiki
-    .getTiddlerText('$:/plugins/oeyoews/neotw-vue-todo/todo.vue')
-    .trim(); // trim to remove linebreak
+const getTemplate = (file) => {
+  let template = $tw.wiki.getTiddlerText(file).trim();
 
   if (template.startsWith('<template>') && template.endsWith('</template>')) {
     template = template.slice(10, -11);
@@ -182,7 +180,7 @@ const todo = (json = 'todo.json') => {
       }
     },
 
-    template: getTemplate()
+    template: getTemplate('$:/plugins/oeyoews/neotw-vue-todo/todo.vue')
   };
   return component;
 };

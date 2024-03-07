@@ -3,6 +3,7 @@ title: $:/plugins/oeyoews/neotw-image-better/widget.js
 type: application/javascript
 module-type: widget
 
+@deprecated: unsplash random 的一些接口变化了; 事实上 unsplash random 已经很早处于废弃的状态
 oimg widget
 \*/
 

@@ -8,10 +8,8 @@ module-type: library
 const { watch, toRaw, computed, ref } = window.Vue;
 const { toast } = require('vue3-toastify.js');
 
-const getTemplate = () => {
-  let template = $tw.wiki
-    .getTiddlerText('$:/plugins/{{ plugin_author }}/${pluginname}/widget.vue')
-    .trim();
+const getTemplate = (file) => {
+  let template = $tw.wiki.getTiddlerText(file).trim();
 
   if (template.startsWith('<template>') && template.endsWith('</template>')) {
     template = template.slice(10, -11);
@@ -28,7 +26,9 @@ const app = () => {
 
     methods: {},
 
-    template: getTemplate()
+    template: getTemplate(
+      '$:/plugins/{{ plugin_author }}/${pluginname}/widget.vue'
+    )
   };
   return component;
 };

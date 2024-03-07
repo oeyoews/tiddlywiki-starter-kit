@@ -5,7 +5,17 @@ module-type: library
 
 \*/
 
-const { onMounted, toRaw, computed, ref, reactive } = window.Vue;
+const getTemplate = (file) => {
+  let template = $tw.wiki.getTiddlerText(file).trim();
+
+  if (template.startsWith('<template>') && template.endsWith('</template>')) {
+    template = template.slice(10, -11);
+  }
+
+  return template;
+};
+
+const { onCreated, onMounted, toRaw, computed, ref, reactive } = window.Vue;
 
 module.exports = {
   // components usage
@@ -110,6 +120,10 @@ module.exports = {
     }
   },
 
+  created() {
+    this.getDogImg();
+  },
+
   // directives: {
   //   focus: {
   //     mounted(el) {
@@ -139,7 +153,13 @@ module.exports = {
       this.renderComponent = !this.renderComponent;
     },
 
+    reset() {
+      this.dogurl = '';
+      this.dogvideourl = '';
+    },
+
     getDogImg() {
+      this.reset();
       this.dogurlstatus = 'loading';
       fetch('https://random.dog/woof.json')
         .then((res) => {
@@ -148,7 +168,7 @@ module.exports = {
         .then((data) => {
           this.dogurlstatus = 'success';
           if (data.url.split('.').pop() === 'mp4') {
-            dogvideourl = data.url;
+            this.dogvideourl = data.url;
           } else {
             this.dogurl = data.url;
           }
@@ -193,9 +213,6 @@ module.exports = {
   beforeCreate() {
     // console.log('beforeCreate');
   },
-  created() {
-    // console.log('created');
-  },
   mounted() {
     this.$refs.pElementRef.textContent = '挂载上了';
   },
@@ -212,5 +229,5 @@ module.exports = {
 
   // TODO: 如果同时出现多个相同的widget, UI 似乎更新当前vue 实例. 因为每个widget 都是一个单独的widget. 所以即使数据发生了变化， 也不会跨实例更新ui, 这不同于一个vue 实例的多个相同组件更新。
   // 挂载到的节点
-  template: $tw.wiki.getTiddlerText('$:/plugins/oeyoews/neotw-vue3/example.vue')
+  template: getTemplate('$:/plugins/oeyoews/neotw-vue3/example.vue')
 };
