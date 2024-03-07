@@ -26,8 +26,6 @@ const links = (json = 'list-links.json') => {
     setup() {
       // obj --> array
       const data = ref(Object.entries($tw.wiki.getTiddlerData(json, {})));
-      console.log(data);
-      console.log($tw.wiki.getTiddlerData(json, {}));
 
       const newLink = ref('');
       const newDesc = ref('');

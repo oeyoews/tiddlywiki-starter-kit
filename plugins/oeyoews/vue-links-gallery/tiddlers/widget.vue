@@ -81,7 +81,11 @@
       </tr>
     </TransitionGroup>
     <tbody v-else>
-      暂无数据
+      <tr>
+        <td :colspan="edit ? 4 : 3" class="text-center">
+          <div class="h-24 flex items-center justify-center">暂无数据</div>
+        </td>
+      </tr>
     </tbody>
     <!-- <tfoot > foot </tfoot> -->
   </table>
