@@ -48,7 +48,6 @@ const oeyoewsPlugins = [
   'neotw-dropdown-better',
   'tiddler-fullscreen',
   'neotw-vue-todo',
-  // 'vue3-vant',
   'vue3-toastify',
   'vue-dragable',
   'sortable',
