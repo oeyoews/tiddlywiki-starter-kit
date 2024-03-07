@@ -39,7 +39,7 @@
     :component-data="{
       tag: 'ul',
       type: 'transition-group',
-      class: 'list-none my-4 hover:cursor-move',
+      class: 'list-none my-4 hover:cursor-move todo-list',
       name: !drag ? 'flip-list' : null
     }"
     v-model="todos"
@@ -51,14 +51,15 @@
     <template #item="{ element }">
       <div class="flex justify-between items-center group" :key="element.id">
         <li
-          class="truncate"
+          class="truncate todo p-1"
           @dblclick="startEdit(element, element.id)"
           v-show="editingIndex !== element.id"
         >
           <input
             type="checkbox"
             v-model="element.done"
-            class="mr-2 cursor-pointer"
+            class="mr-2 cursor-pointer toggle"
+            :id="element.id"
           />
           <label
             :for="element.id"
