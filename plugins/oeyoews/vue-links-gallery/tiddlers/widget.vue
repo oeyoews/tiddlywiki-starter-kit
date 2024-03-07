@@ -48,7 +48,7 @@
           </a>
         </td>
         <Transition>
-          <td @click="removeLink(index + 1)" v-show="edit">
+          <td @click="removeLink(item.link)" v-show="edit">
             <a
               href="#"
               @click.prevent="removeLink(index)"

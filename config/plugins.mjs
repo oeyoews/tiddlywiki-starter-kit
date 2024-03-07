@@ -88,7 +88,6 @@ const oeyoewsPlugins = [
   'NPL',
   'neotw-spotlight',
   'neotw-image-gallery',
-  'neotw-links-gallery',
   'tiddlywiki-motion',
   'neotw-pwa',
   'neotw-zen-mode',

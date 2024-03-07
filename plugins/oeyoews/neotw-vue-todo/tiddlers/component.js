@@ -35,15 +35,12 @@ const todo = (json = 'todo.json') => {
 
       const todos = ref(
         // TIP: 使用gettiddlertext 某个条目是否存在或者是否文本温控, 而不是使用tiddlerexist, 并且他也无法检测系统条目
-        $tw.wiki.getTiddlerText(json) ? $tw.wiki.getTiddlerData(json) : []
+        $tw.wiki.getTiddlerData(json, [])
       );
 
       const hideCompleted = ref(false);
 
       const filteredTodos = computed(() => {
-        if (!Array.isArray(todos.value)) {
-          return [];
-        }
         return hideCompleted.value
           ? todos.value.filter((t) => !t.done) // .reverse()
           : todos.value; // cannot reverse method, use toraw is also

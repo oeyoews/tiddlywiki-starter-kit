@@ -8,6 +8,7 @@ module-type: library
 const { watch, toRaw, computed, ref } = window.Vue;
 const { toast } = require('vue3-toastify.js');
 
+const type = 'application/x-tiddler-dictionary';
 const getTemplate = () => {
   let template = $tw.wiki
     .getTiddlerText('$:/plugins/oeyoews/vue-links-gallery/widget.vue')
@@ -23,10 +24,10 @@ const getTemplate = () => {
 const links = (json = 'list-links.json') => {
   const component = {
     setup() {
-      const data = ref(
-        $tw.wiki.getTiddlerText(json) &&
-          Object.entries($tw.wiki.getTiddlerData(json))
-      );
+      // obj --> array
+      const data = ref(Object.entries($tw.wiki.getTiddlerData(json, {})));
+      console.log(data);
+      console.log($tw.wiki.getTiddlerData(json, {}));
 
       const newLink = ref('');
       const newDesc = ref('');
@@ -67,10 +68,33 @@ const links = (json = 'list-links.json') => {
       toEdit: function () {
         this.edit = !this.edit;
       },
-      removeLink: function (index) {
-        this.data.splice(index, 1);
+
+      resetStatus: function () {
+        this.newDesc = '';
+        this.newLink = '';
+      },
+      updateData: function () {
+        if ($tw.wiki.getTiddler(json)?.fields.type !== type) {
+          $tw.wiki.setText(json, 'type', null, type);
+        }
+        $tw.wiki.setTiddlerData(
+          json,
+          Object.fromEntries(toRaw(this.data)),
+          null,
+          {
+            suppressTimestamp: true
+          }
+        );
+      },
+      removeLink: function (site) {
+        // this.data.splice(index, 1);
+        this.data = this.data.filter(([desc, link]) => {
+          return link !== site;
+        });
+        this.updateData();
       },
 
+      // TODO: 验证是否为网址
       addNewLink: function () {
         if (!this.newLink || !this.newDesc) {
           toast.error('缺少链接或描述');
@@ -80,10 +104,10 @@ const links = (json = 'list-links.json') => {
           toast.error('链接已存在');
           return;
         } else if (this.newLink && this.newDesc) {
-          // TODO: 验证是否为网址
-          if (!this.data) return;
           this.data.unshift([this.newDesc, this.newLink]);
+          this.updateData();
         }
+        this.resetStatus();
       }
     },
 
