@@ -9,7 +9,7 @@ const { watch, watchEffect, onMounted, toRaw, computed, ref } = window.Vue;
 const { toast } = require('vue3-toastify.js');
 
 const useId = () => {
-  return Math.random().toString(36).substr(2, 9);
+  return Math.random().toString(36).substring(2, 11);
 };
 
 const getTemplate = () => {
