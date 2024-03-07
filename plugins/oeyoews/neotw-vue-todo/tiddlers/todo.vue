@@ -70,6 +70,7 @@
             >{{ element.text }}</label
           >
         </li>
+        <!-- edit view -->
         <li v-show="editingIndex === element.id" class="w-full">
           <input
             v-model="editingText"
@@ -87,13 +88,14 @@
             </button>
           </div>
         </li>
+        <!-- date -->
         <div
           v-show="element.date && editingIndex !== element.id"
           class="text-gray-400 text-sm mx-2"
         >
           {{ element.date }}
           <button
-            @click="removeTodo(index)"
+            @click="removeTodo(element.id)"
             :title="t('todo.removeTooltip', { msg: 'removeTooltip' })"
             class="p-1 hover:text-red-400 rounded-full ml-2 size-8 opacity-0 group-hover:opacity-100 transition-all"
           >
@@ -104,6 +106,7 @@
     </template>
   </draggable>
 
+  <!-- clear todos  -->
   <button
     @click="resetTodos"
     class="!p-1 border-solid border-gray-300 dark:border-gray-500 my-2 mx-2"

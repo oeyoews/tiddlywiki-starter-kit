@@ -8,6 +8,10 @@ module-type: library
 const { watch, watchEffect, onMounted, toRaw, computed, ref } = window.Vue;
 const { toast } = require('vue3-toastify.js');
 
+const useId = () => {
+  return Math.random().toString(36).substr(2, 9);
+};
+
 const getTemplate = () => {
   let template = $tw.wiki
     .getTiddlerText('$:/plugins/oeyoews/neotw-vue-todo/todo.vue')
@@ -114,6 +118,7 @@ const todo = (json = 'todo.json') => {
     },
 
     methods: {
+      // edit view methods
       startEdit(todo) {
         this.editingIndex = todo.id;
         this.editingText = todo.text; // 把当前编辑项的text拷贝到临时变量
@@ -133,9 +138,8 @@ const todo = (json = 'todo.json') => {
         this.editingIndex = -1; // 重置编辑状态
         this.editingText = ''; // 清空临时变量
       },
-      sort() {
-        this.filteredTodos = this.filteredTodos.sort((a, b) => a.id - b.id);
-      },
+
+      // notify
       notify(msg = 'notify', type = 'success', timeout = 2000) {
         toast(msg, {
           theme: 'auto',
@@ -148,13 +152,15 @@ const todo = (json = 'todo.json') => {
         });
       },
 
+      // toggle language
       toggleLang() {
         localStorage.setItem('lang', this.$i18n.locale);
       },
 
+      // add new todo
       addTodo() {
         this.todos.unshift({
-          id: this.todos.length,
+          id: useId(),
           text: this.newTodo,
           date: new Date().toLocaleString()
           // done: false,
@@ -164,13 +170,15 @@ const todo = (json = 'todo.json') => {
         this.notify(this.t('todo.notify'));
       },
 
-      async resetTodos() {
+      // clear todos
+      resetTodos() {
         const confirm = window.confirm(this.t('todo.resetTodos'));
         confirm ? (this.todos = []) : null;
       },
 
-      removeTodo(index) {
-        this.todos.splice(index, 1);
+      // remove todos
+      removeTodo(id) {
+        this.todos = this.todos.filter((t) => t.id !== id);
       }
     },
 
