@@ -2,12 +2,12 @@ title: $:/plugins/oeyoews/vue-links-gallery/styles.css
 tags: $:/tags/Stylesheet
 type: text/css
 
-<!-- .v-enter-active,
-.v-leave-active {
-  transition: opacity 0.5s ease;
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.5s ease;
 }
-
-.v-enter-from,
-.v-leave-to {
+.list-enter-from,
+.list-leave-to {
   opacity: 0;
-} -->
+  transform: translateX(30px);
+}

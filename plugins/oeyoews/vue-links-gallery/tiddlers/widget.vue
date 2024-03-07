@@ -1,26 +1,46 @@
 <template>
-  <div class="flex gap-2 items-center overflow-auto flex-wrap">
+  <form
+    @submit.prevent="addNewLink"
+    class="flex gap-2 items-center overflow-auto flex-wrap"
+  >
     <div class="flex gap-2 items-center shrink-0">
-      <label for="desc">描述</label>
+      <label for="desc" class="block text-sm font-medium text-gray-700 shrink-0"
+        >描述</label
+      >
       <input
         type="text"
         id="desc"
         v-model.trim="newDesc"
         required
         placeholder="desc"
+        class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
       />
-      <label for="link">网址</label>
+      <label for="link" class="block text-sm font-medium text-gray-700 shrink-0"
+        >网址</label
+      >
       <input
         type="text"
         id="link"
         v-model.trim="newLink"
         required
         placeholder="links"
+        class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
       />
     </div>
-    <button class="p-2" @click="addNewLink">add</button>
-    <button @click.stop="toEdit" class="p-2 shrink-0">切换编辑模式</button>
-  </div>
+    <button
+      type="submit"
+      class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
+    >
+      添加
+    </button>
+    <button
+      type="button"
+      @click.stop="toEdit"
+      class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-700"
+    >
+      切换编辑模式
+    </button>
+  </form>
 
   <table>
     <thead>
@@ -33,7 +53,7 @@
         </Transition>
       </tr>
     </thead>
-    <TransitionGroup tag="tbody" v-if="prettyLinkData.length">
+    <TransitionGroup name="list" tag="tbody" v-if="prettyLinkData.length">
       <tr v-for="(item, index) in prettyLinkData" :key="item.prettyLink">
         <td>{{ index + 1 }}</td>
         <td>{{ item.desc }}</td>
