@@ -123,13 +123,15 @@
   </draggable>
 
   <!-- clear todos  -->
-  <button
-    @click="resetTodos"
-    class="!p-1 border-solid border-gray-300 dark:border-gray-500 my-2 mx-2"
-    v-show="todos.length"
-  >
-    {{ t('todo.resetTodos') }}
-  </button>
+  <div class="flex items-center justify-end text-sm">
+    <div
+      @click="resetTodos"
+      class="text-gray-600 cursor-pointer hover:underline hover:text-gray-400 transition-all"
+      v-show="todos.length"
+    >
+      {{ t('todo.resetTodos') }}
+    </div>
+  </div>
 
   <!--
   <transition>
