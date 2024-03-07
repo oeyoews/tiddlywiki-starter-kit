@@ -1,7 +1,7 @@
 <template>
   <form
     @submit.prevent="addNewLink"
-    class="flex gap-2 items-center overflow-auto flex-wrap"
+    class="flex gap-2 items-center overflow-auto flex-wrap justify-center"
   >
     <div class="flex gap-2 items-center shrink-0">
       <label for="desc" class="block text-sm font-medium text-gray-700 shrink-0"
