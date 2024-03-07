@@ -82,7 +82,7 @@ const oeyoewsPlugins = [
   'neotw-fetch',
   'qrcode',
   'hitokoto',
-  'neotw-image-better',
+  // 'neotw-image-better',
   'notify',
   'NPL',
   'neotw-spotlight',
