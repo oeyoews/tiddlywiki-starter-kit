@@ -75,6 +75,7 @@
             v-model="editingText"
             @keyup.enter="finishEdit(element.id)"
             @blur="cancelEdit(element.id)"
+            @keyup.escape="cancelEdit(element.id)"
             class="w-full"
           />
           <div class="mt-1">
