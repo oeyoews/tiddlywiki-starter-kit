@@ -19,9 +19,11 @@
   </div>
 
   <TransitionGroup v-if="title">
-    <h2 title="goto tiddler">
-      {{ title }}
-    </h2>
-    <p v-html="cardContent" />
+    <div class="p-2 rounded border border-solid border-gray-400 my-2">
+      <h2 title="goto tiddler">
+        {{ title }}
+      </h2>
+      <p v-html="cardContent" />
+    </div>
   </TransitionGroup>
 </template>
