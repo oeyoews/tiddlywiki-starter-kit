@@ -35,6 +35,7 @@
   </div>
 
   <!-- task list -->
+  <!-- <TransitionGroup> -->
   <draggable
     :component-data="{
       tag: 'ul',
@@ -121,6 +122,7 @@
       </div>
     </template>
   </draggable>
+  <!-- </TransitionGroup> -->
 
   <!-- clear todos  -->
   <div class="flex items-center justify-end text-sm">

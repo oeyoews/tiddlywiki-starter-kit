@@ -1,7 +1,9 @@
-// NOTE: vercel not support use { isCi } ???
 import ci from 'ci-info';
 import config from './index.js';
 
+export const devPlugins = ['888', '111', 'demoi'];
+
+// NOTE: vercel not support use { isCi } ???
 const enableMarkdown = config.markdown;
 
 const localPlugins = [
@@ -37,6 +39,7 @@ const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
 
 // oeyoews plugins
 const oeyoewsPlugins = [
+  ...devPlugins,
   'neotw-tour',
   // 'tiddlywiki-files',
   // 'neotw-popup-preview',
