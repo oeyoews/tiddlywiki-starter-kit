@@ -5,6 +5,7 @@ module-type: library
 
 \*/
 
+const echarts = require('$:/plugins/Gk0Wk/echarts/echarts.min.js');
 const { watch, toRaw, computed, ref } = window.Vue;
 const { toast } = require('vue3-toastify.js');
 
@@ -26,6 +27,7 @@ const links = (json = 'list-links.json') => {
     setup() {
       // obj --> array
       const data = ref(Object.entries($tw.wiki.getTiddlerData(json, {})));
+      const chart = ref('');
 
       const newLink = ref('');
       const newDesc = ref('');
@@ -52,7 +54,131 @@ const links = (json = 'list-links.json') => {
         });
       });
 
+      const chartdata = {
+        nodes: [
+          {
+            id: '0',
+            name: 'Myriel',
+            symbolSize: 19.12381,
+            x: -266.82776,
+            y: 299.6904,
+            value: 28.685715,
+            category: 0
+          },
+          {
+            id: '1',
+            name: 'Napoleon',
+            symbolSize: 2.6666666666666665,
+            x: -418.08344,
+            y: 446.8853,
+            value: 4,
+            category: 0
+          },
+          {
+            id: '2',
+            name: 'MlleBaptistine',
+            symbolSize: 6.323809333333333,
+            x: -212.76357,
+            y: 245.29176,
+            value: 9.485714,
+            category: 1
+          }
+        ],
+        links: [
+          {
+            source: '1',
+            target: '0'
+          },
+          {
+            source: '2',
+            target: '0'
+          },
+          {
+            source: '3',
+            target: '0'
+          },
+          {
+            source: '3',
+            target: '2'
+          },
+          {
+            source: '4',
+            target: '0'
+          },
+          {
+            source: '5',
+            target: '0'
+          },
+          {
+            source: '6',
+            target: '0'
+          }
+        ],
+        categories: [
+          {
+            name: 'A'
+          },
+          {
+            name: 'B'
+          },
+          {
+            name: 'C'
+          },
+          {
+            name: 'D'
+          }
+        ]
+      };
+
+      const options = {
+        title: {
+          text: 'Les Miserables',
+          subtext: 'Default layout',
+          top: 'bottom',
+          left: 'right'
+        },
+        tooltip: {},
+        legend: [
+          {
+            // selectedMode: 'single',
+            data: chartdata.categories.map(function (a) {
+              return a.name;
+            })
+          }
+        ],
+        animationDuration: 1500,
+        animationEasingUpdate: 'quinticInOut',
+        series: [
+          {
+            name: 'Les Miserables',
+            type: 'graph',
+            layout: 'none',
+            data: chartdata.nodes,
+            links: chartdata.links,
+            categories: chartdata.categories,
+            roam: true,
+            label: {
+              position: 'right',
+              formatter: '{b}'
+            },
+            lineStyle: {
+              color: 'source',
+              curveness: 0.3
+            },
+            emphasis: {
+              focus: 'adjacency',
+              lineStyle: {
+                width: 10
+              }
+            }
+          }
+        ]
+      };
+
       return {
+        chartdata,
+        options,
+        chart,
         prettyLink,
         prettyLinkData,
         data,
@@ -60,6 +186,10 @@ const links = (json = 'list-links.json') => {
         edit,
         newDesc
       };
+    },
+
+    mounted() {
+      echarts.init(this.$refs.chart).setOption(this.options);
     },
 
     methods: {

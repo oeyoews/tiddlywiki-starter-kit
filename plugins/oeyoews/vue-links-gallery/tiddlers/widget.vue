@@ -4,23 +4,15 @@
     class="flex gap-2 items-center overflow-auto flex-wrap justify-center"
   >
     <div class="flex gap-2 items-center shrink-0">
-      <label for="desc" class="block text-sm font-medium text-gray-700 shrink-0"
-        >描述</label
-      >
       <input
         type="text"
-        id="desc"
         v-model.trim="newDesc"
         required
         placeholder="desc"
         class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
       />
-      <label for="link" class="block text-sm font-medium text-gray-700 shrink-0"
-        >网址</label
-      >
       <input
         type="text"
-        id="link"
         v-model.trim="newLink"
         required
         placeholder="links"
@@ -41,6 +33,9 @@
       切换编辑模式
     </button>
   </form>
+
+  <h2>chart</h2>
+  <div ref="chart" style="width: 600px; height: 400px"></div>
 
   <table>
     <thead>
