@@ -5,8 +5,7 @@ module-type: library
 
 \*/
 
-const echarts = require('$:/plugins/Gk0Wk/echarts/echarts.min.js');
-const { watch, toRaw, computed, ref } = window.Vue;
+const { reactive, toRaw, computed, ref } = window.Vue;
 const { toast } = require('vue3-toastify.js');
 
 const type = 'application/x-tiddler-dictionary';
@@ -54,7 +53,7 @@ const links = (json = 'list-links.json') => {
         });
       });
 
-      const chartdata = {
+      const chartdata = reactive({
         nodes: [
           {
             id: '0',
@@ -128,9 +127,9 @@ const links = (json = 'list-links.json') => {
             name: 'D'
           }
         ]
-      };
+      });
 
-      const options = {
+      const options = computed(() => ({
         title: {
           text: 'Les Miserables',
           subtext: 'Default layout',
@@ -173,9 +172,12 @@ const links = (json = 'list-links.json') => {
             }
           }
         ]
-      };
+      }));
+
+      const chartapp = ref();
 
       return {
+        chartapp,
         chartdata,
         options,
         chart,
@@ -189,10 +191,33 @@ const links = (json = 'list-links.json') => {
     },
 
     mounted() {
-      echarts.init(this.$refs.chart).setOption(this.options);
+      this.initChart();
+      // this.chartapp.showLoading();
+      this.updateChart();
+      // this.chartapp.hideLoading();
+    },
+
+    watch: {
+      options: {
+        handler() {
+          this.updateChart();
+        }
+      }
     },
 
     methods: {
+      initChart() {
+        this.chartapp = echarts.init(this.$refs.chart);
+      },
+      addData() {
+        this.chartdata.categories.push({ name: 'R' });
+        // this.updateChart();
+      },
+
+      /** @see: https://echarts.apache.org/handbook/zh/how-to/data/dynamic-data */
+      updateChart() {
+        this.chartapp.setOption(this.options);
+      },
       toEdit: function () {
         this.edit = !this.edit;
       },

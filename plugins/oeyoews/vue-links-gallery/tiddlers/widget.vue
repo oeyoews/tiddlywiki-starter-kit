@@ -35,6 +35,7 @@
   </form>
 
   <h2>chart</h2>
+  <button @click="addData">update chart</button>
   <div ref="chart" style="width: 600px; height: 400px"></div>
 
   <table>
