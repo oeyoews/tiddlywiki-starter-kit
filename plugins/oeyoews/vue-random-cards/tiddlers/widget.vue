@@ -19,7 +19,9 @@
   </div>
 
   <TransitionGroup v-if="title">
-    <div class="p-2 rounded border border-solid border-gray-400 my-2">
+    <div
+      class="p-2 rounded border border-solid dark:border-gray-400 my-2 border-gray-200"
+    >
       <h2 title="goto tiddler">
         {{ title }}
       </h2>
