@@ -7,6 +7,9 @@ module-type: library
 
 const { reactive, toRaw, computed, ref } = window.Vue;
 const { toast } = require('vue3-toastify.js');
+const randomString = () => {
+  return Math.random().toString(36).substring(2, 11);
+};
 
 const type = 'application/x-tiddler-dictionary';
 const getTemplate = () => {
@@ -210,7 +213,19 @@ const links = (json = 'list-links.json') => {
         this.chartapp = echarts.init(this.$refs.chart);
       },
       addData() {
-        this.chartdata.categories.push({ name: 'R' });
+        this.chartdata.categories.push({
+          name: randomString()
+        });
+
+        this.chartdata.nodes.push({
+          id: this.chartdata.nodes.length,
+          name: randomString(),
+          symbolSize: 19.12381 + Math.random() * 10,
+          x: -266.82776 + Math.random() * 100,
+          y: 299.6904 + Math.random() * 100,
+          value: 28.685715 + Math.random() * 10,
+          category: 'A'
+        });
         // this.updateChart();
       },
 
