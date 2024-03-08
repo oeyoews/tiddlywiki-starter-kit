@@ -1,7 +1,8 @@
 import ci from 'ci-info';
 import config from './index.js';
 
-export const devPlugins = ['888', '111', 'demoi'];
+// TODO: support remove plugins from here
+export const devPlugins = ['neotw-vue-settings'];
 
 // NOTE: vercel not support use { isCi } ???
 const enableMarkdown = config.markdown;
