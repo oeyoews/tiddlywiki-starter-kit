@@ -5,7 +5,7 @@ module-type: library
 
 \*/
 
-const { watch, toRaw, computed, ref } = window.Vue;
+const { watch, toRaw, computed, reactive, ref } = window.Vue;
 const { toast } = require('vue3-toastify.js');
 
 const getTemplate = (file) => {
@@ -18,17 +18,28 @@ const getTemplate = (file) => {
   return template;
 };
 
-const app = () => {
+const app = (json = 'settings.json') => {
   const component = {
     setup() {
-      return {};
+      const data = reactive({
+        title: '',
+        subtitle: ''
+      });
+      watch(data, () => {
+        $tw.wiki.setTiddlerData(json, toRaw(data));
+      });
+      return {
+        data
+      };
     },
 
-    methods: {},
+    methods: {
+      apply: function () {
+        // setup fn
+      }
+    },
 
-    template: getTemplate(
-      '$:/plugins/oeyoews/neotw-vue-settings/widget.vue'
-    )
+    template: getTemplate('$:/plugins/oeyoews/neotw-vue-settings/widget.vue')
   };
   return component;
 };

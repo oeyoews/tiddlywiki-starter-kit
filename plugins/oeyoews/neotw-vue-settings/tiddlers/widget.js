@@ -28,12 +28,13 @@ class ExampleWidget extends Widget {
       window.Vue = require(vuelib);
     }
 
+    const { json } = this.attributes;
     const { createApp } = window.Vue;
     const component = require('./component');
     const domNode = this.document.createElement('div');
 
     try {
-      const app = createApp(component());
+      const app = createApp(component(json));
 
       app.use(Vue3Toastify);
 
