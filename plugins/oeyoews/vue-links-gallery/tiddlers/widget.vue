@@ -34,9 +34,11 @@
     </button>
   </form>
 
-  <h2>chart</h2>
-  <button @click="addData">update chart</button>
-  <div ref="chart" style="width: 600px; height: 400px"></div>
+  <div v-show="false">
+    <h2>chart</h2>
+    <button @click="addData">update chart</button>
+    <div ref="chart" style="width: 900px; height: 400px"></div>
+  </div>
 
   <table>
     <thead>
