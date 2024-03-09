@@ -16667,5 +16667,3 @@ ${codeFrame}` : message);
   return exports;
 
 })({});
-
-module.exports = Vue
