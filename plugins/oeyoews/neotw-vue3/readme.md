@@ -1,6 +1,6 @@
 ## Tiddlywiki5 Vue3
 
-<$vue-example />
+<!-- <$vue-example /> -->
 
 ## Latest Vue3 Lib
 
