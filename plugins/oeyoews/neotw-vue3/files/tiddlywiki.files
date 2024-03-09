@@ -7,8 +7,7 @@
 				"title": "$:/plugins/oeyoews/neotw-vue3/vue.global.prod.js",
 				"module-type": "library",
 				"hide-body": "yes"
-			},
-			"suffix": "module.exports = Vue;"
+			}
 		}
 	]
 }
