@@ -1,7 +1,7 @@
 <template>
   <div class="flex items-center justify-end gap-2">
     <button @click="gotoTiddler" v-if="title" class="p-2">卡片跳转</button>
-    <button @click="resetChart" v-show="chartdata.length > 10" class="p-2">
+    <button @click="resetChart" v-show="chartdata.length > 0" class="p-2">
       重置数据
     </button>
 
@@ -21,14 +21,12 @@
     </button>
   </div>
 
-  <Transition>
-    <div
-      ref="chart"
-      v-show="title"
-      class="hidden md:block"
-      style="width: 900px; height: 400px"
-    ></div>
-  </Transition>
+  <div
+    ref="chart"
+    style="width: 400px; height: 400px"
+    class="overflow-auto"
+    v-show="title"
+  ></div>
 
   <Transition>
     <div

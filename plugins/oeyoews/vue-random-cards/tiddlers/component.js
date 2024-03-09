@@ -20,7 +20,7 @@ const getTemplate = (file) => {
   return template;
 };
 
-const app = (filter = '[!is[system]!prefix[$:/]]') => {
+const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]') => {
   const tiddlers = $tw.wiki.filterTiddlers(filter);
   const component = {
     setup() {
@@ -45,6 +45,7 @@ const app = (filter = '[!is[system]!prefix[$:/]]') => {
         },
 
         toolbox: {
+          show: false,
           left: 0,
           bottom: 0,
           feature: {
@@ -98,6 +99,13 @@ const app = (filter = '[!is[system]!prefix[$:/]]') => {
       },
 
       updateChart() {
+        if (this.chartdata.length > 10) {
+          this.resetChart();
+          this.chartdata.push({
+            name: this.title,
+            value: 1
+          });
+        }
         this.chartapp.setOption(this.options);
       },
 
