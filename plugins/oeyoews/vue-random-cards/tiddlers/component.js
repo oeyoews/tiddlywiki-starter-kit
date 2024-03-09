@@ -85,7 +85,6 @@ const app = (filter = '[!is[system]!prefix[$:/]]') => {
     watch: {
       chartdata: {
         handler() {
-          console.log('update');
           this.updateChart();
         },
         deep: true

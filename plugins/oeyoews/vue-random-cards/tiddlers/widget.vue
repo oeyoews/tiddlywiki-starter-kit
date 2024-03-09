@@ -22,7 +22,12 @@
   </div>
 
   <Transition>
-    <div ref="chart" v-show="title" style="width: 900px; height: 400px"></div>
+    <div
+      ref="chart"
+      v-show="title"
+      class="hidden md:block"
+      style="width: 900px; height: 400px"
+    ></div>
   </Transition>
 
   <Transition>
