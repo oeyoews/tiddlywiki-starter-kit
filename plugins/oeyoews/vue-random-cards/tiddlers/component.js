@@ -41,16 +41,6 @@ const app = (filter = '[!is[system]!prefix[$:/]]') => {
             }
           }
         },
-        toolbox: {
-          show: true,
-          left: 0,
-          bottom: 0,
-          feature: {
-            dataView: { show: true, readOnly: false },
-            restore: {},
-            saveAsImage: {}
-          }
-        },
         series: [
           {
             name: 'Tag',
