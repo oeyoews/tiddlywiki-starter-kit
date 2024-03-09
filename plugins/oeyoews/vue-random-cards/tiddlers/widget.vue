@@ -1,6 +1,6 @@
 <template>
   <div class="flex items-center justify-end gap-2">
-    <button @click="gotoTiddler" v-if="titles[0]" class="p-2">卡片跳转</button>
+    <button @click="gotoTiddler" v-if="title" class="p-2">卡片跳转</button>
     <button @click="resetChart" v-show="chartdata.length > 0" class="p-2">
       重置数据
     </button>
@@ -27,22 +27,21 @@
         ref="chart"
         style="width: 900px; height: 300px"
         class="overflow-auto"
-        v-show="titles[0]"
+        v-show="title"
       ></div>
     </Transition>
   </div>
 
-  <TransitionGroup>
-    <div v-for="title in titles" :key="title">
-      <div
-        class="p-4 rounded border border-solid dark:border-gray-400 my-2 border-gray-200"
-        v-if="title"
-      >
-        <h2>
-          {{ title }}
-        </h2>
-        <p v-html="cardContent" />
-      </div>
+  <Transition>
+    <div
+      class="p-4 rounded border border-solid dark:border-gray-400 my-2 border-gray-200"
+      v-if="title"
+      :key="title"
+    >
+      <h2>
+        {{ title }}
+      </h2>
+      <p v-html="cardContent" />
     </div>
-  </TransitionGroup>
+  </Transition>
 </template>
