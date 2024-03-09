@@ -105,8 +105,6 @@ const app = (filter = '[!is[system]!prefix[$:/]]') => {
       resetChart() {
         // TODO: 如果直接清空， 无效 对于setoptions???
         this.chartdata.splice(0, this.chartdata.length);
-
-        console.log(this.chartdata);
       },
 
       renderTiddler2HTML() {
