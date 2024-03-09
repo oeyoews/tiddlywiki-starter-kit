@@ -7,6 +7,7 @@ module-type: library
 
 const { reactive, toRaw, computed, ref } = window.Vue;
 const { toast } = require('vue3-toastify.js');
+
 const randomString = () => {
   return Math.random().toString(36).substring(2, 11);
 };

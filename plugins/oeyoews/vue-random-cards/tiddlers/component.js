@@ -5,7 +5,7 @@ module-type: library
 
 \*/
 
-const { watch, toRaw, computed, ref } = window.Vue;
+const { reactive, watch, toRaw, computed, ref } = window.Vue;
 const { toast } = require('vue3-toastify.js');
 
 const getTemplate = (file) => {
@@ -25,20 +25,59 @@ const app = (filter = '[!is[system]!prefix[$:/]]') => {
       const cardContent = ref('');
       const title = ref('');
 
+      const chartapp = ref();
+      const chart = ref();
+      const chartdata = ref([]);
+
+      const options = reactive({
+        tooltip: {
+          trigger: 'item',
+          formatter: function (params) {
+            const { name, value, percent } = params;
+            if (value) {
+              return `${name}`;
+            } else {
+              return `${name}`;
+            }
+          }
+        },
+        series: [
+          {
+            name: 'Tag',
+            type: 'pie',
+            radius: '50%',
+            center: '50%',
+            data: chartdata.value
+          }
+        ]
+      });
+
       return {
+        options,
+        chart,
+        chartdata,
+        chartapp,
         title,
         cardContent
       };
     },
 
-    // mounted() {
-    //   this.updateCard();
-    // },
+    mounted() {
+      this.chartapp = echarts.init(this.$refs.chart);
+      this.updateChart();
+      this.chartapp.on('click', (params) => {
+        this.gotoTiddler(params.name);
+      });
+    },
 
     methods: {
       randomTiddlerTitle() {
         const index = (Math.random() * tiddlers.length).toFixed(0) | 0;
         return tiddlers[index];
+      },
+
+      updateChart() {
+        this.chartapp.setOption(this.options);
       },
 
       renderTiddler2HTML() {
@@ -53,12 +92,17 @@ const app = (filter = '[!is[system]!prefix[$:/]]') => {
 
       updateCard() {
         this.title = this.randomTiddlerTitle();
+        this.chartdata.push({
+          name: this.title,
+          value: 1
+        });
+
         this.renderTiddler2HTML();
       },
 
-      gotoTiddler() {
+      gotoTiddler(title = this.title) {
         const story = new $tw.Story();
-        story.navigateTiddler(this.title);
+        story.navigateTiddler(title);
       }
     },
 

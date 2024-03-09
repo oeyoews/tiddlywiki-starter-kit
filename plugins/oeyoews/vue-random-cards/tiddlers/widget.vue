@@ -18,14 +18,17 @@
     </button>
   </div>
 
-  <TransitionGroup v-if="title">
+  <div ref="chart" v-show="title" style="width: 900px; height: 400px"></div>
+
+  <Transition>
     <div
-      class="p-2 rounded border border-solid dark:border-gray-400 my-2 border-gray-200"
+      class="p-4 rounded border border-solid dark:border-gray-400 my-2 border-gray-200"
+      v-if="title"
     >
-      <h2 title="goto tiddler">
+      <h2>
         {{ title }}
       </h2>
       <p v-html="cardContent" />
     </div>
-  </TransitionGroup>
+  </Transition>
 </template>
