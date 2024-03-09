@@ -76,7 +76,9 @@ const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]') => {
     },
 
     mounted() {
-      this.chartapp = echarts.init(this.$refs.chart);
+      this.chartapp = echarts.init(this.$refs.chart, null, {
+        renderer: 'svg'
+      });
       this.updateChart();
       this.chartapp.on('click', (params) => {
         story.navigateTiddler(params.name);
@@ -107,6 +109,12 @@ const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]') => {
           });
         }
         this.chartapp.setOption(this.options);
+
+        // this.chartapp.showLoading();
+        // setTimeout(() => {
+        //   this.chartapp.setOption(this.options);
+        //   this.chartapp.hideLoading();
+        // }, 200);
       },
 
       resetChart() {
