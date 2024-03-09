@@ -23,7 +23,7 @@
 
   <div
     ref="chart"
-    style="width: 400px; height: 400px"
+    style="width: 400px; height: 300px"
     class="overflow-auto"
     v-show="title"
   ></div>
