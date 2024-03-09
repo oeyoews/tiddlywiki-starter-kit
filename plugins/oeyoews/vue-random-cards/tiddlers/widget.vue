@@ -21,12 +21,14 @@
     </button>
   </div>
 
-  <div
-    ref="chart"
-    style="width: 400px; height: 300px"
-    class="overflow-auto"
-    v-show="title"
-  ></div>
+  <div class="hidden md:block">
+    <div
+      ref="chart"
+      style="width: 900px; height: 300px"
+      class="overflow-auto"
+      v-show="title"
+    ></div>
+  </div>
 
   <Transition>
     <div
