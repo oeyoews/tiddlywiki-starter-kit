@@ -22,12 +22,14 @@
   </div>
 
   <div class="hidden md:block">
-    <div
-      ref="chart"
-      style="width: 900px; height: 300px"
-      class="overflow-auto"
-      v-show="title"
-    ></div>
+    <Transition>
+      <div
+        ref="chart"
+        style="width: 900px; height: 300px"
+        class="overflow-auto"
+        v-show="title"
+      ></div>
+    </Transition>
   </div>
 
   <Transition>
