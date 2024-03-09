@@ -43,6 +43,16 @@ const app = (filter = '[!is[system]!prefix[$:/]]') => {
             }
           }
         },
+
+        toolbox: {
+          left: 0,
+          bottom: 0,
+          feature: {
+            dataView: { show: true, readOnly: false },
+            restore: {},
+            saveAsImage: {}
+          }
+        },
         series: [
           {
             name: 'Tag',
@@ -72,6 +82,16 @@ const app = (filter = '[!is[system]!prefix[$:/]]') => {
       });
     },
 
+    watch: {
+      chartdata: {
+        handler() {
+          console.log('update');
+          this.updateChart();
+        },
+        deep: true
+      }
+    },
+
     methods: {
       randomTiddlerTitle() {
         const index = (Math.random() * tiddlers.length).toFixed(0) | 0;
@@ -80,6 +100,13 @@ const app = (filter = '[!is[system]!prefix[$:/]]') => {
 
       updateChart() {
         this.chartapp.setOption(this.options);
+      },
+
+      resetChart() {
+        // TODO: 如果直接清空， 无效 对于setoptions???
+        this.chartdata.splice(0, this.chartdata.length);
+
+        console.log(this.chartdata);
       },
 
       renderTiddler2HTML() {
@@ -98,7 +125,6 @@ const app = (filter = '[!is[system]!prefix[$:/]]') => {
           name: this.title,
           value: 1
         });
-        this.updateChart();
 
         this.renderTiddler2HTML();
       },
