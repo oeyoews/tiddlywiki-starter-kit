@@ -41,6 +41,16 @@ const app = (filter = '[!is[system]!prefix[$:/]]') => {
             }
           }
         },
+        toolbox: {
+          show: true,
+          left: 0,
+          bottom: 0,
+          feature: {
+            dataView: { show: true, readOnly: false },
+            restore: {},
+            saveAsImage: {}
+          }
+        },
         series: [
           {
             name: 'Tag',
@@ -96,6 +106,7 @@ const app = (filter = '[!is[system]!prefix[$:/]]') => {
           name: this.title,
           value: 1
         });
+        this.updateChart();
 
         this.renderTiddler2HTML();
       },
