@@ -30,7 +30,7 @@ const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]') => {
   const component = {
     setup() {
       const cardContent = ref('');
-      const title = ref('');
+      const titles = ref([]);
 
       const chartapp = ref();
       const chart = ref();
@@ -82,7 +82,7 @@ const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]') => {
         chart,
         chartdata,
         chartapp,
-        title,
+        titles,
         cardContent
       };
     },
@@ -116,7 +116,7 @@ const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]') => {
         if (this.chartdata.length > 10) {
           this.resetChart();
           this.chartdata.push({
-            name: this.title,
+            name: this.titles[0],
             value: 1
           });
         }
@@ -137,7 +137,7 @@ const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]') => {
       renderTiddler2HTML() {
         try {
           this.cardContent =
-            $tw.wiki.renderTiddler('text/html', this.title) || '空空如也';
+            $tw.wiki.renderTiddler('text/html', this.titles[0]) || '空空如也';
         } catch (e) {
           console.error(e);
           // toast.error(e.message);
@@ -145,9 +145,9 @@ const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]') => {
       },
 
       updateCard() {
-        this.title = this.randomTiddlerTitle();
+        this.titles[0] = this.randomTiddlerTitle();
         this.chartdata.push({
-          name: this.title,
+          name: this.titles[0],
           value: 1
         });
 
@@ -155,7 +155,7 @@ const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]') => {
       },
 
       gotoTiddler() {
-        story.navigateTiddler(this.title);
+        story.navigateTiddler(this.titles[0]);
       }
     },
 
