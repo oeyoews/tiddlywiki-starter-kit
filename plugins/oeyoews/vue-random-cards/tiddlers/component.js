@@ -7,6 +7,11 @@ module-type: library
 
 const { reactive, watch, toRaw, computed, ref } = window.Vue;
 const { toast } = require('vue3-toastify.js');
+const palette = $tw.wiki.getTiddlerText('$:/palette');
+const theme =
+  $tw.wiki.getTiddler(palette).fields['color-scheme'] === 'dark'
+    ? 'dark'
+    : 'light';
 
 const story = new $tw.Story();
 
@@ -32,6 +37,13 @@ const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]') => {
       const chartdata = ref([]);
 
       const options = reactive({
+        // TODO: not work
+        // aria: {
+        //   enabled: true,
+        //   decal: {
+        //     show: true
+        //   }
+        // },
         tooltip: {
           trigger: 'item',
           formatter: function (params) {
@@ -76,7 +88,7 @@ const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]') => {
     },
 
     mounted() {
-      this.chartapp = echarts.init(this.$refs.chart, null, {
+      this.chartapp = echarts.init(this.$refs.chart, theme, {
         renderer: 'svg'
       });
       this.updateChart();
