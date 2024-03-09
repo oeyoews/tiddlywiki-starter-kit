@@ -18,7 +18,9 @@
     </button>
   </div>
 
-  <div ref="chart" v-show="title" style="width: 900px; height: 400px"></div>
+  <Transition>
+    <div ref="chart" v-show="title" style="width: 900px; height: 400px"></div>
+  </Transition>
 
   <Transition>
     <div

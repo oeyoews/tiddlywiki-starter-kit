@@ -8,6 +8,8 @@ module-type: library
 const { reactive, watch, toRaw, computed, ref } = window.Vue;
 const { toast } = require('vue3-toastify.js');
 
+const story = new $tw.Story();
+
 const getTemplate = (file) => {
   let template = $tw.wiki.getTiddlerText(file).trim();
 
@@ -66,7 +68,7 @@ const app = (filter = '[!is[system]!prefix[$:/]]') => {
       this.chartapp = echarts.init(this.$refs.chart);
       this.updateChart();
       this.chartapp.on('click', (params) => {
-        this.gotoTiddler(params.name);
+        story.navigateTiddler(params.name);
       });
     },
 
@@ -101,9 +103,8 @@ const app = (filter = '[!is[system]!prefix[$:/]]') => {
         this.renderTiddler2HTML();
       },
 
-      gotoTiddler(title = this.title) {
-        const story = new $tw.Story();
-        story.navigateTiddler(title);
+      gotoTiddler() {
+        story.navigateTiddler(this.title);
       }
     },
 
