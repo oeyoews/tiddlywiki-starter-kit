@@ -8,7 +8,7 @@
 				"module-type": "library",
 				"hide-body": "yes"
 			},
-			"suffix": "\nmodule.exports = Vue;\n"
+			"suffix": "module.exports = Vue;"
 		}
 	]
 }

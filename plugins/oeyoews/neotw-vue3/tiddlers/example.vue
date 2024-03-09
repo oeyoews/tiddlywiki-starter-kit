@@ -93,7 +93,8 @@
   </div>
 
   <div class="flex items-center justify-center">
-    <div v-loading="loading">
+    <!-- v-loading="loading" -->
+    <div>
       <video width="320" height="240" v-if="dogvideourl">
         <source :src="dogvideourl" type="video/mp4" />
       </video>
