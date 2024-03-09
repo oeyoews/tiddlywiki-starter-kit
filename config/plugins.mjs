@@ -4,8 +4,8 @@ import config from './index.js';
 // TODO: support remove plugins from here
 export const devPlugins = [
   // 'neotw-highlight-vue',
-  'vue-random-cards',
-  'neotw-vue-settings'
+  'vue-random-cards'
+  // 'neotw-vue-settings'
 ];
 
 // NOTE: vercel not support use { isCi } ???

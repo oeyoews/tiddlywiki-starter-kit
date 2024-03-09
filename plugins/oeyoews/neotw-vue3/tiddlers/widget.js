@@ -38,11 +38,12 @@ class VueExampleWidget extends Widget {
     const app = createApp(exampleComponent);
 
     // register 指令: v-focus
-    // app.directive('focus', {
-    //   mounted(el) {
-    //     el.focus();
-    //   }
-    // });
+    app.directive('focus', {
+      mounted: function (el) {
+        console.log(el);
+        el.focus();
+      }
+    });
 
     // should before mount
     app.config.errorHandler = (err) => {

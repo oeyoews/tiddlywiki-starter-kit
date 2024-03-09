@@ -24,6 +24,7 @@
     v-model="inputValue"
     placeholder="input something"
     class="w-full my-2"
+    autofocus="'autofocus'"
   />
 
   <p v-if="inputValue">{{ inputValue }}</p>
@@ -35,7 +36,13 @@
   <form @submit.prevent="addTodo" class="flex">
     <!-- v-model 对 IME 进行了处理 -->
     <!-- NOTE: textarea 不支持 插值语法，需要使用 v-model 代替 -->
-    <input v-model="newTodo" placeholder="new todo" class="w-full" required />
+    <input
+      v-model="newTodo"
+      placeholder="new todo"
+      v-focus
+      class="w-full"
+      required
+    />
     <button :class="btnClass">addTodo</button>
   </form>
 
@@ -86,7 +93,7 @@
   </div>
 
   <div class="flex items-center justify-center">
-    <div>
+    <div v-loading="loading">
       <video width="320" height="240" v-if="dogvideourl">
         <source :src="dogvideourl" type="video/mp4" />
       </video>
@@ -96,9 +103,9 @@
         alt="dog"
         class="w-64 rounded object-cover aspect-video"
       />
-      <div v-show="dogurlstatus === 'loading'" class="h-24 animate-bounce">
+      <!-- <div v-show="dogurlstatus === 'loading'" class="h-24 animate-bounce">
         Loading ...
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
