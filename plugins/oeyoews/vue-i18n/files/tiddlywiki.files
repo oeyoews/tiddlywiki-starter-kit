@@ -7,8 +7,7 @@
 				"module-type": "library",
 				"type": "application/javascript",
 				"hide-body": "yes"
-			},
-			"suffix": "exports.VueI18n = VueI18n;"
+			}
 		}
 	]
 }
