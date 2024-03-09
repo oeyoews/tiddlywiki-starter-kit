@@ -8,7 +8,7 @@
 				"type": "application/javascript",
 				"hide-body": "yes"
 			},
-			"suffix": "\nmodule.exports = VueI18n\n"
+			"suffix": "exports.VueI18n = VueI18n;"
 		}
 	]
 }
