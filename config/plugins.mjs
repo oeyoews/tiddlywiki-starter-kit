@@ -2,7 +2,7 @@ import ci from 'ci-info';
 import config from './index.js';
 
 // TODO: support remove plugins from here
-export const devPlugins = ['vue-random-cards'];
+export const devPlugins = ['vue-draggable-plus', 'vue-random-cards'];
 
 // NOTE: vercel not support use { isCi } ???
 const enableMarkdown = config.markdown;
@@ -53,8 +53,6 @@ const oeyoewsPlugins = [
   'tiddler-fullscreen',
   'neotw-vue-todo',
   'vue3-toastify',
-  'vue-dragable',
-  'sortable',
   'vue-links-gallery',
   'vue-i18n',
   'mermaid-widget',

@@ -78,14 +78,6 @@ const todo = (json = 'todo.json') => {
         }
       );
 
-      const dragOptions = {
-        animation: 200,
-        group: 'description',
-        disabled: false,
-        ghostClass: 'ghost'
-      };
-
-      const drag = ref(false);
       const editingIndex = ref(-1);
 
       const editingText = ref('');
@@ -93,8 +85,6 @@ const todo = (json = 'todo.json') => {
       return {
         editingIndex,
         editingText,
-        drag,
-        dragOptions,
         progress,
         t,
         done,

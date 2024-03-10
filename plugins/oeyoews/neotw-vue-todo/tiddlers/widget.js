@@ -58,24 +58,14 @@ class VueTodoWidget extends Widget {
     const { json } = this.attributes;
 
     const todoComponent = require('./component.js');
-    const vuedraggable = require('$:/plugins/oeyoews/vue-dragable/vue-dragable.js');
+    const { VueDraggable, vDraggable } = require('draggableplus.js');
 
     try {
       const app = createApp(todoComponent(json));
 
-      // register components
-      const Vueversion = {
-        setup() {
-          return {
-            version: '321'
-          };
-        },
-        template: '<div>{{ version}}</div>'
-      };
-
-      app.component('draggable', vuedraggable);
-      app.component('Vueversion', Vueversion);
+      app.component('VueDraggable', VueDraggable);
       app.use(Vue3Toastify);
+      window.app = app;
 
       const en = require('./i18n/en');
       const cn = require('./i18n/cn');
@@ -104,6 +94,8 @@ class VueTodoWidget extends Widget {
       });
 
       app.use(i18n);
+
+      app.directive('draggable', vDraggable);
 
       app.config.errorHandler = (err) => {
         const text = `[Vue3](${app.version}): ` + err;
