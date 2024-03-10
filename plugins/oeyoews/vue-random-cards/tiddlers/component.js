@@ -20,6 +20,7 @@ const throttle = (fn, delay = 500) => {
   return function (...arg) {
     const self = this;
     if (!timer) {
+      // TIP: 箭头函数虽然会修复this指向问题， 但是同时有导致了 vue 的this 失效， 所以这里必须要哦使用 显示this 绑定
       fn.apply(self, arg);
       timer = setTimeout(() => {
         timer = null; // 清除定时器
