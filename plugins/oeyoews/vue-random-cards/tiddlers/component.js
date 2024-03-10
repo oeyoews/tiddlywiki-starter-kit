@@ -15,6 +15,20 @@ const theme =
 
 const story = new $tw.Story();
 
+const throttle = (fn, delay = 500) => {
+  let timer = null;
+  return function (...arg) {
+    const self = this;
+    if (!timer) {
+      fn.apply(self, arg);
+      timer = setTimeout(() => {
+        timer = null; // 清除定时器
+      }, delay);
+    } else {
+    }
+  };
+};
+
 const getTemplate = (file) => {
   let template = $tw.wiki.getTiddlerText(file).trim();
 
@@ -147,7 +161,7 @@ const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]') => {
         }
       },
 
-      updateCard() {
+      updateCard: throttle(function () {
         this.isRotate = !this.isRotate;
         this.title = this.randomTiddlerTitle();
         this.chartdata.push({
@@ -156,7 +170,7 @@ const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]') => {
         });
 
         this.renderTiddler2HTML();
-      },
+      }),
 
       gotoTiddler() {
         story.navigateTiddler(this.title);

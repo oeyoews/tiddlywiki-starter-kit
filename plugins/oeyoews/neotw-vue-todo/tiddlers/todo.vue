@@ -42,7 +42,10 @@
   >
     <template v-for="item in todos">
       <div class="flex justify-between items-center group">
-        <li class="truncate todo p-1" v-show="editingIndex !== item.id">
+        <li
+          class="flex items-center truncate todo m-0"
+          v-show="editingIndex !== item.id"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="opacity-0 group-hover:opacity-100"
