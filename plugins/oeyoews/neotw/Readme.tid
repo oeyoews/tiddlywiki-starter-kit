@@ -2,4 +2,4 @@ title: $:/plugins/oeyoews/neotw/Readme
 description: Neotw Readme
 caption: Readme
 
-<$fetch />
+<$neotw-vue-fetch />

@@ -3,6 +3,7 @@ import config from './index.js';
 
 // TODO: support remove plugins from here
 export const devPlugins = [
+  'neotw-vue-fetch',
   'vue-info',
   'vue-draggable-plus',
   'vue-random-cards'
@@ -84,10 +85,8 @@ const oeyoewsPlugins = [
   'neotw-music-with-howler',
   'tiddlywiki-banners',
   'font-geist',
-  'neotw-fetch',
   'qrcode',
   'hitokoto',
-  // 'neotw-image-better',
   'notify',
   'NPL',
   'neotw-spotlight',
