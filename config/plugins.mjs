@@ -79,7 +79,6 @@ const oeyoewsPlugins = [
   'markdown-it-github-alert',
   'markdown-extensions-startup',
   'translate',
-  'ejs',
   'skill-badges',
   'notebook-theme-sidebar-resizer',
   'neotw-music-with-howler',
