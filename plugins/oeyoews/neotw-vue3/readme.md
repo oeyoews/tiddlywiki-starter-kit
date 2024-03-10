@@ -2,9 +2,11 @@
 
 <!-- <$vue-example /> -->
 
-## Latest Vue3 Lib
+## Why use Vue, not React or others?
 
-https://unpkg.com/browse/vue@3.4.21/dist/vue.global.prod.js
+* Vue 更接近原生 js 的写法，虽然 react 也支持 cdn 引入，但是体验极差，而 vue 则天然的对 cdn 的用法更加友好。
+
+<!-- https://unpkg.com/browse/vue@3.4.21/dist/vue.global.prod.js -->
 
 ## For developers
 
