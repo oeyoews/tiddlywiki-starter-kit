@@ -30,12 +30,17 @@ class ExampleWidget extends Widget {
 
     const { createApp } = window.Vue;
     const component = require('./component');
+
     const domNode = this.document.createElement('div');
 
     try {
       const app = createApp(component());
 
       app.use(Vue3Toastify);
+
+      app.component('InfoCard', {
+        template: `<div class="flex items-center rounded-full bg-gray-200 dark:bg-gray-700 px-2 py-1 shrink-0"><slot /></div>`
+      });
 
       app.config.errorHandler = (err) => {
         const text = `[Vue3](${app.version}): ` + err;

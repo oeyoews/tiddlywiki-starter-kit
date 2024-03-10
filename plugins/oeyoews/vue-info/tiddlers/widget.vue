@@ -1,6 +1,6 @@
 <template>
   <div class="flex items-center space-x-4 flex-wrap gap-2 justify-center">
-    <div :class="blockClass">
+    <InfoCard>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="20"
@@ -18,8 +18,9 @@
       </svg>
       <span class="ml-1 font-semibold text-purple-500">Version</span>
       <span :class="textClass"> {{ version }} </span>
-    </div>
-    <div :class="blockClass">
+    </InfoCard>
+
+    <InfoCard>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="20"
@@ -38,8 +39,9 @@
       </svg>
       <span class="ml-1 font-semibold text-red-500">Update</span>
       <span :class="textClass"> {{ update }} </span>
-    </div>
-    <div :class="blockClass">
+    </InfoCard>
+
+    <InfoCard>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="20"
@@ -59,8 +61,9 @@
       </svg>
       <span class="ml-1 font-semibold text-green-500">Plugins</span>
       <span :class="textClass"> {{ plugins }} </span>
-    </div>
-    <div :class="blockClass">
+    </InfoCard>
+
+    <InfoCard>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="20"
@@ -80,8 +83,9 @@
       </svg>
       <span class="ml-1 font-semibold text-yellow-500">Tags</span>
       <span :class="textClass"> {{ tags }} </span>
-    </div>
-    <div :class="blockClass">
+    </InfoCard>
+
+    <InfoCard>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="20"
@@ -101,6 +105,6 @@
       </svg>
       <span class="ml-1 font-semibold text-blue-500">Tiddlers</span>
       <span :class="textClass"> {{ tiddlers }} </span>
-    </div>
+    </InfoCard>
   </div>
 </template>
