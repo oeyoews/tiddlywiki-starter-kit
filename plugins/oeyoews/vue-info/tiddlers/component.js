@@ -27,7 +27,7 @@ const tags = getString('[tags[]]').length;
 const version = $tw.version.replace(/-/g, ' ');
 const textClass = 'ml-2 text-sm text-gray-600 dark:text-gray-400';
 const blockClass =
-  'flex items-center rounded-full bg-gray-200 dark:bg-gray-700 px-2 py-1';
+  'flex items-center rounded-full bg-gray-200 dark:bg-gray-700 px-2 py-1 shrink-0';
 
 const app = () => {
   const component = {
