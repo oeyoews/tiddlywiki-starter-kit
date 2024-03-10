@@ -213,21 +213,27 @@ module.exports = {
   beforeCreate() {
     // console.log('beforeCreate');
   },
+
   mounted() {
     this.$refs.pElementRef.textContent = '挂载上了';
   },
-  // NOTE: unmount 只有在页面切换， 组件被销毁时才起作用, 所以vue仍然不能解决 tiddlywiki 的 destory 问题
+
+  // TIP: unmount 只有在页面切换， 组件被销毁时才起作用, 所以vue仍然不能解决 tiddlywiki 的 destory 问题
   // beforeUnmount() { console.log('unmounted'); },
+
+  // NOTE: 由于tiddlywiki 的限制， 无法触发 unmounted
   unmounted() {
     console.log('unmounted');
   },
+
   errorCaptured: (err, vm, info) => {},
+
   // prod 模式下不可用
   // only work for keepalive
   deactivated() {},
   renderTracked({ key, target, type }) {},
 
-  // TODO: 如果同时出现多个相同的widget, UI 似乎更新当前vue 实例. 因为每个widget 都是一个单独的widget. 所以即使数据发生了变化， 也不会跨实例更新ui, 这不同于一个vue 实例的多个相同组件更新。
-  // 挂载到的节点
+  // NOTE: 如果同时出现多个相同的widget, UI 似乎更新当前vue 实例. 因为每个widget 都是一个单独的widget. 所以即使数据发生了变化， 也不会跨实例更新ui, 这不同于一个vue 实例的多个相同组件更新。
+  // 内联模版
   template: getTemplate('$:/plugins/oeyoews/neotw-vue3/example.vue')
 };
