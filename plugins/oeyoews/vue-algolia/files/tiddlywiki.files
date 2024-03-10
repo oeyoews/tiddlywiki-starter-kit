@@ -1,0 +1,22 @@
+{
+	"tiddlers": [
+		{
+			"file": "./algolia.min.js",
+			"fields": {
+				"title": "algolia.min.js",
+				"module-type": "library",
+				"type": "application/javascript",
+				"hide-body": "yes"
+			}
+		},
+		{
+			"file": "./algolia.vue.js",
+			"fields": {
+				"title": "algolia.vue.js",
+				"module-type": "library",
+				"type": "application/javascript",
+				"hide-body": "yes"
+			}
+		}
+	]
+}
