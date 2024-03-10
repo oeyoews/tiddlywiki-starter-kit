@@ -77,7 +77,10 @@ const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]') => {
         ]
       });
 
+      const isRotate = ref(false);
+
       return {
+        isRotate,
         options,
         chart,
         chartdata,
@@ -145,6 +148,7 @@ const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]') => {
       },
 
       updateCard() {
+        this.isRotate = !this.isRotate;
         this.title = this.randomTiddlerTitle();
         this.chartdata.push({
           name: this.title,

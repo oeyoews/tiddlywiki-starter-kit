@@ -11,6 +11,8 @@
         width="1em"
         height="1em"
         viewBox="0 0 512 512"
+        class="transition-all duration-700"
+        :class="{ 'rotate-180': isRotate }"
       >
         <path
           fill="currentColor"
