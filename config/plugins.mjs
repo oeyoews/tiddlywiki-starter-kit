@@ -2,7 +2,6 @@ import ci from 'ci-info';
 import config from './index.js';
 
 // TODO: support remove plugins from here
-// TODO: support comment replace
 export const devPlugins = ['vue-random-cards'];
 
 // NOTE: vercel not support use { isCi } ???
