@@ -4,7 +4,7 @@
       type="text"
       v-model="searchTerms"
       placeholder="搜索插件"
-      class="w-full"
+      class="w-full p-4"
       autofocus="'autofocus'"
     />
   </div>
