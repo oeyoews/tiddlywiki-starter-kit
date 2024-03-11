@@ -2,7 +2,14 @@ import ci from 'ci-info';
 import config from './index.js';
 
 // TODO: support remove plugins from here
-export const devPlugins = ['neotw-vue-plugins', 'neotw-vue-fetch', 'vue-info', 'vue-draggable-plus', 'vue-random-cards'];
+export const devPlugins = [
+  'neotw-vue-journal',
+  'neotw-vue-plugins',
+  'neotw-vue-fetch',
+  'vue-info',
+  'vue-draggable-plus',
+  'vue-random-cards'
+];
 
 // NOTE: vercel not support use { isCi } ???
 const enableMarkdown = config.markdown;
@@ -81,7 +88,6 @@ const oeyoewsPlugins = [
   'tiddlywiki-banners',
   'font-geist',
   'qrcode',
-  'hitokoto',
   'notify',
   'NPL',
   'neotw-spotlight',
