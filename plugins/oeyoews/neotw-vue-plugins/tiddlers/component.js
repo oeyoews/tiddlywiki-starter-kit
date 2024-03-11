@@ -8,15 +8,7 @@ module-type: library
 const { computed, watch, ref } = window.Vue;
 const { toast } = require('vue3-toastify.js');
 
-const getTemplate = (file) => {
-  let template = $tw.wiki.getTiddlerText(file).trim();
-
-  if (template.startsWith('<template>') && template.endsWith('</template>')) {
-    template = template.slice(10, -11);
-  }
-
-  return template;
-};
+const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 
 const app = (
   url = 'https://tiddlywiki-starter-kit.oeyoews.top/library/recipes/library/tiddlers.json'
@@ -26,6 +18,8 @@ const app = (
       const data = ref([]);
       const loading = ref(true);
       const count = ref(0);
+      const pageSize = ref(30);
+      const currentPage = ref(1);
 
       const searchTerms = ref('');
       const filterByTerm = computed(() => {
@@ -34,7 +28,23 @@ const app = (
         );
       });
 
+      const paginatedData = computed(() => {
+        const startIndex = (currentPage.value - 1) * pageSize.value;
+        return filterByTerm.value.slice(
+          startIndex,
+          startIndex + pageSize.value
+        );
+        // .filter((item) => item.title.includes(searchTerms.value));
+      });
+
+      const pages = computed(() => {
+        return Math.ceil(filterByTerm.value.length / pageSize.value);
+      });
+
       return {
+        pages,
+        currentPage,
+        paginatedData,
         data,
         loading,
         count,
@@ -64,6 +74,9 @@ const app = (
           toast.error(e.message);
           this.loading = false;
         }
+      },
+      nextPage(page) {
+        this.currentPage = page;
       }
     },
 

@@ -5,16 +5,7 @@ module-type: library
 
 \*/
 
-const getTemplate = (file) => {
-  let template = $tw.wiki.getTiddlerText(file).trim();
-
-  if (template.startsWith('<template>') && template.endsWith('</template>')) {
-    template = template.slice(10, -11);
-  }
-
-  return template;
-};
-
+const getTemplate = require('./getTemplate');
 const { onCreated, onMounted, toRaw, computed, ref, reactive } = window.Vue;
 
 module.exports = {

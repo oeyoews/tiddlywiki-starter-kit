@@ -1,10 +1,8 @@
 <!-- plugin template readme -->
 
+<$tskpl url="https://tiddly-gittly.github.io/TiddlyWiki-CPL/repo/index.json"/>
+
 <$tskpl />
-
-## TODO
-
-* 不要一次显示所有插件，分页展示
 
 ## Motivation
 

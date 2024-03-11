@@ -13,7 +13,7 @@
     <div v-if="loading">loading ...</div>
     <TransitionGroup>
       <div
-        v-for="plugin in filterByTerm"
+        v-for="plugin in paginatedData"
         :key="plugin.title"
         class="flex flex-col justify-between rounded p-2 text-base dark:bg-[#2d333b] hover:shadow-sm bg-transparent border-[#d0d7de] dark:border-[#444c56] border hover:outline outline-[#d0d7de] hover:outline-1 dark:outline-[#444c56] border-solid overflow-auto"
       >
@@ -28,11 +28,18 @@
         <!-- <p v-if="plugin.description">{{ plugin.description }}</p> -->
       </div>
     </TransitionGroup>
-    <div
+    <!-- <div
       class="flex items-center justify-end text-gray-500 text-sm"
-      v-show="filterByTerm.length === 0"
+      v-show="paginatedData.length === 0"
     >
       暂无匹配项
-    </div>
+    </div> -->
+  </div>
+
+  <!-- paginate -->
+  <div class="flex gap-2 my-2 items-center justify-end">
+    <button class="shrink-0 p-2" v-for="page in pages" @click="nextPage(page)">
+      {{ page }}
+    </button>
   </div>
 </template>
