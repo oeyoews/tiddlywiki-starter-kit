@@ -1,6 +1,7 @@
 <template>
   <!-- search -->
-  <div class="my-2">TSKPL 插件数量: {{ count }}</div>
+  <div class="my-2">插件数量: {{ count }}</div>
+  <!-- <input type="text"> -->
   <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
     <div v-if="loading">loading ...</div>
     <div

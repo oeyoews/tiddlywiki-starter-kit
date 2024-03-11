@@ -26,7 +26,7 @@ const app = (
       const data = ref();
       const loading = ref(true);
       const count = ref(0);
-      return { data, loading, count };
+      return { data, loading, count, url };
     },
 
     async mounted() {
@@ -36,7 +36,12 @@ const app = (
     methods: {
       async getPlugins(url) {
         try {
-          const res = await fetch(url);
+          const res = await fetch(url, {
+            // cache: 'force-cache'
+            headers: {
+              // 'Cache-Control': 'no-cache'
+            }
+          });
           const data = await res.json();
           const size = new TextEncoder().encode(data).length;
           console.log(size / 100, 'kb');
