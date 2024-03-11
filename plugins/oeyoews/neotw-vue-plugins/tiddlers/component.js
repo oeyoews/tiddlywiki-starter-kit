@@ -5,7 +5,7 @@ module-type: library
 
 \*/
 
-const { ref } = window.Vue;
+const { computed, watch, ref } = window.Vue;
 const { toast } = require('vue3-toastify.js');
 
 const getTemplate = (file) => {
@@ -23,10 +23,25 @@ const app = (
 ) => {
   const component = {
     setup() {
-      const data = ref();
+      const data = ref([]);
       const loading = ref(true);
       const count = ref(0);
-      return { data, loading, count, url };
+
+      const searchTerms = ref('');
+      const filterByTerm = computed(() => {
+        return data.value.filter((item) =>
+          item.title.toLowerCase().includes(searchTerms.value.toLowerCase())
+        );
+      });
+
+      return {
+        data,
+        loading,
+        count,
+        url,
+        searchTerms,
+        filterByTerm
+      };
     },
 
     async mounted() {
@@ -36,12 +51,8 @@ const app = (
     methods: {
       async getPlugins(url) {
         try {
-          const res = await fetch(url, {
-            // cache: 'force-cache'
-            headers: {
-              // 'Cache-Control': 'no-cache'
-            }
-          });
+          const res = await fetch(url);
+
           const data = await res.json();
           const size = new TextEncoder().encode(data).length;
           console.log(size / 100, 'kb');
