@@ -75,8 +75,11 @@ const app = (
           this.loading = false;
         }
       },
-      nextPage(page) {
-        this.currentPage = page;
+      nextPage(event) {
+        const value = event.target.getAttribute('data-id');
+        if (value) {
+          this.currentPage = value;
+        }
       }
     },
 

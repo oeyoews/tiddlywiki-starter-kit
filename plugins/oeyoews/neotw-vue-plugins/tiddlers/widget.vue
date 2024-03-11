@@ -37,8 +37,8 @@
   </div>
 
   <!-- paginate -->
-  <div class="flex gap-2 my-2 items-center justify-end">
-    <button class="shrink-0 p-2" v-for="page in pages" @click="nextPage(page)">
+  <div class="flex gap-2 my-2 items-center justify-end" @click="nextPage">
+    <button class="shrink-0 p-2" v-for="page in pages" :data-id="page">
       {{ page }}
     </button>
   </div>
