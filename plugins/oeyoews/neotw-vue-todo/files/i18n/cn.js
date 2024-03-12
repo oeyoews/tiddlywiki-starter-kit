@@ -1,11 +1,3 @@
-/*\
-title: $:/plugins/oeyoews/neotw-vue-todo/i18n/cn.js
-type: application/javascript
-module-type: library
-
-notebook-theme-sidebar-resizer locale zh
-\*/
-
 module.exports = {
   todo: {
     title: '待办事项',

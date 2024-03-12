@@ -67,11 +67,11 @@ class VueTodoWidget extends Widget {
       app.use(Vue3Toastify);
       window.app = app;
 
-      const en = require('./i18n/en');
-      const cn = require('./i18n/cn');
-      const ja = require('./i18n/ja');
-      const fr = require('./i18n/fr');
-      const ru = require('./i18n/ru');
+      const en = require('./i18n/en.js');
+      const cn = require('./i18n/cn.js');
+      const ja = require('./i18n/ja.js');
+      const fr = require('./i18n/fr.js');
+      const ru = require('./i18n/ru.js');
       const messages = {
         English: en,
         中文: cn,

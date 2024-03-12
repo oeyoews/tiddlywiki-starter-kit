@@ -1,10 +1,3 @@
-/*\
-title: $:/plugins/oeyoews/neotw-vue-todo/i18n/ja.js
-type: application/javascript
-module-type: library
-
-\*/
-
 module.exports = {
   todo: {
     title: 'タスクリスト',
