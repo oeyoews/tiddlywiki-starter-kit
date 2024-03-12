@@ -1,9 +1,8 @@
 <center>
-    <img src="https://cdn.jsdelivr.net/gh/oeyoews/tiddlywiki-starter-kit@main/img/snapshot02.png" title="tiddlywiki starter kit" class="spotlight rounded-lg" />
+    <img src="https://cdn.jsdelivr.net/gh/oeyoews/tiddlywiki-starter-kit@main/img/banner5.svg" title="tiddlywiki starter kit" class="spotlight rounded-lg" />
 
 | <img src="https://cdn.jsdelivr.net/gh/oeyoews/tiddlywiki-starter-kit@main/img/banner01.png"  class="spotlight rounded-lg" /> | <img src="https://cdn.jsdelivr.net/gh/oeyoews/tiddlywiki-starter-kit@main/img/banner02.png"  class="spotlight rounded-lg" /> |
 |------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-
 <!-- <img src="https://img.shields.io/badge/Tiddlywiki5-neotw-green?style=for-the-badge&logo=tiddlywiki"> <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2Foeyoews%2Ftiddlywiki-starter-kit%2Fraw%2Fmain%2Fpackage.json&query=version&style=for-the-badge&logo=tiddlywiki&label=version"> -->
 
 <img src="https://img.shields.io/badge/tiddlywiki-black?style=flat-square&logo=tiddlywiki&logoColor=white" alt="badge"> <img src="https://img.shields.io/badge/tailwindcss-black?style=flat-square&logo=tailwindcss&logoColor=white" alt="badge"> <img src="https://img.shields.io/badge/nodejs-black?style=flat-square&logo=node.js&logoColor=white" alt="badge"> <img src="https://img.shields.io/badge/docker-black?style=flat-square&logo=docker&logoColor=white" alt="badge"> <img src="https://img.shields.io/badge/typescript-black?style=flat-square&logo=typescript&logoColor=white" alt="badge"> <img src="https://img.shields.io/badge/codemirror6-black?style=flat-square&logo=codemirror&logoColor=white" alt="badge">
