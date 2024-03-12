@@ -6,15 +6,15 @@ title: $:/plugins/oeyoews/neotw-vue3/readme
 
 * Vue 更接近原生 js 的写法，虽然 react 也支持 cdn 引入，但是体验极差，而 vue 则天然的对 cdn 的用法更加友好。
 
+* Vue is closer to the native JS syntax, and although React also supports CDN inclusion, the experience is extremely poor, while Vue naturally offers a much more friendly approach to CDN usage.
+
 <!-- https://unpkg.com/browse/vue@3.4.21/dist/vue.global.prod.js -->
 
 !! For developers
 
 * 组合式 选项式两种风格都支持，也支持两种写法掺杂, 真正原汁原味的 vue 代码, 这两种写法表面上最大的区别就是前者直接将所有的代码放在了 setup 函数里面，后者是将 代码分散到了多个方法里面. 需要注意的是一些微小的区别，比如 this, 解包问题.
 
-* cdn 中不支持 setup 的语法糖（依赖构建工具）, 所以需要手动返回数据
-
-* neotw-vue3 的主要实现 正是在选项式(template)中访问组合式 API 暴露的值的一个实践.
+* The Vue framework supports both composition and option styles, allowing for a mix of both; authentic Vue code can either place all code inside the setup function or distribute it across multiple methods. It's important to note some subtle differences, like the usage of 'this' and the unpacking issue.
 
 ```js
 const vue = require('$:/plugins/oeyoews/neotw-vue3/vue.global.prod.js')
@@ -33,6 +33,7 @@ const { ref, createApp } = vue
 !! devtools
 
 * 由于是局部 vue 应用，所以可以参考这篇文章开启 devtools, 注意使用 neotw-vue3-dev 进行调试, 而不是 neotw-vue3 插件, 因为无法调试数据在 prod 模式下.
+* It seems you're referring to a third-party Vue 3 library plugin for TiddlyWiki 5. However, as of my knowledge cutoff in early 2023, there is no widely recognized Vue 3 plugin specifically for TiddlyWiki 5. If one has been created, it could be available through the TiddlyWiki community resources or a package manager like npm. You might need to search for it on platforms such as GitHub or npm, or check the TiddlyWiki community forums for more information.
 
 ```js
 // 1.获取 Vue 实例, 先定位到 vue 节点，
@@ -51,5 +52,5 @@ window.__VUE_DEVTOOLS_GLOBAL_HOOK__.apps.push({
 })
 window.__VUE_DEVTOOLS_GLOBAL_HOOK__.enabled = true
 
-链接：https://juejin.cn/post/7052955565944733709
+Links：https://juejin.cn/post/7052955565944733709
 ```
