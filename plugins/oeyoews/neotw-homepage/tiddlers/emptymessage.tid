@@ -1,9 +1,5 @@
 title: $:/config/EmptyStoryMessage
 
-<center class="flex justify-center my-8">
-  <$vue-neotw-info />
-</center>
-
 <div class="prose prose-indigo max-w-none dark:prose-invert">
   <div class="p-0 m-4">
     <div class="">
@@ -37,8 +33,13 @@ title: $:/config/EmptyStoryMessage
         and also support
         <$iconify-icon icon="line-md:iconify1" />
         <span class="underline decoration-wavy decoration-rose-300 decoration-2"> Iconify </span>.
-         <span class="scale-125 mx-2 inline-block">{{$:/plugins/oeyoews/commandpalette/cmd}}</span> <$daylight class="w-3 mx-2"/>
+         <!-- <span class="scale-125 mx-2 inline-block">{{$:/plugins/oeyoews/commandpalette/cmd}}
+         </span> -->
+          <$daylight class="w-3 mx-2"/>
       </p>
+
+      <$vue-neotw-info />
+
       <div class="flex justify-center flex-row space-x-2 block">
         <$button
           class="font-bold rounded transition text-gray-900 p-2 bg-neutral-200">
@@ -46,6 +47,7 @@ title: $:/config/EmptyStoryMessage
            <$action-navigate $to="GettingStarted" $scroll="no" />
           Get Started
         </$button>
+
         <$list filter="[{$:/info/url/protocol}match[https:]]">
           <$button
             class="font-semibold rounded transition text-gray-900 p-2 dark:bg-white" >

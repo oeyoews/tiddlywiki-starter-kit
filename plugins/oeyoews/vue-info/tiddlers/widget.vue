@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex items-center space-x-4 flex-wrap gap-2 justify-center text-sm"
+    class="flex items-center space-x-4 flex-wrap gap-2 justify-center text-sm mb-4 scale-75"
   >
     <InfoCard>
       <IconVersion />
