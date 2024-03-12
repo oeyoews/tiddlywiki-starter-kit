@@ -106,7 +106,7 @@
           <button
             @click="removeTodo(item.id)"
             :title="t('todo.removeTooltip', { msg: 'removeTooltip' })"
-            class="p-1 hover:text-red-400 rounded-full opacity-50 group-hover:opacity-100 transition-all"
+            class="p-1 hover:text-red-400 rounded-md opacity-50 group-hover:opacity-100 transition-all"
           >
             del
           </button>
