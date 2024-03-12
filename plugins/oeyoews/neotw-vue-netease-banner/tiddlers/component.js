@@ -9,7 +9,6 @@ const { watch, toRaw, computed, ref } = window.Vue;
 const { toast } = require('vue3-toastify.js');
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
-const observer = require('$:/plugins/oeyoews/image-observer/twimageobserver.js');
 
 const twimageobserver = new $tw.ImageObserver().observer;
 
@@ -26,6 +25,7 @@ const app = () => {
       await this.getbanners();
       const images = this.$refs.netease.querySelectorAll('img');
       images.forEach((img) => {
+        if (!img) return;
         twimageobserver.observe(img);
       });
     },
