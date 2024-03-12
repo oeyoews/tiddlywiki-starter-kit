@@ -3,6 +3,7 @@
 		{
 			"path": "templates",
 			"filesRegExp": "^.*\\.vue$",
+			"searchSubdirectories": true,
 			"fields": {
 				"title": {
 					"source": "filename",
