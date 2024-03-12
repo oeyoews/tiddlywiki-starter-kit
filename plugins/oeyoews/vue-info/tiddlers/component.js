@@ -46,7 +46,7 @@ const app = () => {
 
     methods: {},
 
-    template: getTemplate('$:/plugins/oeyoews/vue-info/widget.vue')
+    template: getTemplate('$:/plugins/oeyoews/vue-info/templates/widget.vue')
   };
   return component;
 };
