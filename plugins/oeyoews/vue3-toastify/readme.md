@@ -2,7 +2,7 @@
 
 ## TODO
 
-* add usage
+- add usage
 
 <!-- ## NOTE
 
@@ -10,7 +10,7 @@
 
 ## Links
 
-* https://github.com/jerrywu001/vue3-toastify
+- https://github.com/jerrywu001/vue3-toastify
 
 ## Motivation
 

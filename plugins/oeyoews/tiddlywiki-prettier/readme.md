@@ -4,10 +4,9 @@
 </video>
 </center>
 
-
 ## Tiddlywiki Prettier
 
-* support markdown
+- support markdown
 
 ## Option
 
@@ -17,6 +16,5 @@ Use Prettier CDN
 
 ## TODO
 
-* support css, html, js with prettier plugins
-* support markdown-it-prettier(markdownit not support async, must use prettier 2.8.0)
-
+- support css, html, js with prettier plugins
+- support markdown-it-prettier(markdownit not support async, must use prettier 2.8.0)

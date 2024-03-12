@@ -10,5 +10,4 @@ import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.0.0-alpha.4/+esm'
 </script>
 ``` -->
 
-
 <!-- your plugin motivation, or why you write this plugin -->

@@ -18,9 +18,7 @@ const app = () => {
 
     methods: {},
 
-    template: getTemplate(
-      '$:/plugins/oeyoews/neotw-vue-starlist/widget.vue'
-    )
+    template: getTemplate('$:/plugins/oeyoews/neotw-vue-starlist/widget.vue')
   };
   return component;
 };

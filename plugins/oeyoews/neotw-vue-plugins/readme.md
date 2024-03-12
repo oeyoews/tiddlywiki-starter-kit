@@ -6,8 +6,8 @@
 
 ## TODO
 
-* 搜索时重置页数
-* 搜索防抖 v-model
+- 搜索时重置页数
+- 搜索防抖 v-model
 
 ## Motivation
 

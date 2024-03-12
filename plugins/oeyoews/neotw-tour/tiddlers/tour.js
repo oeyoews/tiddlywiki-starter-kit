@@ -13,24 +13,24 @@ function tour() {
       popover: {
         title: 'TiddlyWiki 主页展示',
         description: '自定义 TiddlyWiki 主页展示',
-        position: 'left',
-      },
+        position: 'left'
+      }
     },
     {
       element: '#stx-story-top',
       popover: {
         title: '侧边工具栏',
         description: '自定义工具栏',
-        position: 'left',
-      },
+        position: 'left'
+      }
     },
     {
       element: document.querySelector('[aria-label="player"]'),
       popover: {
         title: 'Player',
         description: '音乐播放器',
-        position: 'left',
-      },
+        position: 'left'
+      }
     },
     {
       element: document.querySelector('[aria-label="home"]'),
@@ -42,9 +42,9 @@ function tour() {
           confetti();
           driverObj.moveNext();
           // TODO swal
-        },
-      },
-    },
+        }
+      }
+    }
   ];
 
   const driverObj = driver({
@@ -55,12 +55,12 @@ function tour() {
     animate: true,
     showButtons: ['next', 'previous', 'close'],
     allowClose: false,
-    steps,
+    steps
   });
 
   driverObj.drive();
 }
 
 module.exports = {
-  tour,
+  tour
 };

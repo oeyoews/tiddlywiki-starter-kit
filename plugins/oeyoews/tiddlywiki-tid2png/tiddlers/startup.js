@@ -17,7 +17,7 @@ exports.startup = () => {
     const {
       tiddlerTitle,
       selector,
-      paramObject: { customSelector } = {},
+      paramObject: { customSelector } = {}
     } = event;
 
     exportPng(tiddlerTitle, customSelector || selector);

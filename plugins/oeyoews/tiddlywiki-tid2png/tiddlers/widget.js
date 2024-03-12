@@ -20,14 +20,14 @@ class Tid2PngWidget extends Widget {
 
     const createElement = $tw.utils.domMaker;
     const buttonNode = createElement('button', {
-      text: options.text || title,
+      text: options.text || title
     });
 
     buttonNode.onclick = () => {
       this.dispatchEvent({
         type: 'om-export-png',
         paramObject: options,
-        tiddlerTitle: title,
+        tiddlerTitle: title
       });
     };
 
