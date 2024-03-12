@@ -25,7 +25,6 @@ const getString = (filter) => {
 const plugins = getString('[plugin-type[plugin]]').length;
 const tags = getString('[tags[]]').length;
 const version = $tw.version.replace(/-/g, ' ');
-const textClass = 'ml-2 text-sm text-gray-600 dark:text-gray-400';
 
 const app = () => {
   const component = {
@@ -41,8 +40,7 @@ const app = () => {
         plugins,
         tags,
         tiddlers,
-        version,
-        textClass
+        version
       };
     },
 

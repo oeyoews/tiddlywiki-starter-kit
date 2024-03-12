@@ -30,6 +30,7 @@ class ExampleWidget extends Widget {
 
     const { createApp } = window.Vue;
     const component = require('./component');
+    const icons = require('./icons');
 
     const domNode = this.document.createElement('div');
 
@@ -38,8 +39,10 @@ class ExampleWidget extends Widget {
 
       app.use(Vue3Toastify);
 
-      app.component('InfoCard', {
-        template: `<div class="flex items-center rounded-full bg-gray-200 dark:bg-gray-700 px-2 py-1 shrink-0"><slot /></div>`
+      icons.forEach((icon) => {
+        app.component(icon.name, {
+          template: icon.icon
+        });
       });
 
       app.config.errorHandler = (err) => {
