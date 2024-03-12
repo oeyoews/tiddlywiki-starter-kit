@@ -26,8 +26,8 @@ const onlinePlugins = [
   'oeyoews/neotw-error-better',
   'oeyoews/tiddlywiki-github-share',
   'oeyoews/neotw-notranslate',
-  'oeyoews/neotw-vue3',
-  'oeyoews/vue-table'
+  'oeyoews/neotw-vue3'
+  // 'oeyoews/vue-table' (experimental)
 ];
 
 // @deprecated, please use cm6
