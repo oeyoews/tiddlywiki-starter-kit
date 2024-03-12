@@ -1,0 +1,16 @@
+{
+	"directories": [
+		{
+			"path": "templates",
+			"filesRegExp": "^.*\\.vue$",
+			"searchSubdirectories": true,
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/neotw-vue-netease-banner/templates/"
+				},
+				"hide-body": "yes"
+			}
+		}
+	]
+}

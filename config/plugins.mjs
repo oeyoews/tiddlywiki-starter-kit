@@ -3,14 +3,7 @@ import config from './index.js';
 
 // TODO: support remove plugins from here
 // TODO: 去重
-export const devPlugins = [
-  'neotw-vue-journal',
-  'neotw-vue-plugins',
-  'neotw-vue-fetch',
-  'vue-info',
-  'vue-draggable-plus',
-  'vue-random-cards'
-];
+export const devPlugins = ['neotw-vue-netease-banner', 'neotw-vue-journal', 'neotw-vue-plugins', 'neotw-vue-fetch', 'vue-info', 'vue-draggable-plus', 'vue-random-cards'];
 
 // NOTE: vercel not support use { isCi } ???
 const enableMarkdown = config.markdown;
