@@ -12,15 +12,7 @@ const useId = () => {
   return Math.random().toString(36).substring(2, 11);
 };
 
-const getTemplate = (file) => {
-  let template = $tw.wiki.getTiddlerText(file).trim();
-
-  if (template.startsWith('<template>') && template.endsWith('</template>')) {
-    template = template.slice(10, -11);
-  }
-
-  return template;
-};
+const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate');
 
 // i18n
 const VueI18n = require('vue-i18n.global.prod.js');
@@ -170,7 +162,9 @@ const todo = (json = 'todo.json') => {
       }
     },
 
-    template: getTemplate('$:/plugins/oeyoews/neotw-vue-todo/todo.vue')
+    template: getTemplate(
+      '$:/plugins/oeyoews/neotw-vue-todo/templates/widget.vue'
+    )
   };
   return component;
 };
