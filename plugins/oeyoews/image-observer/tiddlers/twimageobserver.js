@@ -27,7 +27,7 @@ class LazyImageLoader {
   imageCallback(entries, observer) {
     entries.forEach((entry) => {
       const image = entry.target;
-      const src = image.getAttribute(this.dataSrc);
+      const src = image.dataset.src;
       image.classList.add(...this.dynamicClassed.split(' '));
       image.src = 'data:image/png;base64,iVBORw0...';
 

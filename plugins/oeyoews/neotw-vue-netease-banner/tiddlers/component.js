@@ -9,6 +9,9 @@ const { watch, toRaw, computed, ref } = window.Vue;
 const { toast } = require('vue3-toastify.js');
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
+const observer = require('$:/plugins/oeyoews/image-observer/twimageobserver.js');
+
+const twimageobserver = new $tw.ImageObserver().observer;
 
 const app = () => {
   const component = {
@@ -21,6 +24,10 @@ const app = () => {
 
     async mounted() {
       await this.getbanners();
+      const images = this.$refs.netease.querySelectorAll('img');
+      images.forEach((img) => {
+        twimageobserver.observe(img);
+      });
     },
 
     methods: {
@@ -32,8 +39,7 @@ const app = () => {
           const { banners } = data.body;
           this.banners = banners
             .map((banner) => ({ src: banner.pic }))
-            .slice(0, 8);
-          console.log(this.banners);
+            .slice(0, 9);
           this.loading = false;
         } catch (e) {
           console.error(e);
