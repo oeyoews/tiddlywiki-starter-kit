@@ -1,14 +1,14 @@
-## Tiddlywiki5 Vue3
+title: $:/plugins/oeyoews/neotw-vue3/readme
 
-<!-- <$vue-example /> -->
+!! Tiddlywiki5 Vue3
 
-## Why use Vue, not React or others?
+!! Why use Vue, not React or others?
 
 * Vue 更接近原生 js 的写法，虽然 react 也支持 cdn 引入，但是体验极差，而 vue 则天然的对 cdn 的用法更加友好。
 
 <!-- https://unpkg.com/browse/vue@3.4.21/dist/vue.global.prod.js -->
 
-## For developers
+!! For developers
 
 * 组合式 选项式两种风格都支持，也支持两种写法掺杂, 真正原汁原味的 vue 代码, 这两种写法表面上最大的区别就是前者直接将所有的代码放在了 setup 函数里面，后者是将 代码分散到了多个方法里面. 需要注意的是一些微小的区别，比如 this, 解包问题.
 
@@ -21,22 +21,18 @@ const vue = require('$:/plugins/oeyoews/neotw-vue3/vue.global.prod.js')
 const { ref, createApp } = vue
 ```
 
-## 第三方 Vue3 库 的 Tiddlywiki5 插件
+!! 第三方 Vue3 库 的 Tiddlywiki5 插件
 
 * vue-i18n
 * vue-toastify
-* vue-table
-* vue-vant
-* vueuse(WIP)
-* floating-vue(wip)
 
-* 使用示例参照 https://github.com/oeyoews/tiddlywiki-starter-kit/blob/main/plugins/oeyoews/neotw-vue3/tiddlers/widget.js
+* 使用示例参照 https://github.com/oeyoews/tiddlywiki-starter-kit/blob/main/plugins/oeyoews/neotw-vue-todo/tiddlers/widget.js
 
 * 更多用法请参考 [Vue3 官方文档](https://cn.vuejs.org/guide/essentials/application.html) 和 neotw-vue-todo 插件
 
-## devtools
+!! devtools
 
-* 由于是局部 vue 应用，所以可以参考这篇文章开启 devtools, 注意使用 neotw-vue3-dev 进行调试, 而不是 neotw-vue3 插件, 因为无法调试数据在 prod 模式下
+* 由于是局部 vue 应用，所以可以参考这篇文章开启 devtools, 注意使用 neotw-vue3-dev 进行调试, 而不是 neotw-vue3 插件, 因为无法调试数据在 prod 模式下.
 
 ```js
 // 1.获取 Vue 实例, 先定位到 vue 节点，
@@ -57,17 +53,3 @@ window.__VUE_DEVTOOLS_GLOBAL_HOOK__.enabled = true
 
 链接：https://juejin.cn/post/7052955565944733709
 ```
-
-## vue3 ui 组件库 推荐
-
-* mobile: vant 230kb js+ 200kb css
-* pc: element: 将近 1000kb
-
-## NOTE
-
-* v-focus 指令注冊，在 tiddlywiki 似乎不起作用
-* :autofocus="'autofocus'" is work
-
-## Motivation
-
-<!-- your plugin motivation, or why you write this plugin -->
