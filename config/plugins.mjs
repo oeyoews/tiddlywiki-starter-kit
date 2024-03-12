@@ -2,6 +2,7 @@ import ci from 'ci-info';
 import config from './index.js';
 
 // TODO: support remove plugins from here
+// TODO: 去重
 export const devPlugins = [
   'neotw-vue-starlist',
   'neotw-vue-journal',

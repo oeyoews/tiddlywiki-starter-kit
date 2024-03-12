@@ -16,6 +16,7 @@
     "tiddlywiki/highlight",
     "tiddlywiki/browser-sniff",
     "tiddlywiki/pluginlibrary",
+    "oeyoews/demo",
     "oeyoews/neotw-vue-starlist",
     "oeyoews/neotw-vue-journal",
     "oeyoews/neotw-vue-plugins",

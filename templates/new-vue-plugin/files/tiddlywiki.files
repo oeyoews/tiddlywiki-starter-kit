@@ -1,0 +1,15 @@
+{
+	"directories": [
+		{
+			"path": "templates",
+			"filesRegExp": "^.*\\.vue$",
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/{{ plugin_author }}/${pluginname}/templates/"
+				},
+				"hide-body": "yes"
+			}
+		}
+	]
+}
