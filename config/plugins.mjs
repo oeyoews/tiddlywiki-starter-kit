@@ -3,6 +3,7 @@ import config from './index.js';
 
 // TODO: support remove plugins from here
 export const devPlugins = [
+  'neotw-vue-starlist',
   'neotw-vue-journal',
   'neotw-vue-plugins',
   'neotw-vue-fetch',
@@ -69,7 +70,6 @@ const oeyoewsPlugins = [
   'medium-zoom',
   'blockquote',
   // 'editor-preview-resizer',
-  'double-click-edit',
   'neotw-draft-better',
   'table-style-fix',
   'confetti-background',
@@ -84,8 +84,6 @@ const oeyoewsPlugins = [
   'translate',
   'skill-badges',
   'notebook-theme-sidebar-resizer',
-  'neotw-music-with-howler',
-  'tiddlywiki-banners',
   'font-geist',
   'qrcode',
   'notify',
