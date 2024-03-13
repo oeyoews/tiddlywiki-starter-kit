@@ -33,9 +33,22 @@ class ExampleWidget extends Widget {
     const icons = require('./icons');
 
     const domNode = this.document.createElement('div');
-
+    const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate');
+    const TextTemplate = getTemplate(
+      '$:/plugins/oeyoews/vue-info/templates/Text.vue'
+    );
     try {
       const app = createApp(component());
+
+      const Text = {
+        template: TextTemplate,
+        props: {
+          text: { type: String },
+          number: { type: Number }
+        }
+      };
+
+      app.component('Text', Text);
 
       app.use(Vue3Toastify);
 

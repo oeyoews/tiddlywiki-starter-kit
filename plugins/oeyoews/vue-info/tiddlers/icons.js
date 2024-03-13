@@ -7,8 +7,6 @@ module-type: library
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate');
 
-const title = `<span class="ml-2 text-sm text-gray-600 dark:text-gray-400"> <slot /> </span>`;
-
 const version = getTemplate(
   '$:/plugins/oeyoews/vue-info/templates/version.vue'
 );
@@ -110,9 +108,5 @@ module.exports = [
   {
     name: 'IconTiddler',
     icon: tiddler
-  },
-  {
-    name: 'IconTitle',
-    icon: title
   }
 ];

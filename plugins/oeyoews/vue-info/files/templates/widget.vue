@@ -1,45 +1,28 @@
 <template>
-  <div
-    class="flex items-center space-x-4 flex-wrap gap-2 justify-center text-sm mb-4 scale-75"
-  >
+  <div class="flex items-center space-x-4 flex-wrap gap-2 justify-center text-sm mb-4 scale-75">
     <InfoCard>
       <IconVersion />
-      <span class="ml-1 font-semibold text-purple-500">Version</span>
-      <IconTitle>
-        {{ version }}
-      </IconTitle>
+      <Text text="Version" color="purple" :number="version" />
     </InfoCard>
 
     <InfoCard>
       <IconInfo />
-      <span class="ml-1 font-semibold text-red-500">Update</span>
-      <IconTitle>
-        {{ update }}
-      </IconTitle>
+      <Text text="Update" color="red" :number="update" />
     </InfoCard>
 
     <InfoCard>
       <IconPlugin />
-      <span class="ml-1 font-semibold text-green-500">Plugins</span>
-      <IconTitle>
-        {{ plugins }}
-      </IconTitle>
+      <Text text="Plugins" color="green" :number="plugins" />
     </InfoCard>
 
     <InfoCard>
       <IconTag />
-      <span class="ml-1 font-semibold text-yellow-500">Tags</span>
-      <IconTitle>
-        {{ tags }}
-      </IconTitle>
+      <Text text="Tags" color="yellow" :number="tags" />
     </InfoCard>
 
     <InfoCard>
       <IconTiddler />
-      <span class="ml-1 font-semibold text-blue-500">Tiddlers</span>
-      <IconTitle>
-        {{ tiddlers }}
-      </IconTitle>
+      <Text text="Tiddlers" color="blue" :number="tiddlers" />
     </InfoCard>
   </div>
 </template>
