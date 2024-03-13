@@ -57,4 +57,4 @@ class ExampleWidget extends Widget {
 }
 
 /** @description vue-plugin-template widget */
-exports['widget-1SX43IN9Fo'] = ExampleWidget;
+exports['widget-JKXTwlFtSn'] = ExampleWidget;
