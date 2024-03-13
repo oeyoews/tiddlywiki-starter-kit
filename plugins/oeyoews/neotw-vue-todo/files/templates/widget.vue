@@ -31,24 +31,26 @@
     class="list-none my-4 hover:cursor-move todo-list">
     <template v-for="item in todos">
       <div class="flex justify-between items-center group">
-        <li class="flex items-center truncate todo m-0" v-show="editingIndex !== item.id">
-          <svg xmlns="http://www.w3.org/2000/svg" class="opacity-0 group-hover:opacity-100" width="1em" height="1em"
-            viewBox="0 0 24 24">
-            <g fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="8" cy="4" r="1" transform="rotate(90 8 4)" />
-              <circle cx="16" cy="4" r="1" transform="rotate(90 16 4)" />
-              <circle cx="8" cy="12" r="1" transform="rotate(90 8 12)" />
-              <circle cx="16" cy="12" r="1" transform="rotate(90 16 12)" />
-              <circle cx="8" cy="20" r="1" transform="rotate(90 8 20)" />
-              <circle cx="16" cy="20" r="1" transform="rotate(90 16 20)" />
-            </g>
-          </svg>
-          <input type="checkbox" v-model="item.done" class="mr-2 cursor-pointer toggle" :id="item.id" />
-          <label :for="item.id" class="cursor-pointer" :class="{
+        <div v-if="editingIndex !== item.id">
+          <li class="flex items-center truncate todo m-0">
+            <svg xmlns="http://www.w3.org/2000/svg" class="opacity-0 group-hover:opacity-100" width="1em" height="1em"
+              viewBox="0 0 24 24">
+              <g fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="8" cy="4" r="1" transform="rotate(90 8 4)" />
+                <circle cx="16" cy="4" r="1" transform="rotate(90 16 4)" />
+                <circle cx="8" cy="12" r="1" transform="rotate(90 8 12)" />
+                <circle cx="16" cy="12" r="1" transform="rotate(90 16 12)" />
+                <circle cx="8" cy="20" r="1" transform="rotate(90 8 20)" />
+                <circle cx="16" cy="20" r="1" transform="rotate(90 16 20)" />
+              </g>
+            </svg>
+            <input type="checkbox" v-model="item.done" class="mr-2 cursor-pointer toggle" :id="item.id" />
+            <label :for="item.id" class="cursor-pointer" :class="{
     ['line-through']: item.done,
     'text-gray-400': item.done
   }">{{ item.text }}</label>
-        </li>
+          </li>
+        </div>
         <li v-show="editingIndex === item.id" class="w-full">
           <input v-model="editingText" @keyup.enter="finishEdit(item.id)" @blur="cancelEdit(item.id)"
             @keyup.escape="cancelEdit(item.id)" class="w-full" />
