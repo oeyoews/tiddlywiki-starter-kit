@@ -1,28 +1,13 @@
 <template>
   <div class="flex items-center space-x-4 flex-wrap gap-2 justify-center text-sm mb-4 scale-75">
-    <InfoCard>
-      <IconVersion />
-      <Text text="Version" color="purple" :number="version" />
-    </InfoCard>
+    <Text text="Version" color="purple" :number="version" :icon="iversion" />
 
-    <InfoCard>
-      <IconInfo />
-      <Text text="Update" color="red" :number="update" />
-    </InfoCard>
+    <Text text="Update" color="red" :number="update" :icon="iinfo" />
 
-    <InfoCard>
-      <IconPlugin />
-      <Text text="Plugins" color="green" :number="plugins" />
-    </InfoCard>
+    <Text text="Plugins" color="green" :number="plugins" :icon="iplugin" />
 
-    <InfoCard>
-      <IconTag />
-      <Text text="Tags" color="yellow" :number="tags" />
-    </InfoCard>
+    <Text text="Tags" color="yellow" :number="tags" :icon="itag" />
 
-    <InfoCard>
-      <IconTiddler />
-      <Text text="Tiddlers" color="blue" :number="tiddlers" />
-    </InfoCard>
+    <Text text="Tiddlers" color="blue" :number="tiddlers" :icon="itiddler" />
   </div>
 </template>

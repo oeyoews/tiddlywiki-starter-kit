@@ -30,7 +30,6 @@ class ExampleWidget extends Widget {
 
     const { createApp } = window.Vue;
     const component = require('./component');
-    const icons = require('./icons');
 
     const domNode = this.document.createElement('div');
     const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate');
@@ -44,6 +43,7 @@ class ExampleWidget extends Widget {
         template: TextTemplate,
         props: {
           text: { type: String },
+          icon: { type: String },
           number: { type: Number }
         }
       };
@@ -51,12 +51,6 @@ class ExampleWidget extends Widget {
       app.component('Text', Text);
 
       app.use(Vue3Toastify);
-
-      icons.forEach((icon) => {
-        app.component(icon.name, {
-          template: icon.icon
-        });
-      });
 
       app.config.errorHandler = (err) => {
         const text = `[Vue3](${app.version}): ` + err;
