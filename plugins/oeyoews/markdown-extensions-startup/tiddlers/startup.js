@@ -12,7 +12,8 @@ exports.after = ['startup'];
 exports.synchronous = true;
 
 exports.startup = () => {
-  const md = $tw.Wiki.parsers['text/markdown'].prototype.md;
+  const md = $tw.Wiki.parsers['text/markdown']?.prototype.md;
+  if (!md) return;
 
   if (!md) {
     return;

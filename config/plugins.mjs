@@ -3,15 +3,7 @@ import config from './index.js';
 
 // TODO: support remove plugins from here
 // TODO: 去重
-export const devPlugins = [
-  'neotw-vue-netease-banner',
-  'neotw-vue-journal',
-  'neotw-vue-plugins',
-  'neotw-vue-fetch',
-  'vue-info',
-  'vue-draggable-plus',
-  'vue-random-cards'
-];
+export const devPlugins = [];
 
 // NOTE: vercel not support use { isCi } ???
 const enableMarkdown = config.markdown;
@@ -24,6 +16,7 @@ const localPlugins = [
 ];
 
 const onlinePlugins = [
+  'oeyoews/NPL',
   'oeyoews/neotw-error-better',
   'oeyoews/tiddlywiki-github-share',
   'oeyoews/neotw-notranslate',
@@ -50,14 +43,13 @@ const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
 // oeyoews plugins
 const oeyoewsPlugins = [
   ...devPlugins,
-  'neotw-tour',
-  // 'tiddlywiki-files',
-  // 'neotw-popup-preview',
-  // 'neotw-contextmenu',
-  // 'tiddlywiki-prettier-lib',
-  'markdown-it-twemoji',
-  // 'tiddlywiki-prettier',
-  // 'mermaid-tiny', // markdown-it-mermaid 支持前，我暂时不用这个版本, 因为同时要装两个版本
+  'neotw-vue-netease-banner',
+  'neotw-vue-journal',
+  'neotw-vue-plugins',
+  'neotw-vue-fetch',
+  'vue-info',
+  'vue-draggable-plus',
+  'vue-random-cards',
   'neotw-dropdown-better',
   'tiddler-fullscreen',
   'neotw-vue-todo',
@@ -73,8 +65,8 @@ const oeyoewsPlugins = [
   // 'editor-preview-resizer',
   'neotw-draft-better',
   'table-style-fix',
-  'confetti-background',
-  'confetti',
+  // 'confetti-background',
+  // 'confetti',
   'image-observer',
   'markdown-it-emoji',
   'markdown-it-pangu',
@@ -88,7 +80,6 @@ const oeyoewsPlugins = [
   'font-geist',
   'qrcode',
   'notify',
-  'NPL',
   'neotw-spotlight',
   'neotw-image-gallery',
   'tiddlywiki-motion',
