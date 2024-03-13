@@ -36,7 +36,7 @@ class ExampleWidget extends Widget {
       const app = createApp(component());
 
       app.component('TiddlyWikiVue', {
-        template: `<div> {{ msg }} </div>`,
+        template: `<button @click="$emit('log', 'Hello, Vue3')"> {{ msg }} </button>`,
         props: {
           msg: String
         }
@@ -61,4 +61,4 @@ class ExampleWidget extends Widget {
 }
 
 /** @description vue-plugin-template widget */
-exports['widget-O0Ic26mS3G'] = ExampleWidget;
+exports['widget-rDyLjU9UZX'] = ExampleWidget;
