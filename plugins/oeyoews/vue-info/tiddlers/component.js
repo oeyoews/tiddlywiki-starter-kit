@@ -5,8 +5,7 @@ module-type: library
 
 \*/
 
-const { watch, toRaw, computed, ref } = window.Vue;
-const { toast } = require('vue3-toastify.js');
+const { ref } = window.Vue;
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate');
 
