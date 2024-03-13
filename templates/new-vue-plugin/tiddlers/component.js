@@ -19,7 +19,7 @@ const app = () => {
     methods: {},
 
     template: getTemplate(
-      '$:/plugins/{{ plugin_author }}/${pluginname}/templates/widget.vue'
+      '$:/plugins/{{ plugin_author }}/${pluginname}/templates/APP.vue'
     )
   };
   return component;

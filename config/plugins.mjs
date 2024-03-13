@@ -3,7 +3,9 @@ import config from './index.js';
 
 // TODO: support remove plugins from here
 // TODO: 去重
-export const devPlugins = [];
+export const devPlugins = [
+  // 'vue-2048'
+];
 
 // NOTE: vercel not support use { isCi } ???
 const enableMarkdown = config.markdown;
