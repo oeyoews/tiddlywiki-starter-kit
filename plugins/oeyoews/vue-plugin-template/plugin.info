@@ -9,7 +9,7 @@
   "name": "vue-plugin-template",
   "meat#disabled": "yes",
   "qrcode": "yes",
-  "created": "2024-03-12",
+  "created": "2024-03-13",
   "dependents": [
     "$:/plugins/oeyoews/neotw-vue3"
   ],

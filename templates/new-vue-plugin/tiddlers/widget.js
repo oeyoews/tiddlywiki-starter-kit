@@ -1,9 +1,9 @@
 /*\
-title: $:/plugins/oeyoews/vue-plugin-template/widget.js
+title: $:/plugins/{{ plugin_author }}/${pluginname}/widget.js
 type: application/javascript
 module-type: widget
 
-vue-plugin-template widget
+${pluginname} widget
 
 \*/
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
@@ -60,5 +60,5 @@ class ExampleWidget extends Widget {
   }
 }
 
-/** @description vue-plugin-template widget */
-exports['widget-O0Ic26mS3G'] = ExampleWidget;
+/** @description ${pluginname} widget */
+exports['{{ widget_name }}'] = ExampleWidget;

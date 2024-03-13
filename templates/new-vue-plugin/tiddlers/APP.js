@@ -1,59 +1,27 @@
 /*\
-title: $:/plugins/{{ plugin_author }}/${pluginname}/APP.js
+title: $:/plugins/{{ plugin_author }}/${pluginname}/app.js
 type: application/javascript
-module-type: widget
-
-${pluginname} widget
+module-type: library
 
 \*/
-const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 
-class ExampleWidget extends Widget {
-  constructor(parseTreeNode, options) {
-    super(parseTreeNode, options);
-  }
+const { watch, toRaw, computed, ref } = window.Vue;
 
-  render(parent, nextSibling) {
-    if (!$tw.browser) return;
+const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 
-    this.computeAttributes();
-    this.execute();
+const app = () => {
+  const component = {
+    setup() {
+      return {};
+    },
 
-    const ssr = this.document.isTiddlyWikiFakeDom;
-    if (ssr) return;
+    methods: {},
 
-    const vuelib = '$:/plugins/oeyoews/neotw-vue3/vue.global.prod.js';
+    template: getTemplate(
+      '$:/plugins/{{ plugin_author }}/${pluginname}/templates/app.vue'
+    )
+  };
+  return component;
+};
 
-    if (!window.Vue) {
-      window.Vue = require(vuelib);
-    }
-
-    const { createApp } = window.Vue;
-    const component = require('./component');
-    const domNode = this.document.createElement('div');
-
-    try {
-      const app = createApp(component());
-
-      app.use(Vue3Toastify);
-
-      app.config.errorHandler = (err) => {
-        const text = `[Vue3](${app.version}): ` + err;
-        console.error(text);
-        domNode.textContent = text;
-        domNode.style.color = 'red';
-      };
-
-      // 挂载
-      app.mount(domNode);
-
-      parent.insertBefore(domNode, nextSibling);
-      this.domNodes.push(domNode);
-    } catch (e) {
-      console.error(e);
-    }
-  }
-}
-
-/** @description ${pluginname} widget */
-exports['{{ widget_name }}'] = ExampleWidget;
+module.exports = app;

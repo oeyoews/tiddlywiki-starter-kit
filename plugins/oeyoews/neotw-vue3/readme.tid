@@ -16,22 +16,14 @@ title: $:/plugins/oeyoews/neotw-vue3/readme
 
 * The Vue framework supports both composition and option styles, allowing for a mix of both; authentic Vue code can either place all code inside the setup function or distribute it across multiple methods. It's important to note some subtle differences, like the usage of 'this' and the unpacking issue.
 
-```js
-const vue = require('$:/plugins/oeyoews/neotw-vue3/vue.global.prod.js')
-const { ref, createApp } = vue
-```
+* 使用示例参照 https://github.com/oeyoews/tiddlywiki-starter-kit/tree/main/plugins/oeyoews/vue-plugin-template
 
-* 使用示例参照 https://github.com/oeyoews/tiddlywiki-starter-kit/blob/main/plugins/oeyoews/neotw-vue-todo/tiddlers/widget.js
-
-* More Usage [Vue3 doc](https://cn.vuejs.org/guide/essentials/application.html) 和 neotw-vue-todo 插件
+* More Vue Usage [Vue Doc](https://cn.vuejs.org/guide/essentials/application.html)
 
 !! Devtools
 
-* 由于是局部 vue 应用，所以可以参考这篇文章开启 devtools, 注意使用 neotw-vue3-dev 进行调试, 而不是 neotw-vue3 插件, 因为无法调试数据在 prod 模式下.
-* It seems you're referring to a third-party Vue 3 library plugin for TiddlyWiki 5. However, as of my knowledge cutoff in early 2023, there is no widely recognized Vue 3 plugin specifically for TiddlyWiki 5. If one has been created, it could be available through the TiddlyWiki community resources or a package manager like npm. You might need to search for it on platforms such as GitHub or npm, or check the TiddlyWiki community forums for more information.
-
 ```js
-// 1.获取 Vue 实例, 先定位到 vue 节点，
+// 1.获取 Vue 实例, 先定位到 vue app 节点，
 let vue3 = $0.__vue_app__; (重点注意 $0)
 
 // 2.强制开启
