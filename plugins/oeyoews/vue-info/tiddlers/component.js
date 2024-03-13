@@ -9,6 +9,7 @@ const { ref } = window.Vue;
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate');
 
+const goto = new $tw.Story();
 const getString = (filter) => {
   return $tw.wiki.filterTiddlers(filter);
 };
@@ -113,7 +114,20 @@ const app = () => {
       };
     },
 
-    methods: {},
+    methods: {
+      gotoTiddler(e) {
+        const target = e.target.parentNode.dataset.title;
+        if (!target) return;
+        switch (target) {
+          case 'plugin':
+            goto.navigateTiddler('$:/core/ui/ControlPanel/Plugins');
+            break;
+          default:
+            goto.navigateTiddler('$:/ControlPanel');
+            break;
+        }
+      }
+    },
 
     template: getTemplate('$:/plugins/oeyoews/vue-info/templates/widget.vue')
   };
