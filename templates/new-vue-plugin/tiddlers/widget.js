@@ -31,16 +31,12 @@ class ExampleWidget extends Widget {
     const { createApp } = window.Vue;
     const component = require('./app');
     const domNode = this.document.createElement('div');
+    const TiddlyWikiVue = require('./plugins/TiddlyWikiVue');
 
     try {
       const app = createApp(component());
 
-      app.component('TiddlyWikiVue', {
-        template: `<button @click="$emit('log', 'Hello, Vue3')"> {{ msg }} </button>`,
-        props: {
-          msg: String
-        }
-      });
+      app.use(TiddlyWikiVue);
 
       app.config.errorHandler = (err) => {
         const text = `[Vue3](${app.version}): ` + err;
