@@ -6,7 +6,6 @@ module-type: library
 \*/
 
 const { reactive, watch, toRaw, computed, ref } = window.Vue;
-const { toast } = require('vue3-toastify.js');
 const palette = $tw.wiki.getTiddlerText('$:/palette');
 const theme =
   $tw.wiki.getTiddler(palette).fields['color-scheme'] === 'dark'
@@ -158,7 +157,6 @@ const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]') => {
             $tw.wiki.renderTiddler('text/html', this.title) || '空空如也';
         } catch (e) {
           console.error(e);
-          // toast.error(e.message);
         }
       },
 

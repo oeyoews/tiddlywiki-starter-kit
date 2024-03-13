@@ -6,7 +6,6 @@ module-type: library
 \*/
 
 const { reactive, toRaw, computed, ref } = window.Vue;
-const { toast } = require('vue3-toastify.js');
 
 const randomString = () => {
   return Math.random().toString(36).substring(2, 11);
@@ -266,11 +265,11 @@ const links = (json = 'list-links.json') => {
       // TODO: 验证是否为网址
       addNewLink: function () {
         if (!this.newLink || !this.newDesc) {
-          toast.error('缺少链接或描述');
+          console.error('缺少链接或描述');
           return;
         }
         if (this.prettyLinkData.find((item) => item.link === this.newLink)) {
-          toast.error('链接已存在');
+          console.error('链接已存在');
           return;
         } else if (this.newLink && this.newDesc) {
           this.data.unshift([this.newDesc, this.newLink]);

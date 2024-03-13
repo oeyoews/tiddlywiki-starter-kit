@@ -6,8 +6,6 @@ module-type: library
 \*/
 
 const { watch, toRaw, computed, ref } = window.Vue;
-const { toast } = require('vue3-toastify.js');
-
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 
 const twimageobserver = new $tw.ImageObserver().observer;

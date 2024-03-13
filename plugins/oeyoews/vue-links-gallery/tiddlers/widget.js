@@ -41,8 +41,6 @@ class VueLinkGalleryWidget extends Widget {
       return;
     }
 
-    const Vue3Toastify = require('vue3-toastify.js');
-
     const { createApp } = window.Vue;
     const { json } = this.attributes;
 
@@ -50,8 +48,6 @@ class VueLinkGalleryWidget extends Widget {
 
     try {
       const app = createApp(todoComponent(json));
-
-      app.use(Vue3Toastify);
 
       app.config.errorHandler = (err) => {
         const text = `[Vue3](${app.version}): ` + err;

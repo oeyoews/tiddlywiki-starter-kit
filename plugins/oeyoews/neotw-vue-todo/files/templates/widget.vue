@@ -1,4 +1,7 @@
 <template>
+  <Notivue v-slot="item">
+    <Notification :item="item" />
+  </Notivue>
   <!-- NOTE: vue.config.js 出现在 tabs 里面, vscode 就不会有报错了 -->
   <h2>
     {{ t('todo.title') }}
@@ -42,9 +45,9 @@
           </svg>
           <input type="checkbox" v-model="item.done" class="mr-2 cursor-pointer toggle" :id="item.id" />
           <label :for="item.id" class="cursor-pointer" :class="{
-      ['line-through']: item.done,
-      'text-gray-400': item.done
-    }">{{ item.text }}</label>
+    ['line-through']: item.done,
+    'text-gray-400': item.done
+  }">{{ item.text }}</label>
         </li>
         <li v-show="editingIndex === item.id" class="w-full">
           <input v-model="editingText" @keyup.enter="finishEdit(item.id)" @blur="cancelEdit(item.id)"

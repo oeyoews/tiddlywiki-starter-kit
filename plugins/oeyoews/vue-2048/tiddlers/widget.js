@@ -35,8 +35,6 @@ class ExampleWidget extends Widget {
     try {
       const app = createApp(component());
 
-      app.use(Vue3Toastify);
-
       // const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 
       // const award = getTemplate(

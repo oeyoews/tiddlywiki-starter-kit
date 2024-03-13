@@ -6,7 +6,8 @@ module-type: library
 \*/
 
 const { watch, watchEffect, onMounted, toRaw, computed, ref } = window.Vue;
-const { toast } = require('vue3-toastify.js');
+
+const { push } = require('$:/plugins/oeyoews/notivue/notivue.js');
 
 const useId = () => {
   return Math.random().toString(36).substring(2, 11);
@@ -121,15 +122,8 @@ const todo = (json = 'todo.json') => {
 
       // notify
       notify(msg = 'notify', type = 'success', timeout = 2000) {
-        toast(msg, {
-          theme: 'auto',
-          type,
-          transition: 'slide',
-          position: 'top-left',
-          hideProgressBar: true,
-          autoClose: timeout,
-          dangerouslyHTMLString: true
-        });
+        // push[type](msg);
+        push.success(msg);
       },
 
       // toggle language

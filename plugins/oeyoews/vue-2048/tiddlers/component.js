@@ -6,7 +6,6 @@ module-type: library
 \*/
 
 const { watch, toRaw, computed, ref } = window.Vue;
-const { toast } = require('vue3-toastify.js');
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 const fontSizeCoefs = [1, 1, 0.8, 0.65, 0.5, 0.4, 0.35, 0.32];

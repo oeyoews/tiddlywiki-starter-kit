@@ -3,7 +3,7 @@ import config from './index.js';
 
 // TODO: support remove plugins from here
 // TODO: 去重
-export const devPlugins = [];
+export const devPlugins = ['notivue'];
 
 // NOTE: vercel not support use { isCi } ???
 const enableMarkdown = config.markdown;
@@ -53,7 +53,7 @@ const oeyoewsPlugins = [
   'neotw-dropdown-better',
   'tiddler-fullscreen',
   'neotw-vue-todo',
-  'vue3-toastify',
+  // 'vue3-toastify',
   'vue-links-gallery',
   'vue-i18n',
   'mermaid-widget',

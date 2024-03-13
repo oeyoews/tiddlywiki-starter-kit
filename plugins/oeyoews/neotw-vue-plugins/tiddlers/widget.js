@@ -36,8 +36,6 @@ class TSKPLWidget extends Widget {
     try {
       const app = createApp(component(url));
 
-      app.use(Vue3Toastify);
-
       app.config.errorHandler = (err) => {
         const text = `[Vue3](${app.version}): ` + err;
         console.error(text);

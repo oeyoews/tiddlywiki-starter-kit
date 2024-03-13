@@ -6,7 +6,6 @@ module-type: library
 \*/
 
 const { watch, toRaw, computed, ref } = window.Vue;
-const { toast } = require('vue3-toastify.js');
 
 const getTemplate = (file) => {
   let template = $tw.wiki.getTiddlerText(file).trim();

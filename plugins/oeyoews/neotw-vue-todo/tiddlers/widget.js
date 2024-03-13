@@ -46,7 +46,6 @@ class VueTodoWidget extends Widget {
     // i18n
     const VueI18n = require('vue-i18n.global.prod.js');
     window.VueI18n = VueI18n;
-    const Vue3Toastify = require('vue3-toastify.js');
 
     // vue ui lib
     // const vant = require('vant.min.js');
@@ -64,7 +63,6 @@ class VueTodoWidget extends Widget {
       const app = createApp(todoComponent(json));
 
       app.component('VueDraggable', VueDraggable);
-      app.use(Vue3Toastify);
       window.app = app;
 
       const en = require('./i18n/en.js');
@@ -93,7 +91,29 @@ class VueTodoWidget extends Widget {
         messages
       });
 
+      const {
+        createNotivue,
+        Notivue,
+        Notification
+      } = require('$:/plugins/oeyoews/notivue/notivue.js');
+
+      const notivue = createNotivue({
+        position: 'top-center',
+        limit: 3,
+        enqueue: true,
+        notifications: {
+          global: {
+            duration: 1000
+          }
+        }
+      });
+
       app.use(i18n);
+      app.use(notivue);
+
+      // NOTE: 需要手动注册组件， 并且在模版中添加
+      app.component('Notivue', Notivue);
+      app.component('Notification', Notification);
 
       app.directive('draggable', vDraggable);
 

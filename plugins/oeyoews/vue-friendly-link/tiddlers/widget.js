@@ -32,16 +32,12 @@ class VueFriendlyWidget extends Widget {
       window.Vue = require(vuelib);
     }
 
-    const Vue3Toastify = require('vue3-toastify.js');
-
     const { createApp } = window.Vue;
     const { json } = this.attributes;
 
     const friendlyComponent = require('./app.js');
     try {
       const app = createApp(friendlyComponent(json));
-
-      app.use(Vue3Toastify);
 
       app.config.errorHandler = (err) => {
         const text = `[Vue3](${app.version}): ` + err;

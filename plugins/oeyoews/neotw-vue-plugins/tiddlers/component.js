@@ -6,7 +6,6 @@ module-type: library
 \*/
 
 const { computed, watch, ref } = window.Vue;
-const { toast } = require('vue3-toastify.js');
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 
@@ -71,7 +70,7 @@ const app = (
           return data;
         } catch (e) {
           console.error(e);
-          toast.error(e.message);
+          console.error(e.message);
           this.loading = false;
         }
       },

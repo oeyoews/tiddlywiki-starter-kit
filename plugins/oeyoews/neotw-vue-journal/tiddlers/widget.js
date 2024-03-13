@@ -35,8 +35,6 @@ class ExampleWidget extends Widget {
     try {
       const app = createApp(component());
 
-      app.use(Vue3Toastify);
-
       app.config.errorHandler = (err) => {
         const text = `[Vue3](${app.version}): ` + err;
         console.error(text);
