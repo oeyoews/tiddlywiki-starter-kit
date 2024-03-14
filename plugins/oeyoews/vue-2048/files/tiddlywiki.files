@@ -1,0 +1,55 @@
+{
+	"directories": [
+		{
+			"path": "templates",
+			"filesRegExp": "^.*\\.vue$",
+			"searchSubdirectories": true,
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/vue-2048/templates/"
+				},
+				"hide-body": "yes"
+			}
+		},
+		{
+			"path": "plugins",
+			"filesRegExp": "^.*\\.js$",
+			"searchSubdirectories": true,
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/vue-2048/plugins/"
+				},
+				"module-type": "library",
+				"type": "application/javascript"
+			}
+		},
+		{
+			"path": "components/",
+			"filesRegExp": "^.*\\.js$",
+			"searchSubdirectories": true,
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/vue-2048/components/"
+				},
+				"module-type": "library",
+				"type": "application/javascript"
+			}
+		},
+		{
+			"path": "lib/",
+			"filesRegExp": "^.*\\.js$",
+			"searchSubdirectories": true,
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/vue-2048/lib/"
+				},
+				"module-type": "library",
+				"type": "application/javascript"
+			}
+		}
+	]
+}

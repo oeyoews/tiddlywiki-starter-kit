@@ -9,7 +9,7 @@
   "name": "vue-2048",
   "meat#disabled": "yes",
   "qrcode": "yes",
-  "created": "2024-03-13",
+  "created": "2024-03-14",
   "dependents": [
     "$:/plugins/oeyoews/neotw-vue3"
   ],

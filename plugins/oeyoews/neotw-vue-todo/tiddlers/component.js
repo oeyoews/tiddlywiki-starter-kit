@@ -5,7 +5,7 @@ module-type: library
 
 \*/
 
-const { watch, onMounted, toRaw, computed, ref } = window.Vue;
+const { watch, toRaw, computed, ref } = window.Vue;
 
 const { push } = require('$:/plugins/oeyoews/notivue/notivue.js');
 
