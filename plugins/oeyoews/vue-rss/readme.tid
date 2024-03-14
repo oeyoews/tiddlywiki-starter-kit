@@ -6,6 +6,10 @@ description: vue-rss
 
 <!-- plugin template readme -->
 
-<!-- !! Motivation -->
+!! Motivation
+
+* rss to html, to md
+* https://talk.tiddlywiki.org/t/fun-with-feeds-a-proof-of-concept-rss-reader/6490/
+
 
 <!-- your plugin motivation, or why you write this plugin -->
