@@ -23,26 +23,27 @@ const app = () => {
 
     methods: {
       fetchRSS() {
-        const RSS_URL = 'https://jakearchibald.com/posts.rss';
+        const RSS_URL =
+          'https://corsproxy.io/?https://tiddlywiki.substack.com/feed';
 
         fetch(RSS_URL)
           .then((response) => response.text())
           .then((data) => {
             const parser = new DOMParser();
             const xmlDoc = parser.parseFromString(data, 'text/xml');
-            const items = xmlDoc.getElementsByTagName('entry');
+            const items = xmlDoc.getElementsByTagName('item');
             for (var i = 0; i < items.length; i++) {
               const title =
                 items[i].getElementsByTagName('title')[0].childNodes[0]
                   .nodeValue;
               const text =
-                items[i].getElementsByTagName('content')[0].childNodes[0]
-                  .nodeValue;
+                items[i].getElementsByTagName('content:encoded')[0]
+                  .childNodes[0].nodeValue;
               const summary =
-                items[i].getElementsByTagName('summary')[0].childNodes[0]
+                items[i].getElementsByTagName('description')[0].childNodes[0]
                   .nodeValue;
               const update =
-                items[i].getElementsByTagName('updated')[0].childNodes[0]
+                items[i].getElementsByTagName('pubDate')[0].childNodes[0]
                   .nodeValue;
               this.rssItems.push({
                 title,
