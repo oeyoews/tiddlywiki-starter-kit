@@ -58,7 +58,8 @@ title: $:/config/EmptyStoryMessage
         </$list>
       </div>
     <div class="flex justify-center items-center">
-      <$codeblock code="npx create neotw@latest" language="bash"/>
+      <!-- <$codeblock code="npx create neotw@latest" language="bash"/> -->
+      <$vue-cta />
     </div>
     </div>
   </div>

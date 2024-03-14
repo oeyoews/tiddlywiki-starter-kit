@@ -11,9 +11,15 @@
     "dev/",
     "output",
     "dist",
-    "files/",
+    // "files/",
     "packages/",
     "**/*.min.js"
   ],
-  "include": ["docs/*.{js,ts}", "plugins/oeyoews/**/*.js", "types.d.ts"]
+  "include": [
+    "docs/*.{js,ts}",
+    // "plugins/oeyoews/**/*.js",
+    // "plugins/oeyoews/**/*.vue",
+    "plugins/",
+    "types.d.ts"
+  ]
 }

@@ -7,11 +7,10 @@ module-type: library
 
 const { watch, toRaw, computed, ref } = window.Vue;
 
-const { push } = require('$:/plugins/oeyoews/notivue/notivue.js');
-
 const {
   Notivue,
-  Notification
+  Notification,
+  push
 } = require('$:/plugins/oeyoews/notivue/notivue.js');
 
 const useId = () => {

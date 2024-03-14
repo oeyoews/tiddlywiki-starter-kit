@@ -1,0 +1,16 @@
+{
+	"directories": [
+		{
+			"path": "templates",
+			"filesRegExp": "^.*\\.vue$",
+			"searchSubdirectories": true,
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/neotw-vue-codeblock/templates/"
+				},
+				"hide-body": "yes"
+			}
+		}
+	]
+}
