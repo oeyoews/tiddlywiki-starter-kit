@@ -24,6 +24,19 @@
 				"module-type": "library",
 				"type": "application/javascript"
 			}
+		},
+		{
+			"path": "components",
+			"filesRegExp": "^.*\\.js$",
+			"searchSubdirectories": true,
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/{{ plugin_author }}/${pluginname}/components/"
+				},
+				"module-type": "library",
+				"type": "application/javascript"
+			}
 		}
 	]
 }
