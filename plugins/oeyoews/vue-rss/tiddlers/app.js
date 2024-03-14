@@ -28,12 +28,10 @@ const app = () => {
         fetch(RSS_URL)
           .then((response) => response.text())
           .then((data) => {
-            // 解析 XML 格式的 RSS 数据
             const parser = new DOMParser();
             const xmlDoc = parser.parseFromString(data, 'text/xml');
             const items = xmlDoc.getElementsByTagName('entry');
             for (var i = 0; i < items.length; i++) {
-              console.log(items[i]);
               const title =
                 items[i].getElementsByTagName('title')[0].childNodes[0]
                   .nodeValue;

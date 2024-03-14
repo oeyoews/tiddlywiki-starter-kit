@@ -31,12 +31,9 @@ class ExampleWidget extends Widget {
     const { createApp } = window.Vue;
     const component = require('./app');
     const domNode = this.document.createElement('div');
-    const TiddlyWikiVue = require('./plugins/TiddlyWikiVue');
 
     try {
       const app = createApp(component());
-
-      app.use(TiddlyWikiVue);
 
       app.config.errorHandler = (err) => {
         const text = `[Vue3](${app.version}): ` + err;
