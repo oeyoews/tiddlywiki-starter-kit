@@ -5,9 +5,14 @@ module-type: library
 
 \*/
 
-const { watch, watchEffect, onMounted, toRaw, computed, ref } = window.Vue;
+const { watch, onMounted, toRaw, computed, ref } = window.Vue;
 
 const { push } = require('$:/plugins/oeyoews/notivue/notivue.js');
+
+const {
+  Notivue,
+  Notification
+} = require('$:/plugins/oeyoews/notivue/notivue.js');
 
 const useId = () => {
   return Math.random().toString(36).substring(2, 11);
@@ -158,7 +163,11 @@ const todo = (json = 'todo.json') => {
 
     template: getTemplate(
       '$:/plugins/oeyoews/neotw-vue-todo/templates/widget.vue'
-    )
+    ),
+    components: {
+      Notivue,
+      Notification
+    }
   };
   return component;
 };

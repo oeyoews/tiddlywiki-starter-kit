@@ -92,9 +92,7 @@ class VueTodoWidget extends Widget {
       });
 
       const {
-        createNotivue,
-        Notivue,
-        Notification
+        createNotivue
       } = require('$:/plugins/oeyoews/notivue/notivue.js');
 
       const notivue = createNotivue({
@@ -103,17 +101,13 @@ class VueTodoWidget extends Widget {
         enqueue: true,
         notifications: {
           global: {
-            duration: 1000
+            duration: 1500
           }
         }
       });
 
       app.use(i18n);
       app.use(notivue);
-
-      // NOTE: 需要手动注册组件， 并且在模版中添加
-      app.component('Notivue', Notivue);
-      app.component('Notification', Notification);
 
       app.directive('draggable', vDraggable);
 
