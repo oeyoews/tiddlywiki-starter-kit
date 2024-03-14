@@ -5,7 +5,7 @@ module.exports = {
     host: true,
     hostname: '0.0.0.0',
     qrcode: true, // only host not false works
-    zen: true,
+    zen: false,
     open: false // NOTE: pm2 or pm2 cron restart will open also
   },
   username: 'oeyoews',
