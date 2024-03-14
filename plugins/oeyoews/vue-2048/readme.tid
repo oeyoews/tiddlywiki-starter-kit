@@ -3,6 +3,11 @@ description: vue-2048
 
 <!-- plugin template readme -->
 
+!! TODO
+
+* move to single layout
+* 退出页面
+
 !! Links
 
 * https://github.com/pengfu/vue-2048
