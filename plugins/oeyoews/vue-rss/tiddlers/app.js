@@ -9,7 +9,7 @@ const { ref } = window.Vue;
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 
-const app = () => {
+const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
   const component = {
     setup() {
       const rssItems = ref([]);
@@ -23,8 +23,7 @@ const app = () => {
 
     methods: {
       fetchRSS() {
-        const RSS_URL =
-          'https://corsproxy.io/?https://tiddlywiki.substack.com/feed';
+        const RSS_URL = `https://corsproxy.io/?${rss}`;
 
         fetch(RSS_URL)
           .then((response) => response.text())
@@ -36,20 +35,24 @@ const app = () => {
               const title =
                 items[i].getElementsByTagName('title')[0].childNodes[0]
                   .nodeValue;
-              const text =
-                items[i].getElementsByTagName('content:encoded')[0]
-                  .childNodes[0].nodeValue;
+              // const text =
+              //   items[i].getElementsByTagName('content:encoded')[0]
+              //     .childNodes[0].nodeValue;
               const summary =
                 items[i].getElementsByTagName('description')[0].childNodes[0]
                   .nodeValue;
               const update =
                 items[i].getElementsByTagName('pubDate')[0].childNodes[0]
                   .nodeValue;
+              const link =
+                items[i].getElementsByTagName('link')[0].childNodes[0]
+                  .nodeValue;
               this.rssItems.push({
                 title,
                 summary,
                 update,
-                text
+                link
+                // text
               });
             }
             this.loading = false;

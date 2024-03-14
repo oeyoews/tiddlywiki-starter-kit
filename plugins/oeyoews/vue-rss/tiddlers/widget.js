@@ -27,13 +27,14 @@ class ExampleWidget extends Widget {
     if (!window.Vue) {
       window.Vue = require(vuelib);
     }
+    const { rss } = this.attributes;
 
     const { createApp } = window.Vue;
     const component = require('./app');
     const domNode = this.document.createElement('div');
 
     try {
-      const app = createApp(component());
+      const app = createApp(component(rss));
 
       app.config.errorHandler = (err) => {
         const text = `[Vue3](${app.version}): ` + err;
@@ -54,4 +55,4 @@ class ExampleWidget extends Widget {
 }
 
 /** @description vue-rss widget */
-exports['widget-j2XtvWCOGQ'] = ExampleWidget;
+exports['vue-rss'] = ExampleWidget;
