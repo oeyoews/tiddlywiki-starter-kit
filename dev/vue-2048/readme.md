@@ -1,7 +1,7 @@
 <!-- plugin template readme -->
 
 
-https://github.com/es-repo/vue-exps/blob/master/game2048/index.html#L1082
+https://github.com/es-repo/vue-exps/blob/master/game2048
 
 ## Motivation
 
