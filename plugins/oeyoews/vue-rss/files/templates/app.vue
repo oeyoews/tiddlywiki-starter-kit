@@ -1,9 +1,10 @@
 <template>
   <!-- TODO: 分页 -->
-  <h2>{{ title }}</h2>
-  <a :href="link" target="_blank">
-    {{ link }}
+  <h2>{{ channel.title }}</h2>
+  <a :href="channel.link" target="_blank">
+    {{ channel.link }}
   </a>
+  <p>{{ channel.description }}</p>
   <div>
     <div v-if="loading"> loading ...</div>
     <article v-for="(item, index) in rssItems" :key="item"

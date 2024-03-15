@@ -14,10 +14,14 @@ const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
     setup() {
       const rssItems = ref([]);
       const loading = ref(true);
-      const title = ref('');
-      const link = ref('');
 
-      return { rssItems, loading, title, link };
+      const channel = ref({
+        title: '',
+        link: '',
+        description: ''
+      });
+
+      return { rssItems, loading, channel };
     },
     mounted() {
       this.fetchRSS();
@@ -36,8 +40,13 @@ const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
           const xmlDoc = parser.parseFromString(data, 'text/xml');
           const items = xmlDoc.getElementsByTagName('item');
           const channel = xmlDoc.getElementsByTagName('channel')[0];
-          this.title = channel.getElementsByTagName('title')[0].textContent;
-          this.link = channel.getElementsByTagName('link')[0].textContent;
+
+          this.channel.title =
+            channel.getElementsByTagName('title')[0].textContent;
+          this.channel.link =
+            channel.getElementsByTagName('link')[0].textContent;
+          this.channel.description =
+            channel.getElementsByTagName('description')[0].textContent;
 
           for (var i = 0; i < items.length; i++) {
             const title =
