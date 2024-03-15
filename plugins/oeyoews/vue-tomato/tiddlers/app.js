@@ -21,26 +21,25 @@ const app = (startup = false) => {
       const startTimer = () => {
         if (!isRunning.value) {
           isRunning.value = true;
-          timerInterval = requestAnimationFrame(() =>
-            setInterval(() => {
-              if (seconds.value > 0) {
-                seconds.value--;
-              } else if (minutes.value > 0) {
-                seconds.value = 59;
-                minutes.value--;
-              } else {
-                clearInterval(timerInterval);
-                isRunning.value = false;
-                $tw.modal.display('$:/plugins/oeyoews/vue-tomato/modal/done');
-              }
-            }, 1000)
-          );
+          timerInterval = setInterval(() => {
+            if (seconds.value > 0) {
+              seconds.value--;
+            } else if (minutes.value > 0) {
+              seconds.value = 59;
+              minutes.value--;
+            } else {
+              clearInterval(timerInterval);
+              isRunning.value = false;
+              $tw.modal.display('$:/plugins/oeyoews/vue-tomato/modal/done');
+            }
+          }, 1000);
         }
       };
 
       const pauseTimer = () => {
         clearInterval(timerInterval);
         isRunning.value = false;
+        console.log(isRunning.value, timerInterval);
       };
 
       const resetTimer = () => {
