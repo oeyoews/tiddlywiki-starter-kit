@@ -5,7 +5,7 @@ module-type: library
 
 \*/
 
-const { ref } = window.Vue;
+const { toRaw, ref, watchEffect } = window.Vue;
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 
@@ -48,6 +48,10 @@ const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
     setup() {
       const rssItems = ref([]);
       const loading = ref(true);
+      const currentPage = ref(1);
+      const itemsPerPage = 10;
+      const paginatedItems = ref([]);
+      const pages = ref(0);
 
       const channel = ref({
         title: '',
@@ -55,7 +59,25 @@ const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
         description: ''
       });
 
-      return { rssItems, loading, channel, isSafari };
+      watchEffect(() => {
+        const startIndex = (currentPage.value - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        const nextPage = rssItems.value.slice(startIndex, endIndex);
+        if (nextPage.length > 0) {
+          paginatedItems.value = nextPage;
+        }
+      });
+
+      return {
+        rssItems,
+        loading,
+        channel,
+        isSafari,
+        currentPage,
+        pages,
+        itemsPerPage,
+        paginatedItems
+      };
     },
 
     mounted() {
@@ -97,13 +119,25 @@ const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
               summary
             });
           }
+
+          this.pages = Math.floor(
+            toRaw(this.rssItems.length) / this.itemsPerPage
+          );
+          console.log(toRaw(this.rssItems.length), this.itemsPerPage);
+
           this.loading = false;
         } catch (e) {
           console.error(e);
-          // TODO: note support IOS
-          // alert(e);
           this.loading = false;
         }
+      },
+
+      changePage(page) {
+        if (page < 1 || page > this.pages) {
+          console.warn('page out of range');
+          return;
+        }
+        this.currentPage = page;
       }
     },
 
