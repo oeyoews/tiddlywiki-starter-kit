@@ -38,9 +38,6 @@ const browserType = () => {
 
 const isSafari = browserType() === 'Safari';
 
-const getContent = (data, tag) => {
-  return data.getElementsByTagName(tag)[0]?.textContent;
-};
 const proxy = 'https://corsproxy.io/?';
 
 const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
@@ -96,6 +93,14 @@ const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
     },
 
     methods: {
+      getContent(data, tag) {
+        if (!data) {
+          this.error = 'data is null';
+          return;
+        }
+        return data?.getElementsByTagName(tag)[0]?.textContent;
+      },
+
       async fetchRSS() {
         const RSS_URL = proxy + rss;
 
@@ -108,6 +113,7 @@ const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
           const items = xmlDoc.getElementsByTagName('item');
           const channel = xmlDoc.getElementsByTagName('channel')[0];
 
+          const getContent = this.getContent;
           this.channel.title = getContent(channel, 'title');
           this.channel.link = getContent(channel, 'link');
           this.channel.description = getContent(channel, 'description');
