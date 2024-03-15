@@ -38,11 +38,10 @@ const browserType = () => {
 
 const isSafari = browserType() === 'Safari';
 
-const proxy = 'https://corsproxy.io/?';
-
 const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
   const component = {
     setup() {
+      const proxy = ref('https://corsproxy.io/?');
       const rssItems = ref([]);
       const loading = ref(true);
       const currentPage = ref(1);
@@ -70,6 +69,7 @@ const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
 
       const error = ref('');
       return {
+        proxy,
         rss,
         error,
         order,
@@ -102,7 +102,11 @@ const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
       },
 
       async fetchRSS() {
-        const RSS_URL = proxy + rss;
+        let RSS_URL = rss;
+        // TODO: for next support disable proxy
+        if (this.proxy) {
+          RSS_URL = this.proxy + rss;
+        }
 
         try {
           const response = await fetch(RSS_URL);
