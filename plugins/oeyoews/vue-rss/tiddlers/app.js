@@ -67,7 +67,7 @@ const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
           this.loading = false;
         } catch (e) {
           console.error(e);
-          alert('RSS Error');
+          alert(e);
           this.loading = false;
         }
       }
