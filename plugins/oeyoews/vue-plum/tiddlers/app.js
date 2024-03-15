@@ -183,8 +183,6 @@ const app = () => {
       };
     },
 
-    methods: {},
-
     template: getTemplate('$:/plugins/oeyoews/vue-plum/templates/app.vue')
   };
   return component;
