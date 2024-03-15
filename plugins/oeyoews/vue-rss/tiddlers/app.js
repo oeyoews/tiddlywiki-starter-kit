@@ -123,7 +123,6 @@ const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
           this.pages = Math.floor(
             toRaw(this.rssItems.length) / this.itemsPerPage
           );
-          console.log(toRaw(this.rssItems.length), this.itemsPerPage);
 
           this.loading = false;
         } catch (e) {

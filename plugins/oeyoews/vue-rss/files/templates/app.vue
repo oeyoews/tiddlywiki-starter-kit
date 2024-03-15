@@ -28,7 +28,7 @@
             class="p-2 rounded border-solid border my-4 flex flex-col justify-between text-base dark:bg-[#2d333b] hover:shadow-sm bg-transparent border-[#d0d7de] dark:border-[#444c56] hover:outline outline-[#d0d7de] hover:outline-1 dark:outline-[#444c56]" />
         </details>
       </article>
-      <div class="flex justify-center">
+      <div class="flex justify-center" v-if="pages > 1">
         <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md mx-2"
           @click="changePage(currentPage - 1)" :disabled="currentPage === 1"
           :class="{ 'cursor-not-allowed': currentPage === 1 }">Previous</button>
