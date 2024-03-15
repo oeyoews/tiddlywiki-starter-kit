@@ -1,5 +1,5 @@
 /*\
-title: $:/plugins/oeyoews/vue-tomato/app.js
+title: $:/plugins/oeyoews/vue-pomodoro/app.js
 type: application/javascript
 module-type: library
 
@@ -37,7 +37,9 @@ const app = (startup = false) => {
               minutes.value = defaultMinutes;
               seconds.value = 0;
 
-              $tw.modal.display('$:/plugins/oeyoews/vue-tomato/modal/done');
+              $tw.modal.display('$:/plugins/oeyoews/vue-pomodoro/modal/done');
+              // TODO: 存储完成的任务数量
+              // $tw.wiki.setText
             }
           }, 1000);
         }
@@ -113,7 +115,7 @@ const app = (startup = false) => {
       }
     },
 
-    template: getTemplate('$:/plugins/oeyoews/vue-tomato/templates/app.vue'),
+    template: getTemplate('$:/plugins/oeyoews/vue-pomodoro/templates/app.vue'),
 
     components: {
       Button: require('./components/Button.js')

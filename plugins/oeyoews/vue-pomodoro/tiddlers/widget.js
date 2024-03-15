@@ -1,9 +1,9 @@
 /*\
-title: $:/plugins/oeyoews/vue-tomato/widget.js
+title: $:/plugins/oeyoews/vue-pomodoro/widget.js
 type: application/javascript
 module-type: widget
 
-vue-tomato widget
+vue-pomodoro widget
 
 \*/
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
@@ -57,5 +57,5 @@ class TomatoWidget extends Widget {
   }
 }
 
-/** @description vue-tomato widget */
-exports['vue-tomato'] = TomatoWidget;
+/** @description vue-pomodoro widget */
+exports['vue-pomodoro'] = TomatoWidget;

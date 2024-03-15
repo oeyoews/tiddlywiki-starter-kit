@@ -7,7 +7,7 @@
 			"fields": {
 				"title": {
 					"source": "filename",
-					"prefix": "$:/plugins/oeyoews/vue-tomato/templates/"
+					"prefix": "$:/plugins/oeyoews/vue-pomodoro/templates/"
 				},
 				"hide-body": "yes"
 			}
@@ -19,7 +19,7 @@
 			"fields": {
 				"title": {
 					"source": "filename",
-					"prefix": "$:/plugins/oeyoews/vue-tomato/plugins/"
+					"prefix": "$:/plugins/oeyoews/vue-pomodoro/plugins/"
 				},
 				"module-type": "library",
 				"type": "application/javascript"
@@ -32,7 +32,7 @@
 			"fields": {
 				"title": {
 					"source": "filename",
-					"prefix": "$:/plugins/oeyoews/vue-tomato/components/"
+					"prefix": "$:/plugins/oeyoews/vue-pomodoro/components/"
 				},
 				"module-type": "library",
 				"type": "application/javascript"

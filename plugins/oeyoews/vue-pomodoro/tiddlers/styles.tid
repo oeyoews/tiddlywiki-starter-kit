@@ -1,5 +1,5 @@
 tags: $:/tags/Stylesheet
-title: $:/plugins/oeyoews/vue-tomato/modal/styles
+title: $:/plugins/oeyoews/vue-pomodoro/modal/styles
 
 .slide-up-enter-active,
 .slide-up-leave-active {
