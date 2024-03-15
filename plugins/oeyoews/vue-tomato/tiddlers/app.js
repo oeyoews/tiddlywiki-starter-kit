@@ -19,6 +19,10 @@ const app = (startup = false) => {
       let timerInterval = null;
 
       const startTimer = () => {
+        if (minutes.value === 0 && seconds.value === 0) {
+          return;
+        }
+
         if (!isRunning.value) {
           isRunning.value = true;
           timerInterval = setInterval(() => {
@@ -57,6 +61,9 @@ const app = (startup = false) => {
           minutes.value += minutesToAdd;
           if (minutes.value < 0) {
             minutes.value = 0;
+          }
+          if (minutes.value > 25) {
+            minutes.value = 25;
           }
         }
       };
