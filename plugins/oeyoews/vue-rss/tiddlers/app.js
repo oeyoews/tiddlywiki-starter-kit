@@ -14,52 +14,51 @@ const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
     setup() {
       const rssItems = ref([]);
       const loading = ref(true);
+      const title = ref('');
+      const link = ref('');
 
-      return { rssItems, loading };
+      return { rssItems, loading, title, link };
     },
     mounted() {
       this.fetchRSS();
     },
 
     methods: {
-      fetchRSS() {
-        const RSS_URL = `https://corsproxy.io/?${rss}`;
+      async fetchRSS() {
+        const proxy = 'https://corsproxy.io/?';
+        const RSS_URL = proxy + rss;
 
-        fetch(RSS_URL)
-          .then((response) => response.text())
-          .then((data) => {
-            const parser = new DOMParser();
-            const xmlDoc = parser.parseFromString(data, 'text/xml');
-            const items = xmlDoc.getElementsByTagName('item');
-            for (var i = 0; i < items.length; i++) {
-              const title =
-                items[i].getElementsByTagName('title')[0].childNodes[0]
-                  .nodeValue;
-              // const text =
-              //   items[i].getElementsByTagName('content:encoded')[0]
-              //     .childNodes[0].nodeValue;
-              const summary =
-                items[i].getElementsByTagName('description')[0].childNodes[0]
-                  .nodeValue;
-              const update =
-                items[i].getElementsByTagName('pubDate')[0].childNodes[0]
-                  .nodeValue;
-              const link =
-                items[i].getElementsByTagName('link')[0].childNodes[0]
-                  .nodeValue;
-              this.rssItems.push({
-                title,
-                summary,
-                update,
-                link
-                // text
-              });
-            }
-            this.loading = false;
-          })
-          .catch((error) => {
-            console.error('获取 RSS 数据时出错:', error);
-          });
+        try {
+          const response = await fetch(RSS_URL);
+          const data = await response.text();
+
+          const parser = new DOMParser();
+          const xmlDoc = parser.parseFromString(data, 'text/xml');
+          const items = xmlDoc.getElementsByTagName('item');
+          const channel = xmlDoc.getElementsByTagName('channel')[0];
+          this.title = channel.getElementsByTagName('title')[0].textContent;
+          this.link = channel.getElementsByTagName('link')[0].textContent;
+
+          for (var i = 0; i < items.length; i++) {
+            const title =
+              items[i].getElementsByTagName('title')[0]?.textContent;
+            const summary =
+              items[i].getElementsByTagName('description')[0]?.textContent;
+            const update =
+              items[i].getElementsByTagName('pubDate')[0]?.textContent;
+            const link = items[i].getElementsByTagName('link')[0]?.textContent;
+            this.rssItems.push({
+              title,
+              summary,
+              update,
+              link
+              // text
+            });
+          }
+          this.loading = false;
+        } catch (e) {
+          console.error(e);
+        }
       }
     },
 

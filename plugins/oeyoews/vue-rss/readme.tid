@@ -2,13 +2,9 @@ title: $:/plugins/oeyoews/vue-rss/readme
 description: vue-rss
 
 
-!! Post
-
 <$vue-rss />
 
 <hr />
-
-!! Latest
 
 <$vue-rss rss="https://talk.tiddlywiki.org/latest.rss" />
 
