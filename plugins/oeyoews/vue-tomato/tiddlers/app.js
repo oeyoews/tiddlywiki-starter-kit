@@ -5,14 +5,14 @@ module-type: library
 
 \*/
 
-const { ref, watch, onBeforeUnmount } = window.Vue;
+const { watchEffect, computed, ref, watch, onBeforeUnmount } = window.Vue;
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 
-const app = () => {
+const app = (startup = false) => {
   const component = {
     setup() {
-      const defaultMinutes = 25;
+      const defaultMinutes = 30;
       const minutes = ref(defaultMinutes);
       const seconds = ref(0);
       const isRunning = ref(false);
@@ -21,18 +21,20 @@ const app = () => {
       const startTimer = () => {
         if (!isRunning.value) {
           isRunning.value = true;
-          timerInterval = setInterval(() => {
-            if (seconds.value > 0) {
-              seconds.value--;
-            } else if (minutes.value > 0) {
-              seconds.value = 59;
-              minutes.value--;
-            } else {
-              clearInterval(timerInterval);
-              isRunning.value = false;
-              alert('番茄钟完成！');
-            }
-          }, 1000);
+          timerInterval = requestAnimationFrame(() =>
+            setInterval(() => {
+              if (seconds.value > 0) {
+                seconds.value--;
+              } else if (minutes.value > 0) {
+                seconds.value = 59;
+                minutes.value--;
+              } else {
+                clearInterval(timerInterval);
+                isRunning.value = false;
+                $tw.modal.display('$:/plugins/oeyoews/vue-tomato/modal/done');
+              }
+            }, 1000)
+          );
         }
       };
 
@@ -63,11 +65,29 @@ const app = () => {
         }
       });
 
+      const SECONDS = ref(seconds.value);
+      const MINUTES = ref(minutes.value);
+
+      watchEffect(() => {
+        if (seconds.value < 10) {
+          SECONDS.value = String(seconds.value).padStart(2, '0');
+        } else {
+          SECONDS.value = seconds.value;
+        }
+        if (minutes.value < 10) {
+          MINUTES.value = String(minutes.value).padStart(2, '0');
+        } else {
+          MINUTES.value = minutes.value;
+        }
+      });
+
       onBeforeUnmount(() => {
         clearInterval(timerInterval);
       });
 
       return {
+        SECONDS,
+        MINUTES,
         minutes,
         seconds,
         isRunning,
@@ -76,6 +96,12 @@ const app = () => {
         resetTimer,
         adjustTime
       };
+    },
+
+    mounted() {
+      if (startup) {
+        this.startTimer();
+      }
     },
 
     template: getTemplate('$:/plugins/oeyoews/vue-tomato/templates/app.vue'),

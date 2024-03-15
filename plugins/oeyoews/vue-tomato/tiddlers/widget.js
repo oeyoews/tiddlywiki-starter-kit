@@ -8,7 +8,7 @@ vue-tomato widget
 \*/
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 
-class ExampleWidget extends Widget {
+class TomatoWidget extends Widget {
   constructor(parseTreeNode, options) {
     super(parseTreeNode, options);
   }
@@ -32,9 +32,10 @@ class ExampleWidget extends Widget {
     const component = require('./app');
     const domNode = this.document.createElement('div');
     const TiddlyWikiVue = require('./plugins/TiddlyWikiVue');
+    const startup = this.hasAttribute('startup');
 
     try {
-      const app = createApp(component());
+      const app = createApp(component(startup));
 
       app.use(TiddlyWikiVue);
 
@@ -57,4 +58,4 @@ class ExampleWidget extends Widget {
 }
 
 /** @description vue-tomato widget */
-exports['widget-CeHN8AfvuX'] = ExampleWidget;
+exports['vue-tomato'] = TomatoWidget;
