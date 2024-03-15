@@ -26,6 +26,7 @@ description: vue-rss
 
 !! Roadmap
 
+* support IOS
 * support save single article convert to tiddler
 * pagination
 
