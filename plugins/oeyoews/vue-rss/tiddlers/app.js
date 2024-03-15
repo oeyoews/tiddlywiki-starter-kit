@@ -120,7 +120,7 @@ const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
             });
           }
 
-          this.pages = Math.floor(
+          this.pages = Math.ceil(
             toRaw(this.rssItems.length) / this.itemsPerPage
           );
 
