@@ -1,5 +1,6 @@
 <template>
   <!-- TODO: 分页 -->
+  <div class="bg-rose-500" v-if="isSafari">Rss plugin not supported your browser.</div>
   <h2>{{ channel.title }}</h2>
   <a :href="channel.link" target="_blank">
     {{ channel.link }}
