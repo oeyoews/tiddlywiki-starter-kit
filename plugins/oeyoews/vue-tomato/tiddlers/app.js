@@ -30,6 +30,9 @@ const app = (startup = false) => {
             } else {
               clearInterval(timerInterval);
               isRunning.value = false;
+              minutes.value = defaultMinutes;
+              seconds.value = 0;
+
               $tw.modal.display('$:/plugins/oeyoews/vue-tomato/modal/done');
             }
           }, 1000);

@@ -1,4 +1,16 @@
 <template>
+  <!-- <div class="flex">
+    <Transition name="slide-up">
+      <div :key="MINUTES" class="text-2xl font-bold">
+        {{ MINUTES }}:
+      </div>
+    </Transition>
+    <Transition name="slide-up">
+      <div :key="SECONDS" class="text-2xl font-bold">
+        {{ SECONDS }}
+      </div>
+    </Transition>
+  </div> -->
   <div class="text-4xl font-bold">{{ MINUTES }}:{{ SECONDS }}</div>
   <div class="mt-4 flex gap-2">
     <Button @click="startTimer" :disabled="isRunning">开始</Button>
