@@ -1,5 +1,6 @@
-tags: $:/tags/Stylesheet
 title: $:/plugins/oeyoews/vue-pomodoro/modal/styles
+
+<!-- tags: $:/tags/Stylesheet -->
 
 .slide-up-enter-active,
 .slide-up-leave-active {
