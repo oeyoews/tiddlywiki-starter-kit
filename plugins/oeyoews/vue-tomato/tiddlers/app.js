@@ -12,7 +12,7 @@ const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 const app = (startup = false) => {
   const component = {
     setup() {
-      const defaultMinutes = 30;
+      const defaultMinutes = 25;
       const minutes = ref(defaultMinutes);
       const seconds = ref(0);
       const isRunning = ref(false);
