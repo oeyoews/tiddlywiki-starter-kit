@@ -2,7 +2,7 @@
   <!-- TODO: 分页 -->
   <div class="bg-rose-500" v-if="isSafari">Rss plugin not supported your browser.</div>
 
-  <div class="bg-rose-600">{{error}}</div>
+  <div class="bg-rose-600" v-if="!loading">[{{ rss }}]: {{error}}</div>
   <div v-if="loading"> loading ...</div>
   <template v-else>
     <!-- info -->

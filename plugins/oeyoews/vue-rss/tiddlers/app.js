@@ -73,6 +73,7 @@ const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
 
       const error = ref('');
       return {
+        rss,
         error,
         order,
         rssItems,
