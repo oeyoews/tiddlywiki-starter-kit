@@ -17,8 +17,9 @@
         <div v-if="item.update">{{item.update}}</div>
       </div>
       <details>
-        <hr>
-        <p v-html="item.summary" />
+        <summary class="rounded p-1 cursor-pointer bg-gray-100 dark:bg-gray-700/80">More</summary>
+        <p v-html="item.summary"
+          class="p-2 rounded border-solid border my-4 flex flex-col justify-between text-base dark:bg-[#2d333b] hover:shadow-sm bg-transparent border-[#d0d7de] dark:border-[#444c56] hover:outline outline-[#d0d7de] hover:outline-1 dark:outline-[#444c56]" />
       </details>
     </article>
   </div>
