@@ -23,10 +23,9 @@ description: vue-rss
 
 * This plugin uses https://corsproxy.io/ for proxy forwarding, which require a special network environment for some countries
 
-
 !! Roadmap
 
-* support IOS
+* support IOS: proxy forwarding not supported by IOS now
 * support save single article convert to tiddler
 * pagination
 
