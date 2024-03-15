@@ -27,14 +27,14 @@ class ExampleWidget extends Widget {
     if (!window.Vue) {
       window.Vue = require(vuelib);
     }
-    const { rss } = this.attributes;
+    const { rss, proxy } = this.attributes;
 
     const { createApp } = window.Vue;
     const component = require('./app');
     const domNode = this.document.createElement('div');
 
     try {
-      const app = createApp(component(rss));
+      const app = createApp(component(rss, proxy));
 
       app.config.errorHandler = (err) => {
         const text = `[Vue3](${app.version}): ` + err;

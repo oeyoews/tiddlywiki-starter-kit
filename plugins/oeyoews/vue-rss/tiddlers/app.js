@@ -38,10 +38,12 @@ const browserType = () => {
 
 const isSafari = browserType() === 'Safari';
 
-const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
+const app = (
+  rss = 'https://talk.tiddlywiki.org/posts.rss',
+  proxy = 'https://corsproxy.io/?'
+) => {
   const component = {
     setup() {
-      const proxy = ref('https://corsproxy.io/?');
       const rssItems = ref([]);
       const loading = ref(true);
       const currentPage = ref(1);
