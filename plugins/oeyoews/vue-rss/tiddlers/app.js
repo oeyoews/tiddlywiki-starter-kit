@@ -116,7 +116,11 @@ const app = (
 
           const parser = new DOMParser();
           const xmlDoc = parser.parseFromString(data, 'text/xml');
-          const items = xmlDoc.getElementsByTagName('item');
+          let items = xmlDoc.getElementsByTagName('item');
+          if (!items.length) {
+            items = xmlDoc.getElementsByTagName('entry');
+          }
+
           const channel = xmlDoc.getElementsByTagName('channel')[0];
 
           const getContent = this.getContent;
