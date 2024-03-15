@@ -21,7 +21,7 @@ description: vue-rss
 
 !! NOTE
 
-* This plugin uses https://corsproxy.io/ for proxy forwarding, which may require a special network environment
+* This plugin uses https://corsproxy.io/ for proxy forwarding, which require a special network environment for some countries
 
 
 !! Roadmap
