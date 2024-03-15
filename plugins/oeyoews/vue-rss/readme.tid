@@ -1,6 +1,12 @@
 title: $:/plugins/oeyoews/vue-rss/readme
 description: vue-rss
 
+!! Usage
+```
+<$vue-rss rss="https://talk.tiddlywiki.org/latest.rss" />
+```
+
+!! Example
 
 <$vue-rss />
 
@@ -8,12 +14,6 @@ description: vue-rss
 
 <$vue-rss rss="https://talk.tiddlywiki.org/latest.rss" />
 
-
-!! Usage
-
-```
-<$vue-rss rss="https://talk.tiddlywiki.org/latest.rss" />
-```
 
 <!-- plugin template readme -->
 
