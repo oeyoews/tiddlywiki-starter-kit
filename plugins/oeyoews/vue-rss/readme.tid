@@ -10,6 +10,8 @@ description: vue-rss
 
 <$vue-rss />
 
+<$vue-rss rss="https://talk.tiddlywiki.org/latest.rss" />
+
 <hr />
 
 !! Tips
@@ -17,7 +19,6 @@ description: vue-rss
 * more rss address please check https://docs.rsshub.app/
 * rsshub radar chrome extension can help you find some website rss address
 
-<$vue-rss rss="https://talk.tiddlywiki.org/latest.rss" />
 
 !! Roadmap
 
