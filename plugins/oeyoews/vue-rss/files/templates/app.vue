@@ -2,16 +2,25 @@
   <!-- TODO: 分页 -->
   <div class="bg-rose-500" v-if="isSafari">Rss plugin not supported your browser.</div>
 
+  <div class="bg-rose-600">{{error}}</div>
   <div v-if="loading"> loading ...</div>
   <template v-else>
+    <!-- info -->
     <div
-      class="p-2 rounded border-solid border my-4 text-sm dark:bg-[#2d333b] hover:shadow-sm bg-transparent border-[#d0d7de] dark:border-[#444c56] hover:outline outline-[#d0d7de] hover:outline-1 dark:outline-[#444c56]">
+      class="p-2 rounded border-solid border my-4 text-sm dark:bg-[#2d333b] hover:shadow-sm bg-transparent border-[#d0d7de] dark:border-[#444c56] hover:outline outline-[#d0d7de] hover:outline-1 dark:outline-[#444c56]"
+      v-if="error.length === 0">
       <h2> {{ channel.title }}</h2>
-      <a :href="channel.link" target="_blank">
-        Link
-      </a>
-      <p class="my-2">{{ channel.description }}</p>
+      <div>Updated: {{ channel.update }} </div>
+      <div>
+        Link:
+        <a :href="channel.link" target="_blank">
+          {{channel.link}}
+        </a>
+      </div>
+      <div>Description: {{ channel.description }}</div>
+      <hr>
     </div>
+    <!-- list -->
     <div>
       <article v-for="(item, index) in paginatedItems" :key="item"
         class="p-2 rounded border-solid border my-4 flex flex-col justify-between text-base dark:bg-[#2d333b] hover:shadow-sm bg-transparent border-[#d0d7de] dark:border-[#444c56] hover:outline outline-[#d0d7de] hover:outline-1 dark:outline-[#444c56]">

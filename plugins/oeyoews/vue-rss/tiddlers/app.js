@@ -57,7 +57,8 @@ const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
       const channel = ref({
         title: '',
         link: '',
-        description: ''
+        description: '',
+        update: ''
       });
 
       watchEffect(() => {
@@ -70,7 +71,9 @@ const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
         }
       });
 
+      const error = ref('');
       return {
+        error,
         order,
         rssItems,
         loading,
@@ -107,6 +110,10 @@ const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
           this.channel.title = getContent(channel, 'title');
           this.channel.link = getContent(channel, 'link');
           this.channel.description = getContent(channel, 'description');
+          this.channel.update = getContent(channel, 'lastBuildDate');
+          if (!this.channel.update) {
+            this.channel.update = getContent(channel, 'pubDate');
+          }
 
           for (var i = 0; i < items.length; i++) {
             const item = items[i];
@@ -129,6 +136,7 @@ const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
 
           this.loading = false;
         } catch (e) {
+          this.error = e;
           console.error(e);
           this.loading = false;
         }
