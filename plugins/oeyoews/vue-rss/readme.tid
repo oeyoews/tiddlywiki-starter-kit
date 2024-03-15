@@ -27,7 +27,6 @@ description: vue-rss
 
 * support IOS: proxy forwarding not supported by IOS now
 * support save single article convert to tiddler
-* pagination
 
 <!-- plugin template readme -->
 

@@ -52,6 +52,7 @@ const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
       const itemsPerPage = 10;
       const paginatedItems = ref([]);
       const pages = ref(0);
+      const order = ref(0);
 
       const channel = ref({
         title: '',
@@ -60,6 +61,7 @@ const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
       });
 
       watchEffect(() => {
+        order.value = (currentPage.value - 1) * itemsPerPage + 1;
         const startIndex = (currentPage.value - 1) * itemsPerPage;
         const endIndex = startIndex + itemsPerPage;
         const nextPage = rssItems.value.slice(startIndex, endIndex);
@@ -69,6 +71,7 @@ const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
       });
 
       return {
+        order,
         rssItems,
         loading,
         channel,
