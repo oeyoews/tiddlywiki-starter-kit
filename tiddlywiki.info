@@ -16,6 +16,7 @@
     "tiddlywiki/highlight",
     "tiddlywiki/browser-sniff",
     "tiddlywiki/pluginlibrary",
+    "oeyoews/vue-tomato",
     "oeyoews/vue-rss",
     "oeyoews/neotw-vue-codeblock",
     "oeyoews/notivue",
