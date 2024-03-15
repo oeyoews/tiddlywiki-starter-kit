@@ -144,7 +144,6 @@ const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
           this.loading = false;
         } catch (e) {
           this.error = e;
-          console.error(e);
           this.loading = false;
         }
       },
