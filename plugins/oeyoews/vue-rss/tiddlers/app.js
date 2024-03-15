@@ -9,6 +9,11 @@ const { ref } = window.Vue;
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 
+const getContent = (data, tag) => {
+  return data.getElementsByTagName(tag)[0]?.textContent;
+};
+const proxy = 'https://corsproxy.io/?';
+
 const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
   const component = {
     setup() {
@@ -29,7 +34,6 @@ const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
 
     methods: {
       async fetchRSS() {
-        const proxy = 'https://corsproxy.io/?';
         const RSS_URL = proxy + rss;
 
         try {
@@ -41,33 +45,29 @@ const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
           const items = xmlDoc.getElementsByTagName('item');
           const channel = xmlDoc.getElementsByTagName('channel')[0];
 
-          this.channel.title =
-            channel.getElementsByTagName('title')[0].textContent;
-          this.channel.link =
-            channel.getElementsByTagName('link')[0].textContent;
-          this.channel.description =
-            channel.getElementsByTagName('description')[0].textContent;
+          this.channel.title = getContent(channel, 'title');
+          this.channel.link = getContent(channel, 'link');
+          this.channel.description = getContent(channel, 'description');
 
           for (var i = 0; i < items.length; i++) {
-            const title =
-              items[i].getElementsByTagName('title')[0]?.textContent;
-            const summary =
-              items[i].getElementsByTagName('description')[0]?.textContent;
-            const update =
-              items[i].getElementsByTagName('pubDate')[0]?.textContent;
-            const link = items[i].getElementsByTagName('link')[0]?.textContent;
+            const item = items[i];
+            const title = getContent(item, 'title');
+            const summary = getContent(item, 'description');
+            const update = getContent(item, 'pubDate');
+            const link = getContent(item, 'link');
+
             this.rssItems.push({
               title,
-              summary,
+              link,
               update,
-              link
-              // text
+              summary
             });
           }
           this.loading = false;
         } catch (e) {
           console.error(e);
-          alert(e);
+          // TODO: note support IOS
+          // alert(e);
           this.loading = false;
         }
       }
