@@ -48,7 +48,6 @@ const app = (startup = false) => {
       const pauseTimer = () => {
         clearInterval(timerInterval);
         isRunning.value = false;
-        console.log(isRunning.value, timerInterval);
       };
 
       const resetTimer = () => {
