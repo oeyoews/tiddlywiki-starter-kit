@@ -12,8 +12,16 @@ description: vue-rss
 
 <hr />
 
+!! Tips
+
+* more rss address please check https://docs.rsshub.app/
+
 <$vue-rss rss="https://talk.tiddlywiki.org/latest.rss" />
 
+!! Roadmap
+
+* support save single article convert to tiddler
+* pagination
 
 <!-- plugin template readme -->
 
