@@ -14,7 +14,7 @@
     "update:tw": "pnpm install github:Jermolene/TiddlyWiki5",
     "update:web": "git commit --allow-empty  && git push",
     "build-with-bun": "bun run ./lib/build.ts",
-    "format": "prettier  --write plugins/oeyoews",
+    "format": "prettier --write plugins/oeyoews",
     "format:md": "autocorrect --fix",
     "build:docker": "docker-compose build",
     "docker:push": "docker-compose push",
