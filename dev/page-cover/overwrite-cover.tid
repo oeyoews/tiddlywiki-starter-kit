@@ -1,5 +1,6 @@
-title: $:/plugins/oeyoews/neotw/action/overwrite-cover
-tags: $:/tags/StartupAction
+title: $:/plugins/oeyoews/neotw/action/overwrite-cover_bk
+
+<!-- tags: $:/tags/StartupAction -->
 
 \define set-shadows(tid)
 <$action-deletetiddler $tiddler="""$tid$"""/>

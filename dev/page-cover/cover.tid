@@ -1,6 +1,6 @@
-title: $:/plugins/Gk0Wk/notionpage-covericon/body
-list-before: $:/core/ui/ViewTemplate/title
+title: $:/plugins/Gk0Wk/notionpage-covericon/body_bk
 
+<!-- list-before: $:/core/ui/ViewTemplate/title -->
 <!-- tags: $:/tags/ViewTemplate -->
 
 \define addcover()
