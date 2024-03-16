@@ -11,7 +11,8 @@
   "qrcode": "yes",
   "created": "{{ created }}",
   "dependents": [
-    "$:/plugins/oeyoews/neotw-vue3"
+    "$:/plugins/oeyoews/neotw-vue3",
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
   ],
   "list": "readme"
 }
