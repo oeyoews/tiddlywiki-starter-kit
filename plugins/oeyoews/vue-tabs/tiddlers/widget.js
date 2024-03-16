@@ -31,12 +31,14 @@ class ExampleWidget extends Widget {
     const { createApp } = window.Vue;
     const component = require('./app');
     const domNode = this.document.createElement('div');
-    const TiddlyWikiVue = require('./plugins/TiddlyWikiVue');
+    const TODOPlugin = require('./plugins/TODOPlugin');
 
+    const { VueDraggable, vDraggable } = require('draggableplus.js');
     try {
       const app = createApp(component());
 
-      app.use(TiddlyWikiVue);
+      app.use(TODOPlugin);
+      app.directive('draggable', vDraggable);
 
       app.config.errorHandler = (err) => {
         const text = `[Vue3](${app.version}): ` + err;
@@ -56,11 +58,7 @@ class ExampleWidget extends Widget {
   }
 
   refresh(changedTiddlers) {
-    const DEFAULT_STORY_TITLE = '$:/StoryList';
-    if (Object.keys(changedTiddlers).includes(DEFAULT_STORY_TITLE)) {
-      window.localStorage.setItem('tw-list', new Date());
-    }
-    return true;
+    return false;
   }
 }
 
