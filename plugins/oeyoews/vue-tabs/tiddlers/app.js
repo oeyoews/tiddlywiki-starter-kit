@@ -9,7 +9,9 @@ const { ref } = window.Vue;
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 
-const tiddlers = $tw.wiki.filterTiddlers('[list[$:/StoryList]!has[draft.of]]');
+const DEFAULT_STORY_TITLE = '$:/StoryList';
+
+const tiddlers = $tw.wiki.getTiddlerList(DEFAULT_STORY_TITLE);
 
 const app = () => {
   const component = {
@@ -25,7 +27,15 @@ const app = () => {
         const title = e.target?.dataset.id;
         if (!title) return;
         this.data = this.data.filter((item) => item !== title);
-        $tw.wiki.setText('$:/StoryList', 'list', null, this.data);
+        // $tw.wiki.setText('$:/StoryList', 'list', null, this.data);
+        $tw.wiki.addTiddler(
+          {
+            title: DEFAULT_STORY_TITLE,
+            text: '',
+            list: $tw.utils.stringifyList(this.data)
+          },
+          $tw.wiki.getModificationFields()
+        );
       }
     },
 

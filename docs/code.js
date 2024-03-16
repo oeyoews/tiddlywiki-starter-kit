@@ -182,3 +182,5 @@ module-type: utils
 exports.sayHi = () => {
   console.log('Hello, Tiddlywiki');
 };
+
+$tw.wiki.getModificationFields();
