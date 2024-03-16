@@ -5,7 +5,7 @@ module-type: library
 
 \*/
 
-const { watchEffect, computed, ref, watch, onBeforeUnmount } = window.Vue;
+const { watchEffect, ref, watch, onBeforeUnmount } = window.Vue;
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 

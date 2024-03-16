@@ -31,12 +31,17 @@ class TomatoWidget extends Widget {
     const { createApp } = window.Vue;
     const component = require('./app');
     const domNode = this.document.createElement('div');
+    // const button = this.document.createElement('button');
+    // button.textContent = 'x';
     const TiddlyWikiVue = require('./plugins/TiddlyWikiVue');
     const startup = this.hasAttribute('startup');
 
     try {
       const app = createApp(component(startup));
 
+      // button.addEventListener('click', () => {
+      //   app.unmount();
+      // });
       app.use(TiddlyWikiVue);
 
       app.config.errorHandler = (err) => {
@@ -48,6 +53,7 @@ class TomatoWidget extends Widget {
 
       // 挂载
       app.mount(domNode);
+      // domNode.append(button);
 
       parent.insertBefore(domNode, nextSibling);
       this.domNodes.push(domNode);
