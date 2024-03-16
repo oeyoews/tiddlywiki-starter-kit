@@ -6,7 +6,10 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "files.associations": {
-    "*.vue": "html"
+    "*.vue": "html",
+    "*.info": "json",
+    "*.meta": "tid",
+    "*.files": "json",
   },
   "typescript.tsdk": "node_modules\\typescript\\lib",
 }
