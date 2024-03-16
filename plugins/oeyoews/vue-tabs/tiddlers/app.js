@@ -15,7 +15,10 @@ const app = () => {
   const component = {
     setup() {
       const data = ref();
+      const activeTiddler = ref('');
+
       return {
+        activeTiddler,
         data
       };
     },
@@ -39,6 +42,7 @@ const app = () => {
       closeTiddler(e) {
         if (e.target.dataset.navTitle) {
           new $tw.Story().navigateTiddler(e.target.dataset.navTitle);
+          this.activeTiddler = e.target.dataset.navTitle;
           return;
         }
         const title = e.target.parentNode?.dataset.closeTitle;

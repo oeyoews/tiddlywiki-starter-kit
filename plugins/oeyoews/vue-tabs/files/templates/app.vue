@@ -3,7 +3,7 @@
     <TransitionGroup>
       <span v-for="(item, index) in data"
         class="bg-gray-100 dark:bg-gray-600 p-2 hover:bg-gray-300 dark:hover:bg-gray-700 transition-all group rounded-none shrink-0 cursor-pointer"
-        :data-nav-title="item" :key="item">
+        :class="{ 'bg-gray-300 dark:bg-gray-800': item === activeTiddler }" :data-nav-title="item" :key="item">
         <sup>{{index}}. </sup>
         {{item}}
         <button title="close tiddler"

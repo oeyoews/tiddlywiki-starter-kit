@@ -10,7 +10,7 @@ description: vue-tabs
 * border button style for currentfocussed
 * addevent listener update list
 * currentfocussed tiddlers
-* support drag to order list
+* support drag to order list, need diff data order changed
 * support copy title
 * support pin
 * close all
