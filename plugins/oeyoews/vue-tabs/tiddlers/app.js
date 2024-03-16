@@ -21,11 +21,11 @@ const app = () => {
     },
 
     methods: {
-      closeTiddler(title) {
+      closeTiddler(e) {
+        const title = e.target?.dataset.id;
         if (!title) return;
         this.data = this.data.filter((item) => item !== title);
         $tw.wiki.setText('$:/StoryList', 'list', null, this.data);
-        console.log('updated');
       }
     },
 
