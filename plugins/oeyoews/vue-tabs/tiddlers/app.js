@@ -33,7 +33,10 @@ const app = () => {
 
     methods: {
       closeTiddler(e) {
-        const title = e.target.parentNode?.dataset.id;
+        if (e.target.dataset.navTitle) {
+          new $tw.Story().navigateTiddler(e.target.dataset.navTitle);
+        }
+        const title = e.target.parentNode?.dataset.closeTitle;
         if (!title) return;
         this.data = this.data.filter((item) => item !== title);
         // $tw.wiki.setText('$:/StoryList', 'list', null, this.data);

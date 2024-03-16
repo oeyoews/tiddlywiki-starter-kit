@@ -3,6 +3,18 @@ description: vue-tabs
 
 <!-- plugin template readme -->
 
+> 实现 vscode 的 tabs 的所有功能
+
+!! TODO
+
+* border button style for currentfocussed
+* addevent listener update list
+* currentfocussed tiddlers
+* support drag to order list
+* support copy title
+* support pin
+* close all
+
 <!-- !! Motivation -->
 
 <!-- your plugin motivation, or why you write this plugin -->
