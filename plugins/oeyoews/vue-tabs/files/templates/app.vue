@@ -1,9 +1,10 @@
 <template>
   <div class="flex fixed top-0 overflow-auto backdrop-blur-md w-full" @click.prevent="closeTiddler">
     <TransitionGroup>
-      <span v-for="item in data"
+      <span v-for="(item, index) in data"
         class="bg-gray-100 dark:bg-gray-600 p-2 hover:bg-gray-300 dark:hover:bg-gray-700 transition-all group rounded-none shrink-0 cursor-pointer"
         :data-nav-title="item" :key="item">
+        <sup>{{index}}. </sup>
         {{item}}
         <button title="close tiddler"
           class="rounded-sm hover:bg-gray-200 dark:hover:bg-gray-700 opacity-0 group-hover:opacity-100 transition-all"

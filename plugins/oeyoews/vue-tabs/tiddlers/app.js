@@ -11,20 +11,19 @@ const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 
 const DEFAULT_STORY_TITLE = '$:/StoryList';
 
-const tiddlers = $tw.wiki.getTiddlerList(DEFAULT_STORY_TITLE);
-
 const app = () => {
   const component = {
     setup() {
-      const data = ref(tiddlers);
+      const data = ref();
       return {
         data
       };
     },
 
     mounted() {
+      this.data = this.getList();
       setInterval(() => {
-        const data = $tw.wiki.getTiddlerList(DEFAULT_STORY_TITLE);
+        const data = this.getList();
         if (data.length !== this.data.length) {
           this.data = data;
         }
@@ -32,6 +31,11 @@ const app = () => {
     },
 
     methods: {
+      getList() {
+        return $tw.wiki
+          .getTiddlerList(DEFAULT_STORY_TITLE)
+          .filter((item) => !item.startsWith('Draft of'));
+      },
       closeTiddler(e) {
         if (e.target.dataset.navTitle) {
           new $tw.Story().navigateTiddler(e.target.dataset.navTitle);
