@@ -26,27 +26,27 @@
     "chalk": "^5.3.0",
     "ci-info": "^3.9.0",
     "cross-spawn": "^7.0.3",
-    "dotenv": "^16.3.2",
+    "dotenv": "^16.4.5",
     "fs-extra": "^11.2.0",
     "get-port": "^7.0.0",
-    "open": "^10.0.3",
+    "open": "^10.1.0",
     "ora": "^6.3.1",
     "pm2": "^5.3.1",
     "prompts": "^2.4.2",
     "qrcode": "^1.5.3",
     "randomstring-plus": "workspace:^",
     "tiddlywiki": "5.3.3",
-    "tiged": "^2.12.5"
+    "tiged": "^2.12.7"
   },
   "prettier": "@oeyoews/prettier-config",
   "devDependencies": {
-    "terser": "^5.27.0",
-    "tw5-typed": "^0.4.4",
     "@oeyoews/prettier-config": "workspace:^",
-    "prettier": "^3.2.4",
-    "typescript": "^5.3.3",
     "@types/fs-extra": "^11.0.4",
     "@types/prompts": "^2.4.9",
-    "@types/qrcode": "^1.5.5"
+    "@types/qrcode": "^1.5.5",
+    "prettier": "^3.2.5",
+    "terser": "^5.29.2",
+    "tw5-typed": "^0.4.9",
+    "typescript": "^5.4.2"
   }
 }
