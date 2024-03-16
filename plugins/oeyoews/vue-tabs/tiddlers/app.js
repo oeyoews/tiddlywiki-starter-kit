@@ -22,9 +22,18 @@ const app = () => {
       };
     },
 
+    mounted() {
+      setInterval(() => {
+        const data = $tw.wiki.getTiddlerList(DEFAULT_STORY_TITLE);
+        if (data.length !== this.data.length) {
+          this.data = data;
+        }
+      }, 1000);
+    },
+
     methods: {
       closeTiddler(e) {
-        const title = e.target?.dataset.id;
+        const title = e.target.parentNode?.dataset.id;
         if (!title) return;
         this.data = this.data.filter((item) => item !== title);
         // $tw.wiki.setText('$:/StoryList', 'list', null, this.data);

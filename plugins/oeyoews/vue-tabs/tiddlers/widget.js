@@ -54,6 +54,14 @@ class ExampleWidget extends Widget {
       console.error(e);
     }
   }
+
+  refresh(changedTiddlers) {
+    const DEFAULT_STORY_TITLE = '$:/StoryList';
+    if (Object.keys(changedTiddlers).includes(DEFAULT_STORY_TITLE)) {
+      window.localStorage.setItem('tw-list', new Date());
+    }
+    return true;
+  }
 }
 
 /** @description vue-tabs widget */
