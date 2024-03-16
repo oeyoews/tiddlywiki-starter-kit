@@ -32,10 +32,10 @@ const app = () => {
 
     methods: {
       getList() {
-        return $tw.wiki
-          .getTiddlerList(DEFAULT_STORY_TITLE)
-          .filter((item) => !item.startsWith('Draft of'));
+        return $tw.wiki.getTiddlerList(DEFAULT_STORY_TITLE);
+        // .filter((item) => !item.startsWith('Draft of'));
       },
+      closeRight() {},
       closeTiddler(e) {
         if (e.target.dataset.navTitle) {
           new $tw.Story().navigateTiddler(e.target.dataset.navTitle);
