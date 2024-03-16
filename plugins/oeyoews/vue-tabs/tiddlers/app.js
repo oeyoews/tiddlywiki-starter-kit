@@ -5,7 +5,7 @@ module-type: library
 
 \*/
 
-const { watchEffect, ref } = window.Vue;
+const { watchEffect, ref, computed } = window.Vue;
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 
@@ -26,8 +26,13 @@ const app = () => {
         }
       });
 
+      const filterData = computed(() =>
+        data.value.filter((item) => !item.startsWith('Draft of'))
+      );
+
       return {
         activeTiddler,
+        filterData,
         data,
         isRender
       };
