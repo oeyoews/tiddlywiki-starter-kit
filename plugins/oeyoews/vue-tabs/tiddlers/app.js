@@ -35,6 +35,7 @@ const app = () => {
       closeTiddler(e) {
         if (e.target.dataset.navTitle) {
           new $tw.Story().navigateTiddler(e.target.dataset.navTitle);
+          return;
         }
         const title = e.target.parentNode?.dataset.closeTitle;
         if (!title) return;
