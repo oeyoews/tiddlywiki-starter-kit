@@ -1,6 +1,6 @@
 <!-- plugin template readme -->
 
-> Copyed from $:/plugins/dullroar/sitemap, 修复过滤器 typo, 重新组织下插件目录结构, 避免重名
+> based on dullroar/sitemap tiddlywiki plugin, fix filter typo, and standard plugin
 
 ## Recipes
 
