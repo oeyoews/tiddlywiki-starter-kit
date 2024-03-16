@@ -7,13 +7,8 @@ description: vue-tabs
 
 !! TODO
 
-* border button style for currentfocussed
-* addevent listener update list
-* currentfocussed tiddlers
-* support drag to order list, need diff data order changed
-* support copy title
 * support pin
-* close all
+* support drag to order list, need diff data order changed(WIP)
 
 <!-- !! Motivation -->
 

@@ -26,6 +26,7 @@ const app = () => {
     mounted() {
       this.data = this.getList();
       setInterval(() => {
+        this.getCurrentTiddler();
         const data = this.getList();
         if (data.length !== this.data.length) {
           this.data = data;
@@ -34,6 +35,14 @@ const app = () => {
     },
 
     methods: {
+      getCurrentTiddler() {
+        const history = $tw.wiki.getTiddlerData('$:/HistoryList');
+        if (!history || history.length === 0) {
+          return;
+        }
+        this.activeTiddler = history.pop().title;
+      },
+
       getList() {
         return $tw.wiki.getTiddlerList(DEFAULT_STORY_TITLE);
         // .filter((item) => !item.startsWith('Draft of'));
