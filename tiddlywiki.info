@@ -16,6 +16,7 @@
     "tiddlywiki/highlight",
     "tiddlywiki/browser-sniff",
     "tiddlywiki/pluginlibrary",
+    "oeyoews/neotw-sitemap",
     "oeyoews/vue-plum",
     "oeyoews/vue-pomodoro",
     "oeyoews/vue-rss",
@@ -98,6 +99,14 @@
       "$:/core/templates/exporters/JsonFile",
       "exportFilter",
       "[tag[Journal]type[text/markdown]!sort[created]]"
+    ],
+    "sitemap": [
+      "--output",
+      ".tiddlywiki",
+      "--render",
+      "$:/plugins/oeyoews/neotw-sitemap/sitemap",
+      "sitemap.xml",
+      "text/plain"
     ],
     "tiddlers": [
       "--render",

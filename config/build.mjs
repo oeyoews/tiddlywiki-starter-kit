@@ -77,6 +77,14 @@ export default {
     'exportFilter',
     '[tag[Journal]type[text/markdown]!sort[created]]'
   ],
+  sitemap: [
+    '--output',
+    `${config.output}`,
+    '--render',
+    '$:/plugins/oeyoews/neotw-sitemap/sitemap',
+    'sitemap.xml',
+    'text/plain'
+  ],
   tiddlers: [
     '--render',
     '.',
