@@ -1,9 +1,9 @@
 /*\
-title: $:/plugins/{{ plugin_author }}/${pluginname}/widget.js
+title: $:/plugins/oeyoews/vue-tabs/widget.js
 type: application/javascript
 module-type: widget
 
-${pluginname} widget
+vue-tabs widget
 
 \*/
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
@@ -54,12 +54,7 @@ class ExampleWidget extends Widget {
       console.error(e);
     }
   }
-
-  // TIP: 界面由 vue 接管， 不要在这里刷新
-  refresh() {
-    return false;
-  }
 }
 
-/** @description ${pluginname} widget */
-exports['{{ widget_name }}'] = ExampleWidget;
+/** @description vue-tabs widget */
+exports['vue-tabs'] = ExampleWidget;
