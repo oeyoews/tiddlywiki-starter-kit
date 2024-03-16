@@ -47,7 +47,6 @@ const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]') => {
       const title = ref('');
 
       const chartapp = ref();
-      const chart = ref();
       const chartdata = ref([]);
 
       const options = reactive({
@@ -96,7 +95,6 @@ const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]') => {
       return {
         isRotate,
         options,
-        chart,
         chartdata,
         chartapp,
         title,

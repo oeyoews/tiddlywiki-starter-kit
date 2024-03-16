@@ -18,9 +18,7 @@ const {
 const app = (code = 'npx create neotw@latest') => {
   const component = {
     setup() {
-      const codeRef = ref('');
-
-      return { codeRef, code };
+      return { code };
     },
 
     methods: {

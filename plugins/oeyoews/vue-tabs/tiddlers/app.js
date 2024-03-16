@@ -5,7 +5,7 @@ module-type: library
 
 \*/
 
-const { ref } = window.Vue;
+const { watchEffect, ref } = window.Vue;
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 
@@ -14,19 +14,38 @@ const DEFAULT_STORY_TITLE = '$:/StoryList';
 const app = () => {
   const component = {
     setup() {
-      const data = ref();
+      const data = ref([]);
       const activeTiddler = ref('');
+      const isRender = ref(false);
+
+      watchEffect(() => {
+        if (data.value.length > 2) {
+          isRender.value = true;
+        } else {
+          isRender.value = false;
+        }
+      });
 
       return {
         activeTiddler,
-        data
+        data,
+        isRender
       };
     },
 
     mounted() {
       this.data = this.getList();
       setInterval(() => {
-        this.getCurrentTiddler();
+        this.activeTiddler = this.getCurrentTiddler();
+        // const scroll = this.$refs.scroll?.[0];
+
+        // if (!this.isInViewport(scroll) && scroll) {
+        //   scroll.scrollIntoView({
+        //     behavior: 'smooth',
+        //     block: 'center'
+        //   });
+        // }
+
         const data = this.getList();
         if (data.length !== this.data.length) {
           this.data = data;
@@ -35,12 +54,24 @@ const app = () => {
     },
 
     methods: {
+      isInViewport(element) {
+        if (!element) return;
+        var rect = element.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <=
+            (window.innerWidth || document.documentElement.clientWidth)
+        );
+      },
       getCurrentTiddler() {
         const history = $tw.wiki.getTiddlerData('$:/HistoryList');
         if (!history || history.length === 0) {
           return;
         }
-        this.activeTiddler = history.pop().title;
+        return history.pop().title;
       },
 
       getList() {

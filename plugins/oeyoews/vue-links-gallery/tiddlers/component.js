@@ -29,7 +29,6 @@ const links = (json = 'list-links.json') => {
     setup() {
       // obj --> array
       const data = ref(Object.entries($tw.wiki.getTiddlerData(json, {})));
-      const chart = ref('');
 
       const newLink = ref('');
       const newDesc = ref('');
@@ -183,7 +182,6 @@ const links = (json = 'list-links.json') => {
         chartapp,
         chartdata,
         options,
-        chart,
         prettyLink,
         prettyLinkData,
         data,
