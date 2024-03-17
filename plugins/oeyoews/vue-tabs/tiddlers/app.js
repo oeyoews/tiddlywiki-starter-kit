@@ -94,6 +94,11 @@ const app = () => {
         console.log(this.data);
       },
 
+      closeAll() {
+        this.data = [];
+        this.updateList();
+      },
+
       updateData() {
         this.data = this.getList();
       },

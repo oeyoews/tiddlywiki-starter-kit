@@ -9,6 +9,7 @@
       },
       ]">
       <TransitionGroup>
+        <span @click="closeAll" title="close all tiddlers">xxx</span>
         <span @click="reverse"
           class="bg-gray-100 dark:bg-gray-600 p-2 hover:bg-gray-300 dark:hover:bg-gray-700 transition-all group rounded-none shrink-0 cursor-pointer flex items-center gap-1">
           <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024">
