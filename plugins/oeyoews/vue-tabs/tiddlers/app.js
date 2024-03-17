@@ -14,28 +14,19 @@ const DEFAULT_STORY_TITLE = '$:/StoryList';
 const app = () => {
   const component = {
     setup() {
-      const data = ref('');
+      const data = ref([]);
       const activeTiddler = ref('');
       const isRender = ref(false);
       const dragging = ref(false);
 
-      watchEffect(() => {
-        console.log(data.length);
-        if (data.length > 2) {
-          isRender.value = true;
-        } else {
-          isRender.value = false;
-        }
-      });
-
-      // const filterData = computed(() =>
-      //   data.value.filter((item) => !item.startsWith('Draft of'))
-      // );
+      const filterData = computed(() =>
+        data.value.filter((item) => !item.startsWith('Draft of'))
+      );
 
       return {
         dragging,
         activeTiddler,
-        // filterData,
+        filterData,
         data,
         isRender
       };
@@ -44,8 +35,13 @@ const app = () => {
     watch: {
       data: {
         handler() {
+          if (data.length > 2) {
+            isRender.value = true;
+          } else {
+            isRender.value = false;
+          }
+
           console.log('data changed');
-          // this.setList();
         },
         deep: true
       }
@@ -53,6 +49,7 @@ const app = () => {
     mounted() {
       this.updateData();
       setInterval(() => {
+        return;
         if (this.dragging) {
           return;
         }
@@ -67,10 +64,11 @@ const app = () => {
         //   });
         // }
 
-        const data = this.getList();
-        if (data.length !== this.data.length) {
-          this.data = data;
-        }
+        this.updateData();
+        // const data = this.getList();
+        // if (data.length !== this.data.length) {
+        //   this.data = data;
+        // }
       }, 1000);
     },
 
@@ -102,7 +100,8 @@ const app = () => {
       },
 
       updateData() {
-        this.data = this.getList();
+        const list = this.getList();
+        this.data.splice(0, this.data.length, ...list);
       },
 
       reverse() {
