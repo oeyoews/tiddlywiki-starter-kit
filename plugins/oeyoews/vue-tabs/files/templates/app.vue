@@ -3,7 +3,7 @@
   <!-- TODO: add transition for operations -->
   <div class="fixed top-0 left-0 z-[1] backdrop-blur-md w-full">
     <!-- operations -->
-    <div class="flex">
+    <div class="flex item-center">
       <div @click="closeAll" title="close all tiddlers"
         class="bg-gray-100 dark:bg-gray-600 p-2 hover:bg-gray-300 dark:hover:bg-gray-700 transition-all group rounded-none shrink-0 cursor-pointer flex items-center gap-1">
         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em"
