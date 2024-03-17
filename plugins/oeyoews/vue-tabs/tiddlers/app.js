@@ -4,12 +4,16 @@ type: application/javascript
 module-type: library
 
 \*/
-const { computed, ref } = window.Vue;
+const { ref } = window.Vue;
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 
 const DEFAULT_STORY_TITLE = '$:/StoryList';
 const config = $tw.wiki.getTiddler('$:/plugins/oeyoews/vue-tabs/config').fields;
+const btn =
+  'bg-gray-100 dark:bg-dimmed-700 p-1 hover:bg-gray-300 dark:hover:bg-dimmed-800 transition-all group rounded-none shrink-0 cursor-pointer flex items-center';
+
+const icons = require('./icons');
 
 const app = () => {
   const component = {
@@ -24,6 +28,8 @@ const app = () => {
       // });
 
       return {
+        icons,
+        btn,
         position,
         // filterData,
         dragging,
