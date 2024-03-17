@@ -17,6 +17,7 @@ const app = () => {
       const data = ref([]);
       const activeTiddler = ref('');
       const isRender = ref(false);
+      const dragging = ref(false);
 
       watchEffect(() => {
         if (data.value.length > 2) {
@@ -31,6 +32,7 @@ const app = () => {
       );
 
       return {
+        dragging,
         activeTiddler,
         filterData,
         data,
@@ -55,6 +57,8 @@ const app = () => {
     mounted() {
       this.updateData();
       setInterval(() => {
+        if (this.dragging) return;
+
         this.activeTiddler = this.getCurrentTiddler();
         // const scroll = this.$refs.scroll?.[0];
 
@@ -114,9 +118,11 @@ const app = () => {
 
       onStart() {
         // console.log(this.data);
+        this.dragging = true;
       },
 
       onUpdate() {
+        this.dragging = false;
         // console.log(this.data);
         // this.data.push('drag');
       },
