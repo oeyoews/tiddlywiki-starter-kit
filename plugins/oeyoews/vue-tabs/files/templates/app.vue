@@ -3,7 +3,7 @@
     <!-- operations -->
     <div class="flex item-center">
       <div @click="closeAll" title="close all tiddlers"
-        class="bg-gray-100 dark:bg-gray-600 p-2 hover:bg-gray-300 dark:hover:bg-gray-700 transition-all group rounded-none shrink-0 cursor-pointer flex items-center gap-1">
+        class="bg-gray-100 dark:bg-dimmed-700 p-2 hover:bg-gray-300 dark:hover:bg-dimmed-800 transition-all group rounded-none shrink-0 cursor-pointer flex items-center gap-1">
         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em"
           xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd"

@@ -5,6 +5,7 @@ module-type: library
 
 \*/
 
+// this file name canbe searched by your vscode tailwindcss extension, dont modifiy it
 module.exports = {
   theme: {
     extend: {
