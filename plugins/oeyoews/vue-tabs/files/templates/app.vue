@@ -1,7 +1,7 @@
 <template>
   <!-- margin -->
   <!-- TODO: add transition for operations -->
-  <div class="fixed top-0">
+  <div class="fixed top-0 left-0 z-[1]">
     <!-- operations -->
     <div class="flex">
       <div @click="closeAll" title="close all tiddlers"
