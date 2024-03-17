@@ -5,7 +5,7 @@ module-type: library
 
 \*/
 
-const { watchEffect, ref, computed } = window.Vue;
+const { watchEffect, reactive, ref, computed } = window.Vue;
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 
@@ -14,13 +14,15 @@ const DEFAULT_STORY_TITLE = '$:/StoryList';
 const app = () => {
   const component = {
     setup() {
-      const data = ref('');
+      const state = reactive({
+        data: []
+      });
       const activeTiddler = ref('');
       const isRender = ref(false);
       const dragging = ref(false);
 
       watchEffect(() => {
-        if (data.value.length > 2) {
+        if (state.data.length > 2) {
           isRender.value = true;
         } else {
           isRender.value = false;
@@ -35,13 +37,13 @@ const app = () => {
         dragging,
         activeTiddler,
         // filterData,
-        data,
+        state,
         isRender
       };
     },
 
     watch: {
-      data: {
+      'state.data': {
         handler() {
           console.log('data changed');
           this.setList();
@@ -67,8 +69,8 @@ const app = () => {
         // }
 
         const data = this.getList();
-        if (data.length !== this.data.length) {
-          this.data = data;
+        if (data.length !== this.state.data.length) {
+          this.state.data = data;
         }
       }, 1000);
     },
@@ -86,7 +88,7 @@ const app = () => {
         $tw.wiki.addTiddler({
           title: DEFAULT_STORY_TITLE,
           text: '',
-          list: $tw.utils.stringifyList(this.data)
+          list: $tw.utils.stringifyList(this.state.data)
         });
       },
 
@@ -96,27 +98,27 @@ const app = () => {
       },
 
       shuffleData() {
-        this.data = this.shuffle(this.data);
+        this.state.data = this.shuffle(this.state.data);
         this.setList();
       },
 
       updateData() {
-        this.data = this.getList();
+        this.state.data = this.getList();
       },
 
       reverse() {
-        this.data.reverse();
+        this.state.data.reverse();
         this.setList();
       },
 
       onStart() {
         this.dragging = true;
-        console.log(this.data);
+        console.log(this.state.data, 'start');
       },
 
       onUpdate() {
         this.dragging = false;
-        console.log(this.data);
+        console.log(this.state.data, 'end');
       },
 
       isInViewport(element) {
@@ -142,7 +144,7 @@ const app = () => {
 
       closeRight() {},
       closeAll() {
-        this.data = [];
+        this.state.data = [];
       },
 
       closeTiddler(e) {
@@ -153,7 +155,7 @@ const app = () => {
         }
         const title = e.target.parentNode?.dataset.closeTitle;
         if (!title) return;
-        this.data = this.data.filter((item) => item !== title);
+        this.state.data = this.state.data.filter((item) => item !== title);
       }
     },
 
