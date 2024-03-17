@@ -1,9 +1,10 @@
 <template>
   <!-- margin -->
   <!-- TODO: add transition for operations -->
-  <div v-show="isRender">
+  <div>
+    <!-- v-show="isRender" -->
     <div class="flex fixed top-0 overflow-auto backdrop-blur-md w-full items-center select-none" @click="closeTiddler"
-      v-draggable="[state.data,
+      v-draggable="[data,
       {
         animation: 150, onUpdate, onStart
       },
@@ -31,7 +32,7 @@
           </svg>
           <div class="absolute h-full w-1 bg-black right-0" />
         </span>
-        <span v-for="(item, index) in state.data"
+        <span v-for="(item, index) in data"
           class="bg-gray-100 dark:bg-gray-600 p-2 hover:bg-gray-300 dark:hover:bg-gray-700 transition-all group rounded-none shrink-0 cursor-pointer flex items-center gap-1"
           :class="{ 'bg-gray-300 dark:bg-gray-800': item === activeTiddler }" :data-nav-title="item" :key="item">
           <!-- <div ref="scroll" v-if="activeTiddler === item"></div> -->

@@ -14,15 +14,14 @@ const DEFAULT_STORY_TITLE = '$:/StoryList';
 const app = () => {
   const component = {
     setup() {
-      const state = reactive({
-        data: []
-      });
+      const data = ref('');
       const activeTiddler = ref('');
       const isRender = ref(false);
       const dragging = ref(false);
 
       watchEffect(() => {
-        if (state.data.length > 2) {
+        console.log(data.length);
+        if (data.length > 2) {
           isRender.value = true;
         } else {
           isRender.value = false;
@@ -37,16 +36,16 @@ const app = () => {
         dragging,
         activeTiddler,
         // filterData,
-        state,
+        data,
         isRender
       };
     },
 
     watch: {
-      'state.data': {
+      data: {
         handler() {
           console.log('data changed');
-          this.setList();
+          // this.setList();
         },
         deep: true
       }
@@ -69,8 +68,8 @@ const app = () => {
         // }
 
         const data = this.getList();
-        if (data.length !== this.state.data.length) {
-          this.state.data = data;
+        if (data.length !== this.data.length) {
+          this.data = data;
         }
       }, 1000);
     },
@@ -88,7 +87,7 @@ const app = () => {
         $tw.wiki.addTiddler({
           title: DEFAULT_STORY_TITLE,
           text: '',
-          list: $tw.utils.stringifyList(this.state.data)
+          list: $tw.utils.stringifyList(this.data)
         });
       },
 
@@ -98,27 +97,27 @@ const app = () => {
       },
 
       shuffleData() {
-        this.state.data = this.shuffle(this.state.data);
+        this.data = this.shuffle(this.data);
         this.setList();
       },
 
       updateData() {
-        this.state.data = this.getList();
+        this.data = this.getList();
       },
 
       reverse() {
-        this.state.data.reverse();
+        this.data.reverse();
         this.setList();
       },
 
       onStart() {
         this.dragging = true;
-        console.log(this.state.data, 'start');
+        console.log(this.data, 'start');
       },
 
       onUpdate() {
         this.dragging = false;
-        console.log(this.state.data, 'end');
+        console.log(this.data, 'end');
       },
 
       isInViewport(element) {
@@ -144,7 +143,7 @@ const app = () => {
 
       closeRight() {},
       closeAll() {
-        this.state.data = [];
+        this.data = [];
       },
 
       closeTiddler(e) {
@@ -155,7 +154,7 @@ const app = () => {
         }
         const title = e.target.parentNode?.dataset.closeTitle;
         if (!title) return;
-        this.state.data = this.state.data.filter((item) => item !== title);
+        this.data = this.data.filter((item) => item !== title);
       }
     },
 
