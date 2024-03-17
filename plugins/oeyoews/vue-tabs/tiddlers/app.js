@@ -9,6 +9,7 @@ const { computed, ref } = window.Vue;
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 
 const DEFAULT_STORY_TITLE = '$:/StoryList';
+const config = $tw.wiki.getTiddler('$:/plugins/oeyoews/vue-tabs/config').fields;
 
 const app = () => {
   const component = {
@@ -16,12 +17,14 @@ const app = () => {
       const data = ref($tw.wiki.getTiddlerList(DEFAULT_STORY_TITLE));
       const activeTiddler = ref('');
       const dragging = ref(false);
+      const position = ref(config.position);
 
       // const filterData = computed(() => {
       //   return data.value.filter((item) => !item.startsWith('Draft of'));
       // });
 
       return {
+        position,
         // filterData,
         dragging,
         activeTiddler,

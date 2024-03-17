@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed top-0 left-0 z-[1] backdrop-blur-md w-full hidden md:block">
+  <div class="fixed left-0 z-[1] backdrop-blur-md w-full hidden md:block" :class="position">
     <!-- operations -->
     <div class="flex item-center">
       <div @click="closeAll" title="close all tiddlers"
