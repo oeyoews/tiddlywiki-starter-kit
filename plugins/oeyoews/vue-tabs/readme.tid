@@ -10,6 +10,10 @@ description: vue-tabs
 * support pin
 * support drag to order list, need diff data order changed(WIP)
 
+  <!-- margin -->
+  <!-- TODO: add transition for operations -->
+
+
 <!-- !! Motivation -->
 
 <!-- your plugin motivation, or why you write this plugin -->
