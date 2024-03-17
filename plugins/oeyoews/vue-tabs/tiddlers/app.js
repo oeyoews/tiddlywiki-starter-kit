@@ -4,7 +4,7 @@ type: application/javascript
 module-type: library
 
 \*/
-const { ref } = window.Vue;
+const { computed, ref } = window.Vue;
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 
@@ -17,7 +17,12 @@ const app = () => {
       const activeTiddler = ref('');
       const dragging = ref(false);
 
+      // const filterData = computed(() => {
+      //   return data.value.filter((item) => !item.startsWith('Draft of'));
+      // });
+
       return {
+        // filterData,
         dragging,
         activeTiddler,
         data
