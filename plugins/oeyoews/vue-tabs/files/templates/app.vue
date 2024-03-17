@@ -1,7 +1,7 @@
 <template>
   <!-- margin -->
   <!-- TODO: add transition for operations -->
-  <div class="fixed top-0 left-0 z-[1]">
+  <div class="fixed top-0 left-0 z-[1] backdrop-blur-md w-full">
     <!-- operations -->
     <div class="flex">
       <div @click="closeAll" title="close all tiddlers"
@@ -35,8 +35,7 @@
         </div>
       </div>
       <!-- list -->
-      <TransitionGroup class="flex overflow-auto backdrop-blur-md w-full items-center select-none" @click="closeTiddler"
-        tag="div" v-draggable="[data,
+      <TransitionGroup class="flex overflow-auto items-center select-none" @click="closeTiddler" tag="div" v-draggable="[data,
       {
         animation: 150, onUpdate, onStart
       },

@@ -7,9 +7,8 @@ description: vue-tabs
 
 !! TODO
 
-* support pin
-* support drag to order list, need diff data order changed(WIP)
-
+* support setup position
+* integrate vscode tabs feature
   <!-- margin -->
   <!-- TODO: add transition for operations -->
 
