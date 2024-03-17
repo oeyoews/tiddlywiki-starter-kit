@@ -88,7 +88,7 @@ const app = () => {
       },
 
       closeAll() {
-        this.data.length = 0;
+        this.data = [];
       },
 
       reverseList() {
