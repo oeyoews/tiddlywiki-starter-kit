@@ -73,12 +73,25 @@ const app = () => {
     },
 
     methods: {
+      shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+      },
       updateList() {
         $tw.wiki.addTiddler({
           title: DEFAULT_STORY_TITLE,
           text: '',
           list: $tw.utils.stringifyList(this.data)
         });
+      },
+
+      shuffleData() {
+        this.data = this.shuffleArray(this.data);
+        this.updateList();
+        console.log(this.data);
       },
 
       updateData() {
