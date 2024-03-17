@@ -8,9 +8,18 @@ module-type: library
 module.exports = {
   theme: {
     extend: {
-      boxShadow: {
-        // lg: '5px 20px #000001f',
+      colors: {
+        dimmed: {
+          100: '#cdd9e5',
+          200: '#d0d7de',
+          700: '#444c56',
+          800: '#2d333b',
+          900: '#1c2128'
+        }
       },
+      // boxShadow: {
+      // lg: '5px 20px #000001f',
+      // },
       typography: ({ theme }) => ({
         DEFAULT: {
           css: {
