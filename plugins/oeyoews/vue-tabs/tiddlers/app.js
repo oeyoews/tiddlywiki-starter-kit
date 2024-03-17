@@ -141,6 +141,9 @@ const app = () => {
       },
 
       closeRight() {},
+      closeAll() {
+        this.data = [];
+      },
 
       closeTiddler(e) {
         if (e.target.dataset.navTitle) {
