@@ -5,7 +5,7 @@ module-type: library
 
 \*/
 
-const { watchEffect, ref, computed } = window.Vue;
+const { reactive, nextTick, watch, watchEffect, ref, computed } = window.Vue;
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 
@@ -38,8 +38,22 @@ const app = () => {
       };
     },
 
+    watch: {
+      data: {
+        handler: function (newValue, oldValue) {
+          // console.log(newValue, oldValue);
+          // if (JSON.stringify(newValue) !== JSON.stringify(oldValue)) {
+          //   nextTick(() => {
+          //     this.forceUpdate();
+          //   });
+          // }
+        },
+        deep: true
+      }
+    },
+
     mounted() {
-      this.data = this.getList();
+      this.updateData();
       setInterval(() => {
         this.activeTiddler = this.getCurrentTiddler();
         // const scroll = this.$refs.scroll?.[0];
@@ -59,6 +73,36 @@ const app = () => {
     },
 
     methods: {
+      updateList() {
+        $tw.wiki.addTiddler({
+          title: DEFAULT_STORY_TITLE,
+          text: '',
+          list: $tw.utils.stringifyList(this.data)
+        });
+      },
+
+      updateData() {
+        this.data = this.getList();
+      },
+
+      // forceUpdate() {
+      //   this.$forceUpdate();
+      // },
+
+      reverse() {
+        this.data.reverse();
+        this.updateList();
+      },
+
+      onStart() {
+        // console.log(this.data);
+      },
+
+      onUpdate() {
+        // console.log(this.data);
+        // this.data.push('drag');
+      },
+
       isInViewport(element) {
         if (!element) return;
         var rect = element.getBoundingClientRect();
@@ -93,15 +137,7 @@ const app = () => {
         const title = e.target.parentNode?.dataset.closeTitle;
         if (!title) return;
         this.data = this.data.filter((item) => item !== title);
-        // $tw.wiki.setText('$:/StoryList', 'list', null, this.data);
-        $tw.wiki.addTiddler(
-          {
-            title: DEFAULT_STORY_TITLE,
-            text: '',
-            list: $tw.utils.stringifyList(this.data)
-          },
-          $tw.wiki.getModificationFields()
-        );
+        this.updateList();
       }
     },
 

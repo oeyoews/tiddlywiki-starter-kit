@@ -1,8 +1,26 @@
 <template>
   <div v-show="isRender">
-    <!-- test -->
-    <div class="flex fixed top-0 overflow-auto backdrop-blur-md w-full items-center select-none" @click="closeTiddler">
-      <TransitionGroup v-draggable="[data, { animation: 150 }]">
+    <div class="flex fixed top-0 overflow-auto backdrop-blur-md w-full items-center select-none" @click="closeTiddler"
+      v-draggable="[data,
+      {
+        animation: 150, onUpdate, onStart
+      },
+      ]">
+      <TransitionGroup>
+        <span @click="reverse"
+          class="bg-gray-100 dark:bg-gray-600 p-2 hover:bg-gray-300 dark:hover:bg-gray-700 transition-all group rounded-none shrink-0 cursor-pointer flex items-center gap-1">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024">
+            <path fill="currentColor"
+              d="M384 96a32 32 0 0 1 64 0v786.752a32 32 0 0 1-54.592 22.656L95.936 608a32 32 0 0 1 0-45.312h.128a32 32 0 0 1 45.184 0L384 805.632zm192 45.248a32 32 0 0 1 54.592-22.592L928.064 416a32 32 0 0 1 0 45.312h-.128a32 32 0 0 1-45.184 0L640 218.496V928a32 32 0 1 1-64 0z" />
+          </svg>
+        </span>
+        <span @click="updateData"
+          class="bg-gray-100 dark:bg-gray-600 p-2 hover:bg-gray-300 dark:hover:bg-gray-700 transition-all group rounded-none shrink-0 cursor-pointer flex items-center gap-1">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="M17.65 6.35A7.958 7.958 0 0 0 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0 1 12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4z" />
+          </svg>
+        </span>
         <span v-for="(item, index) in data"
           class="bg-gray-100 dark:bg-gray-600 p-2 hover:bg-gray-300 dark:hover:bg-gray-700 transition-all group rounded-none shrink-0 cursor-pointer flex items-center gap-1"
           :class="{ 'bg-gray-300 dark:bg-gray-800': item === activeTiddler }" :data-nav-title="item" :key="item">

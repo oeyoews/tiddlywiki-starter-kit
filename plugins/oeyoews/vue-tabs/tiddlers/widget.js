@@ -33,12 +33,10 @@ class ExampleWidget extends Widget {
     const domNode = this.document.createElement('div');
     const TODOPlugin = require('./plugins/TODOPlugin');
 
-    const { VueDraggable, vDraggable } = require('draggableplus.js');
     try {
       const app = createApp(component());
 
       app.use(TODOPlugin);
-      app.directive('draggable', vDraggable);
 
       app.config.errorHandler = (err) => {
         const text = `[Vue3](${app.version}): ` + err;
