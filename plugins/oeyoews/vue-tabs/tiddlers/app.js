@@ -96,12 +96,10 @@ const app = () => {
       },
 
       onStart() {
-        console.log('update dragging');
         this.dragging = true;
       },
 
       onUpdate() {
-        console.log('end dragging');
         this.dragging = false;
       },
 
