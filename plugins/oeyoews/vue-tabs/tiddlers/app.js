@@ -48,6 +48,7 @@ const app = () => {
     },
 
     mounted() {
+      // update ui list
       setInterval(() => {
         if (this.dragging) {
           return;
@@ -56,6 +57,10 @@ const app = () => {
         this.activeTiddler = this.getCurrentTiddler();
 
         const data = this.getList();
+        if (data[0]?.startsWith('Draft of')) {
+          return;
+        }
+
         if (data.length !== this.data.length) {
           this.data = data;
         }
