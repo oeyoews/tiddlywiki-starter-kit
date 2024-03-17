@@ -12,6 +12,7 @@
   "created": "2024-03-16",
   "dependents": [
     "$:/plugins/oeyoews/neotw-vue3",
+    "$:/plugins/oeyoews/vue-draggable-plus",
     "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
   ],
   "list": "readme"

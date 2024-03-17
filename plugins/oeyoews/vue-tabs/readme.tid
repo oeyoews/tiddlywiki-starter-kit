@@ -10,7 +10,6 @@ description: vue-tabs
 * support setup position
 * integrate vscode tabs feature
 * style adjust for light/dark mode
-* fix draggable not work on some situations
 * if ui is stable, make some small vue component, not a large template on entry
 
 
