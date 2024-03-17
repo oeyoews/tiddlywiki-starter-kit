@@ -35,10 +35,13 @@
         </div>
       </div>
       <!-- list -->
+
+      <!-- ghostClass: 'text-green-300',
+        chosenClass: 'bg-green-300', -->
       <TransitionGroup class="flex overflow-auto items-center select-none" @click="closeTiddler" tag="div" v-draggable="[data,
       {
         animation: 150, onUpdate, onStart
-      },
+      }
       ]">
         <template v-for="(item, index) in data">
           <div
