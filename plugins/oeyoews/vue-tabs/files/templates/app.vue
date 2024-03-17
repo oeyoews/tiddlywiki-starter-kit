@@ -47,7 +47,7 @@
           type="transition" name="fade" tag="div">
           <div
             class="bg-gray-100 dark:bg-gray-600 p-1 hover:bg-gray-300 dark:hover:bg-gray-700 transition-all group rounded-none shrink-0 cursor-pointer flex items-center gap-1"
-            :class="{ 'bg-gray-300 dark:bg-gray-800': item === activeTiddler }" :data-nav-title="item" :key="item"
+            :class="{ 'bg-gray-300 dark:bg-dimmed-900': item === activeTiddler }" :data-nav-title="item" :key="item"
             v-for="(item, index) in data">
             <!-- <div ref="scroll" v-if="activeTiddler === item"></div> -->
             <sup>
