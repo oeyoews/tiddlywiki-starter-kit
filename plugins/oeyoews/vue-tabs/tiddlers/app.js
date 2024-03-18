@@ -93,9 +93,8 @@ const app = () => {
     },
 
     methods: {
-      onContextMenu(e) {
-        e.preventDefault(); //prevent the browser's default menu
-
+      onContextMenuSetup(e) {
+        e.preventDefault();
         const currentLang = this.$i18n.locale;
         const langs = this.$i18n.availableLocales;
         const LangChildren = langs.map((lang) => ({
@@ -128,6 +127,53 @@ const app = () => {
             icon: h(Icon, { icon: icons.drag })
           }
         ];
+
+        const items = [
+          {
+            label: this.t('tabs.more'),
+            icon: h(Icon, { icon: icons.setting }),
+            children
+          },
+          {
+            label: 'Help',
+            icon: h(Icon, { icon: icons.help }),
+            children: [
+              {
+                label: this.t('help.readme'),
+                icon: h(Icon, { icon: icons.readme }),
+                onClick: () => {
+                  new $tw.Story().navigateTiddler(
+                    '$:/plugins/oeyoews/vue-tabs'
+                  );
+                }
+              },
+              {
+                label: this.t('help.issues'),
+                icon: h(Icon, { icon: icons.github }),
+                onClick: () => {
+                  window.open(
+                    'https://github.com/oeyoews/tiddlywiki-starter-kit/issues/new',
+                    '_blank'
+                  );
+                }
+              }
+            ]
+          }
+        ];
+
+        this.$contextmenu({
+          items,
+          iconFontClass: 'iconfont',
+          customClass: 'class-a',
+          zIndex: 3,
+          minWidth: 230,
+          x: e.x,
+          y: e.y
+        });
+      },
+
+      onContextMenu(e) {
+        e.preventDefault(); //prevent the browser's default menu
         const items = [
           {
             label: this.t('close.current'),
@@ -181,36 +227,6 @@ const app = () => {
             icon: h(Icon, { icon: icons.pin }),
             disabled: true,
             onClick: () => this.closeTiddler(e, 'pin')
-          },
-          {
-            label: this.t('tabs.more'),
-            icon: h(Icon, { icon: icons.setting }),
-            children
-          },
-          {
-            label: 'Help',
-            icon: h(Icon, { icon: icons.help }),
-            children: [
-              {
-                label: this.t('help.readme'),
-                icon: h(Icon, { icon: icons.readme }),
-                onClick: () => {
-                  new $tw.Story().navigateTiddler(
-                    '$:/plugins/oeyoews/vue-tabs'
-                  );
-                }
-              },
-              {
-                label: this.t('help.issues'),
-                icon: h(Icon, { icon: icons.github }),
-                onClick: () => {
-                  window.open(
-                    'https://github.com/oeyoews/tiddlywiki-starter-kit/issues/new',
-                    '_blank'
-                  );
-                }
-              }
-            ]
           }
         ];
         //show menu
