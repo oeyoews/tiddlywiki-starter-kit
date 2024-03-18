@@ -1,11 +1,11 @@
 <template>
   <div class="flex relative flex-1 flex-col md:flex-row min-h-0 px-4 py-2 overflow-x-auto gap-2 ">
-    <div v-for="item in [1, 2,3]">
+    <div v-for="(item, index) in [1, 2,3]">
       <div
         class="mr-2 w-[350px] flex flex-col overflow-y-hidden rounded-md transition-all duration-75 border border-solid border-dimmed-100 dark:border-dimmed-700">
         <!-- title -->
         <div class="flex-col shrink-0 flex p-2">
-          Title here
+          title {{index}}
         </div>
         <!-- list -->
         <div class="flex flex-col py-2 px-4 grow relative h-[500px] mb-4 overflow-y-auto">
