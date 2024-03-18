@@ -13,7 +13,7 @@
       <Transition>
         <div v-show="setting" :title="t('tabs.changLang')">
           <!-- <div v-html="icons.lang"></div> -->
-          <select v-model="$i18n.locale" class="rounded p-1 appearance-none" @click="toggleLang">
+          <select v-model="$i18n.locale" class="h-full" @click="toggleLang">
             <option v-for="locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale">
               <div v-html="icons.lang"></div>
               {{locale}}
