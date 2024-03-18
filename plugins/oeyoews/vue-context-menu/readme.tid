@@ -1,0 +1,13 @@
+title: $:/plugins/oeyoews/vue-context-menu/readme
+description: vue-context-menu
+
+
+!! Usage
+
+```js
+const ContextMenu = require('vue-context-menu.min.js');
+```
+
+!! Links
+
+https://imengyu.top/pages/vue3-context-menu-docs/guide/install.html
