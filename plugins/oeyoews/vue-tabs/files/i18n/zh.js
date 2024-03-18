@@ -15,6 +15,7 @@ module.exports = {
     right: '关闭右侧标签页',
     all: '关闭所有标签页',
     others: '关闭其他标签页',
-    copy: '复制标题'
+    copy: '复制标题',
+    fold: '折叠标签页'
   }
 };

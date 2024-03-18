@@ -15,6 +15,7 @@ module.exports = {
     right: 'Close Tabs to the Right',
     all: 'Close All Tabs',
     others: 'Close Other Tabs',
-    copy: 'Copy Tiddler Title'
+    copy: 'Copy Tiddler Title',
+    fold: 'Fold Current Tab'
   }
 };

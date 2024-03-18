@@ -90,6 +90,10 @@ const app = () => {
         this.$contextmenu({
           items: [
             {
+              label: this.t('close.fold'),
+              onClick: () => this.closeTiddler(e, 'fold')
+            },
+            {
               label: this.t('close.current'),
               onClick: () => this.closeTiddler(e, 'close')
             },
@@ -251,8 +255,12 @@ const app = () => {
         let closeTitle = e.target.dataset.closeTitle;
         const navTitle = e.target.dataset.navTitle;
         const index = this.data.findIndex((item) => item === closeTitle);
+        const foldPrefix = '$:/state/folded/';
 
         switch (type) {
+          case 'fold':
+            $tw.wiki.setText(foldPrefix + closeTitle, 'text', null, 'hide');
+            break;
           case 'close':
             this.data = this.data.filter((item) => item !== closeTitle);
             break;
