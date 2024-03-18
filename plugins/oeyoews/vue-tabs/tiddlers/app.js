@@ -119,16 +119,19 @@ const app = () => {
           },
           {
             label: this.t('close.others'),
+            disabled: this.data.length === 1,
             onClick: () => this.closeTiddler(e, 'closeOthers'),
             icon: h(Icon, { icon: icons.others })
           },
           {
             label: this.t('close.left'),
+            disabled: this.data.length === 1,
             icon: h(Icon, { icon: icons.left }),
             onClick: () => this.closeTiddler(e, 'closeLeft')
           },
           {
             label: this.t('close.right'),
+            disabled: this.data.length === 1,
             icon: h(Icon, { icon: icons.right }),
             onClick: () => this.closeTiddler(e, 'closeRight')
           },
@@ -152,6 +155,7 @@ const app = () => {
           },
           {
             label: this.t('tabs.reverse'),
+            disabled: this.data.length === 1,
             icon: h(Icon, { icon: icons.reverse }),
             onClick: () => this.reverseList()
           },
