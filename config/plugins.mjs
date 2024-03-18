@@ -3,7 +3,7 @@ import config from './index.js';
 
 // TODO: support remove plugins from here
 // TODO: 去重
-export const devPlugins = ['vue-tabs', 'neotw-sitemap', 'vue-plum', 'vue-pomodoro', 'vue-rss', 'neotw-vue-codeblock', 'notivue'];
+export const devPlugins = ['vue-kanban', 'vue-tabs', 'neotw-sitemap', 'vue-plum', 'vue-pomodoro', 'vue-rss', 'neotw-vue-codeblock', 'notivue'];
 
 // NOTE: vercel not support use { isCi } ???
 const enableMarkdown = config.markdown;
