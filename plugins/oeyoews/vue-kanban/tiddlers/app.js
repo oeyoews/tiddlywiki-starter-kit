@@ -20,11 +20,52 @@ const app = () => {
         inprogress: '',
         done: ''
       });
+      const list1 = ref([
+        {
+          name: 'Joao',
+          id: '1'
+        },
+        {
+          name: 'Jean',
+          id: '2'
+        },
+        {
+          name: 'Johanna',
+          id: '3'
+        },
+        {
+          name: 'Juan',
+          id: '4'
+        }
+      ]);
+      const list2 = ref(
+        list1.value.map((item) => ({
+          name: `${item.name}-2`,
+          id: `${item.id}-2`
+        }))
+      );
 
-      return { state };
+      const list3 = ref(
+        list1.value.map((item) => ({
+          name: `${item.name}-3`,
+          id: `${item.id}-3`
+        }))
+      );
+
+      return { state, list1, list2, list3 };
     },
 
-    methods: {},
+    methods: {
+      onUpdate() {
+        console.log('update');
+      },
+      onAdd() {
+        console.log('add');
+      },
+      remove() {
+        console.log('remove');
+      }
+    },
 
     template: getTemplate('$:/plugins/oeyoews/vue-kanban/templates/app.vue'),
 

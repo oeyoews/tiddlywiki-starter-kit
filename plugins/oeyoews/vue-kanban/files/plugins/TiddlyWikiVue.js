@@ -1,10 +1,8 @@
+const { VueDraggable, vDraggable } = require('draggableplus.js');
+
 module.exports = {
   install(app, options) {
-    app.component('TiddlyWikiVue', {
-      template: `<button> {{ msg }} </button>`,
-      props: {
-        msg: String
-      }
-    });
+    app.component('VueDraggable', VueDraggable);
+    // app.directive('draggable', vDraggable);
   }
 };
