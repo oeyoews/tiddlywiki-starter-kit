@@ -9,6 +9,7 @@ description: vue-tabs
 
 * 代码命名重新分类规范化
 * icon for tab filetype
+* 适配 darkmode for contextmenu
 
 <!-- !! Motivation -->
 
