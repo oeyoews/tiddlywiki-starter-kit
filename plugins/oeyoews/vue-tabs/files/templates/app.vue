@@ -35,7 +35,7 @@
         <TransitionGroup class="flex overflow-auto items-center select-none vue-tabs" @click="closeTiddler"
           type="transition" name="fade" tag="div">
           <div :class="[{ 'bg-gray-300 dark:bg-dimmed-900': item === activeTiddler }, btn]" :data-nav-title="item"
-            :key="item" v-for="(item, index) in data">
+            :data-close-title="item" :key="item" v-for="(item, index) in data">
             <!-- <div ref="scroll" v-if="activeTiddler === item"></div> -->
             <sup>
               <span v-html="icons.tiddlywiki">

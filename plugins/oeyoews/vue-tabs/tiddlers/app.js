@@ -90,45 +90,71 @@ const app = () => {
         this.$contextmenu({
           items: [
             {
-              label: 'Simple item',
-              onClick: () => alert('Click Simple item')
+              label: 'Close',
+              onClick: () => this.closeTiddler(e, 'close')
             },
             {
-              label: 'Sub menu Example',
-              children: [
-                {
-                  label: 'Back',
-                  onClick: () => {
-                    console.log('You click Back');
-                  }
-                },
-                { label: 'Forward', disabled: true },
-                {
-                  label: 'Reload',
-                  divided: true,
-                  icon: 'icon-reload-1',
-                  onClick: () => {
-                    alert('You click Reload');
-                  }
-                },
-                {
-                  label: 'Save as...',
-                  icon: 'icon-save',
-                  onClick: () => {
-                    alert('You click Save as');
-                  }
-                },
-                {
-                  label: 'Print...',
-                  icon: 'icon-print',
-                  onClick: () => {
-                    alert('You click Print');
-                  }
-                },
-                { label: 'View source', icon: 'icon-terminal' },
-                { label: 'Inspect' }
-              ]
+              label: 'Close Others',
+              onClick: () => this.closeTiddler(e, 'closeOthers')
+            },
+            {
+              label: 'Close All',
+              onClick: () => this.closeTiddler(e, 'closeAll')
+            },
+            {
+              label: 'Copy Title',
+              onClick: () => {
+                const title = e.target.dataset.navTitle;
+                window.navigator.clipboard?.writeText(title);
+              }
+            },
+            {
+              label: 'Close Right',
+              onClick: () => this.closeTiddler(e, 'closeRight')
+            },
+            {
+              label: 'Close Left',
+              onClick: () => this.closeTiddler(e, 'closeLeft')
             }
+            // {
+            //   label: 'Pin',
+            // },
+            // {
+            //   label: 'More',
+            //   children: [
+            //     {
+            //       label: 'Back',
+            //       onClick: () => {
+            //         console.log('You click Back');
+            //       }
+            //     },
+            //     { label: 'Forward', disabled: true },
+            //     {
+            //       label: 'Reload',
+            //       divided: true,
+            //       icon: 'icon-reload-1',
+            //       onClick: () => {
+            //         alert('You click Reload');
+            //       }
+            //     },
+            //     {
+            //       label: 'Save as...',
+            //       icon: 'icon-save',
+            //       onClick: () => {
+            //         alert('You click Save as');
+            //       }
+            //     },
+            //     {
+            //       label: 'Print...',
+            //       icon: 'icon-print',
+            //       onClick: () => {
+            //         alert('You click Print');
+            //       }
+            //     },
+            //     { label: 'View source', icon: 'icon-terminal' },
+            //     { label: 'Inspect' }
+            //   ]
+            // }
           ],
           iconFontClass: 'iconfont',
           customClass: 'class-a',
@@ -221,15 +247,45 @@ const app = () => {
         return history.pop().title;
       },
 
-      closeTiddler(e) {
-        if (e.target.dataset.navTitle) {
-          new $tw.Story().navigateTiddler(e.target.dataset.navTitle);
-          this.activeTiddler = e.target.dataset.navTitle;
+      closeTiddler(e, type) {
+        let closeTitle = e.target.dataset.closeTitle;
+        const navTitle = e.target.dataset.navTitle;
+        const index = this.data.findIndex((item) => item === closeTitle);
+
+        switch (type) {
+          case 'close':
+            this.data = this.data.filter((item) => item !== closeTitle);
+            break;
+          case 'closeAll':
+            this.closeAll();
+            break;
+          case 'closeOthers':
+            this.data = this.data.filter((item) => item === closeTitle);
+            break;
+          case 'closeRight':
+            this.data.splice(index + 1, this.data.length - index);
+            break;
+          case 'closeLeft':
+            this.data.splice(0, index);
+            break;
+          default:
+            break;
+        }
+
+        if (type) {
           return;
         }
-        const title = e.target.parentNode?.dataset.closeTitle;
-        if (!title) return;
-        this.data = this.data.filter((item) => item !== title);
+
+        if (navTitle) {
+          new $tw.Story().navigateTiddler(navTitle);
+          this.activeTiddler = navTitle;
+          return;
+        }
+        if (!closeTitle) {
+          closeTitle = e.target.parentNode?.dataset.closeTitle;
+        }
+        if (!closeTitle) return;
+        this.data = this.data.filter((item) => item !== closeTitle);
       }
     },
 
