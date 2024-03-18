@@ -14,7 +14,7 @@
         </div>
         <!-- list -->
         <div class="flex flex-col py-2 px-4 grow relative h-[500px] mb-4 overflow-y-auto list1">
-          <div v-for="item in list1"
+          <div v-for="item in list1" :key="item.id"
             class="relative rounded-md border border-dimmed-100 border-solid shadow-sm overflow-visible mb-2 shrink-0 flex-col dark:border-dimmed-700">
             <div class="pt-2 border-none border-dimmed-100 pb-3 rounded-sm px-4 dark:border-dimmed-700">
               <div class="p-4">
@@ -40,7 +40,7 @@
         </div>
         <!-- list -->
         <div class="flex flex-col py-2 px-4 grow relative h-[500px] mb-4 overflow-y-auto list2">
-          <div v-for="item in list2"
+          <div v-for="item in list2" :key="item.id"
             class="relative rounded-md border border-dimmed-100 border-solid shadow-sm overflow-visible mb-2 shrink-0 flex-col dark:border-dimmed-700">
             <div class="pt-2 border-none border-dimmed-100 pb-3 rounded-sm px-4 dark:border-dimmed-700">
               <div class="p-4">
@@ -66,7 +66,7 @@
         </div>
         <!-- list -->
         <div class="flex flex-col py-2 px-4 grow relative h-[500px] mb-4 overflow-y-auto list3">
-          <div v-for="item in list3"
+          <div v-for="item in list3" :key="item.id"
             class="relative rounded-md border border-dimmed-100 border-solid shadow-sm overflow-visible mb-2 shrink-0 flex-col dark:border-dimmed-700">
             <div class="pt-2 border-none border-dimmed-100 pb-3 rounded-sm px-4 dark:border-dimmed-700">
               <div class="p-4">
