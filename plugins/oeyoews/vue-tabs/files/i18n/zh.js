@@ -9,7 +9,8 @@ module.exports = {
     togglePosition: '切换位置',
     showLang: '设置',
     setting: '设置',
-    pin: '固定'
+    pin: '固定',
+    more: '更多'
   },
   settings: {
     position: '位置'

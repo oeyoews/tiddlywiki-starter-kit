@@ -8,7 +8,7 @@ module.exports = {
     changLang: 'Change Language',
     togglePosition: 'Toggle Position',
     showLang: 'Setup',
-    more: '更多',
+    more: 'More',
     pin: 'Pin Tiddler'
   },
   settings: {
