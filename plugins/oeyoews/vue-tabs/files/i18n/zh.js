@@ -17,7 +17,7 @@ module.exports = {
     off: 'Off'
   },
   settings: {
-    position: '位置',
+    position: '标签栏位置',
     drag: '拖拽'
   },
   close: {

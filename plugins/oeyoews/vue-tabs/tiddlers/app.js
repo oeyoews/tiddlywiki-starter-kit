@@ -4,7 +4,7 @@ type: application/javascript
 module-type: library
 
 \*/
-const { h, ref } = window.Vue;
+const { computed, h, ref } = window.Vue;
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 
@@ -26,16 +26,20 @@ const app = () => {
       const data = ref($tw.wiki.getTiddlerList(DEFAULT_STORY_TITLE));
       const activeTiddler = ref('');
       const dragging = ref(false);
-      const position = ref(config.position);
       const setting = ref(false);
       const pined = ref([]);
-      const draggable = ref(true);
+
+      const position = ref(config.position);
+      const draggable = ref(config.draggable);
+
+      const isDrag = computed(() => draggable.value === 'yes');
 
       // const filterData = computed(() => {
       //   return data.value.filter((item) => !item.startsWith('Draft of'));
       // });
 
       return {
+        isDrag,
         draggable,
         pined,
         setting,
@@ -82,7 +86,7 @@ const app = () => {
           return;
         }
 
-        if (data.length !== this.data.length) {
+        if (data && data.length !== this.data.length) {
           this.data = data;
         }
       }, 1000);
@@ -228,7 +232,10 @@ const app = () => {
       },
 
       toggleDraggable() {
-        this.draggable = this.draggable ? false : true;
+        this.draggable = this.draggable === 'yes' ? 'no' : 'yes';
+        $tw.wiki.setText(configTiddler, 'draggable', null, this.draggable, {
+          suppressTimestamp: true
+        });
       },
 
       togglePosition() {

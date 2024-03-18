@@ -16,7 +16,7 @@
         </div>
       </Transition>
       <VueDraggable v-model="data" @start="onStart" @end="onUpdate" target=".vue-tabs" :scroll="true"
-        :disabled="!draggable">
+        :disabled="!isDrag">
         <TransitionGroup class="flex overflow-auto items-center select-none vue-tabs" @click="closeTiddler"
           type="transition" name="fade" tag="div">
           <div :class="[{ 'bg-gray-300 dark:bg-dimmed-900': item === activeTiddler }, btn]" :data-nav-title="item"

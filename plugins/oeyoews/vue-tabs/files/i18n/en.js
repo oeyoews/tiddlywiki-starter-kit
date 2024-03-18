@@ -16,7 +16,7 @@ module.exports = {
     off: 'Off'
   },
   settings: {
-    position: 'Position',
+    position: 'Tab Position',
     drag: 'Drag'
   },
   close: {
