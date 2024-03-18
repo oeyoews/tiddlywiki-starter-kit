@@ -100,6 +100,8 @@ const app = () => {
         const langs = this.$i18n.availableLocales;
         const LangChildren = langs.map((lang) => ({
           label: lang,
+          disabled: currentLang === lang ? true : false,
+          icon: icons.hasOwnProperty(lang) && h(Icon, { icon: icons[lang] }),
           onClick: () => {
             this.$i18n.locale = lang;
             localStorage.setItem('lang', lang);
