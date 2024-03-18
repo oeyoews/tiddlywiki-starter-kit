@@ -13,8 +13,8 @@ module.exports = {
     more: '更多'
   },
   status: {
-    on: 'On',
-    off: 'Off'
+    on: '开启',
+    off: '关闭'
   },
   settings: {
     position: '标签栏位置',
