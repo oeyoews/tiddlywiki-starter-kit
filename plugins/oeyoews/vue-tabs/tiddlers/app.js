@@ -95,79 +95,81 @@ const app = () => {
     methods: {
       onContextMenu(e) {
         e.preventDefault(); //prevent the browser's default menu
+
+        const children = [
+          {
+            label: this.t('settings.position'),
+            icon: h(Icon, { icon: icons.position }),
+            onClick: this.togglePosition
+          },
+          {
+            label:
+              this.t('settings.drag') +
+              ' ' +
+              (this.draggable ? this.t('status.on') : this.t('status.off')),
+            onClick: this.toggleDraggable,
+            icon: h(Icon, { icon: icons.drag })
+          }
+        ];
+        const items = [
+          {
+            label: this.t('close.fold'),
+            onClick: () => this.closeTiddler(e, 'fold'),
+            icon: h(Icon, { icon: icons.fold })
+          },
+          {
+            label: this.t('close.current'),
+            icon: h(Icon, { icon: icons.close }),
+            onClick: () => this.closeTiddler(e, 'close')
+          },
+          {
+            label: this.t('close.others'),
+            onClick: () => this.closeTiddler(e, 'closeOthers'),
+            icon: h(Icon, { icon: icons.others })
+          },
+          {
+            label: this.t('close.all'),
+            onClick: () => this.closeTiddler(e, 'closeAll'),
+            icon: h(Icon, { icon: icons.all })
+          },
+          {
+            label: this.t('close.left'),
+            icon: h(Icon, { icon: icons.left }),
+            onClick: () => this.closeTiddler(e, 'closeLeft')
+          },
+          {
+            label: this.t('close.right'),
+            icon: h(Icon, { icon: icons.right }),
+            onClick: () => this.closeTiddler(e, 'closeRight')
+          },
+          {
+            label: this.t('close.copy'),
+            icon: h(Icon, { icon: icons.copy }),
+            onClick: () => {
+              const title = e.target.dataset.navTitle;
+              $tw.utils.copyToClipboard(title);
+            }
+          },
+          {
+            label: this.t('tabs.reverse'),
+            icon: h(Icon, { icon: icons.reverse }),
+            onClick: () => this.reverseList()
+          },
+          {
+            label: this.t('tabs.pin'),
+            icon: h(Icon, { icon: icons.pin }),
+            disabled: true,
+            onClick: () => this.closeTiddler(e, 'pin')
+          },
+          {
+            label: this.t('tabs.more'),
+            icon: h(Icon, { icon: icons.setting }),
+            children
+          }
+        ];
         //show menu
         this.$contextmenu({
-          items: [
-            {
-              label: this.t('close.fold'),
-              onClick: () => this.closeTiddler(e, 'fold'),
-              icon: h(Icon, { icon: icons.fold })
-            },
-            {
-              label: this.t('close.current'),
-              icon: h(Icon, { icon: icons.close }),
-              onClick: () => this.closeTiddler(e, 'close')
-            },
-            {
-              label: this.t('close.others'),
-              onClick: () => this.closeTiddler(e, 'closeOthers'),
-              icon: h(Icon, { icon: icons.others })
-            },
-            {
-              label: this.t('close.all'),
-              onClick: () => this.closeTiddler(e, 'closeAll'),
-              icon: h(Icon, { icon: icons.all })
-            },
-            {
-              label: this.t('close.left'),
-              icon: h(Icon, { icon: icons.left }),
-              onClick: () => this.closeTiddler(e, 'closeLeft')
-            },
-            {
-              label: this.t('close.right'),
-              icon: h(Icon, { icon: icons.right }),
-              onClick: () => this.closeTiddler(e, 'closeRight')
-            },
-            {
-              label: this.t('close.copy'),
-              icon: h(Icon, { icon: icons.copy }),
-              onClick: () => {
-                const title = e.target.dataset.navTitle;
-                window.navigator.clipboard?.writeText(title);
-              }
-            },
-            {
-              label: this.t('tabs.reverse'),
-              icon: h(Icon, { icon: icons.reverse }),
-              onClick: () => this.reverseList()
-            },
-            {
-              label: this.t('tabs.pin'),
-              icon: h(Icon, { icon: icons.pin }),
-              onClick: () => this.closeTiddler(e, 'pin')
-            },
-            {
-              label: this.t('tabs.more'),
-              icon: h(Icon, { icon: icons.setting }),
-              children: [
-                {
-                  label: this.t('settings.position'),
-                  icon: h(Icon, { icon: icons.position }),
-                  onClick: this.togglePosition
-                },
-                {
-                  label:
-                    this.t('settings.drag') +
-                    ' ' +
-                    (this.draggable
-                      ? this.t('status.on')
-                      : this.t('status.off')),
-                  onClick: this.toggleDraggable,
-                  icon: h(Icon, { icon: icons.drag })
-                }
-              ]
-            }
-          ],
+          items,
           iconFontClass: 'iconfont',
           customClass: 'class-a',
           zIndex: 3,
