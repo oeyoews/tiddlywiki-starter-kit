@@ -7,9 +7,11 @@
       </div>
       <!-- TODO -->
       <!-- 切换 draggable -->
-      <div v-show="setting" :title="t('tabs.togglePosition')">
-        <div @click="togglePosition" v-html="icons.position" class="h-full" :class="btn"></div>
-      </div>
+      <Transition>
+        <div v-show="setting" :title="t('tabs.togglePosition')">
+          <div @click="togglePosition" v-html="icons.position" class="h-full" :class="btn"></div>
+        </div>
+      </Transition>
       <Transition>
         <div v-show="setting" :title="t('tabs.changLang')">
           <!-- <div v-html="icons.lang"></div> -->
