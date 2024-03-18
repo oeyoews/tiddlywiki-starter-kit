@@ -5,11 +5,6 @@ description: vue-tabs
 
 > 拥有 vscode 的 tabs 的所有功能
 
-!! TODO
-
-* 配置移入菜单中
-
-
 <!-- !! Motivation -->
 
 <!-- your plugin motivation, or why you write this plugin -->

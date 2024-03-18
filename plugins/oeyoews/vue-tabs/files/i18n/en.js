@@ -4,10 +4,15 @@ module.exports = {
     closeTiddler: 'Close Tiddler',
     closeAllTiddler: 'Close All Tiddlers',
     drag: 'Drag to reorder tabs',
-    reverseList: 'reverseList',
+    reverse: 'reverseList',
     changLang: 'Change Language',
     togglePosition: 'Toggle Position',
-    showLang: 'Setup'
+    showLang: 'Setup',
+    more: '更多',
+    pin: 'Pin Tiddler'
+  },
+  settings: {
+    position: 'Position'
   },
   close: {
     current: 'Close Current Tab',

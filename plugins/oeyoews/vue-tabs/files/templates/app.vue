@@ -7,13 +7,7 @@
     <div class="flex item-center" @contextmenu="onContextMenu($event)">
       <div v-html="icons.setting" :class="btn" @click="showSetup" :title="t('tabs.showLang')">
       </div>
-      <!-- TODO -->
       <!-- 切换 draggable -->
-      <Transition>
-        <div v-show="setting" :title="t('tabs.togglePosition')">
-          <div @click="togglePosition" v-html="icons.position" class="h-full" :class="btn"></div>
-        </div>
-      </Transition>
       <Transition>
         <div v-show="setting" :title="t('tabs.changLang')">
           <!-- <div v-html="icons.lang"></div> -->
@@ -25,12 +19,6 @@
           </select>
         </div>
       </Transition>
-      <div @click="closeAll" :title="t('tabs.closeAllTiddler')" :class="btn" v-html="icons.close">
-      </div>
-      <div @click="reverseList" :class="btn" v-html="icons.reverse" :title="t('tabs.reverseList')"></div>
-      <!-- random -->
-      <!-- <div @click="shuffleData" v-if="false" ref="dice" :class="btn" v-html="icons.dice">
-      </div> -->
       <VueDraggable v-model="data" @start="onStart" @end="onUpdate" target=".vue-tabs" :scroll="true">
         <TransitionGroup class="flex overflow-auto items-center select-none vue-tabs" @click="closeTiddler"
           type="transition" name="fade" tag="div">

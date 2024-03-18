@@ -28,12 +28,14 @@ const app = () => {
       const dragging = ref(false);
       const position = ref(config.position);
       const setting = ref(false);
+      const pined = ref([]);
 
       // const filterData = computed(() => {
       //   return data.value.filter((item) => !item.startsWith('Draft of'));
       // });
 
       return {
+        pined,
         setting,
         t,
         icons,
@@ -111,6 +113,16 @@ const app = () => {
               icon: h(Icon, { icon: icons.all })
             },
             {
+              label: this.t('close.left'),
+              icon: h(Icon, { icon: icons.left }),
+              onClick: () => this.closeTiddler(e, 'closeLeft')
+            },
+            {
+              label: this.t('close.right'),
+              icon: h(Icon, { icon: icons.right }),
+              onClick: () => this.closeTiddler(e, 'closeRight')
+            },
+            {
               label: this.t('close.copy'),
               icon: h(Icon, { icon: icons.copy }),
               onClick: () => {
@@ -119,32 +131,24 @@ const app = () => {
               }
             },
             {
-              label: this.t('close.right'),
-              icon: h(Icon, { icon: icons.right }),
-              onClick: () => this.closeTiddler(e, 'closeRight')
+              label: this.t('tabs.reverse'),
+              icon: h(Icon, { icon: icons.reverse }),
+              onClick: () => this.reverseList()
             },
             {
-              label: this.t('close.left'),
-              icon: h(Icon, { icon: icons.left }),
-              onClick: () => this.closeTiddler(e, 'closeLeft')
+              label: this.t('tabs.pin'),
+              icon: h(Icon, { icon: icons.pin }),
+              onClick: () => this.closeTiddler(e, 'pin')
             },
-            // {
-            //   label: 'Pin',
-            // },
             {
-              label: 'More',
+              label: this.t('tabs.more'),
               icon: h(Icon, { icon: icons.setting }),
               children: [
-                // { label: 'Forward', disabled: true },
-                // {
-                //   label: 'Reload',
-                //   divided: true,
-                //   // icon: 'icon-reload-1',
-                //   onClick: () => {
-                //     alert('You click Reload');
-                //   }
-                // },
-                // { label: 'Inspect' }
+                {
+                  label: this.t('settings.position'),
+                  icon: h(Icon, { icon: icons.position }),
+                  onClick: this.togglePosition
+                }
               ]
             }
           ],
@@ -246,6 +250,9 @@ const app = () => {
         const foldPrefix = '$:/state/folded/';
 
         switch (type) {
+          case 'pin':
+            this.pined.push(closeTitle);
+            break;
           case 'fold':
             $tw.wiki.setText(foldPrefix + closeTitle, 'text', null, 'hide');
             break;
