@@ -90,30 +90,30 @@ const app = () => {
         this.$contextmenu({
           items: [
             {
-              label: 'Close',
+              label: this.t('close.current'),
               onClick: () => this.closeTiddler(e, 'close')
             },
             {
-              label: 'Close Others',
+              label: this.t('close.others'),
               onClick: () => this.closeTiddler(e, 'closeOthers')
             },
             {
-              label: 'Close All',
+              label: this.t('close.all'),
               onClick: () => this.closeTiddler(e, 'closeAll')
             },
             {
-              label: 'Copy Title',
+              label: this.t('close.copy'),
               onClick: () => {
                 const title = e.target.dataset.navTitle;
                 window.navigator.clipboard?.writeText(title);
               }
             },
             {
-              label: 'Close Right',
+              label: this.t('close.right'),
               onClick: () => this.closeTiddler(e, 'closeRight')
             },
             {
-              label: 'Close Left',
+              label: this.t('close.left'),
               onClick: () => this.closeTiddler(e, 'closeLeft')
             }
             // {

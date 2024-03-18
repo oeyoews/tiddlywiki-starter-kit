@@ -8,5 +8,13 @@ module.exports = {
     changLang: 'Change Language',
     togglePosition: 'Toggle Position',
     showLang: 'Setup'
+  },
+  close: {
+    current: 'Close Current Tab',
+    left: 'Close Tabs to the Left',
+    right: 'Close Tabs to the Right',
+    all: 'Close All Tabs',
+    others: 'Close Other Tabs',
+    copy: 'Copy Tiddler Title'
   }
 };
