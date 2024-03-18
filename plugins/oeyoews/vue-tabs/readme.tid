@@ -3,14 +3,12 @@ description: vue-tabs
 
 <!-- plugin template readme -->
 
-> 实现 vscode 的 tabs 的所有功能
+> 拥有 vscode 的 tabs 的所有功能
 
 !! TODO
 
-* support setup position
-* integrate vscode tabs feature
-* style adjust for light/dark mode
-* if ui is stable, make some small vue component, not a large template on entry
+* 菜单图标
+* 配置移入菜单中
 
 
 <!-- !! Motivation -->
