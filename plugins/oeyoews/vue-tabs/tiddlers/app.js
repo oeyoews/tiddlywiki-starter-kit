@@ -4,7 +4,7 @@ type: application/javascript
 module-type: library
 
 \*/
-const { ref } = window.Vue;
+const { h, ref } = window.Vue;
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 
@@ -17,6 +17,7 @@ const btn =
 const icons = require('./icons');
 
 const VueI18n = require('vue-i18n.global.prod.js');
+const Icon = require('./components/Icon');
 
 const app = () => {
   const component = {
@@ -91,22 +92,27 @@ const app = () => {
           items: [
             {
               label: this.t('close.fold'),
-              onClick: () => this.closeTiddler(e, 'fold')
+              onClick: () => this.closeTiddler(e, 'fold'),
+              icon: h(Icon, { icon: icons.fold })
             },
             {
               label: this.t('close.current'),
+              icon: h(Icon, { icon: icons.close }),
               onClick: () => this.closeTiddler(e, 'close')
             },
             {
               label: this.t('close.others'),
-              onClick: () => this.closeTiddler(e, 'closeOthers')
+              onClick: () => this.closeTiddler(e, 'closeOthers'),
+              icon: h(Icon, { icon: icons.others })
             },
             {
               label: this.t('close.all'),
-              onClick: () => this.closeTiddler(e, 'closeAll')
+              onClick: () => this.closeTiddler(e, 'closeAll'),
+              icon: h(Icon, { icon: icons.all })
             },
             {
               label: this.t('close.copy'),
+              icon: h(Icon, { icon: icons.copy }),
               onClick: () => {
                 const title = e.target.dataset.navTitle;
                 window.navigator.clipboard?.writeText(title);
@@ -114,51 +120,33 @@ const app = () => {
             },
             {
               label: this.t('close.right'),
+              icon: h(Icon, { icon: icons.right }),
               onClick: () => this.closeTiddler(e, 'closeRight')
             },
             {
               label: this.t('close.left'),
+              icon: h(Icon, { icon: icons.left }),
               onClick: () => this.closeTiddler(e, 'closeLeft')
-            }
+            },
             // {
             //   label: 'Pin',
             // },
-            // {
-            //   label: 'More',
-            //   children: [
-            //     {
-            //       label: 'Back',
-            //       onClick: () => {
-            //         console.log('You click Back');
-            //       }
-            //     },
-            //     { label: 'Forward', disabled: true },
-            //     {
-            //       label: 'Reload',
-            //       divided: true,
-            //       icon: 'icon-reload-1',
-            //       onClick: () => {
-            //         alert('You click Reload');
-            //       }
-            //     },
-            //     {
-            //       label: 'Save as...',
-            //       icon: 'icon-save',
-            //       onClick: () => {
-            //         alert('You click Save as');
-            //       }
-            //     },
-            //     {
-            //       label: 'Print...',
-            //       icon: 'icon-print',
-            //       onClick: () => {
-            //         alert('You click Print');
-            //       }
-            //     },
-            //     { label: 'View source', icon: 'icon-terminal' },
-            //     { label: 'Inspect' }
-            //   ]
-            // }
+            {
+              label: 'More',
+              icon: h(Icon, { icon: icons.setting }),
+              children: [
+                // { label: 'Forward', disabled: true },
+                // {
+                //   label: 'Reload',
+                //   divided: true,
+                //   // icon: 'icon-reload-1',
+                //   onClick: () => {
+                //     alert('You click Reload');
+                //   }
+                // },
+                // { label: 'Inspect' }
+              ]
+            }
           ],
           iconFontClass: 'iconfont',
           customClass: 'class-a',
