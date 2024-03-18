@@ -29,12 +29,14 @@ const app = () => {
       const position = ref(config.position);
       const setting = ref(false);
       const pined = ref([]);
+      const draggable = ref(true);
 
       // const filterData = computed(() => {
       //   return data.value.filter((item) => !item.startsWith('Draft of'));
       // });
 
       return {
+        draggable,
         pined,
         setting,
         t,
@@ -148,6 +150,16 @@ const app = () => {
                   label: this.t('settings.position'),
                   icon: h(Icon, { icon: icons.position }),
                   onClick: this.togglePosition
+                },
+                {
+                  label:
+                    this.t('settings.drag') +
+                    ' ' +
+                    (this.draggable
+                      ? this.t('status.on')
+                      : this.t('status.off')),
+                  onClick: this.toggleDraggable,
+                  icon: h(Icon, { icon: icons.drag })
                 }
               ]
             }
@@ -213,6 +225,10 @@ const app = () => {
           rect.right <=
             (window.innerWidth || document.documentElement.clientWidth)
         );
+      },
+
+      toggleDraggable() {
+        this.draggable = this.draggable ? false : true;
       },
 
       togglePosition() {

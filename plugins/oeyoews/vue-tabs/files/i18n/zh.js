@@ -12,8 +12,13 @@ module.exports = {
     pin: '固定',
     more: '更多'
   },
+  status: {
+    on: 'On',
+    off: 'Off'
+  },
   settings: {
-    position: '位置'
+    position: '位置',
+    drag: '拖拽'
   },
   close: {
     current: '关闭当前标签页',

@@ -11,8 +11,13 @@ module.exports = {
     more: 'More',
     pin: 'Pin Tiddler'
   },
+  status: {
+    on: 'On',
+    off: 'Off'
+  },
   settings: {
-    position: 'Position'
+    position: 'Position',
+    drag: 'Drag'
   },
   close: {
     current: 'Close Current Tab',

@@ -1,16 +1,12 @@
 <template>
   <div class="fixed inset-x-0 z-[1] backdrop-blur-md w-full hidden md:block" :class="position">
 
-    <!-- operations -->
-    <!-- fold tiddler -->
     <!-- edit tiddler -->
     <div class="flex item-center" @contextmenu="onContextMenu($event)">
       <div v-html="icons.setting" :class="btn" @click="showSetup" :title="t('tabs.showLang')">
       </div>
-      <!-- 切换 draggable -->
       <Transition>
         <div v-show="setting" :title="t('tabs.changLang')">
-          <!-- <div v-html="icons.lang"></div> -->
           <select v-model="$i18n.locale" class="h-full" @click="toggleLang">
             <option v-for="locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale">
               <div v-html="icons.lang"></div>
@@ -19,7 +15,8 @@
           </select>
         </div>
       </Transition>
-      <VueDraggable v-model="data" @start="onStart" @end="onUpdate" target=".vue-tabs" :scroll="true">
+      <VueDraggable v-model="data" @start="onStart" @end="onUpdate" target=".vue-tabs" :scroll="true"
+        :disabled="!draggable">
         <TransitionGroup class="flex overflow-auto items-center select-none vue-tabs" @click="closeTiddler"
           type="transition" name="fade" tag="div">
           <div :class="[{ 'bg-gray-300 dark:bg-dimmed-900': item === activeTiddler }, btn]" :data-nav-title="item"
