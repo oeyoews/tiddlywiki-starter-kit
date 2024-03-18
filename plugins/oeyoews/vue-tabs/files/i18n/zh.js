@@ -22,7 +22,8 @@ module.exports = {
   },
   settings: {
     position: '标签栏位置',
-    drag: '拖拽'
+    drag: '拖拽',
+    lang: '语言'
   },
   close: {
     current: '关闭当前标签页',

@@ -21,7 +21,8 @@ module.exports = {
   },
   settings: {
     position: 'Tab Position',
-    drag: 'Drag'
+    drag: 'Drag',
+    lang: 'Language'
   },
   close: {
     current: 'Close Current Tab',

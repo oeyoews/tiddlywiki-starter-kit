@@ -96,7 +96,22 @@ const app = () => {
       onContextMenu(e) {
         e.preventDefault(); //prevent the browser's default menu
 
+        const currentLang = this.$i18n.locale;
+        const langs = this.$i18n.availableLocales;
+        const LangChildren = langs.map((lang) => ({
+          label: lang,
+          onClick: () => {
+            this.$i18n.locale = lang;
+            localStorage.setItem('lang', lang);
+          }
+        }));
+
         const children = [
+          {
+            label: this.t('settings.lang'),
+            icon: h(Icon, { icon: icons.lang }),
+            children: LangChildren
+          },
           {
             label: this.t('settings.position'),
             icon: h(Icon, { icon: icons.position }),
@@ -277,18 +292,10 @@ const app = () => {
         this.showSetup();
       },
 
-      toggleLang() {
-        const oldLang = localStorage.getItem('lang');
-        const currentLang = this.$i18n.locale;
-        if (oldLang !== currentLang) {
-          localStorage.setItem('lang', this.$i18n.locale);
-          this.showSetup();
-        }
-      },
-
       showSetup() {
         this.setting = this.setting ? false : true;
       },
+
       getCurrentTiddler() {
         const history = $tw.wiki.getTiddlerData('$:/HistoryList');
         if (!history || history.length === 0) {
