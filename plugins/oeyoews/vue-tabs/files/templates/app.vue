@@ -2,7 +2,9 @@
   <div class="fixed inset-x-0 z-[1] backdrop-blur-md w-full hidden md:block" :class="position">
 
     <!-- operations -->
-    <div class="flex item-center">
+    <!-- fold tiddler -->
+    <!-- edit tiddler -->
+    <div class="flex item-center" @contextmenu="onContextMenu($event)">
       <div v-html="icons.setting" :class="btn" @click="showSetup" :title="t('tabs.showLang')">
       </div>
       <!-- TODO -->

@@ -36,6 +36,8 @@ class ExampleWidget extends Widget {
     const domNode = this.document.createElement('div');
     const TODOPlugin = require('./plugins/TODOPlugin');
 
+    const ContextMenu = require('vue-context-menu.min.js').default;
+
     try {
       const app = createApp(component());
 
@@ -67,7 +69,9 @@ class ExampleWidget extends Widget {
         fallbackLocale: 'English', // 设置本来的语言
         messages
       });
+
       app.use(i18n);
+      app.use(ContextMenu);
 
       app.config.errorHandler = (err) => {
         const text = `[Vue3](${app.version}): ` + err;

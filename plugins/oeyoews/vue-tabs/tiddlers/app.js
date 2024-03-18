@@ -84,6 +84,60 @@ const app = () => {
     },
 
     methods: {
+      onContextMenu(e) {
+        e.preventDefault(); //prevent the browser's default menu
+        //show menu
+        this.$contextmenu({
+          items: [
+            {
+              label: 'Simple item',
+              onClick: () => alert('Click Simple item')
+            },
+            {
+              label: 'Sub menu Example',
+              children: [
+                {
+                  label: 'Back',
+                  onClick: () => {
+                    console.log('You click Back');
+                  }
+                },
+                { label: 'Forward', disabled: true },
+                {
+                  label: 'Reload',
+                  divided: true,
+                  icon: 'icon-reload-1',
+                  onClick: () => {
+                    alert('You click Reload');
+                  }
+                },
+                {
+                  label: 'Save as...',
+                  icon: 'icon-save',
+                  onClick: () => {
+                    alert('You click Save as');
+                  }
+                },
+                {
+                  label: 'Print...',
+                  icon: 'icon-print',
+                  onClick: () => {
+                    alert('You click Print');
+                  }
+                },
+                { label: 'View source', icon: 'icon-terminal' },
+                { label: 'Inspect' }
+              ]
+            }
+          ],
+          iconFontClass: 'iconfont',
+          customClass: 'class-a',
+          zIndex: 3,
+          minWidth: 230,
+          x: e.x,
+          y: e.y
+        });
+      },
       shuffle(array) {
         for (let i = array.length - 1; i > 0; i--) {
           const j = Math.floor(Math.random() * (i + 1));
