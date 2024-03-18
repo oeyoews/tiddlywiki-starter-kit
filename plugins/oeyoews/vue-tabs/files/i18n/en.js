@@ -15,6 +15,10 @@ module.exports = {
     on: 'On',
     off: 'Off'
   },
+  help: {
+    issues: 'Report Bug',
+    readme: 'Check Plugin'
+  },
   settings: {
     position: 'Tab Position',
     drag: 'Drag'

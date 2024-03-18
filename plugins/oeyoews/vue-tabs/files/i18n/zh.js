@@ -16,6 +16,10 @@ module.exports = {
     on: '开启',
     off: '关闭'
   },
+  help: {
+    issues: '提交错误',
+    readme: '查看插件'
+  },
   settings: {
     position: '标签栏位置',
     drag: '拖拽'

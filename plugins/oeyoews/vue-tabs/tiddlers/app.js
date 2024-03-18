@@ -113,11 +113,6 @@ const app = () => {
         ];
         const items = [
           {
-            label: this.t('close.fold'),
-            onClick: () => this.closeTiddler(e, 'fold'),
-            icon: h(Icon, { icon: icons.fold })
-          },
-          {
             label: this.t('close.current'),
             icon: h(Icon, { icon: icons.close }),
             onClick: () => this.closeTiddler(e, 'close')
@@ -128,11 +123,6 @@ const app = () => {
             icon: h(Icon, { icon: icons.others })
           },
           {
-            label: this.t('close.all'),
-            onClick: () => this.closeTiddler(e, 'closeAll'),
-            icon: h(Icon, { icon: icons.all })
-          },
-          {
             label: this.t('close.left'),
             icon: h(Icon, { icon: icons.left }),
             onClick: () => this.closeTiddler(e, 'closeLeft')
@@ -141,6 +131,16 @@ const app = () => {
             label: this.t('close.right'),
             icon: h(Icon, { icon: icons.right }),
             onClick: () => this.closeTiddler(e, 'closeRight')
+          },
+          {
+            label: this.t('close.all'),
+            onClick: () => this.closeTiddler(e, 'closeAll'),
+            icon: h(Icon, { icon: icons.all })
+          },
+          {
+            label: this.t('close.fold'),
+            onClick: () => this.closeTiddler(e, 'fold'),
+            icon: h(Icon, { icon: icons.fold })
           },
           {
             label: this.t('close.copy'),
@@ -165,6 +165,31 @@ const app = () => {
             label: this.t('tabs.more'),
             icon: h(Icon, { icon: icons.setting }),
             children
+          },
+          {
+            label: 'Help',
+            icon: h(Icon, { icon: icons.help }),
+            children: [
+              {
+                label: this.t('help.readme'),
+                icon: h(Icon, { icon: icons.readme }),
+                onClick: () => {
+                  new $tw.Story().navigateTiddler(
+                    '$:/plugins/oeyoews/vue-tabs'
+                  );
+                }
+              },
+              {
+                label: this.t('help.issues'),
+                icon: h(Icon, { icon: icons.github }),
+                onClick: () => {
+                  window.open(
+                    'https://github.com/oeyoews/tiddlywiki-starter-kit/issues/new',
+                    '_blank'
+                  );
+                }
+              }
+            ]
           }
         ];
         //show menu
