@@ -13,7 +13,8 @@
   "dependents": [
     "$:/plugins/oeyoews/neotw-vue3",
     "$:/plugins/oeyoews/vue-draggable-plus",
-    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
+    "$:/plugins/oeyoews/vue-i18n"
   ],
   "list": "readme"
 }

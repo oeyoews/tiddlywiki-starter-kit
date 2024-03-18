@@ -9,25 +9,32 @@ const { ref } = window.Vue;
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 
 const DEFAULT_STORY_TITLE = '$:/StoryList';
-const config = $tw.wiki.getTiddler('$:/plugins/oeyoews/vue-tabs/config').fields;
+const configTiddler = '$:/plugins/oeyoews/vue-tabs/config';
+const config = $tw.wiki.getTiddler(configTiddler).fields;
 const btn =
   'bg-gray-100 dark:bg-dimmed-700 p-1 hover:bg-gray-300 dark:hover:bg-dimmed-800 transition-all group rounded-none shrink-0 cursor-pointer flex items-center';
 
 const icons = require('./icons');
 
+const VueI18n = require('vue-i18n.global.prod.js');
+
 const app = () => {
   const component = {
     setup() {
+      const { t } = VueI18n.useI18n();
       const data = ref($tw.wiki.getTiddlerList(DEFAULT_STORY_TITLE));
       const activeTiddler = ref('');
       const dragging = ref(false);
       const position = ref(config.position);
+      const setting = ref(false);
 
       // const filterData = computed(() => {
       //   return data.value.filter((item) => !item.startsWith('Draft of'));
       // });
 
       return {
+        setting,
+        t,
         icons,
         btn,
         position,
@@ -106,7 +113,9 @@ const app = () => {
       },
 
       reverseList() {
-        this.data.reverse();
+        if (this.data.length > 1) {
+          this.data.reverse();
+        }
       },
 
       onStart() {
@@ -130,6 +139,26 @@ const app = () => {
         );
       },
 
+      togglePosition() {
+        this.position = this.position === 'top-0' ? 'bottom-0' : 'top-0';
+        $tw.wiki.setText(configTiddler, 'position', null, this.position, {
+          suppressTimestamp: true
+        });
+        this.showSetup();
+      },
+
+      toggleLang() {
+        const oldLang = localStorage.getItem('lang');
+        const currentLang = this.$i18n.locale;
+        if (oldLang !== currentLang) {
+          localStorage.setItem('lang', this.$i18n.locale);
+          this.showSetup();
+        }
+      },
+
+      showSetup() {
+        this.setting = this.setting ? false : true;
+      },
       getCurrentTiddler() {
         const history = $tw.wiki.getTiddlerData('$:/HistoryList');
         if (!history || history.length === 0) {

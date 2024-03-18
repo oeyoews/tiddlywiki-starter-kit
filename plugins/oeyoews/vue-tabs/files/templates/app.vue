@@ -1,10 +1,29 @@
 <template>
   <div class="fixed inset-x-0 z-[1] backdrop-blur-md w-full hidden md:block" :class="position">
+
     <!-- operations -->
     <div class="flex item-center">
-      <div @click="closeAll" title="close all tiddlers" :class="btn" v-html="icons.close">
+      <div v-html="icons.setting" :class="btn" @click="showSetup" :title="t('tabs.showLang')">
       </div>
-      <div @click="reverseList" :class="btn" v-html="icons.reverse"></div>
+      <!-- TODO -->
+      <!-- 切换 draggable -->
+      <div v-show="setting" :title="t('tabs.togglePosition')">
+        <div @click="togglePosition" v-html="icons.position" class="h-full" :class="btn"></div>
+      </div>
+      <Transition>
+        <div v-show="setting" :title="t('tabs.changLang')">
+          <!-- <div v-html="icons.lang"></div> -->
+          <select v-model="$i18n.locale" class="rounded p-1 appearance-none" @click="toggleLang">
+            <option v-for="locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale">
+              <div v-html="icons.lang"></div>
+              {{locale}}
+            </option>
+          </select>
+        </div>
+      </Transition>
+      <div @click="closeAll" :title="t('tabs.closeAllTiddler')" :class="btn" v-html="icons.close">
+      </div>
+      <div @click="reverseList" :class="btn" v-html="icons.reverse" :title="t('tabs.reverseList')"></div>
       <!-- random -->
       <!-- <div @click="shuffleData" v-if="false" ref="dice" :class="btn" v-html="icons.dice">
       </div> -->
@@ -19,7 +38,7 @@
               </span>
               {{ index }}. &nbsp;</sup>
             {{ item }}
-            <button title="close tiddler"
+            <button :title="t('tabs.closeTiddler')"
               class="rounded-sm hover:bg-gray-200 dark:hover:bg-gray-700 opacity-0 group-hover:opacity-100 transition-all p-0 m-0"
               :data-close-title="item" v-html="icons.closeTiddler">
             </button>

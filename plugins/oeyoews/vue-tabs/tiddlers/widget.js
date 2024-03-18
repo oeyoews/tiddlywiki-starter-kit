@@ -28,6 +28,9 @@ class ExampleWidget extends Widget {
       window.Vue = require(vuelib);
     }
 
+    const VueI18n = require('vue-i18n.global.prod.js');
+    window.VueI18n = VueI18n;
+
     const { createApp } = window.Vue;
     const component = require('./app');
     const domNode = this.document.createElement('div');
@@ -37,6 +40,34 @@ class ExampleWidget extends Widget {
       const app = createApp(component());
 
       app.use(TODOPlugin);
+
+      const en = require('./i18n/en.js');
+      const cn = require('./i18n/zh.js');
+      // const ja = require('./i18n/ja.js');
+      // const fr = require('./i18n/fr.js');
+      // const ru = require('./i18n/ru.js');
+      const messages = {
+        English: en,
+        中文: cn
+        // 日本語: ja,
+        // Français: fr,
+        // Русский: ru
+      };
+
+      let locale = localStorage.getItem('lang');
+      if (!locale) {
+        locale = 'English';
+        // TODO: 需要考虑到lang 已被其他插件使用产生的字段冲突
+        localStorage.setItem('lang', locale);
+      }
+
+      const i18n = VueI18n.createI18n({
+        legacy: false,
+        locale,
+        fallbackLocale: 'English', // 设置本来的语言
+        messages
+      });
+      app.use(i18n);
 
       app.config.errorHandler = (err) => {
         const text = `[Vue3](${app.version}): ` + err;

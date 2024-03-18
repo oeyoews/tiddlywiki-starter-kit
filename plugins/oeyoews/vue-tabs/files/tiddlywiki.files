@@ -13,6 +13,19 @@
 			}
 		},
 		{
+			"path": "i18n",
+			"filesRegExp": "^.*\\.js$",
+			"searchSubdirectories": true,
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/vue-tabs/i18n/"
+				},
+				"module-type": "library",
+				"type": "application/javascript"
+			}
+		},
+		{
 			"path": "plugins",
 			"filesRegExp": "^.*\\.js$",
 			"searchSubdirectories": true,
