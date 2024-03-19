@@ -155,6 +155,7 @@ const app = () => {
           {
             label: this.t('close.all'),
             onClick: () => this.closeTiddler(e, 'closeAll'),
+            divided: true,
             icon: h(Icon, { icon: icons.all })
           },
           {
@@ -180,6 +181,7 @@ const app = () => {
             label: this.t('tabs.pin'),
             icon: h(Icon, { icon: icons.pin }),
             disabled: true,
+            divided: true,
             onClick: () => this.closeTiddler(e, 'pin')
           },
           {
