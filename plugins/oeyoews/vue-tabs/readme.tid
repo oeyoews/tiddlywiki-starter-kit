@@ -5,12 +5,6 @@ description: vue-tabs
 
 > 拥有 vscode 的 tabs 的所有功能
 
-!! TODO
-
-* 代码命名重新分类规范化
-* icon for tab filetype
-* 适配 darkmode for contextmenu
-
 <!-- !! Motivation -->
 
 <!-- your plugin motivation, or why you write this plugin -->
