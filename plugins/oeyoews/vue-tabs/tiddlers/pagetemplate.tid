@@ -1,6 +1,4 @@
 title: $:/plugins/oeyoews/vue-tabs/pagetemplate
 tags: $:/tags/PageTemplate
 
-<!-- <$list filter="[list[$:/StoryList]!has[draft.of]count[]compare:number:gt[0]]">
-</$list> -->
 <$vue-tabs />
