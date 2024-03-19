@@ -4,7 +4,7 @@ module.exports = {
     closeTiddler: 'Close Tiddler',
     closeAllTiddler: 'Close All Tiddlers',
     drag: 'Drag to reorder tabs',
-    reverse: 'reverseList',
+    reverse: 'Reverse Tab Order',
     changLang: 'Change Language',
     togglePosition: 'Toggle Position',
     showLang: 'Setup',
