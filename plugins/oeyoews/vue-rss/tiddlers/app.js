@@ -13,6 +13,35 @@ const Paginator = require('./components/Paginator');
 const modalTiddler = '$:/plugins/oeyoews/vue-rss/modal';
 const tempTiddler = '$:/temp/oeyoews/rss/content';
 
+function relativeTime(dateString) {
+  var date = new Date(dateString);
+  var now = new Date();
+
+  var diff = Math.abs(now - date) / 1000; // 将毫秒转换为秒，并取绝对值
+
+  var intervals = {
+    年: 31536000,
+    月: 2592000,
+    周: 604800,
+    天: 86400,
+    小时: 3600,
+    分钟: 60,
+    秒: 1
+  };
+
+  var relativeTime = '';
+
+  for (var key in intervals) {
+    var interval = Math.floor(diff / intervals[key]);
+    if (interval > 0) {
+      relativeTime += interval + ' ' + key + '前';
+      break;
+    }
+  }
+
+  return relativeTime;
+}
+
 const browserType = () => {
   // 获取浏览器的用户代理信息
   const userAgent = navigator.userAgent;
@@ -120,11 +149,12 @@ const app = (
         $tw.modal.display(modalTiddler);
       },
       getContent(data, tag) {
-        if (!data) {
-          this.error = 'data is null';
-          return;
+        const res = data?.getElementsByTagName(tag)[0]?.textContent;
+        if (res) {
+          return res;
+        } else {
+          return '';
         }
-        return data?.getElementsByTagName(tag)[0]?.textContent;
       },
 
       getImg(item) {
@@ -138,7 +168,7 @@ const app = (
           }
           return src;
         } catch (e) {
-          console.log(e);
+          console.log('image' + e);
           return this.icon;
         }
       },
@@ -151,12 +181,22 @@ const app = (
         }
 
         try {
+          const parser = new DOMParser();
+
           const response = await fetch(RSS_URL);
+
+          if (!response) {
+            console.error('fetch error for' + RSS_URL);
+            return;
+          }
+
           const data = await response.text();
 
-          const parser = new DOMParser();
           const xmlDoc = parser.parseFromString(data, 'text/xml');
+
           let items = xmlDoc.getElementsByTagName('item');
+          if (!items) return;
+
           if (!items.length) {
             items = xmlDoc.getElementsByTagName('entry');
           }
@@ -167,10 +207,11 @@ const app = (
           this.channel.title = getContent(channel, 'title');
           this.channel.link = getContent(channel, 'link');
           this.channel.description = getContent(channel, 'description');
-          this.channel.update = getContent(channel, 'lastBuildDate');
+          let pubDate = getContent(channel, 'lastBuildDate');
           if (!this.channel.update) {
-            this.channel.update = getContent(channel, 'pubDate');
+            pubDate = getContent(channel, 'pubDate');
           }
+          pubDate && (this.channel.update = relativeTime(pubDate));
 
           for (var i = 0; i < items.length; i++) {
             const item = items[i];
@@ -192,7 +233,7 @@ const app = (
             this.rssItems.push({
               title,
               link,
-              update,
+              update: relativeTime(update),
               summary,
               src
             });
@@ -206,6 +247,7 @@ const app = (
         } catch (e) {
           this.error = e;
           this.loading = false;
+          console.error(e);
         }
       },
 
