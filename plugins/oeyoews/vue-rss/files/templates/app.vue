@@ -4,39 +4,9 @@
   <div class="bg-rose-600" v-if="!loading && error.length > 0">[{{ rss }}]: {{error}}</div>
   <div v-if="loading"> loading ...</div>
   <template v-else>
-    <!-- info -->
-    <div
-      class="p-2 rounded border-solid border my-4 text-sm dark:bg-[#2d333b] hover:shadow-sm bg-transparent border-[#d0d7de] dark:border-[#444c56] hover:outline outline-[#d0d7de] hover:outline-1 dark:outline-[#444c56]"
-      v-if="error.length === 0">
-      <h2> {{ channel.title }}</h2>
-      <table>
-        <tr>
-          <td>
-            Updated
-          </td>
-          <td>
-            {{ channel.update }}
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Link
-          </td>
-          <td>
-            <a :href="channel.link" target="_blank">
-              {{channel.link}}
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Description
-          </td>
-          <td>
-            {{ channel.description }}
-          </td>
-        </tr>
-      </table>
+    <!-- Header -->
+    <div :class="card" v-if="error.length === 0">
+      <Header :channel="channel" />
     </div>
     <!-- list -->
     <div>

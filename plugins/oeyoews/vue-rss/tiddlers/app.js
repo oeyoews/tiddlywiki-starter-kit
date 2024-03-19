@@ -8,6 +8,7 @@ module-type: library
 const { toRaw, ref, watchEffect } = window.Vue;
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
+const Header = require('./components/Header');
 
 const browserType = () => {
   // 获取浏览器的用户代理信息
@@ -195,6 +196,9 @@ const app = (
       }
     },
 
+    components: {
+      Header
+    },
     template: getTemplate('$:/plugins/oeyoews/vue-rss/templates/app.vue')
   };
 
