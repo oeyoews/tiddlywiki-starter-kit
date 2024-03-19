@@ -62,10 +62,10 @@ const app = () => {
 
     mounted() {
       this.timer = setInterval(() => {
-        // HACK: vue 实例似乎会同时创建多个
-        if (this.timer) {
-          clearInterval(this.timer);
-        }
+        // HACK: vue 实例似乎会同时创建多个, widget 外面不要使用 list filter
+        // if (this.timer) {
+        //   clearInterval(this.timer);
+        // }
         if (this.dragging) {
           return;
         }
