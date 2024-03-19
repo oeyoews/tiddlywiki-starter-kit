@@ -5,7 +5,7 @@ title: $:/plugins/oeyoews/vue-rss/save
 <$view tiddler=<<tiddler>> field="caption" />
 <div>
 <$button class="bg-transparent">
-  <span class="hover:bg-gray-200 dark:hover:bg-gray-700 transition-all rounded px-2 py-1 text-xs">Save article</span>
+  <span class="hover:bg-gray-200 dark:hover:bg-gray-700 transition-all rounded px-2 py-1 text-xs">Save</span>
 <$action-setfield
 	$tiddler={{{ [<tiddler>get[caption]] }}}
 	text={{{ [<tiddler>get[text]] }}}
