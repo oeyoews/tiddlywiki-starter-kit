@@ -3,7 +3,7 @@ title: $:/plugins/oeyoews/vue-rss/save
 <$let tiddler="$:/temp/oeyoews/rss/content" >
 <div class="flex justify-between">
 <$view tiddler=<<tiddler>> field="caption" />
-<div>
+<div class="flex items-center">
 <$button class="bg-transparent">
   <span class="hover:bg-gray-200 dark:hover:bg-gray-700 transition-all rounded px-2 py-1 text-xs">Save</span>
 <$action-setfield

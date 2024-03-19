@@ -220,6 +220,7 @@ const app = (
             const update = getContent(item, 'pubDate');
             const link = getContent(item, 'link');
             const src = this.getImg(item);
+
             let content = getContent(item, 'content');
 
             if (!content) {
