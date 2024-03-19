@@ -51,6 +51,9 @@ const app = (
       const paginatedItems = ref([]);
       const pages = ref(0);
       const order = ref(0);
+      const card = ref(
+        'p-2 rounded border-solid border my-4 flex flex-col justify-between text-base dark:bg-dimmed-800 hover:shadow-sm bg-transparent border-dimmed-200 dark:border-dimmed-700 hover:outline outline-dimmed-200 hover:outline-1 dark:outline-dimmed-700'
+      );
       const icon =
         'data:image/svg+xml,' +
         encodeURIComponent(
@@ -76,6 +79,7 @@ const app = (
 
       const error = ref('');
       return {
+        card,
         icon,
         proxy,
         rss,
