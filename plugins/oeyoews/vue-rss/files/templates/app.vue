@@ -10,7 +10,7 @@
     </div>
 
     <!-- list -->
-    <div v-for="(item, index) in paginatedItems" :key="item" :class="card">
+    <div v-for="(item, index) in paginatedItems" :key="item" class="group" :class="card">
 
       <!-- title -->
       <h2 class="mb-2 text-base"> {{ order + index }}. {{item.title}}</h2>
@@ -22,15 +22,7 @@
           Link
         </a>
         <div v-if="item.update">{{item.update}}</div>
-        <button @click="open(item.title)">More</button>
-      </div>
-
-      <!-- content -->
-      <div v-show="isReading === item.title ? true : false">
-        <hr>
-        <article :class="card">
-          <p v-html="item.summary" />
-        </article>
+        <button @click="open(item)" class="transition-all opacity-0 group-hover:opacity-100">Open</button>
       </div>
     </div>
 

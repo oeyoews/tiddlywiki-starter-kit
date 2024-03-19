@@ -10,6 +10,8 @@ const { toRaw, ref, watchEffect } = window.Vue;
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 const Header = require('./components/Header');
 const Paginator = require('./components/Paginator');
+const modalTiddler = '$:/plugins/oeyoews/vue-rss/modal';
+const tempTiddler = '$:/temp/oeyoews/rss/content';
 
 const browserType = () => {
   // 获取浏览器的用户代理信息
@@ -109,8 +111,15 @@ const app = (
     },
 
     methods: {
-      open(title) {
+      open(item) {
+        const title = item.title;
         this.isReading = this.isReading === title ? '' : title;
+        $tw.wiki.addTiddler({
+          title: tempTiddler,
+          caption: title,
+          text: item.summary
+        });
+        $tw.modal.display(modalTiddler);
       },
       getContent(data, tag) {
         if (!data) {

@@ -46,7 +46,7 @@
     "@types/qrcode": "^1.5.5",
     "prettier": "^3.2.5",
     "terser": "^5.29.2",
-    "tw5-typed": "^0.4.9",
+    "tw5-typed": "^0.5.3",
     "typescript": "^5.4.2"
   }
 }
