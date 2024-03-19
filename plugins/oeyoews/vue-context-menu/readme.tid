@@ -5,6 +5,7 @@ description: vue-context-menu
 !! Usage
 
 ```js
+// widget.js
 const ContextMenu = require('vue-context-menu.min.js').default;
 
 app.use(ContextMenu)

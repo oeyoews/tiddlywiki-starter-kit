@@ -204,8 +204,8 @@ const app = () => {
         //show menu
         this.$contextmenu({
           items,
-          iconFontClass: 'iconfont',
-          customClass: 'class-a',
+          // iconFontClass: 'iconfont',
+          // customClass: 'class-a',
           zIndex: 3,
           minWidth: 230,
           x: e.x,
