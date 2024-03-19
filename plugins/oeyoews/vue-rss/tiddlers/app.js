@@ -9,6 +9,7 @@ const { toRaw, ref, watchEffect } = window.Vue;
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 const Header = require('./components/Header');
+const Paginator = require('./components/Paginator');
 
 const browserType = () => {
   // 获取浏览器的用户代理信息
@@ -188,6 +189,7 @@ const app = (
       },
 
       changePage(page) {
+        if (typeof page !== 'number') return;
         if (page < 1 || page > this.pages) {
           console.warn('page out of range');
           return;
@@ -197,7 +199,8 @@ const app = (
     },
 
     components: {
-      Header
+      Header,
+      Paginator
     },
     template: getTemplate('$:/plugins/oeyoews/vue-rss/templates/app.vue')
   };
