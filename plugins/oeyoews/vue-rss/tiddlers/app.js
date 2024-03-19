@@ -168,7 +168,6 @@ const app = (
           }
           return src;
         } catch (e) {
-          console.log('image' + e);
           return this.icon;
         }
       },

@@ -22,7 +22,6 @@ const Icon = require('./components/Icon');
 const app = () => {
   const component = {
     setup() {
-      const timer = ref();
       const { t } = VueI18n.useI18n();
       const data = ref($tw.wiki.getTiddlerList(DEFAULT_STORY_TITLE));
       const activeTiddler = ref('');
@@ -36,7 +35,6 @@ const app = () => {
       const isDrag = computed(() => draggable.value === 'yes');
 
       return {
-        timer,
         isDrag,
         draggable,
         pined,
@@ -61,11 +59,8 @@ const app = () => {
     },
 
     mounted() {
-      this.timer = setInterval(() => {
-        // HACK: vue 实例似乎会同时创建多个, widget 外面不要使用 list filter
-        // if (this.timer) {
-        //   clearInterval(this.timer);
-        // }
+      setInterval(() => {
+        // NOTE: vue 实例似乎会同时创建多个, widget 外面不要使用 list filter
         if (this.dragging) {
           return;
         }

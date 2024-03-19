@@ -37,7 +37,6 @@ class ExampleWidget extends Widget {
     const TODOPlugin = require('./plugins/TODOPlugin');
 
     const ContextMenu = require('vue-context-menu.min.js').default;
-    console.log('tiddlywiki render function', new Date());
 
     try {
       const app = createApp(component());
