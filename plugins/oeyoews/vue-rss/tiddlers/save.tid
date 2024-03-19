@@ -1,0 +1,20 @@
+title: $:/plugins/oeyoews/vue-rss/save
+
+<div class="flex justify-between">
+<$let tiddler="$:/temp/oeyoews/rss/content" >
+<$view tiddler=<<tiddler>> field="caption" />
+<$button class="bg-transparent">
+  <span class="hover:bg-gray-200 dark:hover:bg-gray-700 transition-all rounded px-2 py-1 text-xs">Save article</span>
+<$action-setfield
+	$tiddler={{{ [<tiddler>get[caption]] }}}
+	text={{{ [<tiddler>get[text]] }}}
+	link={{{ [<tiddler>get[link]] }}}
+	tags="rss" />
+</$button>
+</$let>
+
+<$button class="bg-transparent">
+  <span class="hover:bg-gray-200 dark:hover:bg-gray-700 transition-all rounded px-2 py-1 text-xs">Esc</span>
+<$action-sendmessage $message="tm-close-tiddler" $param=<<currentTiddler>>/>
+</$button>
+</div>

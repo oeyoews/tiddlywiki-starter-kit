@@ -1,7 +1,6 @@
 title: $:/plugins/oeyoews/vue-rss/modal
 class: o-tm
 mask-closable: yes
-caption: {{$:/temp/oeyoews/rss/content!!caption}}
-subtitle: {{||$:/esc}}
+subtitle: {{$:/plugins/oeyoews/vue-rss/save}}
 
 {{$:/temp/oeyoews/rss/content}}

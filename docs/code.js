@@ -184,3 +184,13 @@ exports.sayHi = () => {
 };
 
 $tw.wiki.getModificationFields();
+
+```html
+// ## 区分环境(sidebar or storylist)
+We are
+<$list
+filter="[<transclusion>prefix[{|$:/core/ui/PageTemplate/sidebar|||}]]"
+emptyMessage="in the story river.">
+in the sidebar.
+</$list>
+```;
