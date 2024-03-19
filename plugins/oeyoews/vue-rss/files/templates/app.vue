@@ -17,8 +17,8 @@
 
       <!-- info -->
       <div class="flex items-center gap-2 text-sm text-gray-400 mb-2">
-        <img :src="item.src" alt="" class="size-8 object-cover rounded-full">
-        <a :href="item.link" target="_blank">
+        <img crossorigin="anonymous" :src="item.src" alt="" class="size-8 object-cover rounded-full">
+        <a :href="item.link" target="_blank" rel="noreferer noopener">
           Link
         </a>
         <div v-if="item.update">{{item.update}}</div>
