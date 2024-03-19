@@ -8,25 +8,32 @@
     <div :class="card" v-if="error.length === 0">
       <Header :channel="channel" />
     </div>
+
     <!-- list -->
-    <div>
-      <article v-for="(item, index) in paginatedItems" :key="item" :class="card">
-        <h2 class="mb-2 text-base"> {{ order + index }}. {{item.title}}</h2>
-        <div v-html="item.img"></div>
-        <div class="flex items-center gap-2 text-sm text-gray-400 mb-2">
-          <img :src="item.src" alt="" class="size-8 object-cover rounded-full">
-          <a :href="item.link" target="_blank">
-            Link
-          </a>
-          <div v-if="item.update">{{item.update}}</div>
-        </div>
-        <details>
-          <summary class="rounded p-1 cursor-pointer bg-gray-100 dark:bg-gray-700/80 text-sm mb-2">More</summary>
-          <p v-html="item.summary" :class="card" />
-        </details>
-      </article>
-      <!-- 分页器 -->
-      <Paginator :currentPage="currentPage" :pages="pages" @next="changePage" />
+    <div v-for="(item, index) in paginatedItems" :key="item" :class="card">
+
+      <!-- title -->
+      <h2 class="mb-2 text-base"> {{ order + index }}. {{item.title}}</h2>
+
+      <!-- info -->
+      <div class="flex items-center gap-2 text-sm text-gray-400 mb-2">
+        <img :src="item.src" alt="" class="size-8 object-cover rounded-full">
+        <a :href="item.link" target="_blank">
+          Link
+        </a>
+        <div v-if="item.update">{{item.update}}</div>
+        <button @click="open(item.title)">More</button>
+      </div>
+
+      <!-- content -->
+      <div v-show="isReading === item.title ? true : false">
+        <hr>
+        <article :class="card">
+          <p v-html="item.summary" />
+        </article>
+      </div>
+    </div>
+
+    <Paginator :currentPage="currentPage" :pages="pages" @next="changePage" />
   </template>
-  </div>
 </template>
