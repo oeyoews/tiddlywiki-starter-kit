@@ -9,7 +9,7 @@ title: $:/plugins/oeyoews/vue-rss/save
 	$tiddler={{{ [<tiddler>get[caption]] }}}
 	text={{{ [<tiddler>get[text]] }}}
 	link={{{ [<tiddler>get[link]] }}}
-	tags="rss" />
+	tags="RssArticle" />
 </$button>
 </$let>
 
