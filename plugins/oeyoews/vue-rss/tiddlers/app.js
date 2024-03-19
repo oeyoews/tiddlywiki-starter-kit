@@ -175,10 +175,19 @@ const app = (
           for (var i = 0; i < items.length; i++) {
             const item = items[i];
             const title = getContent(item, 'title');
-            const summary = getContent(item, 'description');
+            let summary = getContent(item, 'description');
             const update = getContent(item, 'pubDate');
             const link = getContent(item, 'link');
             const src = this.getImg(item);
+            let content = getContent(item, 'content');
+
+            if (!content) {
+              content = getContent(item, 'content:encoded');
+            }
+
+            if (content) {
+              summary += content;
+            }
 
             this.rssItems.push({
               title,
