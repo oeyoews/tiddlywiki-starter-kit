@@ -22,6 +22,7 @@ const Icon = require('./components/Icon');
 const app = () => {
   const component = {
     setup() {
+      const timer = ref();
       const { t } = VueI18n.useI18n();
       const data = ref($tw.wiki.getTiddlerList(DEFAULT_STORY_TITLE));
       const activeTiddler = ref('');
@@ -34,11 +35,8 @@ const app = () => {
 
       const isDrag = computed(() => draggable.value === 'yes');
 
-      // const filterData = computed(() => {
-      //   return data.value.filter((item) => !item.startsWith('Draft of'));
-      // });
-
       return {
+        timer,
         isDrag,
         draggable,
         pined,
@@ -47,7 +45,6 @@ const app = () => {
         icons,
         btn,
         position,
-        // filterData,
         dragging,
         activeTiddler,
         data
@@ -58,23 +55,17 @@ const app = () => {
       data: {
         handler: function (newValue, oldValue) {
           this.setList();
-
-          /** autofocus */
-          //   const scroll = this.$refs.scroll?.[0];
-          //   if (!this.isInViewport(scroll) && scroll) {
-          //     scroll.scrollIntoView({
-          //       behavior: 'smooth',
-          //       block: 'center'
-          //     });
-          //   }
         },
         deep: true
       }
     },
 
     mounted() {
-      // update ui list
-      setInterval(() => {
+      this.timer = setInterval(() => {
+        // HACK: vue 实例似乎会同时创建多个
+        if (this.timer) {
+          clearInterval(this.timer);
+        }
         if (this.dragging) {
           return;
         }

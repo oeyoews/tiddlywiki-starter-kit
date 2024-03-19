@@ -1,6 +1,5 @@
 <template>
   <div class="fixed inset-x-0 z-[1] backdrop-blur-md w-full hidden md:block" :class="position">
-
     <div class="flex item-center" @contextmenu="onContextMenu($event)">
       <VueDraggable v-model="data" @start="onStart" @end="onUpdate" target=".vue-tabs" :scroll="true"
         :disabled="!isDrag">
