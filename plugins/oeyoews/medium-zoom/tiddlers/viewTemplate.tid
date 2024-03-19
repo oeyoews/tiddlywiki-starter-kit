@@ -1,6 +1,4 @@
 title: $:/plugins/oeyoews/medium-zoom/viewTemplate
 tags: $:/tags/ViewTemplate
 
-<$list filter="[all[current]!is[system]!prefix[$:/]]">
-	<$medium-zoom />
-</$list>
+<$medium-zoom />
