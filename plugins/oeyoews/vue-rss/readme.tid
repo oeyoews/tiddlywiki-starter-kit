@@ -9,6 +9,8 @@ description: vue-rss
 
 !! Example
 
+<$vue-rss rss="https://www.ajplus.net/stories?format=rss" />
+
 <$vue-rss />
 
 <$vue-rss rss="https://tiddlywiki.substack.com/feed"/>
