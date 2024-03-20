@@ -87,7 +87,7 @@ const app = (target, title, self) => {
             onClick: () => o('tm-delete-tiddler', title)
           },
           {
-            label: 'PermaLink Tiddler',
+            label: 'PermaLink',
             icon: h(Icon, { icon: icons.link }),
             onClick: () => o('tm-permalink', title)
           }
