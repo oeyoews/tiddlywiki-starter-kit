@@ -74,7 +74,7 @@ const app = (target, title, self) => {
             divided: true
           },
           {
-            label: 'fold Tiddler',
+            label: 'Fold Tiddler',
             icon: h(Icon, { icon: icons.fold }),
             onClick: () => {
               const foldPrefix = '$:/state/folded/';
