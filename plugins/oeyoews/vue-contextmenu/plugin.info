@@ -1,6 +1,6 @@
 {
   "title": "$:/plugins/oeyoews/vue-contextmenu",
-  "description": "vue-contextmenu",
+  "description": "TiddlyWiki contextmenu plugin by Vue3",
   "author": "oeyoews",
   "version": "0.0.1",
   "core-version": ">=5.3.0",
@@ -12,6 +12,7 @@
   "created": "2024-03-19",
   "dependents": [
     "$:/plugins/oeyoews/neotw-vue3",
+    "$:/plugins/oeyoews/vue-context-menu",
     "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
   ],
   "list": "readme"
