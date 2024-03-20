@@ -12,8 +12,9 @@
   "created": "2024-03-19",
   "dependents": [
     "$:/plugins/oeyoews/neotw-vue3",
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
     "$:/plugins/oeyoews/vue-context-menu",
-    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
+    "$:/plugins/oeyoews/vue-i18n"
   ],
   "list": "readme"
 }

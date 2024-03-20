@@ -12,10 +12,14 @@ const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 const Icon = require('./components/Icon');
 const icons = require('./icons');
 
+const { useI18n } = require('vue-i18n.global.prod.js');
+
+/** vue app */
 const app = (target, title, self) => {
   const component = {
     setup() {
-      return {};
+      const { t } = useI18n();
+      return { t };
     },
 
     mounted() {
@@ -35,38 +39,38 @@ const app = (target, title, self) => {
       },
 
       onContextMenu(e) {
+        const t = this.t;
         e.preventDefault(); //prevent the browser's default menu
         const o = this.operation;
 
         // TODO: support i18n
         const items = [
           {
-            label: 'Close Tiddler',
+            label: t('menu.close'),
             icon: h(Icon, { icon: icons.close }),
             onClick: () => o('tm-close-tiddler', title)
           },
           {
-            label: 'Edit Tiddler',
+            label: t('menu.edit'),
             icon: h(Icon, { icon: icons.edit }),
             onClick: () => o('tm-edit-tiddler', title)
           },
           {
-            label: 'Close Others',
+            label: t('menu.close2'),
             icon: h(Icon, { icon: icons.close2 }),
             onClick: () => o('tm-close-other-tiddlers', title),
             divided: true
           },
           {
-            label: 'Copy Title',
+            label: t('menu.copy'),
             icon: h(Icon, { icon: icons.copy }),
             onClick: () => {
               $tw.utils.copyToClipboard(title);
             }
           },
           {
-            label: 'Copy Tiddler',
+            label: t('menu.copy2'),
             icon: h(Icon, { icon: icons.copy2 }),
-            disabled: this.getStoryList().length === 1 ? true : false,
             onClick: () => {
               const text = $tw.wiki.getTiddlerText(title);
               $tw.utils.copyToClipboard(text);
@@ -74,20 +78,21 @@ const app = (target, title, self) => {
             divided: true
           },
           {
-            label: 'Fold Tiddler',
+            label: t('menu.fold'),
             icon: h(Icon, { icon: icons.fold }),
+            disabled: this.getStoryList().length === 1 ? true : false,
             onClick: () => {
               const foldPrefix = '$:/state/folded/';
               $tw.wiki.setText(foldPrefix + title, 'text', null, 'hide');
             }
           },
           {
-            label: 'Delete Tiddler',
+            label: t('menu.delete'),
             icon: h(Icon, { icon: icons.delete }),
             onClick: () => o('tm-delete-tiddler', title)
           },
           {
-            label: 'PermaLink',
+            label: t('menu.permalink'),
             icon: h(Icon, { icon: icons.link }),
             onClick: () => o('tm-permalink', title)
           }

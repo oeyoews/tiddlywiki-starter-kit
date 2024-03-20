@@ -35,11 +35,35 @@ class ExampleWidget extends Widget {
     const ContextMenu = require('vue-context-menu.min.js').default;
     const title = this.getVariable('currentTiddler');
 
+    /** i18n */
+    const { createI18n } = require('vue-i18n.global.prod.js');
+    const en = require('./i18n/en.js');
+    const cn = require('./i18n/zh.js');
+    const messages = {
+      English: en,
+      中文: cn
+    };
+
+    const defaultLang = 'English';
+    let locale = localStorage.getItem('lang');
+    if (!locale) {
+      locale = defaultLang;
+      localStorage.setItem('lang', locale);
+    }
+
+    const i18n = createI18n({
+      legacy: false,
+      locale,
+      fallbackLocale: defaultLang,
+      messages
+    });
+
     try {
       const app = createApp(component(parent, title, this));
 
       app.use(TiddlyWikiVue);
       app.use(ContextMenu);
+      app.use(i18n);
 
       app.config.errorHandler = (err) => {
         const text = `[Vue3](${app.version}): ` + err;
