@@ -58,6 +58,7 @@ const app = (target, title, self) => {
           {
             label: t('menu.close2'),
             icon: h(Icon, { icon: icons.close2 }),
+            disabled: this.getStoryList().length === 1 ? true : false,
             onClick: () => o('tm-close-other-tiddlers', title),
             divided: true
           },
@@ -80,7 +81,6 @@ const app = (target, title, self) => {
           {
             label: t('menu.fold'),
             icon: h(Icon, { icon: icons.fold }),
-            disabled: this.getStoryList().length === 1 ? true : false,
             onClick: () => {
               const foldPrefix = '$:/state/folded/';
               $tw.wiki.setText(foldPrefix + title, 'text', null, 'hide');
