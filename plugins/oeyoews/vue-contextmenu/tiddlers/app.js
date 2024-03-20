@@ -46,6 +46,17 @@ const app = (target, title, self) => {
         // TODO: support i18n
         const items = [
           {
+            label: t('menu.rename'),
+            icon: h(Icon, { icon: icons.rename }),
+            onClick: () => {
+              const to = window.prompt('Rename to:', title);
+              if (to) {
+                // o('tm-rename-tiddler', title, '99');
+                $tw.wiki.renameTiddler(title, to);
+              }
+            }
+          },
+          {
             label: t('menu.close'),
             icon: h(Icon, { icon: icons.close }),
             onClick: () => o('tm-close-tiddler', title)

@@ -1,5 +1,6 @@
 module.exports = {
   menu: {
+    rename: 'Rename Tiddler',
     close: 'Close Tiddler',
     edit: 'Edit Tiddler',
     delete: 'Delete Tiddler',

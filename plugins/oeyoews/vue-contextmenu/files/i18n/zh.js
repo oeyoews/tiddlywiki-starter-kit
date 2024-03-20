@@ -1,5 +1,6 @@
 module.exports = {
   menu: {
+    rename: '重命名',
     close: '关闭',
     edit: '编辑',
     delete: '删除',
