@@ -64,7 +64,6 @@ const app = () => {
         if (this.dragging) {
           return;
         }
-        console.log('update');
 
         this.activeTiddler = this.getCurrentTiddler();
 
@@ -206,7 +205,7 @@ const app = () => {
         this.$contextmenu({
           items,
           // iconFontClass: 'iconfont',
-          // customClass: 'class-a',
+          customClass: 'rounded-md',
           zIndex: 3,
           minWidth: 230,
           x: e.x,

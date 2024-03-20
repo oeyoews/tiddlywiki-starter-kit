@@ -33,9 +33,10 @@ class ExampleWidget extends Widget {
     const domNode = this.document.createElement('div');
     const TiddlyWikiVue = require('./plugins/TiddlyWikiVue');
     const ContextMenu = require('vue-context-menu.min.js').default;
+    const title = this.getVariable('currentTiddler');
 
     try {
-      const app = createApp(component(parent));
+      const app = createApp(component(parent, title, this));
 
       app.use(TiddlyWikiVue);
       app.use(ContextMenu);
@@ -64,4 +65,4 @@ class ExampleWidget extends Widget {
 }
 
 /** @description vue-contextmenu widget */
-exports['widget-Klh7izdkPA'] = ExampleWidget;
+exports['vue-contextmenu'] = ExampleWidget;
