@@ -43,7 +43,6 @@ const app = (target, title, self) => {
         e.preventDefault(); //prevent the browser's default menu
         const o = this.operation;
 
-        // TODO: support i18n
         const items = [
           {
             label: t('menu.close'),

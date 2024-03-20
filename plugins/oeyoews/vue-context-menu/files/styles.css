@@ -101,6 +101,7 @@
   padding: 0;
 }
 .mx-context-menu-item {
+  cursor: pointer; /* patch */
   display: flex;
   flex-direction: row;
   justify-content: space-between;

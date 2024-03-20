@@ -11,5 +11,8 @@ module.exports = {
     copy2: '复制内容',
     fold: '折叠',
     permalink: '复制链接'
+  },
+  ball: {
+    setting: '设置'
   }
 };

@@ -6,6 +6,7 @@ description: vue-context-menu
 
 ```js
 // widget.js
+// https://imengyu.top/pages/vue3-context-menu-docs/guide/useage.html
 const ContextMenu = require('vue-context-menu.min.js').default;
 
 app.use(ContextMenu)

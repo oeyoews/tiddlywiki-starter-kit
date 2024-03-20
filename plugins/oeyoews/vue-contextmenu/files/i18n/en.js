@@ -11,5 +11,8 @@ module.exports = {
     copy2: 'Copy Tiddler',
     fold: 'Fold Tiddler',
     permalink: 'Copy Link'
+  },
+  ball: {
+    setting: 'Setting'
   }
 };
