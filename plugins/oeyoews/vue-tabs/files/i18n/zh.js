@@ -10,6 +10,7 @@ module.exports = {
     showLang: '设置',
     setting: '设置',
     pin: '固定',
+    help: '帮助',
     more: '更多'
   },
   status: {

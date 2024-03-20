@@ -9,6 +9,7 @@ module.exports = {
     togglePosition: 'Toggle Position',
     showLang: 'Setup',
     more: 'More',
+    help: 'Help',
     pin: 'Pin Tiddler'
   },
   status: {

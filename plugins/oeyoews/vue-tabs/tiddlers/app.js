@@ -176,7 +176,7 @@ const app = () => {
             children
           },
           {
-            label: 'Help',
+            label: this.t('tabs.help'),
             icon: h(Icon, { icon: icons.help }),
             children: [
               {
