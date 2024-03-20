@@ -64,6 +64,7 @@ const app = () => {
         if (this.dragging) {
           return;
         }
+        console.log('update');
 
         this.activeTiddler = this.getCurrentTiddler();
 
