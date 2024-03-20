@@ -20,6 +20,12 @@ title: $:/plugins/oeyoews/neotw-vue3/readme
 
 * More Vue Usage [Vue Doc](https://cn.vuejs.org/guide/essentials/application.html)
 
+!! Usage
+
+```js
+window.Vue = require('$:/plugins/oeyoews/neotw-vue3/vue.global.prod.js')
+```
+
 !! Devtools
 
 ```js

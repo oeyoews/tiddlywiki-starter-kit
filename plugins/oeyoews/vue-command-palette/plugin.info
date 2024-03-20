@@ -1,0 +1,18 @@
+{
+  "title": "$:/plugins/oeyoews/vue-command-palette",
+  "description": "vue-command-palette",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.3.0",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "vue-command-palette",
+  "meat#disabled": "yes",
+  "qrcode": "yes",
+  "created": "2024-03-20",
+  "dependents": [
+    "$:/plugins/oeyoews/neotw-vue3",
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
+  ],
+  "list": "readme"
+}
