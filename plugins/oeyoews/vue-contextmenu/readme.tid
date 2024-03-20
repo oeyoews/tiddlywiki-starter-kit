@@ -3,6 +3,10 @@ description: vue-contextmenu
 
 <!-- plugin template readme -->
 
+!! TODO
+
+* i18n
+
 <!-- !! Motivation -->
 
 <!-- your plugin motivation, or why you write this plugin -->
