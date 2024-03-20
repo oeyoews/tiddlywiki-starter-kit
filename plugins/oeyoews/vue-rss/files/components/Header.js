@@ -17,7 +17,7 @@ module.exports = {
             {{ channel.update }}
           </td>
         </tr>
-        <tr>
+        <tr v-show="channel.link">
           <td>
             Link
           </td>
@@ -27,7 +27,7 @@ module.exports = {
             </a>
           </td>
         </tr>
-        <tr>
+        <tr v-show="channel.description">
           <td>
             Description
           </td>

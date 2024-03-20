@@ -159,9 +159,12 @@ const app = (
 
       getImg(item) {
         try {
-          const des = this.getContent(item, 'description');
+          let content = this.getContent(item, 'content');
+          if (!content) {
+            content = this.getContent(item, 'description');
+          }
           const parser = new DOMParser();
-          const doc = parser.parseFromString(des, 'text/html');
+          const doc = parser.parseFromString(content, 'text/html');
           let src = doc.getElementsByTagName('img')[0]?.src;
           if (!src) {
             src = this.icon;
@@ -180,6 +183,7 @@ const app = (
         }
 
         try {
+          const getContent = this.getContent;
           const parser = new DOMParser();
 
           const response = await fetch(RSS_URL);
@@ -200,15 +204,21 @@ const app = (
             items = xmlDoc.getElementsByTagName('entry');
           }
 
-          const channel = xmlDoc.getElementsByTagName('channel')[0];
+          let channel = xmlDoc.getElementsByTagName('channel')[0];
+          if (!channel) {
+            channel = xmlDoc;
+          }
 
-          const getContent = this.getContent;
           this.channel.title = getContent(channel, 'title');
           this.channel.link = getContent(channel, 'link');
           this.channel.description = getContent(channel, 'description');
+
           let pubDate = getContent(channel, 'lastBuildDate');
-          if (!this.channel.update) {
+          if (!pubDate) {
             pubDate = getContent(channel, 'pubDate');
+          }
+          if (!pubDate) {
+            pubDate = getContent(channel, 'updated');
           }
           pubDate && (this.channel.update = relativeTime(pubDate));
 
