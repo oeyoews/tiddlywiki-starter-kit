@@ -3,7 +3,7 @@ import config from './index.js';
 
 // TODO: support remove plugins from here
 // TODO: 去重
-export const devPlugins = ['vue-contextmenu', 'vue-context-menu', 'vue-kanban', 'vue-tabs', 'neotw-sitemap', 'vue-plum', 'vue-pomodoro', 'vue-rss', 'neotw-vue-codeblock', 'notivue'];
+export const devPlugins = [];
 
 // NOTE: vercel not support use { isCi } ???
 const enableMarkdown = config.markdown;
@@ -43,6 +43,16 @@ const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
 // oeyoews plugins
 const oeyoewsPlugins = [
   ...devPlugins,
+  'vue-contextmenu',
+  'vue-context-menu',
+  'vue-kanban',
+  'vue-tabs',
+  'neotw-sitemap',
+  'vue-plum',
+  'vue-pomodoro',
+  'vue-rss',
+  'neotw-vue-codeblock',
+  'notivue',
   'neotw-vue-netease-banner',
   'neotw-vue-journal',
   'neotw-vue-plugins',
