@@ -66,6 +66,7 @@ const app = (target, title, self) => {
             icon: h(Icon, { icon: icons.edit }),
             onClick: () => o('tm-edit-tiddler', title)
           },
+          // TODO: 动态插入, 要保证顺序
           {
             label: t('menu.close2'),
             icon: h(Icon, { icon: icons.close2 }),
@@ -103,11 +104,22 @@ const app = (target, title, self) => {
             onClick: () => o('tm-delete-tiddler', title)
           },
           {
+            label: t('menu.newWindow'),
+            icon: h(Icon, { icon: icons.newWindow }),
+            onClick: () => o('tm-open-window', title)
+          },
+          {
+            label: t('menu.clone'),
+            icon: h(Icon, { icon: icons.clone }),
+            onClick: () => o('tm-new-tiddler', title)
+          },
+          {
             label: t('menu.permalink'),
             icon: h(Icon, { icon: icons.link }),
             onClick: () => o('tm-permalink', title)
           }
         ];
+
         //show menu
         this.$contextmenu({
           items,

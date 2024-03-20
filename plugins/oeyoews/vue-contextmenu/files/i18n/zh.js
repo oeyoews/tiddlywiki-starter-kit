@@ -1,5 +1,7 @@
 module.exports = {
   menu: {
+    newWindow: '新窗口',
+    clone: '克隆',
     rename: '重命名',
     close: '关闭',
     edit: '编辑',
