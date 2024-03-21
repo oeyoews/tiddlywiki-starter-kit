@@ -1,6 +1,6 @@
 title: $:/core/ui/ViewTemplate/title
 tags: $:/tags/ViewTemplate
-description: 线上仅仅展示部分按钮
+description: 线上仅仅展示部分按钮(~~并且标题居中~~)
 
 \whitespace trim
 \define title-styles()
@@ -12,7 +12,7 @@ fill:$(foregroundColor)$;
 fill:$(foregroundColor)$;
 \end
 
-<div class="tc-tiddler-title text-center mb-4">
+<div class="tc-tiddler-title mb-4">
 <div class="tc-titlebar">
 <span class="tc-tiddler-controls !float-none flex justify-end text-lg mb-4">
 <$let env={{{ [[$:/info/url/protocol]get[text]] }}}>
