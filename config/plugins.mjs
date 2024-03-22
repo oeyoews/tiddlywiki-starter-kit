@@ -74,7 +74,6 @@ const oeyoewsPlugins = [
   'blockquote',
   // 'editor-preview-resizer',
   'neotw-draft-better',
-  'table-style-fix',
   // 'confetti-background',
   // 'confetti',
   'image-observer',
