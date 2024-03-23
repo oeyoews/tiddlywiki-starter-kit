@@ -1,4 +1,5 @@
 <template>
+
   <div class="bg-rose-500" v-if="isSafari">Rss plugin not supported your browser.</div>
 
   <div class="bg-rose-600" v-if="!loading && error.length > 0">[{{ rss }}]: {{error}}</div>

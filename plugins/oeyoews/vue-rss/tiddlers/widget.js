@@ -23,6 +23,7 @@ class ExampleWidget extends Widget {
     if (ssr) return;
 
     const vuelib = '$:/plugins/oeyoews/neotw-vue3/vue.global.prod.js';
+    // const ElementPlus = require('element-plus.min.js');
 
     if (!window.Vue) {
       window.Vue = require(vuelib);
@@ -42,6 +43,7 @@ class ExampleWidget extends Widget {
         domNode.textContent = text;
         domNode.style.color = 'red';
       };
+      // app.use(ElementPlus);
 
       // 挂载
       app.mount(domNode);
