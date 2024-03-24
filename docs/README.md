@@ -97,6 +97,7 @@ on tw: [[docs/code.js]]
 
 ## 资源
 
+- usewiki: 类似于 usememo 的扩展插件，但是同时也支持剪切网页，markdown 支持友好
 - moderndev: https://github.com/tiddly-gittly/Modern.TiddlyDev
 - tiddlywiki: https://tiddlywiki.com and https://github.com/Jermolene/TiddlyWiki5
 - tiddlywiki talk: https://talk.tiddlywiki.org and ~~https://talk.tidgi.fun/ (偶尔无法访问)~~
@@ -104,4 +105,3 @@ on tw: [[docs/code.js]]
 - prelease: https://tiddlywiki.com/prerelease
 - full editions: https://tiddlywiki.com/editions/full
 - tiddlywiki host: https://tiddlyhost.com/
-- usewiki: 类似于 usememo 的扩展插件，但是同时也支持剪切网页，markdown 支持友好
