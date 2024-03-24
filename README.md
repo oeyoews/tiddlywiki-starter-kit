@@ -51,6 +51,4 @@ npm create neotw-app@latest
 
 ## Documentaion
 
-Working through the night...
-
 [Documentation](https://github.com/oeyoews/tiddlywiki-starter-kit/tree/main/docs#%E5%AE%89%E8%A3%85%E6%96%B9%E5%BC%8F)
