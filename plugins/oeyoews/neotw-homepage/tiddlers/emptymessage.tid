@@ -11,6 +11,9 @@ title: $:/config/EmptyStoryMessage
         <a target="_blank" href="https://vuejs.org">
           <$iconify icon="devicon:vuejs" class="text-black dark:text-white" />
         </a>
+        <a target="_blank" href="https://element-plus.org/">
+          <$iconify icon="logos:element" class="text-black dark:text-white" />
+        </a>
         <a target="_blank" href="https://github.com/markdown-it/markdown-it">
           <$iconify icon="material-symbols:markdown-sharp
 " class="text-black dark:text-white" />
