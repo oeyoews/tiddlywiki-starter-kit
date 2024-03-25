@@ -15,7 +15,6 @@ tiddlywiki starter kit 目前是极其高度自定义化的，从安装，启动
 * 本地优先 (Local First), 数据自由且安全
 * Everything is Possible.
 
-
 ## 使用场景
 
 - 日记
@@ -79,7 +78,7 @@ pnpm start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm
 
 TiddlyWiki5 会一直读取这个文件的内容，无论修改成什么值，可以看作值 public folder, 但是注意，如果在改成了别的之后，如果修改了 tiddlers 文件夹的内容，对应的文件会转移到新的文件。https://github.com/oeyoews/tiddlywiki-starter-kit/issues/117
 
-## 为什么我疯狂的写 TiddlyWiki 插件
+## 为什么写这么多 TiddlyWiki 插件
 
 * 前后大概写了 200 款插件，但是现在主要维护的只有 90 多个，其实我写插件的目的主要有两个，一个是练习代码，熟悉一些技术栈，所以每天都会逛论坛找一些写插件的点子, 其次就是，tiddlywiki 很符合我对笔记软件的幻想，虽然有一些不完美，但是刚好可以通过我的第一个目的来弥补这个不完美. 现在这两个目的几乎全部达到了
 
