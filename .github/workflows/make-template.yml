@@ -5,9 +5,9 @@ on:
     branches:
       - main
 
-# concurrency:
-#   group: make-template
-#   cancel-in-progress: true
+concurrency:
+  group: make-template
+  cancel-in-progress: true
 
 jobs:
   deploy:

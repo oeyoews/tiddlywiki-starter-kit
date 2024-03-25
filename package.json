@@ -10,7 +10,7 @@
   "packageManager": "pnpm@8.8.0",
   "scripts": {
     "new": "node lib/newplugin.mjs",
-    "build": "node lib/build.mjs",
+    "build": "pnpm run docs:build && node lib/build.mjs",
     "update:tw": "pnpm install github:Jermolene/TiddlyWiki5",
     "update:web": "git commit --allow-empty  && git push",
     "build-with-bun": "bun run ./lib/build.ts",
@@ -22,7 +22,7 @@
     "start:pm2": "node ./lib/pm2-control.js",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs --port 8081"
   },
   "dependencies": {
     "address": "^1.2.2",
