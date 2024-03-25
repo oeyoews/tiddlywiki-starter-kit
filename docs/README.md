@@ -1,6 +1,6 @@
 # Tiddlywiki Starter Kit?
 
-## 为什么写 Tiddlywiki Starter Kit？
+> 你的下一个笔记软件又何必不是 TiddlyWiki5 ?
 
 * 其实在写这个之前，我还写了 [tw5](https://github.com/oeyoews/tw5) 算是前身. Nodejs TiddlyWiki 启动 tw 也就是一条命令行的事，很简单，但是为了满足自己的各种需求，比如启动部署，更多的功能，tiddlywiki starter kit 就经过多个版本的迭代诞生了。
 
@@ -13,6 +13,8 @@ tiddlywiki starter kit 目前是极其高度自定义化的，从安装，启动
 - 使用：基于 tiddlywiki starter kit 的插件的各种使用场景
 
 * 本地优先 (Local First), 数据自由且安全
+* Everything is Possible.
+
 
 ## 使用场景
 
@@ -28,9 +30,6 @@ tiddlywiki starter kit 目前是极其高度自定义化的，从安装，启动
 - 电视，电影，动漫纪律
 - 书籍整理
 - ...
-
-* Everything is Possible.
-* 你的下一个笔记软件又何必不是 TiddlyWiki5 ?
 
 ## 安装
 
@@ -60,7 +59,7 @@ pnpm start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm
 
 ```
 
-## 如何运行 ?
+## 运行
 
 - 事实上 tiddlywiki starter kit 由三部分组成
 
