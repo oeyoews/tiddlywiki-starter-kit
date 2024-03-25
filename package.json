@@ -19,7 +19,10 @@
     "build:docker": "docker-compose build",
     "docker:push": "docker-compose push",
     "dev": "node ./lib/startup.mjs",
-    "start:pm2": "node ./lib/pm2-control.js"
+    "start:pm2": "node ./lib/pm2-control.js",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
     "address": "^1.2.2",
@@ -36,7 +39,8 @@
     "qrcode": "^1.5.3",
     "randomstring-plus": "workspace:^",
     "tiddlywiki": "5.3.3",
-    "tiged": "^2.12.7"
+    "tiged": "^2.12.7",
+    "vitepress": "^1.0.1"
   },
   "prettier": "@oeyoews/prettier-config",
   "devDependencies": {
