@@ -1,7 +1,8 @@
 import { defineConfig } from 'vitepress';
-import nav from './scripts/nav.mjs';
-import sidebar from './scripts/sidebar.mts';
-import cn from './scripts/cn.mts';
+import nav from './scripts/nav.js';
+import sidebar from './scripts/sidebar.js';
+import cn from './scripts/cn';
+import head from './scripts/head';
 
 export default defineConfig({
   title: 'TiddlyWiki Starter Kit',
@@ -11,6 +12,7 @@ export default defineConfig({
   cleanUrls: true,
   // metaChunks: true,
   appearance: 'dark',
+  head,
   themeConfig: {
     logo: '/tiddlywiki.png',
     editLink: {
