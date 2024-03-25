@@ -13,6 +13,8 @@
 
 [stackblitz online demo](https://stackblitz.com/~/github.com/oeyoews/tiddlywiki-starter-kit)
 
+[Documentation](https://tiddlywiki-starter-kit.vercel.app/docs/)
+
 ## Features
 
 - 📦 Out of the box: TiddlyWiki Starter Kit comes with most configurations pre-packaged, reducing the need for tedious setup.
@@ -48,7 +50,3 @@ npm create neotw-app@latest
 [Fork](https://github.com/oeyoews/tiddlywiki-starter-kit/fork) this project, Go to vercel to deploy it manually
 
 > I recommend shallow cloning this project and deploying it manually on Vercel
-
-## Documentaion
-
-[Documentation](https://github.com/oeyoews/tiddlywiki-starter-kit/tree/main/docs#%E5%AE%89%E8%A3%85%E6%96%B9%E5%BC%8F)
