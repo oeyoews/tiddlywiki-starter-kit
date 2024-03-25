@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "TiddlyWiki Starter Kit Documentation"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "TiddlyWiki Starter Kit"
+  text: ''
+  tagline: TiddlyWiki Starter Kit 文档
   actions:
     - theme: brand
       text: 介绍
@@ -15,11 +15,11 @@ hero:
       link: /code.js
 
 features:
-  - title: Feature A
+  - title: 开箱即用
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
+  - title: 一键部署
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
+  - title: 插件丰富
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
