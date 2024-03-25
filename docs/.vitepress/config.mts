@@ -8,7 +8,7 @@ const online = [
 export default defineConfig({
   title: 'TiddlyWiki Starter Kit',
   description: '📦 使用 TiddlyWiki5 搭建的本地优先笔记软件',
-  // base: '/docs/',
+  base: '/docs/',
   lastUpdated: true,
   cleanUrls: true,
   // metaChunks: true,
