@@ -10,6 +10,7 @@ export default defineConfig({
   description: 'A VitePress Site',
   base: '/docs/',
   lastUpdated: true,
+  cleanUrls: true,
   // metaChunks: true,
   appearance: 'dark',
   themeConfig: {
@@ -33,6 +34,7 @@ export default defineConfig({
         text: 'TiddlyWiki',
         items: [
           { text: '介绍', link: '/README' },
+          { text: '插件生态', link: '/plugins/index' },
           { text: '插件开发', link: '/plugin' }
         ]
       }
