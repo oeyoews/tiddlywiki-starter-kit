@@ -1,14 +1,13 @@
-/*\
-title: docs/code.js
-type: application/javascript
-description: tw-typed is a tw api declaration for typescript, it also works for javascript;下面是插件开发中经常使用到的一些方法
-\*/
+# TiddlyWiki API
 
-// TODO: add tw5-plugin-tutorial plugin
-// wiki api
-// 主要介绍了一些常用的 tiddlywiki api(JavaScript), 搭配 tw5-typed 效果更好, 代码可在使用tiddlywiki网页的控制台进行测试
 
-// 首先这是 99% 你写插件会用到的 api. 大部分常用的方法都在 wiki 里面了
+> [!TIP]
+> 主要介绍了一些常用的 tiddlywiki api(JavaScript), 搭配 tw5-typed 效果更好, 代码可在使用 tiddlywiki 网页的控制台进行测试
+
+> 首先这是 99% 你写插件会用到的 api. 大部分常用的方法都在 wiki 里面了
+
+
+```js
 const wiki = $tw.wiki;
 const title = 'tiddlywiki-api-tiddler-title';
 
@@ -21,31 +20,31 @@ const dataTiddler = {
 // 获取到某个 tiddler 的所有信息字段
 wiki.getTiddler(title).fields;
 
-// 加载某个 json 类型的tiddler, 作为对象
+// 加载某个 json 类型的 tiddler, 作为对象
 wiki.getTiddlerData(dataTiddler);
 
-// 获取到某个tiddler 的正文, 其实就是tiddler 的text 字段
+// 获取到某个 tiddler 的正文, 其实就是 tiddler 的 text 字段
 wiki.getTiddlerText();
 // 等价于这种写法
 wiki.getTiddler(title).fields.text;
 
-// 编程式写法: 新增加一个tiddler
+// 编程式写法: 新增加一个 tiddler
 wiki.addTiddler({
   title: 'new tiddler',
   text: 'random text'
 });
-// 删除某个tiddler
+// 删除某个 tiddler
 wiki.deleteTiddler(title);
 
-// 更新某个tiddler 的text
+// 更新某个 tiddler 的 text
 wiki.setText(title, 'text', null, 'random text', {
-  suppressTimestamp: true // 不更新时间戳, 默认为false更新时间戳
+  suppressTimestamp: true // 不更新时间戳, 默认为 false 更新时间戳
 });
 
 // 根据 tiddlywiki 的筛选器, 批量获取 tiddler
 wiki.filterTiddlers('[!is[system]]');
 
-// 直接按照 tiddler 的 tag 过滤tiddler
+// 直接按照 tiddler 的 tag 过滤 tiddler
 wiki.getTiddlersWithTag('游戏');
 
 // wip
@@ -152,7 +151,7 @@ nprogress module
 
 //# sourceURL=nprogress/startup.js
 
-// 渲染 tiddler, 支持wikitext
+// 渲染 tiddler, 支持 wikitext
 const icon = $tw.wiki.renderText(
   'text/html',
   'text/vnd.tiddlywiki',
@@ -162,7 +161,7 @@ const icon = $tw.wiki.renderText(
   }
 );
 
-// 赋值方法, 其实也可以直接 使用navigator.clipboard(), 不过 tiddlywiki 主要考虑使用es5为了兼容性更高, 所以建议直接使用内置的复制api
+// 赋值方法, 其实也可以直接 使用 navigator.clipboard(), 不过 tiddlywiki 主要考虑使用 es5 为了兼容性更高, 所以建议直接使用内置的复制 api
 $tw.utils.copyToClipboard();
 
 // ???
@@ -194,3 +193,4 @@ emptyMessage="in the story river.">
 in the sidebar.
 </$list>
 ```;
+```

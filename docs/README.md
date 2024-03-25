@@ -2,7 +2,7 @@
 
 > 你的下一个笔记软件又何必不是 TiddlyWiki5 ?
 
-* 其实在写这个之前，我还写了 [tw5](https://github.com/oeyoews/tw5) 算是前身. Nodejs TiddlyWiki 启动 tw 也就是一条命令行的事，很简单，但是为了满足自己的各种需求，比如启动部署，更多的功能，tiddlywiki starter kit 就经过多个版本的迭代诞生了。
+* 其实在写这个之前，我还写了 [tw5](https://github.com/oeyoews/tw5) 算是前身. Nodejs TiddlyWiki 启动 TiddlyWiki5 也就是一条命令行的事，很简单，但是为了满足自己的各种需求，比如启动部署，更多的功能，tiddlywiki starter kit 就经过多个版本的迭代诞生了。
 
 tiddlywiki starter kit 目前是极其高度自定义化的，从安装，启动，构建，部署，使用等每个步骤都加入了自定义化配置。
 
@@ -67,9 +67,9 @@ pnpm start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm
 2. neotw-tiddlers（用户 markdown 文件）
 3. subwiki（用户个人 wiki）
 
-`tiddlywiki.info` 实际上一个 json 类型的文件，但是 json 文件不支持注释，每次只能手动编辑这个文件手动更新，因此 tiddlywiki-starter-kit 借助 dotenv 将配置放在.env 文件中，每次启动 tw 的时候动态生成 tiddlywiki.info 文件，这可以在不同的环境使用不同的配置，目前主要针对本地和部署环境，部署环境下可以自动移除不需要的插件，并且使用仅仅在部署时使用的插件，因此不建议手动编辑 tiddlywiki.info 文件，此文件仅仅用来让 tw 来读取启动
+`tiddlywiki.info` 实际上一个 json 类型的文件，但是 json 文件不支持注释，每次只能手动编辑这个文件手动更新，因此 tiddlywiki-starter-kit 借助 dotenv 将配置放在.env 文件中，每次启动 TiddlyWiki5 的时候动态生成 tiddlywiki.info 文件，这可以在不同的环境使用不同的配置，目前主要针对本地和部署环境，部署环境下可以自动移除不需要的插件，并且使用仅仅在部署时使用的插件，因此不建议手动编辑 tiddlywiki.info 文件，此文件仅仅用来让 TiddlyWiki5 来读取启动
 
-- 每个 tw 网页都可以看作是一个 playground，你可以在上面任情玩耍，而不用担心弄坏什么
+- 每个 TiddlyWiki5 网页都可以看作是一个 playground，你可以在上面任情玩耍，而不用担心弄坏什么
 
 ## 配置：指定保存目录
 
@@ -77,26 +77,13 @@ pnpm start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm
 'default-tiddler-location': 'tiddlers'
 ```
 
-tw 会一直读取这个文件的内容，无论修改成什么值，可以看作值 public folder, 但是注意，如果在改成了别的之后，如果修改了 tiddlers 文件夹的内容，对应的文件会转移到新的文件。https://github.com/oeyoews/tiddlywiki-starter-kit/issues/117
+TiddlyWiki5 会一直读取这个文件的内容，无论修改成什么值，可以看作值 public folder, 但是注意，如果在改成了别的之后，如果修改了 tiddlers 文件夹的内容，对应的文件会转移到新的文件。https://github.com/oeyoews/tiddlywiki-starter-kit/issues/117
 
 ## 为什么我疯狂的写 TiddlyWiki 插件
 
 * 前后大概写了 200 款插件，但是现在主要维护的只有 90 多个，其实我写插件的目的主要有两个，一个是练习代码，熟悉一些技术栈，所以每天都会逛论坛找一些写插件的点子, 其次就是，tiddlywiki 很符合我对笔记软件的幻想，虽然有一些不完美，但是刚好可以通过我的第一个目的来弥补这个不完美. 现在这两个目的几乎全部达到了
 
-codemirror6 插件除外，大概有 3000 行代码.
-
 [online preview](https://tiddlywiki-starter-kit.vercel.app/#docs%2FREADME)
-
-
-## TiddlyWiki5 源码 API 解读系列
-
-on github: [code.js](./code.js)
-on tw: [[docs/code.js]]
-
-## 插件开发
-
-[plugin.md](./plugin.md)
-
 
 ## 资源
 
