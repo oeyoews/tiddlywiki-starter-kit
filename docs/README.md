@@ -30,6 +30,11 @@ tiddlywiki starter kit 目前是极其高度自定义化的，从安装，启动
 - 书籍整理
 - ...
 
+```mermaid
+graph LR;
+NodeJs & TiddlyWiki5 & Git -.-> Local --> GitHub --> Build -.->  b[[Blog Page]]
+```
+
 ## 安装
 
 ```bash
