@@ -70,6 +70,7 @@ const oeyoewsPlugins = [
   'mermaid930',
   'markdown-it-mermaid',
   'markdown-it-math',
+  'markdown-it-pangu',
   'medium-zoom',
   'blockquote',
   // 'editor-preview-resizer',
