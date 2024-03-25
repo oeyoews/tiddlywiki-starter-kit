@@ -32,12 +32,14 @@ tiddlywiki starter kit 目前是极其高度自定义化的，从安装，启动
 * Everything is Possible.
 * 你的下一个笔记软件又何必不是 TiddlyWiki5 ?
 
-## Tiddlywiki Starter Kit 安装
+## 安装
 
 ```bash
-# cli: The simplest and easiest way
-npm create neotw-app
+npm create neotw-app # cli: The simplest and easiest way
+```
 
+> 其他方法
+```bash
 # dependcies: git node bun docker docker-compose
 
 # method 01: docker
