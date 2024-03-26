@@ -7,6 +7,10 @@ description: vue-gemini
 
 <$edit-text tiddler="$:/plugins/oeyoews/vue-gemini/config" field="api" type="password" />
 
+!! Ref
+
+https://ai.google.dev/tutorials/get_started_web?hl=zh-cn
+
 <!-- !! Motivation -->
 
 <!-- your plugin motivation, or why you write this plugin -->
