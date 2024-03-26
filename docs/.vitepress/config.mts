@@ -1,8 +1,8 @@
 import { defineConfig } from 'vitepress';
-import nav from './scripts/nav.js';
-import sidebar from './scripts/sidebar.js';
-import cn from './scripts/cn';
-import head from './scripts/head';
+import nav from './scripts/nav.mts';
+import sidebar from './scripts/sidebar.mts';
+import cn from './scripts/cn.mts';
+import head from './scripts/head.mts';
 
 export default defineConfig({
   title: 'TiddlyWiki Starter Kit',
