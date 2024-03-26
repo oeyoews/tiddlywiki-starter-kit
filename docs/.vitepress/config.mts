@@ -24,7 +24,7 @@ export default defineConfig({
     },
   },
   // mpa: true,
-  outDir: '../.tiddlywiki/docs',
+  // outDir: '../.tiddlywiki/docs',
   themeConfig: {
     logo: '/tiddlywiki.png',
     editLink: {
