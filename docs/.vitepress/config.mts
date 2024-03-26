@@ -10,7 +10,7 @@ export default defineConfig({
   base: '/docs/',
   lastUpdated: true,
   cleanUrls: true,
-  // metaChunks: true,
+  metaChunk: true,
   appearance: 'dark',
   sitemap: {
     hostname: 'https://tiddlywiki-starter-kit.oeyoews.top/docs',
