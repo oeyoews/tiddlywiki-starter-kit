@@ -10,7 +10,7 @@
   "packageManager": "pnpm@8.8.0",
   "scripts": {
     "new": "node lib/newplugin.mjs",
-    "build": "node lib/build.mjs && pnpm docs:build",
+    "build": "node lib/build.mjs && pnpm run docs:build",
     "update:tw": "pnpm install github:Jermolene/TiddlyWiki5",
     "update:web": "git commit --allow-empty  && git push",
     "build-with-bun": "bun run ./lib/build.ts",
