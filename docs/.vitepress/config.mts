@@ -12,6 +12,9 @@ export default defineConfig({
   cleanUrls: true,
   // metaChunks: true,
   appearance: 'dark',
+  sitemap: {
+    hostname: 'https://tiddlywiki-starter-kit.oeyoews.top/docs',
+  },
   head,
   themeConfig: {
     logo: '/tiddlywiki.png',

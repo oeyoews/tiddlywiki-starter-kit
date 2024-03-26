@@ -14,9 +14,6 @@ hero:
     - theme: alt
       text: 快速开始
       link: /README
-    - theme: alt
-      text: GitHub
-      link: https://github.com/oeyoews/tiddlywiki-starter-kit
   image:
     src: /tiddlywiki.png
     alt: TiddlyWiki5
