@@ -16,6 +16,8 @@ export default defineConfig({
     hostname: 'https://tiddlywiki-starter-kit.oeyoews.top/docs',
   },
   head,
+  // mpa: true,
+  outDir: '../.tiddlywiki/docs',
   themeConfig: {
     logo: '/tiddlywiki.png',
     editLink: {
