@@ -17,10 +17,12 @@ const app = (title = '') => {
   const component = {
     setup() {
       const res = ref('');
+      const isLoading = ref(true);
 
       return {
         API_KEY,
         res,
+        isLoading,
         text: getText(title),
       };
     },
@@ -38,6 +40,7 @@ const app = (title = '') => {
         const summary = $tw.wiki.getTiddler(title).fields?.summary;
         if (summary) {
           this.res = summary;
+          this.isLoading = false;
           return;
         }
         const genAI = new GoogleGenerativeAI(this.API_KEY);
@@ -59,13 +62,19 @@ const app = (title = '') => {
           },
         });
 
-        const msg = this.text + '简短总结一下这段话';
+        const msg = this.text + ' \n简短总结上面这段话';
 
-        const result = await chat.sendMessage(msg);
-        const response = await result.response;
-        const newsummary = response.text();
-        $tw.wiki.setText(title, 'summary', null, newsummary);
-        this.res = newsummary;
+        try {
+          const result = await chat.sendMessage(msg);
+          const response = await result.response;
+          const newsummary = response.text();
+          $tw.wiki.setText(title, 'summary', null, newsummary);
+          this.res = newsummary;
+        } catch (e) {
+          console.error(e);
+          this.res = e;
+        }
+        this.isLoading = false;
       },
     },
 
