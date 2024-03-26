@@ -30,6 +30,7 @@ export default {
     provider: 'local',
     options: {
       disableQueryPersistence: false,
+      detailedView: true,
       translations: {
         button: {
           buttonText: '搜索文档',
