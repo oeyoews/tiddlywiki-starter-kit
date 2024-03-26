@@ -1,6 +1,10 @@
-# Tiddlywiki Starter Kit?
+# TiddlyWiki Starter Kit?
 
 > 你的下一个笔记软件又何必不是 TiddlyWiki5 ?
+
+:::tip TSK
+什么是 TiddlyWiki Starter Kit?, 可以简单理解成 NextJs 和 React, Nuxt 和 vue 之间的关系
+:::
 
 * 其实在写这个之前，我还写了 [tw5](https://github.com/oeyoews/tw5), 算是前身. Nodejs TiddlyWiki 启动 TiddlyWiki5 也就是一条命令行的事，很简单，但是为了满足自己的各种需求，比如启动部署，更多的功能，tiddlywiki starter kit 就经过多个版本的迭代诞生了。
 
