@@ -30,11 +30,6 @@ tiddlywiki starter kit 目前是极其高度自定义化的，从安装，启动
 - 书籍整理
 - ...
 
-```mermaid
-graph LR;
-NodeJs & TiddlyWiki5 & Git -.-> Local --> GitHub --> Build -.->  b[[Blog Page]]
-```
-
 ## 安装
 
 ```bash
@@ -52,7 +47,7 @@ docker run -d --name tiddlywiki -p 8080:8080 -v $(pwd)/wiki:/app/wiki oeyoews/ti
 docker-compose up -d ## docker-compose.yml 参考 [docker-compose.yml](./docker-compose.yml)
 
 # method 03: clone repo directly
-git clone --depth 1 https://github.com/oeyoews/tiddlywiki-starter-kit
+Git clone --depth 1 https://github.com/oeyoews/tiddlywiki-starter-kit
 cd tiddlywiki-starter-kit && pnpm install  # install packages
 pnpm start  # start tiddlywiki on https://localhost:8099 or use pm2 with yarn pm2:start
 
