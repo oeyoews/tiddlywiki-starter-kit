@@ -59,6 +59,9 @@ importers:
       vitepress-plugin-mermaid:
         specifier: ^2.0.16
         version: 2.0.16(mermaid@10.9.0)(vitepress@1.0.1)
+      vue:
+        specifier: ^3.4.21
+        version: 3.4.21(typescript@5.4.2)
     devDependencies:
       '@oeyoews/prettier-config':
         specifier: workspace:^

@@ -16,7 +16,7 @@
     "**/*.min.js"
   ],
   "include": [
-    "docs/*.{js,ts}",
+    "docs/**/*.{js,ts.vue}",
     // "plugins/oeyoews/**/*.js",
     // "plugins/oeyoews/**/*.vue",
     "plugins/",

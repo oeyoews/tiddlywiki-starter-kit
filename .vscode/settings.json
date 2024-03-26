@@ -6,7 +6,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "files.associations": {
-    "*.vue": "html",
+    "**/files/**/*.vue": "html",
     "*.info": "json",
     "*.meta": "tid",
     "*.files": "json",
