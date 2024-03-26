@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "checkJs": false,
-    "target": "ES6",
+    "target": "ESNext",
     "skipLibCheck": true
   },
   "exclude": [

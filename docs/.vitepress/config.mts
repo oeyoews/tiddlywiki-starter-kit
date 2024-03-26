@@ -3,6 +3,7 @@ import nav from './scripts/nav.mts';
 import sidebar from './scripts/sidebar.mts';
 import cn from './scripts/cn.mts';
 import head from './scripts/head.mts';
+import { genFeed } from './scripts/genFeed.mjs';
 
 export default defineConfig({
   title: 'TiddlyWiki Starter Kit',
@@ -44,4 +45,5 @@ export default defineConfig({
     ],
     ...cn,
   },
+  buildEnd: genFeed,
 });
