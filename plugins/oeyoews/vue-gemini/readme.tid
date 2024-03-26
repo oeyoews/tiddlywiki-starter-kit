@@ -1,0 +1,12 @@
+title: $:/plugins/oeyoews/vue-gemini/readme
+description: vue-gemini
+
+<!-- plugin template readme -->
+
+!! APIKEY
+
+<$edit-text tiddler="$:/plugins/oeyoews/vue-gemini/config" field="api" type="password" />
+
+<!-- !! Motivation -->
+
+<!-- your plugin motivation, or why you write this plugin -->

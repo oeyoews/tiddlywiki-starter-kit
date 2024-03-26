@@ -3,7 +3,7 @@ import config from './index.js';
 
 // TODO: support remove plugins from here
 // TODO: 去重, 去空
-export const devPlugins = ['element-plus'];
+export const devPlugins = ['vue-gemini', 'element-plus'];
 
 // NOTE: vercel not support use { isCi } ???
 const enableMarkdown = config.markdown;

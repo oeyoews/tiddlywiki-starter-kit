@@ -1,0 +1,18 @@
+{
+  "title": "$:/plugins/oeyoews/vue-gemini",
+  "description": "vue-gemini",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.3.0",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "vue-gemini",
+  "meat#disabled": "yes",
+  "qrcode": "yes",
+  "created": "2024-03-26",
+  "dependents": [
+    "$:/plugins/oeyoews/neotw-vue3",
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
+  ],
+  "list": "readme"
+}
