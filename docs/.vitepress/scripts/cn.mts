@@ -11,7 +11,7 @@ export default {
   },
 
   outline: {
-    label: '页面导航',
+    label: '本页目录',
   },
 
   lastUpdated: {
