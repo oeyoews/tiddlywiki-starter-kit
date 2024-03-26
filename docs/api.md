@@ -6,14 +6,18 @@
 
 > 首先这是 99% 你写插件会用到的 api. 大部分常用的方法都在 wiki 里面了
 
-<<< @/snippets/api.js{0 c#}
 
-```html
+::: code-group
+
+<<< @/snippets/api.js
+
+```html others
 <!-- // ## 区分环境(sidebar or storylist) -->
-We are
 <$list
 filter="[<transclusion>prefix[{|$:/core/ui/PageTemplate/sidebar|||}]]"
 emptyMessage="in the story river.">
 in the sidebar.
 </$list>
 ```
+
+:::

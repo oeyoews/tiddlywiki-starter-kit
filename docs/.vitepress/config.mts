@@ -17,7 +17,12 @@ export default defineConfig({
   },
   head,
   vite: {},
-  markdown: {},
+  markdown: {
+    image: {
+      // image lazy loading is disabled by default
+      lazyLoading: true,
+    },
+  },
   // mpa: true,
   outDir: '../.tiddlywiki/docs',
   themeConfig: {
