@@ -11,6 +11,7 @@ export default [
     items: [
       { text: '插件生态', link: '/plugins/' },
       { text: 'vue gemini', link: '/plugins/vue-gemini' },
+      { text: 'markdownit mermaid', link: '/plugins/markdown-it-mermaid' },
     ],
   },
   {
