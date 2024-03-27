@@ -2,7 +2,7 @@ title: $:/plugins/oeyoews/vue-gemini/readme
 description: vue-gemini
 summary: 此插件使用 Google Gemini API 提供服务。需要提供 API 密钥以使用该插件。
 
-[[doc|https://neotw.vercel.app/docs/plugins/vue-gemini]]
+[[在线文档|https://neotw.vercel.app/docs/plugins/vue-gemini]]
 
 <$vue-gemini />
 
