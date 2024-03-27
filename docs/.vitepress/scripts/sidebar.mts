@@ -8,7 +8,10 @@ export default [
   {
     text: '插件',
     collapsed: true,
-    items: [{ text: '插件生态', link: '/plugins/' }],
+    items: [
+      { text: '插件生态', link: '/plugins/' },
+      { text: 'vue gemini', link: '/plugins/vue-gemini' },
+    ],
   },
   {
     text: '开发',
