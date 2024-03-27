@@ -9,11 +9,7 @@ export default [
   {
     text: '插件',
     collapsed: true,
-    items: [
-      { text: '插件生态', link: '/plugins/' },
-      // { text: 'vue gemini', link: '/plugins/vue-gemini' },
-      ...pluginlist,
-    ],
+    items: [{ text: '插件生态', link: '/plugins/' }, ...pluginlist],
   },
   {
     text: '开发',

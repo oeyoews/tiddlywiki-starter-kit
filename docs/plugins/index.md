@@ -1,7 +1,3 @@
-<script setup>
-import TwPlugin from '../components/TwPlugin.vue'
-</script>
-
 # TiddlyWiki Starter Kit 插件介绍
 
 <!-- <Callout type='warning'>

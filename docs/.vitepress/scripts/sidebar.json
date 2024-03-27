@@ -1,10 +1,18 @@
 [
   {
+    "text": "index",
+    "link": "/plugins/index"
+  },
+  {
     "text": "markdown-it-mermaid",
     "link": "/plugins/markdown-it-mermaid"
   },
   {
     "text": "vue-gemini",
     "link": "/plugins/vue-gemini"
+  },
+  {
+    "text": "vue",
+    "link": "/plugins/vue"
   }
 ]
