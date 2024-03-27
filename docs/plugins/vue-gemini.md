@@ -23,6 +23,8 @@
 
 * vue-gemini 插件提供了另外一种方便的用法, 仅仅只需在当前 tiddler 添加 `gemini:yes` 的字段内容，即可使用
 
+![](img/2024-03-27-20-33-29.png)
+
 * vue-gemini-daily widget 会自动为 带有 Journal 的 tiddler 生成一个每日一句，风格为幽默类型，保存在当前 tiddler 的 quote 字段. 如果希望重新生成，删除 quote 字段即可
 
 ## 注意
