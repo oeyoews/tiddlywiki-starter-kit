@@ -1,6 +1,6 @@
 import ci from 'ci-info';
 import config from './index.js';
-import devPlugins from './dev-plugins.json';
+import devPlugins from './dev-plugins.mjs';
 
 // NOTE: vercel not support use { isCi } ???
 const enableMarkdown = config.markdown;
