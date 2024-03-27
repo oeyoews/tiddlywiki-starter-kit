@@ -1,9 +1,16 @@
 title: $:/plugins/oeyoews/vue-gemini/readme
 description: vue-gemini
+summary: 此插件使用 Google Gemini API 提供服务。需要提供 API 密钥以使用该插件。
 
 <!-- plugin template readme -->
 
-!! APIKEY
+!! Usage
+
+```html
+<$vue-gemini />
+```
+
+!! Gemini APIKEY
 
 <$edit-text tiddler="$:/plugins/oeyoews/vue-gemini/config" field="api" type="password" />
 
