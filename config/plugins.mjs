@@ -1,16 +1,13 @@
 import ci from 'ci-info';
 import config from './index.js';
-
-// TODO: support remove plugins from here
-// TODO: 去重, 去空
-export const devPlugins = ['vue-gemini', 'element-plus'];
+import devPlugins from './dev-plugins.json';
 
 // NOTE: vercel not support use { isCi } ???
 const enableMarkdown = config.markdown;
 
 const localPlugins = [
   'oeyoews/tiddlywiki-publish-tiddler',
-  'oeyoews/neotw-vue3' // -dev
+  'oeyoews/neotw-vue3', // -dev
   // 'oeyoews/neotw-cli-info',
   // 'oeyoews/tiddlywiki-tid2png',
 ];
@@ -20,7 +17,7 @@ const onlinePlugins = [
   'oeyoews/neotw-error-better',
   'oeyoews/tiddlywiki-github-share',
   'oeyoews/neotw-notranslate',
-  'oeyoews/neotw-vue3'
+  'oeyoews/neotw-vue3',
   // 'oeyoews/vue-table' (experimental)
 ];
 
@@ -106,7 +103,7 @@ const oeyoewsPlugins = [
   'neotw-notion-gallery',
   'tiddlywiki-tiddler-info',
   'tiddlywiki-gravatar',
-  'neotw-homepage'
+  'neotw-homepage',
 ];
 
 const oeyoewsFormatedPlugins = oeyoewsPlugins.map((plugin) => {
@@ -120,7 +117,7 @@ const plugins = [
   'tiddlywiki/highlight',
   'tiddlywiki/browser-sniff',
   'tiddlywiki/pluginlibrary', // 不影响json 文件的生成, 但是需要负责生成index.html
-  ...oeyoewsFormatedPlugins
+  ...oeyoewsFormatedPlugins,
 ];
 
 enableMarkdown && plugins.push(...markdowPlugins);
