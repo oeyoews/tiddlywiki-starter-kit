@@ -16,6 +16,10 @@ summary: 此插件使用 Google Gemini API 提供服务。需要提供 API 密�
 
 <$edit-text tiddler="$:/plugins/oeyoews/vue-gemini/config" field="api" type="password" />
 
+!! TODO
+
+* support vue-gemini-translate widget
+
 <!-- !! Ref
 
 https://ai.google.dev/tutorials/get_started_web?hl=zh-cn -->
