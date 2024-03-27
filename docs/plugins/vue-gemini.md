@@ -1,8 +1,8 @@
 # AI 自动总结文章摘要
 
-:::tip
-借助 gemini api, 自动总结当前 tiddler 的内容，生成 summary 字段.
-:::
+> [!TIP]
+> 借助 gemini api, 自动总结当前 tiddler 的内容，生成 summary 字段.
+
 
 ## 插件在线地址
 
