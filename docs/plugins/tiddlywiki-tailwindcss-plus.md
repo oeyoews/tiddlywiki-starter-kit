@@ -1,5 +1,9 @@
 # Tiddlywiki Tailwindcss Plus
 
+## 在线地址
+
+<TwPlugin name="tiddlywiki-tailwindcss-plus" />
+
 ## Why Tailwindcss
 
 * 一致性：使用 Tailwind CSS 可确保您的样式在整个 TiddlyWiki 中保持一致。使用 Tailwind 的实用程序类，您可以快速轻松地将样式应用到您的元素，而无需担心跟踪自定义类名称。
