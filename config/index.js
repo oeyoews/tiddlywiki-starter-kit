@@ -2,9 +2,9 @@ module.exports = {
   name: 'tiddlywiki-starter-kit',
   server: {
     port: 8000,
-    host: false,
+    host: true,
     hostname: '0.0.0.0',
-    qrcode: false, // only host not false works
+    qrcode: true, // only host not false works
     zen: false,
     open: false, // NOTE: pm2 or pm2 cron restart will open also
   },

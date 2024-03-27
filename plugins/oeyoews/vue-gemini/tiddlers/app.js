@@ -28,6 +28,12 @@ const app = (title = '') => {
     },
 
     mounted() {
+      const summary = $tw.wiki.getTiddler(title).fields?.summary;
+      if (summary) {
+        this.res = summary;
+        this.isLoading = false;
+        return;
+      }
       if (!API_KEY) {
         console.error('请填写你的 gemini API_KEY');
         this.isLoading = false;
@@ -39,12 +45,6 @@ const app = (title = '') => {
 
     methods: {
       async aibot() {
-        const summary = $tw.wiki.getTiddler(title).fields?.summary;
-        if (summary) {
-          this.res = summary;
-          this.isLoading = false;
-          return;
-        }
         const genAI = new GoogleGenerativeAI(this.API_KEY);
         const model = genAI.getGenerativeModel({ model: 'gemini-pro' });
 
