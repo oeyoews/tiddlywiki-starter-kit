@@ -4,6 +4,8 @@ summary: 此插件使用 Google Gemini API 提供服务。需要提供 API 密�
 
 [[doc|https://neotw.vercel.app/docs/plugins/vue-gemini]]
 
+<$vue-gemini />
+
 !! Usage
 
 ```html
@@ -14,6 +16,6 @@ summary: 此插件使用 Google Gemini API 提供服务。需要提供 API 密�
 
 <$edit-text tiddler="$:/plugins/oeyoews/vue-gemini/config" field="api" type="password" />
 
-!! Ref
+<!-- !! Ref
 
-https://ai.google.dev/tutorials/get_started_web?hl=zh-cn
+https://ai.google.dev/tutorials/get_started_web?hl=zh-cn -->
