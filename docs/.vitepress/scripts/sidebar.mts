@@ -1,4 +1,5 @@
 import { type DefaultTheme } from 'vitepress';
+import pluginlist from './pluginlist.json';
 
 export default [
   {
@@ -10,8 +11,8 @@ export default [
     collapsed: true,
     items: [
       { text: '插件生态', link: '/plugins/' },
-      { text: 'vue gemini', link: '/plugins/vue-gemini' },
-      { text: 'markdownit mermaid', link: '/plugins/markdown-it-mermaid' },
+      // { text: 'vue gemini', link: '/plugins/vue-gemini' },
+      ...pluginlist,
     ],
   },
   {
