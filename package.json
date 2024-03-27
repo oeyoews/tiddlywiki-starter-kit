@@ -25,6 +25,7 @@
     "docs:preview": "vitepress preview docs --port 8081"
   },
   "dependencies": {
+    "@nolebase/vitepress-plugin-og-image": "^1.25.2",
     "address": "^1.2.2",
     "chalk": "^5.3.0",
     "ci-info": "^3.9.0",

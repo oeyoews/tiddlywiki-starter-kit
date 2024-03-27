@@ -4,6 +4,7 @@ import sidebar from './scripts/sidebar.mts';
 import cn from './scripts/cn.mts';
 import head from './scripts/head.mts';
 import { genFeed } from './scripts/genFeed.mjs';
+import { buildEndGenerateOpenGraphImages } from '@nolebase/vitepress-plugin-og-image';
 
 export default defineConfig({
   title: 'TiddlyWiki Starter Kit',
@@ -45,5 +46,13 @@ export default defineConfig({
     ],
     ...cn,
   },
-  buildEnd: genFeed,
+  async buildEnd(siteconfig) {
+    genFeed(siteconfig);
+    await buildEndGenerateOpenGraphImages({
+      domain: 'https://neotw.vercel.app/docs',
+      category: {
+        byLevel: 3,
+      },
+    })(siteconfig);
+  },
 });
