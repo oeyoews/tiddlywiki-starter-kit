@@ -2,6 +2,6 @@ title: $:/plugins/oeyoews/vue-gemini/viewtemplate
 tags: $:/tags/ViewTemplate
 list-before: $:/core/ui/ViewTemplate/body
 
-<% if [all[current]!is[system]gemini[yes]] %>
+<% if [all[current]!is[system]gemini[yes]] [all[current]!is[system]publish[article]] %>
 	<$vue-gemini />
 <% endif %>

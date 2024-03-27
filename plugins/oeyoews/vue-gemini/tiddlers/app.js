@@ -70,7 +70,9 @@ const app = (title = '') => {
           const result = await chat.sendMessage(msg);
           const response = await result.response;
           const newsummary = response.text();
-          $tw.wiki.setText(title, 'summary', null, newsummary);
+          $tw.wiki.setText(title, 'summary', null, newsummary, {
+            suppressTimestamp: true,
+          });
           this.res = newsummary;
         } catch (e) {
           console.error(e);
