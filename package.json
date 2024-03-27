@@ -42,6 +42,7 @@
     "randomstring-plus": "workspace:^",
     "tiddlywiki": "5.3.3",
     "tiged": "^2.12.7",
+    "unocss": "^0.58.7",
     "vitepress": "^1.0.1",
     "vitepress-plugin-mermaid": "^2.0.16",
     "vue": "^3.4.21"

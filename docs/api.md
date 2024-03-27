@@ -6,7 +6,6 @@
 
 > 首先这是 99% 你写插件会用到的 api. 大部分常用的方法都在 wiki 里面了
 
-
 ::: code-group
 
 <<< @/snippets/api.js

@@ -1,8 +1,9 @@
 import DefaultTheme from 'vitepress/theme';
 import type { Theme } from 'vitepress';
 import './vue.css';
+import 'virtual:uno.css';
 // @ts-expect-error
-import TwPlugin from '../../components/TwPlugin.vue';
+import TwPlugin from './components/TwPlugin.vue';
 
 /** @type {import('vitepress').Theme} */
 export default {

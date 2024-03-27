@@ -5,6 +5,7 @@ import cn from './scripts/cn.mts';
 import head from './scripts/head.mts';
 import { genFeed } from './scripts/genFeed.mjs';
 import { buildEndGenerateOpenGraphImages } from '@nolebase/vitepress-plugin-og-image';
+import UnoCSS from 'unocss/vite';
 
 export default defineConfig({
   title: 'TiddlyWiki Starter Kit',
@@ -18,7 +19,9 @@ export default defineConfig({
     hostname: 'https://tiddlywiki-starter-kit.oeyoews.top/docs',
   },
   head,
-  vite: {},
+  vite: {
+    plugins: [UnoCSS()],
+  },
   markdown: {
     image: {
       // image lazy loading is disabled by default
