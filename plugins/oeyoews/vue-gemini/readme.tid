@@ -10,8 +10,6 @@ summary: 此插件使用 Google Gemini API 提供服务。需要提供 API 密�
 <$vue-gemini /> // or add gemini:yes to your tiddler field
 ```
 
-
-
 !! Gemini APIKEY
 
 <$edit-text tiddler="$:/plugins/oeyoews/vue-gemini/config" field="api" type="password" />
