@@ -1,5 +1,5 @@
 /*\
-title: $:/plugins/oeyoews/vue-gemini/app.js
+title: $:/plugins/oeyoews/vue-gemini/daily/app.js
 type: application/javascript
 module-type: library
 
@@ -8,31 +8,29 @@ module-type: library
 const { ref } = window.Vue;
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
-const { GoogleGenerativeAI } = require('./lib/gemini.min.js');
-const getText = (title) => $tw.wiki.getTiddlerText(title);
+const { GoogleGenerativeAI } = require('../lib/gemini.min.js');
 const API_KEY = $tw.wiki.getTiddler('$:/plugins/oeyoews/vue-gemini/config')
   .fields.api;
 
-const app = (title = '') => {
+const app = (title) => {
   const component = {
     setup() {
       const res = ref('');
       const isLoading = ref(true);
-      const tip = ref('AI 生成的摘要');
-
+      const tip = ref('每日一句');
       return {
+        tip,
         API_KEY,
         res,
-        tip,
         isLoading,
-        text: getText(title),
+        text: '',
       };
     },
 
     mounted() {
-      const summary = $tw.wiki.getTiddler(title).fields?.summary;
-      if (summary) {
-        this.res = summary;
+      const quote = $tw.wiki.getTiddler(title).fields?.quote;
+      if (quote) {
+        this.res = quote;
         this.isLoading = false;
         return;
       }
@@ -48,34 +46,35 @@ const app = (title = '') => {
     methods: {
       async aibot() {
         const genAI = new GoogleGenerativeAI(this.API_KEY);
-        const model = genAI.getGenerativeModel({ model: 'gemini-pro' });
+        const generationConfig = {
+          //   stopSequences: ['red'],
+          maxOutputTokens: 200,
+          temperature: 0.5,
+          topP: 0.1,
+          topK: 16,
+        };
+        const model = genAI.getGenerativeModel({
+          model: 'gemini-pro',
+          generationConfig,
+        });
 
         const chat = model.startChat({
-          history: [
-            // {
-            //   role: 'user',
-            //   parts: [{ text: this.text }],
-            // },
-            // {
-            //   role: 'model',
-            //   parts: [{ text: 'Nice to Meet you' }],
-            // },
-          ],
+          history: [],
           generationConfig: {
             maxOutputTokens: 100,
           },
         });
 
-        const msg = this.text + ' \n简短总结上面这段话';
-
+        const msg = '每日一句, 类型为幽默';
         try {
           const result = await chat.sendMessage(msg);
           const response = await result.response;
-          const newsummary = response.text();
-          $tw.wiki.setText(title, 'summary', null, newsummary, {
+          const quote = response.text();
+          $tw.wiki.setText(title, 'quote', null, quote, {
             suppressTimestamp: true,
           });
-          this.res = newsummary;
+          this.res = quote;
+          // 如果输出为空， 显示重新生成按钮
         } catch (e) {
           console.error(e);
           this.res = e;

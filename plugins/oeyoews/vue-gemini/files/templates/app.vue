@@ -1,6 +1,5 @@
 <template>
-  <button @click="aibot">
-  </button>
+  <!-- <button @click="aibot"> </button> -->
   <div
     class="gap-2 border-solid border p-4 rounded border-dimmed-200 dark:bg-dimmed-800 text-black dark:text-white mb-4 text-sm antialiased prose prose-gray max-w-none dark:prose-invert prose-p:mt-0">
     <div class="font-bold flex items-center">
@@ -12,7 +11,7 @@
         </svg>
       </div>
       <div class="ml-2">
-        AI 生成的摘要
+        {{ tip }}
       </div>
     </div>
     <div class="mt-2 indent-4"> {{ res }} </div>
