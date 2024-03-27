@@ -3,6 +3,7 @@
 > [!TIP]
 > 借助 gemini api, 自动总结当前 tiddler 的内容，生成 summary 字段.
 
+![](img/2024-03-27-14-56-40.png)
 
 ## 插件在线地址
 
