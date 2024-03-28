@@ -24,6 +24,7 @@
   font-size: 15px;
   top: 20px;
   left: 17px;
+  font-family: 'monospace';
 }
 
 .vp-doc .custom-block.warning:before,
@@ -31,7 +32,8 @@
   content: '⚠';
   font-size: 17px;
   top: 19px;
-  left: 16ppx;
+  left: 16px;
+  font-family: 'monospace';
 }
 
 .vp-doc .custom-block .custom-block-title {
