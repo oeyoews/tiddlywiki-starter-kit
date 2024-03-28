@@ -2,7 +2,7 @@
 
 > 你的下一个笔记软件又何必不是 TiddlyWiki5 ?
 
-:::tip TSK
+:::tip
 什么是 TiddlyWiki Starter Kit?, 可以简单理解成 NextJs 和 React, Nuxt 和 vue, Svelte 和 SvelteKit 之间的关系
 :::
 
