@@ -6,6 +6,7 @@ import head from './scripts/head.mts';
 import { genFeed } from './scripts/genFeed.mjs';
 import { buildEndGenerateOpenGraphImages } from '@nolebase/vitepress-plugin-og-image';
 import UnoCSS from 'unocss/vite';
+import MarkdownTask from 'markdown-it-task-lists';
 
 export default defineConfig({
   title: 'TiddlyWiki Starter Kit',
@@ -23,6 +24,9 @@ export default defineConfig({
     plugins: [UnoCSS()],
   },
   markdown: {
+    config: (md) => {
+      md.use(MarkdownTask);
+    },
     image: {
       // image lazy loading is disabled by default
       lazyLoading: true,

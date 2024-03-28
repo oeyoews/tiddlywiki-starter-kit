@@ -1,11 +1,23 @@
 [
   {
+    "text": "book-status",
+    "link": "/plugins/book-status"
+  },
+  {
     "text": "markdown-it-mermaid",
     "link": "/plugins/markdown-it-mermaid"
   },
   {
+    "text": "neotw-notion-gallery",
+    "link": "/plugins/neotw-notion-gallery"
+  },
+  {
     "text": "neotw-vue3",
     "link": "/plugins/neotw-vue3"
+  },
+  {
+    "text": "tiddlywiki-daylight",
+    "link": "/plugins/tiddlywiki-daylight"
   },
   {
     "text": "tiddlywiki-tailwindcss-plus",
