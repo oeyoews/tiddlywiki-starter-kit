@@ -1,0 +1,27 @@
+title: $:/plugins/oeyoews/neotw-vue-todo/readme
+description: neotw-vue-todo
+
+<$vue-todo />
+
+!! Usage
+
+```html
+<$vue-todo json="todo.json"/>
+```
+
+!! Features
+
+* 多语言支持
+* 任务进度
+* 任务编辑
+* 任务拖动
+* 任务通知
+
+!! TODO
+
+* 支持 undo 操作，类似 gmail(base watch new old value)
+* 处理移动端样式优化
+
+!! Roadmap
+
+* projectify

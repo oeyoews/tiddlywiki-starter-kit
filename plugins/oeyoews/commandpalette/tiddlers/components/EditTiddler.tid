@@ -1,0 +1,7 @@
+command-palette-hint: Choose tiddler to edit
+command-palette-name: Edit Tiddler
+command-palette-type: history
+tags: $:/tags/CommandPaletteCommand
+title: $:/plugins/oeyoews/commandpalette/Edit Tiddler
+
+tm-edit-tiddler

@@ -1,0 +1,18 @@
+caption: Copy Tiddler Title
+description: Copy the name of this tiddler to the clipboard
+tags: $:/tags/ViewToolbar
+title: $:/plugins/oeyoews/neotw/ui/copy-title
+list-before: $:/core/ui/Buttons/close
+
+\whitespace trim
+<$button message="tm-copy-to-clipboard" param={{!!title}} tooltip="copy current title" class=<<tv-config-toolbar-class>>>
+	<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+	{{$:/core/images/copy-clipboard}}
+	<!-- {{copy-title}} -->
+	</$list>
+	<$list filter="[<tv-config-toolbar-text>match[yes]]">
+	<span class="tc-btn-text">
+  copy title
+	</span>
+	</$list>
+</$button>

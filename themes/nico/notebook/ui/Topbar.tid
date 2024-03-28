@@ -1,0 +1,25 @@
+tags: $:/tags/PageTemplate
+title: $:/themes/nico/notebook/ui/Topbar
+
+<!-- todo add option -->
+<!-- add indicator like ios bottom bar -->
+<$reveal state="$:/state/notebook-topbar" type="match" text="yes" default="yes" retain="yes" animate="yes">
+  <!-- w-full 导致无法动态计算宽度 -->
+  <div class="nc-topbar-wrapper hidden md:block transition-all w-56 h-2 rounded-md hover:rounded-none hover:w-full hover:h-1/6 hover:bg-transparent bg-neutral-200 dark:bg-black backdrop-blur fixed left-1/2 -translate-x-1/2 hover:translate-x-0 top-0 hover:left-0 cursor-pointer group p-1 duration-600 ease-in-out z-[999] overflow-auto">
+  <!-- <div class="text-center group-hover:hidden text-sm">控制台</div> -->
+  <!-- https://github.com/Jermolene/TiddlyWiki5/blob/526e997aa4de03acdc2ff56ac7c19b3ff06cbb64/editions/tw5.com/tiddlers/hiddensettings/Hidden%20Setting_%20Scroll%20Top%20Adjustment.tid#L9 -->
+    <div class="nc-bar nc-topbar tc-adjust-top-of-scroll mb-4 bg-transparent scale-0 group-hover:scale-100">
+      <$list filter="[all[shadows+tiddlers]tag[$:/tags/NotebookTopbar]!has[draft.of]]" variable="listItem">
+        <$reveal type="nomatch" state=<<config-title>> text="hide" tag="div">
+          <$transclude tiddler=<<listItem>> mode="block"/>
+        </$reveal>
+      </$list>
+      <div id="page-controls">
+        {{$:/core/ui/SideBarSegments/page-controls}}
+      </div>
+      <div id="menu">
+      	{{$:/themes/nico/notebook/ui/Buttons/menu}}
+      </div>
+    </div>
+  </div>
+</$reveal>

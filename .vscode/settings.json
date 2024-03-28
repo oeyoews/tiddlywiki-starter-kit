@@ -1,0 +1,15 @@
+{
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.associations": {
+    "**/files/**/*.vue": "html",
+    "*.info": "json",
+    "*.meta": "tid",
+    "*.files": "json",
+  },
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+}

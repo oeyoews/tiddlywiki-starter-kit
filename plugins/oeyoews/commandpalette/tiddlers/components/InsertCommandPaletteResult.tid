@@ -1,0 +1,5 @@
+key: ((insert-command-palette-result))
+tags: $:/tags/KeyboardShortcut
+title: $:/plugins/oeyoews/commandpalette/InsertCommandPaletteResult
+
+<$action-sendmessage $message="insert-command-palette-result"/>

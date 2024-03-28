@@ -1,0 +1,60 @@
+title: $:/plugins/oeyoews/tiddlywiki-motion/config/Shortcuts/
+
+FocusSearch/Key: /
+FocusSearch/Caption: Focus search
+GoToSearch/Key: s
+GoToSearch/Caption: GoToSearch
+GoToControlPanel/Key: g i
+GoToControlPanel/Caption: GoToControlPanel
+GoToGettingStarted/Key: g h
+GoToGettingStarted/Caption: GoToGettingStarted
+RefreshWiki/Key: g r
+RefreshWiki/Caption: Refresh wiki
+ShowHelp/Key: ?
+ShowHelp/Caption: Show this help message
+GoToPlugins/Key: g p
+GoToPlugins/Caption: Go to Plugins
+GoToInbox/Key: g I
+GoToInbox/Caption: Go to inbox
+TogglePalette/Key: g t
+TogglePalette/Caption: togglePalette
+ToggleSidebar/Key: g s
+ToggleSidebar/Caption: ToggleSidebar
+ToggleOpen/Key: g o
+ToggleOpen/Caption: ToggleOpen
+Fullscreen/Key: f
+Fullscreen/Caption: Fullscreen
+CreateNewTiddler/Key: g n
+CreateNewTiddler/Caption: Create a new tiddler
+DeleteTiddler/Key: d d
+DeleteTiddler/Caption: Delete selected tiddler
+GoToFirstTiddler/Key: g g
+GoToFirstTiddler/Caption: Go to first tiddler in story river
+GoToLastTiddler/Key: G
+GoToLastTiddler/Caption: Go to last tiddler in story river
+SelectNextTiddler/Key: j
+SelectNextTiddler/Caption: Select next tiddler in story river
+SelectPreviousTiddler/Key: k
+SelectPreviousTiddler/Caption: Select previous tiddler in story river
+EditTiddler/Key: g e
+EditTiddler/Caption: Edit selected tiddler
+CloseTiddler/Key: g c
+CloseTiddler/Caption: Close selected tiddler
+CloseAllTiddlers/Key: g d
+CloseAllTiddlers/Caption: Close all tiddlers
+FoldTiddler/Key: z c
+FoldTiddler/Caption: Fold selected tiddler
+UnfoldTiddler/Key: z o
+UnfoldTiddler/Caption: Unfold selected tiddler
+ToggleTiddler/Key: z a
+ToggleTiddler/Caption: Toggle folding for selected tiddler
+FoldAllTiddlers/Key: z C
+FoldAllTiddlers/Caption: Fold all tiddlers
+UnfoldAllTiddlers/Key: z O
+UnfoldAllTiddlers/Caption: Unfold all tiddlers
+ToggleAllTiddlers/Key: z A
+ToggleAllTiddlers/Caption: Toggle folding for all tiddlers
+Dismiss/Key: q
+Dismiss/Caption: Dismiss selection
+SaveWiki/Key: g w
+SaveWiki/Caption: Save wiki

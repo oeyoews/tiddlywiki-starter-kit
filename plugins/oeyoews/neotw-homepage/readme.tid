@@ -1,0 +1,20 @@
+title: $:/plugins/oeyoews/neotw-homepage/readme
+description: Empty Story
+
+{{$:/config/EmptyStoryMessage}}
+
+<!-- !! Not Have Div Tag -->
+<!---->
+<!-- Just vanilla text -->
+<!---->
+<!-- <div class="prose max-w-none prose-indigo"> -->
+<!---->
+<!-- ``` -->
+<!-- {{{ [[index]] ||$:/core/ui/ViewTemplate }}} -->
+<!-- ``` -->
+<!---->
+<!-- * if use viewtemplate on Layout, 页面会崩溃 -->
+<!---->
+<!-- !! Tiddlywiki Empty Story -->
+<!---->
+<!-- </div> -->

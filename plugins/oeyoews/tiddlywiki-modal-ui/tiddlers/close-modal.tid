@@ -1,0 +1,9 @@
+title: $:/esc
+
+<div class="flex justify-between">
+{{!!caption}}
+<$button class="bg-transparent">
+  <span class="hover:bg-gray-200 dark:hover:bg-gray-700 transition-all rounded px-2 py-1 text-xs">Esc</span>
+<$action-sendmessage $message="tm-close-tiddler" $param=<<currentTiddler>>/>
+</$button>
+</div>

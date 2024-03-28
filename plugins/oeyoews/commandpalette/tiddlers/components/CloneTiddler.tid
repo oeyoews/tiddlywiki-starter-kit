@@ -1,0 +1,7 @@
+command-palette-hint: Chose tiddler to clone
+command-palette-name: Clone Tiddler
+command-palette-type: history
+tags: $:/tags/CommandPaletteCommand
+title: $:/plugins/oeyoews/commandpalette/Clone Tiddler
+
+tm-new-tiddler

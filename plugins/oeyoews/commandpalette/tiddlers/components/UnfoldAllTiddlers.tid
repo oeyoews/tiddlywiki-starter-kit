@@ -1,0 +1,6 @@
+command-palette-name: Unfold All Tiddlers
+command-palette-type: actionString
+tags: $:/tags/CommandPaletteCommand
+title: $:/plugins/oeyoews/commandpalette/Unfold All Tiddlers
+
+<$action-sendmessage $message="tm-unfold-all-tiddlers" foldedStatePrefix="$:/state/folded/"/>

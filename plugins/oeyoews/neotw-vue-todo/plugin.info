@@ -1,0 +1,22 @@
+{
+  "title": "$:/plugins/oeyoews/neotw-vue-todo",
+  "description": "neotw-vue-todo",
+  "author": "oeyoews",
+  "version": "0.1.0",
+  "core-version": ">=5.3.0",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "neotw-vue-todo",
+  "meat#disabled": "yes",
+  "qrcode": "yes",
+  "created": "2024-03-03",
+  "parent-plugin": [
+    "$:/plugins/oeyoews/neotw-vue3"
+  ],
+  "dependents": [
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
+    "$:/plugins/oeyoews/vue-i18n",
+    "$:/plugins/oeyoews/vue-dragable"
+  ],
+  "list": "readme"
+}

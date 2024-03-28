@@ -1,0 +1,14 @@
+title: $:/plugins/oeyoews/neotw-copy-code2/copy-code-global
+tags: $:/tags/Global
+
+\widget $codeblock(code, language)
+<div class="group relative">
+<$button class="absolute right-0 m-1 scale-0 group-hover:scale-100 p-0 transition-all delay-200 size-8" message="tm-copy-to-clipboard" param=<<code>> tooltip="copy code">
+{{$:/core/images/copy-clipboard}}
+</$button>
+<$genesis $type="$codeblock" $remappable="no" code=<<code>> language=<<language>>> />
+</div>
+
+\end
+
+

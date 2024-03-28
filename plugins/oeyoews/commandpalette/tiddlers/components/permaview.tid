@@ -1,0 +1,6 @@
+command-palette-name: Permaview
+command-palette-type: message
+tags: $:/tags/CommandPaletteCommand
+title: $:/plugins/oeyoews/commandpalette/Permaview
+
+tm-permaview

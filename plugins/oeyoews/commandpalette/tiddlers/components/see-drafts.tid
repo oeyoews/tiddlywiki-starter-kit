@@ -1,0 +1,7 @@
+command-palette-caret: 27
+command-palette-name: See Drafts
+command-palette-type: prompt-basic
+tags: $:/tags/CommandPaletteCommand
+title: $:/plugins/oeyoews/commandpalette/See Drafts
+
+[has:field[draft.of]search[]]

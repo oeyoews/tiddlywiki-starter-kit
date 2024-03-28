@@ -1,0 +1,6 @@
+command-palette-name: Show Control Panel
+command-palette-type: actionString
+tags: $:/tags/CommandPaletteCommand
+title: $:/plugins/oeyoews/commandpalette/ControlPanel Command
+
+<$action-navigate $to="$:/ControlPanel"/>

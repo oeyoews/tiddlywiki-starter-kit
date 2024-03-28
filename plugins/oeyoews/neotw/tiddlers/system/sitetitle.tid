@@ -1,0 +1,6 @@
+title: $:/SiteTitle
+
+<% if [{$:/info/url/protocol}!match[https:]] %>
+🔴
+<% endif %>
+TiddlyWiki Starter Kit

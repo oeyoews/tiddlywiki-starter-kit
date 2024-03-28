@@ -1,0 +1,6 @@
+command-palette-name: Toggle Fullscreen
+command-palette-type: message
+tags: $:/tags/CommandPaletteCommand
+title: $:/plugins/oeyoews/commandpalette/Toggle Fullscreen
+
+tm-full-screen

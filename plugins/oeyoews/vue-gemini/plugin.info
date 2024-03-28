@@ -1,0 +1,19 @@
+{
+  "title": "$:/plugins/oeyoews/vue-gemini",
+  "description": "文章摘要自动生成",
+  "summary": "文章摘要自动生成插件",
+  "author": "oeyoews",
+  "version": "0.0.3",
+  "core-version": ">=5.3.0",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "vue-gemini",
+  "meat#disabled": "yes",
+  "qrcode": "yes",
+  "created": "2024-03-26",
+  "dependents": [
+    "$:/plugins/oeyoews/neotw-vue3",
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
+  ],
+  "list": "readme"
+}

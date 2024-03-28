@@ -1,0 +1,29 @@
+title: $:/plugins/oeyoews/tiddlywiki-tid2png/readme
+description: ~TiddlyWiki Tid2png
+
+<div class="prose max-w-none">
+
+支持导出图片，包括指定 tiddler, 固定区域，甚至直接当作窗口截图工具
+
+!! optional plugins dependencies
+
+* neotw-swal2: preview exported png
+* nprogress: progress bar for export png
+
+!! usage
+
+```html
+<$tid2png text='use id' customSelector="#export" />
+<$tid2png text='use class' customSelector=".export" />
+<$tid2png text='use data' customSelector="[data-export]" />
+
+<div id="export" data-export class='export'> export area </div>
+```
+
+<$tid2png text='use id' customSelector="#export" />
+<$tid2png text='use class' customSelector=".export" />
+<$tid2png text='use data' customSelector="[data-export]" />
+
+<div id="export" data-export class='export'> export area </div>
+
+</div>

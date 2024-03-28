@@ -1,0 +1,6 @@
+command-palette-name: Show CommandTiddlers
+command-palette-type: prompt
+tags: $:/tags/CommandPaletteCommand
+title: $:/plugins/oeyoews/commandpalette/show tiddler commands
+
+@$:/tags/CommandPaletteCommand

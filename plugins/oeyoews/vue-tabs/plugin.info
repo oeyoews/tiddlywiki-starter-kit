@@ -1,0 +1,21 @@
+{
+  "title": "$:/plugins/oeyoews/vue-tabs",
+  "description": "vue-tabs",
+  "author": "oeyoews",
+  "version": "1.0.0",
+  "core-version": ">=5.3.0",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "vue-tabs",
+  "meat#disabled": "yes",
+  "qrcode": "yes",
+  "created": "2024-03-16",
+  "dependents": [
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
+    "$:/plugins/oeyoews/neotw-vue3",
+    "$:/plugins/oeyoews/vue-i18n",
+    "$:/plugins/oeyoews/vue-draggable-plus",
+    "$:/plugins/oeyoews/vue-context-menu"
+  ],
+  "list": "readme"
+}

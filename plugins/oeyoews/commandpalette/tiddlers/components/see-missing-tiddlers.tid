@@ -1,0 +1,7 @@
+command-palette-caret: 20
+command-palette-name: See Missing Tiddlers
+command-palette-type: prompt-basic
+tags: $:/tags/CommandPaletteCommand
+title: $:/plugins/oeyoews/commandpalette/See Missing Tiddlers
+
+[all[missing]search[]]

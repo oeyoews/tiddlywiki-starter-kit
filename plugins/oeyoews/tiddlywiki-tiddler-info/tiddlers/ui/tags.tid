@@ -1,0 +1,10 @@
+title: $:/core/ui/ViewTemplate/tags
+tags: $:/tags/ViewTemplate
+
+<!-- hidden -->
+<div class="tc-tags-wrapper">
+  <$list filter="[all[current]tags[]limit[1]sort[title]]">
+   <$text text={{{ [[$:/plugins/oeyoews/tiddlywiki-tiddler-info/config]get[otags]else[🎯]] }}} />
+  </$list>
+  <$list filter="[all[current]tags[]sort[title]]" template="$:/core/ui/TagTemplate" storyview="pop"/>
+</div>

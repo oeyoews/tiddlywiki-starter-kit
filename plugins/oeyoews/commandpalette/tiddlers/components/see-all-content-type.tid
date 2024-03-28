@@ -1,0 +1,7 @@
+command-palette-caret: 48
+command-palette-name: See all content-type
+command-palette-type: prompt-basic
+tags: $:/tags/CommandPaletteCommand
+title: $:/plugins/oeyoews/commandpalette/See all content-types
+
+[all[tiddlers+shadows]each[type]get[type]search[]]

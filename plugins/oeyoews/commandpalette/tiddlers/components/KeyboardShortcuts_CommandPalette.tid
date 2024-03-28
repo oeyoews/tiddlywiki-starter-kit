@@ -1,0 +1,5 @@
+key: ((open-command-palette))
+tags: $:/tags/KeyboardShortcut
+title: $:/core/ui/KeyboardShortcuts/CommandPalette
+
+<$action-sendmessage $message="open-command-palette"/>

@@ -1,0 +1,15 @@
+{
+  "title": "$:/plugins/oeyoews/neotw-notion-gallery",
+  "description": "neotw-notion-gallery",
+  "author": "oeyoews",
+  "version": "0.2.1",
+  "core-version": ">=5.3.1",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "meta#disabled": "yes",
+  "name": "neotw-notion-gallery",
+  "dependents": [
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
+  ],
+  "list": "readme"
+}

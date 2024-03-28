@@ -1,0 +1,15 @@
+{
+	"directories": [
+		{
+			"path": "templates",
+			"filesRegExp": "^.*\\.vue$",
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/vue-info/templates/"
+				},
+				"hide-body": "yes"
+			}
+		}
+	]
+}

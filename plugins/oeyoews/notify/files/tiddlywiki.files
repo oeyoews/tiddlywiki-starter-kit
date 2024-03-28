@@ -1,0 +1,20 @@
+{
+	"tiddlers": [
+		{
+			"file": "simple-notify.min.js",
+			"fields": {
+				"title": "simple-notify.min.js",
+				"module-type": "library",
+				"type": "application/javascript"
+			}
+		},
+		{
+			"file": "simple-notify.min.css",
+			"fields": {
+				"title": "$:/plugins/oeyoews/notify/simple-notify.min.css",
+				"type": "text/css",
+				"tags": "$:/tags/Stylesheet"
+			}
+		}
+	]
+}

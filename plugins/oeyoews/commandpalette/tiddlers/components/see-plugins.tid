@@ -1,0 +1,7 @@
+command-palette-caret: 41
+command-palette-name: 🧩 See Plugins
+command-palette-type: prompt-basic
+tags: $:/tags/CommandPaletteCommand
+title: $:/plugins/oeyoews/commandpalette/See Plugins
+
+[!has[draft.of]plugin-type[plugin]search[]]

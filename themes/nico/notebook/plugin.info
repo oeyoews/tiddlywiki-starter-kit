@@ -1,0 +1,15 @@
+{
+  "title": "$:/themes/oeyoews/notebook-plus",
+  "name": "Notebook theme plus",
+  "description": "A clean, uncluttered TiddlyWiki theme",
+  "author": "oeyoews",
+  "version": "v2.0.4",
+  "core-version": ">=5.3.1",
+  "list": "readme",
+  "meta#disabled": "yes",
+  "dependents": [
+    "$:/themes/tiddlywiki/vanilla",
+    "$:/plugins/oeyoews/tailwindcss-plus"
+  ],
+  "plugin-type": "theme"
+}
