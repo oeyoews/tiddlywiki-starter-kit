@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress';
+import { defineConfig, defineConfigWithTheme } from 'vitepress';
 import nav from './scripts/nav.mts';
 import sidebar from './scripts/sidebar.mts';
 import cn from './scripts/cn.mts';
