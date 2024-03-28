@@ -33,9 +33,13 @@ spellcheck:
   # Correct Words (Case insensitive) for by Spellcheck
   words:
     - GitHub
+    - CDN
+    - TiddlyWiki5
     - App Store
     # This means "appstore" into "App Store"
     - AppStore = App Store
+    - vue = Vue
+    - react = React
     - Git
     - Node.js
     - nodejs = Node.js

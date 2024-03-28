@@ -4,6 +4,10 @@
     "link": "/plugins/markdown-it-mermaid"
   },
   {
+    "text": "neotw-vue3",
+    "link": "/plugins/neotw-vue3"
+  },
+  {
     "text": "tiddlywiki-tailwindcss-plus",
     "link": "/plugins/tiddlywiki-tailwindcss-plus"
   },
