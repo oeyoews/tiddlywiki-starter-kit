@@ -1,4 +1,4 @@
-## book status
+# book status
 
 > https://github.com/oeyoews/reading-books-with-tiddlywiki
 
