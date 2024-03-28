@@ -9,7 +9,13 @@ const href = computed(() => {
 </script>
 
 <template>
-  <a :href="href" rel="noopener noreferrer" target="_blank">
+  <a
+    :href="href"
+    rel="noopener noreferrer"
+    target="_blank"
+    :title="name"
+    class="font-bold"
+  >
     {{ name }}
   </a>
 </template>
