@@ -1,7 +1,0 @@
-title: $:/plugins/oeyoews/plum-blosssom/pageTemplate
-tags: $:/tags/PageTemplate
-
-<!-- TODO: only on homepage -->
-<div class="fixed inset-0 pointer-events-none print:hidden -z-[1]">
-	<$plum />
-</div>

@@ -1,5 +1,0 @@
-tags: $:/tags/ViewTemplateTitleFilter
-list-before: $:/config/ViewTemplateTitleFilters/default
-title: $:/plugins/oeyoews/neotw-tw-bot/caption-filter
-
-[<currentTiddler>creator[tw-bot]has[caption]then[$:/plugins/oeyoews/neotw-tw-bot/caption]]

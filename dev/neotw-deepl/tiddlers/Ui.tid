@@ -1,9 +1,0 @@
-caption: Deepl
-title: $:/plugins/oeyoews/neotw-deepl/view
-mask-closable: yes
-subtitle: {{$:/plugins/oeyoews/neotw-deepl/icon}} Deepl
-class: o-tm
-
-<h3 class="text-center m-0">Deepl Translator</h3>
-
-<$deepl />

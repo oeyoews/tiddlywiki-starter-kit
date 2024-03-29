@@ -1,8 +1,0 @@
-title: $:/temp/oeyoews/style/readonly
-tags: $:/tags/Stylesheet
-
-[data-tiddler-title] .tc-tiddler-controls  {display: none !important;}
-
-<!-- [data-tags*='Journal'] {
-  border: 1px dashed blue !important;
-} -->

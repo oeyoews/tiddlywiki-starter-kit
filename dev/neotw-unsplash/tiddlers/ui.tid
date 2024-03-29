@@ -1,9 +1,0 @@
-caption: Unsplash
-title: $:/plugins/oeyoews/neotw-unsplash/unsplash
-mask-closable: yes
-subtitle: Unsplash
-class: o-tm
-
-<!-- tc-modal-centered -->
-
-<$unsplash />

@@ -1,3 +1,0 @@
-## Artplayer
-
-<$artplayer />

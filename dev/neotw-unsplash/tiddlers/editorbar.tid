@@ -1,7 +1,0 @@
-title: $:/plugins/oeyoews/neotw-unsplash/editorbar
-tags: $:/tags/EditorToolbar
-caption: Unsplash
-condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]] [<targetTiddler>type[text/markdown]]
-dropdown: $:/plugins/oeyoews/neotw-unsplash/unsplash
-
-Unsplash

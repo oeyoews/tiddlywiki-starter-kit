@@ -1,9 +1,0 @@
-title: $:/plugins/oeyoews/neotw-confetti/confetti-welcome-action
-<!-- tags: $:/tags/StartupAction/PostRender -->
-
-<!-- $tw.notifier.display('Index'); -->
-<$list filter="[{$:/info/url/protocol}prefix[https]]">
-<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
-  <$action-sendmessage $message="tm-notify" $param="$:/plugins/oeyoews/neotw-confetti/confetti-welcome-msg"/>
-</$list>
-</$list>
