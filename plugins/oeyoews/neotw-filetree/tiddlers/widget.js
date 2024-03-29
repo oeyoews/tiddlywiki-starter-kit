@@ -1,14 +1,14 @@
 /*\
-title: $:/plugins/oeyoews/vue-rss/widget.js
+title: $:/plugins/oeyoews/neotw-filetree/widget.js
 type: application/javascript
 module-type: widget
 
-vue-rss widget
+neotw-filetree widget
 
 \*/
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 
-class RssWidget extends Widget {
+class FileTreeWidget extends Widget {
   constructor(parseTreeNode, options) {
     super(parseTreeNode, options);
   }
@@ -23,19 +23,22 @@ class RssWidget extends Widget {
     if (ssr) return;
 
     const vuelib = '$:/plugins/oeyoews/neotw-vue3/vue.global.prod.js';
-    // const ElementPlus = require('element-plus.min.js');
 
     if (!window.Vue) {
       window.Vue = require(vuelib);
     }
-    const { rss, proxy } = this.attributes;
 
     const { createApp } = window.Vue;
     const component = require('./app');
     const domNode = this.document.createElement('div');
+    const TiddlyWikiVue = require('./plugins/TiddlyWikiVue');
+
+    const ElementPlus = require('element-plus.min.js');
 
     try {
-      const app = createApp(component(rss, proxy));
+      const app = createApp(component(this));
+
+      app.use(TiddlyWikiVue);
 
       app.config.errorHandler = (err) => {
         const text = `[Vue3](${app.version}): ` + err;
@@ -43,8 +46,8 @@ class RssWidget extends Widget {
         domNode.textContent = text;
         domNode.style.color = 'red';
       };
-      // app.use(ElementPlus);
 
+      app.use(ElementPlus);
       // 挂载
       app.mount(domNode);
 
@@ -54,7 +57,12 @@ class RssWidget extends Widget {
       console.error(e);
     }
   }
+
+  // TIP: 界面由 vue 接管， 不要在这里刷新
+  refresh() {
+    return false;
+  }
 }
 
-/** @description vue-rss widget */
-exports['vue-rss'] = RssWidget;
+/** @description neotw-filetree widget */
+exports['vue-filetree'] = FileTreeWidget;
