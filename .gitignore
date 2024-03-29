@@ -18,6 +18,7 @@ output/
 twmd/
 src-dev/
 dev-**/
+dev/
 
 docs/.vitepress/dist
 docs/.vitepress/cache
