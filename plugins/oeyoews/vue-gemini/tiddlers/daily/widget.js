@@ -29,13 +29,14 @@ class GeminiDailyWidget extends Widget {
     }
 
     const title = this.getVariable('currentTiddler');
+    const { prompt } = this.attributes;
 
     const { createApp } = window.Vue;
     const component = require('./app');
     const domNode = this.document.createElement('div');
 
     try {
-      const app = createApp(component(title));
+      const app = createApp(component(title, prompt));
 
       app.config.errorHandler = (err) => {
         const text = `[Vue3](${app.version}): ` + err;

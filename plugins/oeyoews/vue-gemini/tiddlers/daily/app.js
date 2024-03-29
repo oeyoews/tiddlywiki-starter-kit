@@ -12,7 +12,7 @@ const { GoogleGenerativeAI } = require('../lib/gemini.min.js');
 const API_KEY = $tw.wiki.getTiddler('$:/plugins/oeyoews/vue-gemini/config')
   .fields.api;
 
-const app = (title) => {
+const app = (title, prompt = '每日一句, 类型为幽默') => {
   const component = {
     setup() {
       const res = ref('');
@@ -65,14 +65,14 @@ const app = (title) => {
           },
         });
 
-        const msg = '每日一句, 类型为幽默';
         try {
-          const result = await chat.sendMessage(msg);
+          const result = await chat.sendMessage(prompt);
           const response = await result.response;
           const quote = response.text();
-          $tw.wiki.setText(title, 'quote', null, quote, {
-            suppressTimestamp: true,
-          });
+          quote &&
+            $tw.wiki.setText(title, 'quote', null, quote, {
+              suppressTimestamp: true,
+            });
           this.res = quote;
           // 如果输出为空， 显示重新生成按钮
         } catch (e) {
