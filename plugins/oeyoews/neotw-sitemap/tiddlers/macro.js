@@ -1,8 +1,7 @@
 /*\
 title: $:/plugins/oeyoews/neotw-sitemap/sitemapentries.js
-module-type: macro
-tags: static
 type: application/javascript
+module-type: macro
 
 Macro to output tiddlers matching a filter to sitemap.xml entries.
 http://www.sitemaps.org/protocol.html
@@ -38,11 +37,11 @@ http://www.sitemaps.org/protocol.html
     data.forEach(function (element, index, array) {
       x += '\t<url>\n';
       const server = $tw.wiki.getTiddlerText(
-        '$:/plugins/oeyoews/neotw-sitemap/site'
+        '$:/plugins/oeyoews/neotw-sitemap/site',
       );
       if (!server) {
         console.info(
-          'sitemapentries.js: $:/plugins/oeyoews/neotw-sitemap/site not set'
+          'sitemapentries.js: $:/plugins/oeyoews/neotw-sitemap/site not set',
         );
       }
       x += `\t\t<loc>${server}#:${element.title.replace(/ /g, '%2520')}</loc>\n`;

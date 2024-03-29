@@ -15,7 +15,7 @@
 				"title": "$:/plugins/oeyoews/vue-context-menu/styles.css",
 				"type": "text/css",
 				"hide-body": "yes",
-				"tags": "tags: $:/tags/Stylesheet"
+				"tags": "$:/tags/Stylesheet"
 			}
 		}
 	]
