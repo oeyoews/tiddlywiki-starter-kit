@@ -14,7 +14,7 @@ module.exports = {
   // debug: false,
   wiki: 'src',
   markdown: true,
-  tiddlersRepo: 'oeyoews/neotw-tiddlers',
+  tiddlersRepo: 'oeyoews/neotw-tiddlers/tiddlers',
   pluginversion: '5.3.0',
   checkFileSize: false,
 };
