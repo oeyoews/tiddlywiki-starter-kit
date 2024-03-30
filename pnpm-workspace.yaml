@@ -2,3 +2,4 @@ packages:
   - 'packages/*'
   - '!packages/tw5-plugins-types'
   - '!packages/tw5-types-patch'
+  - '!src/**'

@@ -4,6 +4,10 @@
     "link": "/plugins/book-status"
   },
   {
+    "text": "🧩element-plus",
+    "link": "/plugins/element-plus"
+  },
+  {
     "text": "🧩markdown-it-mermaid",
     "link": "/plugins/markdown-it-mermaid"
   },
