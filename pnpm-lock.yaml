@@ -53,9 +53,6 @@ importers:
       qrcode:
         specifier: ^1.5.3
         version: 1.5.3
-      randomstring-plus:
-        specifier: workspace:^
-        version: link:packages/randomstring-plus
       tiddlywiki:
         specifier: 5.3.3
         version: 5.3.3

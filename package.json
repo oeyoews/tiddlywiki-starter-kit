@@ -40,7 +40,6 @@
     "pm2": "^5.3.1",
     "prompts": "^2.4.2",
     "qrcode": "^1.5.3",
-    "randomstring-plus": "workspace:^",
     "tiddlywiki": "5.3.3",
     "tiged": "^2.12.7",
     "unocss": "^0.58.7",
