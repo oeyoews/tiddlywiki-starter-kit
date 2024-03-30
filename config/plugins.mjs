@@ -1,9 +1,10 @@
 import ci from 'ci-info';
-import config from './index.js';
-import devPlugins from './dev-plugins.mjs';
+import base from './base.mjs';
+import devplugins from './dev-plugins.mjs';
 
+// 用户插件列表
 // NOTE: vercel not support use { isCi } ???
-const enableMarkdown = config.markdown;
+const enableMarkdown = base.markdown;
 
 const localPlugins = [
   'oeyoews/tiddlywiki-publish-tiddler',
@@ -39,7 +40,7 @@ const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
 
 // oeyoews plugins
 const oeyoewsPlugins = [
-  ...devPlugins,
+  ...devplugins,
   'vue-contextmenu',
   'vue-context-menu',
   'vue-kanban',

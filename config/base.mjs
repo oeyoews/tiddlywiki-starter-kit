@@ -1,5 +1,7 @@
-module.exports = {
+export default {
   name: 'tiddlywiki-starter-kit',
+  description:
+    'A modern style and elegant notebook built with Tiddlywiki5 and Tailwindcss',
   server: {
     port: 8000,
     host: true,

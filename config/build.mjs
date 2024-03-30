@@ -1,8 +1,8 @@
-import config from './index.js';
+import base from './base.mjs';
 
 /**
  * @type {import('tiddlywiki').ITiddlyWikiInfoJSONBuild}
- * @description tiddlywiki 构建命令
+ * @description 构建
  */
 export default {
   // 需要before index.html 构建 ???
@@ -57,33 +57,33 @@ export default {
   ], */
   javascript: [
     '--output',
-    `${config.output}`,
+    `${base.output}`,
     '--render',
     '.',
     'javascript.json',
     'text/plain',
     '$:/core/templates/exporters/JsonFile',
     'exportFilter',
-    '[tag[JavaScript]]'
+    '[tag[JavaScript]]',
   ],
   journal: [
     '--output',
-    `${config.output}`,
+    `${base.output}`,
     '--render',
     '.',
     'journal.json',
     'text/plain',
     '$:/core/templates/exporters/JsonFile',
     'exportFilter',
-    '[tag[Journal]type[text/markdown]!sort[created]]'
+    '[tag[Journal]type[text/markdown]!sort[created]]',
   ],
   sitemap: [
     '--output',
-    `${config.output}`,
+    `${base.output}`,
     '--render',
     '$:/plugins/oeyoews/neotw-sitemap/sitemap',
     'sitemap.xml',
-    'text/plain'
+    'text/plain',
   ],
   tiddlers: [
     '--render',
@@ -94,13 +94,13 @@ export default {
     'exportFilter',
     // '[!is[system]field:type[text/markdown]!is[binary]!field:publish[readonly]!field:publish[no]] -[[.gitignore]] -[tag[video]] -[tag[Journal]] -[tag[剪藏]]',
     // '[publish[public]] [publish[article]]',
-    '[publish[blog]]'
+    '[publish[blog]]',
   ],
   // build index.html
   index: [
     '--verbose',
     '--output',
-    config.output,
+    base.output,
     '--deletetiddlers',
     '$:/StoryList',
     '--render',
@@ -130,12 +130,12 @@ export default {
     '$:/tiddlywiki.png',
     'tiddlywiki.png',
     '--deletetiddlers',
-    '$:/StoryList'
+    '$:/StoryList',
   ],
   // 生成 plugin library
   library: [
     '--output',
-    `${config.output}/library`,
+    `${base.output}/library`,
     '--makelibrary',
     '$:/UpgradeLibrary',
     '--savelibrarytiddlers',
@@ -151,8 +151,8 @@ export default {
     'index.html',
     'text/plain',
     '--deletetiddlers', // NOTE: 如果构建失败总是会产生17M的文件,不会自动删除
-    '[[$:/UpgradeLibrary]] [[$:/UpgradeLibrary/List]]'
-  ]
+    '[[$:/UpgradeLibrary]] [[$:/UpgradeLibrary/List]]',
+  ],
   /* // Generate plugins json format
   plugins: [
     '--verbose',

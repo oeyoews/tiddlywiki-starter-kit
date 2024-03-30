@@ -1,16 +1,15 @@
 const { tmpdir } = require('node:os');
 const path = require('path');
-const config = require('./config/index');
 
-const tiddlywikiName = config.name;
-const logdir = path.join(tmpdir(), tiddlywikiName);
+const name = 'TiddlyWiki5';
+const logdir = path.join(tmpdir(), name);
 console.log(`日志路径：${logdir}`);
 
 module.exports = {
   // https://github.com/Unitech/pm2/blob/master/lib/API/schema.json
   apps: [
     {
-      name: tiddlywikiName,
+      name,
       script: './lib/startup.mjs',
       watch: ['./plugins', './themes'],
       ignore_watch: ['./tiddlers', '**/tiddlers', 'package/*'],
@@ -23,8 +22,8 @@ module.exports = {
       log_file: `${logdir}/logs/combined.outerr.log`,
       out_file: `${logdir}/logs/out.log`,
       err_file: `${logdir}/logs/err.log`,
-      log_date_format: 'YYYY-MM-DD HH:mm:ss'
+      log_date_format: 'YYYY-MM-DD HH:mm:ss',
       // env:{}
-    }
-  ]
+    },
+  ],
 };
