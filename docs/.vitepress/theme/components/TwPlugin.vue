@@ -16,6 +16,6 @@ const href = computed(() => {
     :title="name"
     class="font-bold"
   >
-    {{ name }}
+    🧩 {{ name }}
   </a>
 </template>

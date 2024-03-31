@@ -1,6 +1,6 @@
 # Tiddlywiki codemirror 6
 
-> 您的下一个 TiddlyWiki5 编辑器：Codemirror6
+> 你的下一个 TiddlyWiki5 编辑器：Codemirror6
 
 ## 插件在线地址
 

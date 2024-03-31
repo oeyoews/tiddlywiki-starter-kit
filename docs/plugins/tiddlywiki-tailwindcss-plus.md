@@ -1,5 +1,7 @@
 # Tiddlywiki Tailwindcss Plus
 
+> 直接在 tiddlywiki 里面写 tailwindcss
+
 ## 在线地址
 
 <TwPlugin name="tiddlywiki-tailwindcss-plus" />

@@ -1,5 +1,7 @@
 # TiddlyWiki5 Vue3
 
+> 直接用 Vue 写 tiddlywiki 插件
+
 ## Why use Vue, not React or others?
 
 * Vue 更接近原生 js 的写法，虽然 React 也支持 CDN 引入，但是体验极差，而 Vue 则天然的对 CDN 的用法更加友好。
