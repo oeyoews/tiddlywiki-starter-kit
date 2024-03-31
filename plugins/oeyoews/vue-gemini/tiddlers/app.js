@@ -14,6 +14,7 @@ const API_KEY = $tw.wiki.getTiddler('$:/plugins/oeyoews/vue-gemini/config')
   .fields.api;
 
 const app = (title = '') => {
+  const summary = $tw.wiki.getTiddler(title).fields?.summary;
   const component = {
     setup() {
       const res = ref('');
@@ -30,9 +31,8 @@ const app = (title = '') => {
     },
 
     mounted() {
-      const summary = $tw.wiki.getTiddler(title).fields?.summary;
       if (summary) {
-        this.res = summary;
+        this.typewritter(summary);
         this.isLoading = false;
         return;
       }
@@ -46,6 +46,21 @@ const app = (title = '') => {
     },
 
     methods: {
+      typewritter(summary) {
+        const length = summary.length;
+        let index = 0;
+        const intervalId = setInterval(() => {
+          if (index < length) {
+            const text = summary.substring(0, index + 1);
+            this.res = $tw.wiki.renderText('text/html', 'text/markdown', text, {
+              parseAsInline: true,
+            });
+            index++;
+          } else {
+            clearInterval(intervalId);
+          }
+        }, 100); // 控制打字速度
+      },
       async aibot() {
         const genAI = new GoogleGenerativeAI(this.API_KEY);
         const model = genAI.getGenerativeModel({ model: 'gemini-pro' });
@@ -69,14 +84,20 @@ const app = (title = '') => {
         const msg = this.text + ' \n简短总结上面这段话';
 
         try {
-          const result = await chat.sendMessage(msg);
-          const response = await result.response;
-          const newsummary = response.text();
-          newsummary &&
-            $tw.wiki.setText(title, 'summary', null, newsummary, {
+          const result = await chat.sendMessageStream(msg);
+          for await (const chunk of result.stream) {
+            const chunkText = chunk.text();
+            this.res += chunkText;
+            // 由于vue 更新队列是异步的， 所以不会有打字机效果
+            // for (const char of chunkText) {
+            //   this.res += char;
+            //   console.log(this.res);
+            // }
+          }
+          this.res &&
+            $tw.wiki.setText(title, 'summary', null, this.res, {
               suppressTimestamp: true,
             });
-          this.res = newsummary;
         } catch (e) {
           console.error(e);
           this.res = e;

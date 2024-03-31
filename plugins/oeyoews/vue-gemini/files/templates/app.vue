@@ -14,7 +14,7 @@
         {{ tip }}
       </div>
     </div>
-    <div class="mt-2 indent-4"> {{ res }} </div>
+    <div class="mt-2 indent-4" v-html="res" />
     <div v-if="isLoading">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
         <circle cx="18" cy="12" r="0" fill="black">

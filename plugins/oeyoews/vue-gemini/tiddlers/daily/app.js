@@ -13,6 +13,7 @@ const API_KEY = $tw.wiki.getTiddler('$:/plugins/oeyoews/vue-gemini/config')
   .fields.api;
 
 const app = (title, prompt = '每日一句, 类型为幽默') => {
+  const quote = $tw.wiki.getTiddler(title).fields?.quote;
   const component = {
     setup() {
       const res = ref('');
@@ -28,9 +29,8 @@ const app = (title, prompt = '每日一句, 类型为幽默') => {
     },
 
     mounted() {
-      const quote = $tw.wiki.getTiddler(title).fields?.quote;
       if (quote) {
-        this.res = quote;
+        this.typewritter(quote);
         this.isLoading = false;
         return;
       }
@@ -44,6 +44,22 @@ const app = (title, prompt = '每日一句, 类型为幽默') => {
     },
 
     methods: {
+      typewritter(quote) {
+        const length = quote.length;
+        let index = 0;
+        const intervalId = setInterval(() => {
+          if (index < length) {
+            const text = quote.substring(0, index + 1);
+            // this.res = $tw.wiki.renderText('text/html', 'text/markdown', text, {
+            //   parseAsInline: false,
+            // });
+            this.res = text;
+            index++;
+          } else {
+            clearInterval(intervalId);
+          }
+        }, 100); // 控制打字速度
+      },
       async aibot() {
         const genAI = new GoogleGenerativeAI(this.API_KEY);
         const generationConfig = {
