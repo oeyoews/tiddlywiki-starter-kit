@@ -26,7 +26,7 @@
 
 ## Completions
 * `/` 获取代码片段
-* `[[` 或 <code v-pre>{{</code> 获取 tiddlers
+* `[[` 或 `{{` 获取 tiddlers
 * `:` 获取表情符号
 * `[img[` 获取图片
 * `<$` 获取小部件

@@ -26,6 +26,13 @@ export default defineConfig({
   markdown: {
     config: (md) => {
       md.use(MarkdownTask);
+
+      // https://github.com/vuejs/vitepress/discussions/3724#discussioncomment-8963669
+      const defaultCodeInline = md.renderer.rules.code_inline!;
+      md.renderer.rules.code_inline = (tokens, idx, options, env, self) => {
+        tokens[idx].attrSet('v-pre', '');
+        return defaultCodeInline(tokens, idx, options, env, self);
+      };
     },
     image: {
       // image lazy loading is disabled by default
