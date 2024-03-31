@@ -1,0 +1,8 @@
+title: $:/plugins/oeyoews/vue-zhipu/layout
+name: zhipu ai
+description: zhipu ai
+tags: $:/tags/Layout
+
+<div class="prose max-w-none prose-indigo m-auto sm:w-auto md:w-2/3">
+<$vue-zhipu />
+</div>

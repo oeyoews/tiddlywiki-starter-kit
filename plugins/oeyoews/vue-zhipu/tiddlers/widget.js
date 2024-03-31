@@ -33,10 +33,13 @@ class ZhipuWidget extends Widget {
     const domNode = this.document.createElement('div');
     const TiddlyWikiVue = require('./plugins/TiddlyWikiVue');
 
+    const ElementPlus = require('element-plus.min.js');
+
     try {
       const app = createApp(component());
 
       app.use(TiddlyWikiVue);
+      app.use(ElementPlus);
 
       app.config.errorHandler = (err) => {
         const text = `[Vue3](${app.version}): ` + err;

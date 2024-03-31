@@ -25,7 +25,7 @@ const app = () => {
     setup() {
       const the_last_message = ref('');
       const api_key = ref(api);
-      const prompt = ref('who you are');
+      const prompt = ref('');
       const chatRef = ref('');
 
       const post_body = computed(() =>
@@ -191,6 +191,9 @@ const app = () => {
         prompt,
         btnClicked,
       };
+    },
+    mounted() {
+      this.chatRef.focus();
     },
 
     template: getTemplate('$:/plugins/oeyoews/vue-zhipu/templates/app.vue'),
