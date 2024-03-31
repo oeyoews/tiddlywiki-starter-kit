@@ -27,9 +27,23 @@
 
 * vue-gemini-daily widget 会自动为 带有 Journal 的 tiddler 生成一个每日一句，风格为幽默类型，保存在当前 tiddler 的 quote 字段. 如果希望重新生成，删除 quote 字段即可
 
+## 代理
+
+* gemini 目前不支持一些地区国家, 但是可以通过代理来解决，但是仍然还是需要 🪜
+
+```js
+// @see: https://zhile.io/2023/12/24/gemini-pro-proxy.html
+export default {
+  async fetch(request, env) {
+    const url = new URL(request.url);
+    url.host = 'generativelanguage.googleapis.com';
+    return fetch(new Request(url, request))
+  }
+}
+```
+
 ## 注意
 
 * 插件依赖有 neotw-vue, tailwindcss. 建议用户直接通过 [CPL](https://tw-cn.netlify.app/#%24%3A%2Fplugins%2FGk0Wk%2FCPL-Repo:%24%3A%2Fplugins%2FGk0Wk%2FCPL-Repo) 插件 安装.
-* gemini 目前不支持一些地区国家，需要特殊网络解决, 用户可通过谷歌搜索查询更多细节.
 * 插件本身不提供 apikey, 用户需要自己获取 gemini apikey, 目前可以免费在[gemini 官网](https://aistudio.google.com/app/apikey)获取，
-* api 会自动保存在 `$:/plugins/oeyoews/vue-gemini/config` 文件的 api 字段上，注意不要上传到公共代码库.
+* api 会自动保存在 `$:/plugins/oeyoews/vue-gemini/config` 文件的 api 字段上，注意不要上传到公共代码库. 如果你有自己的代理, 可以新增一个 proxy 字段
