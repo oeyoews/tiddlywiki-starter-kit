@@ -31,6 +31,9 @@
         <el-button native-type="submit" class="shrink-0">发送</el-button>
       </form>
       <div v-html="the_last_message_html" class="mt-8 rounded border-dimmed-700 p-2"></div>
+      <!-- <div>
+        <el-button @click="copyToClipboard" class="shrink-0">copy</el-button>
+      </div> -->
     </div>
   </div>
 

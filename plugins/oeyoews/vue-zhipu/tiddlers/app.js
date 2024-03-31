@@ -27,6 +27,7 @@ const app = () => {
       const api_key = ref(api);
       const prompt = ref('');
       const chatRef = ref('');
+      const isChat = ref(false);
 
       const post_body = computed(() =>
         JSON.stringify(
@@ -107,6 +108,7 @@ const app = () => {
 
           if (res_stream.done) {
             // console.log('Stream closed');
+            isChat.value = false;
             prompt.value = '';
             chatRef.value.focus();
             return;
@@ -170,6 +172,7 @@ const app = () => {
         };
         let my_body = JSON.parse(post_body.value);
         fetchTalk(my_headers, my_body, handleStreamChunk);
+        isChat.value = true;
       };
       const the_last_message_html = computed(() =>
         $tw.wiki.renderText(
@@ -182,7 +185,12 @@ const app = () => {
         ),
       );
 
+      const copyToClipboard = () =>
+        $tw.utils.copyToClipboard(the_last_message.value);
+
       return {
+        isChat,
+        copyToClipboard,
         the_last_message,
         the_last_message_html,
         api_key,
