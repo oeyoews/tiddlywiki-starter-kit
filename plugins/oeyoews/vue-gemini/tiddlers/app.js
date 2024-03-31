@@ -5,7 +5,7 @@ module-type: library
 
 \*/
 
-const { ref } = window.Vue;
+const { computed, ref } = window.Vue;
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 const { GoogleGenerativeAI } = require('./lib/gemini.min.js');
@@ -21,7 +21,14 @@ const app = (title = '') => {
       const isLoading = ref(true);
       const tip = ref('AI 生成的摘要');
 
+      const resHTML = computed(() => {
+        return $tw.wiki.renderText('text/html', 'text/markdown', res.value, {
+          parseAsInline: true,
+        });
+      });
+
       return {
+        resHTML,
         API_KEY,
         res,
         tip,
@@ -39,7 +46,7 @@ const app = (title = '') => {
       if (!API_KEY) {
         console.error('请填写你的 gemini API_KEY');
         this.isLoading = false;
-        this.res = '请填写你的 gemini API_KEY';
+        this.resHTML = '请填写你的 gemini API_KEY';
         return;
       }
       this.aibot();
@@ -52,14 +59,13 @@ const app = (title = '') => {
         const intervalId = setInterval(() => {
           if (index < length) {
             const text = summary.substring(0, index + 1);
-            this.res = $tw.wiki.renderText('text/html', 'text/markdown', text, {
-              parseAsInline: true,
-            });
+            this.res = text + ' ⬤';
             index++;
           } else {
+            this.res = summary;
             clearInterval(intervalId);
           }
-        }, 100); // 控制打字速度
+        }, 50); // 控制打字速度
       },
       async aibot() {
         const genAI = new GoogleGenerativeAI(this.API_KEY);

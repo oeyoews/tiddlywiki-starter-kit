@@ -5,7 +5,7 @@ module-type: library
 
 \*/
 
-const { ref } = window.Vue;
+const { computed, ref } = window.Vue;
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 const { GoogleGenerativeAI } = require('../lib/gemini.min.js');
@@ -19,7 +19,15 @@ const app = (title, prompt = '每日一句, 类型为幽默') => {
       const res = ref('');
       const isLoading = ref(true);
       const tip = ref('每日一句');
+
+      const resHTML = computed(() => {
+        return $tw.wiki.renderText('text/html', 'text/markdown', res.value, {
+          parseAsInline: true,
+        });
+      });
+
       return {
+        resHTML,
         tip,
         API_KEY,
         res,
@@ -37,7 +45,7 @@ const app = (title, prompt = '每日一句, 类型为幽默') => {
       if (!API_KEY) {
         console.error('请填写你的 gemini API_KEY');
         this.isLoading = false;
-        this.res = '请填写你的 gemini API_KEY';
+        this.resHTML = '请填写你的 gemini API_KEY';
         return;
       }
       this.aibot();
@@ -50,12 +58,10 @@ const app = (title, prompt = '每日一句, 类型为幽默') => {
         const intervalId = setInterval(() => {
           if (index < length) {
             const text = quote.substring(0, index + 1);
-            // this.res = $tw.wiki.renderText('text/html', 'text/markdown', text, {
-            //   parseAsInline: false,
-            // });
-            this.res = text;
+            this.res = text + ' ⬤';
             index++;
           } else {
+            this.res = quote;
             clearInterval(intervalId);
           }
         }, 100); // 控制打字速度
