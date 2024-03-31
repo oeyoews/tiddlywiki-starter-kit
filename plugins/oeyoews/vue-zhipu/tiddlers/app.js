@@ -5,7 +5,7 @@ module-type: library
 
 \*/
 
-const { computed, ref } = window.Vue;
+const { watch, computed, ref } = window.Vue;
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 
@@ -17,25 +17,39 @@ if (!crypto.subtle) {
       `);
 }
 
-const const_body_str = {
-  model: 'glm-3-turbo',
-  stream: true,
+const api = localStorage.getItem('ZHIPU_APIKEY') || '';
 
-  // 缓存问题
-  messages: [
-    {
-      role: 'user',
-      content: '你知道tiddlywiki 的一切， 请为我简短介绍一下它',
-    },
-  ],
-};
-
+// TODO: 取消上次的请求
 const app = () => {
   const component = {
     setup() {
-      const the_last_message = ref('这里是api返回的文本。');
-      const api_key = ref('');
-      const post_boby = ref(JSON.stringify(const_body_str));
+      const the_last_message = ref('');
+      const api_key = ref(api);
+      const prompt = ref('who you are');
+      const chatRef = ref('');
+
+      const post_body = computed(() =>
+        JSON.stringify(
+          {
+            model: 'glm-3-turbo',
+            stream: 'true',
+            // 缓存问题(maybe)
+            messages: [
+              {
+                role: 'user',
+                content: prompt.value,
+              },
+            ],
+          },
+          null,
+          2,
+        ),
+      );
+
+      watch(api_key, (newVal) => {
+        localStorage.setItem('ZHIPU_APIKEY', newVal);
+      });
+
       // 01 - jwtSign 方法：独立方法，可以用来生成JWT签名。（智谱AI 需要的请求头中的 Authorization 字段）
       const jwtSign = async function (secret, payload, my_header) {
         const header = my_header || { alg: 'HS256', sign_type: 'SIGN' };
@@ -79,8 +93,8 @@ const app = () => {
             headers: post_headers,
             body:
               typeof post_body === 'object'
-                ? JSON.stringify(post_body)
-                : post_boby,
+                ? JSON.stringify(post_body, null, 2)
+                : post_body,
           },
         );
 
@@ -93,6 +107,8 @@ const app = () => {
 
           if (res_stream.done) {
             // console.log('Stream closed');
+            prompt.value = '';
+            chatRef.value.focus();
             return;
           } else {
             buffer += new TextDecoder('utf-8').decode(res_stream.value);
@@ -119,11 +135,13 @@ const app = () => {
         // 注意：这里的chunk是原始流数据块格式（`data:  ...\n\n`），你需要根据你的具体业务具体处理。
         // console.log(chunk);
 
+        if (chunk.endsWith('[DONE]')) return;
         let temp_obj = JSON.parse(
           chunk.replace(/^data: /, '').replace('\n\n$', ''),
         );
-        the_last_message.value +=
-          (temp_obj.choices || [{}])[0]?.delta?.content || '';
+
+        const newContent = (temp_obj.choices || [{}])[0]?.delta?.content || '';
+        the_last_message.value += newContent;
       };
 
       // UI-on-click
@@ -150,7 +168,7 @@ const app = () => {
           Authorization: res_auth_token,
           'content-type': 'application/json',
         };
-        let my_body = JSON.parse(post_boby.value);
+        let my_body = JSON.parse(post_body.value);
         fetchTalk(my_headers, my_body, handleStreamChunk);
       };
       const the_last_message_html = computed(() =>
@@ -168,7 +186,9 @@ const app = () => {
         the_last_message,
         the_last_message_html,
         api_key,
-        post_boby,
+        chatRef,
+        post_body,
+        prompt,
         btnClicked,
       };
     },
