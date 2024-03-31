@@ -8,6 +8,10 @@
     "link": "/plugins/element-plus"
   },
   {
+    "text": "🧩markdown-extensions-startup",
+    "link": "/plugins/markdown-extensions-startup"
+  },
+  {
     "text": "🧩markdown-it-mermaid",
     "link": "/plugins/markdown-it-mermaid"
   },
@@ -30,5 +34,9 @@
   {
     "text": "🧩vue-gemini",
     "link": "/plugins/vue-gemini"
+  },
+  {
+    "text": "🧩vue-zhipu",
+    "link": "/plugins/vue-zhipu"
   }
 ]
