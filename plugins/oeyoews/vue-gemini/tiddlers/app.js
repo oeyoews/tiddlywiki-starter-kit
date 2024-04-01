@@ -21,13 +21,13 @@ const {
   speed = 20,
 } = $tw.wiki.getTiddler('$:/plugins/oeyoews/vue-gemini/config').fields;
 
-const app = (title = '') => {
-  const summary = $tw.wiki.getTiddler(title).fields?.summary;
+const app = (title = '', text = '', tip = 'AI 生成的摘要') => {
+  const summary = text || $tw.wiki.getTiddler(title).fields?.summary;
+  console.log(summary);
   const component = {
     setup() {
       const res = ref('');
       const isLoading = ref(true);
-      const tip = ref('AI 生成的摘要');
 
       const resHTML = computed(() => {
         return $tw.wiki.renderText('text/html', 'text/markdown', res.value, {
