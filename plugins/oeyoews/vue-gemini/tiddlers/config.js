@@ -10,10 +10,18 @@ const {
   api: API_KEY,
   icon = '⬤',
   speed = 20,
+  model = 'gemini',
+  SPARK_API_KEY = '',
+  SPARK_APP_ID = '',
+  SPARK_API_SECRET = '',
 } = $tw.wiki.getTiddler('$:/plugins/oeyoews/vue-gemini/config').fields;
 
 module.exports = {
-  API_KEY,
   icon,
+  model,
   speed,
+  API_KEY,
+  SPARK_API_KEY,
+  SPARK_APP_ID,
+  SPARK_API_SECRET,
 };

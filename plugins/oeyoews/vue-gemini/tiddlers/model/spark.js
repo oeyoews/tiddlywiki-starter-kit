@@ -16,7 +16,12 @@ const {
 
 // @see: https://github.com/greywen/spark-node
 module.exports = async (option) => {
-  const { APPID, API_KEY: APIKey, APISecret, prompt } = option;
+  const {
+    APP_ID: APPID,
+    API_KEY: APIKey,
+    API_SECRET: APISecret,
+    prompt,
+  } = option;
 
   const client = new SparkClient(APPID, APIKey, APISecret);
 
@@ -27,7 +32,6 @@ module.exports = async (option) => {
 
   let contents = '';
   for await (const message of generator) {
-    console.log(message.text);
     contents += message.text;
   }
   return contents;

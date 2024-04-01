@@ -11,9 +11,17 @@ const { computed, ref } = window.Vue;
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 const { gemini: geminiChat, spark: sparkChat } = require('./model/index');
 const getText = (title) => $tw.wiki.getTiddlerText(title);
-const { API_KEY, speed, icon } = require('./config.js');
+const {
+  API_KEY,
+  speed,
+  icon,
+  SPARK_APP_ID,
+  SPARK_API_KEY,
+  SPARK_API_SECRET,
+  model: MODEL,
+} = require('./config.js');
 
-const app = (title = '', text = '', tip = 'AI 生成的摘要') => {
+const app = (title = '', text = '', tip = 'AI 生成的摘要', model) => {
   const summary = text || $tw.wiki.getTiddler(title).fields?.summary;
   const component = {
     setup() {
@@ -70,10 +78,27 @@ const app = (title = '', text = '', tip = 'AI 生成的摘要') => {
       async aibot() {
         const prompt = this.text + ' \n简短总结上面这段话';
         try {
-          this.res = await geminiChat({
-            API_KEY,
-            prompt,
-          });
+          switch (model || MODEL) {
+            case 'gemini':
+              this.res = await geminiChat({
+                prompt,
+                API_KEY,
+              });
+              break;
+            case 'spark':
+              if (!SPARK_API_KEY) {
+                throw Error('没有填写 SPARK_API_KEY');
+              }
+              this.res = await sparkChat({
+                prompt,
+                API_KEY: SPARK_API_KEY,
+                APP_ID: SPARK_APP_ID,
+                API_SECRET: SPARK_API_SECRET,
+              });
+              break;
+            default:
+              break;
+          }
 
           this.res &&
             $tw.wiki.setText(title, 'summary', null, this.res, {
