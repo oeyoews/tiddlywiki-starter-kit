@@ -11,6 +11,7 @@ const { computed, ref } = window.Vue;
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 const { gemini: geminiChat, spark: sparkChat } = require('./model/index');
 const getText = (title) => $tw.wiki.getTiddlerText(title);
+
 const {
   API_KEY,
   speed,

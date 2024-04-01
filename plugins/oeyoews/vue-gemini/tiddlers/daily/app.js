@@ -12,9 +12,17 @@ const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 
 const { gemini: geminiChat, spark: sparkChat } = require('../model/index');
 
-const { API_KEY, speed, icon } = require('../config.js');
+const {
+  API_KEY,
+  speed,
+  icon,
+  SPARK_APP_ID,
+  SPARK_API_KEY,
+  SPARK_API_SECRET,
+  model: MODEL,
+} = require('../config.js');
 
-const app = (title, prompt = '每日一句, 类型为幽默') => {
+const app = (title, prompt = '每日一句, 类型为幽默', model) => {
   const quote = $tw.wiki.getTiddler(title).fields?.quote;
   const component = {
     setup() {
@@ -73,15 +81,30 @@ const app = (title, prompt = '每日一句, 类型为幽默') => {
           // const result = await geminiChat(this.API_KEY).sendMessage(prompt);
           // const response = await result.response;
           // const quote = response.text();
-          const quote = await geminiChat({
-            API_KEY,
-            prompt,
-          });
-          quote &&
-            $tw.wiki.setText(title, 'quote', null, quote, {
+          switch (model || MODEL) {
+            case 'spark':
+              if (!SPARK_API_KEY) {
+                throw Error('没有填写 SPARK_API_KEY');
+              }
+              this.res = await sparkChat({
+                prompt,
+                API_KEY: SPARK_API_KEY,
+                APP_ID: SPARK_APP_ID,
+                API_SECRET: SPARK_API_SECRET,
+              });
+              break;
+            default:
+              this.res = await geminiChat({
+                prompt,
+                API_KEY,
+              });
+              break;
+          }
+
+          this.res &&
+            $tw.wiki.setText(title, 'quote', null, this.res, {
               suppressTimestamp: true,
             });
-          this.res = quote;
           // 如果输出为空， 显示重新生成按钮
         } catch (e) {
           console.error(e.message);
