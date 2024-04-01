@@ -102,8 +102,8 @@ const app = (title, prompt = '每日一句, 类型为幽默') => {
           this.res = quote;
           // 如果输出为空， 显示重新生成按钮
         } catch (e) {
-          console.error(e);
-          this.res = e;
+          console.error(e.message);
+          this.res = e.message;
         }
         this.isLoading = false;
       },

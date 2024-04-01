@@ -109,8 +109,8 @@ const app = (title = '') => {
               suppressTimestamp: true,
             });
         } catch (e) {
-          console.error(e);
-          this.res = e;
+          console.error(e.message);
+          this.res = e.message;
         }
         this.isLoading = false;
       },
