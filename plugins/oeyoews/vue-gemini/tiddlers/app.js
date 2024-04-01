@@ -2,8 +2,8 @@
 title: $:/plugins/oeyoews/vue-gemini/app.js
 type: application/javascript
 module-type: library
+description: 摘要总结
 
-摘要总结
 \*/
 
 const { computed, ref } = window.Vue;
@@ -11,11 +11,12 @@ const { computed, ref } = window.Vue;
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 const chat = require('./model/gemini');
 const getText = (title) => $tw.wiki.getTiddlerText(title);
-const {
-  api: API_KEY,
-  icon = '⬤',
-  speed = 20,
-} = $tw.wiki.getTiddler('$:/plugins/oeyoews/vue-gemini/config').fields;
+const { API_KEY, speed, icon } = require('./config.js');
+// const {
+//   api: API_KEY,
+//   icon = '⬤',
+//   speed = 20,
+// } = $tw.wiki.getTiddler('$:/plugins/oeyoews/vue-gemini/config').fields;
 
 const app = (title = '', text = '', tip = 'AI 生成的摘要') => {
   const summary = text || $tw.wiki.getTiddler(title).fields?.summary;

@@ -9,16 +9,10 @@ module-type: library
 const { computed, ref } = window.Vue;
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
-const {
-  HarmBlockThreshold,
-  HarmCategory,
-  GoogleGenerativeAI,
-} = require('../lib/gemini.min.js');
-const {
-  api: API_KEY,
-  icon = '⬤',
-  speed = 20,
-} = $tw.wiki.getTiddler('$:/plugins/oeyoews/vue-gemini/config').fields;
+
+const chat = require('../model/gemini');
+
+const { API_KEY, speed, icon } = require('../config.js');
 
 const app = (title, prompt = '每日一句, 类型为幽默') => {
   const quote = $tw.wiki.getTiddler(title).fields?.quote;
@@ -75,38 +69,8 @@ const app = (title, prompt = '每日一句, 类型为幽默') => {
         }, speed); // 控制打字速度
       },
       async aibot() {
-        const genAI = new GoogleGenerativeAI(this.API_KEY);
-        const generationConfig = {
-          //   stopSequences: ['red'],
-          maxOutputTokens: 200,
-          temperature: 0.5,
-          topP: 0.1,
-          topK: 16,
-        };
-        const model = genAI.getGenerativeModel({
-          model: 'gemini-pro',
-          generationConfig,
-          safetySettings: [
-            {
-              category: 'HARM_CATEGORY_HATE_SPEECH',
-              threshold: 'BLOCK_NONE',
-            },
-            {
-              category: 'HARM_CATEGORY_HARASSMENT',
-              threshold: 'BLOCK_NONE',
-            },
-          ],
-        });
-
-        const chat = model.startChat({
-          history: [],
-          generationConfig: {
-            maxOutputTokens: 100,
-          },
-        });
-
         try {
-          const result = await chat.sendMessage(prompt);
+          const result = await chat(this.API_KEY).sendMessage(prompt);
           const response = await result.response;
           const quote = response.text();
           quote &&
