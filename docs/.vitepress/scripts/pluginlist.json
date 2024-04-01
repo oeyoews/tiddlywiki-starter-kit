@@ -16,6 +16,10 @@
     "link": "/plugins/markdown-it-mermaid"
   },
   {
+    "text": "🧩neotw-ai",
+    "link": "/plugins/neotw-ai"
+  },
+  {
     "text": "🧩neotw-notion-gallery",
     "link": "/plugins/neotw-notion-gallery"
   },
@@ -34,10 +38,6 @@
   {
     "text": "🧩tiddlywiki-tailwindcss-plus",
     "link": "/plugins/tiddlywiki-tailwindcss-plus"
-  },
-  {
-    "text": "🧩neotw-ai",
-    "link": "/plugins/neotw-ai"
   },
   {
     "text": "🧩vue-zhipu",

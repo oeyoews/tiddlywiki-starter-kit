@@ -1,6 +1,6 @@
 # AI 自动总结文章摘要
 
-> [!NOTE]
+> [!TIP]
 > 现在同时支持 gemini/spark 两种模型切换!
 
 > [!TIP]
