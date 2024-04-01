@@ -1,5 +1,5 @@
 /*\
-title: $:/plugins/oeyoews/vue-gemini/config.js
+title: $:/plugins/oeyoews/neotw-ai/config.js
 type: application/javascript
 module-type: library
 description: config
@@ -14,7 +14,7 @@ const {
   SPARK_API_KEY = '',
   SPARK_APP_ID = '',
   SPARK_API_SECRET = '',
-} = $tw.wiki.getTiddler('$:/plugins/oeyoews/vue-gemini/config').fields;
+} = $tw.wiki.getTiddler('$:/plugins/oeyoews/neotw-ai/config').fields;
 
 module.exports = {
   icon,

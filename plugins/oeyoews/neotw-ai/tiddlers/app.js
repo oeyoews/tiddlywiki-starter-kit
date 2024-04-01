@@ -1,5 +1,5 @@
 /*\
-title: $:/plugins/oeyoews/vue-gemini/app.js
+title: $:/plugins/oeyoews/neotw-ai/app.js
 type: application/javascript
 module-type: library
 description: 摘要总结/每日一句
@@ -135,7 +135,7 @@ const app = (
       },
     },
 
-    template: getTemplate('$:/plugins/oeyoews/vue-gemini/templates/app.vue'),
+    template: getTemplate('$:/plugins/oeyoews/neotw-ai/templates/app.vue'),
 
     components: {},
   };

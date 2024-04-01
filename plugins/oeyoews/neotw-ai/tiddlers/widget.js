@@ -1,9 +1,9 @@
 /*\
-title: $:/plugins/oeyoews/vue-gemini/widget.js
+title: $:/plugins/oeyoews/neotw-ai/widget.js
 type: application/javascript
 module-type: widget
 
-vue-gemini widget
+neotw-ai widget
 
 \*/
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
@@ -69,5 +69,5 @@ class GeminiWidget extends Widget {
   }
 }
 
-/** @description vue-gemini widget */
-exports['vue-gemini'] = GeminiWidget;
+/** @description neotw-ai widget */
+exports['neotw-ai'] = GeminiWidget;

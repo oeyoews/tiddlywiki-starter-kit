@@ -1,5 +1,5 @@
 /*\
-title: $:/plugins/oeyoews/vue-gemini/model/spark.js
+title: $:/plugins/oeyoews/neotw-ai/model/spark.js
 type: application/javascript
 module-type: library
 

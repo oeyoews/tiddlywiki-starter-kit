@@ -1,5 +1,5 @@
 /*\
-title: $:/plugins/oeyoews/vue-gemini/model/gemini.js
+title: $:/plugins/oeyoews/neotw-ai/model/gemini.js
 type: application/javascript
 module-type: library
 

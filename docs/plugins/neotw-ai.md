@@ -10,26 +10,26 @@
 
 ## 插件在线地址
 
-<TwPlugin name="vue-gemini" />
+<TwPlugin name="neotw-ai" />
 
 ## 用法
 
 ```html
-<$vue-gemini model="gemini" />
-<$vue-gemini model="spark" />
+<$neotw-ai model="gemini" />
+<$neotw-ai model="spark" />
 ```
 
 ```html
-<$vue-gemini-daily />
+<$neotw-ai-daily />
 ```
 
 * 以上是 widget 的用法. 会自动总结当前 tiddler 的内容。
 
-* vue-gemini 插件提供了另外一种方便的用法, 仅仅只需在当前 tiddler 添加 `gemini:yes` 的字段内容，即可使用
+* neotw-ai 插件提供了另外一种方便的用法, 仅仅只需在当前 tiddler 添加 `gemini:yes` 的字段内容，即可使用
 
 ![](img/2024-03-27-20-33-29.png)
 
-* vue-gemini-daily widget 会自动为 带有 Journal 的 tiddler 生成一个每日一句，风格为幽默类型，保存在当前 tiddler 的 quote 字段. 如果希望重新生成，删除 quote 字段即可
+* neotw-ai-daily widget 会自动为 带有 Journal 的 tiddler 生成一个每日一句，风格为幽默类型，保存在当前 tiddler 的 quote 字段. 如果希望重新生成，删除 quote 字段即可
 
 ## 代理
 
@@ -50,4 +50,4 @@ export default {
 
 * 插件依赖有 neotw-vue, tailwindcss. 建议用户直接通过 [CPL](https://tw-cn.netlify.app/#%24%3A%2Fplugins%2FGk0Wk%2FCPL-Repo:%24%3A%2Fplugins%2FGk0Wk%2FCPL-Repo) 插件 安装.
 * 插件本身不提供 apikey, 用户需要自己获取 gemini apikey, 目前可以免费在[gemini 官网](https://aistudio.google.com/app/apikey)获取，
-* api 会自动保存在 `$:/plugins/oeyoews/vue-gemini/config` 文件的 api 字段上，注意不要上传到公共代码库. 如果你有自己的代理, 可以新增一个 proxy 字段
+* api 会自动保存在 `$:/plugins/oeyoews/neotw-ai/config` 文件的 api 字段上，注意不要上传到公共代码库. 如果你有自己的代理, 可以新增一个 proxy 字段

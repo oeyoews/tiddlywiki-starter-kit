@@ -6,7 +6,7 @@
 			"fields": {
 				"title": {
 					"source": "filename",
-					"prefix": "$:/plugins/oeyoews/vue-gemini/lib/"
+					"prefix": "$:/plugins/oeyoews/neotw-ai/lib/"
 				},
 				"module-type": "library",
 				"type": "application/javascript",
@@ -20,7 +20,7 @@
 			"fields": {
 				"title": {
 					"source": "filename",
-					"prefix": "$:/plugins/oeyoews/vue-gemini/templates/"
+					"prefix": "$:/plugins/oeyoews/neotw-ai/templates/"
 				},
 				"hide-body": "yes"
 			}
@@ -32,7 +32,7 @@
 			"fields": {
 				"title": {
 					"source": "filename",
-					"prefix": "$:/plugins/oeyoews/vue-gemini/plugins/"
+					"prefix": "$:/plugins/oeyoews/neotw-ai/plugins/"
 				},
 				"module-type": "library",
 				"type": "application/javascript"
@@ -45,7 +45,7 @@
 			"fields": {
 				"title": {
 					"source": "filename",
-					"prefix": "$:/plugins/oeyoews/vue-gemini/components/"
+					"prefix": "$:/plugins/oeyoews/neotw-ai/components/"
 				},
 				"module-type": "library",
 				"type": "application/javascript"
