@@ -3,6 +3,7 @@ title: $:/plugins/oeyoews/vue-gemini/daily/app.js
 type: application/javascript
 module-type: library
 
+每日一句
 \*/
 
 const { computed, ref } = window.Vue;

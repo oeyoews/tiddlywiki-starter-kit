@@ -1,7 +1,7 @@
 <template>
   <!-- <button @click="aibot"> </button> -->
   <div
-    class="gap-2 border-solid border p-4 rounded border-dimmed-200 dark:bg-dimmed-800 text-black dark:text-white mb-4 text-sm antialiased prose prose-gray max-w-none dark:prose-invert prose-p:mt-0">
+    class="gap-2 border-solid border p-4 rounded border-dimmed-200 dark:bg-dimmed-800 text-black dark:text-white mb-4 text-sm antialiased prose prose-gray max-w-none dark:prose-invert prose-p:my-0">
     <div class="font-bold flex items-center">
       <div class="flex">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 48 48"

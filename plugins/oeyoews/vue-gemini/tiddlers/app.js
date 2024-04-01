@@ -3,6 +3,7 @@ title: $:/plugins/oeyoews/vue-gemini/app.js
 type: application/javascript
 module-type: library
 
+摘要总结
 \*/
 
 const { computed, ref } = window.Vue;
