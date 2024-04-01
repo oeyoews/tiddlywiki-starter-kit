@@ -9,7 +9,11 @@ module-type: library
 const { computed, ref } = window.Vue;
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
-const { GoogleGenerativeAI } = require('../lib/gemini.min.js');
+const {
+  HarmBlockThreshold,
+  HarmCategory,
+  GoogleGenerativeAI,
+} = require('../lib/gemini.min.js');
 const {
   api: API_KEY,
   icon = '⬤',
@@ -82,6 +86,16 @@ const app = (title, prompt = '每日一句, 类型为幽默') => {
         const model = genAI.getGenerativeModel({
           model: 'gemini-pro',
           generationConfig,
+          safetySettings: [
+            {
+              category: 'HARM_CATEGORY_HATE_SPEECH',
+              threshold: 'BLOCK_NONE',
+            },
+            {
+              category: 'HARM_CATEGORY_HARASSMENT',
+              threshold: 'BLOCK_NONE',
+            },
+          ],
         });
 
         const chat = model.startChat({

@@ -9,7 +9,11 @@ module-type: library
 const { computed, ref } = window.Vue;
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
-const { GoogleGenerativeAI } = require('./lib/gemini.min.js');
+const {
+  HarmBlockThreshold,
+  HarmCategory,
+  GoogleGenerativeAI,
+} = require('./lib/gemini.min.js');
 const getText = (title) => $tw.wiki.getTiddlerText(title);
 const {
   api: API_KEY,
@@ -73,7 +77,36 @@ const app = (title = '') => {
       },
       async aibot() {
         const genAI = new GoogleGenerativeAI(this.API_KEY);
-        const model = genAI.getGenerativeModel({ model: 'gemini-pro' });
+
+        const generationConfig = {
+          //   stopSequences: ['red'],
+          maxOutputTokens: 200,
+          temperature: 0.5,
+          topP: 0.1,
+          topK: 16,
+        };
+
+        const model = genAI.getGenerativeModel({
+          model: 'gemini-pro',
+          generationConfig,
+          // https://github.com/google/generative-ai-docs/issues/212
+          // https://ai.google.dev/docs/safety_setting_gemini
+          safetySettings: [
+            {
+              category: 'HARM_CATEGORY_HATE_SPEECH',
+              threshold: 'BLOCK_NONE',
+            },
+            {
+              category: 'HARM_CATEGORY_SEXUALLY_EXPLICIT',
+              threshold: 'BLOCK_NONE',
+            },
+            { category: 'HARM_CATEGORY_HARASSMENT', threshold: 'BLOCK_NONE' },
+            {
+              category: 'HARM_CATEGORY_DANGEROUS_CONTENT',
+              threshold: 'BLOCK_NONE',
+            },
+          ],
+        });
 
         const chat = model.startChat({
           history: [
