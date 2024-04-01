@@ -2,7 +2,7 @@
 title: $:/plugins/oeyoews/vue-gemini/app.js
 type: application/javascript
 module-type: library
-description: 摘要总结
+description: 摘要总结/每日一句
 
 \*/
 
