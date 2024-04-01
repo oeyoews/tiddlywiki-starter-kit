@@ -32,7 +32,7 @@ const app = () => {
       const post_body = computed(() =>
         JSON.stringify(
           {
-            model: 'glm-3-turbo',
+            model: 'glm-3-turbo', // glm-4 的api 是 glm-3-turbo 的20倍(fee) https://open.bigmodel.cn/pricing
             stream: 'true',
             // 缓存问题(maybe)
             messages: [

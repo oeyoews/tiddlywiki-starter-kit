@@ -4,7 +4,7 @@ export default {
     'A modern style and elegant notebook built with Tiddlywiki5 and Tailwindcss',
   server: {
     port: 8000,
-    host: false,
+    host: true,
     hostname: '0.0.0.0',
     qrcode: true, // only host not false works
     zen: false,
