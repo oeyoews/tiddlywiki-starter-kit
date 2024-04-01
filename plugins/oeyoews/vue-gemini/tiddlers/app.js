@@ -34,24 +34,28 @@ const app = (
     setup() {
       const res = ref('');
       const isLoading = ref(true);
+      const header = ref(tip);
 
       const resHTML = computed(() => {
         return $tw.wiki.renderText('text/html', 'text/markdown', res.value, {
           parseAsInline: true,
         });
       });
+      const prompt = ref('');
 
       return {
+        prompt,
         resHTML,
         API_KEY,
         res,
-        tip,
+        header,
         isLoading,
         text: getText(title),
       };
     },
 
     mounted() {
+      this.check();
       if (fieldText) {
         this.typewritter(fieldText);
         this.isLoading = false;
@@ -81,16 +85,18 @@ const app = (
           }
         }, speed); // 控制打字速度
       },
-      async aibot() {
-        let prompt = '';
+      check() {
         switch (targetField) {
           case 'quote':
-            prompt = '每日一句, 类型为幽默';
+            this.prompt = '每日一句, 类型为幽默';
+            this.header = '每日一句';
             break;
           default:
-            prompt = this.text + ' \n简短总结上面这段话';
+            this.prompt = this.text + ' \n简短总结上面这段话';
             break;
         }
+      },
+      async aibot() {
         try {
           if (!this.text) {
             throw Error('没有输入内容');
@@ -98,7 +104,7 @@ const app = (
           switch (model || MODEL) {
             case 'gemini':
               this.res = await geminiChat({
-                prompt,
+                prompt: this.prompt,
                 API_KEY,
               });
               break;
@@ -107,7 +113,7 @@ const app = (
                 throw Error('没有填写 SPARK_API_KEY');
               }
               this.res = await sparkChat({
-                prompt,
+                prompt: this.prompt,
                 API_KEY: SPARK_API_KEY,
                 APP_ID: SPARK_APP_ID,
                 API_SECRET: SPARK_API_SECRET,

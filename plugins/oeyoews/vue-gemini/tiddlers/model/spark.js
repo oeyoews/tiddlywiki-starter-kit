@@ -23,6 +23,9 @@ module.exports = async (option) => {
     prompt,
   } = option;
 
+  if (!prompt) {
+    return '没有任何输入';
+  }
   const client = new SparkClient(APPID, APIKey, APISecret);
 
   const model = ModelVersion.V3_5;

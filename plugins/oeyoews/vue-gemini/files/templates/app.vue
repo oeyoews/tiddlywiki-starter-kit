@@ -11,7 +11,7 @@
         </svg>
       </div>
       <div class="ml-2">
-        {{ tip }}
+        {{ header }}
       </div>
     </div>
     <div class="mt-2 indent-4" v-html="resHTML" />

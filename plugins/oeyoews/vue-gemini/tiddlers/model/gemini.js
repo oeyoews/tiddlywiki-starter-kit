@@ -9,6 +9,9 @@ const { GoogleGenerativeAI } = require('../lib/gemini.min.js');
 
 module.exports = async (option) => {
   const { API_KEY, prompt } = option;
+  if (!prompt) {
+    return '没有任何输入';
+  }
   const genAI = new GoogleGenerativeAI(API_KEY);
 
   const generationConfig = {
