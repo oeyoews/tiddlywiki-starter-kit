@@ -45,7 +45,8 @@
     "unocss": "^0.58.7",
     "vitepress": "^1.0.1",
     "vitepress-plugin-mermaid": "^2.0.16",
-    "vue": "^3.4.21"
+    "vue": "^3.4.21",
+    "ws": "^8.16.0"
   },
   "prettier": "@oeyoews/prettier-config",
   "devDependencies": {
