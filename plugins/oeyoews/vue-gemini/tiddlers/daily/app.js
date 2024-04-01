@@ -10,7 +10,7 @@ const { computed, ref } = window.Vue;
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 
-const chat = require('../model/gemini');
+const { gemini: geminiChat, spark: sparkChat } = require('../model/index');
 
 const { API_KEY, speed, icon } = require('../config.js');
 
@@ -70,9 +70,13 @@ const app = (title, prompt = '每日一句, 类型为幽默') => {
       },
       async aibot() {
         try {
-          const result = await chat(this.API_KEY).sendMessage(prompt);
-          const response = await result.response;
-          const quote = response.text();
+          // const result = await geminiChat(this.API_KEY).sendMessage(prompt);
+          // const response = await result.response;
+          // const quote = response.text();
+          const quote = await geminiChat({
+            API_KEY,
+            prompt,
+          });
           quote &&
             $tw.wiki.setText(title, 'quote', null, quote, {
               suppressTimestamp: true,

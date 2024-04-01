@@ -9,18 +9,12 @@ description: 摘要总结
 const { computed, ref } = window.Vue;
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
-const chat = require('./model/gemini');
+const { gemini: geminiChat, spark: sparkChat } = require('./model/index');
 const getText = (title) => $tw.wiki.getTiddlerText(title);
 const { API_KEY, speed, icon } = require('./config.js');
-// const {
-//   api: API_KEY,
-//   icon = '⬤',
-//   speed = 20,
-// } = $tw.wiki.getTiddler('$:/plugins/oeyoews/vue-gemini/config').fields;
 
 const app = (title = '', text = '', tip = 'AI 生成的摘要') => {
   const summary = text || $tw.wiki.getTiddler(title).fields?.summary;
-  console.log(summary);
   const component = {
     setup() {
       const res = ref('');
@@ -33,6 +27,7 @@ const app = (title = '', text = '', tip = 'AI 生成的摘要') => {
       });
 
       return {
+        prompt,
         resHTML,
         API_KEY,
         res,
@@ -73,19 +68,13 @@ const app = (title = '', text = '', tip = 'AI 生成的摘要') => {
         }, speed); // 控制打字速度
       },
       async aibot() {
-        const msg = this.text + ' \n简短总结上面这段话';
-
+        const prompt = this.text + ' \n简短总结上面这段话';
         try {
-          const result = await chat(this.API_KEY).sendMessageStream(msg);
-          for await (const chunk of result.stream) {
-            const chunkText = chunk.text();
-            this.res += chunkText;
-            // 由于vue 更新队列是异步的， 所以不会有打字机效果
-            // for (const char of chunkText) {
-            //   this.res += char;
-            //   console.log(this.res);
-            // }
-          }
+          this.res = await geminiChat({
+            API_KEY,
+            prompt,
+          });
+
           this.res &&
             $tw.wiki.setText(title, 'summary', null, this.res, {
               suppressTimestamp: true,
