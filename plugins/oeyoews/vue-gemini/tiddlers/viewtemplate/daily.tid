@@ -1,7 +1,7 @@
-title: $:/plugins/oeyoews/vue-gemini/daily/viewtemplate
+title: $:/plugins/oeyoews/vue-gemini/viewtemplate/daily
 tags: $:/tags/ViewTemplate
 list-before: $:/core/ui/ViewTemplate/body
 
 <% if [all[current]!is[system]tag[Journal]] %>
-	<$vue-gemini-daily />
+  <$vue-gemini targetField="quote" />
 <% endif %>

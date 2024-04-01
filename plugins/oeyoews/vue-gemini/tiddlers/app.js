@@ -42,7 +42,6 @@ const app = (
       });
 
       return {
-        prompt,
         resHTML,
         API_KEY,
         res,
@@ -83,7 +82,15 @@ const app = (
         }, speed); // 控制打字速度
       },
       async aibot() {
-        const prompt = this.text + ' \n简短总结上面这段话';
+        let prompt = '';
+        switch (targetField) {
+          case 'quote':
+            prompt = '每日一句, 类型为幽默';
+            break;
+          default:
+            prompt = this.text + ' \n简短总结上面这段话';
+            break;
+        }
         try {
           if (!this.text) {
             throw Error('没有输入内容');

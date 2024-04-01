@@ -1,5 +1,8 @@
 # AI 自动总结文章摘要
 
+> [!NOTE]
+> 现在同时支持 gemini/spark 两种模型切换!
+
 > [!TIP]
 > 借助 gemini api, 自动总结当前 tiddler 的内容，生成 summary 字段.
 
@@ -12,7 +15,8 @@
 ## 用法
 
 ```html
-<$vue-gemini />
+<$vue-gemini model="gemini" />
+<$vue-gemini model="spark" />
 ```
 
 ```html
