@@ -3,3 +3,5 @@ description: your gemini apikey
 publish: private
 api:
 proxy:
+icon:  ⬤
+speed: 20

@@ -10,8 +10,11 @@ const { computed, ref } = window.Vue;
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 const { GoogleGenerativeAI } = require('./lib/gemini.min.js');
 const getText = (title) => $tw.wiki.getTiddlerText(title);
-const API_KEY = $tw.wiki.getTiddler('$:/plugins/oeyoews/vue-gemini/config')
-  .fields.api;
+const {
+  api: API_KEY,
+  icon = '⬤',
+  speed = 20,
+} = $tw.wiki.getTiddler('$:/plugins/oeyoews/vue-gemini/config').fields;
 
 const app = (title = '') => {
   const summary = $tw.wiki.getTiddler(title).fields?.summary;
@@ -58,14 +61,14 @@ const app = (title = '') => {
         let index = 0;
         const intervalId = setInterval(() => {
           if (index < length) {
-            const text = summary.substring(0, index + 1);
-            this.res = text + ' ⬤';
+            const text = summary.slice(0, index + 1);
+            this.res = text + ' ' + icon;
             index++;
           } else {
             this.res = summary;
             clearInterval(intervalId);
           }
-        }, 50); // 控制打字速度
+        }, speed); // 控制打字速度
       },
       async aibot() {
         const genAI = new GoogleGenerativeAI(this.API_KEY);
