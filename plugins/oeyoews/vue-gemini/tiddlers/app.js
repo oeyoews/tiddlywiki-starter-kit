@@ -22,8 +22,14 @@ const {
   model: MODEL,
 } = require('./config.js');
 
-const app = (title = '', text = '', tip = 'AI 生成的摘要', model) => {
-  const summary = text || $tw.wiki.getTiddler(title).fields?.summary;
+const app = (
+  title = '',
+  text = '',
+  tip = 'AI 生成的摘要',
+  model,
+  targetField = 'summary',
+) => {
+  const fieldText = text || $tw.wiki.getTiddler(title).fields?.[targetField];
   const component = {
     setup() {
       const res = ref('');
@@ -47,8 +53,8 @@ const app = (title = '', text = '', tip = 'AI 生成的摘要', model) => {
     },
 
     mounted() {
-      if (summary) {
-        this.typewritter(summary);
+      if (fieldText) {
+        this.typewritter(fieldText);
         this.isLoading = false;
         return;
       }
@@ -79,6 +85,9 @@ const app = (title = '', text = '', tip = 'AI 生成的摘要', model) => {
       async aibot() {
         const prompt = this.text + ' \n简短总结上面这段话';
         try {
+          if (!this.text) {
+            throw Error('没有输入内容');
+          }
           switch (model || MODEL) {
             case 'gemini':
               this.res = await geminiChat({
@@ -102,7 +111,7 @@ const app = (title = '', text = '', tip = 'AI 生成的摘要', model) => {
           }
 
           this.res &&
-            $tw.wiki.setText(title, 'summary', null, this.res, {
+            $tw.wiki.setText(title, targetField, null, this.res, {
               suppressTimestamp: true,
             });
         } catch (e) {

@@ -34,7 +34,7 @@ class GeminiWidget extends Widget {
     const TiddlyWikiVue = require('./plugins/TiddlyWikiVue');
 
     const title = this.getVariable('currentTiddler');
-    const { model, text, tip } = this.attributes;
+    const { targetField, model, text, tip } = this.attributes;
 
     if (!title) {
       console.warn(title);
@@ -42,7 +42,7 @@ class GeminiWidget extends Widget {
     }
 
     try {
-      const app = createApp(component(title, text, tip, model));
+      const app = createApp(component(title, text, tip, model, targetField));
 
       app.use(TiddlyWikiVue);
 
