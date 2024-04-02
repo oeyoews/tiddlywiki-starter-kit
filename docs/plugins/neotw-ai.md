@@ -6,7 +6,14 @@
 > [!TIP]
 > 借助 gemini api, 自动总结当前 tiddler 的内容，生成 summary 字段.
 
-![](img/2024-03-27-14-56-40.png)
+## 预览
+
+<center>
+<video width="600" controls style="border-radius:8px;">
+  <source src="/neotw-ai.mp4" type="video/mp4">
+</video>
+</center>
+
 
 ## 插件在线地址
 
