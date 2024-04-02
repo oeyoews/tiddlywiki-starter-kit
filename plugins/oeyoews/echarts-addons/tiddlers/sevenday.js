@@ -16,8 +16,8 @@ const parsesixDate = (dateString) =>
   new Date(
     `${dateString.substr(0, 4)}-${dateString.substr(4, 2)}-${dateString.substr(
       6,
-      2
-    )}`
+      2,
+    )}`,
   );
 
 /**
@@ -29,7 +29,7 @@ const config = {
   xLegend: '日期',
   yLegend: '文章数量',
   lineWidth: 0,
-  symbolSize: 0
+  symbolSize: 0,
 };
 
 function getSevenDaysBefore(dateString, daysLength = 7) {
@@ -58,7 +58,7 @@ const Sevendays = {
       date,
       title: text = config.title,
       subtitle: subtext = '',
-      disableClick = 'no'
+      disableClick = 'no',
       // smooth = 'true',
     } = addonAttributes;
 
@@ -76,15 +76,19 @@ const Sevendays = {
         text,
         subtext,
         left: 'center',
-        top: 'bottom'
+        top: 'bottom',
       },
       legend: {
-        data: ['created', 'modified']
+        data: ['created', 'modified'],
+        selected: {
+          modified: true,
+          created: false,
+        },
       },
       toolbox: {
         feature: {
-          restore: {}
-        }
+          restore: {},
+        },
       },
       tooltip: {
         // options: item, axis
@@ -107,18 +111,18 @@ const Sevendays = {
               ? `${realDate} 更新了 ${count} 篇文章`
               : `${realDate} 没有文章更新`;
           }
-        }
+        },
       },
       // color: [''],
       xAxis: {
         boundaryGap: true, // 是否在数据点两侧留白，
         type: 'category',
         data: sevendays,
-        name: config.xLegend
+        name: config.xLegend,
       },
       yAxis: {
         type: 'value',
-        name: config.yLegend
+        name: config.yLegend,
       },
       animationDuration: 2000,
       series: [
@@ -131,13 +135,13 @@ const Sevendays = {
           stack: 'Total',
           lineStyle: {
             // 折线宽度
-            width: config.lineWidth
+            width: config.lineWidth,
             // color: 'purple'
           },
           endLabel: {
-            show: true,
+            show: false,
             formatter: '{a}',
-            distance: 20
+            distance: 20,
           },
           // 区域颜色渐变
           areaStyle: {
@@ -145,51 +149,51 @@ const Sevendays = {
             color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
               {
                 offset: 0,
-                color: 'rgb(55, 162, 255)'
+                color: 'rgb(55, 162, 255)',
               },
               {
                 offset: 1,
-                color: 'rgb(116, 21, 219)'
-              }
-            ])
+                color: 'rgb(116, 21, 219)',
+              },
+            ]),
           },
           emphasis: {
             focus: 'series',
             itemStyle: {
               scale: 1.5,
               shadowOffsetX: 0,
-              shadowColor: 'rgba(0, 0, 0, 0.5)'
-            }
+              shadowColor: 'rgba(0, 0, 0, 0.5)',
+            },
           },
-          smooth: true
+          smooth: true,
         },
         {
           name: 'modified',
           data: modifiedData,
           lineStyle: {
-            width: config.lineWidth
+            width: config.lineWidth,
           },
           symbolSize: config.symbolSize,
           stack: 'Total',
           type: 'line',
           showSymbol: false,
           endLabel: {
-            show: true,
+            show: false,
             formatter: '{a}',
-            distance: 20
+            distance: 20,
           },
           areaStyle: {
             opacity: config.opacity,
             color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
               {
                 offset: 0,
-                color: 'rgb(128, 255, 165)'
+                color: 'rgb(128, 255, 165)',
               },
               {
                 offset: 1,
-                color: 'rgb(1, 191, 236)'
-              }
-            ])
+                color: 'rgb(1, 191, 236)',
+              },
+            ]),
           },
           emphasis: {
             focus: 'series',
@@ -197,12 +201,12 @@ const Sevendays = {
               // color: '',
               scale: 1.25,
               shadowOffsetX: 0,
-              shadowColor: 'rgba(0, 0, 0, 0.5)'
-            }
+              shadowColor: 'rgba(0, 0, 0, 0.5)',
+            },
           },
-          smooth: true
-        }
-      ]
+          smooth: true,
+        },
+      ],
     };
 
     // 更新配置
@@ -220,7 +224,7 @@ const Sevendays = {
           filter +
           '"""/><$action-setfield $tiddler="$:/temp/advancedsearch/input" text="""' +
           filter +
-          '"""/><$action-setfield $tiddler="$:/temp/advancedsearch/refresh" text="yes"/><$action-setfield $tiddler="$:/state/tab--1498284803" text="$:/core/ui/AdvancedSearch/Filter"/>'
+          '"""/><$action-setfield $tiddler="$:/temp/advancedsearch/refresh" text="yes"/><$action-setfield $tiddler="$:/state/tab--1498284803" text="$:/core/ui/AdvancedSearch/Filter"/>',
       );
       goto.navigateTiddler('$:/AdvancedSearch');
     });
@@ -228,7 +232,7 @@ const Sevendays = {
   // 没有频繁更新的需要，禁止刷新
   shouldUpdate() {
     return false;
-  }
+  },
 };
 
 module.exports = Sevendays;
