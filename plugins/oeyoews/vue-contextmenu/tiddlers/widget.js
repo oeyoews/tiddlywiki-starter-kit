@@ -41,7 +41,7 @@ class ExampleWidget extends Widget {
     const cn = require('./i18n/zh.js');
     const messages = {
       English: en,
-      中文: cn
+      中文: cn,
     };
 
     const defaultLang = 'English';
@@ -55,7 +55,7 @@ class ExampleWidget extends Widget {
       legacy: false,
       locale,
       fallbackLocale: defaultLang,
-      messages
+      messages,
     });
 
     try {
@@ -78,7 +78,7 @@ class ExampleWidget extends Widget {
       parent.insertBefore(domNode, nextSibling);
       this.domNodes.push(domNode);
     } catch (e) {
-      console.error(e);
+      console.error(e.message);
     }
   }
 

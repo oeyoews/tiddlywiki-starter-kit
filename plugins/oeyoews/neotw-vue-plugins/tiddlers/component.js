@@ -10,7 +10,7 @@ const { computed, watch, ref } = window.Vue;
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 
 const app = (
-  url = 'https://tiddlywiki-starter-kit.oeyoews.top/library/recipes/library/tiddlers.json'
+  url = 'https://tiddlywiki-starter-kit.oeyoews.top/library/recipes/library/tiddlers.json',
 ) => {
   const component = {
     setup() {
@@ -23,7 +23,7 @@ const app = (
       const searchTerms = ref('');
       const filterByTerm = computed(() => {
         return data.value.filter((item) =>
-          item.title.toLowerCase().includes(searchTerms.value.toLowerCase())
+          item.title.toLowerCase().includes(searchTerms.value.toLowerCase()),
         );
       });
 
@@ -31,7 +31,7 @@ const app = (
         const startIndex = (currentPage.value - 1) * pageSize.value;
         return filterByTerm.value.slice(
           startIndex,
-          startIndex + pageSize.value
+          startIndex + pageSize.value,
         );
         // .filter((item) => item.title.includes(searchTerms.value));
       });
@@ -49,7 +49,7 @@ const app = (
         count,
         url,
         searchTerms,
-        filterByTerm
+        filterByTerm,
       };
     },
 
@@ -69,7 +69,6 @@ const app = (
           this.count = data.length;
           return data;
         } catch (e) {
-          console.error(e);
           console.error(e.message);
           this.loading = false;
         }
@@ -79,10 +78,10 @@ const app = (
         if (value) {
           this.currentPage = value;
         }
-      }
+      },
     },
 
-    template: getTemplate('$:/plugins/oeyoews/neotw-vue-plugins/widget.vue')
+    template: getTemplate('$:/plugins/oeyoews/neotw-vue-plugins/widget.vue'),
   };
   return component;
 };

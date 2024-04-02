@@ -264,7 +264,7 @@ const app = (
         } catch (e) {
           this.error = e;
           this.loading = false;
-          console.error(e);
+          console.error(e.message);
         }
       },
 

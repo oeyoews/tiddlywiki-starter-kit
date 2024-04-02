@@ -37,7 +37,7 @@ class VueTodoWidget extends Widget {
     if (!window.Vue) {
       // if (!$tw.modules.titles[vuelib]) {
       logger.alert(
-        `${vuelib} is missing, Please install neotw-vue plugin by @oeyoews`
+        `${vuelib} is missing, Please install neotw-vue plugin by @oeyoews`,
       );
       return;
       // }
@@ -75,7 +75,7 @@ class VueTodoWidget extends Widget {
         中文: cn,
         日本語: ja,
         Français: fr,
-        Русский: ru
+        Русский: ru,
       };
 
       let locale = localStorage.getItem('lang');
@@ -88,11 +88,11 @@ class VueTodoWidget extends Widget {
         legacy: false,
         locale,
         fallbackLocale: 'English', // 设置本来的语言
-        messages
+        messages,
       });
 
       const {
-        createNotivue
+        createNotivue,
       } = require('$:/plugins/oeyoews/notivue/notivue.js');
 
       const notivue = createNotivue({
@@ -101,9 +101,9 @@ class VueTodoWidget extends Widget {
         enqueue: true,
         notifications: {
           global: {
-            duration: 1500
-          }
-        }
+            duration: 1500,
+          },
+        },
       });
 
       app.use(i18n);
@@ -124,7 +124,7 @@ class VueTodoWidget extends Widget {
       parent.insertBefore(domNode, nextSibling);
       this.domNodes.push(domNode);
     } catch (e) {
-      console.error(e);
+      console.error(e.message);
     }
   }
 

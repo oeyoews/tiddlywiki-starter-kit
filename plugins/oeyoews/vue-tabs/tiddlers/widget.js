@@ -50,7 +50,7 @@ class ExampleWidget extends Widget {
       // const ru = require('./i18n/ru.js');
       const messages = {
         English: en,
-        中文: cn
+        中文: cn,
         // 日本語: ja,
         // Français: fr,
         // Русский: ru
@@ -67,7 +67,7 @@ class ExampleWidget extends Widget {
         legacy: false,
         locale,
         fallbackLocale: 'English', // 设置本来的语言
-        messages
+        messages,
       });
 
       app.use(i18n);
@@ -86,7 +86,7 @@ class ExampleWidget extends Widget {
       parent.insertBefore(domNode, nextSibling);
       this.domNodes.push(domNode);
     } catch (e) {
-      console.error(e);
+      console.error(e.message);
     }
   }
 

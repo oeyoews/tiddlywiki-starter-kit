@@ -40,14 +40,14 @@ const app = () => {
             .slice(0, 9);
           this.loading = false;
         } catch (e) {
-          console.error(e);
+          console.error(e.message);
         }
-      }
+      },
     },
 
     template: getTemplate(
-      '$:/plugins/oeyoews/neotw-vue-netease-banner/templates/widget.vue'
-    )
+      '$:/plugins/oeyoews/neotw-vue-netease-banner/templates/widget.vue',
+    ),
   };
   return component;
 };

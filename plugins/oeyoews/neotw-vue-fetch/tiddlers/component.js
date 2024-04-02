@@ -23,7 +23,7 @@ const app = (url) => {
       const text = ref('加载中 ...');
 
       return {
-        text
+        text,
       };
     },
 
@@ -42,12 +42,12 @@ const app = (url) => {
           return this.renderText(data);
         } catch (e) {
           this.text = `${url} 加载出错`;
-          console.error(e);
+          console.error(e.message);
         }
-      }
+      },
     },
 
-    template: getTemplate('$:/plugins/oeyoews/neotw-vue-fetch/widget.vue')
+    template: getTemplate('$:/plugins/oeyoews/neotw-vue-fetch/widget.vue'),
   };
   return component;
 };

@@ -36,7 +36,7 @@ class VueLinkGalleryWidget extends Widget {
 
     if (!window.Vue) {
       logger.alert(
-        `${vuelib} is missing, Please install neotw-vue plugin by @oeyoews`
+        `${vuelib} is missing, Please install neotw-vue plugin by @oeyoews`,
       );
       return;
     }
@@ -61,7 +61,7 @@ class VueLinkGalleryWidget extends Widget {
       parent.insertBefore(domNode, nextSibling);
       this.domNodes.push(domNode);
     } catch (e) {
-      console.error(e);
+      console.error(e.message);
     }
   }
 

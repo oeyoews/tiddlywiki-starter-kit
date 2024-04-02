@@ -24,7 +24,7 @@ const app = () => {
         ref,
         html,
         title,
-        clipboardContent
+        clipboardContent,
       };
     },
 
@@ -37,7 +37,7 @@ const app = () => {
       importTiddler() {
         $tw.rootWidget.dispatchEvent({
           type: 'tm-navigate',
-          navigateTo: clipboardTiddler
+          navigateTo: clipboardTiddler,
         });
 
         new $tw.Story().navigateTiddler(clipboardTiddler);
@@ -60,16 +60,16 @@ const app = () => {
           })
 
           .catch((error) => {
-            console.error('读取粘贴板内容时出错：', error);
+            console.error('读取粘贴板内容时出错：', error.message);
           });
-      }
+      },
     },
 
     template: getTemplate('$:/plugins/oeyoews/vue-copy/templates/app.vue'),
 
     components: {
-      Version
-    }
+      Version,
+    },
   };
   return component;
 };

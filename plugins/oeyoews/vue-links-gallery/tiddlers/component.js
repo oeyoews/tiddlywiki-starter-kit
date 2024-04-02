@@ -38,7 +38,7 @@ const links = (json = 'list-links.json') => {
         try {
           return new URL(link).origin;
         } catch (e) {
-          console.error(e);
+          console.error(e.message);
           return link;
         }
       };
@@ -50,7 +50,7 @@ const links = (json = 'list-links.json') => {
           return {
             desc: item[0],
             link: item[1],
-            prettyLink: prettyLink(item[1])
+            prettyLink: prettyLink(item[1]),
           };
         });
       });
@@ -64,7 +64,7 @@ const links = (json = 'list-links.json') => {
             x: -266.82776,
             y: 299.6904,
             value: 28.685715,
-            category: 0
+            category: 0,
           },
           {
             id: '1',
@@ -73,7 +73,7 @@ const links = (json = 'list-links.json') => {
             x: -418.08344,
             y: 446.8853,
             value: 4,
-            category: 0
+            category: 0,
           },
           {
             id: '2',
@@ -82,53 +82,53 @@ const links = (json = 'list-links.json') => {
             x: -212.76357,
             y: 245.29176,
             value: 9.485714,
-            category: 1
-          }
+            category: 1,
+          },
         ],
         links: [
           {
             source: '1',
-            target: '0'
+            target: '0',
           },
           {
             source: '2',
-            target: '0'
+            target: '0',
           },
           {
             source: '3',
-            target: '0'
+            target: '0',
           },
           {
             source: '3',
-            target: '2'
+            target: '2',
           },
           {
             source: '4',
-            target: '0'
+            target: '0',
           },
           {
             source: '5',
-            target: '0'
+            target: '0',
           },
           {
             source: '6',
-            target: '0'
-          }
+            target: '0',
+          },
         ],
         categories: [
           {
-            name: 'A'
+            name: 'A',
           },
           {
-            name: 'B'
+            name: 'B',
           },
           {
-            name: 'C'
+            name: 'C',
           },
           {
-            name: 'D'
-          }
-        ]
+            name: 'D',
+          },
+        ],
       });
 
       const options = computed(() => ({
@@ -136,7 +136,7 @@ const links = (json = 'list-links.json') => {
           text: 'Les Miserables',
           subtext: 'Default layout',
           top: 'bottom',
-          left: 'right'
+          left: 'right',
         },
         tooltip: {},
         legend: [
@@ -144,8 +144,8 @@ const links = (json = 'list-links.json') => {
             // selectedMode: 'single',
             data: chartdata.categories.map(function (a) {
               return a.name;
-            })
-          }
+            }),
+          },
         ],
         animationDuration: 1500,
         animationEasingUpdate: 'quinticInOut',
@@ -160,20 +160,20 @@ const links = (json = 'list-links.json') => {
             roam: true,
             label: {
               position: 'right',
-              formatter: '{b}'
+              formatter: '{b}',
             },
             lineStyle: {
               color: 'source',
-              curveness: 0.3
+              curveness: 0.3,
             },
             emphasis: {
               focus: 'adjacency',
               lineStyle: {
-                width: 10
-              }
-            }
-          }
-        ]
+                width: 10,
+              },
+            },
+          },
+        ],
       }));
 
       const chartapp = ref();
@@ -187,7 +187,7 @@ const links = (json = 'list-links.json') => {
         data,
         newLink,
         edit,
-        newDesc
+        newDesc,
       };
     },
 
@@ -202,8 +202,8 @@ const links = (json = 'list-links.json') => {
       options: {
         handler() {
           this.updateChart();
-        }
-      }
+        },
+      },
     },
 
     methods: {
@@ -212,7 +212,7 @@ const links = (json = 'list-links.json') => {
       },
       addData() {
         this.chartdata.categories.push({
-          name: randomString()
+          name: randomString(),
         });
 
         this.chartdata.nodes.push({
@@ -222,7 +222,7 @@ const links = (json = 'list-links.json') => {
           x: -266.82776 + Math.random() * 100,
           y: 299.6904 + Math.random() * 100,
           value: 28.685715 + Math.random() * 10,
-          category: 'A'
+          category: 'A',
         });
         // this.updateChart();
       },
@@ -248,8 +248,8 @@ const links = (json = 'list-links.json') => {
           Object.fromEntries(toRaw(this.data)),
           null,
           {
-            suppressTimestamp: true
-          }
+            suppressTimestamp: true,
+          },
         );
       },
       removeLink: function (site) {
@@ -274,10 +274,10 @@ const links = (json = 'list-links.json') => {
           this.updateData();
         }
         this.resetStatus();
-      }
+      },
     },
 
-    template: getTemplate()
+    template: getTemplate(),
   };
   return component;
 };

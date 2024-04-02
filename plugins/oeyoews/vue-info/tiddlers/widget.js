@@ -34,7 +34,7 @@ class ExampleWidget extends Widget {
     const domNode = this.document.createElement('div');
     const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate');
     const TextTemplate = getTemplate(
-      '$:/plugins/oeyoews/vue-info/templates/Text.vue'
+      '$:/plugins/oeyoews/vue-info/templates/Text.vue',
     );
     try {
       const app = createApp(component());
@@ -44,8 +44,8 @@ class ExampleWidget extends Widget {
         props: {
           text: { type: String },
           icon: { type: String },
-          number: { type: Number }
-        }
+          number: { type: Number },
+        },
       };
 
       app.component('Text', Text);
@@ -63,7 +63,7 @@ class ExampleWidget extends Widget {
       parent.insertBefore(domNode, nextSibling);
       this.domNodes.push(domNode);
     } catch (e) {
-      console.error(e);
+      console.error(e.message);
     }
   }
 }

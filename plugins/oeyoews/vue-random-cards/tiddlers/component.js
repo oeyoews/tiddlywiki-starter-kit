@@ -66,7 +66,7 @@ const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]') => {
             } else {
               return `${name}`;
             }
-          }
+          },
         },
 
         toolbox: {
@@ -76,8 +76,8 @@ const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]') => {
           feature: {
             dataView: { show: true, readOnly: false },
             restore: {},
-            saveAsImage: {}
-          }
+            saveAsImage: {},
+          },
         },
         series: [
           {
@@ -85,9 +85,9 @@ const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]') => {
             type: 'pie',
             radius: '50%',
             center: '50%',
-            data: chartdata.value
-          }
-        ]
+            data: chartdata.value,
+          },
+        ],
       });
 
       const isRotate = ref(false);
@@ -98,13 +98,13 @@ const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]') => {
         chartdata,
         chartapp,
         title,
-        cardContent
+        cardContent,
       };
     },
 
     mounted() {
       this.chartapp = echarts.init(this.$refs.chart, theme, {
-        renderer: 'svg'
+        renderer: 'svg',
       });
       this.updateChart();
       this.chartapp.on('click', (params) => {
@@ -117,8 +117,8 @@ const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]') => {
         handler() {
           this.updateChart();
         },
-        deep: true
-      }
+        deep: true,
+      },
     },
 
     methods: {
@@ -132,7 +132,7 @@ const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]') => {
           this.resetChart();
           this.chartdata.push({
             name: this.title,
-            value: 1
+            value: 1,
           });
         }
         this.chartapp.setOption(this.options);
@@ -154,7 +154,7 @@ const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]') => {
           this.cardContent =
             $tw.wiki.renderTiddler('text/html', this.title) || '空空如也';
         } catch (e) {
-          console.error(e);
+          console.error(e.message);
         }
       },
 
@@ -163,7 +163,7 @@ const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]') => {
         this.title = this.randomTiddlerTitle();
         this.chartdata.push({
           name: this.title,
-          value: 1
+          value: 1,
         });
 
         this.renderTiddler2HTML();
@@ -171,10 +171,10 @@ const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]') => {
 
       gotoTiddler() {
         story.navigateTiddler(this.title);
-      }
+      },
     },
 
-    template: getTemplate('$:/plugins/oeyoews/vue-random-cards/widget.vue')
+    template: getTemplate('$:/plugins/oeyoews/vue-random-cards/widget.vue'),
   };
 
   return component;

@@ -37,7 +37,7 @@ class VueCodeBlockWIdget extends Widget {
       const app = createApp(component(code));
 
       const {
-        createNotivue
+        createNotivue,
       } = require('$:/plugins/oeyoews/notivue/notivue.js');
 
       const notivue = createNotivue({
@@ -46,9 +46,9 @@ class VueCodeBlockWIdget extends Widget {
         enqueue: true,
         notifications: {
           global: {
-            duration: 1500
-          }
-        }
+            duration: 1500,
+          },
+        },
       });
 
       app.use(notivue);
@@ -66,7 +66,7 @@ class VueCodeBlockWIdget extends Widget {
       parent.insertBefore(domNode, nextSibling);
       this.domNodes.push(domNode);
     } catch (e) {
-      console.error(e);
+      console.error(e.message);
     }
   }
 }
