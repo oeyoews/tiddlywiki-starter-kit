@@ -48,13 +48,6 @@ function polar2cart(x = 0, y = 0, r = 0, theta = 0) {
   return [x + dx, y + dy];
 }
 
-function useWindowSize() {
-  const width = window.innerWidth;
-  const height = window.innerHeight;
-
-  return { width, height };
-}
-
 function useRafFn(fn) {
   let rafId = null;
 
@@ -80,6 +73,27 @@ const app = () => {
   const component = {
     setup() {
       const el = ref(null);
+
+      const useWindowSize = () => {
+        const width = ref(window.innerWidth);
+        const height = ref(window.innerHeight);
+
+        const updateWindowSize = () => {
+          width.value = window.innerWidth;
+          height.value = window.innerHeight;
+          console.log(width.value, size.width);
+        };
+
+        onMounted(() => {
+          // 原版也无法实现响应式更新
+          // window.addEventListener('resize', updateWindowSize);
+        });
+
+        return {
+          width,
+          height,
+        };
+      };
 
       const size = reactive(useWindowSize());
 
@@ -161,7 +175,7 @@ const app = () => {
             () => step(randomMiddle() * size.width, -5, r90),
             () => step(randomMiddle() * size.width, size.height + 5, -r90),
             () => step(-5, randomMiddle() * size.height, 0),
-            () => step(size.width + 5, randomMiddle() * size.height, r180)
+            () => step(size.width + 5, randomMiddle() * size.height, r180),
           ];
           if (size.width < 500) steps = steps.slice(0, 2);
           controls.resume();
@@ -172,18 +186,21 @@ const app = () => {
       });
 
       const mask = computed(
-        () => 'radial-gradient(circle, transparent, black);'
+        () => 'radial-gradient(circle, transparent, black);',
       );
 
       return {
+        size,
         el,
         mask,
         start,
-        stopped
+        stopped,
       };
     },
+    mounted() {},
+    methods: {},
 
-    template: getTemplate('$:/plugins/oeyoews/vue-plum/templates/app.vue')
+    template: getTemplate('$:/plugins/oeyoews/vue-plum/templates/app.vue'),
   };
   return component;
 };
