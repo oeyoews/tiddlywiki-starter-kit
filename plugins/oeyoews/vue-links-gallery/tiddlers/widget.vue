@@ -1,5 +1,5 @@
 <template>
-  <form @submit.prevent="addNewLink" class="">
+  <form @submit.prevent="addNewLink" class="my-1">
     <div class="flex gap-2 items-center shrink-0">
       <input
         type="text"

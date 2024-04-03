@@ -20,7 +20,7 @@ module.exports = class Motion {
     this.navigatorWidget = this.getNavigatorWidget($tw.rootWidget);
     $tw.hooks.addHook(
       'th-closing-tiddler',
-      this.handleClosingTiddler.bind(this)
+      this.handleClosingTiddler.bind(this),
     );
 
     this.shortcuts = this.getShortcuts();
@@ -44,7 +44,7 @@ module.exports = class Motion {
 
   handleClosingTiddler(event) {
     const selectedTiddler = $tw.wiki.getTiddlerText(
-      this.selectedStateTiddlerTitle
+      this.selectedStateTiddlerTitle,
     );
     if (event.param == selectedTiddler) {
       $tw.wiki.deleteTiddler(this.selectedStateTiddlerTitle);
@@ -68,7 +68,7 @@ module.exports = class Motion {
     $tw.wiki.deleteTiddler(`$:/state/folded/${title}`);
   }
   toggleLayout(
-    targetLayout = '$:/plugins/oeyoews/neotw/modules/landing/layout'
+    targetLayout = '$:/plugins/oeyoews/neotw/modules/landing/layout',
   ) {
     const layout = $tw.wiki.getTiddlerText('$:/layout');
     const vanillaLayout = '$:/core/ui/PageTemplate';
@@ -80,17 +80,18 @@ module.exports = class Motion {
     }
   }
   // toggle notebook-sidebar
-  toggleSidebar(session = 'Recent') {
+  toggleSidebar(session) {
     if ($tw.wiki.getTiddlerText(`$:/state/notebook-sidebar`) == 'yes') {
       $tw.wiki.setText(`$:/state/notebook-sidebar`, 'text', null, 'no');
     } else {
       $tw.wiki.setText(`$:/state/notebook-sidebar`, 'text', null, 'yes');
-      $tw.wiki.setText(
-        `$:/state/notebook-sidebar-section`,
-        'text',
-        null,
-        '$:/core/ui/SideBar/' + session
-      );
+      session &&
+        $tw.wiki.setText(
+          `$:/state/notebook-sidebar-section`,
+          'text',
+          null,
+          '$:/core/ui/SideBar/' + session,
+        );
     }
   }
   getNavigatorWidget(widget) {
@@ -102,7 +103,7 @@ module.exports = class Motion {
   }
   getTiddlerElement(title) {
     return document.querySelector(
-      `[data-tiddler-title="${CSS.escape(title)}"]`
+      `[data-tiddler-title="${CSS.escape(title)}"]`,
     );
   }
   focusTiddler(title) {
@@ -119,7 +120,7 @@ module.exports = class Motion {
       ShowHelp: () => {
         this.navigatorWidget.dispatchEvent({
           type: 'tm-modal',
-          param: this.getPluginTitle('Help')
+          param: this.getPluginTitle('Help'),
         });
         return false;
       },
@@ -138,7 +139,7 @@ module.exports = class Motion {
       FocusSearch: () => {
         this.navigatorWidget.dispatchEvent({
           type: 'tm-focus-selector',
-          param: '.nc-topbar-wrapper input'
+          param: '.nc-topbar-wrapper input',
         });
         return false;
       },
@@ -146,12 +147,12 @@ module.exports = class Motion {
         const newTiddler = {
           title: '',
           text: '',
-          type: 'text/markdown' // Set the content type to text/markdown
+          type: 'text/markdown', // Set the content type to text/markdown
         };
         this.navigatorWidget.dispatchEvent({
           // param: 'template',
           type: 'tm-new-tiddler',
-          paramObject: newTiddler // Pass the new tiddler object as paramObject
+          paramObject: newTiddler, // Pass the new tiddler object as paramObject
         });
         return false;
       },
@@ -163,13 +164,13 @@ module.exports = class Motion {
         }
         this.navigatorWidget.dispatchEvent({
           type: 'tm-delete-tiddler',
-          param: selectedTiddler
+          param: selectedTiddler,
         });
         return false;
       },
       RefreshWiki: () => {
         this.navigatorWidget.dispatchEvent({
-          type: 'tm-browser-refresh'
+          type: 'tm-browser-refresh',
         });
         return false;
       },
@@ -191,17 +192,17 @@ module.exports = class Motion {
         } else {
           nextTiddlerIndex = Math.min(
             currentTiddlerIndex + 1,
-            storyList.length - 1
+            storyList.length - 1,
           );
         }
         selectedTiddler = storyList[nextTiddlerIndex];
         $tw.wiki.addTiddler({
           title: this.selectedStateTiddlerTitle,
-          text: selectedTiddler
+          text: selectedTiddler,
         });
         this.navigatorWidget.dispatchEvent({
           type: 'tm-navigate',
-          navigateTo: selectedTiddler
+          navigateTo: selectedTiddler,
         });
         this.focusTiddler(selectedTiddler);
         return false;
@@ -223,11 +224,11 @@ module.exports = class Motion {
         selectedTiddler = storyList[nextTiddlerIndex];
         $tw.wiki.addTiddler({
           title: this.selectedStateTiddlerTitle,
-          text: selectedTiddler
+          text: selectedTiddler,
         });
         this.navigatorWidget.dispatchEvent({
           type: 'tm-navigate',
-          navigateTo: selectedTiddler
+          navigateTo: selectedTiddler,
         });
         this.focusTiddler(selectedTiddler);
         return false;
@@ -236,21 +237,21 @@ module.exports = class Motion {
         const gettingstarted = 'GettingStarted';
         this.navigatorWidget.dispatchEvent({
           type: 'tm-navigate',
-          navigateTo: gettingstarted
+          navigateTo: gettingstarted,
         });
         return false;
       },
       GoToPlugins: () => {
         this.navigatorWidget.dispatchEvent({
           type: 'tm-navigate',
-          navigateTo: '$:/core/ui/ControlPanel/Plugins'
+          navigateTo: '$:/core/ui/ControlPanel/Plugins',
         });
         return false;
       },
       GoToSearch: () => {
         this.navigatorWidget.dispatchEvent({
           type: 'tm-navigate',
-          navigateTo: '$:/AdvancedSearch'
+          navigateTo: '$:/AdvancedSearch',
         });
         return false;
       },
@@ -258,7 +259,7 @@ module.exports = class Motion {
         const controlpanel = '$:/ControlPanel';
         this.navigatorWidget.dispatchEvent({
           type: 'tm-navigate',
-          navigateTo: controlpanel
+          navigateTo: controlpanel,
         });
         return false;
       },
@@ -268,7 +269,7 @@ module.exports = class Motion {
         if (!hasProjectify) return;
         this.navigatorWidget.dispatchEvent({
           type: 'tm-navigate',
-          navigateTo: dashboard
+          navigateTo: dashboard,
         });
         this.focusTiddler(dashboard);
         return false;
@@ -281,11 +282,11 @@ module.exports = class Motion {
         const selectedTiddler = storyList[0];
         $tw.wiki.addTiddler({
           title: this.selectedStateTiddlerTitle,
-          text: selectedTiddler
+          text: selectedTiddler,
         });
         this.navigatorWidget.dispatchEvent({
           type: 'tm-navigate',
-          navigateTo: selectedTiddler
+          navigateTo: selectedTiddler,
         });
         this.focusTiddler(selectedTiddler);
         return false;
@@ -298,38 +299,38 @@ module.exports = class Motion {
         const selectedTiddler = storyList[storyList.length - 1];
         $tw.wiki.addTiddler({
           title: this.selectedStateTiddlerTitle,
-          text: selectedTiddler
+          text: selectedTiddler,
         });
         this.navigatorWidget.dispatchEvent({
           type: 'tm-navigate',
-          navigateTo: selectedTiddler
+          navigateTo: selectedTiddler,
         });
         this.focusTiddler(selectedTiddler);
         return false;
       },
       EditTiddler: () => {
         const selectedTiddler = $tw.wiki.getTiddlerText(
-          this.selectedStateTiddlerTitle
+          this.selectedStateTiddlerTitle,
         );
         if (!selectedTiddler) {
           return;
         }
         this.navigatorWidget.dispatchEvent({
           type: 'tm-edit-tiddler',
-          param: selectedTiddler
+          param: selectedTiddler,
         });
         return false;
       },
       CloseTiddler: () => {
         const selectedTiddler = $tw.wiki.getTiddlerText(
-          this.selectedStateTiddlerTitle
+          this.selectedStateTiddlerTitle,
         );
         if (!selectedTiddler) {
           return;
         }
         this.navigatorWidget.dispatchEvent({
           type: 'tm-close-tiddler',
-          param: selectedTiddler
+          param: selectedTiddler,
         });
         return false;
       },
@@ -341,13 +342,13 @@ module.exports = class Motion {
         this.navigatorWidget.dispatchEvent({ type: 'om-toggle-theme' });
         new $tw.Notify().display({
           title: `🎨 Toggle Theme`,
-          icon: 'success'
+          icon: 'success',
         });
         return false;
       },
       ToggleTiddler: () => {
         const selectedTiddler = $tw.wiki.getTiddlerText(
-          this.selectedStateTiddlerTitle
+          this.selectedStateTiddlerTitle,
         );
         if (!selectedTiddler) {
           return;
@@ -357,7 +358,7 @@ module.exports = class Motion {
       },
       UnfoldTiddler: () => {
         const selectedTiddler = $tw.wiki.getTiddlerText(
-          this.selectedStateTiddlerTitle
+          this.selectedStateTiddlerTitle,
         );
         if (!selectedTiddler) {
           return;
@@ -367,7 +368,7 @@ module.exports = class Motion {
       },
       FoldTiddler: () => {
         const selectedTiddler = $tw.wiki.getTiddlerText(
-          this.selectedStateTiddlerTitle
+          this.selectedStateTiddlerTitle,
         );
         if (!selectedTiddler) {
           return;
@@ -416,7 +417,7 @@ module.exports = class Motion {
         }
         // Deselect tiddler.
         $tw.wiki.deleteTiddler(this.selectedStateTiddlerTitle);
-      }
+      },
     };
   }
 };

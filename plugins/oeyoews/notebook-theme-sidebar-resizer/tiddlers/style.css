@@ -12,6 +12,7 @@
   position: absolute;
   top: 0;
   background-color: #f3f4f6;
+  animation-duration: 200ms;
 }
 
 .oresizer:hover {
@@ -24,5 +25,5 @@
   background-color: #6b7280;
 }
 .dark .oresizer:hover {
-  background-color: #4b5563;
+  background-color: #9d9fa4;
 }
