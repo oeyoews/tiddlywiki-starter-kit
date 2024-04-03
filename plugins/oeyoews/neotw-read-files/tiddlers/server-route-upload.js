@@ -1,5 +1,5 @@
 /*\
-title: $:/sq/ServerRoutes/post-upload.js
+title: $:/plugins/sq/ImportToExternalFile/server-route-upload.js
 type: application/javascript
 module-type: route
 
@@ -63,6 +63,7 @@ Upload media
         fs.writeFile(path.join(xfilepath), buf, function (error) {
           if (error) {
             console.log(error);
+            throw error;
           } else {
             console.log('文件已保存' + filename);
             response.setHeader('Content-Type', 'application/json');
@@ -83,7 +84,7 @@ Upload media
           }
         });
       } catch (e) {
-        console.log('Error parsing uploaded file', e, { level: 2 });
+        console.log('Error parsing or writing uploaded file', e, { level: 2 });
         response.writeHead(400);
         response.end();
       }

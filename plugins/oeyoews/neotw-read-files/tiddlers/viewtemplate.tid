@@ -1,6 +1,6 @@
 title: $:/core/ui/ViewTemplate/import-external-files
 tags: $:/tags/ViewTemplate
-list-after: body
+list-after: $:/core/ui/ViewTemplate/import
 
 <$list filter="[all[current]field:plugin-type[import]]" variable="null">
 

@@ -1,5 +1,5 @@
 /*\
-title: $:/sq/ServerImages/ServerImages.js
+title: $:/plugins/sq/ImportToExternalFile/startup.js
 type: application/javascript
 module-type: startup
 
@@ -30,7 +30,7 @@ This adds a hook for the "th-importing-tiddler"
 		*/
     }
     function transferComplete(e) {
-      console.log('Complete!!', e);
+      // console.log('Complete!!', e);
     }
     function transferFailed(e) {
       console.log('Failed!');
@@ -84,7 +84,7 @@ This adds a hook for the "th-importing-tiddler"
 
         request.onreadystatechange = function () {
           if (this.readyState == 4 && this.status == 200) {
-            console.log(this.response);
+            console.info(this.response);
             var json = null;
             try {
               json = JSON.parse(this.response);
@@ -107,7 +107,7 @@ This adds a hook for the "th-importing-tiddler"
           }
         };
 
-        let uploadURL = 'api/upload';
+        let uploadURL = '/api/upload';
         request.open('POST', uploadURL, true);
 
         var thing = {
@@ -119,7 +119,7 @@ This adds a hook for the "th-importing-tiddler"
 
         // Change the tiddler fields and stuff
         var fields = {};
-        var uri = '/files' + tiddler.fields.title;
+        var uri = '/files/' + tiddler.fields.title;
         //Use tw.utils.generateTiddlerFilePath //remove / etc from title
         //https://github.com/Jermolene/TiddlyWiki5/blob/master/core/modules/utils/filesystem.js#L321
         fields.title = tiddler.fields.title;
