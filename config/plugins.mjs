@@ -14,6 +14,7 @@ const localPlugins = [
 ];
 
 const onlinePlugins = [
+  'vue-plum',
   'oeyoews/NPL',
   'oeyoews/neotw-error-better',
   'oeyoews/tiddlywiki-github-share',
@@ -46,7 +47,6 @@ const oeyoewsPlugins = [
   'vue-kanban',
   'vue-tabs',
   'neotw-sitemap',
-  'vue-plum',
   'vue-pomodoro',
   'vue-rss',
   'neotw-vue-codeblock',
