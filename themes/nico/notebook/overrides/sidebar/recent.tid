@@ -3,19 +3,20 @@ tags: $:/tags/SideBar
 title: $:/core/ui/SideBar/Recent
 
 \whitespace trim
+
 \define lingo-base() $:/language/Search/
 \define modeTiddler() $:/config/RecentTab/Mode
 \define storeTitle() $:/temp/search/recent
 \define cancel-search-actions() <$action-deletetiddler $filter=<<storeTitle>>/><$action-sendmessage $message="tm-focus-selector" $param=""".search-recent input"""/>
 
 \define timeline-searchable(is:"!is",limit:"100",format:"DDth MMM YYYY",subfilter:"!tag[done]!tag[todo]!field:publish[private]",dateField:"modified")
-<div class="tc-timeline prose capitalize text-[16px] font-bold h-screen overflow-y-scroll">
+<div class="tc-timeline prose max-w-none capitalize text-[16px] font-bold h-screen overflow-y-scroll">
 <$list filter="[$is$[system]$subfilter$has[$dateField$]!sort[$dateField$]limit[$limit$]eachday[$dateField$]]">
 <div class="tc-menu-list-item">
 <$view field="$dateField$" format="date" template="$format$"/>
 <$list filter="[sameday:$dateField${!!$dateField$}$is$[system]$subfilter$!sort[$dateField$]search:title{$:/temp/search/recent}]">
 <div class="tc-menu-list-subitem">
-<$link to={{!!title}}><<timeline-title>></$link>
+<$link to={{!!title}} class="p-1 rounded bg-gray-100 block dark:bg-dimmed-900 mb-1"><<timeline-title>></$link>
 </div>
 </$list>
 </div>
