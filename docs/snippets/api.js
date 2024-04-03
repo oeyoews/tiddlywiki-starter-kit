@@ -15,6 +15,8 @@ wiki.getTiddlerData(dataTiddler);
 
 // 获取到某个 tiddler 的正文, 其实就是 tiddler 的 text 字段
 wiki.getTiddlerText();
+wiki.getTextReference('!!text', 'defaultText', tiddlerTitle);
+wiki.getCreationFields(); // { "created": "2024-04-03T14:51:03.702Z", "creator": "oeyoews" }
 // 等价于这种写法
 wiki.getTiddler(title).fields.text;
 
