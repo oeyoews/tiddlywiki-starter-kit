@@ -1,4 +1,4 @@
-command-palette-name: New Journal
+command-palette-name: 📓 New Journal
 command-palette-type: actionString
 tags: $:/tags/CommandPaletteCommand
 title: $:/plugins/oeyoews/commandpalette/New Journal Command

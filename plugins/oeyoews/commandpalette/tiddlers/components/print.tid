@@ -1,4 +1,4 @@
-command-palette-name: Print
+command-palette-name: 🖨️ Print
 command-palette-type: message
 tags: $:/tags/CommandPaletteCommand
 title: $:/plugins/oeyoews/commandpalette/Print

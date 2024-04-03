@@ -1,5 +1,5 @@
 command-palette-caret: 49
-command-palette-name: Version
+command-palette-name: 🔢 Version
 command-palette-type: prompt-basic
 tags: $:/tags/CommandPaletteCommand
 title: $:/plugins/oeyoews/commandpalette/Version

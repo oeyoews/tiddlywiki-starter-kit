@@ -1,6 +1,6 @@
 command-palette-caret: 33
 command-palette-hint: Recent
-command-palette-name: Recent Tiddlers
+command-palette-name: 🕰️ Recent Tiddlers
 command-palette-type: prompt-basic
 tags: $:/tags/CommandPaletteCommand
 title: $:/plugins/oeyoews/commandpalette/Recent Tiddlers Command

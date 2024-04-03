@@ -1,4 +1,4 @@
-command-palette-name: Close All Tiddlers
+command-palette-name: 🚪 Close All Tiddlers
 command-palette-type: message
 tags: $:/tags/CommandPaletteCommand
 title: $:/plugins/oeyoews/commandpalette/Close All Tiddlers
