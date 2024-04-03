@@ -1,5 +1,8 @@
 <template>
   <div class="p-2 rounded">
+    <div class="flex items-center justify-end mb-2">
+      <el-button @click="goHome">返回主页</el-button>
+    </div>
     <el-collapse v-model="activeName" accordion>
       <el-collapse-item title="智谱 API" name="1">
         <input type="password" v-model="api_key"
@@ -30,7 +33,10 @@
         <el-input type="text" v-model="prompt" class="w-full" ref="chatRef" placeholder="输入内容" />
         <el-button native-type="submit" class="shrink-0">发送</el-button>
       </form>
-      <div v-html="the_last_message_html" class="mt-8 rounded border-dimmed-700 p-2"></div>
+      <!-- <div class="font-bold">智谱 AI: </div> -->
+      <div v-html="the_last_message_html"
+        class="mt-8 rounded border-dimmed-700 p-2 antialiased prose prose-gray max-w-none prose-img:my-0 prose-a:no-underline prose-h2:mt-4 prose-blockquote:not-italic dark:prose-invert dark:prose-pre:bg-[#282c34] dark:prose-pre:text-white prose-p:mt-0">
+      </div>
       <!-- <div>
         <el-button @click="copyToClipboard" class="shrink-0">copy</el-button>
       </div> -->

@@ -204,6 +204,12 @@ const app = () => {
       this.chatRef.focus();
     },
 
+    methods: {
+      goHome() {
+        $tw.wiki.setText('$:/layout', 'text', null, '$:/core/ui/PageTemplate');
+      },
+    },
+
     template: getTemplate('$:/plugins/oeyoews/vue-zhipu/templates/app.vue'),
   };
   return component;
