@@ -45,7 +45,7 @@ const app = () => {
         position,
         dragging,
         activeTiddler,
-        data
+        data,
       };
     },
 
@@ -54,8 +54,8 @@ const app = () => {
         handler: function (newValue, oldValue) {
           this.setList();
         },
-        deep: true
-      }
+        deep: true,
+      },
     },
 
     mounted() {
@@ -91,63 +91,63 @@ const app = () => {
           onClick: () => {
             this.$i18n.locale = lang;
             localStorage.setItem('lang', lang);
-          }
+          },
         }));
 
         const children = [
           {
             label: this.t('settings.lang'),
             icon: h(Icon, { icon: icons.lang }),
-            children: LangChildren
+            children: LangChildren,
           },
           {
             label: this.t('settings.position'),
             icon: h(Icon, { icon: icons.position }),
-            onClick: this.togglePosition
+            onClick: this.togglePosition,
           },
           {
             label:
               this.t('settings.drag') +
               ' ' +
-              (this.draggable ? this.t('status.on') : this.t('status.off')),
+              (this.isDrag ? this.t('status.on') : this.t('status.off')),
             onClick: this.toggleDraggable,
-            icon: h(Icon, { icon: icons.drag })
-          }
+            icon: h(Icon, { icon: icons.drag }),
+          },
         ];
         const items = [
           {
             label: this.t('close.current'),
             icon: h(Icon, { icon: icons.close }),
-            onClick: () => this.closeTiddler(e, 'close')
+            onClick: () => this.closeTiddler(e, 'close'),
           },
           {
             label: this.t('close.others'),
             disabled: this.data.length === 1,
             onClick: () => this.closeTiddler(e, 'closeOthers'),
-            icon: h(Icon, { icon: icons.others })
+            icon: h(Icon, { icon: icons.others }),
           },
           {
             label: this.t('close.left'),
             disabled: this.data.length === 1,
             icon: h(Icon, { icon: icons.left }),
-            onClick: () => this.closeTiddler(e, 'closeLeft')
+            onClick: () => this.closeTiddler(e, 'closeLeft'),
           },
           {
             label: this.t('close.right'),
             disabled: this.data.length === 1,
             icon: h(Icon, { icon: icons.right }),
-            onClick: () => this.closeTiddler(e, 'closeRight')
+            onClick: () => this.closeTiddler(e, 'closeRight'),
           },
           {
             label: this.t('close.all'),
             onClick: () => this.closeTiddler(e, 'closeAll'),
             divided: true,
-            icon: h(Icon, { icon: icons.all })
+            icon: h(Icon, { icon: icons.all }),
           },
           {
             label: this.t('close.fold'),
             onClick: () => this.closeTiddler(e, 'fold'),
-            icon: h(Icon, { icon: icons.fold })
+            icon: h(Icon, { icon: icons.fold }),
           },
           {
             label: this.t('close.copy'),
@@ -155,25 +155,25 @@ const app = () => {
             onClick: () => {
               const title = e.target.dataset.navTitle;
               $tw.utils.copyToClipboard(title);
-            }
+            },
           },
           {
             label: this.t('tabs.reverse'),
             disabled: this.data.length === 1,
             icon: h(Icon, { icon: icons.reverse }),
-            onClick: () => this.reverseList()
+            onClick: () => this.reverseList(),
           },
           {
             label: this.t('tabs.pin'),
             icon: h(Icon, { icon: icons.pin }),
             disabled: true,
             divided: true,
-            onClick: () => this.closeTiddler(e, 'pin')
+            onClick: () => this.closeTiddler(e, 'pin'),
           },
           {
             label: this.t('tabs.more'),
             icon: h(Icon, { icon: icons.setting }),
-            children
+            children,
           },
           {
             label: this.t('tabs.help'),
@@ -184,9 +184,9 @@ const app = () => {
                 icon: h(Icon, { icon: icons.readme }),
                 onClick: () => {
                   new $tw.Story().navigateTiddler(
-                    '$:/plugins/oeyoews/vue-tabs'
+                    '$:/plugins/oeyoews/vue-tabs',
                   );
-                }
+                },
               },
               {
                 label: this.t('help.issues'),
@@ -194,12 +194,12 @@ const app = () => {
                 onClick: () => {
                   window.open(
                     'https://github.com/oeyoews/tiddlywiki-starter-kit/issues/new',
-                    '_blank'
+                    '_blank',
                   );
-                }
-              }
-            ]
-          }
+                },
+              },
+            ],
+          },
         ];
         //show menu
         this.$contextmenu({
@@ -209,7 +209,7 @@ const app = () => {
           zIndex: 3,
           minWidth: 230,
           x: e.x,
-          y: e.y
+          y: e.y,
         });
       },
       shuffle(array) {
@@ -228,7 +228,7 @@ const app = () => {
         $tw.wiki.addTiddler({
           title: DEFAULT_STORY_TITLE,
           text: '',
-          list: $tw.utils.stringifyList(this.data)
+          list: $tw.utils.stringifyList(this.data),
         });
       },
 
@@ -270,14 +270,14 @@ const app = () => {
       toggleDraggable() {
         this.draggable = this.draggable === 'yes' ? 'no' : 'yes';
         $tw.wiki.setText(configTiddler, 'draggable', null, this.draggable, {
-          suppressTimestamp: true
+          suppressTimestamp: true,
         });
       },
 
       togglePosition() {
         this.position = this.position === 'top-0' ? 'bottom-0' : 'top-0';
         $tw.wiki.setText(configTiddler, 'position', null, this.position, {
-          suppressTimestamp: true
+          suppressTimestamp: true,
         });
         this.showSetup();
       },
@@ -340,10 +340,10 @@ const app = () => {
         }
         if (!closeTitle) return;
         this.data = this.data.filter((item) => item !== closeTitle);
-      }
+      },
     },
 
-    template: getTemplate('$:/plugins/oeyoews/vue-tabs/templates/app.vue')
+    template: getTemplate('$:/plugins/oeyoews/vue-tabs/templates/app.vue'),
   };
   return component;
 };
