@@ -2,14 +2,16 @@ title: $:/language/MissingTiddler/Hint
 
 <center>
 
-[img width=512 class="" [./files/404.png]]
+<$button class="group relative inline-flex h-10 items-center justify-center overflow-hidden rounded-md dark:bg-neutral-950 px-6 font-medium active:scale-110" message="tm-close-all-tiddlers">
+  Go Home
+  <div
+    class="absolute inset-0 flex size-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]" message="tm-close-all-tiddlers" >
+    <div class="relative h-full w-8 bg-white/20"></div>
+  </div>
+</$button>
 
-</center>
+[img alt='' width=512 [./files/404.png]]
 
 <div class="bg-transparent flex flex-col items-center justify-center">
-<h1 class="text-4xl font-bold text-gray-900 mt-16">Page Not Found</h1>
-<p class="text-[22px] text-gray-700 mt-4">Sorry, the page you're looking for can't be found.</p>
-<$button class="my-8 px-4 py-2 bg-slate-400 text-white rounded hover:bg-slate-500 transition-colors duration-300" message="tm-close-all-tiddlers">
-  Go Home
-</$button>
 </div>
+</center>

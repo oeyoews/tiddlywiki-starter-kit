@@ -1,8 +1,5 @@
 <template>
-  <form
-    @submit.prevent="addNewLink"
-    class="flex gap-2 items-center overflow-auto flex-wrap justify-center"
-  >
+  <form @submit.prevent="addNewLink" class="">
     <div class="flex gap-2 items-center shrink-0">
       <input
         type="text"
