@@ -1,4 +1,5 @@
 <center>
+    <img src="https://cdn.jsdelivr.net/gh/oeyoews/tiddlywiki-starter-kit@main/img/tw256.png" title="tiddlywiki starter kit" class="spotlight rounded-lg" />
     <img src="https://cdn.jsdelivr.net/gh/oeyoews/tiddlywiki-starter-kit@main/img/banner5.svg" title="tiddlywiki starter kit" class="spotlight rounded-lg" />
 
 | <img src="https://cdn.jsdelivr.net/gh/oeyoews/tiddlywiki-starter-kit@main/img/banner06.png"  class="spotlight rounded-lg" /> | <img src="https://cdn.jsdelivr.net/gh/oeyoews/tiddlywiki-starter-kit@main/img/banner08.png"  class="spotlight rounded-lg" /> |
