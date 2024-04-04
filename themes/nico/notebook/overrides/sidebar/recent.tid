@@ -16,7 +16,7 @@ title: $:/core/ui/SideBar/Recent
 <$view field="$dateField$" format="date" template="$format$"/>
 <$list filter="[sameday:$dateField${!!$dateField$}$is$[system]$subfilter$!sort[$dateField$]search:title{$:/temp/search/recent}]">
 <div class="tc-menu-list-subitem">
-<$link to={{!!title}} class="p-1 rounded bg-gray-100 block dark:bg-dimmed-900 mb-1"><<timeline-title>></$link>
+<$link to={{!!title}} class="p-1 mb-1"><<timeline-title>></$link>
 </div>
 </$list>
 </div>
