@@ -86,9 +86,13 @@ const app = (
         }, speed); // 控制打字速度
       },
       check() {
+        const fields = ['quote', 'summary'];
+        if (!fields.some((item) => item === targetField)) {
+          console.error(targetField + '不属于对应的类型');
+        }
         switch (targetField) {
           case 'quote':
-            this.prompt = '每日一句, 类型为幽默';
+            this.prompt = '每日一句, 类型为搞笑';
             this.header = '每日一句';
             break;
           default:

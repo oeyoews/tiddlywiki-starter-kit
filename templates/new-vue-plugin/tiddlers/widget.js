@@ -39,7 +39,7 @@ class ExampleWidget extends Widget {
       app.use(TiddlyWikiVue);
 
       app.config.errorHandler = (err) => {
-        const text = `[Vue3](${app.version}): ` + err;
+        const text = `[Vue3](${app.version}): ` + err.message;
         console.error(text);
         domNode.textContent = text;
         domNode.style.color = 'red';
