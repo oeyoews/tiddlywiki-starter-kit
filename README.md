@@ -12,9 +12,11 @@
 
 <hr>
 
-[stackblitz online demo](https://stackblitz.com/~/github.com/oeyoews/tiddlywiki-starter-kit)
+<center>
 
-[Documentation](https://tiddlywiki-starter-kit.vercel.app/docs/)
+[Stackblitz Demo](https://stackblitz.com/~/github.com/oeyoews/tiddlywiki-starter-kit) |  [Documentation](https://tiddlywiki-starter-kit.vercel.app/docs/)
+
+</center>
 
 ## Features
 
