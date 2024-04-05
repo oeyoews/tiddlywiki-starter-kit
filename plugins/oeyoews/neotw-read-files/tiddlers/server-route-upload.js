@@ -20,7 +20,6 @@ Upload media
 
   const fs = require('fs');
   const path = require('path');
-  const buffer = require('buffer');
 
   exports.handler = function (request, response, state) {
     let body = '';

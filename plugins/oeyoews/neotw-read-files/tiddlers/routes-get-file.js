@@ -26,11 +26,11 @@ https://github.com/Jermolene/TiddlyWiki5/discussions/7964
   exports.handler = function (request, response, state) {
     var path = require('path'),
       fs = require('fs'),
-      util = require('util'),
       suppliedFilename = $tw.utils.decodeURIComponentSafe(state.params[0]),
       baseFilename = path.resolve(state.boot.wikiPath, customPath),
       filename = path.resolve(baseFilename, suppliedFilename),
       extension = path.extname(filename);
+
     // Check that the filename is inside the wiki files folder
     if (path.relative(baseFilename, filename).indexOf('..') !== 0) {
       // Send the file
