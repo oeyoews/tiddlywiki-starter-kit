@@ -1,7 +1,11 @@
 {
   "name": "create-tw-apps",
-  "version": "1.0.1",
-  "description": "TiddlyWiki5 GettingStart",
+  "version": "1.1.0",
+  "description": "TiddlyWiki5 GettingStart Cli",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "scripts": {
     "start": "tiddlywiki --listen",
     "dev": "tiddlywiki --listen",

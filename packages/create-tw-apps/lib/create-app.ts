@@ -38,7 +38,7 @@ export default async function createApp() {
 
   targetDir = projectName.trim();
 
-  const allPackManagers = ['npm', 'yarn', 'pnpm'];
+  const allPackManagers = ['npm', 'yarn', 'pnpm', 'bun'];
   const choices = allPackManagers.map((pm) => ({
     title: pm,
     value: pm,
@@ -153,6 +153,7 @@ export default async function createApp() {
   });
 
   const templateDir = path.join(__dirname, 'template');
+
   if (confirm) {
     spinner.start();
     fs.mkdirSync(targetDir);
@@ -184,6 +185,10 @@ export default async function createApp() {
       },
     });
 
+    child.on('error', (err: Error) => {
+      console.error(chalk.red.bold(`[Error]: ${err.message}`));
+    });
+
     child.on('close', (code: number) => {
       if (code !== 0) {
         spinner.fail(chalk.red.bold('Failed to install packages'));
@@ -192,10 +197,10 @@ export default async function createApp() {
       spinner.succeed(
         chalk.cyan.bold(
           'cd ' +
-            chalk.yellow.underline(targetDir) +
-            ' && ' +
-            packageManager +
-            ' run start\n',
+          chalk.yellow.underline(targetDir) +
+          ' && ' +
+          packageManager +
+          ' run start\n',
         ),
       );
     });
