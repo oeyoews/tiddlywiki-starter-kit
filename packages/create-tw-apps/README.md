@@ -4,7 +4,7 @@
 
 ```bash
 # create new tiddlywiki project
-npm create tw-apps@latest # bun create tw-apps
+npm create tw-apps@latest # bun create tw-apps@latest
 # start
 npm run start
 ```
