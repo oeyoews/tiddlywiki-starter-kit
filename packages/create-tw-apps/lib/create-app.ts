@@ -6,9 +6,10 @@ import ora from 'ora';
 import spawn from 'cross-spawn';
 import prompts from 'prompts';
 import { validateNpmName } from './vaildate-pkg';
-import { notifyUpdate } from './update-check';
+// import { notifyUpdate } from './update-check';
 import { randomSixLetters } from './randomSixLetters';
 import { onPromptState } from './onPromptState';
+import { version } from '../package.json'
 
 import { getPkgManager } from './get-pkg-manager';
 
@@ -21,8 +22,8 @@ export default async function createApp() {
   const { projectName } = await prompts({
     onState: onPromptState,
     type: 'text',
-    name: 'projectName',
-    message: 'Project name',
+    name: `projectName`,
+    message: `Your New TiddlyWiki Project Name (${version})`,
     validate: (value) => {
       const validation = validateNpmName(path.basename(path.resolve(value)));
       if (!validation.valid) {
@@ -33,7 +34,7 @@ export default async function createApp() {
       }
       return true;
     },
-    initial: `app-${randomSixLetters}`,
+    initial: `tw-app-${randomSixLetters}`,
   });
 
   targetDir = projectName.trim();
@@ -55,7 +56,7 @@ export default async function createApp() {
     initial: 0,
   });
 
-  const versionChoices = ['latest', '5.3.1', '5.2.7', 'other'];
+  const versionChoices = ['latest', '5.3.3', '5.2.7', 'other'];
 
   /* const { askedVersion } = await prompts({
     onState: onPromptState,
@@ -102,7 +103,7 @@ export default async function createApp() {
       type: 'text',
       name: 'otherTiddlyWikiPackage',
       message: `Enter version`,
-      initial: '5.3.1',
+      initial: '5.3.3',
       validate: (input) => {
         const versionPattern = /^\d+\.\d+\.\d+$/; // 正则表达式模式
         if (versionPattern.test(input)) {
