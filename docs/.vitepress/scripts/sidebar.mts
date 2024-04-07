@@ -7,9 +7,15 @@ export default [
     items: [{ text: '介绍', link: '/README' }],
   },
   {
-    text: '插件',
+    text: '太微插件',
     collapsed: true,
     items: [{ text: '插件生态', link: '/plugins/' }, ...pluginlist],
+  },
+  {
+    text: '太微工具',
+    items: [
+      { text: '插件', link: '/tools' },
+    ],
   },
   {
     text: '开发',
