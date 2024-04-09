@@ -26,6 +26,9 @@
           Link
         </a>
         <div v-if="item.update">{{item.update}}</div>
+        <audio controls v-if="item.mp3">
+          <source :src="item.mp3" type="audio/mpeg" />
+        </audio>
         <button @click="open(item)" class="transition-all opacity-0 group-hover:opacity-100">Open</button>
       </div>
     </div>

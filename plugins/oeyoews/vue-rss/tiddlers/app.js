@@ -139,7 +139,6 @@ const app = (
 
     methods: {
       open(item) {
-        console.log(item);
         const title = item.title;
         try {
           $tw.wiki.deleteTiddler(tempTiddler);
@@ -235,6 +234,10 @@ const app = (
             let summary = getContent(item, 'description');
             const update = getContent(item, 'pubDate');
             const link = getContent(item, 'link');
+            const mp3 = item
+              .getElementsByTagName('enclosure')[0]
+              ?.getAttribute('url');
+
             const src = this.getImg(item);
 
             let content = getContent(item, 'content');
@@ -253,6 +256,7 @@ const app = (
               update: relativeTime(update),
               summary,
               src,
+              mp3,
             });
           }
 
