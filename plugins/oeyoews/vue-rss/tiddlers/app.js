@@ -142,12 +142,14 @@ const app = (
         const title = item.title;
         try {
           $tw.wiki.deleteTiddler(tempTiddler);
-          $tw.wiki.addTiddler({
+          const newTiddler = {
             title: tempTiddler,
             caption: title,
             link: item.link,
             text: item.summary,
-          });
+          };
+          item.mp3 && (newTiddler['mp3'] = item.mp3);
+          $tw.wiki.addTiddler(newTiddler);
           // 有时这里会卡顿， 当一些内容特别大的时候
           $tw.modal.display(modalTiddler);
         } catch (e) {
