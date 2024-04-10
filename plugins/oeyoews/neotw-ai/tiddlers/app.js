@@ -62,9 +62,9 @@ const app = (
         return;
       }
       if (!API_KEY) {
-        console.error('请填写你的 gemini API_KEY');
+        console.error('请填写你的 API_KEY');
         this.isLoading = false;
-        this.res = '请填写你的 gemini API_KEY';
+        this.res = '请填写你的 API_KEY';
         return;
       }
       this.aibot();
