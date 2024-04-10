@@ -5,7 +5,32 @@ module-type: library
 
 \*/
 
-const { GoogleGenerativeAI } = require('../lib/gemini.min.js');
+const {
+  HarmBlockThreshold,
+  GoogleGenerativeAI,
+  HarmCategory,
+} = require('./lib/gemini.min.js');
+
+const MODEL_NAME = 'gemini-1.0-pro-001';
+
+const safetySettings = [
+  {
+    category: HarmCategory.HARM_CATEGORY_HARASSMENT,
+    threshold: HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
+  },
+  {
+    category: HarmCategory.HARM_CATEGORY_HATE_SPEECH,
+    threshold: HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
+  },
+  {
+    category: HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT,
+    threshold: HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
+  },
+  {
+    category: HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT,
+    threshold: HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
+  },
+];
 
 module.exports = async (option) => {
   const { API_KEY, prompt } = option;
@@ -23,25 +48,11 @@ module.exports = async (option) => {
   };
 
   const model = genAI.getGenerativeModel({
-    model: 'gemini-pro',
+    model: MODEL_NAME,
     generationConfig,
     // https://github.com/google/generative-ai-docs/issues/212
     // https://ai.google.dev/docs/safety_setting_gemini
-    safetySettings: [
-      {
-        category: 'HARM_CATEGORY_HATE_SPEECH',
-        threshold: 'BLOCK_NONE',
-      },
-      {
-        category: 'HARM_CATEGORY_SEXUALLY_EXPLICIT',
-        threshold: 'BLOCK_NONE',
-      },
-      { category: 'HARM_CATEGORY_HARASSMENT', threshold: 'BLOCK_NONE' },
-      {
-        category: 'HARM_CATEGORY_DANGEROUS_CONTENT',
-        threshold: 'BLOCK_NONE',
-      },
-    ],
+    safetySettings,
   });
 
   const chat = model.startChat({
