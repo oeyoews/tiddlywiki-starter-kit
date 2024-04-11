@@ -3,6 +3,9 @@
   "workspaces": [
     "packages/*"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmmirror.com"
+  },
   "description": "A modern style notebook based on tiddlywiki",
   "version": "4.1.0",
   "author": "oeyoews <jyao4783@gmail.com>",
