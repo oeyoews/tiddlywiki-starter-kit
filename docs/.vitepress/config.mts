@@ -63,9 +63,14 @@ export default defineConfig({
   async buildEnd(siteconfig) {
     genFeed(siteconfig);
     await buildEndGenerateOpenGraphImages({
-      domain: 'https://neotw.vercel.app/docs',
+      baseUrl: 'https://neotw.vercel.app/docs',
       category: {
-        byLevel: 3,
+        byPathPrefix: [
+          {
+            prefix: '/plugins/', text: "Plugin"
+          }
+        ],
+        fallbackWithFrontmatter: true,
       },
     })(siteconfig);
   },

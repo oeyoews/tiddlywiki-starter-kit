@@ -28,7 +28,6 @@
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
-    "@nolebase/vitepress-plugin-og-image": "1.25.2",
     "address": "^1.2.2",
     "chalk": "^5.3.0",
     "ci-info": "^3.9.0",
@@ -52,6 +51,7 @@
   },
   "prettier": "@oeyoews/prettier-config",
   "devDependencies": {
+    "@nolebase/vitepress-plugin-og-image": "1.28.0",
     "@oeyoews/prettier-config": "workspace:^",
     "@types/fs-extra": "^11.0.4",
     "@types/prompts": "^2.4.9",
