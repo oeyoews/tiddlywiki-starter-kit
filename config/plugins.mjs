@@ -9,8 +9,6 @@ const enableMarkdown = base.markdown;
 const localPlugins = [
   'oeyoews/tiddlywiki-publish-tiddler',
   'oeyoews/neotw-vue3', // -dev
-  // 'oeyoews/neotw-cli-info',
-  // 'oeyoews/tiddlywiki-tid2png',
 ];
 
 const onlinePlugins = [
@@ -20,22 +18,7 @@ const onlinePlugins = [
   'oeyoews/tiddlywiki-github-share',
   'oeyoews/neotw-notranslate',
   'oeyoews/neotw-vue3',
-  // 'oeyoews/vue-table' (experimental)
 ];
-
-// @deprecated, please use cm6
-/* const cmePlugins = [
-  'tiddlywiki/codemirror',
-  'tiddlywiki/codemirror-autocomplete',
-  'tiddlywiki/codemirror-mode-css',
-  'tiddlywiki/codemirror-search-replace',
-  'tiddlywiki/codemirror-closebrackets',
-  'tiddlywiki/codemirror-mode-markdown',
-  'tiddlywiki/codemirror-mode-xml',
-  'tiddlywiki/codemirror-mode-javascript',
-  'oeyoews/neotw-vimjk',
-  'oeyoews/neotw-placeholder'
-]; */
 
 const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
 
@@ -122,7 +105,6 @@ const plugins = [
 ];
 
 enableMarkdown && plugins.push(...markdowPlugins);
-// enableCME && localPlugins.push(...cmePlugins); // @deprecated
 
 switch (ci.name) {
   case 'Vercel':
