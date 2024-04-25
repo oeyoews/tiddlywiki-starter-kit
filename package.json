@@ -60,5 +60,8 @@
     "terser": "^5.30.3",
     "tw5-typed": "^0.5.9",
     "typescript": "5.4.5"
+  },
+  "engines": {
+    "node": ">16.8.0"
   }
 }
