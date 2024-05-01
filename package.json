@@ -45,20 +45,19 @@
     "tiddlywiki": "5.3.3",
     "tiged": "^2.12.7",
     "unocss": "0.58.9",
-    "vitepress": "^1.1.0",
-    "vue": "^3.4.21",
-    "ws": "^8.16.0"
+    "vitepress": "^1.1.4",
+    "vue": "^3.4.26"
   },
   "prettier": "@oeyoews/prettier-config",
   "devDependencies": {
     "@nolebase/vitepress-plugin-og-image": "1.28.0",
     "@oeyoews/prettier-config": "workspace:^",
-    "@types/fs-extra": "^11.0.4",
-    "@types/prompts": "^2.4.9",
-    "@types/qrcode": "^1.5.5",
-    "prettier": "^3.2.5",
-    "terser": "^5.30.3",
-    "tw5-typed": "^0.5.9",
+    "@types/fs-extra": "11.0.4",
+    "@types/prompts": "2.4.9",
+    "@types/qrcode": "1.5.5",
+    "prettier": "3.2.5",
+    "terser": "5.31.0",
+    "tw5-typed": "0.5.9",
     "typescript": "5.4.5"
   },
   "engines": {
