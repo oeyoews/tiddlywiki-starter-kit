@@ -15,6 +15,7 @@ export default [
     text: '太微工具',
     items: [
       { text: '插件', link: '/tools' },
+      { text: '脚手架', link: '/cli' },
     ],
   },
   {
