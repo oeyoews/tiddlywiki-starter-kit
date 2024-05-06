@@ -30,7 +30,7 @@ const oeyoewsPlugins = [
   'vue-kanban',
   'vue-tabs',
   'neotw-sitemap',
-  'vue-pomodoro',
+  // 'vue-pomodoro',
   'vue-rss',
   'neotw-vue-codeblock',
   'notivue',
