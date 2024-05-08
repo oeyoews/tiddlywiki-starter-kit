@@ -22,7 +22,9 @@ class VTableWidget extends Widget {
     const ssr = this.document.isTiddlyWikiFakeDom;
     if (ssr) return;
 
-    const VTable = require('./lib/vtable.min.js');
+    require('./lib/vtable.min.js');
+    // require('./lib/vtable-editors.min.js');
+
     const container = this.document.createElement('div');
 
     container.style.width = '400px';
