@@ -56,9 +56,6 @@ importers:
       tiged:
         specifier: ^2.12.7
         version: 2.12.7
-      tw5-typed:
-        specifier: ^0.5.10
-        version: 0.5.10
       unocss:
         specifier: 0.58.9
         version: 0.58.9(postcss@8.4.38)(rollup@4.17.2)(vite@5.2.10(@types/node@20.12.7)(terser@5.31.0))
@@ -90,6 +87,9 @@ importers:
       terser:
         specifier: 5.31.0
         version: 5.31.0
+      tw5-typed:
+        specifier: ^0.5.10
+        version: 0.5.10
       typescript:
         specifier: 5.4.5
         version: 5.4.5
