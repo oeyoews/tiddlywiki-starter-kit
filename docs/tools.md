@@ -9,4 +9,3 @@ https://github.com/oeyoews/usewiki2
 ## vscode 插件
 
 https://github.com/oeyoews/usewiki2-vscode
-

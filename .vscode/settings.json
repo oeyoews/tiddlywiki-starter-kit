@@ -10,6 +10,15 @@
     "*.info": "json",
     "*.meta": "tid",
     "*.files": "json",
+    "*.css": "tailwindcss"
   },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "tailwindCSS.experimental.configFile": "./plugins/oeyoews/tiddlywiki-tailwindcss-plus/tiddlers/tailwind.config.js",
   "typescript.tsdk": "node_modules\\typescript\\lib",
+  "files.autoSave": "off",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "tailwindCSS.emmetCompletions": true,
 }

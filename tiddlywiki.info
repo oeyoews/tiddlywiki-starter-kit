@@ -16,6 +16,7 @@
     "tiddlywiki/highlight",
     "tiddlywiki/browser-sniff",
     "tiddlywiki/pluginlibrary",
+    "oeyoews/neotw-vtable",
     "oeyoews/vue-zhipu",
     "oeyoews/neotw-filetree",
     "oeyoews/neotw-ai",

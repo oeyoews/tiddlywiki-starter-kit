@@ -3,7 +3,6 @@ const title = 'tiddlywiki-api-tiddler-title';
 
 // json type
 const dataTiddler = {
-  title: 'data-obj',
   text: 'random text',
 };
 
@@ -14,7 +13,7 @@ wiki.getTiddler(title).fields;
 wiki.getTiddlerData(dataTiddler);
 
 // 获取到某个 tiddler 的正文, 其实就是 tiddler 的 text 字段
-wiki.getTiddlerText();
+wiki.getTiddlerText(title);
 wiki.getTextReference('!!text', 'defaultText', tiddlerTitle);
 wiki.getCreationFields(); // { "created": "2024-04-03T14:51:03.702Z", "creator": "oeyoews" }
 // 等价于这种写法
@@ -51,12 +50,12 @@ logger.alert('xxx');
 wiki.setTiddlerData(title, data, fields, options);
 
 // dom
-$tw.utils.domMaker; // createElement
+wiki.utils.domMaker; // createElement
 
 // https://github.com/Jermolene/TiddlyWiki5/blob/4b56cb42983d4134715eb7fe7b083fdcc04980f0/core/modules/startup/rootwidget.js#L58
 
 // 显示一个通知
-$tw.notifier.display(title); // send notification
+wiki.notifier.display(title); // send notification
 
 // 显示 dialog
 $tw.modal.display(title); // show a dialog

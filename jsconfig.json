@@ -2,7 +2,7 @@
   "compilerOptions": {
     "checkJs": false,
     "target": "ESNext",
-    "skipLibCheck": true
+    "skipLibCheck": true,
   },
   "exclude": [
     "node_modules/",
@@ -16,7 +16,8 @@
     "**/*.min.js"
   ],
   "include": [
-    "docs/**/*.{js,ts.vue}",
+    "docs/**/*.js",
+    "docs/snippets/*.js",
     // "plugins/oeyoews/**/*.js",
     // "plugins/oeyoews/**/*.vue",
     "plugins/",
