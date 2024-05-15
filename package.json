@@ -13,7 +13,7 @@
   "packageManager": "pnpm@9.0.6",
   "scripts": {
     "new": "node lib/newplugin.mjs",
-    "build": "node lib/build.mjs && pnpm run docs:build",
+    "build": "node --env-file=.env lib/build.mjs && pnpm run docs:build",
     "update:tw": "pnpm install github:Jermolene/TiddlyWiki5",
     "update:web": "git commit --allow-empty -m 'update'  && git push",
     "build-with-bun": "bun run ./lib/build.ts",
@@ -21,7 +21,7 @@
     "format:md": "autocorrect --fix",
     "build:docker": "docker-compose build",
     "docker:push": "docker-compose push",
-    "dev": "node ./lib/startup.mjs",
+    "dev": "node --env-file=.env ./lib/startup.mjs",
     "start:pm2": "node ./lib/pm2-control.js",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
