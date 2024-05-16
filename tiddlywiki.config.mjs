@@ -1,4 +1,4 @@
-import ConfigOptions from './types.d';
+import ConfigOptions from './types.d.mjs';
 
 /** @type {ConfigOptions} */
 export default {
