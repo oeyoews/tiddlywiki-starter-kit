@@ -22,4 +22,4 @@
  * }} ConfigOptions
  */
 
-module.exports = ConfigOptions;
+export default ConfigOptions;

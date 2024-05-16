@@ -1,6 +1,4 @@
-import ConfigOptions from './types.d.mjs';
-
-/** @type {ConfigOptions} */
+/** @type import ('./types.d.mjs').ConfigOptions */
 export default {
   name: 'tiddlywiki-starter-kit',
   description:
