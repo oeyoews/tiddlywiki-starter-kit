@@ -1,3 +1,6 @@
+import ConfigOptions from './types.d';
+
+/** @type {ConfigOptions} */
 export default {
   name: 'tiddlywiki-starter-kit',
   description:
