@@ -1,0 +1,11 @@
+title: $:/plugins/oeyoews/neotw-cmp/readme
+description: neotw-cmp
+
+[[在线文档|https://neotw.vercel.app/docs/plugins/neotw-cmp]]
+
+* 弹窗不消失
+* 加上debounce
+* highlight
+* 加上命令
+* 空白搜索结果提示
+* filterCache
