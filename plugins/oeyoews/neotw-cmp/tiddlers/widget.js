@@ -13,6 +13,20 @@ class AutoCompleteWidget extends Widget {
     super(parseTreeNode, options);
   }
 
+  debouncePromise(fn, time = 400) {
+    let timerId = undefined;
+
+    return function debounced(...args) {
+      if (timerId) {
+        clearTimeout(timerId);
+      }
+
+      return new Promise((resolve) => {
+        timerId = setTimeout(() => resolve(fn(...args)), time);
+      });
+    };
+  }
+
   render(parent, nextSibling) {
     if (!$tw.browser) return;
 
@@ -23,10 +37,35 @@ class AutoCompleteWidget extends Widget {
     if (ssr) return;
 
     const aut = require('./autocomplete');
+    const { createLocalStorageRecentSearchesPlugin } = require('./recent');
     const createElement = $tw.utils.domMaker;
 
     const app = createElement('div', {
       class: 'autocomplete',
+    });
+    const debounced = this.debouncePromise(
+      (items) => Promise.resolve(items),
+      300,
+    );
+
+    const recentSearchesPlugin = createLocalStorageRecentSearchesPlugin({
+      transformSource({ source }) {
+        return {
+          ...source,
+          getItemUrl({ item }) {
+            return item.title;
+          },
+          templates: {
+            item(params) {
+              const { item, html } = params;
+
+              return html`<a class="aa-ItemLink" href="/search?q=${item.title}">
+                ${source.templates.item(params).props.children}
+              </a>`;
+            },
+          },
+        };
+      },
     });
 
     aut.autocomplete({
@@ -35,14 +74,26 @@ class AutoCompleteWidget extends Widget {
       // autoFocus: true,
       // openOnFocus: true,
       // debug: false,
+      plugins: [recentSearchesPlugin],
       ignoreCompositionEvents: true,
       defaultActiveItemId: 0,
+      render({ render, html }, root) {
+        render(
+          html`<div class="aa-PanelLayout aa-Panel--scrollable">
+            <div class="aa-PanelSections">
+              <div class="aa-PanelSection--left"></div>
+              <div class="aa-PanelSection--right"></div>
+            </div>
+          </div>`,
+          root,
+        );
+      },
       getSources({ query }) {
         let items = $tw.wiki.filterTiddlers(`[!is[system]search[${query}]]`);
 
         items = items.map((item) => $tw.wiki.getTiddler(item).fields);
 
-        return [
+        return debounced([
           {
             templates: {
               header() {
@@ -55,6 +106,7 @@ class AutoCompleteWidget extends Widget {
                 // if (!item) return html`no results`;
 
                 const image = html`<div class="aut-tiddler"></div>`;
+
                 const title = html`<b>${item.title}</b>`;
                 // const text = html`<div>${item.text}</div>`;
                 // const text = html`<div>
@@ -88,7 +140,7 @@ class AutoCompleteWidget extends Widget {
               return item.title;
             },
           },
-        ];
+        ]);
       },
     });
 
