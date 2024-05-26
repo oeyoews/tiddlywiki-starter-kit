@@ -71,23 +71,23 @@ class AutoCompleteWidget extends Widget {
     aut.autocomplete({
       container: app,
       placeholder: 'Search for tiddlers',
-      // autoFocus: true,
-      // openOnFocus: true,
+      autoFocus: true,
+      openOnFocus: true,
       // debug: false,
       plugins: [recentSearchesPlugin],
       ignoreCompositionEvents: true,
       defaultActiveItemId: 0,
-      render({ render, html }, root) {
-        render(
-          html`<div class="aa-PanelLayout aa-Panel--scrollable">
-            <div class="aa-PanelSections">
-              <div class="aa-PanelSection--left"></div>
-              <div class="aa-PanelSection--right"></div>
-            </div>
-          </div>`,
-          root,
-        );
-      },
+      // render({ render, html }, root) {
+      //   render(
+      //     html`<div class="aa-PanelLayout aa-Panel--scrollable">
+      //       <div class="aa-PanelSections">
+      //         <div class="aa-PanelSection--left"></div>
+      //         <div class="aa-PanelSection--right"></div>
+      //       </div>
+      //     </div>`,
+      //     root,
+      //   );
+      // },
       getSources({ query }) {
         let items = $tw.wiki.filterTiddlers(`[!is[system]search[${query}]]`);
 
