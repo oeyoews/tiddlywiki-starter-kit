@@ -12,8 +12,8 @@ description: neotw-cmp
 * masklayer
 * 快捷键 全屏
 * 宽度
-* 搜索结果仅仅显示title matched
-* 输入框内容重置
+* 搜索结果仅仅显示title matched, 不支持中文搜索
+* [x] 输入框内容重置
 * [x] 加上debounce
 
 ## Next

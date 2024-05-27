@@ -138,18 +138,19 @@ class AutoCompleteWidget extends Widget {
             },
 
             getItems() {
-              return items.filter(({ title }) =>
-                title.toLowerCase().includes(query.toLowerCase()),
-              );
+              return items;
+              // return items.filter(({ title }) =>
+              //   title.toLowerCase().includes(query.toLowerCase()),
+              // );
             },
 
             // getItemUrl({ item }) {
             //   return `#` + encodeURIComponent(item.title);
             // },
 
-            getItemInputValue({ item }) {
-              return item.title;
-            },
+            // getItemInputValue({ item }) {
+            //   return item.title;
+            // },
           },
         ]);
       },
