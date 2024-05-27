@@ -2,6 +2,10 @@ title: $:/plugins/oeyoews/neotw-cmp/tiddler.css
 tags: $:/tags/Stylesheet
 type: text/css
 
+.aa-Panel {
+  z-index: 9999;
+}
+
 .aut-arrow {
   display: inline-block;
   width: 2em;

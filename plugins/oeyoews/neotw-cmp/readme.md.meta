@@ -6,15 +6,19 @@ description: neotw-cmp
 ## TODO
 
 * 弹窗不消失
-* 加上debounce
-* 搜索结果highlight
 * 加上命令
 * 空白搜索结果提示
 * filterCache
 * masklayer
 * 快捷键 全屏
-* 基于http api 搜索
 * 宽度
-* neotw 黑暗模式适配
-* 双栏预览
 * 搜索结果仅仅显示title matched
+* 输入框内容重置
+* [x] 加上debounce
+
+## Next
+
+* 双栏预览
+* 搜索结果highlight
+* 基于http api 搜索
+* neotw 黑暗模式适配

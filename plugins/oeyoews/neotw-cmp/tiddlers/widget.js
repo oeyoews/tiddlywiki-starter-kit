@@ -36,11 +36,20 @@ class AutoCompleteWidget extends Widget {
     const ssr = this.document.isTiddlyWikiFakeDom;
     if (ssr) return;
 
+    const openCmp = () => {
+      this.document.body.style.overflow = 'hidden';
+    };
+
+    const closeCmp = () => {
+      this.document.body.style.overflow = '';
+    };
+
     const aut = require('./autocomplete');
     const createElement = $tw.utils.domMaker;
 
     const app = createElement('div', {
-      class: 'autocomplete',
+      class:
+        'autocomplete z-[9999] bg-white flex-col transform shadow-lg p-2 mt-4 fixed left-1/2 top-24 -translate-x-1/2 w-1/2 rounded transition-all dark:invert w-3/4 md:w-1/2 flex',
     });
 
     const debounced = this.debouncePromise(
@@ -79,7 +88,7 @@ class AutoCompleteWidget extends Widget {
 
     const searchResult = (item, html, data) => {
       return html`<footer
-        class="mb-1 text-sm flex justify-end text-gray-500 dark:text-gray-500"
+        class="mb-1 text-sm flex justify-start text-gray-500 dark:text-gray-500"
       >
         共有${Number(data.length)}条搜索结果
       </footer>`;
@@ -141,15 +150,24 @@ class AutoCompleteWidget extends Widget {
       },
     });
 
+    const masklayer = createElement('div', {
+      class:
+        'opacity-0 backdrop-blur-lg z-[9998] fixed inset-0 bg-black/20 transition-all cursor-pointer opacity-100',
+    });
+
+    masklayer.addEventListener('click', closeCmp);
+
     // TODO: Masklayer
     const domNode = createElement('div', {
-      children: [app],
+      children: [masklayer, app],
     });
 
     parent.insertBefore(domNode, nextSibling);
     this.domNodes.push(domNode);
+
+    openCmp();
   }
 }
 
 /** @description neotw-cmp widget */
-exports['widget-64xsv43d'] = AutoCompleteWidget;
+exports['neotw-cmp'] = AutoCompleteWidget;
