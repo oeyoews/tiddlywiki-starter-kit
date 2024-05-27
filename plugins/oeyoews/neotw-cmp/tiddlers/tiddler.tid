@@ -2,6 +2,18 @@ title: $:/plugins/oeyoews/neotw-cmp/tiddler.css
 tags: $:/tags/Stylesheet
 type: text/css
 
+.aa-InputWrapper > input {
+  background: transparent;
+}
+
+.aa-Form {
+  border: none;
+}
+
+.aa-Form:focus-within {
+  box-shadow: none;
+}
+
 .aa-Panel {
   z-index: 9999;
 }

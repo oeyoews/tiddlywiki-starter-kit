@@ -48,8 +48,9 @@ class AutoCompleteWidget extends Widget {
     const createElement = $tw.utils.domMaker;
 
     const app = createElement('div', {
+      // dark:invert
       class:
-        'autocomplete z-[9999] bg-white flex-col transform shadow-lg p-2 mt-4 fixed left-1/2 top-24 -translate-x-1/2 w-1/2 rounded transition-all dark:invert w-3/4 md:w-1/2 flex',
+        'autocomplete z-[9999] bg-white flex-col transform shadow-lg py-2 mt-4 fixed left-1/2 top-24 -translate-x-1/2 w-1/2 rounded transition-all w-3/4 md:w-1/2 flex',
     });
 
     const debounced = this.debouncePromise(
