@@ -36,16 +36,19 @@ class AutoCompleteWidget extends Widget {
     const ssr = this.document.isTiddlyWikiFakeDom;
     if (ssr) return;
 
+    const createElement = $tw.utils.domMaker;
+    const domNode = this.document.createElement('div');
+
     const openCmp = () => {
       this.document.body.style.overflow = 'hidden';
     };
 
     const closeCmp = () => {
       this.document.body.style.overflow = '';
+      domNode.style.display = 'none';
     };
 
     const aut = require('./autocomplete');
-    const createElement = $tw.utils.domMaker;
 
     const app = createElement('div', {
       // dark:invert
@@ -131,6 +134,7 @@ class AutoCompleteWidget extends Widget {
             // tiddler 点击跳转
             onSelect(e) {
               e.item.title && new $tw.Story().navigateTiddler(e.item.title);
+              closeCmp();
             },
 
             getItems() {
@@ -156,15 +160,14 @@ class AutoCompleteWidget extends Widget {
         'opacity-0 backdrop-blur-lg z-[9998] fixed inset-0 bg-black/20 transition-all cursor-pointer opacity-100',
     });
 
-    masklayer.addEventListener('click', closeCmp);
-
-    // TODO: Masklayer
-    const domNode = createElement('div', {
-      children: [masklayer, app],
-    });
+    domNode.append(masklayer, app);
 
     parent.insertBefore(domNode, nextSibling);
     this.domNodes.push(domNode);
+
+    masklayer.addEventListener('click', () => {
+      closeCmp();
+    });
 
     openCmp();
   }

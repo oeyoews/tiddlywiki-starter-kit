@@ -2,10 +2,12 @@ title: $:/plugins/oeyoews/neotw-cmp/tiddler.css
 tags: $:/tags/Stylesheet
 type: text/css
 
+
 .aa-InputWrapper > input {
   background: transparent;
 }
 
+.aa-DetachedSearchButton,
 .aa-Form {
   border: none;
 }

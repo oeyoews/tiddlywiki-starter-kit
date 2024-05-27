@@ -74,7 +74,7 @@ const oeyoewsPlugins = [
   'tiddlywiki-motion',
   'neotw-pwa',
   'neotw-zen-mode',
-  'commandpalette',
+  // 'commandpalette',
   'neotw-icons',
   'neotw-copy-code2',
   'tiddlywiki-daylight',
