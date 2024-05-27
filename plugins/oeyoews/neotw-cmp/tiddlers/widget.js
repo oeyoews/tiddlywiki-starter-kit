@@ -37,105 +37,102 @@ class AutoCompleteWidget extends Widget {
     if (ssr) return;
 
     const aut = require('./autocomplete');
-    const { createLocalStorageRecentSearchesPlugin } = require('./recent');
     const createElement = $tw.utils.domMaker;
 
     const app = createElement('div', {
       class: 'autocomplete',
     });
+
     const debounced = this.debouncePromise(
       (items) => Promise.resolve(items),
       300,
     );
 
-    const recentSearchesPlugin = createLocalStorageRecentSearchesPlugin({
-      transformSource({ source }) {
-        return {
-          ...source,
-          getItemUrl({ item }) {
-            return item.title;
-          },
-          templates: {
-            item(params) {
-              const { item, html } = params;
+    const minSearchLength = $tw.wiki.getTiddlerText(
+      '$:/config/Search/MinLength',
+    );
 
-              return html`<a class="aa-ItemLink" href="/search?q=${item.title}">
-                ${source.templates.item(params).props.children}
-              </a>`;
-            },
-          },
-        };
-      },
-    });
+    const previewTiddlers = (item, html) => {
+      // if (!item) return html`no results`;
+
+      const image = html`<div class="aut-tiddler"></div>`;
+      const linkIcon = html`<div class="aut-arrow"></div>`;
+      const tooltip = `点击跳转到${item.title}`;
+      const title = html`<b>${item.title}</b>`;
+      // const text = html`<div>${item.text}</div>`;
+      // const text = html`<div>
+      //   ${$tw.wiki.renderText(
+      //     'text/html',
+      //     'text/markdown',
+      //     `<div> ${item.text} </div>`,
+      //   )}
+      // </div>`;
+
+      return html`<div
+        class="flex justify-between items-center"
+        title="${tooltip}"
+      >
+        <div class="flex items-center justify-left gap-2">${image}${title}</div>
+        <div>${linkIcon}</div>
+      </div>`;
+    };
+
+    const searchResult = (item, html, data) => {
+      return html`<footer
+        class="mb-1 text-sm flex justify-end text-gray-500 dark:text-gray-500"
+      >
+        共有${Number(data.length)}条搜索结果
+      </footer>`;
+    };
 
     aut.autocomplete({
       container: app,
-      placeholder: 'Search for tiddlers',
+      placeholder: 'Search ...',
       autoFocus: true,
       openOnFocus: true,
-      // debug: false,
-      plugins: [recentSearchesPlugin],
-      ignoreCompositionEvents: true,
+      debug: false,
+      plugins: [],
+      ignoreCompositionEvents: true, // IME friendly
       defaultActiveItemId: 0,
-      // render({ render, html }, root) {
-      //   render(
-      //     html`<div class="aa-PanelLayout aa-Panel--scrollable">
-      //       <div class="aa-PanelSections">
-      //         <div class="aa-PanelSection--left"></div>
-      //         <div class="aa-PanelSection--right"></div>
-      //       </div>
-      //     </div>`,
-      //     root,
-      //   );
-      // },
       getSources({ query }) {
-        let items = $tw.wiki.filterTiddlers(`[!is[system]search[${query}]]`);
+        let items = [];
 
-        items = items.map((item) => $tw.wiki.getTiddler(item).fields);
+        if (query.length >= Number(minSearchLength)) {
+          items = $tw.wiki.filterTiddlers(`[!is[system]search[${query}]]`);
+
+          items = items.map((item) => $tw.wiki.getTiddler(item).fields);
+        }
+        const length = items.length;
 
         return debounced([
           {
+            sourceId: 'LocalTiddlers',
             templates: {
-              header() {
-                return 'Suggestions';
+              header({ item, html }) {
+                // Dynamic
+                return searchResult(item, html, { length });
               },
-              footer() {
-                return 'footer';
-              },
+              // footer(){},
               item({ item, html }) {
-                // if (!item) return html`no results`;
-
-                const image = html`<div class="aut-tiddler"></div>`;
-
-                const title = html`<b>${item.title}</b>`;
-                // const text = html`<div>${item.text}</div>`;
-                // const text = html`<div>
-                //   ${$tw.wiki.renderText(
-                //     'text/html',
-                //     'text/markdown',
-                //     `<div> ${item.text} </div>`,
-                //   )}
-                // </div>`;
-
-                return html`<div>
-                  <div class="flex items-center justify-left gap-2">
-                    ${image}${title}
-                  </div>
-                </div>`;
+                return previewTiddlers(item, html);
               },
             },
+
+            // tiddler 点击跳转
             onSelect(e) {
-              new $tw.Story().navigateTiddler(e.item.title);
+              e.item.title && new $tw.Story().navigateTiddler(e.item.title);
             },
-            sourceId: 'localItems',
+
             getItems() {
               return items.filter(({ title }) =>
                 title.toLowerCase().includes(query.toLowerCase()),
               );
             },
-            getItemUrl({ item }) {
-              return `#` + encodeURIComponent(item.title);
-            },
+
+            // getItemUrl({ item }) {
+            //   return `#` + encodeURIComponent(item.title);
+            // },
+
             getItemInputValue({ item }) {
               return item.title;
             },
@@ -144,6 +141,7 @@ class AutoCompleteWidget extends Widget {
       },
     });
 
+    // TODO: Masklayer
     const domNode = createElement('div', {
       children: [app],
     });

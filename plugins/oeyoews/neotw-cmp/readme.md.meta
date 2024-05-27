@@ -14,3 +14,7 @@ description: neotw-cmp
 * masklayer
 * 快捷键 全屏
 * 基于http api 搜索
+* 宽度
+* neotw 黑暗模式适配
+* 双栏预览
+* 搜索结果仅仅显示title matched
