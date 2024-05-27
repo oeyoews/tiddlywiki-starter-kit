@@ -1,7 +1,0 @@
-command-palette-hint: Choose tiddler to keep
-command-palette-name: 🚫 Close other Tiddlers
-command-palette-type: history
-tags: $:/tags/CommandPaletteCommand
-title: $:/plugins/oeyoews/commandpalette/Close other Tiddlers
-
-tm-close-other-tiddlers

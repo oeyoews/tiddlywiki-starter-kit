@@ -1,7 +1,0 @@
-command-palette-hint: Choose tiddler to delete
-command-palette-name: 🗑️ Delete Tiddler
-command-palette-type: history
-tags: $:/tags/CommandPaletteCommand
-title: $:/plugins/oeyoews/commandpalette/Delete Tiddler
-
-tm-delete-tiddler

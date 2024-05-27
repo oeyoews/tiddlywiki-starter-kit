@@ -1,6 +1,0 @@
-command-palette-name: 🔄 Browser Refresh
-command-palette-type: message
-tags: $:/tags/CommandPaletteCommand
-title: $:/plugins/oeyoews/commandpalette/Browser Refresh
-
-tm-browser-refresh
