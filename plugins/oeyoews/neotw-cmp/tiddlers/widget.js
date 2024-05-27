@@ -37,9 +37,14 @@ class AutoCompleteWidget extends Widget {
     if (ssr) return;
 
     const createElement = $tw.utils.domMaker;
-    const domNode = this.document.createElement('div');
+    const domNode = document.createElement('div');
 
     const openCmp = () => {
+      domNode.style.display = '';
+      const input = window.document.querySelector('#autocomplete-0-input');
+      if (input) {
+        input.focus();
+      }
       this.document.body.style.overflow = 'hidden';
     };
 
@@ -47,6 +52,9 @@ class AutoCompleteWidget extends Widget {
       this.document.body.style.overflow = '';
       domNode.style.display = 'none';
     };
+
+    // 注册事件
+    $tw.rootWidget.addEventListener('open-cmp', openCmp);
 
     const aut = require('./autocomplete');
 
@@ -160,17 +168,17 @@ class AutoCompleteWidget extends Widget {
       class:
         'opacity-0 backdrop-blur-lg z-[9998] fixed inset-0 bg-black/20 transition-all cursor-pointer opacity-100',
     });
+    masklayer.title = '点击关闭搜索面板';
 
     domNode.append(masklayer, app);
 
     parent.insertBefore(domNode, nextSibling);
     this.domNodes.push(domNode);
 
+    closeCmp();
     masklayer.addEventListener('click', () => {
       closeCmp();
     });
-
-    openCmp();
   }
 }
 

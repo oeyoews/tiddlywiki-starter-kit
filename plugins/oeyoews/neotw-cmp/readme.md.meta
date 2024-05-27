@@ -5,20 +5,21 @@ description: neotw-cmp
 
 ## TODO
 
-* 弹窗不消失
-* 加上命令
-* 空白搜索结果提示
-* filterCache
-* masklayer
-* 快捷键 全屏
-* 宽度
-* 搜索结果仅仅显示title matched, 不支持中文搜索
+* [ ] 空白搜索结果提示
+* [ ] filterCache 缓存
+* [ ] 不支持中文搜索
+* [x] 快捷键 全屏
+* [x] 弹窗不消失
+* [x] 加上命令
+* [x] masklayer
+* [x] 宽度
+* [x] 搜索结果仅仅显示title matched
 * [x] 输入框内容重置
 * [x] 加上debounce
 
 ## Next
 
-* 双栏预览
 * 搜索结果highlight
+* 双栏预览
 * 基于http api 搜索
 * neotw 黑暗模式适配
