@@ -13,7 +13,7 @@ class AutoCompleteWidget extends Widget {
     super(parseTreeNode, options);
   }
 
-  debouncePromise(fn, time = 400) {
+  debouncePromise(fn, time = 300) {
     let timerId = undefined;
 
     return function debounced(...args) {
@@ -58,11 +58,19 @@ class AutoCompleteWidget extends Widget {
 
     const aut = require('./autocomplete');
 
-    const app = createElement('div', {
-      // dark:invert
+    // dark:invert
+    const layout = createElement('div', {
       class:
-        'autocomplete z-[9999] bg-white flex-col transform shadow-lg py-2 mt-4 fixed left-1/2 top-24 -translate-x-1/2 w-1/2 rounded transition-all w-3/4 md:w-1/2 flex',
+        'z-[9999] bg-white transform shadow-lg py-2 fixed left-1/2 top-24 -translate-x-1/2 w-2/3 rounded transition-all w-3/4 md:w-1/2',
     });
+
+    const app = createElement('div', {
+      attributes: {
+        id: 'neotw-cmp',
+      },
+    });
+
+    layout.appendChild(app);
 
     const debounced = this.debouncePromise(
       (items) => Promise.resolve(items),
@@ -118,11 +126,13 @@ class AutoCompleteWidget extends Widget {
       getSources({ query }) {
         let items = [];
 
-        if (query.length >= Number(minSearchLength)) {
-          items = $tw.wiki.filterTiddlers(`[!is[system]search[${query}]]`);
-
-          items = items.map((item) => $tw.wiki.getTiddler(item).fields);
+        if (query.length < Number(minSearchLength - 1)) {
+          return [];
         }
+
+        items = $tw.wiki.filterTiddlers(`[!is[system]search[${query}]]`);
+        items = items.map((item) => $tw.wiki.getTiddler(item).fields);
+
         const length = items.length;
 
         return debounced([
@@ -141,8 +151,8 @@ class AutoCompleteWidget extends Widget {
 
             // tiddler 点击跳转
             onSelect(e) {
-              e.item.title && new $tw.Story().navigateTiddler(e.item.title);
               closeCmp();
+              e.item.title && new $tw.Story().navigateTiddler(e.item.title);
             },
 
             getItems() {
@@ -170,7 +180,7 @@ class AutoCompleteWidget extends Widget {
     });
     masklayer.title = '点击关闭搜索面板';
 
-    domNode.append(masklayer, app);
+    domNode.append(masklayer, layout);
 
     parent.insertBefore(domNode, nextSibling);
     this.domNodes.push(domNode);

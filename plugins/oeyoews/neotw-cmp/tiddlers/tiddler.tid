@@ -2,6 +2,10 @@ title: $:/plugins/oeyoews/neotw-cmp/tiddler.css
 tags: $:/tags/Stylesheet
 type: text/css
 
+.aa-Label svg {
+  color: inherit !important;
+}
+
 .aa-Panel--scrollable {
   max-height: 500px;
 }
