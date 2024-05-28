@@ -53,6 +53,13 @@ class AutoCompleteWidget extends Widget {
       autoFocus: true,
       openOnFocus: true,
       debug: false,
+      // https://www.algolia.com/doc/ui-libraries/autocomplete/core-concepts/state/
+      initialState: {
+        query: 'bugs',
+      },
+      onStateChange({ state }) {
+        console.log(state);
+      },
       plugins: [titlePlugin(domNode)],
       ignoreCompositionEvents: true, // IME friendly
       defaultActiveItemId: 0,

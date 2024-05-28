@@ -1,7 +1,7 @@
 /*\
 title: $:/plugins/oeyoews/neotw-cmp/plugins/title.js
 type: application/javascript
-module-type: widget
+module-type: library
 
 \*/
 
