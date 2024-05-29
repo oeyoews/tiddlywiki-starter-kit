@@ -50,20 +50,23 @@ class AutoCompleteWidget extends Widget {
     aut.autocomplete({
       container: app,
       placeholder: 'Search ...',
+      isOpen: true,
       autoFocus: true,
       openOnFocus: true,
       debug: false,
       // https://www.algolia.com/doc/ui-libraries/autocomplete/core-concepts/state/
-      initialState: {
-        query: 'bugs',
-      },
-      onStateChange({ state }) {
-        console.log(state);
-      },
+      // initialState: {
+      //   query: 'bugs',
+      // },
+      // onStateChange({ state }) {
+      //   console.log(state);
+      // },
       plugins: [titlePlugin(domNode)],
       ignoreCompositionEvents: true, // IME friendly
       defaultActiveItemId: 0,
     });
+
+    // aut.setQuery('99');
 
     const masklayer = createElement('div', {
       class:

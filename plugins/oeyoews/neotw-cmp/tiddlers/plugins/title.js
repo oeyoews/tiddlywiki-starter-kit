@@ -7,12 +7,13 @@ module-type: library
 
 const { debounced } = require('./utils');
 const { closeCmp } = require('./utils');
+// const cmds = ['> ', '#'];
 
 const minSearchLength = $tw.wiki.getTiddlerText('$:/config/Search/MinLength');
 
 function titlePlugin(domNode) {
   return {
-    getSources({ query }) {
+    getSources({ query, setQuery, refresh, setContext }) {
       let items = [];
 
       if (query.length >= Number(minSearchLength - 1)) {
@@ -27,12 +28,16 @@ function titlePlugin(domNode) {
           sourceId: 'LocalTiddlers',
           templates: {
             header({ item, html }) {
-              // Dynamic
-              return searchResult(item, html, { length });
+              if (!query) return;
+              return searchResult(item, html, { length, query });
             },
-            // footer(){},
-            item({ item, html }) {
+            item({ item, html, query }) {
               return previewTiddlers(item, html);
+            },
+            noResults({ item, html, query }) {
+              if (!query) return;
+
+              return noResults(item, html);
             },
           },
 
@@ -42,7 +47,9 @@ function titlePlugin(domNode) {
             e.item.title && new $tw.Story().navigateTiddler(e.item.title);
           },
 
-          getItems() {
+          getItems({ query }) {
+            // if (!cmds.some((item) => query.startsWith(item))) {
+            // }
             return items;
             // return items.filter(({ title }) =>
             //   title.toLowerCase().includes(query.toLowerCase()),
@@ -88,8 +95,12 @@ const searchResult = (item, html, data) => {
   return html`<footer
     class="mb-1 text-sm flex justify-start text-gray-500 dark:text-gray-500"
   >
-    共有${Number(data.length)}条搜索结果
+    <mark>${data.query}</mark> 共有 <b> ${Number(data.length)} </b> 条搜索结果
   </footer>`;
+};
+
+const noResults = (item, html) => {
+  return html`<div>暂无内容</div>`;
 };
 
 module.exports = titlePlugin;
