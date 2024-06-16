@@ -10,7 +10,9 @@ const { closeCmp } = require('./utils');
 const cmds = {
   cmd: '>',
   help: '?',
+  empty: '',
 };
+const cmdsString = Object.values(cmds);
 
 const goto = new $tw.Story();
 
@@ -68,10 +70,10 @@ function Plugin(domNode) {
         {
           sourceId: 'LocalTiddlers',
           templates: {
-            header({ item, html }) {
-              if (!query || ['>'].includes(query)) return;
-              return searchResult(item, html, { length, query });
-            },
+            // header({ item, html }) {
+            //   if (cmdsString.includes(query)) return;
+            //   return searchResult(item, html, { length, query });
+            // },
             item({ item, html, query }) {
               return previewTiddlers(item, html);
             },
@@ -162,7 +164,7 @@ const searchResult = (item, html, data) => {
 };
 
 const noResults = (item, html) => {
-  return html`<div>暂无内容</div>`;
+  return html`<div class="text-center text-sm">暂无内容</div>`;
 };
 
 module.exports = Plugin;
