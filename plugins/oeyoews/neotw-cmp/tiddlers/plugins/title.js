@@ -73,6 +73,7 @@ function Plugin(domNode) {
 
       const length = items.length;
 
+      // https://www.algolia.com/doc/ui-libraries/autocomplete/core-concepts/sources/
       return debounced([
         {
           sourceId: 'LocalTiddlers',

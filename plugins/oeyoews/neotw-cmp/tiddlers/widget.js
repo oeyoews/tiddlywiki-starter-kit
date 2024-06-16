@@ -58,15 +58,13 @@ class AutoCompleteWidget extends Widget {
       initialState: {
         // query: '',
       },
-      // onStateChange({ state }) {
-      //   console.log(state);
-      // },
+      onStateChange({ state }) {
+        // console.log(state);
+      },
       plugins: [titlePlugin(domNode)],
       ignoreCompositionEvents: true, // IME friendly
       defaultActiveItemId: 0,
     });
-
-    // aut.setQuery('99');
 
     const masklayer = createElement('div', {
       class:

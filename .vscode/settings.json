@@ -9,6 +9,7 @@
     "**/files/**/*.vue": "html",
     "*.info": "json",
     "*.meta": "tid",
+    "*.tid": "tid",
     "*.files": "json",
     "*.css": "tailwindcss"
   },
