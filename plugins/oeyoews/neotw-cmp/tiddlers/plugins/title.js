@@ -58,8 +58,10 @@ function Plugin(domNode) {
           ];
           break;
         default:
-          if (query.length >= Number(minSearchLength - 1)) {
-            items = $tw.wiki.filterTiddlers(`[!is[system]search[${query}]]`);
+          if (query.trim().length >= Number(minSearchLength - 1)) {
+            items = $tw.wiki.filterTiddlers(
+              `[!is[system]search[${query.trim()}]]`,
+            );
             items = items.map((item) => $tw.wiki.getTiddler(item).fields);
           }
       }
