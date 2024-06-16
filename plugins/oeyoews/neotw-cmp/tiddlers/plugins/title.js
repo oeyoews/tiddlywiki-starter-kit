@@ -40,6 +40,8 @@ const links = [
   },
 ];
 
+let mode = '';
+
 function Plugin(domNode) {
   return {
     getSources({ query, setQuery, refresh, setContext }) {
@@ -48,16 +50,19 @@ function Plugin(domNode) {
         case '':
         case cmds.help:
           items = [...links, ...actions];
+          mode = 'help';
           break;
         case cmds.cmd:
+          mode = 'cmd';
           items = [
             {
-              title: '进行中',
+              title: '开发者',
               action: '',
             },
           ];
           break;
         default:
+          mode = 'tiddler';
           if (query.trim().length >= Number(minSearchLength - 1)) {
             items = $tw.wiki.filterTiddlers(
               `[!is[system]search[${query.trim()}]]`,
@@ -137,9 +142,9 @@ function Plugin(domNode) {
 
 const previewTiddlers = (item, html) => {
   // if (!item) return html`no results`;
+  const image = html`<div class="${mode}"></div>`;
 
-  const image = html`<div class="aut-tiddler"></div>`;
-  const linkIcon = html`<div class="aut-arrow"></div>`;
+  const linkIcon = html`<div class="arrow"></div>`;
   const tooltip = `点击跳转到${item.title}`;
   const title = html`<b>${item.title}</b>`;
   // const text = html`<div>${item.text}</div>`;
@@ -164,6 +169,8 @@ const searchResult = (item, html, data) => {
     <mark>${data.query}</mark> 共有 <b> ${Number(data.length)} </b> 条搜索结果
   </footer>`;
 };
+
+const { version } = $tw.wiki.getTiddler('$:/plugins/oeyoews/neotw-cmp').fields;
 
 const noResults = (item, html) => {
   return html`<div class="text-center text-sm">暂无内容</div>`;
