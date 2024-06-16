@@ -49,15 +49,15 @@ class AutoCompleteWidget extends Widget {
 
     aut.autocomplete({
       container: app,
-      placeholder: 'Search ...',
+      placeholder: '命令面板 ...',
       isOpen: true,
       autoFocus: true,
       openOnFocus: true,
       debug: false,
       // https://www.algolia.com/doc/ui-libraries/autocomplete/core-concepts/state/
-      // initialState: {
-      //   query: 'bugs',
-      // },
+      initialState: {
+        query: '',
+      },
       // onStateChange({ state }) {
       //   console.log(state);
       // },

@@ -7,18 +7,59 @@ module-type: library
 
 const { debounced } = require('./utils');
 const { closeCmp } = require('./utils');
-// const cmds = ['> ', '#'];
+const cmds = {
+  cmd: '>',
+  help: '?',
+};
+
+const goto = new $tw.Story();
 
 const minSearchLength = $tw.wiki.getTiddlerText('$:/config/Search/MinLength');
 
-function titlePlugin(domNode) {
+const actions = [
+  {
+    title: '跳转到主页',
+    action: 'home',
+  },
+];
+
+const links = [
+  {
+    title: 'TiddlyWiki GitHub',
+    link: 'https://github.com/Jermolene/TiddlyWiki5',
+  },
+  {
+    title: 'TiddlyWiki 中文文档',
+    link: 'https://bramchen.github.io/tw5-docs/zh-Hans/',
+  },
+  {
+    title: 'TiddlyWiki 官方论坛',
+    link: 'https://talk.tiddlywiki.org/',
+  },
+];
+
+function Plugin(domNode) {
   return {
     getSources({ query, setQuery, refresh, setContext }) {
       let items = [];
-
-      if (query.length >= Number(minSearchLength - 1)) {
-        items = $tw.wiki.filterTiddlers(`[!is[system]search[${query}]]`);
-        items = items.map((item) => $tw.wiki.getTiddler(item).fields);
+      switch (query) {
+        case '':
+        case cmds.help:
+          items = [...links, ...actions];
+          break;
+        case cmds.cmd:
+          items = [
+            {
+              title: '进行中',
+              action: '',
+            },
+          ];
+          break;
+        default:
+          if (query.length >= Number(minSearchLength - 1)) {
+            items = $tw.wiki.filterTiddlers(`[!is[system]search[${query}]]`);
+            items = items.map((item) => $tw.wiki.getTiddler(item).fields);
+          }
       }
 
       const length = items.length;
@@ -28,23 +69,44 @@ function titlePlugin(domNode) {
           sourceId: 'LocalTiddlers',
           templates: {
             header({ item, html }) {
-              if (!query) return;
+              if (!query || ['>'].includes(query)) return;
               return searchResult(item, html, { length, query });
             },
             item({ item, html, query }) {
               return previewTiddlers(item, html);
             },
             noResults({ item, html, query }) {
-              if (!query) return;
-
+              // if (!query) return;
               return noResults(item, html);
             },
           },
 
-          // tiddler 点击跳转
-          onSelect(e) {
-            closeCmp(domNode);
-            e.item.title && new $tw.Story().navigateTiddler(e.item.title);
+          onSelect({ item }) {
+            closeCmp(domNode); // hide modal
+
+            const invoke = (action, param) => {
+              const paramString = param || '';
+              const actionString = `<$action-sendmessage $message="${action}" $param="${paramString}"/>`;
+              console.log(actionString);
+              return $tw.rootWidget.invokeActionString(actionString);
+            };
+
+            if (item.link) {
+              window.open(item.link, item.link);
+              return;
+            }
+
+            if (item.action) {
+              switch (item.action) {
+                case 'home':
+                  goto.navigateTiddler('GettingStarted');
+                  break;
+                default:
+              }
+              return;
+            }
+
+            item.title && goto.navigateTiddler(item.title);
           },
 
           getItems({ query }) {
@@ -103,4 +165,4 @@ const noResults = (item, html) => {
   return html`<div>暂无内容</div>`;
 };
 
-module.exports = titlePlugin;
+module.exports = Plugin;
