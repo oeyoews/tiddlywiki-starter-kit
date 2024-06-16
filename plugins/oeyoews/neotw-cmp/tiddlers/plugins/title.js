@@ -81,11 +81,10 @@ function Plugin(domNode) {
             //   if (cmdsString.includes(query)) return;
             //   return searchResult(item, html, { length, query });
             // },
-            item({ item, html, query }) {
-              return previewTiddlers(item, html);
+            item({ item, html }) {
+              return previewTiddlers(item, html, query);
             },
-            noResults({ item, html, query }) {
-              // if (!query) return;
+            noResults({ item, html }) {
               return noResults(item, html);
             },
           },
@@ -140,21 +139,23 @@ function Plugin(domNode) {
   };
 }
 
-const previewTiddlers = (item, html) => {
-  // if (!item) return html`no results`;
+const previewTiddlers = (item, html, query) => {
   const image = html`<div class="${mode}"></div>`;
 
   const linkIcon = html`<div class="arrow"></div>`;
   const tooltip = `点击跳转到${item.title}`;
-  const title = html`<b>${item.title}</b>`;
-  // const text = html`<div>${item.text}</div>`;
-  // const text = html`<div>
-  //   ${$tw.wiki.renderText(
-  //     'text/html',
-  //     'text/markdown',
-  //     `<div> ${item.text} </div>`,
-  //   )}
-  // </div>`;
+
+  const title = html(item.title);
+
+  // const position = item.title.indexOf(query);
+
+  // NOTE: 搜索结果不是按照title
+  // const title =
+  //   mode === 'tiddler' && query && item.title
+  //     ? item.title.slice(0, position) +
+  //       `<b>${query}</b>` +
+  //       item.title.slice(position + query.length - 1, item.title.length)
+  //     : item.title;
 
   return html`<div class="flex justify-between items-center" title="${tooltip}">
     <div class="flex items-center justify-left gap-2">${image}${title}</div>

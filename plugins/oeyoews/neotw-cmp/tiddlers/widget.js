@@ -36,7 +36,7 @@ class AutoCompleteWidget extends Widget {
     // dark:invert
     const layout = createElement('div', {
       class:
-        'z-[9999] bg-white transform shadow-lg py-2 fixed left-1/2 top-24 -translate-x-1/2 w-2/3 rounded transition-all w-3/4 md:w-1/2',
+        'z-[9999] bg-white transform shadow-lg py-2 fixed left-1/2 top-24 -translate-x-1/2 rounded transition-all w-3/4 md:w-1/2',
     });
 
     const app = createElement('div', {
@@ -56,7 +56,7 @@ class AutoCompleteWidget extends Widget {
       debug: false,
       // https://www.algolia.com/doc/ui-libraries/autocomplete/core-concepts/state/
       initialState: {
-        query: '',
+        // query: '',
       },
       // onStateChange({ state }) {
       //   console.log(state);
