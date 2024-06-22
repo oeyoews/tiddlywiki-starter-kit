@@ -32,6 +32,14 @@ class AutoCompleteWidget extends Widget {
     $tw.rootWidget.addEventListener('open-cmp', () => openCmp(domNode));
 
     const aut = require('./autocomplete');
+    const { createRecentSearchesPlugin } = require('./recent');
+    const recentSearchesPlugin = createRecentSearchesPlugin({
+      storage: {
+        getAll() {},
+        onAdd() {},
+        onRemove() {},
+      },
+    });
 
     // dark:invert
     const layout = createElement('div', {
@@ -61,6 +69,7 @@ class AutoCompleteWidget extends Widget {
       onStateChange({ state }) {
         // console.log(state);
       },
+      // recentSearchesPlugin
       plugins: [titlePlugin(domNode)],
       ignoreCompositionEvents: true, // IME friendly
       defaultActiveItemId: 0,
