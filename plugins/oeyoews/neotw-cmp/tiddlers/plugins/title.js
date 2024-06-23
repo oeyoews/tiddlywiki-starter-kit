@@ -78,10 +78,11 @@ function Plugin(domNode) {
         {
           sourceId: 'LocalTiddlers',
           templates: {
-            // header({ item, html }) {
-            //   if (cmdsString.includes(query)) return;
-            //   return searchResult(item, html, { length, query });
-            // },
+            header({ item, html }) {
+              if (cmdsString.includes(query)) return;
+              // return searchResult(item, html, { length, query });
+              return searchHelp(item, html);
+            },
             item({ item, html }) {
               return previewTiddlers(item, html, query);
             },
@@ -164,6 +165,16 @@ const previewTiddlers = (item, html, query) => {
   </div>`;
 };
 
+const searchHelp = (item, html) => {
+  return html`<div class="flex items-center gap-2">
+  <kbd class="arrow-up"></kbd>
+  <kbd class="arrow-down"></kbd>
+   <span class="text-[12px]"> 切换 </span>
+   <kbd class="down-left"></kbd>
+   <span class="text-[12px]"> 选择 </span>
+  </div>`
+}
+
 const searchResult = (item, html, data) => {
   return html`<footer
     class="mb-1 text-sm flex justify-start text-gray-500 dark:text-gray-500"
@@ -175,7 +186,7 @@ const searchResult = (item, html, data) => {
 const { version } = $tw.wiki.getTiddler('$:/plugins/oeyoews/neotw-cmp').fields;
 
 const noResults = (item, html) => {
-  return html`<div class="text-center text-sm">暂无内容</div>`;
+  return html`<div class="text-center text-sm">无法搜索到相关内容</div>`;
 };
 
 module.exports = Plugin;

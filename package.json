@@ -60,7 +60,7 @@
     "prettier": "3.2.5",
     "terser": "5.31.0",
     "tw5-typed": "^0.5.10",
-    "typescript": "5.4.5"
+    "typescript": "^5.5.0"
   },
   "engines": {
     "node": ">16.8.0"
