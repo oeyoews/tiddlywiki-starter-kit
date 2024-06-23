@@ -8,7 +8,8 @@ tags: $:/tags/PageTemplate
 <% if [[$:/info/url/ip]is[missing]] %>
 <small> 没有开启局域网 </small>
 <% endif %>
-<$qrcode text={{$:/info/url/ip}} />
+<!-- <$qrcode text={{$:/info/url/ip}} /> -->
+<$qrcode text={{$:/info/url/ip}} avatarSrc="https://avatars.githubusercontent.com/u/72405338?v=4" />
 <% else %>
 <$qrcode/>
 <% endif %>
