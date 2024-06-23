@@ -28,7 +28,7 @@ const oeyoewsPlugins = [
   // 'vue-contextmenu',
   // 'vue-context-menu',
   // 'vue-kanban',
-  'vue-tabs',
+  // 'vue-tabs',
   'neotw-sitemap',
   // 'vue-pomodoro',
   'vue-rss',
