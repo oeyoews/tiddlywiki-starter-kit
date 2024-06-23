@@ -1,9 +1,0 @@
-title: $:/plugins/oeyoews/qrcode/currenttiddlerqrcode
-caption: currenttiddler qrcode
-tags: $:/tags/ViewTemplate
-
-
-<$list filter="[all[current]field:qrcode[yes]]">
-<!-- <small> 扫码查看此文章 </small> -->
-	<$qrcode type=url />
-</$list>
