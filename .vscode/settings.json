@@ -22,4 +22,5 @@
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "typescript.inlayHints.enumMemberValues.enabled": true,
   "tailwindCSS.emmetCompletions": true,
+  "editor.formatOnSave": true
 }

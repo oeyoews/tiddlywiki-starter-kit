@@ -3,7 +3,7 @@
 	"configurations": [
 		{
 			"type": "node-terminal",
-			"name": "启动调试",
+			"name": "开发模式",
 			"request": "launch",
 			"command": "pnpm run dev",
 			"cwd": "${workspaceFolder}"
