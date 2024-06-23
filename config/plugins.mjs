@@ -25,9 +25,9 @@ const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
 // oeyoews plugins
 const oeyoewsPlugins = [
   ...devplugins,
-  'vue-contextmenu',
-  'vue-context-menu',
-  'vue-kanban',
+  // 'vue-contextmenu',
+  // 'vue-context-menu',
+  // 'vue-kanban',
   'vue-tabs',
   'neotw-sitemap',
   // 'vue-pomodoro',
@@ -43,7 +43,7 @@ const oeyoewsPlugins = [
   'vue-random-cards',
   'neotw-dropdown-better',
   'tiddler-fullscreen',
-  'neotw-vue-todo',
+  // 'neotw-vue-todo',
   // 'vue3-toastify',
   'vue-links-gallery',
   'vue-i18n',
@@ -58,7 +58,7 @@ const oeyoewsPlugins = [
   'neotw-draft-better',
   // 'confetti-background',
   // 'confetti',
-  'image-observer',
+  'image-observer', // personal lib
   'markdown-it-emoji',
   'markdown-it-abbr',
   'markdown-it-front-matter',
@@ -66,13 +66,13 @@ const oeyoewsPlugins = [
   'markdown-extensions-startup',
   'skill-badges',
   'notebook-theme-sidebar-resizer',
-  'font-geist',
-  'qrcode',
-  'notify',
-  'neotw-spotlight',
+  'font-geist', // tw font lib
+  'qrcode', // render a qrcode with any text
+  'notify', // vue notify lib
+  'neotw-spotlight', // image zoom
   'neotw-image-gallery',
-  'tiddlywiki-motion',
-  'neotw-pwa',
+  'tiddlywiki-motion', // vim user like it
+  'neotw-pwa', // pwa for tw
   'neotw-zen-mode',
   // 'commandpalette',
   'neotw-icons',
