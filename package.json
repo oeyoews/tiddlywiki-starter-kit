@@ -47,8 +47,8 @@
     "tiddlywiki": "5.3.3",
     "tiged": "^2.12.7",
     "unocss": "0.58.9",
-    "vitepress": "^1.1.4",
-    "vue": "^3.4.26"
+    "vitepress": "^1.2.3",
+    "vue": "^3.4.30"
   },
   "prettier": "@oeyoews/prettier-config",
   "devDependencies": {
@@ -59,8 +59,8 @@
     "@types/qrcode": "1.5.5",
     "prettier": "3.2.5",
     "terser": "5.31.0",
-    "tw5-typed": "^0.5.10",
-    "typescript": "^5.5.0"
+    "tw5-typed": "^0.5.11",
+    "typescript": "^5.5.2"
   },
   "engines": {
     "node": ">16.8.0"
