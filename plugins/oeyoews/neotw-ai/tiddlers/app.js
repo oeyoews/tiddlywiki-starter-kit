@@ -6,10 +6,18 @@ description: 摘要总结/每日一句
 
 \*/
 
+/**
+ * @typedef {'gemini'|'spark'|'siliconflow'} IModel
+ */
+
 const { computed, ref } = window.Vue;
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
-const { gemini: geminiChat, spark: sparkChat } = require('./model/index');
+const {
+  gemini: geminiChat,
+  spark: sparkChat,
+  siliconflow: siliconflowChat,
+} = require('./model/index');
 const getText = (title) => $tw.wiki.getTiddlerText(title);
 
 const {
@@ -19,6 +27,7 @@ const {
   SPARK_APP_ID,
   SPARK_API_KEY,
   SPARK_API_SECRET,
+  SILICONFLOW_API_KEY,
   model: MODEL,
 } = require('./config.js');
 
@@ -26,6 +35,7 @@ const app = (
   title = '',
   text = '',
   tip = 'AI 生成的摘要',
+  /** @type {IModel} - 模型 */
   model,
   targetField = 'summary',
 ) => {
@@ -105,7 +115,20 @@ const app = (
           if (!this.text) {
             throw Error('没有输入内容');
           }
-          switch (model || MODEL) {
+          if (!model) {
+            model = MODEL;
+          }
+
+          switch (model) {
+            case 'siliconflow':
+              if (!SILICONFLOW_API_KEY) {
+                throw Error('没有填写 SILICONFLOW_API_KEY');
+              }
+              this.res = await siliconflowChat({
+                content: this.prompt,
+                apiKey: SILICONFLOW_API_KEY,
+              });
+              break;
             case 'gemini':
               this.res = await geminiChat({
                 prompt: this.prompt,

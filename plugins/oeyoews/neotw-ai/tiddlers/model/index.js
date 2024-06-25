@@ -7,10 +7,12 @@ module-type: library
 
 const gemini = require('./gemini');
 const spark = require('./spark');
+const siliconflow = require('./siliconflow');
 
 const models = {
   gemini,
   spark,
+  siliconflow,
 };
 
 module.exports = models;

@@ -14,6 +14,7 @@ const {
   SPARK_API_KEY = '',
   SPARK_APP_ID = '',
   SPARK_API_SECRET = '',
+  SILICONFLOW_API_KEY = '',
 } = $tw.wiki.getTiddler('$:/plugins/oeyoews/neotw-ai/config').fields;
 
 module.exports = {
@@ -24,4 +25,5 @@ module.exports = {
   SPARK_API_KEY,
   SPARK_APP_ID,
   SPARK_API_SECRET,
+  SILICONFLOW_API_KEY,
 };
