@@ -16,9 +16,12 @@ module-type: library
  */
 async function siliconflow(data) {
   const url = 'https://api.siliconflow.cn/v1/chat/completions';
+
   const models = {
-    qw: 'Qwen/Qwen2-72B-Instruct',
+    qw72: 'Qwen/Qwen2-72B-Instruct',
+    qw110: 'Qwen/Qwen1.5-110B-Chat',
   };
+
   const options = {
     method: 'POST',
     headers: {
@@ -27,15 +30,19 @@ async function siliconflow(data) {
       authorization: `Bearer ${data.apiKey}`,
     },
     body: JSON.stringify({
-      model: models.qw,
+      model: models.qw110,
       stream: false,
       messages: [{ role: 'user', content: data.content }],
     }),
   };
 
-  const res = await fetch(url, options);
-  const stream = await res.json();
-  return stream.choices[0].message.content;
+  try {
+    const res = await fetch(url, options);
+    const stream = await res.json();
+    return stream.choices?.[0]?.message.content;
+  } catch (e) {
+    console.error(e);
+  }
 }
 
 module.exports = siliconflow;

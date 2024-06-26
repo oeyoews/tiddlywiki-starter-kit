@@ -102,7 +102,7 @@ const app = (
         }
         switch (targetField) {
           case 'quote':
-            this.prompt = '每日一句, 类型为搞笑';
+            this.prompt = '每日一句' + title + '-oeyoews';
             this.header = '每日一句';
             break;
           default:
@@ -123,6 +123,9 @@ const app = (
             case 'siliconflow':
               if (!SILICONFLOW_API_KEY) {
                 throw Error('没有填写 SILICONFLOW_API_KEY');
+              }
+              if (!SILICONFLOW_API_KEY.startsWith('sk-')) {
+                throw Error('请属于有效的 siliconflow apikey');
               }
               this.res = await siliconflowChat({
                 content: this.prompt,
