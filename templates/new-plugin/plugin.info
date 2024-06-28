@@ -11,5 +11,6 @@
   "qrcode": "yes",
   "created": "{{ created }}",
   "dependents": [],
+  "stability": "STABILITY_2_STABLE",
   "list": "readme"
 }

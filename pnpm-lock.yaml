@@ -51,8 +51,8 @@ importers:
         specifier: 1.5.3
         version: 1.5.3
       tiddlywiki:
-        specifier: 5.3.3
-        version: 5.3.3
+        specifier: 5.3.4
+        version: 5.3.4
       tiged:
         specifier: ^2.12.7
         version: 2.12.7
@@ -2890,8 +2890,8 @@ packages:
   thenify@3.3.1:
     resolution: {integrity: sha512-RVZSIV5IG10Hk3enotrhvz0T9em6cyHBLkH/YAZuKqd8hRkKhSfCGIcP2KUY0EPxndzANBmNllzWPwak+bheSw==}
 
-  tiddlywiki@5.3.3:
-    resolution: {integrity: sha512-PkgVfZNpFFHyMmfFw91igXOJn8Z7IWg3NGXOX5EBqJwzGNeYYOIUg4FqCNsWoqBece20HxtkDue/vTf2jDtdZQ==}
+  tiddlywiki@5.3.4:
+    resolution: {integrity: sha512-p+OpI0d0vWEhA+oEHt4yDeA92VagHtPqj6Mx2mojZryIJevjQbblA7A3XECD07Cot3RcIkuW2AGfDDS/8OfSyg==}
     engines: {node: '>=0.8.2'}
     hasBin: true
 
@@ -4381,7 +4381,7 @@ snapshots:
 
   agent-base@6.0.2:
     dependencies:
-      debug: 4.3.4
+      debug: 4.3.5
     transitivePeerDependencies:
       - supports-color
 
@@ -6084,7 +6084,7 @@ snapshots:
     dependencies:
       any-promise: 1.3.0
 
-  tiddlywiki@5.3.3: {}
+  tiddlywiki@5.3.4: {}
 
   tiged@2.12.7:
     dependencies:

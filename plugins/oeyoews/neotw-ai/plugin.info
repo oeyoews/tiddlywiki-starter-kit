@@ -15,5 +15,6 @@
     "$:/plugins/oeyoews/neotw-vue3",
     "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
   ],
+  "stability": "STABILITY_2_STABLE",
   "list": "readme"
 }

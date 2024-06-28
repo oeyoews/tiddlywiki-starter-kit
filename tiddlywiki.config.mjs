@@ -19,6 +19,7 @@ export default {
   // wiki: 'src-dev',
   markdown: true,
   tiddlersRepo: 'oeyoews/neotw-tiddlers',
+  /** 插件模板 tiddlywiki 版本要求 */
   pluginversion: '5.3.0',
   checkfilesize: false,
 };
