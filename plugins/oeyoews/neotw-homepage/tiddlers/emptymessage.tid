@@ -51,6 +51,8 @@ title: $:/config/EmptyStoryMessage
           Get Started
         </$button>
 
+      <$button class="font-bold rounded transition text-gray-900 p-2 bg-neutral-200" message="tm-edit-tiddler" param="$:/config/EmptyStoryMessage"> 编辑卡片 </$button>
+
         <$list filter="[{$:/info/url/protocol}match[https:]]">
           <$button
             class="font-semibold rounded transition text-gray-900 p-2 dark:bg-white" >
@@ -63,7 +65,6 @@ title: $:/config/EmptyStoryMessage
     <div class="flex justify-center items-center">
       <!-- <$codeblock code="npx create neotw@latest" language="bash"/> -->
       <$vue-cta />
-      <$button message="tm-edit-tiddler" param="$:/config/EmptyStoryMessage" class="bg-transparent text-sm text-neutral-400 hover:scale-105 transition delay-800"> 编辑卡片 </$button>
     </div>
     </div>
   </div>
