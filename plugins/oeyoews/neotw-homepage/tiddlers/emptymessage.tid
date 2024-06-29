@@ -63,6 +63,7 @@ title: $:/config/EmptyStoryMessage
     <div class="flex justify-center items-center">
       <!-- <$codeblock code="npx create neotw@latest" language="bash"/> -->
       <$vue-cta />
+      <$button message="tm-edit-tiddler" param="$:/config/EmptyStoryMessage" class="bg-transparent text-sm text-neutral-400 hover:scale-105 transition delay-800"> 编辑卡片 </$button>
     </div>
     </div>
   </div>

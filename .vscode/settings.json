@@ -22,5 +22,12 @@
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "typescript.inlayHints.enumMemberValues.enabled": true,
   "tailwindCSS.emmetCompletions": true,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, pnpm-workspace.yaml",
+    "tiddlywiki.config.mjs": "tiddlywiki.info, tiddlywiki.config.mjs",
+    "*.md": "${capture}.md, ${capture}.md.meta",
+  }
 }
