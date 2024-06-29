@@ -1,9 +1,7 @@
 [
   "neotw-ui",
   "neotw-cmp",
-  "vue-zhipu",
   "neotw-filetree",
-  "neotw-ai",
   "neotw-read-files",
   "element-plus"
 ]

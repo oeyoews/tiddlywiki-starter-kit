@@ -23,3 +23,5 @@ dev/
 docs/.vitepress/dist
 docs/.vitepress/cache
 src/
+
+/tiddlywiki.info
