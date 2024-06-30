@@ -16,6 +16,11 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
+	"elementui": {
+		"prefix": "elementui",
+		"body": "const ElementPlus = require('element-plus.min.js');\napp.use(ElementPlus);",
+		"description": "use element ui"
+	},
 	"tiddlywiki files": {
 		"prefix": "tw-files",
 		"body": [

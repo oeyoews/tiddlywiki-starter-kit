@@ -34,8 +34,8 @@ class ExampleWidget extends Widget {
     const TiddlyWikiVue = require('./plugins/TiddlyWikiVue');
 
     try {
+      /** @type {{ use: Function }} */
       const app = createApp(component());
-
       app.use(TiddlyWikiVue);
 
       app.config.errorHandler = (err) => {

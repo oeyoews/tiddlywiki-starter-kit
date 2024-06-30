@@ -27,7 +27,6 @@ class ExampleWidget extends Widget {
     if (!window.Vue) {
       window.Vue = require(vuelib);
     }
-
     const { createApp } = window.Vue;
     const component = require('./component');
 
@@ -37,6 +36,7 @@ class ExampleWidget extends Widget {
       '$:/plugins/oeyoews/vue-info/templates/Text.vue',
     );
     try {
+      /** @type {{ use: Function }} */
       const app = createApp(component());
 
       const Text = {
