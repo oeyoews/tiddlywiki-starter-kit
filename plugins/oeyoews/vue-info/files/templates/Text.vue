@@ -3,7 +3,7 @@
 		<div v-html="icon" class="flex" />
 		<div class="font-semibold" :class="[`text-${color}-500`]">{{ text }}</div>
 		<div class="text-sm text-gray-600 dark:text-gray-400">
-			{{ number }}
+			<count-to :start-val="0" :end-val="number" :duration="2000"></count-to>
 		</div>
 	</div>
 </template>

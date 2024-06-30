@@ -36,11 +36,13 @@ class ExampleWidget extends Widget {
       '$:/plugins/oeyoews/vue-info/templates/Text.vue',
     );
     try {
-      /** @type {{ use: Function }} */
+      /** @type {{ use: Function; component: Function }} */
       const app = createApp(component());
 
+      const CountTo = require('./components/count');
       const Text = {
         template: TextTemplate,
+        components: { CountTo },
         props: {
           text: { type: String },
           icon: { type: String },
@@ -49,6 +51,7 @@ class ExampleWidget extends Widget {
       };
 
       app.component('Text', Text);
+      app.component('CountTo', CountTo);
 
       app.config.errorHandler = (err) => {
         const text = `[Vue3](${app.version}): ` + err;

@@ -94,11 +94,11 @@ const iversion = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
 const app = () => {
   const component = {
     setup() {
-      const tiddlers = ref(getString('[!is[system]]').length.toLocaleString());
+      const tiddlers = ref(getString('[!is[system]]').length);
       const update = ref(
         getString(
-          '[!is[system]!prefix[$:/]!has[draft.of]!sort[modified]limit[1]get[modified]format:relativedate[]]'
-        )[0]
+          '[!is[system]!prefix[$:/]!has[draft.of]!sort[modified]limit[1]get[modified]format:relativedate[]]',
+        )[0],
       );
       return {
         iversion,
@@ -110,7 +110,7 @@ const app = () => {
         plugins,
         tags,
         tiddlers,
-        version
+        version,
       };
     },
 
@@ -126,10 +126,10 @@ const app = () => {
             goto.navigateTiddler('$:/ControlPanel');
             break;
         }
-      }
+      },
     },
 
-    template: getTemplate('$:/plugins/oeyoews/vue-info/templates/widget.vue')
+    template: getTemplate('$:/plugins/oeyoews/vue-info/templates/widget.vue'),
   };
   return component;
 };
