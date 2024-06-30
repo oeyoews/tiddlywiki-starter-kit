@@ -1,6 +1,8 @@
 title: $:/plugins/oeyoews/neotw-homepage/readme
 description: Empty Story
 
+> 定制你的TiddlyWiki主页(customize your tiddlywiki homepage)
+
 {{$:/config/EmptyStoryMessage}}
 
 <!-- !! Not Have Div Tag -->

@@ -19,9 +19,3 @@
  * @property {string} [pluginversion] - The version of the plugin.
  * @property {boolean} [checkfilesize] - Whether to check file sizes.
  */
-
-/**
- * @type {ConfigOptions}
- */
-// @ts-ignore
-export default ConfigOptions;

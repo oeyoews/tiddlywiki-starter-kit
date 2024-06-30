@@ -1,5 +1,11 @@
 import base from './base.mjs';
 
+/**
+ * @description Returns an array of command line arguments for starting the server.
+ * @param {Object} option - The options for starting the server.
+ * @param {number} option.port - The port number to listen on.
+ * @return {Array<string>} An array of command line arguments.
+ */
 export default function startup(option) {
   const { port } = option;
 

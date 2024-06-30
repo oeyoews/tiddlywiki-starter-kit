@@ -6,7 +6,7 @@ import base from './base.mjs';
 import info from './info.mjs';
 import startup from './startup.mjs';
 
-// 用户配置
+/** 用户配置 */
 export default {
   startup,
   ...base,
