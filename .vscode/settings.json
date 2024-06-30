@@ -29,5 +29,8 @@
     "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, pnpm-workspace.yaml",
     "tiddlywiki.config.mjs": "tiddlywiki.info, tiddlywiki.config.mjs",
     "*.md": "${capture}.md, ${capture}.md.meta",
+    "*.gitconfig": "${capture}.git*",
+    "Dockerfile": "Dockerfile, .dockerignore, docker-compose.yml",
+    "vercel.json": "vercel.json, netlify.toml",
   }
 }
