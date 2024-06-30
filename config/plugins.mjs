@@ -40,7 +40,6 @@ const oeyoewsPlugins = [
   'notivue',
   'neotw-vue-netease-banner',
   'neotw-vue-journal',
-  'neotw-vue-plugins',
   'neotw-vue-fetch',
   'vue-info',
   'vue-random-cards',
