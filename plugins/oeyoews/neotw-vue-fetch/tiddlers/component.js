@@ -17,10 +17,17 @@ const getTemplate = (file) => {
   return template;
 };
 
+/**
+ * Creates a Vue component that fetches data from the specified URL and renders it.
+ *
+ * @param {string} url - The URL to fetch data from.
+ * @return {Object} The Vue component object.
+ */
 const app = (url) => {
   const component = {
     setup() {
-      const text = ref('加载中 ...');
+      // 加载中 ...
+      const text = ref('');
 
       return {
         text,
