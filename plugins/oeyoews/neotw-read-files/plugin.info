@@ -1,0 +1,12 @@
+{
+  "title": "$:/plugins/oeyoews/neotw-read-files",
+  "description": "扩展TiddlyWiki读取目录",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.3.0",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "Neotw Read Files",
+  "dependents": [],
+  "list": "readme"
+}

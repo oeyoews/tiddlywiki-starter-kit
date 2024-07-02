@@ -1,0 +1,18 @@
+title: $:/plugins/oeyoews/neotw/modules/darkmode/actions
+tags: $:/tags/StartupAction
+
+<!-- not work -->
+<!-- <$action-deletetiddler $tiddler="$:/palette"/> -->
+<$list filter="[{$:/info/darkmode}match[no]]">
+  <$action-setfield $tiddler="$:/palette" text="$:/themes/nico/notebook/palettes/palette-beige"/>
+</$list>
+
+<!-- <$list filter="[{$:/info/darkmode}match[no]]"> -->
+<!-- <$action-setfield $tiddler="$:/palette" text="$:/themes/nico/notebook/palettes/palette-beige"/> -->
+<!-- </$list> -->
+
+<!-- <$list filter="[{$:/info/darkmode}match[yes]]"> -->
+<!-- <$action-setfield $tiddler="$:/palette" text="$:/palettes/GithubDark"/> -->
+<!-- </$list> -->
+
+<!-- support cn and en -->

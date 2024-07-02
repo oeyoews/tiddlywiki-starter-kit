@@ -1,0 +1,15 @@
+title: $:/plugins/oeyoews/qrcode/rememberme
+caption: rememberme
+tags: $:/tags/PageTemplate
+
+<!-- add enable option -->
+<div class="fixed bottom-0 right-0 opacity-0 hover:opacity-100 transition-all">
+<% if [{$:/info/url/protocol}match[http:]] %>
+<% if [[$:/info/url/ip]is[missing]] %>
+<small> 没有开启局域网 </small>
+<% endif %>
+<$qrcode text={{$:/info/url/ip}} avatarSrc="https://avatars.githubusercontent.com/u/72405338?v=4" />
+<% else %>
+<$qrcode avatarSrc="https://avatars.githubusercontent.com/u/72405338?v=4" />
+<% endif %>
+</div>

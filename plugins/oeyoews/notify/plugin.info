@@ -1,0 +1,15 @@
+{
+  "title": "$:/plugins/oeyoews/notify",
+  "description": "notify",
+  "author": "oeyoews",
+  "version": "1.0.0",
+  "core-version": ">=5.3.1",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "meta#disabled": "yes",
+  "name": "notify",
+  "dependents": [
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
+  ],
+  "list": "readme"
+}

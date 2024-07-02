@@ -1,0 +1,17 @@
+title: $:/language/MissingTiddler/Hint
+
+<center>
+
+<$button class="group relative inline-flex h-10 items-center justify-center overflow-hidden rounded-md dark:bg-neutral-950 px-6 font-medium active:scale-110" message="tm-close-all-tiddlers">
+  Go Home
+  <div
+    class="absolute inset-0 flex size-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]" message="tm-close-all-tiddlers" >
+    <div class="relative h-full w-8 bg-white/20"></div>
+  </div>
+</$button>
+
+[img alt='' width=512 [./files/404.png]]
+
+<div class="bg-transparent flex flex-col items-center justify-center">
+</div>
+</center>

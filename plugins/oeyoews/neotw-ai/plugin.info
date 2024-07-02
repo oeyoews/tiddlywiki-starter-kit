@@ -1,0 +1,20 @@
+{
+  "title": "$:/plugins/oeyoews/neotw-ai",
+  "description": "文章摘要自动生成",
+  "summary": "文章摘要自动生成插件",
+  "author": "oeyoews",
+  "version": "0.2.0",
+  "core-version": ">=5.3.0",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "neotw-ai",
+  "meat#disabled": "yes",
+  "qrcode": "yes",
+  "created": "2024-03-26",
+  "dependents": [
+    "$:/plugins/oeyoews/neotw-vue3",
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
+  ],
+  "stability": "STABILITY_2_STABLE",
+  "list": "readme"
+}

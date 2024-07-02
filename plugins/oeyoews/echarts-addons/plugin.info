@@ -1,0 +1,14 @@
+{
+	"version": "0.0.3",
+	"type": "application/json",
+	"title": "$:/plugins/oeyoews/echarts-addons",
+	"plugin-type": "plugin",
+	"name": "Echarts Addons",
+	"description": "Addons",
+	"author": "oeyoews",
+	"meta#disabled": "yes",
+	"parent-plugin": [
+		"$:/plugins/Gk0Wk/echarts"
+	],
+	"list": "readme"
+}

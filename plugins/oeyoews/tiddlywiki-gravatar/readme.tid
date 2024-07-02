@@ -1,0 +1,27 @@
+title: $:/plugins/oeyoews/tiddlywiki-gravatar/readme
+
+!! Tiddlywiki Gravatar
+
+This plugin provides a convenient way to use Gravatar in TiddlyWiki. Gravatar is a service that allows users to create a unique avatar, which is an image that represents them online. This plugin supports Gravatar, QQ, and GitHub avatars, and allows users to easily maintain a consistent online identity across different platforms. The plugin also provides an example of how to use the different avatar types and includes a configuration file for setting the default email address.
+
+!! Intro
+
+> Gravatar stands for Globally Recognized Avatar. It is a service that allows users to create a unique avatar, which is an image that represents them online. This avatar can then be used across different websites, forums, and platforms that support Gravatar.
+> Gravatar is a free service that is owned by Automattic, the company behind WordPress. It works by linking an email address to an avatar, so whenever a user comments or posts on a website that supports Gravatar, their avatar will automatically appear next to their name.
+> Gravatar is a convenient way for users to maintain a consistent online identity across different platforms. It also helps website owners to easily identify and recognize their regular commenters and engage with them.
+
+!! Example
+
+* <$avatar type="GitHub"/>
+* <$avatar email="xxx"/>
+* <$avatar email="xxx" type="gravatar"/>
+
+!! usage
+
+* 支持 qq gravatar GitHub
+
+`$:/config/plugins/oeyoews/tiddlywiki-gravatar/email` is email config file
+
+```
+<$avatar />
+```

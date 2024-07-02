@@ -1,0 +1,14 @@
+{
+  "title": "$:/plugins/oeyoews/neotw-markdown-extensions",
+  "description": "Neotw Markdown Extensions",
+  "author": "oeyoews",
+  "version": "0.1.0",
+  "core-version": ">=5.3.0",
+  "type": "application/json",
+  "parent-plugin": "$:/plugins/tiddlywiki/markdown",
+  "plugin-type": "plugin",
+  "name": "Neotw Markdown Extensions",
+  "meta#disable": "yes",
+  "qrcode": "yes",
+  "list": "readme"
+}

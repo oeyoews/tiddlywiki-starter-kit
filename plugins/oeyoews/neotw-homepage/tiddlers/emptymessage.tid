@@ -1,0 +1,81 @@
+title: $:/config/EmptyStoryMessage
+
+<div class="prose prose-indigo max-w-none dark:prose-invert">
+  <div class="p-0 m-4">
+    <div class="">
+<h1 class="mb-4 font-extrabold bg-gradient-to-r from-rose-500 via-purple-500 to-pink-400 text-transparent bg-clip-text text-5xl text-center">
+  Welcome to TiddlyWiki Starter Kit
+</h1>
+      <p class="text-lg text-center">
+      This is an online website built using
+        <a target="_blank" href="https://vuejs.org">
+          <$iconify icon="devicon:vuejs" class="text-black dark:text-white" />
+        </a>
+        <a target="_blank" href="https://element-plus.org/">
+          <$iconify icon="logos:element" class="text-black dark:text-white" />
+        </a>
+        <a target="_blank" href="https://github.com/markdown-it/markdown-it">
+          <$iconify icon="material-symbols:markdown-sharp
+" class="text-black dark:text-white" />
+        </a>
+        <a target="_blank" href="https://tiddlywiki.com">
+          <$iconify icon="simple-icons:tiddlywiki" class="text-black dark:text-white" />
+        </a>
+        <a target="_blank" href="https://tailwindcss.com">
+          <$iconify icon="devicon:tailwindcss" />
+        </a>
+        <a target="_blank" href="https://codemirror.net">
+          <$iconify icon="simple-icons:codemirror" />
+        </a>
+        <a target="_blank" href="https://mermaid.js.org/">
+          <$iconify icon="vscode-icons:file-type-mermaid" />
+        </a>
+        <a target="_blank" href="https://echarts.apache.org">
+          <$iconify icon="simple-icons:apacheecharts" class="text-rose-600" />
+        </a>.
+        and also support
+        <$iconify-icon icon="line-md:iconify1" />
+        <span class="underline decoration-wavy decoration-rose-300 decoration-2"> Iconify </span>.
+         <!-- <span class="scale-125 mx-2 inline-block">{{$:/plugins/oeyoews/commandpalette/cmd}}
+         </span> -->
+          <$daylight class="w-3 mx-2"/>
+      </p>
+
+      <$vue-neotw-info />
+
+      <div class="flex justify-center flex-row space-x-2 block">
+        <$button
+          class="font-bold rounded transition text-gray-900 p-2 bg-neutral-200">
+           <$action-sendmessage $message="om-notify" position="bottom x-center" showCloseButton=false title="GettingStarted" text="进入主页" />
+           <$action-navigate $to="GettingStarted" $scroll="no" />
+          Get Started
+        </$button>
+
+      <$button class="font-bold rounded transition text-gray-900 p-2 bg-neutral-200" message="tm-edit-tiddler" param="$:/config/EmptyStoryMessage"> 编辑卡片 </$button>
+
+        <$list filter="[{$:/info/url/protocol}match[https:]]">
+          <$button
+            class="font-semibold rounded transition text-gray-900 p-2 dark:bg-white" >
+            <a class="text-black" href="./offline.html" download="index.html" title="download empty version">Download
+              <$iconify icon="line-md:download-outline-loop" />
+            </a>
+          </$button>
+        </$list>
+      </div>
+    <div class="flex justify-center items-center">
+      <!-- <$codeblock code="npx create neotw@latest" language="bash"/> -->
+      <$vue-cta />
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<$list filter="[{$:/info/url/protocol}match[https:]]">
+    <!-- <center class="hidden md:block">
+     <h2>近期更新动态</h2>
+      <<ninecards>>
+    </center> -->
+
+    {{recent-count}}
+</$list>

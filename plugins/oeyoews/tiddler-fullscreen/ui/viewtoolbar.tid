@@ -1,0 +1,17 @@
+title: $:/plugins/oeyoews/tiddler-fullscreen/ViewToolbar
+tags: $:/tags/ViewToolbar
+list-before: $:/core/ui/Buttons/close
+description: fullscreen tiddler
+caption: fullscreen tiddler
+
+\whitespace trim
+<$button message="om-tiddler-fullscreen" tooltip="fullscreen tiddler" aria-label="fullscreen tiddler" class=<<tv-config-toolbar-class>>>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+{{$:/plugins/oeyoews/tiddler-fullscreen/icons/fullscreen}}
+</$list>
+<$list filter="[<tv-config-toolbar-text>match[yes]]">
+<span class="tc-btn-text">
+  <$text text="tiddler-fullscreen"/>
+</span>
+</$list>
+</$button>

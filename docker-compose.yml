@@ -1,0 +1,29 @@
+version: '3' # Docker Compose 版本
+
+services:
+  tiddlywiki-starter-kit:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: oeyoews/tiddlywiki:latest
+    # restart: on-failure:3
+    ports:
+      - '8080:8080' # 映射端口，将主机的 8080 端口映射到容器的 8080 端口
+    volumes:
+      - ./wiki:/app/wiki # 映射对应的目录
+      - ./wiki/subwiki:/app/wiki/tiddlers/subwiki # 映射对应的目录
+      - ./.tiddlywiki/:/app/.tiddlywiki # 映射对应的目录
+    # 接受 tw 的任何参数
+    # start
+    command: [
+        'tiddlywiki', # 启动命令
+        'wiki', # 数据文件夹
+        '--listen',
+        'port=8080', # 端口
+        'host=0.0.0.0', # 允许本地局域网访问
+        'root-tiddler=$:/core/save/all-external-js', # enable external js
+        'use-browser-cache=yes',
+        'anon-username=oeyoews' # $:/status/Username on Node.js
+      ] # 第 1 个 tiddlywiki 是命令，第 2 个 tiddlywiki 是目录
+    # build
+    # command: ["tiddlywiki", "wiki", "--build", "index"]

@@ -1,0 +1,17 @@
+title: $:/plugins/oeyoews/tiddlywiki-daylight/pagecontrol
+list-before: $:/core/ui/Buttons/more-page-actions
+description: Toggle mode
+caption: Toggle Mode
+tags: $:/tags/PageControls
+
+\whitespace trim
+<$button tooltip="Toggle Mode" aria-label="" class=<<tv-config-toolbar-class>>>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+<$daylight />
+</$list>
+<$list filter="[<tv-config-toolbar-text>match[yes]]">
+<span class="tc-btn-text">
+<$text text=""/>
+</span>
+</$list>
+</$button>

@@ -1,0 +1,29 @@
+title: $:/plugins/oeyoews/neotw-cmp/readme
+description: neotw-cmp
+
+[[在线文档|https://neotw.vercel.app/docs/plugins/neotw-cmp]]
+
+## TODO
+
+* [ ] esc
+* [ ] https://github.com/tiddly-gittly/tw-command-palette/blob/0c6da53a88f6188455f17297547ff02e2c670335/src/commandpalette/widgets/build-in-sub-plugins/search-story-history.ts#L39
+* [ ] https://github.com/algolia/autocomplete/issues/1199
+* [ ] 空白搜索结果提示操作
+* [ ] 最近搜索历史
+* [ ] filterCache 缓存
+* [ ] 不支持中文搜索
+* [x] 快捷键 全屏
+* [x] 弹窗不消失
+* [x] 加上命令
+* [x] masklayer
+* [x] 宽度
+* [x] 搜索结果仅仅显示title matched
+* [x] 输入框内容重置
+* [x] 加上debounce
+
+## Next
+
+* 搜索结果highlight
+* 双栏预览
+* 基于http api 搜索
+* neotw 黑暗模式适配

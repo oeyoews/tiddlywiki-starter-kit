@@ -1,0 +1,31 @@
+title: $:/plugins/oeyoews/vue-rss/save
+
+<$let tiddler="$:/temp/oeyoews/rss/content" >
+<div class="flex justify-between">
+<$view tiddler=<<tiddler>> field="caption" />
+<div class="flex items-center">
+<$button class="bg-transparent">
+  <span class="hover:bg-gray-200 dark:hover:bg-gray-700 transition-all rounded px-2 py-1 text-xs">Save</span>
+<!-- save local  -->
+<$action-setfield
+	$tiddler={{{ [<tiddler>get[caption]] }}}
+	text={{{ [<tiddler>get[text]] }}}
+	link={{{ [<tiddler>get[link]] }}}
+	mp3={{{ [<tiddler>get[mp3]] }}}
+	tags="RssArticle" />
+<!-- <% if [<tiddler>has[mp3]] %>
+<$action-setfield
+	$tiddler={{{ [<tiddler>get[caption]] }}}
+	mp3={{{ [<tiddler>get[mp3]] }}}
+	/>
+<% endif %> -->
+<$action-sendmessage $message="tm-notify" $param="$:/plugins/oeyoews/vue-rss/save-notify"/>
+</$button>
+
+<$button class="bg-transparent">
+  <span class="hover:bg-gray-200 dark:hover:bg-gray-700 transition-all rounded px-2 py-1 text-xs">Esc</span>
+<$action-sendmessage $message="tm-close-tiddler" $param=<<currentTiddler>>/>
+</$button>
+</div>
+</div>
+</$let>

@@ -1,0 +1,28 @@
+{
+	"directories": [
+		{
+			"path": ".",
+			"filesRegExp": "^.*\\.js$",
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/notivue/"
+				},
+				"module-type": "library",
+				"type": "application/javascript"
+			}
+		},
+		{
+			"path": ".",
+			"filesRegExp": "^.*\\.css$",
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/notivue/"
+				},
+				"tags": "$:/tags/Stylesheet",
+				"type": "text/css"
+			}
+		}
+	]
+}

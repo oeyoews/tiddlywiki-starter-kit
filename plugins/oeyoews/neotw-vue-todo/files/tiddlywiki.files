@@ -1,0 +1,29 @@
+{
+	"directories": [
+		{
+			"path": "templates",
+			"filesRegExp": "^.*\\.vue$",
+			"searchSubdirectories": true,
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/neotw-vue-todo/templates/"
+				},
+				"hide-body": "yes"
+			}
+		},
+		{
+			"path": "i18n",
+			"filesRegExp": "^.*\\.js$",
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/neotw-vue-todo/i18n/"
+				},
+				"type": "application/javascript",
+				"module-type": "library",
+				"hide-body": "yes"
+			}
+		}
+	]
+}

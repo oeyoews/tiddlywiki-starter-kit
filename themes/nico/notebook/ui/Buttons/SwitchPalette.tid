@@ -1,0 +1,36 @@
+description: Toggle between grey/beige colour palette
+tags: $:/tags/PageControls
+title: $:/themes/nico/notebook/ui/Buttons/SwitchPalette
+type: text/vnd.tiddlywiki
+
+<span class="desktop-only">
+  <$vars
+    palettes="[all[tiddlers+shadows]tag[$:/tags/notebook/Palette]]"
+    popupTiddler=<<qualify "$:/state/notebook/palette-dropdown">>
+  >
+    <$button
+      popup=<<popupTiddler>>
+      tooltip="Switch colours"
+      aria-label="Switch colours"
+      class=<<tv-config-toolbar-class>>
+    >
+      <$list filter="[<tv-config-toolbar-icons>match[yes]]">
+	{{$:/themes/nico/notebook/images/color-switch}}
+      </$list>
+
+      <$list filter="[<tv-config-toolbar-text>match[yes]]">
+	<span class="tc-btn-text">Switch colours</span>
+      </$list>
+
+      <$reveal state=<<popupTiddler>> type="popup" position="belowleft" class="tc-drop-down">
+	<$list filter=<<palettes>>>
+	  <$button class="tc-btn-invisible">
+	    {{!!name}}
+	    <$action-setfield $tiddler="$:/palette" text={{!!title}}/>
+	  </$button>
+	</$list>
+      </$reveal>
+
+    </$button>
+  </$vars>
+</span>

@@ -1,0 +1,21 @@
+tags: $:/tags/PageTemplate
+title: $:/themes/nico/notebook/ui/Sidebar
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+\define config-title()
+$:/config/SideBarSegments/Visibility/$(listItem)$
+\end
+
+<$reveal state="$:/state/notebook-sidebar" type="match" text="yes" default="no" retain="yes" animate="no">
+    <$scrollable fallthrough="no">
+    <!-- use z-0 to prevent cm6 fullscreen -->
+    <div class="nc-sidebar p-2 z-0 hidden lg:block">
+      <$list filter="[all[shadows+tiddlers]tag[$:/themes/nico/notebook/tags/Sidebar]!has[draft.of]]" variable="listItem">
+        <$reveal type="nomatch" state=<<config-title>> text="hide" tag="div">
+          <$transclude tiddler=<<listItem>> mode="inline"/>
+        </$reveal>
+      </$list>
+    </div>
+    </$scrollable>
+</$reveal>

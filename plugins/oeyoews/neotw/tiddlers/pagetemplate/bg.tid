@@ -1,0 +1,14 @@
+title: $:/plugins/oeyoews/neotw/pagetemplate/bg
+tags: $:/tags/PageTemplate
+
+<!-- https://sinqi.tools/zh/backgrounds -->
+<!-- you can also use this style instead of tailwindcss -->
+<!-- .tc-body {
+  background-image: linear-gradient(to right, #8080800a 1px, transparent 1px),
+    linear-gradient(to bottom, #8080800a 1px, transparent 1px);
+  background-size: 14px 24px;
+} -->
+<div class="fixed inset-0 -z-50 size-full bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
+<div class="absolute inset-x-0 top-0 -z-10 m-auto size-[310px] rounded-full bg-fuchsia-400 opacity-20 blur-[100px]"> </div>
+</div>
+
