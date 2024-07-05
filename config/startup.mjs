@@ -16,7 +16,7 @@ export default function startup(option) {
     'root-tiddler=$:/core/save/all-external-js',
     'use-browser-cache=yes',
     'anon-username=' + base.username,
-    `username=${base.username}`,
-    `password=${base.password}`,
+    // `username=${base.username}`,
+    // `password=${base.password}`,
   ];
 }
