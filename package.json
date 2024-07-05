@@ -44,7 +44,7 @@
     "pm2": "5.3.1",
     "prompts": "^2.4.2",
     "qrcode": "1.5.3",
-    "tiddlywiki": "5.3.4",
+    "tiddlywiki": "github:Jermolene/TiddlyWiki5#a31f202192c0b8c415d888f223f9ef4cc2f07c93",
     "tiged": "^2.12.7",
     "unocss": "0.58.9",
     "vitepress": "^1.2.3",

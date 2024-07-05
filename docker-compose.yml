@@ -23,7 +23,7 @@ services:
         'host=0.0.0.0', # 允许本地局域网访问
         'root-tiddler=$:/core/save/all-external-js', # enable external js
         'use-browser-cache=yes',
-        'anon-username=oeyoews' # $:/status/Username on Node.js
+        'anon-username=oeyoews', # $:/status/Username on Node.js
       ] # 第 1 个 tiddlywiki 是命令，第 2 个 tiddlywiki 是目录
     # build
     # command: ["tiddlywiki", "wiki", "--build", "index"]
