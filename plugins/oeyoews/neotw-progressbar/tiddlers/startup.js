@@ -58,7 +58,6 @@ progress
     let hasScrolled = false;
     window.addEventListener('scroll', function () {
       if (!hasScrolled) {
-        console.log(hasScrolled);
         const progressBar = document.getElementById('progress');
         if (progressBar.classList.contains('opacity-0')) {
           progressBar.classList.remove('opacity-0');

@@ -16,7 +16,7 @@
     "build": "node lib/build.mjs && pnpm run docs:build",
     "build:20": "node --env-file=.env lib/build.mjs && pnpm run docs:build",
     "update:tw": "pnpm install github:Jermolene/TiddlyWiki5",
-    "update:web": "git commit --allow-empty -m 'update'  && git push",
+    "update:web": "git commit --allow-empty -m update  && git push",
     "build-with-bun": "bun run ./lib/build.ts",
     "format": "prettier --write plugins/oeyoews",
     "format:md": "autocorrect --fix",
