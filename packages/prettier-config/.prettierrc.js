@@ -1,4 +1,5 @@
 module.exports = {
+  plugins: ['@trivago/prettier-plugin-sort-imports'],
   arrowParens: 'always', // 在箭头函数参数周围加上括号
   bracketSameLine: false, // 将多行 HTML、JSX、Vue、Angular 元素的 > 放在最后一行的末尾
   bracketSpacing: true, // 在对象字面量的大括号之间打印空格
@@ -16,5 +17,8 @@ module.exports = {
   singleQuote: true, // 是否使用单引号而不是双引号
   tabWidth: 2, // 每个缩进级别的空格数
   // trailingComma: "none", // 在多行结构末尾打印逗号
-  useTabs: false // 是否使用制表符进行缩进
+  useTabs: false, // 是否使用制表符进行缩进
+  // importOrder: ['^@core/(.*)$', '^@server/(.*)$', '^@ui/(.*)$', '^[./]'],
+  importOrderSeparation: true,
+  importOrderSortSpecifiers: true,
 };

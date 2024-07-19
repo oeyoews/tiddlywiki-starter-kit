@@ -60,7 +60,8 @@
     "prettier": "3.2.5",
     "terser": "5.31.0",
     "tw5-typed": "^0.5.11",
-    "typescript": "^5.5.2"
+    "typescript": "^5.5.2",
+    "@trivago/prettier-plugin-sort-imports": "^4.1.1"
   },
   "engines": {
     "node": ">16.8.0"
