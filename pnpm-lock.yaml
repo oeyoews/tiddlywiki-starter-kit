@@ -51,8 +51,8 @@ importers:
         specifier: 1.5.3
         version: 1.5.3
       tiddlywiki:
-        specifier: 5.3.5
-        version: 5.3.5
+        specifier: github:Jermolene/TiddlyWiki5#bfb9c38c42fbaf97497d9fbffc276c4d6ff490b2
+        version: https://codeload.github.com/Jermolene/TiddlyWiki5/tar.gz/bfb9c38c42fbaf97497d9fbffc276c4d6ff490b2
       tiged:
         specifier: ^2.12.7
         version: 2.12.7
@@ -2937,8 +2937,9 @@ packages:
   thenify@3.3.1:
     resolution: {integrity: sha512-RVZSIV5IG10Hk3enotrhvz0T9em6cyHBLkH/YAZuKqd8hRkKhSfCGIcP2KUY0EPxndzANBmNllzWPwak+bheSw==}
 
-  tiddlywiki@5.3.5:
-    resolution: {integrity: sha512-8pTmnQdkcHbol9D86Op7OGK4sGDqm19HWT2qgpSxPHfDG0yJ2rSBUTRuOMuh9GoPP0Tcz9+1Pe8A1m6pvd/zYQ==}
+  tiddlywiki@https://codeload.github.com/Jermolene/TiddlyWiki5/tar.gz/bfb9c38c42fbaf97497d9fbffc276c4d6ff490b2:
+    resolution: {tarball: https://codeload.github.com/Jermolene/TiddlyWiki5/tar.gz/bfb9c38c42fbaf97497d9fbffc276c4d6ff490b2}
+    version: 5.3.6-prerelease
     engines: {node: '>=0.8.2'}
     hasBin: true
     bundledDependencies: []
@@ -6176,7 +6177,7 @@ snapshots:
     dependencies:
       any-promise: 1.3.0
 
-  tiddlywiki@5.3.5: {}
+  tiddlywiki@https://codeload.github.com/Jermolene/TiddlyWiki5/tar.gz/bfb9c38c42fbaf97497d9fbffc276c4d6ff490b2: {}
 
   tiged@2.12.7:
     dependencies:
