@@ -64,7 +64,9 @@ title: $:/config/EmptyStoryMessage
       </div>
     <div class="flex justify-center items-center">
       <!-- <$codeblock code="npx create neotw@latest" language="bash"/> -->
-      <$vue-cta />
+        <$list filter="[{$:/info/url/protocol}match[https:]]">
+          <$vue-cta />
+        </$list>
     </div>
     </div>
   </div>

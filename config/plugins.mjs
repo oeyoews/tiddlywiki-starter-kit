@@ -12,12 +12,14 @@ const localPlugins = [
 ];
 
 const onlinePlugins = [
+  'neotw-vue-codeblock', // 首页代码块
   'oeyoews/vue-plum',
   'oeyoews/NPL',
   'oeyoews/neotw-error-better',
   'oeyoews/tiddlywiki-github-share',
   'oeyoews/neotw-notranslate',
   'oeyoews/neotw-vue3',
+  'font-geist', // tw font lib
 ];
 
 const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
@@ -37,7 +39,6 @@ const oeyoewsPlugins = [
   // 'vue-i18n',
   'neotw-sitemap',
   'vue-rss',
-  'neotw-vue-codeblock',
   'neotw-vue-netease-banner',
   'neotw-vue-journal',
   'neotw-vue-fetch',
@@ -63,9 +64,8 @@ const oeyoewsPlugins = [
   'markdown-it-front-matter',
   'markdown-it-github-alert',
   'markdown-extensions-startup',
-  'skill-badges',
+  // 'skill-badges',
   'notebook-theme-sidebar-resizer',
-  'font-geist', // tw font lib
   'qrcode', // render a qrcode with any text
   'notify', // vue notify lib
   'neotw-spotlight', // image zoom
