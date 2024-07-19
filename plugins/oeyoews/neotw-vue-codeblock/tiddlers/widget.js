@@ -36,23 +36,6 @@ class VueCodeBlockWIdget extends Widget {
     try {
       const app = createApp(component(code));
 
-      const {
-        createNotivue,
-      } = require('$:/plugins/oeyoews/notivue/notivue.js');
-
-      const notivue = createNotivue({
-        position: 'top-center',
-        limit: 3,
-        enqueue: true,
-        notifications: {
-          global: {
-            duration: 1500,
-          },
-        },
-      });
-
-      app.use(notivue);
-
       app.config.errorHandler = (err) => {
         const text = `[Vue3](${app.version}): ` + err;
         console.error(text);

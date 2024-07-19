@@ -32,5 +32,6 @@
     "*.gitconfig": "${capture}.git*",
     "Dockerfile": "Dockerfile, .dockerignore, docker-compose.yml",
     "vercel.json": "vercel.json, netlify.toml",
-  }
+  },
+  "tailwindCSS.lint.invalidApply": "warning"
 }

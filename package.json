@@ -12,6 +12,7 @@
   "license": "MIT",
   "packageManager": "pnpm@9.0.6",
   "scripts": {
+    "postinstall": "",
     "new": "node lib/newplugin.mjs",
     "build": "node lib/build.mjs && pnpm run docs:build",
     "build:20": "node --env-file=.env lib/build.mjs && pnpm run docs:build",
@@ -44,7 +45,7 @@
     "pm2": "5.3.1",
     "prompts": "^2.4.2",
     "qrcode": "1.5.3",
-    "tiddlywiki": "github:Jermolene/TiddlyWiki5#a31f202192c0b8c415d888f223f9ef4cc2f07c93",
+    "tiddlywiki": "5.3.5",
     "tiged": "^2.12.7",
     "unocss": "0.58.9",
     "vitepress": "^1.2.3",
@@ -54,14 +55,14 @@
   "devDependencies": {
     "@nolebase/vitepress-plugin-og-image": "1.28.0",
     "@oeyoews/prettier-config": "workspace:^",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/fs-extra": "11.0.4",
     "@types/prompts": "2.4.9",
     "@types/qrcode": "1.5.5",
     "prettier": "3.2.5",
     "terser": "5.31.0",
     "tw5-typed": "^0.5.11",
-    "typescript": "^5.5.2",
-    "@trivago/prettier-plugin-sort-imports": "^4.1.1"
+    "typescript": "^5.5.2"
   },
   "engines": {
     "node": ">16.8.0"

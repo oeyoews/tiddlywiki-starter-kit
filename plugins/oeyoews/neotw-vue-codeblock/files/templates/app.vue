@@ -1,7 +1,4 @@
 <template>
-  <Notivue v-slot="item">
-    <Notification :item="item" />
-  </Notivue>
   <div class="p-2 rounded inline-flex bg-neutral-200 my-2 text-black font-semibold">
     <span ref="codeRef">
       {{ code }}

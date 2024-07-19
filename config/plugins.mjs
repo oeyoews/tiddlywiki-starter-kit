@@ -1,6 +1,6 @@
-import ci from 'ci-info';
 import base from './base.mjs';
 import devplugins from './dev-plugins.mjs';
+import ci from 'ci-info';
 
 // 用户插件列表
 // NOTE: vercel not support use { isCi } ???
@@ -32,12 +32,12 @@ const oeyoewsPlugins = [
   // 'vue-draggable-plus', // 拖拽插件
   // 'vue-pomodoro',
   // 'neotw-vue-todo',
+  // 'notivue',
   // 'vue3-toastify',
   // 'vue-i18n',
   'neotw-sitemap',
   'vue-rss',
   'neotw-vue-codeblock',
-  'notivue',
   'neotw-vue-netease-banner',
   'neotw-vue-journal',
   'neotw-vue-fetch',
