@@ -103,6 +103,7 @@ const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]') => {
     },
 
     mounted() {
+      // 挂在echarts实例
       this.chartapp = echarts.init(this.$refs.chart, theme, {
         renderer: 'svg',
       });
@@ -128,7 +129,7 @@ const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]') => {
       },
 
       updateChart() {
-        if (this.chartdata.length > 10) {
+        if (this.chartdata.length > 18) {
           this.resetChart();
           this.chartdata.push({
             name: this.title,

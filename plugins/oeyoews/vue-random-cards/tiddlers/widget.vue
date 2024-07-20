@@ -4,7 +4,7 @@
     <button @click="resetChart" v-show="chartdata.length > 0" class="p-2">
       重置数据
     </button>
-    <button @click="updateCard" class="p-2">
+    <button @click="updateCard" class="p-2 group flex items-center gap-2">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="1em"
@@ -26,7 +26,7 @@
     <Transition>
       <div
         ref="chart"
-        style="width: 900px; height: 300px"
+        style="width: 900px; height: 100px"
         class="overflow-auto"
         v-show="title"
       ></div>
