@@ -12,14 +12,14 @@ const localPlugins = [
 ];
 
 const onlinePlugins = [
-  'neotw-vue-codeblock', // 首页代码块
+  'oeyoews/neotw-vue-codeblock', // 首页代码块
   'oeyoews/vue-plum',
   'oeyoews/NPL',
   'oeyoews/neotw-error-better',
   'oeyoews/tiddlywiki-github-share',
   'oeyoews/neotw-notranslate',
   'oeyoews/neotw-vue3',
-  'font-geist', // tw font lib
+  'oeyoews/font-geist', // tw font lib
 ];
 
 const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
