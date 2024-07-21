@@ -11,6 +11,7 @@ export default {
     zen: false, // 是否启用zen模式
     open: false, // 是否在启动时打开浏览器
   },
+  auth: false,
   username: 'oeyoews', // 用户名
   password: 'oeyoews', // 密码
   output: '.tiddlywiki', // 输出目录
