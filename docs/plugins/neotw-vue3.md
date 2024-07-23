@@ -1,5 +1,7 @@
 # TiddlyWiki5 Vue3
 
+<!-- https://unpkg.com/vue@3.4.33/dist/vue.global.prod.js -->
+<!-- echo 'module.exports=Vue' >> vue.global.prod.js  -->
 > 直接用 Vue 写 tiddlywiki 插件
 
 ## Why use Vue, not React or others?
