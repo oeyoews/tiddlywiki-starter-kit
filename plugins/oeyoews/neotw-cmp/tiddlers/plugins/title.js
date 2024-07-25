@@ -103,6 +103,7 @@ function Plugin(domNode) {
             },
           },
 
+          // https://www.algolia.com/doc/ui-libraries/autocomplete/api-reference/autocomplete-plugin-algolia-insights/createAlgoliaInsightsPlugin/#param-onselect
           // onActive({ item }) {
           //   console.log(item);
           // },

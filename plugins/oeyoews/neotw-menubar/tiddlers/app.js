@@ -16,13 +16,18 @@ const { MenuBar } = require('vue-context-menu.min.js');
 const app = () => {
   const component = {
     setup() {
+      const palette = $tw.wiki.getTiddlerText('$:/palette');
+      const isDarkMode =
+        $tw.wiki.getTiddler(palette)?.fields['color-scheme'] === 'dark'
+          ? true
+          : false;
       const items = [
         {
           label: 'File',
           children: [
             {
               label: 'New',
-              // action string
+              // TODO: use action string
               onClick: () => {},
             },
             { label: 'Import' },
@@ -54,13 +59,29 @@ const app = () => {
         {
           label: 'View',
           children: [
+            // need neotw-cmp plugins
+            // { label: 'Themes' },
+            // { label: 'Palette' },
             {
-              label: 'Full screent',
+              label: 'DarkMode',
+              onClick: () =>
+                $tw.rootWidget.dispatchEvent({ type: 'om-toggle-theme' }),
+            },
+            // fontsize
+            // layout
+            // classic view
+            {
+              label: 'Command Palette',
+              onClick: () => {
+                $tw.rootWidget.dispatchEvent({ type: 'open-cmp' });
+              },
+            },
+            {
+              label: 'Full Screen',
               divided: true,
               onClick: () =>
                 $tw.rootWidget.dispatchEvent({ type: 'tm-full-screen' }),
             },
-            { label: 'Find', divided: true },
           ],
         },
         {
@@ -70,8 +91,9 @@ const app = () => {
       ];
       const menuData = {
         items,
-        theme: 'dark',
+        theme: isDarkMode ? 'dark' : '',
         // mini: true,
+        zIndex: 99999,
       };
 
       return { menuData };
