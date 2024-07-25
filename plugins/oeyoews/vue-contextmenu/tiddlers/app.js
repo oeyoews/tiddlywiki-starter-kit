@@ -30,7 +30,7 @@ const app = (target, title, self) => {
       operation(type, param) {
         self.dispatchEvent({
           type,
-          param
+          param,
         });
       },
 
@@ -47,12 +47,12 @@ const app = (target, title, self) => {
           {
             label: t('menu.close'),
             icon: h(Icon, { icon: icons.close }),
-            onClick: () => o('tm-close-tiddler', title)
+            onClick: () => o('tm-close-tiddler', title),
           },
           {
             label: t('menu.edit'),
             icon: h(Icon, { icon: icons.edit }),
-            onClick: () => o('tm-edit-tiddler', title)
+            onClick: () => o('tm-edit-tiddler', title),
           },
           // TODO: 动态插入, 要保证顺序
           {
@@ -60,23 +60,28 @@ const app = (target, title, self) => {
             icon: h(Icon, { icon: icons.close2 }),
             disabled: this.getStoryList().length === 1 ? true : false,
             onClick: () => o('tm-close-other-tiddlers', title),
-            divided: true
+            divided: true,
           },
           {
-            label: t('menu.copy'),
+            label: t('menu.copy0'),
             icon: h(Icon, { icon: icons.copy }),
-            onClick: () => {
-              $tw.utils.copyToClipboard(title);
-            }
-          },
-          {
-            label: t('menu.copy2'),
-            icon: h(Icon, { icon: icons.copy2 }),
-            onClick: () => {
-              const text = $tw.wiki.getTiddlerText(title);
-              $tw.utils.copyToClipboard(text);
-            },
-            divided: true
+            children: [
+              {
+                label: t('menu.copy'),
+                icon: h(Icon, { icon: icons.copy }),
+                onClick: () => {
+                  $tw.utils.copyToClipboard(title);
+                },
+              },
+              {
+                label: t('menu.copy2'),
+                icon: h(Icon, { icon: icons.copy2 }),
+                onClick: () => {
+                  const text = $tw.wiki.getTiddlerText(title);
+                  $tw.utils.copyToClipboard(text);
+                },
+              },
+            ],
           },
           {
             label: t('menu.fold'),
@@ -84,17 +89,17 @@ const app = (target, title, self) => {
             onClick: () => {
               const foldPrefix = '$:/state/folded/';
               $tw.wiki.setText(foldPrefix + title, 'text', null, 'hide');
-            }
+            },
           },
           {
             label: t('menu.delete'),
             icon: h(Icon, { icon: icons.delete }),
-            onClick: () => o('tm-delete-tiddler', title)
+            onClick: () => o('tm-delete-tiddler', title),
           },
           {
             label: t('menu.newWindow'),
             icon: h(Icon, { icon: icons.newWindow }),
-            onClick: () => o('tm-open-window', title)
+            onClick: () => o('tm-open-window', title),
           },
           {
             label: t('menu.rename'),
@@ -105,18 +110,18 @@ const app = (target, title, self) => {
                 // o('tm-rename-tiddler', title, '99');
                 $tw.wiki.renameTiddler(title, to);
               }
-            }
+            },
           },
           {
             label: t('menu.clone'),
             icon: h(Icon, { icon: icons.clone }),
-            onClick: () => o('tm-new-tiddler', title)
+            onClick: () => o('tm-new-tiddler', title),
           },
           {
             label: t('menu.permalink'),
             icon: h(Icon, { icon: icons.link }),
-            onClick: () => o('tm-permalink', title)
-          }
+            onClick: () => o('tm-permalink', title),
+          },
         ];
 
         //show menu
@@ -125,19 +130,20 @@ const app = (target, title, self) => {
           customClass: 'rounded-md',
           zIndex: 3,
           minWidth: 230,
+          theme: 'dark',
           x: e.x,
-          y: e.y
+          y: e.y,
         });
-      }
+      },
     },
 
     template: getTemplate(
-      '$:/plugins/oeyoews/vue-contextmenu/templates/app.vue'
+      '$:/plugins/oeyoews/vue-contextmenu/templates/app.vue',
     ),
 
     components: {
-      Icon
-    }
+      Icon,
+    },
   };
   return component;
 };

@@ -7,12 +7,13 @@ module.exports = {
     edit: 'Edit Tiddler',
     delete: 'Delete Tiddler',
     close2: 'Close Others',
+    copy0: 'Copy',
     copy: 'Copy Title',
     copy2: 'Copy Tiddler',
     fold: 'Fold Tiddler',
-    permalink: 'Copy Link'
+    permalink: 'Copy Link',
   },
   ball: {
-    setting: 'Setting'
-  }
+    setting: 'Setting',
+  },
 };

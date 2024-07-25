@@ -28,8 +28,9 @@ const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
 const oeyoewsPlugins = [
   'confetti-background',
   ...devplugins,
-  // 'vue-contextmenu',
-  // 'vue-context-menu',
+  'vue-i18n',
+  'vue-contextmenu', // right-contextmenu
+  'vue-context-menu', // lib
   // 'vue-kanban',
   // 'vue-tabs',
   // 'vue-draggable-plus', // 拖拽插件
@@ -37,7 +38,6 @@ const oeyoewsPlugins = [
   // 'neotw-vue-todo',
   // 'notivue',
   // 'vue3-toastify',
-  // 'vue-i18n',
   'neotw-sitemap',
   'vue-rss',
   'neotw-vue-netease-banner',

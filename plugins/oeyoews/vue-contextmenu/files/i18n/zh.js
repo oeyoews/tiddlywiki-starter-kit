@@ -7,12 +7,13 @@ module.exports = {
     edit: '编辑',
     delete: '删除',
     close2: '关闭其他',
+    copy0: '复制',
     copy: '复制标题',
     copy2: '复制内容',
     fold: '折叠',
-    permalink: '复制链接'
+    permalink: '复制链接',
   },
   ball: {
-    setting: '设置'
-  }
+    setting: '设置',
+  },
 };
