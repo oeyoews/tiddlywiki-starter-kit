@@ -14,6 +14,15 @@ const icons = require('./icons');
 
 const { useI18n } = require('vue-i18n.global.prod.js');
 
+/**
+ * @param {keyof import('./icons')} icon
+ */
+const getIcon = (icon) => {
+  return h(Icon, {
+    icon: icons[icon],
+  });
+};
+
 /** vue app */
 const app = (target, title, self) => {
   const component = {
@@ -46,25 +55,25 @@ const app = (target, title, self) => {
         const items = [
           {
             label: t('menu.close'),
-            icon: h(Icon, { icon: icons.close }),
+            icon: getIcon('close'),
             onClick: () => o('tm-close-tiddler', title),
           },
           {
             label: t('menu.edit'),
-            icon: h(Icon, { icon: icons.edit }),
+            icon: getIcon('edit'),
             onClick: () => o('tm-edit-tiddler', title),
           },
           // TODO: 动态插入, 要保证顺序
           {
             label: t('menu.close2'),
-            icon: h(Icon, { icon: icons.close2 }),
+            icon: getIcon('close2'),
             disabled: this.getStoryList().length === 1 ? true : false,
             onClick: () => o('tm-close-other-tiddlers', title),
             divided: true,
           },
           {
             label: t('menu.copy0'),
-            icon: h(Icon, { icon: icons.copy }),
+            icon: getIcon('copy'),
             children: [
               {
                 label: t('menu.copy'),
@@ -75,7 +84,7 @@ const app = (target, title, self) => {
               },
               {
                 label: t('menu.copy2'),
-                icon: h(Icon, { icon: icons.copy2 }),
+                icon: getIcon('copy2'),
                 onClick: () => {
                   const text = $tw.wiki.getTiddlerText(title);
                   $tw.utils.copyToClipboard(text);
@@ -85,7 +94,7 @@ const app = (target, title, self) => {
           },
           {
             label: t('menu.fold'),
-            icon: h(Icon, { icon: icons.fold }),
+            icon: getIcon('fold'),
             onClick: () => {
               const foldPrefix = '$:/state/folded/';
               $tw.wiki.setText(foldPrefix + title, 'text', null, 'hide');
@@ -93,17 +102,17 @@ const app = (target, title, self) => {
           },
           {
             label: t('menu.delete'),
-            icon: h(Icon, { icon: icons.delete }),
+            icon: getIcon('delete'),
             onClick: () => o('tm-delete-tiddler', title),
           },
           {
             label: t('menu.newWindow'),
-            icon: h(Icon, { icon: icons.newWindow }),
+            icon: getIcon('newWindow'),
             onClick: () => o('tm-open-window', title),
           },
           {
             label: t('menu.rename'),
-            icon: h(Icon, { icon: icons.rename }),
+            icon: getIcon('rename'),
             onClick: () => {
               const to = window.prompt('Rename to:', title);
               if (to) {
@@ -114,12 +123,12 @@ const app = (target, title, self) => {
           },
           {
             label: t('menu.clone'),
-            icon: h(Icon, { icon: icons.clone }),
+            icon: getIcon('clone'),
             onClick: () => o('tm-new-tiddler', title),
           },
           {
             label: t('menu.permalink'),
-            icon: h(Icon, { icon: icons.link }),
+            icon: getIcon('link'),
             onClick: () => o('tm-permalink', title),
           },
         ];

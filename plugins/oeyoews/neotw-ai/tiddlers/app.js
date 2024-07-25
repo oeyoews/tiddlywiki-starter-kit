@@ -6,18 +6,18 @@ description: 摘要总结/每日一句
 
 \*/
 
-/**
- * @typedef {'gemini'|'spark'|'siliconflow'} IModel
- */
+/** @typedef {'gemini'|'spark'|'siliconflow'} IModel */
 
 const { computed, ref } = window.Vue;
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
+
 const {
   gemini: geminiChat,
   spark: sparkChat,
   siliconflow: siliconflowChat,
 } = require('./model/index');
+
 const getText = (title) => $tw.wiki.getTiddlerText(title);
 
 const {
@@ -35,7 +35,7 @@ const app = (
   title = '',
   text = '',
   tip = 'AI 生成的摘要',
-  /** @type {IModel} - 模型 */
+  /** @type {keyof import('./model/index')} */
   model,
   targetField = 'summary',
 ) => {
