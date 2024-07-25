@@ -11,6 +11,7 @@ const cmds = {
   cmd: '>',
   help: '?',
   empty: '',
+  theme: '@theme',
 };
 const cmdsString = Object.values(cmds);
 
@@ -52,6 +53,17 @@ function Plugin(domNode) {
           items = [...links, ...actions];
           mode = 'help';
           break;
+        // TODO: 实现vscode 主题临时切换预览的效果
+        case '@theme':
+          items = [
+            $tw.wiki.filterTiddlers('[plugin-type[theme]]').map((theme) => {
+              return {
+                title: theme,
+                action: '',
+              };
+            }),
+          ];
+          break;
         case cmds.cmd:
           mode = 'cmd';
           items = [
@@ -91,15 +103,18 @@ function Plugin(domNode) {
             },
           },
 
+          onActive({ item }) {
+            console.log(item);
+          },
           onSelect({ item }) {
             closeCmp(domNode); // hide modal
 
-            const invoke = (action, param) => {
-              const paramString = param || '';
-              const actionString = `<$action-sendmessage $message="${action}" $param="${paramString}"/>`;
-              console.log(actionString);
-              return $tw.rootWidget.invokeActionString(actionString);
-            };
+            // const invoke = (action, param) => {
+            //   const paramString = param || '';
+            //   const actionString = `<$action-sendmessage $message="${action}" $param="${paramString}"/>`;
+            //   console.log(actionString);
+            //   return $tw.rootWidget.invokeActionString(actionString);
+            // };
 
             if (item.link) {
               window.open(item.link, item.link);
@@ -167,13 +182,13 @@ const previewTiddlers = (item, html, query) => {
 
 const searchHelp = (item, html) => {
   return html`<div class="flex items-center gap-2">
-  <kbd class="arrow-up"></kbd>
-  <kbd class="arrow-down"></kbd>
-   <span class="text-[12px]"> 切换 </span>
-   <kbd class="down-left"></kbd>
-   <span class="text-[12px]"> 选择 </span>
-  </div>`
-}
+    <kbd class="arrow-up"></kbd>
+    <kbd class="arrow-down"></kbd>
+    <span class="text-[12px]"> 切换 </span>
+    <kbd class="down-left"></kbd>
+    <span class="text-[12px]"> 选择 </span>
+  </div>`;
+};
 
 const searchResult = (item, html, data) => {
   return html`<footer

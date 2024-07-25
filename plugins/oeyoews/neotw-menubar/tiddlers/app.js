@@ -20,42 +20,47 @@ const app = () => {
         {
           label: 'File',
           children: [
-            { label: 'New' },
-            { label: 'Open' },
+            {
+              label: 'New',
+              // action string
+              onClick: () => {},
+            },
+            { label: 'Import' },
             {
               label: 'Open recent',
               children: [{ label: 'File 1....' }],
             },
             {
+              label: 'Refresh',
+              divided: true,
+              shortcut: 'Ctrl + R',
+              onClick: () =>
+                $tw.rootWidget.dispatchEvent({ type: 'tm-browser-refresh' }),
+            },
+            {
               label: 'Save',
               divided: true,
               shortcut: 'Ctrl + S',
+              onClick: () =>
+                $tw.rootWidget.dispatchEvent({ type: 'tm-save-wiki' }),
             },
-            { label: 'Save as...' },
-            { label: 'Close' },
-            { label: 'Exit' },
-          ],
-        },
-        {
-          label: 'Edit',
-          children: [
-            { label: 'Undo' },
-            { label: 'Redo' },
-            { label: 'Cut', divided: true },
-            { label: 'Copy' },
-            { label: 'Find', divided: true },
-            { label: 'Replace' },
+            {
+              label: 'Home',
+              // action string
+              // onClick: () => $tw.rootWidget.dispatchEvent({ type: 'tm-home' }),
+            },
           ],
         },
         {
           label: 'View',
           children: [
-            { label: 'Zoom in' },
-            { label: 'Zoom out' },
-            { label: 'Reset zoom' },
-            { label: 'Full screent', divided: true },
+            {
+              label: 'Full screent',
+              divided: true,
+              onClick: () =>
+                $tw.rootWidget.dispatchEvent({ type: 'tm-full-screen' }),
+            },
             { label: 'Find', divided: true },
-            { label: 'Replace' },
           ],
         },
         {
@@ -72,9 +77,7 @@ const app = () => {
       return { menuData };
     },
 
-    mounted() {
-      // console.log(this.menuData);
-    },
+    mounted() {},
     methods: {},
 
     template: getTemplate('$:/plugins/oeyoews/neotw-menubar/templates/app.vue'),
