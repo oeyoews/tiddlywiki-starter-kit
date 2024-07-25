@@ -103,9 +103,10 @@ function Plugin(domNode) {
             },
           },
 
-          onActive({ item }) {
-            console.log(item);
-          },
+          // onActive({ item }) {
+          //   console.log(item);
+          // },
+          // onItemsChange({item}) {},
           onSelect({ item }) {
             closeCmp(domNode); // hide modal
 
