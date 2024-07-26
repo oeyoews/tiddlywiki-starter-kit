@@ -10,6 +10,7 @@ const { h, ref } = window.Vue;
 const pluginTitle = '$:/plugins/oeyoews/neotw-menubar';
 const { version } = $tw.wiki.getTiddler(pluginTitle).fields;
 
+const getNavigatorWidget = require('./getNavigatorWidget');
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 
 const { MenuBar } = require('vue-context-menu.min.js');
@@ -46,9 +47,9 @@ const app = () => {
           : false;
 
       // 以防触发事件的时候， menubar 监听器没有添加, 手动获取menubarNav widget
-      const getNavigatorWidget = () => {
+      const checkNavigatorWidget = () => {
         if (!menubarNav.value) {
-          menubarNav.value = window.getNavigatorWidget();
+          menubarNav.value = getNavigatorWidget();
         }
       };
       const items = [
@@ -59,9 +60,8 @@ const app = () => {
             {
               label: 'New Tiddler',
               shortcut: 'G + N',
-              disabled: !hasNav,
               onClick: () => {
-                getNavigatorWidget();
+                checkNavigatorWidget();
                 menubarNav.value.dispatchEvent({ type: 'tm-new-tiddler' });
               },
               icon: getIcon('plus'),
@@ -69,9 +69,8 @@ const app = () => {
             {
               label: 'New Journal',
               shortcut: 'Alt + J',
-              disabled: !hasNav,
               onClick: () => {
-                getNavigatorWidget();
+                checkNavigatorWidget();
                 menubarNav.value.dispatchEvent({
                   type: 'tm-new-tiddler',
                   paramObject: {
@@ -129,9 +128,8 @@ const app = () => {
             {
               label: 'Close All',
               icon: getIcon('closeall'),
-              disabled: !hasNav,
               onClick: () => {
-                getNavigatorWidget();
+                checkNavigatorWidget();
                 menubarNav.value.dispatchEvent({
                   type: 'tm-close-all-tiddlers',
                 });
@@ -175,6 +173,7 @@ const app = () => {
             {
               label: `${version}`,
               icon: getIcon('git'),
+              disabled: true,
             },
           ],
         },
@@ -188,15 +187,17 @@ const app = () => {
 
       return { menuData, menubarNav, hasNav };
     },
-    created() {
-      document.addEventListener('menubarNavChange', (e) => {
-        if (e.detail) {
-          this.menubarNav = e.detail;
-          this.hasNav = true;
-        } else {
-          this.hasNav = false;
-        }
-      });
+    mounted() {
+      // 不能在这里获取
+      // this.menubarNav = getNavigatorWidget();
+      // document.addEventListener('menubarNavChange', (e) => {
+      //   if (e.detail) {
+      //     this.menubarNav = e.detail;
+      //     this.hasNav = true;
+      //   } else {
+      //     this.hasNav = false;
+      //   }
+      // });
     },
   };
   return component;
