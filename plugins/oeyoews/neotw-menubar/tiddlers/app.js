@@ -7,9 +7,6 @@ module-type: library
 
 const { h, ref } = window.Vue;
 
-/** @type {import('tiddlywiki').Widget} */
-const menubarNav = window.menubarNav;
-
 const pluginTitle = '$:/plugins/oeyoews/neotw-menubar';
 const { version } = $tw.wiki.getTiddler(pluginTitle).fields;
 
@@ -38,6 +35,10 @@ const app = () => {
     },
     template: getTemplate(`${pluginTitle}/templates/app.vue`),
     setup() {
+      /** @type {import('tiddlywiki').Widget} */
+      const menubarNav = ref(null);
+      const hasNav = ref(false);
+
       const palette = $tw.wiki.getTiddlerText('$:/palette');
       const isDarkMode =
         $tw.wiki.getTiddler(palette)?.fields['color-scheme'] === 'dark'
@@ -51,15 +52,17 @@ const app = () => {
             {
               label: 'New Tiddler',
               shortcut: 'G + N',
+              disabled: !hasNav,
               onClick: () =>
-                menubarNav.dispatchEvent({ type: 'tm-new-tiddler' }),
+                this.menubarNav.dispatchEvent({ type: 'tm-new-tiddler' }),
               icon: getIcon('plus'),
             },
             {
               label: 'New Journal',
               shortcut: 'Alt + J',
+              disabled: !hasNav,
               onClick: () =>
-                menubarNav.dispatchEvent({
+                this.menubarNav.dispatchEvent({
                   type: 'tm-new-tiddler',
                   paramObject: {
                     title: new Date().toISOString().split('T')[0],
@@ -115,8 +118,11 @@ const app = () => {
             {
               label: 'Close All',
               icon: getIcon('closeall'),
+              disabled: !hasNav,
               onClick: () =>
-                menubarNav.dispatchEvent({ type: 'tm-close-all-tiddlers' }),
+                this.menubarNav.dispatchEvent({
+                  type: 'tm-close-all-tiddlers',
+                }),
             },
             // need neotw-cmp plugins
             // { label: 'Themes' },
@@ -167,7 +173,19 @@ const app = () => {
         zIndex: 99999,
       };
 
-      return { menuData };
+      return { menuData, menubarNav, hasNav };
+    },
+    mounted() {
+      $tw.wiki.addEventListener('menubarNavChange', (e) => {
+        // console.log('menubarNavChange', e);
+        if (window.menubarNav) {
+          this.menubarNav = window.menubarNav;
+          this.hasNav = true;
+          // console.log(this.menubarNav);
+        } else {
+          this.hasNav = false;
+        }
+      });
     },
   };
   return component;
