@@ -335,6 +335,8 @@ module.exports = class Motion {
         return false;
       },
       CloseAllTiddlers: () => {
+        // 清空时， 关闭侧边栏
+        $tw.wiki.setText(`$:/state/notebook-sidebar`, 'text', null, 'no');
         this.navigatorWidget.dispatchEvent({ type: 'tm-close-all-tiddlers' });
         return false;
       },
@@ -378,6 +380,9 @@ module.exports = class Motion {
       },
       // toggle sidebar
       ToggleSidebar: () => {
+        const isEmpty =
+          $tw.wiki.getTiddler('$:/StoryList').fields.list.length === 0;
+        if (isEmpty) return false;
         this.toggleSidebar();
         return false;
       },

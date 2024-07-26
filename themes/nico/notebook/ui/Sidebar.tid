@@ -7,10 +7,12 @@ type: text/vnd.tiddlywiki
 $:/config/SideBarSegments/Visibility/$(listItem)$
 \end
 
+
+<$list filter="[[$:/StoryList]get[list]count[]!match[0]]">
 <$reveal state="$:/state/notebook-sidebar" type="match" text="yes" default="no" retain="yes" animate="no">
     <$scrollable fallthrough="no">
     <!-- use z-0 to prevent cm6 fullscreen -->
-    <div class="nc-sidebar p-2 z-0 hidden lg:block">
+    <div class="nc-sidebar p-2 z-0 hidden lg:block top-[34px]">
       <$list filter="[all[shadows+tiddlers]tag[$:/themes/nico/notebook/tags/Sidebar]!has[draft.of]]" variable="listItem">
         <$reveal type="nomatch" state=<<config-title>> text="hide" tag="div">
           <$transclude tiddler=<<listItem>> mode="inline"/>
@@ -19,3 +21,4 @@ $:/config/SideBarSegments/Visibility/$(listItem)$
     </div>
     </$scrollable>
 </$reveal>
+</$list>

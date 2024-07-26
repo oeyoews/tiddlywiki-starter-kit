@@ -5,7 +5,7 @@ module-type: library
 
 \*/
 
-const { h, ref } = window.Vue;
+const { h, ref, reactive } = window.Vue;
 
 const pluginTitle = '$:/plugins/oeyoews/neotw-menubar';
 const { version } = $tw.wiki.getTiddler(pluginTitle).fields;
@@ -14,6 +14,7 @@ const getNavigatorWidget = require('./getNavigatorWidget');
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 
 const { MenuBar } = require('vue-context-menu.min.js');
+const toggleSidebar = require('./toggleSidebar.js');
 
 const Icon = require('./components/Icon.js');
 const icons = require('./icons');
@@ -40,11 +41,37 @@ const app = () => {
       const menubarNav = ref(null);
       const hasNav = ref(false);
 
+      const avatarSrc = 'https://github.com/oeyoews.png?size=16';
+
       const palette = $tw.wiki.getTiddlerText('$:/palette');
       const isDarkMode =
         $tw.wiki.getTiddler(palette)?.fields['color-scheme'] === 'dark'
           ? true
           : false;
+      const positionTiddler =
+        '$:/themes/nico/notebook/metrics/sidebar-position';
+      /**
+       * @param {'left' |'right'} position
+       */
+      const setSidebarPosition = (position) => {
+        if (!['left', 'right'].includes(position)) {
+          console.error('position must be left or right');
+          return;
+        }
+        console.log(position);
+        $tw.wiki.setText(positionTiddler, 'position', null, position);
+      };
+
+      const toggleSidebarPosition = () => {
+        const sidebarPosition =
+          $tw.wiki.getTiddler(positionTiddler).fields?.position;
+
+        if (sidebarPosition === 'left') {
+          setSidebarPosition('right');
+        } else {
+          setSidebarPosition('left');
+        }
+      };
 
       // 以防触发事件的时候， menubar 监听器没有添加, 手动获取menubarNav widget
       const checkNavigatorWidget = () => {
@@ -52,6 +79,7 @@ const app = () => {
           menubarNav.value = getNavigatorWidget();
         }
       };
+
       const items = [
         {
           label: 'File',
@@ -139,7 +167,8 @@ const app = () => {
             // { label: 'Themes' },
             // { label: 'Palette' },
             {
-              label: isDarkMode ? 'Light Mode' : 'Dark Mode',
+              label: 'Dark Mode',
+              checked: isDarkMode,
               onClick: () =>
                 $tw.rootWidget.dispatchEvent({ type: 'om-toggle-theme' }),
               icon: getIcon(isDarkMode ? 'light' : 'dark'),
@@ -163,12 +192,44 @@ const app = () => {
           ],
         },
         {
+          label: 'Sidebar',
+          onClick: toggleSidebar,
+        },
+        {
+          label: 'Setting',
+          children: [
+            {
+              label: 'Sidebar Position',
+              onClick: toggleSidebarPosition,
+              icon: getIcon('left'),
+            },
+          ],
+        },
+        {
           label: 'Help',
           children: [
             {
               label: 'About',
-              icon: getIcon('info'),
+              hidden: true, // 动态加载
+              icon: h('img', {
+                src: avatarSrc,
+                style: {
+                  borderRadius: '50%',
+                },
+              }),
+              onClick: () => $tw.modal.display('oeyoews'),
+            },
+            {
+              label: 'Readme',
+              icon: getIcon('readme'),
               onClick: () => $tw.modal.display(pluginTitle + '/readme'),
+            },
+            {
+              label: 'GitHub',
+              icon: getIcon('github'),
+              onClick: () => {
+                window.open('https://github.com/oeyoews/neotw', 'neotw');
+              },
             },
             {
               label: `${version}`,
@@ -178,11 +239,29 @@ const app = () => {
           ],
         },
       ];
-      const menuData = {
+
+      const menuData = reactive({
         items,
         theme: isDarkMode ? 'dark' : '',
         // mini: true,
         zIndex: 99999,
+        // https://github.com/imengyu/vue3-context-menu/issues/41 似乎对菜单栏无效
+        onClose: (e) => {
+          console.log(e, '999');
+        },
+      });
+
+      // 动态菜单
+      const avatar = new Image();
+      avatar.src = avatarSrc;
+      avatar.onload = () => {
+        const imageIndex = items.findIndex((item) => item.label === 'Help');
+        const aboutIndex = menuData.items[imageIndex].children.findIndex(
+          (item) => item.label === 'About',
+        );
+        setTimeout(() => {
+          menuData.items[imageIndex].children[aboutIndex].hidden = false;
+        }, 200);
       };
 
       return { menuData, menubarNav, hasNav };

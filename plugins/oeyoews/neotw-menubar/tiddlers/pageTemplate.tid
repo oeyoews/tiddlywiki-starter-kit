@@ -2,7 +2,7 @@ title: $:/plugins/oeyoews/neotw-menubar/PageTemplate
 tags: $:/tags/PageTemplate
 
 <$list filter="[[$:/StoryList]get[list]count[]!match[0]]">
-<div class="fixed top-0 inset-x-0 hidden md:block">
+<div class="fixed top-0 inset-x-0 hidden md:block z-[9999999]">
 	<$vue-menubar />
 </div>
 </$list>
