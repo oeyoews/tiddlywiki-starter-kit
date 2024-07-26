@@ -44,6 +44,13 @@ const app = () => {
         $tw.wiki.getTiddler(palette)?.fields['color-scheme'] === 'dark'
           ? true
           : false;
+
+      // 以防触发事件的时候， menubar 监听器没有添加, 手动获取menubarNav widget
+      const getNavigatorWidget = () => {
+        if (!menubarNav.value) {
+          menubarNav.value = window.getNavigatorWidget();
+        }
+      };
       const items = [
         {
           label: 'File',
@@ -54,6 +61,7 @@ const app = () => {
               shortcut: 'G + N',
               disabled: !hasNav,
               onClick: () => {
+                getNavigatorWidget();
                 menubarNav.value.dispatchEvent({ type: 'tm-new-tiddler' });
               },
               icon: getIcon('plus'),
@@ -62,14 +70,16 @@ const app = () => {
               label: 'New Journal',
               shortcut: 'Alt + J',
               disabled: !hasNav,
-              onClick: () =>
+              onClick: () => {
+                getNavigatorWidget();
                 menubarNav.value.dispatchEvent({
                   type: 'tm-new-tiddler',
                   paramObject: {
                     title: new Date().toISOString().split('T')[0],
                     tags: 'Journal',
                   },
-                }),
+                });
+              },
               icon: getIcon('journal'),
             },
             {
@@ -120,10 +130,12 @@ const app = () => {
               label: 'Close All',
               icon: getIcon('closeall'),
               disabled: !hasNav,
-              onClick: () =>
+              onClick: () => {
+                getNavigatorWidget();
                 menubarNav.value.dispatchEvent({
                   type: 'tm-close-all-tiddlers',
-                }),
+                });
+              },
             },
             // need neotw-cmp plugins
             // { label: 'Themes' },
@@ -181,7 +193,6 @@ const app = () => {
         if (e.detail) {
           this.menubarNav = e.detail;
           this.hasNav = true;
-          console.log(this.menubarNav);
         } else {
           this.hasNav = false;
         }

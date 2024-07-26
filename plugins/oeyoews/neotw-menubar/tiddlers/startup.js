@@ -8,21 +8,27 @@ exports.platforms = ['browser'];
 exports.after = ['render'];
 exports.synchronous = true;
 exports.startup = () => {
-  function getNavigatorWidget(widget) {
-    const child = widget.children?.[0];
-    if (child?.parseTreeNode.type == 'navigator') {
-      return child;
+  const getNavigatorWidget = () => {
+    function getNavigatorWidget(widget) {
+      const child = widget.children?.[0];
+      if (child?.parseTreeNode.type == 'navigator') {
+        return child;
+      }
+      return getNavigatorWidget(child);
     }
-    return getNavigatorWidget(child);
-  }
-  const menubarNav = getNavigatorWidget($tw.rootWidget);
-  if (menubarNav) {
-    const event = new CustomEvent('menubarNavChange', {
-      bubbles: true,
-      cancelable: true,
-      composed: true,
-      detail: menubarNav,
-    });
-    document.dispatchEvent(event);
-  }
+    const menubarNav = getNavigatorWidget($tw.rootWidget);
+    if (menubarNav) {
+      const event = new CustomEvent('menubarNavChange', {
+        bubbles: true,
+        cancelable: true,
+        composed: true,
+        detail: menubarNav,
+      });
+      document.dispatchEvent(event);
+    }
+    return menubarNav;
+  };
+
+  window.getNavigatorWidget = getNavigatorWidget;
+  getNavigatorWidget();
 };
