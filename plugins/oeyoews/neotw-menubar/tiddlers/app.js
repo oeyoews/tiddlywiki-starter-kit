@@ -7,21 +7,14 @@ module-type: library
 
 const { h, ref } = window.Vue;
 
+const pluginTitle = '$:/plugins/oeyoews/neotw-menubar';
+
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 
-const Version = require('./components/Version');
-
 const { MenuBar } = require('vue-context-menu.min.js');
+
+const Icon = require('./components/Icon.js');
 const icons = require('./icons');
-const Icon = {
-  name: 'Icon',
-  props: {
-    icon: {
-      type: String,
-    },
-  },
-  template: `<div class="flex items-center" v-html="icon"></div>`,
-};
 
 /**
  * @param {keyof import('./icons')} icon
@@ -34,6 +27,10 @@ const getIcon = (icon) => {
 
 const app = () => {
   const component = {
+    components: {
+      MenuBar,
+    },
+    template: getTemplate(`${pluginTitle}/templates/app.vue`),
     setup() {
       const palette = $tw.wiki.getTiddlerText('$:/palette');
       const isDarkMode =
@@ -124,16 +121,6 @@ const app = () => {
       };
 
       return { menuData };
-    },
-
-    mounted() {},
-    methods: {},
-
-    template: getTemplate('$:/plugins/oeyoews/neotw-menubar/templates/app.vue'),
-
-    components: {
-      Version,
-      MenuBar,
     },
   };
   return component;
