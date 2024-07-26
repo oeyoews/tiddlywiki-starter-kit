@@ -48,6 +48,10 @@ const app = () => {
         $tw.wiki.getTiddler(palette)?.fields['color-scheme'] === 'dark'
           ? true
           : false;
+      const getDarkMode = () => {
+        const palette = $tw.wiki.getTiddlerText('$:/palette');
+        return $tw.wiki.getTiddler(palette)?.fields['color-scheme'] === 'dark';
+      };
       const positionTiddler =
         '$:/themes/nico/notebook/metrics/sidebar-position';
       /**
@@ -58,7 +62,6 @@ const app = () => {
           console.error('position must be left or right');
           return;
         }
-        console.log(position);
         $tw.wiki.setText(positionTiddler, 'position', null, position);
       };
 
@@ -168,16 +171,21 @@ const app = () => {
             // { label: 'Palette' },
             {
               label: 'Dark Mode',
-              checked: isDarkMode,
-              onClick: () =>
-                $tw.rootWidget.dispatchEvent({ type: 'om-toggle-theme' }),
-              icon: getIcon(isDarkMode ? 'light' : 'dark'),
+              // checked: getDarkMode(),
+              onClick: () => {
+                $tw.rootWidget.dispatchEvent({ type: 'om-toggle-theme' });
+                menuData.theme = getDarkMode() ? 'dark' : 'light';
+                // findindex
+                // menuData.icon = getIcon(getDarkMode() ? 'dark' : 'light');
+              },
+              icon: getIcon(isDarkMode ? 'dark' : 'light'),
             },
             // fontsize
             // layout
             // classic view
             {
               label: 'Command Palette',
+              shortcut: 'Ctrl + P',
               onClick: () => {
                 $tw.rootWidget.dispatchEvent({ type: 'open-cmp' });
               },
@@ -196,12 +204,18 @@ const app = () => {
           onClick: toggleSidebar,
         },
         {
-          label: 'Setting',
+          label: 'Perference',
           children: [
             {
               label: 'Sidebar Position',
               onClick: toggleSidebarPosition,
               icon: getIcon('left'),
+            },
+            {
+              label: 'Setup',
+              onClick: () => goto.navigateTiddler('$:/ControlPanel'),
+              shortcut: 'G I',
+              icon: getIcon('tiddlywiki'),
             },
           ],
         },

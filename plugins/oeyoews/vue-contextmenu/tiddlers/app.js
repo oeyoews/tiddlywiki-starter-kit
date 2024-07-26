@@ -14,6 +14,12 @@ const icons = require('./icons');
 
 const { useI18n } = require('vue-i18n.global.prod.js');
 
+const palette = $tw.wiki.getTiddlerText('$:/palette');
+const isDarkMode =
+  $tw.wiki.getTiddler(palette)?.fields['color-scheme'] === 'dark'
+    ? true
+    : false;
+
 /**
  * @param {keyof import('./icons')} icon
  */
@@ -139,7 +145,7 @@ const app = (target, title, self) => {
           customClass: 'rounded-md',
           zIndex: 3,
           minWidth: 230,
-          theme: 'dark',
+          theme: isDarkMode ? 'dark' : '',
           x: e.x,
           y: e.y,
         });
