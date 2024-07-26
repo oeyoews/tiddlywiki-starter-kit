@@ -8,6 +8,7 @@ module-type: library
 const { h, ref } = window.Vue;
 
 const pluginTitle = '$:/plugins/oeyoews/neotw-menubar';
+const { version } = $tw.wiki.getTiddler(pluginTitle).fields;
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 
@@ -24,6 +25,8 @@ const getIcon = (icon) => {
     icon: icons[icon],
   });
 };
+
+const goto = new $tw.Story();
 
 const app = () => {
   const component = {
@@ -43,51 +46,65 @@ const app = () => {
           icon: getIcon('files'),
           children: [
             {
-              label: 'New',
+              label: 'New Tiddler',
+              shortcut: 'G + N',
               // TODO: use action string
               onClick: () => {},
               icon: getIcon('plus'),
+            },
+            {
+              label: 'New Journal',
+              shortcut: 'Alt + J',
+              // TODO: use action string
+              onClick: () => {},
+              icon: getIcon('journal'),
             },
             // { label: 'Import', },
             {
               label: 'Open recent',
               icon: getIcon('history'),
-              children: [{ label: 'File 1....' }],
-            },
-            {
-              label: 'Refresh',
-              divided: true,
-              shortcut: 'Ctrl + R',
-              icon: getIcon('refresh'),
-              onClick: () =>
-                $tw.rootWidget.dispatchEvent({ type: 'tm-browser-refresh' }),
+              children: [
+                {
+                  label: 'GettingStarted',
+                  icon: getIcon('file'),
+                  onClick: () => goto.navigateTiddler('GettingStarted'),
+                },
+              ],
             },
             {
               label: 'Save',
-              divided: true,
               shortcut: 'Ctrl + S',
               icon: getIcon('save'),
               onClick: () =>
                 $tw.rootWidget.dispatchEvent({ type: 'tm-save-wiki' }),
-            },
-            {
-              label: 'Home',
-              // action string
-              // onClick: () => $tw.rootWidget.dispatchEvent({ type: 'tm-home' }),
             },
           ],
         },
         {
           label: 'View',
           children: [
+            {
+              label: 'Home',
+              icon: getIcon('home'),
+              shortcut: 'G + H',
+              // action string
+              onClick: () => goto.navigateTiddler('GettingStarted'),
+            },
+            {
+              label: 'Refresh',
+              shortcut: 'Ctrl + R',
+              icon: getIcon('refresh'),
+              onClick: () =>
+                $tw.rootWidget.dispatchEvent({ type: 'tm-browser-refresh' }),
+            },
             // need neotw-cmp plugins
             // { label: 'Themes' },
             // { label: 'Palette' },
             {
-              label: 'DarkMode',
+              label: isDarkMode ? 'Light Mode' : 'Dark Mode',
               onClick: () =>
                 $tw.rootWidget.dispatchEvent({ type: 'om-toggle-theme' }),
-              icon: getIcon('dark'),
+              icon: getIcon(isDarkMode ? 'light' : 'dark'),
             },
             // fontsize
             // layout
@@ -101,7 +118,6 @@ const app = () => {
             },
             {
               label: 'Full Screen',
-              // divided: true,
               onClick: () =>
                 $tw.rootWidget.dispatchEvent({ type: 'tm-full-screen' }),
               icon: getIcon('fullscreen'),
@@ -110,7 +126,17 @@ const app = () => {
         },
         {
           label: 'Help',
-          children: [{ label: 'About' }],
+          children: [
+            {
+              label: 'About',
+              icon: getIcon('info'),
+              onClick: () => $tw.modal.display(pluginTitle + '/readme'),
+            },
+            {
+              label: `${version}`,
+              icon: getIcon('git'),
+            },
+          ],
         },
       ];
       const menuData = {
