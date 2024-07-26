@@ -164,6 +164,14 @@ const app = () => {
                 menubarNav.value.dispatchEvent({
                   type: 'tm-close-all-tiddlers',
                 });
+
+                // 清空时， 关闭侧边栏
+                $tw.wiki.setText(
+                  `$:/state/notebook-sidebar`,
+                  'text',
+                  null,
+                  'no',
+                );
               },
             },
             // need neotw-cmp plugins
