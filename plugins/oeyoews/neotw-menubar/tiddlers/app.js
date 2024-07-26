@@ -53,8 +53,9 @@ const app = () => {
               label: 'New Tiddler',
               shortcut: 'G + N',
               disabled: !hasNav,
-              onClick: () =>
-                this.menubarNav.dispatchEvent({ type: 'tm-new-tiddler' }),
+              onClick: () => {
+                menubarNav.value.dispatchEvent({ type: 'tm-new-tiddler' });
+              },
               icon: getIcon('plus'),
             },
             {
@@ -62,7 +63,7 @@ const app = () => {
               shortcut: 'Alt + J',
               disabled: !hasNav,
               onClick: () =>
-                this.menubarNav.dispatchEvent({
+                menubarNav.value.dispatchEvent({
                   type: 'tm-new-tiddler',
                   paramObject: {
                     title: new Date().toISOString().split('T')[0],
@@ -120,7 +121,7 @@ const app = () => {
               icon: getIcon('closeall'),
               disabled: !hasNav,
               onClick: () =>
-                this.menubarNav.dispatchEvent({
+                menubarNav.value.dispatchEvent({
                   type: 'tm-close-all-tiddlers',
                 }),
             },
@@ -175,13 +176,12 @@ const app = () => {
 
       return { menuData, menubarNav, hasNav };
     },
-    mounted() {
-      $tw.wiki.addEventListener('menubarNavChange', (e) => {
-        // console.log('menubarNavChange', e);
-        if (window.menubarNav) {
-          this.menubarNav = window.menubarNav;
+    created() {
+      document.addEventListener('menubarNavChange', (e) => {
+        if (e.detail) {
+          this.menubarNav = e.detail;
           this.hasNav = true;
-          // console.log(this.menubarNav);
+          console.log(this.menubarNav);
         } else {
           this.hasNav = false;
         }

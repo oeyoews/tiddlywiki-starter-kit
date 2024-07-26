@@ -17,9 +17,12 @@ exports.startup = () => {
   }
   const menubarNav = getNavigatorWidget($tw.rootWidget);
   if (menubarNav) {
-    const event = new Event('menubarNavChange', { detail: menubarNav });
-    window.menubarNav = menubarNav;
-    $tw.rootWidget.dispatchEvent(event);
-    // console.log(event);
+    const event = new CustomEvent('menubarNavChange', {
+      bubbles: true,
+      cancelable: true,
+      composed: true,
+      detail: menubarNav,
+    });
+    document.dispatchEvent(event);
   }
 };

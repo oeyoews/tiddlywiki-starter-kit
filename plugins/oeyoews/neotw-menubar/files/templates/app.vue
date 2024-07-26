@@ -1,4 +1,4 @@
 <template>
-  <MenuBar :options="menuData"> </MenuBar>
+  <MenuBar id="neotw-menubar" :options="menuData"> </MenuBar>
   <!-- <div @contextmenu="onContextMenu">Button</div> -->
 </template>

@@ -6,3 +6,5 @@ caption: MenuBar
 subtitle: {{||$:/esc}}
 
 [[在线文档|https://neotw.vercel.app/docs/plugins/neotw-menubar]]
+
+<!-- * 自定义theme -->
