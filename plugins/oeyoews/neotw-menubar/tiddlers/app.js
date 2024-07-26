@@ -7,6 +7,9 @@ module-type: library
 
 const { h, ref } = window.Vue;
 
+/** @type {import('tiddlywiki').Widget} */
+const menubarNav = window.menubarNav;
+
 const pluginTitle = '$:/plugins/oeyoews/neotw-menubar';
 const { version } = $tw.wiki.getTiddler(pluginTitle).fields;
 
@@ -48,18 +51,23 @@ const app = () => {
             {
               label: 'New Tiddler',
               shortcut: 'G + N',
-              // TODO: use action string
-              onClick: () => {},
+              onClick: () =>
+                menubarNav.dispatchEvent({ type: 'tm-new-tiddler' }),
               icon: getIcon('plus'),
             },
             {
               label: 'New Journal',
               shortcut: 'Alt + J',
-              // TODO: use action string
-              onClick: () => {},
+              onClick: () =>
+                menubarNav.dispatchEvent({
+                  type: 'tm-new-tiddler',
+                  paramObject: {
+                    title: new Date().toISOString().split('T')[0],
+                    tags: 'Journal',
+                  },
+                }),
               icon: getIcon('journal'),
             },
-            // { label: 'Import', },
             {
               label: 'Open recent',
               icon: getIcon('history'),
@@ -80,6 +88,7 @@ const app = () => {
             },
           ],
         },
+        // view
         {
           label: 'View',
           children: [
@@ -96,6 +105,18 @@ const app = () => {
               icon: getIcon('refresh'),
               onClick: () =>
                 $tw.rootWidget.dispatchEvent({ type: 'tm-browser-refresh' }),
+            },
+            {
+              label: 'Permaview',
+              icon: getIcon('permaview'),
+              onClick: () =>
+                $tw.rootWidget.dispatchEvent({ type: 'tm-permaview' }),
+            },
+            {
+              label: 'Close All',
+              icon: getIcon('closeall'),
+              onClick: () =>
+                menubarNav.dispatchEvent({ type: 'tm-close-all-tiddlers' }),
             },
             // need neotw-cmp plugins
             // { label: 'Themes' },

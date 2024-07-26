@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/neotw-menubar/PageTemplate
+tags: $:/tags/PageTemplate
+
+<div class="fixed top-0 inset-x-0 hidden md:block">
+	<$vue-menubar />
+</div>
