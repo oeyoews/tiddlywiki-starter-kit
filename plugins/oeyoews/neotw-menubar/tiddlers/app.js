@@ -214,6 +214,7 @@ const app = () => {
         //#region View
         {
           label: 'View',
+          /** @type {IMenuItem[]} */
           children: [
             {
               label: 'Home',
@@ -272,6 +273,7 @@ const app = () => {
             {
               label: 'Dark Mode',
               // checked: getDarkMode(),
+              shortcut: 'G + T',
               onClick: () => {
                 $tw.rootWidget.dispatchEvent({ type: 'om-toggle-theme' });
                 menuData.theme = getDarkMode() ? 'dark' : 'light';
