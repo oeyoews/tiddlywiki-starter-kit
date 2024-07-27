@@ -216,8 +216,16 @@ const app = () => {
               label: 'Home',
               icon: getIcon('home'),
               shortcut: 'G + H',
-              // action string
               onClick: () => goto.navigateTiddler('GettingStarted'),
+            },
+            {
+              label: 'TODO',
+              icon: getIcon('notify'),
+              shortcut: 'G + Shift + I',
+              onClick: () =>
+                goto.navigateTiddler(
+                  '$:/plugins/nico/projectify/ui/dashboard/Dashboard',
+                ),
             },
             {
               label: 'Search',
@@ -242,6 +250,7 @@ const app = () => {
             {
               label: 'Close All',
               icon: getIcon('closeall'),
+              shortcut: 'G + D',
               onClick: () => {
                 checkNavigatorWidget();
                 menubarNav.value.dispatchEvent({
@@ -289,6 +298,7 @@ const app = () => {
         //#region Perference
         {
           label: 'Perference',
+          /** @type {IMenuItem[]} */
           children: [
             {
               label: 'Sidebar Position',
@@ -298,14 +308,14 @@ const app = () => {
             {
               label: 'Setup',
               onClick: () => goto.navigateTiddler('$:/ControlPanel'),
-              shortcut: 'G I',
+              shortcut: 'G + I',
               icon: getIcon('tiddlywiki'),
             },
             {
               label: 'Plugin',
               onClick: () =>
                 goto.navigateTiddler('$:/core/ui/ControlPanel/Plugins'),
-              shortcut: 'G P',
+              shortcut: 'G + P',
               icon: getIcon('puzzle'),
             },
             {
