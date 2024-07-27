@@ -18,6 +18,10 @@ const toggleSidebar = require('./toggleSidebar.js');
 
 const Icon = require('./components/Icon.js');
 const icons = require('./icons');
+const themes = $tw.wiki.filterTiddlers('[plugin-type[theme]]');
+const palettes = $tw.wiki.filterTiddlers(
+  '[all[shadows+tiddlers]tag[$:/tags/Palette]]',
+);
 
 /**
  * @param {keyof import('./icons')} icon
@@ -39,13 +43,12 @@ const app = () => {
     setup() {
       /** @type {import('tiddlywiki').Widget} */
       const menubarNav = ref(null);
-      const hasNav = ref(false);
 
       const avatarSrc = 'https://github.com/oeyoews.png?size=16';
 
-      const palette = $tw.wiki.getTiddlerText('$:/palette');
+      const currentPalette = $tw.wiki.getTiddlerText('$:/palette');
       const isDarkMode =
-        $tw.wiki.getTiddler(palette)?.fields['color-scheme'] === 'dark'
+        $tw.wiki.getTiddler(currentPalette)?.fields['color-scheme'] === 'dark'
           ? true
           : false;
       const getDarkMode = () => {
@@ -83,11 +86,77 @@ const app = () => {
         }
       };
 
-      //#region Items
+      const themeChildren = themes.map((theme) => {
+        const label = theme.split('/')[theme.split('/').length - 1];
+        return {
+          label,
+          checked: theme === $tw.wiki.getTiddlerText('$:/theme'),
+          // icon: getIcon('theme'),
+          onClick: () => {
+            $tw.wiki.setText(`$:/theme`, 'text', null, theme);
+            // Perference -> Theme -> theme
+            const PerferenceIndex = findLabelIndex('Perference', items);
+            const ThemeIndex2 = findLabelIndex(
+              'Theme',
+              items[PerferenceIndex].children,
+            );
+            menuData.items[PerferenceIndex].children[
+              ThemeIndex2
+            ].children.forEach((item) => {
+              if (item.label === label) {
+                item.checked = true;
+              } else {
+                item.checked = false;
+              }
+            });
+          },
+        };
+      });
+
+      const paletteChildren = palettes.map((palette) => {
+        const label = palette.split('/')[palette.split('/').length - 1];
+        return {
+          label,
+          // startupaction 会有影响
+          icon: palette === $tw.wiki.getTiddlerText('$:/palette'),
+          // icon: getIcon('art'),
+          onClick: () => {
+            $tw.wiki.setText('$:/palette', 'text', null, palette);
+            menuData.theme = getDarkMode() ? 'dark' : 'light';
+            // Perference -> Theme -> Palette
+            const PerferenceIndex = findLabelIndex('Perference', items);
+            const PaletteIndex = findLabelIndex(
+              'Palette',
+              items[PerferenceIndex].children,
+            );
+            menuData.items[PerferenceIndex].children[
+              PaletteIndex
+            ].children.forEach((item) => {
+              if (item.label === label) {
+                item.checked = true;
+              } else {
+                item.checked = false;
+              }
+            });
+          },
+        };
+      });
+
+      /**
+       * @typedef {Object} IMenuItem
+       * @property {string} label
+       * @property {string} icon
+       * @property {() => void} onClick
+       * @property {string} [shortcut]
+       */
+
+      /** @type {IMenuItem[]} */
       const items = [
         {
+          //#region File
           label: 'File',
           icon: getIcon('files'),
+          /** @type {IMenuItem[]} */
           children: [
             {
               label: 'New Tiddler',
@@ -133,7 +202,7 @@ const app = () => {
             },
           ],
         },
-        // view
+        //#region View
         {
           label: 'View',
           children: [
@@ -143,6 +212,13 @@ const app = () => {
               shortcut: 'G + H',
               // action string
               onClick: () => goto.navigateTiddler('GettingStarted'),
+            },
+            {
+              label: 'Search',
+              icon: getIcon('search'),
+              shortcut: 'G + S',
+              // action string
+              onClick: () => goto.navigateTiddler('$:/AdvancedSearch'),
             },
             {
               label: 'Refresh',
@@ -175,16 +251,12 @@ const app = () => {
                 );
               },
             },
-            // need neotw-cmp plugins
-            // { label: 'Themes' },
-            // { label: 'Palette' },
             {
               label: 'Dark Mode',
               // checked: getDarkMode(),
               onClick: () => {
                 $tw.rootWidget.dispatchEvent({ type: 'om-toggle-theme' });
                 menuData.theme = getDarkMode() ? 'dark' : 'light';
-                // findindex
                 // menuData.icon = getIcon(getDarkMode() ? 'dark' : 'light');
               },
               icon: getIcon(isDarkMode ? 'dark' : 'light'),
@@ -208,10 +280,7 @@ const app = () => {
             },
           ],
         },
-        {
-          label: 'Sidebar',
-          onClick: toggleSidebar,
-        },
+        //#region Perference
         {
           label: 'Perference',
           children: [
@@ -226,8 +295,30 @@ const app = () => {
               shortcut: 'G I',
               icon: getIcon('tiddlywiki'),
             },
+            {
+              label: 'Plugin',
+              onClick: () =>
+                goto.navigateTiddler('$:/core/ui/ControlPanel/Plugins'),
+              shortcut: 'G P',
+              icon: getIcon('puzzle'),
+            },
+            {
+              label: 'Theme',
+              icon: getIcon('theme'),
+              children: themeChildren,
+            },
+            {
+              label: 'Palette',
+              icon: getIcon('art'),
+              children: paletteChildren,
+            },
           ],
         },
+        {
+          label: 'Sidebar',
+          onClick: toggleSidebar,
+        },
+        //#region Help
         {
           label: 'Help',
           children: [
@@ -255,14 +346,53 @@ const app = () => {
               },
             },
             {
-              label: `${version}`,
+              label: 'TiddlyWiki Talk',
+              icon: h('img', {
+                src: 'https://talk.tiddlywiki.org/uploads/default/optimized/1X/39026bc4f2982199e99372b6c3c9655d07544b7d_2_32x32.svg',
+                style: {
+                  borderRadius: '50%',
+                  width: '16px',
+                  height: '16px',
+                },
+              }),
+              onClick: () => {
+                window.open('https://talk.tiddlywiki.org', 'tiddlywiki_talk');
+              },
+            },
+            {
+              label: 'TiddlyWiki',
+              icon: getIcon('tiddlywiki'),
+              onClick: () => {
+                window.open('https://tiddlywiki.com', 'tiddlywiki_com');
+              },
+            },
+            {
+              label: `MenuBar ${version}`,
+              icon: getIcon('git'),
+              disabled: true,
+            },
+            {
+              label: `TiddlyWiki ${$tw.version}`,
               icon: getIcon('git'),
               disabled: true,
             },
           ],
         },
       ];
-      //#endregion
+      /**
+       *
+       * @param {typeof keyof items} label
+       * @param {*} data
+       * @returns
+       */
+      const findLabelIndex = (label, data = items) => {
+        const labelIndex = data.findIndex((item) => item.label === label);
+        if (labelIndex === -1) {
+          console.error(`${label} not found`);
+          return;
+        }
+        return labelIndex;
+      };
 
       const menuData = reactive({
         items,
@@ -279,26 +409,23 @@ const app = () => {
       const avatar = new Image();
       avatar.src = avatarSrc;
       avatar.onload = () => {
-        const imageIndex = items.findIndex((item) => item.label === 'Help');
-        const aboutIndex = menuData.items[imageIndex].children.findIndex(
-          (item) => item.label === 'About',
-        );
+        const imageIndex = findLabelIndex('Help');
+        const aboutIndex = findLabelIndex('About', items[imageIndex].children);
         setTimeout(() => {
           menuData.items[imageIndex].children[aboutIndex].hidden = false;
         }, 200);
       };
 
-      return { menuData, menubarNav, hasNav };
+      return { menuData, menubarNav };
     },
     mounted() {
       // 不能在这里获取
       // this.menubarNav = getNavigatorWidget();
+      // TODO: 监听快捷键切换主题
       // document.addEventListener('menubarNavChange', (e) => {
       //   if (e.detail) {
       //     this.menubarNav = e.detail;
-      //     this.hasNav = true;
       //   } else {
-      //     this.hasNav = false;
       //   }
       // });
     },
