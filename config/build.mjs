@@ -1,9 +1,6 @@
 import base from './base.mjs';
 
-/**
- * @type {import('tiddlywiki').ITiddlyWikiInfoJSONBuild}
- * @description 构建
- */
+/** @type {import('tiddlywiki').ITiddlyWikiInfoJSONBuild} */
 export default {
   // 需要before index.html 构建 ???
   // json: [

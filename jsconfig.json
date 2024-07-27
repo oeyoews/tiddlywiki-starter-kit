@@ -3,6 +3,8 @@
     "checkJs": false,
     "target": "ESNext",
     "skipLibCheck": true,
+    "allowImportingTsExtensions": true
+    // "types": ["tw5-typed", ]
   },
   "exclude": [
     "node_modules/",
@@ -21,6 +23,6 @@
     // "plugins/oeyoews/**/*.js",
     // "plugins/oeyoews/**/*.vue",
     "plugins",
-    "types.d.ts",
+    "types.d.ts"
   ]
 }
