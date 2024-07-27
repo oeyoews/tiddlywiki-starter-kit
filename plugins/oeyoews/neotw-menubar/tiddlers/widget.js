@@ -8,7 +8,7 @@ neotw-menubar widget
 \*/
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 
-class ExampleWidget extends Widget {
+class MenuBarWidget extends Widget {
   constructor(parseTreeNode, options) {
     super(parseTreeNode, options);
   }
@@ -68,4 +68,4 @@ class ExampleWidget extends Widget {
 }
 
 /** @description neotw-menubar widget */
-exports['vue-menubar'] = ExampleWidget;
+exports['vue-menubar'] = MenuBarWidget;

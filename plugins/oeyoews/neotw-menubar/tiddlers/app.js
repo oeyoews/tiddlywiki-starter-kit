@@ -83,6 +83,7 @@ const app = () => {
         }
       };
 
+      //#region Items
       const items = [
         {
           label: 'File',
@@ -261,6 +262,7 @@ const app = () => {
           ],
         },
       ];
+      //#endregion
 
       const menuData = reactive({
         items,

@@ -5,9 +5,12 @@ module-type: library
 
 \*/
 module.exports = () => {
+  const opt = {
+    suppressTimestamp: true,
+  };
   if ($tw.wiki.getTiddlerText(`$:/state/notebook-sidebar`) == 'yes') {
-    $tw.wiki.setText(`$:/state/notebook-sidebar`, 'text', null, 'no');
+    $tw.wiki.setText(`$:/state/notebook-sidebar`, 'text', null, 'no', opt);
   } else {
-    $tw.wiki.setText(`$:/state/notebook-sidebar`, 'text', null, 'yes');
+    $tw.wiki.setText(`$:/state/notebook-sidebar`, 'text', null, 'yes', opt);
   }
 };
