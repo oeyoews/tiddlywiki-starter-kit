@@ -55,4 +55,4 @@ npm create neotw-app@latest
 > I recommend shallow cloning this project and deploying it manually on Vercel
 
 <!-- * cmp 添加 cmds -->
-<!-- * context-menu 测试onClose -->
+<!-- om-toggle-theme 添加自定义事件， 同其他插件发送消息 -->
