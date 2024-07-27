@@ -33,6 +33,7 @@ class ExampleWidget extends Widget {
     const { createApp } = window.Vue;
     const component = require('./app');
     const domNode = this.document.createElement('div');
+    // domNode.className = 'tc-adjust-top-of-scroll';
     const TiddlyWikiVue = require('./plugins/TiddlyWikiVue');
 
     try {
