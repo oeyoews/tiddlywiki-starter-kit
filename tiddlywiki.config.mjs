@@ -1,4 +1,5 @@
-/** @type import ('./types.d.mjs').ConfigOptions */
+// /** @type {import ('./types.d.mjs').ConfigOptions} */
+/** @type {import ('./types').ConfigOptions} */
 export default {
   name: 'tiddlywiki-starter-kit', // 配置项的名称
   description:
