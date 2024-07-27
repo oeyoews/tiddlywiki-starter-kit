@@ -23,6 +23,10 @@ const palettes = $tw.wiki.filterTiddlers(
   '[all[shadows+tiddlers]tag[$:/tags/Palette]]',
 );
 
+const recentTiddlers = $tw.wiki.filterTiddlers(
+  '[!is[system]days[-180]!<currentTiddler>!sort[modified]limit[8]]',
+);
+
 /**
  * @param {keyof import('./icons')} icon
  */
@@ -85,6 +89,14 @@ const app = () => {
           menubarNav.value = getNavigatorWidget();
         }
       };
+      const recentChildren = recentTiddlers
+        .filter((tiddler) => tiddler.length <= 35)
+        .map((tiddler) => ({
+          label: tiddler,
+          // maxWidth: '300',
+          icon: getIcon('file'),
+          onClick: () => goto.navigateTiddler(tiddler),
+        }));
 
       const themeChildren = themes.map((theme) => {
         const label = theme.split('/')[theme.split('/').length - 1];
@@ -185,13 +197,7 @@ const app = () => {
             {
               label: 'Open recent',
               icon: getIcon('history'),
-              children: [
-                {
-                  label: 'GettingStarted',
-                  icon: getIcon('file'),
-                  onClick: () => goto.navigateTiddler('GettingStarted'),
-                },
-              ],
+              children: recentChildren,
             },
             {
               label: 'Save',
@@ -394,15 +400,19 @@ const app = () => {
         return labelIndex;
       };
 
+      //#region MenuData
       const menuData = reactive({
         items,
         theme: isDarkMode ? 'dark' : '',
+        // maxWidth: '100px',
+        closeWhenScroll: false,
+        mouseScrol: false,
         // mini: true,
-        zIndex: 99999,
+        zIndex: 999,
         // https://github.com/imengyu/vue3-context-menu/issues/41 似乎对菜单栏无效
-        onClose: (e) => {
-          console.log(e, '999');
-        },
+        // onClose: (e) => {
+        //   console.log(e, '999');
+        // },
       });
 
       // 动态菜单
