@@ -302,6 +302,7 @@ const app = () => {
           children: [
             {
               label: 'Sidebar Position',
+              // TODO: reactive sidebar position
               onClick: toggleSidebarPosition,
               icon: getIcon('left'),
             },
