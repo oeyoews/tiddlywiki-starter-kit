@@ -168,6 +168,9 @@ const app = () => {
           //#region File
           label: 'File',
           icon: getIcon('files'),
+          onSubMenuOpen: () => {
+            console.log('open');
+          },
           /** @type {IMenuItem[]} */
           children: [
             {
@@ -276,9 +279,6 @@ const app = () => {
               },
               icon: getIcon(isDarkMode ? 'dark' : 'light'),
             },
-            // fontsize
-            // layout
-            // classic view
             {
               label: 'Command Palette',
               shortcut: 'Ctrl + P',
@@ -329,10 +329,6 @@ const app = () => {
               children: paletteChildren,
             },
           ],
-        },
-        {
-          label: 'Sidebar',
-          onClick: toggleSidebar,
         },
         //#region Help
         {
@@ -436,7 +432,19 @@ const app = () => {
         }, 200);
       };
 
-      return { menuData, menubarNav };
+      //#region data
+      return {
+        menuData,
+        menubarNav,
+        tiddlywiki_icon: icons.tiddlywiki,
+        menu_icon: icons.menu,
+        toggleSidebar,
+      };
+    },
+    provide() {
+      return {
+        // toggleSidebar,
+      };
     },
     mounted() {
       // 不能在这里获取

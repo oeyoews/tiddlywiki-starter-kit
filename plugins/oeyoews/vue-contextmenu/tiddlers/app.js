@@ -80,6 +80,9 @@ const app = (target, title, self) => {
           {
             label: t('menu.copy0'),
             icon: getIcon('copy'),
+            onSubMenuOpen: () => {
+              // console.log('open');
+            },
             children: [
               {
                 label: t('menu.copy'),

@@ -53,3 +53,6 @@ npm create neotw-app@latest
 [Fork](https://github.com/oeyoews/tiddlywiki-starter-kit/fork) this project, Go to vercel to deploy it manually
 
 > I recommend shallow cloning this project and deploying it manually on Vercel
+
+<!-- * cmp 添加 cmds -->
+<!-- * context-menu 测试onClose -->

@@ -24,7 +24,7 @@ class MenuBarWidget extends Widget {
 
     const vuelib = '$:/plugins/oeyoews/neotw-vue3/vue.global.prod.js';
 
-    // const { MenuBar } = require('vue-context-menu.min.js');
+    const Icon = require('./components/Icon.js');
 
     if (!window.Vue) {
       window.Vue = require(vuelib);
@@ -40,9 +40,7 @@ class MenuBarWidget extends Widget {
       /** @type {{ use: Function }} */
       const app = createApp(component());
       app.use(TiddlyWikiVue);
-      // app.use(ContextMenu);
-      // app.component('MenuBar', MenuBar);
-      // console.log(MenuBar);
+      app.component('Icon', Icon);
 
       app.config.errorHandler = (err) => {
         const text = `[Vue3](${app.version}): ` + err.message;
