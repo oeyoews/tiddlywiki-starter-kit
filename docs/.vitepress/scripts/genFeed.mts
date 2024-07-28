@@ -1,7 +1,7 @@
-import path from 'path';
-import { writeFileSync } from 'fs';
 import { Feed } from 'feed';
-import { createContentLoader, type SiteConfig } from 'vitepress';
+import { writeFileSync } from 'fs';
+import path from 'path';
+import { type SiteConfig, createContentLoader } from 'vitepress';
 
 const baseUrl = `https://tiddlywiki-starter-kit.oeyoews.top`;
 
@@ -34,6 +34,7 @@ export async function genFeed(config: SiteConfig) {
       id: `${baseUrl}${url}`,
       link: `${baseUrl}${url}`,
       description: excerpt,
+
       // content: html?.replaceAll('&ZeroWidthSpace;', ''),
       author: [
         {

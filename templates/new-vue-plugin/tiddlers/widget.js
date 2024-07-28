@@ -1,9 +1,9 @@
 /*\
-title: $:/plugins/{{ plugin_author }}/${pluginname}/widget.js
+title: $:/plugins/{{ plugin_author }}/{{ pluginname }}/widget.js
 type: application/javascript
 module-type: widget
 
-${pluginname} widget
+{{ pluginname }} widget
 
 \*/
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
@@ -61,5 +61,5 @@ class ExampleWidget extends Widget {
   }
 }
 
-/** @description ${pluginname} widget */
+/** @description {{ pluginname }} widget */
 exports['{{ widget_name }}'] = ExampleWidget;

@@ -1,9 +1,9 @@
 /*\
-title: $:/plugins/{{ plugin_author }}/${pluginname}/widget.js
+title: $:/plugins/{{ plugin_author }}/{{ pluginname }}/widget.js
 type: application/javascript
 module-type: widget
 
-${pluginname} widget
+{{ pluginname }} widget
 
 \*/
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
@@ -26,13 +26,13 @@ class ExampleWidget extends Widget {
 
     const btn = createElement('button', {
       text: 'Click me',
-      class: 'rounded p-1'
+      class: 'rounded p-1',
     });
 
     const domNode = createElement('div', {
       // text: 'example',
       // class: 'underline font-bold',
-      children: [btn]
+      children: [btn],
     });
 
     parent.insertBefore(domNode, nextSibling);
@@ -40,5 +40,5 @@ class ExampleWidget extends Widget {
   }
 }
 
-/** @description ${pluginname} widget */
+/** @description {{ pluginname }} widget */
 exports['{{ widget_name }}'] = ExampleWidget;

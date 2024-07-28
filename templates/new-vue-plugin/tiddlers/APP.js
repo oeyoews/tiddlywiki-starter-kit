@@ -1,5 +1,5 @@
 /*\
-title: $:/plugins/{{ plugin_author }}/${pluginname}/app.js
+title: $:/plugins/{{ plugin_author }}/{{ pluginname }}/app.js
 type: application/javascript
 module-type: library
 
@@ -8,7 +8,7 @@ module-type: library
 const { ref } = window.Vue;
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
-const pluginTitle = '$:/plugins/{{ plugin_author }}/${pluginname}';
+const pluginTitle = '$:/plugins/{{ plugin_author }}/{{ pluginname }}';
 
 const Version = require('./components/Version');
 

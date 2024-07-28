@@ -7,7 +7,7 @@
 			"fields": {
 				"title": {
 					"source": "filename",
-					"prefix": "$:/plugins/{{ plugin_author }}/${pluginname}/templates/"
+					"prefix": "$:/plugins/{{ plugin_author }}/{{ pluginname }}/templates/"
 				},
 				"hide-body": "yes"
 			}
@@ -19,7 +19,7 @@
 			"fields": {
 				"title": {
 					"source": "filename",
-					"prefix": "$:/plugins/{{ plugin_author }}/${pluginname}/plugins/"
+					"prefix": "$:/plugins/{{ plugin_author }}/{{ pluginname }}/plugins/"
 				},
 				"module-type": "library",
 				"type": "application/javascript"
@@ -32,7 +32,7 @@
 			"fields": {
 				"title": {
 					"source": "filename",
-					"prefix": "$:/plugins/{{ plugin_author }}/${pluginname}/components/"
+					"prefix": "$:/plugins/{{ plugin_author }}/{{ pluginname }}/components/"
 				},
 				"module-type": "library",
 				"type": "application/javascript"

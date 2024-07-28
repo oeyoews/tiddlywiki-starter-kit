@@ -298,6 +298,7 @@ const app = () => {
           ],
         },
         //#region Perference
+        // language
         {
           label: 'Perference',
           /** @type {IMenuItem[]} */
