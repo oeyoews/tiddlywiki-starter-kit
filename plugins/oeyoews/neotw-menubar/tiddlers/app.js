@@ -127,11 +127,11 @@ const app = () => {
 
       const paletteChildren = palettes.map((palette) => {
         const label = palette.split('/')[palette.split('/').length - 1];
-        return {
+        return /** @type {IMenuItem} */ ({
           label,
+          // maxWidth: '300',
           // startupaction 会有影响
           icon: palette === $tw.wiki.getTiddlerText('$:/palette'),
-          // icon: getIcon('art'),
           onClick: () => {
             $tw.wiki.setText('$:/palette', 'text', null, palette);
             menuData.theme = getDarkMode() ? 'dark' : 'light';
@@ -151,7 +151,7 @@ const app = () => {
               }
             });
           },
-        };
+        });
       });
 
       /**
@@ -160,6 +160,8 @@ const app = () => {
        * @property {string} icon
        * @property {() => void} onClick
        * @property {string} [shortcut]
+       * @property {string|number} [minWidth]
+       * @property {string|number} [maxWidth]
        */
 
       /** @type {IMenuItem[]} */
