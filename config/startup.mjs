@@ -15,7 +15,7 @@ export default function startup(option) {
     'port=' + port,
     'root-tiddler=$:/core/save/all-external-js',
     'use-browser-cache=yes',
-    'anon-username=' + base.username,
+    'anon-username=' + base.username, // nodejs $:/status/UserName
   ];
   if (base.auth && base.username && base.password) {
     args.push(`username=${base.username}`);

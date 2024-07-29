@@ -56,4 +56,3 @@ npm create neotw-app@latest
 
 <!-- * cmp 添加 cmds -->
 <!-- om-toggle-theme 添加自定义事件， 同其他插件发送消息 -->
-<!-- status/username not work -->
