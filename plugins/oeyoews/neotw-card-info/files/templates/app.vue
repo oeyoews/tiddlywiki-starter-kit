@@ -5,7 +5,7 @@
       popper-style="box-shadow: rgb(14 18 22 / 35%) 0px 10px 38px -10px, rgb(14 18 22 / 20%) 0px 10px 20px -15px; padding: 20px;">
       <!-- title -->
       <template #reference>
-        <a @click.prevent="goto">
+        <a @click.prevent="goto" class="hover:cursor-pointer">
           {{title}}
         </a>
       </template>
@@ -17,7 +17,9 @@
               {{title}}
             </p>
             <p class="" style="margin: 0; font-size: 14px; color: var(--el-color-info)">
-              <el-avatar :size="20" src="https://github.com/oeyoews.png?size=16" /> @oeyoews
+              <!-- <el-avatar :size="20" src="https://github.com/oeyoews.png?size=16" /> -->
+              {{username}}
+              <!-- {{tiddler?.created}} -->
             </p>
           </div>
 

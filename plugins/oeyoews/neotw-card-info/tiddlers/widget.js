@@ -8,7 +8,7 @@ neotw-card-info widget
 \*/
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 
-class ExampleWidget extends Widget {
+class CardInfoWidget extends Widget {
   constructor(parseTreeNode, options) {
     super(parseTreeNode, options);
   }
@@ -22,7 +22,7 @@ class ExampleWidget extends Widget {
     const ssr = this.document.isTiddlyWikiFakeDom;
     if (ssr) return;
 
-    const vuelib = '$:/plugins/oeyoews/neotw-vue3/vue.global.prod.js';
+    const vuelib = '../neotw-vue3/vue.global.prod.js';
 
     if (!window.Vue) {
       window.Vue = require(vuelib);
@@ -67,4 +67,4 @@ class ExampleWidget extends Widget {
 }
 
 /** @description neotw-card-info widget */
-exports['widget-v2hvt1lf'] = ExampleWidget;
+exports['neotw-card-info'] = CardInfoWidget;

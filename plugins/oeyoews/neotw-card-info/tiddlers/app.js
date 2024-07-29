@@ -7,7 +7,7 @@ module-type: library
 
 const { ref } = window.Vue;
 
-const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
+const getTemplate = require('../neotw-vue3/getTemplate.js');
 const pluginTitle = '$:/plugins/oeyoews/neotw-card-info';
 
 const Version = require('./components/Version');
@@ -23,10 +23,24 @@ const app = (title) => {
       return {
         tiddler: this.getTiddler(),
         title,
+        username: this.getUserName(),
       };
     },
+    computed: {},
 
+    watch: {
+      // created() {},
+    },
+
+    mounted() {},
     methods: {
+      getCreatedTime() {
+        console.log(this.tiddler);
+        return this.tiddler.fields.created;
+      },
+      getUserName() {
+        return $tw.wiki.getTiddlerText('$:/status/UserName');
+      },
       getTiddler() {
         return $tw.wiki.getTiddler(title);
       },

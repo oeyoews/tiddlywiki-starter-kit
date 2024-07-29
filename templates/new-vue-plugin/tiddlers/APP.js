@@ -7,7 +7,8 @@ module-type: library
 
 const { ref } = window.Vue;
 
-const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
+// 等价于 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
+const getTemplate = require('../neotw-vue3/getTemplate.js');
 const pluginTitle = '$:/plugins/{{ plugin_author }}/{{ pluginname }}';
 
 const Version = require('./components/Version');
@@ -18,8 +19,11 @@ const app = () => {
       Version, // 示例组件， 可删除
     },
     template: getTemplate(`${pluginTitle}/templates/app.vue`),
-    setup() {
-      return {};
+    // setup() {},
+    data() {},
+    // created() {},
+    mounted() {
+      console.log('App mounted!');
     },
 
     methods: {},
