@@ -4,7 +4,8 @@
     "target": "ESNext",
     "skipLibCheck": true,
     "allowImportingTsExtensions": true
-    // "types": ["tw5-typed", ]
+    // "typeRoots": ["./types.d"]
+    // "types": [],
   },
   "exclude": [
     "node_modules/",
