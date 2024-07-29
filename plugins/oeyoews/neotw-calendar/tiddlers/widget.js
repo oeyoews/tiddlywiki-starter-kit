@@ -1,9 +1,9 @@
 /*\
-title: $:/plugins/{{ plugin_author }}/{{ pluginname }}/widget.js
+title: $:/plugins/oeyoews/neotw-calendar/widget.js
 type: application/javascript
 module-type: widget
 
-{{ pluginname }} widget
+neotw-calendar widget
 
 \*/
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
@@ -32,11 +32,13 @@ class ExampleWidget extends Widget {
     const component = require('./app');
     const domNode = this.document.createElement('div');
     const TiddlyWikiVue = require('./plugins/TiddlyWikiVue');
+    const VueCal = require('./lib/vue-cal.js');
 
     try {
       /** @type {{ use: Function, component: (string, Object) }} */
       const app = createApp(component());
       app.use(TiddlyWikiVue);
+      app.component('vue-cal', VueCal);
 
       app.config.errorHandler = (err) => {
         const text = `[Vue3](${app.version}): ` + err.message;
@@ -61,5 +63,5 @@ class ExampleWidget extends Widget {
   }
 }
 
-/** @description {{ pluginname }} widget */
-exports['{{ widget_name }}'] = ExampleWidget;
+/** @description neotw-calendar widget */
+exports['widget-6lh0cux9'] = ExampleWidget;
