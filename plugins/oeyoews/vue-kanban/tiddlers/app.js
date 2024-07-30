@@ -9,57 +9,25 @@ const { reactive, ref } = window.Vue;
 
 const getTemplate = require('../neotw-vue3/getTemplate.js');
 const List = require('./components/List.js');
+const todoData = require('./todo');
 
 const app = () => {
   const component = {
     components: { List },
     setup() {
+      // 开发模式调试: log
       const devMode = ref(false);
-      const state = ref({
-        nostatus: [1, 2, 3, 4, 5, 6, 7, 8, 9],
-        todo: '',
-        inprogress: '',
-        done: '',
-      });
-      const todo = ref([
-        {
-          name: '黑暗模式主题适配',
-          id: 1,
-        },
-        {
-          name: '做成一个单独布局',
-          id: 2,
-        },
-        {
-          name: '数据存储到本地Tiddler',
-          id: '3',
-        },
-        {
-          name: '样式优化',
-          id: '4',
-        },
-        {
-          name: '支持条目跳转',
-          id: 5,
-        },
-        {
-          name: '支持检测所有todo标签',
-          id: 6,
-        },
-        {
-          name: '支持删除',
-          id: 7,
-        },
-        {
-          name: '支持输入框添加',
-          id: 8,
-        },
-        { name: 'disabled 当列表为空的时候', id: 9 },
-      ]);
+      // 事项： 代办
+      const todo = ref(todoData);
 
+      // 事项： 进行中
       const inprogress = ref([]);
+      // 事项： 已完成
       const done = ref([]);
+
+      // 弹窗状态
       const dialogFormVisible = ref(false);
+      // 新增数据表单
       const form = reactive({
         name: '',
         id: '',
@@ -70,7 +38,6 @@ const app = () => {
       return {
         currentEditItemType,
         form,
-        state,
         devMode,
         dialogFormVisible,
         todo,
@@ -105,9 +72,12 @@ const app = () => {
           return;
         }
         const dataMap = {
-          todo: this.todo,
-          inprogress: this.inprogress,
-          done: this.done,
+          // todo: this.todo,
+          // inprogress: this.inprogress,
+          // done: this.done,
+          todo: this.allData[0].items,
+          inprogress: this.allData[1].items,
+          done: this.allData[2].items,
         };
         this.dialogFormVisible = false;
         if (this.form.id) {

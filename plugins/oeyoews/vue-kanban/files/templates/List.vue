@@ -20,8 +20,8 @@
 			class="flex flex-col py-2 grow relative min-h-[500px] max-h-[calc(100vh-50px)] mb-4 overflow-y-auto list1 mx-4">
 			<template v-if="data.length">
 				<div v-for="(item) in data" :key="item.id"
-					class="relative rounded-md shadow-sm overflow-visible mb-2 shrink-0 flex-col bg-white  cursor-move"
-					@dblclick="$emit('editItem', item, type)">
+					class="relative rounded-md shadow-sm overflow-visible mb-2 shrink-0 flex-col cursor-move"
+					:class="[ colorful ? colors[type] : 'bg-white' ]" @dblclick="$emit('editItem', item, type)">
 					<div class="pt-2 pb-3 rounded-sm px-3 ">
 						<div class="py-4 line-clamp-2" v-html="item.name">
 						</div>

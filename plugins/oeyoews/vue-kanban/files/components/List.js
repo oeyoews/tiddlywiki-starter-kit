@@ -10,6 +10,13 @@ module.exports = {
   props: ['data', 'type'],
   data() {
     return {
+      // 是否给开篇添加背景颜色
+      colorful: false,
+      colors: {
+        todo: 'bg-orange-200',
+        inprogress: 'bg-lime-200',
+        done: 'bg-blue-200',
+      },
       emptyTips: {
         todo: '暂无代办事项',
         inprogress: '代办事项已全部完成',
