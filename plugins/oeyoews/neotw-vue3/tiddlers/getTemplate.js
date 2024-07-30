@@ -13,6 +13,7 @@ module-type: library
  */
 const getTemplate = (file) => {
   const ext = '.vue';
+
   const pluginPrefix = '$:/plugins/';
 
   if (!file.endsWith(ext)) return;
@@ -38,3 +39,8 @@ const getTemplate = (file) => {
 };
 
 module.exports = getTemplate;
+
+function createPluginTemplate(basePlugin = '') {
+  const filepath = ['$:/plugins', basePlugin, 'templates'].join('/');
+  return (file) => getTemplate(filepath + '/' + file);
+}

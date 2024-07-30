@@ -31,9 +31,9 @@ const oeyoewsPlugins = [
   'vue-i18n',
   'vue-contextmenu', // right-contextmenu
   'vue-context-menu', // lib
-  // 'vue-kanban',
+  'vue-draggable-plus', // 拖拽插件 lib
+  'vue-kanban',
   // 'vue-tabs',
-  // 'vue-draggable-plus', // 拖拽插件
   // 'vue-pomodoro',
   // 'neotw-vue-todo',
   // 'notivue',
