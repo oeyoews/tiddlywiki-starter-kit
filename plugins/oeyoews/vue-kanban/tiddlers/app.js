@@ -23,20 +23,16 @@ const app = () => {
       });
       const list1 = ref([
         {
-          name: 'Joao',
+          name: '黑暗模式主题适配',
           id: '1',
         },
         {
-          name: 'Jean',
+          name: '做成一个单独布局',
           id: '2',
         },
         {
-          name: 'Johanna',
+          name: '数据存储到本地Tiddler',
           id: '3',
-        },
-        {
-          name: 'Juan',
-          id: '4',
         },
       ]);
       const todo = ref([]);
@@ -47,12 +43,7 @@ const app = () => {
           id: `${item.id}-2`,
         })),
       );
-      const done = ref(
-        list1.value.map((item) => ({
-          name: `${item.name}-3`,
-          id: `${item.id}-3`,
-        })),
-      );
+      const done = ref([]);
 
       return {
         state,
