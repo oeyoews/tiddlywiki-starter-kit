@@ -5,7 +5,7 @@ module-type: library
 
 \*/
 
-const { ref } = window.Vue;
+const { reactive, ref } = window.Vue;
 
 const getTemplate = require('../neotw-vue3/getTemplate.js');
 const List = require('./components/List.js');
@@ -53,6 +53,8 @@ const app = () => {
         {
           name: '支持输入框添加',
         },
+        { name: 'disabled 当列表为空的时候' },
+        { name: 'disabled 当列表为空的时候' },
       ]);
       const todo = ref([]);
 
@@ -63,10 +65,20 @@ const app = () => {
         })),
       );
       const done = ref([]);
+      const dialogFormVisible = ref(false);
+      const form = reactive({
+        name: '',
+        id: '',
+      });
 
       return {
+        form,
         state,
         devMode,
+        dialogFormVisible,
+        todo,
+        inprogress,
+        done,
         allData: [
           {
             name: 'todo',
@@ -83,11 +95,24 @@ const app = () => {
         ],
       };
     },
-    mounted() {
-      console.log(this.state, this.allData);
-    },
+    mounted() {},
 
     methods: {
+      addNewItem() {
+        if (!this.form.name.trim()) {
+          return;
+        }
+        this.dialogFormVisible = false;
+        this.todo.push({
+          name: this.form.name,
+          id: new Date().getTime(),
+        });
+        this.form.name = '';
+      },
+      showDialog(type) {
+        if (type !== 'todo') return;
+        this.dialogFormVisible = true;
+      },
       onUpdate() {
         console.log('update');
       },

@@ -16,17 +16,18 @@ module.exports = {
         done: '所有事项已完成',
       },
       tags: {
-        todo: 'info',
+        todo: 'warning',
         inprogress: 'success',
         done: 'primary',
       },
       icons,
       upperedType: '',
+      isTODO: false,
     };
   },
   mounted() {
-    console.log(this.data);
     this.upperFirstLetter(this.type);
+    this.isTODO = this.type === 'todo';
   },
   methods: {
     upperFirstLetter(str) {
