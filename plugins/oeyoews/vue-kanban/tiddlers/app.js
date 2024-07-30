@@ -50,6 +50,9 @@ const app = () => {
           name: '支持删除',
           id: 7,
         },
+        {
+          name: '支持输入框添加',
+        },
       ]);
       const todo = ref([]);
 

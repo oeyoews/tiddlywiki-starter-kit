@@ -1,12 +1,6 @@
 title: $:/plugins/oeyoews/vue-kanban/readme
 description: vue-kanban
 
+> You must set [[$:/config/DragAndDrop/Enable]] to no to enable drag and drop for vue-kanbane plugin
+
 <$vue-kanban />
-
-<!-- plugin template readme -->
-
-<!-- !! Motivation -->
-
-<!-- your plugin motivation, or why you write this plugin -->
-
-<!-- $:/config/DragAndDrop/Enable -->
