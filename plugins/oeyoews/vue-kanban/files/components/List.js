@@ -38,7 +38,9 @@ module.exports = {
   },
   methods: {
     upperFirstLetter(str) {
-      this.upperedType = str.slice(0, 1).toUpperCase() + str.slice(1);
+      console.log(str);
+      if (!str || typeof str !== 'string') return;
+      this.upperedType = str?.slice(0, 1).toUpperCase() + str.slice(1);
     },
   },
   template: getTemplate('List.vue'),

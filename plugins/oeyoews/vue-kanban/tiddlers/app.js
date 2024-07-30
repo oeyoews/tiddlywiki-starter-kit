@@ -16,7 +16,7 @@ const app = () => {
     components: { List },
     setup() {
       // 开发模式调试: log
-      const devMode = ref(false);
+      const devMode = ref(true);
       // 事项： 代办
       const todo = ref(todoData);
 
@@ -62,22 +62,25 @@ const app = () => {
     mounted() {},
 
     methods: {
+      log(msg) {
+        if (this.devMode) {
+          console.log(msg);
+        }
+      },
       addNewItem() {
         const type = this.currentEditItemType;
         if (!type) {
           console.log('未知类型');
           return;
         }
+        this.log(this.form);
         if (!this.form.name.trim()) {
           return;
         }
         const dataMap = {
-          // todo: this.todo,
-          // inprogress: this.inprogress,
-          // done: this.done,
-          todo: this.allData[0].items,
-          inprogress: this.allData[1].items,
-          done: this.allData[2].items,
+          todo: this.todo,
+          inprogress: this.inprogress,
+          done: this.done,
         };
         this.dialogFormVisible = false;
         if (this.form.id) {
@@ -91,7 +94,7 @@ const app = () => {
           dataMap[type][itemIndex].name = this.form.name;
         } else {
           // 新增item
-          dataMap[type].push({
+          dataMap[type].unshift({
             name: this.form.name,
             id: new Date().getTime(),
           });
@@ -122,14 +125,17 @@ const app = () => {
         this.emptyForm();
         this.dialogFormVisible = false;
       },
-      onUpdate() {
-        console.log('update');
+      onUpdate(e) {
+        console.log('update', e);
       },
-      onAdd() {
-        console.log('add');
+      onAdd(e) {
+        console.log('add', e, this.allData[0].items);
       },
       onRemove() {
         console.log('remove');
+      },
+      toggleDevMode() {
+        this.devMode = !this.devMode;
       },
     },
 

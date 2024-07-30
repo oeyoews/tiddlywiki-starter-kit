@@ -15,9 +15,9 @@
 	<div v-if="devMode"> {{data}} </div>
 	<!-- items -->
 	<VueDraggable v-model="data" animation="150" ghostClass="ghost" group="people" @update="$emit('onUpdate')"
-		@add="$emit('onAdd')" target=".list1" @remove="$emit('onRemove')">
-		<div
-			class="flex flex-col py-2 grow relative min-h-[500px] max-h-[calc(100vh-50px)] mb-4 overflow-y-auto list1 mx-4">
+		@add="$emit('onAdd')" :target="`.${type}`" @remove="$emit('onRemove')">
+		<div class="flex flex-col py-2 grow relative min-h-[500px] max-h-[calc(100vh-50px)] mb-4 overflow-y-auto list1 mx-4"
+			:class="type">
 			<template v-if="data.length">
 				<div v-for="(item) in data" :key="item.id"
 					class="relative rounded-md shadow-sm overflow-visible mb-2 shrink-0 flex-col cursor-move"
@@ -29,7 +29,7 @@
 				</div>
 			</template>
 			<!-- TODO: 添加图片， 按钮 -->
-			<div class="flex items-start justify-center my-auto list1" v-else>
+			<div class="flex items-start justify-center my-auto" :class="type" v-else>
 				<el-empty :description="emptyTips[type]"></el-empty>
 			</div>
 		</div>

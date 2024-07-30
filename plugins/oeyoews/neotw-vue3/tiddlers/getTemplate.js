@@ -35,12 +35,8 @@ const getTemplate = (file) => {
     template = template.slice(10, -11);
   }
 
+  // 支持直接写html, 无需额外的template标签
   return template;
 };
 
 module.exports = getTemplate;
-
-function createPluginTemplate(basePlugin = '') {
-  const filepath = ['$:/plugins', basePlugin, 'templates'].join('/');
-  return (file) => getTemplate(filepath + '/' + file);
-}
