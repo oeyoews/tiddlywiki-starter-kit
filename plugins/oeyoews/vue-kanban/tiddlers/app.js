@@ -44,6 +44,11 @@ const app = () => {
         },
         {
           name: '支持检测所有todo标签',
+          id: 6,
+        },
+        {
+          name: '支持删除',
+          id: 7,
         },
       ]);
       const todo = ref([]);

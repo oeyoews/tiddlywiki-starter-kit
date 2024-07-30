@@ -16,8 +16,8 @@
 			<template v-if="data.length">
 				<div v-for="({name, id}) in data" :key="id"
 					class="relative rounded-md shadow-sm overflow-visible mb-2 shrink-0 flex-col bg-white  cursor-move">
-					<div class="pt-2 pb-3 rounded-sm px-4 ">
-						<div class="p-4">
+					<div class="pt-2 pb-3 rounded-sm px-3 ">
+						<div class="py-4">
 							{{name}}
 						</div>
 					</div>
