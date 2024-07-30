@@ -34,6 +34,17 @@ const app = () => {
           name: '数据存储到本地Tiddler',
           id: '3',
         },
+        {
+          name: '样式优化',
+          id: '4',
+        },
+        {
+          name: '支持条目跳转',
+          id: 5,
+        },
+        {
+          name: '支持检测所有todo标签',
+        },
       ]);
       const todo = ref([]);
 
