@@ -194,8 +194,8 @@ const app = () => {
       onAdd(e) {
         console.log('add', e);
       },
-      onRemove() {
-        console.log('remove');
+      onRemove(e) {
+        console.log('remove', e);
       },
       toggleDevMode() {
         this.devMode = !this.devMode;

@@ -20,7 +20,8 @@
 		</div>
 		<!-- draggable items -->
 		<VueDraggable v-model="data" animation="150" ghostClass="kanban-ghost" group="kanban" :target="`.${type}`"
-			@update="$emit('onUpdate')" @add="$emit('onAdd')" @remove="$emit('onRemove')" :forceFallback>
+			@update="$emit('onUpdate', $event)" @add="$emit('onAdd', $event)" @remove="$emit('onRemove', $event)"
+			:forceFallback>
 			<div class="flex flex-col py-2 grow relative min-h-[500px] max-h-[calc(100vh-50px)] mb-4 overflow-y-auto mx-4"
 				:class="type">
 				<template v-if="data.length">
