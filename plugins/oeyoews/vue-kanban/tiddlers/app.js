@@ -70,20 +70,20 @@ const app = () => {
           id: 8,
         },
       ];
+      const realData = $tw.wiki.getTiddlerData('kanban') || [];
 
       return {
         devMode: false,
         dialogFormVisible: false,
-        todo: todoData,
-        inprogress,
-        done,
+        // todo: todoData,
+        // inprogress,
+        // done,
         // 这里的数据一定要是响应式的
-        allData: [
-          { name: 'todo', items: todoData },
-          { name: 'inprogress', items: inprogress },
-          { name: 'done', items: done },
-          // { name: 'trash', items: this.trash }, // if is layout show it, and change grid cols 4
-        ],
+        allData: realData,
+        // { name: 'todo', items: todoData },
+        // { name: 'inprogress', items: inprogress },
+        // { name: 'done', items: done },
+        // { name: 'trash', items: this.trash }, // if is layout show it, and change grid cols 4
         trash: [],
         form: {
           name: '',
@@ -96,11 +96,18 @@ const app = () => {
 
     watch: {
       todo(newV, onlV) {
-        console.log(newV, onlV);
+        this.log(newV, onlV);
       },
-      allData(newV, oldV) {},
+      inprogress(newV, onlV) {
+        this.log(newV, onlV);
+      },
+      done(newV, onlV) {
+        this.log(newV, onlV);
+      },
+      allData(newV, oldV) {
+        console.log('allData');
+      },
     },
-    mounted() {},
 
     methods: {
       // hover drag to trash
@@ -121,6 +128,7 @@ const app = () => {
               data.findIndex((i) => i.id === item.id),
               1,
             );
+            this.saveData();
             ElMessage({
               type: 'success',
               message: 'Delete completed',
@@ -167,6 +175,7 @@ const app = () => {
           });
         }
         this.emptyForm();
+        this.saveData();
       },
       emptyForm() {
         this.form.name = '';
@@ -176,6 +185,7 @@ const app = () => {
         this.form.name = item.name;
         this.form.id = item.id;
         this.showDialog(type);
+        this.saveData();
       },
       showDialog(type) {
         this.currentEditItemType = type;
@@ -192,14 +202,23 @@ const app = () => {
         this.emptyForm();
         this.dialogFormVisible = false;
       },
+      saveData() {
+        // console.log(this.allData);
+        $tw.wiki.setTiddlerData('kanban', this.allData, null, {
+          suppressTimestamp: true,
+        });
+      },
       onUpdate(e) {
         // console.log('update', e);
+        this.saveData();
       },
       onAdd(e) {
-        // console.log('add', e);
+        this.log('add', e);
+        this.saveData();
       },
       onRemove(e) {
-        // console.log('remove', e);
+        this.log('remove', e);
+        this.saveData();
       },
       toggleDevMode() {
         this.devMode = !this.devMode;
