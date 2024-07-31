@@ -104,6 +104,10 @@ const app = () => {
     },
 
     methods: {
+      // hover drag to trash
+      deleteItem(item, type) {
+        console.log(item, type);
+      },
       log(msg) {
         if (!this.devMode) return;
         console.log(msg);

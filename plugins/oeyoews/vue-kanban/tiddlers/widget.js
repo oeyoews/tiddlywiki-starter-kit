@@ -35,9 +35,7 @@ class KanbanWidget extends Widget {
     const ElementPlus = require('element-plus.min.js');
 
     try {
-      console.log('开始了');
       const app = createApp(component());
-
       app.use(Draggable).use(ElementPlus);
 
       app.config.errorHandler = (err) => {
