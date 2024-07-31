@@ -1,22 +1,18 @@
 <template>
   <!-- https://github.com/Alfred-Skyblue/vue-draggable-plus/issues/118 -->
-  <div hidden>
-    {{allData[0].items}}
-    <hr>
-    {{allData[1].items}}
-    <hr>
-    {{allData[2].items}}
+  <div hidden> {{allData[0].items}}
+    <hr> {{allData[1].items}}
+    <hr> {{allData[2].items}}
   </div>
   <div
     class="relative min-h-0 overflow-x-auto gap-2 select-none not-prose ~bg-[#efefef] grid grid-cols-1 grid-rows-1 md:grid-cols-3 m-4">
-    <template v-for="list in allData" :key="list.name">
-      <!-- @onUpdate=" onUpdate" @onAdd="onAdd" @onRemove="onRemove -->
-      <List @deleteItem="deleteItem" @editItem="editItem" @show="showDialog" :data="list.items" :type="list.name" />
-    </template>
+    <!-- @onUpdate=" onUpdate" @onAdd="onAdd" @onRemove="onRemove -->
+    <List @deleteItem="deleteItem" @editItem="editItem" @showDialog="showDialog" :data="list.items" :type="list.name"
+      v-for="list in allData" :key="list.name" />
   </div>
 
-  <!-- dialog -->
-  <el-dialog v-model=" dialogFormVisible" title="Add items" width="500">
+  <!-- 编辑 item 弹窗 -->
+  <el-dialog v-model="dialogFormVisible" title="Add items" width="500">
     <el-form :model="form" @submit.prevent="addNewItem">
       <el-form-item label="" label-width="" props='name'>
         <el-input v-model="form.name" autocomplete="off" placeholder='Input Something ...' ref="inputRef" />

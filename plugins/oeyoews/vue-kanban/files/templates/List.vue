@@ -9,7 +9,7 @@
 		</el-badge>
 		<div class="ml-auto">
 			<!-- NOTE: emit 自定义事件不要和vue-draggable 冲突 add update remove -->
-			<el-button type="plain" @click="$emit('show', type)" size='small' v-if="isTODO">add</el-button>
+			<el-button type="plain" @click="$emit('showDialog', type)" size='small' v-if="isTODO">add</el-button>
 		</div>
 	</div>
 	<!-- items -->
@@ -18,9 +18,9 @@
 		<div class="absolute bottom-0 my-auto w-full" v-if="!data.length">
 			<el-empty :description="emptyTips[type]"></el-empty>
 		</div>
+		<!-- @update="$emit('onUpdate', $event)" @add="$emit('onAdd', $event)" @remove="$emit('onRemove', $event)" -->
 		<!-- draggable items -->
 		<VueDraggable v-model="data" animation="150" ghostClass="kanban-ghost" group="kanban" :target="`.${type}`"
-			@update="$emit('onUpdate', $event)" @add="$emit('onAdd', $event)" @remove="$emit('onRemove', $event)"
 			:forceFallback>
 			<div class="flex flex-col py-2 grow relative min-h-[500px] max-h-[calc(100vh-50px)] mb-4 overflow-y-auto mx-4"
 				:class="type">
