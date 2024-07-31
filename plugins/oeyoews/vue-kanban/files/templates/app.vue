@@ -21,8 +21,6 @@
     <template #footer>
       <div class="dialog-footer">
         <el-button @click="cancelDialog">Cancel</el-button>
-        <!-- // NOTE: IOS 不支持form提交。  -->
-        <!-- // TODO: 输入框粘贴事件会导致form 提交无法触发 -->
         <el-button type="primary" @click="addNewItem"> Confirm </el-button>
       </div>
     </template>
