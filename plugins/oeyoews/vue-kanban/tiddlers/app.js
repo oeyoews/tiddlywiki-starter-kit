@@ -74,6 +74,7 @@ const app = () => {
             id: 8,
           },
         ],
+        trash: [],
         form: {
           name: '',
           id: '',
@@ -89,6 +90,7 @@ const app = () => {
           { name: 'todo', items: this.todo },
           { name: 'inprogress', items: this.inprogress },
           { name: 'done', items: this.done },
+          // { name: 'trash', items: this.trash }, // if is layout show it, and change grid cols 4
         ];
       },
     },

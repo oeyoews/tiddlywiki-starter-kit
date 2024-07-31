@@ -18,10 +18,10 @@
 		<div class="absolute bottom-0 my-auto w-full" v-if="!data.length">
 			<el-empty :description="emptyTips[type]"></el-empty>
 		</div>
-		<!-- @update="$emit('onUpdate', $event)" @add="$emit('onAdd', $event)" @remove="$emit('onRemove', $event)" -->
 		<!-- :targetd="`.${type}`" -->
 		<!-- draggable items -->
 		<VueDraggable v-model="data" animation="150" ghostClass="kanban-ghost" group="kanban" :forceFallback
+			@update="$emit('onUpdate', $event)" @add="$emit('onAdd', $event)" @remove="$emit('onRemove', $event)"
 			class="flex flex-col grow h-[calc(100vh-100px)] mb-4 overflow-y-auto mx-4" :class="type">
 			<div v-for="(item) in data" :key="`${type}-${item.id}`"
 				class="relative rounded-md shadow-sm overflow-visible mb-2 shrink-0 flex-col cursor-move"
