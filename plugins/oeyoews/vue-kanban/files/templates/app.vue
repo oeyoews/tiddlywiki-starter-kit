@@ -1,6 +1,6 @@
 <template>
   <!-- https://github.com/Alfred-Skyblue/vue-draggable-plus/issues/118 -->
-  <div hidden> {{allData[0].items}}
+  <div hiddend> {{allData[0].items}}
     <hr> {{allData[1].items}}
     <hr> {{allData[2].items}}
   </div>

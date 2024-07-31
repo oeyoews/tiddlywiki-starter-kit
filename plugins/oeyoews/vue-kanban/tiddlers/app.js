@@ -77,6 +77,7 @@ const app = () => {
         todo: todoData,
         inprogress,
         done,
+        // 这里的数据一定要是响应式的
         allData: [
           { name: 'todo', items: todoData },
           { name: 'inprogress', items: inprogress },
@@ -94,12 +95,12 @@ const app = () => {
     },
 
     watch: {
-      todo() {},
+      todo(newV, onlV) {
+        console.log(newV, onlV);
+      },
       allData(newV, oldV) {},
     },
-    mounted() {
-      // this.log('mounted');
-    },
+    mounted() {},
 
     methods: {
       // hover drag to trash
@@ -114,7 +115,12 @@ const app = () => {
           },
         )
           .then(() => {
-            this[type] = this[type].filter((i) => i.id !== item.id);
+            const dataIndex = this.allData.findIndex((i) => i.name === type);
+            const data = this.allData[dataIndex].items;
+            data.splice(
+              data.findIndex((i) => i.id === item.id),
+              1,
+            );
             ElMessage({
               type: 'success',
               message: 'Delete completed',
@@ -132,7 +138,6 @@ const app = () => {
         console.log(msg);
       },
       addNewItem() {
-        debugger;
         const type = this.currentEditItemType;
         if (!type) {
           console.log('未知类型');
@@ -143,18 +148,20 @@ const app = () => {
           return;
         }
         this.dialogFormVisible = false;
+        const dataIndex = this.allData.findIndex((i) => i.name === type);
+        const data = this.allData[dataIndex].items;
         if (this.form.id) {
           // 更新item
-          const itemIndex = this[type].findIndex((item) => {
+          const itemIndex = data.findIndex((item) => {
             return item.id === this.form.id;
           });
           if (itemIndex === -1) {
             return;
           }
-          this[type][itemIndex].name = this.form.name;
+          data[itemIndex].name = this.form.name;
         } else {
           // 新增item
-          this[type].unshift({
+          data.unshift({
             name: this.form.name,
             id: new Date().getTime(),
           });
