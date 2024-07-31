@@ -12,7 +12,7 @@
   </div>
 
   <!-- 编辑 item 弹窗 -->
-  <el-dialog v-model="dialogFormVisible" title="Add items" width="500">
+  <el-dialog v-model="dialogFormVisible" title="Add items" width="50%">
     <el-form :model="form" @submit.prevent="addNewItem">
       <el-form-item label="" label-width="" props='name'>
         <el-input v-model="form.name" autocomplete="off" placeholder='Input Something ...' ref="inputRef" />
@@ -21,7 +21,9 @@
     <template #footer>
       <div class="dialog-footer">
         <el-button @click="cancelDialog">Cancel</el-button>
-        <el-button type="primary"> Confirm </el-button>
+        <!-- // NOTE: IOS 不支持form提交。  -->
+        <!-- // TODO: 输入框粘贴事件会导致form 提交无法触发 -->
+        <el-button type="primary" @click="addNewItem"> Confirm </el-button>
       </div>
     </template>
   </el-dialog>

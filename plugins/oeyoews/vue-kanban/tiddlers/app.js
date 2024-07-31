@@ -136,6 +136,7 @@ const app = () => {
         console.log(msg);
       },
       addNewItem() {
+        debugger;
         const type = this.currentEditItemType;
         if (!type) {
           console.log('未知类型');
