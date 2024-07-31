@@ -1,6 +1,8 @@
 title: $:/plugins/oeyoews/vue-kanban/readme
 description: vue-kanban
 
-> You must set [[$:/config/DragAndDrop/Enable]] to no to enable drag and drop for vue-kanbane plugin
+> 为了更好的拖拽体验，建议设置 [[$:/config/DragAndDrop/Enable]] 为 no.
+
+<!-- > 如果 tiddlywiki 开启了全局拖拽(tw 默认启用， 建议关闭， 因为 forcefallback 的效果不够流畅）， 就默认启用forcefallback -->
 
 <$vue-kanban />

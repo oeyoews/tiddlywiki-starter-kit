@@ -11,28 +11,29 @@
 			<el-button type="plain" @click="$emit('show', type)" size='small' v-if="isTODO">add</el-button>
 		</div>
 	</div>
-	<!-- devmode -->
-	<div v-if="devMode"> {{data}} </div>
 	<!-- items -->
-	<VueDraggable v-model="data" animation="150" ghostClass="ghost" group="people" @update="$emit('onUpdate')"
-		@add="$emit('onAdd')" :target="`.${type}`" @remove="$emit('onRemove')">
-		<div class="flex flex-col py-2 grow relative min-h-[500px] max-h-[calc(100vh-50px)] mb-4 overflow-y-auto list1 mx-4"
-			:class="type">
-			<template v-if="data.length">
-				<div v-for="(item) in data" :key="`${type}-${item.id}`"
-					class=" relative rounded-md shadow-sm overflow-visible mb-2 shrink-0 flex-col cursor-move"
-					:class="[ colorful ? colors[type] : 'bg-white' ]" @dblclick="$emit('editItem', item, type)">
-					<div class="pt-2 pb-3 rounded-sm px-3 ">
-						<div class="py-4 line-clamp-2" v-html="item.name">
+
+	<div class="relative">
+		<div class="absolute bottom-0 my-auto w-full" class="type" v-if="!data.length">
+			<el-empty :description="emptyTips[type]"></el-empty>
+		</div>
+
+		<VueDraggable v-model="data" animation="150" ghostClass="kanban-ghost" group="kanban" :target="`.${type}`"
+			@update="$emit('onUpdate')" @add="$emit('onAdd')" @remove="$emit('onRemove')" :forceFallback>
+			<div class="flex flex-col py-2 grow relative min-h-[500px] max-h-[calc(100vh-50px)] mb-4 overflow-y-auto mx-4"
+				:class="type">
+				<template v-if="data.length">
+					<div v-for="(item) in data" :key="`${type}-${item.id}`"
+						class=" relative rounded-md shadow-sm overflow-visible mb-2 shrink-0 flex-col cursor-move"
+						:class="[ colorful ? colors[type] : 'bg-white' ]" @dblclick="$emit('editItem', item, type)">
+						<div class="pt-2 pb-3 rounded-sm px-3 ">
+							<div class="py-4 line-clamp-2" v-html="item.name">
+							</div>
 						</div>
 					</div>
-				</div>
-			</template>
-			<!-- TODO: 添加图片， 按钮 -->
-			<div class="flex items-start justify-center my-auto" :class="type" v-else>
-				<el-empty :description="emptyTips[type]"></el-empty>
+				</template>
+				<!-- TODO: 添加图片， 按钮 -->
 			</div>
-		</div>
-	</VueDraggable>
-
+		</VueDraggable>
+	</div>
 </div>

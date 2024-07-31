@@ -24,7 +24,6 @@ const app = () => {
       const inprogress = ref([]);
       // 事项： 已完成
       const done = ref([]);
-
       // 弹窗状态
       const dialogFormVisible = ref(false);
       // 新增数据表单
@@ -43,7 +42,7 @@ const app = () => {
         todo,
         inprogress,
         done,
-        allData: [
+        allData: ref([
           {
             name: 'todo',
             items: todo.value,
@@ -56,16 +55,24 @@ const app = () => {
             name: 'done',
             items: done.value,
           },
-        ],
+        ]),
       };
+    },
+
+    watch: {
+      todo() {
+        console.log('事项： 代办变了', this.todo);
+      },
+      allData(newV, oldV) {
+        console.log('便哈变了', this.allData);
+      },
     },
     mounted() {},
 
     methods: {
       log(msg) {
-        if (this.devMode) {
-          console.log(msg);
-        }
+        if (!this.devMode) return;
+        console.log(msg);
       },
       addNewItem() {
         const type = this.currentEditItemType;
@@ -129,7 +136,7 @@ const app = () => {
         console.log('update', e);
       },
       onAdd(e) {
-        console.log('add', e, this.allData[0].items);
+        console.log('add', e);
       },
       onRemove() {
         console.log('remove');

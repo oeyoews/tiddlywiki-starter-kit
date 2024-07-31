@@ -5,6 +5,9 @@ const {
 const getTemplate = create('oeyoews/vue-kanban');
 const icons = require('../icons');
 
+const isDraggable =
+  $tw.wiki.getTiddlerText('$:/config/DragAndDrop/Enable') === 'yes';
+
 module.exports = {
   name: 'List',
   props: ['data', 'type'],
@@ -30,6 +33,8 @@ module.exports = {
       icons,
       upperedType: '',
       isTODO: false,
+      // 如果tiddlywiki 开启了全局拖拽(tw 默认启用， 建议关闭， 因为 forcefallback 的效果不够流畅）， 就默认启用forcefallback
+      forceFallback: isDraggable,
     };
   },
   mounted() {
@@ -38,7 +43,6 @@ module.exports = {
   },
   methods: {
     upperFirstLetter(str) {
-      console.log(str);
       if (!str || typeof str !== 'string') return;
       this.upperedType = str?.slice(0, 1).toUpperCase() + str.slice(1);
     },

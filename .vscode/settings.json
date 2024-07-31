@@ -34,5 +34,4 @@
     "vercel.json": "vercel.json, netlify.toml",
   },
   "tailwindCSS.lint.invalidApply": "warning",
-  "html.autoCreateQuotes": false
 }
