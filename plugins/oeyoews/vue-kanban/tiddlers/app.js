@@ -133,9 +133,9 @@ const app = () => {
             });
           });
       },
-      log(msg) {
+      log(...msg) {
         if (!this.devMode) return;
-        console.log(msg);
+        console.log(...msg);
       },
       addNewItem() {
         const type = this.currentEditItemType;
@@ -193,13 +193,13 @@ const app = () => {
         this.dialogFormVisible = false;
       },
       onUpdate(e) {
-        console.log('update', e);
+        // console.log('update', e);
       },
       onAdd(e) {
-        console.log('add', e);
+        // console.log('add', e);
       },
       onRemove(e) {
-        console.log('remove', e);
+        // console.log('remove', e);
       },
       toggleDevMode() {
         this.devMode = !this.devMode;
