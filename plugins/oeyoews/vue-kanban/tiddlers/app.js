@@ -14,49 +14,30 @@ const todoData = require('./todo');
 const app = () => {
   const component = {
     components: { List },
-    setup() {
-      // 开发模式调试: log
-      const devMode = ref(true);
-      // 事项： 代办
-      const todo = ref(todoData);
-
-      // 事项： 进行中
-      const inprogress = ref([]);
-      // 事项： 已完成
-      const done = ref([]);
-      // 弹窗状态
-      const dialogFormVisible = ref(false);
-      // 新增数据表单
-      const form = reactive({
-        name: '',
-        id: '',
-      });
-      // 用于判断当前正在编辑的类别 todo | inprogress | done
-      const currentEditItemType = ref('');
-
+    data() {
       return {
-        currentEditItemType,
-        form,
-        devMode,
-        dialogFormVisible,
-        todo,
-        inprogress,
-        done,
-        allData: ref([
-          {
-            name: 'todo',
-            items: todo.value,
-          },
-          {
-            name: 'inprogress',
-            items: inprogress.value,
-          },
-          {
-            name: 'done',
-            items: done.value,
-          },
-        ]),
+        devMode: false,
+        dialogFormVisible: false,
+        todo: todoData,
+        inprogress: [],
+        done: [],
+        form: {
+          name: '',
+          id: '',
+        },
+        currentEditItemType: '',
+        // allData: reactive({ todo: todoData, inprogress: [], done: [] }),
       };
+    },
+
+    computed: {
+      allData() {
+        return [
+          { name: 'todo', items: this.todo },
+          { name: 'inprogress', items: this.inprogress },
+          { name: 'done', items: this.done },
+        ];
+      },
     },
 
     watch: {
@@ -152,3 +133,23 @@ const app = () => {
 };
 
 module.exports = app;
+
+const demo = {
+  one: [
+    {
+      id: 99,
+    },
+  ],
+  two: [
+    {
+      id: 22,
+    },
+  ],
+};
+
+Object.entries(demo).map((item) => {
+  return {
+    name: item[0],
+    items: item[1],
+  };
+});
