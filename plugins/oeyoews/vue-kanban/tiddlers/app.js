@@ -9,9 +9,38 @@ const { reactive, ref } = window.Vue;
 
 const getTemplate = require('../neotw-vue3/getTemplate.js');
 const List = require('./components/List.js');
-const todoData = require('./todo');
-
 const app = () => {
+  // require缓存bug ？？？
+  // const todoData = require('./todo');
+  // console.log(require('./todo'));
+  const todoData = [
+    {
+      name: '添加设置',
+      id: 'setup',
+    },
+    {
+      name: '添加垃圾桶第四列',
+      id: 0,
+    },
+    {
+      name: '无法重新排序',
+      id: '01',
+    },
+    {
+      name: '黑暗模式主题适配',
+      id: 1,
+    },
+    {
+      name: '支持条目跳转',
+      id: 5,
+    },
+    {
+      name: '支持检测所有todo标签',
+      id: 6,
+    },
+    { name: 'disabled 当列表为空的时候', id: 9 },
+  ];
+
   const component = {
     components: { List },
     data() {
@@ -19,8 +48,30 @@ const app = () => {
         devMode: false,
         dialogFormVisible: false,
         todo: todoData,
-        inprogress: [],
-        done: [],
+        inprogress: [
+          {
+            name: '支持删除',
+            id: 7,
+          },
+          {
+            name: '样式优化',
+            id: '4',
+          },
+          {
+            name: '数据存储到本地Tiddler',
+            id: '3',
+          },
+        ],
+        done: [
+          {
+            name: '做成一个单独布局',
+            id: 2,
+          },
+          {
+            name: '支持输入框添加',
+            id: 8,
+          },
+        ],
         form: {
           name: '',
           id: '',
@@ -48,7 +99,9 @@ const app = () => {
         console.log('便哈变了', this.allData);
       },
     },
-    mounted() {},
+    mounted() {
+      this.log('mounted');
+    },
 
     methods: {
       log(msg) {

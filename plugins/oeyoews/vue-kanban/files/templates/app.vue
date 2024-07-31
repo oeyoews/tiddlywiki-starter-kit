@@ -1,5 +1,12 @@
 <template>
   <!-- https://github.com/Alfred-Skyblue/vue-draggable-plus/issues/118 -->
+  <div hiddend>
+    {{allData[0].items}}
+    <hr>
+    {{allData[1].items}}
+    <hr>
+    {{allData[2].items}}
+  </div>
   <div
     class="relative min-h-0 overflow-x-auto gap-2 select-none not-prose ~bg-[#efefef] grid grid-cols-1 grid-rows-1 md:grid-cols-3 m-4">
     <template v-for="list in allData" :key="list.name">
