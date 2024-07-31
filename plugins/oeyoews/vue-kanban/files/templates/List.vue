@@ -1,7 +1,7 @@
 <div class="mr-2 flex flex-col overflow-y-hidden rounded-md transition-all duration-75 min-h-[50px] bg-[#f5f5ee] ">
 	<!-- title -->
 	<div class="flex p-2 items-center gap-2 mx-4 mt-2">
-		<el-badge :value="data.length" :type="tags[type]" :max='99'>
+		<el-badge :value="data.items.length" :type="tags[type]" :max='99'>
 			<el-tag effect="dark" :type="tags[type]" class="font-semibold">
 				<div v-html="icons[type]" class="inline align-top"></div>
 				{{upperedType}}
@@ -15,15 +15,15 @@
 	<!-- items -->
 	<div class="relative">
 		<!-- emptyTips -->
-		<div class="absolute bottom-0 my-auto w-full" v-if="!data.length">
+		<div class="absolute bottom-0 my-auto w-full" v-if="!data.items.length">
 			<el-empty :description="emptyTips[type]"></el-empty>
 		</div>
 		<!-- :targetd="`.${type}`" -->
 		<!-- draggable items -->
-		<VueDraggable v-model="data" animation="150" ghostClass="kanban-ghost" group="kanban" :forceFallback
+		<VueDraggable v-model="data.items" animation="150" ghostClass="kanban-ghost" group="kanban" :forceFallback
 			@update="$emit('onUpdate', $event)" @add="$emit('onAdd', $event)" @remove="$emit('onRemove', $event)"
 			class="flex flex-col grow h-[calc(100vh-100px)] mb-4 overflow-y-auto mx-4" :class="type">
-			<div v-for="(item) in data" :key="`${type}-${item.id}`"
+			<div v-for="(item) in data.items" :key="`${type}-${item.id}`"
 				class="relative rounded-md shadow-sm overflow-visible mb-2 shrink-0 flex-col cursor-move"
 				:class="[ colorful ? colors[type] : 'bg-white' ]" @dblclick="$emit('editItem', item, type)"
 				@contextmenu.prevent.stop="$emit('deleteItem', item, type)">

@@ -46,33 +46,42 @@ const app = () => {
   const component = {
     components: { List },
     data() {
+      const inprogress = [
+        {
+          name: '支持删除',
+          id: 7,
+        },
+        {
+          name: '样式优化',
+          id: '4',
+        },
+        {
+          name: '数据存储到本地Tiddler',
+          id: '3',
+        },
+      ];
+      const done = [
+        {
+          name: '做成一个单独布局',
+          id: 2,
+        },
+        {
+          name: '支持输入框添加',
+          id: 8,
+        },
+      ];
+
       return {
         devMode: false,
         dialogFormVisible: false,
         todo: todoData,
-        inprogress: [
-          {
-            name: '支持删除',
-            id: 7,
-          },
-          {
-            name: '样式优化',
-            id: '4',
-          },
-          {
-            name: '数据存储到本地Tiddler',
-            id: '3',
-          },
-        ],
-        done: [
-          {
-            name: '做成一个单独布局',
-            id: 2,
-          },
-          {
-            name: '支持输入框添加',
-            id: 8,
-          },
+        inprogress,
+        done,
+        allData: [
+          { name: 'todo', items: todoData },
+          { name: 'inprogress', items: inprogress },
+          { name: 'done', items: done },
+          // { name: 'trash', items: this.trash }, // if is layout show it, and change grid cols 4
         ],
         trash: [],
         form: {
@@ -84,27 +93,12 @@ const app = () => {
       };
     },
 
-    computed: {
-      allData() {
-        return [
-          { name: 'todo', items: this.todo },
-          { name: 'inprogress', items: this.inprogress },
-          { name: 'done', items: this.done },
-          // { name: 'trash', items: this.trash }, // if is layout show it, and change grid cols 4
-        ];
-      },
-    },
-
     watch: {
-      todo() {
-        // console.log('事项： 代办变了', this.todo);
-      },
-      allData(newV, oldV) {
-        // console.log('便哈变了', this.allData);
-      },
+      todo() {},
+      allData(newV, oldV) {},
     },
     mounted() {
-      this.log('mounted');
+      // this.log('mounted');
     },
 
     methods: {
