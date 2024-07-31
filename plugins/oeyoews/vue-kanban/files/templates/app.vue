@@ -7,7 +7,7 @@
   <div
     class="relative min-h-0 overflow-x-auto gap-2 select-none not-prose ~bg-[#efefef] grid grid-cols-1 grid-rows-1 md:grid-cols-3 m-1 md:m-4">
     <List @deleteItem="deleteItem" @editItem="editItem" @showDialog="showDialog" :data="list.items" :type="list.name"
-      v-for="list in allData" :key="list.name" @onUpdate=" onUpdate" @onAdd="onAdd" @onRemove="onRemove" />
+      v-for="list in allData" :key="list.name" @onUpdate="onUpdate" @onAdd="onAdd" @onRemove="onRemove" />
   </div>
 
   <!-- 编辑 item 弹窗 -->
