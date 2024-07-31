@@ -419,7 +419,7 @@ const app = () => {
         // maxWidth: '100px',
         closeWhenScroll: false,
         mouseScrol: false,
-        // mini: true,
+        // mini: true, // 开启即可和vue-tabs 联动(WIP)
         zIndex: 999,
         // https://github.com/imengyu/vue3-context-menu/issues/41 似乎对菜单栏无效
         // onClose: (e) => {
