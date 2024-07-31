@@ -1,11 +1,19 @@
 <div class="mr-2 flex flex-col overflow-y-hidden rounded-md transition-all duration-75 min-h-[50px] bg-[#f5f5ee] ">
 	<!-- title -->
-	<div class="flex p-2 items-center gap-2 mx-4">
+	<div class="flex p-2 items-center gap-2 mx-4 mt-2">
+		<el-badge :value="data.length" :type="tags[type]" :max='99'>
+			<el-tag effect="dark" :type="tags[type]" class="font-semibold">
+				<div v-html="icons[type]" class="inline align-top"></div>
+				{{upperedType}}
+			</el-tag>
+		</el-badge>
+
+		<!--
 		<el-tag effect="dark" :type="tags[type]" class="font-semibold">
 			<div v-html="icons[type]" class="inline align-top"></div>
 			{{upperedType}}
 		</el-tag>
-		<el-tag :type="tags[type]" class="aspect-square" size="default" effect="dark" round> {{data.length}} </el-tag>
+		<el-tag :type="tags[type]" class="aspect-square" size="default" effect="dark" round> {{data.length}} </el-tag> -->
 		<div class="ml-auto">
 			<!-- NOTE: emit 自定义事件不要和vue-draggable 冲突 add update remove -->
 			<el-button type="plain" @click="$emit('show', type)" size='small' v-if="isTODO">add</el-button>

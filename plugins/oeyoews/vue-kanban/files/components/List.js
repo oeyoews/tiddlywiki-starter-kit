@@ -14,7 +14,7 @@ module.exports = {
   data() {
     return {
       // 是否给开篇添加背景颜色
-      colorful: true,
+      colorful: false,
       colors: {
         todo: 'bg-orange-200',
         inprogress: 'bg-lime-200',
