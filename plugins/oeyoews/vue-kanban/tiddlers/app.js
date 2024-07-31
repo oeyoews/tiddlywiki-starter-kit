@@ -7,6 +7,8 @@ module-type: library
 
 const { reactive, ref } = window.Vue;
 
+const { ElMessage, ElMessageBox } = require('element-plus.min.js');
+
 const getTemplate = require('../neotw-vue3/getTemplate.js');
 const List = require('./components/List.js');
 const app = () => {
@@ -93,10 +95,10 @@ const app = () => {
 
     watch: {
       todo() {
-        console.log('事项： 代办变了', this.todo);
+        // console.log('事项： 代办变了', this.todo);
       },
       allData(newV, oldV) {
-        console.log('便哈变了', this.allData);
+        // console.log('便哈变了', this.allData);
       },
     },
     mounted() {
@@ -106,7 +108,28 @@ const app = () => {
     methods: {
       // hover drag to trash
       deleteItem(item, type) {
-        console.log(item, type);
+        ElMessageBox.confirm(
+          'Are you sure you want to delete this item?',
+          'Warning',
+          {
+            confirmButtonText: 'OK',
+            cancelButtonText: 'Cancel',
+            type: 'warning',
+          },
+        )
+          .then(() => {
+            this[type] = this[type].filter((i) => i.id !== item.id);
+            ElMessage({
+              type: 'success',
+              message: 'Delete completed',
+            });
+          })
+          .catch(() => {
+            ElMessage({
+              type: 'info',
+              message: 'Delete canceled',
+            });
+          });
       },
       log(msg) {
         if (!this.devMode) return;
@@ -122,24 +145,19 @@ const app = () => {
         if (!this.form.name.trim()) {
           return;
         }
-        const dataMap = {
-          todo: this.todo,
-          inprogress: this.inprogress,
-          done: this.done,
-        };
         this.dialogFormVisible = false;
         if (this.form.id) {
           // 更新item
-          const itemIndex = dataMap[type].findIndex((item) => {
+          const itemIndex = this[type].findIndex((item) => {
             return item.id === this.form.id;
           });
           if (itemIndex === -1) {
             return;
           }
-          dataMap[type][itemIndex].name = this.form.name;
+          this[type][itemIndex].name = this.form.name;
         } else {
           // 新增item
-          dataMap[type].unshift({
+          this[type].unshift({
             name: this.form.name,
             id: new Date().getTime(),
           });
