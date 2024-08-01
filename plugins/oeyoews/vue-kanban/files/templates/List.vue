@@ -24,7 +24,7 @@
 		<!-- draggable items -->
 		<VueDraggable v-model="data.items" animation="150" ghostClass="kanban-ghost" group="kanban" :forceFallback
 			@update="$emit('onUpdate', $event)" @add="$emit('onAdd', $event)" @remove="$emit('onRemove', $event)"
-			class="flex flex-col grow max-h-[calc(100vh-100px)] mb-4 overflow-y-auto mx-4" :class="type">
+			class="flex flex-col grow min-h-[400px] max-h-[calc(100vh-100px)] mb-4 overflow-y-auto mx-4" :class="type">
 			<div v-for="(item) in data.items" :key="`${type}-${item.id}`"
 				class="relative rounded-md shadow-sm overflow-visible mb-2 shrink-0 flex-col cursor-move"
 				:class="[ colorful ? colors[type] : 'bg-white' ]" @dblclick="$emit('editItem', item, type)"

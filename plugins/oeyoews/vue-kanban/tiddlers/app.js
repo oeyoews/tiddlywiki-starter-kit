@@ -21,7 +21,6 @@ const List = require('./components/List.js');
 const app = (tiddler = 'kanban.json') => {
   // require缓存bug ？？？
   // const todoData = require('./todo');
-  // console.log(require('./todo'));
 
   const component = {
     components: { List },
@@ -35,7 +34,7 @@ const app = (tiddler = 'kanban.json') => {
       return {
         devMode: false,
         dialogFormVisible: false,
-        // 这里的数据一定要是响应式的
+        // 这里的数据如果是响应式的, 不要直接修改props
         allData: realData,
         form: {
           name: '',
@@ -43,24 +42,7 @@ const app = (tiddler = 'kanban.json') => {
           description: '',
         },
         currentEditItemType: '',
-        // allData: reactive({ todo: todoData, inprogress: [], done: [] }),
       };
-    },
-
-    watch: {
-      todo(newV, onlV) {
-        this.log(newV, onlV);
-      },
-      inprogress(newV, onlV) {
-        this.log(newV, onlV);
-      },
-      done(newV, onlV) {
-        this.log(newV, onlV);
-      },
-      allData(newV, oldV) {
-        // NOTE: 无法监听到数据顺序的变化, 需要在on-event 里面分别手动处理
-        // console.log('allData');
-      },
     },
 
     methods: {
@@ -143,28 +125,21 @@ const app = (tiddler = 'kanban.json') => {
           if (itemIndex === -1) {
             return;
           }
-          data[itemIndex].name = this.form.name;
-          data[itemIndex].description = this.form?.description;
+          data[itemIndex] = this.form;
         } else {
           // 新增item
-          data.unshift({
-            name: this.form.name,
-            id: new Date().getTime(),
-            description: this.form?.description,
-          });
+          this.form.id = new Date().getTime();
+          data.unshift(this.form);
         }
         this.emptyForm();
         this.saveData();
       },
       emptyForm() {
-        this.form.name = '';
-        this.form.id = '';
-        this.form.description = '';
+        this.form = {};
       },
       editItem(item, type) {
-        this.form.name = item.name;
-        this.form.id = item.id;
-        this.form.description = item.description;
+        // 不能直接复制， 否则之前的响应式数据会被改变, 需要新创建一个空对象, toRaw 也不行， 因为对象地址都仍然指向同一个地址
+        this.form = { ...item };
         this.showDialog(type);
         this.saveData();
       },
@@ -184,13 +159,11 @@ const app = (tiddler = 'kanban.json') => {
         this.dialogFormVisible = false;
       },
       saveData() {
-        // console.log(this.allData);
         $tw.wiki.setTiddlerData(tiddler, this.allData, null, {
           suppressTimestamp: true,
         });
       },
       onUpdate(e) {
-        // console.log('update', e);
         this.saveData();
       },
       onAdd(e) {

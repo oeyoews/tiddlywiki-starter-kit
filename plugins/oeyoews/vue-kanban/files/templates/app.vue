@@ -3,6 +3,7 @@
   <div hidden> {{allData[0].items}}
     <hr> {{allData[1].items}}
     <hr> {{allData[2].items}}
+    <hr> {{form}}
   </div>
   <div
     class="relative min-h-0 overflow-x-auto gap-2 select-none not-prose ~bg-[#efefef] grid grid-cols-1 grid-rows-1 md:grid-cols-3 m-1 md:m-4 bg-white p-4"
