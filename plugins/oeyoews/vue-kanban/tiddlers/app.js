@@ -7,7 +7,11 @@ module-type: library
 
 const { reactive, ref } = window.Vue;
 
-const { ElMessage, ElMessageBox } = require('element-plus.min.js');
+const {
+  ElMessage,
+  ElMessageBox,
+  ElNotification,
+} = require('element-plus.min.js');
 
 const getTemplate = require('../neotw-vue3/getTemplate.js');
 const List = require('./components/List.js');
@@ -60,9 +64,17 @@ const app = (tiddler = 'kanban.json') => {
 
     methods: {
       kanbanFullscreen() {
-        console.log(this.$refs.kanbanRef);
+        const target = this.$refs['kanbanRef'];
+        if (!target.requestFullscreen) {
+          ElNotification({
+            title: '不支持全屏',
+            // message: '',
+            type: 'error',
+          });
+          return;
+        }
         if (document.fullscreenElement === null) {
-          this.$refs['kanbanRef'].requestFullscreen();
+          target.requestFullscreen();
         } else {
           document.exitFullscreen();
         }
