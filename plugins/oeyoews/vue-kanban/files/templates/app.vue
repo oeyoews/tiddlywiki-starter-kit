@@ -11,7 +11,8 @@
   </div>
 
   <!-- 编辑 item 弹窗 -->
-  <el-dialog v-model=" dialogFormVisible" title="Add items" width="50%">
+  <!-- // TODO: 优化mobile 弹窗 -->
+  <el-dialog v-model=" dialogFormVisible" title="Add items" width="60%">
     <el-form :model="form" @submit.prevent="addNewItem">
       <el-form-item label="标题" props='name'>
         <el-input v-model="form.name" autocomplete="off" placeholder='Input Something ...' ref="inputRef" />

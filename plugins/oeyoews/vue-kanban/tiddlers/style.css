@@ -1,3 +1,7 @@
 .kanban-ghost {
   border: 2px dashed gray;
 }
+
+.el-dialog {
+  border-radius: 5px;
+}
