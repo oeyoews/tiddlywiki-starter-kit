@@ -5,13 +5,14 @@
     <hr> {{allData[2].items}}
   </div>
   <div
-    class="relative min-h-0 overflow-x-auto gap-2 select-none not-prose ~bg-[#efefef] grid grid-cols-1 grid-rows-1 md:grid-cols-3 m-1 md:m-4">
+    class="relative min-h-0 overflow-x-auto gap-2 select-none not-prose ~bg-[#efefef] grid grid-cols-1 grid-rows-1 md:grid-cols-3 m-1 md:m-4 bg-white p-4"
+    ref="kanbanRef">
     <List @deleteItem="deleteItem" @editItem="editItem" @showDialog="showDialog" :data="list" :type="list.name"
-      v-for="list in allData" :key="list.name" @onUpdate="onUpdate" @onAdd="onAdd" @onRemove="onRemove" />
+      @kanbanFullscreen="kanbanFullscreen" v-for="list in allData" :key="list.name" @onUpdate="onUpdate" @onAdd="onAdd"
+      @onRemove="onRemove" />
   </div>
 
   <!-- 编辑 item 弹窗 -->
-  <!-- // TODO: 优化mobile 弹窗 -->
   <el-dialog v-model=" dialogFormVisible" title="Add items" width="60%">
     <el-form :model="form" @submit.prevent="addNewItem">
       <el-form-item label="标题" props='name'>

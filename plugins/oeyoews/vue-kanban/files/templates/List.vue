@@ -1,19 +1,21 @@
 <div class="mr-2 flex flex-col overflow-y-hidden rounded-md transition-all duration-75 min-h-[50px] bg-[#f5f5ee] ">
 	<!-- title -->
 	<div class="flex p-2 items-center gap-2 mx-4 mt-2">
-		<el-badge :value="data.items.length" :type="tags[type]" :max='99'>
-			<el-tag effect="dark" :type="tags[type]" class="font-semibold">
+		<el-badge :value="data.items.length" :type="tags[type]" :max='99' size="large">
+			<el-tag effect="dark" :type="tags[type]" class="font-semibold" size="large">
 				<div v-html="icons[type]" class="inline align-top"></div>
 				{{upperedType}}
 			</el-tag>
 		</el-badge>
-		<div class="ml-auto">
+		<div class="ml-auto" v-if="isTODO">
 			<!-- NOTE: emit 自定义事件不要和vue-draggable 冲突 add update remove -->
-			<el-button type="plain" @click="$emit('showDialog', type)" size='small' v-if="isTODO">add</el-button>
+			<el-button type="success" @click="$emit('showDialog', type)" size='default' v-html="icons.plus"></el-button>
+			<el-button type="primary" @click="$emit('kanbanFullscreen')" size='default' v-html="icons.fullscreen">
+			</el-button>
 		</div>
 	</div>
 	<!-- items -->
-	<div class="relative">
+	<div class="relative mt-2">
 		<!-- emptyTips -->
 		<div class="absolute bottom-0 my-auto w-full" v-if="!data.items.length">
 			<el-empty :description="emptyTips[type]"></el-empty>
@@ -22,7 +24,7 @@
 		<!-- draggable items -->
 		<VueDraggable v-model="data.items" animation="150" ghostClass="kanban-ghost" group="kanban" :forceFallback
 			@update="$emit('onUpdate', $event)" @add="$emit('onAdd', $event)" @remove="$emit('onRemove', $event)"
-			class="flex flex-col grow h-[calc(100vh-100px)] mb-4 overflow-y-auto mx-4" :class="type">
+			class="flex flex-col grow max-h-[calc(100vh-100px)] mb-4 overflow-y-auto mx-4" :class="type">
 			<div v-for="(item) in data.items" :key="`${type}-${item.id}`"
 				class="relative rounded-md shadow-sm overflow-visible mb-2 shrink-0 flex-col cursor-move"
 				:class="[ colorful ? colors[type] : 'bg-white' ]" @dblclick="$emit('editItem', item, type)"

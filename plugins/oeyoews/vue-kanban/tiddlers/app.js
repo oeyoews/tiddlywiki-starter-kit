@@ -59,6 +59,14 @@ const app = (tiddler = 'kanban.json') => {
     },
 
     methods: {
+      kanbanFullscreen() {
+        console.log(this.$refs.kanbanRef);
+        if (document.fullscreenElement === null) {
+          this.$refs['kanbanRef'].requestFullscreen();
+        } else {
+          document.exitFullscreen();
+        }
+      },
       // hover drag to trash
       deleteItem(item, type) {
         ElMessageBox.confirm(

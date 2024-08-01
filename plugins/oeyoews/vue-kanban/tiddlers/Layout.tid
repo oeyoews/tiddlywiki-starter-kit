@@ -3,6 +3,6 @@ name: {{$:/plugins/oeyoews/vue-kanban/icon}} Kanban
 description: {{$:/plugins/oeyoews/vue-kanban/readme!!description}}
 tags: $:/tags/Layout
 
-<div class="bg-white h-screen p-4">
+<div class="bg-white min-h-screen p-4">
 	<$vue-kanban />
 </div>
