@@ -13,8 +13,12 @@
   <!-- 编辑 item 弹窗 -->
   <el-dialog v-model=" dialogFormVisible" title="Add items" width="50%">
     <el-form :model="form" @submit.prevent="addNewItem">
-      <el-form-item label="" label-width="" props='name'>
+      <el-form-item label="标题" props='name'>
         <el-input v-model="form.name" autocomplete="off" placeholder='Input Something ...' ref="inputRef" />
+      </el-form-item>
+      <el-form-item label="描述" props='description'>
+        <el-input type="textarea" v-model="form.description" class="w-full" :rows="4" @keyup.enter="addNewItem"
+          placeholder='Input Something ...' />
       </el-form-item>
     </el-form>
     <template #footer>

@@ -18,62 +18,10 @@ const app = (tiddler = 'kanban.json') => {
   // require缓存bug ？？？
   // const todoData = require('./todo');
   // console.log(require('./todo'));
-  const todoData = [
-    {
-      name: '添加设置',
-      id: 'setup',
-    },
-    {
-      name: '添加垃圾桶第四列',
-      id: 0,
-    },
-    {
-      name: '无法重新排序',
-      id: '01',
-    },
-    {
-      name: '黑暗模式主题适配',
-      id: 1,
-    },
-    {
-      name: '支持条目跳转',
-      id: 5,
-    },
-    {
-      name: '支持检测所有todo标签',
-      id: 6,
-    },
-    { name: 'disabled 当列表为空的时候', id: 9 },
-  ];
 
   const component = {
     components: { List },
     data() {
-      const inprogress = [
-        {
-          name: '支持删除',
-          id: 7,
-        },
-        {
-          name: '样式优化',
-          id: '4',
-        },
-        {
-          name: '数据存储到本地Tiddler',
-          id: '3',
-        },
-      ];
-      const done = [
-        {
-          name: '做成一个单独布局',
-          id: 2,
-        },
-        {
-          name: '支持输入框添加',
-          id: 8,
-        },
-      ];
-
       const emptyData = ['todo', 'inprogress', 'done'].map((i) => {
         return { name: i, items: [] };
       });
@@ -88,6 +36,7 @@ const app = (tiddler = 'kanban.json') => {
         form: {
           name: '',
           id: '',
+          description: '',
         },
         currentEditItemType: '',
         // allData: reactive({ todo: todoData, inprogress: [], done: [] }),
@@ -167,11 +116,13 @@ const app = (tiddler = 'kanban.json') => {
             return;
           }
           data[itemIndex].name = this.form.name;
+          data[itemIndex].description = this.form?.description;
         } else {
           // 新增item
           data.unshift({
             name: this.form.name,
             id: new Date().getTime(),
+            description: this.form?.description,
           });
         }
         this.emptyForm();
@@ -180,10 +131,12 @@ const app = (tiddler = 'kanban.json') => {
       emptyForm() {
         this.form.name = '';
         this.form.id = '';
+        this.form.description = '';
       },
       editItem(item, type) {
         this.form.name = item.name;
         this.form.id = item.id;
+        this.form.description = item.description;
         this.showDialog(type);
         this.saveData();
       },
