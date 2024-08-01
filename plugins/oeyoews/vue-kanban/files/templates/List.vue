@@ -1,6 +1,7 @@
-<div class="mr-2 flex flex-col overflow-y-hidden rounded-md transition-all duration-75 min-h-[50px] bg-[#f5f5ee] ">
+<div
+	class="m-2 flex flex-col overflow-y-hidden rounded-md transition-all duration-75 min-h-[500px] bg-[#f5f5ee] max-h-[calc(100vh-30px)]">
 	<!-- title -->
-	<div class="flex p-2 items-center gap-2 mx-4 mt-2">
+	<div class="flex p-2 items-center gap-2 mx-3 mt-2">
 		<el-badge :value="data.items.length" :type="tags[type]" :max='99' size="large">
 			<el-tag effect="dark" :type="tags[type]" class="font-semibold" size="large">
 				<div v-html="icons[type]" class="inline align-top"></div>

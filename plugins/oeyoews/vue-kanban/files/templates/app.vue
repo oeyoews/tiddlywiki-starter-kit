@@ -6,7 +6,7 @@
     <hr> {{form}}
   </div>
   <div
-    class="relative min-h-0 overflow-x-auto gap-2 select-none not-prose ~bg-[#efefef] grid grid-cols-1 grid-rows-1 md:grid-cols-3 m-1 md:m-4 bg-white p-4"
+    class="relative overflow-x-auto gap-2 select-none not-prose ~bg-[#efefef] grid grid-cols-1 grid-rows-1 md:grid-cols-3 m-1 md:m-4 bg-white"
     ref="kanbanRef">
     <List @deleteItem="deleteItem" @editItem="editItem" @showDialog="showDialog" :data="list" :type="list.name"
       @kanbanFullscreen="kanbanFullscreen" v-for="list in allData" :key="list.name" @onUpdate="onUpdate" @onAdd="onAdd"
