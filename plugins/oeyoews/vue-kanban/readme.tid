@@ -6,3 +6,7 @@ description: vue-kanban
 <!-- > 如果 tiddlywiki 开启了全局拖拽(tw 默认启用， 建议关闭， 因为 forcefallback 的效果不够流畅）， 就默认启用forcefallback -->
 
 <$vue-kanban />
+
+!! Usage
+
+* `tiddler="kanban.json"

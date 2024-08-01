@@ -33,9 +33,10 @@ class KanbanWidget extends Widget {
     const domNode = this.document.createElement('div');
     const Draggable = require('./plugins/Draggable');
     const ElementPlus = require('element-plus.min.js');
+    const { tiddler } = this.attributes;
 
     try {
-      const app = createApp(component());
+      const app = createApp(component(tiddler));
       app.use(Draggable).use(ElementPlus);
 
       app.config.errorHandler = (err) => {

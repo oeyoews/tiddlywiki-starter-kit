@@ -11,7 +11,10 @@ const { ElMessage, ElMessageBox } = require('element-plus.min.js');
 
 const getTemplate = require('../neotw-vue3/getTemplate.js');
 const List = require('./components/List.js');
-const app = () => {
+/**
+ * @param {string} tiddler - data tiddler name
+ */
+const app = (tiddler = 'kanban.json') => {
   // require缓存bug ？？？
   // const todoData = require('./todo');
   // console.log(require('./todo'));
@@ -70,21 +73,18 @@ const app = () => {
           id: 8,
         },
       ];
-      const realData = $tw.wiki.getTiddlerData('kanban') || [];
+
+      const emptyData = ['todo', 'inprogress', 'done'].map((i) => {
+        return { name: i, items: [] };
+      });
+
+      const realData = $tw.wiki.getTiddlerData(tiddler) || emptyData;
 
       return {
         devMode: false,
         dialogFormVisible: false,
-        // todo: todoData,
-        // inprogress,
-        // done,
         // 这里的数据一定要是响应式的
         allData: realData,
-        // { name: 'todo', items: todoData },
-        // { name: 'inprogress', items: inprogress },
-        // { name: 'done', items: done },
-        // { name: 'trash', items: this.trash }, // if is layout show it, and change grid cols 4
-        trash: [],
         form: {
           name: '',
           id: '',
@@ -204,7 +204,7 @@ const app = () => {
       },
       saveData() {
         // console.log(this.allData);
-        $tw.wiki.setTiddlerData('kanban', this.allData, null, {
+        $tw.wiki.setTiddlerData(tiddler, this.allData, null, {
           suppressTimestamp: true,
         });
       },
