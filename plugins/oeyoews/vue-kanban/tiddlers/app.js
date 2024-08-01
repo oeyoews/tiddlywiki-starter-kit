@@ -58,7 +58,8 @@ const app = (tiddler = 'kanban.json') => {
         this.log(newV, onlV);
       },
       allData(newV, oldV) {
-        console.log('allData');
+        // NOTE: 无法监听到数据顺序的变化, 需要在on-event 里面分别手动处理
+        // console.log('allData');
       },
     },
 
