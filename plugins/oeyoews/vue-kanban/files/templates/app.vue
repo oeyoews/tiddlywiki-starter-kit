@@ -19,7 +19,8 @@
           <el-input v-model="form.name" autocomplete="off" placeholder='Input Something ...' ref="inputRef" />
         </el-form-item>
         <el-form-item label="描述" props='description'>
-          <el-input type="textarea" v-model="form.description" class="w-full" :rows="4" @keyup.enter="addNewItem"
+          <!-- Ctrl + Enter to save -->
+          <el-input type="textarea" v-model="form.description" class="w-full" :rows="4" @keyup.ctrl.enter="addNewItem"
             placeholder='Input Something ...' />
         </el-form-item>
       </el-form>
