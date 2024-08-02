@@ -3,7 +3,7 @@
 	<!-- title -->
 	<div class="flex p-2 items-center gap-2 mx-3 mt-2">
 		<el-badge :value="data.items.length" :type="tags[type]" :max='99' size="large">
-			<el-tag effect="dark" :type="tags[type]" class="font-semibold" size="large">
+			<el-tag disable-transitions effect="dark" :type="tags[type]" class="font-semibold" size="large">
 				<div v-html="icons[type]" class="inline align-top"></div>
 				{{upperedType}}
 			</el-tag>
