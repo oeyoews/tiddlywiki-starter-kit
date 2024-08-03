@@ -1,5 +1,7 @@
 # markdownit mermaid
 
+<img src="./img/mermaid.webp" class="rounded-md mt-2" alt=""/>
+
 > 一个 markdownit 的 tiddlywiki mermaid 插件 .
 
 ## 在线地址

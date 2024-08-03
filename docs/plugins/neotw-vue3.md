@@ -1,5 +1,7 @@
 # TiddlyWiki5 Vue3
 
+<img src="./img/vue3.webp" class="rounded-md mt-2" alt=""/>
+
 <!-- https://unpkg.com/vue@3.4.33/dist/vue.global.prod.js -->
 <!-- echo 'module.exports=Vue' >> vue.global.prod.js  -->
 > 直接用 Vue 写 tiddlywiki 插件

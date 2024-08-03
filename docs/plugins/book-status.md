@@ -1,5 +1,7 @@
 # book status
 
+<img src="./img/book.webp" class="rounded-md mt-2" alt=""/>
+
 > https://github.com/oeyoews/reading-books-with-tiddlywiki
 
 记录你读过的每一个笔记 (此插件针对上述链接的项目)

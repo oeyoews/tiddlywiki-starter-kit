@@ -1,5 +1,7 @@
 # Tiddlywiki Daylight
 
+<img src="./img/daylight.webp" class="rounded-md mt-2" alt=""/>
+
 > 主流的经典三模式切换 (浅色模式，深色模式，系统模式)
 
 > 提供了 daylight widget

@@ -1,5 +1,7 @@
 # Neotw notion gallery
 
+<img src="./img/notion-gallery.webp" class="rounded-md mt-2" alt=""/>
+
 ## 在线地址
 
 <TwPlugin name="neotw-notion-gallery" />

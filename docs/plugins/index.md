@@ -1,5 +1,7 @@
 # TiddlyWiki Starter Kit 插件介绍
 
+<img src="./img/plugins.webp" class="rounded-md mt-2" alt="plugins"/>
+
 <!-- <Callout type='warning'>
 以上仅仅列出了部分插件. 更多细节请点击 [tiddlywiki-starter-kit](https://tiddlywiki-starter-kit.vercel.app/)
 </Callout> -->

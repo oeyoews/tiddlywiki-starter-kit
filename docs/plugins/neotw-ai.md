@@ -1,5 +1,7 @@
 # AI 自动总结文章摘要
 
+<img src="./img/ai.webp" class="rounded-md mt-2" alt=""/>
+
 > [!TIP]
 > 现在同时支持 gemini/spark 两种模型切换!
 

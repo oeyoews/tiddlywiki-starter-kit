@@ -1,5 +1,7 @@
 # markdown-extensions-startup
 
+<img src="./img/md-ext.webp" class="rounded-md mt-2" alt="markdown plugins"/>
+
 > 仿照 codemirror5 的插件模块加载机制, 将 markdown-it 的每个插件单独打包成插件, 按需加载
 
 ## 插件在线地址

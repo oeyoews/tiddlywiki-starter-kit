@@ -1,6 +1,6 @@
 # neotw-menubar
 
-> description
+<img src="./img/menubar.webp" class="rounded-md mt-2" alt=""/>
 
 ## 插件在线地址
 
