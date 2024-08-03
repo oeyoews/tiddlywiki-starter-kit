@@ -225,7 +225,7 @@ const app = () => {
               onClick: () => goto.navigateTiddler('GettingStarted'),
             },
             {
-              label: 'TODO',
+              label: 'Kanban',
               icon: getIcon('notify'),
               shortcut: 'G + Shift + I',
               onClick: () =>
