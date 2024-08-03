@@ -31,7 +31,7 @@
 				:class="[ colorful ? colors[type] : 'bg-white' ]" @dblclick="$emit('editItem', item, type)"
 				@contextmenu.prevent.stop="$emit('deleteItem', item, type)">
 				<div class="pt-2 pb-3 rounded-sm px-3 ">
-					<div class="pt-4 pb-6 line-clamp-2" v-html="item.name">
+					<div class="line-clamp-2 overflow-y-auto" v-html="item.name">
 					</div>
 				</div>
 			</div>
