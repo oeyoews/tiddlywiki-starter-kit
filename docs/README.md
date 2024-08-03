@@ -1,8 +1,10 @@
 # TiddlyWiki Starter Kit?
 
+<img src="/img/tiddlywiki-starter-kit.webp" class="rounded-md mt-2" />
+
 > 你的下一个笔记软件又何必不是 TiddlyWiki5 ?(your next note software is not TiddlyWiki5?)
 
-<audio controls>
+<audio controls class="w-full my-2">
   <source src="/tw.mp3" type="audio/mp3">
 Your browser does not support the audio element.
 </audio>
@@ -11,9 +13,12 @@ Your browser does not support the audio element.
 什么是 TiddlyWiki Starter Kit?, 可以简单理解成 NextJs 和 React, Nuxt 和 vue, Svelte 和 SvelteKit 之间的关系(what is TiddlyWiki Starter Kit?, can be simplified as nextjs and react, nuxt and vue, svelte and sveltekit)
 :::
 
-* 其实在写这个之前，我还写了 [tw5](https://github.com/oeyoews/tw5), 算是前身. Nodejs TiddlyWiki 启动 TiddlyWiki5 也就是一条命令行的事，很简单，但是为了满足自己的各种需求，比如启动部署，更多的功能，tiddlywiki starter kit 就经过多个版本的迭代诞生了。(actually, tiddlywiki starter kit is a series of iterations from the original tw5, and I have written it in Nodejs. It is a simple command line, but it is also used for different needs, such as deployment, more features, and tiddlywiki starter kit is developed in multiple versions.)
+* 其实在写这个之前，我还写了 [tw5](https://github.com/oeyoews/tw5), 算是前身. Nodejs TiddlyWiki 启动 TiddlyWiki5 也就是一条命令行的事，很简单，但是为了满足自己的各种需求，比如启动部署，更多的功能，tiddlywiki starter kit 就经过多个版本的迭代诞生了。
+* (actually, tiddlywiki starter kit is a series of iterations from the original tw5, and I have written it in Nodejs. It is a simple command line, but it is also used for different needs, such as deployment, more features, and tiddlywiki starter kit is developed in multiple versions.)
 
-tiddlywiki starter kit 目前是极其高度自定义化的，从安装，启动，构建，部署，使用等每个步骤都加入了自定义化配置。(tiddlywiki starter kit is highly customized from installation, startup, construction, deployment, and use. It includes customization configuration for each step.)
+tiddlywiki starter kit 目前是极其高度自定义化的，从安装，启动，构建，部署，使用等每个步骤都加入了自定义化配置。
+
+(tiddlywiki starter kit is highly customized from installation, startup, construction, deployment, and use. It includes customization configuration for each step.)
 
 - 安装：支持 cli, git, docker, html 等多种安装使用方式(installing: cli, git, docker, html)
 - 启动：支持切换不同类别的存储文件夹
