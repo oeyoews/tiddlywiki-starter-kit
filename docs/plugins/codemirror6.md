@@ -1,7 +1,12 @@
 # Tiddlywiki codemirror6 plugin
 
-* source: https://github.com/oeyoews/tiddlywiki-codemirror6
-* online: https://tiddlywiki-codemirror6.vercel.app/#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-codemirror-6
+<img src="./img/codemirror6.webp" class="rounded-md mt-2" alt="codemirror6"/>
+
+* [source](https://github.com/oeyoews/tiddlywiki-codemirror6)
+* [online](https://tiddlywiki-codemirror6.vercel.app/#%24%3A%2Fplugins%2Foeyoews%2Ftiddlywiki-codemirror-6)
+
+> [!WARNING]
+> 整理中...
 
 ## 背景介绍
 
@@ -15,9 +20,9 @@
 * 用户群体受众群体和反馈比较少. 所以主要都是解决自己遇到一些痛点和bug.
 
 ## 新特性
-
 * 代码补全
 * vim mode
+
 
 ## 安装方法
 

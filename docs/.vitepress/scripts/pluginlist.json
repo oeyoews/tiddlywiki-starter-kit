@@ -4,6 +4,10 @@
     "link": "/plugins/book-status"
   },
   {
+    "text": "🧩codemirror6",
+    "link": "/plugins/codemirror6"
+  },
+  {
     "text": "🧩element-plus",
     "link": "/plugins/element-plus"
   },
@@ -20,8 +24,36 @@
     "link": "/plugins/neotw-ai"
   },
   {
+    "text": "🧩neotw-calendar",
+    "link": "/plugins/neotw-calendar"
+  },
+  {
+    "text": "🧩neotw-card-info",
+    "link": "/plugins/neotw-card-info"
+  },
+  {
+    "text": "🧩neotw-cmp",
+    "link": "/plugins/neotw-cmp"
+  },
+  {
+    "text": "🧩neotw-menubar",
+    "link": "/plugins/neotw-menubar"
+  },
+  {
     "text": "🧩neotw-notion-gallery",
     "link": "/plugins/neotw-notion-gallery"
+  },
+  {
+    "text": "🧩neotw-progressbar",
+    "link": "/plugins/neotw-progressbar"
+  },
+  {
+    "text": "🧩neotw-ui",
+    "link": "/plugins/neotw-ui"
+  },
+  {
+    "text": "🧩neotw-vtable",
+    "link": "/plugins/neotw-vtable"
   },
   {
     "text": "🧩neotw-vue3",
