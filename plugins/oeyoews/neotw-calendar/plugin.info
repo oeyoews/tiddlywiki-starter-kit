@@ -1,0 +1,19 @@
+{
+  "title": "$:/plugins/oeyoews/neotw-calendar",
+  "description": "neotw-calendar",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.3.0",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "neotw-calendar",
+  "meat#disabled": "yes",
+  "qrcode": "yes",
+  "created": "2024/07-29",
+  "dependents": [
+    "$:/plugins/oeyoews/neotw-vue3",
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
+  ],
+  "stability": "STABILITY_2_STABLE",
+  "list": "readme"
+}

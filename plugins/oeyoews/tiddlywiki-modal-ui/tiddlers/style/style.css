@@ -1,0 +1,20 @@
+.o-tm .tc-modal,
+.o-tm .tc-modal-header,
+.o-tm .tc-modal-body,
+.o-tm .tc-modal-footer {
+  border-radius: 10px;
+  border: none;
+  background-color: #f5f5f5;
+}
+
+.o-tm .tc-modal-footer {
+  display: none;
+}
+
+.o-tm .tc-modal-header {
+  text-transform: capitalize;
+}
+
+.o-tm .tc-modal-backdrop {
+  cursor: pointer;
+}

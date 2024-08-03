@@ -1,0 +1,27 @@
+title: $:/plugins/oeyoews/tiddlywiki-gravatar/ui/gravatar
+tags: $:/tags/PageControls
+list-before: $:/core/ui/Buttons/more-page-actions
+description: gravatar
+caption: gravatar
+list-after:
+
+<!-- TODO: too large in sidebar -->
+\whitespace trim
+<$button tooltip="Gravatar" aria-label="gravatar" class=<<tv-config-toolbar-class>>>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+  <$action-sendmessage $message="tm-modal" $param="oeyoews"/>
+<div class="relative inline-block">
+    <$avatar class="w-[25.5px]"/>
+  <span class="absolute -top-3 -right-0">
+    <span class="relative inline-flex rounded-full h-1 w-1 bg-sky-500">
+      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+    </span>
+  </span>
+</div>
+</$list>
+<$list filter="[<tv-config-toolbar-text>match[yes]]">
+<span class="tc-btn-text">
+  <$text text="gravatar"/>
+</span>
+</$list>
+</$button>

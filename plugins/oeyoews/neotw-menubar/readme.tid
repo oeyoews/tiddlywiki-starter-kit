@@ -1,0 +1,8 @@
+title: $:/plugins/oeyoews/neotw-menubar/readme
+description: neotw-menubar
+class: o-tm
+mask-closable: yes
+caption: MenuBar
+subtitle: {{||$:/esc}}
+
+[[在线文档|https://neotw.vercel.app/docs/plugins/neotw-menubar]]

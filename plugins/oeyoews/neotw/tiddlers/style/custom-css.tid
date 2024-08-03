@@ -1,0 +1,86 @@
+title: $:/plugins/oeyoews/neotw/style/custom-css
+tags: $:/tags/Stylesheet
+
+\define hide-tiddler-controls()
+[data-tiddler-title="$(currentTiddler)$"] .tc-titlebar h2 { text-transform: capitalize; }
+\end
+
+<!-- .tc-tiddler-frame input.tc-edit-texteditor  { text-transform: capitalize; } -->
+<!-- hr { -->
+<!--   height: 4px; -->
+<!--   background-image: linear-gradient(135deg, #12c2e9, #ffafbd, #c9ffbf); -->
+<!--   border: none; -->
+<!-- 	border-radius: 3px; -->
+<!-- } -->
+
+<$list filter="[!is[system]]">
+  <<hide-tiddler-controls>>
+</$list>
+
+<!-- https://talk.tiddlywiki.org/t/is-blank-seems-to-return-nothing/4713/5 -->
+<$list filter="[[$:/StoryList]get[list]count[]match[0]]">
+  .tc-tiddler-controls  {display: none !important;}
+</$list>
+
+<!-- 如果在主页不显示 topbar -->
+<!-- <$list filter="[[$:/StoryList]get[list]count[]match[0]]"> -->
+<!-- .nc-topbar { -->
+<!--   display: none !important; -->
+<!-- } -->
+<!-- </$list> -->
+
+<$list filter="[[$:/temp/zen-mode]get[text]match[yes]]">
+<!-- footer {display:none !important;} -->
+<!-- .tc-tiddler-controls, -->
+.gk0wk-notionpagebg,
+.nc-topbar {
+  display: none !important;
+}
+
+[data-tiddler-title] .tc-tiddler-controls  {display: none !important;}
+</$list>
+
+.custom-details {
+  border-radius: 10px;
+  padding: 0 10px;
+  display: inline;
+  color: #aaa;
+}
+
+.custom-details[open] {
+  display: block;
+}
+
+.custom-details:not([open]):hover {
+  <!-- color: #333333; -->
+  <!-- color: transparent; -->
+  transform: scale(1.1);
+  transition: transform .2s;
+}
+
+.custom-details>summary {
+   border-radius: 6px;
+   background-color: transparent;
+   margin-right: 2px;
+}
+
+.custom-details>summary::marker {
+   content:"";
+}
+
+.o-neotw-setup .tc-modal,
+.o-neotw-setup .tc-modal-header,
+.o-neotw-setup .tc-modal-body,
+.o-neotw-setup .tc-modal-footer {
+   border-radius: 10px;
+   border: none;
+   background-color: #F5F5F5;
+}
+
+.o-neotw-setup .tc-modal-footer {
+    display:none;
+}
+
+.o-neotw-setup .tc-modal-header {
+    text-transform: capitalize;
+  }

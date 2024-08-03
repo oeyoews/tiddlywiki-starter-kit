@@ -1,0 +1,14 @@
+{
+  "title": "$:/plugins/oeyoews/mermaid930",
+  "description": "mermaid930",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.3.0",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "Mermaid v9.3.0 library",
+  "meat#disabled": "yes",
+  "qrcode": "yes",
+  "created": "2024-01-29",
+  "list": "readme"
+}

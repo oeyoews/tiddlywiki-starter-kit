@@ -1,0 +1,29 @@
+.oresizer-left {
+  left: 0;
+}
+.oresizer-right {
+  right: 0;
+}
+
+.oresizer {
+  width: 5px;
+  border-radius: 5px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: #f3f4f6;
+  animation-duration: 200ms;
+}
+
+.oresizer:hover {
+  cursor: e-resize;
+  background-color: #e5e7eb;
+  transition: all;
+}
+
+.dark .oresizer {
+  background-color: #6b7280;
+}
+.dark .oresizer:hover {
+  background-color: #9d9fa4;
+}

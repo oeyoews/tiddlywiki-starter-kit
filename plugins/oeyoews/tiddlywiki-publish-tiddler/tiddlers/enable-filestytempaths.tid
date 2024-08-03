@@ -1,0 +1,4 @@
+title: $:/plugins/oeyoews/tiddlywiki-publish-tiddler/enable-filestytempaths
+tags: $:/tags/StartupAction
+
+<$action-setfield $tiddler="$:/config/FileSystemPaths" $field="overwrite" $value="yes"/>

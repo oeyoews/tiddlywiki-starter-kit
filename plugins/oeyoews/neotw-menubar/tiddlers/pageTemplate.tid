@@ -1,0 +1,14 @@
+title: $:/plugins/oeyoews/neotw-menubar/PageTemplate
+tags: $:/tags/PageTemplate
+
+<$list filter="[[$:/StoryList]get[list]count[]!match[0]]">
+<div class="fixed top-0 inset-x-0 hidden md:block tc-adjust-top-of-scroll h-[40px]">
+	<$vue-menubar />
+</div>
+</$list>
+
+<$list filter="[[$:/StoryList]get[list]count[]match[0]]">
+<div class="fixed top-0 inset-x-0 hidden md:block opacity-0 hover:opacity-100 transition-all tc-adjust-top-of-scroll h-[40px] delay-200">
+
+</div>
+</$list>

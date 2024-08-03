@@ -1,0 +1,54 @@
+{
+	"directories": [
+		{
+			"path": "templates",
+			"filesRegExp": "^.*\\.vue$",
+			"searchSubdirectories": true,
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/neotw-calendar/templates/"
+				},
+				"hide-body": "yes"
+			}
+		},
+		{
+			"path": "plugins",
+			"filesRegExp": "^.*\\.js$",
+			"searchSubdirectories": true,
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/neotw-calendar/plugins/"
+				},
+				"module-type": "library",
+				"type": "application/javascript"
+			}
+		},
+		{
+			"path": "components",
+			"filesRegExp": "^.*\\.js$",
+			"searchSubdirectories": true,
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/neotw-calendar/components/"
+				},
+				"module-type": "library",
+				"type": "application/javascript"
+			}
+		},
+		{
+			"path": "lib",
+			"filesRegExp": "^.*\\.js$",
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/neotw-calendar/lib/"
+				},
+				"module-type": "library",
+				"type": "application/javascript"
+			}
+		}
+	]
+}
