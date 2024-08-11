@@ -27,6 +27,15 @@ const app = ({ token }) => {
         latestTwVersion: '',
         versions: [],
         file: '',
+        emailSuffixOptions: [
+          'gmail.com',
+          'outlook.com',
+          '163.com',
+          'qq.com',
+          '126.com',
+        ].map((item) => {
+          return { label: item, value: item };
+        }),
       };
     },
     mounted() {
@@ -112,7 +121,7 @@ const app = ({ token }) => {
           });
         // 随机位置插入
         this.versions.splice(
-          Math.floor(Math.random() * this.versions.length),
+          Math.floor(Math.random() * (this.versions.length + 1)),
           0,
           this.latestTwVersion,
         );
@@ -128,6 +137,7 @@ const app = ({ token }) => {
         });
       },
       sendPhoto() {
+        // 暂时不进行版本校验
         if (!this.file) {
           return;
         }

@@ -18,3 +18,6 @@ app.use(ElementPlus)
 //   ElNotification,
 // } = require('element-plus.min.js');
 ```
+
+<!-- update -->
+<!-- https://www.jsdelivr.com/package/npm/element-plus -->

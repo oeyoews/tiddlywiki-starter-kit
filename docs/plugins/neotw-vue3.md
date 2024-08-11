@@ -27,6 +27,7 @@
 ## Usage
 
 ```js
+// $:/plugins/oeyoews/neotw-vue3/vue.global.prod.js
 window.Vue = require('$:/plugins/oeyoews/neotw-vue3/vue.global.prod.js')
 ```
 

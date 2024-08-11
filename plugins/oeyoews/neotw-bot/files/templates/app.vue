@@ -6,7 +6,8 @@
   </el-form>
   <div class="flex gap-1">
     <el-input placeholder='你的昵称' v-model="username"></el-input>
-    <el-input placeholder='你的邮箱*' v-model="email"></el-input>
+    <el-mention :options="emailSuffixOptions" placeholder='你的邮箱*' v-model.trim="email"></el-mention>
+    <!-- 做成弹窗 -->
     <el-select v-model="version" placeholder="选择版本">
       <el-option v-for="item in versions" :key="item" :label="item" :value="item">
       </el-option>
