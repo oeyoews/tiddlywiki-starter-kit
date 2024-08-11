@@ -23,13 +23,29 @@ const app = ({ token }) => {
         email: '',
         text: '',
         hasToken: false,
+        version: '',
+        latestTwVersion: '',
+        versions: [],
+        file: '',
       };
     },
     mounted() {
+      this.getTWLatestVersion().then(() => {
+        this.generateRandomVersion();
+      });
       this.checkToken(token);
       this.hasToken = this.getChatId();
     },
     methods: {
+      handleSuccess(e) {
+        this.file = e.raw;
+        this.caption = e.name;
+        ElNotification({
+          title: '成功',
+          message: e.name + '文件上传本地成功',
+          type: 'success',
+        });
+      },
       checkToken(token) {
         if (!token) {
           ElNotification({
@@ -82,15 +98,75 @@ const app = ({ token }) => {
         }
         return true;
       },
-      sendMessage() {
-        if (!this.checkEmail(this.email)) {
-          ElNotification({
-            title: '错误',
-            message: 'email 无效',
-            type: 'warning',
+      // generate random vx.x.x format number version
+      generateRandomVersion() {
+        function getRandomNumber() {
+          return Math.random().toFixed(1).split('.')[1];
+        }
+        Array(3)
+          .fill(0)
+          .forEach(() => {
+            this.versions.push(
+              `v${getRandomNumber()}.${getRandomNumber()}.${getRandomNumber()}`,
+            );
           });
+        // 随机位置插入
+        this.versions.splice(
+          Math.floor(Math.random() * this.versions.length),
+          0,
+          this.latestTwVersion,
+        );
+      },
+      getTWLatestVersion() {
+        return new Promise((resolve, reject) => {
+          fetch('https://api.github.com/repos/TiddlyWiki/TiddlyWiki5/tags')
+            .then((res) => res.json())
+            .then((res) => {
+              this.latestTwVersion = res[0].name;
+              resolve();
+            });
+        });
+      },
+      sendPhoto() {
+        if (!this.file) {
           return;
         }
+        const formData = new FormData();
+        formData.append('chat_id', this.chatId);
+        formData.append('caption', this.caption);
+        formData.append('photo', this.file);
+        fetch(this.baseUrl + '/sendPhoto', {
+          method: 'POST',
+          body: formData,
+        })
+          .then((res) => res.json())
+          .then((res) => {
+            this.file = '';
+            this.caption = '';
+            if (res.ok) {
+              ElNotification({
+                title: '成功',
+                message: '图片发送成功',
+                type: 'success',
+              });
+            } else {
+              ElNotification({
+                type: 'error',
+                message: res.description,
+                title: '错误',
+              });
+            }
+          })
+          .catch((err) => {
+            ElNotification({
+              type: 'error',
+              message: err,
+              title: '错误',
+            });
+          });
+      },
+      sendMessage() {
+        this.sendPhoto();
         if (!this.checkToken(token)) {
           ElNotification({
             title: '错误',
@@ -107,7 +183,25 @@ const app = ({ token }) => {
           });
           return;
         }
+        if (!this.checkEmail(this.email)) {
+          ElNotification({
+            title: '错误',
+            message: 'email 无效',
+            type: 'warning',
+          });
+          return;
+        }
+        if (this.version !== this.latestTwVersion) {
+          ElNotification({
+            title: '错误',
+            message: '请选择正确的版本号',
+            type: 'warning',
+          });
+          return;
+        }
         const data = {
+          photo:
+            'https://images.unsplash.com/photo-1720048171180-a8178a198fa8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8',
           chat_id: this.chatId,
           text: `username: ${this.username}\nemail: ${this.email}\ncontent: ${this.text}`,
           // parse_mode: 'HTML', // 'MarkdownV2', 仍然有很多语法不支持导致报错
