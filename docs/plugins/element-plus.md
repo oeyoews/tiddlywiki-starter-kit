@@ -11,4 +11,10 @@ const ElementPlus = require('element-plus.min.js');
 
 // **** your some code
 app.use(ElementPlus)
+
+// const {
+//   ElMessage,
+//   ElMessageBox,
+//   ElNotification,
+// } = require('element-plus.min.js');
 ```
