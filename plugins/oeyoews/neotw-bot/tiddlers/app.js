@@ -7,7 +7,6 @@ module-type: library
 
 const { ElNotification } = require('element-plus.min.js');
 
-// 等价于 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 const getTemplate = require('../neotw-vue3/getTemplate.js');
 const pluginTitle = '$:/plugins/oeyoews/neotw-bot';
 
@@ -27,15 +26,14 @@ const app = ({ token }) => {
         latestTwVersion: '',
         versions: [],
         file: '',
+        actionOptions: ['photo'].map((item) => ({ label: item, value: item })),
         emailSuffixOptions: [
           'gmail.com',
           'outlook.com',
           '163.com',
           'qq.com',
           '126.com',
-        ].map((item) => {
-          return { label: item, value: item };
-        }),
+        ].map((item) => ({ label: item, value: item })),
       };
     },
     mounted() {
@@ -47,8 +45,8 @@ const app = ({ token }) => {
     },
     methods: {
       handleSuccess(e) {
-        this.file = e.raw;
-        this.caption = e.name;
+        this.file = e?.raw;
+        this.caption = e?.name || '';
         ElNotification({
           title: '成功',
           message: e.name + '文件上传本地成功',
@@ -126,6 +124,7 @@ const app = ({ token }) => {
           this.latestTwVersion,
         );
       },
+      // 获取tiddlywiki5最新版本号
       getTWLatestVersion() {
         return new Promise((resolve, reject) => {
           fetch('https://api.github.com/repos/TiddlyWiki/TiddlyWiki5/tags')
@@ -136,14 +135,23 @@ const app = ({ token }) => {
             });
         });
       },
+      // 向tg发送图片
       sendPhoto() {
+        const text = this.text.trim();
+        if (text.startsWith('@photo ')) {
+          const imageSrc = text.split(' ')[text.split(' ').length - 1];
+          if (imageSrc.startsWith('http')) {
+            this.file = imageSrc;
+            this.text = '';
+          }
+        }
         // 暂时不进行版本校验
         if (!this.file) {
           return;
         }
         const formData = new FormData();
         formData.append('chat_id', this.chatId);
-        formData.append('caption', this.caption);
+        this.caption && formData.append('caption', this.caption);
         formData.append('photo', this.file);
         fetch(this.baseUrl + '/sendPhoto', {
           method: 'POST',
@@ -196,7 +204,7 @@ const app = ({ token }) => {
         if (!this.checkEmail(this.email)) {
           ElNotification({
             title: '错误',
-            message: 'email 无效',
+            message: 'Email格式不正确',
             type: 'warning',
           });
           return;
@@ -204,14 +212,12 @@ const app = ({ token }) => {
         if (this.version !== this.latestTwVersion) {
           ElNotification({
             title: '错误',
-            message: '请选择正确的版本号',
+            message: '验证未通过，请选择正确的版本号',
             type: 'warning',
           });
           return;
         }
         const data = {
-          photo:
-            'https://images.unsplash.com/photo-1720048171180-a8178a198fa8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8',
           chat_id: this.chatId,
           text: `username: ${this.username}\nemail: ${this.email}\ncontent: ${this.text}`,
           // parse_mode: 'HTML', // 'MarkdownV2', 仍然有很多语法不支持导致报错
