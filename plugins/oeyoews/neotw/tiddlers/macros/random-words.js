@@ -33,6 +33,6 @@ random words
 
   exports.run = function () {
     const word = randomWords[Math.floor(Math.random() * randomWords.length)];
-    return `<div class="random-words text-sm">${word}</div>`;
+    return `<div class="random-words text-sm  bg-gradient-to-r inline-block from-cyan-400 via-green-400 to-lime-500 text-transparent bg-clip-text">${word}</div>`;
   };
 })();
