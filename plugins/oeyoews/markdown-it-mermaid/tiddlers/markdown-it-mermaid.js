@@ -5,38 +5,89 @@ module-type: markdownit
 
 @see-also https://talk.tiddlywiki.org/t/zoomin-info-messes-with-svg-rendering-somehow/4095/13
 \*/
+class CustomError extends Error {
+  constructor(message) {
+    super(message);
+    this.name = 'CustomError';
+  }
+}
 
-const getHTML = (html) => {
-  return `<div style="text-align:center;" class="mermaid">${html}</div>`;
+function getStyle(html) {
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(html, 'image/svg+xml');
+  const cssText = doc.querySelector('svg').style.cssText;
+  return cssText;
+}
+
+// @see-also: https://mermaid.js.org/config/schema-docs/config.html
+/* const palette = $tw.wiki.getTiddlerText('$:/palette');
+        const darkMode =
+          $tw.wiki.getTiddler(palette)?.fields['color-scheme'] === 'dark'
+            ? true
+            : false; */
+const mermadiOptions = {
+  securityLevel: 'loose',
+  // theme: theme || 'default', //  "default" | "forest" | "dark" | "neutral"
+  startOnLoad: false, // 会自动寻找 mermaid class
+  htmlLabels: true,
+  // darkMode // TODO: NOT work
+  // ...options // 这里会导致渲染问题
+};
+const rendertype = $tw.wiki.getTiddlerText(
+  '$:/config/markdown-it-mermaid/rendertype',
+);
+
+const centerStyle = (html, id) => {
+  return `<div style="text-align:center;" class="_mermaid" id="${id}" >${html}</div>`;
 };
 
-const vanilaMermaid = 'mermaid-930.min.js';
-const hasVanillaMermaid =
-  $tw.modules.types.library.hasOwnProperty(vanilaMermaid);
+const vanilaMermaid = 'mermaid.min.js';
+// const hasVanillaMermaid =
+//   $tw.modules.types.library.hasOwnProperty(vanilaMermaid);
 let mermaid;
-let tiny = false;
 
 const generateRandomString = (length) => {
   const characters =
     'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
   return Array.from({ length }, () =>
-    characters.charAt(Math.floor(Math.random() * characters.length))
+    characters.charAt(Math.floor(Math.random() * characters.length)),
   ).join('');
 };
 
 try {
-  const { mermaidAPI } = hasVanillaMermaid
-    ? require(vanilaMermaid)
-    : require('$:/plugins/orange/mermaid-tw5/mermaid.min.js');
-  mermaid = mermaidAPI;
+  mermaid = require(vanilaMermaid);
+
+  document.addEventListener('mermaidReady', async ({ detail }) => {
+    try {
+      const isValidMermaidText = await mermaid.parse(detail.text, {
+        suppressErrors: false,
+      });
+      if (!isValidMermaidText) {
+        return; // 仅仅在supressErrors为true的情况下
+      }
+      const { svg } = await mermaid.render('fake_' + detail.id, detail.text);
+
+      if (rendertype === 'png') {
+        const img = document.createElement('img');
+        img.src = `data:image/svg+xml,${encodeURIComponent(svg)}`;
+        img.style.cssText = getStyle(svg);
+        img.className = 'spotlight';
+        const el1 = document.getElementById(detail.id);
+        el1.outerHTML = `<div style="text-align:center;" id="${detail.id}"></div>`;
+        const el2 = document.getElementById(detail.id);
+        el2.append(img);
+      } else {
+        el.outerHTML = svg;
+      }
+    } catch (e) {
+      const el = document.getElementById(detail.id);
+      const errNode = `<pre><code>${detail.text}</code>\n<code style="color:red">${e.message}</code></pre>`;
+      el.outerHTML = errNode;
+    }
+  });
 } catch (e) {
   console.warn(e);
 }
-
-// if (window.mermaid) {
-//   mermaid = window.mermaid;
-//   tiny = true;
-// }
 
 const MermaidPlugin = (md) => {
   // extends md api: add mermaid api
@@ -44,112 +95,92 @@ const MermaidPlugin = (md) => {
 
   const defaultFenceRender = md.renderer.rules.fence;
 
+  const getStyle = (html) => {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'image/svg+xml');
+    const cssText = doc.querySelector('svg').style.cssText;
+    return cssText;
+  };
+
   const customMermaidFenceRender = (tokens, idx, options = {}, env, self) => {
     const token = tokens[idx];
-    const code = token.content.trim();
+    const mermaidText = token.content.trim();
     let [type, theme, ...title] = token.info.split(' ');
-    const firstLine = code.split(/\n/)[0].trim();
-    // NOTE: 这种github 不支持
+    const firstLine = mermaidText.split(/\n/)[0].trim();
+    // NOTE: 这种 GitHub's mermaid lib is to low, so not support
     if (
       firstLine === 'gantt' ||
       firstLine === 'sequenceDiagram' ||
-      // firstLine.match(/^graph (?:TB|BT|RL|LR|TD);?$/)
       firstLine.match(/^graph(?: (TB|BT|RL|LR|TD))?(;)?$/)
     ) {
       type = 'mermaid';
     }
 
-    const notSupportedTypes = [
-      'timeline',
-      'quadrantChart',
-      'mindmap',
-      'zenuml',
-      'sankey-beta'
-    ];
-
-    if (notSupportedTypes.includes(firstLine)) {
-      return `<pre style="color:#ff1919;">${firstLine} not supported by mermaid now</pre>`;
-    }
-
     if (type.trim() !== 'mermaid') {
+      // 使用默认的 fence 规则
       return defaultFenceRender(tokens, idx, (options = {}), env, self);
     } else if (type.trim() === 'mermaid') {
-      // return 在外面会导致terser 报错
+      const id = 'mermaid_99' + generateRandomString(5);
+      // 提示安装 mermaid-lib
       if (!mermaid) {
-        // console.warn('please install orange/mermaid-tw5 tiddlywiki plugin');
-        return `<pre style="color:red;">${code}\n Maybe you forget install a mermaid library plugin.</pre>`;
+        return `<pre style="color:red;">${mermaidText}\n Maybe you forget install a mermaid library plugin.</pre>`;
       }
 
-      const id = 'mermaid_' + generateRandomString(5);
+      mermaid.initialize(mermadiOptions);
+      const event = new CustomEvent('mermaidReady', {
+        detail: {
+          id,
+          text: mermaidText,
+        },
+      });
+      document.dispatchEvent(event);
+      // 自定义渲染 mermaid, 通过自定义事件触发
+      return `<pre id="${id}">${mermaidText}</pre>`;
+      // @deprecated
       try {
-        // @see-also: https://mermaid.js.org/config/schema-docs/config.html
-        /* const palette = $tw.wiki.getTiddlerText('$:/palette');
-        const darkMode =
-          $tw.wiki.getTiddler(palette)?.fields['color-scheme'] === 'dark'
-            ? true
-            : false; */
-        const config = {
-          securityLevel: 'loose',
-          theme: theme || 'default', //  "default" | "forest" | "dark" | "neutral"
-          startOnLoad: false, // 会自动寻找 mermaid class
-          htmlLabels: true
-          // TODO: NOT work
-          // darkMode
-          // ...options // 这里会导致渲染问题
-        };
-        mermaid.initialize(config);
+        // mermaid.initialize(mermadiOptions);
 
         // 或者通过查询mermmaid_ 的id个数, 或者判断是否存在相同的id;
         let imageHTML = '';
         let domNode = '';
         const imageAttrs = [];
 
-        const rendertype = $tw.wiki.getTiddlerText(
-          '$:/config/markdown-it-mermaid/rendertype'
-        );
-
-        if (tiny) {
-          // mermaid.render(id, code, document.getElementById('test'));
-        } else {
-          // NOTE: if use async here, markdownit-extensions-startup dont fit this, shouldbe singly load mermaid by md with async
-          mermaid.render(id, code, (html) => {
-            imageHTML = html;
-
-            if (rendertype !== 'png') return;
-
-            const svg = this.document.getElementById(id);
-            if (svg) {
-              imageAttrs.push(['style', `max-width:${svg.style.maxWidth};`]);
-
-              imageAttrs.push([
-                'src',
-                `data:image/svg+xml,${encodeURIComponent(html)}`
-              ]);
-            }
-          });
+        const { svg } = mermaid.render(id, mermaidText);
+        imageHTML = svg;
+        if (!imageHTML) {
+          throw new CustomError(mermaidText);
         }
-        if (!imageHTML) return `<pre style="color:#ff1919;">${code}</pre>`;
 
         switch (rendertype) {
           case 'svg':
-            domNode = getHTML(imageHTML);
+            domNode = centerStyle(imageHTML, id);
             break;
           case 'png':
-            domNode = getHTML(
-              `<img ${self.renderAttrs({ attrs: imageAttrs })} />`
+            const cssText = getStyle(imageHTML);
+            imageAttrs.push(['style', cssText]);
+
+            imageAttrs.push([
+              'src',
+              `data:image/svg+xml,${encodeURIComponent(imageHTML)}`,
+            ]);
+
+            domNode = centerStyle(
+              `<img ${self.renderAttrs({ attrs: imageAttrs })} />`,
             );
             break;
           default:
-            domNode = getHTML(imageHTML);
+            domNode = centerStyle(imageHTML);
             break;
         }
 
         return domNode;
       } catch (e) {
-        // 移除 mermaid 由于渲染错误善生的错误节点.
-        const target = document.getElementById('d' + id);
-        target && target.parentNode.removeChild(target);
-        const errormessage = e.toString().split('\n').slice(1).join('\n');
+        let errormessage = '';
+        if (e instanceof CustomError) {
+          errormessage = e.message;
+        } else {
+          errormessage = e.message.toString().split('\n').slice(1).join('\n');
+        }
         return `<pre style="color:#ff1919;">${errormessage}</pre>`;
       }
     }

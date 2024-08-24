@@ -13,7 +13,6 @@ class MediumZoomWidget extends Widget {
     super(parseTreeNode, options);
   }
 
-  // initialise() {}
   render(parent, nextSibling) {
     if (!$tw.browser) return;
 
@@ -44,7 +43,7 @@ class MediumZoomWidget extends Widget {
   refresh(changedTiddlers) {
     if (
       Object.keys(changedTiddlers).filter((item) =>
-        item.startsWith('$:/state/tab')
+        item.startsWith('$:/state/tab'),
       ).length > 0
     ) {
       this.refreshSelf();

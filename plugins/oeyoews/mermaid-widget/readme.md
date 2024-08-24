@@ -1,6 +1,8 @@
 ## Mermaid widget
 
-> 提供 mermaid widget.
+<$mermaid2 rendertype="png" theme="forest">
+info
+</$mermaid2>
 
 ```html
 <$mermaid2 rendertype="png" theme="forest">
