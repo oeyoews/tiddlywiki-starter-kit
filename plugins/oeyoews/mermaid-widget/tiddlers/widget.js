@@ -43,7 +43,7 @@ class MermaidWidget extends Widget {
     return str.trim().replace(/^\s*[\r\n]/gm, '');
   }
 
-  getconfig(theme) {
+  getconfig(theme = 'default') {
     return {
       securityLevel: 'loose',
       theme,
@@ -63,7 +63,10 @@ class MermaidWidget extends Widget {
 
       try {
         this.mermaid = require(mermaidLibFile);
-        window.mermaid = this.mermaid;
+        if (this.mermaid.render) {
+          window.mermaid = this.mermaid;
+          this.mermaid.initialize(this.getconfig());
+        }
       } catch (e) {
         console.warn(e);
       }
@@ -76,7 +79,6 @@ class MermaidWidget extends Widget {
     let domNode;
 
     try {
-      this.mermaid.initialize(this.getconfig(this.theme));
       const isValidMermaidText = await mermaid.parse(mermaidText, {
         suppressErrors: false,
       });
