@@ -10,5 +10,6 @@
   "meat#disabled": "yes",
   "qrcode": "yes",
   "created": "2024-01-11",
+  "dependents": "$:/plugins/oeyoews/mermaid-lib",
   "list": "readme"
 }

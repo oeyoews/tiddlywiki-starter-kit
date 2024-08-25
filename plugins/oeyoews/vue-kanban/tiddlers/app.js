@@ -5,7 +5,7 @@ module-type: library
 
 \*/
 
-const { reactive, ref } = window.Vue;
+// const { reactive, ref } = window.Vue;
 
 const {
   ElMessage,

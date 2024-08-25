@@ -2,7 +2,7 @@
   "title": "$:/plugins/oeyoews/markdown-it-mermaid",
   "description": "markdown-it-mermaid",
   "author": "oeyoews",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "core-version": ">=5.3.0",
   "type": "application/json",
   "plugin-type": "plugin",
@@ -10,6 +10,8 @@
   "meat#disabled": "yes",
   "qrcode": "yes",
   "created": "2024-01-28",
+  "updated": "2024-08-25",
   "parent-plugin": "$:/plugins/oeyoews/markdown-extensions-startup",
+  "dependents": "$:/plugins/oeyoews/mermaid-lib",
   "list": "readme"
 }

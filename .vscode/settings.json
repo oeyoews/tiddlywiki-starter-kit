@@ -1,4 +1,9 @@
 {
+  "workbench.editor.customLabels.patterns": {
+    "**/plugins/**/plugin.info": "${dirname} - plugin.info",
+    // "**/plugins/**/tiddlers/app.js": "${dirname} - app.js",
+    // "**/plugins/**/widget.js": "${dirname} - widget.js",
+  },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },

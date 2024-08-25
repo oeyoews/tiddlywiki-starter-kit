@@ -77,7 +77,6 @@ class MermaidWidget extends Widget {
 
     try {
       this.mermaid.initialize(this.getconfig(this.theme));
-
       const isValidMermaidText = await mermaid.parse(mermaidText, {
         suppressErrors: false,
       });
@@ -136,5 +135,5 @@ class MermaidWidget extends Widget {
   }
 }
 
-exports.mermaid2 = MermaidWidget;
 exports.mermaid = MermaidWidget;
+exports.mermaid2 = MermaidWidget;
