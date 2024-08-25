@@ -45,7 +45,8 @@ const mermadiOptions = {
   theme: 'default', // theme: theme || 'default', //  "default" | "forest" | "dark" | "neutral"
   startOnLoad: false, // 会自动寻找 mermaid class
   htmlLabels: true,
-  logLevel: 4, // https://mermaid.js.org/config/schema-docs/config.html#loglevel
+  logLevel: 5, // https://mermaid.js.org/config/schema-docs/config.html#loglevel
+  suppressErrorRendering: true,
   // darkMode // TODO: NOT work
   // ...options // 这里会导致渲染问题
 };
@@ -54,7 +55,7 @@ const rendertype = $tw.wiki.getTiddlerText(
 );
 
 const centerStyle = (html, id) => {
-  return `<div style="text-align:center;" class="_mermaid" id="${id}" >${html}</div>`;
+  return `<div style="text-align:center;" class="_mermaid" >${html}</div>`;
 };
 
 const vanilaMermaid = 'mermaid.min.js';
@@ -124,6 +125,7 @@ const MermaidPlugin = (md) => {
   };
 
   const customMermaidFenceRender = (tokens, idx, options = {}, env, self) => {
+    console.log('开始渲染了');
     const token = tokens[idx];
     const mermaidText = token.content.trim();
     let [type, theme, ...title] = token.info.split(' ');
@@ -141,7 +143,7 @@ const MermaidPlugin = (md) => {
       // 使用默认的 fence 规则
       return defaultFenceRender(tokens, idx, (options = {}), env, self);
     } else if (type.trim() === 'mermaid') {
-      const id = 'mermaid_99' + generateRandomString(5);
+      const id = 'mermaid_' + generateRandomString(5);
       // 提示安装 mermaid-lib
       if (!mermaid) {
         return `<pre style="color:red;">${mermaidText}\n Maybe you forget install a mermaid library plugin.</pre>`;
