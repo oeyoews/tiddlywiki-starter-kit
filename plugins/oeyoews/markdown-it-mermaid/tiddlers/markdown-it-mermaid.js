@@ -45,6 +45,7 @@ const mermadiOptions = {
   theme: 'default', // theme: theme || 'default', //  "default" | "forest" | "dark" | "neutral"
   startOnLoad: false, // 会自动寻找 mermaid class
   htmlLabels: true,
+  logLevel: 4, // https://mermaid.js.org/config/schema-docs/config.html#loglevel
   // darkMode // TODO: NOT work
   // ...options // 这里会导致渲染问题
 };

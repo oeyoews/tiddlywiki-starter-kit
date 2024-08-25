@@ -49,6 +49,7 @@ class MermaidWidget extends Widget {
       theme,
       startOnLoad: false,
       htmlLabels: true,
+      logLevel: 4, // https://mermaid.js.org/config/schema-docs/config.html#loglevel
     };
   }
 
