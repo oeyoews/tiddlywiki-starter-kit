@@ -3,14 +3,9 @@ title: $:/plugins/oeyoews/markdown-it-mermaid/markdown-it-mermaid.js
 type: application/javascript
 module-type: markdownit
 
+// TODO: 如果取消编辑， 没有什么改变的话， 就不会重新渲染， 回车保存会重新渲染, 这会导致mermaid无法通过自定义事件渲染
 @see-also https://talk.tiddlywiki.org/t/zoomin-info-messes-with-svg-rendering-somehow/4095/13
 \*/
-class CustomError extends Error {
-  constructor(message) {
-    super(message);
-    this.name = 'CustomError';
-  }
-}
 
 function getStyle(html) {
   const parser = new DOMParser();
@@ -114,15 +109,11 @@ try {
   console.warn(e);
 }
 
+function setMermaidType(text) {}
+
 const MermaidPlugin = (md) => {
   // md.mermaid = mermaid;
   const defaultFenceRender = md.renderer.rules.fence;
-  const getStyle = (html) => {
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(html, 'image/svg+xml');
-    const cssText = doc.querySelector('svg').style.cssText;
-    return cssText;
-  };
 
   const customMermaidFenceRender = (tokens, idx, options = {}, env, self) => {
     console.log('开始渲染了');
@@ -130,9 +121,12 @@ const MermaidPlugin = (md) => {
     const mermaidText = token.content.trim();
     let [type, theme, ...title] = token.info.split(' ');
     const firstLine = mermaidText.split(/\n/)[0].trim();
+    console.log(firstLine);
     // NOTE: 这种 GitHub's mermaid lib is to low, so not support
     if (
+      // 方便不用手动写 mermaid
       firstLine === 'gantt' ||
+      firstLine === 'info' ||
       firstLine === 'sequenceDiagram' ||
       firstLine.match(/^graph(?: (TB|BT|RL|LR|TD))?(;)?$/)
     ) {
@@ -140,6 +134,7 @@ const MermaidPlugin = (md) => {
     }
 
     if (type.trim() !== 'mermaid') {
+      console.log('不是 mermaid');
       // 使用默认的 fence 规则
       return defaultFenceRender(tokens, idx, (options = {}), env, self);
     } else if (type.trim() === 'mermaid') {
@@ -150,55 +145,8 @@ const MermaidPlugin = (md) => {
       }
 
       dispatchEvent(id, mermaidText);
-      // 自定义渲染 mermaid, 通过自定义事件触发
       return `<pre style="opacity:0;" id="${id}">${mermaidText}</pre>`;
-      // @deprecated
-      try {
-        // mermaid.initialize(mermadiOptions);
-
-        // 或者通过查询mermmaid_ 的id个数, 或者判断是否存在相同的id;
-        let imageHTML = '';
-        let domNode = '';
-        const imageAttrs = [];
-
-        const { svg } = mermaid.render(id, mermaidText);
-        imageHTML = svg;
-        if (!imageHTML) {
-          throw new CustomError(mermaidText);
-        }
-
-        switch (rendertype) {
-          case 'svg':
-            domNode = centerStyle(imageHTML, id);
-            break;
-          case 'png':
-            const cssText = getStyle(imageHTML);
-            imageAttrs.push(['style', cssText]);
-
-            imageAttrs.push([
-              'src',
-              `data:image/svg+xml,${encodeURIComponent(imageHTML)}`,
-            ]);
-
-            domNode = centerStyle(
-              `<img ${self.renderAttrs({ attrs: imageAttrs })} />`,
-            );
-            break;
-          default:
-            domNode = centerStyle(imageHTML);
-            break;
-        }
-
-        return domNode;
-      } catch (e) {
-        let errormessage = '';
-        if (e instanceof CustomError) {
-          errormessage = e.message;
-        } else {
-          errormessage = e.message.toString().split('\n').slice(1).join('\n');
-        }
-        return `<pre style="color:#ff1919;">${errormessage}</pre>`;
-      }
+      // `<img ${self.renderAttrs({ attrs: imageAttrs })} />`,
     }
   };
 

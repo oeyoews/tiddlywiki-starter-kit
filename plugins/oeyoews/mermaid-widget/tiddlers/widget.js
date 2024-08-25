@@ -1,7 +1,7 @@
 /*\
 title: $:/plugins/oeyoews/mermaid-widget/widget.js
 type: application/javascript
-module-type: widget
+// module-type: widget
 
 mermaid widget
 \*/
@@ -19,6 +19,7 @@ class MermaidWidget extends Widget {
   async render(parent, nextSibling) {
     this.computeAttributes();
     this.execute();
+    this.parentDomNode = parent;
 
     const domNode = this.document.createElement('div');
     if (domNode.isTiddlyWikiFakeDom) {
@@ -34,14 +35,21 @@ class MermaidWidget extends Widget {
     parent.insertBefore(domNode, nextSibling);
     this.renderChildren(domNode, null);
     this.domNodes.push(domNode);
-    domNode.outerHTML = await this.renderMermaid(
-      this.removeEmptyLines(domNode.textContent),
-    );
+
+    // console.log(domNode.textContent);
+    if (domNode.innerHTML) {
+      domNode.innerHTML = await this.renderMermaid(
+        this.removeEmptyLines(domNode.textContent),
+      );
+    } else {
+      console.log('domNode.outerHTML is null');
+    }
   }
 
   removeEmptyLines(str) {
     return str.trim().replace(/^\s*[\r\n]/gm, '');
   }
+  // renderMermaidNode(parent, nextSibling) {}
 
   getconfig(theme = 'default') {
     return {
