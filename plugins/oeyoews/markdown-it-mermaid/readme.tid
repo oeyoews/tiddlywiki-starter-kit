@@ -2,3 +2,11 @@ title: $:/plugins/oeyoews/markdown-it-mermaid
 
 <!-- https://mermaid.js.org/config/usage.html -->
 [[文档|https://neotw.vercel.app/docs/plugins/markdown-it-mermaid]]
+
+```mermaid
+graph TB;
+b[mermaid-widget]
+c[markdown-it-mermaid]
+a(Mermaid-lib)
+a--> b & c
+```
