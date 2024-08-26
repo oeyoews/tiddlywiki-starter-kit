@@ -2,6 +2,9 @@
 
 <img src="./img/mermaid.webp" class="rounded-md mt-2" alt=""/>
 
+> [!WARNING]
+> 此插件已停止维护。 请使用 oeyoews/mermaid 插件
+
 > 一个 markdownit 的 tiddlywiki mermaid 插件 .
 
 ## 在线地址
