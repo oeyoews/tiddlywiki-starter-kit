@@ -61,6 +61,7 @@ exports.startup = function () {
       // NOTE: 直接替换domeNode, 会导致removeChild 报错
       // domNode.children[0].outerHTML = svg2Img(centerSvg(svg)); // 替换成image, 需要转换base64, 这可能会导致卡顿
       domNode.children[0].outerHTML = centerSvg(svg);
+      domNode.style.backgroundColor = 'transparent'; // remove <pre> background style
     } catch (e) {
       domNode.children[0].innerHTML = e.message;
       domNode.children[0].style.color = 'red';
