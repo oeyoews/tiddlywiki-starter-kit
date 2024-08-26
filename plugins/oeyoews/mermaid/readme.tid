@@ -5,3 +5,7 @@ description: mermaid
 ```mermaid
 info
 ```
+
+!! NOTE
+
+zenuml is not supported here: https://github.com/mermaid-js/mermaid-cli/issues/564
