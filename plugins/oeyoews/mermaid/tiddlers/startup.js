@@ -16,6 +16,7 @@ exports.startup = function () {
     const parser = new DOMParser();
     const doc = parser.parseFromString(svg, 'image/svg+xml');
     const style = doc.querySelector('svg').style;
+    // @NOTE: 为了不增加新的节点， 这里直接修改了原有svg的style, 不适合直接导出svg
     style.display = 'block';
     style.margin = '0 auto';
     return doc.documentElement.outerHTML;
