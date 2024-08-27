@@ -45,11 +45,13 @@ sequenceDiagram
     participant website as 浏览器
     participant git as Git
     participant github as GitHub
-
-    user ->> github : 克隆 TiddlyWiki5 Starter Kit 仓库, 安装依赖
+    user ->>+ github : 克隆 TiddlyWiki5 Starter Kit 仓库, 安装依赖
     user ->> nodejs : 启动 TiddlyWiki5 Node.js
-    nodejs ->> website : 进入 TiddlyWiki
-    website -->> nodejs : 文件变动同步到项目文件夹 /tiddlers
+    nodejs ->>+ website : 进入 TiddlyWiki
+    website -->>- nodejs : 文件变动同步到项目文件夹 /tiddlers
+    loop
+		nodejs --> website:文件同步
+	end
     user ->> git : 提交 /tiddlers 文件
     git ->> github : 保存到 GitHub
 ```
