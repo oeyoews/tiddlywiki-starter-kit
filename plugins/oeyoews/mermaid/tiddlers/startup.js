@@ -16,16 +16,17 @@ exports.startup = function () {
     const parser = new DOMParser();
     const doc = parser.parseFromString(svg, 'image/svg+xml');
     const style = doc.querySelector('svg').style;
-    // @NOTE: 为了不增加新的节点， 这里直接修改了原有svg的style, 不适合直接导出svg
     style.display = 'block';
     style.margin = '0 auto';
     return doc.documentElement.outerHTML;
   }
+
   function getStyleFromSvg(svg) {
     const parser = new DOMParser();
     const doc = parser.parseFromString(svg, 'image/svg+xml');
     return doc.querySelector('svg').style.cssText;
   }
+
   function svg2Img(svg) {
     const style = getStyleFromSvg(svg);
     return `<img src="data:image/svg+xml,${encodeURIComponent(svg)}" class="spotlight" style="${style}"/>`;
@@ -40,7 +41,7 @@ exports.startup = function () {
       theme: 'default',
       startOnLoad: false,
       htmlLabels: true,
-      logLevel: 5, // https://mermaid.js.org/config/schema-docs/config.html#loglevel
+      logLevel: 5,
       suppressErrorRendering: true,
     };
     mermaid.initialize(options);
@@ -48,21 +49,39 @@ exports.startup = function () {
     const domNode = this.domNodes[0];
     const mermaidText = domNode.textContent;
 
-    // TODO: 生成image
     try {
-      // const isValidMermaidText =
       await mermaid.parse(mermaidText, {
         suppressErrors: false,
       });
 
-      const { svg } = await mermaid.render(
-        'mermaid_' + Date.now(),
-        mermaidText,
-      );
-      // NOTE: 直接替换domeNode, 会导致removeChild 报错
-      // domNode.children[0].outerHTML = svg2Img(centerSvg(svg)); // 替换成image, 需要转换base64, 这可能会导致卡顿
+      const mermaidId = 'mermaid_' + Date.now();
+      const { svg } = await mermaid.render(mermaidId, mermaidText);
+
       domNode.children[0].outerHTML = centerSvg(svg);
-      domNode.style.backgroundColor = 'transparent'; // remove <pre> background style
+      domNode.style.backgroundColor = 'transparent';
+
+      // 放大和缩小功能
+      const svgWrapper = document.getElementById(mermaidId);
+      let scale = 1;
+
+      const updateScale = (newScale) => {
+        scale = newScale;
+        svgWrapper.style.transform = `scale(${scale})`;
+      };
+
+      // 添加鼠标滚轮缩放功能
+      svgWrapper.addEventListener('wheel', (event) => {
+        event.preventDefault();
+        const delta = Math.sign(event.deltaY) * -0.1;
+        updateScale(Math.max(0.5, scale + delta));
+      });
+      // double click to reset transform
+      svgWrapper.addEventListener('contextmenu', (e) => {
+        e.stopPropagation();
+        e.preventDefault();
+        updateScale(1);
+      });
+      // 拖拽
     } catch (e) {
       domNode.children[0].innerHTML = e.message;
       domNode.children[0].style.color = 'red';
