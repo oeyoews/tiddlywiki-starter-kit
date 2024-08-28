@@ -63,6 +63,8 @@ exports.startup = function () {
       // 放大和缩小功能
       const svgWrapper = document.getElementById(mermaidId);
       let scale = 1;
+      let isDragging = false;
+      let startY, startTop;
 
       const updateScale = (newScale) => {
         scale = newScale;
@@ -72,8 +74,9 @@ exports.startup = function () {
       // 添加鼠标滚轮缩放功能
       svgWrapper.addEventListener('wheel', (event) => {
         event.preventDefault();
-        const delta = Math.sign(event.deltaY) * -0.1;
-        updateScale(Math.max(0.5, scale + delta));
+        const delta = Math.sign(event.deltaY) * -0.05; // 更小的缩放步长
+        const newScale = Math.max(0.5, Math.min(3, scale + delta)); // 限制最小值为 0.5，最大值为 3
+        updateScale(newScale);
       });
       // double click to reset transform
       svgWrapper.addEventListener('contextmenu', (e) => {
@@ -81,6 +84,28 @@ exports.startup = function () {
         e.preventDefault();
         updateScale(1);
       });
+
+      // 拖拽功能
+      svgWrapper.addEventListener('mousedown', (event) => {
+        isDragging = true;
+        startY = event.clientY;
+        startTop = svgWrapper.offsetTop;
+        svgWrapper.style.cursor = 'grabbing';
+        event.preventDefault();
+      });
+
+      document.addEventListener('mousemove', (event) => {
+        if (isDragging) {
+          const deltaY = event.clientY - startY;
+          svgWrapper.style.top = `${startTop + deltaY}px`;
+        }
+      });
+
+      document.addEventListener('mouseup', () => {
+        isDragging = false;
+        svgWrapper.style.cursor = 'move';
+      });
+
       // 拖拽
     } catch (e) {
       domNode.children[0].innerHTML = e.message;
