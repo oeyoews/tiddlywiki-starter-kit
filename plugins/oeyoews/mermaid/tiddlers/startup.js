@@ -63,23 +63,6 @@ exports.startup = function () {
 
       // 开启放大和缩小,拖拽
       zoomMermaid(domNode);
-
-      // 放大和缩小功能
-      // const svgWrapper = document.getElementById(mermaidId);
-      // let scale = 1;
-
-      // const updateScale = (newScale) => {
-      //   scale = newScale;
-      //   svgWrapper.style.transform = `scale(${scale})`;
-      // };
-
-      // svgWrapper.addEventListener('contextmenu', (e) => {
-      //   e.stopPropagation();
-      //   e.preventDefault();
-      //   updateScale(1);
-      // });
-
-      // 拖拽
     } catch (e) {
       domNode.children[0].innerHTML = e.message;
       domNode.children[0].style.color = 'red';
