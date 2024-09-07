@@ -12,10 +12,36 @@ type: text/css
 }
 
 .markdown-alert {
+  position: relative;
   padding: 0.5rem 1rem;
   margin-bottom: 16px;
   color: inherit;
-  border-left: .25em solid #888;
+  border: none !important;
+}
+
+.left-bar {
+  position: absolute;
+  height: 100%;
+  border-radius: 10px;
+  top: -3px;
+  left: -4px;
+  width: 4px;
+}
+
+.left-bar-note {
+  background: var(--color-note);
+}
+.left-bar-tip {
+  background: var(--color-tip);
+}
+.left-bar-warning {
+  background: var(--color-warning);
+}
+.left-bar-caution {
+  background: var(--color-caution);
+}
+.left-bar-important {
+  background: var(--color-important);
 }
 
 .markdown-alert>:first-child {
@@ -41,9 +67,7 @@ type: text/css
   fill: currentColor;
 }
 
-.markdown-alert.markdown-alert-note {
-  border-left-color: var(--color-note);
-}
+.markdown-alert.markdown-alert-note { }
 
 .markdown-alert.markdown-alert-note .markdown-alert-title {
   color: var(--color-note);
