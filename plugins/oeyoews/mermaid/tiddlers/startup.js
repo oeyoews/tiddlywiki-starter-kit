@@ -60,8 +60,9 @@ exports.startup = function () {
 
       domNode.children[0].outerHTML = centerSvg(svg);
       domNode.style.backgroundColor = 'transparent';
+      domNode.style.border = 'none';
 
-      // 开启放大和缩小,拖拽
+      // 开启放大和缩小, 拖拽
       zoomMermaid(domNode);
     } catch (e) {
       domNode.children[0].innerHTML = e.message;

@@ -5,7 +5,7 @@ module-type: library
 
 \*/
 
-const { ref } = window.Vue;
+// const { ref } = window.Vue;
 
 // 等价于 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 const getTemplate = require('../neotw-vue3/getTemplate.js');
