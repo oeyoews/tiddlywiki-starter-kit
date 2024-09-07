@@ -19,37 +19,54 @@ type: text/css
   border: none !important;
 }
 
-.left-bar {
-  position: absolute;
-  height: 100%;
-  border-radius: 10px;
-  top: -3px;
-  left: -4px;
-  width: 4px;
+.markdown-alert-note::after,
+.markdown-alert-tip::after,
+.markdown-alert-warning::after,
+.markdown-alert-important::after,
+.markdown-alert-caution::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 5px;
+    height: 100%;
+    border-radius: 6px;
 }
 
-.left-bar-note {
+.markdown-alert-note::after {
   background: var(--color-note);
 }
-.left-bar-tip {
-  background: var(--color-tip);
+.markdown-alert-tip::after {
+  background: var(--color-note);
 }
-.left-bar-warning {
-  background: var(--color-warning);
-}
-.left-bar-caution {
-  background: var(--color-caution);
-}
-.left-bar-important {
+.markdown-alert-important::after {
   background: var(--color-important);
 }
-
-.markdown-alert>:first-child {
-  margin-top: 0
+.markdown-alert-warning::after {
+  background: var(--color-warning);
+}
+.markdown-alert-caution::after {
+  background: var(--color-caution);
 }
 
-.markdown-alert>:last-child {
-  margin-bottom: 0
+.markdown-alert.markdown-alert-important::after {
+  background-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
 }
 
 .markdown-alert .markdown-alert-title {
@@ -58,7 +75,6 @@ type: text/css
   align-items: center;
   line-height: 1
 }
-
 .markdown-alert .markdown-alert-title .octicon {
   margin-right: 0.5rem;
   display: inline-block;
@@ -67,40 +83,10 @@ type: text/css
   fill: currentColor;
 }
 
-.markdown-alert.markdown-alert-note { }
 
-.markdown-alert.markdown-alert-note .markdown-alert-title {
-  color: var(--color-note);
+.markdown-alert>:first-child {
+  margin-top: 0
 }
-
-.markdown-alert.markdown-alert-important {
-  border-left-color: var(--color-important);
-}
-
-.markdown-alert.markdown-alert-important .markdown-alert-title {
-  color: var(--color-important);
-}
-
-.markdown-alert.markdown-alert-warning {
-  border-left-color: var(--color-warning);
-}
-
-.markdown-alert.markdown-alert-warning .markdown-alert-title {
-  color: var(--color-warning);
-}
-
-.markdown-alert.markdown-alert-tip {
-  border-left-color: var(--color-tip);
-}
-
-.markdown-alert.markdown-alert-tip .markdown-alert-title {
-  color: var(--color-tip);
-}
-
-.markdown-alert.markdown-alert-caution {
-  border-left-color: var(--color-caution);
-}
-
-.markdown-alert.markdown-alert-caution .markdown-alert-title {
-  color: var(--color-caution);
+.markdown-alert>:last-child {
+  margin-bottom: 0
 }

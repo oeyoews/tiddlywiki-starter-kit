@@ -67,7 +67,7 @@ const MarkdownItGitHubAlerts = (md, options = {}) => {
   });
   md.renderer.rules.alert_open = function (tokens, idx) {
     const { title, type, icon } = tokens[idx].meta;
-    return `<div class="${classPrefix} ${classPrefix}-${type}"><p class="${classPrefix}-title">${icon}${title}</p><div class="left-bar left-bar-${type}"></div>`;
+    return `<div class="${classPrefix} ${classPrefix}-${type}"><p class="${classPrefix}-title">${icon}${title}</p>`;
   };
 };
 function capitalize(str) {
