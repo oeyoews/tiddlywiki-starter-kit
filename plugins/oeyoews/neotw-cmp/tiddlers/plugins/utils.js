@@ -19,7 +19,7 @@ const closeCmp = (domNode) => {
   domNode.style.display = 'none';
 };
 
-function debouncePromise(fn, time = 300) {
+function debouncePromise(fn, time = 150) {
   let timerId = undefined;
 
   return function debounced(...args) {
