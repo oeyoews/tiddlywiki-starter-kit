@@ -55,7 +55,6 @@ const oeyoewsPlugins = [
   'markdown-it-math',
   'markdown-it-pangu',
   'medium-zoom',
-  'blockquote',
   'neotw-draft-better',
   // 'confetti-background',
   // 'confetti',
