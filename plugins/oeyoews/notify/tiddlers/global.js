@@ -4,7 +4,6 @@ type: application/javascript
 module-type: global
 
 \*/
-const Notify = require('simple-notify.min.js');
 const defaultOptions = require('./options');
 
 class NotifyWidget {
@@ -24,8 +23,13 @@ class NotifyWidget {
       }, {});
     };
 
+    const Notify = require('simple-notify.min.js');
     this.notifyInstance = new Notify(
-      Object.assign({}, defaultOptions, convertBooleanStringsToBoolean(options))
+      Object.assign(
+        {},
+        defaultOptions,
+        convertBooleanStringsToBoolean(options),
+      ),
     );
   }
 

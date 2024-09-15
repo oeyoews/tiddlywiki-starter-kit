@@ -48,34 +48,9 @@ this.parentWidget.dispatchEvent({
 	om-notify
 </$button>
 
-## Parameters
-
-<div class="prose prose-indigo max-w-none">
-
-| Parameter                                   | Type    | Values                                                                                                                                       |    Default    |
-| :------------------------------------------ | :------ | :------------------------------------------------------------------------------------------------------------------------------------------- | :-----------: |
-| `status`                                    | String  | `'error'`, `'warning'`, `'success'`                                                                                                          |    `null`     |
-| `title`                                     | String  |                                                                                                                                              |    `null`     |
-| `text`                                      | String  | You can send any type of html.                                                                                                               |    `null`     |
-| `customIcon`                                | String  | You can send any type of html.                                                                                                               |    `null`     |
-| `customClass`                               | String  |                                                                                                                                              |    `null`     |
-| `speed`                                     | Number  | transition-duration in milliseconds.                                                                                                         |      300      |
-| `effect`                                    | String  | `'fade'`, `'slide'`                                                                                                                          |   `'fade'`    |
-| `showIcon`                                  | Boolean |                                                                                                                                              |     true      |
-| `showCloseButton`                           | Boolean |                                                                                                                                              |     true      |
-| `autoclose`                                 | Boolean |                                                                                                                                              |     false     |
-| `autotimeout` (valid only with `autoclose`) | Number  |                                                                                                                                              |     3000      |
-| `gap` (margin between notifications)        | Number  |                                                                                                                                              |      20       |
-| `distance` (distance to edges)              | Number  |                                                                                                                                              |      20       |
-| `type` (just for design)                    | Number  | 1, 2, 3                                                                                                                                      |       1       |
-| `position`                                  | String  | Combine x and y position. `'left'`, `'right'`, `'top'`, `'bottom'`, `'x-center'`, `'y-center'` or use only `'center'` to center both x and y | `'right top'` |
-
-<sub>All parameters are optional but you must specify 'title' or 'text' at least.</sub>
-
-## Functions
-
-| Function | Description                                                       |
-| :------- | :---------------------------------------------------------------- |
-| close()  | You can close the notification manually using the close function. |
-
 </div>
+
+<!-- for dev -->
+<!-- * remove .autoclose::before to hide bar -->
+<!-- * simple-notify.mjs -->
+<!-- module.export = w; -->

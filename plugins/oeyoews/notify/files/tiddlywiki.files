@@ -6,7 +6,8 @@
 				"title": "simple-notify.min.js",
 				"module-type": "library",
 				"type": "application/javascript"
-			}
+			},
+			"suffix": "\nmodule.exports=Notify;\n"
 		},
 		{
 			"file": "simple-notify.min.css",
