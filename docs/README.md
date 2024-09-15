@@ -13,6 +13,10 @@ Your browser does not support the audio element.
 什么是 TiddlyWiki Starter Kit?, 可以简单理解成 NextJs 和 React, Nuxt 和 vue, Svelte 和 SvelteKit 之间的关系(what is TiddlyWiki Starter Kit?, can be simplified as nextjs and react, nuxt and vue, svelte and sveltekit)
 :::
 
+<!-- * 像很多人一样， 我也对记笔记很感兴趣。曾经为了找到一款好用的软件，经常到处尝试各类笔记软件， 虽然各有优点， 但是我总感觉哪里不对， 甚至有的软件在我进去看到的第一眼我就关掉了它。 后来我才发现， 原来是笔记内容要么是过于依赖软件本身， 要么是软件本身使用过于繁琐，界面过于花哨。要么是软件扩展性不够好， 甚至没有。 我想同时满足我这些条件的软件尚且不存在。 但是直到我发现了tiddlywiki, 当时的感觉就好比哥伦布发现新大陆， 心中狂喜， 豪不夸张的说，它满足了我对所有笔记软件的幻想， 当然它有很多不足， 但是在我和tiddlywiki的磨合中， 通过我不断的改进， 这个笔记软件已经可以满足我所有的需求了。真的，这是我的最后一款比较软件。 -->
+
+<!-- * 其实， 在我第一次看到tiddlywiki时， 那是一次偶然， 我完全不知道那个网页就是tiddlywiki, 只是当时觉得，它优点不太一样。然后我就随手关掉了它。 不知道过了多久， 我看到了太微文档。 从此开始了不解之缘 -->
+
 * 其实在写这个之前，我还写了 [tw5](https://github.com/oeyoews/tw5), 算是前身. Nodejs TiddlyWiki 启动 TiddlyWiki5 也就是一条命令行的事，很简单，但是为了满足自己的各种需求，比如启动部署，更多的功能，tiddlywiki starter kit 就经过多个版本的迭代诞生了。
 * (actually, tiddlywiki starter kit is a series of iterations from the original tw5, and I have written it in Nodejs. It is a simple command line, but it is also used for different needs, such as deployment, more features, and tiddlywiki starter kit is developed in multiple versions.)
 

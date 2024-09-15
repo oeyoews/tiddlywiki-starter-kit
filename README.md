@@ -73,5 +73,13 @@ npm create neotw-app@latest
 
 > I recommend shallow cloning this project and deploying it manually on Vercel
 
-<!-- * cmp 添加 cmds -->
-<!-- om-toggle-theme 添加自定义事件， 同其他插件发送消息 -->
+<!-- folders -->
+<!-- ./tiddlywiki.info(1)
+./src
+    └── tiddlers/
+    └── tiddlywiki.info(2.1)
+./src-dev
+    └── tiddlers/
+    └── tiddlywiki.info(2.2) -->
+
+<!-- shell:startup to copy start.bat -->
