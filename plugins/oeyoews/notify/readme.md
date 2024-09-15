@@ -48,8 +48,6 @@ this.parentWidget.dispatchEvent({
 	om-notify
 </$button>
 
-</div>
-
 <!-- for dev -->
 <!-- * remove .autoclose::before to hide bar -->
 <!-- * simple-notify.mjs -->
