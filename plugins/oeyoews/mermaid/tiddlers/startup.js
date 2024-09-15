@@ -22,21 +22,21 @@ exports.startup = function () {
     return doc.documentElement.outerHTML;
   }
 
-  function getStyleFromSvg(svg) {
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(svg, 'image/svg+xml');
-    return doc.querySelector('svg').style.cssText;
-  }
+  // function getStyleFromSvg(svg) {
+  //   const parser = new DOMParser();
+  //   const doc = parser.parseFromString(svg, 'image/svg+xml');
+  //   return doc.querySelector('svg').style.cssText;
+  // }
 
-  function svg2Img(svg) {
-    const style = getStyleFromSvg(svg);
-    return `<img src="data:image/svg+xml,${encodeURIComponent(svg)}" class="spotlight" style="${style}"/>`;
-  }
+  // function svg2Img(svg) {
+  //   const style = getStyleFromSvg(svg);
+  //   return `<img src="data:image/svg+xml,${encodeURIComponent(svg)}" class="spotlight" style="${style}"/>`;
+  // }
 
   CodeBlockWidget.prototype.mermaidRender = async function () {
     const language = this.language;
     if (language !== 'mermaid') return;
-    const mermaid = require('mermaid.min.js');
+    const mermaid = require('./mermaid.min.js');
     const options = {
       securityLevel: 'loose',
       theme: 'default',

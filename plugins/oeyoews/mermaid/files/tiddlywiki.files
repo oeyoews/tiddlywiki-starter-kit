@@ -1,0 +1,17 @@
+{
+	"tiddlers": [
+		{
+			"file": "mermaid.min.js",
+			"fields": {
+				"type": "application/javascript",
+				"module-type": "library",
+				"hide-body": "yes",
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/mermaid/"
+				}
+			},
+			"suffix": "\nmodule.exports =__esbuild_esm_mermaid.default;\n"
+		}
+	]
+}
