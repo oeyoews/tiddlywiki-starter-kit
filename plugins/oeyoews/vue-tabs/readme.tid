@@ -1,9 +1,9 @@
 title: $:/plugins/oeyoews/vue-tabs/readme
-description: vue-tabs
+description: tw 标签页 管理
 
 <!-- plugin template readme -->
 
-> 拥有 vscode 的 tabs 的所有功能
+> 拥有 vscode 的 tabs(标签页) 的所有功能
 
 <!-- !! TODO
 

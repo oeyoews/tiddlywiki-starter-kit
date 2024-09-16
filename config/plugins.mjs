@@ -26,18 +26,14 @@ const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
 
 // oeyoews plugins
 const oeyoewsPlugins = [
-  'confetti-background',
   ...devplugins,
+  'confetti-background',
+  // vue
   'vue-i18n',
   'vue-contextmenu', // right-contextmenu
   'vue-context-menu', // lib
   'vue-draggable-plus', // 拖拽插件 lib
   'vue-kanban',
-  // 'vue-tabs',
-  // 'vue-pomodoro',
-  // 'neotw-vue-todo',
-  // 'notivue',
-  // 'vue3-toastify',
   'neotw-sitemap',
   'vue-rss',
   'neotw-vue-netease-banner',
@@ -52,15 +48,15 @@ const oeyoewsPlugins = [
   // 'mermaid930',
   // 'markdown-it-mermaid',
   'mermaid',
-  'markdown-it-math',
-  'markdown-it-pangu',
   'medium-zoom',
   'neotw-draft-better',
-  // 'confetti-background',
   // 'confetti',
   'image-observer', // personal lib
-  'markdown-it-emoji',
+  // md
   // 'markdown-it-twemoji',
+  'markdown-it-emoji',
+  'markdown-it-math',
+  'markdown-it-pangu',
   'markdown-it-abbr',
   'markdown-it-front-matter',
   'markdown-it-github-alert',
@@ -68,25 +64,29 @@ const oeyoewsPlugins = [
   // 'skill-badges',
   'notebook-theme-sidebar-resizer',
   'qrcode', // render a qrcode with any text
-  'notify', // vue notify lib
   'neotw-spotlight', // image zoom
   'neotw-image-gallery',
   'tiddlywiki-motion', // vim user like it
-  'neotw-pwa', // pwa for tw
   'neotw-zen-mode',
   'neotw-icons',
+  'neotw-menubar',
   'neotw-copy-code2',
   'tiddlywiki-daylight',
   'tiddlywiki-videos',
-  'neotw',
   'echarts-addons',
+  // lib
   'nprogress',
+  'notify', // vue notify lib
+  // ui
   'tiddlywiki-modal-ui',
   'tiddlywiki-tailwindcss-plus',
   'neotw-notion-gallery',
   'tiddlywiki-tiddler-info',
   'tiddlywiki-gravatar',
+  // core
+  'neotw-pwa', // pwa for tw
   'neotw-homepage',
+  'neotw',
 ];
 
 const oeyoewsFormatedPlugins = oeyoewsPlugins.map((plugin) => {

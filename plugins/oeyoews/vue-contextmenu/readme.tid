@@ -1,9 +1,9 @@
 title: $:/plugins/oeyoews/vue-contextmenu/readme
-description: vue-contextmenu
+description: TiddlyWiki 的右键菜单插件
 
 <!-- plugin template readme -->
 
-> TiddlyWiki 的右键菜单插件
+> {{description}}
 
 <!-- !! Motivation -->
 
