@@ -46,7 +46,8 @@ class ExampleWidget extends Widget {
         props: {
           text: { type: String },
           icon: { type: String },
-          number: { type: Number },
+          color: { type: String },
+          number: { type: [Number, String] },
         },
       };
 

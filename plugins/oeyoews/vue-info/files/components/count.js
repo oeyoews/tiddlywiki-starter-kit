@@ -4,11 +4,11 @@ module.exports = {
   name: 'CountTo',
   props: {
     startVal: {
-      type: Number,
+      type: [Number, String],
       default: 0,
     },
     endVal: {
-      type: Number,
+      type: [Number, String],
       required: true,
     },
     duration: {
