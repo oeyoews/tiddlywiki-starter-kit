@@ -1,6 +1,6 @@
 {
   "title": "$:/plugins/oeyoews/neotw-bot",
-  "description": "neotw-bot",
+  "description": "向Telegram bot 发送消息",
   "author": "oeyoews",
   "version": "0.0.1",
   "core-version": ">=5.3.0",
@@ -14,6 +14,6 @@
     "$:/plugins/oeyoews/neotw-vue3",
     "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
   ],
-  "stability": "STABILITY_2_STABLE",
+  "stability": "STABILITY_1_STABLE",
   "list": "readme"
 }
