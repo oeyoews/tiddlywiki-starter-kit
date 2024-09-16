@@ -4,10 +4,6 @@
     "link": "/plugins/book-status"
   },
   {
-    "text": "🧩codemirror6",
-    "link": "/plugins/codemirror6"
-  },
-  {
     "text": "🧩element-plus",
     "link": "/plugins/element-plus"
   },
@@ -24,8 +20,8 @@
     "link": "/plugins/neotw-ai"
   },
   {
-    "text": "🧩neotw-calendar",
-    "link": "/plugins/neotw-calendar"
+    "text": "🧩neotw-bot",
+    "link": "/plugins/neotw-bot"
   },
   {
     "text": "🧩neotw-card-info",
@@ -58,6 +54,10 @@
   {
     "text": "🧩neotw-vue3",
     "link": "/plugins/neotw-vue3"
+  },
+  {
+    "text": "🧩neotw",
+    "link": "/plugins/neotw"
   },
   {
     "text": "🧩tiddlywiki-codemirror-6",
