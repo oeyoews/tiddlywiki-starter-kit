@@ -1,4 +1,3 @@
 title: $:/plugins/oeyoews/neotw-vue3/readme
 
 [[在线文档|https://neotw.vercel.app/docs/plugins/neotw-vue3]]
-<!-- suffix 方式有bug, 怀疑是eval 导致了解析速度变慢， 导致Vue加载过慢， 别的模块找不到vue, 本地加载不会有这种问题， 本地构建打包也没问题 -->
