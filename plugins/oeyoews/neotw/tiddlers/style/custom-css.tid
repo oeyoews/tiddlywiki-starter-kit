@@ -1,9 +1,9 @@
 title: $:/plugins/oeyoews/neotw/style/custom-css
 tags: $:/tags/Stylesheet
 
-\define hide-tiddler-controls()
+<!-- \define hide-tiddler-controls()
 [data-tiddler-title="$(currentTiddler)$"] .tc-titlebar h2 { text-transform: capitalize; }
-\end
+\end -->
 
 <!-- .tc-tiddler-frame input.tc-edit-texteditor  { text-transform: capitalize; } -->
 <!-- hr { -->
@@ -13,9 +13,9 @@ tags: $:/tags/Stylesheet
 <!-- 	border-radius: 3px; -->
 <!-- } -->
 
-<$list filter="[!is[system]]">
+<!-- <$list filter="[!is[system]]">
   <<hide-tiddler-controls>>
-</$list>
+</$list> -->
 
 <!-- https://talk.tiddlywiki.org/t/is-blank-seems-to-return-nothing/4713/5 -->
 <$list filter="[[$:/StoryList]get[list]count[]match[0]]">

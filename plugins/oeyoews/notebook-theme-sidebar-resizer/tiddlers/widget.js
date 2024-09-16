@@ -36,11 +36,11 @@ class NotebookResizer extends Widget {
       name: 'NOTEBOOK',
       theme: [
         '$:/themes/nico/notebook',
-        '$:/themes/oeyoews/notebook-plus' // for my custom notebook theme
+        '$:/themes/oeyoews/notebook-plus', // for my custom notebook theme
       ],
       stateTiddler: '$:/state/notebook-sidebar',
       widthTiddler: '$:/themes/nico/notebook/metrics/sidebar-width',
-      positionTiddler: '$:/themes/nico/notebook/metrics/sidebar-position'
+      positionTiddler: '$:/themes/nico/notebook/metrics/sidebar-position',
     };
 
     // theme: whitespace
@@ -48,7 +48,7 @@ class NotebookResizer extends Widget {
       name: 'WHITESPACE',
       theme: '$:/themes/jd/Whitespace',
       positionTiddler: '$:/config/Whitespace/sidebar',
-      widthTiddler: this.defaultWidthTiddler
+      widthTiddler: this.defaultWidthTiddler,
     };
 
     this.sidebarLayoutTiddler =
@@ -57,7 +57,7 @@ class NotebookResizer extends Widget {
     this.user = {
       widthTiddler: '',
       statusTiddler: '',
-      close: ''
+      close: '',
     };
     // listen tiddlers
     this.listenTiddlers = [
@@ -67,7 +67,7 @@ class NotebookResizer extends Widget {
       this.themeTiddler,
       this.whitespace.positionTiddler,
       this.sidebarLayoutTiddler,
-      this.user.statusTiddler
+      this.user.statusTiddler,
     ];
     this.position = this.RIGHT;
   }
@@ -103,7 +103,7 @@ class NotebookResizer extends Widget {
 
     // NOTE: Tailwindcss class here, if you dont want install the extra tailwindcss dependency, you can rewrite it use general style()
     const resizer = createElement('div', {
-      class: 'oresizer'
+      class: 'oresizer',
     });
 
     switch (this.LEFT) {
@@ -156,7 +156,7 @@ class NotebookResizer extends Widget {
           this.sidebarLayoutTiddler,
           'text',
           null,
-          'fluid-fixed'
+          'fluid-fixed',
         );
       }
     }
@@ -183,7 +183,7 @@ class NotebookResizer extends Widget {
           this.position = this.LEFT;
         } else {
           const { position = this.LEFT } = $tw.wiki.getTiddler(
-            this.notebook.positionTiddler
+            this.notebook.positionTiddler,
           ).fields;
 
           this.position = position;
@@ -264,8 +264,8 @@ class NotebookResizer extends Widget {
         null,
         `${Number(width).toFixed(0)}px`,
         {
-          suppressTimestamp: true
-        }
+          suppressTimestamp: true,
+        },
       );
     });
   }

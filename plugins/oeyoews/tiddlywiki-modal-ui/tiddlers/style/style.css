@@ -12,7 +12,7 @@
 }
 
 .o-tm .tc-modal-header {
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 
 .o-tm .tc-modal-backdrop {
