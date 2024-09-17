@@ -8,6 +8,6 @@ tags: $:/tags/PageTemplate
 </$list>
 
 <$list filter="[[$:/StoryList]get[list]count[]match[0]]">
-<div class="fixed top-2 inset-x-8 hidden md:block opacity-0 hover:opacity-100 transition-all tc-adjust-top-of-scroll delay-200">
+<div class="fixed top-2 inset-x-8 hidden md:block opacity-0 tc-adjust-top-of-scroll h-[42px]">
 </div>
 </$list>
