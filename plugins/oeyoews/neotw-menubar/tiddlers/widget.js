@@ -33,7 +33,7 @@ class MenuBarWidget extends Widget {
     const { createApp } = window.Vue;
     const component = require('./app');
     const domNode = this.document.createElement('div');
-    domNode.className = 'shadow-sm';
+    // domNode.className = 'shadow-sm';
     const TiddlyWikiVue = require('./plugins/TiddlyWikiVue');
 
     try {

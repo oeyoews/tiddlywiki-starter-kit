@@ -1,0 +1,11 @@
+title: $:/plugins/oeyoews/neotw-menubar/custom.css
+tags: $:/tags/Stylesheet
+
+
+\define width() {{{ [[$:/state/notebook-sidebar]get[text]match[yes]then[2rem]else[12rem]] }}}
+
+.oeyoews-menu-bar-width {
+    left: <<width>>;
+	right: <<width>>;
+ 	transition: all 0.3s ease;
+}

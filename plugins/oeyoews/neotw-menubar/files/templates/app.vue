@@ -1,5 +1,5 @@
 <template>
-  <MenuBar id="neotw-menubar" :options="menuData">
+  <MenuBar id="neotw-menubar" :options="menuData" style="padding: 8px 9px;border-radius: 30px;" class="shadow-sm">
     <template #prefix>
       <Icon :icon="tiddlywiki_icon" custom-class="mx-1 ml-3 mt-0.5" />
     </template>

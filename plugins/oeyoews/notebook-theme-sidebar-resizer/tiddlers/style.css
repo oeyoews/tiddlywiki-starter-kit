@@ -8,9 +8,9 @@
 .oresizer {
   width: 5px;
   border-radius: 5px;
-  height: 100%;
+  height: 99%;
   position: absolute;
-  top: 0;
+  bottom: 4px;
   background-color: #f3f4f6;
   animation-duration: 200ms;
 }

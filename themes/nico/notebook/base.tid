@@ -175,7 +175,7 @@ h1.tc-site-title {
 <<if-sidebar """
 @media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
   .nc-sidebar {
-    animation: sidebar-appear ease-in .2s;
+    <!-- animation: sidebar-appear ease-in .2s; -->
     padding-top: 10px;
   }
 }
@@ -307,7 +307,7 @@ h1.tc-site-title {
     top: 0;
     bottom: 48px;
     z-index: 3000;
-    animation: sidebar-slide ease-in .2s;
+    <!-- animation: sidebar-slide ease-in .2s; -->
     animation-fill-mode: forwards;
   }
 }
