@@ -316,6 +316,7 @@ h1.tc-site-title {
 
   .tc-page-container {
     margin-<<sidebarPosition>>: {{$:/themes/nico/notebook/metrics/sidebar-width}} !important;
+    transition: all 0.3s ease;
   }
 
   .nc-topbar-wrapper {
