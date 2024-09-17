@@ -190,3 +190,26 @@ select {
 .tc-chooser-item {
   margin: 4px 0;
 }
+
+blockquote {
+  position: relative;
+  border: none;
+}
+
+blockquote p::after {
+  position: absolute !important;
+  top: 0;
+  left: 4px;
+  content: '';
+  height: 100%;
+  width: 4px;
+  border-radius: 10px;
+  background: #539bf5;
+}
+
+/* overwrite */
+.tc-menu-list-subitem {
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

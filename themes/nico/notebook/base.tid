@@ -638,7 +638,6 @@ div.tc-tab-buttons button.tc-tab-selected {
 
 {{$:/themes/nico/notebook/custom}}
 
-
 <!-- mobile -->
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
 .nc-bottombar, .nc-sidebar { display: none; }
@@ -655,19 +654,3 @@ div.tc-tab-buttons button.tc-tab-selected {
 }
 <% endif %>
 </$let>
-
-blockquote {
-	position: relative;
-  border: none;
-}
-
-blockquote p::after {
-	position: absolute !important;
-  top: 0;
-  left: 4px;
-	content: "";
-	height: 100%;
-	width: 4px;
-	border-radius: 10px;
-	background: #539bf5;
-}
