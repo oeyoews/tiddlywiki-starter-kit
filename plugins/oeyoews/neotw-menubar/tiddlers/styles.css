@@ -9,3 +9,7 @@
   --mx-menu-open-backgroud: #22272e !important;
   --mx-menu-open-hover-backgroud: #22272e !important;
 }
+
+.mx-context-menu.dark {
+  box-shadow: none !important;
+}
