@@ -226,12 +226,13 @@ blockquote p::after {
     right: -20px;
     top: -20px;
     opacity: 0;
+    transition: all 0.3s ease-in-out;
   }
 
   /* 悬浮时显示 # 并过渡效果，延迟0.3秒 */
   &:hover::after {
     opacity: 1;
     top: 0;
-    transition: all 0.3s ease-in-out;
+    transition-delay: 0.3s; /* 悬浮时增加0.3秒延迟 */
   }
 }
