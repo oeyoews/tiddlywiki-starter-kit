@@ -311,7 +311,11 @@ h1.tc-site-title {
     animation-fill-mode: forwards;
   }
 }
+""">>
 
+<!-- tiddler数量必须要大于零 -->
+<$list filter="[[$:/StoryList]get[list]count[]!match[0]]">
+<<if-sidebar """
 @media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
 
   .tc-page-container {
@@ -324,6 +328,7 @@ h1.tc-site-title {
   }
 }
 """>>
+</$list>
 
 <!-- /* Animate the hamburger button */ -->
 @keyframes menu-bars-1 {
@@ -659,7 +664,7 @@ blockquote {
 blockquote p::after {
 	position: absolute !important;
   top: 0;
-  left: -5px;
+  left: 4px;
 	content: "";
 	height: 100%;
 	width: 4px;

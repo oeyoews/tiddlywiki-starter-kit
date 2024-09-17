@@ -5,7 +5,7 @@ module-type: library
 
 \*/
 
-const { h, ref, reactive } = window.Vue;
+const { h, ref, reactive, onMounted } = window.Vue;
 
 const pluginTitle = '$:/plugins/oeyoews/neotw-menubar';
 const { version } = $tw.wiki.getTiddler(pluginTitle).fields;
