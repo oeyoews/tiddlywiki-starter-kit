@@ -258,3 +258,10 @@ blockquote p::after {
     /* 弹回一点 */
   }
 }
+
+.tc-site-subtitle {
+  font-size: 14px;
+  text-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
