@@ -1,5 +1,5 @@
 /*\
-$:/plugins/oeyoews/neotw-homepage/startup.js
+title: $:/plugins/oeyoews/neotw-homepage/startup.js
 type: application/javascript
 module-type: startup
 
