@@ -8,7 +8,8 @@
 }
 
 .oresizer {
-  width: 5px;
+  width: 3px;
+  opacity: 0.1;
   border-radius: 5px;
   height: 99%;
   position: absolute;
@@ -20,6 +21,8 @@
 .oresizer:hover {
   cursor: e-resize;
   background-color: #e5e7eb;
+  opacity: 1;
+  width: 4px;
 }
 
 .dark .oresizer {
