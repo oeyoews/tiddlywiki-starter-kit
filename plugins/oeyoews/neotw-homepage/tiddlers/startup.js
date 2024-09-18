@@ -1,7 +1,7 @@
 /*\
 title: $:/plugins/oeyoews/neotw-homepage/startup.js
 type: application/javascript
-module-type: startup
+// module-type: startup
 
 \*/
 exports.name = 'shakeshake';
