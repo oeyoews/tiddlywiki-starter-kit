@@ -17,11 +17,12 @@ scrollbar-width {
 
 /* gradient hr */
 hr {
-  height: 2px;
-  background-image: linear-gradient(135deg, #12c2e9, #c9ffbf);
+  height: 1px;
+  /* background-image: linear-gradient(135deg, #12c2e9, #c9ffbf); */
   border: none !important;
   border-radius: 3px;
   margin: 0.25rem 0 !important;
+  background-color: lavender;
 }
 
 .gradient {
