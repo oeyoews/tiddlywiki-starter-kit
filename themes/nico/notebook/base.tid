@@ -175,7 +175,7 @@ h1.tc-site-title {
 <<if-sidebar """
 @media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
   .nc-sidebar {
-    <!-- animation: sidebar-appear ease-in .2s; -->
+    animation: sidebar-appear ease .5s;
     padding-top: 10px;
   }
 }
@@ -184,6 +184,7 @@ h1.tc-site-title {
 .nc-sidebar {
   background: <<colour tiddler-background>>;
   border-right: 0px solid <<colour tiddler-border>>;
+  transition: all ease .5s;
   width: {{$:/themes/nico/notebook/metrics/sidebar-width}};
   overflow-y: auto;
   overflow-x: hidden;
@@ -307,11 +308,15 @@ h1.tc-site-title {
     top: 0;
     bottom: 48px;
     z-index: 3000;
-    <!-- animation: sidebar-slide ease-in .2s; -->
+    animation: sidebar-slide ease-in .5s;
     animation-fill-mode: forwards;
   }
 }
 """>>
+
+.tc-page-container {
+   transition: all 0.5s ease;
+}
 
 <!-- tiddler数量必须要大于零 -->
 <$list filter="[[$:/StoryList]get[list]count[]!match[0]]">
@@ -320,7 +325,6 @@ h1.tc-site-title {
 
   .tc-page-container {
     margin-<<sidebarPosition>>: {{$:/themes/nico/notebook/metrics/sidebar-width}} !important;
-    transition: all 0.3s ease;
   }
 
   .nc-topbar-wrapper {

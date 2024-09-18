@@ -7,5 +7,5 @@ tags: $:/tags/Stylesheet
 .oeyoews-menu-bar-width {
     left: <<width>>;
 	right: <<width>>;
- 	transition: all 0.3s ease;
+ 	transition: all 0.5s ease;
 }

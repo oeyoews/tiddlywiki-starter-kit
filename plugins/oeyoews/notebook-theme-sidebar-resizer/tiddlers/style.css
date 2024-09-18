@@ -1,8 +1,10 @@
 .oresizer-left {
+  transition: all ease 0.5s;
   left: 0;
 }
 .oresizer-right {
   right: 0;
+  transition: all ease 0.5s;
 }
 
 .oresizer {
@@ -12,13 +14,12 @@
   position: absolute;
   bottom: 4px;
   background-color: #f3f4f6;
-  animation-duration: 200ms;
+  transition: all ease 0.5s;
 }
 
 .oresizer:hover {
   cursor: e-resize;
   background-color: #e5e7eb;
-  transition: all;
 }
 
 .dark .oresizer {
