@@ -1,0 +1,8 @@
+title: $:/plugins/oeyoews/neotw/style/tag-customize
+tags: $:/tags/Global
+
+<!-- just add note theme tagui -->
+<!-- copyed from burningtreec -->
+\procedure colour-extend(name,tiddler:"")
+<$transclude tiddler={{{ [<tiddler>!is[blank]] ~[{$:/palette}addsuffix[/extend]] }}} index=<<name>>/>
+\end

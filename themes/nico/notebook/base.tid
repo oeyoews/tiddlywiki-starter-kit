@@ -504,7 +504,7 @@ button.tc-btn-invisible {
 """>>
 
 button.tc-tag-label, span.tc-tag-label {
-  padding: 0.3em 1em !important;
+  <!-- padding: 0.3em 1em !important; -->
 }
 
 <!-- /* Fonts */ -->

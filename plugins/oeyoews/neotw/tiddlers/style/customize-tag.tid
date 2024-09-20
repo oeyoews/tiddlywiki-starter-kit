@@ -1,146 +1,35 @@
 title: $:/plugins/oeyoews/neotw/style/tag-customize
 tags: $:/tags/Stylesheet
 
+\define tag-ui(tags:'Vue', color:'lime')
+[data-tag-title="$tags$"] .tc-tag-label {
+  background-color: <<colour-extend $color$>> !important;
+  border-color: <<colour-extend $color$-dark>> !important;
+  color: <<colour-extend $color$-dark>> !important;
+}
+\end
+
+
 <!-- bg-teal-500/20 border-teal-400/80  按照这个比例来 -->
-<!-- 注意此样式没有考虑与tiddlywiki其他配置的兼容 -->
 .tc-tag-label {
-  display: inline-block;
-  padding: 0px 6px;
-  font-size: 14px;
+  <!-- display: inline-block; -->
+  <!-- padding: 0px 6px;
+  font-size: 14px; -->
   border: 1.5px solid transparent;
   border-radius: 5px;
 }
 
-<!-- teal -->
-[data-tag-title] .tc-tag-label {
-  background-color: rgba(13, 148, 136, 0.2) !important;
-  border-color: rgba(45, 212, 191, 0.8) !important;
-  color: rgba(45, 212, 191, 0.8) !important;
-}
+<!-- [data-tag-title] .tc-tag-label {
+  background-color: <<colour-extend teal>> !important;
+  border-color: <<colour-extend teal-dark>> !important;
+  color: <<colour-extend teal-dark>> !important;
+} -->
 
-
-<!-- sky -->
-[data-tag-title="React"] .tc-tag-label {
-  background-color: rgba(14, 165, 233, 0.2) !important;
-  border-color: rgba(56, 189, 248, 0.8) !important;
-  color: rgba(56, 189, 248, 0.8) !important;
-}
-
-
-<!-- cyan -->
-[data-tag-title='Tailwindcss'] .tc-tag-label {
-  background-color: rgba(6, 182, 212, 0.2) !important;
-  border-color: rgba(34, 211, 238, 0.8) !important;
-  color: rgba(34, 211, 238, 0.8) !important;
-}
-
-
-<!-- .lime -->
-[data-tag-title='Vue'] .tc-tag-label {
-  background-color: rgba(132, 204, 22, 0.2) !important;
-  border-color: rgba(163, 230, 53, 0.8) !important;
-  color: rgba(163, 230, 53, 0.8) !important;
-}
-
-<!-- red -->
-[data-tag-title='剪藏'] .tc-tag-label {
-  background-color: rgba(239, 68, 68, 0.2) !important;
-  border-color: rgba(248, 113, 113, 0.8) !important;
-  color: rgba(248, 113, 113, 0.8) !important;
-}
-
-<!-- orange -->
-[data-tag-title='JavaScript'] .tc-tag-label {
-  background-color: rgba(249, 115, 22, 0.2) !important;
-  border-color: rgba(251, 146, 60, 0.8) !important;
-  color: rgba(251, 146, 60, 0.8) !important;
-}
-
-<!-- green -->
-[data-tag-title='Journal'] .tc-tag-label {
-  background-color: rgba(16, 185, 129, 0.2) !important;
-  border-color: rgba(52, 211, 153, 0.8) !important;
-  color: rgba(52, 211, 153, 0.8) !important;
-}
-
-<!-- blue -->
-[data-tag-title='TypeScript'] .tc-tag-label {
-  background-color: rgba(59, 130, 246, 0.2) !important;
-  border-color: rgba(96, 165, 250, 0.8) !important;
-  color: rgba(96, 165, 250, 0.8) !important;
-}
-
-.slate-class {
-  background-color: rgba(100, 116, 139, 0.2);
-  border-color: rgba(148, 163, 184, 0.8);
-}
-
-.gray-class {
-  background-color: rgba(107, 114, 128, 0.2);
-  border-color: rgba(156, 163, 175, 0.8);
-}
-
-.zinc-class {
-  background-color: rgba(113, 113, 122, 0.2);
-  border-color: rgba(161, 161, 170, 0.8);
-}
-
-.neutral-class {
-  background-color: rgba(115, 115, 115, 0.2);
-  border-color: rgba(163, 163, 163, 0.8);
-}
-
-.stone-class {
-  background-color: rgba(120, 113, 108, 0.2);
-  border-color: rgba(168, 162, 158, 0.8);
-}
-
-.red-class {
-  background-color: rgba(239, 68, 68, 0.2);
-  border-color: rgba(248, 113, 113, 0.8);
-}
-
-.amber-class {
-  background-color: rgba(245, 158, 11, 0.2);
-  border-color: rgba(252, 211, 77, 0.8);
-}
-
-.yellow-class {
-  background-color: rgba(234, 179, 8, 0.2);
-  border-color: rgba(250, 204, 21, 0.8);
-}
-
-.emerald-class {
-  background-color: rgba(5, 150, 105, 0.2);
-  border-color: rgba(16, 185, 129, 0.8);
-}
-
-.indigo-class {
-  background-color: rgba(99, 102, 241, 0.2);
-  border-color: rgba(129, 140, 248, 0.8);
-}
-
-.violet-class {
-  background-color: rgba(139, 92, 246, 0.2);
-  border-color: rgba(167, 139, 250, 0.8);
-}
-
-.purple-class {
-  background-color: rgba(168, 85, 247, 0.2);
-  border-color: rgba(192, 132, 252, 0.8);
-}
-
-.fuchsia-class {
-  background-color: rgba(217, 70, 239, 0.2);
-  border-color: rgba(232, 121, 249, 0.8);
-}
-
-.pink-class {
-  background-color: rgba(236, 72, 153, 0.2);
-  border-color: rgba(244, 114, 182, 0.8);
-}
-
-.rose-class {
-  background-color: rgba(244, 63, 94, 0.2);
-  border-color: rgba(251, 113, 133, 0.8);
-}
+<<tag-ui Journal rose>>
+<<tag-ui Vue lime>>
+<<tag-ui 剪藏 red>>
+<<tag-ui JavaScript orange>>
+<<tag-ui TypeScript blue>>
+<<tag-ui todo yellow>>
+<<tag-ui React sky>>
+<<tag-ui Tailwindcss cyan>>
