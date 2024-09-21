@@ -2,7 +2,8 @@ title: $:/plugins/oeyoews/neotw/style/tag-customize
 tags: $:/tags/Stylesheet
 
 \define tag-ui(tags:'Vue', color:'lime')
-[data-tag-title="$tags$"] .tc-tag-label {
+[data-tag-title="$tags$"] .tc-tag-label,
+.tc-tag-label[data-tag-title="$tags$"] {
   background-color: <<colour $color$>> !important;
   border-color: <<colour $color$-dark>> !important;
   color: <<colour $color$-dark>> !important;
@@ -17,11 +18,12 @@ tags: $:/tags/Stylesheet
   border-radius: 5px;
 }
 
-<!-- [data-tag-title] .tc-tag-label {
-  background-color: <<colour-extend teal>> !important;
-  border-color: <<colour-extend teal-dark>> !important;
-  color: <<colour-extend teal-dark>> !important;
-} -->
+[data-tag-title^="$:/tags/"] .tc-tag-label,
+.tc-tag-label[data-tag-title^="$:/tags/"] {
+  background-color: <<colour rose>> !important;
+  border-color: <<colour rose-dark>> !important;
+  color: <<colour rose-dark>> !important;
+}
 
 <!-- [
   {
