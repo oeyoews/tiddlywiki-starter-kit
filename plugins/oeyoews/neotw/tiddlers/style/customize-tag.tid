@@ -9,12 +9,10 @@ tags: $:/tags/Stylesheet
 }
 \end
 
+\define tag-ui-tiddler() $:/plugins/oeyoews/neotw/data/tags-ui-dict
 
 <!-- bg-teal-500/20 border-teal-400/80  按照这个比例来 -->
 .tc-tag-label {
-  <!-- display: inline-block; -->
-  <!-- padding: 0px 6px;
-  font-size: 14px; -->
   border: 1.5px solid transparent;
   border-radius: 5px;
 }
@@ -25,11 +23,25 @@ tags: $:/tags/Stylesheet
   color: <<colour-extend teal-dark>> !important;
 } -->
 
-<<tag-ui Journal rose>>
-<<tag-ui Vue lime>>
-<<tag-ui 剪藏 red>>
-<<tag-ui JavaScript orange>>
-<<tag-ui TypeScript blue>>
-<<tag-ui todo yellow>>
-<<tag-ui React sky>>
-<<tag-ui Tailwindcss cyan>>
+<!-- [
+  {
+	"name": "github",
+	"value": "red"
+  }
+] -->
+<!-- json usage -->
+<!-- <$set name="JSONdata" value={{tags-ui2}} >
+<$list filter="[<JSONdata>jsonindexes[]]" >
+<$let tag={{{ [<JSONdata>jsonget<currentTiddler>,[name]]}}} color={{{ [<JSONdata>jsonget<currentTiddler>,[color]]}}} >
+	<$transclude $variable="tag-ui" tags=<<tag>> color=<<color>>/>
+</$let>
+</$list>
+</$set> -->
+
+<!-- dict usage -->
+<!-- tag: color -->
+<$list filter="[<tag-ui-tiddler>indexes[]]">
+<$let color={{{ [<tag-ui-tiddler>getindex<currentTiddler>]}}} >
+	<$transclude $variable="tag-ui" tags=<<currentTiddler>> color=<<color>> />
+</$let>
+</$list>
