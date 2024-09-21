@@ -3,9 +3,9 @@ tags: $:/tags/Stylesheet
 
 \define tag-ui(tags:'Vue', color:'lime')
 [data-tag-title="$tags$"] .tc-tag-label {
-  background-color: <<colour-extend $color$>> !important;
-  border-color: <<colour-extend $color$-dark>> !important;
-  color: <<colour-extend $color$-dark>> !important;
+  background-color: <<colour $color$>> !important;
+  border-color: <<colour $color$-dark>> !important;
+  color: <<colour $color$-dark>> !important;
 }
 \end
 
@@ -45,3 +45,5 @@ tags: $:/tags/Stylesheet
 	<$transclude $variable="tag-ui" tags=<<currentTiddler>> color=<<color>> />
 </$let>
 </$list>
+
+<!-- https://github.com/TiddlyWiki/TiddlyWiki5/blob/213a850715cd0ec71fd340a595a156e4a53245b6/plugins/tiddlywiki/consent-banner/config/DefaultColourMappings.multids#L1-L15 -->

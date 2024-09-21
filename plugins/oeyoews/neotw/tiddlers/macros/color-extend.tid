@@ -3,6 +3,7 @@ tags: $:/tags/Global
 
 <!-- just add note theme tagui -->
 <!-- copyed from burningtreec -->
+<!-- https://github.com/TiddlyWiki/TiddlyWiki5/issues/7736 -->
 \procedure colour-extend(name,tiddler:"")
 <$transclude tiddler={{{ [<tiddler>!is[blank]] ~[{$:/palette}addsuffix[/extend]] }}} index=<<name>>/>
 \end
