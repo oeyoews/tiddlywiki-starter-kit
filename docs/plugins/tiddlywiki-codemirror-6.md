@@ -1,6 +1,6 @@
 # Tiddlywiki codemirror 6
 
-> 你的下一个 TiddlyWiki5 编辑器：Codemirror6
+> 你的下一个 TiddlyWiki5 编辑器：Codemirror6, 专注TiddlyWiki5写作体验的优化，和TiddlyWiki5深度集成.
 
 <img src="./img/codemirror6.webp" class="rounded-md mt-2" alt="codemirror6"/>
 
@@ -21,13 +21,14 @@
 
 ## 背景介绍
 
-* tw 的 codemirror5 插件为了可插拔性， 将codemirror的每个特性模块做成了单独的模块， 对于不熟悉的人来说， 经常会遇到依赖确实导致的报错。又正好看到codemirror6的稳定。 希望使用codemirror6重构一个插件。 当时社区正好有人开始了这个项目。 我第一次使用就觉得很不错。 但是我希望加上一些新特性， 比如vim 代码片段的自动提示， 补全， 借助moderndev项目， 我成功的重构了codemirror6。并且加上了很多新特性.
+* tw 的 codemirror5 插件为了可插拔性， 将codemirror的每个特性模块做成了单独的模块， 对于不熟悉的人来说， 经常会遇到依赖确实导致的报错。又正好看到codemirror6的稳定。 希望使用codemirror6重构一个插件。 当时社区正好有人开始了这个项目。 我第一次使用就觉得很不错。 但是我希望加上一些新特性， 比如vim 代码片段的自动提示， 补全， 借助moderndev项目， 我成功地重构了codemirror6。并且加上了很多新特性.
 
 ## 难点
 
-* 主要是tw 本身的theme layout palette之间的概念比较模糊， 对于插件开发使用不同的主题颜色比较困难。还有暗亮模式的问题， 社区并没有一个一致的解决方案。还有就是i18n 的实现。 更多情况下还是要靠开发者自己去实现兼容。所以这一块目前插件虽然做了一部分实现。 但是肯定是不够通用的。 所以目前插件并不会对这些进行很全面的完善。 重点主要是新特性的添加， bug 修复维护.
+* 目前插件开发重点为自动补全提示.
+* 主要是tw 本身的theme layout palette之间的概念比较模糊， 对于插件开发使用不同的主题颜色比较困难。还有暗亮模式的问题， 社区并没有一个一致的解决方案。还有就是i18n 的实现。 更多情况下还是要靠开发者自己去实现兼容。所以这一块目前插件虽然做了一部分实现。 但是肯定是不够通用的。 所以目前插件并不会对这些进行较为全面的完善。
 
-* 代码高亮： 。。。
+* 代码高亮：...
 * 用户群体受众群体和反馈比较少. 所以主要都是解决自己遇到一些痛点和bug.
 
 ## 特性
@@ -38,14 +39,17 @@
 * 自定义占位符、制表符大小、最小完成长度
 
 ## Completions
-* `/` 获取代码片段
+
+> 输入 `/?`, 你将看到所有的补全命令列表(注意目前插件加上了较多的特性, 更加高级具体的用法可能尚未在文档中列出. 关于cm6 的全部使用说明需要一篇文章来补充, 待填坑)
+
+* `/` 获取用户代码片段
 * `[[` 或 `{{` 获取 tiddlers
-* `:` 获取表情符号
-* `[img[` 获取图片
+* `:` 获取emoji表情符号
+* `[img[` 获取图片tiddler
 * `<$` 获取小部件
 * `//` 更改 tiddler 类型
-* `#` 插入标签
-* `@#` 设置 codemirror6
+* `#` 插入tiddler标签
+* `@#` 打开 codemirror6 设置页面弹窗
 
 ## Tips
 
@@ -82,8 +86,9 @@
 * codemirror 增强插件的自动完成有时会导致界面冻结。
 * 更好地支持代码片段
 * 更佳的 markdown 编辑体验
+* all in codemirror6 with tiddlywiki5
 
-如果你喜欢这个插件，欢迎 Star [ext[GitHub|https://github.com/oeyoews/tiddlywiki-codemirror6]]
+<!-- 如果你喜欢这个插件，欢迎 Star [ext[GitHub|https://github.com/oeyoews/tiddlywiki-codemirror6]] -->
 
 ## Credits
 
