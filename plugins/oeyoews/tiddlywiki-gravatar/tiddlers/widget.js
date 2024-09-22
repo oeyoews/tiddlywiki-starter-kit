@@ -100,8 +100,10 @@ class AvatarWidget extends Widget {
     // 考虑图片加载失败，但是不考虑图片加载超时 (offline)
     imageNode.onerror = () => {
       // console.warn(src, '图片加载失败');
-      imageNode.src =
-        'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=identicon&s=100';
+      const title = '$:/plugins/oeyoews/tiddlywiki-gravatar/icon';
+      const base64 = $tw.wiki.getTiddlerText(title);
+      const src = 'data:image/svg+xml,' + encodeURIComponent(base64);
+      imageNode.src = src;
     };
 
     const linkNode = createElement('a', {
