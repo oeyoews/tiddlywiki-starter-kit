@@ -151,7 +151,7 @@ h1.tc-site-title {
     border-radius: 3px;
     margin: 15px 0px 15px 0px;
     box-shadow: none;
-    border-top: 0;
+    <!-- border-top: 0; -->
   }
 }
 
