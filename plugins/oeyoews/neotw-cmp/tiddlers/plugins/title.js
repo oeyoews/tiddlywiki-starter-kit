@@ -45,7 +45,14 @@ let mode = '';
 
 function Plugin(domNode) {
   return {
-    getSources({ query, setQuery, refresh, setContext }) {
+    getSources({
+      query,
+      setQuery,
+      refresh,
+      setContext,
+      setActiveItemId,
+      setIsOpen,
+    }) {
       let items = [];
       switch (query) {
         case '':
@@ -109,6 +116,7 @@ function Plugin(domNode) {
           // },
           // onItemsChange({item}) {},
           onSelect({ item }) {
+            setIsOpen(false);
             closeCmp(domNode); // hide modal
 
             // const invoke = (action, param) => {
@@ -127,13 +135,16 @@ function Plugin(domNode) {
               switch (item.action) {
                 case 'home':
                   goto.navigateTiddler('GettingStarted');
-                  break;
+                  return;
                 default:
               }
               return;
             }
 
             item.title && goto.navigateTiddler(item.title);
+            // setActiveItemId(4);
+            setQuery('');
+            refresh();
           },
 
           getItems({ query }) {

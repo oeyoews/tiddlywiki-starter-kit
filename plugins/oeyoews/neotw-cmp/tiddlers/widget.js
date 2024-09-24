@@ -4,8 +4,8 @@ type: application/javascript
 module-type: widget
 
 neotw-cmp widget
-
 \*/
+
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 
 class AutoCompleteWidget extends Widget {
@@ -64,11 +64,9 @@ class AutoCompleteWidget extends Widget {
       debug: false,
       // https://www.algolia.com/doc/ui-libraries/autocomplete/core-concepts/state/
       initialState: {
-        // query: '',
+        query: '',
       },
-      onStateChange({ state }) {
-        // console.log(state);
-      },
+      onStateChange({ state }) {},
       // recentSearchesPlugin
       plugins: [titlePlugin(domNode)],
       ignoreCompositionEvents: true, // IME friendly

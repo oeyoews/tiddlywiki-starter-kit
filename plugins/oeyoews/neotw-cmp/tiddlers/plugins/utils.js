@@ -33,7 +33,7 @@ function debouncePromise(fn, time = 150) {
   };
 }
 
-const debounced = debouncePromise((items) => Promise.resolve(items), 270);
+const debounced = debouncePromise((items) => Promise.resolve(items), 150);
 
 module.exports = {
   debounced,
