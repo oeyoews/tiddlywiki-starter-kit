@@ -3,6 +3,7 @@ tags: $:/tags/EditorToolbar
 caption: zen-mode
 condition: [<targetTiddler>]
 icon: $:/plugins/oeyoews/neotw-zen-mode/icon
+description: {{$:/plugins/oeyoews/neotw-zen-mode/readme!!description}}
 
 <!-- icon: $:/plugins/oeyoews/tiddler-fullscreen/icons/fullscreen -->
 

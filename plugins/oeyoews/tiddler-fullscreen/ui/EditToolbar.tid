@@ -2,7 +2,7 @@ title: $:/plugins/oeyoews/tiddler-fullscreen/EditToolbar
 tags:  $:/tags/EditToolbar
 list-before: $:/core/ui/Buttons/delete
 description: fullscreen tiddler
-caption: fullscreen tiddler
+caption: {{$:/plugins/oeyoews/tiddler-fullscreen/icons/fullscreen}} fullscreen tiddler
 
 <!-- NOTE: dont use transclude -->
 \whitespace trim

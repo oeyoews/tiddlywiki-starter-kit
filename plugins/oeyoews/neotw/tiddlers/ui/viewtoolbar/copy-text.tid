@@ -1,4 +1,4 @@
-caption: copy code
+caption: {{$:/core/images/copy-clipboard}} copy code
 description: copy code
 tags: $:/tags/ViewToolbar
 title: $:/plugins/oeyoews/neotw/ui/copy-code

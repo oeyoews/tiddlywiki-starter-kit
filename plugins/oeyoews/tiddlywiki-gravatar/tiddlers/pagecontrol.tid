@@ -2,7 +2,7 @@ title: $:/plugins/oeyoews/tiddlywiki-gravatar/ui/gravatar
 tags: $:/tags/PageControls
 list-before: $:/core/ui/Buttons/more-page-actions
 description: gravatar
-caption: gravatar
+caption: {{$:/plugins/oeyoews/tiddlywiki-gravatar/icon}}  gravatar
 list-after:
 
 <!-- TODO: too large in sidebar -->

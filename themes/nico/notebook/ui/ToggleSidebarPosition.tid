@@ -7,7 +7,7 @@ caption: Position
 \whitespace trim
 <!-- this positon not refreshed -->
 <!-- <$button tooltip={{{ [[$:/themes/nico/notebook/metrics/sidebar-position]get[position]addprefix[Toggle sidebar position ]] }}} aria-label="Position" class="tc-btn-invisible grayscale hover:filter-none"> -->
-<$button tooltip={{{ [[Toggle sidebar position]] }}} aria-label="Position" class="tc-btn-invisible grayscale hover:filter-none">
+<$button tooltip={{{ [[Change sidebar position]] }}} aria-label="Position" class="tc-btn-invisible grayscale hover:filter-none">
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
 <$list filter="[[$:/themes/nico/notebook/metrics/sidebar-position]get[position]match[right]]">
   {{$:/themes/nico/notebook/images/leftbar.svg}}
@@ -20,7 +20,7 @@ caption: Position
 </$list>
 <$list filter="[<tv-config-toolbar-text>match[yes]]">
 <span class="tc-btn-text">
-<$text text="Toggle Sidebar Position"/>
+<$text text="Change Sidebar Position"/>
 </span>
 </$list>
 </$button>

@@ -2,7 +2,7 @@ title: $:/plugins/oeyoews/tiddler-fullscreen/ViewToolbar
 tags: $:/tags/ViewToolbar
 list-before: $:/core/ui/Buttons/close
 description: fullscreen tiddler
-caption: fullscreen tiddler
+caption: {{$:/plugins/oeyoews/tiddler-fullscreen/icons/fullscreen}} fullscreen tiddler
 
 \whitespace trim
 <$button message="om-tiddler-fullscreen" tooltip="fullscreen tiddler" aria-label="fullscreen tiddler" class=<<tv-config-toolbar-class>>>

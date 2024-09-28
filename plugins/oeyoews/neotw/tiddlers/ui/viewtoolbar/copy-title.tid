@@ -1,4 +1,4 @@
-caption: Copy Tiddler Title
+caption: {{$:/core/images/copy-clipboard}} Copy Tiddler Title
 description: Copy the name of this tiddler to the clipboard
 tags: $:/tags/ViewToolbar
 title: $:/plugins/oeyoews/neotw/ui/copy-title
