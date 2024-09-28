@@ -112,16 +112,14 @@ a {
 }
 
 /* just show btn on hover */
-/* .tc-tiddler-frame .tc-titlebar button { */
 .tc-tiddler-controls > button {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  scale: 0.8;
+  transition: scale 0.2s ease-in-out;
+  &:hover {
+    scale: 1;
+  }
 }
-.tc-tiddler-frame:hover .tc-titlebar button {
-  /* zoom: 1; */
-  filter: alpha(opacity=100);
-  opacity: 1;
-}
+
 /* enhance font size */
 .tc-tiddler-frame .tc-tiddler-body {
   font-size: 20px;
