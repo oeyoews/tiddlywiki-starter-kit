@@ -81,5 +81,3 @@ npm create neotw-app@latest
 ./src-dev
     └── tiddlers/
     └── tiddlywiki.info(2.2) -->
-
-<!-- shell:startup to copy start.bat -->

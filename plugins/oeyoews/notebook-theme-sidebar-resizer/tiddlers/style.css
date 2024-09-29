@@ -19,7 +19,7 @@
 }
 
 .oresizer:hover {
-  cursor: e-resize;
+  cursor: col-resize;
   background-color: #e5e7eb;
   opacity: 1;
   width: 4px;
