@@ -1,0 +1,22 @@
+title: $:/plugins/oeyoews/neotw-play-sound/readme
+description: neotw-play-sound
+
+[[在线文档|https://neotw.vercel.app/docs/plugins/neotw-play-sound]]
+
+> sounds from https://github.com/joshwcomeau/use-sound/tree/main/stories/sounds
+
+!! 使用
+
+```html
+<$button message="neotw-play-sound"> play sound </$button>
+<$button>
+Play pop sound
+<$action-sendmessage $message="neotw-play-sound" audioTiddler="$:/plugins/oeyoews/neotw-play-sound/sounds/pop.mp3" />
+</$button>
+```
+
+<$button message="neotw-play-sound"> play sound </$button>
+<$button>
+Play pop sound
+<$action-sendmessage $message="neotw-play-sound" audioTiddler="$:/plugins/oeyoews/neotw-play-sound/sounds/pop.mp3" />
+</$button>

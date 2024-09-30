@@ -9,6 +9,6 @@ https://talk.tiddlywiki.org/t/prevent-prevent-leave-you-have-unsaved-changes/819
 
 exports.startup = function () {
   $tw.unloadTasks = $tw.unloadTasks.filter(
-    (task) => !task.toString().includes('confirmationMessage')
+    (task) => !task.toString().includes('confirmationMessage'),
   );
 };
