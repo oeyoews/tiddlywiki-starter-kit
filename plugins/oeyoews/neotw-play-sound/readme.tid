@@ -20,3 +20,7 @@ Play pop sound
 Play pop sound
 <$action-sendmessage $message="neotw-play-sound" audioTiddler="$:/plugins/oeyoews/neotw-play-sound/sounds/pop.mp3" />
 </$button>
+
+!! TODO
+
+* 添加配置checkbox
