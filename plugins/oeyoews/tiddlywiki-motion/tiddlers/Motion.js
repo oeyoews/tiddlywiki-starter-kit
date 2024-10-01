@@ -342,10 +342,10 @@ module.exports = class Motion {
       },
       TogglePalette: () => {
         this.navigatorWidget.dispatchEvent({ type: 'om-toggle-theme' });
-        new $tw.Notify().display({
-          title: `🎨 Toggle Theme`,
-          icon: 'success',
-        });
+        // new $tw.Notify().display({
+        //   title: `🎨 Toggle Theme`,
+        //   icon: 'success',
+        // });
         return false;
       },
       ToggleTiddler: () => {

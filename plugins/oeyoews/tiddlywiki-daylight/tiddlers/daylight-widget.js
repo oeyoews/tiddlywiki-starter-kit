@@ -34,7 +34,7 @@ class DaylightWidget extends Widget {
 
       const icon = getIcon(theme);
       const spanNode = createElement('span', {
-        class: storageTheme === theme ? '' : 'hidden'
+        class: storageTheme === theme ? '' : 'hidden',
       });
       spanNode.innerHTML = icon;
       return spanNode;
@@ -46,7 +46,7 @@ class DaylightWidget extends Widget {
 
     const domNode = createElement('button', {
       class: 'bg-transparent m-0 p-0',
-      children: [systemNode, lightNode, darkNode]
+      children: [systemNode, lightNode, darkNode],
     });
 
     btn &&
@@ -55,8 +55,14 @@ class DaylightWidget extends Widget {
     classNames && domNode.classList.add(...classNames.split(' '));
 
     domNode.addEventListener('click', () => {
+      $tw.rootWidget.dispatchEvent({
+        type: 'neotw-play-sound',
+        paramObject: {
+          audioTiddler: '$:/plugins/oeyoews/neotw-play-sound/sounds/bite.mp3',
+        },
+      });
       toggleMode();
-      new $tw.Notify().display({ title: '更新模式' });
+      // new $tw.Notify().display({ title: '切换模式' });
       this.refreshSelf();
     });
 

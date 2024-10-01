@@ -30,9 +30,9 @@ function debounce(fn, delay, immediate = false) {
 
 let currentAudio = null;
 function playSound(event) {
-  const pluginTitle = '$:/plugins/oeyoews/neotw-play-sound';
+  const pluginTitle = '$:/plugins/oeyoews/neotw-play-sound/';
   const { audioTiddler } = event.paramObject || {
-    audioTiddler: pluginTitle + '/menu-open.mp3',
+    audioTiddler: pluginTitle + 'menu-open.mp3',
   };
 
   const soundBase64 = $tw.wiki.getTiddlerText(audioTiddler);
