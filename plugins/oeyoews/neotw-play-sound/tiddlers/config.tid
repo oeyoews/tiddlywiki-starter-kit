@@ -1,8 +1,8 @@
 title: $:/config/eyoews/neotw-play-sound/config
 th-navigating: yes
 th-deleting-tiddler: yes
-th-new-tiddler: yes
-th-editing-tiddler: yes
+th-new-tiddler: no
+th-editing-tiddler: no
 th-closing-tiddler: yes
 th-opening-default-tiddlers-list: no
 

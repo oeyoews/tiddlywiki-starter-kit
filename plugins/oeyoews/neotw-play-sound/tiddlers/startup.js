@@ -75,9 +75,9 @@ exports.startup = function () {
   enableHooks.forEach((hook) => {
     $tw.hooks.addHook(hook, function (event) {
       const sound = {
-        default: '$:/plugins/oeyoews/neotw-play-sound/sounds/bite.mp3',
+        default: '$:/plugins/oeyoews/neotw-play-sound/sounds/pop.mp3',
         'th-closing-tiddler':
-          '$:/plugins/oeyoews/neotw-play-sound/sounds/pop.mp3',
+          '$:/plugins/oeyoews/neotw-play-sound/sounds/switch-on.mp3',
       };
       playSound({
         paramObject: {
