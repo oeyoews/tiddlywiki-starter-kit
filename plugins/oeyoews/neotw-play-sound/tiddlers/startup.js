@@ -37,12 +37,16 @@ function playSound(event) {
 
   const soundBase64 = $tw.wiki.getTiddlerText(audioTiddler);
 
-  if (currentAudio) {
-    currentAudio.pause();
-    currentAudio.currentTime = 0;
+  try {
+    if (currentAudio) {
+      currentAudio.pause();
+      currentAudio.currentTime = 0;
+    }
+    currentAudio = new Audio('data:audio/mp3;base64,' + soundBase64);
+    currentAudio.play();
+  } catch (e) {
+    console.error(e);
   }
-  currentAudio = new Audio('data:audio/mp3;base64,' + soundBase64);
-  currentAudio.play();
 }
 
 const debouncePlaySound = debounce(playSound, 200, true);
@@ -64,16 +68,20 @@ exports.startup = function () {
   Object.entries(hooks).forEach((hook) => {
     if (hook[0].startsWith('t') && hook[1] === 'yes') {
       enableHooks.push(hook[0]);
-      console.log(hook);
     }
   });
 
   // 为了性能，修改配置后需要重启, 不在这里每次重新检测值的变化
   enableHooks.forEach((hook) => {
     $tw.hooks.addHook(hook, function (event) {
+      const sound = {
+        default: '$:/plugins/oeyoews/neotw-play-sound/sounds/bite.mp3',
+        'th-closing-tiddler':
+          '$:/plugins/oeyoews/neotw-play-sound/sounds/pop.mp3',
+      };
       playSound({
         paramObject: {
-          audioTiddler: '$:/plugins/oeyoews/neotw-play-sound/sounds/bite.mp3',
+          audioTiddler: sound[hook] || sound.default,
         },
       });
       return event;

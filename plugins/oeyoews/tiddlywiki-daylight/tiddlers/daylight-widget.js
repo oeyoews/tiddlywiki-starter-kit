@@ -58,7 +58,8 @@ class DaylightWidget extends Widget {
       $tw.rootWidget.dispatchEvent({
         type: 'neotw-play-sound',
         paramObject: {
-          audioTiddler: '$:/plugins/oeyoews/neotw-play-sound/sounds/bite.mp3',
+          audioTiddler:
+            '$:/plugins/oeyoews/neotw-play-sound/sounds/switch-on.mp3',
         },
       });
       toggleMode();
