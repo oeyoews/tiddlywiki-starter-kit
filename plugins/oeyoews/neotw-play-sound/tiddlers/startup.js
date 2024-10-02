@@ -60,9 +60,8 @@ exports.startup = function () {
     debouncePlaySound(event);
   });
 
-  const hooks = $tw.wiki.getTiddler(
-    '$:/config/eyoews/neotw-play-sound/config',
-  ).fields;
+  const configTiddlerName = '$:/config/eyoews/neotw-play-sound/config';
+  const hooks = $tw.wiki.getTiddler(configTiddlerName).fields;
   const enableHooks = [];
 
   Object.entries(hooks).forEach((hook) => {
@@ -71,19 +70,25 @@ exports.startup = function () {
     }
   });
 
-  // 为了性能，修改配置后需要重启, 不在这里每次重新检测值的变化
+  const sound = {
+    default: '$:/plugins/oeyoews/neotw-play-sound/sounds/pop.mp3',
+    'th-closing-tiddler':
+      '$:/plugins/oeyoews/neotw-play-sound/sounds/switch-on.mp3',
+  };
   enableHooks.forEach((hook) => {
+    // !为了性能，修改配置后需要重启, 不在这里每次重新检测值的变化
+    const enableSound =
+      $tw.wiki.getTiddler(configTiddlerName).fields[hook] === 'yes';
+    if (!enableSound) {
+      return;
+    }
     $tw.hooks.addHook(hook, function (event) {
-      const sound = {
-        default: '$:/plugins/oeyoews/neotw-play-sound/sounds/pop.mp3',
-        'th-closing-tiddler':
-          '$:/plugins/oeyoews/neotw-play-sound/sounds/switch-on.mp3',
-      };
       playSound({
         paramObject: {
           audioTiddler: sound[hook] || sound.default,
         },
       });
+      $tw.hooks.invokeHook('neotw-play-sound', event);
       return event;
     });
   });
