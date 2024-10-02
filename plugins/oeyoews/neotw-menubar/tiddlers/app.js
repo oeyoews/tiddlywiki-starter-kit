@@ -15,7 +15,7 @@ const getNavigatorWidget = require('./getNavigatorWidget');
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 
 const { MenuBar } = require('vue-context-menu.min.js');
-const toggleSidebar = require('./toggleSidebar.js');
+const _toggleSidebar = require('./toggleSidebar.js');
 
 const Icon = require('./components/Icon.js');
 const icons = require('./icons');
@@ -440,6 +440,7 @@ const app = () => {
       };
 
       const enableSound = ref(true);
+      const menuOpen = ref(false);
 
       onMounted(() => {
         if (
@@ -452,15 +453,19 @@ const app = () => {
       const sound_icon = computed(() => {
         return enableSound.value ? icons.sound : icons.sound_mute;
       });
+      const menu_icon = computed(() => {
+        return !menuOpen.value ? icons.menu : icons.menu_close;
+      });
 
       //#region data
       return {
         menuData,
         menubarNav,
         tiddlywiki_icon: icons.tiddlywiki,
-        menu_icon: icons.menu,
+        menu_icon,
         sound_icon,
         enableSound,
+        menuOpen,
       };
     },
     mounted() {
@@ -475,7 +480,10 @@ const app = () => {
       // });
     },
     methods: {
-      toggleSidebar,
+      toggleSidebar() {
+        _toggleSidebar();
+        this.menuOpen = !this.menuOpen;
+      },
       toggleSound() {
         this.enableSound = !this.enableSound;
         let sound =
