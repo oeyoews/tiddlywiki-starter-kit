@@ -2,7 +2,7 @@
 
 <img src="/img/tiddlywiki-starter-kit.webp" class="rounded-md mt-2" />
 
-> 你的下一个笔记软件又何必不是 TiddlyWiki5 ?(your next note software is not TiddlyWiki5?)
+> 你的下一个笔记软件又何必不是 TiddlyWiki5 ?(your next note software is not TiddlyWiki5?), 让 TiddlyWiki5 给你带来亿点点震撼，重新定义笔记软件.
 
 <audio controls class="w-full my-2">
   <source src="/tw.mp3" type="audio/mp3">
