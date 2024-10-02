@@ -497,11 +497,15 @@ const app = () => {
             paramObject: { audioTiddler: sound },
           });
         }
+        const opt = {
+          suppressTimestamp: true,
+        };
         $tw.wiki.setText(
           configTiddlerName,
           'disable',
           null,
           this.enableSound ? 'no' : 'yes',
+          opt,
         );
         if (this.enableSound) {
           $tw.rootWidget.dispatchEvent({
