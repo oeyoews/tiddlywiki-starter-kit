@@ -23,6 +23,17 @@ Play pop sound
 <$action-sendmessage $message="neotw-play-sound" audioTiddler="$:/plugins/oeyoews/neotw-play-sound/sounds/pop.mp3" />
 </$button>
 
+<details>
+<summary>All Sounds</summary>
+
+<$list filter="[all[shadows]prefix[$:/plugins/oeyoews/neotw-play-sound/sounds]]">
+<$text text={{{ [<currentTiddler>split[/]last[]] }}} />
+<$transclude />
+
+</$list>
+
+</details>
+
 !! TODO
 
 * 添加配置checkbox
