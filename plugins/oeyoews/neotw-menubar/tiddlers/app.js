@@ -5,10 +5,11 @@ module-type: library
 
 \*/
 
-const { h, ref, reactive, onMounted } = window.Vue;
+const { watch, computed, h, ref, reactive, onMounted } = window.Vue;
 
 const pluginTitle = '$:/plugins/oeyoews/neotw-menubar';
 const { version } = $tw.wiki.getTiddler(pluginTitle).fields;
+const configTiddlerName = '$:/config/eyoews/neotw-play-sound/config';
 
 const getNavigatorWidget = require('./getNavigatorWidget');
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
@@ -171,7 +172,7 @@ const app = () => {
           label: 'File',
           icon: getIcon('files'),
           onSubMenuOpen: () => {
-            console.log('open');
+            // console.log('open');
           },
           /** @type {IMenuItem[]} */
           children: [
@@ -438,18 +439,28 @@ const app = () => {
         }, 200);
       };
 
+      const enableSound = ref(true);
+
+      onMounted(() => {
+        if (
+          $tw.wiki.getTiddler(configTiddlerName).fields['disable'] === 'yes'
+        ) {
+          enableSound.value = false;
+        }
+      });
+
+      const sound_icon = computed(() => {
+        return enableSound.value ? icons.sound : icons.sound_mute;
+      });
+
       //#region data
       return {
         menuData,
         menubarNav,
         tiddlywiki_icon: icons.tiddlywiki,
         menu_icon: icons.menu,
-        toggleSidebar,
-      };
-    },
-    provide() {
-      return {
-        // toggleSidebar,
+        sound_icon,
+        enableSound,
       };
     },
     mounted() {
@@ -462,6 +473,35 @@ const app = () => {
       //   } else {
       //   }
       // });
+    },
+    methods: {
+      toggleSidebar,
+      toggleSound() {
+        this.enableSound = !this.enableSound;
+        let sound =
+          '$:/plugins/oeyoews/neotw-play-sound/sounds/enable-sound.mp3';
+
+        if (!this.enableSound) {
+          sound =
+            '$:/plugins/oeyoews/neotw-play-sound/sounds/disable-sound.mp3';
+          $tw.rootWidget.dispatchEvent({
+            type: 'neotw-play-sound',
+            paramObject: { audioTiddler: sound },
+          });
+        }
+        $tw.wiki.setText(
+          configTiddlerName,
+          'disable',
+          null,
+          this.enableSound ? 'no' : 'yes',
+        );
+        if (this.enableSound) {
+          $tw.rootWidget.dispatchEvent({
+            type: 'neotw-play-sound',
+            paramObject: { audioTiddler: sound },
+          });
+        }
+      },
     },
   };
   return component;

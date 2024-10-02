@@ -29,8 +29,12 @@ function debounce(fn, delay, immediate = false) {
 }
 
 let currentAudio = null;
+const configTiddlerName = '$:/config/eyoews/neotw-play-sound/config';
+const pluginTitle = '$:/plugins/oeyoews/neotw-play-sound/';
 function playSound(event) {
-  const pluginTitle = '$:/plugins/oeyoews/neotw-play-sound/';
+  if ($tw.wiki.getTiddler(configTiddlerName).fields['disable'] === 'yes') {
+    return;
+  }
   const { audioTiddler } = event?.paramObject || {
     audioTiddler: pluginTitle + 'menu-open.mp3',
   };
@@ -43,6 +47,7 @@ function playSound(event) {
       currentAudio.currentTime = 0;
     }
     currentAudio = new Audio('data:audio/mp3;base64,' + soundBase64);
+    currentAudio.volume = 0.8;
     currentAudio.play();
   } catch (e) {
     console.error(e);
@@ -60,7 +65,6 @@ exports.startup = function () {
     debouncePlaySound(event);
   });
 
-  const configTiddlerName = '$:/config/eyoews/neotw-play-sound/config';
   const hooks = $tw.wiki.getTiddler(configTiddlerName).fields;
   const enableHooks = [];
 
@@ -77,11 +81,11 @@ exports.startup = function () {
   };
   enableHooks.forEach((hook) => {
     // !为了性能，修改配置后需要重启, 不在这里每次重新检测值的变化
-    const enableSound =
+    /* const enableSound =
       $tw.wiki.getTiddler(configTiddlerName).fields[hook] === 'yes';
     if (!enableSound) {
       return;
-    }
+    } */
     $tw.hooks.addHook(hook, function (event) {
       playSound({
         paramObject: {

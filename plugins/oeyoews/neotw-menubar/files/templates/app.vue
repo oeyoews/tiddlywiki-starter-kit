@@ -5,9 +5,14 @@
     </template>
     <!-- dynamic menu icon -->
     <template #suffix>
-      <Icon :icon="menu_icon"
-        custom-class="ml-auto mr-4 cursor-pointer rounded-full transition-all duration-600 hover:scale-125"
-        @menu="toggleSidebar" />
+      <div class="ml-auto flex">
+        <Icon :icon="sound_icon"
+          custom-class="mr-4 cursor-pointer rounded-full transition-all duration-600 hover:scale-125"
+          @menu="toggleSound" />
+        <Icon :icon="menu_icon"
+          custom-class="mr-4 cursor-pointer rounded-full transition-all duration-600 hover:scale-125"
+          @menu="toggleSidebar" />
+      </div>
     </template>
   </MenuBar>
   <!-- <div @contextmenu="onContextMenu">Button</div> -->
