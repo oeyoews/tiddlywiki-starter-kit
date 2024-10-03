@@ -17,5 +17,6 @@
     "$:/plugins/oeyoews/vue-draggable-plus",
     "$:/plugins/oeyoews/vue-context-menu"
   ],
+  "stability": "STABILITY_3_LEGACY",
   "list": "readme"
 }

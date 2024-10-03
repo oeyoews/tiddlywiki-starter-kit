@@ -3,7 +3,8 @@ description: TiddlyWiki 的右键菜单插件
 
 <!-- plugin template readme -->
 
-> {{description}}
+- [ ] 添加切换语言按钮， 跟随tw 语言或者浏览器语言(i18n 语言已完成)
+
 
 <!-- !! Motivation -->
 
