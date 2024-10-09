@@ -1,3 +1,3 @@
-import getRandomString from '../index';
+import { getRandomString } from '../index';
 
 console.log(getRandomString(22));

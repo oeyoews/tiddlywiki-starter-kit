@@ -8,5 +8,6 @@
   "plugin-type": "plugin",
   "name": "Neotw Read Files",
   "dependents": [],
+  "stability": "STABILITY_3_LEGACY",
   "list": "readme"
 }

@@ -21,7 +21,7 @@ class FullscreenWidget extends Widget {
 
     // const icon = this.geticon('$:/core/images/full-screen-button');
     const svg = this.wiki.getTiddlerText(
-      '$:/plugins/oeyoews/tiddler-fullscreen/icons/fullscreen'
+      '$:/plugins/oeyoews/tiddler-fullscreen/icons/fullscreen',
     );
 
     const ssr = this.document.isTiddlyWikiFakeDom;
@@ -37,10 +37,21 @@ class FullscreenWidget extends Widget {
     this.domNodes.push(domNode);
   }
 
+  getIconSvg(icon) {
+    return $tw.wiki.renderText(
+      'text/html',
+      'text/vnd.tiddlywiki',
+      `<$transclude $tiddler="${icon}" />`,
+      {
+        parseAsInline: true,
+      },
+    );
+  }
+
   geticon(icon) {
     const iconwidget = $tw.wiki.makeTranscludeWidget(
       icon,
-      { document: $tw.fakeDocument, parseAsInline: true } // NOTE: muse use fakedom
+      { document: $tw.fakeDocument, parseAsInline: true }, // NOTE: muse use fakedom
     );
 
     const container = $tw.fakeDocument.createElement('div');

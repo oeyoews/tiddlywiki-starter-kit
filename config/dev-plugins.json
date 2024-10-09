@@ -1,8 +1,8 @@
 [
+  "neotw-vconsole",
   "neotw-play-sound",
   "neotw-bot",
   "neotw-ui",
   "neotw-cmp",
-  "neotw-read-files",
   "element-plus"
 ]
