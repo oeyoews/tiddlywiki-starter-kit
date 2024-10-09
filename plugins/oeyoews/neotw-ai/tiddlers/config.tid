@@ -1,0 +1,11 @@
+title: $:/plugins/oeyoews/neotw-ai/config
+description: your gemini apikey
+publish: private
+model: gemini
+proxy:
+icon:  ⬤
+speed: 20
+api:
+SPARK_API_KEY:
+SPARK_APP_ID:
+SPARK_API_SECRET:

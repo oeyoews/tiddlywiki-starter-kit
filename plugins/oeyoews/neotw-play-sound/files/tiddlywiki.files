@@ -1,0 +1,15 @@
+{
+	"directories": [
+		{
+			"path": "./",
+			"filesRegExp": "^.*\\.mp3$",
+			"fields": {
+				"type": "audio/mpeg",
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/neotw-play-sound/sounds/"
+				}
+			}
+		}
+	]
+}

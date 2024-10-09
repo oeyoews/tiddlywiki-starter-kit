@@ -1,0 +1,13 @@
+{
+	"tiddlers": [
+		{
+			"file": "vue.global.prod.js",
+			"fields": {
+				"type": "application/javascript",
+				"title": "$:/plugins/oeyoews/neotw-vue3/vue.global.prod.js",
+				"module-type": "library",
+				"hide-body": "yes"
+			}
+		}
+	]
+}

@@ -1,0 +1,13 @@
+{
+  "title": "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
+  "description": "Tiddlywiki Tailwindcss Plus",
+  "author": "oeyoews",
+  "meta#disabled": "yes",
+  "version": "3.4.0",
+  "core-version": ">=5.3.1",
+  "type": "application/json",
+  "plugin-priority": 1,
+  "plugin-type": "plugin",
+  "name": "Tiddlywiki Tailwindcss Plus",
+  "list": "readme"
+}

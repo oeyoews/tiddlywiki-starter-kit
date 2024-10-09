@@ -1,0 +1,26 @@
+title: $:/plugins/oeyoews/tiddlywiki-publish-tiddler/macro/publish
+tags: $:/tags/Macro
+
+\define pushishNotFilter()
+[<currentTiddler>get[publish]match[no]]
+\end
+
+\define pushishFilter()
+[<currentTiddler>get[publish]match[yes]]
+\end
+
+\define opublish()
+<div class="inline">
+<$select class="border-none rounded appearance-none p-0.5 capitalize cursor-pointer" field="publish" tiddler=<<currentTiddler>> tooltip='status' default="status">
+  <option disabled class="bg-teal-400" value="status">❓ status</option>
+  <option class="bg-lime-400" value="public">🔥 public ({{{ [field:publish[public]count[]] }}})</option>
+  <option class="bg-purple-400" value="blog">🔥 blog ({{{ [field:publish[blog]count[]] }}})</option>
+  <option class="bg-red-400" value="private">🔐 private ({{{ [field:publish[private]count[]] }}})</option>
+  <option class="bg-yellow-400" value="no">📑 draft ({{{ [field:publish[draft]count[]] }}})</option>
+  <option class="bg-indigo-400" value="readonly">📖 readonly ({{{ [field:publish[readonly]count[]] }}})</option>
+  <option class="bg-green-400" value="article">📝 article ({{{ [field:publish[article]count[]] }}})</option>
+</$select>
+<!-- add checkbox -->
+<!-- <$checkbox tiddler=<<currentTiddler>> field="publish" checked="no" unchecked="public"></$checkbox> -->
+</div>
+\end

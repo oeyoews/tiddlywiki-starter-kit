@@ -1,0 +1,18 @@
+list-after: $:/core/ui/EditTemplate/title
+title: $:/ContributionBanner
+
+<!-- tags: $:/tags/EditTemplate -->
+
+\define base-github()
+https://github.com/oeyoews/neotw/edit/main/tiddlers/
+\end
+
+<$set name="draft-of" value={{{ [<currentTiddler>get[draft.of]] }}}>
+<$list filter="[{$:/info/url/protocol}match[https:]]">
+<$list filter="[[$:/config/OriginalTiddlerPaths]getindex<draft-of>]" variable="target" >
+<div class="tc-improvement-banner"> <<.icon "$:/core/images/star-filled">> Improving TiddlyWiki Documentation
+<a href={{{ [<target>addprefix<base-github>] }}} class="tc-tiddlylink-external" target="_blank" rel="noopener noreferrer">edit this tiddler on Gitlab</a>
+</div>
+</$list>
+</$list>
+</$set>

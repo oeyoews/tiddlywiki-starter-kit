@@ -1,0 +1,20 @@
+{
+  "title": "$:/plugins/oeyoews/vue-contextmenu",
+  "description": "TiddlyWiki contextmenu plugin by Vue3",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.3.0",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "vue-contextmenu",
+  "meat#disabled": "yes",
+  "qrcode": "yes",
+  "created": "2024-03-19",
+  "dependents": [
+    "$:/plugins/oeyoews/neotw-vue3",
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
+    "$:/plugins/oeyoews/vue-context-menu",
+    "$:/plugins/oeyoews/vue-i18n"
+  ],
+  "list": "readme"
+}
