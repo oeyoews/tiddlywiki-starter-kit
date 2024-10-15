@@ -84,6 +84,9 @@ importers:
       '@types/qrcode':
         specifier: 1.5.5
         version: 1.5.5
+      consola:
+        specifier: ^3.2.3
+        version: 3.2.3
       prettier:
         specifier: 3.2.5
         version: 3.2.5

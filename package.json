@@ -59,12 +59,13 @@
     "@types/fs-extra": "11.0.4",
     "@types/prompts": "2.4.9",
     "@types/qrcode": "1.5.5",
+    "consola": "^3.2.3",
     "prettier": "3.2.5",
     "terser": "5.31.0",
     "tw5-typed": "^0.5.12",
     "typescript": "^5.5.4"
   },
   "engines": {
-    "node": ">16.8.0"
+    "node": ">=16.8.0"
   }
 }
