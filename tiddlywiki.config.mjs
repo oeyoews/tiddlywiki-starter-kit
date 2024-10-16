@@ -19,6 +19,6 @@ export default {
   wiki: 'src', // 维基库目录
   markdown: true, // 是否启用Markdown渲染
   tiddlersRepo: 'oeyoews/neotw-tiddlers', // 存储Tiddler的仓库
-  pluginversion: '5.3.0', // 插件版本
+  pluginversion: '5.3.4', // 插件版本
   checkfilesize: false, // 是否检查文件大小
 };
