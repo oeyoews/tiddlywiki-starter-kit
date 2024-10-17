@@ -1,0 +1,18 @@
+title: $:/themes/nico/notebook/ui/Buttons/menu
+
+<!-- tags: $:/tags/PageControls -->
+<!-- description: -->
+<!-- list-after: -->
+<!-- caption: -->
+
+<$reveal state="$:/state/notebook-sidebar" type="match" text="yes" default="no" retain="yes" animate="no">
+  <$button set="$:/state/notebook-sidebar" setTo="no" tooltip="Toggle menu" class="tc-btn-invisible sidebar-toggle open">
+    {{$:/themes/nico/notebook/images/bars}}
+  </$button>
+</$reveal>
+
+<$reveal type="nomatch" state="$:/state/notebook-sidebar" text="yes">
+  <$button set="$:/state/notebook-sidebar" setTo="yes" tooltip="Toggle menu" class="tc-btn-invisible sidebar-toggle">
+    {{$:/themes/nico/notebook/images/bars}}
+  </$button>
+</$reveal>

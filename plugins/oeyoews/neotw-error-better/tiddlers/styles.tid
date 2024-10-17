@@ -1,0 +1,8 @@
+title: $:/plugins/oeyoews/neotw-error-better/style.css
+tags: $:/tags/Stylesheet
+
+<% if [{$:/info/url/protocol}match[https:]] %>
+.tc-error-form {
+  display: none !important;
+}
+<% endif  %>

@@ -1,0 +1,7 @@
+title: $:/plugins/oeyoews/neotw-ai/viewtemplate/summary
+tags: $:/tags/ViewTemplate
+list-before: $:/core/ui/ViewTemplate/body
+
+<% if [all[current]!is[system]gemini[yes]] [all[current]!is[system]publish[article]] %>
+	<$neotw-ai />
+<% endif %>

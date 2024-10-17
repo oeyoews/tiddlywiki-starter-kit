@@ -1,0 +1,28 @@
+title: $:/plugins/oeyoews/tiddlywiki-publish-tiddler/style/publish
+tags: $:/tags/Stylesheet
+
+\define hide-tiddler-controls()  [data-tiddler-title="$(currentTiddler)$"] .tc-tiddler-controls  {display: none;}
+
+<!-- <$list filter="[{$:/info/url/protocol}!match[http:]]">
+.o-publish {
+  display: none;
+}
+</$list> -->
+
+<!-- <$list filter="[list[$:/StoryList]count[]match[0]]">
+.o-publish {
+  display: none;
+}
+</$list> -->
+
+<!-- <$list filter="[field:publish[readonly]]">
+<<hide-tiddler-controls>>
+</$list> -->
+
+<$list filter='[filed:publish[private]]'>
+[data-tiddler-title='{{!!title}}'] { border: 1px dashed red !important; }
+</$list>
+
+<!-- <$list filter='[has[draft.of]]'> -->
+<!-- [data-tiddler-title='{{!!title}}'] { border: 2px dashed red !important; } -->
+<!-- </$list> -->

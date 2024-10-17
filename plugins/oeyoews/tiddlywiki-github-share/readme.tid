@@ -1,0 +1,14 @@
+title: $:/plugins/oeyoews/tiddlywiki-github-share/readme
+
+<div class="prose max-w-none">
+
+* GitHub Share Button
+* compatiable font-awesome plugin
+
+!! TODO
+
+* add macro to embed single tid, not copy tid
+
+<!-- * if you use tiddlywiki menu plugin, this share button maybe  -->
+
+</div>

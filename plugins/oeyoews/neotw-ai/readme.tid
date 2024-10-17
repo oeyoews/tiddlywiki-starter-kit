@@ -1,0 +1,30 @@
+title: $:/plugins/oeyoews/neotw-ai/readme
+description: neotw-ai
+summary: 此插件使用 Google Gemini API 提供服务。需要提供 API 密钥以使用该插件。
+
+[[在线文档|https://neotw.vercel.app/docs/plugins/neotw-ai]]
+
+<$neotw-ai />
+
+!! Usage
+
+```html
+<$neotw-ai /> // or add gemini:yes to your tiddler field
+```
+
+!! Gemini APIKEY
+
+<$edit-text tiddler="$:/plugins/oeyoews/neotw-ai/config" field="api" type="password" />
+
+!! siliconflow
+
+* 有缓存, 不建议用
+
+<!-- !! TODO -->
+
+<!-- * support neotw-ai-translate widget -->
+<!-- * 限制 过大的 token https://ai.google.dev/tutorials/get_started_web#count-tokens -->
+
+<!-- !! Ref
+
+https://ai.google.dev/tutorials/get_started_web?hl=zh-cn -->
