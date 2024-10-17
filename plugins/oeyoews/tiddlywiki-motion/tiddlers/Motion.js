@@ -248,6 +248,17 @@ module.exports = class Motion {
         });
         return false;
       },
+      UpdatePlugins: () => {
+        const pluginPageTiddler = '$:/core/ui/ControlPanel/Modals/AddPlugins';
+        $tw.wiki.setText(
+          '$:/state/addplugins/tab-1342078386',
+          'text',
+          '',
+          '$:/Library/Codemirror6',
+        );
+        $tw.modal.display(pluginPageTiddler);
+        return false;
+      },
       GoToSearch: () => {
         this.navigatorWidget.dispatchEvent({
           type: 'tm-navigate',
