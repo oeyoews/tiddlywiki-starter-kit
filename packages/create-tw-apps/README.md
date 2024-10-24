@@ -8,3 +8,7 @@ npm create tw-apps@latest # bun create tw-apps@latest
 # start
 npm run start
 ```
+
+## TODO
+
+* add new params to support import single file
