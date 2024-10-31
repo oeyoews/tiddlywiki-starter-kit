@@ -10,7 +10,7 @@ export default {
     hostname: '0.0.0.0', // 主机名
     qrcode: true, // 是否显示二维码
     zen: false, // 是否启用zen模式
-    open: true, // 是否在启动时打开浏览器
+    open: false, // 是否在启动时打开浏览器
   },
   auth: false,
   username: 'oeyoews', // 用户名
