@@ -129,7 +129,6 @@ export default {
     '--deletetiddlers',
     '$:/StoryList',
   ],
-  // 生成 plugin library
   library: [
     '--output',
     `${base.output}/library`,
