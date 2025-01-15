@@ -1,0 +1,19 @@
+{
+  "title": "$:/plugins/oeyoews/neotw-swiper",
+  "description": "neotw-swiper",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.3.4",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "neotw-swiper",
+  "meat#disabled": "yes",
+  "qrcode": "yes",
+  "created": "2025/01-15",
+  "dependents": [
+    "$:/plugins/oeyoews/neotw-vue3",
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
+  ],
+  "stability": "STABILITY_2_STABLE",
+  "list": "readme"
+}
