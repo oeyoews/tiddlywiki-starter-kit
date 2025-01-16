@@ -58,6 +58,7 @@ sequenceDiagram
 
 ## Getting Started
 
+<!-- pnpm install --production -->
 ```bash
 npm create neotw-app@latest
 ```
