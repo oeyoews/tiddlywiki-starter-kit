@@ -25,7 +25,8 @@ class MeteorsWidget extends Widget {
     const createElement = $tw.utils.domMaker;
 
     const meteorContainer = createElement('div', {
-      class: 'absolute h-24 inset-x-0 hidden dark:block z-[-1]',
+      class:
+        'absolute pointer-events-none h-24 inset-x-0 hidden dark:block z-[-1]',
     });
     function getRandomPosition(max) {
       return `${Math.floor(Math.random() * max)}px `;
