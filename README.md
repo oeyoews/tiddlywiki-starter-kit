@@ -29,7 +29,7 @@
 
 ## Requirements
 
-- Node.js
+- Node.js(with npm)
 - Git(optional)
 
 ```mermaid
