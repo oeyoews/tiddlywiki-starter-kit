@@ -6,9 +6,11 @@ import ci from 'ci-info';
 // NOTE: vercel not support use { isCi } ???
 const enableMarkdown = base.markdown;
 
+// 本地运行使用到的插件
 const localPlugins = [
   'oeyoews/tiddlywiki-publish-tiddler',
   'oeyoews/neotw-vue3', // -dev
+  'oeyoews/clean-your-duplicate-storylist',
 ];
 
 const onlinePlugins = [

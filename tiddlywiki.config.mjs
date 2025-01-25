@@ -6,7 +6,7 @@ export default {
     'A modern style and elegant notebook built with Tiddlywiki5 and Tailwindcss', // 配置项的描述
   server: {
     port: 8000, // 服务器监听的端口号
-    host: true, // 是否启用主机模式
+    host: false, // 是否启用主机模式
     hostname: '0.0.0.0', // 主机名
     qrcode: true, // 是否显示二维码
     zen: false, // 是否启用zen模式
