@@ -1,7 +1,8 @@
-title: $:/core/ui/Actions/new-tiddler
+title: $:/core/ui/Actions/new-tiddler-md
 tags: $:/tags/Actions
 description: create a new empty tiddler
 
+<!-- TODO 开启配置 -->
 \define get-tags() $(textFieldTags)$ $(tagsFieldTags)$
 \whitespace trim
 <$vars textFieldTags={{$:/config/NewTiddler/Tags}} tagsFieldTags={{$:/config/NewTiddler/Tags!!tags}}>
