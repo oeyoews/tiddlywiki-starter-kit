@@ -1,0 +1,12 @@
+{
+  "title": "$:/plugins/oeyoews/neotw-error-better",
+  "description": "neotw-error-better",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.3.0",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "neotw-error-better",
+  "dependents": [],
+  "list": "readme"
+}

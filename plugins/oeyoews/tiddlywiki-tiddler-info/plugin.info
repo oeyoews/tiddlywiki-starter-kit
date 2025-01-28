@@ -1,0 +1,12 @@
+{
+  "title": "$:/plugins/oeyoews/tiddlywiki-tiddler-info",
+  "description": "Show Tiddler Info",
+  "author": "oeyoews",
+  "version": "0.3.0",
+  "core-version": ">=5.3.1",
+  "meta#disabled": "yes",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "Tiddlywiki Tiddler Info",
+  "list": "readme"
+}

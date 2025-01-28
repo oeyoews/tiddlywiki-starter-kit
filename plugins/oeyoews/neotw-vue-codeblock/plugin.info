@@ -1,0 +1,17 @@
+{
+  "title": "$:/plugins/oeyoews/neotw-vue-codeblock",
+  "description": "neotw-vue-codeblock",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.3.0",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "neotw-vue-codeblock",
+  "meat#disabled": "yes",
+  "qrcode": "yes",
+  "created": "2024-03-14",
+  "dependents": [
+    "$:/plugins/oeyoews/neotw-vue3"
+  ],
+  "list": "readme"
+}

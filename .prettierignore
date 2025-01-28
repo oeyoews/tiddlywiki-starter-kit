@@ -1,0 +1,12 @@
+node_modules/
+**/*.min.js
+pnpm-lock.yaml
+pnpm-workspace.yaml
+.tiddlywiki/
+# files/
+.vscode/
+.github/
+src/
+dev/
+# packages/
+.codesanbox/
