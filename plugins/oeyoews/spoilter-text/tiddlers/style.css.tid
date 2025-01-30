@@ -1,0 +1,14 @@
+title: $:/plugins/oeyoews/spoiler-text/style.css
+tags: $:/tags/Stylesheet
+type: text/css
+
+.spoiler {
+  filter: blur(0.5em);
+  transition: filter 0.1s ease;
+}
+.spoiler:hover {
+  filter: blur(0.18em);
+}
+.spoiler.revealed {
+  filter: blur(0);
+}
