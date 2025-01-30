@@ -34,7 +34,8 @@ class SpoilerText extends HTMLElement {
   // https://developer.mozilla.org/zh-CN/docs/Web/API/Web_components/Using_custom_elements
   connectedCallback() {
     const text =
-      this.getAttribute('text')?.length > 0
+      this.getAttribute('text')?.length > 0 &&
+      !['true', 'false'].includes(this.getAttribute('text'))
         ? this.getAttribute('text')
         : `<slot></slot>`;
     console.log('text', this.getAttribute('text'), this.textContent);
