@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/spoiler-text/readme
+description: spoiler-text
+
+[[在线文档|https://neotw.vercel.app/docs/plugins/spoiler-text]]
+
+This is a <$s-t text="Spoiler Text Plugin" />

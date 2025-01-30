@@ -1,9 +1,9 @@
 /*\
-title: $:/plugins/oeyoews/spoilter-text/widget.js
+title: $:/plugins/oeyoews/spoiler-text/widget.js
 type: application/javascript
 module-type: widget
 
-spoilter-text widget
+spoiler-text widget
 
 \*/
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
@@ -37,6 +37,6 @@ class SpoilerText extends Widget {
   }
 }
 
-/** @description spoilter-text widget */
+/** @description spoiler-text widget */
 exports['spoiler-text'] = SpoilerText;
 exports['s-t'] = SpoilerText;
