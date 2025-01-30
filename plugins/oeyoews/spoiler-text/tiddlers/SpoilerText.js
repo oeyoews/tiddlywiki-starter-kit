@@ -25,17 +25,29 @@ class SpoilerText extends HTMLElement {
 
     this.wrapper = document.createElement('span');
     this.wrapper.classList.add('spoiler');
-    setTimeout(() => {
-      // const text = this.getAttribute('text') || `<slot></slot>`;
-      const text = this.getAttribute('text') || this.textContent.trim();
-      this.wrapper.innerHTML = text;
-    }, 0);
+    this.shadowRoot.append(style, this.wrapper);
+  }
+  addEventListeners() {
+    this.wrapper.classList.toggle('revealed');
+  }
+  // https://talk.tiddlywiki.org/t/web-component-cannot-get-textcontent/11756/3
+  // https://developer.mozilla.org/zh-CN/docs/Web/API/Web_components/Using_custom_elements
+  connectedCallback() {
+    const text =
+      this.getAttribute('text')?.length > 0
+        ? this.getAttribute('text')
+        : `<slot></slot>`;
+    console.log('text', this.getAttribute('text'), this.textContent);
+    this.wrapper.innerHTML = text;
 
     this.wrapper.addEventListener('click', () => {
-      this.wrapper.classList.toggle('revealed');
+      this.addEventListeners();
     });
-
-    this.shadowRoot.append(style, this.wrapper);
+  }
+  disconnectedCallback() {
+    this.wrapper.removeEventListener('click', () => {
+      this.addEventListeners();
+    });
   }
 }
 class ST extends SpoilerText {}
