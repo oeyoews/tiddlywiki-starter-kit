@@ -2,7 +2,7 @@
   "title": "$:/plugins/oeyoews/spoiler-text",
   "description": "spoiler-text",
   "author": "oeyoews",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "core-version": ">=5.3.4",
   "type": "application/json",
   "plugin-type": "plugin",
@@ -10,7 +10,6 @@
   "meat#disabled": "yes",
   "qrcode": "yes",
   "created": "2025/01/30",
-  "dependents": [],
   "stability": "STABILITY_2_STABLE",
   "list": "readme"
 }

@@ -21,3 +21,9 @@ This is a <s-t text="Spoiler Text Plugin(web Component)" />
 This is a <s-t >Spoiler Text Plugin(web Component)" </s-t>
 This is a <spoiler-text >Spoiler Text Plugin(web Component)" </spoiler-text>
 ```
+
+!! wikitext parser
+
+```html
+<*Spoiler Text Example*>
+```

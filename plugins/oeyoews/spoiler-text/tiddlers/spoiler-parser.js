@@ -18,7 +18,7 @@ based on https://github.com/TiddlyWiki/TiddlyWiki5/blob/master/core/modules/pars
   exports.init = function (parser) {
     this.parser = parser;
     // Regexp to match
-    this.matchRegExp = /\|\*(.*?)\*\|/gm;
+    this.matchRegExp = /\<\*(.*?)\*\>/gm;
   };
 
   exports.parse = function () {
@@ -28,7 +28,7 @@ based on https://github.com/TiddlyWiki/TiddlyWiki5/blob/master/core/modules/pars
     // Process the link
     var text = this.match[1],
       link = this.match[2] || text,
-      textEndPos = this.parser.source.indexOf('|', start);
+      textEndPos = this.parser.source.indexOf('<', start);
     if (textEndPos < 0 || textEndPos > this.matchRegExp.lastIndex) {
       textEndPos = this.matchRegExp.lastIndex - 2;
     }
