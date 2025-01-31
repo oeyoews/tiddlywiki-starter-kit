@@ -7,6 +7,13 @@ module-type: library
 class SpoilerText extends HTMLElement {
   constructor() {
     super();
+  }
+  addEventListeners() {
+    this.wrapper.classList.toggle('revealed');
+  }
+  // https://talk.tiddlywiki.org/t/web-component-cannot-get-textcontent/11756/3
+  // https://developer.mozilla.org/zh-CN/docs/Web/API/Web_components/Using_custom_elements
+  connectedCallback() {
     this.attachShadow({ mode: 'open' });
 
     const style = document.createElement('style');
@@ -26,19 +33,11 @@ class SpoilerText extends HTMLElement {
     this.wrapper = document.createElement('span');
     this.wrapper.classList.add('spoiler');
     this.shadowRoot.append(style, this.wrapper);
-  }
-  addEventListeners() {
-    this.wrapper.classList.toggle('revealed');
-  }
-  // https://talk.tiddlywiki.org/t/web-component-cannot-get-textcontent/11756/3
-  // https://developer.mozilla.org/zh-CN/docs/Web/API/Web_components/Using_custom_elements
-  connectedCallback() {
     const text =
       this.getAttribute('text')?.length > 0 &&
       !['true', 'false'].includes(this.getAttribute('text'))
         ? this.getAttribute('text')
         : `<slot></slot>`;
-    console.log('text', this.getAttribute('text'), this.textContent);
     this.wrapper.innerHTML = text;
 
     this.wrapper.addEventListener('click', () => {
