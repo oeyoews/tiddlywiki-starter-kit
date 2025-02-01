@@ -11,7 +11,8 @@ const {
   HarmCategory,
 } = require('./lib/gemini.min.js');
 
-const MODEL_NAME = 'gemini-1.0-pro-001';
+// const MODEL_NAME = 'gemini-1.0-pro-001';
+const MODEL_NAME = 'gemini-1.5-flash';
 
 const safetySettings = [
   {
@@ -37,6 +38,7 @@ module.exports = async (option) => {
   if (!prompt) {
     return '没有任何输入';
   }
+  // https://ai.google.dev/gemini-api/docs/quickstart?lang=node
   const genAI = new GoogleGenerativeAI(API_KEY);
 
   const generationConfig = {

@@ -2,7 +2,7 @@
 title: $:/plugins/oeyoews/neotw-ai/app.js
 type: application/javascript
 module-type: library
-description: 摘要总结/每日一句
+description: 摘要总结
 
 \*/
 
@@ -81,6 +81,10 @@ const app = (
     },
 
     methods: {
+      regenerate() {
+        this.isLoading = true;
+        this.aibot();
+      },
       typewritter(summary) {
         const length = summary.length;
         let index = 0;
@@ -102,11 +106,11 @@ const app = (
         }
         switch (targetField) {
           case 'quote':
-            this.prompt = '每日一句' + title + '-oeyoews';
-            this.header = '每日一句';
+            this.prompt = `"请阅读并总结日记，适当使用emoji，使用简体中文输出,以下是今日日记。\n ${getText(title)}"`;
+            this.header = '流莹';
             break;
           default:
-            this.prompt = this.text + ' \n简短总结上面这段话';
+            this.prompt = `请阅读以下文章或句子，并提供一个精准、有意义的总结。总结应涵盖核心信息，避免空洞或无意义的内容, 请确保总结简洁且富有信息量，不要使用泛泛之谈。并且使用简体中文, 仅仅输出文本，可以适当带有一定的emoji,但不要输出代码块等非段落的格式文本, 保证输出的完整性。 ： ${this.text}`;
             break;
         }
       },

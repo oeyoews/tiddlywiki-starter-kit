@@ -57,6 +57,7 @@ const oeyoewsPlugins = [
   // md
   // 'markdown-it-twemoji',
   'markdown-it-emoji',
+  'neotw-ai',
   'markdown-it-spoiler',
   'markdown-it-math',
   'markdown-it-pangu',

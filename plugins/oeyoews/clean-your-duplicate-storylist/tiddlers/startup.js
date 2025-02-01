@@ -17,7 +17,8 @@ exports.startup = () => {
   // 页面加载完成后检查异常tid
   window.addEventListener('DOMContentLoaded', () => {
     // 找到所有 .tid 结尾的条目
-    const maybeStoryListTiddlers = $tw.wiki.filterTiddlers('[suffix[.tid]]');
+    const filter = '[suffix[.tid]] [prefix[Draft]!has[draft.of]]';
+    const maybeStoryListTiddlers = $tw.wiki.filterTiddlers(filter);
     const stateTiddler = '$:/state/clean-your-duplicate-storylist/has-error';
     if (maybeStoryListTiddlers.length > 1) {
       $tw.wiki.addTiddler({
@@ -26,9 +27,9 @@ exports.startup = () => {
         'mask-closable': 'yes',
         caption: 'StoryList条目检查',
         // <$link to=<<currentTiddler>> tooltip="Custom tooltip"> </$link>
-        text: `发现了${maybeStoryListTiddlers.length}个异常的 StoryList条目, 点击查看详情.
+        text: `发现了${maybeStoryListTiddlers.length}个异常的条目, 点击查看详情.
       <ol>
-        <$list filter="[suffix[.tid]]" >
+        <$list filter="${filter}" >
           <li> <<currentTiddler>> </li>
         </$list>
       </ol>
