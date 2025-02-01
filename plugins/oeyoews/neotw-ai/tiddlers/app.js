@@ -52,8 +52,10 @@ const app = (
         });
       });
       const prompt = ref('');
+      const noAi = ref(text ? true : false);
 
       return {
+        noAi,
         prompt,
         resHTML,
         API_KEY,
