@@ -67,25 +67,28 @@ const app = (
     },
 
     mounted() {
-      this.check();
-      if (fieldText) {
-        this.typewritter(fieldText);
-        this.isLoading = false;
-        return;
-      }
-      if (!API_KEY) {
-        console.error('请填写你的 API_KEY');
-        this.isLoading = false;
-        this.res = '请填写你的 API_KEY';
-        return;
-      }
-      this.aibot();
+      this.init();
     },
 
     methods: {
+      init() {
+        this.check();
+        if (fieldText) {
+          this.typewritter(fieldText);
+          this.isLoading = false;
+          return;
+        }
+        if (!API_KEY) {
+          console.error('请填写你的 API_KEY');
+          this.isLoading = false;
+          this.res = '请填写你的 API_KEY';
+          return;
+        }
+        this.aibot();
+      },
       regenerate() {
         this.isLoading = true;
-        this.aibot();
+        this.init();
       },
       typewritter(summary) {
         const length = summary.length;
