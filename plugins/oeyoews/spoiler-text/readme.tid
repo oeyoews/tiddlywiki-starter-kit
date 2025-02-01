@@ -27,3 +27,9 @@ This is a <spoiler-text >Spoiler Text Plugin(web Component)" </spoiler-text>
 ```html
 <*Spoiler Text Example*>
 ```
+
+!! use transclude
+
+```html
+<$s-t text={{your tiddler}} />
+```
