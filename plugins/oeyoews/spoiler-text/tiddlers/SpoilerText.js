@@ -7,6 +7,8 @@ module-type: library
 class SpoilerText extends HTMLElement {
   constructor() {
     super();
+    /** @type {'click' | 'dblclick'} */
+    this.listenerType = 'click';
   }
   addEventListeners() {
     this.wrapper.classList.toggle('revealed');
@@ -17,7 +19,7 @@ class SpoilerText extends HTMLElement {
     this.attachShadow({ mode: 'open' });
 
     const style = document.createElement('style');
-    style.textContent = `.spoiler{display:inline-block;filter:blur(0.5em);transition: filter 0.1s ease;}.spoiler:hover{cursor:pointer;filter:blur(0.18em);}.spoiler.revealed{filter:blur(0); }`;
+    style.textContent = `.spoiler{display:inline-block;filter:blur(0.5em);transition: filter 0.1s ease;user-select:none;cursor:pointer;}.spoiler:hover{filter:blur(0.18em);}.spoiler.revealed{filter:blur(0); user-select:auto;cursor:auto;}`;
 
     this.wrapper = document.createElement('span');
     this.wrapper.classList.add('spoiler');
@@ -27,21 +29,24 @@ class SpoilerText extends HTMLElement {
       !['true', 'false'].includes(this.getAttribute('text'))
         ? this.getAttribute('text')
         : `<slot></slot>`;
-    this.wrapper.innerHTML = $tw.wiki.renderText(
-      'text/html',
-      'text/vnd.tiddlywiki',
-      text,
-      {
-        parseAsInline: true,
-      },
-    );
-
-    this.wrapper.addEventListener('click', () => {
+    if (this.getAttribute('tiddler')) {
+      this.wrapper.innerHTML = $tw.wiki.renderTiddler(
+        'text/html',
+        this.getAttribute('tiddler'),
+        {
+          parseAsInline: true,
+        },
+      );
+      this.listenerType = 'dblclick';
+    } else {
+      this.wrapper.innerHTML = text;
+    }
+    this.wrapper.addEventListener(this.listenerType, () => {
       this.addEventListeners();
     });
   }
   disconnectedCallback() {
-    this.wrapper.removeEventListener('click', () => {
+    this.wrapper.removeEventListener(this.listenerType, () => {
       this.addEventListeners();
     });
   }

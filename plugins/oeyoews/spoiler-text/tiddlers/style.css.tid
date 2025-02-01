@@ -2,14 +2,4 @@ title: $:/plugins/oeyoews/spoiler-text/style.css
 tags: $:/tags/Stylesheet
 type: text/css
 
-.spoiler {
-  filter: blur(0.5em);
-  transition: filter 0.1s ease;
-}
-.spoiler:hover {
-  filter: blur(0.18em);
-  cursor: pointer;
-}
-.spoiler.revealed {
-  filter: blur(0);
-}
+.spoiler{display:inline-block;filter:blur(0.5em);transition: filter 0.1s ease;user-select:none;cursor:pointer;}.spoiler:hover{filter:blur(0.18em);}.spoiler.revealed{filter:blur(0); user-select:auto;cursor:auto;}

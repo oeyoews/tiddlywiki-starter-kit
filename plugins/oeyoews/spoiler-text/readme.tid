@@ -28,8 +28,10 @@ This is a <spoiler-text >Spoiler Text Plugin(web Component)" </spoiler-text>
 <*Spoiler Text Example*>
 ```
 
-!! use transclude
+!! use transclude(beta)
+
+> need doucle click insteadof click
 
 ```html
-<$s-t text={{your tiddler}} />
+<$s-t tiddler={{your tiddler}} />
 ```
