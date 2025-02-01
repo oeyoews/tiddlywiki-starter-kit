@@ -106,7 +106,7 @@ const app = (
         }
         switch (targetField) {
           case 'quote':
-            this.prompt = `"请阅读并总结日记，适当使用emoji，使用简体中文输出,以下是今日日记。\n ${getText(title)}"`;
+            this.prompt = `"请阅读并总结日记，适当使用emoji，使用简体中文输出, 输出尽量简洁扼要， 不要换行，不要带有\n, 以下是今日日记。\n ${getText(title)}"`;
             this.header = '流莹';
             break;
           default:
@@ -137,10 +137,13 @@ const app = (
               });
               break;
             case 'gemini':
-              this.res = await geminiChat({
+              res = await geminiChat({
                 prompt: this.prompt,
                 API_KEY,
               });
+              if (res.endsWith('\n')) {
+                this.res = res.slice(0, -1);
+              }
               break;
             case 'spark':
               if (!SPARK_API_KEY) {
