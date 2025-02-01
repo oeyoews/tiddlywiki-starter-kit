@@ -8,6 +8,7 @@ type: text/css
 }
 .spoiler:hover {
   filter: blur(0.18em);
+  cursor: pointer;
 }
 .spoiler.revealed {
   filter: blur(0);

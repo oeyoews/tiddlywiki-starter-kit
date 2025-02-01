@@ -25,7 +25,14 @@ class SpoilerText extends Widget {
     const createElement = $tw.utils.domMaker;
 
     const domNode = createElement('span');
-    domNode.textContent = this.getAttribute('text');
+    domNode.innerHTML = $tw.wiki.renderText(
+      'text/html',
+      'text/vnd.tiddlywiki',
+      this.getAttribute('text'),
+      {
+        parseAsInline: true,
+      },
+    );
     domNode.classList.add('spoiler');
 
     parent.insertBefore(domNode, nextSibling);
