@@ -71,9 +71,9 @@ const app = (
     },
 
     methods: {
-      init() {
+      init(regenerate = false) {
         this.check();
-        if (fieldText) {
+        if (fieldText && !regenerate) {
           this.typewritter(fieldText);
           this.isLoading = false;
           return;
@@ -88,7 +88,7 @@ const app = (
       },
       regenerate() {
         this.isLoading = true;
-        this.init();
+        this.init(true);
       },
       typewritter(summary) {
         const length = summary.length;
