@@ -51,10 +51,16 @@ const app = (
           parseAsInline: true,
         });
       });
+      const online = computed(() => {
+        return window.location.protocol === 'https:';
+      });
       const prompt = ref('');
+      const typing = ref(false);
       const noAi = ref(text ? true : false);
 
       return {
+        online,
+        typing,
         noAi,
         prompt,
         resHTML,
@@ -91,6 +97,7 @@ const app = (
         this.init(true);
       },
       typewritter(summary) {
+        this.typing = true;
         const length = summary.length;
         let index = 0;
         const intervalId = setInterval(() => {
@@ -100,6 +107,7 @@ const app = (
             index++;
           } else {
             this.res = summary;
+            this.typing = false;
             clearInterval(intervalId);
           }
         }, speed); // 控制打字速度
