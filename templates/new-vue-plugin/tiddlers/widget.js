@@ -8,7 +8,7 @@ module-type: widget
 \*/
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 
-class ExampleWidget extends Widget {
+class WidgetName extends Widget {
   constructor(parseTreeNode, options) {
     super(parseTreeNode, options);
   }
@@ -60,4 +60,4 @@ class ExampleWidget extends Widget {
 }
 
 /** @description {{ pluginname }} widget */
-exports['{{ widget_name }}'] = ExampleWidget;
+exports['{{ widget_name }}'] = WidgetName;
