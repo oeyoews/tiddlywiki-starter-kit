@@ -44,9 +44,6 @@ importers:
       qrcode:
         specifier: 1.5.3
         version: 1.5.3
-      tiddlywiki:
-        specifier: 5.3.5
-        version: 5.3.5
     devDependencies:
       '@nolebase/vitepress-plugin-og-image':
         specifier: 1.28.0
@@ -793,6 +790,7 @@ packages:
     resolution: {integrity: sha512-0c7irtVB0COgJsnVyiv/duUrJx7lFZQip6DgPc9tuyuxSM4XlhvWo/CrO/3Eu2oLBrsQmO6z0jJKwus1fDGUUQ==}
     engines: {node: '>=0.8.2'}
     hasBin: true
+    bundledDependencies: []
 
   '@opencensus/core@0.0.8':
     resolution: {integrity: sha512-yUFT59SFhGMYQgX0PhoTR0LBff2BEhPrD9io1jWfF/VDbakRfs6Pq60rjv0Z7iaTav5gQlttJCX2+VPxFWCuoQ==}
@@ -2881,11 +2879,6 @@ packages:
 
   thenify@3.3.1:
     resolution: {integrity: sha512-RVZSIV5IG10Hk3enotrhvz0T9em6cyHBLkH/YAZuKqd8hRkKhSfCGIcP2KUY0EPxndzANBmNllzWPwak+bheSw==}
-
-  tiddlywiki@5.3.5:
-    resolution: {integrity: sha512-8pTmnQdkcHbol9D86Op7OGK4sGDqm19HWT2qgpSxPHfDG0yJ2rSBUTRuOMuh9GoPP0Tcz9+1Pe8A1m6pvd/zYQ==}
-    engines: {node: '>=0.8.2'}
-    hasBin: true
 
   tiged@2.12.7:
     resolution: {integrity: sha512-6TwlABgdshi1h9atXFRx86IhuDANtNqfD1OuWmZKKdqqwWNEJXHLa2hrRiyve9kLwHPb2ADc8RU3mSc4MVBE5A==}
@@ -6065,8 +6058,6 @@ snapshots:
   thenify@3.3.1:
     dependencies:
       any-promise: 1.3.0
-
-  tiddlywiki@5.3.5: {}
 
   tiged@2.12.7:
     dependencies:
