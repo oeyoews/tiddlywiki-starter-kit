@@ -4,7 +4,7 @@
     "packages/*"
   ],
   "publishConfig": {
-    "registry": "https://registry.npmmirror.com"
+    "registry": "https://registry.npmjs.org"
   },
   "description": "A modern style notebook based on tiddlywiki",
   "version": "4.1.0",
