@@ -4,6 +4,8 @@
 
 > 直接在 tiddlywiki 里面写 tailwindcss
 
+> 由于Tailwindcss v4的浏览器不支持typography插件， 所以目前仅仅使用v3最新版本(3.4.16), 3.4.17 官方没有打包浏览器版本.
+
 ## 在线地址
 
 <TwPlugin name="tiddlywiki-tailwindcss-plus" />

@@ -2,5 +2,6 @@ title: $:/plugins/oeyoews/tiddlywiki-tailwindcss-plus/readme
 description: ~TailwindCss
 
 <!-- <$badge icon="tailwindcss" /> -->
+<!-- https://cdn.tailwindcss.com/3.4.16?plugins=typography@0.5.15 -->
 
 [[在线文档|https://neotw.vercel.app/docs/plugins/tiddlywiki-tailwindcss-plus]]
