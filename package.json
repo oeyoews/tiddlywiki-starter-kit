@@ -19,7 +19,7 @@
     "update:tw": "pnpm install github:oeyoews/TiddlyWiki5 -w",
     "update:tw2": "git clone --depth 1 git@github.com:oeyoews/TiddlyWiki5.git tiddlywiki  ",
     "update:web": "git commit --allow-empty -m update  && git push",
-    "update:lib:vue": "node ./lib/updateVueLib.js",
+    "update:lib:vue": "node ./lib/updateVueLib.mjs",
     "build-with-bun": "bun run ./lib/build.ts",
     "format": "prettier --write plugins/oeyoews",
     "format:md": "autocorrect --fix",
