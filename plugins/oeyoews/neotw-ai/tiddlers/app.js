@@ -12,11 +12,7 @@ const { computed, ref } = window.Vue;
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 
-const {
-  gemini: geminiChat,
-  spark: sparkChat,
-  siliconflow: siliconflowChat,
-} = require('./model/index');
+const aiModels = require('./model/index');
 
 const getText = (title) => $tw.wiki.getTiddlerText(title);
 
@@ -28,15 +24,19 @@ const {
   SPARK_API_KEY,
   SPARK_API_SECRET,
   SILICONFLOW_API_KEY,
-  model: MODEL,
+  CHATGPT_API_KEY,
+  model: MODEL, // 配置的默认model
 } = require('./config.js');
+
+debugger;
+console.log(MODEL, 'model');
 
 const app = (
   title = '',
   text = '',
   tip = 'AI 生成的摘要',
   /** @type {keyof import('./model/index')} */
-  model,
+  model, // widget 参数 手动传递
   targetField = 'summary',
 ) => {
   const fieldText = text || $tw.wiki.getTiddler(title).fields?.[targetField];
@@ -137,20 +137,39 @@ const app = (
           }
 
           switch (model) {
+            case 'chatgpt':
             case 'siliconflow':
-              if (!SILICONFLOW_API_KEY) {
-                throw Error('没有填写 SILICONFLOW_API_KEY');
+              if ((model = 'chatgpt')) {
+                if (!CHATGPT_API_KEY) {
+                  throw Error('没有填写 CHATGPT_API_KEY');
+                }
+                if (!CHATGPT_API_KEY.startsWith('sk-')) {
+                  throw Error('请填写有效的 apikey');
+                }
               }
-              if (!SILICONFLOW_API_KEY.startsWith('sk-')) {
-                throw Error('请属于有效的 siliconflow apikey');
+              if (model === 'siliconflow') {
+                if (!SILICONFLOW_API_KEY) {
+                  throw Error('没有填写 SILICONFLOW_API_KEY');
+                }
+                if (!SILICONFLOW_API_KEY.startsWith('sk-')) {
+                  throw Error('请填写有效的 apikey');
+                }
               }
-              this.res = await siliconflowChat({
+              // let baseurl = 'https://api.openai.com';
+              let baseurl = 'https://api.chatanywhere.tech'; // https://github.com/chatanywhere/GPT_API_free?tab=readme-ov-file
+              let apiKey = CHATGPT_API_KEY;
+              if (model === 'siliconflow') {
+                baseurl = 'https://api.siliconflow.cn';
+                apiKey = SILICONFLOW_API_KEY;
+              }
+              this.res = await aiModels[model]({
+                baseurl,
+                apiKey,
                 content: this.prompt,
-                apiKey: SILICONFLOW_API_KEY,
               });
               break;
             case 'gemini':
-              res = await geminiChat({
+              res = await aiModels[model]({
                 prompt: this.prompt,
                 API_KEY,
               });
@@ -162,7 +181,7 @@ const app = (
               if (!SPARK_API_KEY) {
                 throw Error('没有填写 SPARK_API_KEY');
               }
-              this.res = await sparkChat({
+              this.res = await aiModels[model]({
                 prompt: this.prompt,
                 API_KEY: SPARK_API_KEY,
                 APP_ID: SPARK_APP_ID,

@@ -1,25 +1,26 @@
 /*\
-title: $:/plugins/oeyoews/neotw-ai/model/siliconflow.js
+title: $:/plugins/oeyoews/neotw-ai/model/chatgpt.js
 type: application/javascript
 module-type: library
 
+chatgpt以及兼容chatgpt
 \*/
 
-// ai: https://docs.siliconflow.cn/reference/chat-completions-1
-
 /**
- * siliconfolw
+ * chatgpt
  * @param {Object} data - data
+ * @param {string} data.baseurl - baseurl
  * @param {string} data.content - content
  * @param {string} data.model - model
  * @param {string} data.apiKey - model
  */
-async function siliconflow(data) {
-  const url = 'https://api.siliconflow.cn/v1/chat/completions';
+async function chatgpt(data) {
+  const baseurl = data.baseurl;
+  const url = `${baseurl}/v1/chat/completions`;
 
   const models = {
-    qw72: 'Qwen/Qwen2-72B-Instruct',
-    qw110: 'Qwen/Qwen1.5-110B-Chat',
+    gpt4: 'gpt-4',
+    gpt35: 'gpt-3.5-turbo',
   };
 
   const options = {
@@ -30,7 +31,7 @@ async function siliconflow(data) {
       authorization: `Bearer ${data.apiKey}`,
     },
     body: JSON.stringify({
-      model: models.qw110,
+      model: models[data.model] || models.gpt35,
       stream: false,
       messages: [{ role: 'user', content: data.content }],
     }),
@@ -45,4 +46,4 @@ async function siliconflow(data) {
   }
 }
 
-module.exports = siliconflow;
+module.exports = chatgpt;

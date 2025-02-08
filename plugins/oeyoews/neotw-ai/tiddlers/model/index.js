@@ -7,12 +7,13 @@ module-type: library
 
 const gemini = require('./gemini');
 const spark = require('./spark');
-const siliconflow = require('./siliconflow');
+const chatgpt = require('./chatgpt');
 
 const models = {
   gemini,
   spark,
-  siliconflow,
+  chatgpt,
+  siliconflow: chatgpt,
 };
 
 module.exports = models;
