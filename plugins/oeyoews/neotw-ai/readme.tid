@@ -4,7 +4,7 @@ summary: 此插件使用 Google Gemini API 提供服务。需要提供 API 密�
 
 [[在线文档|https://neotw.vercel.app/docs/plugins/neotw-ai]]
 
-<$neotw-ai />
+<$neotw-ai text="文章摘要自动生成插件"/>
 
 !! Usage
 
