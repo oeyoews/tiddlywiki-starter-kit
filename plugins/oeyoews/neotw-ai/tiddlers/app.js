@@ -116,6 +116,7 @@ const app = (
         if (!fields.some((item) => item === targetField)) {
           console.error(targetField + '不属于对应的类型');
         }
+        // 支持英文输出
         switch (targetField) {
           case 'quote':
             this.prompt = `请阅读并总结日记，适当使用emoji，使用简体中文输出, 输出尽量简洁扼要， 不要换行，不要带有\n, 以下是今日日记。\n ${getText(title)}`;

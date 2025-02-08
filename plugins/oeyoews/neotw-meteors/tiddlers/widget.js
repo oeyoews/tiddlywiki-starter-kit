@@ -26,7 +26,7 @@ class MeteorsWidget extends Widget {
 
     const meteorContainer = createElement('div', {
       class:
-        'absolute pointer-events-none h-24 inset-x-0 hidden dark:block z-[-1]',
+        'absolute pointer-events-none h-full inset-x-0 hidden dark:block z-[-1] overflow-x-hidden',
     });
     function getRandomPosition(max) {
       return `${Math.floor(Math.random() * max)}px `;
@@ -52,6 +52,7 @@ class MeteorsWidget extends Widget {
       // 随机位置、延迟、动画时长
       span.style.top = '-5px';
       span.style.left = getRandomPosition(window.innerWidth);
+      console.log(window.innerWidth, getRandomPosition(window.innerWidth));
       span.style.animationDelay = getRandomDelay();
       span.style.animationDuration = getRandomDuration();
       span.style.opacity = 0;
