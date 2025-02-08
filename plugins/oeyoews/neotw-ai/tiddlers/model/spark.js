@@ -3,6 +3,10 @@ title: $:/plugins/oeyoews/neotw-ai/model/spark.js
 type: application/javascript
 module-type: library
 
+是否收费：是
+是否兼容openapi: 否
+@see: https://console.xfyun.cn
+@see: https://github.com/greywen/spark-node
 \*/
 
 const {
@@ -11,10 +15,6 @@ const {
   ChatMessage,
 } = require('../lib/spark.min.js');
 
-// const spark = require('../lib/spark.min.js');
-// console.log(spark);
-
-// @see: https://github.com/greywen/spark-node
 module.exports = async (option) => {
   const {
     APP_ID: APPID,

@@ -6,6 +6,16 @@ module-type: library
 chatgpt以及兼容chatgpt
 \*/
 
+async function getAllModels(data) {
+  const url = `${data.baseurl}/v1/models`;
+  return fetch(url, {
+    method: 'GET',
+    headers: {
+      authorization: `Bearer ${data.apiKey}`,
+    },
+  }).then((res) => res.json());
+}
+
 /**
  * chatgpt
  * @param {Object} data - data
@@ -21,7 +31,12 @@ async function chatgpt(data) {
   const models = {
     gpt4: 'gpt-4',
     gpt35: 'gpt-3.5-turbo',
+    gpt4omini: 'gpt-4o-mini',
   };
+
+  // getAllModels(data).then((data) => {
+  //   console.log(data);
+  // });
 
   const options = {
     method: 'POST',
@@ -31,7 +46,7 @@ async function chatgpt(data) {
       authorization: `Bearer ${data.apiKey}`,
     },
     body: JSON.stringify({
-      model: data.model || models.gpt35,
+      model: data.model || models.gpt4omini,
       stream: false,
       messages: [{ role: 'user', content: data.content }],
     }),
