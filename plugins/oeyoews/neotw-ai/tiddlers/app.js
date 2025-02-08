@@ -26,6 +26,7 @@ const {
   SILICONFLOW_API_KEY,
   CHATGPT_PROXY_URL,
   CHATGPT_API_KEY,
+  GROK_API_KEY,
   model: MODEL, // 配置的默认model
 } = require('./config.js');
 
@@ -117,7 +118,7 @@ const app = (
         }
         switch (targetField) {
           case 'quote':
-            this.prompt = `"请阅读并总结日记，适当使用emoji，使用简体中文输出, 输出尽量简洁扼要， 不要换行，不要带有\n, 以下是今日日记。\n ${getText(title)}"`;
+            this.prompt = `请阅读并总结日记，适当使用emoji，使用简体中文输出, 输出尽量简洁扼要， 不要换行，不要带有\n, 以下是今日日记。\n ${getText(title)}`;
             this.header = '流莹';
             break;
           default:
@@ -142,6 +143,7 @@ const app = (
           switch (model) {
             case 'chatgpt':
             case 'siliconflow':
+            case 'grok':
               if (model === 'chatgpt') {
                 if (!CHATGPT_API_KEY) {
                   throw Error('没有填写 CHATGPT_API_KEY');
@@ -175,7 +177,13 @@ const app = (
                 };
                 api_model = sf_models.qw72;
               }
-              this.res = await aiModels[model]({
+              // 收费： https://console.x.ai
+              if (model === 'grok') {
+                baseurl = 'https://api.x.ai';
+                apiKey = GROK_API_KEY;
+                api_model = 'grok-2-latest';
+              }
+              this.res = await aiModels['chatgpt']({
                 baseurl,
                 apiKey,
                 content: this.prompt,

@@ -55,9 +55,7 @@ async function chatgpt(data) {
   try {
     const res = await fetch(url, options);
     const stream = await res.json();
-    if (!stream?.data && !stream?.choices) {
-      console.error(stream?.message);
-    }
+    // error log
     return stream.choices?.[0]?.message.content;
   } catch (e) {
     console.error(e);

@@ -6,6 +6,8 @@ summary: 此插件使用 Google Gemini API 提供服务。需要提供 API 密�
 
 <$neotw-ai text="文章摘要自动生成插件"/>
 
+<!-- TODO: 使用vue element ui 写配置页面 -->
+
 !! Usage
 
 ```html

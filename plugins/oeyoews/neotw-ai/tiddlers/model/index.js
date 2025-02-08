@@ -14,7 +14,8 @@ const models = {
   spark,
   chatgpt,
   siliconflow: chatgpt,
-  // deepseek: chatgpt,
+  grok: chatgpt,
+  default: chatgpt,
 };
 
 module.exports = models;

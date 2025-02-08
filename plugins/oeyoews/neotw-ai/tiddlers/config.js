@@ -19,6 +19,7 @@ description: config
  * @property {string} [SILICONFLOW_API_KEY] - The SiliconFlow API key.
  * @property {string} [CHATGPT_API_KEY] - The ChatGPT API key.
  * @property {string} [CHATGPT_PROXY_URL] - The ChatGPT proxy URL.
+ * @property {string} [GROK_API_KEY] - The Grok API key.
 
 /**
  * Destructures the fields from the '$:/plugins/oeyoews/neotw-ai/config' tiddler.
@@ -35,6 +36,7 @@ const {
   SILICONFLOW_API_KEY,
   CHATGPT_API_KEY,
   CHATGPT_PROXY_URL,
+  GROK_API_KEY,
 } = $tw.wiki.getTiddler('$:/plugins/oeyoews/neotw-ai/config').fields;
 
 module.exports = {
@@ -48,4 +50,5 @@ module.exports = {
   SILICONFLOW_API_KEY,
   CHATGPT_API_KEY,
   CHATGPT_PROXY_URL,
+  GROK_API_KEY,
 };
