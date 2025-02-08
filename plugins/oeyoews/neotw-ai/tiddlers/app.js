@@ -136,7 +136,7 @@ const app = (
               .fields.model;
           }
           if (!model) {
-            model = 'gemini';
+            model = MODEL || 'gemini';
           }
 
           switch (model) {
@@ -165,7 +165,6 @@ const app = (
                 baseurl = CHATGPT_PROXY_URL;
               }
               let apiKey = CHATGPT_API_KEY;
-              debugger;
               if (model === 'siliconflow') {
                 baseurl = 'https://api.siliconflow.cn';
                 apiKey = SILICONFLOW_API_KEY;

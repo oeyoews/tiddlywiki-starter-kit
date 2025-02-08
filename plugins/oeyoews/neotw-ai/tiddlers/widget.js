@@ -8,7 +8,7 @@ neotw-ai widget
 \*/
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 
-class GeminiWidget extends Widget {
+class AISummaryWidget extends Widget {
   constructor(parseTreeNode, options) {
     super(parseTreeNode, options);
   }
@@ -67,4 +67,4 @@ class GeminiWidget extends Widget {
 }
 
 /** @description neotw-ai widget */
-exports['neotw-ai'] = GeminiWidget;
+exports['neotw-ai'] = AISummaryWidget;

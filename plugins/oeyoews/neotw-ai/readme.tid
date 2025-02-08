@@ -16,10 +16,6 @@ summary: 此插件使用 Google Gemini API 提供服务。需要提供 API 密�
 
 <$edit-text tiddler="$:/plugins/oeyoews/neotw-ai/config" field="api" type="password" />
 
-!! siliconflow
-
-* 有缓存, 不建议用
-
 <!-- !! TODO -->
 
 <!-- * support neotw-ai-translate widget -->
