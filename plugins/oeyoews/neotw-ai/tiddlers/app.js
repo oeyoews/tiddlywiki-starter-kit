@@ -24,12 +24,10 @@ const {
   SPARK_API_KEY,
   SPARK_API_SECRET,
   SILICONFLOW_API_KEY,
+  CHATGPT_PROXY_URL,
   CHATGPT_API_KEY,
   model: MODEL, // 配置的默认model
 } = require('./config.js');
-
-debugger;
-console.log(MODEL, 'model');
 
 const app = (
   title = '',
@@ -90,7 +88,7 @@ const app = (
           this.res = '请填写你的 API_KEY';
           return;
         }
-        this.aibot();
+        this.aibot(regenerate);
       },
       regenerate() {
         this.isLoading = true;
@@ -127,19 +125,24 @@ const app = (
             break;
         }
       },
-      async aibot() {
+      async aibot(regenerate = false) {
         try {
           if (!this.text) {
             throw Error('没有输入内容');
           }
+          if (regenerate) {
+            // 尝试重新获取
+            model = $tw.wiki.getTiddler('$:/plugins/oeyoews/neotw-ai/config')
+              .fields.model;
+          }
           if (!model) {
-            model = MODEL;
+            model = 'gemini';
           }
 
           switch (model) {
             case 'chatgpt':
             case 'siliconflow':
-              if ((model = 'chatgpt')) {
+              if (model === 'chatgpt') {
                 if (!CHATGPT_API_KEY) {
                   throw Error('没有填写 CHATGPT_API_KEY');
                 }
@@ -155,17 +158,29 @@ const app = (
                   throw Error('请填写有效的 apikey');
                 }
               }
-              // let baseurl = 'https://api.openai.com';
-              let baseurl = 'https://api.chatanywhere.tech'; // https://github.com/chatanywhere/GPT_API_free?tab=readme-ov-file
+              let baseurl = 'https://api.openai.com';
+              let api_model = '';
+              // baseurl = CHATGPT_PROXY_URL || 'https://api.chatanywhere.tech'; // https://github.com/chatanywhere/GPT_API_free?tab=readme-ov-file
+              if (CHATGPT_PROXY_URL && model === 'chatgpt') {
+                baseurl = CHATGPT_PROXY_URL;
+              }
               let apiKey = CHATGPT_API_KEY;
+              debugger;
               if (model === 'siliconflow') {
                 baseurl = 'https://api.siliconflow.cn';
                 apiKey = SILICONFLOW_API_KEY;
+                // 适配模型
+                // https://docs.siliconflow.cn/api-reference/chat-completions/chat-completions
+                const sf_models = {
+                  qw72: 'Qwen/Qwen2.5-72B-Instruct',
+                };
+                api_model = sf_models.qw72;
               }
               this.res = await aiModels[model]({
                 baseurl,
                 apiKey,
                 content: this.prompt,
+                model: api_model,
               });
               break;
             case 'gemini':

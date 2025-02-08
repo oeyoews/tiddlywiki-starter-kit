@@ -18,7 +18,7 @@ description: config
  * @property {string} [SPARK_API_SECRET=''] - The Spark API secret.
  * @property {string} [SILICONFLOW_API_KEY] - The SiliconFlow API key.
  * @property {string} [CHATGPT_API_KEY] - The ChatGPT API key.
- */
+ * @property {string} [CHATGPT_PROXY_URL] - The ChatGPT proxy URL.
 
 /**
  * Destructures the fields from the '$:/plugins/oeyoews/neotw-ai/config' tiddler.
@@ -34,6 +34,7 @@ const {
   SPARK_API_SECRET = '',
   SILICONFLOW_API_KEY,
   CHATGPT_API_KEY,
+  CHATGPT_PROXY_URL,
 } = $tw.wiki.getTiddler('$:/plugins/oeyoews/neotw-ai/config').fields;
 
 module.exports = {
@@ -46,4 +47,5 @@ module.exports = {
   SPARK_API_SECRET,
   SILICONFLOW_API_KEY,
   CHATGPT_API_KEY,
+  CHATGPT_PROXY_URL,
 };

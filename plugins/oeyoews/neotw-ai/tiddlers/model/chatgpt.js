@@ -31,7 +31,7 @@ async function chatgpt(data) {
       authorization: `Bearer ${data.apiKey}`,
     },
     body: JSON.stringify({
-      model: models[data.model] || models.gpt35,
+      model: data.model || models.gpt35,
       stream: false,
       messages: [{ role: 'user', content: data.content }],
     }),
@@ -40,6 +40,9 @@ async function chatgpt(data) {
   try {
     const res = await fetch(url, options);
     const stream = await res.json();
+    if (!stream?.data) {
+      console.error(stream?.message);
+    }
     return stream.choices?.[0]?.message.content;
   } catch (e) {
     console.error(e);
