@@ -52,7 +52,6 @@ class MeteorsWidget extends Widget {
       // 随机位置、延迟、动画时长
       span.style.top = '-5px';
       span.style.left = getRandomPosition(window.innerWidth);
-      console.log(window.innerWidth, getRandomPosition(window.innerWidth));
       span.style.animationDelay = getRandomDelay();
       span.style.animationDuration = getRandomDuration();
       span.style.opacity = 0;
