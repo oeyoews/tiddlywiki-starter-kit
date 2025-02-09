@@ -62,7 +62,7 @@ const TagPie = {
     };
 
     // alpha sort default
-    // 超过 50 不显示
+    // 超过 20 不显示
     const tags = $tw.wiki.filterTiddlers(filter).slice(0, 20).sort();
     const totalLength = getTagsTiddlerLength(tags);
     tags.forEach((tag) => {
