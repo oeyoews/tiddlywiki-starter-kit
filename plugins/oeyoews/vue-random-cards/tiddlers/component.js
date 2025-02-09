@@ -39,8 +39,14 @@ const getTemplate = (file) => {
   return template;
 };
 
-const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]', text) => {
-  const tiddlers = $tw.wiki.filterTiddlers(filter);
+const app = (
+  filter = '[!is[system]!is[binary]!days[-31]!tag[todo]!tag[done]!prefix[$:/]!<currentTiddler>]',
+  text,
+  tag,
+) => {
+  const tiddlers = $tw.wiki.filterTiddlers(
+    tag ? `${filter} :and[tag[${tag}]]` : filter,
+  );
   const component = {
     setup() {
       const cardContent = ref('');
@@ -149,6 +155,8 @@ const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]', text) => {
       resetChart() {
         // TODO: 如果直接清空， 无效 对于setoptions???
         this.chartdata.splice(0, this.chartdata.length);
+        this.cardContent = '空空如也';
+        this.title = '';
       },
 
       renderTiddler2HTML() {
