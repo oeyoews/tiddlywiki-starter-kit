@@ -1,0 +1,30 @@
+{
+	"directories": [
+		{
+			"path": ".",
+			"filesRegExp": "^.*\\.js$",
+			"searchSubdirectories": true,
+			"fields": {
+				"title": {
+					"source": "filename"
+				},
+				"hide-body": "yes",
+				"module-type": "library"
+			}
+		},
+		{
+			"path": ".",
+			"filesRegExp": "^.*\\.css$",
+			"searchSubdirectories": true,
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/element-plus/"
+				},
+				"hide-body": "yes",
+				"tags": "$:/tags/Stylesheet",
+				"type": "text/css"
+			}
+		}
+	]
+}
