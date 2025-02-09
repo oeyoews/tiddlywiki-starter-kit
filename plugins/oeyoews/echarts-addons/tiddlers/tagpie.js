@@ -69,7 +69,6 @@ const TagPie = {
       const percent =
         $tw.wiki.filterTiddlers(`[tag[${tag}]!has[draft.of]]`).length /
         totalLength;
-      console.log(percent, totalLength, tag);
       if (percent < 0.01) return;
       data.push(getData(tag));
     });
