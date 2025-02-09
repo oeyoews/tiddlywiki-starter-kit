@@ -23,7 +23,7 @@ class ExampleWidget extends Widget {
     if (ssr) return;
 
     const vuelib = '$:/plugins/oeyoews/neotw-vue3/vue.global.prod.js';
-    const { filter } = this.attributes;
+    const { filter, text = '随机卡片' } = this.attributes;
 
     if (!window.Vue) {
       window.Vue = require(vuelib);
@@ -34,7 +34,7 @@ class ExampleWidget extends Widget {
     const domNode = this.document.createElement('div');
 
     try {
-      const app = createApp(component(filter));
+      const app = createApp(component(filter, text));
 
       app.config.errorHandler = (err) => {
         const text = `[Vue3](${app.version}): ` + err;

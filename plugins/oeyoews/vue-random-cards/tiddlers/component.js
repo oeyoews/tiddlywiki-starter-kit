@@ -39,7 +39,7 @@ const getTemplate = (file) => {
   return template;
 };
 
-const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]') => {
+const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]', text) => {
   const tiddlers = $tw.wiki.filterTiddlers(filter);
   const component = {
     setup() {
@@ -99,6 +99,7 @@ const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]') => {
         chartapp,
         title,
         cardContent,
+        text,
       };
     },
 
@@ -129,7 +130,7 @@ const app = (filter = '[!is[system]!prefix[$:/]!<currentTiddler>]') => {
       },
 
       updateChart() {
-        if (this.chartdata.length > 18) {
+        if (this.chartdata.length > 8) {
           this.resetChart();
           this.chartdata.push({
             name: this.title,
