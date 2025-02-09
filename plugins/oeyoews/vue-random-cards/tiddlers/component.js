@@ -161,6 +161,13 @@ const app = (
 
       renderTiddler2HTML() {
         try {
+          // 性能问题
+          // const text =
+          //   `{{{ [[${this.title}]]` + '||$:/core/ui/ViewTemplate }}}';
+          // console.log(text);
+          // this.cardContent = text;
+          // const stateTiddler = "$:/state"
+          // $tw.wiki.setText(this.title, text);
           this.cardContent =
             $tw.wiki.renderTiddler('text/html', this.title) || '空空如也';
         } catch (e) {
