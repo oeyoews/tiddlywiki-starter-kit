@@ -136,7 +136,7 @@ const app = (
         const index = (Math.random() * tiddlers.length).toFixed(0) | 0;
         if (readCards.includes(tiddlers[index])) {
           console.log('已经阅读过, 自动跳过该条目', tiddlers[index]);
-          this.randomTiddlerTitle();
+          return this.randomTiddlerTitle();
         } else {
           readCards.push(tiddlers[index]);
           return tiddlers[index];
