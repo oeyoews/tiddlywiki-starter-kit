@@ -13,6 +13,8 @@ const theme =
     : 'light';
 
 const story = new $tw.Story();
+// 存储已经阅读过的卡片
+let readCards = [];
 
 const throttle = (fn, delay = 500) => {
   let timer = null;
@@ -132,7 +134,13 @@ const app = (
     methods: {
       randomTiddlerTitle() {
         const index = (Math.random() * tiddlers.length).toFixed(0) | 0;
-        return tiddlers[index];
+        if (readCards.includes(tiddlers[index])) {
+          console.log('已经阅读过, 自动跳过该条目', tiddlers[index]);
+          this.randomTiddlerTitle();
+        } else {
+          readCards.push(tiddlers[index]);
+          return tiddlers[index];
+        }
       },
 
       updateChart() {
@@ -156,7 +164,7 @@ const app = (
         // TODO: 如果直接清空， 无效 对于setoptions???
         this.chartdata.splice(0, this.chartdata.length);
         this.cardContent = '空空如也';
-        this.title = '';
+        // this.title = '';
       },
 
       renderTiddler2HTML() {

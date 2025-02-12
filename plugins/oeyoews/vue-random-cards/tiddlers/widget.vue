@@ -1,9 +1,9 @@
 <template>
   <div class="flex items-center justify-end gap-2">
     <button @click="gotoTiddler" v-if="title" class="p-2">卡片跳转</button>
-    <button @click="resetChart" v-show="chartdata.length > 0" class="p-2">
+    <!-- <button @click="resetChart" v-show="chartdata.length > 0" class="p-2">
       重置
-    </button>
+    </button> -->
     <button @click="updateCard" class="p-2 group flex items-center gap-2">
       <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512"
         class="transition-all duration-1000" :class="{ 'rotate-[360deg]': isRotate }">
