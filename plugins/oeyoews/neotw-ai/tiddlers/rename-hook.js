@@ -27,13 +27,13 @@ async function renameTiddlerTitle(title) {
     return;
   }
 
-  if (config.apiKey) {
-    window.alert('请填写你的 chatgpt apikey');
+  if (!config.API_KEY) {
+    window.alert('请填写你的 apikey');
   }
 
-  const renameTitle = await aiModels['chatgpt']({
-    baseurl: config.CHATGPT_PROXY_URL || 'https://api.openai.com',
-    apiKey: config.CHATGPT_API_KEY,
+  const renameTitle = await aiModels['gemini']({
+    // baseurl: config.CHATGPT_PROXY_URL || 'https://api.openai.com',
+    apiKey: config.API_KEY,
     content: getRenameTitle(title),
   });
 

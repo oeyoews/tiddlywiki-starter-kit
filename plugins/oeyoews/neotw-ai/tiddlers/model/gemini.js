@@ -34,12 +34,12 @@ const safetySettings = [
 ];
 
 module.exports = async (option) => {
-  const { API_KEY, prompt } = option;
-  if (!prompt) {
+  const { API_KEY, prompt, content, apiKey } = option;
+  if (!prompt && !content) {
     return '没有任何输入';
   }
   // https://ai.google.dev/gemini-api/docs/quickstart?lang=node
-  const genAI = new GoogleGenerativeAI(API_KEY);
+  const genAI = new GoogleGenerativeAI(API_KEY || apiKey);
 
   const generationConfig = {
     //   stopSequences: ['red'],
@@ -78,7 +78,7 @@ module.exports = async (option) => {
 
   // }
 
-  const result = await chat.sendMessage(prompt);
+  const result = await chat.sendMessage(prompt || content);
   const response = await result.response;
   const contents = response.text();
   return contents;

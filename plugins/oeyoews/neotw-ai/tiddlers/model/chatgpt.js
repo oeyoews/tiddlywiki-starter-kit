@@ -54,6 +54,10 @@ async function chatgpt(data) {
 
   try {
     const res = await fetch(url, options);
+    if (res.status !== 200) {
+      window.alert('请求出错');
+      throw new Error('请求出错');
+    }
     const stream = await res.json();
     // error log
     return stream.choices?.[0]?.message.content;
