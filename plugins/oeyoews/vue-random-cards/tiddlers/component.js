@@ -163,7 +163,7 @@ const app = (
       resetChart() {
         // TODO: 如果直接清空， 无效 对于setoptions???
         this.chartdata.splice(0, this.chartdata.length);
-        this.cardContent = '空空如也';
+        // this.cardContent = '空空如也';
         // this.title = '';
       },
 
