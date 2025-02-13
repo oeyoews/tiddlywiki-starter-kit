@@ -194,13 +194,18 @@ const app = (
               });
               break;
             case 'gemini':
-              res = await aiModels[model]({
+              let res = await aiModels[model]({
                 prompt: this.prompt,
                 API_KEY,
               });
               if (res.endsWith('\n')) {
                 this.res = res.slice(0, -1);
               }
+              break;
+            case 'ollama':
+              this.res = await aiModels[model]({
+                content: this.prompt,
+              });
               break;
             case 'spark':
               if (!SPARK_API_KEY) {
