@@ -40,8 +40,11 @@ fill:$(foregroundColor)$;
 </$list>
 <$transclude tiddler={{{ [<currentTiddler>] :cascade[all[shadows+tiddlers]tag[$:/tags/ViewTemplateTitleFilter]!is[draft]get[text]] :and[!is[blank]else[$:/core/ui/ViewTemplate/title/default]] }}} />
 </$link>
-<$button class="tc-btn-invisible" message="th-renaming-tiddler-ai" >
- {{$:/core/images/ai-edit-button}}</$button>
+<$let env={{{ [[$:/info/url/protocol]get[text]] }}}>
+<%if [<env>match[http:]] %>
+<$button class="tc-btn-invisible" message="th-renaming-tiddler-ai" > {{$:/core/images/ai-edit-button}}</$button>
+<%endif %>
+</$let>
 </$set>
 </div>
 
