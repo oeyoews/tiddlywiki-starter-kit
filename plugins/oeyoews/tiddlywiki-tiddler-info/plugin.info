@@ -8,5 +8,8 @@
   "type": "application/json",
   "plugin-type": "plugin",
   "name": "Tiddlywiki Tiddler Info",
+  "dependents": [
+    "$:/plugins/oeyoews/neotw-ai"
+  ],
   "list": "readme"
 }

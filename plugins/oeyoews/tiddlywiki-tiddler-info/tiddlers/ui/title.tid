@@ -40,11 +40,12 @@ fill:$(foregroundColor)$;
 </$list>
 <$transclude tiddler={{{ [<currentTiddler>] :cascade[all[shadows+tiddlers]tag[$:/tags/ViewTemplateTitleFilter]!is[draft]get[text]] :and[!is[blank]else[$:/core/ui/ViewTemplate/title/default]] }}} />
 </$link>
+<$button class="tc-btn-invisible" message="th-renaming-tiddler-ai" >
+ {{$:/core/images/ai-edit-button}}</$button>
 </$set>
 </div>
 
 <$reveal type="nomatch" text="" default="" state=<<tiddlerInfoState>> class="tc-tiddler-info tc-popup-handle" animate="yes" retain="yes">
-
 <$list filter="[all[shadows+tiddlers]tag[$:/tags/TiddlerInfoSegment]!has[draft.of]] [[$:/core/ui/TiddlerInfo]]" variable="listItem"><$transclude tiddler=<<listItem>> mode="block"/></$list>
 
 </$reveal>

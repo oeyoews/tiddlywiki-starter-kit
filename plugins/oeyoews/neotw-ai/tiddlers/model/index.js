@@ -11,8 +11,8 @@ const chatgpt = require('./chatgpt');
 
 const models = {
   gemini,
-  spark,
   chatgpt,
+  spark,
   siliconflow: chatgpt,
   grok: chatgpt,
   default: chatgpt,
