@@ -119,7 +119,7 @@ const app = (
         // 支持英文输出
         switch (targetField) {
           case 'quote':
-            this.prompt = `请阅读并总结日记，适当使用emoji，使用简体中文输出, 输出尽量简洁扼要， 不要换行，不要带有\n, 以下是今日日记。\n ${getText(title)}`;
+            this.prompt = `请阅读并总结日记，适当使用emoji，使用富有意境和哲理的文人语气，简体中文输出, 输出尽量简洁扼要， 不要换行，不要带有\n, 以下是今日日记。\n ${getText(title)}`;
             this.header = '流莹';
             break;
           default:
