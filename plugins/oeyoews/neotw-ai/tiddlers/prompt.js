@@ -11,7 +11,7 @@ function getPrompt(content) {
 }
 
 function getRenameTitle(title) {
-  return `你现在是一个标题命名优化专家，现在的标题是: ${title}; 优化这个标题，去除冗余信息, 不要输出双引号， 仅仅输出优化后的标题即可`;
+  return `你现在是一个标题命名优化专家，现在的标题是: ${title}; 优化这个标题，去除冗余信息,如果标题中含有斜线就替换成短横线，输出不要双引号，仅仅输出优化后的标题即可`;
 }
 
 module.exports = {

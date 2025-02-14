@@ -42,7 +42,7 @@ async function renameTiddlerTitle(title) {
   if (renameTitle) {
     const to = window.prompt('Rename to:', renameTitle);
     if (to) {
-      $tw.wiki.renameTiddler(title, to);
+      $tw.wiki.renameTiddler(title, to.replace(/\//g, '-'));
     }
   }
 }
