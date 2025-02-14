@@ -32,12 +32,11 @@ async function renameTiddlerTitle(title) {
   }
 
   const renameTitle = await aiModels['chatgpt']({
-    // baseurl: config.CHATGPT_PROXY_URL || 'https://api.openai.com',
-    // apiKey: config.API_KEY,
-    baseurl: 'http://localhost:11434',
-    model: 'qwen2:0.5b',
+    baseurl: config.CHATGPT_PROXY_URL || 'https://api.openai.com',
+    apiKey: config.CHATGPT_API_KEY,
+    // baseurl: 'http://localhost:11434',
+    // model: 'qwen2:0.5b',
     content: getRenameTitle(title),
-    // content: getRenameTitle(title),
   });
 
   if (renameTitle) {
