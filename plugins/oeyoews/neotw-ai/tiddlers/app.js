@@ -145,6 +145,7 @@ const app = (
 
           switch (model) {
             case 'chatgpt':
+            case 'ollama':
             case 'siliconflow':
             case 'grok':
               if (model === 'chatgpt') {
@@ -170,6 +171,10 @@ const app = (
                 baseurl = CHATGPT_PROXY_URL;
               }
               let apiKey = CHATGPT_API_KEY;
+              if (model === 'ollama') {
+                baseurl = 'http://localhost:11434';
+                api_model = 'qwen2:0.5b';
+              }
               if (model === 'siliconflow') {
                 baseurl = 'https://api.siliconflow.cn';
                 apiKey = SILICONFLOW_API_KEY;
@@ -202,11 +207,11 @@ const app = (
                 this.res = res.slice(0, -1);
               }
               break;
-            case 'ollama':
-              this.res = await aiModels[model]({
-                content: this.prompt,
-              });
-              break;
+            // case 'ollama':
+            //   this.res = await aiModels[model]({
+            //     content: this.prompt,
+            //   });
+            //   break;
             case 'spark':
               if (!SPARK_API_KEY) {
                 throw Error('没有填写 SPARK_API_KEY');

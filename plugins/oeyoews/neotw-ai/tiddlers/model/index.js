@@ -8,10 +8,9 @@ module-type: library
 const gemini = require('./gemini');
 const spark = require('./spark');
 const chatgpt = require('./chatgpt');
-const ollama = require('./ollama');
+// const ollama = require('./ollama');
 
 const models = {
-  ollama,
   gemini,
   chatgpt,
   spark,

@@ -31,9 +31,11 @@ async function renameTiddlerTitle(title) {
     window.alert('请填写你的 apikey');
   }
 
-  const renameTitle = await aiModels['ollama']({
+  const renameTitle = await aiModels['chatgpt']({
     // baseurl: config.CHATGPT_PROXY_URL || 'https://api.openai.com',
     // apiKey: config.API_KEY,
+    baseurl: 'http://localhost:11434',
+    model: 'qwen2:0.5b',
     content: getRenameTitle(title),
     // content: getRenameTitle(title),
   });
