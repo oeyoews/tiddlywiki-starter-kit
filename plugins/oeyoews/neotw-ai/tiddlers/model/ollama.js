@@ -19,14 +19,19 @@ async function ollama(data) {
     method: 'POST',
     body: JSON.stringify({
       stream: false,
-      model: 'deepseek-r1:1.5b',
+      // model: 'deepseek-r1:1.5b',
+      model: 'qwen2:0.5b', // 效果不够稳定, 勉强做个标题优化助手, 性能要求不高， 最普通的笔电也很快
       messages: [
         { role: 'user', content: data.content },
-        {
-          role: 'system',
-          content:
-            '请阅读并总结日记，适当使用emoji，使用富有意境和哲理的文人语气，简体中文输出, 输出尽量简洁扼要， 不要换行，不要带有\n',
-        },
+        // {
+        //   role: 'system',
+        //   content: '不要输出双引号',
+        // },
+        // {
+        //   role: 'system',
+        //   content:
+        //     '请阅读并总结日记，适当使用emoji，使用富有意境和哲理的文人语气，简体中文输出, 输出尽量简洁扼要， 不要换行，不要带有\n',
+        // },
       ],
     }),
   };

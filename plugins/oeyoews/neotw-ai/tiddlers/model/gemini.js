@@ -13,6 +13,7 @@ const {
 
 // const MODEL_NAME = 'gemini-1.0-pro-001';
 const MODEL_NAME = 'gemini-1.5-flash';
+// const MODEL_NAME = 'gemini-2.0-flash-exp';
 
 const safetySettings = [
   {
@@ -49,9 +50,17 @@ module.exports = async (option) => {
     topK: 16,
   };
 
+  // https://github.com/google-gemini/generative-ai-js/issues/214
+  // not work
+  // const systemPrompt = `请阅读并总结日记，适当使用emoji，使用富有意境和哲理的文人语气，简体中文输出, 输出尽量简洁扼要， 不要换行，不要带有\n.`;
+
   const model = genAI.getGenerativeModel({
     model: MODEL_NAME,
     generationConfig,
+    // systemInstruction: {
+    //   role: 'system',
+    //   parts: [{ text: systemPrompt }],
+    // },
     // https://github.com/google/generative-ai-docs/issues/212
     // https://ai.google.dev/docs/safety_setting_gemini
     safetySettings,
@@ -59,9 +68,9 @@ module.exports = async (option) => {
 
   const chat = model.startChat({
     history: [],
-    generationConfig: {
-      maxOutputTokens: 100,
-    },
+    // generationConfig: {
+    //   maxOutputTokens: 100,
+    // },
   });
 
   // const result = await geminiChat(this.API_KEY).sendMessageStream(msg);
