@@ -9,5 +9,6 @@
     <Text text="Tags" color="yellow" :number="tags" :icon="itag" data-title="tag" />
 
     <Text text="Tiddlers" color="blue" :number="tiddlers" :icon="itiddler" data-title="tiddler" />
+    <Text text="Startup" color="blue" :number="startup" :icon="ihg" data-title="tiddler" />
   </div>
 </template>

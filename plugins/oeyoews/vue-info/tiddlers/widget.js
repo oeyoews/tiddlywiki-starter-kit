@@ -8,7 +8,7 @@ vue-info widget
 \*/
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 
-class ExampleWidget extends Widget {
+class InfoWidget extends Widget {
   constructor(parseTreeNode, options) {
     super(parseTreeNode, options);
   }
@@ -73,4 +73,4 @@ class ExampleWidget extends Widget {
 }
 
 /** @description vue-info widget */
-exports['vue-neotw-info'] = ExampleWidget;
+exports['vue-neotw-info'] = InfoWidget;

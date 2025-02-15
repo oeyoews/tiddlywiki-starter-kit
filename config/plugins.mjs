@@ -11,6 +11,7 @@ const localPlugins = [
   'oeyoews/tiddlywiki-publish-tiddler',
   'oeyoews/neotw-vue3', // -dev
   'oeyoews/clean-your-duplicate-storylist',
+  'oeyoews/neotw-startup-times',
 ];
 
 const onlinePlugins = [

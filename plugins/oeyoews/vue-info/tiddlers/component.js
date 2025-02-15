@@ -17,6 +17,8 @@ const getString = (filter) => {
 const plugins = getString('[plugin-type[plugin]]').length;
 const tags = getString('[tags[]]').length;
 const version = $tw.version.replace(/-/g, ' ');
+const startup =
+  $tw.wiki.getTiddler('_state-neotw-startup-times').fields?.times || 0;
 
 const iinfo = `<svg
         xmlns="http://www.w3.org/2000/svg"
@@ -73,6 +75,7 @@ const itiddler = `<svg
         ></path>
         <polyline points="14 2 14 8 20 8"></polyline>
       </svg>`;
+const ihg = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g><path fill="currentColor" d="M7 3H17V7.2L12 12L7 7.2V3Z"><animate id="eosIconsHourglass0" fill="freeze" attributeName="opacity" begin="0;eosIconsHourglass1.end" dur="2s" from="1" to="0" class="text-gray-500" /></path><path fill="currentColor" d="M17 21H7V16.8L12 12L17 16.8V21Z"><animate fill="freeze" attributeName="opacity" begin="0;eosIconsHourglass1.end" dur="2s" from="0" to="1"/></path><path fill="currentColor" d="M6 2V8H6.01L6 8.01L10 12L6 16L6.01 16.01H6V22H18V16.01H17.99L18 16L14 12L18 8.01L17.99 8H18V2H6ZM16 16.5V20H8V16.5L12 12.5L16 16.5ZM12 11.5L8 7.5V4H16V7.5L12 11.5Z"/><animateTransform id="eosIconsHourglass1" attributeName="transform" attributeType="XML" begin="eosIconsHourglass0.end" dur="0.5s" from="0 12 12" to="180 12 12" type="rotate"/></g></svg>`;
 
 const iversion = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-purple-500" > <path d="m12 14 4-4"></path> <path d="M3.34 19a10 10 0 1 1 17.32 0"></path> </svg>`;
 
@@ -91,11 +94,13 @@ const app = () => {
         itag,
         iplugin,
         itiddler,
+        ihg,
         update,
         plugins,
         tags,
         tiddlers,
         version,
+        startup,
       };
     },
 

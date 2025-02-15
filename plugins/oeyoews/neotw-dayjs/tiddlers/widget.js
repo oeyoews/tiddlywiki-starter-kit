@@ -27,9 +27,7 @@ class NeotwDayjsWidget extends Widget {
     const dayjs = window.dayjs;
     const date = dayjs(timestamp, 'YYYYMMDDHHmmssSSS');
     const format = 'YYYY-MM-DD HH:mm:ss';
-    console.log('date', date.format(format));
     const formattedDate = dayjs.utc(date.format(format)).local().format(format);
-    console.log('formattedDate', formattedDate);
 
     const domNode = createElement('span');
     const past = dayjs(formattedDate);
