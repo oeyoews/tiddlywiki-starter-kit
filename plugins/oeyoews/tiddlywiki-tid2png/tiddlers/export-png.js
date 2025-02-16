@@ -95,7 +95,7 @@ module.exports = async function exportPng(title, customSelector) {
     onclone: function (documentClone) {
       const targetEl = documentClone.querySelector(selector);
       targetEl.style.borderRadius = '20px';
-      // targetEl.style.border = 'none';
+      targetEl.style.border = 'none';
       // 不支持跨域图片， 除非借助代理服务器, proxy 参数
       hideElements.forEach((el) => {
         const hiddenEl = targetEl.querySelector(el);
@@ -115,23 +115,18 @@ module.exports = async function exportPng(title, customSelector) {
   });
 
   // 增加 padding 的操作
-  const padding = 20; // 设置你想要的 padding
+  const padding = 40; // 设置你想要的 padding
   const newCanvas = document.createElement('canvas');
   newCanvas.width = canvas.width + 2 * padding; // 左右 padding
   newCanvas.height = canvas.height + 2 * padding; // 上下 padding
 
   const ctx = newCanvas.getContext('2d');
 
-  // const gradient = ctx.createLinearGradient(
-  //   0,
-  //   0,
-  //   // newCanvas.width,
-  //   newCanvas.height,
-  // );
-  // gradient.addColorStop(0, '#9c4dff'); // 紫色起始颜色
-  // gradient.addColorStop(1, '#4e9bff'); // 蓝色结束颜色
+  const gradient = ctx.createLinearGradient(0, 0, newCanvas.width, 0);
+  gradient.addColorStop(0, '#aee3ff');
+  gradient.addColorStop(1, '#cefdb6');
 
-  ctx.fillStyle = 'transparent'; // 设置渐变为填充颜色
+  ctx.fillStyle = gradient; // 使用渐变作为填充颜色，而不是 transparent
 
   ctx.fillRect(0, 0, newCanvas.width, newCanvas.height); // 填充背景
 
