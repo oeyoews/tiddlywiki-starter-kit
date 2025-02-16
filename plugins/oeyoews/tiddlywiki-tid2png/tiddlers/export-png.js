@@ -88,12 +88,15 @@ module.exports = async function exportPng(title, customSelector) {
   // @see: https://html2canvas.hertzen.com/configuration
   const canvas = await html2canvas(targetEl, {
     useCORS: true,
+    // proxy: 'https://corsproxy.io/?',
     backgroundColor: null,
     logging: false,
     // imageTimeout: 3000,
     onclone: function (documentClone) {
       const targetEl = documentClone.querySelector(selector);
       targetEl.style.borderRadius = '20px';
+      // targetEl.style.border = 'none';
+      // 不支持跨域图片， 除非借助代理服务器, proxy 参数
       hideElements.forEach((el) => {
         const hiddenEl = targetEl.querySelector(el);
         if (hiddenEl) {
@@ -111,9 +114,33 @@ module.exports = async function exportPng(title, customSelector) {
     },
   });
 
-  canvas.toBlob((blob) => {
+  // 增加 padding 的操作
+  const padding = 20; // 设置你想要的 padding
+  const newCanvas = document.createElement('canvas');
+  newCanvas.width = canvas.width + 2 * padding; // 左右 padding
+  newCanvas.height = canvas.height + 2 * padding; // 上下 padding
+
+  const ctx = newCanvas.getContext('2d');
+
+  // const gradient = ctx.createLinearGradient(
+  //   0,
+  //   0,
+  //   // newCanvas.width,
+  //   newCanvas.height,
+  // );
+  // gradient.addColorStop(0, '#9c4dff'); // 紫色起始颜色
+  // gradient.addColorStop(1, '#4e9bff'); // 蓝色结束颜色
+
+  ctx.fillStyle = 'transparent'; // 设置渐变为填充颜色
+
+  ctx.fillRect(0, 0, newCanvas.width, newCanvas.height); // 填充背景
+
+  // 将原始 canvas 绘制到新的 canvas 中，留出 padding
+  ctx.drawImage(canvas, padding, padding);
+
+  newCanvas.toBlob((blob) => {
     const sizeInMB = (blob.size / (1024 * 1024)).toFixed(2);
-    const imgData = canvas.toDataURL('image/png', 0.8); // 转换 canvas 为 PNG 格式的数据 URL
+    const imgData = newCanvas.toDataURL('image/png', 0.8); // 转换 canvas 为 PNG 格式的数据 URL
 
     const imgNode = $tw.utils.domMaker('img', {
       // 这个图片是用来预览的
