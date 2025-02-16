@@ -18,11 +18,14 @@ class NeotwImageCardWidget extends Widget {
 
     this.computeAttributes();
     this.execute();
-
     const ssr = this.document.isTiddlyWikiFakeDom;
     if (ssr) return;
 
     const createElement = $tw.utils.domMaker;
+
+    // 获取 src 属性
+    const src = this.getAttribute('src');
+    const width = this.getAttribute('width') || 'auto';
 
     // 创建拖放区域
     const dropZone = createElement('div', {
@@ -48,11 +51,11 @@ class NeotwImageCardWidget extends Widget {
     });
 
     // 处理文件拖放和点击上传
-    const handleImage = (file) => {
-      const reader = new FileReader();
-      reader.onload = (e) => {
+    const handleImage = (input) => {
+      if (typeof input === 'string') {
+        // 处理在线图片 URL
         const img = new Image();
-        img.style.borderRadius = '20px';
+        img.crossOrigin = 'anonymous';
         img.onload = () => {
           const canvas = previewCanvas;
           const ctx = canvas.getContext('2d');
@@ -82,7 +85,7 @@ class NeotwImageCardWidget extends Widget {
 
           // 创建圆角裁剪路径
           ctx.beginPath();
-          const radius = 20; // 圆角半径
+          const radius = 20;
           ctx.moveTo(x + radius, y);
           ctx.lineTo(x + img.width - radius, y);
           ctx.arcTo(x + img.width, y, x + img.width, y + radius, radius);
@@ -107,11 +110,85 @@ class NeotwImageCardWidget extends Widget {
           // 显示画布和复制按钮
           previewCanvas.classList.remove('hidden');
           copyBtn.classList.remove('hidden');
+          dropZone.classList.add('hidden');
         };
-        img.src = e.target.result;
-      };
-      reader.readAsDataURL(file);
+        img.onerror = () => {
+          console.error('图片加载失败:', input);
+        };
+        img.src = input;
+        // img.width = width;
+      } else {
+        // 原有的文件处理逻辑
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          const img = new Image();
+          img.style.borderRadius = '20px';
+          img.onload = () => {
+            const canvas = previewCanvas;
+            const ctx = canvas.getContext('2d');
+
+            // 设置画布尺寸
+            const padding = 80;
+            canvas.width = img.width + 2 * padding;
+            canvas.height = img.height + 2 * padding;
+
+            // 创建渐变背景
+            const gradient = ctx.createLinearGradient(
+              0,
+              0,
+              canvas.width,
+              canvas.height,
+            );
+            gradient.addColorStop(0, '#aee3ff');
+            gradient.addColorStop(1, '#cefdb6');
+
+            // 绘制渐变背景
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // 计算居中位置
+            const x = (canvas.width - img.width) / 2;
+            const y = (canvas.height - img.height) / 2;
+
+            // 创建圆角裁剪路径
+            ctx.beginPath();
+            const radius = 20; // 圆角半径
+            ctx.moveTo(x + radius, y);
+            ctx.lineTo(x + img.width - radius, y);
+            ctx.arcTo(x + img.width, y, x + img.width, y + radius, radius);
+            ctx.lineTo(x + img.width, y + img.height - radius);
+            ctx.arcTo(
+              x + img.width,
+              y + img.height,
+              x + img.width - radius,
+              y + img.height,
+              radius,
+            );
+            ctx.lineTo(x + radius, y + img.height);
+            ctx.arcTo(x, y + img.height, x, y + img.height - radius, radius);
+            ctx.lineTo(x, y + radius);
+            ctx.arcTo(x, y, x + radius, y, radius);
+            ctx.closePath();
+            ctx.clip();
+
+            // 绘制图片在居中位置
+            ctx.drawImage(img, x, y);
+
+            // 显示画布和复制按钮
+            previewCanvas.classList.remove('hidden');
+            copyBtn.classList.remove('hidden');
+          };
+          img.src = e.target.result;
+        };
+        reader.readAsDataURL(input); // 修改这里，使用 input 而不是 file
+      }
     };
+
+    // 如果提供了 src，自动加载图片
+    if (src) {
+      handleImage(src);
+      dropZone.classList.add('hidden');
+    }
 
     // 处理拖放事件
     dropZone.addEventListener('dragover', (e) => {
