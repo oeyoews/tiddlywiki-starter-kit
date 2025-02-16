@@ -112,6 +112,7 @@ class AvatarWidget extends Widget {
         rel: 'noopener noreferrer',
         style: 'text-decoration: none;',
         href: link,
+        class: 'neotw-avatar-link',
       },
       children: [imageNode],
     });

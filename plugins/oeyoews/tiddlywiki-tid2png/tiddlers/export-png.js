@@ -16,6 +16,10 @@ const progress = $tw.NProgress;
 const hideElements = [
   // '.gk0wk-notionpagebg',
   '.tc-tiddler-controls', // 必须要使用 style: display: !important
+  '.renaming-tiddler-ai',
+  '.neotw-publish-status',
+  '.neotw-subtitle-link',
+  '.neotw-avatar-link',
   // '.tc-tags-wrapper'
   // '.tc-subtitle',
 ];
@@ -68,22 +72,38 @@ module.exports = async function exportPng(title, customSelector) {
 
   progress.start();
   const selector = customSelector || `[data-tiddler-title="${title}"]`;
+  // @see: https://github.com/niklasvh/html2canvas/issues/1414
   // html2canvas 不支持 cloneNode, 在 widget 中可以直接移除 popup，因为 widget 会重新渲染，popup 会自动恢复？但是这是一个 listener, 不建议直接修改 dom;
   // 下面使用了 hidden 隐藏 titlebar 元素，实际页面不会被用户感知到有所抖动 (由于 html2canvas 是异步)
+  // const targetEl = document.querySelector(selector);
+  // hideElements.forEach((el) => {
+  //   // targetEl.querySelector(el).style.display = 'none';
+  //   targetEl.querySelector(el).hidden = true;
+  // });
+  // if (!targetEl) {
+  //   console.error('导出节点未找到');
+  //   return;
+  // }
   const targetEl = document.querySelector(selector);
-  targetEl.querySelector('.tc-tiddler-controls ').hidden = true;
-  if (!targetEl) {
-    console.error('导出节点未找到');
-    return;
-  }
-
   const canvas = await html2canvas(targetEl, {
     useCORS: true,
+    onclone: function (documentClone) {
+      const targetEl = documentClone.querySelector(selector);
+      hideElements.forEach((el) => {
+        targetEl.querySelector(el).hidden = true;
+      });
+    },
   });
 
   canvas.toBlob((blob) => {
     const sizeInMB = (blob.size / (1024 * 1024)).toFixed(2);
     const imgData = canvas.toDataURL('image/png', 0.8); // 转换 canvas 为 PNG 格式的数据 URL
+
+    // const targetEl = document.querySelector(selector);
+    // hideElements.forEach((el) => {
+    //   targetEl.querySelector(el).hidden = false;
+    // });
+
     const imgNode = $tw.utils.domMaker('img', {
       // 这个图片是用来预览的
       class: 'max-w-3xl',
