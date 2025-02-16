@@ -19,7 +19,7 @@ const hideElements = [
   '.renaming-tiddler-ai',
   '.neotw-publish-status',
   '.neotw-subtitle-link',
-  '.neotw-avatar-link',
+  '.neotw-avatar-link', // html2canvas 图片不会进行重定向， 导致加载失败
   // '.tc-tags-wrapper'
   // '.tc-subtitle',
 ];
@@ -58,7 +58,7 @@ module.exports = async function exportPng(title, customSelector) {
   let isExporting = localStorage.getItem('tid2png') || 'no';
   // if (isExporting === 'yes') {
   //   console.info('正在导出');
-  //   return;
+  //   // return;
   // }
   localStorage.setItem('tid2png', 'yes');
   if (customSelector && !this.document.querySelector(customSelector)) {
@@ -85,10 +85,15 @@ module.exports = async function exportPng(title, customSelector) {
   //   return;
   // }
   const targetEl = document.querySelector(selector);
+  // @see: https://html2canvas.hertzen.com/configuration
   const canvas = await html2canvas(targetEl, {
     useCORS: true,
+    backgroundColor: null,
+    logging: false,
+    // imageTimeout: 3000,
     onclone: function (documentClone) {
       const targetEl = documentClone.querySelector(selector);
+      targetEl.style.borderRadius = '20px';
       hideElements.forEach((el) => {
         const hiddenEl = targetEl.querySelector(el);
         if (hiddenEl) {

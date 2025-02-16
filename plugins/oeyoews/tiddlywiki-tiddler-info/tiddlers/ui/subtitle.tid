@@ -6,7 +6,7 @@ tags: $:/tags/ViewTemplate
 <$reveal type="nomatch" stateTitle=<<folded-state>> text="hide" tag="div" retain="yes" animate="yes">
 <div class="tc-subtitle my-2">
 <$list filter="[all[current]has[creator]]">
-    <$avatar inline link="https://github.com/oeyoews" />
+    <$avatar type="github" inline link="https://github.com/oeyoews" />
 {{!!creator}}
 </$list>
 <$list filter="[all[current]has[created]]">
