@@ -12,6 +12,7 @@ const localPlugins = [
   'oeyoews/neotw-vue3', // -dev
   'oeyoews/clean-your-duplicate-storylist',
   'oeyoews/neotw-startup-times',
+  'oeyoews/tiddlywiki-tid2png',
 ];
 
 const onlinePlugins = [
@@ -30,7 +31,6 @@ const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
 // oeyoews plugins
 const oeyoewsPlugins = [
   ...devplugins,
-  'tiddlywiki-tid2png',
   'confetti-background',
   // vue
   'vue-i18n',
