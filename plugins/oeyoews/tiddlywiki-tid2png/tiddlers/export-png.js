@@ -6,6 +6,7 @@ module-type: library
 export
 \*/
 const html2canvas = require('html2canvas.min.js');
+const processImage = require('./processImage');
 
 const swal2 = $tw.modules.titles['$:/plugins/oeyoews/neotw-swal2/swal2.min.js'];
 const downloadSvg = $tw.wiki.getTiddlerText(
@@ -94,7 +95,7 @@ module.exports = async function exportPng(title, customSelector) {
     // imageTimeout: 3000,
     onclone: function (documentClone) {
       const targetEl = documentClone.querySelector(selector);
-      targetEl.style.borderRadius = '20px';
+      // targetEl.style.borderRadius = '20px';
       targetEl.style.border = 'none';
       // 不支持跨域图片， 除非借助代理服务器, proxy 参数
       hideElements.forEach((el) => {
@@ -124,23 +125,11 @@ module.exports = async function exportPng(title, customSelector) {
   });
 
   // 增加 padding 的操作
-  const padding = 40; // 设置你想要的 padding
   const newCanvas = document.createElement('canvas');
-  newCanvas.width = canvas.width + 2 * padding; // 左右 padding
-  newCanvas.height = canvas.height + 2 * padding; // 上下 padding
-
-  const ctx = newCanvas.getContext('2d');
-
-  const gradient = ctx.createLinearGradient(0, 0, newCanvas.width, 0);
-  gradient.addColorStop(0, '#aee3ff');
-  gradient.addColorStop(1, '#cefdb6');
-
-  ctx.fillStyle = gradient; // 使用渐变作为填充颜色，而不是 transparent
-
-  ctx.fillRect(0, 0, newCanvas.width, newCanvas.height); // 填充背景
-
-  // 将原始 canvas 绘制到新的 canvas 中，留出 padding
-  ctx.drawImage(canvas, padding, padding);
+  processImage(newCanvas, canvas.toDataURL('image/png'), {
+    padding: 20,
+    radius: 20,
+  });
 
   newCanvas.toBlob((blob) => {
     const sizeInMB = (blob.size / (1024 * 1024)).toFixed(2);

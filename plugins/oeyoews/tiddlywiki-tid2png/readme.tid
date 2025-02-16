@@ -27,3 +27,7 @@ description: ~TiddlyWiki Tid2png
 <div id="export" data-export class='export'> export area </div>
 
 </div>
+
+!! NOTE
+
+https://github.com/niklasvh/html2canvas/issues/308 not support bullets
