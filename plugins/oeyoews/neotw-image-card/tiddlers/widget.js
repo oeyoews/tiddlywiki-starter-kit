@@ -151,12 +151,31 @@ class NeotwImageCardWidget extends Widget {
 
     // 处理复制功能
     copyBtn.addEventListener('click', () => {
-      previewCanvas.toBlob((blob) => {
-        const item = new ClipboardItem({ 'image/png': blob });
-        navigator.clipboard.write([item]).then(() => {
-          alert('图片已复制到剪贴板！');
-        });
-      });
+      previewCanvas.toBlob(
+        (blob) => {
+          const item = new ClipboardItem({ 'image/png': blob });
+          console.log(item, blob);
+          // const link = document.createElement('a');
+          // link.download = 'image-card.png';
+          // link.href = previewCanvas.toDataURL('image/png');
+          // link.click();
+          navigator.clipboard
+            .write([item])
+            .then(() => {
+              alert('图片已复制到剪贴板！');
+            })
+            .catch((err) => {
+              console.error('复制失败:', err);
+              // 提供备选下载方案
+              const link = document.createElement('a');
+              link.download = 'image-card.png';
+              link.href = previewCanvas.toDataURL('image/png');
+              link.click();
+            });
+        },
+        'image/png',
+        1.0,
+      ); // 使用最高质量的 PNG 格式
     });
 
     parent.insertBefore(domNode, nextSibling);
