@@ -30,6 +30,7 @@ const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
 // oeyoews plugins
 const oeyoewsPlugins = [
   ...devplugins,
+  'tiddlywiki-tid2png',
   'confetti-background',
   // vue
   'vue-i18n',
