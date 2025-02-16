@@ -14,9 +14,13 @@ module-type: library
  * @param {number} [option.radius=40] - 图片圆角的半径（像素）
  * @example
  */
-function processImage(canvas, base64, option = { padding: 80, radius: 40 }) {
+function processImage(
+  canvas,
+  base64,
+  option = { padding: 80, radius: 40, colors: ['#ff6b6b', '#4ecdc4'] },
+) {
   const ctx = canvas.getContext('2d');
-  const { padding, radius } = option;
+  const { padding, radius, colors } = option;
 
   function updateCanvas(img) {
     // 设置画布尺寸和内边距
@@ -25,10 +29,14 @@ function processImage(canvas, base64, option = { padding: 80, radius: 40 }) {
     canvas.width = width;
     canvas.height = height;
 
-    // 创建渐变背景
+    // 创建渐变背景, 渐变方向， 从左到右
     const gradient = ctx.createLinearGradient(0, 0, width, height);
-    gradient.addColorStop(0, '#ff6b6b');
-    gradient.addColorStop(1, '#4ecdc4');
+    // gradient.addColorStop(0, colors[0]);
+    // gradient.addColorStop(1, colors[1]);
+    // 多个颜色渐变
+    colors.forEach((color, index) => {
+      gradient.addColorStop(index / (colors.length - 1), color);
+    });
     ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, width, height);
 

@@ -114,6 +114,7 @@ module.exports = async function exportPng(title, customSelector) {
   processImage(newCanvas, canvas.toDataURL('image/png'), {
     padding: 20,
     radius: 20,
+    colors: ['#aee3ff', '#cefdb6'],
   });
 
   newCanvas.toBlob((blob) => {
