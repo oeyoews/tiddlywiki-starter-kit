@@ -14,6 +14,7 @@ const aiModels = require('./model/index');
 const config = require('./config.js');
 
 async function renameTiddlerTitle(title) {
+  const progress = $tw.NProgress;
   if (!title) {
     const tip = '请输入标题';
     console.warn(tip);
@@ -30,6 +31,7 @@ async function renameTiddlerTitle(title) {
   if (!config.API_KEY) {
     window.alert('请填写你的 apikey');
   }
+  progress.start();
 
   const renameTitle = await aiModels['chatgpt']({
     baseurl: config.CHATGPT_PROXY_URL || 'https://api.openai.com',
@@ -40,6 +42,7 @@ async function renameTiddlerTitle(title) {
   });
 
   if (renameTitle) {
+    progress.done();
     const to = window.prompt('Rename to:', renameTitle);
     if (to) {
       $tw.wiki.renameTiddler(title, to.replace(/\//g, '-'));
