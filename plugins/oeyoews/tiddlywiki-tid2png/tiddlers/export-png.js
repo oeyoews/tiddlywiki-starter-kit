@@ -90,7 +90,10 @@ module.exports = async function exportPng(title, customSelector) {
     onclone: function (documentClone) {
       const targetEl = documentClone.querySelector(selector);
       hideElements.forEach((el) => {
-        targetEl.querySelector(el).hidden = true;
+        const hiddenEl = targetEl.querySelector(el);
+        if (hiddenEl) {
+          hiddenEl.hidden = true;
+        }
       });
     },
   });
@@ -98,11 +101,6 @@ module.exports = async function exportPng(title, customSelector) {
   canvas.toBlob((blob) => {
     const sizeInMB = (blob.size / (1024 * 1024)).toFixed(2);
     const imgData = canvas.toDataURL('image/png', 0.8); // 转换 canvas 为 PNG 格式的数据 URL
-
-    // const targetEl = document.querySelector(selector);
-    // hideElements.forEach((el) => {
-    //   targetEl.querySelector(el).hidden = false;
-    // });
 
     const imgNode = $tw.utils.domMaker('img', {
       // 这个图片是用来预览的
