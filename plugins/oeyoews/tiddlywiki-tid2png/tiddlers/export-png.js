@@ -105,14 +105,14 @@ module.exports = async function exportPng(title, customSelector) {
           hiddenEl.hidden = true;
         }
       });
-      addFooter(targetEl, documentClone);
+      // addFooter(targetEl, documentClone);
     },
   });
 
   const newCanvas = document.createElement('canvas');
 
-  processImage(newCanvas, canvas.toDataURL('image/png'), {
-    padding: 20,
+  await processImage(newCanvas, canvas.toDataURL('image/png'), {
+    padding: 40,
     radius: 20,
     colors: ['#aee3ff', '#cefdb6'],
   });
