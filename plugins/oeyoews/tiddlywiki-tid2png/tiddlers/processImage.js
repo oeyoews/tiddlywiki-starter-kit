@@ -77,7 +77,7 @@ function processImage(canvas, base64, option = {}) {
       tempCtx.drawImage(img, 0, 0, img.width, img.height);
 
       // 添加页脚文字和logo到临时画布
-      if (footerEnable) {
+      if (option.footerEnable) {
         const footerY = img.height - footer.margin;
         let textX = img.width - footer.margin;
 
