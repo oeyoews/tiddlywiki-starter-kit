@@ -69,6 +69,23 @@ const app = (target, title, self) => {
             icon: getIcon('edit'),
             onClick: () => o('tm-edit-tiddler', title),
           },
+          {
+            label: t('menu.tags'),
+            icon: getIcon('tags'),
+            onClick: () => {
+              const tiddler = $tw.wiki.getTiddler(title).fields.tags;
+              let tags = tiddler ? tiddler.join(' ') : []; // 使用逗号分隔， 不考虑tag 本身包含逗号的情况
+              const newtags = window.prompt('Tags:', tags);
+              if (newtags) {
+                $tw.wiki.setText(
+                  title,
+                  'tags',
+                  null,
+                  newtags.split(' ').filter(Boolean),
+                );
+              }
+            },
+          },
           // TODO: 动态插入, 要保证顺序
           {
             label: t('menu.close2'),

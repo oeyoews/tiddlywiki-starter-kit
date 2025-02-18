@@ -1,5 +1,6 @@
 module.exports = {
   menu: {
+    tags: 'tags',
     newWindow: 'New Window',
     clone: 'Clone Tiddler',
     rename: 'Rename Tiddler',
