@@ -61,7 +61,7 @@ function processImage(canvas, base64, option = {}) {
   return new Promise(async (resolve, reject) => {
     if (!canvas) reject('canvas is null');
     const ctx = canvas.getContext('2d');
-    const { padding, radius, colors, footer } = deepMerge(
+    const { footerEnable, padding, radius, colors, footer } = deepMerge(
       defaultConfig,
       option,
     );
@@ -77,7 +77,7 @@ function processImage(canvas, base64, option = {}) {
       tempCtx.drawImage(img, 0, 0, img.width, img.height);
 
       // 添加页脚文字和logo到临时画布
-      if (option.footerEnable) {
+      if (footerEnable) {
         const footerY = img.height - footer.margin;
         let textX = img.width - footer.margin;
 
