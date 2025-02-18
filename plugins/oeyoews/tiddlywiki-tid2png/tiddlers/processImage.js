@@ -45,6 +45,7 @@ function processImage(canvas, base64, option = {}) {
     padding: 80,
     radius: 40,
     colors: ['#ff6b6b', '#4ecdc4'],
+    footerEnable: true,
     footer: {
       text: 'Powered by',
       font: '14px Arial',
@@ -76,7 +77,7 @@ function processImage(canvas, base64, option = {}) {
       tempCtx.drawImage(img, 0, 0, img.width, img.height);
 
       // 添加页脚文字和logo到临时画布
-      if (footer.text || footer.logo) {
+      if (footerEnable) {
         const footerY = img.height - footer.margin;
         let textX = img.width - footer.margin;
 
