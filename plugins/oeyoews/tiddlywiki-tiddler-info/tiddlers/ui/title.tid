@@ -42,7 +42,7 @@ fill:$(foregroundColor)$;
 </$link>
 <$let env={{{ [[$:/info/url/protocol]get[text]] }}}>
 <%if [<env>match[http:]] %>
-<%if [<currentTiddler>!prefix[$:/]!is[missing]!is[binary]] %>
+<%if [<currentTiddler>!prefix[$:/]!is[missing]!is[binary]!tag[Journal]] %>
 <$button class="tc-btn-invisible renaming-tiddler-ai" message="th-renaming-tiddler-ai" > {{$:/core/images/ai-edit-button}}</$button>
 <%endif %>
 <%endif %>
