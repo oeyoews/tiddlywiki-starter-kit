@@ -46,7 +46,8 @@ async function getRecommendTagHook(title) {
     const to = window.prompt('Rename to:', renameTitle);
     if (to) {
       // tw 返回的是一个不可变对象数组
-      const tags = [...$tw.wiki.getTiddler(title).fields.tags] || [];
+      let tags = $tw.wiki.getTiddler(title).fields?.tags;
+      tags = tags ? [...tags] : [];
       tags.push(to);
       $tw.wiki.setText(title, 'tags', null, tags);
     }
