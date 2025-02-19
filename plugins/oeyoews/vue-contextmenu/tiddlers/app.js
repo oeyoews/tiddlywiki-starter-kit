@@ -53,6 +53,16 @@ const app = (target, title, self) => {
       };
     },
 
+    watch: {
+      tags(newVal) {
+        if (newVal) {
+          this.$nextTick(() => {
+            this.$refs['selectRef'].blur();
+          });
+        }
+      },
+    },
+
     mounted() {
       target.addEventListener('contextmenu', this.onContextMenu);
       this.tags.push(...this.getTags(title));
@@ -104,7 +114,12 @@ const app = (target, title, self) => {
             icon: getIcon('tags'),
             onClick: () => {
               this.dialogVisible = true;
-              console.log(this.dialogVisible);
+              this.$nextTick(() => {
+                const selectRef = this.$refs['selectRef'];
+                setTimeout(() => {
+                  selectRef.focus();
+                }, 0);
+              });
               return;
               // let tags = this.getTags(title);
               const tiddler = $tw.wiki.getTiddler(title).fields.tags;

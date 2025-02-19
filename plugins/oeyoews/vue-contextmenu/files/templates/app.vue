@@ -1,7 +1,7 @@
 <template>
 	<el-dialog v-model="dialogVisible" :title="t('tags')" width="500" destroy-on-close>
-		<el-select v-model="tags" multiple filterable allow-create default-first-option :reserve-keyword="false"
-			:placeholder="t('tags')" style="width: 100%">
+		<el-select ref="selectRef" v-model="tags" multiple filterable allow-create default-first-option
+			:reserve-keyword="false" :placeholder="t('tags')" style="width: 100%">
 			<template #label="{ label, value }">
 				<div style="display: flex; align-items: center">
 					<span v-html="tagIcon"></span>
