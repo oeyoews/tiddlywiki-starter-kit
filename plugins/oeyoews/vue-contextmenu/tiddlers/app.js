@@ -5,9 +5,13 @@ module-type: library
 
 \*/
 
-const { h, ref } = window.Vue;
+const { h, ref, reactive } = window.Vue;
 
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
+// const allTags = Object.keys($tw.wiki.getTagMap()).filter(
+//   (t) => !t.startsWith('$:/'),
+// );
+const allTags = Object.keys($tw.wiki.filterTiddlers('[tags[]!prefix[$:/]]'));
 
 const Icon = require('./components/Icon');
 const icons = require('./icons');
@@ -34,14 +38,49 @@ const app = (target, title, self) => {
   const component = {
     setup() {
       const { t } = useI18n();
-      return { t };
+      const dialogVisible = ref(false);
+      const tags = ref([]);
+      const inputVisible = ref(false);
+      const newTag = ref(null);
+      return { t, dialogVisible, tags, inputVisible, newTag };
     },
 
     mounted() {
       target.addEventListener('contextmenu', this.onContextMenu);
+      this.tags.push(...this.getTags(title));
     },
-
     methods: {
+      showInput() {
+        // TODO: 显示去重, 下拉选tag
+        this.newTag = null;
+        this.inputVisible = true;
+        this.$nextTick(() => {
+          this.$refs['InputRef'].input.focus();
+        });
+      },
+      /** @param {string} tag */
+      handleClose(tag) {
+        this.tags = this.tags.filter((t) => t !== tag);
+      },
+      handleAddTag() {
+        if (!this.newTag) return;
+        this.tags.push(this.newTag);
+        this.newTag = null;
+      },
+      handleConfirm() {
+        this.dialogVisible = false;
+        console.log(this.tags);
+        $tw.wiki.setText(title, 'tags', null, this.tags);
+      },
+      getTags(title) {
+        if (!title) {
+          console.error("title can't be empty");
+          return;
+        }
+        const tiddler = $tw.wiki.getTiddler(title).fields.tags;
+        let tags = tiddler ? tiddler : []; // 使用逗号分隔， 不考虑tag 本身包含逗号的情况
+        return tags;
+      },
       operation(type, param) {
         self.dispatchEvent({
           type,
@@ -73,10 +112,15 @@ const app = (target, title, self) => {
             label: t('menu.tags'),
             icon: getIcon('tags'),
             onClick: () => {
+              // this.dialogVisible = true;
+              // console.log(this.dialogVisible);
+              // return;
+              // let tags = this.getTags(title);
               const tiddler = $tw.wiki.getTiddler(title).fields.tags;
               let tags = tiddler ? tiddler.join(' ') : []; // 使用逗号分隔， 不考虑tag 本身包含逗号的情况
               const newtags = window.prompt('Tags:', tags);
               if (newtags) {
+                console.log(newtags.split(' ').filter(Boolean));
                 $tw.wiki.setText(
                   title,
                   'tags',
