@@ -1,10 +1,16 @@
 <template>
-	<el-dialog v-model="dialogVisible" title="标签" width="500" align-center destroy-on-close>
-		<el-tag style="margin-left: 4px;" v-if="tags.length > 0" v-for="tag in tags" :key="tag" closable
-			:disable-transitions="false" @close="handleClose(tag)"> {{ tag }} </el-tag>
-		<el-input v-if="inputVisible" ref="InputRef" v-model="newTag" size="small" @keyup.enter="handleAddTag"
-			@blur="handleAddTag" />
-		<el-button v-else class="" size="small" @click="showInput"> + New Tag </el-button>
+	<el-dialog v-model="dialogVisible" :title="t('tags')" width="500" destroy-on-close>
+		<el-select v-model="tags" multiple filterable allow-create default-first-option :reserve-keyword="false"
+			:placeholder="t('tags')" style="width: 100%">
+			<template #label="{ label, value }">
+				<div style="display: flex; align-items: center">
+					<span v-html="tagIcon"></span>
+					<span style="margin-left: 4px;">{{ value }}</span>
+				</div>
+			</template>
+			<el-option v-for="item in allTags" :key="item" :label="item" :value="item" />
+		</el-select>
+
 		<template #footer>
 			<div class="dialog-footer">
 				<el-button @click="dialogVisible = false">Cancel</el-button>
