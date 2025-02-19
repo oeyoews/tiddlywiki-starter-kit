@@ -54,7 +54,6 @@ const app = (target, title, self) => {
     },
 
     mounted() {
-      console.log('tagg', allTags);
       target.addEventListener('contextmenu', this.onContextMenu);
       this.tags.push(...this.getTags(title));
     },

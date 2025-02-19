@@ -1,19 +1,18 @@
 /*\
-title: $:/plugins/oeyoews/neotw-ai/rename-hook.js
+title: $:/plugins/oeyoews/neotw-ai/recommendTag.js
 type: application/javascript
 module-type: library
 
-neotw-ai rename
-
-// TOOD: 批量rename, 根据title重新命名/ 或者根据内容重新命名(费token)
+tag 推荐
+// 仅仅推荐仅含有 剪藏 的标签
 \*/
 
-const { getRenameTitle } = require('./prompt.js');
+const { getRecommendTag } = require('./prompt.js');
 
 const aiModels = require('./model/index');
 const config = require('./config.js');
 
-async function renameTiddlerTitle(title) {
+async function getRecommendTagHook(title) {
   const progress = $tw.NProgress;
   if (!title) {
     const tip = '请输入标题';
@@ -33,20 +32,24 @@ async function renameTiddlerTitle(title) {
   }
   progress.start();
 
+  const allTags = $tw.wiki.filterTiddlers('[tags[]!prefix[$:/]]');
   const renameTitle = await aiModels['chatgpt']({
     baseurl: config.CHATGPT_PROXY_URL || 'https://api.openai.com',
     apiKey: config.CHATGPT_API_KEY,
     // baseurl: 'http://localhost:11434',
     // model: 'qwen2:0.5b',
-    content: getRenameTitle(title),
+    content: getRecommendTag(title, allTags),
   });
 
   if (renameTitle) {
     progress.done();
     const to = window.prompt('Rename to:', renameTitle);
     if (to) {
-      $tw.wiki.renameTiddler(title, to.replace(/\//g, '-'));
+      // tw 返回的是一个不可变对象数组
+      const tags = [...$tw.wiki.getTiddler(title).fields.tags] || [];
+      tags.push(to);
+      $tw.wiki.setText(title, 'tags', null, tags);
     }
   }
 }
-module.exports = renameTiddlerTitle;
+module.exports = getRecommendTagHook;

@@ -11,9 +11,13 @@ exports.after = ['startup'];
 exports.name = 'neotw-ai-startup-hook';
 
 const renameTiddlerTitle = require('./rename-hook');
+const recommendTagHook = require('./recommendTag');
 
 exports.startup = function () {
   $tw.rootWidget.addEventListener('th-renaming-tiddler-ai', (event) => {
     renameTiddlerTitle(event.tiddlerTitle);
+  });
+  $tw.rootWidget.addEventListener('th-recommendTag', (event) => {
+    recommendTagHook(event.tiddlerTitle);
   });
 };
