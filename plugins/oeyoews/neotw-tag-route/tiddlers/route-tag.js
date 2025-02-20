@@ -1,7 +1,8 @@
 /*\
 title: $:/core/modules/server/routes/get-tags-json.js
 type: application/javascript
-module-type: route
+
+// module-type: route
 
 \*/
 (function () {
