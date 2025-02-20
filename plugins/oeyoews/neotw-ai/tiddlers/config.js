@@ -37,6 +37,7 @@ const {
   CHATGPT_API_KEY,
   CHATGPT_PROXY_URL,
   GROK_API_KEY,
+  GROQ_API_KEY,
 } = $tw.wiki.getTiddler('$:/plugins/oeyoews/neotw-ai/config').fields;
 
 module.exports = {
@@ -51,4 +52,5 @@ module.exports = {
   CHATGPT_API_KEY,
   CHATGPT_PROXY_URL,
   GROK_API_KEY,
+  GROQ_API_KEY,
 };

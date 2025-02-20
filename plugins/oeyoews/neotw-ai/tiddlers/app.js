@@ -28,6 +28,7 @@ const {
   CHATGPT_PROXY_URL,
   CHATGPT_API_KEY,
   GROK_API_KEY,
+  GROQ_API_KEY,
   model: MODEL, // 配置的默认model
 } = require('./config.js');
 
@@ -148,6 +149,7 @@ const app = (
             case 'ollama':
             case 'siliconflow':
             case 'grok':
+            case 'groq':
               if (model === 'chatgpt') {
                 if (!CHATGPT_API_KEY) {
                   throw Error('没有填写 CHATGPT_API_KEY');
@@ -190,6 +192,11 @@ const app = (
                 baseurl = 'https://api.x.ai';
                 apiKey = GROK_API_KEY;
                 api_model = 'grok-2-latest';
+              }
+              if (model === 'groq') {
+                api_model = 'qwen-2.5-32b';
+                baseurl = 'https://api.groq.com/openai';
+                apiKey = GROQ_API_KEY;
               }
               this.res = await aiModels['chatgpt']({
                 baseurl,

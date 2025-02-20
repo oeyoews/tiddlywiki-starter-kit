@@ -17,6 +17,7 @@ const models = {
   siliconflow: chatgpt,
   grok: chatgpt,
   default: chatgpt,
+  groq: chatgpt,
 };
 
 module.exports = models;
