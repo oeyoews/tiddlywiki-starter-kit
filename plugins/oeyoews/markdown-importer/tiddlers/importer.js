@@ -72,12 +72,13 @@ async function readMarkdownFolder(
       const modified = (new Date(file.lastModified) || new Date())
         .toISOString()
         .replace(/\D/g, '');
-      mdFiles.push({
+      const mdFile = {
         title: file.name.slice(0, -3),
         text,
-        modified,
         ...fields,
-      });
+        modified, // 提升优先级
+      };
+      mdFiles.push(mdFile);
     } else if (
       entry.kind === 'directory' &&
       !ignoreFolders.includes(entry.name) &&

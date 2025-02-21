@@ -44,7 +44,7 @@ exports.startup = () => {
         title: content.title,
         ...content,
         type: 'text/markdown', // 放到最后面， 防止frontmatter 修改
-        modified: String(content.modified), // 强制转换成数组
+        modified,
       });
       tiddlers.push(content.title);
     });
