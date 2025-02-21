@@ -1,4 +1,6 @@
 title: $:/plugins/oeyoews/vue-contextmenu/viewtemplate
 tags: $:/tags/ViewTemplate
 
-<$vue-contextmenu />
+<$list filter="[all[current]!is[missing]!is[binary]]">
+	<$vue-contextmenu />
+</$list>
