@@ -68,8 +68,10 @@ async function readMarkdownFolder(
         fields = flattenObject(jsyaml.loadAll(meta)[0]);
       }
 
-      const modified = new Date(file.lastModified) || new Date();
-
+      // NOTE: 不能为空或者NAN
+      const modified = (new Date(file.lastModified) || new Date())
+        .toISOString()
+        .replace(/\D/g, '');
       mdFiles.push({
         title: file.name.slice(0, -3),
         text,
