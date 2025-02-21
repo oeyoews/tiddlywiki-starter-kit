@@ -42,7 +42,12 @@ function parseFrontMatter(content) {
 const jsyaml = require('./js-yaml.min.js');
 window.jsyaml = jsyaml;
 
-async function readMarkdownFolder(dirHandle = null) {
+const defaultIgnoreFolders = ['node_modules', '.vscode', '.git', '.idea'];
+
+async function readMarkdownFolder(
+  dirHandle = null,
+  ignoreFolders = defaultIgnoreFolders,
+) {
   if (!dirHandle) {
     dirHandle = await window.showDirectoryPicker();
   }
@@ -71,9 +76,13 @@ async function readMarkdownFolder(dirHandle = null) {
         modified,
         ...fields,
       });
-    } else if (entry.kind === 'directory') {
+    } else if (
+      entry.kind === 'directory' &&
+      !ignoreFolders.includes(entry.name) &&
+      !entry.name.startsWith('.')
+    ) {
       // 递归遍历子目录
-      const subFiles = await readMarkdownFolder(entry);
+      const subFiles = await readMarkdownFolder(entry, ignoreFolders);
       mdFiles.push(...subFiles);
     }
   }
