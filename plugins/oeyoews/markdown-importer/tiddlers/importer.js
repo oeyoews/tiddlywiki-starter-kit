@@ -78,6 +78,14 @@ async function readMarkdownFolder(
         ...fields,
         modified, // 提升优先级
       };
+      // 去除tag中的反引号(for tailwindcss)
+      if (mdFile.tags && Array.isArray(mdFile?.tags)) {
+        mdFile.tags.forEach((tag, index) => {
+          if (tag.includes('`')) {
+            mdFile.tags[index] = tag.replace(/`/g, '');
+          }
+        });
+      }
       mdFiles.push(mdFile);
     } else if (
       entry.kind === 'directory' &&
