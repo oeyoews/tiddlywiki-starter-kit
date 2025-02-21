@@ -41,8 +41,9 @@ exports.startup = () => {
       }
       $tw.wiki.addTiddler({
         tags: ['markdown'],
-        type: 'text/markdown',
+        title: content.title,
         ...content,
+        type: 'text/markdown', // 放到最后面， 防止frontmatter 修改
       });
       tiddlers.push(content.title);
     });
@@ -52,7 +53,7 @@ exports.startup = () => {
 
     if (tiddlers.length <= 100) {
       defaultText +=
-        '(only show the first 100 markdown tiddlers)\n\n' +
+        `(only show the first ${tiddlers.length} markdown tiddlers)\n\n` +
         tiddlers
           .map((tiddler, index) => `${index + 1}. [[${tiddler}]]\n\n`)
           .join('');

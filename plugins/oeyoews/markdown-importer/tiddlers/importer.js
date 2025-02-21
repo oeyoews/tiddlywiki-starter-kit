@@ -68,7 +68,7 @@ async function readMarkdownFolder(
         fields = flattenObject(jsyaml.loadAll(meta)[0]);
       }
 
-      const modified = new Date(file.lastModified);
+      const modified = new Date(file.lastModified) || new Date();
 
       mdFiles.push({
         title: file.name.slice(0, -3),
