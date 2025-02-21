@@ -1,6 +1,8 @@
 title: $:/plugins/oeyoews/markdown-importer/readme
 description: markdown-importer
 
-[[在线文档|https://neotw.vercel.app/docs/plugins/markdown-importer]]
+!! 在线文档
 
- <$button message="th-markdown-importer" >Markdown Importer</$button>
+更多详细信息请访问：[[在线文档|https://neotw.vercel.app/docs/plugins/markdown-importer]]
+
+<$button message="th-markdown-importer" >Markdown Importer</$button>
