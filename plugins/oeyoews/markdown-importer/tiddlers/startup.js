@@ -20,6 +20,7 @@ exports.startup = () => {
     const confirmRes = window.confirm(
       `Are you confirm import ${content.length} markdown tiddlers?`,
     );
+    // TODO: 导入数量过多会导致卡顿
     if (!confirmRes) return;
     content.forEach((content) => {
       let renameTitle = null;
@@ -47,13 +48,19 @@ exports.startup = () => {
     });
     // 写入导入记录tiddler
     const markdownImporterRecord = '_state-markdown-importer-' + Date.now();
-    $tw.wiki.addTiddler({
-      title: markdownImporterRecord,
-      text:
-        `You have imported @@color:green;${tiddlers.length}@@ markdown tiddlers !\n\n` +
+    let defaultText = `You have imported @@color:green;${tiddlers.length}@@ markdown tiddlers !`;
+
+    if (tiddlers.length <= 100) {
+      defaultText +=
+        '(only show the first 100 markdown tiddlers)\n\n' +
         tiddlers
           .map((tiddler, index) => `${index + 1}. [[${tiddler}]]\n\n`)
-          .join(''),
+          .join('');
+    }
+
+    $tw.wiki.addTiddler({
+      title: markdownImporterRecord,
+      text: defaultText,
     });
 
     const goto = new $tw.Story();
