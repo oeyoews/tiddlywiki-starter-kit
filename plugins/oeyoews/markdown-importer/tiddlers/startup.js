@@ -24,6 +24,10 @@ exports.startup = () => {
           `${content.title} tiddler has exist, please rename this tiddler`,
           content.title + '-' + Date.now(),
         );
+        // 跳过此条目的导入
+        if (!renameTitle) {
+          return;
+        }
       }
       if (renameTitle) {
         content.title = renameTitle;

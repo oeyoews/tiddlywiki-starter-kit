@@ -2,7 +2,7 @@
   "title": "$:/plugins/oeyoews/markdown-importer",
   "description": "markdown-importer",
   "author": "oeyoews",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "core-version": ">=5.3.4",
   "type": "application/json",
   "plugin-type": "plugin",
