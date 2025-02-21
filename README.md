@@ -14,7 +14,7 @@
 
 <center>
 
-[Stackblitz Demo](https://stackblitz.com/~/github.com/oeyoews/tiddlywiki-starter-kit) |  [Documentation](https://tiddlywiki-starter-kit.vercel.app/docs/)
+[Stackblitz Demo](https://stackblitz.com/~/github.com/oeyoews/tiddlywiki-starter-kit) |  [Documentation](https://tiddlywiki-starter-kit.vercel.app/docs/) | [中文](https://github.com/oeyoews/tiddlywiki-starter-kit/blob/main/README-CN.md)
 
 </center>
 
