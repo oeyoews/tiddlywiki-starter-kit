@@ -44,19 +44,20 @@ exports.startup = () => {
         ...content,
       });
       tiddlers.push(content.title);
-      // 写入导入记录tiddler
-      const markdownImporterRecord = '_state-markdown-importer-' + Date.now();
-      $tw.wiki.addTiddler({
-        title: markdownImporterRecord,
-        text:
-          `You have imported @@color:green;${tiddlers.length}@@ markdown tiddlers !\n\n` +
-          tiddlers
-            .map((tiddler, index) => `${index + 1}. [[${tiddler}]]\n\n`)
-            .join(''),
-      });
-      const goto = new $tw.Story();
-      goto.navigateTiddler(markdownImporterRecord);
     });
+    // 写入导入记录tiddler
+    const markdownImporterRecord = '_state-markdown-importer-' + Date.now();
+    $tw.wiki.addTiddler({
+      title: markdownImporterRecord,
+      text:
+        `You have imported @@color:green;${tiddlers.length}@@ markdown tiddlers !\n\n` +
+        tiddlers
+          .map((tiddler, index) => `${index + 1}. [[${tiddler}]]\n\n`)
+          .join(''),
+    });
+
+    const goto = new $tw.Story();
+    goto.navigateTiddler(markdownImporterRecord);
   });
 };
 
