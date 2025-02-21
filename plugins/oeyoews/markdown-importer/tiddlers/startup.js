@@ -44,7 +44,6 @@ exports.startup = () => {
         title: content.title,
         ...content,
         type: 'text/markdown', // 放到最后面， 防止frontmatter 修改
-        modified,
       });
       tiddlers.push(content.title);
     });
