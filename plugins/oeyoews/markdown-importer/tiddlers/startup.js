@@ -15,7 +15,12 @@ exports.startup = () => {
   const readMarkdownFolder = require('./importer');
   $tw.rootWidget.addEventListener('th-markdown-importer', async (event) => {
     let tiddlers = [];
+    console.info('Begin import markdown tiddlers ...');
     const content = await readMarkdownFolder();
+    const confirmRes = window.confirm(
+      `Are you confirm import ${content.length} markdown tiddlers?`,
+    );
+    if (!confirmRes) return;
     content.forEach((content) => {
       let renameTitle = null;
       if (
