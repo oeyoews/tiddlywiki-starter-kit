@@ -174,3 +174,6 @@ exports.sayHi = () => {
 };
 
 $tw.wiki.getModificationFields();
+
+// 判断某个tiddler 是否存在
+$tw.wiki.filterTiddlers(`[[your-tiddler-title]!is[missing]]`).length > 0;
