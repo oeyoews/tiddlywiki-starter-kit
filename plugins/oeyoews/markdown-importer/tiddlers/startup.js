@@ -39,7 +39,6 @@ exports.startup = () => {
       if (renameTitle) {
         content.title = renameTitle;
       }
-      console.log(content);
       $tw.wiki.addTiddler({
         tags: ['markdown'],
         title: content.title,
