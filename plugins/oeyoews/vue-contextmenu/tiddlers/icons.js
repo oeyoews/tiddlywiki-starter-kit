@@ -3,6 +3,7 @@ title: $:/plugins/oeyoews/vue-contextmenu/icons.js
 type: application/javascript
 module-type: library
 
+TODO: add color, and compatiable dark mode
 \*/
 
 module.exports = {
