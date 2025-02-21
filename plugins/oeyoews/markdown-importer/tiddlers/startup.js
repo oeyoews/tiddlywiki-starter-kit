@@ -14,6 +14,7 @@ exports.synchronous = true;
 exports.startup = () => {
   const readMarkdownFolder = require('./importer');
   $tw.rootWidget.addEventListener('th-markdown-importer', async (event) => {
+    let tiddlers = [];
     const content = await readMarkdownFolder();
     content.forEach((content) => {
       let renameTitle = null;
@@ -37,6 +38,19 @@ exports.startup = () => {
         type: 'text/markdown',
         ...content,
       });
+      tiddlers.push(content.title);
+      // 写入导入记录tiddler
+      const markdownImporterRecord = '_state-markdown-importer-' + Date.now();
+      $tw.wiki.addTiddler({
+        title: markdownImporterRecord,
+        text:
+          `You have imported @@color:green;${tiddlers.length}@@ markdown tiddlers !\n\n` +
+          tiddlers
+            .map((tiddler, index) => `${index + 1}. [[${tiddler}]]\n\n`)
+            .join(''),
+      });
+      const goto = new $tw.Story();
+      goto.navigateTiddler(markdownImporterRecord);
     });
   });
 };
