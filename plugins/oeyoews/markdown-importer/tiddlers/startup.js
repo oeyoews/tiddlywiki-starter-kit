@@ -25,6 +25,7 @@ exports.startup = () => {
     let tiddlers = [];
     console.info('Begin import markdown tiddlers ...');
     const content = await readMarkdownFolder();
+    // TODO: 进度条
     if (content.length === 0) {
       alert('No markdown tiddlers found');
       return;

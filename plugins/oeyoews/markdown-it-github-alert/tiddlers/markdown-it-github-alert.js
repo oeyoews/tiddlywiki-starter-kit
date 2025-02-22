@@ -22,7 +22,7 @@ const MarkdownItGitHubAlerts = (md, options = {}) => {
   const {
     markers = ['TIP', 'NOTE', 'IMPORTANT', 'WARNING', 'CAUTION'],
     icons = DEFAULT_GITHUB_ICONS,
-    matchCaseSensitive = true,
+    matchCaseSensitive = false,
     titles = {},
     classPrefix = 'markdown-alert',
   } = options;

@@ -12,6 +12,12 @@ export default {
   //   'exportFilter',
   //   '[!is[system]]',
   // ],
+  // "externalimages": [
+  // 		--save [is[image]] images
+  // 		--setfield [is[image]] _canonical_uri $:/core/templates/canonical-uri-external-image text/plain
+  // 		--setfield [is[image]] text "" text/plain
+  // 		--render $:/core/save/all externalimages.html text/plain
+  // 	]
   /*   reactMd: [
     '--verbose',
     '--output',
