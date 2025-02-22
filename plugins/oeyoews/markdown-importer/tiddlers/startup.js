@@ -63,7 +63,7 @@ exports.startup = () => {
       tiddlers.tiddlers[content.title] = tiddler;
     });
 
-    const importedTitle = '$:/markdownImportd';
+    const importedTitle = '$:/markdownImported';
     // $tw.wiki.deleteTiddler(importedTitle);
     $tw.wiki.addTiddler({
       title: importedTitle,
