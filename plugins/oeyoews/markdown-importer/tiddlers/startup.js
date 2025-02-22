@@ -22,7 +22,9 @@ exports.startup = () => {
       return;
       // throw new Error('移动端暂不支持此功能');
     }
-    let tiddlers = [];
+    let tiddlers = {
+      tiddlers: {},
+    };
     console.info('Begin import markdown tiddlers ...');
     const content = await readMarkdownFolder();
     // TODO: 进度条
@@ -52,14 +54,28 @@ exports.startup = () => {
       if (renameTitle) {
         content.title = renameTitle;
       }
-      $tw.wiki.addTiddler({
+      const tiddler = {
         tags: ['markdown'],
         title: content.title,
         ...content,
         type: 'text/markdown', // 放到最后面， 防止frontmatter 修改
-      });
-      tiddlers.push(content.title);
+      };
+      tiddlers.tiddlers[content.title] = tiddler;
     });
+
+    const importedTitle = '$:/markdownImportd';
+    // $tw.wiki.deleteTiddler(importedTitle);
+    $tw.wiki.addTiddler({
+      title: importedTitle,
+      'plugin-type': 'import',
+      type: 'application/json',
+      text: JSON.stringify(tiddlers),
+      status: 'pending',
+    });
+    const goto = new $tw.Story();
+    goto.navigateTiddler(importedTitle);
+
+    return;
     // 写入导入记录tiddler
     const markdownImporterRecord = '_state-markdown-importer-' + Date.now();
     let defaultText = `You have imported @@color:green;${tiddlers.length}@@ markdown tiddlers !`;
@@ -77,8 +93,8 @@ exports.startup = () => {
       text: defaultText,
     });
 
-    const goto = new $tw.Story();
-    goto.navigateTiddler(markdownImporterRecord);
+    // const goto = new $tw.Story();
+    // goto.navigateTiddler(markdownImporterRecord);
   });
 };
 

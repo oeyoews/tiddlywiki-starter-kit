@@ -16,6 +16,7 @@ const localPlugins = [
 ];
 
 const onlinePlugins = [
+  // github 构建， 前三个插件消失了？？？
   'oeyoews/neotw-vue-codeblock', // 首页代码块
   'oeyoews/vue-plum',
   'oeyoews/NPL',
