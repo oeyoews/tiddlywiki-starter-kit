@@ -5,4 +5,4 @@ description: markdown-importer
 
 更多详细信息请访问：[[在线文档|https://neotw.vercel.app/docs/plugins/markdown-importer]]
 
-<$button message="th-markdown-importer" >Markdown Importer</$button>
+<$button message="th-markdown-importer" > {{ $:/plugins/oeyoews/markdown-importer/icon }} Markdown Importer</$button>
