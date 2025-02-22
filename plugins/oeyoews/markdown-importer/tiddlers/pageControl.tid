@@ -1,0 +1,20 @@
+title: $:/core/ui/Buttons/markdown-importer
+caption: {{$:/plugins/oeyoews/markdown-importer/icon}} Markdown Importer
+description: {{$:/plugins/oeyoews/markdown-importer!!description}}
+tags: $:/tags/PageControls
+
+\whitespace trim
+<div class="tc-file-input-wrapper">
+<$button tooltip={{$:/language/Buttons/Import/Hint}} aria-label={{$:/language/Buttons/Import/Caption}} class=<<tv-config-toolbar-class>>>
+<%if [<tv-config-toolbar-icons>match[yes]] %>
+<$action-sendmessage $message="th-markdown-importer" />
+{{$:/plugins/oeyoews/markdown-importer/icon}}
+<%endif%>
+<%if [<tv-config-toolbar-text>match[yes]] %>
+<span class="tc-btn-text">
+markdown importer
+</span>
+<%endif%>
+</$button>
+<!-- <$button message="th-markdown-importer" > {{ $:/plugins/oeyoews/markdown-importer/icon }} markdown importer</$button> -->
+</div>
