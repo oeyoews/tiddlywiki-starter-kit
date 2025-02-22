@@ -40,7 +40,6 @@ function parseFrontMatter(content) {
 }
 
 const jsyaml = require('./js-yaml.min.js');
-window.jsyaml = jsyaml;
 
 const defaultIgnoreFolders = ['node_modules', '.vscode', '.git', '.idea'];
 

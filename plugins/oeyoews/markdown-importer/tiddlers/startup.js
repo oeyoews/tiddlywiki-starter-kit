@@ -14,9 +14,21 @@ exports.synchronous = true;
 exports.startup = () => {
   const readMarkdownFolder = require('./importer');
   $tw.rootWidget.addEventListener('th-markdown-importer', async (event) => {
+    // 不支持移动端
+    if (
+      window.navigator.userAgent.match(/Android|iPhone|iPad|iPod|Mobile|webOS/i)
+    ) {
+      alert('此功能暂不支持移动端');
+      return;
+      // throw new Error('移动端暂不支持此功能');
+    }
     let tiddlers = [];
     console.info('Begin import markdown tiddlers ...');
     const content = await readMarkdownFolder();
+    if (content.length === 0) {
+      alert('No markdown tiddlers found');
+      return;
+    }
     const confirmRes = window.confirm(
       `Are you confirm import ${content.length} markdown tiddlers?`,
     );
