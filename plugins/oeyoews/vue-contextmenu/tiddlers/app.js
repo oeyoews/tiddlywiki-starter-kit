@@ -70,7 +70,6 @@ const app = (target, title, self) => {
     methods: {
       handleConfirm() {
         this.dialogVisible = false;
-        console.log(this.tags);
         $tw.wiki.setText(title, 'tags', null, this.tags);
       },
       getTags(title) {
