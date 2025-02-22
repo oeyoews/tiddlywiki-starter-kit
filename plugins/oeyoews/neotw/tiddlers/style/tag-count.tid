@@ -12,7 +12,9 @@ tags: $:/tags/Stylesheet
 }
 
 <$list filter="[all[shadows+tiddlers]tags[]]" variable=tag>
-<$set name=cssTag filter="[<tag>escapecss[]]" select=0>
+<$set name=cssTag filter="[<tag>]" select=0>
+<!-- xxx` 标签会导致样式崩溃 -->
+<!-- <$set name=cssTag filter="[<tag>escapecss[]]" select=0> -->
 [data-tag-title=<<cssTag>>] .tc-tag-label::after {
   content: " <$count filter="[all[shadows+tiddlers]tag<tag>]" />";
 }
