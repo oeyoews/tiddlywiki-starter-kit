@@ -188,8 +188,9 @@ const app = (target, title, self) => {
           {
             label: t('menu.rename'),
             icon: getIcon('rename'),
-            onClick: () => {
+            onClick: async () => {
               const to = window.prompt('Rename to:', title);
+              // const to = await $tw.showDialog('prompt', 'rename', title);
               if (to) {
                 // o('tm-rename-tiddler', title, '99');
                 $tw.wiki.renameTiddler(title, to);
