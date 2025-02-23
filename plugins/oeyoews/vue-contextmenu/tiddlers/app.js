@@ -65,7 +65,6 @@ const app = (target, title, self) => {
 
     mounted() {
       target.addEventListener('contextmenu', this.onContextMenu);
-      this.tags.push(...this.getTags(title));
     },
     methods: {
       handleConfirm() {
@@ -112,6 +111,7 @@ const app = (target, title, self) => {
             label: t('menu.tags'),
             icon: getIcon('tags'),
             onClick: () => {
+              this.tags = this.getTags(title);
               this.dialogVisible = true;
               this.$nextTick(() => {
                 const selectRef = this.$refs['selectRef'];
