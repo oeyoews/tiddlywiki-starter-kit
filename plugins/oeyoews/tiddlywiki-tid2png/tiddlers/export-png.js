@@ -23,7 +23,10 @@ const hideElements = [
   '.neotw-subtitle-link',
   '.neotw-avatar-link', // html2canvas 图片不会进行重定向， 导致加载失败
   // '.tc-tags-wrapper'
-  // '.tc-subtitle',
+  '.tc-subtitle', // 效果不好，隐藏
+  '.recommend-tiddler-ai',
+  '.data-html2canvas-ignore', // 手动加上， 不起作用
+  '.tc-tiddler-title-icon',
 ];
 
 const downloadPng = (href, title) => {
