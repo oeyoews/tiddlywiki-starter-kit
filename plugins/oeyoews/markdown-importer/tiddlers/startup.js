@@ -40,7 +40,8 @@ exports.startup = () => {
     content.forEach((content) => {
       let renameTitle = null;
       if (
-        $tw.wiki.filterTiddlers(`[[${content.title}]!is[missing]]`).length > 0
+        // $tw.wiki.filterTiddlers(`[[${content.title}]!is[missing]]`).length > 0
+        $tw.wiki.tiddlerExists(content.title)
       ) {
         renameTitle = window.prompt(
           `${content.title} tiddler has exist, please rename this tiddler`,

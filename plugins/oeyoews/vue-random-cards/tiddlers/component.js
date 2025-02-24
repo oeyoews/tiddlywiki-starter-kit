@@ -133,15 +133,28 @@ const app = (
 
     methods: {
       randomTiddlerTitle() {
-        const index = (Math.random() * tiddlers.length).toFixed(0) | 0;
-        if (readCards.includes(tiddlers[index])) {
-          console.log('已经阅读过, 自动跳过该条目', tiddlers[index]);
+        if (tiddlers.length == 0) {
+          console.info('没有可用的卡片');
+          alert('已全部阅读');
+          return null;
+        }
+        const index = Math.floor(Math.random() * tiddlers.length);
+        console.info('pre', index, tiddlers);
+        const title = tiddlers.splice(index, 1)[0]; // 直接删除并获取 title
+        if (!$tw.wiki.tiddlerExists(title)) {
           return this.randomTiddlerTitle();
         } else {
-          readCards.push(tiddlers[index]);
-          return tiddlers[index];
+          return title;
         }
       },
+      // if (readCards.includes(tiddlers[index])) {
+      //   console.log('已经阅读过, 自动跳过该条目', tiddlers[index]);
+      //   tiddlers.splice(index, 1); // 移除
+      //   return this.randomTiddlerTitle();
+      // } else {
+      //   readCards.push(tiddlers[index]);
+      //   return tiddlers[index];
+      // }
 
       updateChart() {
         if (this.chartdata.length > 8) {
@@ -167,7 +180,7 @@ const app = (
         // this.title = '';
       },
 
-      renderTiddler2HTML() {
+      renderTiddler2HTML(title) {
         try {
           // 性能问题
           // const text =
@@ -177,21 +190,24 @@ const app = (
           // const stateTiddler = "$:/state"
           // $tw.wiki.setText(this.title, text);
           this.cardContent =
-            $tw.wiki.renderTiddler('text/html', this.title) || '空空如也';
+            $tw.wiki.renderTiddler('text/html', title) || '空空如也';
         } catch (e) {
-          console.error(e.message);
+          console.error(e.message, title);
         }
       },
 
       updateCard: throttle(function () {
-        this.isRotate = !this.isRotate;
         this.title = this.randomTiddlerTitle();
+        if (!this.title) {
+          return;
+        }
+        this.isRotate = !this.isRotate;
         this.chartdata.push({
           name: this.title,
           value: 1,
         });
 
-        this.renderTiddler2HTML();
+        this.renderTiddler2HTML(this.title);
       }),
 
       gotoTiddler() {
