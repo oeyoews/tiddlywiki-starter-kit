@@ -62,7 +62,6 @@ class ExampleWidget extends Widget {
     try {
       const app = createApp(component(parent, title, this));
 
-      app.use(TiddlyWikiVue);
       app.use(ContextMenu);
       app.use(i18n);
       app.use(ElementPlus);

@@ -7,6 +7,7 @@ module-type: library
 
 const { h, ref, reactive } = window.Vue;
 
+const { ElMessage } = require('element-plus.min.js');
 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 // const allTags = Object.keys($tw.wiki.getTagMap()).filter(
 //   (t) => !t.startsWith('$:/'),
@@ -70,6 +71,10 @@ const app = (target, title, self) => {
       handleConfirm() {
         this.dialogVisible = false;
         $tw.wiki.setText(title, 'tags', null, this.tags);
+        ElMessage({
+          type: 'success',
+          message: 'Tags updated',
+        });
       },
       getTags(title) {
         if (!title) {
@@ -80,11 +85,12 @@ const app = (target, title, self) => {
         let tags = tiddler ? tiddler : []; // 使用逗号分隔， 不考虑tag 本身包含逗号的情况
         return tags;
       },
-      operation(type, param) {
+      operation(type, param, callback) {
         self.dispatchEvent({
           type,
           param,
         });
+        typeof callback === 'function' && callback();
       },
 
       getStoryList() {
@@ -140,7 +146,13 @@ const app = (target, title, self) => {
             label: t('menu.close2'),
             icon: getIcon('close2'),
             disabled: this.getStoryList().length === 1 ? true : false,
-            onClick: () => o('tm-close-other-tiddlers', title),
+            onClick: () =>
+              o('tm-close-other-tiddlers', title, () => {
+                ElMessage({
+                  type: 'success',
+                  message: 'Close other tiddlers successfully',
+                });
+              }),
             divided: true,
           },
           {
@@ -154,7 +166,13 @@ const app = (target, title, self) => {
                 label: t('menu.copy'),
                 icon: h(Icon, { icon: icons.copy }),
                 onClick: () => {
-                  $tw.utils.copyToClipboard(title);
+                  $tw.utils.copyToClipboard(title, {
+                    doNotNotify: true,
+                  });
+                  ElMessage({
+                    type: 'success',
+                    message: 'Copy tiddler title successfully',
+                  });
                 },
               },
               {
@@ -162,7 +180,13 @@ const app = (target, title, self) => {
                 icon: getIcon('copy2'),
                 onClick: () => {
                   const text = $tw.wiki.getTiddlerText(title);
-                  $tw.utils.copyToClipboard(text);
+                  $tw.utils.copyToClipboard(text, {
+                    doNotNotify: true,
+                  });
+                  ElMessage({
+                    type: 'success',
+                    message: 'Copy tiddler text successfully',
+                  });
                 },
               },
             ],
@@ -173,12 +197,19 @@ const app = (target, title, self) => {
             onClick: () => {
               const foldPrefix = '$:/state/folded/';
               $tw.wiki.setText(foldPrefix + title, 'text', null, 'hide');
+              ElMessage({ type: 'success', message: 'Fold successfully' });
             },
           },
           {
             label: t('menu.delete'),
             icon: getIcon('delete'),
-            onClick: () => o('tm-delete-tiddler', title),
+            onClick: () =>
+              o('tm-delete-tiddler', title, () => {
+                ElMessage({
+                  type: 'success',
+                  message: 'Delete successfully',
+                });
+              }),
           },
           {
             label: t('menu.newWindow'),
@@ -191,9 +222,15 @@ const app = (target, title, self) => {
             onClick: async () => {
               const to = window.prompt('Rename to:', title);
               // const to = await $tw.showDialog('prompt', 'rename', title);
-              if (to) {
+              if (to && to !== title) {
                 // o('tm-rename-tiddler', title, '99');
                 $tw.wiki.renameTiddler(title, to);
+                ElMessage({ type: 'success', message: `Rename successfully` });
+              } else {
+                ElMessage({
+                  type: 'info',
+                  message: 'Rename canceled',
+                });
               }
             },
           },
@@ -205,7 +242,13 @@ const app = (target, title, self) => {
           {
             label: t('menu.permalink'),
             icon: getIcon('link'),
-            onClick: () => o('tm-permalink', title),
+            onClick: () =>
+              o('tm-permalink', title, () => {
+                // ElMessage({
+                //   type: 'success',
+                //   message: 'Copy permalink successfully',
+                // });
+              }),
           },
         ];
 
