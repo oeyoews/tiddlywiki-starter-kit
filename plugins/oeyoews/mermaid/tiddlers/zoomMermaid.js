@@ -29,6 +29,7 @@ const zoomMermaid = () => {
     };
 
     container.style.cursor = 'grab';
+    container.style.overflow = 'hidden';
     container.addEventListener('contextmenu', (e) => {
       e.stopPropagation();
       e.preventDefault();

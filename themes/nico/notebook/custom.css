@@ -258,7 +258,12 @@ span.tc-icon-wrapper {
   margin: 2px 0 2px 4px !important;
 }
 
-pre {
+/* pre {
+  max-height: 50vh;
+  overflow-y: auto;
+} */
+
+pre:not(:has(svg)) {
   max-height: 50vh;
   overflow-y: auto;
 }
