@@ -1,23 +1,12 @@
 title: $:/plugins/oeyoews/neotw-tiddlers-view/style.css
 tags: $:/tags/Stylesheet
 
-.title-scroller {
-	overflow: hidden;
-	font-size: 14px;
-	color: lightgray;
-}
-.title-item {
-	transition: all 0.5s;
-	cursor: pointer;
-}
-.title-item:hover {
-	text-decoration: underline;
-	text-align: left;
-	overflow: hidden;
-}
 .scroll-container {
+	cursor: pointer;
 	overflow: hidden;
 	position: relative;
+	color: lightgray;
+	font-size: 14px;
 }
 .scroll-enter-active,
 .scroll-leave-active {
