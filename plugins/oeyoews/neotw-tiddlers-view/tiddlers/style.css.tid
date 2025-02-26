@@ -1,11 +1,7 @@
 title: $:/plugins/oeyoews/neotw-tiddlers-view/style.css
 tags: $:/tags/Stylesheet
 
-.title-scroller {
-	width: 100%;
-}
 .scroll-container {
-	height: 150px;
 	overflow: hidden;
 	position: relative;
 }

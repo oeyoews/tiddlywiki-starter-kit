@@ -34,6 +34,8 @@ module.exports = {
       allTitles: [],
       visibleTitles: [],
       currentIndex: 0,
+      lastUpdateTime: 0,
+      animationFrameId: null,
     };
   },
 
@@ -43,9 +45,7 @@ module.exports = {
   },
 
   beforeUnmount() {
-    if (this.scrollInterval) {
-      clearInterval(this.scrollInterval);
-    }
+    this.stopScrolling();
   },
 
   methods: {
@@ -85,11 +85,33 @@ module.exports = {
     },
 
     startScrolling() {
-      // 每3秒滚动一次
-      this.scrollInterval = setInterval(() => {
-        this.currentIndex = (this.currentIndex + 1) % this.allTitles.length;
-        this.updateVisibleTitles();
-      }, 3000);
+      // 使用requestAnimationFrame实现滚动
+      const animate = (timestamp) => {
+        if (!this.lastUpdateTime) this.lastUpdateTime = timestamp;
+
+        // 每3000毫秒更新一次
+        if (timestamp - this.lastUpdateTime >= 3000) {
+          if (this.allTitles.length > this.limit) {
+            this.currentIndex = (this.currentIndex + 1) % this.allTitles.length;
+            this.updateVisibleTitles();
+          }
+          this.lastUpdateTime = timestamp;
+        }
+
+        // 继续下一帧动画
+        this.animationFrameId = window.requestAnimationFrame(animate);
+      };
+
+      // 开始动画循环
+      this.animationFrameId = window.requestAnimationFrame(animate);
+    },
+
+    stopScrolling() {
+      // 停止动画
+      if (this.animationFrameId) {
+        window.cancelAnimationFrame(this.animationFrameId);
+        this.animationFrameId = null;
+      }
     },
   },
 };
