@@ -12,8 +12,8 @@ module.exports = {
   template: `
     <div class="title-scroller">
       <transition-group name="scroll" tag="div" class="scroll-container">
-        <div v-for="(title, index) in visibleTitles" :key="title" class="title-item">
-          {{ title }}
+        <div v-for="(title, index) in visibleTitles" :key="title" class="title-item" @click="goToTiddler(title)">
+        {{ title.slice(0, 50) }}
         </div>
       </transition-group>
     </div>`,
@@ -21,7 +21,8 @@ module.exports = {
   props: {
     filter: {
       type: String,
-      default: '[!is[system]sort[title]]',
+      default:
+        '[!is[system]sort[title]!is[tag]!prefix[$:/]!is[binary]!is[draft]]',
     },
     limit: {
       type: Number,
@@ -49,8 +50,11 @@ module.exports = {
   },
 
   methods: {
+    goToTiddler(title) {
+      const goto = new $tw.Story();
+      goto.navigateTiddler(title);
+    },
     loadTitles() {
-      // 使用TiddlyWiki API获取tiddlers
       if ($tw && $tw.wiki) {
         const tiddlers = $tw.wiki.filterTiddlers(this.filter);
         this.allTitles = tiddlers;

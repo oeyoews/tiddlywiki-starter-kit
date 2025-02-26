@@ -22,7 +22,6 @@ const app = () => {
     // setup() {},
     data() {
       return {
-        filter: '[!is[system]sort[title]]',
         visibleTitles: [],
       };
     },

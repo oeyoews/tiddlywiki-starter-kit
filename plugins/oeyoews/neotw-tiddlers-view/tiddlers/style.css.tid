@@ -4,9 +4,17 @@ tags: $:/tags/Stylesheet
 .title-scroller {
 	height: 2em;
 	overflow: hidden;
+	font-size: 14px;
+	color: lightgray;
 }
 .title-item {
-	transition: all 0.8s;
+	transition: all 0.6s;
+	cursor: pointer;
+}
+.title-item:hover {
+	text-decoration: underline;
+	text-align: left;
+	overflow: hidden;
 }
 .scroll-container {
 	overflow: hidden;
@@ -14,7 +22,7 @@ tags: $:/tags/Stylesheet
 }
 .scroll-enter-active,
 .scroll-leave-active {
-	transition: all 0.8s;
+	transition: all 0.6s;
 }
 .scroll-enter-from {
 	transform: translateY(100%);
