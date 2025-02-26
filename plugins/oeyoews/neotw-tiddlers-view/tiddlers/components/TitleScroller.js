@@ -11,11 +11,13 @@ module.exports = {
 
   template: `
     <div class="title-scroller">
-      <transition-group name="scroll" tag="div" class="scroll-container">
-        <div v-for="(title, index) in visibleTitles" :key="title" class="title-item" @click="goToTiddler(title)">
-        {{ title.slice(0, 50) }}
-        </div>
-      </transition-group>
+      <div class="scroll-container">
+        <transition name="scroll" mode="out-in">
+          <div v-if="currentTitle" :key="currentTitle" class="title-item" @click="goToTiddler(currentTitle)">
+            {{ currentTitle.slice(0, 50) }}
+          </div>
+        </transition>
+      </div>
     </div>`,
 
   props: {
@@ -24,16 +26,12 @@ module.exports = {
       default:
         '[!is[system]sort[title]!is[tag]!prefix[$:/]!is[binary]!is[draft]]',
     },
-    limit: {
-      type: Number,
-      default: 5,
-    },
   },
 
   data() {
     return {
       allTitles: [],
-      visibleTitles: [],
+      currentTitle: '',
       currentIndex: 0,
       lastUpdateTime: 0,
       animationFrameId: null,
@@ -58,34 +56,21 @@ module.exports = {
       if ($tw && $tw.wiki) {
         const tiddlers = $tw.wiki.filterTiddlers(this.filter);
         this.allTitles = tiddlers;
-        this.updateVisibleTitles();
+        this.updateCurrentTitle();
       } else {
         console.error('TiddlyWiki API not available');
       }
     },
 
-    updateVisibleTitles() {
-      if (this.allTitles.length <= this.limit) {
-        this.visibleTitles = [...this.allTitles];
+    updateCurrentTitle() {
+      if (this.allTitles.length === 0) {
+        this.currentTitle = '';
         return;
       }
 
-      // 计算要显示的标题
-      const startIndex = this.currentIndex % this.allTitles.length;
-      const endIndex = Math.min(startIndex + this.limit, this.allTitles.length);
-
-      // 如果到达末尾需要循环到开始
-      if (
-        endIndex - startIndex < this.limit &&
-        this.allTitles.length > this.limit
-      ) {
-        this.visibleTitles = [
-          ...this.allTitles.slice(startIndex),
-          ...this.allTitles.slice(0, this.limit - (endIndex - startIndex)),
-        ];
-      } else {
-        this.visibleTitles = this.allTitles.slice(startIndex, endIndex);
-      }
+      // 只显示一个标题
+      const index = this.currentIndex % this.allTitles.length;
+      this.currentTitle = this.allTitles[index];
     },
 
     startScrolling() {
@@ -95,9 +80,9 @@ module.exports = {
 
         // 每3000毫秒更新一次
         if (timestamp - this.lastUpdateTime >= 3000) {
-          if (this.allTitles.length > this.limit) {
+          if (this.allTitles.length > 1) {
             this.currentIndex = (this.currentIndex + 1) % this.allTitles.length;
-            this.updateVisibleTitles();
+            this.updateCurrentTitle();
           }
           this.lastUpdateTime = timestamp;
         }

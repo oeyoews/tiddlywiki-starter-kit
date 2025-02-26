@@ -1,5 +1,5 @@
 <template>
-  <div class="neotw-tiddlers-view">
-    <TitleScroller :limit="1" />
-  </div>
+  <!-- <div class="neotw-tiddlers-view"> -->
+  <TitleScroller />
+  <!-- </div> -->
 </template>
