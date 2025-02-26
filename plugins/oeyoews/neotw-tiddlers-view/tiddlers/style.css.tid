@@ -1,16 +1,20 @@
 title: $:/plugins/oeyoews/neotw-tiddlers-view/style.css
 tags: $:/tags/Stylesheet
 
+.title-scroller {
+	height: 2em;
+	overflow: hidden;
+}
+.title-item {
+	transition: all 0.8s;
+}
 .scroll-container {
 	overflow: hidden;
 	position: relative;
 }
-.title-item {
-	transition: all 0.3s;
-}
 .scroll-enter-active,
 .scroll-leave-active {
-	transition: all 0.3s;
+	transition: all 0.8s;
 }
 .scroll-enter-from {
 	transform: translateY(100%);
