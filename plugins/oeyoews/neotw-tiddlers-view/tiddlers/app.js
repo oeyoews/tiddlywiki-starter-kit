@@ -18,13 +18,11 @@ const app = () => {
         currentIndex: 0,
         lastUpdateTime: 0,
         animationFrameId: null,
-        visibleTitles: [],
         filter:
           '[!is[system]sort[title]!is[tag]!prefix[$:/]!is[binary]!is[draft]]',
       };
     },
     mounted() {
-      console.log('App mounted!');
       this.loadTitles();
       this.startScrolling();
     },
@@ -37,23 +35,18 @@ const app = () => {
 
       loadTitles() {
         if ($tw && $tw.wiki) {
-          const tiddlers = $tw.wiki.filterTiddlers(this.filter);
-          this.allTitles = tiddlers;
-          this.updateCurrentTitle();
+          this.allTitles = $tw.wiki.filterTiddlers(this.filter);
+          this.currentTitle = this.updateCurrentTitle();
         } else {
           console.error('TiddlyWiki API not available');
         }
       },
-
       updateCurrentTitle() {
         if (this.allTitles.length === 0) {
-          this.currentTitle = '';
-          return;
+          return null;
         }
-
-        // 只显示一个标题
         const index = this.currentIndex % this.allTitles.length;
-        this.currentTitle = this.allTitles[index];
+        return this.allTitles[index];
       },
 
       startScrolling() {
