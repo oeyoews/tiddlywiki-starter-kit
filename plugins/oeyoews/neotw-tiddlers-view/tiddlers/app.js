@@ -19,7 +19,7 @@ const app = () => {
         lastUpdateTime: 0,
         animationFrameId: null,
         filter:
-          '[!is[system]sort[title]!is[tag]!prefix[$:/]!is[binary]!is[draft]]',
+          '[!is[system]sort[title]!is[tag]!prefix[$:/]!is[binary]!is[draft]days[-100]!sort[modified]limit[50]!tag[todo]]',
       };
     },
     mounted() {
@@ -57,10 +57,9 @@ const app = () => {
           // 每3000毫秒更新一次，但在暂停状态下不更新
           if (timestamp - this.lastUpdateTime >= 3000) {
             if (this.allTitles.length > 1) {
-              console.log('up');
               this.currentIndex =
                 (this.currentIndex + 1) % this.allTitles.length;
-              this.updateCurrentTitle();
+              this.currentTitle = this.updateCurrentTitle();
             }
             this.lastUpdateTime = timestamp;
           }
