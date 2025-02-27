@@ -658,3 +658,8 @@ div.tc-tab-buttons button.tc-tab-selected {
 }
 <% endif %>
 </$let>
+
+.tc-tiddler-info {
+  background: transparent !important;
+  border: none !important;
+}
