@@ -10,7 +10,7 @@ module-type: library
  * @param {string} text - 需要阅读的文本
  * @param {number} chineseSpeed - 每分钟中文阅读速度（默认 400 字）
  * @param {number} englishSpeed - 每分钟英文阅读速度（默认 200 词）
- * @returns {string} 预估阅读时间和字数统计（格式："阅读时间: 3 分钟，字数: 1200"）
+ * @returns {string} 预估阅读时间和字数统计（格式：“阅读时间: 3 分钟，字数: 1200”）
  */
 function estimateReadingTime(text, chineseSpeed = 400, englishSpeed = 200) {
   if (!text) return '阅读时间: 0 分钟，字数: 0';
