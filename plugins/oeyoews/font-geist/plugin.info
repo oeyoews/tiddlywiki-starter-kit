@@ -1,0 +1,14 @@
+{
+  "title": "$:/plugins/oeyoews/font-geist",
+  "description": "font-geist",
+  "author": "oeyoews",
+  "version": "0.1.0",
+  "core-version": ">=5.3.1",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "font-geist",
+  "meat#disabled": "yes",
+  "qrcode": "yes",
+  "dependents": [],
+  "list": "readme"
+}

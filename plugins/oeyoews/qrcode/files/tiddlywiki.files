@@ -1,0 +1,13 @@
+{
+	"tiddlers": [
+		{
+			"file": "qrcode.min.js",
+			"fields": {
+				"title": "qrcode.min.js",
+				"module-type": "library",
+				"type": "application/javascript",
+				"hide-body": "yes"
+			}
+		}
+	]
+}

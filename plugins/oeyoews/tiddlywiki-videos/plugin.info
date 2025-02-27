@@ -1,0 +1,15 @@
+{
+  "title": "$:/plugins/oeyoews/tiddlywiki-videos",
+  "description": "Tiddlywiki Videos",
+  "author": "oeyoews",
+  "version": "0.1.0",
+  "core-version": ">=5.3.1",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "Tiddlywiki Videos",
+  "meta#disabled": "yes",
+  "list": "readme",
+  "dependents": [
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
+  ]
+}
