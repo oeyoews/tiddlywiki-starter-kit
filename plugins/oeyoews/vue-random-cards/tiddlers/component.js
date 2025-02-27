@@ -139,7 +139,6 @@ const app = (
           return null;
         }
         const index = Math.floor(Math.random() * tiddlers.length);
-        console.info('pre', index, tiddlers);
         const title = tiddlers.splice(index, 1)[0]; // 直接删除并获取 title
         if (!$tw.wiki.tiddlerExists(title)) {
           return this.randomTiddlerTitle();
