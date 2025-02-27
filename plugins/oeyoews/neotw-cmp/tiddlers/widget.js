@@ -26,7 +26,9 @@ class AutoCompleteWidget extends Widget {
     const { closeCmp, openCmp } = require('./plugins/utils');
 
     const createElement = $tw.utils.domMaker;
-    const domNode = document.createElement('div');
+    const domNode = createElement('div', {
+      class: 'print:hidden',
+    });
 
     // 注册事件
     $tw.rootWidget.addEventListener('open-cmp', () => openCmp(domNode));

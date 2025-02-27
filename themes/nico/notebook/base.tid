@@ -663,3 +663,9 @@ div.tc-tab-buttons button.tc-tab-selected {
   background: transparent !important;
   border: none !important;
 }
+
+@media print {
+	.tc-tiddler-controls {
+		display: none;
+	}
+}

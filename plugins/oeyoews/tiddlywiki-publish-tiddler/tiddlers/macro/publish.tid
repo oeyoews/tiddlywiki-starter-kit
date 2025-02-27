@@ -10,7 +10,7 @@ tags: $:/tags/Macro
 \end
 
 \define opublish()
-<div class="inline neotw-publish-status">
+<div class="inline neotw-publish-status print:hidden">
 <$select class="border-none rounded appearance-none p-0.5 capitalize cursor-pointer" field="publish" tiddler=<<currentTiddler>> tooltip='status' default="status">
   <option disabled class="bg-teal-400" value="status">❓ status</option>
   <option class="bg-lime-400" value="public">🔥 public ({{{ [field:publish[public]count[]] }}})</option>
