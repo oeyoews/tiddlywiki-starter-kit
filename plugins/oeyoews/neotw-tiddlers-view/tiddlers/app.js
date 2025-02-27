@@ -48,7 +48,6 @@ const app = () => {
           return null;
         }
         const index = this.randomPicker.getRandomIndex();
-        console.log(index);
         return this.allTitles[index];
       },
 
