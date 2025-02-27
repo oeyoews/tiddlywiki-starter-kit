@@ -7,6 +7,7 @@ module-type: library
 
 const getTemplate = require('../neotw-vue3/getTemplate.js');
 const pluginTitle = '$:/plugins/oeyoews/neotw-tiddlers-view';
+const RandomPicker = require('./RandomPicker.js');
 
 const app = () => {
   const component = {
@@ -15,11 +16,11 @@ const app = () => {
       return {
         allTitles: [],
         currentTitle: '',
-        currentIndex: 0,
         lastUpdateTime: 0,
+        randomPicker: null,
         animationFrameId: null,
         filter:
-          '[!is[system]sort[title]!is[tag]!prefix[$:/]!is[binary]!is[draft]days[-100]!sort[modified]limit[50]!tag[todo]]',
+          '[!is[system]sort[title]!is[tag]!prefix[$:/]!is[binary]!is[draft]days[-300]!sort[modified]limit[500]!tag[todo]]',
       };
     },
     mounted() {
@@ -36,6 +37,7 @@ const app = () => {
       loadTitles() {
         if ($tw && $tw.wiki) {
           this.allTitles = $tw.wiki.filterTiddlers(this.filter);
+          this.randomPicker = new RandomPicker(this.allTitles.length);
           this.currentTitle = this.updateCurrentTitle();
         } else {
           console.error('TiddlyWiki API not available');
@@ -45,7 +47,8 @@ const app = () => {
         if (this.allTitles.length === 0) {
           return null;
         }
-        const index = this.currentIndex % this.allTitles.length;
+        const index = this.randomPicker.getRandomIndex();
+        console.log(index);
         return this.allTitles[index];
       },
 
@@ -54,11 +57,8 @@ const app = () => {
         const animate = (timestamp) => {
           if (!this.lastUpdateTime) this.lastUpdateTime = timestamp;
 
-          // 每3000毫秒更新一次，但在暂停状态下不更新
-          if (timestamp - this.lastUpdateTime >= 3000) {
+          if (timestamp - this.lastUpdateTime >= 5000) {
             if (this.allTitles.length > 1) {
-              this.currentIndex =
-                (this.currentIndex + 1) % this.allTitles.length;
               this.currentTitle = this.updateCurrentTitle();
             }
             this.lastUpdateTime = timestamp;
