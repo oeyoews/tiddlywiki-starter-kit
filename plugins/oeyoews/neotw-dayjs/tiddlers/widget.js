@@ -8,6 +8,7 @@ neotw-dayjs widget
 \*/
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 
+const loadDayjs = require('./loadDayjs.js');
 class NeotwDayjsWidget extends Widget {
   constructor(parseTreeNode, options) {
     super(parseTreeNode, options);
@@ -24,6 +25,7 @@ class NeotwDayjsWidget extends Widget {
 
     const createElement = $tw.utils.domMaker;
     const timestamp = this.getAttribute('time');
+    loadDayjs(); // 确保加载dayjs
     const dayjs = window.dayjs;
     const date = dayjs(timestamp, 'YYYYMMDDHHmmssSSS');
     const format = 'YYYY-MM-DD HH:mm:ss';

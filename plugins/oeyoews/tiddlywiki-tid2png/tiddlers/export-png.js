@@ -39,7 +39,7 @@ const downloadPng = (href, title) => {
   document.body.removeChild(linkNode);
 
   localStorage.setItem('tid2png', 'no');
-  progress.done();
+  progress?.done();
 };
 
 /**
@@ -75,7 +75,7 @@ module.exports = async function exportPng(title, customSelector) {
     return;
   }
 
-  progress.start();
+  progress?.start();
   const selector = customSelector || `[data-tiddler-title="${title}"]`;
   // @see: https://github.com/niklasvh/html2canvas/issues/1414
   // html2canvas 不支持 cloneNode, 在 widget 中可以直接移除 popup，因为 widget 会重新渲染，popup 会自动恢复？但是这是一个 listener, 不建议直接修改 dom;
