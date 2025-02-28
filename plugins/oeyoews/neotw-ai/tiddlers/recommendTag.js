@@ -48,6 +48,7 @@ async function getRecommendTagHook(title) {
       // tw 返回的是一个不可变对象数组
       let tags = $tw.wiki.getTiddler(title).fields?.tags;
       tags = tags ? [...tags] : [];
+      // 仅仅考虑单个tag
       tags.push(to);
       $tw.wiki.setText(title, 'tags', null, tags);
     }

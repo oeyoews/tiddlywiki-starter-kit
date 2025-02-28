@@ -56,7 +56,7 @@ const app = () => {
         const animate = (timestamp) => {
           if (!this.lastUpdateTime) this.lastUpdateTime = timestamp;
 
-          if (timestamp - this.lastUpdateTime >= 5000) {
+          if (timestamp - this.lastUpdateTime >= 8000) {
             if (this.allTitles.length > 1) {
               this.currentTitle = this.updateCurrentTitle();
             }
