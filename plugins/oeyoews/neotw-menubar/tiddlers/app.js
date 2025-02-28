@@ -298,6 +298,11 @@ const app = () => {
                 $tw.rootWidget.dispatchEvent({ type: 'tm-full-screen' }),
               icon: getIcon('fullscreen'),
             },
+            {
+              label: 'Print',
+              onClick: () => window.print(),
+              icon: getIcon('print'),
+            },
           ],
         },
         //#region Perference

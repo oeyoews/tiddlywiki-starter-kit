@@ -20,7 +20,7 @@ module-type: macro
 
   exports.run = function (_tiddler) {
     const tiddler = this.getVariable('currentTiddler') || _tiddler;
-    const text = $tw.wiki.getTiddler(tiddler).fields.text;
+    const text = $tw.wiki.getTiddler(tiddler)?.fields?.text;
     return estimateReadingTime(text);
   };
 })();

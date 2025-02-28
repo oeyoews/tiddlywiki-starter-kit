@@ -13,3 +13,15 @@
 .mx-context-menu.dark {
   box-shadow: none !important;
 }
+
+@media print {
+  .mx-menu-ghost-host,
+  .mx-context-menu-items,
+  .mx-context-menu mx-menu-host {
+    display: none;
+  }
+}
+
+.mx-menu-bar-item {
+  cursor: pointer;
+}
