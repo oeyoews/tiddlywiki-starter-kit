@@ -34,7 +34,6 @@ module-type: macro
     const tiddlers = $tw.wiki.filterTiddlers(_filter || filter);
     if (!tiddlers) return 0;
     let wordsTotal = 0;
-    console.log(tiddlers);
 
     tiddlers.forEach((tiddler) => {
       if (!$tw.wiki.tiddlerExists(tiddler)) return;
