@@ -3,6 +3,8 @@ tags: $:/tags/ViewTemplate
 list-before: $:/core/ui/ViewTemplate/body
 
 <!-- [all[current]!is[system]publish[public]!ai[no]!tag[Journal]!tag[]] -->
+<% if [all[current]!is[system]has[text]] %>
 <% if [all[current]!is[system]gemini[yes]] [all[current]!is[system]ai[yes]] [all[current]!is[system]publish[article]] [all[current]!is[system]tag[🤔thoughts]] %>
 	<$neotw-ai />
+<% endif %>
 <% endif %>

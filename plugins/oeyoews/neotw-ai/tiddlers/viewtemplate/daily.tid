@@ -2,6 +2,6 @@ title: $:/plugins/oeyoews/neotw-ai/viewtemplate/daily
 tags: $:/tags/ViewTemplate
 list-before: $:/core/ui/ViewTemplate/body
 
-<% if [all[current]!is[system]tag[Journal]] %>
+<% if [all[current]!is[system]tag[Journal]has[text]] %>
   <$neotw-ai targetField="quote" />
 <% endif %>
