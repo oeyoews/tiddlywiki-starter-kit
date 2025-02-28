@@ -27,6 +27,7 @@ const hideElements = [
   '.recommend-tiddler-ai',
   '.data-html2canvas-ignore', // 手动加上， 不起作用
   '.tc-tiddler-title-icon',
+  '.neotw-copy-code',
 ];
 
 const downloadPng = (href, title) => {
