@@ -30,4 +30,5 @@ description: ~TiddlyWiki Tid2png
 
 !! NOTE
 
-https://github.com/niklasvh/html2canvas/issues/308 not support bullets
+* https://github.com/niklasvh/html2canvas/issues/308 not support bullets
+* css codeblock nextline style is uncorrect
