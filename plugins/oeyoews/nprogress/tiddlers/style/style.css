@@ -67,3 +67,11 @@
     transform: rotate(360deg);
   }
 }
+
+@media print {
+  #nprogress .bar,
+  #nprogress .spinner,
+  #progress {
+    display: none !important;
+  }
+}

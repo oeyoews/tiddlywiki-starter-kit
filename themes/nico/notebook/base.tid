@@ -668,4 +668,7 @@ div.tc-tab-buttons button.tc-tab-selected {
 	.tc-tiddler-controls {
 		display: none;
 	}
+  .tc-tiddler-frame {
+    margin-bottom: 40px !important;
+  }
 }
