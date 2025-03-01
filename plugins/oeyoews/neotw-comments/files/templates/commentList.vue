@@ -1,6 +1,6 @@
 <div class="comments-container">
 	<div class="new-comment" v-if="!isHttps">
-		<textarea @keyup.enter="handleAddComment" v-model="newComment" placeholder="写下你的评论..."
+		<textarea @keyup.ctrl.enter="handleAddComment" v-model="newComment" placeholder="写下你的评论..."
 			class="w-full p-2 border rounded"></textarea>
 		<div class="flex justify-end">
 			<button @click="handleAddComment" class="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
@@ -9,7 +9,7 @@
 		</div>
 	</div>
 
-	<div class="comments-list mt-4">
+	<div class="comments-list mt-4" v-if="comments?.length>0">
 		<div v-for="comment in comments" :key="comment.created" class="comment-item border-b py-4">
 			<div class="flex justify-between items-start">
 				<div class="comment-content">
