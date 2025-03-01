@@ -23,6 +23,7 @@ class NeotwCommentsWidget extends Widget {
     if (ssr) return;
 
     const vuelib = '$:/plugins/oeyoews/neotw-vue3/vue.global.prod.js';
+    const tiddlerTitle = this.getVariable('currentTiddler');
 
     if (!window.Vue) {
       window.Vue = require(vuelib);
@@ -34,7 +35,11 @@ class NeotwCommentsWidget extends Widget {
 
     try {
       /** @type {{ use: Function, component: (string, Object) }} */
-      const app = createApp(component());
+      const app = createApp(
+        component({
+          tiddler: tiddlerTitle,
+        }),
+      );
 
       app.config.errorHandler = (err) => {
         const text = `[Vue3](${app.version}): ` + err.message;
@@ -60,4 +65,4 @@ class NeotwCommentsWidget extends Widget {
 }
 
 /** @description neotw-comments widget */
-exports['widget-o1b0xgq7'] = NeotwCommentsWidget;
+exports['neotw-comments'] = NeotwCommentsWidget;

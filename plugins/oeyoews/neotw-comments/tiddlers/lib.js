@@ -94,9 +94,23 @@ const editComment = (parentTiddler, timestamp, newText) => {
   }
 };
 
+const getTime = (timestamp) =>
+  new Date(
+    timestamp
+      .slice(0, 14)
+      .replace(
+        /(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})(\d{2})/,
+        '$1-$2-$3T$4:$5:$6Z',
+      ),
+  )
+    .toISOString()
+    .replace(RegExp(/[TZ]/g), ' ')
+    .trim();
+
 module.exports = {
   addComment,
   getComments,
   deleteComment,
   editComment,
+  getTime,
 };

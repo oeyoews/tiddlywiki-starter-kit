@@ -10,23 +10,22 @@ module-type: library
 // 等价于 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 const getTemplate = require('../neotw-vue3/getTemplate.js');
 const pluginTitle = '$:/plugins/oeyoews/neotw-comments';
+const CommentList = require('./components/CommentList.js');
 
-const Version = require('./components/Version.js');
-
-const app = () => {
+const app = ({ tiddler }) => {
   const component = {
     components: {
-      Version, // 示例组件， 可删除
+      CommentList,
     },
     template: getTemplate(`${pluginTitle}/templates/app.vue`),
-    // setup() {},
-    data() {},
-    // created() {},
-    mounted() {
-      console.log('App mounted!');
+
+    setup() {
+      return {
+        currentTiddler: tiddler,
+      };
     },
 
-    methods: {},
+    mounted() {},
   };
   return component;
 };
