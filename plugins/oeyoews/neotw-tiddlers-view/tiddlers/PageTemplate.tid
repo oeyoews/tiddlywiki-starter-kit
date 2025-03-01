@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/neotw-tiddlers-view/viewTemplate
+tags: $:/tags/PageTemplate
+
+<div class="fixed bottom-2 left-2 print:hidden">
+<$neotw-tiddlers-view />
+</div>

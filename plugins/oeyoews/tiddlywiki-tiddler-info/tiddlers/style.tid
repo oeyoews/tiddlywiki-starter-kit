@@ -1,0 +1,9 @@
+title: $:/plugins/oeyoews/tiddlywiki-tiddler-info/styles.css
+tags: $:/tags/Stylesheet
+
+.om-subtitle {
+	width: 1em;
+	height: 1em;
+    margin: 0 .05em 0 .1em;
+    vertical-align: -0.15em;
+}

@@ -1,0 +1,58 @@
+tags: $:/tags/StartupAction/PostRender
+title: $:/plugins/oeyoews/neotw/modules/landing/layout-url
+
+<!-- tags: $:/tags/StartupAction -->
+
+<!-- file -->
+<!-- <$list filter="[{$:/info/url/protocol}match[file:]]">
+  <$action-sendmessage $message="tm-modal" $param="FileWarning"/>
+</$list> -->
+
+<$let layout={{{ [{$:/info/url/search}match[?layout=neotw]] }}} >
+
+<!-- announcement -->
+<$list filter="[<layout>match[?announcement=yes]]">
+  <$action-sendmessage $message="tm-modal" $param="announcement"/>
+</$list>
+
+<!-- index tiddler -->
+<!-- <$list filter="[[index]]"> -->
+<!--   <$action-sendmessage $message="tm-modal" $param="announcement"/> -->
+<!-- </$list> -->
+
+<!-- for neotw layout -->
+
+<$list filter="[<layout>match[?layout=neotw]]">
+  <$action-setfield $tiddler="$:/layout" text="$:/plugins/oeyoews/neotw/Layout"/>
+</$list>
+
+<$list filter="[<layout>match[?layout=tailwindcss]]">
+  <$action-setfield $tiddler="$:/layout" text="$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus/Layout"/>
+</$list>
+
+<!-- for landing layout -->
+<$list filter="[<layout>match[?layout=lockscreen]]">
+  <$action-setfield $tiddler="$:/layout" text="$:/plugins/oeyoews/neotw/modules/landing/layout"/>
+</$list>
+
+<!-- <$list filter="[{$:/info/url/protocol}match[https:]]"> -->
+<!--   <$action-setfield $tiddler="$:/layout" text="$:/plugins/oeyoews/neotw/modules/landing/layout"/> -->
+<!-- </$list> -->
+
+<$list filter="[<layout>match[?layout=0]]">
+  <$action-setfield $tiddler="$:/layout" text="$:/plugins/oeyoews/neotw/modules/landing/layout"/>
+</$list>
+
+<$list filter="[<layout>prefix[?filter=temp]]">
+  <$action-setfield $tiddler="$:/DefaultTiddlers" text="[field:temp[yes]!sort[modified]]"/>
+</$list>
+
+<$list filter="[<layout>prefix[?filter=oeyoews]]">
+  <$action-setfield $tiddler="$:/DefaultTiddlers" text="[[oeyoews]]"/>
+</$list>
+
+<$list filter="[<layout>prefix[?filter=articles]]">
+  <$action-setfield $tiddler="$:/DefaultTiddlers" text="[field:publish[article]!sort[modified]]"/>
+</$list>
+
+</$let>

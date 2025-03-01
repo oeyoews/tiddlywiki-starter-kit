@@ -1,0 +1,51 @@
+title: $:/plugins/oeyoews/neotw/style/tag-customize
+tags: $:/tags/Stylesheet
+
+\define tag-ui(tags:'Vue', color:'lime')
+[data-tag-title="$tags$"] .tc-tag-label,
+.tc-tag-label[data-tag-title="$tags$"] {
+  background-color: <<colour $color$>> !important;
+  border-color: <<colour $color$-dark>> !important;
+  color: <<colour $color$-dark>> !important;
+}
+\end
+
+\define tag-ui-tiddler() $:/plugins/oeyoews/neotw/data/tags-ui-dict
+
+<!-- bg-teal-500/20 border-teal-400/80  按照这个比例来 -->
+.tc-tag-label {
+  border: 1.5px solid transparent;
+  border-radius: 5px;
+}
+
+[data-tag-title^="$:/tags/"] .tc-tag-label,
+.tc-tag-label[data-tag-title^="$:/tags/"] {
+  background-color: <<colour rose>> !important;
+  border-color: <<colour rose-dark>> !important;
+  color: <<colour rose-dark>> !important;
+}
+
+<!-- [
+  {
+	"name": "github",
+	"value": "red"
+  }
+] -->
+<!-- json usage -->
+<!-- <$set name="JSONdata" value={{tags-ui2}} >
+<$list filter="[<JSONdata>jsonindexes[]]" >
+<$let tag={{{ [<JSONdata>jsonget<currentTiddler>,[name]]}}} color={{{ [<JSONdata>jsonget<currentTiddler>,[color]]}}} >
+	<$transclude $variable="tag-ui" tags=<<tag>> color=<<color>>/>
+</$let>
+</$list>
+</$set> -->
+
+<!-- dict usage -->
+<!-- tag: color -->
+<$list filter="[<tag-ui-tiddler>indexes[]]">
+<$let color={{{ [<tag-ui-tiddler>getindex<currentTiddler>]}}} >
+	<$transclude $variable="tag-ui" tags=<<currentTiddler>> color=<<color>> />
+</$let>
+</$list>
+
+<!-- https://github.com/TiddlyWiki/TiddlyWiki5/blob/213a850715cd0ec71fd340a595a156e4a53245b6/plugins/tiddlywiki/consent-banner/config/DefaultColourMappings.multids#L1-L15 -->

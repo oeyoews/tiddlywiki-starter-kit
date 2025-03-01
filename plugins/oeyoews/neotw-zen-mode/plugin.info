@@ -1,0 +1,14 @@
+{
+  "title": "$:/plugins/oeyoews/neotw-zen-mode",
+  "description": "zen-mode",
+  "author": "oeyoews",
+  "version": "0.0.2",
+  "core-version": ">=5.3.0",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "neotw-zen-mode",
+  "dependents": [
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
+  ],
+  "list": "readme"
+}

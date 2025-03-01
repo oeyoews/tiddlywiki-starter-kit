@@ -1,0 +1,18 @@
+title: $:/plugins/oeyoews/tiddlywiki-publish-tiddler/macro/addtags
+tags: $:/tags/Macro
+
+\define AddTags()
+<$select class="border-none rounded appearance-none p-0.5 capitalize bg-none cursor-pointer" tiddler=<<currentTiddler>> field='tags' tooltip='status' default="status">
+<option value="status" disabled>tags</option>
+<optgroup label="Personal">
+	<option>React</option>
+	<option>Vue</option>
+	<option>NodeJs</option>
+	<option>JavaScript</option>
+</optgroup>
+<optgroup label="System">
+	<option>$:/tags/RawMarkup</option>
+	<option>$:/tags/Stylesheet</option>
+</optgroup>
+</$select>
+\end
