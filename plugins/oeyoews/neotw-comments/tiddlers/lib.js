@@ -32,13 +32,20 @@ const getComments = (parentTiddler) => {
  */
 const updateComments = (parentTiddler, comments) => {
   const commentTiddlerTitle = getCommentTiddlerTitle(parentTiddler);
-  $tw.wiki.addTiddler(
-    new $tw.Tiddler({
-      title: commentTiddlerTitle,
-      type: 'application/json',
-      comments: JSON.stringify(comments, null, 0),
-    }),
-  );
+
+  if (comments.length === 0) {
+    // 如果评论为空，则删除该 Tiddler
+    $tw.wiki.deleteTiddler(commentTiddlerTitle);
+  } else {
+    // 否则更新 Tiddler
+    $tw.wiki.addTiddler(
+      new $tw.Tiddler({
+        title: commentTiddlerTitle,
+        type: 'application/json',
+        comments: JSON.stringify(comments, null, 0),
+      }),
+    );
+  }
 };
 
 /**
