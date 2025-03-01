@@ -2,34 +2,36 @@
 title: $:/plugins/oeyoews/neotw-comments/lib.js
 type: application/javascript
 module-type: library
-
 \*/
 
 /**
- * Add a comment to a tiddler.
- * @param {string} parentTiddler - the title of the tiddler to add a comment to.
- * @param {string} author - the name of the person adding the comment.
- * @param {string} text - the text of the comment.
+ * 获取指定 Tiddler 的评论 Tiddler 标题
+ * @param {string} parentTiddler - 文章 Tiddler 的标题
+ * @returns {string} 评论 Tiddler 的标题
  */
-function addComment(parentTiddler, author, text) {
-  var now = new Date();
-  var timestamp = now.toISOString().replace(/[-T:.Z]/g, ''); // 生成唯一时间戳
-  var commentTiddlerTitle = '$:/comments-' + parentTiddler;
+const getCommentTiddlerTitle = (parentTiddler) =>
+  `$:/comments-${parentTiddler}`;
 
-  // 获取现有的评论 Tiddler
-  var commentTiddler = $tw.wiki.getTiddler(commentTiddlerTitle);
-  var comments = commentTiddler
+/**
+ * 获取评论数据
+ * @param {string} parentTiddler - 文章 Tiddler 的标题
+ * @returns {Array} 该 Tiddler 的评论列表
+ */
+const getComments = (parentTiddler) => {
+  const commentTiddlerTitle = getCommentTiddlerTitle(parentTiddler);
+  const commentTiddler = $tw.wiki.getTiddler(commentTiddlerTitle);
+  return commentTiddler
     ? JSON.parse(commentTiddler.fields.comments || '[]')
     : [];
+};
 
-  // 添加新评论
-  comments.push({
-    author: author,
-    text: text,
-    created: timestamp,
-  });
-
-  // 保存回 TiddlyWiki
+/**
+ * 更新评论数据
+ * @param {string} parentTiddler - 文章 Tiddler 的标题
+ * @param {Array} comments - 更新后的评论列表
+ */
+const updateComments = (parentTiddler, comments) => {
+  const commentTiddlerTitle = getCommentTiddlerTitle(parentTiddler);
   $tw.wiki.addTiddler(
     new $tw.Tiddler({
       title: commentTiddlerTitle,
@@ -37,70 +39,60 @@ function addComment(parentTiddler, author, text) {
       comments: JSON.stringify(comments, null, 0),
     }),
   );
-}
+};
 
 /**
- * Get the comments for a given parent tiddler.
- * @param {string} parentTiddler - the title of the tiddler to get comments for.
- * @returns {Array} a list of comments for the parent tiddler, each comment is an object with the following properties:
- * - author: {string} the author of the comment
- * - text: {string} the text of the comment
- * - created: {string} the ISO8601 timestamp of when the comment was created
+ * 添加评论
+ * @param {string} parentTiddler - 文章 Tiddler 的标题
+ * @param {string} author - 评论者
+ * @param {string} text - 评论内容
  */
-function getComments(parentTiddler) {
-  var commentTiddlerTitle = '$:/comments-' + parentTiddler;
-  var commentTiddler = $tw.wiki.getTiddler(commentTiddlerTitle);
-  return commentTiddler
-    ? JSON.parse(commentTiddler.fields.comments || '[]')
-    : [];
-}
+const addComment = (parentTiddler, author, text) => {
+  const timestamp = new Date().toISOString().replace(/[-T:.Z]/g, ''); // 生成唯一时间戳
+  const comments = getComments(parentTiddler);
+
+  comments.push({ author, text, created: timestamp });
+  updateComments(parentTiddler, comments);
+};
 
 /**
- * Delete a comment for a given parent tiddler.
- * @param {string} parentTiddler - the title of the tiddler to delete a comment from.
- * @param {string} timestamp - the ISO8601 timestamp of the comment to delete.
- * @returns {undefined}
+ * 删除评论
+ * @param {string} parentTiddler - 文章 Tiddler 的标题
+ * @param {string} timestamp - 需要删除的评论的时间戳
  */
-function deleteComment(parentTiddler, timestamp) {
-  var commentTiddlerTitle = '$:/comments-' + parentTiddler;
-  var commentTiddler = $tw.wiki.getTiddler(commentTiddlerTitle);
-  if (!commentTiddler) return;
-
-  var comments = JSON.parse(commentTiddler.fields.comments || '[]');
-  comments = comments.filter((comment) => comment.created !== timestamp); // 过滤掉要删除的评论
-
-  // 更新 Tiddler
-  $tw.wiki.addTiddler(
-    new $tw.Tiddler(commentTiddler, {
-      comments: JSON.stringify(comments, null, 0),
-    }),
+const deleteComment = (parentTiddler, timestamp) => {
+  const comments = getComments(parentTiddler);
+  const filteredComments = comments.filter(
+    (comment) => comment.created !== timestamp,
   );
-}
+
+  if (filteredComments.length !== comments.length) {
+    updateComments(parentTiddler, filteredComments);
+  }
+};
 
 /**
- * Edit a comment for a given parent tiddler.
- * @param {string} parentTiddler - the title of the tiddler to edit a comment for.
- * @param {string} timestamp - the ISO8601 timestamp of the comment to edit.
- * @param {string} newText - the new text of the comment.
- * @returns {undefined}
+ * 编辑评论
+ * @param {string} parentTiddler - 文章 Tiddler 的标题
+ * @param {string} timestamp - 需要编辑的评论的时间戳
+ * @param {string} newText - 新的评论内容
  */
-function editComment(parentTiddler, timestamp, newText) {
-  var commentTiddlerTitle = '$:/comments-' + parentTiddler;
-  var commentTiddler = $tw.wiki.getTiddler(commentTiddlerTitle);
-  if (!commentTiddler) return;
+const editComment = (parentTiddler, timestamp, newText) => {
+  let comments = getComments(parentTiddler);
+  let updated = false;
 
-  var comments = JSON.parse(commentTiddler.fields.comments || '[]');
-  comments = comments.map((comment) =>
-    comment.created === timestamp ? { ...comment, text: newText } : comment,
-  );
+  comments = comments.map((comment) => {
+    if (comment.created === timestamp) {
+      updated = true;
+      return { ...comment, text: newText };
+    }
+    return comment;
+  });
 
-  // 更新 Tiddler
-  $tw.wiki.addTiddler(
-    new $tw.Tiddler(commentTiddler, {
-      comments: JSON.stringify(comments, null, 0),
-    }),
-  );
-}
+  if (updated) {
+    updateComments(parentTiddler, comments);
+  }
+};
 
 module.exports = {
   addComment,
