@@ -2,9 +2,11 @@
 	<div class="new-comment">
 		<textarea @keyup.enter="handleAddComment" v-model="newComment" placeholder="写下你的评论..."
 			class="w-full p-2 border rounded"></textarea>
-		<button @click="handleAddComment" class="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
-			发表评论
-		</button>
+		<div class="flex justify-end">
+			<button @click="handleAddComment" class="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+				发表评论
+			</button>
+		</div>
 	</div>
 
 	<div class="comments-list mt-4">
