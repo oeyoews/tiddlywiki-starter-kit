@@ -4,3 +4,5 @@ description: neotw-reading-time
 [[在线文档|https://neotw.vercel.app/docs/plugins/neotw-reading-time]]
 
 当前wiki总字数(英文按照单词统计): <<reading-time-full>>
+
+{{ $:/state/reading-time-full }}

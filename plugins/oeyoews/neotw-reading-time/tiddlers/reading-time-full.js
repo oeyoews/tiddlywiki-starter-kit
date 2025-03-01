@@ -10,18 +10,12 @@ module-type: macro
   'use strict';
 
   function getTextTotal(text) {
-    // 统计中文字符数量（汉字、标点等）
     const chineseChars = (text.match(/[\u4e00-\u9fa5]/g) || []).length;
-
-    // 统计英文单词数量（按空格分隔）
     const englishWords = (text.match(/[a-zA-Z]+/g) || []).length;
-
-    // 计算总字数
-    const totalWords = chineseChars + englishWords;
-    return totalWords || 0;
+    return chineseChars + englishWords || 0;
   }
 
-  exports.name = 'reading-time-full'; // book image header
+  exports.name = 'reading-time-full';
 
   exports.params = [
     {
@@ -30,18 +24,46 @@ module-type: macro
   ];
 
   exports.run = function (_filter) {
-    const filter = '[!is[system]!is[binary]!type[application/json]]';
+    const filter =
+      '[!is[system]!is[binary]!type[application/json]!publish[private]]';
     const tiddlers = $tw.wiki.filterTiddlers(_filter || filter);
-    if (!tiddlers) return 0;
-    let wordsTotal = 0;
+    if (!tiddlers || tiddlers.length === 0) return '0';
 
+    let topTiddlers = []; // 存储前 10 个最大值（有序）
+
+    let wordsTotal = 0;
     tiddlers.forEach((tiddler) => {
       if (!$tw.wiki.tiddlerExists(tiddler)) return;
       const text = $tw.wiki.getTiddler(tiddler).fields?.text;
-      if (text) {
-        wordsTotal += getTextTotal(text);
+      if (!text) return;
+
+      const wordCount = getTextTotal(text);
+      wordsTotal += wordCount;
+      const entry = { title: tiddler, wordCount };
+
+      if (topTiddlers.length < 20) {
+        // 直接插入，并保持有序（降序）
+        topTiddlers.push(entry);
+        topTiddlers.sort((a, b) => b.wordCount - a.wordCount);
+      } else if (wordCount > topTiddlers[19].wordCount) {
+        // 只替换最小值，并保持排序
+        topTiddlers[19] = entry;
+        topTiddlers.sort((a, b) => b.wordCount - a.wordCount);
       }
     });
+
+    const res = topTiddlers
+      .map(
+        (t, index) =>
+          `${index + 1}. [[${t.title}]](${t.wordCount.toLocaleString()}) 字`,
+      )
+      .join('\n\n');
+    if (!_filter) {
+      $tw.wiki.addTiddler({
+        title: '$:/state/reading-time-full',
+        text: res,
+      });
+    }
     return wordsTotal.toLocaleString();
   };
 })();

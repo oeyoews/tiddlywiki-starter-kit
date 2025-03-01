@@ -24,7 +24,6 @@ wiki.addTiddler({
   title: 'new tiddler',
   text: 'random text',
 });
-// or new $tw.Tiddler({title: 'new tiddler', text: 'random text'})
 // 删除某个 tiddler
 wiki.deleteTiddler(title);
 
