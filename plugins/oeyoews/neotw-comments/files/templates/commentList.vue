@@ -1,5 +1,5 @@
 <div class="comments-container">
-	<div class="new-comment">
+	<div class="new-comment" v-if="!isHttps">
 		<textarea @keyup.enter="handleAddComment" v-model="newComment" placeholder="写下你的评论..."
 			class="w-full p-2 border rounded"></textarea>
 		<div class="flex justify-end">

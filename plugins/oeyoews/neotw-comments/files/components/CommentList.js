@@ -68,6 +68,7 @@ module.exports = {
       handleDeleteComment,
       startEditing,
       handleEditComment,
+      isHttps: window.location.protocol === 'https:',
     };
   },
 

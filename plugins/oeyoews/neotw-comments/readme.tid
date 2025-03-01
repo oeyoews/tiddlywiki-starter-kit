@@ -3,5 +3,4 @@ description: neotw-comments
 
 [[在线文档|https://neotw.vercel.app/docs/plugins/neotw-comments]]
 
-* TODO: 线上仅仅展示已有的评论
 * 不考虑重命名的问题：如果不使用 title, 而是使用其他的字段，在写入的时候还要重新根据字段去查找 title.
