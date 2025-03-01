@@ -55,7 +55,7 @@ module-type: macro
     const res = topTiddlers
       .map(
         (t, index) =>
-          `${index + 1}. [[${t.title}]](${t.wordCount.toLocaleString()}) 字`,
+          `${index + 1}. [[${t.title}]](${t.wordCount.toLocaleString()}字)`,
       )
       .join('\n\n');
     if (!_filter) {

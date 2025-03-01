@@ -1,3 +1,1 @@
-<template>
-  <TiddlyWikiVue msg="Hello, Vue3 !" />
-</template>
+<HelloWorld version="5.3.1" />

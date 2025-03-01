@@ -41,4 +41,4 @@ class MarkdownImporterWidget extends Widget {
 }
 
 /** @description markdown-importer widget */
-exports['widget-bi56t4zz'] = MarkdownImporterWidget;
+exports['markdown-importer'] = MarkdownImporterWidget;

@@ -1,4 +1,0 @@
-title: $:/plugins/oeyoews/{{ pluginname }}/readme
-description: {{ pluginname }}
-
-[[在线文档|https://neotw.vercel.app/docs/plugins/{{ pluginname }}]]

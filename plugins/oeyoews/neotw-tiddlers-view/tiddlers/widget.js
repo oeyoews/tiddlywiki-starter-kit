@@ -60,4 +60,4 @@ class NeotwTiddlersViewWidget extends Widget {
 }
 
 /** @description neotw-tiddlers-view widget */
-exports['widget-43kerdga'] = NeotwTiddlersViewWidget;
+exports['neotw-tiddlers-view'] = NeotwTiddlersViewWidget;

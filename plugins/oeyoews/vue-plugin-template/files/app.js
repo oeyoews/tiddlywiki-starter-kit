@@ -1,5 +1,5 @@
 /*\
-title: $:/plugins/{{ plugin_author }}/{{ pluginname }}/app.js
+title: $:/plugins/oeyoews/vue-plugin-template/app.js
 type: application/javascript
 module-type: library
 
@@ -9,19 +9,17 @@ module-type: library
 
 // 等价于 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 const getTemplate = require('../neotw-vue3/getTemplate.js');
-const pluginTitle = '$:/plugins/{{ plugin_author }}/{{ pluginname }}';
+const pluginTitle = '$:/plugins/oeyoews/vue-plugin-template';
 
-const Version = require('./components/Version.js');
+const HelloWorld = require('./components/HelloWorld.js');
 
 const app = () => {
   const component = {
     components: {
-      Version, // 示例组件， 可删除
+      HelloWorld,
     },
     template: getTemplate(`${pluginTitle}/templates/app.vue`),
-    // setup() {},
     data() {},
-    // created() {},
     mounted() {
       console.log('App mounted!');
     },

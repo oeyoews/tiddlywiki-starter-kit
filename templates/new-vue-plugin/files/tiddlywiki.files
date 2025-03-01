@@ -1,4 +1,17 @@
 {
+	"tiddlers": [
+		{
+			"file": "app.js",
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/{{ plugin_author }}/{{ pluginname }}/"
+				},
+				"module-type": "library",
+				"hide-body": "yes"
+			}
+		}
+	],
 	"directories": [
 		{
 			"path": "templates",
@@ -10,6 +23,19 @@
 					"prefix": "$:/plugins/{{ plugin_author }}/{{ pluginname }}/templates/"
 				},
 				"hide-body": "yes"
+			}
+		},
+		{
+			"path": "components",
+			"filesRegExp": "^.*\\.js$",
+			"searchSubdirectories": true,
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/{{ plugin_author }}/{{ pluginname }}/components/"
+				},
+				"module-type": "library",
+				"type": "application/javascript"
 			}
 		}
 	]

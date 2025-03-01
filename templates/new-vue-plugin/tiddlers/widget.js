@@ -60,4 +60,4 @@ class WidgetName extends Widget {
 }
 
 /** @description {{ pluginname }} widget */
-exports['{{ widget_name }}'] = WidgetName;
+exports['vue-{{ widget_name }}'] = WidgetName;
