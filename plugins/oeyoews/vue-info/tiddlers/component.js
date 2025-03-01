@@ -18,7 +18,7 @@ const plugins = getString('[plugin-type[plugin]]').length;
 const tags = getString('[tags[]]').length;
 const version = $tw.version.replace(/-/g, ' ');
 const startup =
-  $tw.wiki.getTiddler('_state-neotw-startup-times').fields?.times || 0;
+  $tw.wiki.getTiddler('_state-neotw-startup-times')?.fields?.times || 0;
 
 const iinfo = `<svg
         xmlns="http://www.w3.org/2000/svg"
