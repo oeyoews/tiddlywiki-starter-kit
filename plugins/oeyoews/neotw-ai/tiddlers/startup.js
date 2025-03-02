@@ -14,6 +14,7 @@ const renameTiddlerTitle = require('./rename-hook');
 const recommendTagHook = require('./recommendTag');
 
 exports.startup = function () {
+  console.log('test drop_console');
   $tw.rootWidget.addEventListener('th-renaming-tiddler-ai', (event) => {
     renameTiddlerTitle(event.tiddlerTitle);
   });
