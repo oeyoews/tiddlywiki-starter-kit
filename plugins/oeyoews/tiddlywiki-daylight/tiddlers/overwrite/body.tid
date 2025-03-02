@@ -1,0 +1,34 @@
+title: $:/core/ui/ViewTemplate/body
+tags: $:/tags/ViewTemplate
+
+\import [all[shadows+tiddlers]tag[$:/tags/Macro/View/Body]!has[draft.of]]
+
+<$list filter="[all[current]is[system]]">
+<$reveal tag="div" class="tc-tiddler-body" type="nomatch" stateTitle=<<folded-state>> text="hide" retain="yes" animate="yes">
+
+<$transclude tiddler={{{ [<currentTiddler>] :cascade[all[shadows+tiddlers]tag[$:/tags/ViewTemplateBodyFilter]!is[draft]get[text]] :and[!is[blank]else[$:/core/ui/ViewTemplate/body/default]] }}} />
+
+</$reveal>
+</$list>
+
+<!-- prose-li:marker:text-indigo-500  -->
+<!-- prose-img:rounded-md  important 导致 border-radius 无法覆盖-->
+<$list filter="[all[current]!is[system]!publish[no]]">
+<$reveal tag="div" class={{{ [{$:/core/ui/EditTemplate/body/typography}] }}} type="nomatch" stateTitle=<<folded-state>> text="hide" retain="yes" animate="yes">
+
+<$transclude tiddler={{{ [<currentTiddler>] :cascade[all[shadows+tiddlers]tag[$:/tags/ViewTemplateBodyFilter]!is[draft]get[text]] :and[!is[blank]else[$:/core/ui/ViewTemplate/body/default]] }}} />
+
+</$reveal>
+</$list>
+
+
+<!-- 使用 caacade 好麻烦，先在这里写 -->
+<$list filter="[all[current]!is[system]publish[no]]">
+<$reveal tag="div" class={{{ [{$:/core/ui/EditTemplate/body/typography}] }}} type="nomatch" stateTitle=<<folded-state>> text="hide" retain="yes" animate="yes">
+
+<div class="flex justify-center items-center bg-neutral-200 h-48 w-full">
+正在努力编写中
+</div>
+
+</$reveal>
+</$list>

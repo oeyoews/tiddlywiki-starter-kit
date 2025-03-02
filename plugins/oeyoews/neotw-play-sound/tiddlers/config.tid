@@ -1,0 +1,14 @@
+title: $:/config/eyoews/neotw-play-sound/config
+th-navigating: yes
+th-deleting-tiddler: yes
+th-new-tiddler: no
+th-editing-tiddler: no
+th-closing-tiddler: yes
+th-opening-default-tiddlers-list: no
+volume: 0.8
+disable: no
+
+<!-- th-notify: yes -->
+<!-- th-fullscreen: yes -->
+<!-- th-copy-to-clipboard: yes -->
+<!-- th-saving-tiddler: no -->

@@ -1,0 +1,11 @@
+title: $:/plugins/oeyoews/vue-rss/styles
+tags: $:/tags/Stylesheet
+
+.rss-enter-active {
+  transition: opacity 0.5s ease;
+}
+
+.rss-enter-from,
+.rss-leave-to {
+  opacity: 0;
+}

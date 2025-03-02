@@ -1,0 +1,34 @@
+title: $:/plugins/oeyoews/tiddlywiki-motion/README
+
+<div class="prose max-w-none">
+
+Vim-like keyboard shortcuts for TiddlyWiki. modified `based benwebber/motion`
+
+<hr>
+
+!! Usage
+
+Press <kbd>{{$:/plugins/oeyoews/tiddlywiki-motion/config/Shortcuts/ShowHelp/Key}}</kbd> to show keyboard shortcuts.
+
+!! NOTE
+
+* if your computer installed some vim extensions, such as surfing-keys or vimium, this plugin maybe not work
+
+!! TODO
+
+* suport create default markdown tiddler
+* ss sr so
+* 支持像素滚动
+
+```
+ // map multiple combinations to the same callback
+    Mousetrap.bind(['command+k', 'ctrl+k'], function() {
+        console.log('command k or control k');
+
+        // return false to prevent default browser behavior
+        // and stop event from bubbling
+        return false;
+    });
+```
+
+</div>

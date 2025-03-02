@@ -1,0 +1,61 @@
+title: $:/plugins/oeyoews/neotw/modules/landing/layout
+description: neotw landing page
+name: 💻 ~LockScreen
+
+<!-- tags: $:/tags/Layout -->
+
+<!-- TODO: use js to overwrite this page -->
+<!-- NOTE: if startupaction, this tailwindcss and some css are not working -->
+<div class="h-screen flex items-center justify-center bg-cover bg-no-repeat bg-gradient-to-r from-teal-100 to-lime-200">
+<div class="h-screen flex items-center justify-center">
+<div class="p-6 bg-white rounded-md shadow-lg max-w-sm w-full">
+  <$avatar center="yes" width="128"/>
+<h1 class="text-3xl font-bold text-gray-800 mb-6 my-2 text-center">{{$:/status/UserName}}
+				</h1>
+
+        <form action="#" method="">
+
+            <div class="mb-4">
+               <label class="block text-gray-700 font-bold mb-2" for="password">Password</label>
+               <$edit-text tiddler="$:/temp/login/password" field="password" class="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="password" placeholder="Enter Your Password" focus=yes/>
+               <div class="my-2 mr-2">
+<span class="animate-bounce inline-block mr-2">
+🔐
+</span>
+<span class="text-slate-400">Tips: password is <span class="hover:font-bold transition duration-200 cursor-pointer select-all"> oeyoews</span> </span>
+</div>
+            </div>
+
+        </form>
+
+        <div class="flex items-center justify-end">
+        <$list filter="[[$:/temp/login/password]has[password]count[]match[0]]">
+        <$button set="$:/layout" setTo="$:/plugins/oeyoews/neotw/modules/landing/layout" class="cursor-not-allowed bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-200" type="submit" disabled=yes tooltip="Please enter your password">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="-ml-1 mr-3 h-5 w-5">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
+</svg>
+        Login</$button>
+        </$list>
+
+        <$list filter="[[$:/temp/login/password]get[password]!match[oeyoews]]">
+        <$button set="$:/layout" setTo="$:/plugins/oeyoews/neotw/modules/landing/layout" class="cursor-not-allowed bg-red-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-200" type="submit" disabled=yes tooltip="Reset">
+        <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+      </svg>
+        Reset</$button>
+        </$list>
+
+<!-- support localstorage -->
+        <$list filter="[[$:/temp/login/password]get[password]match[oeyoews]]">
+          <$button set="$:/layout" setTo="$:/core/ui/PageTemplate" class="bg-lime-300 hover:bg-lime-400 text-slate-900 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-200" type="submit" tooltip="Click to login">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="-ml-1 mr-3 h-5 w-5 text-green-400">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+</svg>
+          Login</$button>
+        </$list>
+        </div>
+
+    </div>
+</div>
+</div>

@@ -1,0 +1,4 @@
+tags: $:/themes/nico/notebook/tags/Sidebar $:/tags/SideBarSegment
+title: $:/themes/nico/notebook/ui/Sidebar/resizer
+
+<$nbresizer />
