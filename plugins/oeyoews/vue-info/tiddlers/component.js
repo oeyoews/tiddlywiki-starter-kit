@@ -89,18 +89,50 @@ const app = () => {
         )[0],
       );
       return {
-        iversion,
-        iinfo,
-        itag,
-        iplugin,
-        itiddler,
-        ihg,
-        update,
-        plugins,
-        tags,
-        tiddlers,
-        version,
-        startup,
+        textItems: {
+          version: {
+            text: 'Version',
+            color: 'purple',
+            number: version,
+            icon: iversion,
+            title: 'version',
+          },
+          update: {
+            text: 'Update',
+            color: 'red',
+            number: update,
+            icon: iinfo,
+            title: 'update',
+          },
+          plugins: {
+            text: 'Plugins',
+            color: 'green',
+            number: plugins,
+            icon: iplugin,
+            title: 'plugin',
+          },
+          tags: {
+            text: 'Tags',
+            color: 'yellow',
+            number: tags,
+            icon: itag,
+            title: 'tag',
+          },
+          tiddlers: {
+            text: 'Tiddlers',
+            color: 'blue',
+            number: tiddlers,
+            icon: itiddler,
+            title: 'tiddler',
+          },
+          startup: {
+            text: 'Startup',
+            color: 'blue',
+            number: startup,
+            icon: ihg,
+            title: 'tiddler',
+          },
+        },
       };
     },
 

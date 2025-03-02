@@ -1,14 +1,8 @@
 <template>
-  <div class="flex items-center space-x-4 flex-wrap gap-2 justify-center text-sm mb-4 scale-75" @click="gotoTiddler">
-    <Text text="Version" color="purple" :number="version" :icon="iversion" data-title="version" />
+  <div class="hidden md:flex items-center space-x-4 flex-wrap gap-2 justify-center text-sm mb-4 scale-75"
+    @click="gotoTiddler">
+    <Text v-for="(item, key) in textItems" :key="key" :text="item.text" :color="item.color" :number="item.number"
+      :icon="item.icon" :data-title="item.title" />
 
-    <Text text="Update" color="red" :number="update" :icon="iinfo" data-title="update" />
-
-    <Text text="Plugins" color="green" :number="plugins" :icon="iplugin" data-title="plugin" />
-
-    <Text text="Tags" color="yellow" :number="tags" :icon="itag" data-title="tag" />
-
-    <Text text="Tiddlers" color="blue" :number="tiddlers" :icon="itiddler" data-title="tiddler" />
-    <Text text="Startup" color="blue" :number="startup" :icon="ihg" data-title="tiddler" />
   </div>
 </template>
