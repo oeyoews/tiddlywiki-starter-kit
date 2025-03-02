@@ -59,7 +59,6 @@ module-type: macro
           `${index + 1}. <$link to="${t.title}" /> (${t.wordCount.toLocaleString()}字)`,
       )
       .join('\n\n');
-    console.log(topTiddlers);
     if (!_filter) {
       $tw.wiki.addTiddler({
         title: '$:/state/reading-time-full',
