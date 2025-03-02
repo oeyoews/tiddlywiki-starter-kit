@@ -25,7 +25,7 @@ module-type: macro
 
   exports.run = function (_filter) {
     const filter =
-      '[!is[system]!is[binary]!type[application/json]!publish[private]]';
+      '[!is[system]!is[binary]!type[application/json]!publish[private]has[text]]';
     const tiddlers = $tw.wiki.filterTiddlers(_filter || filter);
     if (!tiddlers || tiddlers.length === 0) return '0';
 
@@ -52,12 +52,14 @@ module-type: macro
       }
     });
 
+    // 防止title 含有|
     const res = topTiddlers
       .map(
         (t, index) =>
-          `${index + 1}. [[${t.title}]](${t.wordCount.toLocaleString()}字)`,
+          `${index + 1}. <$link to="${t.title}" /> (${t.wordCount.toLocaleString()}字)`,
       )
       .join('\n\n');
+    console.log(topTiddlers);
     if (!_filter) {
       $tw.wiki.addTiddler({
         title: '$:/state/reading-time-full',
