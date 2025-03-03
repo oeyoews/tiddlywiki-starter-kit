@@ -1,0 +1,8 @@
+title: $:/plugins/oeyoews/tiddler-fullscreen/EditorToolbar
+caption: fullscreen
+condition: [<targetTiddler>]
+icon: $:/plugins/oeyoews/tiddler-fullscreen/icons/fullscreen
+tags: $:/tags/EditorToolbar
+description: {{$:/plugins/oeyoews/tiddler-fullscreen/readme!!description}}
+
+<$action-sendmessage $message="om-tiddler-fullscreen" title=<<targetTiddler>> />

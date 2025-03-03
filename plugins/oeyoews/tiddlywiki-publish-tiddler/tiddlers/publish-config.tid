@@ -1,0 +1,16 @@
+title: $:/plugins/oeyoews/tiddlywiki-publish-tiddler/publish-config
+
+\define tidFilter() $:/plugins/oeyoews/tiddlywiki-publish-tiddler/filter
+
+<table>
+<tr>
+    <th align="left">filter:</th>
+      <td>
+        <$edit-text
+            tiddler=<<tidFilter>>
+            placeholder="[!is[system]]"
+            tag="input"
+            default="" />
+     </td>
+</tr>
+</table>

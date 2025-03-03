@@ -1,0 +1,15 @@
+{
+  "title": "$:/plugins/oeyoews/neotw-image-better",
+  "description": "neotw-image-better",
+  "author": "oeyoews",
+  "version": "0.0.3",
+  "core-version": ">=5.3.0",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "neotw-image-better",
+  "dependents": [
+    "$:/plugins/oeyoews/image-observer",
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
+  ],
+  "list": "readme"
+}

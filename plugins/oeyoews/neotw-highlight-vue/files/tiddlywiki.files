@@ -1,0 +1,13 @@
+{
+	"tiddlers": [
+		{
+			"file": "highlight.vue.min.js",
+			"fields": {
+				"type": "application/javascript",
+				"title": "highlight.vue.min.js",
+				"module-type": "highlight",
+				"hide-body": "yes"
+			}
+		}
+	]
+}
