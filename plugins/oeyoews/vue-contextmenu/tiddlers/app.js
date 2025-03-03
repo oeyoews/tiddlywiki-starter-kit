@@ -205,10 +205,10 @@ const app = (target, title, self) => {
             icon: getIcon('delete'),
             onClick: () =>
               o('tm-delete-tiddler', title, () => {
-                ElMessage({
-                  type: 'success',
-                  message: 'Delete successfully',
-                });
+                // ElMessage({
+                //   type: 'success',
+                //   message: 'Delete successfully',
+                // });
               }),
           },
           {
