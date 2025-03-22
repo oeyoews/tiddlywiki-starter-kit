@@ -1,20 +1,20 @@
-title: $:/plugins/oeyoews/tiddlywiki-tid2png/ui
-tags: $:/tags/ViewToolbar
+title: $:/plugins/oeyoews/autocorrect-wrapper/ViewToolbar
 list-before: $:/core/ui/Buttons/close
-description: export png
-caption: Tid2PNG
+tags: $:/tags/ViewToolbar
+description: fullscreen tiddler
+caption: Format Tiddler
 
 \whitespace trim
 <$list filter="[all[current]!is[system]!is[binary]]">
-<$button message="om-export-png" tooltip="export current tiddler as png" aria-label="Tid2PNG" class=<<tv-config-toolbar-class>>>
+<$button message="om-tiddler-format" tooltip="format tiddler" aria-label="fullscreen tiddler" class=<<tv-config-toolbar-class>>>
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
 <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
-{{$:/core/images/picture}}
+{{$:/plugins/oeyoews/autocorrect-wrapper/icon}}
 </$list>
 </$list>
 <$list filter="[<tv-config-toolbar-text>match[yes]]">
 <span class="tc-btn-text">
-  <$text text="Tid2PNG"/>
+  <$text text="tiddler-format"/>
 </span>
 </$list>
 </$button>
