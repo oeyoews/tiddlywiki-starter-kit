@@ -1,0 +1,45 @@
+title: $:/plugins/oeyoews/vue-rss/readme
+description: vue-rss
+
+!! Usage
+
+```
+<$vue-rss rss="https://talk.tiddlywiki.org/latest.rss" />
+```
+
+!! Example
+
+<$vue-rss rss="https://www.ajplus.net/stories?format=rss" />
+
+<$vue-rss />
+
+<$vue-rss rss="https://tiddlywiki.substack.com/feed"/>
+
+<$vue-rss rss="https://talk.tiddlywiki.org/latest.rss" />
+
+<hr />
+
+!! Tips
+
+* more rss address please check https://docs.rsshub.app/
+* rsshub radar chrome extension can help you find some website rss address
+
+!! NOTE
+
+* This plugin uses https://corsproxy.io/ for proxy forwarding, which require a special network environment for some countries
+* proxy has cdn cache
+
+!! Roadmap
+
+* support IOS: proxy forwarding not supported by IOS now
+* support save single article convert to tiddler
+
+<!-- plugin template readme -->
+
+!! Motivation
+
+* rss to html, to md
+* https://talk.tiddlywiki.org/t/fun-with-feeds-a-proof-of-concept-rss-reader/6490/
+
+
+<!-- your plugin motivation, or why you write this plugin -->

@@ -1,0 +1,13 @@
+title: $:/core/ui/ViewTemplate/import-external-files
+tags: $:/tags/ViewTemplate
+list-after: $:/core/ui/ViewTemplate/import
+
+<$list filter="[all[current]field:plugin-type[import]]" variable="null">
+
+<$checkbox tiddler="$:/config/sq/SaveAsExternalFile" field="text" checked="yes" unchecked="no" default="yes"> Import binary files as external attachments</$checkbox>
+
+<$list filter="[{$:/config/sq/SaveAsExternalFile}match[yes]]" variable="null">
+<$checkbox tiddler="$:/config/sq/OverwriteBinaryFiles" field="text" checked="yes" unchecked="no" default="yes"> Overwrite binary files with the same name</$checkbox>
+</$list>
+
+</$list>

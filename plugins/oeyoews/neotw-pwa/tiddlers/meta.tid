@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/neotw-pwa/meta
+tags: $:/tags/RawMarkupWikified/TopHead
+
+`<link rel="manifest" href="manifest.json" />`
+`<meta name="theme-color" media="(prefers-color-scheme: light)" content="white"/>`
+`<meta name="theme-color" media="(prefers-color-scheme: dark)" content="black"/>`

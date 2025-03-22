@@ -1,0 +1,29 @@
+tags: $:/tags/Macro
+title: $:/plugins/oeyoews/tiddlywiki-github-share/macro/github-cat
+
+\define github-cat()
+\define base-repo() https://github.com/
+\define tid() $:/config/oeyoews/tiddlywiki-github-share/config
+
+<$button tooltip="GitHub repo" class="o-btn-back">
+  <$action-sendmessage $message="tm-open-external-window" $param={{{ [<tid>get[text]addprefix<base-repo>]}}}/>
+  <$list filter="[<tv-config-toolbar-icons>match[yes]]">
+    {{$:/plugins/oeyoews/tiddlywiki-github-share/icon-blue}}
+  </$list>
+</$button>
+\end
+
+\define oribbon()
+\define base-repo() https://github.com/
+\define tid() $:/config/oeyoews/tiddlywiki-github-share/config
+
+<a style="text-decoration: none;"
+  href={{{ [<tid>get[text]addprefix<base-repo>] }}}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="githubCorner"
+  aria-label="View source on GitHub"
+>
+  {{$:/plugins/oeyoews/tiddlywiki-github-share/icon/corner}}
+</a>
+\end

@@ -1,0 +1,19 @@
+[
+  {
+    "action": "remove",
+    "files": [
+      ".vscode/",
+      "docs",
+      "LICENSE",
+      "degit.json",
+      "img",
+      "pnpm-lock.yaml",
+      ".gitignore",
+      "public",
+      "templates",
+      "packages/create-neotw-app/",
+      "packages/create-tw-apps/",
+      "packages/randomstring-plus/"
+    ]
+  }
+]

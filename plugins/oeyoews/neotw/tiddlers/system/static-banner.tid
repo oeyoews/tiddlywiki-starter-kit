@@ -1,0 +1,25 @@
+title: $:/StaticBanner
+
+<!-- use trim  -->
+<$list filter="[[$:/StoryList]get[list]count[]match[0]]">
+<center>
+<$qq-avatar />
+<!--
+<div class="gravatar-56">
+<img src="https://en.gravatar.com/userimage/216583511/c7165598eeb66df95698edbc168b8155.png" />
+</div>
+-->
+<h1> oeyoews </h1>
+	<$list filter="[{$:/info/url/protocol}match[https:]]">
+	<$github-calendar />
+	</$list>
+</center>
+<$list filter="[{$:/info/url/protocol}match[https:]]">
+	<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[yes]]">
+	<hr>
+	</$list>
+</$list>
+	<$list filter="[{$:/info/url/protocol}match[http:]]">
+		<hr>
+	</$list>
+</$list>

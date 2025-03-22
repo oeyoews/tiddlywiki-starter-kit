@@ -1,0 +1,14 @@
+{
+  "title": "$:/plugins/oeyoews/neotw-tour",
+  "description": "Neotw Tour",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.3.0",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "Neotw Tour",
+  "dependents": [
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
+  ],
+  "list": "readme"
+}
