@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@oeyoews/tiddlywiki-lite':
-        specifier: 5.3.6-lite-20250323
-        version: 5.3.6-lite-20250323
       address:
         specifier: ^1.2.2
         version: 1.2.2
@@ -44,6 +41,9 @@ importers:
       qrcode:
         specifier: 1.5.3
         version: 1.5.3
+      tiddlywiki:
+        specifier: npm:@oeyoews/tiddlywiki-lite@5.3.6-lite-20250323-1
+        version: '@oeyoews/tiddlywiki-lite@5.3.6-lite-20250323-1'
     devDependencies:
       '@nolebase/vitepress-plugin-og-image':
         specifier: 1.28.0
@@ -787,10 +787,11 @@ packages:
     peerDependencies:
       vitepress: ^1.0.0
 
-  '@oeyoews/tiddlywiki-lite@5.3.6-lite-20250323':
-    resolution: {integrity: sha512-szMxl61/JBg0OmJvPDAaMdMPBuBAQtVGpkJSDlWoB1TE/NkYLauUyAApy3LBEA2NIgLCYiKnB0VVeF3syTr1rw==}
+  '@oeyoews/tiddlywiki-lite@5.3.6-lite-20250323-1':
+    resolution: {integrity: sha512-b9E44WUxyM3mspgh0p2zc0DOHX1Oj6NiL5fy9SvMgEoRqkPa5c8ACxUUjBMVlkRNyJI4dJqC4OFqDz53JOswgg==}
     engines: {node: '>=0.8.2'}
     hasBin: true
+    bundledDependencies: []
 
   '@opencensus/core@0.0.8':
     resolution: {integrity: sha512-yUFT59SFhGMYQgX0PhoTR0LBff2BEhPrD9io1jWfF/VDbakRfs6Pq60rjv0Z7iaTav5gQlttJCX2+VPxFWCuoQ==}
@@ -3695,7 +3696,7 @@ snapshots:
       unified: 11.0.5
       vitepress: 1.6.3(@algolia/client-search@5.20.1)(@types/node@22.13.1)(postcss@8.5.1)(qrcode@1.5.3)(search-insights@2.17.3)(terser@5.31.0)(typescript@5.7.3)
 
-  '@oeyoews/tiddlywiki-lite@5.3.6-lite-20250323': {}
+  '@oeyoews/tiddlywiki-lite@5.3.6-lite-20250323-1': {}
 
   '@opencensus/core@0.0.8':
     dependencies:
