@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@oeyoews/tiddlywiki-lite':
-        specifier: 5.3.6-lite-20250223
-        version: 5.3.6-lite-20250223
+        specifier: 5.3.6-lite-20250323
+        version: 5.3.6-lite-20250323
       address:
         specifier: ^1.2.2
         version: 1.2.2
@@ -787,8 +787,8 @@ packages:
     peerDependencies:
       vitepress: ^1.0.0
 
-  '@oeyoews/tiddlywiki-lite@5.3.6-lite-20250223':
-    resolution: {integrity: sha512-ASJqewkUQM1aamIcc+eslXqy0gcg7icFW6QaaPw+duUf4aX+9ekxKfAoL7nVcGhU/1kSvR84xe7yMPKw9QWHng==}
+  '@oeyoews/tiddlywiki-lite@5.3.6-lite-20250323':
+    resolution: {integrity: sha512-szMxl61/JBg0OmJvPDAaMdMPBuBAQtVGpkJSDlWoB1TE/NkYLauUyAApy3LBEA2NIgLCYiKnB0VVeF3syTr1rw==}
     engines: {node: '>=0.8.2'}
     hasBin: true
 
@@ -3695,7 +3695,7 @@ snapshots:
       unified: 11.0.5
       vitepress: 1.6.3(@algolia/client-search@5.20.1)(@types/node@22.13.1)(postcss@8.5.1)(qrcode@1.5.3)(search-insights@2.17.3)(terser@5.31.0)(typescript@5.7.3)
 
-  '@oeyoews/tiddlywiki-lite@5.3.6-lite-20250223': {}
+  '@oeyoews/tiddlywiki-lite@5.3.6-lite-20250323': {}
 
   '@opencensus/core@0.0.8':
     dependencies:

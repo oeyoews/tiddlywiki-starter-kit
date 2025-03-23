@@ -33,7 +33,7 @@
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
-    "@oeyoews/tiddlywiki-lite": "5.3.6-lite-20250223",
+    "@oeyoews/tiddlywiki-lite": "5.3.6-lite-20250323",
     "address": "^1.2.2",
     "chalk": "^5.3.0",
     "ci-info": "^3.9.0",
