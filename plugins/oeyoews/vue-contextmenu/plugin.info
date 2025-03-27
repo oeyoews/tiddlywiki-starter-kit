@@ -15,6 +15,7 @@
     "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
     "$:/plugins/oeyoews/vue-context-menu",
     "$:/plugins/oeyoews/vue-i18n",
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
     "$:/plugins/oeyoews/element-plus"
   ],
   "list": "readme"
