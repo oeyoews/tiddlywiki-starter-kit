@@ -219,6 +219,8 @@ const app = (target, title, self) => {
           {
             label: t('menu.rename'),
             icon: getIcon('rename'),
+            disabled: window.hasOwnProperty('electronAPIs'),
+            // TODO: electron not support prompt, use element ui instead of it
             onClick: async () => {
               const to = window.prompt('Rename to:', title);
               // const to = await $tw.showDialog('prompt', 'rename', title);
