@@ -65,7 +65,11 @@ const app = (target, title, self) => {
     },
 
     mounted() {
-      target.addEventListener('contextmenu', this.onContextMenu);
+      target.addEventListener('contextmenu', (e) => {
+        if (e.ctrlKey) {
+          this.onContextMenu(e);
+        }
+      });
     },
     methods: {
       handleConfirm() {
