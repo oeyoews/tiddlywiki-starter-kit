@@ -134,6 +134,9 @@ export default {
     'tiddlywiki.png',
     '--deletetiddlers',
     '$:/StoryList',
+    '',
+    'publish',
+    '-[tag[private]] -[is[draft]] -[publish[private]]',
   ],
   library: [
     '--output',
