@@ -1,0 +1,18 @@
+title: $:/plugins/oeyoews/neotw-notion-gallery/ninecard
+tags: $:/tags/Macro
+
+\procedure card(title)
+<div class="rounded-xl not-prose transition-all relative hover:scale-105 shadow-sm duration-300">
+	<$oimg src={{{ [<title>addprefix[https://source.unsplash.com/random/1920x1080?fm=blurhash&]] }}} />
+	<$avatar class="h-8 shadow outline outline-2 outline-white absolute top-2 left-2 scale-0 group-hover:scale-100"/>
+<$link to=<<title>> class="text-indigo-600 truncate capitalize absolute text-white bottom-0 left-0 group-hover:text-sky-400 backdrop-blur-lg rounded p-2 w-full"/>
+</div>
+\end
+
+\procedure ninecards(subfilter:"[!is[system]]", limit:9)
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<$list filter='[!is[system]!sort[modified]!has[draft.of]subfilter<subfilter>limit<limit>]'  >
+<$transclude $variable="card" title={{!!title}} />
+</$list>
+</div>
+\end
