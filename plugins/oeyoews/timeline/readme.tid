@@ -1,0 +1,10 @@
+title: $:/plugins/oeyoews/timeline/readme
+description: timeline
+
+[[在线文档|https://neotw.vercel.app/docs/plugins/timeline]]
+
+https://github.com/NUKnightLab/TimelineJS3
+api: https://github.com/NUKnightLab/TimelineJS3/blob/master/API.md
+<!-- https://cdn.knightlab.com/ -->
+
+<$timeline />
