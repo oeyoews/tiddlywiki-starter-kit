@@ -135,7 +135,7 @@ export default {
     '--deletetiddlers',
     '$:/StoryList',
     '',
-    'publish',
+    'publishFilter',
     '-[tag[private]] -[is[draft]] -[publish[private]]',
   ],
   library: [
