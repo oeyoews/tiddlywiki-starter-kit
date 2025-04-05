@@ -33,7 +33,6 @@
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
-    "address": "^1.2.2",
     "chalk": "^5.3.0",
     "ci-info": "^3.9.0",
     "consola": "^3.2.3",
