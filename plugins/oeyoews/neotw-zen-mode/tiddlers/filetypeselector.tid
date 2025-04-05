@@ -1,0 +1,39 @@
+title: $:/plugins/oeyoews/neotw-zen-mode/FileTypeSelector
+caption: filetype selector
+
+<!-- $:/tags/ViewTemplate -->
+<!-- tags: $:/tags/EditTemplate -->
+
+<!-- @see: https://github.com/oeyoews/tiddlywiki-starter-kit/issues/138 -->
+
+<!-- https://github.com/Jermolene/TiddlyWiki5/pull/7764 -->
+<!-- group -->
+
+<!-- <$select field="type" tooltip="选择文件类型" class="appearance-none border-none m-0 bg-gray-100 dark:bg-black rounded p-0.5" default='filetype'>
+<option disabled value='filetype' tiddler=<<currentTiddler>> >
+Filetype
+</option>
+<option value="text/markdown">
+Markdown
+</option>
+<option value="text/vnd.tiddlywiki">
+	Wikitext
+</option>
+<option value="application/javascript">
+	Javascript
+</option>
+</$select> -->
+
+<$list filter="[all[current]!type[text/markdown]]">
+<$select tiddler=<<currentTiddler>> field='type' default='text/markdown' class="appearance-none border-none m-0 bg-gray-100 dark:bg-black rounded p-0.5">
+<$list filter='[all[shadows+tiddlers]prefix[$:/language/Docs/Types/]each[group]sort[group]]'>
+<!-- <optgroup label={{!!group}}> -->
+<$list filter='[all[shadows+tiddlers]prefix[$:/language/Docs/Types/]group{!!group}] +[sort[description]]'>
+<option value={{!!name}}><$view field='description'><$view field='title'/></$view>
+<!-- (<$view field='name'/>) -->
+</option>
+</$list>
+<!-- </optgroup> -->
+</$list>
+</$select>
+</$list>

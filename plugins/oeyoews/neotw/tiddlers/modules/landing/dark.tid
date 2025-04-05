@@ -1,0 +1,12 @@
+title: $:/plugins/oeyoews/neotw/modules/darkmode/action
+<!-- tags: $:/tags/StartupAction/PostRender -->
+
+<!-- dark mode -->
+<$list filter="[{$:/info/url/search}prefix[?mode=dark]]">
+  <$action-setfield $tiddler="$:/palette" text="$:/palettes/GithubDark"/>
+</$list>
+
+<!-- help modal for neotw -->
+<$list filter="[{$:/info/url/search}match[?help=neotw]]">
+  <$action-sendmessage $message="tm-modal" $param="$:/plugins/oeyoews/neotw/setting"/>
+</$list>

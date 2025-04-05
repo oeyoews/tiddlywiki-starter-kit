@@ -1,0 +1,15 @@
+{
+  "title": "$:/plugins/oeyoews/tiddler-fullscreen",
+  "description": "tiddler-fullscreen",
+  "author": "oeyoews",
+  "version": "0.0.5",
+  "core-version": ">=5.3.0",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "tiddler-fullscreen",
+  "meat#disabled": "yes",
+  "qrcode": "yes",
+  "created": "2024-01-30",
+  "dependents": [],
+  "list": "readme"
+}

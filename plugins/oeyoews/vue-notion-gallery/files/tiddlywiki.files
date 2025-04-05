@@ -1,0 +1,16 @@
+{
+	"directories": [
+		{
+			"path": "templates",
+			"filesRegExp": "^.*\\.vue$",
+			"searchSubdirectories": true,
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/vue-notion-gallery/templates/"
+				},
+				"hide-body": "yes"
+			}
+		}
+	]
+}

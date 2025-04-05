@@ -1,0 +1,13 @@
+{
+	"tiddlers": [
+		{
+			"file": "./draggableplus.js",
+			"fields": {
+				"title": "draggableplus.js",
+				"module-type": "library",
+				"type": "application/javascript",
+				"hide-body": "yes"
+			}
+		}
+	]
+}

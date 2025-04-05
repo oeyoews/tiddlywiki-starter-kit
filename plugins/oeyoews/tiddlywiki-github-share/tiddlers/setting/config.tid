@@ -1,0 +1,20 @@
+title: $:/plugins/oeyoews/tiddlywiki-github-share/config
+
+\whitespace trim
+
+\define tid() $:/config/oeyoews/tiddlywiki-github-share/config
+
+<table>
+  <tr>
+    <th align="left">Github Repo Link:</th>
+    <td>
+      <$edit-text
+          tiddler=<<tid>>
+          field="text"
+          tag="input"
+          placeholder="username/repo"
+          default="oeyoews/neotw" />
+    </td>
+  </tr>
+
+</table>

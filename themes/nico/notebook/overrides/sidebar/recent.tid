@@ -1,0 +1,59 @@
+caption: {{$:/language/SideBar/Recent/Caption}}
+tags: $:/tags/SideBar
+title: $:/core/ui/SideBar/Recent
+
+\whitespace trim
+
+\define lingo-base() $:/language/Search/
+\define modeTiddler() $:/config/RecentTab/Mode
+\define storeTitle() $:/temp/search/recent
+\define cancel-search-actions() <$action-deletetiddler $filter=<<storeTitle>>/><$action-sendmessage $message="tm-focus-selector" $param=""".search-recent input"""/>
+
+\define timeline-searchable(is:"!is",limit:"100",format:"DDth MMM YYYY",subfilter:"!tag[done]!tag[todo]!field:publish[private]",dateField:"modified")
+<div class="tc-timeline prose max-w-none capitalize text-[16px] font-bold max-h-screen overflow-y-scroll">
+<$list filter="[$is$[system]$subfilter$has[$dateField$]!sort[$dateField$]limit[$limit$]eachday[$dateField$]]">
+<div class="tc-menu-list-item">
+<$view field="$dateField$" format="date" template="$format$"/>
+<$list filter="[sameday:$dateField${!!$dateField$}$is$[system]$subfilter$!sort[$dateField$]search:title{$:/temp/search/recent}]">
+<div class="tc-menu-list-subitem">
+<$link to={{!!title}} class="p-1 mb-1 relative group">
+<<timeline-title>>
+<!-- <div class="rounded bg-gray-200 dark:bg-dimmed-900 w-full w-full absolute h-0.5 group-hover:scale-100 scale-0 duration-500 transition-all -mt-1 delay-100" /> -->
+</$link>
+</div>
+</$list>
+</div>
+</$list>
+</div>
+\end
+
+<$checkbox tiddler=<<modeTiddler>> field="text"
+    checked="sys" unchecked="std" default="std"
+    uncheckactions="<$action-deletetiddler $tiddler=<<storeTitle>>/>">
+&#32; View system tiddlers
+</$checkbox>
+
+<$reveal state=<<modeTiddler>> type="nomatch" text="sys">
+
+<$macrocall $name="timeline-searchable" format={{$:/language/RecentChanges/DateFormat}}/>
+
+</$reveal>
+<$reveal state=<<modeTiddler>> type="match" text="sys">
+
+<div class="search-recent">
+<$macrocall
+    $name="keyboard-driven-input" tiddler=<<storeTitle>>
+    type="search" tag="input" focus={{$:/config/Search/AutoFocus}}
+    inputCancelActions=<<cancel-search-actions>>
+/>
+<$reveal state=<<storeTitle>> type="nomatch" text="">
+<$button class="tc-btn-invisible tc-btn-dropdown tc-small-gap">
+<<cancel-search-actions>>
+{{$:/core/images/close-button}}
+</$button>
+</$reveal>
+</div>
+
+<$macrocall $name="timeline-searchable" is="is" format={{$:/language/RecentChanges/DateFormat}}/>
+
+</$reveal>

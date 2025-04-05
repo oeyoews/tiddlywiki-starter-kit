@@ -1,0 +1,12 @@
+{
+	"tiddlers": [
+		{
+			"file": "spotlight.bundle.js",
+			"fields": {
+				"type": "application/javascript",
+				"title": "spotlight.bundle.js",
+				"module-type": "library"
+			}
+		}
+	]
+}

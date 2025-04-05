@@ -1,0 +1,15 @@
+{
+  "title": "$:/plugins/oeyoews/neotw-copy-code2",
+  "description": "neotw-copy-code2",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.3.0",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "neotw-copy-code2",
+  "meat#disabled": "yes",
+  "qrcode": "yes",
+  "created": "2024-03-06",
+  "dependents": [],
+  "list": "readme"
+}
