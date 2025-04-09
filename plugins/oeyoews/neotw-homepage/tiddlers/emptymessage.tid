@@ -4,8 +4,8 @@ title: $:/config/EmptyStoryMessage
   <$neotw-meteors />
   <div class="p-0 m-4">
     <div class="">
-<h1 class="mb-4 font-extrabold bg-gradient-to-r from-rose-500 via-purple-500 to-pink-400 text-transparent bg-clip-text text-5xl text-center">
-  Welcome to TiddlyWiki Starter Kit
+<h1 class="mb-4 font-extrabold text-center text-5xl">
+  Welcome to <span class="bg-gradient-to-r from-sky-500 to-pink-400 text-transparent bg-clip-text" style="font-family:Pacifico Regular">TiddlyWiki Starter Kit</span>
 </h1>
       <p class="text-lg text-center">
       This is an online website built using
