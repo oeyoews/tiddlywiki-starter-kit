@@ -4,7 +4,7 @@ hide-body: yes
 
 @font-face {
 	font-family: "Pacifico Regular";
-	src: url(<<datauri "$:/plugins/oeyoews/fonts-package/Pacifico-Regular.ttf">>);
+	src: url(<<datauri "$:/plugins/oeyoews/fonts-package/Pacifico-Regular.ttf">>) format("truetype");
 	font-display: swap;
 	font-weight: 400;
 }
