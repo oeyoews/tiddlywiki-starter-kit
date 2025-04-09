@@ -1,0 +1,11 @@
+title: $:/config/FileSystemPaths
+overwrite: yes
+author: oeyoews
+
+[publish[private]addprefix[subwiki/private/]]
+[is[system]removeprefix[$:/]]
+[tag[todo]addprefix[subwiki/todo/]]
+[tag[Project]addprefix[subwiki/Project/]]
+[field:publish[article]addprefix[content/articles/]]
+[is[binary]addprefix[binary/]]
+[!is[system]addprefix[content/]]
