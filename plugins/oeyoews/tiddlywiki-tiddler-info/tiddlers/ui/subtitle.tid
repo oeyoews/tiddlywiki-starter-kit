@@ -7,7 +7,9 @@ tags: $:/tags/ViewTemplate
 <div class="tc-subtitle my-2">
 <$list filter="[all[current]has[creator]]">
     <$avatar type="github" inline link="https://github.com/oeyoews" />
+<span style="font-family:Pacifico Regular;">
 {{!!creator}}
+</span>
 </$list>
 <$list filter="[all[current]has[created]]">
 <!-- clock icon -->
