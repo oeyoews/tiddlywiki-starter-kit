@@ -29,6 +29,9 @@ importers:
       get-port:
         specifier: ^7.1.0
         version: 7.1.0
+      keypress:
+        specifier: ^0.2.1
+        version: 0.2.1
       ora:
         specifier: ^6.3.1
         version: 6.3.1
@@ -788,7 +791,6 @@ packages:
     resolution: {integrity: sha512-b9E44WUxyM3mspgh0p2zc0DOHX1Oj6NiL5fy9SvMgEoRqkPa5c8ACxUUjBMVlkRNyJI4dJqC4OFqDz53JOswgg==}
     engines: {node: '>=0.8.2'}
     hasBin: true
-    bundledDependencies: []
 
   '@opencensus/core@0.0.8':
     resolution: {integrity: sha512-yUFT59SFhGMYQgX0PhoTR0LBff2BEhPrD9io1jWfF/VDbakRfs6Pq60rjv0Z7iaTav5gQlttJCX2+VPxFWCuoQ==}
@@ -2060,6 +2062,9 @@ packages:
 
   jsonfile@6.1.0:
     resolution: {integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==}
+
+  keypress@0.2.1:
+    resolution: {integrity: sha512-HjorDJFNhnM4SicvaUXac0X77NiskggxJdesG72+O5zBKpSqKFCrqmndKVqpu3pFqkla0St6uGk8Ju0sCurrmg==}
 
   kind-of@6.0.3:
     resolution: {integrity: sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==}
@@ -5040,6 +5045,8 @@ snapshots:
       universalify: 2.0.1
     optionalDependencies:
       graceful-fs: 4.2.11
+
+  keypress@0.2.1: {}
 
   kind-of@6.0.3: {}
 
