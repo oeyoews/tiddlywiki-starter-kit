@@ -16,7 +16,6 @@ const localPlugins = [
 ];
 
 const onlinePlugins = [
-  // github 构建， 前三个插件消失了？？？
   'oeyoews/neotw-vue-codeblock', // 首页代码块
   'oeyoews/vue-plum',
   'oeyoews/NPL',
@@ -112,13 +111,19 @@ const plugins = [
 
 enableMarkdown && plugins.push(...markdowPlugins);
 
-switch (ci.name) {
-  case 'Vercel':
-  case 'Netlify CI':
-    plugins.push(...onlinePlugins);
-    break;
-  default:
-    plugins.push(...localPlugins);
+// switch (ci.name) {
+//   case 'Vercel':
+//   case 'Netlify CI':
+//     plugins.push(...onlinePlugins);
+//     break;
+//   default:
+//     plugins.push(...localPlugins);
+// }
+
+if (ci.isCI) {
+  plugins.push(...onlinePlugins);
+} else {
+  plugins.push(...localPlugins);
 }
 
-export default plugins;
+export default [...new Set(plugins)];
