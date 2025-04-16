@@ -1,0 +1,16 @@
+{
+  "title": "$:/plugins/oeyoews/tiddlywiki-daylight",
+  "description": "Tiddlywiki Daylight",
+  "author": "oeyoews",
+  "version": "0.3.1",
+  "core-version": ">=5.3.0",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "meta#disabled": "yes",
+  "name": "Tiddlywiki Daylight",
+  "dependents": [
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
+    "$:/plugins/oeyoews/neotw-back-to-top"
+  ],
+  "list": "readme"
+}
