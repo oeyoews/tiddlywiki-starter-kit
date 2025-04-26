@@ -4,6 +4,9 @@ list-after: $:/core/ui/PageTemplate/story
 
 <$list filter="[{$:/plugins/oeyoews/screenlock/state}match[locked]]">
 <div class="tw-screenlock-overlay">
+<$list filter="[[$:/plugins/oeyoews/neotw-meteors]is[tiddler]]">
+  <$neotw-meteors />
+</$list>
   <div class="tw-screenlock-container">
     <h2>{{$:/SiteTitle}}</h2>
     <div class="tw-screenlock-input">
@@ -19,3 +22,4 @@ list-after: $:/core/ui/PageTemplate/story
   </div>
 </div>
 </$list>
+
