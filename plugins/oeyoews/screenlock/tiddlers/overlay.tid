@@ -1,0 +1,21 @@
+title: $:/plugins/oeyoews/screenlock/overlay
+tags: $:/tags/PageTemplate
+list-after: $:/core/ui/PageTemplate/story
+
+<$list filter="[{$:/plugins/oeyoews/screenlock/state}match[locked]]">
+<div class="tw-screenlock-overlay">
+  <div class="tw-screenlock-container">
+    <h1>{{$:/SiteTitle}}</h1>
+    <div class="tw-screenlock-input">
+      <$edit-text tiddler="$:/temp/screenlock/password" tag="input" type="password" placeholder="输入密码解锁..." class="tw-screenlock-password"/>
+      <$button class="tw-screenlock-button">
+        解锁
+        <$action-sendmessage $message="tw-unlock-screen" password={{$:/temp/screenlock/password}}/>
+      </$button>
+    </div>
+    <$list filter="[{$:/temp/screenlock/error}!match[]]">
+      <div class="tw-screenlock-error">{{$:/temp/screenlock/error}}</div>
+    </$list>
+  </div>
+</div>
+</$list>
