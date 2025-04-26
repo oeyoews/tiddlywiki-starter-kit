@@ -1,0 +1,10 @@
+title: $:/plugins/oeyoews/screenlock/shortcuts
+tags: $:/tags/KeyboardShortcut
+key: ((screenlock-toggle))
+
+<!-- <$list filter="[{$:/plugins/oeyoews/screenlock/state}match[locked]]">
+<$action-sendmessage $message="tw-unlock-screen" password={{$:/plugins/oeyoews/screenlock/password}}/>
+</$list> -->
+<$list filter="[{$:/plugins/oeyoews/screenlock/state}!match[locked]]">
+<$action-sendmessage $message="tw-lock-screen"/>
+</$list>

@@ -27,3 +27,5 @@ tags: $:/tags/ControlPanel/Settings
 * 手动锁屏
 * 自动锁屏（启动时）
 * 密码保护
+* 快捷键支持（Alt+L 锁屏/解锁）
+* 锁屏状态下禁用所有快捷键（除了 Alt+L）

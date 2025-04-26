@@ -5,11 +5,11 @@ list-after: $:/core/ui/PageTemplate/story
 <$list filter="[{$:/plugins/oeyoews/screenlock/state}match[locked]]">
 <div class="tw-screenlock-overlay">
   <div class="tw-screenlock-container">
-    <h1>{{$:/SiteTitle}}</h1>
+    <h2>{{$:/SiteTitle}}</h2>
     <div class="tw-screenlock-input">
-      <$edit-text tiddler="$:/temp/screenlock/password" tag="input" type="password" placeholder="输入密码解锁..." class="tw-screenlock-password"/>
+      <$edit-text focus="yes" tiddler="$:/temp/screenlock/password" tag="input" type="password" placeholder="password..." class="tw-screenlock-password"/>
       <$button class="tw-screenlock-button">
-        解锁
+        Unlock
         <$action-sendmessage $message="tw-unlock-screen" password={{$:/temp/screenlock/password}}/>
       </$button>
     </div>
