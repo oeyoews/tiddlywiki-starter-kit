@@ -449,7 +449,7 @@ const app = () => {
 
       onMounted(() => {
         if (
-          $tw.wiki.getTiddler(configTiddlerName).fields['disable'] === 'yes'
+          $tw.wiki.getTiddler(configTiddlerName)?.fields['disable'] === 'yes'
         ) {
           enableSound.value = false;
         }
