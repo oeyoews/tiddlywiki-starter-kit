@@ -12,7 +12,7 @@ const {
 } = require('./lib/gemini.min.js');
 
 // const MODEL_NAME = 'gemini-1.0-pro-001';
-const MODEL_NAME = 'gemini-1.5-flash';
+const MODEL_NAME = 'gemini-2.0-flash';
 // const MODEL_NAME = 'gemini-2.0-flash-exp';
 
 const safetySettings = [
