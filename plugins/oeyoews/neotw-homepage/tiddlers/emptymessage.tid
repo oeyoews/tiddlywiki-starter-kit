@@ -6,6 +6,7 @@ title: $:/config/EmptyStoryMessage
     <div class="">
 <h1 class="mb-4 font-extrabold text-center text-5xl">
   Welcome to <span class="bg-gradient-to-r from-sky-500 to-pink-400 text-transparent bg-clip-text" style="font-family:Pacifico Regular">TiddlyWiki Starter Kit</span>
+  <<tw-text "Latest">>
 </h1>
       <p class="text-lg text-center">
       This is an online website built using
