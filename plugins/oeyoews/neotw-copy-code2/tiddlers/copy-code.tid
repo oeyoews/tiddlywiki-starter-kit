@@ -6,7 +6,7 @@ tags: $:/tags/Global
 <%if [<code>!match[]] [<currentTiddler>!is[system]!prefix[$:/]] %>
 <!-- scale-0 group-hover:scale-100 -->
 <div class="group relative">
-<%if [<currentTiddler>!prefix[$:/]] %>
+<%if [<currentTiddler>!prefix[$:/]!is[system]] %>
 <$button class="neotw-copy-code z-[1] absolute right-0 m-1 p-0 transition-all delay-200 size-8 print:hidden" message="tm-copy-to-clipboard" param=<<code>> tooltip="copy code">
 {{$:/core/images/copy-clipboard}}
 </$button>
