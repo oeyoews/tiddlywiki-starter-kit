@@ -78,7 +78,7 @@ $value={{{ [subfilter<get-field-value-tiddler-filter>get[text]] }}}/>
 <$list filter=<<tf.config-filter>> variable="temp">
 <tr class="tc-edit-field">
 <td class="tc-edit-field-name">
-<$text text=<<currentField>>/>:</td>
+<$text text=<<currentField>>/></td>
 <td class="tc-edit-field-value">
 <$keyboard key="((delete-field))" actions="""<$action-deletefield $field=<<currentField>>/><$set name="currentTiddlerCSSescaped" value={{{ [<currentTiddler>escapecss[]] }}}><$action-sendmessage $message="tm-focus-selector" $param=<<tf.current-tiddler-new-field-selector>>/></$set>""">
 <$transclude tiddler={{{ [<currentField>] :cascade[all[shadows+tiddlers]tag[$:/tags/FieldEditorFilter]!is[draft]get[text]] :and[!is[blank]else{$:/core/ui/EditTemplate/fieldEditor/default}] }}} />
