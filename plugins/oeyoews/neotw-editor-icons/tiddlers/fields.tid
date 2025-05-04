@@ -1,5 +1,6 @@
 title: $:/core/ui/EditTemplate/fields
 tags: $:/tags/EditTemplate
+list-after: $:/core/ui/EditTemplate/title
 
 \procedure lingo-base() $:/language/EditTemplate/
 \function tf.config-title() [[$:/config/EditTemplateFields/Visibility/]addsuffix[$(currentField)$]substitute[]get[text]]
