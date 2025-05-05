@@ -1,78 +1,110 @@
 [
   {
-    "text": "🧩book-status",
+    "text": "book-status",
     "link": "/plugins/book-status"
   },
   {
-    "text": "🧩element-plus",
+    "text": "clean-your-duplicate-storylist",
+    "link": "/plugins/clean-your-duplicate-storylist"
+  },
+  {
+    "text": "element-plus",
     "link": "/plugins/element-plus"
   },
   {
-    "text": "🧩markdown-extensions-startup",
+    "text": "markdown-extensions-startup",
     "link": "/plugins/markdown-extensions-startup"
   },
   {
-    "text": "🧩markdown-it-mermaid",
+    "text": "markdown-importer",
+    "link": "/plugins/markdown-importer"
+  },
+  {
+    "text": "markdown-it-mermaid",
     "link": "/plugins/markdown-it-mermaid"
   },
   {
-    "text": "🧩neotw-ai",
+    "text": "neotw-ai",
     "link": "/plugins/neotw-ai"
   },
   {
-    "text": "🧩neotw-bot",
+    "text": "neotw-bot",
     "link": "/plugins/neotw-bot"
   },
   {
-    "text": "🧩neotw-card-info",
+    "text": "neotw-card-info",
     "link": "/plugins/neotw-card-info"
   },
   {
-    "text": "🧩neotw-cmp",
+    "text": "neotw-cmp",
     "link": "/plugins/neotw-cmp"
   },
   {
-    "text": "🧩neotw-menubar",
+    "text": "neotw-comments",
+    "link": "/plugins/neotw-comments"
+  },
+  {
+    "text": "neotw-dialog",
+    "link": "/plugins/neotw-dialog"
+  },
+  {
+    "text": "neotw-menubar",
     "link": "/plugins/neotw-menubar"
   },
   {
-    "text": "🧩neotw-notion-gallery",
+    "text": "neotw-meteors",
+    "link": "/plugins/neotw-meteors"
+  },
+  {
+    "text": "neotw-notion-gallery",
     "link": "/plugins/neotw-notion-gallery"
   },
   {
-    "text": "🧩neotw-progressbar",
+    "text": "neotw-play-sound",
+    "link": "/plugins/neotw-play-sound"
+  },
+  {
+    "text": "neotw-progressbar",
     "link": "/plugins/neotw-progressbar"
   },
   {
-    "text": "🧩neotw-ui",
+    "text": "neotw-swiper",
+    "link": "/plugins/neotw-swiper"
+  },
+  {
+    "text": "neotw-ui",
     "link": "/plugins/neotw-ui"
   },
   {
-    "text": "🧩neotw-vtable",
+    "text": "neotw-vconsole",
+    "link": "/plugins/neotw-vconsole"
+  },
+  {
+    "text": "neotw-vtable",
     "link": "/plugins/neotw-vtable"
   },
   {
-    "text": "🧩neotw-vue3",
+    "text": "neotw-vue3",
     "link": "/plugins/neotw-vue3"
   },
   {
-    "text": "🧩neotw",
+    "text": "neotw",
     "link": "/plugins/neotw"
   },
   {
-    "text": "🧩tiddlywiki-codemirror-6",
+    "text": "tiddlywiki-codemirror-6",
     "link": "/plugins/tiddlywiki-codemirror-6"
   },
   {
-    "text": "🧩tiddlywiki-daylight",
+    "text": "tiddlywiki-daylight",
     "link": "/plugins/tiddlywiki-daylight"
   },
   {
-    "text": "🧩tiddlywiki-tailwindcss-plus",
+    "text": "tiddlywiki-tailwindcss-plus",
     "link": "/plugins/tiddlywiki-tailwindcss-plus"
   },
   {
-    "text": "🧩vue-zhipu",
+    "text": "vue-zhipu",
     "link": "/plugins/vue-zhipu"
   }
 ]
