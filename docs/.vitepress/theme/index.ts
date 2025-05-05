@@ -1,9 +1,9 @@
-import DefaultTheme from 'vitepress/theme';
-import type { Theme } from 'vitepress';
+import TwLayout from './Twlayout.vue';
+import TwPlugin from './components/TwPlugin.vue';
 import './styles/index.css';
 import 'virtual:uno.css';
-// @ts-expect-error
-import TwPlugin from './components/TwPlugin.vue';
+import type { Theme } from 'vitepress';
+import DefaultTheme from 'vitepress/theme';
 
 /** @type {import('vitepress').Theme} */
 export default {
@@ -11,4 +11,5 @@ export default {
   enhanceApp({ app }) {
     app.component('TwPlugin', TwPlugin);
   },
+  // Layout: TwLayout,
 } satisfies Theme;
