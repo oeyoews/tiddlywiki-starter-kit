@@ -5,4 +5,4 @@ mask-closable: yes
 caption: MenuBar
 subtitle: {{||$:/esc}}
 
-[[在线文档|https://neotw.vercel.app/docs/plugins/neotw-menubar]]
+[[在线文档|https://tiddlywiki-starter-kit.oeyoews.top/docs/plugins/neotw-menubar]]

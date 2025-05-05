@@ -4,7 +4,7 @@ tags: $:/tags/ControlPanel/Settings
 
 \define lingo-base() $:/language/ControlPanel/
 
-[[在线文档|https://neotw.vercel.app/docs/plugins/screenlock]]
+[[在线文档|https://tiddlywiki-starter-kit.oeyoews.top/docs/plugins/screenlock]]
 
 ! 锁屏插件
 

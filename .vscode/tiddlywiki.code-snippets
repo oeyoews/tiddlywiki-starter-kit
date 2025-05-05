@@ -45,7 +45,7 @@
 		"prefix": "tw-doc",
 		"description": "tiddlywiki online doc for neotw",
 		"body": [
-			"[[文档|https://neotw.vercel.app/docs/plugins/$PLUGINNAME]]"
+			"[[文档|https://tiddlywiki-starter-kit.oeyoews.top/docs/plugins/$PLUGINNAME]]"
 		]
 	},
 	"tw title": {

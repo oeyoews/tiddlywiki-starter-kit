@@ -4,7 +4,7 @@ import { computed } from 'vue';
 const props = defineProps<{
   name: string;
 }>();
-const baseurl = 'https://neotw.vercel.app/#';
+const baseurl = 'https://tiddlywiki-starter-kit.oeyoews.top/#';
 const href = computed(() => {
   return baseurl + encodeURIComponent('$:/plugins/oeyoews/' + props.name);
 });

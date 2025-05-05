@@ -1,7 +1,7 @@
 title: $:/plugins/oeyoews/neotw-dayjs/readme
 description: neotw-dayjs
 
-[[在线文档|https://neotw.vercel.app/docs/plugins/neotw-dayjs]]
+[[在线文档|https://tiddlywiki-starter-kit.oeyoews.top/docs/plugins/neotw-dayjs]]
 
 * 虽然tw 实现相对时间的计算， 但是有的地方不是很合适， 比如11 month ago, 28 hour ago, 一般来说， 使用 a year ago, a day ago 表达更合适.
 

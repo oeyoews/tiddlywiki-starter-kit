@@ -1,12 +1,12 @@
-import { defineConfig, defineConfigWithTheme } from 'vitepress';
+import cn from './scripts/cn.mts';
+import { genFeed } from './scripts/genFeed.mjs';
+import head from './scripts/head.mts';
 import nav from './scripts/nav.mts';
 import sidebar from './scripts/sidebar.mts';
-import cn from './scripts/cn.mts';
-import head from './scripts/head.mts';
-import { genFeed } from './scripts/genFeed.mjs';
 import { buildEndGenerateOpenGraphImages } from '@nolebase/vitepress-plugin-og-image';
-import UnoCSS from 'unocss/vite';
 import MarkdownTask from 'markdown-it-task-lists';
+import UnoCSS from 'unocss/vite';
+import { defineConfig, defineConfigWithTheme } from 'vitepress';
 
 export default defineConfig({
   title: 'TiddlyWiki Starter Kit',
@@ -63,12 +63,13 @@ export default defineConfig({
   async buildEnd(siteconfig) {
     genFeed(siteconfig);
     await buildEndGenerateOpenGraphImages({
-      baseUrl: 'https://neotw.vercel.app/docs',
+      baseUrl: 'https://tiddlywiki-starter-kit.oeyoews.top/docs',
       category: {
         byPathPrefix: [
           {
-            prefix: '/plugins/', text: "Plugin"
-          }
+            prefix: '/plugins/',
+            text: 'Plugin',
+          },
         ],
         fallbackWithFrontmatter: true,
       },

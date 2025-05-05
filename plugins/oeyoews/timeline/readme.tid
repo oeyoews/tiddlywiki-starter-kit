@@ -1,7 +1,7 @@
 title: $:/plugins/oeyoews/timeline/readme
 description: timeline
 
-[[在线文档|https://neotw.vercel.app/docs/plugins/timeline]]
+[[在线文档|https://tiddlywiki-starter-kit.oeyoews.top/docs/plugins/timeline]]
 
 https://github.com/NUKnightLab/TimelineJS3
 api: https://github.com/NUKnightLab/TimelineJS3/blob/master/API.md
