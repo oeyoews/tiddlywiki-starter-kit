@@ -7,3 +7,7 @@ tags: $:/tags/Stylesheet
     margin: 0 .05em 0 .1em;
     vertical-align: -0.15em;
 }
+
+.tc-edit-tags {
+	padding-left: 0;
+}
