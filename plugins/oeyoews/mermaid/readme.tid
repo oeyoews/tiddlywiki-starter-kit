@@ -1,5 +1,5 @@
 title: $:/plugins/oeyoews/mermaid/readme
-description: Mermaid Plugin(only flowchart and pie)
+description: Mermaid Plugin(only support flowchart, state and pie)
 
 ```mermaid
 info
