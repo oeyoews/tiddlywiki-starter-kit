@@ -1,11 +1,11 @@
 title: $:/plugins/oeyoews/mermaid/readme
 description: mermaid
 
-
 ```mermaid
 info
 ```
 
-!! NOTE
-
-zenuml is not supported here: https://github.com/mermaid-js/mermaid-cli/issues/564
+```mermaid
+graph
+Hello --> World
+```
