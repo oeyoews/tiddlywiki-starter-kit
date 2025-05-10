@@ -1,0 +1,8 @@
+title: $:/plugins/oeyoews/vue-rss/modal
+class: o-tm
+mask-closable: yes
+subtitle: {{$:/plugins/oeyoews/vue-rss/save}}
+
+<div class="antialiased prose prose-gray max-w-none prose-img:my-0 prose-a:no-underline prose-h2:mt-4 prose-blockquote:not-italic dark:prose-invert dark:prose-pre:bg-[#282c34] dark:prose-pre:text-white prose-p:mt-0">
+<$transclude tiddler="$:/temp/oeyoews/rss/content"/>
+</div>

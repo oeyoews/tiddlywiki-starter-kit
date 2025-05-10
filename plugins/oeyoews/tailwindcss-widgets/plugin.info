@@ -1,0 +1,19 @@
+{
+  "title": "$:/plugins/oeyoews/tailwindcss-widgets",
+  "description": "tailwindcss-widgets",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.3.4",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "tailwindcss-widgets",
+  "meat#disabled": "yes",
+  "qrcode": "yes",
+  "created": "20250504",
+  "dependents": [],
+  "stability": "STABILITY_2_STABLE",
+  "parent-plugin": [
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
+  ],
+  "list": "readme"
+}

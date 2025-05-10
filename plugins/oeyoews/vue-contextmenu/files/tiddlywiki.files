@@ -1,0 +1,55 @@
+{
+	"directories": [
+		{
+			"path": "templates",
+			"filesRegExp": "^.*\\.vue$",
+			"searchSubdirectories": true,
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/vue-contextmenu/templates/"
+				},
+				"hide-body": "yes"
+			}
+		},
+		{
+			"path": "i18n",
+			"filesRegExp": "^.*\\.js$",
+			"searchSubdirectories": true,
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/vue-contextmenu/i18n/"
+				},
+				"module-type": "library",
+				"type": "application/javascript"
+			}
+		},
+		{
+			"path": "plugins",
+			"filesRegExp": "^.*\\.js$",
+			"searchSubdirectories": true,
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/vue-contextmenu/plugins/"
+				},
+				"module-type": "library",
+				"type": "application/javascript"
+			}
+		},
+		{
+			"path": "components",
+			"filesRegExp": "^.*\\.js$",
+			"searchSubdirectories": true,
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/vue-contextmenu/components/"
+				},
+				"module-type": "library",
+				"type": "application/javascript"
+			}
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+  "title": "$:/plugins/oeyoews/vue-i18n",
+  "description": "vue-i18n",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.3.0",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "vue-i18n",
+  "meat#disabled": "yes",
+  "qrcode": "yes",
+  "created": "2024-03-03",
+  "parent-plugin": [
+    "$:/plugins/oeyoews/neotw-vue3"
+  ],
+  "list": "readme"
+}

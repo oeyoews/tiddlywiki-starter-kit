@@ -1,0 +1,25 @@
+title: $:/plugins/oeyoews/neotw-vue3/readme
+
+[[在线文档|https://tiddlywiki-starter-kit.oeyoews.top/docs/plugins/neotw-vue3]]
+
+! Neotw Vue3 Plugin
+
+为 TiddlyWiki 提供 Vue 3 集成支持的插件。
+
+!! 功能特性
+
+* 集成 Vue 3.5.13
+* 提供 Vue 组件模板加载机制
+* 支持直接在 TiddlyWiki 中使用 Vue 组件
+* 内置模板解析工具
+
+!! 使用方法
+
+!!! 基本用法
+
+```js
+const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate');
+const template = getTemplate('your-template.vue');
+```
+
+<!-- suffix 方式有 bug, 怀疑是 eval 导致了解析速度变慢，导致 Vue 加载过慢，别的模块找不到 vue, 本地加载不会有这种问题，本地构建打包也没问题 -->

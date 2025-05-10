@@ -1,0 +1,25 @@
+title: $:/plugins/oeyoews/qrcode/readme
+
+! QRCode svg format
+
+<$qrcode />
+
+<$qrcode renderType="text" text="这是一个二维码" avatarSrc="https://avatars.githubusercontent.com/u/72405338?v=4" />
+
+!! Params
+
+* `renderType`: {'url'|'text'} 当前条目地址
+* `text`: string
+* `width`: number
+
+!! TODO
+
+* viewtoolbar
+* support icon(logo), color https://github.com/soldair/node-qrcode/issues/240, https://github.com/ushelp/EasyQRCodeJS-NodeJS
+
+!! Credits
+
+* https://github.com/soldair/node-qrcode
+
+<!-- > qrcode-node 似乎最近不再维护，1.5.1 后有一个打包错误，umd  -->
+<!-- * title -->

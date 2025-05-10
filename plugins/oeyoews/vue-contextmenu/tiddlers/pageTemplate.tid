@@ -1,0 +1,5 @@
+title: $:/plugins/oeyoews/vue-contextmenu/pagetemplate
+
+<!-- tags: $:/tags/PageTemplate -->
+
+<$vue-global-contextmenu />
