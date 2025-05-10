@@ -21,7 +21,7 @@ fill:$(foregroundColor)$;
   <$set name="tv-config-toolbar-class" filter="[<tv-config-toolbar-class>] [<listItem>encodeuricomponent[]addprefix[tc-btn-]]"><$transclude tiddler=<<listItem>>/></$set>
   </$list>
 <%elseif [<env>match[https:]] %>
-  <$list filter="[[$:/core/ui/Buttons/permalink]] [[$:/core/ui/Buttons/close]]" storyview="pop" variable="listItem">
+  <$list filter="[[$:/core/ui/Buttons/export-tiddler]] [[$:/core/ui/Buttons/permalink]] [[$:/core/ui/Buttons/close]]" storyview="pop" variable="listItem">
   <$set name="tv-config-toolbar-class" filter="[<tv-config-toolbar-class>] [<listItem>encodeuricomponent[]addprefix[tc-btn-]]">
   <$transclude tiddler=<<listItem>>/>
   </$set>
