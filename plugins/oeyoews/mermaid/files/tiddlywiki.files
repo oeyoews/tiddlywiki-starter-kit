@@ -1,7 +1,7 @@
 {
 	"tiddlers": [
 		{
-			"file": "mermaid.min.js",
+			"file": "mermaid.tiny.js",
 			"fields": {
 				"type": "application/javascript",
 				"module-type": "library",

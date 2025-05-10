@@ -36,7 +36,7 @@ exports.startup = function () {
   CodeBlockWidget.prototype.mermaidRender = async function () {
     const language = this.language;
     if (language !== 'mermaid') return;
-    const mermaid = require('./mermaid.min.js');
+    const mermaid = require('./mermaid.tiny.js');
     const options = {
       securityLevel: 'loose',
       theme: 'default',
