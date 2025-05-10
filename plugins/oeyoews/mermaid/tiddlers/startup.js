@@ -11,7 +11,7 @@ exports.synchronous = true;
 exports.startup = function () {
   const CodeBlockWidget =
     require('$:/core/modules/widgets/codeblock.js').codeblock;
-  const zoomMermaid = require('./zoomMermaid.js')();
+  // const zoomMermaid = require('./zoomMermaid.js')();
 
   function centerSvg(svg) {
     const parser = new DOMParser();
@@ -63,7 +63,7 @@ exports.startup = function () {
       domNode.style.border = 'none';
 
       // 开启放大和缩小, 拖拽
-      zoomMermaid(domNode);
+      // zoomMermaid(domNode);
     } catch (e) {
       domNode.children[0].innerHTML = e.message;
       domNode.children[0].style.color = 'red';

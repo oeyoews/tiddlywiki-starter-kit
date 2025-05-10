@@ -13,3 +13,27 @@ Hello --> World
 !! Usage
 
 {{$:/plugins/oeyoews/mermaid/example}}
+
+```mermaid
+---
+config:
+  theme: forest
+  look: handDrawn
+---
+flowchart TD
+    Start([2004 TiddlyWiki 发布<br>作者: Jeremy Ruston]) --> Classic[TiddlyWiki Classic]
+
+    Classic -->|插件系统发展| Plugins[插件/宏生态丰富]
+    Classic -->|局限性显现| Limitations[浏览器兼容性差、扩展困难]
+    Classic --> TiddlyWeb[TiddlyWeb 项目尝试]
+
+    Limitations --> Rewrite[重新架构 TW2013]
+    Rewrite --> TW5[TiddlyWiki5 发布2014]
+
+    TW5 --> Features[模块化架构 + 可扩展核心]
+    Features --> NodeSupport[支持 Node.js环境]
+    Features --> ModernUI[现代化界面 + Markdown 支持]
+
+    TW5 -->|持续迭代| Evolve[增强 Tiddler 引擎、插件与主题（2020+）]
+    Evolve --> Future[未来方向：协作、多端同步、更多集成]
+```
