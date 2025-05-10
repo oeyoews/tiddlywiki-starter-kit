@@ -35,7 +35,7 @@
   background-color: var(--mx-menu-backgroud);
   border-radius: var(--mx-menu-backgroud-radius);
   padding: 12px 0;
-  /* box-shadow: 0 10px 40px 10px var(--mx-menu-shadow-color); */
+  box-shadow: 0 0px 10px 0px var(--mx-menu-shadow-color);
   opacity: 1;
   transition: opacity 0.2s ease-in-out;
 }
