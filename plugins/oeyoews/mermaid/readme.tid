@@ -1,5 +1,5 @@
 title: $:/plugins/oeyoews/mermaid/readme
-description: mermaid
+description: Mermaid Plugin
 
 ```mermaid
 info
@@ -9,3 +9,7 @@ info
 graph
 Hello --> World
 ```
+
+!! Usage
+
+{{$:/plugins/oeyoews/mermaid/example}}
