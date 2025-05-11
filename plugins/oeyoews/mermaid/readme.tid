@@ -10,7 +10,15 @@ graph
 Hello --> World
 ```
 
-!! Usage
+!! 功能特点
+
+* 支持 Mermaid 图表渲染
+* 支持下载 SVG 格式的图表（点击图表左上角的下载按钮）
+* 支持自定义主题和样式
+
+!! 使用方法
+
+使用 ```mermaid 代码块来创建图表：
 
 {{$:/plugins/oeyoews/mermaid/example}}
 

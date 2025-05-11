@@ -1,0 +1,59 @@
+title: $:/plugins/oeyoews/mermaid/styles
+tags: $:/tags/Stylesheet
+
+\define mermaid-download-button()
+.mermaid-download-btn {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 100;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.mermaid-download-btn:hover {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.mermaid-download-btn svg {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+}
+
+/* 确保 mermaid 容器是相对定位 */
+pre.mermaid {
+  position: relative;
+}
+
+/* 确保 mermaid SVG 居中显示 */
+pre svg[id^="mermaid_"] {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* 暗色主题适配 */
+html.dark .mermaid-download-btn {
+  background-color: rgba(50, 50, 50, 0.7);
+  color: #eee;
+  border-color: #555;
+}
+
+html.dark .mermaid-download-btn:hover {
+  background-color: rgba(70, 70, 70, 0.9);
+}
+\end
+
+<<mermaid-download-button>>
+
+
+
