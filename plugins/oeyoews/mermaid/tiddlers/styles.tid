@@ -41,6 +41,10 @@ pre svg[id^="mermaid_"] {
   max-width: 100%;
 }
 
+pre.mermaid-container code {
+  display: none;
+}
+
 /* 暗色主题适配 */
 html.dark .mermaid-download-btn {
   background-color: rgba(50, 50, 50, 0.7);
