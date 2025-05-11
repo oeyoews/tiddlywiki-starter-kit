@@ -5,7 +5,24 @@ module-type: library
 
 \*/
 
-const downloadSvg = require('./downloadSvg.js');
+function downloadSvg(svgContent, filename) {
+  // 创建Blob对象
+  const blob = new Blob([svgContent], { type: 'image/svg+xml' });
+  const url = URL.createObjectURL(blob);
+
+  // 创建下载链接
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = filename || 'mermaid-diagram.svg';
+
+  // 添加到文档并触发点击
+  document.body.appendChild(link);
+  link.click();
+
+  // 清理
+  document.body.removeChild(link);
+  URL.revokeObjectURL(url);
+}
 
 function createDownloadBtn(domNode, svgContent) {
   const downloadButton = document.createElement('button');
@@ -18,7 +35,7 @@ function createDownloadBtn(domNode, svgContent) {
 
   downloadButton.addEventListener('click', function (e) {
     e.stopPropagation(); // 防止事件冒泡
-    downloadSvg(svgContent);
+    downloadSvg(svgContent, `mermaid-diagram-${Date.now()}.svg`);
   });
 
   // 添加按钮到DOM

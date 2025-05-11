@@ -8,11 +8,12 @@ module-type: startup
 exports.platforms = ['browser'];
 exports.synchronous = true;
 
+// cache
+// loading
 exports.startup = function () {
   const CodeBlockWidget =
     require('$:/core/modules/widgets/codeblock.js').codeblock;
   // const zoomMermaid = require('./zoomMermaid.js')();
-  const downloadSvg = require('./downloadSvg.js');
   const options = require('./mermaidDefaultConfig.js');
   const createDownloadBtn = require('./createDownloadBtn.js');
 
