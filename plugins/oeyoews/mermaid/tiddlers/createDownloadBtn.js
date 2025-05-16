@@ -24,6 +24,36 @@ function downloadSvg(svgContent, filename) {
   URL.revokeObjectURL(url);
 }
 
+function toggleFullscreen(element) {
+  if (!document.fullscreenElement) {
+    element.requestFullscreen().catch((err) => {
+      console.warn(`全屏请求失败: ${err.message}`);
+    });
+  } else {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    }
+  }
+}
+
+function createFullscreenBtn(domNode) {
+  const fullscreenButton = document.createElement('button');
+  const fullscreenIcon = $tw.wiki.getTiddlerText(
+    '$:/plugins/oeyoews/mermaid/fullscreen-icon',
+  );
+  fullscreenButton.innerHTML = fullscreenIcon;
+  fullscreenButton.title = '全屏显示';
+  fullscreenButton.className = 'mermaid-fullscreen-btn';
+
+  fullscreenButton.addEventListener('click', function (e) {
+    e.stopPropagation(); // 防止事件冒泡
+    toggleFullscreen(domNode);
+  });
+
+  // 添加按钮到DOM
+  domNode.appendChild(fullscreenButton);
+}
+
 function createDownloadBtn(domNode, svgContent) {
   const downloadButton = document.createElement('button');
   const downloadIcon = $tw.wiki.getTiddlerText(
@@ -40,6 +70,9 @@ function createDownloadBtn(domNode, svgContent) {
 
   // 添加按钮到DOM
   domNode.appendChild(downloadButton);
+
+  // 添加全屏按钮
+  createFullscreenBtn(domNode);
 }
 
 module.exports = createDownloadBtn;
