@@ -40,6 +40,7 @@ NodeJs & TiddlyWiki5 & Git -.-> Local --> GitHub --> Build -.->  b[[Blog Page]]
 
 ```mermaid
 sequenceDiagram
+autonumber
     actor user as TiddlyWiki5 用户
     participant nodejs as TiddlyWiki5 Node.js
     participant website as 浏览器
