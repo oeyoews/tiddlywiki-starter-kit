@@ -24,13 +24,13 @@ exports.startup = function () {
     domNode.classList.add('mermaid-container');
     const mermaidText = domNode.textContent;
 
-    // 添加加载指示器
-    const loadingDiv = document.createElement('div');
-    loadingDiv.innerHTML = '加载中...';
-    loadingDiv.style.textAlign = 'center';
-    loadingDiv.style.padding = '10px';
-    loadingDiv.style.color = '#666';
-    domNode.appendChild(loadingDiv);
+    // // 添加加载指示器
+    // const loadingDiv = document.createElement('div');
+    // loadingDiv.innerHTML = '加载中...';
+    // loadingDiv.style.textAlign = 'center';
+    // loadingDiv.style.padding = '10px';
+    // loadingDiv.style.color = '#666';
+    // domNode.appendChild(loadingDiv);
 
     try {
       await mermaid.parse(mermaidText, {
@@ -45,14 +45,14 @@ exports.startup = function () {
       const { svg } = await mermaid.render(mermaidId, mermaidText);
 
       // 移除加载指示器
-      domNode.removeChild(loadingDiv);
+      // domNode.removeChild(loadingDiv);
 
       // 将SVG内容添加到DOM
       domNode.children[0].outerHTML = svg;
       createDownloadBtn(domNode, svg);
     } catch (e) {
       // 移除加载指示器
-      domNode.removeChild(loadingDiv);
+      // domNode.removeChild(loadingDiv);
 
       domNode.children[0].innerHTML = e.message;
       domNode.children[0].style.color = 'red';
