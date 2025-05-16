@@ -1,0 +1,32 @@
+title: $:/plugins/oeyoews/neotw/modules/to-top/ui
+
+<!-- tags: $:/tags/PageTemplate -->
+
+<!-- \define home-button()
+<$button tooltip="Back to home" class="o-btn-back" aria-label='home'>
+<$action-navigate $to="GettingStarted" $scroll="yes"/>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+  <svg stroke="currentColor" fill="none" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"></path></svg>
+</$list>
+</$button>
+\end -->
+
+<!-- emptystorymessage -->
+<!-- <$list filter="[[$:/StoryList]get[list]count[]match[0]]">
+<div id="stx-story-top">
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
+  <<home-button>>
+  <$daylight btn class="rounded-full transition hover:scale-105 ease-in-out hover:shadow"/>
+</$list>
+</div>
+</$list> -->
+
+<!-- non-storyriver -->
+<$list filter="[[$:/StoryList]get[list]!is[blank]]">
+    <div id="stx-story-top">
+      <!-- <<readonly-mode>> -->
+      <$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]">
+        <$daylight btn class="rounded-full"/>
+      </$list>
+    </div>
+</$list>

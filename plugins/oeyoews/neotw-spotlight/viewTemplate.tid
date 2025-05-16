@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/neotw-spotlight/viewTemplate
+
+<!-- tags: $:/tags/ViewTemplate -->
+
+<!-- 建议直接使用 medium-zoom  -->
+<$spotlightTiddler />

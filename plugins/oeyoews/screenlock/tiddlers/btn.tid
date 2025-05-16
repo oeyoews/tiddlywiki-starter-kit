@@ -1,0 +1,13 @@
+title: $:/plugins/oeyoews/screenlock/button
+tags: $:/tags/PageControls
+caption: {{$:/plugins/oeyoews/screenlock/icon}} 锁屏
+description: 锁定屏幕
+
+<$button message="tw-lock-screen" tooltip="锁定屏幕" aria-label="锁定屏幕" class=<<tv-config-toolbar-class>>>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+{{$:/plugins/oeyoews/screenlock/icon}}
+</$list>
+<$list filter="[<tv-config-toolbar-text>match[yes]]">
+<span class="tc-btn-text">锁屏</span>
+</$list>
+</$button>

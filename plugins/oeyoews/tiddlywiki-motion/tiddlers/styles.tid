@@ -1,0 +1,11 @@
+title: $:/plugins/oeyoews/tiddlywiki-motion/styles/dynamic
+<!-- tags: $:/tags/Stylesheet -->
+
+<!-- not work -->
+
+<$list filter="[{$:/state/plugins/oeyoews/tiddlywiki-motion/selected}] [has[draft.of]field:draft.of{$:/state/plugins/oeyoews/tiddlywiki-motion/selected}] +[escapecss[]]">
+[data-tiddler-title=<<currentTiddler>>] {
+  outline: <<colour primary>> 2px solid;
+  border: red 2px solid;
+}
+</$list>

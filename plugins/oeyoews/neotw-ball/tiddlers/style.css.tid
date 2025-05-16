@@ -1,0 +1,26 @@
+title: $:/plugins/oeyoews/neotw-ball/style.css
+tags: $:/tags/Stylesheet
+type: text/css
+
+.drag-ball {
+	--bg: rgba(0, 0, 0, 0.05);
+	position: fixed;
+	z-index: 10003;
+	right: 0;
+	top: 70%;
+	width: 50px;
+	height: 50px;
+	/* background: deepskyblue; */
+	/* background-color: transparent; */
+	border-radius: 50%;
+	box-shadow: 0px 0px 5px 1px var(--bg) * 1.5;
+	background-color: var(--bg);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-size: 14px;
+	letter-spacing: 2px;
+	user-select: none;
+	cursor: grab;
+}
