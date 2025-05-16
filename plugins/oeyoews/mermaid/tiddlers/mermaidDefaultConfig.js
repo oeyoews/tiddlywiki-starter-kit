@@ -12,5 +12,6 @@ const options = {
   htmlLabels: true,
   logLevel: 5,
   suppressErrorRendering: true,
+  sequence: { showSequenceNumbers: false },
 };
 module.exports = options;

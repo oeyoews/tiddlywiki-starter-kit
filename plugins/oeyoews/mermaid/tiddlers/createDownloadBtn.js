@@ -24,6 +24,7 @@ function downloadSvg(svgContent, filename) {
   URL.revokeObjectURL(url);
 }
 
+// 改用$tw.modal 需要再次渲染
 function toggleFullscreen(element) {
   if (!document.fullscreenElement) {
     element.requestFullscreen().catch((err) => {
