@@ -1,0 +1,13 @@
+title: $:/plugins/oeyoews/tiddlywiki-tailwindcss-v4/config
+tags: $:/tags/RawMarkup
+type: text/tailwindcss
+
+<style type="text/tailwindcss">
+	@theme {
+       --color-clifford: #da373d;
+       --color-gh: #89ddff;
+     }
+	@layer theme, components, utilities;
+	@import "tailwindcss/theme.css" layer(theme) important;
+	@import "tailwindcss/utilities.css" layer(utilities) important;
+</style>
