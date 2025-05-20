@@ -4,8 +4,11 @@ type: text/tailwindcss
 
 <style type="text/tailwindcss">
 	@theme {
-       --color-clifford: #da373d;
-       --color-gh: #89ddff;
+		--color-dimmed-100: #cdd9e5;
+		--color-dimmed-200: #d0d7de;
+		--color-dimmed-700: #444c56;
+		--color-dimmed-800: #2d333b;
+		--color-dimmed-900: #1c2128;
      }
 	@layer theme, components, utilities;
 	@import "tailwindcss/theme.css" layer(theme) important;
