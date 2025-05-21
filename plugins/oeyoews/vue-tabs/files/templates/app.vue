@@ -13,7 +13,7 @@
               {{ index }}. &nbsp;</sup>
             {{ item }}
             <button :title="t('tabs.closeTiddler')"
-              class="rounded-sm hover:bg-gray-200 dark:hover:bg-gray-700 opacity-0 group-hover:opacity-100 transition-all p-0 m-0"
+              class="rounded-xs hover:bg-gray-200 dark:hover:bg-gray-700 opacity-0 group-hover:opacity-100 transition-all p-0 m-0"
               :data-close-title="item" v-html="icons.closeTiddler">
             </button>
           </div>

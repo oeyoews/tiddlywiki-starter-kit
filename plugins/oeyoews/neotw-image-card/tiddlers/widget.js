@@ -42,7 +42,7 @@ class NeotwImageCardWidget extends Widget {
     // 创建复制按钮
     const copyBtn = createElement('button', {
       class:
-        'mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 hidden',
+        'mt-2 px-4 py-2 bg-blue-500 text-white rounded-sm hover:bg-blue-600 hidden',
       text: '复制图片',
     });
 

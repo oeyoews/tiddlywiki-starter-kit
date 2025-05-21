@@ -27,10 +27,10 @@
 			@update="$emit('onUpdate', $event)" @add="$emit('onAdd', $event)" @remove="$emit('onRemove', $event)"
 			class="flex flex-col grow min-h-[400px] max-h-[calc(100vh-100px)] mb-4 overflow-y-auto mx-4" :class="type">
 			<div v-for="(item) in data.items" :key="`${type}-${item.id}`"
-				class="relative rounded-md shadow-sm overflow-visible mb-2 shrink-0 flex-col cursor-move"
+				class="relative rounded-md shadow-xs overflow-visible mb-2 shrink-0 flex-col cursor-move"
 				:class="[ colorful ? colors[type] : 'bg-white' ]" @dblclick="$emit('editItem', item, type)"
 				@contextmenu.prevent.stop="$emit('deleteItem', item, type)">
-				<div class="pt-2 pb-3 rounded-sm px-3 ">
+				<div class="pt-2 pb-3 rounded-xs px-3 ">
 					<div class="line-clamp-2 overflow-y-auto" v-html="item.name">
 					</div>
 				</div>

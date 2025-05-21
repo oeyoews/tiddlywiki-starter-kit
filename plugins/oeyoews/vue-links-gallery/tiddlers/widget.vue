@@ -6,26 +6,26 @@
         v-model.trim="newDesc"
         required
         placeholder="desc"
-        class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+        class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-xs sm:text-sm border-gray-300 rounded-md"
       />
       <input
         type="text"
         v-model.trim="newLink"
         required
         placeholder="links"
-        class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+        class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-xs sm:text-sm border-gray-300 rounded-md"
       />
     </div>
     <button
       type="submit"
-      class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
+      class="px-4 py-2 bg-blue-500 text-white rounded-sm hover:bg-blue-700"
     >
       添加
     </button>
     <button
       type="button"
       @click.stop="toEdit"
-      class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-700"
+      class="px-4 py-2 bg-gray-500 text-white rounded-sm hover:bg-gray-700"
     >
       切换编辑模式
     </button>

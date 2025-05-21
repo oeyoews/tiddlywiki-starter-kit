@@ -42,7 +42,8 @@ async function showDialog(type, title, message) {
     const inputElement =
       type === 'prompt' ? document.createElement('input') : null;
     if (inputElement) {
-      inputElement.className = 'w-full p-2 border rounded mb-4 dark:bg-white';
+      inputElement.className =
+        'w-full p-2 border rounded-sm mb-4 dark:bg-white';
       inputElement?.focus();
       inputElement.addEventListener('keydown', (event) => {
         // enter to close modal

@@ -35,7 +35,7 @@
       </form>
       <!-- <div class="font-bold">智谱 AI: </div> -->
       <div v-html="the_last_message_html"
-        class="mt-8 rounded border-dimmed-700 p-2 antialiased prose prose-gray max-w-none prose-img:my-0 prose-a:no-underline prose-h2:mt-4 prose-blockquote:not-italic dark:prose-invert dark:prose-pre:bg-[#282c34] dark:prose-pre:text-white prose-p:mt-0">
+        class="mt-8 rounded-sm border-dimmed-700 p-2 antialiased prose prose-gray max-w-none prose-img:my-0 prose-a:no-underline prose-h2:mt-4 prose-blockquote:not-italic dark:prose-invert dark:prose-pre:bg-[#282c34] dark:prose-pre:text-white prose-p:mt-0">
       </div>
       <!-- <div>
         <el-button @click="copyToClipboard" class="shrink-0">copy</el-button>
