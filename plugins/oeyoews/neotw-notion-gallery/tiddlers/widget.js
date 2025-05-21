@@ -27,7 +27,7 @@ class CardsWidget extends Widget {
     const logger = new $tw.utils.Logger('neotw-notion-gallery');
     if (!$tw.modules.titles['tailwindcss.min.js']) {
       logger.alert(
-        "The plugin 'oeyoews/neotw-notion-gallery' requires the 'tiddlywiki/tailwindcss-plus' plugin to be installed",
+        "The plugin 'oeyoews/neotw-notion-gallery' requires the 'tiddlywiki/tailwindcss-v4' plugin to be installed",
       );
     }
     // one browser env

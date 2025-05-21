@@ -12,7 +12,7 @@
   "created": "20250226",
   "dependents": [
     "$:/plugins/oeyoews/neotw-vue3",
-    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-v4"
   ],
   "stability": "STABILITY_2_STABLE",
   "list": "readme"

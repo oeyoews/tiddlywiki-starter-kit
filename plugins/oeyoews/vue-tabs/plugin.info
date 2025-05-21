@@ -11,7 +11,7 @@
   "qrcode": "yes",
   "created": "2024-03-16",
   "dependents": [
-    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-v4",
     "$:/plugins/oeyoews/neotw-vue3",
     "$:/plugins/oeyoews/vue-i18n",
     "$:/plugins/oeyoews/vue-draggable-plus",

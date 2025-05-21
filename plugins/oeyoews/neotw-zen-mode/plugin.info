@@ -8,7 +8,7 @@
   "plugin-type": "plugin",
   "name": "neotw-zen-mode",
   "dependents": [
-    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-v4"
   ],
   "list": "readme"
 }

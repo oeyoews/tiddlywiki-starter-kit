@@ -9,7 +9,7 @@
   "meta#disabled": "yes",
   "name": "neotw-notion-gallery",
   "dependents": [
-    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-v4"
   ],
   "list": "readme"
 }

@@ -12,10 +12,10 @@
   "created": "20240319",
   "dependents": [
     "$:/plugins/oeyoews/neotw-vue3",
-    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-v4",
     "$:/plugins/oeyoews/vue-context-menu",
     "$:/plugins/oeyoews/vue-i18n",
-    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus",
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-v4",
     "$:/plugins/oeyoews/element-plus"
   ],
   "list": "readme"

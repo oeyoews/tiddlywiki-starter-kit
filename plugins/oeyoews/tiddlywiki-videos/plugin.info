@@ -10,6 +10,6 @@
   "meta#disabled": "yes",
   "list": "readme",
   "dependents": [
-    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-v4"
   ]
 }

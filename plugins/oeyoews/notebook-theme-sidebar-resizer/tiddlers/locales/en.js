@@ -9,5 +9,5 @@ notebook-theme-sidebar-resizer locale en
 module.exports = {
   pluginname: 'notebook-theme-sidebar-resizer',
   warning:
-    "[notebook-theme-sidebar-resizer]: requires the 'tiddlywiki/tailwindcss-plus' plugin to be installed"
+    "[notebook-theme-sidebar-resizer]: requires the 'tiddlywiki/tailwindcss-v4' plugin to be installed",
 };

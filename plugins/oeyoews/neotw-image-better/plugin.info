@@ -9,7 +9,7 @@
   "name": "neotw-image-better",
   "dependents": [
     "$:/plugins/oeyoews/image-observer",
-    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus"
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-v4"
   ],
   "list": "readme"
 }

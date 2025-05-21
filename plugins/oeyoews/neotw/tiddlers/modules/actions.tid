@@ -27,7 +27,7 @@ title: $:/plugins/oeyoews/neotw/modules/landing/layout-url
 </$list>
 
 <$list filter="[<layout>match[?layout=tailwindcss]]">
-  <$action-setfield $tiddler="$:/layout" text="$:/plugins/oeyoews/tiddlywiki-tailwindcss-plus/Layout"/>
+  <$action-setfield $tiddler="$:/layout" text="$:/plugins/oeyoews/tiddlywiki-tailwindcss-v4/Layout"/>
 </$list>
 
 <!-- for landing layout -->
