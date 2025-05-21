@@ -21,7 +21,8 @@ exports.startup = function () {
     mermaid.initialize(options);
 
     const domNode = this.domNodes[0];
-    domNode.classList.add('mermaid-container');
+    // domNode.classList.add('mermaid-container');
+    domNode.className = 'mermaid-container';
     const mermaidText = domNode.textContent;
 
     // // 添加加载指示器

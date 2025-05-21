@@ -36,7 +36,8 @@ codeblock subclass to support the render mermaid
     if (this.postRender) {
       this.postRender();
     }
-    if (this.mermaidRender) {
+    // 修复 readme fetch error
+    if (this.mermaidRender && $tw.browser && !domNode?.isTiddlyWikiFakeDom) {
       this.mermaidRender();
     }
   };
