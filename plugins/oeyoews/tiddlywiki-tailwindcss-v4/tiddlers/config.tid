@@ -1,6 +1,8 @@
 title: $:/plugins/oeyoews/tiddlywiki-tailwindcss-v4/config
 tags: $:/tags/RawMarkup
 type: text/tailwindcss
+hide-body: yes
+description: tailwindcss config for tw(add hide-body to void tailwindcss scan this and cause error)
 
 <style type="text/tailwindcss">
 	@theme {
