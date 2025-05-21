@@ -85,7 +85,7 @@ const oeyoewsPlugins = [
   'notify', // vue notify lib
   // ui
   'tiddlywiki-modal-ui',
-  'tiddlywiki-tailwindcss-plus',
+  'tiddlywiki-tailwindcss-v4',
   'neotw-notion-gallery',
   'tiddlywiki-tiddler-info',
   'tiddlywiki-gravatar',

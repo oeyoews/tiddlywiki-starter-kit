@@ -2,7 +2,7 @@
   <div class="scroll-container">
     <transition name="scroll" mode="out-in">
       <div v-if="currentTitle" :key="currentTitle"
-        class="title-item bg-gray-200/70 backdrop-blur-md dark:bg-dimmed-800 px-2 py-1 rounded-sm text-black dark:text-white flex items-center gap-3"
+        class="title-item bg-gray-200/70 backdrop-blur-md dark:bg-dimmed-800 px-2 py-1 rounded-xs text-black dark:text-white flex items-center gap-3"
         @click="goToTiddler(currentTitle)">
         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" class="right-1">
           <path fill="currentColor"

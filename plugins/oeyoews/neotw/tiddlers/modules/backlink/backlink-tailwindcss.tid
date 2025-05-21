@@ -8,7 +8,7 @@ list-before: $:/core/ui/ViewTemplate/subtitle
   <$list filter="[<currentTiddler>addprefix[$:/temp/oeyoews/BacklinkBox/]]" variable="stateTiddler">
     <!-- <$button popup=<<stateTiddler>> class="opacity-70 select-none cursor-pointer inline-flex items-center flex-shrink-0 whitespace-nowrap h-7 rounded-md pl-1 pr-2 bg-transparent border-none transition-all duration-300" tooltip="Show backlinks"> -->
     <!-- TODO: have capitalize button bug -->
-    <$button popup=<<stateTiddler>> class="inline-flex items-center px-2 py-1 border border-transparent rounded-md font-semibold text-xs text-white bg-indigo-500 hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" tooltip="Show backlinks">
+    <$button popup=<<stateTiddler>> class="inline-flex items-center px-2 py-1 border border-transparent rounded-md font-semibold text-xs text-white bg-indigo-500 hover:bg-indigo-600 focus:outline-hidden focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" tooltip="Show backlinks">
       {{$:/core/images/link}}&nbsp;<strong><<backlinkCount>> backlink<$reveal type="nomatch" text=<<backlinkCount>> default="1">s</$reveal></strong>
     </$button>
     <$reveal type="popup" state=<<stateTiddler>> position="below" tag="div" class="border rounded-md bg-white  max-h-72 w-min-90vw md:w-72 shadow-md overflow-hidden filter-contrast-90 pb-1 mt-2">

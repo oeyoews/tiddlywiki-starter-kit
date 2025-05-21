@@ -26,7 +26,7 @@ class MarkdownImporterWidget extends Widget {
 
     const btn = createElement('button', {
       text: 'Click me',
-      class: 'rounded p-1',
+      class: 'rounded-sm p-1',
     });
 
     const domNode = createElement('div', {

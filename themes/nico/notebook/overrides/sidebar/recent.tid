@@ -18,7 +18,7 @@ title: $:/core/ui/SideBar/Recent
 <div class="tc-menu-list-subitem">
 <$link to={{!!title}} class="p-1 mb-1 relative group">
 <<timeline-title>>
-<!-- <div class="rounded bg-gray-200 dark:bg-dimmed-900 w-full w-full absolute h-0.5 group-hover:scale-100 scale-0 duration-500 transition-all -mt-1 delay-100" /> -->
+<!-- <div class="rounded-sm bg-gray-200 dark:bg-dimmed-900 w-full w-full absolute h-0.5 group-hover:scale-100 scale-0 duration-500 transition-all -mt-1 delay-100" /> -->
 </$link>
 </div>
 </$list>

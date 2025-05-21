@@ -5,7 +5,7 @@ title: $:/plugins/oeyoews/vue-rss/save
 <$view tiddler=<<tiddler>> field="caption" />
 <div class="flex items-center">
 <$button class="bg-transparent">
-  <span class="hover:bg-gray-200 dark:hover:bg-gray-700 transition-all rounded px-2 py-1 text-xs">Save</span>
+  <span class="hover:bg-gray-200 dark:hover:bg-gray-700 transition-all rounded-sm px-2 py-1 text-xs">Save</span>
 <!-- save local  -->
 <$action-setfield
 	$tiddler={{{ [<tiddler>get[caption]] }}}
@@ -23,7 +23,7 @@ title: $:/plugins/oeyoews/vue-rss/save
 </$button>
 
 <$button class="bg-transparent">
-  <span class="hover:bg-gray-200 dark:hover:bg-gray-700 transition-all rounded px-2 py-1 text-xs">Esc</span>
+  <span class="hover:bg-gray-200 dark:hover:bg-gray-700 transition-all rounded-sm px-2 py-1 text-xs">Esc</span>
 <$action-sendmessage $message="tm-close-tiddler" $param=<<currentTiddler>>/>
 </$button>
 </div>

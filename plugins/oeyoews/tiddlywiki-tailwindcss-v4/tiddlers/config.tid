@@ -1,0 +1,19 @@
+title: $:/plugins/oeyoews/tiddlywiki-tailwindcss-v4/config
+tags: $:/tags/RawMarkup
+type: text/tailwindcss
+hide-body: yes
+description: tailwindcss config for tw(add hide-body to void tailwindcss scan this and cause error)
+
+<style type="text/tailwindcss">
+	@theme {
+		--color-dimmed-100: #cdd9e5;
+		--color-dimmed-200: #d0d7de;
+		--color-dimmed-700: #444c56;
+		--color-dimmed-800: #2d333b;
+		--color-dimmed-900: #1c2128;
+     }
+	@custom-variant dark (&:where(.dark, .dark *));
+	@layer theme, components, utilities;
+	@import "tailwindcss/theme.css" layer(theme) important;
+	@import "tailwindcss/utilities.css" layer(utilities) important;
+</style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="p-2 rounded inline-flex bg-neutral-200 my-2 text-black font-semibold">
+  <div class="p-2 rounded-sm inline-flex bg-neutral-200 my-2 text-black font-semibold">
     <span ref="codeRef">
       {{ code }}
     </span>

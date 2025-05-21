@@ -21,7 +21,7 @@
   </div>
 
   <Transition>
-    <div class="p-4 rounded border border-solid dark:border-gray-400 my-2 border-gray-200" v-if="title" :key="title">
+    <div class="p-4 rounded-sm border border-solid dark:border-gray-400 my-2 border-gray-200" v-if="title" :key="title">
       <h2>
         {{ title }}
       </h2>
