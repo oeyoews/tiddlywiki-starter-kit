@@ -10,6 +10,7 @@ type: text/tailwindcss
 		--color-dimmed-800: #2d333b;
 		--color-dimmed-900: #1c2128;
      }
+	@custom-variant dark (&:where(.dark, .dark *));
 	@layer theme, components, utilities;
 	@import "tailwindcss/theme.css" layer(theme) important;
 	@import "tailwindcss/utilities.css" layer(utilities) important;
