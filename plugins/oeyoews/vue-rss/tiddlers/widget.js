@@ -21,6 +21,14 @@ class RssWidget extends Widget {
 
     const ssr = this.document.isTiddlyWikiFakeDom;
     if (ssr) return;
+    const domNode = this.document.createElement('div');
+    if (!window?.electronAPI) {
+      domNode.textContent = 'Please Use this plugin(vue-rss) on Tiddlywiki App';
+      domNode.style.color = 'red';
+      domNode.style.fontWeight = 'bold';
+      parent.insertBefore(domNode, nextSibling);
+      return;
+    }
 
     const vuelib = '$:/plugins/oeyoews/neotw-vue3/vue.global.prod.js';
     // const ElementPlus = require('element-plus.min.js');
@@ -32,7 +40,6 @@ class RssWidget extends Widget {
 
     const { createApp } = window.Vue;
     const component = require('./app');
-    const domNode = this.document.createElement('div');
 
     try {
       const app = createApp(component(rss, proxy));

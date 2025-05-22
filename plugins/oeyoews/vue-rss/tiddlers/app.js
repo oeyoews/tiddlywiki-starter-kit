@@ -181,28 +181,32 @@ const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
       },
 
       async fetchRSS() {
-        if (!window._fetch) {
-          await new Promise((resolve, reject) => {
-            const interval = 300;
-            const timeout = 30000;
-            let timerId = null;
+        // if (window?.electronAPI) {
+        //   console.error('Just for Tiddlywiki App');
+        //   return;
+        // }
+        // if (!window._fetch) {
+        //   await new Promise((resolve, reject) => {
+        //     const interval = 300;
+        //     const timeout = 30000;
+        //     let timerId = null;
 
-            const check = () => {
-              if (window._fetch) {
-                clearInterval(checkInterval);
-                clearTimeout(timerId);
-                resolve();
-              }
-            };
+        //     const check = () => {
+        //       if (window._fetch) {
+        //         clearInterval(checkInterval);
+        //         clearTimeout(timerId);
+        //         resolve();
+        //       }
+        //     };
 
-            const checkInterval = setInterval(check, interval);
+        //     const checkInterval = setInterval(check, interval);
 
-            timerId = setTimeout(() => {
-              clearInterval(checkInterval);
-              reject(new Error('wait window._fetch timeout'));
-            }, timeout);
-          });
-        }
+        //     timerId = setTimeout(() => {
+        //       clearInterval(checkInterval);
+        //       reject(new Error('wait window._fetch timeout'));
+        //     }, timeout);
+        //   });
+        // }
 
         let RSS_URL = rss;
 
@@ -210,7 +214,9 @@ const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
           const getContent = this.getContent;
           const parser = new DOMParser();
 
-          const data = await window._fetch(RSS_URL);
+          const data = await window?.electronAPI.startFetchRSSData({
+            url: RSS_URL,
+          });
 
           // if (!response) {
           //   console.error('fetch error for' + RSS_URL);
