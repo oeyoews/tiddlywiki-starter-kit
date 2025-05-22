@@ -4,8 +4,8 @@ title: $:/plugins/oeyoews/vue-rss/save
 <div class="flex justify-between">
 <$view tiddler=<<tiddler>> field="caption" />
 <div class="flex items-center">
-<$button class="bg-transparent">
-  <span class="hover:bg-gray-200 dark:hover:bg-gray-700 transition-all rounded-sm px-2 py-1 text-xs">Save</span>
+<$button class="hover:bg-gray-200 dark:hover:bg-gray-700 transition-all rounded-sm px-2 py-1 text-xs">
+  Save
 <!-- save local  -->
 <$action-setfield
 	$tiddler={{{ [<tiddler>get[caption]] }}}
@@ -22,8 +22,8 @@ title: $:/plugins/oeyoews/vue-rss/save
 <$action-sendmessage $message="tm-notify" $param="$:/plugins/oeyoews/vue-rss/save-notify"/>
 </$button>
 
-<$button class="bg-transparent">
-  <span class="hover:bg-gray-200 dark:hover:bg-gray-700 transition-all rounded-sm px-2 py-1 text-xs">Esc</span>
+<$button class="hover:bg-gray-200 dark:hover:bg-gray-700 transition-all rounded-sm px-2 py-1 text-xs ml-1">
+  ESC
 <$action-sendmessage $message="tm-close-tiddler" $param=<<currentTiddler>>/>
 </$button>
 </div>

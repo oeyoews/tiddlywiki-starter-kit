@@ -69,12 +69,10 @@ const browserType = () => {
   return browserModel;
 };
 
+// TODO: 不支持mobile, tiddlywiki-app 插件
 const isSafari = browserType() === 'Safari';
 
-const app = (
-  rss = 'https://talk.tiddlywiki.org/posts.rss',
-  proxy = 'https://corsproxy.io/?',
-) => {
+const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
   const component = {
     setup() {
       const rssItems = ref([]);
@@ -114,7 +112,6 @@ const app = (
       return {
         card,
         icon,
-        proxy,
         rss,
         error,
         order,
@@ -184,24 +181,43 @@ const app = (
       },
 
       async fetchRSS() {
-        let RSS_URL = rss;
-        // TODO: for next support disable proxy
-        if (this.proxy) {
-          RSS_URL = this.proxy + rss;
+        if (!window._fetch) {
+          await new Promise((resolve, reject) => {
+            const interval = 300;
+            const timeout = 30000;
+            let timerId = null;
+
+            const check = () => {
+              if (window._fetch) {
+                clearInterval(checkInterval);
+                clearTimeout(timerId);
+                resolve();
+              }
+            };
+
+            const checkInterval = setInterval(check, interval);
+
+            timerId = setTimeout(() => {
+              clearInterval(checkInterval);
+              reject(new Error('wait window._fetch timeout'));
+            }, timeout);
+          });
         }
+
+        let RSS_URL = rss;
 
         try {
           const getContent = this.getContent;
           const parser = new DOMParser();
 
-          const response = await fetch(RSS_URL);
+          const data = await window._fetch(RSS_URL);
 
-          if (!response) {
-            console.error('fetch error for' + RSS_URL);
-            return;
-          }
+          // if (!response) {
+          //   console.error('fetch error for' + RSS_URL);
+          //   return;
+          // }
 
-          const data = await response.text();
+          // const data = await response.text();
 
           const xmlDoc = parser.parseFromString(data, 'text/xml');
 

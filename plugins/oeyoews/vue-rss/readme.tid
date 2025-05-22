@@ -1,6 +1,10 @@
 title: $:/plugins/oeyoews/vue-rss/readme
 description: vue-rss
 
+!! NOTE
+
+> A Tiddlywiki App RSS Plugin.
+
 !! Usage
 
 ```
