@@ -42,35 +42,35 @@ function relativeTime(dateString) {
   return relativeTime;
 }
 
-const browserType = () => {
-  // 获取浏览器的用户代理信息
-  const userAgent = navigator.userAgent;
+// const browserType = () => {
+//   // 获取浏览器的用户代理信息
+//   const userAgent = navigator.userAgent;
 
-  // 利用正则表达式匹配浏览器型号
-  let browserModel = 'Unknown';
+//   // 利用正则表达式匹配浏览器型号
+//   let browserModel = 'Unknown';
 
-  // 匹配常见浏览器型号
-  if (/Chrome/.test(userAgent)) {
-    // 匹配Chrome浏览器
-    browserModel = 'Chrome';
-  } else if (/Firefox/.test(userAgent)) {
-    // 匹配Firefox浏览器
-    browserModel = 'Firefox';
-  } else if (/Safari/.test(userAgent)) {
-    // 匹配Safari浏览器
-    browserModel = 'Safari';
-  } else if (/Edge/.test(userAgent)) {
-    // 匹配Edge浏览器
-    browserModel = 'Edge';
-  } else if (/MSIE|Trident/.test(userAgent)) {
-    // 匹配IE浏览器
-    browserModel = 'Internet Explorer';
-  }
-  return browserModel;
-};
+//   // 匹配常见浏览器型号
+//   if (/Chrome/.test(userAgent)) {
+//     // 匹配Chrome浏览器
+//     browserModel = 'Chrome';
+//   } else if (/Firefox/.test(userAgent)) {
+//     // 匹配Firefox浏览器
+//     browserModel = 'Firefox';
+//   } else if (/Safari/.test(userAgent)) {
+//     // 匹配Safari浏览器
+//     browserModel = 'Safari';
+//   } else if (/Edge/.test(userAgent)) {
+//     // 匹配Edge浏览器
+//     browserModel = 'Edge';
+//   } else if (/MSIE|Trident/.test(userAgent)) {
+//     // 匹配IE浏览器
+//     browserModel = 'Internet Explorer';
+//   }
+//   return browserModel;
+// };
 
 // TODO: 不支持mobile, tiddlywiki-app 插件
-const isSafari = browserType() === 'Safari';
+// const isSafari = browserType() === 'Safari';
 
 const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
   const component = {
