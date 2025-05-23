@@ -13,6 +13,7 @@ exports.after = ['startup'];
 exports.synchronous = true;
 
 exports.startup = () => {
+  if (!window.electronAPI) return;
   const action = require('./action');
   $tw.rootWidget.addEventListener('om-tiddler-format', (event) => {
     action(event?.paramObject?.title || event.tiddlerTitle);
