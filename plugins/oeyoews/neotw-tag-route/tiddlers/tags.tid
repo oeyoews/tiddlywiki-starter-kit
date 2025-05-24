@@ -1,0 +1,5 @@
+title: $:/plugins/oeyoews/neotw-tag-route/tags.json
+_render_template: $:/core/templates/server/tags.json
+_render_type:json
+
+<<jsontiddler title:"$:/plugins/oeyoews/neotw-tag-route/tags-template.json">>

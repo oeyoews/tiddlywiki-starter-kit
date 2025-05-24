@@ -1,0 +1,16 @@
+{
+  "title": "$:/plugins/oeyoews/neotw-reading-time",
+  "description": "neotw-reading-time",
+  "author": "oeyoews",
+  "version": "0.1.0",
+  "core-version": ">=5.3.4",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "neotw-reading-time",
+  "meat#disabled": "yes",
+  "qrcode": "yes",
+  "created": "20250227",
+  "dependents": [],
+  "stability": "STABILITY_2_STABLE",
+  "list": "readme"
+}
