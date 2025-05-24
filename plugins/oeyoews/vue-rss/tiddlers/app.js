@@ -84,46 +84,16 @@ const app = (rss = 'https://talk.tiddlywiki.org/posts.rss') => {
           console.error(e.message);
         }
       },
-      getContent(data, tag) {
-        const res = data?.getElementsByTagName(tag)[0]?.textContent;
-        if (res) {
-          return res;
-        } else {
-          return '';
-        }
-      },
-
-      getImg(item) {
-        try {
-          let content = this.getContent(item, 'content');
-          if (!content) {
-            content = this.getContent(item, 'description');
-          }
-          const parser = new DOMParser();
-          const doc = parser.parseFromString(content, 'text/html');
-          let src = doc.getElementsByTagName('img')[0]?.src;
-          if (!src) {
-            src = this.icon;
-          }
-          return src;
-        } catch (e) {
-          return this.icon;
-        }
-      },
 
       async fetchRSS() {
         let RSS_URL = rss;
 
         try {
-          const getContent = this.getContent;
-          const parser = new DOMParser();
-
           const data = await window?.electronAPI.startFetchRSSData({
             url: RSS_URL,
           });
 
           const rssData = await rss2json(data);
-          // console.log(rssData);
           this.channel = rssData.channel;
 
           this.rssItems = rssData.items;
