@@ -6,4 +6,6 @@ description: ~TailwindCss
 
 <!-- https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4 -->
 
+> NOTE: 首次安装后需要刷新/重启tiddlywiki(nodejs)
+
 [[在线文档|https://tiddlywiki-starter-kit.oeyoews.top/docs/plugins/tiddlywiki-tailwindcss-v4]]
