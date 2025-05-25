@@ -18,6 +18,10 @@ module.exports = class Motion {
       return;
     }
     this.navigatorWidget = this.getNavigatorWidget($tw.rootWidget);
+    if (!this.navigatorWidget) {
+      console.error('motion init error');
+      return;
+    }
     $tw.hooks.addHook(
       'th-closing-tiddler',
       this.handleClosingTiddler.bind(this),
@@ -95,12 +99,25 @@ module.exports = class Motion {
     }
   }
   getNavigatorWidget(widget) {
-    const child = widget.children[0];
-    if (child.parseTreeNode.type == 'navigator') {
-      return child;
+    // tiddlywiki app 启动其他默认布局会报错
+    const stack = [widget];
+
+    // 防止递归栈溢出
+    while (stack.length > 0) {
+      const current = stack.pop();
+      if (!current) continue;
+
+      const child = current.children?.[0];
+      if (child?.parseTreeNode?.type === 'navigator') {
+        return child;
+      }
+
+      if (child) stack.push(child);
     }
-    return this.getNavigatorWidget(child);
+
+    return null;
   }
+
   getTiddlerElement(title) {
     return document.querySelector(
       `[data-tiddler-title="${CSS.escape(title)}"]`,

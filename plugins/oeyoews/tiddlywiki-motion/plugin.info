@@ -3,7 +3,7 @@
   "name": "motion",
   "description": "Vim-like keyboard shortcuts for TiddlyWiki",
   "author": "oeyoews",
-  "version": "0.5.0",
+  "version": "0.5.4",
   "core-version": ">=5.3.1",
   "source": "https://github.com/oeyoews/neotw/plugins/tiddlywiki-motion",
   "plugin-type": "plugin",
