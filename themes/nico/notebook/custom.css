@@ -1,0 +1,314 @@
+/* gradient hr */
+hr {
+  height: 1px;
+  /* background-image: linear-gradient(135deg, #12c2e9, #c9ffbf); */
+  border: none !important;
+  border-radius: 3px;
+  margin: 0.25rem 0 !important;
+  background-color: lavender;
+}
+
+.gradient {
+  /* display: inline; */
+  background-image: linear-gradient(135deg, #12c2e9, #ffafbd, #c9ffbf);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* better focus-visible */
+/* disable it */
+:focus-visible {
+  /* outline: #7f4bca 2px solid !important; */
+  outline: none;
+}
+
+blockquote {
+  /* border-left: 3px solid #dfdfdf !important; */
+  margin-left: 0 !important;
+}
+
+blockquote > div {
+  margin: 4px 1px;
+}
+
+/* remove editor border */
+.tc-editor-toolbar button,
+.tc-editor-toolbar button.tc-btn-invisible {
+  border: none !important;
+}
+
+.tc-edit-tags {
+  border: none;
+}
+
+.tc-tiddler-frame input.tc-edit-texteditor {
+  border: none;
+}
+
+/* remove extra underline with image lin */
+a {
+  /* NOTE: 这个颜色会导致导出的 html 正常的文本也是这个颜色？？？ */
+  /* color: #007bff; */
+  text-decoration: none !important;
+}
+
+/* remove more border */
+.tc-tab-content.tc-vertical {
+  border-left: 0;
+}
+
+.tc-more-sidebar > .tc-tab-set > .tc-tab-buttons > button.tc-tab-selected {
+  border: none;
+}
+
+.tc-more-sidebar > .tc-tab-set > .tc-tab-buttons > button {
+  border: none;
+}
+
+/* tc-notification */
+.tc-notification {
+  color: black;
+  border-radius: 5px;
+  /** background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59); */
+  border: 2px;
+  box-shadow: 0 5px 20px rgb(0 0 0 / 12%);
+}
+
+/* better editor bar @kookma plugin */
+.tc-tiddler-controls {
+  & .tc-image-delete-button {
+    fill: #ebb;
+  }
+  & .tc-image-cancel-button {
+    fill: #ed9;
+  }
+  & .tc-image-done-button {
+    fill: #beb;
+  }
+  & .tc-image-tiddler-fullscreen-button {
+    fill: rgb(181, 161, 252);
+  }
+  & .tc-image-prettier-button {
+    fill: #f55b50;
+  }
+}
+
+/* just show btn on hover */
+.tc-tiddler-controls > button {
+  scale: 0.8;
+  transition: scale 0.2s ease-in-out;
+  &:hover {
+    scale: 1;
+  }
+}
+
+/* enhance font size */
+.tc-tiddler-frame .tc-tiddler-body {
+  font-size: 20px;
+}
+
+/* cm5 */
+/* .CodeMirror {
+  border: 0;
+}
+
+.CodeMirror-wrap pre.CodeMirror-line {
+  font-size: 20px;
+}
+.CodeMirror-wrap pre.CodeMirror-line {
+	font-size: 18px;
+}
+
+.cm-s-tiddlywiki .CodeMirror-activeline-background,
+.cm-s-tiddlywiki .CodeMirror-activeline-gutter .CodeMirror-linenumber {
+  background: #00000008;
+}
+
+.CodeMirror-wrap pre.CodeMirror-line {
+    font-size: 20px !important;
+}
+*/
+
+/* remove btn border */
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  background: #00000008;
+  /* text-transform: capitalize; */
+}
+
+.tc-modal-backdrop {
+  cursor: pointer;
+}
+
+.tc-tab-divider,
+.tc-plugin-info,
+.tc-plugin-info-dropdown {
+  border: none;
+}
+
+/* switch layout */
+.tc-chosen,
+.tc-chooser-item:hover {
+  border: none;
+}
+
+select {
+  border: none;
+}
+
+/* editor view */
+.tc-tiddler-preview-preview {
+  border: none !important;
+  font-size: 20px;
+}
+
+.nc-bar input[type='search']:focus {
+  box-shadow: 0 0 0 0 transparent;
+}
+
+/* layout better */
+.tc-chooser-item {
+  margin: 4px 0;
+}
+
+blockquote {
+  position: relative;
+  border: none;
+
+  p::after,
+  div::after {
+    position: absolute !important;
+    top: 0;
+    left: 4px;
+    content: '';
+    height: 100%;
+    /* width: 4px; */
+    /* background: #539bf5; */
+    border-radius: 10px;
+    border-left: 3.5px solid #539bf5;
+  }
+}
+
+/* overwrite */
+.tc-menu-list-subitem {
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* just support markdown tiddler now */
+[data-tiddler-title] .markdown h2 {
+  position: relative;
+  display: inline-block;
+
+  /* 初始状态下，隐藏::after内容 */
+  &::after {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 512 512'%3E%3Cpath fill='%23ffb636' d='m209.357 307.11l-34.694-34.694c-30.35-30.35-30.35-79.732 0-110.082l25 25c-16.565 16.564-16.565 43.518 0 60.082l34.694 34.694z'/%3E%3Cpath fill='%23ff473e' d='M214.135 226.93c-19.933 0-39.866-7.587-55.041-22.762c-30.349-30.35-30.349-79.732 0-110.082l68.928-68.927c14.701-14.702 34.249-22.798 55.041-22.798s40.339 8.097 55.041 22.798c30.349 30.35 30.349 79.732 0 110.081l-68.928 68.928c-15.175 15.174-35.108 22.762-55.041 22.762m68.927-189.215c-11.349 0-22.017 4.419-30.041 12.443l-68.928 68.927c-16.564 16.565-16.564 43.518 0 60.083c8.024 8.024 18.693 12.443 30.041 12.443s22.017-4.419 30.041-12.443l68.928-68.928c16.564-16.564 16.564-43.517 0-60.082c-8.024-8.023-18.693-12.443-30.041-12.443'/%3E%3Cpath fill='%23009aaf' d='M242.509 504.369c-20.792 0-40.338-8.097-55.041-22.799s-22.799-34.249-22.799-55.04c0-20.792 8.097-40.339 22.799-55.041l68.927-68.928l25 25l-68.928 68.928c-8.024 8.023-12.444 18.692-12.444 30.041s4.419 22.017 12.443 30.04c16.565 16.564 43.518 16.564 60.083 0l68.927-68.927l25 25l-68.926 68.927c-14.702 14.702-34.25 22.799-55.041 22.799'/%3E%3Cpath fill='%23ffb636' d='M298.631 364.104c-19.933 0-39.866-7.587-55.041-22.762l-49.615-49.615l25-25l49.615 49.615c16.563 16.564 43.517 16.564 60.082 0s16.564-43.517 0-60.082l-68.928-68.927l25-25l68.928 68.927c30.349 30.35 30.349 79.732 0 110.082c-15.175 15.176-35.109 22.762-55.041 22.762'/%3E%3Cpath fill='%23ffb636' d='m199.662 187.334l-24.999-25c14.702-14.702 34.249-22.798 55.041-22.798s40.338 8.097 55.041 22.799l-25 24.999c-8.024-8.024-18.692-12.443-30.041-12.443s-22.017 4.419-30.042 12.443'/%3E%3Cpath fill='%23009aaf' d='m366.476 412.644l-24.998-25c8.023-8.024 12.443-18.692 12.443-30.041s-4.42-22.017-12.444-30.041c-16.563-16.562-43.516-16.564-60.081 0l-25-25c30.35-30.351 79.731-30.349 110.081 0c14.702 14.702 22.799 34.25 22.799 55.041c-.001 20.792-8.097 40.339-22.8 55.041'/%3E%3C/svg%3E");
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* 悬浮时显示 # 并过渡效果，延迟0.3秒 */
+  &:hover::after {
+    opacity: 1;
+    top: 0;
+    animation: bounceDown 0.6s ease-in-out;
+    transition-delay: 0.3s; /* 悬浮时增加0.3秒延迟 */
+  }
+}
+
+@keyframes bounceDown {
+  0% {
+    top: -20px;
+  }
+
+  60% {
+    top: 0px;
+    /* 滑下到目标位置 */
+  }
+
+  80% {
+    top: -5px;
+    /* 弹回一点 */
+  }
+
+  100% {
+    top: 0px;
+    /* 弹回一点 */
+  }
+}
+
+.tc-site-subtitle {
+  font-size: 14px;
+  text-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+span.tc-icon-wrapper {
+  vertical-align: middle;
+}
+
+.tc-editor-toolbar button.tc-text-editor-toolbar-item-start-group {
+  margin: 2px 0 2px 4px !important;
+}
+
+/* pre {
+  max-height: 50vh;
+  overflow-y: auto;
+} */
+
+pre:not(:has(svg)) {
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+@media print {
+  pre:not(:has(svg)) {
+    max-height: none;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+<$let darkmode={{{ [[$:/palette]get[text]get[color-scheme]] }}} >
+<% if [<darkmode>match[dark]] %>
+
+::-webkit-scrollbar-track {
+  background-color: #2e2e2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+<% else %>
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+<% endif %>
+</$let>
