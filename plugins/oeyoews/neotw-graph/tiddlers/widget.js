@@ -8,6 +8,7 @@ neotw-graph widget
 \*/
 const { widget: Widget } = require('$:/core/modules/widgets/widget.js');
 const renderNode = require('./render');
+const convertTagMap = require('./convertTagMap');
 
 class NeotwGraphWidget extends Widget {
   constructor(parseTreeNode, options) {
@@ -19,7 +20,9 @@ class NeotwGraphWidget extends Widget {
 
     this.computeAttributes();
     this.execute();
-    const tiddlers = $tw.wiki.getTiddlers();
+    const tagMap = $tw.wiki.getTagMap();
+    const tags = $tw.wiki.filterTiddlers('[!is[system]is[tag]]');
+    const tiddlers = convertTagMap(tagMap, tags);
 
     const ssr = this.document.isTiddlyWikiFakeDom;
     if (ssr) return;
