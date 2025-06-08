@@ -1,0 +1,63 @@
+title: $:/core/ui/ViewTemplate/title
+tags: $:/tags/ViewTemplate
+description: 线上仅仅展示部分按钮(~~并且标题居中~~)
+
+\whitespace trim
+\define title-styles()
+fill:$(foregroundColor)$;
+\end
+
+\whitespace trim
+\define title-styles()
+fill:$(foregroundColor)$;
+\end
+
+<div class="tc-tiddler-title mb-4">
+<div class="tc-titlebar">
+<span class="tc-tiddler-controls !float-none flex justify-end mb-4 print:hidden">
+<$let env={{{ [[$:/info/url/protocol]get[text]] }}}>
+<%if [<env>match[http:]] %>
+  <$list filter="[all[shadows+tiddlers]tag[$:/tags/ViewToolbar]!has[draft.of]] :filter[lookup[$:/config/ViewToolbarButtons/Visibility/]!match[hide]]" storyview="pop" variable="listItem">
+  <$set name="tv-config-toolbar-class" filter="[<tv-config-toolbar-class>] [<listItem>encodeuricomponent[]addprefix[tc-btn-]]"><$transclude tiddler=<<listItem>>/></$set>
+  </$list>
+<%elseif [<env>match[https:]] %>
+  <$list filter="[[$:/core/ui/Buttons/export-tiddler]] [[$:/core/ui/Buttons/permalink]] [[$:/core/ui/Buttons/close]]" storyview="pop" variable="listItem">
+  <$set name="tv-config-toolbar-class" filter="[<tv-config-toolbar-class>] [<listItem>encodeuricomponent[]addprefix[tc-btn-]]">
+  <$transclude tiddler=<<listItem>>/>
+  </$set>
+  </$list>
+<%endif %>
+</$let>
+</span>
+<$set name="tv-wikilinks" value={{$:/config/Tiddlers/TitleLinks}}>
+<$link>
+<$list filter="[<currentTiddler>] :cascade[all[shadows+tiddlers]tag[$:/tags/TiddlerIconFilter]!is[draft]get[text]] +[!is[blank]]" variable="ignore">
+<$let foregroundColor={{{ [<currentTiddler>] :cascade[all[shadows+tiddlers]tag[$:/tags/TiddlerColourFilter]!is[draft]get[text]] }}}>
+<span class="tc-tiddler-title-icon" style=<<title-styles>>>
+{{||$:/core/ui/TiddlerIcon}}
+</span>
+</$let>
+</$list>
+<$transclude tiddler={{{ [<currentTiddler>] :cascade[all[shadows+tiddlers]tag[$:/tags/ViewTemplateTitleFilter]!is[draft]get[text]] :and[!is[blank]else[$:/core/ui/ViewTemplate/title/default]] }}} />
+</$link>
+<$let env={{{ [[$:/info/url/protocol]get[text]] }}}>
+<%if [<env>match[http:]] %>
+<%if [<currentTiddler>!prefix[$:/]!is[missing]!is[binary]!tag[Journal]!is[tag]] %>
+<$button class="tc-btn-invisible print:hidden renaming-tiddler-ai" message="th-renaming-tiddler-ai" > {{$:/core/images/ai-edit-button}}</$button>
+<!-- https://talk.tiddlywiki.org/t/finding-tiddlers-with-only-one-tag/10946/2 -->
+<%if [<currentTiddler>field:tags[剪藏]] [<currentTiddler>field:tags[]] %>
+<$button class="tc-btn-invisible print:hidden recommend-tiddler-ai data-html2canvas-ignore" message="th-recommendTag" >
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="lightgray" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 8v4.172a2 2 0 0 0 .586 1.414l5.71 5.71a2.41 2.41 0 0 0 3.408 0l3.592-3.592a2.41 2.41 0 0 0 0-3.408l-5.71-5.71A2 2 0 0 0 9.172 6H5a2 2 0 0 0-2 2"/><path d="m18 19l1.592-1.592a4.82 4.82 0 0 0 0-6.816L15 6m-8 4h-.01"/></g></svg>
+</$button>
+<%endif %>
+<%endif %>
+<%endif %>
+</$let>
+</$set>
+</div>
+
+<$reveal type="nomatch" text="" default="" state=<<tiddlerInfoState>> class="tc-tiddler-info tc-popup-handle" animate="yes" retain="yes">
+<$list filter="[all[shadows+tiddlers]tag[$:/tags/TiddlerInfoSegment]!has[draft.of]] [[$:/core/ui/TiddlerInfo]]" variable="listItem"><$transclude tiddler=<<listItem>> mode="block"/></$list>
+
+</$reveal>
+</div>

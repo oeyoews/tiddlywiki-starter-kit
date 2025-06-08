@@ -1,0 +1,22 @@
+title: $:/plugins/oeyoews/neotw-tiddlers-view/style.css
+tags: $:/tags/Stylesheet
+
+.scroll-container {
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	color: lightgray;
+	font-size: 14px;
+}
+.scroll-enter-active,
+.scroll-leave-active {
+	transition: all 0.5s;
+}
+.scroll-enter-from {
+	transform: translateY(100%);
+	opacity: 0;
+}
+.scroll-leave-to {
+	transform: translateY(-100%);
+	opacity: 0;
+}

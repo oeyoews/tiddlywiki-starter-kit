@@ -1,0 +1,7 @@
+title: $:/core/templates/server/tags.json
+
+\whitespace trim
+\define tv-config-static() yes
+\define tv-wikilink-template() $uri_encoded$
+\import [subfilter{$:/core/config/GlobalImportFilter}]
+<$transclude mode="block"/>

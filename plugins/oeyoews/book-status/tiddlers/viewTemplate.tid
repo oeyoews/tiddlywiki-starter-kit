@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/book-status/viewTemplate
+tags: $:/tags/ViewTemplate
+
+<$list filter="[all[current]is[shadow]has[bookname]]">
+  <$bookstatus />
+</$list>
