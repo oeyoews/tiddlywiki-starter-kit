@@ -1,0 +1,55 @@
+title: $:/plugins/oeyoews/neotw/modules/to-top/style
+tags: $:/tags/Stylesheet
+
+<!-- \rules except list -->
+\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
+
+.o-btn-back {
+    background-color: #00000008;
+    border-radius: 50%;
+    padding: 0 0 5px;
+    margin: 0 0 9px;
+    display: block;
+    box-shadow: 0 5px 20px #0000001f
+}
+
+.o-btn-back:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
+
+#stx-story-top {
+   position: fixed;
+   bottom: 3.2rem;
+   right: 1.2rem;
+   font-size: 24px;
+   z-index: 899;
+}
+
+#stx-story-top button {
+   width: 40px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: none;
+   min-width: 1.5em;
+}
+
+#stx-story-top {
+   <!-- opacity: 0; -->
+}
+
+#stx-story-top:hover {
+   transition: all 0.3s ease;
+   <!-- opacity: 1; -->
+}
+
+#stx-story-top .tc-btn-text {
+   margin-left: 0.3em;
+   vertical-align: middle;
+}
+
+#stx-story-top .tc-btn-invisible {
+   font-size: 0.75em;
+}

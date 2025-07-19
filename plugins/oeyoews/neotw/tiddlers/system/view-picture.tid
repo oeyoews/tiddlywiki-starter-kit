@@ -1,0 +1,8 @@
+title: $:/core/ui/EditorToolbar/picture
+caption: {{$:/language/Buttons/Picture/Caption}}
+condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]] [<targetTiddler>type[text/markdown]]
+description: {{$:/language/Buttons/Picture/Hint}}
+dropdown: $:/core/ui/EditorToolbar/picture-dropdown
+icon: $:/core/images/picture
+shortcuts: ((picture))
+tags: $:/tags/EditorToolbar

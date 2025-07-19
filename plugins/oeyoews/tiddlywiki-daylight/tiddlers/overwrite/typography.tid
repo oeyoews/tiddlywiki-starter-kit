@@ -1,0 +1,6 @@
+title: $:/core/ui/EditTemplate/body/typography
+description: some typography class for tiddlers
+note: prose 限制了字体的配置 md:prose-lg
+todo: lg:overflow-y-auto lg:max-h-screen
+
+antialiased prose prose-gray max-w-none prose-img:my-0 prose-a:no-underline prose-h2:mt-4 prose-blockquote:not-italic dark:prose-invert dark:prose-pre:bg-[#282c34] dark:prose-pre:text-white prose-p:mt-0 prose-ul:my-0 prose-li:my-0

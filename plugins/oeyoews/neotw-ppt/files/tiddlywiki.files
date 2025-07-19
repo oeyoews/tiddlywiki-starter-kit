@@ -1,0 +1,17 @@
+{
+	"directories": [
+		{
+			"path": "./lib/",
+			"filesRegExp": "^.*\\.js$",
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/neotw-ppt/"
+				},
+				"module-type": "library",
+				"type": "application/javascript",
+				"hide-body": "yes"
+			}
+		}
+	]
+}

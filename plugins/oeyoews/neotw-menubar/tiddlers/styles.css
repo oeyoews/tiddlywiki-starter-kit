@@ -1,0 +1,27 @@
+.mx-menu-bar.dark,
+.mx-context-menu.dark {
+  --mx-menu-backgroud: #1c2128 !important;
+  --mx-menu-hover-backgroud: #22272e !important;
+  --mx-menu-active-backgroud: #22272e !important;
+  --mx-menu-shortcut-backgroud: #22272e !important;
+  --mx-menu-shortcut-backgroud-hover: #22272e !important;
+  --mx-menu-shortcut-backgroud-active: #22272e !important;
+  --mx-menu-open-backgroud: #22272e !important;
+  --mx-menu-open-hover-backgroud: #22272e !important;
+}
+
+.mx-context-menu.dark {
+  box-shadow: none !important;
+}
+
+@media print {
+  .mx-menu-ghost-host,
+  .mx-context-menu-items,
+  .mx-context-menu mx-menu-host {
+    display: none;
+  }
+}
+
+.mx-menu-bar-item {
+  cursor: pointer;
+}
