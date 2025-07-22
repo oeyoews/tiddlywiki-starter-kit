@@ -1,11 +1,9 @@
-version: '3' # Docker Compose 版本
-
 services:
   tiddlywiki-starter-kit:
     build:
       context: .
       dockerfile: Dockerfile
-    image: oeyoews/tiddlywiki:latest
+    image: oeyoews/tiddlywiki-starter-kit:latest
     # restart: on-failure:3
     ports:
       - '8080:8080' # 映射端口，将主机的 8080 端口映射到容器的 8080 端口
@@ -17,7 +15,7 @@ services:
     # start
     command: [
         'tiddlywiki', # 启动命令
-        'wiki', # 数据文件夹
+        'src', # 数据文件夹
         '--listen',
         'port=8080', # 端口
         'host=0.0.0.0', # 允许本地局域网访问
