@@ -1,0 +1,31 @@
+title: $:/plugins/oeyoews/screenlock/readme
+description: screenlock
+tags: $:/tags/ControlPanel/Settings
+
+\define lingo-base() $:/language/ControlPanel/
+
+[[在线文档|https://tiddlywiki-starter-kit.oeyoews.top/docs/plugins/screenlock]]
+
+! 锁屏插件
+
+这个插件为 TiddlyWiki 提供了锁屏功能，可以保护您的 wiki 内容不被未授权的人查看。
+
+!! 使用方法
+
+1. 在控制面板的"锁屏设置"中设置您的密码
+2. 点击页面顶部的锁屏按钮锁定屏幕
+3. 输入密码解锁
+
+!! 锁屏设置
+
+|<$link to="$:/plugins/oeyoews/screenlock/password">锁屏密码</$link> |<$edit-text tiddler="$:/plugins/oeyoews/screenlock/password" tag="input" type="password"/><br/>请记住此密码，否则将无法解锁! |
+|<$link to="$:/plugins/oeyoews/screenlock/autolock">自动锁屏</$link> |<$checkbox tiddler="$:/plugins/oeyoews/screenlock/autolock" field="text" checked="yes" unchecked="no"> 启动时自动锁屏</$checkbox> |
+
+
+!! 功能
+
+* 手动锁屏
+* 自动锁屏（启动时）
+* 密码保护
+* 快捷键支持（Alt+L 锁屏/解锁）
+* 锁屏状态下禁用所有快捷键（除了 Alt+L）

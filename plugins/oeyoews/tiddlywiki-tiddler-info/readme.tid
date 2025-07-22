@@ -1,0 +1,4 @@
+title: $:/plugins/oeyoews/tiddlywiki-tiddler-info/readme
+
+* Show Tiddler Info
+* note: reoverwrite [[$:/core/ui/ViewTemplate/subtitle]] tiddler

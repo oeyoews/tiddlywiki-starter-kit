@@ -1,0 +1,7 @@
+title: $:/plugins/oeyoews/vue-tabs/pagetemplate
+tags: $:/tags/PageTemplate
+
+<!-- https://talk.tiddlywiki.org/t/shouldnt-list-filter-be-used-with-widgets/9366/2 -->
+<!-- <$list filter="[list[$:/StoryList]!has[draft.of]count[]compare:number:gt[0]then[true]]" > -->
+<$vue-tabs />
+<!-- </$list> -->

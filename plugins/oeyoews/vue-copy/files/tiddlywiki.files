@@ -1,0 +1,42 @@
+{
+	"directories": [
+		{
+			"path": "templates",
+			"filesRegExp": "^.*\\.vue$",
+			"searchSubdirectories": true,
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/vue-copy/templates/"
+				},
+				"hide-body": "yes"
+			}
+		},
+		{
+			"path": "plugins",
+			"filesRegExp": "^.*\\.js$",
+			"searchSubdirectories": true,
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/vue-copy/plugins/"
+				},
+				"module-type": "library",
+				"type": "application/javascript"
+			}
+		},
+		{
+			"path": "components",
+			"filesRegExp": "^.*\\.js$",
+			"searchSubdirectories": true,
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/vue-copy/components/"
+				},
+				"module-type": "library",
+				"type": "application/javascript"
+			}
+		}
+	]
+}
