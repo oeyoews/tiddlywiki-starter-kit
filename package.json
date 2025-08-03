@@ -1,0 +1,78 @@
+{
+  "name": "tiddlywiki-starter-kit",
+  "workspaces": [
+    "packages/*"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "description": "A modern style notebook based on tiddlywiki",
+  "version": "4.1.0",
+  "author": "oeyoews <jyao4783@gmail.com>",
+  "license": "MIT",
+  "packageManager": "pnpm@10.2.1",
+  "scripts": {
+    "postinstall": "",
+    "new": "node lib/newplugin.mjs",
+    "build": "node lib/build.mjs && pnpm run docs:build",
+    "build:20": "node --env-file=.env lib/build.mjs && pnpm run docs:build",
+    "update:tw": "pnpm install github:oeyoews/TiddlyWiki5 -w",
+    "update:tw2": "git clone --depth 1 git@github.com:oeyoews/TiddlyWiki5.git tiddlywiki  ",
+    "update:web": "git commit --allow-empty -m update  && git push",
+    "update:lib:vue": "node ./lib/updateVueLib.mjs",
+    "update:lib:twcss": "node ./lib/updateTwLib.mjs",
+    "build-with-bun": "bun run ./lib/build.ts",
+    "format": "prettier --write plugins/oeyoews",
+    "format:md": "autocorrect --fix",
+    "build:docker": "docker-compose build",
+    "docker:push": "docker-compose push",
+    "dev": "node ./lib/startup.mjs",
+    "dev:20": "node --env-file=.env ./lib/startup.mjs",
+    "start:pm2": "node ./lib/pm2-control.js",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "ci-info": "^3.9.0",
+    "consola": "^3.4.2",
+    "cross-spawn": "^7.0.6",
+    "dotenv": "^16.5.0",
+    "fs-extra": "11.2.0",
+    "get-port": "^7.1.0",
+    "keypress": "^0.2.1",
+    "ora": "^6.3.1",
+    "pm2": "5.3.1",
+    "qrcode": "1.5.3",
+    "tiddlywiki": "npm:@oeyoews/tiddlywiki-lite@5.3.6-lite-20250323-1"
+  },
+  "prettier": "@oeyoews/prettier-config",
+  "devDependencies": {
+    "@nolebase/vitepress-plugin-og-image": "1.28.0",
+    "@oeyoews/prettier-config": "workspace:^",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@types/fs-extra": "11.0.4",
+    "@types/prompts": "2.4.9",
+    "@types/qrcode": "1.5.5",
+    "feed": "4.2.2",
+    "markdown-it-task-lists": "2.1.1",
+    "prettier": "3.2.5",
+    "prompts": "^2.4.2",
+    "terser": "5.31.0",
+    "tiged": "^2.12.7",
+    "tw5-typed": "^0.5.14",
+    "typescript": "5.7.3",
+    "unocss": "0.58.9",
+    "vitepress": "^1.6.3",
+    "vue": "3.5.13"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}

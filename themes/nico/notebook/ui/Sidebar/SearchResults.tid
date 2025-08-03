@@ -1,0 +1,24 @@
+title: $:/themes/nico/notebook/ui/Sidebar/SearchResults
+type: text/vnd.tiddlywiki
+
+\define searchResultList()
+  <small>{{$:/language/Search/Matches/Title}}</small>
+
+  <$list filter="[!is[system]search:title{$(searchTiddler)$}sort[title]limit[250]]">
+    <span class={{{[<currentTiddler>addsuffix[-primaryList]] -[<searchListState>get[text]] +[then[]else[tc-list-item-selected]] }}}>
+      <$transclude tiddler="$:/core/ui/ListItemTemplate"/>
+    </span>
+  </$list>
+
+  <small>{{$:/language/Search/Matches/All}}</small>
+
+  <$list filter="[!is[system]search{$(searchTiddler)$}sort[title]limit[250]]">
+    <span class={{{[<currentTiddler>addsuffix[-secondaryList]] -[<searchListState>get[text]] +[then[]else[tc-list-item-selected]] }}}>
+      <$transclude tiddler="$:/core/ui/ListItemTemplate"/>
+    </span>
+  </$list>
+\end
+
+<div class="tc-search-results">
+  <<searchResultList>>
+</div>

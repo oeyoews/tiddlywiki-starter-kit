@@ -1,0 +1,33 @@
+.oresizer-left {
+  transition: all ease 0.5s;
+  left: 0;
+}
+.oresizer-right {
+  right: 0;
+  transition: all ease 0.5s;
+}
+
+.oresizer {
+  width: 3px;
+  opacity: 0.1;
+  border-radius: 5px;
+  height: 99%;
+  position: absolute;
+  bottom: 4px;
+  background-color: #f3f4f6;
+  transition: all ease 0.5s;
+}
+
+.oresizer:hover {
+  cursor: col-resize;
+  background-color: #e5e7eb;
+  opacity: 1;
+  width: 4px;
+}
+
+.dark .oresizer {
+  background-color: #6b7280;
+}
+.dark .oresizer:hover {
+  background-color: #9d9fa4;
+}

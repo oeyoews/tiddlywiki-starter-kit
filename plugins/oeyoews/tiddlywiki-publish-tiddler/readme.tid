@@ -1,0 +1,27 @@
+title: $:/plugins/oeyoews/tiddlywiki-publish-tiddler/readme
+
+<a href="https://github.com/oeyoews/neotw" target="_blank">
+  <img src="https://img.shields.io/badge/Powered by-Neotw-green?style=flat" />
+</a>
+
+* Publish Tiddler Manager
+* not save storylist to html
+* support Publish or not manager
+
+!! NOTE
+
+<!-- * 需要手动启用 FileSystem 文件 -->
+* 此插件重写 [[FileSystem Tid|$:/config/FileSystemPaths]]
+* 虽然此插件兼容单文件 tiddlywiki, 但是只工作在 Node.js tiddlywiki
+* maybe should use public is more understandable better publish
+<!-- * 在 Node.js tiddlywiki 第一次启动时，控制台可能会多出很多 `syncer-browser-tiddlyweb: Checking dirty status` 类似与这样的日志 -->
+
+!! TODO
+
+* use viewtoolbar replace template
+* add plugin work details with tiddlywiki
+* enable only dev
+* maybe should use stattiddler to use http
+
+* [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/tiddlywiki-publish-tiddler]]
+* [[Demo|https://oeyoews.github.io/neotw]]
