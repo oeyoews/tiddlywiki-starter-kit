@@ -28,6 +28,31 @@ const recentTiddlers = $tw.wiki.filterTiddlers(
   '[!is[system]days[-180]!<currentTiddler>!sort[modified]limit[8]]',
 );
 
+function watchThemeChange(callback) {
+  const htmlEl = document.documentElement;
+
+  // 获取当前 theme
+  function getCurrentTheme() {
+    if (htmlEl.classList.length !== 1) return;
+    if (htmlEl.classList.contains('dark')) return 'dark';
+    if (htmlEl.classList.contains('light')) return 'light';
+    // 默认可选 fallback
+    return 'light';
+  }
+
+  // 使用 MutationObserver 监听 class 变化
+  const observer = new MutationObserver(() => {
+    const theme = getCurrentTheme();
+    if (!theme) return;
+    callback(theme);
+  });
+
+  observer.observe(htmlEl, { attributes: true, attributeFilter: ['class'] });
+
+  // 返回一个停止监听的方法
+  // return () => observer.disconnect();
+}
+
 /**
  * @param {keyof import('./icons')} icon
  */
@@ -453,6 +478,12 @@ const app = () => {
         ) {
           enableSound.value = false;
         }
+
+        watchThemeChange((theme) => {
+          // console.log('当前主题:', theme);
+          if (!theme) return;
+          menuData.theme = theme;
+        });
       });
 
       const sound_icon = computed(() => {
