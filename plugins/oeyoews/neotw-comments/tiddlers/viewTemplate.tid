@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/neotw-comments/viewTemplate
+tags: $:/tags/ViewTemplate
+
+<$list filter="[all[current]tag[Journal]] [all[current]tag[🤔thoughts]] [all[current]field:comments[yes]]">
+<$neotw-comments />
+</$list>

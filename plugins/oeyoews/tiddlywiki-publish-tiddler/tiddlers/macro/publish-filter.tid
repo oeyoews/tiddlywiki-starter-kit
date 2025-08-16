@@ -1,0 +1,9 @@
+title: $:/plugins/oeyoews/tiddlywiki-publish-tiddler/macro/publish-filter
+
+<!-- tags: $:/tags/Macro -->
+
+<!-- This macro will cause twice refresh -->
+
+\define publishFilter()
+-[!is[system]publish[no]]
+\end

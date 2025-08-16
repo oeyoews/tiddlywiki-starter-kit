@@ -1,0 +1,11 @@
+title: $:/plugins/oeyoews/neotw-zen-mode/style.css
+tags: $:/tags/Stylesheet
+
+<$list filter="[{$:/temp/zenmode}is[missing]match[]] [{$:/temp/zenmode}match[yes]]">
+.tc-edit-tags,
+.tc-edit-field-add,
+[role="region"] .tc-tiddler-title,
+.tc-edit-type-selector-wrapper {
+  display: none !important;
+}
+</$list>

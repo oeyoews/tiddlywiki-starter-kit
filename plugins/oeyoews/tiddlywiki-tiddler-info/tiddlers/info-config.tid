@@ -1,0 +1,76 @@
+title: $:/plugins/oeyoews/tiddlywiki-tiddler-info/info-config
+
+\define tid() $:/plugins/oeyoews/tiddlywiki-tiddler-info/config
+
+!! Deprecated
+
+<center>
+<b>Change Emoji Icon</b>
+<table>
+<tr>
+  <th>created </th>
+  <td>
+  <$edit-text
+    tiddler=<<tid>>
+    field="ocreated"
+    placeholder="👉"
+    tag="input"/>
+  </td>
+</tr>
+
+<tr>
+  <th>modified</th>
+  <td>
+  <$edit-text
+    tiddler=<<tid>>
+    field="omodified"
+    placeholder="📝"
+    tag="input"/>
+  </td>
+</tr>
+
+<tr>
+<th>description</th>
+  <td>
+  <$edit-text
+    tiddler=<<tid>>
+    field="odescription"
+    placeholder="✅"
+    tag="input"/>
+  </td>
+</tr>
+
+<tr>
+  <th>tags</th>
+  <td>
+  <$edit-text
+    tiddler=<<tid>>
+    field="otags"
+    placeholder="🏷️"
+    tag="input"/>
+  </td>
+</tr>
+
+<tr>
+  <th>username</th>
+  <td>
+  <$edit-text
+    tiddler=<<tid>>
+    field="ousername"
+    placeholder="username"
+    tag="input"/>
+  </td>
+</tr>
+
+<tr>
+  <th>user image</th>
+  <td>
+  <$edit-text
+    tiddler=<<tid>>
+    field="ouserimage"
+    placeholder="gravatar.png"
+    tag="input"/>
+  </td>
+</tr>
+</table>
+</center>

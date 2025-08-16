@@ -1,0 +1,16 @@
+{
+  "title": "$:/plugins/oeyoews/neotw-dayjs",
+  "description": "neotw-dayjs",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.3.4",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "neotw-dayjs",
+  "meat#disabled": "yes",
+  "qrcode": "yes",
+  "created": "2025/02/14",
+  "dependents": [],
+  "stability": "STABILITY_2_STABLE",
+  "list": "readme"
+}
