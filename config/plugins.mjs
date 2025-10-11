@@ -1,6 +1,11 @@
 import base from './base.mjs';
-import devplugins from './dev-plugins.mjs';
 import ci from 'ci-info';
+import fs from 'fs';
+import JSON5 from 'json5';
+
+const devplugins = JSON5.parse(
+  fs.readFileSync('./config/dev-plugins.json5', 'utf-8'),
+);
 
 // 用户插件列表
 // NOTE: vercel not support use { isCi } ???

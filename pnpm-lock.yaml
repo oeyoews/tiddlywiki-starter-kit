@@ -29,6 +29,9 @@ importers:
       get-port:
         specifier: ^7.1.0
         version: 7.1.0
+      json5:
+        specifier: ^2.2.3
+        version: 2.2.3
       keypress:
         specifier: ^0.2.1
         version: 0.2.1
@@ -820,7 +823,6 @@ packages:
     resolution: {integrity: sha512-b9E44WUxyM3mspgh0p2zc0DOHX1Oj6NiL5fy9SvMgEoRqkPa5c8ACxUUjBMVlkRNyJI4dJqC4OFqDz53JOswgg==}
     engines: {node: '>=0.8.2'}
     hasBin: true
-    bundledDependencies: []
 
   '@opencensus/core@0.0.8':
     resolution: {integrity: sha512-yUFT59SFhGMYQgX0PhoTR0LBff2BEhPrD9io1jWfF/VDbakRfs6Pq60rjv0Z7iaTav5gQlttJCX2+VPxFWCuoQ==}

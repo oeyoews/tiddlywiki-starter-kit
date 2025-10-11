@@ -1,6 +1,5 @@
-import base from './base.mjs';
+import { default as base } from '../tiddlywiki.config.mjs';
 import build from './build.mjs';
-import devplugins from './dev-plugins.mjs';
 import info from './info.mjs';
 import plugins from './plugins.mjs';
 import startup from './startup.mjs';
@@ -12,7 +11,6 @@ export default {
   ...base,
   plugins,
   build,
-  devplugins,
   themes,
   info,
 };
