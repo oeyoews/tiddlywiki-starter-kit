@@ -1,4 +1,4 @@
-import base from '../tiddlywiki.config.mjs';
+import base from '../neotw.config.mjs';
 import ci from 'ci-info';
 import fs from 'fs';
 import JSON5 from 'json5';

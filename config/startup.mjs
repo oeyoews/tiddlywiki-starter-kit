@@ -1,4 +1,4 @@
-import base from '../tiddlywiki.config.mjs';
+import base from '../neotw.config.mjs';
 
 /**
  * @description Returns an array of command line arguments for starting the server.

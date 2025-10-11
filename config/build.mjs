@@ -1,4 +1,4 @@
-import base from '../tiddlywiki.config.mjs';
+import base from '../neotw.config.mjs';
 
 /** @type {import('tiddlywiki').ITiddlyWikiInfoJSONBuild} */
 export default {
