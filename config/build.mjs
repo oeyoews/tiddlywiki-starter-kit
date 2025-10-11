@@ -1,4 +1,4 @@
-import base from './base.mjs';
+import { default as base } from '../tiddlywiki.config.mjs';
 
 /** @type {import('tiddlywiki').ITiddlyWikiInfoJSONBuild} */
 export default {

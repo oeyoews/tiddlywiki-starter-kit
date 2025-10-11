@@ -1,4 +1,4 @@
-import base from './base.mjs';
+import { default as base } from '../tiddlywiki.config.mjs';
 import ci from 'ci-info';
 import fs from 'fs';
 import JSON5 from 'json5';
