@@ -2,7 +2,9 @@ title: $:/config/EmptyStoryMessage
 
 <div class="prose prose-indigo max-w-none dark:prose-invert">
   <$neotw-meteors />
-  <$vue-bits-splash-cursor />
+  <$list filter="[{$:/info/url/protocol}match[https:]]">
+     <$vue-bits-splash-cursor />
+  </$list>
   <div class="p-0 m-4">
     <div class="">
 <h1 class="mb-4 font-extrabold text-center text-5xl">
