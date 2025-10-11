@@ -1,16 +1,5 @@
-import base from '../neotw.config.mjs';
-import build from './build.mjs';
-import info from './info.mjs';
-import plugins from './plugins.mjs';
-import startup from './startup.mjs';
-import themes from './themes.mjs';
-
-/** 用户配置 */
-export default {
-  startup,
-  ...base,
-  plugins,
-  build,
-  themes,
-  info,
-};
+export { default as startup } from './startup.mjs';
+export { default as build } from './build.mjs';
+export { default as info } from './info.mjs';
+export { default as plugins } from './plugins.mjs';
+export { default as themes } from './themes.mjs';

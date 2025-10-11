@@ -1,4 +1,4 @@
-import base from '../neotw.config.mjs';
+import config from '../neotw.config.mjs';
 
 /**
  * @description Returns an array of command line arguments for starting the server.
@@ -15,11 +15,11 @@ export default function startup(option) {
     'port=' + port,
     'root-tiddler=$:/core/save/all-external-js',
     'use-browser-cache=yes',
-    'anon-username=' + base.username, // nodejs $:/status/UserName
+    'anon-username=' + config.username, // nodejs $:/status/UserName
   ];
-  if (base.auth && base.username && base.password) {
-    args.push(`username=${base.username}`);
-    args.push(`password=${base.password}`);
+  if (config.auth && config.username && config.password) {
+    args.push(`username=${config.username}`);
+    args.push(`password=${config.password}`);
   }
   return args;
 }

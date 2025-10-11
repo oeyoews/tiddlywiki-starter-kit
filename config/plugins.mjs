@@ -1,4 +1,4 @@
-import base from '../neotw.config.mjs';
+import config from '../neotw.config.mjs';
 import ci from 'ci-info';
 import fs from 'fs';
 import JSON5 from 'json5';
@@ -9,7 +9,7 @@ const devplugins = JSON5.parse(
 
 // 用户插件列表
 // NOTE: vercel not support use { isCi } ???
-const enableMarkdown = base.markdown;
+const enableMarkdown = config.markdown;
 
 // 本地运行使用到的插件
 const localPlugins = [
