@@ -1,4 +1,4 @@
-import { default as base } from '../tiddlywiki.config.mjs';
+import base from '../tiddlywiki.config.mjs';
 import build from './build.mjs';
 import info from './info.mjs';
 import plugins from './plugins.mjs';

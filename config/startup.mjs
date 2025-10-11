@@ -1,4 +1,4 @@
-import { default as base } from '../tiddlywiki.config.mjs';
+import base from '../tiddlywiki.config.mjs';
 
 /**
  * @description Returns an array of command line arguments for starting the server.
