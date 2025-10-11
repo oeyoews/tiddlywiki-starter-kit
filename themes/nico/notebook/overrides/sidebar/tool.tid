@@ -1,0 +1,25 @@
+caption: {{$:/language/SideBar/Tools/Caption}}
+tags: $:/tags/SideBar
+title: $:/core/ui/SideBar/Tools
+type: text/vnd.tiddlywiki
+
+\define lingo-base() $:/language/ControlPanel/
+\define config-title()
+$:/config/PageControlButtons/Visibility/$(listItem)$
+\end
+
+<!--<<lingo Basics/Version/Prompt>> <<version>>
+-->
+<$vars tv-config-toolbar-icons="yes" tv-config-toolbar-text="yes" tv-config-toolbar-class="">
+
+<$list filter="[all[shadows+tiddlers]tag[$:/tags/PageControls]!has[draft.of]]" variable="listItem">
+
+<div style="position:relative;" class={{{ [<listItem>encodeuricomponent[]addprefix[tc-btn-]] }}}>
+
+<$checkbox tiddler=<<config-title>> field="text" checked="show" unchecked="hide" default="show"/> <$transclude tiddler=<<listItem>>/>
+
+</div>
+
+</$list>
+
+</$vars>

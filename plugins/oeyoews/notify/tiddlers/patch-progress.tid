@@ -1,0 +1,7 @@
+title: $:/plugins/oeyoews/notify/patch-progress.css
+tags: $:/tags/Stylesheet
+type: text/css
+
+.notify.notify-autoclose {
+    --progress-height: 0px !important;
+ }

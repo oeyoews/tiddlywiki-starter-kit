@@ -1,0 +1,7 @@
+tags: $:/themes/nico/notebook/tags/Sidebar
+title: $:/themes/nico/notebook/ui/Sidebar/Sections
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[shadows+tiddlers]!has[draft.of]tag[$:/tags/SideBar]]">
+  {{||$:/themes/nico/notebook/ui/Sidebar/SectionTemplate}}
+</$list>

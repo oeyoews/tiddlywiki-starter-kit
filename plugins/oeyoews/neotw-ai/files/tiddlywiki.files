@@ -1,0 +1,29 @@
+{
+	"directories": [
+		{
+			"path": "./lib/",
+			"filesRegExp": "^.*\\.min.js$",
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/neotw-ai/lib/"
+				},
+				"module-type": "library",
+				"type": "application/javascript",
+				"hide-body": "yes"
+			}
+		},
+		{
+			"path": "templates",
+			"filesRegExp": "^.*\\.vue$",
+			"searchSubdirectories": true,
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/neotw-ai/templates/"
+				},
+				"hide-body": "yes"
+			}
+		}
+	]
+}

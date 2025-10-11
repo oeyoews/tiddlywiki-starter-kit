@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/neotw-vconsole/readme
+description: neotw-vconsole
+
+[[在线文档|https://tiddlywiki-starter-kit.oeyoews.top/docs/plugins/neotw-vconsole]]
+
+<$checkbox field="text" tiddler="$:/plugins/oeyoews/neotw-vconsole/config" checked="yes" unchecked="no" default="yes"> 开启vconsole(need restart)</$checkbox>

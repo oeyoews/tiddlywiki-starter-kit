@@ -1,0 +1,10 @@
+title: $:/plugins/oeyoews/neotw-dropdown-better/styles.css
+tags: $:/tags/Stylesheet
+
+.tc-drop-down,
+.tc-block-dropdown {
+	overflow-y: auto;
+	max-height: 50vh;
+	max-width: 50vw;
+	border-radius: 4px;
+}

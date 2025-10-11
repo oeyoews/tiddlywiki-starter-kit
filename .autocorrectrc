@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=https://huacnlee.github.io/autocorrect/schema.json
+# Config rules
+rules:
+  # Auto add spacing between CJK (Chinese, Japanese, Korean) and English words. 在中文和英文单词之间自动添加空格(pangu)
+  # 0 - off, 1 - error, 2 - warning
+  space-word: 1
+  # Add space between some punctuations.
+  space-punctuation: 1
+  # Add space between brackets (), [] when near the CJK.中文(中文)中文
+  space-bracket: 2
+  # Add space between ``, when near the CJK.
+  space-backticks: 0
+  # Add space between dash `-`
+  space-dash: 2
+  # Convert to fullwidth. // 替换成中文冒号,逗号(in chinese)
+  fullwidth: 0
+  # To remove space near the fullwidth. 移除全角字符周围的空格
+  no-space-fullwidth: 1
+  # Fullwidth alphanumeric characters to halfwidth. 将全角数字和字母转换为半角 １２３ ＡＢＣ
+  halfwidth-word: 1
+  # Fullwidth punctuations to halfwidth in english. 将中文全角标点符号转换为半角(in english)
+  halfwidth-punctuation: 1
+  # Spellcheck
+  spellcheck: 1
+textRules:
+  # Config special rules for some texts
+  # For example, if we wants to let "Hello你好" just warning, and "Hi你好" to ignore
+  # "Hello你好": 2
+  # "Hi你好": 0
+fileTypes:
+  '.tid': markdown
+spellcheck:
+  # Correct Words (Case insensitive) for by Spellcheck
+  words:
+    - GitHub
+    - CDN
+    - TiddlyWiki5
+    - App Store
+    # This means "appstore" into "App Store"
+    - AppStore = App Store
+    - vue = Vue
+    - react = React
+    - Git
+    - Node.js
+    - nodejs = Node.js

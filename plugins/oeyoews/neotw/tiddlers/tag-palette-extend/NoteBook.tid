@@ -1,0 +1,68 @@
+title: $:/themes/nico/notebook/palettes/palette-beige/extend
+type: application/x-tiddler-dictionary
+
+slate: rgba(100, 116, 139, 0.2)
+slate-dark: rgba(148, 163, 184, 0.8)
+
+gray: rgba(107, 114, 128, 0.2)
+gray-dark: rgba(156, 163, 175, 0.8)
+
+zinc: rgba(113, 113, 122, 0.2)
+zinc-dark: rgba(161, 161, 170, 0.8)
+
+neutral: rgba(115, 115, 115, 0.2)
+neutral-dark: rgba(163, 163, 163, 0.8)
+
+stone: rgba(120, 113, 108, 0.2)
+stone-dark: rgba(168, 162, 158, 0.8)
+
+red: rgba(239, 68, 68, 0.2)
+red-dark: rgba(248, 113, 113, 0.8)
+
+orange: rgba(249, 115, 22, 0.2)
+orange-dark: rgba(251, 146, 60, 0.8)
+
+amber: rgba(245, 158, 11, 0.2)
+amber-dark: rgba(252, 211, 77, 0.8)
+
+yellow: rgba(234, 179, 8, 0.2)
+yellow-dark: rgba(250, 204, 21, 0.8)
+
+lime: rgba(132, 204, 22, 0.2)
+lime-dark: rgba(163, 230, 53, 0.8)
+
+green: rgba(16, 185, 129, 0.2)
+green-dark: rgba(52, 211, 153, 0.8)
+
+emerald: rgba(5, 150, 105, 0.2)
+emerald-dark: rgba(16, 185, 129, 0.8)
+
+teal: rgba(13, 148, 136, 0.2)
+teal-dark: rgba(45, 212, 191, 0.8)
+
+cyan: rgba(6, 182, 212, 0.2)
+cyan-dark: rgba(34, 211, 238, 0.8)
+
+sky: rgba(14, 165, 233, 0.2)
+sky-dark: rgba(56, 189, 248, 0.8)
+
+blue: rgba(59, 130, 246, 0.2)
+blue-dark: rgba(96, 165, 250, 0.8)
+
+indigo: rgba(99, 102, 241, 0.2)
+indigo-dark: rgba(129, 140, 248, 0.8)
+
+violet: rgba(139, 92, 246, 0.2)
+violet-dark: rgba(167, 139, 250, 0.8)
+
+purple: rgba(168, 85, 247, 0.2)
+purple-dark: rgba(192, 132, 252, 0.8)
+
+fuchsia: rgba(217, 70, 239, 0.2)
+fuchsia-dark: rgba(232, 121, 249, 0.8)
+
+pink: rgba(236, 72, 153, 0.2)
+pink-dark: rgba(244, 114, 182, 0.8)
+
+rose: rgba(244, 63, 94, 0.2)
+rose-dark: rgba(251, 113, 133, 0.8)

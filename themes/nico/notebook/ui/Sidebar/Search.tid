@@ -1,0 +1,11 @@
+tags: $:/themes/nico/notebook/tags/Sidebar
+title: $:/themes/nico/notebook/ui/Sidebar/Search
+type: text/vnd.tiddlywiki
+
+<div class="mobile-only">
+  <div class="segment">
+    <div class="content search">
+      {{$:/themes/nico/notebook/ui/Search}}
+    </div>
+  </div>
+</div>

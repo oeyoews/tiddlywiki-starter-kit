@@ -1,0 +1,11 @@
+{
+  "title": "$:/plugins/oeyoews/tiddlywiki-github-share",
+  "description": "Github Share Button",
+  "author": "oeyoews",
+  "version": "0.3.0",
+  "core-version": ">=5.2.7",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "Tiddlywiki Github Share",
+  "list": "readme config"
+}

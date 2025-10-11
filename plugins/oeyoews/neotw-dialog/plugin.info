@@ -1,0 +1,16 @@
+{
+  "title": "$:/plugins/oeyoews/neotw-dialog",
+  "description": "neotw-dialog",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.3.4",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "neotw-dialog",
+  "meat#disabled": "yes",
+  "qrcode": "yes",
+  "created": "20250223",
+  "dependents": [],
+  "stability": "STABILITY_2_STABLE",
+  "list": "readme"
+}

@@ -1,0 +1,16 @@
+{
+  "title": "$:/plugins/oeyoews/clean-your-duplicate-storylist",
+  "description": "clean-your-duplicate-storylist",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.3.4",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "clean-your-duplicate-storylist",
+  "meat#disabled": "yes",
+  "qrcode": "yes",
+  "created": "2025/01-25",
+  "dependents": [],
+  "stability": "STABILITY_2_STABLE",
+  "list": "readme"
+}

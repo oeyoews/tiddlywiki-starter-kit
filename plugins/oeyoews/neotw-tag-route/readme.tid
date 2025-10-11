@@ -1,0 +1,21 @@
+title: $:/plugins/oeyoews/neotw-tag-route/readme
+description: neotw-tag-route
+
+! Neotw Tag Route Plugin
+
+该插件为 TiddlyWiki 提供了一个新的 API 路由,用于获取 wiki 中的所有标签。
+
+!! 功能特性
+
+* 提供 REST API 接口获取所有非系统标签
+* 支持 JSON 格式输出
+* 可通过查询参数自定义过滤器
+* 默认过滤掉系统标签(以 `$:/` 开头的标签)
+
+!! 使用方法
+
+!!! API 端点
+
+```text
+GET /%24%3A%2Fplugins%2Foeyoews%2Fneotw-tag-route%2Ftags.json
+```

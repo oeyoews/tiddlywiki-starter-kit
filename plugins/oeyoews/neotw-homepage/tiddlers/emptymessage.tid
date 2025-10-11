@@ -1,0 +1,89 @@
+title: $:/config/EmptyStoryMessage
+
+<div class="prose prose-indigo max-w-none dark:prose-invert">
+  <$neotw-meteors />
+  <$list filter="[{$:/info/url/protocol}match[https:]]">
+     <$vue-bits-splash-cursor />
+  </$list>
+  <div class="p-0 m-4">
+    <div class="">
+<h1 class="mb-4 font-extrabold text-center text-5xl">
+  Welcome to <span class="bg-gradient-to-r from-sky-500 to-pink-400 text-transparent bg-clip-text" style="font-family:Pacifico Regular">TiddlyWiki Starter Kit</span>
+  <<tw-text "Latest">>
+</h1>
+      <p class="text-lg text-center">
+      This is an online website built using
+        <a target="_blank" href="https://vuejs.org">
+          <$iconify icon="devicon:vuejs" class="text-black dark:text-white" />
+        </a>
+        <a target="_blank" href="https://element-plus.org/">
+          <$iconify icon="logos:element" class="text-black dark:text-white" />
+        </a>
+        <a target="_blank" href="https://github.com/markdown-it/markdown-it">
+          <$iconify icon="material-symbols:markdown-sharp
+" class="text-black dark:text-white" />
+        </a>
+        <a target="_blank" href="https://tiddlywiki.com">
+          <$iconify icon="simple-icons:tiddlywiki" class="text-black dark:text-white" />
+        </a>
+        <a target="_blank" href="https://tailwindcss.com">
+          <$iconify icon="devicon:tailwindcss" />
+        </a>
+        <a target="_blank" href="https://codemirror.net">
+          <$iconify icon="simple-icons:codemirror" />
+        </a>
+        <a target="_blank" href="https://mermaid.js.org/">
+          <$iconify icon="vscode-icons:file-type-mermaid" />
+        </a>
+        <a target="_blank" href="https://echarts.apache.org">
+          <$iconify icon="simple-icons:apacheecharts" class="text-rose-600" />
+        </a>.
+        and also support
+        <$iconify-icon icon="line-md:iconify1" />
+        <span class="underline decoration-wavy decoration-rose-300 decoration-2"> Iconify </span>.
+         <!-- <span class="scale-125 mx-2 inline-block">{{$:/plugins/oeyoews/commandpalette/cmd}}
+         </span> -->
+          <$daylight class="w-3 mx-2"/>
+      </p>
+
+      <$vue-neotw-info />
+
+      <div class="flex justify-center flex-row space-x-2 block">
+        <$button
+          class="font-bold rounded-sm transition text-gray-900 p-2 bg-neutral-200"  style="font-family:Pacifico Regular">
+           <!-- <$action-sendmessage $message="neotw-play-sound" audioTiddler="$:/plugins/oeyoews/neotw-play-sound/menu-open.mp3" /> -->
+           <$action-sendmessage $message="om-notify" position="bottom x-center" showCloseButton=false title="GettingStarted" text="进入主页" />
+           <$action-navigate $to="GettingStarted" $scroll="no" />
+          Get Started
+        </$button>
+
+      <$button class="font-bold rounded-sm transition text-gray-900 p-2 bg-neutral-200" message="tm-edit-tiddler" param="$:/config/EmptyStoryMessage"> 编辑主页卡片 </$button>
+
+        <$list filter="[{$:/info/url/protocol}match[https:]]">
+          <$button
+            class="font-semibold rounded-sm transition text-gray-900 p-2 dark:bg-white" >
+            <a class="text-black" href="./offline.html" download="index.html" title="download empty version">Download
+              <$iconify icon="line-md:download-outline-loop" />
+            </a>
+          </$button>
+        </$list>
+      </div>
+    <div class="flex justify-center items-center">
+      <!-- <$codeblock code="npx create neotw@latest" language="bash"/> -->
+        <$list filter="[{$:/info/url/protocol}match[https:]]">
+          <$vue-cta />
+        </$list>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<$list filter="[{$:/info/url/protocol}match[https:]]">
+    <!-- <center class="hidden md:block">
+     <h2>近期更新动态</h2>
+      <<ninecards>>
+    </center> -->
+
+    {{recent-count}}
+</$list>

@@ -1,0 +1,12 @@
+{
+  "title": "$:/plugins/oeyoews/neotw-notranslate",
+  "description": "No Translate",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.3.0",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "neotw-notranslate",
+  "dependents": [],
+  "list": "readme"
+}

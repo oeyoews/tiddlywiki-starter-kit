@@ -1,0 +1,41 @@
+title: $:/plugins/oeyoews/tiddlywiki-motion/Help
+class: motion-help o-tm
+subtitle: {{||$:/esc}}
+mask-closable: yes
+caption: Keyboard shortcuts
+
+\define shortcut(shortcut)
+<$set name=kbd filter="[enlist:raw{$:/plugins/oeyoews/tiddlywiki-motion/config/Shortcuts/$shortcut$/Key}addprefix[<kbd>]addsuffix[</kbd>]]">
+<tr>
+  <td class="border-2 p-1"><<kbd>></td>
+  <td class="border-2 p-1"><$transclude tiddler="$:/plugins/oeyoews/tiddlywiki-motion/config/Shortcuts/$shortcut$/Caption" /></td>
+</tr>
+</$set>
+\end
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-2 dark:bg-black rounded">
+<table class="border-2">
+<$list filter="[enlist[Fullscreen ToggleSidebar GoToInbox RefreshWiki GoToGettingStarted GoToControlPanel GoToSearch ToggleLayout TogglePalette GoToPlugins]]">
+<$macrocall $name="shortcut" shortcut=<<currentTiddler>> />
+</$list>
+</table>
+
+<table class="border-2">
+<$list filter="[enlist[FocusSearch ShowHelp Dismiss]]">
+<$macrocall $name="shortcut" shortcut=<<currentTiddler>> />
+</$list>
+</table>
+
+<table class="border-2">
+<$list filter="[enlist[CreateNewTiddler SelectNextTiddler SelectPreviousTiddler GoToFirstTiddler GoToLastTiddler EditTiddler DeleteTiddler CloseTiddler CloseAllTiddlers]]">
+<$macrocall $name="shortcut" shortcut=<<currentTiddler>> />
+</$list>
+</table>
+
+<table class="border-2">
+<$list filter="[enlist[FoldTiddler UnfoldTiddler ToggleTiddler FoldAllTiddlers UnfoldAllTiddlers ToggleAllTiddlers]]">
+<$macrocall $name="shortcut" shortcut=<<currentTiddler>> />
+</$list>
+</table>
+
+</div>

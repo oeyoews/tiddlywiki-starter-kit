@@ -1,0 +1,9 @@
+title: $:/plugins/oeyoews/neotw/modules/random-button/actions-article
+tags: $:/tags/Actions
+
+\whitespace trim
+\define navigateTo(link)
+<$action-navigate $to="$link$" />
+\end
+
+<$macrocall $name="navigateTo" link={{{ [all[shadows+tiddlers]!is[system]field:publish[article]random[1]] }}} />

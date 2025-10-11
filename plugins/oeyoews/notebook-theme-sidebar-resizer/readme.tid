@@ -1,0 +1,57 @@
+title: $:/plugins/oeyoews/notebook-theme-sidebar-resizer/readme
+
+!! Notebook theme sidebar resizer
+
+> support left/right sidebar resizer
+
+> 可拖动调整侧边栏宽度.
+
+> 最初仅仅是为了支持 notebook theme 而写的 sidebar resizer, 后来开始支持 vanilla(and based vanilla sidebar theme), captivate, whitespace, leftbar 等插件, 布局或主题.
+
+<!-- 在切换主题时，theme 会覆盖掉同名非系统文件，所以需要手动修改 -->
+
+!! For Leftbar
+
+need add `<$nbresizer position="left" widthTiddler="$:/xp/leftopentab/metrics/width" statusTiddler="$:/config/LeftOpenTab/Status" close="hide"/>` in [[$:/xp/ui/PageTemplate/leftsidebar]] tiddler.
+
+```html
+<!-- here -->
+<$nbresizer position="left" widthTiddler="$:/xp/leftopentab/metrics/width" statusTiddler="$:/config/LeftOpenTab/Status" close="hide"/>
+
+</$scrollable>
+
+</$reveal>
+```
+
+!! For captivate theme
+
+need add `<$nbresizer />` in [[$:/themes/cdr/captivate/ui/SideBar]] tiddler.
+
+```html
+<<sidebarTabs>>
+<!-- here -->
+<$nbresizer />
+```
+
+!! For Whitespace theme
+
+> whitespace theme for two 5.1.17 and 5.1.22 version, if use latest version, maybe have some ui problems.
+
+need add `<$nbresizer />` in [[$:/themes/jd/Whitespace/template/sidebar]] tiddler.
+
+```html
+<!-- add resizer widget here  -->
+
+<$transclude/>
+<$nbresizer />
+```
+
+> 如果你在不同的主题切换, 你会发现一些 UI 上的异常, 那是因为 这个 tiddler 被修改后变成了 shadow tiddler, 在所有的主题下都会起作用.
+
+!! Recipes
+
+* 之所以部分主题需要手动修改 tiddler, 是因为他们的 sidebar 模板是写死的, 无法通过动态嵌入 tiddler. 这一点建议 学习 notebook theme
+
+!! TODO
+
+* resizer widget 暴露出对应的参数, 支持用户自定义

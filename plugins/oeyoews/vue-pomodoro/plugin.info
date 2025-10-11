@@ -1,0 +1,17 @@
+{
+  "title": "$:/plugins/oeyoews/vue-pomodoro",
+  "description": "vue-pomodoro",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.3.0",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "vue-pomodoro",
+  "meat#disabled": "yes",
+  "qrcode": "yes",
+  "created": "2024-03-15",
+  "dependents": [
+    "$:/plugins/oeyoews/neotw-vue3"
+  ],
+  "list": "readme"
+}

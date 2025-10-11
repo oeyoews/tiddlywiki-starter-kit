@@ -1,0 +1,28 @@
+tags: $:/tags/PageControls
+list-before: $:/core/ui/Buttons/more-page-actions
+title: $:/plugins/oeyoews/neotw/modules/random-button/ui
+desciption: show random tiddler
+caption: random tiddler
+
+\whitespace trim
+<$list filter="[{$:/info/url/protocol}match[http:]]">
+<$list filter="[tag[todo]count[]compare:number:gt[0]]">
+<$button tooltip="random tiddler" class=<<tv-config-toolbar-class>> actions={{$:/plugins/oeyoews/neotw/modules/random-button/actions}}>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+{{$:/plugins/oeyoews/neotw/module/random-button/icon}}
+</$list>
+</$button>
+</$list>
+</$list>
+
+<$list filter="[{$:/info/url/protocol}match[https:]]">
+<$button tooltip="random tiddler" class=<<tv-config-toolbar-class>> actions={{$:/plugins/oeyoews/neotw/modules/random-button/actions-article}}>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+{{$:/plugins/oeyoews/neotw/module/random-button/icon}}
+</$list>
+</$button>
+</$list>
+
+<$list filter="[<tv-config-toolbar-text>match[yes]]">
+<span class="tc-btn-text"><$text text="random tiddler"/></span>
+</$list>

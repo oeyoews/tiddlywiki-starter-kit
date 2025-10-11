@@ -1,0 +1,8 @@
+title: $:/plugins/oeyoews/autocorrect-wrapper/EditorToolbar
+description: fullscreen tiddler
+caption: EditToolbar
+tags: $:/tags/EditorToolbar
+condition: [<targetTiddler>]
+icon: $:/plugins/oeyoews/autocorrect-wrapper/icon
+
+<$action-sendmessage $message="om-tiddler-format" title=<<targetTiddler>> />

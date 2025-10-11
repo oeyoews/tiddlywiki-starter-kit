@@ -1,0 +1,13 @@
+.tc-image-loading {
+  filter: blur(12px);
+  scale: 1.05;
+  cursor: wait;
+}
+
+.tc-image-error {
+  filter: blur(4px);
+}
+
+.tc-image-loaded {
+  border-radius: 8px;
+}

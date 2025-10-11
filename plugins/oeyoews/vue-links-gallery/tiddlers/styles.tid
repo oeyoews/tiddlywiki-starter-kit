@@ -1,0 +1,13 @@
+title: $:/plugins/oeyoews/vue-links-gallery/styles.css
+tags: $:/tags/Stylesheet
+type: text/css
+
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.5s ease;
+}
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}

@@ -1,0 +1,7 @@
+type: application/x-tiddler-dictionary
+title: $:/plugins/oeyoews/tiddlywiki-daylight/config
+class: o-tm
+mask-closable: yes
+
+lightPalette: $:/themes/nico/notebook/palettes/palette-beige
+darkPalette: $:/palettes/GithubDark

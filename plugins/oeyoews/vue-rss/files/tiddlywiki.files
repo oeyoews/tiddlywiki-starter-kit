@@ -1,0 +1,29 @@
+{
+	"directories": [
+		{
+			"path": "components/",
+			"filesRegExp": "^.*\\.js$",
+			"searchSubdirectories": true,
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/vue-rss/components/"
+				},
+				"hide-body": "yes",
+				"module-type": "library"
+			}
+		},
+		{
+			"path": "templates",
+			"filesRegExp": "^.*\\.vue$",
+			"searchSubdirectories": true,
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/vue-rss/templates/"
+				},
+				"hide-body": "yes"
+			}
+		}
+	]
+}

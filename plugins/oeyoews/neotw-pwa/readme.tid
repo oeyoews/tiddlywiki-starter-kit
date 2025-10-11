@@ -1,0 +1,62 @@
+title: $:/plugins/oeyoews/neotw-pwa/readme
+description: PWA
+name: PWA
+
+<div class="prose max-w-none prose-indigo">
+
+* [[Source|https://github.com/oeyoews/neotw/tree/main/plugins/oeyoews/neotw-pwa]]
+
+> 让你的 TiddlyWiki 网页像 app 一样启动
+> make your TiddlyWiki web page start like an app
+
+> 注意：额外提供了 favicon.ico
+
+> 注意：不要使用 0.0.0.0:xxx, 请使用 127.0.0.1:xxx
+
+> 由于 tiddlywiki.png 使用了全透明，中间的白色部分是透明的，在 iphone 上看不到 (全部自动补充成了黑色)
+
+* ref: https://github.com/oeyoews/tiddlywiki-starter-kit/commit/47b9530a2049a43b26f30094c77d8483282e59d7
+
+!! Setup
+
+<$reveal type="nomatch" state="$:/plugins/oeyoews/neotw-pwa/routes/get-manifest.js!!overwrite" text="yes">
+<$button class="bg-green-400 p-2">
+<$action-setfield $tiddler="$:/plugins/oeyoews/neotw-pwa/routes/get-tiddlywiki-image.js" $field="overwrite" $value="yes"/>
+<$action-setfield $tiddler="$:/plugins/oeyoews/neotw-pwa/routes/get-manifest.js" $field="overwrite" $value="yes"/>
+Enable PWA 📦
+</$button>
+</$reveal>
+
+<$reveal type="match" state="$:/plugins/oeyoews/neotw-pwa/routes/get-manifest.js!!overwrite" text="yes">
+<$button class="bg-rose-400 p-2">
+<$action-deletetiddler $filter="[prefix[$:/plugins/oeyoews/neotw-pwa]field:overwrite[yes]]"/>
+Reset PWA ♻️
+</$button>
+</$reveal>
+
+> 设置后需要重启 tw, 不是刷新浏览器
+> After setting, you need to restart tw, not refresh the browser
+
+<!-- * get-menifest.json 变成 shadow, 注意使用 startupaction 修改变成 shadow 是无效的，shadows 文件不会保存 -->
+
+> 下面是针对构建在线版本支持 pwa 的参数
+> The following are parameters for building online version to support pwa
+
+```
+"--savetiddler",
+    "$:/manifest.json",
+    "manifest.json",
+"--savetiddler",
+    "$:/tiddlywiki.png",
+    "tiddlywiki.png",
+```
+
+<!-- !! Tools -->
+<!---->
+<!-- https://maskable.app/editor -->
+
+!! Credits
+
+* Icon: https://iconduck.com/emojis/16882/smiling-cat-face-with-open-mouth
+
+</div>

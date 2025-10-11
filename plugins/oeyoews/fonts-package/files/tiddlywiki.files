@@ -1,0 +1,15 @@
+{
+	"directories": [
+		{
+			"path": "./",
+			"filesRegExp": "^.*\\.ttf$",
+			"fields": {
+				"title": {
+					"prefix": "$:/plugins/oeyoews/fonts-package/",
+					"source": "filename"
+				},
+				"type": "font/ttf"
+			}
+		}
+	]
+}

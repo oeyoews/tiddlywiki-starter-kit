@@ -1,0 +1,7 @@
+title: $:/plugins/oeyoews/neotw-read-files/readme
+
+* 导入的图片不会被删除, 需要手动在files 文件夹里面手动删除
+* 此插件是关于 tiddlywiki 的路由实验性插件，其中的  ImportToExternalFile  是在 saqimtiaz 的插件基础上修改而来的 (仅仅适用于 tiddlywiki-starter-kit 的用例场景)
+
+* https://groups.google.com/g/tiddlywiki/c/T0MP1Adzzk0
+* https://saqimtiaz.github.io/sq-tw/temp/import-to-external-file.html

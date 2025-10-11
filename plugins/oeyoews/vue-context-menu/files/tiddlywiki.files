@@ -1,0 +1,22 @@
+{
+	"tiddlers": [
+		{
+			"file": "./vue-context-menu.min.js",
+			"fields": {
+				"title": "vue-context-menu.min.js",
+				"module-type": "library",
+				"type": "application/javascript",
+				"hide-body": "yes"
+			}
+		},
+		{
+			"file": "./styles.css",
+			"fields": {
+				"title": "$:/plugins/oeyoews/vue-context-menu/styles.css",
+				"type": "text/css",
+				"hide-body": "yes",
+				"tags": "$:/tags/Stylesheet"
+			}
+		}
+	]
+}

@@ -1,0 +1,12 @@
+{
+  "title": "$:/plugins/oeyoews/neotw-pwa",
+  "description": "让你的TiddlyWiki网页像app一样启动",
+  "author": "oeyoews",
+  "version": "0.0.3",
+  "core-version": ">=5.3.0",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "Neotw Pwa",
+  "dependents": [],
+  "list": "readme"
+}

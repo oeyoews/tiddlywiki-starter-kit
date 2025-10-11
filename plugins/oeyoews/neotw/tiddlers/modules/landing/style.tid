@@ -1,0 +1,51 @@
+title: $:/plugins/oeyoews/neotw/modules/landing/style
+tags: $:/tags/Stylesheet
+
+<!-- <$list filter="[{$:/info/url/search}prefix[?]]"> -->
+<!-- .nc-topbar { -->
+<!--   display: none !important; -->
+<!-- } -->
+<!-- </$list> -->
+
+.o-landing {
+	margin: 1em 0.5em;
+}
+
+@media (min-width: 760px) {
+	.o-landing {
+		width: 660px;
+		margin: 1em auto;
+	}
+}
+
+.o-landing-branding {
+	text-align: center;
+	margin-bottom: 4em;
+}
+
+.o-landing-branding h1 {
+	font-weight: bold;
+}
+
+.landing-button-start {
+    padding: 10px;
+    font-weight: bold;
+  }
+
+.landing-button-start:hover {
+  transform: scale(0.95);
+  background-color: aliceblue !important;
+  transition: transform 0.2s;
+}
+
+.o-landing-panel {
+	margin-bottom: 2em;
+	padding: 1em 2em;
+	background-color: #ffffff;
+	border-radius: 12px;
+	<<box-shadow "1px 1px 5px rgba(0, 0, 0, 0.3)">>
+}
+
+.o-landing-panel h2 {
+	font-weight: bold;
+}

@@ -1,0 +1,37 @@
+title: $:/core/ui/EditorToolbar/picture-dropdown
+
+\define copyActions() <$action-sendmessage $message="tm-copy-to-clipboard" $param=<<imageTitle>>/>
+\define lingo-base() $:/language/Search/
+\define storeTitle() $:/temp/search/icon/moresidebar
+\define cancel-search-actions() <$action-deletetiddler $filter=<<storeTitle>>/><$action-sendmessage $message="tm-focus-selector" $param=""".search-icon-moresidebar input"""/>
+\whitespace trim
+
+//<small>Click an icon to copy the title to the clipboard</small>//
+
+<$wikify name="iconCount" text="""//<small><$count filter="[is[image]]"/> icons</small>//""">
+<span class="search-icon-moresidebar">
+<$macrocall $name="keyboard-driven-input" tiddler=<<storeTitle>>
+    type="search" tag="input" focus={{$:/config/Search/AutoFocus}}
+    inputCancelActions=<<cancel-search-actions>>
+    placeholder=<<iconCount>>/>
+<!-- <$reveal state=<<storeTitle>> type="nomatch" text=""> -->
+<!-- <$button class="tc-btn-invisible tc-btn-dropdown tc-small-gap"> -->
+<!-- <<cancel-search-actions>> -->
+<!-- {{$:/core/images/close-button}} -->
+<!-- </$button> -->
+<!-- </$reveal> -->
+    <!-- support filter -->
+</span>
+</$wikify>
+<$vars userInput={{{ [<storeTitle>get[text]] }}}
+    searchFilter="[is[image]search<userInput>limit[5]]"
+    resultCount="<$count filter=<<searchFilter>>/>">
+<$reveal state=<<storeTitle>> type="nomatch" text="">
+<span class="tc-search-results"><<lingo System/Matches>></span>
+</$reveal>
+
+<div class="tc-image-chooser" style="padding-top:5px;">
+  <$macrocall $name="image-picker-list" filter=<<searchFilter>> actions=<<copyActions>> />
+</div>
+
+</$vars>

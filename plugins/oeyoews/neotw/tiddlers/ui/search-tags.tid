@@ -1,0 +1,38 @@
+title: $:/plugins/oeyoews/neotw/ui/search-tags
+tags: $:/tags/AdvancedSearch
+caption: Search Tags
+
+\define lingo-base() $:/language/Search/
+\define storeTitle() $:/temp/search/systemtags/moresidebar
+\define cancel-search-actions() <$action-deletetiddler $filter=<<storeTitle>>/><$action-sendmessage $message="tm-focus-selector" $param=""".search-systemtags-moresidebar input"""/>
+
+<$wikify name="tagsCount" text="""//<small><$count filter="[all[shadows+tiddlers]tags[]is[system]]"/> system tags</small>//""">
+<span class="search-systemtags-moresidebar">
+<$macrocall $name="keyboard-driven-input" tiddler=<<storeTitle>>
+    type="search" tag="input" focus={{$:/config/Search/AutoFocus}}
+    inputCancelActions=<<cancel-search-actions>>
+    placeholder=<<tagsCount>>/>
+<$reveal state=<<storeTitle>> type="nomatch" text="">
+<$button class="tc-btn-invisible tc-btn-dropdown tc-small-gap">
+<<cancel-search-actions>>
+{{$:/core/images/close-button}}
+</$button>
+</$reveal>
+</span>
+</$wikify>
+<$vars userInput={{{ [<storeTitle>get[text]] }}}
+    searchFilter="[all[shadows+tiddlers]tags[]is[system]sort[]search:title<userInput>]"
+    resultCount="<$count filter=<<searchFilter>>/>">
+<$reveal state=<<storeTitle>> type="nomatch" text="">
+<span class="tc-search-results"><<lingo System/Matches>></span>
+</$reveal>
+<div style="padding-top:2px;">
+
+<$list filter=<<searchFilter>>>
+
+<$transclude tiddler="$:/core/ui/TagTemplate"/> <!-- Hide Count: <small class="tc-menu-list-count"><$count filter="[all[current]tagging[]]"/></small> -->
+
+</$list>
+
+</div>
+</$vars>

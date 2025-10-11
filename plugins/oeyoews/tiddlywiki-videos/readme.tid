@@ -1,0 +1,24 @@
+title: $:/plugins/oeyoews/tiddlywiki-videos/readme
+
+!! Tiddlywiki Videos
+
+> 对 youtube, bilibili 等视频平台的嵌入提供了一个快捷可定制的方法，免去手动复制 iframe 的操作，仅仅需要粘贴 id 即可
+
+!! Usage
+
+```wikitext
+<$video yid="o7GyFa90klg" />
+<$video bvid='BV1F14y1f7qp' />
+<$video url='' />
+```
+
+<$video yid="o7GyFa90klg" />
+<$video bvid='BV1F14y1f7qp' />
+
+!! Ref
+
+* https://developers.google.com/youtube/player_parameters?hl=zh-cn
+
+<!-- !! See Also -->
+
+<!-- artplayer 是支持直接嵌入 mp4 文件的 tiddlywiki 插件 -->

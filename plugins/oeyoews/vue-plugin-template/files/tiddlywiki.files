@@ -1,0 +1,42 @@
+{
+	"tiddlers": [
+		{
+			"file": "app.js",
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/vue-plugin-template/"
+				},
+				"module-type": "library",
+				"hide-body": "yes"
+			}
+		}
+	],
+	"directories": [
+		{
+			"path": "templates",
+			"filesRegExp": "^.*\\.vue$",
+			"searchSubdirectories": true,
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/vue-plugin-template/templates/"
+				},
+				"hide-body": "yes"
+			}
+		},
+		{
+			"path": "components",
+			"filesRegExp": "^.*\\.js$",
+			"searchSubdirectories": true,
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/vue-plugin-template/components/"
+				},
+				"module-type": "library",
+				"type": "application/javascript"
+			}
+		}
+	]
+}

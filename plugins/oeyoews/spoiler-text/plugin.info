@@ -1,0 +1,15 @@
+{
+  "title": "$:/plugins/oeyoews/spoiler-text",
+  "description": "spoiler-text",
+  "author": "oeyoews",
+  "version": "0.0.6",
+  "core-version": ">=5.3.4",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "spoiler-text",
+  "meat#disabled": "yes",
+  "qrcode": "yes",
+  "created": "2025/01/30",
+  "stability": "STABILITY_2_STABLE",
+  "list": "readme"
+}

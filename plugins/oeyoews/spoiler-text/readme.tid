@@ -1,0 +1,37 @@
+title: $:/plugins/oeyoews/spoiler-text/readme
+description: spoiler-text
+
+[[在线文档|https://tiddlywiki-starter-kit.oeyoews.top/docs/plugins/spoiler-text]]
+
+!! Widget Usage
+
+This is a <$s-t text="Spoiler Text Plugin" />
+
+```html
+This is a <$s-t text="Spoiler Text Plugin" />
+This is a <$spoiler-text text="Spoiler Text Plugin" />
+```
+
+!! Web Component Usage
+
+This is a <s-t text="Spoiler Text Plugin(web Component)" />
+
+```html
+This is a <s-t text="Spoiler Text Plugin(web Component)" />
+This is a <s-t >Spoiler Text Plugin(web Component)" </s-t>
+This is a <spoiler-text >Spoiler Text Plugin(web Component)" </spoiler-text>
+```
+
+!! wikitext parser
+
+```html
+<*Spoiler Text Example*>
+```
+
+!! use transclude(beta)
+
+> need doucle click insteadof click
+
+```html
+<$s-t tiddler={{your tiddler}} />
+```

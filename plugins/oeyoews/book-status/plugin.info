@@ -1,0 +1,17 @@
+{
+  "title": "$:/plugins/oeyoews/book-status",
+  "description": "book-status",
+  "author": "oeyoews",
+  "version": "0.4.0",
+  "core-version": ">=5.3.1",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "book-status",
+  "meat#disabled": "yes",
+  "dependents": [
+    "$:/plugins/oeyoews/notify",
+    "$:/plugins/oeyoews/neotw-icons",
+    "$:/plugins/oeyoews/nprogress"
+  ],
+  "list": "readme"
+}

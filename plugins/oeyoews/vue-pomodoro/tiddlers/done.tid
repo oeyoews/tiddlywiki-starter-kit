@@ -1,0 +1,7 @@
+title: $:/plugins/oeyoews/vue-pomodoro/modal/done
+class: o-tm
+mask-closable: yes
+subtitle: {{||$:/esc}}
+caption: Tomato
+
+It's time to take a break

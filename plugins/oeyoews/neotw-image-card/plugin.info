@@ -1,0 +1,16 @@
+{
+  "title": "$:/plugins/oeyoews/neotw-image-card",
+  "description": "neotw-image-card",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.3.4",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "neotw-image-card",
+  "meat#disabled": "yes",
+  "qrcode": "yes",
+  "created": "2025/02/16",
+  "dependents": [],
+  "stability": "STABILITY_2_STABLE",
+  "list": "readme"
+}

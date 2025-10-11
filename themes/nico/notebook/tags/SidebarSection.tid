@@ -1,0 +1,3 @@
+list: $:/themes/nico/notebook/ui/Sidebar/Open $:/themes/nico/notebook/ui/Sidebar/Recent $:/themes/nico/notebook/ui/Sidebar/Tools $:/themes/nico/notebook/ui/Sidebar/More
+title: $:/themes/nico/notebook/tags/SidebarSection
+type: text/vnd.tiddlywiki

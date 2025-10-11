@@ -1,0 +1,10 @@
+title: $:/plugins/oeyoews/tiddlywiki-modal-ui/readme
+
+```wiki
+class: o-tm
+mask-closable: yes
+caption: subtitle content
+subtitle: {{||$:/esc}}
+```
+
+<!-- tc-modal-centered  -->

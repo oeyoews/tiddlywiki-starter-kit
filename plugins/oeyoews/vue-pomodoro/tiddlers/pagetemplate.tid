@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/vue-pomodoro/modal/PageTemplate
+tags: $:/tags/PageTemplate
+
+<div class="fixed bottom-2 left-0 scale-50">
+<$vue-pomodoro startup/>
+</div>

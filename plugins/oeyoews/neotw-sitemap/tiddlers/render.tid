@@ -1,0 +1,9 @@
+title: $:/plugins/oeyoews/neotw-sitemap/render
+extension: .xml
+
+<!-- tags: $:/tags/Exporter -->
+
+\define renderContent()
+<$text text=<<sitemapentries filter:"""$(exportFilter)$""">>/>
+\end
+<<renderContent>>

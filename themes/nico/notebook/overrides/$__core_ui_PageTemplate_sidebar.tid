@@ -1,0 +1,9 @@
+title: $:/core/ui/PageTemplate/sidebar
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+\define config-title()
+$:/config/SideBarSegments/Visibility/$(listItem)$
+\end
+
+Overwritten by $:/themes/nico/notebook so that the default sidebar does not get rendered.

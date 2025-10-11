@@ -1,0 +1,18 @@
+title: GettingStarted
+description: tiddlywiki starter kit homepage
+
+{{sevenday}}
+{{tagpie}}
+
+{{$:/plugins/oeyoews/neotw/Readme}}
+
+<% if [{$:/info/url/protocol}match[https:]] %>
+{{heatmap}}
+<$cards filter='Videos JavaScript React TiddlyWiki Journal Tailwindcss books Article Private table-todo thoughts 名词' />
+<% else %>
+<center class="my-8">
+本地 wiki 不加载相关线上卡片.
+</center>
+<% endif %>
+
+{{tags}}

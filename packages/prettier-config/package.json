@@ -1,0 +1,27 @@
+{
+	"name": "@oeyoews/prettier-config",
+	"version": "1.0.2",
+	"description": "personal prettier config",
+	"main": ".prettierrc.js",
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:oeyoews/tiddlywiki-starter-kit.git",
+		"directory": "packages/prettier-config"
+	},
+	"keywords": [
+		"prettierconfig"
+	],
+	"author": "oeyoews",
+	"license": "MIT",
+	"scripts": {
+		"postinstall": ""
+	},
+	"peerDependencies": {
+		"prettier": "^2.6.0 || ^3.0.0",
+		"@trivago/prettier-plugin-sort-imports": "^4.1.1"
+	}
+}

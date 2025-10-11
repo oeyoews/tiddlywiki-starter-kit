@@ -1,0 +1,17 @@
+{
+	"directories": [
+		{
+			"path": ".",
+			"filesRegExp": "^.*\\.min.js$",
+			"fields": {
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/neotw-dayjs/"
+				},
+				"hide-body": "yes",
+				"module-type": "library",
+				"type": "application/javascript"
+			}
+		}
+	]
+}

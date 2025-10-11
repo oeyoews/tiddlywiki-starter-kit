@@ -1,0 +1,10 @@
+title: $:/plugins/oeyoews/font-geist/style.css
+tags: $:/tags/Stylesheet
+hide-body: yes
+
+@font-face {
+	font-family: "Geist";
+	src: url(<<datauri "$:/plugins/oeyoews/font-geist/Geist.woff2">>) format("woff2");
+	font-display: swap;
+	font-weight: 100 900;
+}

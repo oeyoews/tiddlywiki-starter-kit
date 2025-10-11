@@ -1,0 +1,4 @@
+title: $:/snippets/oeyoews/spoiler-text/st
+description: Spoiler Text
+
+<s-t>${1}</s-t>

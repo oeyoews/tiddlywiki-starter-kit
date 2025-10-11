@@ -1,0 +1,14 @@
+title: $:/plugins/oeyoews/neotw-error-better/readme
+description: neotw-error-better
+
+> 愿每一个 tiddlywiki 用户都看不到红色报错弹窗警告
+
+> 众所周知，tiddlywiki 的弹窗报错就像 windows 的蓝屏警告一样，几乎没有有效信息
+
+<div class='tc-error-form relative'>
+
+! JavaScript 内部错误
+
+嗯，这很尴尬。建议您通过刷新浏览器来重新启动 TiddlyWiki
+
+</div>

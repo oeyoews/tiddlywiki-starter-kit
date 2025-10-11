@@ -1,0 +1,19 @@
+title: $:/plugins/oeyoews/tiddlywiki-tid2png/Layout
+tags: $:/tags/Layout
+name: {{$:/plugins/oeyoews/tiddlywiki-tid2png/icon}} ~TiddlyWiki Tid2png
+description: ~TiddlyWiki Tid2png
+
+\import [[$:/core/ui/PageMacros]] [all[shadows+tiddlers]tag[$:/tags/Macro]!has[draft.of]]
+
+<$vars
+  tv-config-toolbar-icons={{$:/config/Toolbar/Icons}}
+  tv-config-toolbar-text={{$:/config/Toolbar/Text}}
+  tv-config-toolbar-class={{$:/config/Toolbar/ButtonClass}}
+  tv-enable-drag-and-drop={{$:/config/DragAndDrop/Enable}}
+  tv-show-missing-links={{$:/config/MissingLinks}}
+  storyviewTitle={{$:/view}}
+  languageTitle={{{ [{$:/language}get[name]] }}}>
+
+<div class="prose max-w-none prose-indigo m-auto sm:w-auto md:w-2/3">
+{{{ [[$:/plugins/oeyoews/tiddlywiki-tid2png/readme]] ||$:/core/ui/ViewTemplate }}}
+</div>

@@ -1,0 +1,5 @@
+title: _state-neotw-startup-times
+times: 0
+lastTime: 0
+
+启动次数：{{!!times}}, 上次更新时间：<$view field="lastTime" format="timestamp" />

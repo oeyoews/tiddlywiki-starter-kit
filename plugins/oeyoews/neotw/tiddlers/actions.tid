@@ -1,0 +1,11 @@
+title: $:/plugins/oeyoews/neotw/setup/actions
+tags: $:/tags/StartupAction
+
+<!-- theme -->
+<$action-setfield $tiddler="$:/theme" text="$:/themes/oeyoews/notebook-plus"/>
+<!-- sidebar -->
+<!-- <$action-setfield $tiddler="$:/state/notebook-sidebar" text="yes"/> -->
+<!-- set username  just for single file, Node.js need cmd-->
+<$action-setfield $tiddler="$:/status/UserName" text="oeyoews"/>
+<!-- layout -->
+<$action-setfield $tiddler="$:/layout" text="$:/core/ui/PageTemplate"/>

@@ -1,0 +1,8 @@
+title: $:/plugins/oeyoews/neotw-copy-code2/viewTemplate
+
+<!-- tags: $:/tags/ViewTemplate -->
+<!-- 会造成保存样式异常， 性能下降 -->
+
+<$list filter="[all[current]!is[missing]!is[binary]]">
+<$neotwCopyCode2 />
+</$list>

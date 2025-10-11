@@ -1,0 +1,33 @@
+title: $:/plugins/oeyoews/neotw/style/tag-count
+
+<!-- tags: $:/tags/Stylesheet -->
+<!-- @deprecated: 对于不规范的tag, 会导致样式问题 -->
+
+.tc-tag-exists {
+  vertical-align: middle;
+}
+
+.tc-tag-label::after {
+	<!-- color: inherit; -->
+	<!-- opacity: calc(2/3); -->
+  vertical-align: middle;
+}
+
+<$list filter="[all[shadows+tiddlers]tags[]]" variable=tag>
+<$set name=cssTag filter="[<tag>]" select=0>
+<!-- xxx` 标签会导致样式崩溃 -->
+<!-- <$set name=cssTag filter="[<tag>escapecss[]]" select=0> -->
+[data-tag-title=<<cssTag>>] .tc-tag-label::after {
+  content: " <$count filter="[all[shadows+tiddlers]tag<tag>]" />";
+}
+</$set>
+</$list>
+
+.tc-untagged-label::after {
+  content: "<$count filter="[untagged[]!is[system]] -[tags[]]"/>";
+}
+
+.tc-tag-list-item[data-tag-title='github'] .tc-tag-label {
+	color: red !important;
+	background: black;
+}

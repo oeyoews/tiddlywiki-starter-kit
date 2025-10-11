@@ -1,0 +1,15 @@
+{
+  "title": "$:/plugins/oeyoews/nprogress",
+  "description": "nprogress",
+  "author": "oeyoews",
+  "version": "2.0.0",
+  "core-version": ">=5.3.0",
+  "type": "application/json",
+  "meta#disabled": "yes",
+  "plugin-type": "plugin",
+  "name": "nprogress",
+  "dependents": [
+    "$:/plugins/oeyoews/confetti"
+  ],
+  "list": "readme"
+}

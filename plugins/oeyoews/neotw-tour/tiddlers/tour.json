@@ -1,0 +1,30 @@
+[
+  {
+    "element": "center",
+    "popover": {
+      "title": "TiddlyWiki 主页展示",
+      "description": "自定义 TiddlyWiki 主页展示"
+    }
+  },
+  {
+    "element": "#stx-story-top",
+    "popover": {
+      "title": "侧边工具栏",
+      "description": "自定义工具栏"
+    }
+  },
+  {
+    "element": "[aria-label=\"player\"]",
+    "popover": {
+      "title": "Player",
+      "description": "音乐播放器"
+    }
+  },
+  {
+    "element": "[aria-label=\"home\"]",
+    "popover": {
+      "title": "Home",
+      "description": "故事河"
+    }
+  }
+]

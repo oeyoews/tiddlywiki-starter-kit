@@ -1,0 +1,18 @@
+title: $:/plugins/oeyoews/neotw-notranslate/readme
+description: neotw-notranslate
+
+<div class="prose max-w-none prose-indigo">
+
+> 禁止浏览器翻译扩展修改网页.
+
+* 不要翻译 !!!
+* 不要翻译 !!!
+* 不要翻译 !!!
+
+> 翻译类的浏览器插件会对页面的内容进行修改 (DOM), 而 TiddlyWiki 经常会因此报错 (尤其中文环境下), 但是官方一直没有明确表示具体的原因，目前来看官方修复的几率很小
+
+> 此插件目前禁用谷歌翻译，微软翻译，沉浸式翻译以及遵循`notranslate` 规则的翻译，对于不遵守此规则的浏览器插件无效 (浏览器的语言类插件层出不穷，希望遵守这个规则，向沉浸式翻译学习)
+
+https://saqimtiaz.github.io/tw5-plugins-sandbox/(沉浸式翻译也会出错)
+
+</div>

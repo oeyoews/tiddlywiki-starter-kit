@@ -1,0 +1,5 @@
+key: ((open-cmp))
+tags: $:/tags/KeyboardShortcut
+title: $:/core/ui/KeyboardShortcuts/open-cmp
+
+<$action-sendmessage $message="open-cmp"/>

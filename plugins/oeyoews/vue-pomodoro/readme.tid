@@ -1,0 +1,18 @@
+title: $:/plugins/oeyoews/vue-pomodoro/readme
+description: vue-pomodoro
+
+!! Usage
+
+```html
+<$vue-pomodoro />
+```
+
+!! NOTE
+
+* this plugin have a pagetemplate defaultly, if you dont need that, please remove it's tag for $:/plugins/oeyoews/vue-pomodoro/modal/PageTemplate tiddler
+
+<!-- plugin template readme -->
+
+<!-- !! Motivation -->
+
+<!-- your plugin motivation, or why you write this plugin -->

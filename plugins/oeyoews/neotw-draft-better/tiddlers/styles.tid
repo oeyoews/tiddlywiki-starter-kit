@@ -1,0 +1,16 @@
+title: $:/plugins/oeyoews/neotw-draft-better/styles.css
+tags: $:/tags/Stylesheet
+
+.tc-drafts-list {
+	overflow: auto;
+	display: flex;
+	right: auto !important;
+	flex-direction: row;
+	bottom: 0;
+	position: fixed;
+}
+
+<!-- shrink necessary -->
+.tc-drafts-list a {
+	flex-shrink: 0;
+}

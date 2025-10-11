@@ -1,0 +1,12 @@
+{
+  "version": "0.0.7",
+  "type": "application/json",
+  "title": "$:/plugins/oeyoews/neotw",
+  "plugin-type": "plugin",
+  "name": "Neotw",
+  "meta#disabled": "yes",
+  "description": "Neotw",
+  "author": "oeyoews",
+  "dependents": "$:/plugins/tiddlywiki/markdown",
+  "list": "Readme"
+}

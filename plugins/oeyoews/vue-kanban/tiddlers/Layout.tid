@@ -1,0 +1,8 @@
+title: $:/plugins/oeyoews/vue-kanban/Layout
+name: {{$:/plugins/oeyoews/vue-kanban/icon}} Kanban
+description: {{$:/plugins/oeyoews/vue-kanban/readme!!description}}
+tags: $:/tags/Layout
+
+<div class="bg-white fixed inset-0">
+	<$vue-kanban />
+</div>

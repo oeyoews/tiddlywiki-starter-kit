@@ -1,0 +1,16 @@
+{
+  "title": "$:/plugins/oeyoews/screenlock",
+  "description": "screenlock",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.3.4",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "screenlock",
+  "meat#disabled": "yes",
+  "qrcode": "yes",
+  "created": "20250426",
+  "dependents": [],
+  "stability": "STABILITY_2_STABLE",
+  "list": "readme"
+}

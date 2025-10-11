@@ -1,0 +1,24 @@
+title: $:/plugins/oeyoews/tiddlywiki-github-share/ui/pagetemplate
+tags: $:/tags/PageTemplate
+
+\define base-repo() https://github.com/
+\define tip() GitHub Repo
+\define tid() $:/config/oeyoews/tiddlywiki-github-share/config
+
+<$list filter="[[$:/StoryList]get[list]count[]match[0]]">
+<$list filter="[{$:/info/url/protocol}match[https:]]">
+<$list filter="[[$:/state/notebook-sidebar]get[text]else[no]match[no]]">
+<div class="fixed top-0 right-0">
+<a style="text-decoration: none;"
+  href={{{ [<tid>get[text]addprefix<base-repo>] }}}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="githubCorner"
+  aria-label="View source on GitHub"
+>
+  {{$:/plugins/oeyoews/tiddlywiki-github-share/icon/corner}}
+</a>
+</div>
+</$list>
+</$list>
+</$list>

@@ -1,0 +1,45 @@
+title: $:/languages/neotw-icons/readme
+type: text/markdown
+
+<div class="prose max-w-none prose-indigo">
+
+## Neotw Iconify Icons
+
+Iconify 是一个开放的图标集合项目，由多个图标提供商共同贡献图标。目前，Iconify 项目收录了超过 100,000 个图标，涵盖了各种不同的主题和用途。
+
+> 支持原生 Tag(iconify-icon) 和 widget(iconify)
+
+> iconify 将缓存的 svg 数据放在了 localstorage 里面，所以加载很快，不会每次都进行网络请求
+
+<!-- https://github.com/iconify/iconify/tree/main/iconify-icon/icon -->
+
+## Usage
+
+<center>
+
+<$iconify icon="skill-icons:react-dark" title="React"/>
+<iconify-icon icon="simple-icons:tiddlywiki"  title="TiddlyWiki"/>
+<iconify-icon icon="flat-color-icons:approval"  title="Approval"/>
+<iconify-icon icon="vscode-icons:file-type-js-official" title="JS"/>
+<iconify-icon icon="noto:confetti-ball" title="Confetti"/>
+<iconify-icon icon="simple-icons:apacheecharts" style="color: lightblue;" title="Apache Echarts"/>
+<iconify-icon icon="skill-icons:markdown-dark" title="Markdown"/>
+<iconify-icon icon="flat-color-icons:advertising"  title="Advertising"/>
+<iconify-icon icon="devicon:vercel-wordmark" style="color: lightblue;" title="Vercel"/>
+<iconify-icon icon="fluent-emoji:rocket" title="Rocket"/>
+
+</center>
+
+```html
+<$iconify icon="skill-icons:react-dark" title="React"/>
+<iconify-icon icon="simple-icons:tiddlywiki"   />
+<iconify-icon icon="flat-color-icons:approval"  />
+<iconify-icon icon="vscode-icons:file-type-js-official" />
+<iconify-icon icon="noto:confetti-ball" />
+<iconify-icon icon="simple-icons:apacheecharts" style="color: lightblue;" />
+<iconify-icon icon="skill-icons:markdown-dark" />
+<iconify-icon icon="flat-color-icons:advertising"  />
+<iconify-icon icon="devicon:vercel-wordmark" style="color: lightblue;" />
+```
+
+</div>

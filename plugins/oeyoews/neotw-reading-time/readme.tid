@@ -1,0 +1,8 @@
+title: $:/plugins/oeyoews/neotw-reading-time/readme
+description: neotw-reading-time
+
+[[在线文档|https://tiddlywiki-starter-kit.oeyoews.top/docs/plugins/neotw-reading-time]]
+
+当前wiki总字数(英文按照单词统计): <<reading-time-full>>
+
+{{ $:/state/reading-time-full }}

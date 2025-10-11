@@ -1,0 +1,22 @@
+{
+	"version": "0.0.6",
+	"type": "application/json",
+	"title": "$:/plugins/oeyoews/markdown-kit",
+	"plugin-type": "plugin",
+	"qrcode": "yes",
+	"name": "Markdown Kit",
+	"meta#disabled": "yes",
+	"description": "Markdown Kit",
+	"author": "oeyoews",
+	"dependents": [
+		"$:/plugins/tiddlywiki/markdown",
+		"$:/plugins/tiddlywiki/codemirror",
+		"$:/plugins/tiddlywiki/katex",
+		"$:/plugins/tiddlywiki/codemirror-mode-markdown",
+		"$:/plugins/tiddlywiki/codemirror-mode-xml",
+		"$:/plugins/whitefall/obsidian-vault",
+		"$:/plugins/cdaven/markdown-export",
+		"$:/plugins/cdr/markdown-more"
+	],
+	"list": "readme"
+}

@@ -1,0 +1,23 @@
+title: $:/plugins/oeyoews/tiddlywiki-publish-tiddler/tiddlers
+
+\define fb(label:label filter color:green)
+<$image source={{{ [[]addprefix[https://img.shields.io/badge/]] [<__label__>addsuffix[-]]  $filter$ [[-]addsuffix<__color__>] +[join[]] }}} />
+\end
+
+<<fb Hide [field:publish[no]count[]] green>> <<fb Private [field:publish[private]count[]] red>>
+
+!! Private
+
+<$list filter="[field:publish[private]]" >
+    <li>
+		<$link><$view field="title"/></$link>
+    </li>
+</$list>
+
+!! Not Published
+
+<$list filter="[field:publish[no]]" >
+    <li>
+		<$link><$view field="title"/></$link>
+    </li>
+</$list>

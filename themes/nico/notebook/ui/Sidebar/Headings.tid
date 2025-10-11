@@ -1,0 +1,14 @@
+tags: $:/themes/nico/notebook/tags/Sidebar
+title: $:/themes/nico/notebook/ui/Sidebar/Headings
+type: text/vnd.tiddlywiki
+
+<div class="segment">
+  <div class="content">
+    <h1 class="tc-site-title">
+      {{$:/SiteTitle}}
+    </h1>
+    <div class="tc-site-subtitle">
+      {{$:/SiteSubtitle}}
+    </div>
+  </div>
+</div>

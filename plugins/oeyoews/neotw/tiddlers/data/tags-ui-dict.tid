@@ -1,0 +1,15 @@
+title: $:/plugins/oeyoews/neotw/data/tags-ui-dict
+type: application/x-tiddler-dictionary
+
+Vue: lime
+剪藏: rose
+JavaScript: orange
+TypeScript: blue
+todo: yellow
+React: sky
+Tailwindcss: cyan
+?: red
+Journal: indigo
+TiddlyWiki: slate
+Books: green
+Nextjs: amber

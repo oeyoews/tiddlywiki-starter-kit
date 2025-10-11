@@ -1,0 +1,12 @@
+{
+  "tiddlers": [
+    {
+      "file": "md5.min.js",
+      "fields": {
+        "title": "$:/plugins/oeyoews/tiddlywiki-gravatar/md5.min.js",
+        "module-type": "library",
+        "type": "application/javascript"
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "title": "$:/plugins/oeyoews/vue-plugin-template",
+  "description": "vue-plugin-template",
+  "author": "oeyoews",
+  "version": "0.0.1",
+  "core-version": ">=5.3.4",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "vue-plugin-template",
+  "meat#disabled": "yes",
+  "qrcode": "yes",
+  "created": "20250301",
+  "dependents": [
+    "$:/plugins/oeyoews/neotw-vue3",
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-v4"
+  ],
+  "stability": "STABILITY_2_STABLE",
+  "list": "readme"
+}

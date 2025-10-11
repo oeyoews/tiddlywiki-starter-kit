@@ -1,0 +1,16 @@
+{
+	"tiddlers": [
+		{
+			"file": "mermaid.tiny.js",
+			"fields": {
+				"type": "application/javascript",
+				"module-type": "library",
+				"hide-body": "yes",
+				"title": {
+					"source": "filename",
+					"prefix": "$:/plugins/oeyoews/mermaid/"
+				}
+			}
+		}
+	]
+}

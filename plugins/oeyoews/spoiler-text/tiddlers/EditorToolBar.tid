@@ -1,0 +1,15 @@
+title: $:/core/ui/EditorToolbar/spoiler
+tags: $:/tags/EditorToolbar
+description: {{$:/plugins/oeyoews/spoiler-text/readme!!description}}
+caption: Spoiler
+condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]] [<targetTiddler>type[text/markdown]]
+icon: $:/plugins/oeyoews/spoiler-text/icon
+list-before: $:/core/ui/EditorToolbar/mono-block
+shortcuts: ((spoiler))
+
+<$action-sendmessage
+	$message="tm-edit-text-operation"
+	$param="wrap-selection"
+	prefix="<s-t>"
+	suffix="</s-t>"
+/>

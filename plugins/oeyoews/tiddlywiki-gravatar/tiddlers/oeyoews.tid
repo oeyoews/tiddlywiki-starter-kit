@@ -1,0 +1,11 @@
+title: oeyoews
+mask-closable: yes
+subtitle: {{||$:/esc}}
+type: text/markdown
+class: o-tm
+
+<$avatar center="yes" link="https://github.com/oeyoews"/>
+
+<div class="animate-bounce inline-block m-2">
+👋 Coming !
+</div>

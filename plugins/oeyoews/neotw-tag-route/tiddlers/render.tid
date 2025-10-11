@@ -1,0 +1,3 @@
+title: $:/plugins/oeyoews/neotw-tag-route/tags-template.json
+
+{{{ [tags[]!is[system]!prefix[$:/]join[,]] }}}
