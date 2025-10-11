@@ -9,7 +9,6 @@ const enableMarkdown = base.markdown;
 // 本地运行使用到的插件
 const localPlugins = [
   'oeyoews/tiddlywiki-publish-tiddler',
-  'oeyoews/neotw-vue3', // -dev
   'oeyoews/clean-your-duplicate-storylist',
   'oeyoews/neotw-startup-times',
   'oeyoews/tiddlywiki-tid2png',
@@ -23,7 +22,6 @@ const onlinePlugins = [
   'oeyoews/neotw-error-better',
   'oeyoews/tiddlywiki-github-share',
   'oeyoews/neotw-notranslate',
-  'oeyoews/neotw-vue3',
   'oeyoews/font-geist', // tw font lib
 ];
 
@@ -33,6 +31,7 @@ const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
 const oeyoewsPlugins = [
   ...devplugins,
   // vue
+  'neotw-vue3',
   'vue-i18n',
   'vue-contextmenu', // right-contextmenu
   'vue-context-menu', // lib
