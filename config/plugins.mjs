@@ -16,6 +16,7 @@ const localPlugins = [
 ];
 
 const onlinePlugins = [
+  'oeyoews/confetti-background',
   'oeyoews/neotw-vue-codeblock', // 首页代码块
   'oeyoews/vue-plum',
   'oeyoews/NPL',
@@ -31,7 +32,6 @@ const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
 // oeyoews plugins
 const oeyoewsPlugins = [
   ...devplugins,
-  'confetti-background',
   // vue
   'vue-i18n',
   'vue-contextmenu', // right-contextmenu
