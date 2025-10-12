@@ -10,6 +10,9 @@ export type ConfigOptions = {
     zen?: boolean;
     open?: boolean;
   };
+  build: {
+    minify: boolean;
+  }
   username?: string;
   password?: string;
   output?: string;

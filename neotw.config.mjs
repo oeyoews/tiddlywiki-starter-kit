@@ -12,6 +12,11 @@ export default {
     zen: false, // 是否启用zen模式
     open: false, // 是否在启动时打开浏览器
   },
+  build: {
+    // coming...
+    offline_page: true, // 是否启用离线页面
+    minify: true, // 是否启用代码压缩
+  },
   auth: false,
   username: 'oeyoews', // 用户名
   password: 'oeyoews', // 密码
