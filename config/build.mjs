@@ -1,4 +1,4 @@
-import base from '../neotw.config.mjs';
+import config from '../neotw.config.mjs';
 
 /** @type {import('tiddlywiki').ITiddlyWikiInfoJSONBuild} */
 export default {
@@ -60,7 +60,7 @@ export default {
   ], */
   javascript: [
     '--output',
-    `${base.output}`,
+    `${config.output}`,
     '--render',
     '.',
     'javascript.json',
@@ -71,7 +71,7 @@ export default {
   ],
   journal: [
     '--output',
-    `${base.output}`,
+    `${config.output}`,
     '--render',
     '.',
     'journal.json',
@@ -82,7 +82,7 @@ export default {
   ],
   sitemap: [
     '--output',
-    `${base.output}`,
+    `${config.output}`,
     '--render',
     '$:/plugins/oeyoews/neotw-sitemap/sitemap',
     'sitemap.xml',
@@ -103,7 +103,7 @@ export default {
   index: [
     '--verbose',
     '--output',
-    base.output,
+    config.output,
     '--deletetiddlers',
     '$:/StoryList',
     '--render',
@@ -140,7 +140,7 @@ export default {
   ],
   library: [
     '--output',
-    `${base.output}/library`,
+    `${config.output}/library`,
     '--makelibrary',
     '$:/UpgradeLibrary',
     '--savelibrarytiddlers',
