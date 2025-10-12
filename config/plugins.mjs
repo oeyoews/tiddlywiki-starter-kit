@@ -27,7 +27,7 @@ const onlinePlugins = [
   'oeyoews/neotw-error-better',
   'oeyoews/tiddlywiki-github-share',
   'oeyoews/neotw-notranslate',
-  'oeyoews/font-geist', // tw font lib
+  // 'oeyoews/font-geist', // tw font lib
 ];
 
 const markdowPlugins = ['tiddlywiki/markdown', 'oeyoews/markdown-kit'];
