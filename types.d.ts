@@ -6,6 +6,7 @@ export type ConfigOptions = {
     host?: boolean;
     hostname?: string;
     qrcode?: boolean;
+    /** 清空控制台  */
     zen?: boolean;
     open?: boolean;
   };
