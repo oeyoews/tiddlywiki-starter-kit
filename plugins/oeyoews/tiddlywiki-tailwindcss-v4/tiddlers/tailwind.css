@@ -1,3 +1,7 @@
+:root {
+  text-autospace: normal;
+}
+
 h1,
 h2 {
   text-wrap: balance !important;
