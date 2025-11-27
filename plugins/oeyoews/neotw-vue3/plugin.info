@@ -2,7 +2,7 @@
   "title": "$:/plugins/oeyoews/neotw-vue3",
   "description": "neotw-vue3",
   "author": "oeyoews",
-  "version": "3.5.22",
+  "version": "3.5.25",
   "core-version": ">=5.3.0",
   "type": "application/json",
   "plugin-type": "plugin",
