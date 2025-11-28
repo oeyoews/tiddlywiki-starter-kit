@@ -115,14 +115,19 @@ const app = () => {
           menubarNav.value = getNavigatorWidget();
         }
       };
-      const recentChildren = recentTiddlers
+      const recentChildren = recentTiddlers.length > 0 ? recentTiddlers
         .filter((tiddler) => tiddler.length <= 35)
         .map((tiddler) => ({
-          label: tiddler,
-          // maxWidth: '300',
+            label: tiddler,
+            // maxWidth: '300',
+            icon: getIcon('file'),
+            onClick: () => goto.navigateTiddler(tiddler),
+          }))
+        : [{
+          label: 'No recent tiddlers',
           icon: getIcon('file'),
-          onClick: () => goto.navigateTiddler(tiddler),
-        }));
+          onClick: () => {},
+        }];
 
       const themeChildren = themes.map((theme) => {
         const label = theme.split('/')[theme.split('/').length - 1];
