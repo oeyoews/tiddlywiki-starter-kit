@@ -21,7 +21,7 @@ export default {
   username: 'oeyoews', // 用户名
   password: 'oeyoews', // 密码
   output: '.tiddlywiki', // 输出目录
-  wiki: 'src', // 维基库目录
+  wiki: 'neotw-tiddlers', // 维基库目录
   markdown: true, // 是否启用Markdown渲染
   tiddlersRepo: 'oeyoews/neotw-tiddlers', // 存储Tiddler的仓库
   pluginversion: '5.3.4', // 插件版本
