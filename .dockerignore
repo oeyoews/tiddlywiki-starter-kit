@@ -1,6 +1,6 @@
 /tiddlers/
 /docs/
-node_modules/
+# node_modules/
 README.md
 docker-compose.yml
 .git/
@@ -12,3 +12,4 @@ editions/
 /dev/
 .codesanbox
 /src/tiddlers/subwiki
+neotw-tiddlers/
