@@ -1,28 +1,19 @@
-# 待完成
 services:
   tiddlywiki-starter-kit:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: docker/Dockerfile
     image: oeyoews/tiddlywiki-starter-kit:latest
     # restart: on-failure:3
     ports:
-      - '8080:8080' # 映射端口，将主机的 8080 端口映射到容器的 8080 端口
-    volumes:
-      - ./wiki:/app/wiki # 映射对应的目录
-      - ./wiki/subwiki:/app/wiki/tiddlers/subwiki # 映射对应的目录
-      - ./.tiddlywiki/:/app/.tiddlywiki # 映射对应的目录
-    # 接受 tw 的任何参数
-    # start
-    command: [
-        'tiddlywiki', # 启动命令
-        'src', # 数据文件夹
-        '--listen',
-        'port=8080', # 端口
-        'host=0.0.0.0', # 允许本地局域网访问
-        'root-tiddler=$:/core/save/all-external-js', # enable external js
-        'use-browser-cache=yes',
-        'anon-username=oeyoews', # $:/status/Username on Node.js
-      ] # 第 1 个 tiddlywiki 是命令，第 2 个 tiddlywiki 是目录
+      - '8000:8000' # 映射端口，将主机的 8080 端口映射到容器的 8000 端口
+    # volumes:
+    #   - ./.tiddlywiki/:/app/.tiddlywiki # 映射对应的目录
+    environment:
+      # - HTTP_PROXY=http://10.170.32.124:20172
+      # - HTTPS_PROXY=http://10.170.32.124:20172
+      - NO_PROXY=localhost,127.0.0.1,172.17.0.0/16,.docker.internal
     # build
-    # command: ["tiddlywiki", "wiki", "--build", "index"]
+    # command: ["tail", "-f", "/dev/null"]
+    command: ["npm", "run", "dev"]
+    # user: node
