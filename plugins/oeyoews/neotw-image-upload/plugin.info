@@ -1,0 +1,19 @@
+{
+  "title": "$:/plugins/oeyoews/neotw-image-upload",
+  "description": "neotw-image-upload",
+  "author": "oeyoews",
+  "version": "0.0.6",
+  "core-version": ">=5.3.4",
+  "type": "application/json",
+  "plugin-type": "plugin",
+  "name": "neotw-image-upload",
+  "meat#disabled": "yes",
+  "qrcode": "yes",
+  "created": "20260314",
+  "dependents": [
+    "$:/plugins/oeyoews/neotw-vue3",
+    "$:/plugins/oeyoews/tiddlywiki-tailwindcss-v4"
+  ],
+  "stability": "STABILITY_2_STABLE",
+  "list": "readme"
+}

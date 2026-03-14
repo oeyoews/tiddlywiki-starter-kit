@@ -17,4 +17,5 @@
   'neotw-ui',
   'neotw-cmp',
   'element-plus',
+  'neotw-image-upload',
 ]
