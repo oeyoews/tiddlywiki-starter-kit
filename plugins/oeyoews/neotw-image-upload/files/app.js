@@ -13,15 +13,84 @@ const pluginTitle = '$:/plugins/oeyoews/neotw-image-upload';
 const DEFAULT_API_BASE = 'http://localhost:8096';
 const FORMAT_TIDDLER = `${pluginTitle}/format`;
 const API_BASE_TIDDLER = `${pluginTitle}/api-base`;
+const LANG_TIDDLER = `${pluginTitle}/lang`;
+
+const i18n = {
+  en: {
+    uploadTitle: 'Image Upload',
+    dropHint: 'Click, drag or Ctrl+V to paste image here',
+    size: 'Size',
+    fileName: 'File name',
+    fileNamePlaceholder: 'Filename (optional extension)',
+    pasteHint: 'This area supports Ctrl+V to paste images',
+    imageList: 'Image list',
+    hideList: 'Hide list',
+    upload: 'Upload',
+    uploading: 'Uploading...',
+    link: 'Link',
+    copy: 'Copy',
+    copied: 'Copied',
+    refresh: 'Refresh',
+    loading: 'Loading...',
+    storage: 'Storage',
+    config: 'Config',
+    copyStoragePath: 'Copy storage path',
+    copyConfigPath: 'Copy config path',
+    noImages: 'No images',
+    noImagesHint: 'Drag image in the upload area above or use Ctrl+V to paste',
+    open: 'Open',
+    copyLink: 'Copy link',
+    delete: 'Delete',
+    showImageList: 'Show image list',
+    hideImageList: 'Hide image list',
+    preview: 'Preview',
+    deleteConfirm: 'Delete this image?',
+    deleteFail: 'Delete failed',
+    loadFail: 'Load failed',
+  },
+  zh: {
+    uploadTitle: '图片上传',
+    dropHint: '点击、拖拽或 Ctrl+V 粘贴图片到此处',
+    size: '大小',
+    fileName: '文件名称',
+    fileNamePlaceholder: '文件名（可含扩展名）',
+    pasteHint: '本区域支持 Ctrl+V 粘贴图片',
+    imageList: '图片列表',
+    hideList: '隐藏列表',
+    upload: '上传',
+    uploading: '上传中...',
+    link: '链接',
+    copy: '复制',
+    copied: '已复制',
+    refresh: '刷新',
+    loading: '加载中...',
+    storage: '存储',
+    config: '配置',
+    copyStoragePath: '复制存储路径',
+    copyConfigPath: '复制配置路径',
+    noImages: '暂无图片',
+    noImagesHint: '可在上方上传区拖拽图片，或使用 Ctrl+V 粘贴上传',
+    open: '打开',
+    copyLink: '复制链接',
+    delete: '删除',
+    showImageList: '显示图片列表',
+    hideImageList: '隐藏图片列表',
+    preview: '预览',
+    deleteConfirm: '确定删除这张图片吗？',
+    deleteFail: '删除失败',
+    loadFail: '加载失败',
+  },
+};
 
 const app = () => {
   const component = {
     template: getTemplate(`${pluginTitle}/templates/app.vue`),
     data() {
       return {
+        lang: 'en',
         file: null,
         previewUrl: '',
-        hintText: '点击或拖拽图片到此处',
+        hintText: 'Click, drag or paste image here',
         selectedFileName: '',
         uploadFileName: '',
         isDragover: false,
@@ -37,6 +106,9 @@ const app = () => {
         imagesError: '',
         dateFilter: '',
         showImageList: false,
+        storagePath: '',
+        configPath: '',
+        pathCopied: '', // 'storage' | 'config' | ''
       };
     },
     mounted() {
@@ -44,17 +116,21 @@ const app = () => {
       this.dateFilter = today;
       this.loadFormatPreference();
       this.loadApiBasePreference();
+      this.loadLangPreference();
       this.loadImages();
+      this.loadServerInfo();
     },
 
     computed: {
+      t() {
+        return i18n[this.lang] || i18n.en;
+      },
       markdownSnippet() {
         if (!this.resultUrl) return '';
         return `![](${this.resultUrl})`;
       },
       wikitextSnippet() {
         if (!this.resultUrl) return '';
-        // TiddlyWiki 图片语法：[img[alt|url]]
         return `[img[image|${this.resultUrl}]]`;
       },
       vanillaSnippet() {
@@ -63,8 +139,15 @@ const app = () => {
       formatLabel() {
         if (this.selectedFormat === 'md') return 'Markdown';
         if (this.selectedFormat === 'tw') return 'Wikitext';
-        if (this.selectedFormat === 'link') return '链接';
+        if (this.selectedFormat === 'link') return this.t.link;
         return '';
+      },
+      /** 根据当前复制格式动态显示的链接内容 */
+      displaySnippet() {
+        if (!this.resultUrl) return '';
+        if (this.selectedFormat === 'md') return this.markdownSnippet;
+        if (this.selectedFormat === 'tw') return this.wikitextSnippet;
+        return this.vanillaSnippet;
       },
     },
 
@@ -83,7 +166,7 @@ const app = () => {
         this.previewUrl = '';
         this.selectedFileName = '';
         this.uploadFileName = '';
-        this.hintText = '点击或拖拽图片到此处';
+        this.hintText = this.t.dropHint;
       },
 
       /** 上传时使用的文件名：用户可改，扩展名与原文件一致 */
@@ -207,6 +290,19 @@ const app = () => {
         }
       },
 
+      async loadServerInfo() {
+        try {
+          const res = await fetch(`${this.apiBase}/info`);
+          if (!res.ok) return;
+          const data = await res.json();
+          this.storagePath = data.upload_dir || '';
+          this.configPath = data.config_file || '';
+        } catch (e) {
+          this.storagePath = '';
+          this.configPath = '';
+        }
+      },
+
       async loadImages() {
         this.imagesLoading = true;
         this.imagesError = '';
@@ -221,14 +317,14 @@ const app = () => {
         try {
           const res = await fetch(url);
           if (!res.ok) {
-            this.imagesError = '加载失败：' + res.status;
+            this.imagesError = this.t.loadFail + ': ' + res.status;
             this.imageGroups = [];
             return;
           }
           const data = await res.json();
           this.imageGroups = Array.isArray(data) ? data : [];
         } catch (e) {
-          this.imagesError = '加载失败：' + e.message;
+          this.imagesError = this.t.loadFail + ': ' + e.message;
           this.imageGroups = [];
         } finally {
           this.imagesLoading = false;
@@ -286,33 +382,88 @@ const app = () => {
         }
       },
 
-      async copySnippet(kind) {
-        if (!this.resultUrl || !navigator.clipboard) return;
+      loadLangPreference() {
+        try {
+          if (typeof $tw === 'undefined' || !$tw.wiki || !$tw.wiki.getTiddlerText) return;
+          const value = $tw.wiki.getTiddlerText(LANG_TIDDLER);
+          if (value === 'en' || value === 'zh') {
+            this.lang = value;
+          }
+        } catch (e) {
+          // 忽略
+        }
+      },
 
+      saveLangPreference() {
+        try {
+          if (typeof $tw === 'undefined' || !$tw.wiki || !$tw.wiki.setText) return;
+          $tw.wiki.setText(LANG_TIDDLER, 'text', undefined, this.lang);
+        } catch (e) {
+          // 忽略
+        }
+      },
+
+      setLang(l) {
+        this.lang = l;
+        this.saveLangPreference();
+      },
+
+      /** 复制到剪贴板：优先 Clipboard API，失败时回退到 execCommand（适配 file:// 等非安全上下文） */
+      async copyToClipboard(text) {
+        if (!text || typeof text !== 'string') return false;
+        try {
+          if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
+            await navigator.clipboard.writeText(text);
+            return true;
+          }
+        } catch (e) {
+          // 非安全上下文或权限被拒时继续尝试 fallback
+        }
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        textarea.style.position = 'fixed';
+        textarea.style.left = '-9999px';
+        textarea.style.top = '0';
+        textarea.setAttribute('readonly', '');
+        document.body.appendChild(textarea);
+        textarea.select();
+        textarea.setSelectionRange(0, text.length);
+        let ok = false;
+        try {
+          ok = document.execCommand('copy');
+        } catch (e) {
+          console.error('复制失败', e);
+        }
+        document.body.removeChild(textarea);
+        return ok;
+      },
+
+      async copySnippet(kind) {
+        if (!this.resultUrl) return;
         let text = '';
         if (kind === 'md') text = this.markdownSnippet;
         else if (kind === 'tw') text = this.wikitextSnippet;
         else if (kind === 'link') text = this.vanillaSnippet;
-
         if (!text) return;
-
-        try {
-          await navigator.clipboard.writeText(text);
+        const ok = await this.copyToClipboard(text);
+        if (ok) {
           this.resultCopied = kind;
-          setTimeout(() => {
-            this.resultCopied = '';
-          }, 1500);
-        } catch (e) {
-          console.error('复制失败', e);
+          setTimeout(() => { this.resultCopied = ''; }, 1500);
+        }
+      },
+
+      async copyPath(path, kind) {
+        if (!path) return;
+        const ok = await this.copyToClipboard(path);
+        if (ok) {
+          this.pathCopied = kind;
+          setTimeout(() => { this.pathCopied = ''; }, 1500);
         }
       },
 
       async copyLink(img) {
         const url = img && img.url;
-        if (!url || !navigator.clipboard) {
-          return;
-        }
-        // 根据当前下拉选择的格式生成文本
+        if (!url) return;
         let text = '';
         if (this.selectedFormat === 'md') {
           text = `![](${url})`;
@@ -321,23 +472,16 @@ const app = () => {
         } else {
           text = url;
         }
-
-        try {
-          await navigator.clipboard.writeText(text);
-          // mark copied on this item
+        const ok = await this.copyToClipboard(text);
+        if (ok) {
           img._copied = true;
-          setTimeout(() => {
-            img._copied = false;
-          }, 1500);
-        } catch (e) {
-          // 复制失败时，不抛出错误，只在控制台记录
-          console.error('复制失败', e);
+          setTimeout(() => { img._copied = false; }, 1500);
         }
       },
 
       async deleteImage(img) {
         if (!img || !img.path) return;
-        const ok = window.confirm('确定删除这张图片吗？\n' + img.path);
+        const ok = window.confirm(this.t.deleteConfirm + '\n' + img.path);
         if (!ok) return;
 
         const url = `${this.apiBase}/images?path=${encodeURIComponent(img.path)}`;
@@ -351,12 +495,12 @@ const app = () => {
               // ignore
             }
             const message = data.error || res.status;
-            window.alert('删除失败：' + message);
+            window.alert(this.t.deleteFail + ': ' + message);
             return;
           }
           await this.loadImages();
         } catch (e) {
-          window.alert('删除失败：' + e.message);
+          window.alert(this.t.deleteFail + ': ' + e.message);
         }
       },
     },
