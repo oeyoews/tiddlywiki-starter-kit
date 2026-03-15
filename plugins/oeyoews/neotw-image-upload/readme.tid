@@ -15,8 +15,8 @@ description: neotw-image-upload
 
 该插件通过浏览器直接调用外部 Go 图片服务的接口：
 
-- **上传**: `POST http://localhost:8096/upload`
+- **上传**: `POST http://localhost:48083/api/v1/upload`
 
-- **列出/删除**: `GET http://localhost:8096/images`、`DELETE http://localhost:8096/images`
+- **列出/删除**: `GET http://localhost:48083/api/v1/images`、`DELETE http://localhost:48083/api/v1/images`
 
 请确保当前访问 TiddlyWiki 的页面可以访问以上接口

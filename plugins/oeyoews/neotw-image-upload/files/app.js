@@ -10,7 +10,7 @@ module-type: library
 // 等价于 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 const getTemplate = require('../neotw-vue3/getTemplate.js');
 const pluginTitle = '$:/plugins/oeyoews/neotw-image-upload';
-const DEFAULT_API_BASE = 'http://localhost:8096';
+const DEFAULT_API_BASE = 'http://localhost:48083/api/v1';
 const FORMAT_TIDDLER = `${pluginTitle}/format`;
 const API_BASE_TIDDLER = `${pluginTitle}/api-base`;
 const LANG_TIDDLER = `${pluginTitle}/lang`;
