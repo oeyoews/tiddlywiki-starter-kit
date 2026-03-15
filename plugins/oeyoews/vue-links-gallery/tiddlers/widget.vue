@@ -78,7 +78,7 @@
     <tbody v-else>
       <tr>
         <td :colspan="edit ? 4 : 3" class="text-center">
-          <div class="h-24 flex items-center justify-center">暂无数据</div>
+          <div class="xh-24 flex items-center justify-center">暂无数据</div>
         </td>
       </tr>
     </tbody>
