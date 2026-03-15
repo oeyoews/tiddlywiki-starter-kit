@@ -11,7 +11,7 @@ description: neotw-image-upload
 <$vue-image-upload />
 ```
 
-<$vue-image-upload />
+[[示例|$:/plugins/oeyoews/neotw-image-upload/image-upload]]
 
 该插件通过浏览器直接调用外部 Go 图片服务的接口：
 

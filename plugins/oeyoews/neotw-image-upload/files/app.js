@@ -36,6 +36,7 @@ const app = () => {
         imagesLoading: false,
         imagesError: '',
         dateFilter: '',
+        showImageList: false,
       };
     },
     mounted() {
