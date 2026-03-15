@@ -15,6 +15,11 @@ const FORMAT_TIDDLER = `${pluginTitle}/format`;
 const API_BASE_TIDDLER = `${pluginTitle}/api-base`;
 const LANG_TIDDLER = `${pluginTitle}/lang`;
 
+/** 解包 go-image-server 统一响应 { code, message, data } */
+function unwrapApiResponse(data) {
+  return { payload: data?.data, errorMessage: data?.message };
+}
+
 const i18n = {
   en: {
     uploadTitle: 'Image Upload',
@@ -267,11 +272,12 @@ const app = () => {
             method: 'POST',
             body: fd,
           });
-          const data = await res.json();
+          const raw = await res.json();
+          const { payload, errorMessage } = unwrapApiResponse(raw);
 
           if (res.ok) {
             this.resultError = false;
-            this.resultUrl = data.url || '';
+            this.resultUrl = (payload && payload.url) || '';
             this.resultMessage = this.resultUrl ? '' : '上传成功，但未返回链接';
             if (this.resultUrl) {
               // 上传成功后，按当前选择的格式自动复制到剪贴板
@@ -280,7 +286,7 @@ const app = () => {
             await this.loadImages();
           } else {
             this.resultError = true;
-            this.resultMessage = data.error || '上传失败';
+            this.resultMessage = errorMessage || '上传失败';
           }
         } catch (err) {
           this.resultError = true;
@@ -294,9 +300,10 @@ const app = () => {
         try {
           const res = await fetch(`${this.apiBase}/info`);
           if (!res.ok) return;
-          const data = await res.json();
-          this.storagePath = data.upload_dir || '';
-          this.configPath = data.config_file || '';
+          const raw = await res.json();
+          const { payload } = unwrapApiResponse(raw);
+          this.storagePath = (payload && payload.upload_dir) || '';
+          this.configPath = (payload && payload.config_file) || '';
         } catch (e) {
           this.storagePath = '';
           this.configPath = '';
@@ -321,8 +328,9 @@ const app = () => {
             this.imageGroups = [];
             return;
           }
-          const data = await res.json();
-          this.imageGroups = Array.isArray(data) ? data : [];
+          const raw = await res.json();
+          const { payload } = unwrapApiResponse(raw);
+          this.imageGroups = Array.isArray(payload) ? payload : [];
         } catch (e) {
           this.imagesError = this.t.loadFail + ': ' + e.message;
           this.imageGroups = [];
@@ -488,14 +496,14 @@ const app = () => {
         try {
           const res = await fetch(url, { method: 'DELETE' });
           if (!res.ok) {
-            let data = {};
+            let raw = {};
             try {
-              data = await res.json();
+              raw = await res.json();
             } catch (e) {
               // ignore
             }
-            const message = data.error || res.status;
-            window.alert(this.t.deleteFail + ': ' + message);
+            const { errorMessage } = unwrapApiResponse(raw);
+            window.alert(this.t.deleteFail + ': ' + (errorMessage || res.status));
             return;
           }
           await this.loadImages();
