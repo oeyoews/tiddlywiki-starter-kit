@@ -23,6 +23,7 @@ const app = () => {
         previewUrl: '',
         hintText: '点击或拖拽图片到此处',
         selectedFileName: '',
+        uploadFileName: '',
         isDragover: false,
         uploading: false,
         resultUrl: '',
@@ -80,7 +81,19 @@ const app = () => {
         this.file = null;
         this.previewUrl = '';
         this.selectedFileName = '';
+        this.uploadFileName = '';
         this.hintText = '点击或拖拽图片到此处';
+      },
+
+      /** 上传时使用的文件名：用户可改，扩展名与原文件一致 */
+      getUploadFilename() {
+        const raw = (this.uploadFileName || '').trim();
+        const origName = this.file && this.file.name ? this.file.name : '';
+        if (!origName) return origName;
+        const origExt = origName.includes('.') ? origName.slice(origName.lastIndexOf('.')) : '';
+        if (!raw) return origName;
+        const base = raw.includes('.') ? raw.slice(0, raw.lastIndexOf('.')) : raw;
+        return base ? base + origExt : origName;
       },
 
       onFileChange(event) {
@@ -95,6 +108,7 @@ const app = () => {
         }
         this.file = file;
         this.selectedFileName = file.name;
+        this.uploadFileName = '';
         this.hintText = file.name;
         this.previewUrl = URL.createObjectURL(file);
       },
@@ -119,6 +133,7 @@ const app = () => {
         }
         this.file = file;
         this.selectedFileName = file.name;
+        this.uploadFileName = '';
         this.hintText = file.name;
         this.previewUrl = URL.createObjectURL(file);
       },
@@ -143,6 +158,7 @@ const app = () => {
         }
         this.file = file;
         this.selectedFileName = file.name || '粘贴的图片';
+        this.uploadFileName = '';
         this.hintText = this.selectedFileName;
         this.previewUrl = URL.createObjectURL(file);
       },
@@ -156,7 +172,11 @@ const app = () => {
         this.resultUrl = '';
 
         const fd = new FormData();
-        fd.append('file', this.file);
+        const saveAsName = this.getUploadFilename();
+        fd.append('file', this.file, saveAsName);
+        if (saveAsName !== this.file.name) {
+          fd.append('filename', saveAsName);
+        }
 
         try {
           const res = await fetch(`${this.apiBase}/upload`, {

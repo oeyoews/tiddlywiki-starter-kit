@@ -31,6 +31,15 @@
           alt="预览"
           class="h-24 w-auto rounded-md border border-gray-200 dark:border-gray-600 object-contain"
         />
+        <div class="mt-2 w-full max-w-xs">
+          <label class="mb-1 block text-left text-xs text-gray-500 dark:text-gray-400">上传前改名</label>
+          <input
+            v-model="uploadFileName"
+            type="text"
+            class="w-full rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 dark:text-gray-200 px-2 py-1.5 text-xs"
+            :placeholder="selectedFileName || '文件名（可含扩展名）'"
+          />
+        </div>
       </div>
     </label>
 
