@@ -81,18 +81,18 @@
   </section>
 
   <template v-if="!resultError && resultUrl">
-    <div class="relative rounded-md border border-sky-200/80 dark:border-sky-700/80 bg-sky-50/60 dark:bg-sky-950/40 overflow-hidden">
-        <div class="flex flex-wrap items-center justify-between gap-2 px-3 py-2 border-b border-sky-200/80 dark:border-sky-800/80 bg-sky-50/50 dark:bg-sky-950/30">
+    <div class="relative rounded-md border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800/50 overflow-hidden">
+        <div class="flex flex-wrap items-center justify-between gap-2 px-3 py-2 border-b border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-800/80">
           <img
             :src="resultUrl"
             :alt="t.preview"
-            class="size-8 shrink-0 rounded-full border border-sky-200/60 dark:border-sky-700/60 object-cover bg-white/50 dark:bg-sky-950/30"
+            class="size-8 shrink-0 rounded-full border border-gray-200 dark:border-gray-600 object-cover bg-gray-100 dark:bg-gray-700"
           />
           <div class="flex items-center gap-2">
             <select
               v-model="selectedFormat"
               @change="saveFormatPreference"
-              class="appearance-none rounded-md border border-sky-200 dark:border-sky-700 bg-white dark:bg-sky-900/50 text-sky-800 dark:text-sky-200 px-2.5 py-1.5 text-xs font-medium focus:border-sky-400 focus:outline-none focus:ring-1 focus:ring-sky-400 dark:focus:ring-sky-500"
+              class="appearance-none rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-2.5 py-1.5 text-xs font-medium focus:border-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 dark:focus:ring-gray-500"
             >
               <option value="md">Markdown</option>
               <option value="tw">Wikitext</option>
@@ -100,7 +100,7 @@
             </select>
             <button
               type="button"
-              class="rounded-md border border-sky-200 dark:border-sky-700 bg-white dark:bg-sky-900/50 px-3 py-1.5 text-xs font-medium text-sky-800 dark:text-sky-200 hover:bg-sky-100 dark:hover:bg-sky-800/50 transition-colors"
+              class="rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 px-3 py-1.5 text-xs font-medium text-gray-800 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors"
               @click="copySnippet(selectedFormat)"
             >
               {{ resultCopied ? t.copied : t.copy }}
@@ -108,14 +108,14 @@
           </div>
         </div>
         <div class="relative min-w-0 overflow-x-auto p-3">
-          <pre class="m-0 rounded-md bg-sky-100/80 dark:bg-sky-950/50 px-4 py-3 text-[13px] font-mono leading-relaxed text-sky-900 dark:text-sky-100 whitespace-pre break-all select-text"><code>{{ displaySnippet }}</code></pre>
+          <pre class="m-0 rounded-md bg-gray-100 dark:bg-gray-900/50 px-4 py-3 text-[13px] font-mono leading-relaxed text-gray-800 dark:text-gray-200 whitespace-pre break-all select-text"><code>{{ displaySnippet }}</code></pre>
         </div>
       </div>
   </template>
   <div
     v-else-if="resultError || resultMessage"
     class="rounded-md border px-4 py-3 text-sm"
-    :class="resultError ? 'border-red-200 dark:border-red-800 bg-red-50 dark:bg-red-950/50 text-red-800 dark:text-red-200' : 'border-sky-200 dark:border-sky-800 bg-sky-50/80 dark:bg-sky-950/30 text-sky-800 dark:text-sky-200'"
+    :class="resultError ? 'border-red-200 dark:border-red-800 bg-red-50 dark:bg-red-950/50 text-red-800 dark:text-red-200' : 'border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-800/50 text-gray-800 dark:text-gray-200'"
   >
     {{ resultMessage }}
   </div>
