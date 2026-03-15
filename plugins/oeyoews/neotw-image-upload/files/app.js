@@ -10,8 +10,9 @@ module-type: library
 // 等价于 const getTemplate = require('$:/plugins/oeyoews/neotw-vue3/getTemplate.js');
 const getTemplate = require('../neotw-vue3/getTemplate.js');
 const pluginTitle = '$:/plugins/oeyoews/neotw-image-upload';
-const API_BASE = 'http://localhost:8096';
+const DEFAULT_API_BASE = 'http://localhost:8096';
 const FORMAT_TIDDLER = `${pluginTitle}/format`;
+const API_BASE_TIDDLER = `${pluginTitle}/api-base`;
 
 const app = () => {
   const component = {
@@ -29,6 +30,7 @@ const app = () => {
         resultError: false,
         resultCopied: '',
         selectedFormat: 'md',
+        apiBase: DEFAULT_API_BASE,
         imageGroups: [],
         imagesLoading: false,
         imagesError: '',
@@ -38,8 +40,9 @@ const app = () => {
     mounted() {
       const today = new Date().toISOString().slice(0, 10);
       this.dateFilter = today;
-      this.loadImages();
       this.loadFormatPreference();
+      this.loadApiBasePreference();
+      this.loadImages();
     },
 
     computed: {
@@ -156,7 +159,7 @@ const app = () => {
         fd.append('file', this.file);
 
         try {
-          const res = await fetch(`${API_BASE}/upload`, {
+          const res = await fetch(`${this.apiBase}/upload`, {
             method: 'POST',
             body: fd,
           });
@@ -192,7 +195,7 @@ const app = () => {
           params.set('date', this.dateFilter);
         }
         const qs = params.toString();
-        const url = `${API_BASE}/images` + (qs ? `?${qs}` : '');
+        const url = `${this.apiBase}/images` + (qs ? `?${qs}` : '');
 
         try {
           const res = await fetch(url);
@@ -235,6 +238,21 @@ const app = () => {
           }
         } catch (e) {
           // 忽略首选项读取失败
+        }
+      },
+
+      loadApiBasePreference() {
+        try {
+          if (typeof $tw === 'undefined' || !$tw.wiki) return;
+          let text = $tw.wiki.getTiddlerText(API_BASE_TIDDLER);
+          if (text != null && typeof text === 'string' && text.trim()) {
+            this.apiBase = text.trim().replace(/\/$/, '');
+          } else if ($tw.wiki.getTiddler && !$tw.wiki.getTiddler(API_BASE_TIDDLER) && $tw.wiki.setText) {
+            // 无配置时创建默认 tiddler，便于在 wiki 中编辑
+            $tw.wiki.setText(API_BASE_TIDDLER, 'text', undefined, DEFAULT_API_BASE);
+          }
+        } catch (e) {
+          // 忽略
         }
       },
 
@@ -301,7 +319,7 @@ const app = () => {
         const ok = window.confirm('确定删除这张图片吗？\n' + img.path);
         if (!ok) return;
 
-        const url = `${API_BASE}/images?path=${encodeURIComponent(img.path)}`;
+        const url = `${this.apiBase}/images?path=${encodeURIComponent(img.path)}`;
         try {
           const res = await fetch(url, { method: 'DELETE' });
           if (!res.ok) {

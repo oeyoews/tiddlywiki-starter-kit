@@ -31,7 +31,6 @@ class NeotwImageUploadWidget extends Widget {
     const { createApp } = window.Vue;
     const component = require('./app');
     const domNode = this.document.createElement('div');
-      console.log('122');
 
     try {
       /** @type {{ use: Function, component: (string, Object) }} */
